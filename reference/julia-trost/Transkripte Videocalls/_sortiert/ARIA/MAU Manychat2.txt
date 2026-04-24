@@ -1,0 +1,51 @@
+Schreiben wir einfach die Quiz-Automation an. Und zwar habe ich ein Quiz erstellt für alle diejenigen,
+die in meiner Welt nicht wissen, was sie brauchen. Und das heißt, das kannst du natürlich auch machen.
+Du sagst, jemand soll dir eine Nachricht ticken, Quiz zum Beispiel. Ja, kannst du auch eine Story
+Reply machen, kannst auch einen Kommentar machen unter dem Reel. Und dann startet das. Und hier
+siehst du jetzt, haben wir genau nochmal die Aktionen von unserer normalen Automation,
+dass wir mit einer Condition starten, also mit einer Bedingung. Hier sagen wir aber, der Tag ist
+Quiz-Started. Also Quiz hat angefangen, warum ich das jetzt auch eng nicht gemacht habe, weiß ich
+nicht. Also Quiz gestartet. Und wenn dieser Tag noch nicht da ist, dann, wenn der Tag nicht da ist,
+ja, also Tag isn't Quiz-Started. Also wenn die den Tag schon haben, dann bekommen die E-Mails,
+du hast bereits mal Quiz mitgemeldet, musst du erneut starten. Ja, und dann geht es erneut los.
+Wenn die, das ist das natürlich für uns sehr viel wichtigere Weg, wenn die das Quiz noch nicht
+gemacht haben, also die haben den Tag noch nicht, dann hügel den Tag hinzu und dann starten wir.
+Du hast ja schon mal Quiz mitzumachen, richtige Entscheidung, cool. Also willst du wirklich starten?
+Ja, so. Okay, dann sagen wir, dann frag ich erstmal ab, okay, willst du gerade eher weniger
+ausgeben oder mehr ausgeben? Bis zu 111 Euro oder unter 100, wobei bis zu 500 Euro. So. Und dann,
+je nachdem wie es dann geklickt wird, geht es weiter. Und dann ist der Weg der Gleiche. Ich
+sage mal, ich bin bereit bis zu 500 Euro auszugeben, dann warten wir fünf Sekunden und dann wird
+die Frage gestellt, was ist denn die größte Herausforderung gerade? Und abgehend vor der
+Herausforderung ist es dann so, dass wir verschiedene Nachrichten ticken. Okay, wenn du die Herausforderung
+hast, dass a, deine Kunden, dass du keine Kunden gewinnst, dann frag ich halt, ist die Community
+noch kalt oder ist die schon warm? Wenn die noch kalt ist, dann jetzt sichere dir erstmal Kunden
+zu der Kundengewinnung. Wenn die schon warm ist, dann wird es Zeit verkaufen zu lernen. Also da
+können wir da verschiedene Wege gehen und das muss natürlich, das bringt jetzt nichts, wenn ich
+dir das irgendwie jeden Weg hier vorbeite, sondern du musst einfach schauen, welcher Weg
+machst du in deinem Unternehmensinn, welche Produkte hast du und welches Produkt zählt auf welcher
+Herausforderung ein. Und wie du das Ganze erstellst mit diesen verschiedenen Wegen ist, ich gehe mal
+kurz in die Bearbeitung, dass du sagst, du machst einen, du gehst auf Content Instagram ja und sagst
+dann, du machst hier eine quick reply. Ja, wir hatten ja die ganze mit add button gearbeitet, du sagst
+hier quick reply und dann sagst du hier a ist keine Affel, b ist Zitrone, c ist Palane und dann sagen
+die Leute da drauf klicken. Ja und dann machen wir quick reply, ist dann zum Beispiel a. Ja,
+da gehst du einfach nur auf dann, du weißt hier nichts auf, einfach nur auf dann, dann b, dann und
+dann c und dann und dann musst du hier von aus gehen nochmal wählen, okay, wie geht es weiter,
+dann kannst du nochmal eine Nachricht zum Beispiel schicken. Ja, denkt dran, das als
+comment reply zu machen. So und so funktioniert das und ich würde dir raten, wie gesagt, diese,
+ja, die heißt das, wie heißt das denn die Benennung dieser von abc, ja würde ich in den Text
+schreiben, weil und sagst du es vielleicht wie hier, wo halt wirklich ein bisschen größere Text ist bei
+c zum Beispiel, das würde dann nicht da reinpassen, weil du hast nur bestimmte Anzahl von Zeichen,
+wir können mal anschauen wie viele. Ja, hier ist ein Stop, du siehst hier die Null, das heißt
+manchmal passt die Antwort nicht rein und dann kannst du die Antwort hier rein machen. Genau und
+so erstelle ich diese Automation, super super easy, super simpel, aber echt effektiv und ich würde
+das hier gerade mal noch wenn mich noch dabei sind, mache ich mal gerade noch, wenn jemand auf
+meine Story reagiert, das gab es nämlich damals noch nicht, als ich die erstellt habe. So, dass
+wir das eben auch haben. Okay, cool, ja, also so ist die Automation, du trägst quasi erst, okay,
+hat er den Tag oder nicht, wenn er den Tag schon hatte, dann bist du bereit nochmal zu starten,
+wenn er noch nicht hatte, dann füllt den Tag hinzu und dann geht es weiter, so dass der beim
+nächsten Mal noch mal prüfen kann. Also auch hier super super simpel, simpel, simpel, das hier ist
+noch ein Beispiel von Mani Chat, das ist mal weg, wir haben keinen Wine Quiz und ja, doch so effektiv,
+ja, so kannst du nämlich herausfinden, was deine Community will, sie kann es herausfinden und
+liefert ihr noch die beste Möglichkeit dazu. So, also viel Spaß mit den Automationen, ich liebe
+ja Automationen, die können dir das Leben so sehr beeinflachen und ja, wenn du Fragen hast,
+wie gesagt, du weißt, wo du mich findest.

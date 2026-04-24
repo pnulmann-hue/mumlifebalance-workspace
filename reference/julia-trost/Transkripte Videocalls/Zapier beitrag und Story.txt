@@ -1,0 +1,40 @@
+Was wir jetzt machen, ist die tägliche Inspiration. Das heißt, das ist einfach die Hook, die
+bei mir aufläuft. Das habe ich dir ja eben gezeigt. Einfach den Content prompt als Inspiration
+für dich. Und auch hier, das hast du ja schon gesehen, im Videos zuvor, geben wir als ersten
+Set auf Schedule by Sapier, sagen da auch nochmal wann, also every day, every week, every
+hour, wie viel Uhr, ob man es am Wochenende auch machen soll und geben das dann frei.
+Dann gehen wir direkt zu Touch-A-Tabity. Das heißt, wir haben hier jetzt nicht diese
+Webhook unter Zwischen. Und hier wählst du auch nochmal Compensation aus, gehst auf
+Configure. Und hier habe ich genau diesen prompt quasi eingefügt. Den kannst du dir super
+gerne auch rauskoppieren. Du kannst den Content anders schreiben, ganz wie du magst, einfach
+wie du es machen möchtest. Ich habe einfach wirklich das komplett generisch erstellt,
+damit er wirklich einfach nachdenkt und mir jeden Tag so random wie möglich einfach
+irgendeinen Impuls gibt. Maximal 2000 Tokens, Response Format Text und Tool Choices Auto.
+Dann wiederum zu Telegram. Auch da, ich gucke mir mal kurz an, ohne dass ich hier den Bildschirm
+teile. Genau, auch da habe ich wie eben nochmal einfach Output Text gewählt und einfach meine
+ID. Und das war es auch schon. Also das läuft dann quasi jeden Morgen um 7.30 Uhr bei mir ab
+und ich bekomme einfach diese Inspiration für eine Hook. Was ich aber auch noch habe,
+ist die tägliche Instagram Story. Und die war ein bisschen schwieriger zu erstellen,
+weil der da meinen prompt immer nicht genommen hat. Funktioniert aber auch wieder genau gleich.
+Also das heißt, wenn du es einmal gelernt hast, wenn du es einmal verstanden hast,
+wie es funktioniert, kannst du es einfach immer wieder machen. Auch hier wieder Sketchable
+by Save hier, auch hier wieder Techivity, auch hier wieder Telegram. Der Unterschied ist bei
+Techivity, dass du hier jetzt eben dein prompt weiter ausformulierst. Denn hier musst du ja
+wirklich so prompten, dass er dir auch wirklich eine gute Instagram Story rausgibt. Und ich
+kopiere dir das Ganze hier einfach rein unter das Video, damit du das kopieren kannst,
+musst du jetzt hier nicht irgendwie screenshotten. Und genauso habe ich es erstellt. Maximal 5
+Tokens, da kannst du auch auf 10.000 hoch gehen, weil hier ausführlich die Geschichte in den meisten
+Fällen, dass du besser, weil gute Storytelling besteht einfach darin, dass du auch einfach
+ja ausschreifend wirst, dass du das Ganze visualisierst und einfach ein bisschen Kontext
+lieferst. Auch als Response Formant habe ich wieder Techs und als Toolchoice Auto. Genau.
+Und das waren eigentlich so die drei wichtigsten Workflows, die ich im Moment habe. Und das
+funktioniert bei mir manchmal richtig gut, manchmal gar nicht gut. Also manchmal hat
+der auch irgendwelche Probleme. Dann muss ich dir deshalb wieder zu machen und nochmal neu
+publishen. Arbeite dich auch da einfach ein bisschen durch, nicht direkt aufgeben,
+wenn es nicht funktionieren sollte. Ich habe dir jetzt die Konfiguration gezeigt,
+das ist eigentlich so das Wichtigste, was du brauchst, damit du einfach wirklich weißt,
+okay, wie sieht der Workflow aus? Alles andere kannst du dann selbst einstellen,
+wie man es da genau sagen soll, die Uhrzeit, wann es genau geschwiggert werden soll und so weiter.
+Das ist dann vollkommen dir überlassen. Ich wollte dir einfach nur mal zeigen,
+wie ich das Ganze programmiert habe, damit du einfach diesen, ja, diese Riesenhürden nicht
+mehr hast, weil das war schon echt anstrengend. Also viel Spaß dabei.

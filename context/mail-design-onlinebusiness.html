@@ -1,0 +1,113 @@
+<!-- ============================================================
+  Mumlifebalance - Mail-Design-Template fuer Onlinebusiness
+  ============================================================
+  Verwenden fuer: Alle E-Mails aus dem Onlinebusiness (Mentoring,
+  Kurse, Bio-Check, Leadmagnete, Nurture-Sequenzen, Pitches).
+
+  NICHT verwenden fuer: doTERRA-Newsletter (hat eigenes Design,
+  siehe Newsletter-Builder im doTERRA-Bot).
+
+  Platzhalter — beim Gebrauch ersetzen:
+    {{PREHEADER}}       Preview-Text im Posteingang (max 90 Zeichen)
+    {{HEADLINE}}        Hero-Ueberschrift (Georgia, gross, Creme auf Petrol-Gradient)
+    {{SUBHEADLINE}}     Italic-Sub-Zeile unter Headline (optional)
+    {{BODY_HTML}}       Haupt-Content mit <p>-Taegen + eingebetteten Quote/Info-Boxes
+    {{SIGNATURE}}       „Patricia" oder anders (in <p>-Tag)
+
+  Wiederverwendbare Content-Bausteine (im BODY_HTML):
+
+  <!-- Pull-Quote (Creme + Orange-Rand) -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+    <tr><td style="background-color:#f1ecdd;border-left:4px solid #dc822e;border-radius:0 12px 12px 0;padding:20px 24px;">
+      <p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:20px;color:#0c1c30;line-height:1.6;">"Dein Zitat hier"</p>
+    </td></tr>
+  </table>
+
+  <!-- Info-Box (Tuerkis + Petrol-Rand) -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+    <tr><td style="background-color:#e4f3f4;border-left:4px solid #12828c;border-radius:0 12px 12px 0;padding:20px 24px;">
+      <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#12828c;text-transform:uppercase;letter-spacing:2px;">BOX-TITEL</p>
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">Dein Box-Text hier.</p>
+    </td></tr>
+  </table>
+
+  <!-- Button (Orange, zentriert) -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+    <tr><td align="center">
+      <a href="{{LINK}}" style="display:inline-block;background-color:#dc822e;color:#ffffff;text-decoration:none;font-family:Arial,sans-serif;font-weight:bold;font-size:16px;padding:16px 32px;border-radius:12px;">
+        {{BUTTON_TEXT}}
+      </a>
+    </td></tr>
+  </table>
+
+  Brand-Farben (fix, nicht aendern):
+    Text-Dunkel   #0c1c30
+    Dunkelblau    #29556d
+    Petrol        #12828c
+    Creme         #f1ecdd
+    Orange        #dc822e
+    Tuerkis-Light #e4f3f4  (nur fuer Info-Box-Hintergrund)
+  ============================================================ -->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{HEADLINE}}</title>
+  <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+  <!--[if !mso]><!-- -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+  <!--<![endif]-->
+</head>
+<body style="margin:0;padding:0;background-color:#f4f0e6;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">{{PREHEADER}} &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f0e6;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+
+          <!-- HEADER -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);border-radius:16px 16px 0 0;padding:48px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance · Newsletter</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h1 style="margin:0 0 16px 0;font-family:Georgia,serif;font-size:32px;font-weight:bold;color:#f1ecdd;line-height:1.25;">{{HEADLINE}}</h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:rgba(241,236,221,0.72);line-height:1.5;">{{SUBHEADLINE}}</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- BODY -->
+          <tr>
+            <td style="background-color:#ffffff;padding:40px;">
+              {{BODY_HTML}}
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td style="background-color:#0c1c30;border-radius:0 0 16px 16px;padding:28px 40px;text-align:center;">
+              <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#f1ecdd;text-transform:uppercase;letter-spacing:1px;">MUMLIFEBALANCE · PATRICIA ULMANN</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:rgba(241,236,221,0.55);">Network + Onlinekurse für Mamas</p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

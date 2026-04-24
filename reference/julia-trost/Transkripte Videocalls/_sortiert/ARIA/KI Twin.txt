@@ -1,0 +1,163 @@
+So, um einen Klon wie Area zu erstellen, müssen wir auf Gemini gehen und ich zeige
+dir das mal ganz kurz in der Schnellanwendung, denn ich habe leider nicht gefunden, dass
+man das auch mit anderen Programmen machen kann.
+Wenn du ein Programm hast, dann kannst du das natürlich auch nutzen, aber was ich gemacht
+habe ist, wir gehen hin, wir holen uns ein Beispielbild, du kannst meinen zuhören, ich
+platziert dir das und dann holst du ein Bild von dir und da habe ich damals tatsächlich
+das hier genommen und dann habe ich gesagt Bildgenerierung, bitte erstelle mir ein AI
+Klon von mir, der endlich aussieht wie der auf dem Roboter Bild, ich weiß es nicht genau
+bitte, da checkt was ich meine, da muss man immer ein bisschen gucken und ich meine, ich
+bin das ja jetzt auch schon, ja ich habe mir einfach damals ein anderes Roboter Bild genommen,
+das heißt wenn du ein gutes findest, kannst du auch eins holen, wo du sagst so will ich
+auch irgendwie aussehen, du kannst aber einfach auch mein Referenzbild holen, ja war klar
+dass er jetzt mich da rauskriegt, ich weiß noch einen anderen Klon, der so aussieht,
+ungefähr CSKA AI, hier, so wollen wir jetzt das nehmen und da reinpacken und dann vielleicht
+noch ein anderes Bild von uns und dann den Text und ich bin jetzt einfach wie gesagt bei Gemini
+reingegangen, also G E M E N I, die KI von Google, ich bin mir sicher dass das auch mit Touch
+VT geht, nur bei Touch VT hatte ich bisher keine so guten Ergebnisse, wir probieren das aber gleich
+aus, nämlich mit der Bildfunktion bei Touch VT, dann kann ich dir die auch noch gerade zeigen,
+okay, das war jetzt natürlich noch nicht so gut, also du siehst wie immer,
+muss man einfach ein bisschen rumprobieren und gucken dann was dabei rumkommt, ist halt alles
+eine Übungssache, ja also ich hasse Gemini, ich hasse das, lasst es uns mit Touch VT versuchen
+und zwar gehen wir da auf Dali, also Dali, das ist nach dem benannt und ich nutze noch mal
+dem Promt beziehungsweise ich sage erstelle mir bitte einen Crossover der zwei Bilder,
+die ich dir gebe, ich möchte einen digitalen Twin von mir erstellen, der so ein bisschen
+Hype Roboter, Hype Mensch ist, vielleicht muss man es auch einfach besser definieren, weil mich
+immer sage der Fehler sitzt vor, da kann man nicht dahinter, so jetzt haben wir das und wir holen
+noch mal dieses Saska Roboter, ich habe leider nur den gefunden bisher, ich weiß nicht ob es
+noch einen anderen gibt, falls du noch einen anderen Roboter hast, dem du ähnlich sehen willst,
+wir können auch mal, keine Ahnung, iRobot, können wir es uns bestimmt auch so anpassen,
+das finde ich ein bisschen gruselig, deswegen lass ich es, but let's see, oh Gott, Touch VT ist
+manchmal so vorschlimm, also ich weiß nicht, ob das passen wird. Okay, erstens freundlich,
+aber bestimmt seitens Gesicht Hype Mensch, Hype Roboter,
+ich bin mir sicher, dass er jetzt eigentlich das Gesicht noch mal verändern wird und komplett
+wie so ein Anime das gestalten wird, das macht er zumindest bei mir öfters, dann können wir noch
+mal ein bisschen damit rumprobieren und das vielleicht anders machen, ja aber klar, das hier
+finde ich eigentlich schon ganz cool, aber es ist halt zu, zu Anime-mäßig, obwohl ja es geht
+eigentlich, kannst du das Gesicht noch etwas menschlicher machen, hier sehe ich jetzt eher wie
+so ein Anime aus, also so ein bisschen menschlicher mit so, ja, nicht so einer glatten Haut und so.
+Let's see und ich frag glaube ich auch Germaner noch mal, ob er mir ein Crossover erstellen kann.
+Nehmen wir doch mal das Yoga, ich hab Angst, aber ich will einfach nochmal gucken, ob es theoretisch hinbekommen würde.
+Das finde ich eigentlich schon cool. Bitte das erste Bild links mit grünem auf.
+Manchmal ist es dann leider so, dass er komplett das Bild verändert, also da muss man auch ein bisschen
+aufpassen, am besten dann das runterladen, hochladen und sagen bitte nur das und das verändern.
+Das ist irgendwie gar keine Mischung, das sieht ja komplett aus wie der erste.
+Ich muss mal ein anderes Bild von mir. Das Gesicht soll eher dem meinen ähneln,
+dass hier ist eine andere Frau, ansonsten finde ich es cool.
+Also bei mir war das wirklich anscheinend ein Glücksfall, dass es bei mir direkt so gut geworden ist.
+Das heißt direkt, wir haben schon ein paar Interaktionen gehabt, aber das ist ja alles nicht so das, was wir wollen.
+Ich habe aber noch eine dritte Möglichkeit, also probiere es einfach aus.
+Wie gesagt, es reagiert immer anders, egal was du eintippst, was du für Bilder nutzt und so weiter.
+Es ist immer ein kleiner Unterschied.
+Ja, ne, bin ich auch nicht. Deswegen schauen wir es jetzt noch eine dritte Möglichkeit an,
+aber vielleicht hat es bei dir funktioniert und du brauchst es gar nicht.
+Wir gehen einfach auf Canva, gehen dann raus, gehen dann auf Canva AI, das ist so im Hauptmenü schon.
+Und dann können wir schreiben.
+Ha, warum geht es nicht? Canva spin seit gestern irgendwie ein bisschen.
+Na okay.
+Ne, würde er nicht.
+Ja gut, dann sagen wir ab und mal.
+Ich möchte einen digitalen Twin von mir erstellen, der halb Mensch, halb Maschine sein soll.
+In blau bitte, mit blauer Rüstung.
+Hallo, irgendwie spinnt der gerade.
+Wippen wir es ein.
+Das hier unten habe ich gestern oder vor ein paar Tagen schon mal erstellt.
+Das ist total gründ.
+Ja, also man kann relativ viel mitmachen.
+Okay, vielleicht können wir jetzt das hier nehmen.
+Ich möchte noch eine Variante austesten.
+Sie ist immer eine Frau.
+Okay.
+Dann kommen wir das jetzt vielleicht in Gemini packen und wir machen mal ein ganz neues Terminal auf.
+Vielleicht ist er jetzt eh schon verwirrt.
+Hier gehen wir auf Bildgenerierung.
+Dann sagen wir nochmal, wir fügen die Datei ein.
+Wie ist das?
+Ich möchte gerne einen Crossover aus den beiden Bildern erstellen,
+also dass ich einen digitalen AI Twin von mir erstelle, der so halb Mensch, halb Maschine ist, gerne in diesem Blauton.
+Jetzt bin ich gespannt, ich hoffe es funktioniert,
+weil dann wäre das der Weg, dass man erst über Canva geht und dann hierher switched.
+Mir ist halt immer so wichtig, dass das noch ich bin,
+also dass ich trotzdem noch irgendwie erkennbar bin, auch wenn es so ein Twin ist.
+Ja, sieht richtig beschissen aus,
+vielleicht auch, weil das vorher platzierte Bild von mir auch KI ist.
+Mir nutzen mein anderes.
+Ich hoffe einfach, dass du schon bei dem ersten Versuch oder mit Tach-VT-1 gefunden hast, mit dem du zufrieden bist.
+Bitte, das hier als Referenzbild verwenden und halb Maschine, halb Mensch machen.
+Vielleicht muss man es auch ohne Referenzbild posten und einfach nur das.
+Aber du siehst schon, so ist es halt und musst einfach ein bisschen rumprobieren.
+Ich habe es auch eben tatsächlich mit Flux probiert, was wir ja auch genutzt haben mit Fella AI.
+Da bekomme ich aber wirklich nur etwas hin, was wirklich meinem Gesicht sehr ähnlich kommt
+und die Ergebnisse sind zwar eigentlich ganz cool,
+aber wir wollen ja wirklich so ein Avatar, der eben schon ein bisschen, ja,
+ein bisschen avatarisch ausschaut.
+Okay, das ist ja vorsprachlich.
+Okay.
+Sorry, jetzt habe ich noch eine Idee.
+Bitte erstelle mir aus diesem Bild einen digitalen Twin, der nach mir aussieht, aber auch so Elemente von einer Maschine hat.
+Jetzt machen wir es mal komplett ohne Referenzbild.
+Ich bin es auch nicht auf Bild gegangen hier unten bei Tools, sondern habe es nur einfach nur eingegeben.
+Let's see.
+I like.
+Sehr cool.
+Okay, dann machen wir es ohne Referenzbild.
+Bitte eine andere Variante ohne die Augen.
+Also es wird ja auf jeden Fall schon mal ein bisschen besser.
+Wie kann man das beschreiben?
+Wie heißt denn das, ich weiß es nicht, dafür würde ich es auch mal natürlich tief fragen.
+Vielleicht könnte man schreiben, bis sie ein bisschen mehr KI generiert, die Haut und die Haare.
+Ich weiß gar nicht, ob er so einfach steht.
+Ja, also probiere dich mal aus, probier mal ein bisschen rum, das sieht ja alles schon immer sehr seltsam aus.
+Ja, vielleicht willst du auch gar keinen Twin, anyway.
+Vielleicht könnten wir noch ohne den Hintergrund bitte vor einem futuristischen Hintergrund.
+Und vielleicht können wir uns auch ein Promptor zu erstellen lassen.
+Ich möchte gerne ein Bild von mir genau so gestaltet haben, also dass ich aussehen wie so ein KI-Twin von mir.
+Kannst du mir diesbezüglich einen Prompt fertigstellen?
+Was kann ich prompten, damit ich so aussehen werde?
+Jetzt lassen wir uns einfach von Tativitäten Prompt geben.
+Ja, das sieht auch schon immer irgendwie cooler aus.
+Und jetzt gucken wir noch.
+Jetzt haben wir das einfach mal noch rein.
+Das sieht aber schon mal cool aus, finde ich.
+Ich würde jetzt nur hier noch die Haut ändern.
+Gucken wir mal, weil du willst natürlich keinen Twin haben, der dann auch Area heißt.
+Ob wir das noch irgendwie so erstellen können, dass du das auch bekommst.
+Ja, okay.
+Das geht dann schon ganz gut.
+Alles klar.
+Also ich würde dann so vorgehen, dass ich mir bei Tativität den Prompt erstellen lasse.
+Einfach sagen, okay, was will ich prompten?
+Und dann das quasi in Germanite eingeben.
+Ohne Referenzbild.
+Einfach mal machen und dann auf Basis dieses Bildes bearbeiten.
+Bitte die linke Seite auch noch mit metallischen Elementen.
+Und dann kann man ja darauf basieren, dass immer weiter verändern.
+Das hat er jetzt eigentlich ganz gut geklappt.
+Okay, gut.
+Dann warte ich das noch ab.
+Jetzt finde ich mal gespannt, weil das das überhaupt verstanden hat.
+Ja, cool.
+Okay, genau.
+Also so kannst du deinen AI-Train erstellen.
+Wie gesagt, geht leider nicht damit, auch wenn das ganz coole Ergebnisse generiert.
+Aber dafür brauchen wir dann Gemini oder eben kennen wir AI, je nachdem,
+wie close du eben sein möchtest zu dir.
+Du kannst damit natürlich auch komplett andere Abattare erstellen.
+Ich meine, wir könnten auch jetzt, wenn wir zum Beispiel ein Faceless Account haben,
+können wir eigentlich diesen Abattar hier nehmen, können den abspeichern,
+in Hey-Gen reinpacken und dann basierend auf diesem Abattar eben unsere Reals
+und so weiter erstellen lassen.
+Da ist natürlich auch möglich.
+Also für Faceless sind hier wirklich gar keine Grenzen gesetzt,
+weil man sieht ja schon, das sieht in Kesselweise aus,
+wie ich.
+Auch das nicht.
+Und das ist natürlich richtig cool.
+Und man kann natürlich auch einfach ein hübscher Mann mit weißer Lose,
+könnte man natürlich auch jetzt einfach so eins erstellen
+und dann das in Hey-Gen eingeben
+und dann darauf basierend Content kreieren.
+Ja, also wir konnten dann ein Account machen, der dem gehört.
+Das zeige ich dir dann gleich, wie ich das machen würde.
+All right.
+Wir sehen uns im nächsten Modul.

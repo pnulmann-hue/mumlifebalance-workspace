@@ -1,0 +1,14 @@
+{
+  "name": "mumlifebalance-manychat",
+  "version": "1.0.0",
+  "description": "ManyChat REST API Helper fuer Mum Life Balance",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "whoami": "node --env-file=.env mc-api.js whoami",
+    "list-tags": "node --env-file=.env mc-api.js list-tags"
+  }
+}

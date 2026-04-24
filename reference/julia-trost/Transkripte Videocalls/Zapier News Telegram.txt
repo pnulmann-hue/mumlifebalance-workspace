@@ -1,0 +1,124 @@
+Also was echt cool ist und was ich mir überlegt habe ist, dass ich einen Set mir gebastelt
+habe, der dafür sorgt, dass ich jeden Tag, morgens um 8 Uhr, habe ich eingestellt, Nachrichten
+bekomme, und zwar bei Telegram.
+Und hier siehst du diese Nachrichten, das läuft schon eine Weile, und die Nachricht besteht
+immer aus den Telegram News, also aus ZBT News, das heißt, ich bekomme immer die neuesten
+News, was ZBT angeht, und aus einer Hook-Idee für einen Beitrag, also hier hook zum Beispiel,
+und aus einer Story Sequence für meine Instagram Stories.
+Und das finde ich mega cool, weil du dadurch morgens aufwachst auf dein Handy guckst und
+direkt mal einen Impuls hast.
+Und viel von uns geht es ja so und mir auch tatsächlich immer mal wieder, dass man irgendwie
+nicht weiß, worüber man sprechen möchte.
+Und allein wenn man dann nur so ein Schlagwort sieht, auch wenn man jetzt nicht die komplette
+Story-Slide verwendet oder auch nicht den Beitrag, dann kann man vielleicht schon mal
+so eine Inspiration dafür bekommen, was man eben teilen möchte.
+Und das finde ich eigentlich ganz, ganz nett.
+Und dafür muss man eben im ersten Schritt diesen Telegram-Bot einrichten, wie das funktioniert,
+das zeige ich dir noch, beziehungsweise siehst du jetzt in dem Video vorher wahrscheinlich.
+Und was wir dann aber machen, ist, dass wir zu Zapier wechseln, und Zapier ist ja ein
+Programm, das mehrere Programme miteinander verknüpfen kann, und hier verknüpfen wir
+jetzt zum Beispiel Tattivity über Zapier mit Telegram, damit wir diesen Funnel quasi
+bekommen.
+Und was du da einstellst, ist, dass du, ich zeige es dir mal von Anfang an, kann ich da
+denn Home, wir gehen mal auf Home.
+So, wenn du hier auf Plus klickst, auf Create, kannst du hier auf Zap gehen und dann bekommst
+du so eine Planku-Vorlage, und da fügst du jetzt das ein, was ich dir jetzt teile.
+Und als Trigger nennst du hier, Schedule by Zapier, das nennt sich einfach so, Schedule
+by Zapier und sagst dann Event-Everyday.
+Und du kannst natürlich auch, wenn wir jetzt wechseln, zu Schedule gehen und sagen, du
+möchtest es nicht jeden Tag triggern, sondern jede Stunde oder jeden Monat oder jede Woche.
+Ja, also du kannst es komplett unterschiedlich machen, ich mach es einfach jeden Tag um
+8 Uhr.
+Also hier Everyday.
+Und dann konfigurierst du das und hier kannst du dann sagen, um Viertel vor 2 in der Nacht
+oder um Viertel nach 9 abends oder um 5 Uhr abends, ob man Wochenende aussparen soll oder
+nicht.
+Also das alles kannst du machen und kannst du einfach so einstellen, wie du das möchtest.
+Und am Schluss bekommst du dann eben die Möglichkeit, das Ganze zu testen, das heißt, wir können
+das ja jetzt mal machen.
+Dann sagst du mal so, 12 Uhr und dann testet der diesen trigger und das musst du immer
+machen, um den nächsten Schritt dann anzustoßen.
+Aber um genau zu verstehen, wie Zapier funktioniert, da kannst du dir gerne auch einfach mal Tutorials
+anschauen, weil das zu erklären und komplett Zapier zu erklären wäre jetzt wahrscheinlich
+zu viel.
+Ich möchte dir einfach nur zeigen, was es kann und wie man es machen kann.
+Genau.
+Also und dann gehst du hier weiter, continue und dann sagst du, du wärst eine Aktion,
+beziehungsweise fragt er eine Aktion.
+Was wir aber machen, ist noch, wir bauen noch eine zwischen Webhook ein und das ist jetzt
+hier zum Beispiel hier Webhook, da findest du das und dann sagst du hier get also wir
+haben hier eingestellt get, das siehst du auch hier, ich zeig dir einfach die Konfigurationsschritte
+und das kannst du dann genauso nachbauen und hier gibst du dann ein, was zum Beispiel
+die Webseite ist, die er durchlaufen soll, um dir die täglichen News zu geben, weil hier
+das sind zum Beispiel die täglichen News, die er uns jetzt rausgibt und hier haben wir
+jetzt einfach diese Webseite genommen, hier kenn ich mich selbst nicht aus, einfach das
+anklicken, was er vorschlägt, hier den URL eingeben, hier haben wir wie gesagt no,
+yes, anfletten, was haben wir da, yes, also einfach alles so gelassen wie es ist und
+dann continue geklickt.
+So und dann auch nochmal getestet, also ich zeig dir hier wie gesagt die Konfiguration,
+also super gerne nach und dann gehst du hin und sagst plus und dann machen wir jetzt
+Techivity, das heißt du gibst hier oben einen OpenAI, hier Techivity und dann geht es weiter
+und natürlich musst du auch dann Techivity mit Safety verbinden, da kommst du dann in
+so einen Zwischenstep wo du das quasi verknüpfen musst, dein Techivity Account, aber das
+funktioniert mit jeder App genau gleich bei Safety, also das ist gar kein Problem diese
+zu integrieren.
+So und dann haben wir gesagt, benutzen die App Techivity OpenAI 2.38, das ist aber die
+Version, Event ist Conversation und Account ist der hier, das heißt wir haben jetzt hier
+Conversation, Account ist der hier und dann musst du halt verschiedene Sachen auswählen,
+das heißt du kannst das Modell auswählen von Techivity, dann die Nachricht, welche Instruktion
+dahinter gelegt sind und so weiter, du kannst auch Bilder, Temperatur, weil ich gar nicht
+was das heißt, ich habe da einfach genau diese Schritte genutzt, ich habe GPT-5 ausgewählt,
+dann habe ich geschrieben basierend auf diesen aktuellen AI Tech News passen die 3 bis 5
+Pflichtigsten OpenAI Techivity Features zusammen und dann habe ich, was habe ich denn hingeklickt,
+muss ich jetzt gerade selbst gucken,
+ich glaube wir haben ja einfach RSS Channel, ich gehe mal kurz auf Edit, damit wir uns das genauer
+anschauen können. Genau, hier. Ach so, da brauche ich jetzt was, ich mache jetzt einfach mal
+meine Website, ich hoffe das geht, ich bin mir jetzt nicht sicher, ob das geht, aber wenn du eine
+richtige Website verwendest, dann wird das auf jeden Fall funktionieren, du hast es ja bei mir
+gesehen, testapp, ja okay, da nutzen wir als einfach nochmal die URL, die wir jetzt hier hatten,
+einfach nur damit du siehst wie es funktioniert, beziehungsweise das funktioniert. So,
+jetzt passt alles, dann können wir auch weiter machen, continue, also haben wir jetzt sagen,
+jetzt haben wir hier gesagt, das hier, dann können wir hier auch plus klicken und können dann
+wahrscheinlich hier genau diese Sachen hier anklicken, das sind einfach nur Headlines,
+die wir jetzt ausgewählt haben, ich bin mir nicht ganz sicher, wie das funktioniert,
+um ehrlich zu sein, ich habe den das einfach nur einprogrammieren lassen, deswegen würde ich es
+einfach genauso wiederholen, wie er es gemacht hat und wie ich es in dem Fall gemacht habe,
+ich heiße noch gerne für dich nochmal an, wir haben RSS Channel Item 2, 3, also immer die Titel
+anscheinend, wahrscheinlich sind das einfach die Headlines von den RSS Channel Item 1, 2, 3 und so
+weiter, also das klickst du dann einfach ein, 3, 4, 5, ich nehme an, dass der einfachste Artikel von
+dieser Website quasi zusammen glaubt und mir dann ausspuckt beziehungsweise die Zusammenfassung
+dadurch mir dann ausspuckt, hier gibst du die Instructions ein, das heißt hier programmierst du
+dann quasi den GPT, da kannst du natürlich wählen, was du möchtest, du kannst maximal 5.000
+Zeichen, maximal 300 Zeichen, wie auch immer, und das steht auch schon fast quasi die Newsnight
+Headlines zusammen, das ist schon ganz cool, genau, hier haben wir token 2.000 ausgewählt,
+ich mache mal nochmal Published, damit ich dir eine Published Mission zeigen kann, aber du siehst
+schon, man kann auch immer wieder alles verändern, das ist eigentlich ganz cool und ich versuche
+das auf jeden Fall auch als Vorlage anzuhängen, damit du direkt meinen quasi nutzen kannst,
+genau, Maximum Tokens 2.000, Response Form and Text und Tool Choice haben wir Auto, das heißt das
+würde ich auch alles genauso einstellen, hier lassen wir auch einfach alles, Tools hat er jetzt
+irgendwie Auto glaube ich eingegreben, oder? Was hat er bei Tools jetzt gemacht? Tool Choice,
+okay Tool Choice, Auto ist eh, Standart ist auch eh, cool, voll gut, können wir direkt weiter machen,
+genau, und dann müssen wir noch eine Sache hinzufügen, nämlich Telegram, dann gehen wir auf Plus,
+gehen auf Telegram, verknüpfen auch wieder unseren Account, sagen Send Message, also schicken mir eine
+Nachricht, geben dann die Chat ID ein, ich zeig dir das jetzt mal nicht, weil du dann mal ID sehen
+würdest und geben dann auch den Text ein, der Text ist bei mir einfach, ich kann es mir mal angucken,
+ohne dass ich die Freigabe zeige, bis ich den zeigen kann.
+Okay, also ich habe hier einfach nur bei Plus, habe ich einfach nur Output Text gemacht, also
+ich habe gar keinen richtigen, ich weiß nicht, irgendwas vorher muss ich jetzt konfigurieren,
+komplette Step, ja man muss immer alle Folgen Steps getestet haben, damit man die späteren
+noch mal verwenden kann, die späteren Aktionen ausführen kann, das ist ganz wichtig, deswegen
+ging es jetzt auch nicht, einfach hat alles geklappt, was wir gemacht haben eben, okay,
+und dann können wir vielleicht auch das auswählen, was ich jetzt ausgewählt hatte, genau, ich habe
+einfach nur Output Text angewählt und das war es, Tötter, die dann hinzufügen und dann kannst
+du weiter und dann ist der, der selbst auch schon, kannst du den selbst auch schon pappischen, genau,
+also das wäre jetzt mal, mal kurz Pause, damit ich ihn einmal rausgehen kann, das wäre jetzt mal
+der Workflow, so wie ich einen eingebaut habe, also Sketchup bei Zapier, Webhooks bei Zapier,
+ChatGbt und dann Telegram, und wir können wie gesagt auch noch die Hooks und den ganzen Content
+Part machen und wie das funktioniert, zeige ich dir gleich im nächsten Video, das ist erst mal
+zu den News, und wenn du da irgendwelche Fragen dazu hast, schreib mir super gerne, ansonsten
+lese ich Durst, du kannst auch, die haben eine richtig gute KI, also Zapier, das heißt, wenn du
+auf irgendeine Fehlermeldung triffst, kannst du einfach hier unten auf dieses Ding hier gehen,
+hier auf den ganz links unten co-piled und kannst den fragen, hey ich bekomme die und die
+Fehlermeldung, bitte pass mir den Zap oder den Workflow so an, dass es funktioniert, also der
+hilft dir da wirklich komplett, also die KI von denen ist echt richtig gut, und ja, wie das
+nächste geht, sehen wir uns im nächsten Video an.

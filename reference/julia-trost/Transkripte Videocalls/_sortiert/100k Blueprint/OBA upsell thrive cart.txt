@@ -1,0 +1,174 @@
+So, schauen wir uns jetzt noch an, wie wir Upsells und Downsells erstellen.
+Wie du Crosssells erstellst, ist ja schon bekannt.
+Du gehst hier auf Edit bei deinem Produkt, gehst dann auf Bump und hier hast du dann das Crosssell.
+Upsells und Downsells erstellen wir ein bisschen anders.
+Und zwar haben wir hier oben diese Reiter und müssen uns erstmal überlegen,
+welche Ups und welche Downsells wollen wir dann anbieten.
+Dann gehen wir zum Beispiel hin, sagen create a new upsell.
+Funktioniert gleich wie beim Downsell.
+Ich zeig dir jetzt nur eine Variante.
+Hier ist dann der Name, den die Leute dann auf der Rechnung stehen haben.
+Also, Verrestner Test 1 und das ist der Name, den wir für uns haben.
+Ich würde es immer wirklich empfehlen, ganz genau zu benennen.
+Dann kannst du sagen, okay, ist es eine Einmalzahlung oder eine Subscription.
+Also gibt es mehrere Monate, die man bezahlt mit einem Startpreis,
+oder es ist eine Ratenzahlung, das kennst du ja auch alles schon,
+wie wenn du auch dein Produkt einstellst von zwei oder bis zu sechs Monate.
+Wir sagen jetzt mal, es ist eine Einmalzahlung.
+Dann kannst du den Upsell auch verfügbar machen bis zu zum Beispiel 100 Leute.
+Also du kannst zum Beispiel sagen, okay, das ist nur 100 Mal verfügbar.
+Und wenn das 100 Mal verkauft wurde, dann entweder überspringen dieses Upsell
+oder fangen dann auf einen neuen an zu zählen.
+Ich mache das nie, ich mache es immer auf Unlimited.
+Genau.
+Dann I alone only one purchase as a time oder multiple purchases,
+weil es ist nicht genau, was der Unterschied ist,
+weil ich meine, es ist ja eh nur ein Verkauf, den wir hier jetzt tätigen.
+Multiple bedeutet mehrere Verkäufe.
+Ich lasse es einfach immer genauso stehen.
+Gibt es eine, auf Deutsch ist es immer zu schwierig,
+eine Versuchsteiltraum, also einen Testzeitraum, so, ich mache immer auch Nein.
+Und hier kannst du natürlich den Preis für das Upsell aufsetzen, sagen wir mal 100, 900 Euro.
+Das überspringe ich immer, das überspringe ich auch immer.
+Dann können wir weitergehen, dann kommen wir auf Fulfillment.
+Hier steht einfach nur, dass du diesen Titel hier quasi, der dann erscheint,
+wenn man den Download Link klickt, Personalisieren musst.
+Also die geben jetzt vor, you purchase, product name, also du hast das und das gekauft.
+Dann kann man hier sagen, cool, der Kauf hat geklappt oder sowas, ja, geklappt.
+Es geht einfach nur um die deutsche Übersetzung quasi.
+Und was haben wir hier, Customize the Text and the Download Link.
+Genau, das ist dann in dem Download Link und hier ist es oben drüber.
+Hier kannst du dann schreiben, klick hier, um das Produkt zu buchen, ja.
+Warte, was stand da?
+Ja, genau, okay.
+Und dann müssen wir hier natürlich sagen, okay, wenn das gekauft wurde,
+dann müssen wir bei Active Campaign nochmal die Verknüpfung herstellen, mit dem Tag, ja.
+Ich mache jetzt keinen, aber dann muss man hier irgendeinen Tag aussuchen.
+Dann machen wir Save My Upsell.
+Die Verknüpfung ist übrigens sehr, sehr wichtig,
+weil wir müssen ja dann auch wirklich damit arbeiten und sagen,
+okay, in unseren Funnels bekommen die Personen, die das Produkt gekauft haben,
+das natürlich nicht mehr die Werbung dafür ausgespielt, weil die haben es ja schon, ja.
+So, und dann haben wir das Absolvier.
+Und jetzt ist es ein bisschen tricky, jetzt gehen wir nochmal zurück.
+Also wir können das hier nichts mehr machen damit.
+Und jetzt nochmal zurückgehen jetzt auf Edit Funnel.
+Und können jetzt, ich mache es noch bei einem Produkt, wo noch kein Absol ist.
+Ich weiß gar nicht, ob ich sowas habe.
+Ich habe doch hier irgendwo, weil ich will das von vornherein zeigen, ja.
+Create Funnel.
+Und dann kommst du hier drauf und sagst du, ja.
+Und dann lässt du das einfach hier, weil wir wollen ja dann den Personen auch in unser Learn reinbekommen.
+Wenn du sagst, du arbeitest nicht mit DriveCard Learn,
+du hast deine Videos und so weiter woanders,
+dann kannst du auch einfach nur die Rechnung anzeigen lassen
+oder auf eine individuelle URL verlinken, ja.
+Aber ich mache immer DriveCard Learn, genau.
+Also das bedeutet einfach, dass sie danach zu Learn kommen.
+Okay.
+Dann kann man hier jetzt sagen, okay, ich bin Absell, zum Beispiel unser Test.
+Und danach kannst du dann sagen, ein Downsell.
+Du kannst natürlich erst das Downsell kreieren,
+nachdem du das Absell kreiert hast,
+weil das Downsell wird dir nur angezeigt, wenn das Absell nicht gekauft wurde, ja.
+Genau.
+Was steht hier?
+Ne, gut.
+Okay.
+Das lassen wir alles so.
+Und dann muss ich natürlich hier noch auswählen, zu welchem Kurs hat man dann hinzugefügt.
+Ich habe jetzt keinen Testkurs,
+und dann habe ich jetzt einfach mal irgendwas mitgebracht.
+Und dann ist noch ganz, ganz wichtig, das ist das Gleiche.
+Und dann muss ich natürlich hier noch auswählen,
+zu welchem Kurs hat man dann hinzugefügt.
+Ich habe jetzt keinen Testkurs,
+und dann ist noch ganz, ganz wichtig.
+Das Gleiche kannst du natürlich auch hier mit dem Downsell auswählen.
+Ja.
+Dann ist natürlich noch ganz, ganz wichtig,
+dass du hier auf Edit Absell Page gehst.
+Hier kannst du dann von einem anderen Absell,
+was du irgendwann mal erstellt hast, das kopieren,
+zum Beispiel, wenn ich das Absell hier nehme,
+und hier unten dann wichtig, dass du das angekreuzt hast.
+Ich würde dir das empfehlen,
+ich würde dir empfehlen, einmal ein Absell zu bauen,
+so Bastel, eine Seite, die cool ist,
+und dann immer wieder so kopieren,
+weil sonst machst du dich wirklich tot,
+wenn du bei jedem Produkt noch ein Absell-Seite kreierst.
+Wir verraten jetzt einfach mal von der Pieke auf.
+Also das heißt, jetzt ist hier die Planke-Seite.
+Ja, jetzt kannst du das natürlich verändern.
+Du kennst jetzt Rifecut mittlerweile,
+du kannst hier deine Brandingfarben anpassen.
+Du kannst hier die Namen, die Übersetzung anpassen.
+Check out, bearbeiten, fertig.
+Check out, lass ich das einfach mal.
+Hier kannst du auch nochmal die Dings nehmen.
+Und hier würde ich auch ja Aktualisieren C,
+ja, also auch würde ich auf Du umgehen,
+ich aktualisiere jetzt meine Bestellung,
+klicke hier, um seine Bestellung sofort hinzuzufügen,
+wenn, ah, das kann man jetzt nicht personalisieren,
+individualisieren, okay.
+Ja, na gut, also hier, das kann jetzt nicht ändern,
+das ist ja okay.
+Nein, danke, bitte.
+Füge dieses Angebot mit meinem Einkauf nicht hinzu.
+So, und jetzt können wir natürlich sagen,
+wir machen noch ein Bildchen hin,
+also ich mache immer gerne einen Mock-Up hin.
+Wie genau das Absell aufgebaut ist,
+damit es am besten gekauft wird,
+das lernst du dann ja in,
+bei digitalen Bluterstellungen
+unterhalb von den Check out und Sales-Pages,
+das siehst du alle Seiten, die ich ja erstellt habe.
+Da kannst du auf jeden Fall nochmal reingegucken,
+falls du es noch nicht reingeguckt hast.
+Ich arbeite immer sehr gerne mit dem Mock-Up
+und darunter, darüber dann auf jeden Fall eine Headline,
+wo dann steht, nur für 300 Euro,
+anstatt für 799 Euro oder sowas, ja,
+das würde ich dann irgendwie noch durchstreichen,
+das hier können wir irgendwie auf grün machen.
+Das ist das ganze Ding durch grün,
+na ja, egal, also es geht ja hier nicht um das Design,
+sondern dass du einfach verstehst,
+wie wir das machen können.
+Und dann würde ich noch einen Text runterlegen,
+das kannst du auch einfach reinziehen
+und dann kannst du hier eben Inhalt,
+Transformation, all die Geschichten,
+die du halt bewohnt bist, ja.
+Und hier kannst du auch nochmal,
+ja, keine Ahnung,
+unterstehen.
+Das ist das ganze Ding durch grün,
+na ja, egal, also es geht ja nicht um das Design,
+sondern auch nochmal, ja, keine Ahnung,
+unterstreichen oder kursiv machen.
+Also du kannst, wie gesagt,
+einfach die komplette Seite so anpassen, wie es dir gefällt.
+Denk auch immer dran, dass du deine mobile Version
+auch bearbeitest, ja.
+Dass du auch hier schaust,
+dass es nicht irgendwie verschoben ist
+oder so, das ist ja ganz oft bei der mobilen Seite.
+Und dann gehst du einfach auf Komplit,
+und dann kannst du genauso gut
+das Downset dann auch noch hinzufügen.
+Okay, also so funktioniert,
+wie gesagt, wie du,
+ja, Funnel oder Upsell
+und Downset-Produkte so erstellst,
+die auch wirklich gut performen.
+Das lernst du im Produkt-
+Erstellungskapitel, aber so kannst du
+auf jeden Fall von der technischen Seite her
+das Ganze erstellen. Ich lasche das mal wieder.
+Das kannst du eben auch immer wieder machen.
+Okay, gut, also,
+wir sehen uns im nächsten Modul.

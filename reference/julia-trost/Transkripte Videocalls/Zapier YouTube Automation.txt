@@ -1,0 +1,99 @@
+Ich habe noch eine richtig geile Sache hinzugefügt in meiner Automation, die ich dir unbedingt noch zeigen wollte.
+Und zwar habe ich jetzt gesagt, wenn ein neues YouTube Video in einem Channel meiner Wahl hochgeladen wird,
+dann packt das Video, also die Zusammenfassung dieses Videos in einer extra Datei und fassen mir das zusammen.
+Und gibt mir den Titel und so weiter, wir schauen uns das gleich an.
+Also, erst einmal, wofür mache ich das? Ich scrape hier YouTube Videos von anderen Personen.
+Das heißt, du gibst einen Kanal deiner Wahl ein und du musst dann dafür die ID rausfinden.
+Das heißt, wenn du zu TouchVideos gehst und sagst, hey, kann ich bitte die YouTube Channel ID von Julia Trost haben,
+dann musst du noch den Kanal dann auch hinzufügen und dann bekommst du die Channel ID.
+So, das hier, die kopierst du dir und das ist nämlich das, was wir hier brauchen.
+Hier, hier können wir die Channel ID hinterlegen.
+Wenn du auf Editieren gehst, dann fragt er dich an der ID und dann musst du die hinterlegen.
+Was du hier eingibst, ist New Video in Channel.
+Das heißt, wenn ein neues Video hochgeladen wird, dann bitte fassen mir das zusammen.
+Und ich mache das, um Inspiration zu finden, weil ich lasse mir dann die Videos zusammenfassen
+und kann dann sehen, über was sprechen andere Menschen aus meiner Branche
+und kann über genau das Thema dann eben auch sprechen das nächste Mal.
+Das ist einfach so, so geil, um Inspiration zu sammeln.
+Also, wie gesagt, neues YouTube Video im Channel, dann einfach nur die Channel ID.
+Das war es schon, mehr brauchen wir hier nicht.
+Dann AI by Sapier ist das zweite, was wir brauchen.
+Ich kann auch mal hier auf Edit gehen, damit du die komplette Integration hast.
+Aber wie gesagt, nutze einfach diese AI von Sapier und sage dem einfach genau, was du willst
+und dann macht er das automatisch, also es gibt nichts Geileres.
+Dann gehen wir auf Configure und dann macht er dir hier ein Promt rein.
+Ich kann dir den auch mal zeigen.
+Bei mir steht hier einfach nur Transcribe, dann hier Dynaminai
+und das andere war es eigentlich schon, also sonst habe ich gar nichts gemacht.
+Ich habe nur die beiden Sachen quasi eingegeben, beziehungsweise hat das auch die AI gemacht.
+Ach so, muss ich weiter nicht erfüllig drücken, genau.
+Provider ist OpenAI, Authentication ist in Mainz, Modell kannst du natürlich dann auswählen.
+Input-Files ist dann der Titel, dann Transcript ist der Content
+und Video-Duration ist dann die Details-Duration.
+Brauchen wir eigentlich gar nicht, aber gut.
+Der Promt ist der hier, den kann ich dir gerne auch unter das Video zusammenpacken.
+Kannst du dann einfach kopieren, aber eigentlich macht er das auch, wenn du das über die KI machst.
+Und das sind die Output-Files und ja, hier steht Faults.
+Also, ja, wie gesagt, ich weiß, weil wieder ziemlich häufig nicht was da genau rein muss,
+aber ich weiß, dass es so funktioniert und deswegen zeige ich dir das so.
+Genau, dann kannst du einfach hier continue machen.
+So, und dann der nächste Schritt, also genau, den habe ich dir gerade gezeigt
+und dann der nächste Schritt ist dann die extra Dateien.
+Ja, der nächste ist einfach Google Sheets, dann musst du ein Dokument halt anlegen.
+Da heißt es einfach YouTube-Videos und dann konfigurierst du das hier
+und sagst, okay, das ist diese Datei, also die musst du halt einfach auswählen von all deinen Sheets, die du hast.
+Dann sagst du Tabellenblatt 1, weil es gibt ja auch verschiedene Tabellenblätter.
+Ich habe das bei mir jetzt unbenannt, vielleicht sollte ich das mal so machen.
+Genau, Time Zone, keine Ahnung, mache ich nicht.
+Videotitel, einfach den Titel, Zusammenfassung, Summary, Hauptthema, Main Topic,
+wichtigste Punkte, Keypoints, Beschreibung, YouTube-Viscription, ja.
+Also das sind einfach die Sachen, die du dann quasi hinterlegen möchtest.
+Wenn du jetzt sagst, du brauchst jetzt nicht die drei Keypoints
+oder das Main Topic brauchst du gar nicht, musst du das natürlich nicht nutzen.
+Ja, ich habe einfach nur gesagt, das wären so die Sachen, die ich bräuchte.
+Und ja, dann einfach Test.
+Ja, dann können wir gesagt retestab.
+Und dann sollte das alles funktionieren.
+Okay, gut.
+Ich weiß nicht, warum ich es nicht publish schicken kann.
+Scheint mal, es funktioniert zu haben.
+Also gut, ist für dich irrelevant.
+Aber genau das sind die Schritte, ja.
+Also wir haben, ah, jetzt macht er was.
+Wir haben YouTube, dann AI by Zapier, dann nochmal AI by Zapier.
+Hier haben wir am Anfang dieses Extract Content von URL.
+Hier haben wir Analyze and Return Data.
+Und hier ist dann eben das Google Sheet, genau.
+Also ich hinterleg dir den Prompt.
+Das kannst du super gerne nutzen, wie gesagt, um Inspiration zu sammeln.
+Und jetzt zeige ich dir mal noch, wie das aussieht.
+Und zwar ist das dann so.
+Das heißt, das hier sind die Videos, die jetzt hochgeladen wurden von der Person.
+Da fasste das Ganze zusammen, auch auf Deutsch, ja.
+Hier ist das Hauptthema.
+Hier sind die wichtigsten Punkte, einfach noch mal so eine Struktur.
+Und hier ist nochmal eine kurze Beschreibung von dem gesamten Video.
+Und ich werde es wahrscheinlich so machen,
+dass ich mir in Zukunft einfach diese Sachen hier angucke,
+gucke worüber spricht die Person.
+Und dann werde ich selbst ein Video erstellen.
+Und hier habe ich mir noch so eine Tagliste hinterlegt.
+Da sage ich, kann ich für mich einfach abhaken,
+was ich schon genutzt habe und was nicht.
+Und ja, genau, jedes Mal, wenn jetzt ein neues Video erscheint,
+kommt das hier rein.
+Und das kannst du natürlich auch mit Instagram und so weiter machen,
+wenn jemand von deinen Accounts, zum Beispiel,
+wenn du wissen willst, wann ich was neues veröffentliche
+und was ich veröffentliche, kannst du natürlich jetzt auch mit Instagram machen.
+Also glaube ich zumindest, wenn ich es baue,
+dann werde ich sie natürlich auch mitgeben, so wie alles.
+Aber ja, genau, so sieht das aus.
+Ja, also viel Spaß dabei.
+Denk dran, das ist zur Inspirationssammlung.
+Du kommentierst oder du kopierst natürlich jetzt nicht zu jedes einzelne Wort.
+Deswegen gibt es auch nur eine Zusammenfassung.
+Aber es kann halt eben krass helfen, wenn man einfach nicht weiß,
+was andere so den lieben langen Tag von sich geben.
+Ja, und das so einfach zu erleichtern.
+All right, dann bis demnächst.

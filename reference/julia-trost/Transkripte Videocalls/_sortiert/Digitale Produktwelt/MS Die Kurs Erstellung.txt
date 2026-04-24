@@ -1,0 +1,357 @@
+Schreiben wir uns mal an, wie du deine Kurse erstellst und dabei ist es jetzt natürlich
+ganz egal, ob das ein Mini-Kurs ist oder ein großer Kurs.
+Wir schauen uns erstmal die Tools und die Technik an, die du brauchst und ich weiß das
+Thema Technik ist für viele erst mit so einen Moment, wo man so denkt, oh Gott, Hilfe, ja,
+was kommt alles auf mich zu?
+Keine Sorge, wir gehen jetzt Schritt für Schritt durch und du brauchst da auch keine Angst
+zu haben, weil es ist wirklich weniger dramatisch, als man vielleicht meinen möchte.
+Schreiben wir uns an welche Programme du bräuchtest, um der Strategie zu folgen.
+Du brauchst Zoom oder Loom oder Teams oder sowas, also irgendwas, wo du aufnehmen kannst,
+wie jetzt hier ich, also ich nehme jetzt mit Zoom auf, das kannst du am Anfang auf jeden
+Fall kostenlos nutzen.
+Dann brauchst du Canva, wenn du eine Präsentation erstellen willst, wie ich hier, also dieses
+Slide, die du hier siehst, die ich durchklicke, dass das mit Canva gemacht und Canva ist
+ein Tool für Präsentation, du kannst natürlich auch Microsoft PowerPoint nutzen oder andere
+Tools, ich liebe Canva einfach und auch das ist am Anfang kostenlos, also kostenlos, kostenlos.
+Google Documents nutze ich, also generell Google Drive, weil da kann ich dann eben die Präsentation
+ablegen oder die Workbooks, das geht ein bisschen besser, wenn man das einfach online
+ablegt, dann hat man das nicht alles auf seinem PC, kann es immer wieder verändern,
+anpassen und ich kann es euch eben auch freigeben.
+Das siehst du dann immer unter meinen Videos, wenn das steht, klick hier oder hier gehst du
+Workbook, das sind alles PDFs oder Word-Dokumente, die auf Google Drive fliegen, ist auch am
+Anfang kostenlos.
+Dann brauchst du auf jeden Fall DigiStore, Elo Page, Katabis, Rivecard, irgendetwas für
+deine Bezahlprozesse und für deine Kurse, wo die eben liegen und du brauchst ein Email-Tool,
+also zum Beispiel Active Campaign, GetResponse, Mailchimp für deine E-Mails.
+Das schauen wir uns gleich noch an, deswegen steht es hier einfach mal nur so da,
+weil ich glaube, wenn ich dir das zeige, wird es noch mal mehr klar.
+Ich persönlich nutze ein Rivecard, ich habe dir auch meinen Link hier unten reingepostet,
+das geile an Rivecard ist, du bezahlst einmalig und hast keine Transaktionsgebühren mehr.
+Bei DigiStore, Elo Page, Katabis hast du Transaktionsgebühren und zahlst auch monatlich.
+Wo du aufpassen musst, ich weiß es nicht, wie es bei DigiStore ist oder bei Elo Page,
+bei Rivecard ist es so, dass auch hier eine Kursplattform hinterlegt ist, das heißt,
+du siehst diesen Kurs ja gerade bei mir auf Rivecard und bezahlt hast du auch über Rivecard,
+das heißt, es hängt alles zusammen.
+Bei Elo Page und DigiStore ist glaube ich so, dass das nur der Zahlungsanbieter ist
+und du brauchst noch eine weitere Plattform, um deinen Kurs da eben zu parken, dass man
+durchschauen kann, da bin ich mir aber nicht sicher, da kannst du dich selbst informieren,
+aber auch hier gilt, nicht zu lange procrastinieren, entscheide dich einfach für irgendwas,
+es ist nicht schlimm und wenn du dich heute für irgendwas entscheidest und nächste Woche
+nochmal sagst, ah nee, komm ich doch nicht so gut mit zurecht, dann änderst du es halt.
+Geht alles, es ist wirklich nicht ein Steingemeister, du kannst alles anpassen,
+optimieren, das Wichtigste ist wirklich, dass du dich mal entscheidest, setzt dir am besten
+eine Deadline, weil ich kenne das von Kunden von mir, die dann wirklich wochenlang auf der Suche
+nach der geeigneten Plattform sind, obwohl sie schon längst hätten verkaufen können.
+Und hier auch das gleiche, ich würde Active Campaign empfehlen, weil ich selbst mit Active
+Campaign arbeite, ihr könnt aber auch ein anderes E-Mail Programm nehmen.
+Ich würde nicht unbedingt Maillight empfehlen, weil das ist kostenlos und ja natürlich kostenlos
+immer attraktiv, aber da gibt es eben viele Funktionen nicht, die wir brauchen für den Funnel.
+Es geht, es gibt ein Workaround, mal gucken, ob ich dir das hier auch anpinnen kann.
+Ich würde es wirklich empfehlen, das einmal professionell zu machen, ein bisschen Geld
+zu bezahlen, es ist wirklich nicht viel, was du ordentlich bezahlen musst und dann eben dadurch,
+dass es so professionell ist, dieses Geld eben nochmal reinzuholen, das geht nämlich dann ein
+bisschen leichter. Schauen wir uns einmal an, wie alles verknüpft ist. Also wir haben schon gesagt,
+Zoom ist das hier, wo ich aufnehme. Dann auf Vimeo habe ich meine Videos gepackt,
+ich glaube, das habe ich gar nicht aufgelistet. Das kommt halt darauf an, wo du deine Videos
+aufnimmst. Wenn du direkt mit YouTube aufnimmst, kann man das überhaupt, weiß ich gar nicht,
+oder mit einer anderen Loom oder sowas, sind die Videos, glaube ich, sofort online.
+Das geht nur darum, dass du irgendwo was haben musst, wo deine Videos gepackt sind.
+Hier seht ihr zum Beispiel zu dem Kurs, in dem ihr gleich gerade befindet, seht ihr die Videos,
+die hier gepackt sind. Bedeutet einfach nur, ihr müsst hier irgendwo online haben,
+irgendein Online-System. Ihr könnt hier auch auf YouTube parken oder weiß der Geier,
+ihr braucht nur irgendwas, Vimeo ist auch am Anfang kostenlos. Denn dann könnt ihr nämlich
+dafür sorgen, dass die, dass die, wo haben wir es? Ich war wahrscheinlich nochmal an einen Locken,
+das geht ja immer so schnell raus. Genau, dass wir dann die Videos auch parken können. Ich zeig
+euch, wie das ausschaut. Wir gehen mal ins Drive-Card rein. Das ist mein Lieblings-Tool,
+ich liebe Drive-Card, ich verkaufe dafür darüber alles. Und dann sehen wir zum Beispiel in der
+Mitgliedschaft, ist hier wunderschön ein Kursbereich hinterlegt, wo man dann eben,
+wenn man draufklickt, die verschiedenen Calls sieht. Und wenn man da nochmal reingeht,
+sieht man auch hier die verschiedenen Calls. Und ich liebe das einfach. Und wir schauen
+uns auch mal noch an, was ich gemeint habe mit PDFs oder Klicken. Ich weiß es nicht genau,
+wo ich was habe. Genau, hier kann man eben dann die Sachen anklicken. Du kannst die Termine hinterlegen,
+hier kannst du eben klicken, wenn du eine PDF oder was hinterlegst. Auch hier zum Beispiel,
+da habe ich dessen Tabelle hinterlegt. Und diese Tabelle liegt eben in Google Drive,
+was ich ja eben gesagt habe hier, Google Drive. Da habe ich alle PDFs, Word-Programme,
+Excel-Dateien und so weiter. Und natürlich habe ich auch eine Website, hier. Brauchst du aber zu
+Beginn nicht. Denn ich biete ja all meine Programme über Drive-Card an und da kann man wunderschöne,
+wunderschöne Check-Out-Seiten basteln. Also ich zumindest, ich liebe die. Ja, sogar mit Countern
+und allem. Das hier ist die Check-Out-Seite. Über so eine Seite wirst du wahrscheinlich auch gebucht
+haben. Ich liebe es einfach. Ja, du brauchst keine Webseite. Wenn du sagst am Anfang, das ist dir
+zu viel, zu viel Kosten, zu viel Aufwand und so weiter, dann machst du einfach nur über Drive-Card
+oder Elo Page, Cajabi, wie auch immer. Okay. Und dann haben wir eben das Newsletter-Tool,
+also Active Campaign. Ich öffne auch das mal Kurs, um dir das zu zeigen. Und keine Sorge,
+wenn das jetzt ein bisschen viel wird. Du siehst später ganz genau, wie du die Kurse verknüpfst
+und da dementsprechend eben auch, wie du die Programme untereinander verknüpfst.
+Also das ist wirklich ganz simpel. Du kannst mir da, kannst das Video anschauen und quasi mit
+mir dichter durchklicken. Immer schön dran denken, zwei Faktor-Automationen,
+damit euch da keiner in eure Programme reingeht.
+Zack.
+So, und hier seht ihr dann eben, hier können wir E-Mails schicken. Kampagne heißt das,
+ich weiß nicht warum das Kampagne heißt, weil man kann E-Mails schicken. Hier seht ihr
+Automationen, die wir dann basteln. Und so eine Automation basteln wir dann eben später auch
+vom Mini-Kurs zum großen Kurs. Keine Sorge. Wie gesagt, hier gehst du nur erst einmal darum,
+dass du siehst, welche Kurse brauchst du, Tools und Technik. Und später schauen wir uns dann an,
+wie du das ganze Schritt für Schritt auch umsetzt. Okay. Am besten kannst du jetzt kurz pausieren
+oder du machst es später nach dem ganzen Kapitel und registrierst dich bei deinen Tools.
+Okay. Wie gehst du das bei der Erstellung vor? Wir haben ja gesagt, wir haben die Idee.
+Jetzt erstellst du eine Struktur. Achtung, du brauchst nicht endlos lange Videos,
+nicht endlos lange Slides. Ja, ideal sind ganz kurze Lektionen, wie du auch bei mir in diesem Kurs
+hier siehst, aber wichtig. Mach. Ja, wir haben schon, wir gehen nochmal raus, wir haben schon eben uns
+die Struktur angeschaut. Wir haben schon eben eine Idee bekommen. Das heißt, was wir jetzt machen,
+sagen wir mal das Thema Grenzen setzen. Wir nehmen jetzt, du sagst, du hast die Idee hier gefunden,
+du findest die Idee hier gut. Jetzt gehst du hin, gehst zu Canva, zu diesem Design Tool hier,
+öffnest hier oben auf Plus eine neue Präsentation. Auch hier gebe ich meine Vorlage mit, kannst du
+verwenden und sagst dann, du baust jetzt hier direkt deinen Kurs, wenn du es mit einer Präsentation
+machen willst. Wenn nicht, dann schreib die Stichpunkte auf den Blatt und geh dann in die Umsetzung.
+Aber du kannst natürlich mit einer Präsentation arbeiten, so wie ich das hier eben, du siehst ja,
+das hier ist die Präsentation, du stehst hier die ganze Zeit gehen, die ich jetzt auch gemacht habe.
+Und da ganz ehrlich, geh einfach in die Umsetzung. Wir haben jetzt hier Mini-Kurs, Grenzen setzen,
+ohne schlechtes Gewissen und jetzt zeige ich dir noch was Geiles, wie du das nämlich zu Papier
+bringst, sagen wir. Lass uns den Mini-Kurs drei nehmen.
+Grenzen letzten, ohne schlechtes Gewissen. Bitte erarbeiten mir hier die passende Präsentation
+und Struktur für diesen Kurs. Und jetzt schauen wir uns an, was die wunderbare KI für uns macht.
+Wir machen nochmal kurz Pause.
+So, jetzt hat er uns hier die einzelne Module ausgespuckt.
+Mega, oder? Also ich liebe die KI, ich liebe die KI. So, okay, schauen wir uns an. Module 1,
+was sind gesunde Grenzen? Was sind Grenzen überhaupt? Die drei Arten von Grenzen.
+So, hier oben hat er noch gesagt, Begrüßung, warum ist Grenzen so schwer, die Folgen von
+fehlenden Grenzen. Okay, dann würde ich hingehen und so mache ich es bei all meinen Kursen. Wir sagen mal,
+die Folgen fehlender Grenzen.
+So, das könnte unser erstes Kapitel sein. Dann packen wir das mal hier drauf.
+Und dann kannst du ja dein Design anpassen. Wie gesagt, du bekommst auf mir die Vorlage,
+wenn du aber dein eigenes Design machen möchtest, mach das gerne. Oder wenn du sagst,
+du hast keine Ahnung von, was für ein Design du machen könntest, kannst du auch hier bei
+Kemper drauf gehen und kannst hier oben bei Design gehen und dann können wir uns ja zum Beispiel mal,
+das sieht denn ganz schön aus.
+Ich will irgendwas Schlichtes.
+Ja, das hier können wir doch machen. Können wir uns dieses Design aussuchen
+und können darin dann unsere Slides machen. Dann könnte das ja,
+das sieht auch ein bisschen wuselig aus, aber na gut, dann könnte das ja deine normale Slides
+sein. Ja, und das hier würde ich dann entfernen. Da würde ich ein Bild von dir hin machen.
+Kommen wir mal ein Bild von mir hin.
+So,
+kannst du das ganz einfach anpassen. Die Farbe kannst du auch ändern, indem du einfach
+da drauf klickst hier und dann alle ändern machst. Dann haben dich alle dunkelgrauen oder hellgrauen
+Töne geändert in dieses Bild. Das hier machen wir eine schwarze Schrift.
+So, und dann sagen wir, was war das? Was sind gesunde? Genau, warum Grenzen
+setzen und die folgen, wenn du keine Grenzen setzt. Ja, und dann kannst du hier unten eben deinen,
+bzw. das kommen wir jetzt als Kapitelfolie machen. Ja, das werden immer deine Kapitelfolie
+machen. So, und dann können wir die nächste Kapitel machen. Ich gehe immer vom Überblick ins
+Detaillite. Dann sagt er, was sind gesunde Grenzen? Was sind gesunde Grenzen? So, nächstes Kapitel.
+Die drei Schrittformel für klares Grenzen setzen.
+So, dann Grenzen setzen und Schuldgefühle. Das ist das nächste.
+Dann was tun, wenn andere die Grenzen nicht akzeptieren?
+Das ist unheimlich wichtig auch für uns Unternehmer, beispielsweise.
+Okay, Abschluss- und Bonusmaterial. Gut. So, und jetzt gehen wir hin und sagen, was sind Grenzen
+überhaupt? Ja, die drei Arten von Grenzen. Zack. Und dann gehen wir hin und sagen, okay, das war ja
+das erste. Und dann mache ich es immer so, dann suche ich mir noch eine Folie aus. Bei mir ist das
+diese hier, wo ich sage, das ist so eine Folie, wo all der Inhalt drauf steht. Das ist kein Kapitelfolie,
+sondern die Inhaltsfolie. Und da kommen wir jetzt vielleicht, die hier verwenden, die ziehen wir
+jetzt mal nach vorne. Also, das ist die Kapitelfolie und das ist die Inhaltsfolie. Da können wir
+dann auch ein Bildchen, ein anderes Bildchen von uns reinmachen. Was wollen wir da? Kommen wir
+direkt das erste. Nicht viel schnacken. Und dann sagen wir hier, diese Grenzen gibt es.
+Und dann hat er ja gesagt, es gibt diese drei Grenzen. So. Wichtig. Ich poste das jetzt natürlich
+basierend auf dem, was die Kaimi ausspuckt, weil ich nicht die Expertin für dieses Thema bin.
+Du weißt natürlich, wie das Thema funktioniert, weil du bist die Expertin. Das heißt, wenn du
+jetzt sagst, das können wir noch ein bisschen fett machen, diese Grenzen ergeben für dich keinen
+Sinn oder du hast andere Grenzen, die du nutzt und die du deinen Kunden zeigst, mach das. Ändere
+das. Das sind Vorschläge von ChatchiBT und ich zeige dir jetzt nur, wie ich das mache. Wie die
+Technik funktioniert, wie die Erstellung des Kurses funktioniert. Wenn du sagst, das ist Bullshit,
+es gibt ganz andere Grenzen, mach das. Ich zeig dir nur, wie schnell das gehen kann.
+So, dann kopieren wir uns diese Seite. Natürlich arbeiten wir mit Copy Paste,
+weil wir schreiben nicht alles immer neu. Dann sagen wir die drei Schrittformel,
+dann sagen wir, das war erkennen, kommunizieren, dranbleiben.
+Du gehst ab jetzt vor.
+Genau, dann so erkennst du, wenn du ja sagst, obwohl du nein meinst,
+dann können wir das hier auch wieder kopieren. Sagst du, ja, obwohl du nein meinst.
+So, du kannst ja immer gerne auf die Uhr gucken, wie lange das dauert hier.
+Und was ich dann immer noch mache, damit wir es ein bisschen besser sehen können,
+das siehst du auch bei mir immer, ich arbeite mit Treppen. Das heißt, wenn die
+Slide fertig ist, kopiere ich die und lösche dann auf die ersten Slide,
+den letzten Punkt. Und so haben wir 1, 2. Also kopieren, in dem Fall 3 mal
+die letzten 2 löschen, das letzte löschen, das dritte. So, zack, zack, zack. Das macht
+das Ganze ein bisschen klarer, ein bisschen leserlicher, als wenn ihr einfach so auf die
+Seite kauft und so und so. Ja, ist ja viel schöner, wenn man das so lesen kann. Schritt
+für Schritt. So, und was du jetzt machst, ist, dass du dann quasi die ganzen Geschichten hier
+in diese Präsentation einfügst. Das heißt, kopiere nochmal die 3 Schrittformen für klares
+Grenzen setzen. Oh, wir sind verrutscht eben. Wo sind wir verrutscht? Was sind gesunde Grenzen,
+haben wir jetzt nicht? Ah, das war die, okay. Da müssen wir das 1 verschieben. Also auch hier
+siehst du, in Camber, super leicht, zack, so geht es sich aus. Grenzen lassen ohne Schuldgefühle,
+wer dann das 4., das 3. Modul, warum du kein schlechtes Gewissen haben musst, das können wir auch auf
+eine Folie packen. Das Folie löschen wir natürlich. So, und jetzt sehe ich schon, das wird irgendwie
+zu viel für eines Leit. Ich möchte aber, dass diese Abstand hier auch bewahrt wird wie hier,
+sonst könnte ich natürlich auch das einfach hoch schieben, was ich dann immer mache ist,
+ich kopiere die Seite, lösche dann hier eben auch das letzte, was nicht mehr drauf passt,
+so, und dann lösche ich hier das erste, bloß diese Folie, so, zack. Dann haben wir das jetzt
+quasi auf zwei Seiten aufgeteilt. Und dann kannst du eben, wenn du sagst, das ist zu viel, kannst du
+hier auch nochmal den letzten Punkt löschen und zack, so ist es schön. Ist doch voll schön,
+oder? Wie schnell ging das jetzt? Wie schnell ging das? So, und so würde ich das jetzt machen
+mit all den Modulen und natürlich, meine Kurse zum Beispiel, sind ja von mir entstanden. Meine
+Mini-Kursstrategie habe ich entwickelt, die gab es jetzt noch nicht so, also ich habe sie zumindest
+noch nicht gesehen. Das heißt, da muss natürlich ein bisschen mehr Aufwand geschehen. Wenn du eine
+eigene Strategie hast, die du erklären willst, dann natürlich musst du dir halt eben ausdenken,
+was du da sagst. Aber so kannst du ganz einfach, wenn du Techie-Picture nutzt, von wirklich wenigen
+Sekunden das einfach Kopierende einfügen und dann, und das ist ganz wichtig, jetzt sagst du
+natürlich das, was in dir steckt zu diesen Themen. Das heißt, wenn du jetzt diese Präsentation
+präsentierst und über Zoom aufnimmst, so will ich das gerade machen. Ich habe ja auch hier nur Stichpunkte
+und dann erkläre ich. Ich habe immer nur Stichpunkte und dann erkläre ich dazu. Stichpunkt,
+erklären, Stichpunkt, erklären, Stichpunkt, erklären. Das heißt, du holst dann natürlich mehr auf,
+wenn du aufnimmst. Aber hier ist jetzt erstmal unser Kurs. Und wie gesagt, wenn du nicht Techie-Picture
+nutzen willst oder wenn Techie-Picture was Blödes sagst, mach es einfach von dir aus. Schreib es
+einfach auf. Ich wollte dir hier nur zeigen, wie ich es mache. Erst die Überschriften erstellen
+und dann die Inhalte. Und da wirklich immer nur ein Punkt pro Seite, damit es nicht so viel wird
+und den Rest erklärst du. Okay, also so viel zur Erstellung, mehr ist es nicht, ist es so leicht
+mit Canva einfach diese Folie zu machen. Okay, das würde ich hier die Empfehlung am ersten Tag
+machen. Wenn du die Idee hast, direkt den Kurs erstellen. Du hast gesehen, wir sind hier immer
+noch innerhalb der, keine Ahnung, letzten Stunde, in der wir uns bewegt haben und die Idee festgemacht
+haben und jetzt die Erstellung, du brauchst nicht mehr. Dann, wichtig, es kommt nicht auf die Länge an.
+Wie gesagt, du könntest das alles, was wir jetzt gemacht haben, auch einfach in ein Workbook packen.
+Du müsstest kein Video aufnehmen. Welche Formate es gibt, dazu kommen wir noch gleich, aber du
+müsstest es nicht so machen mit einer Präsentation. Du kannst die Präsentation weglassen. Du kannst
+auch sagen, du erzählst es einfach aus dem, aus deinem Gedächtnis heraus. Ich finde Präsentation
+immer schöner, weil so kannst du eben auch sehen, wo sind wir gerade, was steht da, aber muss es nicht.
+Und es, wie gesagt, geht einmal zurück. Es kommt nicht darauf an, ist der Mini-Kurs eine Stunde
+lang oder zwei Stunden, Hauptsache, er erfüllt die Kriterien. Es ist spezifisch, du holst nicht
+zu weit aus, stellst ein Thema vor. Du stellst nicht das Produkt, was dir am meisten Umsatz bringt,
+sondern was hilft deinen Kunden am meisten und worauf hast du Lust? Haben wir eben auch schon
+gesagt, es ist eine Mischung zwischen, was braucht meine Community, um weiterzukommen,
+aber auch was will deiner Community wissen. Und da bitte nicht Fokus darauf, womit
+kann ich am meisten Geld machen, ne? Boah, damit werde ich millionär, das kauft bestimmt jeder,
+das tausend Stück an einem Tag. Nein, Fokus weg von Geld, Fokus immerhin auf helfen. Wie kann
+ich meiner Zielgruppe am besten helfen? Was müssen die wissen, worüber sollte der Kurs gehen,
+damit sie zu ihrem Ziel gelangen? Das ist das aller, aller, aller wichtigste. Weil wenn du den Leuten
+hilfst, wenn du dieses Helfen im Kopf hast, man spürt es, man weiß, okay, krass, die Person hat
+es schon gemacht, die will mir das Helfen mit ihrem Kurs dahin zu kommen und es ist nicht so viel
+Druck. Wenn du unter Druck verkaufst, wird es nicht funktionieren. Wenn du den Gedanken hast,
+von ich muss schnell Geld machen oder ich will schnell Geld machen, es wird sau schwierig.
+Also von da an, Tore warst du Bock, ja, aber auch wie kannst du deinen Kunden helfen?
+Okay, wir gehen zu Tag zwei bis fünf. Du nimmst jetzt deinen Kurs auf. Mit Zoom, Loom, wie auch immer,
+auch über Camber kannst du direkt Aufnahmen machen. Ich mach's irgendwie immer über Zoom,
+warum war ich gar nicht genau. Es kommt nicht drauf an. Scheiß drauf. Schnelligkeit gewinnt. Du
+kannst einen ganzen Kurs, einen ganzen Mini-Kurs in einem Tag aufnehmen. Das mache ich hier ja auch.
+Dieser Kurs hier entsteht an einem Tag. An einem Tag, der dann 14 Stunden hat? Ja, okay, aber an
+einem Tag. Und am nächsten Tag kann ich ihn verkaufen. Also es braucht nicht viel. Sperr dich
+an dem Wochenende ein, mach bei Zoom auf Aufnahme starten und starte. Du brauchst kein extra Mikrofon,
+du brauchst kein extra Kamera, du brauchst kein großes Equipment. Auch da brust ich dir unten rein,
+welches Equipment ich nutze. Du kannst es so günstig und so einfach wie nur möglich halten.
+Natürlich kannst du auch noch deinen Kurs mit PDFs und Workbooks und so weiter untermalen, wie
+ich das ja auch immer mache. Brauchst du im ersten Moment aber nicht, wenn du versprichst, dass du es
+machst, denk dran. Das habe ich nämlich am Anfang mal vergessen. Denk dran. Erstell das Workbook
+natürlich auch noch, aber auch da kannst du Chessivity zur Rate stellen, eine zur Rate nehmen
+und kannst dann zum Beispiel sagen, du könntest ja mal gerade machen.
+Erstelle mir nun auf Basis dieses Kurses, dieses Mini-Kurses ein
+Handout oder ein Checklist. Sollen wir mal einen Handout und eine Checkliste?
+Okay, jetzt spult ihr da nochmal runter und das kannst du dann alles quasi,
+ich glaube, das kann man sogar downloaden dann. Oder du packst es eben in eine Datei und welcher
+Datei ich hier verwende ist. Ich gehe auf Plus und dann auf, ich gehe auf Plus und dann gehe ich auf
+Arbeitsplatte, so heißt das. Hochformat, zack, und dann fühle ich das eben aus. Das ist
+einfach wie so ein Denna 4 Format, auch da kannst du Vorlagen nutzen. Hier ist zum Beispiel schon mal
+eine Checkliste. Okay, gut. Was wir dann auch noch machen, wie gesagt, das hier kannst du einfach
+decopieren, glaube ich. Ich dachte, man kann es uns einfach runterladen. Ah, ja, hier.
+Ne, kannst du nur weitergeben. Na ja, gut, also dann kopierst du einfach, kopier es raus und packst
+in dieses Workbook. So, dann wollen wir noch eine Checkliste.
+Will ein Neinsatz über deinen Neinsatz, Schreibpräsentationen auf. Ja, also auch super easy.
+Okay, kannst du dann auch verwenden. All right. Das wie gesagt, Tag 2 bis 5, ich würde empfehlen,
+Tag 2 und 3, das zu machen, also je kurzer das so besser, aber wenn du ein bisschen länger brauchst,
+auch no stress. Anschließend richten wir dann die Plattform und die Technik ein. Wir laden den Kurs
+hoch, wir nutzen die PDF und laden sie auf Google Drive hoch und packen das dann alles auf Strive
+Card. Das kannst du auch schon parallel machen, das heißt, bei mir sind jetzt auch schon einige Videos,
+die jetzt schon vorher gedreht wurden, oben. Ich mach das immer so Stück für Stück, damit ich
+nicht einen Überblick verliere, aber auch da kannst du erst mal alles aufzeichnen und dann
+hochladen. Das kannst du an einem Tag machen und du bekommst ja auch eine Vorlage für die Checkout-Seite
+von mir. Das heißt, auch da kannst du dann ganz einfach die Checkout-Seite erstellen. Da siehst du
+aber auch auf Techivity später noch, wie du das machen kannst. So, und dann schalten wir natürlich
+damit, erste Verkäufe zu generieren, also nachdem wir das Ganze hochgeladen haben. Ich hab erst mal
+hier geschrieben Tag 6 und Tag 6 bis 7, weil ihr könnt es natürlich mehr als hochgeladen hat,
+natürlich auch alles schon verkaufen. Ihr könnt auch theoretisch vorher schon verkaufen. Ich hab
+schon große verkauft, die haben noch nicht mal startgefunden, da hatte ich noch nicht mal so ein
+Präsentation drin, aber ihr nehmt euch den Druck, wenn der Kurs schon fertig ist, wenn ihr euch an
+diesen Zeitplan haltet. Und dann könnt ihr den Kurs bewerben auf Instagram, per E-Mail, über eure
+Newsletter, in euren Gruppen und so weiter. Also wichtig ist dann natürlich, dass ihr den Link zu
+diesen Kurs postet. Und auch da, ihr seht gleich noch, wie man diesen Kurs verkauft, wie man
+aufwärmt und so weiter, aber da solltet ihr jetzt erst mal gesehen haben, es muss nicht länger
+darum als eine Woche. Ihr könnt wirklich diesen Kurs erstellen, die Idee haben, die Umsetzung für
+die Präsentation machen, die Check-outs seit der Stelle und dann verkaufen innerhalb einer Woche.
+Das heißt jetzt nicht sagen, ja, ja, mach ich irgendwann mal in zwei Monaten, sondern nein,
+mach ich jetzt diese Woche noch. Wichtig, dein Kurs kann später immer noch verbessert werden.
+Erstmals hält, dass er verkauft wird, dass du erstmal in die Umsetzung geht, dass du ihn mal
+oben hast. Also keine Scheu davor zu sagen, ich hab zu wenig drin oder ich hab zu viel drin oder
+oh Gott, ich kann auch was ändern. Wenn du ihn perfekt haben willst, wirst du nie damit rausgehen,
+weil es wird nie sich für dich perfekt anfühlen. Und dabei können du schon so vielen Menschen
+derzeit helfen von deinem Just Do It. Zum Format wollte ich noch kurz was sagen. Also wir haben
+Videokurse, wir haben PDF-Kurse, wir haben Challenges, wir haben Audio-Kurse und E-Mails. Das heißt,
+wir können eben auch eine Challenge machen in Form von einem Mini-Kurs, dass wir eben sagen, wir machen
+eine 7-Tage-Abnehm-Challenge, jeden Tag bekommst du einen Tipp für ein gesundes Frühstück,
+Mittagessen und Abendessen, wenn du dich hier und hier anmeldest für 11 Euro oder 37 Euro.
+Es gibt auch Audio-Kurse, die eben für Mini-Kurse sich eignen. Ich hab zum Beispiel ein Podcast,
+für 22 Euro kann man sich den Buchen pro Monat, wo jede Woche eine Podcast voll bekommt. Oder man
+kann es eben auch über E-Mails machen, das heißt, ihr schmeldet euch an und dann kommt jeden Tag
+eine E-Mail über zwei Wochen zum Beispiel. Also das Format ist wirklich ganz egal, ihr könnt es auch
+live machen. Ihr könnt auch sagen, im nächsten Monat am ersten, keine Ahnung, was April, gibt es
+eine Live-Masterclass für 37 Euro, meldet euch an. Also es kann auch live sein, es muss kein Kurs sein.
+Ich arbeite super gerne mit Kursen und mache dann 0 Euro Formate live, wo ich dann in meine
+Kurse verkaufe, aber ihr müsst es nicht so machen. Bei großen Kursen würde ich immer empfehlen,
+die Verbindung aus Video und PDFs zu machen. Da eignen sich jetzt nur Audio-Kurse, nur E-Mails oder
+eine 4-Wochen-Challenge ist eher nicht so. Genau, also ich würde einfach darauf achten, dass man euch
+schon auch mal sieht, wie ihr das bei meinen Kursen immer am Anfang tut, währenddessen auch hier
+seht ihr mich nicht, dürft man davon euch auch nicht sehen, aber ja, es ist schon von Vorteil. Und
+auch wenn ihr hier so Geschichten macht mit Audio-Kursen, macht vielleicht ein kleines Video, wo ihr
+sagt, hey, herzlich willkommen, du hast den Kurs gebucht, willkommen im Format und dann erreicht
+das auch schon. Man sollte euch in irgendeiner Form sehen und bei großen Kursen eben sind solche
+Videos, wie ich das hier mache, clever in Verbindung mit Workbooks, Checklisten und so, weil bei großen
+Kursen kann man eben sich oft verlieren und dann nicht in die Umsetzung kommen und deswegen macht
+das schon auch Sinn. Wir kommen zu verschiedenen Fehlern, die du vermeiden kannst und vielleicht
+hast du jetzt schon in deinem Kopf einige gehabt, die kommen wir jetzt direkt nehmen, rausschmeißen
+und du brauchst sie nie wieder zu denken. Also ich muss immer noch mehr Inhalterinnen zufügen,
+wie weiß ich wann Schluss ist. Naja, du hast ein Thema und du erstellst den Inhalt dazu und dann
+stopbst du. Ich weiß, du könntest immer noch mehr machen, immer noch mehr sagen, immer noch mehr
+zufügen. You don't need that, das brauchst du nicht. Wenn du sagst, du machst 7 Tage Meal Prep Plan,
+wo man irgendwie Essen vorplanet, dann machst du in 7 Tage Essens Vorplaner. Aber was du nicht
+machst, ist dann auch zu sagen, wie du zum Sport gehst und dann auch zu sagen, wie du dein Gewicht
+hast und dann auch zu sagen, wie du abnimmst. Nein, es geht nur darum, dass die Leute lernen ihr Gewicht,
+ihre Essen zu planen. Und man hat immer das Gefühl, man könnte noch mehr machen, immer. Wenn du
+das nicht umgehst und nicht einfach mal trotzdem den Kurs rauskippst, nicht einfach mal verkaufst,
+wirst du niemals verkaufen, weil du immer das Gefühl hast, er ist nicht perfekt, auch bei mir so.
+Und das Geile ist ja, du hast gelernt, wir können den Kurs immer noch mal anpassen, das heißt,
+wenn du den Kurs online hast, die Leute das gekauft haben und dann die Leute sagen,
+oh, aber ich hätte es gedacht, das und das und das kommt auch noch drin vor.
+Dann, was kannst du dann machen? Naja, einfach den Kurs anpassen. Du kannst einfach eine Seite
+hinzufügen, eine Checklist hinzufügen, ein Workbook hinzufügen, noch ein Kapitel sogar hinzufügen.
+Du kannst das alles machen, das ist nicht das Problem. Also, keine Ausrede,
+ich muss noch mehr hinzufügen, keine Ausrede sein lassen, einfach mal machen.
+Außerdem, dein Kurs sollte, wie wir schon gesagt haben, möglichst kurz und effektiv sein.
+Wenn du sagst, du machst noch was hinzu und noch was hinzu, es wird nicht besser werden,
+glaub mir das. Es wird eher dazu sorgen, dass deine Kunden verwirzend,
+also lasst diesen Klaubensatz einfach mal stehen. Ich brauche professionelle Technik,
+vielleicht auch das, ja, das kostet noch mal, du brauchst es nicht. Sein Smartphone,
+Kenver, Zoom, Reichen, das ist alles für 0 Euro. Notfalls, wie gesagt, starte mit meiner Leid,
+hast du das auch für 0 Euro. Das einzige, wo für du bezahlen musst, ist für so eine Verkaufsplattform,
+ja, Yellow Page, Strive, whatever. Aber mein Gott, wir können uns alle nicht beschweren,
+wir können von der Couch aus mit dem Afferholen der Hand Geld verdienen. Ich glaube, da kann man
+auch mal eine Investition tätigen. Ich sollte erstmal eine große Community aufbauen. Ach,
+das brauchst du nicht. Ich habe 30.000 Euro Monatsumsätze mit 2.000 Followern gehabt. Natürlich,
+wie wir schon gesehen haben, wir brauchen eine Reichweite, wir müssen Menschen da haben, die
+verkaufen, die wir an die wir verkaufen können. Aber das sollte nicht das der Fokus sein. Der Fokus
+sollte immer sein, wie kann ich den Menschen am besten helfen, was kann ich heute noch teilen,
+um meine Community weiterzubringen. Und deswegen auch hier. Das ist ein grundsätzliches,
+grundsätzlicher Irrtum. Du kannst mit einem kleinen Publikum starten und wie du das machst
+und wie du eine Verbindung zu diesem Community aufbaust und verkaufst, das lernst du ja auch hier
+im Kurs. Fazit, ein Mini-Kurs muss nicht perfekt sein, sondern schnell erstellt und verkauft werden.
+Schnelligkeit siegt. Wähle einfache Tools, kostenlose Tools, um Technik-Hürden zu vermeiden.
+Und halt den Kurs kurz und ergebnisorientiert. Ganz wichtig, weniger ist oft mehr. Okay?
+Also, du hast gelernt, wie du den Kurs ausstellst mit einer Kammerpräsentation. Du hast gelernt,
+welche Produkte, welche Module, welche Tools du brauchst. Du hast gelernt, welche Formate es gibt
+und auch hier. Was könnte in deinem Kopf sein? Was könnte in deinem Kopf sein bei dieser Seite hier?
+Aber wie mache ich in diesem Audio-Kurs? Auch da. Entweder A. mich anschreiben und fragen,
+oder B. tatsche mich die Fragen, oder C. Manchen ist es wahrscheinlich auch klar. Ich hätte jetzt
+natürlich auch ausführen können. So nimmst du eine Sprachmemo auf, so, keine Ahnung. Drückst du
+auf den Knopf, so erstellst du eine Gruppe. Hätte ich alles sagen können. Hätte ich alles sagen
+können. Hätte ich drei Folien draus machen können. Habe ich aber nicht. Weil kurz und knackig.
+Es wird immer Menschen geben. Wahrscheinlich denkst du, das ist doch klar, ein Audio-Kurs. Also,
+hast du einfach eine Gruppe und machst eine Sprachnachricht rein. Ich habe dir ja jetzt erzählt,
+wie so ein Podcast. Oder du trafst ein E-Mail. Es wird immer Menschen geben, die diesen Kurs sehen
+und denken, wie funktioniert das? Es ist deswegen ein schlechter Kurs. Nein, natürlich nicht. Weil
+man kann ja fragen, man kann googeln und so weiter. Das Wichtigste ist, dass du mal eine Übersicht
+gesehen hast über die Formate, wie jedes einzelne Format funktioniert, dass es nicht Inhalt des
+Kurses. Und das ist auch nicht zielführend. Also, du bist die Expertin oder der Experte. Du weißt,
+was funktioniert. Also, einfach mal machen könnte ja gut werden.

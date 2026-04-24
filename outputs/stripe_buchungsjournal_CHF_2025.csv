@@ -1,0 +1,4 @@
+Datum,Konto Soll,Konto Haben,Betrag CHF,Beschreibung
+2025-12-31,Stripe (Umlaufvermoegen),Umsatzerloese,37.00,Stripe Umsatz brutto 2025
+2025-12-31,Gebuehren/Spesen,Stripe (Umlaufvermoegen),1.37,Stripe Gebuehren 2025
+2025-12-31,Bank,Stripe (Umlaufvermoegen),35.63,Auszahlung Stripe an Bank 2025

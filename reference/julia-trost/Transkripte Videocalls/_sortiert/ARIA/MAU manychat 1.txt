@@ -1,0 +1,213 @@
+So, wir schauen uns jetzt mal noch ManiChat an, ManiChat ist ein Tool, hast du mittlerweile
+mit Sicherheit schon mal von gehört, welches dafür sorgt, dass deine, ja, deine Kommentare
+auf Instagram automatisiert werden können und dafür sorgen können, dass deinen Kunden
+ein Link zugeschickt wird.
+Wir schauen uns mal ganz kurz an und zwar haben wir gesagt, okay, wir müssen in unseren Reels
+einen Call to Action hinterlegen, zum Beispiel kommentiere Mini-Course und ich schicke den
+Link.
+Wir kommentieren die Menschen mit Mini-Course und dann klick ich mal da drauf und dann
+schauen wir uns mal an, was wir hier überhaupt besprechen, denn die bekommen dann automatisch
+eine E-Mail hier geschickt hier mit dem Kurs oder mit dem Link zum Mini-Course, ja.
+Und das wollen wir aufbauen mit ManiChat, das heißt, wir wollen, dass die Leute kommentieren
+unter unserem Beiträgen unsere Story oder unsere Nachrichten und das dann automatisch
+automatisiert eine Nachricht an diese Menschen losgeschickt wird.
+Wenn du noch nicht so viele Kommentare erhältst, dann kannst du das natürlich auch manuell
+machen, also du musst es nicht automatisieren.
+Ich würde es dir aber empfehlen, weil irgendwann werden sich die Kommentare häufen und du kommst
+nicht mehr hinterher.
+Okay, gut.
+Und wir starten jetzt mal mit meiner Signature-Automation, würde ich sagen, also ich habe für
+jeden meiner Mini-Course habe ich so eine Automation hinterlegt.
+Also kannst du mir sagen, ich bin eine gute Binde mit GitHub, Instagram-Soviet-Vorlagen-Mini-Course
+oder Umsatzbruster und so weiter und wir schauen uns mal an, wie die aussieht.
+Also, du startest, das sieht es wahrscheinlich ein bisschen wild aus, aber ich zeigst dir
+gleich alles, wie wir das erstellen, wir schauen es erst mal nur auf der Vogelperspektive
+an.
+Du startest, indem du einen Trigger setzt und sagst, okay, sobald ein Nutzer kommentiert
+auf dem Post oder den Reel, sobald ein Nutzer auf meine Story antwortet oder sobald ein
+Nutzer mir eine Nachricht schickt, dann prüft er, hat der den Tag-Click-Mini-Course, wenn
+ja, dann fügt er den Tag-Click-Mini-Course zweimal hinzu, wenn nein, fügt er den Tag-Click-Mini-Course
+ohne dieses zweimal hinzu.
+Bedeutet einfach nur, dass wir segmentieren.
+Wir schauen einfach, dass wir, wenn die Leute schon mal mit Mini-Course kommentiert haben,
+dann ist ja das Interesse anscheinend hoch.
+Und deswegen wollen wir denjenigen, die schon zweimal geklickt haben oder schon mehrere
+Male, eine andere, eine längere Nachricht schicken, als denjenigen, die das erste Mal
+kommentiert haben.
+Verstehst du?
+Und damit wir das machen, müssen wir am Anfang diese Bedingungen setzen.
+Das heißt, wenn jetzt eine fremde Person das erste Mal bei mir kommentiert, wird geteckt,
+hat der den Tag schon, wenn nein, dann fügt den Tag hinzu, beim nächsten Mal, wenn der
+noch mal Mini-Course beschreibt, wird geprüft, hat er den Tag, ja, hat er ja eben bekommen,
+dann fügt Tag-Click-Mini-Course zweimal hinzu.
+Und dann kann ich eben mit diesem zweimal Tag eine andere Nachricht verschicken als
+die erste und kann so noch mal dafür sorgen, dass eventuell diese längere Nachricht dazu
+führt, dass der Mini-Course gebucht wird.
+Dann fügen wir am Schluss noch etwas hinzu, wo wir sagen, Klick-Seite heißt das.
+Und hier halten wir nur Klick-Mini-Course, Mini-Course zweimal, und hier also das Klick-Seite
+und dann der Kurs, ja.
+Und MAU ist ja meine Abkürzung für mein Mini-Course, also ich hätte auch Mini-Course beschreiben
+können.
+Genau.
+Und wir sagen, okay, wir schicken dann die Nachricht, ja, wenn jemand z.B. am Mini-Course
+interessiert ist, schicken wir die Nachricht, hey, cool, das interessiert bist, ne, klick
+einfach auf den Link und dann schickst du natürlich den Link, den die wollen, bin dabei, aber
+du schickst auch einen anderen Link mit, in meinem Fall arbeite mit mir und hab dann
+die Online Business Academy hinterlegt oder meine Mitgliedschaft oder meine Mentoring-Propo.
+Das heißt, du hast immer die Möglichkeit, sogar mehrere, also ich hab jetzt zwei hinterlegt,
+ich würde nicht mehr als zwei machen erst mal, du hast die Möglichkeit sogar noch mehrere
+Sachen mitzuschicken.
+Und dadurch, das hier habe ich jetzt gerade eben ganz neu erstellt, deswegen ist da noch
+keine Anzahl, aber normalerweise ist bei mir so, dass 60% hier drauf blicken und 30%
+hier drauf.
+Das heißt, ich liefer den schon, egal ob sie danach gebratht haben oder nicht, obwohl
+sie nicht danach gebratht haben, liefer ich ihnen schon eine andere Möglichkeit, noch
+anders mit mir zu arbeiten, ja.
+Und du siehst auch hier, also mega gute Ausländerrate, ich habe das gerade eben wie gesagt
+erst gemacht, 31% wurde es geliefert, 100% haben es geöffnet und 90% haben sogar geklickt,
+also richtig gut.
+So, und dann können wir sagen, wenn diese Seite geklickt wurde, dann vergibt den Tag und
+wenn diese Seite geklickt wurde, vergibt den Tag.
+Da musst du immer schauen, wie du nennst die Abkürzung, ich nenn es halt einfach Klick
+Seite so und Klick Seite so.
+Warum wir das machen, erzähle ich dir gleich, das löst nämlich eine andere Automation
+nochmal aus.
+Okay, also bauen wir erst mal diese einfache Automation.
+Du gehst auf, sorry, ich war schon wieder so schnell, du gehst auf hier oben rechts neue
+Automation, startest dann vom Scratch, also startest von ganz vorne, hier oben rechts,
+und sagst dann, user comments on your post or reel, also user kommentiert einen, also
+der Nutzer kommentiert einen Post oder Reel, du kannst in der kostenlosen Version kannst
+du hier dann ein spezifisches Reel auswählen, ich habe die Pro-Version, kann ich ja nur
+empfehlen, ich habe dann all posts or reels, also alle posts or reels.
+Mit dem Wort, wir sagen jetzt mal Test, ja und dann machen wir weiter und dann kannst
+du hier festlegen, was kann denn, was soll denn der, der Managed, das Managed Programm
+kommentieren auf den Kommentar, ja, hier siehst du ja meine Antworten, hast du eine Nachricht,
+okay hast eine Nachricht, das ist überall gleich, so cool, schau mal deine Nachrichten,
+hast du geschickt, haste Nachricht, ja also da gibt es normalerweise, normalerweise ist
+es viel mehr geben, wie du das machen kannst, ist, dass du einfach bei chatgbt eingibst, also
+entweder du überlegst dir halt drei bis fünf Geschichten da, Setzer, die du halt quasi
+hinschreibst, ich habe jetzt mal gestern schon danach gegoogelt und habe gesagt, nenn mir
+Alternative zu diesem Satz, habt ihr den Link geschickt, ja, dann nennt ihr mir die und dann
+habe ich noch gesagt, bitte mit verschiedenen Smilies, so und das konntest du jetzt theoretisch
+alles rausapieren, ja und das würde ich auch dem empfehlen, dass es halt so menschlich
+wie möglich aussieht, auch wenn da kein Mensch hintersteckt, das heißt, wir nutzen jetzt einfach
+mal hier, der Link ist unterwegs zu dir, erledigt, habt ihr geschickt und hier kannst du dann auch
+immer noch ein Smiley hinterlegen, dann machst du Safe, speichern, so jetzt haben wir das gemacht,
+wenn jemand kommentiert, jetzt wollen wir noch, wenn jemand unsere Nachricht schickt,
+bezipisches Wort hier oben, Test, dann Trigger Wort muss natürlich immer das Gleiche sein und wir
+wollen das auch noch machen, wenn jemand auf unsere Story kommentiert, alle Stories mit einem
+spezifischen Wort, Test und dann machen wir noch mit so einem Herz hin, dass wir da reagieren,
+nicht cool, so, dann sagen wir, wir löschen hier das erst mal, das macht er immer vor,
+wir gehen direkt in eine Condition, also in eine Bedingung und sagen hier, Tag ist,
+klick Test, jetzt siehst du, der Tag ist noch nicht erstellt und da bin ich echt bei einer
+verrückt geworden, wie ich diesen blühten Tag erstelle, jetzt machen wir das einfach so,
+dass wir oben rechts ab des Plus geben, stellen dann eine Action, klicken hier rein, Tag und sagen
+jetzt, klick Test, so und dann ist dieser Tag erstellt und jetzt können wir da noch mal
+reingehen, können sagen Tag und es ist ja auch hier erstellt, ja, so und dann sagen wir ja,
+wenn der noch nicht drin ist in unserer Automation, dann bekommt der Klick Test, wenn der drin ist,
+hier können wir das einfach kopieren, da hoch schieben, das über die Pfeile verbinden, dann
+sagen wir, klick Test, zweimal plus Tag, also Tag hinzufügen, okay, gut, so, jetzt haben wir das,
+jetzt haben wir gesagt, wenn du das erst mal bei uns ist, schicken wir dem einfach eine Nachricht,
+dann gehst du einfach hier, Next Step, dann gehst du hier oben Instagram und dann musst du hier
+das noch umstellen aus Comment Reply und hier kannst du jetzt deinen Test Text-Hatband hier
+reinstellen und wenn du jetzt hier auf Add Button gehst, kannst du hier auf Open Website gehen,
+kannst dann schreiben, hier klicken und hier unten kannst du dann eine URL hinterlegen,
+also zum Beispiel sagen wir dann, was habe ich hier und man ist das einfach mal irgendeine URL,
+genau Mini-Kurse als Umsatzbrüste, so, okay und ich sage dann aber ja noch, okay, arbeite mit mir
+und ich habe ja brandneu entwickelt, meine Coaching-Gruppe für eine Einmalzahlung,
+bist du immer dabei, falls du noch nicht drin bist, würde ich dir das wirklich empfehlen,
+wir hinterlegen dann diesen Link und sagen, arbeite, und dann sagen wir wie gesagt nach
+am Schluss, hier wenn du auf das kleine Gelbe klickst, Action, für Getecken zu, klick Seite,
+ne was war das Maul, ja, Mini-Kurse als Umsatzbrüste und hier klick solche
+Videos-Gruppe, so, wie gesagt, das hier erkläre ich dir gleich noch, so und dann machen wir hier
+das gleiche, wir machen dann eine längere Nachricht, längere Nachricht, machen hier als
+Comment reply, fügen hier nochmal zwei Links hinzu, ich lasse es jetzt so, dauert mir das zu
+lange, aber du weißt ja jetzt wie es geht und machen dann nochmal die zwei Actions, ja und
+natürlich schaust du das zu, dann wirklich als allererstes den Link hinterlegst zu dem Produkt,
+was die wollen und danach dann das zweite, ja, so und dann kannst du hier oben auf set live gehen
+und dann warst das und du kannst auch hier in der Review dir anschauen, das finde ich ganz cool,
+auch mit der Condition, wir können sagen, okay, zeigt mir den Weg hier an oder zeigt mir den hier,
+wir sagen jetzt mal, zeigt mir diesen roten Weg hier an, wenn der Kontakt das erste Mal da ist,
+dann bekommt er diese Nachricht, ja und dann kann ich sagen hier klicken und dann, ja, funktioniert,
+perfekt, okay. Schauen wir uns jetzt an, wie wir an 0 Euro Automation gestalten, da habe
+ich einen kleinen Unterschied gemacht, das ist jetzt eine Automation, die ist noch nicht live,
+ja, genau, da habe ich nur den Unterschied gemacht, dass ich sage,
+ja, ja, gerade kurz verwirrt, das ist die richtige, wir starten ebenfalls mit den drei
+Möglichkeiten, wie man dir das keyboard schicken kann, dann erhältst du aber eine direkte Nachricht,
+also du hörst nicht auch direkt die Kondition, okay, hat schon den Tag und so weiter, sondern
+wir machen einfach, hey, schon von dir zu lesen, hier geht es pdf, dann legen wir hier die pdf
+und hier hinterlegen wir wieder das andere, den anderen Kurs, den wir unterlegen maschtest und
+dann gehen wir direkt in klick Seite, ja, klick Seite, nicht irgendwie was mit Text oder sowas,
+sondern klick Seite, dann sagen wir, nach diesem Schritt, nach dem die Nachricht gesendet wurde,
+warten wir 15 Minuten und dann überprüfen wir hier die Kondition, hat auf diesen Link geklickt
+oder hat er nur die Nachricht bekommen, wenn er auf den Link geklickt hat, okay, passt,
+müssen wir nichts weiter machen, wenn er nicht auf den Link geklickt hat, dann schicken wir noch
+mal eine Nachricht, hey, ich habe gesehen, du hast noch nicht auf den Link geklickt,
+kurz ein Reminder an dieser Stelle und können dann noch mal zweimal links hinterlegen. Ich mache
+das deswegen, weil ich gesehen habe, in der Vergangenheit, das hier ist noch nicht aktiv
+gewesen, deswegen haben wir hier leider 0%, sonst kann ich es dir zeigen, in der Vergangenheit hatte
+ich das, dass meine 0 Euro Geschichten zwar angefordert wurden, aber oftmals nicht draufgelegt
+wurde und deswegen sende ich jetzt noch mal nach 15 Minuten so einen kleinen Reminder, hey, denkt
+dran, bevor ich irgendwie das 0 Euro Produkt vom Markt nehme, was ja sein kann, klick noch mal
+drauf, nicht erst den noch mal, ne? Okay, und wir starten jetzt, also wir konnten natürlich auch
+genauso starten wie bei der anderen Automation, dass wir erst die Text vergeben für die Leute,
+die dir das Wort halt geschickt haben, aber ganz ehrlich, bei 0 Euro Geschichten ist mir jetzt nicht
+so wichtig unbedingt, dass ich da noch mal eine Nachricht schicke, die länger ist, weil ich denke
+mir, hey, Leute, das ist für 0 Euro, wenn ihr es nicht wollt, dann halt nicht, so einen kleinen
+Reminder kann man ja noch mal schicken, vielleicht ist ja untergegangen, aber ansonsten reicht mir
+das, genau. Und so habe ich auch alle meine 0 Euro Geschichten gemacht. Ich habe hier noch mal
+unterschieden 0 Euro zum Anmelden und 0 Euro einfach nur so, wo eine PDF geschickt wird, das muss
+ich noch abändern, habe ich eben gesehen. Genau, aber hier ist es zum Beispiel so, dass man halt
+direkt die Link geschickt kommt, weil du kannst ja quasi unterscheiden, müssen die sich erst eintragen
+zu 0 Euro Produkt über deinen Newslettertool, also zum Beispiel Active Campaign, müssen die erst
+ihre E-Mail-Entresse eingeben oder kommen direkt zum Modul. Ich würde es so und so machen, also
+ich finde das manchmal ganz schön, wenn man sich mal nicht irgendwo eintragen muss, das sorgt natürlich
+auch noch mal für Trust, also da kannst du noch mal zeigen, auch wenn du dich nicht einträgst,
+ich oberde libere hier, ich zeig dir was, ja, ich gebe dir was mit. Genau, also dann schauen wir
+uns noch die Compon Automation an und zwar habe ich jetzt hier mal eine Beispielautomation
+hinterlegt für die Mitgliedschaft und zwar hast du ja gesehen, dass wir und deswegen haben wir
+das am Schluss ja gemacht, dass wir gesagt haben, okay, check einfach über Prüfe, Tracker, ob auf
+den Link gekriegt wurde oder auf den Link und jetzt machen wir für jedes Produkt, was wir hatten,
+machen wir jetzt nochmal eine Compon Automation, wenn du das möchtest, außer für die, die eh schon
+37 Euro kosten, da würde ich jetzt keine Compon Automation machen, aber wenn du Kurse hast
+für 111 Euro oder dann später eben auch noch teure Kurse, kannst du das machen und zwar sagen wir,
+wenn dieser Tech geklickt wurde, also der ist ja dann ganz dahinten, wenn diese Seite sich angeschaut
+wurde, die haben auf diesen Link geklickt, die waren auf der Seite, die waren auf der Checkout-Seite
+und dann wurde mich gebucht, dann müssen wir gucken, dann läuft ja irgendwas falsch, da war dann,
+das ist, warum buchen die nicht, warum haben die Interesse im Buch nicht, das kann natürlich in
+der Checkout-Seite liegen, das ist ein anderes Ding, da muss ich immer deine Checkout-Seite
+überprüfen, ob die die Kriterien erfüllt, wenn nicht, kann es auch an was anderen liegen,
+vielleicht ein Preis und dann sagen wir, okay, wir warten kurz und schicken dann eine E-Mail,
+hey, ich habe wieder nach 30 Minuten hast du zufällig los auf dem Rabatt-Code zu der
+Mitgliedschaft, von der wir gesprochen haben, also dann hier eben zu, wo hatten wir das,
+zu Mini-Kurs als Umsatzbooster, zu Instagram-Story-Vorlagen, ja und dann schreibst du ja klar oder
+scheiß, ich habe gerade gebucht, weil was ist, wenn die Person gebucht hat, dann hat
+ihr auch auf dem Link geklickt, ja und wir wollen natürlich nicht, dass die Leute beärgert sind,
+wir schauen uns erst mal an, was passiert, wenn die sagen ja, dann hinterlegst du einfach einen
+Link mit einem Coupon-Code und dann eben auch wie immer mit der zweiten Möglichkeit, wenn
+du sagen, scheiß, ich habe gerade gebucht, dann sagst du, kein Problem, schreib einfach eine Nachricht
+an meiner, also das schreibst du nicht, aber das kannst du schreiben, ich schreib, die sollen
+einfach der Sonne her schreiben und die erhalten dann die 50 Euro als Guthaben-Zurücküberwiesen
+und wenn alternativ, können sie sich aber auch einen anderen Mini-Kurs aussuchen aus meiner Liste
+und wie gesagt, ich mache das jetzt bei Kursen, die so 247 Euro zum Beispiel kosten, ich finde die
+immer noch Mini, also vielleicht ja, vielleicht sind sie so ein bisschen mittel, ja, aber eigentlich
+für das, was man bekommt, wie zum Beispiel hier Mini-Kurs als unsatzbooster, würde ich jetzt nie
+sagen, das ist ein Mini, würde ich es nie sagen, das ist irgendwie in, keine Ahnung, obwohl eigentlich
+ist uns auch schon ein großer Kurs, naja, egal, egal wie du es bezeichnest, Mini-Kurs oder whatever,
+ich würde einfach von den Preisen her ausgehen, wenn du sagst, du hast ein 37 Euro Kurs, dann würde
+ich jetzt mal dieser Coupon-Automation nicht machen, dann würde ich es vielleicht so machen,
+dass ich hier sage, hast du Lust auf ein extra Coupon, auf ein Geschenk von mir und dann kannst
+du sagen, hey, du kannst dir allen meine anderen Mini-Kursen noch aussuchen kostenlos, ja, das
+werde ich wahrscheinlich auch noch erstellen für die wirklich Mini-Mini-Kurse, wenn du wie gesagt,
+was hast über 111 Euro, über 199 Euro, dann kannst du natürlich mit richtig coolen Rebotten
+auch arbeiten, wenn du ein 111 Euro Kurs hast, dann würde ich vielleicht sowas wie 20 Euro Rebot
+machen, damit es sich halt auf jeden Fall für dich nach lohnt, ja, genau, also das sind so die
+Automationen, mit denen ich arbeite, dann haben wir noch eine Quiz-Automation, aber die, ja,
+werde ich dir in einem nächsten Video beibringen, die sieht nämlich ein bisschen anders aus, können
+wir mal kurz reinschauen, ein bisschen verzickter, aber keine Sorge, ist alles eigentlich super
+easy. Also ich hoffe, es hat dir gefallen, ich hoffe, du hast gelernt, wie du Automationen
+erstellst, wie gesagt, vor allem meine Mini-Kurs-Automation, meine Euro-Automation und die
+Coupon-Automation, wirklich wirklich wunder, macht es so, baut es so auf und ja, wenn du möchtest,
+ich arbeite gerade an Vorlagen dafür, dann kannst du natürlich auch die Vorlagen schicken,
+sichern, da sind dann alle Vorlagen direkt für dich erstellt und du musst quasi nur noch
+mit deinen Worten ausfüllen und dann links ausfüllen, genau.

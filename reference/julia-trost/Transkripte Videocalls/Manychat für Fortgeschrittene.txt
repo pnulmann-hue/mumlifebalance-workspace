@@ -1,0 +1,167 @@
+Ich habe mich durchgekämpft für euch, über euch nach einem Bonusmodulier anzuhängen, nämlich die Erweiterung von Manitent.
+Wahrscheinlich wird es noch viele geben, denn ich habe heute so viele coole Funktionen von Manitent entdeckt, das ist irre.
+Und ich bin jetzt schon heiß drauf, mich da reinzufuchsen und zu schauen, wie man da noch alles automatisieren kann.
+Du weißt ja, ich bin kleiner Automatisierungsfuchs, kleiner Automatisierungsfreak.
+Und ich liebe das einfach und ich will so viel wie möglich automatisieren, wie es geht.
+Und von da an schau öfters mal an den Kurs auf rein, weil da wird sich immer was updaten.
+Jetzt kommen wir aber zuerst zu einer Sache, die ich mega spannend finde, nämlich du kannst in deinen Stories, in deinen Direktnachrichten auch automatisiert um Fragen stellen.
+Und das ist ziemlich genial.
+Ich sage dir mal, wie das geht.
+Ich habe allerdings auf eine kleine Hürde gestoßen, die ich nicht gelöst habe, die ich vielleicht hoffentlich irgendwann lösen werde.
+Wenn ja, dann sage ich dir auf jeden Fall Bescheid.
+Wenn nein, dann müssen wir einfach die Umleitung nehmen, die ich jetzt auch genommen habe.
+So ist es halt.
+Wir gucken ja immer viele Wege für nach oben und wir schauen immer, dass wir auf der Suche nach Lösungen sind.
+Es gibt keine Probleme, nichts, was nicht geht.
+Wir schatten rein, wir schatten mit einer neuen Automation.
+Und zwar bauen wir heute eine Automation, wie gesagt, wo du deinen Teilnehmern eine Umfrage stellen kannst.
+Wir sagen, okay, der Trigger ist der gleiche.
+Zum Beispiel kommentiert die Person unter einem Reel mit Test123.
+Das kennst du ja alles schon aus dem Verherrigenmodul.
+Das kommentieren wir mit, schau mal in deine DMs.
+Ich muss drei.
+Hey, schau mal in deine DMs.
+Guck in deine Nachrichten.
+Na los, mach schon.
+So, alright.
+Naja, irgendwas halt.
+Das hast du ja, wie gesagt, alles schon gelernt.
+Von da an gehe ich da jetzt einfach nochmal ein bisschen blödsinn drüber.
+Was du jetzt noch nicht gelernt hast, ist, dass wir jetzt eben diese Umfrage erstellen.
+Und wir haben ja immer, weil ein Trigger passiert, dann folgt ja eine Interaktion oder eine Aktion darauf.
+So, und jetzt wollen wir eine Umfrage erstellen und müssen dazu ja oben umswitchen within 24-hour-Window.
+Und dann können wir sagen UserInput, also der Input von einem Nutzer.
+Und hier können wir jetzt nur unseren Text eingeben, der dann zu einer Umfrage führt.
+Zum Beispiel, magst du, was magst du am liebsten zum Frühstück?
+Und dann gehst du hierhin, gehst auf, nee, das war es nicht, das hier war ja nur der Text.
+Da musst du mal darauf achten, da bin ich auch immer noch ein bisschen verwirrt.
+Gehst quasi hier rein, weil immer wenn du hier unten drauf klickst, dann machst du das quasi darunter.
+Also darunter kommt dann das, das was du hier angeklickt hast.
+Und deswegen musst du immer schauen, wo du dich gerade drin befindest.
+Na ja, auf jeden Fall, du tippst hier deine Frage ein.
+So, und dann sagst du TextType, multiple choice, multiple choice, ja.
+Und dann sagen wir, hier machen wir erstmal nix, ich erkläre das gleich noch.
+Dann sagen wir okay, wir wollen die, hey, die die Antworten jetzt einfügen und sagen okay, Nutella, ja, Marmelade, Käse,
+so, ja.
+Und so einfach passiert ist, dass wenn jemand kommentiert, bekommt deine Nachricht zugeschickt und kann dann quasi seine Antwort auswählen, ja.
+So, und dann können wir wählen, was darauf folgt, ja.
+Und das heißt, ich würde dir wirklich empfehlen, dass wenn du sowas hast, zum Beispiel, wir machen es mal ein bisschen realistischer, cool, dass du kommentiert hast, cool, dass du kommentiert hast,
+hast du Bock zu lernen, wie du fünf Kilo abnimmst.
+So, dann kommentierst du am besten immer mit ja oder mit ja sowas von, ja.
+Weil das Ding ist, wenn jemand mit nein kommentiert, was machst du dann? Also was machst du dann?
+Schickst du dann einfach keine Nachricht, das ist ja irgendwie auch blöd, ja.
+Das heißt, ich würde hier wirklich immer, wie auch in den Umfragen in deinen Stories, immer nur Umfragen stellen, die positiv sind, ja.
+Also natürlich nicht, wenn man sagt, wie geht's dir ja oder ja, gut, gut, sondern gut, fantastisch geht so, ja.
+Aber das ist ja was anderes. Hier wollen wir ja wirklich was verkaufen oder zumindest in neun Euro Form was an den Mann an die Frau bringen und Lieds generieren.
+Und das heißt, es gibt hier keine Außermöglichkeiten, nein.
+Wenn die nicht wollen, dann sollen die einfach nicht schreiben, ja, aber ich lasse den gar keine Wahl, okay.
+Dann können wir das hier doch ein bisschen verfeinern und können hier reinklicken.
+Und dann können wir, genau, hier noch sagen, dass wenn der Nutzer quasi nicht innerhalb der nächsten 23 Stunden reagiert hat,
+können wir sagen, okay, dann geht's weiter mit nochmal irgendwas, ja.
+So eine andere Automation, war kein 3 Tage warten, mit einem neuen Text oder oder oder, das sind alles Dinge, die ich gerade am Austesten bin.
+Das heißt, wenn ich da noch irgendeine coole Verknüpfung finde, ohne dass es verwirrend wird, sage ich dir Bescheid, ich habe es einmal mal so gelassen.
+Und hier kannst du sagen, okay, was ist denn jetzt, ich zeige es dir auch gleich noch, wie das dann aussieht.
+Was ist denn jetzt, wenn die Person diese Nachricht bekommt und dann einfach nichts davon anklickt, sondern die einfach schreibt, hey, wie geht's dir oder sowas.
+Ja, wenn ihr nichts davon macht und einfach nur hey schreibt oder so.
+Ja, dann sagen wir, okay, bitte beantworte zuerst die oben gestellte Frage oder sowas in die Richtung, ja.
+Damit die Leute wissen, die müssen hier abstimmen, um was zu bekommen, ja.
+Und dann kannst du noch sagen, okay, es gibt auch so einen Skip-Button, also wo man einfach so weiter, so einen Ignorieren, den löscht ich raus,
+weil ich will ja nicht, dass die Skippen, ich will, dass die ja sagen, ja.
+So, und genau, das stellen wir hier ein.
+Und dann müssen wir natürlich noch sagen, okay, wie geht's denn weiter?
+Choose Next Step, ja, was ist denn, wenn die geantwortet haben?
+So, wenn die geantwortet haben, dann...
+Genau, hier geht's weiter, so, nicht hier unten, genau.
+Hier geht's weiter, Waiting for a reply from the contact.
+Und dann sagen wir, okay, geht's zum Text, ja.
+Und dann sagt, cool, freue mich, dass du Bock drauf hast.
+Und dann machst du weiter, wie ich dir eben, also in dem letzten Modul gezeigt habe,
+und schickst dir dann einfach den Link, ja.
+Ich füge mich mal gerade diesen Link hier ein.
+Hier geht's zum Link.
+Dann fügst du einfach das ein.
+So, ja.
+Und ich zeig dir jetzt auf jeden Fall auch, wie es funktioniert beziehungsweise gleich.
+Wir gehen jetzt mal auf Set Live.
+So, und dann kommt nämlich die Fehlermeldung, die ich dir gezeigt oder zeigen wollte,
+wo ich am Anfang gesagt habe, dass wir da ein Workaround bilden müssen, ja.
+Weil wir können nicht hier, dieses Send within a 24-hour-Window, können wir nicht machen.
+Wir können nur Ascommon-Reply machen.
+Allerdings, wenn wir Ascommon-Reply machen, das sieht auch da,
+dann können wir diesen User-Impot nicht nutzen, ja.
+Und das hat mich wirklich zur Verzweiflung gebracht, weil ich gedacht habe, wie mache ich das jetzt, ja.
+Und was ich gemacht habe, was du am besten von Anfang an machen solltest,
+ist, dass wir erst sagen, wenn die kommentieren, dann,
+dann, wie habe ich es jetzt gemacht, genau hier auf das Plus, dann auf Instagram,
+dann send erst mal ein Text, ja.
+Und dann sende ich sowas wie, hey, oder cool, dass du kommentiert hast.
+Warte einfach zehn Sekunden oder drücke auf den Knopf.
+Und es geht weiter.
+Ja, weil was wir dann machen ist, wir machen hier Add Quick Reply, ja.
+Und sagen, select existing step.
+Dieser step heißt so, Send Message, ja, das ist der, dem wollen wir wählen.
+Das heißt, danach, wenn der Kunde diesen Button drückt, klick hier, dann geht es weiter nach da.
+Ja, diese Connection löschen wir jetzt erstmal, das heißt, die Connection von der Ursprung zu dem hier löschen wir.
+Aber wir sagen, wir fügen die dahin.
+Das heißt, wir fügen dieses kleine Fensterchen hier zwischen durch, ja.
+Warum ich jetzt mal den 10 Sekunden beschrieben habe?
+Weil wir können auch sagen, wenn die Person da nicht geklickt hat aus irgendeinem Grund, können wir sagen,
+egal nach 11 Sekunden oder 10 Sekunden, das müssen mindestens 10 Sekunden sein, geht es dann trotzdem, hey.
+Braucht es denn weiter, ja.
+Das heißt, wenn der Kontakt nicht reagiert hat oder nach 10 Sekunden, also oder hier drauf fliegt, geht es dann weiter mit was magst du am liebsten zu Frühstück, ja.
+So, und das sieht es vielleicht ein bisschen kompliziert aus.
+Ist es vielleicht auch am Anfang, aber ich zeige dir ganz easy, wie das in live aussieht.
+Genau, das hier müssen wir natürlich als comment reply schätzen.
+Und jetzt können wir das ganze Ding live setzen.
+Das heißt, nur das erste Ding hier muss als comment reply gekennzeichnet sein.
+Dann können wir weiter machen mit will for 24 hour window, ja.
+Ist ein bisschen blöd, wenn jemand eine Idee hat, wie man es anders lösen kann, let me know.
+So, und ich lasse es, ich lösche das jetzt einfach mal, weil ich brauche das nicht.
+Ich zeige es dir aber, wie ich es mache mit an dieses Beispiels, ja.
+Das heißt, hier habe ich auch gesagt, wenn jemand cashreel kommentiert, dann bekommen die diese Nachricht.
+Hey, Julia, Lisa, whatever.
+Klick einfach hier oder warte 10 Sekunden und es geht weiter.
+Und habe dann gesagt, du hast mit cashreels kommentiert und hast deswegen diese Nachricht, aber Achtung, diese Nachricht hältst du komplett automatisiert.
+Ich bin wahrscheinlich gerade am Shoppen oder am Essen.
+Du kennst mich und wahrscheinlich nicht ganz an meinem Handy.
+Richtig cool, oder? Willst du wissen, wie das funktioniert?
+Ja, auf jeden.
+So, und dann hieß es okay, super cool.
+Dann geht es hier zum Produkt, in welchem ich jetzt zeige, wie meine Reals in Kombination mit Managed Hat nicht nur Follower, sondern auch Kunden bringt.
+Vielleicht bist du auch gerade durch diese Automation hier drauf gekommen, wo du das jetzt lernst, ja.
+Und ich zeig dir mal, wie das im echt aussieht.
+Wir gehen jetzt mal kurz in mein Instagram-Rain und schauen uns das mal an.
+Wo bin ich denn?
+Hier.
+Ich habe mir das nämlich selbst mal geschickt von meinem privaten Account aus.
+So.
+Das heißt, ich habe hier geschrieben, mein privater Account cashreels.
+Dann hieß es, das war automatisiert.
+Klick einfach hier, ja, dann habe ich hier geklickt.
+Dann stand dann, du hast mit cashreels kommentiert, dann habe ich ja geklickt und dann kommt die Nachricht, ja.
+Und das ist einfach so genial, ich liebe es, weil du musst nichts mehr machen, ja.
+Du postest einfach deine Reals, die haben wir uns ja schon angeschaut.
+Wie zum Beispiel, hey, da muss man ein neues Real.
+Wie zum Beispiel hier, was ich gerade eben gepostet habe.
+Und siehst schon die Kommentare, oder nicht, ja hier.
+Cashreels, cashreels, cashreels und alle diese Menschen, wir können ja mal auf eine drauf gehen.
+Weil ich bin so ja auch mittlerweile im Kurs.
+Ups, 16.000 followers, not bad.
+Haben wir jetzt auf jeden Fall diese Nachricht hier bekommen, ja.
+So, hey, klick hier oder warte 10 Sekunden, sie hat geklickt.
+Cashreels, ja.
+Zack.
+Geil, oder?
+Oh mein Gott, ich bin so begeistert davon.
+Ich sag's dir, ich raste aus.
+Also, ich hoffe, du bist auch so begeistert davon.
+Leider müssen wir wie gesagt dieses kleine Workaround machen.
+Ich hoffe, hoffe, hoffe, dass es dafür bald eine Lösung gibt.
+Oder dass ich einfach auf eine Lösung stoße und nicht einfach nur so doof bin.
+Das heißt, wenn es irgendwie Updates gibt, ich sag dir, unheimlich gerne Bescheid.
+Ich update den Kurs hier, wie all meine Kurse, eh immer regelmäßig.
+Und von da, schau einfach nochmal rein.
+Und ansonsten würde ich dir ganz viel Spaß damit.
+Und ja, ich glaube, ich habe ein neues Lieblingsprogramm,
+nämlich Medi-Chatch.
+I love it.

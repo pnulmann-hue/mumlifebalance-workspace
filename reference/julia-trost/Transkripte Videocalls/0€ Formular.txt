@@ -1,0 +1,124 @@
+So, ich zeig dir jetzt noch, wie du deinen 0 Euro-Funnel aufbaust und strukturierst und
+wie du dann auch in den Webinarfall noch weiterleitest.
+Im ersten Schritt zeige ich dir jetzt aber erstmal, wie du einen 0 Euro Produkt überhaupt
+aufsetzt, weil das ist ein bisschen tricky und kann man nicht einfach über den Kursblatt
+davon machen.
+Also du kannst nicht einfach ein Produkt erstellen, was du für 0 Euro verkaufst.
+Bei ThriveCard würde es gehen, so von der Technik her, aber zum Beispiel bei Elopage DigiSounds
+und so weiter, ich glaube, die verbieten es sogar, 0 Euro Produkt zu verkaufen, weil
+das darfst du einfach nicht, also verkaufen und 0 Euro macht ja eh schon keinen Sinn,
+von dann müssen wir da ein bisschen anders vorgehen.
+Wie genau das zeige ich dir hier.
+Wir schalten uns mal nochmal in mein Bildschirm und zwar ist es so, dass du dann in der Newstader
+Tool rein gehst.
+Das heißt, egal ob du Elopage DigiSounds oder ThriveCard verwendest, das hat erstmal
+damit nichts zu tun.
+Wir gehen jetzt erstmal in das Newstader Tool rein und erstellen jetzt erstmal einen
+Tag, also hier, ich bin ja bei Active Campaign, gehen wir erstmal auf Tags und erstellen erstmal
+einen Tag zu deinem 0 Euro Produkt, nenn das einfach wie du willst, ja, ich habe das
+zum Beispiel einmal 0 Euro Produkt, ich habe einmal 0 Euro Produkt Checkliste, ich habe
+einmal 0 Euro Webinar, also es ist schon so, dass du auch, wenn du mehrere 0 Euro Produkte
+hast, den Überblick nicht verlierst, das heißt, wir erstellen dann zuerst einen Tag
+und dann gehen wir hin hier auf Webseite, auf Formulare, bei anderen Anbietern heißt
+es natürlich ein bisschen anders, aber es heißt eigentlich immer Form oder Formular
+oder Eintrage Form oder sowas in die Richtung, da könntest du mal schauen, dass du das auf
+jeden Fall findest bei deinem Anbieter, bei Active Campaign, das ist auf jeden Fall hier
+bei Formular.
+Dann gehen wir auf neues Formular erstellen und ich nenne das jetzt einfach mal Test,
+0 Euro, so und dann sagen wir nämlich, okay, wir abonnieren eine Liste, ich habe ja da
+meine Listen die Interessenten einmal und wir abonnieren einen Tag und zwar wäre das
+dann eben das 0 Euro Produkt, ich nehme jetzt auch gerade den Tag, der schon da ist, so
+Warum Interessenten?
+Interessenten ist ja bei mir die Liste, bei der auf der alle draufstehen, die etwas für
+umsonst kaufen, also wenn man jetzt etwas kauft für ab 1 Euro oder ab 1 Cent, dann würde
+man bei mir auf der Kundenliste stehen und so habe ich das quasi für mich untergliedert
+und hier ist es ja für 0 Euro, das heißt, die abonnieren die Liste ab Interessenten
+und der Tag kommt in zu 0 Euro Produkt, so, dann lege ich das an, du hast hier verschiedene
+Formular-Style auch noch, ich mache es aber einfach mal so ein Formular, wo man wirklich
+irgendwo einbetten kann.
+So, dann kannst du hier eben die Texte ganz easy bearbeiten, wie du halt willst, ich würde
+dann hier halt den Titel vom Webinar hinschreiben, also 0 Euro Produkt, Titel und dann hier so
+eine, ja, kurz Übersicht, dein Pitch, also nicht viel mehr, wirklich nur dein Pitch,
+sondern hast du hier falsche Name, Email und dann kann wir noch ein bisschen was ändern
+bzw. das müssen wir noch ein bisschen was ändern.
+Wir haben jetzt hier eine Marketingphone Active Campaign, das würde ich erst mal wegmachen,
+genauso wie hier leere Felder weglassen, bei Optionen, ja, das heißt, es sind alles
+Pflichtfelder, ja, genau, wo haben wir denn das, muss ich jetzt selbst mal gucken, Stil
+ist das, glaube ich, dass wir sagen, okay, wir wollen das Active Campaign Branding nicht
+genau nicht anzeigen, ja, dann verschwindet das, hast du gerade gesehen, du kannst natürlich
+anzeigen, aber ich sage nicht anzeigen und dann müssen wir hier vorne noch was ändern,
+wir müssen nämlich die DSGVO noch einfügen, ich glaube, das ist das hier, genau, DSGVO
+einfügen, ich habe das, ich weiß gar nicht, ob das voreingestellt war, wenn nicht, dann
+würdest du das einfach quasi erstellen über ein benutzerdefiniertes Feld und dann müssen
+wir hier noch sagen, okay, mindestens eine dieser Häkchen muss angeklickt sein, also
+es gibt ja nur ein Kästchen, das heißt, das Kästchen muss angeklickt sein, damit
+man eben weiterkommt, DSGVO ist ja ein ganz wichtiges Thema, das heißt, das Kästchen
+musst du haben, ja, das ist ganz, ganz wichtig, okay, du kannst die Überschrift, ich mach
+das meistens so, dass ich es lösche und dann einfach nur das Kästchen habe und genau,
+du kannst auch natürlich noch irgendwie weitere Nachnahme und Telefonnummer kann man irgendwie
+auch noch einfügen und kann auch ein Capture machen, dass man sagen muss, ich bin kein
+Roboter und so weiter, das habe ich jetzt aber alles bei mir nicht gemacht, genau, das
+kann man genauso gut auch noch mal entfernen, frag mich nur gerade nicht. Ach ja, wie kann
+man das denn hier wegmachen? Auf X, logisch, genau, so und dann kannst du natürlich auch
+noch hier den Stil ändern von diesem Absenten, also du kannst natürlich auch hier klick,
+klick hier, klick hier oder sowas und du kannst eben auch noch die Farbe ändern,
+den du auf Stil gehst und dann hier einfach die Farbe deiner Wahl aussuchst, bei mir wäre
+das eben eine Brandingfarbe so in, ja, egal, in die Richtung, ja. Okay, was du noch machen
+kannst ist, also du kannst ja natürlich noch den Hintergrund machen, also du kannst ganz,
+ganz viel noch irgendwie auswählen, ich würde es einfach immer einen weißen Hintergrund machen,
+du kannst noch eine Grenze einziehen, also Ränder quasi, ja, wir können oben und unten
+und rechts, ich mache es mal gerade nur rechts, das siehst du, kannst du so Kästchen machen,
+also kannst alles mögliche machen, ja, das soll ich wichtig ist gar nicht zeigen, da wollen
+wir uns das gar nicht aufhalten. Was aber noch wichtig ist, ist, dass wir dann hier auf Optionen
+noch gehen und sagen, okay, wir schicken bei Absendung nicht einfach nur eine Danke,
+nicht nur vielen Dank für die Registrierung, sondern auch hier wiederum versuchen wir zu
+verkaufen, indem wir unsere Dankesseite einblenden, ja, und ich weiß gar nicht, ich glaube, ich habe
+die gerade einfach auch nur Danke genannt, genau, und in meiner Dankesseite kommt dann eben noch
+ein Special Deal, ja, für 500 Euro statt 1000, 200 Euro, quasi mein 101 Telegram Support, ja,
+und diese URL füge ich dann hier ein. Und das Geile ist halt, du kannst es auch machen, kannst
+individuell machen und kannst vor allem dann eben auch hier, wo waren wir jetzt auf der Seite,
+zu viele Taps offen, kannst auch hier eben noch einen anderen Deal anfügen, ja, bei mir ist es
+einfach wirklich so ein großer, also ein höher, hoher Wert, ja, der jetzt nicht so aufgebucht wird,
+war aber auch meine Absicht, weil ich aber nicht will, dass das Programm so aufgebucht wird,
+aber trotzdem habe ich halt gedacht, platziere ich es mal, ja, und was du hier eben auch machen
+kannst, ist dann zu sagen, hier für 15 Euro nur 1,37 Euro, erhältst du noch Zugriff auf
+mini Quors oder sowas, so kannst du nämlich einfach dann 0 Euro Webinar schon, ja, monetarisieren,
+was ja normalerweise gar nicht geht, ja, weil es ja für 0 Euro ist, und so kannst du eben schon,
+hey, war weg, so kannst du eben schon hier im ersten Schritt sogar schon Umsatz machen, ja,
+und das ist natürlich genial. So, und wenn wir das hier alles fertigstehen haben, dann gehen wir
+auf integrieren hier oben rechts und dann können wir sagen, hier können wir es einbetten, je nachdem,
+ob du so in deiner Webseite einbetten möchtest, oder wir sagen, wir können auch den Link verschicken,
+den kann ich dann quasi in meiner Story teilen, meinen Nutz anstecken und so weiter,
+die kommt dann auf diese Seite hier, können sich eintragen und nur wenn sie das Kästen bestätigen,
+dann geht es weiter, wenn sie dann abschicken, wir können das ja mal gerade machen, ja,
+whatever, so, dann sollten sie auf die Seite kommen, genau, das hat geklappt, sehr cool,
+genau, und so, ja, also dann gehst du zu Spanchen und beenden, und so erstellst du dann quasi dein
+Null-Euro-Produkt, deine Null-Euro-Form, und das Wichtige ist jetzt eben hierbei auch, dass du
+dann eben, und das habe ich dir ja, oder das zeige ich dir jetzt im nächsten Schritt, dass du dann
+eine Automation anbindest, ja, das ist bei mir, glaube ich, hier irgendwo, da haben wir es,
+hier, dass du dann eben auch weiter machst, ja, dass du dann sagst, okay, wenn dieser Tech Null-Euro-Produkt
+oder wie du es auch immer nennen magst, vergeben wurde, dass du dann in die Automation startest
+und dann sagst, hey, hier kannst du eben auch zugreifen auf mein Produkt, weil wir können
+jetzt natürlich nicht mit Strive-Cut das Ganze verbinden, weil wir auf Strive-Cut keinen, also
+wir haben ja auf Strive-Cut das Produkt nicht angelädt oder auf Digital oder auf Edo-Page,
+ja, das heißt im nächsten Schritt geht es dann weiter, wo habe ich es? Jetzt habe ich es eben
+zugemacht, na ja, du siehst das im nächsten Modul auf jeden Fall, im nächsten Schritt gehen wir
+dann weiter auf die Seite, ich kann es dir auch hier mal zeigen nochmal, du siehst es aber gleich,
+wie gesagt, eh, gehen wir dann hier auf diese Seite, ja, wir verlinken dann eine eigens erstellte
+Landing-Page und verlinken dann darauf, ja, und was du natürlich auch machen kannst ist, wenn es sich
+nur um eine PDF handelt, bei mir handelt es sich ja erst um ein Video, ja, wenn es sich nur auf eine
+PDF handelt, dann würdest du hier einfach deine PDF hinterlegen, ja, deine PDF kannst du ja bei
+Google Drive alle hinterlegen, ich habe da zum Beispiel meine ganzen PDFs liegen und dann gehst du
+einfach hier auf freigeben und dann auf jeder, der über den Link verfügt, betracht an den Kopieren
+und dann würdest du den einfach hier hinschicken, hier anfügen, ja, und das ist eben ganz, ganz
+wichtig, dass du nicht vergisst, diese E-Mail anzubinden, weil normalerweise, wenn wir ein Produkt
+anlegen bei Strive-Cut, bekommen die ja automatisch von Strive-Cut an den Zugang zugeschickt, aber
+das ist hier eben nicht so, ja, weil wir jetzt nicht über Strive-Cut machen, na, also das ist
+quasi diese Besonderheit beim Null-Euro-Produkt, ich komme nochmal zurück, da musst du auf jeden Fall
+darauf achten, sonst geht das ganz schön in die Hose und das Geile ist aber bei Null-Euro-Produkt,
+dass es eben dadurch, dass es für Null-Euro ist, natürlich eine höhere Wahrscheinlichkeit hat,
+dass du eben ganz viele Leute in deine Räume bekommst und deswegen bin ich auch ein Fan von
+Null-Euro-Produkten und vor allem eben von Null-Euro-Webinar, aber wenn du eben mit so Checklisten
+und so weiter arbeiten möchtest, dann auf jeden Fall so und im nächsten Schritt zeige ich dir jetzt
+noch, wie du dann von diesen Null-Euro-Checklisten, von diesen Mini-Null-Euro-Geschichten dann wirklich
+in deinem Webinar einleitest oder und oder in deine Signature-Kurse. Okay, wir sehen uns im nächsten Modul.

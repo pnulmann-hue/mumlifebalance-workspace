@@ -1,0 +1,41 @@
+So, ich zeichne jetzt mal mit Loom auf, weil Zoom gerade nicht funktioniert, so wie alle anderen Providers und ich weiß nicht genau, wie du mich hier sehen kannst.
+Ich glaube, du siehst mich das gar nicht.
+Okay, lassen wir uns davon nicht aufhalten.
+Hauptsache, du siehst meinen Bildschirm hoffentlich.
+Okay, ähm, ja, jetzt bin ich da, ganz seltsam.
+Okay, what the fuck.
+Jo, okay, na das klar.
+Das sieht super komisch aus, warum ist das so komisch?
+Na ja, egal.
+Ja, also, lass uns mit GPTs weitermachen.
+GPTs siehst du hier und ich habe dir ja schon gesagt, dass du GPTs erkunden kannst nach deinen Topics, weil das eben vorprogrammierte Dinge von anderen sind, die dir dabei helfen, das einfach leichter zu haben.
+Ja, du musst dann nicht selbst programmieren, denn was wir eigentlich machen müssen, ist unsere Chats zu prompten, bedeutet.
+Wenn wir Hooks haben wollen, dann schreiben wir nicht einfach bitte 10 Hooks zum Thema Ernährung.
+Sondern wir folgen einer ganz gewissen Struktur und die Struktur pack ich hier unten drunter.
+Sorry.
+Und diese Struktur, die erfolgen wir, damit wir bessere Ergebnisse bekommen.
+Und dass wir das jetzt nicht immer irgendwie alleine prompten müssen oder ja, und sie den oder generell zum prompt Profi werden müssen, gibt es Menschen, die das für uns gelernt haben und vorprogrammiert haben.
+Und ich habe es auch für dich gelernt und habe prompten gelernt und habe das in den area, die area GPTs reingepackt.
+Das heißt hier, ich kann es dir auch mal zeigen, wie sowas dann ausschaut, habe ich, gerade zeige ich dir auch, wie du einen selbst erstellst, habe ich Hinweise, plus dann sollte Jason's reingepackt.
+Und ich kann dir gerne auch die Dateien zeigen und dann siehst du wahrscheinlich schon, warum du das nicht unbedingt alleine machen musst.
+Ich weiß nicht, ob du das siehst, ich hoffe es.
+Auf jeden Fall sieht das so aus, falls du das nicht siehst.
+Ich kopiere es mal und packst dir mal hier rein.
+Das hier ist der Code.
+Und das musst du natürlich nicht selbst lernen und deswegen gibt es eben GPTs von mir, von anderen, die das schon gemacht haben und für dich vorprogrammiert haben.
+Und deswegen kannst du den area content GPT zum Beispiel nutzen, um deinen Content zu erstellen.
+Wie genau du die GPTs nutzt, zeige ich dir noch.
+Aber erst mal da zum Thema, was es ist.
+So, wenn du jetzt deinen eigenen GPT erstellen möchtest, dann kannst du hier hingehen und dann oben auf erstellen.
+Und dann kannst du den konfigurieren, kannst den Namen eingeben, die Beschreibung soll keine Ahnung, Rezepte rausgeben.
+Und dann kannst du den Namen prompten, also mit dem Input beliefern, was er daneben machen soll.
+Und du kannst auch eine Wissenstattenbank hochladen, zum Beispiel ein Rezeptbuch von anderen, was du cool findest, worauf man sich orientieren soll oder oder.
+Du kannst ihm aber auch einfach eine Aufgabe geben, kannst sagen.
+Hi, ich möchte einen prompt oder einen GPT dazu erstellen, der mir jedes Mal, wenn ich ein neues Rezept brauche, ein Rezept liefert.
+Das Rezept soll immer vegan sein, nicht länger als eine halbe Stunde brauchen und nie irgendwelche fancy-Zutaten verwenden.
+Oder wenn fancy-Zutaten dann so, dass das Rezept am nächsten Morgen oder am nächsten Tag oder nächste Woche auf diese Zugarten auch zurückgreift,
+so dass zu wenig Abfall wie möglich anfällt.
+So, dann gehen wir hier drauf.
+Und dann, das ist eigentlich der einfachste Weg zu prompten,
+weil du Touchivity quasi den prompt für dich erstellen hast.
+Okay.

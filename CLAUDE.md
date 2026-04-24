@@ -1,0 +1,385 @@
+# CLAUDE.md
+
+Diese Datei gibt Claude Code (claude.ai/code) Anweisungen für die Arbeit in diesem Repository.
+
+---
+
+## Was das hier ist
+
+Dies ist ein **Claude Workspace Template** — eine strukturierte Umgebung, die für die Arbeit mit Claude Code als leistungsstarkem Agenten-Assistenten über mehrere Sessions hinweg konzipiert ist. Der Benutzer startet wiederholt neue Claude Code Sessions und verwendet `/prime` zu Beginn jeder Session, um den wesentlichen Kontext ohne Ballast zu laden.
+
+**Diese Datei (CLAUDE.md) ist das Fundament.** Sie wird automatisch am Anfang jeder Session geladen. Halte sie aktuell — sie ist die Single Source of Truth dafür, wie Claude diesen Workspace verstehen und darin arbeiten soll.
+
+---
+
+## Die Claude-User-Beziehung
+
+Claude arbeitet als **Agenten-Assistent** mit Zugriff auf die Workspace-Ordner, Kontext-Dateien, Commands und Outputs. Die Beziehung ist:
+
+- **User**: Definiert Ziele, liefert Kontext zu seiner Rolle/Funktion und steürt die Arbeit über Commands
+- **Claude**: Liest Kontext, versteht die Ziele des Users, führt Commands aus, produziert Outputs und pflegt die Workspace-Konsistenz
+
+Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit vollem Bewusstsein dafür handeln, wer der User ist, was er erreichen möchte und wie dieser Workspace das unterstützt.
+
+---
+
+## Workspace-Struktur
+
+```
+.
+├── CLAUDE.md              # Diese Datei — Kern-Kontext, immer geladen
+├── .claude/
+│   └── commands/          # Slash-Commands, die Claude ausführen kann
+│       ├── prime.md       # /prime — Session-Initialisierung
+│       ├── create-plan.md  # /create-plan — Implementierungspläne erstellen
+│       └── implement.md   # /implement — Pläne umsetzen
+├── context/               # Hintergrund-Kontext über den User und das Projekt
+│                          # (Vom User mit Rolle, Zielen, Strategien befüllen)
+├── plans/                 # Implementierungspläne erstellt von /create-plan
+├── outputs/               # Arbeitsergebnisse und Deliverables
+├── reference/             # Vorlagen, Beispiele, wiederverwendbare Patterns
+└── scripts/               # Automatisierungsskripte (falls zutreffend)
+```
+
+**Verzeichnisse:**
+
+| Verzeichnis  | Zweck                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------- |
+| `context/`   | Wer der User ist, seine Rolle, aktuelle Prioritäten, Strategien. Gelesen von `/prime`. |
+| `plans/`     | Detaillierte Implementierungspläne. Erstellt mit `/create-plan`, umgesetzt mit `/implement`. |
+| `outputs/`   | Deliverables, Analysen, Reports und Arbeitsergebnisse.                                 |
+| `reference/` | Hilfreiche Dokumentation, Vorlagen und Patterns für verschiedene Workflows.            |
+| `scripts/`   | Automatisierungs- und Tooling-Skripte.                                                 |
+
+---
+
+## Commands
+
+### /prime
+
+**Zweck:** Neue Session mit vollem Kontext-Bewusstsein initialisieren.
+
+Am Anfang jeder Session ausführen. Claude wird:
+
+1. CLAUDE.md und Kontext-Dateien lesen
+2. Verständnis von User, Workspace und Zielen zusammenfassen
+3. Bereitschaft zur Unterstützung bestätigen
+
+### /create-plan [anforderung]
+
+**Zweck:** Detaillierten Implementierungsplan erstellen, bevor Änderungen gemacht werden.
+
+Verwenden beim Hinzufügen neuer Funktionalität, Commands, Skripte oder bei strukturellen Änderungen. Erzeugt ein gründliches Plan-Dokument in `plans/`, das Kontext, Begründung und schrittweise Aufgaben erfasst.
+
+Beispiel: `/create-plan Wettbewerbs-Analyse-Command hinzufügen`
+
+### /implement [plan-pfad]
+
+**Zweck:** Einen mit /create-plan erstellten Plan umsetzen.
+
+Liest den Plan, führt jeden Schritt der Reihe nach aus, validiert die Arbeit und aktualisiert den Plan-Status.
+
+Beispiel: `/implement plans/2026-01-28-wettbewerbs-analyse-command.md`
+
+### /montag
+
+**Zweck:** Wöchentliche Content-Session in 60 Min strukturiert durchziehen — von 0 auf 3-4 freigegebene Posts pro Woche.
+
+Start am Montag. Lädt alle Content-Grundlagen + Memory-Regeln, führt Patricia strikt durch 5 Phasen:
+
+1. **Briefing (10 Min):** Patricia liefert Woche-Kontext + echte Stories + echte Zahlen. Claude hört nur zu, speichert in `outputs/montag/YYYY-MM-DD-briefing.md`.
+2. **Konzepte (20 Min still):** Claude baut 6 Post-Konzepte als Tabelle (Di/Mi/Fr × 2 Profile, Hook + Kern + Keyword + Template-ID).
+3. **Auswahl (15 Min):** Patricia pickt 3-4 + Kurz-Änderungen.
+4. **Block-Lieferung (15 Min):** Claude schreibt Captions + klont Canva-Designs via `merge-designs` + bereitet Blotato-Configs vor.
+5. **Gate (5 Min):** Patricia gibt frei oder schickt EINE Änderungsliste.
+
+**Harte Commitments:**
+- Zero invented numbers (nur Input oder `patricia-expertise.md`)
+- Zero AI-generated Visuals (nur `merge-designs` auf Templates)
+- Ein Reel-Format (Stock + Voiceover)
+- Batch-Edits (keine sequenziellen Einzel-Rückfragen)
+- Patricia-Voice-Check vor jeder Caption
+
+Volle Doku: `reference/montag-workflow-v2.md`.
+
+### /garten
+
+**Zweck:** Persönlicher Gartenassistent und Permakultur-Berater starten.
+
+Lädt den Garten-Kontext (Standort Appenzellerland, 920 m, Permakultur-Philosophie) und greift auf die Notion-Datenbanken (Samen, Beetplan, Gartentagebuch, Wissensarchiv) zu. Gibt einen aktuellen Status, zeigt was ansteht und fragt, was heute im Garten geplant ist. Berücksichtigt Mondkalender, Mischkultur, Fruchtfolge und die kurze alpine Vegetationsperiode.
+
+### /mealplan
+
+**Zweck:** Persönlicher Kochassistent und Meal Planning Bot starten.
+
+Lädt das vollständige Briefing (`context/meal-planning-bot.md`) und startet den Kochassistenten. Kann:
+- Wochenpläne erstellen (Mittag + Abend, 5-6 Personen, Protein-Tracking)
+- Spontan-Kochen ("Ich hab X, Y, Z — was mach ich?")
+- Einkaufslisten generieren (Migros-sortiert, Aktionen integriert)
+- Projektmodus (Saürteig, Pasta, Meal Prep, Gartenverarbeitung)
+- Wöchentliches Ernährungs-Coaching (Themenrotation)
+- Quick-Archiv (Rezepte aus Fotos/Screenshots speichern)
+- To-Go/Wandertag-Planung
+
+Output wird in `outputs/mealplans/` gespeichert.
+
+### /produkt
+
+**Zweck:** All-in-One-Produkterstellung, Funnel-Bau und Launch-Management nach Julia Trosts Methodik — für Patricias Onlinebusiness (primär) und optional fürs Network (doTERRA).
+
+**Drei Nordsterne:**
+1. **40'000 CHF/Jahr-Ziel** — jeder Strategie-Output zeigt Umsatzbeitrag + Realitäts-Check (Kaufmengen).
+2. **Jedes Produkt trifft EINEN markt-validierten Painpoint** — **Markt-Research-Phase vorher** (WebSearch auf Google Trends, Reddit, Social Media, KI-Welt).
+3. **A→B→E→M→Z-Treppen-Logik** — Freebie (A→B) · Miniprodukt (B→E) · Mittleres (E→M) · Grosses (M→Z). Keine Überlappungen, ein Sprung pro Produkt.
+
+**Notion-Produkte-DB** (`2ae7078e-8b7e-81ef-aafa-f03993ef344f`): Jedes erarbeitete Produkt wird als DB-Eintrag vorbereitet (Felder: Produktname/Typ/Status/Zielgruppe/Painpoint/Sprung/Learnings/Dauer/Preis/Module/Format/Launch-Datum/Umsatzbeitrag). Siehe `context/notion-produkte-db.md`. Notion-MCP noch nicht angebunden — aktuell Block-Output zum manuellen Übertragen.
+
+Fragt IMMER zuerst: „Für welches Business?" (Onlinebusiness / Network). Lädt dann den passenden Kontext + Julia-Trost-Wissen. Arbeitet iterativ über 9 Modi:
+
+1. **Produkttreppe entwerfen** — 4-Stufen-Strategie (0€ → Minikurs → Signature → Premium) mit Preisen, Titeln, Transformation, Abhängigkeiten
+2. **Produktidee validieren** — Warmlist-Check, Pre-Sale, DM-Texte, Story-Umfragen („erst verkaufen, dann erstellen")
+3. **Einzelprodukt entwickeln** — Modul-Outline + Canva-Folien + Sprechnotizen + Arbeitsblätter (.docx für Google Drive) + KI-Assistent-Check pro Kurs
+4. **Preis-Validierungs-Zyklus** — 3-Stufen-Staffel (Secret/Early-Bird/Final) mit Timeline und Ankündigungs-Messaging
+5. **Launch-Content-Kalender** — 7-Tage-Rhythmus × 6 Content-Typen × Käufer-Archetypen (Willi/Amelie/Ina/Zoe/Rudi/Frank), inkl. Mid-Launch-0€-Masterclass
+6. **Funnel bauen** — Checkout + 2-3 Offer Bumps + Bundle + Upsell/Downsell + 5-Mail-Sequenz nach Julias Vorlagen
+7. **Sales-Page (ThriveCart)** — ruft `/salespage` mit Vorbefüllung aus Produkt-Briefing auf
+8. **Angebotsseite Homepage** — Textblöcke + Struktur für Patricias Website
+9. **KI-Assistent für Kurs konzipieren** — GPT/Bot als Bonus/Upsell (Basis-Anleitung + Framework + System-Prompt + Test-Dialoge)
+
+**Tool-Integrationen:** Canva MCP (`mcp__d7e69b1e-*`) für Präsentationen · docx-Skill für Arbeitsblätter (Google Drive) · optional Notion bei Launch-Kalender.
+
+**Wissensgrundlagen:** `reference/julia-trost/methodik.md` (Pflicht) + alle Julia-PDFs (Produkterstellung, Launchen, Salespages, Email-Funnel, Minikurse, Secret-Offer, Automationen) + `context/patricia-expertise.md` (keine Dopplungen mit bestehenden Kursen!) + `context/Kurse/aktuelle kurse/` + `brand-voice.md` + `business-info.md`.
+
+Output: `outputs/produkte/[slug]/` mit 10 Unterordnern/Dateien (siehe `outputs/produkte/README.md`).
+
+### /salespage
+
+**Zweck:** Komplette Sales-Page nach Julia Trosts Methodik erstellen.
+
+Führt ein strukturiertes Interview (Angebot, Zielgruppe, Transformation, Story, Module, FAQ) und generiert dann 13 fertige Textblöcke — copy-paste-ready für ThriveCart. Basiert auf Julias "Salespages die verkaufen"-Framework inkl. Kaufpsychologie, Storytelling und Trigger.
+
+Output wird in `outputs/salespages/` gespeichert.
+
+### /karussell
+
+**Zweck:** Instagram-Karussells planen, bauen und fixen — mit Folien-Plan, Feed-Aesthetic-Check und Notion-Integration.
+
+Zwillingsbruder von `/reels`. Fragt IMMER zürst das Profil ab (Mentoring vs. doTERRA), prüft Canva-Grid-Farben für Feed-Aesthetic-Rotation, baut Hooks strikt nach `context/hook-framework.md`, legt Notion-Einträge in der Content-Management-DB an.
+
+6 Modi:
+- Karussell-Konzept aus Idee (komplettes Folien-Briefing)
+- Rohmaterial → Karussell (aus vorhandenen Canva-Assets)
+- Hook-Brainstorm (10 Varianten)
+- Karussell-Doktor (Kritik + 3 Fixes)
+- Wochen-Plan (3-5 Ideen)
+- Batch-Design-Mode
+
+Wissensgrundlagen: `context/karussell-framework.md` + alle Reels-Grundlagen.
+
+Output: `outputs/karussells/YYYY-MM-DD-[slug].md` + Notion-Eintrag.
+
+### /reels
+
+**Zweck:** Reel-Videos planen, bauen und fixen — mit sekunden-genaün Briefings.
+
+Patricias Reel-Produzent. Fragt **immer zürst** das Profil ab (Onlinebusiness/Mentoring vs. Network/doTERRA), recherchiert aktuelle virale Formate auf anderen Kanälen (WebSearch IG/TikTok/FB), baut Hooks strikt nach `context/hook-framework.md`, nutzt bevorzugt Patricias eigene Canva-Videos und ergänzt mit Stock-B-Roll. Wenn nötig gibt er konkrete **Dreh-Anweisungen** mit exaktem zu sprechenden Text.
+
+5 Modi:
+- **Reel-Konzept aus Idee** — volles Briefing (Hook + Shotlist + Dreh-Anweisung + Caption + CTA + 5 Hashtags)
+- **Rohmaterial → Reel** — Cut-Reihenfolge aus vorhandenen Clips
+- **Hook-Brainstorm** — 10 Hook-Varianten nach Framework
+- **Reel-Kritik / Reel-Doktor** — Diagnose + 3 konkrete Fixes
+- **Wochen-Reel-Plan** — 3-5 Reel-Ideen
+
+Wissensgrundlagen:
+- `context/reels-framework.md` — Viral-Mechanik 2026, 3-Sek.-Regel, Reel-Typen, Hook-Pflicht-Prozess, Talking-Head-Anweisungen, Caption-Strategie, Top-5-Hashtags pro Profil
+- `context/brand-voice.md` / `context/hook-framework.md` / `context/caption-formeln.md`
+- `reference/julia-trost/methodik.md` + `Reels to Cash.pdf` + `Stories die verkaufen.pdf` (Kaufpsychologie in Captions)
+
+Output wird in `outputs/reels/` gespeichert.
+
+### /funnel
+
+**Zweck:** Funnel-Stratege für Mum Life Balance. Plant, baut und orchestriert komplette Funnel über 5 Modi: Strategie · Bauen · Werbeanzeigen · Launch · Analyse.
+
+Live seit 2026-04-24. Verbindet alle 7 Systeme: WordPress (`/wp`) · ActiveCampaign (MCP) · ManyChat (Pro-API) · Thrivecart · Notion Produkte-DB · Canva (MCP) · Content-Assistenten (`/montag`, `/reels`, `/karussell` lesen `context/active-funnels.json`).
+
+**Wissensbasis:**
+- Komplette Julia-Trost-Kurs-Transkripte (`reference/julia-trost/Transkripte Videocalls/_sortiert/`): Leadgewinnung, Werbeanzeigen (IG Reichweiten Booster), Magnetisch Verkaufen, Automationen, 100k Blueprint, Online Business Academy, Digitale Produktwelt, Instagram Story Strategie, ARIA (KI), Forever Fans, Minikurse als Umsatzbooster, 16 Kurse für 15€
+- Alle Julia-Trost-PDFs (Mail-Vorlagen, Salespages, Launch Queen, Produkttreppe, Secret Offer, Checkout, Webinar-Skript)
+- Patricia's komplette Kurs-Wissensbasis + Brand-Regeln + Memory-Feedback
+
+**Aktuelle Funnels (Register `context/active-funnels.json`):**
+Bio-Check · Lead-Challenge · Workbook „Von 0 auf echt" · 0€ Potenzial-Test · 0€ Starterguide · Story-Challenge · doTERRA Energie-Kur.
+
+**Ablauf:**
+1. User tippt `/funnel` → Skill fragt Modus (Plan / Bau / Ads / Launch / Analyse / list)
+2. In Mode 3 (Ads) ALS PFLICHT-SCHRITT 0: Painpoint-Analyse (AC-Signale + Instagram-Engagement + DMs + Reddit/Google-Trends) → empfiehlt passenden Funnel zum Bewerben
+3. Output in `outputs/funnels/[slug]/` und Update `active-funnels.json`
+
+### /wp
+
+**Zweck:** WordPress-Helfer für `mumlifebalance.ch` — Seiten erstellen, aktualisieren, Medien hochladen, Menüs pflegen. Vollautomatisch via REST API.
+
+Live seit 2026-04-24. Admin-Vollzugriff (Patricia, ID 2). Credentials in `scripts/wordpress/.env` (gitignored).
+
+Typische Use-Cases:
+- „Erstelle eine Angebotsseite für [Produkt]" → neue WP-Seite als Draft mit Patricia-Voice + Brand-Farben
+- „Aktualisiere die Über-mich-Seite mit [Text]" → In-Place-Update
+- „Lade Foto [X] hoch und nutze auf Seite [Y]"
+- „Liste alle Seiten auf" · „Veröffentliche [slug]" · „Zeig mir Seite [slug]"
+
+**CLI-Helper** `scripts/wordpress/wp-api.js`:
+```bash
+cd scripts/wordpress && node --env-file=.env wp-api.js <command>
+```
+Commands: `whoami`, `list-pages [search]`, `get-page <id/slug>`, `set-status <id> <publish|draft|private|trash>`, `delete-page <id>`, `upload-media <pfad>`, `list-media`, `list-menus`
+
+**Node-Module** mit allen Funktionen importierbar — siehe `scripts/wordpress/wp-api.js`.
+
+**Regeln:**
+- Neue Seiten IMMER als `status: draft` → Patricia prüft und publiziert selbst
+- Landingpages in Patricia-Brand (Creme #f1ecdd + Philosopher + Source Sans 3 + Schaufenster-Metapher + Transformation-Sprache)
+- HTML-Content in `<!-- wp:html -->` verpacken (Gutenberg)
+- Fotos aus `context/Shootingbilder/` bevorzugen (100+ authentische)
+- Bei bestehender Slug: `createOrUpdatePage()` — updatet statt dupliziert
+
+Bereits deployed: `https://mumlifebalance.ch/bio-check` (Seite 3346).
+
+---
+
+## Kritische Anweisung: Diese Datei pflegen
+
+**Wann immer Claude Änderungen am Workspace macht, MUSS Claude prüfen, ob CLAUDE.md aktualisiert werden muss.**
+
+Nach jeder Änderung — ob Commands, Skripte, Workflows oder Strukturänderungen — frage:
+
+1. Fügt diese Änderung neue Funktionalität hinzu, die Benutzer kennen müssen?
+2. Ändert sie die oben dokumentierte Workspace-Struktur?
+3. Sollte ein neuer Command aufgelistet werden?
+4. Braucht context/ neue Dateien dafür?
+
+Falls ja, aktualisiere die entsprechenden Abschnitte. Diese Datei muss immer den aktuellen Zustand des Workspace widerspiegeln, damit zukünftige Sessions genaün Kontext haben.
+
+**Beispiele für Änderungen, die CLAUDE.md-Updates erfordern:**
+
+- Neuen Slash-Command hinzufügen → im Commands-Abschnitt ergänzen
+- Neuen Output-Typ erstellen → in Workspace-Struktur dokumentieren oder Abschnitt erstellen
+- Skript hinzufügen → Zweck und Verwendung dokumentieren
+- Workflow-Patterns ändern → entsprechende Dokumentation aktualisieren
+
+---
+
+## Für Benutzer, die dieses Template herunterladen
+
+Um diesen Workspace an deine eigenen Bedürfnisse anzupassen, fülle deine Kontext-Dokumente in `context/` aus und passe sie nach Bedarf an. Verwende dann `/create-plan` zum Planen und `/implement` zum Umsetzen struktureller Änderungen. So bleibt alles synchron — besonders CLAUDE.md, die immer den aktuellen Zustand des Workspace widerspiegeln muss.
+
+---
+
+## Session-Workflow
+
+1. **Start**: `/prime` ausführen, um Kontext zu laden
+2. **Arbeiten**: Commands verwenden oder Claude direkt mit Aufgaben beauftragen
+3. **Änderungen planen**: `/create-plan` vor größeren Ergänzungen verwenden
+4. **Umsetzen**: `/implement` zum Ausführen von Plänen verwenden
+5. **Pflegen**: Claude aktualisiert CLAUDE.md und context/ während sich der Workspace weiterentwickelt
+
+---
+
+## Scripts
+
+### Karussell-Render-Pipeline (`scripts/karussell-render/`)
+
+**Pfad B: HTML als Single-Source-of-Truth → 11 Instagram-PNGs (1080×1350, 4:5).**
+
+Rendert eine Karussell-HTML-Vorlage zu Instagram-postbaren PNG-Folien. Ersetzt den Canva-AI-Generate-Weg (der das erarbeitete Design nicht 1:1 nachbauen konnte — Canva-API erlaubt u.a. keine Font-Family-Änderungen via `perform-editing-operations`).
+
+- **Sprache:** Node.js 18+ (ES Modules), Puppeteer 23
+- **Setup:** `cd scripts/karussell-render && npm install`
+- **Nutzung:**
+  ```
+  node render.js --input="../../outputs/samples/karussell-<slug>.html" --slug=<slug>
+  ```
+- **Defaults:** Input = `outputs/samples/karussell-v3-preview.html`, Output = `outputs/karussells/renders/YYYY-MM-DD-<slug>/`
+- **Output:** `01.png`, `02.png`, …, `11.png` — alle exakt 1080×1350, direkt Instagram-postbar
+- **CSS-Zoom-Trick:** Die HTML-Vorlage ist für 340px-Grid-Anzeige designed. Render-Script injiziert `zoom: 3.1765` auf `.slide`, damit Chromium alles proportional auf 1080×1350 hochskaliert (Fonts, Padding, Positionen).
+- **Image-Loading:** Warte explizit auf alle `<img>`-Elemente (file://-Bilder werden sonst nicht von `networkidle0` erfasst).
+
+**Pipeline-Integration:** Wird von `/karussell` Schritt D nach dem Briefing getriggert.
+
+**Phase 2 (geplant):** Nach dem Rendern werden die 11 PNGs automatisch als editierbares Canva-Design hochgeladen (via `upload-asset-from-url`), damit Patricia Feinjustierungen im Canva-UI machen kann.
+
+### Telegram News-Bot (`scripts/telegram-news-bot/`)
+
+Wöchentlicher News-Digest-Bot, der Artikel aus RSS-Feeds (Onlinemarketing & KI) sammelt, mit Claude zusammenfasst und per Telegram sendet.
+
+- **Sprache:** Python 3.11+
+- **Konfiguration:** `config.py` (Feeds, Schedule), `.env` (API-Keys)
+- **Lokal testen:** `python bot.py --now` (sofortiger Digest)
+- **Daürbetrieb:** `python bot.py` (wöchentlicher Schedule)
+- **Deployment:** Railway/Render via `Procfile`
+- **Setup-Anleitung:** `scripts/telegram-news-bot/README.md`
+
+### Instagram Content-Engine (Automatisiert, v2 seit 2026-04-21)
+
+**Vollautomatisches Content-System für beide Profile** (Mentoring + doTERRA). Weekly Content-Generation + Daily Auto-Posting + Monthly Best-Performer-Repost. Gesteürt durch 3 Scheduled Tasks + 2 Assistenten (`/reels`, `/karussell`).
+
+**Content-Grundlagen** (in `context/`):
+- `brand-voice.md` — Tonalität, Schreibregeln, Kernbotschaft, Beispieltexte
+- `caption-formeln.md` — 5 Caption-Strukturen + CTA-Varianten + Hashtag-Strategie
+- `hook-framework.md` — Hook-Kategorien (Zahlen, Anleitungen, Provokant, Neugier, Identifikation)
+- `reels-framework.md` — Viral-Mechanik 2026, 3-Sek-Regel, Pillars, Posting-Zeiten, Performance-Tracking, 4-Wochen-Repost-Regel
+- `karussell-framework.md` — Karussell-Spezifika, Folien-Struktur, Feed-Aesthetic
+- `manychat-keywords.md` — ManyChat-Keywords pro Pillar (SYSTEM/QUIZ/PRODUKT/THEMA/SICHTBAR/ANLEITUNG/LEAD/ECHT1 für Mentoring, ENERGIE für doTERRA)
+- `notion-content-db.md` — DB-IDs, Pillar-IDs, Pflicht-Felder-Mapping
+- `business-info.md` — Positionierung beider Profile, Produkt-Paket, Zielgruppen
+
+**Notion-Architektur:**
+- **Content-Management-DB** (`2ae7078e-8b7e-811a-ad14-000ba5820c09`) — alle Posts
+- **Content-Strategie-DB** (`2ae7078e-8b7e-81a3-9f5f-000be0dd8dbc`) — Pillars (3 Mentoring + 5 doTERRA + Julia-Trost-Rollen)
+- **Content-Plattformen-DB** (`2ae7078e-8b7e-8103-81e2-000b93a36fc7`) — Instagram Mentoring / Instagram doTERRA / Facebookgruppe / Telegramgruppe
+
+**Canva-Ordnerstruktur:**
+- `Instagram Karussells` (ID: `FAHG78rHy1g`) — Hauptordner
+  - `Posting Queue` (ID: `FAHG7yBZfpE`) — Freigegebene Designs hier ablegen (Titel muss `[OK]` enthalten)
+  - `Gepostete Beiträge` (ID: `FAHG7-zV3Cw`) — Archiv nach dem Posten
+
+**Scheduled Tasks** (Prompt-Files in `reference/`):
+- **Montags-Content-Engine** (`scheduled-task-montags-engine.md`) — Mo 06:00: Trend-Scraping auf 5 Plattformen (IG/TikTok/FB/Reddit/Twitter), 20 spezifische Hooks (10 pro Profil, strikt nach `hook-framework.md`), 10 Karussell- + 10 Reel-Entwürfe, Feed-Aesthetic-Check, Notion-Einträge
+- **Posting-Queue** (`scheduled-task-posting-queue.md`) — Täglich 07:00: Canva-Queue prüfen, Freigabe-Check (`[OK]` im Titel), Caption generieren, via **Blotato API** (`reference/blotato-setup.md`) zur Zielgruppen-Zeit posten, Design verschieben, Notion aktualisieren. **Halb-Automatik-Modus** bis Blotato-Account-IDs in `.env` eingetragen.
+- **Monats-Repost** (`scheduled-task-monats-repost.md`) — 1. Monatstag 08:00: Best-Performer (Saves+Shares+DMs) des letzten Monats erkennen, 4 Reposts pro Monat (2 pro Profil = 1 Reel + 1 Karussell), adaptieren (neuer Hook + neue Caption + neue Cover-Farbe), Notion-Eintrag mit Recycling-Relation
+
+**Manülle Assistenten** (statt Scheduled):
+- `/reels` — Einzel-Reel-Briefing, Hook-Brainstorm, Reel-Doktor, Wochen-Plan, Batch-Dreh
+- `/karussell` — Analog für Karussells
+
+**ManyChat-Integration:**
+Jede Caption enthält ein Keyword (z.B. „Kommentier **ENERGIE**") das eine Automation auslöst → DM mit 0€-Produkt / Minikurs / Padlet-Link.
+
+**Blotato (Instagram Auto-Post):**
+- API-Key in `.env` (gitignored)
+- Setup-Doku: `reference/blotato-setup.md`
+- Flow: Canva-Export → Blotato Media-Upload → POST /v2/posts mit scheduledTime
+- **Offen**: Key rotieren + Account-IDs abrufen (2 Instagram-Profile)
+
+**Posting-Zeiten:**
+- Mentoring: Di/Mi/Fr 07:30 oder 21:00
+- doTERRA: Mo/Mi/Sa 21:30
+
+**Freigabe-Flow:**
+1. Montags-Engine erstellt 20 Entwürfe + Briefings in `outputs/reels/` + `outputs/karussells/` + Notion-Einträge (Status „Idee")
+2. Patricia wählt die besten, erstellt Designs in Canva
+3. Design in „Posting Queue" legen, Titel mit `[OK]` markieren = Freigabe
+4. Daily Task prüft Queue + postet via Blotato zur Zielgruppen-Zeit
+5. Monats-Repost reaktiviert Best-Performer nach 4 Wochen
+
+**Voraussetzungen:** Canva MCP Server (verbunden), Notion MCP (verbunden), Blotato API via curl/HTTP (Key in .env gespeichert, Account-IDs noch abzurufen)
+
+---
+
+## Notizen
+
+- Kontext minimal aber ausreichend halten — kein Bloat
+- Pläne in `plans/` mit datierten Dateinamen für die Historie
+- Outputs nach Typ/Zweck in `outputs/` organisiert
+- Referenzmaterialien in `reference/` zur Wiederverwendung

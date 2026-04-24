@@ -1,0 +1,21 @@
+{
+  "name": "bio-check-bot",
+  "version": "1.0.0",
+  "description": "Bio-Check für Network-Mamas — interaktiver Bot nach Julia-Trost × Patricia-Methodik",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0",
+    "@vercel/blob": "^0.27.0",
+    "pdfkit": "^0.15.0"
+  },
+  "devDependencies": {
+    "vercel": "^52.0.0"
+  }
+}

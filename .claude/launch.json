@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "bio-check-bot",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["-y", "serve", "scripts/bio-check-bot/public", "-l", "4321"],
+      "port": 4321
+    }
+  ]
+}

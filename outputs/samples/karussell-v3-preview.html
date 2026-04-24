@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Karussell v6 — Empathie + About-Me</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @font-face {
+    font-family: 'Silver South Script';
+    src: url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/MumLifeBalance-Logo/Silver%20South%20Script%20(Schrift)/SilverSouthScript.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  :root {
+    --petrol: #12828c;
+    --dunkelblau: #29556d;
+    --creme: #f1ecdd;
+    --orange: #dc822e;
+    --text: #0c1c30;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #dcd7c6;
+    padding: 40px 20px;
+    min-height: 100vh;
+    color: var(--text);
+  }
+  h1 {
+    font-family: 'Philosopher', serif;
+    text-align: center;
+    color: var(--text);
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 6px;
+  }
+  .subtitle {
+    text-align: center;
+    color: var(--dunkelblau);
+    margin-bottom: 24px;
+    font-size: 15px;
+  }
+  .legend {
+    max-width: 1000px;
+    margin: 0 auto 28px;
+    background: var(--creme);
+    padding: 16px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text);
+    border-left: 4px solid var(--orange);
+  }
+
+  .slides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 28px;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  .slide-wrapper { display: flex; flex-direction: column; }
+
+  .slide {
+    aspect-ratio: 4 / 5;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 28px rgba(12, 28, 48, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18% 10% 18% 10%;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .slide::before, .slide::after {
+    content: ''; position: absolute; left: 0; right: 0; height: 12.5%;
+    background: repeating-linear-gradient(45deg,
+      rgba(220, 130, 46, 0.06), rgba(220, 130, 46, 0.06) 8px,
+      rgba(220, 130, 46, 0.12) 8px, rgba(220, 130, 46, 0.12) 16px);
+    border: 1px dashed rgba(220, 130, 46, 0.35);
+    pointer-events: none; z-index: 50;
+  }
+  .slide::before { top: 0; }
+  .slide::after { bottom: 0; }
+  .slide .crop-label {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    font-size: 9px; color: var(--orange); font-weight: 700; letter-spacing: 1px;
+    background: rgba(241, 236, 221, 0.95); padding: 2px 6px; border-radius: 2px;
+    z-index: 51; text-transform: uppercase;
+  }
+  .slide .crop-label-top { top: 4px; }
+  .slide .crop-label-bottom { bottom: 4px; }
+
+  .slide-number {
+    position: absolute; top: 16%; right: 5%;
+    font-size: 11px; opacity: 0.5; font-weight: 600; z-index: 10;
+  }
+  .weiter {
+    position: absolute; bottom: 16%; right: 5%;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
+    z-index: 10; color: var(--orange);
+  }
+  .logo-bl { display: none; }
+
+  .slide-label {
+    text-align: center; color: var(--dunkelblau); opacity: 0.7;
+    font-size: 12px; margin-top: 10px; margin-bottom: 24px; font-weight: 600;
+  }
+
+  /* FOLIE 1 — COVER (Foto durchgehend, leicht transparenter Schleier) */
+  .slide-1 {
+    background-image:
+      linear-gradient(to bottom,
+        rgba(241, 236, 221, 0.35) 0%,
+        rgba(241, 236, 221, 0.35) 50%,
+        rgba(241, 236, 221, 0.75) 100%),
+      url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/100%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-100.jpg');
+    background-size: cover;
+    background-position: center 15%;
+    color: var(--text);
+    justify-content: flex-end;
+  }
+  .slide-1 h2 {
+    font-family: 'Philosopher', serif;
+    font-weight: 700; font-size: 40px;
+    line-height: 1.15; margin-bottom: 14px;
+    letter-spacing: -0.3px;
+    color: var(--text);
+    text-shadow: 0 1px 2px rgba(241, 236, 221, 0.9);
+  }
+  .slide-1 h2 .orange { color: var(--orange); text-shadow: 0 1px 2px rgba(241, 236, 221, 0.9); }
+  .slide-1 .sub {
+    font-size: 14px; font-weight: 700;
+    color: var(--dunkelblau); opacity: 1;
+    text-shadow: 0 1px 2px rgba(241, 236, 221, 0.9);
+  }
+
+  .slide-cream { background: var(--creme); color: var(--text); }
+
+  /* FOLIE 2 */
+  .slide-2 .quote-mark {
+    font-family: 'Philosopher', serif;
+    font-size: 72px; line-height: 0.3;
+    color: var(--orange); opacity: 0.35; margin-bottom: 24px;
+  }
+  .slide-2 .lines p {
+    font-family: 'Philosopher', serif;
+    font-weight: 700; font-size: 28px;
+    margin-bottom: 4px; color: var(--text);
+  }
+  .slide-2 .und-trotzdem {
+    font-family: 'Philosopher', serif;
+    font-style: italic; font-weight: 400;
+    color: var(--dunkelblau); opacity: 0.8;
+    margin-top: 14px; font-size: 20px;
+  }
+  .slide-2 .stille {
+    font-family: 'Silver South Script', cursive;
+    font-size: 68px; color: var(--orange);
+    margin-top: 6px; line-height: 0.9;
+  }
+
+  /* FOLIE 3 */
+  .slide-3 .big-quote {
+    font-family: 'Philosopher', serif;
+    font-size: 80px; color: var(--orange);
+    opacity: 0.18; margin-bottom: 8px; line-height: 0.5;
+  }
+  .slide-3 .main-italic {
+    font-family: 'Philosopher', serif;
+    font-style: italic; font-weight: 700;
+    font-size: 30px; line-height: 1.25;
+    margin-bottom: 24px;
+  }
+  .slide-3 .sub {
+    font-size: 15px; line-height: 1.5; max-width: 90%;
+    opacity: 0.85;
+  }
+  .slide-3 .sub .orange { color: var(--orange); font-weight: 700; }
+
+  /* FEHLER-FOLIEN */
+  .fehler-slide .big-number {
+    font-family: 'Philosopher', serif;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--petrol);
+    opacity: 0.22;
+    z-index: 1;
+    line-height: 1;
+    letter-spacing: -8px;
+  }
+  .fehler-slide .content { position: relative; z-index: 2; text-align: center; }
+  .fehler-slide .zitat {
+    font-family: 'Philosopher', serif;
+    font-style: italic; font-weight: 700;
+    font-size: 24px; line-height: 1.3;
+    margin-bottom: 22px; color: var(--text);
+  }
+  .fehler-slide .zitat .orange { color: var(--orange); font-weight: 700; font-style: normal; }
+  .fehler-slide .divider {
+    width: 44px; height: 2px; background: var(--orange); margin: 0 auto 12px;
+  }
+  .fehler-slide .warum-label {
+    font-family: 'Silver South Script', cursive;
+    font-size: 24px; color: var(--orange);
+    margin-bottom: 10px; line-height: 1;
+  }
+  .fehler-slide .warum-text {
+    font-size: 14px; line-height: 1.55; opacity: 0.9;
+  }
+  .fehler-slide .warum-text strong { color: var(--orange); font-weight: 700; }
+  .fehler-slide .warum-text .highlight {
+    background: var(--orange); color: var(--creme);
+    padding: 1px 6px; font-weight: 600;
+  }
+  .fehler-slide .warum-text .strike { text-decoration: line-through; opacity: 0.55; }
+  .fehler-slide .warum-text .underline-orange {
+    color: var(--orange); font-weight: 700;
+    border-bottom: 2px solid var(--orange); padding-bottom: 1px;
+  }
+
+  /* ============================================== */
+  /* FOLIE 5 — EMPATHIE-BREAK (mit Foto, luftig)     */
+  /* ============================================== */
+  .slide-5 {
+    background: var(--creme); color: var(--text);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide-5 .photo-top {
+    width: 90px; height: 90px; border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 12px rgba(12, 28, 48, 0.12);
+    border: 2.5px solid var(--orange);
+    flex-shrink: 0;
+  }
+  .slide-5 .photo-top img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center 15%;
+    display: block;
+  }
+  .slide-5 .hey {
+    font-family: 'Silver South Script', cursive;
+    font-size: 52px; color: var(--orange);
+    line-height: 0.9;
+    margin-bottom: 18px;
+  }
+  .slide-5 .lead {
+    font-family: 'Philosopher', serif;
+    font-style: italic; font-weight: 700;
+    font-size: 20px; line-height: 1.35;
+    color: var(--text);
+    max-width: 86%;
+    margin-bottom: 16px;
+  }
+  .slide-5 .lead .orange { color: var(--orange); }
+  .slide-5 .reassure {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px; font-weight: 500;
+    line-height: 1.6; color: var(--text); opacity: 0.85;
+    max-width: 80%;
+  }
+
+  /* FOLIE 8 — Nr 4 Cliffhanger */
+  .slide-8 { background: #e6dfc9; }
+  .slide-8 .big-number {
+    font-family: 'Philosopher', serif;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 220px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--orange);
+    opacity: 0.3;
+    z-index: 1;
+    line-height: 1;
+    letter-spacing: -10px;
+  }
+  .slide-8 .content { position: relative; z-index: 2; text-align: center; }
+  .slide-8 .zitat {
+    font-family: 'Philosopher', serif;
+    font-style: italic; font-weight: 700;
+    font-size: 28px; color: var(--text);
+    line-height: 1.25; margin-bottom: 18px;
+  }
+  .slide-8 .zitat .orange {
+    color: var(--orange); font-weight: 700; font-style: normal;
+  }
+  .slide-8 .callout {
+    font-family: 'Silver South Script', cursive;
+    color: var(--orange); font-size: 30px;
+    display: inline-block;
+  }
+
+  /* FOLIE 10 — LÖSUNG (Dunkelblau) */
+  .slide-10 {
+    background: var(--dunkelblau); color: var(--creme);
+    justify-content: center;
+  }
+  .slide-10 .slide-number, .slide-10 .weiter { color: var(--creme); }
+  .slide-10 .italic-intro {
+    font-family: 'Philosopher', serif;
+    font-style: italic; font-weight: 400;
+    font-size: 18px; opacity: 0.85; margin-bottom: 18px;
+  }
+  .slide-10 .hero {
+    font-family: 'Philosopher', serif;
+    font-weight: 700; font-size: 34px;
+    line-height: 1.15; margin-bottom: 22px;
+  }
+  .slide-10 .hero .script {
+    font-family: 'Silver South Script', cursive;
+    color: var(--orange); font-size: 54px;
+    font-style: normal; font-weight: 400;
+    line-height: 0.6; vertical-align: middle;
+  }
+  .slide-10 .sub {
+    font-size: 14px; font-weight: 400;
+    line-height: 1.55; opacity: 0.9;
+  }
+  .slide-10 .sub .orange-underline {
+    color: var(--orange); font-weight: 700;
+    border-bottom: 2px solid var(--orange); padding-bottom: 2px;
+  }
+
+  /* ============================================== */
+  /* FOLIE 11 — ABOUT ME + CTA (kompakt, safe)       */
+  /* ============================================== */
+  .slide-11 {
+    background: var(--creme); color: var(--text);
+    justify-content: center;
+  }
+  .slide-11 .photo-top {
+    width: 105px; height: 105px; border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 14px rgba(12, 28, 48, 0.15);
+    border: 2.5px solid var(--orange);
+    flex-shrink: 0;
+  }
+  .slide-11 .photo-top img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+  }
+  .slide-11 .name-line {
+    font-family: 'Philosopher', serif;
+    font-weight: 700; font-size: 22px;
+    color: var(--text); margin-bottom: 8px;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+  .slide-11 .name-line .script {
+    font-family: 'Silver South Script', cursive;
+    font-weight: 400; font-size: 30px;
+    color: var(--orange);
+    vertical-align: baseline;
+    line-height: 0.8;
+    margin-right: 2px;
+  }
+  .slide-11 .name-line .name { color: var(--orange); }
+  .slide-11 .bio-tags {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px; font-weight: 600;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--dunkelblau); opacity: 0.75;
+    margin-bottom: 12px;
+  }
+  .slide-11 .bio-tags span { margin: 0 3px; color: var(--orange); }
+  .slide-11 .pitch {
+    font-family: 'Philosopher', serif;
+    font-style: italic; font-weight: 400;
+    font-size: 15px; line-height: 1.35;
+    color: var(--text); max-width: 88%;
+    margin-bottom: 14px;
+  }
+  .slide-11 .keyword-box {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: var(--orange); color: var(--creme);
+    padding: 8px 18px; border-radius: 4px;
+    font-weight: 700; font-size: 16px;
+    display: inline-block;
+    letter-spacing: 1px;
+  }
+  .slide-11 .keyword-box .kw {
+    font-family: 'Silver South Script', cursive;
+    font-weight: 400; font-size: 22px;
+    vertical-align: middle; line-height: 0.6;
+    letter-spacing: 0; margin-right: 4px;
+  }
+
+  .footer-box {
+    max-width: 1000px; margin: 40px auto 0;
+    background: var(--creme); padding: 20px 24px;
+    border-radius: 8px; font-size: 13px;
+    line-height: 1.7; color: var(--text);
+  }
+  .footer-box h3 {
+    font-family: 'Philosopher', serif; font-weight: 700;
+    font-size: 22px; margin-bottom: 10px;
+  }
+  .footer-box ul { margin-left: 18px; margin-top: 8px; }
+</style>
+</head>
+<body>
+
+<h1>Karussell v6 — Empathie-Break + About-Me</h1>
+<p class="subtitle">Folie 5 wärmer · Folie 11 als persönlicher Abschluss statt Save-CTA-Wirrwarr</p>
+
+<div class="legend">
+  <strong>Änderungen in v6:</strong>
+  <br>• <strong>Folie 5 (Empathie-Break):</strong> „Hey, wenn du dich ertappt fühlst — keine Sorge. Ich hab das selbst so gemacht..." Neuer warmer Zwischenstopp, holt Zielgruppe ab vor den restlichen Fehlern.
+  <br>• <strong>Folie 11 (About-Me):</strong> Ersetzt die Speicher-Icon-CTA-Folie. Runder Foto-Cutout oben + „Hi, ich bin Patricia" + kurze Bio + Pitch + Keyword-Box. Persönlich statt gequetscht.
+  <br>• <strong>Save-Hinweis entfernt:</strong> Logo-Favicon unten links auf allen Folien dient eh als Wiedererkennung — kein extra Save-Aufruf nötig.
+</div>
+
+<div class="slides-grid">
+
+  <!-- FOLIE 1 -->
+  <div class="slide-wrapper">
+    <div class="slide slide-1">
+      <span class="crop-label crop-label-top">⚠ CROP</span>
+      <span class="crop-label crop-label-bottom">⚠ CROP</span>
+      <span class="slide-number">1/11</span>
+      <h2>
+        5 Sätze,<br>
+        nach denen deine<br>
+        Freundinnen aufhören<br>
+        zu <span class="orange">kaufen</span>.
+      </h2>
+      <p class="sub">Nr. 4 sagst du täglich.</p>
+      <span class="weiter">Weiter →</span>
+      <span class="logo-bl"><img src="file:///C:/Users/pnulm/Desktop/Mein%20Business/context/MumLifeBalance-Logo/MumLifeBalance_Favicon.png" alt=""></span>
+    </div>
+    <div class="slide-label">Folie 1 — Cover</div>
+  </div>
+
+  <!-- FOLIE 2 -->
+  <div class="slide-wrapper">
+    <div class="slide slide-cream slide-2">
+      <span class="crop-label crop-label-top">⚠ CROP</span>
+      <span class="crop-label crop-label-bottom">⚠ CROP</span>
+      <span class="slide-number">2/11</span>
+      <div class="quote-mark">❝</div>
+      <div class="lines">
+        <p>Du postest.</p>
+        <p>Du schreibst.</p>
+        <p>Du fragst.</p>
+        <p class="und-trotzdem">Und trotzdem:</p>
+      </div>
+      <div class="stille">Stille.</div>
+      <span class="weiter">Weiter →</span>
+      <span class="logo-bl"><img src="file:///C:/Users/pnulm/Desktop/Mein%20Business/context/MumLifeBalance-Logo/MumLifeBalance_Favicon.png" alt=""></span>
+    </div>
+    <div class="slide-label">Folie 2 — Story-Einstieg</div>
+  </div>
+
+  <!-- FOLIE 3 -->
+  <div class="slide-wrapper">
+    <div class="slide slide-cream slide-3">
+      <span class="crop-label crop-label-top">⚠ CROP</span>
+      <span class="crop-label crop-label-bottom">⚠ CROP</span>
+      <span class="slide-number">3/11</span>
+      <div class="big-quote">❝</div>
+      <div class="main-italic">
+        Das liegt an einem<br>
+        von 5 Sätzen.
+      </div>
+      <div class="sub">
+        Du sagst sie täglich —<br>
+        ohne zu merken, dass sie <span class="orange">killen</span>.
+      </div>
+      <span class="weiter">Weiter →</span>
+      <span class="logo-bl"><img src="file:///C:/Users/pnulm/Desktop/Mein%20Business/context/MumLifeBalance-Logo/MumLifeBalance_Favicon.png" alt=""></span>
+    </div>
+    <div class="slide-label">Folie 3 — Problem-Frame</div>
+  </div>
+
+  <!-- FOLIE 4 — NR 1 -->
+  <div class="slide-wrapper">
+    <div class="slide slide-cream fehler-slide">
+      <span class="crop-label crop-label-top">⚠ CROP</span>
+      <span class="crop-label crop-label-bottom">⚠ CROP</span>
+      <span class="slide-number">4/11</span>
+      <div class="big-number">1</div>
+      <div class="content">
+        <div class="zitat">
+          „Ich hab da was Tolles,<br>
+          das musst du dir<br>
+          <span class="orange">unbedingt</span> ansehen."
+        </div>
+        <div class="divider"></div>
+        <div class="warum-label">warum das killt</div>
+        <div class="warum-text">
+          „Tolles" ist leer.<br>
+          „Unbedingt" ist Druck.<br>
+          Sie liest: VERKAUF.
+        </div>
+      </div>
+      <span class="weiter">Weiter →</span>
+      <span class="logo-bl"><img src="file:///C:/Users/pnulm/Desktop/Mein%20Business/context/MumLifeBalance-Logo/MumLifeBalance_Favicon.png" alt=""></span>
+    </div>
+    <div class="slide-label">Folie 4 — Satz Nr. 1</div>
+  </div>
+
+  <!-- FOLIE 5 — EMPATHIE-BREAK (mit Foto) -->
+  <div class="slide-wrapper">
+    <div class="slide slide-5">
+      <span class="crop-label crop-label-top">⚠ CROP</span>
+      <span class="crop-label crop-label-bottom">⚠ CROP</span>
+      <span class="slide-number">5/11</span>
+      <div class="photo-top">
+        <img src="file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/150%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-150.jpg" alt="Patricia">
+      </div>
+      <div class="hey">Hey, erwischt?</div>
+      <div class="lead">
+        Keine Sorge — ich hab das<br>
+        selbst <span class="orange">genau so</span> gemacht.
+      </div>
+      <div class="reassure">
+        Aber ich hab gelernt, wie's anders geht.<br>
+        Und das zeig ich dir jetzt.
+      </div>
+      <span class="weiter">Weiter →</span>
+    </div>
+    <div class="slide-label">Folie 5 — Empathie-Break (mit Patricia-Foto)</div>
+  </div>
+
+  <!-- FOLIE 6 — NR 2 -->
+  <div class="slide-wrapper">
+    <div class="slide slide-cream fehler-slide">
+      <span class="crop-label crop-label-top">⚠ CROP</span>
+      <span class="crop-label crop-label-bottom">⚠ CROP</span>
+      <span class="slide-number">6/11</span>
+      <div class="big-number">2</div>
+      <div class="content">
+        <div class="zitat">
+          „So vielen hat das<br>
+          schon geholfen,<br>
+          probier es einfach mal."
+        </div>
+        <div class="divider"></div>
+        <div class="warum-label">warum das killt</div>
+        <div class="warum-text">
+          „So vielen" = unspezifisch.<br>
+          „Einfach mal" = bagatellisieren.<br>
+          Sie fühlt sich wie <strong>Nummer 74</strong>.
+        </div>
+      </div>
+      <span class="weiter">Weiter →</span>
+      <span class="logo-bl"><img src="file:///C:/Users/pnulm/Desktop/Mein%20Business/context/MumLifeBalance-Logo/MumLifeBalance_Favicon.png" alt=""></span>
+    </div>
+    <div class="slide-label">Folie 6 — Satz Nr. 2</div>
+  </div>
+
+  <!-- FOLIE 7 — NR 3 -->
+  <div class="slide-wrapper">
+    <div class="slide slide-cream fehler-slide">
+      <span class="crop-label crop-label-top">⚠ CROP</span>
+      <span class="crop-label crop-label-bottom">⚠ CROP</span>
+      <span class="slide-number">7/11</span>
+      <div class="big-number">3</div>
+      <div class="content">
+        <div class="zitat">
+          „Kennst du noch jemanden,<br>
+          der das brauchen könnte?"
+        </div>
+        <div class="divider"></div>
+        <div class="warum-label">warum das killt</div>
+        <div class="warum-text">
+          Du machst sie zur<br>
+          <span class="highlight">Vertriebsleiterin</span>. Gratis.<br>
+          Ohne sie zu fragen, ob sie das will.
+        </div>
+      </div>
+      <span class="weiter">Weiter →</span>
+      <span class="logo-bl"><img src="file:///C:/Users/pnulm/Desktop/Mein%20Business/context/MumLifeBalance-Logo/MumLifeBalance_Favicon.png" alt=""></span>
+    </div>
+    <div class="slide-label">Folie 7 — Satz Nr. 3</div>
+  </div>
+
+  <!-- FOLIE 8 — NR 4 Cliffhanger -->
+  <div class="slide-wrapper">
+    <div class="slide slide-8">
+      <span class="crop-label crop-label-top">⚠ CROP</span>
+      <span class="crop-label crop-label-bottom">⚠ CROP</span>
+      <span class="slide-number">8/11</span>
+      <div class="big-number">4</div>
+      <div class="content">
+        <div class="zitat">
+          „Wie geht's dir?<br>
+          <span class="orange">Ach übrigens...</span>"
+        </div>
+        <div class="callout">Sie hat das 12× erlebt.</div>
+      </div>
+      <span class="weiter">Weiter →</span>
+      <span class="logo-bl"><img src="file:///C:/Users/pnulm/Desktop/Mein%20Business/context/MumLifeBalance-Logo/MumLifeBalance_Favicon.png" alt=""></span>
+    </div>
+    <div class="slide-label">Folie 8 — Nr. 4 Cliffhanger</div>
+  </div>
+
+  <!-- FOLIE 9 — NR 5 -->
+  <div class="slide-wrapper">
+    <div class="slide slide-cream fehler-slide">
+      <span class="crop-label crop-label-top">⚠ CROP</span>
+      <span class="crop-label crop-label-bottom">⚠ CROP</span>
+      <span class="slide-number">9/11</span>
+      <div class="big-number">5</div>
+      <div class="content">
+        <div class="zitat">
+          „Ich bin grad in diesem<br>
+          <span class="orange">Programm</span> und..."
+        </div>
+        <div class="divider"></div>
+        <div class="warum-label">warum das killt</div>
+        <div class="warum-text">
+          Sie interessiert sich nicht<br>
+          für dein <span class="strike">Programm</span>.<br>
+          Sie interessiert sich für<br>
+          ihre <span class="underline-orange">Probleme</span>.
+        </div>
+      </div>
+      <span class="weiter">Weiter →</span>
+      <span class="logo-bl"><img src="file:///C:/Users/pnulm/Desktop/Mein%20Business/context/MumLifeBalance-Logo/MumLifeBalance_Favicon.png" alt=""></span>
+    </div>
+    <div class="slide-label">Folie 9 — Satz Nr. 5</div>
+  </div>
+
+  <!-- FOLIE 10 — LÖSUNG -->
+  <div class="slide-wrapper">
+    <div class="slide slide-10">
+      <span class="crop-label crop-label-top">⚠ CROP</span>
+      <span class="crop-label crop-label-bottom">⚠ CROP</span>
+      <span class="slide-number">10/11</span>
+      <div class="italic-intro">Statt zu fragen, ob sie kaufen will —</div>
+      <div class="hero">
+        Zeig ihr,<br>
+        dass du <span class="script">ihr</span><br>
+        Problem verstehst.
+      </div>
+      <div class="sub">
+        Dann verkauft <span class="orange-underline">dein Thema</span>.<br>
+        Nicht dein Pitch.
+      </div>
+      <span class="weiter">Weiter →</span>
+      <span class="logo-bl"><img src="file:///C:/Users/pnulm/Desktop/Mein%20Business/context/MumLifeBalance-Logo/MumLifeBalance_Favicon.png" alt=""></span>
+    </div>
+    <div class="slide-label">Folie 10 — Die Lösung</div>
+  </div>
+
+  <!-- FOLIE 11 — ABOUT ME + CTA (NEU) -->
+  <div class="slide-wrapper">
+    <div class="slide slide-11">
+      <span class="crop-label crop-label-top">⚠ CROP</span>
+      <span class="crop-label crop-label-bottom">⚠ CROP</span>
+      <span class="slide-number">11/11</span>
+      <div class="photo-top">
+        <img src="file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/250%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-250.jpg" alt="Patricia">
+      </div>
+      <div class="name-line">
+        <span class="script">Hey,</span> ich bin <span class="name">Patricia.</span>
+      </div>
+      <div class="bio-tags">4-fach Mama <span>·</span> Networkerin seit 2018 <span>·</span> Mentorin</div>
+      <div class="pitch">
+        Ich zeig dir, wie du sichtbar wirst —<br>
+        ohne Freundinnen zu nerven.
+      </div>
+      <div class="keyword-box">
+        <span class="kw">Kommentier</span>SICHTBAR
+      </div>
+      <span class="logo-bl"><img src="file:///C:/Users/pnulm/Desktop/Mein%20Business/context/MumLifeBalance-Logo/MumLifeBalance_Favicon.png" alt=""></span>
+    </div>
+    <div class="slide-label">Folie 11 — About-Me + CTA (NEU)</div>
+  </div>
+
+</div>
+
+<div class="footer-box">
+  <h3>Ästhetik-Check-Durchgang (meine Memory-Regel angewendet)</h3>
+  <ul>
+    <li><strong>Crop-Zone:</strong> Alle Zahlen + Zitate + Fotos bleiben im sicheren 75%-Bereich. Padding-Struktur (18% oben + unten) garantiert das.</li>
+    <li><strong>Überlappung:</strong> Keine Zitat-Box über Zahl mehr (Folie 8 entschärft). Zahlen-Outline ist dezent, Text liegt klar davor.</li>
+    <li><strong>Redundanz:</strong> „Speicher dir das" + Icons + CTA → ersetzt durch About-Me mit einem klaren Keyword-CTA.</li>
+    <li><strong>Weissraum:</strong> Folie 11 atmet dank Foto-Kreis oben + 3 klar getrennten Textblöcken.</li>
+    <li><strong>Ästhetik:</strong> Warmer Empathie-Moment in der Mitte (Folie 5) + persönlicher Abschluss mit Gesicht (Folie 11) geben dem Karussell Herz.</li>
+  </ul>
+  <p style="margin-top:12px;">Falls das Foto auf Folie 11 nicht passt — in <code>context/Shootingbilder/</code> liegen 1000+ Shots. Sag mir welcher wärmer/passender ist, ich tausche aus (aktuell: Shot 250).</p>
+</div>
+
+</body>
+</html>

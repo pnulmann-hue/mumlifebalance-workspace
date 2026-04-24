@@ -1,0 +1,153 @@
+Okay, schauen wir uns mal noch an, wie meine Checkouts-Seiten aufgebaut sind und ja, ich
+nutze keine Landing-Pages mehr, keine Sales-Pages mehr, ich nutze einfach nur die eine Checkouts-Seite
+bei ThriveCard und mache damit echt gute Erfahrungen und spare mir vor allem extrem
+viel Zeit.
+Ich habe früher immer mit Landing-Pages und Sales-Pages gearbeitet, mittlerweile auch
+Werbeanzeigen, schalten wir auf diese eine Seite, die du hier siehst und wann immer ich
+die irgendwie Updates oder ich die neu mache, was alle paar Monate vorkommt, wenn ich was
+neues ausprobiere, dann bekommst du dieses Update natürlich auch hier mit.
+Wir starten mit der Überschrift und das ist nicht der Titel des Kurses, also das ist
+wirklich das Ziel, was deine Community erreichen möchte.
+Bei mir ist zum Beispiel der Steiler deinem eigene Mini-Kurs und verkaufe ihn täglich.
+Dann kommt ein Mockup, ich gebe euch Vorlagen für Mockups auf jeden Fall hier unten mit
+rein, da könnt ihr draufklicken und könnt die einfach nur mit euren Bildern, Emojis,
+Texten und so weiter befüllen und dann kommt direkt schon der Kauf-Button, das heißt wenn
+ich hier drauf drücke, geht es direkt runter zu den Kontaktinformationen, wo man dann direkt
+buchen kann.
+Was du hier siehst, ich habe nur einmal den Namen platziert, die Mini-Kurs-Strategie und
+zwar innerhalb des Mockups.
+Du könntest den natürlich auch hier oben noch irgendwo platzieren, wäre aber eben
+redundant.
+Und ich sehe das immer wieder bei Checkout-Seiten, dass dreimal oben der Name kommt, sonst nichts
+anderes erwähnt wird und man denkt ja danke, dass du dreimal den Namen erwähnt hast, weil
+den kenne ich eigentlich schon, weil ich weiß immer noch nicht worum es geht.
+Also achte da auf jeden Fall drauf, dass du nicht den Namen doppelt oder dreifach platzierst,
+einmal reicht, plus eben diese Unterüberschrift, dieser eine Sass, der zeigt worum es geht.
+Und ich schaue mal, ob ich dazu noch einen Prompt entwickeln kann für ChatGPT und werde
+ihn dir dann auch einfügen, falls ich was Gutes habe, ansonsten überleg dir wirklich
+einfach das Ziel deiner Kunden, also beispielsweise, so schlägt dein Baby innerhalb von zehn
+Minuten Einschlafbegleitung die ganze Nacht durch oder so verlierst du 50 Kilo in 50
+Tagen.
+Es ist egal, ob Mini-Kurs oder großer Kurs, es ist immer die gleiche Struktur.
+Dann haben wir Social Proof, also ein Testimonial, ein Feedback, entweder von dir, basierend
+auf deiner Erfahrung oder von deinen Kunden.
+Hier habe ich jetzt zum Beispiel meine eigene Expertise mit einfließen lassen, mein eigenes
+Feedback quasi, mit einem 15 Euro Produkt habe ich 2024, aber 30.000 Euro Umsatz gemerkt.
+Dann habe ich noch einen Visual hinzugepackt, damit man das Ganze nochmal ein bisschen
+greifbarer hat und nochmal den Kaufbutton.
+Hier ist es jetzt wichtig, dass du eben über, wie gesagt, deine Erfolge oder die Erfolge
+deiner Kunden sprichst und wenn du noch keine Kundenerfolge hast, wie gesagt, dann entweder
+die Leute fragen, ob sie den Testimonial geben gegen einen kostenlosen Kurs oder eben
+einfach basierend auf deinen Erfahrungswerten.
+Ich meine, du musst ja schon irgendwo Experte in deinem Thema sein, das heißt du wirst
+wahrscheinlich deine oder die Learnings in deinem Thema, die du jetzt auch deiner Zielgruppe
+weitergibst, schon bei dir selbst angewandt haben.
+Das heißt du bist Ernährungsberater, hast 30 Kilo abgenommen, paust du ein Bild, wo
+du keine langen 30 Kilo mehr hast oder ein Bild von der Waage, die 30 Kilo mehr zeigt
+oder sprich darüber, wie du es geschafft hast, innerhalb eines Jahres deine toxische
+Beziehung hinterlässt, einen Freund zu finden und dir sogar schwanger zu sein.
+Ja, das muss ja immer nicht nur im dieses Finanzielle oder um die Zahlen gehen, sondern eben auch
+wie hat sich der Zustand verändert von früher auf heute.
+Danach kannst du gerne noch weitere Testimonials einfügen.
+Ich habe jetzt hier noch zwei Testimonials von Kunden von mir und habe immer dazu geschrieben,
+dass es eben auch andere Themen als bei mir ist, weil meine Kunden ja immer sagen, das
+funktioniert bei meinem Thema nicht und es funktioniert.
+Das sieht man eben hier.
+Du kannst hier zwei Testimonials, ein Testimonial oder gar keine Testimonial einfügen.
+Am Anfang hatte ich eins, dann hatte ich keins, weil ich keine Testimonials hatte.
+Jetzt habe ich zwei, einfach weil ich so viele Feedbacks schon habe, dass es sich einfach lohnt.
+Okay, dann habe ich aufgeschrieben, was es nicht braucht, um diesen Kurs erfolgreich
+zu durchlaufen und damit erfolgreich auch zu verkaufen.
+Das heißt, du kannst hier eben auch aufschreiben, um bis zum Sommer noch zwei Kilo abzunehmen,
+braucht es weniger als du denkst und kannst dadurch, warum machen wir das,
+Glaubenssätze aus dem Weg schaffen.
+Einfach wieder Gedanken, die vielleicht trotz der Tatsache, dass wir oben so viel mit Testimonials
+arbeiten kommen, aber bei mir funktioniert das nicht.
+Nee, das ist halt mein Genen.
+So was ja, also du lösst eigentlich hier mit Glaubenssätze oder einwände deiner Community auf.
+Auch bei dem Thema, weiß ich nicht, Kindererziehung, so, du musst nicht,
+ich weiß es nicht, ich kenne mich ja nicht so aus, aber es gibt ja Menschen, die zum Beispiel sagen,
+man darf nicht mehr nein sagen und darf gar keine Grenzen mehr aufweisen.
+Wenn du sagst, das ist Bullshit, bei dir darf man das, dann schreib das eben da rein.
+Also hier kommen eben Sachen rein zu dir und deinem Unternehmen passen, die auch wieder
+so ein bisschen zeigen, wie arbeitest du?
+Weil bei mir zum Beispiel schreibe ich hier jetzt auch, du brauchst keine Eins angebote,
+du brauchst keine Seltscalls führen.
+Könnten A-Glaubenssätze von den Kunden sein, dass sie das machen müssen?
+Zeige ich, B bei mir nicht, mit meiner Strategie ist das überhaupt nicht der Fall, brauchst
+du alles nicht.
+Und wieder den Buchungslink.
+Dann kann es noch einfügen, wie quasi das Leben aussehen könnte, wenn man mit dir gearbeitet
+hat, wenn man den Kurs gebucht hat.
+Also die erzählst in einem Monat mit deinen Minikursen einen Umsatz von mehr als 15.000
+Euro, jeden Tag wird gebucht, blablabla.
+Also hier einfach drei Dinge auflisten, die nach dem Kurs für deine Kunden möglich sind
+und hier am besten ja schon eben beschreiben, also tiefer reingehen und nicht nur sagen,
+du nimmst zwei Kilo ab, ja cool, aber vielleicht sowas wie, du gehst endlich nochmal mit dem
+Kini ins Freibad und fühlst dich selbstbewusst oder du stehst vom Spiegel und findest dich
+einfach nur geil.
+Also beschreibe diese Situation, die dann passiert eher, als dass du sie einfach nur
+auflöstest in Form von so Aufzählungszeichen.
+Egal ob zwei, drei, vier Stück, ich mache immer drei, das Klassische, wenn dir mehr einfällt,
+kannst du das machen.
+Dann habe ich aufgeschrieben, wie meine Strategie funktioniert, das kannst du eben auch für
+dich implementieren, Minikurser stellen, verkaufen, Wooster großer Kurs und dann eben die Auflösung
+der Tools.
+Hier kannst du natürlich auch Kapitel davor schreiben oder Modul, ganz wie du magst,
+einfach, dass man mal sieht, was ist eigentlich alles in dem Kurs drin.
+Und da darfst du jetzt auflisten.
+Hier nochmal der Buchungslink, dann die Bony, die ich eingefügt habe.
+Das heißt, kannst du so machen, so wirkt es halt ein bisschen größer, ein bisschen mehr noch.
+Du könntest es dir richtig auch direkt dazu schreiben, aber ich würde es einfach so machen,
+dann hat man nochmal ein bisschen was, wo man die Aufmerksamkeit erkunden.
+Ja, wie heißt es?
+Einfach, dass die Aufmerksamkeit darauf lenkt, wie viel da eigentlich noch drin ist, indem du
+einfach hier auch noch den Wert hinschreibst, weil so denkt man natürlich, hm, das kostet
+eigentlich 200 Euro, ich bekomme es geschenk, nice.
+Hier nochmal ein Testimonial, Testimonial könnt ihr überall immer zwischendurch platzieren,
+wo es halt eben passt und dann gebe ich noch einen Einblick in den Kurs, das würde ich
+dir auch auf jeden Fall empfehlen, du brauchst dich nichtmals zu zeigen, du kannst einfach
+nur ein Video drehen, wo du in den Kurs quasi reingehst und einfach zeigst, wie sie das
+in dem Kurs aus.
+Noch mal Testimonial, Testimonial, Testimonial und dann kommt das Buchungsformular, wo man
+eben Kontakt, Information und Rechnungsadresse eingebt und die raten Zahlungsoptionen für
+sich ist, ich finde, Zahlungsoptionen entscheidend.
+So, was ist dir jetzt aufgefallen an dieser gesamten Checkout-Seite?
+Wir sind jetzt einfach mal das Layout durchgegangen, du guckst ja die Vorlage, kannst du die mit
+einem Klick implementieren, aber dir ist aufgefallen, dass ich mich sehr, sehr kurz halte in all
+meinen Abschnitten, es ist immer nur Einsatz, hier Einsatz, hier Einsatz, hier Einsatz, okay,
+das sind Aufzählungen, Einsatz, Einsatz, Einsatz, Einsatz, Einsatz, Einsatz und so weiter, ja,
+das zieht sich so durch, es ist immer nur wirklich jeweils Einsatz.
+Und früher habe ich immer ganze Storytelling, Passagen geschrieben und wirklich, das war
+wie so eine Wall of Text und Fleece Text, das brauchst du nicht und das musst du auch nicht
+und das solltest du auch nicht mehr machen.
+Das ist dann eher wie so ein Blog-Eintrag, aber wir wollen ja wirklich, dass es eine
+Checkout-Seite ist, also in der Kürze liegt die Würze, labern nicht so viel um den heißen
+Preirom, sondern kommen halt einfach direkt auf den Punkt, weniger ist mehr.
+Was hast du außerdem gesehen?
+weißer Hintergrund, blau, rosa, blau, weiß, rosa, weiß, rosa, blau, blau, blau, blau,
+kelb, also jeder einzelne Abschnitt hat eine andere Farbe, auch wenn es blau ist, dann
+sind es nicht unterschiedliche Blauenaußen.
+Mach das, wenn du einfach nur eine weiße Seite als Hintergrund hast und das durchgängig,
+auch dann wirkt es sehr, sehr langweilig.
+Schau immer, dass deine Checkout-Seite auch so ein bisschen, ja, was fürs Auge ist.
+Man sagt immer, das Auge ist mit, das Auge kauft auch mit, das heißt gestaltet das
+einfach schön, farbenfroh.
+Wenn du jetzt sagst, deine Brandingfarben sind eben beige und braun, auch dann nutzt
+einfach eine Farbe, ich weiß nicht, nenn orange oder was würde dazu passen, gelb,
+oben noch mal so ein paar Highlights zu setzen, zum Beispiel zumindest eben diesen Buchungsbutton
+damit zu hinterlegen, also pro Abschnitt eine Farbe immer, wenn du was anderes sprichst,
+eine Farbe.
+Okay, also wie gesagt, neben dieser Struktur, neben diesen ganzen Zahlen, Daten, Fakten,
+die da rein gehören, das ist super, super wichtig, dass deine Checkout-Seite nicht langweilig
+auszieht, dass man da Bock drauf hat, dass sie vielleicht farbenfroh gestaltet ist,
+dass man auf jeden Fall sieht, oder dass es auf jeden Fall Spaß macht, da zu kaufen.
+Ich sehe so viele Landing-Pages, wo ich mir denke, schnarscht, ich möchte am liebsten direkt
+wegrennen, habe gar keinen Bock mehr, die durchzulesen, wer soll denn dann bei dir buchen?
+Also du bekommst die Vorlage, du kannst die implementieren, wenn du nicht Thrivecard nutzt
+und auch nicht nutzen möchtest, dann geh die Vorlage einfach von oben bis unten durch,
+die Mockups bekommst du wie gesagt und das sind einfach Bilder, die ich hochgeladen habe
+zu den Texten, die hier links stehen.
+Okay, viel Spaß beim Erstellen.
+In der Kürze liegt die Würze, denkt dran, macht es nicht zu kompliziert und legt am
+besten direkt los, weil dann kannst du in einer Stunde spätestens deine Checkout-Seite haben.

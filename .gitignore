@@ -1,0 +1,190 @@
+# ============================================================
+# Secrets — NIEMALS committen!
+# ============================================================
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
+**/.env.prod.check
+**/.env.ac.check
+# Falls doch mal ein Secret-File reinrutscht, hier explizit ergänzen
+
+# ============================================================
+# Claude Code Local Settings (User-spezifisch)
+# ============================================================
+.claude/settings.local.json
+
+# ============================================================
+# Node / npm
+# ============================================================
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+**/__pycache__/
+*.pyc
+venv/
+.venv/
+
+# ============================================================
+# Deploy-Artefakte
+# ============================================================
+.vercel/
+**/.vercel/
+.netlify/
+**/.netlify/
+.next/
+**/.next/
+dist/
+build/
+.cache/
+
+# ============================================================
+# Media — zu gross für Git (1 GB Repo-Limit!)
+# ============================================================
+# Patricia's Shootingbilder (~500 MB)
+context/Shootingbilder/*.jpg
+context/Shootingbilder/*.jpeg
+context/Shootingbilder/*.png
+
+# Kurs-Videos + Kurs-Images (Gigabytes)
+context/Kurse/**/*.mp4
+context/Kurse/**/*.m4v
+context/Kurse/**/*.mov
+context/Kurse/**/*.webm
+context/Kurse/**/*.avi
+context/Kurse/**/*.mkv
+context/Kurse/**/*.m4a
+context/Kurse/**/*.mp3
+context/Kurse/**/*.wav
+context/Kurse/**/*.zip
+context/Kurse/**/*.png
+context/Kurse/**/*.jpg
+context/Kurse/**/*.jpeg
+context/Kurse/**/*.JPG
+context/Kurse/**/*.PNG
+
+# Julia-Trost-PDFs zu gross (40+ PDFs × mehrere MB)
+# Content in Transkripten als .txt ist ausreichend
+reference/julia-trost/*.pdf
+reference/julia-trost/*.xlsx
+reference/julia-trost/*.jpeg
+reference/julia-trost/*.docx
+
+# Transkript-Duplikate (VTT/SRT/JSON/TSV sind Doppelungen von .txt)
+reference/julia-trost/Transkripte Videocalls/*.vtt
+reference/julia-trost/Transkripte Videocalls/*.srt
+reference/julia-trost/Transkripte Videocalls/*.tsv
+reference/julia-trost/Transkripte Videocalls/*.json
+
+# Private Non-Business-Ordner
+kochwissen/
+rezepte/
+result.txt
+
+# Logo-Files (grosse Varianten)
+context/MumLifeBalance-Logo/**/*.otf
+context/Farbcodes.png
+context/Nutzung Schriftarten.png
+
+# ============================================================
+# GLOBALE MEDIA-FILTER — alles was gross ist, raus
+# ============================================================
+
+# Alle Videos/Audio global (egal wo)
+**/*.mp4
+**/*.m4v
+**/*.mov
+**/*.webm
+**/*.avi
+**/*.mkv
+**/*.m4a
+**/*.mp3
+**/*.wav
+**/*.aac
+**/*.ogg
+**/*.flv
+**/*.wmv
+
+# Grosse persoenliche Ordner (nicht business-relevant fuer Mobile)
+context/doTERRA/
+context/Instavideos/
+context/Kurse/
+
+# Komplette Shootingbilder-Ordner (ausser patricia-hero fuer Bot-Deploy in scripts/)
+context/Shootingbilder/
+
+# Logo-Varianten
+context/MumLifeBalance-Logo/**/*.png
+context/MumLifeBalance-Logo/**/*.jpg
+context/MumLifeBalance-Logo/**/*.svg
+
+# Screenshots im Root
+Screenshot*.png
+Screenshot*.jpg
+*.png
+*.jpg
+*.jpeg
+
+# Ausnahmen: diese .png/.jpg-Files bleiben drin (wichtige Brand-Assets in scripts/)
+!scripts/bio-check-bot/public/images/patricia-hero.jpg
+
+# ============================================================
+# REFERENZ-PDFs BLEIBEN LOKAL
+# Grosse Fremd-Kurs-PDFs + EPUBs raus (zu gross fuer Git)
+# Text-Transkripte in .txt reichen für Mobile-Claude
+# ============================================================
+**/*.pdf
+**/*.epub
+**/*.docx
+**/*.xlsx
+**/*.xls
+
+# Ausnahme: Kleine Logos/Favicons in scripts/ dürfen rein
+!scripts/**/*.png
+
+# Filesystem-spezifisches
+.claude/projects/**/memory/*.snapshot.md
+
+# Lokale Video-Downloads
+reference/julia-trost/Werbeanzeigen-Videos/
+reference/**/*.mp4
+reference/**/*.mov
+
+# Rendered Output-Files die neu generierbar sind
+outputs/karussells/renders/
+outputs/reels/renders/
+
+# Cookie-Files (können auch mal sensitiv sein)
+**/cookies.txt
+
+# ============================================================
+# OS
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# IDE
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================================
+# Temp / Logs
+# ============================================================
+*.log
+tmp/
+temp/

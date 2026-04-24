@@ -1,0 +1,10 @@
+{
+  "name": "blotato-post",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Schedulet Instagram-Posts via Blotato API — liest Config-JSON + .env, baut POST /v2/posts.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  }
+}

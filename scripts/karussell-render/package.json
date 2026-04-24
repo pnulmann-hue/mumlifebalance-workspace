@@ -1,0 +1,17 @@
+{
+  "name": "karussell-render",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rendert die Karussell-HTML-Preview zu 11 Instagram-tauglichen PNG-Folien (1080x1350).",
+  "type": "module",
+  "scripts": {
+    "render": "node render.js",
+    "render:preview": "node render.js --input=\"../../outputs/samples/karussell-v3-preview.html\""
+  },
+  "dependencies": {
+    "puppeteer": "^23.11.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

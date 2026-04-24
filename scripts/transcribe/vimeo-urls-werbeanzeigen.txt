@@ -1,0 +1,48 @@
+# Julia Trost - Werbeanzeigen-Kurs (34 Videos)
+# Extrahiert via Chrome-MCP am 2026-04-24
+
+# KAPITEL 1: EINLEITUNG UND THEORIE
+https://vimeo.com/1121159787  # Einleitung
+
+# KAPITEL 2: WERBEKONTO, DOMAIN UND PIXEL
+https://vimeo.com/1116740911  # 2.1 Die Meta Business Suite
+https://vimeo.com/1116741146  # 2.2 Konto Einstellungen
+https://vimeo.com/1116742789  # 2.3 Domain verifizieren
+https://vimeo.com/1116743506  # 2.4 Meta Pixel einrichten
+https://vimeo.com/1116744783  # 2.5 Selbstdefinierte Conversions
+https://vimeo.com/1116744936  # 2.6 Event Setup Tool
+https://vimeo.com/1116921206  # 2.7 Pixel Helper
+
+# KAPITEL 3: KAMPAGNENSTRUKTUR
+https://vimeo.com/1116739891  # 3.1 Kampagnen Struktur
+https://vimeo.com/1116739437  # 3.2 Kampagnenziele
+https://vimeo.com/1116739510  # 3.3 Kampagnendefinition
+https://vimeo.com/1116739589  # 3.4 Anzeigengruppendefinition
+https://vimeo.com/1121081132  # 3.5 Anzeigendefinition
+https://vimeo.com/1116741877  # 3.6 Anzeigen duplizieren
+https://vimeo.com/1116742273  # 3.7 Anzeigen bearbeiten
+
+# KAPITEL 4: ZIELGRUPPEN
+https://vimeo.com/1116740320  # 4.1 Zielgruppen Übersicht
+https://vimeo.com/1116740391  # 4.2 Interessenzielgruppe
+https://vimeo.com/1116740489  # 4.3 Custom Audiences - Eigene Quellen
+https://vimeo.com/1121081518  # 4.4 Custom Audiences - Meta Quellen
+https://vimeo.com/1116740672  # 4.5 Lookalike Audiences
+https://vimeo.com/1116740727  # 4.6 Zielgruppenverwendung
+
+# KAPITEL 5: ANALYSE & OPTIMIERUNG
+https://vimeo.com/1116921269  # 5.1 Kampagnen Dashboard
+https://vimeo.com/1121415816  # 5.2 Eigene Spaltenvoreinstellung
+https://vimeo.com/1121418677  # 5.2.1 Neue selbst definierte Kennzahlen
+https://vimeo.com/1121418731  # 5.2.2 IDs für den Supportfall anzeigen
+https://vimeo.com/1121415831  # 5.3 Betrachtungszeitraum
+https://vimeo.com/1121418752  # 5.4 Bedingte Formatierung
+https://vimeo.com/1121418693  # 5.5 Anzeigenberichte
+
+# BONUS
+https://vimeo.com/1144083403  # So skalierst du
+https://vimeo.com/1121415692  # Wichtige Fragen + Antworten
+https://vimeo.com/1116892503  # So kommst du auf Ideen & erstellst deine Visuals
+https://vimeo.com/1116816658  # Schritt für Schritt: Erstellung deiner Reels
+https://vimeo.com/1067324503  # Deine Checkout Seite
+https://vimeo.com/987579976   # So kommst du auf Ideen (2)

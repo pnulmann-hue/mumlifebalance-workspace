@@ -1,0 +1,816 @@
+<!-- ============================================================
+     Bio-Check Landingpage · zum Einbetten in WordPress via Elementor HTML-Widget
+     Alle CSS gescoped auf .bcp — keine Theme-Konflikte.
+     TODO vor dem Einfuegen in WordPress:
+     1. Foto hochladen in Media Library
+     2. Im Code unten: {{PATRICIA_FOTO_URL}} durch echte WordPress-Bild-URL ersetzen
+     ============================================================ -->
+<script>
+// Force Light-Mode — Meta-Tags injizieren gegen Mobile-Browser-Dark-Mode
+(function(){
+  try {
+    var metas = [['color-scheme','light only'],['theme-color','#f1ecdd'],['supported-color-schemes','light']];
+    metas.forEach(function(m){ var el=document.createElement('meta'); el.name=m[0]; el.content=m[1]; document.head.appendChild(el); });
+    document.documentElement.style.colorScheme = 'light only';
+  } catch(e) {}
+})();
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap');
+    /* ============================================================
+       Bio-Check Landingpage · Patricia Ulmann · mumlifebalance.ch
+       Alle Styles gescoped auf .bcp (bio-check-page) für
+       Elementor-HTML-Widget-Kompatibilität
+       ============================================================ */
+
+    /* Verhindert dass Mobile-Browser (Samsung Internet, Chrome Android Dark-Mode)
+       die Seite automatisch invertieren */
+    .bcp {
+      color-scheme: light only;
+      forced-color-adjust: none;
+      background-color: #f1ecdd !important;
+    }
+    .bcp * {
+      forced-color-adjust: none;
+    }
+    @media (prefers-color-scheme: dark) {
+      .bcp, .bcp * {
+        color-scheme: light only !important;
+        forced-color-adjust: none !important;
+      }
+    }
+
+    .bcp,
+    .bcp * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .bcp {
+      --petrol: #12828c;
+      --dunkelblau: #29556d;
+      --creme: #f1ecdd;
+      --orange: #dc822e;
+      --text: #0c1c30;
+      --white: #ffffff;
+      --ff-head: 'Philosopher', Georgia, serif;
+      --ff-body: 'Source Sans 3', 'Source Sans Pro', system-ui, -apple-system, sans-serif;
+
+      font-family: var(--ff-body);
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .bcp a { color: var(--petrol); text-decoration: underline; }
+    .bcp a:hover { color: var(--dunkelblau); }
+    .bcp strong { font-weight: 700; color: var(--dunkelblau); }
+    .bcp em { font-style: italic; }
+
+    .bcp img { max-width: 100%; height: auto; display: block; }
+
+    /* ============================================================
+       SEKTION BASIS
+       ============================================================ */
+
+    .bcp__section {
+      padding: 80px 24px;
+    }
+
+    .bcp__container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .bcp__container--narrow {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* ============================================================
+       HERO
+       ============================================================ */
+
+    .bcp__hero {
+      background: var(--creme);
+      padding: 100px 24px 80px;
+    }
+
+    .bcp__hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .bcp__eyebrow {
+      font-family: var(--ff-body);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--petrol);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    .bcp__h1 {
+      font-family: var(--ff-head);
+      font-size: clamp(36px, 5vw, 54px);
+      line-height: 1.1;
+      color: var(--dunkelblau);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 18px;
+    }
+
+    .bcp__h1-accent {
+      color: var(--orange);
+      display: inline-block;
+    }
+
+    .bcp__h2 {
+      font-family: var(--ff-head);
+      font-size: clamp(28px, 3.8vw, 38px);
+      line-height: 1.25;
+      color: var(--dunkelblau);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .bcp__h2--center { text-align: center; }
+    .bcp__h2--accent { color: var(--orange); }
+
+    .bcp__h3 {
+      font-family: var(--ff-head);
+      font-size: 22px;
+      color: var(--dunkelblau);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .bcp__lead {
+      font-size: 19px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: var(--text);
+    }
+
+    .bcp__p {
+      margin-bottom: 16px;
+    }
+
+    .bcp__p--center { text-align: center; }
+
+    .bcp__meta {
+      font-size: 14px;
+      color: var(--petrol);
+      margin-top: 14px;
+    }
+
+    /* Hero Visual (Mockup) */
+    .bcp__hero-visual {
+      position: relative;
+      padding: 20px;
+    }
+
+    .bcp__phone {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+      background: var(--dunkelblau);
+      border-radius: 36px;
+      padding: 12px;
+      box-shadow: 0 20px 60px rgba(12, 28, 48, 0.25);
+      transform: rotate(-3deg);
+    }
+
+    .bcp__phone-screen {
+      background: var(--creme);
+      border-radius: 24px;
+      padding: 28px 22px;
+      aspect-ratio: 9 / 16;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .bcp__phone-logo { font-size: 40px; margin-bottom: 12px; }
+    .bcp__phone-title {
+      font-family: var(--ff-head);
+      color: var(--dunkelblau);
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .bcp__phone-sub {
+      font-size: 13px;
+      color: var(--petrol);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .bcp__phone-hook {
+      font-family: var(--ff-head);
+      font-size: 15px;
+      color: var(--dunkelblau);
+      line-height: 1.4;
+      margin-bottom: 18px;
+    }
+    .bcp__phone-hook b { color: var(--orange); }
+    .bcp__phone-chip {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--orange);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 999px;
+    }
+
+    /* ============================================================
+       BUTTON
+       ============================================================ */
+
+    .bcp__btn {
+      display: inline-block;
+      font-family: var(--ff-body);
+      font-size: 17px;
+      font-weight: 700;
+      padding: 16px 32px;
+      border: 2px solid transparent;
+      border-radius: 14px;
+      cursor: pointer;
+      text-decoration: none !important;
+      transition: transform 0.12s ease, box-shadow 0.2s ease;
+      text-align: center;
+    }
+
+    .bcp__btn--primary {
+      background: var(--orange);
+      color: var(--white) !important;
+    }
+    .bcp__btn--primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(220, 130, 46, 0.4);
+      color: var(--white) !important;
+    }
+
+    .bcp__btn--outline {
+      background: transparent;
+      border-color: var(--orange);
+      color: var(--orange) !important;
+    }
+    .bcp__btn--outline:hover {
+      background: var(--orange);
+      color: var(--white) !important;
+    }
+
+    .bcp__btn--light {
+      background: var(--creme);
+      color: var(--dunkelblau) !important;
+      font-size: 15px;
+    }
+    .bcp__btn--light:hover { background: var(--white); color: var(--dunkelblau) !important; }
+
+    /* ============================================================
+       PROBLEM (Sektion 2)
+       ============================================================ */
+
+    .bcp__problem {
+      background: var(--white);
+    }
+
+    .bcp__quote-block {
+      background: var(--creme);
+      border-left: 4px solid var(--orange);
+      padding: 22px 28px;
+      border-radius: 8px;
+      margin: 22px 0;
+      font-style: italic;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* ============================================================
+       SOLUTION (Sektion 3)
+       ============================================================ */
+
+    .bcp__solution {
+      background: var(--creme);
+    }
+
+    .bcp__solution-card {
+      background: var(--white);
+      border-radius: 22px;
+      padding: 40px 32px;
+      box-shadow: 0 4px 24px rgba(12, 28, 48, 0.08);
+    }
+
+    .bcp__features {
+      list-style: none;
+      margin: 24px 0;
+      padding: 0;
+    }
+
+    .bcp__features li {
+      padding: 12px 0 12px 36px;
+      position: relative;
+      font-size: 17px;
+      line-height: 1.5;
+      border-bottom: 1px solid var(--creme);
+    }
+
+    .bcp__features li:last-child { border-bottom: none; }
+
+    .bcp__features li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      color: var(--orange);
+      font-weight: 700;
+      font-size: 20px;
+      width: 28px;
+      height: 28px;
+      background: rgba(220, 130, 46, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ============================================================
+       BENEFITS (Sektion 4)
+       ============================================================ */
+
+    .bcp__benefits {
+      background: var(--white);
+    }
+
+    .bcp__benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 50px;
+    }
+
+    .bcp__benefit-card {
+      background: var(--creme);
+      border-radius: 18px;
+      padding: 32px 28px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .bcp__benefit-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(12, 28, 48, 0.1);
+    }
+
+    .bcp__benefit-icon {
+      font-size: 40px;
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+
+    /* ============================================================
+       ABOUT PATRICIA (Sektion 5)
+       ============================================================ */
+
+    .bcp__about {
+      background: var(--creme);
+    }
+
+    .bcp__about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .bcp__about-photo {
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center 20%;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(12, 28, 48, 0.2);
+      margin: 0 auto;
+      display: block;
+    }
+
+    .bcp__about-avatar {
+      width: 100%;
+      max-width: 320px;
+      aspect-ratio: 1;
+      border-radius: 24px;
+      background: linear-gradient(135deg, var(--petrol), var(--dunkelblau));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--creme);
+      font-size: 120px;
+      font-family: var(--ff-head);
+      margin: 0 auto;
+      box-shadow: 0 8px 32px rgba(12, 28, 48, 0.2);
+    }
+
+    /* ============================================================
+       CTA + FORM (Sektion 6)
+       ============================================================ */
+
+    .bcp__cta {
+      background: var(--dunkelblau);
+      color: var(--creme);
+      text-align: center;
+    }
+
+    .bcp__cta .bcp__h2 { color: var(--white); }
+    .bcp__cta p { color: var(--creme); }
+
+    .bcp__form-wrap {
+      max-width: 500px;
+      margin: 40px auto 0;
+      background: var(--creme);
+      border-radius: 18px;
+      padding: 36px 32px;
+      color: var(--text);
+    }
+
+    .bcp__form-wrap h3 {
+      font-family: var(--ff-head);
+      font-size: 22px;
+      color: var(--dunkelblau);
+      margin-bottom: 8px;
+    }
+
+    .bcp__form-field {
+      margin-bottom: 14px;
+      text-align: left;
+    }
+
+    .bcp__form-field label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--dunkelblau);
+      margin-bottom: 4px;
+    }
+
+    .bcp__form-field input[type="text"],
+    .bcp__form-field input[type="email"] {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid rgba(41, 85, 109, 0.2);
+      border-radius: 10px;
+      font-family: var(--ff-body);
+      font-size: 16px;
+      background: var(--white);
+      color: var(--text);
+      outline: none;
+    }
+
+    .bcp__form-field input:focus {
+      border-color: var(--petrol);
+    }
+
+    .bcp__form-checkbox {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 18px 0;
+      font-size: 13px;
+      line-height: 1.45;
+      color: var(--text);
+    }
+
+    .bcp__form-checkbox input { margin-top: 3px; }
+
+    .bcp__form-wrap .bcp__btn {
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    .bcp__form-footer {
+      margin-top: 16px;
+      font-size: 12px;
+      color: var(--dunkelblau);
+      line-height: 1.45;
+    }
+
+    .bcp__cta-fine {
+      margin-top: 20px;
+      font-size: 13px;
+      color: rgba(241, 236, 221, 0.7);
+    }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+
+    .bcp__footer {
+      background: var(--creme);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--dunkelblau);
+    }
+
+    .bcp__footer a { color: var(--dunkelblau); }
+
+    /* ============================================================
+       MOBILE
+       ============================================================ */
+
+    @media (max-width: 820px) {
+      .bcp__section { padding: 60px 20px; }
+      .bcp__hero { padding: 60px 20px 50px; }
+
+      .bcp__hero-grid,
+      .bcp__about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .bcp__benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .bcp__h1 { font-size: 36px; }
+      .bcp__h2 { font-size: 26px; }
+
+      .bcp__solution-card { padding: 28px 22px; }
+      .bcp__form-wrap { padding: 28px 22px; }
+    }
+
+    @media (max-width: 480px) {
+      .bcp__phone { transform: rotate(0deg); max-width: 260px; }
+    }
+  </style>
+
+<div class="bcp">
+
+  <!-- ============================================================
+       SEKTION 1 — HERO
+       ============================================================ -->
+  <section class="bcp__section bcp__hero">
+    <div class="bcp__container bcp__hero-grid">
+      <div>
+        <div class="bcp__eyebrow">Kostenloser Bio-Check</div>
+        <h1 class="bcp__h1">
+          Deine Instagram-Bio ist dein <span class="bcp__h1-accent">Schaufenster</span>.
+        </h1>
+        <p class="bcp__lead">
+          In 3 Sekunden entscheidet sich: Bleiben deine Besucher — oder scrollen weiter. Mach aus „Krimskrams im Schaufenster" ein klares Versprechen, das deine Leute anzieht.
+        </p>
+        <a href="#anmelden" class="bcp__btn bcp__btn--primary">Jetzt Bio-Check starten 🌿</a>
+        <div class="bcp__meta">Kostenlos · 10 Minuten · PDF per Mail</div>
+      </div>
+
+      <div class="bcp__hero-visual">
+        <div class="bcp__phone">
+          <div class="bcp__phone-screen">
+            <div class="bcp__phone-logo">🌿</div>
+            <div class="bcp__phone-title">Bio-Check<br/>für Network-Mamas</div>
+            <div class="bcp__phone-sub">Von Patricia Ulmann · Mum Life Balance</div>
+            <div class="bcp__phone-hook">
+              Deine Instagram-Bio ist dein <b>Schaufenster</b>. In 3 Sekunden entscheidet sich: bleibt sie stehen oder läuft weiter.
+            </div>
+            <div class="bcp__phone-chip">Los geht's 🌿</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEKTION 2 — PROBLEM
+       ============================================================ -->
+  <section class="bcp__section bcp__problem">
+    <div class="bcp__container--narrow">
+      <h2 class="bcp__h2 bcp__h2--center">
+        Du postest, postest, postest — und trotzdem kommen keine Anfragen.
+      </h2>
+      <p class="bcp__p">
+        Kennst du das? Du machst Content. Du zeigst deine Produkte. Du gibst Tipps. Und trotzdem — die Menschen, die auf deinem Profil landen, folgen dir nicht. Oder folgen dir, fragen aber nie nach.
+      </p>
+      <p class="bcp__p">
+        Die Wahrheit ist unbequem: Deine Bio ist das erste, was sie lesen. In 3 Sekunden entscheidet sich, ob sie bleiben oder weiter scrollen.
+      </p>
+      <p class="bcp__p">
+        Und wenn in deinem Schaufenster „Ich verkaufe Öle / Shakes / Putzmittel" steht — denken sie „aha, Verkäuferin" und gehen weiter. So einfach.
+      </p>
+
+      <div class="bcp__quote-block">
+        Niemand wacht morgens auf und denkt: Shit, ich brauche unbedingt Öle. 😅<br/><br/>
+        Aber viele Menschen wachen auf mit einem konkreten Problem: „Ich schlafe seit Monaten schlecht", „Ich halt den Mental Load nicht mehr aus", „Ich hab keine Energie mehr". <strong>DAS</strong> ist dein Thema. Und <strong>DAS</strong> muss in deine Bio.
+      </div>
+
+      <p class="bcp__p bcp__p--center" style="margin-top: 30px;">
+        <a href="#anmelden" class="bcp__btn bcp__btn--outline">Ich will meine Bio fixen 🌿</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEKTION 3 — SOLUTION
+       ============================================================ -->
+  <section class="bcp__section bcp__solution">
+    <div class="bcp__container--narrow">
+      <div class="bcp__solution-card">
+        <h2 class="bcp__h2 bcp__h2--center">
+          Der Bio-Check macht das in 10 Minuten.
+        </h2>
+        <p class="bcp__p">
+          Ich hab einen interaktiven Bot gebaut, der dich Schritt für Schritt durch deine Bio führt. Entweder er <strong>analysiert deine bestehende Bio</strong> und zeigt dir wo's hakt — oder er hilft dir <strong>komplett neu zu bauen</strong>, wenn du bei 0 startest.
+        </p>
+        <p class="bcp__p">
+          Er fragt dich die 8 Schlüsselfragen aus meiner Methodik und liefert dir am Ende:
+        </p>
+
+        <ul class="bcp__features">
+          <li>Deinen persönlichen <strong>Experten-Satz in 3 Varianten</strong></li>
+          <li><strong>5 fertige Bio-Vorschläge</strong> (150 Zeichen, copy-paste-ready)</li>
+          <li><strong>3 Pinned-Posts-Ideen</strong> für dein Schaufenster</li>
+          <li><strong>Struktur für deine Highlights</strong></li>
+          <li>Alles als schönes <strong>PDF per E-Mail</strong></li>
+        </ul>
+
+        <p class="bcp__p" style="margin-top: 24px; font-style: italic; color: var(--petrol);">
+          Warum ich das baue? Weil ich sehe, wie viele Mamas im Network Jahre verlieren, weil sie sich über ihr Produkt definieren statt über ihr Thema. Das muss nicht sein. Und dein Business verdient mehr.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEKTION 4 — BENEFITS
+       ============================================================ -->
+  <section class="bcp__section bcp__benefits">
+    <div class="bcp__container">
+      <h2 class="bcp__h2 bcp__h2--center">Das bringt dir der Bio-Check</h2>
+      <p class="bcp__p bcp__p--center" style="color: var(--petrol); font-size: 17px;">
+        Nach 10 Minuten kannst du:
+      </p>
+
+      <div class="bcp__benefits-grid">
+        <div class="bcp__benefit-card">
+          <div class="bcp__benefit-icon">🎯</div>
+          <h3 class="bcp__h3">Klarheit statt Rätselraten</h3>
+          <p>Du weisst endlich genau, wofür du stehst — und kannst es in einem Satz erklären. Ohne „äääh".</p>
+        </div>
+
+        <div class="bcp__benefit-card">
+          <div class="bcp__benefit-icon">📱</div>
+          <h3 class="bcp__h3">Eine Bio, die verkauft</h3>
+          <p>5 Varianten in deiner Tonalität, die du direkt einsetzen kannst. Keine Copy-Paste-Texte — sondern auf dich zugeschnitten.</p>
+        </div>
+
+        <div class="bcp__benefit-card">
+          <div class="bcp__benefit-icon">🏬</div>
+          <h3 class="bcp__h3">Ein Schaufenster, das anzieht</h3>
+          <p>Pinned Posts + Highlights passend zu deiner Bio. Ein komplettes Set-up — nicht nur ein Text.</p>
+        </div>
+
+        <div class="bcp__benefit-card">
+          <div class="bcp__benefit-icon">🎁</div>
+          <h3 class="bcp__h3">PDF zum Nachlesen</h3>
+          <p>Alles landet bei dir in der Mailbox. Drucken, durchgehen, umsetzen — in deinem Tempo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEKTION 5 — ABOUT PATRICIA
+       ============================================================ -->
+  <section class="bcp__section bcp__about">
+    <div class="bcp__container bcp__about-grid">
+      <div style="text-align:center;">
+        <img src="{{PATRICIA_FOTO_URL}}" alt="Patricia Ulmann — Mentorin für Network-Mamas" class="bcp__about-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="bcp__about-avatar" style="display:none;">P</div>
+      </div>
+
+      <div>
+        <h2 class="bcp__h2">Hey, ich bin Patricia 🌿</h2>
+        <p class="bcp__p">
+          Ich bin 4-fach-Mama, doTERRA-Botschafterin (seit 7 Jahren im Network) und Mentorin für Networkerinnen, die aus ihrem Hobby ein echtes Business bauen wollen — zeitlich UND finanziell unabhängig.
+        </p>
+        <p class="bcp__p">
+          Mein Weg hat mich viele Fehler gekostet, bevor ich's verstanden hab: Es geht NIE ums Produkt. Es geht immer um das Problem, das du mit dem Produkt gelöst hast — das ist dein Thema.
+        </p>
+        <p class="bcp__p">
+          Seitdem begleite ich andere Network-Mamas auf diesem Weg. Und der Bio-Check ist der kleinste, aber ehrlichste erste Schritt, den ich dir geben kann.
+        </p>
+        <p class="bcp__p" style="font-style: italic; color: var(--petrol);">
+          Mein Ziel: Finanzielle Unabhängigkeit für Mamas — ein für alle Mal. Ohne dass sie ihre Kinder nicht selber betreuen können.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEKTION 6 — CTA + FORMULAR
+       ============================================================ -->
+  <section class="bcp__section bcp__cta" id="anmelden">
+    <div class="bcp__container--narrow">
+      <h2 class="bcp__h2 bcp__h2--center">Bereit für deinen Bio-Check?</h2>
+      <p class="bcp__p">
+        Trag dich unten ein und du bekommst in wenigen Minuten deinen persönlichen Bot-Link per Mail. Keine Kosten. Kein Abo. Keine versteckte Agenda.
+      </p>
+      <p class="bcp__p">
+        Am Ende hast du eine Bio, mit der du dich nicht mehr verstecken musst.
+      </p>
+
+      <!-- ============================================================
+           AC-EMBED: Bio-Check Anmeldung (Formular-ID 47)
+           ============================================================ -->
+
+      <div class="bcp__ac-embed-wrap">
+        <style>@import url(https://fonts.bunny.net/css?family=sans-serif:400|IBM+Plex+Sans:400);</style>
+        <style>
+          #_form_47_ { max-width: 500px; margin: 40px auto 0 !important; background: #f1ecdd !important; padding: 36px 32px !important; border-radius: 18px !important; color-scheme: light only; }
+          #_form_47_ ._submit { background: #dc822e !important; color: #ffffff !important; font-weight: 700 !important; padding: 16px 32px !important; font-size: 17px !important; border-radius: 14px !important; letter-spacing: 0.3px !important; width: 100% !important; margin-top: 8px !important; cursor: pointer !important; transition: transform 0.12s ease, box-shadow 0.2s ease !important; }
+          #_form_47_ ._submit:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(220, 130, 46, 0.4); }
+          #_form_47_ ._submit:after { content: "Bio-Check kostenlos holen 🌿"; }
+          #_form_47_ ._form-title { font-family: 'Philosopher', Georgia, serif !important; color: #29556d !important; font-size: 24px !important; font-weight: 700 !important; margin-bottom: 14px !important; text-align: center !important; }
+          #_form_47_ ._form-label, #_form_47_ ._form_element ._form-label { color: #29556d !important; font-weight: 700 !important; }
+          #_form_47_ input[type="text"], #_form_47_ input[type="email"] { background: #ffffff !important; border: 1.5px solid rgba(41,85,109,0.18) !important; border-radius: 10px !important; }
+          #_form_47_ ._row._checkbox-radio { display: flex !important; align-items: flex-start !important; gap: 10px !important; padding: 12px 0 !important; }
+          #_form_47_ ._row._checkbox-radio input[type="checkbox"] { margin-top: 3px !important; flex-shrink: 0 !important; width: 18px !important; height: 18px !important; }
+          #_form_47_ ._row._checkbox-radio span { display: block !important; flex: 1 !important; }
+          #_form_47_ ._row._checkbox-radio label { color: #0c1c30 !important; font-size: 13px !important; line-height: 1.55 !important; font-weight: 400 !important; display: block !important; }
+        </style>
+        <form method="POST" action="https://mumlifebalance.activehosted.com/proc.php" id="_form_47_" class="_form _form_47 _inline-form  " novalidate data-styles-version="5">
+          <input type="hidden" name="u" value="47" />
+          <input type="hidden" name="f" value="47" />
+          <input type="hidden" name="s" />
+          <input type="hidden" name="c" value="0" />
+          <input type="hidden" name="m" value="0" />
+          <input type="hidden" name="act" value="sub" />
+          <input type="hidden" name="v" value="2" />
+          <input type="hidden" name="or" value="107f9eb4-ae12-4755-8183-50b51663829e" />
+          <div class="_form-content">
+            <div class="_form_element _x07614776 _full_width _clear">
+              <h2 class="_form-title">Bio-Check Anmeldung</h2>
+            </div>
+            <div class="_form_element _x85148327 _full_width">
+              <label for="fullname" class="_form-label">Vorname<span class="field-required">*</span></label>
+              <div class="_field-wrapper"><input type="text" id="fullname" name="fullname" placeholder="Tippen Sie Ihren Namen ein." required/></div>
+            </div>
+            <div class="_form_element _x44803942 _full_width">
+              <label for="email" class="_form-label">E-Mail<span class="field-required">*</span></label>
+              <div class="_field-wrapper"><input type="text" id="email" name="email" placeholder="Tippen Sie Ihre E-Mail ein." required/></div>
+            </div>
+            <div class="_form_element _x75465202 _full_width">
+              <fieldset class="_form-fieldset">
+                <div class="_row"><legend for="field[1][]" class="_form-label">Datenschutz</legend></div>
+                <input data-autofill="false" type="hidden" id="field[1][]" name="field[1][]" value="~|">
+                <div class="_row _checkbox-radio">
+                  <input id="field_1datenschutz_checkbox" type="checkbox" name="field[1][]" value="Ich moechte Patricias E-Mails mit Wissen und Angeboten rund um Positionierung, Instagram-Strategie und allgemein Onlinebusiness erhalten. Meine Daten werden ausschliesslich dafuer verwendet und niemals weitergegeben. Ich kann meine Einwilligung jederzeit widerrufen." checked>
+                  <span><label for="field_1datenschutz_checkbox">Ich möchte Patricias E-Mails mit Wissen und Angeboten rund um Positionierung, Instagram-Strategie und Onlinebusiness erhalten. Meine Daten werden ausschliesslich dafür verwendet und niemals weitergegeben. Ich kann meine Einwilligung jederzeit widerrufen.</label></span>
+                </div>
+              </fieldset>
+            </div>
+            <div class="_form_element _x47057123 _full_width">
+              <label for="g-recaptcha-response" class="_form-label">Bitte bestätige hier deine Anfrage.<span class="field-required">*</span></label>
+              <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go"></div>
+            </div>
+            <div class="_button-wrapper _full_width">
+              <button id="_form_47_submit" class="_submit" type="submit"></button>
+            </div>
+            <div class="_clear-element"></div>
+          </div>
+          <div class="_form-thank-you" style="display:none;"></div>
+        </form>
+        <script>
+          window._show_thank_you=function(id,message,trackcmp_url,email){var form=document.getElementById('_form_'+id+'_'),thank_you=form.querySelector('._form-thank-you');form.querySelector('._form-content').style.display='none';thank_you.innerHTML=message;thank_you.style.display='block';const vgoAlias=typeof visitorGlobalObjectAlias==='undefined'?'vgo':visitorGlobalObjectAlias;var visitorObject=window[vgoAlias];if(email&&typeof visitorObject!=='undefined'){visitorObject('setEmail',email);visitorObject('update')}else if(typeof(trackcmp_url)!='undefined'&&trackcmp_url){_load_script(trackcmp_url)}if(typeof window._form_callback!=='undefined')window._form_callback(id);thank_you.setAttribute('tabindex','-1');thank_you.focus()};
+          window._show_error=function(id,message,html){var form=document.getElementById('_form_'+id+'_'),err=document.createElement('div'),button=form.querySelector('button[type="submit"]'),old_error=form.querySelector('._form_error');if(old_error)old_error.parentNode.removeChild(old_error);err.innerHTML=message;err.className='_error-inner _form_error _no_arrow';var wrapper=document.createElement('div');wrapper.className='_form-inner _show_be_error';wrapper.appendChild(err);button.parentNode.insertBefore(wrapper,button);var submitButton=form.querySelector('[id^="_form"][id$="_submit"]');submitButton.disabled=false;submitButton.classList.remove('processing');if(html){var div=document.createElement('div');div.className='_error-html';div.innerHTML=html;err.appendChild(div)}};
+          window._load_script=function(url,callback,isSubmit){var head=document.querySelector('head'),script=document.createElement('script'),r=false;var submitButton=document.querySelector('#_form_47_submit');script.charset='utf-8';script.src=url;if(callback){script.onload=script.onreadystatechange=function(){if(!r&&(!this.readyState||this.readyState=='complete')){r=true;callback()}}}script.onerror=function(){if(isSubmit){_show_error("47","Übermittlung fehlgeschlagen. Bitte erneut versuchen.");submitButton.disabled=false;submitButton.classList.remove('processing')}};head.appendChild(script)};
+          (function(){window.cfields={"1":"datenschutz"};var form_to_submit=document.getElementById('_form_47_');var allInputs=form_to_submit.querySelectorAll('input, select, textarea'),submitted=false;window['recaptcha_callback']=function(){var recaptchas=document.getElementsByClassName("g-recaptcha");for(var i in recaptchas){var recaptcha_id="recaptcha_"+i;recaptchas[i].id=recaptcha_id;var el=document.getElementById(recaptcha_id);if(el!=null){var sitekey=el.getAttribute("data-sitekey");grecaptcha.render(recaptcha_id,{"sitekey":sitekey})}}};_load_script("https://www.google.com/recaptcha/api.js?onload=recaptcha_callback&render=explicit");var _form_serialize=function(form){if(!form||form.nodeName!=="FORM")return;var q=[];for(var i=0;i<form.elements.length;i++){if(form.elements[i].name==="")continue;var el=form.elements[i];switch(el.nodeName){case"INPUT":switch(el.type){case"text":case"hidden":case"submit":q.push(el.name+"="+encodeURIComponent(el.value));break;case"checkbox":case"radio":if(el.checked)q.push(el.name+"="+encodeURIComponent(el.value));break}break;case"TEXTAREA":q.push(el.name+"="+encodeURIComponent(el.value));break}}return q.join("&")};var form_submit=function(e){e.preventDefault();var submitButton=e.target.querySelector('#_form_47_submit');submitButton.disabled=true;submitButton.classList.add('processing');var serialized=_form_serialize(form_to_submit).replace(/%0A/g,'\\n');_load_script('https://mumlifebalance.activehosted.com/proc.php?'+serialized+'&jsonp=true',null,true)};form_to_submit.addEventListener('submit',form_submit)})();
+        </script>
+      </div>
+
+      <p class="bcp__cta-fine">
+        In den nächsten 2 Minuten landet der Bot-Link in deiner Mailbox. Check auch den Spam-Ordner.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="bcp__footer">
+    <p>© 2026 Patricia Ulmann · <strong>mumlifebalance</strong></p>
+    <p style="margin-top: 6px;">
+      <a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a>
+    </p>
+  </footer>
+
+</div>
+<!-- Ende Bio-Check Landingpage -->

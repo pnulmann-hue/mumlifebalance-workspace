@@ -1,0 +1,72 @@
+Schauen wir uns noch ganz kurz an, wie du jetzt mit KI startest, wie du das alles machst.
+Und was am aller Anfang steht, ist eigentlich, dass du mal identifizierst, was dir Zeit frisst,
+wofür du KI nutzen möchtest. Und da gebe ich dir natürlich auch Anwendungsbeispiele mit,
+falls es dir nicht einfällt, aber vielleicht kannst du dich einfach mit deinem Unternehmen
+auseinandersetzen und analysieren. Schreibt dir am besten mal auf, in welchen Bereichen
+du am meisten Zeit verlierst. Und ich habe dir mal ein paar Stichwörter mitgeschrieben,
+Content, E-Mails und Planung, Launchplanung. Es sind so wahrscheinlich die meisten,
+die intensivsten Zeitfresser, vor allem das Thema Content, also vor allem Reels,
+Karosserbeiträge, Stories und so weiter. Markiere dann mal drei Aufgaben,
+mit denen du bei den du KI gerne Unterstützung hättest. Das ist ganz egal. Du kannst auch
+auflüsten, E-Mails beantworten, Nachrichten bei Instagram beantworten, Checkouts halten
+erstellen, digitale Produkte erstellen, Präsentationen erstellen. Wirklich ganz egal,
+was dir in den Sinn kommt. Kommunikation mit Kunden, weiß ich nicht, Rechnungen schreiben,
+Rechnungen hochladen, Rechnungen runterladen, whatever you name it. Dann legst du dir individuelle
+Ziele fest, das zum Beispiel eine zeitersparnes Ziel oder gewünschte Contentmenge pro Woche,
+die natürlich auch wiederum Zeit erspart, aber so kannst du ein bisschen klastern und welche
+ersten Automationen du haben möchtest. Weil du kannst zum Beispiel sagen, du möchtest, dass du
+einfach dich einmal am Wochenende hinsetzt und Content für die nächsten 30 Tage batchst,
+mit Hilfe von KI. Du kannst aber auch sagen, dass du perspektivisch einfach keine DMs beantworten
+möchtest und KI und Chatbots zum Beispiel Unterstützung möchtest, die deinen Kunden schreiben. Du
+kannst zum Beispiel sagen, dass du dir einen E-Mail-Fanl aufbauen möchtest, der immer wieder,
+wenn ein Europrodukt zum Beispiel gekauft wird, eine andere weitere Automation Trigger hat,
+die dann weiterführt. Also überlegst du einfach mal, auch damit kannst du Tattivity fragen,
+ich kann dir gerne einen Prompt unten drunter packen, wie du das vielleicht auch identifizierst,
+aber geh wirklich mal so jeden einzelnen Tag durch. Also am besten, dass du dich wirklich hin,
+mal eine Woche, Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag, schreibst du das runter
+an der extra Tabelle oder eben auch Handysch. Egal, es geht jetzt mal erst um die erste Aufgabe,
+die du erledigst und schreibst ja dann wirklich runter jeden einzelnen Tag am besten,
+dass du das direkt abends oder direkt nachdem du die Aufgabe gemacht hast, weil sonst vergisst du
+es vielleicht, was du jetzt gemacht hast und wie viel Zeit das auch gebraucht hat. Das heißt, du
+schreibst zum Beispiel Montag, heute habe ich E-Mails beantwortet, kostet 30 Minuten. Ich habe bei
+Instagram Kommentare beantwortet, kostet 25 Minuten. Ich habe Content erstellt, eine Story,
+die hat heute 45 Minuten gedauert. Ich habe einen Freitrag vorbereitet, hat 55 Minuten gedauert.
+Also wirklich mal komplett so fein kletrig wie möglich, weil dann können wir da auch am
+besten ansetzen und dann kannst du später am besten sehen, okay Moment, das und das hat
+mir jetzt extrem viel Zeit gefressen. Macht es Sinn, wenn ich das ausklädere an KI, wir gucken
+auch uns dann noch an, was du am besten an Mitarbeiter auskläderst und was am besten an KI,
+weil natürlich kann die KI auch seine Mitarbeiter unterstützen und anderswo. Aber einfach mal
+wirklich aufschreiben und so ein Status quo vor sich haben und vielleicht denkst du jetzt, ja ich
+mache das, mache das, mache das, aber ich bin mir sicher und sowas für mir auch, du machst noch
+viel viel mehr, als du jetzt eigentlich denkst, weil wir viele Sachen vergessen und ganz wichtig,
+absolut wichtig, schreib dir auch die Sachen auf, die vielleicht nur zwei Minuten in Anspruch nehmen
+oder fünf Minuten, was jeden Tag vielleicht ist oder jede Woche oder jeden Monat und leider
+mehr als nur fünf Minuten in jedem Monat sind, sind es im Jahr eine Stunde und wenn du zehn
+to dos hast, die das sind, dann sagen wir uns zehn Stunden, ja also wir können an allem sparen an
+dem oder zumindest an den meisten Sachen sparen, wenn wir einfach nur wissen, was es ist, ja erst
+mal musst du wissen, wo es wehtut, damit du dir helfen lassen kannst. Alright und was du auch noch
+vorbereiten kannst, jetzt zum Anfang sind Tools, ja, das heißt du musst dich natürlich registrieren,
+bei den meisten Erklärungen, aber einfach auch mal schauen, was du nutzt zu schauen, was du
+noch nicht, was du möchtest zu nutzen und du kannst dich auch schon mal jetzt registrieren, also
+Tattivity plus brauchst du auf jeden Fall, führt kein Weg dran vorbei, bin ich mir sicher, denn
+das normale Tattivity ist einfach umwelten schlechter als das Tattivity plus, also bei der Sache sage
+ich brauchst du, you do need it, ja, in meinen Augen die beste Ausgabe oder die beste Investition,
+die du tätigen kannst. Dann kenwa oder crea.ai, ich nutze immer Kenwa, da gibt es auch die
+kostenlose Version, das reicht glaube ich auch für unsere Zwecke. Notion oder zumindest Google Docs
+oder Google Excel oder Google Drive eben für all deine Ablagen, für deine Datenbanken, die wir
+dann später für die Broms und für die KI brauchen. Ich habe jetzt Notion und Google Drive, ich hatte
+aber drei Jahre lang nur Google Drive, weil Notion finde ich persönlich, gibt es auch wieder
+tausend Meinungen, brauchst du nicht, wenn du kein Team hast. Wenn du alleine arbeitest, kannst du die
+Kosten dafür sparen. Dann brauchst du Active Campaign oder andere E-Mail Automations Tools, wie zum
+Beispiel MailerLine, Brevo, you name it, ja, Mini Chat, führt zum Beispiel DM Flows, Sapea Make oder
+N8n, das sind jetzt eben die Dinge, die ein bisschen fortgeschrittener sind. N8n Make habe ich selbst
+nicht verwendet, wir schauen uns an, was wir mit Sapea machen können, aber sobald ich in der Lage
+bin, N8n oder N8n Make zu beherrschen, schauen wir uns natürlich auch das an. Aber am ehesten, was für
+unsere Zwecke jetzt notwendig ist, ist Touchivity, Kenwa, Google Drive und ein E-Mail Tool und wenn
+möglich eben noch Mini Chat, weil dann kannst du eben Mini Chat Automationen bauen. Auch hier,
+du brauchst das alles nicht, aber du hast den Kurs, weil du lernen willst, wie es funktioniert und wie
+ich es damit sehr, sehr kosteneffizient arbeite. Das meiste mache ich mit Chativity, keine Frage,
+aber wir können auch viel, viel mehr machen und du entscheidest, wie viel du machen möchtest. Es
+ist leider eine Entscheidung, up to you, ich mache alles so viel wie geht, ich zeig dir alles, was ich
+mache und du entscheidest, möchtest du machen oder möchtest du nicht machen. Alright, dann sehen
+wir uns im nächsten Modul.

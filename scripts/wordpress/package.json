@@ -1,0 +1,15 @@
+{
+  "name": "mumlifebalance-wordpress",
+  "version": "1.0.0",
+  "description": "WordPress REST API Helper fuer mumlifebalance.ch",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "whoami": "node --env-file=.env wp-api.js whoami",
+    "list-pages": "node --env-file=.env wp-api.js list-pages",
+    "deploy-bio-check": "node --env-file=.env deploy-bio-check.js"
+  }
+}

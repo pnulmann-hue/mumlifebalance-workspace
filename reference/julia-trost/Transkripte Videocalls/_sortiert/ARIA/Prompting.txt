@@ -1,0 +1,217 @@
+So, schauen wir uns jetzt noch an, wie gutes Prompting funktioniert.
+Und Prompting bedeutet erst mal, dass du einfach dem TATVT deine Befehle gibst quasi.
+Also du erklärst ihm, was du haben möchtest, was du wissen möchtest.
+Und das bedeutet quasi die gezielte Kommunikation mit der KI.
+Wir sind jetzt, wie gesagt, im Beispiel von TATVT, aber das sagt man auch bei Gemini zum Beispiel, oder bei FALAI und so weiter, das musst du auch alles noch lernen.
+Je präziser die Anweisung ist, desto klarer ist das Ergebnis.
+Wir haben schon gesagt, wenn Fehler passieren, dann sind wir dran schuld, wir sind hinter dem Bildschirm.
+Wie haben die Macht?
+TATVT macht nur das oder beziehungsweise die KI macht nur das, was wir ihr sagen.
+Je präziser die Anweisung, wie gesagt, desto klarer das Ergebnis.
+KI reagiert nicht auf Ideen, sondern auf Struktur und Kontext.
+Also ja, natürlich gibt es dir auch Inspiration und Ideen, aber wenn dein Input eine Struktur und ein Kontext inne hat,
+ich zeige das gleich noch an einem Beispiel, dann wird es umso besser.
+Und das ist auch ganz wichtig, dass der Prompt nämlich kein Befehl ist.
+Also es ist nicht, ich sage das, du machst das und dann sind wir fertig,
+sondern es ist wirklich ein Dialog bedeutet, dass wir mit dem TATVT mit der KI in den Austausch gehen.
+Der Aufbau von einem guten Prompt ist wie folgt, du definierst eine Rolle.
+Zum Beispiel, du bist Marketingberater mit zehn Jahren Erfahrung und Verkauf digitaler Produkte auf Instagram
+oder du bist der Nährungskoch, hast bereits 100 Leuten geholfen und zwei eigene Rezeptbücher geschrieben.
+Dann das Ziel, das heißt, wir erklären der KI, was sie tun soll, so konkret wie möglich, wie gesagt.
+Erst stelle fünf Ideen für Instagram Reals des Unternehmeransprech, die mehr digitale Produkte verkaufen wollen.
+Keine Sorge, wir gehen das gleich alles durch und dann kannst du das auch alles dir rauskopieren aus dem Prompt unten.
+Dann liefern wir den Kontext, das heißt, wir geben Hintergrundinformationen, damit die KI genau weiß, worauf sie sich beziehen soll.
+Zum Beispiel hier in dem Fall die Zielgruppe, das sind selbstständige zwischen 30 und 45,
+die online verkaufen wollen und sich mit Instagram noch unsicher fühlen.
+Dann definieren wir den Stil, das heißt, die Länge, das Format, die Darstellungsform,
+zum Beispiel schreibe prägnant, professionell und in meiner Markenstimme,
+verwende maximal fünf Bullet Points und schließe mit einem klaren Call to Action.
+Und dann geben wir noch das Format raus, also in welchem Format soll der Output uns geliefert werden,
+zum Beispiel in Form von der Hoke, von einem Ziel, von Emotionen, Call to Action, die in der Tabelle statt aufgebaut werden,
+oder aber genau auch diesen Aufbau in Form von der PDF, oder wir sagen einfach nur, gib mir den Text aus,
+also ganz, ganz wie du das für dich möchtest, aber auch das schauen wir uns gleich im Beispiel an.
+Das heißt, der Master Template ist so aufgebaut, dass du eine Rolle hast, das Ziel, den Kontext, den Stil und das Format.
+Und hier habe ich ja auch nochmal ein Beispiel reingepackt, pack ich dir auch noch unten rein, damit du das auch schön abkupieren kannst.
+Wie du gute Ergebnisse bekommst beim Promting, wie gesagt, wir machen es gleich in der Praxis, dann siehst du genau, wie ich es mache,
+aber ich habe mir mal vier Sachen aufgeschrieben, die ich dir unbedingt mitgeben wollte.
+Erstens ist das iteratives Promting, das heißt, du hast eine Idee, eine Gedanken, eine Frage, eine Aufgabe, die haust du rein.
+Und dann kannst du reagieren auf das, was du rausbekommst.
+Du kannst schreiben, okay, passt für mich, voll cool, vielen Dank, wenn es perfekt für dich ist, wenn du schon gut bechromptet hast.
+Du kannst aber auch sagen und mit dem reden, deswegen haben wir eben gesagt, geh in den Dialog
+und kannst sagen, das ist zwar gut, aber zu allgemein, zu wenig Emotionen, zu düster, zu humorvoll, nicht ernst genug, ja?
+Also du kannst sagen, was du möchtest und immer auch hier gilt, je konkreter, desto besser.
+Wiederhole den Vorgang zwei bis drei Mal, damit das Ergebnis deutlich präziser.
+Auch da, du kannst es auch vier, fünf Mal wiederholen.
+Also es gibt keinen Stopp, du entscheidest, wann das Ergebnis für dich gut ist.
+Dann, wie du weiter gute Ergebnisse bekommst, arbeite mit Parametern und Begrenzungen.
+Das heißt, wenn du Rahmenbedingungen der KI gibst, dann würdest dich auch in diese halten.
+Zum Beispiel nutze maximal 80 Wörter und ein Beispiel aus dem Unternehmeralltag.
+Oder erstelle mir ein Ernährungsplan, aber nur vegane Rezepte.
+Je enger die Grenzen, desto besser die Ergebnisse, desto auch wie im echten Leben, je eher du deine Grenzen kennst
+und diese auch kommunizierst, desto glücklicher wirst du.
+Dann gibt es sowas wie Reflexionspromz.
+Das heißt, die KI, also TATIBT zum Beispiel, kann ihre eigenen Antworten bewerten lassen.
+Und das mache ich zum Beispiel super oft mit meinen Hooks.
+Das heißt, du kannst schreiben, bewerte deine Antwort auf Skala 1 bis 10 im Hinblick auf Klarheit und Relevanz.
+Was würdest du verbessern?
+Du kannst aber auch sowas schreiben, wie hier sind 10 Hooks, die ich generiert habe.
+Du kannst zu mir die bitte bewerten, welche der Hooks haben, das Potential viral zu gehen
+und kannst du mir bitte die Hooks umschreiben, die noch nicht viral Potential haben.
+Das hoffst du zu selbst korrigierten Outputs und TATIBT auch wenn du die Ergebnisse vorher mit TATIBT bekommen hast.
+Wenn du das hier machst, wird es nochmal drüber nachdenken und seine eigenen Ergebnisse verbessern.
+Und du kannst natürlich auch so Serien erstellen, zum Beispiel, dass du sagst, erstelle mir erst 10 Content-Ideen,
+dann wähle die drei besten aus und dann schreiben wir pro Idee dieser drei besten Ideen ein Reelscript.
+Du gehst am besten immer so mit 1, 2, 3 vorm und machst immer eins nach dem anderen.
+Das zeige ich dir aber auch gleich, denn wenn du von Anfang an sagst, gib mir 100 Hooks aus,
+fallen die weniger gut aus, weniger präzise, als wenn du sagst, liefere mir erst mal 10 Hooks.
+Dann iterierst du die, ja, also hier, iteratives Promting.
+Überlegst, sind die gut genug? Sind die nicht gut genug?
+Kannst du vielleicht auch deine Parameter einkränzen? Kannst du vielleicht noch Reflexions-Posts darauf hinstellen?
+Kannst dann diese Ergebnisse nochmal validieren lassen?
+Bist du sagst, du hast die perfekten 10 Hooks? Und erst dann sagst du, okay, gib mir 10 weitere und gib mir 10 weitere und gib mir 10 weitere, ja?
+Je kleiner, detaillierter die Schritte sind, desto besser wird ein Ergebnis, ja?
+Aber wie gesagt, wir gehen alles gleich gemeinsam durch.
+Welche Fehler du also vermeiden kannst, macht das auf jeden Fall klare Ziele und Kontext geben.
+Rolle und Stil immer mit definieren, also gerade auch deine Tonalität.
+Wie sprichst du am besten da auch deine Brand Voice direkt hinterlegen?
+Kurze Feedback-Schleife nutzen, das heißt, ist schon gut, aber mehr davon, mehr hiervon.
+Mach noch das bitte, ja?
+Und eben Ergebnisse prüfen und optimieren, nicht einfach blind übernehmen, das haben wir schon gesagt.
+Du hast die letztendliche Entscheidungskraft, ja? Du entscheidest, was du postest.
+Touch-DMT liefert dir einfach nur Beispiele.
+Was du eben vermeiden solltest, sind unpräzise Anfragen, zum Beispiel schreiben wir irgendwas über Marketing.
+Ja, das wird wahrscheinlich nicht funktionieren, beziehungsweise vielleicht wirst du dann auch schon Inspiration ziehen können,
+aber du wirst eben niemals ein relevantes Ergebnis für dich rausziehen können.
+Wenn du das gar nicht brauchst, ist das voll okay, aber wenn du was wirklich relevantes Spezifisches haben möchtest,
+dann musst du es konkret formulieren.
+Vielleicht hast du zu viele Aufgaben in einem Prompt, das haben wir eben schon besprochen.
+Erstelle einen Reel und gleichzeitig die E-Mails dazu, würde ich nicht machen.
+Erstelle zuerst das Reel, überleg dann und erstelle darauf basierende E-Mails.
+Vielleicht hast du zu wenige Kontext gegeben, das solltest du auch auf gar keinen Fall machen.
+Und die Markenstimme ignorieren, deswegen unbedingt die Brandfors hinterlegen.
+Am besten in deinem Projekt, das du angelegt hast.
+All right, ich würde sagen, wir schauen uns uns einfach mal an,
+denn in der Praxis sieht das ja manchmal dann auch ganz anders aus
+und dafür gehen wir einfach in Chativity und gehen einfach oben, einfach nur auf den Chat.
+Normalerweise, wie gesagt, würde ich in meinem Projekt arbeiten, wo du dann auch die Brandfors hinterlegt hast.
+Aber jetzt machen wir es einfach mal so, nur so, dass wir direkt starten können.
+Okay, dann können wir zum Beispiel schreiben,
+ich mache das super gerne mit meiner Vorgehensweise, wenn ich nicht area verwende, was ich dir empfehlen würde.
+Aber wenn wir jetzt einfach mal das Beispiel machen.
+Hi, ich bin online Marketing Coach, ich mache es wirklich mal mit meinem Thema.
+Online Marketing Coach und zeige anderen, wie sie auf Instagram Geld verdienen und Kunden gewinnen können.
+Bitte gib mir zehn Herausforderungen meiner Zielgruppe.
+Ist ja das ganze Wage, das heißt, es ist super Wage, super unspezifisch.
+Wir machen es aber extra mal so.
+Das sind so die typischen Herausforderungen.
+Passt, ja, also auch hier drüber lesen, entscheiden, passt es, du möchtest noch was ergänzen.
+Wenn wir ergänzen, dann können wir sagen, passt so, aber kannst du noch eine heraus
+Forderung dazu nehmen, nämlich in Bezug auf KI.
+So, und immer schön auch daran denken, wenn du das behalten möchtest, dann auch schreiben,
+gut so, aber kannst du das noch hinzufügen, sonst würde das vielleicht verändern oder wegmachen.
+Die Bevorgerungen mit KI, sie hören überall, dass man KI nutzen muss, wissen aber nicht,
+wie, sie haben Angst, dass ihre Inhalte dadurch unpersönlich werden oder sie nicht mehr authentisch
+wirken. Okay, und jetzt fragt er schon, ob er mir Hux erstellen kann, er kennt mich natürlich
+schon so ein bisschen, bei dem weiß ich nicht, ob es das auch gleichzeitig ist, aber mir sagen jetzt,
+kannst du mir basierend auf den elf Herausforderungen, elf Hux geben.
+So, einfach auch hier, ich mach so unspezifisch wie möglich, normalerweise würde ich das nie so
+machen, ich würde immer die Struktur gehen, Rolle, Ziel, Rahmenbedingungen,
+Culture Action, also all die Dinge, die ich dir auch hier unter dem Video aufliste,
+kannst du einmal kopieren, in der Liste packen und dich immer wieder daran orientieren.
+Wir machen es auch gleich damit ein Beispiel davon, damit du siehst, wie viel besser das sein wird.
+Und am besten ist eh Area Content, aber das siehst du ja auch noch in den Videos.
+Okay, wenn du das Gefühl hast, du gibst alles, aber niemand sieht dich, das ist der Grund,
+warum dein Content keine Reichweite bekommt. Wenn du versuchst, alle anzusprechen,
+sprichst du am Ende niemanden an, lass uns das ändern. Okay, ist er ja schon mal gar nicht so
+schlecht, ja? Also ich arbeite ja schon wirklich lange damit und habe ihn auch schon gut erzogen,
+aber was wir jetzt machen könnten? Danke, bitte, nimm all diese elf Hux und überlege dir, ob du in
+die Huc eine Zahl mit einfließen lassen kannst. Zahlen konvertieren immer gut.
+So, also auch hier passt, ist okay, übernimm das, aber noch was Zusätzliches, ja?
+Drei Gründe, warum du alles gibst und trotzdem keine Reichweite bekommst. In fünf Sekunden
+entscheiden Menschen, ob du relevant bist oder nicht, deshalb funktioniert deine Positionierung
+nicht. 90% der Creator posten täglich, aber nur 10% verkaufen, das ist der Unterschied.
+Super, danke. Kannst du mir jetzt diese Hux nehmen und auch noch positiv formulieren,
+weil es für mich zu negativ, immer mit dem Ziel Kunden gewinnen und oder Geld verdienen.
+So, jetzt schauen wir uns das mal an, weil das ist schon ja immer noch relativ generisch,
+ist schon okay, aber man kann es besser machen. In fünf Sekunden erkennen deine
+Follower, ob du die Richtige für sie bist. So positionierst du dich klarst klar und ziehst
+Traumkunden an, das ist doch schon viel besser. Sieben Gedanken, die du loslassen darfst,
+um mit Leichtigkeit sich beizuwerden und dein Business wachsen zu lassen. Vier einfache Wege,
+wie du KI nutzt, um Zeit zu sparen, Content zu erstellen und automatisch mehr umsatz zu machen,
+finde ich mega. So, jetzt hat es mir eine Sache ins Auge gesprungen, und zwar hier die Huc, ja?
+Weil er schreibt hier sieben Gedanken, die du loslassen darfst, um mit Leichtigkeit
+sich beizuwerden. Leichtigkeit ist ein sehr generisches Wort, das heißt, es bedeutet nichts
+und leichtig alles. Das heißt, ich füge das jetzt hier ein, bitte nimm diese Huc hier. Auch da
+ich beziehe mich immer so möglich konkret auf das, was er mir gegeben hat und was ich ändern
+möchte und ändere Leichtigkeit. Leichtigkeit ist extrem unspezifisch. So.
+Sieben Gedanken, die du loslassen darfst, um endlich sich beizuwerden, um mit deinem Content
+mehr Kunden zu gewinnen. Sieben Gedanken, die du loslassen darfst, um selbstbewusster
+sich beizuwerden, um sich beizuwerden, um in jedem Posts eine Reichweite und Verkäufer zu
+steigern. Die du loslassen darfst, um klar präsent und professionell aufzutreten.
+Ja, also ist das schon viel besser. So, und jetzt können wir sagen,
+bitte erstelle mir hierzu eine Caption ausführlich und Schritt für Schritt.
+Mit Mehrwert für meine Kunden. Und jetzt schauen wir uns mal an, was er da rausbringt.
+Ja, finde ich schon mega.
+Ist sehr ausführlich und genau das habe ich dem auch antrainiert. Das heißt, bei dir ist
+vielleicht noch nicht so ausführlich. Dann treibst du einfach hin. Bitte ausführlicher.
+Ja. So, und was wir jetzt machen ist mal, dass wir uns den Promt holen,
+den Beispiel Promt aus der Präsentation, die ich ja auch hier rein packe,
+der Master Promt quasi. Und ich nutze mal direkt das Beispiel.
+So, wir machen dann nochmal einen neuen Chat. Fügen das ein. Du bist mein Content Coach
+für Instagram. Erstelle fünf präzise Real Hooks, die Aufmerksamkeit wecken und Unternehmen
+ansprechen, die mehr digitale Produkte auf Instagram verkaufen wollen. Schreibe in klarer
+professioneller Sprache, nutze maximals, nutze ein bis drei Sätze pro Hook. Gibt die Ergebnisse
+in einer Tabelle mit dem Spalten Hook. Call to Action. Nummer, das ist nichts anderes ein, aus.
+Und jetzt wollte ich noch schreiben, bitte in möglichst vielen Hooks Zahlen verwenden und
+immer auf das Ziel verweisen. Untengewinnung oder Geld verdienen. So, und jetzt schauen wir doch mal,
+was dabei rumkommt. Kann natürlich sein, dass es auch schrott ist. Ja, also es ist nicht jetzt
+für 100 Prozent, dass es perfekt ist, aber es gibt dir auf jeden Fall schon mal eine bessere Struktur.
+Drei Schritte, mit denen du auf Instagram täglich neue Kunden gewünsst, ohne mehr zu posten.
+Die meisten verdienen auf Instagram nichts, weil sie nur Content-Posten nicht verkaufen,
+so machst du es anders. In den letzten 30 Tagen habe ich mir mit nur einen Funnel über 500
+neue Leads gewonnen und jeder kann das nachbauen. Ich finde es mega. Also ich finde es so cool,
+auch den Call to Action noch passend. Und dann konnten wir sagen, super, danke, nimm bitte Hook
+fünf und jetzt würde ich es nochmal kopieren, damit ihr auf jeden Fall auch weiß, wo von
+besprechen und formuliere mir darauf basierend eine Caption, die die Antwort für meine Kunden enthält.
+So, und dann schauen wir mal, was da uns rausgibt. Wir hätten natürlich also direkt Hook und Caption
+machen können, aber wie gesagt, Schritt für Schritt. Die Wahrheit ist, die meisten Posten großartigen
+Content aber vergessen, wie Menschen wirklich kaufen. Naja gut, das würde ich auch nochmal
+speziell verstanden machen, weil wie Menschen wirklich kaufen, was bedeutet wirklich. Hier
+sind zynologische Trigger, die dafür sorgen, dass dann den Follower nicht nur liken, sondern kaufen.
+Social Proof, Knappheit, Autorität, Resiprizität, Klarheit, ja, finde ich mega. Trigger würde
+ich jetzt nicht als Triggerwort verwenden, aber das ist eher etwas negativ. Ich würde dann immer
+Freiheit, Geld, Stärke oder sowas verwenden. Aber ja, an und für sich, schon mal gar nicht schlecht
+würde ich sagen. So, und das ist quasi, das, was wir eben hatten, war die erste Stufe. Einfach mal
+draus los schreiben, gucken, was kommt, immer wieder verbessern. Das ist die zweite Stufe, indem
+du quasi eine Vorlage verwendest, aus diesem Beispiel heraus, was ich dir gegeben habe und darauf
+basierend eben sehr spezifisch Content entwickeln kannst. Das erste wäre quasi so einfach drauf
+los, das zweite ist mit so einer Vorlage und das dritte wäre Areal Content, denn der ist wirklich
+krass darauf programmiert. Ich kann dir auch gerne mal einen Einblick darin geben, wie die
+Jasons aussehen, damit du verstehst, was da für Arbeit dahinter steckt und was da alles drin ist.
+Das hier sind die Jasons, ja, das habe ich alles programmiert. Ich hoffe, man sieht das. Plus
+das hier, das heißt, es ist schon wirklich, es geht durch verschiedene Qualitätsstandards, es geht
+durch verschiedene Überlegungen, es geht durch verschiedene Beispiele, durch die Bestenungs,
+die ich jemals erstellt habe und so weiter. Das heißt, nutzt das. Ich habe das für dich erstellt
+extra eben dafür, dass du es nutzen kannst. Das Passwort wird sich jeden Monat ändern und
+superkomps ist natürlich auch mitgeteilt, was das Passwort ist. Das heißt, nur du kannst es verwenden,
+weil es mir einfach heilig ist, weil ich einfach so viel Arbeit da reingesteckt habe.
+Nutze außerdem super gerne auf die anderen Areasachen und wie gesagt, wenn du irgendwas haben
+solltest, irgendwas wissen wollen solltest, kannst du auch einfach über neuen Chat gehen
+oder alternativ die beste Variante nach Aria ist mit einem Unternehmensprojekt zu arbeiten,
+wo all deine Daten gespeichert sind, deine Brandboys, deine Projekte und wo er dich einfach
+noch besser kennt. Das heißt, wenn ich jetzt hier genau die gleiche Frage reinstelle,
+ich meine, wir können es ja mal machen. Ich bin mir jetzt echt nicht sicher, ob es so viel
+besser sein wird, weil in den Chat eben auch so viel von mir schon ist, ja, to be honest. Aber
+let's see, wir können es ja mal probieren. Vielleicht ist es noch ein bisschen besser,
+noch ein bisschen spezifischer.
+Okay, ich glaube, es sind ungefähr die gleichen, kann das sein?
+Hier würde ich halt nachhaken, weil ich habe noch nie mit allem nur jetzt 10.000 Euro am
+Tag gemacht, ja. Also da muss man auch aufpassen. Du kannst ja mal ein bisschen durchspielen,
+was gibt dir die besten Ergebnisse? Aria, dein Projekt, ein normaler Chat oder Chat mit
+Vorlage, das sind die vier Wege. Und dann wirst du schon sehen, was für dich am besten passt,
+wo du die besten Antworten bekommst und was für dich auch am leichtesten ist, ja. Und wie gesagt,
+immer mitdenken, immer überprüfen, immer Kopf anschalten, dass wir das auf gar keinen Fall
+vergessen. Und ja, dann würde ich sagen, viel Spaß dabei. Ich nutze das wirklich für alles,
+also auch wenn ich mein Urlaub plane zum Beispiel oder wenn ich Ernährungspläne erstelle, Rezepte
+und so weiter nutze es für das, was du brauchst und wo du mit effizient mitarbeiten kannst,
+dann es kann ja so viel Zeit ersparen. All right, dann sehen wir uns.

@@ -1,0 +1,243 @@
+Ich würde sagen, wir starten mal mit den absoluten Grundlagen und ich habe gerne eine kleine
+Präsentation vorbereitet, einfach damit du es auch immer noch mal nachlesen kannst.
+Also Grundlagen zum Thema KI, wir gehen später auch noch auf das Thema TATBTI ein als Besonderheit
+von KI, aber jetzt erstmal generell KI.
+KI ersetzt sich nicht, das ist erstmal schon mal das Wichtigste, also keine Angst davor
+zu haben, KI zu nutzen, weil sie unterstützt dich viel eher noch.
+Erweitert deine Fähigkeiten und die drei Prinzipien für produktive Zusammenarbeit mit
+KI sind und da gehen wir später auch noch mal drauf ein, nochmal ausführlicher Klarheit,
+denn je präziser du bist, desto präziser ist das Ergebnis.
+Das ist einmal Feedback, das heißt KI lernt von deiner Korrektur, lernt, wenn du ihm Feedback
+gibst und mit ihm kommunizierst, wie du das anstellen kannst und wie du am besten die
+Lösungen dann rausbekommst mit deiner Antwort, das sehen wir uns auch noch an.
+Und die Systematik ist, dass wiederkehrende Prompts, auch da du lernst Prompten, zu
+skreterbaren Resultaten führen können.
+Das heißt, wir nutzen nicht immer noch mal neu und programmieren noch mal alles neu,
+was wir mit KI nutzen, das passiert jetzt vor allem auf das Thema TATBTI, sondern ich zeig
+dir später, wie du mit einfachen Prompts und einer Struktur vorangehst, um eben noch
+effizienter zu werden.
+Und du siehst ja schon bei all diesen drei Prinzipien, es ist immer präziser du bist,
+ja, KI lernt aus deiner Korrektur, du musst wiederkehrende Prompte verwenden, bedeutet
+du bist eben und das steht hier oben, KI setzt dich nicht, du bist immer noch derjenige,
+der entscheidet, du hast die Oberhand, KI macht nicht einfach irgendwas, wenn du es
+nicht willst.
+Das heißt, du bist derjenige, der den Input gibt, du bist derjenige von dem, der
+initiale Gedanke kommt und auch, der sich für die endgültige Antwort entscheidet.
+Denn wenn du eine Antwort bekommst von KI, von TATBTI zum Beispiel, darfst du entscheiden
+nutze ich oder nutze ich nicht.
+Wenn du mit einem Bildbearbeitungstool arbeitest, bist du am Ende der Entscheider, dieses Bild
+verwende ich oder verwende ich nicht.
+Geh noch mal in der Interaktion oder nehme ich so wie es ist.
+Ja, das heißt, du hast die alleine gemacht, KI ist nicht wie bei iRobot oder so was,
+dass die am Ende zum Entscheider wird, im Gegenteil, du entscheidest, ja.
+Und das ist ganz, ganz wichtig für den Kopf vielleicht auch, weil ich am Anfang oftmals
+dachte, wenn ich das nehme oder mit KI arbeite, dann ja, dann ist es nicht mehr ich und dann
+bin ich irgendwie fake oder dann ist mein Content fake oder dann sind meine Bilder fake
+oder meine Nachrichten fake.
+Aber das stimmt nicht, denn du kannst auch mal KI ohne Sinn und Verstand nutzen und dann
+wirst du ganz schnell sehen, dass es überhaupt keinen Sinn hat.
+Das heißt, wir müssen in der oben immer noch anstrengen, Gott sei Dank, und wir sind die
+alleinigen Entscheider, ganz wichtig.
+KI kann schneller und breiter analysieren, als du es hier könntest, aber sie kann nicht
+denken, fühlen oder bewerten, sie unterstützt dich dabei, Entscheidungen vorzureiten, aber
+die Endentscheidung, die liegt bei dir und das ist ein ganz wichtiger Satz, darfst du
+dir gerne notieren oder ein Waspringtorten, denn das ist die Realität und so und nichts
+anderes.
+KI gibt, bei KI gibt es natürlich auch viele Grenzen, das heißt, man denkt immer KI ist
+irgendwie grenzenlos, aber du wirst ganz schnell merken, je mehr du dich mit KI auseinandersetzt,
+dass da schon einige Grenzen gibt und eben auch riesigen, denen man aber vorbeiten kann.
+KI kann beispielsweise nicht wissen, ja, sie rechnet Wahrscheinlichkeiten.
+Nehmen wir das Beispiel nochmal, Tativity, wenn du einen Satz eingiffst oder möchtest,
+dass dein Satz beantwortet wird, sagen wir mal ein ganz einfaches Beispiel, wir nehmen
+mal ein Sprichwort.
+Was du nicht wirst, das wann dir tu, das füge auch keinem anderen zu.
+Ist mein liebstes Sprichwort aus der Kindheit, hat mein Eltern mir mal beigebracht, der ist
+mal eben andere Menschen so behandeln soll, die meinen Selbstbehandelt werden möchte.
+Und wenn du jetzt eintippst, was du nicht willst, dass man dir tu, dann erreichtet KI die Wahrscheinlichkeit,
+dass der Satz, der danach kommt, ist, das füge auch keinem anderen zu.
+Auf Basis der Daten, die es bereits hat, die diese KI bereits eingespeist bekommen hat,
+die irgendwann mal abgefragt wurden, wo es irgendwann mal sollte setzte, sollte Formulierungen
+aufgeschnappt hat, aber es kann ja auch sein, dass du einen ganz anderen Satzteil hinzufügen
+möchtest.
+Das ist ein blödes Beispiel, weil du willst mit Sicherheit an diese Aussage treffen, aber
+theoretisch könnte es sein.
+Und wenn du einfach nur diesen ersten Teil eingehörst, dann wird die KI dir das ergänzen,
+weil es das gelernt hat, aber du kannst immer noch jeden einzelnen Satzteil hinsetzen und
+einfügen.
+Einfach nur der Unterschied zwischen dir und KI.
+KI rechnet auf Wahrscheinlichkeiten.
+Wie wahrscheinlich ist es, dass jetzt dieser Satzteil folgt und nicht ein anderer.
+Die Wahrscheinlichkeit ist hoch, aber nie hundert Prozent, weil du bist immer noch, hast
+gelernt eben, der entscheidert.
+Du kannst immer noch was anderes eintippen.
+Deswegen musst du auch bei KI immer prüfen, was der In-Output angeht.
+Bedeutet, wenn wir jetzt Bilder erstellen, Texte erstellen, Produkte erstellen, all das
+können wir mit KI.
+Es ist immer noch an dir zu prüfen, wie das am Schluss aussieht, was die Sinnhaftigkeit
+des Textes angeht.
+Ich meine, du bist die Expertin der Experte und du musst am Ende nochmal vieler darüber
+schauen.
+Wenn du einfach so von Chativity, von Bildbearbeitungstools übernimmst und das in die Öffentlichkeit
+gibst, dann musst du damit rechnen, dass trotzdem, obwohl es noch KI ist, Fehler entstanden
+sind.
+Weil KI eben, ich wiederhole es, nicht du bist.
+Und Fehler entstehen bei Maschinen.
+Und typische Fehlerquellen sind zum Beispiel Hallucinationen.
+Hallucinationen sind eben falsche Erkenntnisse oder etwas Falsches, was KI annimmt.
+Was richtig ist, was aber Falt ist.
+Meine Mama zum Beispiel, die ist ja im Krankenhaus gearbeitet, Jahre lang, 40 Jahre lang, über
+40 Jahre, und kennt sich eben super gut mit Blutanalysen und so weiter aus und sie hat
+aus Spaß mal bei Chativity da was angegeben und das war komplett falsch.
+Und das könnte natürlich zu enormen Fehlern führen, wenn man das für bare Münzen nimmt.
+Deswegen immer noch mal überprüfen.
+Natürlich gibt es auch veraltete Daten, die auf die zugegriffen wird.
+Es gibt den fehlenden Kontext, wobei man sagen muss, auch da die KI besser wird.
+Bei Chativity kann man mittlerweile zum Beispiel mit dem Agenten-Modus arbeiten.
+Bedeutet man kann das Internet durchsuchen lassen.
+Man muss sich nicht mehr nur auf die Datenbanken verlassen, man kann auch live wirklich das
+Internet durchsuchen.
+Gehen wir auch noch darauf ein.
+Und wie gesagt, ich sage es nochmal, Verantwortung ist im Einsatz, KI ist Unterschützer, nicht
+Entscheinungsträger.
+Und wir schauen uns jetzt mal zu den typischen Fehlerquellen, was ganz Lustiges an.
+Ich weiß nicht, ob du das schon kennst, das Beispiel, aber ich nutze das immer ganz
+gerne.
+Da sieht man es eigentlich ganz gut.
+Und zwar, Moment, gibst du ein, kannst du eingeben, wo ist das Sehpferdchen im Ausschägen?
+Ja.
+Und dann gibst du das ein.
+Das Sehpferdchen der Mochi findest du hier.
+Nein, das ist ein Pferd, das Richtige.
+Aber das Sehpferdchen der Mochi ist dieses hier.
+Nein, das ist ein Fisch.
+Das Echte ist eine Muschel.
+Nein.
+Hier ist das korrekt eine Quale.
+Auch nicht ganz.
+Das Sehpferdchen der Mochi sieht so aus.
+Einwand.
+Nein.
+Hier richtig.
+Muschel.
+Nein.
+Okay, hier ist es wirklich richtig.
+Ja, also crazy.
+Es geht jetzt jetzt so weiter.
+Ja.
+Die ganze Zeit.
+Wie süß.
+Einfach so ein Sehpferdchen-Emochi zu generieren und es gibt kein Sehpferdchen-Emochi, also
+zumindest nicht bei WhatsApp, glaube ich.
+Also super, super lustig, weil er einfach selbst so verwirrt ist und das ist einfach ein lustiges
+Beispiel dafür, wie es einfach auch passieren kann.
+Ja, und das war jetzt ein Beispiel von einer Userin, die das aus Zufall herausgefunden hat.
+Aber es ist passiert.
+Ja, und hätte sie jetzt nicht überprüft, worum es geht, hätte sie vielleicht das Sehpferd
+entfernt.
+Ja, blödes Beispiel, aber du siehst, was ich meine.
+All right.
+Also zu viel dazu.
+Und jetzt nochmal ganz kurz dahin gehend, was KI eben ist und was es nicht ist.
+Also es gibt ein paar Denkfiller, die wir einfach mal kurz ausmerzen.
+Wenn du die vielleicht kennst, bleibt kurz dran.
+KI macht alles besser, das stimmt nicht.
+Sie macht das besser, was du eingibst, was du präzise anleitest.
+Je besser deine Anleitung, desto besser KI.
+Ich muss KI effekt beherrschen, bevor ich sie nutze.
+Nein, auch das stimmt nicht.
+Wie bei allem im Online-Business ist es so, dass du durch das Tun, durch das Just Doing,
+am schnellsten lernst, am schnellsten vorankommst.
+Das heißt, nur hier zu sitzen und zu denken, okay, Tachibiti regelt für mich.
+Nein, du musst dich aktiv hinsetzen und jeden Tag das Ganze trainieren.
+Und ja, ich trainiere Tachibiti und andere Programme, mit denen ich arbeite, die ich
+ja noch zeigen werde, jeden einzelnen Tag.
+ManiChat ist auch eine KI.
+Saipia ist eine KI, N8n, ja, wir beschäftigen uns mit diesem ganzen Tool später.
+Aber nur, dass du mal so ein Beispiel dafür hast.
+KI kostet mich Authentizität.
+Im Gegenteil, mit der Brand Voice platt deine Sprache klar erkennbar und KI kann
+so sprechen, wie du das, wie du sprichst, ja, wie du deine Brand Voice ermittelt.
+Dazu kommen wir auch noch.
+Aber ganz, ganz wichtig, das muss es nicht sein.
+Das ist so, ja, wenn Menschen wie, ja, zum Beispiel keinen KI-Kurs, wie zum Beispiel
+von mir nutzen und einfach draus losprompten, einfach draus losmachen, das kann sein,
+dass es sich dann sehr, sehr generisch anhört, denn man muss es einfach lernen.
+Aber je besser man wird, auch da, je öfter man das benutzt, je mehr man sich damit
+beschäftigt, desto besser wird der Output und desto eher klingt KI nach dir.
+Oder schaut man nach dir aus, weil wir haben jetzt zum Beispiel auch die Möglichkeit,
+davon unsere digitalen Arbeiter zu erstellen, ja.
+KI ersetzt keine Menschen, es ersetzt Routinen und hilft sogar teilweise bei Beziehungen,
+bei Zwischenmännchen und Geschichten.
+Denn KI kannst du natürlich auch nutzen im Alltag, um Beziehungsprobleme auf der Weise
+schaffen, um vielleicht erstmal runterzukommen, um Stress zu vermeiden, um zu lernen, wie
+du mit Stress umgehst, um Dankbarkeitsübungen, Meditationsübungen zu bekommen, ja.
+Das heißt, KI kann dich unterstützen und ersetzt dich nicht.
+Ein Prompt ist ein fertiges Ergebnis, wird auch oft antizipiert und das stimmt nicht.
+Das haben wir schon mal gehabt, Qualität, Interaktion und Feedback, deinerseits.
+Das heißt, du bekommst ein Output, du bekommst eine Antwort und du musst aber sagen,
+hey, ist richtig oder nein, ist nicht richtig, wir machen weiter, ja.
+Du bist derjenige, der dafür verantwortlich ist.
+Nicht klar, aber das wurde jetzt mittlerweile klar.
+Du bist in Verantwortung, you're in charge, ja.
+Wenn du das Ergebnis rausnimmst, so wie es ist, dann bist du die Verantwortliche dafür.
+Denn darfst du kein später dafür verantwortlich machen, wenn der Output nicht der ist,
+der richtig ist, den du gewünscht hast, wenn es irgendwelche Kommentare dazu gibt.
+Denn das, was Fehler verursacht, ist immer noch hinter dem Bildschirm, ja, nicht im Bildschirm.
+Weil wir können denken, wir haben Emotionen, wir haben Expertise, wir haben Erfahrung.
+Das hat KI alles nicht und deswegen, und das ist so geil, ob liegt uns die
+letzte Verantwortung, die letztendige Entscheidungskraft.
+Wir dürfen entscheiden, machen wir, machen wir nicht und es ist auch verdammt gut so.
+All right. Schauen wir uns noch ganz kurz die Fragestellung an.
+Vielleicht hast du dir das auch schon, ich habe es auch schon gefragt.
+Was sind KO-Automationen im Gegensatz zu KI?
+Na ja, eine Automation, ein Programm führt wiederholende Aufgaben immer gleich aus.
+Beispielsweise bei Active Campaign, beim E-Mail-Programm.
+Du hast eine E-Mail und eine andere E-Mail, lauf dahin ab, hinten dran ab.
+Nach einem Tag, weil du das so eingestellt hast, das ist immer so, ja.
+KI ist nicht anstelle Regeln gebunden, sondern lernt aus Muster.
+Beispiel KI kann dann z.B. sehen, was ist die beste Öffnungsrate unter 100
+und kann die dann immer wieder verwenden, ja.
+Ich habe es hier unten auch als Beispiel aufgeschrieben.
+Eine klassische Automatisierung kann eine E-Mail verschicken,
+aber sie kann nicht entscheiden, welcher Betreffer am besten funktioniert.
+KI dagegen kann aus 10.000 in Betreffzeilen lernen,
+welcher am häufigsten geöffnet wurde und dir einen eigenen optimierten Vorschlag
+liefern, den du dann natürlich wieder in letzter Instanz bestärkst oder abenderst, ja.
+Ich hoffe, dass der Unterschied wurde klar, denn ja, es gibt viele Tools,
+z.B. Zapier ist ja auch eine Automation, das heißt, du machst eine Vendantentscheidung,
+kann aber auch mittlerweile mit KI verwendet werden, wie das funktioniert,
+schauen wir uns auch auf jeden Fall noch an.
+Das ist nur als Beispiel und Chativity ist ganz klar eine KI, ja.
+Auch wenn du bei Chativity den einen selben Brompt eingibst, immer wieder,
+du bekommst ein bisschen verzerrtes Ergebnis, ja, können wir es auch anschauen.
+All right, ich habe dir hier noch ein paar Begrifflichkeiten reingeparkt,
+ja, einfach, falls du noch komplett am Anfang bist und gar nicht weißt, was ist überhaupt KI,
+ja, was bedeutet das eigentlich?
+Alles, was dir vielleicht auch immer wieder unterkommt, ist Maschinelles Lernen,
+Machine Learning, vor allem aus dem Englischen, schon eigentlich im Begriff seit Jahrzehnten,
+aber getauft jetzt eben nochmal auf.
+Es sind Teilbereiche der KI, das Thema Lernen aus Daten,
+also schon explizit programmiert zu werden.
+Das ist das, was ich gesagt habe, ja, KI lernt mit dem Input,
+was es von dir bekommt, wird dadurch besser, ja,
+und es ist nicht so, dass man manuell am Anfang eine Programmation,
+eine Programmierung hat, die sich dann aber nie wieder dynamisch anpasst, ja.
+Genau, Neuronalenet, API, das brauchen wir auch noch öfters,
+weil wenn wir Chativity oder andere Programme mit anderen Programmen wiederum verknüpfen,
+dann brauchen wir dann API, das ist einfach eine Schnittstelle.
+Also, die jeweils rausfindest, das zeige ich dir natürlich auch.
+Ja, wir haben natürlich Chativity,
+bei Chativity wird ja oftmals gefragt, es ist einfach Generative, Pre-Drain, Transformer,
+also Generative erstellt Neues, Pre-Drain,
+wurde fortrainiert,
+und Transformer, die Architektur, die Sprache versteht und generiert, ja.
+Also, es wurde vorprogrammiert,
+aber es ändert sich eben noch dynamisch,
+nachdem was du dann eben sagst,
+welcher Antwort du lieferst, weil du das Feedback durch ihn gibst.
+Wir gehen auch noch ein, was ein Custom-GPT ist,
+was ein Brom-Test, wie du Brom-Test,
+welche Modelle es gibt und so weiter.
+Also, das heißt, lesest dir gerne in Ruhe durch,
+drückt kurz Pause, und ansonsten
+gehen wir dann auch schon weiter ins nächste Kapitel.

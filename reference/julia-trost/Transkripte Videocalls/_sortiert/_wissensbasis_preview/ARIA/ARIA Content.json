@@ -1,0 +1,69 @@
+{
+  "title": "ARIA Content: Der monatliche Contentplan mit Julias GPT-Assistentin",
+  "source_file": "ARIA Content.txt",
+  "source_speaker": "Julia Trost",
+  "course": "ARIA",
+  "type": "tutorial",
+  "core_topic": "Wie du ARIA nutzt, um in wenigen Minuten einen kompletten Contentplan mit Hooks, Captions, Carousels und Stories zu bauen.",
+  "summary": "Julia zeigt live, wie sie ARIA startet, sie mit dem Onboarding-Dokument füttert, sich durchs Hauptmenü klickt und sich von Monatsplan über Hooks bis zu einer fertigen Instagram-Story-Sequenz alles bauen lässt. Kernprinzip: ausführlich briefen und iterativ nachschärfen. Demo-Thema ist Julias Mitgliedschaft 'Nur die Liebe zählt' rund um Dating und Selbstliebe mit 50.",
+  "key_takeaways": [
+    "ARIA lebt vom ausführlichen Briefing – je genauer, desto besser.",
+    "Arbeite mit Folge-Prompts statt Einzelversuchen.",
+    "Hook → Caption → Story lässt sich in einem Durchgang durchziehen.",
+    "Das Onboarding-Dokument zahlt sich in jeder Session aus, wenn es einmal sauber steht."
+  ],
+  "strategies_frameworks": [
+    {
+      "name": "Ausführliches Briefing",
+      "description": "Je mehr Details ARIA bekommt, desto brauchbarer der Output."
+    },
+    {
+      "name": "Iteratives Prompting",
+      "description": "Nicht einmalig anfragen, sondern Schritt für Schritt nachschärfen."
+    },
+    {
+      "name": "Content-Kaskade Hook -> Caption -> Story",
+      "description": "Ein etablierter Hook zieht sich durchs gesamte Content-Paket und wird sukzessive ausgebaut."
+    }
+  ],
+  "tools": [
+    {
+      "name": "ARIA",
+      "context": "Julias spezialisierte GPT-Assistentin für Contenterstellung. Monatliches Passwort, Onboarding-Dokument, Hauptmenü mit Profil-Audit, Contentplan, Hooks, Captions, Carousels, Stories, Hashtag/SEO, Analytics."
+    },
+    {
+      "name": "ARIA Extra / Story Sequences",
+      "context": "Spezialmodul in ARIA für emotional aufgebaute Story-Reihen."
+    },
+    {
+      "name": "Elevate",
+      "context": "Julias Programm mit wöchentlichen Live-Calls; ARIA ist inklusive."
+    },
+    {
+      "name": "Instagram",
+      "context": "Zielplattform für Hooks, Captions, Carousels und Stories."
+    }
+  ],
+  "action_steps": [
+    "Onboarding-Dokument speichern und bereitlegen.",
+    "Monatliches Zugangspasswort im Kurs holen.",
+    "ARIA starten und Onboarding-Dokument hochladen.",
+    "Bei zu knapper Zusammenfassung um ausführlichere Version bitten.",
+    "Hauptmenü öffnen und 'Monatlicher Contentplan' wählen.",
+    "Die vier Punkte beantworten: Monatsziel, zu bewerbendes Produkt, Posting-Frequenz, Format.",
+    "Inhaltliche Richtung festlegen (z.B. 'ermächtigend und inspirierend').",
+    "Gesamten Plan generieren lassen.",
+    "Zusätzliche Hooks nachfordern (z.B. mit Zahlen).",
+    "Für eine Hook eine ausführliche Caption mit drei Handlungsempfehlungen anfordern.",
+    "Für dieselbe Hook eine Story-Sequenz über acht Slides generieren lassen."
+  ],
+  "related_topics": [
+    "Prompting",
+    "Content-Strategie Instagram",
+    "KI-gestützte Content-Erstellung",
+    "Hooks und Captions"
+  ],
+  "patricia_anwendungsnotiz": "",
+  "word_count_original": 1400,
+  "word_count_cleaned": 900
+}

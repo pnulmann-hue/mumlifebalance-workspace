@@ -1,0 +1,24 @@
+{
+  "name": "telegram-userbot",
+  "version": "1.0.0",
+  "description": "Patricias Telegram Userbot — liest Business-Gruppen mit und fragt via DM was gespeichert werden soll",
+  "main": "dist/index.js",
+  "scripts": {
+    "login": "tsx src/login.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "start:prod": "node dist/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.88.0",
+    "@supabase/supabase-js": "^2.103.0",
+    "dotenv": "^16.4.5",
+    "openai": "^6.34.0",
+    "telegram": "^2.26.22"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

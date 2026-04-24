@@ -1,0 +1,538 @@
+Wir starten einmal direkt in das Thema Bilderstellung mit KI ein und ich möchte da einfach mal so ein paar Beispiele zeigen,
+wie ich zum Beispiel mit KI generiert habe, das hier bin auch nicht ich.
+Das ist alles KI, obwohl das schon in meinen Augen sehr, sehr ähnlich aussieht.
+Auch das hier finde ich ganz cool.
+Oder das hier natürlich mit einem Top-Body oder auch nur das hier.
+Man kann wirklich alles mögliche machen.
+Das Geile ist halt, dass wirklich der Fantasie keinerlei Grenzen gesetzt sind.
+Und ich habe einfach mal so ein bisschen romexperimentiert und mit Sicherheit.
+Es geht auch, dass meine Bilder noch besser werden, das hier zum Beispiel habe ich aussortiert.
+Das wollte ich dir trotzdem einmal zeigen, weil das sieht ja jetzt doch nicht so sehr wie ich aus.
+Es hat eine gewisse Ähnlichkeit, aber wir wollen diese KI-Klone von uns ja nicht nur als Bilder verwenden,
+sondern auch als Video, das siehst du dann im nächsten Schritt.
+Und wenn wir das wirklich als Video machen, dann hat es schon einen krassen Unterschied zu mir, zu meinem Ausdecken.
+Deswegen muss man da einfach sich ein bisschen ran tasten.
+Genau, also das sind alles so Sachen, die man damit machen kann.
+Und was wir dann im nächsten Schritt machen, sind darauf basierend dann KI-Videos erstellen.
+Und das ist nochmal ein Schritt cooler.
+Und das finde ich eigentlich auch richtig gut.
+Ja, also ich auch nicht.
+Also kann auf jeden Fall was.
+Und ob das hier jetzt überhaupt irgendwas gepackt hat, das sehen wir uns gleich an.
+Das ist einfach nur so ein Test, was ich gemacht habe.
+Hallo, das sieht doch nach einem richtig, richtig guten Paar aus.
+Ja, also ich habe der Zeit im Teil 1 geguckt und habe das irgendwie bewertet.
+Ja.
+Ich war immer eine derjenigen, die gedacht hat, dass KI nur etwas für große Unternehmen ist
+und dass ich die Technik dahinter nicht beherrschen kann.
+Ja, also du siehst schon, es sieht so aus wie es aussieht.
+Ja, es ist einfach nicht perfekt.
+Das bist nicht du, das wirst auch nicht du sein.
+Es ist ja klar, wir wollen ja extra KI, aber es ist schon echt extrem nah daran.
+Und das finde ich so cool.
+Und wie du das erstellst, das zeige ich dir jetzt.
+Und ich habe richtig Bock drauf, weil das macht einfach so Spaß.
+All right.
+Also wir müssen im ersten Schritt mal ein Bild von uns erstellen.
+Und das machen wir mit der App fell.ai.
+Das heißt, du gibst oben einfach, ich kann ja auf den Link hinterlegen, fai.ai ein
+und dann musst du dich registrieren.
+Klar, das ist in jedem Programm so, was wir nutzen.
+Und ich kann ja mal kurz rausgehen.
+Lockout.
+Du hast hier beim Pricing, sehen wir schon verschiedene Stufen.
+In dem Fall ist es jetzt so, dass wir mit was arbeiten wir.
+Genau, hier wir arbeiten mit Flux.
+Das heißt 0,04 Dollar kostet es für 25 Bilder.
+Es ist ein Dollar.
+Das heißt, du siehst schon, es ist ein anderes System,
+wie normalerweise Programme arbeiten.
+Das heißt, man hat jetzt keine monatliche Gebühr oder so, was schon mal cool ist,
+sondern man bezahlt nur für die Bilder, die man eben generiert.
+Und ich habe mich da jetzt einfach angemeldet.
+Ich mache das meistens mit meinem Google Account, weil ich den ja eh habe.
+Du kannst es machen mit deiner E-Mail-Adresse,
+ganz normal Passwort festlegen und so weiter.
+Dann kommst du hier auf dieses Dashboard.
+Und das sieht schon ein bisschen verwirrend aus.
+Es ist ein sehr, sehr krasses Tool.
+Liefert deswegen auch krasse Ergebnisse.
+Aber es ist halt auch, wenn man nicht weiß, wie man es benutzt,
+ich kann dir das mal zeigen, wenn man hier zum Beispiel das eintippt, ja.
+Also es ist alles irgendwie so verkodet.
+Und du gibst einfach jetzt wirklich, also,
+werle am besten gar nichts anderes aus, wer braucht nichts anderes,
+als dass du hier oben auf Search gehst
+und einfach nur eingibst fast Training.
+Ja, ich, also du siehst ja F-A-S-T und dann der Zeichen Training.
+Und dann klickst du einfach hier drauf
+und all diese anderen Geschichten, das brauchen wir gar nicht.
+Also das nutzt du nie.
+Du gehst immer nur hier drauf.
+Flux minus Lora minus Fast minus Training.
+Das brauchen wir.
+Dann bist du in einer Übersicht, die so aussieht
+und bei dir ist jetzt hier rechts noch nichts.
+Also da ist keiner Training History hinterlegt.
+Das bekomme ich jetzt bei mir nicht weg,
+deswegen kann ich es ja leider nicht ohne zeigen,
+aber bei dir ist einfach hier rechts nichts.
+Hier links müsste es eigentlich genauso aussehen.
+Was wir jetzt machen ist,
+wir geben der KI jetzt Input von uns,
+wie wir aussehen.
+Das heißt, du gehst hier auf Ad Image, also für Gebild hinzu.
+Und dann guckst du dir Bilder an, die du von dir hast,
+am besten so gut ausgeleuchtet und so realistisch an dir dran
+und so qualitativ hochwertig wie nur eben möglich.
+Und je besser das ausgeleuchtet, je einfacher Hintergrund,
+also einfach eine weiße Wand oder sowas,
+ist zum Beispiel perfekt, desto besser.
+Ja, ich habe tatsächlich das einfach mal auf die Schnelle gemacht
+und auch schon gute Ergebnisse erhalten.
+Du hast die Ergebnisse ja gerade eben gesehen.
+Es kann natürlich noch optimiert werden
+und der Avatar wird besser, je besser dein vorheriges Bild ist.
+Und ich habe zum Beispiel einfach nur solche Bilder hier reingepackt.
+Ich kann es dir mal groß zeigen.
+Da siehst du schon, die waren jetzt nicht besonders gut dafür ausgelegt,
+aber ich wollte einfach mal...
+Kann ich das machen?
+Genau, ich wollte einfach mal...
+Besten gebe ich in meinem ganzen Bild schon frei.
+Jetzt musst du so das sehen.
+Mal testen, wie das funktioniert.
+Also, ich sage es dir ganz ehrlich und ich zeige es dir.
+Das sind die Bilder, die ich hochgeladen habe.
+Kein besonders gutes Licht, ja.
+Das hier schon ein bisschen heller, aber auch nicht wirklich gut.
+Und was habe ich Ihnen noch gegeben?
+Ich habe noch ein Bild genommen, wo ich lache.
+Das hier jetzt auch in der Bahn aufgenommen,
+auch nicht wirklich gut, und das hier.
+So, und du solltest wirklich einfach gute Bilder verwenden,
+von der weißen Wand, wo du gut ausgeleuchtet bist,
+was vielleicht deine Mama, dein Papa, dein Freund,
+dein Partner, Partnerin, wie auch immer, von dir einfach aufnimmt.
+Und dann werden die Ergebnisse auch viel besser.
+Aber nichts hast du trotz, weil ich dir jetzt zeigen wollte,
+weil auch diese Ergebnisse liefern schon extrem gute Outputs.
+Okay, und dann gehst du einfach, wie gesagt, auf Add Image,
+also Bild hinzufügen, und dann fügst du eben die Bilder aus,
+die du willst.
+Und ich mache das jetzt mal mit dir mit.
+Du kannst das natürlich auch direkt parallel mitmachen
+oder erst mal zugucken.
+Wir nehmen jetzt mal die hier.
+Und dann siehst du die hier drin.
+Ja.
+Ich habe bis eins aufgenommen.
+Nee, zwei, wo ich lache.
+Eins, wo ich so schmunzle.
+Alle mit Brille, einmal mit langen, einmal mit Klattenhahn,
+einmal mit Welligen, einmal mit Klattenhahn.
+Und was du dann machst,
+ist, dass du hier oben einfach alles lässt.
+Du machst ein Trigger Word, zum Beispiel,
+kannst du das Avatar nennen?
+Ich habe Mainz einfach Juli genannt.
+Also ich würde es einfach deinen Namen reingeben,
+weil dann kannst du später schreiben, basierend auf.
+Und dann musst du halt das Trigger Word kommen, basierend auf Julia,
+basierend auf Lukas, basierend auf Manuel, basierend auf Lisa.
+Und dann kreatet ihr den Twin.
+Das heißt, merkt ihr das Wort auf jeden Fall, was du da reinkommst.
+Packst.
+Okay.
+Das lassen wir so.
+Bei morr geben wir einfach auf hier 500.
+Das heißt, das sind einfach je höher dieser Wert ist,
+dass so besser sind die Ergebnisse im Schluss,
+das so länger dauert es auch.
+Aber trotzdem können wir das auf jeden Fall machen.
+Und...
+Genau.
+Ansonsten lassen wir, glaube ich, alles so.
+Ich gucke noch mal ganz kurz hier.
+Ja, nee.
+Genau.
+Ansonsten lassen wir, glaube ich, alles so.
+Trigger Word haben wir gesetzt.
+Okay.
+Und dann gehen wir einfach auf Start.
+Und das ist das teuerste.
+Das kostet zwei Dollar.
+Und dann siehst du schon, wenn du das machst,
+dann müsst du das bei dir jetzt so aussehen,
+dass hier oben im Progres steht.
+Und dann siehst du einfach, okay, der arbeitet jetzt.
+Ja, dann nimmt jetzt diese Bilder und erstellt daraufhin
+deinen
+digitalen KI-Twin.
+Wenn wir ihnen dann noch die passende Anweisung geben,
+zeig ich dir gleich.
+Und jetzt müssen wir erstmal warten, bis das prozisiert wurde.
+Ja.
+Ich aktualisiere mal zwischendurch.
+Das dauert halt einfach ein bisschen.
+Du kannst einfach ein bisschen Tee trinken,
+rumlaufen, warten.
+Und wenn es fertig ist, sieht es dann so aus,
+dass hier komplite steht, wie bei mir hier in dem Grünen.
+Ja.
+Und dann siehst du auch Trigger Word.
+War das, war das, war das.
+Ich habe einfach ein bisschen rum experimentiert,
+Steps 5000 und so weiter.
+Ich arbeite immer mit dem hier, Julia 2,
+weil mir der am besten Ergebnis so geliefert hat.
+Ich habe da einfach mit experimentiert,
+welche Bilder ich reingebe.
+Was kommt dabei raus?
+Ja.
+Genau.
+Okay.
+Also, wir aktualisieren mal nochmal,
+gucken, ob es schon da ist.
+Erfahrungsgemäß braucht es einfach noch ein bisschen.
+Wir warten einfach kurz,
+und dann machen wir gleich zusammen weiter.
+So, das hat jetzt echt lange gedauert,
+aber macht nichts.
+Deswegen habe ich jetzt kurz pausiert.
+Und wenn es bei dir auch so lange gedauert hat,
+es kann einfach vorkommen.
+Kein Stress.
+Irgendwann wird es auf komplite springen
+und dann können wir weitermachen.
+Dann klickst du auf Run Inference.
+Ich habe jetzt echt extrem schlechte Bilder genommen.
+Deswegen weiß ich gar nicht, ob da irgendwas rauskommt.
+Wenn es zu schlecht ist,
+dann zeige ich es euch einem anderen Beispiel von mir.
+Also nutze wirklich gute Bilder.
+Lass dich aber wie gesagt auch nicht davon abhalten.
+Wenn du jetzt wirklich gar nichts Gutes hast,
+dann probiere dich einfach mal aus
+mit den Bildern, die du hast.
+So.
+Und jetzt ist es ähnlich wie bei der GPT,
+dass wir einen Prompt einfügen müssen.
+Also einen Befehl, eine Beschreibung.
+Wie soll der Arbeiter aussehen?
+Und dafür gibt es den Flux GPT.
+Und da gibst du einfach bei GPTs erkunden.
+Gibst du einfach Flux ein.
+Und dann holst du dir hier den Flux Promptor mit diesem S.
+Ich kann dir den auch verlinken.
+Und ich habe dir ja schon erklärt, was ein GPT ist.
+Das heißt, das wurde vorprogrammiert für uns,
+dass wir das nutzen können.
+Wir müssen die Programmierung nicht mehr machen.
+Und das ist einfach geil.
+Deswegen nutzen wir das auf jeden Fall.
+Und hier schreiben wir jetzt einfach rein.
+Beziehungsweise ich nutze die Tiktierfunktion.
+Das habe ich dir auch schon erklärt.
+Das mache ich immer, weil es einfach leichter ist.
+Und du kannst natürlich machen, wie du magst.
+Also, wir müssen uns jetzt einen Prompt überlegen,
+eine Beschreibung, wie der Arbeiter später aussehen soll.
+Also, ich habe dir ja ein paar Beispielbilder gezeigt.
+Hier ist es einmal in so einem Lichtermeer,
+hinten dran so komische Qualen.
+Hier sitze ich in den Wolken.
+Hier bin ich bei einer Pressekonferenz.
+Hier sitze ich in einem Büro.
+Wir müssen dem jetzt sagen, wo wir sitzen wollen.
+Und je spezifischer das ist und je genauer du das machst,
+desto besser.
+Und natürlich ist es deine Schuld,
+wenn das später verkackt ist.
+Weil, das siehst du dann vielleicht gleich auch.
+Der kann ja nicht wissen, was wir wollen.
+Das heißt, wir müssen dem alles beschreiben,
+auszusehen haben, unsere Kleidung, die Art, die Farbe und so weiter.
+Aber dass du das nicht immer selbst machen musst,
+gibt es eben diesen Prompt,
+der das für dich schon ganz gut generiert.
+Wir fangen einfach mal an.
+Ich leg wie immer einfach drauf los,
+mach einfach so wie es dir in den Sinn kommt
+und du kannst immer noch optimieren.
+All right.
+Ich möchte gerne...
+Ah, jetzt verbindet sich schon wieder mein Handy.
+Ist das so nervig?
+Okay.
+Machen Sie mal von vorne.
+Erstelle mir bitte einen Prompt
+für fell.ai
+und ich möchte, dass mein Avatar
+in einem Dschungel
+auf dem Boden sitzt,
+um ihn darum lianen, palmen,
+große Bäume
+und vielleicht auch ein paar Vögel
+und mein Avatar soll ein
+cooles Dschungel-Outfit tragen
+im Levercraft-Style
+und in die Kamera schauen.
+So.
+Und das geht natürlich noch viel spezifischer.
+Aber wir lassen Ihnen jetzt erstmal
+eine Inspiration uns liefern,
+denn darauf basieren können wir dann später
+auch nochmal den Prompt verändern.
+Und er gibt dir in den meisten Fällen
+drei Versionen raus,
+also bei mir war es bisher immer drei Varianten
+und dann kannst du das einfach mal austesten.
+Du kopierst dir das jetzt hier,
+das ist die Variation 1,
+er macht noch eine 200 Dritte
+und du kannst es natürlich auch dir einmal durchlesen.
+Brauchst du aber nicht,
+wir brauchen aber auf jeden Fall den Prompt auf Englisch.
+Die Prompt bitte auf Englisch
+für fell.ai, denn fell.ai
+ist eine amerikanische Plattform
+und deswegen brauchen wir da englische Prompts.
+Okay, und dann kopieren wir das
+und natürlich ist es gut, wenn es auf Deutsch rauskommt,
+weil dann kannst du, wenn du nicht so gut Englisch kannst,
+dir das nochmal durchlesen.
+Du kannst aber auch jederzeit sagen,
+wenn du es auf Englisch rausbekommst,
+du machst das direkt auf Englisch,
+kannst das natürlich nochmal übersetzen in Deutsch,
+wenn du unbedingt wissen willst, was er schreibt.
+Und dann kopieren wir das hier rein
+und er schreibt
+Comfortant Female Abata.
+Aber wir wollen nicht irgendein Abata,
+sondern deswegen haben wir das eben benannt
+und weißt du noch, wie wir es benannt haben,
+ich weiß es nicht mehr.
+Wie haben wir es benannt,
+Abata, genau, Abata
+und da schreibe ich es normalerweise Juliereien
+Julia rein, oder Test, oder Hencingline, oder wie du das dann halt benenzt, ja. Habt ihr eben gesagt,
+wir geben dem Ding einen Namen. Also avatar sits grounded in the heart of a dense jungle. So,
+das andere können wir so lassen. Und das lassen wir auch alles so und dann gehen wir hier auf more.
+Und dann stellen wir hier den Output ein. Also welches Größe oder welches Format es hat.
+Vier-Eckig oder Porträt 3 zu 4, Porträt 9 zu 16, Querformat. Und ich mache meistens immer so,
+dass es für Instruction halt gut verwendbar ist, für Reals und für Stories, weil das einfach mein
+Ziel dahinter ist. Und dann können wir das auch alles so lassen. Und hier, dass ich mir immer
+zwei Bilder ausgeben. Du kannst ja auch vier Bilder ausgeben lassen. Nur Denk dran, wir handeln mit
+Coins. Das heißt, du brauchst mehr Coins. Je mehr Bilder du ausgespuckt haben möchtest. Und hier
+ist zum Beispiel auch kannst du höher machen, wenn du möchtest, dass es mehr im Original dran ist.
+Ich habe bisher tatsächlich die besten Ergebnisse einfach mit den Default-Einstellungen bekommen,
+also mit 3,5 und lass das auch. Also ich würde dir auch empfehlen, das zu lassen.
+Genau. Und jetzt siehst du schon, ich bin 8 Dollar im Minus und bei dir wird es wahrscheinlich auch bei
+0 sein oder bei minus 2 oder so. Das heißt, wir müssen hier, ich klick immer rechts drauf, damit
+ich es aus diesem Fenster nicht wegkomme, erstmal unser Budget aufladen. So und das ist das Einzige,
+was wir halt da bezahlen müssen. Und du kannst hier 10, 20, 50 Dollar aufladen oder halt eben
+einen individuellen Betrag. Ich mache es erstmal 20 Dollar drauf. Und wie gesagt, es ist super,
+super günstig. Das Einzige, was am Anfang eben ein bisschen Geld kostet, ist eben diese 2 Dollar
+und die Erstellung dieses Avatars. Aber ansonsten ist das relativ günstig.
+So. Da gibst du halt einfach deine Bankdaten ein. Hier we go. Und jetzt siehst du hier oben schon
+11,05 Euro und der wird das ja jetzt auch gleich aktualisieren. So und wir machen jetzt eben,
+wir lassen alles, was da ist, eh eingelockt und geben ihn hier auf 2 und dann gehen wir aber nur auf
+Run. Und dann müsst ihr auch aktualisiert haben. Genau, das geht immer ziemlich schnell. Und bei
+Run bedeutet einfach, okay, gib mir die Bilder. Und jetzt bekommen wir schon 2 Bilder. Okay. Und man
+sieht schon, dass es ein bisschen, es sieht ein bisschen seltsam aus finde ich. Das ist irgendwie so
+also eine komische Pose. Jetzt gehst du einfach nochmal auf Run und dann kriegst du dann nochmal
+2 Bilder. Das heißt, da musst du jetzt einfach ein bisschen Geduld haben und musst einfach ein
+bisschen gucken, was für Ergebnis er hält. Du passt das. Ja, das finde ich jetzt nicht so schlecht
+von der Pose her. Das sieht super weird aus. Machen wir nochmal auf Run. Also man muss dann einfach
+ein bisschen trainieren und denkt dran, die Bilder, die ich ihm gegeben habe jetzt war jetzt
+auch nicht so die Guten. Das heißt, das kann natürlich sein, dass man Gesichter ein bisschen
+anders einfach aussieht. Wie es normalerweise aussieht. Okay, man sieht schon hier oben,
+wir hatten eben 11,05 Euro, haben wir jetzt immer noch 11,05 Euro. Das ist echt günstig. Okay,
+das gefällt mir alles überhaupt nicht. Ich finde auch nicht, dass es aussieht wie ein Dschungel.
+Nutzen wir, testen wir mal, hoch Möglichkeit 2. Und damit spiele ich dann einfach immer rum.
+Und das macht mir eigentlich auch extrem viel Spaß. Es kann teilweise auch ein bisschen ermüten sein,
+weil es kann teilweise ein bisschen ermüten sein, weil man einfach einfach so ein bisschen
+rumspielen muss und gucken muss, wie bekommt man die besten Outposts. Aber wenn du irgendwann
+den Dreh raus hast, dann ist es eigentlich nur noch ein Run, Run, Run und du guckst dir einfach
+die besten Bilder dann raus. Okay, ja, das Gesicht ist wirklich vorspannbar. Vielleicht gehe ich
+gleich in meinen anderen Dings rein, weil ich jetzt ja euch nun mal einfach im Schneiderschlaf
+zeigen wollte, aber ja, echt keine guten Bilder ausgewählt habe. Okay, wir nutzen mal genau diesen
+Prompt und wir versuchen das einfach mal. Es ist auch ein gutes Learning für mich. Wir gehen jetzt
+nochmal in fast Training rein, so kommst du immer in diese Übersicht. Und ich habe ja,
+wir waren ja jetzt hier drin, das haben wir gerade erstellt, Arbata. Und ich gehe aber normalerweise
+immer hier drauf. Schauen wir jetzt immer mal das an. Julia 2, ich habe es leider so genannt,
+weil ich immer einfach nicht geteckt habe, was das bedeutet. Aber hey, passt schon. 2 Bilder, Run.
+So, gucken wir mal, ob das vielleicht irgendwie ein bisschen besser ist oder ob der Prompt einfach
+scheiße ist. Na, das kann auch sein. Ich habe keine Size angegeben, aber das sieht
+hier schon viel cooler aus. Also das finde ich jetzt schon, siehst du es auf dem ersten Blick?
+Viel cooler. Auch die Pose, viel natürlicher. Ja, da ist mein Gesicht dann nicht so cool.
+Machen wir nochmal das richtige Format. Auch da, die Bilder sind auch hier alle nicht perfekt.
+Ich mache das nächste Woche, dass ich mich einfach wirklich vor eine weiße Wand setze,
+in einem schönen Hotelzimmer, weil ich auch mit einem Hotelzimmer bin und in dem Hotelzimmer ist
+halt alles clean und so weiter. Und dann soll mein Freund einfach Nahaufnahmen von mir machen.
+Ich ladet die dann auch hoch, die ich dann verwende. Am besten machst du eine von Frontal,
+von der Seite hier, von der Seite hier und dann reiche ich das eigentlich auch schon.
+Okay, das finde ich schon mal ganz cool, sehr authentisch mit diesem Bauch. Hätte jetzt auch
+wegmachen können. Aber gut, so. Okay, nochmal Run. Und da siehst du schon, hier habe ich auch Bilder
+reingegeben, wo ich noch braunerig war. Das heißt, er macht teilweise auch seine braune Haare draus.
+Hier ist der Arm weg. Also, da muss man einfach gucken. Das finde ich schon ganz cool.
+Speicher ich mir mal. Also, du kannst mich hier drauflegen. Dann kannst du es speichern. Und ich
+gebe jetzt noch einen Suche. Here's blonde long wavy hair, weil ich möchte, dass er meine Blonden
+Haare halt einfach drauf packt, damit das einfach ein bisschen aktueller ist.
+Okay, das finde ich auch nicht so schlecht. Ich mache trotzdem nochmal eine Interaktion.
+Okay, gut. Ja, also kann man mit Sicherheit besser machen. Es gibt schon bessere Ergebnisse
+irgendwie, aber also wenn ich bessere Fotos rein packe, aber du siehst schon mal, es geht super
+schnell, super easy. Und das Geile ist, wir können hier diesen Problem jetzt immer wieder
+verändern. So, und wenn ich jetzt zum Beispiel sage, ich möchte jetzt einfach, dass sie kein
+grünes Outfit trägt, sondern ein schwarzes, was ja auch passen würde, dann gucke ich einfach,
+wo steht das drin? Ja, Her Outfit ist a softer, explorershake, tag on Lara Croft, Olive Green,
+Tanktop. Dann kann ich jetzt einfach eingeben. Black, immer auf Englisch, Tankt rein. Wenn du es
+nicht verstehst, was er da sagt, dann bitte einfach mit Tantivity auf Deutsch übersetzen.
+Black Tanktop, Rock Shorts. Okay, so und jetzt siehst du schon, dass er direkt das umsetzt
+und die direkten schwarzes Top verpasst. Normalerweise. Ja, perfekt. Ja, also das finde ich
+jetzt auch gar nicht so schlecht, muss ich sagen. Das Gesicht ist echt gut getroffen, finde ich.
+Ich beiche das mir mal ab. Ich beiche mir immer die Sachen, die ich einigermaßen gut finde ab,
+weil you never know, vielleicht kannst du ja irgendwann mal verwenden und ja.
+Okay, machen wir noch ein anderes Beispiel. Wir können auch das hier noch versuchen.
+So und dann zeige ich dir aber noch ein anderes Beispiel. Und wie gesagt, Spiel einfach mit
+den Dingen. Nimm dir Inspiration. Das finde ich richtig cool. Genau, hier wird jetzt auch noch mal
+hinschreiben. She has long blonde hair. Und dann musst du das direkt schon in Blond machen.
+Du kannst natürlich auch im Prom direkt da reinschreiben, ne? Wenn du Bock hast, wenn du
+irgendwas im Gedächtnis hast, was du jetzt nicht über Tantivity bekommst. Oh, nice Figur.
+Dann kannst du das direkt auch einfach da rein machen. Ich mache einfach meistens mit Tantivity,
+weil ich dann einfach ein bisschen Inspiration bekomme. Was ich auch mache ist, dass ich einfach
+mal suche tolle, KI-generierte Bildideen. Und dann gucke ich mir einfach an. Tschüss.
+Das finde ich zum Beispiel ganz schön. Da steht eine Frau, dann hinten, Hintergrund ist so diese
+diese leuchten Bubbles. Was wir dann machen ist, dass wir dieses Bild einfach Tantivity geben. Wir
+können im gleichen Set-up bleiben und sagen, hey, kannst du mir bitte einen Brompt für Felly Eye
+auf Englisch generieren, der dem Bild aus dem Anhang, das ich dir eingefügt habe, sehr ähnlich
+kommt? Danke. Das heißt, wir können ihm auch einfach Inspiration geben, auf die er zurückgreifen soll.
+So. Und dann gibt es da meistens nur eine Variante. Du kannst ihm aber auch darum bitten,
+zwei Varianten zu machen oder drei. Okay, jetzt fügen wir das einfach noch mal hier ein. Manchmal
+mache ich auch den Namen gar nicht anders und gucke mir einfach was rauskommt. A young woman,
+ja. Aber es hieß sich ja eh immer auf die Bilder, nur anscheinend wird es ein bisschen besser,
+weil man dann den Namen reinpackt. Oh, das finde ich total schön.
+Und du siehst schon, es ist schon relativ nah an dem Bild, was wir jetzt bei Google gefunden haben,
+dran. Voll schön. Oh, das finde ich mega. So, und wenn ich ja sage, okay, ich will jetzt aber lieber
+einen Pinkenplacer, dann kann ich natürlich hier auch sagen, ich habe jetzt das Softlight
+Gray Blue Jacket, Pink Jacket, ja, kann ich auch sagen Pink, Pink is Pinky Jacket und dann macht
+er das auch direkt. So, da haben wir ein Pinkes, ja, was ich auch schon mal ganz cool finde. Okay,
+dann können wir jetzt sagen, ich will dir einfach mal zeigen, wie man das auch verändern kann.
+Kannst du mir zu diesem Pronton zufügen, dass die Person nicht in die Kamera direkt guckt,
+sondern an der Kamera vorbei guckt? So, dann können wir eben mit verschiedenen Winkeln spielen, ja.
+Dann kopieren wir uns den raus. Und er schreibt natürlich auch manchmal dir auch einfach so ein
+paar, stellt auch ein paar Fragen an dich. Möchtest du noch zusätzliche Varianten mit Schirm und
+Bewegung und so weiter? Das kannst du natürlich dann auch alles mal testen. So, dann machen wir
+das hier voll weg, das hier rein. Und dann gucken wir mal, wie es sich ändert. Manchmal ändert
+sich nicht, ja, manchmal musst du es auch ein bisschen anders umformulieren, aber wie auch immer,
+wenn du KI nutzt, musst du einfach ein bisschen experimentieren. Okay, die beiden Bilder schon
+finde ich schon echt cool. Aber du siehst schon, ich gucke immer noch in die Kamera, ja.
+Jetzt lassen wir den mal ein bisschen Zeit, vielleicht gibt es irgendwas, wo ich nicht in die Kamera
+gucke. Wenn es jetzt zum dritten mal nicht passt, dann würde ich einfach mal nochmal in
+Tativität gehen und sagen, formulier den Prompt um. Kannst du mir dem Prompt so umformulieren,
+dass ich nicht direkt in die Kamera gucke, denn auch mit diesem Prompt gucke ich direkt in die
+Kamera. Vielleicht kannst du einfach den Winkel ein bisschen ändern und gerne mit einem Schirm in
+der Hand. Probieren wir das auch mal aus. Ich würde dir einfach nur mitgeben, wie du das einfach
+testen kannst, ne. Und dann zeige ich dir gleich noch eine richtig coole Variante mit einem richtig
+coolen Bild. Das hier ist ja jetzt eher ein einfaches Bild, würde ich sagen.
+Aber da kannst du schon echt hoch, echt fancy werden.
+So, let's see. Ich konnte den ganzen Tag das machen, ich finde es so geil. Okay,
+oh, fancy. Es ist cute mit dem Schirm. Sie guckt immer noch in die Kamera.
+Ja, das kann er jetzt irgendwie nicht. Warum auch immer, kann man mal gucken.
+She smiles slightly, looking slightly off to the side.
+Fast in die Ferne gucken, and looks.
+And doesn't look in the camera.
+Weiß ich gar nicht, ob ich das überhaupt formulieren kann. But let's see.
+So, bei sowas, was machst du jetzt? Ja, entweder du sagst okay, egal, dann das ist halt so. Oder du
+sagst halt nochmal. Die Person guckt immer noch mitten in die Kamera. Kannst du nicht eine Formulierung
+einbauen, dass sie gar nicht in die Kamera schaut, auch nicht an die vorbei, sondern einfach in
+eine andere Richtung so, als würde sie auf der anderen Straßenseite vielleicht jemanden
+erblicken.
+So, schauen wir mal, was daraus jetzt kommt. Raus kommt.
+Ja, gut, er hat es nicht verstanden vorher. Alrighty.
+Schauen wir mal, was er jetzt macht.
+Ja, okay, die guckt so ein bisschen dran vorbei.
+Geht vielleicht noch ein bisschen besser. Manchmal muss man auch einfach von seinem,
+was man im Kopf hat, Abstand nehmen. Man hat das doch schon, ja, viel besser, voll cool.
+Genau, also manchmal macht es halt einfach nicht, oder es dauert ewig, und dann hab ich manchmal
+auch keine Nerven mehr dafür, und wird mit mich einfach in einem anderen Motiv, ja. Und dann kann
+man es vielleicht ein paar Tage nochmal komplett umgeschrieben nochmal machen. Genau, so. Und
+was wir natürlich immer gut verwenden können für eben solche Videos später,
+die wir dann auch wirklich so nutzen können, dass sie für Instagram vielleicht passen,
+dass man irgendwie vielleicht gar nicht das geführt, dass es wirklich KI ist, sondern
+einfach so aufgenommen in einem Tonstudio oder sowas. Und da können wir dann einfach
+auch ein Bild reinfügen. Ich hab zum Beispiel eines von Maria Wendt genommen.
+Maria Wendt, weil ich finde, die hat immer ganz coole Aufnahmen.
+Wo sie einfach so sitzt. Und dann geh ich einfach drauf. Warte dann bis zu dem Moment,
+wo man sie halt von neben sieht. So. Und dann mach ich mir davon ein Screenshot.
+Einfach so komplett mit dem Text ist kein Problem. Dann gebe ich das in Statuity.
+Ich möchte einen Prom für Felly Eye, wo ich auf einer Couch sitze, in einem Mikrospreche,
+ähnlich wie in dem Bild hier, was du von mir hast, damit ich das später für Instagram verwenden kann.
+Also auch hier. Einfach rein posten, einfach sagen, was man haben will.
+Und dann schauen wir, was der da raus macht.
+Stylig young woman. Okay. So, let's see. Und so haben wir in einem
+Click nach mal ein ganz anderes Setting. Ich finde das so verrückt.
+Wie geil, oder? Also wie cool ist das bitte? Das sieht einfach genau so aus wie auf dem Bild.
+Crazy.
+Das könnte, glaube ich, ganz gut funktionieren.
+Laden wir uns das mal runter und merken, dass das Vergleich für die Videogenerierung.
+Aber erst noch einmal will ich eine Interaktion machen.
+Da ist kein Mikro vorhanden. Schade, weil das finde ich richtig cool.
+Ja, das nehme ich vielleicht auch mal. Man muss sich einfach später anschauen,
+wie es sich dann bewegt, wie es bewegt aussieht, wenn man es eben für Video nutzen möchte.
+Du kannst ja auch einfach so nutzen, als Causa Hintergrund zum Beispiel. Oh Gott, die Augen.
+Okay, ich bin süchtig. Also ich klicke es noch einmal drauf und das war es dann.
+Ja, das ist süß, aber da hält sich die Hände halt irgendwie komisch.
+Könnte aber eine Video auch funktionieren, also let's see.
+Gut, und du siehst, wir haben immer noch 9,86 Euro geschadet, sondern mit 11,05 Euro.
+Das heißt, wir haben so viele Bilder jetzt generiert und auch ein paar davon sogar speichern können.
+Das ist echt richtig günstig. Und was wir natürlich auch machen können ist, dass wir sagen
+fancy, generierte Bildideen, Frauen und irgendetwas krass abgefahrenes machen.
+Das ist ja cool. Okay, lass uns das mal versuchen. Ich weiß nicht, ob er so was krasses hinbekommt.
+Wahrscheinlich sieht es dann einfach ein bisschen anders aus, aber warum nicht? Wir können es mal versuchen.
+Bitte stellen mir einen Prompt auf Englisch für FAL AI, der dem Bild im Anhang sehr nahe kommt.
+Und ich nehme an, das könnte jetzt tatsächlich dazu führen, dass es ein bisschen nicht so cool wird.
+Aber wie gesagt, das ist ein Trial and Error. Einfach ausprobieren, Spaß dabei haben.
+Es ist einfach eine richtig coole Sache, die wir da geschenkt bekommen haben.
+Und ja, oh, ich bin gespannt.
+Let's see, von einem Podcaststudio hin auf einen Bar Ast mit Flügeln, wenn es klappt.
+Oha, also finde ich gar nicht schlecht. Die Füße sind natürlich Horror.
+Gott, Vorspau und der Blick. Aber vom Setting her, I like.
+Sieht irgendwie ein bisschen komisch aus, wenn das nicht so elfe ist, sondern wenn wir das sind.
+Aber hey, das ist ja voll süß. I love it, ein Fuß fehlt, aber hey.
+Und so kannst du halt einfach dich ein bisschen rumspielen, ausprobieren.
+Wenn du es eh für Instagram haben möchtest und dir kein Social Media Agent oder so was bist,
+dann kannst du natürlich auch einfach ganz generisch solche Podcast-Video-Bilder hochladen
+und dir kreieren lassen. Das hier ist jetzt einfach alles Spielerei.
+Voll süß.
+Gut, okay. Was wollte ich dir in dem Zusammenhang noch zeigen?
+Weiß ich nicht. Also einfach auf Plus-Tippen, wenn deine Credits abgelaufen sind.
+Einfach hier auf Speichern klicken, wenn das gespeichert ist.
+Und wie gesagt, super gerne einfach diesen Flugsgenerator benutzen,
+weil der macht einfach die besten, hat die besten Sachen.
+Und du kannst natürlich auch sagen, kannst du mir bitte ein paar Promp-Ideen für Fairy-Eye geben,
+für coole Bilder? Ich habe absolut keine Idee. Bitte gib mir drei Varianten.
+Habe ich noch nie gemacht, aber mit Sicherheit funktioniert das.
+Und wenn du einmal weißt, wie du Chat-Tippen nutzen kannst, nämlich indem du einfach drauf loslaberst
+und das, was du im Kopf hast, raushaust, dann kommt meistens was Gutes bei raus. Zumindest eine Inspiration.
+Cyberpunk. So like Clips in an Alien Beach. Floating Library in the Sky.
+Das finde ich cool. A massive library floating among the clouds.
+Okay, Leute, wir machen noch eine Sache und dann gehe ich weiter.
+Man, ich könnte da meinen ganzen Tag mit verbringen, aber es macht so Spaß.
+Es ist so cool. Es ist so fancy.
+Und ich kann es gar nicht abwarten, wenn ich wirklich mal professionelle Bilder da reintippe.
+Jesus.
+Geil. Wie cool ist das denn, bitte? Oh mein Gott.
+Also das ist natürlich nichts mit mir zu tun, aber wenn du das irgendwie mal verwenden willst,
+für ein Kinderbuch zu schreiben oder für irgendeine Geburtstagseinladung,
+eine Hochzeiteinlage oder sowas, ich meine, wie geil. Also das kann ja wirklich alles verändern.
+Super ist aber cool. Wir machen es an dieser Stelle Schluss, weil sonst ist es jetzt hier nur noch
+Spielspaß und es soll es ja auch sein. Aber ich möchte natürlich auch noch ein bisschen voreinkommen
+und die vor allem zeigen, wie man das jetzt noch in den Video packt. Und ja, ich freu mich.
+Wir sehen uns im nächsten Modul. Viel Spaß beim Ausprobieren. Du kannst mir super gerne
+auch mal deine Kreationen zuschicken. Ich finde das immer total spannend.
+Gerne auch einfach unter die E-Mail-Adresse-Team in JuliaTroß.de.
+Dann können wir dir auch gerne, wenn du was Cooles rausgefunden hast,
+verlinken mit deinem Namen und dich auch markieren und so. Finde ich mega. Also viel Spaß beim Testen.

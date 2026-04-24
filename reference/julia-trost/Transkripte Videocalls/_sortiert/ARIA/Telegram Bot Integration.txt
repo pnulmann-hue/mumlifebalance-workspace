@@ -1,0 +1,38 @@
+Ich hoffe, dass ich dir das jetzt richtig mitteilen kann, denn das ist schon ein bisschen tricky, was jetzt kommt, denn wir programmieren jetzt erstmal Telegram, weil wir wollen ja jetzt in den nächsten Modulen uns anschauen, wie können wir uns Telegram-Nachrichten schicken lassen und das funktioniert eben genau so.
+Und dadurch musst du erstmal Telegram-Ready machen, dafür, dass du Nachrichten erhalten darfst, über Selfie, über Tattivity.
+Und dann suchst du dir erst einmal diesen Account hier raus, Botfather heißt der, also einfach eingeben bei Telegram, B-O-T-F-A-T-H-I-R.
+Also das hier ist ja eine Nutzernahme.
+Und dann schreibst du dem Bot hier alle Nachrichten und die lautet Start.
+Das schreibst du dem.
+Und dann bekommst du, ich gehe mal kurz dahin, wo ich es wirklich gemacht habe.
+Genau, dann bekommst du viele Auflöszungen und dann schreibst du, dann ignorierst du alles, was er sagt und schreibst einfach Newbot, also Strich Newbot.
+Geh einfach genauso vor, wie ich es gemacht habe, ich kann es dir wirklich nicht erklären, ich habe es einfach gemacht.
+Mach es einfach nach.
+Okay, also Strich Newbot.
+Dann fragt er dich, alright, a Newbot, how are we going to call it, please choose a name.
+Also dann fragt er dich, wie dein Bot heißen soll.
+Das heißt, wir müssen jetzt erst mal ein Telekom-Bot ins Leben rufen.
+Und dann sagt er auch den Namen Juli Gipsz-Test zum Beispiel schon, bitte einen anderen wählen.
+Und dann habe ich den es einfach genannt, KI-Untersstrich area, Untersstrich Bot.
+Und dann schreibt er richtig cool, Glückwunsch zu deinem neuen Bot, du willst ihn hier finden.
+Du kannst nun Beschreibungen hinzufügen, einen Profilbild hinterlegen und so weiter.
+Hier hast du einen Token hinterlegt und was auch immer noch, also ich kenne mich da wirklich nicht gut mit aus.
+Das Wichtigste ist erst einmal, dass du hier das hast.
+Du hast dein Bot erstellt und du klickst einfach da drauf und dann kommst du zu deinem Bot.
+Und dann bekommst du ganz oben, kannst du hier Start, also Strich Start machen.
+Und dann, Moment, wie war das noch mal?
+Nee, mir brauchten noch was anderes.
+Und zwar schreibst du jetzt dem UserInfo-Bot, das heißt, genau wie eben diesen Bot-Fader.
+Schreiben wir jetzt Add UserInfo-Bot, schreiben wir jetzt eine Nachricht mit Strich Start
+und dann gibt er uns unsere Bot-ID, unsere Namen und so weiter.
+Und diese Bot-ID, die brauchen wir später, um sie in Zapier zu verknüpfen.
+Das heißt, das ist die Nummer, die dir auf jeden Fall aufschreiben solltest.
+Und über unseren Bot, den wir eben konfiguriert haben, also über das hier,
+bekommen wir dann später unsere Nachrichten.
+Das heißt, nochmal kurz zusammengefasst, du musst einmal Bot-Fader schreiben,
+erst Start, also Strich Start und dann Strich New Bot, dann musst du dem einen Namen geben.
+Dann schreibst du Add UserInfo-Bot, Strich Start, dann bekommst du die ID
+und hierüber über diesen Channel bekommst du dann deine Nachrichten später gesendet.
+Klingt richtig kompliziert, aber glaub mir, mach's einfach genauso nach, wie ich's gemacht habe
+und dann wird es mit Sicherheit für dich einfach werden.
+Also viel Spaß damit, wenn Fragen dazu bestehen, let me know.
