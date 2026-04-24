@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Zentrales Register aller aktiven Funnels für Mum Life Balance (Mentoring + doTERRA). Wird vom /funnel Skill gepflegt und von /montag, /reels, /karussell gelesen — damit Content-Assistenten wissen welche ManyChat-Keywords diese Woche prioritär sind.",
-    "last_updated": "2026-04-24",
+    "last_updated": "2026-04-24 · Bio-Check Launch-Woche gestartet (Tag 0)",
     "schema_version": 1,
     "brand": "Mum Life Balance",
     "umsatzziel_chf_jahr": 40000
@@ -11,7 +11,7 @@
     {
       "id": "bio-check",
       "name": "Bio-Check für Network-Mamas",
-      "status": "live",
+      "status": "live-launch-woche",
       "profile": "mentoring",
       "typ": "0€ Leadmagnet · interaktiver Bot",
       "preis_chf": 0,
@@ -21,8 +21,8 @@
 
       "traffic_quellen": {
         "wordpress_landing": "https://mumlifebalance.ch/bio-check",
-        "manychat_keyword": null,
-        "instagram_dm": null,
+        "manychat_keyword": "BIO",
+        "instagram_dm": "via ManyChat Keyword BIO",
         "bot_direct": "https://bio-check-bot.vercel.app"
       },
 
@@ -43,10 +43,28 @@
       },
 
       "mail_sequenz": {
-        "status": "nur Mail 1 fertig",
+        "status": "Mail 1 Auslieferung + Mail 1 Launch-Paukenschlag fertig",
         "design_template": "context/mail-design-onlinebusiness.html",
-        "mails": ["ac-mail-1-auslieferung.html"],
+        "mails": [
+          "outputs/bio-check-bot/ac-mail-1-auslieferung.html",
+          "outputs/funnels/bio-check/launch/mails/mail-1-paukenschlag.html"
+        ],
         "geplant": 6
+      },
+
+      "launch_window": {
+        "tag_0_datum": "2026-04-24",
+        "tag_7_datum": "2026-05-01",
+        "scope": "B — Opt-ins + sanfter 39er-Pitch Thema-Kurs ab Tag 4",
+        "launch_assets_path": "outputs/funnels/bio-check/launch/",
+        "teaser_stories_datum": "2026-04-23",
+        "teaser_narrativ": "Schluckauf-Meme (Bot hat gestern nicht funktioniert), Crossline-Beraterin-Story",
+        "ziele": {
+          "bio_check_leads_tag_7": 150,
+          "bio_check_abschluesse_tag_7": 100,
+          "thema_kurs_verkaeufe_launch_woche": 5,
+          "reel_tag_0_views": 15000
+        }
       },
 
       "produkttreppe_anschluss": [
@@ -58,7 +76,9 @@
       "content_hinweise": {
         "pillar": "Instagram-Strategie für NM",
         "reel_typen": ["Reel-Kritik", "Bio-Doktor", "Schaufenster-Metapher"],
-        "karussell_typen": ["Bio-Anatomie", "5 Fehler in deiner Bio"]
+        "karussell_typen": ["Bio-Anatomie", "5 Fehler in deiner Bio"],
+        "primaer_keyword": "BIO",
+        "sekundaer_keyword_ab_tag_4": "THEMA"
       },
 
       "umsatzziel_contribution_chf": 8000,
