@@ -377,6 +377,36 @@ Jede Caption enthält ein Keyword (z.B. „Kommentier **ENERGIE**") das eine Aut
 
 ---
 
+## ⚠️ Bekannte Sandbox-Limits (Web-Claude)
+
+**Wichtig für jede Session — bevor du Patricia versprichst etwas live zu pushen:**
+
+### Outbound-Hosts: Allowlist-Restriction
+Die Web-Claude-Sandbox (claude.ai/code) blockiert Outbound-Requests zu nicht-erlaubten Hosts mit `403 host_not_allowed`. Betroffen u.a.:
+- `mumlifebalance.ch` (WordPress)
+- `mumlifebalance.activehosted.com` (ActiveCampaign)
+- Vermutlich auch andere Patricia-Domains
+
+**Workaround heute:** Code-Änderungen ins Git pushen + Patricia kopiert manuell in WP/AC.
+**Echte Lösung (TODO):** GitHub Actions als Deployer einrichten (Secret = WP_APP_PASSWORD), oder lokaler MCP-Server bei Patricia.
+
+### `.env`-Files persistieren NICHT zwischen Sessions
+Web-Claude resetet alle gitignored Files. Heisst:
+- `scripts/wordpress/.env` muss Patricia in jeder neuen Session frisch erstellen
+- Gilt analog für `scripts/manychat/.env`, `scripts/bio-check-bot/.env` etc.
+
+**Vorgehen wenn Patricia direkten WP/AC/MC-Push will:**
+1. Erst prüfen ob `.env` existiert: `ls scripts/wordpress/.env`
+2. Wenn nicht: Patricia bittet App-Password zu schicken → in `.env` schreiben → nach Push wieder löschen
+3. Beim Push prüfen ob Sandbox-403 kommt → wenn ja: ehrlich sagen + Workaround anbieten
+
+### Was hilft als Bot-Vorbereitung
+- Vor Live-Aktionen IMMER zuerst Limits checken statt Patricia falsche Hoffnung machen
+- HTML-Embed-Blöcke (z.B. `outputs/bio-check-bot/ac-form-embed.html`) bereitstellen → Patricia kann manuell einfügen
+- Bei Form-Code-Updates IMMER auch GitHub-Raw-URL liefern für schnelles Kopieren
+
+---
+
 ## Notizen
 
 - Kontext minimal aber ausreichend halten — kein Bloat
