@@ -68,21 +68,6 @@ export default async function handler(req, res) {
 
     const client = new Anthropic({ apiKey });
 
-    // System-Prompt mit Prompt Caching: System-Prompt (gross + statisch)
-    // wird gecacht (5 Min ephemeral). User-Context (kurz + variabel)
-    // bleibt ungecacht. Spart ~90% Cost + ist deutlich schneller.
-    const systemBlocks = [
-      {
-        type: 'text',
-        text: systemPrompt,
-        cache_control: { type: 'ephemeral' },
-      },
-      {
-        type: 'text',
-        text: userContext,
-      },
-    ];
-
     // Retry-Logic: Bei transientem Anthropic-Fehler (5xx, overload, network)
     // einmal automatisch nochmal probieren mit kurzem Backoff
     async function callAnthropic(attempt = 1) {
@@ -90,7 +75,7 @@ export default async function handler(req, res) {
         return await client.messages.create({
           model: 'claude-sonnet-4-5',
           max_tokens: 8000,
-          system: systemBlocks,
+          system: systemPrompt + userContext,
           messages: messages.map((m) => ({
             role: m.role === 'assistant' ? 'assistant' : 'user',
             content: m.content,
