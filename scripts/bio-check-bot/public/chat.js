@@ -158,6 +158,13 @@ function init() {
 }
 
 function renderSavedMessages() {
+  // Reset-Option zuerst checken (verhindert dass alte Messages noch gerendert werden)
+  if (new URLSearchParams(window.location.search).has('reset')) {
+    try { localStorage.removeItem(storageKeyFor(state.user.email)); } catch {}
+    window.location.href = window.location.pathname + (state.user.email ? `?e=${encodeURIComponent(state.user.email)}&n=${encodeURIComponent(state.user.name)}` : '');
+    return;
+  }
+
   // Saved messages direkt rendern (ohne neu zum Bot zu schicken)
   state.messages.forEach((msg) => {
     const el = document.createElement('div');
@@ -172,6 +179,14 @@ function renderSavedMessages() {
   });
   scrollToBottom();
 
+  // Edge-Case: Letzte Message ist von User → der Bot war beim Reload mitten im Antworten.
+  // Automatisch wieder zum Bot schicken, damit User nicht hängt.
+  const lastMsg = state.messages[state.messages.length - 1];
+  if (lastMsg?.role === 'user') {
+    setTimeout(() => sendToBotWithRetry(), 600);
+    return; // Resume-Hinweis-Message überspringen, weil Bot direkt weitermacht
+  }
+
   // Info-Message dass wir weitermachen
   const resumeEl = document.createElement('div');
   resumeEl.className = 'msg msg--bot';
@@ -179,13 +194,6 @@ function renderSavedMessages() {
   resumeEl.style.fontSize = '14px';
   resumeEl.innerHTML = '<em>🌿 Willkommen zurück — wir machen hier weiter. Wenn du von vorne starten willst, lade die Seite mit <code>?reset</code> am Ende der URL neu.</em>';
   $messages.appendChild(resumeEl);
-
-  // Reset-Option via URL-Parameter
-  if (new URLSearchParams(window.location.search).has('reset')) {
-    try { localStorage.removeItem(storageKeyFor(state.user.email)); } catch {}
-    window.location.href = window.location.pathname + (state.user.email ? `?e=${encodeURIComponent(state.user.email)}&n=${encodeURIComponent(state.user.name)}` : '');
-    return;
-  }
 }
 
 // ============================================================
@@ -246,6 +254,17 @@ async function handleSubmit(e) {
   autosizeInput();
   addMessage('user', text);
 
+  await sendToBotWithRetry();
+}
+
+/**
+ * Schickt state.messages zum Bot. Bei Fehler:
+ * - Auto-Retry 1x nach 1.5s (transient errors)
+ * - Bei zweitem Fehler: Retry-Button statt unhilfreichem „Ups"
+ *   → User verliert NICHTS, kann mit einem Klick nochmal probieren
+ *   → State + alle Messages bleiben erhalten (im localStorage)
+ */
+async function sendToBotWithRetry(autoRetried = false) {
   setThinking(true);
   try {
     const reply = await callChatAPI(state.messages);
@@ -253,11 +272,37 @@ async function handleSubmit(e) {
 
     if (reply.includes('[[DONE]]')) showDoneScreen();
   } catch (err) {
-    addMessage('assistant', '🌿 Ups, da ist was schief gelaufen. Magst du deine letzte Antwort nochmal schicken?');
-    console.error(err);
+    console.error('Bot-Fehler:', err);
+
+    // Auto-Retry einmal bei transientem Fehler
+    if (!autoRetried && err.retryable !== false) {
+      console.log('Auto-Retry in 1.5s …');
+      await new Promise((r) => setTimeout(r, 1500));
+      return sendToBotWithRetry(true);
+    }
+
+    // Bei finalem Fehler: Retry-Button statt verlorener Lead
+    addRetryMessage();
   } finally {
     setThinking(false);
   }
+}
+
+function addRetryMessage() {
+  const el = document.createElement('div');
+  el.className = 'msg msg--bot msg--retry';
+  el.innerHTML = `
+    <p>🌿 Mein Bot hat kurz den Faden verloren — passiert manchmal. Deine Antwort ist gespeichert, du musst nichts neu tippen.</p>
+    <div class="msg__buttons">
+      <button class="msg__button" data-action="retry">🔄 Nochmal probieren</button>
+    </div>
+  `;
+  el.querySelector('button[data-action="retry"]').addEventListener('click', () => {
+    el.remove();
+    sendToBotWithRetry();
+  });
+  $messages.appendChild(el);
+  scrollToBottom();
 }
 
 function handleInputKeydown(e) {
@@ -275,17 +320,7 @@ function handleInputKeydown(e) {
 function handleButtonClick(value) {
   if (state.isThinking || state.completed) return;
   addMessage('user', value);
-  setThinking(true);
-  callChatAPI(state.messages)
-    .then((reply) => {
-      addMessage('assistant', reply);
-      if (reply.includes('[[DONE]]')) showDoneScreen();
-    })
-    .catch((err) => {
-      addMessage('assistant', '🌿 Moment, ich probier das nochmal — bitte eine Antwort ins Feld tippen.');
-      console.error(err);
-    })
-    .finally(() => setThinking(false));
+  sendToBotWithRetry();
 }
 
 // ============================================================
@@ -308,7 +343,14 @@ async function callChatAPI(messages) {
     }),
   });
 
-  if (!res.ok) throw new Error(`Chat API ${res.status}`);
+  if (!res.ok) {
+    let payload = null;
+    try { payload = await res.json(); } catch {}
+    const err = new Error(payload?.error || `Chat API ${res.status}`);
+    err.status = res.status;
+    err.retryable = payload?.retryable !== false; // default: ja, Retry erlauben
+    throw err;
+  }
   const data = await res.json();
   return data.text || data.message || '';
 }
