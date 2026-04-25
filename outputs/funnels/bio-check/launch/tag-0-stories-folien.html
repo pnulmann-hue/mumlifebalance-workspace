@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Bio-Check Launch · Tag 0 · Story-Folien</title>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --petrol: #12828c;
+      --dunkelblau: #29556d;
+      --creme: #f1ecdd;
+      --orange: #dc822e;
+      --text-dark: #0c1c30;
+      --tuerkis-light: #e4f3f4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #2a2a2a;
+      padding: 40px 0;
+      font-family: 'Source Sans 3', sans-serif;
+      color: var(--text-dark);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .stage {
+      transform: scale(0.32);
+      transform-origin: top left;
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+    }
+    .stage-wrap {
+      width: calc(1080px * 0.32);
+      height: calc(1920px * 0.32);
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+    .frame-label {
+      color: #fff;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+    .slide {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Brand Layout-Bausteine */
+    .brand-header {
+      position: absolute;
+      top: 80px;
+      left: 80px;
+      right: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand-tag {
+      background: var(--orange);
+      color: #fff;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      border-radius: 40px;
+    }
+    .brand-time {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      letter-spacing: 2px;
+      opacity: 0.7;
+    }
+    .photo-slot {
+      position: absolute;
+      background: rgba(0,0,0,0.05);
+      border: 4px dashed rgba(0,0,0,0.25);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+    .photo-slot .icon { font-size: 100px; margin-bottom: 30px; }
+    .photo-slot .label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      color: rgba(0,0,0,0.5);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .photo-slot .hint {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+      color: rgba(0,0,0,0.45);
+      margin-top: 16px;
+      max-width: 700px;
+      line-height: 1.4;
+    }
+    .text-box {
+      position: absolute;
+      background: var(--creme);
+      padding: 50px 60px;
+      border-radius: 24px;
+      font-family: 'Philosopher', Georgia, serif;
+    }
+    .text-box.dark { background: var(--text-dark); color: var(--creme); }
+    .text-box.petrol { background: var(--petrol); color: #fff; }
+    .text-box.orange { background: var(--orange); color: #fff; }
+
+    /* === Folie 1 — Morning Flex === */
+    .f1 { background: var(--creme); }
+    .f1 .photo-slot {
+      top: 220px; left: 80px; right: 80px; bottom: 480px;
+      border-radius: 24px;
+    }
+    .f1 .text-box {
+      bottom: 140px; left: 80px; right: 80px;
+      text-align: center;
+    }
+    .f1 .text-box .head {
+      font-size: 64px; font-weight: 700; color: var(--text-dark);
+      line-height: 1.15;
+    }
+    .f1 .text-box .sub {
+      font-size: 44px; color: var(--petrol); margin-top: 20px;
+    }
+
+    /* === Folie 2 — Reel ist live === */
+    .f2 {
+      background: linear-gradient(135deg, var(--text-dark) 0%, var(--dunkelblau) 60%, var(--petrol) 100%);
+    }
+    .f2 .brand-tag { background: var(--orange); }
+    .f2 .brand-time { color: rgba(241,236,221,0.6); }
+    .f2 .photo-slot {
+      top: 320px; left: 140px; right: 140px; height: 1000px;
+      border-radius: 24px; background: rgba(255,255,255,0.05);
+      border-color: rgba(241,236,221,0.3);
+    }
+    .f2 .photo-slot .label { color: rgba(241,236,221,0.6); }
+    .f2 .photo-slot .hint { color: rgba(241,236,221,0.5); }
+    .f2 .photo-slot .icon { color: rgba(241,236,221,0.6); }
+    .f2 .text-box {
+      bottom: 180px; left: 80px; right: 80px;
+      background: var(--creme); text-align: center;
+    }
+    .f2 .text-box .head {
+      font-size: 60px; font-weight: 700; color: var(--text-dark);
+      line-height: 1.2;
+    }
+    .f2 .arrow {
+      position: absolute; top: 240px; left: 50%;
+      transform: translateX(-50%);
+      font-size: 90px; color: var(--orange);
+    }
+
+    /* === Folie 3 — Crossline-Story === */
+    .f3 { background: var(--creme); }
+    .f3 .photo-slot {
+      top: 80px; left: 0; right: 0; bottom: 320px;
+    }
+    .f3 .text-box {
+      bottom: 100px; left: 80px; right: 80px;
+      background: var(--text-dark); color: var(--creme);
+      text-align: center;
+    }
+    .f3 .text-box .head {
+      font-family: 'Source Sans 3', sans-serif; font-weight: 400;
+      font-size: 42px; line-height: 1.4;
+    }
+    .f3 .text-box .arrow {
+      color: var(--orange); font-size: 60px; margin-top: 12px; display: block;
+    }
+
+    /* === Folie 4 — Behind-the-Scenes === */
+    .f4 { background: var(--tuerkis-light); }
+    .f4 .photo-slot {
+      top: 280px; left: 80px; right: 80px; height: 1100px;
+      border-radius: 24px;
+    }
+    .f4 .text-box {
+      bottom: 140px; left: 80px; right: 80px;
+      background: var(--creme); text-align: center;
+    }
+    .f4 .text-box .head {
+      font-size: 58px; font-weight: 700; color: var(--text-dark);
+      line-height: 1.2;
+    }
+    .f4 .emoji-line {
+      position: absolute; bottom: 60px; left: 50%;
+      transform: translateX(-50%); font-size: 60px;
+    }
+
+    /* === Folie 5 — DMs kommen an === */
+    .f5 { background: var(--creme); }
+    .f5 .photo-slot {
+      top: 280px; left: 100px; right: 100px; height: 1080px;
+      border-radius: 24px;
+    }
+    .f5 .text-box {
+      bottom: 160px; left: 80px; right: 80px;
+      background: var(--petrol); color: #fff; text-align: center;
+    }
+    .f5 .text-box .head {
+      font-size: 64px; font-weight: 700; line-height: 1.15;
+    }
+    .f5 .text-box .key {
+      display: inline-block; background: var(--orange); color: #fff;
+      padding: 6px 24px; border-radius: 14px;
+      font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+      font-size: 60px; letter-spacing: 4px;
+    }
+
+    /* === Folie 6 — Schaufenster === */
+    .f6 {
+      background: linear-gradient(135deg, var(--text-dark) 0%, var(--dunkelblau) 50%, var(--petrol) 100%);
+    }
+    .f6 .icon-big {
+      position: absolute; top: 280px; left: 0; right: 0;
+      text-align: center; font-size: 280px; opacity: 0.18;
+    }
+    .f6 .head-block {
+      position: absolute; top: 720px; left: 80px; right: 80px;
+      text-align: center;
+    }
+    .f6 .head-block h1 {
+      font-family: 'Philosopher', Georgia, serif;
+      font-weight: 700; font-size: 96px; color: var(--creme);
+      line-height: 1.15;
+    }
+    .f6 .divider {
+      width: 120px; height: 6px; background: var(--orange);
+      margin: 60px auto;
+    }
+    .f6 .head-block p {
+      font-family: 'Philosopher', Georgia, serif;
+      font-style: italic; font-size: 56px;
+      color: rgba(241,236,221,0.85); line-height: 1.4;
+    }
+    .f6 .badge-bottom {
+      position: absolute; bottom: 200px; left: 0; right: 0;
+      text-align: center;
+    }
+    .f6 .badge-bottom span {
+      background: var(--orange); color: #fff;
+      font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+      font-size: 28px; letter-spacing: 4px; text-transform: uppercase;
+      padding: 16px 36px; border-radius: 30px;
+    }
+
+    /* === Folie 7 — Mini-Preview === */
+    .f7 { background: var(--text-dark); }
+    .f7 .brand-tag { background: var(--orange); }
+    .f7 .brand-time { color: rgba(241,236,221,0.6); }
+    .f7 .photo-slot {
+      top: 280px; left: 100px; right: 100px; height: 1100px;
+      background: rgba(241,236,221,0.05);
+      border-color: rgba(241,236,221,0.3);
+    }
+    .f7 .photo-slot .label, .f7 .photo-slot .hint, .f7 .photo-slot .icon {
+      color: rgba(241,236,221,0.6);
+    }
+    .f7 .text-box {
+      bottom: 140px; left: 80px; right: 80px;
+      background: var(--creme); text-align: center;
+    }
+    .f7 .text-box .head {
+      font-size: 64px; font-weight: 700; color: var(--text-dark);
+      line-height: 1.2;
+    }
+    .f7 .text-box .sub {
+      font-family: 'Source Sans 3', sans-serif; font-weight: 400;
+      font-size: 36px; color: var(--petrol); margin-top: 12px;
+    }
+
+    /* === Folie 8 — Social Proof === */
+    .f8 { background: var(--creme); }
+    .f8 .head-top {
+      position: absolute; top: 200px; left: 80px; right: 80px;
+      background: var(--petrol); color: #fff;
+      padding: 32px 40px; border-radius: 24px; text-align: center;
+    }
+    .f8 .head-top span {
+      font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+      font-size: 36px; letter-spacing: 2px;
+    }
+    .f8 .photo-slot {
+      top: 380px; left: 100px; right: 100px; height: 1000px;
+      border-radius: 24px;
+    }
+    .f8 .text-box {
+      bottom: 160px; left: 80px; right: 80px;
+      background: var(--text-dark); color: var(--creme); text-align: center;
+    }
+    .f8 .text-box .head {
+      font-size: 56px; font-weight: 700; line-height: 1.25;
+    }
+
+    /* === Folie 9 — FAQ === */
+    .f9 { background: var(--creme); }
+    .f9 .photo-slot {
+      top: 80px; left: 0; right: 0; height: 900px;
+    }
+    .f9 .question {
+      position: absolute; top: 1020px; left: 120px; right: 120px;
+      background: #fff; border-radius: 50px;
+      padding: 36px 50px; text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    .f9 .question .label {
+      font-family: 'Source Sans 3', sans-serif; font-weight: 600;
+      color: var(--petrol); font-size: 24px; letter-spacing: 3px;
+      text-transform: uppercase; margin-bottom: 8px;
+    }
+    .f9 .question .q {
+      font-family: 'Philosopher', Georgia, serif;
+      font-size: 50px; color: var(--text-dark); font-style: italic;
+    }
+    .f9 .answer-box {
+      position: absolute; top: 1300px; left: 80px; right: 80px;
+      background: var(--orange); color: #fff;
+      padding: 60px 50px; border-radius: 24px; text-align: center;
+    }
+    .f9 .answer-box .head {
+      font-family: 'Philosopher', Georgia, serif; font-weight: 700;
+      font-size: 60px; line-height: 1.25;
+    }
+
+    /* === Folie 10 — Last Call === */
+    .f10 {
+      background: linear-gradient(180deg, var(--text-dark) 0%, var(--dunkelblau) 100%);
+    }
+    .f10::before {
+      content: '✨ ✨ ⭐ ✨ ✨ ⭐ ✨';
+      position: absolute; top: 200px; left: 0; right: 0;
+      text-align: center; font-size: 50px; letter-spacing: 30px;
+      opacity: 0.4;
+    }
+    .f10 .head-block {
+      position: absolute; top: 480px; left: 80px; right: 80px;
+      text-align: center;
+    }
+    .f10 .head-block h1 {
+      font-family: 'Philosopher', Georgia, serif; font-weight: 700;
+      font-size: 78px; color: var(--creme); line-height: 1.2;
+    }
+    .f10 .head-block .sub {
+      font-family: 'Philosopher', Georgia, serif; font-style: italic;
+      font-size: 50px; color: rgba(241,236,221,0.7);
+      margin-top: 50px; line-height: 1.4;
+    }
+    .f10 .cta-block {
+      position: absolute; bottom: 320px; left: 0; right: 0;
+      text-align: center;
+    }
+    .f10 .cta-block .pill {
+      display: inline-block; background: var(--orange);
+      color: #fff; font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700; font-size: 56px; letter-spacing: 8px;
+      padding: 28px 70px; border-radius: 80px;
+    }
+    .f10 .cta-block .arrow {
+      display: block; font-size: 80px;
+      color: rgba(241,236,221,0.7); margin-top: 30px;
+    }
+    .f10 .footer {
+      position: absolute; bottom: 140px; left: 0; right: 0;
+      text-align: center;
+      font-family: 'Source Sans 3', sans-serif; font-weight: 600;
+      font-size: 28px; letter-spacing: 4px;
+      color: rgba(241,236,221,0.5); text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+
+    <!-- Folie 1 -->
+    <div>
+      <div class="frame-label">Folie 1 · 08:00 · Morning Flex</div>
+      <div class="stage-wrap"><div class="stage"><div class="slide f1">
+        <div class="brand-header">
+          <span class="brand-tag">Tag 0 · Live</span>
+          <span class="brand-time" style="color: var(--petrol);">08:00</span>
+        </div>
+        <div class="photo-slot">
+          <div class="icon">📸</div>
+          <div class="label">Selfie · Boomerang</div>
+          <div class="hint">Du · Kaffee · zerzauste Morgen-Energy · Laptop im Hintergrund</div>
+        </div>
+        <div class="text-box">
+          <div class="head">Der Bot hat<br>die Nacht überlebt.</div>
+          <div class="sub">☕ Mein Kaffee auch.</div>
+        </div>
+      </div></div></div>
+    </div>
+
+    <!-- Folie 2 -->
+    <div>
+      <div class="frame-label">Folie 2 · 09:30 · Reel ist live</div>
+      <div class="stage-wrap"><div class="stage"><div class="slide f2">
+        <div class="brand-header">
+          <span class="brand-tag">Reel · Live</span>
+          <span class="brand-time">09:30</span>
+        </div>
+        <div class="arrow">👇</div>
+        <div class="photo-slot">
+          <div class="icon">📱</div>
+          <div class="label">Reel-Cover-Screenshot</div>
+          <div class="hint">Screenshot direkt nach Upload</div>
+        </div>
+        <div class="text-box">
+          <div class="head">Reel ist live.<br>Schaut, ob ihr gestern<br>richtig gesehen habt. 👀</div>
+        </div>
+      </div></div></div>
+    </div>
+
+    <!-- Folie 3 -->
+    <div>
+      <div class="frame-label">Folie 3 · 11:00 · Crossline-Story</div>
+      <div class="stage-wrap"><div class="stage"><div class="slide f3">
+        <div class="photo-slot">
+          <div class="icon">🎤</div>
+          <div class="label">Talking Head</div>
+          <div class="hint">Selfie-Video · direkt in Kamera<br>Voice-Over: Crossline-Mama-Story</div>
+        </div>
+        <div class="text-box">
+          <div class="head">Wie das angefangen hat</div>
+          <span class="arrow">↓</span>
+        </div>
+      </div></div></div>
+    </div>
+
+    <!-- Folie 4 -->
+    <div>
+      <div class="frame-label">Folie 4 · 12:30 · Behind-the-Scenes</div>
+      <div class="stage-wrap"><div class="stage"><div class="slide f4">
+        <div class="brand-header">
+          <span class="brand-tag" style="background: var(--petrol);">Behind the Scenes</span>
+          <span class="brand-time" style="color: var(--petrol);">12:30</span>
+        </div>
+        <div class="photo-slot">
+          <div class="icon">🤖</div>
+          <div class="label">Bot-Interface</div>
+          <div class="hint">Screenshot vom funktionierenden Bot<br>(im Kontrast zu gestern)</div>
+        </div>
+        <div class="text-box">
+          <div class="head">So sieht der Bot aus,<br>wenn er <em>NICHT</em><br>Schluckauf hat.</div>
+        </div>
+        <div class="emoji-line">😂 🤖 ✨</div>
+      </div></div></div>
+    </div>
+
+    <!-- Folie 5 -->
+    <div>
+      <div class="frame-label">Folie 5 · 14:00 · DMs kommen an</div>
+      <div class="stage-wrap"><div class="stage"><div class="slide f5">
+        <div class="brand-header">
+          <span class="brand-tag">📬 Inbox</span>
+          <span class="brand-time" style="color: var(--petrol);">14:00</span>
+        </div>
+        <div class="photo-slot">
+          <div class="icon">💬</div>
+          <div class="label">DM-Screenshots</div>
+          <div class="hint">2-3 eingehende DMs mit BIO<br>(Namen verwischen)</div>
+        </div>
+        <div class="text-box">
+          <div class="head">Die ersten kommen an.</div>
+          <div style="margin-top: 24px; font-family: 'Source Sans 3'; font-size: 38px; font-weight: 400;">
+            Schreib mir <span class="key">BIO</span><br>
+            <span style="font-size: 32px; opacity: 0.85;">geht direkt zurück.</span>
+          </div>
+        </div>
+      </div></div></div>
+    </div>
+
+    <!-- Folie 6 -->
+    <div>
+      <div class="frame-label">Folie 6 · 15:30 · Schaufenster (HERO)</div>
+      <div class="stage-wrap"><div class="stage"><div class="slide f6">
+        <div class="brand-header">
+          <span class="brand-tag">Bio = Schaufenster</span>
+          <span class="brand-time" style="color: rgba(241,236,221,0.6);">15:30</span>
+        </div>
+        <div class="icon-big">🪟</div>
+        <div class="head-block">
+          <h1>Deine Instagram-Bio<br>ist dein Schaufenster.</h1>
+          <div class="divider"></div>
+          <p>Und ein leeres Schaufenster<br>verkauft nichts.</p>
+        </div>
+        <div class="badge-bottom">
+          <span>Bio-Check · 0 CHF · Heute</span>
+        </div>
+      </div></div></div>
+    </div>
+
+    <!-- Folie 7 -->
+    <div>
+      <div class="frame-label">Folie 7 · 17:00 · Mini-Preview</div>
+      <div class="stage-wrap"><div class="stage"><div class="slide f7">
+        <div class="brand-header">
+          <span class="brand-tag">Preview</span>
+          <span class="brand-time">17:00</span>
+        </div>
+        <div class="photo-slot">
+          <div class="icon">🎥</div>
+          <div class="label">Screen-Recording (15s)</div>
+          <div class="hint">Bot-Ergebnis-Screen<br>Experten-Satz · 5 Bio-Vorschläge</div>
+        </div>
+        <div class="text-box">
+          <div class="head">Das bekommst du.</div>
+          <div class="sub">In drei Minuten.</div>
+        </div>
+      </div></div></div>
+    </div>
+
+    <!-- Folie 8 -->
+    <div>
+      <div class="frame-label">Folie 8 · 18:30 · Social Proof</div>
+      <div class="stage-wrap"><div class="stage"><div class="slide f8">
+        <div class="head-top">
+          <span>✓ Erste durchgezogen</span>
+        </div>
+        <div class="photo-slot">
+          <div class="icon">💌</div>
+          <div class="label">DM-Reaktion</div>
+          <div class="hint">Screenshot einer Userin (Name verwischen)<br>oder dein eigener Test-Take</div>
+        </div>
+        <div class="text-box">
+          <div class="head">Ihre Bio ist<br>jetzt geschrieben.</div>
+        </div>
+      </div></div></div>
+    </div>
+
+    <!-- Folie 9 -->
+    <div>
+      <div class="frame-label">Folie 9 · 20:00 · FAQ</div>
+      <div class="stage-wrap"><div class="stage"><div class="slide f9">
+        <div class="photo-slot">
+          <div class="icon">🛋️</div>
+          <div class="label">Talking Head · Sofa</div>
+          <div class="hint">Entspannter Modus<br>Abend-Licht</div>
+        </div>
+        <div class="question">
+          <div class="label">Frage</div>
+          <div class="q">"Ist das wirklich gratis?"</div>
+        </div>
+        <div class="answer-box">
+          <div class="head">Ja. Heute. Morgen auch.<br>Irgendwann nicht mehr.<br>Nimm ihn mit.</div>
+        </div>
+      </div></div></div>
+    </div>
+
+    <!-- Folie 10 -->
+    <div>
+      <div class="frame-label">Folie 10 · 22:00 · Last Call (HERO)</div>
+      <div class="stage-wrap"><div class="stage"><div class="slide f10">
+        <div class="head-block">
+          <h1>Schlafen mit<br>fertiger Bio<br>fühlt sich besser an. 🤷‍♀️</h1>
+          <div class="sub">Drei Minuten. Heute.<br>Morgen ist auch ein Tag —<br>aber halt morgen.</div>
+        </div>
+        <div class="cta-block">
+          <span class="pill">Kommentier BIO</span>
+          <span class="arrow">⬇</span>
+        </div>
+        <div class="footer">unter meinem Reel · Tag 0 · Bio-Check</div>
+      </div></div></div>
+    </div>
+
+  </div>
+</body>
+</html>
