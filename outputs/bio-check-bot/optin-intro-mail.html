@@ -1,13 +1,20 @@
 <!--
-  Bio-Check Opt-In Intro · MAIL-VERSION
+  Bio-Check Opt-In Intro · MAIL-VERSION mit AC-CONFIRMLINK
   ============================================================
-  ⚠️ NICHT verwechseln mit optin-intro.html (das ist für Webpages).
-  Diese Version ist für E-Mails: Tables + Solid-Color + Inline-Styles.
+  Verwendung: In der DOI-Bestätigungs-Mail von AC.
+  AC ersetzt %CONFIRMLINK% beim Versand mit dem persönlichen
+  Bestätigungs-Link des Subscribers.
 
-  Verwendung: Wenn der Block in einer AC-Mail eingefügt werden soll
-  (z.B. DOI-Confirmation-Mail oder Auslieferungs-Mail).
+  ⚠️ Falls dein AC einen anderen Tag-Namen nutzt:
+     Andere Schreibweisen können sein:
+     - %CONFIRMLINK%
+     - %CONFIRM_LINK%
+     - %CONFIRM%
+     - {{ confirm_link }}
+     Im AC-Editor unter „Personalize" / „Personalisieren" findest du
+     den richtigen Tag (oben rechts in der Mail-Bearbeitung).
 
-  Mail-Client-getestet: Gmail, Outlook, Apple Mail, AC-Editor.
+  Tables + Solid-Color + Inline-Styles für Mail-Client-Kompat.
 -->
 
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;margin:0 auto;background-color:#12828c;border-radius:18px;">
@@ -80,14 +87,35 @@
         </tr>
       </table>
 
-      <!-- Trust-Footer -->
-      <p style="font-family:Arial,sans-serif;font-size:14px;color:#f1ecdd;opacity:0.7;margin:0 0 6px 0;letter-spacing:1px;">
+      <!-- Trust-Text vor Button -->
+      <p style="font-family:Arial,sans-serif;font-size:14px;color:#f1ecdd;opacity:0.85;margin:0 0 6px 0;letter-spacing:0.5px;">
         Bestätige unten kurz deine E-Mail —<br>
-        dann landet der Bot-Link direkt in deiner Mailbox
+        dann landet der Bot-Link sofort bei dir
       </p>
 
-      <!-- Pfeil zum Bestätigungs-Button -->
-      <p style="font-size:32px;color:#dc822e;margin:8px 0 0 0;line-height:1;">⬇</p>
+      <!-- Pfeil -->
+      <p style="font-size:28px;color:#dc822e;margin:6px 0 18px 0;line-height:1;">⬇</p>
+
+      <!-- ============================================================
+           BESTÄTIGUNGS-BUTTON mit AC-CONFIRMLINK-Tag
+           %CONFIRMLINK% wird beim Versand automatisch durch den
+           persönlichen Bestätigungs-Link des Subscribers ersetzt.
+           ============================================================ -->
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 14px;">
+        <tr>
+          <td bgcolor="#dc822e" style="background-color:#dc822e;border-radius:50px;padding:0;">
+            <a href="%CONFIRMLINK%" target="_blank" style="display:inline-block;font-family:Arial,sans-serif;font-size:17px;font-weight:bold;color:#ffffff;text-decoration:none;letter-spacing:0.5px;padding:18px 38px;border-radius:50px;">
+              Ja, ich bestätige meine E-Mail 🌿
+            </a>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Falls der Button nicht klickbar -->
+      <p style="font-family:Arial,sans-serif;font-size:12px;color:#f1ecdd;opacity:0.6;margin:8px 0 0 0;line-height:1.5;">
+        Falls der Button nicht funktioniert, kopier diesen Link in deinen Browser:<br>
+        <a href="%CONFIRMLINK%" style="color:#f1ecdd;text-decoration:underline;word-break:break-all;">%CONFIRMLINK%</a>
+      </p>
 
     </td>
   </tr>
