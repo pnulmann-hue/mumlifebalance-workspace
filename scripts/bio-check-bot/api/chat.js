@@ -21,7 +21,7 @@ import { join } from 'node:path';
 
 export const config = {
   runtime: 'nodejs',
-  maxDuration: 30,
+  maxDuration: 60,
 };
 
 let systemPromptCache = null;
@@ -68,15 +68,30 @@ export default async function handler(req, res) {
 
     const client = new Anthropic({ apiKey });
 
-    const response = await client.messages.create({
-      model: 'claude-sonnet-4-5',
-      max_tokens: 2000,
-      system: systemPrompt + userContext,
-      messages: messages.map((m) => ({
-        role: m.role === 'assistant' ? 'assistant' : 'user',
-        content: m.content,
-      })),
-    });
+    // Retry-Logic: Bei transientem Anthropic-Fehler (5xx, overload, network)
+    // einmal automatisch nochmal probieren mit kurzem Backoff
+    async function callAnthropic(attempt = 1) {
+      try {
+        return await client.messages.create({
+          model: 'claude-sonnet-4-5',
+          max_tokens: 8000,
+          system: systemPrompt + userContext,
+          messages: messages.map((m) => ({
+            role: m.role === 'assistant' ? 'assistant' : 'user',
+            content: m.content,
+          })),
+        });
+      } catch (err) {
+        const transient = err.status >= 500 || err.status === 429 || err.name === 'APIConnectionError';
+        if (transient && attempt < 2) {
+          await new Promise((r) => setTimeout(r, 1500));
+          return callAnthropic(attempt + 1);
+        }
+        throw err;
+      }
+    }
+
+    const response = await callAnthropic();
 
     const text = response.content
       .filter((block) => block.type === 'text')
@@ -84,9 +99,54 @@ export default async function handler(req, res) {
       .join('\n')
       .trim();
 
-    return res.status(200).json({ text });
+    // Telemetry: Token-Verbrauch loggen
+    const usage = response.usage || {};
+    const cacheRead = usage.cache_read_input_tokens || 0;
+    const cacheWrite = usage.cache_creation_input_tokens || 0;
+    console.log('Chat OK:', {
+      input: usage.input_tokens,
+      output: usage.output_tokens,
+      cache_read: cacheRead,
+      cache_write: cacheWrite,
+      stop_reason: response.stop_reason,
+      messages_count: messages.length,
+    });
+
+    // Warning bei kritischen States
+    if (response.stop_reason === 'max_tokens') {
+      console.warn('⚠️ max_tokens reached — Output abgeschnitten', usage);
+    }
+    if ((usage.input_tokens || 0) > 150000) {
+      console.warn('⚠️ Input-Tokens > 150k — Conversation wird gross', usage);
+    }
+
+    return res.status(200).json({
+      text,
+      meta: {
+        retryable: false,
+        stop_reason: response.stop_reason,
+      },
+    });
   } catch (err) {
-    console.error('Chat error:', err);
-    return res.status(500).json({ error: err.message || 'internal error' });
+    console.error('Chat error (full):', {
+      name: err.name,
+      message: err.message,
+      status: err.status,
+      type: err.error?.type,
+      stack: err.stack?.split('\n').slice(0, 5).join('\n'),
+    });
+
+    // Retryable Errors (Frontend kann automatisch nochmal probieren)
+    const retryable =
+      err.status >= 500 ||
+      err.status === 429 ||
+      err.name === 'APIConnectionError' ||
+      err.name === 'APITimeoutError';
+
+    return res.status(retryable ? 503 : 500).json({
+      error: 'Bot-Antwort hat nicht geklappt — bitte nochmal probieren.',
+      type: err.name || 'Error',
+      retryable,
+    });
   }
 }

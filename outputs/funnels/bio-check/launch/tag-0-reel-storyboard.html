@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Storyboard · Tag 0 Reel · Bio-Check</title>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --petrol: #12828c;
+      --dunkelblau: #29556d;
+      --creme: #f1ecdd;
+      --orange: #dc822e;
+      --text-dark: #0c1c30;
+      --tuerkis-light: #e4f3f4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #2a2a2a;
+      padding: 40px;
+      font-family: 'Source Sans 3', sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+    .stage-wrap {
+      width: calc(1080px * 0.45);
+      height: calc(2400px * 0.45);
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+    }
+    .stage { transform: scale(0.45); transform-origin: top left; width: 1080px; height: 2400px; }
+    .slide {
+      width: 1080px;
+      height: 2400px;
+      position: relative;
+      overflow: hidden;
+      background: var(--creme);
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, var(--text-dark) 0%, var(--dunkelblau) 60%, var(--petrol) 100%);
+      padding: 50px 60px 60px;
+      color: var(--creme);
+    }
+    .header .badge {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      padding: 10px 22px;
+      border-radius: 30px;
+      margin-bottom: 18px;
+    }
+    .header h1 {
+      font-family: 'Philosopher', Georgia, serif;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 1.05;
+      letter-spacing: -1px;
+    }
+    .header .meta {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      color: rgba(241, 236, 221, 0.7);
+      margin-top: 14px;
+      letter-spacing: 1px;
+    }
+
+    /* Frames */
+    .frames {
+      padding: 40px 60px 0;
+    }
+    .frame {
+      display: flex;
+      gap: 36px;
+      padding: 32px 0;
+      border-bottom: 2px solid rgba(0,0,0,0.08);
+    }
+    .frame:last-child { border-bottom: none; }
+
+    /* Mini Reel-Frame (9:16) */
+    .reel-frame {
+      flex-shrink: 0;
+      width: 240px;
+      height: 426px;
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    .reel-frame.f1 {
+      background: linear-gradient(180deg, var(--text-dark) 0%, var(--petrol) 100%);
+    }
+    .reel-frame.f1::before {
+      content: '👤';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -65%);
+      font-size: 110px;
+    }
+    .reel-frame.f1 .ovl {
+      position: absolute;
+      bottom: 80px; left: 16px; right: 16px;
+      background: var(--creme);
+      padding: 12px 14px;
+      border-radius: 10px;
+      font-family: 'Philosopher', Georgia, serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--text-dark);
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .reel-frame.f2 {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .reel-frame.f2::before {
+      content: '🌐';
+      font-size: 60px;
+      margin-bottom: 14px;
+    }
+    .reel-frame.f2 .browser {
+      background: var(--creme);
+      width: 100%;
+      padding: 14px 12px;
+      border-radius: 8px;
+      text-align: center;
+      font-family: 'Philosopher', Georgia, serif;
+      color: var(--text-dark);
+    }
+    .reel-frame.f2 .browser .small {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--petrol);
+      letter-spacing: 1px;
+    }
+    .reel-frame.f2 .browser .big {
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 4px;
+    }
+    .reel-frame.f2 .button {
+      background: var(--orange);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-top: 16px;
+      position: relative;
+    }
+    .reel-frame.f2 .cursor {
+      position: absolute;
+      right: -12px;
+      bottom: -12px;
+      font-size: 32px;
+    }
+
+    .reel-frame.f3 {
+      background: var(--tuerkis-light);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .reel-frame.f3 .bot-line {
+      background: #fff;
+      padding: 12px;
+      border-radius: 12px 12px 12px 4px;
+      font-size: 13px;
+      color: var(--text-dark);
+      max-width: 85%;
+    }
+    .reel-frame.f3 .user-line {
+      background: var(--petrol);
+      color: #fff;
+      padding: 12px;
+      border-radius: 12px 12px 4px 12px;
+      font-size: 13px;
+      max-width: 85%;
+      align-self: flex-end;
+    }
+    .reel-frame.f3 .typing {
+      background: #fff;
+      padding: 14px;
+      border-radius: 12px;
+      align-self: flex-start;
+      font-size: 16px;
+      letter-spacing: 4px;
+    }
+
+    .reel-frame.f4 {
+      background: #fff;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+    }
+    .reel-frame.f4 .head {
+      font-family: 'Philosopher', Georgia, serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--petrol);
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .reel-frame.f4 ul {
+      list-style: none;
+      font-size: 14px;
+      color: var(--text-dark);
+    }
+    .reel-frame.f4 li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      font-weight: 600;
+    }
+    .reel-frame.f4 li::before {
+      content: '✓';
+      color: var(--orange);
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    .reel-frame.f5 {
+      background: linear-gradient(180deg, var(--dunkelblau) 0%, var(--petrol) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 30px;
+    }
+    .reel-frame.f5::before {
+      content: '👤';
+      font-size: 90px;
+      margin-bottom: 16px;
+      opacity: 0.4;
+    }
+    .reel-frame.f5 .pill {
+      background: var(--orange);
+      color: #fff;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 4px;
+      padding: 14px 24px;
+      border-radius: 40px;
+      text-align: center;
+    }
+    .reel-frame.f5 .arrow {
+      color: var(--creme);
+      font-size: 36px;
+      margin-top: 12px;
+    }
+
+    /* Frame Description */
+    .frame-desc {
+      flex: 1;
+      padding: 8px 0;
+    }
+    .frame-desc .time-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .frame-desc .time-pill {
+      background: var(--text-dark);
+      color: var(--creme);
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 2px;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+    .frame-desc .frame-name {
+      font-family: 'Philosopher', Georgia, serif;
+      font-weight: 700;
+      font-size: 30px;
+      color: var(--text-dark);
+    }
+    .frame-desc .label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: var(--petrol);
+      text-transform: uppercase;
+      margin-top: 14px;
+      margin-bottom: 6px;
+    }
+    .frame-desc .voice {
+      font-family: 'Philosopher', Georgia, serif;
+      font-style: italic;
+      font-size: 22px;
+      color: var(--text-dark);
+      line-height: 1.4;
+      padding-left: 14px;
+      border-left: 4px solid var(--orange);
+    }
+    .frame-desc .visual {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: rgba(12, 28, 48, 0.7);
+      line-height: 1.45;
+    }
+    .frame-desc .overlay-box {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      margin-top: 4px;
+    }
+    .frame-desc .overlay-box.muted {
+      background: rgba(0,0,0,0.05);
+      color: rgba(12, 28, 48, 0.5);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--text-dark);
+      color: rgba(241, 236, 221, 0.7);
+      padding: 30px 60px;
+      text-align: center;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+    }
+    .footer .accent { color: var(--orange); }
+  </style>
+</head>
+<body>
+  <div class="stage-wrap"><div class="stage">
+    <div class="slide">
+
+      <!-- Header -->
+      <div class="header">
+        <span class="badge">Reel · Tag 0 · Storyboard</span>
+        <h1>Gestern Schluckauf.<br>Heute — schau.</h1>
+        <div class="meta">Bio-Check Launch · 30 Sekunden · 9:16 · Mentoring</div>
+      </div>
+
+      <!-- Frames -->
+      <div class="frames">
+
+        <!-- Frame 1: HOOK -->
+        <div class="frame">
+          <div class="reel-frame f1">
+            <div class="ovl">Gestern Schluckauf.<br>Heute — schau.</div>
+          </div>
+          <div class="frame-desc">
+            <div class="time-row">
+              <span class="time-pill">0–3 SEK</span>
+              <span class="frame-name">Hook · Stopper</span>
+            </div>
+            <div class="label">Sprechen</div>
+            <div class="voice">„Gestern hatte er noch Schluckauf. Heute — schau."</div>
+            <div class="label">Visual</div>
+            <div class="visual">Du direkt in Kamera · Bot-Screen schimmert im Hintergrund</div>
+            <div class="label">Overlay</div>
+            <div class="overlay-box">Gestern Schluckauf. Heute — schau.</div>
+          </div>
+        </div>
+
+        <!-- Frame 2: CUT 1 -->
+        <div class="frame">
+          <div class="reel-frame f2">
+            <div class="browser">
+              <div class="small">MUMLIFEBALANCE.CH</div>
+              <div class="big">Bio-Check</div>
+            </div>
+            <div class="button">Jetzt checken
+              <span class="cursor">👆</span>
+            </div>
+          </div>
+          <div class="frame-desc">
+            <div class="time-row">
+              <span class="time-pill">3–8 SEK</span>
+              <span class="frame-name">Cut 1 · Landing</span>
+            </div>
+            <div class="label">Sprechen</div>
+            <div class="voice">„Du trägst deine aktuelle Bio rein."</div>
+            <div class="label">Visual</div>
+            <div class="visual">Screen-Recording: Landing-Page öffnet · Cursor klickt „Jetzt Bio checken"-Button</div>
+            <div class="label">Overlay</div>
+            <span class="overlay-box muted">— kein Overlay —</span>
+          </div>
+        </div>
+
+        <!-- Frame 3: CUT 2 -->
+        <div class="frame">
+          <div class="reel-frame f3">
+            <div class="bot-line">Was bietest du an?</div>
+            <div class="user-line">1:1 Mentoring für…</div>
+            <div class="bot-line">Für wen ist das?</div>
+            <div class="typing">● ● ●</div>
+          </div>
+          <div class="frame-desc">
+            <div class="time-row">
+              <span class="time-pill">8–14 SEK</span>
+              <span class="frame-name">Cut 2 · Bot füttern</span>
+            </div>
+            <div class="label">Sprechen</div>
+            <div class="voice">„Beantwortest ein paar Fragen zu deinem Angebot und deiner Zielgruppe."</div>
+            <div class="label">Visual</div>
+            <div class="visual">Screen-Recording: Bot stellt Fragen · du tippst Antworten · schnelle Cuts</div>
+            <div class="label">Overlay</div>
+            <span class="overlay-box muted">— kein Overlay —</span>
+          </div>
+        </div>
+
+        <!-- Frame 4: CUT 3 -->
+        <div class="frame">
+          <div class="reel-frame f4">
+            <div class="head">Dein Experten-Satz</div>
+            <ul>
+              <li>3 Varianten</li>
+              <li>5 Bio-Vorschläge</li>
+              <li>3 Pinned Posts</li>
+              <li>PDF per Mail</li>
+            </ul>
+          </div>
+          <div class="frame-desc">
+            <div class="time-row">
+              <span class="time-pill">14–22 SEK</span>
+              <span class="frame-name">Cut 3 · Ergebnis</span>
+            </div>
+            <div class="label">Sprechen</div>
+            <div class="voice">„In drei Minuten kriegst du raus: deinen Experten-Satz, 5 Bio-Vorschläge, 3 Pinned-Posts-Ideen — und alles als PDF per Mail."</div>
+            <div class="label">Visual</div>
+            <div class="visual">Screen-Recording: Bot-Ergebnis-Screen · Liste-Items poppen einzeln auf</div>
+            <div class="label">Overlay</div>
+            <div class="overlay-box">✓ Experten-Satz · ✓ 5 Bio-Vorschläge · ✓ PDF</div>
+          </div>
+        </div>
+
+        <!-- Frame 5: CTA -->
+        <div class="frame">
+          <div class="reel-frame f5">
+            <div class="pill">BIO ⬇️</div>
+            <div class="arrow">↓</div>
+          </div>
+          <div class="frame-desc">
+            <div class="time-row">
+              <span class="time-pill">22–30 SEK</span>
+              <span class="frame-name">CTA · Conversion</span>
+            </div>
+            <div class="label">Sprechen</div>
+            <div class="voice">„Heute gratis. Kommentier BIO unter diesem Reel — ich schick dir den Link in die DM. Und ja: Er läuft jetzt wirklich."</div>
+            <div class="label">Visual</div>
+            <div class="visual">Du direkt in Kamera · entspannt-lächelnd · letzter Look-At-Camera</div>
+            <div class="label">Overlay</div>
+            <div class="overlay-box">Kommentier BIO ⬇️</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        Total <span class="accent">30 Sek</span> · 9:16 · Caption + Hashtags siehe <span class="accent">tag-0-reel-briefing.md</span>
+      </div>
+
+    </div>
+  </div></div>
+</body>
+</html>

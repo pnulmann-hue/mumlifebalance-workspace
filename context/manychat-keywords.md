@@ -21,6 +21,7 @@ Der `/reels`- und `/karussell`-Assistent wählt IMMER aus dieser Liste — niema
 | `LEAD`           | 0€ Lead-Challenge               | Lead-Challenge (Lead Magnet) |
 | `ECHT1`          | Workbook „Von 0 auf echt"      | Workbook (Lead Magnet) |
 | `STORY`          | Story-Challenge „7-Tage-Workbook" + Telegram-Kanal | Story-Challenge (Lead Magnet) — **TODO: in ManyChat einrichten!** |
+| `BIO`            | Bio-Check für Network-Mamas (KI-Bot)              | Bio-Check (Lead Magnet) — Launch seit 2026-04-24. Flow-Anleitung: `outputs/funnels/bio-check/launch/manychat-flow-BIO.md` |
 
 ---
 
@@ -70,7 +71,7 @@ Der `/reels`- und `/karussell`-Assistent wählt IMMER aus dieser Liste — niema
 | 1 — Authentizität im Business      | `ECHT1`         | `THEMA` |
 | 2 — Mindset & Selbstbestimmung      | `ECHT1`         | `SYSTEM` |
 | 3 — Network Marketing 2.0           | `SYSTEM`        | `FAHRPLAN`, `ANLEITUNG` |
-| 4 — Instagram-Strategie für NM     | `SICHTBAR`      | `LEAD`, `SYSTEM` |
+| 4 — Instagram-Strategie für NM     | `BIO` (Launch-Woche 24.04–01.05) · danach `SICHTBAR` | `LEAD`, `SYSTEM` |
 | 5 — Digitale Produkte & Automation  | `PRODUKT`       | `THEMA`, `QUIZ` |
 
 Der Assistent nutzt das **Primär-Keyword** als Default und wechselt bei Wiederholung zum Alternativ-Keyword, um Abwechslung zu schaffen.

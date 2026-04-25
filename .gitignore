@@ -137,6 +137,10 @@ Screenshot*.jpg
 # Ausnahmen: diese .png/.jpg-Files bleiben drin (wichtige Brand-Assets in scripts/)
 !scripts/bio-check-bot/public/images/patricia-hero.jpg
 
+# Ausnahmen: produktive Launch-Assets (designed Story-/Karussell-PNGs zum direkten Hochladen)
+!outputs/funnels/**/*.png
+!outputs/funnels/**/*.jpg
+
 # ============================================================
 # REFERENZ-PDFs BLEIBEN LOKAL
 # Grosse Fremd-Kurs-PDFs + EPUBs raus (zu gross fuer Git)
