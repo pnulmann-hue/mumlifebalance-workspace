@@ -13,7 +13,7 @@
     }
   ],
   "functions": {
-    "api/chat.js": { "maxDuration": 30 },
+    "api/chat.js": { "maxDuration": 60 },
     "api/pdf.js": { "maxDuration": 60 }
   }
 }

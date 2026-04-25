@@ -21,7 +21,7 @@ import { join } from 'node:path';
 
 export const config = {
   runtime: 'nodejs',
-  maxDuration: 30,
+  maxDuration: 60,
 };
 
 let systemPromptCache = null;
@@ -70,7 +70,7 @@ export default async function handler(req, res) {
 
     const response = await client.messages.create({
       model: 'claude-sonnet-4-5',
-      max_tokens: 2000,
+      max_tokens: 8000,
       system: systemPrompt + userContext,
       messages: messages.map((m) => ({
         role: m.role === 'assistant' ? 'assistant' : 'user',
@@ -84,9 +84,24 @@ export default async function handler(req, res) {
       .join('\n')
       .trim();
 
+    if (response.stop_reason === 'max_tokens') {
+      console.warn('Chat: max_tokens reached — Output wurde abgeschnitten', {
+        input_tokens: response.usage?.input_tokens,
+        output_tokens: response.usage?.output_tokens,
+      });
+    }
+
     return res.status(200).json({ text });
   } catch (err) {
-    console.error('Chat error:', err);
-    return res.status(500).json({ error: err.message || 'internal error' });
+    console.error('Chat error (full):', {
+      name: err.name,
+      message: err.message,
+      status: err.status,
+      stack: err.stack?.split('\n').slice(0, 5).join('\n'),
+    });
+    return res.status(500).json({
+      error: err.message || 'internal error',
+      type: err.name || 'Error',
+    });
   }
 }
