@@ -73,15 +73,19 @@
 - **CTA (unten als IG-Frage-Sticker, NATIV in IG einfügen):** `Wie fühlt sich deine Woche an?`
 - **Farbe Headline:** Creme `#f1ecdd` mit dezentem Petrol-Schatten
 
-## Slide 5/5 — CTA Bio-Check
+## Slide 5/5 — CTA Bio-Check (Self-Service via Link)
 
 - **Bild:** `01-berge-tanne.jpg` (anderer Crop — mehr Himmel, mehr Atmosphäre)
 - **Overlay (Creme-Box mittig, größer):**
   - **Headline:** `Dein Profil sollte das auch können.`
   - **Sub:** `Magnetisch. In 3 Sekunden klar. So, dass jemand sofort denkt: shit, wow.`
-  - **CTA:** `→ Tipp BIO-CHECK in DM`
-- **IG-Sticker:** Link-Sticker zu DM ODER Frage-Sticker mit Vorausfüllung „BIO-CHECK"
-- **Farbe:** Petrol Headline, Orange `#dc822e` für CTA-Zeile
+  - **CTA-Zeile (klein, unten in der Box):** `Mach den kostenlosen Bio-Check ↓`
+- **IG-Sticker (NATIV in IG einfügen, NICHT in Canva!):**
+  - **Link-Sticker** mit URL: `https://mumlifebalance.ch/bio-check`
+  - Sticker-Text: `BIO-CHECK STARTEN` (oder „Jetzt Bio prüfen" — kurz halten, max. 20 Zeichen)
+  - Position: untere Drittel, mittig oder leicht rechts (nicht von Story-Header verdeckt)
+- **Farbe Overlay:** Petrol `#12828c` Headline, Orange `#dc822e` CTA-Zeile
+- **Optional Backup-Hinweis (winzig, am Rand):** „Lieber Austausch? Schreib mir BIO in DM."
 
 ---
 
@@ -162,7 +166,8 @@
 |---|---|---|
 | Replies auf Slide 4 (Frage) | — | — |
 | Antworten auf Slide 5 (Antwort-Sticker) | — | — |
-| BIO-CHECK-DMs | — | — |
+| Bio-Check Link-Klicks (WP-Analytics) | — | — |
+| BIO-CHECK-DMs (Backup) | — | — |
 | Profil-Besuche | — | — |
 | Neue Follower nach Story | — | — |
 
