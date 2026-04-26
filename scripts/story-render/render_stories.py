@@ -158,9 +158,9 @@ def render_slide(bg_path, slides_config, out_path):
     box_h = head_total_h + (sub_total_h + 30 if sub else 0) + 100  # padding
 
     if box_y == "top":
-        by = 220
+        by = slides_config.get("top_padding", 220)
     elif box_y == "bottom":
-        by = H - box_h - 280
+        by = H - box_h - slides_config.get("bottom_padding", 280)
     else:
         by = (H - box_h) // 2
 
@@ -224,8 +224,9 @@ SLIDES = [
         "headline": "Genau dafür hab ich mein Business so gebaut.",
         "head_size": 80,
         "box_y": "top",
+        "top_padding": 100,
         "align": "center",
-        "focal_y": 0.55,
+        "focal_y": 0.25,
     },
     {
         "out": "p1-mentoring-03-vier-kinder.png",
@@ -255,6 +256,7 @@ SLIDES = [
         "head_size": 70,
         "sub_size": 40,
         "box_y": "bottom",
+        "bottom_padding": 600,
         "align": "center",
         "focal_y": 0.3,
     },
@@ -276,8 +278,9 @@ SLIDES = [
         "head_size": 84,
         "sub_size": 42,
         "box_y": "top",
+        "top_padding": 100,
         "align": "center",
-        "focal_y": 0.55,
+        "focal_y": 0.25,
     },
     {
         "out": "p2-doterra-03-fruehling.png",
@@ -308,6 +311,7 @@ SLIDES = [
         "head_size": 72,
         "sub_size": 38,
         "box_y": "bottom",
+        "bottom_padding": 600,
         "align": "center",
         "focal_y": 0.3,
     },
