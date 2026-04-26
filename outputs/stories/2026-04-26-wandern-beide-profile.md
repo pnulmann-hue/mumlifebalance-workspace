@@ -73,19 +73,59 @@
 - **CTA (unten als IG-Frage-Sticker, NATIV in IG einfügen):** `Wie fühlt sich deine Woche an?`
 - **Farbe Headline:** Creme `#f1ecdd` mit dezentem Petrol-Schatten
 
-## Slide 5/5 — CTA Bio-Check (Self-Service via Link)
+## Slide 5/5 — CTA Bio-Check (Link sichtbar im Design)
 
 - **Bild:** `01-berge-tanne.jpg` (anderer Crop — mehr Himmel, mehr Atmosphäre)
-- **Overlay (Creme-Box mittig, größer):**
-  - **Headline:** `Dein Profil sollte das auch können.`
-  - **Sub:** `Magnetisch. In 3 Sekunden klar. So, dass jemand sofort denkt: shit, wow.`
-  - **CTA-Zeile (klein, unten in der Box):** `Mach den kostenlosen Bio-Check ↓`
-- **IG-Sticker (NATIV in IG einfügen, NICHT in Canva!):**
-  - **Link-Sticker** mit URL: `https://mumlifebalance.ch/bio-check`
-  - Sticker-Text: `BIO-CHECK STARTEN` (oder „Jetzt Bio prüfen" — kurz halten, max. 20 Zeichen)
-  - Position: untere Drittel, mittig oder leicht rechts (nicht von Story-Header verdeckt)
-- **Farbe Overlay:** Petrol `#12828c` Headline, Orange `#dc822e` CTA-Zeile
-- **Optional Backup-Hinweis (winzig, am Rand):** „Lieber Austausch? Schreib mir BIO in DM."
+
+**Text-Aufbau (alles im Canva-Design, NICHT als IG-Sticker):**
+
+- **Headline (groß, oben in Creme-Box):**
+  `Dein Profil sollte das auch können.`
+  → Philosopher Bold, ~95px, Petrol `#12828c`
+
+- **Sub (darunter, mittel):**
+  `Magnetisch. In 3 Sekunden klar.`
+  `So, dass jemand sofort denkt: shit, wow.`
+  → Source Sans 3, ~44px, Dunkelblau `#29556d`
+
+- **Trenner:** dünne Petrol-Linie (2px breit, 200px lang, mittig)
+
+- **CTA-Aufruf (klein, drüber):**
+  `Mach jetzt den kostenlosen Bio-Check:`
+  → Source Sans 3, ~36px, Dunkelblau `#29556d`
+
+- **LINK-BLOCK (groß, prominent, das ist das Hauptelement):**
+  `www.mumlifebalance.ch/bio-check`
+  → Source Sans 3 **Bold**, ~52px, Orange `#dc822e`
+  → leicht erhöhter Letter-Spacing für Lesbarkeit
+  → optional: kleines Pfeil-Icon → davor
+
+**Layout-Reihenfolge (von oben nach unten in der Creme-Box):**
+```
+┌─────────────────────────────────┐
+│  Dein Profil sollte das         │
+│  auch können.                   │
+│                                 │
+│  Magnetisch. In 3 Sekunden      │
+│  klar. So, dass jemand          │
+│  sofort denkt: shit, wow.       │
+│                                 │
+│  ─── (Petrol-Linie) ───         │
+│                                 │
+│  Mach jetzt den kostenlosen     │
+│  Bio-Check:                     │
+│                                 │
+│  → www.mumlifebalance.ch/       │
+│       bio-check                 │
+│                                 │
+└─────────────────────────────────┘
+```
+
+**Zusätzlich in der IG-App nach dem Posten** (Tap-Convenience für die, die nicht abtippen wollen):
+- **Link-Sticker** mit URL `https://mumlifebalance.ch/bio-check`
+- Sticker-Text: `BIO-CHECK STARTEN`
+- Position: unter dem Link-Text-Block, kleiner als der sichtbare Link
+→ So profitieren beide: Tap-User (Sticker) UND Screenshot/Mitleser (sichtbarer Link bleibt im Bild)
 
 ---
 
