@@ -137,6 +137,9 @@ Screenshot*.jpg
 # Ausnahmen: diese .png/.jpg-Files bleiben drin (wichtige Brand-Assets in scripts/)
 !scripts/bio-check-bot/public/images/patricia-hero.jpg
 
+# Ausnahme: gerenderte Story-Slides (zum Mobile-Download)
+!outputs/stories/renders/*.png
+
 # ============================================================
 # REFERENZ-PDFs BLEIBEN LOKAL
 # Grosse Fremd-Kurs-PDFs + EPUBs raus (zu gross fuer Git)
