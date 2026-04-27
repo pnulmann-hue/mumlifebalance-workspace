@@ -309,6 +309,20 @@ Rendert eine Karussell-HTML-Vorlage zu Instagram-postbaren PNG-Folien. Ersetzt d
 
 **Phase 2 (geplant):** Nach dem Rendern werden die 11 PNGs automatisch als editierbares Canva-Design hochgeladen (via `upload-asset-from-url`), damit Patricia Feinjustierungen im Canva-UI machen kann.
 
+### Kochbot-RAG (`scripts/kochbot-rag/`)
+
+Supabase-basierte Vector-Datenbank für Patricias Rezepte (~1900 PDFs in `rezepte/`) und Kochwissen (MyBodyAdvice, 7hauben-Brotkurse in `kochwissen/`). Macht den `/mealplan`-Slash-Command auch in der Web-Claude-Sandbox einsatzfähig — die PDFs selbst sind via `.gitignore` ausgeschlossen, die Embeddings liegen bei Supabase und werden via API abgerufen.
+
+- **Sprache:** Python 3.11+
+- **Stack:** OpenAI `text-embedding-3-small` (1536 dim) + Supabase pgvector + `pypdf` + `tiktoken`
+- **Setup-Anleitung:** `scripts/kochbot-rag/README.md`
+- **Schema:** `scripts/kochbot-rag/schema.sql` einmalig im Supabase SQL Editor ausführen
+- **Ingest (lokal, einmalig):** `python ingest.py` — liest `rezepte/` + `kochwissen/`, embeddet, schreibt nach Supabase. Idempotent (skipped bekannte Dateien), `--force` überschreibt
+- **Query (überall):** `python scripts/kochbot-rag/query.py "<Anfrage>" --top 5 [--folder rezepte|kochwissen] [--format json]`
+- **Benötigte ENV** (`scripts/kochbot-rag/.env`, gitignored): `SUPABASE_URL`, `SUPABASE_SERVICE_KEY`, `OPENAI_API_KEY`
+
+Der `/mealplan`-Slash-Command ruft `query.py` automatisch vor jeder Rezept-Empfehlung auf, statt Rezepte zu erfinden. Falls die `.env` in der Web-Claude-Sandbox fehlt (sie persistiert nicht zwischen Sessions): Patricia darauf hinweisen statt aufgeben.
+
 ### Telegram News-Bot (`scripts/telegram-news-bot/`)
 
 Wöchentlicher News-Digest-Bot, der Artikel aus RSS-Feeds (Onlinemarketing & KI) sammelt, mit Claude zusammenfasst und per Telegram sendet.
