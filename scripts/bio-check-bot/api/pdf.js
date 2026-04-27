@@ -27,7 +27,7 @@ import PDFDocument from 'pdfkit';
 import { put } from '@vercel/blob';
 import crypto from 'node:crypto';
 
-export const config = { runtime: 'nodejs', maxDuration: 60 };
+export const config = { runtime: 'nodejs', maxDuration: 90 };
 
 const anthropic = new Anthropic();
 
@@ -156,6 +156,92 @@ REGELN:
 
 Wenn der Chat noch nicht vollständig durchgelaufen ist (z.B. keine Bio-Varianten erstellt wurden), nutze sinnvolle Defaults oder lass das Feld als leeres Array.`;
 
+// Tool-Schema: erzwingt strukturierte JSON-Antwort (zuverlaessiger als
+// Text-Parsing — Claude liefert garantiert JSON mit korrektem Schema).
+const SUMMARY_TOOL = {
+  name: 'submit_bio_check_summary',
+  description: 'Reicht die strukturierte Bio-Check-Zusammenfassung ein, die im PDF gerendert wird.',
+  input_schema: {
+    type: 'object',
+    properties: {
+      thema_kompakt: {
+        type: 'string',
+        description: 'Das Haupt-Thema der User in EINEM Satz (max. 25 Woerter), wie ihr Experten-Satz',
+      },
+      experten_satz: {
+        type: 'string',
+        description: 'Die zentrale Positionierungs-Aussage, der eine Satz, der das Profil definiert',
+      },
+      audience_zitat: {
+        type: 'string',
+        description: 'Ein woertliches Audience-Zitat aus dem Chat (z.B. "Ausgelaugt aber mit dem Gefuehl: ist halt so")',
+      },
+      bio_varianten: {
+        type: 'array',
+        items: {
+          type: 'object',
+          properties: {
+            name: { type: 'string', description: 'Stil-Bezeichnung (z.B. Warmherzig)' },
+            zeilen: {
+              type: 'array',
+              items: { type: 'string' },
+              description: 'Die 4 Zeilen der Bio: Profilname, Experten-Satz, Trust-Element, CTA',
+            },
+            zeichen: { type: 'integer', description: 'Anzahl Zeichen der gesamten Bio' },
+          },
+          required: ['name', 'zeilen'],
+        },
+        description: '2-3 Bio-Varianten (so viele wie im Chat vorgeschlagen)',
+      },
+      pinned_posts: {
+        type: 'array',
+        items: {
+          type: 'object',
+          properties: {
+            titel: { type: 'string' },
+            hook: { type: 'string', description: 'Aufhaenger als kompletter Satz' },
+            kernbotschaft: { type: 'string', description: 'Was der Post transportiert in 1-2 Saetzen' },
+          },
+          required: ['titel', 'hook', 'kernbotschaft'],
+        },
+        description: 'Genau 3 Pinned Posts',
+      },
+      highlights: {
+        type: 'array',
+        items: {
+          type: 'object',
+          properties: {
+            name: { type: 'string' },
+            beschreibung: { type: 'string', description: '1 praegnanter Satz' },
+          },
+          required: ['name', 'beschreibung'],
+        },
+        description: 'Genau 5 Highlights',
+      },
+      positionierung_tipps: {
+        type: 'array',
+        items: { type: 'string' },
+        description: '5-7 Pflicht-Tipps zur Positionierung aus der Chat-Analyse',
+      },
+      patricia_bonus_tipps: {
+        type: 'array',
+        items: { type: 'string' },
+        description: '4-6 ZUSAETZLICHE Tipps von Patricia (NICHT aus dem Chat, sondern was sie persoenlich raten wuerde)',
+      },
+    },
+    required: [
+      'thema_kompakt',
+      'experten_satz',
+      'audience_zitat',
+      'bio_varianten',
+      'pinned_posts',
+      'highlights',
+      'positionierung_tipps',
+      'patricia_bonus_tipps',
+    ],
+  },
+};
+
 async function generateSummary(messages, name) {
   if (!messages || messages.length === 0) return null;
 
@@ -163,24 +249,23 @@ async function generateSummary(messages, name) {
     .map((m) => `[${m.role.toUpperCase()}]\n${m.content}`)
     .join('\n\n---\n\n');
 
-  const userPrompt = `Hier ist der komplette Bio-Check-Chat-Verlauf für ${name || 'die User'}.\n\nExtrahiere die Kern-Inhalte als JSON gemäss Schema.\n\n=== CHAT-VERLAUF ===\n\n${chatLog}\n\n=== ENDE CHAT-VERLAUF ===\n\nJSON:`;
+  const userPrompt = `Hier ist der komplette Bio-Check-Chat-Verlauf fuer ${name || 'die User'}.\n\nReiche die strukturierte Zusammenfassung via submit_bio_check_summary-Tool ein.\n\n=== CHAT-VERLAUF ===\n\n${chatLog}\n\n=== ENDE CHAT-VERLAUF ===`;
 
   const response = await anthropic.messages.create({
     model: 'claude-sonnet-4-5',
     max_tokens: 4000,
     system: SUMMARY_SYSTEM_PROMPT,
+    tools: [SUMMARY_TOOL],
+    tool_choice: { type: 'tool', name: 'submit_bio_check_summary' },
     messages: [{ role: 'user', content: userPrompt }],
   });
 
-  const text = response.content?.[0]?.text || '';
-  // Robust: erstes { bis letztes } extrahieren (falls doch Markdown drumherum)
-  const start = text.indexOf('{');
-  const end = text.lastIndexOf('}');
-  if (start === -1 || end === -1) {
-    throw new Error('Kein JSON in Summary-Antwort gefunden');
+  // Tool-Use-Block extrahieren — Claude muss den Tool aufrufen (forced via tool_choice)
+  const toolUseBlock = response.content?.find((b) => b.type === 'tool_use');
+  if (!toolUseBlock) {
+    throw new Error('Kein tool_use-Block in Summary-Antwort (forced tool_choice fehlgeschlagen)');
   }
-  const jsonStr = text.substring(start, end + 1);
-  return JSON.parse(jsonStr);
+  return toolUseBlock.input;
 }
 
 // =============================================================
