@@ -340,35 +340,48 @@ function generatePDF({ name, summary, fallbackMessages }) {
         sectionHeader('Deine Bio-Varianten', 'Copy-paste-ready für deine Instagram-Bio. Aussuchen, einsetzen, fertig.');
 
         summary.bio_varianten.forEach((v, idx) => {
-          if (doc.y > doc.page.height - 220) doc.addPage();
+          if (doc.y > doc.page.height - 250) doc.addPage();
           // Variante-Label
           doc.fillColor(colors.orange).font('Helvetica-Bold').fontSize(11)
             .text(`VARIANTE ${idx + 1} — ${(v.name || '').toUpperCase()}`,
-              { characterSpacing: 1.5 });
-          doc.moveDown(0.3);
+              60, doc.y, { characterSpacing: 1.5 });
+          doc.moveDown(0.4);
 
-          // Bio-Box
-          const boxY = doc.y;
           const lines = Array.isArray(v.zeilen) ? v.zeilen : [];
-          const boxHeight = 30 + lines.length * 18 + 30;
-          doc.roundedRect(60, boxY, doc.page.width - 120, boxHeight, 8)
+          const innerWidth = doc.page.width - 160; // Box-Innenraum
+
+          // Box-Höhe dynamisch berechnen — jede Zeile kann mehrzeilig umbrechen
+          doc.font('Helvetica').fontSize(11);
+          const lineSpacing = 6; // Abstand zwischen den Zeilen
+          let contentHeight = 16; // Top-Padding
+          lines.forEach((line) => {
+            contentHeight += doc.heightOfString(line, { width: innerWidth });
+            contentHeight += lineSpacing;
+          });
+          contentHeight += 22; // Bottom-Padding + Platz für Zeichenzähler
+
+          // Box rendern
+          const boxY = doc.y;
+          doc.roundedRect(60, boxY, doc.page.width - 120, contentHeight, 8)
             .fill(colors.cremeBox);
 
-          let lineY = boxY + 18;
+          // Zeilen rendern — nutzt doc.y für automatische Höhenverfolgung
+          doc.y = boxY + 14;
           lines.forEach((line) => {
             doc.fillColor(colors.text).font('Helvetica').fontSize(11)
-              .text(line, 80, lineY, { width: doc.page.width - 160 });
-            lineY += 18;
+              .text(line, 80, doc.y, { width: innerWidth });
+            doc.y += lineSpacing - 2;
           });
 
-          // Zeichenanzahl unten rechts
+          // Zeichenanzahl unten rechts in der Box
           if (v.zeichen) {
             doc.fillColor(colors.muted).font('Helvetica-Oblique').fontSize(9)
-              .text(`${v.zeichen} Zeichen`, 80, boxY + boxHeight - 18,
-                { width: doc.page.width - 160, align: 'right' });
+              .text(`${v.zeichen} Zeichen`, 60, boxY + contentHeight - 16,
+                { width: doc.page.width - 140, align: 'right' });
           }
 
-          doc.y = boxY + boxHeight + 18;
+          // Cursor unter die Box positionieren
+          doc.y = boxY + contentHeight + 20;
         });
       }
 
