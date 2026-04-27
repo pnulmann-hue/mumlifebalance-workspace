@@ -178,55 +178,67 @@ const SUMMARY_TOOL = {
       },
       bio_varianten: {
         type: 'array',
+        minItems: 2,
+        maxItems: 3,
         items: {
           type: 'object',
           properties: {
-            name: { type: 'string', description: 'Stil-Bezeichnung (z.B. Warmherzig)' },
+            name: { type: 'string', description: 'Stil-Bezeichnung (z.B. Warmherzig, Direkt-und-konkret)' },
             zeilen: {
               type: 'array',
+              minItems: 3,
+              maxItems: 5,
               items: { type: 'string' },
-              description: 'Die 4 Zeilen der Bio: Profilname, Experten-Satz, Trust-Element, CTA',
+              description: 'Die 3-5 Zeilen der Bio: Profilname/Rolle, Experten-Satz (kann mehrzeilig), Trust-Element, CTA',
             },
             zeichen: { type: 'integer', description: 'Anzahl Zeichen der gesamten Bio' },
           },
-          required: ['name', 'zeilen'],
+          required: ['name', 'zeilen', 'zeichen'],
         },
-        description: '2-3 Bio-Varianten (so viele wie im Chat vorgeschlagen)',
+        description: 'PFLICHT: Mindestens 2 vollstaendige Bio-Varianten extrahieren. Wenn der Chat sie enthaelt (z.B. "Variante 1 — Warmherzig" oder "Variante 2 — Direkt"), nimm sie EXAKT wie vorgeschlagen.',
       },
       pinned_posts: {
         type: 'array',
+        minItems: 3,
+        maxItems: 3,
         items: {
           type: 'object',
           properties: {
-            titel: { type: 'string' },
-            hook: { type: 'string', description: 'Aufhaenger als kompletter Satz' },
+            titel: { type: 'string', description: 'Kurzer Post-Titel (z.B. "Ueber mich")' },
+            hook: { type: 'string', description: 'Aufhaenger als kompletter Satz, der beim Scrollen stoppt' },
             kernbotschaft: { type: 'string', description: 'Was der Post transportiert in 1-2 Saetzen' },
           },
           required: ['titel', 'hook', 'kernbotschaft'],
         },
-        description: 'Genau 3 Pinned Posts',
+        description: 'PFLICHT: Genau 3 Pinned Posts extrahieren — typisch: "Ueber mich", "Das ist mein Thema", "Das biete ich dir".',
       },
       highlights: {
         type: 'array',
+        minItems: 5,
+        maxItems: 5,
         items: {
           type: 'object',
           properties: {
-            name: { type: 'string' },
-            beschreibung: { type: 'string', description: '1 praegnanter Satz' },
+            name: { type: 'string', description: 'Highlight-Name (z.B. "Energielevel-Test")' },
+            beschreibung: { type: 'string', description: '1 praegnanter Satz, was dort rein gehoert' },
           },
           required: ['name', 'beschreibung'],
         },
-        description: 'Genau 5 Highlights',
+        description: 'PFLICHT: Genau 5 Highlights extrahieren.',
       },
       positionierung_tipps: {
         type: 'array',
+        minItems: 5,
+        maxItems: 7,
         items: { type: 'string' },
-        description: '5-7 Pflicht-Tipps zur Positionierung aus der Chat-Analyse',
+        description: 'PFLICHT: 5-7 konkrete Pflicht-Tipps zur Positionierung aus der Chat-Analyse — was die User unbedingt beachten muss (Schaufenster-Logik, Zeile-1-Pflicht, CTA-Pflicht etc.).',
       },
       patricia_bonus_tipps: {
         type: 'array',
+        minItems: 4,
+        maxItems: 6,
         items: { type: 'string' },
-        description: '4-6 ZUSAETZLICHE Tipps von Patricia (NICHT aus dem Chat, sondern was sie persoenlich raten wuerde)',
+        description: 'PFLICHT: 4-6 ZUSAETZLICHE Tipps die NICHT im Chat stehen — was Patricia persoenlich als Mentorin raten wuerde (Stolperfallen, Umsetzungs-Strategie, strategische Hinweise).',
       },
     },
     required: [
@@ -249,7 +261,26 @@ async function generateSummary(messages, name) {
     .map((m) => `[${m.role.toUpperCase()}]\n${m.content}`)
     .join('\n\n---\n\n');
 
-  const userPrompt = `Hier ist der komplette Bio-Check-Chat-Verlauf fuer ${name || 'die User'}.\n\nReiche die strukturierte Zusammenfassung via submit_bio_check_summary-Tool ein.\n\n=== CHAT-VERLAUF ===\n\n${chatLog}\n\n=== ENDE CHAT-VERLAUF ===`;
+  const userPrompt = `Hier ist der komplette Bio-Check-Chat-Verlauf fuer ${name || 'die User'}.
+
+ZWINGENDE AUFGABE: Reiche die VOLLSTAENDIGE strukturierte Zusammenfassung via submit_bio_check_summary-Tool ein.
+
+WICHTIG — alle Felder MUESSEN inhaltlich befuellt sein:
+- bio_varianten: mindestens 2 komplette Varianten mit allen Zeilen
+- pinned_posts: genau 3 Posts mit Titel + Hook + Kernbotschaft
+- highlights: genau 5 Highlights mit Name + Beschreibung
+- positionierung_tipps: 5-7 konkrete Tipps aus der Analyse
+- patricia_bonus_tipps: 4-6 ZUSAETZLICHE Tipps (nicht aus dem Chat — Patricia's persoenliche Mentor-Empfehlungen)
+
+Falls einzelne Inhalte im Chat fehlen, extrahiere sinnvoll daraus oder fuelle aus Patricia's Brand-Logik (Schaufenster-Metapher, Network-Mama-Themenfelder).
+
+NIEMALS leere Arrays. Lieber sinnvolle Defaults aus der Brand-Logik als leeres Feld.
+
+=== CHAT-VERLAUF ===
+
+${chatLog}
+
+=== ENDE CHAT-VERLAUF ===`;
 
   const response = await anthropic.messages.create({
     model: 'claude-sonnet-4-5',
