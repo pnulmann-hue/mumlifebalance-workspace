@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Die Umsetzerinnen — Story-Einladung</title>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --petrol: #12828c;
+      --dunkelblau: #29556d;
+      --creme: #f1ecdd;
+      --orange: #dc822e;
+      --text-dark: #0c1c30;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #2a2a2a;
+      padding: 40px 0;
+      font-family: 'Source Sans 3', sans-serif;
+      color: var(--text-dark);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 60px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .frame-label {
+      color: #fff;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+    .stage-wrap {
+      width: calc(1080px * 0.32);
+      height: calc(1920px * 0.32);
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+    .stage {
+      transform: scale(0.32);
+      transform-origin: top left;
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+    }
+
+    /* === Slide === */
+    .slide {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      background: var(--creme);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* Instagram Story Safe-Zones: oben ~270px (Profilbild/Name), unten ~270px (DM-Bar/Reactions) */
+      padding: 270px 90px 270px 90px;
+      text-align: center;
+    }
+
+    /* Top + Bottom Akzent-Streifen (dezent) */
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background: var(--petrol);
+    }
+    .accent-bar.top { top: 0; }
+    .accent-bar.bottom { bottom: 0; }
+
+    /* === 3-Sektion-Aufbau === */
+    .section-top {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+    .section-middle {
+      flex: 1 1 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+    }
+    .section-bottom {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+
+    /* TOP: Eyebrow */
+    .eyebrow {
+      display: inline-block;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      color: var(--dunkelblau);
+      opacity: 0.9;
+      border-top: 2px solid var(--dunkelblau);
+      border-bottom: 2px solid var(--dunkelblau);
+      padding: 12px 32px;
+    }
+
+    /* MITTE: Hauptzeile */
+    .main-title {
+      font-family: 'Philosopher', serif;
+      font-weight: 700;
+      font-size: 122px;
+      line-height: 1.05;
+      color: var(--dunkelblau);
+      letter-spacing: -1px;
+    }
+
+    .divider {
+      width: 80px;
+      height: 4px;
+      background: var(--orange);
+      border-radius: 2px;
+    }
+
+    .subtitle {
+      font-family: 'Philosopher', serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 50px;
+      line-height: 1.4;
+      color: var(--text-dark);
+    }
+
+    .subtitle .accent {
+      color: var(--orange);
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* UNTEN: Datum-Block */
+    .date-label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: var(--dunkelblau);
+      opacity: 0.7;
+      margin-bottom: 18px;
+    }
+
+    .date-main {
+      font-family: 'Philosopher', serif;
+      font-weight: 700;
+      font-size: 58px;
+      color: var(--dunkelblau);
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .date-time {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 400;
+      font-size: 34px;
+      color: var(--text-dark);
+      letter-spacing: 1px;
+      margin-bottom: 36px;
+    }
+
+    .footer-mark {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--dunkelblau);
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div>
+      <div class="frame-label">01 · Story 1080×1920 · Einladung</div>
+      <div class="stage-wrap">
+        <div class="stage">
+          <div class="slide">
+            <div class="accent-bar top"></div>
+
+            <!-- TOP -->
+            <div class="section-top">
+              <span class="eyebrow">Save the Date</span>
+            </div>
+
+            <!-- MITTE -->
+            <div class="section-middle">
+              <h1 class="main-title">Die<br>Umsetzerinnen</h1>
+              <div class="divider"></div>
+              <p class="subtitle">
+                Nicht überlegen.<br>
+                Nicht warten.<br>
+                <span class="accent">Umsetzen.</span>
+              </p>
+            </div>
+
+            <!-- UNTEN -->
+            <div class="section-bottom">
+              <div class="date-label">Erster Call</div>
+              <div class="date-main">Morgen · 30.04.</div>
+              <div class="date-time">09:00 Uhr</div>
+              <div class="footer-mark">Mum Life Balance · Patricia</div>
+            </div>
+
+            <div class="accent-bar bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
