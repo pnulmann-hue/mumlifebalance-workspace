@@ -152,6 +152,47 @@ Fragt IMMER zuerst: „Für welches Business?" (Onlinebusiness / Network). Lädt
 
 Output: `outputs/produkte/[slug]/` mit 10 Unterordnern/Dateien (siehe `outputs/produkte/README.md`).
 
+### /story
+
+**Zweck:** Daily Story Sales Companion — täglicher Story-Begleiter, der nach Julia-Trost-Methodik + Brandastic-Käufertypen + Nadja-Personas **fertige Story-Slides als PNG** in Patricias Brand liefert.
+
+**Zwei Kernregeln:**
+1. **Jede Story-Sequenz hat einen CTA-Link** — Freebie ODER bezahltes Produkt aus `active-funnels.json`. Keine Story ohne Verkaufsabsicht.
+2. **Käufertyp-Rotation über die Woche** — alle 4 DISG-Achsen (Rot/Gelb/Grün/Blau) müssen jede Woche vorkommen.
+
+**8 Modi:**
+1. **Tagesplan** (Standard) — 3-5 Slides für heute aus deinem Input
+2. **Sales-Day** — kompletter 24h-Verkaufstag während aktivem Launch (8-12 Slides)
+3. **Story-Doktor** — aus roher Idee → Hook + Slide-Aufbau + CTA
+4. **One-Slide-Tag** — Low-Effort, 1 Slide aus Julia/Nadja-Pool
+5. **Story-Serie** — 3-7 Tage Story-Bogen mit Cliff-Hanger
+6. **Behind-the-Scenes** — aus Foto/Erlebnis Slides + Verkaufsbrücke
+7. **Highlight-Pflege** — Highlights ordnen + aktualisieren + Cover
+8. **Reaktiv** — auf Reaktionen/Antworten reagieren
+
+**Wissensgrundlagen** (in `context/`):
+- `story-framework.md` — Zentrales Wissen, 8 Modi, Visual-Pipeline
+- `julia-stories-die-verkaufen.md` — Slide-Struktur + 7 Storytelling-Regeln
+- `julia-insta-stories-anleitung.md` — 10 Verkaufs-Templates
+- `julia-story-ideen.md` — 3-Säulen-Bibliothek (Expertise/Inspiration/Persönlichkeit)
+- `brandastic-kaeufertypen.md` — DISG (4 Typen) + AIDA
+- `nadja-story-prompts.md` — 7 Käuferpersonas (Wilma/Werner/Isabell/Charlie/Petra/Stefan/Bärbel)
+
+**Visual-Pipeline (Pfad B: HTML → PNG):**
+- Skill generiert `slides.html` mit Templates aus `scripts/karussell-render/brand-stories.css` (8 Slide-Templates: Hook/Story-Text/Zitat/Frage/CTA/BTS/Vorher-Nachher/Countdown)
+- `render-stories.js` rendert PNGs (1080×1920) — direkt Instagram-Story-postbar
+- Brand-Variants: Mentoring (Petrol-Akzent) vs. doTERRA (Orange-Akzent)
+- Foto-Auswahl aus `context/Shootingbilder/`
+
+**Notion-Anbindung:**
+- Skill liest Wochenplan aus Wochenplanung-DB (`collection://2ae7078e-8b7e-81e7-9083-000b01908eb5`)
+- Liest `Fokus der Woche` + Body-Tabelle „Was planst du je Business-Säule?" → Content-Creation
+- Cache in `outputs/stories/wochen-kontext-KW##.json`
+
+**Output:** `outputs/stories/YYYY-MM-DD-[modus]-[profil]-[slug]/` mit `briefing.md` + `slides.html` + `slides-png/`
+
+**Beispiel-HTML mit allen 8 Templates:** `outputs/stories/_template-beispiel/slides.html`
+
 ### /salespage
 
 **Zweck:** Komplette Sales-Page nach Julia Trosts Methodik erstellen.
