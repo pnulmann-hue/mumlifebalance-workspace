@@ -10,7 +10,12 @@
 
 ## Eine-Satz-Transformation
 
-> **„In 8 Wochen baust du dir als Mama-Solopreneurin einen Wochenrhythmus, ein System und einen KI-Stack, der dein Business zu 30 % alleine laufen lässt — damit du wieder Energie für deine Kinder, dein Leben und das nächste Wachstums-Level hast."**
+> **„In 8 Wochen baust du dir als Mama-Networkerin einen Wochenrhythmus, ein System und eine KI-Mitarbeiterin (privat + im Business), die dein Business zu 30 % alleine laufen lassen — damit du als Mama wieder bei deinen Kindern bist und als Networkerin endlich das tust, was du liebst: Kundinnen, Projekte, Events."**
+
+**Was das konkret heisst:**
+- KI nimmt dir Mental Load ab (Familienkalender, Schul-Termine, Meal-Planning, Geschenke)
+- KI nimmt dir Business-Admin ab (Content-Captions, E-Mail-Antworten, Buchhaltung, Newsletter)
+- DU machst das, was kein Bot ersetzen kann: 1:1-Gespräche mit Kundinnen, eigene Projekte (Workshops, Retreats, Kollektionen), Events (Live-Calls, Team-Treffen, Kunden-Tage)
 
 ---
 
@@ -48,12 +53,14 @@ Mama-Solopreneurin, 30–45, Schweiz/DACH:
 |---|---|
 | **Format** | Online-Selbstlernkurs + Live-Begleitung |
 | **Dauer** | 8 Wochen Kohorten-Format · danach Evergreen-Zugriff |
-| **Module** | 5 (siehe 01-modul-outline.md) |
+| **Module** | 5 (siehe 01-modul-outline.md) — **Modul 4 (KI als Mitarbeiterin) ist das Hero-Modul** |
+| **Lektionen total** | 23 (Modul 4 hat 7 Lektionen mit Bildschirm-Aufnahmen) |
 | **Live-Calls** | 3 Live-Q&A-Calls verteilt über 8 Wochen (Patricia live, 90 Min) |
 | **Community** | Telegram-Gruppe (kohorten-spezifisch + danach Bestandskundinnen-Gruppe) |
-| **Bonus 1** | Notion-Templates (Wochenrhythmus, Mental-Load-Reset, KI-Workflow-Dokumentation) |
-| **Bonus 2** | KI-Bot „Mama-CEO-Reflexionsbot" (siehe 05-ki-assistent/) |
-| **Bonus 3** | 5-Tage-Audio-Sprint „Mama-CEO-Wochenrhythmus" (= Tripwire-Produkt, kostenfreier Bestandteil im Hauptkurs) |
+| **Bonus 1** | Notion-Templates × 6 (Wochenrhythmus, 3-Listen, Workflows, KI-Mitarbeiter-Doku, CEO-Matrix, 90-Tage-Tracker) |
+| **Bonus 2** | System-Prompt-Pack × 6 (Familien-Bot, Meal-Plan-Bot, Brand-Voice-Bot, E-Mail-Bot, Backoffice-Bot, Reflexions-Bot — copy-paste für Claude Projects + ChatGPT) |
+| **Bonus 3** | KI-Bot „Mama-CEO-Reflexionsbot" (siehe 05-ki-assistent/) |
+| **Bonus 4** | 5-Tage-Audio-Sprint „Mama-CEO-Wochenrhythmus" (= Tripwire-Produkt, kostenfreier Bestandteil im Hauptkurs) |
 | **Plattform** | ThriveCart Learn+ |
 | **Sprache** | Deutsch (Schweizer ss, Du-Form) |
 
