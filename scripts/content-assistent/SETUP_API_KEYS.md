@@ -138,7 +138,7 @@ Pro DB:
 Nach dem Hinzufügen kannst du testen ob die Integration funktioniert:
 
 ```bash
-cd "C:/Users/pnulm/Desktop/Mein Business/scripts/story-render-bot"
+cd "C:/Users/pnulm/Desktop/Mein Business/scripts/content-assistent"
 python -c "from notion_client import Client; import os; from dotenv import load_dotenv; load_dotenv('../../.env'); c = Client(auth=os.getenv('NOTION_API_KEY')); r = c.search(query='Wochenplanung'); print(f'✅ {len(r[\"results\"])} Treffer für Wochenplanung')"
 ```
 
@@ -151,7 +151,7 @@ Wenn das `✅ X Treffer` zeigt = Setup erfolgreich.
 Sobald alle 3 Keys in `.env` sind:
 
 ```bash
-cd "C:/Users/pnulm/Desktop/Mein Business/scripts/story-render-bot"
+cd "C:/Users/pnulm/Desktop/Mein Business/scripts/content-assistent"
 python config.py
 ```
 

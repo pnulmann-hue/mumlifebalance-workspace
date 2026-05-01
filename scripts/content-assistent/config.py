@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 # .env aus Workspace-Root laden (lokales Testing)
 # override=True überschreibt eventuell vorhandene OS-Env-Variablen
 # (sonst kann ein leerer OS-Env-Wert die .env-Definition blockieren)
-ROOT = Path(__file__).resolve().parent.parent.parent  # scripts/story-render-bot/.. /.. = workspace-root
+ROOT = Path(__file__).resolve().parent.parent.parent  # scripts/content-assistent/.. /.. = workspace-root
 load_dotenv(ROOT / ".env", override=True)
 
 # ========================================

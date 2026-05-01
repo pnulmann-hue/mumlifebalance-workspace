@@ -14,7 +14,7 @@ Was macht das Skript:
 ALTERNATIV (manuell):
     1. https://railway.app → New Project → Empty Service
     2. Settings → Connect GitHub Repo (mumlifebalance-workspace)
-    3. Service-Root: /scripts/story-render-bot/
+    3. Service-Root: /scripts/content-assistent/
     4. Environment-Variablen aus .env in Railway-UI eintragen
     5. Deploy startet automatisch
 """
@@ -76,7 +76,7 @@ def deploy(env: dict[str, str]):
         subprocess.run(
             ["railway", "variables", "set", f"{k}={v}"],
             check=True,
-            cwd=ROOT / "scripts" / "story-render-bot",
+            cwd=ROOT / "scripts" / "content-assistent",
         )
         print(f"   ✓ {k}")
 
@@ -84,7 +84,7 @@ def deploy(env: dict[str, str]):
     subprocess.run(
         ["railway", "up", "--detach"],
         check=True,
-        cwd=ROOT / "scripts" / "story-render-bot",
+        cwd=ROOT / "scripts" / "content-assistent",
     )
     print("\n✅ Deploy gestartet. Logs ansehen mit: railway logs")
 

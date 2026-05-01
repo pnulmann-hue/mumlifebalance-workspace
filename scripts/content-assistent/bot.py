@@ -66,7 +66,7 @@ def _setup_bundle_if_needed():
     if not bundle.exists():
         return  # kein Bundle = lokaler Mode
 
-    # Workspace-Root vom Bundle aus: scripts/story-render-bot/_bundle → 3x .parent
+    # Workspace-Root vom Bundle aus: scripts/content-assistent/_bundle → 3x .parent
     workspace = bundle.parent.parent.parent
     context_dir = workspace / "context"
 

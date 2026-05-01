@@ -3,7 +3,7 @@
 **Status:** Bot ist deploy-ready. Bundle gebaut (285 MB), nixpacks konfiguriert, Render-Pipeline self-contained.
 
 **Was du machst:**
-1. Bundle ist schon gebaut (`scripts/story-render-bot/_bundle/`, 30 Shootingbilder + 652 Stock + .md)
+1. Bundle ist schon gebaut (`scripts/content-assistent/_bundle/`, 30 Shootingbilder + 652 Stock + .md)
 2. Push zum GitHub
 3. Railway-Service erstellen + verbinden
 4. Env-Vars eintragen
@@ -18,7 +18,7 @@
 Wenn du neue Shootingbilder dazugeben willst:
 
 ```powershell
-cd "C:\Users\pnulm\Desktop\Mein Business\scripts\story-render-bot"
+cd "C:\Users\pnulm\Desktop\Mein Business\scripts\content-assistent"
 python build_bundle.py --refresh
 ```
 
@@ -30,7 +30,7 @@ Das löscht das alte Bundle und baut neu (30 gleichverteilte Shootingbilder, all
 
 ```powershell
 cd "C:\Users\pnulm\Desktop\Mein Business"
-git add scripts/story-render-bot/
+git add scripts/content-assistent/
 git add .gitignore
 git commit -m "Story-Render-Bot Railway-ready: Bundle + Sparring + Anti-Halluzination"
 git push
@@ -49,7 +49,7 @@ git push
 3. Wähle `pnulmann-hue/mumlifebalance-workspace` (oder dein Hauptrepo)
 4. **Configure** klicken
 5. **Settings → Source**:
-   - Root Directory: `scripts/story-render-bot`
+   - Root Directory: `scripts/content-assistent`
    - Build Command: leer lassen (nixpacks erkennt automatisch)
    - Start Command: leer lassen (Procfile sagt `python bot.py`)
 6. **Settings → Variables** → folgende eintragen:
@@ -73,7 +73,7 @@ PEXELS_API_KEY=...
 # Railway-CLI installieren (einmalig)
 winget install Railway.CLI
 
-cd "C:\Users\pnulm\Desktop\Mein Business\scripts\story-render-bot"
+cd "C:\Users\pnulm\Desktop\Mein Business\scripts\content-assistent"
 railway login
 railway link            # → wähle dein Projekt + erstelle Service
 python deploy_to_railway.py
@@ -165,7 +165,7 @@ Bei Code-Änderungen:
 
 ```powershell
 cd "C:\Users\pnulm\Desktop\Mein Business"
-git add scripts/story-render-bot/
+git add scripts/content-assistent/
 git commit -m "Update: <was hast du geaendert>"
 git push
 ```

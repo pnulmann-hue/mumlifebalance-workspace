@@ -1,6 +1,6 @@
 """Bundle-Builder für Railway-Deploy.
 
-Erstellt scripts/story-render-bot/_bundle/ mit:
+Erstellt scripts/content-assistent/_bundle/ mit:
 - Shootingbilder/ (30 ausgewählte Patricia-Bilder, ~200-250 MB)
 - stock-fotos/ (alle 3 Atmosphäre-Kategorien, ~70 MB)
 - doTERRA/ (nur die .md-Dateien für Claude-Prompt)

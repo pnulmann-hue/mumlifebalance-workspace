@@ -24,7 +24,7 @@
 ## Schnellstart (lokal)
 
 ```powershell
-cd "C:\Users\pnulm\Desktop\Mein Business\scripts\story-render-bot"
+cd "C:\Users\pnulm\Desktop\Mein Business\scripts\content-assistent"
 
 # 1. Setup-Check (alle Keys + Notion-Zugang)
 python config.py
