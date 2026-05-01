@@ -1,12 +1,12 @@
 {
   "profil": "mentoring",
   "modus": "tagesplan",
-  "disg": "Rot",
+  "disg": "Gelb",
   "disg_sekundaer": "Grün",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
+  "nadja_persona": "Isabell",
+  "story_saeule": "Inspiration",
   "aktives_produkt": "Bio-Check",
-  "wochen_fokus": "Bio-Check Launch-Woche (KW 18, Tag 7)",
+  "wochen_fokus": "(kein Fokus eingetragen)",
   "kontext_snapshot": {
     "kw": 18,
     "wochentag": "Freitag",
@@ -17,8 +17,8 @@
     "Hast du grad einen Gedanken zum Thema?",
     "Oder Standard-Pool?"
   ],
-  "gesendet_am": "2026-05-01T20:08:40.223Z",
-  "telegram_message_id": 72,
+  "gesendet_am": "2026-05-01T20:09:57.517Z",
+  "telegram_message_id": 73,
   "patricia_antworten": [],
   "patricia_fotos": [],
   "patricia_videos": [],
