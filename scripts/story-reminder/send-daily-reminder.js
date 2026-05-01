@@ -22,8 +22,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, '..', '..');
 
-const TELEGRAM_TOKEN = process.env.STORY_BOT_TOKEN;
-const CHAT_ID = process.env.STORY_CHAT_ID;
+// Fallback auf lokale .env-Variablennamen wenn die GitHub-Secret-Namen fehlen
+const TELEGRAM_TOKEN = process.env.STORY_BOT_TOKEN || process.env.TELEGRAM_CONTENT_BOT_TOKEN;
+const CHAT_ID = process.env.STORY_CHAT_ID || process.env.TELEGRAM_CHAT_ID;
 
 console.log('Story-Reminder gestartet.');
 console.log(`STORY_BOT_TOKEN: ${TELEGRAM_TOKEN ? '✅ gesetzt (Länge ' + TELEGRAM_TOKEN.length + ')' : '❌ fehlt'}`);
