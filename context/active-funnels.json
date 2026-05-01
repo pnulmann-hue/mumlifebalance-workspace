@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Zentrales Register aller aktiven Funnels für Mum Life Balance (Mentoring + doTERRA). Wird vom /funnel Skill gepflegt und von /montag, /reels, /karussell gelesen — damit Content-Assistenten wissen welche ManyChat-Keywords diese Woche prioritär sind.",
-    "last_updated": "2026-04-24 · Bio-Check Launch-Woche gestartet (Tag 0)",
+    "last_updated": "2026-05-01 · Mama-CEO Launch geplant (Cart-Open 22.5., Mastermind 26.5. 09:00, Cart-Close 29.5.)",
     "schema_version": 1,
     "brand": "Mum Life Balance",
     "umsatzziel_chf_jahr": 40000
@@ -314,6 +314,109 @@
         "pillar": "Zurück zu deiner Energie (4 Säulen)",
         "primaer_keyword": "ENERGIE"
       }
+    }
+    ,
+
+    {
+      "id": "mama-ceo",
+      "name": "Mama-CEO — Möglichkeit schaffen, Business neben Familie aufzubauen",
+      "status": "pre-launch-w1-validierung",
+      "profile": "mentoring",
+      "typ": "Mid-Price-Kurs (Säule 3)",
+      "preis_chf": 333,
+      "preis_pilot_chf": 249,
+      "zielgruppe": "Mompreneurin oder Network-Mama 30-45 DACH, die genau weiss was sie tun MÜSSTE — aber im Mama-Alltag nicht dazu kommt. Schuld-Spirale. Hat Kurse gekauft, Tools getestet, nichts hat gehalten.",
+      "problem": "Schuld-Spirale: 'Ich sollte unbedingt — bin aber nicht dazu gekommen' → Selbst-Ärger → kein Business-Fortschritt → Einkommen fehlt → mehr Stress",
+      "transformation": "Möglichkeit schaffen Business neben Familie aufzubauen — 5 Säulen: Energie · Mindset · System · KI-Mitarbeiter · Network/Skalieren. KI nimmt Adminkram (Business + Haushalt) ab.",
+
+      "phase_marker": "mama-ceo:pre-launch-w1-validierung",
+      "phase_history": [
+        { "marker": "pre-launch-w1-validierung", "von": "2026-05-02", "bis": "2026-05-08", "kw": 19, "fokus": "Story-Umfrage Tagline-A/B + Sternbauer-Urmotiv-Calls + Pilot-Modul-1-Folien" },
+        { "marker": "pre-launch-w2-anwarming", "von": "2026-05-09", "bis": "2026-05-15", "kw": 20, "fokus": "Sales-Page bauen + 5-Mail-Sequenz + 3 Anwarming-Reels (Brandastic-Story · Live-Demo · Schuld-Spirale)" },
+        { "marker": "pre-launch-w3-heating", "von": "2026-05-16", "bis": "2026-05-21", "kw": 21, "fokus": "Mastermind-Anmeldung öffnen + Email #2-3 + Behind-the-Scenes-Reel" },
+        { "marker": "cart-open", "von": "2026-05-22T09:00", "bis": "2026-05-25T23:59", "kw": "21/22", "fokus": "Cart-Open-Mail + Painpoint-Tag + KI-Aha-Tag + Sozial-Beweis-Tag" },
+        { "marker": "mid-launch-mastermind", "von": "2026-05-26T09:00", "bis": "2026-05-26T10:30", "kw": 22, "fokus": "LIVE 90-Min-Mastermind 'Dein erster KI-Mitarbeiter in 90 Min' mit Pitch + Aufzeichnung 48h" },
+        { "marker": "final-push", "von": "2026-05-27", "bis": "2026-05-29T23:59", "kw": 22, "fokus": "Replay-Push + Scarcity + Final-Stunden-Story · Cart-Close 29.5. 23:59" },
+        { "marker": "pilot-phase", "von": "2026-05-30", "bis": "2026-07-24", "kw": "22-30", "fokus": "Pilot-Käuferinnen onboarden + Säulen wöchentlich nachliefern + Live-Calls Donnerstag 20:00" }
+      ],
+
+      "traffic_quellen": {
+        "wordpress_landing": "TBD — Sales-Page in ThriveCart, gespiegelt auf mumlifebalance.ch/mama-ceo",
+        "manychat_keywords": ["MASTERMIND", "KIMAMA", "MAMACEO"],
+        "instagram_dm": "via ManyChat Keyword MASTERMIND (für Mastermind-Anmeldung) und MAMACEO (für direkten Kursverkauf)",
+        "thrivecart": "TBD"
+      },
+
+      "ac_integration": {
+        "liste_id": 2,
+        "tags_geplant": ["mama-ceo-mastermind-anmeldung", "mama-ceo-pilot-kaufer", "mama-ceo-final-kaufer", "mama-ceo-mastermind-teilnehmer", "mama-ceo-replay-watcher"],
+        "auslieferung_automation_id": null,
+        "nurture_automation_id": null
+      },
+
+      "mail_sequenz": {
+        "status": "geplant",
+        "design_template": "context/mail-design-onlinebusiness.html",
+        "mails": [
+          "Mai 13 — Pre-Launch Mail #1 (Türöffnung in 1 Woche)",
+          "Mai 17 — Pre-Launch Mail #2 (Was Mama-CEO macht, was kein anderer Kurs macht)",
+          "Mai 20 — Pre-Launch Mail #3 (Morgen geht's los)",
+          "Mai 22 — Cart-Open Mail #1 (Tür ist offen)",
+          "Mai 23 — Mail #2 Schuld-Spirale",
+          "Mai 24 — Mail #3 KI-Mitarbeiter Demo",
+          "Mai 25 — Mail #4 Sozial-Beweis",
+          "Mai 26 abend — Mail #5 Replay verfügbar",
+          "Mai 27 — Mail #6 Replay läuft heute aus",
+          "Mai 28 — Mail #7 Morgen Cart-Close",
+          "Mai 29 morgen — Mail #8 Heute Cart-Close",
+          "Mai 29 abend — Mail #9 6 Stunden + Mail #10 letzte 2 Stunden"
+        ],
+        "geplant": 12
+      },
+
+      "launch_window": {
+        "tag_0_datum": "2026-05-22",
+        "tag_minus_20_datum": "2026-05-02",
+        "mastermind_datum": "2026-05-26T09:00",
+        "cart_close_datum": "2026-05-29T23:59",
+        "scope": "Mid-Launch-Mastermind-Booster · Pilot-Preis 249 → Final 333 · Pilot-Phase ab 30.5. mit wöchentlicher Säulen-Auslieferung",
+        "launch_assets_path": "outputs/produkte/mama-ceo/",
+        "launch_kalender": "outputs/produkte/mama-ceo/07-launch-kalender.md",
+        "ziele": {
+          "mastermind_anmeldungen": 100,
+          "mastermind_live_teilnehmerinnen": 40,
+          "mama_ceo_verkaeufe_pilot": 8,
+          "mama_ceo_verkaeufe_final": 4,
+          "mastermind_zu_kauf_conversion_pct": 10,
+          "umsatz_chf_total_launch": 3360
+        }
+      },
+
+      "produkttreppe_anschluss": [
+        { "stufe": "A (0€)", "produkt": "KI-Mastermind 26.5. (Lead-Magnet während Launch)", "preis": 0 },
+        { "stufe": "M (249 → 333 CHF)", "produkt": "Mama-CEO Hauptkurs (8 Wochen)", "preis": 333, "thrivecart": "TBD" },
+        { "stufe": "Z (1997 CHF)", "produkt": "Mama-CEO 1:1 Deep Work (3 Monate, kommt ab Juni)", "preis": 1997, "status": "TBD - separater Strategie-Skill" }
+      ],
+
+      "content_hinweise": {
+        "pillar_pro_phase": {
+          "pre-launch-w1-validierung": "Painpoints benennen (Schuld-Spirale · Mental Load · Aufschieberitis) — NICHT direkt verkaufen",
+          "pre-launch-w2-anwarming": "Brandastic-Story-Bausteine (Hamsterrad → Schwester-Tod-Aha → KI-Mitarbeiter) + KI-Demo-Snippets",
+          "pre-launch-w3-heating": "Mastermind-Hype + Cart-Open-Teaser + Behind-the-Scenes",
+          "cart-open": "Painpoint-Tag · KI-Aha-Tag · Sozial-Beweis-Tag (3 Stories pro Tag)",
+          "mid-launch-mastermind": "LIVE-Energie · Replay-Push direkt danach",
+          "final-push": "Sozial-Beweis · Scarcity · Antikunden-Filter · Final-Stunden-Story",
+          "pilot-phase": "Einblicke aus Pilot-Phase · Käuferinnen-Quotes · Säulen-Auslieferung"
+        },
+        "reel_typen": ["Brandastic-Story-Reel", "Live-Demo-KI-Reel", "Schuld-Spirale-benennen", "Falsch-vs-Richtig-Caption (Elke Mayr)", "Behind-the-Scenes"],
+        "karussell_typen": ["Schuld-Spirale 8 Folien", "5 Säulen Mama-CEO", "5 Antikunden-Profile (Sternbauer)"],
+        "primaer_keyword_pre_launch": "MASTERMIND (für Lead-Magnet-Anmeldung)",
+        "primaer_keyword_cart_open": "MAMACEO (für direkten Kursverkauf)"
+      },
+
+      "umsatzziel_contribution_chf": 3360,
+      "umsatzziel_jahr_inkl_pilot_und_final": 12000,
+      "launched_on": null
     }
   ],
 
