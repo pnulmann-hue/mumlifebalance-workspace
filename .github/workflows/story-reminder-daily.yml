@@ -1,0 +1,35 @@
+name: Story-Reminder-Daily
+
+# Mo-So 04:30 UTC = 06:30 Schweiz Sommer / 05:30 Schweiz Winter
+# (Im Winter wenn du exakt 06:30 willst: cron auf '30 5 * * *' anpassen)
+on:
+  schedule:
+    - cron: '30 4 * * *'
+  workflow_dispatch:  # Manuell triggerbar
+
+jobs:
+  send-reminder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Send Daily Story-Reminder
+        env:
+          STORY_BOT_TOKEN: ${{ secrets.STORY_BOT_TOKEN }}
+          STORY_CHAT_ID: ${{ secrets.STORY_CHAT_ID }}
+        run: node scripts/story-reminder/send-daily-reminder.js
+
+      - name: Commit briefing-pending state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add outputs/stories/_state/briefing-pending.json
+          git diff --staged --quiet || git commit -m "story-reminder: $(date -u +%Y-%m-%d) Daily-Push gesendet"
+          git push

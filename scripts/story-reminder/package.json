@@ -1,0 +1,10 @@
+{
+  "name": "story-reminder",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Daily Telegram-Reminder für /story-Skill — schreibt _state/briefing-pending.json",
+  "main": "send-daily-reminder.js",
+  "scripts": {
+    "start": "node send-daily-reminder.js"
+  }
+}

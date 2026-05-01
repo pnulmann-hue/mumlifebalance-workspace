@@ -8,6 +8,7 @@
 |---|---|---|---|
 | `freitag-hooks.yml` | Fr 06:00 | Fr 08:00 / Fr 07:00 | 20 Hooks + Marktanalyse + Wochenfokus → Telegram |
 | `montag-build.yml` | Mo 10:00 | Mo 12:00 / Mo 11:00 | Build 10 Designs + Schedule via Blotato für Mo/Mi/Fr |
+| `story-reminder-daily.yml` | Mo-So 04:30 | 06:30 / 05:30 | Daily Telegram-DM mit Profil/Modus/DISG/Produkt + State-File |
 
 > **Hinweis Sommer-/Winterzeit:** GitHub Actions läuft in UTC. Schweiz wechselt zwischen CET (UTC+1) und CEST (UTC+2). Im Winter laufen die Workflows 1 Stunde früher als im Sommer (07:00 / 11:00 statt 08:00 / 12:00). Wenn du das im Winter korrigieren willst: `cron: '0 7 * * 5'` für Fr und `cron: '0 11 * * 1'` für Mo.
 
@@ -23,12 +24,14 @@ Folgende Secrets brauchst du:
 
 | Secret-Name | Wert | Wofür |
 |---|---|---|
-| `ANTHROPIC_API_KEY` | dein Anthropic API-Key (`sk-ant-...`) | Für Claude Code in der Action |
+| `ANTHROPIC_API_KEY` | dein Anthropic API-Key (`sk-ant-...`) | Für Claude Code in den Hooks/Build-Actions |
 | `BLOTATO_API_KEY` | aus `.env` deines lokalen Workspace (`BLOTATO_API_KEY`) | Für Auto-Schedule |
 | `NOTION_TOKEN` | dein Notion Integration Token (`ntn_...`) | Für Wochenfokus-Lesen |
-| `TELEGRAM_BOT_TOKEN` | aus deinem Telegram-Bot-Setup | Für Hooks-Push |
+| `TELEGRAM_BOT_TOKEN` | aus `@mumlifebalance_collector_bot` | Für Hooks-Push (freitag-hooks + montag-build) |
 | `TELEGRAM_CHAT_ID` | deine Telegram-Chat-ID (für DMs) | Für Hooks-Push |
 | `CANVA_TOKEN` | aus deinem Canva-MCP-Setup (falls separates OAuth) | Für Build (sonst über MCP) |
+| `STORY_BOT_TOKEN` | aus `Patricia_content_bot` | Für Daily Story-Reminder |
+| `STORY_CHAT_ID` | Patricia's Chat-ID mit Patricia_content_bot | Für Daily Story-Reminder |
 
 ### 2. Anthropic API-Key holen
 
