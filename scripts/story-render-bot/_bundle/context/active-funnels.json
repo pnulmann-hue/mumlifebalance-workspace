@@ -1,0 +1,333 @@
+{
+  "_meta": {
+    "description": "Zentrales Register aller aktiven Funnels für Mum Life Balance (Mentoring + doTERRA). Wird vom /funnel Skill gepflegt und von /montag, /reels, /karussell gelesen — damit Content-Assistenten wissen welche ManyChat-Keywords diese Woche prioritär sind.",
+    "last_updated": "2026-04-24 · Bio-Check Launch-Woche gestartet (Tag 0)",
+    "schema_version": 1,
+    "brand": "Mum Life Balance",
+    "umsatzziel_chf_jahr": 40000
+  },
+
+  "funnels": [
+    {
+      "id": "bio-check",
+      "name": "Bio-Check für Network-Mamas",
+      "status": "live-launch-woche",
+      "profile": "mentoring",
+      "typ": "0€ Leadmagnet · interaktiver Bot",
+      "preis_chf": 0,
+      "zielgruppe": "Network-Mamas mit Instagram-Profil, die wenig Anfragen bekommen",
+      "problem": "Schwache / produkt-fokussierte Instagram-Bio → keine Kunden",
+      "transformation": "Klare Bio mit Experten-Satz · Pinned Posts · Highlights-Struktur",
+
+      "traffic_quellen": {
+        "wordpress_landing": "https://mumlifebalance.ch/bio-check",
+        "manychat_keyword": "BIO",
+        "instagram_dm": "via ManyChat Keyword BIO",
+        "bot_direct": "https://bio-check-bot.vercel.app"
+      },
+
+      "ac_integration": {
+        "liste_id": 2,
+        "formular_id": 47,
+        "tags": {
+          "lead": 59,
+          "abgeschlossen": 60,
+          "pitch_thema": 61,
+          "pitch_expertin": 62,
+          "pitch_kundenmaschine": 63,
+          "insta_dm": 64,
+          "leadmagnet_hilfe": 65
+        },
+        "auslieferung_automation_id": null,
+        "nurture_automation_id": null
+      },
+
+      "mail_sequenz": {
+        "status": "Mail 1 Auslieferung + Mail 1 Launch-Paukenschlag fertig",
+        "design_template": "context/mail-design-onlinebusiness.html",
+        "mails": [
+          "outputs/bio-check-bot/ac-mail-1-auslieferung.html",
+          "outputs/funnels/bio-check/launch/mails/mail-1-paukenschlag.html"
+        ],
+        "geplant": 6
+      },
+
+      "launch_window": {
+        "tag_0_datum": "2026-04-24",
+        "tag_7_datum": "2026-05-01",
+        "scope": "B — Opt-ins + sanfter 39er-Pitch Thema-Kurs ab Tag 4",
+        "launch_assets_path": "outputs/funnels/bio-check/launch/",
+        "teaser_stories_datum": "2026-04-23",
+        "teaser_narrativ": "Schluckauf-Meme (Bot hat gestern nicht funktioniert), Crossline-Beraterin-Story",
+        "ziele": {
+          "bio_check_leads_tag_7": 150,
+          "bio_check_abschluesse_tag_7": 100,
+          "thema_kurs_verkaeufe_launch_woche": 5,
+          "reel_tag_0_views": 15000
+        }
+      },
+
+      "produkttreppe_anschluss": [
+        { "stufe": "B", "produkt": "Finde dein Thema als Network-Mama", "preis": 39, "thrivecart": "https://mumlifebalance.thrivecart.com/thema-finden/", "ac_funnel_id": 53 },
+        { "stufe": "E", "produkt": "Expertin statt Verkäuferin", "preis": 97, "thrivecart": "https://mumlifebalance.thrivecart.com/expertin/", "ac_funnel_id": 55 },
+        { "stufe": "M", "produkt": "Instagram-Kundenmaschine", "preis": 333, "thrivecart": "https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/", "ac_funnel_id": 54 }
+      ],
+
+      "content_hinweise": {
+        "pillar": "Instagram-Strategie für NM",
+        "reel_typen": ["Reel-Kritik", "Bio-Doktor", "Schaufenster-Metapher"],
+        "karussell_typen": ["Bio-Anatomie", "5 Fehler in deiner Bio"],
+        "primaer_keyword": "BIO",
+        "sekundaer_keyword_ab_tag_4": "THEMA"
+      },
+
+      "umsatzziel_contribution_chf": 8000,
+      "launched_on": "2026-04-24"
+    },
+
+    {
+      "id": "lead-challenge",
+      "name": "Lead-Challenge",
+      "status": "live",
+      "profile": "mentoring",
+      "typ": "0€ Leadmagnet · Challenge",
+      "preis_chf": 0,
+      "zielgruppe": "Network-Mamas die noch keine Leads generieren",
+      "problem": "Wissen nicht wie sie systematisch Leads aufbauen",
+      "transformation": "Systematischer Lead-Aufbau via Instagram + Opt-in",
+
+      "traffic_quellen": {
+        "wordpress_landing": null,
+        "manychat_keyword": "LEAD",
+        "instagram_dm": "via ManyChat Keyword LEAD",
+        "thrivecart_registration": "nach ManyChat-DM → Thrivecart-Registration → landet in AC"
+      },
+
+      "ac_integration": {
+        "liste_id": null,
+        "formular_id": null,
+        "tags": {},
+        "auslieferung_automation_id": 47,
+        "nurture_automation_id": null,
+        "notes": "Registration via Thrivecart überführt Kontakt zurück in AC"
+      },
+
+      "mail_sequenz": {
+        "status": "AC-Automation existiert, Inhalt noch zu prüfen",
+        "design_template": "context/mail-design-onlinebusiness.html",
+        "geplant": 6
+      },
+
+      "produkttreppe_anschluss": [
+        { "stufe": "B", "produkt": "Finde dein Thema", "preis": 39 }
+      ],
+
+      "content_hinweise": {
+        "pillar": "Instagram-Strategie für NM",
+        "primaer_keyword": "LEAD"
+      }
+    },
+
+    {
+      "id": "workbook-von-0-auf-echt",
+      "name": "Workbook: Von 0 auf echt",
+      "status": "live",
+      "profile": "mentoring",
+      "typ": "0€ Leadmagnet · PDF-Workbook",
+      "preis_chf": 0,
+      "zielgruppe": "Network-Mamas die authentisch starten wollen",
+      "problem": "Inauthentisches Network-Marketing → kein Wachstum",
+      "transformation": "Klarheit über eigene echte Positionierung",
+
+      "traffic_quellen": {
+        "wordpress_landing": "https://mumlifebalance.ch (aktueller Primär-Leadmagnet auf Homepage)",
+        "manychat_keyword": "ECHT1",
+        "instagram_dm": "via ManyChat Keyword ECHT1"
+      },
+
+      "ac_integration": {
+        "liste_id": null,
+        "formular_id": null,
+        "tags": {},
+        "auslieferung_automation_id": 40,
+        "nurture_automation_id": null
+      },
+
+      "mail_sequenz": {
+        "status": "AC-Automation existiert",
+        "design_template": "context/mail-design-onlinebusiness.html",
+        "geplant": 6
+      },
+
+      "produkttreppe_anschluss": [
+        { "stufe": "B", "produkt": "Finde dein Thema", "preis": 39 },
+        { "stufe": "E", "produkt": "Expertin statt Verkäuferin", "preis": 97 }
+      ],
+
+      "content_hinweise": {
+        "pillar": "Authentizität im Business",
+        "primaer_keyword": "ECHT1"
+      }
+    },
+
+    {
+      "id": "0-euro-potenzial-test",
+      "name": "0€ Potenzial-Test (Quiz)",
+      "status": "live",
+      "profile": "mentoring",
+      "typ": "0€ Leadmagnet · Quiz",
+      "preis_chf": 0,
+      "zielgruppe": "Network-Mamas die ihren Status quo checken wollen",
+      "problem": "Unklar wo sie stehen, was ihr Potenzial ist",
+      "transformation": "Selbst-Diagnose + Empfehlung für nächsten Schritt",
+
+      "traffic_quellen": {
+        "wordpress_landing": null,
+        "manychat_keyword": "QUIZ",
+        "jotform_form": "JA (Jotform statt AC)",
+        "ausfuehrung": "via ManyChat-Flow"
+      },
+
+      "ac_integration": {
+        "liste_id": 24,
+        "list_name": "Quiz-Kontakte",
+        "tags": {},
+        "automation_id": 52,
+        "notes": "AC-Liste 24 'Quiz-Kontakte' · AC-Automation 52 '0€ Potenzial-Test'. Auslieferung erfolgt via Jotform+ManyChat, Leads werden nachträglich in AC importiert."
+      },
+
+      "mail_sequenz": {
+        "status": "AC-Automation existiert",
+        "design_template": "context/mail-design-onlinebusiness.html",
+        "geplant": 6
+      },
+
+      "content_hinweise": {
+        "pillar": "Digitale Produkte & Automation",
+        "primaer_keyword": "QUIZ"
+      }
+    },
+
+    {
+      "id": "0-euro-starterguide",
+      "name": "0€ Starterguide",
+      "status": "live-ohne-ac-funnel",
+      "profile": "mentoring",
+      "typ": "0€ Leadmagnet · Guide",
+      "preis_chf": 0,
+      "zielgruppe": "Anfängerinnen im Network-Marketing",
+      "problem": "Nicht wissen wie sie überhaupt starten",
+      "transformation": "Struktur für den ersten Schritt",
+
+      "traffic_quellen": {
+        "wordpress_landing": null,
+        "manychat_keyword": "SICHTBAR",
+        "alt_keyword": "ANLEITUNG"
+      },
+
+      "ac_integration": {
+        "tags": {},
+        "automation_id": null,
+        "notes": "AUSLIEFERUNG ERFOLGT IN MANYCHAT · KEIN AC-FUNNEL · TODO: AC-Automation bauen für Nurture-Sequenz"
+      },
+
+      "mail_sequenz": {
+        "status": "GEPLANT — noch nicht gebaut",
+        "design_template": "context/mail-design-onlinebusiness.html",
+        "geplant": 6
+      },
+
+      "content_hinweise": {
+        "pillar": "Instagram-Strategie für NM",
+        "primaer_keyword": "SICHTBAR"
+      }
+    },
+
+    {
+      "id": "story-challenge",
+      "name": "Story-Challenge (7-Tage-Workbook)",
+      "status": "live-ohne-ac-funnel",
+      "profile": "mentoring",
+      "typ": "0€ Leadmagnet · Challenge + Telegram-Kanal",
+      "preis_chf": 0,
+      "zielgruppe": "Network-Mamas die Stories nutzen wollen",
+      "problem": "Keine Story-Strategie → keine Konversion in Stories",
+      "transformation": "7-Tage-Story-Routine",
+
+      "traffic_quellen": {
+        "wordpress_landing": null,
+        "manychat_keyword": "STORY",
+        "telegram_channel": "JA",
+        "status": "TODO: in ManyChat einrichten"
+      },
+
+      "ac_integration": {
+        "tags": {},
+        "automation_id": null,
+        "notes": "KEIN AC-FUNNEL · TODO: AC-Automation + Mail-Sequenz"
+      },
+
+      "mail_sequenz": {
+        "status": "GEPLANT — noch nicht gebaut",
+        "design_template": "context/mail-design-onlinebusiness.html",
+        "geplant": 6
+      },
+
+      "content_hinweise": {
+        "pillar": "Instagram-Strategie für NM",
+        "primaer_keyword": "STORY"
+      }
+    },
+
+    {
+      "id": "doterra-energie",
+      "name": "doTERRA Energie-Kur",
+      "status": "live",
+      "profile": "doterra",
+      "typ": "0€ Leadmagnet · Padlet + Kur-Info",
+      "preis_chf": 0,
+      "zielgruppe": "Erschöpfte Mamas im Funktionsmodus",
+      "problem": "Dauerhafter Energie-Mangel, Erschöpfung",
+      "transformation": "4-Säulen-Einstieg in Regeneration",
+
+      "traffic_quellen": {
+        "wordpress_landing": null,
+        "manychat_keyword": "ENERGIE",
+        "padlet_link": "https://padlet.com/pnulmann/wohlf-hlen-leicht-gemacht-hfzk8ccha55mu9ny"
+      },
+
+      "ac_integration": {
+        "liste_id": 18,
+        "list_name": "doTERRA Interessenten",
+        "tags": {
+          "kunde": 56,
+          "vorteilskunde": 57,
+          "wellness_advocate": 58
+        }
+      },
+
+      "produkttreppe_anschluss": [
+        { "stufe": "Kur-Einstieg", "produkt": "PV Assist + VMG+", "preis": "variabel" }
+      ],
+
+      "content_hinweise": {
+        "pillar": "Zurück zu deiner Energie (4 Säulen)",
+        "primaer_keyword": "ENERGIE"
+      }
+    }
+  ],
+
+  "produkttreppe_mentoring": [
+    { "stufe": "A (0€)", "produkte": ["Bio-Check", "Lead-Challenge", "Von 0 auf echt", "Potenzial-Test", "Starterguide", "Story-Challenge"] },
+    { "stufe": "B (39 CHF)", "produkt": "Finde dein Thema als Network-Mama" },
+    { "stufe": "E (97 CHF)", "produkt": "Expertin statt Verkäuferin" },
+    { "stufe": "M (333 CHF)", "produkt": "Instagram-Kundenmaschine" },
+    { "stufe": "Z (777+ CHF)", "produkt": "Mastermind / 1:1 (TBD)" }
+  ],
+
+  "next_funnels_tbd": [
+    { "idee": "Homepage-Redesign mit Bio-Check als primärer 0€-Einstieg", "prio": "hoch" },
+    { "idee": "AC-Funnels für Starterguide + Story-Challenge nachziehen", "prio": "hoch" },
+    { "idee": "Mail-Sequenzen nach Julia-Trost-Vorlagen für alle 6 Funnels", "prio": "hoch" }
+  ]
+}

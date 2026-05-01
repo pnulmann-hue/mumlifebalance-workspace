@@ -1,0 +1,906 @@
+/**
+ * Patricias Brand-Stories — 8 Templates für Instagram Stories (1080×1920, 9:16)
+ *
+ * Verwendet von /story-Skill.
+ * Jede .slide ist 1080×1920 px (Stories-Format).
+ *
+ * Brand-Farben:
+ *   Petrol     #12828c
+ *   Dunkelblau #29556d
+ *   Creme      #f1ecdd  (Standard-Hintergrund)
+ *   Orange     #dc822e  (Akzent — EIN Wort pro Slide)
+ *   Text       #0c1c30
+ *
+ * Schriften:
+ *   Philosopher       — Headlines, Hooks, Statements
+ *   Source Sans 3     — Body, Subtext
+ *   Silver South Script — Signatur, Mini-Akzente (sparsam)
+ *
+ * Profil-Variants:
+ *   .profil-mentoring  — Petrol-dominiert (Coaching)
+ *   .profil-doterra    — Orange-dominiert (Wellness)
+ */
+
+/* ========== GRUNDLAGEN ========== */
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: #ffffff;
+  font-family: 'Source Sans 3', sans-serif;
+  color: #0c1c30;
+}
+
+.slide {
+  width: 1080px;
+  height: 1920px;
+  position: relative;
+  overflow: hidden;
+  background: #f1ecdd;
+  display: flex;
+  flex-direction: column;
+  page-break-after: always;
+  break-after: page;
+}
+
+.slide img.bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(241, 236, 221, 0.85);
+}
+
+.slide .content {
+  position: relative;
+  z-index: 2;
+  padding: 120px 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========== PROFIL-VARIANTEN ========== */
+
+.profil-mentoring {
+  --akzent: #12828c;
+  --akzent-dark: #29556d;
+}
+
+.profil-doterra {
+  --akzent: #dc822e;
+  --akzent-dark: #ad5e1f;
+}
+
+.akzent { color: var(--akzent); }
+.akzent-bg { background: var(--akzent); color: #f1ecdd; }
+
+/* ========== TEMPLATE 1: HOOK-SLIDE ========== */
+
+.template-hook .content {
+  justify-content: center;
+  text-align: left;
+  padding: 200px 100px;
+}
+
+.template-hook .hook-eyebrow {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--akzent);
+  margin-bottom: 40px;
+}
+
+.template-hook .hook-text {
+  font-family: 'Philosopher', serif;
+  font-size: 110px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #0c1c30;
+  margin-bottom: 60px;
+}
+
+.template-hook .hook-text .akzent {
+  color: var(--akzent);
+}
+
+.template-hook .photo-strip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 480px;
+  overflow: hidden;
+}
+
+.template-hook .photo-strip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========== TEMPLATE 2: STORY-TEXT-SLIDE ========== */
+
+.template-story .content {
+  justify-content: flex-start;
+  padding: 180px 100px 100px;
+}
+
+.template-story .label {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--akzent);
+  margin-bottom: 50px;
+}
+
+.template-story .body {
+  font-family: 'Philosopher', serif;
+  font-size: 60px;
+  line-height: 1.4;
+  color: #0c1c30;
+}
+
+.template-story img.bg {
+  opacity: 0.35;
+}
+
+/* ========== TEMPLATE 3: ZITAT-SLIDE ========== */
+
+.template-zitat {
+  background: #29556d;
+}
+
+.template-zitat .content {
+  justify-content: center;
+  padding: 200px 120px;
+}
+
+.template-zitat .quote-marks {
+  font-family: 'Philosopher', serif;
+  font-size: 220px;
+  color: var(--akzent);
+  line-height: 0.5;
+  margin-bottom: 30px;
+}
+
+.template-zitat .quote {
+  font-family: 'Philosopher', serif;
+  font-style: italic;
+  font-size: 78px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #f1ecdd;
+  margin-bottom: 80px;
+}
+
+.template-zitat .signature {
+  font-family: 'Philosopher', serif;
+  font-size: 36px;
+  color: var(--akzent);
+}
+
+.template-zitat .photo-corner {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #f1ecdd;
+}
+
+.template-zitat .photo-corner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========== TEMPLATE 4: FRAGE-SLIDE ========== */
+
+.template-frage .content {
+  justify-content: center;
+  text-align: center;
+  padding: 240px 100px;
+}
+
+.template-frage .frage-eyebrow {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--akzent);
+  margin-bottom: 60px;
+}
+
+.template-frage .frage {
+  font-family: 'Philosopher', serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0c1c30;
+  margin-bottom: 100px;
+}
+
+.template-frage .sticker-hint {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--akzent-dark);
+  margin-top: 60px;
+  opacity: 0.75;
+}
+
+.template-frage .sticker-mock {
+  position: absolute;
+  bottom: 240px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(12, 28, 48, 0.15);
+  text-align: center;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #0c1c30;
+}
+
+/* ========== TEMPLATE 5: CTA-SLIDE ========== */
+
+.template-cta {
+  background: var(--akzent-dark);
+}
+
+.template-cta .content {
+  justify-content: center;
+  text-align: center;
+  padding: 200px 100px;
+}
+
+.template-cta .cta-eyebrow {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: var(--akzent);
+  margin-bottom: 60px;
+}
+
+.template-cta .cta-headline {
+  font-family: 'Philosopher', serif;
+  font-size: 92px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f1ecdd;
+  margin-bottom: 80px;
+}
+
+.template-cta .cta-arrow {
+  font-size: 200px;
+  color: var(--akzent);
+  margin: 60px 0;
+  line-height: 1;
+}
+
+.template-cta .cta-text {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #f1ecdd;
+  margin-bottom: 40px;
+}
+
+.template-cta .cta-link-label {
+  font-family: 'Silver South Script', cursive;
+  font-size: 64px;
+  color: var(--akzent);
+}
+
+.template-cta .product-mockup {
+  position: absolute;
+  top: 120px;
+  right: 100px;
+  width: 320px;
+  height: 480px;
+  background: #f1ecdd;
+  border-radius: 16px;
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Philosopher', serif;
+  font-size: 32px;
+  color: var(--akzent-dark);
+  text-align: center;
+  padding: 30px;
+}
+
+/* ========== TEMPLATE 6: BEHIND-SCENES-SLIDE ========== */
+
+.template-bts img.bg {
+  opacity: 1;
+}
+
+.template-bts .text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 100px 100px 140px;
+  background: linear-gradient(to top, rgba(12, 28, 48, 0.85) 0%, rgba(12, 28, 48, 0.0) 100%);
+  z-index: 2;
+}
+
+.template-bts .text-overlay .label {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--akzent);
+  margin-bottom: 30px;
+}
+
+.template-bts .text-overlay .body {
+  font-family: 'Philosopher', serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #f1ecdd;
+}
+
+/* ========== TEMPLATE 7: VORHER-NACHHER-SLIDE ========== */
+
+.template-vorher-nachher .content {
+  flex-direction: row;
+  padding: 0;
+  height: 100%;
+}
+
+.template-vorher-nachher .seite {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 200px 80px;
+  position: relative;
+}
+
+.template-vorher-nachher .vorher {
+  background: #29556d;
+  color: #f1ecdd;
+}
+
+.template-vorher-nachher .nachher {
+  background: var(--akzent);
+  color: #f1ecdd;
+}
+
+.template-vorher-nachher .seite-label {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 60px;
+  opacity: 0.7;
+}
+
+.template-vorher-nachher .seite-text {
+  font-family: 'Philosopher', serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.template-vorher-nachher .arrow-divider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+  background: #f1ecdd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Philosopher', serif;
+  font-size: 80px;
+  color: var(--akzent);
+  z-index: 3;
+}
+
+/* ========== TEMPLATE 8: COUNTDOWN-SLIDE ========== */
+
+.template-countdown {
+  background: #f1ecdd;
+}
+
+.template-countdown .content {
+  justify-content: center;
+  text-align: center;
+  padding: 180px 80px;
+}
+
+.template-countdown .countdown-eyebrow {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: var(--akzent);
+  margin-bottom: 80px;
+}
+
+.template-countdown .countdown-number {
+  font-family: 'Philosopher', serif;
+  font-size: 480px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--akzent);
+  margin-bottom: 40px;
+}
+
+.template-countdown .countdown-unit {
+  font-family: 'Philosopher', serif;
+  font-size: 96px;
+  font-weight: 400;
+  color: #0c1c30;
+  margin-bottom: 100px;
+}
+
+.template-countdown .countdown-message {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  color: #0c1c30;
+  line-height: 1.3;
+  margin-bottom: 60px;
+}
+
+.template-countdown .countdown-cta {
+  font-family: 'Silver South Script', cursive;
+  font-size: 64px;
+  color: var(--akzent);
+}
+
+/* ========== TEMPLATE 9: FOTO-OVERLAY (Patricias echter Story-Stil) ==========
+ *
+ * Foto-First-Layout wie auf @mumlifebalance_patricia_ulmann:
+ * - 100% Foto im Hintergrund (Patricia-Lifestyle, nicht Stock)
+ * - Schwarze halbtransparente Text-Box über dem Foto
+ * - Datum-Stempel oben links (wie native Insta-Stories)
+ * - Brand-Farben nur als Akzent (Datum-Border, Akzent-Wort)
+ *
+ * Wann nutzen:
+ * - Slides 2 + 5 typischerweise (Tag-Story + Patricia-Insight)
+ * - Wenn Patricia ein aktuelles Foto schickt
+ *
+ * Foto-Wahl-Logik:
+ * - 1. Wahl: Patricias aktuelles Foto (per Telegram geschickt)
+ * - 2. Wahl: Aus context/Shootingbilder/ (Fallback)
+ *
+ * Box-Position basierend auf Foto-Hauptmotiv-Klasse:
+ * - .photo-main-top-* → Box unten
+ * - .photo-main-bottom-* → Box oben
+ * - .photo-main-center → Box unten (Default)
+ */
+
+.template-foto-overlay {
+  background: #000;
+}
+
+.template-foto-overlay img.bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Datum-Stempel oben links (klein, weiße Box) */
+.template-foto-overlay .datum-stempel {
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  background: #ffffff;
+  padding: 18px 28px;
+  border-left: 8px solid var(--akzent);
+  border-radius: 4px;
+  z-index: 5;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.template-foto-overlay .datum-tag {
+  font-family: 'Philosopher', serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  color: #0c1c30;
+}
+
+.template-foto-overlay .datum-monat {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--akzent-dark);
+}
+
+/* Brand-Text-Box (Default unten) — in Patricias Brand-Farben statt schwarz
+ * Mentoring: Petrol-Dunkelblau (#29556d) mit Creme-Text
+ * doTERRA: Dunkel-Orange (#ad5e1f) mit Creme-Text
+ */
+.template-foto-overlay .text-box {
+  position: absolute;
+  left: 80px;
+  right: 80px;
+  bottom: 200px;
+  background: rgba(41, 85, 109, 0.92); /* Default: Mentoring-Dunkelblau */
+  padding: 60px 60px;
+  z-index: 4;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Profil-spezifische Box-Farben */
+.profil-mentoring .template-foto-overlay .text-box {
+  background: rgba(41, 85, 109, 0.92); /* Dunkelblau, halbtransparent */
+}
+
+.profil-doterra .template-foto-overlay .text-box {
+  background: rgba(173, 94, 31, 0.92); /* Dunkel-Orange, halbtransparent */
+}
+
+/* Variante: Creme-Box (heller, weicher) */
+.template-foto-overlay .text-box.box-creme {
+  background: rgba(241, 236, 221, 0.95);
+}
+
+.template-foto-overlay .text-box.box-creme .body {
+  color: #0c1c30;
+}
+
+.template-foto-overlay .text-box.box-creme .body strong {
+  color: var(--akzent-dark);
+}
+
+/* Variante: Petrol (Mentoring-Hauptfarbe statt Dunkelblau) */
+.template-foto-overlay .text-box.box-petrol {
+  background: rgba(18, 130, 140, 0.92);
+}
+
+/* Variante: Schwarz (Fallback wenn Foto auf bunten Hintergrund braucht) */
+.template-foto-overlay .text-box.box-schwarz {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* Body-Text in Box */
+.template-foto-overlay .text-box .body {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 44px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #f1ecdd; /* Creme-Text als Default für Brand-Boxen */
+}
+
+.template-foto-overlay .text-box .body .akzent-text {
+  color: var(--akzent); /* Orange-Akzent immer */
+  font-weight: 700;
+}
+
+.template-foto-overlay .text-box .body strong {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.template-foto-overlay .text-box .body em {
+  font-style: italic;
+  color: var(--akzent);
+}
+
+/* Box-Eyebrow (kleines Label, optional) */
+.template-foto-overlay .text-box .eyebrow {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: rgba(241, 236, 221, 0.95); /* Creme statt Orange — besser lesbar auf Brand-Box */
+  margin-bottom: 28px;
+  display: block;
+}
+
+/* Akzent-Text in Box-Body — heller Orange für Lesbarkeit */
+.template-foto-overlay .text-box .body .akzent-text {
+  color: #ffb066; /* helleres Orange für Kontrast auf Dunkelblau */
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+
+/* Bei Creme-Box wieder Standard-Farben */
+.template-foto-overlay .text-box.box-creme .eyebrow {
+  color: var(--akzent-dark);
+}
+
+.template-foto-overlay .text-box.box-creme .body .akzent-text {
+  color: var(--akzent-dark);
+  text-decoration: underline;
+}
+
+/* Box-Positions-Varianten (basierend auf Foto-Hauptmotiv) */
+.template-foto-overlay.box-oben .text-box {
+  bottom: auto;
+  top: 240px;
+}
+
+.template-foto-overlay.box-mitte .text-box {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+/* Optional: kleine Brand-Ecke unten rechts */
+.template-foto-overlay .brand-corner {
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+  font-family: 'Philosopher', serif;
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.7);
+  z-index: 5;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* ========== SAFE-ZONES für Foto-Schutz ==========
+ *
+ * Patricia-Regel (2026-04-30): Sticker-/Umfrage-Platzhalter NIE
+ * über Patricias Gesicht oder Foto-Hauptmotive (Berggipfel, Logo, etc.)
+ *
+ * Jede .slide hat 4 definierte Safe-Zones — der Skill platziert
+ * Sticker/Umfrage in der GEGENÜBERLIEGENDEN Zone vom Foto-Hauptmotiv.
+ *
+ * Foto-Hauptmotiv-Position als Klasse auf .slide:
+ *   .photo-main-top-left, .photo-main-top-center, .photo-main-top-right
+ *   .photo-main-center-left, .photo-main-center, .photo-main-center-right
+ *   .photo-main-bottom-left, .photo-main-bottom-center, .photo-main-bottom-right
+ *
+ * Sticker-Platzhalter wird automatisch passend zur Klasse positioniert.
+ */
+
+.sticker-placeholder {
+  position: absolute;
+  width: 600px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(12, 28, 48, 0.15);
+  text-align: center;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #0c1c30;
+  z-index: 5;
+}
+
+/* Default-Position: unten Mitte */
+.sticker-placeholder {
+  bottom: 240px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Wenn Foto-Hauptmotiv UNTEN ist → Sticker oben */
+.slide.photo-main-bottom-left .sticker-placeholder,
+.slide.photo-main-bottom-center .sticker-placeholder,
+.slide.photo-main-bottom-right .sticker-placeholder {
+  top: 240px;
+  bottom: auto;
+}
+
+/* Wenn Foto-Hauptmotiv RECHTS ist → Sticker links */
+.slide.photo-main-top-right .sticker-placeholder,
+.slide.photo-main-center-right .sticker-placeholder,
+.slide.photo-main-bottom-right .sticker-placeholder {
+  left: 80px;
+  transform: none;
+}
+
+/* Wenn Foto-Hauptmotiv LINKS ist → Sticker rechts */
+.slide.photo-main-top-left .sticker-placeholder,
+.slide.photo-main-center-left .sticker-placeholder,
+.slide.photo-main-bottom-left .sticker-placeholder {
+  right: 80px;
+  left: auto;
+  transform: none;
+}
+
+/* Umfrage-Platzhalter (mehrzeilig, größer) */
+.umfrage-placeholder {
+  position: absolute;
+  width: 720px;
+  padding: 50px 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 28px;
+  box-shadow: 0 16px 50px rgba(12, 28, 48, 0.18);
+  z-index: 5;
+}
+
+.umfrage-placeholder .umfrage-frage {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--akzent-dark);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.umfrage-placeholder .umfrage-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.umfrage-placeholder .umfrage-option {
+  padding: 20px;
+  background: #f1ecdd;
+  border-radius: 16px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #0c1c30;
+  text-align: center;
+}
+
+/* Default-Position der Umfrage: unten Mitte */
+.umfrage-placeholder {
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Umfrage-Position passt sich gleich an wie Sticker */
+.slide.photo-main-bottom-left .umfrage-placeholder,
+.slide.photo-main-bottom-center .umfrage-placeholder,
+.slide.photo-main-bottom-right .umfrage-placeholder {
+  top: 200px;
+  bottom: auto;
+}
+
+.slide.photo-main-top-right .umfrage-placeholder,
+.slide.photo-main-center-right .umfrage-placeholder,
+.slide.photo-main-bottom-right .umfrage-placeholder {
+  left: 60px;
+  transform: none;
+}
+
+.slide.photo-main-top-left .umfrage-placeholder,
+.slide.photo-main-center-left .umfrage-placeholder,
+.slide.photo-main-bottom-left .umfrage-placeholder {
+  right: 60px;
+  left: auto;
+  transform: none;
+}
+
+/* ========== BTS-Template Safe-Zone-Anpassung ==========
+ *
+ * Bei Behind-the-Scenes mit Foto vollflächig:
+ * Text-Overlay-Gradient muss prüfen wo Patricia steht.
+ */
+
+/* Text unten (Default) — wenn Patricia oben/Mitte ist */
+.template-bts.photo-main-top-left .text-overlay,
+.template-bts.photo-main-top-center .text-overlay,
+.template-bts.photo-main-top-right .text-overlay,
+.template-bts.photo-main-center-left .text-overlay,
+.template-bts.photo-main-center .text-overlay,
+.template-bts.photo-main-center-right .text-overlay {
+  bottom: 0;
+  top: auto;
+  background: linear-gradient(to top,
+    rgba(12, 28, 48, 0.92) 0%,
+    rgba(12, 28, 48, 0.65) 30%,
+    rgba(12, 28, 48, 0.0) 100%);
+}
+
+/* Text oben — wenn Patricia unten ist */
+.template-bts.photo-main-bottom-left .text-overlay,
+.template-bts.photo-main-bottom-center .text-overlay,
+.template-bts.photo-main-bottom-right .text-overlay {
+  top: 0;
+  bottom: auto;
+  padding: 140px 100px 100px;
+  background: linear-gradient(to bottom,
+    rgba(12, 28, 48, 0.92) 0%,
+    rgba(12, 28, 48, 0.65) 30%,
+    rgba(12, 28, 48, 0.0) 100%);
+}
+
+/* ========== HILFS-KLASSEN ========== */
+
+.signature-handwriting {
+  font-family: 'Silver South Script', cursive;
+  font-size: 48px;
+  color: var(--akzent);
+}
+
+/* Logo-Ecke unten links (subtil) */
+.brand-corner {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-family: 'Philosopher', serif;
+  font-size: 28px;
+  color: var(--akzent-dark);
+  opacity: 0.6;
+  z-index: 3;
+}
+
+/* ========== PREVIEW-MODUS (vor Render — wird vom Render-Script entfernt) ========== */
+
+@media (max-width: 1500px) {
+  body {
+    background: #2a2a2a;
+    padding: 40px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .stage-wrap {
+    width: 340px;
+    height: 605px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.4);
+  }
+
+  .stage {
+    transform: scale(0.3148);
+    transform-origin: top left;
+    width: 1080px;
+    height: 1920px;
+  }
+
+  .frame-label {
+    color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 8px;
+  }
+}
