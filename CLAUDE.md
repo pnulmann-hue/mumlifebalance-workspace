@@ -81,24 +81,29 @@ Liest den Plan, führt jeden Schritt der Reihe nach aus, validiert die Arbeit un
 
 Beispiel: `/implement plans/2026-01-28-wettbewerbs-analyse-command.md`
 
-### /montag
+### /freitag-hooks · /montag (Content-Pipeline seit 2026-04-28)
 
-**Zweck:** Wöchentliche Content-Session in 60 Min strukturiert durchziehen — von 0 auf 3-4 freigegebene Posts pro Woche.
+**Zweck:** Vollautomatische Wochenplanung der Instagram-Posts.
 
-Start am Montag. Lädt alle Content-Grundlagen + Memory-Regeln, führt Patricia strikt durch 5 Phasen:
-
-1. **Briefing (10 Min):** Patricia liefert Woche-Kontext + echte Stories + echte Zahlen. Claude hört nur zu, speichert in `outputs/montag/YYYY-MM-DD-briefing.md`.
-2. **Konzepte (20 Min still):** Claude baut 6 Post-Konzepte als Tabelle (Di/Mi/Fr × 2 Profile, Hook + Kern + Keyword + Template-ID).
-3. **Auswahl (15 Min):** Patricia pickt 3-4 + Kurz-Änderungen.
-4. **Block-Lieferung (15 Min):** Claude schreibt Captions + klont Canva-Designs via `merge-designs` + bereitet Blotato-Configs vor.
-5. **Gate (5 Min):** Patricia gibt frei oder schickt EINE Änderungsliste.
+**Schedule (cron-driven):**
+- **Fr 08:00 → `/freitag-hooks`:** Liefert via Telegram 20 Hook-Vorschläge (10 pro Profil) basierend auf:
+  - Wochenfokus aus Notion-Wochenplanung-DB
+  - Umfassende Marktanalyse (Pain Points, Wünsche, Ziele, Herausforderungen je Profil)
+  - PIE-Pflicht-Mix + Themen-Variation
+- **Patricia pickt** zwischen Fr und Mo 11:59 — 5 Hooks pro Profil (Format: `Mentoring: M1K, M3K, M5R, M7K, M9R | doTERRA: D2K, D4R, D6K, D8K, D10R`)
+- **Mo 12:00 → `/montag`:** Build + Schedule
+  - Klont 3 Karussells + 2 Reel-Cover pro Profil aus Canva-Master-Templates
+  - Setzt Texte ein (Patricia-Voice, Compliance-Check, Layout-Sanity)
+  - Schedulet Karussells DIREKT via Blotato für Mi/Fr 19:30 (Mentoring + doTERRA)
+  - Reel-Cover bleiben bereit zum Drehen — Patricia dreht Reels manuell
 
 **Harte Commitments:**
 - Zero invented numbers (nur Input oder `patricia-expertise.md`)
 - Zero AI-generated Visuals (nur `merge-designs` auf Templates)
-- Ein Reel-Format (Stock + Voiceover)
-- Batch-Edits (keine sequenziellen Einzel-Rückfragen)
-- Patricia-Voice-Check vor jeder Caption
+- doTERRA-Pflicht: alle Compliance-Memorys + `context/doterra/patricia-wendepunkt-story.md` lesen vor jedem Build
+- PIE-Mix Pflicht (3-3-3-1 pro Profil)
+- Themen-Variation Pflicht (mind. 2 Pillars pro Profil pro Woche)
+- Wochenfokus aus Notion ist Hook-Generator-Quelle
 
 Volle Doku: `reference/montag-workflow-v2.md`.
 

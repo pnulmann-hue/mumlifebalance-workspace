@@ -50,6 +50,17 @@ Je nach Antwort lädst du unterschiedlichen Kontext und passt Ton, Zielgruppe un
 ### IMMER zusätzlich:
 - `context/notion-produkte-db.md` — **Produkt-DB-Struktur + Felder + A→B→E→M→Z-Logik**
 
+### Wenn doTERRA-Content (Profil @patricia_ulmann) — ZUSÄTZLICHE PFLICHT-LESEN
+
+VOR jeder Caption / Folie / Hook für doTERRA:
+
+- `context/doterra/patricia-wendepunkt-story.md` — Patricias eigene Wendepunkt-Story = Single Source of Truth für jede doTERRA-Aussage
+- `context/doterra/` — komplette Wissensbasis (PDFs, Bücher, doTERRA-Schulungen, Lifestyle-Pyramide). Auch die Unter-Ordner: Basicinfos, Produktwissen, Emotionen und Öle, Mama wird Hausapothekerin, Testwoche, Werbematerial, Ölschule, öltipps
+- Memory: `feedback_doterra-compliance-no-heilversprechen.md` — Strikte Compliance-No-Gos (keine Heilversprechen, „bei mir war"-Frame, Lifestyle-Bubble)
+- Memory: `feedback_KRITISCH-doterra-keine-erfundenen-fakten.md` — Keine medizinischen Erfindungen
+
+**NIE doTERRA-Content erstellen ohne diese Quellen geprüft zu haben.** Bei Unsicherheit: Patricia fragen, nicht raten.
+
 ---
 
 ## Schritt 1.5: Notion-Produkte-DB-Abgleich (PFLICHT bei strategischen Modi)

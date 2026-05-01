@@ -1,0 +1,60 @@
+name: Montag-Build-und-Schedule
+
+# Läuft jeden Montag 10:00 UTC (= 12:00 Sommerzeit / 11:00 Winterzeit Schweiz)
+# Wenn du im Winter exakt 12:00 Schweiz willst, ändere zu "0 11 * * 1"
+on:
+  schedule:
+    - cron: '0 10 * * 1'
+  workflow_dispatch:  # Manuell triggerbar via GitHub-UI
+
+jobs:
+  build-and-schedule:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # alle Commits, damit /freitag-hooks-Output verfügbar ist
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          cd scripts/blotato-post && npm install
+
+      - name: Run /montag (Build + Auto-Schedule via Blotato)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          CANVA_TOKEN: ${{ secrets.CANVA_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          claude --print --dangerously-skip-permissions \
+            "/montag
+
+            Du läufst autonom als GitHub Action Cron. Folge der vollständigen Skill-Anleitung in .claude/commands/montag.md:
+
+            1. Lese letzte Freitag-Hooks-Datei (outputs/freitag/YYYY-MM-DD-hooks.md) + Markt-Analyse + Wochen-Kontext
+            2. Lese Patricia's Pick aus outputs/montag/YYYY-MM-DD-pick.md (Patricia speichert es dort manuell zwischen Fr und Mo).
+               Falls kein Pick: Default-Pick (PIE-balanced) anwenden + Telegram-Push an Patricia.
+            3. Phase 2: 6 Karussells bauen (3 pro Profil) via Canva-API
+            4. Phase 3: 4 Reel-Cover bauen (2 pro Profil) via Canva-API
+            5. Phase 4: Karussells direkt via Blotato für die Woche schedulen — Mo + Mi + Fr 19:30 pro Profil (Account 41414 Mentoring, 41413 doTERRA)
+            6. Phase 5: Lieferung an Patricia via Telegram + Markdown speichern
+
+            Bei doTERRA-Builds: PFLICHT vorher Compliance-Memorys lesen + jeden Caption-Block gegen 'kein Heilversprechen' prüfen."
+
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add outputs/montag/ scripts/blotato-post/post-configs/
+          git diff --staged --quiet || git commit -m "montag-build: KW $(date +%V) auto-built + scheduled"
+          git push

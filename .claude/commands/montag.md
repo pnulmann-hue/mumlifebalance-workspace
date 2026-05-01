@@ -1,11 +1,12 @@
-# /montag — Karussells + Reel-Cover bauen aus gepickten Hooks
+# /montag — Karussells + Reel-Cover bauen + via Blotato für die Woche schedulen
 
-Du bist der **Build-Skill** der Content-Pipeline. Du läufst nachdem `/montag-hooks` Patricia per Telegram die 20 Hooks der Woche geschickt hat.
+Du bist der **Build- und Schedule-Skill** der Content-Pipeline. Du läufst Mo 12:00 nachdem Patricia über das Wochenende + Mo Vormittag aus den 20 Hooks gepickt hat.
 
-**Architektur-Kontext:**
-- `/montag-hooks` (Mo 08:00 autonom) → schickt 20 Hooks per Telegram + speichert in `outputs/montag/YYYY-MM-DD-hooks.md`
-- `/montag` (du, jetzt) → Patricia hat 5 pro Profil gepickt → du baust 3 Karussells + 2 Reel-Cover pro Profil
-- `posting-queue-bot` (daily 12:00 autonom) → schedulet Designs aus den Posting-Queue-Ordnern via Blotato
+**Architektur-Kontext (seit 2026-04-28):**
+- `/freitag-hooks` (Fr 08:00 autonom) → schickt 20 Hooks per Telegram + Marktanalyse + Wochenfokus aus Notion
+- **Patricia pickt** (Sa, So, Mo Vormittag) — 5 Hooks pro Profil
+- `/montag` (du, Mo 12:00 autonom) → baut 3 Karussells + 2 Reel-Cover pro Profil + **schedulet sie direkt via Blotato für die ganze Woche (Di–Sa)**
+- Kein „posting-queue-bot" mehr nötig — du scheduliest direkt am Mo 12:00 alles auf einmal.
 
 Volle System-Doku: `reference/content-bot-system.md` + `reference/montag-workflow-v2.md`.
 
@@ -35,7 +36,9 @@ Wo:
 
 ## Pflicht-Lektüre beim Start
 
-1. `outputs/montag/YYYY-MM-DD-hooks.md` (Datum = heute oder letzter Montag) — die 20 Hooks
+1. `outputs/freitag/YYYY-MM-DD-hooks.md` (Datum = letzter Freitag) — die 20 Hooks
+1a. `outputs/freitag/markt-analyse-KW[N].md` — Markt-Befunde (Pain/Wunsch/Ziel/Herausforderung) als Caption-Substanz
+1b. `outputs/freitag/wochen-kontext-KW[N].json` — Wochenfokus aus Notion
 2. `context/ki-phrasen-blackliste.md`
 3. `context/patricia-expertise.md` + `patricia-freebies.md` + `manychat-keywords.md`
 4. `context/brand-voice.md` + `caption-formeln.md` + `hook-framework.md`
@@ -58,12 +61,16 @@ VOR jeder Caption / Folie / Hook für doTERRA:
 
 ## Phase 1 · Pick aufnehmen (1 Min)
 
-Patricia hat im Chat gepickt. Du:
+Patricia hat zwischen Freitag und Mo 11:59 gepickt (Telegram-Reply oder Chat). Du:
 1. Parst die Auswahl
-2. Liest die heutige Hooks-Datei
+2. Liest die letzte Freitag-Hooks-Datei (`outputs/freitag/YYYY-MM-DD-hooks.md`)
 3. Resolvest die Hook-IDs zu vollen Hook-Texten + Empfehlung-Markierung (K/R aus Datei)
 4. Speicherst Patricias Pick in `outputs/montag/YYYY-MM-DD-pick.md`
-5. Bestätigst kurz an Patricia: „Ok, baue jetzt 3 Karussells + 2 Reel-Cover für Mentoring + 3 K + 2 R für doTERRA. Dauert ~15 Min."
+5. Bestätigst kurz an Patricia via Telegram: „Ok, baue jetzt 3 Karussells + 2 Reel-Cover für Mentoring + 3 K + 2 R für doTERRA und plane sie via Blotato für Di–Sa. Dauert ~20 Min."
+
+**Wenn kein Pick vorliegt um 12:00:**
+- Telegram-Push an Patricia: „Hey, brauche deine Hook-Picks für KW [N]. Ich warte 30 Min, dann kommt mein Default-Pick (PIE-balanced + Wochenfokus-passend) zum Build."
+- Wenn auch nach 30 Min kein Pick: automatischen Default-Pick nehmen (3 Persönlichkeit + 3 Inspiration + 3 Expertise + 1 Wild = je Profil) und in den Build gehen — Patricia kann immer noch korrigieren bevor das erste Posting Di abends rausgeht.
 
 ---
 
@@ -145,47 +152,89 @@ Für jeden **[R]-Pick** (insgesamt bis zu 4, also 2 pro Profil):
 
 ---
 
-## Phase 4 · Lieferung an Patricia (2 Min)
+## Phase 4 · Karussells via Blotato schedulen (5 Min)
 
-Nach allen Builds:
+**NEU seit 2026-04-28:** Nach dem Build schedulest du die 3 Karussells pro Profil DIREKT via Blotato für die Woche. Patricia muss nichts mehr manuell verschieben.
+
+### Schedule-Slots pro Woche
+
+**Karussells: Mo + Mi + Fr · 19:30 pro Profil (3 pro Profil = 6 total)**
+
+| Tag | Profil | Was | Slot |
+|---|---|---|---|
+| **Mo 19:30** | Mentoring | Karussell 1 | **Blotato-Schedule** (heute, 7h Vorlauf — Build läuft 12:00) |
+| Di 19:30 | Mentoring | Reel-Cover 1 | Patricia dreht/postet manuell |
+| **Mi 19:30** | Mentoring | Karussell 2 | **Blotato-Schedule** |
+| Do 19:30 | Mentoring | Reel-Cover 2 | Patricia dreht/postet manuell |
+| **Fr 19:30** | Mentoring | Karussell 3 | **Blotato-Schedule** |
+| **Mo 19:30** | doTERRA | Karussell 1 | **Blotato-Schedule** (heute, 7h Vorlauf) |
+| **Mi 19:30** | doTERRA | Karussell 2 | **Blotato-Schedule** |
+| **Fr 19:30** | doTERRA | Karussell 3 | **Blotato-Schedule** |
+
+→ **6 Karussell-Schedules pro Woche** (3 pro Profil: Mo/Mi/Fr). Plus 4 Reel-Cover (2 pro Profil) ohne Auto-Schedule — Patricia dreht selbst.
+
+### Schedule-Flow pro Karussell
+
+1. **Export aus Canva:** `export-design` → JPGs (1080×1350)
+2. **Caption finalisieren:** aus dem Build-Briefing (Phase 2e) übernehmen, ggf. Wochenfokus + Markt-Analyse-Befund einbauen
+3. **Build Blotato-Config:** `scripts/blotato-post/post-configs/YYYY-MM-DD-[profil]-[slug].json` mit:
+   - `accountId`: Mentoring `41414` / doTERRA `41413`
+   - `platform: instagram`
+   - `mediaType: image`
+   - `scheduledTime`: ISO-8601 mit +02:00 (Schweiz)
+   - `text`: Caption
+   - `mediaUrls`: Canva-JPG-Links
+4. **Schedule:** `node scripts/blotato-post/schedule-post.js --config=...`
+5. **Logge Submission-ID** in `outputs/montag/YYYY-MM-DD-build.md`
+
+### Spezielle Compliance-Slots
+
+- **doTERRA-Karussells:** Vor dem Schedule Compliance-Check gegen `feedback_doterra-compliance-no-heilversprechen.md`. Wenn Caption irgendwas wie „heilt / hilft gegen / bekämpft" hat → STOP, Patricia fragen.
+- **Mentoring-Karussells:** Standard-Preflight (Blackliste, Schweizer ss, max 10 Folien)
+
+---
+
+## Phase 5 · Lieferung an Patricia (2 Min)
+
+Nach allen Builds + Schedules:
 
 ```
-✅ Build fertig — 6 Karussells + 4 Reel-Cover
+✅ Build + Schedule fertig — 6 Karussells gescheduled, 4 Reel-Cover bereit
 
-📋 Mentoring (3 Karussells + 2 Reel-Cover):
-🟦 Karussell M1: [Hook-Kurz] → [Canva-Edit-Link]
-🟦 Karussell M3: [Hook-Kurz] → [Canva-Edit-Link]
-🟦 Karussell M7: [Hook-Kurz] → [Canva-Edit-Link]
-🎬 Reel-Cover M5: [Hook-Kurz] → [Canva-Edit-Link]
-🎬 Reel-Cover M9: [Hook-Kurz] → [Canva-Edit-Link]
+📋 Mentoring (3 Karussells gescheduled + 2 Reel-Cover bereit):
+🟦 Mi 19:30 — M1 [Hook-Kurz] → Blotato [Submission-ID] · Canva [Link]
+🟦 Fr 19:30 — M3 [Hook-Kurz] → Blotato [Submission-ID] · Canva [Link]
+🟦 Mo nächste Wo — M7 [Hook-Kurz] → Blotato [Submission-ID] · Canva [Link]
+🎬 Di 19:30 — RM5-Cover [Hook-Kurz] → Canva [Link] (du drehst Reel)
+🎬 Do 19:30 — RM9-Cover [Hook-Kurz] → Canva [Link] (du drehst Reel)
 
-📋 doTERRA (3 Karussells + 2 Reel-Cover):
+📋 doTERRA (3 Karussells gescheduled + 2 Reel-Cover bereit):
 [analog]
 
 —
 
 Nächste Schritte:
-1. Du checkst die Designs in Canva, justierst wenn nötig
-2. Karussells fertig → verschieben in „Posting Queue Mentoring" oder „Posting Queue doTERRA"
-3. Reel-Cover fertig → du nutzt fürs eigene Reel-Video, postest manuell via Instagram-App
-4. Daily 12:00 prüft der Bot die Queues und schedulet alles automatisch via Blotato
+1. Karussells laufen automatisch — du musst nichts mehr verschieben
+2. Reel-Cover bereit — du drehst die 2 Reels nach Drehbuch in `outputs/reels/`
+3. Wenn fertig: MP4 + Cover hier in den Chat → ich plane via Blotato
 
-Optional: wenn du eine Caption-Richtung willst, schreib den Hint als Canva-Kommentar auf das Design — Bot nutzt es als Inspiration.
+Wenn du eine Caption ändern willst: Cancele die Blotato-Submission im Blotato-UI + schick mir die neue Caption.
 ```
 
-Auch via Telegram pushen (kürzere Version):
+Telegram-Push:
 ```
-✅ 10 Designs gebaut. Check Canva, verschieb in Posting Queues. Daily 12:00 läuft der Schedule-Bot.
+✅ 6 Karussells gescheduled für die Woche · 4 Reel-Cover bereit zum Drehen
+📂 outputs/montag/YYYY-MM-DD-build.md
 ```
 
 ---
 
-## Wenn `outputs/montag/YYYY-MM-DD-hooks.md` nicht existiert
+## Wenn `outputs/freitag/YYYY-MM-DD-hooks.md` nicht existiert
 
-Patricia hat `/montag` ohne vorherigen `/montag-hooks` getippt (selten). Drei Optionen:
+Patricia hat `/montag` ohne vorherigen `/freitag-hooks` getippt (selten — sollte nur passieren wenn Cron Fr 08:00 ausgefallen ist). Drei Optionen:
 
-1. **Fallback A:** Schau ob es eine ältere hooks-Datei aus dieser Woche gibt (Mo, Di, Mi, Do, Fr) → benutze die
-2. **Fallback B:** Frag Patricia: „Keine Hooks-Datei gefunden. Soll ich /montag-hooks jetzt rennen lassen?" → wenn ja, Skill triggern
+1. **Fallback A:** Schau ob es eine ältere hooks-Datei aus dieser Woche gibt → benutze die
+2. **Fallback B:** Frag Patricia: „Keine Freitag-Hooks-Datei gefunden. Soll ich /freitag-hooks jetzt nachholen rennen lassen?" → wenn ja, Skill triggern
 3. **Fallback C:** Wenn Patricia einen direkten Hook-Vorschlag im Chat schickt, nutze den
 
 ---

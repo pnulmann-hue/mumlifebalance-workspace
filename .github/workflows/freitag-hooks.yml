@@ -1,0 +1,50 @@
+name: Freitag-Hooks-Engine
+
+# Läuft jeden Freitag 06:00 UTC (= 08:00 Sommerzeit / 07:00 Winterzeit Schweiz)
+# Wenn du im Winter exakt 08:00 Schweiz willst, ändere zu "0 7 * * 5"
+# GitHub Actions Cron hat oft 5-15 Min Verzögerung — das ist OK für diesen Workflow
+on:
+  schedule:
+    - cron: '0 6 * * 5'
+  workflow_dispatch:  # Manuell triggerbar via GitHub-UI
+
+jobs:
+  generate-hooks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run /freitag-hooks
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          claude --print --dangerously-skip-permissions \
+            "/freitag-hooks
+
+            Du läufst autonom als GitHub Action Cron. Folge der vollständigen Skill-Anleitung in .claude/commands/freitag-hooks.md.
+
+            Bei doTERRA-Hooks: PFLICHT vorher context/doterra/patricia-wendepunkt-story.md + lifestyle-pyramide-offiziell.md + Compliance-Memorys lesen.
+
+            Patricia hat Zeit zum Picken bis Mo 11:59. Mo 12:00 läuft /montag automatisch."
+
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add outputs/freitag/
+          git diff --staged --quiet || git commit -m "freitag-hooks: KW $(date +%V) auto-generated"
+          git push

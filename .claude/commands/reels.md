@@ -20,6 +20,17 @@ Lies in dieser Reihenfolge:
 10. Falls vorhanden: `outputs/reels/` — Früher erstellte Briefings
 11. Julia-Trost-Sync-Extracts in `outputs/julia-trost-sync/` (Kontext für Kaufpsychologie + Hook-Varianten — durch Blackliste gefiltert)
 
+### Wenn doTERRA-Content (Profil @patricia_ulmann) — ZUSÄTZLICHE PFLICHT-LESEN
+
+VOR jeder Caption / Folie / Hook für doTERRA:
+
+- `context/doterra/patricia-wendepunkt-story.md` — Patricias eigene Wendepunkt-Story = Single Source of Truth für jede doTERRA-Aussage
+- `context/doterra/` — komplette Wissensbasis (PDFs, Bücher, doTERRA-Schulungen, Lifestyle-Pyramide). Auch die Unter-Ordner: Basicinfos, Produktwissen, Emotionen und Öle, Mama wird Hausapothekerin, Testwoche, Werbematerial, Ölschule, öltipps
+- Memory: `feedback_doterra-compliance-no-heilversprechen.md` — Strikte Compliance-No-Gos (keine Heilversprechen, „bei mir war"-Frame, Lifestyle-Bubble)
+- Memory: `feedback_KRITISCH-doterra-keine-erfundenen-fakten.md` — Keine medizinischen Erfindungen
+
+**NIE doTERRA-Content erstellen ohne diese Quellen geprüft zu haben.** Bei Unsicherheit: Patricia fragen, nicht raten.
+
 Dann begrüsse Patricia kurz und stelle **als erstes IMMER diese Pflicht-Frage**:
 
 > "Geht es heute um dein **Onlinebusiness** (Coaching von Mamas im Network Marketing — Mentoring-Profil) oder um dein **Network** (doTERRA-Kundinnen & Team)?"
