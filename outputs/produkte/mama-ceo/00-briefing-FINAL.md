@@ -4,7 +4,7 @@
 **Status:** FINAL (basiert auf v2 + Patricias Entscheidungen vom 1.5.) — ersetzt v1, v2
 **Stufe in Produkttreppe:** Mid-Price · Säule 3 (Mama-CEO / Business-Realisierung mit KI)
 **Treppen-Sprung:** **E → M** (von „Ich sollte unbedingt — komme aber nicht dazu" zu „Mein Business läuft im Mama-Alltag")
-**Cart-Open:** 22.5.2026 09:00 · **Mastermind:** 26.5.2026 09:00 · **Cart-Close:** 29.5.2026 23:59
+**Cart-Open + Mastermind:** **Mi 20.5.2026 09:00** (Launch-Webinar-Format) · **Cart-Close:** **Mi 27.5.2026 23:59** · 7-Tage-Cart-Window
 
 ---
 
@@ -101,8 +101,8 @@ Säule 5 — Grenzen + Network + Skalieren „Was bleibt deins, was nicht — un
 
 | Stufe | Preis | Zeitraum |
 |---|---|---|
-| **Pilot/Early Bird** | **CHF 249** | Cart-Open 22.5. → Cart-Close 29.5.2026 |
-| **Final** | **CHF 333** | ab 30.5.2026 (Evergreen, gleicher Preis wie IG-Kundenmaschine + Vom Networkwissen) |
+| **Earlybird** | **CHF 249** | Cart-Open Mi 20.5. → Cart-Close Mi 27.5.2026 23:59 |
+| **Final** | **CHF 333** | ab Do 28.5.2026 (Evergreen, gleicher Preis wie IG-Kundenmaschine + Vom Networkwissen) |
 
 → Konsistenz mit deinen anderen Mid-Price-Produkten (333 CHF). Premium 1:1 Deep Work (1'997 CHF) folgt im Juni — separater Strategie-Skill.
 
