@@ -217,6 +217,23 @@ Bio-Check · Lead-Challenge · Workbook „Von 0 auf echt" · 0€ Potenzial-Tes
 2. In Mode 3 (Ads) ALS PFLICHT-SCHRITT 0: Painpoint-Analyse (AC-Signale + Instagram-Engagement + DMs + Reddit/Google-Trends) → empfiehlt passenden Funnel zum Bewerben
 3. Output in `outputs/funnels/[slug]/` und Update `active-funnels.json`
 
+### /jahresplan
+
+**Zweck:** Master-Jahres-Sicht über alle Launches/Produkte/Kampagnen — verknüpft mit Notion-Jahresplanung-DB. Wird von `/montag`, `/reels`, `/karussell`, `/funnel` als Wochen-Kontext gelesen.
+
+**Status:** SPEC angelegt am 2026-05-01 — Implementierung folgt in nächster Session sobald Patricia die Notion-Jahresplanung-DB-ID liefert.
+
+**5 Modi:**
+1. `/jahresplan status` — „Wo stehe ich heute?" (aktuelle KW + parallele Produkte + nächste Meilensteine)
+2. `/jahresplan launch [slug]` — neuen Launch ins Master-Markdown + Notion eintragen
+3. `/jahresplan vorschau [monat]` — Monats-Sicht mit Konflikten
+4. `/jahresplan konflikt-check` — überlappende Aktivitäten identifizieren
+5. `/jahresplan notion-sync` — manueller Sync mit Notion-Jahresplanung-DB
+
+**Datenfluss:** `/produkt` → `outputs/produkte/[slug]/07-launch-kalender.md` → `/jahresplan launch` → `context/jahresplan-2026.md` ←→ Notion. Phase-Marker maschinenlesbar in `context/active-funnels.json`.
+
+**Volle Doku:** `.claude/commands/jahresplan.md`.
+
 ### /wp
 
 **Zweck:** WordPress-Helfer für `mumlifebalance.ch` — Seiten erstellen, aktualisieren, Medien hochladen, Menüs pflegen. Vollautomatisch via REST API.
