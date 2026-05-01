@@ -25,6 +25,10 @@ const REPO_ROOT = path.resolve(__dirname, '..', '..');
 const TELEGRAM_TOKEN = process.env.STORY_BOT_TOKEN;
 const CHAT_ID = process.env.STORY_CHAT_ID;
 
+console.log('Story-Reminder gestartet.');
+console.log(`STORY_BOT_TOKEN: ${TELEGRAM_TOKEN ? '✅ gesetzt (Länge ' + TELEGRAM_TOKEN.length + ')' : '❌ fehlt'}`);
+console.log(`STORY_CHAT_ID: ${CHAT_ID ? '✅ gesetzt (' + CHAT_ID + ')' : '❌ fehlt'}`);
+
 if (!TELEGRAM_TOKEN || !CHAT_ID) {
   console.error('FEHLER: STORY_BOT_TOKEN oder STORY_CHAT_ID fehlt in env.');
   process.exit(1);
@@ -179,19 +183,43 @@ function pickStorySaeule(disg) {
 
 async function sendTelegramMessage(text) {
   const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      chat_id: CHAT_ID,
-      text,
-      parse_mode: 'HTML',
-    }),
-  });
-  const data = await response.json();
-  if (!data.ok) {
-    throw new Error(`Telegram-Send failed: ${JSON.stringify(data)}`);
+  console.log(`Schicke Telegram-DM an chat_id=${CHAT_ID}...`);
+
+  let response;
+  try {
+    response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: CHAT_ID,
+        text,
+        parse_mode: 'HTML',
+      }),
+    });
+  } catch (err) {
+    throw new Error(`Network error beim Telegram-Call: ${err.message}`);
   }
+
+  const responseText = await response.text();
+  let data;
+  try {
+    data = JSON.parse(responseText);
+  } catch {
+    throw new Error(`Telegram-Response war kein JSON (HTTP ${response.status}): ${responseText.slice(0, 500)}`);
+  }
+
+  if (!data.ok) {
+    // Häufige Fehler erklären
+    let hint = '';
+    if (data.error_code === 401) hint = '\n→ Token ungültig. Check STORY_BOT_TOKEN bei @BotFather.';
+    if (data.error_code === 400 && data.description?.includes('chat not found')) {
+      hint = '\n→ Chat-ID falsch ODER Bot wurde noch nie /start im Chat. Schreib dem Bot zuerst ein „/start" im Telegram.';
+    }
+    if (data.error_code === 403) hint = '\n→ Bot wurde blockiert oder hat keine Schreibrechte in dem Chat.';
+
+    throw new Error(`Telegram-API hat abgelehnt (HTTP ${response.status}): ${JSON.stringify(data)}${hint}`);
+  }
+
   return data.result;
 }
 

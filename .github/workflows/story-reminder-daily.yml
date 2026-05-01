@@ -7,6 +7,9 @@ on:
     - cron: '30 4 * * *'
   workflow_dispatch:  # Manuell triggerbar
 
+permissions:
+  contents: write
+
 jobs:
   send-reminder:
     runs-on: ubuntu-latest
