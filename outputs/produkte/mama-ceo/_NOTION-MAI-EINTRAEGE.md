@@ -25,9 +25,9 @@
 
 | Woche | Datum | Phase | Schwerpunkt |
 |---|---|---|---|
-| KW 19 | 2.-8.5. | Pre-Launch W1 Validierung | Story-Umfrage + Tagline-A/B + Sternbauer-Urmotiv-Calls |
-| KW 20 | 9.-15.5. | Pre-Launch W2 Anwarming | Sales-Page bauen + 5-Mail-Sequenz + 3 Anwarming-Reels |
-| KW 21 | 16.-22.5. | Pre-Launch W3 + Cart-Open | Mastermind-Anmeldung + Cart-Open am 22. |
+| KW 19 | 2.-8.5. | Aufwärmphase 1 Validierung | Story-Umfrage + Tagline-A/B + Sternbauer-Urmotiv-Calls |
+| KW 20 | 9.-15.5. | Aufwärmphase 2 Anwarming | Sales-Page bauen + 5-Mail-Sequenz + 3 Anwarming-Reels |
+| KW 21 | 16.-22.5. | Aufwärmphase 3 + Cart-Open | Mastermind-Anmeldung + Cart-Open am 22. |
 | KW 22 | 23.-29.5. | Cart-Open + Mastermind + Final-Push | LIVE-Mastermind 26.5. + Cart-Close 29.5. |
 
 ## KPI-Ziele
@@ -57,12 +57,12 @@
 
 **In deiner Wochenplanung-DB diese 4 Blöcke als neue Pages anlegen (pro KW eine Page):**
 
-### KW 19 (2.-8. Mai 2026) — Pre-Launch W1 Validierung
+### KW 19 (2.-8. Mai 2026) — Aufwärmphase 1 Validierung
 
 ```markdown
-# KW 19 (2.-8. Mai 2026) — Mama-CEO Pre-Launch W1 Validierung
+# KW 19 (2.-8. Mai 2026) — Mama-CEO Aufwärmphase 1 Validierung
 
-**Phase-Marker:** `mama-ceo:pre-launch-w1-validierung`
+**Phase-Marker:** `mama-ceo:aufwaermphase-1-validierung`
 **Ziel:** Tagline-Hook validiert, 3 Urmotiv-Calls geführt, Pilot-Modul-1-Material starten
 
 ## Patricia-To-Dos
@@ -88,15 +88,15 @@
 
 ## Skill-Hinweis
 
-Wenn du diese Woche `/montag` startest → der Skill liest `context/active-funnels.json` und weiss automatisch: Mama-CEO Pre-Launch W1 + Pillar = Painpoints benennen.
+Wenn du diese Woche `/montag` startest → der Skill liest `context/active-funnels.json` und weiss automatisch: Mama-CEO Aufwärmphase 1 + Pillar = Painpoints benennen.
 ```
 
-### KW 20 (9.-15. Mai 2026) — Pre-Launch W2 Anwarming
+### KW 20 (9.-15. Mai 2026) — Aufwärmphase 2 Anwarming
 
 ```markdown
-# KW 20 (9.-15. Mai 2026) — Mama-CEO Pre-Launch W2 Anwarming
+# KW 20 (9.-15. Mai 2026) — Mama-CEO Aufwärmphase 2 Anwarming
 
-**Phase-Marker:** `mama-ceo:pre-launch-w2-anwarming`
+**Phase-Marker:** `mama-ceo:aufwaermphase-2-story-demo`
 **Ziel:** Sales-Page LIVE, 5-Mail-Sequenz scharfgestellt, 3 Anwarming-Reels veröffentlicht
 
 ## Patricia-To-Dos
@@ -109,7 +109,7 @@ Wenn du diese Woche `/montag` startest → der Skill liest `context/active-funne
   - Karussell „Die Schuld-Spirale: 7 Sätze" (8 Folien)
 - **Mo-Mi 13.-15.5.:**
   - Pilot-Modul 1 Aufnahme starten (Lektion 1.1 + 1.2)
-  - Pre-Launch-Email #1 versenden („In 1 Woche öffnet sich die Tür")
+  - Aufwärmphase-Email #1 versenden („In 1 Woche öffnet sich die Tür")
 
 ## Content-Pillar diese Woche
 
@@ -124,12 +124,12 @@ Wenn du diese Woche `/montag` startest → der Skill liest `context/active-funne
 `/reels` für „Brandastic-Story-Reel" → Skill liest active-funnels.json, weiss Hook-Vorgabe + Pillar.
 ```
 
-### KW 21 (16.-22. Mai 2026) — Pre-Launch W3 + Cart-Open Beginn
+### KW 21 (16.-22. Mai 2026) — Aufwärmphase 3 + Cart-Open Beginn
 
 ```markdown
-# KW 21 (16.-22. Mai 2026) — Mama-CEO Pre-Launch W3 + Cart-Open Beginn
+# KW 21 (16.-22. Mai 2026) — Mama-CEO Aufwärmphase 3 + Cart-Open Beginn
 
-**Phase-Marker:** Mo-Di `mama-ceo:pre-launch-w3-heating`, Mi ab 09:00 `mama-ceo:cart-open`
+**Phase-Marker:** Mo-Di `mama-ceo:aufwaermphase-3-last-call`, Mi ab 09:00 `mama-ceo:cart-open`
 **Ziel:** Mastermind hat 80+ Anmeldungen · Cart-Open am 22.5. 09:00
 
 ## Patricia-To-Dos
@@ -139,10 +139,10 @@ Wenn du diese Woche `/montag` startest → der Skill liest `context/active-funne
   - Erste Mastermind-Story-Bumps
 - **Fr-So 17.-19.5.:**
   - Reel #3 „Was Mompreneurs falsch machen" — Falsch-vs-Richtig-Caption (60 Sek)
-  - Pre-Launch-Email #2 („3 Tage bis Cart-Open: Was Mama-CEO macht, was kein anderer Kurs macht")
+  - Aufwärmphase-Email #2 („3 Tage bis Cart-Open: Was Mama-CEO macht, was kein anderer Kurs macht")
   - Pilot-Modul 1 fertig aufnehmen (Lektion 1.3 + 1.4)
 - **Mo-Di 20.-21.5.:**
-  - Pre-Launch-Email #3 („Morgen geht's los")
+  - Aufwärmphase-Email #3 („Morgen geht's los")
   - Mastermind-Erinnerungs-Story
   - Reel #4 „Behind-the-Scenes" (60 Sek, authentisch)
 - **MI 22.5. — CART-OPEN 09:00:**
@@ -233,7 +233,7 @@ Diese Woche ist Patricia operativ — keine Skill-Aufrufe parallel. Vor-bereitet
 1. **Notion-Produkte-DB → Mama-CEO-Eintrag** (DB-ID `2ae7078e-8b7e-81ef-aafa-f03993ef344f`):
    - Produktname: „Mama-CEO — Möglichkeit schaffen, Business neben Familie aufzubauen"
    - Typ: Signature-Kurs (333 CHF)
-   - Status: In Erstellung — Pre-Launch W1
+   - Status: In Erstellung — Aufwärmphase 1
    - Zielgruppe: Mompreneurin/Network-Mama 30-45 DACH mit Schuld-Spirale
    - Painpoint: „Ich sollte unbedingt — komme aber nicht dazu"
    - Kern-Transformation: E→M (Möglichkeit schaffen, Business im Mama-Alltag zu betreiben)
@@ -259,7 +259,7 @@ Diese Woche ist Patricia operativ — keine Skill-Aufrufe parallel. Vor-bereitet
 
 ```
 /montag                          # Wochen-Content für aktuelle KW (Skill weiss Phase aus active-funnels.json)
-/reels Mama-CEO Pre-Launch       # Holt Hook-Vorgaben aus mama-ceo.content_hinweise
+/reels Mama-CEO Aufwärmphase       # Holt Hook-Vorgaben aus mama-ceo.content_hinweise
 /karussell „Schuld-Spirale 8 Folien"  # Konzept ist in 07-launch-kalender.md
 /karussell „5 Säulen Mama-CEO"   # Konzept ist in 01-modul-outline-v2.md
 ```

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Zentrales Register aller aktiven Funnels für Mum Life Balance (Mentoring + doTERRA). Wird vom /funnel Skill gepflegt und von /montag, /reels, /karussell gelesen — damit Content-Assistenten wissen welche ManyChat-Keywords diese Woche prioritär sind.",
-    "last_updated": "2026-05-01 · Mama-CEO Launch geplant (Cart-Open 22.5., Mastermind 26.5. 09:00, Cart-Close 29.5.)",
+    "last_updated": "2026-05-01 · Mama-CEO Mai-Launch in Notion synchronisiert · Aufwärmphase-Sprache (Julia Trost) · LAUNCH-DAY Mi 20.5. 09:00 (Mastermind + Cart-Open + Earlybird CHF 249) · Cart-Close Mi 27.5. 23:59",
     "schema_version": 1,
     "brand": "Mum Life Balance",
     "umsatzziel_chf_jahr": 40000
@@ -320,7 +320,7 @@
     {
       "id": "mama-ceo",
       "name": "Mama-CEO — Möglichkeit schaffen, Business neben Familie aufzubauen",
-      "status": "pre-launch-w1-validierung",
+      "status": "aufwaermphase-1-validierung",
       "profile": "mentoring",
       "typ": "Mid-Price-Kurs (Säule 3)",
       "preis_chf": 333,
@@ -329,11 +329,11 @@
       "problem": "Schuld-Spirale: 'Ich sollte unbedingt — bin aber nicht dazu gekommen' → Selbst-Ärger → kein Business-Fortschritt → Einkommen fehlt → mehr Stress",
       "transformation": "Möglichkeit schaffen Business neben Familie aufzubauen — 5 Säulen: Energie · Mindset · System · KI-Mitarbeiter · Network/Skalieren. KI nimmt Adminkram (Business + Haushalt) ab.",
 
-      "phase_marker": "mama-ceo:pre-launch-w1-validierung",
+      "phase_marker": "mama-ceo:aufwaermphase-1-validierung",
       "phase_history": [
-        { "marker": "pre-launch-w1-validierung", "von": "2026-05-04", "bis": "2026-05-10", "kw": 19, "fokus": "Story-Umfrage Tagline-A/B + 3 Sternbauer-Urmotiv-Calls + Sales-Page-Texte erste Version + Reel #1 Schuld-Spirale" },
-        { "marker": "pre-launch-w2-anwarming", "von": "2026-05-11", "bis": "2026-05-17", "kw": 20, "fokus": "Sales-Page LIVE + Mastermind-Anmeldung läuft + 3 Anwarming-Reels + Karussell + Pre-Launch-Email #1 + Pitch-Slides starten" },
-        { "marker": "pre-launch-w3-heating", "von": "2026-05-18", "bis": "2026-05-19", "kw": 21, "fokus": "Pre-Launch-Mails #2-3 + Pilot-Modul 1 fertig + Pitch-Slides FERTIG + Bot-Tests + Last-Call-Story" },
+        { "marker": "aufwaermphase-1-validierung", "von": "2026-05-04", "bis": "2026-05-10", "kw": 19, "fokus": "Story-Umfrage Tagline-A/B + 3 Sternbauer-Urmotiv-Calls + Sales-Page-Texte erste Version + Reel #1 Schuld-Spirale" },
+        { "marker": "aufwaermphase-2-story-demo", "von": "2026-05-11", "bis": "2026-05-17", "kw": 20, "fokus": "Sales-Page LIVE + Mastermind-Anmeldung läuft + 3 Anwarming-Reels + Karussell + Aufwärmphase-Email #1 + Pitch-Slides starten" },
+        { "marker": "aufwaermphase-3-last-call", "von": "2026-05-18", "bis": "2026-05-19", "kw": 21, "fokus": "Aufwärmphase-Mails #2-3 + Pilot-Modul 1 fertig + Pitch-Slides FERTIG + Bot-Tests + Last-Call-Story" },
         { "marker": "launch-day", "von": "2026-05-20T09:00", "bis": "2026-05-20T23:59", "kw": 21, "fokus": "🚀 KI-MASTERMIND LIVE 09:00-10:30 + CART-OPEN + EARLYBIRD-PITCH CHF 249 + Cart-Open-Mail + Story-Cascade + DMs an Live-Teilnehmer" },
         { "marker": "cart-window", "von": "2026-05-21", "bis": "2026-05-24", "kw": 21, "fokus": "Painpoint-Tag (Do) + KI-Aha-Tag (Fr) + Sozial-Beweis-Tag (Sa) + Replay-läuft-aus (So) — Mails #4-7" },
         { "marker": "final-push", "von": "2026-05-25", "bis": "2026-05-26", "kw": 22, "fokus": "Letzte-Tage-Mail + Final-Push-Mail + Reel Letzte-Chance + DMs an unsichere Käuferinnen" },
@@ -359,9 +359,9 @@
         "status": "geplant",
         "design_template": "context/mail-design-onlinebusiness.html",
         "mails": [
-          "Fr 15.5. 14:00 — Pre-Launch Mail #1 (In 1 Woche öffnet sich die Tür)",
-          "Mo 18.5. 09:00 — Pre-Launch Mail #2 (In 2 Tagen LIVE — Mastermind-Reminder)",
-          "Di 19.5. 09:00 — Pre-Launch Mail #3 (Morgen 09:00 LIVE + Cart-Open)",
+          "Fr 15.5. 14:00 — Aufwärmphase-Mail #1 (In 1 Woche öffnet sich die Tür)",
+          "Mo 18.5. 09:00 — Aufwärmphase-Mail #2 (In 2 Tagen LIVE — Mastermind-Reminder)",
+          "Di 19.5. 09:00 — Aufwärmphase-Mail #3 (Morgen 09:00 LIVE + Cart-Open)",
           "Mi 20.5. 11:00 — Cart-Open Mail #1 (Direkt nach Mastermind, mit Replay-Link)",
           "Do 21.5. 08:00 — Mail #4 Painpoint-Tag (Schuld-Spirale unterbrechen)",
           "Fr 22.5. 08:00 — Mail #5 KI-Aha-Tag (mit Live-Demo-Screenshot)",
@@ -406,9 +406,9 @@
 
       "content_hinweise": {
         "pillar_pro_phase": {
-          "pre-launch-w1-validierung": "Painpoints benennen (Schuld-Spirale · Mental Load · Aufschieberitis) — NICHT direkt verkaufen",
-          "pre-launch-w2-anwarming": "Brandastic-Story-Bausteine (Hamsterrad → Schwester-Tod-Aha → KI-Mitarbeiter) + KI-Demo-Snippets + Mastermind-Hype",
-          "pre-launch-w3-heating": "Last-Call-Mastermind-Anmeldung + Behind-the-Scenes + Vorbereitungs-Energie",
+          "aufwaermphase-1-validierung": "Painpoints benennen (Schuld-Spirale · Mental Load · Aufschieberitis) — NICHT direkt verkaufen",
+          "aufwaermphase-2-story-demo": "Brandastic-Story-Bausteine (Hamsterrad → Schwester-Tod-Aha → KI-Mitarbeiter) + KI-Demo-Snippets + Mastermind-Hype",
+          "aufwaermphase-3-last-call": "Last-Call-Mastermind-Anmeldung + Behind-the-Scenes + Vorbereitungs-Energie",
           "launch-day": "🚀 LIVE-Energie (Stories vor + während + nach Mastermind) + Cart-Open-Cascade + Earlybird-Drücker",
           "cart-window": "Painpoint-Tag (Do) · KI-Aha-Tag (Fr) · Sozial-Beweis-Tag (Sa) · Replay-läuft-aus (So)",
           "final-push": "Letzte-Tage · Scarcity · Antikunden-Filter · Letzte-Chance-Reel",

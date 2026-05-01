@@ -17,7 +17,7 @@
 - ✅ Patricia muss nur EINE Spannung halten (ein Hauptevent statt zwei)
 - ✅ Webinar-Energie + sofortige Kaufmöglichkeit = höchste Conversion
 - ✅ Earlybird-Preis live im Webinar pitchen = klares „Jetzt"-Signal
-- ✅ Kürzere Pre-Launch-Phase (3 Wochen statt 4)
+- ✅ Kürzere Aufwärmphase (3 Wochen statt 4)
 - ✅ Replay 48h läuft aus → Late-Comer-Push am So 24.5.
 
 ---
@@ -95,8 +95,8 @@
    - Auf Mama-CEO-Sales-Page ab Mi 13.5. ein Banner: „Mi 20.5. 09:00 LIVE: KI-Mastermind"
    - Klick → ManyChat-Keyword `MASTERMIND` triggern
 
-3. **Email an Bestandskundinnen** (Pre-Launch W2-W3)
-   - Pre-Launch-Mails #1-3 in KW 20-21
+3. **Email an Bestandskundinnen** (Aufwärmphase 2-3)
+   - Aufwärmphase-Mails #1-3 in KW 20-21
 
 ### DM-Sequenz (ManyChat-automatisiert, 4 Touchpoints)
 
@@ -109,9 +109,9 @@
 
 ### Email-Flankierung (parallel zur DM-Sequenz, AC-Liste)
 
-- **Pre-Launch #1** (Fr 15.5. 14:00): „In 1 Woche öffnet sich die Tür"
-- **Pre-Launch #2** (Mo 18.5. 09:00): „In 2 Tagen LIVE — Mastermind-Reminder"
-- **Pre-Launch #3** (Di 19.5. 09:00): „Morgen 09:00 LIVE + Cart-Open"
+- **Aufwärmphase #1** (Fr 15.5. 14:00): „In 1 Woche öffnet sich die Tür"
+- **Aufwärmphase #2** (Mo 18.5. 09:00): „In 2 Tagen LIVE — Mastermind-Reminder"
+- **Aufwärmphase #3** (Di 19.5. 09:00): „Morgen 09:00 LIVE + Cart-Open"
 - **Cart-Open #1** (Mi 20.5. 11:00): Direkt nach Mastermind, mit Replay-Link
 - **Email #4-7** (Do-So 21.-24.5.): Painpoint-Tag · Aha-Tag · Sozial-Beweis · Replay-läuft-aus
 - **Email #8-9** (Mo-Di 25.-26.5.): Final-Push
@@ -169,7 +169,7 @@
 
 - **Launch-Kalender:** `outputs/produkte/mama-ceo/07-launch-kalender.md` (Master-Timing)
 - **active-funnels.json:** `phase_marker: mama-ceo:launch-day` für Mi 20.5.
-- **`/montag` Pre-Launch W2-W3:** Content-Pillar = „Mastermind-Hype + Live-Demo-Snippets"
+- **`/montag` Aufwärmphase 2-3:** Content-Pillar = „Mastermind-Hype + Live-Demo-Snippets"
 - **`/reels`:** Behind-the-Scenes-Reel als Vorbereitungs-Hook
 - **`/karussell`:** „Schuld-Spirale 8 Folien" als Mastermind-Vorbereitung
 - **Mama-CEO-Briefing:** `00-briefing-FINAL.md` (Pitch-Inhalte)

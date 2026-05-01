@@ -14,9 +14,9 @@
 
 | Phase | Datum | Marker (für active-funnels.json) | Content-Schwerpunkt |
 |---|---|---|---|
-| **Pre-Launch W1 — Validierung** | KW 19 (4.-10.5.) | `mama-ceo:pre-launch-w1-validierung` | Story-Umfrage + Tagline-A/B + Sternbauer-Urmotiv-Calls + Schuld-Spirale benennen |
-| **Pre-Launch W2 — Anwarming** | KW 20 (11.-17.5.) | `mama-ceo:pre-launch-w2-anwarming` | Sales-Page LIVE + 5-Mail-Sequenz scharfgestellt + 3 Anwarming-Reels + Mastermind-Anmeldung öffnen |
-| **Pre-Launch W3 — Heating** | Mo-Di 18.-19.5. | `mama-ceo:pre-launch-w3-heating` | Pre-Launch Mails #2-3 + Pitch-Slides fertig + Bot-Tests |
+| **Aufwärmphase 1 — Validierung** | KW 19 (4.-10.5.) | `mama-ceo:aufwaermphase-1-validierung` | Story-Umfrage + Tagline-A/B + Sternbauer-Urmotiv-Calls + Schuld-Spirale benennen |
+| **Aufwärmphase 2 — Story + KI-Demo** | KW 20 (11.-17.5.) | `mama-ceo:aufwaermphase-2-story-demo` | Sales-Page LIVE + 5-Mail-Sequenz scharfgestellt + 3 Anwarming-Reels + Mastermind-Anmeldung öffnen |
+| **Aufwärmphase 3 — Last Call** | Mo-Di 18.-19.5. | `mama-ceo:aufwaermphase-3-last-call` | Aufwärmphase-Mails #2-3 + Pitch-Slides fertig + Bot-Tests |
 | **🚀 LAUNCH-DAY** | **Mi 20.5. 09:00** | `mama-ceo:launch-day` | KI-Mastermind LIVE + Cart-Open + Earlybird-Pitch CHF 249 |
 | **Cart-Window** | Do-So 21.-24.5. | `mama-ceo:cart-window` | Painpoint-Tag · KI-Aha-Tag · Sozial-Beweis-Tag · Replay-läuft-aus |
 | **Final-Push** | Mo-Di 25.-26.5. | `mama-ceo:final-push` | Replay-Sound-Bites + Letzte-Tage-Mail + Letzte-Chance-Reel |
@@ -27,7 +27,7 @@
 
 ## WOCHE 1 — Validierung (KW 19 · 4.-10. Mai)
 
-**Marker:** `mama-ceo:pre-launch-w1-validierung`
+**Marker:** `mama-ceo:aufwaermphase-1-validierung`
 **Ziel:** Tagline final + 3 Urmotiv-Calls archiviert + Sales-Page-Texte erste Version + Reel #1 Schuld-Spirale veröffentlicht
 
 | Tag | Aufgaben |
@@ -45,8 +45,8 @@
 
 ## WOCHE 2 — Anwarming (KW 20 · 11.-17. Mai)
 
-**Marker:** `mama-ceo:pre-launch-w2-anwarming`
-**Ziel:** Sales-Page LIVE in ThriveCart · Mastermind-Anmeldung läuft · 3 Anwarming-Reels + 1 Karussell veröffentlicht · Pre-Launch-Email #1 versendet · Pilot-Modul 1 Hälfte aufgenommen
+**Marker:** `mama-ceo:aufwaermphase-2-story-demo`
+**Ziel:** Sales-Page LIVE in ThriveCart · Mastermind-Anmeldung läuft · 3 Anwarming-Reels + 1 Karussell veröffentlicht · Aufwärmphase-Email #1 versendet · Pilot-Modul 1 Hälfte aufgenommen
 
 | Tag | Aufgaben |
 |---|---|
@@ -56,7 +56,7 @@
 | Mi 13.5. 14:00 | Pilot-Modul 1 Aufnahme starten (Lektion 1.1 + 1.2) |
 | Do 14.5. 10:00 | Reel #3 Live-Demo Familienorganisator-Bot (60 Sek mit Bildschirm) |
 | Fr 15.5. 09:00 | Karussell „Schuld-Spirale: 7 Sätze" (8 Folien) |
-| Fr 15.5. 14:00 | Pre-Launch-Email #1 versenden („In 1 Woche öffnet sich die Tür") |
+| Fr 15.5. 14:00 | Aufwärmphase-Email #1 versenden („In 1 Woche öffnet sich die Tür") |
 | Sa 16.5. 09:00 | DM-Sequenz für ManyChat MASTERMIND scharfstellen (4 Touchpoints) |
 | Sa 16.5. 14:00 | Pitch-Slides Mastermind starten (18-22 Slides Canva) |
 | So 17.5. 14:00 | Reel #4 Falsch-vs-Richtig (60 Sek, CTA Cart-Open Mi) |
@@ -65,15 +65,15 @@
 
 ## WOCHE 3 — Heating Up + LAUNCH-DAY (KW 21 · 18.-24. Mai)
 
-**Marker:** Mo-Di `pre-launch-w3-heating` · Mi 20.5. **`launch-day`** · Do-So `cart-window`
+**Marker:** Mo-Di `aufwaermphase-3-last-call` · Mi 20.5. **`launch-day`** · Do-So `cart-window`
 **Ziel:** Mastermind hat 100+ Anmeldungen · LAUNCH-DAY erfolgreich · 8+ Pilot-Käuferinnen am Tag selbst
 
 ### Mo 18.5. — Last-Call-Anwarming
-- 09:00 — Pre-Launch-Email #2 („In 2 Tagen LIVE — Mastermind-Reminder")
+- 09:00 — Aufwärmphase-Email #2 („In 2 Tagen LIVE — Mastermind-Reminder")
 - 14:00 — Pilot-Modul 1 fertig aufnehmen (Lektion 1.3 + 1.4)
 
 ### Di 19.5. — Vorbereitungs-Tag
-- 09:00 — Pre-Launch-Email #3 („Morgen 09:00 LIVE + Cart-Open")
+- 09:00 — Aufwärmphase-Email #3 („Morgen 09:00 LIVE + Cart-Open")
 - 14:00 — **Pitch-Slides Mastermind FERTIG** + Familien-Bot + Brand-Voice-Bot live testen
 - 18:00 — Mastermind-Erinnerungs-Story (Last-Call-Anmeldung)
 
