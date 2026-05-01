@@ -230,6 +230,144 @@
 
 ---
 
+---
+
+## 8. Vertiefte Painpoint-Recherche (NEU 2026-05-01 nachmittags)
+
+Auf Patricias Hinweis hin nochmals fokussierte WebSearches zu den **4 zentralen Realitäten der Zielgruppe** durchgeführt: Schuld-Spirale, Aufschieberitis, Mompreneurin-Stress (Network-spezifisch), KI-Haushalt-Realität.
+
+### A) Die Schuld-Spirale ist real und benannt — Original-Zitate aus DACH-Quellen 2026
+
+**Zentral-Fund:** experto.de bringt den Mechanismus auf den Punkt:
+> „Negative Gefühle wie Schuld, Frustration oder Selbstzweifel verstärken den Teufelskreis: **je länger man aufschiebt, desto schlechter fühlt man sich, und desto mehr schiebt man weiter auf**."
+
+**mamanehmer.de** (Top-DACH-Mama-Selbstständig-Plattform, hochrelevante Sprache):
+- „Schuldgefühle & Versagensängste: **Unternehmerin = schlechte Mutter?**"
+- „Verzweiflung im Mama-Business — wie du da wieder heraus kommst"
+- Kern-Botschaft: viele Mompreneurinnen suchen sich aktiv aus diesen Gefühlen zu befreien
+
+**elternzeitchancen.de** (direkte Avatar-Stimme):
+- „**Selbstzweifel als selbstständige Mama — was mich seit Jahren begleitet und ausbremst.**"
+
+**she-preneur.de:**
+- „Selbst und ständig — **Überforderung pre-programmed**"
+
+→ **Implikation für Sales-Page:** Patricias Tagline trifft eine **bereits öffentlich benannte Wunde**. Die Sprache „ich sollte unbedingt — bin aber nicht dazu gekommen" ist nicht erfunden — sie ist die wörtliche Realität dieser Zielgruppe.
+
+### B) Network-Mama-Stress: Hoffnung → Überforderung in Wochen
+
+**diekleinebotin.at** (Netcoo-Network-Marketing-Mama-Quelle):
+> „Mütter starten in Network Marketing mit **Hoffnung auf Freiheit, Geld, Unabhängigkeit** — wollen aus dem konstanten Funktionieren raus. Aber **innerhalb von Wochen erleben sie Überforderung, Stress, Zweifel, Druck**."
+
+**lisafirle.de** (direkter Network-Marketing-Mama-Coach):
+> „Network Marketing Fehler: **Warum dein Nervensystem entscheidet, ob du erfolgreich bist**" — manche Frauen-Nervensysteme verbinden Geld mit Stress, mehr Verantwortung, mehr Sichtbarkeit, mehr Erwartungen — und dann sabotiert man sich selbst.
+
+**bernadette-spiesberger.at** (Österreich, Network-Marketing-Mama-Coach):
+> „Mamas wollen finanzielle Unabhängigkeit, **ohne gegen die Familie zu arbeiten**."
+
+→ **Implikation für Säule 5 (Network):** Mama-CEO trifft genau die Wunde der Network-Mama: sie wollte Freiheit, kriegt aber Burnout. Patricias Lösung („System + KI machen den Adminkram, du machst nur noch das, was du liebst") ist die **direkte Antwort auf diesen Pain**.
+
+### C) Aufschieberitis als systemisches Mama-Selbstständig-Problem
+
+**experto.de:**
+> „Selbstmanagement: So bekommen Sie die Aufschieberitis in den Griff" — explizit für Selbstständige geschrieben, **Mama-Selbstständig-Schnittmenge offensichtlich**.
+
+**seminar-personalfuehrung.de:**
+> „Aufschieberitis — was ist das eigentlich?" — Aufschieberitis als anerkanntes Coaching-Thema, mit klarer Anschluss-Sprache zu Patricias Schuld-Spirale.
+
+→ **Implikation:** Aufschieberitis ist KEIN persönliches Versagen, sondern systemisches Phänomen mit klarer Mechanik. Mama-CEO Säule 2 (Mindset + Mental-Load-Reset) sollte **Aufschieberitis explizit benennen** und auflösen — das spricht eine klar identifizierte Schmerzgruppe direkt an.
+
+**Quellen Painpoints:**
+- [Schuldgefühle & Versagensängste — Mamanehmer](https://mamanehmer.de/schuldgefuehle-versagensaengste/)
+- [Verzweiflung im Mama-Business — Mamanehmer](https://mamanehmer.de/verzweifelung-im-mama-business/)
+- [Selbstzweifel als selbstständige Mama — Elternzeitchancen](https://elternzeitchancen.de/selbstzweifel-als-selbststaendige-mama-was-mich-seit-jahren-begleitet-und-ausbremst/)
+- [Selbst und ständig — She-Preneur](https://she-preneur.de/blog/selbst-und-staendig/)
+- [Aufschieberitis Selbstmanagement — Experto](https://www.experto.de/businesstipps/selbstmanagement-so-bekommen-sie-die-aufschieberitis-in-den-griff.html)
+- [Aufschieberitis was ist das — Seminar-Personalfuehrung](https://seminar-personalfuehrung.de/aufschieberitis-was-ist-das-eigentlich/)
+- [Network Marketing & Nervensystem — Lisa Firle](https://lisafirle.de/network-marketing-fehler-warum-dein-nervensystem-entscheidet-ob-du-erfolgreich-bist/)
+- [Neustart Network Marketing — Die Kleine Botin](https://diekleinebotin.at/neustart-2024-wie-frauen-mit-network-marketing-finanzielle-freiheit-erreichen-koennen/)
+- [Network Marketing Mama-Modell — Bernadette Spiesberger](https://bernadette-spiesberger.at/podcasts/network-marketing-als-neues-business-modell-fuer-mamas/)
+
+### D) KI-Haushalt-Realität 2026 — Markt ist warm, aber UNBESETZT auf der Business-Brücke
+
+**Killer-Zitat (familie.de — TikTok-virale Mutter Lilian):**
+> „Lilian nutzt ChatGPT nicht nur für einfache Fragen, sondern für die vielen tagtäglichen Planungsprozesse — **also den Mental Load, der unser Hirn so gerne verstopft**. `Es ist nicht so, dass ich alles alleine tragen muss`, erklärt sie, `aber ich fühle mich trotzdem oft so.`"
+
+→ Das ist GENAU die Patricia-Sales-Page-Sprache.
+
+**Weitere Quellen, die zeigen — Markt ist bereits warm:**
+- **kristin-frank.de:** „Wie KI Mütter im Alltag entlasten kann: Meine besten ChatGPT-Prompts für Familie, Schule & Selbstfürsorge"
+- **mama-blog.at:** „22+ Tipps und Ideen für einen entspannteren Familienalltag mit ChatGPT"
+- **midjourney-prompt-engineering.de:** „ChatGPT im Familienalltag: 10 smarte Wege, wie KI Eltern unterstützt"
+- **gabelschereblog.de:** „Mealplan Familie selbst erstellen: So nutzt du KI für stressfreies Kochen"
+- **familymind.ai:** „Die 10 besten KI-Tools, um Ihre Familie zu organisieren und jede Woche Stunden zu sparen"
+- **zentralplus.ch:** „Wie ChatGPT in einer Familie nützlich eingesetzt werden kann"
+- **Amazon Buch:** „Eltern-Lifehack KI — Wie du mit ChatGPT & Co. mehr Zeit, Ruhe und Kreativität im Familienalltag findest" (Franz Zaucher, 2025/2026)
+
+→ **Implikation:** Mompreneurinnen kennen das KI-Haushalt-Konzept zunehmend (TikTok-viral). Aber **NIEMAND verbindet KI-Haushalt mit KI-Business in einem Mama-Container.** Patricia ist hier wieder die Erste mit der Brücke.
+
+**Implikation für Mama-CEO Säule 4 (KI-Mitarbeiter):**
+- Lektion 4.3 (Haushalt-KI) soll **das Lilian-Zitat als Opener** nutzen
+- Die KI-Haushalt-Logik ist BEKANNT bei Zielgruppe → niedrigere Adoptions-Schwelle
+- Differenzierung gegen Mompreneurs/Mader: **du baust KI-Mitarbeiter im Haushalt UND Business** in einem System
+
+**Quellen KI-Haushalt:**
+- [Mit KI gegen Mental Load — Familie.de (TikTok-Lilian)](https://www.familie.de/kleinkind/mit-ki-gegen-den-mental-load-eine-mutter-berichtet-auf-tiktok-und-geht-damit-viral--01K04CTMPA65MEA2PZM2CV51FJ)
+- [KI-Prompts für Mütter — Kristin Frank](https://www.kristin-frank.de/post/wie-ki-m%C3%BCtter-im-alltag-entlasten-kann-meine-besten-chatgpt-prompts-f%C3%BCr-familie-schule-selbstf%C3%BCr)
+- [22+ Tipps ChatGPT Familienalltag — Mama-Blog.at](https://mama-blog.at/chatgpt-als-hilfe-im-familienalltag/)
+- [10 KI-Tools Familienorganisation — Familymind.ai](https://familymind.ai/language/de/die-10-besten-ki-tools-um-ihre-familie-zu-organisieren-und-jede-woche-stunden-zu-sparen/)
+- [Mealplan Familie KI — Gabelschereblog](https://gabelschereblog.de/ki-mealplan-familie-selbst-erstellen)
+- [ChatGPT Familienalltag — Midjourney Prompt Engineering](https://midjourney-prompt-engineering.de/chatgpt-im-familienalltag/)
+- [KI in Familienplanung — Zentralplus](https://www.zentralplus.ch/blog/eltern-blog/wie-ki-in-unserer-familienplanung-einzug-haelt/)
+
+---
+
+## 9. Updated Strategische Implikationen (gegenüber Sektion 7)
+
+Mit den vertieften Painpoints und der KI-Haushalt-Realität ändert sich:
+
+### Was am Briefing zusätzlich ergänzt werden sollte
+
+1. **Schuld-Spirale-Sektion** mit experto.de + mamanehmer.de + elternzeitchancen.de Zitaten härten — ist nicht „Patricias Hypothese", sondern **markt-validierter Pain**.
+2. **KI-Haushalt-Brücke** als zentrales Differenzierungs-Argument formulieren: „Andere zeigen dir KI fürs Business. Andere zeigen dir KI für den Haushalt. **Mama-CEO verbindet beides** — weil dein Mental Load auch beides ist."
+3. **Network-Mama-Wunde** explizit ansprechen (Spiesberger-Zitat: „Mamas wollen finanzielle Unabhängigkeit, ohne gegen die Familie zu arbeiten") — Säule 5 als Antwort.
+
+### Was am Outline zusätzlich ergänzt werden sollte
+
+1. **Säule 2 Lektion 2.1** — Aufschieberitis explizit benennen + auflösen (mit experto-Mechanik-Zitat als Opener)
+2. **Säule 4 Lektion 4.3** — Lilian-TikTok-Zitat als Hook + Hinweis auf bereits warmen Markt (KI-Haushalt-Konzept ist bekannt → niedrigere Adoptions-Schwelle)
+3. **Säule 5 Lektion 5.1** — „Grenzen schützen das Ja" mit Lisa-Firle-Nervensystem-Insight ergänzen
+
+### Sales-Page Headline-Block (Vorschlag — mit Zielgruppen-Sprache)
+
+```
+HEADLINE
+„Vom 'Ich sollte unbedingt' zum 'Es läuft' — in 8 Wochen."
+
+SUB-HEADLINE
+Du bist die Mompreneurin / Network-Mama, die genau weiss, was sie tun MÜSSTE —
+aber im Mama-Alltag nicht dazu kommt. Und sich täglich darüber ärgert.
+Das hat einen Namen: Schuld-Spirale. Mama-CEO unterbricht sie.
+
+DREI-SÄTZE-BLOCK
+Mit 5 Säulen: Du erschaffst dir die Zeit (Wochenrhythmus). Du löst die Blockaden,
+die dich täglich am Tun hindern (Mindset). Du baust Strukturen, die auch laufen,
+wenn die Kinder krank sind (System). Du delegierst den Adminkram an KI-Mitarbeiter
+— Business UND Haushalt (KI). Und du wächst auf deine Art als Mama-Networkerin
+(Grenzen + Skalieren).
+
+KI-BRÜCKEN-SATZ (Patricias Originalsprache)
+„KI-Mitarbeiter, die mir genau die Arbeit abnehmen, die wir als Networkerin gar
+nicht haben wollen — der Adminkram. Und auch in Haushaltsdingen (Kochassistent,
+Gartenassistent). Mental Load lass grüssen."
+
+DATEN-ANKER
+58% der Solo-Unternehmer:innen mit KI sparen 20+ Stunden pro Monat (alfred_ 2026).
+Echte Mitarbeiterin = 4'000+ CHF/Monat. KI-Stack = ~100 CHF/Monat.
+```
+
+---
+
 ## Anhang: Methodische Hinweise
 
 **Was diese v2 anders macht als v1:**
