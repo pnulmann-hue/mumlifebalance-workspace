@@ -1,7 +1,9 @@
 # Mama-CEO KI-Mastermind — Landingpage-Briefing
 
 **Datum:** 2026-05-01
-**Ziel:** Landingpage für KI-Mastermind „Dein erster KI-Mitarbeiter in 90 Min" — kostenlose Anmeldung, mind. 100 Anmeldungen bis Mi 20.5. 09:00
+**Webinar-Titel (FINAL):** „In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln"
+**Untertitel:** „Mental Load abgeben · Zeit fürs Business zurück gewinnen"
+**Ziel:** Landingpage live ab Mi 13.5. — mind. 100 Mastermind-Anmeldungen bis Mi 20.5. 09:00
 **Tech-Empfehlung:** **WordPress (mumlifebalance.ch/ki-mastermind)** — via `/wp` direkt deploybar, du hast Admin · Alternative: ThriveCart Free Page
 **Anmeldung:** ManyChat-Keyword `MASTERMIND` als primärer CTA + AC-Formular als Fallback
 **Live geht die Page:** Mittwoch 13.5. 10:00 (siehe `07-launch-kalender.md`)
@@ -35,10 +37,10 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 > 🔴 LIVE KOSTENLOS · Mi 20. Mai 2026 · 09:00 Uhr · 90 Min
 
 **Headline (gross):**
-> # Dein erster KI-Mitarbeiter in 90 Min.
+> # In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln.
 
 **Sub-Headline:**
-> ## Wie Mompreneurs sich Adminkram + Mental Load abnehmen lassen — im Business UND zuhause.
+> ## Mental Load abgeben · Zeit fürs Business zurück gewinnen.
 
 **Hero-Body (3-4 Zeilen):**
 > Du sagst dir täglich „Ich sollte unbedingt…" — und kommst trotzdem nie dazu? Du machst alles selbst, weil delegieren zu kompliziert ist? Du brennst aus, weil dein Mental Load Business + Haushalt + Kinder gleichzeitig hält?

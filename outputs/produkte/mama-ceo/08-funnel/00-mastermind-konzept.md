@@ -1,4 +1,4 @@
-# KI-Mastermind „Dein erster KI-Mitarbeiter in 90 Min" — Konzept (FINAL)
+# KI-Mastermind „In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln" — Konzept (FINAL)
 
 **Datum:** **Mittwoch 20.5.2026, 09:00-10:30 Uhr**
 **Format:** **Launch-Webinar** mit Cart-Open + Earlybird-Pitch im selben Slot (Julia-Trost-Pattern)
@@ -22,9 +22,12 @@
 
 ---
 
-## Titel
+## Titel (FINAL — Patricias Wahl)
 
-> **„Dein erster KI-Mitarbeiter in 90 Min — wie Mompreneurs sich Adminkram + Haushalt-Mental-Load abnehmen lassen"**
+> **Hauptzeile:** „In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln"
+> **Untertitel:** „Mental Load abgeben · Zeit fürs Business zurück gewinnen"
+>
+> **Interner Code-Name:** KI-Mastermind
 
 ---
 
