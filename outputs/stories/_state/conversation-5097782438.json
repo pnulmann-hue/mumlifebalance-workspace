@@ -1,8 +1,8 @@
 {
   "chat_id": "5097782438",
-  "step": "fotos",
+  "step": "bestaetigung",
   "started_at": "2026-05-02T12:55:52.146Z",
-  "last_active_at": "2026-05-02T13:22:47.843Z",
+  "last_active_at": "2026-05-02T13:22:53.771Z",
   "last_bot_message_id": 189,
   "profil": "mentoring",
   "produkt_quelle": "override",
@@ -13,5 +13,6 @@
       "file_id": "AgACAgQAAxkBAAPCafX6puOurA88nEzCZP34baPDfHcAAicNaxtJlbFTD8CPtQ_Y6NABAAMCAAN3AAM7BA",
       "file_path": "photos/file_4.jpg"
     }
-  ]
+  ],
+  "foto_quelle": "patricia"
 }
