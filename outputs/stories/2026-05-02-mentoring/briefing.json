@@ -1,0 +1,109 @@
+{
+  "profil": "mentoring",
+  "modus": "sales-day",
+  "disg": "Grün",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Werner / Petra",
+  "story_saeule": "Persönlichkeit",
+  "aktives_produkt": "Instagram-Strategie für NM",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "kontext_snapshot": {
+    "kw": 18,
+    "wochentag": "Samstag",
+    "datum": "2026-05-02"
+  },
+  "gesendet_am": "2026-05-02T10:49:08.223Z",
+  "telegram_message_id": 95,
+  "patricia_antworten": [
+    {
+      "message_id": 117,
+      "text": "story",
+      "timestamp": "2026-05-02T11:57:28.053Z"
+    }
+  ],
+  "patricia_fotos": [],
+  "status": "rendered",
+  "slides": [
+    {
+      "nr": 1,
+      "template": "template-hook",
+      "hook_text": "Ich hab heute kein Instagram geöffnet.",
+      "akzent_wort": "kein",
+      "markt_bezug": "Grün-Käuferin (Werner/Petra) fühlt sich vom ständigen Posting-Druck erschöpft — will hören dass es okay ist, Pausen zu machen",
+      "sticker": "keiner",
+      "foto_typ": "Shootingbild",
+      "foto_beschreibung": "Patricia entspannt, nicht am Handy, draussen oder auf Sofa"
+    },
+    {
+      "nr": 2,
+      "template": "template-story",
+      "haupttext": "Samstag. Die Kinder schlafen noch. Kaffee ist fertig.",
+      "sub_text": "Und ich hab mein Handy in der Schublade gelassen.",
+      "markt_bezug": "Mama-Realität ohne Filter — zeigt dass Business-Frau auch Mensch ist. Grün-Käuferin braucht diese Erlaubnis.",
+      "sticker": "keiner",
+      "foto_typ": "Shootingbild",
+      "foto_beschreibung": "Patricia mit Kaffeetasse, morgens, ruhig"
+    },
+    {
+      "nr": 3,
+      "template": "template-story",
+      "haupttext": "Nicht weil ich keine Lust hab. Sondern weil ich weiss:",
+      "sub_text": "Mein Business läuft auch wenn ich nicht 24/7 online bin.",
+      "markt_bezug": "Glaubenssatz-Auflösung: 'Ich muss jeden Tag posten sonst verliere ich Reichweite' → Systemdenken schlägt Hamsterrad",
+      "sticker": "Umfrage: 'Postest du auch am Wochenende?' JA/NEIN",
+      "foto_typ": "Stock",
+      "foto_beschreibung": "ruhige Atmosphäre, Morgen, Tasse"
+    },
+    {
+      "nr": 4,
+      "template": "template-story",
+      "haupttext": "Das ist der Unterschied zwischen Hamsterrad und System.",
+      "sub_text": "Im Hamsterrad bist du der Motor. Im System läuft es ohne dich weiter.",
+      "markt_bezug": "Patricia-Kern-Mantra 'Das macht den Unterschied' — Werner-Käuferin will verstehen WIE es funktioniert, nicht nur dass es geht",
+      "sticker": "keiner",
+      "foto_typ": "kein"
+    },
+    {
+      "nr": 5,
+      "template": "template-story",
+      "haupttext": "Meine Freebies laufen über ManyChat. Meine Mails gehen automatisch raus. Meine Pinned Posts arbeiten für mich.",
+      "sub_text": "Auch wenn ich grad Pancakes mache.",
+      "markt_bezug": "Konkrete Tools genannt (ManyChat / Pinned Posts) — Petra-Käuferin will Gesicht hinter Marke PLUS echte Strategie. Pancakes = Mama-Nahbarkeit.",
+      "sticker": "keiner",
+      "foto_typ": "Shootingbild",
+      "foto_beschreibung": "Patricia in Küche oder mit Kindern, entspannt"
+    },
+    {
+      "nr": 6,
+      "template": "template-frage",
+      "haupttext": "Und du?",
+      "sub_text": "Läuft dein Business auch wenn du nicht online bist?",
+      "markt_bezug": "Direkte Spiegelung — Grün-Käuferin fühlt sich gesehen, keine Anklage sondern sanfte Einladung zur Selbstreflexion",
+      "sticker": "Umfrage-Schieber: 'Gar nicht (0) → Komplett automatisiert (10)'",
+      "foto_typ": "kein"
+    },
+    {
+      "nr": 7,
+      "template": "template-story",
+      "haupttext": "Falls nicht: Das ist genau das was wir in der Instagram-Kundenmaschine bauen.",
+      "sub_text": "Ein System das läuft. Auch wenn du grad lebst.",
+      "markt_bezug": "Bridge zum Angebot — Werner will wissen WAS drin ist, Petra will fühlen dass es zu ihrem Leben passt. 'Auch wenn du grad lebst' = Erlaubnis nicht perfekt zu sein.",
+      "sticker": "keiner",
+      "foto_typ": "kein"
+    },
+    {
+      "nr": 8,
+      "template": "template-cta",
+      "haupttext": "Instagram-Kundenmaschine",
+      "sub_text": "Das System hinter meinen freien Samstagen. Link in Bio oder tipp KUNDENMASCHINE.",
+      "countdown_text": "Nächster Start in 12 Tagen",
+      "markt_bezug": "CTA mit Knappheit (Start-Datum) + doppelter Zugang (Bio + Keyword). Grün-Käuferin braucht sanften Druck, keinen harten Sales-Pitch.",
+      "sticker": "Countdown-Sticker (Ziel-Datum: +12 Tage)",
+      "foto_typ": "Shootingbild",
+      "foto_beschreibung": "Patricia selbstbewusst, entspannt, Business-Frau-Vibe",
+      "manychat_keyword": "KUNDENMASCHINE",
+      "link_ziel": "https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/"
+    }
+  ],
+  "png_urls": []
+}
