@@ -1,24 +1,24 @@
 {
-  "profil": "mentoring",
+  "profil": "doterra",
   "modus": "tagesplan",
-  "disg": "Gelb",
-  "disg_sekundaer": "Grün",
-  "nadja_persona": "Isabell",
-  "story_saeule": "Inspiration",
-  "aktives_produkt": "Bio-Check",
+  "disg": "Grün",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Werner / Petra",
+  "story_saeule": "Persönlichkeit",
+  "aktives_produkt": "doTERRA Lifestyle",
   "wochen_fokus": "(kein Fokus eingetragen)",
   "kontext_snapshot": {
     "kw": 18,
-    "wochentag": "Freitag",
-    "datum": "2026-05-01"
+    "wochentag": "Samstag",
+    "datum": "2026-05-02"
   },
   "fragen": [
     "Was hast du erlebt?",
     "Hast du grad einen Gedanken zum Thema?",
     "Oder Standard-Pool?"
   ],
-  "gesendet_am": "2026-05-01T20:09:57.517Z",
-  "telegram_message_id": 73,
+  "gesendet_am": "2026-05-02T07:35:23.779Z",
+  "telegram_message_id": 75,
   "patricia_antworten": [],
   "patricia_fotos": [],
   "patricia_videos": [],
