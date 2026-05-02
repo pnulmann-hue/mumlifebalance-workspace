@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KI-Mastermind: Dein Mama-Leben mit KI-Assistenten umkrempeln · Mi 20.5. LIVE · Mum Life Balance</title>
+  <meta name="description" content="Kostenloser Live-Mastermind am Mi 20. Mai 09:00 Uhr. 90 Min: Wie KI-Assistenten dir Mental Load abnehmen und dir Zeit fürs Business zurück geben. Mit Live-Demo.">
+  <meta property="og:title" content="In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln">
+  <meta property="og:description" content="Mental Load abgeben · Zeit fürs Business zurück gewinnen. Mi 20. Mai 09:00 LIVE — kostenlos.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* === RESET === */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    /* === BRAND === */
+    :root {
+      --creme: #f1ecdd;
+      --creme-soft: #e8dfc7;
+      --creme-deep: #d8cdb1;
+      --ink: #2c2c2c;
+      --ink-soft: #4a4a4a;
+      --terracotta: #9a4a2e;
+      --terracotta-hover: #7d3a23;
+      --warm-accent: #c66b4a;
+      --line: #c8b8a0;
+      --gold: #b89456;
+    }
+
+    body {
+      font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--creme);
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Philosopher', Georgia, serif;
+      color: var(--ink);
+      line-height: 1.15;
+      font-weight: 700;
+    }
+
+    h1 { font-size: clamp(2.2rem, 5vw, 4rem); }
+    h2 { font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: 1.5rem; }
+    h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); margin-bottom: 1rem; }
+
+    p { margin-bottom: 1rem; }
+    em { font-style: italic; color: var(--terracotta); }
+    strong { font-weight: 600; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .container-narrow {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    section + section { border-top: 1px solid var(--line); }
+
+    /* === BUTTONS === */
+    .btn-primary {
+      display: inline-block;
+      background: var(--terracotta);
+      color: white !important;
+      padding: 1.1rem 2.2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 0.02em;
+      transition: all 0.2s ease;
+      border: 2px solid var(--terracotta);
+      cursor: pointer;
+      font-family: 'Source Sans 3', sans-serif;
+    }
+    .btn-primary:hover {
+      background: var(--terracotta-hover);
+      border-color: var(--terracotta-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(154, 74, 46, 0.25);
+    }
+
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: var(--terracotta) !important;
+      padding: 1rem 2rem;
+      border: 2px solid var(--terracotta);
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .btn-secondary:hover {
+      background: var(--terracotta);
+      color: white !important;
+    }
+
+    /* === HERO === */
+    .hero {
+      padding: 4rem 0 6rem;
+      background: linear-gradient(180deg, var(--creme) 0%, var(--creme-soft) 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--ink);
+      color: var(--creme);
+      padding: 0.5rem 1.2rem;
+      border-radius: 100px;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-eyebrow .pulse {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #ff5252;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .hero h1 {
+      margin-bottom: 1rem;
+    }
+
+    .hero h2 {
+      font-family: 'Philosopher', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+      color: var(--ink-soft);
+      margin-bottom: 2rem;
+    }
+
+    .hero-body {
+      font-size: 1.15rem;
+      margin-bottom: 2rem;
+      color: var(--ink-soft);
+    }
+
+    .hero-meta-card {
+      background: var(--creme);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 24px rgba(44, 44, 44, 0.06);
+    }
+
+    .hero-meta-card ul {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-meta-card li {
+      padding: 0.4rem 0;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .hero-meta-card li::before {
+      content: "✓";
+      color: var(--terracotta);
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .hero-photo {
+      width: 100%;
+      aspect-ratio: 4/5;
+      background: var(--creme-deep);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ink-soft);
+      font-style: italic;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 8px 32px rgba(44, 44, 44, 0.12);
+    }
+
+    /* === PAINPOINT === */
+    .painpoint {
+      background: var(--creme);
+    }
+
+    .painpoint-list {
+      list-style: none;
+      max-width: 720px;
+      margin: 2rem auto;
+    }
+
+    .painpoint-list li {
+      padding: 1.2rem 0;
+      padding-left: 3rem;
+      position: relative;
+      font-size: 1.15rem;
+      border-bottom: 1px solid var(--creme-deep);
+    }
+
+    .painpoint-list li::before {
+      content: "☐";
+      position: absolute;
+      left: 0;
+      top: 1rem;
+      font-size: 1.6rem;
+      color: var(--terracotta);
+    }
+
+    .painpoint-list li:last-child { border-bottom: none; }
+
+    .resonance {
+      max-width: 680px;
+      margin: 3rem auto 0;
+      padding: 2rem 2.5rem;
+      background: var(--creme-soft);
+      border-left: 4px solid var(--terracotta);
+      border-radius: 4px;
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .resonance strong { color: var(--terracotta); }
+
+    /* === VISION === */
+    .vision {
+      background: var(--creme-soft);
+      text-align: center;
+    }
+
+    .vision-body {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      text-align: left;
+    }
+
+    .vision-body ul {
+      margin: 1.5rem 0;
+      padding-left: 1.5rem;
+    }
+
+    .vision-body li {
+      padding: 0.4rem 0;
+    }
+
+    .vision-punch {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: var(--creme);
+      border-radius: 4px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    /* === WAS DU LERNST === */
+    .lernen {
+      background: var(--creme);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .card {
+      background: var(--creme-soft);
+      padding: 2.5rem 2rem;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(44, 44, 44, 0.08);
+    }
+
+    .card-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      color: var(--ink-soft);
+      font-size: 1rem;
+    }
+
+    /* === BONUS BOX === */
+    .bonus-box {
+      max-width: 800px;
+      margin: 4rem auto 0;
+      background: linear-gradient(135deg, var(--ink) 0%, #3a3a3a 100%);
+      color: var(--creme);
+      padding: 3rem 2.5rem;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bonus-box::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
+      opacity: 0.3;
+    }
+
+    .bonus-label {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--ink);
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .bonus-box h3 {
+      color: var(--creme);
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .bonus-box p, .bonus-box li {
+      color: var(--creme-soft);
+      position: relative;
+      z-index: 1;
+    }
+
+    .bonus-box ul {
+      margin: 1rem 0;
+      padding-left: 1.2rem;
+    }
+
+    .bonus-box li {
+      padding: 0.3rem 0;
+    }
+
+    .bonus-value {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    /* === AGENDA === */
+    .agenda {
+      background: var(--creme-soft);
+    }
+
+    .timeline {
+      max-width: 760px;
+      margin: 3rem auto 0;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 8.5rem;
+      top: 1rem;
+      bottom: 1rem;
+      width: 2px;
+      background: var(--line);
+    }
+
+    .timeline-row {
+      display: grid;
+      grid-template-columns: 7rem 1fr;
+      gap: 2.5rem;
+      padding: 1.2rem 0;
+      align-items: start;
+    }
+
+    .timeline-time {
+      font-family: 'Philosopher', serif;
+      font-weight: 700;
+      color: var(--terracotta);
+      font-size: 1.1rem;
+      position: relative;
+    }
+
+    .timeline-time::after {
+      content: "";
+      position: absolute;
+      right: -1.95rem;
+      top: 0.5rem;
+      width: 12px;
+      height: 12px;
+      background: var(--terracotta);
+      border-radius: 50%;
+      border: 3px solid var(--creme-soft);
+    }
+
+    .timeline-content h4 {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: var(--ink);
+    }
+
+    .timeline-content p {
+      color: var(--ink-soft);
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    .timeline-row.highlight .timeline-time {
+      color: var(--terracotta);
+      font-size: 1.2rem;
+    }
+
+    .timeline-row.highlight .timeline-content h4 {
+      color: var(--terracotta);
+    }
+
+    /* === ÜBER PATRICIA === */
+    .about {
+      background: var(--creme);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-photo {
+      aspect-ratio: 1;
+      background: var(--creme-deep);
+      border-radius: 50%;
+      max-width: 360px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ink-soft);
+      font-style: italic;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 8px 32px rgba(44, 44, 44, 0.1);
+    }
+
+    .about-body {
+      font-size: 1.1rem;
+    }
+
+    .about-body p {
+      margin-bottom: 1.2rem;
+    }
+
+    /* === ANMELDUNG === */
+    .anmeldung {
+      background: linear-gradient(180deg, var(--creme-soft) 0%, var(--creme-deep) 100%);
+      text-align: center;
+    }
+
+    .anmeldung h2 {
+      margin-bottom: 1rem;
+    }
+
+    .anmeldung-card {
+      max-width: 620px;
+      margin: 3rem auto 0;
+      background: var(--creme);
+      padding: 3rem 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(44, 44, 44, 0.1);
+      border: 1px solid var(--line);
+    }
+
+    .anmeldung-meta {
+      list-style: none;
+      margin-bottom: 2rem;
+      text-align: left;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .anmeldung-meta li {
+      padding: 0.5rem 0;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .anmeldung-meta li .icon {
+      font-size: 1.3rem;
+    }
+
+    /* === AC FORM EMBED PLACEHOLDER === */
+    .ac-form-slot {
+      margin-top: 2rem;
+      padding: 1rem;
+      border: 2px dashed var(--terracotta);
+      border-radius: 4px;
+      background: rgba(154, 74, 46, 0.05);
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      text-align: left;
+    }
+
+    .ac-form-slot code {
+      display: block;
+      background: var(--ink);
+      color: var(--creme);
+      padding: 0.8rem;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      font-family: 'Source Sans 3', monospace;
+      overflow-x: auto;
+    }
+
+    /* AC-Form-Style-Override (wenn AC-Embed eingefügt) */
+    ._form_47, ._form_47 input, ._form_47 textarea {
+      font-family: 'Source Sans 3', sans-serif !important;
+      font-size: 1rem !important;
+    }
+    ._form_47 input[type="text"], ._form_47 input[type="email"] {
+      background: var(--creme) !important;
+      border: 1px solid var(--line) !important;
+      border-radius: 4px !important;
+      padding: 0.9rem 1rem !important;
+      width: 100% !important;
+      margin-bottom: 0.8rem !important;
+    }
+    ._form_47 button[type="submit"], ._form_47 ._submit {
+      background: var(--terracotta) !important;
+      color: white !important;
+      padding: 1.1rem 2.2rem !important;
+      border-radius: 4px !important;
+      font-weight: 600 !important;
+      font-size: 1.1rem !important;
+      border: none !important;
+      cursor: pointer !important;
+      width: 100% !important;
+    }
+    ._form_47 button[type="submit"]:hover, ._form_47 ._submit:hover {
+      background: var(--terracotta-hover) !important;
+    }
+
+    /* === FAQ === */
+    .faq {
+      background: var(--creme);
+    }
+
+    .faq-list {
+      max-width: 760px;
+      margin: 3rem auto 0;
+    }
+
+    details {
+      background: var(--creme-soft);
+      border-radius: 4px;
+      margin-bottom: 0.8rem;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+
+    summary {
+      padding: 1.3rem 1.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.1rem;
+      list-style: none;
+      position: relative;
+      padding-right: 3rem;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: "+";
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: var(--terracotta);
+      transition: transform 0.2s ease;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details > p, details > div {
+      padding: 0 1.5rem 1.3rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+
+    /* === FOOTER === */
+    footer {
+      background: var(--ink);
+      color: var(--creme-soft);
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--creme-soft);
+      text-decoration: none;
+      margin: 0 0.6rem;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    /* === MOBILE === */
+    @media (max-width: 768px) {
+      section { padding: 3.5rem 0; }
+
+      .hero { padding: 2rem 0 4rem; }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .hero-photo { max-width: 280px; margin: 0 auto; aspect-ratio: 1; }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .timeline::before { left: 6rem; }
+      .timeline-row { grid-template-columns: 5rem 1fr; gap: 1.5rem; }
+      .timeline-time::after { right: -1.45rem; }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .about-photo { max-width: 240px; }
+
+      .bonus-box { padding: 2rem 1.5rem; }
+
+      .anmeldung-card { padding: 2rem 1.5rem; }
+
+      .resonance { padding: 1.5rem; font-size: 1.05rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="hero-eyebrow"><span class="pulse"></span>LIVE KOSTENLOS · Mi 20. Mai 2026 · 09:00 Uhr · 90 Min</span>
+          <h1>In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln.</h1>
+          <h2>Mental Load abgeben · Zeit fürs Business zurück gewinnen.</h2>
+          <p class="hero-body">
+            Du sagst dir täglich „Ich sollte unbedingt…" — und kommst trotzdem nie dazu? Du machst alles selbst, weil delegieren zu kompliziert ist? Du brennst aus, weil dein Mental Load Business + Haushalt + Kinder gleichzeitig hält?
+          </p>
+          <p class="hero-body">
+            <strong>In diesem Live-Mastermind zeige ich dir, wie KI dich genau da entlastet — am Ende der 90 Min bist du raus aus der Schuld-Spirale.</strong>
+          </p>
+          <a href="#anmeldung" class="btn-primary">Jetzt kostenlos anmelden →</a>
+        </div>
+
+        <div class="hero-meta-card">
+          <div class="hero-photo">
+            [Patricia-Foto Hero<br>(z.B. mit Laptop + Kaffee, lächelnd)<br><small>aus context/Shootingbilder/</small>]
+          </div>
+          <ul style="margin-top: 1.5rem;">
+            <li>Mittwoch 20. Mai 2026, 09:00</li>
+            <li>90 Min LIVE inkl. Q&amp;A</li>
+            <li>Aufzeichnung 48h verfügbar</li>
+            <li>100% kostenlos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PAINPOINT ============== -->
+  <section class="painpoint">
+    <div class="container-narrow">
+      <h2 style="text-align: center;">Kommt dir das bekannt vor?</h2>
+      <ul class="painpoint-list">
+        <li>Du startest deinen Tag mit dem Vorsatz „Heute mach ich endlich Content" — und am Abend ist nichts gepostet.</li>
+        <li>Du hast 47 Apps, Tools und Listen — und trotzdem fühlst du dich, als würdest du alles im Kopf tragen.</li>
+        <li>Du planst Wochen mit Kids, Haushalt, Kunden, Team-Calls, Schul-Terminen — und frägst dich: <em>Warum mache ich eigentlich alles allein?</em></li>
+        <li>Du weisst, du müsstest delegieren — aber kannst niemanden für 4'000 CHF/Monat einstellen.</li>
+        <li>Und du hast schon 3 Kurse gekauft, die dir „Productivity" versprochen haben. Geliefert haben sie dir mehr Druck.</li>
+      </ul>
+      <div class="resonance">
+        Das ist nicht dein Versagen.<br>
+        <strong>Das ist die Schuld-Spirale</strong>, in der jede Mompreneurin steckt — und die endet nicht mit einem weiteren To-Do-Tracker.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== VISION ============== -->
+  <section class="vision">
+    <div class="container-narrow">
+      <h2>Stell dir vor, am Sonntag-Abend…</h2>
+      <div class="vision-body">
+        <p>Du schreibst deinem Familien-Bot: <em>„Plan mir die Woche mit Schul-Terminen, Power-Zeiten und 2 Kunden-Calls."</em></p>
+        <p>30 Sekunden später hast du:</p>
+        <ul>
+          <li>einen vollständigen Wochenplan,</li>
+          <li>die passende Einkaufsliste,</li>
+          <li>3 Caption-Vorschläge für deine Reels,</li>
+          <li>eine Pitch-Mail an die Kundin, die du seit 2 Wochen aufschiebst.</li>
+        </ul>
+        <p>Das alles ohne 1× Ctrl+C, ohne 1× „warte, was war nochmal die Schul-Adresse?", ohne 1× das schlechte Gewissen, dass du eigentlich noch 12 andere Dinge machen müsstest.</p>
+        <div class="vision-punch">
+          <strong>Genau das zeige ich dir Live am Mittwoch — Schritt für Schritt.</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== WAS DU LERNST ============== -->
+  <section class="lernen">
+    <div class="container">
+      <div style="text-align: center;">
+        <h2>Was du in diesen 90 Minuten mitnimmst</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--ink-soft); font-size: 1.1rem;">3 konkrete Erkenntnisse, die du sofort umsetzen kannst — kein Tutorial-Style, sondern echte Live-Demo am Bildschirm.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <span class="card-icon">🧠</span>
+          <h3>Die Schuld-Spirale durchschauen</h3>
+          <p>Warum „Ich sollte unbedingt" kein Charakterfehler ist — und wie du den Kreislauf in 1 Schritt unterbrichst (mit Daten-Anker aus 2026).</p>
+        </div>
+
+        <div class="card">
+          <span class="card-icon">🤖</span>
+          <h3>Dein erster KI-Mitarbeiter LIVE gebaut</h3>
+          <p>Ich zeige dir 30 Min Bildschirm-Aufnahme: Custom GPT für Familien-Mental-Load · Brand-Voice-Bot für Reels-Hooks · Wie ich beide täglich nutze.</p>
+        </div>
+
+        <div class="card">
+          <span class="card-icon">⚡</span>
+          <h3>Wochenrhythmus, der nicht zerbricht</h3>
+          <p>Mein Energie-Wochenplan + die 4 Mama-Rollen — und warum 2 Power-Zeiten täglich reichen, wenn du sie ehrlich findest.</p>
+        </div>
+      </div>
+
+      <!-- BONUS BOX -->
+      <div class="bonus-box">
+        <span class="bonus-label">🎁 NUR LIVE-TEILNEHMER</span>
+        <h3>Setup-Anleitung Familien-Bot — kostenlos zum Download</h3>
+        <ul>
+          <li>Custom-GPT-Vorlage (copy-paste-ready)</li>
+          <li>12 Prompt-Beispiele für Wochenplanung, Mental-Load, Schule</li>
+          <li>5 fertige Wochenplan-Templates</li>
+        </ul>
+        <span class="bonus-value">Wert: CHF 49 · für dich kostenlos, wenn du LIVE dabei bist</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== AGENDA ============== -->
+  <section class="agenda">
+    <div class="container">
+      <div style="text-align: center;">
+        <h2>Der Ablauf am Mi 20. Mai · 09:00–10:30</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-row">
+          <div class="timeline-time">09:00</div>
+          <div class="timeline-content">
+            <h4>Story (10 Min)</h4>
+            <p>Wie ich aus dem Hamsterrad rausgekommen bin — der Moment, der alles verändert hat.</p>
+          </div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-time">09:10</div>
+          <div class="timeline-content">
+            <h4>Schuld-Spirale entlarvt (15 Min)</h4>
+            <p>Warum 58% der Solo-Unternehmer:innen mit KI 20+ Stunden im Monat sparen — mit Daten und Killer-Differenzierung.</p>
+          </div>
+        </div>
+
+        <div class="timeline-row highlight">
+          <div class="timeline-time">09:25</div>
+          <div class="timeline-content">
+            <h4>⭐ Live-Demo: Familien-Bot + Brand-Voice-Bot (30 Min)</h4>
+            <p>Das Herzstück. Direkt am Bildschirm: was rein geht, was raus kommt, wie du es selbst nachbaust.</p>
+          </div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-time">09:55</div>
+          <div class="timeline-content">
+            <h4>Wie es weitergeht (15 Min)</h4>
+            <p>Mama-CEO als Möglichkeit — für die, die mehr wollen als 90 Min.</p>
+          </div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-time">10:10</div>
+          <div class="timeline-content">
+            <h4>Q&amp;A (20 Min)</h4>
+            <p>Du fragst, ich antworte. Bring eine Frage mit — auch eine kleine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ÜBER PATRICIA ============== -->
+  <section class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo">
+          [Patricia-Foto About<br>(persönlich, z.B. mit Kindern oder allein)<br><small>aus context/Shootingbilder/</small>]
+        </div>
+        <div class="about-body">
+          <h2>Wer das hier hält</h2>
+          <p>Ich bin Patricia. Mompreneurin, Network-Coach, Mama von 2.</p>
+          <p>Und ich war lange Zeit unglücklich. Gefangen im Hamsterrad. Mein Leben auf Standby.</p>
+          <p>Bis meine Schwester mit 44 an Krebs verstarb — und mir die Augen geöffnet hat, dass ich nicht länger warten will. <em>Eine Mutter darf ein eigenes Leben leben.</em> Und sie darf sich Mitarbeiter holen — auch wenn diese Mitarbeiter heute keine Menschen sind, sondern KI.</p>
+          <p>Heute baue ich seit 2 Jahren digitale Mitarbeiter, die mir genau die Arbeit abnehmen, die wir als Networkerin gar nicht haben wollen — den Adminkram. <strong>Und auch in Haushaltsdingen — Mental Load lass grüssen.</strong></p>
+          <p>Genau das gebe ich dir am Mittwoch weiter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ANMELDUNG ============== -->
+  <section class="anmeldung" id="anmeldung">
+    <div class="container-narrow">
+      <h2>Sichere dir deinen Platz — kostenlos.</h2>
+      <p style="font-size: 1.15rem; color: var(--ink-soft);">Ein Mastermind. 90 Min. Eine andere Sicht aufs Mama-Sein.</p>
+
+      <div class="anmeldung-card">
+        <ul class="anmeldung-meta">
+          <li><span class="icon">📅</span> <strong>Mi 20. Mai 2026, 09:00 Uhr</strong></li>
+          <li><span class="icon">⏱️</span> 90 Min Live + Q&amp;A</li>
+          <li><span class="icon">💻</span> Zoom (Link kommt per E-Mail)</li>
+          <li><span class="icon">🎁</span> Setup-Anleitung Familien-Bot Live-Geschenk</li>
+          <li><span class="icon">💸</span> Kosten: 0 CHF</li>
+        </ul>
+
+        <!-- ============================================ -->
+        <!-- HIER: ActiveCampaign-Embed-Code einfügen     -->
+        <!-- ============================================ -->
+        <div class="ac-form-slot">
+          <strong>📌 AC-Formular hier einfügen</strong><br>
+          <p style="margin: 0.5rem 0;">In ActiveCampaign:</p>
+          <ol style="padding-left: 1.5rem; margin: 0;">
+            <li>Neues Inline-Formular erstellen</li>
+            <li>Felder: Vorname (Pflicht) · E-Mail (Pflicht) · optional „Dein grösster Mental-Load-Punkt?" (Textfeld)</li>
+            <li>Action: Tag <code style="display:inline; padding: 2px 6px;">mama-ceo-mastermind-anmeldung</code> hinzufügen</li>
+            <li>Embed-Code kopieren (HTML, NICHT JavaScript)</li>
+            <li>Hier reinpasten — ersetze diesen ganzen <code style="display:inline; padding: 2px 6px;">&lt;div class="ac-form-slot"&gt;</code>-Block</li>
+          </ol>
+          <p style="margin-top: 0.5rem; font-size: 0.85rem;">CSS-Override für Brand-Style ist oben schon vorbereitet (sucht <code style="display:inline; padding: 2px 6px;">._form_47</code> — passe die Form-ID an wenn nötig).</p>
+        </div>
+
+        <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--ink-soft);">
+          Oder schreib mir <strong>„MASTERMIND"</strong> auf <a href="https://instagram.com/mumlifebalance" style="color: var(--terracotta);">@mumlifebalance</a> — du kriegst die Anmelde-Bestätigung direkt per DM.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FAQ ============== -->
+  <section class="faq">
+    <div class="container-narrow">
+      <h2 style="text-align: center;">Häufige Fragen</h2>
+
+      <div class="faq-list">
+        <details>
+          <summary>Ich kann am Mi 09:00 nicht live dabei sein — lohnt es sich trotzdem?</summary>
+          <p>Ja — die Aufzeichnung ist 48h verfügbar. Du verpasst nur das Live-Geschenk (Familien-Bot-Setup-Anleitung). Alle Demos siehst du in voller Länge.</p>
+        </details>
+
+        <details>
+          <summary>Bin ich technisch fit genug? Ich bin nicht so KI-affin.</summary>
+          <p>Genau dafür ist das Mastermind. Ich zeige dir live, wie ich vom „Ich kann das nicht" zur täglichen KI-Nutzung gekommen bin. Wenn du Instagram bedienen kannst, kannst du auch das.</p>
+        </details>
+
+        <details>
+          <summary>Werde ich am Ende ein Produkt verkauft bekommen?</summary>
+          <p>Ja — am Ende stelle ich dir Mama-CEO vor (mein 8-Wochen-Programm), du entscheidest komplett selbst, ob das für dich passt. Die ersten 70 Min sind 100% Mehrwert ohne Pitch.</p>
+        </details>
+
+        <details>
+          <summary>Wie kann ich Patricia eine Frage stellen?</summary>
+          <p>Im Live-Q&amp;A (20 Min am Ende) oder direkt per Instagram-DM. Beantworte ich persönlich.</p>
+        </details>
+
+        <details>
+          <summary>09:00 Uhr — gilt das auch in Deutschland und Österreich?</summary>
+          <p>Ja, 09:00 Uhr Schweizer Zeit = 09:00 Uhr deutsche und österreichische Zeit (alle CEST/MESZ).</p>
+        </details>
+
+        <details>
+          <summary>Brauche ich Zoom?</summary>
+          <p>Du brauchst nur einen Link, den du per E-Mail bekommst. Du kannst die Zoom-App nutzen oder direkt im Browser teilnehmen — beides funktioniert.</p>
+        </details>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="#anmeldung" class="btn-primary">Jetzt anmelden →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer>
+    <div class="container">
+      <p>KI-Mastermind „Dein Mama-Leben mit KI-Assistenten umkrempeln" · Mum Life Balance · Patricia Nüllmann · Schweiz</p>
+      <p style="margin-top: 0.6rem;">
+        <a href="https://mumlifebalance.ch/impressum">Impressum</a> ·
+        <a href="https://mumlifebalance.ch/datenschutz">Datenschutz</a> ·
+        <a href="https://instagram.com/mumlifebalance">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
