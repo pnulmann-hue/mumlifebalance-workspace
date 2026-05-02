@@ -1,45 +1,4 @@
 {
   "datum": "2026-05-02",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "sales-day",
-      "disg": "Grün",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Werner / Petra",
-      "story_saeule": "Persönlichkeit",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "kontext_snapshot": {
-        "kw": 18,
-        "wochentag": "Samstag",
-        "datum": "2026-05-02"
-      },
-      "gesendet_am": "2026-05-02T10:49:08.223Z",
-      "telegram_message_id": 95,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Grün",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Werner / Petra",
-      "story_saeule": "Persönlichkeit",
-      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "kontext_snapshot": {
-        "kw": 18,
-        "wochentag": "Samstag",
-        "datum": "2026-05-02"
-      },
-      "gesendet_am": "2026-05-02T10:49:08.276Z",
-      "telegram_message_id": 96,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profile": {}
 }
