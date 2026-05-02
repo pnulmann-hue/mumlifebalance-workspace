@@ -1,9 +1,10 @@
 {
   "chat_id": "5097782438",
-  "step": "wochenfokus",
+  "step": "erlebnis",
   "started_at": "2026-05-02T13:35:50.885Z",
-  "last_active_at": "2026-05-02T13:35:57.805Z",
+  "last_active_at": "2026-05-02T13:36:05.939Z",
   "last_bot_message_id": 213,
   "profil": "mentoring",
-  "produkt_quelle": "patricia"
+  "produkt_quelle": "override",
+  "produkt": "Bio-Check"
 }
