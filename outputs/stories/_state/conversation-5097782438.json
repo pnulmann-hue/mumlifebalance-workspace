@@ -1,8 +1,8 @@
 {
   "chat_id": "5097782438",
-  "step": "render",
+  "step": "done",
   "started_at": "2026-05-02T12:55:52.146Z",
-  "last_active_at": "2026-05-02T13:23:00.975Z",
+  "last_active_at": "2026-05-02T13:23:36.693Z",
   "last_bot_message_id": 189,
   "profil": "mentoring",
   "produkt_quelle": "override",
@@ -14,5 +14,65 @@
       "file_path": "photos/file_4.jpg"
     }
   ],
-  "foto_quelle": "patricia"
+  "foto_quelle": "patricia",
+  "slides": [
+    {
+      "nr": 1,
+      "template": "template-hook",
+      "hook_text": "Ich war gestern Shoppen.\nMein Business? Lief trotzdem.",
+      "akzent_wort": "trotzdem",
+      "markt_bezug": "Network-Mamas denken sie müssen 24/7 online sein sonst bricht alles zusammen"
+    },
+    {
+      "nr": 2,
+      "template": "template-story",
+      "haupttext": "Gestern war eigentlich mein Arbeitstag.\nMann zuhause = ich auch frei.",
+      "sub_text": "Spontan in die Stadt. Klamotten shoppen. Ihn beraten. Kaffee trinken.",
+      "markt_bezug": "Die Angst einen Tag Pause zu machen weil dann niemand kauft"
+    },
+    {
+      "nr": 3,
+      "template": "template-story",
+      "haupttext": "Heute auch noch nicht auf Insta aktiv.\nKeine Stories. Keine DMs beantwortet.",
+      "sub_text": "Familie. Haushalt. Einfach Leben.",
+      "markt_bezug": "Das schlechte Gewissen nicht zu posten obwohl man weiss man sollte"
+    },
+    {
+      "nr": 4,
+      "template": "template-story",
+      "haupttext": "Und trotzdem: Mein Business läuft.\nKeine Panik. Kein Stress.",
+      "sub_text": "Weil jeder der auf mein Profil kommt durch meine Reels — die sehen sofort wofür ich stehe.",
+      "markt_bezug": "Der Glaubenssatz dass nur Live-Präsenz verkauft"
+    },
+    {
+      "nr": 5,
+      "template": "template-zitat",
+      "zitat_text": "Dein Profil arbeitet für dich.\nAuch wenn du nicht da bist.",
+      "markt_bezug": "Das Gefühl gefangen zu sein im eigenen Business"
+    },
+    {
+      "nr": 6,
+      "template": "template-story",
+      "haupttext": "Das ist der Unterschied zwischen posten und aufbauen.",
+      "sub_text": "Die meisten NM-Mamas posten täglich — aber haben kein System das auch ohne sie funktioniert.",
+      "markt_bezug": "Hamsterrad vs Verkaufsmaschine"
+    },
+    {
+      "nr": 7,
+      "template": "template-story",
+      "haupttext": "Dein Profil muss dich verkaufen.\nAuch wenn du grad beim Shoppen bist.",
+      "sub_text": "Bio. Pinned Posts. Highlights. Das ist deine 24/7-Verkäuferin.",
+      "markt_bezug": "Die Verzweiflung immer erreichbar sein zu müssen"
+    },
+    {
+      "nr": 8,
+      "template": "template-cta",
+      "haupttext": "Hol dir den Bio-Check.\nKostenlos. 2 Minuten.",
+      "sub_text": "Ich zeig dir wo dein Profil Geld liegen lässt.\n\nSchreib mir BIO",
+      "cta_button": "BIO",
+      "knappheit": "Noch 48h — dann konzentriere ich mich auf Launch-Woche.",
+      "markt_bezug": "Die Sehnsucht nach einem System das auch ohne Dauerpräsenz funktioniert"
+    }
+  ],
+  "png_urls": []
 }
