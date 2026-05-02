@@ -2,11 +2,16 @@
   "chat_id": "5097782438",
   "step": "fotos",
   "started_at": "2026-05-02T13:35:50.885Z",
-  "last_active_at": "2026-05-02T13:38:48.096Z",
+  "last_active_at": "2026-05-02T13:39:06.916Z",
   "last_bot_message_id": 213,
   "profil": "mentoring",
   "produkt_quelle": "override",
   "produkt": "Bio-Check",
   "erlebnis": "Stamdard",
-  "fotos": []
+  "fotos": [
+    {
+      "file_id": "AgACAgQAAxkBAAPaafX-ehXyMFxCU08SfMOKopwk3v0AAjQNaxtJlbFTJejKe38tIVwBAAMCAAN5AAM7BA",
+      "file_path": "photos/file_5.jpg"
+    }
+  ]
 }
