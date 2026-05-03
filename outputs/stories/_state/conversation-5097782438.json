@@ -1,9 +1,10 @@
 {
   "chat_id": "5097782438",
-  "step": "wochenfokus",
+  "step": "erlebnis",
   "started_at": "2026-05-03T06:38:35.517Z",
-  "last_active_at": "2026-05-03T06:38:43.440Z",
+  "last_active_at": "2026-05-03T06:38:54.202Z",
   "last_bot_message_id": 268,
   "profil": "doterra",
-  "produkt_quelle": "patricia"
+  "produkt_quelle": "override",
+  "produkt": "Zurück zu deiner energie"
 }
