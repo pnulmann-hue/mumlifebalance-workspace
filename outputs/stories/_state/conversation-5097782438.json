@@ -1,7 +1,8 @@
 {
   "chat_id": "5097782438",
-  "step": "profil",
+  "step": "wochenfokus",
   "started_at": "2026-05-03T06:38:35.517Z",
-  "last_active_at": "2026-05-03T06:38:36.211Z",
-  "last_bot_message_id": 266
+  "last_active_at": "2026-05-03T06:38:42.017Z",
+  "last_bot_message_id": 266,
+  "profil": "doterra"
 }
