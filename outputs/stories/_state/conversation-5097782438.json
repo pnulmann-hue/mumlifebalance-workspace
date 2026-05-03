@@ -1,46 +1,6 @@
 {
   "chat_id": "5097782438",
-  "step": "render",
-  "started_at": "2026-05-02T13:35:50.885Z",
-  "last_active_at": "2026-05-02T13:39:27.304Z",
-  "last_bot_message_id": 213,
-  "profil": "mentoring",
-  "produkt_quelle": "override",
-  "produkt": "Bio-Check",
-  "erlebnis": "Stamdard",
-  "fotos": [
-    {
-      "file_id": "AgACAgQAAxkBAAPaafX-ehXyMFxCU08SfMOKopwk3v0AAjQNaxtJlbFTJejKe38tIVwBAAMCAAN5AAM7BA",
-      "file_path": "photos/file_5.jpg"
-    },
-    {
-      "file_id": "",
-      "stock_url": "https://images.pexels.com/photos/5040791/pexels-photo-5040791.jpeg?auto=compress&cs=tinysrgb&h=1920"
-    },
-    {
-      "file_id": "",
-      "stock_url": "https://images.pexels.com/photos/8534460/pexels-photo-8534460.jpeg?auto=compress&cs=tinysrgb&h=1920"
-    },
-    {
-      "file_id": "",
-      "stock_url": "https://images.pexels.com/photos/3987013/pexels-photo-3987013.jpeg?auto=compress&cs=tinysrgb&h=1920"
-    },
-    {
-      "file_id": "",
-      "stock_url": "https://images.pexels.com/photos/6779343/pexels-photo-6779343.jpeg?auto=compress&cs=tinysrgb&h=1920"
-    },
-    {
-      "file_id": "",
-      "stock_url": "https://images.pexels.com/photos/30082138/pexels-photo-30082138.jpeg?auto=compress&cs=tinysrgb&h=1920"
-    },
-    {
-      "file_id": "",
-      "stock_url": "https://images.pexels.com/photos/19253772/pexels-photo-19253772.jpeg?auto=compress&cs=tinysrgb&h=1920"
-    },
-    {
-      "file_id": "",
-      "stock_url": "https://images.pexels.com/photos/19253741/pexels-photo-19253741.jpeg?auto=compress&cs=tinysrgb&h=1920"
-    }
-  ],
-  "foto_quelle": "patricia"
+  "step": "profil",
+  "started_at": "2026-05-03T06:33:13.724Z",
+  "last_active_at": "2026-05-03T06:33:13.724Z"
 }
