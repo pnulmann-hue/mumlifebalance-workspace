@@ -137,9 +137,10 @@ Screenshot*.jpg
 # Ausnahmen: diese .png/.jpg-Files bleiben drin (wichtige Brand-Assets in scripts/)
 !scripts/bio-check-bot/public/images/patricia-hero.jpg
 
-# Ausnahmen: Mama-CEO Webinar-Landingpage (Hero + About Foto)
+# Ausnahmen: Mama-CEO Webinar-Landingpage (Hero + About Foto + Deploy-ZIP)
 !outputs/produkte/mama-ceo/08-funnel/landingpage-mastermind/hero.jpg
 !outputs/produkte/mama-ceo/08-funnel/landingpage-mastermind/patricia.jpg
+!outputs/produkte/mama-ceo/08-funnel/mama-ceo-webinar-fertig.zip
 
 # Ausnahmen: produktive Launch-Assets (designed Story-/Karussell-PNGs zum direkten Hochladen)
 !outputs/funnels/**/*.png
