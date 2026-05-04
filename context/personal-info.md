@@ -2,7 +2,11 @@
 
 ## Über Patricia
 
-Patricia, vierfache Mama, seit 2023 selbstständig. Betreibt zwei verzahnte Businesses unter dem Dach von **Mum Life Balance**.
+**Patricia Ulmann**, vierfache Mama, seit 2023 selbstständig. Betreibt zwei verzahnte Businesses unter dem Dach von **Mum Life Balance**.
+
+**Instagram-Profile:**
+- Mentoring/Onlinebusiness: `@mumlifebalance_patricia_ulmann` (https://www.instagram.com/mumlifebalance_patricia_ulmann/)
+- Network/doTERRA: (separates Profil)
 
 ## Rolle & Funktion
 
