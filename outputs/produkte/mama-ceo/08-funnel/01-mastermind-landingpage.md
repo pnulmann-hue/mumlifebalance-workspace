@@ -1,10 +1,10 @@
-# Mama-CEO KI-Mastermind — Landingpage-Briefing
+# Mama-CEO KI-Webinar — Landingpage-Briefing
 
 **Datum:** 2026-05-01
 **Webinar-Titel (FINAL):** „In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln"
 **Untertitel:** „Mental Load abgeben · Zeit fürs Business zurück gewinnen"
-**Ziel:** Landingpage live ab Mi 13.5. — mind. 100 Mastermind-Anmeldungen bis Mi 20.5. 09:00
-**Tech-Empfehlung:** **WordPress (mumlifebalance.ch/ki-mastermind)** — via `/wp` direkt deploybar, du hast Admin · Alternative: ThriveCart Free Page
+**Ziel:** Landingpage live ab Mi 13.5. — mind. 100 Webinar-Anmeldungen bis Mi 20.5. 09:00
+**Tech-Empfehlung:** **WordPress (mumlifebalance.ch/ki-webinar)** — via `/wp` direkt deploybar, du hast Admin · Alternative: ThriveCart Free Page
 **Anmeldung:** ManyChat-Keyword `MASTERMIND` als primärer CTA + AC-Formular als Fallback
 **Live geht die Page:** Mittwoch 13.5. 10:00 (siehe `07-launch-kalender.md`)
 
@@ -45,7 +45,7 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 **Hero-Body (3-4 Zeilen):**
 > Du sagst dir täglich „Ich sollte unbedingt…" — und kommst trotzdem nie dazu? Du machst alles selbst, weil delegieren zu kompliziert ist? Du brennst aus, weil bei dir alles parallel läuft — Business, Haushalt, Kinder?
 >
-> **In diesem Live-Mastermind zeige ich dir, wie KI dich genau da entlastet — am Ende der 90 Min bist du raus aus der „Hab keine Zeit fürs Business"-Spirale.**
+> **In diesem Live-Webinar zeige ich dir, wie KI dich genau da entlastet — am Ende der 90 Min bist du raus aus der „Hab keine Zeit fürs Business"-Spirale.**
 
 **CTA-Box (rechts oder unter Hero):**
 > ✅ Mittwoch 20. Mai 2026, 09:00 Uhr
@@ -101,7 +101,7 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 
 ---
 
-## SEKTION 4 — „WAS DU IM 90-MIN-MASTERMIND LERNST"
+## SEKTION 4 — „WAS DU IM 90-MIN-WEBINAR LERNST"
 
 **Headline:**
 > ## Was du in diesen 90 Minuten mitnimmst
@@ -139,7 +139,7 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 >
 > **09:42 — 09:55** **Demo 2: Brand-Voice-Bot fürs Business (13 Min)** — Was im Privaten geht, geht auch im Business. Reels-Hooks + Captions in deiner Stimme.
 >
-> **09:55 — 10:10** Wie es weitergeht — Im Mastermind 1 Skill, in Mama-CEO baust du dein gesamtes KI-Team (Content-Planung, Brand-Voice, Familien-Mental-Load, Email-Backoffice). Programm-Vorstellung, du entscheidest selbst. (15 Min)
+> **09:55 — 10:10** Wie es weitergeht — Im Webinar 1 Skill, in Mama-CEO baust du dein gesamtes KI-Team (Content-Planung, Brand-Voice, Familien-Mental-Load, Email-Backoffice). Programm-Vorstellung, du entscheidest selbst. (15 Min)
 >
 > **10:10 — 10:30** Q&A — du fragst, ich antworte (20 Min)
 
@@ -208,7 +208,7 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 - Frage „Was ist dein grösster Mental-Load-Punkt gerade?" (optional, freier Text — fliesst in Q&A-Vorbereitung)
 - Submit-Button: „Ja, ich will dabei sein"
 
-**Tag in AC nach Anmeldung:** `mama-ceo-mastermind-anmeldung`
+**Tag in AC nach Anmeldung:** `mama-ceo-webinar-anmeldung`
 
 ---
 
@@ -223,13 +223,13 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 > Ja — die Aufzeichnung ist 48h verfügbar. Du verpasst nur das Live-Geschenk (Familien-Bot-Setup-Anleitung). Alle Demos siehst du in voller Länge.
 
 > **„Bin ich technisch fit genug? Ich bin nicht so KI-affin."**
-> Genau dafür ist das Mastermind. Ich zeige dir live, wie ich vom „Ich kann das nicht" zur täglichen KI-Nutzung gekommen bin. Wenn du Instagram bedienen kannst, kannst du auch das.
+> Genau dafür ist das Webinar. Ich zeige dir live, wie ich vom „Ich kann das nicht" zur täglichen KI-Nutzung gekommen bin. Wenn du Instagram bedienen kannst, kannst du auch das.
 
 > **„Werde ich am Ende ein Produkt verkauft bekommen?"**
 > Ja — am Ende stelle ich dir Mama-CEO vor (mein 8-Wochen-Programm), du entscheidest komplett selbst, ob das für dich passt. Den ersten 90 Min sind 100% Mehrwert ohne Pitch.
 
 > **„Wie kann ich Patricia eine Frage stellen?"**
-> Im Live-Q&A (20 Min) oder direkt per Instagram-DM nach dem Mastermind. Beantworte ich persönlich.
+> Im Live-Q&A (20 Min) oder direkt per Instagram-DM nach dem Webinar. Beantworte ich persönlich.
 
 > **„Wann genau startet das Webinar — auch in Deutschland 09:00?"**
 > Ja, 09:00 Uhr Schweizer Zeit = 09:00 Uhr deutsche Zeit (gleiche Zeitzone CEST/MESZ).
@@ -241,7 +241,7 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 
 ## SEKTION 10 — FOOTER (kompakt)
 
-> KI-Mastermind „Dein erster KI-Mitarbeiter in 90 Min" — Mum Life Balance · Patricia Nüllmann · Schweiz
+> KI-Webinar „Dein erster KI-Mitarbeiter in 90 Min" — Mum Life Balance · Patricia Nüllmann · Schweiz
 >
 > [Impressum] · [Datenschutz] · [Kontakt]
 
@@ -275,13 +275,13 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 **Was kommt jetzt:**
 1. **Patricia-Check** dieser Inhalt — passen Texte zur Voice? Bonus stimmig?
 2. Tech-Entscheid: WordPress (`/wp` direkt deploy als Draft) oder ThriveCart Free Page?
-3. Bei WP: ich rufe `/wp` und deploye `mumlifebalance.ch/ki-mastermind` als Draft (Patricia prüft + publiziert)
-4. AC-Formular setup (Tag `mama-ceo-mastermind-anmeldung`)
+3. Bei WP: ich rufe `/wp` und deploye `mumlifebalance.ch/ki-webinar` als Draft (Patricia prüft + publiziert)
+4. AC-Formular setup (Tag `mama-ceo-webinar-anmeldung`)
 5. ManyChat-Keyword `MASTERMIND` Flow scharfstellen
 6. Erste Stories-Bumps zur Page ab Mi 13.5.
 
 **Verknüpfungen:**
-- Mastermind-Konzept: `outputs/produkte/mama-ceo/08-funnel/00-mastermind-konzept.md`
+- Webinar-Konzept: `outputs/produkte/mama-ceo/08-funnel/00-webinar-konzept.md`
 - Launch-Kalender: `outputs/produkte/mama-ceo/07-launch-kalender.md`
 - Briefing: `outputs/produkte/mama-ceo/00-briefing-FINAL.md`
-- Notion-Aufgabe „Mastermind-Anmelde-Page LIVE setzen" — Mi 13.5. 10:00
+- Notion-Aufgabe „Webinar-Anmelde-Page LIVE setzen" — Mi 13.5. 10:00

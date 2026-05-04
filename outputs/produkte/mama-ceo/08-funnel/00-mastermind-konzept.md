@@ -1,4 +1,4 @@
-# KI-Mastermind „In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln" — Konzept (FINAL)
+# KI-Webinar „In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln" — Konzept (FINAL)
 
 **Datum:** **Mittwoch 20.5.2026, 09:00-10:30 Uhr**
 **Format:** **Launch-Webinar** mit Cart-Open + Earlybird-Pitch im selben Slot (Julia-Trost-Pattern)
@@ -10,8 +10,8 @@
 
 ## Strategie-Wechsel: Launch-Webinar statt Mid-Launch-Booster
 
-**Vorherige Idee:** Mastermind 4 Tage NACH Cart-Open als Mid-Launch-Booster.
-**Neue Strategie:** Mastermind UND Cart-Open am selben Tag (Mi 20.5.) als Launch-Webinar.
+**Vorherige Idee:** Webinar 4 Tage NACH Cart-Open als Mid-Launch-Booster.
+**Neue Strategie:** Webinar UND Cart-Open am selben Tag (Mi 20.5.) als Launch-Webinar.
 
 **Warum das stärker ist:**
 - ✅ Patricia muss nur EINE Spannung halten (ein Hauptevent statt zwei)
@@ -27,7 +27,7 @@
 > **Hauptzeile:** „In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln"
 > **Untertitel:** „Mental Load abgeben · Zeit fürs Business zurück gewinnen"
 >
-> **Interner Code-Name:** KI-Mastermind
+> **Interner Code-Name:** KI-Webinar
 
 ---
 
@@ -82,7 +82,7 @@
 
 01:10 — 01:30  Q&A (20 Min)
    Live-Fragen aus Chat
-   Geschenk: Wer bis Cart-Close 27.5. 23:59 kauft, bekommt Mastermind-Replay
+   Geschenk: Wer bis Cart-Close 27.5. 23:59 kauft, bekommt Webinar-Replay
    permanent (sonst nur 48h)
 ```
 
@@ -94,9 +94,9 @@
 
 | KW | Aktion |
 |---|---|
-| KW 20 (Mi 13.5.) | Mastermind-Anmelde-Page LIVE + ManyChat-Keyword `MASTERMIND` aktiv |
+| KW 20 (Mi 13.5.) | Webinar-Anmelde-Page LIVE + ManyChat-Keyword `MASTERMIND` aktiv |
 | KW 20 (Sa 16.5.) | DM-Sequenz für ManyChat MASTERMIND scharfgestellt (4 Touchpoints) |
-| KW 20 (Sa 16.5.) | Pitch-Slides Mastermind starten (18-22 Slides Canva) |
+| KW 20 (Sa 16.5.) | Pitch-Slides Webinar starten (18-22 Slides Canva) |
 | KW 21 (Di 19.5. 14:00) | Pitch-Slides FERTIG + Bot-Tests |
 | **🚀 KW 21 (Mi 20.5. 09:00) — LAUNCH-DAY** |
 
@@ -104,10 +104,10 @@
 
 1. **ManyChat-Keyword `MASTERMIND`** (primär)
    - DM → Bot-Antwort mit Bestätigung + Calendar-Invite + Vorab-Frage
-   - Tag in AC: `mama-ceo-mastermind-anmeldung`
+   - Tag in AC: `mama-ceo-webinar-anmeldung`
 
 2. **Sales-Page-Banner** (sekundär)
-   - Auf Mama-CEO-Sales-Page ab Mi 13.5. ein Banner: „Mi 20.5. 09:00 LIVE: KI-Mastermind"
+   - Auf Mama-CEO-Sales-Page ab Mi 13.5. ein Banner: „Mi 20.5. 09:00 LIVE: KI-Webinar"
    - Klick → ManyChat-Keyword `MASTERMIND` triggern
 
 3. **Email an Bestandskundinnen** (Aufwärmphase 2-3)
@@ -118,16 +118,16 @@
 | Tag | Wann | Inhalt |
 |---|---|---|
 | **Anmelde-Tag** | sofort nach `MASTERMIND`-Keyword | Bestätigung + Frage „Was beschäftigt dich gerade als Mama-Unternehmerin?" |
-| **24h vor Mastermind** | Di 19.5. 09:00 | Erinnerung mit Zoom-Link + „Heute Vorbereitungs-Tipp: schreibe dir 1 Frage auf" |
-| **2h vor Mastermind** | Mi 20.5. 07:00 | „Wir sind in 2h live. Bring Kaffee + Notizblock." |
-| **Direkt nach Mastermind** | Mi 20.5. 11:00 | Replay-Link + „Cart läuft 7 Tage — Earlybird CHF 249" + Pitch-Recap |
+| **24h vor Webinar** | Di 19.5. 09:00 | Erinnerung mit Zoom-Link + „Heute Vorbereitungs-Tipp: schreibe dir 1 Frage auf" |
+| **2h vor Webinar** | Mi 20.5. 07:00 | „Wir sind in 2h live. Bring Kaffee + Notizblock." |
+| **Direkt nach Webinar** | Mi 20.5. 11:00 | Replay-Link + „Cart läuft 7 Tage — Earlybird CHF 249" + Pitch-Recap |
 
 ### Email-Flankierung (parallel zur DM-Sequenz, AC-Liste)
 
 - **Aufwärmphase #1** (Fr 15.5. 14:00): „In 1 Woche öffnet sich die Tür"
-- **Aufwärmphase #2** (Mo 18.5. 09:00): „In 2 Tagen LIVE — Mastermind-Reminder"
+- **Aufwärmphase #2** (Mo 18.5. 09:00): „In 2 Tagen LIVE — Webinar-Reminder"
 - **Aufwärmphase #3** (Di 19.5. 09:00): „Morgen 09:00 LIVE + Cart-Open"
-- **Cart-Open #1** (Mi 20.5. 11:00): Direkt nach Mastermind, mit Replay-Link
+- **Cart-Open #1** (Mi 20.5. 11:00): Direkt nach Webinar, mit Replay-Link
 - **Email #4-7** (Do-So 21.-24.5.): Painpoint-Tag · Aha-Tag · Sozial-Beweis · Replay-läuft-aus
 - **Email #8-9** (Mo-Di 25.-26.5.): Final-Push
 - **Email #10-12** (Mi 27.5.): Cart-Close-Cascade über Tag
@@ -147,7 +147,7 @@
 
 ---
 
-## Pre-Mastermind-Checklist (Patricia, Di 19.5. NACHMITTAG)
+## Pre-Webinar-Checklist (Patricia, Di 19.5. NACHMITTAG)
 
 - [ ] Kochassistent (`/mealplan` Skill) live + 2× anders durchgespielt, immer sauber
 - [ ] Brand-Voice-Bot live + Hook-Generation klappt
@@ -174,7 +174,7 @@
 | Käufe Do-So 21.-24.5. (Cart-Window + Replay) | +4-5 | Email-Sequenz wirkt |
 | Käufe Mo-Mi 25.-27.5. (Final-Push) | +2-3 | Scarcity wirkt |
 | **Total Verkäufe** | **12-15** | Earlybird CHF 249 = ~CHF 3'000-3'750 Mai |
-| Conversion Mastermind→Kauf | 10-15% | Funnel-Qualität |
+| Conversion Webinar→Kauf | 10-15% | Funnel-Qualität |
 
 **Wenn Conversion >15%:** Launch-Webinar-Pattern funktioniert — wiederholbares Pattern für Q3+Q4-Launches.
 **Wenn Conversion <8%:** Pitch oder Live-Demos schwächen — Replay-Email-Sequenz nachschärfen + DM-Outreach intensivieren.
@@ -185,8 +185,8 @@
 
 - **Launch-Kalender:** `outputs/produkte/mama-ceo/07-launch-kalender.md` (Master-Timing)
 - **active-funnels.json:** `phase_marker: mama-ceo:launch-day` für Mi 20.5.
-- **`/montag` Aufwärmphase 2-3:** Content-Pillar = „Mastermind-Hype + Live-Demo-Snippets"
+- **`/montag` Aufwärmphase 2-3:** Content-Pillar = „Webinar-Hype + Live-Demo-Snippets"
 - **`/reels`:** Behind-the-Scenes-Reel als Vorbereitungs-Hook
-- **`/karussell`:** „Schuld-Spirale 8 Folien" als Mastermind-Vorbereitung
+- **`/karussell`:** „Schuld-Spirale 8 Folien" als Webinar-Vorbereitung
 - **Mama-CEO-Briefing:** `00-briefing-FINAL.md` (Pitch-Inhalte)
 - **Notion-Aufgaben:** Alle Vorbereitungs-Aufgaben in Aufgaben-DB mit Mama-CEO-Produkt-Relation
