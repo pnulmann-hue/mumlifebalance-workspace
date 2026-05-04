@@ -1,9 +1,10 @@
 {
   "chat_id": "5097782438",
-  "step": "wochenfokus",
+  "step": "erlebnis",
   "started_at": "2026-05-04T05:24:46.524Z",
-  "last_active_at": "2026-05-04T05:24:54.548Z",
+  "last_active_at": "2026-05-04T05:25:07.230Z",
   "last_bot_message_id": 283,
   "profil": "mentoring",
-  "produkt_quelle": "patricia"
+  "produkt_quelle": "override",
+  "produkt": "Keins"
 }
