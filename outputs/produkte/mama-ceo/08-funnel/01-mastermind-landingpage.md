@@ -241,7 +241,7 @@ CTA         → klare Anmeldung mit ManyChat WEBINAR
 
 ## SEKTION 10 — FOOTER (kompakt)
 
-> KI-Webinar „Dein erster KI-Mitarbeiter in 90 Min" — Mum Life Balance · Patricia Nüllmann · Schweiz
+> KI-Webinar „Dein erster KI-Mitarbeiter in 90 Min" — Mum Life Balance · Patricia Ulmann · Schweiz
 >
 > [Impressum] · [Datenschutz] · [Kontakt]
 
