@@ -103,6 +103,125 @@ Output: vollständiger DM-Verlauf mit deutschen Frage-Vorlagen.
 ### Modus 6 — **4-Pass-Edit** (für längere Texte: Salespages, Mails, Blog)
 Führe alle 4 Passes der Bibel sequenziell durch (Struktur → Substanz → Klarheit → Empathie). Dokumentiere pro Pass die Änderungen. Output: finaler Text + Change-Log.
 
+### Modus 7 — **Ad-Bauplan** (Werbeanzeige Hormozi-Style)
+
+Baue eine komplette Werbeanzeige (Meta / Reel-Ad / Video-Ad) nach der **14-Bausteine-Ad-Anatomie** (siehe Bibel: „Hormozi Ad-Anatomie").
+
+**Pflicht-Inputs:**
+- Profil (Mentoring / doTERRA)
+- Avatar (so eng wie möglich)
+- Welches Angebot wird beworben?
+- Lead-Magnet als CTA (was bekommt sie für ihre E-Mail?)
+- Plattform (Meta / TikTok / YouTube)
+
+**Output-Struktur:**
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 WERBEANZEIGE — [Kampagne]
+Plattform: [X] · Profil: [Y] · Avatar: [Z]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Komplette Ad-Copy]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 BAUPLAN (was wo passiert)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Qualifizierungs-Anrede: "..."
+2. Wertversprechen-Hook: "..."
+3. Bold Claim: "..."
+4. Reason Why: "..."
+5. Pain Stack (3 Schmerzen): "..."
+6. Reframe-Frage: "..."
+7. Unique Mechanism (Name!): "..."
+8. Mechanism-Erklärung: "..."
+9. Authority Stack (3 Zahlen): "..."
+10. Logische Urgency: "..."
+11. CTA (Lead-Magnet, NICHT direkter Verkauf): "..."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎬 VISUAL-VORSCHLAG
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Sek. 1: [Visual Hook]
+Sek. 1-3: [Verbal Hook]
+Sek. 4-15: [Pain Stack + Reframe]
+Sek. 15-30: [Mechanism + Authority]
+Sek. 30-45: [CTA]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ COMPLIANCE-CHECK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Meta-Konform: [ja/nein, was wurde gepivot]
+- doTERRA-Konform (falls relevant): [ja/nein]
+```
+
+**Anti-Patterns die du verhindern musst:**
+- Direkte Buchung als CTA bei Cold Traffic
+- „Du wirst …"-Versprechen statt 3.-Person-Berichte
+- Vague Pain ohne konkrete Momente
+- Mechanism ohne Namen
+- Mehr als ein CTA
+
+### Modus 8 — **Landingpage-Bauplan**
+
+Baue eine komplette Landingpage nach **Hormozis Mini-Sales-Letter** oder **Long-Form-Salespage**-Struktur.
+
+**Pflicht-Frage am Start:** „Lead-Capture-Page (kurz, EIN Ziel: E-Mail) oder Sales-Page (lang, EIN Ziel: Verkauf)?"
+
+**Pflicht-Inputs:**
+- Profil + Avatar + Angebot + Preis (falls Sales-Page)
+- Lead-Magnet (falls Lead-Capture)
+- Welcher Pain-Moment ist der schmerzhafteste?
+- Welcher Success-Event soll im Kopf der Leserin entstehen?
+- Authority-Beleg vorhanden? (Zahlen, Testimonials, Stories)
+
+**Output bei Lead-Capture (8-Bausteine-Mini-Sales-Letter):**
+
+```
+[BLOCK 1] Hero — Mega-Promise
+[BLOCK 2] Reason-To-Read
+[BLOCK 3] Authority Stack
+[BLOCK 4] Mechanism-Tease (Name!)
+[BLOCK 5] Power-Statement
+[BLOCK 6] Specific Bullets (5-8)
+[BLOCK 7] CTA mit Reason Why
+[BLOCK 8] P.S. (stärkste Promise)
+```
+
+**Output bei Sales-Page (12-Block-Struktur):**
+
+```
+[BLOCK 1]  Hero (Promise + Avatar + CTA)
+[BLOCK 2]  Pain-Momente (3-5 spezifisch)
+[BLOCK 3]  Dystopische Zukunft (kurz)
+[BLOCK 4]  Unique Mechanism (Name + Strangely Familiar)
+[BLOCK 5]  Success Event (3D + Self/Friends/Enemies)
+[BLOCK 6]  Authority Stack (3 Zahlen + 1-2 Testimonials)
+[BLOCK 7]  Was du bekommst (Container-Worte!)
+[BLOCK 8]  Preis + Garantie
+[BLOCK 9]  Echte Urgency (mit Reason Why)
+[BLOCK 10] Einwand-FAQ (5-8 + flaunt your flaws)
+[BLOCK 11] Zweiter CTA
+[BLOCK 12] P.S.
+```
+
+Jeden Block als fertigen Text liefern, copy-paste-ready für WordPress / ThriveCart / Funnel-Tool.
+
+**Plus immer am Ende:**
+- WordPress-Hinweis: „Soll ich das via `/wp` direkt als Draft auf mumlifebalance.ch anlegen?"
+- Funnel-Hinweis: „Soll ich das in `context/active-funnels.json` registrieren?"
+
+### Modus 9 — **Funnel-Komplett** (Ad → Landingpage → Anruf-Sequenz)
+
+Wenn Patricia einen NEUEN Funnel startet — bau alles auf einmal:
+
+1. **Schritt 1:** Modus 7 (Ad)
+2. **Schritt 2:** Modus 8 (Landingpage Lead-Capture)
+3. **Schritt 3:** Danke-Seite mit Consultative-Call-CTA
+4. **Schritt 4:** 5 Pflege-Mails (Hormozi-Style — kurze Sätze, Pain-Momente, Stories)
+5. **Schritt 5:** Anruf-Skript nach CLOSER
+
+→ Verbindet sich mit `/funnel` (für die ActiveCampaign-/Blotato-Integration) und `/wp` (für die Landingpage).
+
 ---
 
 ## Härteste Regel: Brand-Voice-Pakt mit Patricia

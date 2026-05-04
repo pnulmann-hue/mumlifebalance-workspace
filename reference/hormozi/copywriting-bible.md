@@ -119,7 +119,7 @@ Jeder Post / Reel / Karussell / Mail folgt drei Phasen:
 
 ---
 
-## Framework 7 — ACQ Ads-Struktur (Werbeanzeigen)
+## Framework 7 — ACQ Ads-Struktur (Werbeanzeigen) [BASIS]
 
 Hormozis Ad-Aufbau in Stufen:
 
@@ -644,6 +644,176 @@ Statt verbotene Heilversprechen → Erfahrungsberichte:
 ✅ „Diese 478 Frauen haben in durchschnittlich 30 Tagen ihren Energiehaushalt verändert."
 
 → **Das ist nicht nur Compliance — das ist GLAUBWÜRDIGER**, weil es spezifisch ist.
+
+---
+
+## ⭐ HORMOZI AD-ANATOMIE (komplett, aus echter $100M Ad zerlegt)
+
+*Aus der Hybrid-Modell-Ad-Analyse (Transkript 3) — eine echte Hormozi-Facebook-Ad Wort für Wort.*
+
+### Die 14 Bausteine in Reihenfolge
+
+| # | Baustein | Hormozi-Original | Patricia-Vorlage |
+|---|---|---|---|
+| 1 | **Qualifizierungs-Anrede** | „Hey Fitnessstudio-Besitzer" | „Hey Mama im Network" |
+| 2 | **Wertversprechen-Hook** | „Eine Wahrheit, die ihr nicht hören wollt, aber müsst" | „Etwas, was dir keine Online-Coachin sagt" |
+| 3 | **Bold Claim** | „Gruppentraining wird sterben" | „Energie-Tipps reichen nicht — und das ist warum" |
+| 4 | **Reason Why (sofort)** | „… durch Kommerzialisierung" | „… weil das Problem nicht im Tag liegt, sondern in der Nacht" |
+| 5 | **Pain Stack (3 spezifische Schmerzen)** | Big-Player, bessere Trainer, niedrigere Preise | Schlafmangel, Schreikind, Schwiegermutter-Blicke |
+| 6 | **Reframe-Frage** | „Wie überlebt man auf so einem Markt?" | „Wie kommst du da raus, wenn dein Tank leer ist?" |
+| 7 | **Unique Mechanism (NAMED)** | „Das Hybrid-Modell" | „Mein Energie-Anker-Ritual" |
+| 8 | **Mechanism-Erklärung (Strangely Familiar)** | „Online-Training in stationärem Geschäft" | „3 Mini-Anker, einer pro Tag, jeder unter 5 Min" |
+| 9 | **Re-Naming als „Supermodell"** | „Wir nennen es Supermodell" | „Ich nenne es den Sonntags-Reset" |
+| 10 | **Backtest-Authority** | „Vor 6 Jahren Facebook → Bitcoin-Welle" | „Was vor 100 Jahren noch jede Mutter wusste …" |
+| 11 | **Authority Stack (3 Zahlen)** | „478 Studios · 9 Monate · 94 % Marge" | „340 Frauen · 22 Tage · 5 Min/Tag" |
+| 12 | **Logische Urgency** | „Die Welle steigt — wer in 6 Monaten kommt, ist 5." | echte Knappheit (8 Plätze) ODER situativ |
+| 13 | **Lead-Magnet als CTA (NICHT direkter Verkauf)** | „Klicke für Fallstudie" | „Klicke für das 3-Schritt-Workbook" |
+| 14 | **Consultative-Call-Option auf Danke-Seite** | „15-Min-Call bei Fragen" | „15-Min-Klärungs-Call wenn's für dich passt" |
+
+### Die 3 Pflicht-Compliance-Pivots (für Patricia kritisch)
+
+| Plattform | Verboten | Erlaubt |
+|---|---|---|
+| Meta (Mentoring) | „Du wirst in 30 Tagen X verdienen" | „Diese 12 Frauen haben in 30 Tagen X erlebt" |
+| Meta (doTERRA) | „Du wirst dich besser fühlen" | „Maria erlebt seit 22 Tagen, dass …" |
+| doTERRA-Compliance | „Heilt / lindert / behandelt" | „Sie integriert es seit 3 Wochen in ihren Morgen" |
+
+### Anatomie-Test (vor jedem Ad-Submit)
+
+- [ ] Erster Satz qualifiziert (Avatar erkennt sich)?
+- [ ] Bold Claim hat einen sofortigen „weil …" angehängt?
+- [ ] Mindestens 3 spezifische Pain-Momente (keine Adjektive)?
+- [ ] Unique Mechanism hat einen NAMEN (kein „meine Methode")?
+- [ ] Authority Stack mit 3 Zahlen (nicht „viele")?
+- [ ] CTA = Lead-Magnet (nicht direkter Verkauf)?
+- [ ] Compliance-Pivot eingebaut (3. Person, keine Heilversprechen)?
+
+---
+
+## ⭐ HORMOZI LANDINGPAGE-ANATOMIE (Mini-Sales-Letter-Struktur)
+
+*Aus der Buchrückseiten-Analyse von $100M Leads (Perell-Interview 18:30–21:00) — direkt übertragbar auf Landingpages.*
+
+Hormozi sagt explizit: „Die Buchrückseite ist mein **Mini-Sales-Letter**." Diese Struktur ist 1:1 die einer kurzen Landingpage / Above-the-Fold-Section.
+
+### Die 8 Bausteine
+
+| # | Baustein | Beispiel ($100M Leads-Rückseite) |
+|---|---|---|
+| 1 | **Mega-Promise (oben)** | „Du kannst 2x, 10x oder 100x mehr Leads bekommen — ohne zu ändern, was du verkaufst." |
+| 2 | **Reason-To-Read** | „Der grösste Grund, warum Businesses scheitern: Mangel an Leads." |
+| 3 | **Authority Stack** | „Heute generieren unsere Firmen 20.000 Leads/Tag in 16 Industrien." |
+| 4 | **Mechanism-Tease** | „… und sie tun es mit 8 Never-Go-Hungry-Playbooks." |
+| 5 | **Power-Statement** | „Sobald du sie siehst, kannst du sie nicht mehr nicht-sehen. Sie funktionieren ohne deine Erlaubnis." |
+| 6 | **Specific Bullets (5–8)** | Jede Bullet: Zahl + Spezifizierung + Outcome („Das **6-teilige** Werbeanzeigen-Framework, das **mehr Menschen — besonders Fremde** — dazu bringt zu wollen, was du verkaufst.") |
+| 7 | **CTA mit Reason Why** | „Klicke jetzt, **weil** …" |
+| 8 | **P.S. (Hack #10!)** | Wiederholung der stärksten Promise, weil P.S. fast immer gelesen wird |
+
+### Lange Landingpage (komplette Sales-Page-Struktur Hormozi-Style)
+
+Wenn die Page länger ist (Salespage statt Lead-Capture), folgt diese Reihenfolge — basiert auf Hormozis kombiniertem Wissen aus Mini-Sales-Letter + ACQ Ad + Pain-is-the-Pitch:
+
+```
+1. HERO
+   - Mega-Promise (mit Zahl/Zeit/Outcome)
+   - Avatar-Qualifizierung („für Mütter im Network, die …")
+   - Sofort-CTA Button
+
+2. PAIN-MOMENTE (aus Pain-is-the-Pitch)
+   - 3-5 spezifische Alltagsmomente
+   - „Erkennst du dich?" Trigger
+   - KEIN Versprechen hier — nur Schmerz
+
+3. DYSTOPISCHE ZUKUNFT (kurz)
+   - „Wenn nichts ändert, sieht das in 6 Monaten so aus …"
+
+4. UNIQUE MECHANISM
+   - Genannt, mit Namen ("Das Hybrid-Modell")
+   - 1-Satz-Erklärung (Strangely Familiar)
+   - Warum dieser Mechanism existiert (Reason Why)
+
+5. SUCCESS EVENT (3D-Szene)
+   - Konkrete Erfolgs-Szene, die sich Leserin VORSTELLT
+   - Selbst + Freunde + Skeptiker-Blick (++/-- × Self/Friends/Enemies)
+
+6. AUTHORITY STACK
+   - 3 Zahlen-Beweis
+   - 1-2 Testimonials mit Namen + Foto + spezifischem Outcome
+
+7. WAS DU BEKOMMST (Container-Worte!)
+   - Module/Sessions/Komponenten als „System"/„Blueprint"/„Framework"
+   - Jeder Bullet: Spezifisch + Outcome (nicht Feature)
+
+8. PREIS + GARANTIE
+   - Anker (höherer Wert) → tatsächlicher Preis
+   - Reason Why für aktuellen Preis
+
+9. ECHTE URGENCY
+   - Logisch begründet (z.B. „nur 8 Plätze, weil ich persönlich begleite")
+
+10. EINWAND-FAQ
+    - 5-8 ehrliche Einwände
+    - „Flaunt your flaws" (Hack #5) — Schwächen offen zugeben
+
+11. ZWEITER CTA
+    - Mit Reason Why („… weil du sonst weiter X erlebst")
+
+12. P.S.
+    - Stärkste Promise nochmal
+    - + Lead-Magnet-Alternative wenn nicht bereit
+```
+
+### Landingpage-Test (vor Veröffentlichung)
+
+- [ ] Hero-Promise hat Zahl + Zeit + Outcome?
+- [ ] Mindestens 3 Pain-Momente in den ersten 2 Scrolls (nicht abstrakt)?
+- [ ] Unique Mechanism hat einen Namen?
+- [ ] Authority Stack mit 3 Zahlen oben?
+- [ ] Mindestens 1 Selbst-, 1 Freunde-, 1 Skeptiker-Frame?
+- [ ] Container-Wörter (System/Blueprint/Methode) statt „Kurs/Video"?
+- [ ] Urgency hat einen logischen Grund?
+- [ ] FAQ enthält die 3 grössten Einwände?
+- [ ] P.S. wiederholt die Mega-Promise?
+- [ ] Genau EIN klarer CTA (mehrfach wiederholt, identisch)?
+- [ ] Compliance-Pivot bei doTERRA eingehalten?
+
+---
+
+## ⭐ HORMOZI FUNNEL-LOGIK (Ad → Landingpage → Anruf)
+
+Aus dem Hybrid-Model-Breakdown geht ein KOMPLETTER Funnel hervor:
+
+```
+[FACEBOOK AD]                     ← 14-Bausteine-Ad-Anatomie
+    ↓
+    ├── CTA: „Hol dir die Fallstudie" (kein „buche jetzt")
+    ↓
+[LANDINGPAGE: Lead-Magnet]        ← Mini-Sales-Letter-Struktur
+    ↓
+    ├── E-Mail-Capture (Single-Field, ein CTA)
+    ↓
+[DANKE-SEITE]                     ← Hier ist die Magie!
+    ↓
+    ├── Lead-Magnet sofort verfügbar
+    ├── Consultative-Call-Option:
+    │   „Du wirst nach der Fallstudie viele Fragen haben.
+    │    Buch einen 15-Min-Call, um sie zu klären."
+    ↓
+[E-MAIL-PFLEGE]                   ← falls kein Anruf gebucht
+    ↓
+    ├── 5-7 Mails mit weiterer Substanz + Stories
+    ├── Weitere Calls-To-Action zum Anruf
+    ↓
+[ANRUF]                           ← CLOSER-Framework
+    ↓
+[VERKAUF]
+```
+
+### Was Patricia daran sofort umsetzen kann
+
+1. **Bei JEDEM neuen Funnel:** Zuerst checken, wo die Lead-Magnet-Stufe ist. Direkt-Buchung von Cold Traffic = selten erfolgreich.
+2. **Danke-Seite** ist die kritischste, oft unbeachtete Seite. Hier KEIN „Vielen Dank, schau in dein Postfach". Sondern: sofort Lead-Magnet + Consultative-Call-Option.
+3. **Bei doTERRA:** Lead-Magnet ist NICHT „Workbook für besseren Schlaf", sondern „Marias Geschichte: Wie sie ihren Energiehaushalt verändert hat" (3.-Person-Compliance).
 
 ---
 

@@ -204,13 +204,16 @@ Output: `outputs/produkte/[slug]/` mit 10 Unterordnern/Dateien (siehe `outputs/p
 
 Hormozi ist hier der STRUKTUR- und PERSUASION-Layer; Patricias warme/empowernde Tonalität bleibt zwingend erhalten.
 
-**6 Modi:**
+**9 Modi:**
 1. **Doktor** (Standard) — Diagnose + zwei Varianten (sicher / mutig) + Change-Log mit Hormozi-Begründungen
 2. **Hook-Battle** — 10 Hook-Varianten nach 10 verschiedenen Hormozi-Hook-Kategorien
 3. **Headline-MAGIC** — MAGIC-Offer-Formula (Magnet+Avatar+Goal+Interval+Container) + Lead-Magnet-Naming-Formula
 4. **Value-Equation-Audit** — Angebot durchleuchten: Traumergebnis · Erfolgswahrscheinlichkeit · Zeit-Verzögerung · Aufwand
 5. **CLOSER-DM** — DM-Antwort nach CLOSER-Framework (Clarify · Label · Overview · Sell · Explain · Reinforce)
 6. **4-Pass-Edit** — für lange Texte (Salespages, Mails, Blog): Struktur → Substanz → Klarheit → Empathie
+7. **Ad-Bauplan** — Werbeanzeige nach 14-Bausteine-Anatomie (Qualifizierung → Hook → Bold Claim → Reason Why → Pain Stack → Reframe → Unique Mechanism → Authority Stack → Logische Urgency → Lead-Magnet-CTA) + Compliance-Check Meta/doTERRA
+8. **Landingpage-Bauplan** — Lead-Capture (8-Block-Mini-Sales-Letter) ODER Sales-Page (12-Block-Long-Form) — Hero/Pain/Dystopie/Mechanism/Success-Event/Authority/Container/Preis/Urgency/FAQ/CTA/P.S.
+9. **Funnel-Komplett** — Ad + Landingpage + Danke-Seite + 5 Mails + CLOSER-Anruf-Skript in einem Rutsch
 
 **Wissensgrundlagen:**
 - `reference/hormozi/copywriting-bible.md` — alle 7 Frameworks + 12 Persuasion Hacks + Schreibregeln + Anti-Patterns + 4-Pass-Edit-Prozess (verdichtet aus $100M Offers, $100M Leads, ACQ Ads/Closer Handbook, „The Game"-Podcast Ep 245/563/927, LinkedIn/X-Posts, David-Perell-Interview)
