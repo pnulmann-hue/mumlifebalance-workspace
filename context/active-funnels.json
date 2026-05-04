@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Zentrales Register aller aktiven Funnels für Mum Life Balance (Mentoring + doTERRA). Wird vom /funnel Skill gepflegt und von /montag, /reels, /karussell gelesen — damit Content-Assistenten wissen welche ManyChat-Keywords diese Woche prioritär sind.",
-    "last_updated": "2026-05-01 · Mama-CEO Mai-Launch in Notion synchronisiert · Aufwärmphase-Sprache (Julia Trost) · LAUNCH-DAY Mi 20.5. 09:00 (Mastermind + Cart-Open + Earlybird CHF 249) · Cart-Close Mi 27.5. 23:59",
+    "last_updated": "2026-05-01 · Mama-CEO Mai-Launch in Notion synchronisiert · Aufwärmphase-Sprache (Julia Trost) · LAUNCH-DAY Mi 20.5. 09:00 (Webinar + Cart-Open + Earlybird CHF 249) · Cart-Close Mi 27.5. 23:59",
     "schema_version": 1,
     "brand": "Mum Life Balance",
     "umsatzziel_chf_jahr": 40000
@@ -332,9 +332,9 @@
       "phase_marker": "mama-ceo:aufwaermphase-1-validierung",
       "phase_history": [
         { "marker": "aufwaermphase-1-validierung", "von": "2026-05-04", "bis": "2026-05-10", "kw": 19, "fokus": "Story-Umfrage Tagline-A/B + 3 Sternbauer-Urmotiv-Calls + Sales-Page-Texte erste Version + Reel #1 Schuld-Spirale" },
-        { "marker": "aufwaermphase-2-story-demo", "von": "2026-05-11", "bis": "2026-05-17", "kw": 20, "fokus": "Sales-Page LIVE + Mastermind-Anmeldung läuft + 3 Anwarming-Reels + Karussell + Aufwärmphase-Email #1 + Pitch-Slides starten" },
+        { "marker": "aufwaermphase-2-story-demo", "von": "2026-05-11", "bis": "2026-05-17", "kw": 20, "fokus": "Sales-Page LIVE + Webinar-Anmeldung läuft + 3 Anwarming-Reels + Karussell + Aufwärmphase-Email #1 + Pitch-Slides starten" },
         { "marker": "aufwaermphase-3-last-call", "von": "2026-05-18", "bis": "2026-05-19", "kw": 21, "fokus": "Aufwärmphase-Mails #2-3 + Pilot-Modul 1 fertig + Pitch-Slides FERTIG + Bot-Tests + Last-Call-Story" },
-        { "marker": "launch-day", "von": "2026-05-20T09:00", "bis": "2026-05-20T23:59", "kw": 21, "fokus": "🚀 KI-MASTERMIND LIVE 09:00-10:30 + CART-OPEN + EARLYBIRD-PITCH CHF 249 + Cart-Open-Mail + Story-Cascade + DMs an Live-Teilnehmer" },
+        { "marker": "launch-day", "von": "2026-05-20T09:00", "bis": "2026-05-20T23:59", "kw": 21, "fokus": "🚀 KI-WEBINAR LIVE 09:00-10:30 + CART-OPEN + EARLYBIRD-PITCH CHF 249 + Cart-Open-Mail + Story-Cascade + DMs an Live-Teilnehmer" },
         { "marker": "cart-window", "von": "2026-05-21", "bis": "2026-05-24", "kw": 21, "fokus": "Painpoint-Tag (Do) + KI-Aha-Tag (Fr) + Sozial-Beweis-Tag (Sa) + Replay-läuft-aus (So) — Mails #4-7" },
         { "marker": "final-push", "von": "2026-05-25", "bis": "2026-05-26", "kw": 22, "fokus": "Letzte-Tage-Mail + Final-Push-Mail + Reel Letzte-Chance + DMs an unsichere Käuferinnen" },
         { "marker": "cart-close-day", "von": "2026-05-27T08:00", "bis": "2026-05-27T23:59", "kw": 22, "fokus": "🚨 CART-CLOSE-TAG: Email-Cascade (08:00 #10, 18:00 #11, 22:00 #12) + Story 12:00 + Live-Story 20:00 + Cart-Close 23:59" },
@@ -343,14 +343,14 @@
 
       "traffic_quellen": {
         "wordpress_landing": "TBD — Sales-Page in ThriveCart, gespiegelt auf mumlifebalance.ch/mama-ceo",
-        "manychat_keywords": ["MASTERMIND", "MAMACEO"],
-        "instagram_dm": "via ManyChat Keyword MASTERMIND (kostenlose Anmeldung Launch-Webinar Mi 20.5.) — am Webinar wird Cart geöffnet",
+        "manychat_keywords": ["WEBINAR", "MAMACEO"],
+        "instagram_dm": "via ManyChat Keyword WEBINAR (kostenlose Anmeldung Launch-Webinar Mi 20.5.) — am Webinar wird Cart geöffnet",
         "thrivecart": "TBD"
       },
 
       "ac_integration": {
         "liste_id": 2,
-        "tags_geplant": ["mama-ceo-mastermind-anmeldung", "mama-ceo-pilot-kaufer", "mama-ceo-final-kaufer", "mama-ceo-mastermind-teilnehmer", "mama-ceo-replay-watcher"],
+        "tags_geplant": ["mama-ceo-webinar-anmeldung", "mama-ceo-pilot-kaufer", "mama-ceo-final-kaufer", "mama-ceo-webinar-teilnehmer", "mama-ceo-replay-watcher"],
         "auslieferung_automation_id": null,
         "nurture_automation_id": null
       },
@@ -360,9 +360,9 @@
         "design_template": "context/mail-design-onlinebusiness.html",
         "mails": [
           "Fr 15.5. 14:00 — Aufwärmphase-Mail #1 (In 1 Woche öffnet sich die Tür)",
-          "Mo 18.5. 09:00 — Aufwärmphase-Mail #2 (In 2 Tagen LIVE — Mastermind-Reminder)",
+          "Mo 18.5. 09:00 — Aufwärmphase-Mail #2 (In 2 Tagen LIVE — Webinar-Reminder)",
           "Di 19.5. 09:00 — Aufwärmphase-Mail #3 (Morgen 09:00 LIVE + Cart-Open)",
-          "Mi 20.5. 11:00 — Cart-Open Mail #1 (Direkt nach Mastermind, mit Replay-Link)",
+          "Mi 20.5. 11:00 — Cart-Open Mail #1 (Direkt nach Webinar, mit Replay-Link)",
           "Do 21.5. 08:00 — Mail #4 Painpoint-Tag (Schuld-Spirale unterbrechen)",
           "Fr 22.5. 08:00 — Mail #5 KI-Aha-Tag (mit Live-Demo-Screenshot)",
           "Sa 23.5. 08:00 — Mail #6 Sozial-Beweis-Tag",
@@ -379,27 +379,27 @@
       "launch_window": {
         "launch_day_datum": "2026-05-20T09:00",
         "tag_minus_16_datum": "2026-05-04",
-        "mastermind_datum": "2026-05-20T09:00",
+        "webinar_datum": "2026-05-20T09:00",
         "cart_open_datum": "2026-05-20T09:00",
         "cart_close_datum": "2026-05-27T23:59",
-        "scope": "Launch-Webinar-Pattern (Julia Trost) — Mastermind und Cart-Open am gleichen Tag (Mi 20.5. 09:00). Earlybird CHF 249 läuft 7 Tage. Final CHF 333 ab 28.5. Pilot-Phase mit wöchentlicher Säulen-Auslieferung ab 28.5.",
+        "scope": "Launch-Webinar-Pattern (Julia Trost) — Webinar und Cart-Open am gleichen Tag (Mi 20.5. 09:00). Earlybird CHF 249 läuft 7 Tage. Final CHF 333 ab 28.5. Pilot-Phase mit wöchentlicher Säulen-Auslieferung ab 28.5.",
         "launch_assets_path": "outputs/produkte/mama-ceo/",
         "launch_kalender": "outputs/produkte/mama-ceo/07-launch-kalender.md",
-        "mastermind_konzept": "outputs/produkte/mama-ceo/08-funnel/00-mastermind-konzept.md",
+        "webinar_konzept": "outputs/produkte/mama-ceo/08-funnel/00-webinar-konzept.md",
         "ziele": {
-          "mastermind_anmeldungen": 100,
-          "mastermind_live_teilnehmerinnen": 40,
+          "webinar_anmeldungen": 100,
+          "webinar_live_teilnehmerinnen": 40,
           "mama_ceo_verkaeufe_launch_day": 8,
           "mama_ceo_verkaeufe_cart_window": 5,
           "mama_ceo_verkaeufe_final_push": 2,
           "mama_ceo_verkaeufe_total_earlybird": 15,
-          "mastermind_zu_kauf_conversion_pct": 12,
+          "webinar_zu_kauf_conversion_pct": 12,
           "umsatz_chf_earlybird_phase": 3735
         }
       },
 
       "produkttreppe_anschluss": [
-        { "stufe": "A (0€)", "produkt": "KI-Mastermind 26.5. (Lead-Magnet während Launch)", "preis": 0 },
+        { "stufe": "A (0€)", "produkt": "KI-Webinar 26.5. (Lead-Magnet während Launch)", "preis": 0 },
         { "stufe": "M (249 → 333 CHF)", "produkt": "Mama-CEO Hauptkurs (8 Wochen)", "preis": 333, "thrivecart": "TBD" },
         { "stufe": "Z (1997 CHF)", "produkt": "Mama-CEO 1:1 Deep Work (3 Monate, kommt ab Juni)", "preis": 1997, "status": "TBD - separater Strategie-Skill" }
       ],
@@ -407,9 +407,9 @@
       "content_hinweise": {
         "pillar_pro_phase": {
           "aufwaermphase-1-validierung": "Painpoints benennen (Schuld-Spirale · Mental Load · Aufschieberitis) — NICHT direkt verkaufen",
-          "aufwaermphase-2-story-demo": "Brandastic-Story-Bausteine (Hamsterrad → Schwester-Tod-Aha → KI-Mitarbeiter) + KI-Demo-Snippets + Mastermind-Hype",
-          "aufwaermphase-3-last-call": "Last-Call-Mastermind-Anmeldung + Behind-the-Scenes + Vorbereitungs-Energie",
-          "launch-day": "🚀 LIVE-Energie (Stories vor + während + nach Mastermind) + Cart-Open-Cascade + Earlybird-Drücker",
+          "aufwaermphase-2-story-demo": "Brandastic-Story-Bausteine (Hamsterrad → Schwester-Tod-Aha → KI-Mitarbeiter) + KI-Demo-Snippets + Webinar-Hype",
+          "aufwaermphase-3-last-call": "Last-Call-Webinar-Anmeldung + Behind-the-Scenes + Vorbereitungs-Energie",
+          "launch-day": "🚀 LIVE-Energie (Stories vor + während + nach Webinar) + Cart-Open-Cascade + Earlybird-Drücker",
           "cart-window": "Painpoint-Tag (Do) · KI-Aha-Tag (Fr) · Sozial-Beweis-Tag (Sa) · Replay-läuft-aus (So)",
           "final-push": "Letzte-Tage · Scarcity · Antikunden-Filter · Letzte-Chance-Reel",
           "cart-close-day": "Email-Cascade ganzen Tag + Live-Story 20:00 + Final-Stunden-Story",
@@ -417,7 +417,7 @@
         },
         "reel_typen": ["Brandastic-Story-Reel", "Live-Demo-KI-Reel", "Schuld-Spirale-benennen", "Falsch-vs-Richtig-Caption (Elke Mayr)", "Behind-the-Scenes", "Tagebuch-Style (Tag mit Mama-CEO)", "FAQ-Reel"],
         "karussell_typen": ["Schuld-Spirale 8 Folien", "5 Säulen Mama-CEO", "5 Antikunden-Profile (Sternbauer)"],
-        "primaer_keyword_pre_launch": "MASTERMIND (für Webinar-Anmeldung)",
+        "primaer_keyword_pre_launch": "WEBINAR (für Webinar-Anmeldung)",
         "primaer_keyword_cart_window": "MAMACEO (für direkten Kursverkauf)"
       },
 
@@ -432,7 +432,7 @@
     { "stufe": "B (39 CHF)", "produkt": "Finde dein Thema als Network-Mama" },
     { "stufe": "E (97 CHF)", "produkt": "Expertin statt Verkäuferin" },
     { "stufe": "M (333 CHF)", "produkt": "Instagram-Kundenmaschine" },
-    { "stufe": "Z (777+ CHF)", "produkt": "Mastermind / 1:1 (TBD)" }
+    { "stufe": "Z (777+ CHF)", "produkt": "Webinar / 1:1 (TBD)" }
   ],
 
   "next_funnels_tbd": [

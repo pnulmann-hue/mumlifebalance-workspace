@@ -1,12 +1,12 @@
 # Mama-CEO — Launch-Kalender Mai 2026 (FINAL korrigiert 2026-05-01)
 
 **Erstellt:** 2026-05-01 (Wochentage korrigiert)
-**Cart-Open + Mastermind:** **Mittwoch 20. Mai 2026, 09:00** (Launch-Webinar-Format — Mastermind und Cart-Open am gleichen Tag)
+**Cart-Open + Webinar:** **Mittwoch 20. Mai 2026, 09:00** (Launch-Webinar-Format — Webinar und Cart-Open am gleichen Tag)
 **Cart-Close:** **Mittwoch 27. Mai 2026, 23:59** (7 Tage Cart-Window)
 **Earlybird-Preis:** CHF 249 (gilt während des Cart-Windows 20.-27.5.) → CHF 333 (Final ab 28.5.)
 **Phase-Tracking:** `context/active-funnels.json` (gelesen von `/montag`, `/reels`, `/karussell`)
 
-> **Warum diese Daten?** 1.5.2026 = Freitag (geprüft). Mittwoch-Cart entspricht Patricias Standard-Pattern (wie Bio-Check). Mastermind und Cart-Open am selben Tag = Launch-Webinar-Pattern (Julia Trost) — Earlybird-Preis wird LIVE im Webinar gepitcht.
+> **Warum diese Daten?** 1.5.2026 = Freitag (geprüft). Mittwoch-Cart entspricht Patricias Standard-Pattern (wie Bio-Check). Webinar und Cart-Open am selben Tag = Launch-Webinar-Pattern (Julia Trost) — Earlybird-Preis wird LIVE im Webinar gepitcht.
 
 ---
 
@@ -15,9 +15,9 @@
 | Phase | Datum | Marker (für active-funnels.json) | Content-Schwerpunkt |
 |---|---|---|---|
 | **Aufwärmphase 1 — Validierung** | KW 19 (4.-10.5.) | `mama-ceo:aufwaermphase-1-validierung` | Story-Umfrage + Tagline-A/B + Sternbauer-Urmotiv-Calls + Schuld-Spirale benennen |
-| **Aufwärmphase 2 — Story + KI-Demo** | KW 20 (11.-17.5.) | `mama-ceo:aufwaermphase-2-story-demo` | Sales-Page LIVE + 5-Mail-Sequenz scharfgestellt + 3 Anwarming-Reels + Mastermind-Anmeldung öffnen |
+| **Aufwärmphase 2 — Story + KI-Demo** | KW 20 (11.-17.5.) | `mama-ceo:aufwaermphase-2-story-demo` | Sales-Page LIVE + 5-Mail-Sequenz scharfgestellt + 3 Anwarming-Reels + Webinar-Anmeldung öffnen |
 | **Aufwärmphase 3 — Last Call** | Mo-Di 18.-19.5. | `mama-ceo:aufwaermphase-3-last-call` | Aufwärmphase-Mails #2-3 + Pitch-Slides fertig + Bot-Tests |
-| **🚀 LAUNCH-DAY** | **Mi 20.5. 09:00** | `mama-ceo:launch-day` | KI-Mastermind LIVE + Cart-Open + Earlybird-Pitch CHF 249 |
+| **🚀 LAUNCH-DAY** | **Mi 20.5. 09:00** | `mama-ceo:launch-day` | KI-Webinar LIVE + Cart-Open + Earlybird-Pitch CHF 249 |
 | **Cart-Window** | Do-So 21.-24.5. | `mama-ceo:cart-window` | Painpoint-Tag · KI-Aha-Tag · Sozial-Beweis-Tag · Replay-läuft-aus |
 | **Final-Push** | Mo-Di 25.-26.5. | `mama-ceo:final-push` | Replay-Sound-Bites + Letzte-Tage-Mail + Letzte-Chance-Reel |
 | **Cart-Close-Tag** | Mi 27.5. | `mama-ceo:cart-close-day` | Email-Cascade über Tag verteilt + Live-Story 20:00 + Cart-Close 23:59 |
@@ -46,19 +46,19 @@
 ## WOCHE 2 — Anwarming (KW 20 · 11.-17. Mai)
 
 **Marker:** `mama-ceo:aufwaermphase-2-story-demo`
-**Ziel:** Sales-Page LIVE in ThriveCart · Mastermind-Anmeldung läuft · 3 Anwarming-Reels + 1 Karussell veröffentlicht · Aufwärmphase-Email #1 versendet · Pilot-Modul 1 Hälfte aufgenommen
+**Ziel:** Sales-Page LIVE in ThriveCart · Webinar-Anmeldung läuft · 3 Anwarming-Reels + 1 Karussell veröffentlicht · Aufwärmphase-Email #1 versendet · Pilot-Modul 1 Hälfte aufgenommen
 
 | Tag | Aufgaben |
 |---|---|
 | Mo 11.5. 10:00 | Sales-Page in ThriveCart aufsetzen (mit Pilot-Preis 249) |
 | Di 12.5. 14:00 | Reel #2 Brandastic-Story aufnehmen + posten (45 Sek) |
-| Mi 13.5. 10:00 | Mastermind-Anmelde-Page LIVE + ManyChat-Keyword MASTERMIND |
+| Mi 13.5. 10:00 | Webinar-Anmelde-Page LIVE + ManyChat-Keyword WEBINAR |
 | Mi 13.5. 14:00 | Pilot-Modul 1 Aufnahme starten (Lektion 1.1 + 1.2) |
 | Do 14.5. 10:00 | Reel #3 Live-Demo Familienorganisator-Bot (60 Sek mit Bildschirm) |
 | Fr 15.5. 09:00 | Karussell „Schuld-Spirale: 7 Sätze" (8 Folien) |
 | Fr 15.5. 14:00 | Aufwärmphase-Email #1 versenden („In 1 Woche öffnet sich die Tür") |
-| Sa 16.5. 09:00 | DM-Sequenz für ManyChat MASTERMIND scharfstellen (4 Touchpoints) |
-| Sa 16.5. 14:00 | Pitch-Slides Mastermind starten (18-22 Slides Canva) |
+| Sa 16.5. 09:00 | DM-Sequenz für ManyChat WEBINAR scharfstellen (4 Touchpoints) |
+| Sa 16.5. 14:00 | Pitch-Slides Webinar starten (18-22 Slides Canva) |
 | So 17.5. 14:00 | Reel #4 Falsch-vs-Richtig (60 Sek, CTA Cart-Open Mi) |
 
 ---
@@ -66,20 +66,20 @@
 ## WOCHE 3 — Heating Up + LAUNCH-DAY (KW 21 · 18.-24. Mai)
 
 **Marker:** Mo-Di `aufwaermphase-3-last-call` · Mi 20.5. **`launch-day`** · Do-So `cart-window`
-**Ziel:** Mastermind hat 100+ Anmeldungen · LAUNCH-DAY erfolgreich · 8+ Pilot-Käuferinnen am Tag selbst
+**Ziel:** Webinar hat 100+ Anmeldungen · LAUNCH-DAY erfolgreich · 8+ Pilot-Käuferinnen am Tag selbst
 
 ### Mo 18.5. — Last-Call-Anwarming
-- 09:00 — Aufwärmphase-Email #2 („In 2 Tagen LIVE — Mastermind-Reminder")
+- 09:00 — Aufwärmphase-Email #2 („In 2 Tagen LIVE — Webinar-Reminder")
 - 14:00 — Pilot-Modul 1 fertig aufnehmen (Lektion 1.3 + 1.4)
 
 ### Di 19.5. — Vorbereitungs-Tag
 - 09:00 — Aufwärmphase-Email #3 („Morgen 09:00 LIVE + Cart-Open")
-- 14:00 — **Pitch-Slides Mastermind FERTIG** + Familien-Bot + Brand-Voice-Bot live testen
-- 18:00 — Mastermind-Erinnerungs-Story (Last-Call-Anmeldung)
+- 14:00 — **Pitch-Slides Webinar FERTIG** + Familien-Bot + Brand-Voice-Bot live testen
+- 18:00 — Webinar-Erinnerungs-Story (Last-Call-Anmeldung)
 
 ### 🚀 MI 20.5. — LAUNCH-DAY
 - 08:30 — Vorbereitungs-Stories „Mache mich gleich bereit"
-- **09:00-10:30 — KI-MASTERMIND LIVE 90 MIN + CART-OPEN + EARLYBIRD-PITCH (CHF 249)**
+- **09:00-10:30 — KI-WEBINAR LIVE 90 MIN + CART-OPEN + EARLYBIRD-PITCH (CHF 249)**
   - 09:00-09:10 Story (10 Min) — Brandastic-Epiphany-Bridge
   - 09:10-09:25 Painpoint + Schuld-Spirale + Daten-Anker (15 Min)
   - 09:25-09:55 Live-Demo Familien-Bot + Brand-Voice-Bot (30 Min)
@@ -90,7 +90,7 @@
 
 ### Do 21.5. — Painpoint-Tag
 - 08:00 — Email #4 „Schuld-Spirale unterbrechen"
-- Tagsüber — 5-7 Story-Posts mit Käufer-Quotes aus Mastermind
+- Tagsüber — 5-7 Story-Posts mit Käufer-Quotes aus Webinar
 - Abend — Reel „Was du in 8 Wochen lernst" (Säulen-Übersicht 60 Sek)
 
 ### Fr 22.5. — KI-Aha-Tag
@@ -103,7 +103,7 @@
 
 ### So 24.5. — Replay-Letzter-Tag
 - 09:00 — Email #7 „Replay läuft heute aus + 3 Tage Cart noch"
-- Mastermind-Sound-Bites als kurze Reels
+- Webinar-Sound-Bites als kurze Reels
 
 ---
 
@@ -164,13 +164,13 @@
 
 | KPI | Ziel | Bedeutung |
 |---|---|---|
-| Mastermind-Anmeldungen | 100-150 | Funnel-Volumen |
-| Mastermind-Live-Teilnehmerinnen | 40-60 (40%-Show-up) | Engagement |
+| Webinar-Anmeldungen | 100-150 | Funnel-Volumen |
+| Webinar-Live-Teilnehmerinnen | 40-60 (40%-Show-up) | Engagement |
 | **Mama-CEO-Käuferinnen am LAUNCH-DAY** | **mind. 8** | Webinar-Conversion |
 | Mama-CEO-Käuferinnen im Cart-Window (21.-26.5.) | +4-5 | Replay + Email-Sequenz wirken |
 | Mama-CEO-Käuferinnen am Cart-Close-Tag | +2-3 | Final-Push wirkt |
 | **Total Verkäufe** | **12-15 (Earlybird 249)** | Umsatz: ~CHF 3'000-3'750 + Final-Verkäufe danach |
-| Conversion Mastermind→Kauf | 10-15% | Funnel-Qualität |
+| Conversion Webinar→Kauf | 10-15% | Funnel-Qualität |
 
 **Realitäts-Check:** Bei 12-15 Earlybird-Käufen = ~3'500 CHF Mai-Umsatz + Evergreen Final-Verkäufe (CHF 333) Juni-Dez ≈ ~6'000 CHF zusätzlich = **~9'500 CHF Jahres-Beitrag von Mama-CEO** (~24% des 40k-Ziels).
 
@@ -180,7 +180,7 @@
 
 | Risiko | Wahrscheinlichkeit | Mitigation |
 |---|---|---|
-| Mastermind-Anmeldungen <50 | Mittel | DM-Sequenz an Top-50-Engagerinnen + Bestandskundinnen direkt einladen |
+| Webinar-Anmeldungen <50 | Mittel | DM-Sequenz an Top-50-Engagerinnen + Bestandskundinnen direkt einladen |
 | Webinar-zu-Kauf-Conversion <10% (März-Launch hatte 0!) | Mittel | Pitch-Slides üben (Trockenlauf Di-Abend) + Live-Demo-Bots vorher 3× testen + Antikunden-Klärung aktiv |
 | Patricia überfordert am LAUNCH-DAY | Hoch | Mails Mo-Di vor-getextet, Story-Cascade-Vorlage in Notion, Kinder Mi 09:00-12:00 versorgt |
 
@@ -190,7 +190,7 @@
 
 **`/montag` (Wochen-Content):** Liest `active-funnels.json` Phase-Marker. Pillar pro Phase steht in `content_hinweise.pillar_pro_phase`.
 
-**`/reels` und `/karussell`:** Hook-Vorgabe pro Phase aus diesem Kalender. Mastermind-Hype-Reel im W2-W3.
+**`/reels` und `/karussell`:** Hook-Vorgabe pro Phase aus diesem Kalender. Webinar-Hype-Reel im W2-W3.
 
 **`/funnel`:** Komplette Mama-CEO-Funnel-Architektur (Cart, Bumps, Upsell, Mail-Sequenz) — wird parallel zur Sales-Page aufgesetzt in `08-funnel/`.
 

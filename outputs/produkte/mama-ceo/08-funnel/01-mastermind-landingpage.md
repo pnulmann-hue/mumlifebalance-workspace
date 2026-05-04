@@ -5,7 +5,7 @@
 **Untertitel:** „Mental Load abgeben · Zeit fürs Business zurück gewinnen"
 **Ziel:** Landingpage live ab Mi 13.5. — mind. 100 Webinar-Anmeldungen bis Mi 20.5. 09:00
 **Tech-Empfehlung:** **WordPress (mumlifebalance.ch/ki-webinar)** — via `/wp` direkt deploybar, du hast Admin · Alternative: ThriveCart Free Page
-**Anmeldung:** ManyChat-Keyword `MASTERMIND` als primärer CTA + AC-Formular als Fallback
+**Anmeldung:** ManyChat-Keyword `WEBINAR` als primärer CTA + AC-Formular als Fallback
 **Live geht die Page:** Mittwoch 13.5. 10:00 (siehe `07-launch-kalender.md`)
 
 ---
@@ -19,7 +19,7 @@ Vision      → KI als Mitarbeiterin (ungewohnt, aber konkret)
 Live-Demo   → „Ich zeige dir LIVE 30 Min Bildschirm" (Beweis)
 Story       → Brandastic Schwester-Tod-Aha (Tiefe + Authentizität)
 Live-Bonus  → 1 KI-Bot-Template als Geschenk nur Live (Knappheit)
-CTA         → klare Anmeldung mit ManyChat MASTERMIND
+CTA         → klare Anmeldung mit ManyChat WEBINAR
 ```
 
 **Brand-Bausteine:**
@@ -53,7 +53,7 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 > ✅ Aufzeichnung 48h verfügbar
 > ✅ 100% kostenlos
 >
-> [👉 Schreib „MASTERMIND" auf Instagram] (verlinkt zu ManyChat)
+> [👉 Schreib „WEBINAR" auf Instagram] (verlinkt zu ManyChat)
 > [oder Anmeldung via E-Mail] (AC-Formular Fallback)
 
 **Hero-Visual:** Patricia-Foto authentisch (Setup mit Laptop + Kaffee, lächelnd) — aus `context/Shootingbilder/`
@@ -199,7 +199,7 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 > 🎁 Setup-Anleitung Familien-Bot als Live-Geschenk
 > 💸 Kosten: 0 €
 >
-> [👉 Schreib „MASTERMIND" auf Instagram (mumlifebalance)]
+> [👉 Schreib „WEBINAR" auf Instagram (mumlifebalance)]
 > [oder: hier per E-Mail anmelden ↓]
 
 **Fallback-Formular (AC-Embed):**
@@ -277,7 +277,7 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 2. Tech-Entscheid: WordPress (`/wp` direkt deploy als Draft) oder ThriveCart Free Page?
 3. Bei WP: ich rufe `/wp` und deploye `mumlifebalance.ch/ki-webinar` als Draft (Patricia prüft + publiziert)
 4. AC-Formular setup (Tag `mama-ceo-webinar-anmeldung`)
-5. ManyChat-Keyword `MASTERMIND` Flow scharfstellen
+5. ManyChat-Keyword `WEBINAR` Flow scharfstellen
 6. Erste Stories-Bumps zur Page ab Mi 13.5.
 
 **Verknüpfungen:**

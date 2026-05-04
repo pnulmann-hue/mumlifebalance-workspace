@@ -4,7 +4,7 @@
 **Format:** **Launch-Webinar** mit Cart-Open + Earlybird-Pitch im selben Slot (Julia-Trost-Pattern)
 **Cart-Window:** Mi 20.5. 09:00 → Mi 27.5. 23:59 (7 Tage Earlybird CHF 249)
 **Aufzeichnung:** 48h Replay, läuft aus Fr 22.5. 09:00 (Replay-Push am So 24.5. mit Mail #7)
-**Anmeldung:** kostenlos via ManyChat-Keyword `MASTERMIND` oder Sales-Page-Banner
+**Anmeldung:** kostenlos via ManyChat-Keyword `WEBINAR` oder Sales-Page-Banner
 
 ---
 
@@ -94,21 +94,21 @@
 
 | KW | Aktion |
 |---|---|
-| KW 20 (Mi 13.5.) | Webinar-Anmelde-Page LIVE + ManyChat-Keyword `MASTERMIND` aktiv |
-| KW 20 (Sa 16.5.) | DM-Sequenz für ManyChat MASTERMIND scharfgestellt (4 Touchpoints) |
+| KW 20 (Mi 13.5.) | Webinar-Anmelde-Page LIVE + ManyChat-Keyword `WEBINAR` aktiv |
+| KW 20 (Sa 16.5.) | DM-Sequenz für ManyChat WEBINAR scharfgestellt (4 Touchpoints) |
 | KW 20 (Sa 16.5.) | Pitch-Slides Webinar starten (18-22 Slides Canva) |
 | KW 21 (Di 19.5. 14:00) | Pitch-Slides FERTIG + Bot-Tests |
 | **🚀 KW 21 (Mi 20.5. 09:00) — LAUNCH-DAY** |
 
 ### Anmelde-Quellen
 
-1. **ManyChat-Keyword `MASTERMIND`** (primär)
+1. **ManyChat-Keyword `WEBINAR`** (primär)
    - DM → Bot-Antwort mit Bestätigung + Calendar-Invite + Vorab-Frage
    - Tag in AC: `mama-ceo-webinar-anmeldung`
 
 2. **Sales-Page-Banner** (sekundär)
    - Auf Mama-CEO-Sales-Page ab Mi 13.5. ein Banner: „Mi 20.5. 09:00 LIVE: KI-Webinar"
-   - Klick → ManyChat-Keyword `MASTERMIND` triggern
+   - Klick → ManyChat-Keyword `WEBINAR` triggern
 
 3. **Email an Bestandskundinnen** (Aufwärmphase 2-3)
    - Aufwärmphase-Mails #1-3 in KW 20-21
@@ -117,7 +117,7 @@
 
 | Tag | Wann | Inhalt |
 |---|---|---|
-| **Anmelde-Tag** | sofort nach `MASTERMIND`-Keyword | Bestätigung + Frage „Was beschäftigt dich gerade als Mama-Unternehmerin?" |
+| **Anmelde-Tag** | sofort nach `WEBINAR`-Keyword | Bestätigung + Frage „Was beschäftigt dich gerade als Mama-Unternehmerin?" |
 | **24h vor Webinar** | Di 19.5. 09:00 | Erinnerung mit Zoom-Link + „Heute Vorbereitungs-Tipp: schreibe dir 1 Frage auf" |
 | **2h vor Webinar** | Mi 20.5. 07:00 | „Wir sind in 2h live. Bring Kaffee + Notizblock." |
 | **Direkt nach Webinar** | Mi 20.5. 11:00 | Replay-Link + „Cart läuft 7 Tage — Earlybird CHF 249" + Pitch-Recap |
