@@ -43,9 +43,9 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 > ## Mental Load abgeben · Zeit fürs Business zurück gewinnen.
 
 **Hero-Body (3-4 Zeilen):**
-> Du sagst dir täglich „Ich sollte unbedingt…" — und kommst trotzdem nie dazu? Du machst alles selbst, weil delegieren zu kompliziert ist? Du brennst aus, weil dein Mental Load Business + Haushalt + Kinder gleichzeitig hält?
+> Du sagst dir täglich „Ich sollte unbedingt…" — und kommst trotzdem nie dazu? Du machst alles selbst, weil delegieren zu kompliziert ist? Du brennst aus, weil bei dir alles parallel läuft — Business, Haushalt, Kinder?
 >
-> **In diesem Live-Mastermind zeige ich dir, wie KI dich genau da entlastet — heute Abend bist du raus aus der Schuld-Spirale.**
+> **In diesem Live-Mastermind zeige ich dir, wie KI dich genau da entlastet — am Ende der 90 Min bist du raus aus der „Hab keine Zeit fürs Business"-Spirale.**
 
 **CTA-Box (rechts oder unter Hero):**
 > ✅ Mittwoch 20. Mai 2026, 09:00 Uhr
@@ -70,7 +70,7 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 >
 > ☑ Du hast 47 Apps, Tools und Listen — und trotzdem fühlst du dich, als würdest du alles im Kopf tragen.
 >
-> ☑ Du planst Wochen mit Kids, Haushalt, Kunden, Team-Calls, Schul-Termine — und frägst dich: *Warum mache ich eigentlich alles allein?*
+> ☑ Du planst Wochen mit Kids, Haushalt, Kunden, Team-Calls, Schul-Termine — und fragst dich: *Warum mache ich eigentlich alles allein?*
 >
 > ☑ Du weisst, du müsstest delegieren — aber niemanden für 4'000 CHF/Monat einstellen können.
 >
