@@ -198,6 +198,30 @@ Output: `outputs/produkte/[slug]/` mit 10 Unterordnern/Dateien (siehe `outputs/p
 
 **Beispiel-HTML mit allen 8 Templates:** `outputs/stories/_template-beispiel/slides.html`
 
+### /hormozi
+
+**Zweck:** Copywriting-Doktor nach Alex Hormozi. Nimmt einen bestehenden Text (Caption, Salespage-Block, Mail, Hook, Bio, CTA, Story-Slide, Headline, Werbeanzeige …) und überarbeitet ihn nach Hormozis 7 Frameworks + 12 Persuasion Hacks + Schreibregeln — **ohne Patricias Brand-Voice zu zerstören**.
+
+Hormozi ist hier der STRUKTUR- und PERSUASION-Layer; Patricias warme/empowernde Tonalität bleibt zwingend erhalten.
+
+**6 Modi:**
+1. **Doktor** (Standard) — Diagnose + zwei Varianten (sicher / mutig) + Change-Log mit Hormozi-Begründungen
+2. **Hook-Battle** — 10 Hook-Varianten nach 10 verschiedenen Hormozi-Hook-Kategorien
+3. **Headline-MAGIC** — MAGIC-Offer-Formula (Magnet+Avatar+Goal+Interval+Container) + Lead-Magnet-Naming-Formula
+4. **Value-Equation-Audit** — Angebot durchleuchten: Traumergebnis · Erfolgswahrscheinlichkeit · Zeit-Verzögerung · Aufwand
+5. **CLOSER-DM** — DM-Antwort nach CLOSER-Framework (Clarify · Label · Overview · Sell · Explain · Reinforce)
+6. **4-Pass-Edit** — für lange Texte (Salespages, Mails, Blog): Struktur → Substanz → Klarheit → Empathie
+
+**Wissensgrundlagen:**
+- `reference/hormozi/copywriting-bible.md` — alle 7 Frameworks + 12 Persuasion Hacks + Schreibregeln + Anti-Patterns + 4-Pass-Edit-Prozess (verdichtet aus $100M Offers, $100M Leads, ACQ Ads/Closer Handbook, „The Game"-Podcast Ep 245/563/927, LinkedIn/X-Posts, David-Perell-Interview)
+- `context/brand-voice.md` + `context/business-info.md` + `context/hook-framework.md`
+
+**Pflicht am Start:** Texttyp · Profil (Mentoring/doTERRA) · Ziel · Avatar · Original-Text.
+
+**Brand-Voice-Pakt:** Hormozi-Defaults wie „Bro/Loser/Crush it", aggressives Repel oder All-Caps werden zu Patricia-konformer Sprache übersetzt. doTERRA-Compliance (keine Heilversprechen) immer eingehalten.
+
+Output: `outputs/hormozi/YYYY-MM-DD-[texttyp]-[slug].md` mit Original + Diagnose + Variante A/B + Change-Log + angewandte Frameworks.
+
 ### /salespage
 
 **Zweck:** Komplette Sales-Page nach Julia Trosts Methodik erstellen.
