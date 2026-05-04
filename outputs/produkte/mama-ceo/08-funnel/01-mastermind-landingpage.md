@@ -87,15 +87,15 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 > ## Stell dir vor, am Sonntag-Abend…
 
 **Body (Tagebuch-Style, persönlich):**
-> Du schreibst deinem Familien-Bot: *„Plan mir die Woche mit Schul-Terminen, Power-Zeiten und 2 Kunden-Calls."*
+> Du sagst deinem Kochassistenten: *„Plan mir die Woche. Ich hab noch Kürbis aus dem Garten, Sa kommt Besuch, So gehen wir wandern."*
 >
-> 30 Sekunden später hast du:
-> - einen vollständigen Wochenplan,
-> - die passende Einkaufsliste,
-> - 3 Caption-Vorschläge für deine Reels,
-> - eine Pitch-Mail an die Kundin, die du seit 2 Wochen aufschiebst.
+> 5 Minuten später liegt in deinem Google Drive:
+> - der komplette Wochenplan (Mittag + Abend, alle 6 Personen),
+> - die Einkaufsliste sortiert nach Migros-Gängen + aktuellen Aktionen,
+> - alle Rezepte direkt verlinkt,
+> - Wandertag-Snacks die nicht matschig werden.
 >
-> Das alles ohne 1× Ctrl+C, ohne 1× „warte, was war nochmal die Schul-Adresse?", ohne 1× das schlechte Gewissen, dass du eigentlich noch 12 andere Dinge machen müsstest.
+> Und nebenbei hat dir dein Brand-Voice-Bot 3 Reels-Hooks für die Woche generiert — in deiner Stimme, nicht generisches KI-Gewäsch.
 >
 > **Genau das zeige ich dir Live am Mittwoch — Schritt für Schritt.**
 
@@ -111,14 +111,17 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 > **🧠 Die Schuld-Spirale durchschauen**
 > Warum „Ich sollte unbedingt" kein Charakterfehler ist — und wie du den Kreislauf in 1 Schritt unterbrichst (mit Daten-Anker aus 2026).
 
-> **🤖 Dein erster KI-Mitarbeiter LIVE gebaut**
-> Ich zeige dir 30 Min Bildschirm-Aufnahme: Custom GPT für Familien-Mental-Load · Brand-Voice-Bot für Reels-Hooks · Wie ich beide täglich nutze.
+> **🤖 Mein Kochassistent LIVE im Einsatz**
+> Ich zeige dir 30 Min am Bildschirm: meinen selbst-gebauten Kochassistenten — kennt unsere 6-Personen-Familie, Rezepte, Vorräte, Aktionen. Liefert mir jede Woche Wochenplan + Einkaufsliste + Rezepte direkt nach Google Drive. Plus: ein zweiter Bot fürs Business.
 
 > **⚡ Der Wochenrhythmus, der nicht zerbricht wenn Kinder krank sind**
 > Mein Energie-Wochenplan + die 4 Mama-Rollen — und warum 2 Power-Zeiten täglich reichen, wenn du sie ehrlich findest.
 
-**Bonus-Box (auffällig, vielleicht Sticker-Style):**
-> 🎁 **NUR LIVE-TEILNEHMER:** Du bekommst meine fertige Setup-Anleitung für den Familien-Bot zum Download — Custom-GPT-Vorlage + Prompt-Bibliothek + 5 fertige Wochenpläne.
+**Bonus-Box (auffällig, Sticker-Style):**
+> 🎁 **NUR LIVE-TEILNEHMER:** Mein Kochassistent zum Selbst-Einrichten
+> - Der komplette Skill-Prompt (genau der, den ich live nutze)
+> - Schritt-für-Schritt: Wie du Claude Code bei dir einrichtest
+> - Erste-Schritte-Guide: Dein erster eigener KI-Mitarbeiter in 30 Min
 
 ---
 
@@ -132,9 +135,11 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 >
 > **09:10 — 09:25** Schuld-Spirale entlarvt — und warum 58% der Unternehmerinnen mit KI 20+ Stunden im Monat sparen (15 Min, mit Daten)
 >
-> **09:25 — 09:55** ⭐ **DAS HERZSTÜCK:** Live-Demo Familien-Bot + Brand-Voice-Bot — direkt am Bildschirm. Du siehst, was rein geht, was raus kommt, wie du es selbst nachbaust. (30 Min)
+> **09:25 — 09:42** ⭐ **Demo 1: Mein Kochassistent live (17 Min)** — Mein selbst-gebauter Bot kennt unsere 6-Personen-Familie, Rezepte, Vorräte, Garten-Saisonalität, Migros-Aktionen. In 5 Min liefert er Wochenplan + Einkaufsliste + Rezepte direkt nach Google Drive. Ich spare 5+ Stunden pro Woche.
 >
-> **09:55 — 10:10** Wie es nach dem Mastermind weitergeht — mit Mama-CEO als Möglichkeit (15 Min)
+> **09:42 — 09:55** **Demo 2: Brand-Voice-Bot fürs Business (13 Min)** — Was im Privaten geht, geht auch im Business. Reels-Hooks + Captions in deiner Stimme.
+>
+> **09:55 — 10:10** Wie es weitergeht — Im Mastermind 1 Skill, in Mama-CEO baust du dein gesamtes KI-Team (Content-Planung, Brand-Voice, Familien-Mental-Load, Email-Backoffice). Programm-Vorstellung, du entscheidest selbst. (15 Min)
 >
 > **10:10 — 10:30** Q&A — du fragst, ich antworte (20 Min)
 

@@ -47,19 +47,31 @@
    Haushalt. Mama-CEO verbindet beides — weil dein Mental Load auch beides ist."
 
 00:25 — 00:55  LIVE-DEMO (30 Min) — DAS HERZSTÜCK
-   Patricia macht echte Bildschirm-Aufnahme, KEIN Tutorial-Style:
+   Patricia macht echte Bildschirm-Aufnahme von Tools, die sie täglich nutzt:
 
-   00:25 — 00:40  Demo 1: Familien-Organisator-Bot (Custom GPT)
-      → Prompt: „Plane mir die Woche mit Familienkalender für Mio (5J) Kindergarten +
-        Lara (8J) Schule + meine Power-Zeiten 9-11 + 21-22"
-      → Bot antwortet mit strukturiertem Wochenplan + Einkaufsliste
-      → Pat: „Genau das mache ich JEDEN SONNTAG. Einmal eingerichtet."
+   00:25 — 00:42  Demo 1: Mein Kochassistent (17 Min) — `/mealplan` Skill
+      Patricia öffnet Claude Code, tippt `/mealplan`. Bot lädt Briefing.
 
-   00:40 — 00:55  Demo 2: Brand-Voice-Bot (Claude Project)
+      Bot fragt aktiv: „Was steht nächste Woche an? Besonderheiten?"
+      Pat: „Sa kommt Besuch, So gehen wir wandern in Appenzell, Mann ist Mi-Do weg."
+
+      Bot fragt: „Was hast du als Vorrat? Was muss aufgebraucht werden?"
+      Pat: „Halbe Pouletbrust, viel Kürbis aus dem Garten, Skyr läuft Mi ab."
+
+      Bot generiert: 7-Tage-Wochenplan (Mittag + Abend für 6 Personen mit
+      Patricias MyBodyAdvice-Makros) + Migros-Einkaufsliste mit Aktionen +
+      Rezepte verlinkt → Output direkt in Google Drive.
+
+      Punch: „Ich spare damit 5+ Stunden pro Woche — kein Witz.
+              Und das Wichtigste: ICH HABE DEN BOT SELBST GEBAUT.
+              Mit Claude Code. Genau das zeig ich euch Live."
+
+   00:42 — 00:55  Demo 2: Brand-Voice-Bot fürs Business (13 Min)
       → Prompt: „Schreib mir 3 Reels-Hooks zur Schuld-Spirale für Network-Mamas,
         in meiner Stimme."
       → Claude liefert 3 fertige Hooks
-      → Pat: „Das hier hätte mich früher 60 Min gekostet. Jetzt: 30 Sek."
+      → Pat: „Was du im Privaten kannst, kannst du auch im Business.
+              Genau darum geht's in Mama-CEO."
 
 00:55 — 01:10  PITCH MAMA-CEO + EARLYBIRD-PRICING (15 Min)
    - 5-Säulen-Übersicht (Energie · Mindset · System · KI · Network)
@@ -137,8 +149,9 @@
 
 ## Pre-Mastermind-Checklist (Patricia, Di 19.5. NACHMITTAG)
 
-- [ ] Familien-Bot (Custom GPT) live + 3× anders gepromptet, immer sauber
-- [ ] Brand-Voice-Bot (Claude Project) live + Hook-Generation klappt
+- [ ] Kochassistent (`/mealplan` Skill) live + 2× anders durchgespielt, immer sauber
+- [ ] Brand-Voice-Bot live + Hook-Generation klappt
+- [ ] Live-Bonus-Pack vorbereitet: Skill-Prompt + Claude-Code-Setup-Anleitung + Erste-Schritte-Guide (PDF zum Download)
 - [ ] Pitch-Slides (18-22 Stück) fertig in Canva
 - [ ] Zoom-Webinar-Link erstellt + an Anmelder versendet
 - [ ] Replay-Vimeo-Link vorbereitet (passwortgeschützt)
