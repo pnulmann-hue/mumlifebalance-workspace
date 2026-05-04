@@ -17,17 +17,19 @@
     html { scroll-behavior: smooth; }
 
     :root {
-      --bg-deep: #1a0d0a;            /* sehr dunkles warm-braun */
-      --bg-section: #221310;         /* leicht heller für Section-Wechsel */
-      --bg-card-soft: #c66b4a;       /* helle Terracotta-Karte */
-      --bg-card-strong: #9a4a2e;     /* dunkle Terracotta-Karte */
-      --creme: #f1ecdd;              /* warmes Creme */
-      --creme-soft: #d8cdb1;         /* gedämpftes Creme */
-      --gold: #d4a056;               /* warmes Gold */
-      --terracotta: #c66b4a;         /* CTA primary */
-      --terracotta-hover: #d97a55;
-      --text-dim: #b5a8a0;
-      --line: rgba(241, 236, 221, 0.15);
+      --bg-deep: #0f2a3a;            /* sehr dunkles Petrol — edel */
+      --bg-section: #29556d;         /* Patricia-Brand Petrol-Blau */
+      --bg-card-soft: #12828c;       /* Patricia-Brand Petrol-Türkis */
+      --bg-card-strong: #dc822e;     /* Patricia-Brand Orange */
+      --creme: #f1ecdd;              /* Patricia-Brand Creme */
+      --creme-soft: #d8d2c2;         /* gedämpftes Creme */
+      --orange: #dc822e;             /* Akzent-Orange (Headlines, Borders) */
+      --orange-soft: #e69b58;
+      --terracotta: #dc822e;         /* CTA primary = Orange */
+      --terracotta-hover: #c46818;   /* CTA hover */
+      --gold: #dc822e;               /* Legacy: alle Gold-References = Orange */
+      --text-dim: #9eb5c3;           /* hellgrau-blau für Body-Text */
+      --line: rgba(241, 236, 221, 0.18);
     }
 
     body {
@@ -67,8 +69,8 @@
       position: absolute; inset: 0;
       background:
         url('hero.jpg') center/cover no-repeat,
-        linear-gradient(160deg, #3a1f15 0%, #1a0d0a 50%, #2a1410 100%),
-        radial-gradient(ellipse at 30% 30%, #4a2515 0%, #1a0d0a 70%);
+        linear-gradient(160deg, #29556d 0%, #0f2a3a 50%, #1a3a4d 100%),
+        radial-gradient(ellipse at 30% 30%, #12828c 0%, #0f2a3a 70%);
       filter: brightness(0.6);
       z-index: 0;
     }
@@ -76,7 +78,7 @@
     .hero-overlay {
       position: absolute; inset: 0;
       background:
-        linear-gradient(180deg, rgba(26,13,10,0.5) 0%, rgba(26,13,10,0.15) 35%, rgba(26,13,10,0.15) 65%, rgba(26,13,10,0.7) 100%);
+        linear-gradient(180deg, rgba(15,42,58,0.55) 0%, rgba(15,42,58,0.15) 35%, rgba(15,42,58,0.15) 65%, rgba(15,42,58,0.75) 100%);
       z-index: 1;
     }
 
@@ -394,19 +396,14 @@
 
     .about-photo {
       aspect-ratio: 1;
-      background: linear-gradient(135deg, var(--bg-card-soft), var(--bg-card-strong));
+      background:
+        url('patricia.jpg') center/cover no-repeat,
+        linear-gradient(135deg, var(--bg-card-soft), var(--bg-card-strong));
       border-radius: 50%;
       max-width: 320px;
       width: 100%;
       margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--creme-soft);
-      font-style: italic;
-      text-align: center;
-      padding: 1rem;
-      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 0 0 0 4px var(--orange);
     }
 
     .about-body h2 {
@@ -681,7 +678,7 @@
   <!-- ============== ÜBER PATRICIA ============== -->
   <section class="about">
     <div class="about-wrap">
-      <div class="about-photo">[Patricia-Foto<br>(persönlich, warm)]</div>
+      <div class="about-photo"></div>
       <div class="about-body">
         <h2>Wer das hier <em>hält</em></h2>
         <p>Ich bin Patricia. Mompreneurin, Network-Coach, Mama von 4.</p>
