@@ -66,18 +66,23 @@
     .hero-bg {
       position: absolute; inset: 0;
       background:
-        linear-gradient(160deg, rgba(26,13,10,0.85) 0%, rgba(34,19,16,0.75) 50%, rgba(26,13,10,0.95) 100%),
-        radial-gradient(ellipse at 30% 30%, #3a1f15 0%, #1a0d0a 70%);
+        url('hero.jpg') center/cover no-repeat,
+        linear-gradient(160deg, #3a1f15 0%, #1a0d0a 50%, #2a1410 100%),
+        radial-gradient(ellipse at 30% 30%, #4a2515 0%, #1a0d0a 70%);
+      filter: brightness(0.6);
       z-index: 0;
     }
 
-    /* Wenn Patricia ein Hero-Bild hat, hier einfügen:
-       background: url('hero.jpg') center/cover, linear-gradient(...), ...
-    */
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(180deg, rgba(26,13,10,0.5) 0%, rgba(26,13,10,0.15) 35%, rgba(26,13,10,0.15) 65%, rgba(26,13,10,0.7) 100%);
+      z-index: 1;
+    }
 
     .hero-content {
-      position: relative; z-index: 1;
-      max-width: 920px;
+      position: relative; z-index: 2;
+      max-width: 1000px;
     }
 
     .hero-eyebrow {
@@ -87,10 +92,12 @@
       font-size: 0.9rem;
       letter-spacing: 0.25em;
       text-transform: uppercase;
-      margin-bottom: 30px;
+      margin-bottom: 36px;
       padding: 10px 24px;
       border: 1px solid var(--gold);
       border-radius: 100px;
+      background: rgba(26, 13, 10, 0.4);
+      backdrop-filter: blur(4px);
     }
 
     .hero-eyebrow .pulse {
@@ -106,12 +113,12 @@
 
     .hero-headline {
       font-family: 'Philosopher', serif;
-      font-size: clamp(2.2rem, 6vw, 4.5rem);
+      font-size: clamp(2.4rem, 7vw, 5rem);
       font-weight: 700;
-      line-height: 1.1;
+      line-height: 1.05;
       color: var(--creme);
-      margin-bottom: 30px;
-      text-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      margin-bottom: 36px;
+      text-shadow: 0 4px 32px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.6);
     }
 
     .hero-headline .accent { color: var(--gold); font-style: italic; }
@@ -119,12 +126,13 @@
     .hero-sub {
       font-family: 'Philosopher', serif;
       font-style: italic;
-      font-size: clamp(1.2rem, 2.8vw, 1.8rem);
+      font-size: clamp(1.3rem, 3vw, 2rem);
       font-weight: 400;
-      color: var(--creme-soft);
+      color: var(--creme);
       margin-bottom: 50px;
-      max-width: 700px;
+      max-width: 800px;
       margin-left: auto; margin-right: auto;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.7);
     }
 
     .btn-cta {
@@ -563,8 +571,10 @@
 <body>
 
   <!-- ============== HERO ============== -->
+  <!-- HINWEIS: hero.jpg ist der Patricia-Foto-Slot. Foto ins selbe Verzeichnis legen mit Name "hero.jpg" -->
   <section class="hero">
     <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <span class="hero-eyebrow"><span class="pulse"></span>Live · Mi 20. Mai 2026 · 09:00 Uhr · Kostenlos</span>
       <h1 class="hero-headline">In 90 Min: Dein Mama-Leben mit <span class="accent">KI-Assistenten</span> umkrempeln.</h1>
@@ -632,8 +642,8 @@
 
       <div class="learn-card strong">
         <span class="card-number">03</span>
-        <h3>Brand-Voice-Bot fürs Business</h3>
-        <p>Was im Privaten geht, geht auch im Business. Reels-Hooks und Captions in DEINER Stimme — nicht generisches KI-Gewäsch. In 30 Sekunden.</p>
+        <h3>Mein Content-Assistent fürs Business</h3>
+        <p>Reels-Hooks und Captions in <em>deiner</em> Stimme — kein generisches KI-Gewäsch. In unter 1 Minute statt Stunden. Was im Privaten geht, geht auch im Business.</p>
       </div>
 
       <div class="learn-card soft">
@@ -663,7 +673,7 @@
       <span class="bottom">spare ich pro Woche — kein Witz.</span>
     </h2>
     <p class="urgency-desc">
-      Mit meinem Kochassistenten plane ich die Mahlzeiten für 6 Personen in unter 5 Minuten. Mit dem Brand-Voice-Bot schreibe ich Reels-Hooks in 30 Sekunden statt 60 Minuten. Das sind keine Tipps für Tech-Nerds — das ist alltagstauglich für jede Mompreneurin, die keinen Bock mehr auf Mental Load hat. <em>Genau das zeige ich dir Live am Mittwoch.</em>
+      Mit meinem Kochassistenten plane ich Mahlzeiten für 6 Personen in unter 5 Minuten. <strong>Mit meinem Content-Assistenten schreibe ich Hooks und Captions in unter 1 Minute statt Stunden.</strong> Das sind keine Tipps für Tech-Nerds — das ist alltagstauglich für jede Mompreneurin, die keinen Bock mehr auf Mental Load hat. <em>Genau das zeige ich dir Live am Mittwoch.</em>
     </p>
     <a href="#anmeldung" class="btn-cta" style="margin-top: 50px;">Platz sichern</a>
   </section>
