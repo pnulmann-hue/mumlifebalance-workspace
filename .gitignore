@@ -137,6 +137,10 @@ Screenshot*.jpg
 # Ausnahmen: diese .png/.jpg-Files bleiben drin (wichtige Brand-Assets in scripts/)
 !scripts/bio-check-bot/public/images/patricia-hero.jpg
 
+# Ausnahmen: Mama-CEO Webinar-Landingpage (Hero + About Foto)
+!outputs/produkte/mama-ceo/08-funnel/landingpage-mastermind/hero.jpg
+!outputs/produkte/mama-ceo/08-funnel/landingpage-mastermind/patricia.jpg
+
 # Ausnahmen: produktive Launch-Assets (designed Story-/Karussell-PNGs zum direkten Hochladen)
 !outputs/funnels/**/*.png
 !outputs/funnels/**/*.jpg
@@ -223,5 +227,5 @@ reference/julia-trost/Das ultimative VML Workbook.pdf
 reference/julia-trost/Launch Queen (1).pdf
 reference/julia-trost/Launch queen workbook.pdf
 reference/julia-trost/Launch Queen.pdf
-reference/julia-trost/Produktkommunikation - Produkttreppe_Zusammenführen.pdf
+reference/julia-trost/Produktkommunikation - Produkttreppe_Zusammenfï¿½hren.pdf
 reference/julia-trost/Vorlagen Story LML.pdf
