@@ -180,6 +180,7 @@ Lies in dieser Reihenfolge — IMMER vor jedem Story-Briefing:
 13. `context/business-info.md`
 14. `context/active-funnels.json` — welche Funnels laufen aktuell?
 15. `context/manychat-keywords.md` — Keywords für Story-CTAs
+16. ⭐ **`reference/hormozi/copywriting-bible.md`** — **Hormozi-Bonus-Layer (seit 2026-05-04)**. Wende auf jede Story-Sequenz an: **(a)** ++/−− × Self/Friends/Enemies-Matrix (variier über Slide-Sequenz alle 6 Zellen pro Woche — Status > Benefit), **(b)** Pain-is-the-Pitch (Schmerz in MOMENTEN — „Du wachst um 3 Uhr nachts auf" statt „Du bist überfordert"), **(c)** Success Event 3D-Szene (konkrete Erfolgs-Szene auf einem Slide — „Du sitzt sonntags mit Kaffee, 3 Verkäufe über Nacht"), **(d)** Container-Wörter (System/Methode statt „Tipp"), **(e)** P.S.-Slide am Ende der Sequenz mit stärkster Promise + CTA. **Brand-Voice + doTERRA-Compliance bleiben Pflicht.**
 
 ### Bei doTERRA-Profil — ZUSÄTZLICHE PFLICHT
 16. **`context/doterra/patricia-wendepunkt-story.md`** — Single Source of Truth für jede doTERRA-Story

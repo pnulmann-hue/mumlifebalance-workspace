@@ -224,6 +224,25 @@ Wenn Patricia einen NEUEN Funnel startet — bau alles auf einmal:
 
 ---
 
+## 🔗 Verzahnung mit anderen Skills
+
+Hormozi ist **Bonus-Layer in allen Content-Skills**, nicht nur ein eigener Modus. So fügt er sich ein:
+
+| Skill | Wo Hormozi greift | Wer entscheidet |
+|---|---|---|
+| `/freitag-hooks` | Hook-Variation, Validity×Utility-Filter, Pain-in-Momenten | autonom (Bonus-Layer in der Skill-Datei) |
+| `/karussell` | Slide-1-Hook, ++/−−×Self/Friends/Enemies, P.S.-Slide, Container-Wörter | autonom |
+| `/reels` | Hook + Solve-for-Congruence + Container-Wörter | autonom |
+| `/story` | ++/−−×Self/Friends/Enemies-Matrix über Wochen-Slides | autonom |
+| `/montag` | Sanity-Check vor Schedule (12 Hacks) | autonom |
+| `/produkt` | MAGIC-Naming + Strangely Familiar + Value Equation | autonom |
+| `/salespage` | 12-Block-Long-Form-Struktur + alle Persuasion Hacks | autonom |
+| `/funnel` Mode 3 | **delegiert die Ad-Copy explizit an `/hormozi` Modus 7** (Strategie bleibt bei Julia/Funnel) | Hand-Off |
+
+**Bei Mode 9 (Funnel-Komplett) hier:** Du übernimmst die Copy für alle Ad-/Landingpage-/Mail-Stücke. Für Strategie (Targeting, AC-Setup, Custom Audiences, Tracking) verweisst du explizit auf `/funnel`.
+
+---
+
 ## Härteste Regel: Brand-Voice-Pakt mit Patricia
 
 Patricia ist KEIN Bro-Marketer. Folgendes BLEIBT, auch wenn Hormozi anders schreiben würde:

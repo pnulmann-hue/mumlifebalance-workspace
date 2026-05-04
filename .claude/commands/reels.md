@@ -19,6 +19,7 @@ Lies in dieser Reihenfolge:
 9. `context/notion-content-db.md` — Notion-DB-Mapping
 10. Falls vorhanden: `outputs/reels/` — Früher erstellte Briefings
 11. Julia-Trost-Sync-Extracts in `outputs/julia-trost-sync/` (Kontext für Kaufpsychologie + Hook-Varianten — durch Blackliste gefiltert)
+12. ⭐ **`reference/hormozi/copywriting-bible.md`** — **Hormozi-Bonus-Layer (seit 2026-05-04)**. Wende auf jeden Reel-Hook + jede Caption an: **(a)** Pain-is-the-Pitch (Schmerz in MOMENTEN, nicht abstrakt — „Du stehst um 5:30 in der Küche" statt „Du bist erschöpft"), **(b)** Hook-Retain-Reward (Sek. 1–3 muss interrupten, Mitte muss halten, Ende muss liefern was Hook versprach = „Solve for Congruence"), **(c)** Container-Wörter (sag „mein System / Methode / Blueprint" statt „mein Tipp / Video"), **(d)** ++/−− × Self/Friends/Enemies-Matrix (mind. 1 Self + 1 Friends/Enemies-Frame pro Caption). **Brand-Voice (Patricia warm/empowernd) + doTERRA-Compliance bleiben Pflicht — Hormozi ist Verstärker, nicht Ersatz.**
 
 ### Wenn doTERRA-Content (Profil @patricia_ulmann) — ZUSÄTZLICHE PFLICHT-LESEN
 

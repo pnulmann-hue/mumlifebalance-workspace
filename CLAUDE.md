@@ -223,6 +223,8 @@ Hormozi ist hier der STRUKTUR- und PERSUASION-Layer; Patricias warme/empowernde 
 
 **Brand-Voice-Pakt:** Hormozi-Defaults wie „Bro/Loser/Crush it", aggressives Repel oder All-Caps werden zu Patricia-konformer Sprache übersetzt. doTERRA-Compliance (keine Heilversprechen) immer eingehalten.
 
+**Bonus-Layer-Integration (seit 2026-05-04):** Die Hormozi-Bibel ist als Pflicht-Lektüre in **alle 8 Content-Skills** eingebaut — `/freitag-hooks`, `/karussell`, `/reels`, `/story`, `/montag`, `/produkt`, `/salespage`, `/funnel`. Jeder Skill wendet die jeweils relevanten Hormozi-Sektionen automatisch an (z.B. `/freitag-hooks` nutzt 8 Hook-Kategorien + Validity×Utility-Filter, `/salespage` nutzt 12-Block-Long-Form-Struktur, `/funnel` Mode 3 delegiert die Ad-Copy explizit an `/hormozi` Modus 7). **Hormozi ist Verstärker, nicht Ersatz** — Brand-Voice + doTERRA-Compliance + Julia-Trost-Strategie haben weiter Vorrang.
+
 Output: `outputs/hormozi/YYYY-MM-DD-[texttyp]-[slug].md` mit Original + Diagnose + Variante A/B + Change-Log + angewandte Frameworks.
 
 ### /salespage

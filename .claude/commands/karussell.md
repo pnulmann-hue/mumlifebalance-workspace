@@ -20,6 +20,7 @@ Lies in dieser Reihenfolge:
 10. `context/notion-content-db.md` — Notion-Mapping
 11. Falls vorhanden: `outputs/karussells/` — früher erstellte Briefings
 12. Julia-Trost-Sync-Extracts in `outputs/julia-trost-sync/` (Kontext für Kaufpsychologie + Hook-Varianten)
+13. ⭐ **`reference/hormozi/copywriting-bible.md`** — **Hormozi-Bonus-Layer (seit 2026-05-04)**. Wende auf jedes Karussell an: **(a)** Slide 1 = Hook nach 8 Hormozi-Hook-Kategorien (Schock-Statistik, Konträre Meinung, Spez. Versprechen, Curiosity Gap, Pain-Frage, Identifikation, Bevor-Nachher, „Wie X ohne Y"), **(b)** mind. 1 Slide nach ++/−− × Self/Friends/Enemies-Matrix (Status-Trigger), **(c)** Authority Stack (3 Zahlen) statt vager Superlative, **(d)** vorletzte Slide = P.S.-Slide (Hack #10 — Wiederholung der stärksten Promise), **(e)** Container-Wörter (System/Blueprint/Methode statt „Tipp/Anleitung"), **(f)** PAS-UM-Logik wenn Storytelling-Karussell (Problem-Agitation-Unique-Mechanism mit NAMEN). **Brand-Voice + doTERRA-Compliance bleiben Pflicht.**
 
 ### Wenn doTERRA-Content (Profil @patricia_ulmann) — ZUSÄTZLICHE PFLICHT-LESEN
 

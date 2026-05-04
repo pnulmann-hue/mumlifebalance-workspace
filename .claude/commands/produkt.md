@@ -49,6 +49,7 @@ Je nach Antwort lädst du unterschiedlichen Kontext und passt Ton, Zielgruppe un
 
 ### IMMER zusätzlich:
 - `context/notion-produkte-db.md` — **Produkt-DB-Struktur + Felder + A→B→E→M→Z-Logik**
+- ⭐ **`reference/hormozi/copywriting-bible.md`** — **Hormozi-Bonus-Layer (seit 2026-05-04)**. Zwingend anwenden bei: **(a)** Produkt-Naming → MAGIC-Formula (Magnet+Avatar+Goal+Interval+Container) PLUS „Strangely Familiar"-Test (zwischen „kenn ich schon" und „hä?"), **(b)** Lead-Magnet-Naming → Formel `[Zahl]+[Adjektiv]+[Zielgruppe]+[Outcome]+[Zeitrahmen]`, **(c)** Wertversprechen → Value Equation gegenchecken (Traumergebnis × Erfolgswahrscheinlichkeit / Zeit-Verzögerung × Aufwand) — mind. 1 Verbesserung pro Achse vorschlagen, **(d)** Container-Wörter — Produkt heisst NIE „Mein Kurs" oder „Mein Video" sondern „System / Methode / Blueprint / Framework / Protokoll", **(e)** Reason-Why beim Launch-Pitch eingebaut. **Brand-Voice (Patricia warm/empowernd) + doTERRA-Compliance bleiben Pflicht.**
 
 ### Wenn doTERRA-Content (Profil @patricia_ulmann) — ZUSÄTZLICHE PFLICHT-LESEN
 

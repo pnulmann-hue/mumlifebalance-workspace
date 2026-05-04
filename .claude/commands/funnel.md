@@ -257,6 +257,10 @@ Nach abgeschlossener Planung. Gehst die Liste durch und baust jeden Schritt:
 2. `IG Reichweiten Booster/Instagram Werbeanzeigen - 849948822.txt` — älterer Ergänzungs-Mitschnitt
 3. `Leadgewinnung leicht gemacht/Leadgewinnung über Beitrag bewerben - 953120178.txt` — Boost-Strategie
 4. `Online Business Academy (OBA)/Bewirb deine Beiträge - 986325219.txt` — Welche Posts skalieren
+5. ⭐ **`reference/hormozi/copywriting-bible.md`** — **Hormozi-Bonus-Layer (seit 2026-05-04)**, insbesondere die Sektion **„HORMOZI AD-ANATOMIE"** (14-Bausteine-Ad + 3 Compliance-Pivots). Verzahnung Julia/Hormozi:
+   - **Julia liefert die STRATEGIE:** welcher Painpoint, welcher Funnel, welche Audience, welches Budget, welche Skalierung, welcher Boost-vs-Neu-Creative-Ansatz, welche Custom Audiences, welches Tracking
+   - **Hormozi liefert die COPY-ANATOMIE:** die eigentliche Ad-Text-Struktur (Qualifizierung → Bold Claim → Reason Why → Pain Stack → Reframe → Unique Mechanism → Authority Stack → Logische Urgency → Lead-Magnet-CTA) PLUS die Compliance-Pivots (Meta + doTERRA)
+   - **Konkret:** Wenn du in Mode 3 ein Ad-Creative baust, **delegiere die Copy-Phase explizit an `/hormozi` Modus 7 (Ad-Bauplan)** ODER wende seine 14-Bausteine-Anatomie direkt an. Strategie/Targeting bleibt aber bei Julia + dir hier.
 
 **Julias Kern-Strategie** (aus allen 3 Quellen): Organisch gut performenden Post finden → mit Budget skalieren. Kein Cold-Ad-Creative neu erfinden.
 

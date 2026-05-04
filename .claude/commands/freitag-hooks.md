@@ -35,6 +35,7 @@ Lies in dieser Reihenfolge:
 7. `reference/content-bot-system.md` — IDs + Workflow
 8. **Memory-Regeln:** alle `feedback_*.md` Files (besonders: keine erfundenen Zahlen, Hooks-Inspiration-nicht-Copypaste, Karussell-max-10-Folien, schweben-statt-hovern, PIE-Strategie-Themen-Variation)
 9. **Letzte 4 Wochen:** `outputs/karussells/` + `outputs/reels/` — was haben wir kürzlich gepostet (Doppelung vermeiden)
+10. ⭐ **`reference/hormozi/copywriting-bible.md`** — **Hormozi-Bonus-Layer (seit 2026-05-04)**. Wende auf JEDEN der 20 Hooks an: **(a)** Validity-×-Utility-Filter (Hook ist WAHR UND ändert Verhalten? Wenn nur eines davon → streichen, neuen generieren), **(b)** Pain-is-the-Pitch (mind. 6 der 20 Hooks beschreiben Schmerz in einem konkreten MOMENT, nicht abstrakt — „Du stehst um 5:30 in der Küche" statt „Du bist erschöpft"), **(c)** Streue über die 20 Hooks alle 8 Hormozi-Hook-Kategorien (Schock-Statistik, Konträre Meinung, Spez. Versprechen, Curiosity Gap, Pain-Frage, Identifikation, Bevor-Nachher, „Wie X ohne Y") — nicht nur Patricias 5 Kategorien, **(d)** mind. 2 Hooks aktivieren ++/−− × Self/Friends/Enemies-Status-Frame, **(e)** mind. 1 Hook nutzt Authority-Stack-Pattern (3 spezifische Zahlen). **Brand-Voice + doTERRA-Compliance bleiben Pflicht.**
 
 ### Wenn doTERRA-Content (Profil @patricia_ulmann) — ZUSÄTZLICHE PFLICHT-LESEN
 

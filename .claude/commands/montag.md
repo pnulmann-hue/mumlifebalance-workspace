@@ -45,6 +45,7 @@ Wo:
 5. `reference/content-bot-system.md` — IDs (Canva-Templates, Posting-Queue-Folder, Blotato accountIds)
 6. **Memory-Regeln:** alle `feedback_*.md` (besonders: keine erfundenen Zahlen, schweben-statt-hovern, Karussell-max-10-Folien, Foto↔Neutral-Rotation)
 7. `outputs/karussells/` + `outputs/reels/` letzte 4 Wochen — Doppelung vermeiden
+8. ⭐ **`reference/hormozi/copywriting-bible.md`** — **Hormozi-Bonus-Layer (seit 2026-05-04)**: vor jedem Schedule via Blotato führst du einen **Hormozi-Sanity-Check** auf alle fertigen Karussell-Folien + Reel-Cover-Captions durch: **(a)** Validity-×-Utility-Filter (jede Aussage wahr UND ändert sie Verhalten?), **(b)** Hat Hook 1 wirklich pattern-interruptiert?, **(c)** Container-Wörter genutzt (System/Methode statt „Tipp")?, **(d)** Mind. ein Pain-Moment in MOMENTEN?, **(e)** Authority Stack mit 3 Zahlen wo möglich?, **(f)** Bei doTERRA: Compliance-Pivot (3.-Person-Bericht statt „du wirst…")? Findest du Verstösse → fix DIRECT mit Mini-Edit, dokumentier im Lieferungs-Output. **Brand-Voice + doTERRA-Compliance bleiben Pflicht.**
 
 ### Wenn doTERRA-Content (Profil @patricia_ulmann) — ZUSÄTZLICHE PFLICHT-LESEN
 
