@@ -130,7 +130,7 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 **Timeline-Style:**
 > **09:00 — 09:10** Story: Wie ich aus dem Hamsterrad rausgekommen bin (10 Min)
 >
-> **09:10 — 09:25** Schuld-Spirale entlarvt — und warum 58% der Solo-Unternehmer:innen mit KI 20+ Stunden im Monat sparen (15 Min, mit Daten)
+> **09:10 — 09:25** Schuld-Spirale entlarvt — und warum 58% der Unternehmerinnen mit KI 20+ Stunden im Monat sparen (15 Min, mit Daten)
 >
 > **09:25 — 09:55** ⭐ **DAS HERZSTÜCK:** Live-Demo Familien-Bot + Brand-Voice-Bot — direkt am Bildschirm. Du siehst, was rein geht, was raus kommt, wie du es selbst nachbaust. (30 Min)
 >
@@ -146,7 +146,7 @@ CTA         → klare Anmeldung mit ManyChat MASTERMIND
 > ## Wer das hier hält
 
 **Body (kurze Bridge, persönlich):**
-> Ich bin Patricia. Mompreneurin, Network-Coach, Mama von 2.
+> Ich bin Patricia. Mompreneurin, Network-Coach, Mama von 4.
 >
 > Und ich war lange Zeit unglücklich. Gefangen im Hamsterrad. Mein Leben auf Standby.
 >
