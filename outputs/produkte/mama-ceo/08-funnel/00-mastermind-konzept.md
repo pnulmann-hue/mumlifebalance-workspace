@@ -2,7 +2,7 @@
 
 **Datum:** **Mittwoch 20.5.2026, 09:00-10:30 Uhr**
 **Format:** **Launch-Webinar** mit Cart-Open + Earlybird-Pitch im selben Slot (Julia-Trost-Pattern)
-**Cart-Window:** Mi 20.5. 09:00 → Mi 27.5. 23:59 (7 Tage Earlybird CHF 249)
+**Cart-Window:** Mi 20.5. 09:00 → Sa 23.5. 23:59 (3 Tage Earlybird CHF 249)
 **Aufzeichnung:** 48h Replay, läuft aus Fr 22.5. 09:00 (Replay-Push am So 24.5. mit Mail #7)
 **Anmeldung:** kostenlos via ManyChat-Keyword `WEBINAR` oder Sales-Page-Banner
 
@@ -76,13 +76,13 @@
 00:55 — 01:10  PITCH MAMA-CEO + EARLYBIRD-PRICING (15 Min)
    - 5-Säulen-Übersicht (Energie · Mindset · System · KI · Network)
    - Was du bekommst: 22 Lektionen + 5 Live-Calls + 3 Boni + Telegram
-   - **EARLYBIRD HEUTE BIS MI 27.5. 23:59: CHF 249** (statt CHF 333 ab 28.5.)
+   - **EARLYBIRD HEUTE BIS SA 23.5. 23:59: CHF 249** (Cart öffnet erst wieder im Herbst zum Final-Preis CHF 333)
    - Cart-Link in Chat ab Min 60
    - Antikunden-Klärung: „Nicht für dich, wenn..." (3 Punkte aus Sternbauer-Frame)
 
 01:10 — 01:30  Q&A (20 Min)
    Live-Fragen aus Chat
-   Geschenk: Wer bis Cart-Close 27.5. 23:59 kauft, bekommt Webinar-Replay
+   Geschenk: Wer bis Cart-Close 23.5. 23:59 kauft, bekommt Webinar-Replay
    permanent (sonst nur 48h)
 ```
 
@@ -129,8 +129,7 @@
 - **Aufwärmphase #3** (Di 19.5. 09:00): „Morgen 09:00 LIVE + Cart-Open"
 - **Cart-Open #1** (Mi 20.5. 11:00): Direkt nach Webinar, mit Replay-Link
 - **Email #4-7** (Do-So 21.-24.5.): Painpoint-Tag · Aha-Tag · Sozial-Beweis · Replay-läuft-aus
-- **Email #8-9** (Mo-Di 25.-26.5.): Final-Push
-- **Email #10-12** (Mi 27.5.): Cart-Close-Cascade über Tag
+- **Email #10-12** (Sa 23.5.): Cart-Close-Cascade (08:00 / 18:00 / 22:00)
 
 ---
 
@@ -172,7 +171,7 @@
 | Replay-Konsumiert in 48h | 30% (30-45) | Verstärkungs-Effekt |
 | **Käufe am LAUNCH-DAY (Mi 20.5.)** | **mind. 8** | Webinar-Conversion |
 | Käufe Do-So 21.-24.5. (Cart-Window + Replay) | +4-5 | Email-Sequenz wirkt |
-| Käufe Mo-Mi 25.-27.5. (Final-Push) | +2-3 | Scarcity wirkt |
+| Käufe Sa 23.5. (Cart-Close-Tag) | +2-4 | Scarcity wirkt |
 | **Total Verkäufe** | **12-15** | Earlybird CHF 249 = ~CHF 3'000-3'750 Mai |
 | Conversion Webinar→Kauf | 10-15% | Funnel-Qualität |
 

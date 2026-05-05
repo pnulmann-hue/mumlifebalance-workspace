@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Zentrales Register aller aktiven Funnels für Mum Life Balance (Mentoring + doTERRA). Wird vom /funnel Skill gepflegt und von /montag, /reels, /karussell gelesen — damit Content-Assistenten wissen welche ManyChat-Keywords diese Woche prioritär sind.",
-    "last_updated": "2026-05-01 · Mama-CEO Mai-Launch in Notion synchronisiert · Aufwärmphase-Sprache (Julia Trost) · LAUNCH-DAY Mi 20.5. 09:00 (Webinar + Cart-Open + Earlybird CHF 249) · Cart-Close Mi 27.5. 23:59",
+    "last_updated": "2026-05-04 · Mama-CEO 3-Tage-Cart-Variante · LAUNCH-DAY Mi 20.5. 09:00 (Webinar + Cart-Open + Earlybird CHF 249) · Cart-Close Sa 23.5. 23:59 · Pilot-Phase Start Mo 1.6.",
     "schema_version": 1,
     "brand": "Mum Life Balance",
     "umsatzziel_chf_jahr": 40000
@@ -335,10 +335,10 @@
         { "marker": "aufwaermphase-2-story-demo", "von": "2026-05-11", "bis": "2026-05-17", "kw": 20, "fokus": "Sales-Page LIVE + Webinar-Anmeldung läuft + 3 Anwarming-Reels + Karussell + Aufwärmphase-Email #1 + Pitch-Slides starten" },
         { "marker": "aufwaermphase-3-last-call", "von": "2026-05-18", "bis": "2026-05-19", "kw": 21, "fokus": "Aufwärmphase-Mails #2-3 + Pilot-Modul 1 fertig + Pitch-Slides FERTIG + Bot-Tests + Last-Call-Story" },
         { "marker": "launch-day", "von": "2026-05-20T09:00", "bis": "2026-05-20T23:59", "kw": 21, "fokus": "🚀 KI-WEBINAR LIVE 09:00-10:30 + CART-OPEN + EARLYBIRD-PITCH CHF 249 + Cart-Open-Mail + Story-Cascade + DMs an Live-Teilnehmer" },
-        { "marker": "cart-window", "von": "2026-05-21", "bis": "2026-05-24", "kw": 21, "fokus": "Painpoint-Tag (Do) + KI-Aha-Tag (Fr) + Sozial-Beweis-Tag (Sa) + Replay-läuft-aus (So) — Mails #4-7" },
-        { "marker": "final-push", "von": "2026-05-25", "bis": "2026-05-26", "kw": 22, "fokus": "Letzte-Tage-Mail + Final-Push-Mail + Reel Letzte-Chance + DMs an unsichere Käuferinnen" },
-        { "marker": "cart-close-day", "von": "2026-05-27T08:00", "bis": "2026-05-27T23:59", "kw": 22, "fokus": "🚨 CART-CLOSE-TAG: Email-Cascade (08:00 #10, 18:00 #11, 22:00 #12) + Story 12:00 + Live-Story 20:00 + Cart-Close 23:59" },
-        { "marker": "pilot-phase", "von": "2026-05-28", "bis": "2026-07-22", "kw": "22-30", "fokus": "Pilot-Käuferinnen onboarden + Säulen wöchentlich nachliefern + 5 Live-Calls Donnerstag 20:00 (Kick-Off Do 4.6.)" }
+        { "marker": "cart-window", "von": "2026-05-21", "bis": "2026-05-22", "kw": 21, "fokus": "Painpoint-Tag (Do) + KI-Aha-Tag (Fr, „morgen schliesst") — Mails #8-9" },
+        { "marker": "cart-close-day", "von": "2026-05-23T08:00", "bis": "2026-05-23T23:59", "kw": 21, "fokus": "🚨 CART-CLOSE-TAG: Email-Cascade (08:00 Mail #10, 18:00 Mail #11, 22:00 Mail #12) + Story 12:00 + Live-Story 20:00 + Cart-Close 23:59" },
+        { "marker": "onboarding", "von": "2026-05-24", "bis": "2026-05-31", "kw": "21-22", "fokus": "Pilot-Käuferinnen onboarden + Telegram-Buddy-Gruppe einrichten + Säule 1 vorbereiten" },
+        { "marker": "pilot-phase", "von": "2026-06-01", "bis": "2026-07-26", "kw": "23-30", "fokus": "Pilot-Phase Start Mo 1.6. · Säulen wöchentlich nachliefern · 5 Live-Calls Donnerstag 20:00 (Kick-Off Do 4.6.)" }
       ],
 
       "traffic_quellen": {
@@ -356,24 +356,24 @@
       },
 
       "mail_sequenz": {
-        "status": "geplant",
+        "status": "geplant — alle 12 Mails als HTML im Brand-Design fertig (siehe outputs/produkte/mama-ceo/08-funnel/webinar-mails/)",
         "design_template": "context/mail-design-onlinebusiness.html",
         "mails": [
-          "Fr 15.5. 14:00 — Aufwärmphase-Mail #1 (In 1 Woche öffnet sich die Tür)",
-          "Mo 18.5. 09:00 — Aufwärmphase-Mail #2 (In 2 Tagen LIVE — Webinar-Reminder)",
-          "Di 19.5. 09:00 — Aufwärmphase-Mail #3 (Morgen 09:00 LIVE + Cart-Open)",
-          "Mi 20.5. 11:00 — Cart-Open Mail #1 (Direkt nach Webinar, mit Replay-Link)",
-          "Do 21.5. 08:00 — Mail #4 Painpoint-Tag (Schuld-Spirale unterbrechen)",
-          "Fr 22.5. 08:00 — Mail #5 KI-Aha-Tag (mit Live-Demo-Screenshot)",
-          "Sa 23.5. 08:00 — Mail #6 Sozial-Beweis-Tag",
-          "So 24.5. 09:00 — Mail #7 Replay läuft heute aus",
-          "Mo 25.5. 09:00 — Mail #8 Letzte Tage",
-          "Di 26.5. 09:00 — Mail #9 Final-Push + Antikunden-Klärung",
-          "Mi 27.5. 08:00 — Mail #10 Heute 23:59 (16h noch)",
-          "Mi 27.5. 18:00 — Mail #11 6 Stunden noch",
-          "Mi 27.5. 22:00 — Mail #12 Letzte 2 Stunden"
+          "Sofort nach Anmeldung — Mail #1 Bestätigung",
+          "Mi 13.5. 14:00 — Mail #2 1 Woche vor Webinar (an ganze Liste)",
+          "So 17.5. 09:00 — Mail #3 Story (Brandastic-Schwester-Tod-Aha)",
+          "Di 19.5. 09:00 — Mail #4 24h Reminder",
+          "Mi 20.5. 08:00 — Mail #5 1h Reminder + Zoom-Link",
+          "Mi 20.5. 09:15 — Mail #6 ⭐ CLIFFHANGER LIVE (an ganze Liste ohne Anmelder)",
+          "Mi 20.5. 11:00 — Mail #7 Cart-Open + Replay-Link",
+          "Do 21.5. 08:00 — Mail #8 Painpoint-Tag (2 Tage noch)",
+          "Fr 22.5. 08:00 — Mail #9 Aha-KI-Tag (morgen schliesst)",
+          "Sa 23.5. 08:00 — Mail #10 Cart-Close-Morgens (16h noch)",
+          "Sa 23.5. 18:00 — Mail #11 Cart-Close-Abends (6h noch persönlich)",
+          "Sa 23.5. 22:00 — Mail #12 Cart-Close-Last-2h"
         ],
-        "geplant": 12
+        "geplant": 12,
+        "ac_setup_anleitung": "outputs/produkte/mama-ceo/08-funnel/webinar-mails/99-AC-SETUP.md"
       },
 
       "launch_window": {
@@ -381,7 +381,8 @@
         "tag_minus_16_datum": "2026-05-04",
         "webinar_datum": "2026-05-20T09:00",
         "cart_open_datum": "2026-05-20T09:00",
-        "cart_close_datum": "2026-05-27T23:59",
+        "cart_close_datum": "2026-05-23T23:59",
+        "pilot_start_datum": "2026-06-01",
         "scope": "Launch-Webinar-Pattern (Julia Trost) — Webinar und Cart-Open am gleichen Tag (Mi 20.5. 09:00). Earlybird CHF 249 läuft 7 Tage. Final CHF 333 ab 28.5. Pilot-Phase mit wöchentlicher Säulen-Auslieferung ab 28.5.",
         "launch_assets_path": "outputs/produkte/mama-ceo/",
         "launch_kalender": "outputs/produkte/mama-ceo/07-launch-kalender.md",
@@ -410,9 +411,9 @@
           "aufwaermphase-2-story-demo": "Brandastic-Story-Bausteine (Hamsterrad → Schwester-Tod-Aha → KI-Mitarbeiter) + KI-Demo-Snippets + Webinar-Hype",
           "aufwaermphase-3-last-call": "Last-Call-Webinar-Anmeldung + Behind-the-Scenes + Vorbereitungs-Energie",
           "launch-day": "🚀 LIVE-Energie (Stories vor + während + nach Webinar) + Cart-Open-Cascade + Earlybird-Drücker",
-          "cart-window": "Painpoint-Tag (Do) · KI-Aha-Tag (Fr) · Sozial-Beweis-Tag (Sa) · Replay-läuft-aus (So)",
-          "final-push": "Letzte-Tage · Scarcity · Antikunden-Filter · Letzte-Chance-Reel",
-          "cart-close-day": "Email-Cascade ganzen Tag + Live-Story 20:00 + Final-Stunden-Story",
+          "cart-window": "Painpoint-Tag (Do) · KI-Aha-Tag (Fr „morgen schliesst") — 3-Tage-Cart-Variante",
+          "cart-close-day": "Sa 23.5. Email-Cascade ganzen Tag (08:00 / 18:00 / 22:00) + Live-Story 20:00 + Cart-Close 23:59",
+          "onboarding": "So 24.5.-31.5.: Pilot-Käuferinnen begrüssen + Telegram-Buddy-Gruppe + Säule 1 vorbereiten",
           "pilot-phase": "Einblicke aus Pilot-Phase · Käuferinnen-Quotes · Säulen-Auslieferung"
         },
         "reel_typen": ["Brandastic-Story-Reel", "Live-Demo-KI-Reel", "Schuld-Spirale-benennen", "Falsch-vs-Richtig-Caption (Elke Mayr)", "Behind-the-Scenes", "Tagebuch-Style (Tag mit Mama-CEO)", "FAQ-Reel"],
