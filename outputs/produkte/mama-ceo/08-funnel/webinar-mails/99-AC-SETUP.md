@@ -1,7 +1,7 @@
-# AC-Setup für Webinar-Mail-Sequenz Mama-CEO
+# AC-Setup für Webinar-Mail-Sequenz Mama-CEO (3-Tage-Cart)
 
 **Was du brauchst:** AC-Account (hast du), 30-45 Min Zeit, Tasse Kaffee.
-**Was du am Ende hast:** Komplett automatisierte 16-Mail-Sequenz die Mai-Launch durchspielt.
+**Was du am Ende hast:** Komplett automatisierte 12-Mail-Sequenz die Mai-Launch durchspielt.
 
 ---
 
@@ -13,8 +13,7 @@ In AC: **„Kontakte → Tags"** → diese Tags neu erstellen (falls nicht schon
 |---|---|
 | `mama-ceo-webinar-anmeldung` | Wird automatisch durch das Anmelde-Form gesetzt ✓ (schon konfiguriert) |
 | `mama-ceo-webinar-live-teilnehmer` | Setzt du manuell nach Webinar (für die die LIVE da waren) |
-| `mama-ceo-webinar-replay-watcher` | Setzt du manuell wenn jemand Replay schaut |
-| `mama-ceo-webinar-kauf` | Wird gesetzt wenn jemand Mama-CEO kauft (via ThriveCart-Webhook) |
+| `mama-ceo-webinar-kauf` | Wird gesetzt wenn jemand Mama-CEO via ThriveCart kauft (Webhook) |
 
 ---
 
@@ -22,17 +21,17 @@ In AC: **„Kontakte → Tags"** → diese Tags neu erstellen (falls nicht schon
 
 In AC: **„Campaigns → Templates"** oder direkt in der Campaign-Erstellung.
 
-Für jede der 16 Mails (`01-bestaetigung.html` bis `16-close-letzte2h.html`):
+Für jede der 12 HTML-Mails (`01-bestaetigung.html` bis `12-close-letzte2h.html`):
 
-1. **„Neue Vorlage"** klicken
+1. **„Neue Vorlage"** klicken → **„Code Editor"** wählen (HTML-Modus)
 2. Name: z.B. „Webinar Mail 01 — Bestätigung"
-3. **Subject** aus Mail-File kopieren (Zeile mit `**SUBJECT:**`)
-4. **Pre-Header** aus Mail-File kopieren (Zeile mit `**PRE-HEADER:**`)
-5. **Body** aus Mail-File kopieren (alles unter dem `---`)
-   - Personalisierung: `{{first_name}}` mit AC-Personalisations-Tag ersetzen (in AC: Variable einfügen → Vorname)
-6. **Speichern**
+3. **HTML-Code** aus der Datei komplett kopieren + einfügen
+4. **Subject** aus dem `<title>`-Tag im HTML kopieren (oder aus Übersicht)
+5. **Pre-Header** ist im HTML schon drin (im versteckten `<div>` ganz oben)
+6. **Personalisierung:** `{{first_name}}` mit AC-Variable ersetzen (in AC: „Personalize" → Vorname-Tag einfügen)
+7. **Speichern**
 
-→ Das machst du 16x (~30 Min mit Kaffee). Tipp: Erst alle anlegen, dann Automations bauen.
+→ Das machst du 12x (~30 Min mit Kaffee). Tipp: Erst alle Templates anlegen, dann Automations bauen.
 
 ---
 
@@ -47,14 +46,14 @@ Für jede der 16 Mails (`01-bestaetigung.html` bis `16-close-letzte2h.html`):
 3. Start-Trigger: **„Tag is added: mama-ceo-webinar-anmeldung"**
 4. Aktionen nacheinander:
    - **Send Email:** Mail 01 (Bestätigung) — sofort
-   - **Wait:** bis Sonntag 17.5. 09:00 (oder „Wait until specific date")
+   - **Wait until:** Sonntag 17.5. 09:00
    - **Send Email:** Mail 03 (Story-Mail)
-   - **Wait:** bis Dienstag 19.5. 09:00
+   - **Wait until:** Dienstag 19.5. 09:00
    - **Send Email:** Mail 04 (Reminder 24h)
-   - **Wait:** bis Mittwoch 20.5. 08:00
+   - **Wait until:** Mittwoch 20.5. 08:00
    - **Send Email:** Mail 05 (Reminder 1h, mit Zoom-Link!)
 
-⚠️ **Wichtig:** Zoom-Link in Mail 05 vor Activierung einsetzen (Platzhalter `https://us02web.zoom.us/j/DEIN-ZOOM-LINK` ersetzen).
+⚠️ **Wichtig:** Zoom-Link in Mail 05 vor Aktivierung einsetzen (Platzhalter `https://us02web.zoom.us/j/DEIN-ZOOM-LINK` ersetzen).
 
 **Aktivieren** wenn das AC-Form live ist und Anmeldungen reinkommen.
 
@@ -62,12 +61,10 @@ Für jede der 16 Mails (`01-bestaetigung.html` bis `16-close-letzte2h.html`):
 
 ## SCHRITT 4: Automation 2 — „Webinar-Day Mass-Send"
 
-**Trigger:** Date-based — manuell ausgelöst oder via Calendar
+**Trigger:** Date-based — manuell ausgelöst oder als 3 separate Campaigns
 **Mails:** 2, 6, 7
 
 Diese 3 Mails gehen an **GANZE LISTE** (nicht nur Webinar-Anmelder).
-
-**Setup:**
 
 ### Mail 2 (1 Woche vor Webinar)
 1. AC → **„Campaigns → New Campaign → Standard"**
@@ -95,42 +92,39 @@ Diese 3 Mails gehen an **GANZE LISTE** (nicht nur Webinar-Anmelder).
 4. **Schedule:** Mi 20.5.2026 11:00
 5. Senden
 
-⚠️ **Vor Aktivierung Cart-Link einsetzen!** (`[Mama-CEO Link]` Platzhalter ersetzen mit ThriveCart-URL)
+⚠️ **Vor Aktivierung Cart-Link einsetzen!** (`[Mama-CEO Cart-Link]` Platzhalter ersetzen mit ThriveCart-URL)
 ⚠️ **Replay-Link einsetzen!**
 
 ---
 
-## SCHRITT 5: Automation 3 — „Cart-Window-Sequenz"
+## SCHRITT 5: Automation 3 — „Cart-Window-Sequenz" (3-Tage-Cart)
 
-**Trigger:** Date-based — startet nach Cart-Open am 20.5.
-**Mails:** 8-16
+**Trigger:** Date-based — startet Do 21.5.
+**Mails:** 8-12
 
-**Setup:** Eine Automation die nacheinander die 9 Cart-Window-Mails schickt.
+**Setup:** Eine Automation die nacheinander die 5 Cart-Mails schickt.
 
 1. AC → **„Automations → New"**
-2. Name: „Mama-CEO Cart-Window"
+2. Name: „Mama-CEO Cart-Window 3-Tage"
 3. Start-Trigger: **„Wait until date: Do 21.5.2026 08:00"** (manuelle Aktivierung am Webinar-Tag)
 4. Aktionen:
+   - **Conditional Split:** Hat Tag `mama-ceo-webinar-kauf`? Wenn ja → END. Wenn nein → weiter.
    - **Send Email:** Mail 08 (Painpoint) — Do 21.5. 08:00
    - **Wait until:** Fr 22.5. 08:00
-   - **Send Email:** Mail 09 (Aha KI)
+   - **Conditional Split:** Hat Tag `mama-ceo-webinar-kauf`? Wenn ja → END.
+   - **Send Email:** Mail 09 (Aha KI, „morgen schliesst")
    - **Wait until:** Sa 23.5. 08:00
-   - **Send Email:** Mail 10 (Sozial-Beweis)
-   - **Wait until:** So 24.5. 09:00
-   - **Send Email:** Mail 11 (Replay aus)
-   - **Wait until:** Mo 25.5. 09:00
-   - **Send Email:** Mail 12 (Letzte Tage)
-   - **Wait until:** Di 26.5. 09:00
-   - **Send Email:** Mail 13 (Final Push)
-   - **Wait until:** Mi 27.5. 08:00
-   - **Send Email:** Mail 14 (Close morgens)
-   - **Wait until:** Mi 27.5. 18:00
-   - **Send Email:** Mail 15 (Close abends)
-   - **Wait until:** Mi 27.5. 22:00
-   - **Send Email:** Mail 16 (Close letzte 2h)
+   - **Conditional Split:** Hat Tag `mama-ceo-webinar-kauf`? Wenn ja → END.
+   - **Send Email:** Mail 10 (Close-Morgens, 16h)
+   - **Wait until:** Sa 23.5. 18:00
+   - **Conditional Split:** Hat Tag `mama-ceo-webinar-kauf`? Wenn ja → END.
+   - **Send Email:** Mail 11 (Close-Abends, 6h)
+   - **Wait until:** Sa 23.5. 22:00
+   - **Conditional Split:** Hat Tag `mama-ceo-webinar-kauf`? Wenn ja → END.
+   - **Send Email:** Mail 12 (Close-Last-2h)
 
 **Wichtig — Käufer ausschliessen:**
-Bei jeder Mail einen **„Conditional Split"** vorschalten: Wenn Tag `mama-ceo-webinar-kauf` vorhanden → Mail überspringen. So bekommt niemand Verkaufs-Mails der schon gekauft hat.
+Jede Mail mit einem **Conditional Split** vorgeschaltet: Wenn Tag `mama-ceo-webinar-kauf` vorhanden → Mail überspringen. So bekommt niemand Verkaufs-Mails der schon gekauft hat.
 
 ---
 
@@ -149,7 +143,7 @@ Wenn jemand Mama-CEO via ThriveCart kauft, soll automatisch Tag `mama-ceo-webina
 
 ## SCHRITT 7: Test-Anmeldung
 
-**Vor Activierung der Automation 1:**
+**Vor Aktivierung der Automation 1:**
 
 1. Geh auf https://webinar.mumlifebalance.ch
 2. Trag dich selbst mit Test-E-Mail ein
@@ -158,19 +152,18 @@ Wenn jemand Mama-CEO via ThriveCart kauft, soll automatisch Tag `mama-ceo-webina
    - Mail 01 (Bestätigung) kommt sofort an ✓
    - Mail 03/04/05 kommen am richtigen Datum (kannst du im AC-Automation-Log sehen)
 
-Wenn alles klappt: **Activieren** und Mai-Launch beginnt automatisch zu laufen.
+Wenn alles klappt: **Aktivieren** und Mai-Launch beginnt automatisch zu laufen.
 
 ---
 
-## CHECKLISTE vor Activierung
+## CHECKLISTE vor Aktivierung
 
-- [ ] Alle 16 Templates angelegt + getestet (richtige Subjects + keine Broken-Links)
-- [ ] Zoom-Link in Mail 5 + Mail 6 eingesetzt
-- [ ] Cart-Link (ThriveCart-URL) in Mails 7-16 eingesetzt
-- [ ] Replay-Link in Mail 11 eingesetzt
-- [ ] Real-Quotes in Mail 10 eingesetzt (sobald erste Pilot-Käufer da sind!)
+- [ ] Alle 12 Templates angelegt + getestet (richtige Subjects + keine Broken-Links)
+- [ ] **Zoom-Link** in Mail 5 + Mail 6 eingesetzt
+- [ ] **Cart-Link** (ThriveCart-URL) in Mails 7-12 eingesetzt
+- [ ] **Replay-Link** in Mail 7 eingesetzt
 - [ ] Tag `mama-ceo-webinar-anmeldung` triggert Automation 1
-- [ ] ThriveCart-Webhook für Tag `mama-ceo-webinar-kauf` eingerichtet
+- [ ] **ThriveCart-Webhook** für Tag `mama-ceo-webinar-kauf` eingerichtet
 - [ ] Test-Anmeldung gemacht — alle Mails kommen wie geplant
 - [ ] „Käufer-Ausschluss" in Cart-Window-Sequenz aktiv
 
@@ -182,18 +175,19 @@ Wenn alles klappt: **Activieren** und Mai-Launch beginnt automatisch zu laufen.
 → Conditional Split mit „Tag mama-ceo-webinar-kauf" in jeder Cart-Window-Mail
 
 ❌ **Zoom-Link fehlt am Live-Tag:**
-→ Mail 5 + Mail 6 vor Activierung 2x prüfen
+→ Mail 5 + Mail 6 vor Aktivierung 2x prüfen
 
 ❌ **Cart-Link fehlt:**
-→ Vor Mi 20.5. 11:00 in allen Mails 7-16 einsetzen
+→ Vor Mi 20.5. 11:00 in allen Mails 7-12 einsetzen
 
 ❌ **Falsche Empfänger-Liste:**
 → Mail 6 (Cliffhanger): Filter „NICHT Tag mama-ceo-webinar-anmeldung" damit Live-Teilnehmer es nicht bekommen
+
+❌ **HTML-Email zeigt komische Zeichen oder „<table>"-Tags:**
+→ Sicherstellen dass du im AC-Editor auf „Code Editor" / „HTML Source" gewechselt hast, nicht im visuellen Editor
 
 ---
 
 **Bei Problemen:** Sag mir welche Mail/Automation hängt, ich helf gezielt.
 
-**Wenn alles läuft:** Ab 13.5. läuft die Maschine selbst. Du musst nur am 20.5. live im Webinar sein.
-
-🚀
+**Wenn alles läuft:** Ab 13.5. läuft die Maschine selbst. Du musst nur am 20.5. live im Webinar sein. 🚀
