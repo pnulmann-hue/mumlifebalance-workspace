@@ -2,8 +2,11 @@
 
 **Datum:** **Mittwoch 20.5.2026, 09:00-10:30 Uhr**
 **Format:** **Launch-Webinar** mit Cart-Open + Earlybird-Pitch im selben Slot (Julia-Trost-Pattern)
-**Cart-Window:** Mi 20.5. 09:00 → Sa 23.5. 23:59 (3 Tage Earlybird CHF 249)
-**Aufzeichnung:** 48h Replay, läuft aus Fr 22.5. 09:00 (Replay-Push am So 24.5. mit Mail #7)
+**Cart-Logik (2-Phasen):**
+- 🟠 Mi 20.5. 11:00 → Sa 23.5. 23:59 = **Earlybird CHF 249** (3 Tage)
+- 🔵 So 24.5. 00:00 → So 31.5. 23:59 = **Final CHF 333** (8 Tage)
+- 🚀 Mo 1.6. = **Pilot-Phase Start**
+**Aufzeichnung:** 48h Replay, läuft aus Fr 22.5. 09:00
 **Anmeldung:** kostenlos via ManyChat-Keyword `WEBINAR` oder Sales-Page-Banner
 
 ---
@@ -76,14 +79,17 @@
 00:55 — 01:10  PITCH MAMA-CEO + EARLYBIRD-PRICING (15 Min)
    - 5-Säulen-Übersicht (Energie · Mindset · System · KI · Network)
    - Was du bekommst: 22 Lektionen + 5 Live-Calls + 3 Boni + Telegram
-   - **EARLYBIRD HEUTE BIS SA 23.5. 23:59: CHF 249** (Cart öffnet erst wieder im Herbst zum Final-Preis CHF 333)
+   - **EARLYBIRD HEUTE BIS SA 23.5. 23:59: CHF 249** (3 Tage)
+   - **Danach Final CHF 333 bis So 31.5. 23:59** (8 Tage Cart-Window)
+   - **Cart schliesst endgültig So 31.5.** — im Herbst nur noch als Selbstlerner-Evergreen ohne Live-Calls
    - Cart-Link in Chat ab Min 60
    - Antikunden-Klärung: „Nicht für dich, wenn..." (3 Punkte aus Sternbauer-Frame)
 
 01:10 — 01:30  Q&A (20 Min)
    Live-Fragen aus Chat
-   Geschenk: Wer bis Cart-Close 23.5. 23:59 kauft, bekommt Webinar-Replay
-   permanent (sonst nur 48h)
+   Geschenk: Wer im Earlybird (bis Sa 23.5. 23:59 zu CHF 249) kauft, bekommt
+   Webinar-Replay permanent + ein zusätzliches 1:1-Gespräch mit Patricia (15 Min Audio).
+   Final-Käuferinnen bekommen Replay nur 48h.
 ```
 
 ---
@@ -127,9 +133,14 @@
 - **Aufwärmphase #1** (Fr 15.5. 14:00): „In 1 Woche öffnet sich die Tür"
 - **Aufwärmphase #2** (Mo 18.5. 09:00): „In 2 Tagen LIVE — Webinar-Reminder"
 - **Aufwärmphase #3** (Di 19.5. 09:00): „Morgen 09:00 LIVE + Cart-Open"
-- **Cart-Open #1** (Mi 20.5. 11:00): Direkt nach Webinar, mit Replay-Link
-- **Email #4-7** (Do-So 21.-24.5.): Painpoint-Tag · Aha-Tag · Sozial-Beweis · Replay-läuft-aus
-- **Email #10-12** (Sa 23.5.): Cart-Close-Cascade (08:00 / 18:00 / 22:00)
+- **Mail #6 Cart-Open EARLYBIRD** (Mi 20.5. 11:00): Direkt nach Webinar, mit Replay-Link
+- **Mail #7 Painpoint + Aha-KI** (Do 21.5. 08:00): an Liste (ohne Käufer)
+- **Mails #8+9 Earlybird-End-Cascade** (Sa 23.5. 08:00 + 22:00): an Liste (ohne Käufer)
+- **Mail #10 Earlybird-vorbei + Cart-läuft** (So 24.5. 09:00): an Liste (ohne Käufer)
+- **Mail #11 Antikunden** (Mi 27.5. 08:00): an Liste (ohne Käufer)
+- **Mail #12 Persönlicher Brief** (Fr 29.5. 08:00): an Liste (ohne Käufer)
+- **Mails #13+14 Cart-Close-Cascade** (So 31.5. 08:00 + 22:00): an Liste (ohne Käufer)
+- Komplette Mail-Sequenz: `outputs/produkte/mama-ceo/08-funnel/webinar-mails/`
 
 ---
 

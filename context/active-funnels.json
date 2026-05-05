@@ -332,13 +332,14 @@
       "phase_marker": "mama-ceo:aufwaermphase-1-validierung",
       "phase_history": [
         { "marker": "aufwaermphase-1-validierung", "von": "2026-05-04", "bis": "2026-05-10", "kw": 19, "fokus": "Story-Umfrage Tagline-A/B + 3 Sternbauer-Urmotiv-Calls + Sales-Page-Texte erste Version + Reel #1 Schuld-Spirale" },
-        { "marker": "aufwaermphase-2-story-demo", "von": "2026-05-11", "bis": "2026-05-17", "kw": 20, "fokus": "Sales-Page LIVE + Webinar-Anmeldung läuft + 3 Anwarming-Reels + Karussell + Aufwärmphase-Email #1 + Pitch-Slides starten" },
-        { "marker": "aufwaermphase-3-last-call", "von": "2026-05-18", "bis": "2026-05-19", "kw": 21, "fokus": "Aufwärmphase-Mails #2-3 + Pilot-Modul 1 fertig + Pitch-Slides FERTIG + Bot-Tests + Last-Call-Story" },
-        { "marker": "launch-day", "von": "2026-05-20T09:00", "bis": "2026-05-20T23:59", "kw": 21, "fokus": "🚀 KI-WEBINAR LIVE 09:00-10:30 + CART-OPEN + EARLYBIRD-PITCH CHF 249 + Cart-Open-Mail + Story-Cascade + DMs an Live-Teilnehmer" },
-        { "marker": "cart-window", "von": "2026-05-21", "bis": "2026-05-22", "kw": 21, "fokus": "Painpoint-Tag (Do) + KI-Aha-Tag (Fr, „morgen schliesst") — Mails #8-9" },
-        { "marker": "cart-close-day", "von": "2026-05-23T08:00", "bis": "2026-05-23T23:59", "kw": 21, "fokus": "🚨 CART-CLOSE-TAG: Email-Cascade (08:00 Mail #10, 18:00 Mail #11, 22:00 Mail #12) + Story 12:00 + Live-Story 20:00 + Cart-Close 23:59" },
-        { "marker": "onboarding", "von": "2026-05-24", "bis": "2026-05-31", "kw": "21-22", "fokus": "Pilot-Käuferinnen onboarden + Telegram-Buddy-Gruppe einrichten + Säule 1 vorbereiten" },
-        { "marker": "pilot-phase", "von": "2026-06-01", "bis": "2026-07-26", "kw": "23-30", "fokus": "Pilot-Phase Start Mo 1.6. · Säulen wöchentlich nachliefern · 5 Live-Calls Donnerstag 20:00 (Kick-Off Do 4.6.)" }
+        { "marker": "aufwaermphase-2-story-demo", "von": "2026-05-11", "bis": "2026-05-17", "kw": 20, "fokus": "Sales-Page LIVE + Webinar-Anmeldung läuft + 3 Anwarming-Reels + Karussell + Mail #2 Versand Mi 13.5. + Pitch-Slides starten" },
+        { "marker": "aufwaermphase-3-last-call", "von": "2026-05-18", "bis": "2026-05-19", "kw": 21, "fokus": "Pilot-Modul 1 fertig + Pitch-Slides FERTIG + Bot-Tests + Last-Call-Story + Mail #3 Reminder 24h" },
+        { "marker": "launch-day", "von": "2026-05-20T09:00", "bis": "2026-05-20T23:59", "kw": 21, "fokus": "🚀 KI-WEBINAR LIVE 09:00-10:30 + CART-OPEN + EARLYBIRD-PITCH CHF 249 + Mail #5 Cliffhanger + Mail #6 Cart-Open + Story-Cascade + DMs an Live-Teilnehmer" },
+        { "marker": "earlybird-phase", "von": "2026-05-21", "bis": "2026-05-23T22:00", "kw": 21, "fokus": "Earlybird CHF 249 läuft · Mail #7 Painpoint+Aha-KI (Do) · Mail #8 Earlybird-End-Morgens (Sa 08:00) · Mail #9 Earlybird-Last-2h (Sa 22:00)" },
+        { "marker": "earlybird-ende", "von": "2026-05-23T23:59", "bis": "2026-05-24T00:00", "kw": 21, "fokus": "🟠 EARLYBIRD-ENDE Sa 23.5. 23:59 · Cart-Preis-Switch CHF 249 → 333" },
+        { "marker": "final-phase", "von": "2026-05-24", "bis": "2026-05-30", "kw": "21-22", "fokus": "Final CHF 333 läuft · Mail #10 Earlybird-vorbei (So 24.5.) · Mail #11 Antikunden (Mi 27.5.) · Mail #12 Persönlicher Brief (Fr 29.5.)" },
+        { "marker": "cart-close-day", "von": "2026-05-31T08:00", "bis": "2026-05-31T23:59", "kw": 22, "fokus": "🚨 CART-CLOSE-TAG endgültig: Mail #13 Close-Morgens (08:00) + Story 12:00 + Live-Story 18:00 + Mail #14 Last-2h (22:00) + Cart-Close 23:59" },
+        { "marker": "pilot-phase", "von": "2026-06-01", "bis": "2026-07-26", "kw": "23-30", "fokus": "Pilot-Phase Start Mo 1.6. · Onboarding-Mail 06:00 · Säulen wöchentlich nachliefern · 5 Live-Calls Donnerstag 20:00 (Kick-Off Do 4.6.)" }
       ],
 
       "traffic_quellen": {
@@ -356,23 +357,25 @@
       },
 
       "mail_sequenz": {
-        "status": "geplant — alle 12 Mails als HTML im Brand-Design fertig (siehe outputs/produkte/mama-ceo/08-funnel/webinar-mails/)",
+        "status": "geplant — alle 14 Mails als HTML im Brand-Design fertig (siehe outputs/produkte/mama-ceo/08-funnel/webinar-mails/) · 2-Phasen-Cart (Earlybird 3T + Final 8T)",
         "design_template": "context/mail-design-onlinebusiness.html",
         "mails": [
           "Sofort nach Anmeldung — Mail #1 Bestätigung",
           "Mi 13.5. 14:00 — Mail #2 1 Woche vor Webinar (an ganze Liste)",
-          "So 17.5. 09:00 — Mail #3 Story (Brandastic-Schwester-Tod-Aha)",
-          "Di 19.5. 09:00 — Mail #4 24h Reminder",
-          "Mi 20.5. 08:00 — Mail #5 1h Reminder + Zoom-Link",
-          "Mi 20.5. 09:15 — Mail #6 ⭐ CLIFFHANGER LIVE (an ganze Liste ohne Anmelder)",
-          "Mi 20.5. 11:00 — Mail #7 Cart-Open + Replay-Link",
-          "Do 21.5. 08:00 — Mail #8 Painpoint-Tag (2 Tage noch)",
-          "Fr 22.5. 08:00 — Mail #9 Aha-KI-Tag (morgen schliesst)",
-          "Sa 23.5. 08:00 — Mail #10 Cart-Close-Morgens (16h noch)",
-          "Sa 23.5. 18:00 — Mail #11 Cart-Close-Abends (6h noch persönlich)",
-          "Sa 23.5. 22:00 — Mail #12 Cart-Close-Last-2h"
+          "Di 19.5. 09:00 — Mail #3 24h Reminder",
+          "Mi 20.5. 08:00 — Mail #4 1h Reminder + Zoom-Link",
+          "Mi 20.5. 09:15 — Mail #5 ⭐ CLIFFHANGER LIVE (an ganze Liste ohne Anmelder)",
+          "Mi 20.5. 11:00 — Mail #6 Cart-Open EARLYBIRD CHF 249 + Replay-Link",
+          "Do 21.5. 08:00 — Mail #7 Painpoint + Aha-KI",
+          "Sa 23.5. 08:00 — Mail #8 Earlybird endet heute (16h)",
+          "Sa 23.5. 22:00 — Mail #9 Earlybird-Last-2h",
+          "So 24.5. 09:00 — Mail #10 Earlybird vorbei · Cart läuft bis 31.5. (CHF 333)",
+          "Mi 27.5. 08:00 — Mail #11 Antikunden / Wer es NICHT ist",
+          "Fr 29.5. 08:00 — Mail #12 Persönlicher Brief (Letzte Tage)",
+          "So 31.5. 08:00 — Mail #13 Cart-Close-Morgens (16h noch)",
+          "So 31.5. 22:00 — Mail #14 Cart-Close-Last-2h"
         ],
-        "geplant": 12,
+        "geplant": 14,
         "ac_setup_anleitung": "outputs/produkte/mama-ceo/08-funnel/webinar-mails/99-AC-SETUP.md"
       },
 
@@ -380,22 +383,26 @@
         "launch_day_datum": "2026-05-20T09:00",
         "tag_minus_16_datum": "2026-05-04",
         "webinar_datum": "2026-05-20T09:00",
-        "cart_open_datum": "2026-05-20T09:00",
-        "cart_close_datum": "2026-05-23T23:59",
+        "cart_open_datum": "2026-05-20T11:00",
+        "earlybird_ende_datum": "2026-05-23T23:59",
+        "cart_close_datum": "2026-05-31T23:59",
         "pilot_start_datum": "2026-06-01",
-        "scope": "Launch-Webinar-Pattern (Julia Trost) — Webinar und Cart-Open am gleichen Tag (Mi 20.5. 09:00). Earlybird CHF 249 läuft 7 Tage. Final CHF 333 ab 28.5. Pilot-Phase mit wöchentlicher Säulen-Auslieferung ab 28.5.",
+        "scope": "Launch-Webinar-Pattern (Julia Trost) mit 2-Phasen-Cart — Webinar und Cart-Open am gleichen Tag (Mi 20.5. 09:00). EARLYBIRD CHF 249 (Mi 20.5. 11:00 → Sa 23.5. 23:59 = 3 Tage). FINAL CHF 333 (So 24.5. → So 31.5. 23:59 = 8 Tage). Cart-Close endgültig So 31.5. 23:59. Pilot-Phase Start Mo 1.6.",
         "launch_assets_path": "outputs/produkte/mama-ceo/",
         "launch_kalender": "outputs/produkte/mama-ceo/07-launch-kalender.md",
-        "webinar_konzept": "outputs/produkte/mama-ceo/08-funnel/00-webinar-konzept.md",
+        "webinar_konzept": "outputs/produkte/mama-ceo/08-funnel/00-mastermind-konzept.md",
         "ziele": {
           "webinar_anmeldungen": 100,
           "webinar_live_teilnehmerinnen": 40,
           "mama_ceo_verkaeufe_launch_day": 8,
-          "mama_ceo_verkaeufe_cart_window": 5,
-          "mama_ceo_verkaeufe_final_push": 2,
-          "mama_ceo_verkaeufe_total_earlybird": 15,
+          "mama_ceo_verkaeufe_earlybird_phase": 10,
+          "mama_ceo_verkaeufe_final_phase": 5,
+          "mama_ceo_verkaeufe_cart_close_tag": 3,
+          "mama_ceo_verkaeufe_total_mai": 18,
           "webinar_zu_kauf_conversion_pct": 12,
-          "umsatz_chf_earlybird_phase": 3735
+          "umsatz_chf_earlybird_phase": 2490,
+          "umsatz_chf_final_phase": 2664,
+          "umsatz_chf_total_mai": 5154
         }
       },
 
@@ -411,10 +418,11 @@
           "aufwaermphase-2-story-demo": "Brandastic-Story-Bausteine (Hamsterrad → Schwester-Tod-Aha → KI-Mitarbeiter) + KI-Demo-Snippets + Webinar-Hype",
           "aufwaermphase-3-last-call": "Last-Call-Webinar-Anmeldung + Behind-the-Scenes + Vorbereitungs-Energie",
           "launch-day": "🚀 LIVE-Energie (Stories vor + während + nach Webinar) + Cart-Open-Cascade + Earlybird-Drücker",
-          "cart-window": "Painpoint-Tag (Do) · KI-Aha-Tag (Fr „morgen schliesst") — 3-Tage-Cart-Variante",
-          "cart-close-day": "Sa 23.5. Email-Cascade ganzen Tag (08:00 / 18:00 / 22:00) + Live-Story 20:00 + Cart-Close 23:59",
-          "onboarding": "So 24.5.-31.5.: Pilot-Käuferinnen begrüssen + Telegram-Buddy-Gruppe + Säule 1 vorbereiten",
-          "pilot-phase": "Einblicke aus Pilot-Phase · Käuferinnen-Quotes · Säulen-Auslieferung"
+          "earlybird-phase": "3 Tage Earlybird CHF 249 — Painpoint Do · stiller Fr · Earlybird-End-Cascade Sa (Mails #7-9) · Knappheit + Preis-Switch-Hinweis",
+          "earlybird-ende": "🟠 Sa 23.5. 23:59 Preis-Switch-Stories · CHF 249 → 333 · Übergang zu Final-Phase",
+          "final-phase": "8 Tage Cart bei CHF 333 · So Earlybird-vorbei (Mail #10) · Mi Antikunden-Frame (Mail #11) · Fr Persönlicher Brief (Mail #12) · zwischendrin Stories Pilot-startet-bald",
+          "cart-close-day": "🚨 So 31.5. Mail-Cascade (08:00 #13 / 22:00 #14) + Story 12:00 + Live-Story 18:00 + Cart-Close 23:59 endgültig",
+          "pilot-phase": "Onboarding-Mail Mo 1.6. 06:00 · Einblicke aus Pilot-Phase · Käuferinnen-Quotes · Säulen-Auslieferung wöchentlich · Live-Calls Do 20:00"
         },
         "reel_typen": ["Brandastic-Story-Reel", "Live-Demo-KI-Reel", "Schuld-Spirale-benennen", "Falsch-vs-Richtig-Caption (Elke Mayr)", "Behind-the-Scenes", "Tagebuch-Style (Tag mit Mama-CEO)", "FAQ-Reel"],
         "karussell_typen": ["Schuld-Spirale 8 Folien", "5 Säulen Mama-CEO", "5 Antikunden-Profile (Sternbauer)"],
@@ -422,7 +430,7 @@
         "primaer_keyword_cart_window": "MAMACEO (für direkten Kursverkauf)"
       },
 
-      "umsatzziel_contribution_chf": 3360,
+      "umsatzziel_contribution_chf": 5154,
       "umsatzziel_jahr_inkl_pilot_und_final": 12000,
       "launched_on": null
     }
