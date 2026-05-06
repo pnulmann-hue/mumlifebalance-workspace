@@ -124,13 +124,17 @@ Signatur (Caveat, 40pt, Petrol): „— Patricia"
 Akzent-Wort orange: „strukturierter"
 
 — SLIDE 7 — CTA-Slide
-Layout: Vollflächig Creme. Datum gross, Button-Optik unten.
-Mini-Label oben (Caveat, 40pt, Orange): „Sichere dir deinen Platz"
-Datum (Philosopher Bold, 140pt, Petrol, sehr gross, zentriert): „{{DATUM}}"
-Uhrzeit (Source Sans Semibold, 56pt, Dunkelblau): „{{UHRZEIT}} · live · Aufzeichnung folgt"
-Button-Optik (Petrol-Rechteck mit Creme-Schrift, 60pt, Source Sans Bold): „WISCH NACH OBEN"
-Darunter klein (Source Sans Regular, 32pt, Dunkelblau): „{{ANMELDE_LINK}}"
-Pfeil-Icon ganz oben (Petrol, dezent), zeigt nach oben
+WICHTIG: Diese Slide bekommt nachträglich in Instagram einen Link-Sticker draufgeklebt. Der Sticker landet ungefähr mittig (vertikal Y ≈ 700-900 px). Diese Zone MUSS visuell „leer" bleiben (nur Creme-Hintergrund, keine wichtigen Elemente).
+
+Layout (von oben nach unten):
+- Y 280-450: Mini-Label (Caveat, 50pt, Orange): „Sichere dir deinen Platz"
+- Y 480-650: Datum (Philosopher Bold, 130pt, Petrol, zentriert): „{{DATUM}}"
+- Y 670-740: Uhrzeit (Source Sans Semibold, 52pt, Dunkelblau): „{{UHRZEIT}} · live · mit Aufzeichnung"
+- Y 750-1100: 🟦 LEERZONE für den Instagram-Link-Sticker — KEIN Text, KEINE Grafik hier
+- Y 1130-1230: Hinweis-Pfeil ↑ (Petrol, 90pt, zentriert) zeigt NACH OBEN auf die Sticker-Zone
+- Y 1240-1320: Hinweis-Text (Caveat, 48pt, Petrol, zentriert): „Tipp auf den Link 👆"
+- Y 1380-1450: Backup-Link als sichtbarer Text (Source Sans Regular, 30pt, Dunkelblau, zentriert): „{{ANMELDE_LINK}}"
+- Y 1480-1540: Mini-Hinweis (Source Sans Regular, 26pt, Dunkelblau 60% Opacity): „falls Sticker nicht klappt — Link in Bio"
 
 OUTPUT-FORMAT
 Liefere die 7 Slides als einzelne PNG-Dateien:
@@ -165,8 +169,15 @@ CHECK-LISTE BEVOR DU LIEFERST
 1. **Prüfen:** Lade ein Slide auf dein Handy hoch und teste in Instagram „Story-Vorschau" — ist Text in den Safe Zones lesbar?
 2. **Korrekturschleife:** Wenn ein Akzent oder ein Foto nicht passt, einzelne Slide mit Manus iterieren (z.B. „Mache Slide 3 mit ruhigerem Foto, Patricia mit Tasse statt Laptop")
 3. **Posten-Reihenfolge:** Slides 1→7 als zusammenhängende Story posten, mit ca. 5-7 Sek pro Slide
-4. **Story-Highlight anlegen:** „Mama-CEO Webinar" — Cover Slide 7 nutzen, alle 7 Slides reinpacken
-5. **Wiederholung:** Sequenz alle 3-4 Tage neu posten bis zum Webinar (mit jeweils neuem Slide 1 als Hook-Variante)
+4. **Wichtig — Link auf Slide 7 manuell setzen:**
+   - Slide 7 hochladen wie alle anderen
+   - Im Insta-Story-Editor oben den Sticker-Button tippen → **Link-Sticker** wählen
+   - URL einfügen: `{{ANMELDE_LINK}}`
+   - Custom-Text setzen: „Zum Webinar →" (oder „Platz sichern")
+   - Sticker auf die LEERZONE der Slide platzieren (mittig, dort wo der Pfeil hinzeigt)
+   - Sticker-Farbe: Petrol-Variante wählen (passt zur Brand)
+5. **Story-Highlight anlegen:** „Mama-CEO Webinar" — Cover Slide 7 nutzen, alle 7 Slides reinpacken. **Wichtig:** Im Highlight bleibt der Link-Sticker erhalten und klickbar, solange du den Sticker setzt BEVOR du ins Highlight verschiebst.
+6. **Wiederholung:** Sequenz alle 3-4 Tage neu posten bis zum Webinar (mit jeweils neuem Slide 1 als Hook-Variante) — bei jedem Repost den Link-Sticker neu setzen
 
 ## Hook-Varianten für Wiederholungs-Sequenzen
 
