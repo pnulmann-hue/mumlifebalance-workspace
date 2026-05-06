@@ -130,11 +130,9 @@ Layout (von oben nach unten):
 - Y 280-450: Mini-Label (Caveat, 50pt, Orange): „Sichere dir deinen Platz"
 - Y 480-650: Datum (Philosopher Bold, 130pt, Petrol, zentriert): „{{DATUM}}"
 - Y 670-740: Uhrzeit (Source Sans Semibold, 52pt, Dunkelblau): „{{UHRZEIT}} · live · mit Aufzeichnung"
-- Y 750-1100: 🟦 LEERZONE für den Instagram-Link-Sticker — KEIN Text, KEINE Grafik hier
-- Y 1130-1230: Hinweis-Pfeil ↑ (Petrol, 90pt, zentriert) zeigt NACH OBEN auf die Sticker-Zone
-- Y 1240-1320: Hinweis-Text (Caveat, 48pt, Petrol, zentriert): „Tipp auf den Link 👆"
-- Y 1380-1450: Backup-Link als sichtbarer Text (Source Sans Regular, 30pt, Dunkelblau, zentriert): „{{ANMELDE_LINK}}"
-- Y 1480-1540: Mini-Hinweis (Source Sans Regular, 26pt, Dunkelblau 60% Opacity): „falls Sticker nicht klappt — Link in Bio"
+- Y 800-1200: 🟦 LEERZONE für den Instagram-Link-Sticker — KEIN Text, KEINE Grafik hier
+- Y 1240-1340: Hinweis-Pfeil ↑ (Petrol, 100pt, zentriert) zeigt NACH OBEN auf die Sticker-Zone
+- Y 1360-1450: Hinweis-Text (Caveat, 56pt, Petrol, zentriert): „Tipp auf den Link 👆"
 
 OUTPUT-FORMAT
 Liefere die 7 Slides als einzelne PNG-Dateien:
@@ -157,7 +155,7 @@ CHECK-LISTE BEVOR DU LIEFERST
 ☐ Wichtiger Text in den Safe Zones (250-1570 px Höhe)
 ☐ Keine englischen Buzzwords / Hustle-Phrasen
 ☐ Schweizer Rechtschreibung (ss statt ß)
-☐ Slide 7 hat den korrekten Anmelde-Link {{ANMELDE_LINK}}
+☐ Slide 7 hat KEINEN Link-Text drauf (nur Leerzone für Sticker + Pfeil + „Tipp auf den Link")
 ```
 
 ## ⬆️ Bis hier kopieren ⬆️
