@@ -1,6 +1,7 @@
 {
   "chat_id": "5097782438",
-  "step": "profil",
+  "step": "wochenfokus",
   "started_at": "2026-05-07T12:38:07.765Z",
-  "last_active_at": "2026-05-07T12:38:07.765Z"
+  "last_active_at": "2026-05-07T12:38:08.952Z",
+  "profil": "mentoring"
 }
