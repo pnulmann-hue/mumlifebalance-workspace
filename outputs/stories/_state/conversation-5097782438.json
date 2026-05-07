@@ -1,9 +1,10 @@
 {
   "chat_id": "5097782438",
-  "step": "wochenfokus",
+  "step": "erlebnis",
   "started_at": "2026-05-07T10:54:49.274Z",
-  "last_active_at": "2026-05-07T10:54:51.547Z",
+  "last_active_at": "2026-05-07T10:55:04.310Z",
   "profil": "mentoring",
   "last_bot_message_id": 322,
-  "produkt_quelle": "patricia"
+  "produkt_quelle": "override",
+  "produkt": "Mein KI Webinar"
 }
