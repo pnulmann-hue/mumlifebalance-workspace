@@ -1,0 +1,13 @@
+{
+  "name": "@mlb/apify-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tägliches Konkurrenz-Scraping via Apify. Liest context/competitor-watchlist.json, schreibt outputs/apify-runs/.",
+  "scripts": {
+    "scrape": "node scrape-competitors.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

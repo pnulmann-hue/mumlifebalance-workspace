@@ -1,8 +1,9 @@
-# Plan: Apify MCP-Integration — Echte Daten für Konkurrenz, Hashtags, Painpoints
+# Plan: Apify GitHub-Actions-Integration — Echte Daten für Konkurrenz, Hashtags, Painpoints
 
 **Erstellt:** 2026-05-07
-**Status:** APPROVED — wartet nur noch auf Apify-Token von Patricia, dann `/implement`
-**Zweck:** Apify als MCP-Server einbinden, damit Patricias Skills (`/freitag-hooks`, `/montag`, `/produkt`, `/funnel`) auf echte Instagram-/Web-Daten zugreifen können statt auf Web-Such-Schätzungen.
+**Aktualisiert:** 2026-05-07 (Architektur-Wechsel: MCP-in-Session → GitHub Actions Cron, dauerhafte Lösung)
+**Status:** PHASE-1-IMPLEMENTIERT — wartet auf APIFY_API_TOKEN als GitHub Repo-Secret
+**Zweck:** Apify in GitHub Actions einbinden, damit täglich echte Konkurrenz-Daten ins Repo committet werden. Skills (`/freitag-hooks`, `/montag`, `/produkt`, `/funnel`) lesen die fertigen JSON-Files — keine Token-Eingabe pro Session, keine veralteten Web-Schätzungen mehr.
 
 ---
 
@@ -34,29 +35,40 @@ Apify ist ein Marktplatz für „Actors" (vorgefertigte Scraping-Roboter). Sie h
 
 ---
 
-## 3. Architektur — Was wo läuft
+## 3. Architektur — GitHub Actions als Daten-Layer
 
 ```
-Patricia tippt /freitag-hooks
+Täglich 06:00 Schweiz (GitHub Actions Cron)
          ↓
-Skill liest Wochenfokus aus Notion
+.github/workflows/apify-scrape.yml startet
          ↓
-Skill ruft Apify-MCP auf:
-   "Hol Top-5-Posts der letzten 7 Tage von 6 Konkurrenz-Accounts"
+Liest context/competitor-watchlist.json (6 Accounts)
          ↓
-Apify-Actor läuft 1-2 Min im Hintergrund
+scripts/apify/scrape-competitors.js ruft Apify Actor:
+   POST api.apify.com/v2/acts/apify~instagram-profile-scraper/run-sync-get-dataset-items
+   (mit APIFY_API_TOKEN aus GitHub Secret)
          ↓
-Actor liefert JSON: Caption, Likes, Comments, Hashtags, Posting-Zeit
+Actor liefert in 1-3 Min: Profile + letzte 25 Posts pro Account
          ↓
-Skill analysiert → "Konkurrenz-Hook der Woche" → fließt in Hook-Generator
+Script schreibt:
+   outputs/apify-runs/competitors-YYYY-MM-DD.json (rohdaten)
+   outputs/apify-runs/competitors-YYYY-MM-DD.md   (lesbare Summary mit Top 5 Posts)
          ↓
-20 Hooks an Patricia via Telegram (jetzt mit echtem Inspirations-Anteil)
+git commit + push (github-actions[bot])
+         ↓
+Ab jetzt verfügbar in jeder Claude-Session
+         ↓
+/freitag-hooks · /montag · /produkt · /funnel lesen die JSON-Files
+   bei Bedarf zur Hook-Inspiration / Painpoint-Mining / Trend-Check
 ```
 
-**Gleiche Mechanik in:**
-- `/montag` — Konkurrenz-Performance-Check vor Wochen-Build
-- `/produkt` Mode „Markt-Research" — Reddit-Scraping für Painpoints
-- `/funnel` Mode 3 (Ads) — Konkurrenz-Ad-Library + Hashtag-Trends
+**Manueller Trigger** für Ad-hoc-Scrapes: GitHub UI → Actions → "Apify Competitor Scrape" → Run workflow → optional Handles als Komma-Liste eingeben.
+
+**Skill-Integration (Phase 2):**
+- `/freitag-hooks` liest jüngste Summary, zieht Hook-Inspiration aus Top-Posts
+- `/montag` checkt Layout-/Format-Trends vor Build
+- `/produkt` Mode „Markt-Research" — Reddit-Painpoints (separater Workflow Phase 3)
+- `/funnel` Mode 3 (Ads) — Hashtag-Performance + Konkurrenz-Funnel-Beobachtung
 
 ---
 
@@ -81,30 +93,28 @@ Skill analysiert → "Konkurrenz-Hook der Woche" → fließt in Hook-Generator
 
 ---
 
-## 5. Was Patricia tun muss (1x Setup)
+## 5. Was Patricia tun muss (1× Setup, dann nie wieder)
 
 ### Schritt 1: Apify-Account anlegen (~5 Min)
-1. Auf https://apify.com → „Sign up free" mit Patricias Business-Email
+1. Auf https://apify.com → „Sign up free" mit Business-Email
 2. Email bestätigen
 3. Im Dashboard: **Settings → Integrations → API token kopieren**
-4. Patricia schickt mir den Token via Chat
 
-### Schritt 2: MCP-Server aktivieren (~2 Min, ich mache das)
-1. Ich packe den Token in `.claude/settings.local.json` (gitignored)
-2. Ich registriere den Apify-MCP-Server in der Claude-Code-Konfiguration
-3. Restart der Session → MCP-Tools verfügbar
+### Schritt 2: Token als GitHub Repo-Secret hinterlegen (~2 Min)
+1. GitHub UI: `pnulmann-hue/mumlifebalance-workspace` → **Settings → Secrets and variables → Actions → New repository secret**
+2. Name: `APIFY_API_TOKEN`
+3. Value: der Token aus Schritt 1
+4. Save
 
-### Schritt 3: Test-Lauf (~5 Min, ich mache das)
-1. Ich rufe `apify/instagram-profile-scraper` für deinen eigenen Account `@patriciakoradi` auf (oder den Mentoring-Handle)
-2. Verify: Bekommen wir saubere Followerzahl + die letzten 12 Posts?
-3. Wenn ja: System läuft
+**Damit ist das Setup abgeschlossen.** Token lebt sicher im Repo-Secret, persistiert dauerhaft, taucht nie in einer Session oder einem Commit auf. Identisches Pattern wie `ANTHROPIC_API_KEY`, `BLOTATO_API_KEY` etc. die bereits genutzt werden.
 
-### Schritt 4: Erste echte Konkurrenz-Analyse (~10 Min, ich mache das)
-1. Ich scanne die 6 Top-Konkurrenz-Accounts aus der heutigen Liste
-2. Liefere dir den ECHTEN Vergleich: Followerzahl, Top-5-Posts mit echten Hooks und Like-Zahlen
-3. Du siehst sofort: jetzt sind die Zahlen real
+### Schritt 3 (sobald Branch gemerged): Erster Test-Lauf (~3 Min)
+1. GitHub UI → **Actions → "Apify Competitor Scrape" → Run workflow**
+2. Optional: Handles-Feld leer lassen → scrapt komplette Watchlist (6 Accounts)
+3. Workflow läuft 1-3 Min, committed Ergebnisse nach `outputs/apify-runs/`
+4. Patricia oder ich öffnen `competitors-YYYY-MM-DD.md` und sehen ECHTE Daten
 
-**Aufwand für Patricia gesamt: ~10 Min** (Sign-up + Token schicken). Rest mache ich.
+**Aufwand für Patricia gesamt: ~10 Min** einmalig.
 
 ---
 
@@ -142,23 +152,26 @@ Skill analysiert → "Konkurrenz-Hook der Woche" → fließt in Hook-Generator
 
 ---
 
-## 8. Test-Plan
+## 8. Test-Plan (nach Token-Hinterlegung)
 
-**Test 1 — Eigene Profile (Sanity-Check):**
-- Patricias Mentoring-Handle scrapen → Followerzahl matcht was sie sieht? ✓
-- Patricias doTERRA-Handle dito ✓
+**Test 1 — Smoke-Test über manuellen Workflow-Trigger:**
+- GitHub UI → Run workflow mit leerem Handles-Feld
+- Erwartung: Workflow läuft grün, neuer Commit in `outputs/apify-runs/`
 
-**Test 2 — Linda-Bogadi-Validation:**
-- @linda.bogadi scrapen → bekommen wir 2.490 oder ähnlich? Wenn ja: System ehrlich. Wenn nein: Actor justieren.
+**Test 2 — Linda-Bogadi-Validation (Ad-hoc):**
+- Run workflow mit Handles-Input: `linda.bogadi`
+- Erwartung: Followerzahl ≈ 2.490 (matcht was Patricia auf IG sieht)
+- Wenn ja: System ist ehrlich. Wenn deutlich abweichend: Actor-Konfiguration prüfen.
 
-**Test 3 — Hashtag-Live-Test:**
-- `#mumlifebalance` Top-Posts der letzten 7 Tage → Plausibilität prüfen
-- `#aetherischeoele` dito
+**Test 3 — Eigene Profile (Sanity-Check):**
+- Run workflow mit Patricias Mentoring- und doTERRA-Handles
+- Erwartung: Followerzahlen matchen die Realität
+- Bonus: Gibt erste Selbst-Daten für spätere Wachstums-Tracking
 
-**Test 4 — Volle Konkurrenz-Analyse:**
-- Alle 6 Top-3-Accounts (3 Mentoring + 3 doTERRA) scannen
-- Output: Tabelle mit echten Followerzahlen, je 5 Top-Posts mit Hook + Like/Comment-Counts
-- Diese Tabelle ersetzt die Web-Such-Liste von heute
+**Test 4 — Cron-Lauf am nächsten Morgen:**
+- 06:00 Schweiz: Workflow läuft automatisch
+- Neuer Commit von `github-actions[bot]` mit Datum
+- Patricia kriegt täglich ohne Eingriff frische Konkurrenz-Daten
 
 ---
 
@@ -180,14 +193,16 @@ Skill analysiert → "Konkurrenz-Hook der Woche" → fließt in Hook-Generator
 
 | Phase | Aufwand Patricia | Aufwand Claude | Wann |
 |-------|-----------------|----------------|------|
-| Setup (Schritt 1-3) | ~10 Min | ~15 Min | Heute, sobald grün |
-| Test-Lauf (Schritt 4) | 0 Min (du checkst nur Output) | ~30 Min | Direkt nach Setup |
-| Skill-Integration `/freitag-hooks` | 0 Min | ~45 Min | Diese Woche |
-| Skill-Integration `/montag` | 0 Min | ~30 Min | Diese Woche |
-| `/produkt` + `/funnel` Updates | 0 Min | ~45 Min | Nächste Woche |
-| Cap- & Cache-Logging | 0 Min | ~30 Min | Diese Woche |
+| Phase 1: Infrastruktur (Watchlist, Script, Workflow) | 0 | ~60 Min | **erledigt 2026-05-07** |
+| Patricia: Apify-Account + Repo-Secret | ~10 Min | 0 | wartet |
+| Patricia: Branch mergen | ~1 Min | 0 | wartet |
+| Test-Läufe via Workflow-Dispatch | ~3 Min | 0 | nach Merge |
+| Phase 2: `/freitag-hooks` liest JSON | 0 | ~45 Min | nach erstem grünen Lauf |
+| Phase 2: `/montag` liest JSON | 0 | ~30 Min | nach erstem grünen Lauf |
+| Phase 3: Reddit-Painpoint-Workflow | 0 | ~45 Min | wenn Phase 1+2 stabil |
+| Phase 3: `/funnel` Mode 3 Hashtag-Trends | 0 | ~30 Min | wenn Phase 1+2 stabil |
 
-**Gesamt für dich:** ~10 Min zum Anstossen, dann zurücklehnen.
+**Gesamt für Patricia:** ~14 Min einmalig, dann läuft alles automatisch und dauerhaft.
 
 ---
 

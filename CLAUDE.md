@@ -384,6 +384,23 @@ Rendert eine Karussell-HTML-Vorlage zu Instagram-postbaren PNG-Folien. Ersetzt d
 
 **Phase 2 (geplant):** Nach dem Rendern werden die 11 PNGs automatisch als editierbares Canva-Design hochgeladen (via `upload-asset-from-url`), damit Patricia Feinjustierungen im Canva-UI machen kann.
 
+### Apify Konkurrenz-Scraper (`scripts/apify/`, live seit 2026-05-07)
+
+**Echte Instagram-Daten via GitHub Actions Cron** — löst die Sandbox-Limits-Lücke. Kein Token-Reset zwischen Sessions, weil Apify-Token als GitHub Repo-Secret lebt.
+
+- **Sprache:** Node.js 20 (ES Modules), native fetch, keine externen Deps
+- **Cron:** täglich 06:00 Schweiz (`.github/workflows/apify-scrape.yml`)
+- **Manuell:** GitHub UI → Actions → "Apify Competitor Scrape" → Run workflow (optional Komma-Liste an Handles für Ad-hoc)
+- **Watchlist:** `context/competitor-watchlist.json` (6 Accounts: 3 Mentoring + 3 doTERRA, ergänzbar)
+- **Output:** `outputs/apify-runs/competitors-YYYY-MM-DD.json` (rohdaten) + `.md` (Patricia-lesbare Top-5-Posts-Summary)
+- **Actor:** `apify/instagram-profile-scraper` — Profil + 25 letzte Posts pro Lauf
+- **Kosten:** ~1.80 USD/Monat bei täglichem Lauf für 6 Accounts → Free-Tier reicht (5 USD/Monat)
+- **Skill-Anbindung Phase 2 (geplant):** `/freitag-hooks` und `/montag` lesen die jüngste Summary für Hook-Inspiration und Trend-Check
+
+**Wenn ein Skill aktuelle Konkurrenz-Daten braucht:** das jüngste `outputs/apify-runs/competitors-*.json` lesen (sortiert nach Datum). Älter als 36h → WebSearch-Fallback und Hinweis an Patricia.
+
+Plan: `plans/2026-05-07-apify-mcp-integration.md`.
+
 ### Telegram News-Bot (`scripts/telegram-news-bot/`)
 
 Wöchentlicher News-Digest-Bot, der Artikel aus RSS-Feeds (Onlinemarketing & KI) sammelt, mit Claude zusammenfasst und per Telegram sendet.
@@ -463,7 +480,7 @@ Die Web-Claude-Sandbox (claude.ai/code) blockiert Outbound-Requests zu nicht-erl
 - Vermutlich auch andere Patricia-Domains
 
 **Workaround heute:** Code-Änderungen ins Git pushen + Patricia kopiert manuell in WP/AC.
-**Echte Lösung (TODO):** GitHub Actions als Deployer einrichten (Secret = WP_APP_PASSWORD), oder lokaler MCP-Server bei Patricia.
+**Echte Lösung:** GitHub Actions als Deployer einrichten (Secret = WP_APP_PASSWORD), oder lokaler MCP-Server bei Patricia.
 
 ### `.env`-Files persistieren NICHT zwischen Sessions
 Web-Claude resetet alle gitignored Files. Heisst:
@@ -474,6 +491,17 @@ Web-Claude resetet alle gitignored Files. Heisst:
 1. Erst prüfen ob `.env` existiert: `ls scripts/wordpress/.env`
 2. Wenn nicht: Patricia bittet App-Password zu schicken → in `.env` schreiben → nach Push wieder löschen
 3. Beim Push prüfen ob Sandbox-403 kommt → wenn ja: ehrlich sagen + Workaround anbieten
+
+### Pattern: GitHub Actions als dauerhafte Lösung
+Für alle Tools, die zwischen Sessions persistieren müssen (Tokens, regelmäßige Scrapes, Posten zu externen APIs): **Token als GitHub Repo-Secret hinterlegen, Workflow im `.github/workflows/` läuft per Cron oder workflow_dispatch.**
+
+Live-Beispiele in diesem Repo:
+- `apify-scrape.yml` — täglicher Konkurrenz-Scrape (Secret: `APIFY_API_TOKEN`)
+- `freitag-hooks.yml` — wöchentliche Hook-Generierung (Secrets: `ANTHROPIC_API_KEY`, `BLOTATO_API_KEY`, `NOTION_TOKEN`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`)
+- `montag-build.yml` — Montag-Content-Build
+- `story-reminder-daily.yml` — tägliche Story-Erinnerung
+
+**Wenn ein neues Tool dauerhaft benötigt wird:** lege es als GitHub Action an, statt es im Sandbox-`.env` laufen zu lassen.
 
 ### Was hilft als Bot-Vorbereitung
 - Vor Live-Aktionen IMMER zuerst Limits checken statt Patricia falsche Hoffnung machen

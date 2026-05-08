@@ -1,0 +1,64 @@
+{
+  "$schema": "competitor-watchlist v1",
+  "updated": "2026-05-07",
+  "description": "Konkurrenz-Accounts die täglich via Apify gescrapt werden. Output landet in outputs/apify-runs/. Ergänzungen: Eintrag hier hinzufügen, ein Push genügt — der Workflow zieht beim nächsten Lauf nach.",
+  "accounts": [
+    {
+      "handle": "carolinepreuss",
+      "label": "Caroline Preuss",
+      "profile": "mentoring",
+      "category": "online-business-coach",
+      "added": "2026-05-07",
+      "note": "Karussell-Königin, Funnel-Transparenz mit Umsatz-Reports"
+    },
+    {
+      "handle": "juliatrost",
+      "label": "Julia Trost",
+      "profile": "mentoring",
+      "category": "mentoring-fuer-muetter",
+      "added": "2026-05-07",
+      "note": "Patricias Hauptframework-Quelle, Mama+Business radikal authentisch"
+    },
+    {
+      "handle": "katharina.lewald",
+      "label": "Katharina Lewald",
+      "profile": "mentoring",
+      "category": "digitale-produkte",
+      "added": "2026-05-07",
+      "note": "Substanz schlägt Reichweite, kleine IG aber starke Email-Liste"
+    },
+    {
+      "handle": "heilkunstwerk",
+      "label": "Heilkunstwerk",
+      "profile": "doterra",
+      "category": "doterra-showroom",
+      "added": "2026-05-07",
+      "note": "Compliance-Vorbild: Lifestyle-Framing statt Wirkungsbehauptungen"
+    },
+    {
+      "handle": "_aromamama_",
+      "label": "Aroma Mama",
+      "profile": "doterra",
+      "category": "aromatherapie-bildung",
+      "added": "2026-05-07",
+      "note": "Goldstandard Aroma-Compliance, Eliane Zimmermann + Sabrina Herber"
+    },
+    {
+      "handle": "aroma1x1",
+      "label": "AROMA 1x1",
+      "profile": "doterra",
+      "category": "aromatherapie-funnel",
+      "added": "2026-05-07",
+      "note": "Funnel-Lehrstück: Free-Content auf IG → Basiskurs auf ablefy"
+    }
+  ],
+  "settings": {
+    "cache_hours": 24,
+    "monthly_cost_cap_usd": 8,
+    "lead_scraping": {
+      "allowed": true,
+      "mode": "aggregate_only",
+      "personal_data": "never_stored"
+    }
+  }
+}
