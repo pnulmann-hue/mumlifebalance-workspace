@@ -98,6 +98,14 @@
       "category": "patricia-self-profile",
       "added": "2026-05-08",
       "note": "Patricias eigenes Mentoring-Profil. Tägliches Scraping für Job-Säulen-Analyse + Wachstumsdiagnose"
+    },
+    {
+      "handle": "patricia_ulmann",
+      "label": "Patricia (doTERRA) — eigenes Profil",
+      "profile": "doterra-self",
+      "category": "patricia-self-profile",
+      "added": "2026-05-08",
+      "note": "Patricias eigenes doTERRA-Profil. Im Aufbau seit März 2026, ~61 Followers. Tägliches Tracking für Job-Säulen-Analyse + Wachstumsdiagnose"
     }
   ],
   "settings": {
