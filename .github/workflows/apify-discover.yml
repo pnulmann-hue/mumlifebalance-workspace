@@ -1,0 +1,57 @@
+name: Apify Creator Discovery
+
+# Discovery findet die echten Top-Creator pro Nische via Hashtag-Scraping.
+# Läuft monatlich automatisch + jederzeit manuell triggerbar.
+on:
+  schedule:
+    - cron: '0 5 1 * *'  # 1. des Monats, 06:00 Schweiz
+  workflow_dispatch:
+    inputs:
+      niche:
+        description: 'Welche Nische scannen?'
+        required: false
+        type: choice
+        options:
+          - both
+          - mentoring
+          - doterra
+        default: both
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apify-discover
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Apify discovery
+        working-directory: scripts/apify
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          INPUT_NICHE: ${{ inputs.niche || 'both' }}
+        run: node discover-creators.js
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outputs/apify-runs/
+          if git diff --staged --quiet; then
+            echo "No new data."
+          else
+            git commit -m "apify: creator-discovery $(date -u +%Y-%m-%d)"
+            git push
+          fi

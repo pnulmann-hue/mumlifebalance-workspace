@@ -388,16 +388,28 @@ Rendert eine Karussell-HTML-Vorlage zu Instagram-postbaren PNG-Folien. Ersetzt d
 
 **Echte Instagram-Daten via GitHub Actions Cron** — löst die Sandbox-Limits-Lücke. Kein Token-Reset zwischen Sessions, weil Apify-Token als GitHub Repo-Secret lebt.
 
-- **Sprache:** Node.js 20 (ES Modules), native fetch, keine externen Deps
-- **Cron:** täglich 06:00 Schweiz (`.github/workflows/apify-scrape.yml`)
-- **Manuell:** GitHub UI → Actions → "Apify Competitor Scrape" → Run workflow (optional Komma-Liste an Handles für Ad-hoc)
-- **Watchlist:** `context/competitor-watchlist.json` (6 Accounts: 3 Mentoring + 3 doTERRA, ergänzbar)
-- **Output:** `outputs/apify-runs/competitors-YYYY-MM-DD.json` (rohdaten) + `.md` (Patricia-lesbare Top-5-Posts-Summary)
-- **Actor:** `apify/instagram-profile-scraper` — Profil + 25 letzte Posts pro Lauf
-- **Kosten:** ~1.80 USD/Monat bei täglichem Lauf für 6 Accounts → Free-Tier reicht (5 USD/Monat)
-- **Skill-Anbindung Phase 2 (geplant):** `/freitag-hooks` und `/montag` lesen die jüngste Summary für Hook-Inspiration und Trend-Check
+**Zwei Workflows:**
+
+#### A) Watchlist-Scrape (`apify-scrape.yml`) — täglich
+- **Cron:** täglich 06:00 Schweiz
+- **Input:** `context/competitor-watchlist.json` (definierte Konkurrenz-Accounts)
+- **Output:** `outputs/apify-runs/competitors-YYYY-MM-DD.{json,md}` — Profil + 25 letzte Posts mit Engagement
+- **Manueller Ad-hoc:** GitHub UI → Run workflow → optional Komma-Liste an Handles
+- **Actor:** `apify/instagram-profile-scraper`
+- **Kosten:** ~1.80 USD/Monat bei 6 Accounts täglich
+
+#### B) Creator-Discovery (`apify-discover.yml`) — monatlich + on-demand
+- **Cron:** 1. des Monats, 06:00 Schweiz
+- **Input:** `context/discovery-keywords.json` (Hashtags pro Nische: Mentoring + doTERRA)
+- **Output:** `outputs/apify-runs/discovery-YYYY-MM-DD-{niche}.{json,md}` — ranked List der Top-Creator unter Nischen-Hashtags, Top-25 mit Profil-Daten angereichert
+- **Manueller Trigger:** GitHub UI → "Apify Creator Discovery" → niche=both/mentoring/doterra
+- **Actors:** `apify/instagram-hashtag-scraper` + `apify/instagram-profile-scraper`
+- **Kosten:** ~1.50 USD pro Lauf
+- **Zweck:** Findet die ECHTEN Top-Creator deiner Nische (statt geraten zu werden) — Score = `Hashtag-Erscheinungen × 1000 + Total-Likes`
 
 **Wenn ein Skill aktuelle Konkurrenz-Daten braucht:** das jüngste `outputs/apify-runs/competitors-*.json` lesen (sortiert nach Datum). Älter als 36h → WebSearch-Fallback und Hinweis an Patricia.
+
+**Wenn ein Skill die Top-Performer einer Nische braucht (z.B. neue Hook-Trends):** das jüngste `outputs/apify-runs/discovery-*-{niche}.json` lesen.
 
 Plan: `plans/2026-05-07-apify-mcp-integration.md`.
 
