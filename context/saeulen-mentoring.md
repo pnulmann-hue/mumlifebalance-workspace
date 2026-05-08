@@ -5,6 +5,8 @@
 **Erstellt:** 2026-04-30
 **Status:** Säule 3 in aktiver Erarbeitung — Skill prüft regelmässig auf Aktualisierung.
 
+> **Wichtig (2026-05-08):** Diese Datei beschreibt die **Themen-Achse** (Worüber rede ich?). Die parallele **Job-Achse** (Was soll der Post bewirken?) ist in [`job-saeulen.md`](job-saeulen.md) dokumentiert. Jeder Post = 1 Thema × 1 Job. Beide Achsen sind Pflicht-Felder beim Anlegen in Notion.
+
 ---
 
 ## Übersicht

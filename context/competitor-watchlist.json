@@ -90,6 +90,14 @@
       "category": "patricia-flagged-not-in-discovery",
       "added": "2026-05-08",
       "note": "Von Patricia ergänzt. Nicht in Discovery aufgetaucht — nutzt vermutlich Karriere/Berufsentwicklung-Hashtags statt Mum-Business-Hashtags. Daily-Scrape klärt"
+    },
+    {
+      "handle": "mumlifebalance_patricia_ulmann",
+      "label": "Patricia (Mentoring) — eigenes Profil",
+      "profile": "mentoring-self",
+      "category": "patricia-self-profile",
+      "added": "2026-05-08",
+      "note": "Patricias eigenes Mentoring-Profil. Tägliches Scraping für Job-Säulen-Analyse + Wachstumsdiagnose"
     }
   ],
   "settings": {
