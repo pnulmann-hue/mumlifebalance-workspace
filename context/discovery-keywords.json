@@ -1,0 +1,46 @@
+{
+  "$schema": "discovery-keywords v1",
+  "updated": "2026-05-08",
+  "description": "Hashtag-Liste für Apify-Discovery. discover-creators.js scrapt jeden Hashtag, aggregiert Posts nach Creator und reichert Top-25 mit Profil-Daten an. Output: outputs/apify-runs/discovery-YYYY-MM-DD-{niche}.md",
+  "niches": {
+    "mentoring": {
+      "label": "Online-Business für Mütter / Mum-Mentoring (DACH)",
+      "language": "de",
+      "hashtags": [
+        "mompreneur",
+        "mompreneurin",
+        "mompreneurde",
+        "businessmama",
+        "businessmamas",
+        "selbstständigemama",
+        "onlinebusinessmama",
+        "mumpreneur",
+        "mütterimbusiness",
+        "businessmompreneur"
+      ]
+    },
+    "doterra": {
+      "label": "doTERRA / Ätherische Öle / Wellness-Mütter (DACH)",
+      "language": "de",
+      "hashtags": [
+        "doterradeutschland",
+        "doterraschweiz",
+        "doterraösterreich",
+        "ätherischeöle",
+        "aromatherapie",
+        "aromatherapiedeutschland",
+        "doterradach",
+        "natürlichehausapotheke",
+        "aromaöle",
+        "doterrafamily"
+      ]
+    }
+  },
+  "settings": {
+    "posts_per_hashtag": 30,
+    "min_appearances_to_qualify": 1,
+    "min_total_likes_to_qualify": 50,
+    "top_n_to_enrich": 25,
+    "top_n_in_report": 15
+  }
+}
