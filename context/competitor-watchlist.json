@@ -1,55 +1,95 @@
 {
-  "$schema": "competitor-watchlist v1",
-  "updated": "2026-05-07",
-  "description": "Konkurrenz-Accounts die täglich via Apify gescrapt werden. Output landet in outputs/apify-runs/. Ergänzungen: Eintrag hier hinzufügen, ein Push genügt — der Workflow zieht beim nächsten Lauf nach.",
+  "$schema": "competitor-watchlist v2",
+  "updated": "2026-05-08",
+  "description": "Aktualisiert nach Discovery-Lauf 2026-05-08. Ersetzt v1 (war auf Web-Such-Phantasie basiert). Enthält 7 echte In-Niche-Stars (entdeckt via Hashtag-Discovery) + 3 Big-Names (Caroline Preuss, Julia Trost, Katharina Lewald) zur Vergleichsobservation. Tägliches Scraping zeigt: Big-Names nutzen die Mum-Business-Hashtags nicht — sie kommen über andere Distribution.",
   "accounts": [
     {
       "handle": "carolinepreuss",
       "label": "Caroline Preuss",
       "profile": "mentoring",
-      "category": "online-business-coach",
+      "category": "big-name-online-business-coach",
       "added": "2026-05-07",
-      "note": "Karussell-Königin, Funnel-Transparenz mit Umsatz-Reports"
+      "note": "Big-name Reference. Nicht in Discovery-Hashtags aktiv → tracking zeigt was sie wirklich postet"
     },
     {
       "handle": "juliatrost",
       "label": "Julia Trost",
       "profile": "mentoring",
-      "category": "mentoring-fuer-muetter",
+      "category": "big-name-mentoring-fuer-muetter",
       "added": "2026-05-07",
-      "note": "Patricias Hauptframework-Quelle, Mama+Business radikal authentisch"
+      "note": "Big-name Reference. Patricias Hauptframework-Quelle"
     },
     {
       "handle": "katharina.lewald",
       "label": "Katharina Lewald",
       "profile": "mentoring",
-      "category": "digitale-produkte",
+      "category": "big-name-digitale-produkte",
       "added": "2026-05-07",
-      "note": "Substanz schlägt Reichweite, kleine IG aber starke Email-Liste"
+      "note": "Big-name Reference. Substanz schlägt Reichweite"
     },
     {
-      "handle": "heilkunstwerk",
-      "label": "Heilkunstwerk",
-      "profile": "doterra",
-      "category": "doterra-showroom",
-      "added": "2026-05-07",
-      "note": "Compliance-Vorbild: Lifestyle-Framing statt Wirkungsbehauptungen"
+      "handle": "theresaehsani",
+      "label": "Theresa Ehsani",
+      "profile": "mentoring",
+      "category": "real-niche-star-brand-strategin",
+      "added": "2026-05-08",
+      "note": "Discovery #1 Mentoring (Score 1'168). 2'070 Followers, Markencoach + Psychologin. Top-Performer im DACH-Mum-Business-Hashtag-Pool"
     },
     {
-      "handle": "_aromamama_",
-      "label": "Aroma Mama",
-      "profile": "doterra",
-      "category": "aromatherapie-bildung",
-      "added": "2026-05-07",
-      "note": "Goldstandard Aroma-Compliance, Eliane Zimmermann + Sabrina Herber"
+      "handle": "diefrau_im_business",
+      "label": "Bahar — Business-Coach für Mamas + Nervensystem",
+      "profile": "mentoring",
+      "category": "real-niche-star-bullseye",
+      "added": "2026-05-08",
+      "note": "Bullseye-Konkurrenz für Patricia. 3'584 Followers, Differentiation-Twist Nervensystem. Klare Lane wie Patricia"
     },
     {
-      "handle": "aroma1x1",
-      "label": "AROMA 1x1",
+      "handle": "annabraun_coaching",
+      "label": "Anna Braun — Selbstständige Mama Coaching",
+      "profile": "mentoring",
+      "category": "real-niche-star-bullseye",
+      "added": "2026-05-08",
+      "note": "Bullseye-Konkurrenz. 793 Followers, 'Raum als selbstständige Mama'. Klein aber exakt dieselbe Zielgruppe"
+    },
+    {
+      "handle": "doterradachcommunity",
+      "label": "doTERRA DACH Community (offiziell)",
       "profile": "doterra",
-      "category": "aromatherapie-funnel",
-      "added": "2026-05-07",
-      "note": "Funnel-Lehrstück: Free-Content auf IG → Basiskurs auf ablefy"
+      "category": "real-niche-star-official",
+      "added": "2026-05-08",
+      "note": "OFFIZIELL doTERRA DACH. Top-Engagement (201 L/Post). Nicht Konkurrenz, sondern potenzieller Repost-Verstärker"
+    },
+    {
+      "handle": "flowterra.community",
+      "label": "Flowterra Community — dōTERRA Wissens-Hub",
+      "profile": "doterra",
+      "category": "real-niche-star-hub",
+      "added": "2026-05-08",
+      "note": "Größter Hub-Account (15'372 Followers). Repost-Potential, Modell für educational Karussells"
+    },
+    {
+      "handle": "oilistic.health",
+      "label": "Eva-Marie Schaupp — Network Mama",
+      "profile": "doterra",
+      "category": "real-niche-star-bullseye",
+      "added": "2026-05-08",
+      "note": "Bullseye Tonalität — exakt Patricias doTERRA-Lane. 252 Followers, kleiner als Patricia, aber Brand-Voice-Studienobjekt"
+    },
+    {
+      "handle": "oele_zauberland_mit_manuela",
+      "label": "Manuela — dōTERRA Wellness Beraterin AT",
+      "profile": "doterra",
+      "category": "real-niche-star-direct-competitor",
+      "added": "2026-05-08",
+      "note": "Direkte Beraterinnen-Konkurrenz. 516 Followers, AT. DIY-Rezepte als Hauptangle"
+    },
+    {
+      "handle": "karriere.mum",
+      "label": "Karriere.Mum",
+      "profile": "mentoring",
+      "category": "patricia-flagged-not-in-discovery",
+      "added": "2026-05-08",
+      "note": "Von Patricia ergänzt. Nicht in Discovery aufgetaucht — nutzt vermutlich Karriere/Berufsentwicklung-Hashtags statt Mum-Business-Hashtags. Daily-Scrape klärt"
     }
   ],
   "settings": {
@@ -60,5 +100,9 @@
       "mode": "aggregate_only",
       "personal_data": "never_stored"
     }
+  },
+  "changelog": {
+    "v1_2026-05-07": "Initial 6 accounts: 3 Mentoring (Preuss, Trost, Lewald) + 3 doTERRA (Heilkunstwerk, Aroma Mama, AROMA 1x1). Web-Such-basiert.",
+    "v2_2026-05-08": "Discovery-validiert: doTERRA-3 entfernt (kein Vorkommen unter Hashtags), Mentoring-3 als 'big-name reference' behalten, 7 echte Stars aus Discovery hinzugefügt."
   }
 }
