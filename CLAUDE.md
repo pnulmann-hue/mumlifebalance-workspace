@@ -104,8 +104,38 @@ Beispiel: `/implement plans/2026-01-28-wettbewerbs-analyse-command.md`
 - PIE-Mix Pflicht (3-3-3-1 pro Profil)
 - Themen-Variation Pflicht (mind. 2 Pillars pro Profil pro Woche)
 - Wochenfokus aus Notion ist Hook-Generator-Quelle
+- **Olga-Hook-Pattern-Mix (PFLICHT seit 2026-05-09):** Über die 10 Hooks pro Profil mind. 4 verschiedene Pattern aus Bekenntnis / Contrarian / Curiosity-Gap / Konkrete Zahl / Anti-Hook / Vorher-Nachher. Verhindert dass alle Hooks gleich klingen.
 
 Volle Doku: `reference/montag-workflow-v2.md`.
+
+### /monatsplan (Strategie-Layer seit 2026-05-09)
+
+**Zweck:** Den **Strategie-Layer** für einen kompletten Monat in ~30 Min festschnüren — damit `/freitag-hooks` jede Woche frisch und reaktiv arbeitet, aber innerhalb einer klaren Monats-Storyline.
+
+**Wann ausführen:** Letzter Sonntag des Vor-Monats (z.B. 28.4. für Mai).
+
+**8-Fragen-Interview liefert:**
+1. Säule des Monats (Mentoring 1/2/3 oder doTERRA Pillar)
+2. 3 zu bewerbende Produkte (0€ / Mini / Gross)
+3. Block-Verteilung (Variante A: KW1=A, KW2=B, KW3-4=C — empfohlen)
+4. Hauptbotschaft des Monats (1-2 Sätze als roter Faden)
+5. Job-Mix-Soll (Standard / Pre-Sale-Modus / eigener Mix)
+6. KPI-Ziel (Verkäufe + Followerinnen + ManyChat-Trigger)
+7. Was läuft NICHT (bewusste Auslassung statt Gießkanne)
+8. Energie-Lage (Schulferien, reduzierte Wochen)
+
+**Vor dem Interview Phase 2 — Vormonats-Diagnose:**
+- Notion-Monatsplan vom Vormonat lesen
+- Job-Mix-Compliance-Check (was wurde tatsächlich gepostet?)
+- Top/Bottom-Posts identifizieren
+- Korrektur-Vorschlag für neuen Monat
+
+**Output:**
+- Notion-Monatsplan-Page (`collection://2ae7078e-8b7e-81fc-acf7-000be291c92c`) gefüllt
+- `outputs/monatsplaene/YYYY-MM.md` mit 4-Wochen-Briefing für /freitag-hooks
+- Optional Telegram-Push der Kurz-Zusammenfassung
+
+**Warum nicht 30 Posts auf einmal bauen?** Live-Posts (BTS, Telegram-Call-Reaktionen) brauchen Frische. Trends auf Reddit/IG müssen reagiert werden. Pre-Sale-Signale aus Woche 1 ändern Wochen 2-4. Deshalb: **Strategie monatlich, Konkretion wöchentlich.**
 
 ### /garten
 
