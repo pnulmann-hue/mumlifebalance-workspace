@@ -1,0 +1,39 @@
+# Netlify Build Configuration für Hormon-Typ Lead-Magnet
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  publish = "."
+
+# Hidden Form-Detection Hint für Netlify Forms
+# (Netlify scannt nach name="hormon-typ-quiz" Form bei Build-Time)
+
+[[redirects]]
+  from = "/quiz"
+  to   = "/quiz.html"
+  status = 200
+
+[[redirects]]
+  from = "/typ/energie"
+  to   = "/result-energie-raeuberin.html"
+  status = 200
+
+[[redirects]]
+  from = "/typ/mineral"
+  to   = "/result-mineral-maengelin.html"
+  status = 200
+
+[[redirects]]
+  from = "/typ/darm"
+  to   = "/result-darm-detektivin.html"
+  status = 200
+
+# Note: kein Wildcard-Catch-All — Netlify serviert .html Files
+# automatisch und die obigen pretty-URL-Redirects sind explicit.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"

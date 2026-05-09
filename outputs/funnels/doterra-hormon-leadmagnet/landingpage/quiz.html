@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+<title>Hormon-Typ Quiz · Mum Life Balance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Hidden form for Netlify Forms detection at build-time.
+     The actual submission happens via JS in quiz.js. -->
+<form name="hormon-typ-quiz" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="firstName" />
+  <input type="email" name="email" />
+  <input type="text" name="type" />
+  <input type="text" name="typeLabel" />
+  <input type="text" name="answers" />
+  <input type="text" name="totals" />
+  <input type="text" name="bot-field" />
+</form>
+
+<main class="quiz-shell">
+  <div class="container container--narrow">
+
+    <!-- Progress Bar -->
+    <div class="quiz-progress">
+      <div class="quiz-progress-bar">
+        <div class="quiz-progress-fill" id="progressFill" style="width: 20%;"></div>
+      </div>
+      <div class="quiz-progress-text">Frage <span id="currentStep">1</span> von 5</div>
+    </div>
+
+    <!-- Quiz Question Block -->
+    <div id="quizContainer" class="fade-in">
+      <div class="quiz-question">
+        <div class="quiz-question-eyebrow" id="questionEyebrow">Frage 1</div>
+        <h2 class="quiz-question-text" id="questionText">Lade Frage…</h2>
+      </div>
+
+      <div class="quiz-options" id="optionsContainer">
+        <!-- Options injected by quiz.js -->
+      </div>
+
+      <div class="quiz-nav">
+        <button type="button" class="quiz-back" id="backBtn" disabled>← Zurück</button>
+        <span style="opacity:0.5; font-size:0.8rem; align-self:center;">Tippe eine Antwort an</span>
+      </div>
+    </div>
+
+    <!-- Email Form (hidden until quiz complete) -->
+    <div id="emailContainer" class="email-shell" style="display: none;">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <div class="section-eyebrow">Letzter Schritt</div>
+        <h2 class="section-title">Dein Ergebnis ist <em>fertig</em>.</h2>
+        <p style="font-size: 1.0625rem; margin-top: 0.75rem;">Sag mir wohin ich dir dein 12-Seiten-Mini-Buch + den personalisierten Plan schicken soll.</p>
+      </div>
+
+      <form id="emailForm" class="email-form" novalidate>
+        <div class="form-group">
+          <label for="firstName" class="form-label">Wie heisst du?</label>
+          <input type="text" id="firstName" name="firstName" class="form-input" autocomplete="given-name" required>
+          <div class="form-error" id="firstNameError">Bitte sag mir deinen Vornamen.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Deine Email-Adresse</label>
+          <input type="email" id="email" name="email" class="form-input" autocomplete="email" required>
+          <div class="form-error" id="emailError">Bitte gib eine gültige Email-Adresse ein.</div>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--block" id="submitBtn">
+          Ergebnis jetzt anzeigen
+          <span class="btn-arrow">→</span>
+        </button>
+
+        <p class="form-disclaimer">
+          0€. Kein Spam. Du kannst dich jederzeit abmelden.<br>
+          Deine Daten gehen nur an mich (Patricia, mumlifebalance.ch).
+        </p>
+      </form>
+
+      <!-- Loading state -->
+      <div id="loadingState" style="display: none;">
+        <div class="loader">
+          <span class="loader-dot"></span>
+          <span class="loader-dot"></span>
+          <span class="loader-dot"></span>
+        </div>
+        <p style="text-align: center; opacity: 0.65;">Ich bereite dein Ergebnis vor…</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script src="quiz.js"></script>
+</body>
+</html>
