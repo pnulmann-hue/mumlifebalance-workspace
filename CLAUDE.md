@@ -432,6 +432,7 @@ Wöchentlicher News-Digest-Bot, der Artikel aus RSS-Feeds (Onlinemarketing & KI)
 - `brand-voice.md` — Tonalität, Schreibregeln, Kernbotschaft, Beispieltexte
 - `caption-formeln.md` — 5 Caption-Strukturen + CTA-Varianten + Hashtag-Strategie
 - `hook-framework.md` — Hook-Kategorien (Zahlen, Anleitungen, Provokant, Neugier, Identifikation)
+- `job-saeulen.md` — **Wirkungs-Achse** (Autorität / Story / Reichweite / Sales) — Pflicht-Layer parallel zur Themen-Achse, jeder Post = 1 Thema × 1 Job
 - `reels-framework.md` — Viral-Mechanik 2026, 3-Sek-Regel, Pillars, Posting-Zeiten, Performance-Tracking, 4-Wochen-Repost-Regel
 - `karussell-framework.md` — Karussell-Spezifika, Folien-Struktur, Feed-Aesthetic
 - `manychat-keywords.md` — ManyChat-Keywords pro Pillar (SYSTEM/QUIZ/PRODUKT/THEMA/SICHTBAR/ANLEITUNG/LEAD/ECHT1 für Mentoring, ENERGIE für doTERRA)

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+<title>Du bist die Energie-Räuberin · Mum Life Balance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="result-shell fade-in">
+  <div class="container container--narrow">
+
+    <div class="result-eyebrow" id="resultGreeting">Dein Hormon-Typ</div>
+    <h1 class="result-headline">Du bist <em>die Energie-Räuberin</em>.</h1>
+    <p class="result-tagline">Dein Tank ist leer. Du läufst auf Reserve — und dein Körper schreit es leise heraus.</p>
+
+    <div class="result-card">
+      <h3>Was das heisst</h3>
+      <p>Dein Stress-Level zehrt schneller an deinen Reserven, als du sie auffüllen kannst. <strong>Magnesium, B-Vitamine, Vitamin C, Zink</strong> — alles Nährstoffe, die dein Nervensystem unter Dauerlast verbraucht.</p>
+      <p>Du isst „normal" und denkst, du machst alles richtig. Aber dein Tank ist leer, weil dein Stresslevel den Verbrauch verdoppelt hat.</p>
+      <p><strong>Es ist kein Wunder. Es ist Mathematik.</strong></p>
+    </div>
+
+    <div class="result-card result-card--orange">
+      <h3>Deine 3 ersten Schritte</h3>
+      <ul>
+        <li><strong>Stress-Audit:</strong> Liste 3 Stressfaktoren auf, die du diese Woche reduzieren kannst — ohne dein Leben umzubauen</li>
+        <li><strong>Reserven-Check:</strong> Wann hast du das letzte Mal deine Mineralstoff-Werte wirklich überprüft (nicht den Standard-Bluttest)?</li>
+        <li><strong>Stress-Mahlzeit-Trick:</strong> 1 hochwertige Eiweiss-Quelle bei JEDEM Hauptmahl — Stresshunger sinkt sofort</li>
+      </ul>
+    </div>
+
+    <div class="result-pdf-cta">
+      <div class="result-pdf-cta-title">📩 Dein Mini-Buch ist unterwegs.</div>
+      <p class="result-pdf-cta-text">Schau in dein Postfach — dort findest du in den nächsten Minuten dein 12-Seiten-Mini-Buch mit den 4 Erkenntnissen, plus in den nächsten 3 Tagen vertiefte Mails, speziell für deinen Typ.</p>
+      <p style="font-size: 0.85rem; opacity: 0.7;">Falls die Mail nicht ankommt: Spam-Ordner checken, oder schreib mir auf Instagram <a href="https://instagram.com/patricia_ulmann">@patricia_ulmann</a>.</p>
+    </div>
+
+    <div class="result-pitch">
+      <h3>Wenn du Begleitung möchtest</h3>
+      <p>Energie-Räuberinnen wie du brauchen mehr als Drogerie-Magnesium. Sie brauchen ein <strong>Reserven-Auffüll-System</strong> + persönliche Begleitung beim Stress-Reset.</p>
+      <p>Genau dafür habe ich meine 30-Tage-Kur <strong>„Zurück zu deiner Energie"</strong> gebaut — mit hochwertigen Whole-Food-Nährstoffen, Probiotika für den Darm, und 1:1-Begleitung von mir.</p>
+      <p style="margin-top: 1rem; font-family: 'Philosopher', serif; font-style: italic; font-size: 1.1rem;">In den nächsten Tagen erzähle ich dir per Mail mehr. Wenn du jetzt schon Fragen hast — antworte einfach auf eine meiner Mails.</p>
+      <a href="https://instagram.com/patricia_ulmann" class="btn">DM mir direkt auf Instagram</a>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <p style="font-family: 'Philosopher', serif; font-style: italic; font-size: 1.15rem; color: var(--orange);">
+        Verdienen kommt von dienen — und ich diene am liebsten Mamas, die bereit sind, sich selbst wieder ernst zu nehmen.
+      </p>
+      <p style="margin-top: 1rem; font-size: 1.05rem;">— Patricia 💜</p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>Mum Life Balance</strong> · Patricia Ulmann · Schweiz 🇨🇭</p>
+    <p><a href="index.html">Zurück zur Startseite</a></p>
+  </div>
+</footer>
+
+<script>
+  // Personalize greeting if firstName came via URL
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('n');
+    if (name) {
+      document.getElementById('resultGreeting').textContent = 'Hey ' + name + ' — dein Ergebnis';
+    }
+  })();
+</script>
+
+</body>
+</html>

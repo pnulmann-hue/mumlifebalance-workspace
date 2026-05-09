@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<title>4 Erkenntnisse für Mamas mit Hormonchaos — Patricia Ulmann</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+<style>
+  /* === Brand-System === */
+  :root {
+    --petrol: #12828c;
+    --teal: #29556d;
+    --creme: #f1ecdd;
+    --orange: #dc822e;
+    --black: #1a1a1a;
+    --white: #ffffff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html, body {
+    font-family: 'Source Sans 3', -apple-system, sans-serif;
+    color: var(--teal);
+    background: var(--creme);
+    font-size: 12pt;
+    line-height: 1.55;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  h1, h2, h3, .display { font-family: 'Philosopher', Georgia, serif; font-weight: 700; }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    padding: 22mm 20mm;
+    page-break-after: always;
+    break-after: page;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    background: var(--creme);
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+  .page:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .page-number {
+    position: absolute;
+    bottom: 12mm;
+    right: 18mm;
+    font-size: 9pt;
+    color: var(--petrol);
+    opacity: 0.6;
+    letter-spacing: 0.1em;
+  }
+
+  .footer-brand {
+    position: absolute;
+    bottom: 12mm;
+    left: 20mm;
+    font-size: 9pt;
+    color: var(--petrol);
+    opacity: 0.6;
+    letter-spacing: 0.05em;
+  }
+
+  /* === COVER === */
+  .cover {
+    background: var(--petrol);
+    color: var(--creme);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 22mm 20mm;
+  }
+  .cover-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .cover-brand {
+    font-size: 10pt;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+  .cover-tag {
+    background: var(--orange);
+    color: var(--creme);
+    padding: 4mm 7mm;
+    font-size: 9pt;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .cover-main h1 {
+    font-size: 70pt;
+    line-height: 0.95;
+    color: var(--creme);
+    margin-bottom: 8mm;
+    letter-spacing: -0.02em;
+  }
+  .cover-main h1 em {
+    font-style: italic;
+    color: var(--orange);
+  }
+  .cover-sub {
+    font-size: 16pt;
+    line-height: 1.4;
+    max-width: 130mm;
+    color: var(--creme);
+    opacity: 0.95;
+    font-family: 'Philosopher', serif;
+  }
+  .cover-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid rgba(241, 236, 221, 0.3);
+    padding-top: 6mm;
+  }
+  .cover-byline {
+    font-family: 'Philosopher', serif;
+    font-size: 14pt;
+    color: var(--creme);
+  }
+  .cover-byline small {
+    display: block;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9pt;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.75;
+    margin-top: 2mm;
+    font-weight: 400;
+  }
+  .cover-meta {
+    text-align: right;
+    font-size: 9pt;
+    letter-spacing: 0.1em;
+    opacity: 0.75;
+  }
+
+  /* === GENERAL TEXT PAGES === */
+  .page-title {
+    font-size: 32pt;
+    color: var(--petrol);
+    margin-bottom: 8mm;
+    line-height: 1.1;
+  }
+  .page-title em {
+    font-style: italic;
+    color: var(--orange);
+  }
+
+  .lead {
+    font-size: 14pt;
+    line-height: 1.55;
+    margin-bottom: 6mm;
+  }
+
+  p {
+    margin-bottom: 4mm;
+    font-size: 12pt;
+    line-height: 1.6;
+  }
+
+  p strong {
+    color: var(--petrol);
+    font-weight: 600;
+  }
+
+  .signature {
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    font-size: 16pt;
+    color: var(--orange);
+    margin-top: 8mm;
+  }
+
+  /* === ERKENNTNIS PAGES === */
+  .erkenntnis-page {
+    background: var(--creme);
+  }
+
+  .erkenntnis-header {
+    display: flex;
+    align-items: baseline;
+    gap: 6mm;
+    margin-bottom: 4mm;
+  }
+
+  .erkenntnis-number {
+    font-family: 'Philosopher', serif;
+    font-size: 90pt;
+    line-height: 0.9;
+    color: var(--petrol);
+    font-weight: 700;
+  }
+
+  .erkenntnis-label {
+    font-size: 11pt;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--petrol);
+    font-weight: 600;
+  }
+
+  .bonus-badge {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--creme);
+    padding: 2mm 4mm;
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    margin-left: 4mm;
+    transform: translateY(-2mm);
+  }
+
+  .erkenntnis-title {
+    font-size: 28pt;
+    line-height: 1.15;
+    color: var(--teal);
+    margin-bottom: 8mm;
+    max-width: 160mm;
+  }
+
+  .erkenntnis-title em {
+    font-style: italic;
+    color: var(--orange);
+  }
+
+  .erkenntnis-body {
+    font-size: 11.5pt;
+    line-height: 1.65;
+    margin-bottom: 8mm;
+  }
+
+  .erkenntnis-body p {
+    margin-bottom: 4mm;
+  }
+
+  .erkenntnis-body ul {
+    list-style: none;
+    margin: 4mm 0 6mm 0;
+    padding: 0;
+  }
+
+  .erkenntnis-body li {
+    padding-left: 8mm;
+    margin-bottom: 3mm;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .erkenntnis-body li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 14pt;
+    top: -2pt;
+  }
+
+  .pull-quote {
+    border-left: 3pt solid var(--orange);
+    padding: 3mm 0 3mm 7mm;
+    margin: 6mm 0;
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    font-size: 14pt;
+    color: var(--petrol);
+    line-height: 1.4;
+  }
+
+  .action-box {
+    background: var(--white);
+    border: 1.5pt solid var(--orange);
+    padding: 6mm 7mm;
+    margin: 6mm 0;
+    border-radius: 2mm;
+  }
+
+  .action-box-title {
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--orange);
+    font-weight: 700;
+    margin-bottom: 3mm;
+  }
+
+  .action-box-content {
+    font-size: 11.5pt;
+    line-height: 1.5;
+    color: var(--teal);
+  }
+
+  .action-box-content strong {
+    color: var(--orange);
+  }
+
+  .divider {
+    height: 1pt;
+    background: var(--petrol);
+    opacity: 0.2;
+    margin: 6mm 0;
+  }
+
+  /* === REFLECTION PAGE === */
+  .reflection-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4mm;
+    margin-top: 6mm;
+  }
+
+  .reflection-card {
+    background: var(--white);
+    padding: 5mm 6mm;
+    border-left: 3pt solid var(--petrol);
+    border-radius: 1mm;
+    display: flex;
+    align-items: flex-start;
+    gap: 5mm;
+  }
+
+  .reflection-number {
+    font-family: 'Philosopher', serif;
+    font-size: 22pt;
+    color: var(--petrol);
+    line-height: 1;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .reflection-text {
+    font-size: 11pt;
+    line-height: 1.4;
+    padding-top: 1mm;
+  }
+
+  /* === TWO COLUMN PAGE === */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8mm;
+    margin-top: 8mm;
+  }
+
+  .col {
+    padding: 7mm;
+    border-radius: 2mm;
+  }
+
+  .col-1 {
+    background: var(--white);
+    border-top: 4pt solid var(--teal);
+  }
+
+  .col-2 {
+    background: var(--petrol);
+    color: var(--creme);
+    border-top: 4pt solid var(--orange);
+  }
+
+  .col h3 {
+    font-size: 18pt;
+    margin-bottom: 4mm;
+    color: inherit;
+  }
+
+  .col-1 h3 { color: var(--teal); }
+  .col-2 h3 { color: var(--creme); }
+
+  .col p {
+    color: inherit;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  .col-2 p { color: var(--creme); }
+
+  /* === KUR PITCH PAGE === */
+  .pitch-page {
+    background: var(--petrol);
+    color: var(--creme);
+  }
+
+  .pitch-page .page-number,
+  .pitch-page .footer-brand {
+    color: var(--creme);
+    opacity: 0.6;
+  }
+
+  .pitch-eyebrow {
+    font-size: 10pt;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-bottom: 4mm;
+  }
+
+  .pitch-title {
+    font-size: 36pt;
+    line-height: 1.05;
+    margin-bottom: 4mm;
+    color: var(--creme);
+  }
+
+  .pitch-title em {
+    color: var(--orange);
+    font-style: italic;
+  }
+
+  .pitch-sub {
+    font-size: 14pt;
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    margin-bottom: 8mm;
+    opacity: 0.95;
+  }
+
+  .pitch-list {
+    list-style: none;
+    padding: 0;
+    margin: 6mm 0;
+  }
+
+  .pitch-list li {
+    padding: 3mm 0 3mm 9mm;
+    position: relative;
+    font-size: 11.5pt;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(241, 236, 221, 0.15);
+  }
+
+  .pitch-list li:last-child { border-bottom: none; }
+
+  .pitch-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 14pt;
+  }
+
+  .pitch-cta-box {
+    background: var(--orange);
+    color: var(--creme);
+    padding: 6mm 7mm;
+    margin-top: 8mm;
+    border-radius: 2mm;
+  }
+
+  .pitch-cta-box-title {
+    font-family: 'Philosopher', serif;
+    font-size: 16pt;
+    margin-bottom: 2mm;
+  }
+
+  .pitch-cta-box p {
+    font-size: 11pt;
+    color: var(--creme);
+    margin: 0;
+  }
+
+  /* === OUTRO === */
+  .outro-page {
+    background: var(--creme);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30mm 25mm;
+  }
+
+  .outro-decor {
+    color: var(--orange);
+    font-size: 24pt;
+    margin-bottom: 6mm;
+    letter-spacing: 0.5em;
+  }
+
+  .outro-headline {
+    font-family: 'Philosopher', serif;
+    font-size: 44pt;
+    color: var(--petrol);
+    line-height: 1.05;
+    margin-bottom: 10mm;
+    font-weight: 700;
+  }
+
+  .outro-headline em {
+    font-style: italic;
+    color: var(--orange);
+  }
+
+  .outro-body {
+    font-size: 13pt;
+    line-height: 1.6;
+    max-width: 130mm;
+    margin: 0 auto 8mm auto;
+  }
+
+  .outro-signature {
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    font-size: 22pt;
+    color: var(--orange);
+    margin-top: 6mm;
+  }
+
+  .outro-postscript {
+    margin-top: 12mm;
+    padding-top: 8mm;
+    border-top: 1px solid rgba(18, 130, 140, 0.25);
+    font-size: 10pt;
+    line-height: 1.55;
+    max-width: 140mm;
+    color: var(--teal);
+    opacity: 0.85;
+    font-style: italic;
+  }
+
+  /* === HOW TO USE PAGE (Page 3) === */
+  .howto-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 8mm;
+  }
+
+  .howto-item {
+    display: flex;
+    gap: 6mm;
+    margin-bottom: 7mm;
+    align-items: flex-start;
+  }
+
+  .howto-icon {
+    font-size: 24pt;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .howto-text {
+    font-size: 12pt;
+    line-height: 1.55;
+  }
+
+  .howto-text strong {
+    display: block;
+    font-family: 'Philosopher', serif;
+    font-weight: 700;
+    color: var(--petrol);
+    font-size: 14pt;
+    margin-bottom: 1mm;
+  }
+
+  /* === HI DU PAGE (Page 2) === */
+  .hi-page-eyebrow {
+    font-size: 10pt;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 6mm;
+    font-weight: 600;
+  }
+
+  .hi-letter p {
+    font-size: 12pt;
+    line-height: 1.65;
+    margin-bottom: 4mm;
+  }
+
+  .hi-letter p strong {
+    color: var(--petrol);
+  }
+
+  .hi-letter em.italic-block {
+    display: block;
+    font-style: italic;
+    color: var(--orange);
+    font-family: 'Philosopher', serif;
+    font-size: 14pt;
+    margin: 4mm 0;
+    padding-left: 4mm;
+    border-left: 2pt solid var(--orange);
+  }
+
+  /* === SUMMARY PAGE (Page 8) === */
+  .cascade-box {
+    background: var(--white);
+    padding: 7mm;
+    margin: 6mm 0;
+    border-radius: 2mm;
+    border-top: 4pt solid var(--orange);
+  }
+
+  .cascade-arrow {
+    color: var(--orange);
+    font-weight: 700;
+    margin: 0 2mm;
+  }
+
+  .cascade-text {
+    font-size: 12pt;
+    line-height: 1.65;
+    color: var(--teal);
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1: COVER ============================ -->
+<div class="page cover">
+  <div class="cover-top">
+    <div class="cover-brand">MUM·LIFE·BALANCE</div>
+    <div class="cover-tag">0€ Mama-Guide</div>
+  </div>
+
+  <div class="cover-main">
+    <h1>Hormon-<em>chaos?</em></h1>
+    <div class="cover-sub">
+      Die 4 Erkenntnisse, die mir mit 36 den Stecker gezogen haben — und wie ich den Weg zurück zu meiner Energie gefunden habe.
+    </div>
+  </div>
+
+  <div class="cover-bottom">
+    <div class="cover-byline">
+      Patricia Ulmann
+      <small>Mum Life Balance · Schweiz</small>
+    </div>
+    <div class="cover-meta">
+      Für Mamas mit Vormenopause-<br>Symptomen ab 35
+    </div>
+  </div>
+</div>
+
+<!-- ============================ PAGE 2: HI DU ============================ -->
+<div class="page">
+  <div class="hi-page-eyebrow">Hi, schön dass du da bist</div>
+
+  <h1 class="page-title">Hey, du.</h1>
+
+  <div class="hi-letter">
+    <p>Wenn du diese 4 Erkenntnisse gerade liest, dann kennst du wahrscheinlich eines davon:</p>
+
+    <em class="italic-block">
+      Schlaflosigkeit, obwohl du erschöpft bist. Haarausfall, der einfach nicht aufhört. Eine Müdigkeit, die kein Wochenende mehr wegschläft. Und ein Bauchgefühl, das sagt: „Da stimmt was nicht."
+    </em>
+
+    <p>Genau da war ich auch. <strong>Mit 36 hat mir mein Körper den Stecker gezogen.</strong></p>
+
+    <p>Ich habe dann Monate gebraucht, um die wirklichen Ursachen zu verstehen — weil mein Hausarzt zu meinen Werten gesagt hat: „Alles okay."</p>
+
+    <p>Heute weiss ich: Mein Körper hat nicht geschrien. Er hat <strong>gerufen</strong>. Aus dem Funktionsmodus, den ich 10 Jahre gefahren bin.</p>
+
+    <p>Diese 4 Erkenntnisse haben mein Leben verändert. Und ich teile sie mit dir, weil ich nicht will, dass du auch erst zusammenbrichst, bevor du anfängst zu hören.</p>
+
+    <p>Pass auf hier — das hier ist wichtig.</p>
+
+    <div class="signature">Deine Patricia 💜</div>
+  </div>
+
+  <div class="page-number">02</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- ============================ PAGE 3: HOW TO USE ============================ -->
+<div class="page">
+  <div class="hi-page-eyebrow">So holst du das Maximum raus</div>
+
+  <h1 class="page-title">Wie du dieses<br>Mini-Buch <em>nutzt</em>.</h1>
+
+  <ul class="howto-list">
+    <li class="howto-item">
+      <div class="howto-icon">🌿</div>
+      <div class="howto-text">
+        <strong>Eine pro Tag.</strong>
+        Lies eine Erkenntnis pro Tag — nicht alle auf einmal. Lass sie wirken, bevor du zur nächsten gehst.
+      </div>
+    </li>
+
+    <li class="howto-item">
+      <div class="howto-icon">🌿</div>
+      <div class="howto-text">
+        <strong>Frag dich nach jeder.</strong>
+        Trifft mich das? Wo? Wie stark? Ehrlich, ohne Filter — du musst niemandem etwas beweisen.
+      </div>
+    </li>
+
+    <li class="howto-item">
+      <div class="howto-icon">🌿</div>
+      <div class="howto-text">
+        <strong>Eine konkrete Sache.</strong>
+        Notier dir EINE Sache, die du diese Woche umsetzen willst. Nicht zehn. Eine.
+      </div>
+    </li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <p style="margin-top: 6mm;">Am Ende des Mini-Buchs findest du eine <strong>Selbst-Reflexion mit 5 Fragen</strong> — die hilft dir zu sehen, wo dein Körper gerade am lautesten spricht.</p>
+
+  <p>Und wenn dich das hier alles trifft: in den nächsten Tagen schicke ich dir per Mail noch ein paar vertiefte Gedanken dazu. Schau einfach rein, kein Druck.</p>
+
+  <div class="page-number">03</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- ============================ PAGE 4: ERKENNTNIS 1 — PROTEIN ============================ -->
+<div class="page erkenntnis-page">
+  <div class="erkenntnis-header">
+    <div class="erkenntnis-number">1</div>
+    <div class="erkenntnis-label">Erkenntnis</div>
+  </div>
+
+  <h2 class="erkenntnis-title">Wir Frauen essen<br><em>viel zu wenig</em><br>Eiweiss.</h2>
+
+  <div class="erkenntnis-body">
+    <p>Wirklich. <strong>Viel zu wenig.</strong></p>
+
+    <p>Eiweiss ist nicht nur „Sportler-Zeug". Es ist der Grundbaustein für:</p>
+
+    <ul>
+      <li><strong>Muskelerhalt</strong> — der ab 35 jedes Jahr von selbst weniger wird, wenn du nichts dagegen tust</li>
+      <li><strong>Regeneration</strong> — dein Körper repariert sich nachts mit Aminosäuren, nicht mit Wunschdenken</li>
+      <li><strong>Sättigung</strong> — und das ist der Game-Changer für dein Hormonsystem</li>
+    </ul>
+
+    <div class="pull-quote">
+      Wenig Eiweiss → Heisshunger → Zucker → Cortisol-Spike → Stress-Spirale → Hormone tanzen.
+    </div>
+
+    <p><strong>Patricias Faustregel:</strong> Mindestens 1 g Eiweiss pro kg Körpergewicht. Pro Tag.</p>
+
+    <p>Beispiel: 65 kg → 65 g Eiweiss. Das ist mehr als du denkst. 1 Ei hat ~6 g. 1 Portion Quark ~15 g. 1 Hähnchenbrust ~40 g. Rechne mal nach, was du gestern hattest.</p>
+  </div>
+
+  <div class="action-box">
+    <div class="action-box-title">🌱 Sofort umsetzbar</div>
+    <div class="action-box-content">
+      Tracke <strong>3 Tage lang</strong> dein Eiweiss. Nicht dauerhaft — nur 3 Tage. Du wirst Augen machen.
+    </div>
+  </div>
+
+  <div class="page-number">04</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- ============================ PAGE 5: ERKENNTNIS 2 — STRESS ============================ -->
+<div class="page erkenntnis-page">
+  <div class="erkenntnis-header">
+    <div class="erkenntnis-number">2</div>
+    <div class="erkenntnis-label">Erkenntnis</div>
+  </div>
+
+  <h2 class="erkenntnis-title">Stress ist ein<br><em>Vitaminkiller.</em></h2>
+
+  <div class="erkenntnis-body">
+    <p>Nicht metaphorisch. <strong>Wörtlich.</strong></p>
+
+    <p>Wenn du gestresst bist — und welche Mama ist das nicht — bedient sich dein Körper an deinen Reserven, um den Tag zu überstehen.</p>
+
+    <p><strong>Magnesium. B-Vitamine. Vitamin C. Zink. Eisen.</strong> Alles Nährstoffe, die dein Nervensystem unter Dauerlast verbraucht.</p>
+
+    <div class="pull-quote">
+      Du isst „normal" und denkst, du machst alles richtig. Aber dein Tank ist leer, weil dein Stresslevel den Verbrauch verdoppelt hat.
+    </div>
+
+    <p>Und dann wundern wir uns, dass wir mit 38 Haare verlieren, schlecht schlafen, ständig krank werden.</p>
+
+    <p><strong>Es ist kein Wunder. Es ist Mathematik.</strong></p>
+
+    <div class="divider"></div>
+
+    <p><strong>Was das für dich heisst:</strong> Stress reduzieren = Schlüssel. ABER: Stress reduzieren funktioniert nicht über Nacht. Was funktioniert: <strong>Reserven gezielt auffüllen,</strong> während du an den Stressfaktoren arbeitest. Beides parallel.</p>
+  </div>
+
+  <div class="action-box">
+    <div class="action-box-title">🌱 Frag dich</div>
+    <div class="action-box-content">
+      Wann war das letzte Mal, dass dein Tank wirklich <strong>voll</strong> war? Erinnerst du dich? Eben.
+    </div>
+  </div>
+
+  <div class="page-number">05</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- ============================ PAGE 6: ERKENNTNIS 3 — SAISONAL ============================ -->
+<div class="page erkenntnis-page">
+  <div class="erkenntnis-header">
+    <div class="erkenntnis-number">3</div>
+    <div class="erkenntnis-label">Erkenntnis</div>
+  </div>
+
+  <h2 class="erkenntnis-title">Saisonal und frisch<br><em>reicht nicht.</em><br>Egal wie gut du kochst.</h2>
+
+  <div class="erkenntnis-body">
+    <p>Das war für mich die <strong>bitterste Erkenntnis.</strong></p>
+
+    <p>Ich habe gekocht. Saisonal, biologisch, frisch, mit Liebe. Und trotzdem hat mir mein Körper gesagt: „Reicht nicht."</p>
+
+    <p><strong>Hier ist warum:</strong></p>
+
+    <ul>
+      <li><strong>Böden sind ausgelaugt.</strong> Was vor 50 Jahren in einer Karotte drin war, ist heute oft nur ein Bruchteil davon.</li>
+      <li><strong>Lange Transportwege + Lagerung</strong> kosten Vitamine. Auch bei „regional".</li>
+      <li><strong>Omega 3</strong> kannst du im Alpenraum praktisch nur über Fisch oder Algen aufnehmen — und davon essen wir zu wenig.</li>
+      <li><strong>Vitamin D</strong> kommt von der Sonne — die hier 6 Monate im Jahr fehlt.</li>
+    </ul>
+
+    <div class="pull-quote">
+      Heisst nicht, dass dein Kochen umsonst ist. Heisst: Es ist die Basis. Aber nicht das ganze Bild.
+    </div>
+
+    <p><strong>Was das für dich heisst:</strong> Gut kochen + gezielt auffüllen = die Realität für Mamas ab 35. <strong>Nicht entweder-oder. Sondern beides.</strong></p>
+  </div>
+
+  <div class="action-box">
+    <div class="action-box-title">🌱 Frag dich</div>
+    <div class="action-box-content">
+      Hast du dir schon mal einen <strong>ehrlichen</strong> Mineralstoff- und Vitamin-Status machen lassen? Nicht den Standard-Bluttest. Den TIEFEN.
+    </div>
+  </div>
+
+  <div class="page-number">06</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- ============================ PAGE 7: ERKENNTNIS 4 (BONUS) — DARM ============================ -->
+<div class="page erkenntnis-page">
+  <div class="erkenntnis-header">
+    <div class="erkenntnis-number">4</div>
+    <div class="erkenntnis-label">Erkenntnis<span class="bonus-badge">Bonus</span></div>
+  </div>
+
+  <h2 class="erkenntnis-title">Dein Darm ist<br>dein <em>zweites Gehirn.</em></h2>
+
+  <div class="erkenntnis-body">
+    <p>Und wenn dein Mikrobiom nicht stimmt — also die Bakterien-Balance in deinem Darm — passiert etwas Krasses:</p>
+
+    <p>Der Darm gibt <strong>die Reste der Hormone</strong>, die er eigentlich ausscheiden sollte, <strong>wieder an deinen Körper zurück.</strong></p>
+
+    <p style="font-style: italic; color: var(--orange);">Lies das nochmal.</p>
+
+    <p>Hormone, die dein Körper schon „abgearbeitet" hat — Östrogen-Reste, Cortisol-Reste — die sollten raus. Aber wenn der Darm gestresst ist, recycelt er sie.</p>
+
+    <div class="pull-quote">
+      = Hormonchaos. Du isst gut. Du machst Sport. Du schläfst (versuchst es). Trotzdem fühlst du dich wie auf einer Achterbahn. Vielleicht liegt's an deinem Darm.
+    </div>
+
+    <p><strong>Was das für dich heisst:</strong> Wenn du Hormonschwankungen kennst, die du nicht erklären kannst — schau nicht nur auf den Hormonstatus. <strong>Schau auf den Darm.</strong></p>
+  </div>
+
+  <div class="action-box">
+    <div class="action-box-title">🌱 Anzeichen für ein gestresstes Mikrobiom</div>
+    <div class="action-box-content">
+      Blähungen, auch nach „normalem" Essen · Verdauung, die ständig wechselt · Heisshunger auf Süsses · Müdigkeit nach dem Essen
+    </div>
+  </div>
+
+  <div class="page-number">07</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- ============================ PAGE 8: ALLE 4 TREFFEN ============================ -->
+<div class="page">
+  <div class="hi-page-eyebrow">Wenn alle 4 dich treffen</div>
+
+  <h1 class="page-title">Du bist <em>nicht</em> alleine.</h1>
+
+  <p class="lead">Und du bist nicht „faul" oder „zu wenig diszipliniert".</p>
+
+  <p>Was du erlebst, ist eine <strong>Kaskade</strong>:</p>
+
+  <div class="cascade-box">
+    <div class="cascade-text">
+      <strong>Zu wenig Eiweiss</strong> <span class="cascade-arrow">→</span> Zucker-Spirale <span class="cascade-arrow">→</span> Cortisol <span class="cascade-arrow">→</span> Reserven leer <span class="cascade-arrow">→</span> Mikrobiom leidet <span class="cascade-arrow">→</span> Hormone tanzen <span class="cascade-arrow">→</span> <strong>Müdigkeit, Haarausfall, Schlaflosigkeit.</strong>
+    </div>
+  </div>
+
+  <p style="margin-top: 8mm;"><strong>Das Gute:</strong> Das ist umkehrbar.</p>
+
+  <p><strong>Das Schwierige:</strong> Es geht nur, wenn du an mehreren Schrauben gleichzeitig drehst.</p>
+
+  <p>Genau deshalb habe ich meine eigene <strong>4-Säulen-Routine</strong> gebaut. Und genau deshalb teile ich sie heute mit anderen Mamas.</p>
+
+  <div class="signature">— Patricia</div>
+
+  <div class="page-number">08</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- ============================ PAGE 9: SELBST-REFLEXION ============================ -->
+<div class="page">
+  <div class="hi-page-eyebrow">Selbst-Reflexion</div>
+
+  <h1 class="page-title">5 Fragen, die <em>zeigen,</em><br>wo dein Körper am<br>lautesten spricht.</h1>
+
+  <p style="margin-bottom: 6mm;">Schreib's auf. Auch wenn du jetzt nichts damit machst. Du wirst überrascht sein, was sichtbar wird, wenn du es liest.</p>
+
+  <div class="reflection-cards">
+    <div class="reflection-card">
+      <div class="reflection-number">1</div>
+      <div class="reflection-text">Wenn du auf einer Skala 1-10 deine Energie bewerten müsstest — wo stehst du? Wo möchtest du stehen?</div>
+    </div>
+
+    <div class="reflection-card">
+      <div class="reflection-number">2</div>
+      <div class="reflection-text">Wann war dein Schlaf das letzte Mal richtig erholsam?</div>
+    </div>
+
+    <div class="reflection-card">
+      <div class="reflection-number">3</div>
+      <div class="reflection-text">Du hast wahrscheinlich 1-2 körperliche Symptome, die dir seit Monaten Sorgen machen. Welche?</div>
+    </div>
+
+    <div class="reflection-card">
+      <div class="reflection-number">4</div>
+      <div class="reflection-text">Was hast du schon ausprobiert? Was hat geholfen, was nicht?</div>
+    </div>
+
+    <div class="reflection-card">
+      <div class="reflection-number">5</div>
+      <div class="reflection-text">Was würde sich ändern, wenn du in 30 Tagen wieder durchschlafen, klarer denken und mehr Energie haben würdest?</div>
+    </div>
+  </div>
+
+  <div class="page-number">09</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- ============================ PAGE 10: WAS NUN ============================ -->
+<div class="page">
+  <div class="hi-page-eyebrow">Was nun?</div>
+
+  <h1 class="page-title">Du hast jetzt<br><em>zwei Wege.</em></h1>
+
+  <p>Wenn du dich in diesen 4 Erkenntnissen wiedergefunden hast — gut. Du weisst jetzt mehr als 90% deiner Freundinnen.</p>
+
+  <p>Aber Wissen alleine verändert nichts. Was zählt, ist <strong>was du jetzt tust.</strong></p>
+
+  <div class="two-col">
+    <div class="col col-1">
+      <h3>Weg 1<br>Du gehst es allein an.</h3>
+      <p>Probier mehr Eiweiss. Reduzier Stress. Arbeite an deinem Mikrobiom.</p>
+      <p><strong>Funktioniert.</strong></p>
+      <p>Dauert länger. Manchmal viel länger.</p>
+    </div>
+
+    <div class="col col-2">
+      <h3>Weg 2<br>Du holst dir Begleitung.</h3>
+      <p>Genau dafür habe ich vor 18 Monaten meine Kur <strong>„Zurück zu deiner Energie"</strong> entwickelt.</p>
+      <p>30 Tage. 4 Säulen. Klare Schritte. Persönliche Begleitung.</p>
+      <p>Mehr dazu auf der nächsten Seite.</p>
+    </div>
+  </div>
+
+  <div class="page-number">10</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- ============================ PAGE 11: KUR PITCH ============================ -->
+<div class="page pitch-page">
+  <div class="pitch-eyebrow">Meine 30-Tage-Kur</div>
+
+  <h1 class="pitch-title">Zurück zu<br>deiner <em>Energie.</em></h1>
+
+  <div class="pitch-sub">
+    Meine 4 Säulen praktisch umgesetzt — für die Mama, die nicht mehr im Funktionsmodus leben will.
+  </div>
+
+  <ul class="pitch-list">
+    <li><strong>Persönliche 1:1-Begleitung</strong> über 30 Tage — du machst das nicht allein</li>
+    <li><strong>Padlet-Zugang</strong> mit allen Anleitungen, Rezepten, Routinen</li>
+    <li><strong>Whole-Food-Nährstoff-Komplex</strong> (90+ Nährstoffe für deine Reserven — Erkenntnis 3)</li>
+    <li><strong>Probiotika-Komplex</strong> für dein Mikrobiom (Erkenntnis 4)</li>
+    <li><strong>Entgiftungs-Unterstützung</strong> für die Hormon-Balance (Erkenntnis 2)</li>
+    <li><strong>Verdauungs-Enzyme</strong> für bessere Nährstoff-Aufnahme</li>
+  </ul>
+
+  <div class="pitch-cta-box">
+    <div class="pitch-cta-box-title">Mehr Infos in den nächsten Tagen.</div>
+    <p>Schau in dein Postfach — die nächsten 3 Tage gehen wir tiefer in jede Erkenntnis. Wenn du jetzt schon Fragen hast: antworte einfach auf eine meiner Mails. Wir reden persönlich, ohne Verkaufsdruck.</p>
+  </div>
+
+  <div class="page-number">11</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- ============================ PAGE 12: OUTRO ============================ -->
+<div class="page outro-page">
+  <div class="outro-decor">· · ·</div>
+
+  <h1 class="outro-headline">Du <em>schaffst</em><br>das.</h1>
+
+  <div class="outro-body">
+    <p>Egal welchen Weg du gehst — geh ihn. Hör nicht auf zu hören, wenn dein Körper spricht.</p>
+
+    <p>Und wenn du Fragen hast, bin ich da. Per DM auf Instagram <strong>(@patricia_ulmann)</strong>, per Antwort auf eine meiner Mails. Du musst das nicht allein machen.</p>
+
+    <p style="margin-top: 6mm;"><em style="color: var(--petrol); font-family: 'Philosopher', serif; font-size: 14pt;">Verdienen kommt von dienen — und ich diene am liebsten Mamas, die bereit sind, sich selbst wieder ernst zu nehmen.</em></p>
+  </div>
+
+  <div class="outro-signature">Patricia 💜</div>
+
+  <div class="outro-postscript">
+    <strong style="color: var(--petrol);">PS:</strong> In den nächsten 3 Tagen bekommst du noch 3 Mails von mir, in denen ich tiefer in jede Erkenntnis gehe. Hab da rein — da kommen die wirklich wichtigen Sachen.
+  </div>
+
+  <div class="page-number">12</div>
+  <div class="footer-brand">mumlifebalance.ch · Patricia Ulmann · Schweiz</div>
+</div>
+
+</body>
+</html>
