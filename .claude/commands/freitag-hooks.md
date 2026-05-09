@@ -27,11 +27,12 @@ Geliefert via:
 Lies in dieser Reihenfolge:
 
 1. `context/ki-phrasen-blackliste.md` — KI-Floskel-Verbote (gilt für jeden Hook)
-2. `context/hook-framework.md` — die 5 Hook-Kategorien (Zahlen / Anleitung / Provokant / Neugier / Identifikation)
-3. `context/brand-voice.md` — Patricia-Tonalität
-4. `context/patricia-expertise.md` — einzige Quelle für Patricia-Zahlen
-5. `context/patricia-freebies.md` — aktive Lead-Magnete + DM-Keywords
-6. `context/business-info.md` — beide Profile + Zielgruppen
+2. **`context/job-saeulen.md` — PFLICHT! Wirkungs-Achse (A/B/C/D). Die 20 Hooks MÜSSEN nach Job-Säulen verteilt sein (siehe Mix-Pflicht weiter unten). Jeder Hook bekommt im Output einen A/B/C/D-Tag.**
+3. `context/hook-framework.md` — die 5 Hook-Kategorien (Zahlen / Anleitung / Provokant / Neugier / Identifikation)
+4. `context/brand-voice.md` — Patricia-Tonalität
+5. `context/patricia-expertise.md` — einzige Quelle für Patricia-Zahlen
+6. `context/patricia-freebies.md` — aktive Lead-Magnete + DM-Keywords
+7. `context/business-info.md` — beide Profile + Zielgruppen
 7. `reference/content-bot-system.md` — IDs + Workflow
 8. **Memory-Regeln:** alle `feedback_*.md` Files (besonders: keine erfundenen Zahlen, Hooks-Inspiration-nicht-Copypaste, Karussell-max-10-Folien, schweben-statt-hovern, PIE-Strategie-Themen-Variation)
 9. **Letzte 4 Wochen:** `outputs/karussells/` + `outputs/reels/` — was haben wir kürzlich gepostet (Doppelung vermeiden)
@@ -237,6 +238,14 @@ Julia's Cover-Regel (aus „IG Reichweiten Booster"): **„Spezifisch, provozier
 - mind. 3 Expertise (Tipps / Listicle / How-To)
 - 1 Wild
 
+**Job-Säulen-Pflicht-Mix pro Profil (PFLICHT seit 2026-05-08, siehe `context/job-saeulen.md`):**
+- mind. 2-3 **Säule A (Autorität)** — Reframe / Methode / „X Schritte" für Saves
+- mind. 2-3 **Säule B (Story)** — Wake-Up / NM-Insider / autobiografisch für DMs
+- mind. 2-3 **Säule C (Reichweite)** — Pain-Hook / „Mama-Truth" / Provokation für Shares
+- mind. 1-2 **Säule D (Sales)** — Programm-Aktivierung / Funnel-CTA / Cases (außer doTERRA-Profil hat <100 Followers, dann D-Säule optional)
+
+→ Im Output-Tabellen-Format: zusätzliche Spalte „Job" mit A/B/C/D pro Hook.
+
 **Themen-Variation-Pflicht:** mind. 2 verschiedene Pillars/Themen pro Profil. Niemals 10 Hooks zum gleichen Thema.
 
 ### Hook-Vielfalt prüfen
@@ -288,11 +297,13 @@ Wenn nein → eines davon einbauen:
 
 ## Mentoring · 10 Hooks (@mumlifebalance_patricia_ulmann)
 
-| # | Empfehlung | Hook | Kategorie | PIE | Bezug zu Phase 2/3 |
-|---|---|---|---|---|---|
-| M1 | [K] | [Hook-Text] | Provokation | E | Wochenfokus-Hauptthema |
-| M2 | [R] | [Hook-Text] | Identifikation | P | Pain-Point #2 |
+| # | Empfehlung | Hook | Kategorie | PIE | Job | Bezug zu Phase 2/3 |
+|---|---|---|---|---|---|---|
+| M1 | [K] | [Hook-Text] | Provokation | E | A | Wochenfokus-Hauptthema |
+| M2 | [R] | [Hook-Text] | Identifikation | P | C | Pain-Point #2 |
 | ... |
+
+**Job-Mix-Check unten in Tabelle:** A: __ · B: __ · C: __ · D: __ → muss Pflicht-Mix erfüllen!
 
 ## doTERRA · 10 Hooks (@patricia_ulmann)
 
