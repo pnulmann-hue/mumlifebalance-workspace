@@ -1,0 +1,14 @@
+{
+  "name": "finanzen-tracker",
+  "version": "1.0.0",
+  "description": "PayPal + Bank-Auszug Parser fuer monatliche Cashflow-Auswertung",
+  "type": "module",
+  "scripts": {
+    "parse:paypal": "node parse-paypal.js",
+    "parse:bank": "node parse-bank.js",
+    "summary": "node summary.js"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6"
+  }
+}

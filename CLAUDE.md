@@ -443,6 +443,45 @@ Rendert eine Karussell-HTML-Vorlage zu Instagram-postbaren PNG-Folien. Ersetzt d
 
 Plan: `plans/2026-05-07-apify-mcp-integration.md`.
 
+### Cashflow-Tracker (`scripts/finanzen/`, live seit 2026-05-09)
+
+**Monatliche Cashflow-Auswertung** für Patricias Business — kombiniert PayPal + Schweizer-Bank-Auszug zu einem Notion-Block für die Monatsplanung.
+
+**Drei Stufen:**
+
+#### Stufe 1 — Snapshot in Notion (manuell)
+Beim `/monatsplan`-Lauf: was Patricia weiss in „Erkenntnis Kennzahlen-Analyse"-Property eintragen.
+
+#### Stufe 2 — Manueller Workflow (CSV → Bilanz)
+1. Patricia exportiert PayPal-Transaktionsbericht + Bank-Auszug als CSV
+2. Ablegen in `context/finanzen/[YYYY-MM]/` (gitignored, sensibel)
+3. Lauf:
+   ```bash
+   cd scripts/finanzen && npm install
+   node parse-paypal.js 2026-04
+   node parse-bank.js 2026-04
+   node summary.js 2026-04
+   ```
+4. Output: `outputs/finanzen/[YYYY-MM]/cashflow-summary.md` mit Notion-Block zum Reinkopieren
+
+**Bank-Format-Detection:** PostFinance, Raiffeisen, UBS, ZKB, Migros Bank automatisch erkannt. Andere Banken: `parse-bank.js` Funktion `detectFormat` erweitern.
+
+#### Stufe 3 — PayPal-Automatisierung via GitHub Action (`paypal-monthly.yml`)
+- **Cron:** 1. jeden Monats 06:00 Schweiz → holt Vormonats-Transaktionen
+- **API:** PayPal Reporting API v1 (`fetch-paypal-api.js`)
+- **Secrets:** `PAYPAL_CLIENT_ID` + `PAYPAL_CLIENT_SECRET` (PayPal Developer Live-App)
+- **Output:** Raw-CSV als GitHub-Action-Artifact (90d retention, NICHT committed) + Bilanz-MD committed in `outputs/finanzen/`
+- **Aktivierung:** siehe `plans/2026-05-09-cashflow-tracker.md` Stufe 3
+
+**Sicherheit:**
+- `.gitignore` blockt `context/finanzen/**` ausser README — Finanz-Daten landen NIE im Git
+- Bilanz-MDs in `outputs/finanzen/` sind anonymisiert (IBAN/Konto-Nummern entfernt)
+- Bank bleibt manuell (kein Open-Banking in CH)
+
+**Wenn Patricia bei `/monatsplan` Cashflow-Bilanz braucht:** das jüngste `outputs/finanzen/[YYYY-MM]/cashflow-summary.md` lesen. Wenn fehlt: Patricia erinnern dass CSV-Export fehlt (Stufe 2) oder GitHub-Action nicht gelaufen (Stufe 3).
+
+Plan: `plans/2026-05-09-cashflow-tracker.md`.
+
 ### Telegram News-Bot (`scripts/telegram-news-bot/`)
 
 Wöchentlicher News-Digest-Bot, der Artikel aus RSS-Feeds (Onlinemarketing & KI) sammelt, mit Claude zusammenfasst und per Telegram sendet.
