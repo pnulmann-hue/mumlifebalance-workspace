@@ -40,6 +40,7 @@ Wo:
 1a. `outputs/freitag/markt-analyse-KW[N].md` — Markt-Befunde (Pain/Wunsch/Ziel/Herausforderung) als Caption-Substanz
 1b. `outputs/freitag/wochen-kontext-KW[N].json` — Wochenfokus aus Notion
 2. `context/ki-phrasen-blackliste.md`
+2a. **`context/job-saeulen.md` — PFLICHT! Wirkungs-Achse (A/B/C/D). Patricias Picks haben Job-Tags — die müssen auf den finalen Karussells/Reels durchgezogen werden. Plus: Build-Phase prüft Job-Mix-Compliance der Woche (siehe „Job-Mix-Check" unten).**
 3. `context/patricia-expertise.md` + `patricia-freebies.md` + `manychat-keywords.md`
 4. `context/brand-voice.md` + `caption-formeln.md` + `hook-framework.md`
 5. `reference/content-bot-system.md` — IDs (Canva-Templates, Posting-Queue-Folder, Blotato accountIds)
@@ -72,6 +73,25 @@ Patricia hat zwischen Freitag und Mo 11:59 gepickt (Telegram-Reply oder Chat). D
 **Wenn kein Pick vorliegt um 12:00:**
 - Telegram-Push an Patricia: „Hey, brauche deine Hook-Picks für KW [N]. Ich warte 30 Min, dann kommt mein Default-Pick (PIE-balanced + Wochenfokus-passend) zum Build."
 - Wenn auch nach 30 Min kein Pick: automatischen Default-Pick nehmen (3 Persönlichkeit + 3 Inspiration + 3 Expertise + 1 Wild = je Profil) und in den Build gehen — Patricia kann immer noch korrigieren bevor das erste Posting Di abends rausgeht.
+
+### Job-Mix-Compliance-Check (PFLICHT seit 2026-05-08)
+
+Nach Pick-Parsing: prüfe Job-Säulen-Verteilung der 5 Picks pro Profil gegen `context/job-saeulen.md`:
+
+**Mentoring-Soll (3 Posts/Woche):**
+- 1× A (Autorität) fix
+- 1× B (Story) fix
+- 1× C oder D (alternierend, bei aktivem Launch eher D)
+
+**doTERRA-Soll (3 Posts/Woche, Aufbau-Phase):**
+- 1× A (Autorität) fix
+- 1× B (Story) fix
+- 1× C (Reichweite) fix
+- D nur bei aktivem Launch
+
+**Wenn Patricias Pick zu einseitig:** sanft per Telegram melden („Hey, deine 5 Picks sind 3× Story + 2× Reichweite. Soll ich umrocken auf 1A + 1B + 1C oder lassen wir's?"). NICHT silent override — Patricia entscheidet final.
+
+Im finalen Lieferungs-Output (Phase 5): Job-Mix der Woche dokumentieren (Mentoring: A=__ B=__ C=__ D=__ · doTERRA: ...).
 
 ---
 
