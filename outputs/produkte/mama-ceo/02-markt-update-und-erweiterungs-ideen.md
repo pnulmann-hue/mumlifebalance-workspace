@@ -43,7 +43,14 @@ Block A-I aus `context/patricia-vollprofil.md` hat 3 Dinge gezeigt, die beim Bau
 
 ### 💡 Idee 2 — Public Custom-GPTs als Lead-Magneten (0 CHF, aber Funnel-Top)
 
-**Was:** Hook-Bot + Karussell-Bot als Public Custom GPTs in ChatGPT veröffentlichen (kein Login bei Patricia nötig). Käuferinnen finden sie via ChatGPT-Suche, nutzen sie kostenlos, sehen am Ende „Möchtest du tiefer? → mama-ceo.ch". Free-Discoverability + eingebauter Cross-Sell.
+**Was:** Hook-Bot + Karussell-Bot als Public Custom GPTs in ChatGPT veröffentlichen (kein Login bei Patricia nötig). Käuferinnen finden sie via ChatGPT-Suche, nutzen sie kostenlos.
+
+**Doppel-Brücke am Bot-Ende (Patricia-Entscheidung 2026-05-09):** Der Bot routet je nach Painpoint zu BEIDEN Mid-Tier-Produkten:
+- Wenn die Kundin merkt „mein Hook ist generisch / ich weiss nicht WAS ich sagen soll" → **Instagram-Kundenmaschine** (Content/Strategie/Akquise-Tiefe)
+- Wenn die Kundin merkt „ich hab Hooks, aber mein System hinten dran fehlt" → **Mama-CEO** (System/KI/Automation)
+- Bot fragt am Ende eine 1-Klick-Frage: „Wo hängst du gerade am meisten? (a) Content-Strategie, die wirklich verkauft (b) System, damit ich nicht ständig posten muss" → routet auf passende Sales-Page.
+
+So bedient ein Bot zwei Produkte. Free-Discoverability + eingebauter Doppel-Cross-Sell.
 
 - **Markt-Fit:** ⭐⭐⭐⭐ — KI-Co-Pilot + Demokratisierungs-Frame des Manifests. Free-Discovery 2026 läuft über GPT-Library, nicht mehr nur Insta.
 - **Aufwand:** 2 h pro Bot · 4 h total
