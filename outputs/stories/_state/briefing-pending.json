@@ -1,45 +1,26 @@
 {
-  "datum": "2026-05-12",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "sales-day",
-      "disg": "Rot",
-      "disg_sekundaer": "Blau",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "kontext_snapshot": {
-        "kw": 20,
-        "wochentag": "Dienstag",
-        "datum": "2026-05-12"
-      },
-      "gesendet_am": "2026-05-12T05:14:11.536Z",
-      "telegram_message_id": 384,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Blau",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "kontext_snapshot": {
-        "kw": 20,
-        "wochentag": "Dienstag",
-        "datum": "2026-05-12"
-      },
-      "gesendet_am": "2026-05-12T05:14:11.616Z",
-      "telegram_message_id": 385,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "doterra",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Blau",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "doTERRA Lifestyle",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "kontext_snapshot": {
+    "kw": 20,
+    "wochentag": "Dienstag",
+    "datum": "2026-05-12"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-05-12T11:34:42.052Z",
+  "telegram_message_id": 386,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
