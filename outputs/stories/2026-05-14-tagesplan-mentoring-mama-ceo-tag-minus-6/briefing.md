@@ -1,4 +1,13 @@
-# Story-Briefing — 2026-05-14 (Do) — Tagesplan — Mentoring · Version 2 (Foto + Erzählung)
+# Story-Briefing — 2026-05-14 (Do) — Tagesplan — Mentoring · Version 3 (Webinar-CTA + Quiz-Sticker-Slot)
+
+## Was sich v3 geändert hat (Patricia-Feedback 2026-05-14 abends)
+
+- **Slide 6:** Optionen aus der Card raus — die Card hat doppelt mit Patricias Instagram-Quiz-Sticker konkurriert. Jetzt: Card mittig, kompakt, nur die Frage + Sticker-Slot-Hinweis. Patricia legt den echten Quiz-Sticker drüber mit ihren Optionen (siehe unten).
+- **Slide 7:** „Mama-CEO" namentlich raus — offizieller Reveal ist erst am Webinar Mi 20.5. Neuer Schluss baut Brücke zum Webinar: „Genau dahin führe ich dich — und am Mittwoch zeige ich dir live, wie."
+- **Slide 8:** Pre-Sale-Mama-CEO-CTA komplett ersetzt durch KI-Webinar-Anmeldung. URL `webinar.mumlifebalance.ch`, Mi 20.5. 20:00 Uhr, kostenlos, Live-Q&A.
+
+---
+
 
 ## Kontext
 
@@ -10,12 +19,13 @@
 - **Julia-Template:** Mix aus Template 9 (Glaubenssatz auflösen) + Template 3 (Pain-Spiegel)
 - **Stil-Update v2 (Patricia-Feedback 2026-05-14):** Foto-Hintergrund + Textfeld-Card statt Gradient + Erzählungs-Modus statt abgehackter Sätze.
 
-## CTA-Plan
+## CTA-Plan (v3)
 
-- **ManyChat-Keyword:** `CEO`
-- **TODO Patricia (vor Versand):** ManyChat-Flow für Keyword `CEO` für Pre-Launch-Phase einrichten. Bot-Antwort:
-  > „Du bist auf der Frühbucher-Liste für Mama-CEO. Mittwoch 20.5. um 9:00 schicke ich dir den Anmeldelink **24 h bevor die Story-Welt davon erfährt**. 15 Plätze. Frühbucher 249 statt 333 für die ersten 72 Stunden."
-- Slide 8 enthält den Aufruf zum Kommentieren in der Story.
+- **Primärer CTA:** Anmelde-URL `https://webinar.mumlifebalance.ch/` (Webinar Mi 20.5. 20:00, kostenlos)
+- **Sticker-Variante:** Link-Sticker auf die Webinar-URL direkt im Story-Frame setzen — klickbar
+- **Verstärker:** Countdown-Sticker auf Mi 20.5. 20:00
+- **Mama-CEO-Reveal:** erst während/nach dem Webinar — Stories Tag -6 bis Tag -1 sprechen nur vom Webinar, nicht vom Produkt
+- **TODO Patricia:** Prüfen ob die Webinar-Anmeldeseite live ist und ob die 20:00-Uhrzeit stimmt (falls nein: in der HTML auf richtige Uhrzeit ändern und neu rendern)
 
 ## Layout-Konzept v2
 
@@ -66,32 +76,37 @@
 - **Daten-Quelle:** sales-page.md Block 4 + Block 5
 - **Sticker:** keine
 
-### Slide 6 — Frage (Umfrage-Sticker, Wilma-Buyer-Type)
+### Slide 6 — Frage (Quiz-Sticker-Slot, Wilma-Buyer-Type) · v3-FIX
 - **Foto:** `fotos/slide-06-pusteblume.jpg` — Patricia mit Pusteblume, Schwarz-Weiss
 - **Eyebrow:** „SCHNELL, EHRLICH"
-- **Card-Text:** „Schreib mir kurz: welche dieser Stimmen kennst du am besten, wenn der Tag gegen 22 Uhr geht?"
-- **Optionen (in Card als Liste):**
-  - 22 Uhr Sofa, müde, frustriert
-  - Tools-Chaos, nichts findet zusammen
-  - „Eigentlich müsste ich…"-Liste
-  - Ich hab schon mein System
-- **Sticker-Empfehlung:** Umfrage-Sticker (Mehrfachauswahl) — Patricia in Instagram-App über die Card legen oder die Card-Liste durch echten Sticker ersetzen. Hinweis-Pfeil ist im Render eingebaut.
-- **Card-Position:** bottom
+- **Card-Text (NUR Frage, KEINE Optionen):** „Welche dieser Stimmen kennst du am besten, wenn der Tag gegen **22 Uhr** geht?"
+- **Card-Position:** **center** (mittig, schmaler — damit oben Patricias Gesicht und unten Platz für den Sticker frei bleiben)
+- **Sticker-Empfehlung:** Instagram **Quiz-Sticker** (Patricia hat ihn schon in der App vorbereitet — Versionen vom 14.5. abends) mit diesen 4 Optionen (Patricia-finale Formulierung):
+  1. 22 Uhr Sofa, müde, frustriert
+  2. Keinen Überblick mehr
+  3. Eigentlich müsste ich noch …
+  4. Ich habe schon ein System
+- **Sticker-Position:** unteres Drittel mittig (Patricias Gesicht ist oben rechts/mittig, Hand mit Pusteblume mittig — Sticker setzt sich darunter)
+- **Hinweis im Render:** kleiner Sticker-Hint „↓ Quiz-Sticker hier drüberlegen" — visuelle Erinnerung, wird beim Posting durch echten Sticker überlagert
 
-### Slide 7 — Vorher-Nachher als Erzählung (Success Event 3D)
+### Slide 7 — Vorher-Nachher als Erzählung (Success Event 3D) · v3-FIX (Mama-CEO-Name raus)
 - **Foto:** `fotos/slide-07-blumenfeld-lacht.jpg` — Patricia lacht im Blumenfeld (Sessel in der Wiese), strahlend
 - **Eyebrow:** „IN 8 WOCHEN"
-- **Card-Text:** „Es ist wieder Donnerstagabend. Nur diesmal hast du um **19 Uhr** den Laptop zugemacht. Dein Funnel arbeitet weiter, ohne dich. Die erste DM hat dein Bot beantwortet. Und du sitzt mit deiner Familie am Tisch — ohne diese leise Liste im Kopf, die dich sonst beim Essen begleitet. *Genau dahin* bringt dich Mama-CEO."
+- **Card-Text:** „Es ist wieder Donnerstagabend. Nur diesmal hast du um **19 Uhr** den Laptop zugemacht. Dein Funnel arbeitet weiter, ohne dich. Die erste DM hat dein Bot beantwortet. Und du sitzt mit deiner Familie am Tisch — ohne diese leise Liste im Kopf, die dich sonst beim Essen begleitet. *Genau dahin* führe ich dich — und am Mittwoch zeige ich dir live, wie."
 - **Card-Position:** bottom
 - **Sticker:** keine
+- **Begründung Mama-CEO-Reveal:** offizielle Vorstellung des Produktes erfolgt erst am 20.5. Webinar — bis dahin nur Bridge-Sätze („das, was ich gebaut habe", „mein neues Programm", „am Mittwoch zeige ich dir wie")
 
-### Slide 8 — CTA mit Knappheit
-- **Foto:** `fotos/slide-08-arme-offen.jpg` — Patricia mit ausgebreiteten Armen vor Berglandschaft, Schwarz-Weiss (Befreiungs-Vibe)
-- **Eyebrow:** „MAMA-CEO · 8 WOCHEN · START 1.6."
-- **Card-Text:** „Anmeldung öffnet **Mittwoch 20.5. um 9 Uhr**. 15 Plätze. Frühbucher 249 für die ersten 72 Stunden. Wenn du dabei sein willst, kommentier **CEO** hier unter der Story."
-- **CTA-Knappheit (orange, kursiv):** „→ Ich schick dir den Link 24 Stunden vor allen anderen."
-- **Sticker-Empfehlung:** Countdown-Sticker auf 20.5. 9:00 ODER „Antworten erlaubt"-Sticker für DM-Eingang
+### Slide 8 — CTA: KI-Webinar-Anmeldung · v3-NEU
+- **Foto:** `fotos/slide-08-arme-offen.jpg` — Patricia mit ausgebreiteten Armen vor Berglandschaft, Schwarz-Weiss (Bühne-öffnen-Vibe)
+- **Eyebrow:** „MITTWOCH · 20. MAI · 20:00 UHR"
+- **Card-Text:** „Live-Klasse: wie ich mit **13 KI-Mitarbeitern** und 18 Stunden pro Woche ein Business führe, das jeden Monat verkauft. Kostenlos. Mit Live-Q&A am Schluss."
+- **CTA-Knappheit (orange):** „→ Anmelden: webinar.mumlifebalance.ch · Link in Bio"
+- **Sticker-Empfehlung:**
+  - **Link-Sticker** auf die URL `https://webinar.mumlifebalance.ch/` setzen (Instagram macht das klickbar)
+  - ODER **Countdown-Sticker** auf Mi 20.5. 20:00 Uhr setzen — verstärkt Live-Charakter
 - **Card-Position:** bottom
+- **Anmerkung Uhrzeit:** Standard-Mama-Slot 20:00 Uhr gewählt (Kinder im Bett). Falls Webinar tatsächlich zu einer anderen Uhrzeit ist — in der HTML/PNG die Uhrzeit anpassen.
 
 ## Voice-Check — 6-Punkte-Pflichtprüfung
 
