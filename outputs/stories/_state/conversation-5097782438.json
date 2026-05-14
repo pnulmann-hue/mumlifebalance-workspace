@@ -1,9 +1,10 @@
 {
   "chat_id": "5097782438",
-  "step": "wochenfokus",
+  "step": "erlebnis",
   "started_at": "2026-05-14T01:56:36.948Z",
-  "last_active_at": "2026-05-14T01:56:47.291Z",
+  "last_active_at": "2026-05-14T01:57:02.013Z",
   "last_bot_message_id": 393,
   "profil": "mentoring",
-  "produkt_quelle": "patricia"
+  "produkt_quelle": "override",
+  "produkt": "Mama CEO"
 }
