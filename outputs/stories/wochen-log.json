@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "description": "Story-Käufertyp-Wochenlog. Wird von /story Modus 1 nach jeder Sequenz aktualisiert, damit DISG-Rotation über die Woche eingehalten wird (alle 4 Achsen pro Woche).",
+    "last_updated": "2026-05-14"
+  },
+  "kw20_2026": [
+    {
+      "datum": "2026-05-14",
+      "wochentag": "Donnerstag",
+      "profil": "mentoring",
+      "kaeufertyp_disg": "blau-gewissenhaft",
+      "nadja_persona": "wilma",
+      "julia_template": "T9 + T3",
+      "modus": "tagesplan",
+      "produkt_fokus": "mama-ceo (launch tag -6)",
+      "story_ordner": "2026-05-14-tagesplan-mentoring-mama-ceo-tag-minus-6"
+    }
+  ]
+}

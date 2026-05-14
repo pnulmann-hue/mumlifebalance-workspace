@@ -142,6 +142,8 @@ Screenshot*.jpg
 !outputs/funnels/**/*.jpg
 !outputs/bio-check-bot/**/*.png
 !outputs/bio-check-bot/**/*.jpg
+!outputs/stories/**/*.png
+!outputs/stories/**/*.jpg
 
 # ============================================================
 # REFERENZ-PDFs BLEIBEN LOKAL
