@@ -12,8 +12,19 @@
       "nadja_persona": "wilma",
       "julia_template": "T9 + T3",
       "modus": "tagesplan",
-      "produkt_fokus": "mama-ceo (launch tag -6)",
+      "produkt_fokus": "mama-ceo (launch tag -6) / webinar tag -6",
       "story_ordner": "2026-05-14-tagesplan-mentoring-mama-ceo-tag-minus-6"
+    },
+    {
+      "datum": "2026-05-15",
+      "wochentag": "Freitag",
+      "profil": "mentoring",
+      "kaeufertyp_disg": "gelb-initiativ",
+      "nadja_persona": "charlie + frank",
+      "julia_template": "T7 + T2",
+      "modus": "tagesplan",
+      "produkt_fokus": "ki-webinar (tag -5)",
+      "story_ordner": "2026-05-15-tagesplan-mentoring-webinar-tag-minus-5-misserfolg"
     }
   ]
 }
