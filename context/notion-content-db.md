@@ -64,7 +64,8 @@ Beim Anlegen neuer Posts (von /reels, /karussell, Scheduled Tasks) diese Felder 
 | **Content-Typ** | multi_select (Reel/Karussell/Story/…) | ✓ | Je nach Post-Art |
 | **Status** | select (Idee/Geplant/Erstellung begonnen/Erstellung abgeschlossen/Veröffentlicht) | ✓ | Start: „Idee" |
 | **Content-Plattformen** | RELATION | ✓ | Instagram Mentoring ODER Instagram doTERRA |
-| **Content-Säule** | RELATION | ✓ | Passende Pillar |
+| **Content-Säule** | RELATION | ✓ | Passende Pillar (Themen-Achse) |
+| **Job-Säule** | select (A-Autorität / B-Story / C-Reichweite / D-Sales) | ✓ | Wirkungs-Achse, siehe `context/job-saeulen.md` (PFLICHT seit 2026-05-08) |
 | **Kurzbeschreibung** | text | ✓ | 1-2 Sätze zum Inhalt |
 | **Keyword** | text | ✓ | Aus `manychat-keywords.md` |
 | **Storyart** | select | empfohlen | Persönliche Geschichte / Mythos-Brecher / Schritt-für-Schritt / Kunden-Transformation / Behind-the-Scenes / Meinungs-Post / Community-Story |
@@ -102,7 +103,8 @@ def create_post_in_notion(briefing):
         "Content-Typ": "Reel" or "Karussell",
         "Status": "Idee",
         "Content-Plattformen": [get_plattform_page_id(profil)],  # Mentoring oder doTERRA
-        "Content-Säule": [get_pillar_page_id(pillar_name)],
+        "Content-Säule": [get_pillar_page_id(pillar_name)],  # Themen-Achse
+        "Job-Säule": briefing.job_saeule,  # PFLICHT: "A-Autorität" / "B-Story" / "C-Reichweite" / "D-Sales"
         "Kurzbeschreibung": briefing.short_desc,
         "Keyword": briefing.manychat_keyword,  # "ENERGIE", "SYSTEM", etc.
         "Storyart": briefing.storyart,

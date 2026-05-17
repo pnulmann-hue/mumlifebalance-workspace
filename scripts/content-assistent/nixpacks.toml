@@ -1,0 +1,41 @@
+# Nixpacks-Konfiguration für Railway-Deploy.
+#
+# Installiert Python 3.12 + Node 20 + Chromium (für Puppeteer)
+# Build-Step installiert pip-Dependencies + npm-Dependencies (puppeteer)
+
+[phases.setup]
+nixPkgs = [
+    "python312",
+    "python312Packages.pip",
+    "nodejs_20",
+    "chromium",
+    "fontconfig",
+    "freetype",
+    "harfbuzz",
+    "liberation_ttf",
+    "noto-fonts",
+    "noto-fonts-cjk",
+    "noto-fonts-emoji",
+]
+
+[phases.install]
+cmds = [
+    "python -m pip install --upgrade pip",
+    "pip install -r requirements.txt",
+    "cd render && npm install --no-audit --no-fund",
+]
+
+[phases.build]
+# Bundle → context/ Setup wird in bot.py beim Start gemacht (idempotent)
+cmds = ["echo 'Build complete — Bundle-Setup läuft beim Bot-Start'"]
+
+[start]
+cmd = "python bot.py"
+
+[variables]
+# Telegram + Anthropic + OpenAI + Notion-Keys werden in Railway-UI gesetzt
+TZ = "Europe/Zurich"
+PUPPETEER_SKIP_CHROMIUM_DOWNLOAD = "true"
+PUPPETEER_EXECUTABLE_PATH = "/usr/bin/chromium"
+PYTHONUNBUFFERED = "1"
+RAILWAY_DEPLOY = "1"

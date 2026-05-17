@@ -194,3 +194,49 @@ desktop.ini
 *.log
 tmp/
 temp/
+# Patricias komplette Kurs-Bibliothek in reference/
+!reference/*.pdf
+!reference/**/*.pdf
+!reference/*.docx
+!reference/**/*.docx
+!reference/*.xlsx
+!reference/**/*.xlsx
+!reference/*.epub
+!reference/**/*.epub
+!reference/*.png
+!reference/**/*.png
+!reference/*.jpg
+!reference/**/*.jpg
+!reference/*.jpeg
+!reference/**/*.jpeg
+!reference/*.txt
+!reference/**/*.txt
+# Grosse Files raus (GitHub-Limit 100 MB)
+*.mp4
+*.mov
+# Spezifisch geblockt:
+
+reference/GO VIRAL/GO VIRAL - Workbook Reel.pdf
+reference/julia-trost/31_Verkaufsstrategienneu[1].pdf
+reference/julia-trost/alle unterlagen julia trost.pdf
+reference/julia-trost/Das ultimative VML Workbook.pdf
+reference/julia-trost/Launch Queen (1).pdf
+reference/julia-trost/Launch queen workbook.pdf
+reference/julia-trost/Launch Queen.pdf
+reference/julia-trost/Produktkommunikation - Produkttreppe_Zusammenf�hren.pdf
+reference/julia-trost/Vorlagen Story LML.pdf
+
+# ============================================================
+# Story-Render-Bot Bundle (für Railway-Deploy MUSS committet werden)
+# ============================================================
+!scripts/story-render-bot/_bundle/
+!scripts/story-render-bot/_bundle/**
+!scripts/story-render-bot/_bundle/**/*.jpg
+!scripts/story-render-bot/_bundle/**/*.jpeg
+!scripts/story-render-bot/_bundle/**/*.png
+!scripts/story-render-bot/_bundle/**/*.md
+!scripts/story-render-bot/_bundle/**/*.json
+!scripts/story-render-bot/render/
+!scripts/story-render-bot/render/**
+# render/node_modules wird von Railway frisch installiert
+scripts/story-render-bot/render/node_modules/

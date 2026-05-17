@@ -81,24 +81,29 @@ Liest den Plan, führt jeden Schritt der Reihe nach aus, validiert die Arbeit un
 
 Beispiel: `/implement plans/2026-01-28-wettbewerbs-analyse-command.md`
 
-### /montag
+### /freitag-hooks · /montag (Content-Pipeline seit 2026-04-28)
 
-**Zweck:** Wöchentliche Content-Session in 60 Min strukturiert durchziehen — von 0 auf 3-4 freigegebene Posts pro Woche.
+**Zweck:** Vollautomatische Wochenplanung der Instagram-Posts.
 
-Start am Montag. Lädt alle Content-Grundlagen + Memory-Regeln, führt Patricia strikt durch 5 Phasen:
-
-1. **Briefing (10 Min):** Patricia liefert Woche-Kontext + echte Stories + echte Zahlen. Claude hört nur zu, speichert in `outputs/montag/YYYY-MM-DD-briefing.md`.
-2. **Konzepte (20 Min still):** Claude baut 6 Post-Konzepte als Tabelle (Di/Mi/Fr × 2 Profile, Hook + Kern + Keyword + Template-ID).
-3. **Auswahl (15 Min):** Patricia pickt 3-4 + Kurz-Änderungen.
-4. **Block-Lieferung (15 Min):** Claude schreibt Captions + klont Canva-Designs via `merge-designs` + bereitet Blotato-Configs vor.
-5. **Gate (5 Min):** Patricia gibt frei oder schickt EINE Änderungsliste.
+**Schedule (cron-driven):**
+- **Fr 08:00 → `/freitag-hooks`:** Liefert via Telegram 20 Hook-Vorschläge (10 pro Profil) basierend auf:
+  - Wochenfokus aus Notion-Wochenplanung-DB
+  - Umfassende Marktanalyse (Pain Points, Wünsche, Ziele, Herausforderungen je Profil)
+  - PIE-Pflicht-Mix + Themen-Variation
+- **Patricia pickt** zwischen Fr und Mo 11:59 — 5 Hooks pro Profil (Format: `Mentoring: M1K, M3K, M5R, M7K, M9R | doTERRA: D2K, D4R, D6K, D8K, D10R`)
+- **Mo 12:00 → `/montag`:** Build + Schedule
+  - Klont 3 Karussells + 2 Reel-Cover pro Profil aus Canva-Master-Templates
+  - Setzt Texte ein (Patricia-Voice, Compliance-Check, Layout-Sanity)
+  - Schedulet Karussells DIREKT via Blotato für Mi/Fr 19:30 (Mentoring + doTERRA)
+  - Reel-Cover bleiben bereit zum Drehen — Patricia dreht Reels manuell
 
 **Harte Commitments:**
 - Zero invented numbers (nur Input oder `patricia-expertise.md`)
 - Zero AI-generated Visuals (nur `merge-designs` auf Templates)
-- Ein Reel-Format (Stock + Voiceover)
-- Batch-Edits (keine sequenziellen Einzel-Rückfragen)
-- Patricia-Voice-Check vor jeder Caption
+- doTERRA-Pflicht: alle Compliance-Memorys + `context/doterra/patricia-wendepunkt-story.md` lesen vor jedem Build
+- PIE-Mix Pflicht (3-3-3-1 pro Profil)
+- Themen-Variation Pflicht (mind. 2 Pillars pro Profil pro Woche)
+- Wochenfokus aus Notion ist Hook-Generator-Quelle
 
 Volle Doku: `reference/montag-workflow-v2.md`.
 
@@ -151,6 +156,76 @@ Fragt IMMER zuerst: „Für welches Business?" (Onlinebusiness / Network). Lädt
 **Wissensgrundlagen:** `reference/julia-trost/methodik.md` (Pflicht) + alle Julia-PDFs (Produkterstellung, Launchen, Salespages, Email-Funnel, Minikurse, Secret-Offer, Automationen) + `context/patricia-expertise.md` (keine Dopplungen mit bestehenden Kursen!) + `context/Kurse/aktuelle kurse/` + `brand-voice.md` + `business-info.md`.
 
 Output: `outputs/produkte/[slug]/` mit 10 Unterordnern/Dateien (siehe `outputs/produkte/README.md`).
+
+### /story
+
+**Zweck:** Daily Story Sales Companion — täglicher Story-Begleiter, der nach Julia-Trost-Methodik + Brandastic-Käufertypen + Nadja-Personas **fertige Story-Slides als PNG** in Patricias Brand liefert.
+
+**Zwei Kernregeln:**
+1. **Jede Story-Sequenz hat einen CTA-Link** — Freebie ODER bezahltes Produkt aus `active-funnels.json`. Keine Story ohne Verkaufsabsicht.
+2. **Käufertyp-Rotation über die Woche** — alle 4 DISG-Achsen (Rot/Gelb/Grün/Blau) müssen jede Woche vorkommen.
+
+**8 Modi:**
+1. **Tagesplan** (Standard) — 3-5 Slides für heute aus deinem Input
+2. **Sales-Day** — kompletter 24h-Verkaufstag während aktivem Launch (8-12 Slides)
+3. **Story-Doktor** — aus roher Idee → Hook + Slide-Aufbau + CTA
+4. **One-Slide-Tag** — Low-Effort, 1 Slide aus Julia/Nadja-Pool
+5. **Story-Serie** — 3-7 Tage Story-Bogen mit Cliff-Hanger
+6. **Behind-the-Scenes** — aus Foto/Erlebnis Slides + Verkaufsbrücke
+7. **Highlight-Pflege** — Highlights ordnen + aktualisieren + Cover
+8. **Reaktiv** — auf Reaktionen/Antworten reagieren
+
+**Wissensgrundlagen** (in `context/`):
+- `story-framework.md` — Zentrales Wissen, 8 Modi, Visual-Pipeline
+- `julia-stories-die-verkaufen.md` — Slide-Struktur + 7 Storytelling-Regeln
+- `julia-insta-stories-anleitung.md` — 10 Verkaufs-Templates
+- `julia-story-ideen.md` — 3-Säulen-Bibliothek (Expertise/Inspiration/Persönlichkeit)
+- `brandastic-kaeufertypen.md` — DISG (4 Typen) + AIDA
+- `nadja-story-prompts.md` — 7 Käuferpersonas (Wilma/Werner/Isabell/Charlie/Petra/Stefan/Bärbel)
+
+**Visual-Pipeline (Pfad B: HTML → PNG):**
+- Skill generiert `slides.html` mit Templates aus `scripts/karussell-render/brand-stories.css` (8 Slide-Templates: Hook/Story-Text/Zitat/Frage/CTA/BTS/Vorher-Nachher/Countdown)
+- `render-stories.js` rendert PNGs (1080×1920) — direkt Instagram-Story-postbar
+- Brand-Variants: Mentoring (Petrol-Akzent) vs. doTERRA (Orange-Akzent)
+- Foto-Auswahl aus `context/Shootingbilder/`
+
+**Notion-Anbindung:**
+- Skill liest Wochenplan aus Wochenplanung-DB (`collection://2ae7078e-8b7e-81e7-9083-000b01908eb5`)
+- Liest `Fokus der Woche` + Body-Tabelle „Was planst du je Business-Säule?" → Content-Creation
+- Cache in `outputs/stories/wochen-kontext-KW##.json`
+
+**Output:** `outputs/stories/YYYY-MM-DD-[modus]-[profil]-[slug]/` mit `briefing.md` + `slides.html` + `slides-png/`
+
+**Beispiel-HTML mit allen 8 Templates:** `outputs/stories/_template-beispiel/slides.html`
+
+### /hormozi
+
+**Zweck:** Copywriting-Doktor nach Alex Hormozi. Nimmt einen bestehenden Text (Caption, Salespage-Block, Mail, Hook, Bio, CTA, Story-Slide, Headline, Werbeanzeige …) und überarbeitet ihn nach Hormozis 7 Frameworks + 12 Persuasion Hacks + Schreibregeln — **ohne Patricias Brand-Voice zu zerstören**.
+
+Hormozi ist hier der STRUKTUR- und PERSUASION-Layer; Patricias warme/empowernde Tonalität bleibt zwingend erhalten.
+
+**9 Modi:**
+1. **Doktor** (Standard) — Diagnose + zwei Varianten (sicher / mutig) + Change-Log mit Hormozi-Begründungen
+2. **Hook-Battle** — 10 Hook-Varianten nach 10 verschiedenen Hormozi-Hook-Kategorien
+3. **Headline-MAGIC** — MAGIC-Offer-Formula (Magnet+Avatar+Goal+Interval+Container) + Lead-Magnet-Naming-Formula
+4. **Value-Equation-Audit** — Angebot durchleuchten: Traumergebnis · Erfolgswahrscheinlichkeit · Zeit-Verzögerung · Aufwand
+5. **CLOSER-DM** — DM-Antwort nach CLOSER-Framework (Clarify · Label · Overview · Sell · Explain · Reinforce)
+6. **4-Pass-Edit** — für lange Texte (Salespages, Mails, Blog): Struktur → Substanz → Klarheit → Empathie
+7. **Ad-Bauplan** — Werbeanzeige nach 14-Bausteine-Anatomie (Qualifizierung → Hook → Bold Claim → Reason Why → Pain Stack → Reframe → Unique Mechanism → Authority Stack → Logische Urgency → Lead-Magnet-CTA) + Compliance-Check Meta/doTERRA
+8. **Landingpage-Bauplan** — Lead-Capture (8-Block-Mini-Sales-Letter) ODER Sales-Page (12-Block-Long-Form) — Hero/Pain/Dystopie/Mechanism/Success-Event/Authority/Container/Preis/Urgency/FAQ/CTA/P.S.
+9. **Funnel-Komplett** — Ad + Landingpage + Danke-Seite + 5 Mails + CLOSER-Anruf-Skript in einem Rutsch
+
+**Wissensgrundlagen:**
+- `reference/hormozi/copywriting-bible.md` — alle 7 Frameworks + 12 Persuasion Hacks + Schreibregeln + Anti-Patterns + 4-Pass-Edit-Prozess (verdichtet aus $100M Offers, $100M Leads, ACQ Ads/Closer Handbook, „The Game"-Podcast Ep 245/563/927, LinkedIn/X-Posts, David-Perell-Interview)
+- `context/brand-voice.md` + `context/business-info.md` + `context/hook-framework.md`
+
+**Pflicht am Start:** Texttyp · Profil (Mentoring/doTERRA) · Ziel · Avatar · Original-Text.
+
+**Brand-Voice-Pakt:** Hormozi-Defaults wie „Bro/Loser/Crush it", aggressives Repel oder All-Caps werden zu Patricia-konformer Sprache übersetzt. doTERRA-Compliance (keine Heilversprechen) immer eingehalten.
+
+**Bonus-Layer-Integration (seit 2026-05-04):** Die Hormozi-Bibel ist als Pflicht-Lektüre in **alle 8 Content-Skills** eingebaut — `/freitag-hooks`, `/karussell`, `/reels`, `/story`, `/montag`, `/produkt`, `/salespage`, `/funnel`. Jeder Skill wendet die jeweils relevanten Hormozi-Sektionen automatisch an (z.B. `/freitag-hooks` nutzt 8 Hook-Kategorien + Validity×Utility-Filter, `/salespage` nutzt 12-Block-Long-Form-Struktur, `/funnel` Mode 3 delegiert die Ad-Copy explizit an `/hormozi` Modus 7). **Hormozi ist Verstärker, nicht Ersatz** — Brand-Voice + doTERRA-Compliance + Julia-Trost-Strategie haben weiter Vorrang.
+
+Output: `outputs/hormozi/YYYY-MM-DD-[texttyp]-[slug].md` mit Original + Diagnose + Variante A/B + Change-Log + angewandte Frameworks.
 
 ### /salespage
 
@@ -309,6 +384,35 @@ Rendert eine Karussell-HTML-Vorlage zu Instagram-postbaren PNG-Folien. Ersetzt d
 
 **Phase 2 (geplant):** Nach dem Rendern werden die 11 PNGs automatisch als editierbares Canva-Design hochgeladen (via `upload-asset-from-url`), damit Patricia Feinjustierungen im Canva-UI machen kann.
 
+### Apify Konkurrenz-Scraper (`scripts/apify/`, live seit 2026-05-07)
+
+**Echte Instagram-Daten via GitHub Actions Cron** — löst die Sandbox-Limits-Lücke. Kein Token-Reset zwischen Sessions, weil Apify-Token als GitHub Repo-Secret lebt.
+
+**Zwei Workflows:**
+
+#### A) Watchlist-Scrape (`apify-scrape.yml`) — täglich
+- **Cron:** täglich 06:00 Schweiz
+- **Input:** `context/competitor-watchlist.json` (definierte Konkurrenz-Accounts)
+- **Output:** `outputs/apify-runs/competitors-YYYY-MM-DD.{json,md}` — Profil + 25 letzte Posts mit Engagement
+- **Manueller Ad-hoc:** GitHub UI → Run workflow → optional Komma-Liste an Handles
+- **Actor:** `apify/instagram-profile-scraper`
+- **Kosten:** ~1.80 USD/Monat bei 6 Accounts täglich
+
+#### B) Creator-Discovery (`apify-discover.yml`) — monatlich + on-demand
+- **Cron:** 1. des Monats, 06:00 Schweiz
+- **Input:** `context/discovery-keywords.json` (Hashtags pro Nische: Mentoring + doTERRA)
+- **Output:** `outputs/apify-runs/discovery-YYYY-MM-DD-{niche}.{json,md}` — ranked List der Top-Creator unter Nischen-Hashtags, Top-25 mit Profil-Daten angereichert
+- **Manueller Trigger:** GitHub UI → "Apify Creator Discovery" → niche=both/mentoring/doterra
+- **Actors:** `apify/instagram-hashtag-scraper` + `apify/instagram-profile-scraper`
+- **Kosten:** ~1.50 USD pro Lauf
+- **Zweck:** Findet die ECHTEN Top-Creator deiner Nische (statt geraten zu werden) — Score = `Hashtag-Erscheinungen × 1000 + Total-Likes`
+
+**Wenn ein Skill aktuelle Konkurrenz-Daten braucht:** das jüngste `outputs/apify-runs/competitors-*.json` lesen (sortiert nach Datum). Älter als 36h → WebSearch-Fallback und Hinweis an Patricia.
+
+**Wenn ein Skill die Top-Performer einer Nische braucht (z.B. neue Hook-Trends):** das jüngste `outputs/apify-runs/discovery-*-{niche}.json` lesen.
+
+Plan: `plans/2026-05-07-apify-mcp-integration.md`.
+
 ### Telegram News-Bot (`scripts/telegram-news-bot/`)
 
 Wöchentlicher News-Digest-Bot, der Artikel aus RSS-Feeds (Onlinemarketing & KI) sammelt, mit Claude zusammenfasst und per Telegram sendet.
@@ -328,6 +432,7 @@ Wöchentlicher News-Digest-Bot, der Artikel aus RSS-Feeds (Onlinemarketing & KI)
 - `brand-voice.md` — Tonalität, Schreibregeln, Kernbotschaft, Beispieltexte
 - `caption-formeln.md` — 5 Caption-Strukturen + CTA-Varianten + Hashtag-Strategie
 - `hook-framework.md` — Hook-Kategorien (Zahlen, Anleitungen, Provokant, Neugier, Identifikation)
+- `job-saeulen.md` — **Wirkungs-Achse** (Autorität / Story / Reichweite / Sales) — Pflicht-Layer parallel zur Themen-Achse, jeder Post = 1 Thema × 1 Job
 - `reels-framework.md` — Viral-Mechanik 2026, 3-Sek-Regel, Pillars, Posting-Zeiten, Performance-Tracking, 4-Wochen-Repost-Regel
 - `karussell-framework.md` — Karussell-Spezifika, Folien-Struktur, Feed-Aesthetic
 - `manychat-keywords.md` — ManyChat-Keywords pro Pillar (SYSTEM/QUIZ/PRODUKT/THEMA/SICHTBAR/ANLEITUNG/LEAD/ECHT1 für Mentoring, ENERGIE für doTERRA)
@@ -388,7 +493,7 @@ Die Web-Claude-Sandbox (claude.ai/code) blockiert Outbound-Requests zu nicht-erl
 - Vermutlich auch andere Patricia-Domains
 
 **Workaround heute:** Code-Änderungen ins Git pushen + Patricia kopiert manuell in WP/AC.
-**Echte Lösung (TODO):** GitHub Actions als Deployer einrichten (Secret = WP_APP_PASSWORD), oder lokaler MCP-Server bei Patricia.
+**Echte Lösung:** GitHub Actions als Deployer einrichten (Secret = WP_APP_PASSWORD), oder lokaler MCP-Server bei Patricia.
 
 ### `.env`-Files persistieren NICHT zwischen Sessions
 Web-Claude resetet alle gitignored Files. Heisst:
@@ -399,6 +504,17 @@ Web-Claude resetet alle gitignored Files. Heisst:
 1. Erst prüfen ob `.env` existiert: `ls scripts/wordpress/.env`
 2. Wenn nicht: Patricia bittet App-Password zu schicken → in `.env` schreiben → nach Push wieder löschen
 3. Beim Push prüfen ob Sandbox-403 kommt → wenn ja: ehrlich sagen + Workaround anbieten
+
+### Pattern: GitHub Actions als dauerhafte Lösung
+Für alle Tools, die zwischen Sessions persistieren müssen (Tokens, regelmäßige Scrapes, Posten zu externen APIs): **Token als GitHub Repo-Secret hinterlegen, Workflow im `.github/workflows/` läuft per Cron oder workflow_dispatch.**
+
+Live-Beispiele in diesem Repo:
+- `apify-scrape.yml` — täglicher Konkurrenz-Scrape (Secret: `APIFY_API_TOKEN`)
+- `freitag-hooks.yml` — wöchentliche Hook-Generierung (Secrets: `ANTHROPIC_API_KEY`, `BLOTATO_API_KEY`, `NOTION_TOKEN`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`)
+- `montag-build.yml` — Montag-Content-Build
+- `story-reminder-daily.yml` — tägliche Story-Erinnerung
+
+**Wenn ein neues Tool dauerhaft benötigt wird:** lege es als GitHub Action an, statt es im Sandbox-`.env` laufen zu lassen.
 
 ### Was hilft als Bot-Vorbereitung
 - Vor Live-Aktionen IMMER zuerst Limits checken statt Patricia falsche Hoffnung machen

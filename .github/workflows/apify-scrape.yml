@@ -1,0 +1,52 @@
+name: Apify Competitor Scrape
+
+# Täglich 06:00 Schweiz (= 04:00 UTC im Sommer / 05:00 UTC im Winter)
+# GitHub-Cron hat 5-15 Min Drift, das ist OK
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+    inputs:
+      handles:
+        description: 'Optional: Komma-separierte IG-Handles für Ad-hoc-Scrape (Default: gesamte Watchlist)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apify-scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Apify scrape
+        working-directory: scripts/apify
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          INPUT_HANDLES: ${{ inputs.handles }}
+        run: node scrape-competitors.js
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outputs/apify-runs/
+          if git diff --staged --quiet; then
+            echo "No new data, skipping commit."
+          else
+            git commit -m "apify: scrape $(date -u +%Y-%m-%d)"
+            git push
+          fi

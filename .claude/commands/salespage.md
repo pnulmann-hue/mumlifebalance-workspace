@@ -11,6 +11,7 @@ Lies zürst diese Dateien, um Patricias Business, Julias Methodik und die Sales-
 1. `context/personal-info.md` — Wer Patricia ist
 2. `reference/julia-trost/methodik.md` — Julias komplette Methodik
 3. `reference/julia-trost/Salespages die verkaufen.pdf` — Julias Sales-Page-Struktur im Detail
+4. ⭐ **`reference/hormozi/copywriting-bible.md`** — **Hormozi-Bonus-Layer (seit 2026-05-04)**. Wende auf die Sales-Page an: **(a)** Pain-is-the-Pitch — Block 4 (IST-Zustand) mit MOMENTEN beschreiben statt abstrakt („Du stehst um 5:30 …" statt „Du fühlst dich überfordert"), **(b)** ++/−− × Self/Friends/Enemies-Matrix in Block 6 (SOLL-Zustand) — verteile Self/Friends/Skeptiker-Frame über drei Absätze, **(c)** Authority Stack mit 3 spezifischen Zahlen in Block 3 (Testimonial-Block), **(d)** „Strangely Familiar"-Test fürs Produkt-Naming im Hero-Block, **(e)** Container-Wörter in Block 7 (Modulübersicht — „Modul" → „Phase / Schritt / System-Komponente"), **(f)** FAQ-Block 11 inklusive „Flaunt your flaws" (Hack #5 — 1 ehrliche Schwäche zugeben), **(g)** Block 12 endet IMMER mit P.S. (Hack #10 — wiederholt stärkste Promise + Reason Why für JETZT). **Brand-Voice (Patricia warm/empowernd) + doTERRA-Compliance bleiben Pflicht — Hormozi ist Verstärker, nicht Ersatz.**
 
 ---
 

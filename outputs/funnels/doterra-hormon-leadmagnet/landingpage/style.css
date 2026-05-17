@@ -1,0 +1,693 @@
+/* ============================================================
+   Mum Life Balance — Hormon-Typ Lead-Magnet Landing Page
+   Brand-System: Petrol/Creme/Orange/Dunkelblau
+   Fonts: Philosopher (headlines) + Source Sans 3 (body)
+============================================================ */
+
+:root {
+  --petrol: #12828c;
+  --teal: #29556d;
+  --creme: #f1ecdd;
+  --creme-dark: #e6dfc8;
+  --orange: #dc822e;
+  --orange-dark: #c06e1f;
+  --black: #1a1a1a;
+  --white: #ffffff;
+  --shadow-sm: 0 2px 8px rgba(18, 130, 140, 0.08);
+  --shadow-md: 0 6px 20px rgba(18, 130, 140, 0.12);
+  --shadow-lg: 0 12px 40px rgba(18, 130, 140, 0.15);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --max-width: 720px;
+  --max-content: 560px;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--teal);
+  background: var(--creme);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Philosopher', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--petrol);
+  letter-spacing: -0.01em;
+}
+
+a { color: var(--orange); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--petrol); }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.container--narrow {
+  max-width: var(--max-content);
+}
+
+/* ============================================================
+   HERO (Index Page)
+============================================================ */
+
+.hero {
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--creme);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  margin-bottom: 1.25rem;
+  color: var(--petrol);
+}
+
+.hero-title em {
+  font-style: italic;
+  color: var(--orange);
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.55;
+  margin-bottom: 2rem;
+  color: var(--teal);
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================================
+   VIDEO BLOCK
+============================================================ */
+
+.video-block {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 0.75rem;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--petrol);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.video-wrapper video,
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--creme);
+  text-align: center;
+  padding: 2rem;
+  height: 100%;
+}
+
+.video-placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+}
+
+.video-placeholder p {
+  font-family: 'Philosopher', serif;
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+/* ============================================================
+   CTA BUTTONS
+============================================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  min-height: 56px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn--primary {
+  background: var(--orange);
+  color: var(--creme);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background: var(--orange-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--secondary {
+  background: var(--petrol);
+  color: var(--creme);
+}
+
+.btn--secondary:hover {
+  background: var(--teal);
+  transform: translateY(-2px);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--petrol);
+  border: 2px solid var(--petrol);
+}
+
+.btn--outline:hover {
+  background: var(--petrol);
+  color: var(--creme);
+}
+
+.btn--block {
+  display: flex;
+  width: 100%;
+}
+
+.btn-arrow {
+  font-size: 1.2rem;
+  transition: transform var(--transition);
+}
+
+.btn:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+/* ============================================================
+   TRUST BLOCK
+============================================================ */
+
+.trust-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 0 3rem 0;
+  font-size: 0.875rem;
+  color: var(--teal);
+  opacity: 0.85;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.trust-item-icon {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+/* ============================================================
+   SECTION HEADERS
+============================================================ */
+
+.section {
+  padding: 2.5rem 0;
+}
+
+.section-eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--orange);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--orange);
+}
+
+/* ============================================================
+   QUIZ PAGE
+============================================================ */
+
+.quiz-shell {
+  padding: 2.5rem 0;
+  min-height: 70vh;
+}
+
+.quiz-progress {
+  margin-bottom: 2.5rem;
+}
+
+.quiz-progress-bar {
+  height: 8px;
+  background: var(--creme-dark);
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--petrol), var(--orange));
+  border-radius: 100px;
+  width: 20%;
+  transition: width var(--transition);
+}
+
+.quiz-progress-text {
+  font-size: 0.875rem;
+  color: var(--teal);
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.quiz-question {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.quiz-question-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.quiz-question-text {
+  font-size: clamp(1.5rem, 4.5vw, 2rem);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.875rem;
+  margin-bottom: 2rem;
+}
+
+.quiz-option {
+  display: block;
+  width: 100%;
+  background: var(--white);
+  border: 2px solid var(--creme-dark);
+  border-radius: var(--radius-md);
+  padding: 1.125rem 1.5rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.05rem;
+  color: var(--teal);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition);
+  -webkit-tap-highlight-color: transparent;
+  font-weight: 500;
+}
+
+.quiz-option:hover,
+.quiz-option:focus {
+  border-color: var(--orange);
+  background: var(--creme);
+  transform: translateX(4px);
+}
+
+.quiz-option.selected {
+  border-color: var(--petrol);
+  background: var(--petrol);
+  color: var(--creme);
+}
+
+.quiz-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.quiz-back {
+  background: none;
+  border: none;
+  color: var(--teal);
+  font-size: 0.9375rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  opacity: 0.65;
+  transition: opacity var(--transition);
+}
+
+.quiz-back:hover { opacity: 1; }
+.quiz-back:disabled { opacity: 0.25; cursor: not-allowed; }
+
+/* ============================================================
+   EMAIL FORM
+============================================================ */
+
+.email-shell {
+  padding: 2.5rem 0;
+}
+
+.email-form {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--teal);
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid var(--creme-dark);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--teal);
+  background: var(--creme);
+  transition: border-color var(--transition);
+  -webkit-appearance: none;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--orange);
+  background: var(--white);
+}
+
+.form-error {
+  color: #b03030;
+  font-size: 0.875rem;
+  margin-top: 0.4rem;
+  display: none;
+}
+
+.form-error.visible { display: block; }
+
+.form-disclaimer {
+  font-size: 0.8125rem;
+  color: var(--teal);
+  opacity: 0.65;
+  margin-top: 1rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   RESULT PAGE
+============================================================ */
+
+.result-shell {
+  padding: 3rem 0 4rem 0;
+}
+
+.result-eyebrow {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--orange);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.result-headline {
+  text-align: center;
+  font-size: clamp(2rem, 5.5vw, 2.75rem);
+  margin-bottom: 1rem;
+}
+
+.result-headline em {
+  font-style: italic;
+  color: var(--orange);
+}
+
+.result-tagline {
+  text-align: center;
+  font-family: 'Philosopher', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--teal);
+  margin-bottom: 2.5rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--petrol);
+}
+
+.result-card--orange {
+  border-top-color: var(--orange);
+}
+
+.result-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.875rem;
+  color: var(--petrol);
+}
+
+.result-card p {
+  font-size: 1.0625rem;
+  margin-bottom: 0.875rem;
+}
+
+.result-card p strong {
+  color: var(--orange);
+}
+
+.result-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.875rem 0 0 0;
+}
+
+.result-card li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+.result-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 1.25rem;
+  top: -0.1rem;
+}
+
+.result-pdf-cta {
+  text-align: center;
+  background: var(--creme);
+  border: 2px dashed var(--orange);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.result-pdf-cta-title {
+  font-family: 'Philosopher', serif;
+  font-size: 1.2rem;
+  color: var(--petrol);
+  margin-bottom: 0.5rem;
+}
+
+.result-pdf-cta-text {
+  font-size: 0.9375rem;
+  color: var(--teal);
+  margin-bottom: 1rem;
+}
+
+.result-pitch {
+  background: var(--petrol);
+  color: var(--creme);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.result-pitch h3 {
+  color: var(--creme);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.result-pitch p {
+  color: var(--creme);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.result-pitch a.btn {
+  background: var(--orange);
+  color: var(--creme);
+  margin-top: 0.5rem;
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+
+.site-footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--teal);
+  opacity: 0.65;
+  border-top: 1px solid var(--creme-dark);
+}
+
+.site-footer p { margin-bottom: 0.4rem; }
+
+.site-footer a {
+  color: var(--petrol);
+  text-decoration: underline;
+}
+
+/* ============================================================
+   ANIMATIONS
+============================================================ */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 350ms ease-out;
+}
+
+/* ============================================================
+   LOADER
+============================================================ */
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  font-size: 0.9375rem;
+  color: var(--teal);
+  opacity: 0.7;
+}
+
+.loader-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--orange);
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loader-dot:nth-child(1) { animation-delay: -0.32s; }
+.loader-dot:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (min-width: 600px) {
+  .hero { padding: 4rem 0 3rem 0; }
+  .quiz-shell { padding: 3rem 0; }
+  .email-form { padding: 2.5rem; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+  .quiz-option { padding: 1rem 1.25rem; }
+  .video-block { padding: 0.5rem; }
+  .email-form { padding: 1.5rem; }
+}

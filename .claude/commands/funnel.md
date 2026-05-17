@@ -66,7 +66,13 @@ Plus: `list` — zeigt alle Funnels aus `context/active-funnels.json`.
 
 **Julia-Trost-Kurs-Transkripte (`reference/julia-trost/Transkripte Videocalls/_sortiert/`):**
 
-- **`IG Reichweiten Booster/Instagram Werbeanzeigen - 849948822.txt`** ⭐ DEDIZIERTER WERBEANZEIGENKURS von Julia Trost — PFLICHT-LEKTÜRE in Mode 3 vor jedem Ad-Creative. Plus:
+- **`Werbeanzeigen/`** ⭐ KOMPLETTER WERBEANZEIGENKURS von Julia Trost (34 Lektionen, 2026 transkribiert) — PFLICHT-LEKTÜRE in Mode 3. Struktur:
+  - Kapitel 2 (Setup): Meta Business Suite, Konto-Einstellungen, Domain verifizieren, Meta Pixel, Selbstdefinierte Conversions, Event Setup Tool, Pixel Helper
+  - Kapitel 3 (Aufbau): Kampagnen-Struktur, Kampagnenziele, Kampagnen- & Anzeigengruppen-Definition, Anzeigendefinition, Anzeigen duplizieren/bearbeiten
+  - Kapitel 4 (Zielgruppen): Interessenzielgruppe, Custom Audiences (Eigene + Meta-Quellen), Lookalike Audiences, Zielgruppenverwendung
+  - Kapitel 5 (Tracking): Kampagnen-Dashboard, Eigene Spaltenvoreinstellung, Selbst-definierte Kennzahlen, IDs für Support, Betrachtungszeitraum, Bedingte Formatierung, Anzeigenberichte
+  - Bonus: „So skalierst du" · „Wichtige Fragen + Antworten" · „So kommst du auf Ideen & erstellst deine Visuals" · „Schritt für Schritt: Erstellung deiner Reels" · „Deine Checkout Seite"
+- **`IG Reichweiten Booster/Instagram Werbeanzeigen - 849948822.txt`** — älterer Kurs-Mitschnitt, ergänzend. Plus:
   - „Reels sorgen für Wachstum - 1014296103.txt"
 
 - **`Online Business Academy (OBA)/Bewirb deine Beiträge - 986325219.txt`** — Julias Boost-Methodik (welchen organischen Post mit Budget skalieren)
@@ -247,9 +253,14 @@ Nach abgeschlossener Planung. Gehst die Liste durch und baust jeden Schritt:
 ## 📣 Workflow für Mode 3 — WERBEANZEIGEN VORBEREITEN
 
 **Pflicht-Grundlagen (VOR jedem Ad-Set lesen):**
-1. ⭐ `reference/julia-trost/Transkripte Videocalls/_sortiert/IG Reichweiten Booster/Instagram Werbeanzeigen - 849948822.txt` — Julias dedizierter Werbeanzeigenkurs
-2. `Leadgewinnung leicht gemacht/Leadgewinnung über Beitrag bewerben - 953120178.txt` — Boost-Strategie
-3. `Online Business Academy (OBA)/Bewirb deine Beiträge - 986325219.txt` — Welche Posts skalieren
+1. ⭐ `reference/julia-trost/Transkripte Videocalls/_sortiert/Werbeanzeigen/` — **Kompletter Werbeanzeigen-Kurs** (33 Lektionen, 2026 transkribiert). Für konkrete Setup-/Tracking-/Zielgruppen-/Skalierungs-Fragen die passende Kapitel-Datei lesen (z.B. `30-So skalierst du.txt` für Skalierung, `19-4.3 Custom Audiences.txt` für Zielgruppen).
+2. `IG Reichweiten Booster/Instagram Werbeanzeigen - 849948822.txt` — älterer Ergänzungs-Mitschnitt
+3. `Leadgewinnung leicht gemacht/Leadgewinnung über Beitrag bewerben - 953120178.txt` — Boost-Strategie
+4. `Online Business Academy (OBA)/Bewirb deine Beiträge - 986325219.txt` — Welche Posts skalieren
+5. ⭐ **`reference/hormozi/copywriting-bible.md`** — **Hormozi-Bonus-Layer (seit 2026-05-04)**, insbesondere die Sektion **„HORMOZI AD-ANATOMIE"** (14-Bausteine-Ad + 3 Compliance-Pivots). Verzahnung Julia/Hormozi:
+   - **Julia liefert die STRATEGIE:** welcher Painpoint, welcher Funnel, welche Audience, welches Budget, welche Skalierung, welcher Boost-vs-Neu-Creative-Ansatz, welche Custom Audiences, welches Tracking
+   - **Hormozi liefert die COPY-ANATOMIE:** die eigentliche Ad-Text-Struktur (Qualifizierung → Bold Claim → Reason Why → Pain Stack → Reframe → Unique Mechanism → Authority Stack → Logische Urgency → Lead-Magnet-CTA) PLUS die Compliance-Pivots (Meta + doTERRA)
+   - **Konkret:** Wenn du in Mode 3 ein Ad-Creative baust, **delegiere die Copy-Phase explizit an `/hormozi` Modus 7 (Ad-Bauplan)** ODER wende seine 14-Bausteine-Anatomie direkt an. Strategie/Targeting bleibt aber bei Julia + dir hier.
 
 **Julias Kern-Strategie** (aus allen 3 Quellen): Organisch gut performenden Post finden → mit Budget skalieren. Kein Cold-Ad-Creative neu erfinden.
 
@@ -409,6 +420,18 @@ Output: `outputs/funnels/[slug]/launch/content-kalender.md` mit:
 - Canva-Design-Bedarf-Liste
 
 Plus: Update `active-funnels.json` mit `launch_window: { start, end }`.
+
+### Story-Operationalisierung via /story Modus 2 (Sales-Day)
+
+**Wichtig:** Die Stories im Launch-Plan sind nur Skizzen. Die **operative tägliche Umsetzung** läuft über den `/story`-Skill:
+
+- An jedem Launch-Tag triggert Patricia: `/story sales-day`
+- `/story` liest dann automatisch `outputs/funnels/[slug]/launch/content-kalender.md` + Tag im Launch
+- Liefert 8-12 fertige Slides für den Tag (verteilt auf Tageszeit + alle 7 Nadja-Käuferpersonas + alle 4 DISG-Achsen)
+- Inkl. PNG-Render, Sticker-Plan, stündliche CTAs
+
+**Bei /funnel Mode 4: gib am Ende explizit den Hinweis:**
+> "Trigger an jedem Launch-Tag morgens `/story sales-day` — der Story-Skill operationalisiert deinen Launch-Plan automatisch und liefert dir die fertigen Story-Slides für den Tag."
 
 ---
 

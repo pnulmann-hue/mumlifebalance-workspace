@@ -6,6 +6,19 @@ Dieser Command synct neue oder aktualisierte Freebies aus `context/freebies/` in
 
 ---
 
+### Wenn doTERRA-Content (Profil @patricia_ulmann) — ZUSÄTZLICHE PFLICHT-LESEN
+
+VOR jeder Caption / Folie / Hook für doTERRA:
+
+- `context/doterra/patricia-wendepunkt-story.md` — Patricias eigene Wendepunkt-Story = Single Source of Truth für jede doTERRA-Aussage
+- `context/doterra/` — komplette Wissensbasis (PDFs, Bücher, doTERRA-Schulungen, Lifestyle-Pyramide). Auch die Unter-Ordner: Basicinfos, Produktwissen, Emotionen und Öle, Mama wird Hausapothekerin, Testwoche, Werbematerial, Ölschule, öltipps
+- Memory: `feedback_doterra-compliance-no-heilversprechen.md` — Strikte Compliance-No-Gos (keine Heilversprechen, „bei mir war"-Frame, Lifestyle-Bubble)
+- Memory: `feedback_KRITISCH-doterra-keine-erfundenen-fakten.md` — Keine medizinischen Erfindungen
+
+**NIE doTERRA-Content erstellen ohne diese Quellen geprüft zu haben.** Bei Unsicherheit: Patricia fragen, nicht raten.
+
+---
+
 ## Erwartete Ordnerstruktur
 
 ```
