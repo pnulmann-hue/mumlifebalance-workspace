@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Vollständiges Inhaltsverzeichnis
 
 > **Status:** erarbeitet 2026-05-09 (anderer Chat, vor 32-MB-Crash gerettet) · **Launch-Variante A:** alle Boni VOR dem Launch fertig (Juli komplett für Bonus-Bau)

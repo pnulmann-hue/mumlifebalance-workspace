@@ -1,3 +1,7 @@
+---
+tags: [content, samples]
+---
+
 # SAMPLE 3 — Karussell-Beitrag
 
 **Zweck:** 9-Folien-Karussell, speicher-optimiert (Saves als KPI).

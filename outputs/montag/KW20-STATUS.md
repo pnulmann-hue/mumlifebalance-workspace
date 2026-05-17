@@ -1,3 +1,7 @@
+---
+tags: [content, montag-build]
+---
+
 # KW 20 Status · Session 2026-05-13
 
 **Letzte Aktion:** 4 Karussells gescheduled · Bio-Link-Bilder gerendert · Reel-Drehbücher fertig.

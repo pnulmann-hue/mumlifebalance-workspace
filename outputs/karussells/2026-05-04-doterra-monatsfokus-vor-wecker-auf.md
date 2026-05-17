@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell-Briefing · D8 · „6 Uhr morgens — vor dem Wecker auf"
 
 **Profil:** doTERRA (Mum Life Balance)

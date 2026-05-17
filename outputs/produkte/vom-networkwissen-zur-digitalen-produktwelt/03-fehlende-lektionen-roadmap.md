@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Roadmap — Die 14 fehlenden Lektionen bauen
 
 **Datum:** 2026-04-22

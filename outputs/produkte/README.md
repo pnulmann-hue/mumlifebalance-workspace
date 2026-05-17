@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # outputs/produkte/ — Produkterstellungs-Outputs
 
 Alle Deliverables aus dem `/produkt`-Command landen hier — ein Ordner pro Produkt.

@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Modul-Outline v2 (5 gleichwertige Säulen · 8 Wochen)
 
 **Erstellt:** 2026-05-01

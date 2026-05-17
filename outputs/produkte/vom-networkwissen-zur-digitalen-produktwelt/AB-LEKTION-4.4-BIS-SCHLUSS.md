@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Vom Networkwissen zur digitalen Produktwelt
 ## Rohdatei ab Lektion 4.4 bis Ende
 

@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # LEKTION 3.3 — Minikurse & grosse Kurse erstellen
 
 **Vertiefung von Lektion 2.1 — hier die konkrete Bauanleitung beider Formate.**

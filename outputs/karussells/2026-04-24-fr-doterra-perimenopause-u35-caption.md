@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Fr 24.04.2026 · 21:00 · doTERRA · Karussell „Perimenopause mit Ü35?"
 
 **Profil:** @patricia_ulmann

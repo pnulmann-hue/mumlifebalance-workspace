@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Sales-Page
 
 > **Hosting:** ThriveCart · **URL-Vorschlag:** `mumlifebalance.thrivecart.com/mama-ceo` · **Stand:** 2026-05-09 · **Anmeldung öffnet:** 20.5.2026 · **Programm-Start:** 1.6.2026 · **Plätze:** 15 · **Preis:** Frühbucher 249 (3 Tage) → 333 (Final, erste Runde) → 444 (ab Runde 2)

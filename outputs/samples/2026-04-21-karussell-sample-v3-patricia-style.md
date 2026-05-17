@@ -1,3 +1,7 @@
+---
+tags: [content, samples]
+---
+
 # SAMPLE 3-V3 — Karussell in PATRICIAS eigenem Stil
 
 **Basierend auf**: Live-Analyse von Julia Trost + Kati am 2026-04-21 via Claude-in-Chrome.

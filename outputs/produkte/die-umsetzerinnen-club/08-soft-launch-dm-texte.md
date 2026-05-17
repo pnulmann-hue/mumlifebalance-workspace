@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # 08 — Soft-Launch · DM-Texte (kopier-fertig)
 
 **Verwendung:** Während Pre-Launch-Phase 4 (DM-Sprint) und Soft-Launch-Wochen 1-2.

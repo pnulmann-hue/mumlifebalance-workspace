@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # LEKTION 3.5 — Deine 0€ Produkte & ManyChat
 
 **Lead-Magneten bauen + automatisiert einsammeln über Instagram.**

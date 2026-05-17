@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Modul 3 — Rohdatei für Canva-Chat
 
 **Anweisung für den Canva-Chat:**

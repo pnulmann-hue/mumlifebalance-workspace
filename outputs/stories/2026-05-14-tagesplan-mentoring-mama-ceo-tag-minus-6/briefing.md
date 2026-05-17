@@ -1,3 +1,7 @@
+---
+tags: [content, story]
+---
+
 # Story-Briefing — 2026-05-14 (Do) — Tagesplan — Mentoring · Version 3 (Webinar-CTA + Quiz-Sticker-Slot)
 
 ## Was sich v3 geändert hat (Patricia-Feedback 2026-05-14 abends)

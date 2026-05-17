@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Produkt-Briefing
 
 **Erstellt:** 2026-04-30

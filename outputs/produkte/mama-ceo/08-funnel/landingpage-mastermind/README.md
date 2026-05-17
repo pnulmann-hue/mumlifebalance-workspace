@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO KI-Mastermind — Landingpage (Netlify-Ready)
 
 **Webinar-Titel:** „In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln"

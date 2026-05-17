@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # 2026-05-14 · doTERRA · D1 — Convention-Haarbürste-Wendepunkt
 
 **Profil:** doTERRA-Profil (Patricia Ulmann)

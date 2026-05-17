@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Fr 24.04.2026 · 20:30 · MENTORING · Karussell „10.000 Follower"
 
 **Profil:** @mumlifebalance_patricia_ulmann

@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Fr 01.05.2026 · 19:30 · MENTORING · Karussell „Bio in 4 Zeilen"
 
 **Profil:** @mumlifebalance_patricia_ulmann

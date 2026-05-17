@@ -1,3 +1,7 @@
+---
+tags: [research]
+---
+
 # Zielgruppen-Research — Mentoring-Profil (Mamas im Network Marketing)
 
 **Erstellt:** 2026-04-21

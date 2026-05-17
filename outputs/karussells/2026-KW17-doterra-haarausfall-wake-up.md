@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell: „Ich dachte es ist Müttermüdigkeit. Es war Perimenopause."
 
 **Typ**: Story / Wendepunkt

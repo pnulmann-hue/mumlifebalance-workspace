@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Die Umsetzerinnen — Output-Übersicht
 
 **Status:** Konzept-Phase abgeschlossen · bereit für Patricia-Review · dann Pre-Launch

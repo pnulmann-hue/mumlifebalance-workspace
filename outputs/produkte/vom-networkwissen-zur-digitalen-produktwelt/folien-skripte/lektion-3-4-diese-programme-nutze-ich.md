@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # LEKTION 3.4 — Diese Programme nutze ich
 
 **Patricias kompletter Tool-Stack — was du wirklich brauchst, was nicht.**

@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # Reel-Briefing · M10 · „Mein KI-Mitarbeiter weckt mich" (R-broll)
 
 **Profil:** Mentoring (Mum Life Balance)

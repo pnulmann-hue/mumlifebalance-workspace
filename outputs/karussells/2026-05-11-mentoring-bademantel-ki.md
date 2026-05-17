@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell-Briefing · M8 · „Bademantel-KI"
 
 **Profil:** Mentoring (Mum Life Balance)

@@ -12,7 +12,7 @@ Patricias Permakultur-Garten im Appenzellerland (920 m).
 - Slash-Command: `/garten`
 
 ## 📓 Garten-Tagebuch
-- Ordner: `outputs/garten/`
+- [[outputs/garten/_INDEX|🌱 Garten-Outputs (alle)]]
 
 ## 🤖 Garten-Bot
 - `scripts/garten-telegram-bot/` (Submodule)

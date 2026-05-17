@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # Reel: „Hör auf zu glauben, Salat reicht."
 
 **Typ**: Hot Take / Talking Head mit Pattern-Interrupt

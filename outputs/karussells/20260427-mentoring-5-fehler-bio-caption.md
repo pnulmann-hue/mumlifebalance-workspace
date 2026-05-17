@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Mo 27.04.2026 · 19:30 · MENTORING · Karussell „5 Fehler in deiner Bio"
 
 **Profil:** @mumlifebalance_patricia_ulmann

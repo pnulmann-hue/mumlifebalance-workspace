@@ -1,3 +1,7 @@
+---
+tags: [content, samples]
+---
+
 # SAMPLE 1 — Reel-Cover (Feed-Thumbnail)
 
 **Zweck:** Das statische Cover-Bild, das im Feed-Grid sichtbar ist (wenn jemand dein Profil besucht oder den Reel pausiert).

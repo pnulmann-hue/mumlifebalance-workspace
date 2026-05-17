@@ -1,3 +1,7 @@
+---
+tags: [content, story]
+---
+
 # Stories — Outputs vom /story-Skill
 
 Dieser Ordner enthält alle generierten Story-Briefings + gerenderten PNG-Slides.

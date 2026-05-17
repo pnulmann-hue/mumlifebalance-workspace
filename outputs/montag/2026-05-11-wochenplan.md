@@ -1,3 +1,7 @@
+---
+tags: [content, montag-build]
+---
+
 # Wochenplan KW 20 (12.–18. Mai 2026)
 
 **Erstellt:** 2026-05-11 (Montag, manuell statt Auto-Skill)

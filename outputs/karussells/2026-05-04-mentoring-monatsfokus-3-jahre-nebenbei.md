@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell-Briefing · M7 · „3 Jahre nebenbei — bis ich's kapiert hab"
 
 **Profil:** Mentoring (Mum Life Balance)

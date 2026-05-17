@@ -1,3 +1,7 @@
+---
+tags: [funnel]
+---
+
 # Tag 0 — Launch-Reel „Ohne Schluckauf"
 
 **Datum:** Freitag 2026-04-24 · **Profil:** Mentoring · **Funnel:** Bio-Check

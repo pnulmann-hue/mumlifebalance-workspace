@@ -1,0 +1,11 @@
+---
+tags: [moc, monatsplan]
+---
+
+# 📅 Monatspläne — Index
+
+Auto-Index aller Files in `outputs/monatsplaene/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Produkte-Funnels]] für den thematischen Überblick.
+
+## Dateien
+
+- [[2026-05]]

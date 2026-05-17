@@ -1,3 +1,7 @@
+---
+tags: [funnel]
+---
+
 # doTERRA Lead-Magnet — „4 Erkenntnisse für Mamas mit Hormonchaos"
 
 **Erstellt:** 2026-05-08

@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell: „Dein Kopf macht 3 Uhr morgens Listen? Das ist Mental Load."
 
 **Typ**: Identifikation + Anleitung (Mythos-Brecher)

@@ -7,6 +7,7 @@ tags: [moc, externe-wissensbasen]
 Kuratiertes Wissen aus externen Kursen und Methoden. **Niemand wird in Customer-Outputs namentlich genannt** (Memory: keine Julia Trost in Kundendokumenten).
 
 ## 🎓 Julia Trost (INTERN — Mentorin)
+- [[outputs/julia-trost-sync/_INDEX|📚 Julia-Trost Sync-Notes]]
 - `reference/julia-trost/` — komplette Wissensbasis
 - Transkripte: `reference/julia-trost/Transkripte Videocalls/_sortiert/`
 - Methodik: `reference/julia-trost/methodik.md`

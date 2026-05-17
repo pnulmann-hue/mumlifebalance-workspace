@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Markt-Signal-Bericht — Patricias Produkt-Audit
 
 **Datum:** 2026-04-22

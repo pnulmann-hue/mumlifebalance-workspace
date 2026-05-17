@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Mi 22.04.2026 · 21:00 · doTERRA · Karussell „5 Energie-Killer" (v2)
 
 **Canva-Design:** `DAHHkU4vSOc` — https://www.canva.com/design/DAHHkU4vSOc

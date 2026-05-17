@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Fr 01.05.2026 · 19:30 · doTERRA · Karussell „Wendepunkt mit 36"
 
 **Profil:** @patricia_ulmann

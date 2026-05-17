@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # 2026-05-15 · Mentoring · M2 — Trainingshose: Fertig besser als perfekt
 
 **Profil:** @mumlifebalance (Mentoring)

@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # 📋 Produkt-Briefing — DIE UMSETZERINNEN
 
 **Erstellt:** 2026-04-28 · **Iteration:** v2 (nach Patricia-Feedback)

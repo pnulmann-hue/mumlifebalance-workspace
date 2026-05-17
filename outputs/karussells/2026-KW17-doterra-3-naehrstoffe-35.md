@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell: „3 Nährstoffe, die jede Mama über 35 täglich braucht."
 
 **Typ**: Anleitung / Liste (Expertise)

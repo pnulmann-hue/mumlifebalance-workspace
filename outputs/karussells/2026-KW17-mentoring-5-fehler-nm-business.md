@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell: „5 Fehler, die dein NM-Business killen (Nr. 3 macht jede zweite Mama)."
 
 **Typ**: Liste / Listicle + Mythos-Brecher

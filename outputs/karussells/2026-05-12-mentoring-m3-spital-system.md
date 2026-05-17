@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # 2026-05-12 · Mentoring · M3 — Spital + System hält
 
 **Profil:** @mumlifebalance (Mentoring)

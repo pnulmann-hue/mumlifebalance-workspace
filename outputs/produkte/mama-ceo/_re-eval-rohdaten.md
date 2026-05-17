@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO Re-Evaluation — Rohdaten-Sammlung
 
 **Stand:** 2026-05-01

@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Vollständige Modul- und Lektions-Übersicht
 
 **Stand:** 2026-05-01

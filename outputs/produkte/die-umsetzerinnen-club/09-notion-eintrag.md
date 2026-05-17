@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # 09 — Notion-Produkte-DB · Eintrags-Block (manuell zu übertragen)
 
 **DB-URL:** https://www.notion.so/2ae7078e8b7e81efaafaf03993ef344f

@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO-Webinar Landingpage — Setup-Anleitung
 
 ## Was du brauchst (3 Files in einem Ordner)

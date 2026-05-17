@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # 07 — Pre-Launch · Listen-Aufbau (4-6 Wochen vor Soft-Launch)
 
 **Ausgangslage:** Soft-Launch-Liste aktuell <20 Personen → direkter Launch wäre zu klein. Ziel: 80-100 warme Personen vor Soft-Launch.

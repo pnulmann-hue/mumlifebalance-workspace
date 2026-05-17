@@ -21,12 +21,15 @@ Die wöchentliche Instagram-Pipeline für beide Profile.
 - [[julia-insta-stories-anleitung|Insta-Story-Anleitung]]
 - [[julia-story-ideen|Story-Ideen-Bibliothek]]
 
-## ⚙️ Wöchentliche Pipeline
-- **Freitag-Hooks**: `outputs/freitag/`
-- **Montag-Build**: `outputs/montag/`
-- **Karussells**: `outputs/karussells/`
-- **Reels**: `outputs/reels/`
-- **Stories**: `outputs/stories/`
+## ⚙️ Wöchentliche Pipeline (Indexe)
+- [[outputs/freitag/_INDEX|📅 Freitag-Hooks (alle)]]
+- [[outputs/montag/_INDEX|🚀 Montag-Builds (alle)]]
+- [[outputs/karussells/_INDEX|🎨 Karussells (alle)]]
+- [[outputs/reels/_INDEX|🎬 Reels (alle)]]
+- [[outputs/stories/_INDEX|📱 Stories (alle)]]
+- [[outputs/telegram-posts/_INDEX|📣 Telegram-Posts]]
+- [[outputs/content-kalender/_INDEX|📆 Content-Kalender]]
+- [[outputs/samples/_INDEX|🧪 Samples]]
 
 ## 🔌 Integrationen
 - [[manychat-keywords]] — DM-Keywords pro Pillar

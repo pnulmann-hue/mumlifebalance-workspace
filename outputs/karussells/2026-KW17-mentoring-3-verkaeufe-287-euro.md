@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell: „Wie ich mit 500 Followern 3 Verkäufe am Tag mache."
 
 **Typ**: Anleitung / How-To

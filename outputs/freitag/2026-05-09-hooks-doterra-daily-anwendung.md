@@ -1,3 +1,7 @@
+---
+tags: [content, freitag-hooks]
+---
+
 # Hooks der Woche · KW 20 · doTERRA · 2026-05-09
 
 **Profil:** @patricia_ulmann

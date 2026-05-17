@@ -1,3 +1,7 @@
+---
+tags: [garten]
+---
+
 # Garten-Wochenplan KW 17 — 21. bis 27. April 2026
 
 **Standort:** Appenzellerland, 920 m ü.M.

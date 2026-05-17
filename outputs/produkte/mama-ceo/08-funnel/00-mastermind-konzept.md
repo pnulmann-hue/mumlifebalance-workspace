@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # KI-Webinar „In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln" — Konzept (FINAL)
 
 **Datum:** **Mittwoch 20.5.2026, 09:00-10:30 Uhr**

@@ -1,3 +1,7 @@
+---
+tags: [funnel]
+---
+
 # ManyChat-Flow: Keyword `BIO`
 
 **Funnel:** Bio-Check · **Profil:** Mentoring (Instagram @mumlifebalance bzw. Patricias Mentoring-Account)

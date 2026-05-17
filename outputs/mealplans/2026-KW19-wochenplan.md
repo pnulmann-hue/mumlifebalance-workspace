@@ -1,3 +1,7 @@
+---
+tags: [mealplan]
+---
+
 # Wochenplan KW19 — 6.-10. Mai 2026
 
 **Haushalt:** 5-6 Personen · **Patricia-Makros:** 1850 kcal / 135g P / 180g KH / 63g Fett

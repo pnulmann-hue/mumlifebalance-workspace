@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Markt-Update Mai 2026 + 5 Erweiterungs-Ideen
 
 > **Quelle:** Erarbeitet im anderen Chat 2026-05-09 (vor 32-MB-Crash gerettet) · **Frage:** Wie könnte Patricia ihre Zielgruppe (Mamas im Network, kaum Zeit für Business-Entwicklung) noch unterstützen?

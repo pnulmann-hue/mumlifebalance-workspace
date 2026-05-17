@@ -1,3 +1,7 @@
+---
+tags: [doterra]
+---
+
 # doTERRA Reaktivierungs-Templates — Patricia 2026
 
 **Erarbeitet:** 7. Mai 2026 (Phase C doTERRA-Strategie-Workshop)

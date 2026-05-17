@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell-Briefing · D9 · „Meine echte Zeitlinie — keine 30-Tage-Kur"
 
 **Profil:** doTERRA (Mum Life Balance)

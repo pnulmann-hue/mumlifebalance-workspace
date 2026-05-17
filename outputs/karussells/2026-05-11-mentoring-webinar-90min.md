@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell-Briefing · M3 · „In 90 Min weisst du..."
 
 **Profil:** Mentoring (Mum Life Balance)

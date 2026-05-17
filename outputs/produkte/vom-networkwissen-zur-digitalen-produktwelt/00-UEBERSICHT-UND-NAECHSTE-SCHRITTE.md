@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Kurs „Vom Networkwissen zur digitalen Produktwelt" — Abschluss-Plan
 
 **Erstellt:** 2026-04-22

@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Notion-Produkte-DB-Einträge — kopier-ready
 
 **DB-URL:** https://www.notion.so/2ae7078e8b7e81efaafaf03993ef344f

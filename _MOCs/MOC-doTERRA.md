@@ -18,6 +18,7 @@ Patricias Network-Marketing-Profil — strikt getrennt vom Mentoring-Business.
 - Memory: [[feedback_doterra-compliance-no-heilversprechen|Compliance-Memory]]
 
 ## 📂 Strategie & Onboarding
+- [[outputs/doterra-strategie/_INDEX|🌿 doTERRA-Strategie (alle)]]
 - [[outputs/doterra-strategie/onboarding-system-outline|Onboarding-System]]
 - [[outputs/doterra-strategie/reaktivierungs-templates|Reaktivierungs-Templates]]
 

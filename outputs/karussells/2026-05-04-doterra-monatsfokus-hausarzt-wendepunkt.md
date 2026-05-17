@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell-Briefing · D2 · „Hausarzt-Sackgasse — mein Wendepunkt"
 
 **Profil:** doTERRA (Mum Life Balance)

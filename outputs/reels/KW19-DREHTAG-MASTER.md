@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # Reel-Drehtag KW 19 · 4 Reels in 1-2 Drehblöcken
 
 **Drehfenster-Empfehlung:**

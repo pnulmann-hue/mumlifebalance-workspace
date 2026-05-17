@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell-Briefing · D9 · „6 Säulen — keine ist ein Wunder"
 
 **Profil:** doTERRA (Mum Life Balance)

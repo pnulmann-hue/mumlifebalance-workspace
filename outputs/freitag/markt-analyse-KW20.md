@@ -1,3 +1,7 @@
+---
+tags: [content, freitag-hooks]
+---
+
 # Markt-Analyse · KW20 (11.05–17.05.2026)
 
 **Erstellt:** 2026-05-09 (Sa, manuell — Fr-Slot 8.5. übersprungen)

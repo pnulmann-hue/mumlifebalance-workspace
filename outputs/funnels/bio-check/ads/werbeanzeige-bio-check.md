@@ -1,3 +1,7 @@
+---
+tags: [funnel]
+---
+
 # Werbeanzeige Bio-Check — Komplett-Briefing
 
 **Stand:** 2026-04-25

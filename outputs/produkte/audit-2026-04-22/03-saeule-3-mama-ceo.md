@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Säule 3 — Neu definiert: „Mama-CEO" Leadership & Systeme
 
 **Datum:** 2026-04-22 (Update nach Patricias Korrektur)

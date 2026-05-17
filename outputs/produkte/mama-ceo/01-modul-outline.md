@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Modul-Outline (5 Module · 8 Wochen)
 
 **Erstellt:** 2026-04-30

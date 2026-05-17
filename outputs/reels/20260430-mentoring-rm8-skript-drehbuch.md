@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # 🎬 RM8 — Drehbuch zum Schneiden (Do 30.04.2026 19:30)
 
 **Format:** 7-Sek-Stock-Reel (Voiceover über schnell geschnittene B-Roll)

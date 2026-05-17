@@ -1,3 +1,7 @@
+---
+tags: [funnel]
+---
+
 # 🚀 Bio-Check Launch-Woche — 7-Tage-Kalender
 
 **Funnel:** Bio-Check · **Profil:** Mentoring · **Scope:** B (Opt-ins + sanfter 39er-Pitch auf „Finde dein Thema")

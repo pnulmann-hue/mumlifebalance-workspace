@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Learnings aus den 4 Referenz-Coaches
 
 > **Erstellt:** 2026-05-09 · **Quellen:** lokal in `reference/` · **Zweck:** Patricias Wissens-Bibliothek nutzbar machen für den Mama-CEO-Bau.

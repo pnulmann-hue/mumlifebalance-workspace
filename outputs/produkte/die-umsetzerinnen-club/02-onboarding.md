@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # 02 — Onboarding-Konzept (Modul 0)
 
 **Ziel:** Neues Mitglied fühlt sich in den ersten 7 Tagen so abgeholt, dass die Kündigungs-Hürde im 1. Monat nicht greift. Bei monatlich-kündbaren Memberships ist der **Erstmonats-Drop der grösste Churn-Hebel** — Onboarding ist NICHT optional.

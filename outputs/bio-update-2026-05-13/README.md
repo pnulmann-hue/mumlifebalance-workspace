@@ -1,3 +1,7 @@
+---
+tags: [brand]
+---
+
 # Bio-Update 2026-05-13 — Themen-Achse statt Stadium-Achse
 
 **Auslöser:** Patricia entscheidet, dass die Aussen-Kommunikation auf das Themen-Modell umgestellt wird, weil die Zielgruppe es besser versteht. Die Stadium-Achse (Networkmarketing 2.0 / Hybrid / Mama Business) bleibt intern für die Funnel-Logik.

@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # Reel: „POV: 7 Minuten, damit dein Kopf 3 Uhr nicht Listen macht."
 
 **Typ**: POV / Anleitung (Companion Content)

@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Notion-Block-Texte für Mai 2026 — Mama-CEO Launch
 
 **Zweck:** Da Notion-API von Sandbox geblockt — du kopierst die folgenden Blöcke 1:1 in deine Notion-DBs.

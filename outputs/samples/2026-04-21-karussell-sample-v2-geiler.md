@@ -1,3 +1,7 @@
+---
+tags: [content, samples]
+---
+
 # SAMPLE 3-V2 — Karussell GEILER gestaltet
 
 **Was ist anders als V1?** Design-Drama aus `karussell-framework.md` → „EINE Hero-Phrase pro Folie", typografische Hierarchie, Kontrast-Folien (Problem schwarz / Lösung hell), grosse Zahlen als Design-Element, Mix aus Text- und Visual-Folien.

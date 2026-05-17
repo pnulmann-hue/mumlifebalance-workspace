@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Roadmap — Säulen-Aufbau + Über-Säulen-Hauptprodukt
 
 **Datum:** 2026-04-22

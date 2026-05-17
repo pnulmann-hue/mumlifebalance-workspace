@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # Drehbuch · D1 · „3 Uhr Symptome" (R-talk, ~50-60 Sek)
 
 **Format:** Talking Head, EIN Take wenn möglich, kein B-Roll

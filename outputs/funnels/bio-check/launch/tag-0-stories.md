@@ -1,3 +1,7 @@
+---
+tags: [funnel]
+---
+
 # Tag 0 — Story-Sequenz „Launch-Day"
 
 **Datum:** Freitag 2026-04-24 · **Profil:** Mentoring · **Frames:** 10

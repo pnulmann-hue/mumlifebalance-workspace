@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Patricias 3-Säulen-Audit — Bist du auf dem richtigen Weg?
 
 **Datum:** 2026-04-22

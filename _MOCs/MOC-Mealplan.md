@@ -16,7 +16,7 @@ Wochenplanung für 5-6 Personen + Patricias persönliche Ernährungsziele (MyBod
 - Whitelist-Domains: Cookidoo, Marcel Paa, Streusel, Migusto, BettyBossi, Swissmilk, Fooby, etc.
 
 ## 📋 Wochenpläne
-- Ordner: `outputs/mealplans/`
+- [[outputs/mealplans/_INDEX|🥗 Mealplans (alle)]]
 - Format: `YYYY-KW##-wochenplan.md` + `YYYY-KW##-wochenplan.html`
 - Aktuell: KW18, KW19, KW21
 

@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # Drehbuch · M10 · „Mein KI-Mitarbeiter weckt mich" (R-broll, ~45-50 Sek)
 
 **Format:** B-Roll mit Voiceover. 6 Cuts. Patricia spricht NICHT in die Kamera.

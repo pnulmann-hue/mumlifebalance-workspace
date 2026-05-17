@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Markt-Research — Mama-CEO (Säule 3, geplant CHF 555)
 
 **Datum:** 2026-04-30

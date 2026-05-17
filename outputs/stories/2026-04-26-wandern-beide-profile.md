@@ -1,3 +1,7 @@
+---
+tags: [content, story]
+---
+
 # Story-Build-Kit: Wandern Sonntag — beide Profile
 
 **Datum:** 2026-04-26

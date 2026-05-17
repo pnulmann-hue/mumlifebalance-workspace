@@ -1,3 +1,7 @@
+---
+tags: [content, freitag-hooks]
+---
+
 # 10 Mentoring-Hooks · Monatsfokus Mai 2026
 
 **Profil:** Mentoring (Mum Life Balance)

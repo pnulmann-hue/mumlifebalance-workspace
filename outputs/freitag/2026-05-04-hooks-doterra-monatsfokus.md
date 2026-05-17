@@ -1,3 +1,7 @@
+---
+tags: [content, freitag-hooks]
+---
+
 # 10 doTERRA-Hooks · KW 19/20 · Monatsfokus „Vormenopause + Funktionsmodus"
 
 **Profil:** doTERRA (Patricia Ulmann · Mum Life Balance)

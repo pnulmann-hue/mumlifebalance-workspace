@@ -1,3 +1,7 @@
+---
+tags: [content, samples]
+---
+
 # SAMPLE 2 — Reel-Video (komplettes Briefing)
 
 **Zweck:** Bewegtes Reel, 20 Sek., kombiniert deine Canva-Videos + Stock-B-Roll + neu aufzunehmende Takes.

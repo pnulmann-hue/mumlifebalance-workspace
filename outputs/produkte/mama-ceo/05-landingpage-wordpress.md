@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — WordPress-Landing-Page
 
 > **Hosting:** mumlifebalance.ch/mama-ceo · **Slug:** `mama-ceo` · **Stand:** 2026-05-09

@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Mi 22.04.2026 · 20:30 · MENTORING · Karussell „5 Sätze"
 
 **Canva-Design:** `DAHHkGW0g1k` (Vorlage Caude, 11 Folien, 1080×1440)

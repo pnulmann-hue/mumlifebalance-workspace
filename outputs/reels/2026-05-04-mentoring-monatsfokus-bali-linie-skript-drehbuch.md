@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # Drehbuch · M6 · „Die Bali-Linie" (R-talk, ~60 Sek)
 
 **Format:** Talking Head, EIN Take wenn möglich, kein B-Roll

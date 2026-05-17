@@ -1,3 +1,7 @@
+---
+tags: [mealplan]
+---
+
 # Einkaufsliste KW 18 — 28. April bis 4. Mai 2026
 
 ## 🟢 Beim Gemüsemann (Di)

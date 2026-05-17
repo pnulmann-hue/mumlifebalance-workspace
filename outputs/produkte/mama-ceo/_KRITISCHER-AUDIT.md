@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Kritischer Audit (Verkaufsstärke + Produkttreppe + Aufbau)
 
 **Datum:** 2026-05-01

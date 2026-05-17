@@ -1,3 +1,7 @@
+---
+tags: [mealplan]
+---
+
 # 🗓 Wochenplan KW 21 — 18.-24. Mai 2026
 
 **Familie 5-6 Personen** · ⛪ **So 24.5. = Pfingstsonntag** (Mo 25.5. Pfingstmontag → KW22)

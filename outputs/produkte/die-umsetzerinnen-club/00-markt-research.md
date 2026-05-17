@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # 🔎 Markt-Signal-Bericht — Inner Circle Continuity-Mastermind
 
 **Datum:** 2026-04-28

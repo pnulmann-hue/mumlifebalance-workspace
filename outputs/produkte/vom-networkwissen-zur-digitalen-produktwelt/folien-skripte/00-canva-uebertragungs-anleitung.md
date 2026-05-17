@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Canva-Übertragungs-Anleitung — Modul 3
 
 **Ziel:** 36 neue Folien (3.3 + 3.4 + 3.5) effizient in deine bestehende Canva-Präsentation einfügen.

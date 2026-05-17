@@ -1,3 +1,7 @@
+---
+tags: [content, story]
+---
+
 # Manus-Prompt — Story-Sequenz „Mama-CEO Webinar"-Anmeldung
 
 **Zweck:** Visuelle Story-Sequenz (light, 7 Slides) für Instagram, die in Patricias Mentoring-Profil zur Anmeldung für ihr „Mama-CEO Webinar" einlädt. Webinar-Inhalt: Patricia erklärt Mamas, wie sie KI im Business-Alltag nutzen.

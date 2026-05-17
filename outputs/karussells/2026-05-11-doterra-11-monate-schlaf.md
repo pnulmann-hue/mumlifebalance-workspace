@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell-Briefing · D3 · „11 Monate später — heute schlaf ich tief"
 
 **Profil:** doTERRA (Mum Life Balance)

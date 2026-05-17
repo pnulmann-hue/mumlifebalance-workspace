@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Launch-Kalender Mai 2026 (FINAL · 2-Phasen-Cart)
 
 **Erstellt:** 2026-05-01 · Aktualisiert: 2026-05-05 (2-Phasen-Cart · 14 Mails)

@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # Reel-Briefing — „Mein PDF baut sich gerade selbst" (V2)
 
 **Datum:** 2026-05-11

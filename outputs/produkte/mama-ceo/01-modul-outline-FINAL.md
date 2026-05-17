@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Modul-Outline FINAL
 
 **Erstellt:** 2026-05-01

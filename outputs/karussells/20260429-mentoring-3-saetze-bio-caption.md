@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Mi 29.04.2026 · 19:30 · MENTORING · Karussell „3 Sätze in deiner Bio"
 
 **Profil:** @mumlifebalance_patricia_ulmann

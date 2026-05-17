@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Post-Mai-Launch TODOs (ab Mo 1.6.2026)
 
 Anlegt: 2026-05-06 (während Mai-Launch-Setup)

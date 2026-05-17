@@ -1,3 +1,7 @@
+---
+tags: [content, story]
+---
+
 # Story-Briefing — 2026-05-15 (Fr) — Tagesplan — Mentoring
 
 ## Kontext

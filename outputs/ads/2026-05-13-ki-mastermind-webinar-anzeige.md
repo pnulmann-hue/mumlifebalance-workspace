@@ -1,3 +1,7 @@
+---
+tags: [ads]
+---
+
 # Webinar-Anzeige · KI-Mastermind 20.5.2026
 
 **Erstellt:** 13.5.2026 (7 Tage vor Webinar)

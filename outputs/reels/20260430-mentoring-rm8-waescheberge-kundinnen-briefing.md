@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # Do 30.04.2026 · 19:30 · MENTORING · Reel RM8 „Wäscheberge + Kundinnen"
 
 **Profil:** @mumlifebalance_patricia_ulmann

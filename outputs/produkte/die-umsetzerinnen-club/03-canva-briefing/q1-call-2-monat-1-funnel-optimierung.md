@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Canva-Briefing — Q1 / Call 2 / Monat 1: „Funnel-Optimierung — wo dein Geld liegen bleibt"
 
 **Format:** 16:9 · Patricia-Brand-Style (s. Onboarding-Folien)

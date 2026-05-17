@@ -10,11 +10,11 @@ Daten-Grundlage für jeden Content-Output. Patricias Mantra: *„Ich will dass m
 - [[competitor-watchlist.json|Konkurrenz-Watchlist]] — definierte Accounts (Apify-Cron täglich)
 - [[discovery-keywords.json|Discovery-Keywords]] — Nischen-Hashtags (monatlicher Cron)
 
-## 📊 Live-Daten (Ordner)
-- `outputs/apify-runs/` — Tägliche Scrapes (gitignored, im Repo bleibt nur jüngster)
-- `outputs/marktrecherche/` — Verarbeitete Berichte
-- `outputs/zielgruppen-research/` — Persona-Analysen
-- `outputs/freitag/markt-analyse-KW20.md` — Aktuelle Wochenanalyse
+## 📊 Live-Daten (Indexe)
+- [[outputs/marktrecherche/_INDEX|🔍 Marktrecherche]]
+- [[outputs/zielgruppen-research/_INDEX|🎯 Zielgruppen-Research]]
+- `outputs/apify-runs/` — Tägliche Scrapes (gitignored)
+- [[outputs/freitag/_INDEX|📅 Freitag-Hooks (mit Markt-Analyse)]]
 
 ## 📋 Templates
 - [[marktrecherche-bericht-template|Marktrecherche-Bericht-Template]]

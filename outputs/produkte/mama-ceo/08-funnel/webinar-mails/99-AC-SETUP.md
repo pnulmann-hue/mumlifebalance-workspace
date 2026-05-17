@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # AC-Setup für Webinar-Mail-Sequenz Mama-CEO (14 Mails · 2-Phasen-Cart)
 
 **Was du brauchst:** AC-Account (hast du), 45-60 Min Zeit, Tasse Kaffee.

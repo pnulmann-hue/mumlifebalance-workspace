@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # 05 — Skalier-Bot · KI-Assistent für „Die Umsetzerinnen"
 
 **Zweck:** Mitglieder bekommen 24/7 einen KI-Sparring-Partner, der Patricias Methodik kennt + die Inhalte der 4 Kurse + Julia-Trost-Methodik. Konkrete Antworten auf Skalierungsfragen — ohne dass Patricia rangeht.

@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Validierung-Light (Story-Umfrage + DM-Abfrage + Pre-Sale)
 
 **Erstellt:** 2026-04-30

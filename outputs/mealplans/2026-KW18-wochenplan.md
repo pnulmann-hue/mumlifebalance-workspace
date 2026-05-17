@@ -1,3 +1,7 @@
+---
+tags: [mealplan]
+---
+
 # Wochenplan KW 18 — 28. April bis 4. Mai 2026
 
 **Haushalt:** Mittag 5 P (Patricia + 4 Kids) · Abend 6 P (+ Mann) · So Wandertag → Picknick

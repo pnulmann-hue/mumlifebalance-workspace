@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell: „Ich brainwashe dich — du hast ein Thema."
 
 **Typ**: Mythos-Brecher / Provokant

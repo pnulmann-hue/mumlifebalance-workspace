@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # KI-Assistenten im Kurs — Dein Differenzierungs-USP
 
 **Datum:** 2026-04-22

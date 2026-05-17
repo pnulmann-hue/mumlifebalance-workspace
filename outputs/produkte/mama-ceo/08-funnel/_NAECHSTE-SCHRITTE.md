@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO Mastermind — Nächste Schritte (Stand 2026-05-01 abend)
 
 **Wo wir stehen:**

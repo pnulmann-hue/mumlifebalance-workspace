@@ -19,6 +19,10 @@ Alles was Patricias Sprache, Tonalität und Brand-Identität ausmacht.
 - [[hook-framework]] — Anti-Mainstream, Schmerz, Provokation, Zahl
 - [[caption-formeln]] — 5 Caption-Strukturen + CTA-Varianten
 
+## 📦 Outputs
+- [[outputs/bio-update-2026-05-13/_INDEX|👤 Bio-Update Mai 2026]]
+- [[outputs/sonstige/_INDEX|📦 Sonstige Brand-Outputs]]
+
 ## 🎯 Verwandte Bereiche
 - [[MOC-Content-Engine]] — Wie die Voice in Reels/Karussells/Stories landet
 - [[MOC-doTERRA]] — Compliance-Regeln für doTERRA-Voice

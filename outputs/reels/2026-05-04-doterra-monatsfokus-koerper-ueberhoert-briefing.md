@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # Reel-Briefing · D3 · „Funktionsmodus — Körper überhört" (R-talk)
 
 **Profil:** doTERRA (Mum Life Balance)

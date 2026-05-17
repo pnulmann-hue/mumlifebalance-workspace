@@ -1,3 +1,7 @@
+---
+tags: [funnel]
+---
+
 # ManyChat BIO — Klick für Klick
 
 ---

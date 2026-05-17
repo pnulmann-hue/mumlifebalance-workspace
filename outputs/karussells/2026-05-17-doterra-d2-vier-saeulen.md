@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # 2026-05-17 · doTERRA · D2 — Die 4 Säulen: Anti-Schnellschuss
 
 **Profil:** doTERRA-Profil (Patricia Ulmann)

@@ -1,0 +1,17 @@
+---
+tags: [moc, content, montag-build]
+---
+
+# 🚀 Montag-Builds — Index
+
+Auto-Index aller Files in `outputs/montag/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
+
+## Dateien
+
+- [[2026-05-04-pick-V2]]
+- [[2026-05-11-build]]
+- [[2026-05-11-pick]]
+- [[2026-05-11-wochenplan]]
+- [[KW19-POST-PLAN]]
+- [[KW20-STATUS]]
+- [[SESSION-2026-05-15-STATUS]]

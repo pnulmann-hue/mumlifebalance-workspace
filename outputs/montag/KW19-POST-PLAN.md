@@ -1,3 +1,7 @@
+---
+tags: [content, montag-build]
+---
+
 # KW 19 Post-Plan · Karussells via Blotato + Reels manuell
 
 **Stand:** 2026-05-06

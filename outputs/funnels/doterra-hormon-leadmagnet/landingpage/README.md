@@ -1,3 +1,7 @@
+---
+tags: [funnel]
+---
+
 # Hormon-Typ Quiz Landingpage
 
 **Status:** Code-fertig, ready für Netlify-Deploy

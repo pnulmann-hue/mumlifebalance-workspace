@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO — Handoff für nächste Session
 
 **Stand: 2026-04-30 abends · Patricia geht schlafen**

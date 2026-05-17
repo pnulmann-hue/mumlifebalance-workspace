@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO Re-Evaluation — Empfehlung an Patricia
 
 **Datum:** 2026-05-01

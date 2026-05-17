@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # 06 — Bundle „MOMPRENEUR ALL-IN" · Funnel-Logik
 
 **Ziel:** Bundle-Sales-Page-Bausteine + Offer-Bumps + Upsell-Logik. Wird später ggf. via `/salespage` zu vollständigen 13 ThriveCart-Blöcken ausgeschrieben.

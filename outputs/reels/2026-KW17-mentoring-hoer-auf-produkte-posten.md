@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # Reel: „Hör auf Produkte zu posten."
 
 **Typ**: Hot Take / Talking Head mit Pattern-Interrupt

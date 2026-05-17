@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell-Briefing · M4 · „3 Stunden Fokuszeit"
 
 **Profil:** Mentoring (Mum Life Balance)

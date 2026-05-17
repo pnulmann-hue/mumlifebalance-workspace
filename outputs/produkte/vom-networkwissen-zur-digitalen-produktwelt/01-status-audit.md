@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # „Vom Networkwissen zur digitalen Produktwelt" — Status-Audit
 
 **Datum:** 2026-04-22

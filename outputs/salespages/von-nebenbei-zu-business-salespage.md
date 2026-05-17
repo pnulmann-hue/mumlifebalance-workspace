@@ -1,3 +1,7 @@
+---
+tags: [produkt, salespage]
+---
+
 # Sales-Page: Von Nebenbei zu Business
 ## 1:1 Mentoring für Mamas im Network Marketing
 ### Erstellt am: 09.04.2026

@@ -1,3 +1,7 @@
+---
+tags: [content, karussell]
+---
+
 # Karussell-Briefing · M9 · „Die innere Liste um 3 Uhr"
 
 **Profil:** Mentoring (Mum Life Balance)

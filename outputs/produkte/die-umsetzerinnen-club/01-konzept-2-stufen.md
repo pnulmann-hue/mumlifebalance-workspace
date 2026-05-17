@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # 01 — Konzept-Visualisierung (2 Stufen)
 
 **Für:** Patricia · zur Verwendung in Sales-Page-Briefings, internen Übersichten, Pitch-Calls.

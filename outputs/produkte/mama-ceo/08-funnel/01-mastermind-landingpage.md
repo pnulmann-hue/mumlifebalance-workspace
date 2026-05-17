@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Mama-CEO KI-Webinar — Landingpage-Briefing
 
 **Datum:** 2026-05-01

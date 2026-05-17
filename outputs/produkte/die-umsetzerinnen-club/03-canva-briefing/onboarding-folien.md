@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Canva-Briefing — Onboarding-Lektionen 0.1 / 0.2 / 0.3
 
 **Format:** 16:9 · weisser Hintergrund · schwarze Schrift · max. 3-4 Stichpunkte/Folie · Patricia-Brand-Akzentfarbe Petrol `#12828c` für Highlights · Cremeflächen `#f1ecdd` für Block-Boxen · Schrift Philosopher (Headlines) + Source Sans 3 (Body)

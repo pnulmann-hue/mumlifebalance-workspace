@@ -1,3 +1,7 @@
+---
+tags: [content, reels]
+---
+
 # Reel: „So baust du deinen 1. Lead-Magnet in 3 Schritten."
 
 **Typ**: Anleitung / Tutorial (3-Schritte-Reel)
