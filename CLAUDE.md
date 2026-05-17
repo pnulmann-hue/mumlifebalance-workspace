@@ -636,3 +636,18 @@ Live-Beispiele in diesem Repo:
 - Pläne in `plans/` mit datierten Dateinamen für die Historie
 - Outputs nach Typ/Zweck in `outputs/` organisiert
 - Referenzmaterialien in `reference/` zur Wiederverwendung
+
+---
+
+## Visual-QA-Pflicht für Bild-Outputs
+
+**Bevor gerenderte Bilder/Slides/Designs an Patricia gehen, IMMER selbst durchchecken** — egal ob Story-Slide, Karussell-Folie, Reel-Cover oder Sales-Page-Banner:
+
+1. **Gesicht-Check:** Wenn Patricia im Bild ist — ist ihr Gesicht komplett unverdeckt? Berührt eine Text-Box ihren Kopf?
+2. **Hauptmotiv-Check:** Wird das Schlüsselelement des Fotos (Säntis-Gipfel, Wasserfall, Blume, Logo) von Text/Box verdeckt?
+3. **Story-Arc-Check (bei Slide-Sequenzen):** Ergibt die Abfolge einen Bogen (Hook → Reibung → Wendung → Punkt → CTA), oder ist's nur eine Slideshow von Statements?
+4. **Brand-Check:** Stimmen Farben (Petrol/Creme/Dunkelblau/Orange), Schriften (Philosopher + Source Sans 3), Tonalität?
+
+Bei Fund: erst nachjustieren, dann ausliefern. **Nie Entwürfe rausgeben, die offensichtliche Probleme haben.** Patricia muss nicht das Visual-QA für Claude machen.
+
+(Hintergrund: 2026-04-26 wurden Wander-Stories rausgegeben mit verdecktem Gesicht und verdecktem Säntis-Gipfel — und ohne Story-Arc. Korrektur kostete Zeit. Lehre: Selbst-Prüfung ist Pflicht-Schritt vor Output.)

@@ -191,6 +191,9 @@ Screenshot*.jpg
 !outputs/produkte/**/story-visuals/**/*.png
 !outputs/produkte/**/story-visuals/**/*.jpg
 
+# Ausnahme: gerenderte Story-Slides (zum Mobile-Download)
+!outputs/stories/renders/*.png
+
 # ============================================================
 # REFERENZ-PDFs BLEIBEN LOKAL
 # Grosse Fremd-Kurs-PDFs + EPUBs raus (zu gross fuer Git)
