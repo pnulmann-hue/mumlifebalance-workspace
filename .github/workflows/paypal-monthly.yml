@@ -1,0 +1,80 @@
+name: PayPal Monthly Cashflow
+
+# Am 1. jeden Monats um 06:00 Schweiz (= 04:00 UTC Sommer / 05:00 UTC Winter)
+# Holt Vormonats-Transaktionen ueber die PayPal Reporting API.
+on:
+  schedule:
+    - cron: '0 4 1 * *'
+  workflow_dispatch:
+    inputs:
+      month:
+        description: 'Optional: yyyy-mm fuer Ad-hoc-Lauf (Default: Vormonat)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paypal-monthly
+  cancel-in-progress: false
+
+jobs:
+  fetch-and-summarize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps
+        working-directory: scripts/finanzen
+        run: npm install --no-audit --no-fund
+
+      - name: Fetch PayPal transactions
+        working-directory: scripts/finanzen
+        env:
+          PAYPAL_CLIENT_ID: ${{ secrets.PAYPAL_CLIENT_ID }}
+          PAYPAL_CLIENT_SECRET: ${{ secrets.PAYPAL_CLIENT_SECRET }}
+        run: node fetch-paypal-api.js ${{ inputs.month }}
+
+      - name: Determine target month
+        id: month
+        run: |
+          if [ -n "${{ inputs.month }}" ]; then
+            echo "MONTH=${{ inputs.month }}" >> $GITHUB_OUTPUT
+          else
+            echo "MONTH=$(date -u -d 'last month' +%Y-%m)" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Parse PayPal CSV
+        working-directory: scripts/finanzen
+        run: node parse-paypal.js ${{ steps.month.outputs.MONTH }}
+
+      - name: Run summary (PayPal only — Bank ist manuell)
+        working-directory: scripts/finanzen
+        run: node summary.js ${{ steps.month.outputs.MONTH }} || echo "Bank-Daten fehlen — nur PayPal-Summary erzeugt"
+
+      - name: Upload Raw-CSV als Artifact (sensibel — nicht committen)
+        uses: actions/upload-artifact@v4
+        with:
+          name: paypal-raw-${{ steps.month.outputs.MONTH }}
+          path: context/finanzen/${{ steps.month.outputs.MONTH }}/paypal-transaktionen.csv
+          retention-days: 90
+
+      - name: Commit nur outputs (anonymisierte Summary, keine Raw-Daten)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outputs/finanzen/
+          if git diff --staged --quiet; then
+            echo "Keine neuen Daten."
+          else
+            git commit -m "finanzen: paypal cashflow ${{ steps.month.outputs.MONTH }}"
+            git push
+          fi

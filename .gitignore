@@ -12,6 +12,17 @@
 # Falls doch mal ein Secret-File reinrutscht, hier explizit ergänzen
 
 # ============================================================
+# Finanzen — sensible Daten (PayPal-Exports, Bank-Auszüge)
+# Niemals committen! README-Files sind erlaubt.
+# ============================================================
+context/finanzen/**
+!context/finanzen/README.md
+!context/finanzen/.gitkeep
+outputs/finanzen/**/*.csv
+outputs/finanzen/**/*.pdf
+outputs/finanzen/**/*-raw.json
+
+# ============================================================
 # Claude Code Local Settings (User-spezifisch)
 # ============================================================
 .claude/settings.local.json

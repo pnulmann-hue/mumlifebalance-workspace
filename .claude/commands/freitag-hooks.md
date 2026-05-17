@@ -313,10 +313,30 @@ Stakkato darf NUR bei expliziten Symptom-Listen vorkommen (z.B. „Spülmaschine
 
 **Themen-Variation-Pflicht:** mind. 2 verschiedene Pillars/Themen pro Profil. Niemals 10 Hooks zum gleichen Thema.
 
+**Olga-Hook-Pattern-Pflicht-Mix pro Profil (PFLICHT seit 2026-05-09):**
+
+Ergänzt die Hook-Kategorien als **Stil-Achse**, damit nicht alle 10 Hooks gleich klingen. Über die 10 Hooks pro Profil sollen **mind. 4 verschiedene Pattern** vorkommen:
+
+| Pattern | Stil-Beispiel | Stark für Job-Säule |
+|---|---|---|
+| **1. Bekenntnis** | „Ich war 4 Jahre im Hobby-Modus. Bis ich gemerkt habe…" | B-Story |
+| **2. Contrarian** | „Sorry an alle, die immer noch Storyposts mit Produktbild machen." | C-Reichweite |
+| **3. Curiosity-Gap** | „Die Sache ist die: Premium-Pricing ist kein Excel-Problem." | A-Autorität |
+| **4. Konkrete Zahl** | „Wie ich von 0 auf 4 zahlende Kundinnen in 30 Tagen kam — ohne Cold-DM." | A oder D |
+| **5. Anti-Hook** | „Ich mache KEIN Reichweiten-Game. Und trotzdem wachse ich." | C-Reichweite |
+| **6. Vorher/Nachher** | „Stundenlohn 80 CHF → Recurring 297 × 30 Frauen. Was sich ändert ist nicht das Geld." | B oder D |
+
+→ **Im Output-Tabellen-Format:** Spalte „Pattern" (1-6) zusätzlich zu „Job" und „Kategorie".
+
+→ **Selbst-Check vor Send:** Wenn ein Pattern öfter als 3× pro Profil vorkommt → variieren. Wenn weniger als 4 verschiedene Pattern → mind. 1 Hook pro fehlendem Pattern nachbauen.
+
+→ **Pattern-Job-Affinität nutzen, nicht erzwingen:** Bekenntnis ≠ nur B. Curiosity-Gap ≠ nur A. Die Tabelle ist Empfehlung, nicht Korsett. Wichtig: Mix.
+
 ### Hook-Vielfalt prüfen
 
 Bevor du sendest:
 - **PIE-Mix:** mind. 3-3-3-1 wie oben
+- **Olga-Pattern-Mix:** mind. 4 verschiedene Pattern (Bekenntnis / Contrarian / Curiosity / Zahl / Anti / Vorher-Nachher) pro Profil — kein Pattern öfter als 3×
 - Sind die 5 Standard-Kategorien + die 4 Julia-Erweiterungen abgedeckt?
 - Wiederholt sich das Satzmuster (z.B. 5× „Du brauchst keine X")? → variieren
 - Gibt's mindestens 1 Provokation, 1 Identifikation, 1 Zahl/Fakt pro Profil?
