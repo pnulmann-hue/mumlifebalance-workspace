@@ -1,4 +1,51 @@
-# /freitag-hooks — 20 Hooks der Woche generieren + Telegram-Push
+# /freitag-hooks — Marktanalyse + 20 Hooks + Auto-Pick + Build + Schedule (Fr 08:00 vollautomatisch)
+
+> **🚀 SEIT 2026-05-15: VOLL-AUTO-MODUS aktiv.**
+>
+> Skill macht alles in einem Rutsch am Fr 08:00:
+> 1. **Marktanalyse** (Pain/Wunsch/Ziel/Herausforderung pro Profil)
+> 2. **Wochenfokus** aus Notion lesen
+> 3. **20 Hooks** generieren (10/Profil) — mit Stakkato-Pflicht-Check
+> 4. **Default-Pick** algorithmisch (5+5, deterministisch — Phase 7)
+> 5. **Build:** 4 Karussell-Briefings + Renders + Schedule via Blotato (Phase 8)
+> 6. **Reel-Drehbuch-Master** für die R-Picks
+> 7. **Telegram-Push:** „Wochenpaket fertig — du hast Wochenende um zu korrigieren"
+>
+> **Patricia-Override am Wochenende** via Chat: „KW abbrechen + neu picken" · „M3 raus, M7 rein" · „Caption ändern" · „Reschedule".
+>
+> ---
+
+> **🚨 ABSOLUTE PFLICHT — Read-First (Schritt 0, vor allem anderen):**
+>
+> **Lies ZUERST komplett:** `context/patricia-vollprofil.md` — Patricias Stimme, Werte, Wurzel-Geschichte, 60+ Hooks, Brand-Voice-Verbote, Mentee-Profil, Repel-Markt, INTERN-Schutz. **Single Source of Truth.** Ohne diese Lese: NICHT generieren.
+>
+> ## 🛑 HARTE REGELN für jeden der 20 Hooks (Verstoß = Hook löschen + neuer)
+>
+> **Regel 1 — Keine erfundenen Zahlen.** JEDE Zahl in einem Hook (Preis, Follower, Plätze, Jahre, Monate, %, CHF, Anzahl Kinder usw.) MUSS aus `context/patricia-vollprofil.md` ODER `context/patricia-freebies.md` ODER `context/patricia-expertise.md` ODER `context/active-funnels.json` stammen. Wenn du nicht 100% verifizieren kannst, woher die Zahl kommt → Hook ohne Zahl bauen ODER mit „bei mir war's so..." abstrakt. NIE Zahlen ausdenken („3 Plätze", „230 Follower", „4 Jahre", „39 CHF" usw. sind verboten ohne Quelle).
+>
+> **Regel 2 — Mindestens 6 von 20 Hooks ZITIEREN spezifische Patricia-Anker** aus dem Vollprofil. Liste der Goldenen Anker (Pool):
+> - Convention-Haarbürste-Szene Mai 2025 (Section 12.1)
+> - Trainingshose-Schere-Story Jüngster (Section 12.12 J1)
+> - „100% Selbstverantwortung"-Mantra (Section 12.3)
+> - Schwester-Tod 2019 mit 44 (Section 12.11.6)
+> - „Mein Sohn will auch selbstständig werden" (Section 12.12 J8)
+> - Heimliche Selbstständigkeit / 3'500 CHF Coaching (Section 10 INTERN — Public-Abstraktion!)
+> - Theta-Healing / Aura-Chirurgie (Section 12.10)
+> - Déesse-2018-2021-Aufgabe (Section 3, 12.4)
+> - Mama-Alkohol-Wurzel als Selbstverantwortungs-Quelle (Section 12.11.4 — sensibel)
+> - „Oh shit, wie viel hab ich noch auf dem Konto" (Section 12.6)
+> - „Auswärts essen können wann ich will" (Geld-Symbol, Section 2)
+> - 2 Standbeine / Hybrid-Modell als Sicherheit (Section 12.8 Schicht 2b)
+> - Werktag 5:15 + Krafttraining + 18h/Woche (Section 2/4)
+> - „Mein Erfolg ist nicht Bali. Mein Erfolg ist eine Alp." (Section 3)
+>
+> Aus diesem Pool MINDESTENS 6 Anker konkret einsetzen. Wenn nur generische „du-sitzt-im-Auto-vor-der-Kita"-Pain-Frames raus → ⚠️ STOPP, zurück zur Vollprofil-Lese.
+>
+> **Regel 3 — Family-Reality-Check.** Patricias Kinder sind 8/9/11/12-13 Jahre — **alle in der Schule**. NIE „Kita"-Frames, NIE „Stillen"-Frames, NIE „Wickeln"-Frames. Patricia ist nicht Kleinkind-Mama. Wenn Mama-Frame, dann: Schulalter-Mama (Hausaufgaben, Schwimmkurs, Fußball-Match, Mittagstisch, Pubertät bei ältesten).
+>
+> **Regel 4 — Pre-Push-Audit.** Vor dem Telegram-Push: liste alle Zahlen + alle Mini-Storys aus den 20 Hooks auf. Pro Item: Quelle (Section X.Y) oder „abstrakt". Wenn auch nur 1 Zahl/Story unverifizierbar → Hook neu bauen. Dieser Audit landet als Block unten in `outputs/freitag/YYYY-MM-DD-hooks.md`.
+
+---
 
 Du bist der **Freitag-Morgen-Hook-Generator** für Patricias 2 Profile. Du läufst entweder:
 - **Autonom Fr 08:00 via Cron** (Hauptmodus)
@@ -216,15 +263,33 @@ Julia's Cover-Regel (aus „IG Reichweiten Booster"): **„Spezifisch, provozier
 
 ### Pro Hook MUSS gelten
 
+- 🚨 **KEINE STAKKATO-SÄTZE** (siehe `feedback_KRITISCH-keine-stakkato-saetze.md`) — Patricia hat das MEHRFACH angemahnt. NIE drei abgehackte Subject-Verb-Punkt-Sätze hintereinander („Ich checke die DM. Mein Kind ruft. Ich atme." ❌). Verbinde mit Konjunktionen („und da", „weil", „aber", „bis"). DU-Anrede für Pain-Hooks (nicht „Ich"). Wie am Küchentisch mit einer Freundin. Schweizer ss durchgängig. **DIESE REGEL ÜBERSTEUERT HORMOZI-PATTERN.** Hormozi ist Struktur-Layer (Pain-in-Moment etc.), nicht Sprach-Form.
 - ✅ **1-Sekunden-Test bestanden:** Fremder Scroller versteht Hook beim ersten Sehen ohne Kontext (siehe `feedback_hooks-1-sekunde-verstaendlich.md`)
 - ✅ **Keine Insider-Metaphern** aus Patricia's Lehrwelt (Schaufenster, Bibliothek, Fisch-in-der-Nische, Stadt-Land) im Hook selbst — die gehören in Caption/Folien wo sie Kontext bekommen
-- ✅ Max 80 Zeichen (Cover-tauglich)
+- ✅ Max 80 Zeichen (Cover-tauglich) — gilt für CARUSSEL-Covers. Reel-Hooks dürfen länger fliessen.
 - ✅ Aus einer der Hook-Kategorien (5 Standard + 4 Julia-Erweiterungen — siehe `context/hook-framework.md`)
 - ✅ Direkt aus Patricias echter Realität ODER aus Phase-3-Markt-Analyse-Befund
 - ✅ Patricia-Voice (deutsch, Schweizer ss, echte Umlaute, intim, ehrlich)
 - ✅ KEINE Blackliste-Verletzungen
 - ✅ KEINE erfundenen Zahlen
 - ✅ Direkt-Bezug zum Wochenfokus aus Phase 2 — mindestens 3-4 Hooks pro Profil zahlen direkt ein
+
+### 🚨 Pflicht-Selbsttest pro Hook BEVOR du ihn in die Tabelle schreibst
+
+Lies den Hook laut in deinem Kopf. Wenn er sich anfühlt wie eine BILD-Schlagzeile oder ein Hormozi-Tweet (3 kurze Punkt-Sätze hintereinander), schreib ihn um. Patricia würde mit einer Freundin nie so sprechen:
+
+```
+❌ FALSCH: „Ich checke die DM zum 4. Mal. Mein Kind ruft. Ich atme."
+✅ RICHTIG: „Du sitzt zum vierten Mal an deinem Reel und da ruft dich schon wieder dein Kind..."
+
+❌ FALSCH: „Du postest seit 6 Monaten. Niemand schreibt dir. Dein Profil ist ein Produktkatalog."
+✅ RICHTIG: „Du postest seit sechs Monaten, aber keine schreibt dir zurück — vielleicht liegt's daran dass dein Profil aussieht wie ein Produktkatalog."
+
+❌ FALSCH: „8 Stunden Schlaf. Trotzdem erschöpft. Mein Körper sprach. Ich hörte nicht zu."
+✅ RICHTIG: „Acht Stunden geschlafen und du wachst trotzdem erschöpft auf — und denkst dir, das kann doch nicht sein, ich mach doch alles richtig."
+```
+
+Stakkato darf NUR bei expliziten Symptom-Listen vorkommen (z.B. „Spülmaschine. Schulanmeldung. Steuern.") — nicht bei normalen Hook-Statements.
 
 ### Hook-Mix pro Profil (Empfehlung)
 
@@ -311,16 +376,18 @@ Wenn nein → eines davon einbauen:
 
 ---
 
-## Pick-Anleitung
+## Auto-Pick + Auto-Build (seit 2026-05-15)
 
-Antworte im Chat oder via Telegram-Reply mit:
+Patricia hat entschieden: Fr-Skill macht alles in einem Rutsch — Marktanalyse + Hooks + Default-Pick + Build + Schedule.
 
-`Mentoring: M1K, M3K, M5R, M7K, M9R | doTERRA: D2K, D4R, D6K, D8K, D10R`
+**Default-Pick automatisch:** [Liste der 5+5 mit Begründung — siehe Phase 7 unten]
 
-K = Karussell, R = Reel-Cover. Wähle 5 pro Profil.
+⏰ **Build + Schedule läuft direkt nach Telegram-Push (Phase 8) — Posts sind ab Sa für die ganze Woche eingeplant.**
 
-⏰ Mo 12:00 läuft `/montag` automatisch + baut alle Designs in Canva und schedulet via Blotato für Di-Sa.
-Du hast Zeit zum Picken: jetzt (Fr) bis Mo 11:00.
+**Override-Option:** Wenn du was ändern willst, antworte im Chat:
+- `"KW [N+1] abbrechen + neu picken"` → ich canceln Blotato-Posts und lass dich frisch picken
+- `"M3 raus, M7 rein"` → ich tausche den einzelnen Post + reschedule
+- `"Caption M3 ändern: [Text]"` → ich tausche Caption manuell in Blotato
 ```
 
 ### 6b) Telegram-Push
@@ -375,6 +442,130 @@ node scripts/content-bot/telegram-send.js --text="$(cat /tmp/freitag-telegram.tx
 ```
 
 (Text vorher in `/tmp/freitag-telegram.txt` schreiben.)
+
+---
+
+## Phase 7 · Default-Pick algorithmisch (5+5 pro Profil)
+
+**Pflicht seit 2026-05-15.** Skill wählt 5 Hooks pro Profil deterministisch — kein Patricia-Input nötig.
+
+### Algorithmus pro Profil
+
+**Pflicht-Mix für die 5 Picks (3 K + 2 R):**
+
+1. **3× Karussell [K]:**
+   - Slot K1: Hook mit DIREKTER Wochenfokus-Verbindung (aus Phase 2) — wenn aktiver Launch in `active-funnels.json` → muss CTA-Pitch enthalten
+   - Slot K2: Hook mit Authority-Stack-Pattern (Hormozi) ODER Listicle — Mehrwert-spürbar
+   - Slot K3: Hook mit Pain-in-Moment ODER Reframe — Anker für Story-Bogen
+
+2. **2× Reel [R]:**
+   - Slot R1: 1 Talking-Head ([R-talk]) — Persönlichkeits-/Vulnerability-Hook
+   - Slot R2: 1 B-Roll ([R-broll]) — Bevor-Nachher ODER Behind-the-Scenes
+
+**PIE-Pflicht im 5er-Pick:** mind. 1 P + 1 I + 1 E + 2 weitere (Wild-OK)
+
+**Sales-Day-Boost (wenn Launch live):** ersetze 1 Standard-Pick mit Pitch-Hook (z.B. WEBINAR-CTA).
+
+### Selektions-Regel
+
+Wenn mehrere Hooks denselben Slot füllen würden:
+1. Hook mit konkreterer Specificity (Zahl/Uhrzeit) gewinnt
+2. Bei Gleichstand: Hook mit stärkerem Markt-Bezug (Originalzitat aus Marktanalyse) gewinnt
+3. Bei Gleichstand: Hook der am wenigsten dem KW-davor-Pattern ähnelt (Anti-Doppelung)
+
+### Output Phase 7
+
+Speichern: `outputs/montag/YYYY-MM-DD-pick-auto.md`
+
+```markdown
+# Auto-Pick KW [N+1] · [YYYY-MM-DD]
+
+**Quelle Hooks:** `outputs/freitag/YYYY-MM-DD-hooks.md`
+**Algorithmus:** Default-Pick aus /freitag-hooks Phase 7
+**Patricia-Override:** Sa-Mo Vormittag möglich (Chat-Command "KW abbrechen")
+
+## 🔵 Mentoring
+
+| Pick | # | Format | Hook | Begründung |
+|---|---|---|---|---|
+| K1 | M? | K | [Hook] | Wochenfokus-direkt |
+| K2 | M? | K | [Hook] | Authority Stack |
+| K3 | M? | K | [Hook] | Pain-in-Moment |
+| R1 | M? | R-talk | [Hook] | Persönlichkeit |
+| R2 | M? | R-broll | [Hook] | Bevor-Nachher |
+
+## 🟠 doTERRA
+
+[analog]
+```
+
+---
+
+## Phase 8 · Auto-Build + Schedule (Fr 09:00, ohne Patricia)
+
+**Pflicht seit 2026-05-15.** Skill führt nach Phase 7 direkt den `/montag`-Workflow aus — KEINEN Mo-Wait mehr.
+
+### Schritt-für-Schritt
+
+1. **Briefings erstellen** für jeden K-Pick (Cover-Hook + 9 Inhalts-Slides + Caption + Hashtags):
+   - Stakkato-Pflicht-Check aktiv (Patricia-Voice, keine 3 abgehackten Sätze)
+   - Doppelung-Check gegen letzte 4 Wochen
+   - doTERRA-Compliance-Check
+   - Speichern in `outputs/karussells/YYYY-MM-DD-[slug].md`
+
+2. **Renderer-Update:** `KARUSSELL_LAYOUTS` in `scripts/karussell-render/render-v2.js` erweitern mit den neuen Slugs + `briefingDate` Property
+
+3. **PNGs rendern** via Puppeteer:
+   ```bash
+   cd scripts/karussell-render && node render-v2.js --karussells
+   ```
+   → Output: `outputs/karussells/render-YYYY-MM-DD/[slug]/slide-01.png` bis `slide-10.png`
+
+4. **Blotato-Configs erstellen** pro Karussell:
+   - `scripts/blotato-post/post-configs/YYYY-MM-DD-[wochentag]-[profil]-[slug].json`
+   - `accountId`: Mentoring `41414` / doTERRA `41413`
+   - `scheduledTime`: ISO-8601 mit +02:00 (Schweiz), 19:30 Uhr
+   - Caption-Body mit Speicher-Hint + ManyChat-CTA + Hashtags
+
+5. **Schedule via WordPress + Blotato:**
+   ```bash
+   cd scripts/blotato-post && node --env-file=../wordpress/.env upload-and-schedule.js \
+     --slides-dir="../../outputs/karussells/render-YYYY-MM-DD/[slug]" \
+     --config="post-configs/YYYY-MM-DD-[wochentag]-[profil]-[slug].json"
+   ```
+   → PNGs zu WordPress Media-Library hochladen → Blotato fetcht von dort → Blotato schedulet
+
+6. **Reel-Drehbuch-Master** für die 2 R-Picks pro Profil:
+   - `outputs/reels/KW[N+1]-DREHTAG-MASTER.md`
+   - Pro Reel: Sek-genauer Text + Caption + Setting-Tipps + ManyChat-Keyword
+
+7. **Telegram-Push: „Wochenpaket fertig"** mit:
+   - Liste aller gescheduled Posts (Datum/Slot/Hook)
+   - Reel-Drehbuch-Links
+   - ManyChat-Keywords-Check ("Sind alle Auto-DMs in ManyChat eingerichtet?")
+   - Override-Optionen (Chat-Befehle)
+
+### Wochentags-Verteilung (Default)
+
+- **Mo 19:30** — Karussell 1 Mentoring (K1, Wochenfokus-direkt)
+- **Di** — Reel-Day Mentoring (R1, R2 — du drehst manuell)
+- **Mi 19:30** — Karussell 1 doTERRA (K1, Wochenfokus-direkt)
+- **Do** — Reel-Day doTERRA (R1, R2 — du drehst manuell)
+- **Fr 19:30** — Karussell 2 Mentoring + Karussell 2 doTERRA
+- **Sa 19:30** — Karussell 3 Mentoring + Karussell 3 doTERRA
+
+(Anpassen wenn Launch-Phase: mehr Mentoring-Posts an Webinar-Tagen)
+
+### Cancel-Logik (Patricia-Override)
+
+Patricia kann am Wochenende im Chat ändern:
+
+| Befehl | Was passiert |
+|---|---|
+| `"KW [N+1] abbrechen + neu picken"` | Skill listet alle Blotato-Submission-IDs der Woche → Patricia bestätigt → Cancel-Anfrage an Blotato API + Rebuild mit neuem Pick |
+| `"M3 raus, M7 rein"` | Skill canceln 1 Blotato-Post, baut M7-Karussell, scheduled neu |
+| `"Caption M3 ändern: [Text]"` | Skill öffnet Blotato-Config + updated lokal, Patricia tauscht manuell in Blotato-UI ODER Skill ruft Blotato Update-API falls vorhanden |
+| `"Reschedule M3 auf Di"` | Skill ändert scheduledTime in Config, ruft Blotato API für Update |
 
 ---
 

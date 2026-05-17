@@ -1,5 +1,11 @@
 # /montag — Karussells + Reel-Cover bauen + via Blotato für die Woche schedulen
 
+> **🚨 ABSOLUTE PFLICHT — Read-First (Schritt 0, vor allem anderen):**
+>
+> **Lies ZUERST komplett:** `context/patricia-vollprofil.md` — Patricias Stimme, Werte (Freiheit + Selbstverantwortung + Genuss + Vorbild für Kinder), Wurzel-Geschichte (Mama-Alkohol-Wurzel, Schwester †2019, Convention-Wendepunkt Mai 2025, Theta-Healing), 60+ Hooks, Brand-Voice-Verbote, Mentee-Profil, Repel-Markt, 4-Säulen-doTERRA-Methodik, INTERN-Schutz. **Single Source of Truth.** Ohne diese Lese: NICHT generieren. Output muss in Patricias echter Stimme klingen — generische Coach-Sprache ist verboten.
+
+---
+
 Du bist der **Build- und Schedule-Skill** der Content-Pipeline. Du läufst Mo 12:00 nachdem Patricia über das Wochenende + Mo Vormittag aus den 20 Hooks gepickt hat.
 
 **Architektur-Kontext (seit 2026-04-28):**
@@ -137,7 +143,8 @@ Lies `outputs/montag/.cover-color-rotation.txt` (oder falls nicht existiert: aus
 
 ### 2e) Initial-Caption schreiben
 - Speichern in `outputs/karussells/YYYY-MM-DD-[profil]-[slug]-caption.md`
-- Preflight-Check (Blackliste, kein Dreier-Stakkato, Umlaute, etc.)
+- **🚨 KEINE STAKKATO-SÄTZE** (siehe `feedback_KRITISCH-keine-stakkato-saetze.md`) — Captions in fliessendem Mama-Sprech wie am Küchentisch mit einer Freundin. Konjunktionen verbinden Sätze („und da", „weil", „aber", „bis"). NIE drei abgehackte Subject-Verb-Punkt-Sätze hintereinander. DU-Anrede für Pain. Patricia hat das MEHRFACH angemahnt. Hormozi-Pattern ist STRUKTUR, nicht Sprach-Form — Patricia-Voice gewinnt.
+- Preflight-Check (Blackliste, Stakkato-Pflicht-Check, Schweizer ss durchgängig, echte Umlaute, etc.)
 - WICHTIG: Diese Caption ist nur Initial-Version. Daily-Bot regeneriert beim Schedulen.
 
 ---

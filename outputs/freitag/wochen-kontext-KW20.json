@@ -1,0 +1,51 @@
+{
+  "kw": 20,
+  "zeitraum": "11.05-17.05.2026",
+  "erstellt_am": "2026-05-09",
+  "erstellt_von": "/freitag-hooks (KW20 nachgeholt — Fr 8.5. Slot übersprungen)",
+  "notion_status": "MCP nicht autorisiert — Default-Wochenfokus aus active-funnels.json + KW19-Markt-Analyse abgeleitet",
+
+  "wochenfokus": {
+    "hauptthema": "Mama-CEO-Webinar Aufwärmphase 2 + doTERRA Daily-Anwendung",
+    "mentoring_saeule": "KI-Mitarbeiter konkret zeigen + Setup-Walkthrough · Webinar-Lead-Magnet (Keyword WEBINAR) prioritär pushen",
+    "doterra_saeule": "Vormenopause-Pivot von Wendepunkt-Story zu Daily-Anwendung — was tust du HEUTE jeden Tag",
+    "aktiver_funnel_mentoring": "WEBINAR (Mai-Webinar 'In 90 Min dein Mama-Leben mit KI-Assistenten umkrempeln') + Bio-Check (BIO) als Backup",
+    "aktiver_funnel_doterra": "ENERGIE-Padlet (Wendepunkt-Story als Anker)",
+    "verkaufs_trigger": "Webinar-Pitch direkter (Aufwärmphase 2 vs. KW19 Aufwärmphase 1) — Karussell M3 + M8 + Reels M7 verkaufen Webinar offensiv"
+  },
+
+  "kw19_referenz": {
+    "themen_die_durch_sind": [
+      "M9 3-Uhr-Liste (Mental Load)",
+      "M7 3-Jahre-nebenbei (getrennt-Reframe)",
+      "M4 3-Stunden-Fokuszeit (Webinar-CTA Slide 10)",
+      "M6 Bali-Linie (Reel)",
+      "M10 KI-Mitarbeiter weckt mich (Reel)",
+      "D2 Hausarzt-Wendepunkt",
+      "D9 Echte Zeitlinie",
+      "D8 Vor-Wecker-auf",
+      "D1 3-Uhr-Symptome (Reel)",
+      "D3 Körper überhört (Reel)"
+    ],
+    "doppelung_vermeiden": "Keine erneuten Hausarzt-/Wendepunkt-Hooks — KW20 zeigt was JETZT täglich passiert. Mentoring nicht erneut 'Bali-Linie' oder reine 3-Uhr-Liste — KW20 zeigt KI-Mitarbeiter konkret."
+  },
+
+  "verifizierte_zahlen_pflicht_layer": [
+    "4 Kinder",
+    "18h Woche",
+    "5:15 Krafttraining",
+    "8:00-11:30 Fokuszeit",
+    "3 Stunden Fokuszeit pro Tag",
+    "vierstellig pro Monat",
+    "kein Monat ohne Verkauf",
+    "7 Mentees aktiv",
+    "Wendepunkt mit 36 (Mai 2025)",
+    "11 Monate später (heute)",
+    "3-4 Monate bis es viel besser wurde",
+    "Appenzellerland 920m",
+    "13 Slash-Commands",
+    "3 Telegram-Bots persönlich",
+    "3 Kunden-Bots live",
+    "2300 CHF in 2 Monaten (Bio-Check Launch)"
+  ]
+}

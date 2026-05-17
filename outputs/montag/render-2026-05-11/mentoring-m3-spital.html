@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>M3 Spital – Mentoring KW20</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --petrol: #12828c;
+    --petrol-dark: #0e6b73;
+    --creme: #f1ecdd;
+    --orange: #dc822e;
+    --text: #0c1c30;
+    --text-soft: rgba(12, 28, 48, 0.78);
+    --creme-soft: rgba(241, 236, 221, 0.88);
+  }
+  html, body { width: 1080px; }
+  body { font-family: 'Source Sans 3', sans-serif; color: var(--text); background: #fff; }
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+  .top-tag {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    background: var(--petrol);
+    color: var(--creme);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    padding: 10px 22px;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  .slide-num {
+    position: absolute;
+    top: 70px;
+    right: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0.85;
+  }
+  .footer-brand {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+  /* Solid Petrol */
+  .bg-petrol { background: var(--petrol); }
+  .bg-petrol .top-tag { background: var(--creme); color: var(--petrol); }
+  .bg-petrol .slide-num, .bg-petrol .footer-brand { color: var(--creme); }
+  /* Solid Creme */
+  .bg-creme { background: var(--creme); }
+  .bg-creme .slide-num, .bg-creme .footer-brand { color: var(--text); }
+  /* Foto-Cover */
+  .bg-foto {
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-foto .slide-num { color: var(--creme); text-shadow: 0 1px 4px rgba(0,0,0,0.4); }
+  .bg-foto .footer-brand { color: var(--creme); text-shadow: 0 1px 4px rgba(0,0,0,0.4); opacity: 0.9; }
+  .foto-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.25) 45%, rgba(18,130,140,0.65) 75%, rgba(18,130,140,0.92) 100%);
+  }
+  .text-block {
+    position: absolute;
+    left: 80px;
+    right: 80px;
+    padding: 0;
+  }
+  /* Cover-Slide text-block lower */
+  .cover-text {
+    bottom: 130px;
+    color: var(--creme);
+  }
+  .cover-text h1 {
+    font-family: 'Philosopher', serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.12;
+    margin-bottom: 24px;
+  }
+  .cover-text h1 .accent { color: var(--orange); }
+  .cover-text p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 32px;
+    line-height: 1.40;
+    color: var(--creme-soft);
+  }
+  /* Center content (Creme/Petrol Inhalts-Slides) */
+  .center-text {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .center-text h2 {
+    font-family: 'Philosopher', serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+  .center-text h2.large {
+    font-size: 76px;
+  }
+  .center-text p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 36px;
+    line-height: 1.42;
+    margin-bottom: 18px;
+  }
+  .center-text ul, .center-text ol {
+    list-style: none;
+    padding: 0;
+  }
+  .center-text li {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 34px;
+    line-height: 1.48;
+    margin-bottom: 16px;
+    padding-left: 40px;
+    position: relative;
+  }
+  .center-text li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--orange);
+    font-weight: 700;
+  }
+  .center-text ol li::before {
+    content: counter(item) ".";
+    counter-increment: item;
+    color: var(--orange);
+    font-weight: 700;
+  }
+  .center-text ol { counter-reset: item; }
+  .bg-petrol .center-text h2, .bg-petrol .center-text p, .bg-petrol .center-text li { color: var(--creme); }
+  .bg-creme .center-text h2, .bg-creme .center-text p, .bg-creme .center-text li { color: var(--text); }
+  .accent-orange { color: var(--orange); }
+  .accent-petrol { color: var(--petrol); }
+  em { font-style: italic; font-family: 'Philosopher', serif; }
+  strong { font-weight: 700; }
+  /* CTA-Button */
+  .cta-button {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--creme);
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 22px 44px;
+    border-radius: 8px;
+    margin-top: 28px;
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+
+<!-- Slide 1: HOOK Cover (Foto + Petrol-Gradient + Orange-Akzent auf 3x) -->
+<div class="slide bg-foto" style="background-image: url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/300%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-300.jpg');">
+  <div class="foto-overlay"></div>
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">1 / 8</div>
+  <div class="text-block cover-text">
+    <h1>Letzte Woche war ich <span class="accent">3x</span> mit einem Familienangehörigen im Spital.</h1>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 2: Konkrete Realität (Creme + Liste) -->
+<div class="slide bg-creme">
+  <div class="top-tag" style="background: var(--petrol); color: var(--creme);">MENTORING</div>
+  <div class="slide-num">2 / 8</div>
+  <div class="text-block center-text">
+    <h2>Und trotzdem:</h2>
+    <ul>
+      <li>Karussells gingen raus.</li>
+      <li>Mails kamen pünktlich.</li>
+      <li>Kundinnen meldeten sich.</li>
+      <li>Eine hat sogar gekauft.</li>
+    </ul>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 3: Reflektion (Petrol Solid, Statement) -->
+<div class="slide bg-petrol">
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">3 / 8</div>
+  <div class="text-block center-text">
+    <p style="font-size: 34px; color: var(--creme-soft);">Vor 2 Jahren wäre alles stehen geblieben.</p>
+    <h2 class="large" style="margin-top: 30px;">Heute läuft das Business weiter — <span class="accent-orange">auch wenn ich gerade nicht ans Business denken kann.</span></h2>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 4: Aha-Punkt (Petrol mit Sub-Statement) -->
+<div class="slide bg-creme">
+  <div class="top-tag" style="background: var(--petrol); color: var(--creme);">MENTORING</div>
+  <div class="slide-num">4 / 8</div>
+  <div class="text-block center-text">
+    <p style="font-size: 32px;">Das ist für mich Mama-CEO:</p>
+    <p style="font-size: 38px; margin-top: 12px;"><em>Nicht „24/7 verfügbar sein".</em></p>
+    <h2 style="margin-top: 30px; font-size: 60px;">Sondern: ein System, das trägt, wenn das Leben kippt.</h2>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 5: 3 Säulen (Creme + nummerierte Liste) -->
+<div class="slide bg-creme">
+  <div class="top-tag" style="background: var(--petrol); color: var(--creme);">MENTORING</div>
+  <div class="slide-num">5 / 8</div>
+  <div class="text-block center-text">
+    <h2 style="font-size: 56px; margin-bottom: 36px;">Drei Sachen, die mein System tragen:</h2>
+    <ol>
+      <li><strong>KI-Mitarbeiter</strong> für Content</li>
+      <li><strong>Automation</strong> für Verkauf</li>
+      <li><strong>Planung</strong> statt Selbermachen</li>
+    </ol>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 6: Anti-Frame (Petrol + Orange-Akzent) -->
+<div class="slide bg-petrol">
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">6 / 8</div>
+  <div class="text-block center-text">
+    <h2>Das ist <span class="accent-orange">nicht</span> „mehr Stunden arbeiten".</h2>
+    <h2 class="large" style="margin-top: 24px;">Das ist <span class="accent-orange">weniger</span> Stunden — und stabiler verkaufen.</h2>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 7: Pre-CTA (Foto + Statement) -->
+<div class="slide bg-foto" style="background-image: url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/300%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-300.jpg');">
+  <div class="foto-overlay"></div>
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">7 / 8</div>
+  <div class="text-block cover-text" style="bottom: 180px;">
+    <h1 style="font-size: 60px;">Wenn du Mama-CEO werden willst:</h1>
+    <p style="font-size: 34px; margin-top: 16px;"><strong style="color: var(--creme);">Mein kostenloses Webinar</strong> zeigt dir die 3 Säulen Schritt-für-Schritt.</p>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 8: CTA (Petrol + Orange-Button) -->
+<div class="slide bg-petrol">
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">8 / 8</div>
+  <div class="text-block center-text" style="text-align: center;">
+    <h2 style="font-size: 56px;">Kommentier <span class="accent-orange">WEBINAR</span></h2>
+    <p style="margin-top: 12px; font-size: 34px;">oder klick den Link in der Bio.</p>
+    <p style="margin-top: 36px; font-size: 30px; opacity: 0.85;"><em>Live Webinar: 20.5.</em></p>
+    <div style="margin-top: 48px;">
+      <span class="cta-button">→ WEBINAR</span>
+    </div>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+</body>
+</html>

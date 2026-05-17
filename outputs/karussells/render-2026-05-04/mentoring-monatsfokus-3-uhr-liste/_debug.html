@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Karussell-Render</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; }
+  body { font-family: 'Source Sans 3', sans-serif; color: #0c1c30; }
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-brand {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .footer-meta {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .top-tag {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+  .slide-num-circle {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+  }
+</style>
+</head>
+<body>
+
+    <div class="slide v1" style="
+      background: #12828c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 200px 100px 200px;
+    ">
+      <div style="
+        width: 60px;
+        height: 3px;
+        background: rgba(241, 236, 221, 0.85);
+        margin-bottom: 80px;
+        border-radius: 2px;
+      "></div>
+
+      <h1 style="
+        font-family: 'Philosopher', serif;
+        font-weight: 700;
+        font-size: 104px;
+        line-height: 1.18;
+        color: #f1ecdd;
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 40px;
+      ">Du wachst um 3 auf. Im Kopf läuft die Liste.</h1>
+
+      <p style="
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 42px;
+        line-height: 1.45;
+        color: rgba(241, 236, 221, 0.85);
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 0;
+      ">Spülmaschine. Schulanmeldung. Steuern. Reel-Idee. Bis du um 5:15 aufstehst und so tust, als hättest du geschlafen.</p>
+
+      
+
+      <div class="footer-brand" style="color: rgba(241, 236, 221, 0.85);">MUM LIFE BALANCE</div>
+      <div class="footer-meta" style="color: rgba(241, 236, 221, 0.85);">1 / 10</div>
+    </div>
+  
+    <div class="slide v1" style="
+      background: #12828c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 200px 100px 200px;
+    ">
+      <div style="
+        width: 60px;
+        height: 3px;
+        background: rgba(241, 236, 221, 0.85);
+        margin-bottom: 80px;
+        border-radius: 2px;
+      "></div>
+
+      <h1 style="
+        font-family: 'Philosopher', serif;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1.18;
+        color: #f1ecdd;
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 40px;
+      ">Du bist nicht zu schwach.</h1>
+
+      <p style="
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 42px;
+        line-height: 1.45;
+        color: rgba(241, 236, 221, 0.85);
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 0;
+      ">Du trägst zu viel allein. 9 Bälle. Niemand fängt sie.</p>
+
+      
+
+      <div class="footer-brand" style="color: rgba(241, 236, 221, 0.85);">MUM LIFE BALANCE</div>
+      <div class="footer-meta" style="color: rgba(241, 236, 221, 0.85);">2 / 10</div>
+    </div>
+  
+    <div class="slide v1" style="
+      background: #12828c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 200px 100px 200px;
+    ">
+      <div style="
+        width: 60px;
+        height: 3px;
+        background: rgba(241, 236, 221, 0.85);
+        margin-bottom: 80px;
+        border-radius: 2px;
+      "></div>
+
+      <h1 style="
+        font-family: 'Philosopher', serif;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1.18;
+        color: #f1ecdd;
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 40px;
+      ">Du bist nicht zu schwach.</h1>
+
+      <p style="
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 42px;
+        line-height: 1.45;
+        color: rgba(241, 236, 221, 0.85);
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 0;
+      ">Du trägst zu viel allein. 9 Bälle. Niemand fängt sie.</p>
+
+      
+
+      <div class="footer-brand" style="color: rgba(241, 236, 221, 0.85);">MUM LIFE BALANCE</div>
+      <div class="footer-meta" style="color: rgba(241, 236, 221, 0.85);">3 / 10</div>
+    </div>
+  
+    <div class="slide v1" style="
+      background: #12828c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 200px 100px 200px;
+    ">
+      <div style="
+        width: 60px;
+        height: 3px;
+        background: rgba(241, 236, 221, 0.85);
+        margin-bottom: 80px;
+        border-radius: 2px;
+      "></div>
+
+      <h1 style="
+        font-family: 'Philosopher', serif;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1.18;
+        color: #f1ecdd;
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 40px;
+      ">Mental Load ist kein persönliches Problem.</h1>
+
+      <p style="
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 42px;
+        line-height: 1.45;
+        color: rgba(241, 236, 221, 0.85);
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 0;
+      ">Es ist ein Systemfehler in deinem Setup.</p>
+
+      
+
+      <div class="footer-brand" style="color: rgba(241, 236, 221, 0.85);">MUM LIFE BALANCE</div>
+      <div class="footer-meta" style="color: rgba(241, 236, 221, 0.85);">4 / 10</div>
+    </div>
+  
+    <div class="slide v1" style="
+      background: #12828c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 200px 100px 200px;
+    ">
+      <div style="
+        width: 60px;
+        height: 3px;
+        background: rgba(241, 236, 221, 0.85);
+        margin-bottom: 80px;
+        border-radius: 2px;
+      "></div>
+
+      <h1 style="
+        font-family: 'Philosopher', serif;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1.18;
+        color: #f1ecdd;
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 40px;
+      ">Frag dich nicht: Wie schaff ich das alles?</h1>
+
+      <p style="
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 42px;
+        line-height: 1.45;
+        color: rgba(241, 236, 221, 0.85);
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 0;
+      ">Frag dich: Was gehört nicht in meinen Kopf? Diese Frage löst mehr als jede To-Do-App.</p>
+
+      
+
+      <div class="footer-brand" style="color: rgba(241, 236, 221, 0.85);">MUM LIFE BALANCE</div>
+      <div class="footer-meta" style="color: rgba(241, 236, 221, 0.85);">5 / 10</div>
+    </div>
+  
+    <div class="slide v1" style="
+      background: #12828c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 200px 100px 200px;
+    ">
+      <div style="
+        width: 60px;
+        height: 3px;
+        background: rgba(241, 236, 221, 0.85);
+        margin-bottom: 80px;
+        border-radius: 2px;
+      "></div>
+
+      <h1 style="
+        font-family: 'Philosopher', serif;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1.18;
+        color: #f1ecdd;
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 40px;
+      ">Drei Sachen die heute Abend raus können:</h1>
+
+      <p style="
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 42px;
+        line-height: 1.45;
+        color: rgba(241, 236, 221, 0.85);
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 0;
+      ">1. Schulanmeldungen → Notion-Vorlage. 2. Steuern → ein Tag/Monat. 3. Reel-Ideen → Sprachmemo statt Kopf.</p>
+
+      
+
+      <div class="footer-brand" style="color: rgba(241, 236, 221, 0.85);">MUM LIFE BALANCE</div>
+      <div class="footer-meta" style="color: rgba(241, 236, 221, 0.85);">6 / 10</div>
+    </div>
+  
+    <div class="slide v1" style="
+      background: #12828c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 200px 100px 200px;
+    ">
+      <div style="
+        width: 60px;
+        height: 3px;
+        background: rgba(241, 236, 221, 0.85);
+        margin-bottom: 80px;
+        border-radius: 2px;
+      "></div>
+
+      <h1 style="
+        font-family: 'Philosopher', serif;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1.18;
+        color: #f1ecdd;
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 40px;
+      ">Eine Liste pro Lebensbereich.</h1>
+
+      <p style="
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 42px;
+        line-height: 1.45;
+        color: rgba(241, 236, 221, 0.85);
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 0;
+      ">Nicht zehn Apps. Nicht im Kopf. Geteilt mit deinem Mann oder deinem KI-System.</p>
+
+      
+
+      <div class="footer-brand" style="color: rgba(241, 236, 221, 0.85);">MUM LIFE BALANCE</div>
+      <div class="footer-meta" style="color: rgba(241, 236, 221, 0.85);">7 / 10</div>
+    </div>
+  
+    <div class="slide v1" style="
+      background: #12828c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 200px 100px 200px;
+    ">
+      <div style="
+        width: 60px;
+        height: 3px;
+        background: rgba(241, 236, 221, 0.85);
+        margin-bottom: 80px;
+        border-radius: 2px;
+      "></div>
+
+      <h1 style="
+        font-family: 'Philosopher', serif;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1.18;
+        color: #f1ecdd;
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 40px;
+      ">4 Kinder. 18h Woche. Kein Monat ohne Verkauf.</h1>
+
+      <p style="
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 42px;
+        line-height: 1.45;
+        color: rgba(241, 236, 221, 0.85);
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 0;
+      ">Weil meine Listen rauskommen aus dem Kopf. In Systeme. Jeden Sonntagabend 20 Minuten.</p>
+
+      
+
+      <div class="footer-brand" style="color: rgba(241, 236, 221, 0.85);">MUM LIFE BALANCE</div>
+      <div class="footer-meta" style="color: rgba(241, 236, 221, 0.85);">8 / 10</div>
+    </div>
+  
+    <div class="slide v1" style="
+      background: #12828c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 200px 100px 200px;
+    ">
+      <div style="
+        width: 60px;
+        height: 3px;
+        background: rgba(241, 236, 221, 0.85);
+        margin-bottom: 80px;
+        border-radius: 2px;
+      "></div>
+
+      <h1 style="
+        font-family: 'Philosopher', serif;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1.18;
+        color: #f1ecdd;
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 40px;
+      ">Was abends wirklich in meinen Kopf gehört:</h1>
+
+      <p style="
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 42px;
+        line-height: 1.45;
+        color: rgba(241, 236, 221, 0.85);
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 0;
+      ">Nichts. Buch. Schlaf. Fertig.</p>
+
+      
+
+      <div class="footer-brand" style="color: rgba(241, 236, 221, 0.85);">MUM LIFE BALANCE</div>
+      <div class="footer-meta" style="color: rgba(241, 236, 221, 0.85);">9 / 10</div>
+    </div>
+  
+    <div class="slide v1" style="
+      background: #12828c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 200px 100px 200px;
+    ">
+      <div style="
+        width: 60px;
+        height: 3px;
+        background: rgba(241, 236, 221, 0.85);
+        margin-bottom: 80px;
+        border-radius: 2px;
+      "></div>
+
+      <h1 style="
+        font-family: 'Philosopher', serif;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1.18;
+        color: #f1ecdd;
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 40px;
+      ">P.S.</h1>
+
+      <p style="
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 42px;
+        line-height: 1.45;
+        color: rgba(241, 236, 221, 0.85);
+        text-align: center;
+        max-width: 880px;
+        margin-bottom: 0;
+      ">Wenn du heute Nacht wieder um 3 wach wirst — schreib's auf. Ein Zettel. Nicht im Kopf. Das ist der erste Schritt.</p>
+
+      
+
+      <div class="footer-brand" style="color: rgba(241, 236, 221, 0.85);">MUM LIFE BALANCE</div>
+      <div class="footer-meta" style="color: rgba(241, 236, 221, 0.85);">10 / 10</div>
+    </div>
+  
+</body>
+</html>

@@ -15,6 +15,36 @@
 # Claude Code Local Settings (User-spezifisch)
 # ============================================================
 .claude/settings.local.json
+.claude/worktrees/
+
+# ============================================================
+# Local-only Dateien (NIEMALS auf GitHub)
+# ============================================================
+.secrets/
+# Leerer Obsidian-Sub-Vault (versehentlich angelegt)
+Business/
+
+# ============================================================
+# Secret-Files in beliebigen Skript-Ordnern
+# ============================================================
+**/API_KEY.txt
+**/api_key.txt
+**/API-KEY.txt
+**/*_secret.txt
+**/secret.txt
+**/credentials.json
+**/credentials.txt
+**/token.txt
+**/*-token.txt
+**/auth.json
+
+# ============================================================
+# Obsidian Vault — Settings teilen, Runtime-State ignorieren
+# ============================================================
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
 
 # ============================================================
 # Node / npm

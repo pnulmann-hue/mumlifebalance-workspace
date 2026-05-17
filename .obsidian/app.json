@@ -1,0 +1,24 @@
+{
+  "userIgnoreFilters": [
+    ".git/",
+    ".github/",
+    ".claude/worktrees/",
+    "node_modules/",
+    "scripts/",
+    "outputs/apify-runs/",
+    "outputs/samples/",
+    "outputs/karussells/renders/",
+    "outputs/stories/_template-beispiel/",
+    "outputs/bio-check-bot/",
+    "outputs/funnels/",
+    "*.lock",
+    "*.log",
+    "package-lock.json",
+    "yarn.lock"
+  ],
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "showLineNumber": true,
+  "readableLineLength": true
+}

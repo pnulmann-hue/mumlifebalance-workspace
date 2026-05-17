@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Karussell-Render</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; }
+  body { font-family: 'Source Sans 3', sans-serif; color: #0c1c30; }
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-brand {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .footer-meta {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .top-tag {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+  .slide-num-circle {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+  }
+</style>
+</head>
+<body>
+
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 50%, rgba(18, 130, 140, 0.55) 75%, rgba(18, 130, 140, 0.85) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/400%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-400.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">1 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 80px 80px 100px;
+        background: linear-gradient(180deg, rgba(18, 130, 140,0.0) 0%, #12828c 28%);
+        
+        
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #f1ecdd;
+          margin-bottom: 28px;
+          max-width: 920px;
+        ">Was mein KI-Mitarbeiter heute morgen schon erledigt hat — und ich noch im Bademantel bin.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(241, 236, 221, 0.85);
+          max-width: 880px;
+        ">Mama-CEO 2026.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 50%, rgba(18, 130, 140, 0.55) 75%, rgba(18, 130, 140, 0.85) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/400%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-400.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">2 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 80px 80px 100px;
+        background: linear-gradient(180deg, rgba(18, 130, 140,0.0) 0%, #12828c 28%);
+        
+        
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #f1ecdd;
+          margin-bottom: 28px;
+          max-width: 920px;
+        ">Du sitzt um 8 Uhr noch im Pyjama.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(241, 236, 221, 0.85);
+          max-width: 880px;
+        ">Postest nicht. Antwortest keine DMs. Schreibst keine Mails. Fühlst dich schuldig.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 50%, rgba(18, 130, 140, 0.55) 75%, rgba(18, 130, 140, 0.85) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/400%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-400.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">3 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 80px 80px 100px;
+        background: linear-gradient(180deg, rgba(18, 130, 140,0.0) 0%, #12828c 28%);
+        
+        
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #f1ecdd;
+          margin-bottom: 28px;
+          max-width: 920px;
+        ">Bei mir läuft das parallel.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(241, 236, 221, 0.85);
+          max-width: 880px;
+        ">Ich im Bademantel mit Kaffee. Mein KI-Mitarbeiter im Online-Modus.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 50%, rgba(18, 130, 140, 0.55) 75%, rgba(18, 130, 140, 0.85) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/400%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-400.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">4 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 80px 80px 100px;
+        background: linear-gradient(180deg, rgba(18, 130, 140,0.0) 0%, #12828c 28%);
+        
+        
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #f1ecdd;
+          margin-bottom: 28px;
+          max-width: 920px;
+        ">7:30 Uhr — Telegram-Push:</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(241, 236, 221, 0.85);
+          max-width: 880px;
+        ">‚Heute zählt: Webinar-Mails verschicken. 2 DMs beantworten. 1 Reel-Konzept.'</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 50%, rgba(18, 130, 140, 0.55) 75%, rgba(18, 130, 140, 0.85) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/400%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-400.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">5 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 80px 80px 100px;
+        background: linear-gradient(180deg, rgba(18, 130, 140,0.0) 0%, #12828c 28%);
+        
+        
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #f1ecdd;
+          margin-bottom: 28px;
+          max-width: 920px;
+        ">8:00 Uhr — Notion gefüllt:</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(241, 236, 221, 0.85);
+          max-width: 880px;
+        ">Aufgaben strukturiert. Prioritäten gesetzt. KI-Vorschläge zur Auswahl.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 50%, rgba(18, 130, 140, 0.55) 75%, rgba(18, 130, 140, 0.85) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/400%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-400.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">6 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 80px 80px 100px;
+        background: linear-gradient(180deg, rgba(18, 130, 140,0.0) 0%, #12828c 28%);
+        
+        
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #f1ecdd;
+          margin-bottom: 28px;
+          max-width: 920px;
+        ">8:30 Uhr — Posts geschrieben:</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(241, 236, 221, 0.85);
+          max-width: 880px;
+        ">3 Caption-Varianten für heute. Mein KI-Schreiber. Während ich Frühstück mach.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 50%, rgba(18, 130, 140, 0.55) 75%, rgba(18, 130, 140, 0.85) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/400%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-400.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">7 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 80px 80px 100px;
+        background: linear-gradient(180deg, rgba(18, 130, 140,0.0) 0%, #12828c 28%);
+        
+        
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #f1ecdd;
+          margin-bottom: 28px;
+          max-width: 920px;
+        ">So bau ich das auf:</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(241, 236, 221, 0.85);
+          max-width: 880px;
+        ">Slash-Commands die ich selbst geschrieben hab. Notion-Trigger. Telegram-Push. Kein Tech-Studium.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 50%, rgba(18, 130, 140, 0.55) 75%, rgba(18, 130, 140, 0.85) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/400%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-400.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">8 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 80px 80px 100px;
+        background: linear-gradient(180deg, rgba(18, 130, 140,0.0) 0%, #12828c 28%);
+        
+        
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #f1ecdd;
+          margin-bottom: 28px;
+          max-width: 920px;
+        ">Mit 4 Kindern. 18h Woche.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(241, 236, 221, 0.85);
+          max-width: 880px;
+        ">Kein Monat ohne Verkauf. Weil ich nicht alles selbst tippe. Sondern entscheide.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 50%, rgba(18, 130, 140, 0.55) 75%, rgba(18, 130, 140, 0.85) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/400%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-400.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">9 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 80px 80px 100px;
+        background: linear-gradient(180deg, rgba(18, 130, 140,0.0) 0%, #12828c 28%);
+        
+        
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #f1ecdd;
+          margin-bottom: 28px;
+          max-width: 920px;
+        ">Du brauchst keinen Programmierer.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(241, 236, 221, 0.85);
+          max-width: 880px;
+        ">Du brauchst 3 Stunden. Den Rest baust du selbst. Schritt für Schritt.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 50%, rgba(18, 130, 140, 0.55) 75%, rgba(18, 130, 140, 0.85) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/400%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-400.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">10 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 80px 80px 100px;
+        background: linear-gradient(180deg, rgba(18, 130, 140,0.0) 0%, #12828c 28%);
+        
+        
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #f1ecdd;
+          margin-bottom: 28px;
+          max-width: 920px;
+        ">P.S.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(241, 236, 221, 0.85);
+          max-width: 880px;
+        ">Im Mai-Webinar zeig ich's live. Kommentier WEBINAR und ich schick dir den Link.</p>
+      </div>
+    </div>
+  
+</body>
+</html>

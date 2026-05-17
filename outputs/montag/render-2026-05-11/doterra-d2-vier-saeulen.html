@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>D2 4 Säulen – doTERRA KW20</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --petrol: #12828c;
+    --creme: #f1ecdd;
+    --orange: #dc822e;
+    --text: #0c1c30;
+    --creme-soft: rgba(241, 236, 221, 0.88);
+  }
+  html, body { width: 1080px; }
+  body { font-family: 'Source Sans 3', sans-serif; color: var(--text); background: #fff; }
+  .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; }
+  .top-tag {
+    position: absolute; top: 60px; left: 60px;
+    background: var(--orange); color: var(--creme);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px; font-weight: 700; letter-spacing: 0.16em;
+    padding: 10px 22px; border-radius: 4px; text-transform: uppercase;
+  }
+  .slide-num {
+    position: absolute; top: 70px; right: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 24px; font-weight: 600; opacity: 0.85;
+  }
+  .footer-brand {
+    position: absolute; left: 60px; bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px; font-weight: 500; letter-spacing: 0.18em;
+    text-transform: uppercase; opacity: 0.7;
+  }
+  .bg-petrol { background: var(--petrol); }
+  .bg-petrol .slide-num, .bg-petrol .footer-brand { color: var(--creme); }
+  .bg-orange { background: var(--orange); }
+  .bg-orange .top-tag { background: var(--creme); color: var(--orange); }
+  .bg-orange .slide-num, .bg-orange .footer-brand { color: var(--creme); }
+  .bg-creme { background: var(--creme); }
+  .bg-creme .slide-num, .bg-creme .footer-brand { color: var(--text); }
+  .bg-foto { background-size: cover; background-position: center; }
+  .bg-foto .slide-num { color: var(--creme); text-shadow: 0 1px 4px rgba(0,0,0,0.4); }
+  .bg-foto .footer-brand { color: var(--creme); text-shadow: 0 1px 4px rgba(0,0,0,0.4); opacity: 0.9; }
+  .foto-overlay-orange {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.28) 40%, rgba(220,130,46,0.62) 75%, rgba(220,130,46,0.92) 100%);
+  }
+  .text-block { position: absolute; left: 80px; right: 80px; }
+  .cover-text { bottom: 130px; color: var(--creme); }
+  .cover-text h1 {
+    font-family: 'Philosopher', serif; font-weight: 700;
+    font-size: 70px; line-height: 1.13; margin-bottom: 24px;
+  }
+  .cover-text h1 .accent { color: var(--orange); }
+  .cover-text p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 32px; line-height: 1.40; color: var(--creme-soft);
+  }
+  .center-text { top: 50%; transform: translateY(-50%); }
+  .center-text h2 {
+    font-family: 'Philosopher', serif; font-weight: 700;
+    font-size: 62px; line-height: 1.18; margin-bottom: 28px;
+  }
+  .center-text h2.large { font-size: 76px; }
+  .center-text p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 34px; line-height: 1.42; margin-bottom: 18px;
+  }
+  .center-text ul { list-style: none; padding: 0; }
+  .center-text li {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 32px; line-height: 1.48; margin-bottom: 14px;
+    padding-left: 36px; position: relative;
+  }
+  .center-text li::before {
+    content: "—"; position: absolute; left: 0;
+    color: var(--orange); font-weight: 700;
+  }
+  .bg-petrol .center-text h2, .bg-petrol .center-text p, .bg-petrol .center-text li { color: var(--creme); }
+  .bg-creme .center-text h2, .bg-creme .center-text p, .bg-creme .center-text li { color: var(--text); }
+  .bg-orange .center-text h2, .bg-orange .center-text p, .bg-orange .center-text li { color: var(--creme); }
+  .bg-orange .center-text li::before { color: var(--creme); }
+  .accent-orange { color: var(--orange); }
+  .accent-petrol { color: var(--petrol); }
+  em { font-style: italic; font-family: 'Philosopher', serif; }
+  strong { font-weight: 700; }
+  .saeule-number {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--creme);
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    font-family: 'Philosopher', serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .cta-button {
+    display: inline-block; background: var(--orange); color: var(--creme);
+    font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+    font-size: 32px; padding: 22px 44px; border-radius: 8px;
+    margin-top: 28px; letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+
+<!-- Slide 1: HOOK (Petrol + Orange-Akzent „nicht") -->
+<div class="slide bg-petrol">
+  <div class="top-tag">VORMENOPAUSE</div>
+  <div class="slide-num">1 / 8</div>
+  <div class="text-block center-text">
+    <h2 class="large">Es reicht <span class="accent-orange">nicht,</span> wenn du nur Nahrungsergänzung nimmst.</h2>
+  </div>
+  <div class="footer-brand">Patricia Ulmann</div>
+</div>
+
+<!-- Slide 2: Setup (Foto + Orange-Gradient) -->
+<div class="slide bg-foto" style="background-image: url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/700%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-197.jpg');">
+  <div class="foto-overlay-orange"></div>
+  <div class="top-tag" style="background: var(--creme); color: var(--orange);">VORMENOPAUSE</div>
+  <div class="slide-num">2 / 8</div>
+  <div class="text-block cover-text">
+    <p style="font-size: 32px;">Das war meine Erkenntnis nach einem Jahr Reise.</p>
+    <h1 style="font-size: 54px; margin-top: 20px;">Eine Pille — egal wie gut — heilt deine Erschöpfung <em style="color: var(--creme);">nicht allein.</em></h1>
+  </div>
+  <div class="footer-brand">Patricia Ulmann</div>
+</div>
+
+<!-- Slide 3: Einführung 4 Säulen (Creme) -->
+<div class="slide bg-creme">
+  <div class="top-tag">VORMENOPAUSE</div>
+  <div class="slide-num">3 / 8</div>
+  <div class="text-block center-text" style="text-align: center;">
+    <p style="font-size: 32px;">Was wirklich gebraucht wird:</p>
+    <h2 class="large" style="margin-top: 28px; color: var(--orange);">Vier Säulen,</h2>
+    <h2 style="font-size: 50px; margin-top: 6px;">die zusammenarbeiten.</h2>
+  </div>
+  <div class="footer-brand">Patricia Ulmann</div>
+</div>
+
+<!-- Slide 4: Säule 1 Ernährung (Petrol + Kreis-Nummer) -->
+<div class="slide bg-petrol">
+  <div class="top-tag">VORMENOPAUSE</div>
+  <div class="slide-num">4 / 8</div>
+  <div class="text-block center-text">
+    <div class="saeule-number">1</div>
+    <h2>Ernährung</h2>
+    <ul>
+      <li>Mehr Proteine</li>
+      <li>Weniger Industriezucker</li>
+      <li>Säure-Basen-Balance</li>
+      <li>Entzündungsarm</li>
+    </ul>
+  </div>
+  <div class="footer-brand">Patricia Ulmann</div>
+</div>
+
+<!-- Slide 5: Säule 2 Nährstoffe (Petrol) -->
+<div class="slide bg-petrol">
+  <div class="top-tag">VORMENOPAUSE</div>
+  <div class="slide-num">5 / 8</div>
+  <div class="text-block center-text">
+    <div class="saeule-number">2</div>
+    <h2>Nährstoffe</h2>
+    <p style="opacity: 0.92;">Was dir nachweislich fehlt — gezielt zuführen.</p>
+    <p style="margin-top: 18px; font-size: 30px;"><em>Bei mir: Vitamine, Mineralien, Omega-3, Probiotika, Hormonbalance-Komplex.</em></p>
+  </div>
+  <div class="footer-brand">Patricia Ulmann</div>
+</div>
+
+<!-- Slide 6: Säule 3 Bewegung (Petrol) -->
+<div class="slide bg-petrol">
+  <div class="top-tag">VORMENOPAUSE</div>
+  <div class="slide-num">6 / 8</div>
+  <div class="text-block center-text">
+    <div class="saeule-number">3</div>
+    <h2>Bewegung</h2>
+    <p style="opacity: 0.92;">Krafttraining ist ab 35 <span class="accent-orange">keine Option mehr.</span></p>
+    <p style="margin-top: 18px; font-size: 30px;"><em>Vormenopause heisst: Muskelmasse nimmt stetig ab. Du musst aktiv dagegenhalten.</em></p>
+  </div>
+  <div class="footer-brand">Patricia Ulmann</div>
+</div>
+
+<!-- Slide 7: Säule 4 Schlaf+Stress (Petrol) -->
+<div class="slide bg-petrol">
+  <div class="top-tag">VORMENOPAUSE</div>
+  <div class="slide-num">7 / 8</div>
+  <div class="text-block center-text">
+    <div class="saeule-number">4</div>
+    <h2>Schlaf + Stress</h2>
+    <p style="opacity: 0.92;">Regelmässiger Schlaf. Stress-Recovery. Mit Ölen arbeiten.</p>
+    <p style="margin-top: 18px; font-size: 30px;"><em>Ohne diese Säule ist alles andere halb.</em></p>
+  </div>
+  <div class="footer-brand">Patricia Ulmann</div>
+</div>
+
+<!-- Slide 8: CTA (Creme + Orange-Button) -->
+<div class="slide bg-creme">
+  <div class="top-tag">VORMENOPAUSE</div>
+  <div class="slide-num">8 / 8</div>
+  <div class="text-block center-text" style="text-align: center;">
+    <h2 style="font-size: 50px;">Wenn du wissen willst, wie ich alle <span class="accent-orange">4 Säulen</span> in den Mama-Alltag eingebaut habe:</h2>
+    <p style="margin-top: 32px; font-size: 36px;">Schreib <strong style="color: var(--orange);">ENERGIE</strong> in die Kommentare.</p>
+    <p style="margin-top: 18px; font-size: 28px;"><em>Ich schick dir Infos mit allem, was ich gelernt habe.</em></p>
+    <div style="margin-top: 40px;">
+      <span class="cta-button">→ ENERGIE</span>
+    </div>
+  </div>
+  <div class="footer-brand">Patricia Ulmann</div>
+</div>
+
+</body>
+</html>

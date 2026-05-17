@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>M2 Trainingshose – Mentoring KW20</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --petrol: #12828c;
+    --creme: #f1ecdd;
+    --orange: #dc822e;
+    --text: #0c1c30;
+    --creme-soft: rgba(241, 236, 221, 0.88);
+  }
+  html, body { width: 1080px; }
+  body { font-family: 'Source Sans 3', sans-serif; color: var(--text); background: #fff; }
+  .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; }
+  .top-tag {
+    position: absolute; top: 60px; left: 60px;
+    background: var(--petrol); color: var(--creme);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px; font-weight: 700; letter-spacing: 0.16em;
+    padding: 10px 22px; border-radius: 4px; text-transform: uppercase;
+  }
+  .slide-num {
+    position: absolute; top: 70px; right: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 24px; font-weight: 600; opacity: 0.85;
+  }
+  .footer-brand {
+    position: absolute; left: 60px; bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px; font-weight: 500; letter-spacing: 0.18em;
+    text-transform: uppercase; opacity: 0.7;
+  }
+  .bg-petrol { background: var(--petrol); }
+  .bg-petrol .top-tag { background: var(--creme); color: var(--petrol); }
+  .bg-petrol .slide-num, .bg-petrol .footer-brand { color: var(--creme); }
+  .bg-creme { background: var(--creme); }
+  .bg-creme .slide-num, .bg-creme .footer-brand { color: var(--text); }
+  .bg-foto { background-size: cover; background-position: center; }
+  .bg-foto .slide-num { color: var(--creme); text-shadow: 0 1px 4px rgba(0,0,0,0.4); }
+  .bg-foto .footer-brand { color: var(--creme); text-shadow: 0 1px 4px rgba(0,0,0,0.4); opacity: 0.9; }
+  .foto-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.25) 45%, rgba(18,130,140,0.65) 75%, rgba(18,130,140,0.92) 100%);
+  }
+  .text-block { position: absolute; left: 80px; right: 80px; }
+  .cover-text { bottom: 130px; color: var(--creme); }
+  .cover-text h1 {
+    font-family: 'Philosopher', serif; font-weight: 700;
+    font-size: 70px; line-height: 1.13; margin-bottom: 24px;
+  }
+  .cover-text h1 .accent { color: var(--orange); }
+  .cover-text p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 32px; line-height: 1.40; color: var(--creme-soft);
+  }
+  .center-text { top: 50%; transform: translateY(-50%); }
+  .center-text h2 {
+    font-family: 'Philosopher', serif; font-weight: 700;
+    font-size: 62px; line-height: 1.18; margin-bottom: 28px;
+  }
+  .center-text h2.large { font-size: 78px; }
+  .center-text p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 36px; line-height: 1.42; margin-bottom: 18px;
+  }
+  .bg-petrol .center-text h2, .bg-petrol .center-text p { color: var(--creme); }
+  .bg-creme .center-text h2, .bg-creme .center-text p { color: var(--text); }
+  .accent-orange { color: var(--orange); }
+  em { font-style: italic; font-family: 'Philosopher', serif; }
+  strong { font-weight: 700; }
+  .cta-button {
+    display: inline-block; background: var(--orange); color: var(--creme);
+    font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+    font-size: 32px; padding: 22px 44px; border-radius: 8px;
+    margin-top: 28px; letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+
+<!-- Slide 1: HOOK (Petrol + Orange-Akzent „Schere") -->
+<div class="slide bg-petrol">
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">1 / 8</div>
+  <div class="text-block center-text">
+    <h2 style="font-size: 60px; line-height: 1.15;">Mein Jüngster hat heute Morgen seine lange Trainingshose mit der <span class="accent-orange">Schere</span> abgeschnitten.</h2>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 2: Setup (Foto + Petrol-Gradient) -->
+<div class="slide bg-foto" style="background-image: url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/400%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-400.jpg');">
+  <div class="foto-overlay"></div>
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">2 / 8</div>
+  <div class="text-block cover-text">
+    <p style="font-size: 34px;">Weil seine bestellten kurzen Trainingshosen nicht angekommen sind.</p>
+    <h1 style="font-size: 56px; margin-top: 20px;">Er konnte nicht mehr warten.<br><span style="color: var(--orange);">Er hat einfach gemacht.</span></h1>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 3: Versuch (Creme) -->
+<div class="slide bg-creme">
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">3 / 8</div>
+  <div class="text-block center-text">
+    <p>Er hat sogar versucht, mit Nadel und Faden den Saum anzunähen.</p>
+    <h2 style="margin-top: 30px; font-size: 56px;">Hat nicht geklappt.</h2>
+    <p style="margin-top: 16px;"><em>Er war kurz bedrückt.</em></p>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 4: Reflektion (Petrol) -->
+<div class="slide bg-petrol">
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">4 / 8</div>
+  <div class="text-block center-text">
+    <p style="font-size: 38px;">Ich war wütend.</p>
+    <p style="font-size: 38px; margin-top: 12px;"><em>Und gleichzeitig stolz.</em></p>
+    <h2 style="margin-top: 32px; font-size: 50px;">Weil er das gemacht hat, wozu sich viele Erwachsene nicht trauen:</h2>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 5: Lehre (Orange-Akzent gross, Creme bg) -->
+<div class="slide bg-creme">
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">5 / 8</div>
+  <div class="text-block center-text" style="text-align: center;">
+    <h2 class="large" style="color: var(--orange);">Nicht lang überlegen.</h2>
+    <h2 class="large" style="color: var(--orange); margin-top: 30px;">Einfach machen.</h2>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 6: Brücke zum Business (Creme) -->
+<div class="slide bg-creme">
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">6 / 8</div>
+  <div class="text-block center-text">
+    <h2 style="font-size: 56px;">Genau so baue ich auch mein Business.</h2>
+    <p style="margin-top: 28px; font-size: 38px;"><strong style="color: var(--petrol);">Fertig besser als perfekt.</strong></p>
+    <p style="margin-top: 18px; font-size: 32px;"><em>Manchmal fehlt nachher eine lange Hose. Geht trotzdem weiter.</em></p>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 7: Anti-Frame (Foto + Petrol-Gradient) -->
+<div class="slide bg-foto" style="background-image: url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/400%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-400.jpg');">
+  <div class="foto-overlay"></div>
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">7 / 8</div>
+  <div class="text-block cover-text" style="bottom: 180px;">
+    <p style="font-size: 32px;">Während andere noch planen, ob sie posten sollen —</p>
+    <h1 style="margin-top: 18px; font-size: 56px;">habe ich schon den <span class="accent">nächsten Mini-Kurs</span> draussen.</h1>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+<!-- Slide 8: CTA (Petrol + Orange-Button) -->
+<div class="slide bg-petrol">
+  <div class="top-tag">MENTORING</div>
+  <div class="slide-num">8 / 8</div>
+  <div class="text-block center-text" style="text-align: center;">
+    <p style="font-size: 32px;">Wenn du nicht mehr warten willst, bis alles</p>
+    <p style="margin-top: 10px; font-size: 36px;"><em>„perfekt"</em> ist:</p>
+    <h2 style="margin-top: 36px; font-size: 56px;">Kommentier <span class="accent-orange">WEBINAR</span></h2>
+    <p style="margin-top: 18px; font-size: 28px; opacity: 0.85;"><em>Live Webinar: 20.5.</em></p>
+    <div style="margin-top: 40px;">
+      <span class="cta-button">→ WEBINAR</span>
+    </div>
+  </div>
+  <div class="footer-brand">Mum Life Balance</div>
+</div>
+
+</body>
+</html>

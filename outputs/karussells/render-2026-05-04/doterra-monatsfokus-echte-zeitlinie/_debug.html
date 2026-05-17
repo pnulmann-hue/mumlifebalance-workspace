@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Karussell-Render</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; }
+  body { font-family: 'Source Sans 3', sans-serif; color: #0c1c30; }
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-brand {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .footer-meta {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .top-tag {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+  .slide-num-circle {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+  }
+</style>
+</head>
+<body>
+
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/700%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-197.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #dc822e;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">VORMENOPAUSE</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">1 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #dc822e;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">36 Jahre. Progesteron im Keller. 3-4 Monate bis es viel besser wurde.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Das ist meine echte Zeitlinie. Keine 30-Tage-Kur.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/700%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-197.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #dc822e;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">VORMENOPAUSE</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">2 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #dc822e;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Du hörst überall: 30 Tage und du bist neu.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Bei mir war es nicht so. Bei den meisten Mamas die ich kenne auch nicht.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/700%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-197.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #dc822e;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">VORMENOPAUSE</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">3 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #dc822e;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Hormone brauchen länger als 30 Tage.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Cortisol-Kreislauf. Darmflora. Nährstoffspeicher. Das baut sich auf — und ab — über Monate.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/700%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-197.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #dc822e;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">VORMENOPAUSE</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">4 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #dc822e;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Meine Zeitlinie war:</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Mai 2025: Wendepunkt. 36 Jahre. Befund. Start mit Supplementierung + neuem Lifestyle.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/700%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-197.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #dc822e;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">VORMENOPAUSE</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">5 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #dc822e;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Was sich nach 3-4 Monaten verändert hat:</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Mein Körper. Mein Schlaf. Meine Energie. Nicht 100%. Aber spürbar anders.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/700%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-197.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #dc822e;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">VORMENOPAUSE</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">6 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #dc822e;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Warum es so lange dauert:</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Der Körper muss sich umstellen. Speicher füllen. Stress runterfahren. Schlaf reparieren. Das geht nicht über Nacht.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/700%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-197.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #dc822e;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">VORMENOPAUSE</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">7 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #dc822e;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Was bei mir konstant geblieben ist:</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Drei Sachen täglich. Dazu mehr Protein. Bewegung morgens. Das ist mein Setup. Bis heute.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/700%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-197.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #dc822e;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">VORMENOPAUSE</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">8 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #dc822e;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Was ich vorher falsch gemacht hab:</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Erwartet dass es schnell geht. Bei jeder Mini-Verschlechterung gezweifelt. Dann gelernt: Geduld ist Teil der Methode.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/700%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-197.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #dc822e;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">VORMENOPAUSE</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">9 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #dc822e;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Alles was 30-Tage-Kur verspricht?</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Vorsicht. Ich kann's nicht in 30 Tagen. Niemand den ich kenne kann's. Und das ist okay.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/700%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-197.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #dc822e;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">VORMENOPAUSE</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">10 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #dc822e;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">P.S.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Wenn du gerade am Anfang stehst — gib dir 3 Monate. Nicht 30 Tage. Schreib WENDEPUNKT in die Kommentare wenn du wissen willst was meine 3 Säulen sind.</p>
+      </div>
+    </div>
+  
+</body>
+</html>

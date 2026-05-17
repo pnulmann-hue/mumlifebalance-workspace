@@ -1,0 +1,19 @@
+{
+  "accountId": "41414",
+  "platform": "instagram",
+  "mediaType": "image",
+  "scheduledTime": "2026-05-15T19:30:00+02:00",
+  "text": "Während ich noch im Bademantel mit dem Kaffee am Tisch sitze, hat mein KI-Setup heute Morgen schon den halben Tag erledigt.\n\n💾 Speicher diesen Post für den Morgen, an dem du dich wieder schuldig fühlst, weil noch nichts „raus\" ist.\n💬 Kommentier WEBINAR und ich schick dir den Link zu meinem Mai-Webinar — da zeig ich dir das Setup live.\n\nKennst du das? Es ist acht Uhr, du sitzt noch im Pyjama, hast keine DM beantwortet, keine Mail geschrieben — und drückst dich innerlich schon mit einem „Patricia, jetzt aber mal los\" durch den Tag.\n\nBei mir läuft das mittlerweile komplett parallel. Ich sitz gemütlich mit Kaffee am Küchentisch, und nebenbei tun meine KI-Mitarbeiter genau das, wofür ich früher noch abends um zehn wach war.\n\nWie das konkret aussieht? Um 7:30 ploppt auf meinem Handy eine Telegram-Nachricht von meinem Morgen-Briefing-Bot auf: „Heute zählt — die Webinar-Mails verschicken, zwei DMs beantworten, das Karussell für Freitag freigeben.\" Bis acht ist mein Notion gefüllt mit allen Aufgaben, ordentlich priorisiert. Und um halb neun hat mein Content-Bot mir die Caption für den heutigen Beitrag mit drei Varianten zur Auswahl bereitgelegt — während ich nebenbei das Frühstück gemacht hab.\n\nWie ich das gebaut hab? Mit Slash-Commands, die ich mir selbst geschrieben hab. Mit Notion-Triggern und Telegram-Push. Ganz ohne Tech-Studium und ganz ohne Programmiererin im Hintergrund.\n\n13 Slash-Commands, drei persönliche Telegram-Bots, drei Kunden-Bots. Aus 18 Stunden Woche, mit vier Kindern, vom Küchentisch im Appenzellerland. Und keinem Monat mehr ohne Verkauf. Weil ich nicht mehr alles selbst tippe — ich entscheide nur noch, was wichtig ist. Den Rest erledigen meine kleinen Helferlein.\n\nDu brauchst dafür keine Programmiererin und kein technisches Vorwissen. Du brauchst drei Stunden, in denen ich dir den Anfang zeig. Den Rest baust du dir selbst, Schritt für Schritt.\n\nP.S. Im Mai-Webinar zeig ich's live — inklusive meinem Kochassistenten, der weiss was wir essen, für fünf bis sechs Personen plant und mir die Migros-Einkaufsliste schreibt. Kommentier WEBINAR und ich schick dir den Anmeldelink direkt in deine DMs.\n\n#mamaceo #kimitarbeiterin #mompreneurschweiz #soloselbstständigmama #mamabusiness",
+  "mediaUrls": [
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/4cddfb54-9856-45ac-9b7e-8d7f62e313f8.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/bf3c1095-c819-4388-bfba-456c6c6a4ff8.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/bd8c3ddb-f1a4-4c55-83bd-071ba7b775e8.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/3214cdbd-ecf5-4658-9226-4c4ba34c01a8.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/2b1acd7a-75c6-49c6-9cdd-7996d8d346b5.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/eb58be66-bf75-4f02-938a-440d91912429.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/a66ba0ff-6b35-432c-b3aa-7ee74a86e062.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/60e2192a-c65e-4c5f-a00c-d598333e96c8.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/9a5d47fb-533c-4d3c-83e6-2f1bc36fb68d.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/7f830e4e-6c8d-4ed0-91fc-479efad66426.png"
+  ]
+}

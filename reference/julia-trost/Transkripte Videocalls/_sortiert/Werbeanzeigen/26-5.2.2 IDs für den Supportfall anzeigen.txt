@@ -1,0 +1,10 @@
+# 5.2.2 IDs für den Supportfall anzeigen &raquo; Werbeanzeigen &raquo; Präsentiert von ThriveCart
+
+Quelle: https://kurse.juliatrost.de/l/werbeanzeigen/522-ids-fr-den-supportfall-anzeigen/
+Vimeo: https://player.vimeo.com/video/1121418731?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479
+Transkribiert: 2026-04-24
+Methode: Vimeo Auto-Untertitel (via yt-dlp)
+
+---
+
+Nachdem wir jetzt gerade über die selbst definierten Spalten gesprochen haben, noch einen Hinweis, der euch wirklich viel Zeit sparen kann, wenn ihr mit dem Meta-Support im Austausch seid. Den hilft es nämlich immer, wenn ihr Informationen so spezifisch wie möglich liefert. Bedeutet, wenn ihr wirklich auf Ebene von einer einzelnen Werbeanzeige ein Problem habt, ist es Gold wert, wenn ihr direkt mitliefern könnt, welche ID diese Werbeanzeige hat. Dann können die im System das besser nachverfolgen. Und das ist auch eine Möglichkeit. Das ist auch eine Information, die ihr euch direkt in der Spalte anzeigen lassen könnt. nochmal, wie vorhin, über selbst definiert, dass ihr einmal gesehen habt, wo ihr das findet. Wenn ihr hier ganz nach unten scrollt, kommt ihr irgendwann zu einem Bereich, wo es eher technisch wird. Einstellungen. Und hier könnt ihr entweder die Anzeigen-ID, die Kampagnen-ID, die Konto-ID oder die Anzeigengruppe, je nachdem, auf welcher Ebene ihr Probleme habt, direkt anzeigen lassen. Hier sind wir jetzt auf Werbeanzeigen-Ebene. Heißt, ich klicke das mal an. Und genau wie mit allen anderen Sachen landet es direkt als letztes hier unten bei euren vordefinierten Spalten. Ich klicke auf Speichern und scrollen wir mal ganz nach rechts. Dann seht ihr hier jetzt immer die Anzeigen-ID. Die könnt ihr euch rauskopieren und in euer Ticket schreiben und das spart total viel Zeit.

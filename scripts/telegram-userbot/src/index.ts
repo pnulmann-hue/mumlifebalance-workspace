@@ -19,8 +19,9 @@ import {
   isMonthlyNewsletterReminderToday,
 } from "./reminders";
 import { processPendingPosts } from "./auto-poster";
+import { runMailSweep, isMailSweepTime } from "./mail-poller";
 
-dotenv.config();
+dotenv.config({ override: true });
 
 const apiId = parseInt(process.env.TELEGRAM_API_ID || "");
 const apiHash = process.env.TELEGRAM_API_HASH || "";
@@ -277,6 +278,22 @@ async function main() {
       }
     }
   }, 60 * 60 * 1000); // jede Stunde prüfen
+
+  // Mail-Sweep: täglich um 07:00
+  let lastMailSweep = "";
+  console.log("📬 Mail-Sweep aktiv (täglich um 07:00)");
+  setInterval(async () => {
+    const n = new Date();
+    const today = n.toISOString().slice(0, 10);
+    if (isMailSweepTime(n) && lastMailSweep !== today) {
+      lastMailSweep = today;
+      try {
+        await runMailSweep(patriciaUserId);
+      } catch (err) {
+        console.error("Mail-Sweep error:", err);
+      }
+    }
+  }, 60 * 60 * 1000);
 
   // Auto-Poster: prüft stündlich fällige Posts und postet sie
   console.log("📤 Auto-Poster aktiv (stündliche Prüfung)");

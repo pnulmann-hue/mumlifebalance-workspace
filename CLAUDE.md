@@ -81,21 +81,28 @@ Liest den Plan, führt jeden Schritt der Reihe nach aus, validiert die Arbeit un
 
 Beispiel: `/implement plans/2026-01-28-wettbewerbs-analyse-command.md`
 
-### /freitag-hooks · /montag (Content-Pipeline seit 2026-04-28)
+### /freitag-hooks · /montag (Content-Pipeline — Voll-Auto seit 2026-05-15)
 
-**Zweck:** Vollautomatische Wochenplanung der Instagram-Posts.
+**Zweck:** Vollautomatische Wochenplanung der Instagram-Posts — **alles in einem Rutsch Fr 08:00.**
 
 **Schedule (cron-driven):**
-- **Fr 08:00 → `/freitag-hooks`:** Liefert via Telegram 20 Hook-Vorschläge (10 pro Profil) basierend auf:
-  - Wochenfokus aus Notion-Wochenplanung-DB
-  - Umfassende Marktanalyse (Pain Points, Wünsche, Ziele, Herausforderungen je Profil)
-  - PIE-Pflicht-Mix + Themen-Variation
-- **Patricia pickt** zwischen Fr und Mo 11:59 — 5 Hooks pro Profil (Format: `Mentoring: M1K, M3K, M5R, M7K, M9R | doTERRA: D2K, D4R, D6K, D8K, D10R`)
-- **Mo 12:00 → `/montag`:** Build + Schedule
-  - Klont 3 Karussells + 2 Reel-Cover pro Profil aus Canva-Master-Templates
-  - Setzt Texte ein (Patricia-Voice, Compliance-Check, Layout-Sanity)
-  - Schedulet Karussells DIREKT via Blotato für Mi/Fr 19:30 (Mentoring + doTERRA)
-  - Reel-Cover bleiben bereit zum Drehen — Patricia dreht Reels manuell
+- **Fr 08:00 → `/freitag-hooks` (VOLL-AUTO seit 2026-05-15):**
+  1. Marktanalyse (Pain/Wunsch/Ziel/Herausforderung pro Profil)
+  2. Wochenfokus aus Notion lesen
+  3. 20 Hooks generieren (10/Profil) — Stakkato-Pflicht-Check aktiv
+  4. **Default-Pick algorithmisch** (5+5 deterministisch — Wochenfokus-Priorität, PIE-3-3-3-1, Launch-Boost wenn aktiv)
+  5. **Build** aller 4 Karussell-Briefings + Render der PNGs
+  6. **Schedule via WordPress + Blotato** für Mo-Sa der nächsten Woche
+  7. **Reel-Drehbuch-Master** für die R-Picks
+  8. Telegram-Push: „Wochenpaket fertig — du hast Wochenende für Override"
+
+- **Patricia-Override am Wochenende** via Chat:
+  - `"KW [N+1] abbrechen + neu picken"` → Skill canceln Blotato + lässt neu picken
+  - `"M3 raus, M7 rein"` → einzelner Post-Swap + Reschedule
+  - `"Caption M3 ändern: [Text]"` → Caption-Update lokal + Blotato
+  - `"Reschedule M3 auf Di"` → Slot-Verschiebung
+
+- **`/montag` ist Plan B** (Fallback wenn Fr-Auto fehlschlägt) — kann manuell getriggert werden für 5+5-Pick-Build.
 
 **Harte Commitments:**
 - Zero invented numbers (nur Input oder `patricia-expertise.md`)

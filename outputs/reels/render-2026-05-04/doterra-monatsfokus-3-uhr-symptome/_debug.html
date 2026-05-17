@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Karussell-Render</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; }
+  body { font-family: 'Source Sans 3', sans-serif; color: #0c1c30; }
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-brand {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .footer-meta {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .top-tag {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+  .slide-num-circle {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+  }
+</style>
+</head>
+<body>
+
+      <div class="slide reel-cover v1" style="
+        width: 1080px;
+        height: 1920px;
+        background: #dc822e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 280px 100px;
+        position: relative;
+        overflow: hidden;
+      ">
+        <div style="
+          width: 60px;
+          height: 3px;
+          background: rgba(241, 236, 221, 0.85);
+          margin-bottom: 100px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 86px;
+          line-height: 1.16;
+          color: #f1ecdd;
+          text-align: center;
+          max-width: 880px;
+          margin-bottom: 50px;
+        ">Du wachst um 3 auf. Vergisst Wörter mitten im Satz.</h1>
+
+        <p style="
+          font-family: 'Philosopher', serif;
+          font-style: italic;
+          font-size: 38px;
+          line-height: 1.42;
+          color: rgba(241, 236, 221, 0.85);
+          text-align: center;
+          max-width: 820px;
+        ">Bist um 15 Uhr leer obwohl du gegessen hast. Bei mir war es das.</p>
+
+        <div style="
+          position: absolute;
+          left: 60px;
+          bottom: 100px;
+          color: rgba(241, 236, 221, 0.85);
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 26px;
+          font-weight: 500;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+        ">MUM LIFE BALANCE · REEL</div>
+      </div>
+    
+</body>
+</html>
