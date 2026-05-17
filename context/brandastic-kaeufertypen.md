@@ -1,3 +1,7 @@
+---
+tags: [externe-wissen, brandastic]
+---
+
 # Brandastic — Persönlichkeitstypen (DISG) + AIDA-Framework
 
 **Quelle:** `reference/Brandastic/Kopie von Persönlichkeitstypen und AIDA.docx`

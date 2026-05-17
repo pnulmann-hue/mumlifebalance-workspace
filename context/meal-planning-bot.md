@@ -1,3 +1,7 @@
+---
+tags: [mealplan]
+---
+
 # Meal Planning Bot — Briefing-Dokument
 
 ## 1. Haushalt & Personen

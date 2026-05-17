@@ -1,3 +1,7 @@
+---
+tags: [content, framework, karussell]
+---
+
 # Karussell-Framework — Mum Life Balance
 
 > **PFLICHT vor jedem Text-Output** (Hook, Folien-Text, Caption, CTA): [`ki-phrasen-blackliste.md`](ki-phrasen-blackliste.md) — 5-Punkte-Pflicht-Prüfung gegen KI-Floskeln. Bei Konflikt mit Julia-Trost-Templates: **Blackliste gewinnt.**
@@ -326,3 +330,14 @@ Aktuell: „30 Min. am Handy". **Julia ergänzt:** Reply-Tonalität = wie bei ei
 - **Zitat-als-Karussell** ohne eigenen Mehrwert
 - **Kein CTA / nur „Link in Bio"** — immer Keyword-basierter CTA
 - **Cover-Hook in Caption-Opener wiederholen** — Caption-Opener muss neu formulieren
+
+---
+
+## 🔗 Verwandte Notizen
+
+- [[hook-framework]] — Cover-Hook
+- [[reels-framework]] — Zwillings-Skill
+- [[caption-formeln]] — Caption für Karussell
+- [[brand-voice]] — Tonalität
+- [[manychat-keywords]] — DM-Trigger im Karussell
+- [[_MOCs/MOC-Content-Engine|Content-Engine (Map)]]

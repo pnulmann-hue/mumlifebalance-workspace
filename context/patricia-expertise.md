@@ -1,3 +1,7 @@
+---
+tags: [patricia, expertise]
+---
+
 # Patricias Expertise — Lehrinhalte + Brand Voice
 
 **Zweck:** Wissensbasis für /reels + /karussell + Scheduled Tasks. Extrahiert aus den Transkripten der 4 aktiven Kurse. Diese Datei ist **Pflicht-Lesung** bei jeder Content-Generierung.

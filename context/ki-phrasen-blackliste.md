@@ -1,3 +1,7 @@
+---
+tags: [brand, voice]
+---
+
 # KI-Phrasen-Blackliste — Patricias Anti-Floskel-Regeln
 
 **Quelle:** Patricias eigene kuratierte Blackliste (ursprünglich `KB04 — Floskeln-Blacklist-optimiert` aus Google Drive, synchronisiert 2026-04-22).

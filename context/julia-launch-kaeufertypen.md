@@ -1,3 +1,7 @@
+---
+tags: [externe-wissen, julia-trost, sales]
+---
+
 # Julia Trost — 6 Launch-Käufertypen
 
 **Quelle:** `reference/julia-trost/9. Launchen.pdf` (Seiten 46-66) + `Launch queen workbook.pdf` (Seiten 8-15)

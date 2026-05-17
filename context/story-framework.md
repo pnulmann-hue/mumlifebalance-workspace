@@ -1,3 +1,7 @@
+---
+tags: [content, framework, story]
+---
+
 # Story-Framework — Patricias Daily Story Sales Companion
 
 **Erstellt:** 2026-04-30
@@ -376,3 +380,15 @@ Der Skill ist erfolgreich, wenn:
 - Käufertyp-Mix über 7 Tage **alle 4 DISG-Achsen** abdeckt
 - doTERRA-Stories **0 Compliance-Verstösse** haben
 - Patricia an Tagen ohne Lust trotzdem mit One-Slide posten kann
+
+---
+
+## 🔗 Verwandte Notizen
+
+- [[julia-stories-die-verkaufen]] — Slide-Struktur + 7 Regeln
+- [[julia-insta-stories-anleitung]] — 10 Verkaufs-Templates
+- [[julia-story-ideen]] — 3-Säulen-Bibliothek
+- [[brandastic-kaeufertypen]] — DISG (4 Typen)
+- [[nadja-story-prompts]] — 7 Käuferpersonas
+- [[hook-framework]] — Story-Hook (Slide 1)
+- [[_MOCs/MOC-Content-Engine|Content-Engine (Map)]]

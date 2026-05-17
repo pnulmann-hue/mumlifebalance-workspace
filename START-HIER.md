@@ -6,6 +6,22 @@ Dein Dashboard. Von hier kommst du zu allem, was Claude und du gemeinsam erarbei
 
 ---
 
+## 🗺️ Themen-Karten (Maps of Content)
+
+Jede Karte gruppiert alle Files ihres Themas und vernetzt sie. **Hier rein wenn du zu einem Bereich tauchen willst.**
+
+- [[_MOCs/MOC-Brand-Voice|🎨 Brand & Voice]]
+- [[_MOCs/MOC-Produkte-Funnels|🪜 Produkte & Funnels]]
+- [[_MOCs/MOC-Content-Engine|📱 Content-Engine (Reels/Karussells/Stories)]]
+- [[_MOCs/MOC-doTERRA|🌿 doTERRA]]
+- [[_MOCs/MOC-Markt-Research|🔍 Markt-Research & Konkurrenz]]
+- [[_MOCs/MOC-Externe-Wissensbasen|📚 Externe Wissensbasen (Julia/Hormozi/Brandastic)]]
+- [[_MOCs/MOC-Mealplan|🥗 Mealplan & Ernährung]]
+- [[_MOCs/MOC-Garten|🌱 Garten]]
+- [[_MOCs/MOC-Tools-Skripte|🛠️ Tools & Skripte]]
+
+---
+
 ## 👤 Wer bin ich?
 
 - [[context/patricia-vollprofil|Patricia-Vollprofil]] — Brand-Voice, Wortschatz, Verbote (Pflicht-Lese vor jedem Customer-Output)

@@ -1,3 +1,7 @@
+---
+tags: [externe-wissen, julia-trost, story]
+---
+
 # Julia Trost — Schritt-für-Schritt Insta-Stories (10 Verkaufs-Templates)
 
 **Quelle:** `reference/julia-trost/Schritt für Schritt Anleitung Insta Storys.pdf` (29 Seiten)

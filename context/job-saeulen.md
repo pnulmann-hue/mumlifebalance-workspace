@@ -1,3 +1,7 @@
+---
+tags: [strategy, content]
+---
+
 # Job-Säulen — die zweite Achse von Patricias Content
 
 **Erstellt:** 2026-05-08

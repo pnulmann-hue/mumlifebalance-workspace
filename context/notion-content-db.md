@@ -1,3 +1,7 @@
+---
+tags: [notion, content]
+---
+
 # Notion Content-Database — Mapping für Assistenten
 
 **Zweck:** Zentrale Referenz für /reels, /karussell und alle Scheduled Tasks, wie mit den Notion-DBs zu interagieren ist.

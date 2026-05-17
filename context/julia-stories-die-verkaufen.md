@@ -1,3 +1,7 @@
+---
+tags: [externe-wissen, julia-trost, story]
+---
+
 # Julia Trost — Stories die verkaufen (Kern-Methodik)
 
 **Quelle:** `reference/julia-trost/8. Stories die verkaufen.pdf` (52 Seiten)

@@ -1,3 +1,7 @@
+---
+tags: [content, manychat, automation]
+---
+
 # ManyChat-Keywords — Mum Life Balance
 
 Zentrale Liste aller aktiven ManyChat-Keywords für Instagram-Kommentar-Trigger.
@@ -75,3 +79,13 @@ Der `/reels`- und `/karussell`-Assistent wählt IMMER aus dieser Liste — niema
 | 5 — Digitale Produkte & Automation  | `PRODUKT`       | `THEMA`, `QUIZ` |
 
 Der Assistent nutzt das **Primär-Keyword** als Default und wechselt bei Wiederholung zum Alternativ-Keyword, um Abwechslung zu schaffen.
+
+---
+
+## 🔗 Verwandte Notizen
+
+- [[caption-formeln]] — Caption mit Keyword
+- [[notion-content-db]] — Content-Tracking
+- [[karussell-framework]] — Karussell-DM-Trigger
+- [[reels-framework]] — Reel-DM-Trigger
+- [[_MOCs/MOC-Content-Engine|Content-Engine (Map)]]

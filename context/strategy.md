@@ -1,3 +1,7 @@
+---
+tags: [strategy]
+---
+
 # Strategie
 
 ## Fokuszeitraum

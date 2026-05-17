@@ -1,3 +1,7 @@
+---
+tags: [content, framework, reels]
+---
+
 # Reels-Framework — Mum Life Balance
 
 > **PFLICHT vor jedem Text-Output** (Hook, Caption, Reel-Skript, CTA): [`ki-phrasen-blackliste.md`](ki-phrasen-blackliste.md) — 5-Punkte-Pflicht-Prüfung gegen KI-Floskeln (Nicht/Sondern, Dreier-Stakkato, Worthülsen, „Stell dir vor...", „So wirst du...", Marketing-Buzzwords). Bei Konflikt mit Julia-Trost-Templates: **Blackliste gewinnt.**
@@ -1154,3 +1158,14 @@ Julia: „Wenn eine Person dir eine Frage stellt, haben mindestens 10 weitere di
 Julia ordnet Reels unter Monetarisierung ein. Jeder Reel = ein Verkaufs-Asset. Kein Reel mehr ohne CTA auf ein Produkt (Minikurs oder 0€-Produkt).
 
 **ManyChat-Trigger-Regel (technisch):** Trigger-Wort muss „ist" sein, nicht „enthält" (sonst falsche Auslösung durch zufällige Wort-Erwähnungen).
+
+---
+
+## 🔗 Verwandte Notizen
+
+- [[hook-framework]] — 3-Sek.-Regel
+- [[karussell-framework]] — Zwillings-Skill
+- [[caption-formeln]] — Caption für Reel
+- [[brand-voice]] — Tonalität
+- [[manychat-keywords]] — DM-Trigger im Reel
+- [[_MOCs/MOC-Content-Engine|Content-Engine (Map)]]

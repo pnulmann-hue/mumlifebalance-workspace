@@ -1,3 +1,7 @@
+---
+tags: [content, framework, hooks]
+---
+
 # Hook-Framework — Instagram Karussells
 
 > **PFLICHT vor jedem Hook-Output:** [`ki-phrasen-blackliste.md`](ki-phrasen-blackliste.md) — 5-Punkte-Pflicht-Prüfung. Besonders scharf: keine Nicht/Sondern-Konstrukte, keine „Stell dir vor...", keine „So wirst du...", keine Marketing-Buzzwords („Game-Changer", „Level-Up", „Die ultimative..."), keine abstrakten Benefits („Leichtigkeit", „Balance", „sichtbar werden"). Bei Konflikt mit Julia-Trost-Templates: **Blackliste gewinnt.**
@@ -157,3 +161,15 @@ Niemals nur das Werkzeug, immer die Alltagsszene dahinter:
 - ✅ „Ins Lieblingskleid passen, dich trauen"
 - ❌ „Ich trinke jeden Morgen Wasser mit VMG+"
 - ✅ „Ich habe eine Morgen-Routine die mir 2 Stunden Energie zurückgibt"
+
+---
+
+## 🔗 Verwandte Notizen
+
+- [[brand-voice]] — Hook-Tonalität
+- [[karussell-framework]] — Hook → Folie 1
+- [[reels-framework]] — Hook → erste 3 Sek.
+- [[story-framework]] — Hook → Slide 1
+- [[caption-formeln]] — Hook → Caption-Anfang
+- [[ki-phrasen-blackliste]] — Was NICHT verwendet wird
+- [[_MOCs/MOC-Content-Engine|Content-Engine (Map)]]

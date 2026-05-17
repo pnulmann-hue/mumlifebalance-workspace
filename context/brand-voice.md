@@ -1,3 +1,7 @@
+---
+tags: [brand, voice]
+---
+
 # Brand Voice — Mum Life Balance
 
 > **PFLICHT vor jedem Text-Output:** [`ki-phrasen-blackliste.md`](ki-phrasen-blackliste.md) — 5-Punkte-Pflicht-Prüfung gegen KI-Floskeln (Nicht/Sondern, Dreier-Stakkato, Worthülsen, Buzzwords, abstrakte Begriffe). Bei Konflikt mit Julia-Trost-Templates: Blackliste gewinnt.
@@ -137,3 +141,14 @@ Jedes Content-Stück zusätzlich zur Pillar nach **P**ersönlichkeit / **I**nspi
 Julia: „Wenn dir jemand kommentiert, schreib weiter — wie bei einem Gespräch im echten Leben. **Nicht: Danke, kauf meinen Kurs.**"
 
 Reply-Framing: So wie du einer Freundin auf WhatsApp schreiben würdest. Kein „Danke für deine Nachricht!", sondern echte Reaktion (Frage zurück, Emoji, kurze Geschichte). Jeder Reply = Mini-Conversion.
+
+---
+
+## 🔗 Verwandte Notizen
+
+- [[patricia-vollprofil]] — Wortschatz, Verbote, Repel-Filter
+- [[ki-phrasen-blackliste]] — Wörter die NIE in Outputs
+- [[hook-framework]] — Hook-Patterns
+- [[caption-formeln]] — Caption-Strukturen
+- [[brand-identity]] — Farben, Schriften, Logo
+- [[_MOCs/MOC-Brand-Voice|Brand & Voice (Map)]]

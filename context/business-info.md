@@ -1,3 +1,7 @@
+---
+tags: [strategy, business]
+---
+
 # Business-Informationen
 
 ## Überblick
@@ -137,3 +141,15 @@ Wie stark sollen die beiden Welten miteinander verbunden sein? Werden regenerier
 ---
 
 _Hohes Niveau — genug um Claude zu orientieren, kein Unternehmens-Wiki._
+
+---
+
+## 🔗 Verwandte Notizen
+
+- [[patricia-vollprofil]] — Brand-Voice & Verbote
+- [[patricia-expertise]] — Expertise & Erfahrung
+- [[strategy]] — Strategische Ebene
+- [[saeulen-mentoring]] — 3 Mentoring-Säulen
+- [[job-saeulen]] — Wirkungs-Achse
+- [[notion-produkte-db]] — Produkt-Register
+- [[_MOCs/MOC-Produkte-Funnels|Produkte & Funnels (Map)]]

@@ -1,3 +1,7 @@
+---
+tags: [notion, produkt]
+---
+
 # Notion Produkte-DB — Felder & Mapping
 
 **DB-URL:** https://www.notion.so/2ae7078e8b7e81efaafaf03993ef344f?v=2ae7078e8b7e818f9d79000cab96bd3b
@@ -109,3 +113,13 @@ Z  (grosses Produkt → Zielpunkt)
 ## Update-Hinweis
 
 **Wenn Patricia die exakte Notion-DB-Struktur teilt, aktualisiere diese Datei** mit den echten Feldnamen, Select-Optionen und Pflichtfeldern. Solange das nicht geschehen ist, arbeite mit der erwarteten Struktur oben.
+
+---
+
+## 🔗 Verwandte Notizen
+
+- [[business-info]] — Produkt-Strategie
+- [[active-funnels.json|Active Funnels (JSON)]]
+- [[notion-content-db]] — Content-Verknüpfung
+- [[saeulen-mentoring]] — Mentoring-Produkte
+- [[_MOCs/MOC-Produkte-Funnels|Produkte & Funnels (Map)]]

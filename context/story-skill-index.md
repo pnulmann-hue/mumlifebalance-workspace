@@ -1,3 +1,7 @@
+---
+tags: [content, story, framework]
+---
+
 # /story Skill — Vollständiger Index
 
 **Stand:** 2026-05-01 · Single-Source-Index für GitHub-Actions-Reminder-Aktion und alle Skill-Folge-Arbeiten.

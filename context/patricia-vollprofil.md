@@ -1,3 +1,7 @@
+---
+tags: [brand, voice, patricia]
+---
+
 # Patricia · Vollprofil
 
 > **Pflicht-Lese vor jedem Customer-Output** (Stories, Karussells, Reels, Captions, Sales-Pages, DMs, Newsletter, Workbooks).
@@ -1330,3 +1334,14 @@ In A5 hatte Patricia gefürchtet, dass die Kinder in 20 Jahren sagen: *„Mama h
 ---
 
 *Ende Vollprofil. Source: 35-Fragen-Coaching-Interview Patricia × Claude, 2026-05-04 bis 2026-05-05 + Tiefen-Interview Block A-I, 2026-05-09.*
+
+---
+
+## 🔗 Verwandte Notizen
+
+- [[brand-voice]] — Tonalität & Beispieltexte
+- [[hook-framework]] — Hook-Patterns
+- [[ki-phrasen-blackliste]] — Verbotene Wörter
+- [[business-info]] — Positionierung beider Profile
+- [[caption-formeln]] — Caption-Strukturen
+- [[_MOCs/MOC-Brand-Voice|Brand & Voice (Map)]]

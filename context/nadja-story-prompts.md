@@ -1,3 +1,7 @@
+---
+tags: [externe-wissen, nadja-grunenberg, story]
+---
+
 # Nadja Grunenberg — 7 Käuferpersonas + Story-Skripte
 
 **Quelle:** `reference/Nadja Grunenberg/Social Media Story Prompts (1).pdf` (98 Seiten)

@@ -1,3 +1,7 @@
+---
+tags: [externe-wissen, julia-trost, story]
+---
+
 # Julia Trost — Story-Ideen-Framework (3-Säulen-System)
 
 **Quelle:** `reference/julia-trost/Story Ideen - Tabellenblatt1.pdf`

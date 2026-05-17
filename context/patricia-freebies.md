@@ -1,3 +1,7 @@
+---
+tags: [freebies, sales]
+---
+
 # Patricias Freebies — Inhalte + Content-Bezüge
 
 **Zweck:** Wissensbasis für /reels + /karussell + Scheduled Tasks. Damit der Assistent in Captions auf Freebies Bezug nimmt (z.B. „Im Starterguide zeig ich dir exakt wie du Zeile 1 deiner Bio baust — Kommentar SICHTBAR und ich schick ihn dir"), braucht er die Inhalte + Cross-Referenz zu den Pillars.

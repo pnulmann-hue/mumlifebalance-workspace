@@ -1,3 +1,7 @@
+---
+tags: [strategy, mentoring]
+---
+
 # Patricias 3 Säulen — Mentoring-Profil
 
 **Single Source of Truth** für `/freitag-hooks`, `/daily-story-render`, `/montag` und alle Content-Skills die das Mentoring-Profil bedienen.
@@ -333,3 +337,13 @@ Damit `/freitag-hooks` automatisch alles findet, ergänze in der **Monatsplanung
 6. Sinn & Verbundenheit
 
 Diese sind dokumentiert in `context/doterra/patricia-wendepunkt-story.md`. `/freitag-hooks` für doTERRA nutzt diese 6 Säulen, **nicht** die 3 Mentoring-Säulen.
+
+---
+
+## 🔗 Verwandte Notizen
+
+- [[business-info]] — Positionierung Mentoring-Profil
+- [[job-saeulen]] — Wirkungs-Achse (parallel zur Themen-Achse)
+- [[strategy]] — Strategische Ebene
+- [[patricia-expertise]] — Expertise-Mapping
+- [[_MOCs/MOC-Produkte-Funnels|Produkte & Funnels (Map)]]

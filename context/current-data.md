@@ -1,3 +1,7 @@
+---
+tags: [status]
+---
+
 # Aktuelle Daten
 
 > Stand: April 2026 — regelmässig aktualisieren, veraltete Zahlen begrenzen Claudes Nützlichkeit.

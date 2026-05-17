@@ -1,3 +1,7 @@
+---
+tags: [content, framework, captions]
+---
+
 # Caption-Formeln — Instagram Karussells
 
 > **PFLICHT vor jedem Text-Output:** [`ki-phrasen-blackliste.md`](ki-phrasen-blackliste.md) — 5-Punkte-Pflicht-Prüfung gegen KI-Floskeln. Bei Konflikt mit Julia-Trost-Templates: **Blackliste gewinnt.** Beispiel: „Stell dir vor..." steht auf der Blackliste und darf NICHT verwendet werden — auch nicht als Visualisierungs-Trigger aus dem Julia-Trost-Sync. Stattdessen: direkt in die Szene einsteigen („Du sitzt um 23 Uhr am Laptop…").
@@ -305,3 +309,14 @@ Julia: Das **gleiche Keyword** über mehrere Beiträge hinweg konsistent nutzen.
 3. **Ziel HINTER dem Ziel** kommunizieren — nie das Werkzeug, immer die Alltagsszene
 4. **Mut zur Wiederholung** — gleiche Pillar-Botschaft in 4-5 Caption-Varianten/Monat
 5. **Preis-Anker & Alltags-Vergleich** — wenn Preis genannt, IMMER Anker + Alltags-Vergleich
+
+---
+
+## 🔗 Verwandte Notizen
+
+- [[hook-framework]] — Caption-Anfang
+- [[brand-voice]] — Tonalität
+- [[manychat-keywords]] — DM-CTA
+- [[karussell-framework]] — Karussell-Captions
+- [[reels-framework]] — Reel-Captions
+- [[_MOCs/MOC-Content-Engine|Content-Engine (Map)]]

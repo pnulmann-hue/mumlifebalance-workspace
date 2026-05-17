@@ -1,0 +1,31 @@
+---
+tags: [moc, research, konkurrenz]
+---
+
+# 🔍 Markt-Research & Konkurrenz — Map of Content
+
+Daten-Grundlage für jeden Content-Output. Patricias Mantra: *„Ich will dass meine Zielgruppe denkt, ich kann ihre Gedanken lesen."*
+
+## 🎯 Daten-Quellen
+- [[competitor-watchlist.json|Konkurrenz-Watchlist]] — definierte Accounts (Apify-Cron täglich)
+- [[discovery-keywords.json|Discovery-Keywords]] — Nischen-Hashtags (monatlicher Cron)
+
+## 📊 Live-Daten (Ordner)
+- `outputs/apify-runs/` — Tägliche Scrapes (gitignored, im Repo bleibt nur jüngster)
+- `outputs/marktrecherche/` — Verarbeitete Berichte
+- `outputs/zielgruppen-research/` — Persona-Analysen
+- `outputs/freitag/markt-analyse-KW20.md` — Aktuelle Wochenanalyse
+
+## 📋 Templates
+- [[marktrecherche-bericht-template|Marktrecherche-Bericht-Template]]
+
+## ⚡ Workflows
+- **Täglich 06:00**: GitHub Action `apify-scrape.yml` scraped 6 Konkurrenz-Accounts
+- **Monatlich 1.**: `apify-discover.yml` findet neue Top-Creator
+- Doku: in `CLAUDE.md` Abschnitt "Apify Konkurrenz-Scraper"
+
+## 🎯 Verwandte Bereiche
+- [[MOC-Content-Engine]] — Hook-Generator nutzt Marktdaten
+- [[MOC-Externe-Wissensbasen]] — Julia + Hormozi für Markt-Verständnis
+
+#research #konkurrenz #markt

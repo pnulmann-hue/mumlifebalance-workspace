@@ -1,3 +1,7 @@
+---
+tags: [notion, business]
+---
+
 # Notion Business Brain — Master-Dokumentation
 
 **Pflicht-Lese-Datei für alle Skills.** Beschreibt Patricias Notion-System,

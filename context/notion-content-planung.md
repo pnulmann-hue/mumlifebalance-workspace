@@ -1,3 +1,7 @@
+---
+tags: [notion, content]
+---
+
 # Notion-Content-Planung — Lese-Logik für /freitag-hooks + /daily-story-render
 
 **Erstellt:** 2026-04-30

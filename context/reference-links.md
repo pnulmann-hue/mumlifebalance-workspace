@@ -1,3 +1,7 @@
+---
+tags: [reference]
+---
+
 # Referenz-Links
 
 ## Notion
