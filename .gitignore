@@ -167,11 +167,18 @@ Screenshot*.jpg
 # Ausnahmen: diese .png/.jpg-Files bleiben drin (wichtige Brand-Assets in scripts/)
 !scripts/bio-check-bot/public/images/patricia-hero.jpg
 
+# Ausnahmen: Mama-CEO Webinar-Landingpage (Hero + About Foto + Deploy-ZIP)
+!outputs/produkte/mama-ceo/08-funnel/landingpage-mastermind/hero.jpg
+!outputs/produkte/mama-ceo/08-funnel/landingpage-mastermind/patricia.jpg
+!outputs/produkte/mama-ceo/08-funnel/mama-ceo-webinar-fertig.zip
+
 # Ausnahmen: produktive Launch-Assets (designed Story-/Karussell-PNGs zum direkten Hochladen)
 !outputs/funnels/**/*.png
 !outputs/funnels/**/*.jpg
 !outputs/bio-check-bot/**/*.png
 !outputs/bio-check-bot/**/*.jpg
+!outputs/produkte/**/story-visuals/**/*.png
+!outputs/produkte/**/story-visuals/**/*.jpg
 
 # ============================================================
 # REFERENZ-PDFs BLEIBEN LOKAL
@@ -270,3 +277,6 @@ reference/julia-trost/Vorlagen Story LML.pdf
 !scripts/story-render-bot/render/**
 # render/node_modules wird von Railway frisch installiert
 scripts/story-render-bot/render/node_modules/
+
+# Mama-CEO Webinar-Mails-Vorschau ZIP
+!outputs/produkte/mama-ceo/08-funnel/webinar-mails-vorschau.zip

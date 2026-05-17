@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Mama-CEO Webinar — Story-Ankündigung</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+body{background:#1a1a1a;font-family:'Source Sans 3',Arial,sans-serif}
+.grid{display:flex;flex-wrap:wrap;gap:40px;padding:40px;justify-content:center}
+
+/* Variante A — Foto-dominant */
+.slide{
+  position:relative;
+  width:1080px;height:1920px;
+  background:#0c1c30;
+  overflow:hidden;
+  color:#f1ecdd;
+}
+.slide .photo{
+  position:absolute;inset:0;
+  background-image:url('../landingpage-mastermind/hero.jpg');
+  background-size:cover;
+  background-position:50% 18%;
+}
+.slide .gradient{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,
+    rgba(12,28,48,0.55) 0%,
+    rgba(12,28,48,0.15) 18%,
+    rgba(12,28,48,0.05) 32%,
+    rgba(12,28,48,0.55) 58%,
+    rgba(12,28,48,0.95) 78%,
+    rgba(12,28,48,0.99) 100%);
+}
+.slide .content{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;
+  padding:180px 70px 220px 70px;
+}
+.slide .top{flex:0 0 auto;text-align:center}
+.slide .middle{flex:1 1 auto;display:flex;flex-direction:column;justify-content:flex-end;text-align:center;align-items:center}
+.slide .bottom{flex:0 0 auto;margin-top:50px}
+
+/* Eyebrow Tag */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:14px;
+  background:#dc822e;color:#ffffff;
+  font-family:'Source Sans 3',sans-serif;
+  font-weight:700;font-size:24px;letter-spacing:4px;
+  text-transform:uppercase;
+  padding:14px 28px;border-radius:50px;
+  box-shadow:0 8px 32px rgba(220,130,46,0.4);
+}
+.eyebrow::before{content:'';width:12px;height:12px;background:#fff;border-radius:50%;animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.7)}}
+
+/* Headline */
+.headline{
+  font-family:'Philosopher',Georgia,serif;
+  font-weight:700;
+  font-size:170px;line-height:0.95;
+  color:#f1ecdd;
+  letter-spacing:-2px;
+  margin-bottom:30px;
+  text-shadow:0 6px 32px rgba(0,0,0,0.7);
+}
+.headline em{
+  font-style:italic;font-weight:400;
+  color:#dc822e;
+  font-size:62px;display:block;
+  letter-spacing:1px;line-height:1;
+  margin-bottom:18px;
+  text-transform:uppercase;
+  font-family:'Source Sans 3',sans-serif;
+  font-weight:600;
+  letter-spacing:5px;
+}
+
+/* Subline */
+.subline{
+  font-family:'Philosopher',Georgia,serif;
+  font-style:italic;font-weight:400;
+  font-size:40px;line-height:1.35;
+  color:#f1ecdd;
+  max-width:920px;
+  margin-bottom:50px;
+  text-shadow:0 2px 16px rgba(0,0,0,0.7);
+}
+
+/* Datum-Block */
+.datum-block{
+  display:inline-flex;flex-direction:column;
+  background:rgba(18,130,140,0.95);
+  backdrop-filter:blur(12px);
+  padding:32px 48px;border-radius:24px;
+  border:2px solid rgba(241,236,221,0.2);
+  box-shadow:0 16px 48px rgba(0,0,0,0.4);
+  margin-bottom:40px;
+}
+.datum-block .day{
+  font-family:'Source Sans 3',sans-serif;
+  font-weight:600;font-size:26px;letter-spacing:5px;
+  text-transform:uppercase;color:rgba(241,236,221,0.7);
+  margin-bottom:8px;
+}
+.datum-block .date{
+  font-family:'Philosopher',Georgia,serif;
+  font-weight:700;font-size:84px;line-height:1;color:#f1ecdd;
+}
+.datum-block .time{
+  font-family:'Source Sans 3',sans-serif;
+  font-weight:500;font-size:36px;color:#f1ecdd;
+  margin-top:6px;
+}
+
+/* CTA */
+.cta-block{
+  background:#dc822e;
+  padding:36px 48px;border-radius:24px;
+  text-align:center;
+  box-shadow:0 16px 48px rgba(220,130,46,0.5);
+}
+.cta-block .cta-text{
+  font-family:'Source Sans 3',sans-serif;
+  font-weight:700;font-size:52px;
+  color:#ffffff;letter-spacing:2px;
+  text-transform:uppercase;line-height:1;
+  margin-bottom:10px;
+}
+.cta-block .cta-sub{
+  font-family:'Source Sans 3',sans-serif;
+  font-weight:500;font-size:26px;
+  color:rgba(255,255,255,0.9);
+  letter-spacing:1px;
+}
+
+/* Frame label (preview only, gets hidden on render) */
+.frame-label{
+  position:absolute;top:-32px;left:0;
+  font-family:'Source Sans 3',sans-serif;
+  font-size:14px;color:#888;text-transform:uppercase;letter-spacing:2px;
+}
+.stage-wrap{
+  position:relative;
+  width:340px;height:604px;
+  overflow:hidden;border-radius:24px;
+  box-shadow:0 24px 80px rgba(0,0,0,0.5);
+}
+.stage{transform:scale(0.3148);transform-origin:top left}
+</style>
+</head>
+<body>
+<div class="grid">
+
+<div class="stage-wrap">
+<div class="frame-label">Story · 1080×1920</div>
+<div class="stage">
+
+<div class="slide">
+  <div class="photo"></div>
+  <div class="gradient"></div>
+  <div class="content">
+
+    <div class="top">
+      <span class="eyebrow">GRATIS · LIVE-WEBINAR</span>
+    </div>
+
+    <div class="middle">
+      <h1 class="headline">
+        <em>In 90 Minuten</em>
+        Mama-CEO
+      </h1>
+      <p class="subline">
+        Dein Mama-Leben mit KI-Assistenten umkrempeln.<br>
+        Mental Load abgeben.<br>
+        Zeit fürs Business zurück.
+      </p>
+
+      <div class="datum-block">
+        <div class="day">Mittwoch</div>
+        <div class="date">20. Mai</div>
+        <div class="time">09:00 Uhr</div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="cta-block">
+        <div class="cta-text">→ Jetzt anmelden</div>
+        <div class="cta-sub">Link in Bio · oder DM mit „WEBINAR"</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+</div>
+
+</div>
+</body>
+</html>
