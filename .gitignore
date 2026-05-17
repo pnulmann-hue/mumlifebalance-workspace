@@ -193,6 +193,8 @@ Screenshot*.jpg
 
 # Ausnahme: gerenderte Story-Slides (zum Mobile-Download)
 !outputs/stories/renders/*.png
+!outputs/stories/**/*.png
+!outputs/stories/**/*.jpg
 
 # ============================================================
 # REFERENZ-PDFs BLEIBEN LOKAL

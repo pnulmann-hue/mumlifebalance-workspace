@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "description": "Wochen-Kontext-Cache für KW 20 / 2026 (manuell durch /story-Skill 2026-05-14 angelegt, weil keine Notion-Wochenplanung für KW 20 vorhanden war).",
+    "kw": 20,
+    "jahr": 2026,
+    "wochenstart": "2026-05-11",
+    "wochenende": "2026-05-17",
+    "quelle": "Patricia-Input via /story 2026-05-14"
+  },
+  "fokus_der_woche": "Mama-CEO Launch-Vorbereitung — Anmeldung öffnet Mi 20.5.2026 um 9:00",
+  "content_creation": "Tägliche Story-Sequenzen Tag -6 bis Tag -1 nach Julia-Trost-Launchplan (Vor-Launch · Pain-Spiegel · Pre-Sale-Liste-Aufbau · Glaubenssatz-Brüche · letzte Warnung Frühbucher)",
+  "launch_metadaten": {
+    "produkt": "Mama-CEO",
+    "anmeldung_oeffnet": "2026-05-20T09:00:00+02:00",
+    "fruehbucher_endet": "2026-05-23T09:00:00+02:00",
+    "anmeldung_schliesst": "2026-05-31T23:59:00+02:00",
+    "programm_start": "2026-06-01",
+    "preise_chf": { "fruehbucher": 249, "final": 333, "ab_runde_2": 444 },
+    "plaetze": 15,
+    "pre_sale_keyword": "CEO"
+  },
+  "tag_plan": [
+    { "tag": -6, "datum": "2026-05-14", "phase": "Pain-Spiegel + Pre-Sale-Liste", "kaeufertyp": "blau-wilma",   "julia_template": "T9 + T3" },
+    { "tag": -5, "datum": "2026-05-15", "phase": "Misserfolgs-Story",            "kaeufertyp": "gelb-initiativ","julia_template": "T7" },
+    { "tag": -4, "datum": "2026-05-16", "phase": "Anti-Bali / Glaubenssatz",     "kaeufertyp": "rot-dominant", "julia_template": "T9" },
+    { "tag": -3, "datum": "2026-05-17", "phase": "Methode + KI-Mitarbeiter live","kaeufertyp": "blau-wilma",   "julia_template": "T10" },
+    { "tag": -2, "datum": "2026-05-18", "phase": "Open Loop + Teaser",           "kaeufertyp": "gruen-stetig", "julia_template": "T1" },
+    { "tag": -1, "datum": "2026-05-19", "phase": "Letzte Warnung Frühbucher",    "kaeufertyp": "rot-petra",    "julia_template": "T8 + T4" },
+    { "tag":  0, "datum": "2026-05-20", "phase": "LAUNCH-PAUKENSCHLAG (Sales-Day, Modus 2)", "kaeufertyp": "alle 7 Nadja-Personas", "julia_template": "Mehrere" }
+  ]
+}

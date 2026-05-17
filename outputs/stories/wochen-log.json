@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "description": "Story-Käufertyp-Wochenlog. Wird von /story Modus 1 nach jeder Sequenz aktualisiert, damit DISG-Rotation über die Woche eingehalten wird (alle 4 Achsen pro Woche).",
+    "last_updated": "2026-05-14"
+  },
+  "kw20_2026": [
+    {
+      "datum": "2026-05-14",
+      "wochentag": "Donnerstag",
+      "profil": "mentoring",
+      "kaeufertyp_disg": "blau-gewissenhaft",
+      "nadja_persona": "wilma",
+      "julia_template": "T9 + T3",
+      "modus": "tagesplan",
+      "produkt_fokus": "mama-ceo (launch tag -6) / webinar tag -6",
+      "story_ordner": "2026-05-14-tagesplan-mentoring-mama-ceo-tag-minus-6"
+    },
+    {
+      "datum": "2026-05-15",
+      "wochentag": "Freitag",
+      "profil": "mentoring",
+      "kaeufertyp_disg": "gelb-initiativ",
+      "nadja_persona": "charlie + frank",
+      "julia_template": "T7 + T2",
+      "modus": "tagesplan",
+      "produkt_fokus": "ki-webinar (tag -5)",
+      "story_ordner": "2026-05-15-tagesplan-mentoring-webinar-tag-minus-5-misserfolg"
+    },
+    {
+      "datum": "2026-05-17",
+      "wochentag": "Sonntag",
+      "profil": "mentoring",
+      "kaeufertyp_disg": "gruen-stetig",
+      "nadja_persona": "petra + baerbel",
+      "julia_template": "T1 + T10",
+      "modus": "tagesplan",
+      "produkt_fokus": "ki-webinar (tag -3) · strategie & planung · open loop",
+      "story_ordner": "2026-05-17-tagesplan-mentoring-webinar-tag-minus-3-strategie-traegt"
+    }
+  ]
+}
