@@ -25,6 +25,17 @@
       "modus": "tagesplan",
       "produkt_fokus": "ki-webinar (tag -5)",
       "story_ordner": "2026-05-15-tagesplan-mentoring-webinar-tag-minus-5-misserfolg"
+    },
+    {
+      "datum": "2026-05-17",
+      "wochentag": "Sonntag",
+      "profil": "mentoring",
+      "kaeufertyp_disg": "gruen-stetig",
+      "nadja_persona": "petra + baerbel",
+      "julia_template": "T1 + T10",
+      "modus": "tagesplan",
+      "produkt_fokus": "ki-webinar (tag -3) · strategie & planung · open loop",
+      "story_ordner": "2026-05-17-tagesplan-mentoring-webinar-tag-minus-3-strategie-traegt"
     }
   ]
 }
