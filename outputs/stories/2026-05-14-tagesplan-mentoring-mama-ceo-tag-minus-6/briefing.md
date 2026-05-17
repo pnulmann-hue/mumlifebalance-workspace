@@ -4,7 +4,7 @@
 
 - **Slide 6:** Optionen aus der Card raus — die Card hat doppelt mit Patricias Instagram-Quiz-Sticker konkurriert. Jetzt: Card mittig, kompakt, nur die Frage + Sticker-Slot-Hinweis. Patricia legt den echten Quiz-Sticker drüber mit ihren Optionen (siehe unten).
 - **Slide 7:** „Mama-CEO" namentlich raus — offizieller Reveal ist erst am Webinar Mi 20.5. Neuer Schluss baut Brücke zum Webinar: „Genau dahin führe ich dich — und am Mittwoch zeige ich dir live, wie."
-- **Slide 8:** Pre-Sale-Mama-CEO-CTA komplett ersetzt durch KI-Webinar-Anmeldung. URL `webinar.mumlifebalance.ch`, Mi 20.5. 20:00 Uhr, kostenlos, Live-Q&A.
+- **Slide 8:** Pre-Sale-Mama-CEO-CTA komplett ersetzt durch KI-Webinar-Anmeldung. URL `webinar.mumlifebalance.ch`, Mi 20.5. 9:00 Uhr, kostenlos, Live-Q&A.
 
 ---
 
@@ -21,11 +21,11 @@
 
 ## CTA-Plan (v3)
 
-- **Primärer CTA:** Anmelde-URL `https://webinar.mumlifebalance.ch/` (Webinar Mi 20.5. 20:00, kostenlos)
+- **Primärer CTA:** Anmelde-URL `https://webinar.mumlifebalance.ch/` (Webinar Mi 20.5. 9:00, kostenlos)
 - **Sticker-Variante:** Link-Sticker auf die Webinar-URL direkt im Story-Frame setzen — klickbar
-- **Verstärker:** Countdown-Sticker auf Mi 20.5. 20:00
+- **Verstärker:** Countdown-Sticker auf Mi 20.5. 9:00
 - **Mama-CEO-Reveal:** erst während/nach dem Webinar — Stories Tag -6 bis Tag -1 sprechen nur vom Webinar, nicht vom Produkt
-- **TODO Patricia:** Prüfen ob die Webinar-Anmeldeseite live ist und ob die 20:00-Uhrzeit stimmt (falls nein: in der HTML auf richtige Uhrzeit ändern und neu rendern)
+- **TODO Patricia:** Prüfen ob die Webinar-Anmeldeseite live ist und ob die 9:00-Uhrzeit stimmt (falls nein: in der HTML auf richtige Uhrzeit ändern und neu rendern)
 
 ## Layout-Konzept v2
 
@@ -99,14 +99,14 @@
 
 ### Slide 8 — CTA: KI-Webinar-Anmeldung · v3-NEU
 - **Foto:** `fotos/slide-08-arme-offen.jpg` — Patricia mit ausgebreiteten Armen vor Berglandschaft, Schwarz-Weiss (Bühne-öffnen-Vibe)
-- **Eyebrow:** „MITTWOCH · 20. MAI · 20:00 UHR"
+- **Eyebrow:** „MITTWOCH · 20. MAI · 9:00 UHR"
 - **Card-Text:** „Live-Klasse: wie ich mit **13 KI-Mitarbeitern** und 18 Stunden pro Woche ein Business führe, das jeden Monat verkauft. Kostenlos. Mit Live-Q&A am Schluss."
 - **CTA-Knappheit (orange):** „→ Anmelden: webinar.mumlifebalance.ch · Link in Bio"
 - **Sticker-Empfehlung:**
   - **Link-Sticker** auf die URL `https://webinar.mumlifebalance.ch/` setzen (Instagram macht das klickbar)
-  - ODER **Countdown-Sticker** auf Mi 20.5. 20:00 Uhr setzen — verstärkt Live-Charakter
+  - ODER **Countdown-Sticker** auf Mi 20.5. 9:00 Uhr setzen — verstärkt Live-Charakter
 - **Card-Position:** bottom
-- **Anmerkung Uhrzeit:** Standard-Mama-Slot 20:00 Uhr gewählt (Kinder im Bett). Falls Webinar tatsächlich zu einer anderen Uhrzeit ist — in der HTML/PNG die Uhrzeit anpassen.
+- **Anmerkung Uhrzeit:** Standard-Mama-Slot 9:00 Uhr gewählt (Kinder im Bett). Falls Webinar tatsächlich zu einer anderen Uhrzeit ist — in der HTML/PNG die Uhrzeit anpassen.
 
 ## Voice-Check — 6-Punkte-Pflichtprüfung
 

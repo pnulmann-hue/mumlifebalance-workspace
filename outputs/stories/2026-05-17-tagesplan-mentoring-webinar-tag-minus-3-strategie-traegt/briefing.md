@@ -3,7 +3,7 @@
 ## Kontext
 
 - **Profil:** Mentoring (Onlinebusiness)
-- **Heute:** Sonntag · KW 20 · **Tag -3** vor KI-Webinar Mi 20.5.2026 um 20:00 Uhr
+- **Heute:** Sonntag · KW 20 · **Tag -3** vor KI-Webinar Mi 20.5.2026 um 9:00 Uhr
 - **Patricia-Input (Sprachnotiz 17.5.):**
   - Familie zuhause, Erledigungen für den Garten, Mann in der Werkstatt, Kinder geniessen freie Zeit
   - Patricia nutzt die Zeit fürs Business — drei Stunden Fokuszeit
@@ -11,16 +11,16 @@
   - Kern-Botschaft: Es nützt nichts wenn man Instagram kennt, Produkte kennt, an jedem Webinar dran ist — was wirklich trägt ist Strategie + Planung, die zum Mama-Leben passt (nicht zu Bali-Tagesablauf)
   - Sneakpeek: am Mittwoch kommt was Neues
   - Mama-CEO-Name NICHT erwähnen
-  - Webinar-Reminder: 20.5. 20:00, anmelden
+  - Webinar-Reminder: 20.5. 9:00, anmelden
 - **Käufertyp heute:** Grün / Stetig (Petra-Bärbel) — ruhig, ehrlich, vertrauensvoll
 - **Julia-Template:** T1 („Wie schaffst du das?") + T10 (Persönliche Vorliebe + Expertise)
 - **Hormozi-Layer:** Pain-in-Moments (Sonntag-Setting konkret), Mechanism (Strategie + Planung), Container-Wörter (Strategie / Planung / Mama-Leben), Open Loop für Mittwoch („was Neues")
 
 ## CTA-Plan
 
-- **Primärer CTA:** Anmelde-URL `https://webinar.mumlifebalance.ch/` (Webinar Mi 20.5. 20:00, kostenlos)
+- **Primärer CTA:** Anmelde-URL `https://webinar.mumlifebalance.ch/` (Webinar Mi 20.5. 9:00, kostenlos)
 - **Sticker:** Link-Sticker auf Slide 7 direkt auf die URL setzen — Story klickbar
-- **Verstärker:** Countdown-Sticker auf Mi 20.5. 20:00 (auf Slide 6 oder 7)
+- **Verstärker:** Countdown-Sticker auf Mi 20.5. 9:00 (auf Slide 6 oder 7)
 - **Sneakpeek-Open-Loop:** Slide 5 baut Spannung („Mittwoch kommt was Neues") ohne Mama-CEO-Name zu nennen — Reveal erst im Webinar
 
 ## Slide-Struktur (7 Slides)
@@ -59,13 +59,13 @@
 ### Slide 6 — Webinar-Reminder
 - **Foto:** `fotos/slide-06-einladend.jpg`
 - **Eyebrow:** „FALLS NOCH NICHT PASSIERT"
-- **Card-Text:** „Am Mittwoch ist auch mein **KI-Webinar**. 20:00 Uhr, live, kostenlos. Wenn du noch nicht angemeldet bist — heute ist der richtige Tag dafür, bevor's untergeht."
+- **Card-Text:** „Am Mittwoch ist auch mein **KI-Webinar**. 9:00 Uhr, live, kostenlos. Wenn du noch nicht angemeldet bist — heute ist der richtige Tag dafür, bevor's untergeht."
 - **Akzent:** „KI-Webinar"
-- **Sticker-Empfehlung:** Countdown-Sticker auf Mi 20.5. 20:00
+- **Sticker-Empfehlung:** Countdown-Sticker auf Mi 20.5. 9:00
 
 ### Slide 7 — CTA Webinar
 - **Foto:** `fotos/slide-07-cta-sessel.jpg` — Patricia im Sessel im Pusteblumenfeld, S/W
-- **Eyebrow:** „MITTWOCH · 20. MAI · 20:00 UHR"
+- **Eyebrow:** „MITTWOCH · 20. MAI · 9:00 UHR"
 - **Card-Text:** „Komm dazu, wenn du sehen willst, wie ich mit **drei Stunden Fokuszeit** pro Tag ein Business führe, das auch in Spitalwochen weiterläuft. Kostenlos. Live. Mit Q&A am Schluss."
 - **CTA-Knappheit (orange):** „→ Anmelden: webinar.mumlifebalance.ch · Link in Bio"
 - **Sticker-Empfehlung:** Link-Sticker auf `https://webinar.mumlifebalance.ch/`
@@ -106,9 +106,9 @@ Wochenlog: **Sonntag KW 20 = Grün / Stetig (Petra + Bärbel)** für Webinar-Auf
 
 ## TODOs vor dem Posten
 
-1. **Webinar-Uhrzeit** verifizieren (20:00 als Standard angenommen)
+1. **Webinar-Uhrzeit** verifizieren (9:00 als Standard angenommen)
 2. **Link-Sticker** auf Slide 7 auf `https://webinar.mumlifebalance.ch/`
-3. **Countdown-Sticker** auf Slide 6 oder 7 auf Mi 20.5. 20:00
+3. **Countdown-Sticker** auf Slide 6 oder 7 auf Mi 20.5. 9:00
 4. Optional: Falls in Slide 2 (Setting) ein konkreteres Detail eingebaut werden soll (z.B. „Wir bringen den Hochbeet-Aufsatz fertig" o.ä.) — sag, ich passe an
 
 ## Kontext-Hinweise für nächste Stories

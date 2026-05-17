@@ -3,7 +3,7 @@
 ## Kontext
 
 - **Profil:** Mentoring (Onlinebusiness)
-- **Heute:** Freitag · KW 20 · **Tag -5** vor KI-Webinar Mi 20.5.2026 um 20:00 Uhr
+- **Heute:** Freitag · KW 20 · **Tag -5** vor KI-Webinar Mi 20.5.2026 um 9:00 Uhr
 - **CTA-Ziel:** Webinar-Anmeldungen auf `webinar.mumlifebalance.ch` (kostenlos, Live-Q&A) — Mama-CEO offizieller Reveal erst im Webinar
 - **Käufertyp heute:** Gelb / Initiativ (Charlie + Frank) — Erlebnis-orientiert, mag Geschichten, Energie, „dabei sein"
 - **Story-Säule:** Persönlichkeit (Wendepunkt-Story als Beweis-Träger)
@@ -12,9 +12,9 @@
 
 ## CTA-Plan
 
-- **Primärer CTA:** Anmelde-URL `https://webinar.mumlifebalance.ch/` (Webinar Mi 20.5. 20:00, kostenlos)
+- **Primärer CTA:** Anmelde-URL `https://webinar.mumlifebalance.ch/` (Webinar Mi 20.5. 9:00, kostenlos)
 - **Sticker:** Link-Sticker auf Slide 7 direkt auf die URL setzen — Story wird klickbar
-- **Verstärker:** Countdown-Sticker auf Mi 20.5. 20:00
+- **Verstärker:** Countdown-Sticker auf Mi 20.5. 9:00
 - **Bridge-Logik:** Story baut über Misserfolgs-Bekenntnis (Slide 1-3) → Wendepunkt durch Werkzeuge (Slide 4-5) → Engagement-Frage (Slide 6) → Webinar als „komm und schau live wie das geht" (Slide 7)
 
 ## Slide-Struktur (7 Slides statt 8)
@@ -65,12 +65,12 @@ Tag -5 ist tighter: Misserfolgs-Story braucht klare Dramaturgie. Keine Vorher-Na
 
 ### Slide 7 — CTA: KI-Webinar
 - **Foto:** `fotos/slide-07-pusteblumenfeld-arme.jpg` — Patricia im Pusteblumenfeld mit ausgebreiteten Armen, S/W (Freiheits-Vibe, perfekt für „komm und mach mit")
-- **Eyebrow:** „MITTWOCH · 20. MAI · 20:00 UHR"
+- **Eyebrow:** „MITTWOCH · 20. MAI · 9:00 UHR"
 - **Card-Text:** „Am Mittwoch zeige ich dir live, welche **13 KI-Mitarbeiter** für mich arbeiten — und welche zwei davon du diese Woche selbst aufsetzen kannst. Kostenlos. Mit Live-Q&A."
 - **CTA-Knappheit (orange):** „→ Anmelden: webinar.mumlifebalance.ch · Link in Bio"
 - **Sticker-Empfehlung:**
   - **Link-Sticker** auf `https://webinar.mumlifebalance.ch/` (macht klickbar)
-  - ODER **Countdown-Sticker** auf Mi 20.5. 20:00
+  - ODER **Countdown-Sticker** auf Mi 20.5. 9:00
 - **Akzent:** „13 KI-Mitarbeiter" (Petrol)
 - **Versprechen-Schärfe:** „zwei davon du diese Woche selbst aufsetzen kannst" — konkretes Take-Home-Versprechen, kein Wellness-Talk
 
@@ -116,7 +116,7 @@ Wochenlog: **Freitag KW 20 = Gelb / Initiativ (Charlie + Frank)** für Webinar-A
 
 ## TODOs für Patricia vor dem Posten
 
-1. **Webinar-Uhrzeit verifizieren** — ich hab 20:00 als Standard-Mama-Slot gesetzt (gleich wie Tag -6). Wenn anders → Uhrzeit auf Slide 7 in HTML ändern + re-rendern
+1. **Webinar-Uhrzeit verifizieren** — ich hab 9:00 als Standard-Mama-Slot gesetzt (gleich wie Tag -6). Wenn anders → Uhrzeit auf Slide 7 in HTML ändern + re-rendern
 2. **Link-Sticker** auf Slide 7 direkt auf `https://webinar.mumlifebalance.ch/`
 3. **Slide 6:** Antwort-Sticker drüberlegen (offene Frage statt Quiz). Patricia kann auf einkommende DMs später per Story-Replay oder direkter Antwort reagieren
 4. **Optional:** persönliche Anpassung in Slide 2 oder 3 — wenn Patricia echte zusätzliche Erinnerungs-Details aus dem Frühling 2024 einbauen will, anrufen und neu rendern
