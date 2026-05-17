@@ -1,3 +1,7 @@
+---
+tags: [externe-wissen, julia-trost]
+---
+
 # Julia-Trost-Extract — Stories & Content-Recycling
 
 Quelle: 17 Transkripte aus `reference/julia-trost/Transkripte Videocalls/_sortiert/`

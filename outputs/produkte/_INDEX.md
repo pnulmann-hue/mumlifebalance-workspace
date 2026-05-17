@@ -4,11 +4,11 @@ tags: [moc, produkt]
 
 # 🪜 Produkte — Index
 
-Auto-Index aller Files in `outputs/produkte/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Produkte-Funnels]] für den thematischen Überblick.
+Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnels]] für den thematischen Überblick.
 
 ## Dateien
 
-- 📘 [[README|README]]
+- 📘 [[README]]
 
 ### 📁 audit-2026-04-22
 

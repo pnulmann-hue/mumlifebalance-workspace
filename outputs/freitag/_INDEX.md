@@ -4,7 +4,7 @@ tags: [moc, content, freitag-hooks]
 
 # 📅 Freitag-Hooks — Index
 
-Auto-Index aller Files in `outputs/freitag/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
+Auto-Index aller Files in `outputs/freitag/`. Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
 
 ## Dateien
 

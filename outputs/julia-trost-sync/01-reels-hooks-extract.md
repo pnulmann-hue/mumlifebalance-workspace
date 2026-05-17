@@ -1,3 +1,7 @@
+---
+tags: [externe-wissen, julia-trost]
+---
+
 # Julia-Trost-Extract — Reels & Hooks
 
 _Scan-Datum: 2026-04-22 • Quelle: 16 Transkripte in zwei Kursen (Reels to Cash + IG Reichweiten Booster)_

@@ -4,7 +4,7 @@ tags: [moc, research]
 
 # 🔍 Marktrecherche — Index
 
-Auto-Index aller Files in `outputs/marktrecherche/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Markt-Research]] für den thematischen Überblick.
+Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Research]] für den thematischen Überblick.
 
 ## Dateien
 

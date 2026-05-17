@@ -4,7 +4,7 @@ tags: [moc, research]
 
 # 🎯 Zielgruppen-Research — Index
 
-Auto-Index aller Files in `outputs/zielgruppen-research/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Markt-Research]] für den thematischen Überblick.
+Auto-Index aller Files in `outputs/zielgruppen-research/`. Siehe [[_MOCs/MOC-Markt-Research]] für den thematischen Überblick.
 
 ## Dateien
 

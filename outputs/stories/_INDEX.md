@@ -4,13 +4,13 @@ tags: [moc, content, story]
 
 # 📱 Stories — Index
 
-Auto-Index aller Files in `outputs/stories/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
+Auto-Index aller Files in `outputs/stories/`. Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
 
 ## Dateien
 
 - [[2026-04-26-wandern-beide-profile]]
-- 📘 [[README|README]]
 - [[manus-prompt-mama-ceo-webinar]]
+- 📘 [[README]]
 
 ### 📁 2026-05-14-tagesplan-mentoring-mama-ceo-tag-minus-6
 

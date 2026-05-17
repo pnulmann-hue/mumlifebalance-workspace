@@ -4,7 +4,7 @@ tags: [moc, tools, bot]
 
 # 🤖 Bio-Check Bot — Index
 
-Auto-Index aller Files in `outputs/bio-check-bot/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Tools-Skripte]] für den thematischen Überblick.
+Auto-Index aller Files in `outputs/bio-check-bot/`. Siehe [[_MOCs/MOC-Tools-Skripte]] für den thematischen Überblick.
 
 ## Dateien
 

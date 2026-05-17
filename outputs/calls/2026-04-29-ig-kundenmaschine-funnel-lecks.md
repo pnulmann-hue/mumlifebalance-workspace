@@ -1,3 +1,7 @@
+---
+tags: [call]
+---
+
 # Call-Plan · 2026-04-29 — Instagram Kundenmaschine Mitglieder
 
 **Call-Titel (für Ankündigung):** „Wo bleibt dein Geld eigentlich liegen? — die 4 typischen Lecks im Mompreneur-Funnel"

@@ -4,7 +4,7 @@ tags: [moc, externe-wissen, julia-trost]
 
 # 📚 Julia-Trost Sync — Index
 
-Auto-Index aller Files in `outputs/julia-trost-sync/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Externe-Wissensbasen]] für den thematischen Überblick.
+Auto-Index aller Files in `outputs/julia-trost-sync/`. Siehe [[_MOCs/MOC-Externe-Wissensbasen]] für den thematischen Überblick.
 
 ## Dateien
 

@@ -1,3 +1,7 @@
+---
+tags: [externe-wissen, julia-trost]
+---
+
 # Julia-Trost-Extract — Content-Architektur
 
 _Quelle: `reference/julia-trost/Transkripte Videocalls/_sortiert/Content (der verkauft)/` — 44 Dateien, davon ~22 unique Themen (Rest Dubletten mit Nummern-Suffix). Scan-Datum: 2026-04-22._

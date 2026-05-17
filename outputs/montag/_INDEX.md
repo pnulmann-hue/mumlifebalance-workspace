@@ -4,7 +4,7 @@ tags: [moc, content, montag-build]
 
 # 🚀 Montag-Builds — Index
 
-Auto-Index aller Files in `outputs/montag/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
+Auto-Index aller Files in `outputs/montag/`. Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
 
 ## Dateien
 

@@ -4,7 +4,7 @@ tags: [moc, funnel]
 
 # 🎯 Funnels — Index
 
-Auto-Index aller Files in `outputs/funnels/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Produkte-Funnels]] für den thematischen Überblick.
+Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels]] für den thematischen Überblick.
 
 ## Dateien
 

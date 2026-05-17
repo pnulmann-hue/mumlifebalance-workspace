@@ -1,3 +1,7 @@
+---
+tags: [tools, bot]
+---
+
 # Phase 2 — ActiveCampaign Setup Bio-Check-Bot
 
 **Stand:** 2026-04-23

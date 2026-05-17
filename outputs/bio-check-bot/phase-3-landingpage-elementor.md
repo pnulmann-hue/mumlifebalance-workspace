@@ -1,3 +1,7 @@
+---
+tags: [tools, bot]
+---
+
 # Phase 3 — WordPress-Landingpage in Elementor
 
 **Stand:** 2026-04-23

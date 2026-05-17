@@ -4,7 +4,7 @@ tags: [moc, content, samples]
 
 # 🧪 Samples — Index
 
-Auto-Index aller Files in `outputs/samples/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
+Auto-Index aller Files in `outputs/samples/`. Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
 
 ## Dateien
 

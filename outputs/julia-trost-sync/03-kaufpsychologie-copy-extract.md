@@ -1,3 +1,7 @@
+---
+tags: [externe-wissen, julia-trost]
+---
+
 # Julia-Trost-Extract — Kaufpsychologie & Copy
 
 _Quelle: 20 Files „Magnetisch Verkaufen" + 22 Files „Glasklare Produktkommunikation"._

@@ -50,6 +50,86 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 | `outputs/`   | Deliverables, Analysen, Reports und Arbeitsergebnisse.                                 |
 | `reference/` | Hilfreiche Dokumentation, Vorlagen und Patterns für verschiedene Workflows.            |
 | `scripts/`   | Automatisierungs- und Tooling-Skripte.                                                 |
+| `_MOCs/`     | Maps of Content für Obsidian-Vault — thematische Dashboards. **Nicht editieren ohne CLAUDE.md zu prüfen.** |
+
+---
+
+## 🟦 Obsidian-Vault-Konvention (PFLICHT für alle Skills, seit 2026-05-17)
+
+Patricia nutzt den Workspace **als Obsidian-Vault**. Damit der Wissens-Graph sauber bleibt, MUSS jeder Skill der neue MD-Files in `outputs/` (oder anderen vault-relevanten Ordnern) erstellt **zwei Dinge** tun:
+
+### 1. Frontmatter-Tags am Anfang der Datei
+
+Direkt als erste Zeilen, vor dem `# Title`:
+
+```markdown
+---
+tags: [tag1, tag2, tag3]
+---
+
+# Eigentlicher Titel
+...
+```
+
+**Standard-Tags pro Ordner:**
+
+| Ordner | Tags |
+|---|---|
+| `outputs/karussells/` | `[content, karussell]` |
+| `outputs/reels/` | `[content, reels]` |
+| `outputs/stories/**/` | `[content, story]` |
+| `outputs/freitag/` | `[content, freitag-hooks]` |
+| `outputs/montag/` | `[content, montag-build]` |
+| `outputs/mealplans/` | `[mealplan]` |
+| `outputs/produkte/**/` | `[produkt]` |
+| `outputs/funnels/**/` | `[funnel]` |
+| `outputs/salespages/` | `[produkt, salespage]` |
+| `outputs/marktrecherche/` | `[research]` |
+| `outputs/zielgruppen-research/` | `[research]` |
+| `outputs/doterra-strategie/` | `[doterra]` |
+| `outputs/ads/` | `[ads]` |
+| `outputs/monatsplaene/` | `[monatsplan]` |
+| `outputs/content-kalender/` | `[content]` |
+| `outputs/garten/` | `[garten]` |
+| `outputs/calls/` | `[call]` |
+| `outputs/telegram-posts/` | `[content, telegram]` |
+| `outputs/sonstige/` | `[misc]` |
+| `outputs/bio-update-*/` | `[brand]` |
+| `outputs/bio-check-bot/` | `[tools, bot]` |
+| `outputs/samples/` | `[content, samples]` |
+| `outputs/julia-trost-sync/` | `[externe-wissen, julia-trost]` |
+| `outputs/praesentationen/` | `[produkt]` |
+| `context/*.md` | situativ — siehe bestehende Files |
+
+Bei Bedarf zusätzliche Tags ergänzen (z.B. `mentoring` / `doterra` für Profil-Unterscheidung, oder Spezial-Themen).
+
+### 2. Eintrag im `_INDEX.md` des Ordners
+
+Jeder vault-relevante Ordner hat ein `_INDEX.md`. Nach dem Erstellen einer neuen Datei den Dateinamen als Wiki-Link **alphabetisch sortiert** in die `## Dateien`-Sektion eintragen:
+
+```markdown
+- [[2026-05-17-mein-neuer-output]]
+```
+
+### 3. Optional: "Verwandte Notizen"-Block
+
+Bei wichtigen Kern-Files am Ende einen Block mit Wiki-Links zu Nachbar-Files anhängen:
+
+```markdown
+---
+
+## 🔗 Verwandte Notizen
+
+- [[andere-relevante-notiz]]
+- [[_MOCs/MOC-Thema|Themen-Map]]
+```
+
+### Auto-Pflege als Sicherheitsnetz
+
+- **Lokal:** `bash scripts/obsidian-reindex.sh` generiert alle `_INDEX.md` neu und prüft Frontmatter-Tags. Kann jederzeit laufen, ist idempotent.
+- **Remote:** `.github/workflows/obsidian-reindex.yml` läuft täglich 23:00 (Cron) als Sicherheitsnetz und committed automatisch falls Files den Tags-/Index-Anforderungen nicht entsprechen.
+
+→ Skills die das hier ignorieren erzeugen Lücken im Graph, die der Auto-Reindex einmal pro Tag schliesst. Trotzdem: **selber sauber arbeiten ist immer besser** als auf den Cron warten.
 
 ---
 

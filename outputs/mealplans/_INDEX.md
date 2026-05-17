@@ -4,7 +4,7 @@ tags: [moc, mealplan]
 
 # 🥗 Mealplans — Index
 
-Auto-Index aller Files in `outputs/mealplans/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Mealplan]] für den thematischen Überblick.
+Auto-Index aller Files in `outputs/mealplans/`. Siehe [[_MOCs/MOC-Mealplan]] für den thematischen Überblick.
 
 ## Dateien
 

@@ -4,7 +4,7 @@ tags: [moc, content, telegram]
 
 # 📣 Telegram-Posts — Index
 
-Auto-Index aller Files in `outputs/telegram-posts/`. Klick einen Link für Detail. Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
+Auto-Index aller Files in `outputs/telegram-posts/`. Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
 
 ## Dateien
 
