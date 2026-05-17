@@ -3,9 +3,32 @@
 **Single Source of Truth** für `/freitag-hooks`, `/daily-story-render`, `/montag` und alle Content-Skills die das Mentoring-Profil bedienen.
 
 **Erstellt:** 2026-04-30
+**Letzte grosse Anpassung:** 2026-05-13 — Themen-Achse („Was lerne ich bei Patricia?") parallel zur Stadium-Achse („Wo stehe ich gerade?") eingeführt.
 **Status:** Säule 3 in aktiver Erarbeitung — Skill prüft regelmässig auf Aktualisierung.
 
-> **Wichtig (2026-05-08):** Diese Datei beschreibt die **Themen-Achse** (Worüber rede ich?). Die parallele **Job-Achse** (Was soll der Post bewirken?) ist in [`job-saeulen.md`](job-saeulen.md) dokumentiert. Jeder Post = 1 Thema × 1 Job. Beide Achsen sind Pflicht-Felder beim Anlegen in Notion.
+> **Wichtig (2026-05-08, präzisiert 2026-05-13):** Diese Datei beschreibt die **Stadium-Achse** (Wo steht meine Zielgruppe?). Die parallele **Job-Achse** (Was soll der Post bewirken?) ist in [`job-saeulen.md`](job-saeulen.md) dokumentiert. Seit 2026-05-13 zusätzlich die **Themen-Achse** (Worüber rede ich konkret?) — siehe Aussen-Achse-Block direkt unten. Jeder Post = 1 Stadium × 1 Thema × 1 Job. Alle drei Achsen sind Pflicht-Felder beim Anlegen in Notion.
+
+> **Wichtig (2026-05-13):** Patricia hat entschieden, dass das **Stadium-Modell** (Networkmarketing 2.0 / Hybridmodell / Mama Business) zwar weiterhin die **Funnel-Logik** abbildet, aber die **Aussen-Kommunikation** (Bio, Über-mich, Highlights, Linktree) auf das **Themen-Modell** umgestellt wird, weil die Zielgruppe das besser versteht. Beide Achsen koexistieren — siehe Mapping unten.
+
+---
+
+## Aussen-Achse (Themen-Modell — für Bio, Über-mich, Highlights, Pitches)
+
+**Frage, die jede Frau stellt:** „Was lerne ich bei Patricia konkret?"
+
+| Themen-Säule | Konkretes Versprechen | Geht primär ein in (Stadium) | Schlüsselworte für SEO/Caption/Hashtags |
+|---|---|---|---|
+| **T1 — Verkaufen über Instagram** | Sichtbar werden, Anfragen kriegen, ohne Pitchen verkaufen | Stadium 1 (Network) + Stadium 3 (Mama Business) | #instagramverkaufen, #anfragenstattnerven, #mamacontent, „Brand statt Pitch" |
+| **T2 — Onlinekurse / eigene digitale Produkte** | Vom 1:1-Stundenlohn zum eigenen Kurs/Produkt — inkl. Pre-Sale, Modul-Aufbau, Salespage | Stadium 2 (Hybridmodell) | #onlinekurseerstellen, #digitaleprodukte, #presale, „aus deinem Wissen wird ein Produkt" |
+| **T3 — Zeitmanagement & Orga dank KI als Mama-CEO** | Mit KI-Assistenten (ChatGPT, Claude, Notion AI) Zeit sparen, Content-Produktion automatisieren, Mama-CEO werden | Quer — relevant für ALLE drei Stadien | #mamaceo, #kiimbusiness, #automatisierung, „Zeit zurück, ohne Familie zu opfern" |
+
+**Identity-Anker (für alle 3 Themen):** **„Werde Mama-CEO"** — Wunsch-Identität der Zielgruppe, NICHT „Selbstständige" oder „Solopreneur".
+
+---
+
+## Innen-Achse (Stadium-Modell — für Funnel-Mapping, Produkttreppe, Block-Verteilung)
+
+**Frage, die der Skill stellt:** „Wo steht die Frau in ihrer Reise gerade?"
 
 ---
 
