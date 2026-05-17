@@ -1,0 +1,11 @@
+{
+  "name": "mealplan-pdf-telegram",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Render Wochenplan-Markdown → PDF (mit klickbaren Links) → Telegram-Bot.",
+  "main": "send-mealplan.js",
+  "scripts": {
+    "send": "node send-mealplan.js"
+  },
+  "comment": "Nutzt marked + puppeteer aus ../md-to-pdf/node_modules (kein zusätzliches Install nötig). Env aus ../telegram-news-bot/.env."
+}
