@@ -14,8 +14,9 @@
 import { createOrUpdatePage } from './wp-api.js';
 
 const CTA_URL = 'https://mumlifebalance.thrivecart.com/mama-ceo/';
-const HERO_PHOTO = 'https://mumlifebalance.ch/wp-content/uploads/2026/04/patricia-hero-3-scaled.jpg';
+const HERO_PHOTO = 'https://mumlifebalance.ch/wp-content/uploads/2026/05/379-Patricia_Nulmann_mumlifebalance_schoniaugeblick-379-scaled.jpg';
 const STORY_PHOTO = HERO_PHOTO;
+const FEATURED_MEDIA_ID = 3597;
 
 const BRAND_CSS = `
 <style>
@@ -23,6 +24,17 @@ const BRAND_CSS = `
 @media (prefers-color-scheme: dark) {
   .mceo, .mceo * { color-scheme: light only !important; }
 }
+
+/* === WP-Theme-Page-Title verstecken (Patricia-Wunsch 11.5.) === */
+body.page-id-3444 .entry-title,
+body.page-id-3444 .page-title,
+body.page-id-3444 .elementor-page-title,
+body.page-id-3444 .elementor-heading-title,
+body.page-id-3444 .post-title,
+body.page-id-3444 .single-page__title,
+body.page-id-3444 .page-header,
+body.page-id-3444 header.entry-header,
+body.page-id-3444 .breadcrumbs { display: none !important; }
 
 .mceo {
   --creme: #f1ecdd;
@@ -213,7 +225,8 @@ ${BRAND_CSS}
 <section class="mceo__hero">
   <div class="mceo__hero-overlay"></div>
   <div class="mceo__hero-content">
-    <p class="mceo__hero-eyebrow">Live-Programm · Start 1. Juni 2026 · 15 Plätze</p>
+    <p class="mceo__hero-eyebrow">MAMA-CEO · Live-Programm für Mamas im Network</p>
+    <p style="font-size:0.8rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gelb); font-weight:600; margin:0 0 1.5rem; opacity:0.95;">Start 1. Juni 2026 · 15 Plätze</p>
     <h1>
       Lerne, wie du als Mama mit wenig Zeit <em>genug aus deinem Business holst</em> — um nicht mehr auswärts arbeiten zu gehen.
     </h1>
@@ -609,12 +622,38 @@ ${BRAND_CSS}
 </div>
 `;
 
+const SEO_TITLE = 'Mama-CEO: KI-Programm für Mamas im Network · ab 249 CHF';
+const SEO_DESC = 'Lerne, wie du als Mama mit wenig Zeit genug aus deinem Business holst — um nicht mehr auswärts arbeiten zu gehen. 8 Wochen Live-Programm in 5 Säulen. Anmeldung ab 20. Mai 2026.';
+const SEO_FOCUS_KEYWORD = 'Mama-CEO';
+const HERO_ALT = 'Mama-CEO Patricia Nulmann · Live-Programm für Mamas im Network mit KI-Mitarbeitern';
+
+// wpautop fix: WordPress wickelt CSS in <p>-Tags wenn Doppel-Newlines drin sind.
+// Lösung: alle Doppel-Newlines in <style>-Block raus (CSS minimal komprimieren).
+const fixedContent = content.replace(/<style>([\s\S]*?)<\/style>/g, (match, css) => {
+  // CSS-Comments raus + alle Newlines raus → CSS bleibt funktional, wpautop findet nichts
+  const minified = css
+    .replace(/\/\*[\s\S]*?\*\//g, '') // /* ... */ raus
+    .replace(/\s+/g, ' ')              // Mehrfach-Whitespace zu single space
+    .replace(/\s*([{};:,>~+])\s*/g, '$1') // Whitespace um Punctuation raus
+    .trim();
+  return '<style>' + minified + '</style>';
+});
+
 const result = await createOrUpdatePage({
   title: 'Mama-CEO · Live-Programm für Mamas im Network',
   slug: 'mama-ceo',
-  content: content.trim(),
+  content: fixedContent.trim(),
   status: 'draft',
-  excerpt: 'Lerne, wie du als Mama mit wenig Zeit genug aus deinem Business holst — um nicht mehr auswärts arbeiten zu gehen. 8 Wochen Live-Programm in 5 Säulen. Anmeldung öffnet 20. Mai 2026.',
+  excerpt: SEO_DESC,
+  featured_media: FEATURED_MEDIA_ID,
+  meta: {
+    rank_math_focus_keyword: SEO_FOCUS_KEYWORD,
+    rank_math_title: SEO_TITLE,
+    rank_math_description: SEO_DESC,
+    _yoast_wpseo_focuskw: SEO_FOCUS_KEYWORD,
+    _yoast_wpseo_title: SEO_TITLE,
+    _yoast_wpseo_metadesc: SEO_DESC,
+  },
 });
 
 console.log('\n✅ Page aktualisiert:');
@@ -623,4 +662,28 @@ console.log(`   Title:  ${result.title?.rendered || result.title}`);
 console.log(`   Slug:   ${result.slug}`);
 console.log(`   Status: ${result.status}`);
 console.log(`   Link:   ${result.link}`);
-console.log('\n📝 Patricia: WP-Admin → Pages → Mama-CEO → Preview-Button (oben rechts).\n');
+console.log(`   Featured Media: ${result.featured_media}`);
+console.log('\n🔍 SEO-Meta versucht (Rank Math + Yoast):');
+console.log(`   Focus-Keyword: ${SEO_FOCUS_KEYWORD}`);
+console.log(`   SEO-Title: ${SEO_TITLE}`);
+console.log(`   Meta-Description: ${SEO_DESC.length} Zeichen`);
+console.log('\n📝 Patricia: WP-Admin → Pages → Mama-CEO → Preview + Rank-Math-Score checken.\n');
+
+// Image Alt-Tag setzen für Featured Media
+try {
+  const altUpdate = await fetch(`https://mumlifebalance.ch/wp-json/wp/v2/media/${FEATURED_MEDIA_ID}`, {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Basic ' + Buffer.from(`${process.env.WP_USER}:${process.env.WP_APP_PASSWORD}`).toString('base64'),
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ alt_text: HERO_ALT }),
+  });
+  if (altUpdate.ok) {
+    console.log(`✅ Alt-Tag gesetzt für Bild ${FEATURED_MEDIA_ID}: "${HERO_ALT}"`);
+  } else {
+    console.log(`⚠️ Alt-Tag konnte nicht gesetzt werden (Status ${altUpdate.status})`);
+  }
+} catch (e) {
+  console.log(`⚠️ Alt-Tag-Update fehlgeschlagen: ${e.message}`);
+}
