@@ -247,19 +247,8 @@ ${BRAND_CSS}
   </div>
 </section>
 
-<!-- ============ LOOP-BANNER ============ -->
-<div class="mceo__loop" aria-hidden="true">
-  <div class="mceo__loop-track">
-    <span>ANMELDUNG OFFEN AB 20. MAI</span><span class="dot">●</span>
-    <span>NUR 15 PLÄTZE</span><span class="dot">●</span>
-    <span>FRÜHBUCHER 249 CHF</span><span class="dot">●</span>
-    <span>START 1. JUNI</span><span class="dot">●</span>
-    <span>ANMELDUNG OFFEN AB 20. MAI</span><span class="dot">●</span>
-    <span>NUR 15 PLÄTZE</span><span class="dot">●</span>
-    <span>FRÜHBUCHER 249 CHF</span><span class="dot">●</span>
-    <span>START 1. JUNI</span><span class="dot">●</span>
-  </div>
-</div>
+<!-- ============ LOOP-BANNER (1-Zeilen-HTML wegen wpautop) ============ -->
+<div class="mceo__loop" aria-hidden="true"><div class="mceo__loop-track"><span>ANMELDUNG OFFEN AB 20. MAI</span><span class="dot">●</span><span>NUR 15 PLÄTZE</span><span class="dot">●</span><span>FRÜHBUCHER 249 CHF</span><span class="dot">●</span><span>START 1. JUNI</span><span class="dot">●</span><span>ANMELDUNG OFFEN AB 20. MAI</span><span class="dot">●</span><span>NUR 15 PLÄTZE</span><span class="dot">●</span><span>FRÜHBUCHER 249 CHF</span><span class="dot">●</span><span>START 1. JUNI</span><span class="dot">●</span></div></div>
 
 <!-- ============ PAIN-SEKTION (Petrol-Gradient mit MEGA-Nummern) ============ -->
 <section class="mceo__section mceo__section--gradient">
