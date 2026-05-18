@@ -1,14 +1,21 @@
 // Deploy Mama-CEO Landing-Page auf mumlifebalance.ch
-// Stil: Julia Trost Elevate-Look (Vollbild-Foto-Hero, MEGA-Display-Schrift,
-// Color-Gradient-Sections, Two-Column Story, Mega-Nummern, Loop-Banner mit Kontrast)
-// Brand-Farben: Creme/Petrol/Orange/Dunkelblau
-// Wörter Patricia-konform: keine Cohort/Pilot/techie/Backend, keine Garantie
+// Stil: Julia Trost Elevate-Look (Vollbild-Foto-Hero, MEGA-Display, Loop-Banner,
+// nummerierte Säulen, 3-Spalten-Pricing, Two-Column Story, Über-mich)
+// Inhalt: 5-Säulen-Struktur (Stand 11.5.2026 nach Patricia-Review):
+//   1. Du erschaffst dir die Zeit
+//   2. Du brichst aus dem Hamsterrad aus
+//   3. Du baust die Struktur
+//   4. Du delegierst den Adminkram
+//   5. Business skalieren
+// Brand-Voice: keine "Cohort", "Pilot", "techie", "Backend"
+// 3 Boni: Cockpit-Bot · Familien-Bot · Notion-Master-Template
+// Ausführen: cd scripts/wordpress && node --env-file=.env deploy-mama-ceo.js
 
 import { createOrUpdatePage } from './wp-api.js';
 
 const CTA_URL = 'https://mumlifebalance.thrivecart.com/mama-ceo/';
 const HERO_PHOTO = 'https://mumlifebalance.ch/wp-content/uploads/2026/04/patricia-hero-3-scaled.jpg';
-const STORY_PHOTO = HERO_PHOTO; // Patricia kann später anderes Foto einsetzen
+const STORY_PHOTO = HERO_PHOTO;
 
 const BRAND_CSS = `
 <style>
@@ -40,85 +47,18 @@ const BRAND_CSS = `
 .mceo em { font-style: italic; }
 .mceo a { color: var(--petrol); }
 
-/* === Display-Sizes === */
-.mceo__mega {
-  font-family: 'Philosopher', Georgia, serif;
-  font-size: clamp(4.5rem, 14vw, 11rem);
-  font-weight: 900;
-  line-height: 0.85;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  margin: 0;
-  color: var(--creme);
-}
-.mceo__display {
-  font-family: 'Philosopher', Georgia, serif;
-  font-size: clamp(3rem, 8vw, 6rem);
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  margin: 0 0 1.5rem;
-  color: var(--dunkelblau);
-}
-.mceo__h1 {
-  font-family: 'Philosopher', Georgia, serif;
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0 0 1.5rem;
-  color: var(--dunkelblau);
-}
+/* === Typografie === */
+.mceo__display { font-family: 'Philosopher', Georgia, serif; font-size: clamp(3rem, 8vw, 6rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 1.5rem; color: var(--dunkelblau); }
+.mceo__h1 { font-family: 'Philosopher', Georgia, serif; font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 700; line-height: 1.2; margin: 0 0 1.5rem; color: var(--dunkelblau); }
 .mceo__h1 em { color: var(--orange); font-style: italic; }
-.mceo__h2 {
-  font-family: 'Philosopher', Georgia, serif;
-  font-size: clamp(2rem, 4.5vw, 3.2rem);
-  font-weight: 700;
-  line-height: 1.15;
-  margin: 0 0 1.5rem;
-  color: var(--dunkelblau);
-}
+.mceo__h2 { font-family: 'Philosopher', Georgia, serif; font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 700; line-height: 1.15; margin: 0 0 1.5rem; color: var(--dunkelblau); }
 .mceo__h2--center { text-align: center; }
 .mceo__h2 em { font-style: italic; color: var(--orange); }
-.mceo__h2-script {
-  font-family: 'Philosopher', Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 0.7em;
-  display: block;
-  color: var(--orange);
-}
-.mceo__h3 {
-  font-family: 'Philosopher', Georgia, serif;
-  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
-  font-weight: 700;
-  margin: 0 0 0.8rem;
-  line-height: 1.3;
-  color: var(--dunkelblau);
-}
-.mceo__eyebrow {
-  font-size: 0.8rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--orange);
-  font-weight: 700;
-  margin: 0 0 1.5rem;
-}
-.mceo__lead {
-  font-size: clamp(1.15rem, 2vw, 1.4rem);
-  line-height: 1.55;
-  max-width: 720px;
-  margin: 0 auto 2rem;
-}
-.mceo__quote {
-  font-family: 'Philosopher', Georgia, serif;
-  font-style: italic;
-  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-  color: var(--orange);
-  text-align: center;
-  margin: 3rem auto;
-  line-height: 1.35;
-  max-width: 800px;
-}
+.mceo__h2-script { font-family: 'Philosopher', Georgia, serif; font-style: italic; font-weight: 400; font-size: 0.7em; display: block; color: var(--orange); }
+.mceo__h3 { font-family: 'Philosopher', Georgia, serif; font-size: clamp(1.4rem, 2.5vw, 1.8rem); font-weight: 700; margin: 0 0 0.8rem; line-height: 1.3; color: var(--dunkelblau); }
+.mceo__eyebrow { font-size: 0.8rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--orange); font-weight: 700; margin: 0 0 1.5rem; }
+.mceo__lead { font-size: clamp(1.15rem, 2vw, 1.4rem); line-height: 1.55; max-width: 720px; margin: 0 auto 2rem; }
+.mceo__quote { font-family: 'Philosopher', Georgia, serif; font-style: italic; font-size: clamp(1.6rem, 3.5vw, 2.4rem); color: var(--orange); text-align: center; margin: 3rem auto; line-height: 1.35; max-width: 800px; }
 
 /* === Sections === */
 .mceo__section { padding: 6rem 1.5rem; position: relative; }
@@ -126,16 +66,11 @@ const BRAND_CSS = `
 .mceo__section--creme { background: var(--creme); }
 .mceo__section--cremesoft { background: var(--creme-soft); }
 .mceo__section--dark { background: var(--dunkelblau); color: var(--creme); }
-.mceo__section--dark .mceo__h1,
-.mceo__section--dark .mceo__h2,
-.mceo__section--dark .mceo__h3 { color: var(--creme); }
+.mceo__section--dark .mceo__h1, .mceo__section--dark .mceo__h2, .mceo__section--dark .mceo__h3 { color: var(--creme); }
 .mceo__section--dark p { color: var(--creme); }
 .mceo__section--dark strong { color: var(--orange); }
 .mceo__section--dark .mceo__eyebrow { color: var(--orange); }
-.mceo__section--gradient {
-  background: linear-gradient(180deg, var(--petrol) 0%, var(--petrol-dark) 50%, var(--dunkelblau) 100%);
-  color: var(--creme);
-}
+.mceo__section--gradient { background: linear-gradient(180deg, var(--petrol) 0%, var(--petrol-dark) 50%, var(--dunkelblau) 100%); color: var(--creme); }
 .mceo__section--gradient .mceo__h2 { color: var(--creme); }
 .mceo__section--gradient .mceo__h2 em { color: var(--gelb); }
 .mceo__section--gradient .mceo__h2-script { color: var(--gelb); }
@@ -145,336 +80,71 @@ const BRAND_CSS = `
 .mceo__container--center { max-width: 820px; margin: 0 auto; text-align: center; }
 
 /* ============ HERO mit Foto-Background ============ */
-.mceo__hero {
-  position: relative;
-  min-height: 100vh;
-  background-image: url('${HERO_PHOTO}');
-  background-size: cover;
-  background-position: center 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 0;
-  overflow: hidden;
-}
-.mceo__hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(41, 85, 109, 0.15) 0%, rgba(41, 85, 109, 0.45) 60%, rgba(41, 85, 109, 0.85) 100%);
-  z-index: 1;
-}
-.mceo__hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 8rem 1.5rem 1.5rem;
-  max-width: 1300px;
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-}
-.mceo__hero-eyebrow {
-  font-size: 0.85rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--creme);
-  font-weight: 700;
-  margin: 0 0 1.5rem;
-  opacity: 0.95;
-}
-.mceo__hero h1 {
-  font-family: 'Philosopher', Georgia, serif;
-  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-  font-weight: 700;
-  line-height: 1.25;
-  color: var(--white);
-  margin: 0 auto 1.2rem;
-  max-width: 920px;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.4);
-}
+.mceo__hero { position: relative; min-height: 100vh; background-image: url('${HERO_PHOTO}'); background-size: cover; background-position: center 30%; display: flex; flex-direction: column; justify-content: flex-end; padding: 0; overflow: hidden; }
+.mceo__hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(41, 85, 109, 0.15) 0%, rgba(41, 85, 109, 0.45) 60%, rgba(41, 85, 109, 0.85) 100%); z-index: 1; }
+.mceo__hero-content { position: relative; z-index: 2; padding: 8rem 1.5rem 1.5rem; max-width: 1300px; margin: 0 auto; width: 100%; text-align: center; }
+.mceo__hero-eyebrow { font-size: 0.85rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--creme); font-weight: 700; margin: 0 0 1.5rem; opacity: 0.95; }
+.mceo__hero h1 { font-family: 'Philosopher', Georgia, serif; font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 700; line-height: 1.25; color: var(--white); margin: 0 auto 1.2rem; max-width: 920px; text-shadow: 0 2px 18px rgba(0, 0, 0, 0.4); }
 .mceo__hero h1 em { font-style: italic; color: var(--gelb); }
-.mceo__hero-script {
-  font-family: 'Philosopher', Georgia, serif;
-  font-style: italic;
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
-  color: var(--creme);
-  margin: 0 0 1.5rem;
-}
-.mceo__hero-bar {
-  background: var(--orange);
-  padding: 1.5rem 1rem;
-  margin-top: 2rem;
-}
-.mceo__hero-mega {
-  font-family: 'Philosopher', Georgia, serif;
-  font-size: clamp(4.5rem, 16vw, 13rem);
-  font-weight: 900;
-  line-height: 0.85;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  margin: 0;
-  color: var(--white);
-  text-align: center;
-}
-.mceo__hero-trust {
-  background: var(--dunkelblau);
-  color: var(--creme);
-  padding: 1.2rem 1.5rem;
-  text-align: center;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
+.mceo__hero-script { font-family: 'Philosopher', Georgia, serif; font-style: italic; font-size: clamp(1.1rem, 2vw, 1.5rem); color: var(--creme); margin: 0 0 1.5rem; }
+.mceo__hero-bar { background: var(--orange); padding: 1.5rem 1rem; margin-top: 2rem; }
+.mceo__hero-mega { font-family: 'Philosopher', Georgia, serif; font-size: clamp(4.5rem, 16vw, 13rem); font-weight: 900; line-height: 0.85; letter-spacing: -0.04em; text-transform: uppercase; margin: 0; color: var(--white); text-align: center; }
+.mceo__hero-trust { background: var(--dunkelblau); color: var(--creme); padding: 1.2rem 1.5rem; text-align: center; font-size: 0.95rem; font-weight: 500; }
 .mceo__hero-trust span { margin: 0 0.6rem; opacity: 0.95; }
 .mceo__hero-trust .dot { color: var(--orange); }
 
 /* ============ LOOP-BANNER ============ */
-.mceo__loop {
-  background: var(--gelb);
-  color: var(--dunkelblau);
-  padding: 1.4rem 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border-top: 4px solid var(--dunkelblau);
-  border-bottom: 4px solid var(--dunkelblau);
-}
-.mceo__loop-track {
-  display: inline-block;
-  animation: mceo-marquee 28s linear infinite;
-  font-family: 'Philosopher', serif;
-  font-size: clamp(1.2rem, 2.6vw, 1.7rem);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
+.mceo__loop { background: var(--gelb); color: var(--dunkelblau); padding: 1.4rem 0; overflow: hidden; white-space: nowrap; border-top: 4px solid var(--dunkelblau); border-bottom: 4px solid var(--dunkelblau); }
+.mceo__loop-track { display: inline-block; animation: mceo-marquee 28s linear infinite; font-family: 'Philosopher', serif; font-size: clamp(1.2rem, 2.6vw, 1.7rem); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
 .mceo__loop-track span { display: inline-block; margin: 0 1.5rem; }
 .mceo__loop-track .dot { color: var(--orange); margin: 0 0.8rem; }
-@keyframes mceo-marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
-}
+@keyframes mceo-marquee { 0% { transform: translateX(0%); } 100% { transform: translateX(-50%); } }
 
 /* ============ Buttons ============ */
-.mceo__btn {
-  display: inline-block;
-  padding: 1.15rem 2.6rem;
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 999px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 6px 22px rgba(220, 130, 46, 0.28);
-}
-.mceo__btn--primary {
-  background: var(--dunkelblau);
-  color: var(--creme);
-}
-.mceo__btn--primary:hover {
-  transform: translateY(-2px);
-  background: #1f4258;
-  color: var(--creme);
-  box-shadow: 0 10px 28px rgba(41, 85, 109, 0.4);
-}
-.mceo__btn--orange {
-  background: var(--orange);
-  color: var(--white);
-}
-.mceo__btn--orange:hover {
-  transform: translateY(-2px);
-  background: var(--orange-tief);
-  color: var(--white);
-}
-.mceo__btn--cream {
-  background: var(--creme);
-  color: var(--dunkelblau);
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.2);
-}
+.mceo__btn { display: inline-block; padding: 1.15rem 2.6rem; font-family: 'Source Sans 3', sans-serif; font-size: 1rem; font-weight: 700; text-decoration: none; border-radius: 999px; letter-spacing: 0.12em; text-transform: uppercase; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 6px 22px rgba(220, 130, 46, 0.28); }
+.mceo__btn--primary { background: var(--dunkelblau); color: var(--creme); }
+.mceo__btn--primary:hover { transform: translateY(-2px); background: #1f4258; color: var(--creme); }
+.mceo__btn--orange { background: var(--orange); color: var(--white); }
+.mceo__btn--orange:hover { transform: translateY(-2px); background: var(--orange-tief); color: var(--white); }
+.mceo__btn--cream { background: var(--creme); color: var(--dunkelblau); box-shadow: 0 6px 22px rgba(0, 0, 0, 0.2); }
 .mceo__btn--cream:hover { transform: translateY(-2px); color: var(--dunkelblau); }
-.mceo__btn--outline {
-  background: transparent;
-  color: var(--dunkelblau);
-  border: 2px solid var(--dunkelblau);
-  box-shadow: none;
-}
+.mceo__btn--outline { background: transparent; color: var(--dunkelblau); border: 2px solid var(--dunkelblau); box-shadow: none; }
 .mceo__btn--outline:hover { background: var(--dunkelblau); color: var(--creme); }
-.mceo__btn-arrow { display: inline-block; margin-left: 0.6rem; }
 
-/* ============ Pain-Säulen 01-04 (Petrol-Gradient mit MEGA-Nummern) ============ */
-.mceo__pillars {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2.5rem;
-  margin-top: 3.5rem;
-}
-.mceo__pillar-mega {
-  text-align: left;
-}
-.mceo__pillar-mega-num {
-  font-family: 'Philosopher', serif;
-  font-size: clamp(3.5rem, 6vw, 5rem);
-  font-weight: 900;
-  line-height: 1;
-  color: var(--gelb);
-  margin: 0 0 1.5rem;
-}
-.mceo__pillar-mega-num::after {
-  content: ".";
-  color: var(--orange);
-}
-.mceo__pillar-mega h3 {
-  font-family: 'Philosopher', serif;
-  font-size: clamp(1.4rem, 2.5vw, 1.7rem);
-  font-weight: 700;
-  color: var(--creme);
-  margin: 0 0 1rem;
-  line-height: 1.25;
-}
-.mceo__pillar-mega p {
-  font-size: 1rem;
-  color: var(--creme);
-  line-height: 1.55;
-  opacity: 0.92;
-}
+/* ============ Pain-Säulen 01-04 ============ */
+.mceo__pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2.5rem; margin-top: 3.5rem; }
+.mceo__pillar-mega { text-align: left; }
+.mceo__pillar-mega-num { font-family: 'Philosopher', serif; font-size: clamp(3.5rem, 6vw, 5rem); font-weight: 900; line-height: 1; color: var(--gelb); margin: 0 0 1.5rem; }
+.mceo__pillar-mega-num::after { content: "."; color: var(--orange); }
+.mceo__pillar-mega h3 { font-family: 'Philosopher', serif; font-size: clamp(1.4rem, 2.5vw, 1.7rem); font-weight: 700; color: var(--creme); margin: 0 0 1rem; line-height: 1.25; }
+.mceo__pillar-mega p { font-size: 1rem; color: var(--creme); line-height: 1.55; opacity: 0.92; }
 
 /* ============ Story zwei-Spaltig ============ */
-.mceo__story {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-.mceo__story-img {
-  width: 100%;
-  aspect-ratio: 4/5;
-  background-image: url('${STORY_PHOTO}');
-  background-size: cover;
-  background-position: center;
-  border-radius: 4px;
-}
+.mceo__story { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.mceo__story-img { width: 100%; aspect-ratio: 4/5; background-image: url('${STORY_PHOTO}'); background-size: cover; background-position: center; border-radius: 4px; }
 .mceo__story h2 em { font-style: italic; color: var(--orange); }
-.mceo__story-accent {
-  font-size: 0.85rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--orange);
-  font-weight: 700;
-  margin: 1.5rem 0 1.2rem;
-}
-.mceo__story-bullets {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.mceo__story-bullets li {
-  display: flex;
-  gap: 1rem;
-  padding: 0.8rem 0;
-  align-items: flex-start;
-  font-size: 1.05rem;
-  line-height: 1.55;
-}
-.mceo__story-bullets .arrow {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: 2px solid var(--dunkelblau);
-  border-radius: 50%;
-  color: var(--dunkelblau);
-  font-weight: 700;
-  font-size: 1.1rem;
-}
+.mceo__story-accent { font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange); font-weight: 700; margin: 1.5rem 0 1.2rem; }
+.mceo__story-bullets { list-style: none; padding: 0; margin: 0; }
+.mceo__story-bullets li { display: flex; gap: 1rem; padding: 0.8rem 0; align-items: flex-start; font-size: 1.05rem; line-height: 1.55; }
+.mceo__story-bullets .arrow { display: flex; flex-shrink: 0; align-items: center; justify-content: center; width: 36px; height: 36px; border: 2px solid var(--dunkelblau); border-radius: 50%; color: var(--dunkelblau); font-weight: 700; font-size: 1.1rem; }
 
-/* ============ Drei Bausteine (Säulen mit grossen Nummern) ============ */
-.mceo__pillar-row {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 2.5rem;
-  padding: 3rem 0;
-  border-bottom: 1px solid var(--border);
-  align-items: start;
-}
+/* ============ 5 Säulen (Mama-CEO-Struktur) ============ */
+.mceo__pillar-row { display: grid; grid-template-columns: 100px 1fr; gap: 2.5rem; padding: 3rem 0; border-bottom: 1px solid var(--border); align-items: start; }
 .mceo__pillar-row:last-child { border-bottom: none; }
-.mceo__pillar-row-num {
-  font-family: 'Philosopher', serif;
-  font-size: clamp(3.5rem, 6vw, 5rem);
-  font-weight: 900;
-  color: var(--orange);
-  line-height: 1;
-}
-.mceo__pillar-row h3 {
-  font-family: 'Philosopher', serif;
-  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
-  color: var(--dunkelblau);
-  margin: 0 0 1rem;
-  line-height: 1.2;
-}
+.mceo__pillar-row-num { font-family: 'Philosopher', serif; font-size: clamp(3.5rem, 6vw, 5rem); font-weight: 900; color: var(--orange); line-height: 1; }
+.mceo__pillar-row h3 { font-family: 'Philosopher', serif; font-size: clamp(1.7rem, 3.2vw, 2.4rem); color: var(--dunkelblau); margin: 0 0 1rem; line-height: 1.2; }
+.mceo__pillar-row-promise { font-family: 'Philosopher', serif; font-style: italic; font-size: 1.05rem; color: var(--orange); margin-top: 1rem; }
 
 /* ============ Module ============ */
-.mceo__module {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 3rem;
-  margin-bottom: 1.5rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-.mceo__module:hover {
-  border-color: var(--orange);
-  box-shadow: 0 12px 32px rgba(220, 130, 46, 0.08);
-}
-.mceo__module-num {
-  font-family: 'Philosopher', serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--orange);
-  font-weight: 700;
-  margin: 0 0 0.5rem;
-}
-.mceo__module-title {
-  font-family: 'Philosopher', serif;
-  font-style: italic;
-  font-size: clamp(1.7rem, 3vw, 2.2rem);
-  color: var(--dunkelblau);
-  margin: 0 0 1.5rem;
-  line-height: 1.2;
-}
-.mceo__module-bullets {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.5rem;
-}
-.mceo__module-bullets li {
-  position: relative;
-  padding: 0.5rem 0 0.5rem 1.8rem;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--dunkelblau);
-}
-.mceo__module-bullets li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
-  color: var(--orange);
-  font-weight: 700;
-}
-.mceo__module-meta {
-  font-size: 0.95rem;
-  color: var(--muted);
-  font-style: italic;
-  padding-top: 1.2rem;
-  border-top: 1px solid var(--border);
-  margin: 0;
-}
-.mceo__module--bonus {
-  background: linear-gradient(135deg, var(--petrol), var(--dunkelblau));
-  color: var(--creme);
-  border-color: var(--petrol);
-}
+.mceo__module { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 3rem; margin-bottom: 1.5rem; transition: border-color 0.2s, box-shadow 0.2s; }
+.mceo__module:hover { border-color: var(--orange); box-shadow: 0 12px 32px rgba(220, 130, 46, 0.08); }
+.mceo__module-num { font-family: 'Philosopher', serif; font-size: 0.85rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--orange); font-weight: 700; margin: 0 0 0.5rem; }
+.mceo__module-title { font-family: 'Philosopher', serif; font-style: italic; font-size: clamp(1.7rem, 3vw, 2.2rem); color: var(--dunkelblau); margin: 0 0 1.5rem; line-height: 1.2; }
+.mceo__module-bullets { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+.mceo__module-bullets li { position: relative; padding: 0.5rem 0 0.5rem 1.8rem; font-size: 1.05rem; font-weight: 600; color: var(--dunkelblau); }
+.mceo__module-bullets li::before { content: "→"; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
+.mceo__module-meta { font-size: 0.95rem; color: var(--muted); font-style: italic; padding-top: 1.2rem; border-top: 1px solid var(--border); margin: 0; }
+.mceo__module--bonus { background: linear-gradient(135deg, var(--petrol), var(--dunkelblau)); color: var(--creme); border-color: var(--petrol); }
 .mceo__module--bonus .mceo__module-num { color: var(--gelb); }
 .mceo__module--bonus .mceo__module-title { color: var(--creme); }
 .mceo__module--bonus .mceo__module-bullets li { color: var(--creme); }
@@ -482,198 +152,46 @@ const BRAND_CSS = `
 .mceo__module--bonus .mceo__module-meta { color: rgba(241, 236, 221, 0.7); border-color: rgba(241, 236, 221, 0.2); }
 
 /* ============ Benefits 3x2 Grid ============ */
-.mceo__benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem 2rem;
-  margin: 3rem 0;
-}
-.mceo__benefit-item h4 {
-  font-family: 'Philosopher', serif;
-  font-size: 1.4rem;
-  color: var(--dunkelblau);
-  margin: 0.8rem 0 0.5rem;
-  line-height: 1.25;
-}
-.mceo__benefit-item p {
-  font-size: 1rem;
-  line-height: 1.55;
-  margin: 0;
-  color: var(--text);
-}
-.mceo__benefit-icon {
-  width: 60px;
-  height: 60px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--orange);
-  border-radius: 50%;
-  font-family: 'Philosopher', serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--orange);
-  margin-bottom: 0.5rem;
-}
+.mceo__benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem 2rem; margin: 3rem 0; }
+.mceo__benefit-item h4 { font-family: 'Philosopher', serif; font-size: 1.4rem; color: var(--dunkelblau); margin: 0.8rem 0 0.5rem; line-height: 1.25; }
+.mceo__benefit-item p { font-size: 1rem; line-height: 1.55; margin: 0; color: var(--text); }
+.mceo__benefit-icon { width: 60px; height: 60px; display: inline-flex; align-items: center; justify-content: center; border: 2px solid var(--orange); border-radius: 50%; font-family: 'Philosopher', serif; font-size: 1.6rem; font-weight: 700; color: var(--orange); margin-bottom: 0.5rem; }
 
 /* ============ Bonus-Boxen ============ */
-.mceo__bonuses {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.3rem;
-  margin: 2.5rem 0;
-}
-.mceo__bonus-box {
-  background: var(--white);
-  border-left: 4px solid var(--orange);
-  padding: 1.8rem;
-  border-radius: 6px;
-}
-.mceo__bonus-box-eyebrow {
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--petrol);
-  font-weight: 700;
-  margin: 0 0 0.5rem;
-}
-.mceo__bonus-box h4 {
-  font-family: 'Philosopher', serif;
-  font-size: 1.3rem;
-  color: var(--dunkelblau);
-  margin: 0 0 0.8rem;
-  line-height: 1.3;
-}
+.mceo__bonuses { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.3rem; margin: 2.5rem 0; }
+.mceo__bonus-box { background: var(--white); border-left: 4px solid var(--orange); padding: 1.8rem; border-radius: 6px; }
+.mceo__bonus-box-eyebrow { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--petrol); font-weight: 700; margin: 0 0 0.5rem; }
+.mceo__bonus-box h4 { font-family: 'Philosopher', serif; font-size: 1.3rem; color: var(--dunkelblau); margin: 0 0 0.8rem; line-height: 1.3; }
 .mceo__bonus-box p { font-size: 0.98rem; line-height: 1.55; margin: 0 0 0.8rem; }
-.mceo__bonus-box-value {
-  font-size: 0.95rem;
-  color: var(--orange);
-  font-weight: 700;
-  margin: 0;
-}
+.mceo__bonus-box-value { font-size: 0.95rem; color: var(--orange); font-weight: 700; margin: 0; }
 
 /* ============ Pricing 3-Spalten ============ */
-.mceo__pricing {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin: 3rem 0 2rem;
-  align-items: stretch;
-}
-.mceo__price-card {
-  background: var(--white);
-  border-radius: 14px;
-  padding: 2.5rem 2rem;
-  text-align: center;
-  position: relative;
-  border: 2px solid var(--border);
-  display: flex;
-  flex-direction: column;
-}
-.mceo__price-card--featured {
-  border-color: var(--orange);
-  transform: scale(1.04);
-  box-shadow: 0 12px 36px rgba(220, 130, 46, 0.18);
-}
-.mceo__price-card--featured::before {
-  content: "BESTE WAHL";
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--orange);
-  color: var(--white);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  padding: 0.4rem 1.2rem;
-  border-radius: 99px;
-  white-space: nowrap;
-}
-.mceo__price-card-label {
-  font-size: 0.8rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--petrol);
-  font-weight: 700;
-  margin: 0 0 0.5rem;
-}
-.mceo__price-card-amount {
-  font-family: 'Philosopher', serif;
-  font-size: clamp(2.6rem, 6vw, 3.6rem);
-  font-weight: 700;
-  color: var(--dunkelblau);
-  margin: 0.3rem 0;
-  line-height: 1;
-}
+.mceo__pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin: 3rem 0 2rem; align-items: stretch; }
+.mceo__price-card { background: var(--white); border-radius: 14px; padding: 2.5rem 2rem; text-align: center; position: relative; border: 2px solid var(--border); display: flex; flex-direction: column; }
+.mceo__price-card--featured { border-color: var(--orange); transform: scale(1.04); box-shadow: 0 12px 36px rgba(220, 130, 46, 0.18); }
+.mceo__price-card--featured::before { content: "BESTE WAHL"; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--orange); color: var(--white); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; padding: 0.4rem 1.2rem; border-radius: 99px; white-space: nowrap; }
+.mceo__price-card-label { font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--petrol); font-weight: 700; margin: 0 0 0.5rem; }
+.mceo__price-card-amount { font-family: 'Philosopher', serif; font-size: clamp(2.6rem, 6vw, 3.6rem); font-weight: 700; color: var(--dunkelblau); margin: 0.3rem 0; line-height: 1; }
 .mceo__price-card-note { font-size: 0.95rem; color: var(--muted); margin: 0 0 1.5rem; }
-.mceo__price-card-meta {
-  font-size: 0.92rem; color: var(--muted); margin: 0 0 1.2rem; flex-grow: 1;
-}
+.mceo__price-card-meta { font-size: 0.92rem; color: var(--muted); margin: 0 0 1.2rem; flex-grow: 1; }
 
 /* ============ FAQ ============ */
-.mceo__faq details {
-  border-bottom: 1px solid var(--border);
-  padding: 1.6rem 0;
-}
+.mceo__faq details { border-bottom: 1px solid var(--border); padding: 1.6rem 0; }
 .mceo__faq details[open] summary { color: var(--orange); }
-.mceo__faq summary {
-  font-family: 'Philosopher', serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  cursor: pointer;
-  color: var(--dunkelblau);
-  list-style: none;
-  position: relative;
-  padding-right: 2.5rem;
-}
-.mceo__faq summary::after {
-  content: "+";
-  position: absolute;
-  right: 0;
-  top: -4px;
-  font-size: 1.8rem;
-  color: var(--orange);
-  font-weight: 400;
-}
+.mceo__faq summary { font-family: 'Philosopher', serif; font-size: 1.25rem; font-weight: 700; cursor: pointer; color: var(--dunkelblau); list-style: none; position: relative; padding-right: 2.5rem; }
+.mceo__faq summary::after { content: "+"; position: absolute; right: 0; top: -4px; font-size: 1.8rem; color: var(--orange); font-weight: 400; }
 .mceo__faq details[open] summary::after { content: "−"; }
 .mceo__faq summary::-webkit-details-marker { display: none; }
 .mceo__faq p { margin: 1rem 0 0; font-size: 1.05rem; line-height: 1.7; }
 
 /* ============ Über mich Stats ============ */
-.mceo__about-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-  padding: 1.8rem;
-  background: var(--creme);
-  border-radius: 10px;
-  text-align: center;
-}
-.mceo__about-stat-num {
-  font-family: 'Philosopher', serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: var(--orange);
-  line-height: 1;
-}
-.mceo__about-stat-label {
-  font-size: 0.9rem;
-  color: var(--muted);
-  margin-top: 0.3rem;
-  line-height: 1.3;
-}
+.mceo__about-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1.5rem; margin: 2rem 0; padding: 1.8rem; background: var(--creme); border-radius: 10px; text-align: center; }
+.mceo__about-stat-num { font-family: 'Philosopher', serif; font-size: 2.4rem; font-weight: 700; color: var(--orange); line-height: 1; }
+.mceo__about-stat-label { font-size: 0.9rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.3; }
 
 /* ============ Final-CTA ============ */
 .mceo__final { text-align: center; }
-.mceo__final-signature {
-  font-family: 'Philosopher', serif;
-  font-style: italic;
-  font-size: 1.2rem;
-  color: var(--orange);
-  margin-top: 2rem;
-}
+.mceo__final-signature { font-family: 'Philosopher', serif; font-style: italic; font-size: 1.2rem; color: var(--orange); margin-top: 2rem; }
 
 /* ============ Mobile ============ */
 @media (max-width: 720px) {
@@ -743,22 +261,22 @@ ${BRAND_CSS}
       <div class="mceo__pillar-mega">
         <p class="mceo__pillar-mega-num">01</p>
         <h3>Wochenrhythmus, der zu deinem Mama-Alltag passt</h3>
-        <p>Schluss mit „heute mache ich das, morgen schau ich". Du baust einen festen Rhythmus mit Power-Window, Mama-Slots und Abend-Wand.</p>
+        <p>Schluss mit „heute mache ich das, morgen schau ich". Du baust einen festen Rhythmus mit Power-Zeiten, 4 Wochen-Rollen und Abend-Wand.</p>
       </div>
       <div class="mceo__pillar-mega">
         <p class="mceo__pillar-mega-num">02</p>
         <h3>Strukturen, die dein Business tragen</h3>
-        <p>Notion als zentraler Ort. Klare 5 CEO-Aufgaben. Du wirst Entscheiderin, nicht mehr Macherin.</p>
+        <p>Brain Dump · Hütchenmethode · Notion Business Brain. Du wirst Entscheiderin, nicht mehr Macherin.</p>
       </div>
       <div class="mceo__pillar-mega">
         <p class="mceo__pillar-mega-num">03</p>
         <h3>Tools, die für dich mitarbeiten</h3>
-        <p>KI-Mitarbeiter, ManyChat, Auto-Posting, Mail-Sequenzen. Du baust sie selbst auf — Schritt für Schritt mit Vorlagen.</p>
+        <p>KI-Mitarbeiter, ManyChat, Auto-Posting, Mail-Sequenzen. Du baust sie selbst — Schritt für Schritt mit Vorlagen.</p>
       </div>
       <div class="mceo__pillar-mega">
         <p class="mceo__pillar-mega-num">04</p>
         <h3>Einkommen, das dich aus dem Job rausholt</h3>
-        <p>Genau das Ziel: Business-Einkommen, das reicht, um den alten Job zu kündigen. So wie ich's 2023 gemacht hab.</p>
+        <p>Das Ziel: Business-Einkommen, das reicht, um den alten Job zu kündigen. So wie ich's 2023 gemacht hab.</p>
       </div>
     </div>
     <p style="text-align:center; margin-top:3.5rem;">
@@ -789,202 +307,147 @@ ${BRAND_CSS}
   </div>
 </section>
 
-<!-- ============ DREI BAUSTEINE ============ -->
+<!-- ============ DIE 5 SÄULEN ============ -->
 <section class="mceo__section mceo__section--cremesoft">
   <div class="mceo__container">
-    <p class="mceo__eyebrow" style="text-align:center;">Worum es geht</p>
-    <h2 class="mceo__h2 mceo__h2--center">Die drei Bausteine, die dich rausholen</h2>
+    <p class="mceo__eyebrow" style="text-align:center;">Das Programm im Überblick</p>
+    <h2 class="mceo__h2 mceo__h2--center">Die 5 Säulen, die dich aus dem Hamsterrad holen</h2>
     <p style="text-align:center; max-width:680px; margin:1rem auto 3rem; color:var(--muted);">
-      Mama-CEO ist nicht „noch ein Kurs". Es sind drei Bausteine, die ineinander greifen — und in 8 Wochen ein System ergeben, das mit deiner Mama-Realität funktioniert.
+      8 Wochen. 5 Säulen. Jede Säule ein klarer Sprung — vom Hamsterrad zur Mama-CEO, die ihr Business mit System führt.
     </p>
 
     <div class="mceo__pillar-row">
       <div class="mceo__pillar-row-num">01</div>
       <div>
-        <h3>Wochenrhythmus, der zu deinem Mama-Alltag passt</h3>
-        <p>Schluss mit „heute mache ich das, morgen schau ich, wie's läuft". Du baust dir einen festen Wochenrhythmus mit Fokuszeit, Mama-Slots und einer klaren Wand am Abend. So weisst du jeden Tag, was dran ist — und stehst nicht abends auf dem Sofa und fragst dich, was eigentlich passiert ist.</p>
+        <h3>Du erschaffst dir die Zeit</h3>
+        <p>Productivity-Tipps für Mamas (Pomodoro, Time-Blocking, Eisenhower — was greift bei 4 Kindern). Deine Realität verstehen: Kids in der Schule? Morgen-/Abend-Typ? Daraus deine Business-Fokuszeit ableiten. Plus: was bringt dein Business wirklich vorwärts? Die 3 Säulen — Plattform · Produkt · Verkauf — alle drei müssen laufen.</p>
+        <p class="mceo__pillar-row-promise">→ Sprung: „Ich kenne meine Realität, weiss was zählt und habe meinen Rhythmus."</p>
       </div>
     </div>
 
     <div class="mceo__pillar-row">
       <div class="mceo__pillar-row-num">02</div>
       <div>
-        <h3>Strukturen, die dein Business tragen</h3>
-        <p>Notion als zentraler Ort für dein Business — Wochenplanung, Inhalte, Produkte, Kundinnen, Finanzen. Plus die 5 CEO-Aufgaben, die NUR DU treffen darfst. Alles andere wird delegiert oder automatisiert. Du wirst Entscheiderin, nicht mehr Macherin.</p>
+        <h3>Du brichst aus dem Hamsterrad aus</h3>
+        <p>Das Hamsterrad erkennen + benennen. Hütchenmethode: Brain Dump aller Aufgaben + Hüte sortieren (Mama · Tochter · Vereinsmitglied · Networkerin · ...). Was kann weg — bewusst zugunsten Business loslassen. 5 Mama-CEO-Blockaden auflösen. Plus: dein Sonntag-Ritual.</p>
+        <p class="mceo__pillar-row-promise">→ Sprung: „Ich tue, was dran ist. Ohne Schuld."</p>
       </div>
     </div>
 
     <div class="mceo__pillar-row">
       <div class="mceo__pillar-row-num">03</div>
       <div>
-        <h3>Tools, die für dich mitarbeiten</h3>
-        <p>KI-Mitarbeiter (Custom GPTs, ManyChat-Bots, Mail-Sequenzen, Auto-Posting), die für dich antworten, posten, sortieren und Leads qualifizieren. Du baust sie selbst auf — Schritt für Schritt, mit Vorlagen. Solo. Ohne Vorwissen. Genauso wie ich es gemacht habe.</p>
+        <h3>Du baust die Struktur</h3>
+        <p>Aus dem Brain Dump → Aufgaben auf Tage/Wochen verteilen (Haushalt + Business — nie zu viel an einem Tag). Die 5 Kern-Workflows einer Mama-CEO als Schritt-Listen. Dein Notion Business Brain aufsetzen — mit Master-Template als Vorlage. Plus: Notfall-Modus, wenn Kinder krank sind.</p>
+        <p class="mceo__pillar-row-promise">→ Sprung: „Ich habe Workflows, die immer gleich laufen — und einen 50%-Plan."</p>
+      </div>
+    </div>
+
+    <div class="mceo__pillar-row">
+      <div class="mceo__pillar-row-num">04</div>
+      <div>
+        <h3>Du delegierst den Adminkram</h3>
+        <p>KI-Mythos vs. Realität — KI ist nur so gut wie dein Input. Cockpit-Bot (Live-Demo Patricia) für strategische Planung + Reflexion. Haushalts-Helfer (Live-Demo Kochassistent + Garten) — Mentee baut den Bot, den SIE braucht. Bot-Audit: massgeschneidert für deine Realität, kein Schema F. KI-Wochenplan: wann tust DU, wann delegierst du.</p>
+        <p class="mceo__pillar-row-promise">→ Sprung: „KI-Mitarbeiter nehmen mir den Adminkram ab — Business UND Haushalt."</p>
+      </div>
+    </div>
+
+    <div class="mceo__pillar-row">
+      <div class="mceo__pillar-row-num">05</div>
+      <div>
+        <h3>Business skalieren</h3>
+        <p>Mama-CEO-Matrix: 4 Felder (ich · KI · System · raus) — 25 Tasks sortieren. Was DEINS bleibt: 1:1-Beziehungen · Projekte · Events. 90-Tage-Wachstums-Plan: 1 Fokus pro 30 Tage. Plus: was du JETZT NICHT machst — Brücke zum nächsten Schritt (Insta-Selling-Tiefe, eigene Produkte erstellen, Umsetzerinnen-Community).</p>
+        <p class="mceo__pillar-row-promise">→ Sprung: „Ich weiss was DEINS bleibt, was die KI macht, was raus muss und was als nächstes wächst."</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ MODULE ============ -->
+<!-- ============ LIVE-CALLS + COMMUNITY ============ -->
 <section class="mceo__section mceo__section--white">
   <div class="mceo__container">
-    <p class="mceo__eyebrow" style="text-align:center;">Das Programm im Detail</p>
-    <h2 class="mceo__h2 mceo__h2--center">Was du in 8 Wochen aufbaust</h2>
-    <p style="text-align:center; color:var(--muted); margin:1rem auto 3rem;">4 Hauptmodule + 1 Bonus-Modul · 23 Lektionen · 4 Live-Termine · Telegram-Gruppe</p>
-
-    <div class="mceo__module">
-      <p class="mceo__module-num">Modul 01 · Wochen 1–2</p>
-      <h3 class="mceo__module-title">„Mindset-Reset für Mama-CEO"</h3>
-      <ul class="mceo__module-bullets">
-        <li>Du erkennst, was Mama-CEO bedeutet — und warum's nichts mit Bali-Coachin zu tun hat</li>
-        <li>Du übernimmst 100% Selbstverantwortung — niemand wird kommen und dich retten</li>
-        <li>Du kennst deine 5 CEO-Aufgaben — alles andere wird delegiert oder automatisiert</li>
-        <li>Du baust deinen Wochenrhythmus mit Power-Window, Mama-Slots und klarer Abend-Wand</li>
-      </ul>
-      <p>In den ersten zwei Wochen geht's um deine Identität als Mama-CEO. Schluss mit dem „eigentlich müsste ich..."-Modus. Du verschiebst dich vom Macherin- zum Entscheiderin-Mindset, baust deinen Rhythmus und entscheidest, welche 5 Aufgaben WIRKLICH bei dir liegen — und welche das System übernimmt.</p>
-      <p class="mceo__module-meta">+ Live-Termin 1: Hot-Seat „Zeig mir deinen Wochenrhythmus" · 90 Min · Ende W2</p>
-    </div>
-
-    <div class="mceo__module">
-      <p class="mceo__module-num">Modul 02 · Wochen 3–4</p>
-      <h3 class="mceo__module-title">„Dein KI-System: Architektur"</h3>
-      <ul class="mceo__module-bullets">
-        <li>Du verstehst, warum KI ein „Mitarbeiter" und kein „Tool" ist — und briefst sie entsprechend</li>
-        <li>Du richtest Notion als dein Business-Brain ein — Wochenplanung, Content, Produkte, Kundinnen, Finanzen</li>
-        <li>Du wählst aus zwischen Custom GPTs, Claude Projects und ChatGPT — und weisst, welches Werkzeug wann passt</li>
-        <li>Dein erster KI-Assistent läuft — du briefst ihn so, dass er WIRKLICH liefert</li>
-      </ul>
-      <p>Wochen 3 und 4 sind die Architektur-Phase. Du baust dein Notion-System auf, lernst die Logik hinter KI-Briefings und richtest deinen ersten KI-Mitarbeiter ein — den Welcome-Brief-Schreiber. Du musst nichts vorher können. Schritt für Schritt mit Vorlagen.</p>
-      <p class="mceo__module-meta">+ Live-Termin 2: Q&amp;A „KI-Architektur" · 60 Min · Ende W4</p>
-    </div>
-
-    <div class="mceo__module">
-      <p class="mceo__module-num">Modul 03 · Wochen 5–6</p>
-      <h3 class="mceo__module-title">„Akquise auf Autopilot"</h3>
-      <ul class="mceo__module-bullets">
-        <li>Du verstehst, was ein Funnel ist — und warum „auf-DM-warten" das Gegenteil davon ist</li>
-        <li>Dein Keyword-Bot in ManyChat läuft — wer kommentiert, kriegt automatisch eine DM mit deinem Freebie</li>
-        <li>Deine 5-Mail-Welcome-Sequenz in ActiveCampaign ist live — Welcome → Mehrwert → Pitch</li>
-        <li>Dein Auto-Posting (Mo·Mi·Fr) via Blotato läuft — Montag planen, Bot postet die ganze Woche</li>
-      </ul>
-      <p>Hier wird's konkret. In zwei Wochen baust du deinen ersten Mini-Funnel von Reel → Keyword → Bot → Mail → Verkauf. Du machst es einmal komplett selbst durch — und hast deinen ersten automatisierten Verkauf damit getätigt.</p>
-      <p class="mceo__module-meta">+ Live-Termin 3: Werkstatt „Wir bauen gemeinsam einen Funnel" · 120 Min · Ende W6</p>
-    </div>
-
-    <div class="mceo__module">
-      <p class="mceo__module-num">Modul 04 · Wochen 7–8</p>
-      <h3 class="mceo__module-title">„Skalieren ohne Burn-out"</h3>
-      <ul class="mceo__module-bullets">
-        <li>Du erkennst die Service-Matrix — was darf delegiert werden, was muss bei dir bleiben</li>
-        <li>Dein Kundinnen-Bot beantwortet die 30 häufigsten Fragen — du bist nicht mehr 24/7 erreichbar</li>
-        <li>Dein Onboarding-Flow für Kurs-Kundinnen läuft — automatisches Welcome-Päckchen mit Zugang + Telegram-Einladung</li>
-        <li>Dein Mail-Sortier-Helfer trennt Kundinnen, Newsletter, Werbung und Wichtiges — du verlierst nicht mehr stundenlang im Postfach</li>
-      </ul>
-      <p>Die letzten zwei Wochen sind der Service-Layer. Deine Kundinnen werden weiter persönlich begleitet — aber dein System trägt den wiederkehrenden Teil. Du bleibst Coach im Hintergrund, nicht Sklavin der Inbox.</p>
-      <p class="mceo__module-meta">+ Live-Termin 4: Hot-Seat „Deine Kundinnen-Reise" · 90 Min · Ende W8</p>
-    </div>
-
-    <div class="mceo__module mceo__module--bonus">
-      <p class="mceo__module-num">🎁 Bonus-Modul · jederzeit zugänglich</p>
-      <h3 class="mceo__module-title">„Content-KI Quick-Setup"</h3>
-      <ul class="mceo__module-bullets">
-        <li>Brand-Voice-Doc in 30 Min (Kurz-Version) — Wortschatz, Verbote, Tonalität</li>
-        <li>Hook-Bot — 10 Hooks pro Woche generieren, alle in deiner Stimme</li>
-        <li>Content-Wochen-Bot — ein Bot, der Montagmorgen die ganze Woche briefingsfertig liefert</li>
-      </ul>
-      <p>Das Bonus-Modul ist für die Quick-Setup-Variante. Strategische Content-Tiefe (Thema, Positionierung, Reel-Skripte) ist Inhalt der Instagram-Kundenmaschine. Mama-CEO setzt voraus, dass du WEISST, was du sagen willst.</p>
-      <p class="mceo__module-meta">3 Lektionen · ~30 Min Setup</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ BENEFITS-GRID (3x2) ============ -->
-<section class="mceo__section mceo__section--white">
-  <div class="mceo__container">
-    <h2 class="mceo__h2 mceo__h2--center">Was du am Ende der 8 Wochen hast</h2>
+    <p class="mceo__eyebrow" style="text-align:center;">Plus persönliche Begleitung</p>
+    <h2 class="mceo__h2 mceo__h2--center">4 Live-Termine direkt mit mir</h2>
+    <p style="text-align:center; color:var(--muted); margin-bottom:3rem;">Alle 2 Wochen, am Ende des jeweiligen Säulen-Blocks.</p>
     <div class="mceo__benefits-grid">
       <div class="mceo__benefit-item">
-        <span class="mceo__benefit-icon">✓</span>
-        <h4>Klarer Wochenrhythmus</h4>
-        <p>Du weisst Sonntagabend schon, wie deine Woche läuft. Power-Window, Mama-Slots, Abend-Wand.</p>
+        <span class="mceo__benefit-icon">1</span>
+        <h4>Ende Woche 2 · Kick-Off</h4>
+        <p>Hot-Seat „Zeig mir deinen Wochenrhythmus" — du kommst mit deinem Plan, wir feilen ihn gemeinsam.</p>
       </div>
       <div class="mceo__benefit-item">
-        <span class="mceo__benefit-icon">✓</span>
-        <h4>Notion als Business-Brain</h4>
-        <p>Alles an einem Ort: Wochenplanung, Content, Produkte, Kundinnen, Finanzen. Sauber und durchsuchbar.</p>
+        <span class="mceo__benefit-icon">2</span>
+        <h4>Ende Woche 4 · Workflow-Review</h4>
+        <p>Notion-Brain-Sprechstunde — wir schauen dein System an, identifizieren Lücken, ich gebe Verbesserungen.</p>
       </div>
       <div class="mceo__benefit-item">
-        <span class="mceo__benefit-icon">✓</span>
-        <h4>3+ KI-Mitarbeiter live</h4>
-        <p>Welcome-Brief, FAQ-Bot, Hook-Bot. Du briefst, sie liefern. Solo gebaut, keine Tech-Abhängigkeit.</p>
+        <span class="mceo__benefit-icon">3</span>
+        <h4>Ende Woche 6 · KI-Demo</h4>
+        <p>Bot-Bau-Sprechstunde — ich zeige live wie ich meine Bots aufsetze, du baust deinen mit.</p>
       </div>
       <div class="mceo__benefit-item">
-        <span class="mceo__benefit-icon">✓</span>
-        <h4>Funktionierender Funnel</h4>
-        <p>Reel → Keyword → ManyChat → Mail-Sequenz → Verkauf. End-to-End live getestet.</p>
-      </div>
-      <div class="mceo__benefit-item">
-        <span class="mceo__benefit-icon">✓</span>
-        <h4>Onboarding ohne dich</h4>
-        <p>Neue Kundin kauft → automatisches Welcome-Päckchen + Kurs-Zugang + Telegram-Einladung. Ohne dich.</p>
-      </div>
-      <div class="mceo__benefit-item">
-        <span class="mceo__benefit-icon">✓</span>
-        <h4>Mama-CEO-Mindset</h4>
-        <p>Vom Macherin- zum Entscheiderin-Modus. Du entscheidest, das System tut. So bleibt Energie für die Menschen.</p>
+        <span class="mceo__benefit-icon">4</span>
+        <h4>Ende Woche 8 · Abschluss</h4>
+        <p>90-Tage-Vision — wir setzen deinen Quartals-Plan, du gehst mit klarem Bild raus.</p>
       </div>
     </div>
+    <p style="text-align:center; color:var(--muted); margin-top:2rem;">
+      Plus: <strong>Telegram-Gruppe</strong> für 8 Wochen — Sparring zwischen den Live-Terminen, schnelle Antworten, Frust-Container. Bleibt offen auch danach.
+    </p>
   </div>
 </section>
 
-<!-- ============ BONUS-PACK ============ -->
-<section class="mceo__section mceo__section--creme">
+<!-- ============ WAS DU AM ENDE HAST ============ -->
+<section class="mceo__section mceo__section--cremesoft">
+  <div class="mceo__container">
+    <p class="mceo__eyebrow" style="text-align:center;">Nach 8 Wochen</p>
+    <h2 class="mceo__h2 mceo__h2--center">Was du dann hast</h2>
+    <ul class="mceo__benefits-grid" style="list-style:none; padding:0;">
+      <li class="mceo__benefit-item"><span class="mceo__benefit-icon">✓</span><h4>Klarer Wochenrhythmus</h4><p>Du weisst Sonntagabend, wie deine Woche läuft. Power-Zeiten, 4 Rollen, Abend-Wand.</p></li>
+      <li class="mceo__benefit-item"><span class="mceo__benefit-icon">✓</span><h4>Notion Business Brain</h4><p>Alles an einem Ort — Wochenplanung, Workflows, Produkte, Kundinnen, Finanzen.</p></li>
+      <li class="mceo__benefit-item"><span class="mceo__benefit-icon">✓</span><h4>1-3 KI-Mitarbeiter live</h4><p>Cockpit-Bot + Haushalts-Helfer + was DU brauchst — solo gebaut, keine Tech-Abhängigkeit.</p></li>
+      <li class="mceo__benefit-item"><span class="mceo__benefit-icon">✓</span><h4>Hütchenmethode beherrscht</h4><p>Du weisst: welche Rolle wann, was kann weg, was bleibt.</p></li>
+      <li class="mceo__benefit-item"><span class="mceo__benefit-icon">✓</span><h4>Mama-CEO-Matrix gefüllt</h4><p>25 Tasks sortiert: ich · KI · System · raus. Plus 90-Tage-Plan.</p></li>
+      <li class="mceo__benefit-item"><span class="mceo__benefit-icon">✓</span><h4>Mama-CEO-Mindset</h4><p>Vom Macherin- zum Entscheiderin-Modus. So bleibt Energie für die Menschen.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ BONUS-PACK (3 Boni) ============ -->
+<section class="mceo__section mceo__section--white">
   <div class="mceo__container">
     <p class="mceo__eyebrow" style="text-align:center;">Bonus-Pack im Preis enthalten</p>
-    <h2 class="mceo__h2 mceo__h2--center">692 CHF Wert · zusätzlich</h2>
+    <h2 class="mceo__h2 mceo__h2--center">3 Boni, die du direkt nutzt</h2>
+    <p style="text-align:center; color:var(--muted); max-width:680px; margin:1rem auto 2.5rem;">
+      Keine zusammengewürfelten Standard-Templates — sondern Patricias eigene Tools, die sie selbst nutzt.
+    </p>
 
     <div class="mceo__bonuses">
       <div class="mceo__bonus-box">
-        <p class="mceo__bonus-box-eyebrow">Bonus 01</p>
-        <h4>Notion-Master-Template für Mama-CEOs</h4>
-        <p>Mein eigenes Notion-Setup, fertig kopierbar. Wochenplanung, Content, Produkte, Kundinnen, Finanzen.</p>
-        <p class="mceo__bonus-box-value">Wert: 99 CHF</p>
+        <p class="mceo__bonus-box-eyebrow">Bonus 01 · Mein eigener Bot</p>
+        <h4>🌅 Cockpit-Bot Vorlage</h4>
+        <p>Mein eigener Cockpit-Bot als System-Prompt + Anleitung. Strategische Planung, Reflexion, Tagesbriefing per Telegram. Du baust deinen in 30 Min nach.</p>
       </div>
       <div class="mceo__bonus-box">
-        <p class="mceo__bonus-box-eyebrow">Bonus 02</p>
-        <h4>ManyChat-Template-Pack</h4>
-        <p>3 fertige Funnel-Vorlagen aus meinen aktiven Funneln — du kopierst, passt an, fertig.</p>
-        <p class="mceo__bonus-box-value">Wert: 79 CHF</p>
+        <p class="mceo__bonus-box-eyebrow">Bonus 02 · Mental-Load-Killer</p>
+        <h4>🏠 Familien-Bot Vorlage</h4>
+        <p>System-Prompt für deinen Mental-Load-Speicher: Familienkalender, Geschenke, Arzt-Termine, Reisen. Plus Anleitung wie du ihn auf deine Familie anpasst.</p>
       </div>
       <div class="mceo__bonus-box">
-        <p class="mceo__bonus-box-eyebrow">Bonus 03</p>
-        <h4>Q&amp;A-Custom-GPT + Onboarding-Sequenz</h4>
-        <p>Fertige Vorlage für deinen Kundinnen-FAQ-Bot plus 5-Mail-Welcome-Sequenz nach Kauf.</p>
-        <p class="mceo__bonus-box-value">Wert: 59 CHF</p>
-      </div>
-      <div class="mceo__bonus-box">
-        <p class="mceo__bonus-box-eyebrow">Bonus 04</p>
-        <h4>Hook-Bot + Karussell-Bot Vorlagen</h4>
-        <p>Custom-GPT-Setups für deinen wöchentlichen Content. Hook-Generator und Karussell-Bauer in deiner Stimme.</p>
-        <p class="mceo__bonus-box-value">Wert: 59 CHF</p>
-      </div>
-      <div class="mceo__bonus-box">
-        <p class="mceo__bonus-box-eyebrow">Bonus 05</p>
-        <h4>8 Wochen Telegram-Gruppe</h4>
-        <p>Sparring-Partnerinnen, Frust-Container, schnelle Antworten zwischen den Live-Terminen. 15 Frauen.</p>
-        <p class="mceo__bonus-box-value">Wert: unbezahlbar</p>
-      </div>
-      <div class="mceo__bonus-box">
-        <p class="mceo__bonus-box-eyebrow">Bonus 06</p>
-        <h4>4 Live-Termine</h4>
-        <p>2× Hot-Seat (90 Min) + 1× Q&amp;A (60 Min) + 1× Werkstatt (120 Min). Direkter Austausch mit mir.</p>
-        <p class="mceo__bonus-box-value">Wert: 396 CHF</p>
+        <p class="mceo__bonus-box-eyebrow">Bonus 03 · Mein Notion-Setup</p>
+        <h4>📂 Notion-Master-Template</h4>
+        <p>Abgespeckte Kopie meines echten Notion-Workspaces: Wochenplanung, Aufgaben, Content, Produkte, Workflows, Mama-CEO-Matrix, 90-Tage-Tracker — alles als Vorlage, du duplizierst und passt an.</p>
       </div>
     </div>
+
+    <p style="text-align:center; color:var(--muted); margin-top:1.5rem; font-size:0.95rem;">
+      Plus: <strong>Claude-Code-Einrichtungs-Anleitung</strong> als Material in Modul 4 — du startest mit Patricia-Setup, nicht aus dem Nichts.
+    </p>
   </div>
 </section>
 
 <!-- ============ PRICING ============ -->
-<section class="mceo__section mceo__section--white">
+<section class="mceo__section mceo__section--cremesoft">
   <div class="mceo__container">
     <p class="mceo__eyebrow" style="text-align:center;">Erste Runde · 15 Plätze</p>
     <h2 class="mceo__h2 mceo__h2--center">Komm jetzt rein — solange's noch 333 sind.</h2>
@@ -997,7 +460,7 @@ ${BRAND_CSS}
         <p class="mceo__price-card-label">🔥 Frühbucher · 72 Std</p>
         <p class="mceo__price-card-amount">249<span style="font-size:1.5rem; vertical-align:top;">CHF</span></p>
         <p class="mceo__price-card-note">20.5. 09:00 — 22.5. 23:59</p>
-        <p class="mceo__price-card-meta">Komplettes Programm + alle 6 Boni + 4 Live-Termine + Telegram-Gruppe</p>
+        <p class="mceo__price-card-meta">Komplettes Programm + alle 3 Boni + 4 Live-Termine + Telegram-Gruppe</p>
         <a href="${CTA_URL}" class="mceo__btn mceo__btn--orange" target="_blank" rel="noopener" style="margin-top:auto;">Jetzt sichern</a>
       </div>
       <div class="mceo__price-card">
@@ -1023,11 +486,11 @@ ${BRAND_CSS}
 </section>
 
 <!-- ============ FÜR / NICHT FÜR ============ -->
-<section class="mceo__section mceo__section--cremesoft">
+<section class="mceo__section mceo__section--white">
   <div class="mceo__container">
     <h2 class="mceo__h2 mceo__h2--center">Ist Mama-CEO für dich?</h2>
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:2rem; margin-top:2.5rem;">
-      <div style="padding:2.5rem; background:var(--white); border-radius:12px;">
+      <div style="padding:2.5rem; background:var(--creme); border-radius:12px;">
         <h3 class="mceo__h3" style="color:var(--petrol);">✓ JA, wenn …</h3>
         <ul style="padding-left:1.2rem; margin:0;">
           <li style="margin-bottom:0.8rem;">Du seit min. 6 Monaten im Network bist und schon erste Kundinnen hattest.</li>
@@ -1052,14 +515,14 @@ ${BRAND_CSS}
 </section>
 
 <!-- ============ FAQ ============ -->
-<section class="mceo__section mceo__section--white">
+<section class="mceo__section mceo__section--cremesoft">
   <div class="mceo__container--narrow">
     <p class="mceo__eyebrow" style="text-align:center;">Was du noch wissen willst</p>
     <h2 class="mceo__h2 mceo__h2--center" style="margin-bottom:2.5rem;">Häufige Fragen</h2>
     <div class="mceo__faq">
       <details>
         <summary>Ich hab keine Zeit für noch einen Kurs.</summary>
-        <p>Genau deshalb baust du Mama-CEO. Du brauchst nicht „mehr Zeit fürs Lernen" — du brauchst „weniger Zeit fürs Tun". Modul 1 zeigt dir den Wochenrhythmus, der ab Tag 1 für dich arbeitet. Lektionen sind in 8–28 Min portioniert. Hör es beim Spazieren, beim Bügeln, beim Auto-Fahren.</p>
+        <p>Genau deshalb baust du Mama-CEO. Du brauchst nicht „mehr Zeit fürs Lernen" — du brauchst „weniger Zeit fürs Tun". Säule 1 zeigt dir den Wochenrhythmus, der ab Tag 1 für dich arbeitet. Lektionen sind in 8–15 Min portioniert. Hör es beim Spazieren, beim Bügeln, beim Auto-Fahren.</p>
       </details>
       <details>
         <summary>Ich kann das nicht. Ich bin nicht die mit den Tools.</summary>
@@ -1079,7 +542,7 @@ ${BRAND_CSS}
       </details>
       <details>
         <summary>Was, wenn es bei mir nicht funktioniert?</summary>
-        <p>Ehrlich: wenn du nicht implementierst, funktioniert nichts. Mama-CEO ist für Frauen, die TUN. Wenn du in den 8 Wochen die Mastery-Lektionen machst, an den Live-Terminen teilnimmst und in der Telegram-Gruppe aktiv bist — dann hast du das System. Wenn du konsumierst, hast du nichts. <strong>Es liegt an dir. 100%.</strong></p>
+        <p>Ehrlich: wenn du nicht implementierst, funktioniert nichts. Mama-CEO ist für Frauen, die TUN. Wenn du in den 8 Wochen die Säulen-Lektionen machst, an den Live-Terminen teilnimmst und in der Telegram-Gruppe aktiv bist — dann hast du das System. Wenn du konsumierst, hast du nichts. <strong>Es liegt an dir. 100%.</strong></p>
       </details>
       <details>
         <summary>Wieso erste Runde nur 333 — und dann teurer?</summary>
@@ -1087,7 +550,7 @@ ${BRAND_CSS}
       </details>
       <details>
         <summary>Was ist mit dem Mann/der Familie? Ich hab kaum Zeit.</summary>
-        <p>Ich hab 4 Kinder, mein Mann arbeitet 80% auswärts (Mo–Do). Ich verstehe das. Mama-CEO ist genau für diese Realität gebaut. Die Lektionen sind in 8–28 Min portioniert. Live-Termine sind vormittags (Power-Window — Kids in der Schule). Telegram-Gruppe ist asynchron. Du machst's in deinem Tempo.</p>
+        <p>Ich hab 4 Kinder, mein Mann arbeitet 80% auswärts (Mo–Do). Ich verstehe das. Mama-CEO ist genau für diese Realität gebaut. Die Lektionen sind in 8–15 Min portioniert. Live-Termine sind vormittags (Power-Window — Kids in der Schule). Telegram-Gruppe ist asynchron. Du machst's in deinem Tempo.</p>
       </details>
     </div>
   </div>
@@ -1151,7 +614,7 @@ const result = await createOrUpdatePage({
   slug: 'mama-ceo',
   content: content.trim(),
   status: 'draft',
-  excerpt: 'Lerne, wie du als Mama mit wenig Zeit genug aus deinem Business holst — um nicht mehr auswärts arbeiten zu gehen. 8 Wochen Live-Programm. Anmeldung öffnet 20. Mai 2026.',
+  excerpt: 'Lerne, wie du als Mama mit wenig Zeit genug aus deinem Business holst — um nicht mehr auswärts arbeiten zu gehen. 8 Wochen Live-Programm in 5 Säulen. Anmeldung öffnet 20. Mai 2026.',
 });
 
 console.log('\n✅ Page aktualisiert:');
