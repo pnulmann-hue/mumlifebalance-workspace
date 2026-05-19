@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mama-CEO — 8 Wochen aus dem alten Job raus</title>
+<meta name="description" content="Bau dir in 8 Wochen das System, das dich langfristig aus dem alten Job raushilft — mit Wochenrhythmus, KI-Team und klaren Strukturen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --creme:#f1ecdd;
+    --petrol:#12828c;
+    --dunkelblau:#29556d;
+    --orange:#dc822e;
+    --gelb:#f5e555;
+    --weiss:#ffffff;
+    --text:#2a2a2a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Source Sans 3',-apple-system,BlinkMacSystemFont,sans-serif;
+    color:var(--text);
+    background:var(--creme);
+    line-height:1.6;
+    font-size:18px;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Philosopher',Georgia,serif;color:var(--dunkelblau);line-height:1.2;font-weight:700}
+  h1{font-size:clamp(32px,4.5vw,56px)}
+  h2{font-size:clamp(28px,3.5vw,42px);margin-bottom:24px}
+  h3{font-size:clamp(22px,2.4vw,30px);margin-bottom:12px}
+  h4{font-size:20px;margin-bottom:8px}
+  p{margin-bottom:16px}
+  em{color:var(--petrol);font-style:italic}
+  strong{font-weight:700;color:var(--dunkelblau)}
+  .container{max-width:1080px;margin:0 auto;padding:0 24px}
+  .narrow{max-width:780px;margin:0 auto;padding:0 24px}
+
+  /* Sections */
+  section{padding:64px 0}
+  .section-creme{background:var(--creme)}
+  .section-weiss{background:var(--weiss)}
+  .section-petrol{background:var(--petrol);color:var(--weiss)}
+  .section-petrol h2,.section-petrol h3{color:var(--weiss)}
+  .section-dunkelblau{background:var(--dunkelblau);color:var(--weiss)}
+  .section-dunkelblau h2,.section-dunkelblau h3{color:var(--weiss)}
+
+  /* Hero */
+  .hero{background:var(--creme);padding:48px 0 32px;text-align:center}
+  .hero img{max-width:100%;height:auto;border-radius:16px;box-shadow:0 12px 40px rgba(41,85,109,.18);margin-bottom:32px}
+  .pitch{font-family:'Philosopher',serif;font-size:clamp(24px,3vw,36px);color:var(--dunkelblau);line-height:1.3;max-width:880px;margin:0 auto 32px;font-weight:700}
+  .bullets{max-width:680px;margin:0 auto 32px;text-align:left;padding:0 16px}
+  .bullets li{list-style:none;padding:12px 0 12px 36px;position:relative;font-size:18px}
+  .bullets li::before{content:"✓";position:absolute;left:0;top:12px;color:var(--orange);font-weight:700;font-size:22px}
+
+  /* CTA Buttons */
+  .cta{
+    display:inline-block;
+    background:var(--orange);
+    color:var(--weiss)!important;
+    padding:18px 40px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:700;
+    font-size:18px;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+    transition:transform .2s,box-shadow .2s;
+    box-shadow:0 6px 20px rgba(220,130,46,.35);
+    border:none;
+    cursor:pointer;
+  }
+  .cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(220,130,46,.5)}
+  .cta-petrol{background:var(--petrol);box-shadow:0 6px 20px rgba(18,130,140,.35)}
+  .cta-petrol:hover{box-shadow:0 10px 30px rgba(18,130,140,.5)}
+  .cta-wrap{text-align:center;margin-top:32px}
+
+  /* Pain points */
+  .pain-list p{font-size:19px;margin-bottom:20px;padding-left:24px;border-left:3px solid var(--orange)}
+
+  /* Story */
+  .story-block{background:var(--weiss);padding:48px;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.06)}
+  .story-block p{font-size:18px}
+  .story-headline{font-family:'Philosopher',serif;font-size:28px;color:var(--petrol);font-style:italic;text-align:center;margin:32px 0;padding:24px;border-top:2px solid var(--gelb);border-bottom:2px solid var(--gelb)}
+  .story-quote{font-family:'Philosopher',serif;font-style:italic;font-size:24px;color:var(--dunkelblau);text-align:center;margin:32px auto 0;max-width:600px}
+
+  /* Säulen */
+  .saeulen-grid{display:grid;gap:32px;margin-top:48px}
+  .saeule{background:var(--weiss);padding:36px;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.06);border-top:6px solid var(--petrol)}
+  .saeule:nth-child(even){border-top-color:var(--orange)}
+  .saeule-nr{display:inline-block;background:var(--petrol);color:var(--weiss);font-family:'Philosopher',serif;font-size:18px;padding:6px 18px;border-radius:999px;margin-bottom:16px;font-weight:700}
+  .saeule:nth-child(even) .saeule-nr{background:var(--orange)}
+  .saeule h3{margin-bottom:16px}
+  .saeule ul{list-style:none;padding:0;margin:16px 0}
+  .saeule ul li{padding:8px 0 8px 28px;position:relative}
+  .saeule ul li::before{content:"✓";position:absolute;left:0;color:var(--petrol);font-weight:700}
+  .saeule:nth-child(even) ul li::before{color:var(--orange)}
+  .resultat{font-style:italic;color:var(--petrol);font-weight:600;margin-top:16px;padding-top:16px;border-top:1px dashed var(--creme)}
+
+  /* Live + Telegram */
+  .live-list{list-style:none;padding:0;max-width:760px;margin:32px auto}
+  .live-list li{padding:18px 24px;background:rgba(255,255,255,.1);margin-bottom:12px;border-radius:12px;font-size:18px}
+  .live-list li strong{color:var(--gelb)}
+
+  /* Boni */
+  .boni-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:32px}
+  .bonus{background:var(--weiss);padding:32px;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.06);text-align:center}
+  .bonus-icon{font-size:48px;margin-bottom:16px;display:block}
+  .bonus h3{font-size:22px}
+
+  /* Antikunden */
+  .antikunden-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:32px}
+  .anti-col{padding:32px;border-radius:16px;background:var(--weiss);box-shadow:0 8px 30px rgba(0,0,0,.06)}
+  .anti-col h3{color:var(--petrol)}
+  .anti-col.nein h3{color:#999}
+  .anti-col ul{list-style:none;padding:0;margin:0}
+  .anti-col ul li{padding:10px 0 10px 28px;position:relative;font-size:17px}
+  .anti-col.ja ul li::before{content:"✓";position:absolute;left:0;color:var(--petrol);font-weight:700;font-size:20px}
+  .anti-col.nein ul li::before{content:"✗";position:absolute;left:0;color:#bbb;font-weight:700;font-size:20px}
+
+  /* Pricing */
+  .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:48px;align-items:stretch}
+  .price-card{background:var(--weiss);padding:36px 28px;border-radius:16px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.06);position:relative;display:flex;flex-direction:column}
+  .price-card.featured{background:var(--dunkelblau);color:var(--weiss);transform:scale(1.05);box-shadow:0 16px 50px rgba(0,0,0,.18);border:3px solid var(--orange)}
+  .price-card.featured h3{color:var(--weiss)}
+  .price-badge{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--orange);color:var(--weiss);padding:8px 20px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;white-space:nowrap}
+  .price-eyebrow{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:12px}
+  .price-card.featured .price-eyebrow{color:var(--gelb)}
+  .price-amount{font-family:'Philosopher',serif;font-size:52px;font-weight:700;color:var(--dunkelblau);margin:8px 0}
+  .price-card.featured .price-amount{color:var(--weiss)}
+  .price-period{font-size:14px;opacity:.7;margin-bottom:16px}
+  .price-desc{font-size:15px;margin:16px 0 24px;line-height:1.5;flex-grow:1}
+  .price-card .cta{width:100%;font-size:15px;padding:14px 24px}
+  .price-card.small{transform:scale(.92);opacity:.85}
+
+  .pricing-foot{text-align:center;margin-top:40px;font-size:16px;color:var(--dunkelblau);font-weight:600}
+
+  /* Über Patricia */
+  .ueber{background:var(--weiss);padding:48px;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.06)}
+  .ueber ul{list-style:none;padding:0;margin:24px 0}
+  .ueber ul li{padding:10px 0 10px 28px;position:relative}
+  .ueber ul li::before{content:"•";position:absolute;left:8px;color:var(--orange);font-size:24px;line-height:1}
+  .ueber-zitat{font-family:'Philosopher',serif;font-size:22px;color:var(--petrol);font-weight:700;margin-top:24px;text-align:center;padding:24px;background:var(--creme);border-radius:12px}
+
+  /* FAQ */
+  .faq{margin-top:32px}
+  .faq details{background:var(--weiss);margin-bottom:12px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,.04);overflow:hidden}
+  .faq summary{padding:20px 24px;font-weight:700;cursor:pointer;font-size:18px;color:var(--dunkelblau);list-style:none;display:flex;justify-content:space-between;align-items:center}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";font-size:28px;color:var(--orange);font-weight:300;transition:transform .2s}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq details > p{padding:0 24px 20px}
+
+  /* Letzter CTA */
+  .final{background:linear-gradient(135deg,var(--dunkelblau) 0%,var(--petrol) 100%);color:var(--weiss);text-align:center;padding:80px 0}
+  .final h2{color:var(--weiss);font-size:clamp(32px,4vw,48px)}
+  .final p{font-size:20px;max-width:680px;margin:0 auto 16px}
+  .final-zitat{font-family:'Philosopher',serif;font-style:italic;font-size:22px;color:var(--gelb);margin-top:48px}
+  .final-signatur{margin-top:16px;font-size:16px;opacity:.85}
+
+  /* Eyebrow */
+  .eyebrow{display:inline-block;background:var(--orange);color:var(--weiss);padding:6px 16px;border-radius:999px;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:16px}
+
+  /* Mobile */
+  @media (max-width:768px){
+    section{padding:48px 0}
+    .antikunden-grid{grid-template-columns:1fr}
+    .price-card.featured{transform:none}
+    .price-card.small{transform:none}
+    .story-block,.ueber{padding:32px 24px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════ BLOCK 1 — HERO ════════════ -->
+<section class="hero">
+  <div class="container">
+    <img src="mama-ceo-hero.png" alt="Mama-CEO — 5 Säulen: Zeit erschaffen, Hamsterrad verlassen, Struktur bauen, KI & Admin delegieren, Business skalieren">
+    <p class="pitch">Bau dir in 8 Wochen das System, das dich langfristig aus dem alten Job raushilft — mit Wochenrhythmus, KI-Team und klaren Strukturen.</p>
+    <ul class="bullets">
+      <li>Du baust dir einen Wochenrhythmus, der mit Kindern + 18h die Woche wirklich funktioniert</li>
+      <li>Du installierst dein KI-Team — Cockpit-Bot, Familien-Bot, Brand-Voice-Bot</li>
+      <li>Du setzt dein Notion-System auf, das dir nichts mehr durch die Lappen lässt</li>
+    </ul>
+    <div class="cta-wrap"><a href="#pricing" class="cta">Cool! Zeig mir wie's geht!</a></div>
+  </div>
+</section>
+
+<!-- ════════════ BLOCK 2 — STADT-SITUATION (PAIN) ════════════ -->
+<section class="section-creme">
+  <div class="narrow">
+    <h2 style="text-align:center">Kommt dir das bekannt vor?</h2>
+    <div class="pain-list" style="margin-top:40px">
+      <p>Du arbeitest noch 60–80% in deinem alten Job — und das frisst dich auf.</p>
+      <p>Sonntagabend hast du Bauchschmerzen vor Montag.</p>
+      <p>Du sitzt jeden Abend bis 22 Uhr am Laptop, machst Reels, schreibst Captions, beantwortest DMs — und weisst trotzdem nicht, was du heute eigentlich erreicht hast.</p>
+      <p>Du sagst dir: <em>„Diesen Monat können wir nicht auswärts essen, das ist zu viel."</em> Und etwas in dir fragt: <em>„Oh shit, wie viel hab ich eigentlich noch auf dem Konto?"</em></p>
+      <p>Dein Mann schaut dein Business als Hobby an. Als „Instagram-Ding".</p>
+      <p>Du bist Mama. Networkerin. Tochter. Patientin. Vereinsmitglied. Und der Tag hat trotzdem nur 24 Stunden.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ BLOCK 3 — STORYTELLING (PATRICIA) ════════════ -->
+<section class="section-weiss">
+  <div class="narrow">
+    <h2 style="text-align:center">Keine Sorge — ich weiss genau, wie du dich fühlst.</h2>
+    <div class="story-block" style="margin-top:32px">
+      <p>2023. Ich war Sachbearbeiterin in der Sozialverwaltung. Springerin in verschiedenen Gemeinden. Den Job geliebt — aber sonntags hatte ich die Hose voll vor Montag.</p>
+      <p>Mama-Logistik-Discos jeden Morgen. <em>„Wer holt das Kind ab, wenn's krank wird?"</em> Mit 4 Kindern konnte ich nicht regulär arbeiten gehen — die Kinderbetreuung kostete mehr als mein Lohn.</p>
+      <p>Ich hab heimlich gekündigt. Niemand wusste's, auch mein Mann nicht.</p>
+      <p>Zwei Jahre Bauen. Frust. Programme, die niemand gekauft hat. Posts ins Leere. Angst beim Kontostand.</p>
+      <p class="story-headline">Mai 2025: Wendepunkt. Ich hab drei Dinge geändert.</p>
+      <p>Ich hab aufgehört, manuell zu arbeiten — und mir KI-Mitarbeiter gebaut. Heute 13. Solo. Ohne Tech-Hintergrund.</p>
+      <p>Ich hab meinen Wochenrhythmus aufgesetzt — 5:15 Krafttraining, 8:00–11:00 Fokuszeit, 19 Uhr Wand.</p>
+      <p>Ich hab mein Thema verschoben — von „Mental Load Coaching" zu „Mama-CEO".</p>
+      <p>Seitdem läuft es. Nicht laut. Nicht 6-stellig. <strong>Aber stabil.</strong></p>
+      <p class="story-quote">„Mein Erfolg ist nicht Bali. Mein Erfolg ist eine Alp."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ BLOCK 4 — LAND/TRANSFORMATION ════════════ -->
+<section class="section-petrol">
+  <div class="narrow">
+    <h2 style="text-align:center">Stell dir vor — so sieht dein Alltag in 8 Wochen aus:</h2>
+    <div style="margin-top:40px;font-size:18px;line-height:1.7">
+      <p>Du sitzt morgens am Tisch, machst den 4 Kindern Frühstück — und weisst genau, was heute in deinem Business läuft. Dein Cockpit-Bot hat dir schon den Tagesplan auf Telegram geschickt.</p>
+      <p>Um 8 Uhr setzt du dich an den Schreibtisch. 3 Stunden Fokuszeit. Du machst die EINE Sache, die heute dran ist — nicht 17 Aufgaben gleichzeitig.</p>
+      <p>Mittags isst du mit den Kindern. Nachmittags Fahrtdienste, Spielplatz, Garten. Du bist DA, statt mit dem Kopf im nächsten Reel.</p>
+      <p>Während du am Spielplatz sitzt, beantwortet dein ManyChat-Bot DMs. Deine Mail-Sequenz schickt Welcome-Mails an neue Leads. Dein Auto-Posting hat das Reel von gestern geplant.</p>
+      <p>Um 19 Uhr: Wand. Kein Business mehr. Abendessen, Kinder ins Bett, Bett.</p>
+      <p>Sonntag-Abend, 15 Minuten Reset. Du anerkennst, was lief. Setzt die nächste Woche auf. Schliesst den Laptop. Liest noch.</p>
+      <p style="margin-top:32px;font-size:22px;text-align:center;font-family:'Philosopher',serif"><strong style="color:var(--gelb)">Und am Monatsende:</strong> Vierstellig auf dem Konto. <strong style="color:var(--gelb)">Kein Monat mehr ohne Verkauf.</strong></p>
+      <p style="text-align:center;font-family:'Philosopher',serif;font-size:28px;margin-top:24px;color:var(--gelb)">Das ist Mama-CEO.</p>
+    </div>
+    <div class="cta-wrap"><a href="#pricing" class="cta">Ja, genau das will ich</a></div>
+  </div>
+</section>
+
+<!-- ════════════ BLOCK 5 — 5 SÄULEN ════════════ -->
+<section class="section-creme" id="saeulen">
+  <div class="container">
+    <h2 style="text-align:center">Die 5 Säulen, die dich aus dem Hamsterrad holen.</h2>
+    <div class="saeulen-grid">
+
+      <div class="saeule">
+        <span class="saeule-nr">Säule 01 · Wochen 1–2</span>
+        <h3>Du erschaffst dir die Zeit</h3>
+        <ul>
+          <li>Setze deine 2 Power-Zeiten und kenn deinen 4-Rollen-Wochenrhythmus</li>
+          <li>Erkenne die 3 Säulen deines Business (Plattform · Produkt · Verkauf) — und welche bei dir fehlt</li>
+          <li>Bau dir den Wochenrhythmus, der mit Kindern + 18h die Woche wirklich funktioniert</li>
+        </ul>
+        <p class="resultat">→ Du weisst, wann du Zeit hast — und was in der Zeit reinmuss.</p>
+      </div>
+
+      <div class="saeule">
+        <span class="saeule-nr">Säule 02 · Wochen 1–2 parallel</span>
+        <h3>Du brichst aus dem Hamsterrad aus</h3>
+        <ul>
+          <li>Mach den 90-Minuten-Brain-Dump und sortiere alle Aufgaben nach Hütchen (Mama · CEO · Sichtbarkeit · etc.)</li>
+          <li>Lass bewusst los, was nicht mehr in dein Business-Wachstum passt</li>
+          <li>Setz dein 15-Minuten-Sonntag-Reset auf, das dich jede Woche neu aufstellt</li>
+        </ul>
+        <p class="resultat">→ Du tust, was dran ist — ohne Schuld-Spirale.</p>
+      </div>
+
+      <div class="saeule">
+        <span class="saeule-nr">Säule 03 · Wochen 3–4</span>
+        <h3>Du baust die Struktur</h3>
+        <ul>
+          <li>Verteile deine Aufgaben auf Tage/Wochen — Haushalt + Business — ohne Überlastung</li>
+          <li>Dokumentiere die 5 Kern-Workflows einer Mama-CEO (Content · Verkauf · Onboarding · Admin · Wochenplanung)</li>
+          <li>Setz dein Notion Business Brain auf — mit dem Notion-Master-Template als Vorlage</li>
+        </ul>
+        <p class="resultat">→ Dir geht nichts mehr durch die Lappen.</p>
+      </div>
+
+      <div class="saeule">
+        <span class="saeule-nr">Säule 04 · Wochen 5–6</span>
+        <h3>Du delegierst den Adminkram</h3>
+        <ul>
+          <li>Bau dir deinen Cockpit-Bot — strategische Planung + Reflexion + Tagesbriefing</li>
+          <li>Bau dir den Haushalts-Helfer, den DU brauchst (Familien-Bot, Kochassistent, Garten — was zu dir passt)</li>
+          <li>Lerne, welche Bots Sinn machen — und welche nicht (Bot-Audit)</li>
+        </ul>
+        <p class="resultat">→ KI-Mitarbeiter nehmen dir den Adminkram ab — Business UND Haushalt.</p>
+      </div>
+
+      <div class="saeule">
+        <span class="saeule-nr">Säule 05 · Wochen 7–8</span>
+        <h3>Du skalierst dein Business</h3>
+        <ul>
+          <li>Sortiere 25 typische Mama-CEO-Tasks in die 4-Felder-Matrix (ich · KI · System · raus)</li>
+          <li>Setz deinen 90-Tage-Wachstums-Plan auf — 1 Fokus pro 30 Tage</li>
+          <li>Bestimme, was du JETZT NICHT machst — und was als nächstes kommt</li>
+        </ul>
+        <p class="resultat">→ Du weisst, was DEINS bleibt, was die KI macht, was raus muss.</p>
+      </div>
+
+    </div>
+    <div class="cta-wrap" style="margin-top:48px"><a href="#pricing" class="cta">Genau das brauche ich</a></div>
+  </div>
+</section>
+
+<!-- ════════════ BLOCK 6 — LIVE-TERMINE + TELEGRAM ════════════ -->
+<section class="section-dunkelblau">
+  <div class="narrow">
+    <h2 style="text-align:center">Plus persönliche Begleitung — alle 2 Wochen direkt mit mir.</h2>
+    <ul class="live-list">
+      <li><strong>Live-Termin 1</strong> (Ende Woche 2) — Hot-Seat „Zeig mir deinen Wochenrhythmus"</li>
+      <li><strong>Live-Termin 2</strong> (Ende Woche 4) — Workflow-Review + Notion-Brain-Sprechstunde</li>
+      <li><strong>Live-Termin 3</strong> (Ende Woche 6) — KI-Demo + Bot-Bau-Sprechstunde</li>
+      <li><strong>Live-Termin 4</strong> (Ende Woche 8) — Abschluss + 90-Tage-Vision</li>
+    </ul>
+    <p style="text-align:center;margin-top:24px;font-size:18px">Plus: <strong style="color:var(--gelb)">Telegram-Gruppe</strong> für 8 Wochen + danach offen. Sparring, schnelle Antworten, Frust-Container.</p>
+  </div>
+</section>
+
+<!-- ════════════ BLOCK 7 — BONI ════════════ -->
+<section class="section-creme">
+  <div class="container">
+    <h2 style="text-align:center">3 Boni — alles aus meinem echten Setup. Im Preis enthalten.</h2>
+    <div class="boni-grid">
+      <div class="bonus">
+        <span class="bonus-icon">🌅</span>
+        <h3>Cockpit-Bot Vorlage</h3>
+        <p>Mein eigener Cockpit-Bot als System-Prompt + Anleitung. Strategische Planung + Reflexion + Tagesbriefing direkt auf dein Telegram. Du baust deinen in 30 Minuten nach.</p>
+      </div>
+      <div class="bonus">
+        <span class="bonus-icon">🏠</span>
+        <h3>Familien-Bot Vorlage</h3>
+        <p>System-Prompt für deinen Mental-Load-Speicher: Familienkalender, Geschenke, Arzt-Termine, Reisen. Plus Anleitung, wie du ihn auf deine Familie anpasst.</p>
+      </div>
+      <div class="bonus">
+        <span class="bonus-icon">📂</span>
+        <h3>Notion-Master-Template</h3>
+        <p>Abgespeckte Kopie meines echten Notion-Workspaces: Wochenplanung, Aufgaben, Content, Produkte, Workflows, Mama-CEO-Matrix, 90-Tage-Tracker. Du duplizierst und passt an.</p>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:32px;font-size:16px;color:var(--dunkelblau)">Plus: <strong>Claude-Code-Einrichtungs-Anleitung</strong> als Material in Säule 4 — du startest mit meinem Setup, nicht aus dem Nichts.</p>
+  </div>
+</section>
+
+<!-- ════════════ BLOCK 8 — ANTIKUNDEN ════════════ -->
+<section class="section-weiss">
+  <div class="container">
+    <h2 style="text-align:center">Bevor du klickst — ist Mama-CEO für dich?</h2>
+    <div class="antikunden-grid">
+      <div class="anti-col ja">
+        <h3>JA, wenn du…</h3>
+        <ul>
+          <li>seit mindestens 6 Monaten im Network bist und schon erste Kundinnen hattest</li>
+          <li>grob weisst, was du anbietest</li>
+          <li>bereit bist, in 8 Wochen aktiv mitzubauen — nicht nur zu konsumieren</li>
+          <li>Notion + KI einsetzen willst, auch wenn du heute nicht weisst wie</li>
+          <li>ehrlich zu dir bist: du machst alles zu Fuss und es frisst dich auf</li>
+        </ul>
+      </div>
+      <div class="anti-col nein">
+        <h3>NEIN, wenn du…</h3>
+        <ul>
+          <li>noch nicht weisst, was du anbietest</li>
+          <li>in 6 Monaten 6-stellig verdienen willst</li>
+          <li>erwartest, dass ich das Business für dich baue</li>
+          <li>keine Lust hast, Notion oder ChatGPT überhaupt zu starten</li>
+          <li>seit Jahren Kurse buchst und nichts umsetzt</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ BLOCK 9 — PRICING ════════════ -->
+<section class="section-creme" id="pricing">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="eyebrow">Erste Runde · 15 Plätze</span>
+      <h2>Komm jetzt rein, solange's noch 333 sind.</h2>
+      <p style="max-width:640px;margin:0 auto;font-size:17px">Bei der zweiten Runde (Herbst 2026) sind's <strong>444 CHF</strong>. Die Boni werden mehr, das Programm tiefer. Wer jetzt einsteigt, zahlt am wenigsten — und hat mich am nähesten dran in den 4 Live-Terminen.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card featured">
+        <span class="price-badge">🔥 Beste Wahl · 72 Std.</span>
+        <div class="price-eyebrow">Frühbucher</div>
+        <div class="price-amount">249 CHF</div>
+        <div class="price-period">Heute 11:00 → Sa 23.5. 23:59</div>
+        <div class="price-desc">Komplettes Programm + alle 3 Boni + 4 Live-Termine + Telegram-Gruppe</div>
+        <a href="#checkout" class="cta">Jetzt sichern</a>
+      </div>
+
+      <div class="price-card">
+        <div class="price-eyebrow">Final · Erste Runde</div>
+        <div class="price-amount">333 CHF</div>
+        <div class="price-period">So 24.5. → So 31.5. 23:59</div>
+        <div class="price-desc">Selbe Inhalte. Selbe Boni. Anmeldung schliesst am 31.5.</div>
+        <a href="#checkout" class="cta cta-petrol">Platz buchen</a>
+      </div>
+
+      <div class="price-card small">
+        <div class="price-eyebrow">Runde 2 · Herbst 2026</div>
+        <div class="price-amount">444 CHF</div>
+        <div class="price-period">Voraussichtlich Q3 2026</div>
+        <div class="price-desc">Mehr Boni · vertieftes Programm</div>
+        <a href="#" class="cta" style="background:#999;cursor:default;pointer-events:none">Später</a>
+      </div>
+    </div>
+
+    <p class="pricing-foot"><strong>Programm-Start:</strong> Mo 1. Juni 2026 · <strong>Plätze:</strong> 15 (strikt limitiert wegen der 4 Live-Termine)</p>
+    <div class="cta-wrap"><a href="#checkout" class="cta">Ja, ich komme rein</a></div>
+  </div>
+</section>
+
+<!-- ════════════ BLOCK 10 — ÜBER PATRICIA ════════════ -->
+<section class="section-weiss">
+  <div class="narrow">
+    <h2 style="text-align:center">Hey, ich bin Patricia.</h2>
+    <div class="ueber" style="margin-top:32px">
+      <p>Schweizerin. 36. Vier Kinder zwischen 8 und 13. Wohne im Appenzellerland, 920 Meter über dem Meer. Mein Mann arbeitet 80% auswärts, die ganze Woche. Ich habe keine Putzfrau, keine VA, kein Au-Pair.</p>
+      <p style="margin-top:24px"><strong>Mein Setup:</strong></p>
+      <ul>
+        <li>18 Stunden Wochenarbeit. Mehr nicht.</li>
+        <li>13 Slash-Commands. 3 Telegram-Bots. 3 Kunden-Bots. Alles solo gebaut, ohne Tech-Hintergrund.</li>
+        <li>Vierstellig pro Monat aus Mentoring + vierstellig aus doTERRA.</li>
+        <li><strong>Kein Monat ohne Verkauf seit Mai 2025.</strong></li>
+      </ul>
+      <p style="margin-top:24px"><strong>Geh zu jemandem anders</strong>, wenn du in 6 Monaten 6-stellig verdienen willst.</p>
+      <p class="ueber-zitat">Komm zu mir, wenn du ehrliche Mama-CEO-Realität willst — Schweizer Boden, 18h Woche, kein Bali-Postkarten-Coaching.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ BLOCK 11 — FAQ ════════════ -->
+<section class="section-creme">
+  <div class="narrow">
+    <h2 style="text-align:center">Häufige Fragen</h2>
+    <div class="faq">
+
+      <details>
+        <summary>Ich hab keine Zeit für noch einen Kurs.</summary>
+        <p>Genau deshalb baust du Mama-CEO. Du brauchst nicht „mehr Zeit fürs Lernen" — du brauchst „weniger Zeit fürs Tun". Säule 1 zeigt dir den Wochenrhythmus, der ab Tag 1 für dich arbeitet. Lektionen sind in 8–15 Min portioniert. Hör es beim Spazieren, beim Bügeln, beim Auto-Fahren.</p>
+      </details>
+
+      <details>
+        <summary>Ich kann das nicht. Ich bin nicht die mit den Tools.</summary>
+        <p>Genau dafür gibt's das Programm. Bis Mai 2025 wusste ich nicht, was ein Custom GPT ist. Heute habe ich 13 Slash-Commands. Jede Lektion läuft Schritt für Schritt — mit Vorlagen, mit fertigen Briefings, mit den 4 Live-Terminen, wenn's klemmt. Du musst nichts vorher können.</p>
+      </details>
+
+      <details>
+        <summary>Ist das nicht das Gleiche wie deine Instagram-Kundenmaschine?</summary>
+        <p>Nein. Instagram-Kundenmaschine lehrt dich <strong>WAS</strong> du sagst (Thema, Positionierung, Reels, Captions). Mama-CEO lehrt dich <strong>WIE</strong> du es tust, ohne dich zu zerreissen (KI, Notion, Wochenrhythmus, Automation). Wer noch nicht weiss, WAS sie verkauft → Insta-Kundenmaschine zuerst. Wer's weiss, aber keine Zeit hat → Mama-CEO.</p>
+      </details>
+
+      <details>
+        <summary>Was, wenn ich nicht zu den Live-Terminen kann?</summary>
+        <p>Aufzeichnungen kommen alle ins Telegram. Hot-Seat-Fragen kannst du vorab schicken — ich nehme sie für dich auf. Aber: Live ist Live. Wenn du kannst, komm.</p>
+      </details>
+
+      <details>
+        <summary>Brauche ich eine grosse Reichweite, damit das funktioniert?</summary>
+        <p>Nein. Ich hatte selbst keine grosse Reichweite, als ich den ersten Funnel gebaut habe. Mein erstes Mid-Tier-Programm hat 7 Kundinnen aus einer kleinen warmen Liste verkauft. Was zählt: dein Thema, dein Funnel, deine Strukturen — nicht deine Followerzahl.</p>
+      </details>
+
+      <details>
+        <summary>Was, wenn es bei mir nicht funktioniert?</summary>
+        <p>Ehrlich: wenn du nicht implementierst, funktioniert nichts. Mama-CEO ist für Frauen, die TUN. Wenn du in den 8 Wochen die Säulen-Lektionen machst, an den Live-Terminen teilnimmst und in der Telegram-Gruppe aktiv bist — dann hast du das System. Wenn du konsumierst, hast du nichts. <strong>Es liegt an dir. 100%.</strong></p>
+      </details>
+
+      <details>
+        <summary>Wieso erste Runde nur 333 — und dann teurer?</summary>
+        <p>Schau, jetzt nehme ich zum ersten Mal 15 Frauen rein. Beim zweiten Mal weiss ich noch genauer, wo's bei euch hakt — und beim dritten Mal sind die Boni nochmal ausgebauter. Dann sind's 444 oder 555. Wer jetzt einsteigt, zahlt am wenigsten und hat mich am nähesten dran in den 4 Live-Terminen.</p>
+      </details>
+
+      <details>
+        <summary>Was ist mit dem Mann/der Familie? Ich hab kaum Zeit.</summary>
+        <p>Ich habe 4 Kinder, mein Mann arbeitet 80% auswärts (Mo–Do). Ich verstehe das. Mama-CEO ist genau für diese Realität gebaut. Die Lektionen sind in 8–15 Min portioniert. Live-Termine sind vormittags (Power-Window — Kids in der Schule). Telegram-Gruppe ist asynchron. Du machst's in deinem Tempo.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ BLOCK 12 — LETZTER CTA ════════════ -->
+<section class="final" id="final-cta">
+  <div class="narrow">
+    <h2>Sichere dir deinen Platz.</h2>
+    <p style="margin-top:24px">Erste Runde startet <strong style="color:var(--gelb)">Mo 1. Juni 2026</strong>.</p>
+    <p>Anmeldung öffnet <strong style="color:var(--gelb)">Mi 20. Mai um 09:00</strong>.</p>
+    <p>Frühbucher-Preis (249 CHF) läuft <strong style="color:var(--gelb)">72 Stunden</strong>.</p>
+    <p style="margin-top:40px;font-size:22px;font-family:'Philosopher',serif"><em style="color:var(--gelb)">Wenn du das hier zu Ende gelesen hast — du bist die richtige Frau für diese Runde.</em></p>
+    <div class="cta-wrap" style="margin-top:40px"><a href="#checkout" class="cta" style="font-size:20px;padding:22px 50px">Komm rein →</a></div>
+    <p class="final-zitat">„Funktionieren war gestern."</p>
+    <p class="final-signatur">— Patricia</p>
+  </div>
+</section>
+
+</body>
+</html>

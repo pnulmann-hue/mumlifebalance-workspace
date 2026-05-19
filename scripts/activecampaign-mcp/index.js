@@ -29,6 +29,37 @@ async function ac(path, method = "GET", body = null) {
   return res.json();
 }
 
+// AC API V1 (legacy) - braucht's nur fuer Campaign+Message-Create.
+// V3 hat dort 405-Restriktionen, V1 funktioniert seit Jahren stabil.
+// Wichtig: AC V1 erwartet PHP-Array-Notation (list[0]=2) ohne URL-Encoding der Brackets.
+async function acV1(action, params) {
+  const url = `${AC_BASE_URL}/admin/api.php?api_action=${action}&api_key=${AC_API_KEY}&api_output=json`;
+  const parts = [];
+  for (const [k, v] of Object.entries(params)) {
+    if (Array.isArray(v)) {
+      v.forEach((item, i) => parts.push(`${k}[${i}]=${encodeURIComponent(item)}`));
+    } else if (v !== null && v !== undefined) {
+      // Keys mit Brackets (z.B. "list[0]", "m[100]") NICHT URL-encoden, Values schon.
+      parts.push(`${k}=${encodeURIComponent(String(v))}`);
+    }
+  }
+  const body = parts.join("&");
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body,
+  });
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`AC V1 ${action} HTTP ${res.status}: ${err}`);
+  }
+  const json = await res.json();
+  if (json.result_code === 0) {
+    throw new Error(`AC V1 ${action} failed: ${json.result_message || JSON.stringify(json)}`);
+  }
+  return json;
+}
+
 // ─── Tool Definitions ─────────────────────────────────────────────────────────
 
 const TOOLS = [
@@ -500,22 +531,172 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       }
 
       case "create_campaign": {
-        const data = await ac("/campaigns", "POST", {
+        // AC API V3 unterstuetzt POST /messages + POST /campaigns nicht zuverlaessig (gibt 405).
+        // Daher: V1 (legacy) fuer message_add + campaign_create. V1 ist seit Jahren stabil fuer diese Operations.
+
+        const plainText = args.text_content || (args.html_content || "")
+          .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, "")
+          .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, "")
+          .replace(/<[^>]+>/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+
+        // Schritt 1: Message via V1 anlegen
+        // WICHTIG: message_add erwartet p[0]=list_id (NICHT list[0]) - AC V1-Eigenheit, via debug-v1.mjs verifiziert
+        const msgResp = await acV1("message_add", {
+          format: "html",
+          htmlconstructor: "external",
+          textconstructor: "external",
+          subject: args.subject,
+          fromname: args.from_name,
+          fromemail: args.from_email,
+          reply2: args.from_email,
+          html: args.html_content,
+          text: plainText,
+          "p[0]": args.list_id,
+        });
+        const messageId = msgResp.id;
+
+        // Schritt 2: Campaign via V1 anlegen (Draft, mit Message verknuepft)
+        // WICHTIG: campaign_create erwartet ebenfalls p[0]=list_id (nicht list[0]) + m[messageId]=weight
+        const campResp = await acV1("campaign_create", {
+          type: "single",
+          name: args.name,
+          sdate: "",
+          status: 0,
+          public: 0,
+          tracklinks: "all",
+          subject: args.subject,
+          fromname: args.from_name,
+          fromemail: args.from_email,
+          reply2: args.from_email,
+          "p[0]": args.list_id,
+          [`m[${messageId}]`]: 100,
+        });
+
+        result = {
+          id: campResp.id,
+          name: args.name,
+          message_id: messageId,
+          status: "draft",
+          created: true,
+        };
+        break;
+      }
+      case "_LEGACY_create_campaign_v3_unused": {
+        // Aufgehoben fuer den Fall dass V3 spaeter doch POST campaigns/messages unterstuetzt.
+        const messageId = null;
+
+        // Schritt 2: Campaign mit Message-Verknuepfung erstellen
+        const campData = await ac("/campaigns", "POST", {
           campaign: {
             type: "single",
             name: args.name,
-            subject: args.subject,
+            status: 0,
+            public: 1,
+            tracklinks: "all",
             fromname: args.from_name,
             fromemail: args.from_email,
-            list: args.list_id,
-            htmlcontent: args.html_content,
-            textcontent: args.text_content || "",
-            status: 0,
+            reply2: args.from_email,
+            subject: args.subject,
+            segmentid: 0,
+            bounceid: -1,
+            realcid: 0,
+            sendid: 0,
+            threaded: 0,
+            deletestamp: null,
+            sdate: null,
+            mdate: null,
+            ldate: null,
+            send_amt: 0,
+            total_amt: 0,
+            opens: 0,
+            uniqueopens: 0,
+            linkclicks: 0,
+            uniquelinkclicks: 0,
+            subscriberclicks: 0,
+            forwards: 0,
+            uniqueforwards: 0,
+            hardbounces: 0,
+            softbounces: 0,
+            unsubscribes: 0,
+            unsubreasons: 0,
+            updates: 0,
+            socialshares: 0,
+            replies: 0,
+            uniquereplies: 0,
+            status_action: null,
+            archive: "",
+            html_unsub: 1,
+            text_unsub: 1,
+            html_unsubdata: "",
+            text_unsubdata: "",
+            recurring: "off",
+            willrecur: 0,
+            split_type: "even",
+            split_content: 0,
+            split_offset: 2,
+            split_offset_type: "day",
+            split_winner_messageid: 0,
+            split_winner_awaiting: 0,
+            responder_offset: 0,
+            responder_existing: 0,
+            reminder_field: null,
+            reminder_format: "",
+            reminder_type: "",
+            reminder_offset: 0,
+            reminder_offset_type: "",
+            reminder_offset_sign: "+",
+            reminder_last_cron_run: null,
+            activerss_interval: "7",
+            activerss_url: null,
+            activerss_items: 10,
+            ip4: 0,
+            laststep: "",
+            managetext: 0,
+            schedule: null,
+            scheduleddate: null,
+            waitpreview: 0,
+            deletestatus: 0,
+            replysys: "",
           },
+        }).catch(async (e) => {
+          // Fallback: Minimal-Campaign-Body (manche AC-Accounts sind strikter)
+          return await ac("/campaigns", "POST", {
+            campaign: {
+              type: "single",
+              name: args.name,
+              status: 0,
+              fromname: args.from_name,
+              fromemail: args.from_email,
+              subject: args.subject,
+            },
+          });
         });
+
+        const campaignId = campData.campaign.id;
+
+        // Schritt 3: Campaign mit Liste verknuepfen
+        await ac(`/campaignLists`, "POST", {
+          campaignList: {
+            campaign: campaignId,
+            list: String(args.list_id),
+          },
+        }).catch(() => {});
+
+        // Schritt 4: Campaign mit Message verknuepfen
+        await ac(`/campaignMessages`, "POST", {
+          campaignMessage: {
+            campaign: campaignId,
+            message: messageId,
+            weight: 100,
+          },
+        }).catch(() => {});
+
         result = {
-          id: data.campaign.id,
-          name: data.campaign.name,
+          id: campaignId,
+          name: campData.campaign.name,
+          message_id: messageId,
           status: "draft",
           created: true,
         };

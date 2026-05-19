@@ -4,12 +4,22 @@ tags: [produkt]
 
 # Mama-CEO Webinar-Mail-Sequenz — Übersicht
 
-**Letzte Aktualisierung:** 2026-05-05 (14 Mails · 2-Phasen-Cart)
+**Letzte Aktualisierung:** 2026-05-19 (14 Mails · alle auf Pitch-Variante C + neue 5 Säulen geupdated)
 **Webinar:** „In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln" · Mi 20.5.2026 · 09:00
 **Cart-Logik (2-Phasen):**
 - 🟠 Mi 20.5. 11:00 → Sa 23.5. 23:59 = **Earlybird CHF 249** (3 Tage)
 - 🔵 So 24.5. 00:00 → So 31.5. 23:59 = **Final CHF 333** (8 Tage)
-- 🚀 Mo 1.6.2026 = **Pilot-Phase Start**
+- 🚀 Mo 1.6.2026 = **Programm-Start (Erste Runde · 15 Plätze)**
+
+**Sprach-Updates 2026-05-19 (alle 14 Mails durchgängig):**
+- „Mastermind" → „8-Wochen-Live-Programm"
+- „Mompreneur" → „Mama im Network"
+- „Pilot-Kohorte/-Start/-Preis" → „Erste Runde / Programm-Start"
+- „Schuld-Spirale" → „Hamsterrad"
+- Alte 5 Säulen (Energie · Mindset · System · KI · Network) → Neue 5 Säulen (Zeit erschaffen · Hamsterrad raus · Struktur · KI · Skalieren)
+- „5 Live-Calls (Donnerstag)" → „4 Live-Termine (alle 2 Wochen)"
+- „Telegram-Buddy-Gruppe" → „Telegram-Gruppe"
+- Herbst-Aussagen konsistent mit Salespage: Runde 2 CHF 444 mit mehr Boni (statt „Selbstlerner-Evergreen ohne Live-Calls")
 
 ---
 

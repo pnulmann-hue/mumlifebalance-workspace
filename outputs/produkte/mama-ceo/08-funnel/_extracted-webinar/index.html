@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KI-Webinar: Dein Mama-Leben mit KI-Assistenten umkrempeln · 2 Termine · Mum Life Balance</title>
+  <meta name="description" content="Live-Webinar Mi 20. Mai oder Di 26. Mai 2026, 09:00 Uhr. 90 Min: Wie KI-Assistenten dir Mental Load abnehmen und dir Zeit fürs Business zurück geben. Kostenlos.">
+  <meta property="og:title" content="In 90 Min: Dein Mama-Leben mit KI-Assistenten umkrempeln">
+  <meta property="og:description" content="Mental Load abgeben · Zeit fürs Business zurück gewinnen. Mi 20. Mai oder Di 26. Mai · 09:00 LIVE — kostenlos.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --bg-deep: #0f2a3a;            /* sehr dunkles Petrol — edel */
+      --bg-section: #29556d;         /* Patricia-Brand Petrol-Blau */
+      --bg-card-soft: #12828c;       /* Patricia-Brand Petrol-Türkis */
+      --bg-card-strong: #dc822e;     /* Patricia-Brand Orange */
+      --creme: #f1ecdd;              /* Patricia-Brand Creme */
+      --creme-soft: #d8d2c2;         /* gedämpftes Creme */
+      --orange: #dc822e;             /* Akzent-Orange (Headlines, Borders) */
+      --orange-soft: #e69b58;
+      --terracotta: #dc822e;         /* CTA primary = Orange */
+      --terracotta-hover: #c46818;   /* CTA hover */
+      --gold: #dc822e;               /* Legacy: alle Gold-References = Orange */
+      --text-dim: #ede5d2;           /* hellcreme für Body-Text - besserer Kontrast auf Petrol als hellgrau-blau */
+      --line: rgba(241, 236, 221, 0.18);
+    }
+
+    body {
+      font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--creme);
+      background: var(--bg-deep);
+      overflow-x: hidden;
+      line-height: 1.6;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1 { font-family: 'Philosopher', Georgia, serif; color: #f1ecdd !important; line-height: 1.2; font-weight: 700; }
+    h2 { font-family: 'Philosopher', Georgia, serif; color: #f1ecdd !important; line-height: 1.2; font-weight: 700; }
+    h3 { font-family: 'Philosopher', Georgia, serif; color: #f1ecdd !important; line-height: 1.2; font-weight: 700; }
+    h4 { font-family: 'Philosopher', Georgia, serif; color: #f1ecdd !important; line-height: 1.2; font-weight: 700; }
+    p { color: #d8d2c2 !important; }
+    em { color: #dc822e !important; font-style: italic; }
+    .section-title { color: #f1ecdd !important; }
+    .section-subtitle { color: #d8d2c2 !important; }
+    .check-title { color: #f1ecdd !important; }
+    .check-desc { color: #ede5d2 !important; }
+    .learn-card h3 { color: #0f2a3a !important; }
+    .learn-card p { color: #0f2a3a !important; }
+    .learn-card em { color: #0f2a3a !important; }
+    .bonus-box h3 { color: #0f2a3a !important; }
+    .bonus-box p { color: #0f2a3a !important; }
+    .bonus-box em { color: #0f2a3a !important; }
+    .anmeldung-card h2 { color: #0f2a3a !important; }
+    .anmeldung-card h3 { color: #0f2a3a !important; }
+    .anmeldung-card p { color: #0f2a3a !important; }
+    .anmeldung-card em { color: #29556d !important; }
+
+    /* MAX-SPECIFITY KILL: verstecke Elementor-Widgets mit Newsletter-Forms (Footer-Theme-Bug) */
+    html body .elementor-element.elementor-widget.elementor-element-32094afe { display: none !important; visibility: hidden !important; height: 0 !important; width: 0 !important; padding: 0 !important; margin: 0 !important; overflow: hidden !important; opacity: 0 !important; position: absolute !important; left: -99999px !important; }
+    html body div.elementor-element[data-id="32094afe"] { display: none !important; visibility: hidden !important; height: 0 !important; }
+    html body form[id^="_form_"]:not([id="_form_55_"]) { display: none !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; position: absolute !important; left: -99999px !important; }
+    html body div.elementor-widget-html:has(form[id^="_form_"]:not([id="_form_55_"])) { display: none !important; }
+
+    /* ===================== HERO ===================== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px 80px;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        url('hero.jpg') center/cover no-repeat,
+        linear-gradient(160deg, #29556d 0%, #0f2a3a 50%, #1a3a4d 100%),
+        radial-gradient(ellipse at 30% 30%, #12828c 0%, #0f2a3a 70%);
+      filter: brightness(0.55);
+      z-index: 0;
+    }
+
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(180deg, rgba(15,42,58,0.55) 0%, rgba(15,42,58,0.25) 35%, rgba(15,42,58,0.25) 65%, rgba(15,42,58,0.75) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 1000px;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+      padding: 10px 24px;
+      border: 1px solid var(--gold);
+      border-radius: 100px;
+      background: rgba(26, 13, 10, 0.4);
+      backdrop-filter: blur(4px);
+    }
+
+    .hero-eyebrow .pulse {
+      display: inline-block;
+      width: 8px; height: 8px;
+      background: #ff6b6b;
+      border-radius: 50%;
+      margin-right: 0.6rem;
+      vertical-align: middle;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+    .hero-headline {
+      font-family: 'Philosopher', serif;
+      font-size: clamp(2.4rem, 7vw, 5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      color: #f1ecdd !important;
+      margin-bottom: 36px;
+      text-shadow: 0 4px 32px rgba(0,0,0,0.85), 0 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .hero-headline .accent { color: #dc822e !important; font-style: italic; }
+
+    .hero-sub {
+      font-family: 'Philosopher', serif;
+      font-style: italic;
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      font-weight: 400;
+      color: #f1ecdd !important;
+      margin-bottom: 50px;
+      max-width: 800px;
+      margin-left: auto; margin-right: auto;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.75);
+    }
+
+    .hero-sub strong { color: #f5e555 !important; }
+
+    .btn-cta {
+      display: inline-block;
+      background: var(--terracotta);
+      color: var(--creme) !important;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 20px 56px;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 32px rgba(198, 107, 74, 0.35);
+    }
+    .btn-cta:hover {
+      background: var(--terracotta-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(198, 107, 74, 0.5);
+    }
+
+    .hero-meta {
+      margin-top: 40px;
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: var(--creme-soft);
+      font-size: 0.95rem;
+    }
+
+    .hero-meta span { display: flex; align-items: center; gap: 8px; }
+
+    /* ===================== "FÜR DICH WENN" ===================== */
+    .section {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-family: 'Philosopher', serif;
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 700;
+      color: var(--creme);
+      margin-bottom: 20px;
+    }
+
+    .section-title .accent { color: var(--gold); font-style: italic; }
+
+    .section-subtitle {
+      font-family: 'Philosopher', serif;
+      font-style: italic;
+      color: var(--creme-soft);
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 60px;
+    }
+
+    .checklist {
+      max-width: 780px;
+      margin: 60px auto 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .check-item {
+      text-align: center;
+    }
+
+    .check-title {
+      font-family: 'Philosopher', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--creme);
+      margin-bottom: 10px;
+    }
+
+    .check-title .checkmark {
+      color: var(--gold);
+      margin-right: 8px;
+      font-weight: 400;
+    }
+
+    .check-desc {
+      font-size: 1rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .section-bg-alt { background: var(--bg-section); }
+
+    /* ===================== "WAS DU LERNST" KARTEN ===================== */
+    .learn-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 920px;
+      margin: 60px auto 0;
+    }
+
+    .learn-card {
+      border-radius: 8px;
+      padding: 44px 32px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .learn-card:hover { transform: translateY(-4px); }
+
+    .learn-card.soft { background: var(--creme); }
+    .learn-card.strong { background: var(--bg-card-strong); }
+
+    .card-number {
+      font-family: 'Philosopher', serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: rgba(15, 42, 58, 0.55);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .learn-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--bg-deep);
+      margin-bottom: 14px;
+    }
+
+    .learn-card p {
+      font-size: 1rem;
+      color: var(--bg-deep);
+      line-height: 1.65;
+      font-weight: 500;
+    }
+
+    .learn-card.soft .card-number { color: rgba(15, 42, 58, 0.6); }
+    .learn-card em { color: var(--bg-deep); font-style: italic; font-weight: 700; }
+
+    /* ===================== BONUS BOX ===================== */
+    .bonus-box {
+      max-width: 760px;
+      margin: 60px auto 0;
+      background: linear-gradient(135deg, var(--gold) 0%, #b88847 100%);
+      color: var(--bg-deep);
+      padding: 50px 40px;
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .bonus-label {
+      display: inline-block;
+      background: var(--bg-deep);
+      color: var(--gold);
+      padding: 8px 18px;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 24px;
+    }
+
+    .bonus-box h3 {
+      color: var(--bg-deep);
+      font-family: 'Philosopher', serif;
+      font-size: 1.7rem;
+      margin-bottom: 20px;
+    }
+
+    .bonus-box ul {
+      margin: 0 0 20px;
+      padding-left: 1.4rem;
+      list-style: none;
+    }
+
+    .bonus-box li {
+      color: var(--bg-deep);
+      padding: 8px 0;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .bonus-box li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+      color: var(--bg-deep);
+    }
+
+    .bonus-value {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 16px;
+      background: rgba(26, 13, 10, 0.15);
+      color: var(--bg-deep);
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    /* ===================== URGENCY ===================== */
+    .urgency {
+      padding: 100px 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .urgency-headline {
+      font-family: 'Philosopher', serif;
+    }
+
+    .urgency-headline .top {
+      color: var(--gold);
+      font-size: clamp(2.8rem, 7vw, 4.5rem);
+      display: block;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 1;
+    }
+
+    .urgency-headline .bottom {
+      color: var(--creme);
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 700;
+      display: block;
+      margin-top: 12px;
+    }
+
+    .urgency-desc {
+      margin-top: 32px;
+      font-size: 1.1rem;
+      color: var(--creme-soft);
+      line-height: 1.7;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ===================== ÜBER PATRICIA ===================== */
+    .about {
+      padding: 100px 20px;
+      background: var(--bg-card-soft);
+    }
+    .about h2 { color: var(--creme); }
+    .about p { color: var(--creme); }
+    .about em { color: var(--orange); font-weight: 500; }
+    .about strong { color: var(--creme); }
+
+    .about-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-photo {
+      aspect-ratio: 1;
+      background:
+        url('patricia.jpg') center/cover no-repeat,
+        linear-gradient(135deg, var(--bg-card-soft), var(--bg-card-strong));
+      border-radius: 50%;
+      max-width: 320px;
+      width: 100%;
+      margin: 0 auto;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 0 0 0 4px var(--orange);
+    }
+
+    .about-body h2 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin-bottom: 24px;
+    }
+
+    .about-body p {
+      margin-bottom: 16px;
+      color: var(--creme-soft);
+      font-size: 1.05rem;
+    }
+
+    /* ===================== FAQ ===================== */
+    .faq-wrap {
+      max-width: 760px;
+      margin: 60px auto 0;
+      text-align: left;
+    }
+
+    details {
+      background: var(--bg-section);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    summary {
+      padding: 24px 28px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--creme);
+      list-style: none;
+      position: relative;
+      padding-right: 4rem;
+      font-family: 'Source Sans 3', sans-serif;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: "+";
+      position: absolute;
+      right: 1.8rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: var(--gold);
+      transition: transform 0.2s ease;
+    }
+
+    details[open] summary::after { content: "−"; }
+
+    details > p {
+      padding: 0 1.8rem 1.6rem;
+      color: var(--creme-soft);
+      line-height: 1.7;
+    }
+
+    /* ===================== ANMELDUNG ===================== */
+    .anmeldung {
+      padding: 100px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-section) 100%);
+    }
+
+    .anmeldung-card {
+      max-width: 600px;
+      margin: 50px auto 0;
+      background: var(--bg-section);
+      padding: 50px 40px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+    }
+
+    .anmeldung-meta {
+      list-style: none;
+      margin-bottom: 32px;
+      text-align: left;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .anmeldung-meta li {
+      padding: 0.6rem 0;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: var(--creme-soft);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .anmeldung-meta li:last-child { border-bottom: none; }
+
+    .anmeldung-meta li .icon { font-size: 1.3rem; }
+
+    .ac-form-slot {
+      margin-top: 32px;
+      padding: 24px;
+      border: 2px dashed var(--gold);
+      border-radius: 8px;
+      background: rgba(212, 160, 86, 0.08);
+      color: var(--creme-soft);
+      font-size: 0.95rem;
+      text-align: left;
+    }
+
+    .ac-form-slot code {
+      display: inline;
+      padding: 3px 8px;
+      background: var(--bg-deep);
+      color: var(--gold);
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-family: monospace;
+    }
+
+    /* ===================== FOOTER ===================== */
+    footer {
+      background: #0d0606;
+      color: var(--text-dim);
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    footer p { word-wrap: break-word; overflow-wrap: break-word; line-height: 1.6; }
+
+    footer a {
+      color: var(--creme-soft);
+      text-decoration: none;
+      margin: 0 0.6rem;
+    }
+
+    footer a:hover { color: var(--gold); }
+
+    /* ===================== MOBILE ===================== */
+    @media (max-width: 768px) {
+      .hero { min-height: auto; padding: 80px 20px 60px; }
+      .section { padding: 60px 20px; }
+      .urgency, .about { padding: 60px 20px; }
+      .anmeldung { padding: 60px 20px; }
+
+      .learn-grid { grid-template-columns: 1fr; }
+
+      .about-wrap { grid-template-columns: 1fr; gap: 30px; }
+      .about-photo { max-width: 240px; }
+
+      .anmeldung-card { padding: 32px 24px; }
+      .bonus-box { padding: 36px 24px; }
+
+      .btn-cta { padding: 16px 36px; font-size: 0.95rem; }
+
+      .hero-meta { gap: 16px; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============== HERO ============== -->
+  <!-- HINWEIS: hero.jpg ist der Patricia-Foto-Slot. Foto ins selbe Verzeichnis legen mit Name "hero.jpg" -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow"><span class="pulse"></span>Live · 2 Termine · 09:00 Uhr · Kostenlos</span>
+      <h1 class="hero-headline">In 90 Min: Dein Mama-Leben mit <span class="accent">KI-Assistenten</span> umkrempeln.</h1>
+      <p class="hero-sub">Mental Load abgeben · Zeit fürs Business zurück gewinnen.<br><strong style="color:#dc822e;">Wähle deinen Termin — Mi 20.5. oder Di 26.5.</strong></p>
+      <a href="#anmeldung" class="btn-cta">Jetzt kostenlos anmelden</a>
+      <div class="hero-meta">
+        <span>📅 Mi 20. Mai <em>oder</em> Di 26. Mai 2026</span>
+        <span>⏱️ 90 Min Live + Q&amp;A</span>
+        <span>🎁 Live-Geschenk inklusive</span>
+        <span>💸 0 CHF</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FÜR DICH WENN ============== -->
+  <section class="section section-bg-alt">
+    <h2 class="section-title" style="color:#f1ecdd!important;">Dieses Webinar ist <span class="accent" style="color:#dc822e!important;">für dich,</span> wenn…</h2>
+    <p class="section-subtitle">Du dich in mindestens 3 dieser Sätze wiedererkennst:</p>
+
+    <div class="checklist">
+      <div class="check-item">
+        <h4 class="check-title"><span class="checkmark">✓</span> Du sagst dir täglich „Ich sollte unbedingt…"</h4>
+        <p class="check-desc">— und kommst trotzdem nie dazu. Content liegt liegen, Pitches schiebst du auf, und am Abend frägst du dich, wo der Tag hin ist.</p>
+      </div>
+
+      <div class="check-item">
+        <h4 class="check-title"><span class="checkmark">✓</span> Du machst alles selbst</h4>
+        <p class="check-desc">Weil delegieren zu kompliziert ist. Aber eine richtige VA für 4'000 CHF/Monat? Geht aktuell nicht.</p>
+      </div>
+
+      <div class="check-item">
+        <h4 class="check-title"><span class="checkmark">✓</span> Bei dir läuft alles parallel</h4>
+        <p class="check-desc">Business, Haushalt, Kinder, Schul-Termine, Network-Calls. Dein Kopf hört nie auf zu rotieren — auch wenn du eigentlich schlafen solltest.</p>
+      </div>
+
+      <div class="check-item">
+        <h4 class="check-title"><span class="checkmark">✓</span> Du hast schon 3 Kurse zu Productivity gekauft</h4>
+        <p class="check-desc">Geliefert haben sie dir mehr Druck. Was fehlt, ist nicht ein neuer Tracker — sondern ein Mitarbeiter.</p>
+      </div>
+
+      <div class="check-item">
+        <h4 class="check-title"><span class="checkmark">✓</span> Du willst KI nutzen, weisst aber nicht wo anfangen</h4>
+        <p class="check-desc">ChatGPT hin und wieder — aber das fühlt sich nicht systematisch an. Du willst sehen, wie's RICHTIG geht.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== WAS DU LERNST ============== -->
+  <section class="section">
+    <h2 class="section-title" style="color:#f1ecdd!important;">Was du in <span class="accent" style="color:#dc822e!important;">90 Min</span> mitnimmst</h2>
+    <p class="section-subtitle">Kein Tutorial-Style — sondern echte Live-Demo direkt am Bildschirm.</p>
+
+    <div class="learn-grid">
+      <div class="learn-card soft">
+        <span class="card-number">01</span>
+        <h3>Die „Hab keine Zeit"-Spirale durchschauen</h3>
+        <p>Warum „Ich sollte unbedingt" kein Charakterfehler ist — und wie du den Kreislauf in 1 Schritt unterbrichst. Mit Daten-Anker aus 2026.</p>
+      </div>
+
+      <div class="learn-card strong">
+        <span class="card-number">02</span>
+        <h3>Mein Kochassistent LIVE im Einsatz</h3>
+        <p>30 Min Bildschirm. Mein selbst-gebauter Bot kennt unsere 6-Personen-Familie, Rezepte, Vorräte, Aktionen. Liefert Wochenplan + Einkaufsliste + Rezepte direkt nach Google Drive.</p>
+      </div>
+
+      <div class="learn-card strong">
+        <span class="card-number">03</span>
+        <h3>Mein Content-Assistent fürs Business</h3>
+        <p>Reels-Hooks und Captions in <em>deiner</em> Stimme — kein generisches KI-Gewäsch. In unter 1 Minute statt Stunden. Was im Privaten geht, geht auch im Business.</p>
+      </div>
+
+      <div class="learn-card soft">
+        <span class="card-number">04</span>
+        <h3>Wochenrhythmus, der nicht zerbricht</h3>
+        <p>Mein Energie-Wochenplan + die 4 Mama-Rollen. Warum 2 Power-Zeiten täglich reichen — wenn du sie ehrlich findest.</p>
+      </div>
+    </div>
+
+    <!-- BONUS BOX -->
+    <div class="bonus-box">
+      <span class="bonus-label">🎁 NUR LIVE-TEILNEHMER</span>
+      <h3>Dein Starter-Pack: Mein Kochassistent zum Selbst-Einrichten</h3>
+      <ul>
+        <li>Der komplette Skill-Prompt (genau der, den ich live nutze)</li>
+        <li>Schritt-für-Schritt: Wie du Claude Code bei dir einrichtest</li>
+        <li>Erste-Schritte-Guide: Dein erster eigener KI-Mitarbeiter in 30 Min</li>
+      </ul>
+      <span class="bonus-value">Wert: CHF 49 · für dich kostenlos, wenn du LIVE dabei bist</span>
+    </div>
+  </section>
+
+  <!-- ============== URGENCY ============== -->
+  <section class="urgency section-bg-alt">
+    <h2 class="urgency-headline">
+      <span class="top">5+ Stunden</span>
+      <span class="bottom">spare ich pro Woche — kein Witz.</span>
+    </h2>
+    <p class="urgency-desc">
+      Mit meinem Kochassistenten plane ich Mahlzeiten für 6 Personen in unter 5 Minuten. <strong>Mit meinem Content-Assistenten schreibe ich Hooks und Captions in unter 1 Minute statt Stunden.</strong> Das sind keine Tipps für Tech-Nerds — das ist alltagstauglich für jede Mompreneurin, die keinen Bock mehr auf Mental Load hat. <em>Genau das zeige ich dir Live am Mittwoch.</em>
+    </p>
+    <a href="#anmeldung" class="btn-cta" style="margin-top: 50px;">Platz sichern</a>
+  </section>
+
+  <!-- ============== ÜBER PATRICIA ============== -->
+  <section class="about">
+    <div class="about-wrap">
+      <div class="about-photo"></div>
+      <div class="about-body">
+        <h2>Wer das hier <em>hält</em></h2>
+        <p>Ich bin Patricia. Mompreneurin, Network-Coach, Mama von 4.</p>
+        <p>Und ich war lange Zeit unglücklich. Gefangen im Hamsterrad. Mein Leben auf Standby.</p>
+        <p>Bis meine Schwester mit 44 an Krebs verstarb — und mir die Augen geöffnet hat, dass ich nicht länger warten will. <em>Eine Mutter darf ein eigenes Leben leben.</em> Und sie darf sich Mitarbeiter holen — auch wenn diese Mitarbeiter heute keine Menschen sind, sondern KI.</p>
+        <p>Heute baue ich seit 2 Jahren digitale Mitarbeiter, die mir genau die Arbeit abnehmen, die wir als Networkerin gar nicht haben wollen — den Adminkram. <strong>Und auch in Haushaltsdingen — Mental Load lass grüssen.</strong></p>
+        <p>Genau das gebe ich dir am Mittwoch weiter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FAQ ============== -->
+  <section class="section">
+    <h2 class="section-title" style="color:#f1ecdd!important;">Häufige <span class="accent" style="color:#dc822e!important;">Fragen</span></h2>
+
+    <div class="faq-wrap">
+      <details>
+        <summary>Ich kann am Mi 20.5. nicht — gibt's einen Ersatztermin?</summary>
+        <p>Ja — ich wiederhole das Webinar am <strong>Di 26.5.2026, 09:00 Uhr</strong>. Du wählst beim Anmelden den Termin, der für dich passt (oder kommst zu beiden — auch das geht). Falls du beide Live-Termine nicht schaffst: die Aufzeichnung ist 48h verfügbar. Du verpasst nur das Live-Geschenk (Kochassistent-Starter-Pack mit Skill-Prompt + Setup-Anleitung).</p>
+      </details>
+
+      <details>
+        <summary>Bin ich technisch fit genug? Ich bin nicht so KI-affin.</summary>
+        <p>Genau dafür ist das Webinar. Ich zeige dir live, wie ich vom „Ich kann das nicht" zur täglichen KI-Nutzung gekommen bin. Wenn du Instagram bedienen kannst, kannst du auch das.</p>
+      </details>
+
+      <details>
+        <summary>Werde ich am Ende ein Produkt verkauft bekommen?</summary>
+        <p>Ja — am Ende stelle ich dir Mama-CEO vor (mein 8-Wochen-Mastermind), du entscheidest komplett selbst, ob das für dich passt. Die ersten 70 Min sind 100 % Mehrwert ohne Pitch.</p>
+      </details>
+
+      <details>
+        <summary>Wie kann ich Patricia eine Frage stellen?</summary>
+        <p>Im Live-Q&amp;A (20 Min am Ende) oder direkt per Instagram-DM. Ich antworte persönlich.</p>
+      </details>
+
+      <details>
+        <summary>09:00 Uhr — gilt das auch in Deutschland und Österreich?</summary>
+        <p>Ja, 09:00 Uhr Schweizer Zeit = 09:00 Uhr deutsche und österreichische Zeit (alle CEST/MESZ).</p>
+      </details>
+
+      <details>
+        <summary>Brauche ich Zoom?</summary>
+        <p>Du brauchst nur einen Link, den du per E-Mail bekommst. Du kannst die Zoom-App nutzen oder direkt im Browser teilnehmen — beides funktioniert.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============== ANMELDUNG ============== -->
+  <section class="anmeldung" id="anmeldung">
+    <h2 class="section-title" style="color:#f1ecdd!important;">Sichere dir deinen <span class="accent" style="color:#dc822e!important;">Platz</span></h2>
+    <p class="section-subtitle">Zwei Termine zur Auswahl. Eine Anmeldung. Du wählst, wann du live dabei bist.</p>
+
+    <div class="anmeldung-card">
+      <ul class="anmeldung-meta">
+        <li><span class="icon">📅</span> <strong>Termin 1: Mi 20. Mai 2026, 09:00 Uhr</strong></li>
+        <li><span class="icon">📅</span> <strong>Termin 2: Di 26. Mai 2026, 09:00 Uhr</strong> <em style="color:#dc822e;">(neu)</em></li>
+        <li><span class="icon">⏱️</span> 90 Min Live + Q&amp;A · pro Termin</li>
+        <li><span class="icon">💻</span> Zoom (Link kommt per E-Mail)</li>
+        <li><span class="icon">🎁</span> Kochassistent-Starter-Pack als Live-Geschenk</li>
+        <li><span class="icon">💸</span> Kosten: 0 CHF</li>
+      </ul>
+
+      <div class="ac-form-slot">
+        <style>@import url(https://fonts.bunny.net/css?family=sans-serif:400|IBM+Plex+Sans:400);</style>
+        <style>
+        #_form_55_{font-size:14px;line-height:1.6;font-family:arial,helvetica,sans-serif;margin:0;box-shadow:none}._form_hide{display:none;visibility:hidden}._form_show{display:block;visibility:visible}#_form_55_._form-top{top:0}#_form_55_ input[type="text"],#_form_55_ input[type="tel"],#_form_55_ input[type="date"],#_form_55_ textarea{padding:12px;height:auto;border:#979797 1px solid;border-radius:4px;color:#000 !important;font-size:14px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}#_form_55_ textarea{resize:none}#_form_55_ input::placeholder{color:#142341}#_form_55_ ._submit{cursor:pointer;font-family:arial,sans-serif;font-size:16px;text-align:center;background:#0f2a3a !important;border:0 !important;border-radius:100px !important;color:#f1ecdd !important;padding:14px 32px !important;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;width:100%}#_form_55_ ._submit:hover{background:#29556d !important}#_form_55_ ._submit:disabled{cursor:not-allowed;opacity:0.4}#_form_55_ ._form-body{font-family:sans-serif;font-size:14px;font-weight:400;color:black;margin-bottom:30px}#_form_55_ ._form-branding{color:#fff;font-size:10px;clear:both;text-align:left;margin-top:30px;font-weight:100}#_form_55_ ._form-branding ._logo{display:block;width:130px;height:14px;margin-top:6px;background-image:url("https://d226aj4ao1t61q.cloudfront.net/hh9ujqgv5_aclogo_li.png");background-size:130px auto;background-repeat:no-repeat}#_form_55_ ._form-label,#_form_55_ ._form_element ._form-label{font-weight:bold;margin-bottom:5px;display:block;color:#0f2a3a}#_form_55_ ._form_element{position:relative;margin-bottom:10px;max-width:100%}#_form_55_ ._form_element *{font-size:14px}#_form_55_ ._form_element._clear{clear:both;width:100%;float:none}#_form_55_ ._form_element :is(textarea, select, input[type="text"], input[type="date"], input[type="phone"], input[type="email"]){background:white;color:#142341 !important;border:1px solid #cccccc;border-radius:4px}#_form_55_ ._form_element input[type="text"],#_form_55_ ._form_element input[type="date"],#_form_55_ ._form_element select,#_form_55_ ._form_element textarea:not(.g-recaptcha-response){display:block;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-family:inherit}#_form_55_ ._field-wrapper{position:relative}#_form_55_ ._form_full_field{display:block;width:100%;margin-bottom:10px}#_form_55_ input[type="text"]._has_error,#_form_55_ textarea._has_error{border:#F37C7B 1px solid}#_form_55_ input[type="checkbox"]._has_error{outline:#F37C7B 1px solid}#_form_55_ ._error{display:block;position:absolute;font-size:14px;z-index:10000001}#_form_55_ ._error._above{padding-bottom:4px;bottom:39px;right:0}#_form_55_ ._error._below{padding-top:8px;top:100%;right:0}#_form_55_ ._error-inner{padding:12px 12px 12px 36px;background-color:#FFDDDD;background-repeat:no-repeat;background-position:12px center;font-size:14px;font-family:arial,sans-serif;font-weight:600;line-height:16px;color:#000;text-align:center;border-radius:4px;box-shadow:0 1px 4px rgba(31,33,41,0.298295)}.pika-single{z-index:10000001 !important}#_form_55_ ._form-title,#_form_55_ ._html-code :is(h1,h2,h3,h4,h5,h6){font-family:'Philosopher',serif;font-size:24px;font-weight:700;color:#0f2a3a;line-height:1.3;margin-bottom:16px}#_form_55_ .field-required{color:#a82800}#_form_55_{position:relative;text-align:left;margin:0 auto;padding:32px 28px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background:#dc822e !important;border:0 !important;max-width:100%;border-radius:8px !important;color:#000000;box-shadow:0 8px 32px rgba(0,0,0,0.3)}#_form_55_._inline-form,#_form_55_._inline-form ._form-content{font-family:sans-serif;font-size:14px;font-weight:400}#_form_55_._inline-form ._row span:not(.field-required),#_form_55_._inline-form ._row label{font-family:sans-serif;font-size:13px;font-weight:400;line-height:1.5em;color:#0f2a3a}#_form_55_._inline-form ._form-label,#_form_55_._inline-form ._form-emailidentifier,#_form_55_._inline-form ._form-checkbox-option-label{font-family:sans-serif;font-size:13px;font-weight:700;line-height:1.5em;color:#0f2a3a}
+        </style>
+        <form method="POST" action="https://mumlifebalance.activehosted.com/proc.php" id="_form_55_" class="_form _form_55 _inline-form" novalidate data-styles-version="5">
+          <input type="hidden" name="u" value="55" />
+          <input type="hidden" name="f" value="55" />
+          <input type="hidden" name="s" />
+          <input type="hidden" name="c" value="0" />
+          <input type="hidden" name="m" value="0" />
+          <input type="hidden" name="act" value="sub" />
+          <input type="hidden" name="v" value="2" />
+          <input type="hidden" name="or" value="ac135a78-18eb-4b8c-99ff-bc2885144fc3" />
+          <div class="_form-content">
+            <div class="_form_element _full_width _clear">
+              <h2 class="_form-title">Sichere dir deinen Platz<br>Mi 20.5. oder Di 26.5. · 09:00 Uhr · kostenlos</h2>
+            </div>
+            <div class="_form_element _full_width">
+              <label for="fullname" class="_form-label">Vorname<span class="field-required">*</span></label>
+              <div class="_field-wrapper"><input type="text" id="fullname" name="fullname" placeholder="Dein Vorname" required/></div>
+            </div>
+            <div class="_form_element _full_width">
+              <label for="email" class="_form-label">E-Mail<span class="field-required">*</span></label>
+              <div class="_field-wrapper"><input type="text" id="email" name="email" placeholder="Deine E-Mail" required/></div>
+            </div>
+            <div class="_form_element _full_width">
+              <fieldset class="_form-fieldset" style="border:0;padding:0;margin:0;">
+                <input data-autofill="false" type="hidden" id="field[1][]" name="field[1][]" value="~|">
+                <div class="_row _checkbox-radio" style="display:flex;align-items:flex-start;gap:8px;">
+                  <input id="field_1consent" type="checkbox" name="field[1][]" value="Ich möchte Patricias E-Mails mit Wissen und Angeboten rund ums Thema Onlinebusiness und Networkmarketing erhalten. Ich kann mich jederzeit abmelden." checked style="margin-top:4px;">
+                  <span><label for="field_1consent" style="font-size:12px;line-height:1.4;cursor:pointer;">Ich möchte Patricias E-Mails mit Wissen und Angeboten rund ums Thema Onlinebusiness und Networkmarketing erhalten. Ich kann mich jederzeit abmelden.</label></span>
+                </div>
+              </fieldset>
+            </div>
+            <div class="_form_element _full_width">
+              <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go"></div>
+            </div>
+            <div class="_button-wrapper _full_width">
+              <button id="_form_55_submit" class="_submit" type="submit">Ja, ich will dabei sein →</button>
+            </div>
+            <div class="_clear-element"></div>
+          </div>
+          <div class="_form-thank-you" style="display:none;"></div>
+        </form>
+        <script>
+        window.cfields = {"1":"datenschutz"};
+        window._show_thank_you = function(id, message, trackcmp_url, email) { var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you'); form.querySelector('._form-content').style.display = 'none'; thank_you.innerHTML = message; thank_you.style.display = 'block'; if (typeof(trackcmp_url) != 'undefined' && trackcmp_url) { _load_script(trackcmp_url); } if (typeof window._form_callback !== 'undefined') window._form_callback(id); };
+        window._show_error = function(id, message, html) { var form = document.getElementById('_form_' + id + '_'), err = document.createElement('div'), button = form.querySelector('button[type="submit"]'), old_error = form.querySelector('._form_error'); if (old_error) old_error.parentNode.removeChild(old_error); err.innerHTML = message; err.className = '_error-inner _form_error _no_arrow'; var wrapper = document.createElement('div'); wrapper.className = '_form-inner _show_be_error'; wrapper.appendChild(err); button.parentNode.insertBefore(wrapper, button); var submitButton = form.querySelector('[id^="_form"][id$="_submit"]'); submitButton.disabled = false; submitButton.classList.remove('processing'); };
+        window._load_script = function(url, callback, isSubmit) { var head = document.querySelector('head'), script = document.createElement('script'), r = false; script.charset = 'utf-8'; script.src = url; if (callback) { script.onload = script.onreadystatechange = function() { if (!r && (!this.readyState || this.readyState == 'complete')) { r = true; callback(); } }; } head.appendChild(script); };
+        (function() { var form_to_submit = document.getElementById('_form_55_'); var allInputs = form_to_submit.querySelectorAll('input, select, textarea'); window['recaptcha_callback'] = function() { var recaptchas = document.getElementsByClassName("g-recaptcha"); for (var i in recaptchas) { var recaptcha_id = "recaptcha_" + i; recaptchas[i].id = recaptcha_id; var el = document.getElementById(recaptcha_id); if (el != null) { var sitekey = el.getAttribute("data-sitekey"); grecaptcha.render(recaptcha_id, {"sitekey":sitekey}); } } }; _load_script("https://www.google.com/recaptcha/api.js?onload=recaptcha_callback&render=explicit"); var _form_serialize = function(form){if(!form||form.nodeName!=="FORM"){return}var i,j,q=[];for(i=0;i<form.elements.length;i++){if(form.elements[i].name===""){continue}switch(form.elements[i].nodeName){case"INPUT":switch(form.elements[i].type){case"text":case"hidden":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"checkbox":case"radio":if(form.elements[i].checked){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value))}break}break;case"BUTTON":case"SELECT":case"TEXTAREA":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break}}return q.join("&")}; var form_submit = function(e) { e.preventDefault(); var submitButton = e.target.querySelector('#_form_55_submit'); submitButton.disabled = true; submitButton.classList.add('processing'); var serialized = _form_serialize(document.getElementById('_form_55_')).replace(/%0A/g, '\\n'); _load_script('https://mumlifebalance.activehosted.com/proc.php?' + serialized + '&jsonp=true', null, true); return false; }; form_to_submit.addEventListener('submit', form_submit); })();
+        </script>
+      </div>
+
+      <p style="margin-top: 24px; font-size: 0.95rem; color: var(--text-dim);">
+        Oder schreib mir <strong style="color: var(--gold);">„WEBINAR"</strong> auf <a href="https://www.instagram.com/mumlifebalance_patricia_ulmann/" style="color: var(--gold); text-decoration: underline;">@mumlifebalance_patricia_ulmann</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer>
+    <p>KI-Webinar „Dein Mama-Leben mit KI-Assistenten umkrempeln" · Mum Life Balance · Patricia Ulmann · Schweiz</p>
+    <p style="margin-top: 0.6rem;">
+      <a href="https://mumlifebalance.ch/impressum">Impressum</a> ·
+      <a href="https://mumlifebalance.ch/datenschutz">Datenschutz</a> ·
+      <a href="https://www.instagram.com/mumlifebalance_patricia_ulmann/">Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html>

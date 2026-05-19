@@ -20,9 +20,10 @@ In AC: **„Kontakte → Tags"** → diese Tags neu erstellen (falls nicht schon
 
 | Tag | Wofür |
 |---|---|
-| `mama-ceo-webinar-anmeldung` | Wird automatisch durch das Anmelde-Form gesetzt ✓ (schon konfiguriert) |
-| `mama-ceo-webinar-live-teilnehmer` | Setzt du manuell nach Webinar (für die die LIVE da waren) |
-| `mama-ceo-webinar-kauf` | Wird gesetzt wenn jemand Mama-CEO via ThriveCart kauft (Webhook) |
+| `0€ Webinar Mama-CEO` (ID 70) | Wird automatisch durch das Anmelde-Form gesetzt ✓ (schon konfiguriert) |
+| `mama-ceo-kauf` (ID 71) | Wird via ThriveCart-Webhook gesetzt wenn jemand kauft ✓ (schon konfiguriert) |
+
+→ **Mehr Tags brauchen wir nicht.** Filter laufen alle über diese 2 Tags + Liste 2 (Newsletter).
 
 ---
 
