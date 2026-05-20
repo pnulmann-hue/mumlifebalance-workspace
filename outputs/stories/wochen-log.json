@@ -47,6 +47,17 @@
       "modus": "tagesplan",
       "produkt_fokus": "ki-webinar (tag -1) · last call · dampf · mama-ceo bleibt verdeckt",
       "story_ordner": "2026-05-19-tagesplan-mentoring-webinar-tag-minus-1-letzte-chance"
+    },
+    {
+      "datum": "2026-05-20",
+      "wochentag": "Mittwoch",
+      "profil": "mentoring",
+      "kaeufertyp_disg": "sales-day-mix (alle 4 DISG)",
+      "nadja_persona": "alle 7 Personas",
+      "julia_template": "T9 + T4 + T8 (Mix)",
+      "modus": "sales-day (modus 2)",
+      "produkt_fokus": "mama-ceo launch tag 0 · webinar live · reveal + verkaufsstart",
+      "story_ordner": "2026-05-20-salesday-mentoring-mama-ceo-launch-tag-0"
     }
   ]
 }
