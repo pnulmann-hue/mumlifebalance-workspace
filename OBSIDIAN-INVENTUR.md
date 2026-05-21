@@ -1,142 +1,84 @@
-# 🔍 Was nicht in deinem Vault ist — Stand 2026-05-17
+# 🔍 Obsidian-Vault Inventur & Sync — Stand 2026-05-17
 
-> Diese Notiz zeigt, **was auf GitHub liegt aber NICHT in deinem lokalen `main`** (= nicht in Obsidian sichtbar). Plus: lokale Dateien, die noch nicht auf GitHub gesichert sind.
+> **STATUS: ✅ ABGESCHLOSSEN (Phase 1 + 2).** Alles auf GitHub + in Obsidian sichtbar.
+>
+> Phase 3 (Branch-Cleanup) übersprungen — Branches bleiben als Backup auf GitHub.
 
 **Repo:** `pnulmann-hue/mumlifebalance-workspace`
 
 ---
 
-## 🚨 Teil 1: GitHub-Branches mit nicht-gemergten Inhalten
+## ✅ Phase 1 abgeschlossen — Lokales gesichert
 
-Diese 10 Branches haben **Arbeit, die nirgendwo sonst existiert**. Wenn du sie nicht synchronisierst, fehlt das in Obsidian und im Backup.
+**Commit `bd90f27`** auf GitHub: 159 Files gesichert
+- `context/patricia-vollprofil.md` ✅ (Pflicht-Lese, war ungesichert)
+- `context/notion-business-brain.md` ✅
+- `outputs/ads/`, `outputs/doterra-strategie/` ✅
+- Alle 9 modifizierten Skill-Definitionen (`.claude/commands/*.md`) ✅
+- 25 Karussell-Briefings KW18-KW20 ✅
+- 10 Reel-Briefings KW18-KW20 ✅
+- Freitag-Hooks, Montag-Builds, Mealplans, Stories ✅
+- 14 Blotato-Post-Configs ✅
+- Telegram-Userbot Mail-Sweep-Module ✅
+- WordPress-Helper-Scripts ✅
+- Julia-Trost Werbeanzeigen-Transkripte ✅
 
-### A) Produkte (Sehr wichtig — komplette Konzepte)
-
-#### 🥇 `build-product-page-WjrId` — Produkt **Mama-CEO** (49 Commits!)
-- **Inhalt:** Komplettes Produkt-Briefing, Marktresearch, Modul-Outline, Validierung, Launch-Kalender, Funnel, 14-Mail-Plan, Webinar-Story-Visual, `/jahresplan`-Skill
-- **Pfad:** `outputs/produkte/mama-ceo/`
-- **GitHub:** [Branch ansehen](https://github.com/pnulmann-hue/mumlifebalance-workspace/tree/claude/build-product-page-WjrId)
-- **Empfehlung:** ⭐ **In main mergen** — das ist dein größtes Produkt-Asset
-
-#### 🥈 `build-product-page-fCpc0` — Produkt **Die Umsetzerinnen** (2 Commits)
-- **Inhalt:** Continuity-Mitgliedschaft, Bundle-Konzept, Onboarding, Arbeitsblätter, KI-Assistent "Skalier-Bot", Pre-Launch-DMs, Pilot-Call-Plan
-- **Pfad:** `outputs/produkte/die-umsetzerinnen-club/`
-- **GitHub:** [Branch ansehen](https://github.com/pnulmann-hue/mumlifebalance-workspace/tree/claude/build-product-page-fCpc0)
-- **Empfehlung:** ⭐ **In main mergen** — Premium-Bundle-Säule
-
-### B) Operativ (Mittel wichtig)
-
-#### `instagram-creator-analysis-RbNNt` — **Monatsplan Mai + Cashflow-Tracker + /monatsplan-Skill** (7 Commits)
-- **Inhalt:** `/monatsplan` Slash-Command, Cashflow-Tracker-Plan (PayPal+CH-Bank), Content-Kalender 30 Tage, Mid-Month-Snapshot
-- **Pfade:** `.claude/commands/monatsplan.md`, `outputs/monatsplaene/`, `scripts/finanzen/`, `context/finanzen/`
-- **GitHub:** [Branch ansehen](https://github.com/pnulmann-hue/mumlifebalance-workspace/tree/claude/instagram-creator-analysis-RbNNt)
-- **Empfehlung:** ⭐ **In main mergen** — Skill + Finanzen-Infrastruktur
-
-#### `fix-bot-database-access-WR5LV` — **Kochbot-RAG-Backend** (2 Commits)
-- **Inhalt:** Supabase-RAG-Backend für `/mealplan`, Anti-Halluzinations-Rules, Ingestion/Query-Scripts (Python)
-- **Pfade:** `scripts/kochbot-rag/`, `.claude/commands/mealplan.md` (modifiziert)
-- **GitHub:** [Branch ansehen](https://github.com/pnulmann-hue/mumlifebalance-workspace/tree/claude/fix-bot-database-access-WR5LV)
-- **Empfehlung:** **Mergen wenn du den RAG-Bot wirklich nutzt** — sonst lassen
-
-#### `prime-number-feature-F9MeL` — **Story-Render-Skript + Wander-Stories** (8 Commits)
-- **Inhalt:** Python-Renderer für Story-PNGs (`scripts/story-render/`), Wander-Story-Visual-QA-Regeln, fertige Story-Slides (Wandern beide Profile)
-- **Pfade:** `scripts/story-render/`, `outputs/stories/renders/`, `plans/2026-04-26-stories-skill.md`
-- **GitHub:** [Branch ansehen](https://github.com/pnulmann-hue/mumlifebalance-workspace/tree/claude/prime-number-feature-F9MeL)
-- **Empfehlung:** **Mergen** falls du den Story-Renderer brauchst (du hast inzwischen aber `scripts/karussell-render/`)
-
-### C) Content-Slices (Klein — einzelne Outputs)
-
-#### `add-story-feature-x0TxK` — **Story-Slides KW20** (7 Commits)
-- **Inhalt:** Mama-CEO Tag-6 + Webinar-Tag-3 + Tag-5 Story-Slides mit PNGs und Fotos
-- **Pfad:** `outputs/stories/2026-05-14-*`, `2026-05-15-*`
-- **GitHub:** [Branch ansehen](https://github.com/pnulmann-hue/mumlifebalance-workspace/tree/claude/add-story-feature-x0TxK)
-- **Empfehlung:** **Mergen** für vollständiges Story-Archiv
-
-#### `webinar-visual-story-BYOFw` — **Mama-CEO Webinar Story-Sequenz** (3 Commits)
-- **Inhalt:** Manus-Prompt für Webinar-Story-Sequenz
-- **Pfad:** `outputs/stories/manus-prompt-mama-ceo-webinar.md`
-- **GitHub:** [Branch ansehen](https://github.com/pnulmann-hue/mumlifebalance-workspace/tree/claude/webinar-visual-story-BYOFw)
-- **Empfehlung:** **Mergen** (gehört zum Mama-CEO-Launch)
-
-#### `build-menu-component-bUy8i` — **Mealplan KW18** (1 Commit)
-- **Inhalt:** Wochenplan + Einkaufsliste KW18
-- **Pfade:** `outputs/mealplans/2026-KW18-*.md`
-- **GitHub:** [Branch ansehen](https://github.com/pnulmann-hue/mumlifebalance-workspace/tree/claude/build-menu-component-bUy8i)
-- **Empfehlung:** **Mergen** (Vollständiges Mealplan-Archiv)
-
-#### `instagram-reels-ai-helper-akFtE` — **Reel "KI-Mitarbeiter im Wartezimmer"** (1 Commit)
-- **Inhalt:** Reel-Doktor-Briefing V2
-- **Pfad:** `outputs/reels/2026-05-11-ki-mitarbeiter-pdf-wartezimmer.md`
-- **GitHub:** [Branch ansehen](https://github.com/pnulmann-hue/mumlifebalance-workspace/tree/claude/instagram-reels-ai-helper-akFtE)
-- **Empfehlung:** **Mergen** (gehört zur Reel-Sammlung)
-
-#### `update-bio-pillars-e17gz` — **Bio-Update Themen-Achse** (1 Commit)
-- **Inhalt:** Bio + Über-mich-Update auf Themen-Achse statt Stadium-Achse
-- **Pfade:** `outputs/bio-update-2026-05-13/`, `context/saeulen-mentoring.md`
-- **GitHub:** [Branch ansehen](https://github.com/pnulmann-hue/mumlifebalance-workspace/tree/claude/update-bio-pillars-e17gz)
-- **Empfehlung:** **Mergen** falls schon umgesetzt — sonst Entscheidung
+**Sicherheits-Härtungen:**
+- `.gitignore` ergänzt um: `.claude/worktrees/`, `.secrets/`, `Business/`, `**/API_KEY.txt`, `**/*_secret.txt`, `**/credentials.json`, `**/token.txt`, `.obsidian/workspace.json`
+- Vor dem Commit ein Anthropic API Key in `scripts/instagram-kundenmaschine-bot/API_KEY.txt` abgefangen — nie nach GitHub gepusht
 
 ---
 
-## 🟡 Teil 2: Lokal vorhanden, aber NICHT auf GitHub gesichert
+## ✅ Phase 2 abgeschlossen — 10 GitHub-Branches gemergt
 
-Diese Dateien existieren in deinem lokalen `main` (= in Obsidian sichtbar), wurden aber noch nie commited. Wenn deine Festplatte stirbt, sind sie weg.
+| Branch | Commits | Inhalt | Merge-Commit |
+|---|---|---|---|
+| `build-product-page-WjrId` | 49 | **Mama-CEO komplett** (Briefing, Module, Funnel, 14 Mails, Webinar-Visual) | `a372b0f` |
+| `build-product-page-fCpc0` | 2 | **Die Umsetzerinnen** (Continuity-Bundle, KI-Assistent, Arbeitsblätter) | `9e8dd94` |
+| `instagram-creator-analysis-RbNNt` | 7 | **Monatsplan Mai + Cashflow-Tracker + `/monatsplan`-Skill** | `7c971ab` |
+| `fix-bot-database-access-WR5LV` | 2 | Kochbot-RAG-Backend (Supabase pgvector) | `de9396f` |
+| `prime-number-feature-F9MeL` | 8 | Story-Render-Skript Python + Wander-Stories | `3cd3666` |
+| `add-story-feature-x0TxK` | 7 | Story-Slides KW20 (Mama-CEO + Webinar) | `c0d25b8` |
+| `webinar-visual-story-BYOFw` | 3 | Mama-CEO Webinar Manus-Prompt | `efbca2f` |
+| `build-menu-component-bUy8i` | 1 | Mealplan KW18 | `6885c7a` |
+| `instagram-reels-ai-helper-akFtE` | 1 | Reel "KI-Mitarbeiter im Wartezimmer" | `ba21ba9` |
+| `update-bio-pillars-e17gz` | 1 | Bio-Update Themen-Achse | `19ebff7` |
 
-### Untracked Ordner / Files
+**Konflikte aufgelöst:**
+- `.gitignore` (3× — alle Whitelist-Patterns kombiniert)
+- `CLAUDE.md` (1× — Apify + Cashflow + Kochbot-RAG-Sektionen alle drin)
+- `.claude/commands/mealplan.md` (1× — V3-Pipeline + Anti-Halluzinations-Regeln kombiniert)
 
-- 🚨 `context/patricia-vollprofil.md` — **Pflicht-Lese-Datei (laut Memory) — nirgends gesichert!**
-- 🚨 `context/notion-business-brain.md`
-- `.claude/commands/blog.md` — Neuer Skill?
-- `.claude/commands/cockpit.md` — Cockpit-Bot-Skill
-- `outputs/ads/` — kompletter Ads-Ordner
-- `outputs/doterra-strategie/` — kompletter doTERRA-Strategie-Ordner
-- `outputs/freitag/2026-05-04-hooks-doterra-monatsfokus.md`
-- `outputs/freitag/2026-05-04-hooks-mama-business-monatsfokus.md`
-- `Business/` — was ist das? (sollte ich prüfen)
-
-### Niemals nach GitHub
-- `.secrets/` — bleibt lokal, korrekt so
-- `.claude/worktrees/` — Worktrees, müssen nicht gesichert werden
-- `.obsidian/` — Vault-Config, optional
-
-### Modifiziert (= geändert, aber nicht commited)
-
-Diese Dateien wurden seit dem letzten Commit verändert:
-- `CLAUDE.md` (Workspace-Anleitung)
-- `.claude/commands/freitag-hooks.md`, `funnel.md`, `hormozi.md`, `karussell.md`, `montag.md`, `produkt.md`, `reels.md`, `salespage.md`, `story.md` — **alle Skill-Definitionen!**
-- `outputs/freitag/2026-05-15-hooks.md`
-- 2 Plans
+**Kein Inhalt verloren.** Bei Konflikten wurden beide Seiten kombiniert.
 
 ---
 
-## 🎯 Empfohlene Reihenfolge
+## ⏸️ Phase 3 übersprungen — Branches bleiben als Backup
 
-**Phase 1 — Lokales sichern (sofort, ~5 Min):**
-1. Untracked Files commiten (besonders `patricia-vollprofil.md` + `notion-business-brain.md`)
-2. Modifizierte Files commiten (Skill-Updates)
-3. Push auf GitHub
-
-**Phase 2 — GitHub-Branches synchronisieren (~15-30 Min):**
-1. Erst die ⭐ markierten Branches mergen (Mama-CEO, Umsetzerinnen, Monatsplan)
-2. Dann die kleineren Content-Branches
-3. Optional die Tool-Branches (Kochbot-RAG, Story-Render) — nur wenn du sie nutzt
-
-**Phase 3 — Aufräumen (~5 Min):**
-1. Gemergte Branches lokal und remote löschen
-2. Stale Worktrees in `.claude/worktrees/` aufräumen
-3. Verifizieren in Obsidian dass alles da ist
+Die 10 Branches auf GitHub wurden NICHT gelöscht (Patricia-Entscheidung).
+Bei Bedarf später aufräumen über GitHub-UI oder:
+```bash
+# Lokal:
+git branch -d claude/<name>
+# Remote:
+git push origin --delete claude/<name>
+```
 
 ---
 
-## ⚠️ Risiken & Konflikte
+## 📋 In Obsidian sehen
 
-Mehrere Branches verändern parallel:
-- `CLAUDE.md` — wird in 3+ Branches geändert
-- `.gitignore` — wird in 4+ Branches geändert
-- `context/saeulen-mentoring.md` — wird in 2 Branches geändert
-
-→ **Beim Mergen kann es Konflikte geben.** Ich kann pro Branch einzeln mergen und Konflikte für dich auflösen, damit du selbst nichts entscheiden musst.
+1. In Obsidian **Strg+R** drücken — lädt den Vault neu
+2. Im Datei-Baum links sind jetzt alle gemergten Files sichtbar
+3. Spannende neue Ordner zum Erkunden:
+   - `outputs/produkte/mama-ceo/` — kompletter Produkt-Workflow
+   - `outputs/produkte/die-umsetzerinnen-club/` — Continuity-Konzept
+   - `outputs/monatsplaene/` — Monatsplan Mai
+   - `scripts/finanzen/` — Cashflow-Tracker-Skripte
+   - `scripts/kochbot-rag/` — Supabase-RAG für Kochbot
+   - `scripts/story-render/` — Python-Story-Renderer
+   - `outputs/stories/2026-05-14-*` + `2026-05-15-*` — KW20 Story-Sequenzen
 
 ---
 
-**Stand:** 2026-05-17 · Erstellt von Claude bei Obsidian-Setup
+**Erstellt:** 2026-05-17 · Abgeschlossen: 2026-05-17

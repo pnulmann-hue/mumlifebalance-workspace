@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Karussell-Render</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; }
+  body { font-family: 'Source Sans 3', sans-serif; color: #0c1c30; }
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-brand {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .footer-meta {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .top-tag {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+  .slide-num-circle {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+  }
+</style>
+</head>
+<body>
+
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/250%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-250.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">1 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #12828c;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Du postest seit sechs Monaten, aber keine schreibt dir zurück.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Vielleicht liegt's daran, dass dein Profil aussieht wie ein Produktkatalog.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/250%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-250.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">2 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #12828c;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Du checkst deine DMs.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Eine Mama hat zwei Mal angefragt. Vor drei Wochen. Sonst — nichts. Und du fragst dich langsam, ob du was falsch machst.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/250%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-250.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">3 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #12828c;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Du machst nichts falsch.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Du sprichst nur die falsche Sprache — die Sprache von Produkten statt die Sprache von Lösungen.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/250%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-250.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">4 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #12828c;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Was steht in deiner Bio?</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Vermutlich so was wie „doTERRA Mama von 3</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/250%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-250.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">5 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #12828c;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Ein Produktkatalog sagt: hier bin ich, kauf bei mir.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Eine Mama scrollt vorbei, denkt „kenn ich, brauch ich nicht</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/250%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-250.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">6 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #12828c;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Eine Expertin sagt: ich versteh dein Problem.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Dieselbe Mama liest „Energie zurück für Mamas in der Vormenopause</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/250%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-250.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">7 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #12828c;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Drei Zeilen die deine Bio sofort schärfer machen:</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">1. Wem du hilfst. 2. Was sich verändert. 3. Wie du anders bist als alle anderen mit dem gleichen Produkt.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/250%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-250.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">8 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #12828c;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">Was sich bei meinen Mentees nach Bio-Switch ändert:</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Mehr Anfragen in zwei Wochen als in den sechs Monaten davor. Weil endlich klar wird wem sie eigentlich helfen.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/250%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-250.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">9 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #12828c;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">„Sind doch nur Worte</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Stimmt. Aber genau diese drei Zeilen entscheiden ob sie wischt oder bleibt.</p>
+      </div>
+    </div>
+  
+    <div class="slide v2" style="
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0.35) 100%), url('file:///C:/Users/pnulm/Desktop/Mein%20Business/context/Shootingbilder/250%20-%20Patricia_Nulmann_mumlifebalance_sch%C3%B6niaugeblick-250.jpg') center/cover no-repeat;
+    ">
+      <div class="top-tag" style="
+        background: #12828c;
+        color: #f1ecdd;
+        padding: 10px 22px;
+        border-radius: 4px;
+      ">MENTORING</div>
+
+      <div style="
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        color: #f1ecdd;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      ">10 / 10</div>
+
+      <div style="
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 80px;
+        padding: 60px 60px 60px;
+        background: #f1ecdd;
+        border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        border-left: 6px solid #12828c;
+      ">
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 78px;
+          line-height: 1.16;
+          color: #0c1c30;
+          margin-bottom: 28px;
+          max-width: 780px;
+        ">P.S.</h1>
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 34px;
+          line-height: 1.42;
+          color: rgba(12, 28, 48, 0.78);
+          max-width: 760px;
+        ">Wenn du deine Bio selbst checken willst — kommentier BIO und mein Bot zeigt dir wo's hakt. Kostenlos und in 5 Minuten.</p>
+      </div>
+    </div>
+  
+</body>
+</html>

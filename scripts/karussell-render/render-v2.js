@@ -80,6 +80,13 @@ const KARUSSELL_LAYOUTS = {
   'mentoring-bademantel-ki':                 { layout: 'V2', profil: 'mentoring', briefingDate: '2026-05-11' },                            // M8 — Foto-Sticker (Bademantel-Vibe)
   'doterra-11-monate-schlaf':                { layout: 'V2', profil: 'doterra',   briefingDate: '2026-05-11', stickerStyle: 'creme' },     // D3 — Creme-Sticker
   'doterra-6-saeulen':                       { layout: 'V1', profil: 'doterra',   briefingDate: '2026-05-11' },                            // D9 — Sauber-Statement
+
+  // KW21 (2026-05-18) — Bio-Klarheit + doTERRA „alles richtig"-Reframe
+  // Variation-Update 2026-05-15: M5 von V3 auf V2-Creme (nach Patricia-Feedback Feed-Wiederholungs-Check)
+  'mentoring-bio-produktkatalog':            { layout: 'V2', profil: 'mentoring', briefingDate: '2026-05-18', stickerStyle: 'creme' },     // M5 — Foto+Creme-Sticker
+  'mentoring-instagram-eine-regel':          { layout: 'V1', profil: 'mentoring', briefingDate: '2026-05-18' },                            // M8 — Sauber-Statement
+  'doterra-alles-richtig-trotzdem':          { layout: 'V2', profil: 'doterra',   briefingDate: '2026-05-18', stickerStyle: 'creme' },     // D5 — Creme-Sticker
+  'doterra-brain-fog-47-tabs':               { layout: 'V3', profil: 'doterra',   briefingDate: '2026-05-18' },                            // D3 — Magazin
 };
 
 // Reel-Cover-Layouts
@@ -828,6 +835,10 @@ const PHOTO_INDEX = {
   // KW20 — V2 Karussells
   'mentoring-bademantel-ki':                   400,  // M8 — Morgen/Bademantel-Vibe
   'doterra-11-monate-schlaf':                  650,  // D3 — Patricia ruhig morgens
+
+  // KW21 — V2 Karussells
+  'mentoring-bio-produktkatalog':              250,  // M5 — Patricia casual (anders als M8-KW20 #400)
+  'doterra-alles-richtig-trotzdem':            550,  // D5 — Patricia nachdenklich
 };
 
 async function getPhotoPathForSlug(slug) {

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zwei KI-Assistenten selbst aufsetzen — Webinar-Begleitmaterial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --creme: #f1ecdd;
+    --creme-soft: #ebe3cf;
+    --petrol-deep: #0c1c30;
+    --petrol: #29556d;
+    --petrol-light: #12828c;
+    --orange: #dc822e;
+    --gelb: #f5e555;
+    --text: #2a3540;
+    --text-soft: #5a6873;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--creme);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Philosopher', Georgia, serif;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    background: linear-gradient(135deg, #0c1c30 0%, #29556d 60%, #12828c 100%);
+    color: var(--creme);
+    padding: 80px 24px 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(220, 130, 46, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    padding: 7px 18px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 {
+    font-size: clamp(34px, 5vw, 52px);
+    color: var(--creme);
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 .accent {
+    color: var(--orange);
+    font-style: italic;
+  }
+
+  .hero-sub {
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: rgba(241, 236, 221, 0.85);
+    max-width: 520px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ============ INTRO ============ */
+  .intro {
+    padding: 60px 0 40px;
+    text-align: center;
+  }
+
+  .intro p {
+    font-size: 18px;
+    color: var(--text);
+    max-width: 620px;
+    margin: 0 auto 16px;
+  }
+
+  .intro em {
+    color: var(--petrol-light);
+    font-style: italic;
+  }
+
+  /* ============ SECTIONS ============ */
+  section.step {
+    padding: 50px 0 30px;
+  }
+
+  .step-num {
+    display: inline-block;
+    background: var(--petrol);
+    color: var(--creme);
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .step h2 {
+    font-size: clamp(28px, 3.5vw, 38px);
+    color: var(--petrol-deep);
+    margin-bottom: 8px;
+  }
+
+  .step h2 .accent {
+    color: var(--orange);
+    font-style: italic;
+  }
+
+  .step-lead {
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--text-soft);
+    margin-bottom: 28px;
+  }
+
+  .step h3 {
+    color: var(--petrol);
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 14px;
+  }
+
+  .step p {
+    margin-bottom: 16px;
+  }
+
+  .step strong {
+    color: var(--petrol-deep);
+  }
+
+  /* ============ VORAUSSETZUNG BOX ============ */
+  .voraussetzung {
+    background: var(--creme-soft);
+    border-left: 4px solid var(--orange);
+    padding: 24px 28px;
+    border-radius: 0 12px 12px 0;
+    margin: 40px 0;
+  }
+
+  .voraussetzung-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 10px;
+  }
+
+  .voraussetzung p {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+  /* ============ PROMPT BLOCK ============ */
+  .prompt-block {
+    background: var(--petrol-deep);
+    color: var(--creme);
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin: 24px 0 32px;
+    position: relative;
+    box-shadow: 0 8px 28px rgba(12, 28, 48, 0.15);
+  }
+
+  .prompt-label {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    padding: 5px 14px;
+    border-radius: 100px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .prompt-block p {
+    color: var(--creme);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 14px;
+  }
+
+  .prompt-block p:last-child {
+    margin-bottom: 0;
+  }
+
+  .prompt-block .highlight {
+    color: var(--gelb);
+    font-weight: 600;
+  }
+
+  /* ============ IDEA BOX (Was du nachher hast) ============ */
+  .idea-box {
+    background: rgba(18, 130, 140, 0.08);
+    border-left: 4px solid var(--petrol-light);
+    padding: 22px 26px;
+    border-radius: 0 12px 12px 0;
+    margin: 28px 0;
+  }
+
+  .idea-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--petrol-light);
+    margin-bottom: 10px;
+  }
+
+  .idea-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .idea-box li {
+    padding: 4px 0 4px 22px;
+    position: relative;
+  }
+
+  .idea-box li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--orange);
+    font-weight: 700;
+  }
+
+  /* ============ DIVIDER ============ */
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--petrol) 50%, transparent);
+    margin: 60px 0;
+    border: none;
+  }
+
+  /* ============ ITERATE / STOLPER ============ */
+  .iterate-section {
+    background: linear-gradient(135deg, var(--petrol-deep) 0%, var(--petrol) 100%);
+    color: var(--creme);
+    padding: 60px 24px;
+    margin: 70px 0 0;
+  }
+
+  .iterate-section h2 {
+    color: var(--creme);
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .iterate-section .step-lead {
+    color: rgba(241, 236, 221, 0.75);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .iterate-card {
+    background: rgba(241, 236, 221, 0.07);
+    border-left: 3px solid var(--orange);
+    padding: 20px 24px;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 14px;
+  }
+
+  .iterate-card h4 {
+    color: var(--gelb);
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+
+  .iterate-card p {
+    color: var(--creme);
+    font-size: 15px;
+    margin: 0;
+  }
+
+  /* ============ STOLPERSTEINE ============ */
+  .stolper {
+    padding: 60px 0;
+  }
+
+  .stolper h2 {
+    color: var(--petrol-deep);
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .stolper-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 26px;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 16px rgba(12, 28, 48, 0.06);
+  }
+
+  .stolper-item h4 {
+    color: var(--orange);
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .stolper-item p {
+    font-size: 15px;
+    margin: 0;
+    color: var(--text);
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--petrol-deep);
+    color: var(--creme);
+    text-align: center;
+    padding: 50px 24px;
+    margin-top: 0;
+  }
+
+  footer .brand {
+    font-family: 'Philosopher', serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--creme);
+    margin-bottom: 8px;
+  }
+
+  footer .tag {
+    color: rgba(241, 236, 221, 0.6);
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  footer .sig {
+    margin-top: 24px;
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--gelb);
+  }
+
+  /* ============ MOBILE ============ */
+  @media (max-width: 600px) {
+    .hero { padding: 60px 20px 48px; }
+    section.step { padding: 36px 0 24px; }
+    .prompt-block { padding: 22px 22px; }
+    .iterate-section { padding: 48px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <span class="hero-eyebrow">Webinar-Begleitmaterial · Mi 20.5.2026 · 09:00</span>
+  <h1>Zwei <span class="accent">KI-Assistenten</span><br>selbst aufsetzen</h1>
+  <p class="hero-sub">Wie du in unter einer Stunde dein eigenes KI-Team baust — ohne Programmierkenntnisse, einfach durch Reden.</p>
+</header>
+
+<!-- ============ INTRO ============ -->
+<section class="intro wrap">
+  <p>Heute baust du zwei eigene KI-Mitarbeiter, die in <em>deinem</em> Workspace leben und aus <em>deinen</em> Dokumenten lernen: einen <strong>Kochassistent</strong> und einen <strong>Brand-Voice-Assistent</strong>.</p>
+  <p>Diese Anleitung ist 1:1 mein Weg — genau so, wie ich's gemacht habe. Kein Tech-Tutorial, keine Ordner-Bauerei. Du redest einfach mit Claude Code wie mit einer Freundin, die nebenbei deinen Computer bedient.</p>
+</section>
+
+<div class="wrap">
+  <div class="voraussetzung">
+    <span class="voraussetzung-label">📦 Voraussetzung</span>
+    <p>Du hast <strong>Claude Code</strong> installiert und die ersten Einrichtungen gemacht (Login, Workspace-Ordner erstellt). Sobald du im Terminal <strong>claude</strong> eintippen kannst und das Prompt-Fenster erscheint, bist du bereit.</p>
+    <p style="margin-top: 12px; font-size: 14px; color: var(--text-soft);">→ Die Schritt-für-Schritt-Installation kommt in einer separaten PDF.</p>
+  </div>
+</div>
+
+<!-- ============ SCHRITT 1 — KOCHASSISTENT ============ -->
+<section class="step wrap">
+  <span class="step-num">Schritt 1 · ca. 15 Min</span>
+  <h2>Der <span class="accent">Kochassistent</span></h2>
+  <p class="step-lead">Wochenpläne · Einkaufslisten · Spontan-Ideen aus dem Kühlschrank.</p>
+
+  <p>Öffne im Terminal Claude Code (also tipp einfach <strong>claude</strong> ein), warte bis das Eingabefenster da ist — und dann labersch du einfach rein, was du willst. Etwa so:</p>
+
+  <div class="prompt-block">
+    <span class="prompt-label">💬 Beispiel-Prompt</span>
+    <p>Hey, ich möchte gern einen <span class="highlight">Kochassistenten</span> haben, der mir hilft, meinen Familienalltag essenstechnisch zu organisieren.</p>
+    <p>Wir sind 4 Personen — ich plus 2 Kinder (6 + 9) plus Mann. Mittags meistens nur zu dritt (ohne Mann), abends zu viert. Kein Schweinefleisch, mein Mann hasst Pilze. Wir essen viel Gemüse, Pasta nur 1-2 Mal die Woche.</p>
+    <p>Ich hab einen <span class="highlight">Thermomix</span>, Backofen mit Dampfgarer, keine Mikrowelle. Mittag-Zeit-Budget Mo-Fr: max. 30 Min aktive Kochzeit, vorbereitbar morgens wäre top.</p>
+    <p>Ich möchte ihm sagen können „<span class="highlight">Wochenplan für nächste Woche, am Dienstag ist Wandertag</span>" — und er gibt mir Mittag und Abend für jeden Tag zurück, mit rotierenden Beilagen (kein 4-Mal-Pasta).</p>
+    <p>Plus: Einkaufslisten machen können (sortiert nach Migros-Kategorien) und Spontan-Vorschläge wenn ich sage „<span class="highlight">ich hab nur X, Y, Z da</span>".</p>
+    <p>Kannst du mir das aufsetzen? Speicher die Wochenpläne in einem outputs-Ordner.</p>
+  </div>
+
+  <p><strong>Was Claude Code dann macht:</strong> Er legt automatisch die richtigen Files an (ein Wissens-File mit deinem Haushaltsprofil + ein Skill-File für den Befehl), erklärt dir was er gemacht hat — und du kannst direkt loslegen.</p>
+
+  <div class="idea-box">
+    <span class="idea-label">Was du danach hast</span>
+    <ul>
+      <li>Den Befehl <strong>/koch</strong> in deinem Claude Code</li>
+      <li>Wochenpläne mit einem Satz auf Abruf</li>
+      <li>Einkaufslisten Migros-sortiert</li>
+      <li>Spontan-Kochen wenn der Kühlschrank halb leer ist</li>
+    </ul>
+  </div>
+
+  <h3>So machst du ihn schlauer</h3>
+  <p>Je mehr Erfahrung du sammelst, desto besser wird er. Sag ihm einfach: „<em>Ich hab hier ein neues Rezept aus meinem Coaching, schau dir das an und ergänze es</em>" oder „<em>Wenn ich grossen Hunger hab, magst du Reis-Gerichte vorschlagen? Merk dir das.</em>" Er passt seine Wissensbasis selbst an.</p>
+
+  <h3 style="color: var(--orange);">💬 Bonus-Level: Mit Telegram verbinden</h3>
+  <p>Bis hier läuft dein Kochassistent in deinem Claude Code auf dem Computer. Das ist top — aber du willst ihn vermutlich auch <strong>unterwegs</strong> nutzen können. Beim Einkaufen, am Spielplatz, im Auto. Genau das gibt dir die Telegram-Anbindung.</p>
+
+  <h4 style="color: var(--petrol); margin-top: 24px; margin-bottom: 12px; font-size: 18px;">Was es konkret bringt</h4>
+
+  <div class="prompt-block" style="background: var(--petrol); padding: 24px 28px;">
+    <span class="prompt-label" style="background: var(--gelb); color: var(--petrol-deep);">Beispiele aus dem Alltag</span>
+    <p>📍 <strong>Am Spielplatz</strong> tippst du: „Was koch ich heute Abend mit Pasta, Tomaten und Käse?" — Bot schickt 2 Vorschläge mit Zeitaufwand.</p>
+    <p>🎙️ <strong>Beim Autofahren</strong> sprichst du eine Sprachnachricht: „Mach mir bitte einen Wochenplan ab Montag, Mittwoch ist Wandertag, Freitag kommen Gäste." Bot transkribiert, baut den Plan, sendet ihn zurück.</p>
+    <p>🛒 <strong>Beim Einkaufen</strong> brauchst du die Liste. Du tippst „<span class="highlight">/einkaufsliste</span>" — er sendet sie sofort, Migros-sortiert.</p>
+    <p>🌙 <strong>Spätabends</strong> fällt dir ein, dass morgen Besuch kommt. Du schreibst kurz: „Gäste morgen Mittag, vegetarisch, 6 Personen." Bot baut den Plan, du gehst beruhigt ins Bett.</p>
+  </div>
+
+  <h4 style="color: var(--petrol); margin-top: 28px; margin-bottom: 12px; font-size: 18px;">Was du dafür brauchst</h4>
+
+  <div class="idea-box">
+    <span class="idea-label">Voraussetzungen</span>
+    <ul>
+      <li><strong>Telegram-Account</strong> — hast du vermutlich eh schon</li>
+      <li><strong>Telegram-Bot-Token</strong> — kostenlos, kriegst du einmalig via @BotFather (das ist ein anderer Bot in Telegram, der dir Bot-Zugänge erstellt)</li>
+      <li><strong>Computer, der ab und zu läuft</strong> — solange er an ist, antwortet dein Bot. Bei mir läuft er im Hintergrund mit, ich merk's nicht.</li>
+    </ul>
+  </div>
+
+  <h4 style="color: var(--petrol); margin-top: 28px; margin-bottom: 12px; font-size: 18px;">Was du Claude Code sagst</h4>
+
+  <p>Gleicher Weg wie bei allem anderen — reinlabern. So in etwa:</p>
+
+  <div class="prompt-block">
+    <span class="prompt-label">💬 Beispiel-Prompt</span>
+    <p>Ich möchte meinen <span class="highlight">Kochassistenten mit Telegram verbinden</span>. Konkret: ich will von unterwegs mit ihm chatten können — per Text und per Sprachnachricht. Er soll mir Wochenpläne, Einkaufslisten und Spontan-Vorschläge auf Telegram schicken können.</p>
+    <p>Führ mich bitte Schritt für Schritt durch das Setup:</p>
+    <p>1. Was muss ich beim <span class="highlight">BotFather</span> in Telegram machen, um einen Bot-Token zu bekommen?<br>2. Wo füg ich diesen Token ein?<br>3. Was musst du noch einrichten, damit der Bot auf meine Nachrichten antwortet?<br>4. Wie kann ich Sprachnachrichten schicken, die er versteht?</p>
+    <p>Erklär mir alles auf <span class="highlight">Schweizer Hochdeutsch</span> — ich bin keine Programmiererin.</p>
+  </div>
+
+  <h4 style="color: var(--petrol); margin-top: 28px; margin-bottom: 12px; font-size: 18px;">Was dann passiert</h4>
+
+  <p>Claude Code führt dich durch drei Schritte:</p>
+
+  <p><strong>1. Token holen (3-5 Min)</strong> — Er sagt dir genau, wie du in Telegram zum BotFather gehst, einen Namen für deinen Bot wählst (z.B. „Patricia-Kochassistent") und den Token abkriegst. Den Token kopierst du ihm dann in Claude Code rein.</p>
+
+  <p><strong>2. Verbindung bauen (5-10 Min)</strong> — Er baut das Skript, das deinen Kochassistenten mit Telegram verbindet. Das passiert komplett in deinem Workspace, du musst nichts tun ausser zustimmen wenn er fragt „<em>soll ich diese Datei erstellen?</em>"</p>
+
+  <p><strong>3. Test + Auto-Start (5 Min)</strong> — Er sagt dir: „Schick jetzt deinem Bot eine Nachricht in Telegram." Du machst das, kriegst eine Antwort zurück, alles läuft. Wenn du willst, dass der Bot dauerhaft erreichbar ist (auch wenn du Claude Code geschlossen hast), richtet er dir einen Auto-Start ein — auch das geht mit „<em>kannst du mir das so machen, dass der Bot immer läuft?</em>"</p>
+
+  <h4 style="color: var(--petrol); margin-top: 28px; margin-bottom: 12px; font-size: 18px;">Aufwand</h4>
+
+  <p>Einmalig <strong>20-30 Minuten</strong>. Danach hast du deinen Kochassistenten immer in der Hosentasche.</p>
+
+  <h4 style="color: var(--petrol); margin-top: 28px; margin-bottom: 12px; font-size: 18px;">Geht das auch mit dem Brand-Voice-Assistenten?</h4>
+
+  <p>Ja — gleiches Prinzip. Wenn du auch deinen Brand-Voice-Bot per Telegram nutzen willst (eine Caption-Idee unterwegs schicken, Bot überarbeitet sie sofort), sag's Claude Code: „<em>Bau mir das gleiche Setup wie für den Kochassistenten, aber für den Brand-Voice-Bot.</em>"</p>
+
+  <p style="background: var(--creme-soft); padding: 16px 22px; border-radius: 10px; font-style: italic; color: var(--petrol-deep); margin-top: 24px;">💡 Wenn du das mit Telegram nicht jetzt machen willst — auch okay. Du kannst es immer später nachholen. Der Kochassistent funktioniert in Claude Code allein schon super.</p>
+</section>
+
+<hr class="divider">
+
+<!-- ============ SCHRITT 2 — BRAND-VOICE ============ -->
+<section class="step wrap">
+  <span class="step-num">Schritt 2 · ca. 20 Min</span>
+  <h2>Der <span class="accent">Brand-Voice-Assistent</span></h2>
+  <p class="step-lead">Captions · Hooks · Story-Slides · Mails in DEINER Stimme — nicht in der generischen ChatGPT-Stimme.</p>
+
+  <p>Gleicher Weg wie beim Kochassistenten. Du öffnest Claude Code, fängst einen neuen Chat an und sagst, was du willst. So in etwa hab ich's gemacht:</p>
+
+  <div class="prompt-block">
+    <span class="prompt-label">💬 Beispiel-Prompt</span>
+    <p>Ich möchte einen <span class="highlight">Brand-Voice-Assistenten</span>, der in MEINER Stimme schreibt — nicht in der generischen ChatGPT-Stimme.</p>
+    <p>Meine Stimme ist: <span class="highlight">direkt, warm, ehrlich, nahbar</span>. Ich schreibe Schweizer ss, kein ß. Du-Anrede. Keine englischen Buzzwords wie „Game-Changer" oder „Mindset-Shift". Keine „Stell dir vor..."-Hooks. Keine Dreier-Stakkato („Du lernst. Du wächst. Du gewinnst."). Keine „Nicht X, sondern Y"-Formulierungen — das klingt zu sehr nach KI.</p>
+    <p>Hier 3 echte Beispiele wie ich schreibe (die hab ich aus alten Captions kopiert):</p>
+    <p style="margin-left: 20px; padding-left: 12px; border-left: 2px solid var(--gelb); font-style: italic;">[Hier 3 echte Captions / Mails / Posts von dir reinkopieren — der Bot lernt aus dem ORIGINAL, nicht aus Beschreibungen]</p>
+    <p>Ich will dem Bot dann z.B. einen Caption-Entwurf oder einen ChatGPT-Text geben können — und er schreibt ihn in meiner Stimme um. Zwei Varianten: eine sichere (näher am Original) und eine mutige (stärker meine Stimme).</p>
+    <p>Plus: Hook-Brainstorm (10 Varianten zu einem Thema), Story-Slides aus einem Moment den ich beschreibe, Bio-Texte, Mail-Subjects.</p>
+    <p><span class="highlight">Pflicht-Prüfung vor jedem Output:</span> Klingt das wie ich oder wie ein Motivationsposter? Wenn Poster → nochmal ran.</p>
+  </div>
+
+  <p><strong>Was Claude Code dann macht:</strong> Speichert dein Brand-Voice-Profil als Wissens-File, legt den Skill-Befehl an. Beim ersten Aufruf liest er deine drei Beispieltexte und vergleicht jeden Output dagegen.</p>
+
+  <div class="idea-box">
+    <span class="idea-label">Was du danach hast</span>
+    <ul>
+      <li>Den Befehl <strong>/voice</strong> in deinem Claude Code</li>
+      <li>Caption-Umschreibung mit zwei Varianten (sicher + mutig)</li>
+      <li>10 Hooks zu jedem Thema in deiner Stimme</li>
+      <li>Story-Slides aus einem Moment-Beschrieb</li>
+      <li>Automatische KI-Floskel-Filter</li>
+    </ul>
+  </div>
+
+  <h3>So machst du ihn schlauer</h3>
+  <p>Wenn eine Caption richtig gut performt: sag ihm „<em>Diese Caption hat super funktioniert, speicher sie als neues Beispiel in meiner Brand-Voice</em>". Mit der Zeit wird er präziser, weil er auf deine bewährten Texte zurückgreift statt auf abstrakte Regeln.</p>
+
+  <h3>Beispiel-Konversation nach dem Aufsetzen</h3>
+
+  <div class="prompt-block" style="background: #29556d;">
+    <span class="prompt-label" style="background: var(--gelb); color: var(--petrol-deep);">Beispiel im Einsatz</span>
+    <p style="color: var(--gelb); font-weight: 600;">Du: /voice</p>
+    <p>Bot: Hi! Ich hab deine Brand-Voice geladen. Was schreibst du heute — Caption, Hook, Story, Mail?</p>
+    <p style="color: var(--gelb); font-weight: 600;">Du: Ich brauch eine Caption für ein Reel über Zeit-Management. Mein Entwurf: „Stell dir vor, du hast plötzlich 3 Stunden mehr pro Tag. Mit diesen Tipps schaffst du das!"</p>
+    <p>Bot: Drei rote Flaggen in deinem Entwurf:<br>1. „Stell dir vor" — KI-Floskel, in deiner Blackliste<br>2. „diese Tipps" — Worthülse ohne Konkretes<br>3. „schaffst du das" — generisch, nicht in deiner Stimme</p>
+    <p>Zwei Varianten in deiner Stimme:</p>
+    <p><strong style="color: var(--gelb);">SICHERE VARIANTE:</strong> „Drei Stunden mehr pro Tag — ohne mehr zu arbeiten. Klingt nach Marketing-Versprechen. Ist aber genau das, was passiert, wenn du..."</p>
+    <p><strong style="color: var(--gelb);">MUTIGE VARIANTE:</strong> „Du hast keine drei Stunden mehr zu geben. Ich auch nicht. Was wir beide haben: Stunden, in denen wir Dinge tun, die jemand anderes für uns tun könnte. Lass mich dir zeigen, was ich seit 2024 abgeb."</p>
+    <p>Welche fühlt sich näher an dir?</p>
+  </div>
+</section>
+
+<!-- ============ ITERATE ============ -->
+<section class="iterate-section">
+  <div class="wrap">
+    <h2>So wird's mit der Zeit deins</h2>
+    <p class="step-lead">Du baust nicht einmal — du baust kontinuierlich weiter, mit jeder Konversation.</p>
+
+    <div class="iterate-card">
+      <h4>1. Sammel deine Erfolge</h4>
+      <p>Wenn eine Caption gut performt, eine Wochenplanung super klappt, eine Mail gut ankommt — sag dem Bot, er soll's als Beispiel speichern. Mit der Zeit hast du eine Bibliothek aus DEINEN bewährten Sachen.</p>
+    </div>
+
+    <div class="iterate-card">
+      <h4>2. Dokumentiere die Anti-Beispiele</h4>
+      <p>Wenn ein Bot-Output dir nicht gefällt, sag's ihm: „<em>Das ist genau das, was ich NIE will. Merk's dir als Anti-Beispiel.</em>" Er lernt daraus mehr als aus zehn höflichen Korrekturen.</p>
+    </div>
+
+    <div class="iterate-card">
+      <h4>3. Bau weiter</h4>
+      <p>Wenn du die zwei verstanden hast, kannst du JEDEN weiteren Assistenten bauen — Garten-Bot, Mail-Antwort-Bot, Familien-Bot, Finanz-Bot. Immer gleicher Weg: Claude Code öffnen, neuer Chat, reinlabern was du willst.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STOLPERSTEINE ============ -->
+<section class="stolper wrap">
+  <h2>Häufige <span style="color: var(--orange); font-style: italic;">Stolpersteine</span></h2>
+  <p style="text-align: center; color: var(--text-soft); font-family: 'Philosopher', serif; font-style: italic; font-size: 17px; margin-bottom: 32px;">Du bist nicht die Einzige, die das erlebt.</p>
+
+  <div class="stolper-item">
+    <h4>„Mein Bot antwortet generisch."</h4>
+    <p>Deine Wissensbasis ist zu vage. Werd konkreter, kopier echte Beispiele rein, ergänze konkrete Vorlieben und Tabus. Sag dem Bot: „<em>Lies dein Profil nochmal und frag mich, wo's noch zu vage ist.</em>"</p>
+  </div>
+
+  <div class="stolper-item">
+    <h4>„Er ignoriert meine Brand-Voice-Regeln."</h4>
+    <p>Sag's ihm direkt: „<em>Bevor du Texte ausgibst, musst du die Pflicht-Prüfung machen. Sonst frag ich nach.</em>" Klare Anweisung schlägt höfliche Bitte.</p>
+  </div>
+
+  <div class="stolper-item">
+    <h4>„Wo speichert er was?"</h4>
+    <p>Frag ihn einfach: „<em>Wo hast du das gespeichert?</em>" Er sagt's dir. Wenn du willst, dass künftig immer in einem bestimmten Ordner gespeichert wird: einmal sagen, er merkt sich das.</p>
+  </div>
+
+  <div class="stolper-item">
+    <h4>„Mein /koch-Befehl wird nicht erkannt."</h4>
+    <p>Claude Code muss neu gestartet werden, damit neue Slash-Commands geladen sind. Im Terminal Ctrl+C drücken und neu starten mit <strong>claude</strong>. Dann sollte <strong>/koch</strong> in der Liste sein.</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="brand">Mumlifebalance · Patricia Ulmann</div>
+  <div class="tag">Network + Onlinekurse für Mamas</div>
+  <p style="margin-top: 24px; color: rgba(241,236,221,0.7); font-size: 14px;">Bei Fragen: schick mir auf Instagram eine DM, wir gehen das gemeinsam durch.</p>
+  <p class="sig">— Patricia</p>
+</footer>
+
+</body>
+</html>
