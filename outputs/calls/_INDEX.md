@@ -9,3 +9,4 @@ Auto-Index aller Files in `outputs/calls/`. Siehe [[_MOCs/MOC-Produkte-Funnels]]
 ## Dateien
 
 - [[2026-04-29-ig-kundenmaschine-funnel-lecks]]
+- [[2026-05-20-jens-neubeck-funnel-call]]
