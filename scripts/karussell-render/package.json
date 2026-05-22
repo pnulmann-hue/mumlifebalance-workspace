@@ -9,7 +9,8 @@
     "render:preview": "node render.js --input=\"../../outputs/samples/karussell-v3-preview.html\""
   },
   "dependencies": {
-    "puppeteer": "^23.11.1"
+    "puppeteer": "^23.11.1",
+    "sharp": "^0.34.5"
   },
   "engines": {
     "node": ">=18"
