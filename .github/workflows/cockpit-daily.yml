@@ -1,0 +1,129 @@
+name: Cockpit-Daily
+
+# Ersetzt den abgelaufenen Railway-Worker. Schickt Patricia ihre Cockpit-Briefings
+# via Telegram (Bot @Cockbit_bot). Interaktive Skill-Dialoge (woche/monat/quartal)
+# laufen weiterhin in Claude Code (Desktop oder Mobile-App) -- die Cron-Trigger
+# hier feuern nur die Erinnerungen.
+#
+# Zeiten: alle Cron-Eintraege in UTC. Schweiz = UTC+2 (Sommer) / UTC+1 (Winter).
+# Im Sommer treffen die Pushes die genannte lokale Zeit. Im Winter sind sie 1h
+# spaeter (z.B. 07:30 statt 06:30). Toleranter Drift, kein Auto-Switch noetig.
+
+on:
+  schedule:
+    # Mo-Fr 04:30 UTC = 06:30 CEST -- Tagesbriefing
+    - cron: '30 4 * * 1-5'
+    # Mo-Fr 10:00 UTC = 12:00 CEST -- Mittag-Check
+    - cron: '0 10 * * 1-5'
+    # Sa+So 04:30 UTC = 06:30 CEST -- Auszeit-Push (intern erkannt)
+    - cron: '30 4 * * 6,0'
+    # So 17:00 UTC = 19:00 CEST -- Wochenblick-Reminder
+    - cron: '0 17 * * 0'
+    # 1. d. Monats 06:00 UTC = 08:00 CEST -- Monatsblick-Reminder
+    - cron: '0 6 1 * *'
+    # 1.1./1.4./1.7./1.10. 06:05 UTC = 08:05 CEST -- Quartalsblick-Reminder
+    # (5 Min nach Monats-Reminder, damit beide ankommen)
+    - cron: '5 6 1 1,4,7,10 *'
+  workflow_dispatch:
+    inputs:
+      modus:
+        description: 'Welches Briefing manuell triggern'
+        required: true
+        default: 'morgen'
+        type: choice
+        options:
+          - morgen
+          - mittag
+          - woche-reminder
+          - monat-reminder
+          - quartal-reminder
+
+permissions:
+  contents: write
+
+jobs:
+  send-briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: scripts/cockpit-bot/requirements.txt
+
+      - name: Install deps
+        working-directory: scripts/cockpit-bot
+        run: pip install -r requirements.txt
+
+      - name: Determine modus
+        id: modus
+        shell: bash
+        run: |
+          # workflow_dispatch: nutze input
+          if [ -n "${{ github.event.inputs.modus }}" ]; then
+            echo "modus=${{ github.event.inputs.modus }}" >> "$GITHUB_OUTPUT"
+            echo "Modus aus workflow_dispatch: ${{ github.event.inputs.modus }}"
+            exit 0
+          fi
+          # Cron: anhand UTC-Zeit + Wochentag + Datum erkennen
+          HOUR=$(date -u +%-H)
+          MINUTE=$(date -u +%-M)
+          DAY=$(date -u +%-d)
+          MONTH=$(date -u +%-m)
+          DOW=$(date -u +%u)  # 1=Mo ... 7=So
+
+          # Quartal-Reminder zuerst (1.1./1.4./1.7./1.10. ab 06:05 UTC)
+          if [ "$DAY" = "1" ] && [ "$HOUR" = "6" ] && [ "$MINUTE" -ge "1" ]; then
+            case "$MONTH" in
+              1|4|7|10)
+                echo "modus=quartal-reminder" >> "$GITHUB_OUTPUT"
+                echo "Modus erkannt: quartal-reminder"
+                exit 0
+                ;;
+            esac
+          fi
+          # Monats-Reminder (1. d. Monats 06:00 UTC)
+          if [ "$DAY" = "1" ] && [ "$HOUR" = "6" ]; then
+            echo "modus=monat-reminder" >> "$GITHUB_OUTPUT"
+            echo "Modus erkannt: monat-reminder"
+            exit 0
+          fi
+          # Wochen-Reminder (So 17:00 UTC)
+          if [ "$DOW" = "7" ] && [ "$HOUR" = "17" ]; then
+            echo "modus=woche-reminder" >> "$GITHUB_OUTPUT"
+            echo "Modus erkannt: woche-reminder"
+            exit 0
+          fi
+          # Mittag (Mo-Fr 10:00 UTC)
+          if [ "$HOUR" = "10" ] && [ "$DOW" -le "5" ]; then
+            echo "modus=mittag" >> "$GITHUB_OUTPUT"
+            echo "Modus erkannt: mittag"
+            exit 0
+          fi
+          # Default: morgen (04:30 UTC alle Tage; an Sa+So sendet bot.py automatisch Auszeit-Push)
+          echo "modus=morgen" >> "$GITHUB_OUTPUT"
+          echo "Modus erkannt: morgen (Default)"
+
+      - name: Send briefing
+        working-directory: scripts/cockpit-bot
+        env:
+          TELEGRAM_COCKPIT_BOT_TOKEN: ${{ secrets.TELEGRAM_COCKPIT_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Cockpit-Bot-Code liest NOTION_API_KEY, alle anderen Workflows
+          # nutzen NOTION_TOKEN -- hier gemappt damit nur EIN Secret im Repo noetig.
+          NOTION_API_KEY: ${{ secrets.NOTION_TOKEN }}
+          # Meta-Marketing-API optional: wenn nicht gesetzt, bleibt der
+          # Ads-Block im Briefing leer (kein Crash).
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_AD_ACCOUNT_ID: ${{ secrets.META_AD_ACCOUNT_ID }}
+          META_CURRENCY: CHF
+          CLAUDE_MODEL: claude-sonnet-4-5-20250929
+          TZ: Europe/Zurich
+          PYTHONUNBUFFERED: '1'
+        run: python run_once.py "${{ steps.modus.outputs.modus }}"
