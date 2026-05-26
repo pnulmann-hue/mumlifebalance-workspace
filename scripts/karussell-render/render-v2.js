@@ -87,6 +87,13 @@ const KARUSSELL_LAYOUTS = {
   'mentoring-instagram-eine-regel':          { layout: 'V1', profil: 'mentoring', briefingDate: '2026-05-18' },                            // M8 — Sauber-Statement
   'doterra-alles-richtig-trotzdem':          { layout: 'V2', profil: 'doterra',   briefingDate: '2026-05-18', stickerStyle: 'creme' },     // D5 — Creme-Sticker
   'doterra-brain-fog-47-tabs':               { layout: 'V3', profil: 'doterra',   briefingDate: '2026-05-18' },                            // D3 — Magazin
+
+  // KW22 (2026-05-26) — Mama-CEO Cart-Close + doTERRA Lifestyle (Patricia-Feed-Variations-Plan)
+  'mentoring-pain-21-uhr':                   { layout: 'V3', profil: 'mentoring', briefingDate: '2026-05-26' },                            // M1 — Magazin (Creme, Pain-Cover)
+  'mentoring-mehrwert-3-sachen':             { layout: 'V2', profil: 'mentoring', briefingDate: '2026-05-26', stickerStyle: 'creme' },     // M2 — Foto+Creme-Sticker (Mehrwert)
+  'mentoring-last-call-7-fragen':            { layout: 'V1', profil: 'mentoring', briefingDate: '2026-05-26' },                            // M5 — Sauber Petrol (Last-Call)
+  'doterra-normal-aerztin':                  { layout: 'V1', profil: 'doterra',   briefingDate: '2026-05-26' },                            // D2 — Sauber Orange
+  'doterra-koerper-ueberreizt':              { layout: 'V3', profil: 'doterra',   briefingDate: '2026-05-26' },                            // D5 — Magazin Creme
 };
 
 // Reel-Cover-Layouts
@@ -94,8 +101,17 @@ const REEL_LAYOUTS = {
   // KW19
   'mentoring-monatsfokus-bali-linie':        { layout: 'V2', profil: 'mentoring' }, // M6
   'mentoring-monatsfokus-ki-mitarbeiter':    { layout: 'V2', profil: 'mentoring' }, // M10
-  'doterra-monatsfokus-3-uhr-symptome':      { layout: 'V1', profil: 'doterra' },   // D1
-  'doterra-monatsfokus-koerper-ueberhoert':  { layout: 'V3', profil: 'doterra' },   // D3
+  'doterra-monatsfokus-3-uhr-symptome':      { layout: 'V1', profil: 'doterra' },   // D1 (KW19)
+  'doterra-monatsfokus-koerper-ueberhoert':  { layout: 'V3', profil: 'doterra' },   // D3 (KW19)
+
+  // KW22 (2026-05-26) — Patricia hat 3 doTERRA-Reels gedreht für D1/D3/D4 aus den 5 neuen Vorschlägen
+  'doterra-kw22-3-uhr-schlaflos':            { layout: 'V1', profil: 'doterra', briefingDate: '2026-05-26' }, // D1 — Sauber Petrol/Orange für Pain-Statement
+  'doterra-kw22-7-min-routine':              { layout: 'V2', profil: 'doterra', briefingDate: '2026-05-26' }, // D3 — Foto-Sticker Morgen-Vibe
+  'doterra-kw22-brain-fog-handy':            { layout: 'V3', profil: 'doterra', briefingDate: '2026-05-26' }, // D4 — Magazin Creme
+
+  // KW22 — Mentoring-Reels (Cart-Close-Push Mama-CEO)
+  'mentoring-kw22-networkerin-menschen':     { layout: 'V3', profil: 'mentoring', briefingDate: '2026-05-26' }, // M3 — Magazin Creme (Quote-Reel)
+  'mentoring-kw22-3-tage-offline':           { layout: 'V2', profil: 'mentoring', briefingDate: '2026-05-26' }, // M4 — Foto-Sticker (Walk-the-Talk Brand-Beweis)
 };
 
 // Profil-Akzent-Farbe
@@ -566,6 +582,20 @@ function renderReelCover({ hero, sub, accent, profil, layout, photoPath }) {
         overflow: hidden;
       ">
         <div style="
+          position: absolute;
+          top: 100px;
+          left: 60px;
+          background: ${COLORS.cremeSoft};
+          color: ${accent};
+          padding: 14px 28px;
+          border-radius: 4px;
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 26px;
+          font-weight: 700;
+          letter-spacing: 0.16em;
+        ">${tag}</div>
+
+        <div style="
           width: 60px;
           height: 3px;
           background: ${COLORS.cremeSoft};
@@ -599,12 +629,11 @@ function renderReelCover({ hero, sub, accent, profil, layout, photoPath }) {
           left: 60px;
           bottom: 100px;
           color: ${COLORS.cremeSoft};
-          font-family: 'Source Sans 3', sans-serif;
+          font-family: 'Philosopher', serif;
+          font-style: italic;
+          font-weight: 400;
           font-size: 26px;
-          font-weight: 500;
-          letter-spacing: 0.18em;
-          text-transform: uppercase;
-        ">MUM LIFE BALANCE · REEL</div>
+        ">Mum Life Balance</div>
       </div>
     `;
   }
@@ -634,17 +663,6 @@ function renderReelCover({ hero, sub, accent, profil, layout, photoPath }) {
           font-weight: 700;
           letter-spacing: 0.16em;
         ">${tag}</div>
-
-        <div style="
-          position: absolute;
-          top: 110px;
-          right: 60px;
-          color: ${COLORS.creme};
-          font-family: 'Source Sans 3', sans-serif;
-          font-size: 26px;
-          font-weight: 600;
-          opacity: 0.9;
-        ">REEL</div>
 
         <div style="
           position: absolute;
@@ -697,23 +715,6 @@ function renderReelCover({ hero, sub, accent, profil, layout, photoPath }) {
           letter-spacing: 0.16em;
           color: ${accent};
         ">${tag}</div>
-
-        <div style="
-          position: absolute;
-          top: 90px;
-          right: 80px;
-          width: 80px;
-          height: 80px;
-          border-radius: 50%;
-          background: ${accent};
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: ${COLORS.creme};
-          font-family: 'Source Sans 3', sans-serif;
-          font-weight: 700;
-          font-size: 24px;
-        ">REEL</div>
 
         <div style="
           position: absolute;
@@ -839,6 +840,13 @@ const PHOTO_INDEX = {
   // KW21 — V2 Karussells
   'mentoring-bio-produktkatalog':              250,  // M5 — Patricia casual (anders als M8-KW20 #400)
   'doterra-alles-richtig-trotzdem':            550,  // D5 — Patricia nachdenklich
+
+  // KW22 — V2 Reels
+  'doterra-kw22-7-min-routine':                350,  // D3 — Morgen-Vibe (anders als KW19/20 doTERRA-Fotos)
+  'mentoring-kw22-3-tage-offline':             750,  // M4 — Patricia ruhig (neuer Index, vermittelt Vertrauen)
+
+  // KW22 — V2 Karussells
+  'mentoring-mehrwert-3-sachen':               600,  // M2 — Patricia warm (anders als M5-KW21 #250 + M4-KW20 #150)
 };
 
 async function getPhotoPathForSlug(slug) {
@@ -946,7 +954,7 @@ async function renderKarussell({ slug, layout, profil, briefingPath, browser, st
   return outPaths;
 }
 
-async function renderReel({ slug, layout, profil, briefingPath, browser }) {
+async function renderReel({ slug, layout, profil, briefingPath, browser, renderDate }) {
   console.log(`\n--- Reel-Cover: ${slug} (Layout ${layout}, Profil ${profil}) ---`);
   const hook = await parseReelHook(briefingPath);
 
@@ -964,9 +972,10 @@ async function renderReel({ slug, layout, profil, briefingPath, browser }) {
   });
   const html = buildHtmlPage(slideHtml);
 
+  const dateForDir = renderDate || '2026-05-04';
   const outDir = path.join(
     WORKSPACE_ROOT,
-    'outputs', 'reels', 'render-2026-05-04',
+    'outputs', 'reels', `render-${dateForDir}`,
     `${profil}-${slug.replace(`${profil}-`, '')}`
   );
   await fs.mkdir(outDir, { recursive: true });
@@ -1035,12 +1044,14 @@ async function main() {
       console.log('\n=== REEL-COVER-RENDER ===');
       for (const [slug, info] of Object.entries(REEL_LAYOUTS)) {
         if (ONLY_SLUG && ONLY_SLUG !== slug) continue;
+        const briefingDate = info.briefingDate || '2026-05-04';
         const briefingPath = path.join(
-          WORKSPACE_ROOT, 'outputs', 'reels', `2026-05-04-${slug}-briefing.md`
+          WORKSPACE_ROOT, 'outputs', 'reels', `${briefingDate}-${slug}-briefing.md`
         );
         try {
           const paths = await renderReel({
             slug, layout: info.layout, profil: info.profil, briefingPath, browser,
+            renderDate: briefingDate,
           });
           allOutputs.reels.push(...paths);
         } catch (err) {

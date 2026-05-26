@@ -1,0 +1,14 @@
+{
+  "name": "md-to-pdf",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Markdown to PDF via Puppeteer + marked — für Telegram-Dokument-Versand",
+  "main": "md-to-pdf.js",
+  "scripts": {
+    "convert": "node md-to-pdf.js"
+  },
+  "dependencies": {
+    "marked": "^14.1.4",
+    "puppeteer": "^23.0.0"
+  }
+}

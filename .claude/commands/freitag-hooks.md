@@ -463,6 +463,24 @@ node scripts/content-bot/telegram-send.js --text="$(cat /tmp/freitag-telegram.tx
 
 (Text vorher in `/tmp/freitag-telegram.txt` schreiben.)
 
+### 6c) Markt-Analyse + Hooks als PDF via Telegram (PFLICHT seit 2026-05-26)
+
+**Patricia liest Hooks + Markt-Analyse am liebsten als PDF aufm Handy unterwegs.** Nach dem Text-Push (6b) generierst du das PDF und schickst es als Telegram-Dokument hinterher.
+
+```bash
+# 1. MD zu PDF konvertieren
+cd scripts/md-to-pdf && node md-to-pdf.js \
+  --input="../../outputs/freitag/YYYY-MM-DD-hooks.md" \
+  --output="../../outputs/freitag/YYYY-MM-DD-hooks-KW[N+1].pdf"
+
+# 2. PDF via Telegram als Dokument schicken
+cd ../.. && node scripts/content-bot/telegram-send.js \
+  --document="outputs/freitag/YYYY-MM-DD-hooks-KW[N+1].pdf" \
+  --caption="📊 KW[N+1] Markt-Analyse + 20 Hooks — vollständige Version zum Lesen unterwegs."
+```
+
+**Falls Markt-Analyse als separate Datei (`outputs/freitag/markt-analyse-KW[N+1].md`) existiert:** zusätzlich auch die als PDF + Telegram schicken (zwei separate Dokumente).
+
 ---
 
 ## Phase 7 · Default-Pick algorithmisch (5+5 pro Profil)

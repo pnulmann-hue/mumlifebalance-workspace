@@ -205,6 +205,43 @@ async function sendMediaGroup(photoPaths, captionFirst = '', parseMode = null) {
 }
 
 // ============================================================
+// MODUS 4: DOKUMENT (PDF/MD/etc.) mit Caption senden
+// ============================================================
+async function sendDocument(docPath, caption = '', parseMode = null) {
+  const absPath = path.isAbsolute(docPath) ? docPath : path.resolve(docPath);
+  await fs.access(absPath);
+
+  let finalCaption = caption;
+  let extraText = '';
+  if (caption && caption.length > PHOTO_CAPTION_MAX) {
+    finalCaption = caption.slice(0, PHOTO_CAPTION_MAX - 3) + '...';
+    extraText = caption.slice(PHOTO_CAPTION_MAX - 3);
+  }
+
+  const formData = new FormData();
+  formData.append('chat_id', CHAT_ID);
+  formData.append('document', new Blob([await fs.readFile(absPath)]), path.basename(absPath));
+  if (finalCaption) formData.append('caption', finalCaption);
+  if (parseMode) formData.append('parse_mode', parseMode);
+
+  const response = await fetch(`${TG_API}/sendDocument`, {
+    method: 'POST',
+    body: formData,
+  });
+  const json = await response.json();
+  if (!json.ok) {
+    console.error(`FEHLER beim Senden des Dokuments:`, JSON.stringify(json, null, 2));
+    process.exit(1);
+  }
+
+  if (extraText) {
+    await sendText(`[Fortsetzung Caption]\n\n${extraText}`, parseMode);
+  }
+
+  return json.result.message_id;
+}
+
+// ============================================================
 // MAIN: Modus-Auswahl basierend auf Args
 // ============================================================
 const parseMode = args['parse-mode'] || null;
@@ -227,6 +264,14 @@ if (args.photo) {
   const caption = args.caption || '';
   const id = await sendPhoto(args.photo, caption, parseMode);
   console.log(`OK: Bild gesendet. message_id: ${id}`);
+  process.exit(0);
+}
+
+// MODUS 4: Dokument (PDF/MD/...) mit Caption
+if (args.document) {
+  const caption = args.caption || '';
+  const id = await sendDocument(args.document, caption, parseMode);
+  console.log(`OK: Dokument gesendet. message_id: ${id}`);
   process.exit(0);
 }
 

@@ -1,0 +1,21 @@
+{
+  "_comment": "LIVE-TEST 2026-05-26: Kann Blotato mehr als 10 Slides? Schedule weit in Zukunft (31.12.2027) damit Patricia es bequem manuell canceln kann nach Test.",
+  "accountId": "41414",
+  "platform": "instagram",
+  "mediaType": "image",
+  "scheduledTime": "2027-02-15T23:30:00+01:00",
+  "text": "TEST-POST Â· Wird vor dem Posten gecancelt Â· Test ob Blotato mehr als 10 Slides annimmt.",
+  "mediaUrls": [
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/c80e39a5-ea78-4deb-adb2-8987b812209b.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/b2cf45d8-5779-488a-a32b-4b4f588d3a6f.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/9ec1697c-4c2b-46f5-addd-846c61ec60a1.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/5ec6edf3-282b-4ca3-841c-b76d769a228e.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/0710f254-0624-4da4-995c-565b781f9513.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/a5de08a7-e018-4b43-90a9-e2accd876d4f.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/229a2a1a-e281-4c03-ba18-1f865ebc6058.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/0bc45c73-83f8-4466-96bf-330dbc92831c.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/196c654e-7cba-4212-8fc8-04027f1b8466.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/673f2b32-66da-45a0-b764-2eb800d0c18d.png",
+    "https://database.blotato.io/storage/v1/object/public/public_media/6c5d4015-87d9-4f43-bae9-6064e09442ca/0531ac8e-14b2-47c0-a99a-e108e340ca99.png"
+  ]
+}
