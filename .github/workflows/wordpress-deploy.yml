@@ -1,0 +1,55 @@
+name: WordPress Deploy
+
+# Manueller Trigger über GitHub UI:
+# Repo → Actions → "WordPress Deploy" → Run workflow → Script wählen → Run
+#
+# Voraussetzung: Repo-Secrets WP_URL, WP_USER, WP_APP_PASSWORD sind gesetzt.
+# (Settings → Secrets and variables → Actions → New repository secret)
+#
+# Die Deploy-Scripts pushen Pages als status:"draft" — Patricia prüft
+# danach im WP-Admin und publiziert manuell.
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: 'Welche Seite deployen?'
+        required: true
+        type: choice
+        default: 'deploy-mama-ceo.js'
+        options:
+          - deploy-mama-ceo.js
+          - deploy-bio-check.js
+          - deploy-bio-v3.js
+          - deploy-webinar-anmelde.js
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wordpress-deploy-${{ inputs.script }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: scripts/wordpress
+        run: npm install --no-audit --no-fund
+
+      - name: Deploy to WordPress
+        working-directory: scripts/wordpress
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: node ${{ inputs.script }}
