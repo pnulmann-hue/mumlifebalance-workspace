@@ -21,6 +21,16 @@ import asyncio
 import sys
 from datetime import date
 
+# UTF-8 fuer stdout/stderr erzwingen BEVOR bot importiert wird.
+# bot.py setzt das nur unter __main__, das greift hier nicht. Ohne diesen
+# Schritt crasht der Logger sofort wenn er deutsche Umlaute schreibt
+# (z.B. "Morgen-Briefing startet fuer ..."), weil GH Actions stdout per
+# Default ASCII ist.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
+
 
 WOCHE_REMINDER = (
     "🌅 Sonntag-Abend.\n\n"
