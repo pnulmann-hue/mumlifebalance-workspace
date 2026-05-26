@@ -454,7 +454,7 @@ ${BRAND_CSS}
     <p class="mceo__eyebrow" style="text-align:center;">Erste Runde · 15 Plätze</p>
     <h2 class="mceo__h2 mceo__h2--center">Komm jetzt rein — solange's noch 333 sind.</h2>
     <p style="text-align:center; color:var(--muted); max-width:640px; margin:1rem auto 0;">
-      Bei der zweiten Runde sind's <strong>444</strong>. Die Boni werden mehr, das Programm tiefer. Wer jetzt einsteigt, zahlt am wenigsten und hat mich am nähesten dran.
+      Bei der zweiten Runde sind's <strong>mindestens 444</strong>. Die Boni werden mehr, das Programm tiefer. Wer jetzt einsteigt, zahlt am wenigsten und hat mich am nähesten dran.
     </p>
 
     <div class="mceo__pricing">
@@ -467,7 +467,7 @@ ${BRAND_CSS}
       </div>
       <div class="mceo__price-card">
         <p class="mceo__price-card-label">Runde 2 · Herbst 2026</p>
-        <p class="mceo__price-card-amount">444<span style="font-size:1.5rem; vertical-align:top;">CHF</span></p>
+        <p class="mceo__price-card-amount"><span style="font-size:1.1rem; vertical-align:middle; font-weight:400; color:var(--muted); margin-right:0.3rem;">mind.</span>444<span style="font-size:1.5rem; vertical-align:top;">CHF</span></p>
         <p class="mceo__price-card-note">Mehr Boni · vertieftes Programm</p>
         <p class="mceo__price-card-meta">So siehst du: jetzt ist der beste Zeitpunkt.</p>
         <span style="color:var(--muted); font-size:0.9rem; margin-top:auto;">Anmeldung folgt im Sommer</span>
