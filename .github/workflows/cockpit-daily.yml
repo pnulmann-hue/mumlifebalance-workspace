@@ -126,4 +126,9 @@ jobs:
           CLAUDE_MODEL: claude-sonnet-4-5-20250929
           TZ: Europe/Zurich
           PYTHONUNBUFFERED: '1'
+          # UTF-8 erzwingen — sonst crasht Logger bei deutschen Umlauten
+          # mit "'ascii' codec can't encode character" auf Ubuntu-Runnern.
+          PYTHONIOENCODING: 'utf-8'
+          LANG: 'C.UTF-8'
+          LC_ALL: 'C.UTF-8'
         run: python run_once.py "${{ steps.modus.outputs.modus }}"
