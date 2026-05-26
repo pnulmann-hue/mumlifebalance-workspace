@@ -387,6 +387,18 @@ def generate_briefing(modus: str, kontext: dict[str, Any],
     user = build_user_prompt(modus, kontext, heute)
 
     try:
+        # DIAGNOSE: ENV-Vars auf Non-ASCII pruefen (Umlaute in Secrets fangen)
+        import os as _os
+        for _name in ("ANTHROPIC_API_KEY", "NOTION_API_KEY", "META_ACCESS_TOKEN",
+                      "META_AD_ACCOUNT_ID", "TELEGRAM_COCKPIT_BOT_TOKEN",
+                      "TELEGRAM_CHAT_ID", "CLAUDE_MODEL"):
+            _val = _os.environ.get(_name, "")
+            for _i, _ch in enumerate(_val):
+                if ord(_ch) > 127:
+                    raise ValueError(
+                        f"ENV {_name} enthaelt Non-ASCII an Position {_i}: "
+                        f"\\x{ord(_ch):x} (Laenge gesamt: {len(_val)})"
+                    )
         client = _get_client()
         response = client.messages.create(
             model=config.CLAUDE_MODEL,
@@ -398,9 +410,10 @@ def generate_briefing(modus: str, kontext: dict[str, Any],
         import traceback
         tb = traceback.format_exc()
         logger.error(f"Claude-API-Fehler:\n{tb}")
-        # Letzte 3 Frames + Exception fuer Telegram-Output
-        short_tb = "\n".join(tb.splitlines()[-6:])
-        return {"ok": False, "error": f"{type(e).__name__}: {e}\n\n{short_tb}"}
+        # ALLE Frames fuer Telegram-Output (bis Telegram-Limit 4000)
+        # damit wir sehen WER den problematischen Header setzt
+        short_tb = tb[-3500:] if len(tb) > 3500 else tb
+        return {"ok": False, "error": f"{type(e).__name__}: {e}\n\nFULL TRACE:\n{short_tb}"}
 
     text = response.content[0].text if response.content else ""
 
