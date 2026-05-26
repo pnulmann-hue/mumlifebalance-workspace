@@ -395,8 +395,12 @@ def generate_briefing(modus: str, kontext: dict[str, Any],
             messages=[{"role": "user", "content": user}],
         )
     except Exception as e:
-        logger.error(f"Claude-API-Fehler: {e}")
-        return {"ok": False, "error": str(e)}
+        import traceback
+        tb = traceback.format_exc()
+        logger.error(f"Claude-API-Fehler:\n{tb}")
+        # Letzte 3 Frames + Exception fuer Telegram-Output
+        short_tb = "\n".join(tb.splitlines()[-6:])
+        return {"ok": False, "error": f"{type(e).__name__}: {e}\n\n{short_tb}"}
 
     text = response.content[0].text if response.content else ""
 
