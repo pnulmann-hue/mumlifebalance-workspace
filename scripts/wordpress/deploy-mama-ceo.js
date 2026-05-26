@@ -232,7 +232,7 @@ ${BRAND_CSS}
     </h1>
     <p class="mceo__hero-script">Mit Wochenrhythmus, Strukturen und KI als Hebel.</p>
     <a href="${CTA_URL}" class="mceo__btn mceo__btn--orange" target="_blank" rel="noopener">
-      Platz sichern · 249 CHF Frühbucher
+      Platz sichern · 333 CHF
     </a>
   </div>
   <div class="mceo__hero-bar">
@@ -248,7 +248,7 @@ ${BRAND_CSS}
 </section>
 
 <!-- ============ LOOP-BANNER (1-Zeilen-HTML wegen wpautop) ============ -->
-<div class="mceo__loop" aria-hidden="true"><div class="mceo__loop-track"><span>ANMELDUNG OFFEN AB 20. MAI</span><span class="dot">●</span><span>NUR 15 PLÄTZE</span><span class="dot">●</span><span>FRÜHBUCHER 249 CHF</span><span class="dot">●</span><span>START 1. JUNI</span><span class="dot">●</span><span>ANMELDUNG OFFEN AB 20. MAI</span><span class="dot">●</span><span>NUR 15 PLÄTZE</span><span class="dot">●</span><span>FRÜHBUCHER 249 CHF</span><span class="dot">●</span><span>START 1. JUNI</span><span class="dot">●</span></div></div>
+<div class="mceo__loop" aria-hidden="true"><div class="mceo__loop-track"><span>ANMELDUNG OFFEN</span><span class="dot">●</span><span>NUR 15 PLÄTZE</span><span class="dot">●</span><span>333 CHF</span><span class="dot">●</span><span>START 1. JUNI</span><span class="dot">●</span><span>ANMELDUNG OFFEN</span><span class="dot">●</span><span>NUR 15 PLÄTZE</span><span class="dot">●</span><span>333 CHF</span><span class="dot">●</span><span>START 1. JUNI</span><span class="dot">●</span></div></div>
 
 <!-- ============ PAIN-SEKTION (Petrol-Gradient mit MEGA-Nummern) ============ -->
 <section class="mceo__section mceo__section--gradient">
@@ -283,7 +283,7 @@ ${BRAND_CSS}
     </div>
     <p style="text-align:center; margin-top:3.5rem;">
       <a href="${CTA_URL}" class="mceo__btn mceo__btn--cream" target="_blank" rel="noopener">
-        Komm rein · 249 CHF Frühbucher
+        Komm rein · 333 CHF
       </a>
     </p>
   </div>
@@ -459,18 +459,11 @@ ${BRAND_CSS}
 
     <div class="mceo__pricing">
       <div class="mceo__price-card mceo__price-card--featured">
-        <p class="mceo__price-card-label">🔥 Frühbucher · 72 Std</p>
-        <p class="mceo__price-card-amount">249<span style="font-size:1.5rem; vertical-align:top;">CHF</span></p>
-        <p class="mceo__price-card-note">20.5. 09:00 — 22.5. 23:59</p>
+        <p class="mceo__price-card-label">Erste Runde · Anmeldung offen</p>
+        <p class="mceo__price-card-amount">333<span style="font-size:1.5rem; vertical-align:top;">CHF</span></p>
+        <p class="mceo__price-card-note">Anmeldung schliesst am 31.5. 23:59</p>
         <p class="mceo__price-card-meta">Komplettes Programm + alle 3 Boni + 4 Live-Termine + Telegram-Gruppe</p>
         <a href="${CTA_URL}" class="mceo__btn mceo__btn--orange" target="_blank" rel="noopener" style="margin-top:auto;">Jetzt sichern</a>
-      </div>
-      <div class="mceo__price-card">
-        <p class="mceo__price-card-label">Final · Erste Runde</p>
-        <p class="mceo__price-card-amount">333<span style="font-size:1.5rem; vertical-align:top;">CHF</span></p>
-        <p class="mceo__price-card-note">23.5. 00:00 — 31.5. 23:59</p>
-        <p class="mceo__price-card-meta">Selbe Inhalte. Gleiche Boni. Anmeldung schliesst am 31.5.</p>
-        <a href="${CTA_URL}" class="mceo__btn mceo__btn--outline" target="_blank" rel="noopener" style="margin-top:auto;">Platz buchen</a>
       </div>
       <div class="mceo__price-card">
         <p class="mceo__price-card-label">Runde 2 · Herbst 2026</p>
@@ -596,7 +589,7 @@ ${BRAND_CSS}
   <div class="mceo__container--center">
     <h2 class="mceo__h1">Sichere dir deinen Platz.</h2>
     <p class="mceo__lead" style="color:var(--creme);">
-      Erste Runde startet am <strong>1. Juni</strong>. Anmeldung öffnet am <strong>20. Mai um 09:00</strong>. Frühbucher-Preis läuft <strong>72 Stunden</strong>.
+      Erste Runde startet am <strong>1. Juni</strong>. Anmeldung schliesst am <strong>31. Mai 23:59</strong>. Nur <strong>15 Plätze</strong>.
     </p>
     <p style="color:var(--creme); font-size:1.2rem; margin:2rem 0;">
       Wenn du das hier zu Ende gelesen hast — <em style="color:var(--orange);">du bist die richtige Frau für diese Runde.</em>
@@ -611,8 +604,8 @@ ${BRAND_CSS}
 </div>
 `;
 
-const SEO_TITLE = 'Mama-CEO: KI-Programm für Mamas im Network · ab 249 CHF';
-const SEO_DESC = 'Lerne, wie du als Mama mit wenig Zeit genug aus deinem Business holst — um nicht mehr auswärts arbeiten zu gehen. 8 Wochen Live-Programm in 5 Säulen. Anmeldung ab 20. Mai 2026.';
+const SEO_TITLE = 'Mama-CEO: KI-Programm für Mamas im Network · 333 CHF';
+const SEO_DESC = 'Lerne, wie du als Mama mit wenig Zeit genug aus deinem Business holst — um nicht mehr auswärts arbeiten zu gehen. 8 Wochen Live-Programm in 5 Säulen. Start 1. Juni 2026 · 15 Plätze.';
 const SEO_FOCUS_KEYWORD = 'Mama-CEO';
 const HERO_ALT = 'Mama-CEO Patricia Nulmann · Live-Programm für Mamas im Network mit KI-Mitarbeitern';
 
