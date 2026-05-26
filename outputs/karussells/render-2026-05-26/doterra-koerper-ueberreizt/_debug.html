@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Karussell-Render</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; }
+  body { font-family: 'Source Sans 3', sans-serif; color: #0c1c30; }
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-brand {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .footer-meta {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .top-tag {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+  .slide-num-circle {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+  }
+</style>
+</head>
+<body>
+
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #dc822e;
+      ">VORMENOPAUSE</div>
+
+      <div class="slide-num-circle" style="background: #dc822e;">
+        01
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #dc822e;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Dein Körper ist nicht kaputt — er ist überreizt.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Und der Unterschied ist riesig: kaputt = Reparatur, überreizt = weniger statt mehr.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #dc822e;
+      ">VORMENOPAUSE</div>
+
+      <div class="slide-num-circle" style="background: #dc822e;">
+        02
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #dc822e;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Diese Unterscheidung macht den ganzen Unterschied.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Wenn du denkst dein Körper ist kaputt, suchst du mehr Tools, mehr Supplements, mehr Therapien. Wenn du verstehst er ist überreizt, suchst du weniger — und das ist meistens der Schlüssel.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #dc822e;
+      ">VORMENOPAUSE</div>
+
+      <div class="slide-num-circle" style="background: #dc822e;">
+        03
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #dc822e;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Beispiel Schlaf:</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Du schläfst schlecht. Kaputt-Logik: mehr Magnesium, mehr Melatonin, mehr Schlaf-Apps. Überreizt-Logik: weniger Blue Light, weniger Kaffee nachmittags, weniger To-Do-Stress.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #dc822e;
+      ">VORMENOPAUSE</div>
+
+      <div class="slide-num-circle" style="background: #dc822e;">
+        04
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #dc822e;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Beispiel Energie:</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Du bist am Nachmittag platt. Kaputt-Logik: mehr Kaffee, mehr Energie-Drinks, mehr B-Vitamine. Überreizt-Logik: weniger Zucker am Morgen, weniger Bildschirm-Multitasking, weniger Kalender-Überfüllung.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #dc822e;
+      ">VORMENOPAUSE</div>
+
+      <div class="slide-num-circle" style="background: #dc822e;">
+        05
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #dc822e;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Beispiel Stimmung:</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Du bist gereizt. Kaputt-Logik: mehr Yoga, mehr Achtsamkeits-Apps, mehr durchatmen. Überreizt-Logik: weniger Reize gleichzeitig, weniger Mama-Multitasking, weniger Geräusch im Hintergrund.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #dc822e;
+      ">VORMENOPAUSE</div>
+
+      <div class="slide-num-circle" style="background: #dc822e;">
+        06
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #dc822e;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Warum weniger so schwer fällt:</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Weil unser ganzes System uns mehr verkauft. Mehr Produkte, mehr Inhalte, mehr Optimierung. Weniger fühlt sich erstmal an wie Aufgeben — ist aber meistens der ehrlichere Hebel.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #dc822e;
+      ">VORMENOPAUSE</div>
+
+      <div class="slide-num-circle" style="background: #dc822e;">
+        07
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #dc822e;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Bei mir war's elf Monate weniger.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Weniger Bildschirm abends. Weniger Kaffee nach 14 Uhr. Weniger gleichzeitig denken. Und dann gezielt auffüllen was wirklich leer war — nicht raten.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #dc822e;
+      ">VORMENOPAUSE</div>
+
+      <div class="slide-num-circle" style="background: #dc822e;">
+        08
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #dc822e;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Bevor du dir nochmal was kaufst:</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Frag dich — was hat mein Körper grad zu VIEL davon? Bildschirm, Stress, Süsses, Reize. Nicht zu wenig.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #dc822e;
+      ">VORMENOPAUSE</div>
+
+      <div class="slide-num-circle" style="background: #dc822e;">
+        09
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #dc822e;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Du bist nicht kaputt.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Du bist eine Mama in ihren 30ern, die in einer überreizten Welt lebt. Manchmal ist die Antwort einfacher als wir glauben — nur unbequemer.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #dc822e;
+      ">VORMENOPAUSE</div>
+
+      <div class="slide-num-circle" style="background: #dc822e;">
+        10
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #dc822e;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">P.S.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Wenn du mehr darüber wissen willst, wie ich das in meiner Routine verankert hab — kommentier WENDEPUNKT. Das hier ist meine Geschichte, keine medizinische Empfehlung.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+</body>
+</html>

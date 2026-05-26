@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Karussell-Render</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; }
+  body { font-family: 'Source Sans 3', sans-serif; color: #0c1c30; }
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-brand {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .footer-meta {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .top-tag {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+  .slide-num-circle {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+  }
+</style>
+</head>
+<body>
+
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #12828c;
+      ">MENTORING</div>
+
+      <div class="slide-num-circle" style="background: #12828c;">
+        01
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #12828c;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Es ist 21 Uhr. Du sitzt vor dem Laptop und hast noch nicht mal angefangen.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Und während du dich fragst, wie das weitergehen soll, läuft bei mir grad ein KI-Mitarbeiter im Hintergrund.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #12828c;
+      ">MENTORING</div>
+
+      <div class="slide-num-circle" style="background: #12828c;">
+        02
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #12828c;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Du kennst diesen Moment.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Kinder im Bett, Haus endlich still — und du sitzt da und weisst nicht mal mehr wo du anfangen sollst. Schon zu müde, aber zu wach um schlafen zu gehen.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #12828c;
+      ">MENTORING</div>
+
+      <div class="slide-num-circle" style="background: #12828c;">
+        03
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #12828c;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Das ist nicht Disziplin-Problem.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Das ist ein Setup-Problem. Solange dein Business komplett an dir hängt, hast du genau diese Abende. Egal wie organisiert du bist.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #12828c;
+      ">MENTORING</div>
+
+      <div class="slide-num-circle" style="background: #12828c;">
+        04
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #12828c;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Bei mir lief das jahrelang genau so.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Posts abends, DMs zwischen Tür und Angel, Reels-Bearbeitung bis 23 Uhr. Bis ich gemerkt hab — das ist nicht das Leben, für das ich gekündigt hab.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #12828c;
+      ">MENTORING</div>
+
+      <div class="slide-num-circle" style="background: #12828c;">
+        05
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #12828c;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Heute hab ich KI-Mitarbeiter, die das übernehmen.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Posts vorschreiben. DM-Antworten templaten. Funnel laufen lassen. Mailsequenzen verschicken. Während ich morgens 3 Stunden Fokuszeit hab und abends Mensch bin.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #12828c;
+      ">MENTORING</div>
+
+      <div class="slide-num-circle" style="background: #12828c;">
+        06
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #12828c;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Drei Sachen, die du diese Woche an Software abgeben kannst:</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">1. Post-Entwürfe mit KI vorschreiben lassen. 2. DM-Antwort-Templates anlegen. 3. Eine Mailsequenz einmal aufsetzen, die dann läuft.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #12828c;
+      ">MENTORING</div>
+
+      <div class="slide-num-circle" style="background: #12828c;">
+        07
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #12828c;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Allein das spart dir 4-6 Stunden pro Woche.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Und das funktioniert auch ohne mein Programm. Du brauchst nur den Mut, etwas abzugeben, das du bisher selbst gemacht hast.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #12828c;
+      ">MENTORING</div>
+
+      <div class="slide-num-circle" style="background: #12828c;">
+        08
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #12828c;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">In Mama-CEO geht's noch viel weiter.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Acht Wochen, in denen wir gemeinsam dein KI-Setup aufbauen. Damit du nicht mehr ALLES selbst tippst — und endlich wieder Zeit für die Menschen hast, für die du in den Job gegangen bist.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #12828c;
+      ">MENTORING</div>
+
+      <div class="slide-num-circle" style="background: #12828c;">
+        09
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #12828c;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">Cart ist offen bis Sonntag 23:59.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Sieben Mentees aktiv. Vierstellig pro Monat. 18 Stunden Woche. Vier Kinder. Das ist meine Realität — und sie ist machbar.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+    <div class="slide v3" style="
+      background: #f1ecdd;
+      padding: 60px;
+    ">
+      <div style="
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: #12828c;
+      ">MENTORING</div>
+
+      <div class="slide-num-circle" style="background: #12828c;">
+        10
+      </div>
+
+      <div style="
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      ">
+        <div style="
+          width: 80px;
+          height: 4px;
+          background: #12828c;
+          margin-bottom: 50px;
+          border-radius: 2px;
+        "></div>
+
+        <h1 style="
+          font-family: 'Philosopher', serif;
+          font-weight: 700;
+          font-size: 92px;
+          line-height: 1.14;
+          color: #0c1c30;
+          margin-bottom: 36px;
+        ">P.S.</h1>
+
+        <p style="
+          font-family: 'Source Sans 3', sans-serif;
+          font-size: 36px;
+          line-height: 1.45;
+          color: rgba(12, 28, 48, 0.78);
+          margin-bottom: 0;
+        ">Kommentier SYSTEM und ich schick dir den Cart-Link in deine DMs. Plus die drei Mini-Aufgaben von Slide 6 als Mini-Workbook.</p>
+
+        
+      </div>
+
+      <div class="footer-brand" style="
+        font-family: 'Philosopher', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(12, 28, 48, 0.78);
+      ">Mum Life Balance</div>
+    </div>
+  
+</body>
+</html>
