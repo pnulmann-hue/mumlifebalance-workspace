@@ -61,6 +61,19 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[_RE-EVAL-EMPFEHLUNG]]
 - [[_re-eval-rohdaten]]
 
+### 📁 sichtbar-in-30-tagen
+
+- [[00-briefing]]
+- [[01-produkttreppe]]
+- [[02-markt-research]]
+- [[03-konzept-30-tage]]
+- [[04-tech-stack-web-tool]]
+- [[05-salespage-outline]]
+- [[06-launch-kalender]]
+- [[07-funnel]]
+- [[08-notion-eintrag]]
+- [[09-naechste-schritte]]
+
 ### 📁 vom-networkwissen-zur-digitalen-produktwelt
 
 - [[00-UEBERSICHT-UND-NAECHSTE-SCHRITTE]]
