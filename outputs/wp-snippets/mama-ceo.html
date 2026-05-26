@@ -1,224 +1,5 @@
-// Deploy Mama-CEO Landing-Page auf mumlifebalance.ch
-// Stil: Julia Trost Elevate-Look (Vollbild-Foto-Hero, MEGA-Display, Loop-Banner,
-// nummerierte Säulen, 3-Spalten-Pricing, Two-Column Story, Über-mich)
-// Inhalt: 5-Säulen-Struktur (Stand 11.5.2026 nach Patricia-Review):
-//   1. Du erschaffst dir die Zeit
-//   2. Du brichst aus dem Hamsterrad aus
-//   3. Du baust die Struktur
-//   4. Du delegierst den Adminkram
-//   5. Business skalieren
-// Brand-Voice: keine "Cohort", "Pilot", "techie", "Backend"
-// 3 Boni: Cockpit-Bot · Familien-Bot · Notion-Master-Template
-// Ausführen: cd scripts/wordpress && node --env-file=.env deploy-mama-ceo.js
+<style>:root{color-scheme:light only;}@media (prefers-color-scheme:dark){.mceo,.mceo *{color-scheme:light only !important;}}body.page-id-3444 .entry-title,body.page-id-3444 .page-title,body.page-id-3444 .elementor-page-title,body.page-id-3444 .elementor-heading-title,body.page-id-3444 .post-title,body.page-id-3444 .single-page__title,body.page-id-3444 .page-header,body.page-id-3444 header.entry-header,body.page-id-3444 .breadcrumbs{display:none !important;}.mceo{--creme:#f1ecdd;--creme-soft:#faf6ec;--gelb:#f5e555;--dunkelblau:#29556d;--orange:#dc822e;--orange-tief:#c06b1e;--petrol:#12828c;--petrol-dark:#0a5e66;--text:#0c1c30;--muted:#5a6b7a;--white:#ffffff;--border:rgba(41,85,109,0.12);font-family:'Source Sans 3',system-ui,-apple-system,sans-serif;color:var(--text);line-height:1.65;}.mceo *,.mceo *::before,.mceo *::after{box-sizing:border-box;}.mceo p{margin:0 0 1.3rem;font-size:1.1rem;}.mceo strong{color:var(--dunkelblau);font-weight:700;}.mceo em{font-style:italic;}.mceo a{color:var(--petrol);}.mceo__display{font-family:'Philosopher',Georgia,serif;font-size:clamp(3rem,8vw,6rem);font-weight:700;line-height:1.05;letter-spacing:-0.02em;margin:0 0 1.5rem;color:var(--dunkelblau);}.mceo__h1{font-family:'Philosopher',Georgia,serif;font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;line-height:1.2;margin:0 0 1.5rem;color:var(--dunkelblau);}.mceo__h1 em{color:var(--orange);font-style:italic;}.mceo__h2{font-family:'Philosopher',Georgia,serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:700;line-height:1.15;margin:0 0 1.5rem;color:var(--dunkelblau);}.mceo__h2--center{text-align:center;}.mceo__h2 em{font-style:italic;color:var(--orange);}.mceo__h2-script{font-family:'Philosopher',Georgia,serif;font-style:italic;font-weight:400;font-size:0.7em;display:block;color:var(--orange);}.mceo__h3{font-family:'Philosopher',Georgia,serif;font-size:clamp(1.4rem,2.5vw,1.8rem);font-weight:700;margin:0 0 0.8rem;line-height:1.3;color:var(--dunkelblau);}.mceo__eyebrow{font-size:0.8rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--orange);font-weight:700;margin:0 0 1.5rem;}.mceo__lead{font-size:clamp(1.15rem,2vw,1.4rem);line-height:1.55;max-width:720px;margin:0 auto 2rem;}.mceo__quote{font-family:'Philosopher',Georgia,serif;font-style:italic;font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--orange);text-align:center;margin:3rem auto;line-height:1.35;max-width:800px;}.mceo__section{padding:6rem 1.5rem;position:relative;}.mceo__section--white{background:var(--white);}.mceo__section--creme{background:var(--creme);}.mceo__section--cremesoft{background:var(--creme-soft);}.mceo__section--dark{background:var(--dunkelblau);color:var(--creme);}.mceo__section--dark .mceo__h1,.mceo__section--dark .mceo__h2,.mceo__section--dark .mceo__h3{color:var(--creme);}.mceo__section--dark p{color:var(--creme);}.mceo__section--dark strong{color:var(--orange);}.mceo__section--dark .mceo__eyebrow{color:var(--orange);}.mceo__section--gradient{background:linear-gradient(180deg,var(--petrol) 0%,var(--petrol-dark) 50%,var(--dunkelblau) 100%);color:var(--creme);}.mceo__section--gradient .mceo__h2{color:var(--creme);}.mceo__section--gradient .mceo__h2 em{color:var(--gelb);}.mceo__section--gradient .mceo__h2-script{color:var(--gelb);}.mceo__section--gradient p{color:var(--creme);}.mceo__container{max-width:1100px;margin:0 auto;}.mceo__container--narrow{max-width:760px;margin:0 auto;}.mceo__container--center{max-width:820px;margin:0 auto;text-align:center;}.mceo__hero{position:relative;min-height:100vh;background-image:url('https://mumlifebalance.ch/wp-content/uploads/2026/05/379-Patricia_Nulmann_mumlifebalance_schoniaugeblick-379-scaled.jpg');background-size:cover;background-position:center 30%;display:flex;flex-direction:column;justify-content:flex-end;padding:0;overflow:hidden;}.mceo__hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(41,85,109,0.15) 0%,rgba(41,85,109,0.45) 60%,rgba(41,85,109,0.85) 100%);z-index:1;}.mceo__hero-content{position:relative;z-index:2;padding:8rem 1.5rem 1.5rem;max-width:1300px;margin:0 auto;width:100%;text-align:center;}.mceo__hero-eyebrow{font-size:0.85rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--creme);font-weight:700;margin:0 0 1.5rem;opacity:0.95;}.mceo__hero h1{font-family:'Philosopher',Georgia,serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;line-height:1.25;color:var(--white);margin:0 auto 1.2rem;max-width:920px;text-shadow:0 2px 18px rgba(0,0,0,0.4);}.mceo__hero h1 em{font-style:italic;color:var(--gelb);}.mceo__hero-script{font-family:'Philosopher',Georgia,serif;font-style:italic;font-size:clamp(1.1rem,2vw,1.5rem);color:var(--creme);margin:0 0 1.5rem;}.mceo__hero-bar{background:var(--orange);padding:1.5rem 1rem;margin-top:2rem;}.mceo__hero-mega{font-family:'Philosopher',Georgia,serif;font-size:clamp(4.5rem,16vw,13rem);font-weight:900;line-height:0.85;letter-spacing:-0.04em;text-transform:uppercase;margin:0;color:var(--white);text-align:center;}.mceo__hero-trust{background:var(--dunkelblau);color:var(--creme);padding:1.2rem 1.5rem;text-align:center;font-size:0.95rem;font-weight:500;}.mceo__hero-trust span{margin:0 0.6rem;opacity:0.95;}.mceo__hero-trust .dot{color:var(--orange);}.mceo__loop{background:var(--gelb);color:var(--dunkelblau);padding:1.4rem 0;overflow:hidden;white-space:nowrap;border-top:4px solid var(--dunkelblau);border-bottom:4px solid var(--dunkelblau);}.mceo__loop-track{display:inline-block;animation:mceo-marquee 28s linear infinite;font-family:'Philosopher',serif;font-size:clamp(1.2rem,2.6vw,1.7rem);font-weight:700;letter-spacing:0.08em;text-transform:uppercase;}.mceo__loop-track span{display:inline-block;margin:0 1.5rem;}.mceo__loop-track .dot{color:var(--orange);margin:0 0.8rem;}@keyframes mceo-marquee{0%{transform:translateX(0%);}100%{transform:translateX(-50%);}}.mceo__btn{display:inline-block;padding:1.15rem 2.6rem;font-family:'Source Sans 3',sans-serif;font-size:1rem;font-weight:700;text-decoration:none;border-radius:999px;letter-spacing:0.12em;text-transform:uppercase;transition:transform 0.2s ease,box-shadow 0.2s ease;box-shadow:0 6px 22px rgba(220,130,46,0.28);}.mceo__btn--primary{background:var(--dunkelblau);color:var(--creme);}.mceo__btn--primary:hover{transform:translateY(-2px);background:#1f4258;color:var(--creme);}.mceo__btn--orange{background:var(--orange);color:var(--white);}.mceo__btn--orange:hover{transform:translateY(-2px);background:var(--orange-tief);color:var(--white);}.mceo__btn--cream{background:var(--creme);color:var(--dunkelblau);box-shadow:0 6px 22px rgba(0,0,0,0.2);}.mceo__btn--cream:hover{transform:translateY(-2px);color:var(--dunkelblau);}.mceo__btn--outline{background:transparent;color:var(--dunkelblau);border:2px solid var(--dunkelblau);box-shadow:none;}.mceo__btn--outline:hover{background:var(--dunkelblau);color:var(--creme);}.mceo__pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2.5rem;margin-top:3.5rem;}.mceo__pillar-mega{text-align:left;}.mceo__pillar-mega-num{font-family:'Philosopher',serif;font-size:clamp(3.5rem,6vw,5rem);font-weight:900;line-height:1;color:var(--gelb);margin:0 0 1.5rem;}.mceo__pillar-mega-num::after{content:".";color:var(--orange);}.mceo__pillar-mega h3{font-family:'Philosopher',serif;font-size:clamp(1.4rem,2.5vw,1.7rem);font-weight:700;color:var(--creme);margin:0 0 1rem;line-height:1.25;}.mceo__pillar-mega p{font-size:1rem;color:var(--creme);line-height:1.55;opacity:0.92;}.mceo__story{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}.mceo__story-img{width:100%;aspect-ratio:4/5;background-image:url('https://mumlifebalance.ch/wp-content/uploads/2026/05/379-Patricia_Nulmann_mumlifebalance_schoniaugeblick-379-scaled.jpg');background-size:cover;background-position:center;border-radius:4px;}.mceo__story h2 em{font-style:italic;color:var(--orange);}.mceo__story-accent{font-size:0.85rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--orange);font-weight:700;margin:1.5rem 0 1.2rem;}.mceo__story-bullets{list-style:none;padding:0;margin:0;}.mceo__story-bullets li{display:flex;gap:1rem;padding:0.8rem 0;align-items:flex-start;font-size:1.05rem;line-height:1.55;}.mceo__story-bullets .arrow{display:flex;flex-shrink:0;align-items:center;justify-content:center;width:36px;height:36px;border:2px solid var(--dunkelblau);border-radius:50%;color:var(--dunkelblau);font-weight:700;font-size:1.1rem;}.mceo__pillar-row{display:grid;grid-template-columns:100px 1fr;gap:2.5rem;padding:3rem 0;border-bottom:1px solid var(--border);align-items:start;}.mceo__pillar-row:last-child{border-bottom:none;}.mceo__pillar-row-num{font-family:'Philosopher',serif;font-size:clamp(3.5rem,6vw,5rem);font-weight:900;color:var(--orange);line-height:1;}.mceo__pillar-row h3{font-family:'Philosopher',serif;font-size:clamp(1.7rem,3.2vw,2.4rem);color:var(--dunkelblau);margin:0 0 1rem;line-height:1.2;}.mceo__pillar-row-promise{font-family:'Philosopher',serif;font-style:italic;font-size:1.05rem;color:var(--orange);margin-top:1rem;}.mceo__module{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:3rem;margin-bottom:1.5rem;transition:border-color 0.2s,box-shadow 0.2s;}.mceo__module:hover{border-color:var(--orange);box-shadow:0 12px 32px rgba(220,130,46,0.08);}.mceo__module-num{font-family:'Philosopher',serif;font-size:0.85rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--orange);font-weight:700;margin:0 0 0.5rem;}.mceo__module-title{font-family:'Philosopher',serif;font-style:italic;font-size:clamp(1.7rem,3vw,2.2rem);color:var(--dunkelblau);margin:0 0 1.5rem;line-height:1.2;}.mceo__module-bullets{list-style:none;padding:0;margin:0 0 1.5rem;}.mceo__module-bullets li{position:relative;padding:0.5rem 0 0.5rem 1.8rem;font-size:1.05rem;font-weight:600;color:var(--dunkelblau);}.mceo__module-bullets li::before{content:"→";position:absolute;left:0;color:var(--orange);font-weight:700;}.mceo__module-meta{font-size:0.95rem;color:var(--muted);font-style:italic;padding-top:1.2rem;border-top:1px solid var(--border);margin:0;}.mceo__module--bonus{background:linear-gradient(135deg,var(--petrol),var(--dunkelblau));color:var(--creme);border-color:var(--petrol);}.mceo__module--bonus .mceo__module-num{color:var(--gelb);}.mceo__module--bonus .mceo__module-title{color:var(--creme);}.mceo__module--bonus .mceo__module-bullets li{color:var(--creme);}.mceo__module--bonus .mceo__module-bullets li::before{color:var(--gelb);}.mceo__module--bonus .mceo__module-meta{color:rgba(241,236,221,0.7);border-color:rgba(241,236,221,0.2);}.mceo__benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem 2rem;margin:3rem 0;}.mceo__benefit-item h4{font-family:'Philosopher',serif;font-size:1.4rem;color:var(--dunkelblau);margin:0.8rem 0 0.5rem;line-height:1.25;}.mceo__benefit-item p{font-size:1rem;line-height:1.55;margin:0;color:var(--text);}.mceo__benefit-icon{width:60px;height:60px;display:inline-flex;align-items:center;justify-content:center;border:2px solid var(--orange);border-radius:50%;font-family:'Philosopher',serif;font-size:1.6rem;font-weight:700;color:var(--orange);margin-bottom:0.5rem;}.mceo__bonuses{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.3rem;margin:2.5rem 0;}.mceo__bonus-box{background:var(--white);border-left:4px solid var(--orange);padding:1.8rem;border-radius:6px;}.mceo__bonus-box-eyebrow{font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--petrol);font-weight:700;margin:0 0 0.5rem;}.mceo__bonus-box h4{font-family:'Philosopher',serif;font-size:1.3rem;color:var(--dunkelblau);margin:0 0 0.8rem;line-height:1.3;}.mceo__bonus-box p{font-size:0.98rem;line-height:1.55;margin:0 0 0.8rem;}.mceo__bonus-box-value{font-size:0.95rem;color:var(--orange);font-weight:700;margin:0;}.mceo__pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin:3rem 0 2rem;align-items:stretch;}.mceo__price-card{background:var(--white);border-radius:14px;padding:2.5rem 2rem;text-align:center;position:relative;border:2px solid var(--border);display:flex;flex-direction:column;}.mceo__price-card--featured{border-color:var(--orange);transform:scale(1.04);box-shadow:0 12px 36px rgba(220,130,46,0.18);}.mceo__price-card--featured::before{content:"BESTE WAHL";position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--orange);color:var(--white);font-size:0.75rem;font-weight:700;letter-spacing:0.15em;padding:0.4rem 1.2rem;border-radius:99px;white-space:nowrap;}.mceo__price-card-label{font-size:0.8rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--petrol);font-weight:700;margin:0 0 0.5rem;}.mceo__price-card-amount{font-family:'Philosopher',serif;font-size:clamp(2.6rem,6vw,3.6rem);font-weight:700;color:var(--dunkelblau);margin:0.3rem 0;line-height:1;}.mceo__price-card-note{font-size:0.95rem;color:var(--muted);margin:0 0 1.5rem;}.mceo__price-card-meta{font-size:0.92rem;color:var(--muted);margin:0 0 1.2rem;flex-grow:1;}.mceo__faq details{border-bottom:1px solid var(--border);padding:1.6rem 0;}.mceo__faq details[open] summary{color:var(--orange);}.mceo__faq summary{font-family:'Philosopher',serif;font-size:1.25rem;font-weight:700;cursor:pointer;color:var(--dunkelblau);list-style:none;position:relative;padding-right:2.5rem;}.mceo__faq summary::after{content:"+";position:absolute;right:0;top:-4px;font-size:1.8rem;color:var(--orange);font-weight:400;}.mceo__faq details[open] summary::after{content:"−";}.mceo__faq summary::-webkit-details-marker{display:none;}.mceo__faq p{margin:1rem 0 0;font-size:1.05rem;line-height:1.7;}.mceo__about-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1.5rem;margin:2rem 0;padding:1.8rem;background:var(--creme);border-radius:10px;text-align:center;}.mceo__about-stat-num{font-family:'Philosopher',serif;font-size:2.4rem;font-weight:700;color:var(--orange);line-height:1;}.mceo__about-stat-label{font-size:0.9rem;color:var(--muted);margin-top:0.3rem;line-height:1.3;}.mceo__final{text-align:center;}.mceo__final-signature{font-family:'Philosopher',serif;font-style:italic;font-size:1.2rem;color:var(--orange);margin-top:2rem;}@media (max-width:720px){.mceo__section{padding:4rem 1.2rem;}.mceo__hero-content{padding:6rem 1.2rem 1rem;}.mceo__story{grid-template-columns:1fr;gap:2rem;}.mceo__module{padding:2rem 1.5rem;}.mceo__pillar-row{grid-template-columns:1fr;gap:0.8rem;}.mceo__price-card--featured{transform:none;}}</style>
 
-import { createOrUpdatePage } from './wp-api.js';
-
-const CTA_URL = 'https://mumlifebalance.thrivecart.com/mama-ceo/';
-const HERO_PHOTO = 'https://mumlifebalance.ch/wp-content/uploads/2026/05/379-Patricia_Nulmann_mumlifebalance_schoniaugeblick-379-scaled.jpg';
-const STORY_PHOTO = HERO_PHOTO;
-const FEATURED_MEDIA_ID = 3597;
-
-const BRAND_CSS = `
-<style>
-:root { color-scheme: light only; }
-@media (prefers-color-scheme: dark) {
-  .mceo, .mceo * { color-scheme: light only !important; }
-}
-
-/* === WP-Theme-Page-Title verstecken (Patricia-Wunsch 11.5.) === */
-body.page-id-3444 .entry-title,
-body.page-id-3444 .page-title,
-body.page-id-3444 .elementor-page-title,
-body.page-id-3444 .elementor-heading-title,
-body.page-id-3444 .post-title,
-body.page-id-3444 .single-page__title,
-body.page-id-3444 .page-header,
-body.page-id-3444 header.entry-header,
-body.page-id-3444 .breadcrumbs { display: none !important; }
-
-.mceo {
-  --creme: #f1ecdd;
-  --creme-soft: #faf6ec;
-  --gelb: #f5e555;
-  --dunkelblau: #29556d;
-  --orange: #dc822e;
-  --orange-tief: #c06b1e;
-  --petrol: #12828c;
-  --petrol-dark: #0a5e66;
-  --text: #0c1c30;
-  --muted: #5a6b7a;
-  --white: #ffffff;
-  --border: rgba(41, 85, 109, 0.12);
-  font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
-  color: var(--text);
-  line-height: 1.65;
-}
-.mceo *, .mceo *::before, .mceo *::after { box-sizing: border-box; }
-.mceo p { margin: 0 0 1.3rem; font-size: 1.1rem; }
-.mceo strong { color: var(--dunkelblau); font-weight: 700; }
-.mceo em { font-style: italic; }
-.mceo a { color: var(--petrol); }
-
-/* === Typografie === */
-.mceo__display { font-family: 'Philosopher', Georgia, serif; font-size: clamp(3rem, 8vw, 6rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 1.5rem; color: var(--dunkelblau); }
-.mceo__h1 { font-family: 'Philosopher', Georgia, serif; font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 700; line-height: 1.2; margin: 0 0 1.5rem; color: var(--dunkelblau); }
-.mceo__h1 em { color: var(--orange); font-style: italic; }
-.mceo__h2 { font-family: 'Philosopher', Georgia, serif; font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 700; line-height: 1.15; margin: 0 0 1.5rem; color: var(--dunkelblau); }
-.mceo__h2--center { text-align: center; }
-.mceo__h2 em { font-style: italic; color: var(--orange); }
-.mceo__h2-script { font-family: 'Philosopher', Georgia, serif; font-style: italic; font-weight: 400; font-size: 0.7em; display: block; color: var(--orange); }
-.mceo__h3 { font-family: 'Philosopher', Georgia, serif; font-size: clamp(1.4rem, 2.5vw, 1.8rem); font-weight: 700; margin: 0 0 0.8rem; line-height: 1.3; color: var(--dunkelblau); }
-.mceo__eyebrow { font-size: 0.8rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--orange); font-weight: 700; margin: 0 0 1.5rem; }
-.mceo__lead { font-size: clamp(1.15rem, 2vw, 1.4rem); line-height: 1.55; max-width: 720px; margin: 0 auto 2rem; }
-.mceo__quote { font-family: 'Philosopher', Georgia, serif; font-style: italic; font-size: clamp(1.6rem, 3.5vw, 2.4rem); color: var(--orange); text-align: center; margin: 3rem auto; line-height: 1.35; max-width: 800px; }
-
-/* === Sections === */
-.mceo__section { padding: 6rem 1.5rem; position: relative; }
-.mceo__section--white { background: var(--white); }
-.mceo__section--creme { background: var(--creme); }
-.mceo__section--cremesoft { background: var(--creme-soft); }
-.mceo__section--dark { background: var(--dunkelblau); color: var(--creme); }
-.mceo__section--dark .mceo__h1, .mceo__section--dark .mceo__h2, .mceo__section--dark .mceo__h3 { color: var(--creme); }
-.mceo__section--dark p { color: var(--creme); }
-.mceo__section--dark strong { color: var(--orange); }
-.mceo__section--dark .mceo__eyebrow { color: var(--orange); }
-.mceo__section--gradient { background: linear-gradient(180deg, var(--petrol) 0%, var(--petrol-dark) 50%, var(--dunkelblau) 100%); color: var(--creme); }
-.mceo__section--gradient .mceo__h2 { color: var(--creme); }
-.mceo__section--gradient .mceo__h2 em { color: var(--gelb); }
-.mceo__section--gradient .mceo__h2-script { color: var(--gelb); }
-.mceo__section--gradient p { color: var(--creme); }
-.mceo__container { max-width: 1100px; margin: 0 auto; }
-.mceo__container--narrow { max-width: 760px; margin: 0 auto; }
-.mceo__container--center { max-width: 820px; margin: 0 auto; text-align: center; }
-
-/* ============ HERO mit Foto-Background ============ */
-.mceo__hero { position: relative; min-height: 100vh; background-image: url('${HERO_PHOTO}'); background-size: cover; background-position: center 30%; display: flex; flex-direction: column; justify-content: flex-end; padding: 0; overflow: hidden; }
-.mceo__hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(41, 85, 109, 0.15) 0%, rgba(41, 85, 109, 0.45) 60%, rgba(41, 85, 109, 0.85) 100%); z-index: 1; }
-.mceo__hero-content { position: relative; z-index: 2; padding: 8rem 1.5rem 1.5rem; max-width: 1300px; margin: 0 auto; width: 100%; text-align: center; }
-.mceo__hero-eyebrow { font-size: 0.85rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--creme); font-weight: 700; margin: 0 0 1.5rem; opacity: 0.95; }
-.mceo__hero h1 { font-family: 'Philosopher', Georgia, serif; font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 700; line-height: 1.25; color: var(--white); margin: 0 auto 1.2rem; max-width: 920px; text-shadow: 0 2px 18px rgba(0, 0, 0, 0.4); }
-.mceo__hero h1 em { font-style: italic; color: var(--gelb); }
-.mceo__hero-script { font-family: 'Philosopher', Georgia, serif; font-style: italic; font-size: clamp(1.1rem, 2vw, 1.5rem); color: var(--creme); margin: 0 0 1.5rem; }
-.mceo__hero-bar { background: var(--orange); padding: 1.5rem 1rem; margin-top: 2rem; }
-.mceo__hero-mega { font-family: 'Philosopher', Georgia, serif; font-size: clamp(4.5rem, 16vw, 13rem); font-weight: 900; line-height: 0.85; letter-spacing: -0.04em; text-transform: uppercase; margin: 0; color: var(--white); text-align: center; }
-.mceo__hero-trust { background: var(--dunkelblau); color: var(--creme); padding: 1.2rem 1.5rem; text-align: center; font-size: 0.95rem; font-weight: 500; }
-.mceo__hero-trust span { margin: 0 0.6rem; opacity: 0.95; }
-.mceo__hero-trust .dot { color: var(--orange); }
-
-/* ============ LOOP-BANNER ============ */
-.mceo__loop { background: var(--gelb); color: var(--dunkelblau); padding: 1.4rem 0; overflow: hidden; white-space: nowrap; border-top: 4px solid var(--dunkelblau); border-bottom: 4px solid var(--dunkelblau); }
-.mceo__loop-track { display: inline-block; animation: mceo-marquee 28s linear infinite; font-family: 'Philosopher', serif; font-size: clamp(1.2rem, 2.6vw, 1.7rem); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
-.mceo__loop-track span { display: inline-block; margin: 0 1.5rem; }
-.mceo__loop-track .dot { color: var(--orange); margin: 0 0.8rem; }
-@keyframes mceo-marquee { 0% { transform: translateX(0%); } 100% { transform: translateX(-50%); } }
-
-/* ============ Buttons ============ */
-.mceo__btn { display: inline-block; padding: 1.15rem 2.6rem; font-family: 'Source Sans 3', sans-serif; font-size: 1rem; font-weight: 700; text-decoration: none; border-radius: 999px; letter-spacing: 0.12em; text-transform: uppercase; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 6px 22px rgba(220, 130, 46, 0.28); }
-.mceo__btn--primary { background: var(--dunkelblau); color: var(--creme); }
-.mceo__btn--primary:hover { transform: translateY(-2px); background: #1f4258; color: var(--creme); }
-.mceo__btn--orange { background: var(--orange); color: var(--white); }
-.mceo__btn--orange:hover { transform: translateY(-2px); background: var(--orange-tief); color: var(--white); }
-.mceo__btn--cream { background: var(--creme); color: var(--dunkelblau); box-shadow: 0 6px 22px rgba(0, 0, 0, 0.2); }
-.mceo__btn--cream:hover { transform: translateY(-2px); color: var(--dunkelblau); }
-.mceo__btn--outline { background: transparent; color: var(--dunkelblau); border: 2px solid var(--dunkelblau); box-shadow: none; }
-.mceo__btn--outline:hover { background: var(--dunkelblau); color: var(--creme); }
-
-/* ============ Pain-Säulen 01-04 ============ */
-.mceo__pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2.5rem; margin-top: 3.5rem; }
-.mceo__pillar-mega { text-align: left; }
-.mceo__pillar-mega-num { font-family: 'Philosopher', serif; font-size: clamp(3.5rem, 6vw, 5rem); font-weight: 900; line-height: 1; color: var(--gelb); margin: 0 0 1.5rem; }
-.mceo__pillar-mega-num::after { content: "."; color: var(--orange); }
-.mceo__pillar-mega h3 { font-family: 'Philosopher', serif; font-size: clamp(1.4rem, 2.5vw, 1.7rem); font-weight: 700; color: var(--creme); margin: 0 0 1rem; line-height: 1.25; }
-.mceo__pillar-mega p { font-size: 1rem; color: var(--creme); line-height: 1.55; opacity: 0.92; }
-
-/* ============ Story zwei-Spaltig ============ */
-.mceo__story { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-.mceo__story-img { width: 100%; aspect-ratio: 4/5; background-image: url('${STORY_PHOTO}'); background-size: cover; background-position: center; border-radius: 4px; }
-.mceo__story h2 em { font-style: italic; color: var(--orange); }
-.mceo__story-accent { font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange); font-weight: 700; margin: 1.5rem 0 1.2rem; }
-.mceo__story-bullets { list-style: none; padding: 0; margin: 0; }
-.mceo__story-bullets li { display: flex; gap: 1rem; padding: 0.8rem 0; align-items: flex-start; font-size: 1.05rem; line-height: 1.55; }
-.mceo__story-bullets .arrow { display: flex; flex-shrink: 0; align-items: center; justify-content: center; width: 36px; height: 36px; border: 2px solid var(--dunkelblau); border-radius: 50%; color: var(--dunkelblau); font-weight: 700; font-size: 1.1rem; }
-
-/* ============ 5 Säulen (Mama-CEO-Struktur) ============ */
-.mceo__pillar-row { display: grid; grid-template-columns: 100px 1fr; gap: 2.5rem; padding: 3rem 0; border-bottom: 1px solid var(--border); align-items: start; }
-.mceo__pillar-row:last-child { border-bottom: none; }
-.mceo__pillar-row-num { font-family: 'Philosopher', serif; font-size: clamp(3.5rem, 6vw, 5rem); font-weight: 900; color: var(--orange); line-height: 1; }
-.mceo__pillar-row h3 { font-family: 'Philosopher', serif; font-size: clamp(1.7rem, 3.2vw, 2.4rem); color: var(--dunkelblau); margin: 0 0 1rem; line-height: 1.2; }
-.mceo__pillar-row-promise { font-family: 'Philosopher', serif; font-style: italic; font-size: 1.05rem; color: var(--orange); margin-top: 1rem; }
-
-/* ============ Module ============ */
-.mceo__module { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 3rem; margin-bottom: 1.5rem; transition: border-color 0.2s, box-shadow 0.2s; }
-.mceo__module:hover { border-color: var(--orange); box-shadow: 0 12px 32px rgba(220, 130, 46, 0.08); }
-.mceo__module-num { font-family: 'Philosopher', serif; font-size: 0.85rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--orange); font-weight: 700; margin: 0 0 0.5rem; }
-.mceo__module-title { font-family: 'Philosopher', serif; font-style: italic; font-size: clamp(1.7rem, 3vw, 2.2rem); color: var(--dunkelblau); margin: 0 0 1.5rem; line-height: 1.2; }
-.mceo__module-bullets { list-style: none; padding: 0; margin: 0 0 1.5rem; }
-.mceo__module-bullets li { position: relative; padding: 0.5rem 0 0.5rem 1.8rem; font-size: 1.05rem; font-weight: 600; color: var(--dunkelblau); }
-.mceo__module-bullets li::before { content: "→"; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
-.mceo__module-meta { font-size: 0.95rem; color: var(--muted); font-style: italic; padding-top: 1.2rem; border-top: 1px solid var(--border); margin: 0; }
-.mceo__module--bonus { background: linear-gradient(135deg, var(--petrol), var(--dunkelblau)); color: var(--creme); border-color: var(--petrol); }
-.mceo__module--bonus .mceo__module-num { color: var(--gelb); }
-.mceo__module--bonus .mceo__module-title { color: var(--creme); }
-.mceo__module--bonus .mceo__module-bullets li { color: var(--creme); }
-.mceo__module--bonus .mceo__module-bullets li::before { color: var(--gelb); }
-.mceo__module--bonus .mceo__module-meta { color: rgba(241, 236, 221, 0.7); border-color: rgba(241, 236, 221, 0.2); }
-
-/* ============ Benefits 3x2 Grid ============ */
-.mceo__benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem 2rem; margin: 3rem 0; }
-.mceo__benefit-item h4 { font-family: 'Philosopher', serif; font-size: 1.4rem; color: var(--dunkelblau); margin: 0.8rem 0 0.5rem; line-height: 1.25; }
-.mceo__benefit-item p { font-size: 1rem; line-height: 1.55; margin: 0; color: var(--text); }
-.mceo__benefit-icon { width: 60px; height: 60px; display: inline-flex; align-items: center; justify-content: center; border: 2px solid var(--orange); border-radius: 50%; font-family: 'Philosopher', serif; font-size: 1.6rem; font-weight: 700; color: var(--orange); margin-bottom: 0.5rem; }
-
-/* ============ Bonus-Boxen ============ */
-.mceo__bonuses { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.3rem; margin: 2.5rem 0; }
-.mceo__bonus-box { background: var(--white); border-left: 4px solid var(--orange); padding: 1.8rem; border-radius: 6px; }
-.mceo__bonus-box-eyebrow { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--petrol); font-weight: 700; margin: 0 0 0.5rem; }
-.mceo__bonus-box h4 { font-family: 'Philosopher', serif; font-size: 1.3rem; color: var(--dunkelblau); margin: 0 0 0.8rem; line-height: 1.3; }
-.mceo__bonus-box p { font-size: 0.98rem; line-height: 1.55; margin: 0 0 0.8rem; }
-.mceo__bonus-box-value { font-size: 0.95rem; color: var(--orange); font-weight: 700; margin: 0; }
-
-/* ============ Pricing 3-Spalten ============ */
-.mceo__pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin: 3rem 0 2rem; align-items: stretch; }
-.mceo__price-card { background: var(--white); border-radius: 14px; padding: 2.5rem 2rem; text-align: center; position: relative; border: 2px solid var(--border); display: flex; flex-direction: column; }
-.mceo__price-card--featured { border-color: var(--orange); transform: scale(1.04); box-shadow: 0 12px 36px rgba(220, 130, 46, 0.18); }
-.mceo__price-card--featured::before { content: "BESTE WAHL"; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--orange); color: var(--white); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; padding: 0.4rem 1.2rem; border-radius: 99px; white-space: nowrap; }
-.mceo__price-card-label { font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--petrol); font-weight: 700; margin: 0 0 0.5rem; }
-.mceo__price-card-amount { font-family: 'Philosopher', serif; font-size: clamp(2.6rem, 6vw, 3.6rem); font-weight: 700; color: var(--dunkelblau); margin: 0.3rem 0; line-height: 1; }
-.mceo__price-card-note { font-size: 0.95rem; color: var(--muted); margin: 0 0 1.5rem; }
-.mceo__price-card-meta { font-size: 0.92rem; color: var(--muted); margin: 0 0 1.2rem; flex-grow: 1; }
-
-/* ============ FAQ ============ */
-.mceo__faq details { border-bottom: 1px solid var(--border); padding: 1.6rem 0; }
-.mceo__faq details[open] summary { color: var(--orange); }
-.mceo__faq summary { font-family: 'Philosopher', serif; font-size: 1.25rem; font-weight: 700; cursor: pointer; color: var(--dunkelblau); list-style: none; position: relative; padding-right: 2.5rem; }
-.mceo__faq summary::after { content: "+"; position: absolute; right: 0; top: -4px; font-size: 1.8rem; color: var(--orange); font-weight: 400; }
-.mceo__faq details[open] summary::after { content: "−"; }
-.mceo__faq summary::-webkit-details-marker { display: none; }
-.mceo__faq p { margin: 1rem 0 0; font-size: 1.05rem; line-height: 1.7; }
-
-/* ============ Über mich Stats ============ */
-.mceo__about-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1.5rem; margin: 2rem 0; padding: 1.8rem; background: var(--creme); border-radius: 10px; text-align: center; }
-.mceo__about-stat-num { font-family: 'Philosopher', serif; font-size: 2.4rem; font-weight: 700; color: var(--orange); line-height: 1; }
-.mceo__about-stat-label { font-size: 0.9rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.3; }
-
-/* ============ Final-CTA ============ */
-.mceo__final { text-align: center; }
-.mceo__final-signature { font-family: 'Philosopher', serif; font-style: italic; font-size: 1.2rem; color: var(--orange); margin-top: 2rem; }
-
-/* ============ Mobile ============ */
-@media (max-width: 720px) {
-  .mceo__section { padding: 4rem 1.2rem; }
-  .mceo__hero-content { padding: 6rem 1.2rem 1rem; }
-  .mceo__story { grid-template-columns: 1fr; gap: 2rem; }
-  .mceo__module { padding: 2rem 1.5rem; }
-  .mceo__pillar-row { grid-template-columns: 1fr; gap: 0.8rem; }
-  .mceo__price-card--featured { transform: none; }
-}
-</style>
-`;
-
-const content = `
-${BRAND_CSS}
 <div class="mceo">
 
 <!-- ============ HERO ============ -->
@@ -231,7 +12,7 @@ ${BRAND_CSS}
       Lerne, wie du als Mama mit wenig Zeit <em>genug aus deinem Business holst</em> — um nicht mehr auswärts arbeiten zu gehen.
     </h1>
     <p class="mceo__hero-script">Mit Wochenrhythmus, Strukturen und KI als Hebel.</p>
-    <a href="${CTA_URL}" class="mceo__btn mceo__btn--orange" target="_blank" rel="noopener">
+    <a href="https://mumlifebalance.thrivecart.com/mama-ceo/" class="mceo__btn mceo__btn--orange" target="_blank" rel="noopener">
       Platz sichern · 333 CHF
     </a>
   </div>
@@ -282,7 +63,7 @@ ${BRAND_CSS}
       </div>
     </div>
     <p style="text-align:center; margin-top:3.5rem;">
-      <a href="${CTA_URL}" class="mceo__btn mceo__btn--cream" target="_blank" rel="noopener">
+      <a href="https://mumlifebalance.thrivecart.com/mama-ceo/" class="mceo__btn mceo__btn--cream" target="_blank" rel="noopener">
         Komm rein · 333 CHF
       </a>
     </p>
@@ -463,7 +244,7 @@ ${BRAND_CSS}
         <p class="mceo__price-card-amount">333<span style="font-size:1.5rem; vertical-align:top;">CHF</span></p>
         <p class="mceo__price-card-note">Anmeldung schliesst am 31.5. 23:59</p>
         <p class="mceo__price-card-meta">Komplettes Programm + alle 3 Boni + 4 Live-Termine + Telegram-Gruppe</p>
-        <a href="${CTA_URL}" class="mceo__btn mceo__btn--orange" target="_blank" rel="noopener" style="margin-top:auto;">Jetzt sichern</a>
+        <a href="https://mumlifebalance.thrivecart.com/mama-ceo/" class="mceo__btn mceo__btn--orange" target="_blank" rel="noopener" style="margin-top:auto;">Jetzt sichern</a>
       </div>
       <div class="mceo__price-card">
         <p class="mceo__price-card-label">Runde 2 · Herbst 2026</p>
@@ -594,7 +375,7 @@ ${BRAND_CSS}
     <p style="color:var(--creme); font-size:1.2rem; margin:2rem 0;">
       Wenn du das hier zu Ende gelesen hast — <em style="color:var(--orange);">du bist die richtige Frau für diese Runde.</em>
     </p>
-    <a href="${CTA_URL}" class="mceo__btn mceo__btn--cream" target="_blank" rel="noopener">
+    <a href="https://mumlifebalance.thrivecart.com/mama-ceo/" class="mceo__btn mceo__btn--cream" target="_blank" rel="noopener">
       Komm rein →
     </a>
     <p class="mceo__final-signature">„Funktionieren war gestern."<br><span style="font-size:0.9rem; opacity:0.7;">— Patricia</span></p>
@@ -602,70 +383,3 @@ ${BRAND_CSS}
 </section>
 
 </div>
-`;
-
-const SEO_TITLE = 'Mama-CEO: KI-Programm für Mamas im Network · 333 CHF';
-const SEO_DESC = 'Lerne, wie du als Mama mit wenig Zeit genug aus deinem Business holst — um nicht mehr auswärts arbeiten zu gehen. 8 Wochen Live-Programm in 5 Säulen. Start 1. Juni 2026 · 15 Plätze.';
-const SEO_FOCUS_KEYWORD = 'Mama-CEO';
-const HERO_ALT = 'Mama-CEO Patricia Nulmann · Live-Programm für Mamas im Network mit KI-Mitarbeitern';
-
-// wpautop fix: WordPress wickelt CSS in <p>-Tags wenn Doppel-Newlines drin sind.
-// Lösung: alle Doppel-Newlines in <style>-Block raus (CSS minimal komprimieren).
-const fixedContent = content.replace(/<style>([\s\S]*?)<\/style>/g, (match, css) => {
-  // CSS-Comments raus + alle Newlines raus → CSS bleibt funktional, wpautop findet nichts
-  const minified = css
-    .replace(/\/\*[\s\S]*?\*\//g, '') // /* ... */ raus
-    .replace(/\s+/g, ' ')              // Mehrfach-Whitespace zu single space
-    .replace(/\s*([{};:,>~+])\s*/g, '$1') // Whitespace um Punctuation raus
-    .trim();
-  return '<style>' + minified + '</style>';
-});
-
-const result = await createOrUpdatePage({
-  title: 'Mama-CEO · Live-Programm für Mamas im Network',
-  slug: 'mama-ceo',
-  content: fixedContent.trim(),
-  status: 'draft',
-  excerpt: SEO_DESC,
-  featured_media: FEATURED_MEDIA_ID,
-  meta: {
-    rank_math_focus_keyword: SEO_FOCUS_KEYWORD,
-    rank_math_title: SEO_TITLE,
-    rank_math_description: SEO_DESC,
-    _yoast_wpseo_focuskw: SEO_FOCUS_KEYWORD,
-    _yoast_wpseo_title: SEO_TITLE,
-    _yoast_wpseo_metadesc: SEO_DESC,
-  },
-});
-
-console.log('\n✅ Page aktualisiert:');
-console.log(`   ID:     ${result.id}`);
-console.log(`   Title:  ${result.title?.rendered || result.title}`);
-console.log(`   Slug:   ${result.slug}`);
-console.log(`   Status: ${result.status}`);
-console.log(`   Link:   ${result.link}`);
-console.log(`   Featured Media: ${result.featured_media}`);
-console.log('\n🔍 SEO-Meta versucht (Rank Math + Yoast):');
-console.log(`   Focus-Keyword: ${SEO_FOCUS_KEYWORD}`);
-console.log(`   SEO-Title: ${SEO_TITLE}`);
-console.log(`   Meta-Description: ${SEO_DESC.length} Zeichen`);
-console.log('\n📝 Patricia: WP-Admin → Pages → Mama-CEO → Preview + Rank-Math-Score checken.\n');
-
-// Image Alt-Tag setzen für Featured Media
-try {
-  const altUpdate = await fetch(`https://mumlifebalance.ch/wp-json/wp/v2/media/${FEATURED_MEDIA_ID}`, {
-    method: 'POST',
-    headers: {
-      'Authorization': 'Basic ' + Buffer.from(`${process.env.WP_USER}:${process.env.WP_APP_PASSWORD}`).toString('base64'),
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ alt_text: HERO_ALT }),
-  });
-  if (altUpdate.ok) {
-    console.log(`✅ Alt-Tag gesetzt für Bild ${FEATURED_MEDIA_ID}: "${HERO_ALT}"`);
-  } else {
-    console.log(`⚠️ Alt-Tag konnte nicht gesetzt werden (Status ${altUpdate.status})`);
-  }
-} catch (e) {
-  console.log(`⚠️ Alt-Tag-Update fehlgeschlagen: ${e.message}`);
-}
