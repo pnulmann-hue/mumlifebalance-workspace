@@ -410,10 +410,9 @@ def generate_briefing(modus: str, kontext: dict[str, Any],
         import traceback
         tb = traceback.format_exc()
         logger.error(f"Claude-API-Fehler:\n{tb}")
-        # ALLE Frames fuer Telegram-Output (bis Telegram-Limit 4000)
-        # damit wir sehen WER den problematischen Header setzt
-        short_tb = tb[-3500:] if len(tb) > 3500 else tb
-        return {"ok": False, "error": f"{type(e).__name__}: {e}\n\nFULL TRACE:\n{short_tb}"}
+        # Kompakter Telegram-Push: letzte 4 Frames, max ~1200 Zeichen
+        short_tb = "\n".join(tb.splitlines()[-8:])
+        return {"ok": False, "error": f"{type(e).__name__}: {e}\n\n{short_tb}"}
 
     text = response.content[0].text if response.content else ""
 
