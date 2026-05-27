@@ -87,7 +87,7 @@ tags: [funnel, content, story, doterra]
 > Das ist meine Erfahrung. Keine medizinische Empfehlung. Aber das hat bei mir den Unterschied gemacht:
 >
 > **1. Viel mehr Protein. Wirklich viel mehr.**
-> 30 Gramm pro Mahlzeit. Plus Zwischensnacks. Insgesamt 1.3 bis 1.4 Gramm pro Kilo Körpergewicht. Klingt nach viel — ist es auch. Wir Frauen essen massiv zu wenig Protein, vor allem in der zweiten Zyklushälfte. Und Protein bremst den Heisshunger, hält die Muskelmasse, stabilisiert den Blutzucker. Bei mir war das der wichtigste Hebel.
+> 30 Gramm pro Mahlzeit. Plus Zwischensnacks. Insgesamt 1.5 bis 2.0 Gramm pro Kilo Körpergewicht. Klingt nach viel — ist es auch. Wir Frauen essen massiv zu wenig Protein, vor allem in der zweiten Zyklushälfte. Und Protein bremst den Heisshunger, hält die Muskelmasse, stabilisiert den Blutzucker. Bei mir war das der wichtigste Hebel.
 >
 > **2. Gezieltes Krafttraining. 3 bis 4 mal pro Woche.**
 > Nicht Laufen. Nicht Yoga zum Wohlfühlen. Sondern Krafttraining mit Gewichten. Ab 35 verlieren wir Muskelmasse, jedes Jahr ein bisschen mehr. Muskeln sind der Ofen, der den Hormonstoffwechsel am Laufen hält. Wer das ignoriert, kämpft gegen die eigene Biologie.
@@ -114,7 +114,7 @@ tags: [funnel, content, story, doterra]
 >
 > Patricia 💛
 >
-> *PS: Wenn du wissen willst, wie meine 4 Säulen heute aussehen (Ernährung · Nährstoffe · Bewegung · Schlaf), schreib mir „Säulen" zurück. Dann schick ich dir das ausführliche PDF dazu.*
+> *PS: Wenn du nicht alleine probieren willst, schreib mir „Energie" zurück. Dann erzähl ich dir, wie meine Energie-Kur für Mamas aufgebaut ist.*
 
 ---
 
@@ -161,8 +161,6 @@ Industriezucker raus (Süssgetränke, Fertigprodukte, Schokolade als Tages-Gewoh
 **Wenn du gerade denkst „Ja, das bin ich" — hier sind drei Wege:**
 
 🟦 **Nur die Story behalten.** Speichere dir dieses Dokument. Lies es nochmal in der Nacht, wo du wieder um drei wach wirst. Und fang mit Schritt 1 an: der Entscheidung.
-
-🟧 **Tiefer einsteigen — die 4 Säulen.** Ich hab ein ausführliches PDF gemacht mit allen vier Säulen, die mir geholfen haben (Ernährung · Nährstoffe · Bewegung · Schlaf). Schreib mir „Säulen" auf Instagram zurück — dann schick ich dir das.
 
 🟩 **Mit mir den Weg gehen — die Energie-Kur.** Wenn du nicht alleine probieren willst, sondern Begleitung suchst (Hormontest verstehen, Ernährung umstellen, Krafttraining starten, Stress runter): das ist genau das, was ich in meiner Energie-Kur mit Mamas mache. Schreib mir „Energie" zurück, dann bekommst du die Details.
 
