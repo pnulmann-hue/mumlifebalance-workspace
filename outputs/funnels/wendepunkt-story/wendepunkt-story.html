@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<title>WENDEPUNKT — Wo bei mir Schritt 1 war · Patricia Ulmann</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --petrol: #12828c;
+    --teal: #29556d;
+    --creme: #f1ecdd;
+    --orange: #dc822e;
+    --black: #1a1a1a;
+    --white: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    font-family: 'Source Sans 3', -apple-system, sans-serif;
+    color: var(--teal);
+    background: var(--creme);
+    font-size: 11.5pt;
+    line-height: 1.55;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  h1, h2, h3, .display { font-family: 'Philosopher', Georgia, serif; font-weight: 700; }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    padding: 22mm 22mm 28mm 22mm;
+    page-break-after: always;
+    break-after: page;
+    background: var(--creme);
+    position: relative;
+    overflow: hidden;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+
+  .page-number {
+    position: absolute;
+    bottom: 12mm;
+    right: 22mm;
+    font-size: 9pt;
+    color: var(--petrol);
+    opacity: 0.6;
+    letter-spacing: 0.1em;
+  }
+  .footer-brand {
+    position: absolute;
+    bottom: 12mm;
+    left: 22mm;
+    font-size: 9pt;
+    color: var(--petrol);
+    opacity: 0.6;
+    letter-spacing: 0.05em;
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+  }
+
+  /* === COVER === */
+  .cover {
+    background: var(--petrol);
+    color: var(--creme);
+    padding: 28mm 24mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cover .top-mark {
+    font-size: 10pt;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+  .cover .pre-title {
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    font-size: 16pt;
+    margin-bottom: 8mm;
+    opacity: 0.85;
+  }
+  .cover h1 {
+    font-size: 56pt;
+    line-height: 0.95;
+    color: var(--creme);
+    margin-bottom: 8mm;
+    letter-spacing: -0.01em;
+  }
+  .cover h1 .accent { color: var(--orange); }
+  .cover .sub {
+    font-size: 17pt;
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    line-height: 1.35;
+    opacity: 0.9;
+    max-width: 140mm;
+  }
+  .cover .divider {
+    width: 60mm;
+    height: 2px;
+    background: var(--orange);
+    margin: 10mm 0;
+  }
+  .cover .by {
+    font-size: 11pt;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+  .cover .by strong { color: var(--orange); letter-spacing: 0.08em; font-family: 'Philosopher', serif; font-style: italic; text-transform: none; font-weight: 700; font-size: 14pt; }
+
+  /* === STANDARD PAGES === */
+  .kicker {
+    font-size: 10pt;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 6mm;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 32pt;
+    line-height: 1.05;
+    color: var(--petrol);
+    margin-bottom: 8mm;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 18pt;
+    color: var(--petrol);
+    margin-top: 7mm;
+    margin-bottom: 3mm;
+  }
+  p { margin-bottom: 4mm; max-width: 165mm; }
+  p.lead { font-size: 14pt; line-height: 1.45; color: var(--teal); font-family: 'Philosopher', serif; font-style: italic; margin-bottom: 6mm; }
+
+  .pull {
+    border-left: 3px solid var(--orange);
+    padding: 4mm 0 4mm 8mm;
+    margin: 6mm 0;
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    font-size: 15pt;
+    line-height: 1.4;
+    color: var(--petrol);
+  }
+
+  .step {
+    background: var(--white);
+    border-radius: 3mm;
+    padding: 7mm 8mm;
+    margin-bottom: 5mm;
+    box-shadow: 0 0 0 1px rgba(18,130,140,0.08);
+  }
+  .step .num {
+    display: inline-block;
+    width: 11mm;
+    height: 11mm;
+    border-radius: 50%;
+    background: var(--orange);
+    color: var(--white);
+    text-align: center;
+    line-height: 11mm;
+    font-family: 'Philosopher', serif;
+    font-weight: 700;
+    font-size: 16pt;
+    margin-right: 4mm;
+    vertical-align: middle;
+  }
+  .step h3 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 16pt;
+  }
+  .step p { margin-top: 3mm; margin-bottom: 0; }
+
+  .faq-item { margin-bottom: 5mm; }
+  .faq-q {
+    font-family: 'Philosopher', serif;
+    font-weight: 700;
+    color: var(--petrol);
+    font-size: 13pt;
+    margin-bottom: 1.5mm;
+  }
+  .faq-a { color: var(--teal); }
+
+  .cta-box {
+    background: var(--petrol);
+    color: var(--creme);
+    padding: 8mm 10mm;
+    border-radius: 3mm;
+    margin-bottom: 5mm;
+  }
+  .cta-box .dot {
+    display: inline-block;
+    width: 4mm;
+    height: 4mm;
+    border-radius: 50%;
+    background: var(--orange);
+    margin-right: 3mm;
+    vertical-align: middle;
+  }
+  .cta-box h3 { color: var(--creme); margin: 0 0 2mm 0; display: inline-block; vertical-align: middle; font-size: 15pt; }
+  .cta-box p { color: var(--creme); opacity: 0.9; margin: 0; max-width: none; }
+
+  .compliance {
+    background: rgba(18,130,140,0.08);
+    border-radius: 2mm;
+    padding: 5mm 7mm;
+    font-size: 9.5pt;
+    font-style: italic;
+    color: var(--teal);
+    margin-top: 8mm;
+  }
+
+  .end-cover {
+    background: var(--petrol);
+    color: var(--creme);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .end-cover h2 {
+    color: var(--creme);
+    font-size: 44pt;
+    line-height: 1.05;
+    margin-bottom: 6mm;
+    max-width: 150mm;
+  }
+  .end-cover .accent { color: var(--orange); }
+  .end-cover p {
+    color: var(--creme);
+    opacity: 0.9;
+    max-width: 140mm;
+    font-size: 14pt;
+    margin-bottom: 4mm;
+    text-align: center;
+  }
+  .end-cover .divider {
+    width: 40mm;
+    height: 2px;
+    background: var(--orange);
+    margin: 8mm 0;
+  }
+  .end-cover .signature {
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    font-size: 22pt;
+    color: var(--orange);
+    margin-top: 6mm;
+  }
+  .end-cover .footer-brand,
+  .cover .footer-brand,
+  .end-cover .page-number,
+  .cover .page-number { color: var(--creme); opacity: 0.7; }
+</style>
+</head>
+<body>
+
+<!-- === SEITE 1 — COVER === -->
+<section class="page cover">
+  <div>
+    <div class="top-mark">Mum Life Balance · 0€ Story-Guide</div>
+  </div>
+  <div>
+    <div class="pre-title">Meine Geschichte mit Vormenopause mit 36</div>
+    <h1>WENDE&shy;<span class="accent">PUNKT</span></h1>
+    <div class="sub">Wo bei mir Schritt 1 war — und die 4 Sachen, die wirklich was bewegt haben.</div>
+    <div class="divider"></div>
+    <div class="by">von <strong>Patricia Ulmann</strong></div>
+  </div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</section>
+
+<!-- === SEITE 2 — HI DU === -->
+<section class="page">
+  <div class="kicker">Hey du —</div>
+  <h2>Danke, dass du WENDEPUNKT geschrieben hast.</h2>
+  <p class="lead">Das heisst für mich: irgendwas in dem Post hat dich getroffen. Wahrscheinlich kennst du das — diese Nacht, wo du um drei wach wirst, schwitzt, und denkst „das ist sicher nur Stress."</p>
+  <p>Ich erzähl dir hier kurz, wo bei mir Schritt 1 war. Damit du siehst: das hier ist machbar. Und du bist nicht allein.</p>
+  <p>Diese Geschichte ist nicht hochglanz. Sie ist ehrlich. Sie hat eine peinliche Szene (Haare auf einem fremden Hotelzimmer-Boden), einen Arzt-Holzweg, einen Freundin-Tipp, eine Diagnose mit 36 — und vier konkrete Sachen, die mir wirklich geholfen haben.</p>
+  <p>Wenn du am Schluss denkst „Ja, das bin ich" — dann hast du schon den wichtigsten Schritt gemacht. Den Schritt vom „das ist halt so" zum „ich änder das."</p>
+  <p class="lead" style="margin-top: 8mm;">Setz dich in Ruhe hin. Mach dir einen Tee. Und lies.</p>
+  <p style="margin-top: 6mm; font-family: 'Philosopher', serif; font-style: italic; color: var(--petrol); font-size: 14pt;">— Patricia</p>
+  <div class="footer-brand">Patricia Ulmann · Mum Life Balance</div>
+  <div class="page-number">02</div>
+</section>
+
+<!-- === SEITE 3 — CONVENTION-SZENE === -->
+<section class="page">
+  <div class="kicker">Mai 2025 · Convention · geteiltes Zimmer</div>
+  <h2>Die Haare auf dem Hotelzimmer-Boden.</h2>
+  <p>Ich war an einer Convention. Hab das Zimmer mit anderen Frauen geteilt. Und jedes Mal beim Haare-Bürsten — krass viele Haare auf dem Boden.</p>
+  <p>Es war mir so peinlich. Und ich fand es so eklig.</p>
+  <p class="pull">Zuhause war's mir nie aufgefallen. Du brauchst manchmal die Aussenperspektive, damit du siehst, was dein Körper schon längst schreit.</p>
+  <p>Dazu kam: gelbe Augen (mein Mann hat gesagt „da stimmt irgendwas nicht"), seit Monaten schlecht geschlafen — 2-3x pro Woche um 1-2 Uhr wach, nicht mehr eingeschlafen. Ein Ekzem im Ohr, das nicht weggehen wollte. Und diese Müdigkeit, die du dir nicht wegschlafen kannst.</p>
+  <p style="font-size: 16pt; font-family: 'Philosopher', serif; color: var(--orange); margin-top: 8mm;">Ich war 36.</p>
+  <div class="footer-brand">Patricia Ulmann · Mum Life Balance</div>
+  <div class="page-number">03</div>
+</section>
+
+<!-- === SEITE 4 — ARZT-HOLZWEG === -->
+<section class="page">
+  <div class="kicker">Der erste Versuch</div>
+  <h2>Beim Arzt — und der erste Holzweg.</h2>
+  <p>Ich bin zum Arzt. Leberwerte ok. Sein Tipp: „Setz die Nahrungsergänzung ab, vielleicht ist es das."</p>
+  <p>Ich hab's gemacht. Wurde nicht besser.</p>
+  <p>Also war's das schon mal nicht.</p>
+
+  <h3 style="margin-top: 10mm;">Eine Freundin hat den Tipp gegeben, nicht der Arzt.</h3>
+  <p>Eine Freundin (nicht der Arzt) hat gesagt: „Mach mal einen Hormontest."</p>
+  <p>Diagnose: tiefer Progesteron, hoher Vitaminmangel. <strong style="color: var(--orange); font-family: 'Philosopher', serif;">Vormenopause mit 36.</strong></p>
+  <p>Niemand hatte mir je gesagt, dass das so früh anfangen kann. Ich dachte: Wechseljahre, das ist mit 50. Mit 36 bist du noch jung, oder?</p>
+  <p class="pull">Spoiler: Hormone fangen früher an zu kippen, als die Frauenmagazine schreiben. Und je länger du es nicht weisst, desto länger redet dein Körper umsonst.</p>
+  <div class="footer-brand">Patricia Ulmann · Mum Life Balance</div>
+  <div class="page-number">04</div>
+</section>
+
+<!-- === SEITE 5 — SCHRITT 1 === -->
+<section class="page">
+  <div class="kicker">Schritt 1 — der eigentliche Wendepunkt</div>
+  <h2>Es fing nicht mit einer Pille an. Es fing mit einer Entscheidung an.</h2>
+  <p>Ich sag's dir ehrlich: ich hab nicht eine Pille genommen und alles war gut. Eine Pille heilt deine Erschöpfung nicht.</p>
+  <p>Schritt 1 war eine <strong>Entscheidung</strong>.</p>
+  <p class="pull" style="font-size: 18pt;">Die Entscheidung, es nicht mehr einfach hinzunehmen.</p>
+  <p>Nicht mehr „naja, ich bin halt müde". Nicht mehr „die Phase geht vorbei". Nicht mehr warten, bis es ganz schlimm wird.</p>
+  <p>Sondern: <strong>100% Selbstverantwortung.</strong> Was kann ICH ändern.</p>
+  <p style="margin-top: 8mm;">Das war der Moment, wo aus „funktionieren" wieder „leben" wurde.</p>
+  <p style="font-family: 'Philosopher', serif; font-style: italic; color: var(--petrol); font-size: 14pt; margin-top: 8mm;">Wenn du diesen Schritt heute machst — egal wie klein — bist du schon nicht mehr da, wo du gestern warst.</p>
+  <div class="footer-brand">Patricia Ulmann · Mum Life Balance</div>
+  <div class="page-number">05</div>
+</section>
+
+<!-- === SEITE 6 — 4 SACHEN (Intro + 1+2) === -->
+<section class="page">
+  <div class="kicker">Die 4 Sachen, die bei mir wirklich was bewegt haben</div>
+  <h2>Was ich konkret geändert habe.</h2>
+  <p class="lead">Das ist meine Erfahrung. Keine medizinische Empfehlung. Aber das hat bei mir den Unterschied gemacht.</p>
+
+  <div class="step">
+    <span class="num">1</span>
+    <h3>Viel mehr Protein. Wirklich viel mehr.</h3>
+    <p><strong>30 Gramm pro Mahlzeit. Plus Zwischensnacks. Insgesamt 1.3 bis 1.4 Gramm pro Kilo Körpergewicht.</strong> Klingt nach viel — ist es auch. Wir Frauen essen massiv zu wenig Protein, vor allem in der zweiten Zyklushälfte. Protein bremst den Heisshunger, hält die Muskelmasse, stabilisiert den Blutzucker. Bei mir war das der wichtigste Hebel.</p>
+  </div>
+
+  <div class="step">
+    <span class="num">2</span>
+    <h3>Gezieltes Krafttraining. 3 bis 4 mal pro Woche.</h3>
+    <p>Nicht Laufen. Nicht Yoga zum Wohlfühlen. Sondern <strong>Krafttraining mit Gewichten.</strong> Ab 35 verlieren wir Muskelmasse, jedes Jahr ein bisschen mehr. Muskeln sind der Ofen, der den Hormonstoffwechsel am Laufen hält. Wer das ignoriert, kämpft gegen die eigene Biologie.</p>
+  </div>
+
+  <div class="footer-brand">Patricia Ulmann · Mum Life Balance</div>
+  <div class="page-number">06</div>
+</section>
+
+<!-- === SEITE 7 — 4 SACHEN (3+4) + 12 Monate === -->
+<section class="page">
+  <div class="step">
+    <span class="num">3</span>
+    <h3>Zucker massiv reduzieren.</h3>
+    <p>Nicht „weniger Schokolade". Sondern <strong>wirklich runterfahren.</strong> Zucker hebt Stresshormone, raubt Nährstoffe, hält dich in der Heisshunger-Schleife. Bei mir war das der unangenehmste Schritt — und der mit dem schnellsten Effekt aufs Schlafen.</p>
+  </div>
+
+  <div class="step">
+    <span class="num">4</span>
+    <h3>8.000 Schritte täglich. Egal wie.</h3>
+    <p>Spaziergang, Treppenhaus, mit den Kindern raus. <strong>Bewegung ist kein „Sport". Bewegung ist Grundausstattung.</strong> Wer den ganzen Tag sitzt und abends den Stresshormon-Pegel nicht runter bekommt, schläft auch nicht.</p>
+  </div>
+
+  <h3 style="margin-top: 10mm;">Heilung braucht Zeit. Bei mir hat's 12 Monate gedauert.</h3>
+  <p>Schlaf — heute zu 100% gelöst. Haare — deutlich besser. Energie — eine andere Welt. Ekzem — heilt noch.</p>
+  <p>Aber jeder Schritt hat sich gelohnt. Und der erste Schritt war nicht das Protein. Nicht das Training. Nicht die Hormontests.</p>
+  <p class="pull">Der erste Schritt war: „Ich nehme das nicht mehr hin."</p>
+  <div class="footer-brand">Patricia Ulmann · Mum Life Balance</div>
+  <div class="page-number">07</div>
+</section>
+
+<!-- === SEITE 8 — FAQ === -->
+<section class="page">
+  <div class="kicker">Häufige Fragen</div>
+  <h2>Was Mamas mich danach fragen.</h2>
+
+  <div class="faq-item">
+    <div class="faq-q">Bin ich mit 38 / 40 / 42 nicht zu jung für Wechseljahre?</div>
+    <div class="faq-a">Nein. Die Vor-Phase (Vormenopause / Perimenopause) startet bei vielen Frauen schon mit Mitte 30. Niemand erzählt das. Deine Hormone fangen früher an zu schwanken, als du es im Kopf hast.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Muss ich wirklich Hormone testen lassen?</div>
+    <div class="faq-a">Ich hätte ohne Hormontest nicht gewusst, dass mein Progesteron im Keller war. Ich konnte es ja nicht spüren — nur die Folgen (Schlaf, Haare, Stimmung). Wenn du Klarheit willst, ist ein Test eine gute Idee. Sprich mit einer Ärztin, die sich mit Frauenhormonen auskennt — nicht jeder Hausarzt ist da spezialisiert.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Reicht nicht, wenn ich Nahrungsergänzung nehme?</div>
+    <div class="faq-a">Bei mir hat das allein nicht gereicht. Ehrlich. Eine Pille heilt deine Erschöpfung nicht. Du musst auch an der Ernährung, an der Bewegung und am Stresslevel drehen — sonst bleibst du in der Schleife.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Aber 30g Protein pro Mahlzeit — wie soll das gehen?</div>
+    <div class="faq-a">Frühstück: 2 Eier + Quark + ein Löffel Hafer. Mittag: Linsen + Hähnchen oder Tofu + Gemüse. Abend: Lachs oder Hüttenkäse mit Brot. Snacks: Skyr, hartgekochtes Ei, Proteinshake. Das ist Übung — nach 2 Wochen läuft's automatisch.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Krafttraining — geht das auch zuhause?</div>
+    <div class="faq-a">Ja. Du brauchst kein Studio. Kettlebell + Mini-Hantel + Matte zuhause reichen. Wichtig: WIRKLICH anstrengend. 30 Minuten 3-4× pro Woche, wenn du wirklich rangehst.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Und Zucker — wie streng?</div>
+    <div class="faq-a">Industriezucker raus (Süssgetränke, Fertigprodukte, Schokolade als Tages-Gewohnheit). Obst und Honig bleiben drin. Mein Tipp: 4 Wochen wirklich konsequent. Du merkst den Unterschied schon nach 7-10 Tagen am Schlaf.</div>
+  </div>
+
+  <div class="footer-brand">Patricia Ulmann · Mum Life Balance</div>
+  <div class="page-number">08</div>
+</section>
+
+<!-- === SEITE 9 — CTA + Compliance === -->
+<section class="page">
+  <div class="kicker">Wenn du jetzt denkst „ja, das bin ich"</div>
+  <h2>Drei Wege, wie es weiter gehen kann.</h2>
+
+  <div class="cta-box">
+    <span class="dot"></span><h3>Nur die Story behalten.</h3>
+    <p>Speicher dir dieses PDF. Lies es nochmal in der Nacht, wo du wieder um drei wach wirst. Und fang mit Schritt 1 an: der Entscheidung.</p>
+  </div>
+
+  <div class="cta-box">
+    <span class="dot"></span><h3>Tiefer einsteigen — die 4 Säulen.</h3>
+    <p>Ich hab ein ausführliches PDF mit allen vier Säulen gemacht, die mir geholfen haben (Ernährung · Nährstoffe · Bewegung · Schlaf). Schreib mir „Säulen" auf Instagram zurück — dann schick ich dir das.</p>
+  </div>
+
+  <div class="cta-box">
+    <span class="dot"></span><h3>Mit mir den Weg gehen — die Energie-Kur.</h3>
+    <p>Wenn du nicht alleine probieren willst, sondern Begleitung suchst (Hormontest verstehen, Ernährung umstellen, Krafttraining starten, Stress runter): das ist genau das, was ich mit Mamas mache. Schreib mir „Energie" zurück — dann bekommst du die Details.</p>
+  </div>
+
+  <p style="margin-top: 8mm; font-family: 'Philosopher', serif; font-style: italic; color: var(--petrol); font-size: 13pt;">Du musst nichts entscheiden. Heute reicht: gelesen. Nachgedacht. Vielleicht ein Glas Wasser ans Bett gestellt für die nächste Nacht.</p>
+
+  <div class="compliance">
+    <strong>Wichtig:</strong> Das hier ist meine Geschichte, keine medizinische Empfehlung. Wenn du gesundheitliche Symptome hast, sprich mit einer Ärztin deines Vertrauens. Hormontests, Blutwerte und individuelle Diagnostik gehören in ärztliche Hände.
+  </div>
+
+  <div class="footer-brand">Patricia Ulmann · Mum Life Balance</div>
+  <div class="page-number">09</div>
+</section>
+
+<!-- === SEITE 10 — END COVER === -->
+<section class="page end-cover">
+  <div>
+    <h2>Du bist <span class="accent">nicht</span><br>falsch gebaut.</h2>
+    <div class="divider"></div>
+    <p>Dein Körper redet mit dir.<br>Hör hin. Schritt für Schritt.</p>
+    <div class="signature">Patricia 💛</div>
+  </div>
+  <div class="footer-brand">mumlifebalance.ch · @mumlifebalance</div>
+</section>
+
+</body>
+</html>
