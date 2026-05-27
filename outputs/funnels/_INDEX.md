@@ -22,3 +22,7 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 
 - [[README]]
 - [[leadmagnet-komplett]]
+
+### 📁 wendepunkt-story
+
+- [[wendepunkt-story]]
