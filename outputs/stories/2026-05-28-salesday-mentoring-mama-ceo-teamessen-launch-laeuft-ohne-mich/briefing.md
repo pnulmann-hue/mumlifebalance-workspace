@@ -23,9 +23,9 @@
 | 3 | Hauptgang | Warum (Systeme laufen) | unten |
 | 4 | Dessert | Bezug/Transformation | unten |
 | 5 | Vorspeise | **Für wen ist Mama-CEO** (Tiefe) | unten |
-| 6 | Restaurant-Saal (reuse, kein Gesicht) | CTA | oben + Link-Sticker-Slot unten |
+| 6 | Patricia + Cocktail (reuse) | CTA | Card tiefer (bottom:300) → Gesicht oben frei, Link-Sticker-Slot ganz unten |
 
-**Gesicht-Regel:** Patricias Gesicht nur auf Slide 2, Card unten → nie verdeckt. CTA bewusst auf Saal-Foto statt Gesicht-Foto, weil Card oben sitzt.
+**Gesicht-Regel:** Gesicht-Crop nach oben gezogen (`object-position center 28%`). Card nie über dem Gesicht — auf Slide 2 unten, auf Slide 6 tief genug, dass Kopf frei bleibt und unten Platz für den Link-Sticker ist.
 
 ## Eckdaten (geprüft)
 - Cart-Close: **Sonntag 31.5. 23:59**
