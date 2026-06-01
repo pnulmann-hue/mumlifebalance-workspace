@@ -8,5 +8,6 @@ Auto-Index aller Files in `outputs/doterra-strategie/`. Siehe [[_MOCs/MOC-doTERR
 
 ## Dateien
 
+- [[2026-06-produkte-juni-aktionen]]
 - [[onboarding-system-outline]]
 - [[reaktivierungs-templates]]
