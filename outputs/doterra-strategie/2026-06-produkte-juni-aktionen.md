@@ -68,6 +68,22 @@ aber bei Wohlbefinden/Unterstützung.
 
 ---
 
+## 🌍 Convention Juni 2026 (Polen) — Kontext
+
+- Patricia war auf der **doTERRA Convention in Polen** (heimgekommen Nacht 31.5./1.6.2026).
+- **~6000 Teilnehmende**, gemeinsame Vision.
+- Leit-Thema: **„Natürliche Intelligenz"** — Verbindung zum eigenen Körper, ihn natürlich
+  unterstützen; sowie „der Welt etwas zurückgeben".
+- Dort wurden die **neuen Produkte** (Post Convention Kit) vorgestellt.
+- **Healing-Hands-Projekte** präsentiert: über **Co-Impact Sourcing** entstehen in den
+  Ursprungs-Regionen faire Arbeitsplätze, Schulen, Kliniken, sauberes Wasser.
+  - Beispiel: **Olivenöl-Projekt in Laspos (Griechenland)** — Quelle des Olivenöls im
+    **Omega-3 / EO Mega+**. *(Ortsname-Schreibweise noch zu verifizieren; bestätigt ist:
+    EO-Mega+-Olivenöl kommt über Co-Impact Sourcing aus Griechenland.)*
+- **Nächste Convention: Lissabon.**
+- Verlinktes Video (von Patricia geliefert): https://www.youtube.com/watch?v=GoNrlkG8UZk
+- Mehr zu Healing Hands: https://www.doterrahealinghands.org/
+
 ## 💡 Content- & Verkaufs-Hinweise
 
 - **Aufhänger für Newsletter / Stories:** „Im Juni gibt's gleich mehrere Aktionen + 3 brandneü Produkte" — Knappheit (Castor Oil, limitiertes Kit) ehrlich nutzen.
