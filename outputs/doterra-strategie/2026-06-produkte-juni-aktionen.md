@@ -172,7 +172,7 @@ aber bei Wohlbefinden/Unterstützung.
   - Beispiel: **Olivenöl-Projekt in Griechenland** — Quelle des Olivenöls im
     **Omega-3 / EO Mega+** (über Co-Impact Sourcing).
 - **Nächste Convention: Lissabon.**
-- Verlinktes Video (von Patricia geliefert): https://www.youtube.com/watch?v=GoNrlkG8UZk
+- Video zum Thema **„natürliche Intelligenz"** (von Patricia geliefert): https://www.youtube.com/watch?v=GoNrlkG8UZk
 - Mehr zu Healing Hands: https://www.doterrahealinghands.org/
 
 ## 🎯 „Warum für dich?"-Angles (Painpoint → Produkt)
