@@ -175,6 +175,23 @@ aber bei Wohlbefinden/Unterstützung.
 - Verlinktes Video (von Patricia geliefert): https://www.youtube.com/watch?v=GoNrlkG8UZk
 - Mehr zu Healing Hands: https://www.doterrahealinghands.org/
 
+## 🎯 „Warum für dich?"-Angles (Painpoint → Produkt)
+
+> Wichtig fürs Texten: Wer ein Produkt nicht kennt, braucht zuerst den „Das betrifft mich!"-
+> Moment — also **Painpoint/Nutzen vor Feature**. Diese Angles für Newsletter/Stories/Posts nutzen.
+
+| Produkt | Painpoint der Leserin | „Warum für dich"-Angle (compliant) |
+|---|---|---|
+| **Sun Travel Kit** | Cremt die Kinder ein, vergisst sich selbst | Sonnenschutz für dich endlich easy — Schutz + Pflege in einem, kein Kleben |
+| **Sun Face Moisturiser** | Empfindliche Haut, Angst vor Chemie | LSF 30, mineralisch, für empfindliche Haut, vegan & dermatologisch getestet |
+| **After Sun Spray** | Haut spannt/glüht nach der Sonne | Kühlt + beruhigt sofort, einfach aufsprühen, riffschonend |
+| **RevitaZen Detox Blend** | Fühlt sich schwer/träge im Alltag | 10-Sekunden-Routine für etwas Leichtigkeit — 1 Tropfen ins Wasser |
+| **RevitaZen+** | Will Körper unterstützen, keine Zeit | 1 Kapsel zur Mahlzeit, fertig — Unterstützung von innen ohne Aufwand |
+| **dōTERRA Fiber** | Ballaststoffe kommen im Mama-Alltag zu kurz | Leckerer Drink füllt die Lücke, ohne Ernährung umzustellen |
+| **Castor Oil** | Trockene Haut/Haar, sucht Natürliches | „Gold der natürlichen Pflege" — 1 Produkt für Haut, Haar, Trägeröl |
+| **DDR Prime** | Emotional viel los, sucht Erdung | Auf Pulspunkte + inhalieren → Begleitung für emotionale Balance |
+| **Jasmine** | Wenig Zeit für sich, Selbstwert | Kostbares Öl als natürliches Parfum + Moment für sich |
+
 ## 💡 Content- & Verkaufs-Hinweise
 
 - **Aufhänger für Newsletter / Stories:** „Im Juni gibt's gleich mehrere Aktionen + 3 brandneü Produkte" — Knappheit (Castor Oil, limitiertes Kit) ehrlich nutzen.
