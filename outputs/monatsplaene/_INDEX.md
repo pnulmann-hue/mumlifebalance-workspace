@@ -9,3 +9,4 @@ Auto-Index aller Files in `outputs/monatsplaene/`. Siehe [[_MOCs/MOC-Produkte-Fu
 ## Dateien
 
 - [[2026-05]]
+- [[2026-06]]
