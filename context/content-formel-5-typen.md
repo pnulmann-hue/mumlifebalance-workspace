@@ -16,7 +16,7 @@ Die Formel ist die **Struktur- und Strategie-Schicht** — nicht die Sprach-Form
 
 2. **doTERRA bleibt in der Reels-only-Phase.** Solange das doTERRA-Profil unter ~300–500 Followern ist, floppen Karussells (siehe `feedback_content-performance-doterra.md`). Heisst: Die 5 Typen gelten auch dort, aber Lifestyle-, Meinungs- und Social-Proof-Posts werden **als Reel** umgesetzt, Tutorial-Karussells pausieren. Frequenz bleibt bei 3–4 Qualitäts-Reels pro Woche statt täglich. Die „ganz ehrlich mit dir"-Goldformel ist Patricias stärkster doTERRA-Hebel und passt perfekt zu Typ 1 + Typ 4.
 
-3. **Keyword-CTA = bestehende ManyChat-Keywords.** Das Keyword-Kommentar-System nutzt die Keywords aus `context/manychat-keywords.md` (SYSTEM / QUIZ / ENERGIE / ECHT1 usw.) — keine neuen erfinden, und immer nur EIN Keyword pro Post.
+3. **Keyword-CTA = bestehende ManyChat-Keywords — aber nicht auf jedem Post.** Das Keyword-Kommentar-System nutzt die Keywords aus `context/manychat-keywords.md` (SYSTEM / QUIZ / ENERGIE / ECHT1 usw.) — keine neuen erfinden, und immer nur EIN Keyword pro Post. **Wichtige Präzisierung (seit 2026-06-01, siehe [[reichweiten-formel-mama-identity]]):** Reine Reichweiten-Posts tragen einen **Share-CTA** („Schick das einer Mama…"), KEIN Produkt-Keyword — Teilen ist der stärkste Reichweiten-Hebel. Der Keyword-CTA gehört auf den wöchentlichen Lead-Post. Faustregel: 3 Reichweiten-Posts (Share-CTA) + 1 Lead-Post (Keyword-CTA) pro Profil und Woche.
 
 4. **Keine erfundenen Zahlen.** Jede Zahl in Hook/Caption/Social-Proof stammt aus `context/patricia-expertise.md` / `-freebies.md` / `patricia-vollprofil.md` / `active-funnels.json` — sonst abstrakt formulieren (siehe `feedback_keine-erfundenen-zahlen.md`).
 
