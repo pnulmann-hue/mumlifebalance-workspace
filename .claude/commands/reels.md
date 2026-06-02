@@ -40,6 +40,8 @@ Lies in dieser Reihenfolge:
 4. **`context/patricia-freebies.md` — PFLICHT! Alle Freebies mit Inhalten + Cross-Referenz zu Themen → Keywords.**
 5. `context/brand-voice.md` — Ton & Schreibregeln
 6. `context/hook-framework.md` — Hook-Kategorien + Templates (Pflicht-Grundlage für JEDEN Hook)
+6a. ⭐ **`context/content-formel-5-typen.md` — PFLICHT (seit 2026-06-01)**: 5-Typen-Content-Formel aus der Mentorin-Profil-Analyse. Das Reel ist meist der **Typ „Reel-CTA"** (Reichweite über den Algorithmus) oder „Lifestyle/Freiheit". **Besonders für doTERRA gilt:** der Account ist in der Reels-only-Phase (unter ~300-500 Followern) — Reels sind dort das Haupt-Format, weil Karussells bei kleiner Basis floppen. 4 Leitplanken: keine Stakkato (Patricia-Voice), Reel-Hook = Spannung/Schmerz nicht Aussage, EIN bestehendes ManyChat-Keyword als CTA, keine erfundenen Zahlen.
+6b. ⭐ **`context/reichweiten-formel-mama-identity.md` — PFLICHT (seit 2026-06-01)**: Reichweiten-Motor. Reels sind das Haupt-Format für Reichweite. Die 3 Reichweiten-Typen (Gesellschaftsspiegel · Mama-Alltag-Moment · Ehrlichkeits-Story) laufen mit **Share-CTA** („Teile das mit einer Mama…"), NICHT mit Produkt-Keyword — Teilen ist der stärkste Reichweiten-Hebel. Keyword-CTA gehört nur auf den wöchentlichen Lead-Post. „Stell dir vor" gesperrt → szenen-malen / „Was wäre wenn".
 7. `context/caption-formeln.md` — Caption-Strukturen
 8. `context/manychat-keywords.md` — Keywords pro Pillar
 9. `context/notion-content-db.md` — Notion-DB-Mapping

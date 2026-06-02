@@ -41,6 +41,8 @@ Lies in dieser Reihenfolge:
 5. **`context/patricia-freebies.md` — PFLICHT! Alle Freebies mit Inhalten + Cross-Referenz zu Themen → Keywords.**
 6. `context/brand-voice.md`
 7. `context/hook-framework.md` — Pflicht-Grundlage für Hooks
+7a. ⭐ **`context/content-formel-5-typen.md` — PFLICHT (seit 2026-06-01)**: 5-Typen-Content-Formel aus der Mentorin-Profil-Analyse. Das Karussell ist der **Typ „Tutorial-Karussell"** — bau es als echten Mehrwert-Schritt-für-Schritt mit Stop-Scrolling-Cover (Slide 1) und EINEM ManyChat-Keyword als CTA. 4 Leitplanken: keine Stakkato (Patricia-Voice), für doTERRA NUR wenn Account schon >300-500 Follower hat (sonst Reel statt Karussell), Keyword-CTA bestehend, keine erfundenen Zahlen.
+7b. ⭐ **`context/reichweiten-formel-mama-identity.md` — PFLICHT (seit 2026-06-01)**: Reichweiten-Motor. Als Karussell eignen sich der Gesellschaftsspiegel und die Ehrlichkeits-Story (Reichweiten-Typen mit **Share-CTA**, kein Produkt-Keyword) sowie der wöchentliche Lead-Post (mit Keyword). Reichweiten-Karussell nie mit Verkaufs-CTA überladen — „Schick das einer Mama…" drauf. „Stell dir vor" gesperrt → szenen-malen / „Was wäre wenn".
 8. `context/caption-formeln.md`
 9. `context/manychat-keywords.md` — Pflicht-Keywords
 10. `context/notion-content-db.md` — Notion-Mapping

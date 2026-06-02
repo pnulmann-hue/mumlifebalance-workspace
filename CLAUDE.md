@@ -188,10 +188,11 @@ Beispiel: `/implement plans/2026-01-28-wettbewerbs-analyse-command.md`
 - Zero invented numbers (nur Input oder `patricia-expertise.md`)
 - Zero AI-generated Visuals (nur `merge-designs` auf Templates)
 - doTERRA-Pflicht: alle Compliance-Memorys + `context/doterra/patricia-wendepunkt-story.md` lesen vor jedem Build
+- **Content-Radar-Pflicht (seit 2026-06-02):** `context/content-radar-juni-2026.md` lesen vor jedem Content-Output. Ab KW23: Hybrid Mentoring (max 1 Karussell + 4-5 Reels pro Woche), Caption immer mit Zeitanker (Gestern/Letzte Woche/Heute Morgen) + Zahl + 1 Kommentar-Keyword-CTA (nie „💾 Speicher diesen Post" als Caption-Einstieg), max 5 Hashtags, #mamabusiness als Pflicht-Anker. 8/10-Hook-Standard.
 - PIE-Mix Pflicht (3-3-3-1 pro Profil)
 - Themen-Variation Pflicht (mind. 2 Pillars pro Profil pro Woche)
 - Wochenfokus aus Notion ist Hook-Generator-Quelle
-- **Olga-Hook-Pattern-Mix (PFLICHT seit 2026-05-09):** Über die 10 Hooks pro Profil mind. 4 verschiedene Pattern aus Bekenntnis / Contrarian / Curiosity-Gap / Konkrete Zahl / Anti-Hook / Vorher-Nachher. Verhindert dass alle Hooks gleich klingen.
+- **Olga-Hook-Pattern-Mix (PFLICHT seit 2026-05-09):** Über die 10 Hooks pro Profil mind. 4 verschiedene Pattern aus Bekenntnis / Contrarian / Curiosity-Gap / Konkrete Zahl / Anti-Hook / Vorher-Nachher / **Zeitanker (seit 2026-06-02)**. Verhindert dass alle Hooks gleich klingen.
 
 Volle Doku: `reference/montag-workflow-v2.md`.
 

@@ -6,6 +6,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["-y", "serve", "scripts/bio-check-bot/public", "-l", "4321"],
       "port": 4321
+    },
+    {
+      "name": "salespage-mba",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["-y", "serve", "outputs/salespages/umsetzerinnen-pioneer", "-l", "4330"],
+      "port": 4330
     }
   ]
 }

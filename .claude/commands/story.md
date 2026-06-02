@@ -201,6 +201,8 @@ Lies in dieser Reihenfolge — IMMER vor jedem Story-Briefing:
 9. **`context/patricia-freebies.md`** — Alle Freebies + Cross-Referenz zu Themen
 10. `context/brand-voice.md`
 11. `context/hook-framework.md`
+11a. ⭐ **`context/content-formel-5-typen.md` — PFLICHT (seit 2026-06-01)**: 5-Typen-Content-Formel aus der Mentorin-Profil-Analyse. Stories sind der tägliche Träger für Lifestyle/Freiheit + Social-Proof — nutze die Typ-Logik, um die Wochen-Story-Sequenz abwechslungsreich zu halten. 4 Leitplanken: keine Stakkato (Patricia-Voice), für doTERRA Lifestyle-Frame in der Reels-only-Phase, EIN bestehendes ManyChat-Keyword als CTA pro Sequenz, keine erfundenen Zahlen.
+11b. ⭐ **`context/reichweiten-formel-mama-identity.md` — PFLICHT (seit 2026-06-01)**: Reichweiten-Motor. Stories sind primär Beziehungs-/Vertrauens-Träger — nutze die Mama-Identity-Frames (Gesellschaftsspiegel · Mama-Alltag-Moment · Ehrlichkeits-Story), um zwischen den Verkaufs-Sequenzen Reichweite und Nähe aufzubauen. Story-Sequenz behält ihren CTA-Link (Story-Kernregel), aber die reinen Reichweiten-Frames pitchen kein Produkt. „Stell dir vor" gesperrt → szenen-malen / „Was wäre wenn".
 12. `context/caption-formeln.md`
 13. `context/business-info.md`
 14. `context/active-funnels.json` — welche Funnels laufen aktuell?

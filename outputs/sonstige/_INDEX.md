@@ -8,3 +8,4 @@ Auto-Index aller Files in `outputs/sonstige/`. Siehe [[_MOCs/MOC-Brand-Voice]] f
 
 ## Dateien
 
+- [[webinar-demo-content-assistent]]
