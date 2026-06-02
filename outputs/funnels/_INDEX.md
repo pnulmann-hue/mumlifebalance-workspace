@@ -27,5 +27,6 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 
 - [[ac-ist-zustand]]
 - [[blueprint]]
+- [[umbau-plan]]
 - [[variante-B-mailsequenz]]
 - [[variante-C-mailsequenz]]
