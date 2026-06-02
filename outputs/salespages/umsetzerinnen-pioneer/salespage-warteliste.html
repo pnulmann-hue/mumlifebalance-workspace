@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mum Business Academy (MBA) — Warteliste | Mum Life Balance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --petrol: #12828c;
+      --dunkelblau: #29556d;
+      --creme: #f1ecdd;
+      --creme-dark: #e8e0c8;
+      --orange: #dc822e;
+      --orange-dark: #b56a24;
+      --text-dark: #0c1c30;
+      --text-soft: #4a5868;
+      --weiss: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      color: var(--text-dark);
+      background: var(--creme);
+      line-height: 1.6;
+      font-size: 18px;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Philosopher', serif;
+      font-weight: 700;
+      color: var(--dunkelblau);
+      line-height: 1.15;
+    }
+
+    /* === Sections === */
+    section { padding: 80px 0; }
+    section.tight { padding: 50px 0; }
+    section.dark { background: var(--dunkelblau); color: var(--creme); }
+    section.dark h1, section.dark h2, section.dark h3 { color: var(--creme); }
+
+    /* === HERO === */
+    .hero {
+      background: var(--dunkelblau);
+      color: var(--creme);
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+    .hero .eyebrow {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      color: var(--creme);
+      font-size: 64px;
+      margin-bottom: 28px;
+      letter-spacing: -1px;
+    }
+    .hero h1 .accent {
+      color: var(--orange);
+      font-style: italic;
+    }
+    .hero .sub {
+      font-family: 'Philosopher', serif;
+      font-style: italic;
+      font-size: 28px;
+      max-width: 720px;
+      margin: 0 auto 40px;
+      color: var(--creme);
+      opacity: 0.95;
+    }
+    .hero .meta {
+      font-size: 16px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+    .divider {
+      width: 90px;
+      height: 4px;
+      background: var(--orange);
+      border-radius: 2px;
+      margin: 32px auto;
+    }
+
+    /* === Painpoint === */
+    .pain h2 {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .pain .intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 40px;
+      font-size: 20px;
+      color: var(--text-soft);
+    }
+    .pain-list {
+      max-width: 680px;
+      margin: 0 auto;
+      list-style: none;
+    }
+    .pain-list li {
+      padding: 18px 0 18px 44px;
+      border-bottom: 1px solid var(--creme-dark);
+      position: relative;
+      font-size: 19px;
+    }
+    .pain-list li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+      font-weight: 700;
+      font-size: 24px;
+    }
+    .pain-list li:last-child { border-bottom: none; }
+
+    /* === Versprechen / Transformation === */
+    .promise { background: var(--weiss); }
+    .promise h2 {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .promise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .promise-card {
+      background: var(--creme);
+      padding: 32px 24px;
+      border-radius: 12px;
+      border-top: 4px solid var(--orange);
+      text-align: center;
+    }
+    .promise-card .num {
+      font-family: 'Philosopher', serif;
+      font-weight: 700;
+      font-size: 56px;
+      color: var(--petrol);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .promise-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+    .promise-card p {
+      font-size: 16px;
+      color: var(--text-soft);
+      line-height: 1.5;
+    }
+
+    /* === Story === */
+    .story h2 {
+      font-size: 38px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .story-text {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 19px;
+      line-height: 1.7;
+    }
+    .story-text p { margin-bottom: 20px; }
+    .story-text .lead {
+      font-family: 'Philosopher', serif;
+      font-style: italic;
+      font-size: 24px;
+      color: var(--dunkelblau);
+      text-align: center;
+      margin: 32px 0;
+      line-height: 1.4;
+    }
+
+    /* === Was drin ist (2 Pakete) === */
+    .pakete { background: var(--dunkelblau); color: var(--creme); }
+    .pakete h2 {
+      color: var(--creme);
+      font-size: 44px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .pakete .intro {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 60px;
+      font-size: 19px;
+      opacity: 0.9;
+    }
+    .paket-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 30px;
+      align-items: stretch;
+    }
+    .paket {
+      background: var(--creme);
+      color: var(--text-dark);
+      padding: 40px 32px;
+      border-radius: 16px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .paket.premium {
+      border: 3px solid var(--orange);
+      background: var(--weiss);
+    }
+    .paket .label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 8px;
+    }
+    .paket h3 {
+      font-size: 30px;
+      margin-bottom: 16px;
+      color: var(--dunkelblau);
+    }
+    .paket .price {
+      font-family: 'Philosopher', serif;
+      font-weight: 700;
+      font-size: 46px;
+      color: var(--petrol);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .paket.premium .price {
+      color: var(--orange);
+    }
+    .paket .price-meta {
+      font-size: 14px;
+      color: var(--text-soft);
+      margin-bottom: 28px;
+    }
+    .paket .strike {
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+    .paket ul {
+      list-style: none;
+      margin-bottom: 32px;
+      flex-grow: 1;
+    }
+    .paket ul li {
+      padding: 10px 0 10px 30px;
+      position: relative;
+      font-size: 16.5px;
+      line-height: 1.5;
+    }
+    .paket ul li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .paket .badge-top {
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--orange);
+      color: var(--weiss);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border-radius: 30px;
+      white-space: nowrap;
+    }
+    .btn-primary, .btn-secondary {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 18px 24px;
+      border-radius: 50px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--orange);
+      color: var(--weiss);
+    }
+    .btn-primary:hover { background: var(--orange-dark); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--dunkelblau);
+      border: 2px solid var(--dunkelblau);
+    }
+    .btn-secondary:hover {
+      background: var(--dunkelblau);
+      color: var(--creme);
+    }
+
+    /* === Pioneer-Hinweis === */
+    .pioneer-note { background: var(--creme); }
+    .pioneer-note .box {
+      background: var(--weiss);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px;
+      border-radius: 12px;
+      border-left: 6px solid var(--orange);
+    }
+    .pioneer-note h3 {
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+    .pioneer-note p {
+      font-size: 18px;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+
+    /* === Webinar-Brücke === */
+    .webinar { background: var(--creme); }
+    .webinar-box {
+      background: var(--weiss);
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 48px;
+      border-radius: 16px;
+      border-top: 5px solid var(--orange);
+      text-align: center;
+      box-shadow: 0 12px 40px rgba(12, 28, 48, 0.08);
+    }
+    .webinar-box .eyebrow-orange {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 16px;
+    }
+    .webinar-box h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .webinar-box p {
+      font-size: 18px;
+      color: var(--text-soft);
+      line-height: 1.65;
+      max-width: 620px;
+      margin: 0 auto 28px;
+    }
+
+    /* === Über Patricia === */
+    .ueber h2 {
+      font-size: 38px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .ueber-text {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    .ueber-text p { margin-bottom: 18px; }
+
+    /* === FAQ === */
+    .faq { background: var(--weiss); }
+    .faq h2 {
+      font-size: 38px;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .faq-item {
+      max-width: 720px;
+      margin: 0 auto 20px;
+      background: var(--creme);
+      border-radius: 12px;
+      padding: 24px 28px;
+    }
+    .faq-item h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--dunkelblau);
+    }
+    .faq-item p {
+      font-size: 17px;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+
+    /* === Final CTA === */
+    .final-cta {
+      background: var(--dunkelblau);
+      color: var(--creme);
+      text-align: center;
+      padding: 100px 0;
+    }
+    .final-cta h2 {
+      color: var(--creme);
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+    .final-cta .sub {
+      font-family: 'Philosopher', serif;
+      font-style: italic;
+      font-size: 24px;
+      max-width: 680px;
+      margin: 0 auto 40px;
+    }
+    .final-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .final-buttons a {
+      min-width: 280px;
+      max-width: 320px;
+    }
+    .final-buttons .btn-secondary {
+      color: var(--creme);
+      border-color: var(--creme);
+    }
+    .final-buttons .btn-secondary:hover {
+      background: var(--creme);
+      color: var(--dunkelblau);
+    }
+
+    /* === PS-Block === */
+    .ps {
+      background: var(--creme);
+      padding: 60px 0;
+    }
+    .ps-box {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    .ps-box strong {
+      color: var(--orange);
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+    }
+
+    /* === Footer === */
+    footer {
+      background: var(--text-dark);
+      color: var(--creme);
+      padding: 30px 0;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 1px;
+      opacity: 0.8;
+    }
+
+    /* === Responsive === */
+    @media (max-width: 720px) {
+      .hero h1 { font-size: 42px; }
+      .hero .sub { font-size: 22px; }
+      .pain h2, .promise h2, .pakete h2, .final-cta h2 { font-size: 32px; }
+      .promise-grid { grid-template-columns: 1fr; }
+      .paket-grid { grid-template-columns: 1fr; }
+      .paket { padding: 32px 24px; }
+      section { padding: 60px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ WARTELISTE-MODUS (vor Cart-Open) ============ -->
+  <style>
+    .waitlist { background: var(--petrol); color: var(--creme); padding: 90px 0 80px; text-align: center; }
+    .waitlist .eyebrow { font-family: 'Source Sans 3', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 5px; text-transform: uppercase; color: var(--orange); margin-bottom: 18px; }
+    .waitlist h1 { color: var(--creme); font-size: 46px; line-height: 1.1; margin-bottom: 20px; }
+    .waitlist h1 .accent { color: var(--orange); font-style: italic; }
+    .waitlist .sub { font-size: 20px; max-width: 620px; margin: 0 auto 14px; color: var(--creme); opacity: 0.95; }
+    .waitlist .sub strong { color: var(--orange); }
+    .waitlist .price-hint { font-size: 16px; opacity: 0.85; margin-bottom: 34px; }
+    .waitlist-form { max-width: 520px; margin: 0 auto; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+    .waitlist-form input[type="email"], .waitlist-form input[type="text"] {
+      flex: 1 1 280px; min-width: 240px; padding: 16px 18px; border: none; border-radius: 8px;
+      font-family: 'Source Sans 3', sans-serif; font-size: 17px; color: var(--text-dark);
+    }
+    .waitlist-form button {
+      flex: 0 0 auto; padding: 16px 28px; border: none; border-radius: 8px; cursor: pointer;
+      background: var(--orange); color: var(--creme); font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700; font-size: 17px; letter-spacing: 0.5px; transition: background 0.2s;
+    }
+    .waitlist-form button:hover { background: var(--orange-dark); }
+    .waitlist .ac-form-wrap { max-width: 540px; margin: 0 auto; }
+    .waitlist .ac-form-wrap ._form_57 { margin: 0 auto; }
+    .waitlist .smallprint { font-size: 14px; opacity: 0.75; margin-top: 16px; }
+    .waitlist .scrolldown { margin-top: 40px; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.7; }
+    @media (max-width: 600px) { .waitlist h1 { font-size: 34px; } .waitlist-form button { flex: 1 1 100%; } }
+  </style>
+
+  <section class="waitlist">
+    <div class="container">
+      <div class="eyebrow">Bald · Pioneer-Phase startet nächsten Monat</div>
+      <h1>Sei als <span class="accent">Erste</span> dabei,<br>wenn die Türen aufgehen.</h1>
+      <p class="sub">
+        Die <strong>Mum Business Academy</strong> — meine drei grossen Kurse plus zwölf Monate Begleitung. Für Mamas, die ihr Business neben der Familie endlich zum Laufen bringen wollen.
+      </p>
+      <p class="price-hint">Wer auf der Warteliste steht, ist die Erste, die die genauen Infos bekommt — sobald es so weit ist.</p>
+
+      <!-- ActiveCampaign Formular "MBA Warteliste" (Form-ID 57 · Tag: mba-warteliste) -->
+      <div class="ac-form-wrap">
+        <div class="_form_57"></div><script src="https://mumlifebalance.activehosted.com/f/embed.php?id=57" charset="utf-8"></script>
+      </div>
+
+      <p class="smallprint">Kein Spam. Du hörst von mir nur, wenn es so weit ist — und dann als Erste.</p>
+      <div class="scrolldown">↓ Was dich erwartet</div>
+    </div>
+  </section>
+
+  <!-- PAINPOINT -->
+  <section class="pain">
+    <div class="container">
+      <h2>Du hast das Gefühl, du weisst eigentlich alles.</h2>
+      <p class="intro">
+        Du hast Tipps gehört, Lecks erkannt, dir Notizen gemacht.
+        Und trotzdem passiert etwas, das du seit Monaten kennst:
+      </p>
+      <ul class="pain-list">
+        <li>Du nimmst dir drei Wochen lang viel vor, dann zieht dich der Alltag wieder rein.</li>
+        <li>Du startest ein Reel-Konzept, schiebst die Caption auf, und es bleibt im Entwurfsordner.</li>
+        <li>Du buchst den nächsten Kurs, weil DER sicher die Antwort ist — und schaust ihn nie zu Ende.</li>
+        <li>Du arbeitest neben Kindern, Haushalt und Selbstzweifeln, und am Ende des Monats steht wieder die Frage: Hat das jetzt etwas gebracht?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- VERSPRECHEN -->
+  <section class="promise">
+    <div class="container">
+      <h2>Was sich ändert,<br>wenn du dabei bleibst.</h2>
+      <div class="promise-grid">
+        <div class="promise-card">
+          <div class="num">01</div>
+          <h3>Du bleibst in der Bewegung</h3>
+          <p>Zwei Live-Calls pro Monat: ein Experten-Thema und ein Einblick aus meinem Business. Jeden Monat ein neuer Hebel zum Umsetzen.</p>
+        </div>
+        <div class="promise-card">
+          <div class="num">02</div>
+          <h3>Du gehst nicht mehr allein</h3>
+          <p>Eine kleine Runde von Mamas, die alle wirklich dranbleiben. Telegram-Begleitung dazwischen — du fragst, ich antworte.</p>
+        </div>
+        <div class="promise-card">
+          <div class="num">03</div>
+          <h3>Du siehst Resultate</h3>
+          <p>Konkrete Hebel, jeden Monat einer. Du misst echte Zahlen. Du siehst was funktioniert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story">
+    <div class="container">
+      <h2>Warum ich das jetzt mache.</h2>
+      <div class="story-text">
+        <p>
+          Ich habe in den letzten Jahren selbst gemerkt, wie das ist: Du hast einen Kurs gebucht, weisst genau was zu tun ist, und drei Wochen später hat dich der Alltag wieder. Kinder. Haushalt. Und das Business läuft auf 30 Prozent.
+        </p>
+        <p>
+          Was bei mir den Unterschied gemacht hat, war nie der nächste Tipp. Es war eine Gruppe, in der ich nicht mehr aussteigen konnte, ohne dass jemand fragt: Was ist eigentlich aus deiner Idee von letzter Woche geworden?
+        </p>
+        <p class="lead">
+          Genau das gibt es bei den Umsetzerinnen.<br>Nicht überlegen. Nicht warten. Umsetzen.
+        </p>
+        <p>
+          Und weil ich weiss, dass viele von euch nicht nur Begleitung brauchen, sondern auch das Fundament, kommt jetzt zum ersten Mal die <strong>Mum Business Academy</strong> — meine drei grossen Kurse plus zwölf Monate Umsetzerinnen-Begleitung. Ich nenn sie augenzwinkernd auch <strong>dein MBA</strong>. Sie ist gerade im letzten Feinschliff, und bald ist es so weit.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAS STECKT DRIN -->
+  <section class="pakete">
+    <div class="container">
+      <h2>Das steckt in deinem MBA.</h2>
+      <p class="intro">
+        Drei grosse Kurse plus zwölf Monate Begleitung — das ganze Fundament und der Weg, an dem du wirklich dranbleibst.
+      </p>
+
+      <div class="paket-grid" style="grid-template-columns: 1fr;">
+        <div class="paket premium" style="max-width: 680px; margin: 0 auto;">
+          <div class="label">Das Komplettpaket · Dein MBA</div>
+          <h3>Drei Kurse + zwölf Monate Umsetzerinnen</h3>
+
+          <ul>
+            <li><strong>Digitale Produktwelt</strong> — baue dir ein skalierbares Einkommen, das nicht jeden Monat bei null beginnt</li>
+            <li><strong>Mama-CEO</strong> — führe Familie und Business wie eine CEO, mit System und KI statt zwischen beidem zerrieben zu werden</li>
+            <li><strong>Instagram Kundenmaschine</strong> — Schaufenster-Strategie, Content-Säulen, Keyword-System für Sichtbarkeit ohne Dauerstress</li>
+            <li><strong>12 Monate Umsetzerinnen-Begleitung</strong> — zwei Live-Calls pro Monat plus Telegram-Gruppe, damit du dranbleibst</li>
+            <li><strong>Ein 30-Minuten-1:1-Call</strong> mit mir für deinen Start</li>
+            <li><strong>Lebenslanger Zugang</strong> zu allen drei Kursen</li>
+          </ul>
+
+          <p style="text-align: center; font-family: 'Philosopher', serif; font-style: italic; color: var(--orange); font-size: 19px; margin-top: 8px;">
+            Die genauen Infos bekommst du als Erste, sobald es so weit ist.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÜBER PATRICIA -->
+  <section class="ueber">
+    <div class="container">
+      <h2>Wer ich bin.</h2>
+      <div class="ueber-text">
+        <p>
+          Ich bin Patricia — Mama von vier Kindern, im Appenzellerland zu Hause. Vor ein paar Jahren habe ich meinen Teilzeitjob aufgegeben, weil ich gespürt habe: Funktionieren reicht mir nicht mehr.
+        </p>
+        <p>
+          Seitdem baue ich Mum Life Balance. Mein Business läuft auf zwei Beinen — eigene Kurse und Network Marketing. Beides skaliert, beides funktioniert auch in den Wochen, in denen ein Kind krank ist und der Tag nur drei Stunden Business hergibt.
+        </p>
+        <p>
+          Ich zeige dir, was bei mir wirklich funktioniert hat — und auch, was Geld und Nerven gekostet hat. Ohne Hochglanz und ohne grosse Sprüche. Wie eine Freundin, die einen Schritt weiter ist.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <h2>Was ich oft gefragt werde.</h2>
+
+      <div class="faq-item">
+        <h4>Was ist, wenn ich nicht zu allen Calls kann?</h4>
+        <p>Es gibt zwei Calls pro Monat — einer mit einem Experten-Thema, einer mit Einblick aus meinem Business. Beide werden aufgezeichnet und in der Bibliothek hinterlegt. Du kannst sie nachhören wann es dir passt — viele Mamas machen das beim Spaziergang oder beim Wäsche zusammenlegen.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Was passiert nach den 12 Monaten in der MBA?</h4>
+        <p>Deine drei Kurse bleiben dir lebenslang — die kannst du immer wieder anschauen. Die Umsetzerinnen-Mitgliedschaft kannst du nach dem ersten Jahr optional zum dann gültigen Preis verlängern, musst aber nicht. Du entscheidest in Monat 11, wie es weitergeht.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Ich habe noch kein klares Angebot — passt das für mich?</h4>
+        <p>Ja, sogar besonders. In den Umsetzerinnen-Calls bekommst du Resonanz auf deine Ideen, bevor du Wochen in die falsche Richtung baust. Und die drei Kurse geben dir das Fundament: Mama-CEO zeigt dir, wie du Familie und Business gleichzeitig führst, Digitale Produktwelt baut dir den Umsatz-Hebel, Instagram Kundenmaschine macht dich sichtbar.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Ist das auch für mich, wenn ich erst am Anfang stehe?</h4>
+        <p>Ja, sogar besonders. Du sparst dir die Jahre, in denen ich selbst Dinge gemacht habe, die nicht funktionieren. In der MBA bekommst du das Fundament, in den Umsetzerinnen-Calls die Begleitung dazu.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Wann startet alles?</h4>
+        <p>Die Academy ist gerade im letzten Feinschliff. Wenn du auf der Warteliste stehst, bist du die Erste, die erfährt, wann es losgeht — mit allen genauen Infos, bevor ich es öffentlich mache.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Sei als Erste dabei.</h2>
+      <p class="sub">
+        Trag dich auf die Warteliste ein — dann bekommst du alle genauen Infos, sobald es so weit ist, vor allen anderen.
+      </p>
+      <div class="final-buttons">
+        <a href="#" class="btn-primary">↑ Zur Warteliste</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PS -->
+  <section class="ps">
+    <div class="container">
+      <div class="ps-box">
+        <p><strong>PS:</strong> Wenn du gerade hin- und hergerissen bist, ist das normal. Schreib mir auf Telegram — ich beantworte deine Frage persönlich, bevor du etwas entscheidest. Lieber eine ehrliche Antwort als ein voreiliges Ja.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Mum Life Balance · Patricia Ulmann · mumlifebalance.ch
+  </footer>
+
+</body>
+</html>
