@@ -9,6 +9,7 @@ Auto-Index aller Files in `outputs/stories/`. Siehe [[_MOCs/MOC-Content-Engine]]
 ## Dateien
 
 - [[2026-04-26-wandern-beide-profile]]
+- [[2026-06-02-doterra-compliance-vmg-pbassist-metapwr]]
 - [[manus-prompt-mama-ceo-webinar]]
 - 📘 [[README]]
 
