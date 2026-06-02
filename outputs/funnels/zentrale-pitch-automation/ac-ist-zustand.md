@@ -72,7 +72,26 @@ Weniger neu bauen als gedacht — vor allem **erweitern, anketten, MBA oben drau
 - [ ] #46 (Alt-Mischfunnel) gegen #53/#54 prüfen → Doppel-Mail-Risiko entschärfen
 - [ ] #44/#48/#51 (Post-Kauf) um einen Cross-Sell zur nächsten Stufe ergänzen
 - [x] Bio-Check #58/#59, Mama-Zeit #15, Willkommens-Sequenz #1 ausgelesen (2026-06-02): #58 kettet #53→#55→#54 · #59 reine PDF-Auslieferung · #15 Legacy · #1 generischer Newsletter-Willkommen
-- [ ] Noch offen: Pitch-Mails #53/#54 inhaltlich lesen (polieren, Blacklist-Phrasen fixen)
+- [x] Pitch-Mails #53 gelesen (2026-06-02) — siehe unten
+- [ ] Noch offen: #54-Mails im Detail (Struktur + 0%-Klick prüfen)
+
+## Mail-Qualität — #53 „Finde dein Thema" (gelesen 2026-06-02)
+
+**Struktur:** If/Else (wenn Tag „Thema finden" schon da → raus) → Mail 1 → 1T → Mail 2 → 1T → Mail 3 → 1T → Mail 4 → Ziel „Kurs gekauft" → Ende. 4 Mails, täglich.
+
+**Betreffe (on-brand, gut):**
+- M1: „Viel posten. Wenig Wirkung. Kennst du das?" (Preheader „Der Grund warum dein Content nicht zieht, hat…")
+- M2: „Der Denkfehler, der Network-Mamas jahrelang aufhält."
+- M3: „Was passiert, wenn der ‚Stein im Schuh' plötzlich einen Namen hat."
+- M4: „60 Minuten. Ein Thema. Kein Grübeln mehr."
+
+**Design:** sauber gebrandet („MUMLIFEBALANCE · NEWSLETTER", Philosopher-Serif-Headline). Sieht gut aus.
+
+**🚨 Kern-Problem: ~50–56% Öffnung, aber 0% Klick** (M1: 9 ges/55,6%/0% · M2: 8 ges/50%/0%). Die Mails werden gelesen, aber niemand klickt zum Angebot. Kleine Stichprobe, aber 0 Klicks bei guter Öffnung = der CTA/Link zieht nicht (zu schwach, zu versteckt, oder fehlt).
+
+**Blacklist:** „Kennst du das?" (M1-Betreff) steht auf der KI-Phrasen-Blackliste → beim Polieren ersetzen.
+
+**Verdikt:** Mails sind inhaltlich + optisch brauchbar — behalten und **gezielt den CTA polieren** (klarer Button, ein Link, Pain→Lösung→Klick), nicht neu schreiben.
 
 ---
 
