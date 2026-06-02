@@ -169,6 +169,28 @@ Freebie (0€) → ① Mehrwert (1-2 Mails) → ② Minikurs 39 (Win)
 - **Nicht zwingend evergreen-mit-Ads.** Für den Anfang reicht: MBA-Salespage direkt verlinken; Webinar später ergänzen.
 - Dein Mai-Webinar pitchte den **333er (Mama-CEO)** — für MBA bräuchtest du einen angepassten Pitch (oder du nutzt es in Variante B als 333er-Brücke und baust das MBA-Webinar separat).
 
+### Live → Evergreen (der schlaue Doppel-Nutzen, Patricia 2026-06-02)
+
+Das **Live-Webinar im MBA-Launch wird aufgezeichnet** und danach als **Evergreen-Webinar** im Funnel eingesetzt. Ein Dreh, zwei Funktionen: Launch-Event + dauerhaftes Funnel-Asset.
+
+```
+LIVE-Webinar im MBA-Launch  →  aufzeichnen
+        ↓
+Aufzeichnung = Evergreen-Webinar im Funnel
+(Mail 3 Variante C / Mail 6 Variante B)
+```
+
+**Warum Live zuerst:** echte Fragen, echte Einwände, echte Energie. Genau die Live-Reaktionen machen die Aufzeichnung später stark — besser als ein am Schreibtisch geskriptetes Webinar.
+
+**3 Punkte beim Umbau Live → Evergreen:**
+1. **Harte Launch-Daten raus.** „Cart schliesst Sonntag" / „heute Abend Schluss" stimmt evergreen nicht mehr → Stellen rausschneiden ODER den Pitch-Teil am Ende sauber neu aufnehmen und dranhängen.
+2. **Eigene Dringlichkeit für Evergreen.** Ohne Live-Cart-Close → **rollende Frist ab Eintritt** (z.B. Bonus/Preisvorteil läuft 72h nach dem Anschauen ab). Technisch via ThriveCart-Countdown oder Deadline-Tool, kein WebinarJam nötig.
+3. **Preis im Evergreen-Pitch anpassen.** Launch = Pioneer 990. Nach Pioneer-Phase = 1347 ODER ein eigenes Evergreen-Angebot festlegen — sonst verspricht die Aufzeichnung einen Preis, den es nicht mehr gibt.
+
+**Link-Swap statt Mail-Umschreiben:** In beiden Sequenzen steht der Platzhalter `[WEBINAR-LINK]`. Während des Launches → Live-Anmeldung. Danach → Replay-Seite. Die Mails bleiben Wort für Wort gleich.
+
+**Idealer Aufnahme-Zeitpunkt:** der MBA-Launch selbst. Danach steht das Evergreen-Asset fertig.
+
 ---
 
 ## Hormozi-Layer (gilt für jede Mail)
@@ -187,6 +209,7 @@ Freebie (0€) → ① Mehrwert (1-2 Mails) → ② Minikurs 39 (Win)
 - [ ] Tag `0e-lead-aktiv` + Goal/Exit-Bedingung in AC anlegen
 - [ ] Starterguide-Auslieferung neu bauen
 - [ ] ThriveCart-Checkout der Minikurse auf Offerbump + Upsell MBA + Downsell prüfen
+- [ ] **MBA-Launch-Webinar aufzeichnen** → danach als Evergreen umbauen (Launch-Daten raus, rollende Frist, Preis anpassen) + `[WEBINAR-LINK]` auf Replay-Seite umstellen
 - [ ] (Optional, später) MBA-Webinar als Brücken-Touchpoint
 
 ---
