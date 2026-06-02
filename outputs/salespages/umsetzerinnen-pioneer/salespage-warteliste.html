@@ -495,6 +495,8 @@
 
   <!-- ============ WARTELISTE-MODUS (vor Cart-Open) ============ -->
   <style>
+    /* Theme-Seitentitel ausblenden (h1.entry-title in .page-header) */
+    .page-header { display: none !important; }
     .waitlist { background: var(--petrol); color: var(--creme); padding: 90px 0 80px; text-align: center; }
     .waitlist .eyebrow { font-family: 'Source Sans 3', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 5px; text-transform: uppercase; color: var(--orange); margin-bottom: 18px; }
     .waitlist h1 { color: var(--creme); font-size: 46px; line-height: 1.1; margin-bottom: 20px; }
@@ -635,16 +637,19 @@
   <section class="ueber">
     <div class="container">
       <h2>Wer ich bin.</h2>
-      <div class="ueber-text">
-        <p>
-          Ich bin Patricia — Mama von vier Kindern, im Appenzellerland zu Hause. Vor ein paar Jahren habe ich meinen Teilzeitjob aufgegeben, weil ich gespürt habe: Funktionieren reicht mir nicht mehr.
-        </p>
-        <p>
-          Seitdem baue ich Mum Life Balance. Mein Business läuft auf zwei Beinen — eigene Kurse und Network Marketing. Beides skaliert, beides funktioniert auch in den Wochen, in denen ein Kind krank ist und der Tag nur drei Stunden Business hergibt.
-        </p>
-        <p>
-          Ich zeige dir, was bei mir wirklich funktioniert hat — und auch, was Geld und Nerven gekostet hat. Ohne Hochglanz und ohne grosse Sprüche. Wie eine Freundin, die einen Schritt weiter ist.
-        </p>
+      <div class="ueber-inner" style="display:flex; gap:40px; align-items:center; flex-wrap:wrap; justify-content:center; margin-top:16px;">
+        <img src="https://mumlifebalance.ch/wp-content/uploads/2026/06/patricia-web.jpg" alt="Patricia Ulmann" style="width:300px; max-width:100%; border-radius:16px; flex:0 0 auto; box-shadow:0 10px 30px rgba(12,28,48,0.18);">
+        <div class="ueber-text" style="flex:1 1 360px; max-width:540px;">
+          <p>
+            Ich bin Patricia — Mama von vier Kindern, in der Schweiz zu Hause. Vor ein paar Jahren habe ich meinen Teilzeitjob aufgegeben, weil ich gespürt habe: Funktionieren reicht mir nicht mehr.
+          </p>
+          <p>
+            Seitdem baue ich Mum Life Balance. Mein Business läuft auf zwei Beinen — eigene Kurse und Network Marketing. Beides skaliert, beides funktioniert auch in den Wochen, in denen ein Kind krank ist und der Tag nur drei Stunden Business hergibt.
+          </p>
+          <p>
+            Ich zeige dir, was bei mir wirklich funktioniert hat — und auch, was Geld und Nerven gekostet hat. Ohne Hochglanz und ohne grosse Sprüche. Wie eine Freundin, die einen Schritt weiter ist.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -689,7 +694,7 @@
         Trag dich auf die Warteliste ein — dann bekommst du alle genauen Infos, sobald es so weit ist, vor allen anderen.
       </p>
       <div class="final-buttons">
-        <a href="#" class="btn-primary">↑ Zur Warteliste</a>
+        <a href="#" class="btn-primary" style="background: var(--orange) !important; color: var(--creme) !important; max-width: 360px; margin: 0 auto;">Zur Warteliste ↑</a>
       </div>
     </div>
   </section>
@@ -698,7 +703,7 @@
   <section class="ps">
     <div class="container">
       <div class="ps-box">
-        <p><strong>PS:</strong> Wenn du gerade hin- und hergerissen bist, ist das normal. Schreib mir auf Telegram — ich beantworte deine Frage persönlich, bevor du etwas entscheidest. Lieber eine ehrliche Antwort als ein voreiliges Ja.</p>
+        <p><strong>PS:</strong> Wenn du gerade hin- und hergerissen bist, ist das normal. Schreib mir auf Instagram <a href="https://www.instagram.com/mumlifebalance_patricia_ulmann/" style="color: inherit; text-decoration: underline;">@mumlifebalance_patricia_ulmann</a> — ich beantworte deine Frage persönlich, bevor du etwas entscheidest. Lieber eine ehrliche Antwort als ein voreiliges Ja.</p>
       </div>
     </div>
   </section>
