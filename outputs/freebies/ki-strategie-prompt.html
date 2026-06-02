@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<title>Deine KI-Strategie-Prompts — Patricia Ulmann</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --petrol: #12828c;
+    --teal: #29556d;
+    --creme: #f1ecdd;
+    --orange: #dc822e;
+    --black: #1a1a1a;
+    --white: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    font-family: 'Source Sans 3', -apple-system, sans-serif;
+    color: var(--teal);
+    background: var(--creme);
+    font-size: 12pt;
+    line-height: 1.55;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  h1, h2, h3, .display { font-family: 'Philosopher', Georgia, serif; font-weight: 700; }
+  .page {
+    width: 210mm; height: 297mm; padding: 20mm 20mm;
+    page-break-after: always; break-after: page;
+    page-break-inside: avoid; break-inside: avoid;
+    background: var(--creme); position: relative; overflow: hidden; display: block;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .page-number { position: absolute; bottom: 12mm; right: 18mm; font-size: 9pt; color: var(--petrol); opacity: 0.6; letter-spacing: 0.1em; }
+  .footer-brand { position: absolute; bottom: 12mm; left: 20mm; font-size: 9pt; color: var(--petrol); opacity: 0.6; letter-spacing: 0.05em; }
+
+  /* COVER */
+  .cover { background: var(--petrol); color: var(--creme); display: flex; flex-direction: column; justify-content: space-between; padding: 22mm 20mm; }
+  .cover-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .cover-brand { font-size: 10pt; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.85; }
+  .cover-tag { background: var(--orange); color: var(--creme); padding: 4mm 7mm; font-size: 9pt; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600; }
+  .cover-main h1 { font-size: 62pt; line-height: 0.98; color: var(--creme); margin-bottom: 8mm; letter-spacing: -0.02em; }
+  .cover-main h1 em { font-style: italic; color: var(--orange); }
+  .cover-sub { font-size: 16pt; line-height: 1.4; max-width: 140mm; color: var(--creme); opacity: 0.95; font-family: 'Philosopher', serif; }
+  .cover-bottom { display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid rgba(241, 236, 221, 0.3); padding-top: 6mm; }
+  .cover-byline { font-family: 'Philosopher', serif; font-size: 14pt; color: var(--creme); }
+  .cover-byline small { display: block; font-family: 'Source Sans 3', sans-serif; font-size: 9pt; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.75; margin-top: 2mm; font-weight: 400; }
+  .cover-meta { text-align: right; font-size: 9pt; letter-spacing: 0.1em; opacity: 0.75; }
+
+  /* TEXT PAGES */
+  .page-title { font-size: 32pt; color: var(--petrol); margin-bottom: 8mm; line-height: 1.1; }
+  .page-title em { font-style: italic; color: var(--orange); }
+  .lead { font-size: 14pt; line-height: 1.55; margin-bottom: 6mm; }
+  p { margin-bottom: 4mm; font-size: 12pt; line-height: 1.6; }
+  p strong { color: var(--petrol); font-weight: 600; }
+  .signature { font-family: 'Philosopher', serif; font-style: italic; font-size: 16pt; color: var(--orange); margin-top: 8mm; }
+  .divider { height: 1pt; background: var(--petrol); opacity: 0.2; margin: 6mm 0; }
+  .eyebrow { font-size: 10pt; letter-spacing: 0.3em; text-transform: uppercase; color: var(--orange); margin-bottom: 6mm; font-weight: 600; }
+
+  /* HI LETTER */
+  .hi-letter p { font-size: 12pt; line-height: 1.65; margin-bottom: 4mm; }
+  .hi-letter p strong { color: var(--petrol); }
+  em.italic-block { display: block; font-style: italic; color: var(--orange); font-family: 'Philosopher', serif; font-size: 14pt; margin: 4mm 0; padding-left: 4mm; border-left: 2pt solid var(--orange); }
+
+  /* HOW TO */
+  .howto-list { list-style: none; padding: 0; margin-top: 6mm; }
+  .howto-item { display: flex; gap: 6mm; margin-bottom: 6mm; align-items: flex-start; }
+  .howto-icon { font-size: 22pt; line-height: 1; flex-shrink: 0; }
+  .howto-text { font-size: 12pt; line-height: 1.5; }
+  .howto-text strong { display: block; font-family: 'Philosopher', serif; font-weight: 700; color: var(--petrol); font-size: 14pt; margin-bottom: 1mm; }
+
+  /* PROMPT PAGES */
+  .prompt-header { display: flex; align-items: baseline; gap: 5mm; margin-bottom: 2mm; }
+  .prompt-number { font-family: 'Philosopher', serif; font-size: 50pt; line-height: 0.9; color: var(--petrol); font-weight: 700; }
+  .prompt-label { font-size: 11pt; letter-spacing: 0.25em; text-transform: uppercase; color: var(--orange); font-weight: 700; }
+  .prompt-title { font-size: 24pt; line-height: 1.1; color: var(--teal); margin-bottom: 5mm; }
+  .prompt-title em { font-style: italic; color: var(--orange); }
+  .prompt-box { background: var(--white); border: 1.5pt solid var(--petrol); border-radius: 2mm; padding: 6mm 7mm; }
+  .prompt-box pre {
+    font-family: 'Source Code Pro', Consolas, monospace;
+    font-size: 8.4pt; line-height: 1.5; color: var(--black);
+    white-space: pre-wrap; word-wrap: break-word;
+  }
+  .copy-hint { font-size: 9pt; letter-spacing: 0.15em; text-transform: uppercase; color: var(--petrol); opacity: 0.7; margin-bottom: 3mm; font-weight: 600; }
+
+  /* PITCH */
+  .pitch-page { background: var(--petrol); color: var(--creme); }
+  .pitch-page .page-number, .pitch-page .footer-brand { color: var(--creme); opacity: 0.6; }
+  .pitch-eyebrow { font-size: 10pt; letter-spacing: 0.3em; text-transform: uppercase; opacity: 0.85; margin-bottom: 4mm; }
+  .pitch-title { font-size: 34pt; line-height: 1.05; margin-bottom: 4mm; color: var(--creme); }
+  .pitch-title em { color: var(--orange); font-style: italic; }
+  .pitch-sub { font-size: 14pt; font-family: 'Philosopher', serif; font-style: italic; margin-bottom: 7mm; opacity: 0.95; }
+  .pitch-list { list-style: none; padding: 0; margin: 5mm 0; }
+  .pitch-list li { padding: 3mm 0 3mm 9mm; position: relative; font-size: 11.5pt; line-height: 1.45; border-bottom: 1px solid rgba(241, 236, 221, 0.15); }
+  .pitch-list li:last-child { border-bottom: none; }
+  .pitch-list li::before { content: "✓"; position: absolute; left: 0; color: var(--orange); font-weight: 700; font-size: 14pt; }
+  .pitch-cta-box { background: var(--orange); color: var(--creme); padding: 6mm 7mm; margin-top: 7mm; border-radius: 2mm; }
+  .pitch-cta-box-title { font-family: 'Philosopher', serif; font-size: 17pt; margin-bottom: 2mm; }
+  .pitch-cta-box p { font-size: 11pt; color: var(--creme); margin: 0; }
+  .pitch-cta-box strong { color: var(--creme); }
+
+  /* OUTRO */
+  .outro-page { background: var(--creme); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 30mm 25mm; }
+  .outro-decor { color: var(--orange); font-size: 24pt; margin-bottom: 6mm; letter-spacing: 0.5em; }
+  .outro-headline { font-family: 'Philosopher', serif; font-size: 42pt; color: var(--petrol); line-height: 1.05; margin-bottom: 10mm; font-weight: 700; }
+  .outro-headline em { font-style: italic; color: var(--orange); }
+  .outro-body { font-size: 13pt; line-height: 1.6; max-width: 135mm; margin: 0 auto 8mm auto; }
+  .outro-signature { font-family: 'Philosopher', serif; font-style: italic; font-size: 22pt; color: var(--orange); margin-top: 6mm; }
+  .outro-postscript { margin-top: 12mm; padding-top: 8mm; border-top: 1px solid rgba(18, 130, 140, 0.25); font-size: 10pt; line-height: 1.55; max-width: 140mm; color: var(--teal); opacity: 0.85; font-style: italic; }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: COVER -->
+<div class="page cover">
+  <div class="cover-top">
+    <div class="cover-brand">MUM·LIFE·BALANCE</div>
+    <div class="cover-tag">0€ KI-Toolkit</div>
+  </div>
+  <div class="cover-main">
+    <h1>KI plant dein <em>Business.</em></h1>
+    <div class="cover-sub">
+      Die zwei Prompts, mit denen ich zwei Businesses neben vier Kindern führe — und meinen kompletten Monatsplan in 30 Minuten fertig habe.
+    </div>
+  </div>
+  <div class="cover-bottom">
+    <div class="cover-byline">
+      Patricia Ulmann
+      <small>Mum Life Balance · Schweiz</small>
+    </div>
+    <div class="cover-meta">
+      Für Mama-Unternehmerinnen,<br>die planlos posten satt haben
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 2: HI DU -->
+<div class="page">
+  <div class="eyebrow">Schön, dass du da bist</div>
+  <h1 class="page-title">Hey, du.</h1>
+  <div class="hi-letter">
+    <p>Heute Morgen haben meine vier Kinder gefrühstückt, und in der Zeit war mein kompletter Juni-Plan für beide Businesses fertig. In 30 Minuten, mit KI.</p>
+
+    <em class="italic-block">
+      Früher hätte ich dafür Tage gebraucht. Und noch früher hatte ich nicht mal einen Plan — ich habe einfach mehrmals die Woche irgendwas gepostet, ohne je etwas zu verkaufen.
+    </em>
+
+    <p>Heute übernimmt das mein <strong>Strategie-Assistent</strong>. Er stellt mir die richtigen Fragen, kennt meine Angebote und baut daraus meinen Monat. Mein <strong>Content-Assistent</strong> macht dann Woche für Woche die Post- und Story-Ideen daraus.</p>
+
+    <p>Das ist keine Magie. Das sind die richtigen Prompts — und genau die schenke ich dir hier. Du kannst sie ab heute für dein eigenes Business nutzen.</p>
+
+    <p>Pass auf hier, das wird gut.</p>
+
+    <div class="signature">Deine Patricia 💜</div>
+  </div>
+  <div class="page-number">02</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- PAGE 3: SO NUTZT DU -->
+<div class="page">
+  <div class="eyebrow">In 4 Schritten zum fertigen Plan</div>
+  <h1 class="page-title">So nutzt du<br>die <em>Prompts.</em></h1>
+  <ul class="howto-list">
+    <li class="howto-item">
+      <div class="howto-icon">1️⃣</div>
+      <div class="howto-text"><strong>Öffne ChatGPT oder Claude.</strong>Beide funktionieren. Ein kostenloses Konto reicht für den Anfang.</div>
+    </li>
+    <li class="howto-item">
+      <div class="howto-icon">2️⃣</div>
+      <div class="howto-text"><strong>Kopier Prompt 1 komplett rein.</strong>Die KI stellt dir dann nacheinander ein paar Fragen zu deinem Business.</div>
+    </li>
+    <li class="howto-item">
+      <div class="howto-icon">3️⃣</div>
+      <div class="howto-text"><strong>Antworte einfach, wie du reden würdest.</strong>Kein Fachchinesisch nötig. Danach bekommst du deinen Monatsplan.</div>
+    </li>
+    <li class="howto-item">
+      <div class="howto-icon">4️⃣</div>
+      <div class="howto-text"><strong>Dann Prompt 2 hinterher.</strong>Der macht aus deinem Plan die fertigen Post- und Story-Ideen für jede Woche.</div>
+    </li>
+  </ul>
+  <div class="divider"></div>
+  <p style="margin-top:5mm;">Mehr braucht's nicht. Du musst nichts können ausser deine Antworten eintippen — den Rest denkt die KI mit.</p>
+  <div class="page-number">03</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- PAGE 4: PROMPT 1 -->
+<div class="page">
+  <div class="prompt-header">
+    <div class="prompt-number">1</div>
+    <div class="prompt-label">Strategie-Assistent</div>
+  </div>
+  <h2 class="prompt-title">Dein <em>Monatsplan</em>.</h2>
+  <div class="copy-hint">↓ Alles markieren und in ChatGPT / Claude kopieren</div>
+  <div class="prompt-box">
+<pre>Du bist mein persönlicher Strategie-Assistent für mein Business als
+Mama-Unternehmerin. Dein Job: mit mir zusammen einen klaren Plan für
+diesen Monat erarbeiten, der zu meinem Mama-Alltag passt — damit ich
+nicht mehr planlos poste, sondern jede Woche weiss, worüber ich spreche
+und wann ich was anbiete.
+
+So gehst du vor:
+
+SCHRITT 1 — Stell mir diese Fragen, EINE nach der anderen, und warte
+jeweils auf meine Antwort, bevor du zur nächsten gehst:
+1. Was verkaufe ich gerade (meine Angebote) und zu welchem Preis?
+2. Habe ich ein kostenloses Angebot, mit dem mich neue Leute
+   kennenlernen? Welches?
+3. Was ist mein wichtigstes Ziel diesen Monat, als Zahl?
+   (z.B. neue Kontakte, Verkäufe)
+4. Welches EINE Thema soll diesen Monat im Mittelpunkt stehen?
+5. Wie viel Zeit habe ich realistisch pro Woche fürs Business?
+6. Was steht privat an, das mich bremsen könnte?
+   (Ferien, stressige Wochen, Geburtstage)
+
+SCHRITT 2 — Wenn du alle Antworten hast, erstell mir:
+- eine Hauptbotschaft für den Monat (1-2 Sätze, mein roter Faden)
+- einen Wochen-Plan: pro Woche EIN Schwerpunkt-Thema, das auf mein
+  Monatsziel einzahlt
+- pro Woche: worüber ich Mehrwert gebe UND wann ich mein Angebot
+  platziere
+- die 3 wichtigsten To-Dos pro Woche
+
+Regeln: Sprich mit mir wie eine Freundin, die einen Schritt weiter ist —
+direkt und ohne Fachchinesisch. Frag nach, wenn dir etwas fehlt.
+Erfinde keine Zahlen — nimm nur, was ich dir sage.</pre>
+  </div>
+  <div class="page-number">04</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- PAGE 5: PROMPT 2 -->
+<div class="page">
+  <div class="prompt-header">
+    <div class="prompt-number">2</div>
+    <div class="prompt-label">Content-Assistent</div>
+  </div>
+  <h2 class="prompt-title">Deine <em>Wochen-Ideen</em>.</h2>
+  <div class="copy-hint">↓ Direkt nach Prompt 1 in denselben Chat kopieren</div>
+  <div class="prompt-box">
+<pre>Jetzt bist du mein Content-Assistent. Nimm den Monatsplan von oben und
+mach daraus konkrete Ideen, die ich direkt umsetzen kann:
+
+Für JEDE Woche:
+- 3 Beitrags-Ideen (Reel oder Karussell), passend zum Wochen-Thema
+- 3 Story-Ideen für die Woche
+- mindestens 1 Beitrag, der zu meinem kostenlosen Angebot führt
+
+Bei jeder Idee gib mir:
+- einen Aufhänger in einem Satz, der zum Weiterschauen bringt
+- in einem Satz: was die Leserin konkret mitnimmt
+
+Gib mir alles als einfache Wochen-Liste zum Abarbeiten. Halte es so,
+dass ich es neben den Kindern in kurzen Zeitfenstern schaffe.</pre>
+  </div>
+  <div class="divider"></div>
+  <p style="margin-top:5mm;"><strong>Mein Tipp:</strong> Speicher dir die Antworten an einem festen Ort — bei mir ist das ein simples Notizbuch-Tool, in dem alle Pläne zusammenlaufen. So wird aus losen Ideen ein System, an das du dich Woche für Woche hältst.</p>
+  <div class="page-number">05</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- PAGE 6: PITCH / WARTELISTE -->
+<div class="page pitch-page">
+  <div class="pitch-eyebrow">Nächsten Monat · Brandneu</div>
+  <h1 class="pitch-title">Die <em>Mum Business<br>Academy.</em></h1>
+  <div class="pitch-sub">
+    Das hier waren zwei Prompts. In der Academy baust du dir die ganze KI-Crew — die deine Freebies und Angebote kennt und Woche für Woche für dich mitdenkt.
+  </div>
+  <ul class="pitch-list">
+    <li>Dein Strategie-Assistent, der deinen Monat plant — abgestimmt auf deine echten Angebote</li>
+    <li>Dein Content-Assistent, der dir Posts und Stories vordenkt, während du Mama bist</li>
+    <li>Dein eigenes digitales Produkt, Schritt für Schritt aufgebaut</li>
+    <li>Ein System, das im Hintergrund weiterläuft, auch an deinen vollen Tagen</li>
+    <li>Zweimal im Monat ein Live-Call, damit du nie stecken bleibst</li>
+  </ul>
+  <div class="pitch-cta-box">
+    <div class="pitch-cta-box-title">Die Warteliste ist offen.</div>
+    <p>Trag dich ein und sei als Erste dabei, wenn die Türen aufgehen — zum <strong>Pioneer-Preis</strong>, bevor es alle sehen. Antworte einfach mit dem Wort <strong>WARTELISTE</strong>, und ich setz dich auf die Liste.</p>
+  </div>
+  <div class="page-number">06</div>
+  <div class="footer-brand">mumlifebalance.ch</div>
+</div>
+
+<!-- PAGE 7: OUTRO -->
+<div class="page outro-page">
+  <div class="outro-decor">· · ·</div>
+  <h1 class="outro-headline">Du <em>schaffst</em><br>das.</h1>
+  <div class="outro-body">
+    <p>Fang mit einem Prompt an. Heute. Du wirst überrascht sein, wie viel Klarheit ein einziger Plan bringt — und wie viel ruhiger sich deine Woche anfühlt, wenn du weisst, was dran ist.</p>
+    <p>Und wenn du Fragen hast, bin ich da — per DM auf Instagram <strong>(@patricia_ulmann)</strong> oder als Antwort auf meine Mails. Du musst das nicht allein machen.</p>
+  </div>
+  <div class="outro-signature">Patricia 💜</div>
+  <div class="outro-postscript">
+    <strong style="color: var(--petrol);">PS:</strong> Zeitmanagement als Mama heisst heute nicht „mehr schaffen". Es heisst: die KI arbeitet für dich, während du Mama bist.
+  </div>
+  <div class="page-number">07</div>
+  <div class="footer-brand">mumlifebalance.ch · Patricia Ulmann · Schweiz</div>
+</div>
+
+</body>
+</html>
