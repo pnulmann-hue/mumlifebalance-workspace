@@ -72,8 +72,7 @@ Weniger neu bauen als gedacht — vor allem **erweitern, anketten, MBA oben drau
 - [ ] #46 (Alt-Mischfunnel) gegen #53/#54 prüfen → Doppel-Mail-Risiko entschärfen
 - [ ] #44/#48/#51 (Post-Kauf) um einen Cross-Sell zur nächsten Stufe ergänzen
 - [x] Bio-Check #58/#59, Mama-Zeit #15, Willkommens-Sequenz #1 ausgelesen (2026-06-02): #58 kettet #53→#55→#54 · #59 reine PDF-Auslieferung · #15 Legacy · #1 generischer Newsletter-Willkommen
-- [x] Pitch-Mails #53 gelesen (2026-06-02) — siehe unten
-- [ ] Noch offen: #54-Mails im Detail (Struktur + 0%-Klick prüfen)
+- [x] Pitch-Mails #53 + #54 gelesen (2026-06-02) — siehe unten
 
 ## Mail-Qualität — #53 „Finde dein Thema" (gelesen 2026-06-02)
 
@@ -92,6 +91,24 @@ Weniger neu bauen als gedacht — vor allem **erweitern, anketten, MBA oben drau
 **Blacklist:** „Kennst du das?" (M1-Betreff) steht auf der KI-Phrasen-Blackliste → beim Polieren ersetzen.
 
 **Verdikt:** Mails sind inhaltlich + optisch brauchbar — behalten und **gezielt den CTA polieren** (klarer Button, ein Link, Pain→Lösung→Klick), nicht neu schreiben.
+
+## Mail-Qualität — #54 „IG-Kundenmaschine" (gelesen 2026-06-02)
+
+**Struktur:** identisch zu #53 — If/Else (Tag „Instagram-Kundenmaschine" da → raus) → 6 Mails (2-Tage-Takt, letzte 1 Tag) → Ziel → Ende.
+
+**Betreffe:**
+- M1 (Kopie): „Du hast dein Thema. Aber Instagram zieht trotzdem nicht." (5 ges · 60% Öffn · **0% Klick**)
+- M2: „…warum dein Content niemanden zum Kaufen bringt — und was stattdessen wirkt." (5 ges · 40% Öffn · **0% Klick**)
+- M3: „Krank im Bett — und trotzdem ein Verkauf auf Instagram."
+- M4: „Ich habe keine Zeit für ein 8-Wochen-Programm."
+- M5: „38.354 Aufrufe. 1.050 Interaktionen. In einem Monat." (Zahl beim Polieren auf Echtheit prüfen)
+- M6: „Jetzt oder weiter warten — du entscheidest."
+
+## 🚨 SYSTEMISCHER BEFUND: 0% Klick über beide Pitch-Funnels
+
+Beide gelesenen Pitch-Sequenzen (#53 + #54) öffnen gut (40–60%), aber **0% Klick** auf allen geprüften Mails. Kleine Stichprobe (5–9 Versände je Mail), aber durchgängig null Klicks bei guter Öffnung = der **CTA/Link ist der systemische Engpass**, nicht der Hook oder Inhalt.
+
+**Konsequenz für den Umbau:** Bevor (oder während) wir die MBA-Spitze draufsetzen, muss der **CTA-Mechanismus über alle Pitch-Mails gefixt werden** — sonst leitet eine längere Kette nur mehr Leute an derselben 0%-Klick-Stelle vorbei. CTA-Fix = höchster Hebel. Das gewählte CTA-Muster wird dann auch Vorlage für die MBA-Mails.
 
 ---
 
