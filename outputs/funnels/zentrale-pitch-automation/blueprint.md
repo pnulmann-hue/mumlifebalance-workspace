@@ -57,6 +57,32 @@ tags: [funnel, mba, pitch-automation, intern]
 
 ---
 
+## 🔍 Live-Befund aus ActiveCampaign (Chrome-Check 2026-06-02)
+
+**Wichtig:** Patricia hat bereits eine aufsteigende Pitch-Kette gebaut — der MBA fehlt nur als Spitze.
+
+Beispiel **„Von 0 auf echt" (#40)** — kompletter Flow:
+```
+Trigger Formular „Von 0 auf echt"
+ → interne Benachrichtigung info@mumlifebalance.ch
+ → AUSLIEFERUNG „Hier ist dein Workbook" (5 gesendet · 60% Öffnung · 60% Klick)
+ → 1 Std warten → Tag „Automation Finde dein Thema"  → startet Funnel #53 (39)
+ → 5 Tage warten → Tag „Automation IG Kundenmaschine" → startet Funnel #54 (333)
+ → 7 Tage warten → Tag „Automation Expertin statt Verkäuferin" → startet Funnel #55 (97)
+ → Automation endet
+```
+
+**Erkenntnisse:**
+- Auslieferung + aufsteigender Pitch (39 → 333 → 97) sind schon da — das ist faktisch **Variante B in Teilen gebaut**.
+- Die eigentlichen Pitch-Mails liegen in den Unter-Funnels **#53 / #54 / #55** (per Tag angestossen) — noch nicht inhaltlich geprüft.
+- **MBA (990) kommt nirgends vor** → das ist die Hauptlücke.
+- „Kurs-gekauft"-Ziele existieren bereits (Finde dein Thema = 540 · IG-Kundenmaschine = 562 · Expertin = 571) → Exit-bei-Kauf im Ansatz vorhanden.
+- Konsequenz: **erweitern + bündeln** statt neu bauen — MBA als Spitze, dann zentralisieren.
+
+**Verfügbare AC-Listen (für den Build):** doTERRA Interessenten (18), doTERRA Kunden (20), Kunden (16), Many-Chat Kontakte (23), Quiz-Kontakte (24), Regulärer Newsletter/Interessenten (2), Willkommenssequenz (3), Masterclass (19), Master SMS (22).
+
+---
+
 ## Produkt-Treppe (Ist-Stand, Preise aus active-funnels.json)
 
 | Stufe | Produkt | Preis |
