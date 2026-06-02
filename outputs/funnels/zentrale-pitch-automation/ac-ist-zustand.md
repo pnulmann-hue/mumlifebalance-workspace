@@ -31,6 +31,8 @@ tags: [funnel, mba, pitch-automation, intern]
 | 43 | Webinar Businessaufbau | Reine Anmelde-Bestätigung | 1 Mail → Ende | — | nein |
 | 42 | Magnet-ich | Auslieferung | 1 Mail, **0 gesendet (nie genutzt)** | — | nein |
 | 37 | 3-Schritte Methode | Nurture (4 Mails) | echtes Engagement (30 gesendet) → Liste „Newsletter" | — | nein |
+| 1 | Willkommens-Sequenz | Generischer Newsletter-Willkommen | Trigger Tag „Newsletter" → 5 Min → „Willkommen bei Mum-Life-Balance! 🌸" (7 ges · 42,9% Öffn) → 2T → … | — (kein Produkt-Pitch) | nein |
+| 15 | Mama-Zeit | **LEGACY** | Alt-Funnel „Me-Time / Mama-Selbstbewusstsein" (Mental-Load-Ära) → 12 ges · 41,7% Öffn · 0% Klick. Gehört NICHT zur Network-Mama-Maschine | — | nein |
 | 60 / 63 | Webinar Mama-CEO (1+2) | **TOT** | Builder leitet auf Liste um — nicht mehr erreichbar | — | — |
 
 ## doTERRA (alle aktiv, separat)
@@ -46,11 +48,11 @@ tags: [funnel, mba, pitch-automation, intern]
 
 ## Die 6 Kernbefunde
 
-1. **Aufsteigende Kette existiert — aber nur halb verdrahtet und endet UNTER dem MBA.** Aktiv kettet nur Quiz #52 → #53 → #54 und Von-0-auf-echt #40 → #53 → #54 → #55. Die Pitch-Funnels selbst ketten nicht weiter (enden mit „Kurs gekauft"-Ziel).
+1. **Aufsteigende Kette existiert — aber nur halb verdrahtet und endet UNTER dem MBA.** Drei aktive Ketten: Bio-Check #58 → #53 → #55 → #54 · Von-0-auf-echt #40 → #53 → #54 → #55 · Quiz #52 → #53 → #54. Reihenfolge je Kette unterschiedlich (inkonsistent). Die Pitch-Funnels selbst ketten nicht weiter (enden mit „Kurs gekauft"-Ziel).
 
 2. **MBA / Mum Business Academy kommt in KEINER Automation vor.** Kein Tag, kein Betreff, keine Liste, kein Ziel. Das ist die grösste Lücke — die ganze Maschine hört bei 333/97 auf.
 
-3. **Drei höhere Pitch-Sequenzen hängen in der Luft:** #55 (Expertin), #56 (digitale Produktwelt), #57 (eigenes Angebot) sind gebaut, aber niemand kettet sie an (0 gesendet / kein Trigger). Fertige Verkaufs-Mails liegen ungenutzt herum.
+3. **Zwei höhere Pitch-Sequenzen hängen in der Luft:** #56 (digitale Produktwelt) und #57 (eigenes Angebot) sind gebaut, aber niemand kettet sie an (0 gesendet / kein Trigger). Fertige Verkaufs-Mails liegen ungenutzt. (#55 Expertin IST verkettet — über Bio-Check #58 + Von-0-auf-echt #40.)
 
 4. **Mama-CEO ist nur Post-Kauf.** #62 = 1 Willkommensmail nach Kauf. Die Webinar-Funnels #60/#63 sind tot. Es gibt aktuell KEINE Pre-Sale-Pitch-Sequenz für Mama-CEO oder MBA.
 
@@ -69,7 +71,8 @@ Weniger neu bauen als gedacht — vor allem **erweitern, anketten, MBA oben drau
 - [ ] Verwaiste #55/#56/#57 entweder einketten oder bewusst stilllegen
 - [ ] #46 (Alt-Mischfunnel) gegen #53/#54 prüfen → Doppel-Mail-Risiko entschärfen
 - [ ] #44/#48/#51 (Post-Kauf) um einen Cross-Sell zur nächsten Stufe ergänzen
-- [ ] Bio-Check #58/#59, Mama-Zeit #15, Willkommens-Sequenz #1 noch auslesen (Extension war weg)
+- [x] Bio-Check #58/#59, Mama-Zeit #15, Willkommens-Sequenz #1 ausgelesen (2026-06-02): #58 kettet #53→#55→#54 · #59 reine PDF-Auslieferung · #15 Legacy · #1 generischer Newsletter-Willkommen
+- [ ] Noch offen: Pitch-Mails #53/#54 inhaltlich lesen (polieren, Blacklist-Phrasen fixen)
 
 ---
 
