@@ -48,17 +48,23 @@ Compliance-Hinweis: Bewusst «lebende Kulturen» statt einer Verdauungs-Wirkauss
 
 ---
 
-## 3 · MetaPWR Advantage — mein Beauty-from-within-Moment
+## 3 · MetaPWR Advantage — mein flüssiges Morgen-Ritual
 
-> Ab Mitte 30 willst du dich in deiner Haut wohlfühlen — mittendrin zwischen Schulweg, Job und Abendessen.
+> Wusstest du, dass die körpereigene Kollagenbildung schon ab Mitte 20 langsam nachlässt? Ein ganz natürlicher Prozess — der gerade ab Mitte 30 vielen Mamas bewusst wird.
 >
-> MetaPWR Advantage ist mein flüssiges Kollagen-Getränk für meine tägliche Routine. Schnell genommen, bevor der Tag mich schnappt.
+> MetaPWR Advantage ist mein Ritual am Morgen: Marine-Kollagen-Tripeptide, NMN, Resveratrol, Hyaluronsäure und Sanddorn — ein Sachet in mein Glas Wasser, fertig.
 >
-> Ein Moment am Morgen, der ganz mir gehört. ✨
+> Ein Moment Selbstfürsorge, bevor der Familientag mich schnappt. ✨
 >
 > 👉 Tippe **GLOW** für meine Anwendung.
 
-Compliance-Hinweis: Kollagen hat keine EFSA-zugelassene Haut-/Anti-Aging-Aussage → bewusst als Ritual/Routine positioniert, keine Wirkaussage zu Haut, Falten oder Stoffwechsel/Abnehmen.
+**Zusammensetzung (verifiziert):** Marine-Kollagen-Tripeptide (3 g, >70 % Tripeptide), Healthspan-Komplex mit NMN + Resveratrol, NADH, Hyaluronsäure, Sanddorn-, Rotorangen- & Rosenapfel-Extrakt, Phytoceramide aus Reis, MetaPWR-Ölblend. **Kein Chrom.**
+
+Compliance-Hinweise (streng EU/CH-konform):
+- **Inhaltsstoffe aufzählen = erlaubt** (Zusammensetzung, keine Wirkaussage). Jedem Stoff ein Versprechen anzuhängen = nicht erlaubt.
+- **Kollagen-Abbau ab Mitte 20** = echter physiologischer Fakt, als Aufklärung erlaubt. **Keine Brücke** «…deshalb füllt MetaPWR es wieder auf» — Kollagen/NMN/Resveratrol/Hyaluron haben keine zugelassene Haut-/Anti-Aging-/Longevity-Aussage.
+- **Kein Blutzucker.** Advantage enthält kein Chrom (der einzige Stoff mit zugelassener Blutzucker-Aussage). Der Blutzucker-Bezug stammt aus US-Marketing bzw. MetaPWR **Assist** (Maulbeerblatt) und ist in CH/EU keine erlaubte Angabe.
+- Achtung Nebeneinanderstellung: Fakt direkt vor Produkt kann als implizite Wirkaussage gewertet werden → bewusst ohne «deshalb».
 
 ---
 
