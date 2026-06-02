@@ -1,26 +1,45 @@
 {
-  "profil": "mentoring",
-  "modus": "tagesplan",
-  "disg": "Rot",
-  "disg_sekundaer": "Gelb",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
-  "aktives_produkt": "Bio-Check",
-  "wochen_fokus": "(kein Fokus eingetragen)",
-  "kontext_snapshot": {
-    "kw": 23,
-    "wochentag": "Montag",
-    "datum": "2026-06-01"
-  },
-  "fragen": [
-    "Was hast du erlebt?",
-    "Hast du grad einen Gedanken zum Thema?",
-    "Oder Standard-Pool?"
-  ],
-  "gesendet_am": "2026-06-01T09:42:39.970Z",
-  "telegram_message_id": 580,
-  "patricia_antworten": [],
-  "patricia_fotos": [],
-  "patricia_videos": [],
-  "status": "warten_auf_antwort"
+  "datum": "2026-06-02",
+  "profile": {
+    "mentoring": {
+      "profil": "mentoring",
+      "modus": "sales-day",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Instagram-Strategie für NM",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "kontext_snapshot": {
+        "kw": 23,
+        "wochentag": "Dienstag",
+        "datum": "2026-06-02"
+      },
+      "gesendet_am": "2026-06-02T05:14:11.255Z",
+      "telegram_message_id": 581,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    },
+    "doterra": {
+      "profil": "doterra",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "kontext_snapshot": {
+        "kw": 23,
+        "wochentag": "Dienstag",
+        "datum": "2026-06-02"
+      },
+      "gesendet_am": "2026-06-02T05:14:11.314Z",
+      "telegram_message_id": 582,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    }
+  }
 }
