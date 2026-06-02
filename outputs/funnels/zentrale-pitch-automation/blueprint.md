@@ -62,10 +62,14 @@ tags: [funnel, mba, pitch-automation, intern]
 | Stufe | Produkt | Preis |
 |---|---|---|
 | A (0€) | 6 Freebies | 0 |
-| B | Finde dein Thema als Network-Mama | 39 |
-| E | Expertin statt Verkäuferin | 97 |
-| M | Instagram-Kundenmaschine / Mama-CEO | 333 (Mama-CEO Pilot 249) |
-| Z | **MBA — Mum Business Academy** | 990 (Pioneer) / 1347 (Liste) |
+| B | Finde dein Thema als Network-Mama (Minikurs) | 39 |
+| Mittel | **3 grössere Kurse — je ein eigenes Thema** | je ~333 |
+| · | Instagram-Kundenmaschine (Instagram → Kunden) | 333 |
+| · | Digitale Produktwelt (eigenes Produkt erstellen) | 333 |
+| · | Mama-CEO (Business neben Familie, 5 Säulen) | 333 |
+| Z | **MBA — Mum Business Academy = BUNDLE über allen dreien** | 990 (Pioneer) / 1347 (Liste) |
+
+> **Bestätigt 2026-06-02:** MBA ist das Bundle, das alle 3 grösseren Kurse abdeckt. Die 3 Kurse lösen je *ein* Problem → eignen sich perfekt als **gezielter Downsell** (je nach Einstiegs-Freebie/Pain), nicht als stumpfe Preistreppe.
 
 ---
 
@@ -111,7 +115,55 @@ Webinar-Brücke → MBA 990, 3-4 Mails.
 
 ---
 
-## Webinar — die Rolle (beide Varianten)
+## VARIANTE C — „Hoch ankern, dann gezielt downsellen" (Patricias Idee, empfohlen)
+
+Nutzt aus, dass MBA das **Bundle über den 3 Kursen** ist: erst die Komplettlösung pitchen, wer die nicht will, kriegt den **einen** Kurs, der zu seinem Pain passt (Anker-Effekt — nach 990 wirken 333 klein).
+
+```
+Freebie (0€) → ① Mehrwert (1-2 Mails) → ② Minikurs 39 (Win)
+   → ③ MBA 990 (grosser Pitch + Webinar-Brücke)
+   → ④ kein MBA? Downsell auf den EINEN passenden Kurs:
+        BIO / LEAD / STORY   → Instagram-Kundenmaschine 333
+        QUIZ / ECHT1         → Digitale Produktwelt 333
+        Zeit / Familie       → Mama-CEO 333
+```
+
+**5-6 Mails, alle 3-4 Tage. Jede Mail: Emotion + 1 konkreter Tipp + 1 CTA.**
+
+| # | Tag | Inhalt | CTA |
+|---|---|---|---|
+| 1 | 0-1 | Quick Win zum Freebie-Thema + 1 sofort umsetzbarer Tipp | (kein Pitch, nur Mehrwert) |
+| 2 | 3 | Pain-in-Moment + Mini-Tutorial → No-Brainer Minikurs „Finde dein Thema" 39 | Minikurs 39 |
+| 3 | 6 | Emotionale Wende-Story → das grosse Bild = MBA. Webinar-Einladung ODER MBA-Salespage | MBA / Webinar |
+| 4 | 9 | MBA-Transformation + Käuferinnen-Stimmen + „MBA = alles aus einer Hand" | MBA |
+| 5 | 12 | MBA-Deadline/Knappheit + P.S. | MBA |
+| 6 (Downsell) | 15 | „MBA zu viel? Dann starte mit dem, was dich JETZT am meisten drückt" → der EINE getaggte Kurs | passender 333er |
+
+**Diagnose-Downsell automatisch über AC-Tags:** Das Einstiegs-Freebie verrät den Pain → AC lenkt Mail 6 auf den passenden Kurs. Kein Auswahl-Überfluss (Hormozi: 1 Angebot, 1 CTA).
+
+**Plus:** ankert hoch, schnell beim grossen Umsatz, nutzt die Bundle-Logik elegant.
+**Minus:** Sprung 39 → 990 ist gross → **Webinar-Brücke vor dem MBA-Pitch hier fast Pflicht**.
+
+---
+
+## Was passiert am Ende, wenn nichts gekauft wurde (gilt für alle Varianten)
+
+```
+④ Downsell auch nicht gekauft?
+   → ⑤ EXIT: Tag „pitch-durchlaufen-kein-kauf"
+        → ALLGEMEINER VERTEILER (der „grosse Topf"):
+           • laufende Mehrwert-Mails
+           • Reichweiten-Posts holen weiter nach
+           • PITCH-MAILS bei jedem LAUNCH (MBA-Cart, Aktionen) an die GANZE Liste
+   → ⑥ periodisch (quartalsweise) RE-ENGAGEMENT + BEREINIGUNG:
+        Nicht-Öffner reaktivieren → wer tot bleibt: raus (Zustellbarkeit + Kosten)
+```
+
+**Kernpunkt:** Der automatisierte Funnel endet, der **Verteiler ist endlos**. Genau das ist Patricias Juni-Plan — „viele Menschen rein, denen ich bei jedem Launch die Pitchmails schicke". Die meisten kaufen nicht beim ersten Kontakt, sondern beim dritten/fünften. Bereinigung schützt Zustellbarkeit + AC-Kosten (AC-Funktionen: Nicht-Öffner + inaktive Kontakte finden).
+
+---
+
+## Webinar — die Rolle (alle Varianten)
 
 - Das Webinar ist der **Brücken-Touchpoint kurz VOR dem MBA-Pitch** — bei einem 990er-Produkt enorm hilfreich, aber **kein Blocker** für den Start.
 - **Nicht zwingend evergreen-mit-Ads.** Für den Anfang reicht: MBA-Salespage direkt verlinken; Webinar später ergänzen.
@@ -130,7 +182,7 @@ Webinar-Brücke → MBA 990, 3-4 Mails.
 
 ## Offene Entscheidungen / nächste Schritte
 
-- [ ] **Variante A oder B wählen** → dann schreibe ich die Mails aus (Brand-Voice, deutsch, ss, keine Stakkato, kein Mentorin-Name)
+- [ ] **Variante B oder C wählen** (A = direkt-MBA ohne Diagnose-Downsell ist abgehängt) → dann schreibe ich die Mails aus (Brand-Voice, deutsch, ss, keine Stakkato, kein Mentorin-Name)
 - [ ] Bestehende Auslieferungs-Automationen (#47/#40/#52/#45) inhaltlich in AC prüfen (kann API nicht lesen — Patricia zeigt oder bestätigt)
 - [ ] Tag `0e-lead-aktiv` + Goal/Exit-Bedingung in AC anlegen
 - [ ] Starterguide-Auslieferung neu bauen
