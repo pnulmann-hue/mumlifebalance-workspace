@@ -5,12 +5,14 @@ tags: [funnel, mba, pitch-automation, intern]
 # ActiveCampaign — Ist-Zustand aller Automationen (Live-Check 2026-06-02)
 
 > INTERN. Ausgelesen über Chrome aus mumlifebalance.activehosted.com. Nichts geändert (nur gelesen, Revisions-Dialoge immer „Abbrechen").
-> Nicht erfasst: #58 Bio-Check, #59 Bio-Check PDF, #15 Mama-Zeit, #1 Willkommens-Sequenz (Extension-Disconnect). #60/#63 = tote Weiterleitungen.
+> Vollständig erfasst (2026-06-02, inkl. Nachtrag #58/#59/#15/#1). #60/#63 = tote Weiterleitungen.
 
 ## Mentoring / Onlinebusiness
 
 | ID | Name | Typ | Inhalt kurz | Kettet zu | Pitcht MBA? |
 |---|---|---|---|---|---|
+| 58 | Bio-Check | Auslieferung + Kette | „Dein Bio-Check ist startklar 🌿" (9 ges · 77,8% Öffn · 77,8% Klick) → 1T → #53 → 10T → #55 → 10T → #54 → Ende | #53 → #55 → #54 | nein |
+| 59 | Bio-Check PDF | Reine Auslieferung | „Dein Bio-Check-PDF ist fertig" (4 ges · 100%/100%) → Ende. Trigger: Tag „Bio-Check abgeschlossen" | — | nein |
 | 40 | Von 0 auf echt | Auslieferung + Kette | Workbook → 1h → #53 → 5T → #54 → 7T → #55 → Ende | #53 → #54 → #55 | nein |
 | 52 | 0€ Potenzial-Test (Quiz) | Auslieferung + Orchestrator | Quiz-Ergebnis → #53 → (wait) → #54 | #53 → #54 | nein |
 | 53 | Funnel Finde dein Thema (39) | **Pitch-Sequenz** | 4 Mails („Viel posten. Wenig Wirkung…" etc.), Ziel „Kurs gekauft" → Ende | — (endet) | nein |
