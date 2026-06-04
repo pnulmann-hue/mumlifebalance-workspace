@@ -54,18 +54,85 @@ Marketing-Pitch:
 - [ ] Skill nutzt Patricia-Voice (Du-Anrede, warm, kein Hype)
 - [ ] Skill-Doku in CLAUDE.md ergänzt
 
-## Stufe 1 — Hook-Generator (5-7 Tage, KW24-25)
+## Stufe 0.5 — Transformation-Mapper + Hybrid-Decision (1-2 Tage, sofort nach Onboarding)
 
-**Ziel:** Aus Mentee-Profil + Patricia-Pattern-Wissen → 3 Hook-Varianten pro Post
+**Ziel:** Bevor PIA Content generiert, klärt sie WAS die Mentee verkauft (Transformation, nicht Produkt) und WIE (Pfad A/B/C).
 
 ### Was zu bauen ist
 
-- Slash-Command `/mentee-hooks [name] [thema]`
+- Slash-Command `/mentee-transformation [name]`
 - Liest `outputs/mentees/[name]/profile.md`
-- Liest `context/content-radar-juni-2026.md` für Pattern-Liste
-- Liest `context/reichweiten-formel-mama-identity.md` + `context/content-formel-5-typen.md`
-- Generiert 3 Hook-Varianten in unterschiedlichen Pattern (z.B. Zeitanker · POV · Contrarian)
-- Output: `outputs/mentees/[name]/hooks/[YYYY-MM-DD]-[thema].md`
+- Stellt Fragen-Set in 2 Phasen:
+
+**Phase 1 — Transformation-Mapping** (5 Fragen):
+1. Welches Problem löst dein Network-Produkt für deine Kundin? (NICHT was es IST — sondern was es VERÄNDERT)
+2. Wie fühlt sich deine Kundin VOR dem Produkt? (3 Adjektive + 1 Situation)
+3. Wie fühlt sie sich DANACH? (3 Adjektive + 1 Situation)
+4. Was würde sie über sich selbst sagen, wenn sie's geschafft hat? (1 Satz)
+5. Welches Wissen aus deinem Network könntest du auch ohne Produkt vermitteln? (= Kerntransformation)
+
+**Phase 2 — Hybrid-Entscheidung** (3 Fragen):
+1. Hast du Lust auf eigene digitale Produkte? (Ja / Nein / Vielleicht)
+2. Wenn ja: was ist näher dran — Mini-Produkt (9-37€) oder Großkurs (ab 499€)?
+3. Wenn nein/vielleicht: würdest du erstmal einen Leadmagnet bauen + testen welche Resonanz da ist?
+
+**Output:** `outputs/mentees/[name]/transformation.md`
+- 3-5 Transformation-Statements (in Mentee-Voice)
+- Pfad-Entscheidung (A/B/C)
+- Empfohlene nächste Stufe für PIA
+
+## Stufe 1 — Content-Generator mit Brücke (5-7 Tage, KW24-25)
+
+**Ziel:** Aus Mentee-Profil + Transformation + Patricia-Pattern → Content mit eingebauter Brücke zum Produkt
+
+### Was zu bauen ist
+
+- Slash-Command `/mentee-content [name] [thema]`
+- Liest `outputs/mentees/[name]/profile.md` + `transformation.md`
+- Liest `context/content-radar-juni-2026.md`, `reichweiten-formel-mama-identity.md`, `content-formel-5-typen.md`
+- Generiert:
+  - 3 Hook-Varianten (Pattern-Mix: Zeitanker · POV · Contrarian)
+  - Caption mit 80/20-Struktur (Transformation/Brücke)
+  - Story-Sequenz-Vorschlag (5-6 Slides) mit Brücke am Ende
+  - CTA: subtil zum Network-Produkt ODER digitalen Produkt (je nach Pfad)
+- Output: `outputs/mentees/[name]/content/[YYYY-MM-DD]-[thema].md`
+
+**80/20-Regel als Pflicht-Filter:**
+- Hauptteil = Mentee-Erfahrung + Mehrwert + Mini-Lesson zur Transformation
+- Brücke = sanfte Überleitung zu Produkt/Empfehlung — Patricia-Frame „bei mir war"
+- Verboten: „Kauf bei mir!"-Sprache, Heilversprechen, Compliance-Verstösse
+
+## Stufe 1.5 — Leadmagnet-Builder (3-5 Tage, KW25-26)
+
+**Ziel:** Mentee bekommt einen Lead-Magnet der die Transformation vermittelt + zum Produkt brückt
+
+### Was zu bauen ist
+
+- Slash-Command `/mentee-leadmagnet [name]`
+- Liest `transformation.md` + Pfad-Entscheidung
+- Generiert je nach Pfad:
+  - **Pfad A:** Lead-Magnet → Mini-Produkt → Großkurs (Treppe)
+  - **Pfad B:** Lead-Magnet → Network-Empfehlung (E-Mail-Sequenz mit Brücke)
+  - **Pfad C:** Lead-Magnet als „Resonanz-Test" mit Frage am Ende: „Würdest du dazu einen Kurs kaufen?"
+- Liefert: Lead-Magnet-Outline (PDF/Workbook/Mini-Video-Kurs)
+- Plus: Landingpage-Text (Opt-in) + Thank-You-Text + 5-Mail-Sequenz mit Brücke
+- Output: `outputs/mentees/[name]/leadmagnet/[slug]/`
+
+## Stufe 1.7 — Content-Recycling-Maschine (2-3 Tage, KW26)
+
+**Ziel:** 1 Transformation → 1 Woche Content (Stories + Reels + Karussell + Mails)
+
+### Was zu bauen ist
+
+- Slash-Command `/mentee-recycle [name] [transformation-slug]`
+- Nimmt EINE Transformation-Statement
+- Generiert:
+  - 7 Story-Slides (über die Woche verteilt, mit unterschiedlichen Käufertypen)
+  - 3 Reels-Hooks (Zeitanker · POV · Contrarian — alle mit Brücke)
+  - 1 Karussell-Briefing (Listicle oder Vorher-Nachher)
+  - 5 Mails (E-Mail-Sequenz mit subtiler Brücke)
+- Alle Outputs lesen die Brand-Voice der Mentee + Network-Compliance-Filter
+- Output: `outputs/mentees/[name]/content/week-[KW]/`
 
 ## Stufe 2 — Telegram-Bot „PIA" (10-14 Tage, KW26-28)
 
