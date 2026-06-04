@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; }
+  .slide {
+    width: 1080px;
+    height: 1920px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-color: #29556d;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  /* sanfter Tiefen-Verlauf unten fuer Lesbarkeit + oben leichter Schatten */
+  .grad-top {
+    position: absolute; top: 0; left: 0; right: 0; height: 360px;
+    background: linear-gradient(180deg, rgba(12,28,48,0.34) 0%, rgba(12,28,48,0) 100%);
+  }
+  .grad-bottom {
+    position: absolute; bottom: 0; left: 0; right: 0; height: 1000px;
+    background: linear-gradient(180deg, rgba(12,28,48,0) 0%, rgba(12,28,48,0.55) 65%, rgba(12,28,48,0.75) 100%);
+  }
+  .tag {
+    position: absolute; top: 70px; left: 70px;
+    font-weight: 800; font-size: 30px; letter-spacing: 0.22em;
+    color: #f1ecdd; text-transform: uppercase;
+    text-shadow: 0 2px 14px rgba(12,28,48,0.45);
+  }
+  .textblock {
+    position: absolute; left: 64px; right: 64px; bottom: 250px;
+  }
+  /* Zitat-Box (klein) */
+  .quote {
+    display: inline-block;
+    background: #f1ecdd;
+    color: #29556d;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600; font-size: 46px; line-height: 1.18;
+    padding: 20px 30px; border-radius: 16px;
+    box-shadow: 0 10px 34px rgba(12,28,48,0.30);
+    margin-bottom: 26px;
+  }
+  /* Haupt-Aussage (gross, fett) */
+  .punch {
+    background: #f1ecdd;
+    color: #0c1c30;
+    font-family: 'Philosopher', serif;
+    font-weight: 700; font-size: 96px; line-height: 1.08;
+    padding: 40px 40px 44px 46px; border-radius: 22px;
+    box-shadow: 0 14px 40px rgba(12,28,48,0.34);
+    border-left: 14px solid #12828c;
+  }
+  .punch .accent { color: #12828c; }
+  .brand {
+    position: absolute; left: 70px; bottom: 80px;
+    font-family: 'Philosopher', serif; font-style: italic;
+    font-size: 34px; color: #f1ecdd;
+    text-shadow: 0 2px 14px rgba(12,28,48,0.5);
+  }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="grad-top"></div>
+    <div class="grad-bottom"></div>
+    <div class="tag">Mama-Business</div>
+
+    <div class="textblock">
+      <span class="quote">„Machst du wieder dein Ding am Handy?“</span>
+      <div class="punch">Ja. Und dieses „Ding“ zahlt<br>die <span class="accent">Rechnungen.</span></div>
+    </div>
+
+    <div class="brand">Mum Life Balance</div>
+  </div>
+</body>
+</html>
