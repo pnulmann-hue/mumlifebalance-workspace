@@ -609,8 +609,12 @@ WAS DU NACH LEKTION 3.6 HAST · SÄULE 3 KOMPLETT
 ### Arbeitsblatt (1 .docx-Datei)
 `mama-ceo-arbeitsblatt-saeule-3.docx` — 6 Lektions-Sektionen wie oben spezifiziert: Brain-Dump-Sortierung in 6 Bereiche · 4-Stufen-Skizze · Jahres-Übersicht-Matrix · Monatsplan + Beispiel-Woche-Grid mit Power-Slots · Notion-Einricht-Checkliste · 50%-Notfall-Plan.
 
-### Notion-Master-Template (Bonus)
-Bereits angelegt (laut Inhaltsverzeichnis). In Lektion 3.5 wird es vom Mentee dupliziert + befüllt. Prüfen dass die 4 DBs (Jahr/Monat/Woche/Tag) + Ziele + 90-Tage-Tracker im Template scharf sind.
+### Notion-Master-Template (Bonus) — ✅ Stand 2026-06-04
+Template-Seite: `3637078e-8b7e-8121-9f95-d2b377b283a7` („🎯 Mama-CEO Master-Template (für Mentees)").
+- ✅ **4-Stufen-Hierarchie + Ziele jetzt gebaut + verkettet:** Jahresplanung → Monatsplanung → Wochenplanung → Tagesplaner → Aufgaben (alle DUAL-Relations), Ziele quer zu Jahr/Monat/Woche. DS-IDs siehe Memory `reference_patricia-notion-planung.md`.
+- ✅ Aufgaben-DB (Hütchen) an Tag + Woche angedockt — der Cockpit-Bot (Säule 4) liest Tagesplaner → Aufgaben fürs tägliche Telegram-Briefing.
+- ✅ 90-Tage-Tracker + Mama-CEO-Matrix + Workflows + Produkte + Content-Management bereits im Template.
+- ⏳ **Einzige offene Mentee-Voraussetzung:** Patricia schaltet „Im Web veröffentlichen" + „Duplizieren als Vorlage erlauben" ein → Link in ThriveCart L3.5 + Telegram.
 
 ### ThriveCart-Setup-File
 `13-thrivecart-saeule-3-setup.md` neu anlegen (analog zu Säule 2) mit den 6 Beschreibungstexten + Säulen-Header + Upload-Checkliste.
@@ -623,7 +627,7 @@ Bereits angelegt (laut Inhaltsverzeichnis). In Lektion 3.5 wird es vom Mentee du
 |---|---|---|
 | **3.3** | Jahres-Strategie-Methodik (Monats-Trio Gratis/Mini/Gross + Transformation statt Produkt + Überthemen auf Wochen + Fixpunkte zuerst) | ✅ geklärt 2026-06-04 (Patricia O-Ton) |
 | **3.4** | Wochen-Logik geklärt: **Slot-für-Slot** · CEO-Fokus = Brille / Bereich = Aufgabe · Slots **individuell je Familie** (kein fixes 10-Slot-Modell) · aktive Bereiche werden **pro Monat** entschieden (nicht alle 6 jede Woche) | ✅ geklärt 2026-06-04 (Patricia O-Ton) |
-| **3.5** | Ist das Notion-Master-Template wirklich schon fertig + duplizierbar? Wo liegt der Share-Link für die Mentees? | ⏳ offen — Patricia prüft |
+| **3.5** | Notion-Master-Template: 4-Stufen-DBs + Relations + Aufgaben-Verkettung gebaut (2026-06-04). Einzig offen: Patricia legt Share-Schalter „Duplizieren als Vorlage erlauben" um + Link in L3.5/Telegram | ✅ gebaut · ⏳ Share-Link |
 | **3.6** | Notfall-Plan (Kind im Zentrum · Wochenplan trägt · Stories vorgeplant/IKM · Cockpit-Bot ab S4) | ✅ geklärt 2026-06-04 (Patricia O-Ton) |
 
 ---

@@ -59,7 +59,7 @@ Eine Mama braucht alle drei, sonst bleibt sie hängen:
 
 ### Cold-Traffic-Implikationen (weil über Meta-Ads)
 - **Mehr Story, mehr Vertrauen, später pitchen.** Eine fremde Frau braucht erst das Gefühl „die ist echt, die meint's ehrlich", bevor 997 fällt.
-- **Niedrigere Einstiegsschwelle:** Zahlplan (6 Raten) + warme „Schreib mir bei Fragen"-Brücke (DM/WhatsApp) statt Trickserei. Garantie-Frage offen (deine 2.6.-Entscheidung war „keine") — bei kalt wäre eine echte Garantie ein starker Hebel, du entscheidest.
+- **Niedrigere Einstiegsschwelle:** Zahlplan (6 Raten) + warme „Schreib mir bei Fragen"-Brücke (DM/WhatsApp) statt Trickserei. **Keine Geld-zurück-Garantie** (endgültig — Content-Kopier-Risiko via KI). Ausgleich bei kalt = Retargeting + Evergreen-Wiederholung.
 - 🚨 **Meta-Income-Claim-Warnung:** In der **Ad** (nicht im Webinar selbst) darfst du **keine konkreten Einkommens-Versprechen** machen („verdiene 2x vierstellig"). Meta sperrt das. Die Ad verkauft die **Transformation/Freiheit** („dein eigenes Standbein, unabhängig"), die Einkommens-Story erzählst du erst **im** Webinar als deine persönliche Realität. → Verknüpft mit [[reference_ki-webinar-lp-technik]] + [[feedback_KRITISCH-ad-link-pre-launch-test]] (Link vor Aktivierung testen!).
 
 ### Warum dieser Pitch anders ist als das Mama-CEO-Webinar (333)
@@ -544,7 +544,7 @@ Jens-Benchmark Evergreen (zum Einordnen, NICHT 1. Runde):
 
 ## 11. Nächste Schritte (To-Dos für dich)
 
-**Entschieden (Patricia 4.6.):** ✅ Datum Mi 24.6. · ✅ Titel (Painpoint-Frame) · ✅ **Preis Pioneer CHF 997** (statt 990 — verkaufspsychologisch) · ✅ kein Fast-Action-Bonus (Pioneer-Preis ist Anreiz) · ✅ bis zu 6 Raten · ✅ Webinar = Leadmagnet · ✅ **direkter Checkout** (KEINE Anzahlungs-Strategie — passt nicht zu Patricia) · ✅ Jens-Prinzip „Emotion statt Content" + Value-Equation eingebaut
+**Entschieden (Patricia 4.6.):** ✅ Datum Mi 24.6. · ✅ Titel (Painpoint-Frame) · ✅ **Preis Pioneer CHF 997** (statt 990 — verkaufspsychologisch) · ✅ kein Fast-Action-Bonus (Pioneer-Preis ist Anreiz) · ✅ bis zu 6 Raten · ✅ Webinar = Leadmagnet · ✅ **direkter Checkout** (KEINE Anzahlungs-Strategie — passt nicht zu Patricia) · ✅ **KEINE Geld-zurück-Garantie** (Content-Kopier-Risiko via KI) · ✅ Jens-Prinzip „Emotion statt Content" + Value-Equation eingebaut
 
 **🔴 Preis 997 muss noch in andere Dateien (sagen aktuell 990):**
 - [ ] `outputs/produkte/mba-launch/launch-kalender-juli-2026.md` (2× „Pioneer 990")
