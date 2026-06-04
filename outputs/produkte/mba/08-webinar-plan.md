@@ -5,12 +5,13 @@ tags: [produkt, webinar, launch, mba]
 # MBA Launch-Webinar — Konzept & Pitch-Plan
 
 > **Produkt:** Mum Business Academy (MBA) — dein Funnel-Endprodukt · Bundle aus 3 Kursen + Umsetzerinnen-Calls + Community
+> **Termin:** 🗓️ **Mi 24.6.2026, 09:00** (Tag 0 = Cart-Open) · Pioneer bis Sa 27.6. 23:59 · Cart-Close So 5.7. 23:59
 > **Webinar-Typ:** Live-Launch-Event → danach Evergreen in die MBA-Pitch-Automation (siehe [[umbau-plan]])
-> **Zielgruppe:** KALT — über Meta-Ads (NWM-Mamas DACH, 30–45, „dabei aber nicht durchgebrochen")
-> **Angle:** Emotion + „Mein Weg zu zwei eigenen Einkommen — ohne Abhängigkeit vom Network"
+> **Zielgruppe:** KALT — über Meta-Ads (NWM-Mamas DACH, 30–45, „dabei aber nicht durchgebrochen") · Webinar selbst = der 0€-Leadmagnet
+> **Angle:** Emotion + „Schon 1 Jahr im Network und immer noch kein richtiges Einkommen?"
 > **Prinzip:** Zeig **WAS** möglich ist (deine Realität + Live-Demo), nicht das ganze **WIE** — das WIE ist die MBA.
-> **Preis im Pitch:** Pioneer CHF 990 · Listenpreis CHF 1347
-> Erstellt: 2026-06-04 · Status: Konzept zum Freigeben
+> **Preis im Pitch:** Pioneer CHF 990 · Listenpreis CHF 1347 · bis zu 6 Raten
+> Erstellt: 2026-06-04 · Status: Konzept zum Freigeben · richtet sich auf [[launch-kalender-juli-2026]] aus
 
 ---
 
@@ -55,20 +56,19 @@ Mama-CEO war ein Mid-Kurs mit Demo-Schwerpunkt. Hier verkaufst du dein **Premium
 
 ---
 
-## 2. Webinar-Titel (3 Optionen — du pickst)
+## 2. Webinar-Titel (festgelegt) + Meta-safe Ad-Variante
 
-> Titel-Regel: Ergebnis + Emotion, kein „6-stellig", keine erfundene Zahl. „2x vierstellig" ist deine echte Realität und erlaubt — aber **nicht in die Ad** (Income-Claim).
+**🎯 Webinar-Titel (Patricia, festgelegt):**
+> „Schon 1 Jahr im Network und immer noch kein richtiges Einkommen? Ich zeige dir, wie ich als 4-fach-Mama ein 2x vierstelliges Einkommen aufgebaut habe."
 
-**A (empfohlen, Freiheits-Frame):**
-„Wie du dir als Mama ein eigenes Einkommen aufbaust — das dir keiner mehr wegnehmen kann."
+Trifft den Painpoint direkt im ersten Halbsatz, dann sofort Beweis-Versprechen. Perfekt für **Webinar selbst + E-Mail-Einladung + organische Stories**.
 
-**B (Abhängigkeits-Frame, dein emotionaler Kern):**
-„Raus aus der Abhängigkeit: Mein Weg von Provisions-Frust zu zwei eigenen Einkommen neben der Familie."
+> 🚨 **Achtung Meta-Ad-Zielseite:** Der Income-Teil („2x vierstelliges Einkommen") ist deine echte Realität und im Webinar/per Mail erlaubt — aber **Meta prüft auch die Anmelde-Landingpage**, auf die die kalte Ad führt. Steht die Einkommens-Zahl dort prominent, riskierst du Ad-Ablehnung. Deshalb zwei Ebenen:
 
-**C (Möglichkeits-Frame, neugierig):**
-„Was wäre, wenn dein Business nicht mehr davon abhängt, wie viele Leute mitmachen?"
+**Für die Ad + Anmelde-LP (Meta-safe, ohne Income-Claim):**
+> „Schon eine Weile im Network — und trotzdem fragt kaum jemand an? Im kostenlosen Live-Webinar zeig ich dir als 4-fach-Mama, wie du dir ein eigenes, planbares Standbein aufbaust — ohne ständig neue Leute zu brauchen."
 
-→ **Für die Ad** (kalt, Meta-safe) eher: *„Die Mama-Strategie für dein eigenes Standbein — ohne dass du ständig neue Leute brauchst."*
+→ Die Einkommens-Zahl erzählst du **im Webinar** als deine Geschichte (Slide 6), nicht in der Ad.
 
 ---
 
@@ -98,14 +98,14 @@ Mama-CEO war ein Mid-Kurs mit Demo-Schwerpunkt. Hier verkaufst du dein **Premium
 
 #### SLIDE 1 — Titel
 ```
-[Eyebrow, Petrol] Live-Webinar
+[Eyebrow, Petrol] Live-Webinar · 24. Juni
 [Headline, Philosopher, Dunkelblau]
-Wie du dir als Mama ein eigenes Einkommen aufbaust,
-das dir keiner mehr wegnehmen kann.
-[Sub, kursiv, Petrol] Ohne dass du ständig neue Leute brauchst.
+Schon 1 Jahr im Network —
+und immer noch kein richtiges Einkommen?
+[Sub, kursiv, Petrol] Ich zeig dir, wie ich als 4-fach-Mama zwei eigene Einkommen aufgebaut hab.
 [unten] — Patricia · Mum Life Balance
 ```
-**Sprechnotizen (1 Min):** „Schön, dass du da bist. Ich bin Patricia, vierfache Mama aus dem Appenzellerland, und in den nächsten 90 Minuten zeig ich dir, wie ich mir ein Einkommen aufgebaut hab, das wirklich meins ist — eines, das nicht davon abhängt, wie viele Leute gerade mitmachen. Bleib bis zum Schluss dran, denn am Ende öffne ich etwas, auf das einige von euch schon gewartet haben."
+**Sprechnotizen (1 Min):** „Schön, dass du da bist. Ich bin Patricia, vierfache Mama aus dem Appenzellerland. Wenn du schon eine Weile im Network bist und dich fragst, warum trotzdem kein richtiges Einkommen kommt, dann bist du hier goldrichtig. In den nächsten 90 Minuten zeig ich dir, wie ich mir etwas aufgebaut hab, das wirklich meins ist — und das nicht davon abhängt, wie viele Leute gerade mitmachen. Bleib bis zum Schluss dran, denn am Ende öffne ich etwas, auf das einige von euch schon gewartet haben."
 
 #### SLIDE 2 — Wer ich bin (Anti-Bali-Glaubwürdigkeit)
 ```
@@ -311,15 +311,15 @@ Du bist nicht allein.
 ```
 **Sprechnotizen (2.5 Min):** „Und jetzt der Teil, der mir am meisten am Herzen liegt. Du hast bestimmt schon Kurse gekauft, die dann im digitalen Regal verstaubt sind. Ich auch. Der Grund ist fast immer derselbe: Man ist allein. In der Academy bist du das nicht. Zweimal im Monat sehen wir uns, du stellst deine Fragen, du gehst mit einem konkreten nächsten Schritt raus. Das ist der Moment, in dem aus ‚gekauft' endlich ‚gemacht' wird."
 
-#### SLIDE 21 — Boni (Fast-Action)
+#### SLIDE 21 — Boni (in der MBA enthalten)
 ```
 [Petrol-Gradient, 3 Bonus-Karten]
 🎁 Bonus 1 — Mein Instagram-Companion (der aus der Demo)
-🎁 Bonus 2 — Mein Notion-Business-Brain als Vorlage
-🎁 Bonus 3 — Schnell-Entschlossenen-Bonus: [z.B. 1:1-Audio-Woche / Live-Onboarding-Call]
-[unten] Boni 3 nur, wenn du heute im Webinar dabei bist.
+🎁 Bonus 2 — PIA: deine KI-Mentorin, die mit deinen Daten arbeitet (Stufe 0 ready)
+🎁 Bonus 3 — Mein Notion-Business-Brain als Vorlage zum Duplizieren
+[unten] Alles dabei — kein Aufpreis.
 ```
-**Sprechnotizen (1.5 Min):** „Wenn du heute live dabei bist, gibt's noch drei Boni obendrauf — unter anderem genau den Companion, den du in der Demo gesehen hast, und meine echte Notion-Vorlage zum Duplizieren. Den dritten Bonus gibt's nur für die, die heute im Webinar dabei sind und sich schnell entscheiden."
+**Sprechnotizen (1.5 Min):** „Und obendrauf gibt's drei Boni, die ich sonst nicht aus der Hand gebe. Genau den Companion, den du gerade in der Demo gesehen hast. Dann PIA — eine KI-Mentorin, die mit deinen eigenen Daten arbeitet und dir Hooks und Texte in deiner Stimme baut. Und meine echte Notion-Vorlage, die du einfach duplizierst, statt bei Null anzufangen."
 
 ---
 
