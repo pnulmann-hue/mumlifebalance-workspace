@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "produkt": "MBA — Mum Business Academy",
+    "webinar": "2026-06-24",
+    "cart_open": "2026-06-24",
+    "cart_close": "2026-07-05",
+    "programmstart": "Juli 2026",
+    "quelle": "Julia Trost 'Vorlagen Story LML' (Tag-fuer-Tag Story-Workbook)",
+    "doku": "outputs/produkte/mba-launch/story-plan-tag-fuer-tag.md",
+    "bausteine": "context/julia-launch-story-bausteine.md",
+    "kaeufertyp_legende": "INA=Vision, WILLI=Mehrwert, AMELIE=Emotion/Aengste, ZOE=Identifikation, FRANK=Fakten, RUDI=Social-Proof"
+  },
+  "tage": {
+    "2026-06-12": {"phase": "Aufwaerm", "story_typ": "Sneak Peak 'Es ist was geplant'", "kaeufertyp": "INA", "inhalt": "Anteasern: an etwas Grossem dran. Spannung + erstes Verlangen. KEIN konkretes Verraten.", "cta": "Webinar-Anmeldung", "beleg": "S.18"},
+    "2026-06-15": {"phase": "Aufwaerm", "story_typ": "Blick hinter die Kulissen", "kaeufertyp": "INA", "inhalt": "Zeig woran du baust (Aufnahme/Salespage/Bonus). Community mitnehmen. Countdown-Sticker.", "cta": "Webinar-Anmeldung", "beleg": "S.20"},
+    "2026-06-16": {"phase": "Aufwaerm", "story_typ": "Lehrreich 'frueher vs. heute'", "kaeufertyp": "WILLI", "inhalt": "Glaubenssatz der Zielgruppe ansprechen, widerlegen, 1 Learning zum Screenshotten (sofort umsetzbar). Programm anteasern.", "cta": "Webinar / Freebie", "beleg": "S.22-24"},
+    "2026-06-17": {"phase": "Aufwaerm", "story_typ": "Persoenlich — dein Weg + Vision", "kaeufertyp": "AMELIE", "inhalt": "Slide 1 = Spannung (Screenshot/Vorher-Nachher). 'Vor X Jahren sah das anders aus' -> deine Geschichte -> Ueberleitung. Alles visualisieren.", "cta": "Webinar-Anmeldung", "beleg": "S.27"},
+    "2026-06-18": {"phase": "Aufwaerm", "story_typ": "Lehrreich 'Frage + Mini-Training'", "kaeufertyp": "WILLI", "inhalt": "Frage an Community (einbinden) -> kleine Methode/Mini-Training mit Strukturnutzen -> Ueberleitung.", "cta": "Webinar / Freebie", "beleg": "S.30-31"},
+    "2026-06-19": {"phase": "Aufwaerm", "story_typ": "Eigene Meinung / Positionierung", "kaeufertyp": "ZOE", "inhalt": "'Ich bin normal entspannt, aber DAS regt mich auf!' Branchen-Mythos -> Gegen-Empfehlung -> 1-2 To-Do-Schritte -> Programm.", "cta": "Webinar / Workbook", "beleg": "S.34-35"},
+    "2026-06-22": {"phase": "Aufwaerm", "story_typ": "'Warum das Thema so wichtig ist' + FOMO", "kaeufertyp": "INA", "inhalt": "Fremde Geschichte/grosse Zahl -> relativieren -> Learning -> CTA. Dazu FOMO 'wer ist alles dabei'.", "cta": "Webinar-Anmeldung", "beleg": "S.50-51"},
+    "2026-06-23": {"phase": "Secret Offer", "story_typ": "SECRET OFFER (48h)", "kaeufertyp": "ZOE", "inhalt": "3 Slides: (1) 3 Dinge die DU gemeistert hast und das Programm liefert (2) typischen Einwand entkraeften (3) '48h guenstigster Preis - schreib mir/klick Sticker, Link per DM'. Link NIE oeffentlich. Max 48h.", "cta": "DM / Sticker (Link privat)", "beleg": "S.39-40"},
+    "2026-06-24": {"phase": "Verkauf", "story_typ": "WEBINAR + 'OMG es ist soweit'", "kaeufertyp": "ALLE", "inhalt": "Webinar live (Pitch MBA am Ende). Danach Cascade: Party/Aufregung -> Schmerzpunkte -> Loesung -> Top-Details + VERKAUFSLINK. Vorab-Fragen aufgreifen. Cart offen, Pioneer 990.", "cta": "Cart / MBA sichern", "beleg": "S.45"},
+    "2026-06-25": {"phase": "Verkauf", "story_typ": "'Learnings + Aufzeichnung da'", "kaeufertyp": "INA", "inhalt": "Wichtigste Webinar-Learnings zusammenfassen -> Aufzeichnungs-Link MIT Preis. 'War das cool.'", "cta": "Cart / Aufzeichnung", "beleg": "S.115"},
+    "2026-06-26": {"phase": "Verkauf", "story_typ": "Beweise / Social Proof", "kaeufertyp": "RUDI", "inhalt": "Erfolgsgeschichte einer Kundin (oder deine eigene) - was hat sie KONKRET getan? + Testimonial-Reel.", "cta": "Cart", "beleg": "S.95"},
+    "2026-06-27": {"phase": "Earlybird-Ende", "story_typ": "Countdown 'Pioneer endet heute'", "kaeufertyp": "ZOE", "inhalt": "Countdown 'Pioneer-Preis endet 23:59'. Energie hoch, FOMO. Sticker ablaufen lassen + posten.", "cta": "Cart (letzte Stunden Pioneer)", "beleg": "S.14"},
+    "2026-06-28": {"phase": "Verkauf", "story_typ": "Inspirierendes / AHA (leiser Tag)", "kaeufertyp": "INA", "inhalt": "Privates Erlebnis -> Business-Bezug -> 1./2./3. Learning, das man im Programm bekommt.", "cta": "Cart", "beleg": "S.65-66"},
+    "2026-06-29": {"phase": "Verkauf", "story_typ": "Einwandsbehandlung 1", "kaeufertyp": "ZOE", "inhalt": "Einwaende auflisten + UMFRAGE-Sticker ('kennst du das?') -> je ein Gegenargument mit Verstaendnis (kein Geld / Angst es zu verlieren / klappt das bei mir?).", "cta": "Cart", "beleg": "S.75"},
+    "2026-06-30": {"phase": "Verkauf", "story_typ": "Einwandsbehandlung 2 + eigene Investition", "kaeufertyp": "AMELIE", "inhalt": "Weitere Einwaende mit Empathie. Dazu: was hast DU mal investiert, welche Aengste, wie ueberwunden, was hat sich veraendert.", "cta": "Cart", "beleg": "S.78 / S.71"},
+    "2026-07-01": {"phase": "Verkauf", "story_typ": "Fakten + Mini-Training + Post-It-Wand", "kaeufertyp": "FRANK", "inhalt": "Daten/Fakten-Slides (Inhaltsverzeichnis, Aufbau, was drin) fuer Faktenmenschen + ein Mini-Training. Teilnehmerinnen zeigen.", "cta": "Cart", "beleg": "S.13 / S.73"},
+    "2026-07-02": {"phase": "Verkauf", "story_typ": "'Das alles in 1 Jahr' + Bonus ankuendigen", "kaeufertyp": "INA", "inhalt": "Vision-Story: deine Reise, AHA-Momente -> was in EINEM Jahr moeglich ist. Bonus ankuendigen (PIA + Produktwelt-Companion) + Vorgeschmack. Preis-Gegenueberstellung einzeln vs. Bundle.", "cta": "Cart", "beleg": "S.81 / S.85"},
+    "2026-07-03": {"phase": "Verkauf", "story_typ": "Konsequenzen 'liebevolle Strenge' + Last-Call", "kaeufertyp": "AMELIE", "inhalt": "Wovor hattest du Angst / was aufgeschoben -> Wendepunkt -> was passiert wenn man es NICHT aendert -> 'Verabschiede dich von / Lerne'-Liste. Letzte-Tage-Anmoderation.", "cta": "Cart", "beleg": "S.90-92"},
+    "2026-07-04": {"phase": "Verkauf", "story_typ": "Post-It-Wand + Countdown 'laeuft morgen aus'", "kaeufertyp": "AMELIE", "inhalt": "Alle bisherigen Teilnehmerinnen zeigen (jede verlinken!), letzte Fragen beantworten, volle Energie. Countdown 'nur noch bis morgen'.", "cta": "Cart", "beleg": "S.109"},
+    "2026-07-05": {"phase": "Cart-Close", "story_typ": "CART-CLOSE — letzte Stunden", "kaeufertyp": "ALLE", "inhalt": "Live-Story + Countdown 'letzte Stunden'. 'Heute 23:59 schliesst die Tuer - danach erst naechste Runde zum hoeheren Preis.' Energie bis Schluss hoch.", "cta": "Cart (Close 23:59)", "beleg": "S.14"},
+    "2026-07-06": {"phase": "Nachkauf", "story_typ": "'OMG war das cool' + Kaeuferinnen feiern", "kaeufertyp": "RUDI", "inhalt": "Hype halten: jede Kaeuferin feiern (Post-It-Wand), Feedback/DMs teilen -> verkauft auch nach Close weiter (Replay/Warteliste naechste Runde).", "cta": "Replay / Warteliste naechste Runde", "beleg": "S.20 / S.95"}
+  }
+}

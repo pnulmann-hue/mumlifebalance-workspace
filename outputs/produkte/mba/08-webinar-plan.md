@@ -10,7 +10,7 @@ tags: [produkt, webinar, launch, mba]
 > **Zielgruppe:** KALT — über Meta-Ads (NWM-Mamas DACH, 30–45, „dabei aber nicht durchgebrochen") · Webinar selbst = der 0€-Leadmagnet
 > **Angle:** Emotion + „Schon 1 Jahr im Network und immer noch kein richtiges Einkommen?"
 > **Prinzip:** Zeig **WAS** möglich ist (deine Realität + Live-Demo), nicht das ganze **WIE** — das WIE ist die MBA.
-> **Preis im Pitch:** Pioneer CHF 990 · Listenpreis CHF 1347 · bis zu 6 Raten
+> **Preis im Pitch:** Pioneer CHF 997 · Listenpreis CHF 1347 · bis zu 6 Raten
 > Erstellt: 2026-06-04 · Status: Konzept zum Freigeben · richtet sich auf [[launch-kalender-juli-2026]] aus
 
 ---
@@ -19,7 +19,7 @@ tags: [produkt, webinar, launch, mba]
 
 | | |
 |---|---|
-| **Ziel des Webinars** | Kalte Ads-Leads emotional abholen → in die MBA (990) verkaufen |
+| **Ziel des Webinars** | Kalte Ads-Leads emotional abholen → in die MBA (997) verkaufen |
 | **Länge** | ~90 Min (75 Min Inhalt + Pitch, 15 Min Q&A) |
 | **Kern-Transformation** | Weg von der Produkt-/Network-Abhängigkeit → hin zu deinem eigenen, planbaren Einkommen mit System |
 | **Die 3 Säulen (= 3 MBA-Kurse)** | 1. Sichtbarkeit & eigenes Thema (Insta-Kundenmaschine) · 2. Eigenes Angebot / Hybrideinkommen (Digitale Produktwelt) · 3. Zeit + KI (Mama-CEO) |
@@ -47,7 +47,7 @@ Eine Mama braucht alle drei, sonst bleibt sie hängen:
 → Genau deshalb ist die MBA ein **Bundle**, kein Einzelkurs: Ein Kurs allein löst nur ein Drittel. Die Umsetzerinnen-Calls halten alles zusammen und sorgen dafür, dass sie's wirklich umsetzt (Anti-„Kurs-gekauft-nichts-getan").
 
 ### Cold-Traffic-Implikationen (weil über Meta-Ads)
-- **Mehr Story, mehr Vertrauen, später pitchen.** Eine fremde Frau braucht erst das Gefühl „die ist echt, die meint's ehrlich", bevor 990 fällt.
+- **Mehr Story, mehr Vertrauen, später pitchen.** Eine fremde Frau braucht erst das Gefühl „die ist echt, die meint's ehrlich", bevor 997 fällt.
 - **Niedrigere Einstiegsschwelle:** Zahlplan + Fast-Action-Bonus + echte Garantie sind bei kalt fast Pflicht (siehe Sektion 6).
 - 🚨 **Meta-Income-Claim-Warnung:** In der **Ad** (nicht im Webinar selbst) darfst du **keine konkreten Einkommens-Versprechen** machen („verdiene 2x vierstellig"). Meta sperrt das. Die Ad verkauft die **Transformation/Freiheit** („dein eigenes Standbein, unabhängig"), die Einkommens-Story erzählst du erst **im** Webinar als deine persönliche Realität. → Verknüpft mit [[reference_ki-webinar-lp-technik]] + [[feedback_KRITISCH-ad-link-pre-launch-test]] (Link vor Aktivierung testen!).
 
@@ -80,7 +80,7 @@ Trifft den Painpoint direkt im ersten Halbsatz, dann sofort Beweis-Versprechen. 
 | **2. REFRAME** | 20–35 | 7–10 | Die Falle benennen → der Shift (Produkt→Transformation) → die 3 Säulen |
 | **3. MÖGLICHKEIT ZEIGEN** | 35–55 | 11–14 | WAS möglich ist: Companion-Demo + die 3 Säulen in Aktion |
 | **4. PITCH MBA** | 55–73 | 15–21 | Die Academy: 3 Kurse + Community + Boni |
-| **5. PREIS + RISK + ANTIKUNDEN** | 73–84 | 22–25 | Wert-Stack · Pioneer 990 · Garantie · für wen (nicht) |
+| **5. PREIS + RISK + ANTIKUNDEN** | 73–84 | 22–25 | Wert-Stack · Pioneer 997 · Garantie · für wen (nicht) |
 | **6. CTA + Q&A** | 84–90+ | 26–27 | Cart-Link · Dringlichkeit · Fragen · Closing |
 
 **Emotions-Kurve:** Tief (Hamsterrad/Abhängigkeit) → Hoffnung (Wendepunkt) → Möglichkeit (Demo) → Identifikation (Community) → Entscheidung (Pitch). Die zwei emotionalen Höhepunkte: **Slide 4–5 (Abhängigkeit + Wendepunkt)** und **Slide 20 (Community / nicht allein)**.
@@ -335,21 +335,21 @@ Kurs 3 ........... 333
 Umsetzerinnen-Calls + Community ... unbezahlbar (laufende Begleitung)
 Boni ............. 3× Patricia-eigen
 ─────────────────
-Einzeln allein: über 990 — nur für die Kurse.
+Einzeln allein: über 997 — nur für die Kurse.
 ```
-**Sprechnotizen (2 Min):** „Lass uns über den Wert reden. Allein die drei Kurse kosten einzeln zusammen schon über 990 Franken — und da sind die Calls und die Community noch gar nicht drin, die ja monatlich weiterlaufen. Du bekommst also den kompletten Weg plus die Begleitung, die dafür sorgt, dass du ihn auch wirklich gehst."
+**Sprechnotizen (2 Min):** „Lass uns über den Wert reden. Allein die drei Kurse kosten einzeln zusammen schon über 997 Franken — und da sind die Calls und die Community noch gar nicht drin, die ja monatlich weiterlaufen. Du bekommst also den kompletten Weg plus die Begleitung, die dafür sorgt, dass du ihn auch wirklich gehst."
 
 #### SLIDE 23 — Pricing (Pioneer-Drama)
 ```
 [Weiss, Preis-Karten]
 [Eyebrow, Petrol] Erste Runde · Pioneer-Plätze begrenzt
 [FEATURED] PIONEER
-CHF 990
+CHF 997
 Gründungsmitglied · erste Runde · niedrigster Preis, den es je gibt
 [daneben] Späterer Listenpreis: CHF 1347
 [unten] Bis zu 6 Raten möglich (ca. 6× CHF 165). Pioneer-Preis endet Sa 27.6. · Cart-Close So 5.7.
 ```
-**Sprechnotizen (3 Min):** „Jetzt zum Preis. Der spätere Listenpreis der Academy ist 1347. Heute, als Pioneer der allerersten Runde, kommst du für 990 rein — das ist der niedrigste Preis, den es je geben wird, weil du mir hilfst, die erste Runde zu gestalten, und dafür am nähesten an mir dran bist. Und damit das neben der Familie machbar ist, kannst du in bis zu sechs Raten zahlen, also rund 165 im Monat. Den Pioneer-Preis gibt's nur in dieser ersten Runde — ab Samstag, dem 27., ist Schluss damit, und der ganze Zugang schliesst am Sonntag drauf."
+**Sprechnotizen (3 Min):** „Jetzt zum Preis. Der spätere Listenpreis der Academy ist 1347. Heute, als Pioneer der allerersten Runde, kommst du für 997 rein — das ist der niedrigste Preis, den es je geben wird, weil du mir hilfst, die erste Runde zu gestalten, und dafür am nähesten an mir dran bist. Und damit das neben der Familie machbar ist, kannst du in bis zu sechs Raten zahlen, also rund 165 im Monat. Den Pioneer-Preis gibt's nur in dieser ersten Runde — ab Samstag, dem 27., ist Schluss damit, und der ganze Zugang schliesst am Sonntag drauf."
 
 #### SLIDE 24 — Garantie / Risk-Reversal (wichtig bei kalt)
 ```
@@ -377,7 +377,7 @@ Wenn du das Gefühl hast, das ist nichts für dich — sag mir innerhalb von 14 
 ```
 [Orange, Weiss-Text, Mega-CTA]
 Sichere dir deinen Pioneer-Platz.
-CHF 990 · erste Runde · bis zu 6 Raten
+CHF 997 · erste Runde · bis zu 6 Raten
 🔗 [mumlifebalance.ch/mba]   [QR-Code]
 [unten] Link ist im Chat. Pioneer-Preis nur bis Sa 27.6.
 ```
@@ -413,24 +413,24 @@ Deine Fragen.
 | Bonus 1 — Instagram-Companion | Patricia-eigen | ✓ |
 | Bonus 2 — PIA (KI-Mentorin, Stufe 0 ready) | Patricia-eigen | ✓ |
 | Bonus 3 — Notion-Business-Brain-Vorlage | Patricia-eigen | ✓ |
-| **Pioneer-Preis (erste Runde, bis Sa 27.6.)** | | **CHF 990** |
+| **Pioneer-Preis (erste Runde, bis Sa 27.6.)** | | **CHF 997** |
 | **Zahlung** | | bis zu 6 Raten (ca. 6× 165) |
 | **Späterer Listenpreis** | | **CHF 1347** |
 
-→ Kein separater Fast-Action-Bonus — **der Pioneer-Preis (990 statt 1347) IST der Anreiz** (Patricia-Entscheidung). Boni sind echte enthaltene Werte, kein „nur heute"-Druck. Quelle Boni: [[launch-kalender-juli-2026]] (PIA Stufe 0 als ready Launch-Bonus).
+→ Kein separater Fast-Action-Bonus — **der Pioneer-Preis (997 statt 1347) IST der Anreiz** (Patricia-Entscheidung). Boni sind echte enthaltene Werte, kein „nur heute"-Druck. Quelle Boni: [[launch-kalender-juli-2026]] (PIA Stufe 0 als ready Launch-Bonus).
 
 ---
 
 ## 6. Preis-Dramaturgie & Cold-Traffic-Hebel
 
-- **Pioneer 990 vs. Liste 1347** = ehrliche Verknappung über die „erste Runde" (Gründungsmitglieder gestalten mit, sind am nähesten dran). Kein Fake-Countdown. **Der Pioneer-Preis ist der ganze Anreiz — kein separater Fast-Action-Bonus** (Patricia-Entscheidung).
+- **Pioneer 997 vs. Liste 1347** = ehrliche Verknappung über die „erste Runde" (Gründungsmitglieder gestalten mit, sind am nähesten dran). Kein Fake-Countdown. **Der Pioneer-Preis ist der ganze Anreiz — kein separater Fast-Action-Bonus** (Patricia-Entscheidung).
 - **Zahlplan:** bis zu **6 Raten** (ca. 6× 165) — senkt bei kaltem Publikum die mentale Schwelle, ohne den Preis zu drücken.
-- **Risk-Reversal / 14-Tage-Garantie** → nimmt der fremden Frau das Risiko, macht den 990-Sprung machbar.
+- **Risk-Reversal / 14-Tage-Garantie** → nimmt der fremden Frau das Risiko, macht den 997-Sprung machbar.
 - **Cart-Fenster** (aus [[launch-kalender-juli-2026]]): Webinar Mi 24.6. → Pioneer-Ende Sa 27.6. 23:59 → Final bis Cart-Close So 5.7. 23:59.
 
-> ⚠️ **Cold-Traffic-Ehrlichkeit:** Ein 990-Verkauf direkt aus kaltem Ads-Webinar ist anspruchsvoll (Conversion realistisch tief, 1–3 %). Patricia-Entscheidung: **das Webinar IST der Leadmagnet** (Ad → direkt Webinar-Anmeldung, kein separater Freebie davor). Damit der kalte Klick trotzdem konvertiert, helfen zwei Hebel:
+> ⚠️ **Cold-Traffic-Ehrlichkeit:** Ein 997-Verkauf direkt aus kaltem Ads-Webinar ist anspruchsvoll (Conversion realistisch tief, 1–3 %). Patricia-Entscheidung: **das Webinar IST der Leadmagnet** (Ad → direkt Webinar-Anmeldung, kein separater Freebie davor). Damit der kalte Klick trotzdem konvertiert, helfen zwei Hebel:
 > 1. **Retargeting der Nicht-Käuferinnen:** Ad-Klicker + Webinar-No-Shows + Replay-Watcher gezielt mit Cart-Reminder-Ads nachfassen (statt nur einmal kalt pitchen).
-> 2. **Call-Alternative beim High-Ticket:** für Unentschlossene ein „Buch dir ein kurzes Gespräch"-Schritt → du oder eine Expertin schliesst im Gespräch. Für 990 oft stärker als reiner Selbst-Checkout.
+> 2. **Call-Alternative beim High-Ticket:** für Unentschlossene ein „Buch dir ein kurzes Gespräch"-Schritt → du oder eine Expertin schliesst im Gespräch. Für 997 oft stärker als reiner Selbst-Checkout.
 
 ---
 
@@ -455,7 +455,7 @@ Deine Fragen.
 |---|---|---|
 | Ads-Anwärmen | ab ~Fr 12.6. | Meta-Ads (Meta-safe Hook) starten → Webinar-Anmeldungen sammeln · parallel Story-Sequenz Abhängigkeit→Freiheit |
 | Aufwärmphase | Fr 12.6.–Di 23.6. | Webinar-Einladung Mail 1+2 · Sneak-Peak/BTS/Persönlich/Einwand-Stories · Secret Offer Di 23.6. |
-| **Webinar-Tag** | **Mi 24.6. 09:00** | Live (dein Power-Window) · Cart-Open Pioneer 990 · Story-Cascade vor/während/nach · Sales-Mail 1 + No-Show 1 |
+| **Webinar-Tag** | **Mi 24.6. 09:00** | Live (dein Power-Window) · Cart-Open Pioneer 997 · Story-Cascade vor/während/nach · Sales-Mail 1 + No-Show 1 |
 | Pioneer-Fenster | Do 25.6.–Sa 27.6. | Replay+Preis (Do) · Social Proof (Fr) · Pioneer-Ende-Cascade (Sa 27.6. 23:59) |
 | Final-Fenster | So 28.6.–Sa 4.7. | Einwand-/FAQ-/Storytelling-Mails · Final-Preis |
 | **Cart-Close** | **So 5.7. 23:59** | Last-Call-Cascade (morgens + 2h vor Schluss) · Cart zu |
@@ -468,13 +468,13 @@ Deine Fragen.
 ## 9. Umsatz-Realitäts-Check (Bezug 40k-Jahresziel)
 
 ```
-Pioneer-Preis: CHF 990
-40'000 ÷ 990 ≈ 40 MBA-Verkäufe/Jahr für das gesamte Jahresziel allein über MBA.
+Pioneer-Preis: CHF 997
+40'000 ÷ 997 ≈ 40 MBA-Verkäufe/Jahr für das gesamte Jahresziel allein über MBA.
 
 Webinar-Szenario (eine Runde, kalt + warm gemischt):
 • 80 Anmeldungen → ~30 % Show-up = 24 live
 • Cold-Conversion 8–12 % auf Live + Replay → 2–4 Pioneer-Verkäufe
-• 3 Verkäufe × 990 = CHF 2'970 aus EINER Webinar-Runde
+• 3 Verkäufe × 997 = CHF 2'970 aus EINER Webinar-Runde
 
 → Realistischer Hebel: Webinar als wiederholbares + Evergreen-Asset.
    3–4 Verkäufe pro Runde × mehrere Runden + laufender Evergreen-Strom
@@ -499,7 +499,7 @@ Webinar-Szenario (eine Runde, kalt + warm gemischt):
 **Entschieden (Patricia 4.6.):** ✅ Datum Mi 24.6. · ✅ Titel (Painpoint-Frame) · ✅ kein Fast-Action-Bonus (Pioneer-Preis ist Anreiz) · ✅ bis zu 6 Raten · ✅ Webinar = Leadmagnet (Ads direkt aufs Webinar)
 
 **Noch offen:**
-- [ ] **Preis final bestätigen: 990 oder 997?** Kanonisch (Salespage + ThriveCart + Launch-Kalender) = **990**. Du hast 997 erwähnt. Wenn 997, muss ich es überall ändern — sag kurz Bescheid.
+- [ ] **Preis final bestätigen: 997 oder 997?** Kanonisch (Salespage + ThriveCart + Launch-Kalender) = **997**. Du hast 997 erwähnt. Wenn 997, muss ich es überall ändern — sag kurz Bescheid.
 - [ ] **Bestätigen, ob das Webinar wirklich um 09:00 läuft** (dein Power-Window) — oder lieber abends für berufstätige NWM-Mamas (mehr Show-up bei kalt)?
 - [ ] Danach baue ich dir auf Zuruf: die **Anmelde-Landingpage** (`/wp`), die **Mail-Architektur** (Einladung/Confirmation/Sales/No-Show — Gerüst liegt im Launch-Kalender), die **Meta-Ad** (Income-Claim-safe) und die **Canva-Slides** aus diesem Skript.
 

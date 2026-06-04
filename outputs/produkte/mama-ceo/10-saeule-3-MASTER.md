@@ -16,7 +16,7 @@ tags: [produkt, mama-ceo, saeule-3]
 
 Säule 3 baut direkt auf dem auf, was die Mentee in Säule 1+2 erarbeitet hat. Diese Begriffe greifen wir wörtlich wieder auf:
 
-- **Power-Slots** (aus S1 L1.5) — die 2 täglichen Power-Zeiten (Vormittag-Slot + Abend-Slot), also 10 Power-Slots pro Woche
+- **Power-Slots** (aus S1 L1.5) — die individuellen Power-Zeiten der Mama (bei der einen 2/Tag Vormittag+Abend, bei der anderen nur der Vormittag oder ein freier Nachmittag). Jede nimmt IHRE Slots, kein fixes Idealbild.
 - **Erschöpfung-Wand** (aus S1 L1.2) — der Punkt ab dem nichts Konzentriertes mehr geht
 - **3 Zonen der Woche** (aus S1 L1.5) — grün = Power-Slots · gelb = Mama-Slots · rot = Erschöpfung-Wand
 - **4 Rollen** (aus S1 L1.5) — Mama · Frau · Selbst · Unternehmerin
@@ -30,7 +30,7 @@ Säule 3 baut direkt auf dem auf, was die Mentee in Säule 1+2 erarbeitet hat. D
 
 ## Die 6 Lebens-Bereiche (Säule 3 Kern-Konzept)
 
-Statt abstrakter „Workflows" planst du dein Leben in 6 konkreten Bereichen. Pro Woche werden alle 6 verteilt — das ist das Layout für deine Wochenplanung:
+Statt abstrakter „Workflows" planst du dein Leben in 6 konkreten Bereichen. Im Monatsplan entscheidest du, welche davon den jeweiligen Monat über aktiv sind — nicht jeder Bereich muss jeden Monat laufen. Diese aktiven Bereiche sind dann das Layout für deine Wochenplanung:
 
 1. 🛍 **Produkterstellung** — eigene Kurse, Mini-Produkte, Templates bauen
 2. 📱 **Sichtbarkeit / Content** — Posts, Reels, Stories, Material-Stack
@@ -622,7 +622,7 @@ Bereits angelegt (laut Inhaltsverzeichnis). In Lektion 3.5 wird es vom Mentee du
 | Lektion | Frage | Status |
 |---|---|---|
 | **3.3** | Jahres-Strategie-Methodik (Monats-Trio Gratis/Mini/Gross + Transformation statt Produkt + Überthemen auf Wochen + Fixpunkte zuerst) | ✅ geklärt 2026-06-04 (Patricia O-Ton) |
-| **3.4** | Passt die Beispiel-Zuordnung CEO-Tag-Fokus → Lebens-Bereich (Mo Strategie→Produkt · Di Brand→Sichtbarkeit · Mi Beziehungen→Kundenbetreuung · Fr Reflexion→Reflexion)? | ⏳ offen — kurz bestätigen |
+| **3.4** | Wochen-Logik geklärt: **Slot-für-Slot** · CEO-Fokus = Brille / Bereich = Aufgabe · Slots **individuell je Familie** (kein fixes 10-Slot-Modell) · aktive Bereiche werden **pro Monat** entschieden (nicht alle 6 jede Woche) | ✅ geklärt 2026-06-04 (Patricia O-Ton) |
 | **3.5** | Ist das Notion-Master-Template wirklich schon fertig + duplizierbar? Wo liegt der Share-Link für die Mentees? | ⏳ offen — Patricia prüft |
 | **3.6** | Notfall-Plan (Kind im Zentrum · Wochenplan trägt · Stories vorgeplant/IKM · Cockpit-Bot ab S4) | ✅ geklärt 2026-06-04 (Patricia O-Ton) |
 
