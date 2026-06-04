@@ -56,7 +56,7 @@ Fremde Geschichte/grosse Zahl → relativieren → Learning → CTA. Dazu FOMO �
 
 ### Mi 24.6 · 🟧 WEBINAR + „OMG es ist soweit" (S.45)
 Webinar live (Pitch auf MBA am Ende). Danach Story-Cascade: Party/Aufregung → direkt auf Schmerzpunkte → Lösung → wichtigste Programm-Details + **Verkaufslink**. Vorab gestellte Fragen aufgreifen.
-→ *Cart offen · Pioneer 990.*
+→ *Cart offen · Pioneer 997.*
 
 ### Do 25.6 · 🟦 „Learnings + Aufzeichnung da" (S.115)
 Wichtigste Webinar-Learnings zusammenfassen → **Aufzeichnungs-Link mit Preis** teilen. „War das cool."

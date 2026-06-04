@@ -322,7 +322,7 @@ Kommentier IDENTITÄT wenn du selbst grad in dieser Phase bist.
 - S2: „Pre-Sale = verkaufen bevor du komplett baust. Klingt erstmal komisch."
 - S3: „Aber: es ist die EHRLICHSTE Form von Validation. Du erfährst ob's wirklich Bedarf gibt."
 - S4: „Andrea wusste das von Tag 1. Sie wollte den Pilot — mit allen Unfertigkeiten."
-- S5: „3 weitere Mamas auch. Vier Pioneer-Käuferinnen, 990 CHF Pioneer-Preis."
+- S5: „3 weitere Mamas auch. Vier Pioneer-Käuferinnen, 997 CHF Pioneer-Preis."
 - S6: „Was sie BEKOMMEN: 8 Wochen Begleitung + lebenslangen Zugang zu Mama-CEO + Mitspracherecht beim Bau."
 - S7: „Wenn du Network-Mama bist + ein eigenes Standbein willst: Pre-Sale ist dein Hebel."
 
@@ -334,7 +334,7 @@ Andrea hat gebucht bevor meine Outline final war. 20. Mai. Mama-CEO-Pilot.
 
 Klingt unseriös? Im Gegenteil. Pre-Sale ist die EHRLICHSTE Form von Validation: du erfährst, ob jemand wirklich braucht was du baust — bevor du Wochen reinsteckst.
 
-Vier Pioneer-Käuferinnen. 990 CHF Pionier-Preis. Sie wussten alle: Pilot heisst unfertig + Mitspracherecht + lebenslanger Zugang.
+Vier Pioneer-Käuferinnen. 997 CHF Pionier-Preis. Sie wussten alle: Pilot heisst unfertig + Mitspracherecht + lebenslanger Zugang.
 
 Wenn du Network-Mama bist und ein eigenes Standbein bauen willst, ohne dein Network zu verraten: Pre-Sale ist dein Hebel. Du musst nicht ein „fertiges Produkt" haben, bevor du Geld verdienst.
 
@@ -433,7 +433,7 @@ Antwort: voraussichtlich August/September 2026. Erstmal will ich diesen Pilot ko
 
 Was ich JETZT schon weiss: die nächste Runde wird Mama-CEO im MBA-Bundle sein. Mum Business Academy. Das heisst Instagram-Kundenmaschine, Mama-CEO und Digitale Produktwelt — die drei grossen Kurse zusammen. Plus 12 Monate Umsetzerinnen-Calls.
 
-Pioneer 990 CHF, Listenpreis 1347. Begrenzte Plätze in der nächsten Runde.
+Pioneer 997 CHF, Listenpreis 1347. Begrenzte Plätze in der nächsten Runde.
 
 Kommentier WARTELISTE wenn du auf die Liste willst.
 
@@ -449,7 +449,7 @@ Kommentier WARTELISTE wenn du auf die Liste willst.
 „Drei grosse Kurse, ein Bundle, 12 Monate Begleitung. Hier ist was du als Network-Mama davon hast."
 
 **Slides 2-9:**
-- S2: „MBA = Mum Business Academy. Drei Kurse + Calls. Pioneer 990, Listenpreis 1347."
+- S2: „MBA = Mum Business Academy. Drei Kurse + Calls. Pioneer 997, Listenpreis 1347."
 - S3: „Kurs 1: Instagram-Kundenmaschine. Wie du eigene Anfragen über Insta kriegst — neben deinem Network."
 - S4: „Kurs 2: Mama-CEO. KI-Mitarbeiter aufbauen + Zeitmanagement-System."
 - S5: „Kurs 3: Digitale Produktwelt. Dein Wissen als kleines bis grosses Produkt verpacken."
@@ -472,7 +472,7 @@ Was drin ist:
 → 12 Monate Umsetzerinnen-Calls (2 pro Monat, Experten + ich)
 → Lebenslanger Zugang zu allen Kursen — auch nach den 12 Monaten
 
-Pioneer 990 CHF, Listenpreis 1347. Begrenzte Plätze in der nächsten Runde.
+Pioneer 997 CHF, Listenpreis 1347. Begrenzte Plätze in der nächsten Runde.
 
 Für wen es ist: Network-Mama, die parallel ein zweites Standbein aufbauen will. Ohne dem Network zu schaden.
 
@@ -507,9 +507,9 @@ Kommentier BRIEFING wenn du wissen willst, wie meiner gebaut ist.
 **Caption:**
 Pioneer-Phase heisst: du kaufst nicht das fertige Produkt. Du kaufst den ehrlichsten Preis und das tiefste Mitspracherecht.
 
-Die vier Mamas im Mai haben das so gemacht. Sie hatten Pioneer 990 CHF — und sie steuern aktiv was sich in den 8 Wochen verändert. Inhalte. Tempo. Tiefe.
+Die vier Mamas im Mai haben das so gemacht. Sie hatten Pioneer 997 CHF — und sie steuern aktiv was sich in den 8 Wochen verändert. Inhalte. Tempo. Tiefe.
 
-Wenn du im nächsten Slot dabei bist (voraussichtlich Q3), bist du immer noch Pionierin der MBA-Bundle-Version. Der Pioneer-Preis bleibt 990. Listenpreis steigt später auf 1347.
+Wenn du im nächsten Slot dabei bist (voraussichtlich Q3), bist du immer noch Pionierin der MBA-Bundle-Version. Der Pioneer-Preis bleibt 997. Listenpreis steigt später auf 1347.
 
 Was Pioneer-Sein konkret heisst:
 
