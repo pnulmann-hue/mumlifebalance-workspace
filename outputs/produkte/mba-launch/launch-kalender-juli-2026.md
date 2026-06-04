@@ -4,7 +4,7 @@ tags: [produkt, launch, mba, intern]
 
 # MBA-Launch Juni/Juli 2026 — Tag-für-Tag-Kalender
 
-**Produkt:** Mum Business Academy (MBA, Pioneer 990) · **Modell:** Webinar + Cart-Window (Julia-Trost-Methodik)
+**Produkt:** Mum Business Academy (MBA, Pioneer 997) · **Modell:** Webinar + Cart-Window (Julia-Trost-Methodik)
 **Anker (vorgezogen für Juni-Umsatz):** Webinar **Mi 24.6.** (Tag 0, Cart-Open) · Earlybird/Pioneer bis Sa 27.6 · Final bis Cart-Close **So 5.7.** 23:59
 **Grundlage:** Julia „Launch Queen" + „9. Launchen" + „Vorlagen Story LML" (Story-Sequenz) + „Email Funnel Vorlagen" + „Dein Webinar Skript".
 
@@ -22,7 +22,7 @@ tags: [produkt, launch, mba, intern]
 | Mo 8.6 | Content | Webinar-Skript (10-Teile, Pitch auf MBA) + Pitch-Slides |
 | Mi 10.6 | Business | Launch-Mail-Sequenz in AC bauen (Einladung 2 + Confirmation 3 + Sales 7 + No-Show 3) |
 | Di 16.6 | Produktentw. | **PIA Stufe 0** (`/mentee-onboard`) als ready Launch-Bonus bauen |
-| Mi 17.6 | Business | MBA-Salespage final + ThriveCart-Checkout (990) + Anmelde-Seite + Keyword WEBINAR |
+| Mi 17.6 | Business | MBA-Salespage final + ThriveCart-Checkout (997) + Anmelde-Seite + Keyword WEBINAR |
 | Fr 19.6 | Newsletter | Bonus-Pack zusammenstellen (inkl. PIA Stufe 0 + Companion-Ankündigung) |
 | Mo 22.6 | Content | Webinar-Technik-Setup (Zoom + Replay + Probelauf) |
 
@@ -49,7 +49,7 @@ Story-Sequenz nach „Vorlagen Story LML": Sneak Peak → Hinter Kulissen → Le
 
 | Datum | Tag | Story-Cascade | Beitrag | E-Mail | Cart |
 |---|---|---|---|---|---|
-| **Mi 24.6** | **WEBINAR + CART-OPEN** | „START — OMG es ist soweit" | — | **Sales-Mail 1** + No-Show 1 | 🟢 Pioneer 990 |
+| **Mi 24.6** | **WEBINAR + CART-OPEN** | „START — OMG es ist soweit" | — | **Sales-Mail 1** + No-Show 1 | 🟢 Pioneer 997 |
 | Do 25.6 | | „War das cool" + Aufzeichnung mit Preis | Recap-Post | **Sales-Mail 2** | Pioneer |
 | Fr 26.6 | | Social Proof / Erfolgsgeschichte | Testimonial-Reel | **Sales-Mail 3** | Pioneer |
 | **Sa 27.6** | | Countdown „Pioneer endet heute" | — | **Earlybird-End-Mail** (morgens + 2h vor Schluss) | 🟠 Pioneer-Ende 23:59 |

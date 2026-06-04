@@ -188,11 +188,11 @@ Patricia
 ## Mail 9 · Tag 25 · MBA Deadline + P.S.
 
 **Betreff A:** Der Pioneer-Preis schliesst am [DATUM]
-**Betreff B:** Danach kostet die Academy 1347 statt 990
+**Betreff B:** Danach kostet die Academy 1347 statt 997
 
 **Preheader:** Letzte Tage zum Pioneer-Preis.
 
-Kurz und ehrlich: Bis [DATUM] kommst du als Pioneer in die Mum Business Academy für 990 statt 1347 Franken. Die ersten Frauen gehen mit rein, gestalten mit und geben mir ehrliches Feedback — dafür gibt es den Preis.
+Kurz und ehrlich: Bis [DATUM] kommst du als Pioneer in die Mum Business Academy für 997 statt 1347 Franken. Die ersten Frauen gehen mit rein, gestalten mit und geben mir ehrliches Feedback — dafür gibt es den Preis.
 
 Was du nach den ersten Wochen hast: dein Thema steht, dein eigenes Produkt nimmt Form an, dein KI-System läuft, und du arbeitest mit Menschen statt sechs Stunden am Tag Posts zu schreiben.
 
@@ -203,7 +203,7 @@ Patricia
 
 **P.S.** Budget gerade eng? Den Satz „oh shit, wie viel hab ich noch auf dem Konto" kenne ich selber. Es gibt eine Ratenzahlung — schreib mir, dann finden wir einen Weg.
 
-**CTA-Button:** Pioneer-Platz sichern (990 CHF) → [MBA-SALESPAGE]
+**CTA-Button:** Pioneer-Platz sichern (997 CHF) → [MBA-SALESPAGE]
 
 ---
 

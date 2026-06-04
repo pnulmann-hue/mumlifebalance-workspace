@@ -16,7 +16,7 @@ Freebie → (Auslieferung) → #53 Finde dein Thema (39)
         Instagram-Themen   → #54 IG-Kundenmaschine (333)
         Produkt/Brand      → #56 digitale Produktwelt (333)
         Zeit/Familie       → (neu) Mama-CEO-Pitch (333)
-   → NEU: MBA-Pitch-Automation (Webinar-Brücke → MBA 990)
+   → NEU: MBA-Pitch-Automation (Webinar-Brücke → MBA 997)
         → kein Kauf → grosser Verteiler (Launch-Pitches)
 ```
 

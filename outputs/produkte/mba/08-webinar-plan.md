@@ -546,15 +546,13 @@ Jens-Benchmark Evergreen (zum Einordnen, NICHT 1. Runde):
 
 **Entschieden (Patricia 4.6.):** ✅ Datum Mi 24.6. · ✅ Titel (Painpoint-Frame) · ✅ **Preis Pioneer CHF 997** (statt 990 — verkaufspsychologisch) · ✅ kein Fast-Action-Bonus (Pioneer-Preis ist Anreiz) · ✅ bis zu 6 Raten · ✅ Webinar = Leadmagnet · ✅ **direkter Checkout** (KEINE Anzahlungs-Strategie — passt nicht zu Patricia) · ✅ **KEINE Geld-zurück-Garantie** (Content-Kopier-Risiko via KI) · ✅ Jens-Prinzip „Emotion statt Content" + Value-Equation eingebaut
 
-**🔴 Preis 997 muss noch in andere Dateien (sagen aktuell 990):**
-- [ ] `outputs/produkte/mba-launch/launch-kalender-juli-2026.md` (2× „Pioneer 990")
-- [ ] `outputs/monatsplaene/2026-06.md` („Pioneer-Preis CHF 990")
-- [ ] `outputs/salespages/umsetzerinnen-pioneer/salespage.html` (Pioneer-Preis)
-- [ ] ThriveCart-Checkout (richtest du manuell ein — auf 997)
-- → Sag „zieh 997 überall durch", dann update ich die Markdown-Dateien (Salespage + ThriveCart prüfst du selbst).
+**✅ Preis 997 durchgezogen (4.6.) in:** Launch-Kalender · Monatsplan 2026-06 · Salespage (umsetzerinnen-pioneer) · MBA-Mail-Sequenzen B+C · Blueprint · Umbau-Plan · MBA-Index.
+- [ ] **ThriveCart-Checkout** auf 997 stellen (machst du manuell — extern)
+- ⚠️ **Noch prüfen (von mir NICHT geändert, weil Kontext „Mai-Pilot/4 Mamas"):** `outputs/monatsplaene/2026-06-mentoring-monatsplan.md` + `outputs/reels/2026-06-04-network-mama-zeit-frage/briefing.md` nennen „990" im Mama-CEO-Pilot-Kontext (teils mit „4 Mamas" statt 5). Das ist evtl. ein anderer/alter Preis — sag mir, ob die auch auf 997 sollen.
+
+**✅ Webinar-Uhrzeit: Mi 24.6. TAGSÜBER (09:00)** — fix. Grund: Geburtstag deines Mannes am 24.6., Abend ist Familie. (Kein Abend-Webinar.)
 
 **Noch offen:**
-- [ ] **Webinar-Uhrzeit:** 09:00 (dein Power-Window) — oder abends für berufstätige NWM-Mamas (mehr Show-up bei kalt)?
 - [ ] Danach baue ich auf Zuruf: **Anmelde-LP** (`/wp`) · **direkter ThriveCart-Checkout** (997 / 6 Raten) · **Mail-Architektur** (Gerüst im Launch-Kalender) · **Meta-Ad** (Income-Claim-safe) · **Canva-Slides**.
 
 ---

@@ -75,7 +75,7 @@ Trigger Formular „Von 0 auf echt"
 **Erkenntnisse:**
 - Auslieferung + aufsteigender Pitch (39 → 333 → 97) sind schon da — das ist faktisch **Variante B in Teilen gebaut**.
 - Die eigentlichen Pitch-Mails liegen in den Unter-Funnels **#53 / #54 / #55** (per Tag angestossen) — noch nicht inhaltlich geprüft.
-- **MBA (990) kommt nirgends vor** → das ist die Hauptlücke.
+- **MBA (997) kommt nirgends vor** → das ist die Hauptlücke.
 - „Kurs-gekauft"-Ziele existieren bereits (Finde dein Thema = 540 · IG-Kundenmaschine = 562 · Expertin = 571) → Exit-bei-Kauf im Ansatz vorhanden.
 - Konsequenz: **erweitern + bündeln** statt neu bauen — MBA als Spitze, dann zentralisieren.
 
@@ -93,7 +93,7 @@ Trigger Formular „Von 0 auf echt"
 | · | Instagram-Kundenmaschine (Instagram → Kunden) | 333 |
 | · | Digitale Produktwelt (eigenes Produkt erstellen) | 333 |
 | · | Mama-CEO (Business neben Familie, 5 Säulen) | 333 |
-| Z | **MBA — Mum Business Academy = BUNDLE über allen dreien** | 990 (Pioneer) / 1347 (Liste) |
+| Z | **MBA — Mum Business Academy = BUNDLE über allen dreien** | 997 (Pioneer) / 1347 (Liste) |
 
 > **Bestätigt 2026-06-02:** MBA ist das Bundle, das alle 3 grösseren Kurse abdeckt. Die 3 Kurse lösen je *ein* Problem → eignen sich perfekt als **gezielter Downsell** (je nach Einstiegs-Freebie/Pain), nicht als stumpfe Preistreppe.
 
@@ -114,7 +114,7 @@ Die Sequenz nutzt den 39er-Minikurs als No-Brainer-Einstieg (dessen ThriveCart-C
 | 5 | 12 | MBA-Knappheit/Deadline + persönliches P.S. | MBA |
 | Downsell | nach Nicht-Kauf | Ratenzahlung MBA ODER zurück auf 333er | MBA-Rate / 333 |
 
-**Plus:** Preissprung 39 → 990 ist gross → Mail 3-5 müssen stark Vertrauen aufbauen (Story + Stimmen + Webinar hilft enorm).
+**Plus:** Preissprung 39 → 997 ist gross → Mail 3-5 müssen stark Vertrauen aufbauen (Story + Stimmen + Webinar hilft enorm).
 **Minus:** weniger Zwischen-Cashflow zum Ads-Finanzieren.
 
 ---
@@ -134,20 +134,20 @@ Leads laufen erst in **EIN Mid-Offer mit Rabatt** (genau Julias Favorit), dann f
 | 5 | 12 | Mama-CEO-Deadline + P.S. | Mama-CEO 333 |
 
 **Phase 2 — Anschluss-Sequenz „→ MBA" (für 333-Nicht-Käufer + als Upsell für 333-Käufer):**
-Webinar-Brücke → MBA 990, 3-4 Mails.
+Webinar-Brücke → MBA 997, 3-4 Mails.
 
-**Plus:** sanftere Preistreppe (39 → 333 → 990), 333er-Verkäufe finanzieren Ads, mehr Vertrauen.
+**Plus:** sanftere Preistreppe (39 → 333 → 997), 333er-Verkäufe finanzieren Ads, mehr Vertrauen.
 **Minus:** längerer Weg zum grossen Umsatz, 2 Sequenzen statt 1 (mehr Bau-Aufwand).
 
 ---
 
 ## VARIANTE C — „Hoch ankern, dann gezielt downsellen" (Patricias Idee, empfohlen)
 
-Nutzt aus, dass MBA das **Bundle über den 3 Kursen** ist: erst die Komplettlösung pitchen, wer die nicht will, kriegt den **einen** Kurs, der zu seinem Pain passt (Anker-Effekt — nach 990 wirken 333 klein).
+Nutzt aus, dass MBA das **Bundle über den 3 Kursen** ist: erst die Komplettlösung pitchen, wer die nicht will, kriegt den **einen** Kurs, der zu seinem Pain passt (Anker-Effekt — nach 997 wirken 333 klein).
 
 ```
 Freebie (0€) → ① Mehrwert (1-2 Mails) → ② Minikurs 39 (Win)
-   → ③ MBA 990 (grosser Pitch + Webinar-Brücke)
+   → ③ MBA 997 (grosser Pitch + Webinar-Brücke)
    → ④ kein MBA? Downsell auf den EINEN passenden Kurs:
         BIO / LEAD / STORY   → Instagram-Kundenmaschine 333
         QUIZ / ECHT1         → Digitale Produktwelt 333
@@ -168,7 +168,7 @@ Freebie (0€) → ① Mehrwert (1-2 Mails) → ② Minikurs 39 (Win)
 **Diagnose-Downsell automatisch über AC-Tags:** Das Einstiegs-Freebie verrät den Pain → AC lenkt Mail 6 auf den passenden Kurs. Kein Auswahl-Überfluss (Hormozi: 1 Angebot, 1 CTA).
 
 **Plus:** ankert hoch, schnell beim grossen Umsatz, nutzt die Bundle-Logik elegant.
-**Minus:** Sprung 39 → 990 ist gross → **Webinar-Brücke vor dem MBA-Pitch hier fast Pflicht**.
+**Minus:** Sprung 39 → 997 ist gross → **Webinar-Brücke vor dem MBA-Pitch hier fast Pflicht**.
 
 ---
 
@@ -191,7 +191,7 @@ Freebie (0€) → ① Mehrwert (1-2 Mails) → ② Minikurs 39 (Win)
 
 ## Webinar — die Rolle (alle Varianten)
 
-- Das Webinar ist der **Brücken-Touchpoint kurz VOR dem MBA-Pitch** — bei einem 990er-Produkt enorm hilfreich, aber **kein Blocker** für den Start.
+- Das Webinar ist der **Brücken-Touchpoint kurz VOR dem MBA-Pitch** — bei einem 997er-Produkt enorm hilfreich, aber **kein Blocker** für den Start.
 - **Nicht zwingend evergreen-mit-Ads.** Für den Anfang reicht: MBA-Salespage direkt verlinken; Webinar später ergänzen.
 - Dein Mai-Webinar pitchte den **333er (Mama-CEO)** — für MBA bräuchtest du einen angepassten Pitch (oder du nutzt es in Variante B als 333er-Brücke und baust das MBA-Webinar separat).
 
@@ -211,7 +211,7 @@ Aufzeichnung = Evergreen-Webinar im Funnel
 **3 Punkte beim Umbau Live → Evergreen:**
 1. **Harte Launch-Daten raus.** „Cart schliesst Sonntag" / „heute Abend Schluss" stimmt evergreen nicht mehr → Stellen rausschneiden ODER den Pitch-Teil am Ende sauber neu aufnehmen und dranhängen.
 2. **Eigene Dringlichkeit für Evergreen.** Ohne Live-Cart-Close → **rollende Frist ab Eintritt** (z.B. Bonus/Preisvorteil läuft 72h nach dem Anschauen ab). Technisch via ThriveCart-Countdown oder Deadline-Tool, kein WebinarJam nötig.
-3. **Preis im Evergreen-Pitch anpassen.** Launch = Pioneer 990. Nach Pioneer-Phase = 1347 ODER ein eigenes Evergreen-Angebot festlegen — sonst verspricht die Aufzeichnung einen Preis, den es nicht mehr gibt.
+3. **Preis im Evergreen-Pitch anpassen.** Launch = Pioneer 997. Nach Pioneer-Phase = 1347 ODER ein eigenes Evergreen-Angebot festlegen — sonst verspricht die Aufzeichnung einen Preis, den es nicht mehr gibt.
 
 **Link-Swap statt Mail-Umschreiben:** In beiden Sequenzen steht der Platzhalter `[WEBINAR-LINK]`. Während des Launches → Live-Anmeldung. Danach → Replay-Seite. Die Mails bleiben Wort für Wort gleich.
 
