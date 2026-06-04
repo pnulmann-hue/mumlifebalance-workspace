@@ -463,7 +463,7 @@ Bevor die Slides final sind, das MBA-Versprechen gegen die 4 Achsen prüfen:
 - **Zeit-Verzögerung** → „du startest sofort mit Kurs 1" + erste Teilergebnisse schnell benennen
 - **Anstrengung** → „ohne dass du deinen Alltag umkrempelst", KI nimmt den Adminkram ab, kopieren statt erfinden
 
-> 📌 **Cold-Traffic-Ehrlichkeit:** Jens fährt auf kaltem Evergreen-Traffic ~**10 % Sales-Conversion** — aber nach **500 Live-Webinaren** Übung. Für deine erste Live-Runde realistisch tiefer (1–3 %), die Anzahlungs-Mechanik + Retargeting heben das. **Das Webinar IST der Leadmagnet** (Ad → direkt Anmeldung, kein Freebie davor). Zusätzlicher Hebel: Ad-Klicker + No-Shows + Replay-Watcher gezielt mit Reminder-Ads nachfassen.
+> 📌 **Cold-Traffic-Ehrlichkeit:** Jens fährt auf kaltem Evergreen-Traffic ~**10 % Sales-Conversion** — aber nach **500 Live-Webinaren** Übung. Für deine erste Live-Runde realistisch tiefer (1–3 %); Retargeting + Evergreen-Wiederholung heben das über die Zeit. **Das Webinar IST der Leadmagnet** (Ad → direkt Anmeldung, kein Freebie davor). Zusätzlicher Hebel: Ad-Klicker + No-Shows + Replay-Watcher gezielt mit Reminder-Ads nachfassen.
 
 ---
 
