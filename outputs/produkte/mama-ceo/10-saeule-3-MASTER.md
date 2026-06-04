@@ -4,7 +4,9 @@ tags: [produkt, mama-ceo, saeule-3]
 
 # Säule 3 — Du baust die Struktur · Strategie + Planung (Wochen 3-4)
 
-> **Versprechen am Ende der Säule:** „Ich habe eine Jahres-Strategie, einen Monatsplan, einen Wochenrhythmus — und weiss jeden Morgen was heute dran ist."
+> **Versprechen am Ende der Säule:** „Ich weiss genau, wann ich arbeite und wann ich Haushalt + Familie mache — und genau dadurch hab ich endlich verlässlich Zeit fürs Business. Ich habe eine Jahres-Strategie, einen Monatsplan, einen Wochenrhythmus und weiss jeden Morgen, was heute dran ist."
+>
+> **🎯 Kern-Payoff (Nordstern des ganzen Programms):** Die grösste Herausforderung dieser Mamas ist nicht Strategie oder Tools — es ist die Zeit neben der Familie. Säule 3 löst das, indem Arbeitszeit (grüne Power-Slots aus S1) und Haushalts-/Familienzeit (gelbe Slots aus S2) zu EINER klaren Woche zusammenkommen. Beides hat seinen festen Platz und frisst sich nicht mehr gegenseitig auf — DAS schafft den Freiraum fürs Business.
 > **6 Lektionen · ~83 Min Video · Arbeitsblatt + Live-Call 2 (Ende W4, Notion-Brain-Sprechstunde · 60 Min)**
 > **Kern-Konzept:** Das Wichtigste ist Planung & Strategie — was kommt wann. Daraus ergeben sich die konkreten Aufgaben in den 6 Lebens-Bereichen. Säule 3 baut diese Hierarchie auf, in Notion.
 
@@ -60,6 +62,7 @@ In Säule 1+2 hast du Klarheit geschaffen: du weisst wann du Zeit hast, was zäh
 Säule 3 ist der Übergang vom Kopf-Chaos zur ruhigen Struktur. Du baust deine Planung in vier Stufen auf: vom Jahr runter bis zum einzelnen Tag — und alles hängt zusammen. Kein Verzetteln mehr, kein „wo war das nochmal", kein Montagmorgen-Loch.
 
 Am Ende dieser 2 Wochen:
+✓ Du weisst glasklar, wann du arbeitest und wann du Haushalt + Familie machst — und hast dadurch endlich verlässlich Zeit fürs Business
 ✓ Du hast Notion als dein Business-Brain aufgesetzt — vier Stufen: Jahr · Monat · Woche · Tag, plus deine Ziele als roter Faden
 ✓ Deine Jahres-Strategie steht — du weisst welches Produkt, welcher Launch, welches grosse Thema wann kommt
 ✓ Du planst deine Wochen in den 6 Lebens-Bereichen — und jeder Bereich hat seinen Platz
