@@ -74,6 +74,63 @@ Vermutlich gleicher Stack wie Content Radar (gleicher Anbieter):
 
 ---
 
+## 2.5 🎯 KILLER-USP: Network-Spezialisierung (Patricia-Entscheidung 2.6.2026)
+
+**Patricia-Schärfung:**
+> „Ganz wichtig: mein Assistent soll aufs Network spezialisiert sein."
+
+Das verändert die ganze Positionierung von „eigener KI-Tool-Konkurrent zu ARIA" zu **„nicht-vergleichbares Tool in einer eigenen Nische"**.
+
+### Markt-Vergleich neu
+
+| Tool | Zielgruppe | Spezialisierung |
+|---|---|---|
+| Julia Trost (ARIA) | Online-Business-Coaches generell | Keine — generisch |
+| ChatGPT / Jasper | Alle | Keine |
+| Coachen-Templates | Diverse | Generisch |
+| **PIA (Patricia)** | **Mamas im Network** die parallel ein eigenes Standbein aufbauen | **Network Marketing + Online-Business-Hybrid** |
+
+### Network-Spezifika die PIA „kann" (andere Tools nicht)
+
+1. **Firmen-Wissen:** doTERRA, Forever, Mary Kay, Ringana, Younique etc. — jeweilige Produkte, Rang-System, Compliance-Regeln
+2. **Rang-Sprache:** Beraterin/Diamant/Director/Crown — pro Firma anders
+3. **Team-Aufbau-Dynamik:** Crossline-Situationen, Down-Line-Skalierung, Eltern-Linie
+4. **Network-Pain-Points:**
+   - Crossline-Beraterin steigt auf, du nicht
+   - Familie versteht das System nicht
+   - „bist du sicher dass das kein Pyramidensystem ist?"-Fragen
+   - Convention-FOMO + Schuldgefühl
+   - Compliance-Verbote „ich darf das nicht so sagen"
+5. **Hybrid-Strategie:** Network + eigenes Standbein parallel — ohne dem Network-Team zu schaden (= Patricia's Sweet-Spot)
+6. **Compliance-Filter pro Firma:** doTERRA → keine Heilversprechen, Forever → keine medizinischen Aussagen, etc.
+7. **Hook-Patterns Network-spezifisch:** Convention-Erlebnisse, Compliance-Wendepunkte, Authentic-Selling vs DM-Spam
+
+### Marketing-Pitch (neu)
+
+> „Die erste KI-Mentorin SPEZIELL für Mamas im Network. Patricia hat 10+ Jahre Network-Erfahrung + KI-Stack reingebaut. PIA versteht Crossline-Situationen, Team-Aufbau, Compliance-Regeln deiner Firma und Mama-Realität — generische KI-Tools verstehen das nicht."
+
+### Konsequenzen für die Build-Roadmap
+
+**Onboarding-Fragen (Stufe 0) müssen Network-Spezifika abdecken:**
+- Welche Network-Firma? (Dropdown mit den großen)
+- Welche Position? (Beraterin / höhere Ränge — Firma-abhängig)
+- Team-Größe + Crossline-Situation
+- Compliance-Regeln deiner Firma (Free-Text + Selbstcheck)
+- Network-Ziel: Rangaufstieg vs Standbein vs beides?
+- Crossline-Pain: was triggert dich?
+
+**System-Prompts (alle Stufen) müssen Network-Layer einbauen:**
+- Compliance-Filter Mode 1: doTERRA (Patricia's eigene Compliance-Regeln aus Memory)
+- Compliance-Filter Mode 2-N: andere Firmen (von Mentee gepflegt oder Standard)
+- Network-Pattern-Bibliothek (statt nur Online-Business-Patterns)
+
+**Differenzierung MBA-Bundle:**
+- MBA bleibt für Mamas im Network + Onlinebusiness (Hybrid)
+- PIA wird das ausführende Tool das die Hybrid-Strategie umsetzt
+- Klare Botschaft: „MBA = du lernst die Hybrid-Strategie. PIA = führt sie für dich aus, jeden Tag."
+
+---
+
 ## 3. 🎯 Patricia's Killer-Idee: „PIA" für MBA-Mentees
 
 **Patricia's Insight (2.6.2026):**

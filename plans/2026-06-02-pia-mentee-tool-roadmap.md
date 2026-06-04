@@ -11,10 +11,12 @@ tags: [plan, mba, tools]
 
 ## Vision
 
-Jede MBA-Mentee bekommt mit dem Kurs Zugang zu **PIA** (Patricia Intelligence Assistant) — eine personalisierte KI-Mentorin die das Mama-CEO-System auf ihre Situation überträgt.
+PIA (Patricia Intelligence Assistant) — die **erste KI-Mentorin SPEZIELL für Mamas im Network**, die parallel ein eigenes Standbein aufbauen wollen, ohne dem Network-Team zu schaden.
+
+**Killer-USP (Patricia-Entscheidung 2.6.2026):** Network-spezialisiert. Kennt Firmen (doTERRA, Forever, Mary Kay, Ringana, Younique etc.), Rang-Sprache, Compliance-Regeln, Crossline-Dynamik, Team-Aufbau, Convention-Realität. Generische KI-Tools (ChatGPT, ARIA) verstehen das nicht.
 
 Marketing-Pitch:
-> „Du bekommst nicht nur den Kurs — du bekommst PIA, deine persönliche KI-Mentorin, die das Mama-CEO-System auf DEINE Situation überträgt. Während du in den Calls lernst, baut PIA mit. 24/7."
+> „Die erste KI-Mentorin SPEZIELL für Mamas im Network. Patricia hat 10+ Jahre Network-Erfahrung + KI-Stack reingebaut. PIA versteht Crossline-Situationen, Team-Aufbau, Compliance-Regeln deiner Firma und Mama-Realität — generische KI-Tools verstehen das nicht."
 
 ## Stufe 0 — Slash-Command `/mentee-onboard` (1 Tag)
 
@@ -24,11 +26,22 @@ Marketing-Pitch:
 
 1. **Skill-File anlegen:** `.claude/commands/mentee-onboard.md`
    - 35 Coaching-Fragen aus `context/patricia-vollprofil.md` extrahieren
-   - In sinnvolle Sets gruppieren (z.B. 5 Sets à 7 Fragen)
+   - **PLUS Network-spezifischer Frageblock** (siehe unten)
+   - In sinnvolle Sets gruppieren (z.B. 6 Sets à 7 Fragen — Set 1 = Network-Basics)
    - Conversational-Flow: ein Set fragen → Antwort speichern → nächstes Set
 2. **Output-Struktur:** `outputs/mentees/[mentee-slug]/profile.md`
-   - YAML-Frontmatter mit Metadaten (Onboarding-Datum, MBA-Pilot-Phase, etc.)
-   - Strukturierte Sektionen: Profil · Network-Firma · Zielgruppe · Säulen · Story · Produkte · Ziele · Brand-Voice · Wo-stehst-du
+   - YAML-Frontmatter mit Metadaten (Onboarding-Datum, MBA-Pilot-Phase, Network-Firma, etc.)
+   - Strukturierte Sektionen: Profil · **Network-Setup (Firma/Rang/Team)** · **Network-Compliance** · Zielgruppe · Säulen · Story · Produkte · Ziele · Brand-Voice · Wo-stehst-du
+
+### Network-spezifischer Frageblock (Pflicht in Onboarding Set 1)
+
+1. Welche Network-Firma? (doTERRA / Forever / Mary Kay / Ringana / Younique / Mōdere / dōTeam / Andere)
+2. Aktuelle Position/Rang in der Firma?
+3. Wie groß ist dein Team aktuell? (1st Line + Gesamt-Down-Line)
+4. Bist du grad in einer Crossline-Situation, die dich triggert? (Free-Text)
+5. Welche Compliance-Regeln muss deine Firma einhalten? (z.B. keine Heilversprechen, keine medizinischen Aussagen, keine Einkommens-Versprechen — Mehrfachauswahl + Free-Text)
+6. Was ist dein Ziel im Network? (Rangaufstieg / paralleles Standbein / beide / Ausstieg planen)
+7. Wo erlebst du den größten Reibungspunkt? (Familie versteht's nicht / Compliance fühlt sich eng an / Crossline-Vergleich / Team-Aufbau-Plateau / Konflikt mit eigenem Standbein / Anderes)
 3. **Index aktualisieren:** `outputs/mentees/_INDEX.md` und Tag `[mentee-profil]`
 4. **Pilot-Test:** Patricia spielt es zuerst mit ihrem eigenen Profil durch (Kalibrierung) — dann mit einer der 4 Pilot-Mentees
 
@@ -98,7 +111,8 @@ Marketing-Pitch:
 - ❌ Keine Visual-Generation in PIA (nutzen `scripts/karussell-render/`)
 - ❌ Kein eigenes Notion-Backend (Mentee bringt eigenes Notion mit oder nutzt PIA-eigene DB)
 - ❌ Kein Auto-Post in Stufe 0-2 (nur in Stufe 3)
-- ❌ Kein doTERRA-Profil (PIA ist Mentoring-only, doTERRA bleibt private)
+- ❌ **Kein generisches Online-Business-Tool wie ARIA** — PIA bleibt fokussiert auf Network-Mama-Hybrid-Strategie
+- ❌ **Keine Branchen außerhalb Network** (kein Fitness-Coaching, kein Solopreneur-allgemein) — schützt die Positionierung
 
 ## Nächster konkreter Schritt
 
