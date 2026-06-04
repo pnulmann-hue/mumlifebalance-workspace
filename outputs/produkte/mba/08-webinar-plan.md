@@ -423,43 +423,45 @@ Deine Fragen.
 
 ## 6. Preis-Dramaturgie & Cold-Traffic-Hebel
 
-- **Pioneer 990 vs. Liste 1347** = ehrliche Verknappung über die „erste Runde" (Gründungsmitglieder gestalten mit, sind am nähesten dran). Kein Fake-Countdown.
-- **Zahlplan** (z.B. 3× 363 oder 6× 185) — bei kaltem Publikum fast Pflicht, senkt die mentale Schwelle ohne den Preis zu drücken.
-- **Fast-Action-Bonus** (Bonus 3) nur für Live-Teilnehmerinnen / Kauf innerhalb von X Stunden → belohnt Entscheidung, ethisch (Bonus statt Rabatt).
+- **Pioneer 990 vs. Liste 1347** = ehrliche Verknappung über die „erste Runde" (Gründungsmitglieder gestalten mit, sind am nähesten dran). Kein Fake-Countdown. **Der Pioneer-Preis ist der ganze Anreiz — kein separater Fast-Action-Bonus** (Patricia-Entscheidung).
+- **Zahlplan:** bis zu **6 Raten** (ca. 6× 165) — senkt bei kaltem Publikum die mentale Schwelle, ohne den Preis zu drücken.
 - **Risk-Reversal / 14-Tage-Garantie** → nimmt der fremden Frau das Risiko, macht den 990-Sprung machbar.
-- **Cart-Fenster:** klar kommunizieren (Webinar-Tag → Cart offen bis [Datum], z.B. 4–7 Tage). Danach Pioneer-Preis weg.
+- **Cart-Fenster** (aus [[launch-kalender-juli-2026]]): Webinar Mi 24.6. → Pioneer-Ende Sa 27.6. 23:59 → Final bis Cart-Close So 5.7. 23:59.
 
-> ⚠️ **Cold-Traffic-Ehrlichkeit:** Ein 990-Verkauf direkt aus kaltem Ads-Webinar ist anspruchsvoll (Conversion realistisch tief, 1–3 %). Zwei Optionen, die das abfedern — du entscheidest:
-> 1. **Retargeting-Wärme:** Ads erst auf einen kleinen 0€-Leadmagneten (du hast 6 Stück!), dann Webinar-Einladung an die schon leicht erwärmte Liste. Höhere Show-up + Conversion.
-> 2. **Call-Alternative beim High-Ticket:** statt direktem Cart-Klick ein „Buch dir ein kurzes Gespräch"-Schritt für Unentschlossene → du oder eine Expertin schliesst im Gespräch. Für 990 oft stärker als reiner Selbst-Checkout.
+> ⚠️ **Cold-Traffic-Ehrlichkeit:** Ein 990-Verkauf direkt aus kaltem Ads-Webinar ist anspruchsvoll (Conversion realistisch tief, 1–3 %). Patricia-Entscheidung: **das Webinar IST der Leadmagnet** (Ad → direkt Webinar-Anmeldung, kein separater Freebie davor). Damit der kalte Klick trotzdem konvertiert, helfen zwei Hebel:
+> 1. **Retargeting der Nicht-Käuferinnen:** Ad-Klicker + Webinar-No-Shows + Replay-Watcher gezielt mit Cart-Reminder-Ads nachfassen (statt nur einmal kalt pitchen).
+> 2. **Call-Alternative beim High-Ticket:** für Unentschlossene ein „Buch dir ein kurzes Gespräch"-Schritt → du oder eine Expertin schliesst im Gespräch. Für 990 oft stärker als reiner Selbst-Checkout.
 
 ---
 
 ## 7. Cold-Funnel: Anmeldung → Show-up → Pitch → Replay → Evergreen
 
-1. **Meta-Ad** (Transformation/Freiheit-Hook, KEIN Income-Claim) → Anmelde-Landingpage (WP, vgl. [[reference_ki-webinar-lp-technik]] · Page-Struktur wie KI-Webinar-LP 3675).
-2. **Anmelde-LP** → AC-Form → Tag `mba-webinar-anmeldung` → Bestätigungs-Mail mit Termin + Kalender-Eintrag.
-3. **Reminder-Sequenz** (Show-up-Booster): 1 Woche / 24 h / 1 h vorher + „bring Notizblock mit". Show-up bei kalt ist der grösste Hebel.
-4. **Live-Webinar** → Cart-Open am Ende → Tag `mba-pitch-start`.
-5. **Replay-Fenster** (48–72 h): Replay-Mail + Cart-Reminder + Fast-Bonus-Auslauf.
+**Das Webinar selbst ist der 0€-Leadmagnet** (kein separater Freebie davor — Patricia-Entscheidung). Mail-Architektur ist in [[launch-kalender-juli-2026]] schon definiert (Einladung 2 + Confirmation 3 + Sales 7 + No-Show 3).
+
+1. **Meta-Ad** (Transformation/Freiheit-Hook, KEIN Income-Claim — siehe Sektion 2) → Anmelde-Landingpage (WP, vgl. [[reference_ki-webinar-lp-technik]] · Page-Struktur wie KI-Webinar-LP 3675).
+2. **Anmelde-LP** → AC-Form → Tag `mba-webinar-anmeldung` → Confirmation-Mail mit Termin + Kalender-Eintrag (Keyword `WEBINAR` für DM-Anmeldung, vgl. Launch-Kalender Mi 17.6.).
+3. **Reminder-/No-Show-Sequenz** (Show-up-Booster): 1 Woche / 24 h / 1 h vorher + „bring Notizblock mit". Show-up bei kalt ist der grösste Hebel.
+4. **Live-Webinar Mi 24.6. 09:00** → Cart-Open am Ende → Tag `mba-pitch-start`.
+5. **Replay-Fenster** (Do 25.6.: „Aufzeichnung mit Preis") + Sales-Mail-Sequenz bis Cart-Close So 5.7.
 6. **Nicht-Käuferinnen** → laufen in die **MBA-Pitch-Automation** (Webinar-Replay als Evergreen-Brücke, siehe [[umbau-plan]] Phase 1 + 4). Tag `mba-kauf` beendet die Automation.
 
 🚨 **Vor Ad-Aktivierung:** `curl -I` auf den Anmelde-Link — die 44-CHF-Lektion aus Mai darf sich nicht wiederholen ([[feedback_KRITISCH-ad-link-pre-launch-test]]).
 
 ---
 
-## 8. Promo-Plan (grobe Zeitachse — Daten einsetzen)
+## 8. Promo-Plan (verankert in [[launch-kalender-juli-2026]])
 
 | Phase | Wann | Was |
 |---|---|---|
-| Anwärmen | −10 bis −3 Tage | Ads starten · organische Story/Reels zum Abhängigkeits-Thema · Anmeldungen sammeln |
-| Last Call | −2 bis −1 Tag | „Morgen live"-Reminder · Behind-the-Scenes · letzte Anmeldungen |
-| Webinar-Tag | Tag 0 | Live 09:00 (dein Power-Window) · Cart-Open · Story-Cascade vor/während/nach |
-| Replay-Fenster | Tag +1 bis +3 | Replay-Mail · Cart-Reminder · Fast-Bonus läuft aus |
-| Cart-Close | Tag +X | Letzte-Stunden-Cascade · Cart zu · Pioneer-Preis endet |
-| Evergreen-Übergang | danach | Aufzeichnung schneiden → in MBA-Pitch-Automation einhängen |
+| Ads-Anwärmen | ab ~Fr 12.6. | Meta-Ads (Meta-safe Hook) starten → Webinar-Anmeldungen sammeln · parallel Story-Sequenz Abhängigkeit→Freiheit |
+| Aufwärmphase | Fr 12.6.–Di 23.6. | Webinar-Einladung Mail 1+2 · Sneak-Peak/BTS/Persönlich/Einwand-Stories · Secret Offer Di 23.6. |
+| **Webinar-Tag** | **Mi 24.6. 09:00** | Live (dein Power-Window) · Cart-Open Pioneer 990 · Story-Cascade vor/während/nach · Sales-Mail 1 + No-Show 1 |
+| Pioneer-Fenster | Do 25.6.–Sa 27.6. | Replay+Preis (Do) · Social Proof (Fr) · Pioneer-Ende-Cascade (Sa 27.6. 23:59) |
+| Final-Fenster | So 28.6.–Sa 4.7. | Einwand-/FAQ-/Storytelling-Mails · Final-Preis |
+| **Cart-Close** | **So 5.7. 23:59** | Last-Call-Cascade (morgens + 2h vor Schluss) · Cart zu |
+| Evergreen-Übergang | ab Mo 6.7. | Aufzeichnung schneiden → Launch-Daten raus, rollende Frist → in MBA-Pitch-Automation einhängen ([[blueprint]]) |
 
-→ Content baust du über `/freitag-hooks` + `/reels` + `/karussell` (Pillar: Abhängigkeit→Freiheit, eigenes Standbein, KI-Möglichkeit). Ads über `scripts/meta-ads/` (vgl. `create-webinar-ad.js` / `clone-webinar-ad.mjs`).
+→ Content baust du über `/freitag-hooks` + `/reels` + `/karussell` (Pillar: Abhängigkeit→Freiheit, eigenes Standbein, KI-Möglichkeit) — dieser Launch-Kalender ist deren Quelle für KW 24–27. Ads über `scripts/meta-ads/` (vgl. `create-webinar-ad.js` / `clone-webinar-ad.mjs`).
 
 ---
 
@@ -494,12 +496,12 @@ Webinar-Szenario (eine Runde, kalt + warm gemischt):
 
 ## 11. Nächste Schritte (To-Dos für dich)
 
-- [ ] **Webinar-Datum + Cart-Close-Datum festlegen** (ich trage sie dann überall ein)
-- [ ] **Titel A / B / C picken** (oder eigenen)
-- [ ] **Bonus 3 definieren** (Schnell-Entschlossenen-Bonus)
-- [ ] **Zahlplan bestätigen** (3× 363? 6× 185?)
-- [ ] **Cold vs. Retarget-Strategie entscheiden** (Sektion 6 — direkt kalt oder über Leadmagnet anwärmen?)
-- [ ] Danach baue ich dir auf Wunsch: die **Anmelde-Landingpage** (`/wp`), die **Reminder-Mail-Sequenz**, die **Meta-Ad** (Income-Claim-safe) und die **Canva-Slides** aus diesem Skript.
+**Entschieden (Patricia 4.6.):** ✅ Datum Mi 24.6. · ✅ Titel (Painpoint-Frame) · ✅ kein Fast-Action-Bonus (Pioneer-Preis ist Anreiz) · ✅ bis zu 6 Raten · ✅ Webinar = Leadmagnet (Ads direkt aufs Webinar)
+
+**Noch offen:**
+- [ ] **Preis final bestätigen: 990 oder 997?** Kanonisch (Salespage + ThriveCart + Launch-Kalender) = **990**. Du hast 997 erwähnt. Wenn 997, muss ich es überall ändern — sag kurz Bescheid.
+- [ ] **Bestätigen, ob das Webinar wirklich um 09:00 läuft** (dein Power-Window) — oder lieber abends für berufstätige NWM-Mamas (mehr Show-up bei kalt)?
+- [ ] Danach baue ich dir auf Zuruf: die **Anmelde-Landingpage** (`/wp`), die **Mail-Architektur** (Einladung/Confirmation/Sales/No-Show — Gerüst liegt im Launch-Kalender), die **Meta-Ad** (Income-Claim-safe) und die **Canva-Slides** aus diesem Skript.
 
 ---
 

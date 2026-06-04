@@ -349,14 +349,14 @@ WAS DU NACH LEKTION 3.3 HAST
 Das Jahr steht. Jetzt zoomen wir rein: vom Jahr in den Monat, vom Monat in die Woche. Hier wird es konkret — denn die Woche ist die Ebene, in der dein Leben wirklich passiert.
 
 Du lernst:
-→ Wie du aus deiner Jahres-Strategie einen Monatsfokus + 3 Monatsziele ableitest
-→ Wie deine 6 Lebens-Bereiche in deine Power-Slots aus Säule 1 wandern
-→ Warum jede Woche alle 6 Bereiche vorkommen sollten (auch Me-Time und Reflexion)
+→ Wie du aus deiner Jahres-Strategie einen Monatsfokus + 3 Monatsziele ableitest — und welche Lebens-Bereiche diesen Monat überhaupt dran sind
+→ Wie deine aktiven Lebens-Bereiche in deine eigenen Power-Slots aus Säule 1 wandern (Slot für Slot)
+→ Warum nicht jeder Bereich jeden Monat laufen muss — aber Me-Time + Reflexion möglichst nie ganz rausfallen
 → Wie du deinen Tag in 30 Sekunden planst: Tagesfokus + 3 Hauptaufgaben
 
-Am Ende hast du eine Beispiel-Woche, in der jeder der 6 Bereiche seinen festen Platz hat — abgestimmt auf deine echten Power-Zeiten.
+Am Ende hast du eine Beispiel-Woche, in der deine aktiven Bereiche ihren Platz in deinen echten Slots haben — egal ob du zwei pro Tag hast oder nur einen.
 
-📋 Lektion 3.4 im Arbeitsblatt: dein Monatsplan + deine Beispiel-Woche mit allen 6 Bereichen
+📋 Lektion 3.4 im Arbeitsblatt: dein Monatsplan + aktive Bereiche + Beispiel-Woche in deinen Slots
 ```
 
 ## Folien-Plan (13 Folien)
@@ -371,10 +371,10 @@ Am Ende hast du eine Beispiel-Woche, in der jeder der 6 Bereiche seinen festen P
 | 6 | **Bereiche treffen deine Power-Slots** | Wochen-Grid: DEINE individuellen Power-Slots (S1) mit je 1 Lebens-Bereich belegt — bei der einen 2/Tag, bei der anderen nur Vormittag oder 1 freier Nachmittag | „Hier kommt Säule 1 wieder rein: deine eigenen Power-Slots. Und die sehen bei jeder anders aus. Die eine hat zwei pro Tag, Vormittag und Abend, die andere nur den Vormittag, und wieder eine andere wie ich vor allem den Dienstagnachmittag, wo alle aus dem Haus sind. Nimm DEINE Slots, nicht ein erfundenes Idealbild. In jeden einzelnen Slot legst du dann einen Lebens-Bereich, so weisst du nicht nur DASS du arbeitest, sondern WORAN." |
 | 7 | **Vom Bereich zur konkreten Aufgabe** | Pfeil: Power-Slot → Lebens-Bereich → konkrete Aufgabe aus Säule 2 (Beispiel: Mo Vormittag = Produkterstellung = „Modul 2 aufnehmen") | „Und jetzt wird es ganz konkret. Der Lebens-Bereich ist die Schublade, aber in die Schublade legst du die einzelne Aufgabe aus deinem Brain Dump in Säule 2. Beispiel: Montag Vormittag ist Produkterstellung, und die konkrete Aufgabe ist Modul zwei aufnehmen. So wie du beim Haushalt sagst Dienstag ist Bad und Mittwoch ist Küche, sagst du jetzt fürs Business: dieser Slot, diese Aufgabe. Damit ist nichts mehr nur ein vager Bereich, sondern ein klarer Auftrag." |
 | 8 | **Der CEO-Tag-Fokus hilft beim Verteilen** | Mo Strategie · Di Brand · Mi Beziehungen · Do Entscheidungen · Fr Reflexion → passende Bereiche zuordnen | „Damit du nicht raten musst was wann passt, nutzt du deinen CEO-Tag-Fokus aus Säule 1. Montag Strategie passt zu Produkterstellung, Dienstag Brand zu Sichtbarkeit, Mittwoch Beziehungen zu Kundenbetreuung, Freitag Reflexion zur Reflexion. Der Tag-Fokus gibt dir die Richtung, die Lebens-Bereiche füllen sie konkret." |
-| 9 | **Jede Woche alle 6 — auch Me-Time** | Checkliste: kommen alle 6 Bereiche diese Woche vor? · Warnung: Me-Time + Reflexion werden zuerst gestrichen | „Eine wichtige Regel: jede Woche sollte alle sechs Bereiche enthalten. Und ja, das schliesst Me-Time und Reflexion ein, weil genau die zuerst rausfliegen wenn es eng wird. Wenn du dir diese beiden nicht fest einplanst, verschwinden sie, und dann landest du wieder im Hamsterrad aus Säule 2." |
-| 10 | **Beispiel-Woche komplett** | volles Mo-So-Grid mit allen 6 Bereichen verteilt + gelben Mama-Slots + Sonntag-Reset | „So sieht eine fertige Woche aus: grüne Power-Slots mit ihren Bereichen, gelbe Mama-Slots für die Familie, und am Sonntag dein Reset. Schau es dir an, es wirkt voll, aber es ist ausgewogen, weil jeder Bereich seinen Platz hat statt dass einer alles auffrisst." |
+| 9 | **Welche Bereiche sind diesen Monat dran?** | Rückgriff Monatsplan: NICHT alle 6 jede Woche — der Monat entscheidet · ABER Me-Time + Reflexion möglichst nie ganz raus | „Und jetzt der Punkt, den du schon im Monatsplan festgelegt hast: nicht alle sechs Bereiche müssen jede Woche laufen. In einem Monat steht Produkterstellung gross an, im nächsten gar nicht, das ist völlig okay. Was ich dir trotzdem ans Herz lege: lass Me-Time und Reflexion möglichst nie ganz raus, weil genau die zuerst verschwinden wenn es eng wird, und dann landest du wieder im Hamsterrad aus Säule 2." |
+| 10 | **Beispiel-Woche komplett** | Mo-So-Grid mit den aktiven Bereichen in den individuellen Power-Slots + gelben Mama-Slots + Sonntag-Reset | „So könnte eine fertige Woche aussehen: deine Power-Slots mit den Bereichen die diesen Monat dran sind, die gelben Mama-Slots für die Familie, und am Sonntag dein Reset. Das ist nur ein Beispiel, deine Woche hat vielleicht weniger Slots oder andere Tage. Wichtig ist nur: es ist ausgewogen, statt dass ein Bereich alles auffrisst." |
 | 11 | **Der Tag in 30 Sekunden** | Tageskarte: Tagesfokus + 3 Hauptaufgaben + kurze Reflexion abends | „Und der Tag? Den planst du in dreissig Sekunden, weil die Woche schon steht. Du schaust morgens auf deinen Tag, setzt einen Tagesfokus und drei Hauptaufgaben, fertig. Abends ein, zwei Sätze Reflexion. Kein langes Grübeln, weil die Vorarbeit in Woche und Monat schon erledigt ist." |
-| 12 | **Arbeitsblatt-Hinweis** | „📋 Monatsplan + Beispiel-Woche mit 6 Bereichen + Tagesplaner-Vorlage" | „Im Arbeitsblatt baust du jetzt deinen Monatsplan mit einem Fokus und drei Zielen, dann deine Beispiel-Woche mit allen sechs Bereichen in deinen Power-Slots, und du hast eine Tagesplaner-Vorlage zum Kopieren. Nimm dir dafür Zeit, das ist das Herzstück." |
+| 12 | **Arbeitsblatt-Hinweis** | „📋 Monatsplan + Beispiel-Woche mit deinen aktiven Bereichen + Tagesplaner-Vorlage" | „Im Arbeitsblatt baust du jetzt deinen Monatsplan mit Fokus, drei Zielen und den aktiven Bereichen, dann deine Beispiel-Woche mit diesen Bereichen in deinen eigenen Power-Slots, und du hast eine Tagesplaner-Vorlage zum Kopieren. Nimm dir dafür Zeit, das ist das Herzstück." |
 | 13 | **Nächste Lektion: 3.5 MASTERY** | „Lektion 3.5 — Notion-Master-Template komplett einrichten" | „In der nächsten Lektion, der MASTERY, bauen wir das alles gemeinsam in Notion. Du duplizierst mein Master-Template und füllst es mit allem was du bis hierher erarbeitet hast. Plan dir dafür eine ungestörte halbe Stunde ein. Bis gleich." |
 
 ## Arbeitsblatt-Sektion 3.4
@@ -390,26 +390,27 @@ Monatsfokus (1 Satz): _______________________________
 3. _______________________________
 Launch/grosse Sache diesen Monat (falls): _______________
 
-▸ Deine Beispiel-Woche — 6 Bereiche in deine Power-Slots
-Trag in jeden Power-Slot (Vormittag V + Abend A) einen Lebens-Bereich ein
-UND gleich die konkrete Aufgabe aus deinem Brain Dump (Säule 2) dazu.
-Format: „Bereich — konkrete Aufgabe" (z.B. „Produkterstellung — Modul 2 aufnehmen").
-Im gelben Mama-Slot steht dein Haushalts-Tag aus Säule 2 L2.5 (z.B. „Bad putzen").
-Nutze deinen CEO-Tag-Fokus als Richtung.
-
-| Tag | CEO-Fokus    | Power-Slot V | Power-Slot A | gelber Mama-Slot |
-| Mo  | Strategie    | ___________  | ___________  | ___________ |
-| Di  | Brand        | ___________  | ___________  | ___________ |
-| Mi  | Beziehungen  | ___________  | ___________  | ___________ |
-| Do  | Entscheidungen| __________  | ___________  | ___________ |
-| Fr  | Reflexion    | ___________  | ___________  | ___________ |
-| Sa  | —            | (frei/Familie) | —          | ___________ |
-| So  | Reset 15 Min | ___________  | —            | ___________ |
-
-▸ Check: Kommen diese Woche alle 6 Bereiche vor?
+▸ Welche Lebens-Bereiche sind DIESEN Monat aktiv?
+Markier nur die, die diesen Monat wirklich dran sind (nicht jeder muss jeden Monat).
 ☐ 🛍 Produkterstellung  ☐ 📱 Sichtbarkeit  ☐ 💬 Kundenbetreuung
 ☐ 🧘 Me-Time  ☐ 👨‍👩‍👧‍👦 Familie+Haushalt  ☐ 📊 Reflexion
-(Fehlt einer? Bau ihn ein, bevor du weitergehst.)
+Tipp: Me-Time + Reflexion möglichst nie ganz rauslassen.
+
+▸ Deine Beispiel-Woche — aktive Bereiche in deine eigenen Slots
+Trag deine echten Power-Slots ein (manche haben 2/Tag, manche nur einen — nimm DEINE).
+In jeden Slot kommt ein aktiver Lebens-Bereich PLUS die konkrete Aufgabe aus deinem
+Brain Dump (Säule 2). Format: „Bereich — konkrete Aufgabe" (z.B. „Produkterstellung — Modul 2 aufnehmen").
+Im gelben Mama-Slot steht dein Haushalts-Tag aus Säule 2 L2.5 (z.B. „Bad putzen").
+Der CEO-Tag-Fokus ist die Brille (die Denkhaltung), der Bereich die Aufgabe.
+
+| Tag | CEO-Fokus (Brille) | Slot 1 | Slot 2 (falls vorhanden) | gelber Mama-Slot |
+| Mo  | Strategie     | ___________ | ___________ | ___________ |
+| Di  | Brand         | ___________ | ___________ | ___________ |
+| Mi  | Beziehungen   | ___________ | ___________ | ___________ |
+| Do  | Entscheidungen| ___________ | ___________ | ___________ |
+| Fr  | Reflexion     | ___________ | ___________ | ___________ |
+| Sa  | —             | (frei/Familie) | —        | ___________ |
+| So  | Reset 15 Min  | ___________ | —           | ___________ |
 
 ▸ Tagesplaner-Vorlage (zum täglichen Kopieren)
 Datum: _________  Tagesfokus: _______________________________
@@ -420,8 +421,8 @@ Meine 3 Hauptaufgaben heute:
 Abend-Reflexion (1-2 Sätze): _______________________________
 
 WAS DU NACH LEKTION 3.4 HAST
-✓ Dein Monatsplan steht (1 Fokus + 3 Ziele)
-✓ Deine Beispiel-Woche hat alle 6 Bereiche in den Power-Slots
+✓ Dein Monatsplan steht (1 Fokus + 3 Ziele + aktive Bereiche diesen Monat)
+✓ Deine Beispiel-Woche hat deine aktiven Bereiche in deinen eigenen Slots
 ✓ Du hast eine Tagesplaner-Vorlage für 30-Sekunden-Tagesplanung
 ```
 
