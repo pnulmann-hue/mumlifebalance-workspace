@@ -1,6 +1,6 @@
 {
   "$schema": "competitor-watchlist v2",
-  "updated": "2026-05-08",
+  "updated": "2026-06-04",
   "description": "Aktualisiert nach Discovery-Lauf 2026-05-08. Ersetzt v1 (war auf Web-Such-Phantasie basiert). Enthält 7 echte In-Niche-Stars (entdeckt via Hashtag-Discovery) + 3 Big-Names (Caroline Preuss, Julia Trost, Katharina Lewald) zur Vergleichsobservation. Tägliches Scraping zeigt: Big-Names nutzen die Mum-Business-Hashtags nicht — sie kommen über andere Distribution.",
   "accounts": [
     {
@@ -92,6 +92,14 @@
       "note": "Von Patricia ergänzt. Nicht in Discovery aufgetaucht — nutzt vermutlich Karriere/Berufsentwicklung-Hashtags statt Mum-Business-Hashtags. Daily-Scrape klärt"
     },
     {
+      "handle": "liane.meusel",
+      "label": "Liane Meusel — Reichweiten-Benchmark (von Patricia geflaggt)",
+      "profile": "mentoring",
+      "category": "patricia-flagged-reach-benchmark",
+      "added": "2026-06-04",
+      "note": "Von Patricia als Reichweiten-Vergleich geflaggt (2026-06-04). Nische noch unverifiziert (mentoring angenommen). Ad-hoc-Dispatch via API war 403-blockiert → erfasst durch täglichen 06:00-Scrape. Nach erstem Scrape: Nische + Format-Mix prüfen und Analyse aktualisieren."
+    },
+    {
       "handle": "mumlifebalance_patricia_ulmann",
       "label": "Patricia (Mentoring) — eigenes Profil",
       "profile": "mentoring-self",
@@ -119,6 +127,7 @@
   },
   "changelog": {
     "v1_2026-05-07": "Initial 6 accounts: 3 Mentoring (Preuss, Trost, Lewald) + 3 doTERRA (Heilkunstwerk, Aroma Mama, AROMA 1x1). Web-Such-basiert.",
-    "v2_2026-05-08": "Discovery-validiert: doTERRA-3 entfernt (kein Vorkommen unter Hashtags), Mentoring-3 als 'big-name reference' behalten, 7 echte Stars aus Discovery hinzugefügt."
+    "v2_2026-05-08": "Discovery-validiert: doTERRA-3 entfernt (kein Vorkommen unter Hashtags), Mentoring-3 als 'big-name reference' behalten, 7 echte Stars aus Discovery hinzugefügt.",
+    "v3_2026-06-04": "liane.meusel als Reichweiten-Benchmark hinzugefügt (von Patricia geflaggt). Nische unverifiziert."
   }
 }

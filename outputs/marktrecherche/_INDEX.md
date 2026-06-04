@@ -8,6 +8,7 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 
 ## Dateien
 
+- [[2026-06-04-reichweiten-analyse-liane-meusel]]
 - [[KW18-doterra]]
 - [[KW18-mentoring]]
 - [[KW19-doterra]]
