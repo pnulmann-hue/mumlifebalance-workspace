@@ -59,7 +59,7 @@ Eine Mama braucht alle drei, sonst bleibt sie hängen:
 
 ### Cold-Traffic-Implikationen (weil über Meta-Ads)
 - **Mehr Story, mehr Vertrauen, später pitchen.** Eine fremde Frau braucht erst das Gefühl „die ist echt, die meint's ehrlich", bevor 997 fällt.
-- **Niedrigere Einstiegsschwelle:** Anzahlungs-Close (Jens-Gesetz 4) + Zahlplan (6 Raten) + echte Garantie sind bei kalt fast Pflicht (siehe Sektion 6).
+- **Niedrigere Einstiegsschwelle:** Anzahlungs-Close (Jens-Gesetz 4) + Zahlplan (6 Raten) sind bei kalt fast Pflicht (siehe Sektion 6). Garantie-Frage offen (deine 2.6.-Entscheidung war „keine") — bei kalt wäre eine echte Garantie ein starker Hebel, du entscheidest.
 - 🚨 **Meta-Income-Claim-Warnung:** In der **Ad** (nicht im Webinar selbst) darfst du **keine konkreten Einkommens-Versprechen** machen („verdiene 2x vierstellig"). Meta sperrt das. Die Ad verkauft die **Transformation/Freiheit** („dein eigenes Standbein, unabhängig"), die Einkommens-Story erzählst du erst **im** Webinar als deine persönliche Realität. → Verknüpft mit [[reference_ki-webinar-lp-technik]] + [[feedback_KRITISCH-ad-link-pre-launch-test]] (Link vor Aktivierung testen!).
 
 ### Warum dieser Pitch anders ist als das Mama-CEO-Webinar (333)
@@ -204,7 +204,8 @@ Weg vom Produkt — hin zur Transformation.
 ```
 **Sprechnotizen (2.5 Min):** „Der eine Wechsel, der bei mir alles verändert hat, ist dieser: weg vom Produkt, hin zur Transformation. In dem Moment, in dem du nicht mehr ein Fläschchen oder ein Pulver verkaufst, sondern eine echte Veränderung im Leben einer Frau, bist du nicht mehr vergleichbar. Und genau das macht dich unabhängig — von der Konkurrenz, von Provisionen, vom Glück, ob dein Team grad mitzieht."
 
-#### SLIDE 10 — Die 3 Säulen (das Lehr-Gerüst = WAS)
+#### SLIDE 10 — Die 3 Säulen (Aha-Landkarte = WAS, KEIN How-to)
+> ⚠️ Jens-Gesetz 1: Das ist die **Landkarte** („du brauchst genau diese drei Dinge") — ein Aha-Moment, KEINE Lektion. Du erklärst NICHT, wie man jede Säule baut. Das „Wie" ist die MBA.
 ```
 [Creme, 3 Säulen-Icons]
 Was eine Mama wirklich braucht — 3 Säulen:
@@ -213,7 +214,7 @@ Was eine Mama wirklich braucht — 3 Säulen:
 03. ZEIT + KI — damit es neben der Familie läuft
 [unten, Orange] Eine Säule allein reicht nicht. Erst alle drei machen dich frei.
 ```
-**Sprechnotizen (2.5 Min):** „Damit das funktioniert, braucht es drei Dinge — ich nenne sie meine drei Säulen. Erstens Sichtbarkeit mit einem eigenen Thema, damit Frauen wegen DIR kommen. Zweitens ein eigenes Angebot, ein zweites Standbein, das dir echten Umsatz bringt und nicht nur Provision. Und drittens Zeit und KI, damit das Ganze überhaupt neben Kindern und Haushalt läuft. Und jetzt zeig ich dir von jeder Säule, was möglich ist."
+**Sprechnotizen (2 Min):** „Und jetzt kommt der Moment, der bei vielen klick macht. Es braucht nämlich genau drei Dinge — meine drei Säulen. Erstens Sichtbarkeit mit einem eigenen Thema, damit Frauen wegen DIR kommen. Zweitens ein eigenes Angebot, dein zweites Standbein, das dir echten Umsatz bringt statt nur Provision. Und drittens Zeit und KI, damit das überhaupt neben Kindern und Haushalt läuft. Eine allein reicht nicht — erst alle drei zusammen machen dich frei. Und jetzt zeig ich dir von jeder, was damit möglich ist."
 
 ---
 
@@ -343,17 +344,19 @@ Was du bekommst — einzeln:
 Kurs 1 ........... 333
 Kurs 2 ........... 333
 Kurs 3 ........... 333
-Umsetzerinnen-Calls + Community ... unbezahlbar (laufende Begleitung)
-Boni ............. 3× Patricia-eigen
+Umsetzerinnen-Calls + Community ... laufende Live-Begleitung (2×/Monat)
+Boni ............. 3× Patricia-eigen (Companion · PIA · Notion)
 ─────────────────
-Einzeln allein: über 997 — nur für die Kurse.
+Allein die 3 Kurse: 999. Du zahlst 997 — für ALLES.
 ```
-**Sprechnotizen (2 Min):** „Lass uns über den Wert reden. Allein die drei Kurse kosten einzeln zusammen schon über 997 Franken — und da sind die Calls und die Community noch gar nicht drin, die ja monatlich weiterlaufen. Du bekommst also den kompletten Weg plus die Begleitung, die dafür sorgt, dass du ihn auch wirklich gehst."
+> 💡 **Ehrlicher Wert-Anker statt Mondpreis:** Jens nutzt die Mondpreis-Strategie (Wert ×5 hoch ankern). Bei dir gilt aber „keine erfundenen Zahlen" — darum der **ehrliche** Anker: die 3 Kurse kosten real je 333 = 999. Du framst „Calls + Community + Boni sind quasi geschenkt". Das ist genauso stark und brand-konform.
+
+**Sprechnotizen (2 Min):** „Lass uns über den Wert reden. Allein die drei Kurse kosten einzeln zusammen schon 999 Franken. Und das, was den eigentlichen Unterschied macht — die Calls zweimal im Monat, die Community, die drei Boni — das kommt noch obendrauf und läuft monatlich weiter. Du bekommst also den kompletten Weg plus die Begleitung, die dafür sorgt, dass du ihn wirklich gehst."
 
 #### SLIDE 23 — Pricing (Pioneer-Drama)
 ```
 [Weiss, Preis-Karten]
-[Eyebrow, Petrol] Erste Runde · Pioneer-Plätze begrenzt
+[Eyebrow, Petrol] Erste Runde · Pioneer-Preis nur bis Sa 27.6.
 [FEATURED] PIONEER
 CHF 997
 Gründungsmitglied · erste Runde · niedrigster Preis, den es je gibt
@@ -362,15 +365,18 @@ Gründungsmitglied · erste Runde · niedrigster Preis, den es je gibt
 ```
 **Sprechnotizen (3 Min):** „Jetzt zum Preis. Der spätere Listenpreis der Academy ist 1347. Heute, als Pioneer der allerersten Runde, kommst du für 997 rein — das ist der niedrigste Preis, den es je geben wird, weil du mir hilfst, die erste Runde zu gestalten, und dafür am nähesten an mir dran bist. Und damit das neben der Familie machbar ist, kannst du in bis zu sechs Raten zahlen, also rund 166 Franken im Monat. Den Pioneer-Preis gibt's nur in dieser ersten Runde — ab Samstag, dem 27., ist Schluss damit, und der ganze Zugang schliesst am Sonntag drauf."
 
-#### SLIDE 24 — Garantie / Risk-Reversal (wichtig bei kalt)
+#### SLIDE 24 — Risk-Reversal (über die Anzahlung, KEINE Geld-zurück-Garantie)
+> 🚨 **Deine MBA-Entscheidung 2.6. ([[feedback_KRITISCH-mba-bundle-struktur]]): KEINE Geld-zurück-Garantie · KEINE Plätze-Beschränkung · Verknappung NUR über Preis-Runden.** Darum NICHT die klassische 14-Tage-Garantie. Das Risk-Reversal läuft hier über die **Anzahlung** (Jens-Mechanik): die kleine Anzahlung bekommst du zurück, falls nach deinen Fragen doch nicht alles passt — das volle Programm ist aber ohne Geld-zurück.
 ```
 [Creme, Siegel-Optik]
-Mein Versprechen an dich:
-Komm rein, schau dir den ersten Kurs und den ersten Call an.
-Wenn du das Gefühl hast, das ist nichts für dich — sag mir innerhalb von 14 Tagen Bescheid.
-[Orange] Dann bekommst du dein Geld zurück. Ohne Diskussion.
+Du gehst kein Risiko ein:
+Reservier deinen Platz mit einer kleinen Anzahlung.
+Stell mir danach in Ruhe alle deine Fragen.
+[Orange] Passt es nach dem Gespräch doch nicht? Die Anzahlung bekommst du zurück.
 ```
-**Sprechnotizen (2 Min):** „Weil du mich vielleicht heute zum ersten Mal siehst, nehm ich dir das Risiko ab. Du kommst rein, schaust dir den ersten Kurs und den ersten Call an. Wenn du dann merkst, das passt für dich nicht, schreibst du mir innerhalb von zwei Wochen — und ich geb dir dein Geld zurück, ohne Diskussion. Das Einzige, was ich von dir brauche, ist, dass du wirklich reinschaust."
+**Sprechnotizen (2 Min):** „Weil du mich vielleicht heute zum ersten Mal siehst, machen wir das ganz entspannt. Du musst dich nicht sofort komplett festlegen — du reservierst dir deinen Platz mit einer kleinen Anzahlung, und danach klären wir in Ruhe alle Fragen, die du noch hast. Und wenn du dann merkst, das passt für dich gerade doch nicht, bekommst du die Anzahlung zurück. Du gehst also kein Risiko ein, um herauszufinden, ob das deins ist."
+
+> ⚠️ **Falls du die Garantie-Frage neu denken willst:** Bei KALTEM Traffic ist eine echte Geld-zurück-Garantie ein starker Conversion-Hebel — Jens & viele High-Ticket-Webinare nutzen sie. Deine 2.6.-Entscheidung war „keine". Wenn du sie für dieses kalte Webinar doch zulassen willst, sag Bescheid — dann setze ich Slide 24 auf die volle Garantie um. Sonst bleibt's bei der Anzahlungs-Rückgabe.
 
 #### SLIDE 25 — Antikunden (Ja / Nein)
 ```
@@ -388,11 +394,14 @@ Wenn du das Gefühl hast, das ist nichts für dich — sag mir innerhalb von 14 
 ```
 [Orange, Weiss-Text, Mega-CTA]
 Sichere dir deinen Pioneer-Platz.
-CHF 997 · erste Runde · bis zu 6 Raten
+Reservier ihn mit einer kleinen Anzahlung.
+CHF 997 (oder bis zu 6 Raten) · Pioneer nur bis Sa 27.6.
 🔗 [mumlifebalance.ch/mba]   [QR-Code]
 [unten] Link ist im Chat. Pioneer-Preis nur bis Sa 27.6.
 ```
-**Sprechnotizen (1.5 Min):** „Der Cart ist jetzt offen. Den Link findest du im Chat und hier auf dem Bildschirm. Wenn du dir heute deinen Pioneer-Platz sicherst, kommst du zum niedrigsten Preis rein, den es je geben wird — wahlweise in bis zu sechs Raten. Klick rein, trag dich ein, und dann sehen wir uns drinnen. Und jetzt nehm ich mir Zeit für deine Fragen."
+**Sprechnotizen (1.5 Min):** „Der Cart ist jetzt offen. Du musst dich jetzt nicht in einer Minute komplett entscheiden — du kannst dir deinen Pioneer-Platz mit einer kleinen Anzahlung reservieren, und alle offenen Fragen klären wir danach in Ruhe. Wer komplett zahlt, kann das direkt tun oder in bis zu sechs Raten. Den Link findest du im Chat und hier auf dem Bildschirm. Klick rein, sichere dir deinen Platz, und dann sehen wir uns drinnen. Und jetzt nehm ich mir Zeit für deine Fragen."
+
+> ⚙️ **Anzahlungs-Mechanik (Jens-Gesetz 4) hinter dem CTA** — Details + Seiten-Flow in Sektion 6. Auf der Reservierungs-Seite: kleine Anzahlung → Zwischenseite „Platz wird geprüft" → „bestätigt, 24h reserviert: Restzahlung ODER Fragen per WhatsApp/DM". Senkt die Schwelle beim kalten 997-Klick massiv.
 
 #### SLIDE 27 — Q&A + Closing
 ```
@@ -435,13 +444,28 @@ Deine Fragen.
 ## 6. Preis-Dramaturgie & Cold-Traffic-Hebel
 
 - **Pioneer 997 vs. Liste 1347** = ehrliche Verknappung über die „erste Runde" (Gründungsmitglieder gestalten mit, sind am nähesten dran). Kein Fake-Countdown. **Der Pioneer-Preis ist der ganze Anreiz — kein separater Fast-Action-Bonus** (Patricia-Entscheidung).
-- **Zahlplan:** bis zu **6 Raten** (ca. 6× 165) — senkt bei kaltem Publikum die mentale Schwelle, ohne den Preis zu drücken.
+- **Zahlplan:** bis zu **6 Raten** (ca. 6× 166) — senkt bei kaltem Publikum die mentale Schwelle, ohne den Preis zu drücken.
 - **Risk-Reversal / 14-Tage-Garantie** → nimmt der fremden Frau das Risiko, macht den 997-Sprung machbar.
 - **Cart-Fenster** (aus [[launch-kalender-juli-2026]]): Webinar Mi 24.6. → Pioneer-Ende Sa 27.6. 23:59 → Final bis Cart-Close So 5.7. 23:59.
 
-> ⚠️ **Cold-Traffic-Ehrlichkeit:** Ein 997-Verkauf direkt aus kaltem Ads-Webinar ist anspruchsvoll (Conversion realistisch tief, 1–3 %). Patricia-Entscheidung: **das Webinar IST der Leadmagnet** (Ad → direkt Webinar-Anmeldung, kein separater Freebie davor). Damit der kalte Klick trotzdem konvertiert, helfen zwei Hebel:
-> 1. **Retargeting der Nicht-Käuferinnen:** Ad-Klicker + Webinar-No-Shows + Replay-Watcher gezielt mit Cart-Reminder-Ads nachfassen (statt nur einmal kalt pitchen).
-> 2. **Call-Alternative beim High-Ticket:** für Unentschlossene ein „Buch dir ein kurzes Gespräch"-Schritt → du oder eine Expertin schliesst im Gespräch. Für 997 oft stärker als reiner Selbst-Checkout.
+### 🔑 Der Close: Anzahlungs-Strategie (Jens-Gesetz 4 — DER Hebel fürs kalte 997-Webinar)
+Statt die fremde Frau direkt 997 zahlen zu lassen, gibst du ihr einen sanfteren Einstieg. Funktioniert laut Jens zuverlässig bis 3000€ direkt aus dem Webinar:
+
+1. **Reservierungs-Seite:** „Sichere dir den Pioneer-Preis (CHF 997) mit einer kleinen Anzahlung von CHF [z.B. 90]." (Die Anzahlung wird voll angerechnet.)
+2. **Zwischen-/Bestätigungs-Seite:** „Dein Pioneer-Preis ist jetzt für dich gesichert — und für 24 h reserviert. Du kannst die Restzahlung direkt vornehmen (einmal oder 6 Raten) — oder, wenn du noch Fragen hast, klick hier und stell sie mir per WhatsApp/DM."
+3. **Anzahlungs-Rückgabe:** „Die Anzahlung bekommst du zurück, wenn nach deinen Fragen doch nicht alles passt."
+
+→ **Warum das zieht:** Die Schwelle „kleine Anzahlung, Fragen danach klären" ist viel niedriger als „jetzt 997 zahlen". ~80% der Anzahlerinnen zahlen den Rest, weil sie innerlich schon entschieden haben. Die WhatsApp/DM-Option ist gleichzeitig deine **Call-Alternative** für Unentschlossene — du schliesst im Gespräch.
+> 🚨 **An deine MBA-Entscheidung angepasst ([[feedback_KRITISCH-mba-bundle-struktur]]): KEINE Plätze-Beschränkung — Verknappung läuft NUR über die Preis-Runde.** Darum reserviert die Anzahlung den **Pioneer-PREIS** (der Sa 27.6. ausläuft), NICHT einen begrenzten Sitzplatz. Keine „nur noch X Plätze frei"-Animation (wäre erfunden + widerspräche deiner Entscheidung). Der Druck ist echt und ehrlich: nach Sa 27.6. kostet es mehr.
+
+### Value-Equation-Check fürs Angebot (Jens-Gesetz 3 / 4 Bausteine)
+Bevor die Slides final sind, das MBA-Versprechen gegen die 4 Achsen prüfen:
+- **Traumergebnis** → „dein eigenes, planbares Standbein" (konkret, mit deiner echten 2x-vierstellig-Story als Beweis)
+- **Wahrscheinlichkeit** → Mentee-Erfolge + „auch ohne Technik, auch wenn du heute nicht weisst wie" + 14-Tage-Garantie
+- **Zeit-Verzögerung** → „du startest sofort mit Kurs 1" + erste Teilergebnisse schnell benennen
+- **Anstrengung** → „ohne dass du deinen Alltag umkrempelst", KI nimmt den Adminkram ab, kopieren statt erfinden
+
+> 📌 **Cold-Traffic-Ehrlichkeit:** Jens fährt auf kaltem Evergreen-Traffic ~**10 % Sales-Conversion** — aber nach **500 Live-Webinaren** Übung. Für deine erste Live-Runde realistisch tiefer (1–3 %), die Anzahlungs-Mechanik + Retargeting heben das. **Das Webinar IST der Leadmagnet** (Ad → direkt Anmeldung, kein Freebie davor). Zusätzlicher Hebel: Ad-Klicker + No-Shows + Replay-Watcher gezielt mit Reminder-Ads nachfassen.
 
 ---
 
@@ -474,6 +498,16 @@ Deine Fragen.
 
 → Content baust du über `/freitag-hooks` + `/reels` + `/karussell` (Pillar: Abhängigkeit→Freiheit, eigenes Standbein, KI-Möglichkeit) — dieser Launch-Kalender ist deren Quelle für KW 24–27. Ads über `scripts/meta-ads/` (vgl. `create-webinar-ad.js` / `clone-webinar-ad.mjs`).
 
+### Evergreen-Bewerbung (Jens-Gesetz 6 — ab Mo 6.7.)
+Dasselbe Webinar, **5–7 Marketing-Angles** — du sprichst jede Woche eine andere Frau im selben Funnel an, das Webinar bleibt identisch:
+1. „Raus aus dem Hamsterrad — endlich eigenes Einkommen"
+2. „Du willst ein System, das dich unabhängig macht"
+3. „Schon eine Weile im Network, aber es kommt nichts voran"
+4. „Du willst ein zweites Standbein neben dem Network"
+5. „Du willst mit KI Zeit zurückholen, statt abends Posts zu tippen"
+
+Pro Angle eine **Mail-Serie (min. 3 Mails: Problem · Lösung · Story** = „Three Angels of Trust"). Rhythmus pro Woche: **Mo–Do Webinar bewerben → Do–Sa Verkaufsphase → So Pause.** Neue Angles hinten an die Automation hängen → der Funnel wächst (Jens: 18+ Wochen).
+
 ---
 
 ## 9. Umsatz-Realitäts-Check (Bezug 40k-Jahresziel)
@@ -482,16 +516,21 @@ Deine Fragen.
 Pioneer-Preis: CHF 997
 40'000 ÷ 997 ≈ 40 MBA-Verkäufe/Jahr für das gesamte Jahresziel allein über MBA.
 
-Webinar-Szenario (eine Runde, kalt + warm gemischt):
-• 80 Anmeldungen → ~30 % Show-up = 24 live
-• Cold-Conversion 8–12 % auf Live + Replay → 2–4 Pioneer-Verkäufe
-• 3 Verkäufe × 997 = CHF 2'970 aus EINER Webinar-Runde
+Live-Runde (24.6., kalt + warme Liste gemischt):
+• 80 Anmeldungen → ~30 % Show-up = ~24 live (+ Replay-Watcher)
+• realistische 1. Runde 1–3 % auf Anmelder → 2–4 Pioneer-Verkäufe
+• 3 × 997 = CHF 2'991 aus EINER Runde
+
+Jens-Benchmark Evergreen (zum Einordnen, NICHT 1. Runde):
+• ~10 % Sales-Conversion auf kaltem Evergreen-Traffic — aber nach 500 Live-Webinaren
+• ~10–12 Teilnehmer pro Verkauf · CPA ~240 · Lead ~15–20
+→ Erst durch Wiederholung + Übung nähert man sich diesen Zahlen.
 
 → Realistischer Hebel: Webinar als wiederholbares + Evergreen-Asset.
-   3–4 Verkäufe pro Runde × mehrere Runden + laufender Evergreen-Strom
+   2–4 Verkäufe pro Runde × mehrere Runden + laufender Evergreen-Strom (5–7 Angles)
    = der Pfad, auf dem die MBA das 40k-Ziel trägt, statt aus einem Single-Event.
 ```
-**Ehrliche Einordnung:** Ein einzelnes kaltes Webinar trägt nicht das ganze Jahr. Der Wert liegt darin, dass du es **einmal sauber baust, live hältst, aufnimmst — und dann dauerhaft im Funnel arbeiten lässt.** Genau dafür ist „Live zuerst → Evergreen" goldrichtig.
+**Ehrliche Einordnung:** Ein einzelnes kaltes Webinar trägt nicht das ganze Jahr — und deine erste Live-Runde wird Jens' 10 % nicht treffen (er hatte 500 Läufe Übung). Der Wert liegt darin, dass du es **einmal sauber baust, live hältst, aufnimmst — und dann dauerhaft im Funnel arbeiten lässt.** Energie steigt mit jedem Live-Lauf, Conversion mit jedem Angle. Genau dafür ist „Live zuerst → Evergreen" goldrichtig.
 
 ---
 
@@ -507,19 +546,27 @@ Webinar-Szenario (eine Runde, kalt + warm gemischt):
 
 ## 11. Nächste Schritte (To-Dos für dich)
 
-**Entschieden (Patricia 4.6.):** ✅ Datum Mi 24.6. · ✅ Titel (Painpoint-Frame) · ✅ kein Fast-Action-Bonus (Pioneer-Preis ist Anreiz) · ✅ bis zu 6 Raten · ✅ Webinar = Leadmagnet (Ads direkt aufs Webinar)
+**Entschieden (Patricia 4.6.):** ✅ Datum Mi 24.6. · ✅ Titel (Painpoint-Frame) · ✅ **Preis Pioneer CHF 997** (statt 990 — verkaufspsychologisch) · ✅ kein Fast-Action-Bonus (Pioneer-Preis ist Anreiz) · ✅ bis zu 6 Raten · ✅ Webinar = Leadmagnet · ✅ Jens-Mechanik eingebaut (Anzahlungs-Close, Emotion-statt-Content, Value-Equation)
+
+**🔴 Preis 997 muss noch in andere Dateien (sagen aktuell 990):**
+- [ ] `outputs/produkte/mba-launch/launch-kalender-juli-2026.md` (2× „Pioneer 990")
+- [ ] `outputs/monatsplaene/2026-06.md` („Pioneer-Preis CHF 990")
+- [ ] `outputs/salespages/umsetzerinnen-pioneer/salespage.html` (Pioneer-Preis)
+- [ ] ThriveCart-Checkout (richtest du manuell ein — auf 997)
+- → Sag „zieh 997 überall durch", dann update ich die Markdown-Dateien (Salespage + ThriveCart prüfst du selbst).
 
 **Noch offen:**
-- [ ] **Preis final bestätigen: 997 oder 997?** Kanonisch (Salespage + ThriveCart + Launch-Kalender) = **997**. Du hast 997 erwähnt. Wenn 997, muss ich es überall ändern — sag kurz Bescheid.
-- [ ] **Bestätigen, ob das Webinar wirklich um 09:00 läuft** (dein Power-Window) — oder lieber abends für berufstätige NWM-Mamas (mehr Show-up bei kalt)?
-- [ ] Danach baue ich dir auf Zuruf: die **Anmelde-Landingpage** (`/wp`), die **Mail-Architektur** (Einladung/Confirmation/Sales/No-Show — Gerüst liegt im Launch-Kalender), die **Meta-Ad** (Income-Claim-safe) und die **Canva-Slides** aus diesem Skript.
+- [ ] **Anzahlungs-Höhe festlegen** (z.B. CHF 90) — reserviert den Pioneer-Preis, keinen Sitzplatz
+- [ ] **Garantie-Frage:** bei deiner „keine Geld-zurück"-Entscheidung bleiben, oder für dieses kalte Webinar doch eine echte Garantie zulassen? (starker Conversion-Hebel bei kalt)
+- [ ] **Webinar-Uhrzeit:** 09:00 (dein Power-Window) — oder abends für berufstätige NWM-Mamas (mehr Show-up bei kalt)?
+- [ ] Danach baue ich auf Zuruf: **Anmelde-LP** (`/wp`) · **Reservierungs-/Anzahlungs-Seiten-Flow** · **Mail-Architektur** (Gerüst im Launch-Kalender) · **Meta-Ad** (Income-Claim-safe) · **Canva-Slides**.
 
 ---
 
 ## Compliance-Check
 - ✅ Keine erfundenen Zahlen — „2x vierstellig" = Patricias echte Realität (vgl. Vollprofil); KEINE externen Fake-Stats verwendet
 - ✅ Kein „6-stellig", kein „Hustle/Grind", kein „Stell dir vor", kein „Kennst du das?"
-- ✅ Keine Mentor-Namen (Julia/Ralf etc.) in Slides oder Sprechnotizen — nur intern in Sektion 1
+- ✅ Keine Mentor-Namen (Julia/Ralf/Jens/Sven etc.) in Slides oder Sprechnotizen — nur intern in Sektion 1/6
 - ✅ Keine doTERRA-Heilversprechen · Network nur als ehrlicher Teil der Story, kein Produkt-Pitch
 - ✅ Anti-Bali-Frame · Patricia im Fokus · Schweizer ss · Du-Anrede · keine Stakkato-Sätze
 - ⚠️ **Meta-Income-Claim:** „2x vierstellig" gehört ins Webinar, NICHT in die Ad — sonst Ad-Ablehnung
