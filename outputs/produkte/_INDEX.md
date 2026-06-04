@@ -70,6 +70,10 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[01-modul-uebersicht-KOMPAKT]]
 - [[_re-eval-rohdaten]]
 
+### 📁 mba-launch
+
+- [[launch-kalender-juli-2026]]
+
 ### 📁 vom-networkwissen-zur-digitalen-produktwelt
 
 - [[00-UEBERSICHT-UND-NAECHSTE-SCHRITTE]]

@@ -39,3 +39,7 @@ Auto-Index aller Files in `outputs/reels/`. Siehe [[_MOCs/MOC-Content-Engine]] f
 - [[KW19-DREHTAG-MASTER]]
 - [[KW20-DREHTAG-MASTER]]
 - [[KW21-DREHTAG-MASTER]]
+
+### 📁 2026-06-04-network-mama-zeit-frage
+
+- [[briefing]]
