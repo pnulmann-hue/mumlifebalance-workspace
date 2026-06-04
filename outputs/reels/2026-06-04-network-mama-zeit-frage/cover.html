@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Reel-Cover · Network-Mama-Zeit-Frage</title>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #000; }
+  .cover {
+    width: 1080px;
+    height: 1920px;
+    position: relative;
+    overflow: hidden;
+    background: #0c1c30;
+  }
+  .cover-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .gradient-bottom {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 60%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(12,28,48,0.4) 35%, rgba(12,28,48,0.85) 75%, rgba(12,28,48,0.95) 100%);
+  }
+  .text-box {
+    position: absolute;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%;
+    text-align: center;
+    z-index: 2;
+  }
+  .small-label {
+    color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    opacity: 0.85;
+  }
+  .headline {
+    color: #f1ecdd;
+    font-family: 'Philosopher', serif;
+    font-size: 142px;
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: -1px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.45);
+    margin-bottom: 24px;
+  }
+  .headline em {
+    font-style: italic;
+    color: #dc822e;
+    font-weight: 400;
+  }
+  .accent-line {
+    width: 140px;
+    height: 3px;
+    background: #dc822e;
+    margin: 30px auto;
+  }
+  .sub {
+    color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    opacity: 0.95;
+  }
+  .corner-mark {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: rgba(18, 130, 140, 0.85);
+    padding: 14px 24px;
+    border-radius: 4px;
+    z-index: 3;
+  }
+</style>
+</head>
+<body>
+  <div class="cover">
+    <img class="cover-bg" src="../reel-2026-06-04/frame-02.jpg" alt="Patricia">
+    <div class="gradient-bottom"></div>
+    <div class="corner-mark">Mama-CEO</div>
+    <div class="text-box">
+      <div class="small-label">die wichtigste Frage</div>
+      <h1 class="headline">Mama.<br>Network.<br><em>Wie?</em></h1>
+      <div class="accent-line"></div>
+      <p class="sub">5 Mamas haben sie sich gestellt. Antwort in der Caption.</p>
+    </div>
+  </div>
+</body>
+</html>
