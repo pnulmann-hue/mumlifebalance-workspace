@@ -87,6 +87,45 @@ Ihr viraler Reel hat **5'093 Likes** — mehr als ihre gesamte Follower-Zahl. De
 
 ---
 
+## ✅ UPDATE 2026-06-04 — Patricia hat den viralen Post geschickt (echte Zahlen!)
+
+Patricia hat einen Screenshot von Lianes Durchbruch-Post geliefert. **Damit ist die Frage beantwortet — mit echten Zahlen und der Mechanik aus Lianes eigenem Mund.**
+
+**Die Zahlen (Caption-Zitat):**
+> „So hab ich aus einem Post **1.478 neue Follower** und über **1,56 Millionen erreichte Menschen** …"
+
+→ **EIN Post = 1,56 Mio. Reichweite + 1'478 neue Follower.** Das ist exakt das nicht-lineare Durchbruch-Muster aus der Bahar-Analyse oben — nur eine Nummer grösser. Lianes Reichweite kommt **nicht** aus „viel posten", sondern aus **einem Post, der die Containment-Grenze gesprengt hat**.
+
+**Die Mechanik — Liane verrät sie im Karussell selbst (2 Slides):**
+1. *„Gibt es ein Thema in deiner Nische, bei dem du **zwei Seiten gleichzeitig ansprechen** kannst?"*
+2. *„Wo Menschen deinen Post **als Werkzeug nutzen können, um etwas zu sagen, was sie sich selbst nicht trauen**?"*
+
+Das ist die **Share-/Send-Mechanik** — das stärkste Reichweiten-Signal, das es gibt:
+
+- **Zwei Seiten / zwei Lager** → es entstehen zwei Gruppen, die in den Kommentaren aufeinandertreffen. Kommentar-Schlacht = Algorithmus-Boost. (Genau das, was Julia Trost „Kritiker-Trigger" nennt.)
+- **„Post als Werkzeug, um etwas zu sagen, was man sich selbst nicht traut"** → Menschen **senden den Post weiter** an die Person, der sie es eigentlich sagen wollen (Partner, Mutter, Freundin, Chefin), oder **markieren** sie. Jeder Send/Tag spielt den Post an ein komplett neues Netzwerk aus → exponentielle Reichweite.
+
+Visuell war's übrigens banal: sie kocht Ravioli im Ringelshirt in der Küche. **Kein Hochglanz, keine KI-Grafik** — eine alltägliche Mama-Szene + ein Text mit Sprengkraft. Genau das Gegenteil von durchgestyltem Business-Karussell.
+
+### Warum DEINE Posts das nicht auslösen
+Deine Hooks sind **einseitig und konsens-fähig** („Werde Mama-CEO", „Du willst kein Hobby-Business"). Da gibt es **keine zwei Lager**, niemandem wird ein Werkzeug in die Hand gegeben, um etwas Unausgesprochenes zu sagen. Also: kein Send, kein Tag, kein Streit → keine Reichweite. Du baust Posts, denen man **zustimmt** — Liane baut Posts, die man **weiterschickt**.
+
+### Wie du die Mechanik auf deine zwei Nischen überträgst
+
+**Mentoring (NM-Mamas):** Dein Zwei-Seiten-Thema liegt offen auf dem Tisch — **Network Marketing selbst** ist das polarisierendste Thema deiner Nische (die Macherinnen vs. die „das-ist-doch-ein-Schneeballsystem"-Fraktion). Bau einen Post, den eine NM-Mama **ihrem zweifelnden Umfeld weiterschickt**:
+- *„Für alle, die heimlich denken, Network Marketing sei peinlich — und für jede Mama, die es trotzdem durchzieht."*
+- *„Schick das deinem Partner, wenn er dein Business immer noch ‚dein kleines Hobby' nennt."*
+- *„Die einen sagen, du verkaufst deine Freundschaften. Die anderen bauen sich damit ein Leben ohne Chef auf. Welche bist du?"*
+
+**doTERRA / Energie-Mamas:** Dein Zwei-Seiten-Thema = **Selbstfürsorge vs. Aufopferung**. Gib der erschöpften Mama ein Werkzeug, um auszusprechen, was sie sich nicht traut:
+- *„Schick das deinem Mann, wenn du dich nicht traust zu sagen, dass du am Limit bist."*
+- *„Die einen Mütter funktionieren bis zum Zusammenbruch. Die anderen nehmen sich 30 Minuten. Eine davon hält länger durch."*
+- *„Für jede Mama, die ‚mir geht's gut' sagt und meint ‚ich kann nicht mehr'."*
+
+**Format:** Reel oder Karussell-Cover mit dem Spaltungs-Satz auf einer **alltäglichen, echten Szene** (du in der Küche / mit den Kindern / im Auto) — nicht auf einem Studio-Foto. Caption endet mit „**Markiere die Mama, die das hören muss** 👇" statt mit einem Keyword-Funnel.
+
+---
+
 ## Nächster Schritt
 
 → **Morgen früh** (nach dem 06:00-Scrape) liefere ich die **Liane-spezifische Analyse mit echten Zahlen**: ihre Follower, ihr Format-Mix (Reel- vs. Karussell-Anteil), ihre Top-Hooks und ihre echte Engagement-Rate. Dann sehen wir schwarz auf weiss, *welche* dieser Hebel sie zieht — und du kannst gezielt nachbauen.
