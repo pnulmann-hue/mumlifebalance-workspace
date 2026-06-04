@@ -236,12 +236,18 @@ async function main() {
   const overridePath = path.join(REPO_ROOT, 'outputs', 'stories', '_state', 'wochen-fokus-override.json');
   const briefingPendingPath = path.join(REPO_ROOT, 'outputs', 'stories', '_state', 'briefing-pending.json');
 
-  const [activeFunnels, wochenLog, wochenKontext, override] = await Promise.all([
+  const storyPlanPath = path.join(REPO_ROOT, 'outputs', 'produkte', 'mba-launch', 'story-plan.json');
+
+  const [activeFunnels, wochenLog, wochenKontext, override, storyPlan] = await Promise.all([
     readJsonSafe(activeFunnelsPath),
     readJsonSafe(wochenLogPath),
     readJsonSafe(wochenKontextPath),
     readJsonSafe(overridePath),
+    readJsonSafe(storyPlanPath),
   ]);
+
+  // 🚀 MBA-Launch-Modus: Wenn heute ein Tag im Launch-Story-Plan ist, hat das VORRANG.
+  const launchTag = storyPlan?.tage?.[dateInfo.datum_iso] || null;
 
   // Logik
   const profil = pickProfil(dateInfo.day_index);
@@ -256,7 +262,33 @@ async function main() {
 
   // Telegram-DM bauen
   const profileLabel = profil === 'mentoring' ? '🟦 Mentoring' : '🟠 doTERRA';
-  const modusLabel = modus === 'sales-day' ? '🔥 Sales-Day (Launch aktiv)' : '📅 Tagesplan';
+  const modusLabel = launchTag
+    ? `🚀 MBA-LAUNCH (${launchTag.phase})`
+    : (modus === 'sales-day' ? '🔥 Sales-Day (Launch aktiv)' : '📅 Tagesplan');
+
+  const launchBlock = launchTag ? `🚀 <b>HEUTE IM MBA-LAUNCH</b> — Phase: ${launchTag.phase}
+<b>Story:</b> ${launchTag.story_typ}
+<b>Käufertyp heute:</b> ${launchTag.kaeufertyp}
+<b>Das soll rein:</b> ${launchTag.inhalt}
+<b>CTA:</b> ${launchTag.cta}
+<i>(Julia-Vorlage ${launchTag.beleg} · Bausteine: context/julia-launch-story-bausteine.md)</i>
+
+—
+
+` : '';
+
+  const frageBlock = launchTag
+    ? `Schick mir, was heute/gestern bei dir war, das ich für DIESE Story nutzen kann (Erlebnis, Szene, Gedanke) — den Hook + Aufbau mach ich nach Julias Vorlage.
+
+• Sprachnotiz (Wispr Flow) oder kurz tippen.
+• Kein Erlebnis? Tipp "<b>standard</b>" — dann bau ich die Story aus dem Plan + deinem Profil.`
+    : `Bevor ich rendere — was war heute / gestern bei dir?
+
+• Was hast du erlebt? (Konflikt, Erfolg, peinlicher Moment, Erkenntnis, Familien-Szene...)
+• Hast du grad einen Gedanken zum Thema?
+• Oder soll ich aus deinem Standard-Pool ziehen? Tipp dann nur "<b>standard</b>".
+
+Schick mir Sprachnotiz (Wispr Flow) oder kurz tippen.`;
 
   const text = `🌅 <b>Guten Morgen, Patricia!</b>
 
@@ -266,18 +298,12 @@ async function main() {
 <b>Aktives Produkt:</b> ${aktivesProdukt}
 <b>Wochen-Fokus:</b> ${wochenFokus}
 
-<b>Käufertyp heute:</b> ${disg.haupt} (${nadjaPersona})
+${launchBlock}<b>Käufertyp heute:</b> ${disg.haupt} (${nadjaPersona})
 <b>Story-Säule:</b> ${storySaeule}
 
 —
 
-Bevor ich rendere — was war heute / gestern bei dir?
-
-• Was hast du erlebt? (Konflikt, Erfolg, peinlicher Moment, Erkenntnis, Familien-Szene...)
-• Hast du grad einen Gedanken zum Thema?
-• Oder soll ich aus deinem Standard-Pool ziehen? Tipp dann nur "<b>standard</b>".
-
-Schick mir Sprachnotiz (Wispr Flow) oder kurz tippen.
+${frageBlock}
 
 —
 
@@ -301,6 +327,7 @@ Schick mir Sprachnotiz (Wispr Flow) oder kurz tippen.
     story_saeule: storySaeule,
     aktives_produkt: aktivesProdukt,
     wochen_fokus: wochenFokus,
+    launch_tag: launchTag,
     kontext_snapshot: {
       kw: dateInfo.kw,
       wochentag: dateInfo.wochentag,

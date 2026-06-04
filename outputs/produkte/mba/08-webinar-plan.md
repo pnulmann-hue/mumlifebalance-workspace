@@ -35,6 +35,17 @@ Emotionen verkaufen. Das Webinar zeigt **WAS** möglich ist — deine echte Real
 
 → **Praktisch:** In jeder Säulen-Phase nennst du das Ergebnis und zeigst einen Ausschnitt (z.B. den Companion live), aber du erklärst nicht die ganze Methode. „Ich zeig dir, dass es geht — wie genau, das bauen wir zusammen in der Academy."
 
+### 🔑 Jens-Neubeck-Webinar-Gesetze (aus Transkript 20.5. — Elevate-Expertencall)
+> Bezahlte Werbung → Webinar → digitale Produkte ist GENAU dein Modell. Diese Gesetze sind in den Plan eingebaut. (Namen Jens/Julia/Sven/Ralf bleiben INTERN — nie auf Slides.)
+
+1. **Webinar ≠ Workshop — das wichtigste Gesetz.** Ein Verkaufs-Webinar gibt **KEINEN How-to-Content**. Es weckt nur **Emotion**, zeigt **was möglich ist** und schafft **Aha-Momente** („stimmt, hat sie recht"). Content im Verkaufs-Webinar ist **Gift** — er überlädt die Leute, ein verwirrtes Gehirn kauft nicht. (Julias jahrelanger Fehler: zu viel Mehrwert → kaum Verkäufe.) → Deine Companion-Demo ist erlaubt, weil sie **was möglich ist** zeigt, NICHT wie man's baut. Bleib da diszipliniert: kein Tutorial.
+2. **„Immer die Wahrheit sagen — aber niemals alles sagen."** Du lügst nie, aber du betonst das Starke (deine echte 2x-vierstellig-Realität, die Mentee-Erfolge) und lässt Unwichtiges weg.
+3. **4 Bausteine = wahrgenommener Wert** (in Angebot + Pitch einbauen): **Traumergebnis hoch** (spezifisch, mit Zahlen) · **Erfolgs-Wahrscheinlichkeit hoch** (Beweise, „auch ohne Technik/Vorerfahrung") · **Zeit-Verzögerung kurz** (erste Teilergebnisse schnell benennen) · **Anstrengung gering** („ohne dass du deinen Alltag umkrempelst", kopieren statt erfinden).
+4. **Hochpreis-Close = Anzahlungs-Strategie** (Sven-Methode, funktioniert bis 3000€ direkt aus Webinar): Platz mit kleiner Anzahlung reservieren → Zwischenseite „wir prüfen, ob noch ein Platz frei ist" → „bestätigt, nur 24h reserviert: Restzahlung ODER offene Fragen per WhatsApp". **80% die anzahlen, zahlen den Rest.** → Genau die niedrige Schwelle für dein kaltes 997-Webinar (Details Sektion 6).
+5. **Energie = 50% des Webinars** — kann man nicht faken → **Live zuerst**, dann Evergreen (deckt sich mit deiner Entscheidung).
+6. **Evergreen-Skalierung:** dasselbe Webinar mit **5–7 Marketing-Angles** bewerben (Hamsterrad · System · „500 dazu" · „endlich eigenes Standbein" · Zeit/KI). Pro Bewerbung **min. 3 Mails** (Problem · Lösung · Story = „Three Angels of Trust"). Lieber öfter mailen.
+7. **Verpackung > Inhalt** + Test: erzähl dein Angebot 100 Leuten — wenn 20% „erzähl mir mehr" sagen, ist es stark.
+
 ### Die emotionale Kern-Geschichte (dein USP gegenüber jeder Bali-Coachin)
 Dein stärkster, ehrlichster Anker für dieses Webinar ist **die Abhängigkeits-Falle**: Du wolltest nicht mehr davon abhängig sein, wie viele Teampartnerinnen du findest und was die tun. Das ist ein Gefühl, das deine kalte Zielgruppe sofort im Bauch spürt — weil sie genau da feststeckt. Daraus entsteht die ganze Verschiebung: **weg vom Produkt, hin zur Transformation; weg von fremder Abhängigkeit, hin zu deinem eigenen Standbein.**
 
@@ -48,7 +59,7 @@ Eine Mama braucht alle drei, sonst bleibt sie hängen:
 
 ### Cold-Traffic-Implikationen (weil über Meta-Ads)
 - **Mehr Story, mehr Vertrauen, später pitchen.** Eine fremde Frau braucht erst das Gefühl „die ist echt, die meint's ehrlich", bevor 997 fällt.
-- **Niedrigere Einstiegsschwelle:** Zahlplan + Fast-Action-Bonus + echte Garantie sind bei kalt fast Pflicht (siehe Sektion 6).
+- **Niedrigere Einstiegsschwelle:** Anzahlungs-Close (Jens-Gesetz 4) + Zahlplan (6 Raten) + echte Garantie sind bei kalt fast Pflicht (siehe Sektion 6).
 - 🚨 **Meta-Income-Claim-Warnung:** In der **Ad** (nicht im Webinar selbst) darfst du **keine konkreten Einkommens-Versprechen** machen („verdiene 2x vierstellig"). Meta sperrt das. Die Ad verkauft die **Transformation/Freiheit** („dein eigenes Standbein, unabhängig"), die Einkommens-Story erzählst du erst **im** Webinar als deine persönliche Realität. → Verknüpft mit [[reference_ki-webinar-lp-technik]] + [[feedback_KRITISCH-ad-link-pre-launch-test]] (Link vor Aktivierung testen!).
 
 ### Warum dieser Pitch anders ist als das Mama-CEO-Webinar (333)
@@ -347,9 +358,9 @@ Einzeln allein: über 997 — nur für die Kurse.
 CHF 997
 Gründungsmitglied · erste Runde · niedrigster Preis, den es je gibt
 [daneben] Späterer Listenpreis: CHF 1347
-[unten] Bis zu 6 Raten möglich (ca. 6× CHF 165). Pioneer-Preis endet Sa 27.6. · Cart-Close So 5.7.
+[unten] Bis zu 6 Raten möglich (ca. 6× CHF 166). Pioneer-Preis endet Sa 27.6. · Cart-Close So 5.7.
 ```
-**Sprechnotizen (3 Min):** „Jetzt zum Preis. Der spätere Listenpreis der Academy ist 1347. Heute, als Pioneer der allerersten Runde, kommst du für 997 rein — das ist der niedrigste Preis, den es je geben wird, weil du mir hilfst, die erste Runde zu gestalten, und dafür am nähesten an mir dran bist. Und damit das neben der Familie machbar ist, kannst du in bis zu sechs Raten zahlen, also rund 165 im Monat. Den Pioneer-Preis gibt's nur in dieser ersten Runde — ab Samstag, dem 27., ist Schluss damit, und der ganze Zugang schliesst am Sonntag drauf."
+**Sprechnotizen (3 Min):** „Jetzt zum Preis. Der spätere Listenpreis der Academy ist 1347. Heute, als Pioneer der allerersten Runde, kommst du für 997 rein — das ist der niedrigste Preis, den es je geben wird, weil du mir hilfst, die erste Runde zu gestalten, und dafür am nähesten an mir dran bist. Und damit das neben der Familie machbar ist, kannst du in bis zu sechs Raten zahlen, also rund 166 Franken im Monat. Den Pioneer-Preis gibt's nur in dieser ersten Runde — ab Samstag, dem 27., ist Schluss damit, und der ganze Zugang schliesst am Sonntag drauf."
 
 #### SLIDE 24 — Garantie / Risk-Reversal (wichtig bei kalt)
 ```

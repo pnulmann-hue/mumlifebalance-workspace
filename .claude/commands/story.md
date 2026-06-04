@@ -34,6 +34,23 @@ Patricias täglicher Story-Begleiter. Nach Julia-Trost-Methodik + Brandastic-Kä
 
 ---
 
+## 🚀 MBA-LAUNCH-MODUS (Vorrang im Launch-Fenster 12.6.–6.7.2026)
+
+**Pflicht-Check zu Session-Start:** Lies `outputs/produkte/mba-launch/story-plan.json`. Wenn das heutige Datum (`tage[YYYY-MM-DD]`) einen Eintrag hat, **hat dieser Tag VORRANG** vor dem Standard-Tagesplan.
+
+Dann gilt:
+1. Der JSON-Eintrag nennt **Story-Typ · Käufertyp · Inhalt · CTA · Julia-Beleg (S.X)**.
+2. Lies `context/julia-launch-story-bausteine.md` — finde den passenden Baustein und übernimm **Julias Struktur 1:1**, aber komplett in Patricias Stimme + auf MBA ummünzen (keine Stakkato, echte Umlaute/ss, keine erfundenen Zahlen, kein „Julia"-Name im Kunden-Output).
+3. Voller Tag-für-Tag-Kontext (Phase, Nachbar-Tage): `outputs/produkte/mba-launch/story-plan-tag-fuer-tag.md`.
+4. **Patricias Sprachnotiz/Erlebnis** des Tages liefert das Material für Slide 2–3 (Setup) — Slide 1 bleibt der BÄM-Hook, abgeleitet aus dem Erlebnis + dem Story-Typ des Tages.
+5. **CTA = der `cta`-Wert aus dem JSON** (Webinar-Anmeldung / Cart / DM-Secret-Offer / Replay), NICHT frei aus active-funnels.json wählen.
+6. **Käufertyp:** den `kaeufertyp` des Tages bedienen (INA/WILLI/AMELIE/ZOE/FRANK/RUDI) — über den Launch kommen so alle dran. Die Standard-DISG-Rotation pausiert im Launch-Fenster.
+7. **Pflicht-Elemente jeden Launch-Tag:** Countdown-Sticker (+ posten wenn abgelaufen), Teilnehmerinnen feiern + verlinken, DMs/Feedback anonymisiert teilen, CTA-Link in jeder Story.
+
+Ausserhalb des Launch-Fensters (oder wenn kein JSON-Eintrag für heute): normaler Tagesplan (Modus 1) wie unten.
+
+---
+
 ## Story-Pflicht-Aufbau (Julia-Style, nicht verhandelbar)
 
 Jede Sequenz hat:
@@ -203,6 +220,7 @@ Lies in dieser Reihenfolge — IMMER vor jedem Story-Briefing:
 11. `context/hook-framework.md`
 11a. ⭐ **`context/content-formel-5-typen.md` — PFLICHT (seit 2026-06-01)**: 5-Typen-Content-Formel aus der Mentorin-Profil-Analyse. Stories sind der tägliche Träger für Lifestyle/Freiheit + Social-Proof — nutze die Typ-Logik, um die Wochen-Story-Sequenz abwechslungsreich zu halten. 4 Leitplanken: keine Stakkato (Patricia-Voice), für doTERRA Lifestyle-Frame in der Reels-only-Phase, EIN bestehendes ManyChat-Keyword als CTA pro Sequenz, keine erfundenen Zahlen.
 11b. ⭐ **`context/reichweiten-formel-mama-identity.md` — PFLICHT (seit 2026-06-01)**: Reichweiten-Motor. Stories sind primär Beziehungs-/Vertrauens-Träger — nutze die Mama-Identity-Frames (Gesellschaftsspiegel · Mama-Alltag-Moment · Ehrlichkeits-Story), um zwischen den Verkaufs-Sequenzen Reichweite und Nähe aufzubauen. Story-Sequenz behält ihren CTA-Link (Story-Kernregel), aber die reinen Reichweiten-Frames pitchen kein Produkt. „Stell dir vor" gesperrt → szenen-malen / „Was wäre wenn".
+11c. 🚀 **`outputs/produkte/mba-launch/story-plan.json` + `context/julia-launch-story-bausteine.md` — PFLICHT IM LAUNCH-FENSTER (12.6.–6.7.2026)**: Wenn heute ein Tag im `story-plan.json` ist, hat der Launch-Modus (oben) Vorrang. Der JSON-Eintrag gibt Story-Typ + Käufertyp + Inhalt + CTA + Julia-Beleg; die Bausteine-Datei gibt Julias Struktur zum 1:1-Nachbauen. Voller Kontext: `story-plan-tag-fuer-tag.md`.
 12. `context/caption-formeln.md`
 13. `context/business-info.md`
 14. `context/active-funnels.json` — welche Funnels laufen aktuell?
