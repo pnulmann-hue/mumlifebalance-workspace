@@ -72,9 +72,12 @@ def build_message(articles_by_category: dict[str, list[dict]]) -> str:
 
 
 def escape_markdown(text: str) -> str:
-    """Escaped spezielle Markdown-Zeichen für Telegram."""
-    special_chars = ["_", "*", "[", "]", "(", ")", "~", "`", ">", "#", "+", "-", "=", "|", "{", "}", ".", "!"]
-    for char in special_chars:
+    """Escaped die für Telegram-Markdown (v1) relevanten Zeichen im Titel.
+
+    Im Legacy-Markdown-Modus werden nur _ * [ ` als Entity-Marker gewertet —
+    nur diese escapen, sonst erscheinen Backslashes sichtbar im Text.
+    """
+    for char in ("_", "*", "[", "`"):
         text = text.replace(char, f"\\{char}")
     return text
 
@@ -122,28 +125,37 @@ def split_message(text: str, max_len: int) -> list[str]:
 
 async def run_digest() -> None:
     """Führt den kompletten Digest-Workflow aus."""
-    logger.info("=== News-Digest wird erstellt ===")
+    logger.info("=== Tagesausgabe wird erstellt ===")
 
     logger.info("Schritt 1: RSS-Feeds abrufen...")
     articles = fetch_all_feeds()
 
     total = sum(len(a) for a in articles.values())
     if total == 0:
-        logger.warning("Keine Artikel gefunden. Digest wird übersprungen.")
+        logger.warning("Keine Roh-Artikel gefunden. Sende 'ruhiger Tag'-Nachricht.")
+        date_str = f"{WEEKDAYS_DE[datetime.now().weekday()]}, {datetime.now().strftime('%d.%m.%Y')}"
+        await send_telegram_message(NOTHING_TODAY.format(date=date_str))
         return
 
-    logger.info("Schritt 2: %d Artikel zusammenfassen...", total)
-    articles = summarize_articles(articles)
+    logger.info("Schritt 2: %d Roh-Meldungen redigieren...", total)
+    edited = curate_all(articles)
 
-    logger.info("Schritt 3: Nachricht formatieren und senden...")
-    message = build_message(articles)
+    picks = sum(len(a) for a in edited.values())
+    if picks == 0:
+        logger.info("Keine relevanten Meldungen ausgewählt. Sende 'ruhiger Tag'-Nachricht.")
+        date_str = f"{WEEKDAYS_DE[datetime.now().weekday()]}, {datetime.now().strftime('%d.%m.%Y')}"
+        await send_telegram_message(NOTHING_TODAY.format(date=date_str))
+        return
+
+    logger.info("Schritt 3: Nachricht formatieren und senden (%d Meldungen)...", picks)
+    message = build_message(edited)
     await send_telegram_message(message)
 
-    logger.info("=== Digest erfolgreich gesendet! ===")
+    logger.info("=== Tagesausgabe erfolgreich gesendet! ===")
 
 
 async def main() -> None:
-    """Startet den Bot mit wöchentlichem Schedule."""
+    """Startet den Bot mit täglichem (oder wöchentlichem) Schedule."""
     # Konfiguration prüfen
     if not TELEGRAM_BOT_TOKEN:
         logger.error("TELEGRAM_BOT_TOKEN nicht gesetzt!")
@@ -154,29 +166,32 @@ async def main() -> None:
 
     # Prüfen ob manueller Trigger gewünscht ist
     if "--now" in sys.argv:
-        logger.info("Manueller Trigger: Digest wird jetzt erstellt...")
+        logger.info("Manueller Trigger: Tagesausgabe wird jetzt erstellt...")
         await run_digest()
         return
 
-    # Scheduler einrichten
+    # Scheduler einrichten — täglich oder (Fallback) wöchentlich
     scheduler = AsyncIOScheduler(timezone=TIMEZONE)
+    weekly = DIGEST_FREQUENCY.lower() == "weekly"
     trigger = CronTrigger(
-        day_of_week=SCHEDULE_DAY,
+        day_of_week=SCHEDULE_DAY if weekly else None,  # None = jeden Tag
         hour=SCHEDULE_HOUR,
         minute=SCHEDULE_MINUTE,
         timezone=TIMEZONE,
     )
-    scheduler.add_job(run_digest, trigger, id="weekly_digest", name="Wöchentlicher News-Digest")
+    scheduler.add_job(run_digest, trigger, id="news_digest", name="News-Tagesausgabe")
     scheduler.start()
 
-    day_names = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
-    logger.info(
-        "Bot gestartet! Digest wird jeden %s um %02d:%02d (%s) gesendet.",
-        day_names[SCHEDULE_DAY],
-        SCHEDULE_HOUR,
-        SCHEDULE_MINUTE,
-        TIMEZONE,
-    )
+    if weekly:
+        logger.info(
+            "Bot gestartet! Ausgabe jeden %s um %02d:%02d (%s).",
+            WEEKDAYS_DE[SCHEDULE_DAY], SCHEDULE_HOUR, SCHEDULE_MINUTE, TIMEZONE,
+        )
+    else:
+        logger.info(
+            "Bot gestartet! Tägliche Ausgabe um %02d:%02d (%s).",
+            SCHEDULE_HOUR, SCHEDULE_MINUTE, TIMEZONE,
+        )
 
     # Bot am Laufen halten
     try:

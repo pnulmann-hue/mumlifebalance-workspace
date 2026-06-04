@@ -366,7 +366,7 @@ Gründungsmitglied · erste Runde · niedrigster Preis, den es je gibt
 **Sprechnotizen (3 Min):** „Jetzt zum Preis. Der spätere Listenpreis der Academy ist 1347. Heute, als Pioneer der allerersten Runde, kommst du für 997 rein — das ist der niedrigste Preis, den es je geben wird, weil du mir hilfst, die erste Runde zu gestalten, und dafür am nähesten an mir dran bist. Und damit das neben der Familie machbar ist, kannst du in bis zu sechs Raten zahlen, also rund 166 Franken im Monat. Den Pioneer-Preis gibt's nur in dieser ersten Runde — ab Samstag, dem 27., ist Schluss damit, und der ganze Zugang schliesst am Sonntag drauf."
 
 #### SLIDE 24 — Noch unsicher? Schreib mir (warme Brücke, KEIN Gimmick)
-> 🚨 **Deine Entscheidungen: KEINE Geld-zurück-Garantie (2.6.) · KEINE Anzahlungs-Mechanik (4.6., passt nicht zu dir).** Darum hier kein Garantie-Siegel und keine Reservierungs-Trickserei — nur deine echte, nahbare Art: „wenn du unsicher bist, red mit mir."
+> 🚨 **Deine Entscheidungen: KEINE Geld-zurück-Garantie (Grund: Content-Kopier-Risiko via KI in 14 Tagen) · KEINE Anzahlungs-Mechanik (passt nicht zu dir).** Darum hier kein Garantie-Siegel und keine Reservierungs-Trickserei — nur deine echte, nahbare Art: „wenn du unsicher bist, red mit mir."
 ```
 [Creme, warm]
 Noch eine Frage offen?
@@ -376,7 +376,7 @@ Ich antworte dir persönlich, bevor du dich entscheidest.
 ```
 **Sprechnotizen (1.5 Min):** „Und wenn du jetzt denkst ‚das klingt gut, aber ich hab noch eine Frage' — dann schreib mir einfach direkt. Per Nachricht oder WhatsApp. Da antworte ich dir persönlich, bevor du irgendwas entscheidest. Kein Bot, keine Verkaufsmasche. Ich will, dass du wirklich das Gefühl hast, das passt für dich — und nicht, dass du dich zu irgendwas gedrängt fühlst."
 
-> ⚠️ **Garantie-Frage (offen):** Bei KALTEM Traffic ist eine echte Geld-zurück-Garantie ein starker Conversion-Hebel. Deine 2.6.-Entscheidung war „keine". Ohne Garantie UND ohne Anzahlung ruht der kalte 997-Close auf: Wert-Stack + Pioneer-Preis-Dringlichkeit + Ratenzahlung + diese warme DM-Brücke. Das ist ehrlich und du-konform, aber konversionsschwächer. Wenn du fürs kalte Webinar doch eine Garantie zulassen willst, sag Bescheid.
+> ✅ **Garantie-Frage entschieden (Patricia 4.6.): KEINE Geld-zurück-Garantie — endgültig.** Grund: Bei einem content-lastigen digitalen Bundle könnte jemand in 14 Tagen mit KI den kompletten Inhalt kopieren und dann zurückfordern. Berechtigtes Digital-Produkt-Risiko. Der kalte 997-Close ruht darum bewusst auf: Wert-Stack + Pioneer-Preis-Dringlichkeit + Ratenzahlung + warme DM-Brücke. Ausgleich über Retargeting + Evergreen-Wiederholung.
 
 #### SLIDE 25 — Antikunden (Ja / Nein)
 ```
@@ -554,7 +554,6 @@ Jens-Benchmark Evergreen (zum Einordnen, NICHT 1. Runde):
 - → Sag „zieh 997 überall durch", dann update ich die Markdown-Dateien (Salespage + ThriveCart prüfst du selbst).
 
 **Noch offen:**
-- [ ] **Garantie-Frage:** bei deiner „keine Geld-zurück"-Entscheidung bleiben, oder für dieses kalte Webinar doch eine echte Garantie zulassen? (ohne Anzahlung + ohne Garantie ist der kalte 997-Close härter — Retargeting + Evergreen-Wiederholung gleichen das aus)
 - [ ] **Webinar-Uhrzeit:** 09:00 (dein Power-Window) — oder abends für berufstätige NWM-Mamas (mehr Show-up bei kalt)?
 - [ ] Danach baue ich auf Zuruf: **Anmelde-LP** (`/wp`) · **direkter ThriveCart-Checkout** (997 / 6 Raten) · **Mail-Architektur** (Gerüst im Launch-Kalender) · **Meta-Ad** (Income-Claim-safe) · **Canva-Slides**.
 
