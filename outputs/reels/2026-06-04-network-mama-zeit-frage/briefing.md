@@ -25,34 +25,50 @@ tags: [content, reels]
 
 ---
 
-## ✅ Caption (Copy-Paste-Ready)
+## ✅ Caption v2 (Lehrend, Hüte-Methode, Wochenstruktur — Patricia-Feedback 4.6.)
 
 ```
 Du hast diese Frage auch schon gestellt, oder?
 
 Wie schaffe ich mir als Mama im Network Zeit fürs Business — sodass es konstant wächst, ohne dass die Familie leidet?
 
-Meine ehrliche Antwort: NICHT früher aufstehen. NICHT effizienter werden. NICHT „weniger Familie".
+Meine ehrliche Antwort fängt nicht beim Zeitmanagement an. Sie fängt bei deinen Hüten an.
 
-Sondern ein System bauen, das für dich arbeitet, während du Mama bist.
+In Mama-CEO sehen wir uns das in der ersten Woche an: wie viele Hüte trägst du eigentlich jeden Tag? Mama-Hut. Network-Hut. Hausfrau-Hut. Köchin-Hut. Mama-Taxi-Hut. Buchhalterin-Hut. Therapeutin-Hut.
 
-Konkret bei mir:
+Und der Klassiker: du wechselst sie alle 15 Minuten und wunderst dich abends, dass nichts vorwärts gegangen ist.
 
-→ KI-Mitarbeiter, die meinen Content vorbereiten
-→ Ein Morgen-Briefing-Bot, der mir täglich den Fokus zeigt
-→ DM-Templates, die ich persönlich anpasse
-→ Eine Wochen-Struktur, die meinen Familienkalender respektiert
+Schritt 1 ist Hüte reduzieren. Was geht weg? Was übernimmt KI? Was übernimmt deine Familie? Du musst lernen loszulassen — sonst kommen wir bei der Zeit fürs Business nirgendwo hin.
 
-Das Ergebnis: 18 Stunden Business pro Woche, 4 Kinder, vierstelliger Monatsumsatz im Network — und Sonntagabend ist heilig.
+Schritt 2: deine Woche kriegt klare Slots. Bei mir sieht das konkret so aus:
 
-Genau dieses System bauen sich grad die 5 Mamas in meinem Mama-CEO-Pilot auf. 8 Wochen, 5 Säulen, Pioneer 990 CHF.
+→ Montag: Content-Erstellung
+→ Dienstag: Network-Business — Community, Anlässe, Kundenbetreuung
+→ Mittwoch: Produkterstellung + Funnel
+→ Donnerstag: Produkterstellung
+→ Freitag: Weiterbildung
+→ Nachmittage: Kids-Zeit, Haushalt, Einkaufen, Mama-Taxi
 
-Die nächste Runde startet voraussichtlich Q3 2026 — diesmal als MBA-Bundle (Mama-CEO + Instagram-Kundenmaschine + Digitale Produktwelt + 12 Monate Umsetzerinnen-Calls).
+Kein planloses Rumgeeier mehr. Das können wir uns als Mamas einfach nicht leisten, wenn wir parallel zum Network ein eigenes Standbein aufbauen wollen.
+
+Schritt 3: KI macht den grössten Teil. Mein Content-Assistent schreibt mir Post-Entwürfe. Mein Strategie-Assistent plant ganze Monate und Wochen mit mir. Ein Briefing-Bot schickt mir jeden Morgen auf Telegram, was heute genau dran ist.
+
+Aber der allerwichtigste Schritt:
+
+Du fixierst die Zeit. Schwarz auf weiss. „Diese Stunden bin ich Business. Diese Stunden bin ich Mama."
+
+Sonst rinnt sie dir einfach durch die Finger.
+
+Genau das bauen sich die 5 Mamas in meinem Mama-CEO-Pilot grad selbst auf — 8 Wochen, 5 Säulen, Pioneer 990 CHF.
+
+Die nächste Runde startet voraussichtlich Q3 2026 als MBA-Bundle (Mama-CEO + Instagram-Kundenmaschine + Digitale Produktwelt + 12 Monate Umsetzerinnen-Calls).
 
 Kommentier WARTELISTE wenn du im nächsten Slot dabei sein willst.
 
 #mamabusiness #networkmarketingmama #mamaceo #funktionierenwargestern
 ```
+
+**Zeichen:** ~2.050 (Limit 2.200 — knapp drin)
 
 **Zeichen:** ~1.250 (Limit 2.200 — locker drin)
 **Hashtags:** 4 (Content-Radar-Regel max 5, #mamabusiness als Pflicht-Anker ✓)
