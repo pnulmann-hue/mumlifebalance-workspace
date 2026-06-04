@@ -239,10 +239,11 @@ WAS DU NACH LEKTION 3.2 HAST
 
 # 🎬 LEKTION 3.3 — Jahres-Strategie: was kommt WANN
 
-**Status:** ⚠️ NEU bauen (11 Folien)
-**Material:** Patricias eigene Jahresplanung 2026 als durchgespieltes Beispiel (4-Stufen-Treppe + Launch-Fenster + Schulferien-Anker)
+**Status:** ⚠️ NEU bauen (12 Folien)
+**Material:** Patricias echte Notion-Jahresplanung als durchgespieltes Beispiel · Methodik aus Patricias O-Ton 2026-06-04 (Monats-Trio Gratis/Mini/Gross · Transformation statt Produkt · Überthemen auf Wochen · Fixpunkte zuerst)
 
-> ⚠️ **OFFENE FRAGE an Patricia (für authentisches Beispiel, keine erfundenen Zahlen):** Welche realen Launch-Fenster + Schulferien-Wochen willst du als dein durchgespieltes Beispiel zeigen? Solange offen, arbeiten die Folien mit deiner dokumentierten Produkttreppe (0€-Freebie → Insta-Kundenmaschine → Mama-CEO → grosses Bundle) und markieren konkrete Daten als Platzhalter.
+> **Kern-Methodik (Patricia O-Ton):** „Das WAS verkaufe ich wann respektive WANN rede ich über was ist das Fundament. Nicht das Produkt steht im Zentrum, sondern die Transformation." Das WIE (Umsetzung in Insta-Content) gehört bewusst in die **Insta-Kundenmaschine** — hier nur das Fundament.
+> **Notion-Quelle für Beispiel-Folie 10:** Jahresplanung Mum Life Balance (`collection://2ae7078e-8b7e-81f9-adb5-000bb877b193`) — Felder Preisformat (0€/Mini/Mittel/Hochpreisig) · Status (Ferien/doTERRA/Mum Life Balance) · Zeitraum. Patricia zeigt die realen Einträge live im Video-Screenshare.
 
 ## ThriveCart-Setup
 
@@ -255,71 +256,76 @@ WAS DU NACH LEKTION 3.2 HAST
 
 **Beschreibungstext:**
 ```
-Die meisten Mamas planen von Woche zu Woche und fragen sich, warum sich nie etwas Grosses bewegt. Der Grund ist einfach: ohne Jahres-Blick reagierst du nur, statt zu führen. In dieser Lektion zoomst du raus und schaust auf dein ganzes Jahr.
+Die meisten Mamas stehen morgens vor der Story und denken: worüber rede ich heute eigentlich? Genau das löst diese Lektion. Denn wenn du weisst, WAS du WANN bewirbst und über WELCHE Transformation du in welcher Woche sprichst, dann musst du nie wieder ins Leere überlegen. Das ist das Fundament für deinen ganzen Content.
 
-Keine Sorge — das wird kein starrer 12-Monats-Plan, der dich einsperrt. Es ist eine grobe Landkarte, die dir sagt, worauf du zusteuerst, und die du jederzeit anpassen darfst.
+Wichtig zur Abgrenzung: hier lernst du das WAS und das WANN — was bewerbe ich wann, über welches Thema rede ich wann. Das WIE — also wie du daraus konkrete Reels, Posts und Stories machst und in Verkäufe verwandelst — das lernst du in der Instagram-Kundenmaschine. Säule 3 baut das Gerüst, auf dem dein Content später steht.
 
 Du lernst:
-→ Die 3 Brillen der Jahresplanung: Business-Meilensteine · Saison & Energie · deine Hauptbotschaft
-→ Wie du deine Produkttreppe auf das Jahr verteilst (was launchst du wann)
-→ Warum du Schulferien und ruhige Phasen ZUERST einträgst (nicht zuletzt)
-→ Wie du pro Quartal EINE Hauptbotschaft setzt, statt dich zu verzetteln
+→ Deinen Monats-Rhythmus: pro Monat ein Gratis-Produkt, ein Mini-Produkt, ein grosses Produkt
+→ Warum nie das Produkt im Zentrum steht, sondern immer die Transformation — und wie du daraus deine Wochen-Themen ableitest
+→ Wie du auch mit nur EINEM Network-Produkt ein ganzes Jahr voller Themen hast
+→ Wie du Ferien, Testwochen und Anlässe ZUERST einträgst und eine Woche vorher schon drüber redest
 
-Ich spiel das an meinem eigenen Jahr durch, damit du siehst wie es konkret aussieht.
+Ich spiel das an meinem eigenen Notion-Jahresplan durch, damit du siehst, wie es konkret aussieht.
 
-📋 Lektion 3.3 im Arbeitsblatt: deine Jahres-Übersicht mit Launches, Ferien und Quartals-Botschaft
+📋 Lektion 3.3 im Arbeitsblatt: dein Jahres-Plan mit Monats-Trio, Transformationen und Wochen-Themen
 ```
 
-## Folien-Plan (11 Folien)
+## Folien-Plan (12 Folien)
 
 | # | Folie | Inhalt | Sprechnotizen |
 |---|---|---|---|
-| 1 | **Titel** | „3.3 · Jahres-Strategie — was kommt WANN" | „Jetzt zoomen wir ganz weit raus, auf dein ganzes Jahr. Das klingt erstmal nach viel, ist aber das, was dir am Ende die meiste Ruhe gibt, weil du nicht mehr von Woche zu Woche hetzt, sondern weisst wohin die Reise geht." |
-| 2 | **Reagieren vs. Führen** | 2 Spalten: REAGIEREN (Woche zu Woche, Bauchgefühl) vs. FÜHREN (Jahresblick, du entscheidest) | „Es gibt zwei Arten, ein Business zu führen. Die einen reagieren von Woche zu Woche und wundern sich, dass sich nie was Grosses bewegt. Die anderen schauen aufs Jahr und führen. Mama-CEO heisst führen, und das fängt mit der Vogelperspektive an." |
-| 3 | **Kein starrer Plan** | „Eine Landkarte, kein Gefängnis" · Bild flexible Route | „Eine Sache vorweg, weil sie wichtig ist: das hier wird kein starrer Plan, der dich einsperrt. Es ist eine Landkarte. Du darfst die Route jederzeit ändern, aber du weisst immer, wo Norden ist." |
-| 4 | **Die 3 Brillen** | 3 Karten: 1 Business-Meilensteine · 2 Saison & Energie · 3 Hauptbotschaft | „Wir schauen durch drei Brillen aufs Jahr. Erste Brille: Business-Meilensteine, also welche Produkte und Launches kommen. Zweite Brille: Saison und Energie, also wann ist Ferienzeit und wann bist du reduziert. Dritte Brille: deine Hauptbotschaft pro Quartal. Eine nach der anderen." |
-| 5 | **Brille 1: Business-Meilensteine** | Produkttreppe horizontal aufs Jahr gelegt: 0€-Freebie · Mini-Produkt · mittleres Produkt · Premium/Bundle | „Erste Brille: deine Produkttreppe aus Säule 1, jetzt aufs Jahr verteilt. Wann launchst du dein 0€-Produkt, wann den Minikurs, wann das mittlere Produkt, wann das grosse Bundle. Nicht alles gleichzeitig, sondern verteilt, damit du Luft zum Atmen behältst." |
-| 6 | **Beispiel: mein Jahr** | Patricias reale Treppe als Beispiel-Zeitstrahl: Freebie (laufend) → Insta-Kundenmaschine → Mama-CEO → grosses Bundle · [Launch-Daten: Platzhalter bis Patricia bestätigt] | „Ich zeig dir das an meinem eigenen Jahr. Mein Freebie läuft dauerhaft im Hintergrund, meine Insta-Kundenmaschine bringt die Frauen rein, dann kommt Mama-CEO, und am Ende das grosse Bundle. Du siehst: jedes Produkt baut aufs vorherige auf, und ich launche sie nicht alle im selben Monat." |
-| 7 | **Brille 2: Saison & Energie ZUERST** | Kalender mit Schulferien + reduzierten Wochen rot markiert, BEVOR Launches eingetragen | „Zweite Brille, und das ist der Trick, den die meisten falsch machen: trag deine Schulferien und deine ruhigen Phasen ZUERST ein, bevor du Launches planst. Denn in den Sommerferien mit vier Kindern launchst du nicht. Wenn du die Ferien zuerst kennst, baust du die Launches drumherum, und nicht andersrum." |
-| 8 | **Brille 3: 1 Hauptbotschaft pro Quartal** | 4 Quartale, je 1 Botschaft (Beispiel: Q1 Sichtbarkeit · Q2 Verkaufen lernen · Q3 Skalieren · Q4 …) | „Dritte Brille: pro Quartal eine Hauptbotschaft. Nicht zwölf Themen, eines. In einem Quartal geht es zum Beispiel um Sichtbarkeit, im nächsten ums Verkaufen, im nächsten ums Skalieren. Diese eine Botschaft ist der rote Faden für deinen ganzen Content in diesen drei Monaten." |
-| 9 | **Was du NICHT machst** | „Nicht alles. Nicht gleichzeitig. Nicht das ganze Jahr im Detail." | „Genauso wichtig wie was du planst, ist was du bewusst weglässt. Du planst nicht alles, nicht alles gleichzeitig, und schon gar nicht das ganze Jahr im Detail. Grob beim Jahr, genau erst beim Monat. Detail-Verliebtheit auf Jahresebene ist verschwendete Zeit." |
-| 10 | **Deine Jahres-Übersicht** | leere Jahres-Matrix: 12 Monate × (Launch · Ferien · Hauptbotschaft) | „Jetzt bist du dran. Im Arbeitsblatt hast du eine Jahres-Übersicht. Trag in dieser Reihenfolge ein: erst die Ferien und ruhigen Wochen, dann deine Launches drumherum, dann pro Quartal deine eine Hauptbotschaft. Grob reicht, du verfeinerst es im Monatsplan." |
-| 11 | **Arbeitsblatt + nächste Lektion** | „📋 Fülle deine Jahres-Übersicht" · „Nächste Lektion: 3.4 — Monats- + Wochenplanung" | „Fülle deine Jahres-Übersicht so gut du heute kannst, sie darf wachsen. In der nächsten Lektion zoomen wir wieder rein: vom Jahr in den Monat und in die Woche, mit deinen sechs Lebens-Bereichen. Bis gleich." |
+| 1 | **Titel** | „3.3 · Jahres-Strategie — was kommt WANN" | „Jetzt zoomen wir ganz weit raus, auf dein ganzes Jahr. Das klingt erstmal nach viel, aber genau das gibt dir am Ende die meiste Ruhe, weil du nie wieder morgens vor der Story stehst und nicht weisst, worüber du reden sollst." |
+| 2 | **„Worüber rede ich heute?"** | Frau ratlos vorm Handy · „Wer kennt's: keine Ahnung, was ich heute posten soll" | „Hand aufs Herz, wer kennt das nicht: du stehst vor der Story und hast keine Ahnung, worüber du heute reden sollst. Das passiert immer dann, wenn du keinen Plan hast und jeden Tag neu erfinden musst. Genau das räumen wir hier weg." |
+| 3 | **Reagieren vs. Führen** | 2 Spalten: REAGIEREN (Woche zu Woche, Bauchgefühl) vs. FÜHREN (Jahresblick, du entscheidest) | „Es gibt zwei Arten, ein Business zu führen. Die einen reagieren von Tag zu Tag und wundern sich, dass sich nie was Grosses bewegt, und die anderen schauen aufs Jahr und führen. Mama-CEO heisst führen, und das fängt mit der Vogelperspektive an." |
+| 4 | **Das Fundament: WAS wann · worüber wann** | 2 Fragen gross: „WAS bewerbe ich WANN?" + „Über WELCHE Transformation rede ich WANN?" | „Das ganze Fundament steckt in zwei Fragen. Erstens: was bewerbe ich wann. Zweitens: über welche Transformation rede ich wann. Beantworte die zwei, und dein Content schreibt sich fast von selbst, weil du immer weisst, was gerade dran ist." |
+| 5 | **Dein Monats-Rhythmus** | 3 Karten pro Monat: 🎁 1 Gratis-Produkt · 💶 1 Mini-Produkt · 💎 1 grosses Produkt | „So plane ich jeden einzelnen Monat: ein Gratis-Produkt, ein Mini-Produkt und ein grosses Produkt. Immer dieselben drei Stufen, jeden Monat neu gefüllt. Das gibt dir einen klaren Takt, an dem sich dein ganzer Content ausrichtet, vom Gratis-Reinholer bis zum grossen Angebot." |
+| 6 | **Nie das Produkt — immer die Transformation** | „Das Produkt ist das Werkzeug. Die Transformation ist das Ziel." | „Und jetzt der wichtigste Satz der ganzen Lektion: nie steht das Produkt im Zentrum, immer die Transformation. Niemand will das Produkt, alle wollen das Ergebnis dahinter, und genau darüber redest du." |
+| 7 | **Beispiel Abnehmshake** | Shake → Ziel „sich endlich wieder geil im Bikini fühlen" → lernen: Ernährung · Bewegung · Mindset | „Nimm an, du verkaufst Abnehmshakes. Das Produkt ist der Shake, aber das Ziel ist, dass sie sich endlich wieder geil im Bikini fühlt. Und damit sie das erreicht, muss sie was lernen: Ernährung, Bewegung, Mindset. Genau das sind deine Überthemen, über die du in den Wochen sprichst, nicht der Shake selbst." |
+| 8 | **Auch mit nur EINEM Produkt** | Beispiel Kosmetik → Überthemen: Hautpflege · Ernährung · Routine → je 1 Woche | „Und falls du nur ein einziges Network-Produkt hast, zum Beispiel Kosmetik: dann überlegst du dir, über welches Überthema du in welcher Woche redest. Eine Woche Hautpflege, eine Woche Ernährung für schöne Haut, eine Woche Routine. So hast du aus einem Produkt ein ganzes Jahr voller Themen, ohne dass es langweilig wird." |
+| 9 | **Ferien, Testwochen + Anlässe ZUERST** | Kalender: Schulferien rot · Testwochen + Events grün eingetragen, BEVOR der Rest kommt | „Bevor du irgendwas anderes planst, trägst du drei Sachen zuerst ein: deine Schulferien, deine Testwochen und deine Anlässe. Denn in den Sommerferien mit den Kindern launchst du nicht, und wenn du eine Testwoche oder einen Anlass hast, redest du schon eine Woche vorher drüber und lädst die Leute ein. Diese Fixpunkte stehen zuerst, alles andere baut sich drumherum." |
+| 10 | **Beispiel: mein Notion-Jahresplan** | Screenshot Patricias Jahresplanung: Monats-Trio + Status (Ferien · Mum Life Balance · doTERRA) + Zeitraum | „Ich zeig dir das jetzt live an meinem eigenen Notion-Jahresplan. Du siehst pro Monat mein Gratis-, Mini- und grosses Produkt, du siehst meine Ferien blau markiert, und du siehst farblich getrennt, was Mum Life Balance ist und was doTERRA. Genau so darf deiner auch aussehen, grob und ehrlich." |
+| 11 | **Was du NICHT machst** | „Nicht alles. Nicht im Detail. Das WIE kommt in der Insta-Kundenmaschine." | „Genauso wichtig wie was du planst, ist was du hier weglässt. Du planst nicht das ganze Jahr im Detail, grob reicht, und du baust hier noch keine Reels und Captions. Das WIE, also wie aus dem Plan konkreter Content wird, das lernst du in der Insta-Kundenmaschine. Hier bauen wir nur das Fundament." |
+| 12 | **Arbeitsblatt + nächste Lektion** | „📋 Fülle deinen Jahres-Plan mit Monats-Trio + Wochen-Themen" · „Nächste Lektion: 3.4" | „Fülle deinen Jahres-Plan so gut du heute kannst, er darf wachsen. In der nächsten Lektion zoomen wir wieder rein, vom Jahr in den Monat und in die Woche, mit deinen sechs Lebens-Bereichen. Bis gleich." |
 
 ## Arbeitsblatt-Sektion 3.3
 
 ```
 LEKTION 3.3 · Jahres-Strategie — was kommt WANN
 
-▸ Schritt 1: Trag ZUERST deine Ferien + ruhigen Phasen ein
-Wann hast du dieses Jahr reduziert Zeit? (Schulferien, Krankheits-Phasen, Familien-Events)
-[Tabelle: Monat | reduzierte Wochen]
+▸ Schritt 1: Trag ZUERST deine Fixpunkte ein
+Was steht fest, bevor du planst? (Schulferien, Testwochen, Anlässe/Events)
+| Monat | Ferien/reduziert | Testwoche/Anlass |
+| Jan   | ... | ... |
+| ...   |     |     |
 
-▸ Schritt 2: Deine Produkttreppe aufs Jahr legen
-Welches Produkt launchst/bewirbst du wann? (drumherum um die Ferien)
-| Produkt (Stufe) | Geplanter Monat |
-| 0€-Freebie      | __________ |
-| Mini-Produkt    | __________ |
-| Mittleres Produkt | ________ |
-| Premium/Bundle  | __________ |
-
-▸ Schritt 3: 1 Hauptbotschaft pro Quartal
-Q1 (Jan-Mär): _______________________________
-Q2 (Apr-Jun): _______________________________
-Q3 (Jul-Sep): _______________________________
-Q4 (Okt-Dez): _______________________________
-
-▸ Deine Jahres-Übersicht (grob)
-| Monat | Launch/Fokus | Ferien/Reduziert | Quartals-Botschaft |
+▸ Schritt 2: Dein Monats-Rhythmus — pro Monat 3 Produkte
+Für jeden Monat: was ist dein Gratis-, dein Mini-, dein grosses Produkt?
+(Es darf sich wiederholen — z.B. dasselbe Gratis-Produkt mehrere Monate.)
+| Monat | 🎁 Gratis | 💶 Mini | 💎 Gross |
 | Jan   | ... | ... | ... |
 | ...   |     |     |     |
-| Dez   |     |     |     |
+
+▸ Schritt 3: Transformation statt Produkt
+Dein Hauptprodukt: _______________________________
+Das ZIEL deiner Kundin dahinter (die Transformation): _______________________________
+Was muss sie dafür lernen/können? (= deine Überthemen)
+1. _______________  2. _______________  3. _______________
+
+▸ Schritt 4: Überthemen auf die Wochen verteilen
+Über welches Überthema redest du in welcher Woche? (1 Überthema pro Woche reicht)
+| Woche | Überthema |
+| KW __ | _______________________________ |
+| KW __ | _______________________________ |
+| KW __ | _______________________________ |
+| KW __ | _______________________________ |
 
 WAS DU NACH LEKTION 3.3 HAST
-✓ Deine Ferien + ruhigen Phasen sind ZUERST eingetragen
-✓ Deine Produkttreppe ist aufs Jahr verteilt (mit Luft zum Atmen)
-✓ Pro Quartal hast du EINE Hauptbotschaft
-✓ Du führst dein Jahr, statt von Woche zu Woche zu reagieren
+✓ Deine Fixpunkte (Ferien, Testwochen, Anlässe) stehen zuerst
+✓ Dein Monats-Rhythmus steht: pro Monat Gratis + Mini + grosses Produkt
+✓ Du denkst in Transformation statt Produkt — und hast deine Überthemen
+✓ Deine Überthemen sind auf Wochen verteilt = du weisst immer, worüber du redest
+✓ Du hast das Fundament für deinen Content (das WIE kommt in der Insta-Kundenmaschine)
 ```
 
 ---
@@ -502,9 +508,9 @@ WAS DU NACH LEKTION 3.5 HAST · KERN-LEISTUNG VON SÄULE 3
 # 🎬 LEKTION 3.6 — Notfall-Modus: 50%-Plan für Kinder-Kranktage
 
 **Status:** ⚠️ NEU bauen (9 Folien)
-**Material:** Patricias eigener Notfall-Plan (Walk-the-Talk: Business läuft auch in Familien-Notfall weiter, weil System)
+**Material:** Patricias eigener Notfall-Plan (O-Ton 2026-06-04): „Stories müssen immer sein — du kannst sie vorplanen oder Templates erstellen, die du in 5 Minuten raushaust (Story-Strategie = Insta-Kundenmaschine). Kind bleibt im Zentrum. ABER du hast deinen Cockpit-Bot, du hast deinen Wochenplan, du weisst genau wie es morgen weitergeht."
 
-> ⚠️ **OFFENE FRAGE an Patricia (für authentisches Beispiel):** Wie sieht DEIN konkreter 50%-Plan aus, wenn ein Kind krank ist oder ein Familien-Notfall reinkommt? Was bleibt (Minimum), was pausierst du? Solange offen: Folien arbeiten mit deinem dokumentierten Alltag (Power-Window Vormittag, Dienstag als einziger freier Nachmittag, vorgeplanter Content) und der abstrakten „Familien-Notfall"-Linie — NIE „Mama/Krebs/Spital meiner Mutter".
+> **Geklärt 2026-06-04 (Patricia O-Ton):** Im Notfall bleibt das Kind im Zentrum. Was trägt: der Wochenplan (S3) gibt Sicherheit „wie es morgen weitergeht", Stories laufen über vorgeplanten Content/Templates weiter. Der Cockpit-Bot nimmt das Reinschauen später ganz ab — der wird aber erst in **Säule 4** gebaut, hier in S3 trägt der Wochenplan. Compliance: Familien-Notfall bleibt abstrakt, NIE „Mama/Krebs/Spital".
 
 ## ThriveCart-Setup
 
@@ -532,7 +538,7 @@ Ich erzähl dir ehrlich, wie das bei mir aussieht, wenn das Leben dazwischenkomm
 📋 Lektion 3.6 im Arbeitsblatt: dein persönlicher 50%-Notfall-Plan
 ```
 
-## Folien-Plan (9 Folien)
+## Folien-Plan (10 Folien)
 
 | # | Folie | Inhalt | Sprechnotizen |
 |---|---|---|---|
@@ -541,10 +547,11 @@ Ich erzähl dir ehrlich, wie das bei mir aussieht, wenn das Leben dazwischenkomm
 | 3 | **Der 50%-Plan: deine minimale Woche** | Trichter: volle Woche → minimale Woche (nur das Lebensnotwendige fürs Business) | „Der 50%-Plan ist deine minimale Woche. Nicht alles, nur das, was wirklich nicht warten kann. Meistens ist das genau eine Sache im Business: deine Kundinnen nicht hängen lassen. Alles andere darf warten, und das ist keine Niederlage, das ist kluge Führung." |
 | 4 | **Was BLEIBT im Notfall** | grüne Liste: Kundenbetreuung-light (1× DMs/Mails checken) · 1 kritische Sache · Familie zuerst | „Was bleibt: einmal am Tag kurz die DMs und Mails checken, damit keine Kundin im Regen steht. Plus die eine kritische Sache, wenn gerade ein Launch läuft. Und sonst: Familie zuerst. Das ist die ganze minimale Woche." |
 | 5 | **Was PAUSIERT im Notfall** | rote Liste: Produkterstellung · neuer Content · Me-Time-Projekte · grosse Strategie | „Was pausiert: alles was du selbst erschaffst. Produkterstellung, neuer Content, grosse Strategie-Arbeit. Das läuft nicht weg, und es darf warten, bis der Sturm vorbei ist. Wichtig ist, dass du das vorher entscheidest, nicht mitten im Chaos." |
-| 6 | **Content-Puffer rettet dich** | Visual: 1-2 Wochen vorgeplanter Content im Hintergrund | „Hier zahlt sich Vorarbeit aus: wenn du ein, zwei Wochen Content vorgeplant hast, läuft deine Sichtbarkeit einfach weiter, auch wenn du gerade am Kinderbett sitzt. Genau dafür planst du nicht auf den letzten Drücker. Der Puffer hält dir den Rücken frei." |
-| 7 | **Mein ehrliches Beispiel** | Patricia-Frame: „Auch bei mir kommt das Leben dazwischen" · abstrakt: Familien-Notfall · Business lief weiter weil System | „Ich sag dir ehrlich: auch bei mir kommt das Leben dazwischen, und es gab Phasen mit einem Familien-Notfall, wo ich kaum am Schreibtisch war. Und trotzdem lief mein Business weiter, nicht weil ich eine Übermama bin, sondern weil das System stand. Genau das baust du dir hier auf." |
-| 8 | **Der Notfall-Tagesplaner** | Mini-Tageskarte: 1 Business-Sache + Familie + „heute reicht das" | „Für den Notfall-Tag gibt es eine eigene, winzige Tagesplaner-Variante: eine Business-Sache, der Rest Familie, und der Satz heute reicht das. Du hängst ihn dir in Notion als Vorlage hin, damit du an so einem Tag nicht erst überlegen musst, was jetzt zählt." |
-| 9 | **Arbeitsblatt + Säule 3 komplett** | „📋 Dein 50%-Notfall-Plan" · „Säule 3 abgeschlossen — Live-Call 2 Ende W4" | „Im Arbeitsblatt definierst du jetzt deinen eigenen 50%-Plan, bevor du ihn brauchst. Damit hast du Säule 3 abgeschlossen: deine Struktur steht, dein Notion lebt, und du hast einen Plan für die Tage, an denen das Leben dazwischenkommt. Wir sehen uns im Live-Call 2, der Notion-Brain-Sprechstunde." |
+| 6 | **Stories laufen weiter — vorgeplant** | Visual: 1-2 Wochen vorgeplante Stories/Templates · Hinweis „Story-Strategie lernst du in der Insta-Kundenmaschine" | „Eine Sache muss auch im Notfall sein: deine Stories. Aber die kannst du vorplanen oder dir Templates bauen, die du in fünf Minuten raushaust, selbst vom Sofa aus. Wie du so eine Story-Strategie aufsetzt, lernst du in der Insta-Kundenmaschine. Wichtig hier: deine Sichtbarkeit bricht nicht weg, nur weil du gerade am Kinderbett sitzt." |
+| 7 | **Dein Wochenplan gibt Sicherheit** | Wochenplan + Pfeil „du weisst genau wie es morgen weitergeht" · später: Cockpit-Bot (Säule 4) nimmt das Reinschauen ab | „Und genau hier zahlt sich dein Notion-Wochenplan aus: auch im Chaos weisst du genau, wie es morgen weitergeht, weil alles schon drin steht. Du musst nichts neu erfinden. Später, in Säule 4, nimmt dir der Cockpit-Bot sogar das Reinschauen ab und sagt dir morgens, was dran ist. Im Notfall ist genau das Gold wert." |
+| 8 | **Mein ehrliches Beispiel** | Patricia-Frame: „Auch bei mir kommt das Leben dazwischen" · abstrakt: Familien-Notfall · Kind im Zentrum · Business lief weiter weil System | „Ich sag dir ehrlich: auch bei mir kommt das Leben dazwischen, und es gab Phasen mit einem Familien-Notfall, wo ich kaum am Schreibtisch war. Das Kind, die Familie, das stand im Zentrum, und trotzdem lief mein Business weiter, nicht weil ich eine Übermama bin, sondern weil das System stand. Genau das baust du dir hier auf." |
+| 9 | **Der Notfall-Tagesplaner** | Mini-Tageskarte: 1 Business-Sache + Familie + „heute reicht das" | „Für den Notfall-Tag gibt es eine eigene, winzige Tagesplaner-Variante: eine Business-Sache, der Rest Familie, und der Satz heute reicht das. Du hängst ihn dir in Notion als Vorlage hin, damit du an so einem Tag nicht erst überlegen musst, was jetzt zählt." |
+| 10 | **Arbeitsblatt + Säule 3 komplett** | „📋 Dein 50%-Notfall-Plan" · „Säule 3 abgeschlossen — Live-Call 2 Ende W4" | „Im Arbeitsblatt definierst du jetzt deinen eigenen 50%-Plan, bevor du ihn brauchst. Damit hast du Säule 3 abgeschlossen: deine Struktur steht, dein Notion lebt, und du hast einen Plan für die Tage, an denen das Leben dazwischenkommt. Wir sehen uns im Live-Call 2, der Notion-Brain-Sprechstunde." |
 
 ## Arbeitsblatt-Sektion 3.6
 
@@ -591,10 +598,10 @@ WAS DU NACH LEKTION 3.6 HAST · SÄULE 3 KOMPLETT
 |---|---|---|
 | 3.1 | `saeule-03-lektion-3-1.mp4` | **PPTX neu bauen** (8 Folien) |
 | 3.2 | `saeule-03-lektion-3-2.mp4` | PPTX existiert (modul-02-lektion-2-1.pptx) — **anpassen** (Mama-Alltag-Frame statt KI-Frame) + umnummerieren |
-| 3.3 | `saeule-03-lektion-3-3.mp4` | **PPTX neu bauen** (11 Folien · Material: Patricias reale Jahresplanung 2026) |
-| 3.4 | `saeule-03-lektion-3-4.mp4` | **PPTX neu bauen** (12 Folien · Material: 6-Bereiche + Power-Slots + CEO-Tag-Fokus) |
+| 3.3 | `saeule-03-lektion-3-3.mp4` | **PPTX neu bauen** (12 Folien · Material: Patricias echte Notion-Jahresplanung + Monats-Trio/Transformation-Methodik) |
+| 3.4 | `saeule-03-lektion-3-4.mp4` | **PPTX neu bauen** (13 Folien · Material: 6-Bereiche + Power-Slots + CEO-Tag-Fokus) |
 | 3.5 MASTERY | `saeule-03-lektion-3-5.mp4` | PPTX existiert (modul-02-lektion-2-5.pptx) — **leichte Anpassung** + umnummerieren |
-| 3.6 | `saeule-03-lektion-3-6.mp4` | **PPTX neu bauen** (9 Folien) |
+| 3.6 | `saeule-03-lektion-3-6.mp4` | **PPTX neu bauen** (10 Folien) |
 
 → **Neu zu bauen: 4 PPTX** (3.1, 3.3, 3.4, 3.6) · **Anzupassen: 2 PPTX** (3.2, 3.5)
 
@@ -611,13 +618,12 @@ Bereits angelegt (laut Inhaltsverzeichnis). In Lektion 3.5 wird es vom Mentee du
 
 ## ❓ Offene Fragen an Patricia (vor PPTX-Bau zu klären)
 
-| Lektion | Frage |
-|---|---|
-| **3.3** | Welche realen Launch-Fenster + Schulferien-Wochen 2026 willst du als dein durchgespieltes Beispiel zeigen? (deine 4-Stufen-Treppe aufs Jahr gelegt — mit echten Monaten) |
-| **3.3** | Welche 4 Quartals-Hauptbotschaften passen für dein Jahr? |
-| **3.4** | Passt die Beispiel-Zuordnung CEO-Tag-Fokus → Lebens-Bereich (Mo Strategie→Produkt · Di Brand→Sichtbarkeit · Mi Beziehungen→Kundenbetreuung · Fr Reflexion→Reflexion)? Oder andere Logik? |
-| **3.5** | Ist das Notion-Master-Template wirklich schon fertig + duplizierbar? Wo liegt der Share-Link für die Mentees? |
-| **3.6** | Dein konkreter 50%-Plan: was bleibt, was pausiert? (für ein echtes statt erfundenes Beispiel) |
+| Lektion | Frage | Status |
+|---|---|---|
+| **3.3** | Jahres-Strategie-Methodik (Monats-Trio Gratis/Mini/Gross + Transformation statt Produkt + Überthemen auf Wochen + Fixpunkte zuerst) | ✅ geklärt 2026-06-04 (Patricia O-Ton) |
+| **3.4** | Passt die Beispiel-Zuordnung CEO-Tag-Fokus → Lebens-Bereich (Mo Strategie→Produkt · Di Brand→Sichtbarkeit · Mi Beziehungen→Kundenbetreuung · Fr Reflexion→Reflexion)? | ⏳ offen — kurz bestätigen |
+| **3.5** | Ist das Notion-Master-Template wirklich schon fertig + duplizierbar? Wo liegt der Share-Link für die Mentees? | ⏳ offen — Patricia prüft |
+| **3.6** | Notfall-Plan (Kind im Zentrum · Wochenplan trägt · Stories vorgeplant/IKM · Cockpit-Bot ab S4) | ✅ geklärt 2026-06-04 (Patricia O-Ton) |
 
 ---
 
