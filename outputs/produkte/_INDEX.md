@@ -56,6 +56,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[08-thrivecart-block-mapping]]
 - [[10-saeule-1-MASTER]]
 - [[10-saeule-2-MASTER]]
+- [[10-saeule-3-MASTER]]
 - [[13-thrivecart-saeule-2-setup]]
 - [[_KRITISCHER-AUDIT]]
 - [[_NEXT-SESSION-HANDOFF]]
