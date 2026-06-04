@@ -8,7 +8,7 @@ from time import mktime
 
 import feedparser
 
-from config import ARTICLE_AGE_DAYS, FEEDS, MAX_ARTICLES_PER_CATEGORY
+from config import ARTICLE_AGE_DAYS, FEEDS, MAX_CANDIDATES_PER_CATEGORY
 
 logger = logging.getLogger(__name__)
 
@@ -89,8 +89,8 @@ def fetch_all_feeds() -> dict[str, list[dict]]:
         unique = deduplicate(all_articles)
         unique.sort(key=lambda a: a["published"], reverse=True)
 
-        # Auf Maximum begrenzen
-        result[category] = unique[:MAX_ARTICLES_PER_CATEGORY]
+        # Auf Maximum begrenzen (Rohmaterial für die Redaktion)
+        result[category] = unique[:MAX_CANDIDATES_PER_CATEGORY]
         logger.info("%s: %d Artikel nach Filter", category, len(result[category]))
 
     return result

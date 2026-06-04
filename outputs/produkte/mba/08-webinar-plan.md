@@ -41,7 +41,7 @@ Emotionen verkaufen. Das Webinar zeigt **WAS** möglich ist — deine echte Real
 1. **Webinar ≠ Workshop — das wichtigste Gesetz.** Ein Verkaufs-Webinar gibt **KEINEN How-to-Content**. Es weckt nur **Emotion**, zeigt **was möglich ist** und schafft **Aha-Momente** („stimmt, hat sie recht"). Content im Verkaufs-Webinar ist **Gift** — er überlädt die Leute, ein verwirrtes Gehirn kauft nicht. (Julias jahrelanger Fehler: zu viel Mehrwert → kaum Verkäufe.) → Deine Companion-Demo ist erlaubt, weil sie **was möglich ist** zeigt, NICHT wie man's baut. Bleib da diszipliniert: kein Tutorial.
 2. **„Immer die Wahrheit sagen — aber niemals alles sagen."** Du lügst nie, aber du betonst das Starke (deine echte 2x-vierstellig-Realität, die Mentee-Erfolge) und lässt Unwichtiges weg.
 3. **4 Bausteine = wahrgenommener Wert** (in Angebot + Pitch einbauen): **Traumergebnis hoch** (spezifisch, mit Zahlen) · **Erfolgs-Wahrscheinlichkeit hoch** (Beweise, „auch ohne Technik/Vorerfahrung") · **Zeit-Verzögerung kurz** (erste Teilergebnisse schnell benennen) · **Anstrengung gering** („ohne dass du deinen Alltag umkrempelst", kopieren statt erfinden).
-4. **Hochpreis-Close = Anzahlungs-Strategie** (Sven-Methode, funktioniert bis 3000€ direkt aus Webinar): Platz mit kleiner Anzahlung reservieren → Zwischenseite „wir prüfen, ob noch ein Platz frei ist" → „bestätigt, nur 24h reserviert: Restzahlung ODER offene Fragen per WhatsApp". **80% die anzahlen, zahlen den Rest.** → Genau die niedrige Schwelle für dein kaltes 997-Webinar (Details Sektion 6).
+4. ~~**Hochpreis-Close = Anzahlungs-Strategie**~~ → ❌ **Von Patricia verworfen (4.6.): passt nicht zu ihr.** Die „Platz wird geprüft"-Mechanik ist zu trickreich für ihre ehrliche, nahbare Art. Stattdessen: **direkter, ehrlicher Checkout** (Pioneer 997 oder 6 Raten) + warme „Schreib mir bei Fragen"-Brücke (Details Sektion 6).
 5. **Energie = 50% des Webinars** — kann man nicht faken → **Live zuerst**, dann Evergreen (deckt sich mit deiner Entscheidung).
 6. **Evergreen-Skalierung:** dasselbe Webinar mit **5–7 Marketing-Angles** bewerben (Hamsterrad · System · „500 dazu" · „endlich eigenes Standbein" · Zeit/KI). Pro Bewerbung **min. 3 Mails** (Problem · Lösung · Story = „Three Angels of Trust"). Lieber öfter mailen.
 7. **Verpackung > Inhalt** + Test: erzähl dein Angebot 100 Leuten — wenn 20% „erzähl mir mehr" sagen, ist es stark.
@@ -59,7 +59,7 @@ Eine Mama braucht alle drei, sonst bleibt sie hängen:
 
 ### Cold-Traffic-Implikationen (weil über Meta-Ads)
 - **Mehr Story, mehr Vertrauen, später pitchen.** Eine fremde Frau braucht erst das Gefühl „die ist echt, die meint's ehrlich", bevor 997 fällt.
-- **Niedrigere Einstiegsschwelle:** Anzahlungs-Close (Jens-Gesetz 4) + Zahlplan (6 Raten) sind bei kalt fast Pflicht (siehe Sektion 6). Garantie-Frage offen (deine 2.6.-Entscheidung war „keine") — bei kalt wäre eine echte Garantie ein starker Hebel, du entscheidest.
+- **Niedrigere Einstiegsschwelle:** Zahlplan (6 Raten) + warme „Schreib mir bei Fragen"-Brücke (DM/WhatsApp) statt Trickserei. Garantie-Frage offen (deine 2.6.-Entscheidung war „keine") — bei kalt wäre eine echte Garantie ein starker Hebel, du entscheidest.
 - 🚨 **Meta-Income-Claim-Warnung:** In der **Ad** (nicht im Webinar selbst) darfst du **keine konkreten Einkommens-Versprechen** machen („verdiene 2x vierstellig"). Meta sperrt das. Die Ad verkauft die **Transformation/Freiheit** („dein eigenes Standbein, unabhängig"), die Einkommens-Story erzählst du erst **im** Webinar als deine persönliche Realität. → Verknüpft mit [[reference_ki-webinar-lp-technik]] + [[feedback_KRITISCH-ad-link-pre-launch-test]] (Link vor Aktivierung testen!).
 
 ### Warum dieser Pitch anders ist als das Mama-CEO-Webinar (333)
@@ -365,18 +365,18 @@ Gründungsmitglied · erste Runde · niedrigster Preis, den es je gibt
 ```
 **Sprechnotizen (3 Min):** „Jetzt zum Preis. Der spätere Listenpreis der Academy ist 1347. Heute, als Pioneer der allerersten Runde, kommst du für 997 rein — das ist der niedrigste Preis, den es je geben wird, weil du mir hilfst, die erste Runde zu gestalten, und dafür am nähesten an mir dran bist. Und damit das neben der Familie machbar ist, kannst du in bis zu sechs Raten zahlen, also rund 166 Franken im Monat. Den Pioneer-Preis gibt's nur in dieser ersten Runde — ab Samstag, dem 27., ist Schluss damit, und der ganze Zugang schliesst am Sonntag drauf."
 
-#### SLIDE 24 — Risk-Reversal (über die Anzahlung, KEINE Geld-zurück-Garantie)
-> 🚨 **Deine MBA-Entscheidung 2.6. ([[feedback_KRITISCH-mba-bundle-struktur]]): KEINE Geld-zurück-Garantie · KEINE Plätze-Beschränkung · Verknappung NUR über Preis-Runden.** Darum NICHT die klassische 14-Tage-Garantie. Das Risk-Reversal läuft hier über die **Anzahlung** (Jens-Mechanik): die kleine Anzahlung bekommst du zurück, falls nach deinen Fragen doch nicht alles passt — das volle Programm ist aber ohne Geld-zurück.
+#### SLIDE 24 — Noch unsicher? Schreib mir (warme Brücke, KEIN Gimmick)
+> 🚨 **Deine Entscheidungen: KEINE Geld-zurück-Garantie (2.6.) · KEINE Anzahlungs-Mechanik (4.6., passt nicht zu dir).** Darum hier kein Garantie-Siegel und keine Reservierungs-Trickserei — nur deine echte, nahbare Art: „wenn du unsicher bist, red mit mir."
 ```
-[Creme, Siegel-Optik]
-Du gehst kein Risiko ein:
-Reservier deinen Platz mit einer kleinen Anzahlung.
-Stell mir danach in Ruhe alle deine Fragen.
-[Orange] Passt es nach dem Gespräch doch nicht? Die Anzahlung bekommst du zurück.
+[Creme, warm]
+Noch eine Frage offen?
+Schreib mir direkt — per DM oder WhatsApp.
+Ich antworte dir persönlich, bevor du dich entscheidest.
+[Orange] Keine Bots, keine Verkaufsmasche. Einfach ich.
 ```
-**Sprechnotizen (2 Min):** „Weil du mich vielleicht heute zum ersten Mal siehst, machen wir das ganz entspannt. Du musst dich nicht sofort komplett festlegen — du reservierst dir deinen Platz mit einer kleinen Anzahlung, und danach klären wir in Ruhe alle Fragen, die du noch hast. Und wenn du dann merkst, das passt für dich gerade doch nicht, bekommst du die Anzahlung zurück. Du gehst also kein Risiko ein, um herauszufinden, ob das deins ist."
+**Sprechnotizen (1.5 Min):** „Und wenn du jetzt denkst ‚das klingt gut, aber ich hab noch eine Frage' — dann schreib mir einfach direkt. Per Nachricht oder WhatsApp. Da antworte ich dir persönlich, bevor du irgendwas entscheidest. Kein Bot, keine Verkaufsmasche. Ich will, dass du wirklich das Gefühl hast, das passt für dich — und nicht, dass du dich zu irgendwas gedrängt fühlst."
 
-> ⚠️ **Falls du die Garantie-Frage neu denken willst:** Bei KALTEM Traffic ist eine echte Geld-zurück-Garantie ein starker Conversion-Hebel — Jens & viele High-Ticket-Webinare nutzen sie. Deine 2.6.-Entscheidung war „keine". Wenn du sie für dieses kalte Webinar doch zulassen willst, sag Bescheid — dann setze ich Slide 24 auf die volle Garantie um. Sonst bleibt's bei der Anzahlungs-Rückgabe.
+> ⚠️ **Garantie-Frage (offen):** Bei KALTEM Traffic ist eine echte Geld-zurück-Garantie ein starker Conversion-Hebel. Deine 2.6.-Entscheidung war „keine". Ohne Garantie UND ohne Anzahlung ruht der kalte 997-Close auf: Wert-Stack + Pioneer-Preis-Dringlichkeit + Ratenzahlung + diese warme DM-Brücke. Das ist ehrlich und du-konform, aber konversionsschwächer. Wenn du fürs kalte Webinar doch eine Garantie zulassen willst, sag Bescheid.
 
 #### SLIDE 25 — Antikunden (Ja / Nein)
 ```
@@ -394,14 +394,12 @@ Stell mir danach in Ruhe alle deine Fragen.
 ```
 [Orange, Weiss-Text, Mega-CTA]
 Sichere dir deinen Pioneer-Platz.
-Reservier ihn mit einer kleinen Anzahlung.
-CHF 997 (oder bis zu 6 Raten) · Pioneer nur bis Sa 27.6.
+CHF 997 · oder bequem in bis zu 6 Raten
+Pioneer-Preis nur bis Sa 27.6.
 🔗 [mumlifebalance.ch/mba]   [QR-Code]
-[unten] Link ist im Chat. Pioneer-Preis nur bis Sa 27.6.
+[unten] Link ist im Chat. Fragen? Schreib mir direkt.
 ```
-**Sprechnotizen (1.5 Min):** „Der Cart ist jetzt offen. Du musst dich jetzt nicht in einer Minute komplett entscheiden — du kannst dir deinen Pioneer-Platz mit einer kleinen Anzahlung reservieren, und alle offenen Fragen klären wir danach in Ruhe. Wer komplett zahlt, kann das direkt tun oder in bis zu sechs Raten. Den Link findest du im Chat und hier auf dem Bildschirm. Klick rein, sichere dir deinen Platz, und dann sehen wir uns drinnen. Und jetzt nehm ich mir Zeit für deine Fragen."
-
-> ⚙️ **Anzahlungs-Mechanik (Jens-Gesetz 4) hinter dem CTA** — Details + Seiten-Flow in Sektion 6. Auf der Reservierungs-Seite: kleine Anzahlung → Zwischenseite „Platz wird geprüft" → „bestätigt, 24h reserviert: Restzahlung ODER Fragen per WhatsApp/DM". Senkt die Schwelle beim kalten 997-Klick massiv.
+**Sprechnotizen (1.5 Min):** „Der Cart ist jetzt offen. Du kommst zum Pioneer-Preis von 997 rein — wahlweise direkt oder in bis zu sechs Raten, damit's neben der Familie machbar ist. Den Link findest du im Chat und hier auf dem Bildschirm. Und wenn du noch eine Frage hast, schreib mir einfach direkt, bevor du dich entscheidest. Klick rein, sichere dir deinen Pioneer-Preis solange er gilt — und dann sehen wir uns drinnen. Und jetzt nehm ich mir Zeit für deine Fragen."
 
 #### SLIDE 27 — Q&A + Closing
 ```
@@ -448,15 +446,15 @@ Deine Fragen.
 - **Risk-Reversal / 14-Tage-Garantie** → nimmt der fremden Frau das Risiko, macht den 997-Sprung machbar.
 - **Cart-Fenster** (aus [[launch-kalender-juli-2026]]): Webinar Mi 24.6. → Pioneer-Ende Sa 27.6. 23:59 → Final bis Cart-Close So 5.7. 23:59.
 
-### 🔑 Der Close: Anzahlungs-Strategie (Jens-Gesetz 4 — DER Hebel fürs kalte 997-Webinar)
-Statt die fremde Frau direkt 997 zahlen zu lassen, gibst du ihr einen sanfteren Einstieg. Funktioniert laut Jens zuverlässig bis 3000€ direkt aus dem Webinar:
+### Der Close: direkter, ehrlicher Checkout (Patricia-Stil)
+> ❌ **Anzahlungs-Strategie von Patricia verworfen (4.6.): passt nicht zu ihr** — zu trickreich für ihre nahbare Art. ❌ Keine Geld-zurück-Garantie (2.6.). ❌ Keine Plätze-Beschränkung — Verknappung NUR über die Preis-Runde.
 
-1. **Reservierungs-Seite:** „Sichere dir den Pioneer-Preis (CHF 997) mit einer kleinen Anzahlung von CHF [z.B. 90]." (Die Anzahlung wird voll angerechnet.)
-2. **Zwischen-/Bestätigungs-Seite:** „Dein Pioneer-Preis ist jetzt für dich gesichert — und für 24 h reserviert. Du kannst die Restzahlung direkt vornehmen (einmal oder 6 Raten) — oder, wenn du noch Fragen hast, klick hier und stell sie mir per WhatsApp/DM."
-3. **Anzahlungs-Rückgabe:** „Die Anzahlung bekommst du zurück, wenn nach deinen Fragen doch nicht alles passt."
+Der Close ist bewusst schlicht und ehrlich:
+1. **Cart-Link** → direkter Checkout: **Pioneer CHF 997** oder **bis zu 6 Raten** (≈ 166/Monat).
+2. **Verknappung = ehrlich + echt:** der Pioneer-Preis gilt nur in der ersten Runde bis **Sa 27.6.**, danach steigt er. Kein Fake-Countdown, keine erfundenen Plätze.
+3. **Warme DM-Brücke statt Druck:** „Noch eine Frage? Schreib mir direkt, ich antworte persönlich, bevor du dich entscheidest." → das ist deine ehrliche Call-Alternative für Unentschlossene (du-konform, kein Gimmick).
 
-→ **Warum das zieht:** Die Schwelle „kleine Anzahlung, Fragen danach klären" ist viel niedriger als „jetzt 997 zahlen". ~80% der Anzahlerinnen zahlen den Rest, weil sie innerlich schon entschieden haben. Die WhatsApp/DM-Option ist gleichzeitig deine **Call-Alternative** für Unentschlossene — du schliesst im Gespräch.
-> 🚨 **An deine MBA-Entscheidung angepasst ([[feedback_KRITISCH-mba-bundle-struktur]]): KEINE Plätze-Beschränkung — Verknappung läuft NUR über die Preis-Runde.** Darum reserviert die Anzahlung den **Pioneer-PREIS** (der Sa 27.6. ausläuft), NICHT einen begrenzten Sitzplatz. Keine „nur noch X Plätze frei"-Animation (wäre erfunden + widerspräche deiner Entscheidung). Der Druck ist echt und ehrlich: nach Sa 27.6. kostet es mehr.
+→ **Ehrliche Einordnung:** Ohne Anzahlung UND ohne Garantie ruht der kalte 997-Close auf vier Beinen: **starker Wert-Stack · Pioneer-Preis-Dringlichkeit · Ratenzahlung · persönliche DM-Brücke.** Das ist konversionsschwächer als die Gimmick-Wege — aber es ist deins, und es hält, was es verspricht. Der grösste Ausgleichs-Hebel bleibt **Retargeting** (siehe unten) und die **Wiederholung als Evergreen**.
 
 ### Value-Equation-Check fürs Angebot (Jens-Gesetz 3 / 4 Bausteine)
 Bevor die Slides final sind, das MBA-Versprechen gegen die 4 Achsen prüfen:
@@ -546,7 +544,7 @@ Jens-Benchmark Evergreen (zum Einordnen, NICHT 1. Runde):
 
 ## 11. Nächste Schritte (To-Dos für dich)
 
-**Entschieden (Patricia 4.6.):** ✅ Datum Mi 24.6. · ✅ Titel (Painpoint-Frame) · ✅ **Preis Pioneer CHF 997** (statt 990 — verkaufspsychologisch) · ✅ kein Fast-Action-Bonus (Pioneer-Preis ist Anreiz) · ✅ bis zu 6 Raten · ✅ Webinar = Leadmagnet · ✅ Jens-Mechanik eingebaut (Anzahlungs-Close, Emotion-statt-Content, Value-Equation)
+**Entschieden (Patricia 4.6.):** ✅ Datum Mi 24.6. · ✅ Titel (Painpoint-Frame) · ✅ **Preis Pioneer CHF 997** (statt 990 — verkaufspsychologisch) · ✅ kein Fast-Action-Bonus (Pioneer-Preis ist Anreiz) · ✅ bis zu 6 Raten · ✅ Webinar = Leadmagnet · ✅ **direkter Checkout** (KEINE Anzahlungs-Strategie — passt nicht zu Patricia) · ✅ Jens-Prinzip „Emotion statt Content" + Value-Equation eingebaut
 
 **🔴 Preis 997 muss noch in andere Dateien (sagen aktuell 990):**
 - [ ] `outputs/produkte/mba-launch/launch-kalender-juli-2026.md` (2× „Pioneer 990")
@@ -556,10 +554,9 @@ Jens-Benchmark Evergreen (zum Einordnen, NICHT 1. Runde):
 - → Sag „zieh 997 überall durch", dann update ich die Markdown-Dateien (Salespage + ThriveCart prüfst du selbst).
 
 **Noch offen:**
-- [ ] **Anzahlungs-Höhe festlegen** (z.B. CHF 90) — reserviert den Pioneer-Preis, keinen Sitzplatz
-- [ ] **Garantie-Frage:** bei deiner „keine Geld-zurück"-Entscheidung bleiben, oder für dieses kalte Webinar doch eine echte Garantie zulassen? (starker Conversion-Hebel bei kalt)
+- [ ] **Garantie-Frage:** bei deiner „keine Geld-zurück"-Entscheidung bleiben, oder für dieses kalte Webinar doch eine echte Garantie zulassen? (ohne Anzahlung + ohne Garantie ist der kalte 997-Close härter — Retargeting + Evergreen-Wiederholung gleichen das aus)
 - [ ] **Webinar-Uhrzeit:** 09:00 (dein Power-Window) — oder abends für berufstätige NWM-Mamas (mehr Show-up bei kalt)?
-- [ ] Danach baue ich auf Zuruf: **Anmelde-LP** (`/wp`) · **Reservierungs-/Anzahlungs-Seiten-Flow** · **Mail-Architektur** (Gerüst im Launch-Kalender) · **Meta-Ad** (Income-Claim-safe) · **Canva-Slides**.
+- [ ] Danach baue ich auf Zuruf: **Anmelde-LP** (`/wp`) · **direkter ThriveCart-Checkout** (997 / 6 Raten) · **Mail-Architektur** (Gerüst im Launch-Kalender) · **Meta-Ad** (Income-Claim-safe) · **Canva-Slides**.
 
 ---
 

@@ -1,13 +1,13 @@
 """
-Telegram News-Bot — Hauptskript.
-Sammelt wöchentlich News aus RSS-Feeds, fasst sie mit Claude zusammen
-und sendet einen Digest per Telegram.
+Telegram News-Bot — Hauptskript (Tageszeitung-Modus).
+Sammelt täglich News aus RSS-Feeds, lässt Claude die für die Zielgruppe
+relevantesten Meldungen kuratieren und sendet die Ausgabe per Telegram.
 """
 
 import asyncio
 import logging
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
@@ -16,9 +16,12 @@ from telegram.constants import ParseMode
 
 from config import (
     ARTICLE_TEMPLATE,
+    CATEGORY_EMOJIS,
     CATEGORY_HEADER,
+    DIGEST_FREQUENCY,
     MESSAGE_FOOTER,
     MESSAGE_HEADER,
+    NOTHING_TODAY,
     SCHEDULE_DAY,
     SCHEDULE_HOUR,
     SCHEDULE_MINUTE,
@@ -27,7 +30,7 @@ from config import (
     TIMEZONE,
 )
 from feeds import fetch_all_feeds
-from summarizer import summarize_articles
+from summarizer import curate_all
 
 logging.basicConfig(
     level=logging.INFO,
@@ -36,19 +39,15 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-CATEGORY_EMOJIS = {
-    "KI & AI": "🤖",
-    "Onlinemarketing": "📊",
-}
+WEEKDAYS_DE = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
 
 
 def build_message(articles_by_category: dict[str, list[dict]]) -> str:
     """Baut die formatierte Telegram-Nachricht zusammen."""
     today = datetime.now()
-    week_ago = today - timedelta(days=7)
-    date_range = f"{week_ago.strftime('%d.%m.')} - {today.strftime('%d.%m.%Y')}"
+    date_str = f"{WEEKDAYS_DE[today.weekday()]}, {today.strftime('%d.%m.%Y')}"
 
-    msg = MESSAGE_HEADER.format(date_range=date_range)
+    msg = MESSAGE_HEADER.format(date=date_str)
 
     for category, articles in articles_by_category.items():
         if not articles:
@@ -57,10 +56,12 @@ def build_message(articles_by_category: dict[str, list[dict]]) -> str:
         emoji = CATEGORY_EMOJIS.get(category, "📌")
         msg += CATEGORY_HEADER.format(emoji=emoji, category=category)
 
-        for i, article in enumerate(articles, 1):
-            summary = article.get("summary", "Keine Zusammenfassung verfügbar.")
+        for article in articles:
+            summary = article.get("summary", "")
+            source = article.get("source", "")
+            if source:
+                summary = f"{summary} _({source})_" if summary else f"_({source})_"
             msg += ARTICLE_TEMPLATE.format(
-                number=i,
                 title=escape_markdown(article["title"]),
                 summary=summary,
                 link=article["link"],

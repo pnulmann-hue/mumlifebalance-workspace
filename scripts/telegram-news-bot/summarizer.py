@@ -1,15 +1,21 @@
 """
-Claude API Integration für Artikel-Zusammenfassungen.
-Batch-Modus: Alle Artikel in einem API-Call zusammenfassen (spart ~95% Kosten).
+Claude API Integration — Redaktions-Modus.
+Pro Ressort EIN API-Call: Claude wählt die für die Zielgruppe relevantesten
+Meldungen aus und schreibt dazu Schlagzeile + 2-Satz-Einordnung.
 """
 
 import logging
 import re
-import time
 
 import anthropic
 
-from config import ANTHROPIC_API_KEY, CLAUDE_MODEL, SUMMARY_PROMPT_BATCH
+from config import (
+    ANTHROPIC_API_KEY,
+    CLAUDE_MODEL,
+    CURATION_PROMPT,
+    MAX_PICKS_PER_CATEGORY,
+    ZIELGRUPPE,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -21,56 +27,96 @@ def strip_html(text: str) -> str:
     return re.sub(r"<[^>]+>", "", text).strip()
 
 
-def summarize_batch(articles: list[dict]) -> list[str]:
-    """Fasst eine Liste von Artikeln in einem einzigen API-Call zusammen."""
-    # Artikel-Texte für den Prompt vorbereiten
+def _parse_curation(raw: str) -> list[dict]:
+    """Parst die Claude-Antwort in eine Liste von {index, title, text}."""
+    if raw.strip().upper().startswith("KEINE"):
+        return []
+
+    picks = []
+    for block in raw.split("---"):
+        block = block.strip()
+        if not block:
+            continue
+        index = title = text = None
+        for line in block.splitlines():
+            line = line.strip()
+            if line.upper().startswith("INDEX:"):
+                m = re.search(r"\d+", line)
+                index = int(m.group()) if m else None
+            elif line.upper().startswith("TITEL:"):
+                title = line.split(":", 1)[1].strip()
+            elif line.upper().startswith("TEXT:"):
+                text = line.split(":", 1)[1].strip()
+        if index is not None and title:
+            picks.append({"index": index, "title": title, "text": text or ""})
+    return picks
+
+
+def curate_category(category: str, articles: list[dict]) -> list[dict]:
+    """
+    Wählt aus den Rohartikeln eines Ressorts die relevantesten aus und
+    reichert sie mit Schlagzeile + Einordnung an. Gibt die fertigen
+    (ausgewählten) Artikel zurück — inkl. Original-Link.
+    """
+    if not articles:
+        return []
+
+    # Roh-Meldungen nummeriert für den Prompt aufbereiten
     article_texts = []
     for i, article in enumerate(articles, 1):
-        content = strip_html(article.get("content", ""))[:500]
+        content = strip_html(article.get("content", ""))[:400]
         if not content:
             content = article["title"]
-        article_texts.append(f"[{i}] Titel: {article['title']}\nInhalt: {content}")
+        article_texts.append(
+            f"[{i}] Quelle: {article['source']}\n"
+            f"    Titel: {article['title']}\n"
+            f"    Anriss: {content}"
+        )
 
-    prompt = SUMMARY_PROMPT_BATCH.format(articles="\n\n".join(article_texts))
+    prompt = CURATION_PROMPT.format(
+        zielgruppe=ZIELGRUPPE,
+        category=category,
+        max_picks=MAX_PICKS_PER_CATEGORY,
+        articles="\n\n".join(article_texts),
+    )
 
     try:
         response = client.messages.create(
             model=CLAUDE_MODEL,
-            max_tokens=2000,
+            max_tokens=1500,
             messages=[{"role": "user", "content": prompt}],
         )
         raw = response.content[0].text.strip()
-        # Antwort in einzelne Zusammenfassungen aufteilen
-        summaries = []
-        for block in raw.split("---"):
-            block = block.strip()
-            if not block:
-                continue
-            # [1], [2] etc. am Anfang entfernen
-            block = re.sub(r"^\[\d+\]\s*", "", block)
-            summaries.append(block)
-        return summaries
-
     except anthropic.APIError:
-        logger.exception("Claude API Fehler bei Batch-Zusammenfassung")
-        return ["Zusammenfassung nicht verfügbar."] * len(articles)
+        logger.exception("Claude API Fehler bei Redaktion von %s", category)
+        return []
+
+    picks = _parse_curation(raw)
+
+    # Auswahl auf die echten Artikel mappen (Original-Link behalten)
+    result = []
+    for pick in picks[:MAX_PICKS_PER_CATEGORY]:
+        idx = pick["index"] - 1
+        if 0 <= idx < len(articles):
+            src = articles[idx]
+            result.append({
+                "title": pick["title"],
+                "summary": pick["text"],
+                "link": src["link"],
+                "source": src["source"],
+            })
+    return result
 
 
-def summarize_articles(articles_by_category: dict[str, list[dict]]) -> dict[str, list[dict]]:
-    """
-    Fasst alle Artikel per Batch-API-Call zusammen (ein Call pro Kategorie).
-    """
+def curate_all(articles_by_category: dict[str, list[dict]]) -> dict[str, list[dict]]:
+    """Redigiert alle Ressorts (ein API-Call pro Ressort)."""
+    edited = {}
     for category, articles in articles_by_category.items():
         if not articles:
+            edited[category] = []
             continue
-
-        logger.info("%s: %d Artikel zusammenfassen (Batch)...", category, len(articles))
-        summaries = summarize_batch(articles)
-
-        for i, article in enumerate(articles):
-            if i < len(summaries):
-                article["summary"] = summaries[i]
-            else:
-                article["summary"] = "Zusammenfassung nicht verfügbar."
-
-    return articles_by_category
+        logger.info("%s: %d Rohmeldungen -> Redaktion...", category, len(articles))
+        picks = curate_category(category, articles)
+        logger.info("%s: %d Meldungen ausgewählt", category, len(picks))
+        edited[category] = picks
+    return edited
