@@ -8,7 +8,7 @@ from time import mktime
 
 import feedparser
 
-from config import ARTICLE_AGE_DAYS, FEEDS, MAX_CANDIDATES_PER_CATEGORY
+from config import ARTICLE_AGE_DAYS, CATEGORY_AGE_DAYS, FEEDS, MAX_CANDIDATES_PER_CATEGORY
 
 logger = logging.getLogger(__name__)
 
@@ -22,7 +22,7 @@ def parse_published_date(entry):
     return None
 
 
-def fetch_feed(feed_info: dict) -> list[dict]:
+def fetch_feed(feed_info: dict, age_days: int = ARTICLE_AGE_DAYS) -> list[dict]:
     """Einzelnen RSS-Feed abrufen und Artikel extrahieren."""
     try:
         feed = feedparser.parse(feed_info["url"])
@@ -30,7 +30,7 @@ def fetch_feed(feed_info: dict) -> list[dict]:
             logger.warning("Feed-Fehler bei %s: %s", feed_info["name"], feed.bozo_exception)
             return []
 
-        cutoff = datetime.now(timezone.utc) - timedelta(days=ARTICLE_AGE_DAYS)
+        cutoff = datetime.now(timezone.utc) - timedelta(days=age_days)
         articles = []
 
         for entry in feed.entries:
@@ -50,6 +50,7 @@ def fetch_feed(feed_info: dict) -> list[dict]:
                 "published": published or datetime.now(timezone.utc),
                 "content": content[:2000],  # Limit für API-Calls
                 "source": feed_info["name"],
+                "is_video": False,
             })
 
         return articles
@@ -79,9 +80,10 @@ def fetch_all_feeds() -> dict[str, list[dict]]:
     result = {}
 
     for category, feed_list in FEEDS.items():
+        age_days = CATEGORY_AGE_DAYS.get(category, ARTICLE_AGE_DAYS)
         all_articles = []
         for feed_info in feed_list:
-            articles = fetch_feed(feed_info)
+            articles = fetch_feed(feed_info, age_days)
             all_articles.extend(articles)
             logger.info("%s: %d Artikel von %s", category, len(articles), feed_info["name"])
 

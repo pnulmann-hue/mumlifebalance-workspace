@@ -14,6 +14,7 @@ from config import (
     CLAUDE_MODEL,
     CURATION_PROMPT,
     MAX_PICKS_PER_CATEGORY,
+    MAX_VIDEOS_PER_CATEGORY,
     ZIELGRUPPE,
 )
 
@@ -67,8 +68,9 @@ def curate_category(category: str, articles: list[dict]) -> list[dict]:
         content = strip_html(article.get("content", ""))[:400]
         if not content:
             content = article["title"]
+        tag = " (VIDEO)" if article.get("is_video") else ""
         article_texts.append(
-            f"[{i}] Quelle: {article['source']}\n"
+            f"[{i}]{tag} Quelle: {article['source']}\n"
             f"    Titel: {article['title']}\n"
             f"    Anriss: {content}"
         )
@@ -77,6 +79,7 @@ def curate_category(category: str, articles: list[dict]) -> list[dict]:
         zielgruppe=ZIELGRUPPE,
         category=category,
         max_picks=MAX_PICKS_PER_CATEGORY,
+        max_videos=MAX_VIDEOS_PER_CATEGORY,
         articles="\n\n".join(article_texts),
     )
 

@@ -1,81 +1,74 @@
-# Telegram News-Bot: Onlinemarketing & KI
+# Telegram News-Bot: Deine tägliche Mama-Business-Zeitung
 
-Wöchentlicher News-Digest mit KI-Zusammenfassungen per Telegram.
+Tägliche, kuratierte News-Ausgabe per Telegram — wie eine Tageszeitung, aber nur
+mit dem, was für Mama-Unternehmerinnen wirklich zählt.
 
 ## Was der Bot macht
 
-- Sammelt Artikel aus 10+ RSS-Feeds (Onlinemarketing & KI)
-- Filtert auf die letzten 7 Tage, entfernt Duplikate
-- Fasst jeden Artikel mit Claude in 2-3 Sätzen auf Deutsch zusammen
-- Sendet den Digest jeden Montag um 08:00 per Telegram
+- Sammelt täglich Artikel aus RSS- & Google-News-Feeds zu **5 Ressorts**:
+  - 📸 Instagram & Social Media
+  - 💼 Online-Business & Marketing
+  - 🤝 Network Marketing
+  - ⏳ Zeitmanagement & Mama-CEO-Struktur
+  - 🤖 KI & Claude Code
+- Filtert auf die letzten Tage und entfernt Duplikate.
+- **Claude redigiert** wie eine Chefredakteurin: pro Ressort wählt sie die für
+  die Zielgruppe relevantesten Meldungen aus, filtert Rauschen (Gadget-Deals,
+  US-Politik, Krypto …) und schreibt zu jeder Meldung eine Schlagzeile + 2 Sätze
+  „warum das für eine Mama mit Online-Business zählt".
+- Sendet die Ausgabe jeden Morgen um **07:00** per Telegram (mehrere Nachrichten,
+  falls länger als das Telegram-Limit).
+
+## Architektur
+
+| Datei | Zweck |
+|---|---|
+| `config.py` | Feeds, Schedule, **Zielgruppen-Profil** (steuert die Relevanz-Auswahl), Templates |
+| `feeds.py` | RSS-Abruf, Zeitfilter (pro Ressort), Deduplizierung |
+| `summarizer.py` | **Redaktions-Logik** — Claude wählt aus + schreibt Schlagzeilen |
+| `bot.py` | Orchestrierung, Telegram-Versand, Scheduler |
 
 ## Setup
 
-### 1. Telegram Bot erstellen
+### 1. Telegram Bot & Chat-ID
+1. In Telegram **@BotFather** öffnen, `/newbot` → Token kopieren.
+2. Dem Bot eine Nachricht schreiben, dann `https://api.telegram.org/bot<TOKEN>/getUpdates` öffnen → `chat.id` ablesen.
 
-1. Öffne Telegram und suche nach **@BotFather**
-2. Sende `/newbot` und folge den Anweisungen
-3. Kopiere den **Bot Token**
+### 2. Claude API Key
+[console.anthropic.com](https://console.anthropic.com) → Settings → API Keys.
 
-### 2. Chat-ID ermitteln
-
-1. Sende deinem neuen Bot eine beliebige Nachricht
-2. Öffne im Browser: `https://api.telegram.org/bot<DEIN_TOKEN>/getUpdates`
-3. Finde deine `chat.id` in der Antwort
-
-### 3. Claude API Key
-
-1. Gehe zu [console.anthropic.com](https://console.anthropic.com)
-2. Erstelle einen API-Key unter Settings > API Keys
-
-### 4. Umgebungsvariablen
-
-Kopiere `.env.example` zu `.env` und trage deine Werte ein:
-
+### 3. Umgebungsvariablen
 ```bash
-cp .env.example .env
+cp .env.example .env   # Werte eintragen
 ```
 
-### 5. Lokal testen
-
+### 4. Lokal testen
 ```bash
-# Dependencies installieren
 pip install -r requirements.txt
-
-# Sofort einen Digest senden (zum Testen)
-python bot.py --now
-
-# Bot mit wöchentlichem Schedule starten
-python bot.py
+python bot.py --now    # sofort eine Ausgabe senden (zum Testen)
+python bot.py          # mit täglichem Schedule starten
 ```
 
 ## Deployment auf Railway
+1. [Railway](https://railway.app)-Projekt mit dem GitHub-Repo verbinden.
+2. Umgebungsvariablen setzen: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`,
+   `ANTHROPIC_API_KEY`, `DIGEST_FREQUENCY=daily`, `SCHEDULE_HOUR=7`,
+   `TIMEZONE=Europe/Zurich`.
+3. Railway erkennt das `Procfile` und startet den Worker.
 
-1. Erstelle ein [Railway](https://railway.app) Projekt
-2. Verbinde dein GitHub-Repository
-3. Setze die Umgebungsvariablen in Railway:
-   - `TELEGRAM_BOT_TOKEN`
-   - `TELEGRAM_CHAT_ID`
-   - `ANTHROPIC_API_KEY`
-   - `TIMEZONE=Europe/Zurich`
-4. Railway erkennt das `Procfile` automatisch und startet den Worker
+## Anpassen
 
-## Konfiguration
-
-### Feeds anpassen
-
-In `config.py` unter `FEEDS` kannst du RSS-Feeds hinzufügen oder entfernen.
-
-### Schedule ändern
-
-Über Umgebungsvariablen:
-- `SCHEDULE_DAY` — Wochentag (0=Montag, 6=Sonntag)
-- `SCHEDULE_HOUR` — Stunde (0-23)
-- `SCHEDULE_MINUTE` — Minute (0-59)
-- `TIMEZONE` — Zeitzone (z.B. `Europe/Zurich`)
+- **Themen / Feeds:** `config.py` → `FEEDS` (Ressort hinzufügen/entfernen) und
+  `CATEGORY_EMOJIS`.
+- **Was ist relevant?** `config.py` → `ZIELGRUPPE` — das ist der Hebel, mit dem
+  Claude entscheidet, was reinkommt und was rausfliegt.
+- **Frische:** `ARTICLE_AGE_DAYS` (Default 2) bzw. `CATEGORY_AGE_DAYS` für
+  langsame Ressorts (Blogs, die nicht täglich posten → längeres Fenster).
+- **Menge:** `MAX_PICKS_PER_CATEGORY` (wie viele Meldungen pro Ressort).
+- **Zeitpunkt / Rhythmus:** `SCHEDULE_HOUR`, `DIGEST_FREQUENCY` (`daily`/`weekly`).
 
 ## Kosten
-
-- **Telegram**: Kostenlos
-- **Railway**: Free Tier (500h/Monat) reicht für diesen Bot
-- **Claude API**: ~$0.05-0.15 pro wöchentlichen Digest (je nach Artikelanzahl)
+- **Telegram:** kostenlos
+- **Railway:** Free Tier reicht
+- **Claude API:** ~5 kleine Haiku-Calls pro Ausgabe (ein Call pro Ressort) —
+  wenige Cent pro Tag.

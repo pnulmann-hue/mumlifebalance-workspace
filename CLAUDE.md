@@ -601,15 +601,18 @@ Supabase-basierte Vector-Datenbank für Patricias Rezepte (~1900 PDFs in `rezept
 
 Der `/mealplan`-Slash-Command ruft `query.py` automatisch vor jeder Rezept-Empfehlung auf, statt Rezepte zu erfinden. Falls die `.env` in der Web-Claude-Sandbox fehlt (sie persistiert nicht zwischen Sessions): Patricia darauf hinweisen statt aufgeben.
 
-### Telegram News-Bot (`scripts/telegram-news-bot/`)
+### Telegram News-Bot (`scripts/telegram-news-bot/`) — „Mum Life Daily" (Tageszeitung seit 2026-06-04)
 
-Wöchentlicher News-Digest-Bot, der Artikel aus RSS-Feeds (Onlinemarketing & KI) sammelt, mit Claude zusammenfasst und per Telegram sendet.
+**Tägliche, kuratierte News-Ausgabe per Telegram** — wie eine Tageszeitung, aber nur mit dem, was für Mama-Unternehmerinnen zählt. 5 Ressorts: 📸 Instagram & Social Media · 💼 Online-Business & Marketing · 🤝 Network Marketing · ⏳ Zeitmanagement & Mama-CEO-Struktur · 🤖 KI & Claude Code.
+
+Statt stumpfer Zusammenfassung **redigiert Claude wie eine Chefredakteurin**: wählt pro Ressort die für die Zielgruppe relevantesten Meldungen aus (Steuerung über `ZIELGRUPPE` in `config.py`), filtert Rauschen (Gadgets, US-Politik, Krypto) und schreibt Schlagzeile + 2-Satz-Einordnung „warum für eine Mama mit Online-Business relevant".
 
 - **Sprache:** Python 3.11+
-- **Konfiguration:** `config.py` (Feeds, Schedule), `.env` (API-Keys)
-- **Lokal testen:** `python bot.py --now` (sofortiger Digest)
-- **Daürbetrieb:** `python bot.py` (wöchentlicher Schedule)
-- **Deployment:** Railway/Render via `Procfile`
+- **Module:** `config.py` (Feeds + Zielgruppen-Profil + Schedule), `feeds.py` (Abruf/Zeitfilter pro Ressort), `summarizer.py` (Redaktions-Logik), `bot.py` (Versand/Scheduler)
+- **Lokal testen:** `python bot.py --now` (sofortige Ausgabe)
+- **Dauerbetrieb:** `python bot.py` (täglich 07:00 Zürich; `DIGEST_FREQUENCY=weekly` als Fallback)
+- **Feeds:** RSS + Google-News-RSS (robust, deutschsprachig — z.B. „Claude Code"-Suche). Langsame Ressorts haben längeres Zeitfenster (`CATEGORY_AGE_DAYS`).
+- **Deployment:** Railway via `Procfile` (env: `DIGEST_FREQUENCY=daily`, `SCHEDULE_HOUR=7`, `TIMEZONE=Europe/Zurich`)
 - **Setup-Anleitung:** `scripts/telegram-news-bot/README.md`
 
 ### Instagram Content-Engine (Automatisiert, v2 seit 2026-04-21)

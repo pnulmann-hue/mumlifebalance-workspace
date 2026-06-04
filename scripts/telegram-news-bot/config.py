@@ -63,18 +63,53 @@ FEEDS = {
         {"name": "Business For Home", "url": "https://www.businessforhome.org/feed/"},
     ],
     "Zeitmanagement & Mama-CEO-Struktur": [
+        {"name": "Google News: Zeitmanagement", "url": "https://news.google.com/rss/search?q=Zeitmanagement%20Selbstst%C3%A4ndige%20OR%20Produktivit%C3%A4t&hl=de&gl=CH&ceid=CH:de"},
         {"name": "Zeit zu leben", "url": "https://www.zeitzuleben.de/feed/"},
         {"name": "t3n Produktivität", "url": "https://t3n.de/tag/produktivitaet/rss.xml"},
         {"name": "Toggl Blog", "url": "https://toggl.com/blog/feed"},
     ],
     "KI & Claude Code": [
+        {"name": "Google News: Claude Code", "url": "https://news.google.com/rss/search?q=%22Claude%20Code%22&hl=de&gl=CH&ceid=CH:de"},
+        {"name": "Google News: Anthropic", "url": "https://news.google.com/rss/search?q=Anthropic%20Claude&hl=de&gl=CH&ceid=CH:de"},
         {"name": "The Decoder", "url": "https://the-decoder.de/feed/"},
-        {"name": "Heise", "url": "https://www.heise.de/rss/heise-atom.xml"},
         {"name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/"},
-        {"name": "Hacker News: Claude Code", "url": "https://hnrss.org/newest?q=%22Claude+Code%22"},
-        {"name": "Hacker News: Anthropic", "url": "https://hnrss.org/newest?q=Anthropic"},
     ],
 }
+
+# Pro Ressort ein eigenes Zeitfenster (Tage). News-Ressorts: 2 Tage (frisch).
+# Langsame/zeitlose Ressorts (Blogs posten nicht täglich): längeres Fenster,
+# damit der Bot trotzdem fast immer etwas zu zeigen hat.
+CATEGORY_AGE_DAYS = {
+    "Zeitmanagement & Mama-CEO-Struktur": 7,
+    "Network Marketing": 7,
+}
+
+# --- YouTube-Kanäle pro Ressort ---
+# RSS pro Kanal: https://www.youtube.com/feeds/videos.xml?channel_id=<ID>
+# channel_id findest du über die Kanalseite (oder frag Claude, sie aufzulösen).
+YOUTUBE_CHANNELS = {
+    "Instagram & Social Media": [
+        {"name": "Social Media Examiner", "channel_id": "UC453ZoE-0Pf7r4qKa30NlLw"},
+    ],
+    "Online-Business & Marketing": [
+        {"name": "t3n", "channel_id": "UCSUisuyxfH1OoPCV_6qIuMw"},
+        {"name": "HubSpot Marketing", "channel_id": "UCkWVA1_vkY9GLyuLAre97AQ"},
+    ],
+    "Network Marketing": [
+        # noch kein frischer Kanal hinterlegt — bei Bedarf ergänzen
+    ],
+    "Zeitmanagement & Mama-CEO-Struktur": [
+        {"name": "Ali Abdaal", "channel_id": "UChfo46ZNOV-vtehDc25A1Ug"},
+    ],
+    "KI & Claude Code": [
+        {"name": "Anthropic", "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA"},
+        {"name": "The Morpheus (KI, DE)", "channel_id": "UCLGY6_j7kZfA1dmmjR1J_7w"},
+    ],
+}
+
+VIDEO_AGE_DAYS = 7              # Videos der letzten 7 Tage gelten als "aktuell"
+MAX_VIDEO_CANDIDATES = 8       # so viele Video-Kandidaten gehen max. pro Ressort in die Redaktion
+MAX_VIDEOS_PER_CATEGORY = 2    # so viele Videos dürfen es pro Ressort in die Ausgabe schaffen
 
 # Emojis pro Ressort (für die Telegram-Nachricht)
 CATEGORY_EMOJIS = {
@@ -92,32 +127,37 @@ MAX_CANDIDATES_PER_CATEGORY = 25   # so viele Rohartikel gehen max. in die Redak
 MAX_PICKS_PER_CATEGORY = 5         # so viele dürfen es pro Ressort in die Ausgabe schaffen
 
 # --- Redaktions-Prompt (Auswahl + Kurztext in einem Call pro Ressort) ---
-CURATION_PROMPT = """Du bist die Chefredakteurin einer täglichen Newsletter-Ausgabe für \
+CURATION_PROMPT = """Du bist die Chefredakteurin einer täglichen Newsletter-Ausgabe (als PDF) für \
 folgende Leserin und ihre Zielgruppe:
 
 {zielgruppe}
 
 Heutiges Ressort: "{category}".
 
-Unten sind die heutigen Roh-Meldungen aus den RSS-Feeds. Deine Aufgabe:
-1. Wähle die maximal {max_picks} Meldungen aus, die für diese Zielgruppe WIRKLICH relevant sind.
-   Lieber 1-2 starke Meldungen als 5 mittelmässige. Wenn NICHTS relevant ist, gib nur "KEINE" aus.
-2. Schreibe zu jeder gewählten Meldung eine knackige deutsche Schlagzeile und 2 Sätze,
-   die erklären WAS neu ist und WARUM es für eine Mama mit Online-Business zählt.
+Unten sind die heutigen Roh-Meldungen aus RSS-Feeds und YouTube. Einige Einträge sind \
+YouTube-Videos — sie sind mit "(VIDEO)" markiert. Deine Aufgabe:
+1. Wähle die maximal {max_picks} Beiträge aus, die für diese Zielgruppe WIRKLICH relevant sind.
+   Lieber 1-2 starke Beiträge als 5 mittelmässige. Wenn NICHTS relevant ist, gib nur "KEINE" aus.
+   Wenn ein wirklich relevantes, aktuelles Video dabei ist, nimm es mit auf — aber höchstens \
+   {max_videos} Videos in diesem Ressort.
+2. Schreibe zu jedem gewählten Beitrag eine knackige deutsche Schlagzeile und einen \
+   AUSFÜHRLICHEN Absatz (4-6 Sätze): WAS ist neu/der Kern, WARUM zählt das für eine Mama mit \
+   Online-Business, und – wenn möglich – ein konkreter Gedanke, wie sie es nutzen kann.
 3. Sortiere nach Wichtigkeit (Wichtigstes zuerst).
 
 Schreibe auf Deutsch, mit echten Umlauten (ä/ö/ü) und Schweizer "ss" statt "ß". \
-Direkt und konkret, keine Floskeln, keine erfundenen Zahlen.
+Direkt, warm und konkret, keine Floskeln, keine erfundenen Zahlen. Bei englischsprachigen \
+Quellen trotzdem auf Deutsch zusammenfassen.
 
-Antworte AUSSCHLIESSLICH in diesem Format (eine Meldung pro Block, getrennt durch "---"):
-INDEX: <die Nummer der Original-Meldung>
+Antworte AUSSCHLIESSLICH in diesem Format (ein Beitrag pro Block, getrennt durch "---"):
+INDEX: <die Nummer des Original-Beitrags>
 TITEL: <deine Schlagzeile>
-TEXT: <2 Sätze>
+TEXT: <ausführlicher Absatz, 4-6 Sätze>
 ---
 
-Wenn keine Meldung relevant ist, antworte nur mit: KEINE
+Wenn kein Beitrag relevant ist, antworte nur mit: KEINE
 
-Hier sind die Roh-Meldungen:
+Hier sind die Roh-Beiträge:
 
 {articles}
 """
@@ -151,3 +191,17 @@ NOTHING_TODAY = """🗞️ *Mum Life Daily*
 
 Heute keine relevanten Meldungen gefunden — geniess den ruhigen Tag. ☕
 """
+
+# --- PDF / Versand ---
+PDF_TITLE = "Mum Life Daily"
+PDF_SUBTITLE = "Deine Morgenausgabe — kuratiert für Mama-Unternehmerinnen"
+PDF_INTRO = (
+    "Nur das, was für dein Online-Business, dein Network und deinen Mama-CEO-Alltag "
+    "wirklich zählt. Tippe auf »Weiterlesen«, um zum Beitrag zu kommen."
+)
+PDF_FILENAME = "mum-life-daily-{date}.pdf"  # date = YYYY-MM-DD
+
+# Kurze Begleitnachricht, mit der das PDF in Telegram ankommt
+TELEGRAM_CAPTION = """🗞️ *Mum Life Daily* — {date}
+
+Deine heutige Ausgabe ist da: *{count} Beiträge* aus {sections} Ressorts. 📄👇"""
