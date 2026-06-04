@@ -347,9 +347,9 @@ Einzeln allein: über 990 — nur für die Kurse.
 CHF 990
 Gründungsmitglied · erste Runde · niedrigster Preis, den es je gibt
 [daneben] Späterer Listenpreis: CHF 1347
-[unten] Zahlplan möglich: z.B. 3× CHF 363. Cart schliesst: [Datum].
+[unten] Bis zu 6 Raten möglich (ca. 6× CHF 165). Pioneer-Preis endet Sa 27.6. · Cart-Close So 5.7.
 ```
-**Sprechnotizen (3 Min):** „Jetzt zum Preis. Der spätere Listenpreis der Academy ist 1347. Heute, als Pioneer der allerersten Runde, kommst du für 990 rein — das ist der niedrigste Preis, den es je geben wird, weil du mir hilfst, die erste Runde zu gestalten, und dafür am nähesten an mir dran bist. Und damit das machbar ist neben der Familie, kannst du auch in Raten zahlen, zum Beispiel dreimal 363. Die Plätze in der Pioneer-Runde sind begrenzt, und der Cart schliesst am [Datum]."
+**Sprechnotizen (3 Min):** „Jetzt zum Preis. Der spätere Listenpreis der Academy ist 1347. Heute, als Pioneer der allerersten Runde, kommst du für 990 rein — das ist der niedrigste Preis, den es je geben wird, weil du mir hilfst, die erste Runde zu gestalten, und dafür am nähesten an mir dran bist. Und damit das neben der Familie machbar ist, kannst du in bis zu sechs Raten zahlen, also rund 165 im Monat. Den Pioneer-Preis gibt's nur in dieser ersten Runde — ab Samstag, dem 27., ist Schluss damit, und der ganze Zugang schliesst am Sonntag drauf."
 
 #### SLIDE 24 — Garantie / Risk-Reversal (wichtig bei kalt)
 ```
@@ -377,11 +377,11 @@ Wenn du das Gefühl hast, das ist nichts für dich — sag mir innerhalb von 14 
 ```
 [Orange, Weiss-Text, Mega-CTA]
 Sichere dir deinen Pioneer-Platz.
-CHF 990 · erste Runde · Plätze begrenzt
+CHF 990 · erste Runde · bis zu 6 Raten
 🔗 [mumlifebalance.ch/mba]   [QR-Code]
-[unten] Link ist im Chat. Schnell-Bonus nur heute.
+[unten] Link ist im Chat. Pioneer-Preis nur bis Sa 27.6.
 ```
-**Sprechnotizen (1.5 Min):** „Der Cart ist jetzt offen. Den Link findest du im Chat und hier auf dem Bildschirm. Wenn du heute dabei bist und dir deinen Pioneer-Platz sicherst, bekommst du den Schnell-Bonus dazu. Klick rein, trag dich ein — und dann sehen wir uns drinnen. Und jetzt nehm ich mir Zeit für deine Fragen."
+**Sprechnotizen (1.5 Min):** „Der Cart ist jetzt offen. Den Link findest du im Chat und hier auf dem Bildschirm. Wenn du dir heute deinen Pioneer-Platz sicherst, kommst du zum niedrigsten Preis rein, den es je geben wird — wahlweise in bis zu sechs Raten. Klick rein, trag dich ein, und dann sehen wir uns drinnen. Und jetzt nehm ich mir Zeit für deine Fragen."
 
 #### SLIDE 27 — Q&A + Closing
 ```
@@ -395,9 +395,9 @@ Deine Fragen.
 2. *„Ich bin nicht technisch — geht das trotzdem?"* → Genau dafür ist es gemacht. Bis vor Kurzem wusste ich auch nicht, was ein KI-Helfer ist. Du wirst an die Hand genommen, Schritt für Schritt.
 3. *„Ich bin im Network — passt das, oder ist das ein Widerspruch?"* → Es passt perfekt. Du baust dir ein zweites, eigenes Standbein neben deinem Network — damit du nicht mehr nur von Provisionen und deinem Team abhängst.
 4. *„Was, wenn ich nicht zu jedem Call kann?"* → Alle Calls werden aufgezeichnet, und du kannst deine Fragen vorher einreichen. Aber live ist live — da passiert am meisten.
-5. *„Wann geht's los und wie lange hab ich Zugriff?"* → Start ist [Datum]. Die Kurse und Aufzeichnungen bleiben deine, die Community läuft weiter.
+5. *„Wann geht's los und wie lange hab ich Zugriff?"* → Du bist sofort drin und startest mit Kurs 1. Die Kurse und Aufzeichnungen bleiben deine, die Community läuft weiter.
 
-**Closing (letzte 1 Min):** „Danke, dass du die ganze Zeit dabei warst. Wer sich heute den Pioneer-Platz sichert, ist von Anfang an am nähesten dran an mir und an den anderen Frauen. Der Link ist im Chat, der Schnell-Bonus gilt nur heute. Ich freu mich, dich drinnen zu sehen. Und denk dran — funktionieren war gestern."
+**Closing (letzte 1 Min):** „Danke, dass du die ganze Zeit dabei warst. Wer sich jetzt den Pioneer-Platz sichert, ist von Anfang an am nähesten dran an mir und an den anderen Frauen — und zahlt den niedrigsten Preis, den es je geben wird. Der Link ist im Chat, der Pioneer-Preis gilt nur bis Samstag. Ich freu mich, dich drinnen zu sehen. Und denk dran — funktionieren war gestern."
 
 ---
 
@@ -411,12 +411,13 @@ Deine Fragen.
 | Umsetzerinnen-Calls (2×/Monat, Expertinnen + Patricia) | laufende Begleitung | ✓ |
 | Community (Circle) | laufend | ✓ |
 | Bonus 1 — Instagram-Companion | Patricia-eigen | ✓ |
-| Bonus 2 — Notion-Business-Brain-Vorlage | Patricia-eigen | ✓ |
-| Bonus 3 — Schnell-Entschlossenen-Bonus | nur Live/Heute | ✓ |
-| **Pioneer-Preis (erste Runde)** | | **CHF 990** |
+| Bonus 2 — PIA (KI-Mentorin, Stufe 0 ready) | Patricia-eigen | ✓ |
+| Bonus 3 — Notion-Business-Brain-Vorlage | Patricia-eigen | ✓ |
+| **Pioneer-Preis (erste Runde, bis Sa 27.6.)** | | **CHF 990** |
+| **Zahlung** | | bis zu 6 Raten (ca. 6× 165) |
 | **Späterer Listenpreis** | | **CHF 1347** |
 
-→ Offene Entscheidung für dich: **Was genau ist Bonus 3** (Schnell-Bonus)? Vorschläge: eine 1:1-Audio-Woche mit dir · ein zusätzlicher Live-Onboarding-Call nur für Pioneers · ein 4. Mini-Companion. Sag mir, was sich für dich gut anfühlt und realistisch ist.
+→ Kein separater Fast-Action-Bonus — **der Pioneer-Preis (990 statt 1347) IST der Anreiz** (Patricia-Entscheidung). Boni sind echte enthaltene Werte, kein „nur heute"-Druck. Quelle Boni: [[launch-kalender-juli-2026]] (PIA Stufe 0 als ready Launch-Bonus).
 
 ---
 
