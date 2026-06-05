@@ -1,0 +1,56 @@
+{
+  "_schema": "Aktiver Business-Säulen-Status — wird von allen Content-Skills gelesen, BEVOR Marktrecherche/Hook-Generierung läuft. Säule = welcher Kurs/welches Produkt steht grad im Fokus. Pflicht-Lese gemäss Memory feedback_KRITISCH-bot-monatsplan-sync.md.",
+  "_last_updated": "2026-06-04",
+  "_updated_by": "Patricia via Claude Chat",
+  "current_period": {
+    "month": "2026-06",
+    "weeks": "KW23-KW26",
+    "phase_name": "MBA-Awareness + Mama-CEO-Pilot live",
+    "active_pillars": [
+      "mama-ceo",
+      "instagram-kundenmaschine",
+      "digitale-produktwelt"
+    ],
+    "primary_focus": "mba-bundle-awareness",
+    "why_all_active": "Mama-CEO-Pilot läuft seit 1.6.2026 mit 5 Käuferinnen. Parallel wird Awareness fürs komplette MBA-Bundle aufgebaut (= alle 3 Kurse + Umsetzerinnen-Calls). Q3-Launch geplant.",
+    "active_funnels": "siehe context/active-funnels.json"
+  },
+  "pillars": {
+    "mama-ceo": {
+      "label": "Mama-CEO",
+      "description": "KI-Tools entwickeln, Zeitmanagement, Organisation im Mama-Alltag um Zeit fürs Business zu schaffen",
+      "key_themes": ["KI-Mitarbeiter", "Briefing-Bot", "Wochenstruktur", "Hüte-Methode", "Loslassen lernen", "System statt Disziplin"],
+      "compliance_notes": "Mentoring-Profil — keine erfundenen Erfolgsversprechen, keine 6-stellig-in-6-Monaten-Hooks",
+      "ideal_keywords": ["WARTELISTE", "SYSTEM", "KI", "CEO"]
+    },
+    "instagram-kundenmaschine": {
+      "label": "Instagram Kundenmaschine",
+      "description": "Eigene Kundinnen über Insta finden — neben dem Network-Business. Akquise-System.",
+      "key_themes": ["Insta-Strategie", "Content-Plan", "Hook-Patterns", "Bio-Optimierung", "DM-Templates", "Lead-Magnet", "Caption-Formeln"],
+      "compliance_notes": "Mentoring-Profil — Authentic Selling, kein Hype, Schweizer ss",
+      "ideal_keywords": ["BIO", "KUNDEN", "POSTS", "INSTA"]
+    },
+    "digitale-produktwelt": {
+      "label": "Digitale Produktwelt",
+      "description": "Eigenes Wissen als digitales Produkt verpacken — Mini-Produkt bis Großkurs. Skalierbares Einkommen.",
+      "key_themes": ["Produkt-Idee", "Mini-Produkt-Test", "Pre-Sale", "Launch-Strategie", "Pricing", "Salespage", "Funnel"],
+      "compliance_notes": "Mentoring-Profil — Julia-Trost-Methodik intern, keine Namensnennung in Customer-Outputs",
+      "ideal_keywords": ["PRODUKT", "PRESALE", "LAUNCH", "PROD"]
+    }
+  },
+  "doterra_pillars": {
+    "active": "siehe context/doterra/ — separate Verwaltung",
+    "note": "doTERRA-Säulen werden separat im doterra-Monatsplan gepflegt — andere Compliance, andere Zielgruppe, anderes Profil"
+  },
+  "rules_for_skills": {
+    "before_any_content_output": [
+      "1. active-pillars.json lesen → welche Säule(n) aktiv?",
+      "2. outputs/monatsplaene/[YYYY-MM]-mentoring-monatsplan.md lesen → KW-Phase + Wochenpillar",
+      "3. context/active-funnels.json lesen → welche Funnel laufen?",
+      "4. Markt-Recherche AUSSCHLIESSLICH auf aktive Säule(n) fokussieren — keine generischen Mama-Coach-Themen"
+    ],
+    "if_multiple_pillars_active": "Content darf alle Säulen abdecken aber mit klarem MBA-Bundle-Roter-Faden",
+    "if_single_pillar_active": "Content MUSS auf diese eine Säule fokussiert sein — keine Cross-Pillar-Ausflüge",
+    "if_no_active_pillar": "Stoppen + Patricia fragen welche Säule grad Fokus ist"
+  }
+}
