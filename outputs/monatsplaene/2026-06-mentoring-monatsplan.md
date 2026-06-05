@@ -231,25 +231,43 @@ Kommentier BOT wenn du wissen willst, wie meiner gebaut ist.
 
 ---
 
-### Fr 12.6. 18:30 — Reel SPRECH (Emotion) · Pillar: Compliance-Konflikt
-**Cover-Hook:** „Du darfst's nicht so sagen — Compliance. Ich sag dir was du DARFST."
+### Fr 12.6. 18:30 — Reel SPRECH (Lead) · Pillar: Mama-CEO Hüte-Methode → Webinar 24.6.
+**Format:** Talk-to-Head 71 Sek (aufgenommen 5.6., siehe `outputs/reels/2026-06-05-huete-methode-webinar/`)
+**Cover-Hook:** „Network stagniert? Schau auf deine Hüte." + Webinar-Badge „24. Juni"
+
 **Caption:**
-Eine der häufigsten Anfragen die ich von Network-Mamas kriege: „Patricia, ich darf das gar nicht so sagen — Compliance-Richtlinien meiner Firma."
+Wenn dein Network-Business stagniert — liegt es selten an dir. Es liegt fast immer an deinen Hüten.
 
-Und das stimmt. Jede Network-Firma hat ihre Verbote. Keine Heilversprechen, keine Einkommens-Versprechen, keine medizinischen Aussagen.
+Wir Mamas tragen eine ganze Sammlung davon:
+Mama-Hut. Ehefrau-Hut. Köchin-Hut. Buchhalterin-Hut. Mama-Taxi-Hut. Hausärztin-Hut. Network-Beraterin-Hut.
 
-Was viele aber übersehen: das Compliance-Verbot ist gleichzeitig die GRÖSSTE Chance zu authentischem Marketing.
+Jeder einzelne braucht aktive Zeit. Und genau die fehlt dann im Business.
 
-Wenn du nicht „heilt" sagen darfst, MUSST du erzählen wie's bei dir war.
-Wenn du nicht „verdienst 5000€" sagen darfst, MUSST du Selbstbestimmung verkaufen.
-Wenn du nicht „medizinisch" sagen darfst, MUSST du Mama-Alltag zeigen.
+Wenn du Mama-CEO sein willst, kommst du nicht drum herum, dir DEINE Hüte mal anzuschauen. Und ehrlich zu fragen:
 
-Compliance zwingt dich zur „bei mir war"-Story. Und genau die zieht — weil sie ehrlich klingt.
+→ Welcher Hut MUSS bei mir bleiben?
+→ Welcher kann an Familie übergehen?
+→ Welcher gehört eigentlich an KI?
+→ Welcher darf einfach weg?
 
-Kommentier COMPLIANCE wenn du meine Frame-Liste willst.
+Nur so schaffst du dir die Zeit, dass dein Business sich auch wirklich weiterentwickeln kann.
 
-**CTA:** Kommentier COMPLIANCE
-**Hashtags:** #mamabusiness #networkmarketingmama #compliance #authenticselling
+Genau diese Hüte-Inventur — plus alles was danach kommt: Wochenstruktur, KI-Mitarbeiter, Zeit fixieren — zeige ich dir live im nächsten Webinar.
+
+📅 Mittwoch, 24. Juni 2026
+
+Du gehst raus mit:
+✔ einer ehrlichen Hüte-Liste (deiner eigenen)
+✔ einer Wochenstruktur die zu deinem Mama-Alltag passt
+✔ konkreten KI-Workflows die du sofort einsetzen kannst
+✔ einem Plan wie du Mama-CEO in dein Network einbaust
+
+Kommentier WEBINAR und ich schick dir den Anmelde-Link direkt in deine DMs.
+
+**CTA:** Kommentier WEBINAR
+**Hashtags:** #mamabusiness #networkmarketingmama #mamaceo #funktionierenwargestern
+
+**Hinweis:** Compliance-Reel-Konzept verschoben — kann später im Monatsplan eingebaut werden, wenn ein freier Slot bleibt.
 
 ---
 
