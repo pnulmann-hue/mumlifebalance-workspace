@@ -1,7 +1,31 @@
 # Mail-Integration für Briefing-System (LIVE)
 
 > **Erstellt:** 2026-04-21 · Live seit 2026-05-05
-> **Status:** Phase 1 + 2 umgesetzt (täglich automatisch). Phase 3 (PDF-Briefing) offen.
+> **Status:** Phase 1 + 2 umgesetzt. Phase 3 teilweise umgesetzt (2026-06-05: Ordner-Umbau + Bot-Einspeisung). PDF-Briefing + Chat-Commands weiter offen.
+
+## 🆕 Update 2026-06-05 — Ordner-Umbau + Bot-Einspeisung
+
+Patricia-Wunsch: „Mails sortieren, Irrelevantes in einen Zu-löschen-Ordner, Garten in den Gartenbot, Koch in den Kochbot, Buchhaltung in einen Buchhaltungs-Ordner."
+
+**Umgesetzt & getestet (Type-Check grün, Live-Dry-Run auf echtem Backlog):**
+- **Neuer Ordner `INBOX/Zu löschen`** — GitHub-/CI-/Workflow-Mails, System-Benachrichtigungen (Notion-Login, Family-Link) UND Werbung wandern dorthin (gelesen, nie PUSH). Nichts wird gelöscht — Patricia schaut drüber.
+- **`INBOX/Rechnungen` → `INBOX/Buchhaltung`** umbenannt (Klassifikator routet Belege/Quittungen/Rechnungen dorthin). Alt-Ordner `Rechnungen` bleibt als Legacy bestehen.
+- **Bot-Einspeisung (`feedTo` im Klassifikator):**
+  - `garten` → Notion-Wissensarchiv (`3497078e-8b7e-81e4-b974-e1f6a91d2064`), Property-Schema 1:1 vom garten-telegram-bot. Inert ohne `NOTION_TOKEN`.
+  - `kochbot` → Rezept wird IMMER nach `outputs/kochbot-eingang/*.md` gestaged (credential-frei) + live in Kochbot-RAG embeddet, falls `KOCHBOT_SUPABASE_URL`/`KOCHBOT_SUPABASE_KEY` gesetzt.
+  - Nur bei ECHTER Substanz (vollständiges Rezept / konkreter Garten-Tipp), nicht bei reiner Werbung.
+  - Mail mit echtem Inhalt landet in `Backen`/`Garteninfos` (nicht Zu löschen).
+- **Robustheit:** JSON-Parse mit Retry (1×) — fix gegen sporadisch invalides LLM-JSON, das Mails fälschlich auf „ignored" fallen liess.
+
+**Neue/geänderte Dateien:**
+- `src/mail-classifier.ts` — neue Ordner/Kategorien, `feedTo`/`feedContent`/`feedTitle`, Retry.
+- `src/mail-feeders.ts` (NEU) — `feedGarten` (Notion) + `feedKochbot` (Staging + Supabase).
+- `src/mail-poller.ts` — neue Ordner in `ensureFoldersExist`, Feed-Aufrufe + Stats.
+
+**Zum dauerhaften Scharfschalten nötig (ENV in `.env` + Railway):**
+- `NOTION_TOKEN` (+ optional `NOTION_WISSENSARCHIV_DS`) für Garten-Einspeisung.
+- `KOCHBOT_SUPABASE_URL` + `KOCHBOT_SUPABASE_KEY` (Kochbot-Projekt ≠ doTERRA-Projekt!) für Koch-Live-Ingest.
+- Railway-Redeploy des telegram-userbot (Code-Push), damit der tägliche 07:00-Cron die neue Logik nutzt.
 
 ## Ziel
 

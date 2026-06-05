@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kostenloses Live-Webinar für Network-Mamas | Mum Life Balance</title>
+  <!--
+  ============================================================
+  WEBINAR-ANMELDE-LP · MBA-Launch · Webinar Mi 24.6.2026 09:00
+  ============================================================
+  DEPLOY (WordPress, wie KI-Webinar-LP 3675):
+    - Als EINEN Gutenberg Custom-HTML-Block einfügen (<!-- wp:html -->).
+      Das <style> + die Section-Struktur unten reichen — <head>/<body> beim
+      Einfügen in WP weglassen, nur ab <style> ... bis letztes </section>.
+    - WP-User für API: patricia
+  AC-FORMULAR (PFLICHT vor Live):
+    - Neues AC-Formular fürs MBA-Webinar erstellen, Tag: mba-webinar-anmeldung
+    - Form-ID unten bei [AC-FORM-ID] eintragen (KI-Webinar war Form 55).
+  META-PIXEL: 786558836285851 (feuert auf der Live-Site erst nach Cookie-Consent
+    via Real Cookie Banner — Snippet unten ist nur Fallback/Doku).
+  🚨 VOR Ad-Schaltung: curl -I auf die finale URL (Link-Test, 44-CHF-Mai-Lektion).
+  COMPLIANCE: KEIN Einkommens-Claim auf dieser Seite (Meta prüft die Zielseite).
+    Die "2x vierstellig"-Story erzählt Patricia LIVE im Webinar, nicht hier.
+  ============================================================
+  -->
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --petrol: #12828c;
+      --dunkelblau: #29556d;
+      --creme: #f1ecdd;
+      --creme-dark: #e8e0c8;
+      --orange: #dc822e;
+      --orange-dark: #b56a24;
+      --gelb: #f5e555;
+      --text-dark: #0c1c30;
+      --text-soft: #4a5868;
+      --weiss: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      color: var(--text-dark);
+      background: var(--creme);
+      line-height: 1.6;
+      font-size: 18px;
+    }
+    .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+    h1, h2, h3, h4 { font-family: 'Philosopher', serif; font-weight: 700; color: var(--dunkelblau); line-height: 1.15; }
+    section { padding: 72px 0; }
+    section.tight { padding: 48px 0; }
+
+    /* === HERO === */
+    .hero { background: var(--dunkelblau); color: var(--creme); padding: 96px 0 72px; text-align: center; }
+    .hero .eyebrow { font-weight: 700; font-size: 15px; letter-spacing: 5px; text-transform: uppercase; color: var(--orange); margin-bottom: 22px; }
+    .hero h1 { color: var(--creme); font-size: 56px; margin-bottom: 26px; letter-spacing: -1px; }
+    .hero h1 .accent { color: var(--gelb); font-style: italic; }
+    .hero .sub { font-family: 'Philosopher', serif; font-style: italic; font-size: 26px; max-width: 720px; margin: 0 auto 36px; color: var(--creme); opacity: 0.96; }
+    .hero .meta { font-size: 15px; letter-spacing: 3px; text-transform: uppercase; opacity: 0.75; margin-top: 10px; }
+    .divider { width: 90px; height: 4px; background: var(--orange); border-radius: 2px; margin: 30px auto; }
+
+    /* === Buttons === */
+    .btn-primary {
+      display: inline-block; background: var(--orange); color: var(--weiss);
+      font-family: 'Source Sans 3', sans-serif; font-weight: 700; font-size: 20px;
+      padding: 18px 42px; border-radius: 40px; text-decoration: none;
+      box-shadow: 0 8px 22px rgba(220,130,46,0.35); transition: transform .15s, background .15s;
+    }
+    .btn-primary:hover { background: var(--orange-dark); transform: translateY(-2px); }
+
+    /* === Painpoint === */
+    .pain { background: var(--creme); }
+    .pain h2 { font-size: 38px; text-align: center; margin-bottom: 18px; }
+    .pain .intro { text-align: center; max-width: 700px; margin: 0 auto 36px; font-size: 20px; color: var(--text-soft); }
+    .pain-list { max-width: 680px; margin: 0 auto; list-style: none; }
+    .pain-list li { padding: 18px 0 18px 44px; border-bottom: 1px solid var(--creme-dark); position: relative; font-size: 19px; }
+    .pain-list li:before { content: "→"; position: absolute; left: 0; color: var(--orange); font-weight: 700; font-size: 24px; }
+    .pain-list li:last-child { border-bottom: none; }
+    .pain .reframe { text-align: center; max-width: 720px; margin: 34px auto 0; font-size: 21px; font-family: 'Philosopher', serif; font-style: italic; color: var(--petrol); }
+
+    /* === Lernen === */
+    .learn { background: var(--weiss); }
+    .learn h2 { font-size: 38px; text-align: center; margin-bottom: 12px; }
+    .learn .intro { text-align:center; max-width:680px; margin:0 auto 44px; color: var(--text-soft); font-size:19px; }
+    .learn-grid { display: grid; grid-template-columns: 1fr; gap: 20px; max-width: 720px; margin: 0 auto; }
+    .learn-card { background: var(--creme); border-left: 5px solid var(--orange); border-radius: 10px; padding: 26px 28px; }
+    .learn-card .num { font-family: 'Philosopher', serif; font-size: 22px; color: var(--orange); font-weight: 700; }
+    .learn-card p { margin-top: 6px; font-size: 19px; }
+
+    /* === Über Patricia === */
+    .about { background: var(--petrol); color: var(--creme); }
+    .about h2 { color: var(--creme); font-size: 34px; text-align:center; margin-bottom: 22px; }
+    .about p { max-width: 720px; margin: 0 auto; text-align: center; font-size: 20px; }
+
+    /* === Termin-Box === */
+    .termin { background: var(--creme); text-align: center; }
+    .termin .box { max-width: 640px; margin: 0 auto; background: var(--weiss); border: 2px dashed var(--petrol); border-radius: 16px; padding: 40px 32px; }
+    .termin .date { font-family: 'Philosopher', serif; font-size: 34px; color: var(--dunkelblau); }
+    .termin .time { font-size: 22px; color: var(--orange); font-weight: 700; margin: 8px 0 16px; }
+    .termin .note { color: var(--text-soft); font-size: 17px; }
+
+    /* === Anmelden / Form === */
+    .anmelden { background: var(--dunkelblau); color: var(--creme); text-align: center; }
+    .anmelden h2 { color: var(--creme); font-size: 40px; margin-bottom: 14px; }
+    .anmelden .sub { max-width: 640px; margin: 0 auto 32px; opacity: 0.95; font-size: 19px; }
+    .form-wrap { max-width: 620px; margin: 0 auto; background: var(--weiss); border-radius: 16px; padding: 14px; }
+    .form-wrap iframe { width: 100%; min-height: 560px; border: 0; background: transparent; }
+
+    /* === FAQ === */
+    .faq { background: var(--creme); }
+    .faq h2 { font-size: 34px; text-align: center; margin-bottom: 36px; }
+    .faq-item { max-width: 700px; margin: 0 auto 22px; background: var(--weiss); border-radius: 10px; padding: 22px 26px; }
+    .faq-item h4 { font-size: 20px; margin-bottom: 8px; color: var(--petrol); }
+    .faq-item p { color: var(--text-soft); }
+
+    /* === Final CTA === */
+    .final { background: var(--orange); color: var(--weiss); text-align: center; }
+    .final h2 { color: var(--weiss); font-size: 38px; margin-bottom: 24px; }
+    .final .btn-primary { background: var(--weiss); color: var(--dunkelblau); box-shadow: 0 8px 22px rgba(0,0,0,0.18); }
+    .final .btn-primary:hover { background: var(--creme); }
+
+    footer { background: var(--dunkelblau); color: var(--creme); text-align: center; padding: 30px 0; font-size: 14px; opacity: 0.85; }
+    footer a { color: var(--gelb); }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 38px; }
+      .hero .sub { font-size: 21px; }
+      .pain h2, .learn h2, .anmelden h2, .final h2 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow">Kostenloses Live-Webinar · Mi 24. Juni · 9:00 Uhr</div>
+      <h1>Schon eine Weile im Network —<br>und trotzdem fragt <span class="accent">kaum jemand</span> an?</h1>
+      <p class="sub">Im kostenlosen Live-Webinar zeig ich dir als 4-fach-Mama, wie du dir ein eigenes, planbares Standbein aufbaust — ohne ständig neue Leute zu brauchen.</p>
+      <a href="#anmelden" class="btn-primary">Kostenlosen Platz sichern</a>
+      <div class="meta">Live · kostenlos · mit Aufzeichnung</div>
+    </div>
+  </header>
+
+  <!-- PAINPOINT -->
+  <section class="pain">
+    <div class="container">
+      <h2>Viele Followerinnen — und das Postfach bleibt trotzdem leer.</h2>
+      <p class="intro">Wenn du das hier liest, steckst du wahrscheinlich genau an diesem Punkt fest:</p>
+      <ul class="pain-list">
+        <li>Du bist seit Monaten dran und postest regelmässig, aber echte Anfragen bleiben aus.</li>
+        <li>Dein Einkommen hängt davon ab, wie viele Leute mitmachen und ob die auch wirklich dranbleiben.</li>
+        <li>Du redest über dein Produkt — so wie hundert andere auch, und gehst darin unter.</li>
+        <li>Und nebenbei läuft der ganze Familienalltag weiter, der ja auch noch da ist.</li>
+      </ul>
+      <p class="reframe">Das liegt nicht an dir — dir fehlt nur ein eigenes System. Genau das zeig ich dir im Webinar.</p>
+    </div>
+  </section>
+
+  <!-- WAS DU MITNIMMST -->
+  <section class="learn">
+    <div class="container">
+      <h2>Was du im Webinar mitnimmst</h2>
+      <p class="intro">Keine trockene Theorie — du siehst live, was möglich ist, und nimmst einen klaren Blick auf deinen eigenen Weg mit.</p>
+      <div class="learn-grid">
+        <div class="learn-card">
+          <span class="num">01</span>
+          <p>Wie du mit einem eigenen Thema sichtbar wirst, sodass Frauen wegen <strong>dir</strong> anfragen — und nicht wegen irgendeines Produkts.</p>
+        </div>
+        <div class="learn-card">
+          <span class="num">02</span>
+          <p>Wie du dir ein zweites, eigenes Standbein aufbaust, das dir gehört und nicht davon abhängt, ob dein Team gerade mitzieht.</p>
+        </div>
+        <div class="learn-card">
+          <span class="num">03</span>
+          <p>Wie du mit KI die Zeit zurückholst, damit das alles neben Kindern und Haushalt überhaupt läuft — ich zeig dir mein eigenes Setup.</p>
+        </div>
+        <div class="learn-card">
+          <span class="num">★</span>
+          <p>Und warum genau diese drei Dinge zusammengehören — und du nur mit allen dreien wirklich frei wirst.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÜBER PATRICIA -->
+  <section class="about">
+    <div class="container">
+      <h2>Wer dich da durchführt</h2>
+      <p>Ich bin Patricia — vierfache Mama aus dem Appenzellerland. Ich baue mein Business in rund 18 Stunden pro Woche auf, neben vier Kindern, einem Garten und einem ganz normalen Familienalltag. Ich bin nicht die Mentorin am Strand mit der Hochglanz-Postkarte, sondern die mit Wäscheberg und Mittagstisch. Ich zeig dir den ehrlichen Weg — mit Ecken und Kanten und einem System, das auch dann läuft, wenn der Tag mal wieder Kopf steht.</p>
+    </div>
+  </section>
+
+  <!-- TERMIN -->
+  <section class="termin tight">
+    <div class="container">
+      <div class="box">
+        <div class="date">Mittwoch, 24. Juni 2026</div>
+        <div class="time">9:00 Uhr · live &amp; kostenlos</div>
+        <p class="note">Du kannst nicht live dabei sein? Trag dich trotzdem ein — du bekommst die Aufzeichnung per Mail. Live lohnt sich aber, denn da kannst du mir direkt deine Fragen stellen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANMELDEN / FORM -->
+  <section class="anmelden" id="anmelden">
+    <div class="container">
+      <h2>Sichere dir deinen kostenlosen Platz</h2>
+      <p class="sub">Trag dich hier ein — du bekommst sofort die Bestätigung mit allen Infos und dem Zugangslink.</p>
+      <div class="form-wrap">
+        <!-- AC-FORMULAR: Form-ID nach Erstellung einsetzen. Tag: mba-webinar-anmeldung -->
+        <iframe src="https://mumlifebalance.activehosted.com/f/[AC-FORM-ID]"
+                title="Webinar-Anmeldung"
+                loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <h2>Kurz &amp; ehrlich</h2>
+      <div class="faq-item">
+        <h4>Kostet das Webinar etwas?</h4>
+        <p>Nein, es ist komplett kostenlos. Du brauchst nur eine Stunde Zeit und am besten einen Notizblock.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Was, wenn ich nicht live dabei sein kann?</h4>
+        <p>Trag dich trotzdem ein — du bekommst die Aufzeichnung per Mail. Aber live ist live: da beantworte ich deine Fragen direkt.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Für wen ist das?</h4>
+        <p>Für Mamas, die schon eine Weile im Network sind und endlich ein eigenes, planbares Standbein wollen — ohne sich zwischen Business und Familie aufzureiben.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final tight">
+    <div class="container">
+      <h2>Funktionieren war gestern.</h2>
+      <a href="#anmelden" class="btn-primary">Jetzt kostenlosen Platz sichern</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      Mum Life Balance · Patricia Ulmann &nbsp;·&nbsp; <a href="/impressum">Impressum</a> &nbsp;·&nbsp; <a href="/datenschutz">Datenschutz</a>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       META-PIXEL (Fallback-Doku — auf der Live-Site läuft das via
+       Real Cookie Banner und feuert erst NACH Cookie-Consent).
+       Pixel-ID: 786558836285851
+       ============================================================
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','786558836285851');fbq('track','PageView');
+  </script>
+  -->
+
+</body>
+</html>
