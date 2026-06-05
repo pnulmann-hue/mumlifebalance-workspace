@@ -597,14 +597,15 @@ WAS DU NACH LEKTION 3.6 HAST · SÄULE 3 KOMPLETT
 ### Videos (6 Lektionen, ~83 Min total)
 | # | Datei | Status |
 |---|---|---|
-| 3.1 | `saeule-03-lektion-3-1.mp4` | **PPTX neu bauen** (8 Folien) |
+| 3.1 | `saeule-03-lektion-3-1.mp4` | ✅ PPTX gebaut (8 Folien) — `03-praesentationen/saeule-3/01-lektion-3-1.pptx` |
 | 3.2 | `saeule-03-lektion-3-2.mp4` | PPTX existiert (modul-02-lektion-2-1.pptx) — **anpassen** (Mama-Alltag-Frame statt KI-Frame) + umnummerieren |
-| 3.3 | `saeule-03-lektion-3-3.mp4` | **PPTX neu bauen** (12 Folien · Material: Patricias echte Notion-Jahresplanung + Monats-Trio/Transformation-Methodik) |
-| 3.4 | `saeule-03-lektion-3-4.mp4` | **PPTX neu bauen** (13 Folien · Material: 6-Bereiche + Power-Slots + CEO-Tag-Fokus) |
+| 3.3 | `saeule-03-lektion-3-3.mp4` | ✅ PPTX gebaut (12 Folien) — `.../saeule-3/03-lektion-3-3.pptx` |
+| 3.4 | `saeule-03-lektion-3-4.mp4` | ✅ PPTX gebaut (13 Folien) — `.../saeule-3/04-lektion-3-4.pptx` |
 | 3.5 MASTERY | `saeule-03-lektion-3-5.mp4` | PPTX existiert (modul-02-lektion-2-5.pptx) — **leichte Anpassung** + umnummerieren |
-| 3.6 | `saeule-03-lektion-3-6.mp4` | **PPTX neu bauen** (10 Folien) |
+| 3.6 | `saeule-03-lektion-3-6.mp4` | ✅ PPTX gebaut (10 Folien) — `.../saeule-3/06-lektion-3-6.pptx` |
 
-→ **Neu zu bauen: 4 PPTX** (3.1, 3.3, 3.4, 3.6) · **Anzupassen: 2 PPTX** (3.2, 3.5)
+→ **✅ 4 neue PPTX gebaut (2026-06-04):** 3.1, 3.3, 3.4, 3.6 (python-pptx, Brand-Look Petrol/Creme, Sprechnotizen pro Folie). **Noch anzupassen: 2 PPTX** (3.2, 3.5 — bestehende umnummerieren/anpassen).
+> ⚠️ Visuelles Rendern lokal nicht möglich (kein LibreOffice auf der Maschine) — Inhalts-QA per python-pptx bestanden (Folienzahl + Titel + Notizen). Patricia: beim ersten Öffnen kurz durchklicken, ob Textmengen auf die Folien passen.
 
 ### Arbeitsblatt (1 .docx-Datei)
 `mama-ceo-arbeitsblatt-saeule-3.docx` — 6 Lektions-Sektionen wie oben spezifiziert: Brain-Dump-Sortierung in 6 Bereiche · 4-Stufen-Skizze · Jahres-Übersicht-Matrix · Monatsplan + Beispiel-Woche-Grid mit Power-Slots · Notion-Einricht-Checkliste · 50%-Notfall-Plan.
