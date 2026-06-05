@@ -7,6 +7,7 @@ import { ImapFlow, FetchMessageObject } from "imapflow";
 import { simpleParser } from "mailparser";
 import { classifyMail, MailContext, MailFolder } from "./mail-classifier";
 import { sendMailDM, sendMailPlainDM } from "./mailassistant";
+import { feedGarten, feedKochbot, FeedInput } from "./mail-feeders";
 
 interface MailboxConfig {
   name: "GMX" | "Hoststar" | "Gmail";
@@ -47,7 +48,15 @@ function getMailboxConfigs(): MailboxConfig[] {
 }
 
 async function ensureFoldersExist(client: ImapFlow, mailbox: "GMX" | "Hoststar" | "Gmail"): Promise<void> {
-  const required = ["INBOX/Wichtig", "INBOX/Learnings", "INBOX/Rechnungen", "INBOX/Werbung"];
+  const required = [
+    "INBOX/Wichtig",
+    "INBOX/Learnings",
+    "INBOX/Buchhaltung",
+    "INBOX/Zu löschen",
+    "INBOX/Werbung",
+    "INBOX/Garteninfos",
+    "INBOX/Backen",
+  ];
   const existing = await client.list();
   const existingPaths = new Set(existing.map((f) => f.path));
   for (const path of required) {
@@ -89,11 +98,13 @@ export interface SweepStats {
   moved: number;
   pushed: number;
   errors: number;
+  fedGarten: number;
+  fedKochbot: number;
   byCategory: Record<string, number>;
 }
 
 async function processMailbox(cfg: MailboxConfig, userId: number): Promise<SweepStats> {
-  const stats: SweepStats = { total: 0, classified: 0, moved: 0, pushed: 0, errors: 0, byCategory: {} };
+  const stats: SweepStats = { total: 0, classified: 0, moved: 0, pushed: 0, errors: 0, fedGarten: 0, fedKochbot: 0, byCategory: {} };
 
   const client = new ImapFlow({
     host: cfg.host,
@@ -147,6 +158,27 @@ async function processMailbox(cfg: MailboxConfig, userId: number): Promise<Sweep
         if (folderName) {
           try { await client.messageMove(String(msg.uid), folderName, { uid: true }); stats.moved++; } catch {}
         }
+
+        // Bot-Einspeisung (Garten → Notion, Rezept → Kochbot). Nie sweep-fatal.
+        if (cls.feedTo && cls.feedContent) {
+          const feedInput: FeedInput = {
+            title: cls.feedTitle || ctx.subject || "(ohne Titel)",
+            content: cls.feedContent,
+            source: `${cfg.name}: ${ctx.fromName || ctx.fromAddress || "?"}`,
+            date: ctx.date,
+          };
+          try {
+            const res = cls.feedTo === "garten" ? await feedGarten(feedInput) : await feedKochbot(feedInput);
+            if (res.ok) {
+              if (cls.feedTo === "garten") stats.fedGarten++; else stats.fedKochbot++;
+            }
+            const icon = res.ok ? "🌱" : res.skipped ? "⏭️" : "⚠️";
+            console.log(`   ${icon} [${cfg.name}] ${res.detail}`);
+          } catch (err) {
+            console.warn(`   ⚠️ Feed-Fehler: ${err instanceof Error ? err.message : err}`);
+          }
+        }
+
         if (cls.notify && userId) {
           await sendMailDM(userId, {
             fromAddress: ctx.fromAddress,
@@ -189,16 +221,25 @@ export async function runMailSweep(userId: number): Promise<void> {
     classified: allStats.reduce((s, x) => s + x.stats.classified, 0),
     moved: allStats.reduce((s, x) => s + x.stats.moved, 0),
     pushed: allStats.reduce((s, x) => s + x.stats.pushed, 0),
+    fedGarten: allStats.reduce((s, x) => s + x.stats.fedGarten, 0),
+    fedKochbot: allStats.reduce((s, x) => s + x.stats.fedKochbot, 0),
   };
 
-  console.log(`✅ Mail-Sweep fertig: ${totals.classified} klassifiziert, ${totals.moved} verschoben, ${totals.pushed} PUSH`);
+  console.log(
+    `✅ Mail-Sweep fertig: ${totals.classified} klassifiziert, ${totals.moved} verschoben, ${totals.pushed} PUSH, ` +
+      `🌱 ${totals.fedGarten} Garten, 🍳 ${totals.fedKochbot} Rezepte eingespeist`
+  );
 
   if (userId && totals.classified > 0) {
     const summary = allStats
       .filter(({ stats }) => stats.classified > 0)
       .map(({ name, stats }) => {
         const cats = Object.entries(stats.byCategory).map(([k, v]) => `  ${k}: ${v}`).join("\n");
-        return `*${name}:* ${stats.classified} verarbeitet, ${stats.moved} verschoben, ${stats.pushed} PUSH\n${cats}`;
+        const feeds =
+          stats.fedGarten || stats.fedKochbot
+            ? `\n  🌱 Garten: ${stats.fedGarten}, 🍳 Rezepte: ${stats.fedKochbot}`
+            : "";
+        return `*${name}:* ${stats.classified} verarbeitet, ${stats.moved} verschoben, ${stats.pushed} PUSH\n${cats}${feeds}`;
       })
       .join("\n\n");
     await sendMailPlainDM(
