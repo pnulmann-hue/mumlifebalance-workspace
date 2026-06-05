@@ -1,0 +1,33 @@
+{
+  "kw": 24,
+  "zeitraum": "2026-06-08/2026-06-14",
+  "erstellt": "2026-06-05",
+  "quelle_wochenfokus": "MBA-Launch-Plan (Notion-Wochenplanung hat keinen KW24-Eintrag, jüngster KW22)",
+  "launch_modus": true,
+  "launch_phase": "Aufwaermphase (Reichweite + Webinar-Anmeldung)",
+  "webinar_datum": "2026-06-24",
+  "hauptthema": "MBA/Mama-CEO Aufwaermphase — Reichweite aufbauen + Webinar-Anmeldungen",
+  "roter_faden": "Du musst dein Network nicht verraten, um dir ein eigenes Standbein aufzubauen.",
+  "mentoring": {
+    "saeule": "Mama-CEO / Network-Hybrid",
+    "format_mix": "1 Karussell + 4 Reels (Content-Radar Hybrid-Reset)",
+    "keywords": ["WEBINAR", "SYSTEM", "FAHRPLAN"],
+    "kein_programm_name_preis": true
+  },
+  "doterra": {
+    "saeule": "Funktionsmodus -> zurueck zu sich (Vormenopause-Wendepunkt)",
+    "format_mix": "Reels-only (kein Karussell, <300-500 Follower)",
+    "keywords": ["ENERGIE"],
+    "launch": false
+  },
+  "auto_pick": {
+    "mentoring": ["M5(K)", "M9(R-lead)", "M4(R-KI)", "M7(R-reichweite)", "M1(R-reichweite)"],
+    "doterra": ["D9(R-lead)", "D6(R)", "D1(R)", "D4(R)"]
+  },
+  "schedule_logik": "Patricia pickt bis Mo 11:59. Mo 12:00 /montag baut + scheduled. KEIN Fr-Auto-Build.",
+  "dateien": {
+    "hooks": "outputs/freitag/2026-06-05-hooks.md",
+    "markt_analyse": "outputs/freitag/markt-analyse-KW24.md",
+    "auto_pick": "outputs/montag/2026-06-05-pick-auto.md"
+  }
+}
