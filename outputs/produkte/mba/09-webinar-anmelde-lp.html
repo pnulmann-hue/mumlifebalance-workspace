@@ -13,9 +13,11 @@
       Das <style> + die Section-Struktur unten reichen — <head>/<body> beim
       Einfügen in WP weglassen, nur ab <style> ... bis letztes </section>.
     - WP-User für API: patricia
-  AC-FORMULAR (PFLICHT vor Live):
-    - Neues AC-Formular fürs MBA-Webinar erstellen, Tag: mba-webinar-anmeldung
-    - Form-ID unten bei [AC-FORM-ID] eintragen (KI-Webinar war Form 55).
+  AC-FORMULAR: ✅ erstellt am 5.6. — Form 59 "MBA-Webinar Anmeldung 24.6."
+    · Inline-Form · Aktion: Tag "mba-webinar-anmeldung" (Tag-ID 78) wird gesetzt.
+    · Hosted-URL (iframe): https://mumlifebalance.activehosted.com/f/59
+    · JS-Alternative: <div class="_form_59"></div><script src="https://mumlifebalance.activehosted.com/f/embed.php?id=59"></script>
+  NOCH OFFEN: AC-Automation auf Tag "mba-webinar-anmeldung" (Bestätigung + Reminder).
   META-PIXEL: 786558836285851 (feuert auf der Live-Site erst nach Cookie-Consent
     via Real Cookie Banner — Snippet unten ist nur Fallback/Doku).
   🚨 VOR Ad-Schaltung: curl -I auf die finale URL (Link-Test, 44-CHF-Mai-Lektion).
@@ -209,8 +211,8 @@
       <h2>Sichere dir deinen kostenlosen Platz</h2>
       <p class="sub">Trag dich hier ein — du bekommst sofort die Bestätigung mit allen Infos und dem Zugangslink.</p>
       <div class="form-wrap">
-        <!-- AC-FORMULAR: Form-ID nach Erstellung einsetzen. Tag: mba-webinar-anmeldung -->
-        <iframe src="https://mumlifebalance.activehosted.com/f/[AC-FORM-ID]"
+        <!-- AC-FORMULAR 59 "MBA-Webinar Anmeldung 24.6." · Aktion: Tag mba-webinar-anmeldung (Tag-ID 78) -->
+        <iframe src="https://mumlifebalance.activehosted.com/f/59"
                 title="Webinar-Anmeldung"
                 loading="lazy"></iframe>
       </div>
