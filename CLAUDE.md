@@ -99,6 +99,7 @@ tags: [tag1, tag2, tag3]
 | `outputs/samples/` | `[content, samples]` |
 | `outputs/julia-trost-sync/` | `[externe-wissen, julia-trost]` |
 | `outputs/praesentationen/` | `[produkt]` |
+| `context/doterra/` | `[doterra, perimenopause, externe-wissen]` |
 | `context/*.md` | situativ — siehe bestehende Files |
 
 Bei Bedarf zusätzliche Tags ergänzen (z.B. `mentoring` / `doterra` für Profil-Unterscheidung, oder Spezial-Themen).
