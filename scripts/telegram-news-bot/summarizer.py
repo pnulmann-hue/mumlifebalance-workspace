@@ -96,7 +96,7 @@ def curate_category(category: str, articles: list[dict]) -> list[dict]:
 
     picks = _parse_curation(raw)
 
-    # Auswahl auf die echten Artikel mappen (Original-Link behalten)
+    # Auswahl auf die echten Artikel mappen (Original-Link + Video-Flag behalten)
     result = []
     for pick in picks[:MAX_PICKS_PER_CATEGORY]:
         idx = pick["index"] - 1
@@ -107,6 +107,7 @@ def curate_category(category: str, articles: list[dict]) -> list[dict]:
                 "summary": pick["text"],
                 "link": src["link"],
                 "source": src["source"],
+                "is_video": src.get("is_video", False),
             })
     return result
 

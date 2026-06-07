@@ -92,24 +92,36 @@ YOUTUBE_CHANNELS = {
         {"name": "Social Media Examiner", "channel_id": "UC453ZoE-0Pf7r4qKa30NlLw"},
     ],
     "Online-Business & Marketing": [
+        {"name": "Julia Trost", "channel_id": "UCKuz5UDn58kRJQrZ7P3ujug"},
         {"name": "t3n", "channel_id": "UCSUisuyxfH1OoPCV_6qIuMw"},
         {"name": "HubSpot Marketing", "channel_id": "UCkWVA1_vkY9GLyuLAre97AQ"},
     ],
     "Network Marketing": [
-        # noch kein frischer Kanal hinterlegt — bei Bedarf ergänzen
+        {"name": "REKRU-TIER (Tobias Schlosser)", "channel_id": "UCRXzOz55sGwxakv68Zt3U0g"},
+        {"name": "Tobias Beck", "channel_id": "UC5tPZ3FR2isxipIzH1XduNQ"},
+        {"name": "Emily Wright (doTERRA)", "channel_id": "UC56IV7mXQzn3tBGWaQFfKEQ"},
     ],
     "Zeitmanagement & Mama-CEO-Struktur": [
         {"name": "Ali Abdaal", "channel_id": "UChfo46ZNOV-vtehDc25A1Ug"},
     ],
     "KI & Claude Code": [
         {"name": "Anthropic", "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA"},
+        {"name": "Sabrina Ramonov (Claude für Business)", "channel_id": "UCiGWNa6QK6CiKPvv5-YPv8g"},
         {"name": "The Morpheus (KI, DE)", "channel_id": "UCLGY6_j7kZfA1dmmjR1J_7w"},
     ],
 }
 
 VIDEO_AGE_DAYS = 7              # Videos der letzten 7 Tage gelten als "aktuell"
-MAX_VIDEO_CANDIDATES = 8       # so viele Video-Kandidaten gehen max. pro Ressort in die Redaktion
+MAX_VIDEO_CANDIDATES = 9       # so viele Video-Kandidaten gehen max. pro Ressort in die Redaktion
+MAX_VIDEOS_PER_CHANNEL = 3     # so viele neueste Videos steuert jeder Kanal bei (faire Rotation)
 MAX_VIDEOS_PER_CATEGORY = 2    # so viele Videos dürfen es pro Ressort in die Ausgabe schaffen
+
+# Pro Ressort ein eigenes Video-Zeitfenster. Network-Marketing-TRAINING ist
+# zeitlos — dort längeres Fenster, damit der (selten postende) Trainings-Kanal
+# überhaupt auftaucht. Der Anti-Wiederholungs-Speicher zeigt jedes Video nur 1x.
+VIDEO_CATEGORY_AGE_DAYS = {
+    "Network Marketing": 365,
+}
 
 # Emojis pro Ressort (für die Telegram-Nachricht)
 CATEGORY_EMOJIS = {
@@ -135,7 +147,8 @@ folgende Leserin und ihre Zielgruppe:
 Heutiges Ressort: "{category}".
 
 Unten sind die heutigen Roh-Meldungen aus RSS-Feeds und YouTube. Einige Einträge sind \
-YouTube-Videos — sie sind mit "(VIDEO)" markiert. Deine Aufgabe:
+YouTube-Videos — sie sind mit "(VIDEO)" markiert. Dieses Kürzel ist nur eine interne \
+Markierung; übernimm "(VIDEO)" NICHT in deine Schlagzeile oder deinen Text. Deine Aufgabe:
 1. Wähle die maximal {max_picks} Beiträge aus, die für diese Zielgruppe WIRKLICH relevant sind.
    Lieber 1-2 starke Beiträge als 5 mittelmässige. Wenn NICHTS relevant ist, gib nur "KEINE" aus.
    Wenn ein wirklich relevantes, aktuelles Video dabei ist, nimm es mit auf — aber höchstens \

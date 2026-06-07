@@ -9,7 +9,12 @@ from time import mktime
 
 import feedparser
 
-from config import VIDEO_AGE_DAYS, YOUTUBE_CHANNELS
+from config import (
+    MAX_VIDEOS_PER_CHANNEL,
+    VIDEO_AGE_DAYS,
+    VIDEO_CATEGORY_AGE_DAYS,
+    YOUTUBE_CHANNELS,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -65,11 +70,24 @@ def fetch_all_videos() -> dict[str, list[dict]]:
     """Videos pro Ressort als {Kategorie: [Video, ...]}."""
     result = {}
     for category, channels in YOUTUBE_CHANNELS.items():
-        items = []
+        age_days = VIDEO_CATEGORY_AGE_DAYS.get(category, VIDEO_AGE_DAYS)
+
+        # Pro Kanal nur die N neuesten — damit ein Vielposter die selten
+        # postenden Kanäle nicht aus dem Pool verdrängt.
+        per_channel = []
         for channel in channels:
-            vids = fetch_channel(channel, VIDEO_AGE_DAYS)
-            items.extend(vids)
+            vids = fetch_channel(channel, age_days)
+            vids.sort(key=lambda v: v["published"], reverse=True)
+            per_channel.append(vids[:MAX_VIDEOS_PER_CHANNEL])
             logger.info("%s: %d Videos von %s", category, len(vids), channel["name"])
-        items.sort(key=lambda v: v["published"], reverse=True)
-        result[category] = items
+
+        # Faire Rotation (Reissverschluss): jeder Kanal zuerst sein neuestes,
+        # dann zweitneuestes usw. So sind alle Kanäle im Kandidaten-Pool vertreten.
+        interleaved = []
+        depth = max((len(pc) for pc in per_channel), default=0)
+        for i in range(depth):
+            for pc in per_channel:
+                if i < len(pc):
+                    interleaved.append(pc[i])
+        result[category] = interleaved
     return result

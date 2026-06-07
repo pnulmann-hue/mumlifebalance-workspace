@@ -603,16 +603,16 @@ Der `/mealplan`-Slash-Command ruft `query.py` automatisch vor jeder Rezept-Empfe
 
 ### Telegram News-Bot (`scripts/telegram-news-bot/`) — „Mum Life Daily" (Tageszeitung seit 2026-06-04)
 
-**Tägliche, kuratierte News-Ausgabe per Telegram** — wie eine Tageszeitung, aber nur mit dem, was für Mama-Unternehmerinnen zählt. 5 Ressorts: 📸 Instagram & Social Media · 💼 Online-Business & Marketing · 🤝 Network Marketing · ⏳ Zeitmanagement & Mama-CEO-Struktur · 🤖 KI & Claude Code.
+**Tägliche, kuratierte News-Ausgabe als PDF per Telegram** — wie eine Tageszeitung, aber nur mit dem, was für Mama-Unternehmerinnen zählt. 5 Ressorts: 📸 Instagram & Social Media · 💼 Online-Business & Marketing · 🤝 Network Marketing · ⏳ Zeitmanagement & Mama-CEO-Struktur · 🤖 KI & Claude Code. Quellen: RSS + Google News **+ YouTube-Videos** pro Ressort.
 
-Statt stumpfer Zusammenfassung **redigiert Claude wie eine Chefredakteurin**: wählt pro Ressort die für die Zielgruppe relevantesten Meldungen aus (Steuerung über `ZIELGRUPPE` in `config.py`), filtert Rauschen (Gadgets, US-Politik, Krypto) und schreibt Schlagzeile + 2-Satz-Einordnung „warum für eine Mama mit Online-Business relevant".
+Statt stumpfer Zusammenfassung **redigiert Claude wie eine Chefredakteurin**: wählt pro Ressort die für die Zielgruppe relevantesten Beiträge aus (inkl. max. 2 Videos; Steuerung über `ZIELGRUPPE` in `config.py`), filtert Rauschen (Gadgets, US-Politik, Krypto) und schreibt Schlagzeile + ausführlichen Absatz „warum für eine Mama mit Online-Business relevant". Ausgabe ist ein **PDF** (klickbare Links, Brand-Farben, Video-Markierung) mit kurzer Telegram-Begleitnachricht; Textfassung als Fallback.
 
 - **Sprache:** Python 3.11+
-- **Module:** `config.py` (Feeds + Zielgruppen-Profil + Schedule), `feeds.py` (Abruf/Zeitfilter pro Ressort), `summarizer.py` (Redaktions-Logik), `bot.py` (Versand/Scheduler)
+- **Module:** `config.py` (Feeds + YouTube-Kanäle + Zielgruppen-Profil + Schedule), `feeds.py` (RSS-Abruf), `youtube.py` (Kanal-Videos), `summarizer.py` (Redaktions-Logik), `pdf.py` (reportlab-PDF), `store.py` (Anti-Wiederholung), `bot.py` (Versand/Scheduler)
 - **Lokal testen:** `python bot.py --now` (sofortige Ausgabe)
 - **Dauerbetrieb:** `python bot.py` (täglich 07:00 Zürich; `DIGEST_FREQUENCY=weekly` als Fallback)
-- **Feeds:** RSS + Google-News-RSS (robust, deutschsprachig — z.B. „Claude Code"-Suche). Langsame Ressorts haben längeres Zeitfenster (`CATEGORY_AGE_DAYS`).
-- **Deployment:** Railway via `Procfile` (env: `DIGEST_FREQUENCY=daily`, `SCHEDULE_HOUR=7`, `TIMEZONE=Europe/Zurich`)
+- **Feeds:** RSS + Google-News-RSS (robust, deutschsprachig — z.B. „Claude Code"-Suche) + YouTube-Kanal-RSS. Langsame Ressorts/Videos haben längeres Zeitfenster (`CATEGORY_AGE_DAYS`, `VIDEO_AGE_DAYS`).
+- **Deployment:** Railway via `Procfile` (env: `DIGEST_FREQUENCY=daily`, `SCHEDULE_HOUR=7`, `TIMEZONE=Europe/Zurich`). `requirements.txt` enthält `reportlab`.
 - **Setup-Anleitung:** `scripts/telegram-news-bot/README.md`
 
 ### Instagram Content-Engine (Automatisiert, v2 seit 2026-04-21)

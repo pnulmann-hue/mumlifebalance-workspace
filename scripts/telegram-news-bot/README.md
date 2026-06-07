@@ -5,28 +5,34 @@ mit dem, was für Mama-Unternehmerinnen wirklich zählt.
 
 ## Was der Bot macht
 
-- Sammelt täglich Artikel aus RSS- & Google-News-Feeds zu **5 Ressorts**:
+- Sammelt täglich **Artikel (RSS + Google News)** und **YouTube-Videos** zu **5 Ressorts**:
   - 📸 Instagram & Social Media
   - 💼 Online-Business & Marketing
   - 🤝 Network Marketing
   - ⏳ Zeitmanagement & Mama-CEO-Struktur
   - 🤖 KI & Claude Code
-- Filtert auf die letzten Tage und entfernt Duplikate.
+- Filtert auf die letzten Tage, entfernt Duplikate und merkt sich bereits
+  gesendete Beiträge (`seen_links.json`), damit nichts mehrfach kommt.
 - **Claude redigiert** wie eine Chefredakteurin: pro Ressort wählt sie die für
-  die Zielgruppe relevantesten Meldungen aus, filtert Rauschen (Gadget-Deals,
-  US-Politik, Krypto …) und schreibt zu jeder Meldung eine Schlagzeile + 2 Sätze
-  „warum das für eine Mama mit Online-Business zählt".
-- Sendet die Ausgabe jeden Morgen um **07:00** per Telegram (mehrere Nachrichten,
-  falls länger als das Telegram-Limit).
+  die Zielgruppe relevantesten Beiträge aus (inkl. max. 2 Videos), filtert
+  Rauschen (Gadget-Deals, US-Politik, Krypto …) und schreibt zu jedem Beitrag
+  eine Schlagzeile + einen ausführlichen Absatz „warum das für eine Mama mit
+  Online-Business zählt".
+- **Liefert die Ausgabe als PDF** (klickbare Links, Brand-Farben, Video-
+  Markierung) mit kurzer Begleitnachricht — jeden Morgen um **07:00** per Telegram.
+  Fällt der PDF-Bau aus, geht automatisch die Textfassung raus.
 
 ## Architektur
 
 | Datei | Zweck |
 |---|---|
-| `config.py` | Feeds, Schedule, **Zielgruppen-Profil** (steuert die Relevanz-Auswahl), Templates |
+| `config.py` | Feeds, **YouTube-Kanäle**, Schedule, **Zielgruppen-Profil** (steuert die Relevanz-Auswahl), Templates |
 | `feeds.py` | RSS-Abruf, Zeitfilter (pro Ressort), Deduplizierung |
-| `summarizer.py` | **Redaktions-Logik** — Claude wählt aus + schreibt Schlagzeilen |
-| `bot.py` | Orchestrierung, Telegram-Versand, Scheduler |
+| `youtube.py` | YouTube-Videos pro Ressort (Kanal-RSS) |
+| `summarizer.py` | **Redaktions-Logik** — Claude wählt aus + schreibt Schlagzeilen + Texte |
+| `pdf.py` | PDF-Erzeugung (reportlab) mit Links & Video-Markierung |
+| `store.py` | „schon gesendet"-Speicher gegen Wiederholungen |
+| `bot.py` | Orchestrierung, PDF-/Telegram-Versand, Scheduler |
 
 ## Setup
 
@@ -60,11 +66,17 @@ python bot.py          # mit täglichem Schedule starten
 
 - **Themen / Feeds:** `config.py` → `FEEDS` (Ressort hinzufügen/entfernen) und
   `CATEGORY_EMOJIS`.
+- **YouTube-Kanäle:** `config.py` → `YOUTUBE_CHANNELS`. Pro Kanal brauchst du die
+  `channel_id` (Format `UC…`). Findest du auf der Kanalseite im Quelltext
+  (`"channelId":"UC…"`) — oder bitte Claude, einen @handle aufzulösen.
 - **Was ist relevant?** `config.py` → `ZIELGRUPPE` — das ist der Hebel, mit dem
   Claude entscheidet, was reinkommt und was rausfliegt.
-- **Frische:** `ARTICLE_AGE_DAYS` (Default 2) bzw. `CATEGORY_AGE_DAYS` für
-  langsame Ressorts (Blogs, die nicht täglich posten → längeres Fenster).
-- **Menge:** `MAX_PICKS_PER_CATEGORY` (wie viele Meldungen pro Ressort).
+- **Frische:** `ARTICLE_AGE_DAYS` (Default 2), `CATEGORY_AGE_DAYS` für langsame
+  Ressorts, `VIDEO_AGE_DAYS` (Default 7) für Videos.
+- **Menge:** `MAX_PICKS_PER_CATEGORY` (Beiträge/Ressort) und
+  `MAX_VIDEOS_PER_CATEGORY` (Videos/Ressort).
+- **PDF-Optik:** `pdf.py` (Brand-Farben oben) und `PDF_TITLE`/`PDF_SUBTITLE`/
+  `PDF_INTRO` in `config.py`.
 - **Zeitpunkt / Rhythmus:** `SCHEDULE_HOUR`, `DIGEST_FREQUENCY` (`daily`/`weekly`).
 
 ## Kosten
