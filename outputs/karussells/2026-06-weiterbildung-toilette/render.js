@@ -57,9 +57,9 @@ const SLIDES = [
   },
   {
     num: 7,
-    hero: 'Wenn du einen einzigen Rat von mir hören willst:',
-    sub: 'Investiere unbedingt in deine Weiterbildung.',
-    heroSize: 70,
+    hero: 'Wenn du einen einzigen Rat von mir hören willst: investiere in deine <em>Weiterbildung</em>.',
+    sub: 'Auch wenn dein Network grad zäh läuft. Gerade dann.',
+    heroSize: 64,
   },
   {
     num: 8,

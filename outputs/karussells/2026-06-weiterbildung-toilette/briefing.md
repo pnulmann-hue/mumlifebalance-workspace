@@ -75,9 +75,9 @@ Warum?
 
 Einerseits will ich die neusten Infos am Markt haben. Was funktioniert grad. Was nicht mehr. Welche Tools sind 2026 noch relevant, welche sind tot.
 
-Andererseits will ich mein Business ohne Mitarbeiter führen und meine Kundinnen immer selber 1:1 betreuen können. Das ist mir wichtig — niemand soll im Funnel landen ohne dass ich's mitbekomme.
+Andererseits will ich solo bleiben — und meine Kundinnen trotzdem 1:1 betreuen können. Das ist mir wichtig: niemand soll im Funnel landen ohne dass ich's mitbekomme.
 
-Und gerade dieses „ohne Mitarbeiter" bedeutet: ich muss mich im Bereich KI und Automatisierung ständig weiterentwickeln. Sonst übernehmen andere die Arbeit, die ich mir mit System abnehmen lassen kann.
+Und genau das bedeutet: ich muss mich im Bereich KI und Automatisierung ständig weiterentwickeln. Sonst übernehmen andere die Arbeit, die ich mir mit System abnehmen lassen kann.
 
 Schliesslich will ich ja auch raus aus dem Zeit-gegen-Geld-Modell. Skalierbares Einkommen heisst Skills aufbauen, nicht nur Stunden tauschen.
 
