@@ -1,7 +1,8 @@
 {
   "_meta": {
-    "description": "Zentrales Register aller aktiven Funnels für Mum Life Balance (Mentoring + doTERRA). Wird vom /funnel Skill gepflegt und von /montag, /reels, /karussell gelesen — damit Content-Assistenten wissen welche ManyChat-Keywords diese Woche prioritär sind.",
-    "last_updated": "2026-05-04 · Mama-CEO 3-Tage-Cart-Variante · LAUNCH-DAY Mi 20.5. 09:00 (Webinar + Cart-Open + Earlybird CHF 249) · Cart-Close Sa 23.5. 23:59 · Pilot-Phase Start Mo 1.6.",
+    "description": "Zentrales Register aller aktiven Funnels für Mum Life Balance (Mentoring + doTERRA). Wird vom /funnel Skill gepflegt und von /story, /montag, /reels, /karussell gelesen — damit Content-Assistenten wissen welche ManyChat-Keywords diese Woche prioritär sind.",
+    "last_updated": "2026-06-05 · Mama-CEO Pilot läuft (5 Mamas, seit 1.6.) + weiterhin Solo-Verkauf 333 · MBA-Launch eingetragen (Pioneer 997, Webinar Mi 24.6., Cart-Close So 5.7.) · Warteliste live (mumlifebalance.ch/mba-warteliste).",
+    "funnel_architektur": "3 Produkttreppen (Sichtbarkeit/Instagram · Zeit/Struktur=Mama-CEO · Digitale Produktwelt). Jede: 0€-Freebie → Minikurs (39/97) → grosser Kurs (333) → MBA. ALLE Funnels führen am Ende zur MBA (Bundle · Pioneer 997 / Final 1347). Die 3 grossen Kurse (Instagram-Kundenmaschine · Mama-CEO · Digitale Produktwelt) sind einzeln verkaufbar UND Bestandteil der MBA.",
     "schema_version": 1,
     "brand": "Mum Life Balance",
     "umsatzziel_chf_jahr": 40000
@@ -11,7 +12,7 @@
     {
       "id": "bio-check",
       "name": "Bio-Check für Network-Mamas",
-      "status": "live-launch-woche",
+      "status": "live",
       "profile": "mentoring",
       "typ": "0€ Leadmagnet · interaktiver Bot",
       "preis_chf": 0,
@@ -320,7 +321,9 @@
     {
       "id": "mama-ceo",
       "name": "Mama-CEO — Möglichkeit schaffen, Business neben Familie aufzubauen",
-      "status": "aufwaermphase-1-validierung",
+      "status": "pilot-laeuft-und-solo-verkauf",
+      "fuehrt_zu_mba": true,
+      "verkauf": "Pilot läuft (5 Mamas, seit 1.6.). Wird weiterhin EINZELN verkauft (333) als grosser Kurs der Zeit/Struktur-Treppe — und ist zugleich Bestandteil der MBA.",
       "profile": "mentoring",
       "typ": "Mid-Price-Kurs (Säule 3)",
       "preis_chf": 333,
@@ -329,7 +332,7 @@
       "problem": "Schuld-Spirale: 'Ich sollte unbedingt — bin aber nicht dazu gekommen' → Selbst-Ärger → kein Business-Fortschritt → Einkommen fehlt → mehr Stress",
       "transformation": "Möglichkeit schaffen Business neben Familie aufzubauen — 5 Säulen: Energie · Mindset · System · KI-Mitarbeiter · Network/Skalieren. KI nimmt Adminkram (Business + Haushalt) ab.",
 
-      "phase_marker": "mama-ceo:aufwaermphase-1-validierung",
+      "phase_marker": "mama-ceo:pilot-phase",
       "phase_history": [
         { "marker": "aufwaermphase-1-validierung", "von": "2026-05-04", "bis": "2026-05-10", "kw": 19, "fokus": "Story-Umfrage Tagline-A/B + 3 Sternbauer-Urmotiv-Calls + Sales-Page-Texte erste Version + Reel #1 Schuld-Spirale" },
         { "marker": "aufwaermphase-2-story-demo", "von": "2026-05-11", "bis": "2026-05-17", "kw": 20, "fokus": "Sales-Page LIVE + Webinar-Anmeldung läuft + 3 Anwarming-Reels + Karussell + Mail #2 Versand Mi 13.5. + Pitch-Slides starten" },
@@ -433,6 +436,65 @@
       "umsatzziel_contribution_chf": 5154,
       "umsatzziel_jahr_inkl_pilot_und_final": 12000,
       "launched_on": null
+    },
+
+    {
+      "id": "mba",
+      "name": "Mum Business Academy (MBA)",
+      "status": "warteliste-vor-launch",
+      "profile": "mentoring",
+      "typ": "Bundle · Endprodukt aller Funnels (Stufe Z)",
+      "preis_chf": 997,
+      "preis_label": "Pioneer 997 CHF · Final 1347 CHF",
+      "preis_final_chf": 1347,
+      "fuehrt_zu_mba": null,
+      "ist_endprodukt": true,
+      "zielgruppe": "Mamas im Online-/Network-Business, die alles aus einer Hand + Begleitung wollen statt sich mit Einzelkursen zu verzetteln",
+      "problem": "Viele Einzelkurse, kein roter Faden, keine Begleitung — man verzettelt sich und bleibt stecken",
+      "transformation": "Alles in der richtigen Reihenfolge aufgebaut + zweimal im Monat ein Live-Call (mit Patricia + Expertinnen) → planbares Einkommen neben der Familie",
+      "enthaelt": ["Instagram-Kundenmaschine", "Mama-CEO", "Digitale Produktwelt", "Umsetzerinnen-Calls (2/Monat)", "Bonus: PIA (KI-Mentorin)", "Bonus: Digitale-Produktwelt-Companion"],
+      "keine_geld_zurueck_garantie": true,
+
+      "phase_marker": "mba:warteliste-vor-launch",
+
+      "traffic_quellen": {
+        "wordpress_landing": "https://mumlifebalance.ch/mba-warteliste",
+        "manychat_keyword": null,
+        "instagram_dm": "Warteliste via Landingpage-Formular; im Launch via Webinar-Anmeldung",
+        "notes": "Warteliste läuft über das Landingpage-Formular (AC Form 57). Eigenes ManyChat-Keyword für MBA noch nicht eingerichtet."
+      },
+
+      "ac_integration": {
+        "liste_id": 2,
+        "formular_id": 57,
+        "tags": { "warteliste": 77 },
+        "auslieferung_automation_id": null,
+        "nurture_automation_id": null,
+        "notes": "Warteliste-Form 57 → Tag mba-warteliste (77). Nurture-Mails halten warm; beim Cart-Open zuerst angepitcht."
+      },
+
+      "launch_window": {
+        "aufwaerm_start_datum": "2026-06-12",
+        "webinar_datum": "2026-06-24",
+        "cart_open_datum": "2026-06-24",
+        "pioneer_ende_datum": "2026-06-27T23:59",
+        "cart_close_datum": "2026-07-05T23:59",
+        "programmstart": "Juli 2026",
+        "story_plan": "outputs/produkte/mba-launch/story-plan.json",
+        "story_plan_tag_fuer_tag": "outputs/produkte/mba-launch/story-plan-tag-fuer-tag.md",
+        "launch_kalender": "outputs/produkte/mba-launch/launch-kalender-juli-2026.md",
+        "scope": "Webinar + Cart-Window (Julia-Trost-Methodik). Aufwärmphase ab 12.6., Webinar/Cart-Open Mi 24.6., Pioneer 997 bis Sa 27.6. 23:59, Final 1347 bis Cart-Close So 5.7. 23:59.",
+        "ziele": { "mba_verkaeufe": 8 }
+      },
+
+      "content_hinweise": {
+        "pillar": "Alles aus einer Hand — vom Thema bis zum planbaren Einkommen neben der Familie",
+        "primaer_keyword_launch": "WEBINAR (Anmeldung)",
+        "hinweis": "Im Launch-Fenster 12.6.–6.7. zieht /story den story-plan.json (Tag-für-Tag) mit Vorrang. Ausserhalb: MBA als Fernziel mitdenken, alle anderen Funnels führen hierher."
+      },
+
+      "umsatzziel_contribution_chf": 7976,
+      "launched_on": null
     }
   ],
 
@@ -440,8 +502,8 @@
     { "stufe": "A (0€)", "produkte": ["Bio-Check", "Lead-Challenge", "Von 0 auf echt", "Potenzial-Test", "Starterguide", "Story-Challenge"] },
     { "stufe": "B (39 CHF)", "produkt": "Finde dein Thema als Network-Mama" },
     { "stufe": "E (97 CHF)", "produkt": "Expertin statt Verkäuferin" },
-    { "stufe": "M (333 CHF)", "produkt": "Instagram-Kundenmaschine" },
-    { "stufe": "Z (777+ CHF)", "produkt": "Webinar / 1:1 (TBD)" }
+    { "stufe": "M (333 CHF) — 3 grosse Kurse", "produkte": ["Instagram-Kundenmaschine", "Mama-CEO", "Digitale Produktwelt"] },
+    { "stufe": "Z — MBA (Bundle · Endprodukt aller Funnels)", "produkt": "Mum Business Academy", "preis_pioneer_chf": 997, "preis_final_chf": 1347, "enthaelt": ["Instagram-Kundenmaschine", "Mama-CEO", "Digitale Produktwelt", "Umsetzerinnen-Calls 2/Monat"] }
   ],
 
   "next_funnels_tbd": [
