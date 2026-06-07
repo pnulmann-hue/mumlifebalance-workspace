@@ -296,3 +296,16 @@ scripts/story-render-bot/render/node_modules/
 
 # Mama-CEO Webinar-Mails-Vorschau ZIP
 !outputs/produkte/mama-ceo/08-funnel/webinar-mails-vorschau.zip
+
+# ============================================================
+# doTERRA E-Book-Bibliothek — der Companion soll ALLE Bücher lesen können.
+# Ausnahmen von den globalen **/*.pdf / **/*.epub / **/*.docx-Sperren.
+# Bücher gehören nach context/doterra/ebooks/ (klein geschrieben!).
+# ============================================================
+!context/doterra/ebooks/
+!context/doterra/ebooks/**
+!context/doterra/ebooks/**/*.pdf
+!context/doterra/ebooks/**/*.epub
+!context/doterra/ebooks/**/*.docx
+!context/doterra/ebooks/**/*.mobi
+!context/doterra/ebooks/**/*.txt
