@@ -81,9 +81,9 @@ Und genau das bedeutet: ich muss mich im Bereich KI und Automatisierung ständig
 
 Schliesslich will ich ja auch raus aus dem Zeit-gegen-Geld-Modell. Skalierbares Einkommen heisst Skills aufbauen, nicht nur Stunden tauschen.
 
-Wenn du also einen einzigen Rat von mir hören willst:
+Wenn du einen einzigen Rat von mir hören willst:
 
-Investiere unbedingt in deine Weiterbildung. Egal wie wenig du grad verdienst — ein Teil davon gehört in dein Hirn. Immer.
+Investiere in deine Weiterbildung. Auch wenn dein Network grad zäh läuft. Gerade dann. Ein Teil von dem was du verdienst gehört in dein Hirn. Immer.
 
 Schick mir ein Herz 🤍 wenn du das genau so siehst.
 
