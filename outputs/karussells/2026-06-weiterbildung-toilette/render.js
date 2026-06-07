@@ -39,8 +39,8 @@ const SLIDES = [
   },
   {
     num: 4,
-    hero: 'Andererseits will ich mein Business <em>ohne Mitarbeiter</em> führen.',
-    sub: 'Und meine Kundinnen immer selber 1:1 betreuen können.',
+    hero: 'Andererseits will ich <em>solo bleiben</em> — und meine Kundinnen trotzdem 1:1 betreuen können.',
+    sub: '',
     heroSize: 76,
   },
   {
