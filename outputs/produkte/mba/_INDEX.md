@@ -8,7 +8,7 @@ tags: [produkt, mba]
 
 ## Dateien
 - [[08-webinar-plan]] — Launch-Webinar-Konzept & Pitch-Skript (Live → Evergreen, kalt/Meta-Ads)
-- [[09-webinar-anmelde-lp]] — Webinar-Anmelde-Landingpage (HTML, Meta-safe, AC-Form + Pixel) für mumlifebalance.ch
+- [[09-webinar-anmelde-lp]] — Webinar-Anmelde-Landingpage (HTML, Meta-safe, AC-Form 59) → **LIVE als Draft: WP-Seite 3795, Slug `mba-webinar`** (HTML in Seite + CSS im Customizer wegen WAF, siehe [[reference_wordpress-waf-lp-deploy]])
 
 ## 🔗 Verwandte Notizen
 - [[umbau-plan]] — MBA-Pitch-Automation (Funnel-Spitze)
