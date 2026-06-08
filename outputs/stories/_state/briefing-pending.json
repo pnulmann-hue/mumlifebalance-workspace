@@ -1,45 +1,38 @@
 {
-  "datum": "2026-06-08",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "kontext_snapshot": {
-        "kw": 24,
-        "wochentag": "Montag",
-        "datum": "2026-06-08"
-      },
-      "gesendet_am": "2026-06-08T05:14:11.158Z",
-      "telegram_message_id": 642,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "kontext_snapshot": {
-        "kw": 24,
-        "wochentag": "Montag",
-        "datum": "2026-06-08"
-      },
-      "gesendet_am": "2026-06-08T05:14:11.220Z",
-      "telegram_message_id": 643,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "mentoring",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "8.–14. Juni 2026 (KW 24) — MBA-Aufwärmphase Start",
+  "wochen_fokus": "MBA-Aufwärmphase Start. Webinar-Anmeldung öffnen (Fr 12.6. „Sneak Peak\"), Warteliste → Webinar-Anmeldungen überführen. Mo–Do: Reichweite + Mama-CEO-Pilot-Einblicke (Social Proof). Parallel: Webinar-Skript + MBA-Salespage finalisieren. Content-Creation: Stories nach bewährtem Aufwärm-Template (kein harter Pitch), Reichweiten-Reels, ab Fr Webinar-Einladung als CTA.",
+  "sales_pattern": "Sanftes Aufwärmen, kein harter Pitch. Ab Fr 12.6. Webinar-Anmeldung als CTA. Sonst Reichweiten-Posts + Warteliste-Nurture.",
+  "wochen_cta": "Webinar-Anmeldung MBA → https://mumlifebalance.ch/mba-webinar",
+  "monat_kontext": "Juni = MBA-Launch-Monat. Aufbau Richtung Webinar: KW24–25 Webinar-Werbungsphase (Anmeldungen sammeln, organisch + Meta-Ad), KW26 Webinar Mi 24.6. 9:00 + Cart-Open Pioneer 997, KW27 Endspurt bis Cart-Close So 5.7. Alle Funnels führen zur MBA. Programmstart Juli.",
+  "produkt_themen": {
+    "name": "Mama-CEO — Möglichkeit schaffen, Business neben Familie aufzubauen",
+    "painpoint": "Schuld-Spirale: 'Ich sollte unbedingt — bin aber nicht dazu gekommen' → Selbst-Ärger → kein Business-Fortschritt → Einkommen fehlt → mehr Stress",
+    "transformation": "Möglichkeit schaffen Business neben Familie aufzubauen — 5 Säulen: Energie · Mindset · System · KI-Mitarbeiter · Network/Skalieren. KI nimmt Adminkram (Business + Haushalt) ab.",
+    "zielgruppe": "Mompreneurin oder Network-Mama 30-45 DACH, die genau weiss was sie tun MÜSSTE — aber im Mama-Alltag nicht dazu kommt. Schuld-Spirale. Hat Kurse gekauft, Tools getestet, nichts hat gehalten.",
+    "pillar": ""
+  },
+  "wochen_fokus_quelle": "notion-live",
+  "launch_tag": null,
+  "kontext_snapshot": {
+    "kw": 24,
+    "wochentag": "Montag",
+    "datum": "2026-06-08"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-06-08T09:13:29.136Z",
+  "telegram_message_id": 644,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
