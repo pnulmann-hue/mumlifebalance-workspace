@@ -2,7 +2,7 @@
 
 Schedule:
 - Mo-Fr 06:30: Tagesbriefing + News (Push)
-- Mo-Fr 12:00: Mittag-Reminder (Push)
+- Mo 08:00: Business-News-Digest (Push)
 - Sa+So: kurzer Auszeit-Push 06:30 (Default: kein Push)
 
 Telegram-Commands:
@@ -107,7 +107,7 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Ich bin dein Cockpit-Bot — dein täglicher Tagesblick.\n\n"
         "Auto-Push:\n"
         "🌅 Mo-Fr 06:30 → Tagesbriefing + News\n"
-        "🍽️ Mo-Fr 12:00 → Mittag-Check\n"
+        "📰 Mo 08:00 → Business-News-Digest\n"
         "🌿 Sa+So → kurze Auszeit-Erinnerung\n\n"
         "Manuelle Befehle:\n"
         "/cockpit — Tagesbriefing on-demand\n"
@@ -156,7 +156,7 @@ async def cmd_status(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"⏰ Lokal: {now.strftime('%a %d.%m. %H:%M')}\n"
         f"📅 Schedule:\n"
         f"   Mo-Fr 06:30 Tagesbriefing\n"
-        f"   Mo-Fr 12:00 Mittag-Check\n"
+        f"   Mo 08:00 Business-News-Digest\n"
         f"🤖 Modell: {config.CLAUDE_MODEL}"
     )
     await update.message.reply_text(text)
@@ -331,23 +331,6 @@ def _extract_tagesfokus(volltext: str) -> str:
     return "Tagesplan"
 
 
-async def task_mittag_reminder():
-    """Mo-Fr 12:00 — Mittag-Check."""
-    heute = date.today()
-    if heute.weekday() not in config.WORKDAYS:
-        return  # kein Mittag-Push am WE
-
-    logger.info(f"Mittag-Reminder startet für {heute}")
-    try:
-        kontext = await _build_kontext(heute)
-        result = briefing_builder.generate_briefing("mittag", kontext, heute)
-        if result.get("ok"):
-            await _send_telegram(result["text"])
-            logger.info("Mittag-Reminder gesendet")
-    except Exception as e:
-        logger.exception("task_mittag_reminder crashed")
-
-
 # ========================================
 # MAIN
 # ========================================
@@ -371,16 +354,6 @@ async def main():
         id="morgen_briefing",
         name="Mo-Fr 06:30 Tagesbriefing",
     )
-    scheduler.add_job(
-        task_mittag_reminder,
-        CronTrigger(
-            hour=config.LUNCH_REMINDER_TIME["hour"],
-            minute=config.LUNCH_REMINDER_TIME["minute"],
-            timezone=tz,
-        ),
-        id="mittag_reminder",
-        name="Mo-Fr 12:00 Mittag-Reminder",
-    )
     # Mo 08:00 — Business-News-Digest (KI/Marketing/Mama-CEO)
     scheduler.add_job(
         task_business_news_montag,
@@ -389,7 +362,7 @@ async def main():
         name="Mo 08:00 Business-News-Digest",
     )
     scheduler.start()
-    logger.info(f"Scheduler aktiv: 06:30 + 12:00 {config.TIMEZONE}")
+    logger.info(f"Scheduler aktiv: 06:30 Tagesbriefing + Mo 08:00 Business-News {config.TIMEZONE}")
 
     await app.initialize()
     await app.start()
