@@ -10,7 +10,9 @@ description: /monatsplan — Strategie-Layer für den nächsten Monat (1× pro M
 
 **Output:** Notion-Monatsplan-Page (Updates / Neu) + `outputs/monatsplaene/YYYY-MM.md` + Briefing für die 4 Wochen-Freitage.
 
-> **Warum nicht 30 Posts auf einmal bauen?** Live-Posts (BTS, Telegram-Call-Reaktionen) brauchen Frische. Trends auf Reddit/IG müssen reagiert werden. Pre-Sale-Signale aus Woche 1 ändern Wochen 2-4. Deshalb: **Strategie monatlich, Konkretion wöchentlich.**
+> **Neu (seit 2026-06): Monats-Content-Vorplanung.** Patricia will EINMAL pro Monat alles vorplanen, damit sie in **1-2 Tagen alle Reels für den ganzen Monat abdrehen** kann. Deshalb erzeugt dieser Skill jetzt zusätzlich (Phase 4.5): **Marktanalyse + Content-Ideen pro Woche** (thema-matched zum Launch) + eine **Reel-Dreh-Liste zum Batch-Filmen** + die **Rückblick-Analyse** des Vormonats.
+>
+> **Stories bleiben täglich** (Frische) — sie kommen über den Story-Bot + `/story`: **im Launch** nach dem Julia-Launch-Drehbuch (`story-plan.json` + `julia-launch-story-bausteine.md`), **sonst** nach den Julia-Story-Vorlagen (`julia-insta-stories-anleitung.md` etc.). Die wöchentlichen Posts/Reels stehen als Monats-Skelett; `/freitag-hooks` verfeinert sie nur noch mit Live-Trends.
 
 ---
 
@@ -41,6 +43,16 @@ Lies in dieser Reihenfolge:
 6. `context/brand-voice.md` — Tonalität für Hauptbotschaft
 7. **Letzte 30 Tage:** `outputs/karussells/` + `outputs/reels/` + jüngstes `outputs/apify-runs/competitors-*.json` — was lief, was performte, was die Konkurrenz macht
 8. **Vormonats-Notion-Plan** (falls vorhanden): Welche Ziele wurden erreicht, welche nicht
+
+**Zusätzlich für die Content-Vorplanung (Phase 4.5) — Pflicht:**
+9. `context/hook-framework.md` — Hook-Regeln + Olga-Pattern-Mix + 8/10-Standard
+10. `context/content-formel-5-typen.md` — die 5 Content-Typen pro Woche
+11. `context/reichweiten-posts-pattern.md` — Reichweiten-/Verbindungs-Posts (**mind. 2 von 5**)
+12. jüngster **Content-Radar** (`context/content-radar-*.md`) — Format-Mix (Mentoring max 1 Karussell + Reels, doTERRA Reels-only), Zeitanker-Hook
+13. `context/caption-formeln.md` — Caption-Struktur + Keyword-CTA
+14. **Wochenpläne der aktuellen Monatswochen aus Notion** (Wochenplanung-DB) — Fokus + Produkt + Wochen-CTA (vom Story-Bot/uns gesetzt) → die Content-Ideen müssen dazu passen
+15. **Story-Vorlagen:** Launch → `outputs/produkte/mba-launch/story-plan.json` + `context/julia-launch-story-bausteine.md`; sonst → `context/julia-insta-stories-anleitung.md` + `julia-stories-die-verkaufen.md` + `julia-story-ideen.md`
+16. Memory-Regeln: **keine Stakkato-Sätze** · keine erfundenen Zahlen · echte Umlaute/ss · doTERRA keine Heilversprechen · **kein „Julia Trost"-Name in Kunden-Output**
 
 ---
 
@@ -195,6 +207,50 @@ Die Hauptbotschaft wird als roter Faden über die 4 Wochen gespannt:
 
 ---
 
+## Phase 4.5 · Monats-Content-Vorplanung (NEU — der eigentliche Content)
+
+> Hier entsteht der konkrete Monats-Content, damit Patricia in 1-2 Tagen alles abdrehen kann. Baut auf den Wochenplänen aus Notion auf (Fokus + Produkt + CTA pro Woche).
+
+### 4.5a) Marktanalyse pro Profil (Pflicht — „ich kann ihre Gedanken lesen")
+
+Pro Profil (Mentoring + doTERRA), ausgerichtet aufs **Monats-/Launch-Thema**:
+- **Pain · Wunsch · Ziel · Herausforderung** der Zielgruppe
+- Quellen: jüngstes `outputs/apify-runs/competitors-*.json` + `discovery-*.json`, bei Bedarf WebSearch (IG/Reddit/Google Trends), `context/patricia-vollprofil.md` + Zielgruppen-Research
+- → 1 verdichteter Absatz pro Profil, der die Hooks speist (jeder Beitrag adressiert mind. 1 davon)
+
+### 4.5b) Vormonats-Content-Analyse (Pflicht)
+
+Aus Content-Management-DB (`collection://2ae7078e-8b7e-811a-ad14-000ba5820c09`) + `outputs/reels/` + `outputs/karussells/`:
+- **Top 3** (Saves/Shares/Reach) — was wiederholen?
+- **Flop 2** — was lassen?
+- Welche **Typen / Themen / Hook-Muster** liefen? → fliesst in die Ideen für den neuen Monat
+
+### 4.5c) Pro Woche: 5 Beiträge (thema-matched)
+
+Für **jede Woche** des Monats (Fokus + Produkt + CTA aus dem Notion-Wochenplan):
+- **5 Beiträge** nach den **5 Content-Typen** (`content-formel-5-typen.md`)
+- davon **mind. 2 = reine Reichweiten-/Verbindungs-Posts** (kein Verkauf, Share-Trigger, Mama-Identity — `reichweiten-posts-pattern.md`). CTA „Teile das in deiner Story", **kein** Keyword.
+- die übrigen 3 = Mehrwert / Story / Sales passend zum **Wochen-Produkt**, mit **Keyword-CTA**
+- **Format-Mix** (Content-Radar): Mentoring max 1 Karussell + Rest Reels · **doTERRA Reels-only**
+- pro Beitrag festhalten: **Hook** (nach `hook-framework.md` + Olga-Pattern-Mix + Zeitanker + 8/10 + **keine Stakkato**) · Typ · Format · Ziel (Reichweite/Lead/Sales) · adressierter Painpoint (aus 4.5a)
+
+### 4.5d) Reel-Dreh-Liste (Batch — zum Abdrehen in 1-2 Tagen)
+
+ALLE Reels des Monats in EINER Tabelle, gruppiert nach **Setting/Outfit**, damit Patricia sie am Stück filmen kann:
+
+| # | Woche | Produkt | Hook (Slide 1) | Dreh-Anweisung / Sprechtext (wort-für-wort bei Talking-Head, sonst Shotlist) | Format/Setting | B-Roll |
+|---|---|---|---|---|---|---|
+
+→ So weiss Patricia vorab **genau, was sie aufnehmen muss**. Sprechtexte sind Dreh-Anweisung; die finale Caption feilt `/freitag-hooks` / `/reels`.
+
+### 4.5e) Story-Logik (täglich — NICHT vorab ausformulieren)
+
+Stories kommen täglich über den Story-Bot + `/story`. Der Monatsplan hält pro Woche nur den **Story-Bogen** (Thema + Käufertyp-Rotation), nicht die fertigen Slides:
+- **Im Launch-Fenster:** `/story` baut nach der **Funnel-/Launch-Strategie** — `outputs/produkte/mba-launch/story-plan.json` + `context/julia-launch-story-bausteine.md` (Tag für Tag, Slide für Slide).
+- **Ausserhalb Launch:** `/story` baut nach den **Story-Vorlagen** — `context/julia-insta-stories-anleitung.md` (10 Templates) + `julia-stories-die-verkaufen.md` + `julia-story-ideen.md`.
+
+---
+
 ## Phase 5 · Speichern
 
 ### 5a) Notion-Monatsplan-Page (neu / Update)
@@ -314,7 +370,9 @@ Falls Patricia es will: Kurz-Zusammenfassung (Säule + Hauptbotschaft + KPI-Ziel
 
 ## Anti-Pattern (was Claude NIE macht)
 
-- ❌ 30 Posts ausformulieren (das macht /freitag-hooks wöchentlich)
+- ✅ Monats-Content vorplanen ist JETZT erwünscht: Ideen + Hooks pro Woche (5 Beiträge, ≥2 Reichweiten) + **Reel-Dreh-Liste** zum Batch-Filmen.
+- ❌ ABER: **Stories NIE vorab ausformulieren** — die kommen täglich frisch über `/story` (Launch = Drehbuch, sonst = Story-Vorlagen).
+- ❌ Reel-Sprechtexte sind **Dreh-Anweisung**, nicht die endgültige Caption (die feilt /freitag-hooks/​/reels).
 - ❌ Hauptbotschaft erfinden ohne Patricia zu fragen
 - ❌ Block-Verteilung Variante B empfehlen ohne Erklärung
 - ❌ KPI-Zahlen erfinden (immer Patricia fragen oder Vormonat als Anker)

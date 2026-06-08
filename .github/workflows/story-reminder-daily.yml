@@ -27,6 +27,8 @@ jobs:
         env:
           STORY_BOT_TOKEN: ${{ secrets.STORY_BOT_TOKEN }}
           STORY_CHAT_ID: ${{ secrets.STORY_CHAT_ID }}
+          # Repo-Secret heisst NOTION_TOKEN -- auf NOTION_API_KEY gemappt (wie cockpit-daily).
+          NOTION_API_KEY: ${{ secrets.NOTION_TOKEN }}
         run: node scripts/story-reminder/send-daily-reminder.js
 
       - name: Commit briefing-pending state

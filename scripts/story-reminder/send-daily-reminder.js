@@ -26,6 +26,11 @@ const REPO_ROOT = path.resolve(__dirname, '..', '..');
 const TELEGRAM_TOKEN = process.env.STORY_BOT_TOKEN || process.env.TELEGRAM_CONTENT_BOT_TOKEN;
 const CHAT_ID = process.env.STORY_CHAT_ID || process.env.TELEGRAM_CHAT_ID;
 
+// Notion (Wochenplan der aktuellen Woche live lesen)
+const NOTION_TOKEN = process.env.NOTION_API_KEY || process.env.NOTION_TOKEN;
+const NOTION_WOCHEN_DB = process.env.NOTION_DB_WOCHENPLANUNG || '2ae7078e-8b7e-81ef-a769-cdb1a6584c70';
+const NOTION_MONAT_DB = process.env.NOTION_DB_MONATSPLANUNG || '2ae7078e-8b7e-8171-a760-c233083c26b6';
+
 console.log('Story-Reminder gestartet.');
 console.log(`STORY_BOT_TOKEN: ${TELEGRAM_TOKEN ? '✅ gesetzt (Länge ' + TELEGRAM_TOKEN.length + ')' : '❌ fehlt'}`);
 console.log(`STORY_CHAT_ID: ${CHAT_ID ? '✅ gesetzt (' + CHAT_ID + ')' : '❌ fehlt'}`);
@@ -72,6 +77,119 @@ async function readJsonSafe(filePath) {
   } catch (err) {
     return null;
   }
+}
+
+function notionRichText(prop) {
+  if (!prop) return '';
+  const arr = prop.rich_text || prop.title || [];
+  return arr.map(t => t.plain_text || '').join('').trim();
+}
+
+// Liest den Wochenplan der AKTUELLEN Woche aus Notion (Zeitraum enthält heute).
+// Liefert { title, fokus, salesPattern } oder null (kein Token / keine passende Woche).
+async function fetchNotionWoche(dateIso) {
+  if (!NOTION_TOKEN) {
+    console.log('NOTION_API_KEY/NOTION_TOKEN fehlt — Wochen-Fokus aus Notion wird uebersprungen.');
+    return null;
+  }
+  try {
+    const res = await fetch(`https://api.notion.com/v1/databases/${NOTION_WOCHEN_DB}/query`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${NOTION_TOKEN}`,
+        'Notion-Version': '2022-06-28',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        sorts: [{ property: 'Zeitraum', direction: 'descending' }],
+        page_size: 25,
+      }),
+    });
+    if (!res.ok) {
+      console.log(`Notion-Query fehlgeschlagen (HTTP ${res.status}).`);
+      return null;
+    }
+    const data = await res.json();
+    for (const page of data.results || []) {
+      const z = page.properties?.['Zeitraum']?.date;
+      if (!z || !z.start) continue;
+      const start = z.start.slice(0, 10);
+      const end = (z.end || z.start).slice(0, 10);
+      if (start <= dateIso && dateIso <= end) {
+        return {
+          title: notionRichText(page.properties?.['Woche']),
+          fokus: notionRichText(page.properties?.['Fokus der Woche']),
+          salesPattern: notionRichText(page.properties?.['📅 Sales-Pattern']),
+          cta: notionRichText(page.properties?.['Wochen-CTA']),
+        };
+      }
+    }
+    console.log('Keine Notion-Woche enthaelt das heutige Datum — Fallback.');
+    return null;
+  } catch (err) {
+    console.log('Notion-Fehler:', err.message);
+    return null;
+  }
+}
+
+// Liest den Monatsplan des AKTUELLEN Monats aus Notion (Zeitraum enthält heute).
+// Gibt dem Bot den Monats-Kontext (Verkaufs-Storyline). Liefert { title, fokus } oder null.
+async function fetchNotionMonat(dateIso) {
+  if (!NOTION_TOKEN) return null;
+  try {
+    const res = await fetch(`https://api.notion.com/v1/databases/${NOTION_MONAT_DB}/query`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${NOTION_TOKEN}`,
+        'Notion-Version': '2022-06-28',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ sorts: [{ property: 'Zeitraum', direction: 'descending' }], page_size: 25 }),
+    });
+    if (!res.ok) { console.log(`Monatsplan-Query fehlgeschlagen (HTTP ${res.status}).`); return null; }
+    const data = await res.json();
+    for (const page of data.results || []) {
+      const z = page.properties?.['Zeitraum']?.date;
+      if (!z || !z.start) continue;
+      const start = z.start.slice(0, 10);
+      const end = (z.end || z.start).slice(0, 10);
+      if (start <= dateIso && dateIso <= end) {
+        return {
+          title: notionRichText(page.properties?.['Monat + Jahr']),
+          fokus: notionRichText(page.properties?.['✏️ Begründung Fokus']),
+        };
+      }
+    }
+    return null;
+  } catch (err) {
+    console.log('Monatsplan-Fehler:', err.message);
+    return null;
+  }
+}
+
+// Findet das Produkt/den Funnel, der zur aktuellen Woche passt (Match über ID/Name/Keyword
+// im Wochen-Text), damit der Content sich auf dessen Themen beziehen kann.
+function matchProdukt(textBlob, activeFunnels) {
+  if (!activeFunnels || !Array.isArray(activeFunnels.funnels) || !textBlob) return null;
+  const blob = textBlob.toLowerCase();
+  const treffer = activeFunnels.funnels.filter(f => {
+    const name = (f.name || '').toLowerCase();
+    const id = (f.id || '').toLowerCase();
+    const kw = (f.content_hinweise?.primaer_keyword || '').toLowerCase();
+    return (id && blob.includes(id)) ||
+           (name && name.length > 4 && blob.includes(name)) ||
+           (kw && blob.includes(kw));
+  });
+  if (!treffer.length) return null;
+  treffer.sort((a, b) => (b.name || '').length - (a.name || '').length); // spezifischster zuerst
+  const f = treffer[0];
+  return {
+    name: f.name || '',
+    painpoint: f.problem || '',
+    transformation: f.transformation || '',
+    zielgruppe: f.zielgruppe || '',
+    pillar: f.content_hinweise?.pillar || '',
+  };
 }
 
 // ---------- Logik ----------
@@ -249,16 +367,25 @@ async function main() {
   // 🚀 MBA-Launch-Modus: Wenn heute ein Tag im Launch-Story-Plan ist, hat das VORRANG.
   const launchTag = storyPlan?.tage?.[dateInfo.datum_iso] || null;
 
+  // 📅 Wochenplan + 📆 Monatsplan der aktuellen Periode LIVE aus Notion (statt aus Funnel-Status zu raten).
+  const notionWoche = await fetchNotionWoche(dateInfo.datum_iso);
+  const notionMonat = await fetchNotionMonat(dateInfo.datum_iso);
+
   // Logik
   const profil = pickProfil(dateInfo.day_index);
   const disg = pickDisgAchse(wochenLog, dateInfo.day_index);
   const modus = pickModus(activeFunnels, dateInfo.day_index, profil);
-  const aktivesProdukt = pickAktivesProdukt(activeFunnels, profil, override);
+  const aktivesProdukt = override?.produkt || notionWoche?.title || pickAktivesProdukt(activeFunnels, profil, override);
   const storySaeule = pickStorySaeule(disg.haupt);
   const nadjaPersona = disgToNadja(disg.haupt);
 
-  // Wochen-Fokus aus Notion-Cache
-  const wochenFokus = wochenKontext?.fokus_der_woche || override?.thema || '(kein Fokus eingetragen)';
+  // Wochen-Fokus: Notion-Live zuerst, dann Cache/Override.
+  const wochenFokus = notionWoche?.fokus || wochenKontext?.fokus_der_woche || override?.thema || '(kein Fokus eingetragen)';
+  const salesPattern = notionWoche?.salesPattern || '';
+  const wochenCTA = notionWoche?.cta || '';
+  const monatKontext = notionMonat?.fokus || notionMonat?.title || '';
+  // 🎯 Produkt-Themen zum aktuellen Wochen-Produkt (Painpoint/Transformation/Pillar) für zielgenauen Content.
+  const produktThemen = matchProdukt(`${notionWoche?.title || ''} ${wochenFokus} ${wochenCTA}`, activeFunnels);
 
   // Telegram-DM bauen
   const profileLabel = profil === 'mentoring' ? '🟦 Mentoring' : '🟠 doTERRA';
@@ -293,10 +420,10 @@ Schick mir Sprachnotiz (Wispr Flow) oder kurz tippen.`;
   const text = `🌅 <b>Guten Morgen, Patricia!</b>
 
 <b>Heute:</b> ${dateInfo.wochentag}, ${dateInfo.datum_de}
-<b>Profil:</b> ${profileLabel}
+<b>Profil:</b> ${profileLabel}${monatKontext ? `\n<b>📆 Monat:</b> ${monatKontext}` : ''}
 <b>Modus:</b> ${modusLabel}
 <b>Aktives Produkt:</b> ${aktivesProdukt}
-<b>Wochen-Fokus:</b> ${wochenFokus}
+<b>Wochen-Fokus:</b> ${wochenFokus}${salesPattern ? `\n<b>Sales-Pattern:</b> ${salesPattern}` : ''}${wochenCTA ? `\n<b>🔗 CTA diese Woche:</b> ${wochenCTA}` : ''}${produktThemen?.painpoint ? `\n<b>🎯 Painpoint des Produkts:</b> ${produktThemen.painpoint}` : ''}
 
 ${launchBlock}<b>Käufertyp heute:</b> ${disg.haupt} (${nadjaPersona})
 <b>Story-Säule:</b> ${storySaeule}
@@ -327,6 +454,11 @@ ${frageBlock}
     story_saeule: storySaeule,
     aktives_produkt: aktivesProdukt,
     wochen_fokus: wochenFokus,
+    sales_pattern: salesPattern,
+    wochen_cta: wochenCTA,
+    monat_kontext: monatKontext,
+    produkt_themen: produktThemen,
+    wochen_fokus_quelle: notionWoche ? 'notion-live' : 'fallback',
     launch_tag: launchTag,
     kontext_snapshot: {
       kw: dateInfo.kw,
