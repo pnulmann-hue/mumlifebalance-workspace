@@ -1,0 +1,9 @@
+{
+  "_comment": "KW24 Mentoring-Karussell M5 'Die eine Sache' (Positionierung, MBA-Aufwärm). SCHEDULE BLOCKIERT: mediaUrls fehlen, weil Canva-MCP in diesem Cron-Lauf nicht verbunden ist (keine JPG-Export-Quelle). Sobald die 10 Folien als JPG/PNG vorliegen (Canva-Export ODER karussell-render Pfad B + GitHub-raw-Hosting), mediaUrls befüllen und 'node schedule-post.js --config=2026-06-08-mo-mentoring-m5-eine-sache.json' laufen lassen.",
+  "accountId": "41414",
+  "platform": "instagram",
+  "mediaType": "image",
+  "scheduledTime": "2026-06-08T19:30:00+02:00",
+  "text": "Letzte Woche hatte ich ein Gespräch mit einer Mentee, das mir noch tagelang nachgegangen ist.\n\nSie hat alles richtig gemacht, was man angeblich braucht — ein aufgeräumtes Profil, regelmässige Posts, ein paar tausend Followerinnen. Und trotzdem war am Ende vom Monat keine einzige Kundin dabei. Sie dachte, es liegt an der Reichweite, und ich kenne diesen Gedanken so gut, weil ich ihn selber jahrelang hatte.\n\nDabei lag es gar nicht daran, wie viele Leute sie erreicht, sondern worüber sie gesprochen hat. Sie hat über ihr Produkt geredet, statt über die Frau, der sie eigentlich hilft — und genau diese eine Sache haben wir umgestellt. Wie das Schritt für Schritt geht, hab ich dir hier auf die Folien gepackt.\n\nAm 24. Juni zeig ich dir das Ganze dann live: wie ich als vierfache Mama in 18 Stunden pro Woche zwei Businesses am Laufen halte, ohne mein Network zu verraten und ohne abends am Handy zu kleben.\n\nKommentier WEBINAR und ich schick dir den Anmeldelink, bevor er offiziell rausgeht.\n\n#mamabusiness #networkmarketing #onlinebusinessmama #positionierung #mamaceo",
+  "mediaUrls": []
+}
