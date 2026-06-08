@@ -14,8 +14,8 @@ Pflicht-Check zu Session-Start in: `/freitag-hooks`, `/montag`, `/karussell`, `/
 
 Lies `context/active-funnels.json`. Ein Launch ist aktiv, wenn ein Funnel ein `launch_window` hat, dessen Zeitraum (von `aufwaerm_start_datum`/`aufwaerm_start` bis `cart_close_datum`) das **heutige Datum** umschliesst — oder sein `phase_marker` in einer Launch-Phase steht.
 
-- **Aktuell aktiv:** MBA-Launch (Funnel-ID `mba`) · Aufwärmen ab 12.6. · Webinar Mi 24.6. · Cart 24.6.–5.7.2026 · Launch-Fenster **12.6.–6.7.2026**.
-- **Vor der Aufwärmphase** eines anstehenden Launches (heute < `aufwaerm_start_datum`) → noch **KEIN Produkt-/Webinar-/Anmelde-Push** in Content oder Stories, auch wenn der Wochenfokus den Launch schon nennt. Nur Reichweite + echte Verbindung, weicher Engagement-CTA. Der Teaser/Verkauf beginnt erst MIT der Aufwärmphase (Sneak-Peak-Tag). Beispiel: MBA-Aufwärmphase startet 12.6. → am 8.–11.6. noch reine Reichweite, kein MBA/Webinar.
+- **Aktuell aktiv:** MBA-Launch als **5-Tage-PIA-Bootcamp** (Pivot 8.6.2026 — KEIN Webinar mehr). Bootcamp-Promo ab 15.6. · Bootcamp Mo 29.6.–Fr 3.7. · Cart-Open Fr 3.7. → Cart-Close So 6.7. Lead-Event = Funnel `mama-business-bootcamp`, Cart = Funnel `mba`. (Webinar-Drehbuch archiviert: `story-plan-webinar-archiv.json` — das Bootcamp-Drehbuch wird noch gebaut.)
+- **Vor der Aufwärmphase** eines anstehenden Launches (heute < `aufwaerm_start_datum`) → noch **KEIN Produkt-/Webinar-/Anmelde-Push** in Content oder Stories, auch wenn der Wochenfokus den Launch schon nennt. Nur Reichweite + echte Verbindung, weicher Engagement-CTA. Der Teaser/Verkauf beginnt erst MIT der Aufwärmphase (Sneak-Peak-Tag). Beispiel: Bootcamp-Promo startet 15.6. → davor (8.–14.6.) noch reine Reichweite, kein Bootcamp-/MBA-Push.
 - **Kein Launch aktiv** → normale Wochenlogik (Monatsplan + 5-Typen-Formel + Reichweiten-Mix). Diese Datei ist dann nicht relevant.
 
 ---

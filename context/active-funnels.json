@@ -439,6 +439,48 @@
     },
 
     {
+      "id": "mama-business-bootcamp",
+      "name": "Mama-Business-Bootcamp (Arbeitstitel)",
+      "status": "in-aufbau",
+      "profile": "mentoring",
+      "typ": "0€ Lead-Event · 5-Tage-Bootcamp (PIA-powered)",
+      "preis_chf": 0,
+      "fuehrt_zu_mba": true,
+      "ist_lead_event_mba_launch": true,
+      "zielgruppe": "Mamas im Network, die sich verzetteln, viele Kurse halb gemacht haben und einen roten Faden + Begleitung suchen",
+      "problem": "Verzetteln, kein roter Faden, kein eigenes planbares Einkommen neben der Familie",
+      "transformation": "In 5 Tagen erster klarer Business-Schritt — live erlebt mit PIA (KI-Mentorin): personalisierte Bio, Hooks etc. für IHR Business",
+      "traffic_quellen": {
+        "wordpress_landing": "mumlifebalance.ch/mba-webinar → wird zur Bootcamp-Anmeldung umgebaut",
+        "telegram_gruppe": "Bootcamp-Gruppe (Beitritt nach Anmeldung)",
+        "instagram_dm": "Teaser-Posts + Stories (kostenloses Event, feed-erlaubt)"
+      },
+      "ac_integration": {
+        "liste_id": 2,
+        "formular_id": null,
+        "tags": { "anmeldung": "mama-business-bootcamp (neu anlegen, alt: Webinar-Tag 78 umwidmen)" },
+        "notes": "Cart-Mails #601-609 + Tag mba-kauf 79 werden recycelt."
+      },
+      "launch_window": {
+        "anmeldung_offen_datum": "2026-06-15",
+        "bootcamp_start_datum": "2026-06-29",
+        "bootcamp_ende_datum": "2026-07-03",
+        "cart_open_datum": "2026-07-03",
+        "cart_close_datum": "2026-07-06T23:59",
+        "modell": "Morgen-Impuls (Patricia 1 Sprachnotiz/Tag, Bot+PIA tragen den Rest; live nur Tag 1 Kick-off + Tag 5 Finale)",
+        "bauplan": "outputs/produkte/mba-launch/challenge-launch-plan.md",
+        "produkt_brief": "outputs/produkte/bootcamp/00-bootcamp-produkt.md"
+      },
+      "content_hinweise": {
+        "pillar": "Vom Verzetteln zum roten Faden — Business neben der Familie",
+        "teaser_pattern": "z.B. '5 Hook-Ideen anpassbar an dein Network' → CTA: im Bootcamp live mit PIA massgeschneidert",
+        "feed_regel": "Bootcamp ist KOSTENLOS → Feed darf einladen (Link in Bio). MBA/Preis/Cart bleibt raus aus dem Feed.",
+        "pia_scope": "Kern: Tag-1-Bio + Tag-2-Hooks (Self-Service via PIA-Bot). Tag 3-5 leichter falls Build knapp."
+      },
+      "launched_on": null
+    },
+
+    {
       "id": "mba",
       "name": "Mum Business Academy (MBA)",
       "status": "warteliste-vor-launch",
@@ -474,16 +516,17 @@
       },
 
       "launch_window": {
-        "aufwaerm_start_datum": "2026-06-12",
-        "webinar_datum": "2026-06-24",
-        "cart_open_datum": "2026-06-24",
-        "pioneer_ende_datum": "2026-06-27T23:59",
-        "cart_close_datum": "2026-07-05T23:59",
-        "programmstart": "Juli 2026",
-        "story_plan": "outputs/produkte/mba-launch/story-plan.json",
-        "story_plan_tag_fuer_tag": "outputs/produkte/mba-launch/story-plan-tag-fuer-tag.md",
-        "launch_kalender": "outputs/produkte/mba-launch/launch-kalender-juli-2026.md",
-        "scope": "Webinar + Cart-Window (Julia-Trost-Methodik). Aufwärmphase ab 12.6., Webinar/Cart-Open Mi 24.6., Pioneer 997 bis Sa 27.6. 23:59, Final 1347 bis Cart-Close So 5.7. 23:59.",
+        "modell": "5-Tage-PIA-Bootcamp statt Webinar (Pivot 8.6.2026)",
+        "aufwaerm_start_datum": "2026-06-15",
+        "bootcamp_start_datum": "2026-06-29",
+        "bootcamp_ende_datum": "2026-07-03",
+        "cart_open_datum": "2026-07-03",
+        "cart_close_datum": "2026-07-06T23:59",
+        "programmstart": "Mitte August 2026 (nach Sommerferien; erster Live-Call nach Ferien). Kurse sofort zugänglich.",
+        "lead_event": "mama-business-bootcamp (siehe eigener Funnel-Eintrag)",
+        "bauplan": "outputs/produkte/mba-launch/challenge-launch-plan.md",
+        "scope": "Kostenloses 5-Tage-Mama-Business-Bootcamp (Mo 29.6.-Fr 3.7., Telegram, PIA-powered) → Cart-Open Fr 3.7. → Cart-Close So 6.7. 23:59. Pioneer 997 / Final 1347. Morgen-Impuls-Modell.",
+        "webinar_archiviert": "Webinar-Assets archiviert: story-plan → story-plan-webinar-archiv.json, launch-kalender-juli-2026.md, AC-Mails #596-600 (Webinar-Reminder ersetzt). Recycelt: Cart-Mails #601-609, Tag mba-kauf 79.",
         "ziele": { "mba_verkaeufe": 8 }
       },
 
