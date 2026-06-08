@@ -165,6 +165,66 @@ async def cmd_status(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # ========================================
 # Scheduled Tasks
 # ========================================
+async def task_business_news_montag():
+    """Mo 08:00 — Wochen-Business-News-Digest (KI + Onlinemarketing + Network Marketing + Mama-CEO)."""
+    if not config.TELEGRAM_CHAT_ID:
+        return
+    logger.info("Business-News-Digest startet")
+    try:
+        from feeds_business import fetch_all_feeds
+        from summarizer_business import curate_all
+
+        articles = await asyncio.to_thread(fetch_all_feeds)
+        total = sum(len(a) for a in articles.values())
+        if total == 0:
+            logger.info("Keine News-Artikel gefunden")
+            return
+
+        articles = await asyncio.to_thread(curate_all, articles)
+        heute = date.today()
+        woche_zurueck = heute - timedelta(days=7)
+        date_range = f"{woche_zurueck.strftime('%d.%m.')} - {heute.strftime('%d.%m.%Y')}"
+
+        msg = f"📰 *Business Wochen-News*\n📅 {date_range}\n\n"
+        emojis = {
+            "KI & AI": "🤖", "KI & Claude Code": "🤖",
+            "Onlinemarketing": "📊", "Instagram Marketing": "📱",
+            "Network Marketing": "🤝",
+            "Mama-CEO & Zeitmanagement": "⏰",
+            "Zeitmanagement & Mama-CEO-Struktur": "⏰",
+            "Online-Business & Marketing": "💼",
+        }
+        for category, arts in articles.items():
+            if not arts:
+                continue
+            emoji = emojis.get(category, "📌")
+            msg += f"{emoji} *{category}*\n" + "━" * 15 + "\n"
+            for i, a in enumerate(arts, 1):
+                title = a["title"].replace("*", "").replace("_", "")
+                summary = a.get("summary", "")
+                msg += f"{i}. *{title}*\n{summary}\n🔗 [Link]({a['link']})\n\n"
+
+        # Aufteilen in Chunks (Telegram 4000 Limit)
+        max_len = 3800
+        chunks = []
+        remaining = msg
+        while remaining:
+            if len(remaining) <= max_len:
+                chunks.append(remaining)
+                break
+            split_at = remaining.rfind("\n", 0, max_len)
+            if split_at == -1:
+                split_at = max_len
+            chunks.append(remaining[:split_at])
+            remaining = remaining[split_at:].lstrip("\n")
+
+        for c in chunks:
+            await _send_telegram(c)
+        logger.info(f"Business-News-Digest gesendet ({len(chunks)} Chunks)")
+    except Exception:
+        logger.exception("Business-News-Digest-Fehler")
+
+
 async def task_morgen_briefing():
     """Mo-Fr 06:30 — Tagesbriefing + News."""
     heute = date.today()
@@ -320,6 +380,13 @@ async def main():
         ),
         id="mittag_reminder",
         name="Mo-Fr 12:00 Mittag-Reminder",
+    )
+    # Mo 08:00 — Business-News-Digest (KI/Marketing/Mama-CEO)
+    scheduler.add_job(
+        task_business_news_montag,
+        CronTrigger(day_of_week=0, hour=8, minute=0, timezone=tz),
+        id="business_news_montag",
+        name="Mo 08:00 Business-News-Digest",
     )
     scheduler.start()
     logger.info(f"Scheduler aktiv: 06:30 + 12:00 {config.TIMEZONE}")
