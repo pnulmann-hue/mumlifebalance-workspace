@@ -58,6 +58,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[10-saeule-2-MASTER]]
 - [[10-saeule-3-MASTER]]
 - [[13-thrivecart-saeule-2-setup]]
+- [[13-thrivecart-saeule-3-setup]]
 - [[_KRITISCHER-AUDIT]]
 - [[_NEXT-SESSION-HANDOFF]]
 - [[_NOTION-MAI-EINTRAEGE]]

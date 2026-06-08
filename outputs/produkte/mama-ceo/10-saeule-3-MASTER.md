@@ -617,8 +617,8 @@ Template-Seite: `3637078e-8b7e-8121-9f95-d2b377b283a7` („🎯 Mama-CEO Master-
 - ✅ 90-Tage-Tracker + Mama-CEO-Matrix + Workflows + Produkte + Content-Management bereits im Template.
 - ⏳ **Einzige offene Mentee-Voraussetzung:** Patricia schaltet „Im Web veröffentlichen" + „Duplizieren als Vorlage erlauben" ein → Link in ThriveCart L3.5 + Telegram.
 
-### ThriveCart-Setup-File
-`13-thrivecart-saeule-3-setup.md` neu anlegen (analog zu Säule 2) mit den 6 Beschreibungstexten + Säulen-Header + Upload-Checkliste.
+### ThriveCart-Setup-File — ✅ gebaut 2026-06-04
+`13-thrivecart-saeule-3-setup.md` — Säulen-Header + 6 Beschreibungstexte (copy-paste-ready) + Upload-Checkliste + Hinweis zum Notion-Duplicate-Link in L3.5.
 
 ---
 
