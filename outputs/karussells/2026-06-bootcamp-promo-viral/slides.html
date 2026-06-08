@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bootcamp-Promo Karussell (Viral nach Mentor-Methode)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --petrol: #12828c;
+        --dunkelblau: #29556d;
+        --creme: #f1ecdd;
+        --orange: #dc822e;
+        --text: #0c1c30;
+        --rot: #c14d4d;
+        --grun: #4d9c6e;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #1a1a1a;
+        font-family: "Source Sans 3", sans-serif;
+        color: var(--text);
+        padding: 40px;
+      }
+      .slide {
+        width: 1080px;
+        height: 1350px;
+        position: relative;
+        overflow: hidden;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 80px;
+      }
+      .slide.bg-creme  { background: var(--creme); color: var(--text); }
+      .slide.bg-petrol { background: var(--petrol); color: #fff; }
+      .slide.bg-orange { background: var(--orange); color: #fff; }
+
+      .eyebrow {
+        font-family: "Source Sans 3"; font-weight: 700;
+        font-size: 32px; letter-spacing: 0.18em; text-transform: uppercase;
+        color: var(--petrol);
+        margin-bottom: 36px;
+      }
+      .bg-petrol .eyebrow, .bg-orange .eyebrow { color: rgba(255,255,255,0.85); }
+
+      .footer {
+        position: absolute; bottom: 50px; left: 80px; right: 80px;
+        display: flex; justify-content: space-between; align-items: center;
+        font-family: "Source Sans 3"; font-weight: 600; font-size: 24px;
+        color: rgba(12, 28, 48, 0.55); letter-spacing: 0.08em;
+      }
+      .bg-petrol .footer, .bg-orange .footer { color: rgba(255, 255, 255, 0.55); }
+      .footer .swipe {
+        display: inline-flex; align-items: center; gap: 8px;
+      }
+
+      /* === SLIDE 1 — HOOK === */
+      .s1 { justify-content: center; align-items: center; text-align: center; }
+      .s1 .hook {
+        font-family: "Philosopher"; font-weight: 700;
+        font-size: 130px; line-height: 1.05;
+        color: var(--dunkelblau);
+      }
+      .s1 .hook .pop { color: var(--petrol); font-style: italic; }
+      .s1 .date-pill {
+        margin-top: 56px;
+        background: #fff; color: var(--petrol);
+        padding: 18px 44px; border-radius: 20px;
+        font-family: "Source Sans 3"; font-weight: 700; font-size: 56px;
+        box-shadow: 0 14px 36px rgba(18, 130, 140, 0.25);
+      }
+
+      /* === SLIDE 2 — SPANNUNG === */
+      .s2 { justify-content: center; }
+      .s2 .body {
+        font-family: "Source Sans 3"; font-weight: 400;
+        font-size: 60px; line-height: 1.35;
+        color: var(--text);
+      }
+      .s2 .body .pop { color: var(--petrol); font-weight: 700; }
+      .s2 .body .underline {
+        text-decoration: underline;
+        text-decoration-color: var(--orange);
+        text-decoration-thickness: 6px;
+        text-underline-offset: 8px;
+      }
+
+      /* === SLIDE 3/6 (LIST CREME) === */
+      .list-slide { justify-content: flex-start; padding-top: 140px; }
+      .list-slide .headline {
+        font-family: "Philosopher"; font-weight: 700;
+        font-size: 96px; line-height: 1.05;
+        color: var(--dunkelblau);
+        margin-bottom: 60px;
+      }
+      .list-slide .headline .pop { color: var(--petrol); font-style: italic; }
+      .list-row {
+        display: flex; gap: 32px; align-items: flex-start;
+        margin-bottom: 36px;
+      }
+      .list-row .icon {
+        font-size: 60px; line-height: 1; flex-shrink: 0; padding-top: 8px;
+      }
+      .list-row .text {
+        font-family: "Source Sans 3"; font-weight: 600;
+        font-size: 50px; line-height: 1.3;
+        color: var(--text);
+      }
+      .list-row .text .pop { color: var(--petrol); }
+
+      /* === SLIDE 4 — ✅-LIST PETROL === */
+      .s4 { justify-content: flex-start; padding-top: 140px; }
+      .s4 .headline {
+        font-family: "Philosopher"; font-weight: 700;
+        font-size: 96px; line-height: 1.05;
+        color: #fff;
+        margin-bottom: 60px;
+      }
+      .s4 .headline .italic-pop { font-style: italic; color: #fff; opacity: 0.95; }
+      .s4 .list-row .text {
+        color: #fff;
+      }
+      .s4 .list-row .text .pop { color: #fff; font-weight: 700; background: rgba(255,255,255,0.18); padding: 0 12px; border-radius: 8px; }
+
+      /* === SLIDE 5 — PIA === */
+      .s5 { justify-content: center; align-items: center; text-align: center; }
+      .s5 .headline {
+        font-family: "Philosopher"; font-weight: 700;
+        font-size: 90px; line-height: 1.05;
+        color: var(--dunkelblau);
+        margin-bottom: 48px;
+      }
+      .s5 .pia-name {
+        font-family: "Philosopher"; font-weight: 700;
+        font-size: 320px; line-height: 1;
+        color: var(--petrol);
+        letter-spacing: -0.02em;
+        margin-bottom: 48px;
+      }
+      .s5 .pia-dot { color: var(--orange); }
+      .s5 .body {
+        font-family: "Source Sans 3"; font-weight: 400;
+        font-size: 46px; line-height: 1.4;
+        color: var(--text);
+        max-width: 860px;
+        opacity: 0.88;
+      }
+      .s5 .body .pop { color: var(--petrol); font-weight: 700; }
+
+      /* === SLIDE 7 — CTA === */
+      .s7 { justify-content: center; align-items: center; text-align: center; }
+      .s7 .eyebrow { color: rgba(255,255,255,0.9); margin-bottom: 28px; }
+      .s7 .big-date {
+        font-family: "Philosopher"; font-weight: 700; font-style: italic;
+        font-size: 180px; line-height: 1.0;
+        color: #fff;
+        margin-bottom: 56px;
+      }
+      .s7 .body {
+        font-family: "Source Sans 3"; font-weight: 600;
+        font-size: 54px; line-height: 1.35;
+        color: #fff;
+        max-width: 900px;
+        margin-bottom: 56px;
+      }
+      .s7 .body .pop {
+        background: #fff; color: var(--petrol);
+        padding: 6px 24px; border-radius: 12px;
+        font-weight: 700;
+      }
+      .s7 .arrow-row {
+        display: flex; align-items: center; justify-content: center;
+        gap: 12px;
+      }
+      .s7 .arrow-line { width: 200px; height: 8px; background: var(--orange); border-radius: 4px; }
+      .s7 .arrow-head {
+        width: 0; height: 0;
+        border-top: 22px solid transparent;
+        border-bottom: 22px solid transparent;
+        border-left: 32px solid var(--orange);
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- SLIDE 1 — HOOK -->
+    <div class="slide bg-creme s1">
+      <div class="eyebrow">Bootcamp · 29.6. – 3.7.</div>
+      <div class="hook">
+        Dein <span class="pop">roter Faden</span><br/>
+        in 5 Tagen —<br/>
+        ohne Webinar
+      </div>
+      <div class="footer">
+        <span>@mum.life.balance</span>
+        <span class="swipe">Swipe →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 — SPANNUNG -->
+    <div class="slide bg-creme s2">
+      <div class="eyebrow">Vielleicht kennst du das</div>
+      <p class="body">
+        Du <span class="underline">verzettelst dich</span> seit Monaten zwischen Bügelwäsche, Network-Aufbau und dem <span class="pop">„irgendwann mein eigenes Ding"</span>. Die Sommerferien starten in 4 Wochen. Du willst rein als Mama mit Plan.
+      </p>
+      <div class="footer">
+        <span>@mum.life.balance</span>
+        <span class="swipe">Swipe →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 — ❌-LISTE -->
+    <div class="slide bg-creme s3 list-slide">
+      <div class="headline">Was du <span class="pop"><em>nicht</em></span> brauchst</div>
+      <div class="list-row"><span class="icon">❌</span><span class="text">Ein 90-Minuten-Webinar das dich verwirrter macht</span></div>
+      <div class="list-row"><span class="icon">❌</span><span class="text">Ein 5'000-CHF-Coaching mit Wartezeit bis September</span></div>
+      <div class="list-row"><span class="icon">❌</span><span class="text">Ein zweites Studium um endlich anzufangen</span></div>
+      <div class="list-row"><span class="icon">❌</span><span class="text">Eine Strategie-Power-Hour die nirgendwo hinführt</span></div>
+      <div class="footer">
+        <span>@mum.life.balance</span>
+        <span class="swipe">Swipe →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 4 — ✅-LISTE -->
+    <div class="slide bg-petrol s4 list-slide">
+      <div class="headline">Was du <span class="italic-pop"><em>wirklich</em></span> brauchst</div>
+      <div class="list-row"><span class="icon">✅</span><span class="text"><span class="pop">5 Tage</span> · 29. Juni bis 3. Juli</span></div>
+      <div class="list-row"><span class="icon">✅</span><span class="text"><span class="pop">1 Sprachnotiz</span> von mir pro Morgen</span></div>
+      <div class="list-row"><span class="icon">✅</span><span class="text">Deine KI-Mentorin <span class="pop">PIA</span> – kennt mein Mentoring</span></div>
+      <div class="list-row"><span class="icon">✅</span><span class="text"><span class="pop">1 Stunde am Tag</span> – während die Kinder spielen</span></div>
+      <div class="footer">
+        <span>@mum.life.balance</span>
+        <span class="swipe">Swipe →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 5 — PIA -->
+    <div class="slide bg-creme s5">
+      <div class="eyebrow">Deine KI-Mentorin</div>
+      <div class="pia-name">PIA<span class="pia-dot">.</span></div>
+      <p class="body">
+        Eine KI gefüttert mit meinem kompletten Mentoring-Wissen. Du erzählst ihr <span class="pop">deine</span> Situation — sie liefert deine Bio, deine Hooks, deine Wochenstruktur. Personalisiert. <span class="pop">In Minuten, nicht in Monaten.</span>
+      </p>
+      <div class="footer">
+        <span>@mum.life.balance</span>
+        <span class="swipe">Swipe →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 6 — OUTCOME -->
+    <div class="slide bg-creme s6 list-slide">
+      <div class="headline">Nach Tag 5 hast du</div>
+      <div class="list-row"><span class="icon">→</span><span class="text">Deine <span class="pop">Bio</span> die endlich greift</span></div>
+      <div class="list-row"><span class="icon">→</span><span class="text">3 <span class="pop">Hooks</span> für deine Nische</span></div>
+      <div class="list-row"><span class="icon">→</span><span class="text">Deine <span class="pop">Wochenstruktur</span> als Mama-CEO</span></div>
+      <div class="list-row"><span class="icon">→</span><span class="text">Den <span class="pop">roten Faden</span> für den Sommer</span></div>
+      <div class="footer">
+        <span>@mum.life.balance</span>
+        <span class="swipe">Swipe →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 7 — CTA -->
+    <div class="slide bg-petrol s7">
+      <div class="eyebrow">Bootcamp · Anmeldung läuft</div>
+      <div class="big-date">29.6. – 3.7.</div>
+      <p class="body">
+        Kommentier <span class="pop">BOOTCAMP</span><br/>
+        — ich schick dir den Link.<br/>
+        Kostenlos.
+      </p>
+      <div class="arrow-row">
+        <div class="arrow-line"></div>
+        <div class="arrow-head"></div>
+      </div>
+      <div class="footer">
+        <span>@mum.life.balance</span>
+        <span></span>
+      </div>
+    </div>
+
+  </body>
+</html>
