@@ -16,7 +16,7 @@ PIA (Patricia Intelligence Assistant) — die **erste KI-Mentorin SPEZIELL für 
 **Killer-USP (Patricia-Entscheidung 2.6.2026):** Network-spezialisiert. Kennt Firmen (doTERRA, Forever, Mary Kay, Ringana, Younique etc.), Rang-Sprache, Compliance-Regeln, Crossline-Dynamik, Team-Aufbau, Convention-Realität. Generische KI-Tools (ChatGPT, ARIA) verstehen das nicht.
 
 Marketing-Pitch:
-> „Die erste KI-Mentorin SPEZIELL für Mamas im Network. Patricia hat 10+ Jahre Network-Erfahrung + KI-Stack reingebaut. PIA versteht Crossline-Situationen, Team-Aufbau, Compliance-Regeln deiner Firma und Mama-Realität — generische KI-Tools verstehen das nicht."
+> „Die erste KI-Mentorin SPEZIELL für Mamas im Network. Patricia ist seit 2018 im Network + hat ihren KI-Stack reingebaut. PIA versteht Crossline-Situationen, Team-Aufbau, Compliance-Regeln deiner Firma und Mama-Realität — generische KI-Tools verstehen das nicht."
 
 ## Stufe 0 — Slash-Command `/mentee-onboard` (1 Tag)
 

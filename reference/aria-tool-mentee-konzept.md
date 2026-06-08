@@ -107,7 +107,7 @@ Das verändert die ganze Positionierung von „eigener KI-Tool-Konkurrent zu ARI
 
 ### Marketing-Pitch (neu)
 
-> „Die erste KI-Mentorin SPEZIELL für Mamas im Network. Patricia hat 10+ Jahre Network-Erfahrung + KI-Stack reingebaut. PIA versteht Crossline-Situationen, Team-Aufbau, Compliance-Regeln deiner Firma und Mama-Realität — generische KI-Tools verstehen das nicht."
+> „Die erste KI-Mentorin SPEZIELL für Mamas im Network. Patricia ist seit 2018 im Network + hat ihren KI-Stack reingebaut. PIA versteht Crossline-Situationen, Team-Aufbau, Compliance-Regeln deiner Firma und Mama-Realität — generische KI-Tools verstehen das nicht."
 
 ### Konsequenzen für die Build-Roadmap
 

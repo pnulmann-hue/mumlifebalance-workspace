@@ -70,7 +70,7 @@ Für dich, wenn du Mama bist, im Network (oder am Anfang von deinem eigenen Onli
 
 ## 8. ÜBER PATRICIA
 
-Ich bin Patricia — vierfache Mama, über 10 Jahre im Network. Ich hab selbst jahrelang vor mich hin gedümpelt, bis ich endlich ein System hatte, das neben der Familie funktioniert. Genau das baue ich in diesen 5 Tagen mit dir. *(+ Foto aus Shootingbildern)*
+Ich bin Patricia — vierfache Mama, seit 2018 im Network. Ich hab selbst jahrelang vor mich hin gedümpelt, bis ich endlich ein System hatte, das neben der Familie funktioniert. Genau das baue ich in diesen 5 Tagen mit dir. *(+ Foto aus Shootingbildern)*
 
 ---
 
