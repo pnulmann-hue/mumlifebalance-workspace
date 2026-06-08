@@ -31,6 +31,10 @@ const NOTION_TOKEN = process.env.NOTION_API_KEY || process.env.NOTION_TOKEN;
 const NOTION_WOCHEN_DB = process.env.NOTION_DB_WOCHENPLANUNG || '2ae7078e-8b7e-81ef-a769-cdb1a6584c70';
 const NOTION_MONAT_DB = process.env.NOTION_DB_MONATSPLANUNG || '2ae7078e-8b7e-8171-a760-c233083c26b6';
 
+// Anthropic (für den proaktiven Julia-Story-Vorschlag im Kein-Launch-Modus)
+const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
+const ANTHROPIC_MODEL = process.env.STORY_IDEE_MODEL || 'claude-haiku-4-5-20251001';
+
 console.log('Story-Reminder gestartet.');
 console.log(`STORY_BOT_TOKEN: ${TELEGRAM_TOKEN ? '✅ gesetzt (Länge ' + TELEGRAM_TOKEN.length + ')' : '❌ fehlt'}`);
 console.log(`STORY_CHAT_ID: ${CHAT_ID ? '✅ gesetzt (' + CHAT_ID + ')' : '❌ fehlt'}`);
@@ -298,6 +302,88 @@ function pickStorySaeule(disg) {
   return 'Persönlichkeit'; // Grün
 }
 
+// ---------- Julia-Story-Vorschlag (Kein-Launch-Modus) ----------
+
+// Generiert EINEN konkreten, spezifischen Story-Vorschlag aus Julias 3-Säulen-Ideen,
+// gematcht auf den heutigen Kontext. Gibt einen kurzen Text zurück oder null (kein Key / Fehler).
+async function generateJuliaIdee(ctx) {
+  if (!ANTHROPIC_KEY) {
+    console.log('ANTHROPIC_API_KEY fehlt — proaktiver Julia-Vorschlag wird uebersprungen.');
+    return null;
+  }
+  let bibliothek = '';
+  try {
+    bibliothek = await fs.readFile(path.join(REPO_ROOT, 'context', 'julia-story-ideen.md'), 'utf8');
+    bibliothek = bibliothek.slice(0, 8000);
+  } catch {
+    console.log('julia-story-ideen.md nicht lesbar — Vorschlag wird uebersprungen.');
+    return null;
+  }
+
+  const prompt = `Du bist Patricias Story-Ideen-Assistentin und machst ihr EINEN konkreten, spezifischen Vorschlag, was sie HEUTE in ihre Instagram-Stories packen könnte. Kein generischer Allgemeinplatz — etwas, das zum heutigen Kontext passt und sofort umsetzbar ist.
+
+HEUTIGER KONTEXT:
+- Profil: ${ctx.profil === 'mentoring' ? 'Mentoring (Network-Mamas, die ein eigenes Business aufbauen wollen)' : 'doTERRA (erschöpfte Mamas 35+, Vormenopause/Energie)'}
+- Story-Säule heute: ${ctx.storySaeule}
+- Käufertyp heute: ${ctx.disg} (${ctx.persona})
+- Aktives Produkt/Funnel: ${ctx.produkt}${ctx.painpoint ? `\n- Painpoint des Produkts: ${ctx.painpoint}` : ''}${ctx.wochenFokus ? `\n- Wochen-Fokus: ${ctx.wochenFokus}` : ''}${ctx.monatKontext ? `\n- Monats-Kontext: ${ctx.monatKontext}` : ''}${ctx.wochenCTA ? `\n- CTA der Woche: ${ctx.wochenCTA}` : ''}
+
+JULIAS STORY-IDEEN-BIBLIOTHEK (Muster, nicht 1:1 kopieren):
+${bibliothek}
+
+REGELN (zwingend):
+- Patricias Stimme: warm, wie am Küchentisch mit einer Freundin, DU-Anrede für den Schmerz.
+- KEINE Stakkato-Sätze (nie 3 abgehackte Subjekt-Verb-Punkt-Sätze; verbinde mit "und", "weil", "aber", "bis").
+- Schweizer ss statt ß, echte Umlaute (ä/ö/ü).
+- KEINE erfundenen Zahlen.
+- NIEMALS die Formulierung "stell dir vor".
+- Erwähne NIEMALS den Namen "Julia" oder eine Mentorin.
+- ${ctx.profil === 'doterra' ? 'doTERRA: kein Heilversprechen, "bei mir war"-Frame.' : 'Network-Mama-Realität konkret (Teamchat, Downline, Produktbilder, warme Liste).'}
+
+ANTWORTE GENAU IN DIESEM FORMAT (max 60 Wörter, kein Vorspann):
+Idee: <1-2 Sätze: konkreter Aufhänger/Szene, die sie heute zeigen oder erzählen könnte>
+Muster: <Säule + welches Julia-Muster, kurz>
+CTA: <konkreter CTA, passend zum aktiven Produkt>`;
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'x-api-key': ANTHROPIC_KEY,
+        'anthropic-version': '2023-06-01',
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: ANTHROPIC_MODEL,
+        max_tokens: 350,
+        messages: [{ role: 'user', content: prompt }],
+      }),
+    });
+    if (!res.ok) {
+      console.log(`Anthropic-Call fehlgeschlagen (HTTP ${res.status}) — Vorschlag wird uebersprungen.`);
+      return null;
+    }
+    const data = await res.json();
+    const text = (data.content || []).map(b => b.text || '').join('').trim();
+    return text || null;
+  } catch (err) {
+    console.log('Anthropic-Fehler:', err.message);
+    return null;
+  }
+}
+
+// Wandelt den Vorschlags-Rohtext (Idee/Muster/CTA-Zeilen) in HTML für Telegram um.
+function formatVorschlagHtml(roh) {
+  if (!roh) return '';
+  const escaped = roh
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const withBold = escaped
+    .replace(/^Idee:/im, '<b>Idee:</b>')
+    .replace(/^Muster:/im, '<b>Muster:</b>')
+    .replace(/^CTA:/im, '<b>CTA:</b>');
+  return `💡 <b>Mein Vorschlag für heute</b> (aus deiner Story-Ideen-Bibliothek):\n${withBold}`;
+}
+
 // ---------- Telegram ----------
 
 async function sendTelegramMessage(text) {
@@ -387,6 +473,23 @@ async function main() {
   // 🎯 Produkt-Themen zum aktuellen Wochen-Produkt (Painpoint/Transformation/Pillar) für zielgenauen Content.
   const produktThemen = matchProdukt(`${notionWoche?.title || ''} ${wochenFokus} ${wochenCTA}`, activeFunnels);
 
+  // 💡 Kein-Launch-Modus: proaktiven, konkreten Story-Vorschlag aus Julias Ideen-Bibliothek generieren.
+  let vorschlagRoh = null;
+  if (!launchTag) {
+    vorschlagRoh = await generateJuliaIdee({
+      profil,
+      storySaeule,
+      disg: disg.haupt,
+      persona: nadjaPersona,
+      produkt: aktivesProdukt,
+      painpoint: produktThemen?.painpoint || '',
+      wochenFokus,
+      monatKontext,
+      wochenCTA,
+    });
+  }
+  const vorschlagBlock = vorschlagRoh ? `${formatVorschlagHtml(vorschlagRoh)}\n\n—\n\n` : '';
+
   // Telegram-DM bauen
   const profileLabel = profil === 'mentoring' ? '🟦 Mentoring' : '🟠 doTERRA';
   const modusLabel = launchTag
@@ -412,8 +515,7 @@ async function main() {
     : `Bevor ich rendere — was war heute / gestern bei dir?
 
 • Was hast du erlebt? (Konflikt, Erfolg, peinlicher Moment, Erkenntnis, Familien-Szene...)
-• Hast du grad einen Gedanken zum Thema?
-• Oder soll ich aus deinem Standard-Pool ziehen? Tipp dann nur "<b>standard</b>".
+• Hast du grad einen Gedanken zum Thema?${vorschlagRoh ? '\n• Gefällt dir mein Vorschlag oben? Tipp "<b>ja</b>" — dann bau ich den.\n• Oder "<b>standard</b>" für eine andere Idee aus dem Pool.' : '\n• Oder soll ich aus deinem Standard-Pool ziehen? Tipp dann nur "<b>standard</b>".'}
 
 Schick mir Sprachnotiz (Wispr Flow) oder kurz tippen.`;
 
@@ -430,7 +532,7 @@ ${launchBlock}<b>Käufertyp heute:</b> ${disg.haupt} (${nadjaPersona})
 
 —
 
-${frageBlock}
+${vorschlagBlock}${frageBlock}
 
 —
 
@@ -458,6 +560,7 @@ ${frageBlock}
     wochen_cta: wochenCTA,
     monat_kontext: monatKontext,
     produkt_themen: produktThemen,
+    vorschlag_idee: vorschlagRoh,
     wochen_fokus_quelle: notionWoche ? 'notion-live' : 'fallback',
     launch_tag: launchTag,
     kontext_snapshot: {

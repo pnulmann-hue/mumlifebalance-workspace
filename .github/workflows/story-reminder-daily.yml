@@ -29,6 +29,8 @@ jobs:
           STORY_CHAT_ID: ${{ secrets.STORY_CHAT_ID }}
           # Repo-Secret heisst NOTION_TOKEN -- auf NOTION_API_KEY gemappt (wie cockpit-daily).
           NOTION_API_KEY: ${{ secrets.NOTION_TOKEN }}
+          # Für den proaktiven Julia-Story-Vorschlag im Kein-Launch-Modus (Haiku).
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/story-reminder/send-daily-reminder.js
 
       - name: Commit briefing-pending state
