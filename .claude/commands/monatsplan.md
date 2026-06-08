@@ -249,6 +249,14 @@ Stories kommen täglich über den Story-Bot + `/story`. Der Monatsplan hält pro
 - **Im Launch-Fenster:** `/story` baut nach der **Funnel-/Launch-Strategie** — `outputs/produkte/mba-launch/story-plan.json` + `context/julia-launch-story-bausteine.md` (Tag für Tag, Slide für Slide).
 - **Ausserhalb Launch:** `/story` baut nach den **Story-Vorlagen** — `context/julia-insta-stories-anleitung.md` (10 Templates) + `julia-stories-die-verkaufen.md` + `julia-story-ideen.md`.
 
+### 4.5f) Monats-Blogartikel + Newsletter (gehören in den Monatsplan)
+
+- **Blogartikel (1×/Monat):** Thema zum Monats-/Launch-Fokus festlegen → wird via `/blog` erstellt (SEO + Cascade-Output, der Stories/Karussell/Reel/Newsletter speist). Hier festhalten: Thema · Keyword · Ziel-CTA.
+- **Mail-Newsletter:** Rhythmus + Themen pro Woche festlegen.
+  - **Im Launch:** die Launch-Mail-Sequenz (Webinar-Einladung → Confirmation → Sales → No-Show).
+  - **Sonst:** Mehrwert-Newsletter, der auf den Wochenfokus + das aktuelle Produkt führt (1 Emotion + 1 konkreter Tipp + 1 CTA).
+- Blog + Newsletter ziehen **denselben Painpoint/Pillar** wie die Posts (aus 4.5a/4.5c) → ein roter Faden über Blog · Newsletter · Posts · Stories. Regeln gelten überall: keine Stakkato, echte Umlaute/ss, keine erfundenen Zahlen, kein „Julia"-Name im Kunden-Output, doTERRA = Compliance.
+
 ---
 
 ## Phase 5 · Speichern

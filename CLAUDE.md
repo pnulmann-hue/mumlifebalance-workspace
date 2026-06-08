@@ -196,9 +196,11 @@ Beispiel: `/implement plans/2026-01-28-wettbewerbs-analyse-command.md`
 
 Volle Doku: `reference/montag-workflow-v2.md`.
 
-### /monatsplan (Strategie-Layer seit 2026-05-09)
+### /monatsplan (Strategie-Layer seit 2026-05-09 · Content-Vorplanung seit 2026-06-07)
 
-**Zweck:** Den **Strategie-Layer** für einen kompletten Monat in ~30 Min festschnüren — damit `/freitag-hooks` jede Woche frisch und reaktiv arbeitet, aber innerhalb einer klaren Monats-Storyline.
+**Zweck:** Den **Strategie-Layer** für einen kompletten Monat festschnüren — UND seit 2026-06 den **kompletten Monats-Content vorplanen** (Phase 4.5), damit Patricia in 1-2 Tagen alle Reels für den ganzen Monat abdrehen kann.
+
+**Phase 4.5 (Content-Vorplanung) liefert:** Marktanalyse pro Profil · Vormonats-Content-Analyse (Top/Flop) · pro Woche 5 Beiträge (5 Content-Typen, **mind. 2 reine Reichweiten-Posts**, Hooks nach `hook-framework`-Regeln, Format-Mix Content-Radar) thema-matched zum Wochen-Produkt · **Reel-Dreh-Liste zum Batch-Filmen** · **Monats-Blogartikel** (via /blog) · **Mail-Newsletter** (Launch-Sequenz oder Mehrwert). **Stories bleiben täglich** über `/story` (im Launch nach Julia-Launch-Drehbuch, sonst nach Julia-Story-Vorlagen). Speist die Notion-Wochenpläne, die der Story-Bot liest.
 
 **Wann ausführen:** Letzter Sonntag des Vor-Monats (z.B. 28.4. für Mai).
 
