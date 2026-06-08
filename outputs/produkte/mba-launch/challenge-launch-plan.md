@@ -23,6 +23,13 @@ tags: [produkt, launch, mba, challenge, intern]
 
 → 3 Wochen Vorlauf ab heute. Cart läuft async (Mails + Seite) — braucht Patricia nicht live, auch wenn Ferien anfangen.
 
+### Kohorten-Logik (Mama-CEO-Pilot → MBA)
+- Die **Mama-CEO-Pilot-Ladys (5 Mamas) schliessen Mama-CEO im Juni/Juli ab**.
+- **Ab Ende Juli** wechseln sie in die **MBA** (mit den 2 Calls/Monat).
+- **Erster MBA-Live-Call: nach den Sommerferien** (Mitte/Ende August).
+- → Im ersten MBA-Call sitzen **beide Gruppen zusammen**: die Pilot-Ladys + die neuen Bootcamp-Käuferinnen (Cart Anfang Juli). Eine warme Gründungs-Kohorte.
+- **Bonus für den Pitch:** Die Pilot-Ladys liefern bis dahin **frische echte Erfolgsgeschichten** als Social Proof fürs Bootcamp-Finale.
+
 ---
 
 ## 2. Das Morgen-Impuls-Modell (Patricias Tagesaufwand = 1 Sprachnotiz)
