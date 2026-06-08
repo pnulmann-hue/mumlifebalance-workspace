@@ -304,6 +304,21 @@ function pickStorySaeule(disg) {
 
 // ---------- Julia-Story-Vorschlag (Kein-Launch-Modus) ----------
 
+// Findet den nächsten/aktiven Launch (Funnel mit launch_window, dessen Cart-Close noch nicht vorbei ist).
+function findUpcomingLaunch(activeFunnels, todayIso) {
+  if (!activeFunnels || !Array.isArray(activeFunnels.funnels)) return null;
+  let best = null;
+  for (const f of activeFunnels.funnels) {
+    const lw = f.launch_window;
+    if (!lw) continue;
+    const aufw = String(lw.aufwaerm_start_datum || lw.aufwaerm_start || '').slice(0, 10);
+    const close = String(lw.cart_close_datum || lw.cart_close || '').slice(0, 10);
+    if (!close || todayIso > close) continue; // Launch ist vorbei
+    if (!best || (aufw && aufw < best.aufw)) best = { id: f.id, name: f.name || f.id, aufw, close };
+  }
+  return best;
+}
+
 // Generiert EINEN konkreten, spezifischen Story-Vorschlag aus Julias 3-Säulen-Ideen,
 // gematcht auf den heutigen Kontext. Gibt einen kurzen Text zurück oder null (kein Key / Fehler).
 async function generateJuliaIdee(ctx) {
@@ -327,7 +342,7 @@ HEUTIGER KONTEXT:
 - Story-Säule heute: ${ctx.storySaeule}
 - Käufertyp heute: ${ctx.disg} (${ctx.persona})
 - Aktives Produkt/Funnel: ${ctx.produkt}${ctx.painpoint ? `\n- Painpoint des Produkts: ${ctx.painpoint}` : ''}${ctx.wochenFokus ? `\n- Wochen-Fokus: ${ctx.wochenFokus}` : ''}${ctx.monatKontext ? `\n- Monats-Kontext: ${ctx.monatKontext}` : ''}${ctx.wochenCTA ? `\n- CTA der Woche: ${ctx.wochenCTA}` : ''}
-
+${ctx.phaseHinweis ? `\n⏰ LAUNCH-TIMING (HAT VORRANG vor allem oben):\n${ctx.phaseHinweis}\n` : ''}
 JULIAS STORY-IDEEN-BIBLIOTHEK (Muster, nicht 1:1 kopieren):
 ${bibliothek}
 
@@ -473,6 +488,15 @@ async function main() {
   // 🎯 Produkt-Themen zum aktuellen Wochen-Produkt (Painpoint/Transformation/Pillar) für zielgenauen Content.
   const produktThemen = matchProdukt(`${notionWoche?.title || ''} ${wochenFokus} ${wochenCTA}`, activeFunnels);
 
+  // ⏰ Launch-Timing-Disziplin: VOR der Aufwärmphase noch kein Produkt/Webinar pushen (nur Reichweite).
+  let phaseHinweis = null;
+  if (!launchTag) {
+    const launch = findUpcomingLaunch(activeFunnels, dateInfo.datum_iso);
+    if (launch && launch.aufw && dateInfo.datum_iso < launch.aufw) {
+      phaseHinweis = `Die Launch-Aufwärmphase für „${launch.name}" startet erst am ${launch.aufw}. Heute (${dateInfo.datum_iso}) ist noch DAVOR — mach deshalb KEINEN Verkaufs-, Webinar- oder Anmelde-CTA und bewirb das Produkt/Programm NICHT. Heute zählt nur Reichweite und echte Verbindung; der CTA ist eine weiche Engagement-Frage oder „Teile das in deiner Story", niemals ein Link oder eine Anmeldung. Diese Regel hat Vorrang vor dem aktiven Produkt und dem Wochen-CTA.`;
+    }
+  }
+
   // 💡 Kein-Launch-Modus: proaktiven, konkreten Story-Vorschlag aus Julias Ideen-Bibliothek generieren.
   let vorschlagRoh = null;
   if (!launchTag) {
@@ -486,6 +510,7 @@ async function main() {
       wochenFokus,
       monatKontext,
       wochenCTA,
+      phaseHinweis,
     });
   }
   const vorschlagBlock = vorschlagRoh ? `${formatVorschlagHtml(vorschlagRoh)}\n\n—\n\n` : '';
