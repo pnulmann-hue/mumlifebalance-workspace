@@ -598,13 +598,13 @@ WAS DU NACH LEKTION 3.6 HAST · SÄULE 3 KOMPLETT
 | # | Datei | Status |
 |---|---|---|
 | 3.1 | `saeule-03-lektion-3-1.mp4` | ✅ PPTX gebaut (8 Folien) — `03-praesentationen/saeule-3/01-lektion-3-1.pptx` |
-| 3.2 | `saeule-03-lektion-3-2.mp4` | PPTX existiert (modul-02-lektion-2-1.pptx) — **anpassen** (Mama-Alltag-Frame statt KI-Frame) + umnummerieren |
+| 3.2 | `saeule-03-lektion-3-2.mp4` | ✅ PPTX gebaut (10 Folien, neu im Säule-3-Stil · Mama-Alltag-Frame) — `.../saeule-3/02-lektion-3-2.pptx` |
 | 3.3 | `saeule-03-lektion-3-3.mp4` | ✅ PPTX gebaut (12 Folien) — `.../saeule-3/03-lektion-3-3.pptx` |
 | 3.4 | `saeule-03-lektion-3-4.mp4` | ✅ PPTX gebaut (13 Folien) — `.../saeule-3/04-lektion-3-4.pptx` |
-| 3.5 MASTERY | `saeule-03-lektion-3-5.mp4` | PPTX existiert (modul-02-lektion-2-5.pptx) — **leichte Anpassung** + umnummerieren |
+| 3.5 MASTERY | `saeule-03-lektion-3-5.mp4` | ✅ PPTX gebaut (10 Folien, neu im Säule-3-Stil) — `.../saeule-3/05-lektion-3-5.pptx` |
 | 3.6 | `saeule-03-lektion-3-6.mp4` | ✅ PPTX gebaut (10 Folien) — `.../saeule-3/06-lektion-3-6.pptx` |
 
-→ **✅ 4 neue PPTX gebaut (2026-06-04):** 3.1, 3.3, 3.4, 3.6 (python-pptx, Brand-Look Petrol/Creme, Sprechnotizen pro Folie). **Noch anzupassen: 2 PPTX** (3.2, 3.5 — bestehende umnummerieren/anpassen).
+→ **✅ ALLE 6 PPTX gebaut (2026-06-04):** 3.1, 3.2, 3.3, 3.4, 3.5, 3.6 — komplett neu im einheitlichen Säule-3-Brand-Look (python-pptx, Petrol/Creme, Sprechnotizen pro Folie). Liegen in `03-praesentationen/saeule-3/`. PPTX-Bau Säule 3 abgeschlossen.
 > ⚠️ Visuelles Rendern lokal nicht möglich (kein LibreOffice auf der Maschine) — Inhalts-QA per python-pptx bestanden (Folienzahl + Titel + Notizen). Patricia: beim ersten Öffnen kurz durchklicken, ob Textmengen auf die Folien passen.
 
 ### Arbeitsblatt (1 .docx-Datei)
