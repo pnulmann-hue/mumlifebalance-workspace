@@ -16,7 +16,7 @@ Telegram-Commands:
 import asyncio
 import logging
 import sys
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 
 import pytz
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
