@@ -55,6 +55,20 @@ def bestimme_profil_heute(heute: date = None) -> str:
     return config.TAGES_PROFIL_ROTATION.get(heute.weekday(), "mentoring")
 
 
+def resolve_profil(profil_override: str | None, kontext: dict, heute: date) -> str:
+    """Bestimmt das Profil mit Launch-Vorrang.
+
+    Priorität: 1) explizites /run-Override  2) aktiver Launch (empf_profil)
+               3) Wochentag-Rotation.
+    """
+    if profil_override:
+        return profil_override
+    launch = (kontext or {}).get("launch")
+    if launch and launch.get("launch_aktiv") and launch.get("empf_profil"):
+        return launch["empf_profil"]
+    return bestimme_profil_heute(heute)
+
+
 # ========================================
 # Telegram-Helper
 # ========================================
@@ -107,16 +121,16 @@ async def briefing_anfragen(profil_override: str = None) -> dict:
     started = datetime.now()
     bot = Bot(token=config.TELEGRAM_BOT_TOKEN)
     heute = date.today()
-    profil = profil_override or bestimme_profil_heute(heute)
 
-    logger.info(f"=== Briefing-Anfrage: {heute} {profil} ===")
-
-    # Notion + Override Kontext
+    # Notion + Launch + Monatsplan-MD Kontext (zuerst — Launch entscheidet das Profil)
     try:
         kontext = notion_reader.lade_wochen_kontext()
     except Exception as e:
         logger.error(f"Notion-Fehler: {e}")
-        kontext = {"monatsplan": None, "wochenplan": None, "themen": []}
+        kontext = {"monatsplan": None, "wochenplan": None, "themen": [], "launch": None, "monatsplan_md": None}
+
+    profil = resolve_profil(profil_override, kontext, heute)
+    logger.info(f"=== Briefing-Anfrage: {heute} {profil} ===")
 
     # Briefing generieren
     await send_status(
@@ -228,8 +242,26 @@ async def run(modus: str = "schnell", profil_override: str = None,
     bot = Bot(token=config.TELEGRAM_BOT_TOKEN)
     heute = date.today()
 
-    profil = profil_override or bestimme_profil_heute(heute)
+    # Notion + Launch + Monatsplan-MD Kontext (zuerst — Launch entscheidet das Profil)
+    try:
+        kontext = notion_reader.lade_wochen_kontext()
+    except Exception as e:
+        logger.error(f"Notion-Fehler: {e}")
+        await send_status(bot, f"Notion-Fehler: {e}")
+        kontext = {"monatsplan": None, "wochenplan": None, "themen": [], "launch": None, "monatsplan_md": None}
+
+    profil = resolve_profil(profil_override, kontext, heute)
     logger.info(f"=== Story-Generierung: {heute} {profil} (modus={modus}) ===")
+
+    # Launch-Status für die Status-Meldung
+    _launch = kontext.get("launch") or {}
+    _launch_zeile = ""
+    if _launch.get("launch_aktiv"):
+        _launch_zeile = (f"\n🚀 Launch: <b>{_launch.get('phase')}</b> · "
+                         f"Tag {_launch.get('tag_im_launch') or '-'} · "
+                         f"Vorlage: {_launch.get('julia_vorlage_key')}")
+    elif _launch:
+        _launch_zeile = f"\n📖 Kein Launch · Julia-Vorlage: {_launch.get('julia_vorlage_key')}"
 
     await send_status(
         bot,
@@ -237,17 +269,10 @@ async def run(modus: str = "schnell", profil_override: str = None,
         f"Datum: {heute.strftime('%a %d.%m.%Y')}\n"
         f"Profil: <b>{profil}</b>\n"
         f"DISG heute: <b>{state.empfehle_disg_heute()}</b>"
+        + _launch_zeile
         + (f"\nPatricia-Input: {len(patricia_input)} Zeichen" if patricia_input else "")
         + (f"\nPatricia-Foto: ja" if patricia_foto else "")
     )
-
-    # Notion-Kontext
-    try:
-        kontext = notion_reader.lade_wochen_kontext()
-    except Exception as e:
-        logger.error(f"Notion-Fehler: {e}")
-        await send_status(bot, f"Notion-Fehler: {e}")
-        kontext = {"monatsplan": None, "wochenplan": None, "themen": []}
 
     if patricia_input:
         kontext["patricia_input"] = patricia_input

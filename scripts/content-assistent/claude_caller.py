@@ -361,8 +361,26 @@ def build_user_prompt(profil: str, kontext: dict[str, Any], heute: date = None) 
             parts.append(f"**Funnel-ID:** {fokus_override['funnel_id']} (siehe active-funnels.json)")
         if fokus_override.get("produkt"):
             parts.append(f"**Produkt:** {fokus_override['produkt']}")
-        parts.append("**WICHTIG:** Dieser Override hat Vorrang vor Notion-Wochenplan und Monatsplan!")
+        parts.append("**WICHTIG:** Dieser Override hat Vorrang vor allem — auch vor Launch-Plan und Monatsplan!")
         parts.append("")
+
+    # === LAUNCH-STATUS / JULIA-VORLAGE DES TAGES (höchste inhaltliche Priorität) ===
+    launch = kontext.get("launch")
+    if launch and launch.get("prompt_block"):
+        parts.append("")
+        parts.append(launch["prompt_block"])
+        parts.append("")
+
+    # === MONATSPLAN (verbindliche MD-Quelle — Single Source of Truth) ===
+    mp = kontext.get("monatsplan_md")
+    if mp:
+        parts.append(f"\n## 📅 Monats-Kontext (verbindlicher Plan: {mp.get('datei','')})")
+        if mp.get("wochen_pillar"):
+            parts.append(f"**Wochen-Pillar (KW {mp.get('kw')}):** {mp['wochen_pillar']}")
+        if mp.get("kw_block"):
+            parts.append(f"\n**Wochen-Plan dieser Woche:**\n{mp['kw_block']}")
+        if mp.get("tagesslot"):
+            parts.append(f"\n**Heute geplant (Feed — als Themen-Anker, die Story ergänzt das):**\n{mp['tagesslot']}")
 
     # Notion-Kontext
     if kontext.get("monatsplan"):
@@ -564,8 +582,8 @@ def generate_briefing_anfrage(profil: str, kontext: dict[str, Any],
 fragst du Patricia nach den konkreten Details damit nichts erfunden werden muss.
 
 Du formulierst eine kurze, persönliche Telegram-Nachricht (max. 800 Zeichen) die:
-1. Zeigt welchen Fokus du diese Woche siehst (Notion-Wochenplan + Monatsfokus + ggf. Override)
-2. Schlägt 1 konkreten Story-Ansatz vor (z.B. „wir könnten erzählen wie du XY machst")
+1. Zeigt welchen Fokus du heute siehst (in dieser Reihenfolge: Patricia-Override > Launch-Vorlage des Tages > Monatsplan-Wochenthema)
+2. Schlägt 1 konkreten Story-Ansatz vor. WENN ein Launch aktiv ist: der Ansatz MUSS der vorgegebenen Julia-Launch-Vorlage + dem Tagesziel folgen (nicht frei erfinden). WENN kein Launch: folge der Julia-Storyvorlage des Tages + dem Monatsthema.
 3. Stellt 3-5 KONKRETE Fragen, die Patricia per Sprachnotiz oder Text beantworten kann
 4. Fragt am Ende: „Hast du ein aktuelles Foto/Video? Sonst nehme ich Shootingbilder."
 
@@ -598,6 +616,20 @@ Nichts anderes. Keine weitere Erklärung."""
         user_parts.append(f"\n**FOKUS-OVERRIDE (Patricia gesetzt):** {fokus_override['thema']}")
         if fokus_override.get("funnel_id"):
             user_parts.append(f"Funnel: {fokus_override['funnel_id']}")
+
+    # Launch-Status / Julia-Vorlage des Tages (höchste inhaltliche Priorität)
+    launch = kontext.get("launch")
+    if launch and launch.get("prompt_block"):
+        user_parts.append("\n" + launch["prompt_block"])
+
+    # Monatsplan-MD (verbindlicher Plan)
+    mp = kontext.get("monatsplan_md")
+    if mp:
+        user_parts.append(f"\nMonats-Kontext (verbindlich, {mp.get('datei','')}):")
+        if mp.get("wochen_pillar"):
+            user_parts.append(f"Wochen-Pillar KW {mp.get('kw')}: {mp['wochen_pillar']}")
+        if mp.get("kw_block"):
+            user_parts.append(mp["kw_block"][:1200])
 
     if kontext.get("monatsplan"):
         m = kontext["monatsplan"]

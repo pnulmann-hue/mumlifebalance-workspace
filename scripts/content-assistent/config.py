@@ -70,6 +70,19 @@ CONTEXT_DIR = ROOT / "context"
 SHOOTINGBILDER_DIR = CONTEXT_DIR / "Shootingbilder"
 STOCK_FOTOS_DIR = CONTEXT_DIR / "stock-fotos"
 OUTPUTS_STORIES_DIR = ROOT / "outputs" / "stories"
+MONATSPLAENE_DIR = ROOT / "outputs" / "monatsplaene"
+
+# ========================================
+# Launch-Engine (Julia-Trost-Launchkalender + Storyvorlagen)
+# ========================================
+# Strukturiertes Julia-Wissen: Phasen + Vorlagen-Anleitungen
+JULIA_LAUNCH_KALENDER = CONTEXT_DIR / "julia-launch-kalender.json"
+JULIA_STORY_VORLAGEN = CONTEXT_DIR / "julia-story-vorlagen.json"
+# Materialisierte Tag-für-Tag-Launchpläne (zusätzlich werden outputs/produkte/**/story-plan.json
+# automatisch entdeckt; diese Liste hat Vorrang)
+LAUNCH_STORY_PLANS = [
+    ROOT / "outputs" / "produkte" / "mba-launch" / "story-plan.json",
+]
 _BOT_DIR = Path(__file__).resolve().parent
 _BUNDLE_RENDER = _BOT_DIR / "render"
 _WORKSPACE_RENDER = ROOT / "scripts" / "karussell-render"

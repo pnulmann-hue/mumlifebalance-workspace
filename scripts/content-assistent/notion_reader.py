@@ -445,27 +445,48 @@ def lade_wochen_kontext(kw: int = None, force_refresh: bool = False) -> dict[str
     if kw is None:
         kw = datetime.now().isocalendar().week
 
-    # Cache-Check
+    # --- Notion-Teil (24h gecached) ---
+    kontext = None
     if not force_refresh:
         cached = state.get_wochen_kontext_cache(kw)
         if cached:
             logger.info(f"Wochenkontext KW {kw} aus Cache (frisch < 24h)")
-            return cached
+            kontext = cached
 
-    logger.info(f"Lade Wochenkontext KW {kw} aus Notion...")
-    monatsplan = get_monatsplan()
-    wochenplan = get_wochenplan_kw(kw)
-    themen = get_themen_planung_aktuell()
+    if kontext is None:
+        logger.info(f"Lade Wochenkontext KW {kw} aus Notion...")
+        try:
+            monatsplan = get_monatsplan()
+            wochenplan = get_wochenplan_kw(kw)
+            themen = get_themen_planung_aktuell()
+        except Exception as e:
+            logger.error(f"Notion-Teil fehlgeschlagen: {e}")
+            monatsplan, wochenplan, themen = None, None, []
+        kontext = {
+            "kw": kw,
+            "monatsplan": monatsplan,
+            "wochenplan": wochenplan,
+            "themen": themen,
+        }
+        state.set_wochen_kontext_cache(kw, kontext)
 
-    kontext = {
-        "kw": kw,
-        "monatsplan": monatsplan,
-        "wochenplan": wochenplan,
-        "themen": themen,
-    }
+    # --- Launch- + Monatsplan-MD-Teil (IMMER frisch, lokal, kein API-Key nötig) ---
+    # Diese beiden sind tagesabhängig (Launch-Tag wechselt täglich) und billig zu lesen,
+    # darum bewusst NICHT aus dem 24h-Cache.
+    heute = date.today()
+    try:
+        import launch_engine
+        kontext["launch"] = launch_engine.get_story_kontext(heute)
+    except Exception as e:
+        logger.error(f"Launch-Engine-Fehler: {e}")
+        kontext["launch"] = None
+    try:
+        import monatsplan_reader
+        kontext["monatsplan_md"] = monatsplan_reader.lade_monatsplan(heute)
+    except Exception as e:
+        logger.error(f"Monatsplan-MD-Fehler: {e}")
+        kontext["monatsplan_md"] = None
 
-    # Cache schreiben
-    state.set_wochen_kontext_cache(kw, kontext)
     return kontext
 
 
