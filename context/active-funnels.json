@@ -534,8 +534,8 @@
 
       "content_hinweise": {
         "pillar": "Alles aus einer Hand — vom Thema bis zum planbaren Einkommen neben der Familie",
-        "primaer_keyword_launch": "WEBINAR (Anmeldung)",
-        "hinweis": "Im Launch-Fenster 12.6.–6.7. zieht /story den story-plan.json (Tag-für-Tag) mit Vorrang. Ausserhalb: MBA als Fernziel mitdenken, alle anderen Funnels führen hierher."
+        "primaer_keyword_launch": "BOOTCAMP (Anmeldung) → ab Cart-Open MBA-Link/DM",
+        "hinweis": "Launch läuft als 5-Tage-PIA-Bootcamp. Der content-assistent (Telegram-Story-Bot) liest via launch_engine.py den materialisierten Tag-für-Tag-Plan outputs/produkte/mba-launch/story-plan.json (Aufwärm 15.-28.6. · Verkauf 29.6.-6.7. · Nachkauf 7.-9.7.) mit Vorrang. Ausserhalb des Launch-Fensters: Julia-Storyvorlagen-Rotation (context/julia-story-vorlagen.json) + Monatsplan-MD. MBA bleibt Fernziel, alle anderen Funnels führen hierher."
       },
 
       "umsatzziel_contribution_chf": 7976,
