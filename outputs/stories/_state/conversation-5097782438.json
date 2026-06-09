@@ -1,9 +1,10 @@
 {
   "chat_id": "5097782438",
-  "step": "wochenfokus",
+  "step": "erlebnis",
   "started_at": "2026-06-09T05:42:54.353Z",
-  "last_active_at": "2026-06-09T05:42:56.575Z",
+  "last_active_at": "2026-06-09T08:37:24.917Z",
   "profil": "mentoring",
   "last_bot_message_id": 664,
-  "produkt_quelle": "patricia"
+  "produkt_quelle": "override",
+  "produkt": "/run schnell"
 }
