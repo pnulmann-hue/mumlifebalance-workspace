@@ -1,0 +1,216 @@
+{
+  "_meta": {
+    "zweck": "Julia Trosts Launch-Kalender-System als strukturiertes Wissen. Definiert die 3 Launch-Phasen + die Story-Vorlagen pro Phase + was jede Vorlage konkret bedeutet (Julia-Anleitung). Wird vom content-assistent (Telegram-Story-Bot) via launch_engine.py gelesen: bei aktivem Launch bestimmt der materialisierte story-plan.json welche Vorlage HEUTE dran ist, und DIESE Datei liefert die Anleitung dazu.",
+    "quelle": "context/julia-insta-stories-anleitung.md + 'Vorlagen Story LML' (Julia-Trost-Launchphasen-Workbook) + julia-launch-kaeufertypen.md",
+    "erstellt": "2026-06-09",
+    "regel": "INTERN — Julia Trost NIE namentlich in Kunden-Output. Diese Datei steuert nur die STRUKTUR, der Story-Text bleibt 100% Patricia-Voice."
+  },
+
+  "phasen": {
+    "aufwaermphase": {
+      "reihenfolge": 1,
+      "dauer_richtwert": "7-10 Tage vor Verkaufsstart",
+      "ziel": "Über das THEMA des Produkts sprechen, BEVOR über den Launch geredet wird. Expertise zeigen, Community heiss machen, Verlangen erzeugen. Noch KEIN harter Verkauf.",
+      "kernprinzip": "Menschen kaufen von Menschen. Verkörpere das Thema deines Angebots, zeige was du dadurch erreicht hast. Spannung durch Sneak-Peaks + Blicke hinter die Kulissen.",
+      "intensitaet": "mittel — täglich Story, Thema-getrieben, Countdown-Sticker einbauen",
+      "typische_vorlagen": ["sneak-peak", "hinter-den-kulissen", "lehrreich", "persoenlich", "eigene-meinung", "quick-win", "secret-offer"]
+    },
+    "verkaufsphase": {
+      "reihenfolge": 2,
+      "dauer_richtwert": "Cart-Open bis Cart-Close",
+      "ziel": "Storytelling + alle Details + CTAs + Einwandbehandlung. Immer die Transformation beschreiben (wie sieht das Leben danach aus). FOMO erzeugen.",
+      "kernprinzip": "Durchgehend Gas geben — nicht nur am Anfang und Ende. Nachrichten der Community zeigen, wer dabei ist, Countdown + Preisphasen. Info-Slides mit Text (nicht nur in Kamera sprechen, weil unterschiedliche Käufertypen).",
+      "intensitaet": "hoch — mehrere Stories/Tag, jede mit CTA + Verkaufslink",
+      "typische_vorlagen": ["start-omg-es-ist-soweit", "warum-das-thema-wichtig", "lehrreich", "inhalte-zeigen", "persoenlich", "eigene-meinung", "einwandbehandlung", "social-proof", "post-it-wand", "bonus-ankuendigung", "countdown", "last-call", "learnings-aufzeichnung"]
+    },
+    "nachkaufphase": {
+      "reihenfolge": 3,
+      "dauer_richtwert": "2-4 Tage nach Cart-Close",
+      "ziel": "Hype + Feedback nutzen um das Angebot auch nach der Verkaufsphase nachzuverkaufen (für Nachzügler / nächste Runde). Leidenschaft fürs Thema zeigen. Übergang in die Vorbereitung des nächsten Launches.",
+      "kernprinzip": "Feedback der Community posten. Intensiv über das Thema sprechen (Mini-Training oder einfach warum es dir wichtig war). Community auf eine bestimmte Denkweise trainieren (Werte/Standards).",
+      "intensitaet": "niedrig-mittel — zurück zu Mehrwert + Beziehung",
+      "typische_vorlagen": ["feedback-social-proof", "werte", "verkoerperung", "standards", "an-was-ich-arbeite", "quick-win", "persoenlich", "lehrreich"]
+    }
+  },
+
+  "vorlagen": {
+    "sneak-peak": {
+      "name": "Es ist was geplant (Sneak Peak)",
+      "phase": "aufwaermphase",
+      "ziel": "Zum ersten Mal anteasern, dass etwas Neues kommt. Spannung + erstes Verlangen erzeugen.",
+      "julia_anleitung": "Teasere das erste Mal an dass du an etwas Neuem arbeitest. Zeige Vorfreude. Noch NICHT verraten was es genau ist. Countdown-Sticker optional. Der Zuschauer will TEIL vom Kreierungsprozess sein, nicht das fertige Produkt serviert bekommen.",
+      "kaeufertyp": "Rudi (Rudeltier) + Ina (Inspiriert)",
+      "slide_bogen": "Hook (Vorfreude) → was sich verändert hat seit du das weisst → andeuten dass bald was kommt → Frage-Sticker 'Bist du gespannt?'"
+    },
+    "hinter-den-kulissen": {
+      "name": "Blick hinter die Kulissen",
+      "phase": "aufwaermphase",
+      "ziel": "Community mit hinter die Kulissen nehmen, Nahbarkeit + Spannung.",
+      "julia_anleitung": "Zeige woran du gerade arbeitest. Branding, Post-It-Wand, Vorbereitung. Nutze Countdown-Button. Viele kaufen nicht, weil sie nicht wissen was drinsteckt — zeig den Prozess.",
+      "kaeufertyp": "Rudi + Frank (Fakten)",
+      "slide_bogen": "Hook (was siehst du grad) → Einblick Prozess/Material → warum dir das wichtig ist → Vorfreude-CTA"
+    },
+    "lehrreich": {
+      "name": "Lehrreich / Mini-Training",
+      "phase": "alle",
+      "ziel": "Expertise zeigen durch ein konkretes Learning aus dem Angebot — etwas zum Screenshotten, sofort umsetzbar.",
+      "julia_anleitung": "Vermittle eine Methode/Strategie/ein Prinzip aus deinem Angebot, das die Community DIREKT umsetzen kann. Erst Spannung (Statistik/Statement), dann Bezug auf ihr Leben, dann das Learning, dann sanfte Brücke zum Angebot. Stakkato vermeiden — wie am Küchentisch erklären.",
+      "kaeufertyp": "Willi (Wissbegierig) + Frank",
+      "slide_bogen": "Hook (Statement/Frage) → warum relevant für sie → das konkrete Learning (1-3 Schritte, screenshotbar) → was passiert wenn sie's umsetzen → Brücke zum Thema"
+    },
+    "persoenlich": {
+      "name": "Persönliche Story / Dein Weg",
+      "phase": "alle",
+      "ziel": "Nahbarkeit + Identifikation. Eigene Geschichte zum Thema — was hat es mit DIR gemacht.",
+      "julia_anleitung": "Bringe deine eigene Story ein (wir können nur verkaufen was wir selbst erlebt/verkörpert haben). Erste Slide für Spannung ('willst du was Unglaubliches sehen?'), dann Vorher/Nachher oder Vision, dann wie du dahin kamst, dann sanfte Weiterleitung. Alles visualisieren.",
+      "kaeufertyp": "Amelie (Ängstlich) + Zoe (Zögerlich)",
+      "slide_bogen": "Spannungs-Hook → Vision/Ergebnis zeigen → früher war es anders (deine Story) → was du gelernt/investiert hast → Brücke zum Angebot"
+    },
+    "eigene-meinung": {
+      "name": "Eigene Meinung / klare Positionierung",
+      "phase": "alle",
+      "ziel": "Sich klar positionieren, einen Branchen-Mythos/Glaubenssatz aufgreifen der dich aufregt — Expertenstatus + Repel.",
+      "julia_anleitung": "'Ich bin ja normalerweise total X, aber DAS regt mich auf.' Erzähle was dich aufregt (Mythos/Glaubenssatz der Zielgruppe). Liefere dann deine Empfehlung was sie stattdessen tun sollten. Liebevolle Strenge, dann versöhnlich. Bezug zum Angebot.",
+      "kaeufertyp": "Frank + Willi",
+      "slide_bogen": "Hook (das regt mich auf) → der Mythos/Glaubenssatz → warum er schadet → was stattdessen richtig ist → versöhnlich + Brücke"
+    },
+    "quick-win": {
+      "name": "Quick Win",
+      "phase": "alle",
+      "ziel": "Eine Strategie/Formel die SOFORT umsetzbar ist — stärkt Vertrauen, zeigt Expertise direkt.",
+      "julia_anleitung": "Einleitung mit Statistik/krassem Statement → auf ihr Leben beziehen → warum wichtig → die konkrete Methode → Handlungsaufforderung sofort umzusetzen → Überleitung aufs Angebot (P.S.-Stil).",
+      "kaeufertyp": "Willi",
+      "slide_bogen": "krasses Statement → auf Mama-Alltag beziehen → die Methode → 'mach das jetzt' → P.S. Angebot"
+    },
+    "secret-offer": {
+      "name": "Secret Offer",
+      "phase": "aufwaermphase",
+      "ziel": "Vor Verkaufsstart ein 24-48h-Geheim-Angebot zum günstigsten Preis nur für Interessierte.",
+      "julia_anleitung": "3 Dinge nennen die DU gemeistert hast die deine Clients gern hätten → einen Einwand entkräften (was sie grad versuchen das nicht klappt) → ankündigen: nächste 24/48h günstigster Preis, Link NUR per DM an die die schreiben/auf Sticker klicken. Link NICHT öffentlich. Max 48h, dann normale Verkaufsphase.",
+      "kaeufertyp": "Rudi + Zoe",
+      "slide_bogen": "3 gemeisterte Dinge → Einwand entkräften → Secret-Offer-Ankündigung → 'klick den Sticker / schreib mir' → Countdown"
+    },
+    "start-omg-es-ist-soweit": {
+      "name": "START — OMG es ist soweit",
+      "phase": "verkaufsphase",
+      "ziel": "Verkaufsphase eröffnen. Aufregung, Party, Verlangen. Schmerzpunkte + Lösung + Details + Link.",
+      "julia_anleitung": "Feier den Start! Zeige Aufregung. Gehe direkt auf die Schmerzpunkte der Community ein und stelle die Lösung vor. Nenne die wichtigsten Details + Verkaufslink. Greife evtl. schon gestellte Fragen auf.",
+      "kaeufertyp": "alle — besonders Ina + Rudi",
+      "slide_bogen": "OMG-Hook → Schmerzpunkt benennen → Lösung = dein Angebot → wichtigste Details → Verkaufslink-CTA"
+    },
+    "warum-das-thema-wichtig": {
+      "name": "Warum das Thema so wichtig ist",
+      "phase": "verkaufsphase",
+      "ziel": "Über eine Geschichte/ein Erlebnis den Wert des Themas zeigen und aufs Angebot leiten.",
+      "julia_anleitung": "Führe mit einer Geschichte ein (von der du gehört/die du erlebt hast). Lass eine hohe Zahl/ein krasses Ereignis wirken, relativiere es, ziehe das Learning, weise aufs Angebot hin.",
+      "kaeufertyp": "Ina + Willi",
+      "slide_bogen": "Geschichte-Hook → das Krasse daran → warum es dazu kam → Learning fürs Angebot → CTA"
+    },
+    "inhalte-zeigen": {
+      "name": "Inhalte / Daten & Fakten zeigen",
+      "phase": "verkaufsphase",
+      "ziel": "Konkret zeigen WAS man bekommt — viele buchen nicht weil sie den Inhalt nicht kennen.",
+      "julia_anleitung": "Statt nur zu sagen 'du bekommst ein Workbook' — ZEIGE es. Titelbild, Inhaltsverzeichnis, Seitenzahl, Modulaufbau. Mach das Angebot greifbar. Für Frank besonders wichtig.",
+      "kaeufertyp": "Frank + Willi",
+      "slide_bogen": "Hook (schau was drin ist) → Inhalt 1 zeigen → Inhalt 2 zeigen → was es für sie bedeutet → CTA mit Link"
+    },
+    "einwandbehandlung": {
+      "name": "Einwandbehandlung",
+      "phase": "verkaufsphase",
+      "ziel": "Glaubenssätze die vom Kauf abhalten selbst ansprechen + entkräften.",
+      "julia_anleitung": "Liste die häufigsten Einwände/Glaubenssätze auf (Geld, Angst, Zeit, 'kenn mich nicht aus'). Lass abstimmen welcher zutrifft. Zeige Verständnis (hatte ich auch), dann entkräfte jeden. Danach Fragen-Sticker für eigene Einwände.",
+      "kaeufertyp": "Amelie + Zoe",
+      "slide_bogen": "Hook (ich räum mit Einwänden auf) → Einwand 1+2+3 (Abstimmung) → Verständnis + Entkräftung → Fragen-Sticker → sanfter CTA"
+    },
+    "social-proof": {
+      "name": "Beweise / Social Proof",
+      "phase": "verkaufsphase",
+      "ziel": "Erfolgsgeschichte (eigene oder Kundin) zeigen — Glaubwürdigkeit + FOMO.",
+      "julia_anleitung": "Erzähle die Erfolgsgeschichte eines Kunden oder deine eigene. Was hat die Person getan? Zeige Screenshots/Nachrichten (anonym ausser du darfst verlinken). Erzeugt FOMO.",
+      "kaeufertyp": "Zoe + Rudi",
+      "slide_bogen": "Hook → die Ausgangslage (kennt sie wieder) → was sie getan hat → das Ergebnis → 'auch für dich möglich' + CTA"
+    },
+    "post-it-wand": {
+      "name": "Post-It-Wand / Wer ist dabei",
+      "phase": "verkaufsphase",
+      "ziel": "Teilnehmer feiern, zeigen wie viele dabei sind — löst Kaufdruck, zieht Rudeltier-Käufer.",
+      "julia_anleitung": "Zeige jeden Teilnehmer (verlinke gerne). Poste Nachrichten von Leuten die sich angemeldet haben. Niemand will der Einzige sein der investiert — zeig die Masse, das zieht andere mit. Feiere jeden einzeln.",
+      "kaeufertyp": "Rudi",
+      "slide_bogen": "Hook (schau wer dabei ist) → Post-Its/Namen/Nachrichten → Begeisterung → 'noch ist Platz' + CTA"
+    },
+    "bonus-ankuendigung": {
+      "name": "Bonus / Last-Minute-Update",
+      "phase": "verkaufsphase",
+      "ziel": "Zusätzlichen Bonus ankündigen — heizt alle an (Käufer + Unentschlossene).",
+      "julia_anleitung": "Bring zum Schluss vom Launch nochmal einen Bonus (extra PDF/Workshop/Modul). Am Tag vorher oft auch Preissteigerung ankündigen, dann Preis-Gegenüberstellung (einzeln vs. Bundle).",
+      "kaeufertyp": "Zoe + Frank",
+      "slide_bogen": "Hook (es gibt noch was) → der Bonus → warum er wertvoll ist → Preis-/Knappheitshinweis → CTA"
+    },
+    "countdown": {
+      "name": "Countdown / noch X Stunden",
+      "phase": "verkaufsphase",
+      "ziel": "Knappheit + Erinnerung. Countdown-Sticker einbauen.",
+      "julia_anleitung": "Nutze öfter den Countdown-Sticker. Einige stellen ihn sich als Erinnerung ein. WICHTIG: poste auch wenn er abgelaufen ist, sonst Enttäuschung.",
+      "kaeufertyp": "Zoe + Rudi",
+      "slide_bogen": "Hook (noch X Stunden) → was sie verpassen → letzte Erinnerung → Countdown-Sticker + CTA"
+    },
+    "last-call": {
+      "name": "Last Call / letzter Tag",
+      "phase": "verkaufsphase",
+      "ziel": "Letzte Chance vor Cart-Close. Höchste Dringlichkeit + Post-It-Wand.",
+      "julia_anleitung": "Am Tag vor Ende: alle Teilnehmer zeigen, letzte Fragen beantworten, volle Energie. Mach klar dass jetzt Schluss ist. Liebevolle Strenge: negative Konsequenz des Nicht-Handelns.",
+      "kaeufertyp": "Zoe + Amelie",
+      "slide_bogen": "Hook (letzter Tag) → was jetzt auf dem Spiel steht → Social Proof → klare Deadline → CTA mit Link"
+    },
+    "learnings-aufzeichnung": {
+      "name": "Learnings + Aufzeichnung vorhanden",
+      "phase": "verkaufsphase",
+      "ziel": "Nach LIVE-Moment: wichtigste Learnings teilen + Link zur Aufzeichnung/zum Angebot (finaler Preis).",
+      "julia_anleitung": "Fasse zusammen was besprochen wurde, teile den Link zur Aufzeichnung mit dem finalen Preis. Bei Onlinekurs nach und nach Testimonials posten + Link weiter teilen.",
+      "kaeufertyp": "Willi + Frank",
+      "slide_bogen": "Hook (das waren die Highlights) → Learning 1-3 → 'Aufzeichnung/Angebot hier' → finaler Preis + CTA"
+    },
+    "feedback-social-proof": {
+      "name": "Feedback nach dem Launch",
+      "phase": "nachkaufphase",
+      "ziel": "Hype nutzen, Feedback posten, Nachzügler abholen.",
+      "julia_anleitung": "Poste das Feedback deiner Community. Nutze den Hype um auch nach der Verkaufsphase nachzuverkaufen (für die nächste Runde / Nachzügler).",
+      "kaeufertyp": "Zoe + Rudi",
+      "slide_bogen": "Hook → Feedback zeigen → warum dich das berührt → Hinweis nächste Möglichkeit"
+    },
+    "werte": {
+      "name": "Werte",
+      "phase": "nachkaufphase",
+      "ziel": "Community auf eine Denkweise trainieren — auf welche Tugend legst du Wert.",
+      "julia_anleitung": "Auf welche Tugend legst du grossen Wert (Pünktlichkeit/Verlässlichkeit/Integrität)? Gib einen Hinweis woran sie arbeiten müssen um erfolgreich zu sein, belegt mit Beispielen.",
+      "kaeufertyp": "Amelie + Frank",
+      "slide_bogen": "Hook (darauf lege ich Wert) → warum → Beispiel → was das für sie heisst"
+    },
+    "verkoerperung": {
+      "name": "Verkörperung / Selbstfürsorge",
+      "phase": "nachkaufphase",
+      "ziel": "Zeigen wie du für dich sorgst / dein Business führst — Vorbild + Nahbarkeit.",
+      "julia_anleitung": "Wie sorgst du am Wochenende für dich? Wie lädst du auf? Was tust du heute (Stärke) das früher als Schwäche galt? Wie führst du dein Unternehmen?",
+      "kaeufertyp": "Ina + Amelie",
+      "slide_bogen": "Hook → dein Ritual/deine Haltung → warum es wichtig ist → Einladung zur Reflexion"
+    },
+    "standards": {
+      "name": "Standards",
+      "phase": "nachkaufphase",
+      "ziel": "Welche Massstäbe hast du an dich — formt wie die Community denkt.",
+      "julia_anleitung": "Was ist ein Standard an den du dich hältst (z.B. investieren, Grenzen setzen)? Wie wirkt sich das auf Erfolg/Leben/Business aus?",
+      "kaeufertyp": "Frank + Willi",
+      "slide_bogen": "Hook (mein Standard) → warum → Wirkung → Impuls für sie"
+    },
+    "an-was-ich-arbeite": {
+      "name": "An was ich gerade arbeite",
+      "phase": "nachkaufphase",
+      "ziel": "Persönlich/beruflich Einblick — Vorfreude auf Kommendes (Brücke zum nächsten Launch).",
+      "julia_anleitung": "Welche Ziele verfolgst du gerade? Wie willst du sie erreichen? Auf welche Hindernisse stösst du? Woran arbeitest du privat/beruflich? Teasert das Nächste an.",
+      "kaeufertyp": "Ina + Rudi",
+      "slide_bogen": "Hook → woran du arbeitest → warum → andeuten was kommt"
+    }
+  },
+
+  "kaeufertyp_rotation_hinweis": "Über die Woche alle Käufertypen abdecken (Willi/Amelie/Ina/Zoe/Rudi/Frank). Der materialisierte story-plan.json gibt pro Tag den Käufertyp/die Vorlage vor; sonst DISG-Rotation aus state.py."
+}

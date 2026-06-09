@@ -1,0 +1,109 @@
+{
+  "_meta": {
+    "zweck": "Julia Trosts Story-Vorlagen-Pool für Tage OHNE aktiven Launch. Der content-assistent (Telegram-Story-Bot) wählt via launch_engine.py eine Vorlage nach Wochentag-Rotation + Monatsthema. Sichert: jede Story bleibt nach Julia-Struktur (nicht generisch) UND hat einen CTA-Link auf ein 0€-Freebie (Kernregel 1 story-framework).",
+    "quelle": "context/julia-story-ideen.md (3-Säulen) + 'Vorlagen Story LML' (Nachkauf-/Vorbereitungsphase) + julia-insta-stories-anleitung.md",
+    "erstellt": "2026-06-09",
+    "regel": "Jede Nicht-Launch-Story = 1 Julia-Vorlage × 1 der 3 Säulen × CTA auf ein passendes Freebie aus active-funnels.json. Käufertyp rotiert mit (DISG aus state.py)."
+  },
+
+  "drei_saeulen": {
+    "expertise": "Zeig dass du dein Handwerk verstehst: Mini-Trainings, 3 Tipps, Anleitungen, Vorlagen zum Kopieren, Branchen-Trend mit deiner Meinung. Käufer: Willi + Frank.",
+    "inspiration": "Zeig was möglich ist: Vision, Vorher/Nachher, POV, Lifestyle, motivierende Bilder im Kopf. Käufer: Ina + Zoe.",
+    "persoenlichkeit": "Zeig den Menschen dahinter: deine Story, Glaubenssätze, Werte, Ängste, Alltag als 4-fach-Mama. Käufer: Amelie + Rudi."
+  },
+
+  "wochen_rotation": {
+    "_hinweis": "Default-Vorlage pro Wochentag wenn kein Launch aktiv. Bot kombiniert das mit dem Monatsthema (aus monatsplan-MD) + Patricia-Input. Garantiert Säulen-Abwechslung über die Woche.",
+    "0": "lehrreich-mini-training",
+    "1": "persoenliche-story",
+    "2": "eigene-meinung",
+    "3": "quick-win",
+    "4": "inspiration-vision",
+    "5": "social-proof-freebie",
+    "6": "lifestyle-reflexion"
+  },
+
+  "vorlagen": {
+    "lehrreich-mini-training": {
+      "name": "Lehrreich / Mini-Training",
+      "saeule": "expertise",
+      "kaeufertyp": "Willi",
+      "ziel": "Ein konkretes, sofort umsetzbares Learning aus Patricias Wissen — screenshotbar.",
+      "julia_anleitung": "Erst Spannung (Statement/Frage), dann auf den Mama-Network-Alltag beziehen, dann 1-3 konkrete Schritte zum Mitmachen, dann was passiert wenn sie's umsetzen. Wie am Küchentisch erklären (keine Stakkato-Sätze).",
+      "slide_bogen": "Hook → relevant für sie → Mini-Training (1-3 Schritte) → Ergebnis → CTA Freebie",
+      "freebie_cta": "passend zum Thema (BIO / STORY / ECHT1)"
+    },
+    "persoenliche-story": {
+      "name": "Persönliche Story / Dein Weg",
+      "saeule": "persoenlichkeit",
+      "kaeufertyp": "Amelie",
+      "ziel": "Identifikation über Patricias eigene Geschichte (Wendepunkt, 4 Kinder, Funktionsmodus).",
+      "julia_anleitung": "Spannungs-Hook ('willst du was sehen?'), dann Vision/Ergebnis, dann 'früher war das anders' (echte Story, nichts erfunden), dann das Learning, sanfte Brücke. Alles in Bilder packen.",
+      "slide_bogen": "Spannungs-Hook → Vision/heute → früher war anders → Learning → CTA Freebie",
+      "freebie_cta": "ECHT1 (Von 0 auf echt) oder thematisch passend"
+    },
+    "eigene-meinung": {
+      "name": "Eigene Meinung / klare Positionierung",
+      "saeule": "expertise",
+      "kaeufertyp": "Frank",
+      "ziel": "Branchen-Mythos im Network-Marketing aufgreifen, klar positionieren (Repel + Anziehung).",
+      "julia_anleitung": "'Ich bin ja normalerweise total X, aber DAS regt mich auf.' Mythos/Glaubenssatz benennen, warum er schadet, was stattdessen richtig ist, versöhnlich enden, Brücke zum Freebie. Konkretes Network-Vokabular nutzen (Teamcall, warme Liste, Produktbilder).",
+      "slide_bogen": "Hook (das regt mich auf) → der Mythos → warum er schadet → was richtig ist → CTA Freebie",
+      "freebie_cta": "BIO oder thematisch passend"
+    },
+    "quick-win": {
+      "name": "Quick Win",
+      "saeule": "expertise",
+      "kaeufertyp": "Willi",
+      "ziel": "Eine Formel/Methode die SOFORT funktioniert — Vertrauen + Expertise.",
+      "julia_anleitung": "Krasses Statement/Statistik → auf Mama-Alltag beziehen → warum wichtig → die Methode → 'mach das jetzt' → P.S.-Brücke zum Freebie.",
+      "slide_bogen": "Statement → Bezug Mama-Alltag → Methode → sofort umsetzen → P.S. Freebie",
+      "freebie_cta": "thematisch passend (STORY / BIO)"
+    },
+    "inspiration-vision": {
+      "name": "Inspiration / Vision (Vorher-Nachher / POV)",
+      "saeule": "inspiration",
+      "kaeufertyp": "Ina",
+      "ziel": "Zeigen was möglich ist — Bild im Kopf der Leserin erzeugen.",
+      "julia_anleitung": "Arbeite mit Storytelling + Bildern, weg von Fakten/Zahlen. Vorher/Nachher oder POV ('so fühlt sich ein Dienstag an, wenn dein Business läuft'). KEIN 'Stell dir vor' (gesperrt). Inspirierend + motivierend, sanfte Brücke.",
+      "slide_bogen": "Vision-Hook → das alte Bild → das neue Bild (POV) → es ist machbar → CTA Freebie",
+      "freebie_cta": "thematisch passend"
+    },
+    "social-proof-freebie": {
+      "name": "Beweise / Social Proof (auf Freebie gemünzt)",
+      "saeule": "persoenlichkeit",
+      "kaeufertyp": "Zoe",
+      "ziel": "Eine echte Erfolgsgeschichte (Mentee/Pilot-Mama) — Glaubwürdigkeit + sanfter Pull.",
+      "julia_anleitung": "Erzähle die Ausgangslage (kennt die Leserin wieder), was die Person getan hat, das Ergebnis, 'auch für dich möglich'. NUR echte Quotes/Fakten — nichts erfinden. 5 Mama-CEO-Pilot-Mamas sind echt.",
+      "slide_bogen": "Hook → Ausgangslage → was sie tat → Ergebnis → 'auch für dich' + CTA Freebie",
+      "freebie_cta": "thematisch passend"
+    },
+    "lifestyle-reflexion": {
+      "name": "Lifestyle / Sonntags-Reflexion / Lifehack",
+      "saeule": "inspiration",
+      "kaeufertyp": "Ina",
+      "ziel": "Nahbarer Produktivitäts-/Motivations-Hack oder ruhige Reflexion — Beziehung stärken.",
+      "julia_anleitung": "Teile einen Hack oder eine ehrliche Reflexion aus dem Mama-Alltag. Einblick ins private Leben (kein Verkauf im Vordergrund). Optional ein motivierender Gedanke + sanfte Freebie-Brücke am Ende.",
+      "slide_bogen": "Hook (Alltagsmoment) → der Gedanke/Hack → warum er hilft → leise Einladung Freebie",
+      "freebie_cta": "optional, niederschwellig"
+    },
+    "spiel-ich-hab-noch-nie": {
+      "name": "Spiel: Ich hab noch nie",
+      "saeule": "persoenlichkeit",
+      "kaeufertyp": "Zoe",
+      "ziel": "Interaktion + Selbsterkenntnis ('das bin ja ich') — niederschwellige Bindung.",
+      "julia_anleitung": "5-6 lustige aber sinnvolle 'Ich hab noch nie'-Aussagen zu Verhaltensweisen der Traumkundin. Ziel: sie erkennt sich als ideale Kundin. Mit Sticker-Abstimmung.",
+      "slide_bogen": "Hook (lass uns spielen) → 3-5 'Ich hab noch nie'-Slides mit Sticker → 'merkst du was?' → CTA Freebie",
+      "freebie_cta": "thematisch passend"
+    },
+    "trend-branche": {
+      "name": "Trend aus deiner Branche",
+      "saeule": "expertise",
+      "kaeufertyp": "Frank",
+      "ziel": "Aktuellen Trend (KI im Mama-Business, Network-Trend) aufgreifen + Meinung — Expertenstatus.",
+      "julia_anleitung": "Nenne einen Trend, teile deine Meinung dazu, liefere Beispiele die sie untermauern. Positioniere dich als Expertin. KI-Alltags-Themen sind laut Content-Radar eine Goldader.",
+      "slide_bogen": "Hook (dieser Trend) → deine Einordnung → Beispiel → was sie tun sollte → CTA Freebie",
+      "freebie_cta": "thematisch passend"
+    }
+  }
+}
