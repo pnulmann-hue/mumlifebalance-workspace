@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>STORY Karussell — Stories beim Putzen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --petrol: #12828c; --dunkelblau: #29556d; --creme: #f1ecdd; --orange: #dc822e; --text: #0c1c30; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #1a1a1a; font-family: "Source Sans 3", sans-serif; color: var(--text); padding: 40px; }
+      .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; margin: 40px auto; display: flex; flex-direction: column; padding: 100px 80px; }
+      .slide.bg-creme { background: var(--creme); color: var(--text); }
+      .slide.bg-petrol { background: var(--petrol); color: #fff; }
+      .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 30px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--petrol); margin-bottom: 36px; }
+      .bg-petrol .eyebrow { color: rgba(255,255,255,0.85); }
+      .footer { position: absolute; bottom: 50px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(12, 28, 48, 0.55); letter-spacing: 0.08em; z-index: 5; }
+      .bg-petrol .footer { color: rgba(255, 255, 255, 0.7); }
+
+      /* SLIDE 1 — HOOK PETROL */
+      .s1 { justify-content: center; align-items: flex-start; text-align: left; color: #fff; }
+      .s1 .hook { font-family: "Philosopher"; font-weight: 700; font-size: 116px; line-height: 1.04; color: #fff; }
+      .s1 .hook .pop { font-style: italic; opacity: 0.95; }
+
+      /* SLIDE 2 — SPANNUNG CREME */
+      .s2 { justify-content: center; }
+      .s2 .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 50px; line-height: 1.4; color: var(--text); }
+      .s2 .body .pop { color: var(--petrol); font-weight: 700; }
+
+      /* SLIDE 3 / 4 / 7 — PETROL TEXT */
+      .baustein-petrol { justify-content: flex-start; padding-top: 140px; color: #fff; }
+      .baustein-petrol .headline { font-family: "Philosopher"; font-weight: 700; font-size: 80px; line-height: 1.1; color: #fff; margin-bottom: 48px; }
+      .baustein-petrol .headline .pop { font-style: italic; opacity: 0.95; }
+      .baustein-petrol .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 44px; line-height: 1.4; color: #fff; }
+      .baustein-petrol .list .item { display: flex; align-items: flex-start; gap: 28px; margin-bottom: 32px; }
+      .baustein-petrol .list .item .icon { font-size: 50px; flex-shrink: 0; padding-top: 2px; }
+      .baustein-petrol .list .item .item-text { font-family: "Source Sans 3"; font-weight: 500; font-size: 42px; line-height: 1.4; }
+      .baustein-petrol .list .item .item-text .pop { font-weight: 700; background: rgba(255,255,255,0.18); padding: 0 10px; border-radius: 6px; }
+
+      /* SLIDE 5 / 6 — CREME TEXT */
+      .baustein-creme { justify-content: flex-start; padding-top: 140px; }
+      .baustein-creme .headline { font-family: "Philosopher"; font-weight: 700; font-size: 80px; line-height: 1.1; color: var(--dunkelblau); margin-bottom: 48px; }
+      .baustein-creme .headline .pop { color: var(--petrol); font-style: italic; }
+      .baustein-creme .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 44px; line-height: 1.4; color: var(--text); opacity: 0.92; }
+      .baustein-creme .body .pop { color: var(--petrol); font-weight: 700; }
+      .baustein-creme .list .item { display: flex; align-items: flex-start; gap: 28px; margin-bottom: 32px; }
+      .baustein-creme .list .item .icon { font-size: 50px; flex-shrink: 0; padding-top: 2px; color: var(--petrol); }
+      .baustein-creme .list .item .item-text { font-family: "Source Sans 3"; font-weight: 500; font-size: 42px; line-height: 1.4; color: var(--text); }
+      .baustein-creme .list .item .item-text .pop { color: var(--petrol); font-weight: 700; }
+
+      /* SLIDE 7 — CTA */
+      .s7 { justify-content: center; align-items: center; text-align: center; color: #fff; }
+      .s7 .eyebrow { color: rgba(255,255,255,0.9); margin-bottom: 24px; }
+      .s7 .big { font-family: "Philosopher"; font-weight: 700; font-style: italic; font-size: 124px; line-height: 1.0; color: #fff; margin-bottom: 48px; }
+      .s7 .body { font-family: "Source Sans 3"; font-weight: 600; font-size: 44px; line-height: 1.4; color: #fff; max-width: 900px; margin-bottom: 48px; }
+      .s7 .body .pop { background: #fff; color: var(--petrol); padding: 4px 20px; border-radius: 10px; font-weight: 700; }
+      .s7 .arrow-row { display: flex; align-items: center; justify-content: center; gap: 12px; }
+      .s7 .arrow-line { width: 180px; height: 8px; background: var(--orange); border-radius: 4px; }
+      .s7 .arrow-head { width: 0; height: 0; border-top: 22px solid transparent; border-bottom: 22px solid transparent; border-left: 32px solid var(--orange); }
+    </style>
+  </head>
+  <body>
+
+    <div class="slide bg-petrol s1">
+      <div class="eyebrow">Story-Strategie</div>
+      <div class="hook">Wie ich Stories baue, die <span class="pop">wirken</span> —<br/>beim Putzen</div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme s2">
+      <div class="eyebrow">Vielleicht kennst du das</div>
+      <p class="body">
+        Du sitzt abends eine Stunde am Handy, ringst um Story-Ideen, postest am Ende nichts oder etwas Generisches. <span class="pop">Ich sammle 5 Story-Ideen beim Spülmaschine-Ausräumen</span> — und nehme am Abend nur noch auf.
+      </p>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-petrol baustein-petrol">
+      <div class="eyebrow">Was du übersiehst</div>
+      <div class="headline">Dein Story-Hirn liefert täglich — <span class="pop">du nimmst es nur nicht ernst</span></div>
+      <p class="body">
+        Jede kleine Mama-Szene ist eine Story. Du musst sie nur einfangen. Die Schwelle ist nicht „gute Ideen" — sie ist sammeln und festhalten.
+      </p>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-petrol baustein-petrol">
+      <div class="eyebrow">4 Sammel-Momente</div>
+      <div class="headline">Wann sammelst du Stories — ohne Aufwand</div>
+      <div class="list">
+        <div class="item"><span class="icon">🧺</span><div class="item-text"><span class="pop">Wäsche-Falten</span> — sag laut was dich grad nervt oder freut</div></div>
+        <div class="item"><span class="icon">🍳</span><div class="item-text"><span class="pop">Kochen</span> — was hat dich am Tag wirklich getriggert?</div></div>
+        <div class="item"><span class="icon">🚗</span><div class="item-text"><span class="pop">Auto</span> — Audio-Memo nach jeder Kita-Fahrt</div></div>
+        <div class="item"><span class="icon">🚿</span><div class="item-text"><span class="pop">Dusche</span> — Notiz-App offen, später schreiben</div></div>
+      </div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Was wirklich wirkt</div>
+      <div class="headline">3 Sachen die eine Story <span class="pop">echt machen</span></div>
+      <div class="list">
+        <div class="item"><span class="icon">→</span><div class="item-text">Ein <span class="pop">konkreter Moment</span> — nicht ein Konzept</div></div>
+        <div class="item"><span class="icon">→</span><div class="item-text">Eine <span class="pop">echte Mama-Spannung</span> — nicht ein Tipp</div></div>
+        <div class="item"><span class="icon">→</span><div class="item-text"><span class="pop">EIN Bild</span> im Kopf der Leserin — nicht fünf</div></div>
+      </div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Mein 5-Minuten-Reset</div>
+      <div class="headline">So baust du dir <span class="pop">7 Stories aus 7 Tagen</span></div>
+      <p class="body">
+        Schreib jeden Tag auf, was dich berührt hat — egal ob ein Wort oder ein Satz. Wenn die Kids im Bett sind, schaust du auf die Liste und wählst eine Szene. Aus 7 Tagen sammeln werden 7 Stories die wirken.
+      </p>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-petrol s7">
+      <div class="eyebrow">Workbook</div>
+      <div class="big">7-Tage-Story</div>
+      <p class="body">
+        Den kompletten Sammel-Plan + Aufnahme-Templates hab ich dir als Workbook zusammengestellt.<br/><br/>
+        Kommentier <span class="pop">STORY</span> und ich schick dir den Link.
+      </p>
+      <div class="arrow-row"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+      <div class="footer"><span>@mum.life.balance</span><span></span></div>
+    </div>
+
+  </body>
+</html>

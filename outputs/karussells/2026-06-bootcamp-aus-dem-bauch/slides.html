@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BOOTCAMP — 3 Tage bis du nicht mehr aus dem Bauch postest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --petrol: #12828c; --dunkelblau: #29556d; --creme: #f1ecdd; --orange: #dc822e; --text: #0c1c30; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #1a1a1a; font-family: "Source Sans 3", sans-serif; color: var(--text); padding: 40px; }
+      .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; margin: 40px auto; display: flex; flex-direction: column; padding: 100px 80px; }
+      .slide.bg-creme { background: var(--creme); color: var(--text); }
+      .slide.bg-orange { background: var(--orange); color: #fff; }
+      .slide.bg-petrol { background: var(--petrol); color: #fff; }
+      .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 30px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--petrol); margin-bottom: 36px; }
+      .bg-orange .eyebrow, .bg-petrol .eyebrow { color: rgba(255,255,255,0.85); }
+      .footer { position: absolute; bottom: 50px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(12, 28, 48, 0.55); letter-spacing: 0.08em; z-index: 5; }
+      .bg-orange .footer, .bg-petrol .footer { color: rgba(255, 255, 255, 0.75); }
+
+      /* SLIDE 1 — HOOK ORANGE */
+      .s1 { justify-content: center; align-items: flex-start; text-align: left; color: #fff; }
+      .s1 .hook { font-family: "Philosopher"; font-weight: 700; font-size: 112px; line-height: 1.06; color: #fff; }
+      .s1 .hook .pop { background: #fff; color: var(--orange); padding: 0 24px; border-radius: 14px; font-style: italic; display: inline-block; margin: 8px 0; }
+
+      /* SLIDE 2 — SPANNUNG CREME */
+      .s2 { justify-content: center; }
+      .s2 .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 50px; line-height: 1.4; color: var(--text); }
+      .s2 .body .pop { color: var(--orange); font-weight: 700; }
+      .s2 .body .underline { text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 5px; text-underline-offset: 8px; }
+
+      /* SLIDE 3 — ORANGE COSTS LIST */
+      .orange-list { justify-content: flex-start; padding-top: 130px; color: #fff; }
+      .orange-list .headline { font-family: "Philosopher"; font-weight: 700; font-size: 80px; line-height: 1.08; color: #fff; margin-bottom: 48px; }
+      .orange-list .headline .pop { font-style: italic; opacity: 0.95; }
+      .orange-list .list .item { display: flex; align-items: flex-start; gap: 24px; margin-bottom: 30px; }
+      .orange-list .list .item .icon { font-size: 44px; flex-shrink: 0; padding-top: 4px; }
+      .orange-list .list .item .item-text { font-family: "Source Sans 3"; font-weight: 500; font-size: 40px; line-height: 1.4; color: #fff; }
+      .orange-list .list .item .item-text .pop { font-weight: 700; background: rgba(255,255,255,0.18); padding: 0 10px; border-radius: 6px; }
+
+      /* SLIDE 4 / 6 — CREME TEXT */
+      .baustein-creme { justify-content: flex-start; padding-top: 130px; }
+      .baustein-creme .headline { font-family: "Philosopher"; font-weight: 700; font-size: 84px; line-height: 1.08; color: var(--dunkelblau); margin-bottom: 44px; }
+      .baustein-creme .headline .pop { color: var(--orange); font-style: italic; }
+      .baustein-creme .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 44px; line-height: 1.4; color: var(--text); opacity: 0.92; }
+      .baustein-creme .body .pop { color: var(--orange); font-weight: 700; }
+
+      /* SLIDE 5 — ORANGE 5 BAUSTEINE */
+      .orange-bausteine { justify-content: flex-start; padding-top: 130px; color: #fff; }
+      .orange-bausteine .headline { font-family: "Philosopher"; font-weight: 700; font-size: 80px; line-height: 1.08; color: #fff; margin-bottom: 44px; }
+      .orange-bausteine .headline .pop { font-style: italic; opacity: 0.95; }
+      .orange-bausteine .list .item { display: flex; align-items: flex-start; gap: 26px; margin-bottom: 24px; }
+      .orange-bausteine .list .item .num { font-family: "Philosopher"; font-weight: 700; font-size: 48px; color: rgba(255,255,255,0.85); flex-shrink: 0; min-width: 56px; line-height: 1.05; }
+      .orange-bausteine .list .item .item-text { font-family: "Source Sans 3"; font-weight: 600; font-size: 40px; line-height: 1.35; color: #fff; padding-top: 4px; }
+
+      /* SLIDE 7 — CTA ORANGE */
+      .s7 { justify-content: center; align-items: center; text-align: center; color: #fff; }
+      .s7 .eyebrow { color: rgba(255,255,255,0.95); margin-bottom: 24px; }
+      .s7 .big { font-family: "Philosopher"; font-weight: 700; font-style: italic; font-size: 140px; line-height: 1.0; color: #fff; margin-bottom: 32px; }
+      .s7 .date-pill { font-family: "Source Sans 3"; font-weight: 700; font-size: 48px; color: var(--orange); background: #fff; padding: 14px 36px; border-radius: 18px; margin-bottom: 40px; box-shadow: 0 12px 32px rgba(0,0,0,0.25); }
+      .s7 .body { font-family: "Source Sans 3"; font-weight: 600; font-size: 42px; line-height: 1.4; color: #fff; max-width: 900px; margin-bottom: 40px; }
+      .s7 .body .pop { background: #fff; color: var(--orange); padding: 4px 20px; border-radius: 10px; font-weight: 700; }
+      .s7 .arrow-row { display: flex; align-items: center; justify-content: center; gap: 12px; }
+      .s7 .arrow-line { width: 180px; height: 8px; background: #fff; border-radius: 4px; }
+      .s7 .arrow-head { width: 0; height: 0; border-top: 22px solid transparent; border-bottom: 22px solid transparent; border-left: 32px solid #fff; }
+    </style>
+  </head>
+  <body>
+
+    <div class="slide bg-orange s1">
+      <div class="eyebrow">Letzte 3 Tage</div>
+      <div class="hook">3 Tage bis du<br/><span class="pop">nicht mehr</span><br/>aus dem Bauch postest</div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme s2">
+      <div class="eyebrow">Vielleicht kennst du das</div>
+      <p class="body">
+        Du planst jeden Abend nochmal, was du morgen postest. Sitzt 30 Min vor dem Handy, bevor du etwas tippst. Löschst öfter als du veröffentlichst. <span class="pop">Aus dem Bauch heisst:</span> jedes Mal eine kleine Entscheidung neu treffen. Das frisst dich auf.
+      </p>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-orange orange-list">
+      <div class="eyebrow">Was es täglich kostet</div>
+      <div class="headline">Bauch-Posten <span class="pop">kostet</span></div>
+      <div class="list">
+        <div class="item"><span class="icon">⏱️</span><div class="item-text"><span class="pop">30 Min</span> Entscheidungs-Zeit jeden Abend</div></div>
+        <div class="item"><span class="icon">📱</span><div class="item-text">3 Storys angefangen — <span class="pop">eine</span> gepostet</div></div>
+        <div class="item"><span class="icon">🎬</span><div class="item-text">Reels-Aufnahme, dann wieder gelöscht</div></div>
+        <div class="item"><span class="icon">😣</span><div class="item-text"><span class="pop">Sonntagabend-Panik</span> weil der Plan fehlt</div></div>
+      </div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Das Gegenteil ist nicht „perfekt"</div>
+      <div class="headline">Das Gegenteil heisst <span class="pop">System</span></div>
+      <p class="body">
+        Wenn du weisst, was du Montag bis Freitag postest, was deine 5 wiederkehrenden Inhalts-Säulen sind und welche Story du wann nimmst, fällt das Bauchgefühl weg. Du postest immer noch echt — aber nicht mehr blind.
+      </p>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-orange orange-bausteine">
+      <div class="eyebrow">In 5 Tagen baust du</div>
+      <div class="headline">Dein <span class="pop">komplettes System</span></div>
+      <div class="list">
+        <div class="item"><span class="num">1.</span><div class="item-text">Eine Bio die sagt für WEN du da bist</div></div>
+        <div class="item"><span class="num">2.</span><div class="item-text">3 Sätze die Interessenten beim Scrollen stoppen</div></div>
+        <div class="item"><span class="num">3.</span><div class="item-text">Eine Wochenstruktur als Mama-CEO</div></div>
+        <div class="item"><span class="num">4.</span><div class="item-text">Dein erster Lead-Magnet</div></div>
+        <div class="item"><span class="num">5.</span><div class="item-text">Dein Postingplan für den ganzen Sommer</div></div>
+      </div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Was du danach hast</div>
+      <div class="headline">Du öffnest Insta — und <span class="pop">weisst was du tust</span></div>
+      <p class="body">
+        In 30-45 Min ist dein Tagespost durch. Wo du bisher 2-3 Stunden verzettelt hast. Plus: deine Mama-CEO-Woche fühlt sich nicht mehr wie Hamsterrad an, sondern wie etwas, das du tatsächlich entschieden hast.
+      </p>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-orange s7">
+      <div class="eyebrow">Bootcamp</div>
+      <div class="big">Kostenlos</div>
+      <div class="date-pill">29.6. – 3.7.</div>
+      <p class="body">
+        Komplett digital. Eine Sprachnotiz von mir jeden Morgen. PIA an deiner Seite.<br/><br/>
+        Kommentier <span class="pop">BOOTCAMP</span> und ich schick dir den Anmeldelink.
+      </p>
+      <div class="arrow-row"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+      <div class="footer"><span>@mum.life.balance</span><span></span></div>
+    </div>
+
+  </body>
+</html>
