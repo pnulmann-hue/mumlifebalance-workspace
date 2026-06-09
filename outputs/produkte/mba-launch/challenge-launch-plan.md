@@ -61,7 +61,7 @@ Patricia ist **nicht** den ganzen Tag live. Empfohlen: 1× live-Moment an **Tag 
 | **1** (live Kick-off) | Dein Thema klar | **Ihre Bio / Positionierung** (Bio-Check-Logik) | Instagram-Kundenmaschine |
 | **2** | Sichtbar werden | **3 Hooks für ihr Thema** | Instagram-Kundenmaschine |
 | **3** | Zeit schaffen | **Mini-Wochenstruktur / KI-Impuls** | Mama-CEO |
-| **4** | Dein Angebot | **Erste Angebots-Idee** | Digitale Produktwelt |
+| **4** | Dein Leadmagnet | **Leadmagnet-Skelett (Titel + Versprechen + Format)** — der erste Schritt zur Conversion (geändert 8.6.: war „erstes Angebot" → ist greifbarer für Mama-Networker, baut Liste auf, passt zu Julia-Trost-Treppe Leadmagnet→Mail→Angebot) | Digitale Produktwelt (Angebot kommt nach Bootcamp via MBA) |
 | **5** (live Finale) | Dein roter Faden | **Ihr roter Faden** → Brücke zur MBA | = MBA |
 
 **Build-Priorität:** **Tag 1 (Bio) + Tag 2 (Hooks)** sind der erlebbare Kern und werden zuerst gebaut. Tag 3-5 können leichter sein (PIA-Impuls + Reflexions-Task), falls die Zeit knapp wird.

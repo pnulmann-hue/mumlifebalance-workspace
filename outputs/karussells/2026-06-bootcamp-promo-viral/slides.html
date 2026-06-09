@@ -2,7 +2,7 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <title>Bootcamp-Promo Karussell (Viral nach Mentor-Methode)</title>
+    <title>Bootcamp-Promo Karussell — Plan dein Business-Jahr in 5 Tagen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
@@ -14,7 +14,6 @@
         --orange: #dc822e;
         --text: #0c1c30;
         --rot: #c14d4d;
-        --grun: #4d9c6e;
       }
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body {
@@ -36,6 +35,7 @@
       .slide.bg-creme  { background: var(--creme); color: var(--text); }
       .slide.bg-petrol { background: var(--petrol); color: #fff; }
       .slide.bg-orange { background: var(--orange); color: #fff; }
+      .slide.bg-dunkelblau { background: var(--dunkelblau); color: #fff; }
 
       .eyebrow {
         font-family: "Source Sans 3"; font-weight: 700;
@@ -43,40 +43,82 @@
         color: var(--petrol);
         margin-bottom: 36px;
       }
-      .bg-petrol .eyebrow, .bg-orange .eyebrow { color: rgba(255,255,255,0.85); }
+      .bg-petrol .eyebrow, .bg-orange .eyebrow, .bg-dunkelblau .eyebrow { color: rgba(255,255,255,0.85); }
 
       .footer {
         position: absolute; bottom: 50px; left: 80px; right: 80px;
         display: flex; justify-content: space-between; align-items: center;
         font-family: "Source Sans 3"; font-weight: 600; font-size: 24px;
         color: rgba(12, 28, 48, 0.55); letter-spacing: 0.08em;
+        z-index: 5;
       }
-      .bg-petrol .footer, .bg-orange .footer { color: rgba(255, 255, 255, 0.55); }
-      .footer .swipe {
-        display: inline-flex; align-items: center; gap: 8px;
-      }
+      .bg-petrol .footer, .bg-orange .footer, .bg-dunkelblau .footer { color: rgba(255, 255, 255, 0.7); }
 
-      /* === SLIDE 1 — HOOK === */
-      .s1 { justify-content: center; align-items: center; text-align: center; }
-      .s1 .hook {
-        font-family: "Philosopher"; font-weight: 700;
-        font-size: 130px; line-height: 1.05;
-        color: var(--dunkelblau);
+      /* === SLIDE 1 — FOTO-COVER === */
+      .s1 {
+        padding: 0;
+        background: var(--creme);
       }
-      .s1 .hook .pop { color: var(--petrol); font-style: italic; }
-      .s1 .date-pill {
-        margin-top: 56px;
-        background: #fff; color: var(--petrol);
-        padding: 18px 44px; border-radius: 20px;
-        font-family: "Source Sans 3"; font-weight: 700; font-size: 56px;
-        box-shadow: 0 14px 36px rgba(18, 130, 140, 0.25);
+      .s1 .cover-foto {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 30%;
+        z-index: 1;
+      }
+      .s1 .top-band {
+        position: absolute;
+        top: 60px; left: 60px; right: 60px;
+        background: rgba(241, 236, 221, 0.88);
+        backdrop-filter: blur(6px);
+        padding: 20px 32px;
+        border-radius: 18px;
+        text-align: center;
+        z-index: 3;
+      }
+      .s1 .top-band .label {
+        font-family: "Source Sans 3"; font-weight: 700;
+        font-size: 30px; letter-spacing: 0.18em; text-transform: uppercase;
+        color: var(--petrol);
+      }
+      .s1 .hook-card {
+        position: absolute;
+        left: 60px; right: 60px; bottom: 180px;
+        background: var(--creme);
+        padding: 48px 56px 56px;
+        border-radius: 28px;
+        box-shadow: 0 18px 48px rgba(12, 28, 48, 0.4);
+        z-index: 4;
+      }
+      .s1 .hook-card .hook {
+        font-family: "Philosopher"; font-weight: 700;
+        font-size: 78px; line-height: 1.08;
+        color: var(--dunkelblau);
+        margin-bottom: 18px;
+      }
+      .s1 .hook-card .hook .pop {
+        color: var(--petrol);
+        font-style: italic;
+      }
+      .s1 .hook-card .sub {
+        font-family: "Source Sans 3"; font-weight: 600;
+        font-size: 30px; letter-spacing: 0.06em;
+        color: var(--petrol);
+      }
+      .s1 .footer {
+        bottom: 60px;
+        color: rgba(255, 255, 255, 0.95);
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+        z-index: 4;
       }
 
       /* === SLIDE 2 — SPANNUNG === */
       .s2 { justify-content: center; }
       .s2 .body {
         font-family: "Source Sans 3"; font-weight: 400;
-        font-size: 60px; line-height: 1.35;
+        font-size: 56px; line-height: 1.35;
         color: var(--text);
       }
       .s2 .body .pop { color: var(--petrol); font-weight: 700; }
@@ -87,80 +129,75 @@
         text-underline-offset: 8px;
       }
 
-      /* === SLIDE 3/6 (LIST CREME) === */
-      .list-slide { justify-content: flex-start; padding-top: 140px; }
-      .list-slide .headline {
+      /* === SLIDE 3/5 — BAUSTEIN CREME === */
+      .baustein-creme { justify-content: center; }
+      .baustein-creme .nummer {
         font-family: "Philosopher"; font-weight: 700;
-        font-size: 96px; line-height: 1.05;
-        color: var(--dunkelblau);
-        margin-bottom: 60px;
+        font-size: 52px; color: var(--petrol);
+        letter-spacing: 0.06em;
+        margin-bottom: 18px;
+        text-transform: uppercase;
       }
-      .list-slide .headline .pop { color: var(--petrol); font-style: italic; }
-      .list-row {
-        display: flex; gap: 32px; align-items: flex-start;
+      .baustein-creme .headline {
+        font-family: "Philosopher"; font-weight: 700;
+        font-size: 96px; line-height: 1.08;
+        color: var(--dunkelblau);
         margin-bottom: 36px;
       }
-      .list-row .icon {
-        font-size: 60px; line-height: 1; flex-shrink: 0; padding-top: 8px;
-      }
-      .list-row .text {
-        font-family: "Source Sans 3"; font-weight: 600;
-        font-size: 50px; line-height: 1.3;
-        color: var(--text);
-      }
-      .list-row .text .pop { color: var(--petrol); }
-
-      /* === SLIDE 4 — ✅-LIST PETROL === */
-      .s4 { justify-content: flex-start; padding-top: 140px; }
-      .s4 .headline {
-        font-family: "Philosopher"; font-weight: 700;
-        font-size: 96px; line-height: 1.05;
-        color: #fff;
-        margin-bottom: 60px;
-      }
-      .s4 .headline .italic-pop { font-style: italic; color: #fff; opacity: 0.95; }
-      .s4 .list-row .text {
-        color: #fff;
-      }
-      .s4 .list-row .text .pop { color: #fff; font-weight: 700; background: rgba(255,255,255,0.18); padding: 0 12px; border-radius: 8px; }
-
-      /* === SLIDE 5 — PIA === */
-      .s5 { justify-content: center; align-items: center; text-align: center; }
-      .s5 .headline {
-        font-family: "Philosopher"; font-weight: 700;
-        font-size: 90px; line-height: 1.05;
-        color: var(--dunkelblau);
-        margin-bottom: 48px;
-      }
-      .s5 .pia-name {
-        font-family: "Philosopher"; font-weight: 700;
-        font-size: 320px; line-height: 1;
+      .baustein-creme .headline .pop {
         color: var(--petrol);
-        letter-spacing: -0.02em;
-        margin-bottom: 48px;
+        font-style: italic;
       }
-      .s5 .pia-dot { color: var(--orange); }
-      .s5 .body {
+      .baustein-creme .body {
         font-family: "Source Sans 3"; font-weight: 400;
-        font-size: 46px; line-height: 1.4;
+        font-size: 44px; line-height: 1.35;
         color: var(--text);
-        max-width: 860px;
-        opacity: 0.88;
+        opacity: 0.92;
       }
-      .s5 .body .pop { color: var(--petrol); font-weight: 700; }
+      .baustein-creme .body .pop { color: var(--petrol); font-weight: 700; }
+
+      /* === SLIDE 4/6 — BAUSTEIN PETROL === */
+      .baustein-petrol { justify-content: center; color: #fff; }
+      .baustein-petrol .nummer {
+        font-family: "Philosopher"; font-weight: 700;
+        font-size: 52px; color: rgba(255,255,255,0.7);
+        letter-spacing: 0.06em;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+      }
+      .baustein-petrol .headline {
+        font-family: "Philosopher"; font-weight: 700;
+        font-size: 96px; line-height: 1.08;
+        color: #fff;
+        margin-bottom: 36px;
+      }
+      .baustein-petrol .headline .pop {
+        font-style: italic;
+        opacity: 0.95;
+      }
+      .baustein-petrol .body {
+        font-family: "Source Sans 3"; font-weight: 400;
+        font-size: 44px; line-height: 1.35;
+        color: #fff;
+      }
+      .baustein-petrol .body .pop {
+        font-weight: 700;
+        background: rgba(255,255,255,0.18);
+        padding: 0 12px; border-radius: 8px;
+      }
 
       /* === SLIDE 7 — CTA === */
       .s7 { justify-content: center; align-items: center; text-align: center; }
       .s7 .eyebrow { color: rgba(255,255,255,0.9); margin-bottom: 28px; }
       .s7 .big-date {
         font-family: "Philosopher"; font-weight: 700; font-style: italic;
-        font-size: 180px; line-height: 1.0;
+        font-size: 160px; line-height: 1.0;
         color: #fff;
         margin-bottom: 56px;
       }
       .s7 .body {
         font-family: "Source Sans 3"; font-weight: 600;
-        font-size: 54px; line-height: 1.35;
+        font-size: 48px; line-height: 1.35;
         color: #fff;
         max-width: 900px;
         margin-bottom: 56px;
@@ -185,17 +222,23 @@
   </head>
   <body>
 
-    <!-- SLIDE 1 — HOOK -->
-    <div class="slide bg-creme s1">
-      <div class="eyebrow">Bootcamp · 29.6. – 3.7.</div>
-      <div class="hook">
-        Dein <span class="pop">roter Faden</span><br/>
-        in 5 Tagen —<br/>
-        ohne Webinar
+    <!-- SLIDE 1 — FOTO-COVER MIT HOOK -->
+    <div class="slide s1">
+      <img class="cover-foto" src="assets/cover-foto.jpg" alt="Patricia" />
+      <div class="top-band">
+        <div class="label">Bootcamp · 29.6. – 3.7.</div>
+      </div>
+      <div class="hook-card">
+        <div class="hook">
+          Plan dein restliches<br/>
+          <span class="pop">Business-Jahr</span> —<br/>
+          in 5 Tagen
+        </div>
+        <div class="sub">5 Bausteine. Mit PIA, deiner KI-Mentorin.</div>
       </div>
       <div class="footer">
         <span>@mum.life.balance</span>
-        <span class="swipe">Swipe →</span>
+        <span>Swipe →</span>
       </div>
     </div>
 
@@ -203,63 +246,63 @@
     <div class="slide bg-creme s2">
       <div class="eyebrow">Vielleicht kennst du das</div>
       <p class="body">
-        Du <span class="underline">verzettelst dich</span> seit Monaten zwischen Bügelwäsche, Network-Aufbau und dem <span class="pop">„irgendwann mein eigenes Ding"</span>. Die Sommerferien starten in 4 Wochen. Du willst rein als Mama mit Plan.
+        Jeden <span class="underline">Sonntagabend</span> dieselbe Frage: was poste ich diese Woche? Was kommt nach den Ferien? Und du startest jeden Monat wieder bei <span class="pop">null</span> — weil dir 5 Bausteine fehlen, die jede Mama-CEO braucht.
       </p>
       <div class="footer">
         <span>@mum.life.balance</span>
-        <span class="swipe">Swipe →</span>
+        <span>Swipe →</span>
       </div>
     </div>
 
-    <!-- SLIDE 3 — ❌-LISTE -->
-    <div class="slide bg-creme s3 list-slide">
-      <div class="headline">Was du <span class="pop"><em>nicht</em></span> brauchst</div>
-      <div class="list-row"><span class="icon">❌</span><span class="text">Ein 90-Minuten-Webinar das dich verwirrter macht</span></div>
-      <div class="list-row"><span class="icon">❌</span><span class="text">Ein 5'000-CHF-Coaching mit Wartezeit bis September</span></div>
-      <div class="list-row"><span class="icon">❌</span><span class="text">Ein zweites Studium um endlich anzufangen</span></div>
-      <div class="list-row"><span class="icon">❌</span><span class="text">Eine Strategie-Power-Hour die nirgendwo hinführt</span></div>
-      <div class="footer">
-        <span>@mum.life.balance</span>
-        <span class="swipe">Swipe →</span>
-      </div>
-    </div>
-
-    <!-- SLIDE 4 — ✅-LISTE -->
-    <div class="slide bg-petrol s4 list-slide">
-      <div class="headline">Was du <span class="italic-pop"><em>wirklich</em></span> brauchst</div>
-      <div class="list-row"><span class="icon">✅</span><span class="text"><span class="pop">5 Tage</span> · 29. Juni bis 3. Juli</span></div>
-      <div class="list-row"><span class="icon">✅</span><span class="text"><span class="pop">1 Sprachnotiz</span> von mir pro Morgen</span></div>
-      <div class="list-row"><span class="icon">✅</span><span class="text">Deine KI-Mentorin <span class="pop">PIA</span> – kennt mein Mentoring</span></div>
-      <div class="list-row"><span class="icon">✅</span><span class="text"><span class="pop">1 Stunde am Tag</span> – während die Kinder spielen</span></div>
-      <div class="footer">
-        <span>@mum.life.balance</span>
-        <span class="swipe">Swipe →</span>
-      </div>
-    </div>
-
-    <!-- SLIDE 5 — PIA -->
-    <div class="slide bg-creme s5">
-      <div class="eyebrow">Deine KI-Mentorin</div>
-      <div class="pia-name">PIA<span class="pia-dot">.</span></div>
+    <!-- SLIDE 3 — BAUSTEIN 1: BIO -->
+    <div class="slide bg-creme baustein-creme">
+      <div class="nummer">Baustein 1 · Bio</div>
+      <div class="headline">Eine Bio, die sagt <span class="pop">für WEN</span> du da bist</div>
       <p class="body">
-        Eine KI gefüttert mit meinem kompletten Mentoring-Wissen. Du erzählst ihr <span class="pop">deine</span> Situation — sie liefert deine Bio, deine Hooks, deine Wochenstruktur. Personalisiert. <span class="pop">In Minuten, nicht in Monaten.</span>
+        Statt „Mama, Network-Partner, Life-Lover" — das sagt nichts über die Transformation, die du deinen Interessenten gibst. Die Bio ist der erste Filter: hier entscheidet sich, ob jemand bleibt oder weiterscrollt.
       </p>
       <div class="footer">
         <span>@mum.life.balance</span>
-        <span class="swipe">Swipe →</span>
+        <span>Swipe →</span>
       </div>
     </div>
 
-    <!-- SLIDE 6 — OUTCOME -->
-    <div class="slide bg-creme s6 list-slide">
-      <div class="headline">Nach Tag 5 hast du</div>
-      <div class="list-row"><span class="icon">→</span><span class="text">Deine <span class="pop">Bio</span> die endlich greift</span></div>
-      <div class="list-row"><span class="icon">→</span><span class="text">3 <span class="pop">Hooks</span> für deine Nische</span></div>
-      <div class="list-row"><span class="icon">→</span><span class="text">Deine <span class="pop">Wochenstruktur</span> als Mama-CEO</span></div>
-      <div class="list-row"><span class="icon">→</span><span class="text">Den <span class="pop">roten Faden</span> für den Sommer</span></div>
+    <!-- SLIDE 4 — BAUSTEIN 2: SÄTZE -->
+    <div class="slide bg-petrol baustein-petrol">
+      <div class="nummer">Baustein 2 · Reel-Anfänge</div>
+      <div class="headline">Sätze, die Interessenten <span class="pop">beim Scrollen stoppen</span> lassen</div>
+      <p class="body">
+        Nicht „Guten Morgen ihr Lieben". Sondern <span class="pop">3 erste Sätze</span> die direkt einen Nerv treffen — sodass deine Interessenten ihre Daumen heben statt weiterzuscrollen.
+      </p>
       <div class="footer">
         <span>@mum.life.balance</span>
-        <span class="swipe">Swipe →</span>
+        <span>Swipe →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 5 — BAUSTEIN 3: WOCHENSTRUKTUR -->
+    <div class="slide bg-creme baustein-creme">
+      <div class="nummer">Baustein 3 · Wochenstruktur</div>
+      <div class="headline">Wochenstruktur statt <span class="pop">täglich improvisieren</span></div>
+      <p class="body">
+        Du weisst Sonntagabend nicht, was du Montag postest, weil du keine Struktur hast. Eine echte Mama-CEO-Woche: wann tust du was — ohne dass dein Business-Tag länger als 1 Stunde wird.
+      </p>
+      <div class="footer">
+        <span>@mum.life.balance</span>
+        <span>Swipe →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 6 — BAUSTEIN 4+5: LEADMAGNET + POSTINGPLAN -->
+    <div class="slide bg-petrol baustein-petrol">
+      <div class="nummer">Baustein 4 + 5 · Brücke + Plan</div>
+      <div class="headline"><span class="pop">Dein Leadmagnet</span> + dein Postingplan für den Sommer</div>
+      <p class="body">
+        Ein <span class="pop">Leadmagnet</span> der Interessenten in Kontakte verwandelt — plus 5 Inhalts-Säulen, mit denen du den ganzen Sommer postest, ohne jeden Tag neu zu entscheiden, was als Nächstes kommt.
+      </p>
+      <div class="footer">
+        <span>@mum.life.balance</span>
+        <span>Swipe →</span>
       </div>
     </div>
 
@@ -268,9 +311,8 @@
       <div class="eyebrow">Bootcamp · Anmeldung läuft</div>
       <div class="big-date">29.6. – 3.7.</div>
       <p class="body">
-        Kommentier <span class="pop">BOOTCAMP</span><br/>
-        — ich schick dir den Link.<br/>
-        Kostenlos.
+        Im 5-Tage-Bootcamp baust du diese 5 Bausteine konkret für dich — mit PIA, deiner KI-Mentorin. Komplett digital. Kostenlos.<br/><br/>
+        Kommentier <span class="pop">BOOTCAMP</span> und ich schick dir den Anmeldelink.
       </p>
       <div class="arrow-row">
         <div class="arrow-line"></div>

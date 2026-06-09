@@ -2,94 +2,97 @@
 tags: [content, karussell, bootcamp, mba, launch]
 ---
 
-# Bootcamp-Promo-Karussell (Viral nach Mentor-Methode)
+# Bootcamp-Promo-Karussell — Plan dein Business-Jahr in 5 Tagen
 
-**Erstellt:** 2026-06-08
-**Methode:** HeyGen / Dawid Przybylski 4-Prompt-Workflow (siehe `.claude/commands/karussell.md` Modus 7)
+**Erstellt:** 2026-06-08 · **v3** (komplett überarbeitet nach Patricia-Feedback)
+**Methode:** Mentor-Methode (4-Prompt-Workflow) + Patricia-Brand + **Mehrwert-Hook + Bootcamp-Brücke**
 **Profil:** Mentoring (Online-Business)
-**Job-Säule:** C — Reichweite (mit Lead-Anker via Keyword)
-**Pillar:** Launch / Bootcamp-Promo
+**Job-Säule:** C — Reichweite (Mehrwert-Reichweite mit Lead-Anker via Keyword)
+**Pillar:** Launch / Bootcamp-Promo (Übersichts-Karussell für KW25)
 **Slot:** Mo 16.6.2026 · 07:30 (KW25 Promo-Start, 1. Bootcamp-Push)
 
 ---
 
-## Hook (Slide 1)
+## Konzept-Logik (Pattern-Sicherung)
 
-> „Dein **roter Faden** in 5 Tagen — ohne Webinar"
+**Mehrwert-Hook + Bootcamp-CTA-Brücke:**
+- Hook = inhaltliches Versprechen (NICHT Bootcamp-Slogan): „Plan dein restliches Business-Jahr — in 5 Tagen"
+- Slides 2-6 = **echter Mehrwert** (5 Bausteine, jede Mama nimmt was mit)
+- Slide 7 = Bootcamp-Brücke: „Im Bootcamp baust DU diese 5 Bausteine konkret für DICH mit PIA"
+- → Pre-Launch-Content nach Julia-Trost-Logik: Themen aus dem Programm als Content + dann brückst zum Programm
 
-**Hook-Pattern:** Versprechen + Kontra-Intuition (ohne Webinar). 7 Wörter. Kein Punkt.
+**Zielgruppen-Ebenen-Filter (KRITISCH, siehe Memory):**
+- „Mama" wenn Patricia's Kundin (Mama-CEO, du als Mama) angesprochen wird ✓
+- „Interessenten / Zielgruppe" wenn DEREN Kunden gemeint sind — NIE „Mamas" für die Zielgruppe der Mama-Kundin
 
 ---
 
-## Slides — Wort-Counts (alle innerhalb Mentor-Limit)
+## Slides — Aufbau
 
-| # | Inhalt | Wort-Count | Limit |
+| # | BG | Inhalt | Wort-Count |
 |---|---|---|---|
-| 1 Hook | Dein roter Faden in 5 Tagen — ohne Webinar | 7 | 8 ✓ |
-| 2 Spannung | Verzettel zwischen Bügelwäsche/Network/"irgendwann mein eigenes Ding" | 28 | 30 ✓ |
-| 3 ❌-Liste | „Was du nicht brauchst" + 4 Negative | H:4 + B:28 | H:5 + B:40 ✓ |
-| 4 ✅-Liste | „Was du wirklich brauchst" + 4 Positive (Petrol-BG) | H:4 + B:36 | H:5 + B:40 ✓ |
-| 5 PIA-Erklärung | Mega PIA. + Mehrwert „In Minuten, nicht in Monaten" | H:4 + B:31 | H:5 + B:40 ✓ |
-| 6 Outcome | „Nach Tag 5 hast du" + 4 konkrete Ergebnisse | H:5 + B:35 | H:5 + B:40 ✓ |
-| 7 CTA | „Kommentier BOOTCAMP — ich schick dir den Link" | 17 | 25 ✓ |
+| 1 | **Foto-Cover** (Patricia, Foto 200) | Hook „Plan dein restliches Business-Jahr — in 5 Tagen" + Top-Band „BOOTCAMP · 29.6.–3.7." | 7 W (Limit 8) ✓ |
+| 2 | Creme | Spannung: Sonntag-Panik + 5 Bausteine fehlen | 30 W (Limit 30) ✓ |
+| 3 | Creme | **Baustein 1 · Bio**: „Für WEN du da bist" | H:5 + B:38 ✓ |
+| 4 | Petrol | **Baustein 2 · Reel-Anfänge**: „Sätze die Interessenten beim Scrollen stoppen lassen" | H:5 + B:34 ✓ |
+| 5 | Creme | **Baustein 3 · Wochenstruktur**: „Statt täglich improvisieren" | H:5 + B:38 ✓ |
+| 6 | Petrol | **Baustein 4+5 · Brücke + Plan**: „Leadmagnet + Postingplan für den Sommer" | H:5 + B:36 ✓ |
+| 7 | Petrol | CTA: „Im 5-Tage-Bootcamp baust du diese 5 Bausteine konkret für dich + BOOTCAMP-Keyword" | 23 W (Limit 25) ✓ |
+
+**Farb-Rhythmus:** 🌳 Foto → 🟫 Creme → 🟫 Creme → 🟦 Petrol → 🟫 Creme → 🟦 Petrol → 🟦 Petrol-CTA
 
 ---
 
 ## Caption (für Instagram-Post)
 
 ```
-Du hast die Schubladen für den Sommer schon mental aufgeräumt — aber dein Business hängt seit März in der Luft.
+Plan dein restliches Business-Jahr — in 5 Tagen. Diese 5 Bausteine brauchst du, um nicht jeden Sonntag in Panik zu fallen.
 
-Du weisst irgendwie, dass du was draus machen willst. Aber zwischen Bügelwäsche, Network-Calls und dem inneren „irgendwann mein eigenes Ding" verschwindet jeder Anlauf wieder.
+Du sitzt seit März am Handy, scrollst Reels, weisst aber nicht, was du eigentlich posten willst — geschweige denn, wie du daraus Interessenten gewinnst. Jeden Sonntagabend dieselbe Panik — und am Montag früh improvisierst du wieder, weil dir die Struktur fehlt.
 
-Letzte Woche habe ich aufgehört, dasselbe Rezept zu wiederholen.
+Im Mai hab ich realisiert: ich erkläre seit Monaten in 1:1-Calls fast immer dieselben 5 Sachen. Also hab ich PIA gebaut — eine KI, die mein komplettes Mentoring-Wissen kennt und dir in Minuten liefert, was sonst im 1:1-Coaching erarbeitet wird.
 
-5 Tage, eine Sprachnotiz von mir pro Morgen, und eine KI-Mentorin namens PIA, die dein komplettes erstes Setup für dich baut — Bio, drei Hooks, deine Wochenstruktur als Mama-CEO.
+Die 5 Bausteine deines restlichen Business-Jahres:
 
-Während die Kinder spielen — eine Stunde pro Tag reicht.
+→ Eine Bio, die sagt für WEN du da bist
+→ Erste Sätze, die Interessenten beim Scrollen stoppen
+→ Eine Wochenstruktur statt täglich improvisieren
+→ Dein Leadmagnet — der erste Schritt zur Conversion
+→ Dein Postingplan für den ganzen Sommer (5 Inhalts-Säulen)
 
-Nach Tag 5 hast du den roten Faden für den Sommer. Nicht im Kopf, sondern als fertiges, dir gehörendes Setup.
+Im 5-Tage-Bootcamp vom 29. Juni bis 3. Juli baust du diese 5 Bausteine konkret für DICH — mit PIA an deiner Seite. Komplett digital. Kostenlos.
 
-29. Juni bis 3. Juli. Kostenlos. Komplett digital.
-
-👉 Kommentier BOOTCAMP und ich schick dir den Link in die DMs.
+👉 Kommentier BOOTCAMP und ich schick dir den Anmeldelink in die DMs.
 
 #mamabusiness #mamamentorin #networkmama #mompreneurschweiz #5tagebootcamp
 ```
 
 **Caption-Checks:**
-- ✓ Erste 113 Zeichen passen vor „mehr anzeigen" (Hook-Mirror auf Sommer/Business)
-- ✓ Patricia-Voice (warm, anti-perfekt, Zeitanker „letzte Woche")
-- ✓ Keine Stakkato-Sätze (alle Sätze verbunden mit Konjunktionen)
+- ✓ Hook-Mirror erste 113 Zeichen (passt vor „mehr anzeigen")
+- ✓ Patricia-Voice (Zeitanker „seit März", „im Mai")
+- ✓ Keine Stakkato (alle Sätze verbunden, Liste explizit als → Liste)
 - ✓ Schweizer ss durchgängig (kein ß)
 - ✓ ManyChat-Keyword: **BOOTCAMP**
-- ✓ 5 Hashtags inkl. Pflicht-Anker `#mamabusiness`
-- ✓ Konkrete Specs (5 Tage, 1 Sprachnotiz, 1 Std/Tag, 29.6.-3.7., kostenlos)
-- ✓ Outcome konkret (Bio, 3 Hooks, Wochenstruktur, roter Faden)
-- ✓ Brand-Manifest-Filter: Nahbar ✓ Anti-Perfekt ✓ Demokratisierung ✓ (PIA macht es zugänglich)
+- ✓ 5 Hashtags inkl. `#mamabusiness`
+- ✓ Konkrete Specs (5 Bausteine namentlich, 29.6.-3.7., kostenlos)
+- ✓ **Zielgruppen-Ebenen-Filter:** Mama = Patricia's Kundin (du), Interessenten = deren Zielgruppe
 - ✓ Julia Trost NICHT erwähnt
-- ✓ Keine erfundenen Zahlen (alles aus Bootcamp-Plan oder Mentee-Profil)
+- ✓ Keine erfundenen Zahlen
+- ✓ „Mama-CEO" als Patricia-Sprache OK
 
 ---
 
 ## ManyChat-Trigger
 
 **Keyword:** `BOOTCAMP`
-**Aktion:** DM mit Link zur Bootcamp-Anmeldeseite (`mumlifebalance.ch/mba-webinar` — wird zur Challenge-Anmeldung umgebaut laut `outputs/produkte/mba-launch/challenge-launch-plan.md`)
-**Tag:** `mba-challenge-anmeldung` (neuer Tag, ersetzt `mba-webinar-anmeldung` 78)
+**Aktion:** DM mit Link zur Bootcamp-Anmeldeseite
+**Tag:** `mba-challenge-anmeldung`
 
 ---
 
 ## Render-Output
 
-7 PNGs in `outputs/karussells/2026-06-bootcamp-promo-viral/png/` (je 1080×1350):
-- `01.png` Hook
-- `02.png` Spannung
-- `03.png` ❌-Liste
-- `04.png` ✅-Liste (Petrol-BG)
-- `05.png` PIA-Erklärung
-- `06.png` Outcome
-- `07.png` CTA (Petrol-BG)
+7 PNGs in `outputs/karussells/2026-06-bootcamp-promo-viral/png/` (je 1080×1350)
 
 Build via: `cd scripts/karussell-render && node render-viral.js --input="../../outputs/karussells/2026-06-bootcamp-promo-viral/slides.html" --output="../../outputs/karussells/2026-06-bootcamp-promo-viral/png"`
 
@@ -102,7 +105,6 @@ Build via: `cd scripts/karussell-render && node render-viral.js --input="../../o
 Via Blotato:
 - Account-ID: 41414 (Mentoring)
 - 7 Slides als Karussell-Post
-- Caption oben einsetzen
 - Scheduled-Time: 2026-06-16T07:30:00+02:00 (Europe/Zurich)
 
 **Status:** ⏳ wartet auf Patricia-Freigabe, dann via Blotato pushen
@@ -111,6 +113,7 @@ Via Blotato:
 
 ## 🔗 Verwandte Notizen
 
-- [[../../produkte/mba-launch/challenge-launch-plan|Bootcamp-Launch-Plan]]
+- [[../../produkte/mba-launch/challenge-launch-plan|Bootcamp-Launch-Plan]] (Tag 4 = Leadmagnet, geändert 8.6.)
 - [[../../monatsplaene/2026-06-mentoring-monatsplan-v2-bootcamp|Juni-Monatsplan v2]]
 - [[../../../.claude/commands/karussell|/karussell Skill — Modus 7]]
+- Memory: `feedback_KRITISCH-zielgruppen-ebenen.md` (Interessenten ≠ Mamas)
