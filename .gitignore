@@ -196,6 +196,12 @@ Screenshot*.jpg
 !outputs/stories/**/*.png
 !outputs/stories/**/*.jpg
 
+# Ausnahme: gerenderte Karussell-Slide-PNGs (für GitHub Action `karussell-push.yml`)
+# Workflow lädt diese zu WordPress + Blotato hoch — daher müssen sie im Repo sein.
+# Source-Fotos (Shootingbilder) bleiben gitignored (s.o.).
+!outputs/karussells/**/png/*.png
+!outputs/karussells/**/png/*.jpg
+
 # ============================================================
 # REFERENZ-PDFs BLEIBEN LOKAL
 # Grosse Fremd-Kurs-PDFs + EPUBs raus (zu gross fuer Git)

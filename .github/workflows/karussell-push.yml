@@ -1,0 +1,91 @@
+name: Karussell-Push (WP + Blotato)
+
+# Manueller Trigger via GitHub UI oder `gh workflow run karussell-push.yml`
+# - Lädt Slide-PNGs aus dem Repo zu WordPress Media-Library hoch
+# - Ersetzt mediaUrls in der Blotato-Config
+# - Scheduled den Post via Blotato API
+#
+# Voraussetzungen (Repo-Secrets):
+# - WP_URL, WP_USER, WP_APP_PASSWORD (für upload-and-schedule.js → uploadMedia)
+# - BLOTATO_API_KEY (für schedule-post.js)
+on:
+  workflow_dispatch:
+    inputs:
+      slides-dir:
+        description: 'Pfad zum Ordner mit slide-01.png … slide-XX.png (relativ zum Repo-Root)'
+        required: true
+        type: string
+        default: 'outputs/karussells/2026-06-bootcamp-promo-viral/png'
+      config:
+        description: 'Pfad zur Blotato-Post-Config (relativ zum Repo-Root)'
+        required: true
+        type: string
+        default: 'scripts/blotato-post/post-configs/2026-06-16-mo-mentoring-bootcamp-promo-viral.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: karussell-push-${{ inputs.config }}
+  cancel-in-progress: false
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          if [ -f scripts/wordpress/package.json ]; then
+            cd scripts/wordpress && npm install --silent && cd -
+          fi
+          cd scripts/blotato-post && npm install --silent
+
+      - name: Write .env files from secrets
+        run: |
+          cat > .env << EOF
+          BLOTATO_API_KEY=${{ secrets.BLOTATO_API_KEY }}
+          EOF
+          cat > scripts/wordpress/.env << EOF
+          WP_URL=${{ secrets.WP_URL }}
+          WP_USER=${{ secrets.WP_USER }}
+          WP_APP_PASSWORD=${{ secrets.WP_APP_PASSWORD }}
+          EOF
+          cat > scripts/blotato-post/.env << EOF
+          BLOTATO_API_KEY=${{ secrets.BLOTATO_API_KEY }}
+          EOF
+
+      - name: Run upload-and-schedule
+        id: push
+        run: |
+          set -e
+          cd scripts/blotato-post
+          node upload-and-schedule.js \
+            --slides-dir="../../${{ inputs.slides-dir }}" \
+            --config="../../${{ inputs.config }}" \
+            2>&1 | tee /tmp/push-output.txt
+          echo "---"
+          # Extract Blotato Submission-ID if present
+          grep -oE '"id"[ :]+"[a-f0-9-]{36}"' /tmp/push-output.txt | head -1 || true
+
+      - name: Commit updated config (with Blotato CDN URLs)
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ inputs.config }}"
+          git diff --staged --quiet || git commit -m "karussell-push: config updated with Blotato CDN URLs ($(basename ${{ inputs.config }} .json))"
+          git push || echo "No changes to push"
+
+      - name: Cleanup .env files (security)
+        if: always()
+        run: |
+          rm -f .env scripts/wordpress/.env scripts/blotato-post/.env

@@ -6,6 +6,15 @@
 
 ---
 
+## 🚀 PFLICHT: Launch-Modus-Awareness
+
+Bevor du baust: Läuft gerade ein Launch? Prüfe `context/active-funnels.json` (ein `launch_window` umschliesst das heutige Datum). **Wenn ja → lies `context/launch-modus-content.md` und richte dich danach aus.** Kernregeln:
+- **Feed bleibt programm-frei** — Reichweite + Emotion + Mehrwert + Pull zum kostenlosen Webinar/Replay + „mehr in meinen Stories". NIE Programme/Kursnamen/Preise/Cart im Karussell (Memory `feedback_keine-programme-im-feed`).
+- **Verkauf läuft über Story + Mail.** Story-Verweis-CTAs gegen `outputs/produkte/[slug]/story-plan.json` gegenchecken (Feed↔Story-Interlock).
+- Die **Launch-Phase aus dem Launch-Kalender** (Julia-Trost-Plan) gibt die emotionale Tonalität der Woche.
+
+---
+
 ## 🚨 PFLICHT: Keine Stakkato-Sätze (Brand-Voice-Override)
 
 Patricia hat MEHRFACH angemahnt — gilt für JEDEN Output (Hooks, Captions, Slide-Texte). Siehe `feedback_KRITISCH-keine-stakkato-saetze.md`.
@@ -125,6 +134,101 @@ Mehrere Karussell-Vorlagen auf Vorrat designen.
 2. 5-10 Konzepte mit Hook + Folien-Plan
 3. Farb-/Typo-Vorgaben als zentrale Style-Sheet
 4. Gruppieren nach Pillar für bessere Serien
+
+### 7. Viral-Karussell nach Mentor-Methode (HeyGen / Dawid Przybylski)
+
+7-Slide-Karussell nach dem 4-Prompt-Workflow des HyperFrames-Mentors. Strikte Wort-Limits, klare Struktur, kein Design-Bloat. Pipeline: HTML → PNG via `scripts/karussell-render/render-viral.js`. Patricia-Brand bleibt (Philosopher + Source Sans 3 + Petrol/Creme/Orange — wir nutzen NICHT die System-Sans-Vorgabe des Mentors).
+
+**Ablauf — 4-Prompt-Workflow:**
+
+**Prompt 1 — Hook-Generierung (10 Varianten):**
+- Max 8 Wörter pro Hook
+- **Kein Punkt am Ende**
+- Verschiedene Formate: provokante These / überraschende Zahl / Direktfrage / Kontra-Intuition / Versprechen
+- Muss Cliffhanger erzeugen (Leser fragt sich „Wie/Warum?")
+- Output: 10 Hooks, mit Format-Tag und Wort-Count
+- Patricia wählt 1 Hook für Prompt 2
+
+**Prompt 2 — Swipe-Sequenz (7 Slides):**
+| # | Slide | Inhalt | Wort-Limit |
+|---|---|---|---|
+| 1 | Hook | gewählter Hook aus Prompt 1 | 8 W |
+| 2 | Spannung | Pain vertiefen, Identifikation | 30 W |
+| 3 | Value 1 | Headline + Body | H:5 W + B:40 W |
+| 4 | Value 2 | Headline + Body | H:5 W + B:40 W |
+| 5 | Value 3 | Headline + Body | H:5 W + B:40 W |
+| 6 | Value 4 | Headline + Body (Outcome / Bridge) | H:5 W + B:40 W |
+| 7 | CTA | Aktion mit ManyChat-Keyword | 25 W, nicht generisch |
+
+**Hinweise:**
+- Jede Slide muss neue Frage für nächste Slide aufmachen (Momentum)
+- Keine Info-Wiederholungen
+- ❌/✅-Listen sind ein guter Kontrast-Move (Slide 3 ❌, Slide 4 ✅, eventuell Petrol-BG für Slide 4)
+
+**Prompt 3 — Qualitätskontrolle:**
+Prüfe vor Build:
+- Generik-Sätze gestrichen? (keine „Mehr Klarheit gewinnen"-Floskel)
+- Momentum: jede Slide leitet zur nächsten?
+- Hook-Konsistenz: Slide 6 oder 7 schliesst die Hook-Schleife?
+- CTA-Passung: ManyChat-Keyword + Datum + Verheissung explizit?
+- Wort-Limits eingehalten?
+- Stakkato-Check (siehe oben — nie 3 Subjekt-Verb-Punkt-Sätze hintereinander)
+- Brand-Voice-Check: `patricia-vollprofil.md`-Filter, doTERRA-Compliance falls Network
+
+**Prompt 4 — HTML-Produktion:**
+- Format **1080×1350** (Portrait, mehr Feed-Real-Estate als 1:1)
+- Patricia-Brand: Philosopher (Headlines), Source Sans 3 (Body), Petrol `#12828c` / Creme `#f1ecdd` / Orange `#dc822e`
+- BG-Wechsel zwischen Slides für Rhythmus (z.B. Slide 1/3/6 Creme, Slide 4 Petrol, Slide 7 Petrol für CTA)
+- Brand-Footer „@mum.life.balance" + „Swipe →" Indikator
+- Output-Pfad: `outputs/karussells/YYYY-MM-[slug]/slides.html`
+- Render: `cd scripts/karussell-render && node render-viral.js --input="../../outputs/karussells/YYYY-MM-[slug]/slides.html" --output="../../outputs/karussells/YYYY-MM-[slug]/png"`
+- Ergebnis: `01.png` bis `07.png`, je 1080×1350, direkt Instagram-postbar
+
+**Referenz-Karussell:** `outputs/karussells/2026-06-bootcamp-promo-viral/` (Bootcamp-Promo, KW25).
+
+**Wann diesen Modus wählen:**
+- Reichweiten-Posts mit klarer Aussage-Struktur
+- Lead-Posts mit Keyword-CTA
+- Wenn schnell ein „sauberes" Karussell ohne Foto-Drama gebraucht wird
+- Pre-Launch-Wochen mit klarem Versprechen
+
+**Wann NICHT:**
+- Storytelling-Karussells mit Patricia-Erlebnis (dafür Modus 1 mit Foto-Inserts)
+- Wenn Foto/Reel besser Job-Sicher würde
+
+---
+
+#### 🔥 Pflicht-Pattern für Modus 7 (Lessons Patricia 2026-06-08)
+
+**(1) Mehrwert-Hook + CTA-Brücke (NICHT Programm-Slogan-Hook):**
+Während Launch-Phase NICHT „Komm zum Bootcamp"-Hook. Stattdessen:
+- Hook = inhaltliches Mehrwert-Versprechen (z.B. „Plan dein restliches Business-Jahr — in 5 Tagen", „5 Fehler in deiner Bio die Anfragen kosten", „3 Sätze die Interessenten beim Scrollen stoppen")
+- Slides 2-6 = **echter Mehrwert** (jede Mama nimmt was mit, auch ohne Bootcamp)
+- Slide 7 CTA = Bootcamp-Brücke „Im 5-Tage-Bootcamp baust DU das konkret für DICH mit PIA. Kommentier BOOTCAMP."
+- Pre-Launch-Content nach Julia-Trost-Logik: Programm-Inhalte als Content + dann brückst zum Programm
+
+**(2) Foto-Cover-Variation für Slide 1 (rotieren mit Brand-Card):**
+Slide 1 abwechseln zwischen:
+- **Brand-Card** (Creme/Petrol/Orange BG, nur Typo) — schnell, sauber
+- **Foto-Cover** (Patricia-Foto aus `context/Shootingbilder/` + Hook-Brand-Box im unteren Drittel) — echter, persönlicher
+
+**Foto-Cover-Layout (Pflicht):**
+- Foto vollflächig (object-fit: cover, object-position: center 30% damit Gesicht in oberer Hälfte)
+- Brand-Box (Hook) IMMER im unteren Drittel oder am unteren Rand
+- **NIE Text über Gesicht** (Pflicht-Regel `feedback_foto-schutz-overlays.md`)
+- Top-Band optional für Eyebrow (Bootcamp · Datum)
+- Brand-Footer mit Text-Shadow für Lesbarkeit über Foto
+
+**(3) Zielgruppen-Ebenen-Filter (KRITISCH, siehe `feedback_KRITISCH-zielgruppen-ebenen.md`):**
+- „Mama" wenn Patricia's Kundin angesprochen wird ✓
+- „Interessenten / Zielgruppe / Leserin" wenn DEREN Kunden gemeint sind — NIE „Mamas" für die Zielgruppe der Mama-Kundin
+- Pflicht-Check vor Render: alle Slide-Texte + Caption auf falsches „Mama" prüfen
+
+**(4) Feed-Aesthetic-Rotation:**
+Vor Render: letzte 3-5 Posts im Feed checken (oder Promo-Plan). Slide-1-Dominanz so wählen, dass keine 2 ähnlichen Farben/Stile direkt nebeneinander stehen. Rotation: Foto-warm → Creme → Petrol → Orange → Creme+Foto → Petrol+Creme.
+
+**Referenz-Karussells (mit Pattern-Anwendung):**
+- `outputs/karussells/2026-06-bootcamp-promo-viral/` (Foto-Cover + Mehrwert-Hook + Bootcamp-CTA-Brücke, KW25)
 
 ---
 
