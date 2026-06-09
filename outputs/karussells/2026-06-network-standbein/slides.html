@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wie aus deinem Network ein eigenes Standbein wird</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --petrol: #12828c; --dunkelblau: #29556d; --creme: #f1ecdd; --orange: #dc822e; --text: #0c1c30; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #1a1a1a; font-family: "Source Sans 3", sans-serif; color: var(--text); padding: 40px; }
+      .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; margin: 40px auto; display: flex; flex-direction: column; padding: 100px 80px; }
+      .slide.bg-creme { background: var(--creme); color: var(--text); }
+      .slide.bg-petrol { background: var(--petrol); color: #fff; }
+      .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 30px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--petrol); margin-bottom: 36px; }
+      .bg-petrol .eyebrow { color: rgba(255,255,255,0.85); }
+      .footer { position: absolute; bottom: 50px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(12, 28, 48, 0.55); letter-spacing: 0.08em; z-index: 5; }
+      .bg-petrol .footer { color: rgba(255, 255, 255, 0.7); }
+
+      /* SLIDE 1 — HOOK PETROL */
+      .s1 { justify-content: center; align-items: flex-start; text-align: left; color: #fff; }
+      .s1 .hook { font-family: "Philosopher"; font-weight: 700; font-size: 96px; line-height: 1.08; color: #fff; }
+      .s1 .hook .pop { font-style: italic; opacity: 0.95; }
+
+      /* SLIDE 2 — SPANNUNG CREME */
+      .s2 { justify-content: center; }
+      .s2 .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 48px; line-height: 1.4; color: var(--text); }
+      .s2 .body .pop { color: var(--petrol); font-weight: 700; }
+
+      /* SLIDE 3 / 5 / 7 — PETROL */
+      .baustein-petrol { justify-content: flex-start; padding-top: 130px; color: #fff; }
+      .baustein-petrol .headline { font-family: "Philosopher"; font-weight: 700; font-size: 76px; line-height: 1.1; color: #fff; margin-bottom: 44px; }
+      .baustein-petrol .headline .pop { font-style: italic; opacity: 0.95; }
+      .baustein-petrol .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 42px; line-height: 1.4; color: #fff; }
+      .baustein-petrol .body .pop { font-weight: 700; background: rgba(255,255,255,0.18); padding: 0 10px; border-radius: 6px; }
+      .baustein-petrol .list .item { display: flex; align-items: flex-start; gap: 26px; margin-bottom: 28px; }
+      .baustein-petrol .list .item .icon { font-size: 46px; flex-shrink: 0; padding-top: 4px; }
+      .baustein-petrol .list .item .item-text { font-family: "Source Sans 3"; font-weight: 500; font-size: 40px; line-height: 1.4; color: #fff; }
+      .baustein-petrol .list .item .item-text .pop { font-weight: 700; background: rgba(255,255,255,0.18); padding: 0 10px; border-radius: 6px; }
+
+      /* SLIDE 4 / 6 — CREME */
+      .baustein-creme { justify-content: flex-start; padding-top: 130px; }
+      .baustein-creme .headline { font-family: "Philosopher"; font-weight: 700; font-size: 76px; line-height: 1.1; color: var(--dunkelblau); margin-bottom: 44px; }
+      .baustein-creme .headline .pop { color: var(--petrol); font-style: italic; }
+      .baustein-creme .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 44px; line-height: 1.4; color: var(--text); opacity: 0.92; }
+      .baustein-creme .body .pop { color: var(--petrol); font-weight: 700; }
+      .baustein-creme .list .item { display: flex; align-items: flex-start; gap: 26px; margin-bottom: 28px; }
+      .baustein-creme .list .item .icon { font-size: 44px; flex-shrink: 0; color: var(--petrol); padding-top: 4px; }
+      .baustein-creme .list .item .item-text { font-family: "Source Sans 3"; font-weight: 500; font-size: 40px; line-height: 1.4; color: var(--text); }
+      .baustein-creme .list .item .item-text .pop { color: var(--petrol); font-weight: 700; }
+
+      /* SLIDE 7 — CTA PETROL */
+      .s7 { justify-content: center; align-items: center; text-align: center; color: #fff; }
+      .s7 .eyebrow { color: rgba(255,255,255,0.95); margin-bottom: 28px; }
+      .s7 .big { font-family: "Philosopher"; font-weight: 700; font-style: italic; font-size: 84px; line-height: 1.08; color: #fff; margin-bottom: 40px; }
+      .s7 .body { font-family: "Source Sans 3"; font-weight: 600; font-size: 42px; line-height: 1.4; color: #fff; max-width: 900px; }
+      .s7 .body .pop { background: #fff; color: var(--petrol); padding: 4px 20px; border-radius: 10px; font-weight: 700; }
+    </style>
+  </head>
+  <body>
+
+    <div class="slide bg-petrol s1">
+      <div class="eyebrow">Vom Network zum eigenen</div>
+      <div class="hook">Wie aus deinem<br/><span class="pop">Network</span><br/>ein eigenes Standbein wird</div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme s2">
+      <div class="eyebrow">Vielleicht kennst du das</div>
+      <p class="body">
+        Du bist seit Jahren im Network. Das Einkommen schwankt — mal kommt was rein, mal nicht. <span class="pop">Was du nicht hast:</span> das Gefühl, dass dieses Business AUCH dir gehört. Es gehört teilweise auch deiner Firma. Was wäre, wenn du daraus ein eigenes Standbein bauen würdest?
+      </p>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-petrol baustein-petrol">
+      <div class="eyebrow">Was Standbein wirklich heisst</div>
+      <div class="headline">Etwas das <span class="pop">DIR</span> gehört</div>
+      <div class="list">
+        <div class="item"><span class="icon">📋</span><div class="item-text">Ein <span class="pop">Lead-Magnet</span> der DIR gehört</div></div>
+        <div class="item"><span class="icon">📧</span><div class="item-text">Eine <span class="pop">Mailliste</span> die DIR gehört</div></div>
+        <div class="item"><span class="icon">🧠</span><div class="item-text">Ein <span class="pop">Wissen</span> das DEINS ist</div></div>
+        <div class="item"><span class="icon">💼</span><div class="item-text">Ein <span class="pop">Angebot</span> das nicht von der Firma abhängt</div></div>
+      </div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">4 Bausteine zum Start</div>
+      <div class="headline">Was du <span class="pop">JETZT</span> bauen kannst</div>
+      <div class="list">
+        <div class="item"><span class="icon">→</span><div class="item-text">Eine <span class="pop">Bio</span> die zeigt: hier bin ICH, hier ist mein Wissen</div></div>
+        <div class="item"><span class="icon">→</span><div class="item-text">Ein <span class="pop">Lead-Magnet</span> aus deinen Network-Erfahrungen</div></div>
+        <div class="item"><span class="icon">→</span><div class="item-text">Ein <span class="pop">Mini-Produkt</span> für 9-37 CHF</div></div>
+        <div class="item"><span class="icon">→</span><div class="item-text">Eine <span class="pop">Story-Sequenz</span> die alles verbindet</div></div>
+      </div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-petrol baustein-petrol">
+      <div class="eyebrow">Was sich konkret ändert</div>
+      <div class="headline">Zwei Standbeine die <span class="pop">einander stützen</span></div>
+      <div class="list">
+        <div class="item"><span class="icon">→</span><div class="item-text">Dein Einkommen schwankt nicht mehr nur mit dem Network</div></div>
+        <div class="item"><span class="icon">→</span><div class="item-text">Die Frauen kennen <span class="pop">DICH</span> — nicht nur deine Firma</div></div>
+        <div class="item"><span class="icon">→</span><div class="item-text">Du gibst dein Wissen weiter — und kannst davon leben</div></div>
+      </div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Wann startest du</div>
+      <div class="headline">Das beste Mal war <span class="pop">gestern</span></div>
+      <p class="body">
+        Das zweitbeste ist heute Abend. Schreib auf — eine Sache aus deinem Network-Alltag die du anderen Mamas beibringen könntest. <span class="pop">Das ist dein Lead-Magnet-Startpunkt.</span> Mehr brauchst du heute noch nicht.
+      </p>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-petrol s7">
+      <div class="eyebrow">Heute Abend</div>
+      <div class="big">Schick mir ein Herz<br/>wenn du das auch suchst</div>
+      <p class="body">
+        Ich poste in den <span class="pop">Stories</span> konkrete Mini-Schritte für die nächsten Tage. Komm vorbei — wir bauen das Standbein gemeinsam an.
+      </p>
+      <div class="footer"><span>@mum.life.balance</span><span></span></div>
+    </div>
+
+  </body>
+</html>
