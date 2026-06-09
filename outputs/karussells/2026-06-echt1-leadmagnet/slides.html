@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ECHT1 Karussell — 4 von 5 Networkerinnen haben kein Lead-Magnet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --petrol: #12828c; --dunkelblau: #29556d; --creme: #f1ecdd; --orange: #dc822e; --text: #0c1c30; --rot: #c14d4d; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #1a1a1a; font-family: "Source Sans 3", sans-serif; color: var(--text); padding: 40px; }
+      .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; margin: 40px auto; display: flex; flex-direction: column; padding: 100px 80px; }
+      .slide.bg-creme { background: var(--creme); color: var(--text); }
+      .slide.bg-petrol { background: var(--petrol); color: #fff; }
+      .slide.bg-orange { background: var(--orange); color: #fff; }
+      .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 32px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--petrol); margin-bottom: 36px; }
+      .bg-petrol .eyebrow, .bg-orange .eyebrow { color: rgba(255,255,255,0.85); }
+      .footer { position: absolute; bottom: 50px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(12, 28, 48, 0.55); letter-spacing: 0.08em; z-index: 5; }
+      .bg-petrol .footer, .bg-orange .footer { color: rgba(255, 255, 255, 0.7); }
+
+      /* === SLIDE 1 — HOOK === */
+      .s1 { justify-content: center; align-items: flex-start; text-align: left; }
+      .s1 .hook { font-family: "Philosopher"; font-weight: 700; font-size: 116px; line-height: 1.04; color: var(--dunkelblau); margin-bottom: 40px; }
+      .s1 .hook .pop { color: var(--petrol); font-style: italic; }
+      .s1 .sub { font-family: "Source Sans 3"; font-weight: 600; font-size: 44px; color: var(--text); opacity: 0.85; }
+
+      /* === SLIDE 2 — SPANNUNG === */
+      .s2 { justify-content: center; }
+      .s2 .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 52px; line-height: 1.4; color: var(--text); }
+      .s2 .body .pop { color: var(--petrol); font-weight: 700; }
+      .s2 .body .underline { text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 5px; text-underline-offset: 8px; }
+
+      /* === SLIDE 3 / 5 / 6 — TEXT-BAUSTEIN CREME === */
+      .baustein { justify-content: flex-start; padding-top: 140px; }
+      .baustein .headline { font-family: "Philosopher"; font-weight: 700; font-size: 88px; line-height: 1.08; color: var(--dunkelblau); margin-bottom: 56px; }
+      .baustein .headline .pop { color: var(--petrol); font-style: italic; }
+      .baustein .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 44px; line-height: 1.4; color: var(--text); opacity: 0.92; }
+      .baustein .body .pop { color: var(--petrol); font-weight: 700; }
+      .baustein .list { font-family: "Source Sans 3"; font-weight: 500; font-size: 46px; line-height: 1.45; color: var(--text); }
+      .baustein .list .item { display: flex; align-items: flex-start; gap: 24px; margin-bottom: 32px; }
+      .baustein .list .item .icon { font-size: 56px; flex-shrink: 0; line-height: 1; padding-top: 4px; }
+      .baustein .list .item .item-text { font-size: 42px; line-height: 1.4; }
+      .baustein .list .item .item-text .pop { color: var(--petrol); font-weight: 700; }
+
+      /* === SLIDE 4 — LIST PETROL (Kontrast) === */
+      .list-petrol { justify-content: flex-start; padding-top: 140px; color: #fff; }
+      .list-petrol .headline { font-family: "Philosopher"; font-weight: 700; font-size: 84px; line-height: 1.08; color: #fff; margin-bottom: 56px; }
+      .list-petrol .list .item { display: flex; align-items: flex-start; gap: 24px; margin-bottom: 36px; }
+      .list-petrol .list .item .icon { font-size: 48px; flex-shrink: 0; padding-top: 4px; }
+      .list-petrol .list .item .item-text { font-family: "Source Sans 3"; font-weight: 500; font-size: 42px; line-height: 1.4; color: #fff; }
+      .list-petrol .list .item .item-text .pop { font-weight: 700; background: rgba(255,255,255,0.18); padding: 0 10px; border-radius: 6px; }
+
+      /* === SLIDE 7 — CTA === */
+      .s7 { justify-content: center; align-items: center; text-align: center; color: #fff; }
+      .s7 .eyebrow { color: rgba(255,255,255,0.9); margin-bottom: 24px; }
+      .s7 .big { font-family: "Philosopher"; font-weight: 700; font-style: italic; font-size: 140px; line-height: 1.0; color: #fff; margin-bottom: 48px; }
+      .s7 .body { font-family: "Source Sans 3"; font-weight: 600; font-size: 44px; line-height: 1.4; color: #fff; max-width: 900px; margin-bottom: 48px; }
+      .s7 .body .pop { background: #fff; color: var(--petrol); padding: 4px 20px; border-radius: 10px; font-weight: 700; }
+      .s7 .arrow-row { display: flex; align-items: center; justify-content: center; gap: 12px; }
+      .s7 .arrow-line { width: 180px; height: 8px; background: var(--orange); border-radius: 4px; }
+      .s7 .arrow-head { width: 0; height: 0; border-top: 22px solid transparent; border-bottom: 22px solid transparent; border-left: 32px solid var(--orange); }
+    </style>
+  </head>
+  <body>
+
+    <!-- SLIDE 1 — HOOK -->
+    <div class="slide bg-creme s1">
+      <div class="eyebrow">Workbook · Von 0 auf echt</div>
+      <div class="hook">4 von 5 Networkerinnen haben <span class="pop">keinen<br/>Lead-Magnet</span></div>
+      <div class="sub">— und merken nicht, warum es stockt.</div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <!-- SLIDE 2 — SPANNUNG -->
+    <div class="slide bg-creme s2">
+      <div class="eyebrow">Vielleicht kennst du das</div>
+      <p class="body">
+        Du telefonierst die <span class="underline">warme Liste</span> durch, postest Produktbilder, hängst an „poste einfach mehr" deiner Sponsorin. Trotzdem kommen keine neuen Anfragen. <span class="pop">Das liegt nicht an dir.</span> Das liegt am fehlenden Lead-Magnet.
+      </p>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <!-- SLIDE 3 — DEFINITION -->
+    <div class="slide bg-creme baustein">
+      <div class="eyebrow">Was ein Lead-Magnet macht</div>
+      <div class="headline">Fremde Mamas geben dir <span class="pop">ihre Email</span> — freiwillig</div>
+      <p class="body">
+        Weil sie eine konkrete Lösung für ihren echten Schmerz kriegen. Statt: du musst sie anschreiben, hoffen, dass sie antworten und dich verstehen. Der Lead-Magnet macht den ersten Schritt für dich.
+      </p>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <!-- SLIDE 4 — 3 BEISPIELE (PETROL) -->
+    <div class="slide bg-petrol list-petrol">
+      <div class="eyebrow">3 Beispiele die wirklich funktionieren</div>
+      <div class="headline">Das sind echte Lead-Magnete</div>
+      <div class="list">
+        <div class="item"><span class="icon">📄</span><div class="item-text"><span class="pop">Workbook</span> „Schlafroutine für 3- bis 5-Jährige" (für Öl-Mamas)</div></div>
+        <div class="item"><span class="icon">🎧</span><div class="item-text"><span class="pop">Audio</span> „5 Sätze die deine Naturkosmetik-Posts endlich klicken lassen"</div></div>
+        <div class="item"><span class="icon">📋</span><div class="item-text"><span class="pop">Checkliste</span> „7 Punkte die jedes Mama-Produktangebot braucht"</div></div>
+      </div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <!-- SLIDE 5 — WAS DEINER KÖNNEN MUSS -->
+    <div class="slide bg-creme baustein">
+      <div class="eyebrow">3 Dinge die deiner können muss</div>
+      <div class="headline">Damit er wirklich Anfragen bringt</div>
+      <div class="list">
+        <div class="item"><span class="icon">→</span><div class="item-text"><span class="pop">Konkret für EINE Mama-Situation</span> — nicht für alle Mamas</div></div>
+        <div class="item"><span class="icon">→</span><div class="item-text"><span class="pop">In 10 Minuten konsumierbar</span> — nicht 50 Seiten</div></div>
+        <div class="item"><span class="icon">→</span><div class="item-text"><span class="pop">Eine klare Aha-Erkenntnis am Ende</span> — nicht 5 generische Tipps</div></div>
+      </div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <!-- SLIDE 6 — SO STARTEST DU HEUTE -->
+    <div class="slide bg-creme baustein">
+      <div class="eyebrow">So startest du heute</div>
+      <div class="headline">3 Fragen — dann hast du <span class="pop">die Richtung</span></div>
+      <div class="list">
+        <div class="item"><span class="icon">1.</span><div class="item-text">Welche EINE Mama-Situation triggert dich am meisten?</div></div>
+        <div class="item"><span class="icon">2.</span><div class="item-text">Was würdest du dieser Mama in 10 Minuten sagen?</div></div>
+        <div class="item"><span class="icon">3.</span><div class="item-text">Das ist dein Lead-Magnet — egal ob PDF, Audio oder Checkliste</div></div>
+      </div>
+      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    </div>
+
+    <!-- SLIDE 7 — CTA -->
+    <div class="slide bg-petrol s7">
+      <div class="eyebrow">Workbook</div>
+      <div class="big">Von 0 auf echt</div>
+      <p class="body">
+        Im 6-Schritte-Workbook gehst du diese Logik konkret für dich durch.<br/><br/>
+        Kommentier <span class="pop">ECHT1</span> und ich schick dir den Link.
+      </p>
+      <div class="arrow-row"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+      <div class="footer"><span>@mum.life.balance</span><span></span></div>
+    </div>
+
+  </body>
+</html>
