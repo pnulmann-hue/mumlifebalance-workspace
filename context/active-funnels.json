@@ -451,15 +451,17 @@
       "problem": "Verzetteln, kein roter Faden, kein eigenes planbares Einkommen neben der Familie",
       "transformation": "In 5 Tagen erster klarer Business-Schritt — live erlebt mit PIA (KI-Mentorin): personalisierte Bio, Hooks etc. für IHR Business",
       "traffic_quellen": {
-        "wordpress_landing": "mumlifebalance.ch/mba-webinar → wird zur Bootcamp-Anmeldung umgebaut",
-        "telegram_gruppe": "Bootcamp-Gruppe (Beitritt nach Anmeldung)",
+        "wordpress_landing": "https://mumlifebalance.ch/bootcamp/ (Seite 3801, Canvas-Template, gebrandetes Inline-Formular)",
+        "danke_seite": "https://mumlifebalance.ch/bootcamp-willkommen/ (Redirect nach Anmeldung, Telegram-CTA)",
+        "telegram_gruppe": "https://t.me/+HW6lvdlbTBhiOWM0",
         "instagram_dm": "Teaser-Posts + Stories (kostenloses Event, feed-erlaubt)"
       },
       "ac_integration": {
         "liste_id": 2,
-        "formular_id": null,
-        "tags": { "anmeldung": "mama-business-bootcamp (neu anlegen, alt: Webinar-Tag 78 umwidmen)" },
-        "notes": "Cart-Mails #601-609 + Tag mba-kauf 79 werden recycelt."
+        "formular_id": 60,
+        "formular_action": "https://mumlifebalance.activehosted.com/proc.php (u=6A26E897E7D1E, f=60, or=12f23a4a-d0a7-413b-98b4-0678fa730738, Felder fullname+email)",
+        "tags": { "anmeldung": "mama-business-bootcamp", "anmeldung_tag_id": 80 },
+        "notes": "Inline-Formular direkt auf der LP (kein AC-Embed-Script wegen WAF). Cart-Mails #601-609 + Tag mba-kauf 79 werden recycelt."
       },
       "launch_window": {
         "anmeldung_offen_datum": "2026-06-15",
