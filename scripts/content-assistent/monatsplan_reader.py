@@ -49,9 +49,20 @@ def finde_monatsplan_datei(heute: date, profil: str = "mentoring") -> Path | Non
     if not kandidaten:
         return None
 
-    # Profil-Treffer bevorzugen
-    profil_treffer = [p for p in kandidaten if profil.lower() in p.name.lower()]
-    pool = profil_treffer or kandidaten
+    profil = profil.lower()
+    bekannte_profile = {"mentoring", "doterra"}
+    fremde_profile = bekannte_profile - {profil}
+
+    # Erlaubt: Dateien mit DEM Profil im Namen ODER generische (ohne fremdes Profil).
+    # NICHT erlaubt: Dateien die ein FREMDES Profil im Namen tragen
+    # (z.B. mentoring-Plan darf nicht für doterra herhalten → keine Kontamination).
+    profil_treffer = [p for p in kandidaten if profil in p.name.lower()]
+    generisch = [p for p in kandidaten
+                 if not any(fp in p.name.lower() for fp in bekannte_profile)]
+    pool = profil_treffer or generisch
+    if not pool:
+        # Nur noch fremd-profilierte Pläne vorhanden → lieber nichts injizieren
+        return None
 
     # Neueste Datei (mtime) gewinnt → v2 schlägt v1
     pool.sort(key=lambda p: p.stat().st_mtime, reverse=True)

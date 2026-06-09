@@ -117,8 +117,17 @@ Patricia ist **vierfache Mama** — das steht in personal-info.md, das darfst du
 
 ## Harte Regeln
 1. **Slide 1 ist BÄM-Hook** — keine „Hallo ihr Lieben", direkt knall.
+   **ABER: NIEMALS Stakkato.** Verboten sind 2-3 abgehackte Kurzsätze hintereinander
+   („Willst du was sehen? Mein Business läuft. Früher war das anders.").
+   Der Hook ist EIN fliessender Gedanke mit Du-Anrede — Sätze mit Konjunktionen
+   verbinden (und, aber, weil, und da). Wie am Küchentisch zu einer Freundin.
+1b. **Keine vagen Selbst-Behauptungen** wie „mein Business läuft" / „heute geht's mir gut".
+    Entweder konkret + wahr (aus Patricia-Input/Quellen) oder den Satz weglassen.
 2. **Slide 8 ist CTA** mit konkreter Handlungsaufforderung + Link.
 3. **Mix-Stil:** ca. 5 brand-designed Slides + 3 Foto-First Slides.
+   **JEDE Foto-Slide trägt einen Story-Satz in der text-box** — KEINE reinen Foto-Slides
+   ohne Text (das wirkt wie Füller). Jede Slide bringt die Geschichte einen Schritt weiter.
+   Stock-Fotos nur wenn sie zur Aussage passen, nie als blosser Lückenfüller.
 4. **KEIN Datum auf Slides** — niemand will sehen welcher Tag heute ist.
 5. **Foto-Schutz:** Sticker/Text/Boxen NIE über Gesicht oder Hauptmotiv.
 6. **Käufertyp-Rotation:** Sprich heute den vorgegebenen DISG-Käufertyp an.
