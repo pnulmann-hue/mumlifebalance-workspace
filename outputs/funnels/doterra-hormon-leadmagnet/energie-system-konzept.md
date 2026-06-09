@@ -134,6 +134,31 @@ Das Quiz heisst aktuell intern „Hormon-Typ". Empfehlung, alles auf **ENERGIE**
 
 ---
 
+## 8. Hormon-Linse v2 — „Perimenopause Power" (7 Säulen / 5 Wochen) · Entscheid 9.6.
+
+**Positionierung geschärft:** Energie **+ Hormone** für Mamas ab Mitte 35 (Perimenopause).
+**Quellen:** Mariza Snyder *Perimenopause Power* (7-Säulen-Struktur + 5-Wochen-Reset = Inspiration, nicht kopiert) · doTERRA *Modul 9 Hormonbalance* (Öl-/Produkt-Mapping in doTERRA-Sprache) · Snyder *Menopause Solution* (Themen) · Patricias Energie-Kur-Produkte.
+**Marken-Reframe:** Perimenopause = **„die zweite Pubertät"** (empowernd, Hook für Test + Kur).
+
+**5-Wochen-Backbone (entlang Snyders 7 Säulen, in Patricias Sprache, compliant):**
+
+| Woche | Säule | doTERRA-Öl (Lifestyle-gerahmt) | Nährstoff-Anker |
+|---|---|---|---|
+| 1 | Energie & stabiler Blutzucker | Peppermint / Wild Orange (Morgen-Aroma) | Lifelong Vitality |
+| 2 | Nahrung, Darm & Stoffwechsel | Zitrone im Wasser · Terrazyme | PB Assist + Terrazyme |
+| 3 | Schlaf, Ruhe & Gelassenheit | Lavendel · Serenity · Adaptiv (Abend-Ritual) | xEO Mega (Omega) |
+| 4 | Bewegung & Resilienz | Deep Blue · Peppermint | Lifelong Vitality |
+| 5 | Deine Phase · Gemeinschaft · neuer Lifestyle | ClaryCalm · Clary Sage · Geranium (Wohlfühl-Roller) | Phytoöstrogen-Komplex |
+
+**Tageskarten-Formel:** 1 Mini-Impuls (Gewohnheit) + 1 Öl-Ritual + 1 Nährstoff-Anker, Einstieg personalisiert nach Energie-Typ.
+
+**🚨 Harte Leitplanken (gelten für ALLES):**
+- **Compliance:** Nur Lifestyle/Aroma/Wohlbefinden-Sprache. NIE „lindert / balanciert Hormone / hilft gegen [Symptom]". doTERRAs eigenes Modul sagt: „konkreter Eingriff ins Hormonsystem nicht möglich/sinnvoll" — Öle wirken „ausgleichend aufs Wohlbefinden". Schwere medizinische Themen (Schilddrüse, Myome, Inkontinenz) bleiben RAUS.
+- **Urheberrecht:** Snyders Texte/Rezepte/Protokolle werden NICHT reproduziert. Nur Struktur/Themen als Inspiration → Patricias eigene Inhalte.
+- **Modul-9-Claim-Sprache** ist Berater-Schulung, NICHT kundentauglich — nur zur Öl-Auswahl nutzen.
+
+---
+
 ## 🔗 Verwandte Notizen
 
 - [[leadmagnet-komplett|Bestehendes Leadmagnet-Konzept (Quiz + Drip + ManyChat)]]
