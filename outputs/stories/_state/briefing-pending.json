@@ -1,5 +1,5 @@
 {
-  "datum": "2026-06-09",
+  "datum": "2026-06-10",
   "profile": {
     "mentoring": {
       "profil": "mentoring",
@@ -12,11 +12,11 @@
       "wochen_fokus": "(kein Fokus eingetragen)",
       "kontext_snapshot": {
         "kw": 24,
-        "wochentag": "Dienstag",
-        "datum": "2026-06-09"
+        "wochentag": "Mittwoch",
+        "datum": "2026-06-10"
       },
-      "gesendet_am": "2026-06-09T05:25:41.397Z",
-      "telegram_message_id": 661,
+      "gesendet_am": "2026-06-10T05:24:51.846Z",
+      "telegram_message_id": 684,
       "patricia_antworten": [],
       "patricia_fotos": [],
       "status": "warten_auf_antwort"
@@ -32,11 +32,11 @@
       "wochen_fokus": "(kein Fokus eingetragen)",
       "kontext_snapshot": {
         "kw": 24,
-        "wochentag": "Dienstag",
-        "datum": "2026-06-09"
+        "wochentag": "Mittwoch",
+        "datum": "2026-06-10"
       },
-      "gesendet_am": "2026-06-09T05:25:41.475Z",
-      "telegram_message_id": 662,
+      "gesendet_am": "2026-06-10T05:24:51.938Z",
+      "telegram_message_id": 685,
       "patricia_antworten": [],
       "patricia_fotos": [],
       "status": "warten_auf_antwort"
