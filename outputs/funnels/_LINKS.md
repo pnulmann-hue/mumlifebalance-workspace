@@ -50,7 +50,7 @@ So sollen die Buttons auf der Link-in-Bio-Seite zeigen:
 | Fahrplan | https://mumlifebalance.ch/fahrplan |
 | Potenzial-Test | https://mumlifebalance.ch/potenzial-test |
 
-> ⚠️ **Bekannter Bug:** Der „Starterguide"-Button auf `/bio` zeigt aktuell auf sich selbst (`/bio`) statt auf `/instagram-starterguide`. Muss korrigiert werden.
+> ✅ **Erledigt 2026-06-10:** Alle Bio-Buttons auf die neuen WordPress-Links umgestellt (vorher zeigten sie auf die alten Netlify-Seiten). Korrigierter Code: `outputs/funnels/bio-link-page/index.html`.
 
 ---
 

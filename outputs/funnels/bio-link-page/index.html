@@ -1,0 +1,1077 @@
+<style>
+  :root {
+    --petrol: #12828c;
+    --dunkelblau: #29556d;
+    --creme: #f1ecdd;
+    --creme-dark: #e8e1cd;
+    --orange: #dc822e;
+    --orange-dark: #c4711f;
+    --text: #0c1c30;
+    --text-soft: #4a5a6e;
+    --weiss: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    color: var(--text);
+    background: var(--creme);
+    line-height: 1.55;
+    font-size: 18px;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 32px 22px 56px;
+  }
+
+  /* HEADER */
+  .hero {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  .avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    overflow: hidden;
+    border: 5px solid var(--weiss);
+    box-shadow: 0 10px 32px rgba(18, 130, 140, 0.22);
+    background: var(--petrol);
+  }
+  .avatar img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .name {
+    font-family: 'Philosopher', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dunkelblau);
+    margin-bottom: 6px;
+  }
+  .slogan {
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--orange);
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+
+  /* VIMEO-EMBED (Hochformat 9:16) */
+  .vimeo-outer {
+    max-width: 360px;
+    margin: 0 auto 26px;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(18, 130, 140, 0.22);
+    background: #000;
+  }
+  .vimeo-inner {
+    padding: 177.78% 0 0 0;
+    position: relative;
+  }
+  .vimeo-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* VIDEO-HERO (Platzhalter) */
+  .video-card {
+    background: linear-gradient(135deg, var(--dunkelblau), var(--petrol));
+    border-radius: 22px;
+    padding: 40px 28px;
+    margin-bottom: 26px;
+    text-align: center;
+    color: var(--weiss);
+    box-shadow: 0 10px 28px rgba(18, 130, 140, 0.22);
+    position: relative;
+    overflow: hidden;
+  }
+  .video-card .play-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    backdrop-filter: blur(8px);
+  }
+  .video-card h3 {
+    font-family: 'Philosopher', serif;
+    font-size: 22px;
+    margin-bottom: 6px;
+    font-weight: 700;
+  }
+  .video-card p {
+    font-size: 14.5px;
+    opacity: 0.88;
+  }
+
+  /* CTA-CARD (Schmerz-Frage Eingang) */
+  .cta-card {
+    background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+    border-radius: 22px;
+    padding: 32px 26px;
+    margin-bottom: 36px;
+    text-align: center;
+    color: var(--weiss);
+    box-shadow: 0 8px 26px rgba(220, 130, 46, 0.32);
+  }
+  .cta-card h2 {
+    font-family: 'Philosopher', serif;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  .cta-card p {
+    font-size: 16px;
+    opacity: 0.95;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: var(--weiss);
+    color: var(--orange-dark);
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  }
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.24);
+  }
+
+  /* SCREEN-CONTROL (State-Machine) */
+  .screen { display: none; animation: fadeIn 0.35s ease-out; }
+  .screen.active { display: block; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* SCHMERZ-AUSWAHL */
+  .pain-headline {
+    font-family: 'Philosopher', serif;
+    font-size: 24px;
+    color: var(--dunkelblau);
+    text-align: center;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .pain-sub {
+    text-align: center;
+    color: var(--text-soft);
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+  .pain-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .pain-list button.pain-card {
+    background: #dc822e !important;
+    border: 2px solid transparent !important;
+    border-radius: 16px !important;
+    padding: 20px 22px !important;
+    text-align: left !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    transition: all 0.18s ease !important;
+    box-shadow: 0 4px 14px rgba(220, 130, 46, 0.18) !important;
+    font: inherit !important;
+    width: 100% !important;
+    color: #ffffff !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    line-height: 1.45 !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+  }
+  .pain-list button.pain-card .text {
+    flex: 1 !important;
+    font-size: 15.5px !important;
+    line-height: 1.45 !important;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    display: block !important;
+  }
+  .pain-list button.pain-card .emoji {
+    font-size: 26px !important;
+    flex-shrink: 0 !important;
+    line-height: 1 !important;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
+  }
+  .pain-list button.pain-card:hover {
+    background: #c4711f !important;
+    transform: translateX(2px);
+    box-shadow: 0 6px 20px rgba(220, 130, 46, 0.32) !important;
+  }
+  .pain-list button.pain-card.joker {
+    background: #29556d !important;
+    border-color: #12828c !important;
+  }
+  .pain-list button.pain-card.joker:hover {
+    background: #12828c !important;
+  }
+
+  /* RESULT-SCREEN */
+  .result-quote-card {
+    background: var(--weiss);
+    border-radius: 18px;
+    padding: 22px 24px;
+    margin-bottom: 22px;
+    border-left: 5px solid var(--orange);
+    box-shadow: 0 3px 12px rgba(18, 130, 140, 0.07);
+  }
+  .result-quote-card .quote-label {
+    font-size: 12px;
+    color: var(--text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .result-quote-card .quote-text {
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--dunkelblau);
+    line-height: 1.4;
+  }
+  .result-section {
+    margin-bottom: 22px;
+  }
+  .result-section .label {
+    display: block;
+    font-size: 12px;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .result-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--weiss);
+    border-radius: 14px;
+    padding: 16px 20px;
+    color: var(--text);
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: all 0.15s ease;
+    box-shadow: 0 2px 10px rgba(18, 130, 140, 0.07);
+    border: 2px solid transparent;
+  }
+  .result-link:hover {
+    border-color: var(--petrol);
+    transform: translateX(2px);
+  }
+  .result-link.premium {
+    background: var(--dunkelblau);
+    color: var(--weiss);
+  }
+  .result-link.premium .res-title { color: var(--weiss); }
+  .result-link.premium .res-desc { color: rgba(255,255,255,0.85); }
+  .result-link.premium .chev { color: var(--orange); }
+  .result-link .res-icon {
+    width: 42px; height: 42px;
+    border-radius: 10px;
+    background: var(--creme);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .result-link.premium .res-icon { background: rgba(255,255,255,0.15); }
+  .result-link .res-content { flex: 1; min-width: 0; }
+  .result-link .res-title {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--dunkelblau);
+    margin-bottom: 2px;
+    line-height: 1.3;
+  }
+  .result-link .res-desc {
+    font-size: 14px;
+    color: var(--text-soft);
+    line-height: 1.35;
+  }
+  .result-link .chev {
+    color: var(--petrol);
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  /* CONTACT-BOX (im 1:1-Pfad) */
+  .contact-box {
+    background: var(--creme-dark);
+    border-radius: 16px;
+    padding: 22px 22px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  .contact-box p {
+    color: var(--dunkelblau);
+    margin-bottom: 14px;
+    font-size: 15px;
+  }
+  .contact-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contact-btn {
+    background: var(--weiss);
+    color: var(--dunkelblau);
+    padding: 10px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid var(--dunkelblau);
+    transition: all 0.15s ease;
+  }
+  .contact-btn:hover {
+    background: var(--dunkelblau);
+    color: var(--weiss);
+  }
+
+  /* RESULT-ACTIONS (zurück / nach oben) */
+  .result-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+  .result-actions button {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 2px solid var(--text-soft);
+    background: transparent;
+    color: var(--text-soft);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-family: inherit;
+  }
+  .result-actions button:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+  }
+
+  /* TRENNUNGSLINIE vor Akkordeon */
+  .divider {
+    margin: 36px 0 26px;
+    text-align: center;
+    color: var(--text-soft);
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .divider::before, .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 38%;
+    height: 1px;
+    background: var(--creme-dark);
+  }
+  .divider::before { left: 0; }
+  .divider::after { right: 0; }
+
+  /* AKKORDEON */
+  .alle-angebote h2 {
+    font-family: 'Philosopher', serif;
+    font-size: 22px;
+    color: var(--dunkelblau);
+    text-align: center;
+    margin-bottom: 18px;
+    line-height: 1.3;
+  }
+  details {
+    background: var(--weiss);
+    border-radius: 14px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(18, 130, 140, 0.06);
+    overflow: hidden;
+  }
+  summary {
+    padding: 16px 22px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--dunkelblau);
+    font-size: 16px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.15s ease;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary:hover { background: var(--creme); }
+  summary::after {
+    content: "▾";
+    color: var(--orange);
+    font-size: 14px;
+    transition: transform 0.25s ease;
+  }
+  details[open] summary::after { transform: rotate(180deg); }
+  .details-content {
+    padding: 4px 14px 16px;
+  }
+  .details-content a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text);
+    transition: background 0.15s ease;
+    margin-bottom: 4px;
+  }
+  .details-content a:hover { background: var(--creme); }
+  .details-content .mini-icon {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    background: var(--creme);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .details-content .mini-title {
+    font-weight: 600;
+    font-size: 14.5px;
+    color: var(--dunkelblau);
+    margin-bottom: 1px;
+    line-height: 1.3;
+  }
+  .details-content .mini-sub {
+    font-size: 13px;
+    color: var(--text-soft);
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    margin-top: 36px;
+    color: var(--text-soft);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  footer .contact-line {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+  footer .contact-line a {
+    color: var(--petrol);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 6px;
+  }
+  footer .heart { color: var(--orange); }
+  footer a {
+    color: var(--petrol);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* MOBILE */
+  @media (max-width: 480px) {
+    .container { padding: 24px 16px 48px; }
+    .name { font-size: 26px; }
+    .video-card, .cta-card { padding: 28px 22px; }
+    .cta-card h2 { font-size: 22px; }
+    .pain-card { padding: 16px 18px; gap: 12px; }
+    .pain-card .text { font-size: 15px; }
+    .pain-card .emoji { font-size: 24px; }
+  }
+</style>
+
+
+<div class="container">
+
+  <!-- HEADER (immer sichtbar) -->
+  <header class="hero">
+    <div class="avatar">
+      <img src="https://mumlifebalance.ch/wp-content/uploads/2026/05/patricia-scaled.jpg" alt="Patricia Ulmann">
+    </div>
+    <h1 class="name">Patricia Ulmann</h1>
+    <p class="slogan">Mentorin für Network-Mamas · 4× Mama</p>
+  </header>
+
+  <!-- ============================================ -->
+  <!-- SCREEN 1: INTRO (Video + CTA) — Standard sichtbar -->
+  <!-- ============================================ -->
+  <section id="screen-intro" class="screen active">
+
+    <!-- VIMEO-EMBED (Hochformat 9:16 · minimaler iframe, WAF-freundlich) -->
+    <div class="vimeo-outer"><div class="vimeo-inner"><iframe class="vimeo-frame" src="https://player.vimeo.com/video/1191904968?h=f04e9542a8" frameborder="0" allowfullscreen=""></iframe></div></div>
+
+    <!-- CTA-EINGANG -->
+    <div class="cta-card">
+      <h2>Wo drückt bei dir der Schuh?</h2>
+      <p>Sag mir woran du gerade hängst — ich zeig dir den nächsten Schritt, der für dich Sinn macht.</p>
+      <button class="cta-btn" data-screen="screen-pain">Los geht's →</button>
+    </div>
+
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SCREEN 2: PAIN-AUSWAHL -->
+  <!-- ============================================ -->
+  <section id="screen-pain" class="screen">
+    <h2 class="pain-headline">Welcher Satz trifft dich am meisten?</h2>
+    <p class="pain-sub">Klick auf den Satz, der dir am häufigsten durch den Kopf geht.</p>
+
+    <div class="pain-list">
+      <button class="pain-card" data-screen="screen-result-1">
+        <span class="emoji">😔</span>
+        <span class="text">„Ich poste seit Monaten — aber niemand fragt mich nach Produkten oder will mit mir arbeiten."</span>
+      </button>
+
+      <button class="pain-card" data-screen="screen-result-2">
+        <span class="emoji">🤷‍♀️</span>
+        <span class="text">„Alle posten dasselbe — ich gehe unter. Ich weiss nicht mal, was mich eigentlich ausmacht."</span>
+      </button>
+
+      <button class="pain-card" data-screen="screen-result-3">
+        <span class="emoji">📱</span>
+        <span class="text">„Meine Stories schaut niemand mehr an — keine Antworten, keine DMs, einfach Stille."</span>
+      </button>
+
+      <button class="pain-card" data-screen="screen-result-4">
+        <span class="emoji">😰</span>
+        <span class="text">„Was wenn mein Instagram-Account weg ist? Ich hab gar keinen anderen Weg zu meinen Leuten."</span>
+      </button>
+
+      <button class="pain-card" data-screen="screen-result-5">
+        <span class="emoji">😩</span>
+        <span class="text">„Mein Umfeld sieht das als Hobby — ich will dass es ein richtiges Business wird, das mich trägt."</span>
+      </button>
+
+      <button class="pain-card joker" data-screen="screen-result-joker">
+        <span class="emoji">🎯</span>
+        <span class="text">„Ich bin gerade total überfordert — sag du mir was ich brauche."</span>
+      </button>
+
+      <button class="pain-card joker" data-screen="screen-result-1to1">
+        <span class="emoji">🤝</span>
+        <span class="text">„Ich will lieber direkt mit dir 1:1 arbeiten — kein Selbstlernen."</span>
+      </button>
+    </div>
+
+    <div class="result-actions">
+      <button data-screen="screen-intro">← Zurück</button>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- RESULT 1: Niemand fragt nach Produkten -->
+  <!-- ============================================ -->
+  <section id="screen-result-1" class="screen">
+    <div class="result-quote-card">
+      <span class="quote-label">Dein Satz</span>
+      <p class="quote-text">„Ich poste seit Monaten — aber niemand fragt mich nach Produkten oder will mit mir arbeiten."</p>
+    </div>
+
+    <div class="result-section">
+      <span class="label">🎁 Kostenlos starten</span>
+      <a href="https://mumlifebalance.ch/bio-check/" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">📲</div>
+        <div class="res-content">
+          <div class="res-title">Bio-Check für Network-Mamas</div>
+          <div class="res-desc">In 5 Min checken, ob deine Bio Kunden bringt — oder warum nicht.</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+      <a href="https://mumlifebalance.ch/instagram-starterguide" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">📱</div>
+        <div class="res-content">
+          <div class="res-title">0€ Starter-Guide Instagram</div>
+          <div class="res-desc">17 Seiten: Profil neu aufgebaut, von Posting auf Positionierung.</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+    </div>
+
+    <div class="result-section">
+      <span class="label">📚 Wenn du tiefer gehen willst</span>
+      <a href="https://mumlifebalance.thrivecart.com/expertin/" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">✨</div>
+        <div class="res-content">
+          <div class="res-title">Expertin statt Verkäuferin</div>
+          <div class="res-desc">Mini-Kurs · 97 CHF</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+      <a href="https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/" class="result-link premium" target="_blank" rel="noopener">
+        <div class="res-icon">⭐</div>
+        <div class="res-content">
+          <div class="res-title">Instagram Kundenmaschine</div>
+          <div class="res-desc">8-Wochen-Komplettkurs · 333 CHF</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+    </div>
+
+    <div class="result-actions">
+      <button data-screen="screen-pain">← Andere Antwort</button>
+      <button data-screen="screen-intro">↑ Nach oben</button>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- RESULT 2: Alle posten dasselbe / weiss nicht was mich ausmacht -->
+  <!-- ============================================ -->
+  <section id="screen-result-2" class="screen">
+    <div class="result-quote-card">
+      <span class="quote-label">Dein Satz</span>
+      <p class="quote-text">„Alle posten dasselbe — ich gehe unter. Ich weiss nicht mal, was mich eigentlich ausmacht."</p>
+    </div>
+
+    <div class="result-section">
+      <span class="label">🎁 Kostenlos starten</span>
+      <a href="https://mumlifebalance.ch/von-0-auf-echt" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">📒</div>
+        <div class="res-content">
+          <div class="res-title">Workbook „Von 0 auf echt"</div>
+          <div class="res-desc">6 Schritte zu deinem brennenden Thema — die Pflanzen-Methode.</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+    </div>
+
+    <div class="result-section">
+      <span class="label">📚 Wenn du tiefer gehen willst</span>
+      <a href="https://mumlifebalance.thrivecart.com/thema-finden/" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">🧭</div>
+        <div class="res-content">
+          <div class="res-title">Finde dein Thema in 60 Min</div>
+          <div class="res-desc">Mini-Kurs · 39 CHF</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+      <a href="https://mumlifebalance.thrivecart.com/expertin/" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">✨</div>
+        <div class="res-content">
+          <div class="res-title">Expertin statt Verkäuferin</div>
+          <div class="res-desc">Mini-Kurs · 97 CHF</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+      <a href="https://mumlifebalance.thrivecart.com/magnet-ich/" class="result-link premium" target="_blank" rel="noopener">
+        <div class="res-icon">🌸</div>
+        <div class="res-content">
+          <div class="res-title">1:1 Magnet-Ich</div>
+          <div class="res-desc">Positionierungs-Coaching mit mir direkt</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+    </div>
+
+    <div class="result-actions">
+      <button data-screen="screen-pain">← Andere Antwort</button>
+      <button data-screen="screen-intro">↑ Nach oben</button>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- RESULT 3: Stories schaut niemand -->
+  <!-- ============================================ -->
+  <section id="screen-result-3" class="screen">
+    <div class="result-quote-card">
+      <span class="quote-label">Dein Satz</span>
+      <p class="quote-text">„Meine Stories schaut niemand mehr an — keine Antworten, keine DMs, einfach Stille."</p>
+    </div>
+
+    <div class="result-section">
+      <span class="label">🎁 Kostenlos starten</span>
+      <a href="https://mumlifebalance.ch/story-challenge" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">✨</div>
+        <div class="res-content">
+          <div class="res-title">7-Tage Story-Challenge</div>
+          <div class="res-desc">Stories, die Gespräche eröffnen — und zu DMs führen. 6 Story-Arten.</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+    </div>
+
+    <div class="result-section">
+      <span class="label">📚 Wenn du tiefer gehen willst</span>
+      <a href="https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/" class="result-link premium" target="_blank" rel="noopener">
+        <div class="res-icon">⭐</div>
+        <div class="res-content">
+          <div class="res-title">Instagram Kundenmaschine</div>
+          <div class="res-desc">8-Wochen-Komplettkurs · alles über IG, inkl. Stories · 333 CHF</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+    </div>
+
+    <div class="result-actions">
+      <button data-screen="screen-pain">← Andere Antwort</button>
+      <button data-screen="screen-intro">↑ Nach oben</button>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- RESULT 4: Angst vor Account-Verlust / Liste ausserhalb IG -->
+  <!-- ============================================ -->
+  <section id="screen-result-4" class="screen">
+    <div class="result-quote-card">
+      <span class="quote-label">Dein Satz</span>
+      <p class="quote-text">„Was wenn mein Instagram-Account weg ist? Ich hab gar keinen anderen Weg zu meinen Leuten."</p>
+    </div>
+
+    <div class="result-section">
+      <span class="label">🎁 Kostenlos starten</span>
+      <a href="https://mumlifebalance.ch/lead-challenge" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">📲</div>
+        <div class="res-content">
+          <div class="res-title">3-Tage Lead-Challenge</div>
+          <div class="res-desc">Bau deine eigene Kontaktliste — ausserhalb von Instagram. Mit Telegram-Begleitung.</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+    </div>
+
+    <div class="result-section">
+      <span class="label">📚 Wenn du tiefer gehen willst</span>
+      <a href="https://mumlifebalance.thrivecart.com/eigene-produkterstellung/" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">💡</div>
+        <div class="res-content">
+          <div class="res-title">Vom Networkwissen zum eigenen Produkt</div>
+          <div class="res-desc">Mini-Kurs · 37 CHF · vom Lead-Magneten zum echten Angebot</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+    </div>
+
+    <div class="result-actions">
+      <button data-screen="screen-pain">← Andere Antwort</button>
+      <button data-screen="screen-intro">↑ Nach oben</button>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- RESULT 5: Hobby → Business -->
+  <!-- ============================================ -->
+  <section id="screen-result-5" class="screen">
+    <div class="result-quote-card">
+      <span class="quote-label">Dein Satz</span>
+      <p class="quote-text">„Mein Umfeld sieht das als Hobby — ich will dass es ein richtiges Business wird, das mich trägt."</p>
+    </div>
+
+    <div class="result-section">
+      <span class="label">🎁 Kostenlos starten</span>
+      <a href="https://mumlifebalance.ch/fahrplan" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">🗺️</div>
+        <div class="res-content">
+          <div class="res-title">Fahrplan: Vom Produktverkauf zum doppelten Einkommen</div>
+          <div class="res-desc">4 Phasen, 10 Schritte — die exakte Strategie, die ich selbst gegangen bin.</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+    </div>
+
+    <div class="result-section">
+      <span class="label">📚 Wenn du tiefer gehen willst</span>
+      <a href="https://mumlifebalance.thrivecart.com/eigene-produkterstellung/" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">💡</div>
+        <div class="res-content">
+          <div class="res-title">Vom Networkwissen zum eigenen Produkt</div>
+          <div class="res-desc">Mini-Kurs · 37 CHF · der Einstieg in dein eigenes Angebot</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+      <a href="https://mumlifebalance.thrivecart.com/digitale-produktwelt/" class="result-link premium" target="_blank" rel="noopener">
+        <div class="res-icon">🚀</div>
+        <div class="res-content">
+          <div class="res-title">Vom Networkwissen zur digitalen Produktwelt</div>
+          <div class="res-desc">Komplettkurs · dein gesamtes hybrides Business</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+      <a href="https://mumlifebalance.thrivecart.com/aus-nebenbei/" class="result-link premium" target="_blank" rel="noopener">
+        <div class="res-icon">👑</div>
+        <div class="res-content">
+          <div class="res-title">1:1 „Aus Nebenbei wird Business"</div>
+          <div class="res-desc">Premium-Mentoring · ich an deiner Seite</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+    </div>
+
+    <div class="result-actions">
+      <button data-screen="screen-pain">← Andere Antwort</button>
+      <button data-screen="screen-intro">↑ Nach oben</button>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- RESULT JOKER: Überfordert / Quiz -->
+  <!-- ============================================ -->
+  <section id="screen-result-joker" class="screen">
+    <div class="result-quote-card">
+      <span class="quote-label">Dein Satz</span>
+      <p class="quote-text">„Ich bin gerade total überfordert — sag du mir was ich brauche."</p>
+    </div>
+
+    <div class="result-section">
+      <span class="label">🎁 Mein Vorschlag: starte hier</span>
+      <a href="https://mumlifebalance.ch/potenzial-test" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">🎯</div>
+        <div class="res-content">
+          <div class="res-title">0€ Potenzial-Test (Quiz)</div>
+          <div class="res-desc">7 Fragen. In 3 Min Klarheit darüber, wo dein grösster Wachstumsblocker liegt — und welcher Schritt für dich passt.</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+    </div>
+
+    <div class="contact-box">
+      <p>Oder schreib mir direkt — manchmal ist ein kurzer Austausch der schnellste Weg.</p>
+      <div class="contact-row">
+        <a href="https://instagram.com/mumlifebalance_patricia_ulmann" class="contact-btn" target="_blank">📩 Instagram-DM</a>
+        <a href="mailto:info@mumlifebalance.ch" class="contact-btn">✉️ E-Mail</a>
+      </div>
+    </div>
+
+    <div class="result-actions">
+      <button data-screen="screen-pain">← Andere Antwort</button>
+      <button data-screen="screen-intro">↑ Nach oben</button>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- RESULT 1:1 -->
+  <!-- ============================================ -->
+  <section id="screen-result-1to1" class="screen">
+    <div class="result-quote-card">
+      <span class="quote-label">Dein Satz</span>
+      <p class="quote-text">„Ich will lieber direkt mit dir 1:1 arbeiten — kein Selbstlernen."</p>
+    </div>
+
+    <div class="result-section">
+      <span class="label">💛 Drei Wege mit mir direkt</span>
+
+      <a href="https://mumlifebalance.thrivecart.com/magnet-ich/" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">🌸</div>
+        <div class="res-content">
+          <div class="res-title">Dein Magnet-Ich</div>
+          <div class="res-desc">Fokussiertes 1:1-Coaching für deine Positionierung. Wenn du Klarheit über dein Thema brauchst.</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+
+      <a href="https://mumlifebalance.thrivecart.com/mama-business/" class="result-link" target="_blank" rel="noopener">
+        <div class="res-icon">🌿</div>
+        <div class="res-content">
+          <div class="res-title">Dein starkes Mama-Business</div>
+          <div class="res-desc">Strategische 1:1-Begleitung — Network + Digital. Wir bauen dein Business strukturiert auf.</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+
+      <a href="https://mumlifebalance.thrivecart.com/aus-nebenbei/" class="result-link premium" target="_blank" rel="noopener">
+        <div class="res-icon">👑</div>
+        <div class="res-content">
+          <div class="res-title">VIP „Aus Nebenbei wird Business"</div>
+          <div class="res-desc">Premium-Mentoring · ich bin deine Sparringspartnerin auf Augenhöhe</div>
+        </div>
+        <span class="chev">→</span>
+      </a>
+    </div>
+
+    <div class="contact-box">
+      <p>Du weisst noch nicht welches passt? Schreib mir — ich helf dir die richtige Wahl zu treffen.</p>
+      <div class="contact-row">
+        <a href="https://instagram.com/mumlifebalance_patricia_ulmann" class="contact-btn" target="_blank">📩 Instagram-DM</a>
+        <a href="mailto:info@mumlifebalance.ch" class="contact-btn">✉️ E-Mail</a>
+      </div>
+    </div>
+
+    <div class="result-actions">
+      <button data-screen="screen-pain">← Andere Antwort</button>
+      <button data-screen="screen-intro">↑ Nach oben</button>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- DIVIDER + AKKORDEON (immer sichtbar am Ende) -->
+  <!-- ============================================ -->
+  <div class="divider">Oder stöber selbst</div>
+
+  <section class="alle-angebote">
+    <h2>Alle meine Angebote — nach Themen sortiert</h2>
+
+    <details>
+      <summary>🎯 Diagnose &amp; Klarheit</summary>
+      <div class="details-content">
+        <a href="https://mumlifebalance.ch/bio-check/" target="_blank" rel="noopener">
+          <div class="mini-icon">📲</div>
+          <div><div class="mini-title">Bio-Check für Network-Mamas</div><div class="mini-sub">Interaktiver Bot · 0€</div></div>
+        </a>
+        <a href="https://mumlifebalance.ch/potenzial-test" target="_blank" rel="noopener">
+          <div class="mini-icon">🎯</div>
+          <div><div class="mini-title">0€ Potenzial-Test (Quiz)</div><div class="mini-sub">7 Fragen · 3 Min</div></div>
+        </a>
+      </div>
+    </details>
+
+    <details>
+      <summary>🌱 Fundament &amp; Thema</summary>
+      <div class="details-content">
+        <a href="https://mumlifebalance.ch/von-0-auf-echt" target="_blank" rel="noopener">
+          <div class="mini-icon">📒</div>
+          <div><div class="mini-title">Workbook „Von 0 auf echt"</div><div class="mini-sub">25 Seiten · 0€</div></div>
+        </a>
+        <a href="https://mumlifebalance.thrivecart.com/thema-finden/" target="_blank" rel="noopener">
+          <div class="mini-icon">🧭</div>
+          <div><div class="mini-title">Finde dein Thema in 60 Min</div><div class="mini-sub">Mini-Kurs · 39 CHF</div></div>
+        </a>
+        <a href="https://mumlifebalance.thrivecart.com/expertin/" target="_blank" rel="noopener">
+          <div class="mini-icon">✨</div>
+          <div><div class="mini-title">Expertin statt Verkäuferin</div><div class="mini-sub">Mini-Kurs · 97 CHF</div></div>
+        </a>
+      </div>
+    </details>
+
+    <details>
+      <summary>📱 Instagram-Strategie</summary>
+      <div class="details-content">
+        <a href="https://mumlifebalance.ch/instagram-starterguide" target="_blank" rel="noopener">
+          <div class="mini-icon">📱</div>
+          <div><div class="mini-title">0€ Starter-Guide Instagram</div><div class="mini-sub">17 Seiten · 0€</div></div>
+        </a>
+        <a href="https://mumlifebalance.ch/story-challenge" target="_blank" rel="noopener">
+          <div class="mini-icon">✨</div>
+          <div><div class="mini-title">7-Tage Story-Challenge</div><div class="mini-sub">20 Seiten · 0€</div></div>
+        </a>
+        <a href="https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/" target="_blank" rel="noopener">
+          <div class="mini-icon">⭐</div>
+          <div><div class="mini-title">Instagram Kundenmaschine</div><div class="mini-sub">8-Wochen-Komplettkurs · 333 CHF</div></div>
+        </a>
+      </div>
+    </details>
+
+    <details>
+      <summary>📲 Eigene Kontakte ausserhalb von IG</summary>
+      <div class="details-content">
+        <a href="https://mumlifebalance.ch/lead-challenge" target="_blank" rel="noopener">
+          <div class="mini-icon">📲</div>
+          <div><div class="mini-title">3-Tage Lead-Challenge</div><div class="mini-sub">Workbook + Telegram · 0€</div></div>
+        </a>
+        <a href="https://mumlifebalance.thrivecart.com/eigene-produkterstellung/" target="_blank" rel="noopener">
+          <div class="mini-icon">💡</div>
+          <div><div class="mini-title">Vom Networkwissen zum Produkt</div><div class="mini-sub">Mini-Kurs · 37 CHF</div></div>
+        </a>
+      </div>
+    </details>
+
+    <details>
+      <summary>🚀 Eigene Produkte &amp; Business-Aufbau</summary>
+      <div class="details-content">
+        <a href="https://mumlifebalance.ch/fahrplan" target="_blank" rel="noopener">
+          <div class="mini-icon">🗺️</div>
+          <div><div class="mini-title">Fahrplan: Vom Produktverkauf zum doppelten Einkommen</div><div class="mini-sub">8 Seiten · 0€</div></div>
+        </a>
+        <a href="https://mumlifebalance.thrivecart.com/eigene-produkterstellung/" target="_blank" rel="noopener">
+          <div class="mini-icon">💡</div>
+          <div><div class="mini-title">Vom Networkwissen zum Produkt</div><div class="mini-sub">Mini-Kurs · 37 CHF</div></div>
+        </a>
+        <a href="https://mumlifebalance.thrivecart.com/digitale-produktwelt/" target="_blank" rel="noopener">
+          <div class="mini-icon">🚀</div>
+          <div><div class="mini-title">Vom Networkwissen zur digitalen Produktwelt</div><div class="mini-sub">Komplettkurs</div></div>
+        </a>
+      </div>
+    </details>
+
+    <details>
+      <summary>💛 1:1 mit Patricia</summary>
+      <div class="details-content">
+        <a href="https://mumlifebalance.thrivecart.com/magnet-ich/" target="_blank" rel="noopener">
+          <div class="mini-icon">🌸</div>
+          <div><div class="mini-title">Dein Magnet-Ich</div><div class="mini-sub">1:1 Positionierungs-Coaching</div></div>
+        </a>
+        <a href="https://mumlifebalance.thrivecart.com/mama-business/" target="_blank" rel="noopener">
+          <div class="mini-icon">🌿</div>
+          <div><div class="mini-title">Dein starkes Mama-Business</div><div class="mini-sub">Strategische 1:1-Begleitung</div></div>
+        </a>
+        <a href="https://mumlifebalance.thrivecart.com/aus-nebenbei/" target="_blank" rel="noopener">
+          <div class="mini-icon">👑</div>
+          <div><div class="mini-title">VIP „Aus Nebenbei wird Business"</div><div class="mini-sub">Premium-Mentoring</div></div>
+        </a>
+      </div>
+    </details>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="contact-line">
+      Schreib mir direkt:
+      <a href="https://instagram.com/mumlifebalance_patricia_ulmann" target="_blank">📩 Instagram</a> ·
+      <a href="mailto:info@mumlifebalance.ch">✉️ E-Mail</a>
+    </p>
+    <p>Made with <span class="heart">💛</span> in der Schweiz</p>
+    <p style="margin-top:6px;">© Patricia Ulmann · <a href="https://mumlifebalance.ch/" target="_blank">mumlifebalance.ch</a></p>
+  </footer>
+
+</div>
+
+<script>
+  function showScreen(id) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    document.querySelector('.hero').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('[data-screen]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        showScreen(el.getAttribute('data-screen'));
+      });
+    });
+  });
+</script>
