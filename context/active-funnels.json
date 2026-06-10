@@ -262,7 +262,7 @@
 
       "traffic_quellen": {
         "wordpress_landing": "https://mumlifebalance.ch/story-challenge",
-        "wordpress_landing_status": "DRAFT-Block gebaut (Netlify→WP-Migration 2026-06-10) — outputs/funnels/story-challenge/landing/ · TODO: AC-Form anlegen + Embed einsetzen + WP publizieren",
+        "wordpress_landing_status": "DRAFT-Block gebaut + AC-Form #45 (Token 9d36c5e2-...) eingesetzt — outputs/funnels/story-challenge/landing/ · TODO: WP publizieren",
         "manychat_keyword": "STORY",
         "telegram_channel": "JA",
         "status": "TODO: in ManyChat einrichten"
