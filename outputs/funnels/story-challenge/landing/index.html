@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>0€ Story-Challenge für Network-Mamas | Mum Life Balance</title>
+<style>
+/* ============================================================
+   Mum Life Balance — Landingpage „Story-Challenge"
+   Brand: Creme #f1ecdd · Petrol #12828c · Dunkelblau #29556d
+          Orange #dc822e · Text #0c1c30
+   Fonts: Philosopher (Headlines) + Source Sans 3 (Body)
+   ============================================================ */
+.slg-wrap * { box-sizing: border-box; margin: 0; padding: 0; }
+.slg-wrap {
+  font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  color: #0c1c30; line-height: 1.65; background: #f1ecdd; font-size: 18px;
+}
+.slg-wrap h1, .slg-wrap h2, .slg-wrap h3, .slg-wrap .slg-kicker { font-family: 'Philosopher', Georgia, serif; }
+.slg-inner { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+.slg-section { padding: 64px 0; }
+.slg-kicker { display: inline-block; color: #12828c; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; font-size: 15px; margin-bottom: 16px; }
+
+/* HERO */
+.slg-hero { background: linear-gradient(160deg, #29556d 0%, #12828c 100%); color: #f1ecdd; text-align: center; padding: 80px 0 72px; }
+.slg-hero h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.12; color: #ffffff; margin-bottom: 22px; font-weight: 700; }
+.slg-hero h1 em { color: #f2c879; font-style: normal; }
+.slg-hero p.sub { font-size: clamp(18px, 2.6vw, 22px); max-width: 600px; margin: 0 auto 34px; color: rgba(241, 236, 221, 0.94); }
+.slg-badge { display: inline-block; background: rgba(241,236,221,0.16); border: 1px solid rgba(241,236,221,0.35); border-radius: 999px; padding: 7px 18px; font-size: 14px; font-weight: 600; letter-spacing: 0.4px; margin-bottom: 26px; }
+
+/* CTA */
+.slg-cta { display: inline-block; background: #dc822e; color: #ffffff !important; font-family: 'Source Sans 3', sans-serif; font-weight: 700; font-size: 19px; text-decoration: none; padding: 18px 40px; border-radius: 14px; letter-spacing: 0.3px; transition: transform 0.12s ease, box-shadow 0.2s ease; box-shadow: 0 6px 18px rgba(220,130,46,0.35); }
+.slg-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(220,130,46,0.45); }
+.slg-cta-note { display: block; margin-top: 14px; font-size: 14px; opacity: 0.8; }
+
+/* PAIN */
+.slg-pain { background: #f1ecdd; }
+.slg-pain h2 { font-size: clamp(26px, 4vw, 34px); color: #29556d; margin-bottom: 26px; }
+.slg-pain ul { list-style: none; }
+.slg-pain li { position: relative; padding: 12px 0 12px 38px; font-size: 19px; border-bottom: 1px solid rgba(41,85,109,0.12); }
+.slg-pain li:before { content: "✗"; position: absolute; left: 0; top: 11px; color: #c25a3c; font-weight: 700; font-size: 19px; }
+
+/* BRIDGE */
+.slg-bridge { background: #29556d; color: #f1ecdd; text-align: center; }
+.slg-bridge h2 { font-size: clamp(26px, 4vw, 36px); color: #ffffff; margin-bottom: 20px; }
+.slg-bridge p { font-size: 20px; max-width: 600px; margin: 0 auto 16px; color: rgba(241,236,221,0.94); }
+.slg-bridge .accent { color: #f2c879; font-weight: 700; }
+
+/* INHALT */
+.slg-content { background: #f7f3e8; }
+.slg-content h2 { font-size: clamp(26px, 4vw, 34px); color: #29556d; text-align: center; margin-bottom: 14px; }
+.slg-content .lead { text-align: center; max-width: 560px; margin: 0 auto 42px; color: #4a5663; }
+.slg-cards { display: grid; gap: 20px; }
+.slg-card { background: #ffffff; border-radius: 18px; padding: 28px 30px; border-left: 5px solid #12828c; box-shadow: 0 4px 18px rgba(41,85,109,0.07); }
+.slg-card h3 { font-size: 22px; color: #12828c; margin-bottom: 8px; }
+.slg-card .num { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; background: #12828c; color: #fff; border-radius: 50%; font-weight: 700; font-size: 16px; margin-right: 10px; font-family: 'Source Sans 3', sans-serif; }
+.slg-card p { color: #4a5663; font-size: 17px; }
+
+/* STORY-ARTEN Chips */
+.slg-chips { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 8px; }
+.slg-chip { background: #ffffff; border: 1.5px solid rgba(18,130,140,0.25); color: #12828c; border-radius: 999px; padding: 10px 20px; font-size: 16px; font-weight: 600; }
+
+/* FÜR WEN */
+.slg-for { background: #f1ecdd; }
+.slg-for h2 { font-size: clamp(24px, 4vw, 32px); color: #29556d; text-align: center; margin-bottom: 28px; }
+.slg-for ul { list-style: none; max-width: 600px; margin: 0 auto; }
+.slg-for li { position: relative; padding: 11px 0 11px 38px; font-size: 18px; }
+.slg-for li:before { content: "✓"; position: absolute; left: 0; top: 10px; color: #12828c; font-weight: 700; font-size: 19px; }
+
+/* ÜBER */
+.slg-about { background: #f7f3e8; }
+.slg-about .row { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
+.slg-about img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #ffffff; box-shadow: 0 6px 20px rgba(41,85,109,0.15); flex-shrink: 0; }
+.slg-about .txt { flex: 1; min-width: 260px; }
+.slg-about h2 { font-size: 26px; color: #29556d; margin-bottom: 12px; }
+.slg-about p { color: #4a5663; font-size: 17px; margin-bottom: 12px; }
+
+/* OPT-IN */
+.slg-optin { background: linear-gradient(160deg, #12828c 0%, #29556d 100%); text-align: center; }
+.slg-optin h2 { font-size: clamp(26px, 4vw, 36px); color: #ffffff; margin-bottom: 14px; }
+.slg-optin > .slg-inner > p { color: rgba(241,236,221,0.94); font-size: 19px; max-width: 540px; margin: 0 auto 32px; }
+
+/* FOOTER */
+.slg-foot { background: #0c1c30; color: rgba(241,236,221,0.7); text-align: center; padding: 32px 0; font-size: 14px; }
+.slg-foot a { color: #f2c879; }
+
+@media (max-width: 560px) { .slg-section { padding: 48px 0; } .slg-hero { padding: 60px 0 54px; } }
+</style>
+</head>
+<body>
+<div class="slg-wrap">
+
+  <!-- HERO -->
+  <header class="slg-hero">
+    <div class="slg-inner">
+      <span class="slg-badge">🎁 Gratis · 7-Tage-Challenge · Mit Telegram-Begleitung</span>
+      <h1>7 Tage Stories, die <em>Gespräche eröffnen</em> statt im Nichts zu verpuffen</h1>
+      <p class="sub">Die gratis Story-Challenge für Network-Mamas: jeden Tag eine kleine Aufgabe, am Ende eine Story-Routine, die DMs bringt — statt „niemand schaut, niemand antwortet".</p>
+      <a href="#anmelden" class="slg-cta">Ja, ich mach mit</a>
+      <span class="slg-cta-note">Kostenlos &nbsp;·&nbsp; 7-Tage-Workbook + Telegram-Kanal &nbsp;·&nbsp; In deinem Tempo</span>
+    </div>
+  </header>
+
+  <!-- PAIN -->
+  <section class="slg-section slg-pain">
+    <div class="slg-inner">
+      <span class="slg-kicker">Kennst du das?</span>
+      <h2>Du postest Stories — und es bleibt einfach still</h2>
+      <ul>
+        <li>Du teilst brav was aus deinem Tag, aber niemand reagiert, niemand schreibt zurück.</li>
+        <li>Du weisst nie, was du eigentlich in eine Story packen sollst, damit sie was bringt.</li>
+        <li>Andere führen über Stories Gespräche und verkaufen — bei dir versickert es.</li>
+        <li>Du hast das Gefühl, du müsstest perfekte, hübsche Stories machen — und lässt es dann lieber ganz.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- BRIDGE -->
+  <section class="slg-section slg-bridge">
+    <div class="slg-inner">
+      <span class="slg-kicker" style="color:#f2c879;">Die gute Nachricht</span>
+      <h2>Menschen kaufen nicht wegen <span class="accent">perfekter</span> Stories.</h2>
+      <p>Sie kaufen, wenn sie sich <span class="accent">verstanden</span> fühlen. Genau darum geht es in dieser Challenge — nicht um schöner, sondern um echter.</p>
+      <p>In 7 Tagen baust du dir eine Story-Routine auf, die Verbindung schafft und ganz natürlich in Gespräche und DMs führt.</p>
+    </div>
+  </section>
+
+  <!-- INHALT -->
+  <section class="slg-section slg-content">
+    <div class="slg-inner">
+      <span class="slg-kicker" style="display:block;text-align:center;">Wie die Challenge läuft</span>
+      <h2>7 Tage, 7 kleine Schritte</h2>
+      <p class="lead">Jeden Tag eine Aufgabe + tägliche Impulse im Telegram-Kanal. Kein Stress, kein Perfektionsdruck — einfach dranbleiben.</p>
+      <div class="slg-cards">
+        <div class="slg-card">
+          <h3><span class="num">1</span>Tag 1 — Zeig dich</h3>
+          <p>Deine Vorstellungsrunde: deine persönliche Geschichte + dein Angebot. Der ehrliche Auftakt, der den Ton für die ganze Woche setzt.</p>
+        </div>
+        <div class="slg-card">
+          <h3><span class="num">2</span>Tag 2–7 — die 6 Story-Arten</h3>
+          <p>Jeden Tag eine andere Story-Art ausprobieren — so entsteht Abwechslung, die deine Leute bei der Stange hält:</p>
+          <div class="slg-chips">
+            <span class="slg-chip">Lehrreich</span>
+            <span class="slg-chip">Persönlich</span>
+            <span class="slg-chip">Meinung</span>
+            <span class="slg-chip">Inspiration</span>
+            <span class="slg-chip">Feedback</span>
+            <span class="slg-chip">Angebot</span>
+          </div>
+        </div>
+        <div class="slg-card">
+          <h3><span class="num">3</span>Tägliche Begleitung im Telegram-Kanal</h3>
+          <p>Du bist nicht allein: Jeden Tag bekommst du von mir einen kurzen Impuls + konkrete Beispiele. So weisst du immer genau, was heute dran ist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FÜR WEN -->
+  <section class="slg-section slg-for">
+    <div class="slg-inner">
+      <h2>Für dich, wenn …</h2>
+      <ul>
+        <li>… du im Network-Marketing bist und Stories <strong>strategisch nutzen willst</strong>, statt nur planlos zu posten.</li>
+        <li>… du dir wünschst, dass deine Stories endlich <strong>Antworten und DMs</strong> auslösen.</li>
+        <li>… du keine Lust auf Hochglanz hast, sondern echt und nahbar sein willst.</li>
+        <li>… du in 7 Tagen eine Routine aufbauen willst, die du danach einfach weiterführst.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ÜBER PATRICIA -->
+  <section class="slg-section slg-about">
+    <div class="slg-inner">
+      <div class="row">
+        <img src="https://mumlifebalance.ch/wp-content/uploads/2026/05/patricia-scaled.jpg" alt="Patricia" />
+        <div class="txt">
+          <h2>Hi, ich bin Patricia 🌿</h2>
+          <p>Mama, Unternehmerin und Mentorin für Network-Mamas, die nebenbei ein ehrliches Online-Business aufbauen wollen — ohne Druck, ohne Verstellen, im Tempo der Familie.</p>
+          <p>Stories waren für mich der Wendepunkt: nicht perfekter, sondern persönlicher. Seit ich über Stories echte Verbindung aufbaue, eröffnen sie Gespräche — und genau diese 7 Tage gebe ich dir jetzt mit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPT-IN -->
+  <section class="slg-section slg-optin" id="anmelden">
+    <div class="slg-inner">
+      <span class="slg-kicker" style="color:#f2c879;display:block;">Jetzt gratis mitmachen</span>
+      <h2>Schick mir die Story-Challenge</h2>
+      <p>Trag dich ein und du bekommst das 7-Tage-Workbook + den Link zum Telegram-Kanal mit den täglichen Impulsen.</p>
+
+      <!-- ============================================================
+        ⚠️  ACTIVECAMPAIGN-FORMULAR — PLATZHALTER
+        ------------------------------------------------------------
+        Wie beim Starterguide: In ActiveCampaign ein Formular für die
+        „Story-Challenge" anlegen (Automation: Workbook-PDF + Telegram-Link
+        senden) und den Embed-Code hier reinkopieren. Bis dahin sind
+        u / f / or unten Platzhalter (STORY_AC_FORM_ID / STORY_AC_TOKEN).
+        Brand-Override-Styles auf die echte Form-ID anpassen.
+        ============================================================ -->
+      <form method="POST" action="https://mumlifebalance.activehosted.com/proc.php" id="_form_STORY_" class="_form _inline-form" novalidate data-styles-version="5" style="max-width:500px;margin:0 auto;background:#f1ecdd;padding:32px;border-radius:18px;text-align:left;box-shadow:0 10px 30px rgba(12,28,48,0.18);">
+        <input type="hidden" name="u" value="STORY_AC_FORM_ID" />
+        <input type="hidden" name="f" value="STORY_AC_FORM_ID" />
+        <input type="hidden" name="s" />
+        <input type="hidden" name="c" value="0" />
+        <input type="hidden" name="m" value="0" />
+        <input type="hidden" name="act" value="sub" />
+        <input type="hidden" name="v" value="2" />
+        <input type="hidden" name="or" value="STORY_AC_TOKEN" />
+        <h2 style="font-family:'Philosopher',Georgia,serif;color:#29556d;font-size:22px;text-align:center;margin-bottom:18px;">Story-Challenge gratis holen</h2>
+        <label style="display:block;color:#29556d;font-weight:700;margin-bottom:5px;">Vorname*</label>
+        <input type="text" name="fullname" placeholder="Dein Vorname" required style="display:block;width:100%;background:#fff;border:1.5px solid rgba(41,85,109,0.2);border-radius:10px;padding:12px;margin-bottom:14px;" />
+        <label style="display:block;color:#29556d;font-weight:700;margin-bottom:5px;">E-Mail*</label>
+        <input type="text" name="email" placeholder="Deine beste E-Mail-Adresse" required style="display:block;width:100%;background:#fff;border:1.5px solid rgba(41,85,109,0.2);border-radius:10px;padding:12px;margin-bottom:14px;" />
+        <button type="submit" style="width:100%;background:#dc822e;color:#fff;font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:18px;padding:16px;border:0;border-radius:14px;cursor:pointer;">Story-Challenge starten 🌿</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="slg-foot">
+    <div class="slg-inner">
+      <p>© Mum Life Balance · Patricia &nbsp;|&nbsp; <a href="https://mumlifebalance.ch/impressum">Impressum</a> &nbsp;·&nbsp; <a href="https://mumlifebalance.ch/datenschutz">Datenschutz</a></p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

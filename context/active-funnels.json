@@ -98,7 +98,8 @@
       "transformation": "Systematischer Lead-Aufbau via Instagram + Opt-in",
 
       "traffic_quellen": {
-        "wordpress_landing": null,
+        "wordpress_landing": "https://mumlifebalance.ch/lead-challenge",
+        "wordpress_landing_status": "DRAFT-Block gebaut (Netlify→WP-Migration 2026-06-10) — outputs/funnels/lead-challenge/landing/ · TODO: AC-Form anlegen + Embed einsetzen + WP publizieren",
         "manychat_keyword": "LEAD",
         "instagram_dm": "via ManyChat Keyword LEAD",
         "thrivecart_registration": "nach ManyChat-DM → Thrivecart-Registration → landet in AC"
@@ -141,7 +142,8 @@
       "transformation": "Klarheit über eigene echte Positionierung",
 
       "traffic_quellen": {
-        "wordpress_landing": "https://mumlifebalance.ch (aktueller Primär-Leadmagnet auf Homepage)",
+        "wordpress_landing": "https://mumlifebalance.ch/von-0-auf-echt",
+        "wordpress_landing_status": "Eigene DRAFT-Landingpage gebaut (Netlify→WP-Migration 2026-06-10) — outputs/funnels/workbook-von-0-auf-echt/landing/ · zusätzlich weiter Primär-Leadmagnet auf Homepage · TODO: AC-Form anlegen + Embed einsetzen + WP publizieren",
         "manychat_keyword": "ECHT1",
         "instagram_dm": "via ManyChat Keyword ECHT1"
       },
@@ -183,9 +185,10 @@
       "transformation": "Selbst-Diagnose + Empfehlung für nächsten Schritt",
 
       "traffic_quellen": {
-        "wordpress_landing": null,
+        "wordpress_landing": "https://mumlifebalance.ch/potenzial-test",
+        "wordpress_landing_status": "DRAFT-Block gebaut (Netlify→WP-Migration 2026-06-10) — outputs/funnels/potenzial-test/landing/ · CTA-Button führt direkt ins Jotform-Quiz (kein AC-Form nötig) · TODO: WP publizieren",
         "manychat_keyword": "QUIZ",
-        "jotform_form": "JA (Jotform statt AC)",
+        "jotform_form": "JA (Jotform statt AC) — https://eu.jotform.com/form/260726423595058",
         "ausfuehrung": "via ManyChat-Flow"
       },
 
@@ -258,7 +261,8 @@
       "transformation": "7-Tage-Story-Routine",
 
       "traffic_quellen": {
-        "wordpress_landing": null,
+        "wordpress_landing": "https://mumlifebalance.ch/story-challenge",
+        "wordpress_landing_status": "DRAFT-Block gebaut (Netlify→WP-Migration 2026-06-10) — outputs/funnels/story-challenge/landing/ · TODO: AC-Form anlegen + Embed einsetzen + WP publizieren",
         "manychat_keyword": "STORY",
         "telegram_channel": "JA",
         "status": "TODO: in ManyChat einrichten"
@@ -279,6 +283,42 @@
       "content_hinweise": {
         "pillar": "Instagram-Strategie für NM",
         "primaer_keyword": "STORY"
+      }
+    },
+
+    {
+      "id": "fahrplan",
+      "name": "0€ Fahrplan (Von Produktposts zu doppeltem Einkommen)",
+      "status": "live-ohne-ac-funnel",
+      "profile": "mentoring",
+      "typ": "0€ Leadmagnet · Guide (8 Seiten)",
+      "preis_chf": 0,
+      "zielgruppe": "Networkerinnen die Produkte posten, aber keine Anfragen bekommen",
+      "problem": "Produktpostings ohne Resonanz, kein zweites Standbein",
+      "transformation": "Von Produktposts zu Einkommen aus Network + eigenen Produkten",
+
+      "traffic_quellen": {
+        "wordpress_landing": "https://mumlifebalance.ch/fahrplan",
+        "wordpress_landing_status": "DRAFT-Block gebaut (Netlify→WP-Migration 2026-06-10) — outputs/funnels/fahrplan/landing/ · TODO: AC-Form anlegen + Embed einsetzen + WP publizieren",
+        "manychat_keyword": "SYSTEM",
+        "alt_keyword": "FAHRPLAN"
+      },
+
+      "ac_integration": {
+        "tags": {},
+        "automation_id": null,
+        "notes": "KEIN AC-FUNNEL · TODO: AC-Form + Auslieferungs-Automation + Nurture-Sequenz"
+      },
+
+      "mail_sequenz": {
+        "status": "GEPLANT — noch nicht gebaut",
+        "design_template": "context/mail-design-onlinebusiness.html",
+        "geplant": 6
+      },
+
+      "content_hinweise": {
+        "pillar": "Businessaufbau hybride Einkommen",
+        "primaer_keyword": "SYSTEM"
       }
     },
 
