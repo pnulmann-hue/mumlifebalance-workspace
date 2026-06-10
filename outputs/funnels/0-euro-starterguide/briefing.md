@@ -42,15 +42,18 @@ Inhaltsquelle: `context/patricia-freebies.md` → Abschnitt „3. 0€ Starter-G
 - **AC-Formular** angelegt: **Form #53**, Token `db2daad7-aa19-4b73-a6de-63c5735b0fc0` (Headline: „Deine ersten Schritte, die du auf Instagram beachten musst, um daraus für dein Network Kunden zu finden")
 - Echter Embed-Code (inkl. reCAPTCHA + AC-Script) in `landing/index.html` eingesetzt, Brand-Override drübergelegt (Creme-Karte / Petrol-Titel / oranger Button)
 
+## ✅ Erledigt (Fortsetzung)
+
+- **AC-Auslieferung** steht bereits (Form #53 war schon vorhanden + verschickt das PDF) — von Patricia bestätigt 2026-06-10
+
 ## ⚠️ Offene TODOs vor Live-Schaltung
 
 | # | Aufgabe | Wer |
 |---|---------|-----|
-| 1 | **AC-Automation** prüfen: Trigger „Form #53 abgesendet" → Mail mit Starterguide-PDF | Patricia |
-| 2 | Deploy: `cd scripts/wordpress && node --env-file=.env deploy-starterguide.js` (braucht `.env` mit WP-App-Password) | Patricia |
-| 3 | WP-Seite prüfen & **publizieren** | Patricia |
-| 4 | **Bio-Link** „Starterguide" → `https://mumlifebalance.ch/instagram-starterguide` umbiegen | Claude (braucht Bio-HTML oder WP-Zugang) |
-| 5 | Alte Netlify-Seite abschalten / weiterleiten | Patricia |
+| 1 | Deploy: `cd scripts/wordpress && node --env-file=.env deploy-starterguide.js` (braucht `.env` mit WP-App-Password) — **muss lokal laufen** (Sandbox blockt mumlifebalance.ch) | Patricia lokal |
+| 2 | WP-Seite prüfen & **publizieren** | Patricia |
+| 3 | **Bio-Link** „Starterguide" → `https://mumlifebalance.ch/instagram-starterguide` umbiegen | Claude (braucht Bio-HTML) |
+| 4 | Alte Netlify-Seite abschalten / weiterleiten | Patricia |
 
 ---
 
