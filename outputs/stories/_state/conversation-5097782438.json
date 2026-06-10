@@ -1,9 +1,10 @@
 {
   "chat_id": "5097782438",
-  "step": "wochenfokus",
+  "step": "erlebnis",
   "started_at": "2026-06-10T05:37:57.754Z",
-  "last_active_at": "2026-06-10T05:37:59.858Z",
+  "last_active_at": "2026-06-10T05:38:16.820Z",
   "profil": "mentoring",
   "last_bot_message_id": 687,
-  "produkt_quelle": "patricia"
+  "produkt_quelle": "override",
+  "produkt": "Bootcamp"
 }
