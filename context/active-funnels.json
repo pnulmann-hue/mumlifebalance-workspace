@@ -221,7 +221,8 @@
       "transformation": "Struktur für den ersten Schritt",
 
       "traffic_quellen": {
-        "wordpress_landing": null,
+        "wordpress_landing": "https://mumlifebalance.ch/instagram-starterguide",
+        "wordpress_landing_status": "DRAFT gebaut — outputs/funnels/0-euro-starterguide/landing/index.html · deploy via scripts/wordpress/deploy-starterguide.js · TODO: AC-Form-Token einsetzen + publizieren + Bio-Link umbiegen (alte Netlify-Seite starterguide-mumlifebalance.netlify.app zeigte vermutlich falschen Lead-Challenge-Inhalt)",
         "manychat_keyword": "SICHTBAR",
         "alt_keyword": "ANLEITUNG"
       },

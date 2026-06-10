@@ -18,6 +18,10 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 - [[tag-0-reel-briefing]]
 - [[tag-0-stories]]
 
+### 📁 0-euro-starterguide
+
+- [[briefing]]
+
 ### 📁 doterra-hormon-leadmagnet
 
 - [[README]]

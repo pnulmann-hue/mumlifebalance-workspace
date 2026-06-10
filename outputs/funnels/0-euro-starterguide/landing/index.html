@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>0€ Instagram-Starterguide für Network-Mamas | Mum Life Balance</title>
+<style>
+/* ============================================================
+   Mum Life Balance — Landingpage „Instagram-Starterguide"
+   Brand: Creme #f1ecdd · Petrol #12828c · Dunkelblau #29556d
+          Orange #dc822e · Text #0c1c30
+   Fonts: Philosopher (Headlines) + Source Sans 3 (Body)
+   Aufbau: Julia-Trost-Landing + Hormozi-Hooks + Schaufenster-Metapher
+   ============================================================ */
+.slg-wrap * { box-sizing: border-box; margin: 0; padding: 0; }
+.slg-wrap {
+  font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  color: #0c1c30;
+  line-height: 1.65;
+  background: #f1ecdd;
+  font-size: 18px;
+}
+.slg-wrap h1, .slg-wrap h2, .slg-wrap h3, .slg-wrap .slg-kicker {
+  font-family: 'Philosopher', Georgia, serif;
+}
+.slg-inner { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+.slg-section { padding: 64px 0; }
+.slg-kicker {
+  display: inline-block; color: #12828c; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase; font-size: 15px;
+  margin-bottom: 16px;
+}
+
+/* ---------- HERO ---------- */
+.slg-hero {
+  background: linear-gradient(160deg, #29556d 0%, #12828c 100%);
+  color: #f1ecdd; text-align: center; padding: 80px 0 72px;
+}
+.slg-hero h1 {
+  font-size: clamp(32px, 6vw, 52px); line-height: 1.12;
+  color: #ffffff; margin-bottom: 22px; font-weight: 700;
+}
+.slg-hero h1 em { color: #f2c879; font-style: normal; }
+.slg-hero p.sub {
+  font-size: clamp(18px, 2.6vw, 22px); max-width: 600px;
+  margin: 0 auto 34px; color: rgba(241, 236, 221, 0.94);
+}
+.slg-badge {
+  display: inline-block; background: rgba(241,236,221,0.16);
+  border: 1px solid rgba(241,236,221,0.35); border-radius: 999px;
+  padding: 7px 18px; font-size: 14px; font-weight: 600;
+  letter-spacing: 0.4px; margin-bottom: 26px;
+}
+
+/* ---------- CTA-Button ---------- */
+.slg-cta {
+  display: inline-block; background: #dc822e; color: #ffffff !important;
+  font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+  font-size: 19px; text-decoration: none; padding: 18px 40px;
+  border-radius: 14px; letter-spacing: 0.3px;
+  transition: transform 0.12s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 18px rgba(220,130,46,0.35);
+}
+.slg-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(220,130,46,0.45); }
+.slg-cta-note { display: block; margin-top: 14px; font-size: 14px; opacity: 0.8; }
+
+/* ---------- PAIN ---------- */
+.slg-pain { background: #f1ecdd; }
+.slg-pain h2 { font-size: clamp(26px, 4vw, 34px); color: #29556d; margin-bottom: 26px; }
+.slg-pain ul { list-style: none; }
+.slg-pain li {
+  position: relative; padding: 12px 0 12px 38px; font-size: 19px;
+  border-bottom: 1px solid rgba(41,85,109,0.12);
+}
+.slg-pain li:before {
+  content: "✗"; position: absolute; left: 0; top: 11px;
+  color: #c25a3c; font-weight: 700; font-size: 19px;
+}
+
+/* ---------- BRIDGE / Transformation ---------- */
+.slg-bridge { background: #29556d; color: #f1ecdd; text-align: center; }
+.slg-bridge h2 { font-size: clamp(26px, 4vw, 36px); color: #ffffff; margin-bottom: 20px; }
+.slg-bridge p { font-size: 20px; max-width: 600px; margin: 0 auto 16px; color: rgba(241,236,221,0.94); }
+.slg-bridge .accent { color: #f2c879; font-weight: 700; }
+
+/* ---------- INHALT (Was ist drin) ---------- */
+.slg-content { background: #f7f3e8; }
+.slg-content h2 { font-size: clamp(26px, 4vw, 34px); color: #29556d; text-align: center; margin-bottom: 14px; }
+.slg-content .lead { text-align: center; max-width: 560px; margin: 0 auto 42px; color: #4a5663; }
+.slg-cards { display: grid; gap: 20px; }
+.slg-card {
+  background: #ffffff; border-radius: 18px; padding: 28px 30px;
+  border-left: 5px solid #12828c; box-shadow: 0 4px 18px rgba(41,85,109,0.07);
+}
+.slg-card h3 { font-size: 22px; color: #12828c; margin-bottom: 8px; }
+.slg-card .num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; background: #12828c; color: #fff;
+  border-radius: 50%; font-weight: 700; font-size: 16px; margin-right: 10px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+.slg-card p { color: #4a5663; font-size: 17px; }
+
+/* ---------- FÜR WEN ---------- */
+.slg-for { background: #f1ecdd; }
+.slg-for h2 { font-size: clamp(24px, 4vw, 32px); color: #29556d; text-align: center; margin-bottom: 28px; }
+.slg-for ul { list-style: none; max-width: 600px; margin: 0 auto; }
+.slg-for li { position: relative; padding: 11px 0 11px 38px; font-size: 18px; }
+.slg-for li:before {
+  content: "✓"; position: absolute; left: 0; top: 10px;
+  color: #12828c; font-weight: 700; font-size: 19px;
+}
+
+/* ---------- ÜBER PATRICIA ---------- */
+.slg-about { background: #f7f3e8; }
+.slg-about .row { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
+.slg-about img {
+  width: 150px; height: 150px; border-radius: 50%; object-fit: cover;
+  border: 4px solid #ffffff; box-shadow: 0 6px 20px rgba(41,85,109,0.15);
+  flex-shrink: 0;
+}
+.slg-about .txt { flex: 1; min-width: 260px; }
+.slg-about h2 { font-size: 26px; color: #29556d; margin-bottom: 12px; }
+.slg-about p { color: #4a5663; font-size: 17px; margin-bottom: 12px; }
+
+/* ---------- OPT-IN ---------- */
+.slg-optin { background: linear-gradient(160deg, #12828c 0%, #29556d 100%); text-align: center; }
+.slg-optin h2 { font-size: clamp(26px, 4vw, 36px); color: #ffffff; margin-bottom: 14px; }
+.slg-optin > .slg-inner > p { color: rgba(241,236,221,0.94); font-size: 19px; max-width: 540px; margin: 0 auto 32px; }
+
+/* ---------- AC FORM Brand-Override ---------- */
+#_form_STG_ { max-width: 500px; margin: 0 auto !important; background: #f1ecdd !important; padding: 36px 32px !important; border-radius: 18px !important; color-scheme: light only; text-align: left; }
+#_form_STG_ ._submit { background: #dc822e !important; color: #ffffff !important; font-weight: 700 !important; padding: 16px 32px !important; font-size: 18px !important; border-radius: 14px !important; letter-spacing: 0.3px !important; width: 100% !important; margin-top: 8px !important; cursor: pointer !important; transition: transform 0.12s ease, box-shadow 0.2s ease !important; font-family: 'Source Sans 3', sans-serif !important; }
+#_form_STG_ ._submit:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(220, 130, 46, 0.4); }
+#_form_STG_ ._submit:after { content: "Starterguide kostenlos holen 🌿"; }
+#_form_STG_ ._form-title { font-family: 'Philosopher', Georgia, serif !important; color: #29556d !important; font-size: 24px !important; font-weight: 700 !important; margin-bottom: 14px !important; text-align: center !important; }
+#_form_STG_ ._form-label, #_form_STG_ ._form_element ._form-label { color: #29556d !important; font-weight: 700 !important; }
+#_form_STG_ input[type="text"], #_form_STG_ input[type="email"] { background: #ffffff !important; border: 1.5px solid rgba(41,85,109,0.18) !important; border-radius: 10px !important; padding: 12px !important; width: 100% !important; }
+#_form_STG_ ._row._checkbox-radio { display: flex !important; align-items: flex-start !important; gap: 10px !important; padding: 12px 0 !important; }
+#_form_STG_ ._row._checkbox-radio input[type="checkbox"] { margin-top: 3px !important; flex-shrink: 0 !important; width: 18px !important; height: 18px !important; }
+#_form_STG_ ._row._checkbox-radio span { display: block !important; flex: 1 !important; }
+#_form_STG_ ._row._checkbox-radio label { color: #0c1c30 !important; font-size: 13px !important; line-height: 1.55 !important; font-weight: 400 !important; display: block !important; }
+#_form_STG_ ._form_element { margin-bottom: 14px; }
+#_form_STG_ ._field-wrapper { position: relative; }
+#_form_STG_ .field-required { color: #c25a3c; }
+
+/* ---------- FOOTER ---------- */
+.slg-foot { background: #0c1c30; color: rgba(241,236,221,0.7); text-align: center; padding: 32px 0; font-size: 14px; }
+.slg-foot a { color: #f2c879; }
+
+@media (max-width: 560px) {
+  .slg-section { padding: 48px 0; }
+  .slg-hero { padding: 60px 0 54px; }
+}
+</style>
+</head>
+<body>
+<div class="slg-wrap">
+
+  <!-- ======================= HERO ======================= -->
+  <header class="slg-hero">
+    <div class="slg-inner">
+      <span class="slg-badge">🎁 Gratis · 17-Seiten-Guide · Sofort</span>
+      <h1>In 17 Seiten von „mich sieht niemand" zu <em>einem Profil, das deine Wunschkundin anzieht</em></h1>
+      <p class="sub">Der 0€-Starterguide zeigt dir Schritt für Schritt, wie du dein Instagram als Network-Mama neu aufstellst — ohne tägliches Produkt-Posten, ohne dich zu verbiegen.</p>
+      <a href="#anmelden" class="slg-cta">Ja, ich will den Starterguide</a>
+      <span class="slg-cta-note">Kostenlos &nbsp;·&nbsp; Direkt in dein Postfach &nbsp;·&nbsp; Kein Risiko</span>
+    </div>
+  </header>
+
+  <!-- ======================= PAIN ======================= -->
+  <section class="slg-section slg-pain">
+    <div class="slg-inner">
+      <span class="slg-kicker">Kennst du das?</span>
+      <h2>Instagram fühlt sich an wie eine Bühne, auf die sich niemand setzt</h2>
+      <ul>
+        <li>Du postest Produkte — aber es kommen keine Reaktionen, keine DMs, keine Kundinnen.</li>
+        <li>Dein Profil sieht aus wie hundert andere: Logo, Produktbild, Rabattcode.</li>
+        <li>Du weisst nicht, was in deine Bio gehört — geschweige denn in die erste Zeile.</li>
+        <li>„Sichtbar werden" fühlt sich gross, schwer und irgendwie peinlich an.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= BRIDGE ======================= -->
+  <section class="slg-section slg-bridge">
+    <div class="slg-inner">
+      <span class="slg-kicker" style="color:#f2c879;">Die gute Nachricht</span>
+      <h2>Sichtbar werden ist keine Typ-Frage. Es ist eine <span class="accent">Struktur-Frage.</span></h2>
+      <p>Du brauchst kein lauteres Auftreten und keine perfekten Reels. Du brauchst ein Profil, das in 3 Sekunden zeigt: <span class="accent">„Hier bist du richtig."</span></p>
+      <p>Genau diese Struktur gebe ich dir im Starterguide — als Schaufenster, in dem deine Wunschkundin sich wiedererkennt.</p>
+    </div>
+  </section>
+
+  <!-- ======================= INHALT ======================= -->
+  <section class="slg-section slg-content">
+    <div class="slg-inner">
+      <span class="slg-kicker" style="display:block;text-align:center;">Was drin ist</span>
+      <h2>Dein Weg zum sichtbaren Profil — in 4 Schritten</h2>
+      <p class="lead">Keine Theorie-Wüste. Jeder Schritt ist konkret, zum Mitmachen, mit Beispielen.</p>
+      <div class="slg-cards">
+        <div class="slg-card">
+          <h3><span class="num">1</span>Die Idee</h3>
+          <p>Warum deine Identität nicht dein Produkt ist — und wie du dich über dein <strong>Thema</strong> positionierst statt über das, was du verkaufst. Der Denkfehler, der die meisten Network-Mamas unsichtbar macht.</p>
+        </div>
+        <div class="slg-card">
+          <h3><span class="num">2</span>Die Nische</h3>
+          <p>„Stell dir eine Person vor, nicht eine Masse." Du findest deine <strong>eine Wunschkundin</strong> — und plötzlich weisst du, für wen du schreibst und was du sagst.</p>
+        </div>
+        <div class="slg-card">
+          <h3><span class="num">3</span>Dein Instagram-Profil</h3>
+          <p>Das Herzstück: Business-Profil, Username &amp; Name-Feld, die <strong>4-Zeilen-Bio</strong> (mit exakter Vorlage), Profilbild, die 5 Pflicht-Highlights, dein PIE-Content-Mix und die 3 gepinnten Beiträge, die deine Methode erzählen.</p>
+        </div>
+        <div class="slg-card">
+          <h3><span class="num">4</span>Deine Checkliste</h3>
+          <p>Zum Abhaken: Schritt für Schritt vom heutigen Profil zum sichtbaren Schaufenster. Du weisst genau, was als Nächstes dran ist — und wann du fertig bist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FÜR WEN ======================= -->
+  <section class="slg-section slg-for">
+    <div class="slg-inner">
+      <h2>Für dich, wenn …</h2>
+      <ul>
+        <li>… du im Network-Marketing bist und Instagram <strong>endlich für dich arbeiten lassen willst</strong>.</li>
+        <li>… du keine Lust mehr auf reines Produkt-Posten hast und dich fragst, was wirklich funktioniert.</li>
+        <li>… du nebenbei Mama bist und <strong>klare Schritte statt Dauer-Brainstorming</strong> brauchst.</li>
+        <li>… du dich zeigen willst, ohne dich zu verbiegen oder „Marktschreierin" zu werden.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= ÜBER PATRICIA ======================= -->
+  <section class="slg-section slg-about">
+    <div class="slg-inner">
+      <div class="row">
+        <img src="https://mumlifebalance.ch/wp-content/uploads/2026/05/patricia-scaled.jpg" alt="Patricia" />
+        <div class="txt">
+          <h2>Hi, ich bin Patricia 🌿</h2>
+          <p>Mama, Unternehmerin und Mentorin für Network-Mamas, die nebenbei ein ehrliches Online-Business aufbauen wollen — ohne Druck, ohne Verstellen, im Tempo der Familie.</p>
+          <p>Ich habe selbst den Wendepunkt erlebt: weg vom „Produkte-in-die-Story-werfen", hin zu einem Profil, das Orientierung gibt und Menschen anzieht. Genau diesen ersten Schritt mache ich dir im Starterguide so einfach wie möglich.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= OPT-IN ======================= -->
+  <section class="slg-section slg-optin" id="anmelden">
+    <div class="slg-inner">
+      <span class="slg-kicker" style="color:#f2c879;display:block;">Jetzt gratis sichern</span>
+      <h2>Schick mir den Instagram-Starterguide</h2>
+      <p>Trag dich ein und du bekommst den 17-Seiten-Guide direkt in dein Postfach. Plus ab und zu eine ehrliche Mail von mir mit dem, was im Mama-Business wirklich funktioniert.</p>
+
+      <!-- ============================================================
+        ⚠️  ACTIVECAMPAIGN-FORMULAR — PLATZHALTER
+        ------------------------------------------------------------
+        Dieses Formular ist die Bio-Check-Vorlage, umbenannt auf _STG_.
+        BEVOR LIVE: In ActiveCampaign ein eigenes Formular für den
+        „Instagram-Starterguide" anlegen (mit Automation: PDF senden)
+        und folgende 4 Werte ersetzen:
+          1. action-URL bleibt: https://mumlifebalance.activehosted.com/proc.php
+          2. name="u"  value=""  → AC-Form-ID eintragen
+          3. name="f"  value=""  → AC-Form-ID eintragen (gleich wie u)
+          4. name="or" value=""  → AC-Form-Token (or-Hash) eintragen
+        Den fertigen AC-Embed-Code kannst du auch komplett hier reinkopieren —
+        nur die Brand-Override-Styles (#_form_STG_) auf die neue Form-ID anpassen.
+        ============================================================ -->
+      <form method="POST" action="https://mumlifebalance.activehosted.com/proc.php" id="_form_STG_" class="_form _form_STG _inline-form" novalidate data-styles-version="5">
+        <input type="hidden" name="u" value="STARTERGUIDE_AC_FORM_ID" />
+        <input type="hidden" name="f" value="STARTERGUIDE_AC_FORM_ID" />
+        <input type="hidden" name="s" />
+        <input type="hidden" name="c" value="0" />
+        <input type="hidden" name="m" value="0" />
+        <input type="hidden" name="act" value="sub" />
+        <input type="hidden" name="v" value="2" />
+        <input type="hidden" name="or" value="STARTERGUIDE_AC_TOKEN" />
+        <div class="_form-content">
+          <div class="_form_element _full_width _clear">
+            <h2 class="_form-title">Starterguide gratis holen</h2>
+          </div>
+          <div class="_form_element _full_width">
+            <label for="stg_fullname" class="_form-label">Vorname<span class="field-required">*</span></label>
+            <div class="_field-wrapper">
+              <input type="text" id="stg_fullname" name="fullname" placeholder="Dein Vorname" required />
+            </div>
+          </div>
+          <div class="_form_element _full_width">
+            <label for="stg_email" class="_form-label">E-Mail<span class="field-required">*</span></label>
+            <div class="_field-wrapper">
+              <input type="text" id="stg_email" name="email" placeholder="Deine beste E-Mail-Adresse" required />
+            </div>
+          </div>
+          <div class="_form_element _full_width">
+            <fieldset class="_form-fieldset" style="border:0;padding:0;margin:0;">
+              <input data-autofill="false" type="hidden" id="field[1][]" name="field[1][]" value="~|">
+              <div class="_row _checkbox-radio">
+                <input id="stg_consent" type="checkbox" name="field[1][]" value="Ich möchte Patricias E-Mails mit Wissen und Angeboten rund ums Thema Onlinebusiness und Networkmarketing erhalten. Ich kann mich jederzeit abmelden." checked>
+                <span>
+                  <label for="stg_consent">Ich möchte Patricias E-Mails mit Wissen und Angeboten rund ums Thema Onlinebusiness und Networkmarketing erhalten. Ich kann mich jederzeit abmelden.</label>
+                </span>
+              </div>
+            </fieldset>
+          </div>
+          <div class="_button-wrapper _full_width">
+            <button id="_form_STG_submit" class="_submit" type="submit"></button>
+          </div>
+          <div class="_clear-element"></div>
+        </div>
+        <div class="_form-thank-you" style="display:none;"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="slg-foot">
+    <div class="slg-inner">
+      <p>© Mum Life Balance · Patricia &nbsp;|&nbsp; <a href="https://mumlifebalance.ch/impressum">Impressum</a> &nbsp;·&nbsp; <a href="https://mumlifebalance.ch/datenschutz">Datenschutz</a></p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
