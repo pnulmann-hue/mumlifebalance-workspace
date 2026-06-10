@@ -222,7 +222,8 @@
 
       "traffic_quellen": {
         "wordpress_landing": "https://mumlifebalance.ch/instagram-starterguide",
-        "wordpress_landing_status": "DRAFT gebaut — outputs/funnels/0-euro-starterguide/landing/index.html · deploy via scripts/wordpress/deploy-starterguide.js · TODO: AC-Form-Token einsetzen + publizieren + Bio-Link umbiegen (alte Netlify-Seite starterguide-mumlifebalance.netlify.app zeigte vermutlich falschen Lead-Challenge-Inhalt)",
+        "wordpress_landing_status": "DRAFT gebaut + AC-Form #53 (Token db2daad7-aa19-4b73-a6de-63c5735b0fc0) eingesetzt — outputs/funnels/0-euro-starterguide/landing/index.html · deploy via scripts/wordpress/deploy-starterguide.js · TODO: AC-Auslieferungs-Automation prüfen + WP publizieren + Bio-Link umbiegen (alte Netlify-Seite starterguide-mumlifebalance.netlify.app zeigte vermutlich falschen Lead-Challenge-Inhalt)",
+        "ac_form_id": "53",
         "manychat_keyword": "SICHTBAR",
         "alt_keyword": "ANLEITUNG"
       },

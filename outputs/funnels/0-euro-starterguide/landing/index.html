@@ -128,21 +128,9 @@
 .slg-optin h2 { font-size: clamp(26px, 4vw, 36px); color: #ffffff; margin-bottom: 14px; }
 .slg-optin > .slg-inner > p { color: rgba(241,236,221,0.94); font-size: 19px; max-width: 540px; margin: 0 auto 32px; }
 
-/* ---------- AC FORM Brand-Override ---------- */
-#_form_STG_ { max-width: 500px; margin: 0 auto !important; background: #f1ecdd !important; padding: 36px 32px !important; border-radius: 18px !important; color-scheme: light only; text-align: left; }
-#_form_STG_ ._submit { background: #dc822e !important; color: #ffffff !important; font-weight: 700 !important; padding: 16px 32px !important; font-size: 18px !important; border-radius: 14px !important; letter-spacing: 0.3px !important; width: 100% !important; margin-top: 8px !important; cursor: pointer !important; transition: transform 0.12s ease, box-shadow 0.2s ease !important; font-family: 'Source Sans 3', sans-serif !important; }
-#_form_STG_ ._submit:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(220, 130, 46, 0.4); }
-#_form_STG_ ._submit:after { content: "Starterguide kostenlos holen 🌿"; }
-#_form_STG_ ._form-title { font-family: 'Philosopher', Georgia, serif !important; color: #29556d !important; font-size: 24px !important; font-weight: 700 !important; margin-bottom: 14px !important; text-align: center !important; }
-#_form_STG_ ._form-label, #_form_STG_ ._form_element ._form-label { color: #29556d !important; font-weight: 700 !important; }
-#_form_STG_ input[type="text"], #_form_STG_ input[type="email"] { background: #ffffff !important; border: 1.5px solid rgba(41,85,109,0.18) !important; border-radius: 10px !important; padding: 12px !important; width: 100% !important; }
-#_form_STG_ ._row._checkbox-radio { display: flex !important; align-items: flex-start !important; gap: 10px !important; padding: 12px 0 !important; }
-#_form_STG_ ._row._checkbox-radio input[type="checkbox"] { margin-top: 3px !important; flex-shrink: 0 !important; width: 18px !important; height: 18px !important; }
-#_form_STG_ ._row._checkbox-radio span { display: block !important; flex: 1 !important; }
-#_form_STG_ ._row._checkbox-radio label { color: #0c1c30 !important; font-size: 13px !important; line-height: 1.55 !important; font-weight: 400 !important; display: block !important; }
-#_form_STG_ ._form_element { margin-bottom: 14px; }
-#_form_STG_ ._field-wrapper { position: relative; }
-#_form_STG_ .field-required { color: #c25a3c; }
+/* (AC-Formular #53 bringt eigene Styles mit; Brand-Override steht
+   als eigener <style>-Block direkt NACH dem Embed weiter unten,
+   damit er die AC-Defaults zuverlässig überschreibt.) */
 
 /* ---------- FOOTER ---------- */
 .slg-foot { background: #0c1c30; color: rgba(241,236,221,0.7); text-align: center; padding: 32px 0; font-size: 14px; }
@@ -254,62 +242,287 @@
       <p>Trag dich ein und du bekommst den 17-Seiten-Guide direkt in dein Postfach. Plus ab und zu eine ehrliche Mail von mir mit dem, was im Mama-Business wirklich funktioniert.</p>
 
       <!-- ============================================================
-        ⚠️  ACTIVECAMPAIGN-FORMULAR — PLATZHALTER
-        ------------------------------------------------------------
-        Dieses Formular ist die Bio-Check-Vorlage, umbenannt auf _STG_.
-        BEVOR LIVE: In ActiveCampaign ein eigenes Formular für den
-        „Instagram-Starterguide" anlegen (mit Automation: PDF senden)
-        und folgende 4 Werte ersetzen:
-          1. action-URL bleibt: https://mumlifebalance.activehosted.com/proc.php
-          2. name="u"  value=""  → AC-Form-ID eintragen
-          3. name="f"  value=""  → AC-Form-ID eintragen (gleich wie u)
-          4. name="or" value=""  → AC-Form-Token (or-Hash) eintragen
-        Den fertigen AC-Embed-Code kannst du auch komplett hier reinkopieren —
-        nur die Brand-Override-Styles (#_form_STG_) auf die neue Form-ID anpassen.
+        ACTIVECAMPAIGN-FORMULAR #53 (Instagram-Starterguide)
+        Token: db2daad7-aa19-4b73-a6de-63c5735b0fc0
+        Original-Embed von Patricia eingesetzt am 2026-06-10.
+        Brand-Override-Styles stehen als <style>-Block direkt NACH dem
+        Embed (damit sie die AC-Default-Styles überschreiben).
         ============================================================ -->
-      <form method="POST" action="https://mumlifebalance.activehosted.com/proc.php" id="_form_STG_" class="_form _form_STG _inline-form" novalidate data-styles-version="5">
-        <input type="hidden" name="u" value="STARTERGUIDE_AC_FORM_ID" />
-        <input type="hidden" name="f" value="STARTERGUIDE_AC_FORM_ID" />
+      <!-- ===== AC-Embed #53 (Original von Patricia) ===== -->
+      <style>
+      #_form_53_{font-size:14px;line-height:1.6;font-family:arial, helvetica, sans-serif;margin:0;box-shadow:none}._form_hide{display:none;visibility:hidden}._form_show{display:block;visibility:visible}#_form_53_._form-top{top:0}#_form_53_._form-bottom{bottom:0}#_form_53_._form-left{left:0}#_form_53_._form-right{right:0}#_form_53_ input[type="text"],#_form_53_ input[type="tel"],#_form_53_ input[type="date"],#_form_53_ textarea{padding:8px;height:auto;border:#979797 1px solid;border-radius:4px;color:#000 !important;font-size:14px;box-sizing:border-box}#_form_53_ textarea{resize:none}#_form_53_ input::placeholder{color:#142341}#_form_53_ ._submit{cursor:pointer;font-family:arial, sans-serif;font-size:14px;text-align:center;background:#ffffff !important;border:0 !important;border-radius:4px !important;color:#080808 !important;padding:10px !important}#_form_53_ ._submit:disabled{cursor:not-allowed;opacity:0.4}#_form_53_ ._close-icon{cursor:pointer;background-image:url("https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png");background-repeat:no-repeat;background-size:14.2px 14.2px;position:absolute;display:block;top:11px;right:9px;overflow:hidden;width:16.2px;height:16.2px}#_form_53_ ._form-body{font-family:sans-serif;font-size:14px;font-weight:400;color:black;margin-bottom:30px}#_form_53_ ._form-branding{color:#fff;font-size:10px;clear:both;text-align:left;margin-top:30px;font-weight:100}#_form_53_ ._form-branding ._logo{display:block;width:130px;height:14px;margin-top:6px;background-image:url("https://d226aj4ao1t61q.cloudfront.net/hh9ujqgv5_aclogo_li.png");background-size:130px auto;background-repeat:no-repeat}#_form_53_ .form-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}#_form_53_ ._form-label,#_form_53_ ._form_element ._form-label{font-weight:bold;margin-bottom:5px;display:block}#_form_53_ ._form_element{position:relative;margin-bottom:10px;max-width:100%}#_form_53_ ._form_element *{font-size:14px}#_form_53_ ._form_element._clear{clear:both;width:100%;float:none}#_form_53_ ._form_element._clear:after{clear:left}#_form_53_ ._form_element input[type="text"],#_form_53_ ._form_element input[type="date"],#_form_53_ ._form_element select,#_form_53_ ._form_element textarea:not(.g-recaptcha-response){display:block;width:100%;box-sizing:border-box;font-family:inherit}#_form_53_ ._field-wrapper{position:relative}#_form_53_ ._form_full_field{display:block;width:100%;margin-bottom:10px}#_form_53_ input[type="text"]._has_error,#_form_53_ textarea._has_error{border:#F37C7B 1px solid}#_form_53_ input[type="checkbox"]._has_error{outline:#F37C7B 1px solid}#_form_53_ ._error{display:block;position:absolute;font-size:14px;z-index:10000001}#_form_53_ ._error._above{padding-bottom:4px;bottom:39px;right:0}#_form_53_ ._error._below{padding-top:8px;top:100%;right:0}#_form_53_ ._error-inner{padding:12px 12px 12px 36px;background-color:#FFDDDD;background-repeat:no-repeat;background-position:12px center;font-size:14px;font-family:arial, sans-serif;font-weight:600;line-height:16px;color:#000;text-align:center;text-decoration:none;border-radius:4px;box-shadow:0 1px 4px rgba(31, 33, 41, 0.298295)}#_form_53_ ._error-inner._form_error{margin-bottom:5px;text-align:left}#_form_53_ ._error-inner._no_arrow{margin-bottom:10px}#_form_53_ ._error-arrow{position:absolute;width:0;height:0}#_form_53_ ._error-html{margin-bottom:10px}#_form_53_ ._form-title{font-family:sans-serif;font-size:24px;font-weight:400;color:black}#_form_53_ .field-required{color:#FF0000}#_form_53_{position:relative;text-align:left;margin:25px auto 0;padding:20px;box-sizing:border-box;background:#dc822e !important;border:0px solid #b0b0b0 !important;max-width:500px;border-radius:0px !important;color:#000000}#_form_53_._inline-form ._form-label,#_form_53_._inline-form ._form-checkbox-option-label{font-family:sans-serif;font-size:14px;font-weight:700;line-height:1.6em;color:black}#_form_53_._inline-form ._row span:not(.field-required),#_form_53_._inline-form ._row label{font-family:sans-serif;font-size:14px;font-weight:400;line-height:1.6em;color:black}#_form_53_ ._form-thank-you{position:relative;left:0;right:0;text-align:center;font-size:18px}#_form_53_ .g-recaptcha{margin-top:10px}
+      </style>
+      <form method="POST" action="https://mumlifebalance.activehosted.com/proc.php" id="_form_53_" class="_form _form_53 _inline-form  " novalidate data-styles-version="5">
+        <input type="hidden" name="u" value="53" />
+        <input type="hidden" name="f" value="53" />
         <input type="hidden" name="s" />
         <input type="hidden" name="c" value="0" />
         <input type="hidden" name="m" value="0" />
         <input type="hidden" name="act" value="sub" />
         <input type="hidden" name="v" value="2" />
-        <input type="hidden" name="or" value="STARTERGUIDE_AC_TOKEN" />
+        <input type="hidden" name="or" value="db2daad7-aa19-4b73-a6de-63c5735b0fc0" />
         <div class="_form-content">
-          <div class="_form_element _full_width _clear">
-            <h2 class="_form-title">Starterguide gratis holen</h2>
+          <div class="_form_element _x07614776 _full_width _clear">
+            <h2 class="_form-title">Deine ersten Schritte, die du auf Instagram beachten musst, um daraus für dein Network Kunden zu finden</h2>
           </div>
-          <div class="_form_element _full_width">
-            <label for="stg_fullname" class="_form-label">Vorname<span class="field-required">*</span></label>
+          <div class="_form_element _x85148327 _full_width">
+            <label for="fullname" class="_form-label">Vorname<span class="field-required">*</span></label>
             <div class="_field-wrapper">
-              <input type="text" id="stg_fullname" name="fullname" placeholder="Dein Vorname" required />
+              <input type="text" id="fullname" name="fullname" placeholder="Tippen Sie Ihren Namen ein." required/>
             </div>
           </div>
-          <div class="_form_element _full_width">
-            <label for="stg_email" class="_form-label">E-Mail<span class="field-required">*</span></label>
+          <div class="_form_element _x44803942 _full_width">
+            <label for="email" class="_form-label">E-Mail<span class="field-required">*</span></label>
             <div class="_field-wrapper">
-              <input type="text" id="stg_email" name="email" placeholder="Deine beste E-Mail-Adresse" required />
+              <input type="text" id="email" name="email" placeholder="Tippen Sie Ihre E-Mail ein." required/>
             </div>
           </div>
-          <div class="_form_element _full_width">
-            <fieldset class="_form-fieldset" style="border:0;padding:0;margin:0;">
+          <div class="_form_element _x25783284 _full_width">
+            <fieldset class="_form-fieldset">
+              <div class="_row">
+                <legend for="field[1][]" class="_form-label">Datenschutz</legend>
+              </div>
               <input data-autofill="false" type="hidden" id="field[1][]" name="field[1][]" value="~|">
               <div class="_row _checkbox-radio">
-                <input id="stg_consent" type="checkbox" name="field[1][]" value="Ich möchte Patricias E-Mails mit Wissen und Angeboten rund ums Thema Onlinebusiness und Networkmarketing erhalten. Ich kann mich jederzeit abmelden." checked>
+                <input id="field_1consent" type="checkbox" name="field[1][]" value="Ich möchte Patricias E-Mails mit Wissen und Angeboten rund ums Thema Onlinebusiness und Networkmarketing erhalten. Ich kann mich jederzeit abmelden." checked>
                 <span>
-                  <label for="stg_consent">Ich möchte Patricias E-Mails mit Wissen und Angeboten rund ums Thema Onlinebusiness und Networkmarketing erhalten. Ich kann mich jederzeit abmelden.</label>
+                  <label for="field_1consent">Ich möchte Patricias E-Mails mit Wissen und Angeboten rund ums Thema Onlinebusiness und Networkmarketing erhalten. Ich kann mich jederzeit abmelden.</label>
                 </span>
               </div>
             </fieldset>
           </div>
+          <div class="_form_element _x47057123 _full_width">
+            <label for="g-recaptcha-response" class="_form-label">Bitte bestätige hier deine Anfrage.<span class="field-required">*</span></label>
+            <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go"></div>
+          </div>
           <div class="_button-wrapper _full_width">
-            <button id="_form_STG_submit" class="_submit" type="submit"></button>
+            <button id="_form_53_submit" class="_submit" type="submit">Jetzt kostenlos per Mail bekommen!</button>
           </div>
           <div class="_clear-element"></div>
         </div>
         <div class="_form-thank-you" style="display:none;"></div>
+        <div class="_form-branding">
+          <div class="_marketing-by">Marketing von</div>
+          <a href="https://www.activecampaign.com/?utm_medium=referral&utm_campaign=acforms" class="_logo"><span class="form-sr-only">ActiveCampaign</span></a>
+        </div>
       </form>
+      <script>
+      window.cfields = {"1":"datenschutz"};
+      window._show_thank_you = function(id, message, trackcmp_url, email) {
+          var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
+          form.querySelector('._form-content').style.display = 'none';
+          thank_you.innerHTML = message;
+          thank_you.style.display = 'block';
+          const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
+          var visitorObject = window[vgoAlias];
+          if (email && typeof visitorObject !== 'undefined') {
+              visitorObject('setEmail', email);
+              visitorObject('update');
+          } else if (typeof(trackcmp_url) != 'undefined' && trackcmp_url) {
+              _load_script(trackcmp_url);
+          }
+          if (typeof window._form_callback !== 'undefined') window._form_callback(id);
+          thank_you.setAttribute('tabindex', '-1');
+          thank_you.focus();
+      };
+      window._show_error = function(id, message, html) {
+          var form = document.getElementById('_form_' + id + '_'),
+              err = document.createElement('div'),
+              button = form.querySelector('button[type="submit"]'),
+              old_error = form.querySelector('._form_error');
+          if (old_error) old_error.parentNode.removeChild(old_error);
+          err.innerHTML = message;
+          err.className = '_error-inner _form_error _no_arrow';
+          var wrapper = document.createElement('div');
+          wrapper.className = '_form-inner _show_be_error';
+          wrapper.appendChild(err);
+          button.parentNode.insertBefore(wrapper, button);
+          var submitButton = form.querySelector('[id^="_form"][id$="_submit"]');
+          submitButton.disabled = false;
+          submitButton.classList.remove('processing');
+          if (html) {
+              var div = document.createElement('div');
+              div.className = '_error-html';
+              div.innerHTML = html;
+              err.appendChild(div);
+          }
+      };
+      window._load_script = function(url, callback, isSubmit) {
+          var head = document.querySelector('head'), script = document.createElement('script'), r = false;
+          var submitButton = document.querySelector('#_form_53_submit');
+          script.charset = 'utf-8';
+          script.src = url;
+          if (callback) {
+              script.onload = script.onreadystatechange = function() {
+                  if (!r && (!this.readyState || this.readyState == 'complete')) { r = true; callback(); }
+              };
+          }
+          script.onerror = function() {
+              if (isSubmit) {
+                  if (script.src.length > 10000) {
+                      _show_error("53", "Ihre Übermittlung konnte nicht gesendet werden. Bitte kürzen Sie Ihre Antworten und versuche es erneut.");
+                  } else {
+                      _show_error("53", "Ihre Übermittlung konnte nicht gesendet werden. Bitte versuchen Sie es erneut.");
+                  }
+                  submitButton.disabled = false;
+                  submitButton.classList.remove('processing');
+              }
+          }
+          head.appendChild(script);
+      };
+      (function() {
+          if (window.location.search.search("excludeform") !== -1) return false;
+          var addEvent = function(element, event, func) {
+              if (element.addEventListener) { element.addEventListener(event, func); }
+              else { var oldFunc = element['on' + event]; element['on' + event] = function() { oldFunc.apply(this, arguments); func.apply(this, arguments); }; }
+          }
+          var form_to_submit = document.getElementById('_form_53_');
+          var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
+          var getUrlParam = function(name) {
+              var params = new URLSearchParams(window.location.search);
+              return params.get(name) || false;
+          };
+          for (var i = 0; i < allInputs.length; i++) {
+              var regexStr = "field\\[(\\d+)\\]";
+              var results = new RegExp(regexStr).exec(allInputs[i].name);
+              allInputs[i].dataset.name = results ? window.cfields[results[1]] : allInputs[i].name;
+              var fieldVal = getUrlParam(allInputs[i].dataset.name);
+              if (fieldVal && allInputs[i].dataset.autofill !== "false") {
+                  if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
+                      if (allInputs[i].value == fieldVal) allInputs[i].checked = true;
+                  } else { allInputs[i].value = fieldVal; }
+              }
+          }
+          var remove_tooltips = function() { for (var i = 0; i < tooltips.length; i++) { tooltips[i].tip.parentNode.removeChild(tooltips[i].tip); } tooltips = []; };
+          var remove_tooltip = function(elem) { for (var i = 0; i < tooltips.length; i++) { if (tooltips[i].elem === elem) { tooltips[i].tip.parentNode.removeChild(tooltips[i].tip); tooltips.splice(i, 1); return; } } };
+          var create_tooltip = function(elem, text) {
+              var tooltip = document.createElement('div'), arrow = document.createElement('div'), inner = document.createElement('div'), new_tooltip = {};
+              tooltip.id = elem.id + '-error'; tooltip.setAttribute('role', 'alert');
+              if (elem.type != 'radio' && (elem.type != 'checkbox' || elem.name === 'sms_consent')) {
+                  tooltip.className = '_error'; arrow.className = '_error-arrow'; inner.className = '_error-inner'; inner.innerHTML = text;
+                  tooltip.appendChild(arrow); tooltip.appendChild(inner); elem.parentNode.appendChild(tooltip);
+              } else {
+                  tooltip.className = '_error-inner _no_arrow'; tooltip.innerHTML = text; elem.parentNode.insertBefore(tooltip, elem); new_tooltip.no_arrow = true;
+              }
+              new_tooltip.tip = tooltip; new_tooltip.elem = elem; tooltips.push(new_tooltip); return new_tooltip;
+          };
+          var resize_tooltip = function(tooltip) {
+              var rect = tooltip.elem.getBoundingClientRect();
+              var doc = document.documentElement, scrollPosition = rect.top - ((window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0));
+              tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + (scrollPosition < 40 ? ' _below' : ' _above');
+          };
+          var resize_tooltips = function() { for (var i = 0; i < tooltips.length; i++) { if (!tooltips[i].no_arrow) resize_tooltip(tooltips[i]); } };
+          var validate_field = function(elem, remove) {
+              var tooltip = null, value = elem.value, no_error = true;
+              remove ? remove_tooltip(elem) : false;
+              elem.removeAttribute('aria-invalid');
+              if (elem.type != 'checkbox') elem.className = elem.className.replace(/ ?_has_error ?/g, '');
+              if (elem.getAttribute('required') !== null) {
+                  if (elem.type == 'radio' || (elem.type == 'checkbox' && /any/.test(elem.className))) {
+                      var elems = form_to_submit.elements[elem.name];
+                      if (!(elems instanceof NodeList || elems instanceof HTMLCollection) || elems.length <= 1) { no_error = elem.checked; }
+                      else { no_error = false; for (var i = 0; i < elems.length; i++) { if (elems[i].checked) no_error = true; } }
+                      if (!no_error) { tooltip = create_tooltip(elem, "Bitte eine Option auswählen."); }
+                  } else if (elem.type == 'checkbox') {
+                      var elems = form_to_submit.elements[elem.name], found = false, err = [];
+                      no_error = true;
+                      for (var i = 0; i < elems.length; i++) {
+                          if (elems[i].getAttribute('required') === null) continue;
+                          if (!found && elems[i] !== elem) return true;
+                          found = true; elems[i].className = elems[i].className.replace(/ ?_has_error ?/g, '');
+                          if (!elems[i].checked) { no_error = false; elems[i].className = elems[i].className + ' _has_error'; err.push("Die Markierung von %s ist erforderlich.".replace("%s", elems[i].value)); }
+                      }
+                      if (!no_error) { tooltip = create_tooltip(elem, err.join('<br/>')); }
+                  } else if (value === undefined || value === null || value === '') {
+                      elem.className = elem.className + ' _has_error'; no_error = false; tooltip = create_tooltip(elem, "Bitte füllen Sie das markierte Pflichtfeld aus.");
+                  }
+              }
+              if (no_error && elem.name == 'email') {
+                  if (!value.match(/^[\+_a-z0-9-'&=]+(\.[\+_a-z0-9-']+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i)) {
+                      elem.className = elem.className + ' _has_error'; no_error = false; tooltip = create_tooltip(elem, "Geben Sie eine gültige E-Mail-Adresse ein.");
+                  }
+              }
+              tooltip ? resize_tooltip(tooltip) : false;
+              return no_error;
+          };
+          var needs_validate = function(el) {
+              if (el.getAttribute('required') !== null) return true;
+              if (el.name === 'email' && el.value !== "") return true;
+              return false;
+          };
+          var validate_form = function(e) {
+              var no_error = true;
+              if (!submitted) {
+                  submitted = true;
+                  for (var i = 0, len = allInputs.length; i < len; i++) {
+                      var input = allInputs[i];
+                      if (needs_validate(input)) {
+                          if (input.type == 'text' || input.type == 'number' || input.type == 'tel') {
+                              addEvent(input, 'blur', function() { this.value = this.value.trim(); validate_field(this, true); });
+                              addEvent(input, 'input', function() { validate_field(this, true); });
+                          } else if (input.type == 'radio' || input.type == 'checkbox') {
+                              (function(el) {
+                                  var radios = Array.isArray(form_to_submit.elements[el.name]) ? form_to_submit.elements[el.name] : [form_to_submit.elements[el.name]];
+                                  for (var i = 0; i < radios.length; i++) { addEvent(radios[i], 'change', function() { validate_field(el, true); }); }
+                              })(input);
+                          }
+                      }
+                  }
+              }
+              remove_tooltips();
+              for (var i = 0, len = allInputs.length; i < len; i++) {
+                  var elem = allInputs[i];
+                  if (needs_validate(elem)) { if (elem.tagName.toLowerCase() !== "select") { elem.value = elem.value.trim(); } validate_field(elem) ? true : no_error = false; }
+              }
+              if (!no_error && e) { e.preventDefault(); }
+              resize_tooltips();
+              return no_error;
+          };
+          addEvent(window, 'resize', resize_tooltips);
+          addEvent(window, 'scroll', resize_tooltips);
+          window['recaptcha_callback'] = function() {
+              var recaptchas = document.getElementsByClassName("g-recaptcha");
+              for (var i in recaptchas) {
+                  var recaptcha_id = "recaptcha_" + i;
+                  recaptchas[i].id = recaptcha_id;
+                  var el = document.getElementById(recaptcha_id);
+                  if (el != null) { grecaptcha.render(recaptcha_id, {"sitekey": el.getAttribute("data-sitekey"), "stoken": el.getAttribute("data-stoken")}); }
+              }
+          };
+          _load_script("https://www.google.com/recaptcha/api.js?onload=recaptcha_callback&render=explicit");
+          var _form_serialize = function(form){if(!form||form.nodeName!=="FORM"){return }var i,j,q=[];for(i=0;i<form.elements.length;i++){if(form.elements[i].name===""){continue}switch(form.elements[i].nodeName){case"INPUT":switch(form.elements[i].type){case"text":case"number":case"date":case"time":case"hidden":case"password":case"button":case"reset":case"submit":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"checkbox":case"radio":if(form.elements[i].checked){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value))}break;case"file":break}break;case"TEXTAREA":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"SELECT":switch(form.elements[i].type){case"select-one":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"select-multiple":for(j=0;j<form.elements[i].options.length;j++){if(form.elements[i].options[j].selected){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].options[j].value))}}break}break;case"BUTTON":switch(form.elements[i].type){case"reset":case"submit":case"button":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break}break}}return q.join("&")};
+          var form_submit = function(e) {
+              e.preventDefault();
+              if (validate_form()) {
+                  var submitButton = e.target.querySelector('#_form_53_submit');
+                  submitButton.disabled = true;
+                  submitButton.classList.add('processing');
+                  var serialized = _form_serialize(document.getElementById('_form_53_')).replace(/%0A/g, '\\n');
+                  var err = form_to_submit.querySelector('._form_error');
+                  err ? err.parentNode.removeChild(err) : false;
+                  _load_script('https://mumlifebalance.activehosted.com/proc.php?' + serialized + '&jsonp=true', null, true);
+              }
+              return false;
+          };
+          addEvent(form_to_submit, 'submit', form_submit);
+      })();
+      </script>
+      <!-- ===== Brand-Override (steht NACH dem Embed → gewinnt) ===== -->
+      <style>
+      #_form_53_ { max-width: 520px !important; margin: 0 auto !important; background: #f1ecdd !important; padding: 36px 32px !important; border-radius: 18px !important; color-scheme: light only; box-shadow: 0 10px 30px rgba(12,28,48,0.18) !important; }
+      #_form_53_ ._form-title { font-family: 'Philosopher', Georgia, serif !important; color: #29556d !important; font-size: 21px !important; font-weight: 700 !important; line-height: 1.32 !important; margin-bottom: 18px !important; text-align: center !important; }
+      #_form_53_ ._form-label, #_form_53_ ._form_element ._form-label, #_form_53_ legend._form-label { color: #29556d !important; font-weight: 700 !important; }
+      #_form_53_ input[type="text"], #_form_53_ input[type="email"] { background: #ffffff !important; border: 1.5px solid rgba(41,85,109,0.2) !important; border-radius: 10px !important; padding: 12px !important; color: #0c1c30 !important; }
+      #_form_53_ input::placeholder { color: #8a93a0 !important; }
+      #_form_53_ ._submit { background: #dc822e !important; color: #ffffff !important; font-family: 'Source Sans 3', sans-serif !important; font-weight: 700 !important; font-size: 18px !important; padding: 16px 28px !important; border-radius: 14px !important; width: 100% !important; margin-top: 12px !important; cursor: pointer !important; transition: transform 0.12s ease, box-shadow 0.2s ease !important; box-shadow: 0 6px 18px rgba(220,130,46,0.35) !important; }
+      #_form_53_ ._submit:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(220,130,46,0.45) !important; }
+      #_form_53_ ._row._checkbox-radio { display: flex !important; align-items: flex-start !important; gap: 10px !important; padding: 10px 0 !important; }
+      #_form_53_ ._row._checkbox-radio input[type="checkbox"] { margin-top: 3px !important; flex-shrink: 0 !important; width: 18px !important; height: 18px !important; }
+      #_form_53_ ._row._checkbox-radio span { flex: 1 !important; }
+      #_form_53_ ._row._checkbox-radio label, #_form_53_._inline-form ._row label { color: #0c1c30 !important; font-size: 13px !important; line-height: 1.55 !important; font-weight: 400 !important; }
+      #_form_53_ legend._form-label { font-size: 14px !important; margin-bottom: 4px !important; }
+      #_form_53_ ._form-branding { color: rgba(12,28,48,0.45) !important; margin-top: 18px !important; }
+      </style>
     </div>
   </section>
 

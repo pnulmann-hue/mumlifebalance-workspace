@@ -37,16 +37,20 @@ Inhaltsquelle: `context/patricia-freebies.md` → Abschnitt „3. 0€ Starter-G
 
 ---
 
+## ✅ Erledigt
+
+- **AC-Formular** angelegt: **Form #53**, Token `db2daad7-aa19-4b73-a6de-63c5735b0fc0` (Headline: „Deine ersten Schritte, die du auf Instagram beachten musst, um daraus für dein Network Kunden zu finden")
+- Echter Embed-Code (inkl. reCAPTCHA + AC-Script) in `landing/index.html` eingesetzt, Brand-Override drübergelegt (Creme-Karte / Petrol-Titel / oranger Button)
+
 ## ⚠️ Offene TODOs vor Live-Schaltung
 
 | # | Aufgabe | Wer |
 |---|---------|-----|
-| 1 | **AC-Formular** für den Starterguide in ActiveCampaign anlegen (mit Automation: PDF senden) | Patricia |
-| 2 | In `landing/index.html` die Platzhalter `STARTERGUIDE_AC_FORM_ID` + `STARTERGUIDE_AC_TOKEN` ersetzen | Patricia / Claude |
-| 3 | Deploy: `cd scripts/wordpress && node --env-file=.env deploy-starterguide.js` (braucht `.env` mit WP-App-Password) | Patricia |
-| 4 | WP-Seite prüfen & **publizieren** | Patricia |
-| 5 | **Bio-Link** „Starterguide" → `https://mumlifebalance.ch/instagram-starterguide` umbiegen | Claude (braucht Bio-HTML oder WP-Zugang) |
-| 6 | Alte Netlify-Seite abschalten / weiterleiten | Patricia |
+| 1 | **AC-Automation** prüfen: Trigger „Form #53 abgesendet" → Mail mit Starterguide-PDF | Patricia |
+| 2 | Deploy: `cd scripts/wordpress && node --env-file=.env deploy-starterguide.js` (braucht `.env` mit WP-App-Password) | Patricia |
+| 3 | WP-Seite prüfen & **publizieren** | Patricia |
+| 4 | **Bio-Link** „Starterguide" → `https://mumlifebalance.ch/instagram-starterguide` umbiegen | Claude (braucht Bio-HTML oder WP-Zugang) |
+| 5 | Alte Netlify-Seite abschalten / weiterleiten | Patricia |
 
 ---
 
