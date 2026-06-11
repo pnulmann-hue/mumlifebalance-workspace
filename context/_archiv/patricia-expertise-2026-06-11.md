@@ -6,12 +6,11 @@ tags: [patricia, expertise]
 
 **Zweck:** Wissensbasis für /reels + /karussell + Scheduled Tasks. Extrahiert aus den Transkripten der 4 aktiven Kurse. Diese Datei ist **Pflicht-Lesung** bei jeder Content-Generierung.
 
-**Quelle:** `context/Kurse/aktuelle kurse/` — 79 Transkript-Lektionen aus:
+**Quelle:** `context/Kurse/aktuelle kurse/` — 61 Transkript-Lektionen aus:
 1. Digitale Produktwelt (7 Lektionen)
 2. Finde dein Thema als Network-Mama in 60 Minuten (11 Lektionen)
 3. Instagram Kundenmaschine (31 Lektionen — umfangreichster Kurs)
 4. Vom Network-Wissen zum eigenen Produkt (12 Lektionen)
-5. Mama-CEO (Willkommen + Säule 1–3 = 18 Lektionen · Stand 2026-06-11 · Säule 4–5 folgen)
 
 ---
 
