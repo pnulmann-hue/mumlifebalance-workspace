@@ -91,6 +91,35 @@ Patricias Zahl: **90% Conversion in Challenges** wenn richtig aufgebaut.
 - **Kürzer ist besser** — Sanitär-Beispiel: 10-Min-Lösung > 3-Stunden-Herumschrauben
 - **Jede Lektion braucht Mehrwert & Ergebnis** — nicht einfach reden um zu reden
 
+### Kurs 5: Mama-CEO (8-Wochen-Programm · Säule 1–3 aufgenommen, Stand 2026-06-11)
+**Kern-Claim:** „Mama-CEO heisst nicht mehr arbeiten, sondern anders — von der Macherin zur Entscheiderin." Du schaffst dir Zeit + ein System, das mitdenkt, damit neben Familie wirklich Zeit fürs Business bleibt.
+
+**Säule 1 — Du erschaffst dir die Zeit (L1.1–1.5):**
+- **3 Business-Säulen**: Plattform · Produkt · Verkauf (wo ist deine Lücke?)
+- **5 CEO-Aufgaben**: Vision & Strategie · Entscheidungen · Brand & Stimme · Beziehungen · Reflexion & Zahlen
+- **Power-Slots + Erschöpfung-Wand**: ehrlicher Realitäts-Check, wann du WIRKLICH Zeit + klaren Kopf hast (realistisch ~2–3 h/Tag, ~18 h/Woche reichen)
+- 🌟 **Wochenrhythmus mit 4 Rollen** (Mama · Frau · Selbst · Unternehmerin) · **3 Zonen** (grün Power / gelb Mama / rot Erschöpfung) · **CEO-Tag-Fokus** (Mo Strategie · Di Brand · Mi Beziehungen · Do Entscheidungen · Fr Reflexion)
+- Kernsatz: *„Ein Plan wird umgeworfen, ein Rhythmus passt sich an."* · *„Wachstum passiert nicht, wenn du mehr arbeitest, sondern wenn du bessere Entscheidungen triffst."*
+
+**Säule 2 — Du brichst aus dem Hamsterrad aus (L2.1–2.6):**
+- 🌟 **Hütchenmethode**: alle Rollen auflisten (typisch 12–18), bewerten (+/−/=), kategorisieren, **radikal auf max. 7 reduzieren**
+- **4-Filter** pro Aufgabe: **B**ehalten · **D**elegieren · **A**utomatisieren · **X** = ganz weg · + 5-Schritt-Delegationsplan
+- **Das EINE Mantra: 100% Selbstverantwortung** · **Sonntag-Reset** (15 Min) gegen 5 typische Blockaden (Vergleich · Loslass-Schuld · Rhythmus-Erosion · Partner zieht nicht mit · Rückfall ins Macher-Muster)
+- **Familienorga**: Haushalts-Wochenplan (Mo Erdgeschoss, Di Obergeschoss, Mi Bäder …), Kinder altersgerecht einspannen
+- Kernsatz: *„Beschäftigt sein heisst nicht produktiv sein."* · *„Es liegt nie an dir als Person — meistens ist das System falsch."*
+
+**Säule 3 — Du baust die Struktur · Strategie + Planung (L3.1–3.6):**
+- **4-Stufen-Hierarchie**: Jahr → Monat → Woche → Tag (von oben nach unten planen), in **Notion als „Business-Brain"** (zweites Gehirn)
+- **Monats-Trio**: pro Monat 1 Gratis-Produkt + 1 Mini + 1 grosses Produkt
+- **Transformation statt Produkt**: *„Das Produkt ist das Werkzeug, die Transformation ist das Ziel."* (Bsp Abnehmshake → Bikini-Gefühl → Überthemen Ernährung/Bewegung/Mindset auf die Wochen verteilt). Das WIE der Content-Umsetzung gehört in die Insta-Kundenmaschine, hier nur das Fundament.
+- **6 Lebens-Bereiche** in die Power-Slots verteilen · **Fixpunkte zuerst** (Ferien/Testwochen/Anlässe) · **50%-Plan / Notfall-Modus** für Kranktage
+- **Cockpit-Bot** (kommt in Säule 4) liest Tagesplaner + offene Aufgaben → tägliches Telegram-Briefing
+- Kernsatz: *„Ein Mama-CEO reagiert nicht, sie führt — sie hat das grosse Ganze im Blick."* · *„Planung ist Freiheit, nicht Starre."*
+
+**Mama-CEO-Metaphern:** Vogelperspektive (raus aufs Jahr, rein auf den Tag) · Schubladen (Rollen/Bereiche sortieren) · zweites Gehirn / Business-Brain (Notion) · roter Faden (führt Tag für Tag ans Ziel).
+
+> **Voll-Transkripte:** `context/Kurse/aktuelle kurse/Mama-CEO/Transkripte/` (12–17 = Säule 3) · **Master-Doku:** `outputs/produkte/mama-ceo/10-saeule-3-MASTER.md`. **Abgrenzung:** Content-Strategie/Akquise = Insta-Kundenmaschine, NICHT Mama-CEO.
+
 ---
 
 ## Teil 2: Patricias Brand Voice (Sprache für authentische Content-Erstellung)
