@@ -1,39 +1,45 @@
 {
-  "profil": "mentoring",
-  "modus": "tagesplan",
-  "disg": "Rot",
-  "disg_sekundaer": "Gelb",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
-  "aktives_produkt": "8.–14. Juni 2026 (KW 24) — Reichweite (vor Bootcamp-Promo)",
-  "wochen_fokus": "Reine Reichweite + Mama-Identity — noch KEIN Produkt-/Bootcamp-Push (Promo startet KW25). Mentoring-Reels/Posts übers Leben der Zielgruppe (Verzetteln, Schuld-Spirale); doTERRA Reels parallel.",
-  "sales_pattern": "NICHT verkaufen — Aufwärmen/Reichweite. Kein Bootcamp-Link im Feed.",
-  "wochen_cta": "Engagement/Share — kein Verkaufs-Link (z.B. „Teile das in deiner Story\").",
-  "monat_kontext": "Juni = MBA-Launch-Monat — als 5-Tage-PIA-Bootcamp (Pivot 8.6.2026, KEIN Webinar). KW24 Reichweite · KW25–26 Bootcamp-Promo (Anmeldung ab ~15.6.) · KW27 (29.6.–3.7.) Bootcamp LIVE → Cart-Open Fr 3.7., MBA Pioneer 997, Cart-Close tight Anfang Juli, Programmstart August. Verkauf via Bootcamp+Stories+Mails; Feed bleibt programm-frei. Mama-CEO-Pilot-Ladys wechseln Ende Juli in die MBA.",
-  "produkt_themen": {
-    "name": "Story-Challenge (7-Tage-Workbook)",
-    "painpoint": "Keine Story-Strategie → keine Konversion in Stories",
-    "transformation": "7-Tage-Story-Routine",
-    "zielgruppe": "Network-Mamas die Stories nutzen wollen",
-    "pillar": "Instagram-Strategie für NM"
-  },
-  "vorschlag_idee": "Idee: Patricia zeigt einen Screenshot aus ihrem Teamchat, wo eine Mama fragt: \"Wie packst du das alles?\" — und beantwortet dann ehrlich, warum die meisten Mamas sich verzetteln (falsche Prioritäten, nicht die Story-Strategie).\n\nMuster: Expertise + Fehler-Reframing (Glaubenssatz-Slide)\n\nCTA: \"Teile in deiner Story: Was ist dein grösstes Verzettlungs-Moment diese Woche?\" (Poll-Sticker)",
-  "wochen_fokus_quelle": "notion-live",
-  "launch_tag": null,
-  "kontext_snapshot": {
-    "kw": 24,
-    "wochentag": "Mittwoch",
-    "datum": "2026-06-10"
-  },
-  "fragen": [
-    "Was hast du erlebt?",
-    "Hast du grad einen Gedanken zum Thema?",
-    "Oder Standard-Pool?"
-  ],
-  "gesendet_am": "2026-06-10T08:33:28.664Z",
-  "telegram_message_id": 694,
-  "patricia_antworten": [],
-  "patricia_fotos": [],
-  "patricia_videos": [],
-  "status": "warten_auf_antwort"
+  "datum": "2026-06-11",
+  "profile": {
+    "mentoring": {
+      "profil": "mentoring",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Instagram-Strategie für NM",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "kontext_snapshot": {
+        "kw": 24,
+        "wochentag": "Donnerstag",
+        "datum": "2026-06-11"
+      },
+      "gesendet_am": "2026-06-11T05:24:51.405Z",
+      "telegram_message_id": 695,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    },
+    "doterra": {
+      "profil": "doterra",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "kontext_snapshot": {
+        "kw": 24,
+        "wochentag": "Donnerstag",
+        "datum": "2026-06-11"
+      },
+      "gesendet_am": "2026-06-11T05:24:51.465Z",
+      "telegram_message_id": 696,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    }
+  }
 }
