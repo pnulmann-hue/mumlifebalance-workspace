@@ -18,16 +18,14 @@
       .footer { position: absolute; bottom: 50px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(12, 28, 48, 0.55); letter-spacing: 0.08em; z-index: 5; }
       .bg-petrol .footer { color: rgba(255, 255, 255, 0.7); }
 
-      /* SLIDE 1 — FOTO-COVER */
-      .s1 { padding: 0; background: var(--creme); }
-      .s1 .cover-foto { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; z-index: 1; }
-      .s1 .top-band { position: absolute; top: 60px; left: 60px; right: 60px; background: rgba(241, 236, 221, 0.9); backdrop-filter: blur(6px); padding: 18px 32px; border-radius: 18px; text-align: center; z-index: 3; }
-      .s1 .top-band .label { font-family: "Source Sans 3"; font-weight: 700; font-size: 28px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--petrol); }
-      .s1 .hook-card { position: absolute; left: 60px; right: 60px; bottom: 160px; background: var(--creme); padding: 44px 52px; border-radius: 28px; box-shadow: 0 18px 48px rgba(12,28,48,0.4); z-index: 4; }
-      .s1 .hook-card .hook { font-family: "Philosopher"; font-weight: 700; font-size: 76px; line-height: 1.06; color: var(--dunkelblau); }
-      .s1 .hook-card .hook .pop { color: var(--petrol); font-style: italic; }
-      .s1 .hook-card .sub { font-family: "Source Sans 3"; font-weight: 600; font-size: 28px; letter-spacing: 0.06em; color: var(--petrol); margin-top: 14px; }
-      .s1 .footer { bottom: 60px; color: rgba(255,255,255,0.95); text-shadow: 0 2px 6px rgba(0,0,0,0.7); z-index: 4; }
+      /* SLIDE 1 — TEMPLATE DUNKELBLAU */
+      .s1-template { background: var(--dunkelblau); color: var(--creme); padding: 130px 90px; justify-content: center; }
+      .s1-template .eyebrow-tpl { font-family: "Source Sans 3"; font-weight: 700; font-size: 30px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--orange); margin-bottom: 56px; }
+      .s1-template .hook-tpl { font-family: "Philosopher"; font-weight: 700; font-size: 116px; line-height: 1.05; color: var(--creme); margin-bottom: 36px; }
+      .s1-template .hook-tpl .pop { color: #fff; font-style: italic; }
+      .s1-template .hook-tpl .pop2 { color: var(--orange); font-style: italic; }
+      .s1-template .sub-tpl { font-family: "Source Sans 3"; font-weight: 400; font-style: italic; font-size: 42px; line-height: 1.4; color: rgba(241,236,221,0.9); }
+      .s1-template .footer-tpl { color: rgba(241,236,221,0.7); }
 
       /* SLIDE 2 — SPANNUNG CREME */
       .s2 { justify-content: center; }
@@ -69,14 +67,11 @@
   </head>
   <body>
 
-    <div class="slide s1">
-      <img class="cover-foto" src="assets/cover-foto.jpg" alt="Patricia" />
-      <div class="top-band"><div class="label">Workbook · 6 Schritte</div></div>
-      <div class="hook-card">
-        <div class="hook">Vom <span class="pop">Teamcall</span><br/>zur echten Anfrage</div>
-        <div class="sub">6 Schritte aus 2 Wochen Pilot</div>
-      </div>
-      <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
+    <div class="slide s1-template">
+      <div class="eyebrow-tpl">Workbook · 6 Schritte</div>
+      <div class="hook-tpl">Vom <span class="pop">Teamcall</span><br/>zur echten <span class="pop2">Anfrage</span></div>
+      <div class="sub-tpl">6 Schritte aus 2 Wochen Pilot</div>
+      <div class="footer footer-tpl"><span>@mum.life.balance</span><span>Swipe →</span></div>
     </div>
 
     <div class="slide bg-creme s2">

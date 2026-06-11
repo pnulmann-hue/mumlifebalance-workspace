@@ -29,32 +29,35 @@
       .bottom-block .engage-card .text { font-family: "Philosopher"; font-weight: 700; font-style: italic; font-size: 46px; line-height: 1.2; color: var(--dunkelblau); }
       .bottom-block .engage-card .text .heart { color: var(--orange); }
       .bottom-block .brand-footer { display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(12,28,48,0.55); letter-spacing: 0.08em; }
+
+      .slide-foto { padding: 0 !important; background: #000 !important; gap: 0 !important; }
+      .slide-foto .cover-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; z-index: 0; }
+      .slide-foto .cover-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,28,48,0) 0%, rgba(12,28,48,0.1) 50%, rgba(12,28,48,0.45) 100%); z-index: 1; }
+      .slide-foto .cover-content { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; padding: 90px 60px 200px; z-index: 2; }
+      .slide-foto .hook-box { background: var(--creme); padding: 52px 52px 44px; border-radius: 28px; box-shadow: 0 24px 60px rgba(0,0,0,0.4); text-align: left; max-width: 960px; }
+      .slide-foto .hook-box .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 28px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--petrol); margin-bottom: 22px; }
+      .slide-foto .hook-box .hook { font-family: "Philosopher"; font-weight: 700; font-size: 84px; line-height: 1.06; color: var(--dunkelblau); }
+      .slide-foto .hook-box .hook .pop { color: var(--petrol); font-style: italic; }
+      .slide-foto .hook-box .hook .big-pop { background: var(--petrol); color: #fff; padding: 0 18px; border-radius: 12px; font-style: italic; display: inline-block; margin-top: 8px; }
+      .slide-foto .brand-footer-foto { position: absolute; bottom: 50px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(255,255,255,0.9); letter-spacing: 0.08em; text-shadow: 0 2px 6px rgba(0,0,0,0.7); z-index: 3; }
     </style>
   </head>
   <body>
 
-    <!-- ===================== SLIDE 1 — HOOK + OPEN LOOP ===================== -->
-    <div class="slide">
-
-      <div class="top-block">
-        <div class="eyebrow">Aus dem Pilot mit 5 Mamas</div>
-        <div class="hook">Was 5 Mamas<br/>zusammen schaffen,<br/><span class="big-pop">schaffst du allein nicht</span></div>
-      </div>
-
-      <div class="middle-block">
-        <p class="body lead">
-          Fünf Frauen, dieselbe Phase, derselbe Mut zum Anfangen &mdash; und mittendrin etwas, das ich für mich allein nie gesehen hätte.
-        </p>
-      </div>
-
-      <div class="bottom-block">
-        <div class="swipe"><span>Weiter</span><span class="arrow">&rarr;</span></div>
-        <div class="brand-footer">
-          <span>@mum.life.balance</span>
-          <span>1 / 2</span>
+    <!-- ===================== SLIDE 1 — HOOK (FOTO-COVER) ===================== -->
+    <div class="slide slide-foto">
+      <img class="cover-bg" src="assets/cover-foto.jpg" alt="Patricia" />
+      <div class="cover-overlay"></div>
+      <div class="cover-content">
+        <div class="hook-box">
+          <div class="eyebrow">Aus dem Pilot mit 5 Mamas</div>
+          <div class="hook">Was 5 Mamas zusammen schaffen, <span class="big-pop">schaffst du allein nicht</span></div>
         </div>
       </div>
-
+      <div class="brand-footer-foto">
+        <span>@mum.life.balance</span>
+        <span>1 / 2</span>
+      </div>
     </div>
 
     <!-- ===================== SLIDE 2 — AUFLÖSUNG + CTA ===================== -->

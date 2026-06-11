@@ -29,27 +29,36 @@
       .bottom-block .engage-card .text { font-family: "Source Sans 3"; font-weight: 600; font-size: 38px; line-height: 1.35; color: #fff; }
       .bottom-block .engage-card .text .pop { background: #fff; color: var(--petrol); padding: 2px 14px; border-radius: 8px; font-weight: 700; }
       .bottom-block .brand-footer { display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(12,28,48,0.55); letter-spacing: 0.08em; }
+
+      .slide-foto { padding: 0 !important; background: #000 !important; gap: 0 !important; }
+      .slide-foto .cover-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; z-index: 0; }
+      .slide-foto .cover-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,28,48,0) 0%, rgba(12,28,48,0.1) 55%, rgba(12,28,48,0.4) 100%); z-index: 1; }
+      .slide-foto .cover-content { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; padding: 90px 80px 200px; z-index: 2; }
+      .slide-foto .hook-box { background: var(--creme); padding: 56px 56px 48px; border-radius: 28px; box-shadow: 0 24px 60px rgba(0,0,0,0.35); text-align: left; max-width: 920px; }
+      .slide-foto .hook-box .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 30px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--petrol); margin-bottom: 20px; }
+      .slide-foto .hook-box .hook { font-family: "Philosopher"; font-weight: 700; font-size: 92px; line-height: 1.05; color: var(--dunkelblau); margin-bottom: 22px; }
+      .slide-foto .hook-box .hook .pop { color: var(--petrol); font-style: italic; }
+      .slide-foto .hook-box .sub { font-family: "Source Sans 3"; font-weight: 400; font-style: italic; font-size: 38px; line-height: 1.4; color: var(--text); opacity: 0.85; }
+      .slide-foto .brand-footer-foto { position: absolute; bottom: 50px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(255,255,255,0.85); letter-spacing: 0.08em; text-shadow: 0 2px 6px rgba(0,0,0,0.7); z-index: 3; }
     </style>
   </head>
   <body>
 
-    <!-- ===================== SLIDE 1 — HOOK ===================== -->
-    <div class="slide">
-
-      <div class="top-block">
-        <div class="eyebrow">Sonntag, 21 Uhr</div>
-        <div class="hook">du checkst<br/>nochmal <span class="pop">Insta</span></div>
-        <div class="sub">&mdash; während dein Mann TV schaut und du eigentlich schlafen wolltest.</div>
-      </div>
-
-      <div class="bottom-block">
-        <div class="swipe"><span>Weiter</span><span class="arrow">&rarr;</span></div>
-        <div class="brand-footer">
-          <span>@mum.life.balance</span>
-          <span>1 / 2</span>
+    <!-- ===================== SLIDE 1 — HOOK (FOTO-COVER) ===================== -->
+    <div class="slide slide-foto">
+      <img class="cover-bg" src="assets/cover-foto.jpg" alt="" />
+      <div class="cover-overlay"></div>
+      <div class="cover-content">
+        <div class="hook-box">
+          <div class="eyebrow">Sonntag, 21 Uhr</div>
+          <div class="hook">du checkst<br/>nochmal <span class="pop">Insta</span></div>
+          <div class="sub">&mdash; während dein Mann TV schaut und du eigentlich schlafen wolltest.</div>
         </div>
       </div>
-
+      <div class="brand-footer-foto">
+        <span>@mum.life.balance</span>
+        <span>1 / 2</span>
+      </div>
     </div>
 
     <!-- ===================== SLIDE 2 — SZENE + CTA ===================== -->

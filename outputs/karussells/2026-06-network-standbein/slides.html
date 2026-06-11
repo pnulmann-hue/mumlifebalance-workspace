@@ -18,10 +18,17 @@
       .footer { position: absolute; bottom: 50px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(12, 28, 48, 0.55); letter-spacing: 0.08em; z-index: 5; }
       .bg-petrol .footer { color: rgba(255, 255, 255, 0.7); }
 
-      /* SLIDE 1 — HOOK PETROL */
-      .s1 { justify-content: center; align-items: flex-start; text-align: left; color: #fff; }
-      .s1 .hook { font-family: "Philosopher"; font-weight: 700; font-size: 96px; line-height: 1.08; color: #fff; }
-      .s1 .hook .pop { font-style: italic; opacity: 0.95; }
+      /* SLIDE 1 — FOTO + PETROL-BOX */
+      .s1-foto { padding: 0 !important; background: #000 !important; }
+      .s1-foto .cover-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; z-index: 0; }
+      .s1-foto .cover-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,28,48,0) 0%, rgba(12,28,48,0.15) 50%, rgba(12,28,48,0.5) 100%); z-index: 1; }
+      .s1-foto .top-band { position: absolute; top: 70px; left: 80px; z-index: 3; }
+      .s1-foto .top-band .label { font-family: "Source Sans 3"; font-weight: 700; font-size: 26px; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; display: inline-block; padding: 14px 24px; background: var(--dunkelblau); border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+      .s1-foto .hook-card { position: absolute; left: 60px; right: 60px; bottom: 150px; background: var(--petrol); padding: 48px 52px 44px; border-radius: 28px; box-shadow: 0 22px 56px rgba(0,0,0,0.45); z-index: 4; color: #fff; }
+      .s1-foto .hook-card .hook { font-family: "Philosopher"; font-weight: 700; font-size: 72px; line-height: 1.06; color: #fff; }
+      .s1-foto .hook-card .hook .pop { font-style: italic; color: var(--orange); }
+      .s1-foto .hook-card .sub { font-family: "Source Sans 3"; font-weight: 600; font-size: 28px; letter-spacing: 0.06em; color: rgba(255,255,255,0.9); margin-top: 14px; text-transform: uppercase; }
+      .s1-foto .footer { bottom: 60px; color: rgba(255,255,255,0.92); text-shadow: 0 2px 6px rgba(0,0,0,0.7); z-index: 4; }
 
       /* SLIDE 2 — SPANNUNG CREME */
       .s2 { justify-content: center; }
@@ -60,9 +67,14 @@
   </head>
   <body>
 
-    <div class="slide bg-petrol s1">
-      <div class="eyebrow">Vom Network zum eigenen</div>
-      <div class="hook">Wie aus deinem<br/><span class="pop">Network</span><br/>ein eigenes Standbein wird</div>
+    <div class="slide s1-foto">
+      <img class="cover-bg" src="assets/cover-foto.jpg" alt="Patricia" />
+      <div class="cover-overlay"></div>
+      <div class="top-band"><span class="label">Vom Network zum eigenen</span></div>
+      <div class="hook-card">
+        <div class="hook">Wie aus deinem <span class="pop">Network</span> ein eigenes Standbein wird</div>
+        <div class="sub">Mum Business Academy — Pilot</div>
+      </div>
       <div class="footer"><span>@mum.life.balance</span><span>Swipe →</span></div>
     </div>
 
