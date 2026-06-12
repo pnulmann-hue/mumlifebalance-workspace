@@ -22,7 +22,7 @@ Säule 4 baut direkt auf dem auf, was die Mentee bis hierher erarbeitet hat. Die
 - **6 Lebens-Bereiche** (aus S3) — die Brille, durch die der Bot deine Woche sortiert.
 - **4-Filter „Automatisieren"** (aus S2 L2.4) — die Aufgaben, die du dort als „automatisieren" markiert hast, kriegen hier ihren Helfer.
 - **5 CEO-Aufgaben „nur du"** (aus S1 L1.4) — die Grenze, was du NIE an eine KI abgibst (Vision, Entscheidungen, Brand, Beziehungen, Reflexion). Kommt in L4.6 als Mensch-vs-Maschine-Linie zurück.
-- **Hütchen-Inventar** (aus S2 L2.3) — daraus ziehst du, welcher Adminkram dich erdrückt und an die KI darf.
+- **Hütchen-Inventar / Brain Dump** (aus S2 L2.3) — das ist die direkte Quelle für deinen Haushalts-Helfer-Bot in L4.5. Deine ganzen „muss ich noch"-Sachen (Staubsaugen montags, Frühlingskleider raussuchen Ende März) wandern in eine Notion-Haushalts-Liste, aus der der Bot dich täglich erinnert.
 
 ---
 
