@@ -4,11 +4,12 @@ tags: [produkt, mama-ceo, saeule-4]
 
 # Säule 4 — Du delegierst den Adminkram (Wochen 5-6)
 
-> **Versprechen am Ende der Säule:** „Ich hab jetzt zwei KI-Mitarbeiter, die mir den Adminkram abnehmen — im Business und zu Hause. Mein Morgenbriefing kommt von der KI, mein Kochchaos ist gelöst, und ich weiss genau, was ich selbst mache und was die Maschine übernimmt."
+> **Versprechen am Ende der Säule:** „Ich hab jetzt zwei KI-Mitarbeiter, die mir den Adminkram abnehmen — einen fürs Business und einen fürs Zuhause. Mein Morgenbriefing kommt von der KI, mein Haushalts-Mental-Load liegt nicht mehr in meinem Kopf, und ich weiss genau, was ich selbst mache und was die Maschine übernimmt."
 >
 > **🎯 Kern-Payoff:** In Säule 3 hast du dein Notion-Business-Brain gebaut. Jetzt setzen wir Helfer drauf, die da reinschauen und dir Arbeit abnehmen — ohne dass du programmieren können musst. Das Versprechen ist nicht „werde Tech-Nerd", sondern „hör auf, Sachen selbst zu machen, die eine gut gebriefte KI dir abnehmen kann". Und das Wichtigste lernst du gleich zu Beginn: KI ist kein Zauber, sondern eine Praktikantin, die nur so gut ist wie dein Auftrag.
+> **Die zwei Bots sind Zwillinge:** Der **Cockpit-Bot** liest deine Notion-Business-Planung und sagt dir morgens, was im Business dran ist. Der **Haushalts-Helfer-Bot** liest deine Haushalts-Liste (dein Brain Dump aus Säule 2) und sagt dir morgens, was zu Hause dran ist — Wäsche, Zahnarzt-Termin, Kind muss früher los. Gleiche Mechanik, einmal Business, einmal Familie.
 > **6 Lektionen · ~85 Min Video · Arbeitsblatt + Live-Call 3 (Ende W6, Bot-Bau-Werkstatt · 120 Min)**
-> **2 Boni im Preis:** Cockpit-Bot-System-Prompt + Kochassistent-System-Prompt (fertige Vorlagen zum Anpassen)
+> **2 Boni im Preis:** Cockpit-Bot-System-Prompt + Haushalts-Helfer-Bot-System-Prompt · **1 Extra-Bonus:** Kochassistent-System-Prompt (fertige Vorlagen zum Anpassen)
 
 ---
 

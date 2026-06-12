@@ -9,6 +9,7 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 ## Dateien
 
 - [[funnel-landkarte]]
+- [[instagram-lead-nurture-mails]]
 
 ### 📁 bio-check
 
