@@ -47,8 +47,8 @@ Und keine Sorge: du musst dafür nichts programmieren können und kein Tech-Geni
 Am Ende dieser 2 Wochen:
 ✓ Du verstehst, warum KI kein Zauber ist, sondern eine Praktikantin, die nur so gut ist wie dein Auftrag — und warum „KI bringt mir nichts" fast immer am Input liegt
 ✓ Du hast deinen Business-Brief geschrieben — das einmal festgehaltene Wissen, das jeder deiner Bots braucht
-✓ Du hast deinen Cockpit-Bot gebaut — dein persönliches Morgenbriefing, das in dein Notion schaut und dir sagt, was heute dran ist
-✓ Du hast deinen Kochassistenten gebaut — der dir den Mental Load „was koch ich heute" abnimmt, mit Wochenplan und Einkaufsliste
+✓ Du hast deinen Cockpit-Bot gebaut — dein persönliches Business-Morgenbriefing, das in dein Notion schaut und dir sagt, was heute dran ist
+✓ Du hast deinen Haushalts-Helfer-Bot gebaut — der deine ganze „muss ich noch"-Liste trägt und dich morgens erinnert, was zu Hause und für die Kinder ansteht
 ✓ Du weisst glasklar, was die KI macht und was deins bleibt — die Grenze zwischen Mensch und Maschine
 
 Live-Call 3 (Ende W6): Bot-Bau-Werkstatt · 120 Min · wir bauen gemeinsam, und wer irgendwo hängt, kriegt hier seine Lösung.
@@ -57,7 +57,8 @@ Live-Call 3 (Ende W6): Bot-Bau-Werkstatt · 120 Min · wir bauen gemeinsam, und 
 **Modul-Downloads (für die ganze Säule):**
 - 📋 **Arbeitsblatt Säule 4** → Datei: `mama-ceo-arbeitsblatt-saeule-4.docx`
 - 🌅 **Cockpit-Bot-Vorlage** (System-Prompt zum Anpassen, Bonus) → wird in Lektion 4.4 eingesetzt
-- 🍳 **Kochassistent-Vorlage** (System-Prompt zum Anpassen, Bonus) → wird in Lektion 4.5 eingesetzt
+- 🏠 **Haushalts-Helfer-Bot-Vorlage** (System-Prompt zum Anpassen, Bonus) → wird in Lektion 4.5 eingesetzt
+- 🍳 **Kochassistent-Vorlage** (System-Prompt, Extra-Bonus) → optionale Erweiterung, kurz in L4.5 erwähnt
 
 ---
 
@@ -85,7 +86,7 @@ Du lernst:
 → Warum „Müll rein, Müll raus" die wichtigste KI-Regel überhaupt ist
 → Warum meine 13 Helfer funktionieren — und es nichts mit Programmieren zu tun hat
 → Die 3 Dinge, die jeder gute KI-Auftrag braucht (Kontext, klare Aufgabe, Beispiel)
-→ Den Fahrplan für Säule 4: zwei KI-Mitarbeiter, die wir gemeinsam bauen
+→ Den Fahrplan für Säule 4: zwei KI-Mitarbeiter, einer fürs Business und einer fürs Zuhause
 
 Das hier ist die wichtigste Lektion der ganzen Säule, weil alles andere darauf aufbaut. Wenn du das verstehst, ist der Rest nur noch umsetzen.
 ```
