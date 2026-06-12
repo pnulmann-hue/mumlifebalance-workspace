@@ -22,12 +22,16 @@ Drei Dinge sauber getrennt halten:
 3 THEMEN-WELTEN                       MID-TICKET (333)        TOP (Bundle)
 ──────────────                       ─────────────────        ────────────
 🟢 Sichtbarkeit/Instagram  ─┐
-   (Bio-Check, Lead-Ch.,    │─► Instagram-Kundenmaschine ─┐
-    Starterguide, Story…)   │                             │
+   (Bio-Check, Starterguide,│─► Instagram-Kundenmaschine ─┐
+    Story-Challenge)        │                             │
                             │                             │
 🟡 Zeit/Struktur (Mama-CEO)─┼─► Mama-CEO ─────────────────┼─►  🎥 WEBINAR ─► 🎓 MBA
-                            │                             │    (Evergreen      (997/
-🟣 Digitale Produktwelt  ───┘─► Digitale Produktwelt ─────┘     + Bootcamp)     1347)
+   (noch kein Freebie!)     │                             │    (Evergreen      (997/
+                            │                             │     + Bootcamp)     1347)
+🟣 Digitale Produktwelt  ───┘─► Digitale Produktwelt ─────┘
+   (Lead-Challenge, Businessfahrplan)
+
+   🔵 Von 0 auf echt = Foundation (theme-neutral) → routet via Quiz/Nurture ins Thema
 ```
 
 **Wichtig — kein 3-fach-Angebot:** Jede Person sieht nur **ihre** Treppe, also genau **einen** 333-Kurs + die MBA als „alles zusammen". Keine Qual der Wahl.
@@ -138,17 +142,25 @@ Der **Potenzial-Test (52)** ist ideal, um Leute mit unklarem Thema einzusortiere
 
 ---
 
-## 5. ⚠️ Strategische Lücke (wichtig!)
+## 5. Freebie → Treppe (verifiziert aus `context/patricia-freebies.md`)
 
-Deine Freebies sind **stark Instagram-lastig**. Für 3 volle Treppen fehlt Futter:
+Zuordnung anhand der dokumentierten **Next-Steps** + **Pillars** je Freebie:
 
-| Thema | Feeder-Freebies heute | Status |
+| Freebie (Keyword) | Treppe | Beleg aus den Freebie-Notizen |
 |---|---|---|
-| 🟢 Sichtbarkeit/Instagram | Bio-Check, Lead-Challenge, Starterguide, Story-Challenge, Von 0 auf echt | ✅ stark (5) |
-| 🟡 Zeit/Struktur (Mama-CEO) | Businessfahrplan (lose) | ⚠️ dünn (1) |
-| 🟣 Digitale Produktwelt | — | ❌ keins |
+| Bio-Check (BIO) | 🟢 Instagram | Bio/Profil-Optimierung |
+| Starterguide (SICHTBAR) | 🟢 Instagram | Profil-Aufbau · Next-Step IG-Kundenmaschine |
+| Story-Challenge (STORY) | 🟢 Instagram | Stories · Next-Step IG-Kundenmaschine |
+| Lead-Challenge (LEAD) | 🟣 Digitale Produktwelt | Leadmagnet/eigenes Produkt bauen · Next-Step „Vom Network-Wissen zum eigenen Produkt" · M5 Digitale Produkte |
+| Businessfahrplan (FAHRPLAN) | 🟣 Digitale Produktwelt | hybrides Einkommen (Network + eigene Produkte), Phase 4 = eigene Produkte |
+| Von 0 auf echt (ECHT1) | 🔵 Foundation (theme-neutral) | Positionierung/Start · Next-Step „Finde dein Thema"/„Expertin" → dann ins Thema routen |
+| Potenzial-Test (QUIZ) | 🧭 Router | 4 Ergebnis-Typen (A=Instagram · B=Positionierung · C=Lead/Story · D=Fahrplan) |
 
-**Heisst:** Treppe 1 (Instagram) kann sofort voll laufen. Treppe 2 + 3 werden vorerst v.a. über den **Quiz-Router** + Cross-Sell aus Treppe 1 gefüttert — bis du je ein eigenes Freebie dafür hast (z.B. „Zeit-Audit für Mama-CEOs" und „Dein erstes digitales Produkt in 2 Std"). Kein Blocker, aber gut zu wissen für die Reihenfolge.
+### ⚠️ Lücke: Mama-CEO (🟡 Zeit/Struktur) hat KEIN Feeder-Freebie
+Keines deiner Freebies adressiert Zeit/Überforderung/Struktur. Treppe 2 wird vorerst nur über den **Quiz (Typ C/D)** + Cross-Sell gefüttert. → Eigenes Freebie empfohlen (z.B. „Zeit-Audit für Mama-CEOs").
+
+✅ **Treppe 1 (Instagram)** = Bio-Check, Starterguide, Story-Challenge — sauber, sofort baubar.
+🟣 **Treppe 3 (Produktwelt)** = Lead-Challenge, Businessfahrplan — auch gut gefüttert.
 
 ---
 
