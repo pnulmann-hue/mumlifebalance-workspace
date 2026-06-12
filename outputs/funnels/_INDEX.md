@@ -8,6 +8,7 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 
 ## Dateien
 
+- [[funnel-landkarte]]
 
 ### 📁 bio-check
 
