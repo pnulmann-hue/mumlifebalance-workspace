@@ -282,7 +282,8 @@ Patricia-Entscheidungen 2026-05-21:
 - `outputs/produkte/mama-ceo/10-saeule-1-MASTER.md` — Säule 1 mit ThriveCart + Folien + Arbeitsblatt
 - `outputs/produkte/mama-ceo/10-saeule-2-MASTER.md` — Säule 2 mit ThriveCart + Folien + Arbeitsblatt
 - `outputs/produkte/mama-ceo/10-saeule-3-MASTER.md` — Säule 3 mit ThriveCart + Folien + Arbeitsblatt ✅ (2026-06-04)
-- (kommt) `outputs/produkte/mama-ceo/10-saeule-4-MASTER.md` · `10-saeule-5-MASTER.md`
+- `outputs/produkte/mama-ceo/10-saeule-4-MASTER.md` — Säule 4 mit ThriveCart + Folien + Arbeitsblatt + 2 Bot-Vorlagen ✅ (2026-06-12)
+- (kommt) `outputs/produkte/mama-ceo/10-saeule-5-MASTER.md`
 - `context/Kurse/Kurse alte Positionierung/Mama Balance Meisterkurs/` — Hauptmaterial-Quelle
 - `context/Kurse/Kurse alte Positionierung/Familienorga for real/` — Quiz-Quelle für S2 L2.5
 - Memory: `feedback_KRITISCH-mama-ceo-outline-verbindlich.md` · `project_mama-ceo-modulbau.md`

@@ -2,10 +2,10 @@
 tags: [produkt, mama-ceo, handoff]
 ---
 
-# Mama-CEO — Handoff (Stand 2026-06-11)
+# Mama-CEO — Handoff (Stand 2026-06-12)
 
 > **START HIER in einer neuen Session.** Diese Datei ersetzt den alten April-Handoff. Sie hält fest, wo wir bei Mama-CEO stehen, was offen ist und wie du nahtlos weitermachst.
-> **Einstieg:** `/produkt` (Onlinebusiness → Mama-CEO weiterbauen) ODER direkt diese Datei + `10-saeule-3-MASTER.md` lesen.
+> **Einstieg:** `/produkt` (Onlinebusiness → Mama-CEO weiterbauen) ODER direkt diese Datei + `10-saeule-4-MASTER.md` lesen.
 
 ---
 
@@ -13,7 +13,34 @@ tags: [produkt, mama-ceo, handoff]
 
 - **Pilot läuft seit 1.6.2026** mit **5 Käuferinnen** (Andrea Werro war 1. Buchung 20.5.).
 - **Säule 1, 2, 3 sind komplett** (gebaut + Säule 3 aufgenommen + transkribiert + ins Kurs-Wissen gesynct).
-- **Nächster grosser Brocken: Säule 4** (KI-Agenten / Cockpit-Bot), danach Säule 5.
+- **Säule 4 MASTER ist fertig gebaut** (2026-06-12) — Folien-Pläne + Sprechnotizen + Arbeitsblatt-Spec für alle 6 Lektionen + 2 Bonus-Bot-Vorlagen. PPTX-Bau + Aufnahme noch offen. → `10-saeule-4-MASTER.md`
+- **Danach: PPTX bauen für Säule 4** (analog Säule 3), dann Säule 5.
+
+---
+
+## ✅ Säule 4 — MASTER FERTIG (Stand 2026-06-12)
+
+**Datei:** `outputs/produkte/mama-ceo/10-saeule-4-MASTER.md`
+
+**6 Lektionen vollständig spezifiziert** (ThriveCart-Texte + Folien-Plan mit Sprechnotizen + Arbeitsblatt-Sektion):
+- 4.1 KI-Mythos vs. Realität (Input ist alles) · 9 Folien
+- 4.2 Welches Tool für was · 8 Folien
+- 4.3 Business-Brief schreiben · 9 Folien
+- 4.4 Cockpit-Bot bauen (Live-Demo) · 12 Folien — **2-Stufen:** Stufe 1 Claude-Project/GPT für alle, Stufe 2 Telegram nur Ausblick
+- 🌟 4.5 MASTERY Kochassistent (Live-Demo) · 14 Folien — Familien-Bot bleibt separater Bonus
+- 4.6 KI-Wochenplan Mensch vs. Maschine · 9 Folien — Brücke zu Säule 5
+
+**2 Bonus-System-Prompts im Master spezifiziert:** Cockpit-Bot (L4.4) + Kochassistent (L4.5), copy-paste-ready mit Platzhaltern.
+
+**Patricia-Entscheidungen 2026-06-12:** Cockpit-Bot = 2-Stufen-Modell · Kochassistent live + Familien-Bot separat.
+
+### 🔲 Säule-4-TODOs (noch offen)
+1. **2 Detailfragen bestätigen** (siehe Master „Offene Fragen"): Tool-Festlegung in L4.2 (beide nennen vs. eins) · Ads-Diagnose im Cockpit-Bot-Prompt weglassen (aktuell ja, Mentee-tauglich) · Familien-Bot-Bonus-Page jetzt oder später.
+2. **6 PPTX bauen** (python-pptx, Säule-4-Look) — wie Säule 3.
+3. **Arbeitsblatt `mama-ceo-arbeitsblatt-saeule-4.docx`** bauen (6 Sektionen aus Master).
+4. **`13-thrivecart-saeule-4-setup.md`** bauen (analog Säule 3).
+5. **2 Bonus-Vorlagen als .md/.txt** zum Download exportieren (Specs liegen im Master).
+6. **L4.4 + L4.5 sind Live-Demos** — Patricia braucht Screenshare + die 2 Vorlagen offen beim Aufnehmen.
 
 ---
 
@@ -93,7 +120,9 @@ Patricia will am Ende von Säule 3 eine Lektion **„So geht's weiter"** mit Cro
 - → **„So geht's weiter"-Abschluss-Lektion** schreiben (Titel + Beschreibungstext + Buttons) und ins `13-thrivecart-saeule-3-setup.md` ergänzen.
 - → Notion-Link in 3.5-Text einbauen (sobald Patricia ihn schickt).
 
-**Danach: Säule 4 (KI-Agenten).** Outline steht in `01-inhaltsverzeichnis-v4-FINAL-5-saeulen.md` (L4.1–4.6: KI-Mythos · Tools · Business-Brief · Cockpit-Bot · MASTERY Haushalts-Helfer-Bot · KI-Wochenplan). Der Cockpit-Bot liest genau das Notion-Template (Tagesplaner + Aufgaben „Offen"), das wir in Säule 3 gebaut haben.
+**Säule 4 MASTER ist seit 2026-06-12 fertig** (`10-saeule-4-MASTER.md`). Nächster Schritt dort: die 2 Detailfragen bestätigen, dann **6 PPTX + Arbeitsblatt + ThriveCart-Setup + 2 Bonus-Vorlagen** bauen (Säule-4-TODOs oben). Der Cockpit-Bot liest genau das Notion-Template (Tagesplaner + Aufgaben „Offen"), das wir in Säule 3 gebaut haben.
+
+**Danach: Säule 5** (Mama-CEO-Matrix · 25 Tasks · 90-Tage-Plan) — `10-saeule-5-MASTER.md` noch zu bauen. L4.6 ist bereits die Brücke dahin.
 
 ---
 
