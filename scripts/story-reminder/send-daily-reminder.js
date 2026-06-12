@@ -456,17 +456,29 @@ async function main() {
   const briefingPendingPath = path.join(REPO_ROOT, 'outputs', 'stories', '_state', 'briefing-pending.json');
 
   const storyPlanPath = path.join(REPO_ROOT, 'outputs', 'produkte', 'mba-launch', 'story-plan.json');
+  const juliaKalenderPath = path.join(REPO_ROOT, 'context', 'julia-launch-kalender.json');
 
-  const [activeFunnels, wochenLog, wochenKontext, override, storyPlan] = await Promise.all([
+  const [activeFunnels, wochenLog, wochenKontext, override, storyPlan, juliaKalender] = await Promise.all([
     readJsonSafe(activeFunnelsPath),
     readJsonSafe(wochenLogPath),
     readJsonSafe(wochenKontextPath),
     readJsonSafe(overridePath),
     readJsonSafe(storyPlanPath),
+    readJsonSafe(juliaKalenderPath),
   ]);
 
   // 🚀 MBA-Launch-Modus: Wenn heute ein Tag im Launch-Story-Plan ist, hat das VORRANG.
-  const launchTag = storyPlan?.tage?.[dateInfo.datum_iso] || null;
+  // ACHTUNG: storyPlan.tage ist ein ARRAY → heutigen Eintrag per Datum suchen (NICHT per Key indizieren).
+  const launchTag = Array.isArray(storyPlan?.tage)
+    ? (storyPlan.tage.find(t => t?.datum === dateInfo.datum_iso) || null)
+    : null;
+  // Julia-Vorlage des heutigen Tags expandieren (Name + Aufbau-Anleitung + Slide-Bogen aus dem Launch-Kalender).
+  const launchVorlage = launchTag && juliaKalender?.vorlagen
+    ? (juliaKalender.vorlagen[launchTag.julia_vorlage] || null)
+    : null;
+  const launchPhaseInfo = launchTag && juliaKalender?.phasen
+    ? (juliaKalender.phasen[launchTag.phase] || null)
+    : null;
 
   // 📅 Wochenplan + 📆 Monatsplan der aktuellen Periode LIVE aus Notion (statt aus Funnel-Status zu raten).
   const notionWoche = await fetchNotionWoche(dateInfo.datum_iso);
@@ -522,11 +534,11 @@ async function main() {
     : (modus === 'sales-day' ? '🔥 Sales-Day (Launch aktiv)' : '📅 Tagesplan');
 
   const launchBlock = launchTag ? `🚀 <b>HEUTE IM MBA-LAUNCH</b> — Phase: ${launchTag.phase}
-<b>Story:</b> ${launchTag.story_typ}
+<b>Titel:</b> ${launchTag.titel}
+<b>Ziel der Story:</b> ${launchTag.story_ziel}
+<b>Vorlage heute:</b> ${launchVorlage?.name || launchTag.julia_vorlage}${launchVorlage?.slide_bogen ? `\n<b>Slide-Bogen:</b> ${launchVorlage.slide_bogen}` : ''}${launchVorlage?.julia_anleitung ? `\n<b>So baust du sie:</b> ${launchVorlage.julia_anleitung}` : ''}
 <b>Käufertyp heute:</b> ${launchTag.kaeufertyp}
-<b>Das soll rein:</b> ${launchTag.inhalt}
-<b>CTA:</b> ${launchTag.cta}
-<i>(Julia-Vorlage ${launchTag.beleg} · Bausteine: context/julia-launch-story-bausteine.md)</i>
+<b>CTA:</b> ${launchTag.cta}${launchTag.cta_keyword ? ` <i>(Keyword ${launchTag.cta_keyword})</i>` : ''}
 
 —
 
@@ -588,6 +600,7 @@ ${vorschlagBlock}${frageBlock}
     vorschlag_idee: vorschlagRoh,
     wochen_fokus_quelle: notionWoche ? 'notion-live' : 'fallback',
     launch_tag: launchTag,
+    launch_vorlage: launchVorlage,
     kontext_snapshot: {
       kw: dateInfo.kw,
       wochentag: dateInfo.wochentag,
