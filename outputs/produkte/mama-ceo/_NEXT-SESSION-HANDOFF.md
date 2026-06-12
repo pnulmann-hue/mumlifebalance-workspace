@@ -1,118 +1,110 @@
 ---
-tags: [produkt]
+tags: [produkt, mama-ceo, handoff]
 ---
 
-# Mama-CEO — Handoff für nächste Session
+# Mama-CEO — Handoff (Stand 2026-06-11)
 
-**Stand: 2026-04-30 abends · Patricia geht schlafen**
-
----
-
-## Patricias Auftrag für die nächste Session
-
-> „Ich möchte gerne, dass du den gesamten Kursaufbau nochmals von 0 prüfst anhand der neuen Unterlagen und auch die Marktrecherche nochmals sauber machst und mir das Ergebnis zeigst."
-
-**Heißt konkret:** Re-Evaluation des Mama-CEO-Kurses (Briefing, Markt-Research, Modul-Outline, Validierungs-Plan) — diesmal **fundiert mit den heute eingetroffenen Mentoren-Quellen**, nicht aus der Hüfte.
+> **START HIER in einer neuen Session.** Diese Datei ersetzt den alten April-Handoff. Sie hält fest, wo wir bei Mama-CEO stehen, was offen ist und wie du nahtlos weitermachst.
+> **Einstieg:** `/produkt` (Onlinebusiness → Mama-CEO weiterbauen) ODER direkt diese Datei + `10-saeule-3-MASTER.md` lesen.
 
 ---
 
-## Was heute (2026-04-30) erreicht wurde
+## 📍 Wo wir stehen
 
-### Mentoren-Wissensbasis ist endlich auf GitHub
-
-Nach längerem Push-Theater (4.32 GB → reduziert auf 950 MB durch Auslassen der 9 Files >100 MB) liegen jetzt **245 Files** im Repo unter `reference/`:
-
-| Mentor | Files | Inhalt |
-|---|---|---|
-| **Aurachirurgie** | 34 | Geld-Mindset-Transkripte (Geld kreieren, Ich bin diszipliniert, Universum kennt kein nein, Aurafeld Cleaning, Disziplin-Mindset etc.) |
-| **Brandastic** | 18 | Brand Story Maxi, Epiphany Bridge Skript, Markenkern, Persönlichkeitstypen + AIDA, Email-Sequenzen, Webinar-Vorlage, Hook/Headline-Beispiele |
-| **Elke Mayr** | 45 | Contentselling (4 Module + 6 Baukästen), Teamaufbauchallenge (30 Tage), Finde dein Thema fürs Network |
-| **Karriere Mum** | 29 | Workbooks: Zielgruppe, USP, Elevator-Pitch, Wertekompass, Glaubenssätze, MoneyMindset, Manifest, Hütchenspiel, Eisenhower-Pareto, Habit-Tracker, Hashtagwunder |
-| **awaken a star** | 63 | Sales-Skript ATS, Lieblingskundin, Hölle-Himmel-Avatar, SPIN, Einwandbehandlung, Heldengeschichte, Werbetexte, Kommunikationskompass |
-| **Networkmarketing-Training** | 6 | 5-Tage-Workbook + Fahrplan |
-| **Workbookkurs** | 9 | Rauhnächte-Material (Sonja Kopplin) |
-| **Nadja Grunenberg** | 3 | Social Media Kalender + Story Prompts |
-| **GO VIRAL** | 3 | Präsentations-PDFs (ohne den 104 MB Workbook Reel) |
-| **julia-trost** | komplett <100 MB | 30+ PDFs + 818 Transkripte + methodik.md |
-
-### Was NICHT im Repo ist (Files >100 MB — GitHub-Limit)
-
-Diese 9 Files liegen nur auf Patricias Desktop (`C:\Users\pnulm\Desktop\Mein Business\reference\`):
-
-- `GO VIRAL/GO VIRAL - Workbook Reel.pdf` (104 MB)
-- `julia-trost/Launch Queen.pdf` (1.4 GB) ← Riesen-File, vermutlich Video-Aufzeichnung
-- `julia-trost/Launch Queen (1).pdf` (1.1 GB)
-- `julia-trost/alle unterlagen julia trost.pdf` (235 MB)
-- `julia-trost/Das ultimative VML Workbook.pdf` (218 MB)
-- `julia-trost/Vorlagen Story LML.pdf` (149 MB)
-- `julia-trost/31_Verkaufsstrategienneu[1].pdf` (149 MB)
-- `julia-trost/Produktkommunikation - Produkttreppe_Zusammenführen.pdf` (127 MB)
-- `julia-trost/Launch queen workbook.pdf` (113 MB)
-
-**Lösung dafür: Lokales Claude Code Setup auf Patricias PC** (nicht heute geschafft):
-1. Node.js LTS von https://nodejs.org/ installieren
-2. PowerShell: `npm install -g @anthropic-ai/claude-code`
-3. PowerShell: `cd "C:\Users\pnulm\Desktop\Mein Business"` → `claude` starten
-4. Dann hat Claude direkten Filesystem-Zugriff auf alle Riesen-Files
-
-### Branch-Status
-
-- **`main`** — `533af24 Mentoren-Wissensbasis ohne Files >100 MB` (gepusht ✅)
-- **`claude/build-product-page-WjrId`** — `2a4a54f Merge remote-tracking branch 'origin/main'` (gepusht ✅)
-
-Auf dem WjrId-Branch arbeiten wir am Mama-CEO. Mentoren sind dort verfügbar.
-
-### Bereits vorhandene Mama-CEO-Materialien (werden geprüft, nicht verloren)
-
-- `00-briefing.md` — umfangreich (Transformation, Avatar, Format, Preise, Umsatz-Beitrag)
-- `00-markt-research.md` — 139 Zeilen (DACH-Mama-Quellen, vor Mentoren-Zugriff erstellt)
-- `01-modul-outline.md` — 251 Zeilen (5 Module, 23 Lektionen, Aufnahme-Plan, Pilot-Empfehlung Modul 1)
-- `02-validierung.md` — 386 Zeilen (Story-Umfrage + DM-Sequenz)
-
-Diese Dateien werden in der Re-Evaluation **geprüft + ggf. überarbeitet**, nicht überschrieben.
+- **Pilot läuft seit 1.6.2026** mit **5 Käuferinnen** (Andrea Werro war 1. Buchung 20.5.).
+- **Säule 1, 2, 3 sind komplett** (gebaut + Säule 3 aufgenommen + transkribiert + ins Kurs-Wissen gesynct).
+- **Nächster grosser Brocken: Säule 4** (KI-Agenten / Cockpit-Bot), danach Säule 5.
 
 ---
 
-## Plan für die nächste Session
+## ✅ Säule 3 — KOMPLETT FERTIG (was wo liegt)
 
-**Empfohlener Einstieg:** Patricia tippt `/produkt` oder ich starte direkt mit dem Re-Eval.
+| Baustein | Pfad |
+|---|---|
+| Master-Doku (Folien-Plan + Sprechnotizen + Arbeitsblatt-Spec) | `outputs/produkte/mama-ceo/10-saeule-3-MASTER.md` |
+| Arbeitsblatt (.docx) | `outputs/produkte/mama-ceo/04-arbeitsblaetter/mama-ceo-arbeitsblatt-saeule-3.docx` |
+| 6 PPTX (Brand-Look 10×5.625, Petrol/Creme, Sprechnotizen) | `outputs/produkte/mama-ceo/03-praesentationen/saeule-3/01–06-lektion-3-*.pptx` |
+| ThriveCart-Setup (alle 6 Beschreibungstexte, copy-paste-ready) | `outputs/produkte/mama-ceo/13-thrivecart-saeule-3-setup.md` |
+| Transkripte der 6 Videos | `context/Kurse/aktuelle kurse/Mama-CEO/Transkripte/12–17-*.txt` |
+| Kurs-Wissen gesynct | `context/patricia-expertise.md` → **Kurs 5: Mama-CEO** (Backup in `context/_archiv/patricia-expertise-2026-06-11.md`) |
 
-### Phase 1 — Mentoren-Quellen sichten (5 Agents parallel, ~10 Min)
-
-1. **Karriere Mum** — Avatar-Tiefe, USP-Methodik, Mindset-Übungen, Inhalts-Risiko (Dopplung)
-2. **Brandastic** — Brand-Story-Frame, Epiphany-Bridge-Storytelling, Käufertypen + AIDA
-3. **awaken a star** — Avatar (Hölle/Himmel), Lieblingskundin, Sales-Skript, SPIN, Einwandbehandlung
-4. **Aurachirurgie** — Geld-Mindset-Reframes (für Modul 5 / Bonus)
-5. **Elke Mayr + Networkmarketing-Training** — Network-spezifische Logik (Contentselling, Teamaufbau, 5-Tage-Mindset-Sprint)
-
-### Phase 2 — Markt-Research 2026 neu (WebSearch, ~10 Min)
-
-- Aktuelle 2026-Trends DACH-Mama-Solopreneurs
-- KI-für-Mamas-Trend (Patricias USP-Anker)
-- Mental-Load + Burnout 2026 (Update zu früheren Quellen)
-- Reddit/Foren: was googelt die Zielgruppe?
-- Konkurrenz-Check: DACH-Mama-Coaches mit ähnlichem Angebot (Mama-CEO/Operations/KI)
-
-### Phase 3 — Synthese (Schreibarbeit, ~30 Min)
-
-- `00-markt-research.md` **neu** schreiben (mit Mentoren-Quellen-Belegen + 2026-WebSearch)
-- `00-briefing.md` **prüfen** — wo Inputs aus Mentoren das Bild schärfen, einarbeiten
-- `01-modul-outline.md` **prüfen** — passt die 5-Modul-Struktur noch? Hero-Modul richtig? Lektions-Tiefe stimmig mit Mentoren-Methodik?
-- **Diff-Empfehlung** für Patricia: alt vs. neu, was ändert sich, was bleibt, warum
-
-### Phase 4 — Patricia-Review
-
-Patricia bekommt die neue Version + Diff vorgelegt, freigibt oder ändert.
+**Hinweis:** Visuelles Rendern der PPTX war lokal nicht möglich (kein LibreOffice) — Inhalts-QA ok, aber Patricia sollte die Folien einmal durchklicken.
 
 ---
 
-## Wichtige Open Items (über Mama-CEO hinaus)
+## 🗂 Notion-Mentee-Master-Template — fertig + verkettet + Beispiel befüllt
 
-1. **Lokales Claude Code Setup** (15 Min) — gibt Patricia dauerhaften Vollzugriff auf ihren Desktop für mich, ohne Push-Theater. Nodes.js installieren ist Schritt 1.
-2. **9 Riesen-Files** (>100 MB) bleiben aussen vor, bis Lokal-Setup steht — oder wir nutzen Git LFS später (kostet ~5 USD/Monat).
+- **Template-Seite:** `3637078e-8b7e-8121-9f95-d2b377b283a7` („🎯 Mama-CEO Master-Template (für Mentees)")
+- **Aufgeräumt** im Business-Brain-Stil (Spalten + Rhythmus-Gruppen: Strategie / Monat / Woche / Tag / Werkzeuge).
+- **4-Stufen-Hierarchie + Ziele + Aufgaben + Content — alles verkettet (DUAL-Relations):**
+
+| DB | data-source-id |
+|---|---|
+| 🗓 Jahresplanung | `e4ea68a9-461a-4823-a082-eca77644e372` |
+| 📅 Monatsplanung | `51b29c0f-aeb2-4ca3-bb3b-f9cb42d7134d` |
+| 📅 Wochenplanung | `96cc031c-6723-4d98-9412-12bea053598d` |
+| 📋 Tagesplaner | `147fa59a-2395-4060-9e92-a7e0947915cc` |
+| ✅ Aufgaben (Hütchen + **Erledigt**-Checkbox + **„📥 Offen"-View**) | `444876d0-5b97-48bf-bd8f-d074882440a5` |
+| 🎯 Ziele | `b4519a3e-c5ff-47c1-bc87-0389118a1c27` |
+| 📝 Content-Management (↔ Woche + Monat verknüpft) | `517d9305-74fa-4bfa-9906-5adc2f66db0a` |
+
+- **Mit Patricias echtem Beispiel befüllt:** Juni 2026 / KW24 (Mo 8.6.–Fr 12.6.) — 2 Jahr-Einträge, Monat Juni, Woche KW24, 5 Tage, 14 Aufgaben (4 abgehakt), 2 Ziele, 2 Content-Einträge. Dient als Demo für Lektion 3.5.
 
 ---
 
-## Tonfall-Notiz für Patricia
+## 🔲 OFFENE TODOs für Patricia (vor Säule-3-Go-Live in ThriveCart)
 
-Patricia hat heute viel Frustration durchlebt (Push-Theater, OneDrive-Locks, PowerShell-Zickereien). Beim Wieder-Einstieg morgen: **direkt loslegen, kein „erinnerst du dich?"** — sie weiss es noch. **Erstes Output: ein klares „Was hab ich heute zu liefern"** in 3-5 Zeilen, dann legt sie los oder gibt frei.
+1. **Notion-Share-Schalter:** Template öffnen → Teilen → „Im Web veröffentlichen" → **„Duplizieren als Vorlage erlauben"** EIN → Link kopieren.
+2. **6 Videos** in ThriveCart Learn+ hochladen (eins pro Lektion 3.1–3.6).
+3. **Arbeitsblatt Säule 3 (.docx)** als Download bei **Lektion 3.1** anhängen.
+4. **Notion-Duplicate-Link** in **Lektion 3.5** einsetzen (Button/Text).
+5. Optional Feinschliff am Template: „Termin Spital" ggf. in „Privat-Termin" umbenennen · Mini-Produkt Juni ergänzen · Wochen-„Fokus-Säule" (steht auf 5-Säulen-Auswahl, nicht Plattform/Produkt/Verkauf).
+
+---
+
+## 🚀 OFFEN: Abschluss-Lektion „So geht's weiter" + Cross-Selling (noch zu bauen)
+
+Patricia will am Ende von Säule 3 eine Lektion **„So geht's weiter"** mit Cross-Sells. Plan steht, Texte noch zu schreiben.
+
+**Verlink-Karte (per Transkript verifiziert, wo sie die Kurse erwähnt):**
+- **Instagram-Kundenmaschine** → erwähnt in 3.1 + 3.3 → Button **unter Lektion 3.3**
+- **Digitale Produktwelt** (= „Vom Network-Wissen zur digitalen Produktwelt") → erwähnt in 3.3 + 3.5 → Button **unter Lektion 3.3**
+- **Beide Signature-Kurse + MBA** → gebündelt in der **Abschluss-Lektion „So geht's weiter"**
+- Notion-„Online Business Brain" (Affiliate, nicht ihr Kurs) → optional als Affiliate-Link
+
+**Alles mit Kundinnen-Rabatt** (ThriveCart-Coupon für Pilot-Käuferinnen, z.B. Code `MAMACEO`).
+
+**⚠️ Vor dem Bau der Abschluss-Lektion von Patricia klären:**
+1. Ist der **MBA-Kauf-/Warteliste-Link** schon live? (MBA-Launch läuft über die PIA-Challenge Ende Juni → Cart Anfang Juli → Start August. Wenn Link noch nicht da → „Warteliste/kommt im Sommer" statt totem Link. Link vorher testen!)
+2. **Upgrade-Preis** für Pilot-Käuferinnen (Mama-CEO ist IM MBA enthalten → sonst zahlen sie doppelt) ODER „du-hast-Mama-CEO-schon"-Frame?
+
+**Button-Namen-Vorschläge (Patricia wählt noch):**
+- 📱 Insta-Kundenmaschine: ⭐„Endlich Kundinnen über Instagram →" / „Content, der wirklich verkauft" / „Zur Insta-Kundenmaschine →"
+- 🛍 Digitale Produktwelt: ⭐„Bau dein eigenes Produkt →" / „Vom Network-Wissen zum eigenen Produkt" / „Zur Digitalen Produktwelt →"
+- 🚀 MBA: ⭐„Alles in einem: die Mum Business Academy →" / „Ich will das Komplett-Paket →" / „Upgrade auf die MBA →"
+- 📂 Notion: ⭐„Template in dein Notion kopieren →" / „Mein Business-Brain duplizieren →"
+- Tipp: Rabatt sichtbar machen (im Button oder Mini-Zeile „Als Mama-CEO-Teilnehmerin vergünstigt") + alle Buttons einheitlich mit `→`.
+
+---
+
+## ▶️ NÄCHSTE SESSION — schneller Einstieg
+
+**Wenn Patricia die offenen Entscheidungen geklärt hat:**
+- → **„So geht's weiter"-Abschluss-Lektion** schreiben (Titel + Beschreibungstext + Buttons) und ins `13-thrivecart-saeule-3-setup.md` ergänzen.
+- → Notion-Link in 3.5-Text einbauen (sobald Patricia ihn schickt).
+
+**Danach: Säule 4 (KI-Agenten).** Outline steht in `01-inhaltsverzeichnis-v4-FINAL-5-saeulen.md` (L4.1–4.6: KI-Mythos · Tools · Business-Brief · Cockpit-Bot · MASTERY Haushalts-Helfer-Bot · KI-Wochenplan). Der Cockpit-Bot liest genau das Notion-Template (Tagesplaner + Aufgaben „Offen"), das wir in Säule 3 gebaut haben.
+
+---
+
+## 🎥 Quelldateien (Aufnahmen Säule 3)
+Zoom-Ordner: `C:\Users\pnulm\OneDrive\Dokumente\Zoom\2026-06-11 08.27.25 Zoom Meeting von Patricia Ulmann`
+(audio1–6.m4a + video1–6.mp4 = Lektion 3.1–3.6, sequenziell. Bereits transkribiert.)
+
+---
+
+## 🔗 Verwandte
+- `outputs/produkte/mama-ceo/01-inhaltsverzeichnis-v4-FINAL-5-saeulen.md` — verbindliche 5-Säulen-Outline
+- `outputs/produkte/mama-ceo/10-saeule-3-MASTER.md` — Säule 3 Detail
+- `context/Kurse/aktuelle kurse/Mama-CEO/_INDEX.md` — Transkript-Index (18 Files)
+- Memory: `project_mama-ceo-modulbau.md` (Update-Block 2026-06-11) · `reference_patricia-notion-planung.md` (DB-IDs)
