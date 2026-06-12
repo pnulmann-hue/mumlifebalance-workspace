@@ -102,8 +102,8 @@ Das hier ist die wichtigste Lektion der ganzen Säule, weil alles andere darauf 
 | 5 | **Müll rein, Müll raus** | Pfeil: vager Auftrag → vages Ergebnis · klarer Auftrag → brauchbares Ergebnis | „Daraus folgt die wichtigste KI-Regel überhaupt: Müll rein, Müll raus. Wenn du vage fragst, kriegst du Vages zurück, und wenn du genau sagst was du brauchst und wer du bist, kriegst du was Brauchbares. Dein Ergebnis ist immer nur so gut wie dein Auftrag, und das ist eine gute Nachricht, weil du den Auftrag in der Hand hast." |
 | 6 | **Warum meine Helfer funktionieren** | Patricia-Frame: „13 Helfer, solo, mit 4 Kindern — kein Tech-Studium" | „Ich sag dir mal ganz ehrlich, warum bei mir so viele KI-Helfer laufen: nicht weil ich programmieren kann oder ein Tech-Genie bin, ich bin Mama von vier Kindern und hab mir das alles selbst beigebracht. Es funktioniert, weil ich gelernt hab, gute Aufträge zu geben. Das kannst du genauso lernen, und genau das machen wir in dieser Säule." |
 | 7 | **3 Dinge für jeden guten Auftrag** | 1. Kontext (wer bin ich) · 2. Klare Aufgabe (was genau) · 3. Beispiel (wie solls aussehen) | „Ein guter KI-Auftrag hat immer drei Zutaten. Erstens Kontext, also wer bist du und für wen arbeitest du. Zweitens eine klare Aufgabe, nicht ‚mach mir Content', sondern ‚schreib mir drei Story-Ideen zum Thema X für Mamas im Network'. Und drittens ein Beispiel, damit sie deinen Stil trifft. Diese drei Dinge bauen wir in den nächsten Lektionen Stück für Stück auf." |
-| 8 | **Der Fahrplan für Säule 4** | 2 Bot-Karten: 🌅 Cockpit-Bot (Morgenbriefing) · 🍳 Kochassistent (Mental Load Haushalt) | „Und das ist unser Fahrplan: wir bauen zwei KI-Mitarbeiter. Den Cockpit-Bot, der morgens in dein Notion schaut und dir sagt was dran ist, und den Kochassistenten, der dir das ewige ‚was koch ich heute' abnimmt. Einer fürs Business, einer fürs Zuhause, weil Adminkram an beiden Orten an dir zerrt." |
-| 9 | **Arbeitsblatt + nächste Lektion** | „📋 Notier deinen letzten frustrierenden KI-Versuch" · „Nächste Lektion: 4.2 — welches Tool für was" | „Im Arbeitsblatt schreibst du kurz auf, wo dich KI bisher genervt hat, denn am Ende der Säule schaust du nochmal drauf und siehst den Unterschied. In der nächsten Lektion klären wir kurz, welches Tool sich wofür eignet, damit du nicht in der Auswahl hängenbleibst. Bis gleich." |
+| 8 | **Der Fahrplan für Säule 4** | 2 Bot-Karten: 🌅 Cockpit-Bot (Business-Morgenbriefing) · 🏠 Haushalts-Helfer-Bot (Mental Load zu Hause) | „Und das ist unser Fahrplan: wir bauen zwei KI-Mitarbeiter, die im Grunde Zwillinge sind. Den Cockpit-Bot, der morgens in dein Notion-Business schaut und dir sagt was dran ist, und den Haushalts-Helfer, der genauso deine Haushalts-Liste im Kopf behält und dir morgens sagt, was zu Hause ansteht, Wäsche, Zahnarzt, Kind früher in die Schule. Einer fürs Business, einer fürs Zuhause, weil der Adminkram an beiden Orten an dir zerrt." |
+| 9 | **Arbeitsblatt + nächste Lektion** | „📋 Notier deinen letzten frustrierenden KI-Versuch" · „Nächste Lektion: 4.2 — womit du arbeitest" | „Im Arbeitsblatt schreibst du kurz auf, wo dich KI bisher genervt hat, denn am Ende der Säule schaust du nochmal drauf und siehst den Unterschied. In der nächsten Lektion klären wir kurz, womit du überhaupt arbeitest, damit du nicht in der Auswahl hängenbleibst. Bis gleich." |
 
 ## Arbeitsblatt-Sektion 4.1
 
@@ -123,83 +123,91 @@ Schreib in eigenen Worten auf, was ein guter KI-Auftrag braucht:
 
 ▸ Was nervt dich am meisten — Business-Adminkram oder Haushalts-Mental-Load?
 ☐ Eher Business (Briefing, Planung, Überblick) → freu dich auf den Cockpit-Bot
-☐ Eher Zuhause (was koch ich, Einkauf, Organisation) → freu dich auf den Kochassistenten
+☐ Eher Zuhause (was steht an, Termine, Haushalt im Kopf) → freu dich auf den Haushalts-Helfer
 ☐ Beides gleich → perfekt, wir bauen beide
 
 WAS DU NACH LEKTION 4.1 HAST
 ✓ Du verstehst KI als Praktikantin, nicht als Zauberkasten
 ✓ Du kennst die Regel „Müll rein, Müll raus"
 ✓ Du kennst die 3 Zutaten für jeden guten Auftrag
-✓ Du kennst den Fahrplan: 2 KI-Mitarbeiter in dieser Säule
+✓ Du kennst den Fahrplan: 2 KI-Mitarbeiter (Business + Zuhause) in dieser Säule
 ```
 
 ---
 
-# 🎬 LEKTION 4.2 — Custom GPT · Claude Project · ChatGPT — was wann
+# 🎬 LEKTION 4.2 — Womit du arbeitest: Projekt oder Claude Code
 
 **Status:** ✅ bestehende Basis (modul-02-lektion-2-3.pptx) · **Folien-Plan hier neu im Säule-4-Stil spezifiziert** · Datei `saeule-04-lektion-4-2.pptx`
-**Material:** Patricias Tool-Stack. **Wichtig für Mentees: Komplexität rausnehmen** — sie brauchen kein Tool-Studium, sondern EINE Empfehlung, mit der sie ihre 2 Bots bauen.
+**Material:** Patricias Tool-Stack + Patricia-O-Ton 2026-06-12. **Wichtig für Mentees: Komplexität rausnehmen.** Patricias Modell: man arbeitet mit einem **Projekt** (Claude oder ChatGPT) ODER mit **Claude Code** — die nackte Chatfunktion ist fürs Business zu statisch. Anweisungen/„Skills" kann man bei Claude UND ChatGPT hinterlegen. **Faktencheck 2026-06-12:** Notion lässt sich bei allen dreien per Connector verbinden (nicht nur Claude Code). Der echte Unterschied ist **reaktiv (Projekt) vs. automatisch (Claude-Code-Bot)** — das ist die 2-Stufen-Logik aus L4.4.
 
 ## ThriveCart-Setup
 
 **Lektion-Titel:**
 ```
-4.2 · Welches KI-Tool für was — ohne dich zu verzetteln
+4.2 · Womit du arbeitest — Projekt oder Claude Code (nicht der nackte Chat)
 ```
 
 **Video-Datei:** `saeule-04-lektion-4-2.mp4` (ca. 10 Min)
 
 **Beschreibungstext:**
 ```
-ChatGPT, Custom GPT, Claude Project — wenn du dich da reinliest, drehst du durch und fängst gar nicht erst an. Genau das verhindert diese Lektion.
+Wenn du dich einliest, stösst du auf ChatGPT, Claude, Projekte, Custom GPTs, Claude Code — und fängst vor lauter Auswahl gar nicht erst an. Das räumen wir hier auf, in einfachen Worten.
 
-Ich nehm dir die Auswahl ab und sag dir klar, womit du als Mama startest und womit du deine zwei Bots aus dieser Säule baust. Kein Tool-Vergleich bis ins letzte Detail, sondern eine Entscheidung, mit der du loslegen kannst.
+Die wichtigste Erkenntnis vorweg: für dein Business reicht der normale Chat nicht, weil er zu statisch ist und dich jedes Mal vergisst. Was du brauchst, ist ein gespeicherter Helfer. Und dafür gibt es zwei Wege — einen einfachen für alle, und einen für später.
 
 Du lernst:
-→ Den Unterschied zwischen einem schnellen Chat und einem gespeicherten Bot — in einfachen Worten
-→ Welches Tool sich für deinen Cockpit-Bot und deinen Kochassistenten eignet
-→ Warum „gespeichert" der ganze Trick ist (du briefst einmal, nicht jeden Tag neu)
-→ Was du dafür ungefähr brauchst (Gratis-Version vs. bezahlt)
+→ Warum der nackte Chat fürs Business nicht taugt — und was stattdessen
+→ Den einfachen Weg: ein Projekt in Claude oder ChatGPT (deine Anweisungen bleiben gespeichert)
+→ Den Profi-Weg: Claude Code, womit du auch automatische Bots baust (kommt in 4.4)
+→ Die Wahrheit zu Notion: alle drei können sich mit Notion verbinden — der Unterschied ist „du fragst" vs. „läuft von selbst"
+→ Was das ungefähr kostet (Gratis-Version vs. bezahlt)
 
-Am Ende weisst du genau, wo du klickst, wenn wir in 4.4 und 4.5 bauen.
+Am Ende weisst du genau, womit du in 4.4 und 4.5 baust.
 ```
 
-## Folien-Plan (8 Folien)
+## Folien-Plan (9 Folien)
 
 | # | Folie | Inhalt | Sprechnotizen |
 |---|---|---|---|
-| 1 | **Titel** | „4.2 · Welches KI-Tool für was" | „In dieser Lektion klären wir kurz die Tool-Frage, und ich halt das bewusst einfach, weil ich nicht will, dass du im Vergleichen hängenbleibst und gar nicht erst anfängst. Am Ende hast du eine klare Empfehlung und kannst loslegen." |
-| 2 | **Das Tool-Chaos** | 3 Logos/Begriffe: ChatGPT · Custom GPT · Claude · daneben „?" | „Wenn du dich ins Thema reinliest, stösst du auf ChatGPT, auf Custom GPTs, auf Claude und Projects, und dann hast du gefühlt zehn Browser-Tabs offen und keine Ahnung mehr, womit du anfängst. Das räumen wir jetzt in fünf Minuten auf." |
-| 3 | **Zwei Sorten KI-Nutzung** | 2 Spalten: SCHNELLER CHAT (einmal fragen, weg) vs. GESPEICHERTER BOT (einmal briefen, immer da) | „Im Grunde gibt es nur zwei Arten, KI zu nutzen. Der schnelle Chat, wo du was fragst und die Antwort wieder vergisst, und der gespeicherte Bot, den du einmal einrichtest und der dein Wissen behält. Für unsere Helfer brauchen wir die zweite Sorte, weil du deinen Cockpit-Bot nicht jeden Morgen neu erklären willst." |
-| 4 | **Der ganze Trick: gespeichert** | Bild: Bot mit „Gedächtnis" · „du briefst einmal, nicht jeden Tag" | „Und das ist der ganze Trick an einem Bot: du gibst ihm einmal dein Wissen mit, deinen Business-Brief, deine Familie, deine Vorlieben, und ab dann weiss er das einfach. Du musst nicht jeden Tag von vorn anfangen, und genau das macht aus einem Spielzeug einen echten Mitarbeiter." |
-| 5 | **Meine klare Empfehlung** | Karte: „Start mit Custom GPT (ChatGPT) ODER Claude Project — beides kann gespeicherte Bots" | „Damit du nicht raten musst: für unsere zwei Bots eignet sich ein Custom GPT in ChatGPT genauso wie ein Claude Project. Beide können genau das, was wir brauchen, nämlich einen Bot mit gespeichertem Wissen. Nimm das, wo du eh schon einen Zugang hast, und bleib dann erstmal dabei." |
-| 6 | **Was kostet das?** | Gratis-Version (zum Reinschnuppern) vs. bezahlt (~20-23/Monat, für gespeicherte Bots) | „Zum Kostenpunkt, ganz ehrlich: die Gratis-Versionen sind super zum Reinschnuppern, aber für eigene gespeicherte Bots brauchst du meistens die bezahlte Version, das sind etwa zwanzig Franken im Monat. Das ist weniger als ein Mittagessen auswärts, und es ersetzt dir Stunden Adminkram. Für mich ist das die beste Investition in meinem ganzen Business." |
-| 7 | **Eins nach dem anderen** | Warnung: nicht 5 Tools parallel · „1 Tool, 2 Bots, dann erweitern" | „Ein Rat aus Erfahrung: fang nicht mit fünf Tools gleichzeitig an. Nimm eins, bau damit deine zwei Bots aus dieser Säule, gewöhn dich dran, und erst wenn das sitzt, schaust du dir was Neues an. Sonst verzettelst du dich, und das ist genau das Hamsterrad, aus dem wir dich rausholen wollen." |
-| 8 | **Arbeitsblatt + nächste Lektion** | „📋 Entscheide dein Tool + leg den Zugang an" · „Nächste Lektion: 4.3 — dein Business-Brief" | „Im Arbeitsblatt triffst du jetzt deine Tool-Entscheidung und legst, falls nötig, deinen Zugang an, damit du in 4.4 sofort bauen kannst. In der nächsten Lektion schreiben wir deinen Business-Brief, das Herzstück, das jeder deiner Bots braucht. Bis gleich." |
+| 1 | **Titel** | „4.2 · Womit du arbeitest" | „In dieser Lektion klären wir, womit du überhaupt arbeitest, und ich halt das ganz einfach, weil ich nicht will, dass du im Vergleichen von zehn Tools hängenbleibst und nie anfängst. Am Ende weisst du genau, wo du baust." |
+| 2 | **Der nackte Chat reicht nicht** | durchgestrichen: normales Chatfenster · „vergisst dich jedes Mal, zu statisch fürs Business" | „Das Erste, was du wissen musst: das normale Chatfenster, wo du was reintippst und morgen ist alles weg, das reicht fürs Business nicht. Es ist zu statisch und vergisst dich jedes Mal. Du willst einen Helfer, der dein Wissen behält, und dafür gibt es zwei Wege." |
+| 3 | **Weg 1: ein Projekt** | Karte: „Projekt in Claude ODER ChatGPT — deine Anweisungen bleiben gespeichert" | „Weg eins, und mit dem starten wir alle, ist ein Projekt. Das gibt es sowohl in Claude als auch in ChatGPT, nimm das wo du eh schon einen Zugang hast. In so ein Projekt hinterlegst du einmal deine Anweisungen, deinen Business-Brief, dein Wissen, und ab dann weiss der Helfer das einfach. Das ist dein gespeicherter Bot, ganz ohne Technik." |
+| 4 | **Weg 2: Claude Code** | Karte: „Claude Code — die Werkbank für automatische Bots (z.B. Telegram)" | „Weg zwei ist Claude Code, und das ist die Profi-Werkbank. Damit baust du nicht nur gespeicherte Helfer, sondern richtige automatische Bots, die von selbst laufen und dir zum Beispiel über Telegram schreiben. Das schauen wir uns in Lektion 4.4 genauer an, hier sollst du nur wissen, dass es das gibt und dass ich damit arbeite." |
+| 5 | **Anweisungen hinterlegen — geht bei beiden** | Claude + ChatGPT Symbole · „deine ‚Skills'/Anweisungen speicherst du bei beiden" | „Ganz wichtig, damit du dich nicht verrückt machst: deine Anweisungen, also das was der Helfer können und beachten soll, kannst du sowohl bei Claude als auch bei ChatGPT hinterlegen. Da nimmt sich keiner viel, beide können das. Es ist also keine Glaubensfrage, sondern nimm das, womit du dich wohlfühlst." |
+| 6 | **Die Wahrheit zu Notion** | 3 Spalten (Claude-Projekt · ChatGPT-Projekt · Claude Code) → alle ✓ Notion-Verbindung · darunter: „Unterschied = du fragst vs. läuft von selbst" | „Und weil das oft falsch erzählt wird: Notion lässt sich mit allen drei verbinden, mit dem Claude-Projekt, dem ChatGPT-Projekt und mit Claude Code. Der Unterschied ist nicht WER Notion lesen darf, sondern WIE. Beim Projekt fragst du und es schaut rein, beim automatischen Claude-Code-Bot läuft das von selbst und er meldet sich bei dir. Genau diese zwei Stufen bauen wir in 4.4." |
+| 7 | **Was kostet das?** | Gratis (zum Reinschnuppern) · bezahlt (~20-23/Monat für gespeicherte Projekte) · Hosting nur bei automatischem Bot (Stufe 2) | „Zum Geld, ganz ehrlich: die Gratis-Versionen sind super zum Reinschnuppern, aber für eigene gespeicherte Projekte brauchst du meistens die bezahlte Version, etwa zwanzig Franken im Monat. Das ist weniger als ein Mittagessen auswärts und ersetzt dir Stunden Adminkram. Nur der automatische Telegram-Bot kostet später noch ein bisschen Hosting extra, aber dazu kommen wir in 4.4." |
+| 8 | **Eins nach dem anderen** | Warnung: nicht 5 Tools parallel · „1 Projekt, 2 Bots, dann erweitern" | „Ein Rat aus Erfahrung: fang nicht mit fünf Sachen gleichzeitig an. Nimm ein Projekt, bau damit deine zwei Helfer aus dieser Säule, gewöhn dich dran, und erst wenn das sitzt, schaust du dir Claude Code oder Neues an. Sonst verzettelst du dich, und das ist genau das Hamsterrad, aus dem wir dich rausholen." |
+| 9 | **Arbeitsblatt + nächste Lektion** | „📋 Entscheide dein Projekt + leg den Zugang an" · „Nächste Lektion: 4.3 — dein Business-Brief" | „Im Arbeitsblatt entscheidest du jetzt, ob du mit Claude oder ChatGPT startest, und legst, falls nötig, deinen Zugang an, damit du in 4.4 sofort bauen kannst. In der nächsten Lektion schreiben wir deinen Business-Brief, das Herzstück, das jeder deiner Helfer braucht. Bis gleich." |
 
 ## Arbeitsblatt-Sektion 4.2
 
 ```
-LEKTION 4.2 · Welches KI-Tool für was
+LEKTION 4.2 · Womit du arbeitest
 
-▸ Deine Tool-Entscheidung (triff sie jetzt, du kannst später wechseln)
-Ich baue meine Bots mit:
-☐ Custom GPT in ChatGPT
-☐ Claude Project
+▸ Deine Entscheidung (triff sie jetzt, du kannst später wechseln)
+Ich baue meine Helfer als Projekt in:
+☐ Claude
+☐ ChatGPT
 ☐ Ich hab schon einen Zugang bei: _______________ → damit starte ich
 
 ▸ Zugang bereit?
 ☐ Account angelegt / vorhanden
-☐ Bezahlte Version aktiv (nötig für eigene gespeicherte Bots)
-☐ Ich weiss, wo ich einen neuen Bot/GPT erstelle (kurz gesucht, gefunden)
+☐ Bezahlte Version aktiv (nötig für eigene gespeicherte Projekte)
+☐ Ich weiss, wo ich ein neues Projekt erstelle (kurz gesucht, gefunden)
+
+▸ Gut zu wissen (häkchen wenn verstanden)
+☐ Der nackte Chat reicht fürs Business nicht — ich nehme ein Projekt
+☐ Anweisungen kann ich bei Claude UND ChatGPT hinterlegen
+☐ Notion verbinden geht bei allen — der automatische Telegram-Bot braucht Claude Code (Stufe 2, später)
 
 ▸ Mein Vorsatz
-„Ich bleib erstmal bei EINEM Tool und bau meine 2 Bots, bevor ich was Neues anschaue." ☐
+„Ich bleib erstmal bei EINEM Projekt und bau meine 2 Bots, bevor ich was Neues anschaue." ☐
 
 WAS DU NACH LEKTION 4.2 HAST
-✓ Du verstehst den Unterschied zwischen schnellem Chat und gespeichertem Bot
-✓ Du hast dein Tool gewählt und den Zugang bereit
-✓ Du weisst, wo du in 4.4/4.5 klickst
+✓ Du verstehst: nackter Chat = zu statisch, Projekt = gespeicherter Helfer
+✓ Du kennst beide Wege: Projekt (für alle) und Claude Code (Profi/automatisch)
+✓ Du weisst, dass Notion bei allen geht — Unterschied ist reaktiv vs. automatisch
+✓ Du hast dein Projekt gewählt und den Zugang bereit
 ```
 
 ---
