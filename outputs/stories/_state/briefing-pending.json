@@ -1,45 +1,39 @@
 {
-  "datum": "2026-06-12",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "kontext_snapshot": {
-        "kw": 24,
-        "wochentag": "Freitag",
-        "datum": "2026-06-12"
-      },
-      "gesendet_am": "2026-06-12T05:24:51.432Z",
-      "telegram_message_id": 700,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "kontext_snapshot": {
-        "kw": 24,
-        "wochentag": "Freitag",
-        "datum": "2026-06-12"
-      },
-      "gesendet_am": "2026-06-12T05:24:51.514Z",
-      "telegram_message_id": 701,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "mentoring",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "8.–14. Juni 2026 (KW 24) — Reichweite (vor Bootcamp-Promo)",
+  "wochen_fokus": "Reine Reichweite + Mama-Identity — noch KEIN Produkt-/Bootcamp-Push (Promo startet KW25). Mentoring-Reels/Posts übers Leben der Zielgruppe (Verzetteln, Schuld-Spirale); doTERRA Reels parallel.",
+  "sales_pattern": "NICHT verkaufen — Aufwärmen/Reichweite. Kein Bootcamp-Link im Feed.",
+  "wochen_cta": "Engagement/Share — kein Verkaufs-Link (z.B. „Teile das in deiner Story\").",
+  "monat_kontext": "Juni = MBA-Launch-Monat — als 5-Tage-PIA-Bootcamp (Pivot 8.6.2026, KEIN Webinar). KW24 Reichweite · KW25–26 Bootcamp-Promo (Anmeldung ab ~15.6.) · KW27 (29.6.–3.7.) Bootcamp LIVE → Cart-Open Fr 3.7., MBA Pioneer 997, Cart-Close tight Anfang Juli, Programmstart August. Verkauf via Bootcamp+Stories+Mails; Feed bleibt programm-frei. Mama-CEO-Pilot-Ladys wechseln Ende Juli in die MBA.",
+  "produkt_themen": {
+    "name": "Story-Challenge (7-Tage-Workbook)",
+    "painpoint": "Keine Story-Strategie → keine Konversion in Stories",
+    "transformation": "7-Tage-Story-Routine",
+    "zielgruppe": "Network-Mamas die Stories nutzen wollen",
+    "pillar": "Instagram-Strategie für NM"
+  },
+  "vorschlag_idee": "Idee: Patricia zeigt einen Screenshot aus ihrem Team-Chat, wo eine Mama schreibt, dass sie \"total verzettelt ist bei der Story-Planung\" — und Patricia erklärt in 3 Slides, warum Mamas ohne Story-Strategie nicht konvertieren (der wunde Punkt des Bootcamps, aber noch subtil).\n\nMuster: Expertise / Fehler-Reframing — sie benennt das Problem konkret (Story = Durcheinander statt System) und gibt einen Mini-Gedanke mit, ohne zu verkaufen.\n\nCTA: \"Teile in deiner Story: Was ist deine grösste Hürde beim Story-Posten?\" (Engagement/Share, kein Link).",
+  "wochen_fokus_quelle": "notion-live",
+  "launch_tag": null,
+  "kontext_snapshot": {
+    "kw": 24,
+    "wochentag": "Freitag",
+    "datum": "2026-06-12"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-06-12T08:47:12.646Z",
+  "telegram_message_id": 709,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
