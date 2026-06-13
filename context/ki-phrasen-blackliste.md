@@ -148,6 +148,8 @@ Das häufigste und hartnäckigste KI-Muster überhaupt. Tarnt sich in vielen For
 
 > **Hinweis — Widerspruch zu Julia-Trost-Sync:** Agent 3 hatte „Stell dir vor..." als zentralen Visualisierungs-Trigger vorgeschlagen. Patricias Blackliste sagt klar **NEIN**. Konflikt-Regel: **Blackliste gewinnt.** Visualisierung muss ohne diese Phrase auskommen — direkt in die Szene einsteigen ist stärker.
 
+> **🟢 Scope-Update (Patricia, 2026-06-12):** Das „Stell dir vor"-Verbot gilt **nur für Instagram-Content** (Captions, Hooks, Reels, Stories). In **gesprochenen Verkaufs-Kontexten — Webinar, Sales-Call, Pitch, Verkaufs-Video** — ist „Stell dir vor" als Future-Pacing-Trigger **erlaubt** und erwünscht (dort Standard, z.B. Jens-Neubeck-Webinar-Methode). Für geschriebenen Insta-Content bleibt es gesperrt.
+
 ---
 
 ## ❌ KATEGORIE 2: MARKETING-BUZZWORDS

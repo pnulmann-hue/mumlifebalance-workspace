@@ -24,8 +24,9 @@ Und: **50 % macht die Präsentation, 50 % deine Energie.** Eine geile Energie mi
 | Jens macht… | Du machst… |
 |---|---|
 | Wirft mit grossen Zahlen um sich (23 Mio) | **Nur deine echten Anker:** 4 Kinder · ~18 Std/Woche · Appenzell statt Bali · solo mit KI · vierstellig. Keine erfundene Zahl. |
-| „Stell dir vor, dein Hund…" (Future Pacing) | **Direkt in die Szene** (dein Blacklist-Verbot für „Stell dir vor"). „Es ist Sonntagabend, halb zehn, die Kinder schlafen…" |
 | 60-Tage-Geld-zurück-Garantie | **Keine Garantie** (deine Regel — Kopier-Risiko). Risiko-Umkehr stattdessen über **Begleitung** (Umsetzerinnen-Calls) + **Raten**. |
+
+> ✅ **„Stell dir vor" ist hier erlaubt.** Das Blacklist-Verbot gilt nur für Instagram-Content (Captions/Hooks/Reels). Im gesprochenen Webinar ist „Stell dir vor" der Standard-Future-Pacing-Trigger und darf rein.
 | „Hart, ekelhaft, schreit rum" pitchen | **Liebevolle Strenge** — warm, aber klar. Direkt sein darfst du, aber als Freundin am Küchentisch, nicht als Marktschreier. |
 | Julia namentlich als Beweis | **Kein Julia-Name** im Kunden-Webinar (deine Pflicht-Regel). |
 
@@ -54,8 +55,8 @@ Hier gibst du **noch keinen Content**. Du holst dir die Aufmerksamkeit und baust
 1. **Headline-Slide** — der Titel von oben, knallt sofort.
 2. **Elefant im Raum** — gleich sagen, dass es ein Angebot gibt. Ehrlich.
    > „Und ja — am Ende zeig ich dir, wie du mit mir weitergehen kannst, wenn du magst. Wenn du nur die Aufzeichnung mitnehmen willst, völlig okay."
-3. **Zukunftsbild** (direkt in die Szene, kein „stell dir vor"):
-   > „Es ist Sonntagabend, halb zehn. Die Kinder schlafen. Du machst den Laptop auf — nicht weil du musst, sondern weil dir grad eine Idee gekommen ist. Und heute kam eine Zahlung rein, für etwas, das DIR gehört."
+3. **Zukunftsbild / Future Pacing** („Stell dir vor" ist hier erlaubt):
+   > „Stell dir vor, es ist Sonntagabend, halb zehn. Die Kinder schlafen, du machst den Laptop auf — und heute kam eine Zahlung rein, für etwas, das DIR gehört."
 4. **Erster Beweis (echt + nahbar)** — Jens' „99-und-1": nimm einen **nahen** Meilenstein, nicht den fernen.
    > „Ich mach das aus Appenzell, mit vier Kindern, in rund 18 Stunden die Woche. Kein Bali, kein Team von zehn Leuten. Eine Mama, ein Laptop, ein paar KI-Helfer."
 5. **Für wen ist das?** — die Situation der Zuschauerin benennen:
