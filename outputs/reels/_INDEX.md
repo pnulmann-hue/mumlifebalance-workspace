@@ -44,3 +44,7 @@ Auto-Index aller Files in `outputs/reels/`. Siehe [[_MOCs/MOC-Content-Engine]] f
 ### 📁 2026-06-04-network-mama-zeit-frage
 
 - [[briefing]]
+
+### 📁 2026-06-28-pov-dorf
+
+- [[briefing]]
