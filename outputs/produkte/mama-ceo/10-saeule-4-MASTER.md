@@ -301,8 +301,8 @@ WAS DU NACH LEKTION 4.3 HAST
 
 # 🎬 LEKTION 4.4 — Deinen Cockpit-Bot bauen (Live-Demo)
 
-**Status:** ⚠️ NEU bauen (12 Folien)
-**Material:** Patricias echter Cockpit-Bot (live auf Railway) — **aber für Mentees als 2 Stufen aufbereitet:** Stufe 1 = Claude-Project/Custom-GPT-Morgenbriefing (für alle machbar, kein Hosting), Stufe 2 = der echte Telegram-Bot nur als Ausbau-Idee gezeigt, NICHT Schritt-für-Schritt nachgebaut.
+**Status:** ⚠️ NEU bauen (13 Folien)
+**Material:** Patricias echter Cockpit-Bot (live auf Railway) — **aber für Mentees als 2 Stufen aufbereitet:** Stufe 1 = Projekt (Claude/ChatGPT) als Morgenbriefing (für alle machbar, kein Hosting), Stufe 2 = der echte Telegram-Bot via Claude Code ehrlich erklärt (was er ist, was er braucht, was er kostet), aber NICHT Schritt-für-Schritt nachgebaut.
 
 > **Patricia-Entscheidung 2026-06-12:** Cockpit-Bot wird als 2-Stufen-Modell gelehrt. Stufe 1 ist der Standard, den jede Mentee baut und im Live-Call bauen kann. Stufe 2 (Telegram-Bot wie Patricias Railway-Version) ist nur ein Ausblick „wer mehr will", damit das „du musst nichts können"-Versprechen hält.
 
@@ -323,23 +323,23 @@ Dein Cockpit-Bot ist dein persönliches Morgenbriefing. Er schaut in dein Notion
 
 Du lernst:
 → Wie du mit der fertigen Vorlage (Bonus) in wenigen Minuten dein Morgenbriefing baust
-→ Wie der Bot deine Notion-Woche bekommt (ganz einfach reinkopieren oder teilen)
+→ Wie der Bot deine Notion-Woche bekommt (ganz einfach reinkopieren oder verbinden)
 → Wie du ihn jeden Morgen nutzt, damit du nie wieder planlos vor dem Tag stehst
-→ Und als Ausblick: wie meine Profi-Variante mich um halb sieben automatisch per Telegram weckt — falls du irgendwann mehr willst
+→ Und als ehrlicher Ausblick: wie die Profi-Variante als automatischer Telegram-Bot läuft — was sie braucht, was sie kostet, und warum sie kein Muss ist
 
 Ich bau den Bot live vor deinen Augen. Du baust einfach mit.
 
 📋 Lektion 4.4 im Arbeitsblatt: dein Cockpit-Bot eingerichtet + 3 Tage getestet
 ```
 
-## Folien-Plan (12 Folien)
+## Folien-Plan (13 Folien)
 
 | # | Folie | Inhalt | Sprechnotizen |
 |---|---|---|---|
 | 1 | **Titel** | „4.4 · Dein Cockpit-Bot — dein Morgenbriefing" | „Jetzt wird's konkret, denn wir bauen deinen ersten echten KI-Mitarbeiter. Ich nenne ihn den Cockpit-Bot, weil er dir morgens das Cockpit zeigt, also alles was heute wichtig ist, auf einen Blick." |
 | 2 | **Was er für dich tut** | 3 Zeilen: morgens fragen → Tagesfokus + 3 Hauptaufgaben + kurzer Überblick | „Was dieser Bot macht, ist einfach erklärt: du fragst ihn morgens ‚was ist heute dran', und er gibt dir deinen Tagesfokus, deine drei wichtigsten Aufgaben und einen kurzen Überblick über die Woche. Du musst nicht mehr selbst in Notion wühlen und dich verlieren, er macht das für dich." |
 | 3 | **Warum wir Säule 3 gebraucht haben** | Pfeil: Notion-Business-Brain (S3) → Cockpit-Bot liest Tagesplaner + Aufgaben | „Jetzt zahlt sich Säule 3 aus. Dein Cockpit-Bot kann nur deshalb wissen was heute dran ist, weil du dein Notion-Business-Brain aufgebaut hast, mit Wochenplan, Tagesplaner und Aufgaben. Der Bot ist die Stimme, die dir vorliest, was in deinem Brain steht. Ohne das Brain kein Briefing." |
-| 4 | **2 Stufen — fang bei Stufe 1 an** | Stufe 1: Bot in Claude/ChatGPT (kein Hosting) · Stufe 2: Telegram weckt dich (Profi) | „Ich zeig dir den Bot in zwei Stufen, und ich sag dir gleich: für neunzig Prozent reicht Stufe eins völlig. Stufe eins ist ein Bot in ChatGPT oder Claude, ganz ohne Technik-Gedöns. Stufe zwei ist meine Profi-Variante, die mich automatisch per Telegram weckt, aber die ist nur was für später, wenn du Lust auf mehr hast. Wir bauen jetzt Stufe eins." |
+| 4 | **2 Stufen — fang bei Stufe 1 an** | Stufe 1: Projekt in Claude/ChatGPT (reaktiv, kein Hosting) · Stufe 2: Claude-Code-Telegram-Bot (automatisch) | „Ich zeig dir den Bot in zwei Stufen, und ich sag dir gleich: für neunzig Prozent reicht Stufe eins völlig. Stufe eins ist ein Projekt in Claude oder ChatGPT, ganz ohne Technik-Gedöns, du fragst und es antwortet. Stufe zwei ist die Profi-Variante mit Claude Code, die als automatischer Telegram-Bot von selbst läuft, aber die ist nur was für später, wenn du Lust auf mehr hast. Wir bauen jetzt Stufe eins." |
 | 5 | **Stufe 1: was der Bot als Input braucht** | 2 Inputs: dein Business-Brief (4.3) + deine Notion-Woche (reinkopieren oder teilen) | „Dein Cockpit-Bot braucht genau zwei Dinge. Erstens deinen Business-Brief aus der letzten Lektion, damit er dich kennt. Und zweitens deine aktuelle Notion-Woche, die du ihm einfach reinkopierst oder als Link teilst. Mehr ist es nicht, und genau das machen wir jetzt zusammen." |
 | 6 | **Die fertige Vorlage (Bonus)** | Karte: „Cockpit-Bot-System-Prompt — fertig, du passt nur deinen Kontext an" | „Damit du nicht bei null anfängst, hast du von mir eine fertige Vorlage als Bonus. Das ist der komplette System-Prompt, also die Bedienungsanleitung für den Bot, und du musst nur deinen Namen und deinen Kontext eintragen. Den Link zum Download findest du gleich hier in der Lektion." |
 | 7 | **Live-Demo Schritt 1** | Bildschirm: neuen Bot/GPT anlegen + Vorlage einfügen | „So, jetzt bau ich ihn live, und du baust einfach mit, pausier das Video wo du musst. Schritt eins: ich lege einen neuen Bot an, in meinem Fall ein Project, und füge die Vorlage ein. Du siehst, ich tippe nichts Kompliziertes, ich kopiere die Vorlage rein." |
