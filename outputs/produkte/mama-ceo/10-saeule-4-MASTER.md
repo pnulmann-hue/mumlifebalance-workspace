@@ -346,8 +346,9 @@ Ich bau den Bot live vor deinen Augen. Du baust einfach mit.
 | 8 | **Live-Demo Schritt 2** | Business-Brief + Notion-Woche reingeben | „Schritt zwei: ich gebe ihm meinen Business-Brief, damit er weiss wer ich bin, und dann werfe ich ihm meine aktuelle Notion-Woche rein. Schau, ich kopiere einfach den Inhalt meiner Wochenseite, und der Bot hat sofort alles, was er braucht." |
 | 9 | **Live-Demo Schritt 3: testen** | Eingabe: „Was ist heute mein Fokus?" → Bot-Antwort mit Tagesfokus + 3 Aufgaben | „Und Schritt drei, der schönste: ich frag ihn ‚was ist heute mein Fokus', und schau dir das an, er gibt mir meinen Tagesfokus, meine drei Hauptaufgaben und einen kurzen Wochenblick. Wie geil ist das denn. Genau das hast du gleich auch." |
 | 10 | **So nutzt du ihn jeden Morgen** | Routine: Laptop auf → Bot fragen → loslegen (30 Sek statt Notion-Wühlen) | „Im Alltag sieht das dann so aus: Laptop auf, Bot fragen, loslegen. Dreissig Sekunden statt zehn Minuten in Notion verlieren. Einmal pro Woche wirfst du ihm deine neue Wochenseite rein, und der Rest läuft. So fühlt sich Mama-CEO an einem normalen Morgen an." |
-| 11 | **Stufe 2: wer mehr will (Ausblick)** | Patricia-Telegram-Bot: weckt um 6:30 automatisch · Hinweis: „braucht Technik, ist KEIN Muss" | „Und für die, die irgendwann Blut lecken: meine Profi-Variante ist ein Bot, der auf einem Server läuft und mir jeden Morgen um halb sieben von selbst eine Telegram-Nachricht schickt, ohne dass ich was tun muss. Das braucht etwas Technik und ist ausdrücklich kein Muss für dieses Programm. Ich zeig's dir nur, damit du weisst, wohin die Reise gehen kann. Fang mit Stufe eins an, die trägt dich weit." |
-| 12 | **Arbeitsblatt + nächste Lektion** | „📋 Cockpit-Bot bauen + 3 Tage testen" · „Nächste Lektion: 4.5 MASTERY — Kochassistent" | „Im Arbeitsblatt baust du jetzt deinen Cockpit-Bot mit der Vorlage und testest ihn drei Tage lang jeden Morgen. In der nächsten Lektion, der MASTERY, bauen wir deinen zweiten Helfer, und der ist fürs Zuhause: dein Kochassistent gegen das ewige ‚was koch ich heute'. Bis gleich." |
+| 11 | **Stufe 2: so läuft der automatische Telegram-Bot** | Patricia-Telegram-Bot: Server läuft 24/7 → pusht um 6:30 von selbst · was es braucht: Telegram-Bot-Anmeldung + ein Ort wo er läuft (Hosting) + etwas Code | „Und für die, die irgendwann Blut lecken, zeig ich dir ehrlich, wie die Profi-Variante läuft. Das ist ein Bot, der Tag und Nacht auf einem kleinen Server liegt und mir jeden Morgen um halb sieben von selbst eine Telegram-Nachricht schickt, ohne dass ich irgendwas anklicke. Dafür braucht es drei Dinge: du meldest deinen Bot kostenlos bei Telegram an, du brauchst einen Ort wo er rund um die Uhr läuft, das nennt man Hosting, und du brauchst ein bisschen Code, der die Verbindung macht." |
+| 12 | **Stufe 2: Kosten + Claude Code führt dich durch** | Hosting ~5 CHF/Monat + ggf. KI-Kosten · Claude Code schreibt den Code · Hinweis: KEIN Muss, sei dir Aufwand + Kosten bewusst | „Und jetzt das Wichtige, weil ich ehrlich bleibe: dieses Hosting kostet etwa fünf Franken im Monat, dazu kommen je nach Nutzung ein paar Franken KI-Kosten. Den Code musst du nicht selbst schreiben, das macht Claude Code für dich, und es führt dich Schritt für Schritt durch alles, du musst es nur wollen. Aber sei dir bewusst: das ist mehr Aufwand und kostet etwas, und es ist ausdrücklich kein Muss für dieses Programm. Stufe eins trägt dich weit, also fang da an und bau das hier nur, wenn du irgendwann Lust drauf hast." |
+| 13 | **Arbeitsblatt + nächste Lektion** | „📋 Cockpit-Bot bauen + 3 Tage testen" · „Nächste Lektion: 4.5 MASTERY — Haushalts-Helfer" | „Im Arbeitsblatt baust du jetzt deinen Cockpit-Bot mit der Vorlage und testest ihn drei Tage lang jeden Morgen. In der nächsten Lektion, der MASTERY, bauen wir seinen Zwilling fürs Zuhause: deinen Haushalts-Helfer, der dir morgens sagt, was an Haushalt und Familie ansteht, damit das nicht mehr alles in deinem Kopf liegt. Bis gleich." |
 
 ## Arbeitsblatt-Sektion 4.4
 
@@ -371,103 +372,119 @@ Tag 3: gefragt? ☐  hilfreich? ☐  Datum: ____
 Was würdest du am Bot noch verbessern? _______________________________
 
 ▸ Stufe 2 — nur falls dich der Ehrgeiz packt (KEIN Muss)
+☐ Mir ist klar: automatischer Telegram-Bot = Hosting (~5 CHF/Mt) + etwas Code (Claude Code macht's)
 ☐ Interessiert mich später → in Live-Call 3 ansprechen
 
 WAS DU NACH LEKTION 4.4 HAST
 ✓ Dein Cockpit-Bot läuft (Stufe 1, ohne Hosting)
 ✓ Er liest deine Notion-Woche + kennt deinen Business-Brief
 ✓ Du hast ihn 3 Tage im echten Morgen getestet
-✓ Du weisst, dass es eine Profi-Ausbaustufe gibt — ohne Druck
+✓ Du weisst, wie die automatische Telegram-Variante läuft — inkl. Aufwand + Kosten, ohne Druck
 ```
 
 ---
 
-# 🌟 LEKTION 4.5 MASTERY — Dein Kochassistent (Haushalts-Helfer, Live-Demo)
+# 🌟 LEKTION 4.5 MASTERY — Dein Haushalts-Helfer-Bot (Live-Demo)
 
 **Status:** ⚠️ NEU bauen (14 Folien · MASTERY)
-**Material:** Patricias `/mealplan`-Logik (Wochenplan + Spontan-Koch + Einkaufsliste) — **für Mentees als einfacher Custom-GPT/Claude-Project-Kochassistent aufbereitet, kein RAG/kein Code.** Der breitere Familien-Bot (Mental Load: Termine/Geschenke) bleibt der **separate Bonus** aus der Outline, wird hier NICHT gebaut.
+**Material:** Patricia-O-Ton 2026-06-12 — der Haushalts-Helfer/Mental-Load-Bot trägt die **Brain-Dump-Liste** (= Hütchen-Inventar aus Säule 2), strukturiert in **wiederkehrend** (Staubsaugen montags) + **datiert** (Frühlingskleider raussuchen letzter Freitag im März) + **Familien-Termine** (Zahnarzt, Kind früher in die Schule). Bot erinnert täglich: „Montag — heute dran: Wäsche, Kind Zahnarzt, Kind früher Schule (Wald)." Liste lebt in einer **eigenen Notion-Haushalts-DB**. Der Bot ist der **Heim-Zwilling des Cockpit-Bots** (gleiche Mechanik, andere Liste).
 
-> **Patricia-Entscheidung 2026-06-12:** L4.5 baut live nur den Kochassistenten (klar, eine Demo). Der Familien-Bot (Mental-Load-Speicher) bleibt eigene Bonus-Page, kein Lektions-Bau. Saubere Trennung statt Überfrachtung.
+> **Patricia-Entscheidung 2026-06-12:** L4.5 baut live den Haushalts-Helfer-Bot (Mental-Load), nicht den Kochassistenten. Brain-Dump-Liste in eigener Notion-Haushalts-DB (wiederkehrend + datiert), Bot liest sie wie der Cockpit-Bot Notion liest. Der **Kochassistent** bleibt eine optionale Erweiterung als Extra-Bonus (kurz am Ende erwähnt, Vorlage liegt bei).
+>
+> **⚙️ Bau-Voraussetzung:** Das Notion-Master-Template (aus Säule 3, `3637078e-8b7e-8121-9f95-d2b377b283a7`) braucht eine zusätzliche **Haushalts-DB** mit Feldern: Aufgabe · Rhythmus (z.B. wöchentlich montags / monatlich / jährlich) · festes Datum (für saisonale Sachen) · Bereich (Haushalt / Familie / Termin) · erledigt. Diese DB muss Patricia noch ins Template aufnehmen (analog Tagesplaner/Aufgaben).
 
 ## ThriveCart-Setup
 
 **Lektion-Titel:**
 ```
-4.5 · MASTERY · Dein Kochassistent — Schluss mit „was koch ich heute"
+4.5 · MASTERY · Dein Haushalts-Helfer — der Mental Load raus aus deinem Kopf
 ```
 
 **Video-Datei:** `saeule-04-lektion-4-5.mp4` (ca. 28 Min · MASTERY)
 
 **Beschreibungstext:**
 ```
-🌟 Die MASTERY-Lektion von Säule 4 — und die einzige, in der wir uns ganz bewusst NICHT ums Business kümmern, sondern um deinen Kopf zu Hause. Denn dieses ewige „was koch ich heute, was muss ich einkaufen" ist auch Adminkram, und auch den darf dir eine KI abnehmen.
+🌟 Die MASTERY-Lektion von Säule 4 — und die, auf die ich mich am meisten freue. Denn jetzt bauen wir den Zwilling deines Cockpit-Bots, nur diesmal nicht fürs Business, sondern für all das, was du als Mama im Kopf mit dir rumträgst: Wäsche, Zahnarzt-Termine, Kind muss früher los, Frühlingskleider raussuchen, Geburtstagsgeschenk besorgen.
 
-Wir bauen deinen persönlichen Kochassistenten. Einen Bot, der deine Familie kennt, der dir einen Wochenplan macht, der spontan sagt „du hast X, Y, Z — koch das" und der dir die Einkaufsliste gleich sortiert mitliefert.
+Dieser Mental Load ist riesig, und das Schlimmste daran ist, dass er unsichtbar in deinem Kopf liegt und dich auch nachts nicht loslässt. Genau das holen wir jetzt raus und geben es deinem Haushalts-Helfer-Bot.
 
 Was wir gemeinsam machen:
-→ Den Familien-Kontext schreiben (wer isst was, was kommt nie auf den Tisch)
-→ Die 3 Aufträge einrichten: Wochenplan · Spontan-Koch · Einkaufsliste
-→ Den Bot mit der fertigen Vorlage (Bonus) zusammensetzen
-→ Ihn live testen mit echten Beispielen aus meiner Küche
+→ Deine „muss ich noch"-Liste aus Säule 2 in eine Notion-Haushalts-Liste bringen
+→ Sie sortieren in wiederkehrend (Staubsaugen montags), datiert (Kleider raus Ende März) und Familien-Termine
+→ Den Bot mit der fertigen Vorlage (Bonus) bauen und mit deiner Liste verbinden
+→ Ihn live testen: „Was ist heute zu Hause dran?" → und er sagt dir's, jeden Morgen
 
-Plan dir 30 Minuten ein und bau einfach mit. Am Ende hast du einen Helfer, der dir jede Woche den Kopf freiräumt.
+Plan dir 30 Minuten ein und bau einfach mit. Am Ende hast du den Mental Load nicht mehr nur im Kopf, sondern in einem Helfer, der dich erinnert.
 
-📋 Lektion 4.5 im Arbeitsblatt: dein Kochassistent + Familien-Kontext + erste Tests
+📋 Lektion 4.5 im Arbeitsblatt: deine Haushalts-Liste + dein Haushalts-Helfer-Bot + erste Tests
 ```
 
 ## Folien-Plan (14 Folien)
 
 | # | Folie | Inhalt | Sprechnotizen |
 |---|---|---|---|
-| 1 | **Titel** | „4.5 · MASTERY · Dein Kochassistent" | „Willkommen zur MASTERY von Säule 4, und die ist mir besonders wichtig, weil sie zeigt, dass Mama-CEO nicht am Schreibtisch aufhört. Wir bauen jetzt einen Helfer, der dir zu Hause den Kopf freiräumt, nämlich deinen eigenen Kochassistenten." |
-| 2 | **„Was koch ich heute" ist auch Adminkram** | Frau ratlos vorm offenen Kühlschrank, 17 Uhr | „Mal ganz ehrlich: dieses ‚was koch ich heute' frisst mehr Energie, als wir zugeben. Du stehst um fünf vorm offenen Kühlschrank, die Kinder haben Hunger, und dein Kopf ist leer. Das ist Mental Load in Reinform, und genau wie beim Business darfst du den an eine KI abgeben." |
-| 3 | **Was der Kochassistent kann** | 3 Kacheln: 📅 Wochenplan · 🍳 Spontan-Koch · 🛒 Einkaufsliste | „Dein Kochassistent kann drei Dinge. Er macht dir einen Wochenplan, er sagt dir spontan was du aus dem kochst was grad da ist, und er gibt dir die Einkaufsliste gleich sortiert dazu. Drei Sachen, die dir jede Woche Zeit und Nerven sparen." |
-| 4 | **Der Familien-Kontext = Business-Brief fürs Zuhause** | Parallele: wie der Business-Brief, nur für die Küche (wer isst was, Allergien, no-gos) | „Erinnerst du dich an den Business-Brief aus 4.3? Genau dasselbe Prinzip nochmal, nur für deine Küche. Dein Kochassistent braucht einen Familien-Kontext: wie viele esst ihr, wer mag was nicht, gibt es Allergien, was kommt bei euch nie auf den Tisch. Mit diesem Kontext kocht er für DEINE Familie, nicht für irgendeine." |
-| 5 | **Live-Demo Schritt 1: Familien-Kontext** | Bildschirm: Kontext schreiben (Beispiel Patricia: 6 Personen, protein-orientiert, kein Fisch, eigenes Brot) | „Ich bau jetzt live mit, und du baust mit mir. Schritt eins ist der Familien-Kontext. Ich schreib zum Beispiel: wir sind sechs Personen, wir essen gern proteinreich, Fisch mag bei uns niemand, und ich back mein Brot selbst. Du schreibst deinen eigenen Kontext, so ehrlich und konkret wie möglich." |
-| 6 | **Live-Demo Schritt 2: die 3 Aufträge** | Bildschirm: dem Bot die 3 Aufgaben erklären (Wochenplan / spontan / Liste) | „Schritt zwei: ich sag dem Bot, was seine drei Aufgaben sind. Mach mir auf Wunsch einen Wochenplan, sag mir spontan was ich kochen kann wenn ich dir Zutaten nenne, und gib mir die Einkaufsliste sortiert. Das steht alles schon in der Vorlage, du passt es nur an deine Familie an." |
-| 7 | **Live-Demo Schritt 3: Vorlage zusammensetzen** | Karte: „Kochassistent-System-Prompt (Bonus) + dein Familien-Kontext = fertig" | „Schritt drei: ich setz das Ganze mit der fertigen Vorlage zusammen, die du als Bonus hast. Vorlage rein, deinen Familien-Kontext oben eingefügt, fertig ist dein Kochassistent. Du siehst, das ist dieselbe Mechanik wie beim Cockpit-Bot, nur mit anderem Inhalt." |
-| 8 | **Test: Spontan-Koch** | Dialog: „Ich hab Hackfleisch, Tomaten, Pasta — was koch ich?" → Bot-Vorschlag | „Jetzt testen wir, und das macht am meisten Spass. Ich tippe: ich hab Hackfleisch, Tomaten und Pasta, was koch ich. Und schau, er schlägt mir was Konkretes vor, mit Mengen für sechs Personen. Genau das, was ich sonst mühsam selbst zusammensuche." |
-| 9 | **Test: Wochenplan** | Dialog: „Wochenplan für 5 Tage, protein-orientiert" → 5 Mittagessen | „Nächster Test: mach mir einen Wochenplan für fünf Tage, proteinreich, nichts Aufwändiges. Und er gibt mir fünf Mittagessen, die zu meiner Familie passen, weil er meinen Kontext kennt. Kein Fisch, weil ich's ihm gesagt hab. So fühlt sich ein guter Auftrag an." |
-| 10 | **Test: Einkaufsliste** | Dialog: „Mach mir die Einkaufsliste dazu" → sortierte Liste | „Und der dritte Test: mach mir die Einkaufsliste zum Wochenplan. Er nimmt die fünf Gerichte und gibt mir eine sortierte Liste, die ich direkt mit in den Laden nehmen kann. Aus drei Minuten Tippen wird ein fertiger Wocheneinkauf." |
-| 11 | **Der Trick: gib ihm Feedback** | „Sag ihm wenn was nicht passt — er lernt deine Familie" | „Ein wichtiger Trick: der Bot wird besser, je mehr du ihm sagst. Wenn ein Vorschlag nicht passt, sag's ihm, ‚das mögen meine Kinder nicht' oder ‚das ist mir zu aufwändig', und er merkt es sich für deine Familie. Behandle ihn wie eine Praktikantin, die dazulernt, dann wird er richtig gut." |
-| 12 | **Abgrenzung: Koch ≠ alles** | Klar: das ist der Koch · Mental-Load-alles (Termine, Geschenke) = dein Familien-Bot (Bonus separat) | „Damit du's klar hast: das hier ist dein Kochassistent, der kümmert sich ums Essen. Den grösseren Mental Load, also Termine, Geschenke, wer hat wann was, dafür hast du von mir den Familien-Bot als separaten Bonus. Den kannst du dir nach demselben Prinzip einrichten, wenn du soweit bist. Hier in der Lektion bleiben wir beim Koch, damit es übersichtlich bleibt." |
-| 13 | **Warum das echtes Mama-CEO ist** | Frame: KI nimmt dir nicht nur Business-, sondern Lebens-Adminkram ab → mehr echte Zeit | „Und genau das ist für mich der Kern von Mama-CEO: die KI nimmt dir nicht nur den Business-Kram ab, sondern auch den im echten Leben. Jede Sache, die du nicht mehr im Kopf wälzen musst, ist Energie, die du für deine Kinder, dein Business oder einfach für dich hast. Das ist kein Luxus, das ist Selbstschutz." |
-| 14 | **Arbeitsblatt + nächste Lektion** | „📋 Kochassistent bauen + Familien-Kontext + 3 Gerichte testen" · „Nächste Lektion: 4.6 — Mensch vs. KI" | „Im Arbeitsblatt baust du jetzt deinen Kochassistenten, schreibst deinen Familien-Kontext und testest drei echte Gerichte. In der letzten Lektion von Säule 4 ziehen wir dann die Linie: was macht die KI, und was bleibt immer deins. Bis gleich." |
+| 1 | **Titel** | „4.5 · MASTERY · Dein Haushalts-Helfer-Bot" | „Willkommen zur MASTERY von Säule 4, und die ist mir besonders wichtig, weil sie zeigt, dass Mama-CEO nicht am Schreibtisch aufhört. Wir bauen jetzt den Zwilling deines Cockpit-Bots, nur diesmal für dein Zuhause, nämlich deinen Haushalts-Helfer." |
+| 2 | **Der unsichtbare Mental Load** | Mama-Kopf voller Zettel: Wäsche · Zahnarzt · Geschenk · Kleider · Elternabend | „Mal ganz ehrlich: was wir Mamas im Kopf mit uns rumtragen, ist riesig. Wann muss die Wäsche, wer hat wann Zahnarzt, wann muss ich die Frühlingskleider raussuchen, das Geburtstagsgeschenk, der Elternabend. Das Schlimme ist, dass dieser Mental Load unsichtbar in deinem Kopf liegt und dich auch abends nicht loslässt. Genau den holen wir jetzt raus." |
+| 3 | **Der Zwilling des Cockpit-Bots** | 2 Bots nebeneinander: 🌅 Cockpit (Business) · 🏠 Haushalts-Helfer (Zuhause) · „gleiche Mechanik" | „Das Schöne ist: du kannst schon alles, was du dafür brauchst. Der Haushalts-Helfer funktioniert genau wie dein Cockpit-Bot, er liest eine Liste und sagt dir morgens, was dran ist. Der Cockpit-Bot macht das fürs Business, der Haushalts-Helfer fürs Zuhause. Zwei Zwillinge, einmal Arbeit, einmal Familie." |
+| 4 | **Was er für dich tut** | Beispiel-Antwort: „Montag — heute dran: Wäsche machen · Kind hat Zahnarzt 14 Uhr · Kind muss früher in die Schule (Wald)" | „So sieht das dann aus: du fragst morgens ‚was ist heute zu Hause dran', und er sagt dir zum Beispiel: Montag, heute Wäsche machen, das Kind hat um zwei Zahnarzt, und das andere muss früher los, weil Waldtag. Alles, was sonst in deinem Kopf herumschwirrt, kommt jetzt einmal am Morgen klar auf den Tisch." |
+| 5 | **Die Quelle: dein Brain Dump aus Säule 2** | Pfeil: Hütchen-Inventar (S2) → Haushalts-Liste | „Und jetzt zahlt sich Säule 2 aus. Erinnerst du dich an dein Hütchen-Inventar, deinen grossen Brain Dump, wo alles rausgekommen ist, was du mit dir rumträgst? Genau das ist die Quelle. Diese ganzen ‚muss ich noch'-Sachen bringen wir jetzt in eine Liste, aus der dein Bot dich erinnert." |
+| 6 | **Zwei Sorten Aufgaben + Termine** | 3 Zeilen: 🔁 wiederkehrend (Staubsaugen montags) · 📅 datiert (Kleider raus letzter Fr im März) · 👨‍👩‍👧 Familien-Termine (Zahnarzt, Schule) | „Deine Haushalts-Sachen sind von zwei Sorten, plus die Termine. Es gibt das Wiederkehrende, das immer am gleichen Tag dran ist, zum Beispiel Staubsaugen montags. Es gibt das Datierte, das einmal an einem bestimmten Tag kommt, zum Beispiel Frühlingskleider raussuchen am letzten Freitag im März. Und es gibt die Familien-Termine wie Zahnarzt oder Waldtag. Alle drei kommen in deine Liste." |
+| 7 | **Wo die Liste lebt: Notion** | Notion-Haushalts-DB als eigene Liste · „wie dein Business in Notion lebt, lebt dein Haushalt jetzt auch dort" | „Und wo lebt diese Liste? In Notion, genau dort, wo schon dein Business-Brain liegt. Du legst dir eine eigene Haushalts-Liste an, mit Feldern für den Rhythmus, also montags oder monatlich, und für feste Daten. So wie dein Business in Notion ein Zuhause hat, kriegt jetzt auch dein Haushalt eins, und beide Bots schauen da rein." |
+| 8 | **Live-Demo Schritt 1: Haushalts-Liste füllen** | Bildschirm: Notion-Haushalts-DB, Beispiele eintragen (aus Hütchen) | „So, jetzt bauen wir live, und du baust mit, pausier wo du musst. Schritt eins: ich öffne meine Haushalts-Liste in Notion und trage ein paar Sachen aus meinem Brain Dump ein. Wäsche, Rhythmus wöchentlich. Bäder putzen, mittwochs. Kleider wechseln, festes Datum Ende März. Du füllst deine eigene Liste mit dem, was bei dir ansteht." |
+| 9 | **Live-Demo Schritt 2: Bot bauen** | Bildschirm: Vorlage (Bonus) ins Projekt + Notion-Haushalts-Liste verbinden/reingeben | „Schritt zwei: ich nehme die fertige Haushalts-Helfer-Vorlage, die du als Bonus hast, und setze sie in mein Projekt ein. Dann gebe ich ihm meine Haushalts-Liste, entweder verbunden über Notion oder einfach reinkopiert. Das ist exakt dieselbe Mechanik wie beim Cockpit-Bot, du kannst das also schon." |
+| 10 | **Live-Demo Schritt 3: testen** | Eingabe „Was ist heute zu Hause dran?" → Bot-Antwort mit Tagesliste | „Schritt drei, der schöne: ich frag ihn ‚was ist heute zu Hause dran', und schau, er gibt mir meine Haushalts-Sachen für heute plus die Termine der Kinder. Wie geil ist das denn, das musste ich vorher alles selbst im Kopf haben, und jetzt sagt's mir mein Helfer." |
+| 11 | **So nutzt du beide Bots morgens** | Routine: Cockpit-Bot (Business) + Haushalts-Helfer (Zuhause) = ganzer Tag auf einen Blick | „Im Alltag fragst du morgens beide kurz: den Cockpit-Bot, was im Business dran ist, und den Haushalts-Helfer, was zu Hause dran ist. In zwei Minuten hast du deinen ganzen Tag klar vor dir, Business und Familie, ohne dass irgendwas nur noch in deinem Kopf liegt. Das ist für mich gelebter Mama-CEO." |
+| 12 | **Stufe 2: auch hier automatisch möglich** | wie beim Cockpit: automatischer Telegram-Push via Claude Code · „kein Muss" | „Und ganz kurz, weil's die gleiche Logik ist wie beim Cockpit-Bot: auch deinen Haushalts-Helfer kannst du später als automatischen Telegram-Bot bauen, der dir morgens von selbst schreibt. Das braucht wieder etwas Technik und Hosting, ist also Stufe zwei und kein Muss. Für den Anfang reicht es völlig, dass du ihn fragst." |
+| 13 | **Extra-Bonus: dein Kochassistent** | Karte: 🍳 Kochassistent (Wochenplan · Spontan-Koch · Einkaufsliste) — gleiche Mechanik, Vorlage liegt bei | „Und weil das ‚was koch ich heute' auch so ein Klassiker ist, hab ich dir noch einen Extra-Bonus dazugepackt: eine Vorlage für einen Kochassistenten. Der läuft nach genau demselben Prinzip, du gibst ihm deine Familie als Kontext, und er macht dir Wochenpläne, Spontan-Ideen und Einkaufslisten. Bau ihn dir, wann immer du Lust hast, du kannst das jetzt ja schon." |
+| 14 | **Arbeitsblatt + nächste Lektion** | „📋 Haushalts-Liste + Haushalts-Helfer bauen + testen" · „Nächste Lektion: 4.6 — Mensch vs. KI" | „Im Arbeitsblatt bringst du jetzt deine Brain-Dump-Sachen in deine Haushalts-Liste und baust deinen Haushalts-Helfer mit der Vorlage. In der letzten Lektion von Säule 4 ziehen wir dann die Linie: was macht die KI, und was bleibt immer deins. Bis gleich." |
 
 ## Arbeitsblatt-Sektion 4.5
 
 ```
-LEKTION 4.5 · MASTERY · Dein Kochassistent
+LEKTION 4.5 · MASTERY · Dein Haushalts-Helfer-Bot
 
-▸ Dein Familien-Kontext (der „Business-Brief fürs Zuhause")
-Wie viele esst ihr? ______  Davon Kinder: ______
-Was esst ihr gern / oft: _______________________________
-Was kommt NIE auf den Tisch (no-gos, Allergien): _______________________________
-Besonderheiten (proteinreich, schnell, eigenes Brot, …): _______________________________
+▸ Schritt 1: Hol deinen Brain Dump aus Säule 2 raus
+Nimm dein Hütchen-Inventar — alle „muss ich noch"-Sachen rund um Haushalt + Familie.
 
-▸ Bau-Checkliste (mach das WÄHREND des Videos)
-☐ Schritt 1: Familien-Kontext geschrieben
-☐ Schritt 2: Die 3 Aufträge angepasst (Wochenplan / spontan / Liste)
-☐ Schritt 3: Vorlage (Bonus) + Kontext zusammengesetzt
-☐ Bot getestet ✓
+▸ Schritt 2: Sortier sie in 3 Sorten
+🔁 WIEDERKEHREND (immer am gleichen Tag/Rhythmus)
+| Aufgabe | Rhythmus (z.B. montags / monatlich) |
+| _______________________ | ____________ |
+| _______________________ | ____________ |
+| _______________________ | ____________ |
 
-▸ Teste 3 echte Sachen
-1. Spontan-Koch — Zutaten die du grad hast: _______________ → Vorschlag passt? ☐
-2. Wochenplan — für ____ Tage → passt zu deiner Familie? ☐
-3. Einkaufsliste — bekommen + sortiert? ☐
+📅 DATIERT (einmal an einem festen Datum, z.B. saisonal)
+| Aufgabe | Datum |
+| _______________________ | ____________ |
+| _______________________ | ____________ |
 
-▸ Feedback gegeben?
-Welche 1 Sache hast du dem Bot über deine Familie nachgeschärft?
-_______________________________
+👨‍👩‍👧 FAMILIEN-TERMINE (Arzt, Schule, Anlässe)
+| Termin | Wann |
+| _______________________ | ____________ |
+| _______________________ | ____________ |
 
-▸ Mein Familien-Bot (separater Bonus) — will ich später einrichten?
-☐ Ja, interessiert mich (Termine/Geschenke/Mental Load)  ☐ Erst mal Koch reicht
+▸ Schritt 3: In Notion eintragen
+☐ Haushalts-Liste in Notion angelegt (Felder: Aufgabe · Rhythmus · Datum · Bereich · erledigt)
+☐ Wiederkehrende Sachen eingetragen
+☐ Datierte Sachen eingetragen
+☐ Familien-Termine eingetragen
+
+▸ Schritt 4: Bot bauen (WÄHREND des Videos)
+☐ Haushalts-Helfer-Vorlage (Bonus) ins Projekt eingesetzt
+☐ Notion-Haushalts-Liste verbunden / reingegeben
+☐ Getestet mit „Was ist heute zu Hause dran?"
+☐ Der Bot hat mir Haushalt + Termine für heute ausgegeben ✓
+
+▸ Mein Haushalts-Helfer heisst: _______________________________
+
+▸ Extra-Bonus Kochassistent — will ich den auch bauen?
+☐ Ja, jetzt gleich  ☐ Später  (Vorlage liegt im Bonus-Bereich)
 
 WAS DU NACH LEKTION 4.5 HAST · 2. KI-MITARBEITER LÄUFT
-✓ Dein Kochassistent kennt deine Familie
-✓ Er kann Wochenplan, Spontan-Koch und Einkaufsliste
-✓ Du hast 3 echte Sachen getestet
-✓ Du weisst: für den grösseren Mental Load gibt's den Familien-Bot als Bonus
+✓ Dein Mental Load liegt in einer Notion-Haushalts-Liste, nicht mehr nur im Kopf
+✓ Dein Haushalts-Helfer-Bot erinnert dich täglich an Haushalt + Familien-Termine
+✓ Du hast morgens jetzt zwei Helfer: Cockpit (Business) + Haushalts-Helfer (Zuhause)
+✓ Du hast die Kochassistent-Vorlage als Extra-Bonus in der Hand
 ```
 
 ---
@@ -508,7 +525,7 @@ Am Ende weisst du nicht nur, DASS KI dir hilft, sondern genau WO — und wo du a
 | # | Folie | Inhalt | Sprechnotizen |
 |---|---|---|---|
 | 1 | **Titel** | „4.6 · KI-Wochenplan — Mensch vs. Maschine" | „Letzte Lektion von Säule 4, und hier ziehen wir die wichtigste Linie überhaupt: was macht ab jetzt die KI, und was bleibt immer deins. Denn beides falsch zu machen kostet dich, und ich zeig dir wie du's richtig aufteilst." |
-| 2 | **Du hast jetzt 2 Mitarbeiter** | Rückblick: 🌅 Cockpit-Bot · 🍳 Kochassistent · „wie teilst du die Arbeit?" | „Schau, was du in den letzten Lektionen aufgebaut hast: einen Cockpit-Bot fürs Business und einen Kochassistenten fürs Zuhause. Zwei Mitarbeiter, die nie müde werden. Die Frage ist jetzt nur noch, welche Arbeit du ihnen gibst, ohne dass du dich selbst überflüssig machst." |
+| 2 | **Du hast jetzt 2 Mitarbeiter** | Rückblick: 🌅 Cockpit-Bot · 🏠 Haushalts-Helfer · „wie teilst du die Arbeit?" | „Schau, was du in den letzten Lektionen aufgebaut hast: einen Cockpit-Bot fürs Business und einen Haushalts-Helfer fürs Zuhause. Zwei Mitarbeiter, die nie müde werden. Die Frage ist jetzt nur noch, welche Arbeit du ihnen gibst, ohne dass du dich selbst überflüssig machst." |
 | 3 | **Die zwei Fehler** | links: alles abgeben (Stimme weg) · rechts: nichts abgeben (Hamsterrad) | „Es gibt zwei Fehler. Der eine ist, alles an die KI abzugeben, dann klingt dein Business austauschbar und deine Kundinnen spüren, dass keine echte Frau mehr dahintersteht. Der andere ist, aus Stolz oder Angst gar nichts abzugeben, dann bleibst du im Hamsterrad aus Säule 2. Die Kunst liegt in der Mitte." |
 | 4 | **Die einfache Regel** | 2 Spalten: KI = Wiederholbares + Vorbereitendes · DU = Beziehung + Entscheidung + Stimme | „Und die Regel dafür ist erstaunlich einfach. Die KI macht alles, was wiederholbar oder vorbereitend ist, also Recherche, erste Entwürfe, Pläne, Listen, Zusammenfassungen. Und du machst alles, wo es um Beziehung, Entscheidung und deine Stimme geht. Die KI bereitet vor, du entscheidest und gibst den letzten Schliff." |
 | 5 | **Was zur KI darf** | grüne Liste: Recherche · erste Entwürfe · Wochen-/Essenspläne · Listen · Zusammenfassungen · Morgenbriefing | „Konkret darf zur KI: Recherche, erste Entwürfe von Texten, deine Wochenplanung und deine Essensplanung, Listen aller Art, Zusammenfassungen von langen Sachen, und natürlich dein Morgenbriefing. All das, was Zeit frisst, aber nicht zwingend dein Herzblut braucht." |
@@ -557,9 +574,11 @@ WAS DU NACH LEKTION 4.6 HAST · SÄULE 4 KOMPLETT
 
 ---
 
-## 🎁 Die 2 Bonus-Vorlagen (System-Prompts) — Spezifikation für den Bau
+## 🎁 Die 3 Bonus-Vorlagen (System-Prompts) — Spezifikation für den Bau
 
-Beide werden als sauberer Text geliefert (Mentee kopiert sie in ihren Bot). Platzhalter in `[eckigen Klammern]` ersetzt die Mentee mit eigenem Kontext. **Compliance:** in den Vorlagen keine Heilversprechen, keine erfundenen Zahlen, kein Mentor-Name.
+Alle werden als sauberer Text geliefert (Mentee kopiert sie in ihr Projekt). Platzhalter in `[eckigen Klammern]` ersetzt die Mentee mit eigenem Kontext. **Compliance:** in den Vorlagen keine Heilversprechen, keine erfundenen Zahlen, kein Mentor-Name.
+
+**Bonus 1 (Cockpit) + Bonus 2 (Haushalts-Helfer)** sind im Preis enthalten und werden in L4.4/L4.5 gebaut. **Bonus 3 (Kochassistent)** ist ein Extra-Bonus zum Selber-Bauen (in L4.5 kurz erwähnt).
 
 ### Bonus 1 — Cockpit-Bot-System-Prompt (für L4.4, Stufe 1)
 
@@ -589,7 +608,40 @@ REGELN
 - [Meine Tabus aus dem Business-Brief gelten auch hier.]
 ```
 
-### Bonus 2 — Kochassistent-System-Prompt (für L4.5)
+### Bonus 2 — Haushalts-Helfer-Bot-System-Prompt (für L4.5, Stufe 1)
+
+```
+ROLLE
+Du bist mein persönlicher Haushalts-Helfer — der Zwilling meines Cockpit-Bots,
+nur für zu Hause. Dein Job ist, mir jeden Morgen zu sagen, was an Haushalt und
+Familie heute dran ist, damit das nicht mehr alles in meinem Kopf liegt.
+
+MEIN KONTEXT
+Wir sind eine Familie mit [Anzahl] Kindern.
+Besonderheiten der Woche: [z.B. Mann Mo-Do auswärts, Mittwoch alle zu Hause].
+
+WAS DU BEKOMMST
+Ich gebe dir meine Notion-Haushalts-Liste. Darin stehen 3 Sorten Einträge:
+- WIEDERKEHREND mit Rhythmus (z.B. „Wäsche – montags", „Bäder – mittwochs")
+- DATIERT mit festem Datum (z.B. „Frühlingskleider raussuchen – letzter Freitag im März")
+- FAMILIEN-TERMINE mit Datum/Uhrzeit (z.B. „Kind Zahnarzt – Mo 14 Uhr", „Waldtag – Mo")
+Wenn etwas fehlt, frag kurz nach, statt zu raten.
+
+WAS DU TUST, wenn ich „Was ist heute zu Hause dran?" frage:
+1. Liste die WIEDERKEHRENDEN Aufgaben, die heute nach Rhythmus dran sind.
+2. Liste DATIERTE Sachen, die heute (oder diese Woche) fällig sind — rechne dabei
+   Datumsregeln wie „letzter Freitag im März" korrekt aus.
+3. Liste die FAMILIEN-TERMINE von heute (mit Uhrzeit).
+4. Gib einen kurzen Ausblick: was kommt diese Woche noch Wichtiges.
+
+REGELN
+- Halte dich kurz und konkret, eine klare Tagesliste, keine Romane.
+- Sprich mich mit DU an, warm und alltagsnah.
+- Erfinde keine Aufgaben oder Termine — nur was in meiner Liste steht.
+- Wenn heute nichts ansteht, sag mir das ehrlich („heute zu Hause nichts Fixes").
+```
+
+### Bonus 3 — Kochassistent-System-Prompt (Extra-Bonus, in L4.5 erwähnt)
 
 ```
 ROLLE
@@ -619,8 +671,6 @@ REGELN
 - Sprich mich mit DU an, locker und alltagsnah.
 ```
 
-> **Hinweis zum Familien-Bot (separater Bonus, NICHT in L4.5 gebaut):** Eigene Bonus-Page nach demselben Schema (Rolle: Mental-Load-Speicher · Kontext: Familienkalender/Termine/Geschenke/Arzt/Reisen · Aufgaben: erinnern, Listen führen, Überblick geben). Kann als `bonus-familien-bot-system-prompt.md` nachgeliefert werden, wenn Patricia es will.
-
 ---
 
 ## 📋 Zusammenfassung: was Patricia produzieren muss für Säule 4
@@ -629,25 +679,29 @@ REGELN
 | # | Datei | Status |
 |---|---|---|
 | 4.1 | `saeule-04-lektion-4-1.mp4` | ⚠️ PPTX neu bauen (9 Folien) |
-| 4.2 | `saeule-04-lektion-4-2.mp4` | ⚠️ PPTX bauen (8 Folien · Basis modul-02-lektion-2-3, neu im Säule-4-Look) |
+| 4.2 | `saeule-04-lektion-4-2.mp4` | ⚠️ PPTX bauen (9 Folien · Basis modul-02-lektion-2-3, neu im Säule-4-Look) |
 | 4.3 | `saeule-04-lektion-4-3.mp4` | ⚠️ PPTX bauen (9 Folien · Basis modul-02-lektion-2-4, neu im Säule-4-Look) |
-| 4.4 | `saeule-04-lektion-4-4.mp4` | ⚠️ PPTX neu bauen (12 Folien) — Live-Demo: Patricia baut Cockpit-Bot am Screen |
-| 4.5 MASTERY | `saeule-04-lektion-4-5.mp4` | ⚠️ PPTX neu bauen (14 Folien) — Live-Demo: Patricia baut Kochassistent am Screen |
+| 4.4 | `saeule-04-lektion-4-4.mp4` | ⚠️ PPTX neu bauen (13 Folien) — Live-Demo: Patricia baut Cockpit-Bot am Screen |
+| 4.5 MASTERY | `saeule-04-lektion-4-5.mp4` | ⚠️ PPTX neu bauen (14 Folien) — Live-Demo: Patricia baut Haushalts-Helfer-Bot am Screen |
 | 4.6 | `saeule-04-lektion-4-6.mp4` | ⚠️ PPTX neu bauen (9 Folien) |
 
 → **6 PPTX im einheitlichen Säule-4-Brand-Look** (python-pptx, Petrol/Creme, Sprechnotizen pro Folie) — wie bei Säule 3.
-→ **Aufnahme-Hinweis:** L4.4 + L4.5 sind Live-Demos mit Screenshare (Bot bauen). Patricia braucht ihren Bildschirm + die 2 Vorlagen offen.
+→ **Aufnahme-Hinweis:** L4.4 + L4.5 sind Live-Demos mit Screenshare (Bot bauen). Patricia braucht ihren Bildschirm + Notion + die Vorlagen offen.
+
+### Notion-Master-Template erweitern (Bau-Voraussetzung für L4.5)
+Das bestehende Master-Template (`3637078e-8b7e-8121-9f95-d2b377b283a7`) braucht eine zusätzliche **Haushalts-DB**: Aufgabe · Rhythmus (wöchentlich/monatlich/jährlich) · festes Datum · Bereich (Haushalt/Familie/Termin) · erledigt. Daraus liest der Haushalts-Helfer-Bot. **Noch anzulegen** (analog zur Aufgaben-/Tagesplaner-DB aus Säule 3).
 
 ### Arbeitsblatt (1 .docx-Datei)
-`mama-ceo-arbeitsblatt-saeule-4.docx` — 6 Lektions-Sektionen wie oben: KI-Frust-Check + 3 Zutaten · Tool-Entscheidung · Business-Brief (6 Bausteine) · Cockpit-Bot-Bau-Checkliste + 3-Tage-Test · Kochassistent + Familien-Kontext + 3 Tests · KI-Wochenplan (Mensch-vs-Maschine-Stempel).
+`mama-ceo-arbeitsblatt-saeule-4.docx` — 6 Lektions-Sektionen wie oben: KI-Frust-Check + 3 Zutaten · Projekt-Entscheidung (Claude/ChatGPT/Claude Code) · Business-Brief (6 Bausteine) · Cockpit-Bot-Bau-Checkliste + 3-Tage-Test · Haushalts-Liste sortieren (wiederkehrend/datiert/Termine) + Haushalts-Helfer-Bau · KI-Wochenplan (Mensch-vs-Maschine-Stempel).
 
-### 2 Bonus-Vorlagen (System-Prompts, im Preis enthalten)
-- 🌅 **Cockpit-Bot-System-Prompt** → als Download bei L4.4 (Spezifikation oben)
-- 🍳 **Kochassistent-System-Prompt** → als Download bei L4.5 (Spezifikation oben)
-- 🏠 (optional separat) **Familien-Bot-System-Prompt** → Bonus-Page, nicht Lektions-Bau
+### 3 Bonus-Vorlagen (System-Prompts)
+- 🌅 **Cockpit-Bot-System-Prompt** (im Preis) → Download bei L4.4 (Spezifikation oben)
+- 🏠 **Haushalts-Helfer-Bot-System-Prompt** (im Preis) → Download bei L4.5 (Spezifikation oben)
+- 🍳 **Kochassistent-System-Prompt** (Extra-Bonus) → Download bei L4.5 zum Selber-Bauen (Spezifikation oben)
+- → alle drei als `.md`/`.txt` zum Download exportieren
 
 ### ThriveCart-Setup-File
-`13-thrivecart-saeule-4-setup.md` — Säulen-Header + 6 Beschreibungstexte (copy-paste-ready) + Upload-Checkliste (6 Videos · 1 Arbeitsblatt · 2 Bot-Vorlagen) — analog zu `13-thrivecart-saeule-3-setup.md`. **Noch zu bauen.**
+`13-thrivecart-saeule-4-setup.md` — Säulen-Header + 6 Beschreibungstexte (copy-paste-ready) + Upload-Checkliste (6 Videos · 1 Arbeitsblatt · 3 Bot-Vorlagen) — analog zu `13-thrivecart-saeule-3-setup.md`. **Noch zu bauen.**
 
 ---
 
@@ -655,11 +709,11 @@ REGELN
 
 | Lektion | Frage | Status |
 |---|---|---|
-| **4.2** | Tool-Empfehlung: Soll ich in den Folien beide nennen (Custom GPT + Claude Project) oder dich auf EINS festlegen, damit Mentees nicht wählen müssen? Aktuell: beide genannt, „nimm wo du Zugang hast". | ⏳ bestätigen |
-| **4.4** | Cockpit-Bot 2-Stufen: Stufe 1 Claude-Project/GPT, Stufe 2 Telegram nur als Ausblick. | ✅ geklärt 2026-06-12 |
-| **4.4** | Soll der Cockpit-Bot-System-Prompt (Bonus) auch deine Ads-Performance-Diagnose enthalten (wie dein Railway-Bot), oder bewusst weglassen weil Mentees keine Ads-API haben? Aktuell: weggelassen (Mentee-tauglich). | ⏳ bestätigen |
-| **4.5** | Kochassistent live, Familien-Bot separater Bonus. | ✅ geklärt 2026-06-12 |
-| **4.5** | Familien-Bot-Bonus-Page jetzt mitbauen oder später? Aktuell: später, nur als Hinweis im Master. | ⏳ entscheiden |
+| **4.2** | Tool-Modell: Projekt (Claude/ChatGPT) ODER Claude Code, nicht der nackte Chat · Anweisungen bei beiden hinterlegbar · Notion-Connector bei allen · automatischer Bot = Claude Code. | ✅ geklärt 2026-06-12 (Patricia O-Ton) |
+| **4.4** | Cockpit-Bot 2-Stufen: Stufe 1 Projekt, Stufe 2 Telegram-Bot via Claude Code ehrlich erklärt (Hosting + Kosten). | ✅ geklärt 2026-06-12 |
+| **4.4** | Ads-Performance-Diagnose im Cockpit-Bot-Prompt → bewusst WEGGELASSEN (Bot erinnert nur an die Notion-Planung). | ✅ geklärt 2026-06-12 (Patricia O-Ton) |
+| **4.5** | MASTERY = Haushalts-Helfer-Bot (Mental-Load, Brain-Dump aus S2, Notion-Haushalts-DB). Kochassistent = Extra-Bonus. | ✅ geklärt 2026-06-12 |
+| **4.5** | Notion-Master-Template um Haushalts-DB erweitern (Voraussetzung für den Bot). | ⏳ noch anlegen |
 | **alle** | Wie bei Säule 3: visuelles PPTX-Rendern lokal nicht möglich (kein LibreOffice) — Inhalts-QA per python-pptx, Patricia klickt einmal durch. | ℹ️ wie gehabt |
 
 ---
