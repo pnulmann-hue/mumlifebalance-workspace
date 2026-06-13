@@ -73,11 +73,11 @@ Hier gibst du **noch keinen Content**. Du holst dir die Aufmerksamkeit und baust
 
 Jens: Die meisten machen das hier zum grössten Teil und erzählen alles — falsch. Die Methode sagt nur **WAS** die Lösung ist, damit du das **WIE** danach verkaufen kannst. **3 Schritte**, jeder nur: „Du brauchst X" + „wenn du X hast, sieht dein Leben so aus". Kein Wie, keine Fachbegriffe, keine Demo.
 
-Deine 3 Schritte = die 3 Säulen der MBA, auf Level 1 heruntergebrochen:
+Deine 3 Schritte = die 3 Säulen der MBA, auf Level 1 heruntergebrochen (den Kursnamen nennst du hier NICHT):
 
-- **Schritt 1 — Dein Thema:** „Du brauchst ein Thema, bei dem sich die richtigen Frauen von selbst melden. Wenn das steht, läufst du niemandem mehr hinterher." *(= Instagram-Kundenmaschine — aber den Namen nennst du hier NICHT)*
-- **Schritt 2 — Deine Struktur + KI:** „Du brauchst eine Struktur, die in deine Randzeiten passt, und ein paar KI-Helfer, die dir den Kram abnehmen. Wenn das steht, frisst dir das Business nicht den letzten Nerv neben der Familie." *(= Mama-CEO)*
-- **Schritt 3 — Dein eigenes Angebot:** „Du brauchst etwas Eigenes, das dir gehört. Wenn das steht, hängt dein Einkommen nicht nur am Network." *(= Digitale Produktwelt)*
+- **Schritt 1 — Instagram: zeig die Lösung deiner Kundin.** „Auf Instagram zeigst du keine Produktbilder mehr. Du zeigst, dass du das Problem deiner Kundin verstehst und löst. Wenn das steht, melden sich die richtigen Frauen von selbst bei dir." *(= Instagram-Kundenmaschine)*
+- **Schritt 2 — Dein eigenes Angebot.** „Dein Network-Produkt ist immer nur EIN Teil der Lösung für deine Kundin. Du brauchst ein eigenes Angebot drumherum. Wenn das steht, hängt dein Einkommen nicht mehr nur am Network." *(= Digitale Produktwelt)*
+- **Schritt 3 — Zeit als Mama + Admin an die KI.** „Du brauchst einen Weg, das alles neben den Kindern zu schaffen — und gibst den ganzen Adminkram an die KI ab. Wenn das steht, läuft dein Business in den Randzeiten, ohne dass es die Familie auffrisst." *(= Mama-CEO)*
 
 → Genau diese Aha-Momente SIND schon Content für Level 1. Mehr braucht's nicht.
 
