@@ -24,23 +24,23 @@ tags: [produkt, mama-ceo, handoff]
 
 **6 Lektionen vollständig spezifiziert** (ThriveCart-Texte + Folien-Plan mit Sprechnotizen + Arbeitsblatt-Sektion):
 - 4.1 KI-Mythos vs. Realität (Input ist alles) · 9 Folien
-- 4.2 Welches Tool für was · 8 Folien
+- 4.2 Womit du arbeitest (Projekt vs. Claude Code) · 9 Folien — nackter Chat zu statisch, Notion-Connector bei allen, automatischer Bot = Claude Code
 - 4.3 Business-Brief schreiben · 9 Folien
-- 4.4 Cockpit-Bot bauen (Live-Demo) · 12 Folien — **2-Stufen:** Stufe 1 Claude-Project/GPT für alle, Stufe 2 Telegram nur Ausblick
-- 🌟 4.5 MASTERY Kochassistent (Live-Demo) · 14 Folien — Familien-Bot bleibt separater Bonus
+- 4.4 Cockpit-Bot bauen (Live-Demo) · 13 Folien — **2-Stufen:** Stufe 1 Projekt für alle, Stufe 2 Telegram-Bot via Claude Code ehrlich erklärt (Hosting + Kosten)
+- 🌟 4.5 MASTERY Haushalts-Helfer-Bot (Live-Demo) · 14 Folien — Mental-Load-Bot, Brain-Dump aus S2 → Notion-Haushalts-DB → tägliche Erinnerung. Heim-Zwilling des Cockpit-Bots. Koch = Extra-Bonus
 - 4.6 KI-Wochenplan Mensch vs. Maschine · 9 Folien — Brücke zu Säule 5
 
-**2 Bonus-System-Prompts im Master spezifiziert:** Cockpit-Bot (L4.4) + Kochassistent (L4.5), copy-paste-ready mit Platzhaltern.
+**3 Bonus-System-Prompts im Master spezifiziert:** Cockpit-Bot (L4.4) + Haushalts-Helfer-Bot (L4.5) im Preis · Kochassistent (L4.5) als Extra-Bonus. Alle copy-paste-ready mit Platzhaltern.
 
-**Patricia-Entscheidungen 2026-06-12:** Cockpit-Bot = 2-Stufen-Modell · Kochassistent live + Familien-Bot separat.
+**Patricia-Entscheidungen 2026-06-12:** Tool = Projekt (Claude/ChatGPT) ODER Claude Code, nicht nackter Chat · Notion-Connector bei allen (nicht nur Claude Code) · Cockpit-Bot 2-Stufen (Stufe 2 = Telegram via Claude Code, Hosting+Kosten erklärt) · Ads-Diagnose im Cockpit-Prompt weggelassen · MASTERY = Haushalts-Helfer (Mental-Load) statt Koch, Liste in eigener Notion-Haushalts-DB.
 
 ### 🔲 Säule-4-TODOs (noch offen)
-1. **2 Detailfragen bestätigen** (siehe Master „Offene Fragen"): Tool-Festlegung in L4.2 (beide nennen vs. eins) · Ads-Diagnose im Cockpit-Bot-Prompt weglassen (aktuell ja, Mentee-tauglich) · Familien-Bot-Bonus-Page jetzt oder später.
-2. **6 PPTX bauen** (python-pptx, Säule-4-Look) — wie Säule 3.
+1. **Notion-Master-Template erweitern:** Haushalts-DB anlegen (Aufgabe · Rhythmus · Datum · Bereich · erledigt) — Voraussetzung für den Haushalts-Helfer-Bot in L4.5.
+2. **6 PPTX bauen** (python-pptx, Säule-4-Look) — Folienzahlen 9/9/9/13/14/9. Wie Säule 3.
 3. **Arbeitsblatt `mama-ceo-arbeitsblatt-saeule-4.docx`** bauen (6 Sektionen aus Master).
 4. **`13-thrivecart-saeule-4-setup.md`** bauen (analog Säule 3).
-5. **2 Bonus-Vorlagen als .md/.txt** zum Download exportieren (Specs liegen im Master).
-6. **L4.4 + L4.5 sind Live-Demos** — Patricia braucht Screenshare + die 2 Vorlagen offen beim Aufnehmen.
+5. **3 Bonus-Vorlagen als .md/.txt** zum Download exportieren (Specs liegen im Master).
+6. **L4.4 + L4.5 sind Live-Demos** — Patricia braucht Screenshare + Notion + die Vorlagen offen beim Aufnehmen.
 
 ---
 
