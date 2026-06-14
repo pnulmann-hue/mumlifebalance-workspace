@@ -77,6 +77,11 @@ tags: [produkt, mama-ceo, saeule-4, intern]
 | Abluftfilter reinigen | wöchentlich | Patricia |
 | Alle Küchenschränke putzen | 2× im Jahr (Frühling + Herbst) | Patricia |
 
+**Hausweit (alle Räume mit Wasserhahn)**
+| Aufgabe | Rhythmus | Wer |
+|---|---|---|
+| Alle Wasserhähne entkalken | alle 3 Monate | Patricia |
+
 ---
 
 ## 2. 4-Filter (folgt — Schritt 2)
