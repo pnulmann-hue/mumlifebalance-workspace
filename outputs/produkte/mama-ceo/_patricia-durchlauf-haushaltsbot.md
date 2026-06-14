@@ -125,6 +125,15 @@ tags: [produkt, mama-ceo, saeule-4, intern]
 |---|---|---|
 | Kleider-Grössen-Check (was passt nicht mehr) | 2× im Jahr (Frühling + Winter) | Patricia |
 
+### Aussen (haus-nah — Beet-/Permakultur-Kram bleibt beim Garten-Bot)
+
+| Aufgabe | Rhythmus | Wer |
+|---|---|---|
+| Hecke schneiden | jährlich, Herbst | Patricia |
+| Laub / Herbst-Aufräumen | jährlich, Herbst | Patricia |
+
+> Rasen mähen + Schnee räumen: nach Bedarf, kein fixer Reminder.
+
 ---
 
 ## 2. 4-Filter (folgt — Schritt 2)
