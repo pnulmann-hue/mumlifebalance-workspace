@@ -18,6 +18,8 @@ tags: [produkt, mama-ceo, saeule-4, intern]
 | Aufgabe | Rhythmus | Wer |
 |---|---|---|
 | Wäsche waschen | jeden 2. Tag (mind.) | Patricia |
+| Flusensieb reinigen | nach jedem Waschen | Patricia |
+| Wäsche zusammenlegen + verräumen | nach jedem Waschen | Patricia |
 | Wäsche bügeln | wöchentlich | Patricia |
 | Saugen + Boden aufnehmen | wöchentlich | Patricia |
 | Bügeleisen entkalken | alle 3 Monate | Patricia |
@@ -39,6 +41,9 @@ tags: [produkt, mama-ceo, saeule-4, intern]
 | Aufräumen | monatlich | Patricia |
 | Altpapier + Altkarton entsorgen | wöchentlich, Mi-Abend | — |
 | Altglas + Büchsen entsorgen | wöchentlich, Mi-Abend | — |
+| Batterien + Elektroschrott + Sonderzeug entsorgen | monatlich, Mi (mit Altkarton-Gang) | Patricia |
+
+> Grünabfuhr + Hauskehricht: laufend, kein fixer Reminder nötig.
 
 **Keller**
 | Aufgabe | Rhythmus | Wer |
@@ -75,12 +80,27 @@ tags: [produkt, mama-ceo, saeule-4, intern]
 | Einkaufen mit Mahlzeitenplanung | wöchentlich | Patricia |
 | Kühlschrank + Kochinsel reinigen | wöchentlich | Patricia |
 | Abluftfilter reinigen | wöchentlich | Patricia |
+| Geschirrtücher/Lappen wechseln | wöchentlich | Patricia |
+| Backofen reinigen | monatlich | Patricia |
 | Alle Küchenschränke putzen | 2× im Jahr (Frühling + Herbst) | Patricia |
 
-**Hausweit (alle Räume mit Wasserhahn)**
+> Geschirrspülerpflege + Kaffeemaschine entkalken: nur wenn das Gerät es anzeigt (kein fixer Reminder).
+
+**Hausweit / wöchentlich wiederkehrend**
+| Aufgabe | Rhythmus | Wer |
+|---|---|---|
+| Zimmerpflanzen giessen | wöchentlich, Montag | Patricia |
+| Post + Papierkram sortieren | wöchentlich | Patricia |
+| Handtücher wechseln | wöchentlich | Patricia |
+| WC-Papier + Seife nachfüllen | wöchentlich | Patricia |
+
+**Hausweit / seltener**
 | Aufgabe | Rhythmus | Wer |
 |---|---|---|
 | Alle Wasserhähne entkalken | alle 3 Monate | Patricia |
+| Fenster putzen | quartalsweise | Patricia |
+
+> Über die allgemeine Einkaufsliste (kein Bot-Reminder): Waschmittel-Vorrat, Vorräte/Lebensmittel.
 
 ---
 
