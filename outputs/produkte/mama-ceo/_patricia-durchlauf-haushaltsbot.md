@@ -102,6 +102,29 @@ tags: [produkt, mama-ceo, saeule-4, intern]
 
 > Über die allgemeine Einkaufsliste (kein Bot-Reminder): Waschmittel-Vorrat, Vorräte/Lebensmittel.
 
+### Obergeschoss (OG)
+
+**Bad oben**
+| Aufgabe | Rhythmus | Wer |
+|---|---|---|
+| Bad putzen | wöchentlich | Patricia |
+| Hähne entkalken | alle 3 Monate (Teil der hausweiten Hahn-Entkalkung) | Patricia |
+
+**Alle OG-Räume**
+| Aufgabe | Rhythmus | Wer |
+|---|---|---|
+| Saugen + abstauben | wöchentlich | Patricia |
+
+**Schlafzimmer**
+| Aufgabe | Rhythmus | Wer |
+|---|---|---|
+| Bettwäsche wechseln | monatlich (Anker: nach der Mens) | Patricia |
+
+**Kinderzimmer**
+| Aufgabe | Rhythmus | Wer |
+|---|---|---|
+| Kleider-Grössen-Check (was passt nicht mehr) | 2× im Jahr (Frühling + Winter) | Patricia |
+
 ---
 
 ## 2. 4-Filter (folgt — Schritt 2)
