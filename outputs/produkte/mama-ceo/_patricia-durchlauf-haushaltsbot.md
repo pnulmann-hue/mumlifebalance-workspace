@@ -138,5 +138,62 @@ tags: [produkt, mama-ceo, saeule-4, intern]
 
 ## 2. 4-Filter (folgt — Schritt 2)
 ## 3. Haushalts-Wochenplan + Familien-Beiträge (folgt — Schritt 3)
-## 4. Saisonale/datierte Sonderaufgaben (folgt)
-## 5. Familien-/Kinder-Termine (folgt)
+## 4. Saisonale / datierte Sonderaufgaben
+
+**Kinder saisonal**
+| Aufgabe | Rhythmus | Wer |
+|---|---|---|
+| Kleider-Grössen-Check (siehe OG Kinderzimmer) | 2× im Jahr (Frühling + Winter) | Patricia |
+| Schuh-Grössen-Check | 2× im Jahr (Frühling + Herbst) | Patricia |
+| Ski-/Winterausrüstung bereitmachen | Herbst/Winter | Patricia |
+| Badesachen + Sonnencreme/Hut bereit | Frühling/Sommer | Patricia |
+| Fasnachts-Kostüm organisieren | vor Fasnacht (Feb) | Patricia |
+
+**Haus/Admin saisonal**
+| Aufgabe | Rhythmus | Wer |
+|---|---|---|
+| Reifenwechsel | 2× im Jahr (Frühling + Herbst) | — |
+| Steuererklärung | jährlich (Frühling) | Patricia |
+| Adventsdeko + Adventskalender vorbereiten | jährlich (Ende Nov) | Patricia |
+| Weihnachtsdeko raus / weg | jährlich (Dez) | Patricia |
+| Osternester / Oster-Deko | jährlich (vor Ostern) | Patricia |
+| Winterkleider waschen + verräumen, Frühlingsschuhe rein (siehe UG) | Frühling | Patricia |
+| (Gegenstück Herbst: Sommer raus, Winter rein) | Herbst | Patricia |
+
+> Rauchmelder: meldet sich selbst (kein Reminder). Rest (Matratzen, Vorhänge, Gefrierschrank …): nach Bedarf.
+
+---
+
+## 5. Familien- / Kinder-Termine
+
+**⚡ Sofort / anstehend (gleich in den Bot/Notion)**
+| Aufgabe | Wann | Wer |
+|---|---|---|
+| Zahnarzt-Termin anrufen (für Sommer) | jetzt im Juni | Patricia |
+| Frauenarzt-Termin machen (überfällig) | bald | Patricia |
+
+**🎂 Geburtstage — Geschenk besorgen (Reminder ~10-14 Tage vorher)**
+| Person | Datum | Geschenk-Reminder |
+|---|---|---|
+| Kind | 18.3. | ~Anfang März |
+| Kind | 6.6. | ~Ende Mai |
+| Mann | 24.6. | ~Mitte Juni |
+| Kind | 27.7. | ~Mitte Juli |
+| Patenkind (Mann) | 24.9. | ~Mitte Sept |
+| Patenkind (Patricia) | 6.11. | ~Ende Okt |
+| Kind | 20.12. | ~Anfang Dez |
+
+> Weitere Geburtstage: nach Bedarf (kein fixer Reminder).
+
+**🦷 Gesundheits-Termine (mit fixem Rhythmus)**
+| Aufgabe | Rhythmus | Wer |
+|---|---|---|
+| Zahnkontrolle Patricia | jährlich, Sommer | Patricia |
+
+> Bei Bedarf (kein fixer Reminder): Zahnarzt Kinder · Augenarzt · Coiffeur. Weg: Kinderarzt-Check, Hausarzt, Tierarzt, Physio.
+
+**🏫 Schule + Instrument**
+| Aufgabe | Rhythmus | Wer |
+|---|---|---|
+| Schultermine des Kindes ins System übertragen | quartalsweise (kommen pro Quartal) | Patricia |
+| Instrument üben (3 Kinder, je 15 Min) | täglich | Kinder (Patricia erinnert) |
