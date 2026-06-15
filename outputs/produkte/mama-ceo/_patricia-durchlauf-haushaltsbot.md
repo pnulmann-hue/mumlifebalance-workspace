@@ -136,8 +136,12 @@ tags: [produkt, mama-ceo, saeule-4, intern]
 
 ---
 
-## 2. 4-Filter (folgt — Schritt 2)
-## 3. Haushalts-Wochenplan + Familien-Beiträge (folgt — Schritt 3)
+## 2. 4-Filter — erledigt
+Umgesetzt über die Spalte **Wer** (Patricia / Mann / Kinder) + Sektion 7 (Familien-Beiträge/Ämtli). „Nach Bedarf"/„bei Anzeige"-Sachen kriegen keinen fixen Reminder.
+
+## 3. Haushalts-Wochenplan + Familien-Beiträge — lebt jetzt in Notion
+→ Notion-DB **🏠 Haushalts-Liste** im Privat-Bereich (77 Einträge): https://app.notion.com/p/745ae1271f034dc083d4a6a8058d99dc
+→ Bot-Prompt: `bonus-haushalts-helfer-bot-PATRICIA.md`
 ## 4. Saisonale / datierte Sonderaufgaben
 
 **Kinder saisonal**
