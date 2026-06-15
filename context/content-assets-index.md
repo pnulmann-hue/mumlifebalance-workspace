@@ -66,11 +66,23 @@ Camera-Ordner von **462 → 266 Bildern** entrümpelt. Neue/befüllte Ziel-Ordne
 
 **Entscheidung Patricia:** nur klare Business-Perlen + saubere Cluster (Screenshots, große Familientage) sortieren; **Rest (266 Bilder) bleibt in Camera** = überwiegend Privates (Garten, Natur, Essen, Familie, private Makros) → swipet Patricia bei Gelegenheit selbst.
 
+## 🎬 Video-Sortier-Stand (2026-06-15)
+
+131 Camera-Videos → **53 Rest**. Klassifiziert per ffmpeg-Standbild + Tages-Kontext:
+
+| Ziel | Inhalt | Videos |
+|---|---|---|
+| `DCIM/Reel-Videos` | Talking-Head-Sessions (22.4./13.5./21.5./26.5.) + Wasserfall-B-Roll (26.4.) + 12 Rohclips | **54** |
+| `DCIM/Familie` | Familientage-Videos (17.4./15.4./24.5.) | +28 |
+| `DCIM/Businessfotos-Videos` | doTERRA-Convention-Clips (28.–29.5.) | +8 |
+
+**Rest (53 Videos in Camera)** = privat/gemischt (Garten, Home, Hüte, kleine Tage). Bleibt liegen.
+**Tipp:** Auf dem 6.4. liegen noch schöne **Alpstein-Panorama-Clips** in Camera — falls Patricia Berg-B-Roll für Reels braucht, dort holen.
+
 ## 📋 To-do / offen
 
-- [ ] **131 Camera-Videos** noch ungesichtet (privat/Business gemischt) — reel-taugliche bei Bedarf nach `Reel-Videos`
 - [ ] Nach Bestätigung: OneDrive-Original-Clips löschen (Patricias „Verschieben")
-- [ ] 266 Rest-Camera-Bilder: Privat-Swipe durch Patricia
+- [ ] 266 Rest-Camera-Bilder + 53 Rest-Videos: Privat-Swipe durch Patricia (optional)
 - [ ] Grenzfälle 24.5. (Blatt, Haut-Makro) liegen noch in Camera
 
 ## 🔗 Verwandte Notizen
