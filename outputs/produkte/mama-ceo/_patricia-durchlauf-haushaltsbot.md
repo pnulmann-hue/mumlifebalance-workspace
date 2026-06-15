@@ -228,3 +228,28 @@ tags: [produkt, mama-ceo, saeule-4, intern]
 | Aufgabe | Rhythmus | Notiz |
 |---|---|---|
 | Festes Paar-Ritual / Zeit zu zweit | Wunsch: noch zu etablieren | Sonntag-Wanderung besteht schon |
+
+> Wochenende: feste Slots dauern „nur" ~2 h, der Rest des Tages ist frei für anderes — bei Patricia am ehesten Haushalt, oder mit Einkauf verbinden.
+
+---
+
+## 7. Familien-Beiträge / Ämtli (Delegation — 4-Filter „D")
+
+**👧🧒 Kinder-Ämtli** (Bot erinnert ans Einfordern, nicht Patricia ans Selbermachen)
+| Ämtli | Rhythmus | Notiz |
+|---|---|---|
+| Abtrocknen | täglich | |
+| Tisch abräumen | täglich | |
+| Geschirrspüler ausräumen | täglich | |
+| Altglas aus Küche in den Keller | täglich / nach Bedarf | |
+| Karton + Altpapier in den Keller | laufend (Sammelgang Mi-Abend) | |
+| Eigenes Zimmer aufräumen | täglich (kurz) — Rhythmus bestätigen? | |
+| Eigene Bettwäsche wechseln | Rhythmus bestätigen (monatlich?) | die Grossen selbst |
+| Wäsche falten + verräumen | pro Waschgang / wöchentlich — bestätigen? | |
+| UG saugen + aufnehmen | wöchentlich — bestätigen? | (ersetzt Patricias UG-Saugen) |
+
+**👨 Mann**
+| Beitrag | Rhythmus | Notiz |
+|---|---|---|
+| Tumbler + Waschmaschine Wartung | jährlich | (schon erfasst) |
+| Reifenwechsel | 2× im Jahr | |
