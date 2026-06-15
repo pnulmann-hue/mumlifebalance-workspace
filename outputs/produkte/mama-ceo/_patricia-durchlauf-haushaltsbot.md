@@ -197,3 +197,34 @@ tags: [produkt, mama-ceo, saeule-4, intern]
 |---|---|---|
 | Schultermine des Kindes ins System übertragen | quartalsweise (kommen pro Quartal) | Patricia |
 | Instrument üben (3 Kinder, je 15 Min) | täglich | Kinder (Patricia erinnert) |
+
+---
+
+## 6. Weitere Rollen — Aufgaben & wöchentliche Slots
+
+### 👪 Tochter / Familie — AKTUELLE Priorität (zeitlich begrenzt)
+| Aufgabe | Rhythmus | Notiz |
+|---|---|---|
+| Mama nachmittags zur Therapie fahren | täglich, aktuell laufend | Nachmittage aktuell geblockt → Bot/Wochenplan berücksichtigen |
+
+### 🧘 Selbst / Me-Time (Schutz, kein Druck)
+| Aufgabe | Rhythmus | Notiz |
+|---|---|---|
+| Krafttraining | Mo / Mi / Fr | Zeit flexibel (nicht mehr fix 5:15) |
+| Halber Tag Auszeit | wöchentlich (Wochentag noch offen) | Buch / Kaffee mit Freundin / Sauna — als Slot schützen |
+| Sauna | 2× im Monat (eher Herbst–Frühling) | |
+
+### 🏛️ Verwaltungsrätin
+| Aufgabe | Rhythmus | Notiz |
+|---|---|---|
+| VR-Slot (Unterlagen / Mandat) | wöchentlich, Freitag, ~2 h | Sitzungen kommen separat, nicht in der Tiefe geplant |
+
+### 👭 Freundin
+| Aufgabe | Rhythmus | Notiz |
+|---|---|---|
+| Freundinnen-Treffen | Wunsch: regelmässig (Rhythmus noch festlegen) | regelmässig sehen |
+
+### 👩‍❤️‍👨 Frau / Partnerin
+| Aufgabe | Rhythmus | Notiz |
+|---|---|---|
+| Festes Paar-Ritual / Zeit zu zweit | Wunsch: noch zu etablieren | Sonntag-Wanderung besteht schon |
