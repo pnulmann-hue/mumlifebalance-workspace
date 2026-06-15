@@ -53,11 +53,25 @@ Patricias Canva-Ordner mit gesammelten Reel-Videos lässt sich **nicht automatis
 
 ---
 
+## 🧹 Camera-Sortier-Stand (2026-06-15)
+
+Camera-Ordner von **462 → 266 Bildern** entrümpelt. Neue/befüllte Ziel-Ordner:
+
+| Ordner (Handy) | Inhalt | Anzahl |
+|---|---|---|
+| `DCIM/Familie` | Familientage (Strand 7.6., Wanderung 24.5., Bergtag 17.4., Zoo 15.4.) | 134 |
+| `DCIM/Kurs-Screenshots` | Webinar-/Kurs-Folien (Sales Angels, Claude Master, Zoom) | 35 |
+| `DCIM/Businessfotos-Videos` | doTERRA Sun, Lifestyle, **doTERRA-Convention 27.–29.5.** | 28 |
+| `DCIM/Reel-Videos` | Reel-Rohclips | 12 |
+
+**Entscheidung Patricia:** nur klare Business-Perlen + saubere Cluster (Screenshots, große Familientage) sortieren; **Rest (266 Bilder) bleibt in Camera** = überwiegend Privates (Garten, Natur, Essen, Familie, private Makros) → swipet Patricia bei Gelegenheit selbst.
+
 ## 📋 To-do / offen
 
-- [ ] Patricia triagiert die 130 `Camera`-Videos → reel-taugliche nach `DCIM/Reel-Videos` verschieben
+- [ ] **131 Camera-Videos** noch ungesichtet (privat/Business gemischt) — reel-taugliche bei Bedarf nach `Reel-Videos`
 - [ ] Nach Bestätigung: OneDrive-Original-Clips löschen (Patricias „Verschieben")
-- [ ] Story-Bilder bei Bedarf weiter ausdünnen (schon gepostete raus) — manuell durch Patricia
+- [ ] 266 Rest-Camera-Bilder: Privat-Swipe durch Patricia
+- [ ] Grenzfälle 24.5. (Blatt, Haut-Makro) liegen noch in Camera
 
 ## 🔗 Verwandte Notizen
 
