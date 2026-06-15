@@ -45,6 +45,7 @@ Auto-Index aller Files in `outputs/karussells/`. Siehe [[_MOCs/MOC-Content-Engin
 - [[20260429-mentoring-3-saetze-bio-caption]]
 - [[20260501-doterra-wendepunkt-mit-36-caption]]
 - [[20260501-mentoring-bio-4-zeilen-caption]]
+- [[2026-06-15-mentoring-kw25-aufwaerm-briefings]]
 - [[2026-06-bootcamp-promo-viral/briefing]]
 
 ### 📁 master-template-guide

@@ -27,6 +27,7 @@ Auto-Index aller Files in `outputs/reels/`. Siehe [[_MOCs/MOC-Content-Engine]] f
 - [[2026-05-26-mentoring-kw22-3-tage-offline-briefing]]
 - [[2026-05-26-mentoring-kw22-networkerin-menschen-briefing]]
 - [[2026-06-09-was-man-nicht-sieht-briefing]]
+- [[2026-06-15-kw25-drehtag-master]]
 - [[2026-KW17-doterra-hot-take-salat-reicht-nicht]]
 - [[2026-KW17-doterra-koerper-schreit]]
 - [[2026-KW17-doterra-pov-7-min-abendroutine]]
