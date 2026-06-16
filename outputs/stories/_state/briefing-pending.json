@@ -1,67 +1,57 @@
 {
-  "datum": "2026-06-16",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": true,
-        "phase": "aufwaermphase",
-        "tag_im_launch": 2,
-        "vorlage": "Blick hinter die Kulissen",
-        "titel": "Was in 5 Tagen passiert",
-        "story_ziel": "Tag-für-Tag-Plan zeigen (Bio, Hooks, Zeit, Leadmagnet, roter Faden) + PIA als KI-Mentorin vorstellen.",
-        "kaeufertyp": "Frank",
-        "cta": "DM BOOTCAMP für die Anmeldung",
-        "cta_keyword": "BOOTCAMP"
-      },
-      "kontext_snapshot": {
-        "kw": 25,
-        "wochentag": "Dienstag",
-        "datum": "2026-06-16"
-      },
-      "gesendet_am": "2026-06-16T04:42:00.910Z",
-      "telegram_message_id": 724,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "done"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Persönliche Story / Dein Weg",
-        "titel": "Persönliche Story / Dein Weg",
-        "story_ziel": "Identifikation über Patricias eigene Geschichte (Wendepunkt, 4 Kinder, Funktionsmodus).",
-        "kaeufertyp": "Amelie",
-        "cta": "ECHT1 (Von 0 auf echt) oder thematisch passend",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 25,
-        "wochentag": "Dienstag",
-        "datum": "2026-06-16"
-      },
-      "gesendet_am": "2026-06-16T04:42:01.810Z",
-      "telegram_message_id": 725,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "doterra",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "15.–21. Juni 2026 (KW 25) — Bootcamp-Promo Start (Anmeldung öffnet)",
+  "wochen_fokus": "Kostenloses 5-Tage-PIA-Bootcamp bewerben (Anmeldung öffnet ~Mo 15.6.). Teaser z.B. „5 Hook-Ideen anpassbar an dein Network\" → live mit PIA im Bootcamp. Feed darf einladen (Bootcamp = kostenlos); MBA/Preis bleibt raus.",
+  "sales_pattern": "Lead-Sammeln: kostenloses Bootcamp bewerben. Kein MBA-Pitch im Feed.",
+  "wochen_cta": "Kostenlose Bootcamp-Anmeldung (Link in Bio) — „Mama-Business-Bootcamp, 5 Tage, mit PIA\".",
+  "monat_kontext": "Juni = MBA-Launch-Monat — als 5-Tage-PIA-Bootcamp (Pivot 8.6.2026, KEIN Webinar). KW24 Reichweite · KW25–26 Bootcamp-Promo (Anmeldung ab ~15.6.) · KW27 (29.6.–3.7.) Bootcamp LIVE → Cart-Open Fr 3.7., MBA Pioneer 997, Cart-Close tight Anfang Juli, Programmstart August. Verkauf via Bootcamp+Stories+Mails; Feed bleibt programm-frei. Mama-CEO-Pilot-Ladys wechseln Ende Juli in die MBA.",
+  "produkt_themen": {
+    "name": "Mama-Business-Bootcamp (Arbeitstitel)",
+    "painpoint": "Verzetteln, kein roter Faden, kein eigenes planbares Einkommen neben der Familie",
+    "transformation": "In 5 Tagen erster klarer Business-Schritt — live erlebt mit PIA (KI-Mentorin): personalisierte Bio, Hooks etc. für IHR Business",
+    "zielgruppe": "Mamas im Network, die sich verzetteln, viele Kurse halb gemacht haben und einen roten Faden + Begleitung suchen",
+    "pillar": "Vom Verzetteln zum roten Faden — Business neben der Familie"
+  },
+  "vorschlag_idee": null,
+  "wochen_fokus_quelle": "notion-live",
+  "launch_tag": {
+    "datum": "2026-06-16",
+    "phase": "aufwaermphase",
+    "julia_vorlage": "hinter-den-kulissen",
+    "titel": "Was in 5 Tagen passiert",
+    "story_ziel": "Tag-für-Tag-Plan zeigen (Bio, Hooks, Zeit, Leadmagnet, roter Faden) + PIA als KI-Mentorin vorstellen.",
+    "kaeufertyp": "Frank",
+    "cta": "DM BOOTCAMP für die Anmeldung",
+    "cta_keyword": "BOOTCAMP",
+    "profil": "mentoring"
+  },
+  "launch_vorlage": {
+    "name": "Blick hinter die Kulissen",
+    "phase": "aufwaermphase",
+    "ziel": "Community mit hinter die Kulissen nehmen, Nahbarkeit + Spannung.",
+    "julia_anleitung": "Zeige woran du gerade arbeitest. Branding, Post-It-Wand, Vorbereitung. Nutze Countdown-Button. Viele kaufen nicht, weil sie nicht wissen was drinsteckt — zeig den Prozess.",
+    "kaeufertyp": "Rudi + Frank (Fakten)",
+    "slide_bogen": "Hook (was siehst du grad) → Einblick Prozess/Material → warum dir das wichtig ist → Vorfreude-CTA"
+  },
+  "kontext_snapshot": {
+    "kw": 25,
+    "wochentag": "Dienstag",
+    "datum": "2026-06-16"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-06-16T09:40:44.658Z",
+  "telegram_message_id": 730,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
