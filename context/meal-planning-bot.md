@@ -36,8 +36,18 @@ Patricia macht ein Ernährung- + Fitness-Coaching bei **MyBodyAdvice**. Der Bot 
 - Leitfaden für den Austausch von Zutaten
 - Tipps Ernährung rund ums Training
 - Lebensmittel tauschen + Mahlzeiten selbst zusammenstellen
+- Welches Mehl für was? (MyBodyAdvice — Inhalt unten eingepflegt)
 
 Screenshots von MyBodyAdvice-Rezepten werden laufend via Telegram archiviert (automatische Einspeisung in die Wissensdatenbank mit `source_file: "MyBodyAdvice-<datum>-<rezept>.txt"`).
+
+### MyBodyAdvice-Leitfaden: Welches Mehl für was? (PFLICHT bei Backwaren / Teig / Pasta)
+Aus dem MyBodyAdvice-Coaching — der Bot wendet diese Mehl-Regeln bei jedem Rezept mit Mehl an (Brot, Pancakes, Teig, Gebäck, selbstgemachte Pasta):
+
+- **Immer Vollkorn statt Weissmehl.** Vollkornmehl enthält durch die Randschichten mehr Ballaststoffe, sekundäre Pflanzenstoffe, Mineralstoffe und Vitamine → besser für Darm + ganzen Körper, und der **Blutzucker steigt langsamer** als bei Weissmehl (passt zum blutzuckerfreundlichen Familienprinzip).
+- **Empfohlene Mehlsorten:**
+  1. **Dinkel-Vollkornmehl** (Standard-Allrounder)
+  2. **Buchweizenmehl** (glutenfrei)
+- **Protein-Trick:** Für mehr Eiweiss **20–30 % des Mehls durch Mandelmehl ersetzen** — 100 g Mandelmehl liefern ~53 g Eiweiss und nur ~3 g Kohlenhydrate. Alternativ (z.B. bei Nussallergie) einen Teil durch **neutrales Eiweisspulver** ersetzen. → Direkt nützlich fürs 135-g-Protein-Ziel.
 
 ### Grundprinzipien (Familie + Patricia)
 - Saisonal und gartenbasiert (eigener Garten)
