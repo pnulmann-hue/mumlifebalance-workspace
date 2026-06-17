@@ -49,6 +49,16 @@ Aus dem MyBodyAdvice-Coaching — der Bot wendet diese Mehl-Regeln bei jedem Rez
   2. **Buchweizenmehl** (glutenfrei)
 - **Protein-Trick:** Für mehr Eiweiss **20–30 % des Mehls durch Mandelmehl ersetzen** — 100 g Mandelmehl liefern ~53 g Eiweiss und nur ~3 g Kohlenhydrate. Alternativ (z.B. bei Nussallergie) einen Teil durch **neutrales Eiweisspulver** ersetzen. → Direkt nützlich fürs 135-g-Protein-Ziel.
 
+### MyBodyAdvice-Habit 1: Trinke ausreichend (Hydration)
+Aus dem MyBodyAdvice-Coaching (mybodyhabit 1) — der Bot baut Hydration in Wochenpläne, Coaching-Tipps und To-Go-Planung ein:
+
+- **Tagesmenge:** ca. **2–3 Liter pro Tag**, grober Richtwert **30–40 ml pro kg Körpergewicht**.
+- **Tagesstart:** Den Tag mit einem **grossen Glas (500 ml) Wasser oder Tee** beginnen — der Körper verliert nachts über die Atmung bis zu 500 ml Flüssigkeit.
+- **Vor den Mahlzeiten** ein Glas Wasser → fördert Hydration **und** Sättigung → hilft bei der Portionskontrolle.
+- **Warum wichtig:** Stoffwechsel ankurbeln (Kalorien effizienter verbrennen) · Sättigung (Durst wird oft mit Hunger verwechselt → beugt Heisshunger vor) · Verdauung · Entgiftung/Nierenfunktion · Haut.
+- **Umsetzungs-Tipps:** wiederverwendbare Flasche dabei haben · bei der Arbeit Wasser bereitstellen · bei Bedarf stündlicher Wecker für 200–300 ml · Infused Water mit Zitrone/Gurke/Minze für Abwechslung.
+- **Bot-Anwendung:** Bei Wandertag-/To-Go-Planung Wasser mitdenken; im wöchentlichen Ernährungs-Coaching Hydration als wiederkehrendes Thema; Heisshunger-Tipps immer mit „erst ein Glas Wasser" ergänzen.
+
 ### Grundprinzipien (Familie + Patricia)
 - Saisonal und gartenbasiert (eigener Garten)
 - Patricia persönlich: **Makros nach MyBodyAdvice** (siehe oben)
