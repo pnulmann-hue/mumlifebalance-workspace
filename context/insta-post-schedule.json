@@ -1,0 +1,21 @@
+{
+  "_doc": "Zentrale Liste aller via Blotato eingeplanten Insta-Posts für Mentoring + doTERRA. Wird vom Cockpit-Bot 19:00 gelesen für täglichen Live-Check. Updates: bei jedem neuen Schedule via Blotato-API erweitern.",
+  "_updated": "2026-06-17",
+  "schedule": [
+    { "date": "2026-06-15", "time": "18:30", "type": "karussell", "slug": "bootcamp-promo-viral", "profile": "mentoring", "submission": null, "verified_live": null },
+    { "date": "2026-06-16", "time": "18:30", "type": "karussell", "slug": "echt1-leadmagnet", "profile": "mentoring", "submission": "a96005e1-2ab6-49e5-a851-c7137de19fda", "note": "nachgepostet 17.6. ~10:08 UTC (Catch-up)", "verified_live": null },
+    { "date": "2026-06-17", "time": "18:30", "type": "reel", "slug": "sponsorin-poste-mehr", "profile": "mentoring", "submission": "c86c759e-b2dc-4a88-a31a-49a43fc92aba", "verified_live": null },
+    { "date": "2026-06-18", "time": "18:30", "type": "karussell", "slug": "story-putzen", "profile": "mentoring", "submission": null, "verified_live": null },
+    { "date": "2026-06-19", "time": "18:30", "type": "reel", "slug": "webinar-bootcamp-pivot", "profile": "mentoring", "submission": null, "verified_live": null },
+    { "date": "2026-06-22", "time": "18:30", "type": "reel", "slug": "bootcamp-was-passiert", "profile": "mentoring", "submission": null, "verified_live": null },
+    { "date": "2026-06-23", "time": "18:30", "type": "karussell", "slug": "echt1-teamcall-anfrage", "profile": "mentoring", "submission": "90a32de0-4cb7-4871-beed-dab1d92f4a65", "verified_live": null },
+    { "date": "2026-06-24", "time": "18:30", "type": "reel", "slug": "liebe-kinder-mein-ding", "profile": "mentoring", "submission": null, "verified_live": null },
+    { "date": "2026-06-25", "time": "18:30", "type": "reel", "slug": "bootcamp-sommer-postest", "profile": "mentoring", "submission": null, "verified_live": null },
+    { "date": "2026-06-26", "time": "18:30", "type": "karussell", "slug": "bootcamp-aus-dem-bauch", "profile": "mentoring", "submission": null, "verified_live": null },
+    { "date": "2026-06-29", "time": "18:30", "type": "karussell", "slug": "100-follower-anfragen", "profile": "mentoring", "submission": null, "verified_live": null },
+    { "date": "2026-06-30", "time": "18:30", "type": "reel", "slug": "mein-mittwoch", "profile": "mentoring", "submission": null, "verified_live": null },
+    { "date": "2026-07-01", "time": "18:30", "type": "karussell", "slug": "network-standbein", "profile": "mentoring", "submission": "5eac35b3-46f3-4e79-80e5-9d31ca12e0e5", "verified_live": null },
+    { "date": "2026-07-02", "time": "18:30", "type": "single-image", "slug": "5-mamas-zusammen", "profile": "mentoring", "submission": "f2adeaf9-86c1-4cc8-89fd-ffa575ca134b", "verified_live": null },
+    { "date": "2026-07-03", "time": "18:30", "type": "reel", "slug": "heute-oeffnet-sich", "profile": "mentoring", "submission": null, "verified_live": null }
+  ]
+}

@@ -34,6 +34,7 @@ import notion_writer
 import briefing_builder
 import news_fetcher
 import ads_fetcher
+import posting_checker
 
 logging.basicConfig(
     level=logging.INFO,
@@ -165,6 +166,51 @@ async def cmd_status(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # ========================================
 # Scheduled Tasks
 # ========================================
+async def task_posting_check_abend():
+    """Mo-Fr 19:00 — Posting-Check: heute live im Feed?"""
+    if not config.TELEGRAM_CHAT_ID:
+        logger.warning("Telegram-Chat-ID fehlt — Posting-Check übersprungen")
+        return
+    try:
+        heute = date.today()
+        if heute.weekday() >= 5:  # Sa/So → kein Check
+            return
+        msg = posting_checker.format_posting_check_message(heute)
+        if not msg:
+            logger.info(f"Posting-Check {heute}: keine geplanten Posts → kein Push")
+            return
+        await _send_telegram(msg)
+        logger.info(f"Posting-Check {heute} an Patricia geschickt")
+    except Exception:
+        logger.exception("task_posting_check_abend crashed")
+
+
+async def cmd_posting_ja(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Patricia bestätigt: alle Posts heute live."""
+    await update.message.reply_text(
+        "✅ Super — Posting heute durch.\n"
+        "Ich frag morgen 19:00 wieder."
+    )
+
+
+async def cmd_posting_nein(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Patricia: etwas fehlt. Sie schreibt dazu was."""
+    args = " ".join(context.args).strip() if context.args else ""
+    if args:
+        msg = (
+            f"⚠️ Verstanden — fehlt: *{args}*\n\n"
+            "Schreib mir kurz welcher Slug genau, dann starte ich Catch-up.\n"
+            "Oder lass es manuell + ich erinnere dich morgen wieder."
+        )
+    else:
+        msg = (
+            "⚠️ Verstanden — was genau fehlt?\n"
+            "Antworte mit `/posting_nein <slug>` oder beschreib's kurz.\n"
+            "Ich kann dann Catch-up direkt starten."
+        )
+    await update.message.reply_text(msg, parse_mode="Markdown")
+
+
 async def task_business_news_montag():
     """Mo 08:00 — Wochen-Business-News-Digest (KI + Onlinemarketing + Network Marketing + Mama-CEO)."""
     if not config.TELEGRAM_CHAT_ID:
@@ -340,6 +386,8 @@ async def main():
     app.add_handler(CommandHandler("cockpit", cmd_cockpit))
     app.add_handler(CommandHandler("news", cmd_news))
     app.add_handler(CommandHandler("status", cmd_status))
+    app.add_handler(CommandHandler("posting_ja", cmd_posting_ja))
+    app.add_handler(CommandHandler("posting_nein", cmd_posting_nein))
 
     # Scheduler
     tz = pytz.timezone(config.TIMEZONE)
@@ -361,8 +409,17 @@ async def main():
         id="business_news_montag",
         name="Mo 08:00 Business-News-Digest",
     )
+    # Mo-Fr 19:00 — Posting-Check (heute live?)
+    scheduler.add_job(
+        task_posting_check_abend,
+        CronTrigger(day_of_week="mon-fri", hour=19, minute=0, timezone=tz),
+        id="posting_check_abend",
+        name="Mo-Fr 19:00 Posting-Check",
+    )
     scheduler.start()
-    logger.info(f"Scheduler aktiv: 06:30 Tagesbriefing + Mo 08:00 Business-News {config.TIMEZONE}")
+    logger.info(
+        f"Scheduler aktiv: 06:30 Tagesbriefing + Mo 08:00 Business-News + Mo-Fr 19:00 Posting-Check {config.TIMEZONE}"
+    )
 
     await app.initialize()
     await app.start()
