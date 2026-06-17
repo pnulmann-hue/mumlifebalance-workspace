@@ -31,12 +31,23 @@ Patricia macht ein Ernährung- + Fitness-Coaching bei **MyBodyAdvice**. Der Bot 
 - Snack: ~250 kcal / 20g P / 25g KH / 8g F
 - Abend: ~600 kcal / 45g P / 55g KH / 20g F
 
+**Ziel & Kontext der Makros:** Die 1850 kcal sind ein **Defizit-Ziel** im Rahmen von Patricias MyBodyAdvice-Coaching mit dem Ziel **10 kg Abnahme**. Der hohe Protein-Wert (135 g) schützt dabei die Muskelmasse. Der Bot plant entsprechend sättigend + proteinreich, ohne ins Verbots-Denken zu kippen.
+
+**MyBodyAdvice-Coachingreise (12-Monats-Phasen):**
+- **Monat 1–3:** Erste Pläne / Kennenlernen, neue Routinen etablieren, Kalorienbasis schaffen
+- **Monat 4–8:** Neue Routinen sind zu Gewohnheiten geworden, Erfolge weiter ausbauen
+- **Monat 9–10:** Weitere Zielerreichung **oder** Etablierung von Erhaltungskalorien je nach Fortschritt; ggf. nächstes Ziel (z.B. gezielter Muskelaufbau)
+- **Monat 11(–12):** Ernährungspläne mit **Erhaltungskalorien**, um den Erfolg langfristig zu halten
+
+> Bei späterem Phasenwechsel (Erhaltung / Muskelaufbau) ändern sich die Makro-Zielwerte oben — dann hier aktualisieren.
+
 **Wissensdokumente zu beachten (hochgeladen als PDFs):**
 - Ernährungsplan MyBodyAdvice
 - Leitfaden für den Austausch von Zutaten
 - Tipps Ernährung rund ums Training
 - Lebensmittel tauschen + Mahlzeiten selbst zusammenstellen
 - Welches Mehl für was? (MyBodyAdvice — Inhalt unten eingepflegt)
+- Deine Coachingreise – 10 kg Abnahme (MyBodyAdvice — Phasen oben eingepflegt)
 
 Screenshots von MyBodyAdvice-Rezepten werden laufend via Telegram archiviert (automatische Einspeisung in die Wissensdatenbank mit `source_file: "MyBodyAdvice-<datum>-<rezept>.txt"`).
 
