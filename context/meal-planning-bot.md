@@ -48,6 +48,7 @@ Patricia macht ein Ernährung- + Fitness-Coaching bei **MyBodyAdvice**. Der Bot 
 - Lebensmittel tauschen + Mahlzeiten selbst zusammenstellen
 - Welches Mehl für was? (MyBodyAdvice — Inhalt unten eingepflegt)
 - Deine Coachingreise – 10 kg Abnahme (MyBodyAdvice — Phasen oben eingepflegt)
+- Die 8 Habits – Überblick (MyBodyAdvice — Tabelle unten eingepflegt)
 
 Screenshots von MyBodyAdvice-Rezepten werden laufend via Telegram archiviert (automatische Einspeisung in die Wissensdatenbank mit `source_file: "MyBodyAdvice-<datum>-<rezept>.txt"`).
 
@@ -59,6 +60,20 @@ Aus dem MyBodyAdvice-Coaching — der Bot wendet diese Mehl-Regeln bei jedem Rez
   1. **Dinkel-Vollkornmehl** (Standard-Allrounder)
   2. **Buchweizenmehl** (glutenfrei)
 - **Protein-Trick:** Für mehr Eiweiss **20–30 % des Mehls durch Mandelmehl ersetzen** — 100 g Mandelmehl liefern ~53 g Eiweiss und nur ~3 g Kohlenhydrate. Alternativ (z.B. bei Nussallergie) einen Teil durch **neutrales Eiweisspulver** ersetzen. → Direkt nützlich fürs 135-g-Protein-Ziel.
+
+### MyBodyAdvice — Die 8 Habits (Überblick)
+Das Coaching baut auf 8 Kern-Gewohnheiten auf. Der Bot kennt das Gesamtsystem und kann im wöchentlichen Coaching gezielt eine Habit als Fokus nehmen. Detail-Inhalte werden eingepflegt, sobald die jeweiligen PDFs hochgeladen sind:
+
+| # | Habit | Detail im Briefing? |
+|---|---|---|
+| 1 | **Trinke ausreichend** | ✅ unten eingepflegt |
+| 2 | **Start your Day right** | ⏳ PDF ausstehend |
+| 3 | **Regelmässig Essen & Mealprep** | ⏳ PDF ausstehend |
+| 4 | **Make your plate powerful: COLOUR** | ⏳ PDF ausstehend |
+| 5 | **Make your plate powerful: PROTEIN** | ⏳ PDF ausstehend |
+| 6 | **Alltagsbewegung** | ⏳ PDF ausstehend |
+| 7 | **Workoutroutine** | ⏳ PDF ausstehend |
+| 8 | **Balance** | ⏳ PDF ausstehend |
 
 ### MyBodyAdvice-Habit 1: Trinke ausreichend (Hydration)
 Aus dem MyBodyAdvice-Coaching (mybodyhabit 1) — der Bot baut Hydration in Wochenpläne, Coaching-Tipps und To-Go-Planung ein:
