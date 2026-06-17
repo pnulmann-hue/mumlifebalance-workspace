@@ -44,9 +44,10 @@ Patricia macht ein Ernährung- + Fitness-Coaching bei **MyBodyAdvice**. Der Bot 
 **Wissensdokumente zu beachten (hochgeladen als PDFs):**
 - Ernährungsplan MyBodyAdvice
 - Leitfaden für den Austausch von Zutaten
-- Tipps Ernährung rund ums Training
+- Tipps Ernährung rund ums Training (MyBodyAdvice — „Essen vor dem Training" unten eingepflegt)
 - Lebensmittel tauschen + Mahlzeiten selbst zusammenstellen
 - Welches Mehl für was? (MyBodyAdvice — Inhalt unten eingepflegt)
+- Snackideen und Mealprep für unterwegs (MyBodyAdvice — Habit 3, unten eingepflegt)
 - Deine Coachingreise – 10 kg Abnahme (MyBodyAdvice — Phasen oben eingepflegt)
 - Die 8 Habits – Überblick (MyBodyAdvice — Tabelle unten eingepflegt)
 - E-Book „Die 8 mybodyhabits" – Einleitung & Wochenplanung (MyBodyAdvice — Inhalt unten eingepflegt)
@@ -72,7 +73,7 @@ Das Coaching baut auf 8 Kern-Gewohnheiten auf. Der Bot kennt das Gesamtsystem un
 |---|---|---|
 | 1 | **Trinke ausreichend** | ✅ unten eingepflegt |
 | 2 | **Start your Day right** | ⏳ PDF ausstehend |
-| 3 | **Regelmässig Essen & Mealprep** | ⏳ PDF ausstehend |
+| 3 | **Regelmässig Essen & Mealprep** | ✅ unten eingepflegt (Mealprep & Snacks für unterwegs) |
 | 4 | **Make your plate powerful: COLOUR** | ⏳ PDF ausstehend |
 | 5 | **Make your plate powerful: PROTEIN** | ⏳ PDF ausstehend |
 | 6 | **Alltagsbewegung** | ⏳ PDF ausstehend |
@@ -109,6 +110,28 @@ Kontext für Fitness-/Bewegungs-Fragen (Habit 6/7). 75 % der MyBodyAdvice-Frauen
 - **Booty-Bänder:** gewebte (schneiden nicht ein, z.B. Blackroll) für Bein/Po; elastische Bänder/Therabänder zum Kombinieren mit Hanteln.
 - **Gewichtsmanschetten** für die Füsse (steigern Bauch-/Beinübungen), variabel beladbar.
 - **Zughilfen**, falls die Handkraft beim Heben langsamer mitwächst.
+
+### MyBodyAdvice — Mealprep & Snacks für unterwegs (Habit 3)
+„Vorbereitung ist die halbe Miete." Der Bot nutzt das direkt für To-Go-/Wandertag-/Mittagspausen-Planung:
+
+- **Be-prepared-Basics:** Besteck-Set im Auto/Handtasche · kleine Mealprep-Box/Brotdose · Salz/Pfeffer/Kräutersalz-Päckchen bereithalten · immer einen Notvorrat dabei (Proteinriegel, hart gekochte Eier, Nüsse, Linsenwaffeln, Banane).
+- **16 gesunde Supermarkt-Snacks:**
+  - *Herzhaft:* Babybel + Snackgemüse · Babykarotten + Kräuterquark · Rote Bete (Glas) + Räucherlachs · Linsenwaffeln + Hummus/Gemüseaufstrich · Hummus + Gemüse zum Dippen · Falafelbällchen · Harzer Käse mit Cherrytomaten · Vollkornknäckebrot/Linsenwaffeln als Beilage.
+  - *Süss:* Vorgeschnittene Melone + Feta · Skyr-Drink + Apfel · Kefir + Banane · körniger Frischkäse/Skyr + Apfelmark (Quetschi für Kids) · Magerquark + reife Banane · Banane + Nüsse · Proteinriegel · Skyr mit Apfelquetschie/Nüssen.
+- **12 Blitz-Mealprep-Ideen für die Mittagspause** (Supermarkt/Teeküche): z.B. Thunfisch im eigenen Saft + Mischgemüse + Mini-Mozzarella/Kichererbsen · Hüttenkäse + Salatbar + Vollkornknäckebrot · Salatbar + Hähnchen/Feta + Vollkornbrot · Körnerbrot + Hüttenkäse + Tomaten · Räucherlachs + Kichererbsen + Gemüse · Skyr + Haferflocken + Nüsse · vorgegarter Reis + Thunfisch + Gemüse · Ofenkartoffel + Kräuterquark (light) + Gemüse.
+- **Kantinen-/Salatbar-Tipp:** statt fertiger Dressings → **pures Olivenöl + Balsamico**.
+- **Der gesunde Teller (Makroverteilung beim Selber-Zusammenstellen):** **½ Gemüse · ¼ Proteine · ¼ Kohlenhydrate.** Protein bevorzugt Fleisch (keine Wurst, nicht mariniert), Feta, Fisch, Tofu.
+- **Ess-Reihenfolge für stabilen Blutzucker:** **1. Gemüse → 2. Proteine → 3. Kohlenhydrate.**
+
+### MyBodyAdvice — Essen vor dem Training (Tipps Ernährung rund ums Training)
+Wichtig v.a. bei Patricias Morgen-Workouts und im Kaloriendefizit:
+
+- **Nicht nüchtern trainieren!** Sind Glykogenspeicher leer + Magen leer, baut der Körper über **Glukoneogenese Muskelmasse ab** für Energie — das Gegenteil des Ziels.
+- **Warum vorher essen:** mehr Energie/Leistung · Muskelaufbau + -erhalt (besonders im Defizit) · stabiler Blutzucker + weniger Heisshunger danach · hormonelle Balance/Zyklusgesundheit (Fasten + intensives Training → Cortisol-Dominanz, gerade bei Frauen kontraproduktiv).
+- **Timing:** ideal **60–90 Min vorher** eine Mahlzeit (z.B. Frühstück); wenig Zeit → **15–30 Min vorher** ein kleiner Snack.
+- **Beste Nährstoffe:** Kohlenhydrate = schnelle Energie (Hafer, Obst, Reiswaffeln) · leicht verdauliches Eiweiss = Muskelschutz (Proteinpulver, Joghurt, Hüttenkäse, Skyr) · etwas Fett ok, aber nicht zu viel (verlangsamt Verdauung).
+- **Schnelle Pre-Workout-Snacks:** Banane + Hüttenkäse + Zimt · Dattel + Skyr · Reiswaffel + Ahornsirup · ½ Beeren-Smoothie + Protein · Medjool-Dattel + 1 TL Mandelmus · Proteinshake + Dattel/Banane.
+- **Merksatz:** „Essen vor dem Training ist kein Rückschritt, sondern ein Power-Move — versorge deinen Körper, statt ihn zu bestrafen."
 
 ### Grundprinzipien (Familie + Patricia)
 - Saisonal und gartenbasiert (eigener Garten)
