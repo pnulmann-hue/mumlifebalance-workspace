@@ -43,9 +43,12 @@ Patricia macht ein Ernährung- + Fitness-Coaching bei **MyBodyAdvice**. Der Bot 
 
 **Wissensdokumente zu beachten (hochgeladen als PDFs):**
 - Ernährungsplan MyBodyAdvice
-- Leitfaden für den Austausch von Zutaten
+- Leitfaden für den Austausch von Zutaten (MyBodyAdvice — Tabellen in `mybodyadvice-lebensmittel-tausch.md`)
 - Tipps Ernährung rund ums Training (MyBodyAdvice — „Essen vor dem Training" unten eingepflegt)
-- Lebensmittel tauschen + Mahlzeiten selbst zusammenstellen
+- Lebensmittel tauschen + Mahlzeiten selbst zusammenstellen (MyBodyAdvice — Baukasten + Tabellen in `mybodyadvice-lebensmittel-tausch.md`)
+- Produkttausch + Swapping Ingredients Guide (MyBodyAdvice — in `mybodyadvice-lebensmittel-tausch.md`)
+- Medikamente & Ernährung – Hinweise (MyBodyAdvice — unten eingepflegt)
+- Fitness & Measurement Tracker (MyBodyAdvice — Tracker-Vorlage, unten eingepflegt)
 - Welches Mehl für was? (MyBodyAdvice — Inhalt unten eingepflegt)
 - Snackideen und Mealprep für unterwegs (MyBodyAdvice — Habit 3, unten eingepflegt)
 - Deine Coachingreise – 10 kg Abnahme (MyBodyAdvice — Phasen oben eingepflegt)
@@ -74,8 +77,8 @@ Das Coaching baut auf 8 Kern-Gewohnheiten auf. Der Bot kennt das Gesamtsystem un
 | 1 | **Trinke ausreichend** | ✅ unten eingepflegt |
 | 2 | **Start your Day right** | ⏳ PDF ausstehend |
 | 3 | **Regelmässig Essen & Mealprep** | ✅ unten eingepflegt (Mealprep & Snacks für unterwegs) |
-| 4 | **Make your plate powerful: COLOUR** | ⏳ PDF ausstehend |
-| 5 | **Make your plate powerful: PROTEIN** | ⏳ PDF ausstehend |
+| 4 | **Make your plate powerful: COLOUR** | 🟡 teils (Baukasten/gesunder Teller) — eigenes PDF ausstehend |
+| 5 | **Make your plate powerful: PROTEIN** | 🟡 teils (Baukasten + Protein-Tabellen) — eigenes PDF ausstehend |
 | 6 | **Alltagsbewegung** | ⏳ PDF ausstehend |
 | 7 | **Workoutroutine** | ⏳ PDF ausstehend |
 | 8 | **Balance** | ⏳ PDF ausstehend |
@@ -132,6 +135,30 @@ Wichtig v.a. bei Patricias Morgen-Workouts und im Kaloriendefizit:
 - **Beste Nährstoffe:** Kohlenhydrate = schnelle Energie (Hafer, Obst, Reiswaffeln) · leicht verdauliches Eiweiss = Muskelschutz (Proteinpulver, Joghurt, Hüttenkäse, Skyr) · etwas Fett ok, aber nicht zu viel (verlangsamt Verdauung).
 - **Schnelle Pre-Workout-Snacks:** Banane + Hüttenkäse + Zimt · Dattel + Skyr · Reiswaffel + Ahornsirup · ½ Beeren-Smoothie + Protein · Medjool-Dattel + 1 TL Mandelmus · Proteinshake + Dattel/Banane.
 - **Merksatz:** „Essen vor dem Training ist kein Rückschritt, sondern ein Power-Move — versorge deinen Körper, statt ihn zu bestrafen."
+
+### MyBodyAdvice — Baukastenprinzip & Lebensmittel tauschen (Habit 4+5)
+Das Herzstück, um Mahlzeiten selbst makro-gerecht zusammenzustellen und Zutaten zu ersetzen. **Detail-Tabellen (Eiweiss/kcal/KH/Fett pro 100 g + Tausch-Verhältnisse) liegen in → `context/mybodyadvice-lebensmittel-tausch.md`.** Der Bot liest diese Referenz, wenn er genaue Werte oder Tausch-Faktoren braucht.
+
+Kern-Regeln (immer anwenden):
+- **Hauptmahlzeit-Verteilung:** ~30 % Protein · ~40 % komplexe KH · ~30 % Fett. (1 g E/KH = 4 kcal, 1 g Fett = 9 kcal.)
+- **Mind. 30 g Eiweiss pro Hauptmahlzeit** (Muskelproteinsynthese, wichtig im Defizit).
+- **Bowl-Baureihenfolge:** 1. Protein → 2. viel Gemüse → 3. komplexe KH → 4. gesunde Fette.
+- **Tauschen:** Zutaten aus derselben Makro-Kategorie ersetzen; bei Mengen das Tausch-Verhältnis nutzen (z.B. Kartoffeln statt Dinkelnudeln 5,11:1). **Achtung:** Hülsenfrucht-Nudeln NICHT gegen Getreidenudeln tauschen (Protein geht verloren).
+- **Plate-powerful:** viel Farbe/Gemüse (COLOUR, Habit 4) + Protein-Fokus (PROTEIN, Habit 5).
+
+### MyBodyAdvice — Medikamente & Ernährung (Wechselwirkungs-Hinweise)
+Sicherheits-Layer: Einnahme von Medikamenten **immer** mit Arzt/Ärztin absprechen — Ernährung/Getränke/Supplemente können die Wirkung beeinflussen. Der Bot weist bei relevanten Mahlzeiten dezent hin, gibt aber **keine medizinischen Anweisungen**:
+- **Schilddrüsentabletten (L-Thyroxin):** nüchtern morgens mit Wasser; **30–60 Min Abstand** zu Milchprodukten, Kaffee, Eisen-/Calciumpräparaten (hemmen Aufnahme).
+- **Flohsamenschalen:** binden Medikamente/Supplemente → **mind. 2 Std Abstand**, immer mit viel Wasser (≥ 200 ml pro TL).
+- **Eisenpräparate:** nicht mit Kaffee/Schwarztee/Milch/Calcium (blockiert Aufnahme).
+- **Magnesium + Antibiotika:** Abstand halten.
+- **Grapefruit(-saft):** hemmt Abbau vieler Medikamente → Wirkung kann sich unkontrolliert verstärken.
+- **Johanniskraut:** beschleunigt Abbau (z.B. Pille, Blutverdünner) → Wirkung kann sinken.
+
+### MyBodyAdvice — Fortschritts-Tracking (Tracker-Vorlage)
+Zur Erfolgskontrolle nutzt MyBodyAdvice einen Tracker (Körpermessungen + Weekly Tracker + Running Log + Kalorien-Tracker). Für den Bot relevant:
+- **Körpermessungen:** Brust, Taille, Hüfte, Oberschenkel, Arm, Wade — wichtig ist **immer der gleiche Messpunkt** (vergleichbar).
+- Wöchentlich getrackt: Masse, Gewicht, BMI, „Inches/Weight Lost". Ergänzt die Makro-/Defizit-Steuerung mit echten Fortschrittsdaten.
 
 ### Grundprinzipien (Familie + Patricia)
 - Saisonal und gartenbasiert (eigener Garten)
