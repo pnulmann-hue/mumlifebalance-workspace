@@ -49,6 +49,10 @@ Patricia macht ein Ernährung- + Fitness-Coaching bei **MyBodyAdvice**. Der Bot 
 - Welches Mehl für was? (MyBodyAdvice — Inhalt unten eingepflegt)
 - Deine Coachingreise – 10 kg Abnahme (MyBodyAdvice — Phasen oben eingepflegt)
 - Die 8 Habits – Überblick (MyBodyAdvice — Tabelle unten eingepflegt)
+- E-Book „Die 8 mybodyhabits" – Einleitung & Wochenplanung (MyBodyAdvice — Inhalt unten eingepflegt)
+- 5 Tipps für deine Wochenplanung (MyBodyAdvice — in Wochenplanungs-Methode integriert)
+- Wochenplaner-Vorlage (Blanko-Template Mo–So, keine Wissensinhalte)
+- Homeworkout Equipment Empfehlung (MyBodyAdvice — unten eingepflegt)
 
 Screenshots von MyBodyAdvice-Rezepten werden laufend via Telegram archiviert (automatische Einspeisung in die Wissensdatenbank mit `source_file: "MyBodyAdvice-<datum>-<rezept>.txt"`).
 
@@ -84,6 +88,27 @@ Aus dem MyBodyAdvice-Coaching (mybodyhabit 1) — der Bot baut Hydration in Woch
 - **Warum wichtig:** Stoffwechsel ankurbeln (Kalorien effizienter verbrennen) · Sättigung (Durst wird oft mit Hunger verwechselt → beugt Heisshunger vor) · Verdauung · Entgiftung/Nierenfunktion · Haut.
 - **Umsetzungs-Tipps:** wiederverwendbare Flasche dabei haben · bei der Arbeit Wasser bereitstellen · bei Bedarf stündlicher Wecker für 200–300 ml · Infused Water mit Zitrone/Gurke/Minze für Abwechslung.
 - **Bot-Anwendung:** Bei Wandertag-/To-Go-Planung Wasser mitdenken; im wöchentlichen Ernährungs-Coaching Hydration als wiederkehrendes Thema; Heisshunger-Tipps immer mit „erst ein Glas Wasser" ergänzen.
+
+### MyBodyAdvice-Philosophie & Wochenplanung (E-Book „Die 8 mybodyhabits")
+Der gedankliche Überbau des Coachings — der Bot hält Ton + Vorgehen daran ausgerichtet:
+
+- **Kerngedanke „Wohlfühlfigur":** Keine kurzfristige Diät, sondern **nachhaltige Routinen**, die in den vollen Mama-Alltag passen. Wohlfühlfigur = sich im Körper wohlfühlen, vital + gesund sein — durch konsistente, kleine Gewohnheiten statt extremer Programme. „Die Summe passender Routinen, gepaart mit einer Prise Balance und Geduld."
+- **Warum Routinen wirken:** Konsistenz → Ergebnisse · Prävention statt Reaktion · automatisierte gesunde Gewohnheiten · mentales Wohlbefinden + Kontrollgefühl · weniger Entscheidungsstress (Decision Fatigue).
+- **WARUM-Prinzip:** Wer sein Warum kennt, integriert Gewohnheiten leichter. Routinen müssen **realistisch** sein — lieber 2–3 Workouts/Woche, die klappen, als 5 geplante mit hoher Abbruchquote.
+- **Wochenplanungs-Methode (Pflicht-Layer für die Wochenplanung):**
+  1. 1× pro Woche festes Zeitfenster (~1 Std., z.B. Fr-Nachmittag oder Mo-Morgen).
+  2. Zuerst Fixtermine eintragen (Arzt, Arbeit, Training, Verabredungen) = „Stundenplan".
+  3. Dann priorisieren: zwingend / wichtig / weniger wichtig — Unwichtiges vertagen, bewusst „Nein" sagen.
+  4. **Mealprep, Workouts, Einkaufen fest wie Termine einplanen.**
+  5. Zeitpuffer einbauen (Aufwand höher schätzen). Merksatz: „Du hast mehr Zeit als du denkst — deine Woche hat 168 Stunden."
+- **Bot-Anwendung:** Wochenplan immer mit Mealprep-Slot + Einkaufstag denken; Planung realistisch an Patricias volle Woche (5-Kinder-Haushalt) anpassen; Sprache empowernd, nicht verbots-/diät-lastig.
+
+### MyBodyAdvice — Home-Workout-Equipment (Referenz)
+Kontext für Fitness-/Bewegungs-Fragen (Habit 6/7). 75 % der MyBodyAdvice-Frauen trainieren zu Hause — Muskelaufbau geht auch daheim mit **progressiver Steigerung** (Übungs-Stufen I–III, z.B. Bizeps-Curl normal → mit Halteelement → mit Hantel + Band).
+- **Verstellbare Kurzhanteln** (z.B. 2,5–24 kg), kleine Verstell-Schritte wichtig (kleine Muskelgruppen brauchen feinere Schritte). Anbieter: Bowflex (höherpreisig), Trexo + Luxtri (mittleres Segment, gute Qualität).
+- **Booty-Bänder:** gewebte (schneiden nicht ein, z.B. Blackroll) für Bein/Po; elastische Bänder/Therabänder zum Kombinieren mit Hanteln.
+- **Gewichtsmanschetten** für die Füsse (steigern Bauch-/Beinübungen), variabel beladbar.
+- **Zughilfen**, falls die Handkraft beim Heben langsamer mitwächst.
 
 ### Grundprinzipien (Familie + Patricia)
 - Saisonal und gartenbasiert (eigener Garten)
