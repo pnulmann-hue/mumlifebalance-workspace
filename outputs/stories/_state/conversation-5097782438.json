@@ -1,6 +1,10 @@
 {
   "chat_id": "5097782438",
-  "step": "profil",
+  "step": "erlebnis",
   "started_at": "2026-06-17T09:03:29.778Z",
-  "last_active_at": "2026-06-17T09:03:29.778Z"
+  "last_active_at": "2026-06-17T09:03:31.036Z",
+  "profil": "mentoring",
+  "produkt": "Instagram-Strategie für NM",
+  "produkt_quelle": "notion",
+  "wochen_fokus": "(kein Fokus eingetragen)"
 }
