@@ -27,10 +27,12 @@ POV · Zwei-Typen · Antagonist-Call-out · Zeitanker · Lektion/Curiosity-Gap �
 
 ## 🗓️ Turnier-Fahrplan
 
-- **Runde 1:** POV · Zwei-Typen · Antagonist-Call-out — Thema *Vergleich/Scrollen*
+- **Runde 1:** POV · Du-denkst · Antagonist-Call-out — Thema *Vergleich/Scrollen*
 - **Runde 2:** Zeitanker · Lektion · Grösster-Fehler
 - **Runde 3:** Specificity-Bait · Unpopuläre Meinung · Erlaubnis
 - **Runde 4:** Szene/Belauscht · Ich-lächle-nur · Vorher-Nachher
 - **Runde 5:** Tag-Timeline · Reframe · Statistik (echte Zahl)
+
+**Struktur-Hooks** (Zwei-Typen, „3 Dinge…", Reveal-Cliffhanger) brauchen eine **eigene Runde** mit eigenem Video + Caption, die das Versprechen auflöst — sie passen NICHT in eine geteilte Caption mit Einstiegs-Hooks. Zwei-Typen → eigene Runde (TBD).
 
 → Nach jeder Runde: Views/Saves/Shares hier eintragen. Verknüpft mit `feedback_hook-test-bekenntnis-gewinnt`, `feedback_reel-test-fatigue-themen-rotieren`.
