@@ -4,6 +4,21 @@ tags: [produkt, launch, mba, bootcamp, intern]
 
 # Mail-Sendeplan — Bootcamp + MBA-Cart (Pivot vom Webinar)
 
+> ## 🔄 UPDATE 19.6.2026 — finale Mail-Strategie (Patricia-Entscheidung)
+> **Während des Bootcamps gibt es KEINE Mails** — die ganze Tages-Kommunikation läuft über die
+> **Telegram-Gruppe** (siehe [[telegram-gruppe-bootcamp]]). Der **Verkauf passiert NACH dem Bootcamp**
+> über die Pitch-/Cart-Mails.
+>
+> **Es bleiben also nur:**
+> - **VOR dem Bootcamp (Marketing + Onboarding):** Einladung #1 (ganze Liste) · Einladung #2 (Reminder) ·
+>   A1 = Anmelde-Bestätigung mit Telegram-Gruppenlink (empfohlen behalten — so kommen sie in die Gruppe) ·
+>   optional D1 (Warteliste → Bootcamp).
+> - **WÄHREND (Mo–Fr):** nichts. → **A2 + B1–B5 entfallen** (Telegram ersetzt sie).
+> - **NACH dem Bootcamp = der Pitch:** C1 (Fr 3.7. ~19:30 Cart-Open) → C7 (So 6.7. 23:59 Close) ·
+>   E1 (Käufer-Willkommen) · optional D2 (Warteliste kriegt Cart-Link 1h früher). → alle in `bootcamp-mails/` gebaut.
+>
+> Der Rest dieses Dokuments (Track B etc.) ist damit überholt — nur die obige Strategie gilt.
+
 **Erstellt:** 2026-06-11 · **Ersetzt** die Webinar-Sendelogik aus [[99-AC-SETUP-MBA]] (die 14 Mails #596–#609 bleiben als Rohmaterial, werden aber neu getaktet + teils umgeschrieben).
 
 > **Warum neu:** Launch ist seit 8.6. ein **5-Tage-Bootcamp** statt Webinar (siehe [[challenge-launch-plan]]). Heisst: kein Webinar-Reminder, kein Zoom-Link, kein 2-Phasen-Cart (997→1347 mitten im Launch). Stattdessen: Bootcamp-Tagesmails + **einphasiger Pioneer-997-Flash-Cart** (Fr 3.7. → So 6.7. 23:59).
