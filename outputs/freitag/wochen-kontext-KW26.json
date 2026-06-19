@@ -1,0 +1,17 @@
+{
+  "kw": 26,
+  "zeitraum": "2026-06-22/2026-06-28",
+  "generiert_am": "2026-06-19",
+  "launch_phase": "mba-bootcamp-aufwaermphase",
+  "hauptthema": "Vom Verzetteln zum roten Faden — Business neben der Familie (Bootcamp-Aufwärm)",
+  "mentoring_saeule": "Bootcamp-Anmeldung (kostenlos) · roter Faden · viele Kurse halb gemacht · KI-Mentorin PIA",
+  "doterra_saeule": "Mama-Körper ab 35 + Wake-Up (Reels-only-Phase <300 Follower)",
+  "aktiver_funnel_primaer": { "name": "Mama-Business-Bootcamp", "keyword": "BOOTCAMP", "typ": "0€ 5-Tage-Bootcamp", "anmeldung_offen_seit": "2026-06-15", "bootcamp_start": "2026-06-29" },
+  "aktiver_funnel_sekundaer": [
+    { "name": "Workbook Von 0 auf echt", "keyword": "ECHT1", "profile": "mentoring" },
+    { "name": "doTERRA Energie-Kur", "keyword": "ENERGIE", "profile": "doterra" }
+  ],
+  "verkaufs_trigger": "Launch-Aufwärm — kein Preis/Programmname im Feed, Bootcamp gratis → Feed darf einladen",
+  "notion_wochenfokus": "nicht eingetragen — abgeleitet aus story-plan.json (Aufwärm bis 28.6., cta_keyword BOOTCAMP)",
+  "quellen": ["outputs/produkte/mba-launch/story-plan.json", "context/active-funnels.json", "outputs/apify-runs/competitors-2026-06-19.json"]
+}
