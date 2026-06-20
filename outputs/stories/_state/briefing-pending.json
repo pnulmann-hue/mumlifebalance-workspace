@@ -1,57 +1,67 @@
 {
-  "profil": "mentoring",
-  "modus": "tagesplan",
-  "disg": "Rot",
-  "disg_sekundaer": "Gelb",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
-  "aktives_produkt": "15.–21. Juni 2026 (KW 25) — Bootcamp-Promo Start (Anmeldung öffnet)",
-  "wochen_fokus": "Kostenloses 5-Tage-PIA-Bootcamp bewerben (Anmeldung öffnet ~Mo 15.6.). Teaser z.B. „5 Hook-Ideen anpassbar an dein Network\" → live mit PIA im Bootcamp. Feed darf einladen (Bootcamp = kostenlos); MBA/Preis bleibt raus.",
-  "sales_pattern": "Lead-Sammeln: kostenloses Bootcamp bewerben. Kein MBA-Pitch im Feed.",
-  "wochen_cta": "Kostenlose Bootcamp-Anmeldung (Link in Bio) — „Mama-Business-Bootcamp, 5 Tage, mit PIA\".",
-  "monat_kontext": "Juni = MBA-Launch-Monat — als 5-Tage-PIA-Bootcamp (Pivot 8.6.2026, KEIN Webinar). KW24 Reichweite · KW25–26 Bootcamp-Promo (Anmeldung ab ~15.6.) · KW27 (29.6.–3.7.) Bootcamp LIVE → Cart-Open Fr 3.7., MBA Pioneer 997, Cart-Close tight Anfang Juli, Programmstart August. Verkauf via Bootcamp+Stories+Mails; Feed bleibt programm-frei. Mama-CEO-Pilot-Ladys wechseln Ende Juli in die MBA.",
-  "produkt_themen": {
-    "name": "Mama-Business-Bootcamp (Arbeitstitel)",
-    "painpoint": "Verzetteln, kein roter Faden, kein eigenes planbares Einkommen neben der Familie",
-    "transformation": "In 5 Tagen erster klarer Business-Schritt — live erlebt mit PIA (KI-Mentorin): personalisierte Bio, Hooks etc. für IHR Business",
-    "zielgruppe": "Mamas im Network, die sich verzetteln, viele Kurse halb gemacht haben und einen roten Faden + Begleitung suchen",
-    "pillar": "Vom Verzetteln zum roten Faden — Business neben der Familie"
-  },
-  "vorschlag_idee": null,
-  "wochen_fokus_quelle": "notion-live",
-  "launch_tag": {
-    "datum": "2026-06-19",
-    "phase": "aufwaermphase",
-    "julia_vorlage": "eigene-meinung",
-    "titel": "Du brauchst kein 5000-Module-Programm",
-    "story_ziel": "Positionierung gegen Verzettel-Kurse. Ein klarer erster Schritt schlägt 10 halbe Kurse. Repel + Anziehung.",
-    "kaeufertyp": "Frank",
-    "cta": "DM BOOTCAMP für deinen ersten klaren Schritt",
-    "cta_keyword": "BOOTCAMP",
-    "profil": "mentoring"
-  },
-  "launch_vorlage": {
-    "name": "Eigene Meinung / klare Positionierung",
-    "phase": "alle",
-    "ziel": "Sich klar positionieren, einen Branchen-Mythos/Glaubenssatz aufgreifen der dich aufregt — Expertenstatus + Repel.",
-    "julia_anleitung": "'Ich bin ja normalerweise total X, aber DAS regt mich auf.' Erzähle was dich aufregt (Mythos/Glaubenssatz der Zielgruppe). Liefere dann deine Empfehlung was sie stattdessen tun sollten. Liebevolle Strenge, dann versöhnlich. Bezug zum Angebot.",
-    "kaeufertyp": "Frank + Willi",
-    "slide_bogen": "Hook (das regt mich auf) → der Mythos/Glaubenssatz → warum er schadet → was stattdessen richtig ist → versöhnlich + Brücke"
-  },
-  "kontext_snapshot": {
-    "kw": 25,
-    "wochentag": "Freitag",
-    "datum": "2026-06-19"
-  },
-  "fragen": [
-    "Was hast du erlebt?",
-    "Hast du grad einen Gedanken zum Thema?",
-    "Oder Standard-Pool?"
-  ],
-  "gesendet_am": "2026-06-19T09:21:13.184Z",
-  "telegram_message_id": 759,
-  "patricia_antworten": [],
-  "patricia_fotos": [],
-  "patricia_videos": [],
-  "status": "warten_auf_antwort"
+  "datum": "2026-06-20",
+  "profile": {
+    "mentoring": {
+      "profil": "mentoring",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Instagram-Strategie für NM",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": true,
+        "phase": "aufwaermphase",
+        "tag_im_launch": 6,
+        "vorlage": "Beweise / Social Proof",
+        "titel": "Was 2 Wochen Pilot gezeigt haben",
+        "story_ziel": "Echte Insights aus dem Mama-CEO-Pilot (5 Mamas) — ohne erfundene Zahlen. Glaubwürdigkeit fürs Bootcamp.",
+        "kaeufertyp": "Zoe",
+        "cta": "DM BOOTCAMP — sei in der nächsten Runde dabei",
+        "cta_keyword": "BOOTCAMP"
+      },
+      "kontext_snapshot": {
+        "kw": 25,
+        "wochentag": "Samstag",
+        "datum": "2026-06-20"
+      },
+      "gesendet_am": "2026-06-20T04:42:00.682Z",
+      "telegram_message_id": 760,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    },
+    "doterra": {
+      "profil": "doterra",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Beweise / Social Proof (auf Freebie gemünzt)",
+        "titel": "Beweise / Social Proof (auf Freebie gemünzt)",
+        "story_ziel": "Eine echte Erfolgsgeschichte (Mentee/Pilot-Mama) — Glaubwürdigkeit + sanfter Pull.",
+        "kaeufertyp": "Zoe",
+        "cta": "thematisch passend",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 25,
+        "wochentag": "Samstag",
+        "datum": "2026-06-20"
+      },
+      "gesendet_am": "2026-06-20T04:42:01.452Z",
+      "telegram_message_id": 761,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    }
+  }
 }
