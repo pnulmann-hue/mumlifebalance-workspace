@@ -1,0 +1,75 @@
+name: Meta-Token-Guard
+
+# Prüft täglich, ob der Meta-Access-Token noch lebt (und falls App-Secret
+# hinterlegt: wie lange noch). Warnt Patricia per Telegram, BEVOR der Token
+# still stirbt — wie am 16.05.2026, als Cockpit-Ads + Claude-Zugriff 5 Wochen
+# lang unbemerkt tot waren.
+#
+# Sendet eine Telegram-Nachricht nur, wenn etwas zu tun ist (tot oder läuft
+# bald ab). Healthy = stiller Erfolg, kein Spam.
+#
+# Cron in UTC. Schweiz = UTC+2 (Sommer) / UTC+1 (Winter).
+
+on:
+  schedule:
+    # Täglich 05:00 UTC = 07:00 CEST — vor dem Arbeitstag
+    - cron: '0 5 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  check-token:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Token prüfen
+        id: guard
+        shell: bash
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_APP_ID: ${{ secrets.META_APP_ID }}
+          META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
+        run: |
+          set +e
+          OUTPUT=$(node scripts/meta-ads/token-guard.js)
+          CODE=$?
+          echo "$OUTPUT"
+          # STATUS aus erster Zeile ziehen, Rest ist die Nachricht
+          STATUS=$(echo "$OUTPUT" | head -1 | sed 's/^STATUS=//')
+          MESSAGE=$(echo "$OUTPUT" | tail -n +2)
+          {
+            echo "status=$STATUS"
+            echo "code=$CODE"
+            echo "message<<__MSG__"
+            echo "$MESSAGE"
+            echo "__MSG__"
+          } >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Telegram-Warnung (nur bei Problem)
+        if: steps.guard.outputs.code != '0'
+        shell: bash
+        env:
+          BOT: ${{ secrets.TELEGRAM_COCKPIT_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MSG: ${{ steps.guard.outputs.message }}
+        run: |
+          if [ -z "$BOT" ] || [ -z "$CHAT" ]; then
+            echo "Telegram-Secrets fehlen — überspringe Push, Log oben reicht."
+            exit 0
+          fi
+          curl -s -X POST "https://api.telegram.org/bot${BOT}/sendMessage" \
+            --data-urlencode "chat_id=${CHAT}" \
+            --data-urlencode "text=🔐 Meta-Werbekonto: $MSG" \
+            > /dev/null
+          echo "Warnung an Telegram geschickt."
