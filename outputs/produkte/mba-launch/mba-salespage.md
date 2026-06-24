@@ -6,19 +6,20 @@ tags: [produkt, salespage, mba, launch, intern]
 
 **Für:** ThriveCart-Salespage · Pioneer 997 / Listenpreis 1347 · Programmstart Mitte August
 **Aufbau:** 13 Blöcke (Julia-Trost-Methodik), copy-paste-ready. Platzhalter `[…]` vor dem Live-Gang ersetzen.
-**Regeln:** keine erfundenen Zahlen/Testimonials · keine Geld-zurück-Garantie · Schweizer ss · Patricia = 4 Kinder.
+**Regeln:** keine erfundenen Zahlen/Testimonials · Garantie-Thema komplett weglassen · Schweizer ss · Patricia = 4 Kinder.
+**Stand:** 24.6.2026 — auf Basis Produktsteckbrief (finanzielle Freiheit als Nordstern · 2 Calls/Monat + Telegram · Kurs-Anrechnung · Cart 3.–9.7.).
 
 ---
 
 ## BLOCK 1 — Hero (das grosse Versprechen)
 
-**Eyebrow:** Für Mamas im Network, die sich verzettelt haben
+**Eyebrow:** Für Mamas im Network, die sich nach echter Unabhängigkeit sehnen
 
 **Headline:**
-# Aus „ich mach hundert Sachen halb" wird endlich dein eigener, klarer Weg — mit einer KI-Mentorin, die täglich an deiner Seite mitbaut.
+# Aus „ich mach hundert Sachen halb" wird endlich dein eigener, klarer Weg zu finanzieller Freiheit — mit einer KI-Mentorin, die täglich an deiner Seite mitbaut.
 
 **Subheadline:**
-Die Mum Business Academy ist alles, was du brauchst, um neben Kindern und Alltag ein Business aufzubauen, das wirklich zu dir gehört: drei aufeinander aufbauende Kurse, ein ganzes Jahr Begleitung — und PIA, deine KI-Mentorin, die dir Bio, Hooks, Posts, Stories und Funnel in deiner Stimme abnimmt.
+Die Mum Business Academy ist alles, was du brauchst, um neben Kindern und Alltag ein Business aufzubauen, das wirklich dir gehört: drei aufeinander aufbauende Kurse, ein ganzes Jahr Begleitung — und PIA, deine KI-Mentorin, die dir Bio, Hooks, Posts, Stories und Funnel in deiner Stimme abnimmt.
 
 **[CTA-Button]** → Ja, ich will meinen Platz
 
@@ -32,7 +33,7 @@ Die Mum Business Academy ist alles, was du brauchst, um neben Kindern und Alltag
 
 Du hast schon so viel gelernt. Kurse gekauft, dir Reels abgespeichert, hier ein Webinar, da ein Freebie — und trotzdem sitzt du abends da und weisst nicht so recht, was du eigentlich zuerst tun sollst.
 
-Du postest schöne Produktbilder, und es passiert … wenig. Du klapperst zum gefühlt zehnten Mal deine warme Liste ab, und die ist langsam durch. Und während andere scheinbar mühelos sichtbar sind, fragst du dich leise: „Mach ich hier irgendwas grundsätzlich falsch?"
+Du postest schöne Produktbilder, und es passiert … wenig. Du klapperst zum gefühlt zehnten Mal deine warme Liste ab, und die ist langsam durch. Und tief drin willst du eigentlich etwas Grösseres: **finanzielle Freiheit. Unabhängigkeit. Ein Einkommen, das dir gehört** — und nicht von der nächsten Teamaktion abhängt.
 
 Du machst nichts falsch. Dir fehlt nur eins: ein roter Faden — und jemand, der mit dir dranbleibt.
 
@@ -50,7 +51,7 @@ Noch ein Kurs allein löst das nicht. Mehr Wissen war nie dein Problem. Dein Pro
 
 Was den Unterschied macht, ist nicht noch ein PDF. Es ist ein **klarer Weg in der richtigen Reihenfolge** — und eine Begleitung, die dich ins Tun bringt und dranbleiben lässt.
 
-Genau dafür gibt es die **Mum Business Academy**. Du lernst nicht alles auf einmal, sondern Schritt für Schritt: erst dein Thema und deine Sichtbarkeit, dann deine Zeit und Struktur, dann dein eigenes Angebot. Und das Beste: Du machst das nicht allein. PIA, deine KI-Mentorin, nimmt dir die Arbeit ab — und zweimal im Monat sind wir live zusammen.
+Und es ist die Erkenntnis, dass es nicht den *einen* Baustein braucht, sondern alle: sichtbar werden, dir Zeit schaffen, ein eigenes Angebot aufbauen — und dranbleiben. Erst alle zusammen bringen dich wirklich zu dem, was du willst. Genau dafür gibt es die **Mum Business Academy**.
 
 ---
 
@@ -64,7 +65,7 @@ In der MBA bekommst du:
 - **📱 Instagram-Kundenmaschine** — damit Frauen DICH anschreiben, statt dass du suchst.
 - **⏰ Mama-CEO** — damit dein Business zwischen Znüni und Abholzeit wirklich stattfindet.
 - **🚀 Digitale Produktwelt** — dein eigenes digitales Angebot, das auch verkauft, wenn du am Spielplatz sitzt.
-- **🎥 1 Experten-Call + 1 Q&A mit mir pro Monat — ein ganzes Jahr lang.** Da, wo du gerade stehst, nicht im Allgemeinen.
+- **🤝 Die Umsetzerinnen — deine Begleitung übers ganze Jahr:** **zwei Live-Calls pro Monat** (ein Experten-Call inkl. Q&A + ein reiner Q&A) und eine **begleitete Telegram-Gruppe**, in der du deine Fragen jederzeit stellst — ich antworte dienstags und donnerstags persönlich. *(Alle Calls werden aufgezeichnet.)*
 - **♾️ Alle Kurse unbegrenzt zugänglich** — du lernst in deinem Tempo und kommst immer wieder rein.
 
 **[CTA-Button]** → Ich bin dabei
@@ -90,7 +91,7 @@ Du baust dein erstes digitales Produkt (mit KI), deine Produkttreppe und deinen 
 ## BLOCK 7 — Für wen die MBA ist (und für wen nicht)
 
 **Die MBA ist für dich, wenn:**
-- du dich in Einzelkursen verzettelt hast und endlich einen roten Faden willst
+- du dich nach finanzieller Freiheit und Unabhängigkeit sehnst und endlich einen roten Faden willst
 - du Begleitung willst, nicht noch ein PDF
 - du dein Business neben der Familie aufbaust und deine wenige Zeit richtig einsetzen willst
 
@@ -130,19 +131,21 @@ Was mich rausgeholt hat, war nicht der nächste Kurs. Es war ein klarer Weg — 
 
 ✔️ Alle drei Kurse, unbegrenzt zugänglich
 ✔️ PIA, deine KI-Mentorin — jeden Tag
-✔️ 1 Experten-Call + 1 Q&A mit mir pro Monat, ein ganzes Jahr
+✔️ 2 Live-Calls pro Monat + begleitete Telegram-Gruppe (Antworten Di & Do), ein ganzes Jahr
 ✔️ In bis zu **6 flexiblen Raten** — ohne dass es teurer wird
 ✔️ Programmstart Mitte August (Zugang sofort)
 
-**[CTA-Button]** → Pioneer-Platz sichern
+**💡 Schon einen meiner Kurse gekauft?** Hast du z.B. die Instagram-Kundenmaschine bereits, rechne ich dir den **vollen Kaufpreis an die MBA an** — du zahlst nie doppelt.
 
-*(klein:)* Hinweis: Auf die digitalen Inhalte gibt es keine Geld-zurück-Garantie — dafür eine ehrliche „Für wen das nicht ist"-Liste oben, damit du sicher weisst, ob's für dich passt.
+**[CTA-Button]** → Pioneer-Platz sichern
 
 ---
 
 ## BLOCK 11 — Warum jetzt (ehrliches Warum, ohne Fake-Dringlichkeit)
 
 Die erste Runde ist mir besonders wichtig, weil wir sie zusammen formen. Du bist nicht Teilnehmerin Nummer 300 in einem fertigen System — du baust mit auf. Deshalb gehe ich mit dieser Gruppe so eng mit wie mit keiner danach, und deshalb ist der Pioneer-Preis der niedrigste, den die MBA je haben wird.
+
+Die Türen sind nur bis **Mittwoch, 9. Juli** offen. Danach schliesst die Pioneer-Runde.
 
 ---
 
@@ -154,11 +157,14 @@ Genau dafür ist Mama-CEO da — und PIA nimmt dir den Grossteil der Arbeit ab. 
 **„Ich hab schon so viele Kurse und nichts umgesetzt."**
 Eben. Das Problem war nie das Wissen, sondern die Umsetzung allein. Die MBA gibt dir den Weg in der richtigen Reihenfolge plus die Begleitung, die dich dranbleiben lässt.
 
-**„Ich bin technisch nicht so fit."**
-Musst du nicht sein. PIA und die Kurse nehmen dich Schritt für Schritt mit — und in den Calls kannst du jederzeit fragen.
+**„Ich hab einen deiner Kurse schon gekauft."**
+Dann rechne ich dir den vollen Kaufpreis an die MBA an. Du verlierst nichts.
 
-**„Was, wenn ich erst im August Zeit hab?"**
-Perfekt — Programmstart ist Mitte August, der Zugang ist aber sofort da, damit du in deinem Tempo reinschnuppern kannst.
+**„Ich bin technisch nicht so fit."**
+Musst du nicht sein. PIA und die Kurse nehmen dich Schritt für Schritt mit — und in den Calls und der Telegram-Gruppe kannst du jederzeit fragen.
+
+**„Wann sind die Calls?"**
+Zweimal im Monat, live (und aufgezeichnet, falls du nicht dabei sein kannst). Wir starten nach den Sommerferien und legen die festen Zeiten gemeinsam mit der Gruppe fest.
 
 **„Kann ich in Raten zahlen?"**
 Ja, in bis zu 6 Raten, ohne Aufpreis.
@@ -172,9 +178,9 @@ Du hast diese Woche schon gespürt, wie es sich anfühlt, wenn Klarheit kommt un
 
 **[CTA-Button]** → Ja, ich komme in die MBA
 
-**P.S.** Der Pioneer-Preis und der enge Erste-Runde-Rahmen gibt's nur jetzt. Schau's dir in Ruhe an — und wenn du spürst, dass es dran ist, dann komm dazu. Ich freu mich auf dich. 💛
+**P.S.** Der Pioneer-Preis und der enge Erste-Runde-Rahmen gibt's nur jetzt — die Türen schliessen am **9. Juli**. Schau's dir in Ruhe an, und wenn du spürst, dass es dran ist, dann komm dazu. Ich freu mich auf dich. 💛
 
 ---
 
 ## 🔗 Verwandte Notizen
-- [[challenge-launch-plan]] · [[mail-sendeplan-bootcamp]] · [[telegram-gruppe-bootcamp]]
+- [[mba-produktsteckbrief]] · [[challenge-launch-plan]] · [[telegram-gruppe-bootcamp]]
