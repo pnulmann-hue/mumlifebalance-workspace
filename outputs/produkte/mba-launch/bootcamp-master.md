@@ -15,7 +15,7 @@ Verwandt: [[telegram-gruppe-bootcamp]] (Gruppen-Posts) · [[challenge-launch-pla
 | Link | Status | Was noch |
 |---|---|---|
 | **Telegram-Gruppe** `https://t.me/+HW6lvdlbTBhiOWM0` | ✅ fertig | Begrüssung + Link-Block anpinnen |
-| **PIA-Tool-Link** | ⛔ **OFFEN** | **PIA auf Vercel deployen** → `pia.mumlifebalance.ch`. **KRITISCH** — PIA ist die Engine jedes Tages. Ohne Link läuft das Bootcamp nicht. |
+| **PIA-Tool-Link** `https://pia-khaki.vercel.app` | ✅ **LIVE** (Vercel, 25.6.) | Offen: Supabase-Auth-URL freigeben (s.u.) + optional Custom-Domain `pia.mumlifebalance.ch` |
 | **Canva-Freebie-Vorlage** | ⏳ offen | Deine Vorlage als **„Vorlage verwenden"-Link** teilen (öffentlich). In Tag-2-Goodie einsetzen. |
 | **Erklärvideo (Canva + Claude)** | ⛔ offen | Kurzes Video aufnehmen: Inhalt → Canva-Vorlage + Freebie-Prompt zeigen (2–3 Min). |
 | **MBA-Salespage** `https://mumlifebalance.ch/mba` | ✅ live | — |

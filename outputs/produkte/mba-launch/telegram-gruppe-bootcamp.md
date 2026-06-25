@@ -11,7 +11,7 @@ Die Morgen-Posts kannst du **als Text posten ODER als Sprachnotiz einsprechen** 
 
 ## 🔗 Link-Block (oben anpinnen / bereithalten)
 
-- **PIA (dein Tool):** `[PIA-LINK]`  ← die Web-Adresse, sobald deployt (z.B. pia.mumlifebalance.ch)
+- **PIA (dein Tool):** `https://pia-khaki.vercel.app`  ← die Web-Adresse, sobald deployt (z.B. pia.mumlifebalance.ch)
 - **Canva-Freebie-Vorlage:** `[CANVA-VORLAGE-LINK]`  ← dein „Vorlage verwenden"-Link
 - **Erklärvideo (Canva + Claude):** `[VIDEO-LINK]`
 - **Freebie-Prompt (Tag 2):** siehe Goodie-Post unten
@@ -29,7 +29,7 @@ Hier in dieser Gruppe läuft unser Bootcamp — 5 Tage, in denen du dein Busines
 
 So läuft's:
 🌱 Jeden Morgen bekommst du hier deine Mission des Tages.
-🤖 Dann gehst du zu PIA und holst dir dein Ergebnis: `[PIA-LINK]`
+🤖 Dann gehst du zu PIA und holst dir dein Ergebnis: `https://pia-khaki.vercel.app`
 💬 Und du teilst deinen Win hier in der Gruppe — genau das macht so viel aus.
 
 Wir starten am **Montag, 29. Juni**. Bis dahin: Mach's dir gemütlich und schreib uns kurz in die Gruppe, wer du bist und was du gerade aufbaust. Ich freu mich auf dich!
@@ -50,7 +50,7 @@ Guten Morgen, ihr Lieben ☀️ Tag 1 — und wir starten mit dem Fundament: dei
 
 Die meisten posten schöne Produktbilder und fragen sich, warum niemand anbeisst. Heute drehen wir das um: Dein Profil soll in zwei Sekunden sagen, WEM du WOBEI hilfst — dann bleiben die richtigen Frauen hängen.
 
-👉 Deine Mission: Geh zu PIA und mach Tag 1: `[PIA-LINK]`
+👉 Deine Mission: Geh zu PIA und mach Tag 1: `https://pia-khaki.vercel.app`
 Sie bringt dein Thema auf den Punkt und baut dir deine fertige Bio (inkl. SEO-Namensfeld).
 
 💬 Wenn deine Bio steht: Pack sie hier in die Gruppe — wir feiern jede einzelne und schauen gemeinsam drauf. 🌿
@@ -69,7 +69,7 @@ Morgen, du! 🌸 Heute baust du etwas, das dich Schritt für Schritt unabhängig
 
 Es löst EIN kleines Problem deiner Leserin und bringt sie auf deine Liste. Klein und fertig schlägt gross und halb.
 
-👉 Deine Mission: Geh zu PIA und mach Tag 2: `[PIA-LINK]`
+👉 Deine Mission: Geh zu PIA und mach Tag 2: `https://pia-khaki.vercel.app`
 Hast du noch keine Idee? Kein Problem — PIA macht dir 3 Vorschläge aus deinem Thema und baut dann dein komplettes Freebie aus.
 
 💬 Teil hier den Titel deines Freebies — oft kommt der Aha-Moment erst, wenn du's laut aussprichst. 💛
@@ -99,7 +99,7 @@ Wichtig: erst Inhalt (von PIA oder dem Prompt), dann hübsch machen. So gehst du
 
 Guten Morgen 🌞 Halbzeit — und heute sorgen wir dafür, dass die richtigen Leute überhaupt stehenbleiben. Denn es entscheidet sich in der ersten Zeile, ob deine Leserin weiterliest oder weiterscrollt.
 
-👉 Deine Mission: Geh zu PIA und mach Tag 3: `[PIA-LINK]`
+👉 Deine Mission: Geh zu PIA und mach Tag 3: `https://pia-khaki.vercel.app`
 Sie gibt dir 3 starke Hooks für dein Thema — in deiner Sprache, aus verschiedenen Mustern, damit dein Feed Abwechslung hat.
 
 💬 Welcher Hook ist dein Favorit? Pack ihn hier rein — manchmal sieht eine andere Mama in deinem Hook das Gold, das du selbst übersiehst. Und trau dich: Poste heute einen davon. 🌿
@@ -114,7 +114,7 @@ Morgen, du! ☕ Heute kriegst du Klarheit über deinen Plan — und wie du dir d
 
 Du brauchst nicht mehr Stunden. Du brauchst zu wissen, was als Nächstes dran ist und wann du es tust.
 
-👉 Deine Mission: Geh zu PIA und mach Tag 4: `[PIA-LINK]`
+👉 Deine Mission: Geh zu PIA und mach Tag 4: `https://pia-khaki.vercel.app`
 Sie baut dir einen machbaren 4-Wochen-Fahrplan (Leadmagnet raus → Liste → erste Gespräche) und zeigt dir, wo du Zeit zurückgewinnst.
 
 💬 Verrat uns: Wann ist dein ehrlichstes Fokus-Fenster am Tag? 💛
@@ -129,7 +129,7 @@ Guten Morgen an meine Mamas 💛 Tag 5 — und wahnsinn, was du diese Woche geba
 
 Heute fügt sich alles zu EINEM roten Faden zusammen — und PIA baut dir aus allem deinen ersten fertigen Post + eine Story-Idee, die du direkt rausschicken kannst.
 
-👉 Deine Mission: Geh zu PIA und mach Tag 5: `[PIA-LINK]`
+👉 Deine Mission: Geh zu PIA und mach Tag 5: `https://pia-khaki.vercel.app`
 
 💬 Heute Abend komm ich live in die Gruppe — wir feiern deine Woche, und ich zeig dir, wie's für dich weitergehen kann, wenn du magst. Halt dir kurz Zeit frei. 🌿
 
