@@ -8,6 +8,10 @@ tags: [content, hooks, research]
 
 **Konstanten (aus Daten):** emotionales Mama-Lebens-Thema (grüne Liste `mama-schmerz-themen-pool.md`) + candid Home-Video beim Tun + Hook ab Sek 0 + unter 20 Sek + Reels über Tage verteilt.
 
+⚠️ **KRITISCHER METHODEN-FIX (KW25):** Bisher wurde pro Test ein ANDERES Video genommen → Video+Thema+Hook gleichzeitig geändert → kein sauberes Lernen. Ab jetzt: **dasselbe candide Video über alle 3 Hooks halten.** Der Video-Stil (candid vs posiert) ist der #1-Hebel — posierte Videos (Schaukel/Berg) floppten ~120, candides Küchen-Video flog (1.500/1.000/482). Hook erst sauber messbar, wenn Video konstant + candid.
+
+**Erster sauberer Test (KW25):** Mom-Guilt Handy-Zeit · candid Küche · Caption fix · Hooks: A Bekenntnis / B Szene / C Hot Take → Ergebnis ausstehend.
+
 ---
 
 ## ✅ Bisherige Ergebnisse (teils durch Thema/Video verfälscht)
