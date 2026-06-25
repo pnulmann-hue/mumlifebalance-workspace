@@ -96,51 +96,80 @@ tags: [mealplan]
 
 ---
 
-## 🛒 Einkaufsliste
+## 🛒 Einkaufsliste — komplett (jedes Rezept durchgeprüft)
 
-### 🥩 Fleisch
-- ☐ Hähnchenbrustfilet ~1.3 kg (Fr Fajitas + Mi Ofengemüse + Patricia-Portionen + gebratene Streifen für Abende)
-- ☐ Rindshackfleisch / Rindertatar mager 800g (Sa Reis-Paprika doppelt → Mo Reste)
-- ☐ Black Angus Minutensteaks AKTION ~1 kg (So)
-- ☐ Aufschnitt-/Wurst-Mix 500g (Pita Do + Wurst-Käse-Brett Mi) · Salami 200g (Fr) · Parmaschinken (Patricia belegtes Brot Do 2.7.)
+> 🛒 = gezielt kaufen · 🏠 = Grundvorrat, kurz nachschauen. Nichts-vergessen-Garantie.
 
-### 🥬 Gemüse & Früchte (Gemüsemann Di!)
-- ☐ Peperoni rot/gelb 6 Stk (Fr Fajitas + Sa Reis-Pfanne + So Grill + Gemüsepasta)
-- ☐ Zucchini AKTION 4 Stk (So Grill + Do 2.7.) · Champignons 400g (So Rührei + Ofengemüse) · Brokkoli 1 (Di Gemüsepasta)
-- ☐ Karotten 1.5 kg · Süsskartoffel 1 (Mi Ofengemüse) · Lauchzwiebeln 1 Bund
-- ☐ Tomaten + Cherrytomaten 1.5 kg + Basilikum 1 Topf
-- ☐ Salate: Eisberg/Kopf 3 + Römersalat + Feldsalat + Rucola · Gurken 4
-- ☐ Kartoffeln festkochend 2 kg (So Folienkartoffeln) · Zwiebeln rot+gelb 2 kg · Knoblauch 2 Knollen
-- ☐ **Erdbeeren 600g** (Sommersalat, Bohnen-Salat) · **Himbeeren** (Fitgirl-Frühstück) · **Heidelbeeren** (Muffins)
-- ☐ Aprikosen AKTION + **Pfirsiche 6 Stk** (Crostini + belegtes Brot + Dessert) · Bananen 14 (Bananenbrot + Pancakes + Skyr-Snacks + Pre-Workout) · Avocado 2 · Äpfel · Zitronen/Limetten · Trauben (Di Käseplatte) · Mango (optional)
+### 🥩 Fleisch & Fisch
+- 🛒 Hähnchenbrustfilet **~1.6 kg** (Fr Fajitas, Mi Ofengemüse + Patricia: Sommersalat/Crostini/belegtes Brot = gebratene Streifen)
+- 🛒 Rindshackfleisch / Rindertatar mager **800g** (Sa Reis-Paprika DOPPELT → Mo Reste)
+- 🛒 Black Angus Minutensteaks AKTION **~1 kg** (So Grill)
+- 🛒 Aufschnitt-/Wurst-Mix **500g** (Pita Do, Wurst-Käse-Brett Mi, Bauernbrot-Buffet Do)
+- 🛒 Salami **200g** (Fr Antipasti) · Parmaschinken **1 Pack** (Do belegtes Brot)
+- 🛒 Thunfisch im Eigensaft **2 Dosen** (Fr Patricia-Thunfischsalat)
 
-### 🥛 Patricia-MBA-Protein (PFLICHT — Immer-Check!)
-- ☐ **Skyr 0,2% 6×500g** (Fitgirl, Skyr Bowls, Bananenbrot, Pancakes, Booster)
-- ☐ **Hüttenkäse 5×200g** (Knäcke-Abend, Booster)
-- ☐ **Magerquark 0,2% 3×500g** (Dinkel-Pancakes, Avocado-Brot, Booster)
-- ☐ **Eier 30 Stk** (Spiegelei, Rührei, Pancakes, Haferbrei, hartgek., Pita, Quesadillas)
-- ☐ **Kefir natur 2 Flaschen** (Kefir to go) · Joghurt nature (Fitgirl)
-- ☐ Haferflocken glutenfrei + Haferkleie + Dinkelmehl Vollkorn + **Buchweizenmehl** + Mandelmehl teilentölt
-- ☐ **Eiweiss-/Proteinpulver** (Haferbrei) · Mandeldrink natur 1L · Mandelmus weiss · Cashewmus + Cashewnüsse · Walnüsse + Mandeln (Koro-Vorrat)
-- ☐ **Granola Low Sugar** (Skyr-Snack) · **Milchreis poliert** (Milchreis-Snack) · **Apfelmark** (Waffeln) · Kokosöl
-- ☐ Thunfisch im Eigensaft 2 Dosen (Fr Salat) · weisse Bohnen Dose 1 (Sa Bohnen-Salat)
-- ☐ Ricotta (So Crostini) · Ziegenweichkäse-Rolle (Do belegtes Brot) · **Feta/Schafskäse light** (NUR Patricia: Zucchini-Pfanne, Feta-Frischkäse-Brot, Bohnen-Salat)
-- ☐ Flohsamenschalen + dunkle Schoki 85% + Kakaopulver (Schoko-Mandel-Porridge + Fitgirl)
+### 🥬 Gemüse (Gemüsemann Di!)
+- 🛒 Peperoni rot/gelb **8 Stk** (Fajitas, Reis-Pfanne, Grill, Gemüsepasta, Bohnen-Salat, Sticks)
+- 🛒 Zucchini AKTION **4 Stk** (So Grill + Do Zucchini-Kichererbsen-Pfanne)
+- 🛒 Champignons **500g** (So Rührei + Mi Ofengemüse) · Brokkoli **1** (Di Gemüsepasta)
+- 🛒 Karotten **1.5 kg** (Ofengemüse, Bananenbrot, Sticks) · Süsskartoffel **1** (Mi) · Lauchzwiebeln **1 Bund** (So Rührei) · Staudensellerie **1** (Fr Thunfischsalat)
+- 🛒 Tomaten + Cherrytomaten **2 kg** (Spaghetti, Pita, Antipasti, Thunfischsalat, Bohnen-Salat, Caprese, Feta-Brot, Avocado-Brot) · Basilikum **1-2 Töpfe**
+- 🛒 Salate: Eisberg/Kopf **3** + Römersalat **1** (Patricia Sommersalat) + Feldsalat + Salatmischung (Bohnen-Salat) + Rucola (Gemüsepasta + Caprese)
+- 🛒 Gurken **4** (Pita/Tzatziki, Knäckebrot-Abend, Bohnen-Salat, Sticks) · Kartoffeln festkochend **2 kg** (So + Mi)
+- 🏠 Zwiebeln rot+gelb 2 kg · Knoblauch 2 Knollen
 
-### 🥔 Pasta · Reis · Käse
-- ☐ Spaghetti/Vollkornnudeln AKTION (Do) · Kichererbsennudeln (Patricia Gemüsepasta Di-Mittag + Caprese-Nudelsalat Di-Abend) · Vollkorn-Tortillas (Fr Fajitas + Mo Quesadillas)
-- ☐ Naturreis + Basmati 1.5 kg (Sa Reis-Pfanne + Mi Ofengemüse-Beilage)
-- ☐ Reibkäse Gruyère AOP AKTION 400g + Mozzarella light 4×200g + Parmesan 150g
-- ☐ Rahm/Kochsahne 5dl · Maisstärke · Kräuterquark 2 · **Pesto Rosso + Soft-Tomaten** (Caprese-Nudelsalat)
+### 🍓 Früchte
+- 🛒 **Erdbeeren 600g** (Sommersalat + Haferbrei-Topping) · **Himbeeren 1 Pack** (Fitgirl) · **Heidelbeeren 1 Pack** (Buchweizenpancakes + Blaubeermuffins)
+- 🛒 **Pfirsiche 6 Stk** (So Crostini + Do belegtes Brot) · Aprikosen AKTION (Dessert/Znüni)
+- 🛒 Bananen **14 Stk** (Bananenbrot, Pancakes, Skyr-Snacks, Schoko-Porridge, Haferbrei, Muffins + **Pre-Workout Mo/Mi/Fr**)
+- 🛒 Avocado **2** (Sa Avocado-Brot) · Trauben (Di Käseplatte) · Äpfel 2 kg · Zitronen/Limetten 3 · Mango (optional)
 
-### 🥫 Saucen · Würze · Brot
-- ☐ Gehackte Tomaten 3 Dosen + Tomatenmark + Pesto · Kichererbsen-Dose 3
-- ☐ Bauernbrot 2-3 + Vollkorn 2 + Roggenvollkornbrot (Patricia) + Knäckebrot Vollkorn + glutenfrei + Pita/Fladen (Do)
-- ☐ Gewürze: Cayenne, Thymian, Kreuzkümmel, Paprika geräuchert, Oregano · Ajvar (So) · Senf · Balsamico · Olivenöl · Kokosöl · Bratbutter/Ghee · Brühe (Gemüse + Rind)
-- ☐ Quinoa (Patricia Sommersalat) · Erythrit · Backpulver · Vanillepulver · Zimt
+### 🥛 Milch & Patricia-Protein (PFLICHT)
+- 🛒 **Skyr 0,2% 6×500g** (Fitgirl, Pancakes, Skyr-Bowls, Bananenbrot, Muffins, Milchreis, Feta-Brot + **täglicher Booster**)
+- 🛒 **Magerquark 0,2% 3×500g** (Dinkel-Pancakes, Avocado-Brot, Booster)
+- 🛒 **Hüttenkäse 5×200g** (Knäckebrot-Abend, Booster)
+- 🛒 **Eier 30 Stk** (Spiegelei, Rührei, Pancakes, Haferbrei, Muffins, hartgek., Pita, Quesadillas, Booster)
+- 🛒 **Eiweiss/Eiklar pasteurisiert 1 Pack** (So Rührei mit Gemüse)
+- 🛒 **Kefir natur 2 Flaschen** (Kefir to go) · Joghurt nature **2L** (Tzatziki + Fitgirl + Familie)
+- 🛒 **fettarme Milch 1,5% 1L** (Pancakes, Waffeln, Milchreis, Spaghetti)
+- 🛒 Ricotta **1** (So Crostini) · Ziegenweichkäse-Rolle **1** (Do belegtes Brot)
+- 🛒 **Feta/Schafskäse light 1** (NUR Patricia: Zucchini-Pfanne, Feta-Brot, Bohnen-Salat)
+- 🛒 Mozzarella light **4×200g** (Spaghetti, Caprese, Antipasti) · Parmesan **150g** (Gemüsepasta, Spaghetti)
+- 🛒 Gruyère AOP AKTION **400g** (Di Käseplatte + Reibkäse) · Kräuterquark **2** (Fajitas, Thunfischsalat)
+- 🛒 Rahm/Kochsahne **5dl** · Frühstücks-/Plattenkäse-Sortiment **300g**
+- 🏠 Vollmilch (Kaffee) · Butter · Bauernmilch 5L
 
-### ✅ Immer-Check
-- ☐ Salz, Pfeffer, Brühwürfel · Apfelsaft naturtrüb (Pre-Workout) · Kaffee, Tee · WC-Papier, Spülmittel, Zahnpasta
+### 🥖 Brot & Backwaren
+- 🛒 Bauernbrot **2-3 Laib** · Vollkornbrot **2** · Roggenvollkornbrot (Patricia: Avocado-Brot, Thunfischsalat, Crostini, belegtes Brot)
+- 🛒 Buchweizenbrot (Patricia Feta-Frischkäse-Brot) · Knäckebrot Vollkorn (Abend) + glutenfrei (So Rührei)
+- 🛒 Pita-/Fladenbrot **1 Pack** (Do) · Vollkorn-Tortillas **1 Pack** (Fr Fajitas + Mo Quesadillas)
+
+### 🥔 Pasta · Reis · Hülsenfrüchte
+- 🛒 Spaghetti/Vollkornnudeln AKTION (Do) · Kichererbsennudeln **1 Pack** (Di Gemüsepasta + Di Caprese-Nudelsalat)
+- 🛒 Quinoa (Patricia Sommersalat) · Kichererbsen Dose **3** (Zucchini-Pfanne) · weisse Bohnen Dose **1** (Bohnen-Salat) · Gehackte Tomaten **3 Dosen** (Reis-Pfanne, Spaghetti)
+- 🏠 Naturreis + Basmati 1.5 kg · Milchreis poliert (Patricia-Snack) · passierte Tomaten
+
+### 🌰 Trocken · Backen · Müsli (Koro/Altbachmühle)
+- 🛒 **Eiweiss-/Proteinpulver** (Haferbrei, Skyr-Snack) · **Granola Low Sugar** (Skyr-Snack) · **Apfelmark** (Waffeln)
+- 🛒 Mandeldrink natur ungesüsst **1L** · Mandelmus weiss · Cashewmus + Cashewnüsse (Fitgirl)
+- 🛒 **Buchweizenmehl** (Pancakes, Waffeln) · Haferkleie (Schoko-Porridge)
+- 🛒 Walnüsse (Skyr-Snacks, Käseplatte) · Mandeln (Sommersalat) · Pinienkerne (Zucchini-Pfanne) · Pistazien (Bananenbrot)
+- 🛒 Flohsamenschalen · dunkle Schoki 85% · Kakaopulver (Fitgirl + Schoko-Porridge) · Medjool-Datteln (optional Pre-Workout-Alt.)
+- 🏠 Haferflocken glutenfrei · Dinkelmehl Vollkorn · Mandelmehl teilentölt · Backpulver · Vanillepulver/-essenz · Zimt · Erythrit · Kokosöl · Kochspray
+
+### 🥫 Saucen · Würze · Dips
+- 🛒 **Pesto Rosso + Soft-Tomaten** (Caprese-Nudelsalat) · Pesto Basilikum (Snackteller optional)
+- 🛒 **Ajvar** (So Reste-Dip) · Tzatziki fertig ODER selbst (Joghurt+Gurke+Knobi, Do) · Oliven (Fr Antipasti)
+- 🛒 Maisstärke (Spaghetti-Sauce) · Kräuterbutter (So Grill) ODER selbst
+- 🏠 Senf · Balsamico · Olivenöl · Bratbutter/Ghee · Brühe (Gemüse/Rind/Hühner) · Gewürze (Cayenne, Thymian, Kreuzkümmel, Paprika geräuchert, Oregano, Kräuter der Provence, Kräutersalz, Knoblauchpulver, Dill, Schnittlauch) · Salz/Pfeffer
+
+### 🧃 Getränke
+- 🛒 ⚠️ **Apfelsaft naturtrüb 1L — fehlt dir daheim!** (Pre/Intra-Schorle Mo/Mi/Fr, je ~205ml)
+- 🏠 Kaffee, Tee
+
+### 🎒 Znüni Kids & Haushalt
+- 🛒 Konfi, Honig, Nutella · Reiswaffeln, Farmer-Riegel, Darvida
+- 🏠 WC-Papier, Spülmittel, Zahnpasta
 
 ---
 
