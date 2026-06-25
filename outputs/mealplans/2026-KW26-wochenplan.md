@@ -8,7 +8,7 @@ tags: [mealplan]
 **Restriktionen:** Kein Spinat & kein Feta für die FAMILIE · Fleisch 3-4×/Wo · Kein Fisch (ausser Thunfisch kalt für Patricia)
 **Region:** Migros Ostschweiz · Gemüsemann Kräuchi (Di-Lieferung)
 
-> 🆕 **Stand 25.6.:** Basiert auf Lisas **aktualisiertem** MBA-Plan (`kochwissen/Ernährungsplan Coaching AKTUELL 2026-06-25.pdf`) — neue, sommerliche Rezepte (Erdbeeren, Pfirsich, Rhabarber, Zucchini, Beeren). Die alten Gerichte (Lasagne, Linsen-Dhal, Tiramisu Oats …) sind nicht mehr in deiner App.
+> 🆕 **Stand 25.6.:** Patricias eigene Mahlzeiten gemischt aus Lisas **Juni-Plan** (`Ernährungsplan Coaching AKTUELL 2026-06-25.pdf`) + **April-Plan** (`Ernährungsplan Coaching 2026-04 (Vormonat).pdf`) — beide bilden zusammen den wachsenden Rezept-Pool für mehr Auswahl. 🟦 = April · 🟩 = Juni.
 >
 > 🔥 **Zweispurig:** Wo das Familienmittag ein MBA-Rezept ist, wiegst du nur deine Portion ab — kein zweites Kochen. Frühstück, Zwischenmahlzeit & Abend sind durchgehend MBA-Rezepte.
 >
