@@ -39,24 +39,25 @@ tags: [mealplan]
 
 > Täglich: **Frühstück + Kaffee + Mittag + Zwischenmahlzeit + Abend** (+ Pre/Intra an Trainingstagen). „= Familienmittag" → nur deine Portion abwiegen.
 
+> 🟦 = Rezept aus April-Plan · 🟩 = aus Juni-Plan (aktuell). Gemischt für mehr Abwechslung.
+
 | Tag | 🌅 Frühstück (~435) | ☀️ Mittag (~500) | 🍎 Zwischenmahlzeit (~180) | 🌙 Abend (~500) |
 |---|---|---|---|---|
-| **Do 25.6.** | Erdbeer-Rhabarber-Proats* (Vorabend ansetzen) (31g P) | = Tomate-Mozzarella-Spaghetti (37g P) | Skyr Bowl m. Walnüssen (18g P) | **Sommersalat m. Hähnchen & Erdbeeren** (37g P) |
-| **Fr 26.6.** | Dinkel-Pancakes (33g P) | = Hähnchen-Fajitas (36g P) | Blaubeermuffins (am WE backen) (13g P) | **Schneller Thunfischsalat m. Brot** (37g P) |
-| **Sa 27.6.** | Brot m. Avocado, Quark & Spiegelei (32g P) | = Reis-Paprika-Pfanne m. Hack (37g P) | Skyr Bowl (18g P) | **Bohnen-Feta-Salat im Glas** (2 Portionen! hält 6 Tage) (36g P) |
-| **So 28.6.** | Rührei mit Gemüse (33g P) | = Black Angus Steak + Grillgemüse** (~45g P) | Kefir to go (14g P) | **Pfirsich-Ricotta-Crostini m. Hähnchen** (37g P) |
-| **Mo 29.6.** | Schoko-Mandel-Porridge (32g P) | = Reis-Paprika-Reste (37g P) | Blaubeermuffin (13g P) | **Bohnen-Feta-Salat** (2. Glas vom Sa) (36g P) |
-| **Di 30.6.** | Brot m. Feta-Kräuter-Frischkäse & Tomaten (31g P) | = Cremige Protein-Gemüsepasta (37g P) | Skyr Bowl (18g P) | **Erdbeeren-Hüttenkäse-Rolle** (vorbereitbar) (36g P) |
-| **Mi 1.7.** | Herzhaftes Haferporridge (33g P) | = Ofengemüse mit Hähnchen (35g P) | Kefir to go (14g P) | **Knäckebrot m. Hüttenkäse & Gurke** (35g P) |
-| **Do 2.7.** | Erdbeer-Rhabarber-Proats* (31g P) | = Zucchini-Kichererbsen-Pfanne (36g P) | Skyr Bowl (18g P) | **Belegtes Brot: Pfirsich, Parmaschinken, Ziegenkäse & Hähnchen** (35g P) |
+| **Do 25.6.** | 🟦 Lisas Fitgirl Frühstück m. Himbeeren (33g P) | = Tomate-Mozzarella-Spaghetti (37g P) | 🟦 Skyr m. Granola, Banane, Walnüsse (13g P) | 🟩 **Sommersalat m. Hähnchen & Erdbeeren** (37g P) |
+| **Fr 26.6.** | 🟩 Dinkel-Pancakes (33g P) | = Hähnchen-Fajitas (36g P) | 🟩 Blaubeermuffins (am WE backen) (13g P) | 🟩 **Schneller Thunfischsalat m. Brot** (37g P) |
+| **Sa 27.6.** | 🟩 Brot m. Avocado, Quark & Spiegelei (32g P) | = Reis-Paprika-Pfanne m. Hack (37g P) | 🟦 Karotten-Bananenbrot (am WE backen) (16g P) | 🟩 **Bohnen-Feta-Salat im Glas** (2 Portionen! hält 6 Tage) (36g P) |
+| **So 28.6.** | 🟩 Rührei mit Gemüse (33g P) | = Black Angus Steak + Grillgemüse* (~45g P) | 🟦 Waffeln mit Apfelmark (14g P) | 🟩 **Pfirsich-Ricotta-Crostini m. Hähnchen** (37g P) |
+| **Mo 29.6.** | 🟩 Schoko-Mandel-Porridge (32g P) | = Reis-Paprika-Reste (37g P) | 🟦 Karotten-Bananenbrot (Rest) (16g P) | 🟩 **Bohnen-Feta-Salat** (2. Glas vom Sa) (36g P) |
+| **Di 30.6.** | 🟩 Brot m. Feta-Kräuter-Frischkäse & Tomaten (31g P) | = Cremige Protein-Gemüsepasta (37g P) | 🟦 Milchreis mit Zimt (14g P) | 🟦 **Caprese-Nudelsalat** (vorbereitbar) (38g P) |
+| **Mi 1.7.** | 🟦 Haferbrei mit Proteinpulver (schnell!) (33g P) | = Ofengemüse mit Hähnchen (35g P) | 🟩 Kefir to go (14g P) | 🟩 **Knäckebrot m. Hüttenkäse & Gurke** (35g P) |
+| **Do 2.7.** | 🟦 Buchweizenpancakes mit Skyr (33g P) | = Zucchini-Kichererbsen-Pfanne (36g P) | 🟩 Skyr Bowl zum Nachtisch (18g P) | 🟩 **Belegtes Brot: Pfirsich, Parmaschinken, Ziegenkäse & Hähnchen** (35g P) |
 
-*Erdbeer-Rhabarber-Proats + Tiramisu-Style brauchen Übernacht-Quellzeit → am Vorabend ansetzen.
-**So-Grilladen: mageres Steak-Stück + viel Grillgemüse + 1 kleine Folienkartoffel → locker im Makro-Rahmen.
+*So-Grilladen: mageres Steak-Stück + viel Grillgemüse + 1 kleine Folienkartoffel → locker im Makro-Rahmen.
 
 **☕ Kaffee:** Cappuccino mit 50g Vollmilch (32 kcal) — täglich frei.
 **🏋️ Pre/Intra (Trainingstage, ~210 kcal):** Banane 30-60 Min vorher + Apfelschorle während dem Training.
 
-> **Hinweis:** Herzhaftes Haferporridge (Mi-Frühstück) + Bohnen-Feta-Salat enthalten Spinat/Feta — das sind deine **Solo-Portionen**, die Familie isst das nicht, also kein Problem.
+> **Hinweis:** Bohnen-Feta-Salat + Feta-Kräuter-Frischkäse-Brot enthalten Feta — das sind deine **Solo-Portionen**, die Familie isst das nicht, also kein Problem. (Herzhaftes Haferporridge, Erdbeer-Rhabarber-Proats & Erdbeer-Hüttenkäse-Rolle hast du rausgenommen — sind nicht mehr drin.)
 
 ---
 
@@ -64,14 +65,14 @@ tags: [mealplan]
 
 | Tag | Protein-Bilanz (F+M+Z+A) | Status | 💡 Hinweis |
 |---|---|---|---|
-| Do | 31+37+18+37 = ~123g | ✓ | + Kaffee-Milch/Joghurt bringt Rest auf 135g |
+| Do | 33+37+13+37 = ~120g | ✓ | + Kaffee-Milch/Joghurt bringt Rest auf 135g |
 | Fr | 33+36+13+37 = ~119g ⚠️ | Booster | Muffin proteinärmer → +1 hartgek. Ei o. 100g Skyr |
-| Sa | 32+37+18+36 = ~123g | ✓ | passt |
+| Sa | 32+37+16+36 = ~121g | ✓ | passt |
 | So | 33+45+14+37 = ~129g ✓✓ | OK | Steak deckt stark |
-| Mo | 32+37+13+36 = ~118g ⚠️ | Booster | + 150g Magerquark |
-| Di | 31+37+18+36 = ~122g | ✓ | passt |
+| Mo | 32+37+16+36 = ~121g | ✓ | passt (Bananenbrot bringt mehr P als Muffin) |
+| Di | 31+37+14+38 = ~120g | ✓ | Milchreis proteinärmer, Caprese gleicht aus |
 | Mi | 33+35+14+35 = ~117g ⚠️ | Booster | + 1 Ei / Hüttenkäse-Snack |
-| Do | 31+36+18+35 = ~120g | ✓ | Milch im Tag bringt Rest |
+| Do | 33+36+18+35 = ~122g | ✓ | Milch im Tag bringt Rest |
 
 **Regel:** An ⚠️-Tagen 1× extra Skyr/Magerquark/Ei. Beilagen-Milchprodukte (Kaffee, Joghurt) bringen über den Tag nochmal ~10-15g P, hier nicht gezählt.
 
@@ -106,26 +107,27 @@ tags: [mealplan]
 - ☐ Tomaten + Cherrytomaten 1.5 kg + Basilikum 1 Topf
 - ☐ Salate: Eisberg/Kopf 3 + Römersalat + Feldsalat + Rucola · Gurken 4
 - ☐ Kartoffeln festkochend 2 kg (So Folienkartoffeln) · Zwiebeln rot+gelb 2 kg · Knoblauch 2 Knollen
-- ☐ **Erdbeeren 800g** (Sommersalat, Hüttenkäse-Rolle, Proats) · **Heidelbeeren** (Muffins, Proats) · **Rhabarber 2 Stangen** (Proats)
-- ☐ Aprikosen AKTION + **Pfirsiche 6 Stk** (Crostini + belegtes Brot + Dessert) · Bananen 12 · Avocado 2 · Äpfel · Zitronen/Limetten · Trauben (Di Käseplatte) · Mango (optional)
+- ☐ **Erdbeeren 600g** (Sommersalat, Bohnen-Salat) · **Himbeeren** (Fitgirl-Frühstück) · **Heidelbeeren** (Muffins)
+- ☐ Aprikosen AKTION + **Pfirsiche 6 Stk** (Crostini + belegtes Brot + Dessert) · Bananen 14 (Bananenbrot + Pancakes + Skyr-Snacks + Pre-Workout) · Avocado 2 · Äpfel · Zitronen/Limetten · Trauben (Di Käseplatte) · Mango (optional)
 
 ### 🥛 Patricia-MBA-Protein (PFLICHT — Immer-Check!)
-- ☐ **Skyr 0,2% 6×500g** (Proats, Skyr Bowls, Muffins, Booster)
-- ☐ **Hüttenkäse 6×200g** (Haferporridge, Knäcke-Abend, Erdbeer-Rolle, Booster)
-- ☐ **Magerquark 0,2% 3×500g** (Pancakes, Avocado-Brot, Booster)
-- ☐ **Eier 30 Stk** (Spiegelei, Rührei, Pancakes, hartgek., Pita, Quesadillas)
-- ☐ **Kefir natur 2 Flaschen** (Kefir to go) · Buttermilch 1 (Proats)
-- ☐ Haferflocken glutenfrei + Haferkleie + Dinkelmehl Vollkorn + Mandelmehl teilentölt
-- ☐ Mandeldrink natur 1L · Mandelmus weiss · Cashewmus · Walnüsse + Mandeln (Koro-Vorrat)
+- ☐ **Skyr 0,2% 6×500g** (Fitgirl, Skyr Bowls, Bananenbrot, Pancakes, Booster)
+- ☐ **Hüttenkäse 5×200g** (Knäcke-Abend, Booster)
+- ☐ **Magerquark 0,2% 3×500g** (Dinkel-Pancakes, Avocado-Brot, Booster)
+- ☐ **Eier 30 Stk** (Spiegelei, Rührei, Pancakes, Haferbrei, hartgek., Pita, Quesadillas)
+- ☐ **Kefir natur 2 Flaschen** (Kefir to go) · Joghurt nature (Fitgirl)
+- ☐ Haferflocken glutenfrei + Haferkleie + Dinkelmehl Vollkorn + **Buchweizenmehl** + Mandelmehl teilentölt
+- ☐ **Eiweiss-/Proteinpulver** (Haferbrei) · Mandeldrink natur 1L · Mandelmus weiss · Cashewmus + Cashewnüsse · Walnüsse + Mandeln (Koro-Vorrat)
+- ☐ **Granola Low Sugar** (Skyr-Snack) · **Milchreis poliert** (Milchreis-Snack) · **Apfelmark** (Waffeln) · Kokosöl
 - ☐ Thunfisch im Eigensaft 2 Dosen (Fr Salat) · weisse Bohnen Dose 1 (Sa Bohnen-Salat)
-- ☐ Ricotta (So Crostini) · Ziegenweichkäse-Rolle (Do belegtes Brot) · **Feta/Schafskäse light** (NUR Patricia: Zucchini-Pfanne, Feta-Frischkäse-Brot, Bohnen-Salat, Haferporridge)
-- ☐ Flohsamenschalen + dunkle Schoki 85% + Kakaopulver (Schoko-Mandel-Porridge)
+- ☐ Ricotta (So Crostini) · Ziegenweichkäse-Rolle (Do belegtes Brot) · **Feta/Schafskäse light** (NUR Patricia: Zucchini-Pfanne, Feta-Frischkäse-Brot, Bohnen-Salat)
+- ☐ Flohsamenschalen + dunkle Schoki 85% + Kakaopulver (Schoko-Mandel-Porridge + Fitgirl)
 
 ### 🥔 Pasta · Reis · Käse
-- ☐ Spaghetti/Vollkornnudeln AKTION (Do) · Kichererbsennudeln (Patricia Gemüsepasta) · Vollkorn-Tortillas (Fr Fajitas + Mo Quesadillas + Erdbeer-Rolle)
-- ☐ Naturreis + Basmati 1.5 kg (Sa Reis-Pfanne + Mi Ofengemüse-Beilage + Reis-Hüttenkäse)
+- ☐ Spaghetti/Vollkornnudeln AKTION (Do) · Kichererbsennudeln (Patricia Gemüsepasta Di-Mittag + Caprese-Nudelsalat Di-Abend) · Vollkorn-Tortillas (Fr Fajitas + Mo Quesadillas)
+- ☐ Naturreis + Basmati 1.5 kg (Sa Reis-Pfanne + Mi Ofengemüse-Beilage)
 - ☐ Reibkäse Gruyère AOP AKTION 400g + Mozzarella light 4×200g + Parmesan 150g
-- ☐ Rahm/Kochsahne 5dl · Schlagsahne klein (Mandel-Vanille-Eis optional) · Maisstärke · Kräuterquark 2
+- ☐ Rahm/Kochsahne 5dl · Maisstärke · Kräuterquark 2 · **Pesto Rosso + Soft-Tomaten** (Caprese-Nudelsalat)
 
 ### 🥫 Saucen · Würze · Brot
 - ☐ Gehackte Tomaten 3 Dosen + Tomatenmark + Pesto · Kichererbsen-Dose 3
@@ -147,7 +149,7 @@ tags: [mealplan]
 | **Sa** | 🥗 Sommer-Salat-Buffet | Blattsalate + Eier + Brot + Käse | **Bohnen-Feta-Salat im Glas** (2 Gläser machen → hält 6 Tage!) |
 | **So** | 🥙 Reste-Bowl | Steak kalt + Grillgemüse + Brot + Senf-Dip | **Pfirsich-Ricotta-Crostini m. Hähnchen** |
 | **Mo** | 🌯 Quesadillas | Tortilla + Reste + Käse, kurz in Pfanne | **Bohnen-Feta-Salat** (2. Glas vom Sa — null Aufwand) |
-| **Di** | 🧀 Käseplatte | Gruyère AOP + Trauben + Nüsse + Brot + Eier | **Erdbeeren-Hüttenkäse-Rolle** (am Vortag rollen) |
+| **Di** | 🧀 Käseplatte | Gruyère AOP + Trauben + Nüsse + Brot + Eier | 🟦 **Caprese-Nudelsalat** (Kichererbsennudeln + Mozzarella + Pesto Rosso — vorbereitbar) |
 | **Mi** | 🥪 Wurst-Käse-Brett | Aufschnitt + Käse + Gemüsesticks + Brot | **Knäckebrot m. Hüttenkäse & Gurke** (5 Min) |
 | **Do** | 🥖 Bauernbrot-Buffet | Brot + Aufstriche + hartgek. Eier + Gemüse | **Belegtes Brot: Pfirsich + Parmaschinken + Ziegenkäse + Hähnchen** |
 
@@ -155,7 +157,7 @@ tags: [mealplan]
 
 ## 💡 Coaching-Impuls der Woche: Beeren — dein Frühstücks-Booster im Hochsommer
 
-Erdbeeren, Heidelbeeren & Rhabarber sind jetzt frisch beim Gemüsemann — und in fast allen deinen neuen MBA-Frühstücken/Abenden drin (Proats, Muffins, Sommersalat, Hüttenkäse-Rolle). Warum das clever ist:
+Erdbeeren, Himbeeren & Heidelbeeren sind jetzt frisch beim Gemüsemann — und in vielen deiner MBA-Frühstücke/Abende drin (Fitgirl-Frühstück, Blaubeermuffins, Sommersalat, Bohnen-Salat). Warum das clever ist:
 1. **Anthocyane** (das Rot/Lila) → starke Antioxidantien, antientzündlich — passt zu deinem Hormon-Fokus 35+.
 2. **Wenig Zucker, viele Ballaststoffe** → stabiler Blutzucker, kein Vormittags-Loch (wichtig in der Bootcamp-Woche).
 3. **Vitamin C** → hilft, das Eisen aus Eiern/Haferflocken besser aufzunehmen.
@@ -166,10 +168,10 @@ Erdbeeren, Heidelbeeren & Rhabarber sind jetzt frisch beim Gemüsemann — und i
 
 ## 📲 Erinnerungen diese Woche
 
-- **Mi/Do (Vorabend):** Erdbeer-Rhabarber-Proats ansetzen (quillt über Nacht) — Rhabarber lässt sich für mehrere Tage vorkochen.
-- **Sa 27.6.:** Reis-Paprika-Pfanne in **doppelter Menge** → Bootcamp-Montag-Mittag. Gleich **Blaubeermuffins** backen (Fr+Mo-Snack) + **2 Gläser Bohnen-Feta-Salat** (Sa+Mo-Abend, hält 6 Tage).
+- **Sa 27.6. — grosser Back-/Prep-Tag:** Reis-Paprika-Pfanne in **doppelter Menge** (→ Bootcamp-Mo-Mittag) · **Blaubeermuffins** backen (Fr-Snack) · **Karotten-Bananenbrot** backen (Sa+Mo-Snack, hält tage-lang) · **2 Gläser Bohnen-Feta-Salat** (Sa+Mo-Abend, hält 6 Tage).
 - **So 28.6.:** Black Angus AKTION mitnehmen + Folienkartoffeln vorbereiten.
-- **Di 30.6.:** Gemüsemann — Erdbeeren + Heidelbeeren + Rhabarber + Salate + Champignons + Peperoni + Trauben + Pfirsiche.
+- **Mo (Vorabend) / Di:** Caprese-Nudelsalat für Di-Abend lässt sich gut vorbereiten (warm + kalt geniessbar).
+- **Di 30.6.:** Gemüsemann — Erdbeeren + Himbeeren + Heidelbeeren + Salate + Champignons + Peperoni + Trauben + Pfirsiche.
 - **Bootcamp Mo-Do:** jeden Tag vorbereitetes oder ≤20-Min-Mittag. Wenn's eng wird → Knäckebrot-Abend oder Skyr-Bowl reicht als MBA-Mahlzeit.
 
 Schöne Woche & viel Energie fürs Bootcamp! 🌿
