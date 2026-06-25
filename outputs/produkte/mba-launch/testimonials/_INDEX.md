@@ -11,6 +11,26 @@ Quelle für MBA-Salespage (Block „Stimmen") + Launch-Mails.
 
 ---
 
+## ✅ IKM-Feedback-Formular (mit schriftlicher Erlaubnis — Zitat/Foto/Tag = ja)
+
+Quelle: Netlify-Formular `feedback-instagram-kundenmaschine`, Einsendungen Juni 2026. Alle 3 Bewertung **10/10**.
+
+**Susanne · @susanneantonaci** *(Erlaubnis: Zitat ✅ Foto ✅ Tag ✅)*
+- Vorher: „zu produktfokussiert, ziehe so keine neuen Menschen aufs Profil" · Gefühl: frustriert
+- Nachher: „unabhängig vom Produkt positioniert"
+> „Den Instagram-Kundenmaschine-Kurs von Patricia kann ich wärmstens empfehlen. Ich habe viel gelernt über mich und meine Strategie nochmal komplett überarbeitet — und bin nach dem Kurs auch noch weiter dabei, das neue Wissen umzusetzen."
+
+**Miriam · @wohlfuehlhof_neuhus** *(Erlaubnis: Zitat ✅ Foto ✅ Tag ✅)*
+- Vorher: „nicht klar auf mein Thema festgelegt" · Gefühl: planlos
+- Nachher: „Ich sehe, wie ich mir eine Strategie aufbauen kann. Meine Bio ist klar."
+> „Die Instagram-Kundenmaschine hat mir ein einfaches und doch umfassendes Verständnis für die businessfokussierte Arbeit mit Instagram gegeben."
+
+**Nadja** *(Erlaubnis: KEINE angegeben → nur intern, nicht veröffentlichen)*
+- Vorher: ganz am Anfang, planlos · Nachher: „Ich weiss jetzt, worauf man achten muss."
+> „Gib dir Klarheit über das, was du alles mit Instagram machen kannst." *(Bewertung: „klar und verständlich, auch für solche, die noch keinen Plan von Insta haben.")*
+
+---
+
 ## ⭐ Top-Picks für die Salespage (matchen den Schmerz-Angle)
 
 **1 — Andrea (Dranbleiben + sich zeigen + Community ↑)**
