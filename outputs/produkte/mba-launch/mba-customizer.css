@@ -132,4 +132,6 @@ html{scroll-behavior:smooth}
 .mba-lp .reveal.in{opacity:1;transform:none}
 @media(max-width:760px){.mba-lp section{padding:64px 0}
 .mba-lp .steps,.mba-lp .elig,.mba-lp .bonus-grid,.mba-lp .testi-grid,.mba-lp .why-grid{grid-template-columns:1fr}
-.mba-lp{font-size:17px}}
+.mba-lp{font-size:17px}
+.mba-lp .hero{min-height:70vh}
+.mba-lp .hero .wrap{padding-top:64px;padding-bottom:48px}}
