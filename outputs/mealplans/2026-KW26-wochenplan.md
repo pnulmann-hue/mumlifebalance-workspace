@@ -55,7 +55,7 @@ tags: [mealplan]
 *So-Grilladen: mageres Steak-Stück + viel Grillgemüse + 1 kleine Folienkartoffel → locker im Makro-Rahmen.
 
 **☕ Kaffee:** Cappuccino mit 50g Vollmilch (32 kcal) — täglich frei.
-**🏋️ Pre/Intra (Trainingstage, ~210 kcal):** Banane 30-60 Min vorher + Apfelschorle während dem Training.
+**🏋️ Pre/Intra-Workout — FIX an deinen Trainingstagen Mo / Mi / Fr (+208 kcal, +48g KH):** Banane 30-60 Min vor dem Training + Apfelschorle (205ml Apfelsaft naturtrüb + Wasser) während dem Training. An Do/Sa/So/Di entfällt das.
 
 > **Hinweis:** Bohnen-Feta-Salat + Feta-Kräuter-Frischkäse-Brot enthalten Feta — das sind deine **Solo-Portionen**, die Familie isst das nicht, also kein Problem. (Herzhaftes Haferporridge, Erdbeer-Rhabarber-Proats & Erdbeer-Hüttenkäse-Rolle hast du rausgenommen — sind nicht mehr drin.)
 

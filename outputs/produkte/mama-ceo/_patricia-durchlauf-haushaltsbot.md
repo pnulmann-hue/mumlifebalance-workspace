@@ -245,12 +245,12 @@ Umgesetzt über die Spalte **Wer** (Patricia / Mann / Kinder) + Sektion 7 (Famil
 | Abtrocknen | täglich | |
 | Tisch abräumen | täglich | |
 | Geschirrspüler ausräumen | täglich | |
-| Altglas aus Küche in den Keller | täglich / nach Bedarf | |
-| Karton + Altpapier in den Keller | laufend (Sammelgang Mi-Abend) | |
-| Eigenes Zimmer aufräumen | täglich (kurz) — Rhythmus bestätigen? | |
-| Eigene Bettwäsche wechseln | Rhythmus bestätigen (monatlich?) | die Grossen selbst |
-| Wäsche falten + verräumen | pro Waschgang / wöchentlich — bestätigen? | |
-| UG saugen + aufnehmen | wöchentlich — bestätigen? | (ersetzt Patricias UG-Saugen) |
+| Altglas aus Küche in den Keller | täglich | |
+| Karton + Altpapier in den Keller | täglich (runter); Entsorgung Mi-Abend | |
+| Eigenes Zimmer aufräumen | täglich (kurz) ✓ | |
+| Eigene Bettwäsche wechseln | monatlich ✓ | die Grossen selbst |
+| Wäsche falten + verräumen | wöchentlich ✓ | pro Waschgang |
+| UG saugen + aufnehmen | wöchentlich ✓ | (ersetzt Patricias UG-Saugen) |
 
 **👨 Mann**
 | Beitrag | Rhythmus | Notiz |
