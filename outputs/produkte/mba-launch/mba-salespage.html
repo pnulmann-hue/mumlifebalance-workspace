@@ -1,20 +1,19 @@
 <!--
-  MBA Salespage v2 — Layout & Energie analog Julia Trost "Elevate", in Patricia-Brand.
-  Mehr Wumms: kurze Punch-Sätze · Vorher→Nachher-Kontraste · Highlight-Marker · dunkle Peak-Sektionen · Scroll-Reveal.
-  Standalone HTML (Vorschau). Für WordPress: <body>-Inhalt in wp:html-Block.
-  Platzhalter ersetzen: https://mumlifebalance.thrivecart.com/mba/, [DM-ODER-MAIL-LINK], Testimonials, ggf. echte Zahlen.
-  Regeln: keine erfundenen Zahlen/Testimonials · keine Garantie · Schweizer ss · Kundschaft der Mentees = neutral (nicht "Frauen").
-  Stand 24.6.2026 · Cart-Ende 9.7.
+  MBA Salespage v3 — Design-Sprache analog Julia Trost "Elevate" (visuell analysiert), in Patricia-Brand.
+  Vollflächiger Foto-Header · Split-Sektionen (Foto/Text) · Transformation als Farbverlauf-Block mit Riesen-Nummern · Serif-Headlines mit Kursiv-Betonung · Kreis-Pfeil-Bullets.
+  Bilder: img/freiheit.jpg (Hero-Vollbild) · img/hero.jpg (Empathie-Split) · img/patricia.jpg (Founder).
+  Platzhalter: keine offenen (Checkout-Link + Stimmen gesetzt). Vor WP-Deploy: Bilder web-komprimieren + in Mediathek.
+  Stand 25.6.2026 · keine Garantie · Cart-Ende 9.7.
 -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mum Business Academy — mehr Kunden, mehr Verkäufe, mehr Zeit</title>
+<title>Mum Business Academy — dein eigenes Einkommen von zu Hause</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --creme:#f1ecdd; --cremebg:#f7f3e9; --petrol:#2e5d5e; --petroltief:#1f4445;
@@ -23,160 +22,137 @@
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{font-family:'Source Sans 3',sans-serif;color:var(--text);background:var(--creme);line-height:1.6;font-weight:300;font-size:18px;overflow-x:hidden}
-  h1,h2,h3,h4{font-family:'Philosopher',serif;font-weight:700;line-height:1.12;color:var(--dunkel)}
-  .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
-  .narrow{max-width:780px;margin:0 auto;padding:0 24px}
-  section{padding:92px 0}
-  .eyebrow{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--petrol);font-weight:700;margin-bottom:18px}
-  .center{text-align:center}
-
-  /* Highlight-Marker (Wumms im Satz) */
-  .hl{background:linear-gradient(180deg,transparent 58%,var(--akzenthell) 58%);padding:0 .08em;font-weight:600;color:inherit}
-  .hl-p{background:linear-gradient(180deg,transparent 58%,rgba(46,93,94,.28) 58%);padding:0 .08em;font-weight:600}
+  h1,h2,h3{font-family:'Philosopher',serif;font-weight:700;line-height:1.12;color:var(--dunkel)}
+  .it{font-style:italic;font-weight:400}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 26px}
+  .narrow{max-width:780px;margin:0 auto;padding:0 26px}
+  section{padding:96px 0}
+  .eyebrow{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--akzent);font-weight:700;margin-bottom:16px}
+  .hl{background:linear-gradient(180deg,transparent 58%,var(--akzenthell) 58%);padding:0 .08em;font-weight:600}
   strong{font-weight:700}
 
-  /* Buttons */
-  .btn{display:inline-block;background:var(--petrol);color:#fff;text-decoration:none;font-weight:700;font-size:18px;
-       padding:19px 44px;border-radius:50px;transition:.22s;border:none;cursor:pointer;letter-spacing:.01em;
-       box-shadow:0 10px 24px rgba(46,93,94,.28)}
-  .btn:hover{background:var(--petroltief);transform:translateY(-3px);box-shadow:0 16px 32px rgba(46,93,94,.36)}
-  .btn-xl{font-size:21px;padding:22px 56px}
-  .btn-sub{display:block;font-size:14px;color:var(--muted);margin-top:14px}
+  .btn{display:inline-block;background:var(--dunkel);color:#fff;text-decoration:none;font-weight:700;font-size:16px;
+       letter-spacing:.08em;text-transform:uppercase;padding:20px 46px;border-radius:50px;transition:.22s;
+       box-shadow:0 12px 28px rgba(0,0,0,.22)}
+  .btn:hover{background:var(--petrol);transform:translateY(-3px)}
+  .btn .ar{margin-left:10px}
+  .btn-light{background:var(--creme);color:var(--petroltief)}
+  .btn-light:hover{background:#fff}
+  .btn-sub{display:block;font-size:14px;color:inherit;opacity:.85;margin-top:16px;text-transform:none;letter-spacing:0}
 
-  /* Sticky bar */
-  .topbar{position:sticky;top:0;z-index:50;background:var(--dunkel);color:#fff;text-align:center;
-          padding:11px 16px;font-size:14px;letter-spacing:.04em}
+  .topbar{position:sticky;top:0;z-index:50;background:var(--dunkel);color:#fff;text-align:center;padding:11px 16px;font-size:14px;letter-spacing:.04em}
   .topbar strong{color:var(--akzenthell)}
   .topbar a{color:#fff;font-weight:700;text-decoration:none;margin-left:14px;border-bottom:2px solid var(--akzent)}
 
-  /* Badge */
-  .badge{display:inline-block;background:var(--akzent);color:#fff;font-weight:700;font-size:12px;letter-spacing:.16em;
-         text-transform:uppercase;padding:8px 18px;border-radius:50px;margin-bottom:24px}
-
-  /* Hero */
-  .hero{background:radial-gradient(120% 90% at 50% 0,var(--cremebg),var(--creme));padding:80px 0 84px;text-align:center}
-  .hero h1{font-size:clamp(38px,6.4vw,72px);margin:6px auto 24px;max-width:920px;letter-spacing:-.01em}
-  .hero h1 .pop{color:var(--petrol)}
-  .hero p.lead{font-size:22px;max-width:700px;margin:0 auto 36px;color:var(--text)}
+  /* HERO — Vollbild-Foto */
+  .hero{position:relative;min-height:90vh;display:flex;align-items:flex-end;
+        background:url('img/hero.jpg') center 26%/cover no-repeat}
+  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,47,58,.55) 0,rgba(28,47,58,.55) 38%,rgba(28,47,58,.9) 100%)}
+  .hero .wrap{position:relative;padding-top:140px;padding-bottom:88px;color:#fff}
+  .hero h1{color:#fff;font-size:clamp(38px,5.8vw,72px);max-width:900px;text-shadow:0 2px 20px rgba(0,0,0,.55)}
+  .hero h1 .sub2{display:block;font-size:.5em;font-weight:400;font-style:italic;margin-top:14px;max-width:760px}
+  .hero p.lead{color:#fff;font-size:20px;max-width:620px;margin:24px 0 32px;opacity:.95}
 
   /* Marquee */
-  .marquee{background:var(--petrol);color:var(--creme);overflow:hidden;white-space:nowrap;padding:16px 0;
+  .marquee{background:var(--akzent);color:#fff;overflow:hidden;white-space:nowrap;padding:15px 0;
            font-family:'Philosopher',serif;letter-spacing:.2em;text-transform:uppercase;font-size:16px}
-  .marquee.dark{background:var(--dunkel)}
-  .marquee span{display:inline-block;padding-left:100%;animation:scroll 20s linear infinite}
+  .marquee.petrol{background:var(--petrol);color:var(--creme)}
+  .marquee span{display:inline-block;padding-left:100%;animation:scroll 22s linear infinite}
   @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
 
-  /* Numbered cards */
-  .num-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:46px}
-  .num-card{background:#fff;border:1px solid var(--linie);border-radius:20px;padding:34px 30px;transition:.22s}
-  .num-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(0,0,0,.08)}
-  .num-card .n{font-family:'Philosopher',serif;font-size:48px;color:var(--akzent);font-weight:700;display:block;line-height:1;margin-bottom:12px}
-  .num-card h3{font-size:22px;margin-bottom:8px}
+  /* SPLIT — Foto / Text */
+  .split{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+  .split.rev .img{order:2}
+  .split .img{min-height:560px;background-size:cover;background-position:center}
+  .split .txt{padding:84px 64px;display:flex;flex-direction:column;justify-content:center}
+  .split .txt h2{font-size:clamp(30px,3.6vw,46px)}
+  .split .txt p.big{font-size:21px;margin-top:18px;color:var(--text)}
+  @media(max-width:860px){.split{grid-template-columns:1fr}.split.rev .img{order:0}.split .img{min-height:360px}.split .txt{padding:54px 28px}}
 
-  /* Transformation peak (dark) */
-  .peak{background:var(--dunkel);color:var(--creme)}
-  .peak h2{color:#fff}
-  .peak .vline{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;max-width:820px;margin:18px auto;
-               padding:22px 0;border-bottom:1px solid rgba(255,255,255,.12)}
-  .peak .vline:last-child{border-bottom:none}
-  .peak .from{text-align:right;color:#b9c4c4;font-style:italic}
-  .peak .arrow{color:var(--akzent);font-size:26px;font-weight:700}
-  .peak .to{font-weight:600;font-size:20px;color:#fff}
-  @media(max-width:700px){.peak .vline{grid-template-columns:1fr;text-align:center;gap:8px}.peak .from{text-align:center}}
+  .arrow-list{list-style:none;margin-top:26px}
+  .arrow-list li{position:relative;padding:18px 0 18px 60px;border-top:1px solid var(--linie);font-size:17px}
+  .arrow-list li:last-child{border-bottom:1px solid var(--linie)}
+  .arrow-list li b{display:block;font-family:'Philosopher',serif;font-size:19px;color:var(--dunkel);margin-bottom:2px}
+  .arrow-list .circ{position:absolute;left:0;top:16px;width:38px;height:38px;border:1.6px solid var(--petrol);border-radius:50%;
+       display:flex;align-items:center;justify-content:center;color:var(--petrol);font-size:18px}
+
+  /* TRANSFORMATION — Farbverlauf + Riesen-Nummern */
+  .peak{background:linear-gradient(155deg,var(--petrol) 0,var(--dunkel) 100%);color:var(--creme);text-align:center}
+  .peak h2{color:#fff;font-size:clamp(30px,4.4vw,52px);max-width:900px;margin:0 auto}
+  .peak .eyebrow{color:var(--akzenthell)}
+  .peak .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:58px;text-align:left}
+  .peak .col .bn{font-family:'Philosopher',serif;font-size:66px;font-weight:700;color:var(--akzenthell);line-height:.9}
+  .peak .col h3{color:#fff;font-size:21px;margin:14px 0 8px}
+  .peak .col p{color:rgba(255,255,255,.82);font-size:16px}
+  .peak .cta-row{margin-top:60px}
+  @media(max-width:860px){.peak .cols{grid-template-columns:1fr 1fr;gap:30px 24px}}
+  @media(max-width:480px){.peak .cols{grid-template-columns:1fr}}
 
   /* Feature blocks */
-  .feat{display:flex;gap:22px;align-items:flex-start;padding:28px 0;border-bottom:1px solid var(--linie)}
+  .feat{display:flex;gap:24px;align-items:flex-start;padding:28px 0;border-bottom:1px solid var(--linie)}
   .feat:last-child{border-bottom:none}
-  .feat .ico{font-size:32px;flex-shrink:0;width:50px;text-align:center}
+  .feat .ico{font-size:32px;flex-shrink:0;width:52px;text-align:center}
   .feat h3{font-size:23px;margin-bottom:6px}
   .feat .after{color:var(--petrol);font-style:italic;font-weight:600;margin-top:8px}
 
-  /* Steps */
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:46px}
-  .step{text-align:center;padding:18px}
-  .step .n{display:inline-flex;width:62px;height:62px;border-radius:50%;background:var(--petrol);color:#fff;
-           align-items:center;justify-content:center;font-family:'Philosopher',serif;font-size:28px;margin-bottom:18px;
-           box-shadow:0 10px 22px rgba(46,93,94,.3)}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:48px}
+  .step{text-align:center;padding:16px}
+  .step .n{display:inline-flex;width:64px;height:64px;border-radius:50%;background:var(--petrol);color:#fff;align-items:center;justify-content:center;font-family:'Philosopher',serif;font-size:30px;margin-bottom:18px;box-shadow:0 10px 22px rgba(46,93,94,.3)}
 
-  /* Eligibility */
-  .elig{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:34px}
-  .elig .box{border-radius:20px;padding:36px 32px}
-  .elig .yes{background:var(--petrol);color:var(--creme)}
-  .elig .yes h3{color:#fff}
+  .elig{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:38px}
+  .elig .box{border-radius:20px;padding:38px 34px}
+  .elig .yes{background:var(--petrol);color:var(--creme)} .elig .yes h3{color:#fff}
   .elig .no{background:#fff;border:1px solid var(--linie)}
   .elig ul{list-style:none;margin-top:16px}
   .elig li{padding:9px 0 9px 32px;position:relative;font-size:17px}
   .elig .yes li::before{content:"✓";position:absolute;left:0;font-weight:700;color:var(--akzenthell)}
   .elig .no li::before{content:"✕";position:absolute;left:0;color:var(--akzent);font-weight:700}
 
-  /* Bonus */
-  .bonus-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;margin-top:42px}
-  .bonus{background:#fff;border:1px solid var(--linie);border-radius:20px;padding:32px 26px;text-align:center;transition:.22s}
-  .bonus:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(0,0,0,.08)}
-  .bonus .ico{font-size:38px;display:block;margin-bottom:14px}
+  .bonus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+  .bonus{background:var(--cremebg);border:1px solid var(--linie);border-radius:20px;padding:34px 28px;text-align:center;transition:.22s}
+  .bonus:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.08)}
+  .bonus .ico{font-size:40px;display:block;margin-bottom:14px}
 
-  /* Pricing */
-  .price-sec{background:var(--dunkel);color:var(--creme)}
-  .price-sec h2{color:#fff}
-  .price-sec .eyebrow{color:var(--akzenthell)}
-  .pricecard{background:var(--creme);color:var(--text);max-width:540px;margin:40px auto 0;border-radius:24px;
-             padding:48px 42px;text-align:center;box-shadow:0 30px 70px rgba(0,0,0,.3);position:relative}
-  .pricecard .pop-badge{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--akzent);color:#fff;
-             font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:8px 22px;border-radius:50px}
+  .price-sec{background:var(--dunkel);color:var(--creme);text-align:center}
+  .price-sec h2{color:#fff} .price-sec .eyebrow{color:var(--akzenthell)}
+  .pricecard{background:var(--creme);color:var(--text);max-width:560px;margin:42px auto 0;border-radius:24px;padding:52px 44px;box-shadow:0 30px 70px rgba(0,0,0,.3);position:relative}
+  .pricecard .pop-badge{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--akzent);color:#fff;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:8px 22px;border-radius:50px}
   .pricecard .old{color:var(--muted);text-decoration:line-through;font-size:21px}
-  .pricecard .big{font-family:'Philosopher',serif;font-size:72px;color:var(--petrol);font-weight:700;line-height:1}
+  .pricecard .big{font-family:'Philosopher',serif;font-size:74px;color:var(--petrol);font-weight:700;line-height:1}
   .pricecard .rate{color:var(--muted);margin:6px 0 26px}
   .pricecard ul{list-style:none;text-align:left;margin:26px 0;display:inline-block}
   .pricecard li{padding:8px 0 8px 32px;position:relative;font-size:17px}
   .pricecard li::before{content:"✔";position:absolute;left:0;color:var(--petrol)}
-  .anrechnung{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:16px;
-              padding:20px 24px;max-width:540px;margin:24px auto 0;font-size:16px;text-align:center}
+  .anrechnung{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:16px;padding:20px 24px;max-width:560px;margin:24px auto 0;font-size:16px}
   .anrechnung a{color:var(--akzenthell);font-weight:700}
 
-  /* Testimonials */
-  .testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
-  .testi{background:#fff;border:1px solid var(--linie);border-radius:20px;padding:30px;font-style:italic;font-size:18px}
-  .testi .who{display:block;margin-top:16px;font-style:normal;font-weight:700;color:var(--petrol)}
+  .testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:42px}
+  .testi{background:var(--cremebg);border:1px solid var(--linie);border-radius:20px;padding:32px;font-style:italic;font-size:19px}
+  .testi .who{display:block;margin-top:16px;font-style:normal;font-weight:700;color:var(--petrol);font-size:16px}
 
-  /* Why */
-  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:42px}
-  .why .ico{font-size:36px;margin-bottom:14px}
-  .why h3{font-size:22px;margin-bottom:6px}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:46px}
+  .why .ico{font-size:38px;margin-bottom:14px} .why h3{font-size:22px;margin-bottom:6px}
 
-  /* FAQ */
-  details{background:#fff;border:1px solid var(--linie);border-radius:16px;margin-bottom:14px;padding:4px 26px}
-  summary{cursor:pointer;font-family:'Philosopher',serif;font-size:21px;color:var(--dunkel);padding:20px 0;list-style:none;
-          position:relative;font-weight:700}
+  details{background:var(--cremebg);border:1px solid var(--linie);border-radius:16px;margin-bottom:14px;padding:4px 28px}
+  summary{cursor:pointer;font-family:'Philosopher',serif;font-size:21px;color:var(--dunkel);padding:22px 0;list-style:none;position:relative;font-weight:700}
   summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";position:absolute;right:0;color:var(--akzent);font-size:28px;line-height:1}
+  summary::after{content:"+";position:absolute;right:0;color:var(--akzent);font-size:28px}
   details[open] summary::after{content:"–"}
   details p{padding:0 0 22px}
 
-  .founder{background:var(--cremebg)}
-  .founder .narrow{text-align:center}
+  .final{position:relative;background:linear-gradient(160deg,var(--petrol),var(--petroltief));color:var(--creme);text-align:center}
+  .final h2{color:#fff;font-size:clamp(34px,5vw,58px);margin-bottom:20px}
 
-  .final{background:linear-gradient(160deg,var(--petrol),var(--petroltief));color:var(--creme);text-align:center}
-  .final h2{color:#fff;font-size:clamp(32px,5vw,52px);margin-bottom:20px}
-  .final .btn{background:var(--creme);color:var(--petroltief);box-shadow:0 14px 30px rgba(0,0,0,.25)}
-  .final .btn:hover{background:#fff}
+  h2.sec-title{font-size:clamp(30px,4.4vw,48px);text-align:center;margin-bottom:10px}
+  p.sec-intro{text-align:center;max-width:680px;margin:0 auto;color:var(--muted);font-size:19px}
+  .cta-row{text-align:center;margin-top:50px}
 
-  h2.sec-title{font-size:clamp(30px,4.4vw,46px);text-align:center;margin-bottom:10px}
-  p.sec-intro{text-align:center;max-width:660px;margin:0 auto;color:var(--muted);font-size:19px}
-  .cta-row{text-align:center;margin-top:48px}
-
-  /* Bilder */
-  .shot{display:block;width:100%;border-radius:22px;box-shadow:0 20px 50px rgba(0,0,0,.16)}
-  .hero-shot{max-width:600px;margin:42px auto 0}
-  .portrait{max-width:320px;width:100%;margin:0 auto 28px;border-radius:20px;box-shadow:0 18px 40px rgba(0,0,0,.18);display:block}
-  .band-shot{max-width:560px;margin:0 auto 28px}
-
-  /* Scroll reveal */
   .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
   .reveal.in{opacity:1;transform:none}
 
   @media(max-width:760px){
-    section{padding:62px 0}
-    .num-grid,.steps,.elig,.bonus-grid,.testi-grid,.why-grid{grid-template-columns:1fr}
+    section{padding:64px 0}
+    .steps,.elig,.bonus-grid,.testi-grid,.why-grid{grid-template-columns:1fr}
     body{font-size:17px}
   }
 </style>
@@ -185,103 +161,93 @@
 
 <div class="topbar">🔥 Pioneer-Runde offen bis <strong>9. Juli</strong><a href="https://mumlifebalance.thrivecart.com/mba/">Platz sichern →</a></div>
 
-<!-- 1. HERO -->
+<!-- 1. HERO Vollbild -->
 <header class="hero">
   <div class="wrap">
-    <span class="badge reveal">Mum Business Academy · Pioneer-Runde</span>
-    <h1 class="reveal">Mehr Kunden. Mehr Verkäufe. Mehr Zeit.<br><span class="pop">Ein eigenes Einkommen von zu Hause — ohne deine Familie zu vernachlässigen.</span></h1>
-    <p class="lead reveal">Schluss damit, Stunden in Content zu stecken, der keine Kunden bringt — und am Ende an 10–30 % Provision zu hängen. In der MBA wirst du endlich klar, <span class="hl">womit du wirklich hilfst</span>, und baust dir ein System, das fremde Menschen zu Kunden macht — mit deiner KI-Mentorin PIA, ein Jahr lang an deiner Seite.</p>
-    <a class="btn btn-xl reveal" href="https://mumlifebalance.thrivecart.com/mba/">Ja, ich will meinen Platz</a>
-    <span class="btn-sub reveal">Pioneer-Preis nur in der ersten Runde · in bis zu 6 Raten ohne Aufpreis</span>
-    <img class="shot hero-shot reveal" src="img/hero.jpg" alt="Patricia von Mum Life Balance" loading="lazy">
+    <h1>Mehr Kunden. Mehr Verkäufe. Mehr Zeit.<span class="sub2">Ein eigenes Einkommen von zu Hause — <span class="it">ohne deine Familie zu vernachlässigen.</span></span></h1>
+    <p class="lead">Die Mum Business Academy: drei Kurse, ein ganzes Jahr Begleitung und PIA, deine KI-Mentorin, die ein Jahr lang mit dir umsetzt.</p>
+    <a class="btn btn-light" href="https://mumlifebalance.thrivecart.com/mba/">Ja, ich will meinen Platz <span class="ar">→</span><span class="btn-sub">Pioneer-Preis nur in der ersten Runde · bis zu 6 Raten</span></a>
   </div>
 </header>
 
 <div class="marquee"><span>Mehr Kunden &nbsp;·&nbsp; Mehr Verkäufe &nbsp;·&nbsp; Mehr Zeit &nbsp;·&nbsp; Mehr Freiheit &nbsp;·&nbsp; Mehr Kunden &nbsp;·&nbsp; Mehr Verkäufe &nbsp;·&nbsp; Mehr Zeit &nbsp;·&nbsp; Mehr Freiheit &nbsp;·&nbsp;</span></div>
 
-<!-- 2. PROBLEM -->
-<section>
-  <div class="wrap">
-    <h2 class="sec-title reveal">Kennst du das?</h2>
-    <p class="sec-intro reveal">Und ehrlich — mir ging es vor gar nicht so langer Zeit genauso.</p>
-    <div class="num-grid">
-      <div class="num-card reveal"><span class="n">01</span><h3>Mega Aufwand, kaum Verdienst</h3><p>Du steckst Stunde um Stunde rein — und am Ende bleiben dir <span class="hl-p">10–30 % Provision</span>. Einsatz und Ertrag passen einfach nicht zusammen.</p></div>
-      <div class="num-card reveal"><span class="n">02</span><h3>Das betretene Schweigen</h3><p>Beim Treffen mit den Freundinnen wird's kurz still — weil keine will, dass du wieder mit deinem Produkt um die Ecke kommst.</p></div>
-      <div class="num-card reveal"><span class="n">03</span><h3>Die Zweifel im Umfeld</h3><p>„Jetzt machst du noch eine Produktpräsentation … aber bringt das überhaupt was?" Und insgeheim fragst du dich das selbst.</p></div>
-      <div class="num-card reveal"><span class="n">04</span><h3>Der blinde Fleck</h3><p>Tief drin willst du ein <span class="hl-p">eigenes Thema</span>, mit dem du wirklich hilfst. Aber ohne es zu merken, verkaufst du weiter einfach Produkte.</p></div>
-    </div>
-    <p class="center reveal" style="margin-top:42px;font-size:23px"><strong>Das Problem ist nicht, dass du zu wenig tust.</strong> Es ist, dass <span class="hl">dein Aufwand und dein Verdienst nicht zusammenpassen</span> — und dass du tief drin gar nicht einfach Produkte verkaufen willst, sondern <span class="hl">ein eigenes Thema, mit dem du hilfst</span>. Genau das machen wir klar.</p>
+<!-- 2. EMPATHIE / PROBLEM — Split -->
+<section class="split" style="padding:0">
+  <div class="img reveal" style="background-image:url('img/freiheit.jpg')"></div>
+  <div class="txt">
+    <div class="eyebrow reveal">&amp; mir ging es genauso</div>
+    <h2 class="reveal">Ich weiss <span class="it">genau</span>, wie sich das anfühlt.</h2>
+    <p class="big reveal">Du gibst Woche für Woche alles — und trotzdem passt am Ende nichts zusammen. Das Problem ist nicht, dass du zu wenig tust.</p>
+    <ul class="arrow-list">
+      <li class="reveal"><span class="circ">→</span><b>Mega Aufwand, kaum Verdienst</b>Stunde um Stunde rein — und am Ende bleiben 10–30 % Provision.</li>
+      <li class="reveal"><span class="circ">→</span><b>Das betretene Schweigen</b>Bei den Freundinnen wird's still, weil keine will, dass du wieder mit deinem Produkt um die Ecke kommst.</li>
+      <li class="reveal"><span class="circ">→</span><b>Die Zweifel im Umfeld</b>„Noch eine Produktpräsentation … bringt das überhaupt was?" — und insgeheim fragst du dich das selbst.</li>
+      <li class="reveal"><span class="circ">→</span><b>Der blinde Fleck</b>Tief drin willst du ein eigenes Thema, mit dem du hilfst. Aber ohne es zu merken, verkaufst du weiter einfach Produkte.</li>
+    </ul>
   </div>
 </section>
 
-<!-- 3. TRANSFORMATION PEAK (dark) -->
+<!-- 3. TRANSFORMATION — Farbverlauf + Riesen-Nummern -->
 <section class="peak">
-  <div class="wrap center">
-    <div class="eyebrow reveal" style="color:var(--akzenthell)">Wohin die Reise geht</div>
-    <h2 class="sec-title reveal">In einem Jahr von hier nach dort.</h2>
-    <div style="margin-top:40px">
-      <div class="vline reveal"><div class="from">„Viel Aufwand, 10–30 % Provision"</div><div class="arrow">→</div><div class="to">Ein Einkommen, das zu deinem Einsatz passt</div></div>
-      <div class="vline reveal"><div class="from">„Betretenes Schweigen bei den Freundinnen"</div><div class="arrow">→</div><div class="to">Menschen kommen zu dir, weil du ihnen bei etwas Konkretem hilfst</div></div>
-      <div class="vline reveal"><div class="from">„Ich verkauf einfach irgendein Produkt"</div><div class="arrow">→</div><div class="to">Du weisst genau, womit du hilfst</div></div>
-      <div class="vline reveal"><div class="from">„Die warme Liste ist durch"</div><div class="arrow">→</div><div class="to">Fremde Menschen schreiben dich an</div></div>
+  <div class="wrap">
+    <div class="eyebrow reveal">Wohin die Reise geht</div>
+    <h2 class="reveal">Was wäre, wenn du <span class="it">in nur einem Jahr</span> all das erreichst?</h2>
+    <div class="cols">
+      <div class="col reveal"><div class="bn">01</div><h3>Sichtbar &amp; gefragt</h3><p>Fremde Menschen schreiben <em>dich</em> an — statt dass du der warmen Liste hinterherjagst.</p></div>
+      <div class="col reveal"><div class="bn">02</div><h3>Einkommen, das passt</h3><p>Ein Verdienst, der zu deinem Einsatz passt — von zu Hause, planbar, deiner.</p></div>
+      <div class="col reveal"><div class="bn">03</div><h3>Dein eigenes Thema</h3><p>Du weisst endlich, womit du wirklich hilfst — und verkaufst nicht mehr einfach Produkte.</p></div>
+      <div class="col reveal"><div class="bn">04</div><h3>Zeit für die Familie</h3><p>Dein Business läuft in ein paar fokussierten Stunden — der Rest gehört euch.</p></div>
     </div>
+    <div class="cta-row reveal"><a class="btn btn-light" href="https://mumlifebalance.thrivecart.com/mba/">Das will ich <span class="ar">→</span></a></div>
   </div>
 </section>
 
-<!-- 4. WENDE -->
-<section style="background:var(--cremebg)">
-  <div class="narrow center">
-    <div class="eyebrow reveal">Die Wende</div>
-    <h2 class="sec-title reveal">Es braucht nicht den einen Baustein. Es braucht alle.</h2>
-    <p class="reveal" style="margin-top:18px;font-size:20px">Klar werden, womit du hilfst. Sichtbar werden. Dir Zeit schaffen. Ein eigenes Angebot aufbauen, das mehr bringt als 10–30 % Provision. Dranbleiben. Jeder Baustein für sich bringt dich ein Stück — aber erst <span class="hl-p">alle zusammen</span> bringen dich wirklich ans Ziel. Genau dafür gibt es die Mum Business Academy.</p>
-  </div>
-</section>
-
-<!-- 5. ANGEBOT -->
+<!-- 4. ANGEBOT -->
 <section>
   <div class="narrow">
+    <div class="eyebrow center reveal" style="text-align:center">Das Komplettpaket</div>
     <h2 class="sec-title reveal">Das ist die MBA</h2>
-    <p class="sec-intro reveal">Dein Weg, deine Begleitung, dein eigenes Business — ein ganzes Jahr.</p>
-    <div style="margin-top:44px">
-      <div class="feat reveal"><div class="ico">🤖</div><div><h3>PIA — deine KI-Mentorin, ein Jahr lang jeden Tag</h3><p>Sie baut mit dir Bio, Hooks, fertige Posts, Stories, deinen Leadmagnet, ganze Content-Wochen und deinen Funnel — alles <span class="hl-p">in deiner Stimme</span>. Dein ganzes erstes Jahr an deiner Seite.</p></div></div>
-      <div class="feat reveal"><div class="ico">📱</div><div><h3>Instagram-Kundenmaschine</h3><p>Damit Menschen <span class="hl-p">DICH</span> anschreiben, statt dass du suchst.</p></div></div>
+    <p class="sec-intro reveal">Es braucht nicht den einen Baustein — es braucht alle. Hier hast du sie.</p>
+    <div style="margin-top:46px">
+      <div class="feat reveal"><div class="ico">🤖</div><div><h3>PIA — deine KI-Mentorin, ein Jahr lang jeden Tag</h3><p>Sie baut mit dir Bio, Hooks, fertige Posts, Stories, deinen Leadmagnet, ganze Content-Wochen und deinen Funnel — alles <span class="hl">in deiner Stimme</span>.</p></div></div>
+      <div class="feat reveal"><div class="ico">📱</div><div><h3>Instagram-Kundenmaschine</h3><p>Damit Menschen <span class="hl">DICH</span> anschreiben, statt dass du suchst.</p></div></div>
       <div class="feat reveal"><div class="ico">⏰</div><div><h3>Mama-CEO</h3><p>Damit dein Business zwischen Znüni und Abholzeit wirklich stattfindet.</p></div></div>
       <div class="feat reveal"><div class="ico">🚀</div><div><h3>Digitale Produktwelt</h3><p>Dein eigenes digitales Angebot, das auch verkauft, wenn du am Spielplatz sitzt.</p></div></div>
-      <div class="feat reveal"><div class="ico">🤝</div><div><h3>Die Umsetzerinnen — Begleitung übers ganze Jahr</h3><p>Zwei Live-Calls pro Monat (ein Experten-Call inkl. Q&amp;A + ein reiner Q&amp;A) und eine begleitete Telegram-Gruppe, in der ich deine Fragen <span class="hl-p">dienstags &amp; donnerstags</span> persönlich beantworte. Alle Calls werden aufgezeichnet.</p></div></div>
+      <div class="feat reveal"><div class="ico">🤝</div><div><h3>Die Umsetzerinnen — Begleitung übers ganze Jahr</h3><p>Zwei Live-Calls pro Monat (Experten-Call + Q&amp;A · reiner Q&amp;A) und eine begleitete Telegram-Gruppe — ich antworte <span class="hl">dienstags &amp; donnerstags</span> persönlich. Alle Calls aufgezeichnet.</p></div></div>
       <div class="feat reveal"><div class="ico">♾️</div><div><h3>Alle Kurse unbegrenzt zugänglich</h3><p>Du lernst in deinem Tempo und kommst immer wieder rein.</p></div></div>
     </div>
-    <div class="cta-row reveal"><a class="btn" href="https://mumlifebalance.thrivecart.com/mba/">Ich bin dabei</a></div>
   </div>
 </section>
 
-<div class="marquee dark"><span>Sichtbar werden &nbsp;·&nbsp; Zeit schaffen &nbsp;·&nbsp; eigenes Angebot &nbsp;·&nbsp; dranbleiben &nbsp;·&nbsp; sichtbar werden &nbsp;·&nbsp; Zeit schaffen &nbsp;·&nbsp; eigenes Angebot &nbsp;·&nbsp; dranbleiben &nbsp;·&nbsp;</span></div>
+<div class="marquee petrol"><span>Sichtbar werden &nbsp;·&nbsp; Zeit schaffen &nbsp;·&nbsp; eigenes Thema &nbsp;·&nbsp; dranbleiben &nbsp;·&nbsp; sichtbar werden &nbsp;·&nbsp; Zeit schaffen &nbsp;·&nbsp; eigenes Thema &nbsp;·&nbsp; dranbleiben &nbsp;·&nbsp;</span></div>
 
-<!-- 6. KURSE -->
+<!-- 5. KURSE -->
 <section>
   <div class="narrow">
     <h2 class="sec-title reveal">Was in den Kursen steckt</h2>
     <p class="sec-intro reveal">Keine Modul-Listen — sondern, wer du danach bist.</p>
-    <div style="margin-top:44px">
-      <div class="feat reveal"><div class="ico" style="font-family:'Philosopher',serif;color:var(--akzent);font-weight:700;font-size:34px">01</div><div><h3>Instagram-Kundenmaschine</h3><p>Du legst endlich fest, <span class="hl-p">womit du konkret hilfst</span> — und dein Profil wird vom „Produktkatalog, den keiner liked" zur Bibliothek, die anzieht. Thema, Hooks, Beiträge, Stories und Keywords, die Anfragen auslösen.</p><p class="after">→ Danach weisst du jeden Tag, was du postest, und fremde Menschen landen in deiner DM.</p></div></div>
-      <div class="feat reveal"><div class="ico" style="font-family:'Philosopher',serif;color:var(--akzent);font-weight:700;font-size:34px">02</div><div><h3>Mama-CEO</h3><p>Du schaffst dir Zeit (Powerzeiten, Hütchenmethode), holst dir KI-Mitarbeiter und baust dein Business-Brain in Notion — vom Jahr runter bis zum Tag.</p><p class="after">→ Danach läuft dein Business in ein paar fokussierten Stunden, nicht rund um die Uhr im Kopf.</p></div></div>
-      <div class="feat reveal"><div class="ico" style="font-family:'Philosopher',serif;color:var(--akzent);font-weight:700;font-size:34px">03</div><div><h3>Digitale Produktwelt</h3><p>Du baust dein erstes digitales Produkt (mit KI), deine Produkttreppe und deinen Funnel — und lernst zu verkaufen, ohne dich zu verbiegen.</p><p class="after">→ Danach hast du Einkommen, das dir gehört — und nicht von der nächsten Teamaktion abhängt.</p></div></div>
+    <div style="margin-top:46px">
+      <div class="feat reveal"><div class="ico" style="font-family:'Philosopher',serif;color:var(--akzent);font-weight:700;font-size:36px">01</div><div><h3>Instagram-Kundenmaschine</h3><p>Du legst endlich fest, <span class="hl">womit du konkret hilfst</span> — und dein Profil wird vom „Produktkatalog, den keiner liked" zur Bibliothek, die anzieht.</p><p class="after">→ Danach landen fremde Menschen in deiner DM.</p></div></div>
+      <div class="feat reveal"><div class="ico" style="font-family:'Philosopher',serif;color:var(--akzent);font-weight:700;font-size:36px">02</div><div><h3>Mama-CEO</h3><p>Zeit schaffen (Powerzeiten, Hütchenmethode), KI-Mitarbeiter holen und dein Business-Brain in Notion bauen — vom Jahr bis zum Tag.</p><p class="after">→ Danach läuft dein Business in ein paar fokussierten Stunden.</p></div></div>
+      <div class="feat reveal"><div class="ico" style="font-family:'Philosopher',serif;color:var(--akzent);font-weight:700;font-size:36px">03</div><div><h3>Digitale Produktwelt</h3><p>Dein erstes digitales Produkt (mit KI), deine Produkttreppe und dein Funnel — verkaufen, ohne dich zu verbiegen.</p><p class="after">→ Danach hast du Einkommen, das dir gehört.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- 7. SCHRITTE -->
+<!-- 6. SCHRITTE -->
 <section style="background:var(--cremebg)">
   <div class="wrap">
     <h2 class="sec-title reveal">So einfach sind die Schritte</h2>
     <div class="steps">
       <div class="step reveal"><span class="n">1</span><h3>Platz sichern</h3><p>Du holst dir deinen Pioneer-Platz — sofort drin.</p></div>
-      <div class="step reveal"><span class="n">2</span><h3>Sofort starten</h3><p>Du legst los mit PIA und den Kursen, in deinem Tempo, schon über den Sommer.</p></div>
-      <div class="step reveal"><span class="n">3</span><h3>Gemeinsam dranbleiben</h3><p>Nach den Sommerferien starten wir live — und du bleibst nie allein.</p></div>
+      <div class="step reveal"><span class="n">2</span><h3>Sofort starten</h3><p>Los mit PIA und den Kursen, in deinem Tempo, schon über den Sommer.</p></div>
+      <div class="step reveal"><span class="n">3</span><h3>Gemeinsam dranbleiben</h3><p>Nach den Sommerferien starten wir live — du bleibst nie allein.</p></div>
     </div>
   </div>
 </section>
 
-<!-- 8. FÜR WEN -->
+<!-- 7. FÜR WEN -->
 <section>
   <div class="wrap">
     <h2 class="sec-title reveal">Ist die MBA das Richtige für dich?</h2>
@@ -289,9 +255,9 @@
       <div class="box yes reveal"><h3>Das ist für dich, wenn du…</h3>
         <ul>
           <li>endlich ein eigenes Thema willst, mit dem du Menschen wirklich hilfst — statt einfach Produkte zu verkaufen</li>
-          <li>endlich klare Schritte statt hundert halber Sachen willst</li>
+          <li>ein eigenes Einkommen von zu Hause aufbauen willst, ohne die Familie zu vernachlässigen</li>
           <li>Begleitung willst, nicht noch ein PDF</li>
-          <li>dein Business neben der Familie aufbaust und deine Zeit klug einsetzen willst</li>
+          <li>bereit bist, dranzubleiben und umzusetzen</li>
         </ul>
       </div>
       <div class="box no reveal"><h3>In dem Fall (noch) nicht…</h3>
@@ -302,11 +268,10 @@
         </ul>
       </div>
     </div>
-    <div class="cta-row reveal"><a class="btn" href="https://mumlifebalance.thrivecart.com/mba/">Das passt zu mir</a></div>
   </div>
 </section>
 
-<!-- 9. BONUS -->
+<!-- 8. BONUS -->
 <section style="background:var(--cremebg)">
   <div class="wrap">
     <h2 class="sec-title reveal">Deine Vorteile in der ersten Runde</h2>
@@ -318,12 +283,12 @@
   </div>
 </section>
 
-<!-- 10. PREIS -->
+<!-- 9. PREIS -->
 <section class="price-sec">
-  <div class="wrap center">
-    <div class="eyebrow reveal">Pioneer-Preis — nur in der ersten Runde</div>
+  <div class="wrap">
+    <div class="eyebrow reveal" style="text-align:center">Pioneer-Preis — nur in der ersten Runde</div>
     <h2 class="sec-title reveal">Dein Platz in der MBA</h2>
-    <div class="pricecard reveal">
+    <div class="pricecard reveal" style="text-align:center">
       <span class="pop-badge">Pioneer · nur jetzt</span>
       <div class="old">statt CHF 1347</div>
       <div class="big">CHF 997</div>
@@ -335,13 +300,13 @@
         <li>Ein ganzes Jahr Begleitung</li>
         <li>Programmstart Mitte August — Zugang sofort</li>
       </ul>
-      <div><a class="btn btn-xl" href="https://mumlifebalance.thrivecart.com/mba/">Pioneer-Platz sichern</a></div>
+      <div><a class="btn" href="https://mumlifebalance.thrivecart.com/mba/">Pioneer-Platz sichern <span class="ar">→</span></a></div>
     </div>
-    <div class="anrechnung reveal">💡 <strong>Schon einen meiner Kurse gekauft?</strong> Schreib mir kurz per Instagram-DM oder an <a href="mailto:info@mumlifebalance.ch">info@mumlifebalance.ch</a> — ich schicke dir deinen persönlichen Rabatt-Link, damit du nicht doppelt zahlst.</div>
+    <div class="anrechnung reveal" style="text-align:center">💡 <strong>Schon einen meiner Kurse gekauft?</strong> Schreib mir kurz per Instagram-DM oder an <a href="mailto:info@mumlifebalance.ch">info@mumlifebalance.ch</a> — ich schicke dir deinen persönlichen Rabatt-Link.</div>
   </div>
 </section>
 
-<!-- 11. TESTIMONIALS -->
+<!-- 10. TESTIMONIALS -->
 <section>
   <div class="wrap">
     <h2 class="sec-title reveal">Was Mamas über die Arbeit mit mir sagen</h2>
@@ -354,59 +319,59 @@
   </div>
 </section>
 
-<!-- 12. WARUM -->
+<!-- 11. WARUM -->
 <section style="background:var(--cremebg)">
-  <div class="wrap center">
+  <div class="wrap center" style="text-align:center">
     <h2 class="sec-title reveal">Du wirst es nicht bereuen</h2>
     <div class="why-grid">
-      <div class="why reveal"><div class="ico">🛠️</div><h3>Umsetzung statt Theorie</h3><p>PIA nimmt dir die Arbeit ab — du kommst endlich ins Tun, statt nur zu lernen.</p></div>
+      <div class="why reveal"><div class="ico">🛠️</div><h3>Umsetzung statt Theorie</h3><p>PIA nimmt dir die Arbeit ab — du kommst endlich ins Tun.</p></div>
       <div class="why reveal"><div class="ico">🧭</div><h3>Klarheit statt Chaos</h3><p>Ein Weg in der richtigen Reihenfolge — nie wieder „wo fang ich an?".</p></div>
       <div class="why reveal"><div class="ico">💛</div><h3>Nie mehr allein</h3><p>Zweimal im Monat live, dazu die Gruppe — jemand bleibt mit dir dran.</p></div>
     </div>
   </div>
 </section>
 
-<!-- 13. FAQ -->
+<!-- 12. FAQ -->
 <section>
   <div class="narrow">
     <h2 class="sec-title reveal">Häufige Fragen</h2>
-    <div style="margin-top:40px">
+    <div style="margin-top:42px">
       <details class="reveal"><summary>Ich hab so wenig Zeit.</summary><p>Genau dafür ist Mama-CEO da — und PIA nimmt dir den Grossteil der Arbeit ab. Du brauchst ein paar fokussierte Slots, keine 7 Stunden.</p></details>
       <details class="reveal"><summary>Ich hab schon so viele Kurse und nichts umgesetzt.</summary><p>Eben. Das Problem war nie das Wissen, sondern die Umsetzung allein. Die MBA gibt dir den Weg in der richtigen Reihenfolge plus die Begleitung, die dich dranbleiben lässt.</p></details>
       <details class="reveal"><summary>Ich hab einen deiner Kurse schon gekauft.</summary><p>Super — schreib mir kurz per DM oder Mail. Dann bekommst du deinen persönlichen Rabatt-Link, damit du nicht doppelt zahlst.</p></details>
       <details class="reveal"><summary>Ich bin technisch nicht so fit.</summary><p>Musst du nicht sein. PIA und die Kurse nehmen dich Schritt für Schritt mit — und in den Calls und der Telegram-Gruppe kannst du jederzeit fragen.</p></details>
-      <details class="reveal"><summary>Wann sind die Calls?</summary><p>Zweimal im Monat, live (und aufgezeichnet, falls du nicht dabei sein kannst). Wir starten nach den Sommerferien und legen die festen Zeiten gemeinsam mit der Gruppe fest.</p></details>
+      <details class="reveal"><summary>Wann sind die Calls?</summary><p>Zweimal im Monat, live (und aufgezeichnet). Wir starten nach den Sommerferien und legen die festen Zeiten gemeinsam mit der Gruppe fest.</p></details>
       <details class="reveal"><summary>Kann ich in Raten zahlen?</summary><p>Ja, in bis zu 6 Raten, ohne Aufpreis.</p></details>
     </div>
   </div>
 </section>
 
-<!-- 14. GRÜNDERIN -->
-<section class="founder">
-  <div class="narrow">
-    <img class="portrait reveal" src="img/patricia.jpg" alt="Patricia" loading="lazy">
-    <div class="eyebrow center reveal">Wer dich begleitet</div>
-    <h2 class="sec-title reveal">Ich bin Patricia</h2>
-    <p class="reveal" style="margin-top:18px;font-size:19px">Vierfache Mama — und ich kenne das Gefühl, im Funktionieren steckenzubleiben, von innen. Ich habe selbst jahrelang gedacht „eigentlich müsste ich", während der Alltag mich aufgefressen hat.</p>
-    <p class="reveal" style="margin-top:16px;font-size:19px">Warum ich das mache? Weil ich zu viele Mamas kenne, die Woche für Woche alles geben — und am Ende an ein paar Prozent Provision hängen, ohne je gefragt zu haben, womit sie eigentlich wirklich helfen wollen. Du hast so viel mehr zu geben, als immer nur ein Produkt zu verkaufen.</p>
-    <p class="reveal" style="margin-top:16px;font-size:19px">Was mich rausgeholt hat, war nicht der nächste Kurs. Es war ein klarer Weg — und Menschen, die mit mir drangeblieben sind. Heute baue ich genau das für dich: nicht noch mehr Stoff, sondern den Weg plus die Begleitung, die ich mir damals selbst gewünscht hätte.</p>
+<!-- 13. FOUNDER — Split -->
+<section class="split rev" style="padding:0;background:var(--cremebg)">
+  <div class="img reveal" style="background-image:url('img/patricia.jpg')"></div>
+  <div class="txt">
+    <div class="eyebrow reveal">Wer dich begleitet</div>
+    <h2 class="reveal">Ich bin <span class="it">Patricia</span></h2>
+    <p class="big reveal">Vierfache Mama — und ich kenne das Gefühl, im Funktionieren steckenzubleiben, von innen.</p>
+    <p class="reveal" style="margin-top:14px">Warum ich das mache? Weil ich zu viele Mamas kenne, die Woche für Woche alles geben — und am Ende an ein paar Prozent Provision hängen, ohne je gefragt zu haben, womit sie eigentlich wirklich helfen wollen. Du hast so viel mehr zu geben, als immer nur ein Produkt zu verkaufen.</p>
+    <p class="reveal" style="margin-top:14px">Heute baue ich für dich, was ich mir damals selbst gewünscht hätte: nicht noch mehr Stoff, sondern den Weg plus die Begleitung.</p>
   </div>
 </section>
 
-<!-- 15. FINAL CTA -->
+<!-- 14. FINAL CTA -->
 <section class="final">
   <div class="narrow">
-    <img class="shot band-shot reveal" src="img/freiheit.jpg" alt="Patricia am See" loading="lazy">
-    <h2 class="reveal">Du musst das nicht allein machen.</h2>
-    <p class="reveal" style="font-size:21px;margin-bottom:32px">Ein klarer Weg, deine KI-Mentorin und ein ganzes Jahr Begleitung — alle Bausteine, die dich wirklich ans Ziel bringen, in einem Paket.</p>
-    <a class="btn btn-xl reveal" href="https://mumlifebalance.thrivecart.com/mba/">Ja, ich komme in die MBA</a>
-    <p class="reveal" style="margin-top:24px;font-size:15px;opacity:.85">Die Pioneer-Runde schliesst am 9. Juli.</p>
+    <div class="eyebrow reveal" style="color:var(--akzenthell);text-align:center">Die Türen schliessen am 9. Juli</div>
+    <h2 class="reveal">Du musst das nicht <span class="it">allein</span> machen.</h2>
+    <p class="reveal" style="font-size:21px;margin-bottom:34px">Ein klarer Weg, deine KI-Mentorin und ein ganzes Jahr Begleitung — alle Bausteine, die dich wirklich ans Ziel bringen, in einem Paket.</p>
+    <a class="btn btn-light reveal" href="https://mumlifebalance.thrivecart.com/mba/">Ja, ich komme in die MBA <span class="ar">→</span></a>
   </div>
 </section>
 
+<div class="marquee"><span>Die Türen sind offen &nbsp;·&nbsp; Pioneer-Runde &nbsp;·&nbsp; bis 9. Juli &nbsp;·&nbsp; Die Türen sind offen &nbsp;·&nbsp; Pioneer-Runde &nbsp;·&nbsp; bis 9. Juli &nbsp;·&nbsp;</span></div>
+
 <script>
-  // Scroll-Reveal
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 </body>
