@@ -133,5 +133,6 @@ html{scroll-behavior:smooth}
 @media(max-width:760px){.mba-lp section{padding:64px 0}
 .mba-lp .steps,.mba-lp .elig,.mba-lp .bonus-grid,.mba-lp .testi-grid,.mba-lp .why-grid{grid-template-columns:1fr}
 .mba-lp{font-size:17px}
-.mba-lp .hero{min-height:70vh}
-.mba-lp .hero .wrap{padding-top:64px;padding-bottom:48px}}
+.mba-lp .hero{min-height:78vh;align-items:center}
+.mba-lp .hero::before{background:linear-gradient(180deg,rgba(28,47,58,.48),rgba(28,47,58,.8))}
+.mba-lp .hero .wrap{padding-top:80px;padding-bottom:60px}}
