@@ -37,6 +37,8 @@ Patricia macht ein Ernährung- + Fitness-Coaching bei **MyBodyAdvice**. Der Bot 
 - Tipps Ernährung rund ums Training
 - Lebensmittel tauschen + Mahlzeiten selbst zusammenstellen
 
+**🔁 MBA-Plan = wachsende Rezept-Bibliothek (WICHTIG):** Lisa schickt **jeden Monat einen neuen Ernährungsplan** mit teils anderen Rezepten. Patricia lädt die PDFs in `kochwissen/` hoch (Namensschema `Ernährungsplan Coaching <Monat>.pdf` bzw. `… AKTUELL <Datum>.pdf`). **Die alten Pläne NICHT verwerfen** — sie bleiben Teil des Rezept-Pools, damit Patricia mehr Auswahl hat. Bei jedem `/mealplan`-Lauf für Patricias eigene Mahlzeiten: **alle vorhandenen `Ernährungsplan Coaching*.pdf` lesen und aus dem kompletten Pool schöpfen** (alt + neu), nicht nur aus dem jüngsten. Falls ein PDF beschädigt ist (Ghostscript-Header vor `%PDF-`): Bytes vor `%PDF-` strippen, dann lesen.
+
 Screenshots von MyBodyAdvice-Rezepten werden laufend via Telegram archiviert (automatische Einspeisung in die Wissensdatenbank mit `source_file: "MyBodyAdvice-<datum>-<rezept>.txt"`).
 
 ### Grundprinzipien (Familie + Patricia)
