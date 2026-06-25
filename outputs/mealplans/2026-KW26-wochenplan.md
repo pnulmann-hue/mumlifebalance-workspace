@@ -63,18 +63,22 @@ tags: [mealplan]
 
 ## 🎯 Patricia-Makro-Check pro Tag
 
-| Tag | Protein-Bilanz (F+M+Z+A) | Status | 💡 Hinweis |
-|---|---|---|---|
-| Do | 33+37+13+37 = ~120g | ✓ | + Kaffee-Milch/Joghurt bringt Rest auf 135g |
-| Fr | 33+36+13+37 = ~119g ⚠️ | Booster | Muffin proteinärmer → +1 hartgek. Ei o. 100g Skyr |
-| Sa | 32+37+16+36 = ~121g | ✓ | passt |
-| So | 33+45+14+37 = ~129g ✓✓ | OK | Steak deckt stark |
-| Mo | 32+37+16+36 = ~121g | ✓ | passt (Bananenbrot bringt mehr P als Muffin) |
-| Di | 31+37+14+38 = ~120g | ✓ | Milchreis proteinärmer, Caprese gleicht aus |
-| Mi | 33+35+14+35 = ~117g ⚠️ | Booster | + 1 Ei / Hüttenkäse-Snack |
-| Do | 33+36+18+35 = ~122g | ✓ | Milch im Tag bringt Rest |
+| Tag | 🏋️ | kcal (ca.) | Protein aus Rezepten | + 1 Booster → 135g? |
+|---|---|---|---|---|
+| Do 25.6. | – | ~1645 | ~120g | + 200g Skyr/Magerquark od. 2 Eier ✓ |
+| Fr 26.6. | 🏋️ | ~1850 | ~121g | + Booster ✓ |
+| Sa 27.6. | – | ~1645 | ~121g | + Booster ✓ |
+| So 28.6. | – | ~1645 | ~129g | fast da → + 100g Skyr ✓ |
+| Mo 29.6. | 🏋️ | ~1850 | ~123g | + Booster ✓ |
+| Di 30.6. | – | ~1645 | ~120g | + Booster ✓ |
+| Mi 1.7. | 🏋️ | ~1850 | ~119g | + Booster ✓ |
+| Do 2.7. | – | ~1645 | ~122g | + Booster ✓ |
 
-**Regel:** An ⚠️-Tagen 1× extra Skyr/Magerquark/Ei. Beilagen-Milchprodukte (Kaffee, Joghurt) bringen über den Tag nochmal ~10-15g P, hier nicht gezählt.
+**Kalorien:** An den 3 Trainingstagen (Mo/Mi/Fr) bringt der Pre/Intra-Snack dich auf **~1850 kcal = Ziel**. An den 4 Tagen ohne Training ~1650 kcal — bewusst weniger Treibstoff, völlig okay. (Lisa selbst: „die wöchentliche Gesamtzufuhr ist ausschlaggebender als der einzelne Tag.")
+
+**Protein — der eine Knackpunkt:** Die Rezepte ergeben ~120-125g. Auf deine **135g fehlen täglich ~10-15g** → plane **jeden Tag 1 Booster** ein: 200g Skyr/Magerquark/Hüttenkäse (+20-25g) ODER 2 hartgekochte Eier (+14g). Deine Booster-Vorräte (6× Skyr, 3× Magerquark, 5× Hüttenkäse) decken das ab. Milch im Kaffee + Joghurt nebenbei bringen nochmal ~10g (hier nicht gezählt).
+
+**KH & Fett:** landen automatisch im Zielbereich (~155-200g KH / ~58-60g Fett) — die MBA-Rezepte sind auf den 40/30-Split gebaut.
 
 ---
 
@@ -87,8 +91,8 @@ tags: [mealplan]
 - 🥒 **Zucchini** → Do 2.7. Zucchini-Kichererbsen-Pfanne + So Grillgemüse
 
 **Gemüsemann Kräuchi (Di-Lieferung) — Ende-Juni-Saison:**
-- 🍓 **Erdbeeren + 🫐 Heidelbeeren + Rhabarber** → fast alle Patricia-Frühstücke/Abende (Proats, Muffins, Sommersalat, Hüttenkäse-Rolle)
-- 🥬 Salate (Kopf/Eisberg/Römer) + Rucola · 🍅 Tomaten + Basilikum · 🥒 Gurken, Peperoni, Champignons · 🥕 Karotten
+- 🍓 **Erdbeeren + Himbeeren + 🫐 Heidelbeeren** → Patricia-Frühstücke/Abende (Fitgirl, Haferbrei, Muffins, Pancakes, Sommersalat)
+- 🥬 Salate (Kopf/Eisberg/Römer/Feldsalat) + Rucola · 🍅 Tomaten + Basilikum · 🥒 Gurken, Peperoni, Champignons, Zucchini · 🥕 Karotten · Staudensellerie · Lauchzwiebeln
 
 ---
 
