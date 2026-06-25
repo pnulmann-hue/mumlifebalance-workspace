@@ -1,9 +1,6 @@
 {
   "chat_id": "5097782438",
-  "step": "wochenfokus",
-  "started_at": "2026-06-24T08:24:28.223Z",
-  "last_active_at": "2026-06-24T08:25:22.445Z",
-  "last_bot_message_id": 778,
-  "profil": "mentoring",
-  "produkt_quelle": "patricia"
+  "step": "profil",
+  "started_at": "2026-06-25T08:02:50.931Z",
+  "last_active_at": "2026-06-25T08:02:50.931Z"
 }
