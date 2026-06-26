@@ -589,6 +589,18 @@ Beim `/monatsplan`-Lauf: was Patricia weiss in „Erkenntnis Kennzahlen-Analyse"
 
 Plan: `plans/2026-05-09-cashflow-tracker.md`.
 
+### ActiveCampaign MCP-Server (`04-projects/activecampaign-mcp/`, v2 seit 2026-06-12)
+
+MCP-Server, der Claude direkten Zugriff auf ActiveCampaign gibt — registriert in `.mcp.json` als Server `activecampaign` (Tools: `mcp__activecampaign__*`). **24 Tools** in 6 Gruppen: Kontakte (suchen/details/anlegen/inaktive/non-opener/nach-Tag-löschen), Tags (list/create/`tag_contact`/`untag_contact`), Listen (list/`create_list`/`subscribe_to_list`/`unsubscribe_from_list`), Custom Fields (`list_custom_fields`/`set_custom_field`), Kampagnen (list/report/analyze/`create_campaign`/`send_campaign`), Automationen (list/`add_contact_to_automation`/`build_product_funnel`).
+
+- **Credentials:** `04-projects/activecampaign-mcp/.env` (gitignored) — `AC_API_URL` + `AC_API_KEY`. Werden zusätzlich aus der `env`-Sektion in `.mcp.json` injiziert.
+- **API:** V3 (`Api-Token`-Header) Standard; V1 (legacy) nur für `create_campaign`/Funnel-Mails (V3 liefert dort 405).
+- **send_campaign nur auf expliziten Befehl** — sendet/plant echte E-Mails.
+- **Kontakt-Tools** akzeptieren `contact_id` ODER `email`.
+- **Migration:** ersetzt den Vorgänger unter `scripts/activecampaign-mcp/` (17 Tools) als Superset. Der alte Ordner bleibt nur, weil die `bulk-upload-*.mjs`-Skripte dort die Credentials aus `.mcp.json` lesen.
+- **🟢 Für ALLE Skills verfügbar:** Die Tools sind global da (kein „Verbinden" nötig). Tool-Katalog mit Pflicht-Args + Listen-IDs + Limits: **`reference/activecampaign-mcp-tools.md`** — jeder Skill, der AC braucht (`/funnel`, `/cockpit`, `/produkt`, Bots), liest diese Datei statt zu raten.
+- **Doku:** `04-projects/activecampaign-mcp/README.md`.
+
 ### Kochbot-RAG (`scripts/kochbot-rag/`)
 
 Supabase-basierte Vector-Datenbank für Patricias Rezepte (~1900 PDFs in `rezepte/`) und Kochwissen (MyBodyAdvice, 7hauben-Brotkurse in `kochwissen/`). Macht den `/mealplan`-Slash-Command auch in der Web-Claude-Sandbox einsatzfähig — die PDFs selbst sind via `.gitignore` ausgeschlossen, die Embeddings liegen bei Supabase und werden via API abgerufen.
@@ -616,6 +628,16 @@ Statt stumpfer Zusammenfassung **redigiert Claude wie eine Chefredakteurin**: w�
 - **Feeds:** RSS + Google-News-RSS (robust, deutschsprachig — z.B. „Claude Code"-Suche) + YouTube-Kanal-RSS. Langsame Ressorts/Videos haben längeres Zeitfenster (`CATEGORY_AGE_DAYS`, `VIDEO_AGE_DAYS`).
 - **Deployment:** Railway via `Procfile` (env: `DIGEST_FREQUENCY=daily`, `SCHEDULE_HOUR=7`, `TIMEZONE=Europe/Zurich`). `requirements.txt` enthält `reportlab`.
 - **Setup-Anleitung:** `scripts/telegram-news-bot/README.md`
+
+### PIA — KI-Mentorin-Bot fürs Bootcamp (`scripts/pia-bot/`, seit 2026-06-16)
+
+**Mehrbenutzer-Telegram-Bot** für das 5-Tage-MBA-Bootcamp (29.6.–3.7.). Anders als alle anderen Bots (nur Patricia) ist PIA für **viele Teilnehmerinnen gleichzeitig** offen — jede chattet privat, durchläuft ein 6-Fragen-Onboarding (Network-spezifisch) und holt sich pro Tag ihre personalisierte Mission: `/bio` (Tag 1) · `/hooks` (Tag 2) · `/struktur` (Tag 3) · `/leadmagnet` (Tag 4) · `/roterfaden` (Tag 5). Output in der Stimme der Teilnehmerin.
+
+- **Sprache:** Python 3.11+ · python-telegram-bot 21 · Anthropic + (optional) OpenAI-Whisper
+- **Architektur:** `bot.py` (Handler, Onboarding-Flow, Voice) · `onboarding.py` (6 Fragen) · `store.py` (Profile pro Userin als JSON in `data/users/`) · `pia_brain.py` (Claude-Generatoren) · `knowledge.py` (Voice-/Hook-Wissen — **kein** privates Vollprofil) · `config.py`
+- **Regeln eingebaut:** Freundin-Voice, kein Stakkato, Schweizer ss, keine erfundenen Zahlen, Transformation statt Produkt, Network-Compliance (keine Heilversprechen), keine Mentoren-Namen.
+- **Env:** `PIA_BOT_TOKEN` (eigener BotFather-Bot, NICHT der Story-Bot) + `ANTHROPIC_API_KEY` (+ optional `OPENAI_API_KEY`, `PIA_ADMIN_CHAT_ID`).
+- **Status:** Code fertig + Bio-Generierung live getestet. Offen: BotFather-Token + Railway-Deploy + Testrunde. Doku: `scripts/pia-bot/README.md`. Launch-Logik: `outputs/produkte/mba-launch/challenge-launch-plan.md`.
 
 ### Instagram Content-Engine (Automatisiert, v2 seit 2026-04-21)
 
@@ -733,7 +755,8 @@ Live-Beispiele in diesem Repo:
 2. **Hauptmotiv-Check:** Wird das Schlüsselelement des Fotos (Säntis-Gipfel, Wasserfall, Blume, Logo) von Text/Box verdeckt?
 3. **Story-Arc-Check (bei Slide-Sequenzen):** Ergibt die Abfolge einen Bogen (Hook → Reibung → Wendung → Punkt → CTA), oder ist's nur eine Slideshow von Statements?
 4. **Brand-Check:** Stimmen Farben (Petrol/Creme/Dunkelblau/Orange), Schriften (Philosopher + Source Sans 3), Tonalität?
+5. **🚨 Feed-Aesthetic ABAB-Rhythmus (PFLICHT seit 2026-06-11):** Feed-Sequenz muss **strikt abwechseln** — `Template → Foto → Template → Foto → Template → Foto …`. **NIE 2 Templates in Folge. NIE 2 reine Foto-Posts in Folge.** Template = Cover ohne Person (Voll-Petrol/Creme/Orange/Dunkelblau mit Typo). Foto = Cover mit Patricia oder Lifestyle-Foto als Hauptmotiv. **Templates rotieren in der Farbe** (Grün→Beige→Blau→Orange), **Fotos nicht zweimal das gleiche**. Pflicht-Check vor jedem Cover-Build: letzte 2 + nächste 2 geplante Posts. Plus 🚨 **Petrol/Grün-Cover NIE bei Lead-Posts** mit Keyword-CTA (`feedback_KRITISCH-petrol-cover-nicht-bei-leadposts.md`). Doku: `feedback_KRITISCH-feed-aesthetic-3-in-folge.md`.
 
 Bei Fund: erst nachjustieren, dann ausliefern. **Nie Entwürfe rausgeben, die offensichtliche Probleme haben.** Patricia muss nicht das Visual-QA für Claude machen.
 
-(Hintergrund: 2026-04-26 wurden Wander-Stories rausgegeben mit verdecktem Gesicht und verdecktem Säntis-Gipfel — und ohne Story-Arc. Korrektur kostete Zeit. Lehre: Selbst-Prüfung ist Pflicht-Schritt vor Output.)
+(Hintergrund: 2026-04-26 wurden Wander-Stories rausgegeben mit verdecktem Gesicht und verdecktem Säntis-Gipfel — und ohne Story-Arc. 2026-06-11 hatte der Mentoring-Feed 3 grüne Petrol-Lead-Cover in Folge mit unterirdischer Reichweite, dazu mehrfach gleiche Cover-Farbe ohne Rhythmus. Lehre: Selbst-Prüfung ist Pflicht-Schritt vor Output.)

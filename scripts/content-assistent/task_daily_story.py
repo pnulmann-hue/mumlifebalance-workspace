@@ -225,6 +225,206 @@ async def generiere_story_aus_briefing() -> dict:
     )
 
 
+# ========================================
+# STORY-IDEE-MODUS (Morgen-Ping → Sprachnotiz → Idee als Text)
+# ========================================
+
+async def send_long(bot: Bot, text: str, chunk: int = 3800):
+    """Sendet langen Text in Telegram-tauglichen Häppchen (HTML-Parse-Mode)."""
+    if not text:
+        return
+    # An Zeilengrenzen schneiden, damit keine <b>-Tags zerrissen werden
+    while text:
+        if len(text) <= chunk:
+            await send_status(bot, text)
+            return
+        cut = text.rfind("\n", 0, chunk)
+        if cut < chunk // 2:
+            cut = chunk
+        await send_status(bot, text[:cut])
+        text = text[cut:].lstrip("\n")
+        await asyncio.sleep(0.3)
+
+
+def _plan_kurzfassung(kontext: dict) -> str:
+    """Baut eine 2-3-Zeilen-Zusammenfassung des heutigen Plans für den Morgen-Ping."""
+    launch = kontext.get("launch") or {}
+    tp = launch.get("tagesplan") or {}
+    vorlage = launch.get("julia_vorlage") or {}
+    zeilen = []
+    if launch.get("launch_aktiv"):
+        phase = launch.get("phase", "")
+        tag = launch.get("tag_im_launch")
+        kopf = f"🚀 <b>Launch</b> · {phase}"
+        if tag:
+            kopf += f" · Tag {tag}"
+        zeilen.append(kopf)
+    titel = tp.get("titel") or vorlage.get("name") or launch.get("julia_vorlage_key", "")
+    if titel:
+        zeilen.append(f"📋 Heute: <b>{titel}</b>")
+    ziel = tp.get("story_ziel") or vorlage.get("ziel")
+    if ziel:
+        zeilen.append(f"🎯 {ziel[:180]}")
+    kt = tp.get("kaeufertyp") or vorlage.get("kaeufertyp")
+    if kt:
+        zeilen.append(f"👤 Käufertyp: {kt}")
+    cta = launch.get("cta")
+    if cta:
+        zeilen.append(f"📣 CTA: {cta[:120]}")
+    return "\n".join(zeilen) if zeilen else "Kein fixer Plan heute — freie Story."
+
+
+async def morgen_ping(profil_override: str = None) -> dict:
+    """06:30-Morgen-Ping: zeigt den heutigen Plan + fragt nach Patricias Tag.
+
+    Setzt ein 'idee'-Briefing-Pending → die nächste Sprachnotiz/Text löst die
+    Story-Idee-Generierung aus (kein /generieren nötig).
+    """
+    bot = Bot(token=config.TELEGRAM_BOT_TOKEN)
+    heute = date.today()
+    wd = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'][heute.weekday()]
+
+    try:
+        kontext = notion_reader.lade_wochen_kontext()
+    except Exception as e:
+        logger.error(f"Notion-Fehler: {e}")
+        kontext = {"monatsplan": None, "wochenplan": None, "themen": [],
+                   "launch": None, "monatsplan_md": None}
+
+    profil = resolve_profil(profil_override, kontext, heute)
+    plan_kurz = _plan_kurzfassung(kontext)
+
+    text = (
+        f"🌅 <b>Guten Morgen, Patricia!</b> ({wd} {heute.strftime('%d.%m.')})\n"
+        f"Profil heute: <b>{profil}</b>\n\n"
+        f"{plan_kurz}\n\n"
+        f"———\n"
+        f"<b>Was ist heute / gestern bei dir los?</b>\n"
+        f"Ein Konflikt, ein schöner Moment, eine Erkenntnis, eine Familien-Szene —\n"
+        f"schick mir <b>1 Sprachnotiz</b> (oder kurz tippen), und ich verweb das mit\n"
+        f"dem heutigen Plan zu deiner fertigen Story-Idee. 💛\n\n"
+        f"<i>Du baust die Slides selbst — ich liefer dir Hook + Slide-für-Slide-Konzept.</i>\n"
+        f"<i>Keine Lust auf Input? Tipp /idee — dann nehm ich nur den Plan.</i>"
+    )
+
+    # Pending im IDEE-Modus setzen → nächste Antwort triggert Generierung
+    state.set_briefing_pending(
+        profil=profil,
+        briefing_text=text,
+        fragen=[],
+        kontext_snapshot=kontext,
+        modus="idee",
+    )
+    await send_status(bot, text)
+    logger.info(f"Morgen-Ping gesendet ({profil}, {heute})")
+    return {"ok": True, "modus": "idee-ping", "profil": profil}
+
+
+async def generiere_idee_aus_input(patricia_input: str = None,
+                                   profil_override: str = None) -> dict:
+    """Generiert die Story-IDEE als Text aus Patricias Tages-Input + heutigem Plan.
+
+    Wird ausgelöst, wenn Patricia nach dem Morgen-Ping antwortet (bot.py) oder /idee tippt.
+    """
+    started = datetime.now()
+    bot = Bot(token=config.TELEGRAM_BOT_TOKEN)
+    heute = date.today()
+
+    # Input + Profil + Foto aus offenem Idee-Briefing ziehen (falls vorhanden)
+    briefing = state.get_briefing_pending()
+    foto_path = None
+    if briefing:
+        if patricia_input is None:
+            antworten = [a.get("text", "") for a in briefing.get("patricia_antworten", [])]
+            patricia_input = "\n\n".join(t for t in antworten if t.strip())
+        if briefing.get("patricia_fotos"):
+            foto_path = briefing["patricia_fotos"][-1]
+        if profil_override is None:
+            profil_override = briefing.get("profil")
+
+    try:
+        kontext = notion_reader.lade_wochen_kontext()
+    except Exception as e:
+        logger.error(f"Notion-Fehler: {e}")
+        kontext = {"monatsplan": None, "wochenplan": None, "themen": [],
+                   "launch": None, "monatsplan_md": None}
+
+    profil = resolve_profil(profil_override, kontext, heute)
+    if patricia_input:
+        kontext["patricia_input"] = patricia_input
+    if foto_path:
+        kontext["patricia_foto"] = foto_path
+
+    await send_status(bot, "✍️ Ich verweb deinen Tag mit dem Plan zur Story-Idee …")
+
+    try:
+        result = claude_caller.generate_story_idee(profil=profil, kontext=kontext, heute=heute)
+    except Exception as e:
+        logger.exception("Story-Idee crashed")
+        await send_status(bot, f"<b>Fehler:</b> {e}")
+        return {"ok": False, "error": str(e)}
+
+    if not result.get("ok"):
+        await send_status(bot, f"<b>Fehler:</b> {result.get('error', 'unbekannt')}")
+        return result
+
+    # Idee senden + merken (für /render)
+    await send_long(bot, result["idee_text"])
+    state.set_letzte_idee(
+        profil=profil,
+        idee_text=result["idee_text"],
+        patricia_input=patricia_input,
+        patricia_foto=foto_path,
+    )
+    state.clear_briefing_pending()
+
+    # Wochenlog
+    state.add_to_wochenlog(heute.isoformat(), {
+        "profil": profil,
+        "disg": state.empfehle_disg_heute(),
+        "modus": "idee",
+    })
+
+    duration = (datetime.now() - started).total_seconds()
+    await send_status(
+        bot,
+        "———\n"
+        "✅ <b>Das ist deine Story-Idee.</b> Bau die Slides damit in Canva/Story.\n"
+        "🖼️ Wenn du die Slides lieber fertig gerendert willst: tippe <b>/render</b>.",
+    )
+    logger.info(f"Story-Idee fertig ({result['tokens_in']}/{result['tokens_out']} Tokens, {duration:.1f}s)")
+    return {"ok": True, "modus": "idee", "profil": profil,
+            "tokens": {"in": result["tokens_in"], "out": result["tokens_out"]},
+            "duration_sec": duration}
+
+
+async def render_aus_letzter_idee() -> dict:
+    """Rendert die zuletzt gelieferte Story-Idee zu PNG-Slides (optionaler Schritt)."""
+    bot = Bot(token=config.TELEGRAM_BOT_TOKEN)
+    idee = state.get_letzte_idee()
+    if not idee:
+        await send_status(
+            bot,
+            "Keine frische Story-Idee da. Tippe /idee oder schick mir eine Sprachnotiz, "
+            "dann liefere ich erst die Idee — danach kannst du /render nutzen.",
+        )
+        return {"ok": False, "error": "keine_idee"}
+
+    await send_status(bot, "🖼️ Rendere die Slides zu deiner letzten Idee …")
+    # Wir füttern die fertige Idee als Input in den HTML-Generator, damit die Slides
+    # exakt der gelieferten Idee folgen (plus Tagesplan-Kontext).
+    kombi_input = idee.get("idee_text", "")
+    if idee.get("patricia_input"):
+        kombi_input = (f"MEIN TAG:\n{idee['patricia_input']}\n\n"
+                       f"DIE STORY-IDEE (bitte diese Slides 1:1 umsetzen):\n{idee['idee_text']}")
+    return await run(
+        modus="schnell",
+        profil_override=idee.get("profil"),
+        patricia_input=kombi_input,
+        patricia_foto=idee.get("patricia_foto"),
+    )
+
+
 async def run(modus: str = "schnell", profil_override: str = None,
               patricia_input: str = None, patricia_foto: str = None) -> dict:
     """SCHNELL-MODUS: generiert Story sofort ohne weitere Patricia-Frage.

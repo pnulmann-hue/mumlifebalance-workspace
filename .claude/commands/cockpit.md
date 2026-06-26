@@ -238,9 +238,9 @@ E) Content-Management-DB Performance der letzten 7 Tage
    → Top-Performer (Bewertung 4-5⭐) → was hat funktioniert?
    → Flops (Bewertung 1-2⭐ oder leer) → was nicht?
    → Pillar-Verteilung: welche Säule unterperformt?
-F) ActiveCampaign-Daten (falls verfügbar)
-   → Newsletter-Öffnungsrate letzte Woche
-   → Lead-Wachstum
+F) ActiveCampaign-Daten (via MCP `mcp__activecampaign__*` — Katalog: reference/activecampaign-mcp-tools.md)
+   → Newsletter-Öffnungsrate letzte Woche (analyze_campaigns / get_campaign_report)
+   → Lead-Wachstum (list_lists Abonnenten-Zahl, find_inactive_contacts)
 ```
 
 **Erkenntnis-Block (Performance-Hypothesen):**

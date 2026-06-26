@@ -1,0 +1,13 @@
+{
+  "name": "activecampaign-mcp",
+  "version": "2.0.0",
+  "description": "MCP-Server für ActiveCampaign — Kontakte, Tags, Listen, Custom Fields, Kampagnen, Automationen",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2"
+  }
+}

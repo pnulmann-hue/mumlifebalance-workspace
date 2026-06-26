@@ -1,0 +1,10 @@
+# Secrets
+.env
+
+# Teilnehmerinnen-Profile (Personendaten — NIE ins Git)
+data/
+
+# Python
+__pycache__/
+*.pyc
+_test_*.txt

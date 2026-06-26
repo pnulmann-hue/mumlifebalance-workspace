@@ -188,7 +188,7 @@ Plus: `list` — zeigt alle Funnels aus `context/active-funnels.json`.
 
 ### Tools (alle aktiv verbunden)
 - **`/wp`** — WordPress-Seiten bauen (`scripts/wordpress/wp-api.js`)
-- **ActiveCampaign MCP** — Tags, Listen, Campaigns, Automations lesen + Tags setzen (`create_campaign` aktuell 405-Bug)
+- **ActiveCampaign MCP** — 24 Tools (Kontakte anlegen/suchen/taggen, Listen + Abos, Custom Fields, Kampagnen schreiben+senden, Automationen). Voll-Katalog: `reference/activecampaign-mcp-tools.md`. `create_campaign` funktioniert (via V1). `send_campaign` nur auf Befehl.
 - **ManyChat API** — Subscribers + Tags + Custom Fields + Flow-Trigger (`scripts/manychat/mc-api.js`, braucht Pro-Plan-API-Key)
 - **Notion MCP** — Produkte-DB (`2ae7078e-8b7e-81ef-aafa-f03993ef344f`) + Content-DB + Strategie-DB
 - **Canva MCP** — Designs + Brand Kit `kAFUSC8oiD8`
@@ -240,12 +240,13 @@ Nach abgeschlossener Planung. Gehst die Liste durch und baust jeden Schritt:
 - Foto aus `context/Shootingbilder/` passend wählen
 - Mobile Light-Mode-safe (color-scheme: light only + theme-color Meta)
 
-**B. ActiveCampaign** — via MCP:
-- Tag `[Funnel-Name] Lead` erstellen
+**B. ActiveCampaign** — via MCP (`reference/activecampaign-mcp-tools.md` = Tool-Katalog):
+- Tag `[Funnel-Name] Lead` erstellen (`create_tag`)
 - Tag `[Funnel-Name] abgeschlossen` (für Nurture-Trigger)
 - Tag pro Pitch-Klick
+- Mail-Sequenz als Kampagnen-Entwürfe anlegen (`create_campaign` — funktioniert via V1) oder `build_product_funnel` für Tag+Entwürfe+Plan in einem Rutsch
 - Formular: MANUELL im AC-UI (keine API) — Anleitung generieren + Embed-Code liefern
-- Automationen: MANUELL — Plan als Markdown liefern mit Trigger, Wait-Times, Mail-Referenzen
+- Automationen: Workflow MANUELL im AC-Editor (API kann ihn nicht bauen) — Plan als Markdown liefern; Kontakte reinschieben geht per `add_contact_to_automation`
 
 **C. Mail-Sequenz** — nach Julia-Trost-Vorlagen:
 - **ALLE Mails im Onlinebusiness-Design** (`context/mail-design-onlinebusiness.html`)

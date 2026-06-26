@@ -265,10 +265,15 @@ _briefing_file = STATE_DIR / "briefing-pending.json"
 
 
 def set_briefing_pending(profil: str, briefing_text: str, fragen: list[str],
-                        kontext_snapshot: dict = None) -> dict[str, Any]:
-    """Speichert: Bot hat Briefing geschickt, wartet auf Patricia-Antwort."""
+                        kontext_snapshot: dict = None, modus: str = "sparring") -> dict[str, Any]:
+    """Speichert: Bot hat Briefing geschickt, wartet auf Patricia-Antwort.
+
+    modus: "sparring" (klassisch → /generieren → Render)
+           "idee"     (Morgen-Ping → erste Antwort triggert Story-Idee als Text)
+    """
     data = {
         "profil": profil,
+        "modus": modus,
         "briefing_text": briefing_text,  # was Bot gefragt hat
         "fragen": fragen,                # Liste der Fragen
         "kontext_snapshot": kontext_snapshot or {},  # Wochenkontext zum Zeitpunkt der Frage
@@ -316,6 +321,42 @@ def add_patricia_antwort(text: str = None, foto: str = None, video: str = None):
 def clear_briefing_pending():
     if _briefing_file.exists():
         _briefing_file.unlink()
+
+
+# ========================================
+# Letzte Story-Idee (für /render — Patricia kann die zuletzt gelieferte Idee
+# nachträglich zu PNG-Slides rendern lassen)
+# ========================================
+
+_letzte_idee_file = STATE_DIR / "letzte-idee.json"
+
+
+def set_letzte_idee(profil: str, idee_text: str, patricia_input: str = None,
+                    patricia_foto: str = None) -> dict[str, Any]:
+    """Speichert die zuletzt generierte Story-Idee + den zugehörigen Input."""
+    data = {
+        "profil": profil,
+        "idee_text": idee_text,
+        "patricia_input": patricia_input or "",
+        "patricia_foto": patricia_foto,
+        "erstellt_am": datetime.now().isoformat(),
+    }
+    _letzte_idee_file.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    return data
+
+
+def get_letzte_idee(max_alter_stunden: int = 18) -> dict[str, Any] | None:
+    """Liest die letzte Story-Idee, falls frisch genug (Default 18h)."""
+    if not _letzte_idee_file.exists():
+        return None
+    try:
+        data = json.loads(_letzte_idee_file.read_text(encoding="utf-8"))
+        erstellt = datetime.fromisoformat(data["erstellt_am"])
+        if datetime.now() - erstellt > timedelta(hours=max_alter_stunden):
+            return None
+        return data
+    except Exception:
+        return None
 
 
 # ========================================

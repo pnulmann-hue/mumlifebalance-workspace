@@ -164,23 +164,22 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not _is_authorized(update):
         return
     await update.message.reply_text(
-        "Hi Patricia! Ich bin dein Story-Render-Bot.\n\n"
-        "🤝 <b>Ich bin dein Sparringpartner</b> — frag bevor ich mache.\n\n"
-        "Workflow:\n"
-        "1. Mo-So 06:30 (oder /run) schicke ich dir einen <b>Briefing-Vorschlag</b> "
-        "mit konkreten Fragen.\n"
-        "2. Du antwortest per Sprachnotiz / Text / Foto / Video.\n"
-        "3. Du tippst /generieren — ich baue die Story mit deinen Worten.\n\n"
+        "Hi Patricia! Ich bin dein Story-Ideen-Bot.\n\n"
+        "🎬 <b>Täglicher Ablauf (Story-Idee):</b>\n"
+        "1. Mo-So 06:30 schicke ich dir den <b>Plan des Tages</b> + frage, was bei dir los ist.\n"
+        "2. Du schickst mir <b>1 Sprachnotiz</b> zu deinem Tag.\n"
+        "3. Ich verweb deinen Tag mit dem Plan zu einer <b>fertigen Story-Idee</b> "
+        "(Hook + Slide-für-Slide-Konzept + CTA) — die Slides baust du selbst.\n"
+        "4. Optional: <b>/render</b> → ich render dir die Slides als PNG.\n\n"
         "Commands:\n"
-        "/run — Sparring-Briefing starten (Standard)\n"
-        "/run mentoring — nur Mentoring\n"
-        "/run doterra — nur doTERRA\n"
-        "/run schnell — Story sofort, ohne Sparring (Risiko: Halluzinationen)\n"
-        "/generieren — Story bauen mit deinen Briefing-Antworten\n"
+        "/idee — Story-Idee für heute jetzt bauen (mit/ohne deinen Input)\n"
+        "/idee mentoring · /idee doterra — mit Profil\n"
+        "/render — letzte Idee zu PNG-Slides rendern\n"
         "/fokus &lt;thema&gt; — Wochenfokus setzen, z.B. <code>/fokus bio-check</code>\n"
-        "/fokus reset — Override löschen, wieder Notion-Wochenplan nutzen\n"
+        "/fokus reset — Override löschen, wieder Notion/Plan nutzen\n"
         "/status — Bot-Status\n"
-        "/notion — Notion-Healthcheck",
+        "/notion — Notion-Healthcheck\n\n"
+        "<i>Alter Render-Workflow bleibt: /run (Sparring) · /run schnell · /generieren</i>",
         parse_mode="HTML",
     )
 
@@ -366,6 +365,39 @@ async def cmd_generieren(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f"Crash: {e}")
 
 
+async def cmd_idee(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Generiert die Story-Idee jetzt — aus gesammeltem Input oder nur aus dem Plan.
+
+    /idee            → Story-Idee fuer heute (nutzt Tages-Input falls vorhanden)
+    /idee mentoring  → mit Profil
+    """
+    if not _is_authorized(update):
+        return
+    args = [a.lower() for a in (context.args or [])]
+    profil_override = next((a for a in args if a in {"mentoring", "doterra", "beide"}), None)
+    await update.message.reply_text("✍️ Bau dir die Story-Idee fuer heute …")
+    try:
+        result = await task_daily_story.generiere_idee_aus_input(profil_override=profil_override)
+        if not result.get("ok"):
+            await update.message.reply_text(f"Fehler: {result.get('error', 'unbekannt')}")
+    except Exception as e:
+        logger.exception("cmd_idee failed")
+        await update.message.reply_text(f"Crash: {e}")
+
+
+async def cmd_render(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Rendert die zuletzt gelieferte Story-Idee zu PNG-Slides."""
+    if not _is_authorized(update):
+        return
+    try:
+        result = await task_daily_story.render_aus_letzter_idee()
+        if not result.get("ok") and result.get("error") not in {"keine_idee"}:
+            await update.message.reply_text(f"Fehler: {result.get('error', 'unbekannt')}")
+    except Exception as e:
+        logger.exception("cmd_render failed")
+        await update.message.reply_text(f"Crash: {e}")
+
+
 async def handle_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Sprachnotiz-Handler — transkribieren und in offenes Briefing einsammeln."""
     if not _is_authorized(update):
@@ -405,6 +437,18 @@ async def handle_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
     briefing = state.get_briefing_pending()
     if briefing:
         state.add_patricia_antwort(text=text)
+        # IDEE-Modus: erste Antwort loest direkt die Story-Idee aus (kein /generieren)
+        if briefing.get("modus") == "idee":
+            await msg.reply_text(
+                f"<b>📝 Hab deinen Tag:</b>\n<i>{text[:400]}</i>",
+                parse_mode="HTML",
+            )
+            try:
+                await task_daily_story.generiere_idee_aus_input()
+            except Exception as e:
+                logger.exception("generiere_idee_aus_input failed")
+                await msg.reply_text(f"Crash bei Idee-Generierung: {e}")
+            return
         n = len(state.get_briefing_pending().get("patricia_antworten", []))
         await msg.reply_text(
             f"<b>📝 Transkript ({n}. Antwort):</b>\n<i>{text[:500]}</i>\n\n"
@@ -525,6 +569,15 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
     briefing = state.get_briefing_pending()
     if briefing:
         state.add_patricia_antwort(text=msg.text)
+        # IDEE-Modus: erste Antwort loest direkt die Story-Idee aus
+        if briefing.get("modus") == "idee":
+            await msg.reply_text("📝 Hab deinen Tag — bau dir die Story-Idee …")
+            try:
+                await task_daily_story.generiere_idee_aus_input()
+            except Exception as e:
+                logger.exception("generiere_idee_aus_input failed")
+                await msg.reply_text(f"Crash bei Idee-Generierung: {e}")
+            return
         n = len(state.get_briefing_pending().get("patricia_antworten", []))
         await msg.reply_text(
             f"📝 Notiert ({n}. Antwort). Weitere Infos schicken oder /generieren tippen."
@@ -543,13 +596,14 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Scheduled Task: Daily Story (06:30)
 # ========================================
 async def daily_story_task():
-    """Laeuft Mo-So 06:30 Europe/Zurich — startet Sparring-Briefing."""
+    """Laeuft Mo-So 06:30 Europe/Zurich — schickt Morgen-Ping (Plan + Frage nach dem Tag)."""
     now = datetime.now(pytz.timezone(config.TIMEZONE))
     logger.info(f"daily_story_task gestartet um {now.strftime('%a %d.%m. %H:%M')}")
 
     try:
-        # 06:30 = Sparring-Briefing (nicht direkt generieren)
-        await task_daily_story.briefing_anfragen()
+        # 06:30 = Morgen-Ping: zeigt heutigen Plan + fragt nach Patricias Tag.
+        # Die naechste Sprachnotiz/Text loest die Story-Idee aus.
+        await task_daily_story.morgen_ping()
     except Exception as e:
         logger.exception("daily_story_task crashed")
         try:
@@ -573,6 +627,8 @@ async def main():
     app.add_handler(CommandHandler("status", cmd_status))
     app.add_handler(CommandHandler("run", cmd_run_now))
     app.add_handler(CommandHandler("generieren", cmd_generieren))
+    app.add_handler(CommandHandler("idee", cmd_idee))
+    app.add_handler(CommandHandler("render", cmd_render))
     app.add_handler(CommandHandler("fokus", cmd_fokus))
     app.add_handler(CommandHandler("notion", cmd_notion))
 

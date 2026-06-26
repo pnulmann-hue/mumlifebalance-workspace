@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="de" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Philosopher"; font-style: normal; font-weight: 400; src: url("assets/fonts/Philosopher-400.woff2") format("woff2"); }
+      @font-face { font-family: "Philosopher"; font-style: normal; font-weight: 700; src: url("assets/fonts/Philosopher-700.woff2") format("woff2"); }
+      @font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 300 700; src: url("assets/fonts/SourceSans3-Variable.woff2") format("woff2-variations"); }
+      :root { --petrol: #12828c; --dunkelblau: #29556d; --creme: #f1ecdd; --orange: #dc822e; --text: #0c1c30; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; font-family: "Source Sans 3", sans-serif; color: var(--text); }
+      #bg-video { position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; z-index: 5; transform-origin: center center; }
+
+      /* === Cover Styles === */
+      #cover { position: absolute; inset: 0; z-index: 80; overflow: hidden; }
+
+      /* Style: Creme */
+      .cover-creme { background: var(--creme); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 80px; }
+      .cover-creme .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 44px; color: var(--petrol); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 32px; }
+      .cover-creme .hook-top { font-family: "Philosopher"; font-weight: 700; font-size: 140px; line-height: 1.0; color: var(--dunkelblau); }
+      .cover-creme .hook-pop { font-family: "Philosopher"; font-weight: 700; font-style: italic; font-size: 168px; line-height: 1.0; color: var(--petrol); background: #fff; padding: 8px 32px; border-radius: 22px; display: inline-block; margin: 16px 0; box-shadow: 0 16px 40px rgba(18,130,140,0.3); }
+      .cover-creme .hook-bottom { font-family: "Philosopher"; font-weight: 700; font-size: 116px; line-height: 1.0; color: var(--dunkelblau); }
+      .cover-creme .date { font-family: "Source Sans 3"; font-weight: 600; font-size: 36px; color: var(--text); margin-top: 48px; opacity: 0.7; }
+
+      /* Style: Petrol */
+      .cover-petrol { background: linear-gradient(135deg, var(--dunkelblau) 0%, var(--petrol) 100%); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 80px; }
+      .cover-petrol .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 44px; color: var(--creme); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 32px; opacity: 0.85; }
+      .cover-petrol .hook-top { font-family: "Philosopher"; font-weight: 700; font-size: 140px; line-height: 1.0; color: var(--creme); }
+      .cover-petrol .hook-pop { font-family: "Philosopher"; font-weight: 700; font-style: italic; font-size: 168px; line-height: 1.0; color: var(--orange); background: var(--creme); padding: 8px 32px; border-radius: 22px; display: inline-block; margin: 16px 0; box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
+      .cover-petrol .hook-bottom { font-family: "Philosopher"; font-weight: 700; font-size: 116px; line-height: 1.0; color: var(--creme); }
+      .cover-petrol .date { font-family: "Source Sans 3"; font-weight: 600; font-size: 36px; color: var(--creme); margin-top: 48px; opacity: 0.7; }
+
+      /* Style: Photo */
+      .cover-photo .cover-bg-photo { position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; z-index: 0; }
+      .cover-photo-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,28,48,0.15) 0%, rgba(12,28,48,0.5) 60%, rgba(12,28,48,0.85) 100%); z-index: 1; }
+      .cover-photo-content { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; text-align: center; padding: 80px; padding-bottom: 200px; z-index: 2; }
+      .cover-photo-content .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 40px; color: #fff; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 28px; text-shadow: 0 4px 12px rgba(0,0,0,0.8); }
+      .cover-photo-content .hook-top { font-family: "Philosopher"; font-weight: 700; font-size: 124px; line-height: 1.0; color: #fff; text-shadow: 0 6px 20px rgba(0,0,0,0.8); }
+      .cover-photo-content .hook-pop { font-family: "Philosopher"; font-weight: 700; font-style: italic; font-size: 144px; line-height: 1.0; color: var(--petrol); background: var(--creme); padding: 6px 28px; border-radius: 18px; display: inline-block; margin: 14px 0; box-shadow: 0 18px 44px rgba(0,0,0,0.55); }
+      .cover-photo-content .hook-bottom { font-family: "Philosopher"; font-weight: 700; font-size: 104px; line-height: 1.0; color: #fff; text-shadow: 0 6px 20px rgba(0,0,0,0.8); }
+      .cover-photo-content .date { font-family: "Source Sans 3"; font-weight: 600; font-size: 32px; color: #fff; margin-top: 36px; opacity: 0.85; text-shadow: 0 2px 8px rgba(0,0,0,0.8); }
+
+      /* Style: Video-Still */
+      .cover-video-still .cover-bg-video { position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; z-index: 0; filter: brightness(0.75); }
+      .cover-video-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(18,130,140,0.55) 0%, rgba(41,85,109,0.75) 100%); z-index: 1; }
+      .cover-video-content { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 80px; z-index: 2; }
+      .cover-video-content .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 44px; color: var(--creme); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 30px; opacity: 0.9; }
+      .cover-video-content .hook-top { font-family: "Philosopher"; font-weight: 700; font-size: 132px; line-height: 1.0; color: var(--creme); text-shadow: 0 6px 16px rgba(0,0,0,0.5); }
+      .cover-video-content .hook-pop { font-family: "Philosopher"; font-weight: 700; font-style: italic; font-size: 156px; line-height: 1.0; color: var(--orange); background: var(--creme); padding: 6px 28px; border-radius: 20px; display: inline-block; margin: 16px 0; box-shadow: 0 20px 50px rgba(0,0,0,0.55); }
+      .cover-video-content .hook-bottom { font-family: "Philosopher"; font-weight: 700; font-size: 108px; line-height: 1.0; color: var(--creme); text-shadow: 0 6px 16px rgba(0,0,0,0.5); }
+      .cover-video-content .date { font-family: "Source Sans 3"; font-weight: 600; font-size: 34px; color: var(--creme); margin-top: 38px; opacity: 0.8; }
+
+      /* === Captions === */
+      .caption { position: absolute; left: 60px; right: 60px; transform: translateY(-50%); display: flex; justify-content: center; z-index: 40; }
+      .bubble { background: var(--creme); padding: 28px 42px; border-radius: 24px; box-shadow: 0 16px 40px rgba(12,28,48,0.45); max-width: 960px; text-align: center; }
+      .bubble .text { font-family: "Source Sans 3"; font-weight: 600; font-size: 52px; line-height: 1.22; color: var(--text); }
+      .bubble .w { display: inline-block; margin-right: 0.16em; }
+      .bubble .w.accent { position: relative; color: var(--petrol); font-weight: 700; --hl: 0%; }
+      .bubble .w.accent::after { content: ""; position: absolute; left: -4px; bottom: 2px; width: var(--hl); height: 12px; background: rgba(220,130,46,0.5); z-index: -1; border-radius: 4px; }
+
+      /* === Stamps === */
+      .stamp { position: absolute; font-family: "Philosopher"; font-weight: 700; font-style: italic; padding: 18px 32px; border-radius: 16px; box-shadow: 0 12px 28px rgba(0,0,0,0.35); font-size: 56px; letter-spacing: 0.04em; }
+      .stamp-petrol { background: var(--petrol); color: #fff; }
+      .stamp-orange { background: var(--orange); color: #fff; }
+      .stamp-top-left { top: 220px; left: 48px; }
+      .stamp-top-right { top: 220px; right: 48px; }
+
+      /* === Screen-PIP === */
+      #screen-pip { position: absolute; left: 60px; bottom: 380px; width: 380px; height: 676px; object-fit: cover; border-radius: 28px; border: 6px solid var(--creme); box-shadow: 0 24px 60px rgba(12,28,48,0.6); z-index: 30; }
+
+      /* === Outro-CTA Full-Screen === */
+      #cta-final { position: absolute; inset: 0; background: var(--creme); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 80px; z-index: 60; opacity: 0; }
+      #cta-final .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 48px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--petrol); margin-bottom: 32px; }
+      #cta-final .keyword { font-family: "Philosopher"; font-weight: 700; font-size: 124px; line-height: 1.05; color: var(--dunkelblau); margin-bottom: 32px; }
+      #cta-final .keyword .pop { display: inline-block; background: #fff; color: var(--petrol); font-style: italic; padding: 8px 36px; border-radius: 22px; transform-origin: center; box-shadow: 0 18px 44px rgba(18,130,140,0.35); }
+      #cta-final .sublabel { font-family: "Source Sans 3"; font-weight: 600; font-size: 44px; color: var(--text); margin-top: 16px; max-width: 900px; line-height: 1.3; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="40.68" data-width="1080" data-height="1920">
+
+      <video id="bg-video" class="clip" data-start="0" data-duration="40.68" data-track-index="1" data-has-audio="true" src="assets/2026-06-24-liebe-kinder-mein-ding.mp4" playsinline></video>
+
+      
+
+      <div id="cover" class="clip cover-photo" data-start="0" data-duration="1.6" data-track-index="80">
+        <img class="cover-bg-photo" src="assets/cover-photo-3.jpg" />
+        <div class="cover-photo-overlay"></div>
+        <div class="cover-photo-content">
+        <div class="eyebrow">Beides parallel.</div>
+        <div class="hook-top">Ich liebe</div>
+        <div class="hook-pop">meine Kinder.</div>
+        <div class="hook-bottom">Und mein Ding.</div>
+        <div class="date">Mama + Mama-CEO</div></div></div>
+
+            <div id="stamp-00" class="clip stamp stamp-top-right stamp-orange" data-start="14" data-duration="4" data-track-index="25">BEIDES</div>
+            <div id="cap-01" class="clip caption" style="top: 60%;" data-start="1.36" data-duration="0.97" data-track-index="20"><div class="bubble"><p class="text"><span class="w">ich</span> <span class="w">das</span> <span class="w accent">Frühstück</span> <span class="w">für</span></p></div></div>
+      <div id="cap-02" class="clip caption" style="top: 64%;" data-start="2.38" data-duration="1.39" data-track-index="20"><div class="bubble"><p class="text"><span class="w accent">vier</span> <span class="w accent">Kinder</span> <span class="w">gemacht,</span></p></div></div>
+      <div id="cap-03" class="clip caption" style="top: 62%;" data-start="3.86" data-duration="1.17" data-track-index="20"><div class="bubble"><p class="text"><span class="w">danach</span> <span class="w">habe</span> <span class="w">ich</span> <span class="w accent">Wäsche</span></p></div></div>
+      <div id="cap-04" class="clip caption" style="top: 60%;" data-start="5.08" data-duration="1.19" data-track-index="20"><div class="bubble"><p class="text"><span class="w">gefaltet</span> <span class="w">und</span> <span class="w">um</span> <span class="w">10</span></p></div></div>
+      <div id="cap-05" class="clip caption" style="top: 64%;" data-start="6.32" data-duration="0.63" data-track-index="20"><div class="bubble"><p class="text"><span class="w">habe</span> <span class="w">ich</span> <span class="w">mich</span> <span class="w">an</span></p></div></div>
+      <div id="cap-06" class="clip caption" style="top: 62%;" data-start="7.0" data-duration="1.27" data-track-index="20"><div class="bubble"><p class="text"><span class="w">den</span> <span class="w accent">Laptop</span> <span class="w">gesetzt</span> <span class="w">und</span></p></div></div>
+      <div id="cap-07" class="clip caption" style="top: 60%;" data-start="8.32" data-duration="1.79" data-track-index="20"><div class="bubble"><p class="text"><span class="w">an</span> <span class="w">meinem</span> <span class="w accent">Business</span> <span class="w">gearbeitet.</span></p></div></div>
+      <div id="cap-08" class="clip caption" style="top: 64%;" data-start="10.24" data-duration="0.65" data-track-index="20"><div class="bubble"><p class="text"><span class="w">Also</span> <span class="w">du</span> <span class="w">siehst,</span></p></div></div>
+      <div id="cap-09" class="clip caption" style="top: 62%;" data-start="10.94" data-duration="1.15" data-track-index="20"><div class="bubble"><p class="text"><span class="w">ich</span> <span class="w">habe</span> <span class="w accent">beides</span> <span class="w">gemacht,</span></p></div></div>
+      <div id="cap-10" class="clip caption" style="top: 60%;" data-start="12.14" data-duration="1.51" data-track-index="20"><div class="bubble"><p class="text"><span class="w">nicht</span> <span class="w">entweder</span> <span class="w">oder</span> <span class="w">nicht</span></p></div></div>
+      <div id="cap-11" class="clip caption" style="top: 64%;" data-start="13.7" data-duration="1.15" data-track-index="20"><div class="bubble"><p class="text"><span class="w">nach</span> <span class="w">den</span> <span class="w">Kindern</span> <span class="w">oder</span></p></div></div>
+      <div id="cap-12" class="clip caption" style="top: 62%;" data-start="14.9" data-duration="1.67" data-track-index="20"><div class="bubble"><p class="text"><span class="w">in</span> <span class="w">der</span> <span class="w">ruhigen</span> <span class="w">Phase,</span></p></div></div>
+      <div id="cap-13" class="clip caption" style="top: 60%;" data-start="16.62" data-duration="1.73" data-track-index="20"><div class="bubble"><p class="text"><span class="w">sondern</span> <span class="w accent">beides</span> <span class="w accent">parallel,</span></p></div></div>
+      <div id="cap-14" class="clip caption" style="top: 64%;" data-start="18.4" data-duration="1.49" data-track-index="20"><div class="bubble"><p class="text"><span class="w">weil</span> <span class="w">ich</span> <span class="w">einfach</span> <span class="w accent">beides</span></p></div></div>
+      <div id="cap-15" class="clip caption" style="top: 62%;" data-start="19.94" data-duration="1.89" data-track-index="20"><div class="bubble"><p class="text"><span class="w">brauche.</span> <span class="w">Ich</span> <span class="w">liebe</span> <span class="w">meine</span></p></div></div>
+      <div id="cap-16" class="clip caption" style="top: 60%;" data-start="21.88" data-duration="1.13" data-track-index="20"><div class="bubble"><p class="text"><span class="w accent">Kinder,</span> <span class="w">aber</span> <span class="w">ich</span> <span class="w">liebe</span></p></div></div>
+      <div id="cap-17" class="clip caption" style="top: 64%;" data-start="23.06" data-duration="1.09" data-track-index="20"><div class="bubble"><p class="text"><span class="w">auch</span> <span class="w">mein</span> <span class="w accent">Business,</span></p></div></div>
+      <div id="cap-18" class="clip caption" style="top: 62%;" data-start="24.2" data-duration="1.35" data-track-index="20"><div class="bubble"><p class="text"><span class="w">ich</span> <span class="w">brauche</span> <span class="w">auch</span> <span class="w">dieses</span></p></div></div>
+      <div id="cap-19" class="clip caption" style="top: 60%;" data-start="25.6" data-duration="1.43" data-track-index="20"><div class="bubble"><p class="text"><span class="w">eine</span> <span class="w">Ding</span> <span class="w">für</span> <span class="w">mich</span></p></div></div>
+      <div id="cap-20" class="clip caption" style="top: 64%;" data-start="27.08" data-duration="1.71" data-track-index="20"><div class="bubble"><p class="text"><span class="w">alleine</span> <span class="w">und</span> <span class="w">wenn</span> <span class="w">du</span></p></div></div>
+      <div id="cap-21" class="clip caption" style="top: 62%;" data-start="28.84" data-duration="1.25" data-track-index="20"><div class="bubble"><p class="text"><span class="w">vielleicht</span> <span class="w">jetzt</span> <span class="w">mal</span> <span class="w">eine</span></p></div></div>
+      <div id="cap-22" class="clip caption" style="top: 60%;" data-start="30.14" data-duration="1.99" data-track-index="20"><div class="bubble"><p class="text"><span class="w">andere</span> <span class="w">Mama</span> <span class="w">ermutigen</span> <span class="w">willst</span></p></div></div>
+      <div id="cap-23" class="clip caption" style="top: 64%;" data-start="32.18" data-duration="1.53" data-track-index="20"><div class="bubble"><p class="text"><span class="w">oder</span> <span class="w">erinnern</span> <span class="w">willst,</span></p></div></div>
+      <div id="cap-24" class="clip caption" style="top: 62%;" data-start="33.76" data-duration="1.17" data-track-index="20"><div class="bubble"><p class="text"><span class="w">dass</span> <span class="w">es</span> <span class="w">eben</span> <span class="w">möglich</span></p></div></div>
+      <div id="cap-25" class="clip caption" style="top: 60%;" data-start="34.98" data-duration="0.97" data-track-index="20"><div class="bubble"><p class="text"><span class="w">ist,</span> <span class="w">dass</span> <span class="w">man</span> <span class="w accent">beides</span></p></div></div>
+      <div id="cap-26" class="clip caption" style="top: 64%;" data-start="36.0" data-duration="0.93" data-track-index="20"><div class="bubble"><p class="text"><span class="w">machen</span> <span class="w">kann,</span></p></div></div>
+
+      <div id="cta-final" class="clip" data-start="37.18" data-duration="3.5" data-track-index="60">
+        <div class="eyebrow">Teile das</div>
+        <div class="keyword"><span class="pop">in deiner Story</span></div>
+        <div class="sublabel">wenn dir's auch nie wer bestätigt hat</div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+            tl.fromTo("#cap-01 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 1.36);
+      tl.fromTo("#cap-01 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 1.36);
+      tl.fromTo("#cap-01 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 1.61);
+      tl.to("#cap-01 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 2.15);
+      tl.set("#cap-01 .bubble", { opacity: 0 }, 2.33);
+      tl.set("#cap-01", { opacity: 0 }, 2.33);
+      tl.fromTo("#cap-02 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 2.38);
+      tl.fromTo("#cap-02 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 2.38);
+      tl.fromTo("#cap-02 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 2.63);
+      tl.to("#cap-02 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 3.59);
+      tl.set("#cap-02 .bubble", { opacity: 0 }, 3.77);
+      tl.set("#cap-02", { opacity: 0 }, 3.77);
+      tl.fromTo("#cap-03 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 3.86);
+      tl.fromTo("#cap-03 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 3.86);
+      tl.fromTo("#cap-03 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 4.109999999999999);
+      tl.to("#cap-03 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 4.85);
+      tl.set("#cap-03 .bubble", { opacity: 0 }, 5.03);
+      tl.set("#cap-03", { opacity: 0 }, 5.03);
+      tl.fromTo("#cap-04 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 5.08);
+      tl.fromTo("#cap-04 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 5.08);
+      tl.fromTo("#cap-04 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 5.33);
+      tl.to("#cap-04 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 6.09);
+      tl.set("#cap-04 .bubble", { opacity: 0 }, 6.27);
+      tl.set("#cap-04", { opacity: 0 }, 6.27);
+      tl.fromTo("#cap-05 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 6.32);
+      tl.fromTo("#cap-05 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 6.32);
+      tl.fromTo("#cap-05 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 6.57);
+      tl.to("#cap-05 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 6.77);
+      tl.set("#cap-05 .bubble", { opacity: 0 }, 6.95);
+      tl.set("#cap-05", { opacity: 0 }, 6.95);
+      tl.fromTo("#cap-06 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 7.0);
+      tl.fromTo("#cap-06 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 7.0);
+      tl.fromTo("#cap-06 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 7.25);
+      tl.to("#cap-06 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 8.09);
+      tl.set("#cap-06 .bubble", { opacity: 0 }, 8.27);
+      tl.set("#cap-06", { opacity: 0 }, 8.27);
+      tl.fromTo("#cap-07 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 8.32);
+      tl.fromTo("#cap-07 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 8.32);
+      tl.fromTo("#cap-07 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 8.57);
+      tl.to("#cap-07 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 9.93);
+      tl.set("#cap-07 .bubble", { opacity: 0 }, 10.11);
+      tl.set("#cap-07", { opacity: 0 }, 10.11);
+      tl.fromTo("#cap-08 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 10.24);
+      tl.fromTo("#cap-08 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 10.24);
+      tl.fromTo("#cap-08 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 10.49);
+      tl.to("#cap-08 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 10.71);
+      tl.set("#cap-08 .bubble", { opacity: 0 }, 10.89);
+      tl.set("#cap-08", { opacity: 0 }, 10.89);
+      tl.fromTo("#cap-09 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 10.94);
+      tl.fromTo("#cap-09 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 10.94);
+      tl.fromTo("#cap-09 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 11.19);
+      tl.to("#cap-09 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 11.91);
+      tl.set("#cap-09 .bubble", { opacity: 0 }, 12.09);
+      tl.set("#cap-09", { opacity: 0 }, 12.09);
+      tl.fromTo("#cap-10 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 12.14);
+      tl.fromTo("#cap-10 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 12.14);
+      tl.fromTo("#cap-10 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 12.39);
+      tl.to("#cap-10 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 13.47);
+      tl.set("#cap-10 .bubble", { opacity: 0 }, 13.65);
+      tl.set("#cap-10", { opacity: 0 }, 13.65);
+      tl.fromTo("#cap-11 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 13.7);
+      tl.fromTo("#cap-11 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 13.7);
+      tl.fromTo("#cap-11 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 13.95);
+      tl.to("#cap-11 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 14.67);
+      tl.set("#cap-11 .bubble", { opacity: 0 }, 14.85);
+      tl.set("#cap-11", { opacity: 0 }, 14.85);
+      tl.fromTo("#cap-12 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 14.9);
+      tl.fromTo("#cap-12 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 14.9);
+      tl.fromTo("#cap-12 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 15.15);
+      tl.to("#cap-12 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 16.39);
+      tl.set("#cap-12 .bubble", { opacity: 0 }, 16.57);
+      tl.set("#cap-12", { opacity: 0 }, 16.57);
+      tl.fromTo("#cap-13 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 16.62);
+      tl.fromTo("#cap-13 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 16.62);
+      tl.fromTo("#cap-13 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 16.87);
+      tl.to("#cap-13 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 18.17);
+      tl.set("#cap-13 .bubble", { opacity: 0 }, 18.35);
+      tl.set("#cap-13", { opacity: 0 }, 18.35);
+      tl.fromTo("#cap-14 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 18.4);
+      tl.fromTo("#cap-14 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 18.4);
+      tl.fromTo("#cap-14 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 18.65);
+      tl.to("#cap-14 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 19.71);
+      tl.set("#cap-14 .bubble", { opacity: 0 }, 19.89);
+      tl.set("#cap-14", { opacity: 0 }, 19.89);
+      tl.fromTo("#cap-15 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 19.94);
+      tl.fromTo("#cap-15 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 19.94);
+      tl.fromTo("#cap-15 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 20.19);
+      tl.to("#cap-15 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 21.65);
+      tl.set("#cap-15 .bubble", { opacity: 0 }, 21.83);
+      tl.set("#cap-15", { opacity: 0 }, 21.83);
+      tl.fromTo("#cap-16 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 21.88);
+      tl.fromTo("#cap-16 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 21.88);
+      tl.fromTo("#cap-16 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 22.13);
+      tl.to("#cap-16 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 22.83);
+      tl.set("#cap-16 .bubble", { opacity: 0 }, 23.01);
+      tl.set("#cap-16", { opacity: 0 }, 23.01);
+      tl.fromTo("#cap-17 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 23.06);
+      tl.fromTo("#cap-17 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 23.06);
+      tl.fromTo("#cap-17 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 23.31);
+      tl.to("#cap-17 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 23.97);
+      tl.set("#cap-17 .bubble", { opacity: 0 }, 24.15);
+      tl.set("#cap-17", { opacity: 0 }, 24.15);
+      tl.fromTo("#cap-18 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 24.2);
+      tl.fromTo("#cap-18 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 24.2);
+      tl.fromTo("#cap-18 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 24.45);
+      tl.to("#cap-18 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 25.37);
+      tl.set("#cap-18 .bubble", { opacity: 0 }, 25.55);
+      tl.set("#cap-18", { opacity: 0 }, 25.55);
+      tl.fromTo("#cap-19 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 25.6);
+      tl.fromTo("#cap-19 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 25.6);
+      tl.fromTo("#cap-19 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 25.85);
+      tl.to("#cap-19 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 26.85);
+      tl.set("#cap-19 .bubble", { opacity: 0 }, 27.03);
+      tl.set("#cap-19", { opacity: 0 }, 27.03);
+      tl.fromTo("#cap-20 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 27.08);
+      tl.fromTo("#cap-20 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 27.08);
+      tl.fromTo("#cap-20 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 27.33);
+      tl.to("#cap-20 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 28.61);
+      tl.set("#cap-20 .bubble", { opacity: 0 }, 28.79);
+      tl.set("#cap-20", { opacity: 0 }, 28.79);
+      tl.fromTo("#cap-21 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 28.84);
+      tl.fromTo("#cap-21 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 28.84);
+      tl.fromTo("#cap-21 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 29.09);
+      tl.to("#cap-21 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 29.91);
+      tl.set("#cap-21 .bubble", { opacity: 0 }, 30.09);
+      tl.set("#cap-21", { opacity: 0 }, 30.09);
+      tl.fromTo("#cap-22 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 30.14);
+      tl.fromTo("#cap-22 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 30.14);
+      tl.fromTo("#cap-22 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 30.39);
+      tl.to("#cap-22 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 31.95);
+      tl.set("#cap-22 .bubble", { opacity: 0 }, 32.13);
+      tl.set("#cap-22", { opacity: 0 }, 32.13);
+      tl.fromTo("#cap-23 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 32.18);
+      tl.fromTo("#cap-23 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 32.18);
+      tl.fromTo("#cap-23 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 32.43);
+      tl.to("#cap-23 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 33.53);
+      tl.set("#cap-23 .bubble", { opacity: 0 }, 33.71);
+      tl.set("#cap-23", { opacity: 0 }, 33.71);
+      tl.fromTo("#cap-24 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 33.76);
+      tl.fromTo("#cap-24 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 33.76);
+      tl.fromTo("#cap-24 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 34.01);
+      tl.to("#cap-24 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 34.75);
+      tl.set("#cap-24 .bubble", { opacity: 0 }, 34.93);
+      tl.set("#cap-24", { opacity: 0 }, 34.93);
+      tl.fromTo("#cap-25 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 34.98);
+      tl.fromTo("#cap-25 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 34.98);
+      tl.fromTo("#cap-25 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 35.23);
+      tl.to("#cap-25 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 35.77);
+      tl.set("#cap-25 .bubble", { opacity: 0 }, 35.95);
+      tl.set("#cap-25", { opacity: 0 }, 35.95);
+      tl.fromTo("#cap-26 .bubble", { opacity: 0, y: 20, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power3.out" }, 36.0);
+      tl.fromTo("#cap-26 .w", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.5)", stagger: 0.035 }, 36.0);
+      tl.fromTo("#cap-26 .accent", {}, { "--hl": "100%", duration: 0.45, ease: "power2.out" }, 36.25);
+      tl.to("#cap-26 .bubble", { opacity: 0, y: -12, duration: 0.18, ease: "power2.in" }, 36.75);
+      tl.set("#cap-26 .bubble", { opacity: 0 }, 36.93);
+      tl.set("#cap-26", { opacity: 0 }, 36.93);
+      tl.fromTo("#stamp-00", { opacity: 0, scale: 0.5, rotation: -10 }, { opacity: 1, scale: 1, rotation: -3, duration: 0.4, ease: "back.out(2.5)" }, 14);
+      tl.to("#stamp-00", { opacity: 0, scale: 0.7, duration: 0.3, ease: "power2.in" }, 17.7);
+      tl.fromTo("#bg-video", { scale: 1 }, { scale: 1.04, duration: 4, ease: "power1.inOut" }, 3.6);
+      tl.to("#bg-video", { scale: 1, duration: 4, ease: "power1.inOut" }, 7.6);
+      tl.fromTo("#bg-video", { scale: 1 }, { scale: 1.04, duration: 4, ease: "power1.inOut" }, 15.6);
+      tl.to("#bg-video", { scale: 1, duration: 4, ease: "power1.inOut" }, 19.6);
+      tl.fromTo("#bg-video", { scale: 1 }, { scale: 1.04, duration: 4, ease: "power1.inOut" }, 27.6);
+      tl.to("#bg-video", { scale: 1, duration: 4, ease: "power1.inOut" }, 31.6);
+      tl.fromTo("#cover", { opacity: 0 }, { opacity: 1, duration: 0.25 }, 0);
+      tl.fromTo("#cover .hook-pop", { scale: 0.85 }, { scale: 1, duration: 0.45, ease: "back.out(2)" }, 0.2);
+      tl.to("#cover", { opacity: 0, duration: 0.3, ease: "power2.in" }, 1.3);
+      tl.set("#cover", { opacity: 0 }, 1.6);
+      tl.fromTo("#cta-final", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 37.18);
+      tl.fromTo("#cta-final .keyword", { scale: 0.8 }, { scale: 1, duration: 0.5, ease: "back.out(1.6)" }, 37.28);
+      tl.to("#cta-final .pop", { scale: 1.08, duration: 0.35, yoyo: true, repeat: 4, ease: "power1.inOut" }, 37.78);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

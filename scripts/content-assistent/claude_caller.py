@@ -707,6 +707,202 @@ Erstelle jetzt die Telegram-Briefing-Anfrage. Beachte:
     }
 
 
+# ========================================
+# Story-IDEE-Modus (Text statt HTML — Patricia baut Slides selbst)
+# ========================================
+
+# Voice-Dateien für den Idee-Modus (fokussiert — kein HTML-Template-Ballast)
+_IDEE_VOICE_FILES = [
+    "context/brand-voice.md",
+    "context/hook-framework.md",
+    "context/ki-phrasen-blackliste.md",
+    "context/julia-insta-stories-anleitung.md",
+    "context/content-formel-5-typen.md",
+]
+
+
+def build_idee_system_prompt(profil: str = "mentoring") -> str:
+    """System-Prompt für den Idee-Modus: liefert eine Story-IDEE als Markdown-Text
+    (Hook + Slide-für-Slide-Konzept + Sticker/Foto-Tipp + CTA), KEIN HTML.
+
+    Patricia baut die Slides selbst — der Bot liefert nur das durchdachte Konzept,
+    das den geplanten Launch-Inhalt des Tages mit ihrem echten Tageserlebnis
+    zu einem Storytelling verwebt.
+    """
+    sections = []
+    sections.append("""# /story — Story-IDEE-Modus (Telegram-Text, KEIN HTML)
+
+Du bist Patricias Story-Sparringpartnerin. Du lieferst KEINE gerenderte Story,
+sondern eine **fertige Story-IDEE als Text**, aus der Patricia selbst die Slides baut.
+
+## DEINE KERN-AUFGABE — Verwebung (das ist der ganze Sinn)
+Du bekommst zwei Dinge:
+1. **Der Plan des Tages** (Launch-Vorlage + Tagesziel + Käufertyp + CTA) — was inhaltlich dran ist.
+2. **Patricias echtes Tageserlebnis** (ihre Sprachnotiz/Text) — was bei ihr gerade WIRKLICH los ist.
+
+Deine Kunst: **verschmilz beides zu EINER Geschichte.** Patricias Erlebnis ist der
+Aufhänger und der rote Faden (Slide 2-3 Setup), der Plan ist das Ziel und der CTA.
+Niemals den Plan generisch runterbeten und das Erlebnis daneben kleben — sie müssen
+sich gegenseitig tragen. Aus „heute Morgen Chaos beim Anziehen + Plan=Sneak-Peak-Bootcamp"
+wird z.B. ein Hook, der das Chaos als Bild für „nicht warten, bis alles perfekt ist" nutzt.
+
+## Output-Format (genau so, Telegram-tauglich, KEIN Markdown-Codeblock):
+
+🎬 <b>Story-Idee — [Wochentag DD.MM.] · [Profil]</b>
+📋 Plan: [Vorlagen-Name in 3-4 Worten] · Käufertyp [Name]
+💬 Dein Tag: [1 Satz, der ihr Erlebnis als roten Faden zusammenfasst]
+
+<b>Slide 1 — Hook:</b> „[fertiger BÄM-Hook zum Abtippen]"
+<b>Slide 2 — [Rolle]:</b> [was zeigen/sagen — 1-2 Sätze, ihr Erlebnis als Setup]
+<b>Slide 3 — [Rolle]:</b> [...]
+<b>Slide 4 — [Rolle]:</b> [...]
+<b>Slide 5 — [Rolle]:</b> [...]
+<b>Slide 6 — Sticker:</b> [Frage/Umfrage-Text + 2-3 Optionen]
+<b>Slide 7 — CTA:</b> [konkreter CTA-Satz mit Keyword + „Link in Bio"]
+
+📷 Foto-Tipp: [welches Foto/welche Szene zu Slide 1 passt]
+🎯 Warum das zieht: [1 Satz Begründung — welcher Schmerz/Wunsch getroffen wird]
+
+(5-7 Slides je nach Vorlage — nicht zwingend genau 7. Hook + CTA sind Pflicht.)
+
+## HARTE VOICE-REGELN (nicht verhandelbar)
+- **Slide 1 ist BÄM** — kein „Guten Morgen / Hallo / hab grad". EINE Wahrheit/Schmerz/Provokation/Zahl.
+- **KEINE Stakkato-Sätze.** Niemals 2-3 abgehackte Kurzsätze hintereinander. Sätze mit
+  Konjunktionen verbinden (und, aber, weil, und da). Wie am Küchentisch zur Freundin.
+- **Freundin-Voice:** warme Du-Anrede, längere fliessende Sätze, konkrete Alltags-Anker
+  (Sonntagabend 21 Uhr), persönliche Story-Fragmente statt Coach-Sprech.
+- **Echte Umlaute** ä/ö/ü, Schweizer „ss" statt ß.
+- **KEINE erfundenen Zahlen.** Nur Zahlen, die wortwörtlich in Patricias Input oder den
+  geladenen Dateien stehen. Im Zweifel den Satz ohne Zahl schreiben. Patricia ist vierfache Mama.
+- **CTA-Keyword + Link:** Nutze EXAKT den im Plan vorgegebenen CTA/Keyword. Nichts erfinden.
+- **Bei doTERRA:** keine Heilversprechen, Lifestyle-Frame, „bei mir war"-Sprache.
+- Wenn ein Launch aktiv ist: Vorlage + Tagesziel sind verbindlich. Julia Trost NIE namentlich nennen.
+
+## Wenn Patricia-Input fehlt
+Wenn kein echtes Erlebnis geliefert wurde: schreib die Idee trotzdem nach dem Plan,
+aber halte die Setup-Slides allgemeiner und MARKIERE am Ende:
+„⚠️ Tipp: Mit 1 Sprachnotiz zu deinem Tag wird die Idee 10x persönlicher."
+""")
+
+    sections.append("\n# === VOICE-WISSEN ===\n")
+    for f in _IDEE_VOICE_FILES:
+        content = _read_context_file(f)
+        if content:
+            sections.append(f"\n## DATEI: {f}\n{content[:6000]}\n")
+
+    if profil in {"doterra", "beide"}:
+        wp = _read_context_file("context/doterra/patricia-wendepunkt-story.md")
+        if wp:
+            sections.append(f"\n## doTERRA-Pflicht: patricia-wendepunkt-story.md\n{wp[:5000]}\n")
+
+    return "".join(sections)
+
+
+def build_idee_user_prompt(profil: str, kontext: dict[str, Any], heute: date = None) -> str:
+    """Konkreter Auftrag für die Story-Idee — verwebt Plan + Patricias Tag."""
+    if heute is None:
+        heute = date.today()
+
+    wd = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'][heute.weekday()]
+    parts = []
+    parts.append(f"# Story-Idee für {wd} {heute.strftime('%d.%m.%Y')} — Profil: {profil}")
+    parts.append(f"KW {heute.isocalendar().week} · DISG-Käufertyp heute: {state.empfehle_disg_heute()}")
+
+    # Wochenfokus-Override
+    fokus_override = state.get_wochen_fokus_override(heute.isocalendar().week)
+    if fokus_override:
+        parts.append(f"\n## ⚠️ FOKUS-OVERRIDE (Patricia gesetzt, hat Vorrang): {fokus_override['thema']}")
+        if fokus_override.get("funnel_id"):
+            parts.append(f"Funnel: {fokus_override['funnel_id']} (active-funnels.json)")
+
+    # === DER PLAN DES TAGES (Launch-Vorlage / Julia-Storyvorlage) ===
+    launch = kontext.get("launch")
+    if launch and launch.get("prompt_block"):
+        parts.append("\n# === PLAN DES TAGES (inhaltlich verbindlich) ===")
+        parts.append(launch["prompt_block"])
+
+    # Monatsplan-MD (Wochenthema als Anker)
+    mp = kontext.get("monatsplan_md")
+    if mp and mp.get("wochen_pillar"):
+        parts.append(f"\n## Wochen-Thema (Monatsplan): {mp['wochen_pillar']}")
+
+    # === PATRICIAS TAG (Gold — der rote Faden) ===
+    if kontext.get("patricia_input"):
+        parts.append("\n# === ⭐ PATRICIAS TAG HEUTE (ihr Erlebnis — der rote Faden) ===")
+        parts.append("Das ist, was bei Patricia gerade WIRKLICH los ist. Mach es zum Aufhänger")
+        parts.append("und roten Faden der Story. Baue ihre konkreten Details ein (Kinder, Garten,")
+        parts.append("Szenen), erfinde nichts dazu.")
+        parts.append(f"\n„{kontext['patricia_input']}\"")
+    else:
+        parts.append("\n# === PATRICIAS TAG: (noch nichts geliefert) ===")
+        parts.append("Schreib die Idee nach dem Plan, halte das Setup allgemeiner, "
+                     "und gib am Ende den Sprachnotiz-Tipp aus.")
+
+    if kontext.get("patricia_foto"):
+        parts.append(f"\n## Foto: Patricia hat eines geschickt ({kontext['patricia_foto']}) — "
+                     "berücksichtige es im Foto-Tipp.")
+
+    parts.append("""
+
+## Dein Auftrag
+Schreibe JETZT die Story-Idee im vorgegebenen Telegram-Format.
+- Verwebe Patricias Tag (roter Faden) mit dem Plan (Ziel + CTA).
+- Slide 1 muss als Hook knallen, Slide-Bogen der Vorlage folgen.
+- CTA + Keyword EXAKT aus dem Plan.
+- Käufertyp des Tages im Ton treffen.
+- Anti-Halluzination: keine Zahl, die nicht in den Quellen/Input steht.
+
+Antwort = NUR der Telegram-Text im vorgegebenen Format. Keine Vorrede, kein „Hier ist".""")
+
+    return "\n".join(parts)
+
+
+def generate_story_idee(profil: str, kontext: dict[str, Any],
+                        heute: date = None) -> dict[str, Any]:
+    """Generiert eine Story-IDEE als Telegram-Text (kein HTML, kein Render).
+
+    Returns:
+        {"ok": True, "idee_text": str, "tokens_in": int, "tokens_out": int}
+    """
+    if heute is None:
+        heute = date.today()
+
+    system = build_idee_system_prompt(profil)
+    user = build_idee_user_prompt(profil, kontext, heute)
+
+    logger.info(f"Story-Idee-Generierung: {profil} {heute} "
+                f"(system {len(system)} / user {len(user)} chars)")
+
+    client = _get_client()
+    try:
+        response = client.messages.create(
+            model=config.CLAUDE_MODEL,
+            max_tokens=2500,
+            system=system,
+            messages=[{"role": "user", "content": user}],
+        )
+    except Exception as e:
+        logger.error(f"Story-Idee-API-Fehler: {e}")
+        return {"ok": False, "error": str(e)}
+
+    raw = response.content[0].text if response.content else ""
+    idee = raw.strip()
+    # Falls Claude doch einen Codeblock liefert: entpacken
+    if idee.startswith("```"):
+        idee = re.sub(r"^```(?:\w+)?\s*", "", idee)
+        idee = re.sub(r"\s*```$", "", idee).strip()
+
+    if not idee:
+        return {"ok": False, "error": "Leere Antwort von Claude"}
+
+    return {
+        "ok": True,
+        "idee_text": idee,
+        "tokens_in": response.usage.input_tokens if hasattr(response, "usage") else 0,
+        "tokens_out": response.usage.output_tokens if hasattr(response, "usage") else 0,
+    }
+
+
 def _extract_html(raw: str) -> str:
     """Extrahiert HTML aus Claude-Response (entfernt eventuelle Markdown-Wrapper)."""
     text = raw.strip()
