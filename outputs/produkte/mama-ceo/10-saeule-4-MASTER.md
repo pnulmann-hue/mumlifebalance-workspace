@@ -154,10 +154,10 @@ WAS DU NACH LEKTION 4.1 HAST
 
 ---
 
-# 🎬 LEKTION 4.2 — Womit du arbeitest: Projekt oder Claude Code
+# 🎬 LEKTION 4.2 — Womit du arbeitest: die 3 Stufen (Cowork ist dein Freund)
 
 **Status:** ✅ bestehende Basis (modul-02-lektion-2-3.pptx) · **Folien-Plan hier neu im Säule-4-Stil spezifiziert** · Datei `saeule-04-lektion-4-2.pptx`
-**Material:** Patricias Tool-Stack + Patricia-O-Ton 2026-06-12. **Wichtig für Mentees: Komplexität rausnehmen.** Patricias Modell: man arbeitet mit einem **Projekt** (Claude oder ChatGPT) ODER mit **Claude Code** — die nackte Chatfunktion ist fürs Business zu statisch. Anweisungen/„Skills" kann man bei Claude UND ChatGPT hinterlegen. **Faktencheck 2026-06-12:** Notion lässt sich bei allen dreien per Connector verbinden (nicht nur Claude Code). Der echte Unterschied ist **reaktiv (Projekt) vs. automatisch (Claude-Code-Bot)** — das ist die 2-Stufen-Logik aus L4.4.
+**Material:** Patricias Tool-Stack + Patricia-Entscheidung 2026-06-25. **Wichtig für Mentees: Komplexität rausnehmen + jede kriegt einen Win.** Diese Lektion lehrt das **Tool-Stufen-Modell** (siehe Referenzblock oben): Stufe 0 = Notion allein · Stufe 1 = **Claude Cowork** (Desktop, Notion per Connector, kein Code — der Weg für Nicht-Techies) · Stufe 2 = Claude Code/Telegram (Profi, automatisch). Kernbotschaft: der nackte Gratis-Chat reicht fürs Business nicht (zu statisch), aber **niemand muss Claude Code installieren** — Cowork ist der bequeme Mittelweg.
 
 ## ThriveCart-Setup
 
@@ -170,63 +170,64 @@ WAS DU NACH LEKTION 4.1 HAST
 
 **Beschreibungstext:**
 ```
-Wenn du dich einliest, stösst du auf ChatGPT, Claude, Projekte, Custom GPTs, Claude Code — und fängst vor lauter Auswahl gar nicht erst an. Das räumen wir hier auf, in einfachen Worten.
+Wenn du dich einliest, stösst du auf ChatGPT, Claude, Cowork, Claude Code — und fängst vor lauter Auswahl gar nicht erst an. Das räumen wir hier auf, in einfachen Worten, mit einem klaren 3-Stufen-Modell. Und das Beste: du nimmst auf jeder Stufe einen Win mit, auch wenn du nie etwas installierst.
 
-Die wichtigste Erkenntnis vorweg: für dein Business reicht der normale Chat nicht, weil er zu statisch ist und dich jedes Mal vergisst. Was du brauchst, ist ein gespeicherter Helfer. Und dafür gibt es zwei Wege — einen einfachen für alle, und einen für später.
+Die wichtigste Erkenntnis vorweg: der nackte Gratis-Chat reicht fürs Business nicht, weil er zu statisch ist und dich jedes Mal vergisst. Aber du musst dafür auch kein Programmierer-Tool anfassen — für die meisten ist Claude Cowork genau richtig.
 
 Du lernst:
-→ Warum der nackte Chat fürs Business nicht taugt — und was stattdessen
-→ Den einfachen Weg: ein Projekt in Claude oder ChatGPT (deine Anweisungen bleiben gespeichert)
-→ Den Profi-Weg: Claude Code, womit du auch automatische Bots baust (kommt in 4.4)
-→ Die Wahrheit zu Notion: alle drei können sich mit Notion verbinden — der Unterschied ist „du fragst" vs. „läuft von selbst"
-→ Was das ungefähr kostet (Gratis-Version vs. bezahlt)
+→ Die 3 Stufen: Stufe 0 (nur Notion) · Stufe 1 (Claude Cowork) · Stufe 2 (Claude Code, automatisch)
+→ Warum der nackte Chat fürs Business nicht taugt — und was du stattdessen nimmst
+→ Claude Cowork: dein Bot ohne Code — Notion einmal verbinden, fertig
+→ Was ein „Connector" ist (das, was Claude mit deinem Notion reden lässt) — einfach erklärt
+→ Was das ungefähr kostet — und dass Stufe 0 gratis ist
 
-Am Ende weisst du genau, womit du in 4.4 und 4.5 baust.
+Am Ende weisst du genau, auf welcher Stufe du startest und womit du in 4.4 und 4.5 baust.
 ```
 
-## Folien-Plan (9 Folien)
+## Folien-Plan (10 Folien)
 
 | # | Folie | Inhalt | Sprechnotizen |
 |---|---|---|---|
-| 1 | **Titel** | „4.2 · Womit du arbeitest" | „In dieser Lektion klären wir, womit du überhaupt arbeitest, und ich halt das ganz einfach, weil ich nicht will, dass du im Vergleichen von zehn Tools hängenbleibst und nie anfängst. Am Ende weisst du genau, wo du baust." |
-| 2 | **Der nackte Chat reicht nicht** | durchgestrichen: normales Chatfenster · „vergisst dich jedes Mal, zu statisch fürs Business" | „Das Erste, was du wissen musst: das normale Chatfenster, wo du was reintippst und morgen ist alles weg, das reicht fürs Business nicht. Es ist zu statisch und vergisst dich jedes Mal. Du willst einen Helfer, der dein Wissen behält, und dafür gibt es zwei Wege." |
-| 3 | **Weg 1: ein Projekt** | Karte: „Projekt in Claude ODER ChatGPT — deine Anweisungen bleiben gespeichert" | „Weg eins, und mit dem starten wir alle, ist ein Projekt. Das gibt es sowohl in Claude als auch in ChatGPT, nimm das wo du eh schon einen Zugang hast. In so ein Projekt hinterlegst du einmal deine Anweisungen, deinen Business-Brief, dein Wissen, und ab dann weiss der Helfer das einfach. Das ist dein gespeicherter Bot, ganz ohne Technik." |
-| 4 | **Weg 2: Claude Code** | Karte: „Claude Code — die Werkbank für automatische Bots (z.B. Telegram)" | „Weg zwei ist Claude Code, und das ist die Profi-Werkbank. Damit baust du nicht nur gespeicherte Helfer, sondern richtige automatische Bots, die von selbst laufen und dir zum Beispiel über Telegram schreiben. Das schauen wir uns in Lektion 4.4 genauer an, hier sollst du nur wissen, dass es das gibt und dass ich damit arbeite." |
-| 5 | **Anweisungen hinterlegen — geht bei beiden** | Claude + ChatGPT Symbole · „deine ‚Skills'/Anweisungen speicherst du bei beiden" | „Ganz wichtig, damit du dich nicht verrückt machst: deine Anweisungen, also das was der Helfer können und beachten soll, kannst du sowohl bei Claude als auch bei ChatGPT hinterlegen. Da nimmt sich keiner viel, beide können das. Es ist also keine Glaubensfrage, sondern nimm das, womit du dich wohlfühlst." |
-| 6 | **Die Wahrheit zu Notion** | 3 Spalten (Claude-Projekt · ChatGPT-Projekt · Claude Code) → alle ✓ Notion-Verbindung · darunter: „Unterschied = du fragst vs. läuft von selbst" | „Und weil das oft falsch erzählt wird: Notion lässt sich mit allen drei verbinden, mit dem Claude-Projekt, dem ChatGPT-Projekt und mit Claude Code. Der Unterschied ist nicht WER Notion lesen darf, sondern WIE. Beim Projekt fragst du und es schaut rein, beim automatischen Claude-Code-Bot läuft das von selbst und er meldet sich bei dir. Genau diese zwei Stufen bauen wir in 4.4." |
-| 7 | **Was kostet das?** | Gratis (zum Reinschnuppern) · bezahlt (~20-23/Monat für gespeicherte Projekte) · Hosting nur bei automatischem Bot (Stufe 2) | „Zum Geld, ganz ehrlich: die Gratis-Versionen sind super zum Reinschnuppern, aber für eigene gespeicherte Projekte brauchst du meistens die bezahlte Version, etwa zwanzig Franken im Monat. Das ist weniger als ein Mittagessen auswärts und ersetzt dir Stunden Adminkram. Nur der automatische Telegram-Bot kostet später noch ein bisschen Hosting extra, aber dazu kommen wir in 4.4." |
-| 8 | **Eins nach dem anderen** | Warnung: nicht 5 Tools parallel · „1 Projekt, 2 Bots, dann erweitern" | „Ein Rat aus Erfahrung: fang nicht mit fünf Sachen gleichzeitig an. Nimm ein Projekt, bau damit deine zwei Helfer aus dieser Säule, gewöhn dich dran, und erst wenn das sitzt, schaust du dir Claude Code oder Neues an. Sonst verzettelst du dich, und das ist genau das Hamsterrad, aus dem wir dich rausholen." |
-| 9 | **Arbeitsblatt + nächste Lektion** | „📋 Entscheide dein Projekt + leg den Zugang an" · „Nächste Lektion: 4.3 — dein Business-Brief" | „Im Arbeitsblatt entscheidest du jetzt, ob du mit Claude oder ChatGPT startest, und legst, falls nötig, deinen Zugang an, damit du in 4.4 sofort bauen kannst. In der nächsten Lektion schreiben wir deinen Business-Brief, das Herzstück, das jeder deiner Helfer braucht. Bis gleich." |
+| 1 | **Titel** | „4.2 · Womit du arbeitest — die 3 Stufen" | „In dieser Lektion klären wir, womit du überhaupt arbeitest, und ich halt das ganz einfach. Ich zeig dir drei Stufen, und das Schöne ist: auf jeder nimmst du was mit, auch wenn du nie irgendwas installierst. Du musst nur wissen, auf welcher du starten willst." |
+| 2 | **Der nackte Chat reicht nicht** | durchgestrichen: normales Chatfenster · „vergisst dich jedes Mal, zu statisch fürs Business" | „Das Erste, was du wissen musst: das normale Gratis-Chatfenster, wo du was reintippst und morgen ist alles weg, das reicht fürs Business auf Dauer nicht. Es ist zu statisch und vergisst dich jedes Mal. Du willst was, das dein Wissen behält und in dein Notion schaut, und dafür zeig ich dir die drei Stufen." |
+| 3 | **Die 3 Stufen auf einen Blick** | Tabelle: 🟢 Stufe 0 Notion · 🟡 Stufe 1 Cowork · 🔵 Stufe 2 Claude Code | „Stufe null ist nur dein Notion, ganz ohne Bot. Stufe eins ist Claude Cowork, ein Bot ohne Code. Stufe zwei ist Claude Code, der automatische Profi-Bot. Du fängst da an, wo du dich wohlfühlst, und kannst jederzeit eine Stufe höher. Niemand muss bis Stufe zwei, ganz im Gegenteil." |
+| 4 | **Stufe 0: Notion allein ist schon ein Win** | Notion-Liste + Ansichten „Kommende Termine" / „nach Wochentag" | „Stufe null heisst: du hast deine Liste in Notion, mit ein paar fertigen Ansichten, und machst sie einfach auf. Du siehst, welche Termine kommen und was an welchem Tag dran ist. Kein Bot, kein Abo, gar nichts. Allein dass das Zeug aus deinem Kopf raus und an einem Ort ist, ist schon die halbe Miete." |
+| 5 | **Stufe 1: Claude Cowork — dein Bot ohne Code** | Cowork-Desktop-App · „Notion verbinden + Vorlage rein + fragen" | „Stufe eins ist mein Liebling für die meisten von euch: Claude Cowork. Das ist eine App auf deinem Computer mit Knöpfen, kein Terminal, kein Programmieren. Du verbindest einmal dein Notion, fügst meine fertige Bot-Vorlage ein, und ab dann fragst du ‚was ist heute dran' und kriegst deine Antwort aus deinem echten Notion. So einfach ist das." |
+| 6 | **Was ist ein „Connector"?** | Bild: Stecker zwischen Claude und Notion · „einmal einstecken, du gibst frei was er sieht" | „Kurz zum Wort Connector, weil's wichtig ist: stell dir das wie einen Stecker vor. Notion liefert den Stecker, und in Cowork klickst du ihn einmal ein, loggst dich bei Notion ein und sagst, welche Seiten Claude sehen darf. Ab dann reden die zwei miteinander. Genau das kann der nackte Gratis-Chat nicht, deshalb brauchst du Cowork oder Claude Code dafür." |
+| 7 | **Stufe 2: Claude Code (Ausblick)** | „der automatische Bot, schickt aufs Handy, läuft auch wenn Laptop zu" · kein Muss | „Stufe zwei ist Claude Code, damit baust du einen Bot, der von selbst läuft und dir morgens aufs Handy schreibt, auch wenn dein Laptop zu ist. So läuft meiner. Das ist die Profi-Stufe, braucht etwas mehr und ist ausdrücklich kein Muss. Ich zeig's dir in 4.4 als Ausblick, aber die allermeisten bleiben glücklich auf Stufe eins." |
+| 8 | **Was kostet das?** | Stufe 0 gratis · Stufe 1 Cowork ~20-23/Mt (Claude Pro) · Stufe 2 + Hosting ~5/Mt | „Zum Geld, ganz ehrlich: Stufe null ist gratis. Für Cowork brauchst du ein Claude-Pro-Abo, etwa zwanzig bis dreiundzwanzig Franken im Monat, das ist weniger als ein Mittagessen auswärts und nimmt dir Stunden ab. Nur die Profi-Stufe kostet später noch ein bisschen Hosting obendrauf, aber dazu kommen wir in 4.4." |
+| 9 | **Eins nach dem anderen** | Warnung: nicht 5 Tools parallel · „eine Stufe, zwei Bots, dann weiterschauen" | „Ein Rat aus Erfahrung: fang nicht mit fünf Sachen gleichzeitig an. Wähl eine Stufe, bau damit deine zwei Helfer aus dieser Säule, gewöhn dich dran, und erst wenn das sitzt, schaust du dir die nächste an. Sonst verzettelst du dich, und das ist genau das Hamsterrad, aus dem wir dich rausholen." |
+| 10 | **Arbeitsblatt + nächste Lektion** | „📋 Wähle deine Stufe + leg den Zugang an" · „Nächste Lektion: 4.3 — dein Business-Brief" | „Im Arbeitsblatt entscheidest du jetzt, auf welcher Stufe du startest, und legst, falls nötig, deinen Zugang an, damit du in 4.4 sofort bauen kannst. In der nächsten Lektion schreiben wir deinen Business-Brief, das Herzstück, das jeder deiner Helfer braucht. Bis gleich." |
 
 ## Arbeitsblatt-Sektion 4.2
 
 ```
-LEKTION 4.2 · Womit du arbeitest
+LEKTION 4.2 · Womit du arbeitest — die 3 Stufen
 
-▸ Deine Entscheidung (triff sie jetzt, du kannst später wechseln)
-Ich baue meine Helfer als Projekt in:
-☐ Claude
-☐ ChatGPT
-☐ Ich hab schon einen Zugang bei: _______________ → damit starte ich
+▸ Auf welcher Stufe startest du? (du kannst später jederzeit höher)
+☐ 🟢 Stufe 0 — nur Notion (gratis, kein Bot, ich nutze die Ansichten)
+☐ 🟡 Stufe 1 — Claude Cowork (Bot ohne Code) ← Empfehlung für die meisten
+☐ 🔵 Stufe 2 — Claude Code/Telegram (automatisch, später)
 
-▸ Zugang bereit?
-☐ Account angelegt / vorhanden
-☐ Bezahlte Version aktiv (nötig für eigene gespeicherte Projekte)
-☐ Ich weiss, wo ich ein neues Projekt erstelle (kurz gesucht, gefunden)
+▸ Wenn Stufe 1 (Cowork): Zugang bereit?
+☐ Claude-Pro-Abo aktiv (~20-23 CHF/Mt)
+☐ Claude Desktop-App installiert (Mac/Windows)
+☐ Notion-Connector eingesteckt (einmal: Notion-Login bestätigt + Seiten freigegeben)
 
 ▸ Gut zu wissen (häkchen wenn verstanden)
-☐ Der nackte Chat reicht fürs Business nicht — ich nehme ein Projekt
-☐ Anweisungen kann ich bei Claude UND ChatGPT hinterlegen
-☐ Notion verbinden geht bei allen — der automatische Telegram-Bot braucht Claude Code (Stufe 2, später)
+☐ Der nackte Gratis-Chat reicht fürs Business nicht (zu statisch)
+☐ „Connector" = der Stecker, der Claude mit meinem Notion reden lässt
+☐ Ich gebe selbst frei, welche Notion-Seiten der Bot sehen darf
+☐ Ich muss NICHT Claude Code anfassen — Cowork reicht
 
 ▸ Mein Vorsatz
-„Ich bleib erstmal bei EINEM Projekt und bau meine 2 Bots, bevor ich was Neues anschaue." ☐
+„Ich bleib erstmal auf EINER Stufe und bau meine 2 Bots, bevor ich was Neues anschaue." ☐
 
 WAS DU NACH LEKTION 4.2 HAST
-✓ Du verstehst: nackter Chat = zu statisch, Projekt = gespeicherter Helfer
-✓ Du kennst beide Wege: Projekt (für alle) und Claude Code (Profi/automatisch)
-✓ Du weisst, dass Notion bei allen geht — Unterschied ist reaktiv vs. automatisch
-✓ Du hast dein Projekt gewählt und den Zugang bereit
+✓ Du kennst die 3 Stufen und weisst, wo du startest
+✓ Du verstehst: nackter Chat = zu statisch · Cowork = Bot ohne Code
+✓ Du weisst, was ein Connector ist und dass du Notion damit verbindest
+✓ Dein Zugang für deine Stufe ist bereit
 ```
 
 ---
@@ -321,9 +322,9 @@ WAS DU NACH LEKTION 4.3 HAST
 # 🎬 LEKTION 4.4 — Deinen Cockpit-Bot bauen (Live-Demo)
 
 **Status:** ⚠️ NEU bauen (13 Folien)
-**Material:** Patricias echter Cockpit-Bot (live auf Railway) — **aber für Mentees als 2 Stufen aufbereitet:** Stufe 1 = Projekt (Claude/ChatGPT) als Morgenbriefing (für alle machbar, kein Hosting), Stufe 2 = der echte Telegram-Bot via Claude Code ehrlich erklärt (was er ist, was er braucht, was er kostet), aber NICHT Schritt-für-Schritt nachgebaut.
+**Material:** Patricias echter Cockpit-Bot (live auf Railway = Stufe 2) — **für Mentees nach dem 3-Stufen-Modell aufbereitet:** Stufe 0 = Notion-Ansichten (Business-Planung sichtbar, kein Bot) · Stufe 1 = der Bot in **Claude Cowork** (Notion per Connector verbinden, fertige Vorlage rein, fragen — kein Code), das ist der Standard, den jede im Live-Call bauen kann · Stufe 2 = der echte Telegram-Bot via Claude Code (ehrlich erklärt, was er braucht/kostet), nur Ausblick „wer mehr will".
 
-> **Patricia-Entscheidung 2026-06-12:** Cockpit-Bot wird als 2-Stufen-Modell gelehrt. Stufe 1 ist der Standard, den jede Mentee baut und im Live-Call bauen kann. Stufe 2 (Telegram-Bot wie Patricias Railway-Version) ist nur ein Ausblick „wer mehr will", damit das „du musst nichts können"-Versprechen hält.
+> **Patricia-Entscheidung 2026-06-25:** Cockpit-Bot wird als 3-Stufen-Modell gelehrt, **Stufe 1 = Claude Cowork** (nicht „Projekt"), weil Cowork sauber Notion verbindet und für Nicht-Techies gemacht ist. Niemand muss Claude Code anfassen — das hält das „du musst nichts können"-Versprechen.
 
 ## ThriveCart-Setup
 
@@ -358,11 +359,11 @@ Ich bau den Bot live vor deinen Augen. Du baust einfach mit.
 | 1 | **Titel** | „4.4 · Dein Cockpit-Bot — dein Morgenbriefing" | „Jetzt wird's konkret, denn wir bauen deinen ersten echten KI-Mitarbeiter. Ich nenne ihn den Cockpit-Bot, weil er dir morgens das Cockpit zeigt, also alles was heute wichtig ist, auf einen Blick." |
 | 2 | **Was er für dich tut** | 3 Zeilen: morgens fragen → Tagesfokus + 3 Hauptaufgaben + kurzer Überblick | „Was dieser Bot macht, ist einfach erklärt: du fragst ihn morgens ‚was ist heute dran', und er gibt dir deinen Tagesfokus, deine drei wichtigsten Aufgaben und einen kurzen Überblick über die Woche. Du musst nicht mehr selbst in Notion wühlen und dich verlieren, er macht das für dich." |
 | 3 | **Warum wir Säule 3 gebraucht haben** | Pfeil: Notion-Business-Brain (S3) → Cockpit-Bot liest Tagesplaner + Aufgaben | „Jetzt zahlt sich Säule 3 aus. Dein Cockpit-Bot kann nur deshalb wissen was heute dran ist, weil du dein Notion-Business-Brain aufgebaut hast, mit Wochenplan, Tagesplaner und Aufgaben. Der Bot ist die Stimme, die dir vorliest, was in deinem Brain steht. Ohne das Brain kein Briefing." |
-| 4 | **2 Stufen — fang bei Stufe 1 an** | Stufe 1: Projekt in Claude/ChatGPT (reaktiv, kein Hosting) · Stufe 2: Claude-Code-Telegram-Bot (automatisch) | „Ich zeig dir den Bot in zwei Stufen, und ich sag dir gleich: für neunzig Prozent reicht Stufe eins völlig. Stufe eins ist ein Projekt in Claude oder ChatGPT, ganz ohne Technik-Gedöns, du fragst und es antwortet. Stufe zwei ist die Profi-Variante mit Claude Code, die als automatischer Telegram-Bot von selbst läuft, aber die ist nur was für später, wenn du Lust auf mehr hast. Wir bauen jetzt Stufe eins." |
-| 5 | **Stufe 1: was der Bot als Input braucht** | 2 Inputs: dein Business-Brief (4.3) + deine Notion-Woche (reinkopieren oder teilen) | „Dein Cockpit-Bot braucht genau zwei Dinge. Erstens deinen Business-Brief aus der letzten Lektion, damit er dich kennt. Und zweitens deine aktuelle Notion-Woche, die du ihm einfach reinkopierst oder als Link teilst. Mehr ist es nicht, und genau das machen wir jetzt zusammen." |
+| 4 | **3 Stufen — wir bauen Stufe 1 (Cowork)** | 🟢 Stufe 0 Notion-Ansicht · 🟡 Stufe 1 Cowork (kein Code) · 🔵 Stufe 2 Claude Code/Telegram | „Erinnerst du dich an die drei Stufen aus 4.2? Stufe null wäre einfach dein Notion aufmachen. Wir bauen jetzt Stufe eins, deinen Bot in Claude Cowork, ganz ohne Code. Und für die, die irgendwann mehr wollen, gibt's Stufe zwei mit Claude Code, der automatisch aufs Handy schickt. Für neunzig Prozent reicht Stufe eins völlig, also fangen wir da an." |
+| 5 | **Stufe 1: was der Bot braucht** | 2 Inputs: dein Business-Brief (4.3) + dein Notion (in Cowork per Connector verbunden) | „Dein Cockpit-Bot braucht genau zwei Dinge. Erstens deinen Business-Brief aus der letzten Lektion, damit er dich kennt. Und zweitens dein Notion, das du in Cowork einmal per Connector verbindest, dann liest er deine Wochenplanung direkt, du musst nichts mehr reinkopieren. Genau das machen wir jetzt zusammen." |
 | 6 | **Die fertige Vorlage (Bonus)** | Karte: „Cockpit-Bot-System-Prompt — fertig, du passt nur deinen Kontext an" | „Damit du nicht bei null anfängst, hast du von mir eine fertige Vorlage als Bonus. Das ist der komplette System-Prompt, also die Bedienungsanleitung für den Bot, und du musst nur deinen Namen und deinen Kontext eintragen. Den Link zum Download findest du gleich hier in der Lektion." |
-| 7 | **Live-Demo Schritt 1** | Bildschirm: neuen Bot/GPT anlegen + Vorlage einfügen | „So, jetzt bau ich ihn live, und du baust einfach mit, pausier das Video wo du musst. Schritt eins: ich lege einen neuen Bot an, in meinem Fall ein Project, und füge die Vorlage ein. Du siehst, ich tippe nichts Kompliziertes, ich kopiere die Vorlage rein." |
-| 8 | **Live-Demo Schritt 2** | Business-Brief + Notion-Woche reingeben | „Schritt zwei: ich gebe ihm meinen Business-Brief, damit er weiss wer ich bin, und dann werfe ich ihm meine aktuelle Notion-Woche rein. Schau, ich kopiere einfach den Inhalt meiner Wochenseite, und der Bot hat sofort alles, was er braucht." |
+| 7 | **Live-Demo Schritt 1: Cowork + Notion verbinden** | Bildschirm: Cowork öffnen · Notion-Connector einstecken · Vorlage einfügen | „So, jetzt bau ich ihn live in Cowork, und du baust einfach mit, pausier wo du musst. Schritt eins: ich öffne Cowork, gehe in die Einstellungen und stecke den Notion-Connector ein, also einmal bei Notion einloggen und die Seiten freigeben. Dann füge ich meine fertige Vorlage ein. Du siehst, ich tippe nichts Kompliziertes, ich klicke und kopiere." |
+| 8 | **Live-Demo Schritt 2: Business-Brief rein** | Business-Brief einfügen (Notion ist schon verbunden) | „Schritt zwei: ich gebe ihm noch meinen Business-Brief, damit er weiss wer ich bin. Mein Notion ist ja jetzt verbunden, also muss ich nichts mehr reinkopieren, er schaut von selbst rein. Damit hat der Bot alles, was er braucht." |
 | 9 | **Live-Demo Schritt 3: testen** | Eingabe: „Was ist heute mein Fokus?" → Bot-Antwort mit Tagesfokus + 3 Aufgaben | „Und Schritt drei, der schönste: ich frag ihn ‚was ist heute mein Fokus', und schau dir das an, er gibt mir meinen Tagesfokus, meine drei Hauptaufgaben und einen kurzen Wochenblick. Wie geil ist das denn. Genau das hast du gleich auch." |
 | 10 | **So nutzt du ihn jeden Morgen** | Routine: Laptop auf → Bot fragen → loslegen (30 Sek statt Notion-Wühlen) | „Im Alltag sieht das dann so aus: Laptop auf, Bot fragen, loslegen. Dreissig Sekunden statt zehn Minuten in Notion verlieren. Einmal pro Woche wirfst du ihm deine neue Wochenseite rein, und der Rest läuft. So fühlt sich Mama-CEO an einem normalen Morgen an." |
 | 11 | **Stufe 2: so läuft der automatische Telegram-Bot** | Patricia-Telegram-Bot: Server läuft 24/7 → pusht um 6:30 von selbst · was es braucht: Telegram-Bot-Anmeldung + ein Ort wo er läuft (Hosting) + etwas Code | „Und für die, die irgendwann Blut lecken, zeig ich dir ehrlich, wie die Profi-Variante läuft. Das ist ein Bot, der Tag und Nacht auf einem kleinen Server liegt und mir jeden Morgen um halb sieben von selbst eine Telegram-Nachricht schickt, ohne dass ich irgendwas anklicke. Dafür braucht es drei Dinge: du meldest deinen Bot kostenlos bei Telegram an, du brauchst einen Ort wo er rund um die Uhr läuft, das nennt man Hosting, und du brauchst ein bisschen Code, der die Verbindung macht." |
