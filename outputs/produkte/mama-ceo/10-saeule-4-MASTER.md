@@ -717,19 +717,20 @@ MEINE LISTE:
 ## 📋 Zusammenfassung: was Patricia produzieren muss für Säule 4
 
 > **✅ STAND 2026-06-25 — bereits gebaut:** Master (3-Stufen/Cowork) · 4 Bonus-Vorlagen (`bonus-vorlagen-saeule-4/`) · Arbeitsblatt (`04-arbeitsblaetter/mama-ceo-arbeitsblatt-saeule-4.docx`, validiert) · ThriveCart-Setup (`13-thrivecart-saeule-4-setup.md`) · Notion Mentee-Haushalts-DB im Master-Template (`a52526bf-4d9a-48e6-9f64-5cce1239b66e`) + Beispielzeilen + 3 Stufe-0-Views · 3 Stufe-0-Views auf Patricias eigener DB (`caf1c565-...`).
-> **🔲 Es fehlen nur noch die 6 PPTX** (unten) — der grosse Block.
+> **✅ 6 PPTX gebaut 2026-06-25** — `03-praesentationen/saeule-4/`, Säule-3-Brand-Look, Sprechnotizen pro Folie. **Säule 4 ist damit komplett produziert** (nur noch aufnehmen).
 
-### Videos (6 Lektionen, ~85 Min total)
-| # | Datei | Status |
+### Videos (6 Lektionen, ~85 Min total) — ✅ PPTX gebaut
+| # | Datei (PPTX) | Status |
 |---|---|---|
-| 4.1 | `saeule-04-lektion-4-1.mp4` | ⚠️ PPTX neu bauen (9 Folien) |
-| 4.2 | `saeule-04-lektion-4-2.mp4` | ⚠️ PPTX bauen (9 Folien · Basis modul-02-lektion-2-3, neu im Säule-4-Look) |
-| 4.3 | `saeule-04-lektion-4-3.mp4` | ⚠️ PPTX bauen (9 Folien · Basis modul-02-lektion-2-4, neu im Säule-4-Look) |
-| 4.4 | `saeule-04-lektion-4-4.mp4` | ⚠️ PPTX neu bauen (13 Folien) — Live-Demo: Patricia baut Cockpit-Bot am Screen |
-| 4.5 MASTERY | `saeule-04-lektion-4-5.mp4` | ⚠️ PPTX neu bauen (14 Folien) — Live-Demo: Patricia baut Haushalts-Helfer-Bot am Screen |
-| 4.6 | `saeule-04-lektion-4-6.mp4` | ⚠️ PPTX neu bauen (9 Folien) |
+| 4.1 | `03-praesentationen/saeule-4/01-lektion-4-1.pptx` | ✅ 9 Folien |
+| 4.2 | `.../02-lektion-4-2.pptx` | ✅ 10 Folien |
+| 4.3 | `.../03-lektion-4-3.pptx` | ✅ 9 Folien |
+| 4.4 | `.../04-lektion-4-4.pptx` | ✅ 13 Folien — Live-Demo Cockpit-Bot (Cowork) |
+| 4.5 MASTERY | `.../05-lektion-4-5.pptx` | ✅ 14 Folien — Live-Demo Haushalts-Helfer (Cowork) |
+| 4.6 | `.../06-lektion-4-6.pptx` | ✅ 9 Folien |
 
-→ **6 PPTX im einheitlichen Säule-4-Brand-Look** (python-pptx, Petrol/Creme, Sprechnotizen pro Folie) — wie bei Säule 3.
+→ **6 PPTX im einheitlichen Säule-4-Brand-Look** (python-pptx, weiss/Navy/Petrol/Orange wie Säule 3, Sprechnotizen pro Folie).
+→ ⚠️ Visuelles Rendern lokal nicht möglich (kein LibreOffice) — Inhalts-QA bestanden (Folienzahl + Titel + Notizen). Patricia: beim ersten Öffnen kurz durchklicken, ob Textmengen passen.
 → **Aufnahme-Hinweis:** L4.4 + L4.5 sind Live-Demos mit Screenshare (Bot bauen). Patricia braucht ihren Bildschirm + **Claude Cowork** + Notion + die Vorlagen offen.
 
 ### Notion-Master-Template erweitern (Bau-Voraussetzung für L4.5)

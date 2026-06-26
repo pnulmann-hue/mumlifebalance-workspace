@@ -41,10 +41,16 @@ tags: [produkt, mama-ceo, handoff]
 - ✅ **ThriveCart-Setup** `13-thrivecart-saeule-4-setup.md`.
 - ✅ **Notion:** Mentee-Haushalts-DB im Master-Template (`a52526bf-4d9a-48e6-9f64-5cce1239b66e`) + 6 Beispielzeilen + 3 Stufe-0-Views · dieselben 3 Views auf Patricias eigener DB (`caf1c565-9c66-46bb-ae03-73d029b91d87`).
 
-### 🔲 Säule-4 — was noch fehlt
-1. **6 PPTX bauen** (python-pptx, Säule-4-Look) — Folienzahlen **9/10/9/13/14/9**. Wie Säule 3. **Einziger grosser Rest.**
-2. **L4.4 + L4.5 sind Live-Demos** — Patricia braucht beim Aufnehmen Screenshare + **Claude Cowork** + Notion + die Vorlagen offen.
-3. Patricias eigener Haushalts-Bot: optional in **Cowork** scharfstellen (Prompt liegt in `bonus-haushalts-helfer-bot-PATRICIA.md`).
+### ✅ Säule-4 — KOMPLETT PRODUZIERT (2026-06-25)
+- ✅ **6 PPTX gebaut** — `03-praesentationen/saeule-4/01–06-lektion-4-*.pptx` (9/10/9/13/14/9 Folien, Säule-3-Brand-Look, Sprechnotizen pro Folie, QA bestanden). ⚠️ Lokal kein LibreOffice → Patricia klickt einmal durch.
+
+### 🔲 Säule-4 — was noch fehlt (nur noch Patricia-Schritte)
+1. **6 Videos aufnehmen** (L4.4 + L4.5 = Live-Demos mit Screenshare + Claude Cowork + Notion + Vorlagen offen).
+2. **In ThriveCart hochladen** (Videos + Arbeitsblatt + 4 Bonus-Vorlagen) — Texte liegen in `13-thrivecart-saeule-4-setup.md`.
+3. **Notion-Master-Template teilen** (Duplizieren-Link gilt aus Säule 3 weiter; Haushalts-DB ist jetzt drin).
+4. Optional: Patricias eigener Haushalts-Bot in **Cowork** scharfstellen (`bonus-haushalts-helfer-bot-PATRICIA.md`).
+
+### ▶️ Danach: Säule 5 (Mama-CEO-Matrix · 25 Tasks · 90-Tage-Plan) — `10-saeule-5-MASTER.md` noch zu bauen.
 
 ---
 
