@@ -15,7 +15,7 @@ Die Morgen-Posts kannst du **als Text posten ODER als Sprachnotiz einsprechen** 
 - **Canva-Freebie-Vorlage:** `[CANVA-VORLAGE-LINK]`  ← dein „Vorlage verwenden"-Link
 - **Erklärvideo (Canva + Claude):** `[VIDEO-LINK]`
 - **Freebie-Prompt (Tag 2):** siehe Goodie-Post unten
-- **(Finale) MBA-Anmeldung:** `[MBA-CART-LINK]`
+- **(Finale) MBA-Anmeldung:** `https://mumlifebalance.ch/mba`
 
 > Ersetz die `[…]`-Platzhalter einmal mit deinen echten Links, dann ist alles startklar.
 
@@ -137,7 +137,7 @@ Heute fügt sich alles zu EINEM roten Faden zusammen — und PIA baut dir aus al
 
 Du hast es durchgezogen — fünf Tage, neben allem, was an dir hängt. Ich bin richtig stolz auf dich. 💛
 
-Was du grad mit PIA erlebt hast, war ein Vorgeschmack. Wenn du den Weg weitergehen willst — mit PIA jeden Tag an deiner Seite, plus den Kursen und unseren Live-Calls — dann hab ich was für dich. Alle Infos kommen heute Abend per Mail und hier: `[MBA-CART-LINK]`
+Was du grad mit PIA erlebt hast, war ein Vorgeschmack. Wenn du den Weg weitergehen willst — mit PIA jeden Tag an deiner Seite, plus den Kursen und unseren Live-Calls — dann hab ich was für dich. Alle Infos kommen heute Abend per Mail und hier: `https://mumlifebalance.ch/mba`
 
 Kein Druck. Du hast diese Woche schon mehr gemacht als die meisten in einem Monat. 🚀
 
