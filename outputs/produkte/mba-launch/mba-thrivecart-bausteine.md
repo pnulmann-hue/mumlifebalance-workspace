@@ -2,10 +2,10 @@
 tags: [produkt, salespage, mba, thrivecart, intern]
 ---
 
-# MBA — ThriveCart-Bausteine (umgeschrieben aufs MBA-Bundle)
+# MBA — ThriveCart-Bausteine (nach Julias Copywriting-Methode)
 
-**Wozu:** Deine ThriveCart-Seite (`mumlifebalance.thrivecart.com/mba/`) hat noch den alten „8-Wochen-Mama-CEO"-Text. Hier ist jeder Baustein neu — passend zur **MBA = 3 Kurse + PIA + Umsetzerinnen**. Einfach Block für Block ersetzen.
-**Regeln:** keine erfundenen Zahlen · kein Garantie-Versprechen · Schweizer ss · Kundschaft der Mentees = neutral „Menschen".
+**Wozu:** Deine ThriveCart-Seite hat noch den alten „8-Wochen-Mama-CEO"-Text. Hier ist jeder Baustein neu — aufs **MBA-Bundle (3 Kurse + PIA + Umsetzerinnen)** und nach den Copywriting-Prinzipien: **Ziel hinter dem Ziel, Transformation statt Features (jedes „damit du…"), greifbar statt Floskeln, Füllwörter raus, scannbar.**
+**Regeln:** keine erfundenen Zahlen · kein Garantie-Versprechen · Schweizer ss · Kundschaft der Mentees = neutral „Menschen/Kunden".
 **Preis-Optionen im Checkout (stimmen schon):** Einmal CHF 997 · 2× 498.50 · 3× 332.35 · 6× 166.20.
 
 ---
@@ -13,7 +13,7 @@ tags: [produkt, salespage, mba, thrivecart, intern]
 ## 1 · HERO (Headline + Subheadline + Button)
 
 **Headline:**
-Mehr Kunden. Mehr Verkäufe. Mehr Zeit — und ein eigenes Einkommen von zu Hause.
+In einem Jahr zu echten Kunden und deinem eigenen Einkommen — ohne mehr Stunden und ohne deine Familie zu vernachlässigen.
 
 **Subheadline:**
 Die Mum Business Academy: drei aufeinander aufbauende Kurse, ein ganzes Jahr Begleitung und PIA, deine KI-Mentorin, die ein Jahr lang mit dir umsetzt.
@@ -24,9 +24,9 @@ Die Mum Business Academy: drei aufeinander aufbauende Kurse, ein ganzes Jahr Beg
 
 ## 2 · BENEFIT-BULLETS (3 Punkte + Button)
 
-- Du wirst sichtbar, sodass Menschen **dich** anschreiben — statt dass du der warmen Liste hinterherrennst.
-- Du baust dir Zeit und Struktur, damit dein Business neben Kindern und Alltag wirklich läuft.
-- Du baust dein eigenes Angebot auf — ein Einkommen, das dir gehört, statt ein paar Prozent Provision.
+- **Menschen schreiben dich von selbst an** — statt dass du die warme Liste zum zehnten Mal abklapperst.
+- **Dein Business läuft in ein paar fokussierten Stunden** — nicht bis 22 Uhr am Laptop.
+- **Du verdienst an deinem eigenen Angebot** — statt an ein paar Prozent Provision.
 
 **Button:** JA, ICH WILL MEINEN PLATZ!
 
@@ -40,7 +40,7 @@ Die Mum Business Academy: drei aufeinander aufbauende Kurse, ein ganzes Jahr Beg
 - **Du postest schöne Produktbilder, und es passiert: nichts. Kein Like, keine Nachricht.**
 - **Beim Treffen mit den Freundinnen wird's kurz still — weil keine will, dass du wieder mit deinem Produkt um die Ecke kommst.**
 - **„Noch eine Produktpräsentation … bringt das überhaupt was?" — und insgeheim fragst du dich das selbst.**
-- **Tief drin willst du ein eigenes Thema, mit dem du wirklich hilfst — aber ohne es zu merken, verkaufst du weiter einfach Produkte.**
+- **Tief drin willst du ein eigenes Thema, mit dem du wirklich hilfst — aber du verkaufst weiter einfach Produkte.**
 
 ---
 
@@ -48,11 +48,11 @@ Die Mum Business Academy: drei aufeinander aufbauende Kurse, ein ganzes Jahr Beg
 
 Keine Sorge — ich kenne dieses Gefühl von innen.
 
-Ich bin Patricia, vierfache Mama, und ich habe selbst jahrelang im Funktionieren gesteckt. Ich habe gedacht „eigentlich müsste ich", während der Alltag mich aufgefressen hat — und ich habe lange einfach Produkte verkauft, ohne je festzulegen, womit ich eigentlich wirklich helfe.
+Ich bin Patricia, vierfache Mama. Ich habe selbst lange einfach Produkte verkauft, ohne je festzulegen, womit ich eigentlich helfe — und mich gefragt, warum nichts vorangeht.
 
-Was mich rausgeholt hat, war nicht der nächste Kurs. Es war ein klarer Weg — und Menschen, die mit mir drangeblieben sind.
+Was mich rausgeholt hat, war kein weiterer Kurs. Es war ein klarer Weg in der richtigen Reihenfolge — und Menschen, die mit mir drangeblieben sind.
 
-Und warum ich das heute für dich baue? Weil ich zu viele Mamas kenne, die Woche für Woche alles geben — und am Ende an ein paar Prozent Provision hängen, ohne je gefragt zu haben, womit sie eigentlich helfen wollen. Du hast so viel mehr zu geben, als immer nur ein Produkt zu verkaufen.
+Heute baue ich genau das für dich. Weil du so viel mehr zu geben hast, als immer nur ein Produkt zu verkaufen.
 
 *(Hinweis: Platzhalter-Bild „Ut Repellat…" durch ein echtes Foto von dir ersetzen.)*
 
@@ -61,29 +61,29 @@ Und warum ich das heute für dich baue? Weil ich zu viele Mamas kenne, die Woche
 ## 5 · WIE ES FUNKTIONIERT — die 3 Kurse (3-Säulen-Block)
 
 **1 — Sichtbar werden · Instagram-Kundenmaschine**
-Dein Profil wird vom „Produktkatalog, den keiner liked" zur Bibliothek, die anzieht. Du legst fest, womit du konkret hilfst — und Menschen landen in deiner DM, statt dass du jagst.
+Du legst fest, womit du konkret hilfst, und dein Profil zieht an — **damit fremde Menschen DICH anschreiben**, statt dass du jagst.
 
 **2 — Zeit & System · Mama-CEO**
-Du schaffst dir die Zeit (Powerzeiten, Hütchenmethode), holst dir KI-Mitarbeiter und baust dein Business-Brain in Notion. Dein Business läuft in ein paar fokussierten Stunden — nicht rund um die Uhr im Kopf.
+Du schaffst dir die Zeit (Powerzeiten, Hütchenmethode) und holst dir KI-Mitarbeiter — **damit dein Business zwischen Znüni und Abholzeit läuft**, nicht bis spät in die Nacht.
 
 **3 — Dein eigenes Angebot · Digitale Produktwelt**
-Du baust dein erstes digitales Produkt (mit KI), deine Produkttreppe und deinen Funnel — und verkaufst, ohne dich zu verbiegen. Einkommen, das dir gehört.
+Du baust dein erstes digitales Produkt mit KI, deine Produkttreppe und deinen Funnel — **damit du ein Einkommen hast, das dir gehört**.
 
 **Abschluss-Text:**
-Und bei jedem Schritt ist PIA dabei — deine KI-Mentorin, die ein ganzes Jahr mit dir umsetzt. Erst alle Bausteine zusammen bringen dich wirklich ans Ziel.
+Und bei jedem Schritt ist PIA dabei — deine KI-Mentorin, ein ganzes Jahr. Erst alle Bausteine zusammen bringen dich wirklich ans Ziel.
 
 **Button:** Genau das brauche ich
 
 ---
 
-## 6 · WAS IST DRIN? (Leistungs-Liste)
+## 6 · WAS IST DRIN? (jeder Punkt mit „damit du…")
 
-- **🤖 PIA — deine KI-Mentorin, ein Jahr lang jeden Tag.** Baut mit dir Bio, Hooks, fertige Posts, Stories, deinen Leadmagnet, ganze Content-Wochen und deinen Funnel — alles in deiner Stimme.
-- **📱 Instagram-Kundenmaschine** — sichtbar werden, sodass Menschen dich anschreiben.
-- **⏰ Mama-CEO** — Zeit & Struktur, damit dein Business neben der Familie läuft.
-- **🚀 Digitale Produktwelt** — dein eigenes digitales Angebot, das auch verkauft, wenn du am Spielplatz sitzt.
-- **🤝 Die Umsetzerinnen** — 2 Live-Calls pro Monat (ein Experten-Call inkl. Q&A + ein reiner Q&A) + eine begleitete Telegram-Gruppe, in der ich deine Fragen dienstags & donnerstags persönlich beantworte. Alle Calls werden aufgezeichnet.
-- **♾️ Alle Kurse unbegrenzt zugänglich** — du lernst in deinem Tempo und kommst immer wieder rein.
+- **🤖 PIA — deine KI-Mentorin, ein Jahr lang jeden Tag.** Baut mit dir Bio, Hooks, fertige Posts, Stories, Leadmagnet, ganze Content-Wochen und deinen Funnel, alles in deiner Stimme — **damit du nie mehr vor dem leeren Blatt sitzt.**
+- **📱 Instagram-Kundenmaschine** — **damit fremde Menschen dich anschreiben**, statt dass du suchst.
+- **⏰ Mama-CEO** — **damit dein Business in ein paar fokussierten Stunden läuft**, nicht rund um die Uhr im Kopf.
+- **🚀 Digitale Produktwelt** — **damit du ein eigenes Angebot hast**, das auch verkauft, wenn du am Spielplatz sitzt.
+- **🤝 Die Umsetzerinnen** — 2 Live-Calls pro Monat (Experten-Call + Q&A) + begleitete Telegram-Gruppe, Antworten Di & Do — **damit du nie allein dranbleibst.** (Alle Calls aufgezeichnet.)
+- **♾️ Alle Kurse unbegrenzt zugänglich** — **damit du in deinem Tempo lernst** und immer wieder reinkommst.
 
 ---
 
@@ -91,7 +91,7 @@ Und bei jedem Schritt ist PIA dabei — deine KI-Mentorin, die ein ganzes Jahr m
 
 - **🤖 PIA als exklusives Tool** — deine KI-Mentorin gibt es so nirgends sonst.
 - **🏆 Pioneer-Preis CHF 997** — die engste Begleitung, die es je geben wird, zum tiefsten Preis aller Zeiten (später CHF 1347).
-- **💡 Schon einen meiner Kurse gekauft?** Schreib mir kurz per Instagram-DM oder an info@mumlifebalance.ch — du bekommst deinen persönlichen Rabatt-Link, damit du nicht doppelt zahlst.
+- **💡 Schon einen meiner Kurse gekauft?** Schreib mir kurz per Instagram-DM oder an info@mumlifebalance.ch — du bekommst deinen persönlichen Rabatt-Link, **damit du nicht doppelt zahlst.**
 
 ---
 
@@ -124,10 +124,10 @@ Ja, in bis zu 6 Raten, ohne Aufpreis.
 ---
 
 ## ⚙️ Noch checken im ThriveCart-Backend
-- **Hero-Bild + Origin-Story-Bild** durch echte Fotos von dir ersetzen (das Platzhalter-„Ut Repellat…" raus).
-- **Garantie/Rückgabe:** kein Geld-zurück-Versprechen einbauen. Falls im Checkout eine „Rückgabepolitik"-Checkbox/Text steht, an deine Realität anpassen (keine Garantie auf digitale Inhalte).
-- **Preis-Beschreibung** bei den Raten ggf. „ohne Aufpreis" ergänzen.
-- Danach: Link `mumlifebalance.thrivecart.com/mba/` nochmal testen (`curl -I` / im Browser).
+- **Hero-Bild + Origin-Story-Bild** durch echte Fotos von dir ersetzen (Platzhalter-„Ut Repellat…" raus).
+- **Garantie/Rückgabe:** kein Geld-zurück-Versprechen. Falls eine „Rückgabepolitik"-Checkbox/Text im Checkout steht, an deine Realität anpassen (keine Garantie auf digitale Inhalte).
+- **Oma-Test (Julias Tipp):** lass jemanden ohne Ahnung die Seite überfliegen — versteht er in der ersten Hälfte, worum's geht? Wenn Fragezeichen → Wörter streichen.
+- Danach: Link `mumlifebalance.thrivecart.com/mba/` nochmal testen.
 
 ## 🔗 Verwandte Notizen
 - [[mba-salespage]] · [[mba-produktsteckbrief]] · [[challenge-launch-plan]]
