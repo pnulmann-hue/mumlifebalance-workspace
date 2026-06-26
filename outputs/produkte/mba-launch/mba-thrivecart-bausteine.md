@@ -44,17 +44,28 @@ Die Mum Business Academy: drei aufeinander aufbauende Kurse, ein ganzes Jahr Beg
 
 ---
 
-## 4 · ORIGIN-STORY — „Ich weiss genau, wie du dich fühlst"
+## 4 · ORIGIN-STORY — „Was mir den Erfolg gebracht hat"
 
-Keine Sorge — ich kenne diese 3-Uhr-Gedanken von innen.
+**Die 3 Baukästen (oben, nebeneinander) — meine Learnings = deine Transformation:**
 
-Ich bin Patricia, vierfache Mama. Ich habe selbst lange einfach Produkte verkauft, ohne je festzulegen, womit ich eigentlich helfe — und mich gefragt, ob ich überhaupt gemacht bin dafür.
+> **📱 Instagram-Kundenmaschine**
+> Ich habe endlich verstanden, WEM ich wobei helfe — und mein Profil so aufgestellt, dass es das in zwei Sekunden sagt. Aus „ich poste und keiner reagiert" wurde „fremde Menschen schreiben mich an".
 
-Was mich rausgeholt hat, war kein weiterer Kurs. Es war ein klarer Weg in der richtigen Reihenfolge — und Menschen, die mit mir drangeblieben sind.
+> **🚀 Digitale Produktwelt**
+> Ich habe aufgehört, nur fremde Produkte zu verkaufen, und mir ein eigenes Angebot gebaut. Heute verdiene ich an etwas, das MIR gehört — nicht an ein paar Prozent Provision.
 
-Heute baue ich genau das für dich. Weil du so viel mehr zu geben hast, als immer nur ein Produkt zu verkaufen.
+> **⏰ Mama-CEO**
+> Ich habe mir ein System gebaut, das mein Business neben 4 Kindern trägt. Ich arbeite in ein paar fokussierten Stunden, mit KI im Rücken — ohne mich zu zerreissen.
 
-*(Platzhalter-Bild „Ut Repellat…" durch ein echtes Foto von dir ersetzen.)*
+**Mein Text darunter:**
+
+Ich bin Patricia, 4-fach Mama. Ich habe selbst lange einfach Produkte verkauft — in meinem ersten Network, 2018 — und mir nie Gedanken gemacht, wer oder was meine Zielgruppe überhaupt ist: welche Probleme und Herausforderungen sie hat und was sie sich wünscht.
+
+Es war nicht nur die Lösung, dass ich Instagram „gelernt" habe. Auch nicht, dass ich ein Freebie erstellt habe. Es war die **Kombination aus allem**, die mir den Erfolg von heute mit meinem Business gebracht hat.
+
+Ich verdiene seit Monaten konstant mehrfach 4-stellig. Und kann heute mit gutem Gewissen die ganze Nacht durchschlafen — weil ich weiss: das, was ich mache, ergibt Sinn und hat eine Zukunft.
+
+*(Echtes Foto von dir einsetzen, Platzhalter raus.)*
 
 ---
 
