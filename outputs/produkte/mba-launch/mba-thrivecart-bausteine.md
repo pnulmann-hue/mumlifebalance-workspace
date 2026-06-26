@@ -82,7 +82,13 @@ Dein erstes eigenes digitales Produkt (mit KI), deine Produkttreppe und dein Fun
 
 **Und bei jedem Schritt: PIA.** Deine KI-Mentorin macht die Arbeit mit dir — ein ganzes Jahr lang, in deiner Stimme.
 
-**Das Ergebnis nach einem Jahr:** Du bist nicht mehr die verzettelte Produkt-Verkäuferin, die nachts wegen Geld wachliegt. Du bist eine sichtbare Frau mit einem eigenen Thema und einem eigenen Einkommen, das neben der Familie läuft. Frei, unabhängig — und mit dem ruhigen Gefühl: ich hab bewiesen, dass ich's kann.
+**Das Ergebnis nach diesem Jahr:**
+
+Du hast ein Business, das sich nicht nur nice anhört — sondern auch nice ist. Eines, über das du mit Stolz redest.
+
+Weil du endlich ein Einkommen generierst, das mehr ist als Taschengeld. Und weil du dir Arbeitszeiten und einen Rhythmus geschaffen hast, die sich richtig gut in dein Familienleben einfügen — und trotzdem für kontinuierliches Wachstum sorgen.
+
+Und last but not least: Du tauschst nicht mehr Zeit gegen Geld. Dein Funnel läuft automatisiert, nimmt deine Interessenten an die Hand und begleitet sie Schritt für Schritt bis zu deinem Angebot.
 
 **Button:** JA, GENAU SO WILL ICH STARTEN!
 
