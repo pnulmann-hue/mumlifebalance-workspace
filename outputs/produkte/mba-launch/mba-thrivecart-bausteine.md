@@ -69,35 +69,20 @@ Ich verdiene seit Monaten konstant mehrfach 4-stellig. Und kann heute mit gutem 
 
 ---
 
-## 5 · WIE ES FUNKTIONIERT — die 3 Kurse (mit der echten Tiefe)
+## 5 · & SO EINFACH FUNKTIONIERT ES  *(die 3 Kurse + PIA, Schritt für Schritt)*
 
-**1 — Sichtbar werden · Instagram-Kundenmaschine**
-Du legst fest, womit du wirklich hilfst, und dein Profil zieht an — **damit fremde Menschen DICH anschreiben.** Schluss mit ins-Leere-Posten und betretenem Schweigen. Aus „blamier ich mich?" wird „die kennt sich aus".
+**1 · Du wirst sichtbar und legst dein Thema fest**  —  *Instagram-Kundenmaschine*
+Du machst klar, womit du wirklich hilfst, und baust dir ein Profil, das anzieht — damit fremde Menschen DICH anschreiben. Schluss mit ins-Leere-Posten: aus „blamier ich mich?" wird „die kennt sich aus".
 
-**2 — Zeit & System · Mama-CEO**
-Du schaffst dir die Zeit (Powerzeiten, Hütchenmethode) und holst dir KI-Mitarbeiter, die das Backend tragen — **damit dein Business in ein paar fokussierten Stunden läuft** und du dich nicht mehr zwischen Kindern und Laptop zerreissen musst. Du kriegst dein Leben zurück.
+**2 · Du schaffst dir die Zeit und installierst dein KI-Team**  —  *Mama-CEO*
+Powerzeiten, dein System in Notion, KI-Mitarbeiter, die das Backend tragen — damit dein Business in ein paar fokussierten Stunden läuft und du dich nicht mehr zwischen Kindern und Laptop zerreissen musst. Du kriegst dein Leben zurück.
 
-**3 — Dein eigenes Angebot · Digitale Produktwelt**
-Du baust dein erstes eigenes digitales Produkt (mit KI), deine Produkttreppe und deinen Funnel — **damit du nicht mehr von Provision, Vergütungsplan und der nächsten Teamaktion abhängst.** Du hast etwas, das DIR gehört und das dir keiner wegnimmt.
+**3 · Du baust dein eigenes Angebot**  —  *Digitale Produktwelt*
+Dein erstes eigenes digitales Produkt (mit KI), deine Produkttreppe und dein Funnel — damit du nicht mehr von Provision und der nächsten Teamaktion abhängst. Du hast etwas, das DIR gehört.
 
-**Abschluss-Text (die fix-fertige Transformation):**
-Und bei jedem Schritt ist PIA dabei — deine KI-Mentorin, ein ganzes Jahr.
-In einem Jahr bist du nicht mehr die verzettelte Produkt-Verkäuferin, die nachts wegen Geld wachliegt. Du bist eine sichtbare Frau mit einem eigenen Thema und einem eigenen Einkommen, das neben der Familie läuft. Frei, unabhängig — und mit dem ruhigen Gefühl: ich hab bewiesen, dass ich's kann.
+**Und bei jedem Schritt: PIA.** Deine KI-Mentorin macht die Arbeit mit dir — ein ganzes Jahr lang, in deiner Stimme.
 
-**Button:** Genau das will ich
-
----
-
-## 5b · & SO EINFACH FUNKTIONIERT ES
-
-**1 · Platz sichern — und sofort loslegen**
-Du holst dir deinen Pioneer-Platz und hast ab der ersten Minute Zugang: alle drei Kurse + PIA. Kein Warten, kein „erst ab nächster Woche".
-
-**2 · PIA macht die Arbeit mit dir**
-Du sagst ihr ein paar Sätze — und sie baut dir deine Bio, deine Hooks, fertige Posts, deinen Leadmagnet. Schritt für Schritt, in deinem Tempo, auch in der vollsten Mama-Woche.
-
-**3 · Du bleibst dran — nie allein**
-Zweimal im Monat sind wir live zusammen, dazu die Telegram-Gruppe (Antworten Di & Do). Wo du hängst, ist jemand da — bis es bei dir läuft.
+**Das Ergebnis nach einem Jahr:** Du bist nicht mehr die verzettelte Produkt-Verkäuferin, die nachts wegen Geld wachliegt. Du bist eine sichtbare Frau mit einem eigenen Thema und einem eigenen Einkommen, das neben der Familie läuft. Frei, unabhängig — und mit dem ruhigen Gefühl: ich hab bewiesen, dass ich's kann.
 
 **Button:** JA, GENAU SO WILL ICH STARTEN!
 
