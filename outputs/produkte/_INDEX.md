@@ -18,6 +18,11 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[03-saeule-3-mama-ceo]]
 - [[04-roadmap-uebergreifend]]
 
+### 📁 bootcamp
+
+- [[00-bootcamp-produkt]]
+- [[anmeldeseite]]
+
 ### 📁 die-umsetzerinnen-club
 
 - [[00-briefing]]
@@ -32,6 +37,11 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[08-soft-launch-dm-texte]]
 - [[09-notion-eintrag]]
 - [[README]]
+
+### 📁 doterra-mama-energie
+
+- [[00-markt-research]]
+- [[01-produkttreppe]]
 
 ### 📁 mama-ceo
 
@@ -57,6 +67,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[10-saeule-1-MASTER]]
 - [[10-saeule-2-MASTER]]
 - [[10-saeule-3-MASTER]]
+- [[10-saeule-4-MASTER]]
 - [[13-thrivecart-saeule-2-setup]]
 - [[13-thrivecart-saeule-3-setup]]
 - [[_KRITISCHER-AUDIT]]
@@ -69,11 +80,36 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[01-modul-outline-v2]]
 - [[01-modul-outline]]
 - [[01-modul-uebersicht-KOMPAKT]]
+- [[_patricia-durchlauf-haushaltsbot]]
 - [[_re-eval-rohdaten]]
+- [[bonus-haushalts-helfer-bot-PATRICIA]]
+
+### 📁 mba
+
+- [[08-webinar-plan]]
+- [[_INDEX]]
 
 ### 📁 mba-launch
 
+- [[bootcamp-master]]
+- [[bootcamp-tagesimpulse-SKRIPTE]]
+- [[challenge-launch-plan]]
+- [[challenge-vs-webinar-entscheidung]]
+- [[evergreen-webinar-konzept]]
+- [[feed-content-plan]]
 - [[launch-kalender-juli-2026]]
+- [[mail-sendeplan-bootcamp]]
+- [[mba-produktsteckbrief]]
+- [[mba-salespage]]
+- [[story-plan-tag-fuer-tag-webinar-archiv]]
+- [[telegram-gruppe-bootcamp]]
+- [[_INDEX]]
+- [[99-AC-SETUP-MBA]]
+- [[webinar-phase-1-folien]]
+
+### 📁 pia
+
+- [[00-pia-architektur]]
 
 ### 📁 vom-networkwissen-zur-digitalen-produktwelt
 

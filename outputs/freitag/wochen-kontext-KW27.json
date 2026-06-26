@@ -1,0 +1,32 @@
+{
+  "kw": 27,
+  "zeitraum": "2026-06-29/2026-07-05",
+  "generiert_am": "2026-06-26",
+  "launch_phase": "mba-verkaufsphase",
+  "hauptthema": "Vom Verzetteln zum roten Faden — Business neben der Familie (Bootcamp live + Cart-Open)",
+  "launch_detail": {
+    "bootcamp_live": "2026-06-29/2026-07-03",
+    "cart_open": "2026-07-03 abends",
+    "cart_close": "2026-07-06 23:59",
+    "produkt_bezahlt": "Mum Business Academy (Pioneer 997)",
+    "feed_regel": "Feed nennt KEINE Programme/Preise — MBA-Verkauf nur via Stories + Mails (Memory feedback_keine-programme-im-feed)"
+  },
+  "mentoring_saeule": "Bootcamp-Beweis + Einwände entkräften (keine Zeit · zu viele halbe Kurse · klappt-bei-mir · Reinfall-Angst · Umfeld-Skepsis) + Cart-Weekend-FOMO",
+  "doterra_saeule": "Mama-Körper ab 35 + Wake-Up (Reels-only-Phase <300 Follower, kein Launch)",
+  "aktiver_funnel_primaer": { "name": "MBA via Bootcamp", "keyword": "MBA (Cart-Link/DM, kein ManyChat) + BOOTCAMP (Nachzügler)", "cart_open": "2026-07-03", "cart_close": "2026-07-06" },
+  "aktiver_funnel_sekundaer": [
+    { "name": "Workbook Von 0 auf echt", "keyword": "ECHT1", "profile": "mentoring" },
+    { "name": "7-Tage-Story-Workbook", "keyword": "STORY", "profile": "mentoring" },
+    { "name": "doTERRA Energie-Kur", "keyword": "ENERGIE", "profile": "doterra" }
+  ],
+  "verkaufs_trigger": "MBA-Cart offen Fr 3.7.–So 6.7. — Feed treibt Bootcamp/Lead-Magnete + Beweis + Cart-Weekend-FOMO, Cart-Pitch in Stories/Mails",
+  "notion_wochenfokus": "abgeleitet aus operativem Launch-Plan (story-plan.json) statt Notion-Feld — autoritativer, da Story-Bot diesen Plan liest",
+  "quellen": [
+    "outputs/produkte/mba-launch/story-plan.json",
+    "outputs/produkte/mba-launch/feed-content-plan.md",
+    "outputs/produkte/mba-launch/launch-kalender-juli-2026.md",
+    "outputs/freitag/wochen-kontext-KW26.json",
+    "context/active-funnels.json",
+    "outputs/apify-runs/competitors-2026-06-26.json"
+  ]
+}

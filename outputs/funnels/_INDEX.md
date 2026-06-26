@@ -22,6 +22,7 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 
 ### 📁 doterra-hormon-leadmagnet
 
+- [[energie-system-konzept]]
 - [[README]]
 - [[leadmagnet-komplett]]
 

@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # 🎬 Bootcamp-Tagesimpulse — nur die 5 Skripte (zum Ablesen)
 
 > Eine Aufnahme, in die Kamera, locker wie zur Freundin. Verhaspeln = egal, macht's echt. Je ~1,5–2 Min.

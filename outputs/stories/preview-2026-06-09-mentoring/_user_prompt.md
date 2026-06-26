@@ -1,3 +1,7 @@
+---
+tags: [content, story]
+---
+
 # Heutige Story-Sequenz — 2026-06-09
 
 **Profil:** mentoring

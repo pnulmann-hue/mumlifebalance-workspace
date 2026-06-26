@@ -35,6 +35,10 @@ Auto-Index aller Files in `outputs/karussells/`. Siehe [[_MOCs/MOC-Content-Engin
 - [[2026-05-26-mentoring-last-call-7-fragen]]
 - [[2026-05-26-mentoring-mehrwert-3-sachen]]
 - [[2026-05-26-mentoring-pain-21-uhr]]
+- [[2026-06-08-mentoring-eine-sache-positionierung-caption]]
+- [[2026-06-08-mentoring-eine-sache-positionierung]]
+- [[2026-06-15-mentoring-kw25-aufwaerm-briefings]]
+- [[2026-06-22-mentoring-kw26-aufwaerm-briefings]]
 - [[2026-KW17-doterra-3-naehrstoffe-35]]
 - [[2026-KW17-doterra-3-uhr-mental-load]]
 - [[2026-KW17-doterra-haarausfall-wake-up]]
@@ -45,9 +49,14 @@ Auto-Index aller Files in `outputs/karussells/`. Siehe [[_MOCs/MOC-Content-Engin
 - [[20260429-mentoring-3-saetze-bio-caption]]
 - [[20260501-doterra-wendepunkt-mit-36-caption]]
 - [[20260501-mentoring-bio-4-zeilen-caption]]
-- [[2026-06-15-mentoring-kw25-aufwaerm-briefings]]
-- [[2026-06-22-mentoring-kw26-aufwaerm-briefings]]
-- [[2026-06-bootcamp-promo-viral/briefing]]
+
+### 📁 2026-06-bootcamp-promo-viral
+
+- [[briefing]]
+
+### 📁 2026-06-weiterbildung-toilette
+
+- [[briefing]]
 
 ### 📁 master-template-guide
 
