@@ -94,7 +94,7 @@ Und last but not least: Du tauschst nicht mehr Zeit gegen Geld. Dein Funnel läu
 
 ---
 
-## 6 · WAS IST DRIN? (jeder Punkt mit der tiefen „damit du…")
+## 6 · DAS BEKOMMST DU ALLES (jeder Punkt mit „damit du…")
 
 - **🤖 PIA — deine KI-Mentorin, ein Jahr lang jeden Tag.** Baut mit dir Bio, Hooks, fertige Posts, Stories, Leadmagnet, ganze Content-Wochen und deinen Funnel, in deiner Stimme — **damit du nie mehr vorm leeren Blatt sitzt und nie mehr „was poste ich heute?" googelst.**
 - **📱 Instagram-Kundenmaschine** — **damit fremde Menschen dich anschreiben und aus Scham Stolz wird.**
