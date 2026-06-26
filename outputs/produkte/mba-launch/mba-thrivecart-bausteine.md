@@ -88,6 +88,21 @@ In einem Jahr bist du nicht mehr die verzettelte Produkt-Verkäuferin, die nacht
 
 ---
 
+## 5b · & SO EINFACH FUNKTIONIERT ES
+
+**1 · Platz sichern — und sofort loslegen**
+Du holst dir deinen Pioneer-Platz und hast ab der ersten Minute Zugang: alle drei Kurse + PIA. Kein Warten, kein „erst ab nächster Woche".
+
+**2 · PIA macht die Arbeit mit dir**
+Du sagst ihr ein paar Sätze — und sie baut dir deine Bio, deine Hooks, fertige Posts, deinen Leadmagnet. Schritt für Schritt, in deinem Tempo, auch in der vollsten Mama-Woche.
+
+**3 · Du bleibst dran — nie allein**
+Zweimal im Monat sind wir live zusammen, dazu die Telegram-Gruppe (Antworten Di & Do). Wo du hängst, ist jemand da — bis es bei dir läuft.
+
+**Button:** JA, GENAU SO WILL ICH STARTEN!
+
+---
+
 ## 6 · WAS IST DRIN? (jeder Punkt mit der tiefen „damit du…")
 
 - **🤖 PIA — deine KI-Mentorin, ein Jahr lang jeden Tag.** Baut mit dir Bio, Hooks, fertige Posts, Stories, Leadmagnet, ganze Content-Wochen und deinen Funnel, in deiner Stimme — **damit du nie mehr vorm leeren Blatt sitzt und nie mehr „was poste ich heute?" googelst.**
