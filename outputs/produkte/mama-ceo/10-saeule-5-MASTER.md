@@ -358,15 +358,17 @@ WAS DU NACH LEKTION 5.4 HAST · PROGRAMM ABGESCHLOSSEN
 
 ## 📋 Zusammenfassung: was Patricia produzieren muss für Säule 5
 
-### Videos (4 Lektionen, ~60 Min total)
-| # | Datei | Status |
-|---|---|---|
-| 5.1 | `saeule-05-lektion-5-1.mp4` | ⚠️ PPTX bauen (8 Folien) |
-| 5.2 MASTERY | `saeule-05-lektion-5-2.mp4` | ⚠️ PPTX bauen (12 Folien) — Live-Demo: Patricias eigene Matrix |
-| 5.3 | `saeule-05-lektion-5-3.mp4` | ⚠️ PPTX bauen (8 Folien) |
-| 5.4 | `saeule-05-lektion-5-4.mp4` | ⚠️ PPTX bauen (10 Folien) — Programm-Abschluss |
+> **✅ STAND 2026-06-25 — bereits gebaut:** 4 PPTX (`03-praesentationen/saeule-5/`, QA bestanden) · Arbeitsblatt (`04-arbeitsblaetter/mama-ceo-arbeitsblatt-saeule-5.docx`, validiert) · ThriveCart-Setup (`13-thrivecart-saeule-5-setup.md`). **🔲 Fehlt nur noch:** Aufnahme + 3 Patricia-Inputs für die Live-Demos (siehe Offene Fragen).
 
-→ **4 PPTX im Säule-4-Brand-Look** (python-pptx, Sprechnotizen pro Folie). Build-Script `build_pptx_s4.py` als Vorlage wiederverwenden (Eyebrow → „SÄULE 5 — BUSINESS SKALIEREN").
+### Videos (4 Lektionen, ~60 Min total) — ✅ PPTX gebaut
+| # | PPTX | Status |
+|---|---|---|
+| 5.1 | `03-praesentationen/saeule-5/01-lektion-5-1.pptx` | ✅ 8 Folien |
+| 5.2 MASTERY | `.../02-lektion-5-2.pptx` | ✅ 12 Folien — Live-Demo: Patricias eigene Matrix |
+| 5.3 | `.../03-lektion-5-3.pptx` | ✅ 8 Folien |
+| 5.4 | `.../04-lektion-5-4.pptx` | ✅ 10 Folien — Programm-Abschluss |
+
+→ **4 PPTX im Säule-4-Brand-Look** (python-pptx, Sprechnotizen pro Folie). ⚠️ Visuelles Rendern lokal nicht möglich — Inhalts-QA bestanden, Patricia klickt einmal durch.
 
 ### Arbeitsblatt (1 .docx)
 `mama-ceo-arbeitsblatt-saeule-5.docx` — 4 Sektionen: 4-Felder-Verständnis · 25-Task-Matrix-Tabelle · innerer Kreis · 90-Tage-Plan + Nicht-Liste.
