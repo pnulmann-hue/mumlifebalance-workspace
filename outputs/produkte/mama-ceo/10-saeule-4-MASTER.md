@@ -8,8 +8,9 @@ tags: [produkt, mama-ceo, saeule-4]
 >
 > **🎯 Kern-Payoff:** In Säule 3 hast du dein Notion-Business-Brain gebaut. Jetzt setzen wir Helfer drauf, die da reinschauen und dir Arbeit abnehmen — ohne dass du programmieren können musst. Das Versprechen ist nicht „werde Tech-Nerd", sondern „hör auf, Sachen selbst zu machen, die eine gut gebriefte KI dir abnehmen kann". Und das Wichtigste lernst du gleich zu Beginn: KI ist kein Zauber, sondern eine Praktikantin, die nur so gut ist wie dein Auftrag.
 > **Die zwei Bots sind Zwillinge:** Der **Cockpit-Bot** liest deine Notion-Business-Planung und sagt dir morgens, was im Business dran ist. Der **Haushalts-Helfer-Bot** liest deine Haushalts-Liste (dein Brain Dump aus Säule 2) und sagt dir morgens, was zu Hause dran ist — Wäsche, Zahnarzt-Termin, Kind muss früher los. Gleiche Mechanik, einmal Business, einmal Familie.
+> **🪜 3 Stufen — jede Mentee nimmt einen Win mit, AUCH ohne Claude Code (Patricia-Entscheidung 2026-06-25):** Stufe 0 = die Notion-Liste allein (Mental Load ist raus, manuell nutzbar) · Stufe 1 = der Bot in **Claude Cowork** (Desktop-App, Notion per Connector verbinden, kein Code) · Stufe 2 = automatischer Telegram-Bot via Claude Code (für die, die mehr wollen). **Niemand muss Claude Code anfassen.**
 > **6 Lektionen · ~85 Min Video · Arbeitsblatt + Live-Call 3 (Ende W6, Bot-Bau-Werkstatt · 120 Min)**
-> **2 Boni im Preis:** Cockpit-Bot-System-Prompt + Haushalts-Helfer-Bot-System-Prompt · **1 Extra-Bonus:** Kochassistent-System-Prompt (fertige Vorlagen zum Anpassen)
+> **2 Boni im Preis:** Cockpit-Bot-System-Prompt + Haushalts-Helfer-Bot-System-Prompt · **2 Extra-Boni:** Kochassistent-System-Prompt + Gratis-Chat-One-Shot-Prompt (fertige Vorlagen zum Anpassen)
 
 ---
 
@@ -23,6 +24,24 @@ Säule 4 baut direkt auf dem auf, was die Mentee bis hierher erarbeitet hat. Die
 - **4-Filter „Automatisieren"** (aus S2 L2.4) — die Aufgaben, die du dort als „automatisieren" markiert hast, kriegen hier ihren Helfer.
 - **5 CEO-Aufgaben „nur du"** (aus S1 L1.4) — die Grenze, was du NIE an eine KI abgibst (Vision, Entscheidungen, Brand, Beziehungen, Reflexion). Kommt in L4.6 als Mensch-vs-Maschine-Linie zurück.
 - **Hütchen-Inventar / Brain Dump** (aus S2 L2.3) — das ist die direkte Quelle für deinen Haushalts-Helfer-Bot in L4.5. Deine ganzen „muss ich noch"-Sachen (Staubsaugen montags, Frühlingskleider raussuchen Ende März) wandern in eine Notion-Haushalts-Liste, aus der der Bot dich täglich erinnert.
+
+---
+
+## 🪜 Das Tool-Stufen-Modell (verbindlich — gilt für Cockpit-Bot UND Haushalts-Bot)
+
+Beide Bots laufen nach demselben 3-Stufen-Modell. So nimmt **jede** Mentee einen Win mit, egal wie tech-affin:
+
+| Stufe | Tool | Was die Mentee tut | Win | Aufwand/Kosten |
+|---|---|---|---|---|
+| 🟢 **0** | **nur Notion** (+ Views) | Liste pflegen, „Kommende Termine"- + „nach Wochentag"-Ansicht öffnen | Mental Load ist raus dem Kopf, sie sieht was ansteht | null (Notion gratis) |
+| 🟡 **1** | **Claude Cowork** (Desktop) | Notion per Connector verbinden, fertige Bot-Vorlage einfügen, fragen „Was ist heute dran?" | echter Bot, der ihr Notion liest — **kein Code, keine Installation im Terminal** | Claude Pro (~20-23 CHF/Mt) |
+| 🔵 **2** | **Claude Code → Telegram** | gehosteten Bot bauen lassen, der automatisch morgens pusht | läuft von selbst, aufs Handy, auch wenn der Laptop zu ist | + Hosting ~5 CHF/Mt, mehr Aufwand |
+
+**Wichtig fürs Verständnis (Connector = der „Stecker"):** Notion lässt sich mit Claude Cowork **und** Claude Code verbinden, weil beide *Connectors (MCP)* unterstützen — Notion liefert den fertigen Connector, in Cowork klickst du ihn in den Einstellungen einmal ein (Notion-Login bestätigen, du gibst frei welche Seiten er sehen darf). Der **nackte Gratis-Chat** kann das nicht, der sieht nur, was man reinkopiert (→ dafür der Gratis-Chat-One-Shot-Prompt als Notlösung).
+
+**Stufe 0 ehrlich abgegrenzt:** Reines Notion kann **Termine/Geburtstage/Schule** über einen Datums-Filter zeigen und Wiederkehrendes **nach Wochentag/Rhythmus gruppieren** — aber NICHT automatisch rechnen „welche wiederkehrende Aufgabe ist genau heute dran". Genau dieses „Heute-Denken" ist der Mehrwert von Stufe 1 (der Bot). Stufe 0 = organisiert & sichtbar; Stufe 1 = der Bot denkt das „heute" für dich.
+
+**Was Patricia selbst nutzt:** ihr Cockpit-Bot läuft auf **Stufe 2** (Claude Code + Railway + Telegram) — das zeigt sie im Kurs als Ausblick, baut es aber nicht mit den Mentees nach.
 
 ---
 
