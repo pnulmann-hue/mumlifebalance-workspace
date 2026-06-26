@@ -50,7 +50,9 @@ tags: [produkt, mama-ceo, handoff]
 3. **Notion-Master-Template teilen** (Duplizieren-Link gilt aus Säule 3 weiter; Haushalts-DB ist jetzt drin).
 4. Optional: Patricias eigener Haushalts-Bot in **Cowork** scharfstellen (`bonus-haushalts-helfer-bot-PATRICIA.md`).
 
-### ▶️ Danach: Säule 5 (Mama-CEO-Matrix · 25 Tasks · 90-Tage-Plan) — `10-saeule-5-MASTER.md` noch zu bauen.
+### ✅ Säule 5 — MASTER GEBAUT (2026-06-25)
+`10-saeule-5-MASTER.md` — 4 Lektionen (5.1 Matrix einführen · 5.2 MASTERY 25 Tasks sortieren · 5.3 innerer Kreis · 5.4 90-Tage-Plan), Folien-Pläne + Sprechnotizen + Arbeitsblatt-Spec + ThriveCart-Texte. Mama-CEO-Matrix = ich/KI/System/raus, baut auf L4.6 auf, liegt schon im Notion-Template.
+**Noch offen für Säule 5:** 4 PPTX (8/12/8/10) · Arbeitsblatt .docx · `13-thrivecart-saeule-5-setup.md` · **3 Patricia-Inputs** (ihre eigene Matrix-Demo · innerer Kreis · 90-Tage-Plan — siehe „Offene Fragen" im Master).
 
 ---
 
