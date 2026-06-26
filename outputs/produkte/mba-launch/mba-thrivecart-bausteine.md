@@ -119,25 +119,28 @@ JA, ICH KOMME IN DIE MBA!
 
 ---
 
-## 9 · FAQ (6 Fragen)
+## 9 · FAQ (7 Fragen — die echten Einwände)
 
-**Ich hab so wenig Zeit.**
-Genau dafür ist Mama-CEO da — und PIA nimmt dir den Grossteil der Arbeit ab. Du brauchst ein paar fokussierte Slots, keine 7 Stunden.
+**„Ich hab keine Zeit für noch einen Kurs."**
+Verständlich — und genau deshalb ist Mama-CEO Teil der MBA: damit du dir die Zeit überhaupt erst schaffst. PIA nimmt dir den Grossteil der Arbeit ab, die Lektionen sind in kleine Häppchen portioniert, und du gehst in deinem Tempo. Du brauchst ein paar fokussierte Slots pro Woche — keine 7 Stunden am Tag.
 
-**Ich hab schon so viele Kurse und nichts umgesetzt.**
-Eben. Das Problem war nie das Wissen, sondern die Umsetzung allein. Die MBA gibt dir den Weg in der richtigen Reihenfolge plus die Begleitung, die dich dranbleiben lässt.
+**„Ich bin technisch nicht so fit — KI ist nichts für mich."**
+Musst du auch nicht sein. PIA und die Kurse nehmen dich Schritt für Schritt mit, in einfacher Sprache, ohne Fachchinesisch. Und wenn du irgendwo hängst, fragst du in den Calls oder in der Telegram-Gruppe. Wenn ich das mit vier Kindern hinkriege, kriegst du das auch hin.
 
-**Ich hab schon einen deiner Kurse gekauft.**
-Dann rechne ich dir den vollen Kaufpreis an — schreib mir kurz per DM oder Mail, du bekommst deinen persönlichen Rabatt-Link.
+**„Brauche ich eine grosse Reichweite, damit das funktioniert?"**
+Nein. Es geht nicht um viele Follower, sondern um die richtigen Menschen, die dich anschreiben. Genau das lernst du: sichtbar werden mit deinem Thema — nicht laut sein, sondern klar.
 
-**Ich bin technisch nicht so fit.**
-Musst du nicht sein. PIA und die Kurse nehmen dich Schritt für Schritt mit — und in den Calls und der Telegram-Gruppe kannst du jederzeit fragen.
+**„Was, wenn es bei mir nicht funktioniert?"**
+Das ist die ehrlichste Frage. Und die Antwort ist: Du hast bisher nicht versagt — dir hat nur der Weg in der richtigen Reihenfolge gefehlt, und jemand, der mit dir dranbleibt. Genau das hast du hier. Du gehst keinen Schritt allein.
 
-**Wann sind die Calls?**
-Zweimal im Monat, live (und aufgezeichnet, falls du nicht dabei sein kannst). Wir starten nach den Sommerferien und legen die festen Zeiten gemeinsam mit der Gruppe fest.
+**„Ich hab schon Geld in Kurse gesteckt, die nichts gebracht haben."**
+Kenn ich. Der Unterschied: Du kaufst hier nicht noch ein PDF, das im Regal verstaubt — sondern den ganzen Weg, PIA, die mit dir umsetzt, und die Begleitung, die dich dranbleiben lässt. Und hast du schon einen meiner Kurse gekauft? Schreib mir kurz per DM oder an info@mumlifebalance.ch — ich rechne ihn dir an.
 
-**Kann ich in Raten zahlen?**
-Ja, in bis zu 6 Raten, ohne Aufpreis.
+**„Ich bin schon im Network — passt die MBA da überhaupt rein?"**
+Perfekt sogar. Die MBA stellt sich nicht gegen dein Network — sie baut ein eigenes Standbein daneben. Dein Networkprodukt bleibt Teil deiner Lösung; du wirst nur sichtbarer und unabhängiger.
+
+**„Wann sind die Calls — und was, wenn ich nicht kann? Kann ich in Raten zahlen?"**
+Die Calls sind zweimal im Monat, live und aufgezeichnet — kannst du nicht live dabei sein, schaust du sie in Ruhe nach. Wir starten nach den Sommerferien und legen die Zeiten gemeinsam mit der Gruppe fest. Und ja: Du kannst in bis zu 6 Raten zahlen, ohne Aufpreis.
 
 ---
 
