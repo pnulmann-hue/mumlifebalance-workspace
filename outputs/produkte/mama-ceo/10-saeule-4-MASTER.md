@@ -54,7 +54,7 @@ Säule 4 — Du delegierst den Adminkram
 
 **Modul-Untertitel:**
 ```
-Wochen 5-6 · 6 Lektionen · ca. 85 Min Video · inkl. 2 fertige Bot-Vorlagen
+Wochen 5-6 · 6 Lektionen · ca. 85 Min Video · 3 Stufen (auch ohne Code) · fertige Bot-Vorlagen
 ```
 
 **Modul-Beschreibung:**
@@ -376,11 +376,12 @@ Ich bau den Bot live vor deinen Augen. Du baust einfach mit.
 LEKTION 4.4 · Dein Cockpit-Bot bauen
 
 ▸ Bau-Checkliste (mach das WÄHREND des Videos, pausier wo nötig)
-☐ Schritt 1: Neuen Bot/GPT angelegt + Vorlage (Bonus) eingefügt
+☐ Schritt 1: Cowork geöffnet + Notion-Connector eingesteckt + Vorlage (Bonus) eingefügt
 ☐ Schritt 2: Business-Brief (aus 4.3) reingegeben
-☐ Schritt 3: Aktuelle Notion-Woche reinkopiert/geteilt
+☐ Schritt 3: Notion verbunden (Bot liest die Wochenplanung direkt)
 ☐ Schritt 4: Getestet mit „Was ist heute mein Fokus?"
 ☐ Der Bot hat mir Tagesfokus + 3 Aufgaben ausgegeben ✓
+(Stufe 0 ohne Bot: einfach die Notion-Ansicht „Diese Woche" öffnen — auch ein Win.)
 
 ▸ Mein Cockpit-Bot heisst: _______________________________
    (gib ihm einen Namen — macht's persönlich)
@@ -451,7 +452,7 @@ Plan dir 30 Minuten ein und bau einfach mit. Am Ende hast du den Mental Load nic
 | 6 | **Zwei Sorten Aufgaben + Termine** | 3 Zeilen: 🔁 wiederkehrend (Staubsaugen montags) · 📅 datiert (Kleider raus letzter Fr im März) · 👨‍👩‍👧 Familien-Termine (Zahnarzt, Schule) | „Deine Haushalts-Sachen sind von zwei Sorten, plus die Termine. Es gibt das Wiederkehrende, das immer am gleichen Tag dran ist, zum Beispiel Staubsaugen montags. Es gibt das Datierte, das einmal an einem bestimmten Tag kommt, zum Beispiel Frühlingskleider raussuchen am letzten Freitag im März. Und es gibt die Familien-Termine wie Zahnarzt oder Waldtag. Alle drei kommen in deine Liste." |
 | 7 | **Wo die Liste lebt: Notion** | Notion-Haushalts-DB als eigene Liste · „wie dein Business in Notion lebt, lebt dein Haushalt jetzt auch dort" | „Und wo lebt diese Liste? In Notion, genau dort, wo schon dein Business-Brain liegt. Du legst dir eine eigene Haushalts-Liste an, mit Feldern für den Rhythmus, also montags oder monatlich, und für feste Daten. So wie dein Business in Notion ein Zuhause hat, kriegt jetzt auch dein Haushalt eins, und beide Bots schauen da rein." |
 | 8 | **Live-Demo Schritt 1: Haushalts-Liste füllen** | Bildschirm: Notion-Haushalts-DB, Beispiele eintragen (aus Hütchen) | „So, jetzt bauen wir live, und du baust mit, pausier wo du musst. Schritt eins: ich öffne meine Haushalts-Liste in Notion und trage ein paar Sachen aus meinem Brain Dump ein. Wäsche, Rhythmus wöchentlich. Bäder putzen, mittwochs. Kleider wechseln, festes Datum Ende März. Du füllst deine eigene Liste mit dem, was bei dir ansteht." |
-| 9 | **Live-Demo Schritt 2: Bot bauen** | Bildschirm: Vorlage (Bonus) ins Projekt + Notion-Haushalts-Liste verbinden/reingeben | „Schritt zwei: ich nehme die fertige Haushalts-Helfer-Vorlage, die du als Bonus hast, und setze sie in mein Projekt ein. Dann gebe ich ihm meine Haushalts-Liste, entweder verbunden über Notion oder einfach reinkopiert. Das ist exakt dieselbe Mechanik wie beim Cockpit-Bot, du kannst das also schon." |
+| 9 | **Live-Demo Schritt 2: Bot bauen (in Cowork)** | Bildschirm: Haushalts-Helfer-Vorlage (Bonus) in Cowork einfügen · Notion ist schon verbunden | „Schritt zwei: ich nehme die fertige Haushalts-Helfer-Vorlage, die du als Bonus hast, und setze sie in Cowork ein. Mein Notion ist von Lektion 4.4 schon verbunden, also liest er die Haushalts-Liste direkt. Das ist exakt dieselbe Mechanik wie beim Cockpit-Bot, du kannst das also schon — nur eine andere Liste, eine andere Vorlage." |
 | 10 | **Live-Demo Schritt 3: testen** | Eingabe „Was ist heute zu Hause dran?" → Bot-Antwort mit Tagesliste | „Schritt drei, der schöne: ich frag ihn ‚was ist heute zu Hause dran', und schau, er gibt mir meine Haushalts-Sachen für heute plus die Termine der Kinder. Wie geil ist das denn, das musste ich vorher alles selbst im Kopf haben, und jetzt sagt's mir mein Helfer." |
 | 11 | **So nutzt du beide Bots morgens** | Routine: Cockpit-Bot (Business) + Haushalts-Helfer (Zuhause) = ganzer Tag auf einen Blick | „Im Alltag fragst du morgens beide kurz: den Cockpit-Bot, was im Business dran ist, und den Haushalts-Helfer, was zu Hause dran ist. In zwei Minuten hast du deinen ganzen Tag klar vor dir, Business und Familie, ohne dass irgendwas nur noch in deinem Kopf liegt. Das ist für mich gelebter Mama-CEO." |
 | 12 | **Stufe 2: auch hier automatisch möglich** | wie beim Cockpit: automatischer Telegram-Push via Claude Code · „kein Muss" | „Und ganz kurz, weil's die gleiche Logik ist wie beim Cockpit-Bot: auch deinen Haushalts-Helfer kannst du später als automatischen Telegram-Bot bauen, der dir morgens von selbst schreibt. Das braucht wieder etwas Technik und Hosting, ist also Stufe zwei und kein Muss. Für den Anfang reicht es völlig, dass du ihn fragst." |
@@ -490,10 +491,11 @@ Nimm dein Hütchen-Inventar — alle „muss ich noch"-Sachen rund um Haushalt +
 ☐ Familien-Termine eingetragen
 
 ▸ Schritt 4: Bot bauen (WÄHREND des Videos)
-☐ Haushalts-Helfer-Vorlage (Bonus) ins Projekt eingesetzt
-☐ Notion-Haushalts-Liste verbunden / reingegeben
+☐ Haushalts-Helfer-Vorlage (Bonus) in Cowork eingesetzt
+☐ Notion verbunden (Bot liest die Haushalts-Liste direkt — Connector aus 4.4)
 ☐ Getestet mit „Was ist heute zu Hause dran?"
 ☐ Der Bot hat mir Haushalt + Termine für heute ausgegeben ✓
+(Stufe 0 ohne Bot: Notion-Ansicht „Kommende Termine" + „nach Wochentag" öffnen.)
 
 ▸ Mein Haushalts-Helfer heisst: _______________________________
 
@@ -594,11 +596,11 @@ WAS DU NACH LEKTION 4.6 HAST · SÄULE 4 KOMPLETT
 
 ---
 
-## 🎁 Die 3 Bonus-Vorlagen (System-Prompts) — Spezifikation für den Bau
+## 🎁 Die 4 Bonus-Vorlagen — Spezifikation für den Bau
 
-Alle werden als sauberer Text geliefert (Mentee kopiert sie in ihr Projekt). Platzhalter in `[eckigen Klammern]` ersetzt die Mentee mit eigenem Kontext. **Compliance:** in den Vorlagen keine Heilversprechen, keine erfundenen Zahlen, kein Mentor-Name.
+Alle werden als sauberer Text geliefert. Die Mentee fügt sie in **Claude Cowork** als Bot-Anweisung ein (oder in Claude Code, Stufe 2). Platzhalter in `[eckigen Klammern]` ersetzt sie mit eigenem Kontext. **Compliance:** keine Heilversprechen, keine erfundenen Zahlen, kein Mentor-Name.
 
-**Bonus 1 (Cockpit) + Bonus 2 (Haushalts-Helfer)** sind im Preis enthalten und werden in L4.4/L4.5 gebaut. **Bonus 3 (Kochassistent)** ist ein Extra-Bonus zum Selber-Bauen (in L4.5 kurz erwähnt).
+**Bonus 1 (Cockpit) + Bonus 2 (Haushalts-Helfer)** sind im Preis enthalten und werden in L4.4/L4.5 gebaut. **Bonus 3 (Kochassistent)** ist ein Extra-Bonus zum Selber-Bauen. **Bonus 4 (Gratis-Chat-One-Shot)** ist die Notlösung für alle, die kein Pro-Abo/Cowork wollen — einmal reinwerfen, Tag sortiert.
 
 ### Bonus 1 — Cockpit-Bot-System-Prompt (für L4.4, Stufe 1)
 
@@ -691,9 +693,31 @@ REGELN
 - Sprich mich mit DU an, locker und alltagsnah.
 ```
 
+### Bonus 4 — Gratis-Chat-One-Shot-Prompt (Stufe 0,5 · ohne Abo/Connector)
+
+Für alle, die (noch) kein Pro-Abo oder Cowork wollen: einmal in ein leeres Gratis-Chatfenster (ChatGPT oder Claude) kopieren und die eigene Liste darunter einfügen.
+
+```
+Du bist mein Tagesassistent. Unten kommt meine Liste (Business-Woche und/oder
+Haushalt + Familien-Termine). Sag mir bitte für HEUTE
+(Datum: [heute eintragen], Wochentag: [Wochentag eintragen]):
+1. Meine 3 wichtigsten Aufgaben (Money-Making + Termine zuerst)
+2. Was an Haushalt/Familie heute dran ist
+3. Was diese Woche noch Wichtiges kommt (1-2 Sätze)
+Halte dich kurz, sprich mich mit DU an, erfinde nichts — nur was in meiner Liste steht.
+
+MEINE LISTE:
+[hier deine Notion-Woche bzw. Haushalts-Liste reinkopieren]
+```
+
+> Grenze ehrlich: Das ist eine Einmal-Nutzung ohne Gedächtnis und ohne Notion-Anbindung — du kopierst jedes Mal neu rein. Für „läuft mit" → Cowork (Stufe 1).
+
 ---
 
 ## 📋 Zusammenfassung: was Patricia produzieren muss für Säule 4
+
+> **✅ STAND 2026-06-25 — bereits gebaut:** Master (3-Stufen/Cowork) · 4 Bonus-Vorlagen (`bonus-vorlagen-saeule-4/`) · Arbeitsblatt (`04-arbeitsblaetter/mama-ceo-arbeitsblatt-saeule-4.docx`, validiert) · ThriveCart-Setup (`13-thrivecart-saeule-4-setup.md`) · Notion Mentee-Haushalts-DB im Master-Template (`a52526bf-4d9a-48e6-9f64-5cce1239b66e`) + Beispielzeilen + 3 Stufe-0-Views · 3 Stufe-0-Views auf Patricias eigener DB (`caf1c565-...`).
+> **🔲 Es fehlen nur noch die 6 PPTX** (unten) — der grosse Block.
 
 ### Videos (6 Lektionen, ~85 Min total)
 | # | Datei | Status |
@@ -706,19 +730,20 @@ REGELN
 | 4.6 | `saeule-04-lektion-4-6.mp4` | ⚠️ PPTX neu bauen (9 Folien) |
 
 → **6 PPTX im einheitlichen Säule-4-Brand-Look** (python-pptx, Petrol/Creme, Sprechnotizen pro Folie) — wie bei Säule 3.
-→ **Aufnahme-Hinweis:** L4.4 + L4.5 sind Live-Demos mit Screenshare (Bot bauen). Patricia braucht ihren Bildschirm + Notion + die Vorlagen offen.
+→ **Aufnahme-Hinweis:** L4.4 + L4.5 sind Live-Demos mit Screenshare (Bot bauen). Patricia braucht ihren Bildschirm + **Claude Cowork** + Notion + die Vorlagen offen.
 
 ### Notion-Master-Template erweitern (Bau-Voraussetzung für L4.5)
-Das bestehende Master-Template (`3637078e-8b7e-8121-9f95-d2b377b283a7`) braucht eine zusätzliche **Haushalts-DB**: Aufgabe · Rhythmus (wöchentlich/monatlich/jährlich) · festes Datum · Bereich (Haushalt/Familie/Termin) · erledigt. Daraus liest der Haushalts-Helfer-Bot. **Noch anzulegen** (analog zur Aufgaben-/Tagesplaner-DB aus Säule 3).
+Das bestehende Master-Template (`3637078e-8b7e-8121-9f95-d2b377b283a7`) braucht eine zusätzliche **Haushalts-DB**: Aufgabe · Bereich · Rhythmus · Wochentag · Fixes Datum · Wer · Notiz · Erledigt. Daraus liest der Haushalts-Helfer-Bot. **+ 3 Stufe-0-Views** (📅 Kommende Termine · 🗓 nach Wochentag · 🔁 nach Rhythmus). Prototyp existiert als Patricias eigene DB (`caf1c565-9c66-46bb-ae03-73d029b91d87`).
 
 ### Arbeitsblatt (1 .docx-Datei)
-`mama-ceo-arbeitsblatt-saeule-4.docx` — 6 Lektions-Sektionen wie oben: KI-Frust-Check + 3 Zutaten · Projekt-Entscheidung (Claude/ChatGPT/Claude Code) · Business-Brief (6 Bausteine) · Cockpit-Bot-Bau-Checkliste + 3-Tage-Test · Haushalts-Liste sortieren (wiederkehrend/datiert/Termine) + Haushalts-Helfer-Bau · KI-Wochenplan (Mensch-vs-Maschine-Stempel).
+`mama-ceo-arbeitsblatt-saeule-4.docx` — 6 Lektions-Sektionen wie oben: KI-Frust-Check + 3 Zutaten · **Stufen-Entscheidung (Notion / Cowork / Claude Code)** · Business-Brief (6 Bausteine) · Cockpit-Bot-Bau-Checkliste (Cowork) + 3-Tage-Test · Haushalts-Liste sortieren (wiederkehrend/datiert/Termine) + Haushalts-Helfer-Bau · KI-Wochenplan (Mensch-vs-Maschine-Stempel).
 
-### 3 Bonus-Vorlagen (System-Prompts)
-- 🌅 **Cockpit-Bot-System-Prompt** (im Preis) → Download bei L4.4 (Spezifikation oben)
-- 🏠 **Haushalts-Helfer-Bot-System-Prompt** (im Preis) → Download bei L4.5 (Spezifikation oben)
-- 🍳 **Kochassistent-System-Prompt** (Extra-Bonus) → Download bei L4.5 zum Selber-Bauen (Spezifikation oben)
-- → alle drei als `.md`/`.txt` zum Download exportieren
+### 4 Bonus-Vorlagen (als Download-Dateien)
+- 🌅 **Cockpit-Bot-System-Prompt** (im Preis) → Download bei L4.4
+- 🏠 **Haushalts-Helfer-Bot-System-Prompt** (im Preis) → Download bei L4.5
+- 🍳 **Kochassistent-System-Prompt** (Extra-Bonus) → Download bei L4.5
+- 💬 **Gratis-Chat-One-Shot-Prompt** (Extra-Bonus, Stufe 0,5) → für alle ohne Abo
+- → alle als `.md`/`.txt` exportieren (Spezifikationen oben)
 
 ### ThriveCart-Setup-File
 `13-thrivecart-saeule-4-setup.md` — Säulen-Header + 6 Beschreibungstexte (copy-paste-ready) + Upload-Checkliste (6 Videos · 1 Arbeitsblatt · 3 Bot-Vorlagen) — analog zu `13-thrivecart-saeule-3-setup.md`. **Noch zu bauen.**
@@ -729,11 +754,11 @@ Das bestehende Master-Template (`3637078e-8b7e-8121-9f95-d2b377b283a7`) braucht 
 
 | Lektion | Frage | Status |
 |---|---|---|
-| **4.2** | Tool-Modell: Projekt (Claude/ChatGPT) ODER Claude Code, nicht der nackte Chat · Anweisungen bei beiden hinterlegbar · Notion-Connector bei allen · automatischer Bot = Claude Code. | ✅ geklärt 2026-06-12 (Patricia O-Ton) |
-| **4.4** | Cockpit-Bot 2-Stufen: Stufe 1 Projekt, Stufe 2 Telegram-Bot via Claude Code ehrlich erklärt (Hosting + Kosten). | ✅ geklärt 2026-06-12 |
-| **4.4** | Ads-Performance-Diagnose im Cockpit-Bot-Prompt → bewusst WEGGELASSEN (Bot erinnert nur an die Notion-Planung). | ✅ geklärt 2026-06-12 (Patricia O-Ton) |
-| **4.5** | MASTERY = Haushalts-Helfer-Bot (Mental-Load, Brain-Dump aus S2, Notion-Haushalts-DB). Kochassistent = Extra-Bonus. | ✅ geklärt 2026-06-12 |
-| **4.5** | Notion-Master-Template um Haushalts-DB erweitern (Voraussetzung für den Bot). | ⏳ noch anlegen |
+| **4.2** | Tool-Modell = **3 Stufen** (0 Notion · 1 Claude Cowork · 2 Claude Code). Nackter Chat zu statisch · Cowork = Nicht-Techie-Weg mit Connector · jede nimmt einen Win mit. | ✅ geklärt 2026-06-25 (Patricia) |
+| **4.4** | Cockpit-Bot 3-Stufen: **Stufe 1 = Claude Cowork** (statt „Projekt"), Stufe 2 = Telegram via Claude Code (Hosting + Kosten ehrlich). | ✅ geklärt 2026-06-25 |
+| **4.4** | Ads-Performance-Diagnose im Cockpit-Bot-Prompt → bewusst WEGGELASSEN (Bot erinnert nur an die Notion-Planung). | ✅ geklärt 2026-06-12 |
+| **4.5** | MASTERY = Haushalts-Helfer-Bot (Mental-Load, Brain-Dump aus S2, Notion-Haushalts-DB), Stufe 1 Cowork. Kochassistent = Extra-Bonus. | ✅ geklärt 2026-06-12 |
+| **4.5** | Notion-Master-Template um Haushalts-DB + 3 Stufe-0-Views erweitern. Patricias eigene DB = Prototyp. | ⏳ noch anlegen |
 | **alle** | Wie bei Säule 3: visuelles PPTX-Rendern lokal nicht möglich (kein LibreOffice) — Inhalts-QA per python-pptx, Patricia klickt einmal durch. | ℹ️ wie gehabt |
 
 ---

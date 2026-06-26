@@ -34,13 +34,17 @@ tags: [produkt, mama-ceo, handoff]
 
 **Patricia-Entscheidungen 2026-06-12:** Tool = Projekt (Claude/ChatGPT) ODER Claude Code, nicht nackter Chat · Notion-Connector bei allen (nicht nur Claude Code) · Cockpit-Bot 2-Stufen (Stufe 2 = Telegram via Claude Code, Hosting+Kosten erklärt) · Ads-Diagnose im Cockpit-Prompt weggelassen · MASTERY = Haushalts-Helfer (Mental-Load) statt Koch, Liste in eigener Notion-Haushalts-DB.
 
-### 🔲 Säule-4-TODOs (noch offen)
-1. **Notion-Master-Template erweitern:** Haushalts-DB anlegen (Aufgabe · Rhythmus · Datum · Bereich · erledigt) — Voraussetzung für den Haushalts-Helfer-Bot in L4.5.
-2. **6 PPTX bauen** (python-pptx, Säule-4-Look) — Folienzahlen 9/9/9/13/14/9. Wie Säule 3.
-3. **Arbeitsblatt `mama-ceo-arbeitsblatt-saeule-4.docx`** bauen (6 Sektionen aus Master).
-4. **`13-thrivecart-saeule-4-setup.md`** bauen (analog Säule 3).
-5. **3 Bonus-Vorlagen als .md/.txt** zum Download exportieren (Specs liegen im Master).
-6. **L4.4 + L4.5 sind Live-Demos** — Patricia braucht Screenshare + Notion + die Vorlagen offen beim Aufnehmen.
+### ✅ Säule-4-Produktion — Stand 2026-06-25 (fast komplett)
+- ✅ **3-Stufen/Cowork** im ganzen Master verankert (Stufe 0 Notion · Stufe 1 Claude Cowork · Stufe 2 Claude Code). „Win auch ohne Claude Code" gelöst.
+- ✅ **4 Bonus-Vorlagen** (`bonus-vorlagen-saeule-4/`): Cockpit · Haushalts-Helfer · Kochassistent · Gratis-Chat-One-Shot — je mit Cowork-Anleitung.
+- ✅ **Arbeitsblatt** `04-arbeitsblaetter/mama-ceo-arbeitsblatt-saeule-4.docx` (6 Sektionen, validiert).
+- ✅ **ThriveCart-Setup** `13-thrivecart-saeule-4-setup.md`.
+- ✅ **Notion:** Mentee-Haushalts-DB im Master-Template (`a52526bf-4d9a-48e6-9f64-5cce1239b66e`) + 6 Beispielzeilen + 3 Stufe-0-Views · dieselben 3 Views auf Patricias eigener DB (`caf1c565-9c66-46bb-ae03-73d029b91d87`).
+
+### 🔲 Säule-4 — was noch fehlt
+1. **6 PPTX bauen** (python-pptx, Säule-4-Look) — Folienzahlen **9/10/9/13/14/9**. Wie Säule 3. **Einziger grosser Rest.**
+2. **L4.4 + L4.5 sind Live-Demos** — Patricia braucht beim Aufnehmen Screenshare + **Claude Cowork** + Notion + die Vorlagen offen.
+3. Patricias eigener Haushalts-Bot: optional in **Cowork** scharfstellen (Prompt liegt in `bonus-haushalts-helfer-bot-PATRICIA.md`).
 
 ---
 
