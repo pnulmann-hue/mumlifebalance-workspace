@@ -454,7 +454,7 @@ Was wir gemeinsam machen:
 → Deinen Monatsplan + deine Beispiel-Woche aus 3.4 anlegen
 → Deine 4 Rollen, dein Hütchen-Inventar und deinen Wochenrhythmus aus Säule 1+2 übertragen
 → Deine Ziele als roten Faden verknüpfen (Jahr ↔ Monat ↔ Woche)
-→ Den 90-Tage-Tracker scharf stellen
+→ Sehen, dass der 90-Tage-Tracker im Template schon angelegt ist (ausgefüllt wird er erst in Säule 5, Lektion 5.4)
 
 Am Ende hast du EIN Zuhause für dein ganzes Business und deinen Familien-Alltag. Kein Zettel-Chaos mehr.
 
@@ -473,7 +473,7 @@ Am Ende hast du EIN Zuhause für dein ganzes Business und deinen Familien-Alltag
 5. Tagesplaner: heutiger Tag als Beispiel (aus 3.4-Vorlage) — Relation zu Woche
 6. Ziele-DB: 1-3 Ziele, verknüpft mit Jahr/Monat/Woche
 7. 4 Rollen + Hütchen-Inventar (aus S2) als Referenz-Page ablegen
-8. 90-Tage-Tracker scharf stellen
+8. 90-Tage-Tracker — ist im Template vorhanden (NICHT jetzt ausfüllen — das kommt in Säule 5, Lektion 5.4, nach der Mama-CEO-Matrix)
 
 ## Arbeitsblatt-Sektion 3.5
 
@@ -490,7 +490,7 @@ Mach das WÄHREND du das Video schaust. Pause wo nötig.
 ☐ Schritt 5: Tagesplaner für heute angelegt + mit Woche verknüpft
 ☐ Schritt 6: 1-3 Ziele eingetragen + als roter Faden verknüpft
 ☐ Schritt 7: 4 Rollen + Hütchen-Inventar als Referenz abgelegt
-☐ Schritt 8: 90-Tage-Tracker scharf gestellt
+☐ Schritt 8: 90-Tage-Tracker im Template gefunden (ausfüllen erst in Säule 5.4)
 
 ▸ Wo hängst du? Notier deine 1 offene Frage für Live-Call 2:
 [2 Linien]
@@ -501,7 +501,7 @@ WAS DU NACH LEKTION 3.5 HAST · KERN-LEISTUNG VON SÄULE 3
 ✓ Dein Notion-Business-Brain steht — 4 Stufen + Ziele, alles verknüpft
 ✓ Jahr, Monat, Woche, Tag sind befüllt und greifen ineinander
 ✓ Deine Arbeit aus Säule 1+2 ist nach Notion übertragen (nichts verloren)
-✓ Der 90-Tage-Tracker läuft
+✓ Der 90-Tage-Tracker ist angelegt (befüllt wird er in Säule 5.4)
 ```
 
 ---
