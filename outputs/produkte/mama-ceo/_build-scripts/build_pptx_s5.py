@@ -14,7 +14,11 @@ NAVY   = RGBColor(0x1A, 0x3A, 0x4A)
 BODY   = RGBColor(0x2C, 0x3E, 0x50)
 PETROL = RGBColor(0x12, 0x82, 0x8C)
 MUTED  = RGBColor(0x7A, 0x8A, 0x95)
+CREME  = RGBColor(0xF1, 0xEC, 0xDD)
 EYEBROW = "SÄULE 5 — BUSINESS SKALIEREN"
+
+def set_bg(slide):
+    slide.background.fill.solid(); slide.background.fill.fore_color.rgb = CREME
 
 def textbox(slide, l, t, w, h):
     tb = slide.shapes.add_textbox(Inches(l), Inches(t), Inches(w), Inches(h)); tf = tb.text_frame; tf.word_wrap = True; return tb, tf
@@ -22,6 +26,7 @@ def run(p, text, font="Calibri", size=16, bold=False, color=BODY):
     r = p.add_run(); r.text = text; r.font.name = font; r.font.size = Pt(size); r.font.bold = bold; r.font.color.rgb = color; return r
 def add_title_slide(prs, title, subtitle):
     s = prs.slides.add_slide(prs.slide_layouts[6])
+    set_bg(s)
     c = s.shapes.add_shape(MSO_SHAPE.OVAL, Inches(7.5), Inches(4.2), Inches(3.5), Inches(3.5)); c.fill.solid(); c.fill.fore_color.rgb = ORANGE; c.line.fill.background()
     _, tf = textbox(s, 0.6, 0.6, 8.8, 0.4); run(tf.paragraphs[0], EYEBROW, "Calibri", 11, True, ORANGE)
     bar = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(0.6), Inches(1.05), Inches(0.6), Inches(0.05)); bar.fill.solid(); bar.fill.fore_color.rgb = ORANGE; bar.line.fill.background()
@@ -32,11 +37,12 @@ def add_title_slide(prs, title, subtitle):
     return s
 def add_content_slide(prs, title, bullets, tag):
     s = prs.slides.add_slide(prs.slide_layouts[6])
+    set_bg(s)
     _, tf = textbox(s, 0.6, 0.5, 8.8, 1.0); run(tf.paragraphs[0], title, "Georgia", 30, True, NAVY)
     _, tf = textbox(s, 0.6, 1.55, 8.8, 3.45); first = True
     for b in bullets:
         p = tf.paragraphs[0] if first else tf.add_paragraph(); first = False; p.space_after = Pt(10)
-        run(p, "▸  ", "Calibri", 16, True, PETROL); run(p, b, "Calibri", 16, False, BODY)
+        run(p, "✓  ", "Calibri", 16, True, PETROL); run(p, b, "Calibri", 16, False, BODY)
     _, tf = textbox(s, 0.5, 5.2, 6.0, 0.3); run(tf.paragraphs[0], tag, "Calibri", 9, False, MUTED)
     _, tf = textbox(s, 7.0, 5.2, 2.5, 0.3); p = tf.paragraphs[0]; p.alignment = PP_ALIGN.RIGHT; run(p, "Mum Life Balance", "Calibri", 9, False, MUTED)
     return s

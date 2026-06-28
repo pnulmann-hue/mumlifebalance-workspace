@@ -12,7 +12,7 @@ Voraussetzung: `pip install python-pptx`
 python build_pptx_s4.py    # → 03-praesentationen/saeule-4/ (6 Decks)
 python build_pptx_s5.py    # → 03-praesentationen/saeule-5/ (4 Decks)
 ```
-Brand-Look: 10×5.625", weiss · Navy 1A3A4A · Petrol 12828C · Orange-Eyebrow DC822E · Georgia-Titel + Calibri-Body · Sprechnotizen pro Folie (wie Säule 3).
+Brand-Look: 10×5.625", Creme F1ECDD · Navy 1A3A4A · Petrol 12828C · Orange-Eyebrow DC822E · Georgia-Titel + Calibri-Body · Sprechnotizen pro Folie (wie Säule 3).
 
 ## Arbeitsblätter (.docx, docx-js / Node)
 Voraussetzung: `npm install docx`

@@ -16,6 +16,10 @@ BODY   = RGBColor(0x2C, 0x3E, 0x50)
 PETROL = RGBColor(0x12, 0x82, 0x8C)
 MUTED  = RGBColor(0x7A, 0x8A, 0x95)
 WHITE  = RGBColor(0xFF, 0xFF, 0xFF)
+CREME  = RGBColor(0xF1, 0xEC, 0xDD)
+
+def set_bg(slide):
+    slide.background.fill.solid(); slide.background.fill.fore_color.rgb = CREME
 
 EYEBROW = "SÄULE 4 — DU DELEGIERST DEN ADMINKRAM"
 
@@ -33,6 +37,7 @@ def run(p, text, font="Calibri", size=16, bold=False, color=BODY):
 
 def add_title_slide(prs, title, subtitle, eyebrow=EYEBROW):
     s = prs.slides.add_slide(prs.slide_layouts[6])  # blank
+    set_bg(s)
     # deko-kreis unten rechts
     c = s.shapes.add_shape(MSO_SHAPE.OVAL, Inches(7.5), Inches(4.2), Inches(3.5), Inches(3.5))
     c.fill.solid(); c.fill.fore_color.rgb = ORANGE; c.line.fill.background()
@@ -57,6 +62,7 @@ def add_title_slide(prs, title, subtitle, eyebrow=EYEBROW):
 
 def add_content_slide(prs, title, bullets, tag):
     s = prs.slides.add_slide(prs.slide_layouts[6])
+    set_bg(s)
     _, tf = textbox(s, 0.6, 0.5, 8.8, 1.0)
     p = tf.paragraphs[0]; run(p, title, "Georgia", 30, True, NAVY)
     # body
@@ -66,7 +72,7 @@ def add_content_slide(prs, title, bullets, tag):
         p = tf.paragraphs[0] if first else tf.add_paragraph()
         first = False
         p.space_after = Pt(10)
-        run(p, "▸  ", "Calibri", 16, True, PETROL)
+        run(p, "✓  ", "Calibri", 16, True, PETROL)
         run(p, b, "Calibri", 16, False, BODY)
     # footer
     _, tf = textbox(s, 0.5, 5.2, 6.0, 0.3)
