@@ -10,6 +10,19 @@ tags: [produkt, mama-ceo, saeule-4, intern, aufnahme]
 
 ---
 
+## TEIL 0 — Was VORHER bereit sein muss (vor der Aufnahme)
+
+☐ **0.1 Claude Desktop + Pro-Abo** aktiv, Notion-Connector schon getestet.
+☐ **0.2 Deine Haushalts-Liste in Notion** gefüllt ✅ (ist erledigt — 4 Kinder komplett).
+☐ **0.3 ⚠️ Dein Business-Brief** — den brauchst du für den Cockpit-Demo (4.4)! Hast du noch NICHT geschrieben.
+   → Vorher mit dem Bonus-5-Prompt erarbeiten (10 Min) ODER im Video 4.3 live erarbeiten und gleich für 4.4 nutzen.
+☐ **0.4 ⚠️ Notion-Master-Template „Duplizieren erlauben"** einschalten — DAMIT die Mentees die Vorlage (inkl. der neuen Haushalts-Liste) kriegen.
+   → Template öffnen → Teilen → „Im Web veröffentlichen" → „Duplizieren als Vorlage erlauben" EIN → Link kopieren.
+   → Kurz prüfen: ist die **🏠 Haushalts-Liste** im Template sichtbar (sie ist dort angelegt)? Beim Duplizieren kommt sie mit.
+☐ **0.5** Drehbuch + die 6 PPTX (Sprechnotizen) offen.
+
+---
+
 ## TEIL A — Cowork einrichten (EINMAL, zeigst du in L4.4)
 
 ☐ **A1.** Claude **Desktop-App** öffnen (nicht Browser, nicht Claude Code).
@@ -104,6 +117,22 @@ REGELN
 - **Gratis-Chat-One-Shot** (Bonus 4): einmal Prompt + Liste reinwerfen
 - **Nur Notion** (Stufe 0): die Ansichten „Kommende Termine" / „Nach Wochentag" öffnen
 ☐ **D2.** „Jede nimmt einen Win mit — niemand bleibt aussen vor."
+
+---
+
+## 📦 Was die Mentees bekommen (in ThriveCart hochladen / verlinken)
+
+**Downloads (Bonus-Dateien, je bei der passenden Lektion):**
+- L4.1: 📋 Arbeitsblatt Säule 4 (.docx)
+- L4.2: 💬 Gratis-Chat-One-Shot (Bonus 4)
+- L4.3: ✍️ Business-Brief-Erarbeiten-Prompt (Bonus 5)
+- L4.4: 🖥 Cowork-einrichten-Anleitung (Bonus 6) · 🌅 Cockpit-Bot-Vorlage (Bonus 1) · ⚙️ Claude-Code-Anleitung (Bonus 7, Stufe 2)
+- L4.5: 🏠 Haushalts-Helfer-Vorlage (Bonus 2) · 🍳 Kochassistent-Vorlage (Bonus 3)
+
+**📂 Notion-Vorlage (WICHTIG — der Punkt, an den man leicht vergisst):**
+- Die **🏠 Haushalts-Liste** ist Teil deines **Master-Templates** (das die Mentees in Säule 3 duplizieren).
+- → Stell sicher: **„Duplizieren erlauben" ist EIN** (Teil 0.4) und der **Duplikat-Link** steht bei **L3.5 UND L4.5**.
+- → Die Mentees: in Säule 2 Brain-Dump gemacht → in 4.5 in die duplizierte Haushalts-Liste eintragen → Bot drauf.
 
 ---
 
