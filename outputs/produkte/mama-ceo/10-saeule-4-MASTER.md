@@ -73,11 +73,15 @@ Am Ende dieser 2 Wochen:
 Live-Call 3 (Ende W6): Bot-Bau-Werkstatt · 120 Min · wir bauen gemeinsam, und wer irgendwo hängt, kriegt hier seine Lösung.
 ```
 
-**Modul-Downloads (für die ganze Säule):**
-- 📋 **Arbeitsblatt Säule 4** → Datei: `mama-ceo-arbeitsblatt-saeule-4.docx`
-- 🌅 **Cockpit-Bot-Vorlage** (System-Prompt zum Anpassen, Bonus) → wird in Lektion 4.4 eingesetzt
-- 🏠 **Haushalts-Helfer-Bot-Vorlage** (System-Prompt zum Anpassen, Bonus) → wird in Lektion 4.5 eingesetzt
-- 🍳 **Kochassistent-Vorlage** (System-Prompt, Extra-Bonus) → optionale Erweiterung, kurz in L4.5 erwähnt
+**Modul-Downloads (für die ganze Säule)** — Bot-Vorlagen + Anleitungen in `bonus-vorlagen-saeule-4/`:
+- 📋 **Arbeitsblatt Säule 4** → `04-arbeitsblaetter/mama-ceo-arbeitsblatt-saeule-4.docx`
+- ✍️ **Bonus 5 · Business-Brief-Erarbeiten-Prompt** → L4.3 (erarbeiten mit Claude, Output = 1 Dokument)
+- 🖥 **Bonus 6 · Cowork einrichten** (einmalige Setup-Anleitung) → L4.4
+- 🌅 **Bonus 1 · Cockpit-Bot-Vorlage** → L4.4
+- 🏠 **Bonus 2 · Haushalts-Helfer-Bot-Vorlage** → L4.5
+- 🍳 **Bonus 3 · Kochassistent-Vorlage** (Extra) → L4.5
+- 💬 **Bonus 4 · Gratis-Chat-One-Shot** (Extra) → L4.2/L4.4
+- ⚙️ **Bonus 7 · Claude-Code-Anleitung** (Stufe 2) → L4.4-Ausblick + L4.6
 
 ---
 
@@ -255,8 +259,9 @@ Das ist ein kurzes Dokument, in dem steht, wer du bist, für wen du arbeitest, w
 Du lernst:
 → Warum ohne Business-Brief jeder Bot austauschbar bleibt
 → Die 6 Bausteine deines Business-Briefs (in einfachen Worten)
+→ Der schnelle Weg: lass ihn dir von Claude im Gespräch erarbeiten (fertiger Prompt, Bonus 5) — am Ende hast du EIN Dokument
 → Wie du deine eigene Stimme einfängst, damit die KI nicht nach Roboter klingt
-→ Wo du den Business-Brief ablegst, damit du ihn immer griffbereit hast
+→ Wohin damit pro Tool: Gratis-Chat (jedes Mal rein) · Projekt (1× hochladen) · Cowork (1× in die Bot-Anweisung) · Claude Code (als Datei)
 
 Ich zeig dir meinen eigenen Business-Brief als Beispiel, dann siehst du genau, wie deiner aussehen darf.
 
