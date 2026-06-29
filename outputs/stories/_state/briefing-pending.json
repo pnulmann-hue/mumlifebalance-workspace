@@ -1,67 +1,51 @@
 {
-  "datum": "2026-06-29",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": true,
-        "phase": "verkaufsphase",
-        "tag_im_launch": 15,
-        "vorlage": "START — OMG es ist soweit",
-        "titel": "TAG 1 — es ist soweit",
-        "story_ziel": "Bootcamp-Kickoff-Energie (Patricia live Tag 1). Was heute passiert (Bio/Positionierung). Live-Vibes aus der Gruppe. Noch KEIN MBA-Pitch.",
-        "kaeufertyp": "Ina",
-        "cta": "Nachzügler: DM BOOTCAMP — heute noch Einstieg möglich",
-        "cta_keyword": "BOOTCAMP"
-      },
-      "kontext_snapshot": {
-        "kw": 27,
-        "wochentag": "Montag",
-        "datum": "2026-06-29"
-      },
-      "gesendet_am": "2026-06-29T04:42:00.795Z",
-      "telegram_message_id": 799,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Lehrreich / Mini-Training",
-        "titel": "Lehrreich / Mini-Training",
-        "story_ziel": "Ein konkretes, sofort umsetzbares Learning aus Patricias Wissen — screenshotbar.",
-        "kaeufertyp": "Willi",
-        "cta": "passend zum Thema (BIO / STORY / ECHT1)",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 27,
-        "wochentag": "Montag",
-        "datum": "2026-06-29"
-      },
-      "gesendet_am": "2026-06-29T04:42:01.502Z",
-      "telegram_message_id": 800,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "mentoring",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "Bio-Check",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": null,
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": {
+    "datum": "2026-06-29",
+    "phase": "verkaufsphase",
+    "julia_vorlage": "start-omg-es-ist-soweit",
+    "titel": "TAG 1 — es ist soweit",
+    "story_ziel": "Bootcamp-Kickoff-Energie (Patricia live Tag 1). Was heute passiert (Bio/Positionierung). Live-Vibes aus der Gruppe. Noch KEIN MBA-Pitch.",
+    "kaeufertyp": "Ina",
+    "cta": "Nachzügler: DM BOOTCAMP — heute noch Einstieg möglich",
+    "cta_keyword": "BOOTCAMP",
+    "profil": "mentoring"
+  },
+  "launch_vorlage": {
+    "name": "START — OMG es ist soweit",
+    "phase": "verkaufsphase",
+    "ziel": "Verkaufsphase eröffnen. Aufregung, Party, Verlangen. Schmerzpunkte + Lösung + Details + Link.",
+    "julia_anleitung": "Feier den Start! Zeige Aufregung. Gehe direkt auf die Schmerzpunkte der Community ein und stelle die Lösung vor. Nenne die wichtigsten Details + Verkaufslink. Greife evtl. schon gestellte Fragen auf.",
+    "kaeufertyp": "alle — besonders Ina + Rudi",
+    "slide_bogen": "OMG-Hook → Schmerzpunkt benennen → Lösung = dein Angebot → wichtigste Details → Verkaufslink-CTA"
+  },
+  "kontext_snapshot": {
+    "kw": 27,
+    "wochentag": "Montag",
+    "datum": "2026-06-29"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-06-29T09:16:52.843Z",
+  "telegram_message_id": 801,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
