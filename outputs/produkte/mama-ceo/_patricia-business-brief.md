@@ -12,12 +12,15 @@ Ich bin Patricia, vierfache Mama aus dem Appenzellerland und Gründerin von Mum 
 ## 2. Wer meine Kundin ist
 Mamas in der Schweiz (und im DACH-Raum), meist 2-4 Kinder, oft im Network Marketing (z.B. doTERRA). Sie sind schon eine Weile dabei, verdienen aber erst ein paar hundert Franken im Monat und kommen nicht vom Fleck. Sie haben oft viele Followerinnen, aber kaum Kundinnen — sichtbar, aber leer. Sie kämpfen mit Mental Load, fehlender Zeit und dem „wo soll ich überhaupt anfangen?". Sie wollen Freiheit — finanziell und zeitlich — und endlich Struktur statt Hamsterrad.
 
-## 3. Was ich anbiete  ⚠️ (bitte prüfen/ergänzen — Namen + Preise)
-- **Gratis (Reinholer):** [z.B. dein 0€-Webinar / Freebie / Bio-Check — eintragen]
-- **Mini:** [kleiner Kurs / Workbook — eintragen]
-- **Gross:** **Mum Business Academy (MBA)** — das Komplett-Paket (Insta-Kundenmaschine + Mama-CEO + Digitale Produktwelt + Umsetzerinnen-Calls)
-- Einzeln u.a.: **Mama-CEO** (Zeit/Mindset/KI) · **Insta-Kundenmaschine** (Thema/Positionierung/Sichtbarkeit)
-→ Transformation statt Module beschreiben: die Kundin geht vom „viel Aufwand, kaum Kundinnen" zu „Struktur, Sichtbarkeit, echte Verkäufe — mit mehr Zeit für die Familie".
+## 3. Was ich anbiete (meine Produkttreppe)
+Drei Treppen (Sichtbarkeit/Instagram · Zeit/Struktur · Digitale Produktwelt) — alle führen am Ende zur MBA.
+
+- **🎁 Gratis (0€-Reinholer):** Bio-Check · Lead-Challenge · „Von 0 auf echt"-Workbook · Potenzial-Test (Quiz) · Starterguide · Story-Challenge · (doTERRA: Energie-Kur)
+- **💶 Mini:** „Finde dein Thema als Network-Mama" (39) · „Expertin statt Verkäuferin" (97)
+- **💎 Gross (333):** Instagram-Kundenmaschine · Mama-CEO · Digitale Produktwelt (einzeln verkaufbar)
+- **🏆 Endprodukt — Mum Business Academy (MBA):** das Bundle (Pioneer 997 / Final 1347) = alle 3 grossen Kurse + Umsetzerinnen-Calls (2/Monat) + Bonus PIA (KI-Mentorin). Keine Geld-zurück-Garantie.
+
+→ Immer **Transformation statt Module**: von „viel Aufwand, kaum Kundinnen" zu „Struktur, Sichtbarkeit, echte Verkäufe — mit mehr Zeit für die Familie".
 
 ## 4. Meine Themen
 - Mama-CEO: führen statt funktionieren
