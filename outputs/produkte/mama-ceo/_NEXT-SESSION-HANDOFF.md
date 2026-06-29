@@ -2,10 +2,37 @@
 tags: [produkt, mama-ceo, handoff]
 ---
 
-# Mama-CEO — Handoff (Stand 2026-06-12)
+# Mama-CEO — Handoff (Stand 2026-06-28)
 
 > **START HIER in einer neuen Session.** Diese Datei ersetzt den alten April-Handoff. Sie hält fest, wo wir bei Mama-CEO stehen, was offen ist und wie du nahtlos weitermachst.
 > **Einstieg:** `/produkt` (Onlinebusiness → Mama-CEO weiterbauen) ODER direkt diese Datei + `10-saeule-4-MASTER.md` lesen.
+
+---
+
+## 🆕 STAND 2026-06-28 — Modul-4-Recording-Vorbereitung (zuletzt dran)
+
+**Alle 5 Säulen sind komplett produziert** (Master · PPTX · Arbeitsblätter · ThriveCart · Boni · Notion). Diese Session: Modul 4 aufnahmefertig gemacht.
+
+**Neu erstellt / fertig:**
+- ✅ **PPTX Säule 4 (6) + Säule 5 (4)** im korrekten Brand-Look (**Creme-Hintergrund F1ECDD + ✓-Häkchen** — vorher waren sie weiss, gefixt). Build-Scripts in `_build-scripts/`.
+- ✅ **Aufnahme-Drehbuch:** `_aufnahme-drehbuch-modul-4.md` (Teil 0 Vorbereitung · A Cowork einrichten · B Cockpit-Bot · C Haushalts-Bot · D „kein Cowork" · Mentee-Material · Quick-Check — mit Prompts zum Reinkopieren).
+- ✅ **Business-Brief:** `_patricia-business-brief.md` (vollständig, echte Produkttreppe aus active-funnels.json — für Cockpit-Demo).
+- ✅ **7 Bonus-Dateien** in `bonus-vorlagen-saeule-4/`: 1 Cockpit · 2 Haushalts-Helfer · 3 Kochassistent · 4 Gratis-Chat-One-Shot · 5 Business-Brief-Erarbeiten-Prompt · 6 Cowork-einrichten-Anleitung · 7 Claude-Code-Anleitung.
+- ✅ **Patricias Notion-Haushalts-Liste komplett für alle 4 Kinder:** Lukas Schwimmen (Gruppe B, 16) · Nadine Turnplan-Daten + Wald-Mittwoche + Bibliothek Di · Bettina Turnen Mo+Do · Niklaus Hauswirtschaft Di (mittags nicht heim).
+- ✅ 3-Stufen/Cowork-Modell überall im Master verankert (Stufe 0 Notion · 1 Cowork · 2 Claude Code). „Win ohne Code" gelöst.
+
+**🔲 Was Patricia noch tun muss (vor/beim Aufnehmen):**
+1. **Notion: 1 Zeile löschen** — in „🏠 Haushalts-Liste" der Eintrag mit „(LÖSCHEN)" (war falscher wöchentl. Nadine-Freitag-Turnen-Eintrag, neutralisiert).
+2. **Notion-Master-Template „Duplizieren als Vorlage erlauben" einschalten** (inkl. der jetzt enthaltenen Haushalts-DB) → Link bei L3.5 + L4.5. (Damit Mentees die Vorlage kriegen.)
+3. **Modul 4 + 5 aufnehmen** (L4.4/L4.5/L5.2 = Live-Demos: Claude Cowork + Notion + Bot-Vorlagen offen). Drehbuch nutzen.
+4. **In ThriveCart hochladen** (Videos + Arbeitsblätter + 7 Bonus-Dateien — Setup-Texte in `13-thrivecart-saeule-4/5-setup.md`).
+5. **Patricias eigener Haushalts-Bot** ist noch NICHT in Cowork scharfgestellt — macht sie live bei der 4.5-Aufnahme (Daten + Prompt sind bereit).
+
+**Cowork-Connector-Pfad:** Claude Desktop → Einstellungen/Zahnrad → „Connectors" → Notion → Verbinden → einloggen → Seiten freigeben (Privat & Familie + Business-Brain).
+
+**Notion-IDs:** Patricias Haushalts-DB `caf1c565-9c66-46bb-ae03-73d029b91d87` · Mentee-Vorlage-DB `a52526bf-4d9a-48e6-9f64-5cce1239b66e` · Master-Template `3637078e-8b7e-8121-9f95-d2b377b283a7` · Privat-Bereich-Seite `3807078e-8b7e-8139-827b-c11d6070bb1c`.
+
+**Offen aus früher (Säule 5 Live-Demos):** Patricias eigene Mama-CEO-Matrix · innerer Kreis · 90-Tage-Plan (spricht sie live, oder interaktiv bauen wie den Haushalts-Bot). Plus „So geht's weiter"-Cross-Sell-Lektion (Ende Säule 3) — siehe unten.
 
 ---
 
