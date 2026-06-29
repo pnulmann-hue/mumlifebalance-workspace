@@ -37,10 +37,10 @@ Am Ende dieser 2 Wochen:
 Live-Call 3 (Ende W6): Bot-Bau-Werkstatt · 120 Min · wir bauen gemeinsam, und wer irgendwo hängt, kriegt hier seine Lösung.
 ```
 
-**Modul-Downloads:**
-- 📋 Arbeitsblatt Säule 4 (`mama-ceo-arbeitsblatt-saeule-4.docx`)
-- 🌅 Cockpit-Bot-Vorlage · 🏠 Haushalts-Helfer-Vorlage (im Preis)
-- 🍳 Kochassistent-Vorlage · 💬 Gratis-Chat-One-Shot (Extra-Boni)
+**Modul-Downloads (7 Stück, alle als .docx in `_downloads/`):**
+- 📋 Arbeitsblatt Säule 4 · ✍️ Business-Brief-erarbeiten · 💬 Gratis-Chat-One-Shot
+- 🖥 Cowork-einrichten-Anleitung · 🌅 Cockpit-Bot-Vorlage · ⚙️ Claude-Code-aktivieren-Anleitung
+- 🏠 Haushalts-Helfer-Vorlage · 🍳 Kochassistent-Vorlage
 - 📂 Notion-Haushalts-DB (Teil des Master-Templates)
 
 ---
@@ -190,21 +190,35 @@ Am Ende weisst du genau, wo KI dir hilft — und wo du als Mensch unersetzlich b
 
 ## 📤 UPLOAD-CHECKLISTE (vor Go-Live Säule 4)
 
-**Videos (6):**
-- ☐ saeule-04-lektion-4-1.mp4 … bis … saeule-04-lektion-4-6.mp4
+> Alle Download-Docs liegen als fertige .docx in `bonus-vorlagen-saeule-4/_downloads/`.
 
-**Downloads:**
-- ☐ Arbeitsblatt `mama-ceo-arbeitsblatt-saeule-4.docx` → bei Lektion 4.1 anhängen
-- ☐ Cockpit-Bot-Vorlage (`bonus-1-cockpit-bot`) → bei Lektion 4.4
-- ☐ Haushalts-Helfer-Vorlage (`bonus-2-haushalts-helfer-bot`) → bei Lektion 4.5
-- ☐ Kochassistent-Vorlage (`bonus-3-kochassistent`) → bei Lektion 4.5
-- ☐ Gratis-Chat-One-Shot (`bonus-4-gratis-chat-one-shot`) → bei Lektion 4.2 oder 4.4
-- ☐ Notion-Haushalts-DB ist Teil des Master-Templates (Link aus Säule 3 / Lektion 3.5 gilt weiter)
+**Videos (6) — eins pro Lektion:**
+- ☐ `saeule-04-lektion-4-1.mp4` → Lektion 4.1
+- ☐ `saeule-04-lektion-4-2.mp4` → Lektion 4.2
+- ☐ `saeule-04-lektion-4-3.mp4` → Lektion 4.3
+- ☐ `saeule-04-lektion-4-4.mp4` → Lektion 4.4 (Live-Demo)
+- ☐ `saeule-04-lektion-4-5.mp4` → Lektion 4.5 (Live-Demo)
+- ☐ `saeule-04-lektion-4-6.mp4` → Lektion 4.6
 
-**Vor Aufnahme klären:**
-- ☐ Claude Cowork bereit (Patricia) + Notion-Connector eingesteckt für die Live-Demos (L4.4 + L4.5)
-- ☐ Bot-Vorlagen offen zum Reinkopieren beim Screenshare
-- ☐ PPTX-Folien gebaut (6 Stück) — siehe Master „Zusammenfassung"
+**Downloads — pro Lektion anhängen:**
+
+| Lektion | Datei (in `_downloads/` bzw. `04-arbeitsblaetter/`) |
+|---|---|
+| **4.1** | 📋 `mama-ceo-arbeitsblatt-saeule-4.docx` (gilt für ganze Säule) |
+| **4.2** | 💬 `Gratis-Chat-One-Shot.docx` |
+| **4.3** | ✍️ `Business-Brief-erarbeiten.docx` |
+| **4.4** | 🖥 `Cowork-einrichten-Anleitung.docx` · 🌅 `Cockpit-Bot-Vorlage.docx` · ⚙️ `Claude-Code-aktivieren-Anleitung.docx` |
+| **4.5** | 🏠 `Haushalts-Helfer-Vorlage.docx` · 🍳 `Kochassistent-Vorlage.docx` |
+| **4.6** | — (nur Video; Arbeitsblatt aus 4.1 deckt den KI-Wochenplan ab) |
+
+**Notion-Vorlage (WICHTIG — leicht zu vergessen):**
+- ☐ Master-Template „Duplizieren als Vorlage erlauben" ist EIN (inkl. der 🏠 Haushalts-Liste)
+- ☐ Duplikat-Link steht bei **Lektion 3.5 UND Lektion 4.5** (Mentees brauchen die Haushalts-Liste für 4.5)
+
+**Vor Aufnahme klären (erledigt, falls schon gedreht):**
+- ☑ PPTX-Folien gebaut (6 Stück, 4.3 = 10 Folien inkl. Buch-Technik)
+- ☐ Claude Cowork bereit + Notion-Connector eingesteckt für die Live-Demos (L4.4 + L4.5)
+- ☐ „(LÖSCHEN)"-Zeile in der Notion-Haushalts-Liste raus (vor Screenshare in 4.5)
 
 ---
 

@@ -236,7 +236,118 @@ def build_koch():
     path = os.path.join(OUT, "Kochassistent-Vorlage.docx")
     doc.save(path); print("saved", path)
 
-for fn in (build_cockpit, build_claudecode, build_haushalt, build_koch):
+# ===================== DOC 5: Gratis-Chat-One-Shot =====================
+GRATIS = [
+ "Du bist mein Tagesassistent. Unten kommt meine Liste (Business-Woche und/oder",
+ "Haushalt + Familien-Termine). Sag mir bitte für HEUTE",
+ "(Datum: [heute eintragen], Wochentag: [Wochentag eintragen]):",
+ "1. Meine 3 wichtigsten Aufgaben (Money-Making + Termine zuerst)",
+ "2. Was an Haushalt/Familie heute dran ist",
+ "3. Was diese Woche noch Wichtiges kommt (1-2 Sätze)",
+ "Halte dich kurz, sprich mich mit DU an, erfinde nichts — nur was in meiner Liste steht.",
+ "",
+ "MEINE LISTE:",
+ "[hier deine Notion-Woche bzw. Haushalts-Liste reinkopieren]",
+]
+
+def build_gratis():
+    doc = Document()
+    h1(doc, "💬 Gratis-Chat-One-Shot — ohne Abo, ohne Verbindung", "Bonus · Säule 4 · Stufe 0,5")
+    body(doc, "Für alle, die (noch) kein Pro-Abo oder Cowork wollen. Einmal in ein leeres Gratis-Chatfenster (ChatGPT oder Claude) kopieren und deine Liste darunter einfügen. Kein Setup, keine Kosten.")
+    h2(doc, "So nutzt du ihn")
+    step(doc, "Öffne ein leeres Chatfenster (ChatGPT oder Claude, Gratis-Version reicht).")
+    step(doc, "Kopiere den Text unten rein.")
+    step(doc, "Trag Datum + Wochentag ein und füg deine Liste darunter ein (aus Notion einfach kopieren).")
+    step(doc, "Fertig — du kriegst deinen Tag sortiert.")
+    h2(doc, "👇 Das hier kopierst du ins Chatfenster")
+    codebox(doc, GRATIS)
+    body(doc, "Ehrliche Grenze: Einmal-Nutzung, kein Gedächtnis, keine Notion-Anbindung — du kopierst jedes Mal neu rein. Für „läuft mit\" → Claude Cowork (Stufe 1).", italic=True)
+    footer(doc)
+    path = os.path.join(OUT, "Gratis-Chat-One-Shot.docx")
+    doc.save(path); print("saved", path)
+
+# ===================== DOC 6: Business-Brief erarbeiten =====================
+BRIEF = [
+ "Du bist meine Biografin. Stell dir vor, du schreibst ein Buch über mich und mein",
+ "Business — du willst mich so gut verstehen, dass du in meiner Stimme schreiben",
+ "könntest. Aus diesem Gespräch erstellen wir am Ende EIN Dokument, das ich später",
+ "jeder KI als Kontext gebe, damit sie wie ICH klingt.",
+ "",
+ "SO GEHST DU VOR:",
+ "- Stell mir IMMER nur EINE Frage nach der anderen, nie alle auf einmal.",
+ "- Warte jeweils auf meine Antwort.",
+ "- Frag so lange und so vertieft nach, bis du das Thema WIRKLICH verstanden hast —",
+ "  hak nach, bitte um ein Beispiel, frag „warum ist dir das wichtig?\", wenn eine",
+ "  Antwort vage, allgemein oder zu kurz ist. Gib dich nicht mit Oberflächlichem",
+ "  zufrieden. Du hörst bei einem Thema erst auf, wenn du es einer fremden Person",
+ "  erklären könntest.",
+ "- Erst wenn ein Baustein wirklich rund ist, gehst du zum nächsten.",
+ "",
+ "Geh diese 6 Bausteine durch (in dieser Reihenfolge):",
+ "",
+ "1. Wer bin ich (Name, Mama von …, mein Weg, im Network mit …, mein Thema)",
+ "2. Wer ist meine Kundin — so konkret wie möglich, nicht „alle Frauen\". Frag nach",
+ "   ihrem Schmerz, ihrem Wunsch, ihrem Alltag.",
+ "3. Was biete ich an (mein Gratis-, Mini- und grosses Produkt) — und welche",
+ "   Transformation steckt dahinter",
+ "4. Meine Themen — worüber rede ich immer wieder",
+ "5. Meine Stimme — locker oder seriös, du oder Sie, typische Wörter von mir,",
+ "   was mir beim Ton wichtig ist",
+ "6. Was du als KI NIE tun sollst — meine Tabus (z.B. keine übertriebenen",
+ "   Versprechen, keine Fremdwörter, keine erfundenen Zahlen)",
+ "",
+ "Bitte mich danach noch um 2-3 eigene kurze Textbeispiele (eine Caption, eine",
+ "Nachricht), damit mein Ton für dich greifbar wird.",
+ "",
+ "Wenn du das Gefühl hast, du hast wirklich ALLE Infos, frag mich zum Schluss:",
+ "„Gibt es noch etwas Wichtiges über dich oder dein Business, das ich noch nicht",
+ "gefragt habe?\" — und erst dann fasse ALLES in EINEM sauberen, gut gegliederten",
+ "Dokument mit der Überschrift „Mein Business-Brief\" zusammen, das ich kopieren",
+ "und abspeichern kann.",
+ "",
+ "Lass uns starten — stell mir deine erste Frage.",
+]
+
+def build_brief():
+    doc = Document()
+    h1(doc, "✍️ Business-Brief erarbeiten — lass dich von der KI interviewen", "Bonus · Säule 4 · Lektion 4.3")
+    body(doc, "Statt vor einem leeren Blatt zu sitzen: lass dir deinen Business-Brief im Gespräch erarbeiten. Funktioniert in jedem Tool — sogar in der Gratis-Chatfunktion. Am Ende hast du EIN sauberes Dokument, das du überall als Wissen hinterlegst.")
+    body(doc, "🔑 Mein Trick (genau so mach ich's selbst): Sag der KI, sie soll tun, als würde sie ein Buch über dich und dein Business schreiben — und so lange und vertieft fragen, bis sie wirklich ALLE Infos hat. Erst wenn sie dich so gut kennt wie eine Autorin ihre Hauptfigur, klingt sie später wie DU.", italic=True)
+    h2(doc, "So gehst du vor")
+    step(doc, "Öffne ein Chatfenster (Claude oder ChatGPT — Gratis reicht) oder dein Cowork.")
+    step(doc, "Kopier den Prompt unten rein.")
+    step(doc, "Beantworte die Fragen, eine nach der anderen — gib dir Zeit, antworte ehrlich und ausführlich.")
+    step(doc, "Lass die KI ruhig nachbohren. Je tiefer sie fragt, desto besser wird dein Brief.")
+    step(doc, "Am Schluss spuckt dir die KI „Mein Business-Brief\" als fertiges Dokument aus → kopieren + speichern.")
+    h2(doc, "👇 Das hier kopierst du ins Chatfenster")
+    codebox(doc, BRIEF)
+    footer(doc)
+    path = os.path.join(OUT, "Business-Brief-erarbeiten.docx")
+    doc.save(path); print("saved", path)
+
+# ===================== DOC 7: Cowork einrichten =====================
+def build_cowork():
+    doc = Document()
+    h1(doc, "🖥 Claude Cowork einrichten — einmalig, ~10 Min", "Bonus · Säule 4 · Lektion 4.4")
+    body(doc, "Das machst du EINMAL in Lektion 4.4. Danach laufen alle deine Bots darin — du musst es nie wieder einrichten. Kein Code, nur Knöpfe.")
+    h2(doc, "Was du brauchst")
+    bullet(doc, "Einen Computer (Mac oder Windows)")
+    bullet(doc, "Ein Claude-Pro-Abo (~20-23 CHF/Monat) — die Gratis-Version reicht für Cowork nicht")
+    bullet(doc, "Etwa 10 Minuten")
+    h2(doc, "Schritt für Schritt")
+    step(doc, "Claude Desktop installieren: Gehe auf claude.ai/download und lade die Desktop-App für dein System. Installieren, öffnen, mit deinem Claude-Konto anmelden.")
+    step(doc, "Cowork öffnen: In der App findest du den Cowork-Bereich. (Falls du ihn nicht siehst: prüfe, ob dein Pro-Abo aktiv ist.)")
+    step(doc, "Notion verbinden (der „Connector\" / Stecker): Einstellungen → Connectors → Notion auswählen → du wirst zu Notion geleitet → einloggen → freigeben, welche Seiten Claude sehen darf (mindestens dein Business-Brain + dein Privat-Bereich „Privat & Familie\"). Ab jetzt kann Claude in deinem Notion lesen.")
+    step(doc, "Testen: Neuen Bot/Auftrag anlegen, frag z.B. „Was steht in meiner Notion-Wochenplanung?\". Wenn er antwortet → Verbindung läuft. 🎉")
+    h2(doc, "Wichtig")
+    bullet(doc, "Einmal eingerichtet, gilt für ALLE Bots (Cockpit, Haushalts-Helfer, Koch). Du verbindest Notion nicht jedes Mal neu.")
+    bullet(doc, "Du gibst selbst frei, welche Seiten Claude sehen darf — er sieht nicht „dein ganzes Notion\", nur was du freischaltest.")
+    bullet(doc, "Deinen Business-Brief legst du einmal in die Bot-Anweisung (oder als Notion-Seite, die der Bot liest) — auch nicht jedes Mal neu.")
+    footer(doc)
+    path = os.path.join(OUT, "Cowork-einrichten-Anleitung.docx")
+    doc.save(path); print("saved", path)
+
+for fn in (build_cockpit, build_claudecode, build_haushalt, build_koch, build_gratis, build_brief, build_cowork):
     try:
         fn()
     except PermissionError as e:
