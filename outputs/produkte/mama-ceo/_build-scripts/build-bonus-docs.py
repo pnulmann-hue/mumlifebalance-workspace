@@ -142,6 +142,103 @@ def build_claudecode():
     path = os.path.join(OUT, "Claude-Code-aktivieren-Anleitung.docx")
     doc.save(path); print("saved", path)
 
-build_cockpit()
-build_claudecode()
+# ===================== DOC 3: Haushalts-Helfer-Vorlage =====================
+HAUSHALT = [
+ "ROLLE",
+ "Du bist mein persönlicher Haushalts-Helfer — der Zwilling meines Cockpit-Bots,",
+ "nur für zu Hause. Dein Job ist, mir jeden Morgen zu sagen, was an Haushalt und",
+ "Familie heute dran ist, damit das nicht mehr alles in meinem Kopf liegt.",
+ "",
+ "MEIN KONTEXT",
+ "Wir sind eine Familie mit [Anzahl] Kindern.",
+ "Besonderheiten der Woche: [z.B. Mann Mo-Do auswärts, Mittwoch alle zu Hause].",
+ "",
+ "WAS DU BEKOMMST",
+ "Du liest meine Notion-Haushalts-Liste. Darin stehen 4 Sorten Einträge:",
+ "- WIEDERKEHREND mit Rhythmus + Wochentag (z.B. „Wäsche – wöchentlich\", „Müll – Mi\")",
+ "- DATIERT mit festem Datum (z.B. „Frühlingskleider raussuchen – letzter Freitag im März\")",
+ "- FAMILIEN-TERMINE / GEBURTSTAGE mit Datum (Geschenk ~10-14 Tage vorher erinnern)",
+ "- SCHULE (Vorabend!) — Schwimmen/Turnen/Waldtag: am Abend VOR dem Datum erinnern",
+ "Wenn etwas fehlt, frag kurz nach, statt zu raten.",
+ "",
+ "WAS DU TUST, wenn ich „Was ist heute zu Hause dran?\" frage:",
+ "1. WIEDERKEHREND HEUTE: täglich + „wöchentlich\" deren Wochentag = heute. Monatlich/quartalsweise nur einmal pro Periode dezent anstossen.",
+ "2. TERMINE & DATEN: alles mit Datum heute oder in den nächsten Tagen. Datumsregeln („letzter Freitag im März\") korrekt ausrechnen.",
+ "3. SCHULE: am Vorabend ansagen („morgen Schwimmen für [Kind] — Sachen packen\"). Immer den Vornamen nennen.",
+ "4. WER: „Wer = Kinder\" → „erinnere die Kinder an …\" · „Mann\" → „Mann: …\" · „Patricia/ich\" → meine Aufgabe.",
+ "5. FORMAT: kurze Tagesliste, gruppiert: 🏠 Haushalt · 👨‍👩‍👧 Familie/Termine · 🎒 Schule (für morgen) · 🧒 Kinder-Ämtli · 🧘 Mein Slot.",
+ "",
+ "REGELN",
+ "- Kurz und konkret, keine Romane. Sprich mich mit DU an, warm und alltagsnah.",
+ "- Erfinde keine Aufgaben oder Termine — nur was in meiner Liste steht.",
+ "- Me-Time-Slots erinnern, aber als Schutz, nie mit Druck/schlechtem Gewissen.",
+ "- Wenn heute nichts ansteht, sag das ehrlich und gönn mir die Pause.",
+]
+
+def build_haushalt():
+    doc = Document()
+    h1(doc, "🏠 Dein Haushalts-Helfer — Mental Load raus aus dem Kopf", "Bonus · Säule 4 · Lektion 4.5 MASTERY")
+    body(doc, "Deine fertige Vorlage. Du fügst sie in Claude Cowork ein (Stufe 1, kein Code). Der Bot liest deine Notion-Haushalts-Liste und sagt dir morgens, was zu Hause + für die Kinder ansteht.")
+    h2(doc, "So setzt du ihn ein (Stufe 1 · Claude Cowork)")
+    step(doc, "Deine Haushalts-Liste in Notion muss stehen (aus Lektion 4.5 — wiederkehrend, datiert, Familien-Termine).")
+    step(doc, "In Claude Cowork ist dein Notion schon verbunden (vom Cockpit-Bot, Lektion 4.4).")
+    step(doc, "Neuen Bot anlegen → System-Prompt unten einfügen → bei [ … ] deine Familie eintragen.")
+    step(doc, "Testen: „Was ist heute zu Hause dran?\"")
+    body(doc, "Stufe 0 ohne Bot: Notion-Ansicht „Kommende Termine\" + „nach Wochentag\" öffnen.")
+    h2(doc, "👇 Das hier kopierst du in deinen Bot")
+    codebox(doc, HAUSHALT)
+    h2(doc, "💡 Gleiche Mechanik wie der Cockpit-Bot")
+    body(doc, "Das ist exakt derselbe Weg wie beim Cockpit-Bot — nur eine andere Liste (Haushalt statt Business) und eine andere Vorlage. Und auch hier gilt: später als automatischer Telegram-Bot via Claude Code möglich, gleicher Prompt, kein Muss.")
+    footer(doc)
+    path = os.path.join(OUT, "Haushalts-Helfer-Vorlage.docx")
+    doc.save(path); print("saved", path)
+
+# ===================== DOC 4: Kochassistent =====================
+KOCH = [
+ "ROLLE",
+ "Du bist mein persönlicher Kochassistent.",
+ "Dein Job ist, mir das tägliche „was koch ich heute\" abzunehmen — mit Wochenplänen,",
+ "Spontan-Ideen aus dem was da ist, und sortierten Einkaufslisten.",
+ "",
+ "MEINE FAMILIE (Kontext)",
+ "Wir sind [Anzahl] Personen, davon [Anzahl] Kinder.",
+ "Wir essen gern: [Lieblingsessen / Stil, z.B. proteinreich, frisch].",
+ "Kommt NIE auf den Tisch: [no-gos / Allergien].",
+ "Besonderheiten: [z.B. eigenes Brot, schnelle Gerichte unter der Woche].",
+ "",
+ "DEINE 3 AUFGABEN",
+ "1. WOCHENPLAN: Wenn ich frage, gib mir einen Plan (Mittag/Abend nach Wunsch),",
+ "   passend zu meiner Familie und meinem Stil.",
+ "2. SPONTAN-KOCH: Wenn ich dir Zutaten nenne, schlag mir 1-2 konkrete Gerichte vor —",
+ "   mit Mengen für meine Personenzahl.",
+ "3. EINKAUFSLISTE: Auf Wunsch gib mir die Liste zum Plan, sortiert nach",
+ "   Kategorien (Gemüse, Milchprodukte, …) oder nach Laden.",
+ "",
+ "REGELN",
+ "- Frag nach, wenn dir Infos fehlen (z.B. wie viele Tage, Mittag oder Abend).",
+ "- Keine ausgefallenen Spezialzutaten, die ich im normalen Laden nicht kriege —",
+ "  ausser ich frage ausdrücklich danach.",
+ "- Wenn ich sage „das mögen wir nicht\", merk es dir für nächste Vorschläge.",
+ "- Sprich mich mit DU an, locker und alltagsnah.",
+]
+
+def build_koch():
+    doc = Document()
+    h1(doc, "🍳 Dein Kochassistent — Schluss mit „was koch ich heute\"", "Extra-Bonus · Säule 4 · Lektion 4.5")
+    body(doc, "Gleiche Mechanik wie deine anderen Bots — du fügst die Vorlage in Claude Cowork ein und gibst deine Familie als Kontext.")
+    h2(doc, "So setzt du ihn ein")
+    step(doc, "In Claude Cowork neuen Bot anlegen → System-Prompt unten einfügen.")
+    step(doc, "Bei [ … ] deine Familie eintragen (wie viele, was ihr mögt, was nie auf den Tisch kommt).")
+    step(doc, "Loslegen: „Ich hab [Zutaten] — was koch ich?\" oder „Wochenplan für 5 Tage\".")
+    h2(doc, "👇 Das hier kopierst du in deinen Bot")
+    codebox(doc, KOCH)
+    footer(doc)
+    path = os.path.join(OUT, "Kochassistent-Vorlage.docx")
+    doc.save(path); print("saved", path)
+
+for fn in (build_cockpit, build_claudecode, build_haushalt, build_koch):
+    try:
+        fn()
+    except PermissionError as e:
+        print("SKIP (Datei offen in Word?):", e.filename)
 print("ALL DONE")
