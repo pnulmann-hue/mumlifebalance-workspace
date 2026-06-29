@@ -14,8 +14,8 @@ tags: [produkt, mama-ceo, saeule-4, intern, aufnahme]
 
 ☐ **0.1 Claude Desktop + Pro-Abo** aktiv, Notion-Connector schon getestet.
 ☐ **0.2 Deine Haushalts-Liste in Notion** gefüllt ✅ (ist erledigt — 4 Kinder komplett).
-☐ **0.3 ⚠️ Dein Business-Brief** — den brauchst du für den Cockpit-Demo (4.4)! Hast du noch NICHT geschrieben.
-   → Vorher mit dem Bonus-5-Prompt erarbeiten (10 Min) ODER im Video 4.3 live erarbeiten und gleich für 4.4 nutzen.
+☑ **0.3 Dein Business-Brief** — fertig in `_patricia-business-brief.md` (echte Produkttreppe + Stimme + Tabus). Den brauchst du für den Cockpit-Demo (4.4).
+   → Beim Filmen griffbereit haben (Baustein 1-3 = was du in den Bot-Prompt unter MEIN KONTEXT einfügst). In 4.3 kannst du zeigen, wie er entstand; in 4.4 nutzt du ihn.
 ☐ **0.4 ⚠️ Notion-Master-Template „Duplizieren erlauben"** einschalten — DAMIT die Mentees die Vorlage (inkl. der neuen Haushalts-Liste) kriegen.
    → Template öffnen → Teilen → „Im Web veröffentlichen" → „Duplizieren als Vorlage erlauben" EIN → Link kopieren.
    → Kurz prüfen: ist die **🏠 Haushalts-Liste** im Template sichtbar (sie ist dort angelegt)? Beim Duplizieren kommt sie mit.
@@ -140,5 +140,5 @@ REGELN
 ☐ Claude Desktop offen + Pro aktiv
 ☐ Notion-Connector verbunden (Test: „Was steht in meiner Wochenplanung?")
 ☐ Haushalts-Liste in Notion gefüllt (ist sie ✓)
-☐ Business-Brief griffbereit (für Cockpit-Bot)
+☑ Business-Brief griffbereit (für Cockpit-Bot) — `_patricia-business-brief.md`, fertig
 ☐ Dieses Drehbuch + die PPTX (Sprechnotizen) offen
