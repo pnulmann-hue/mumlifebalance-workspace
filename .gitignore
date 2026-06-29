@@ -302,3 +302,6 @@ scripts/story-render-bot/render/node_modules/
 
 # Mama-CEO Webinar-Mails-Vorschau ZIP
 !outputs/produkte/mama-ceo/08-funnel/webinar-mails-vorschau.zip
+
+# Lokale MCP-Konfig mit echten Tokens — nie committen (Beispiel: .mcp.json.example)
+.mcp.json

@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "activecampaign": {
+      "command": "node",
+      "args": [
+        "C:/Users/pnulm/Desktop/Mein Business/04-projects/activecampaign-mcp/index.js"
+      ],
+      "env": {
+        "AC_API_URL": "https://mumlifebalance.api-us1.com",
+        "AC_API_KEY": "DEIN_AC_API_KEY_HIER"
+      }
+    },
+    "submagic": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://api.submagic.co/mcp",
+        "--header",
+        "DEIN_HEADER_HIER"
+      ]
+    },
+    "notion": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@notionhq/notion-mcp-server"
+      ],
+      "env": {
+        "NOTION_TOKEN": "DEIN_HEADER_HIER",
+        "OPENAPI_MCP_HEADERS": "DEIN_HEADER_HIER"
+      }
+    }
+  }
+}
