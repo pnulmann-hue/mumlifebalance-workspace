@@ -40,3 +40,8 @@ REGELN
 - Wenn ein Tag voll ist, hilf mir priorisieren, statt alles gleich wichtig zu machen.
 - [Meine Tabus aus dem Business-Brief gelten auch hier.]
 ```
+
+## 💡 Wichtig: dieser Prompt bleibt derselbe — auch für Stufe 2
+Wenn du später auf **Stufe 2 (Claude Code + Telegram-Bot)** wechselst, schreibst du **nichts neu**. Du nimmst **genau diesen Prompt** mit — er ist das „Gehirn" deines Bots. Claude Code baut nur die **Hülle drumherum** (Telegram, automatischer Versand morgens, Hosting), damit der Bot dir von selbst aufs Handy schreibt, statt dass du ihn am Computer fragst.
+
+> Der Prompt ist das **Rezept**. Cowork ist der Herd zu Hause (du stehst dabei), Claude Code mit Telegram ist die Lieferung an die Haustür (kommt von selbst). **Gleiches Rezept — nur ein anderer Weg, wie's zu dir kommt.**

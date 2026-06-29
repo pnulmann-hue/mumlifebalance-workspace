@@ -9,6 +9,9 @@ tags: [produkt, mama-ceo, saeule-4, bonus, anleitung]
 ## Was Claude Code ist
 Eine Werkzeug-Umgebung, in der du echte, automatische Bots bauen lässt — z.B. einen Telegram-Bot, der jeden Morgen dein Briefing schickt. Du programmierst nicht selbst: **du sagst Claude Code in normaler Sprache, was du willst, und es baut + erklärt dir alles Schritt für Schritt.**
 
+## 💡 Du fängst NICHT bei null an
+Den Bot-Prompt hast du schon — den **Cockpit-Prompt aus Bonus 1** (bzw. den Haushalts-Prompt aus Bonus 2). Den nimmst du **1:1 mit**, du schreibst nichts Neues. Claude Code baut nur die **Hülle** drumherum: die Telegram-Verbindung, den automatischen Versand am Morgen und das Hosting. Dein Prompt ist das Rezept, Claude Code ist die Lieferung an die Haustür.
+
 ## Was du dafür brauchst
 - Ein Claude-Abo
 - Etwas Zeit + die Bereitschaft, ein paar Dinge einmal einzurichten (du arbeitest in einem Fenster mit Texteingabe, dem „Terminal" — klingt schlimmer als es ist)
