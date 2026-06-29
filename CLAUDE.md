@@ -639,6 +639,17 @@ Statt stumpfer Zusammenfassung **redigiert Claude wie eine Chefredakteurin**: w�
 - **Env:** `PIA_BOT_TOKEN` (eigener BotFather-Bot, NICHT der Story-Bot) + `ANTHROPIC_API_KEY` (+ optional `OPENAI_API_KEY`, `PIA_ADMIN_CHAT_ID`).
 - **Status:** Code fertig + Bio-Generierung live getestet. Offen: BotFather-Token + Railway-Deploy + Testrunde. Doku: `scripts/pia-bot/README.md`. Launch-Logik: `outputs/produkte/mba-launch/challenge-launch-plan.md`.
 
+### Haushalts-Bot — Vorabend-Push (`scripts/haushalts-bot/`, seit 2026-06-29)
+
+**Privater Zwilling des Cockpit-Bots fürs Zuhause.** Schickt Patricia **jeden Abend 19:00** (Europe/Zurich) einen Vorabend-Überblick für den **nächsten Tag** aus der Notion **🏠 Haushalts-Liste** (DB `745ae127-1f03-4dc0-83d4-a6a8058d99dc`, im Privat-Bereich „🏡 Privat & Familie") — über einen **eigenen** Telegram-Bot (nicht der Cockpit-Bot).
+
+- **Sprache:** Python 3.12 · `notion-client` (REST `databases.query`, plan-unabhängig) + `requests` (Telegram)
+- **Module:** `config.py` · `notion_reader.py` (liest Liste paginiert) · `briefing_builder.py` (Vorabend-Logik) · `run_once.py` (Build + Senden)
+- **Briefing-Gruppen:** 📌 Dranbleiben (überfällige einmalige Termine bis `Erledigt=ja`) · 🏠 Haushalt · 👨‍👩‍👧 Familie/Termine · 🎒 Schule (Vorabend, mit Vorname) · 🧒 Kinder-Ämtli · 🧘 Dein Slot (Me-Time ohne Druck). Wochentage werden auch aus der Notiz gelesen (z.B. Krafttraining „Mo/Mi/Fr"). Quartals-/Saison-Aufgaben kommen NICHT täglich (kein Nagging).
+- **Deployment:** GitHub Action `.github/workflows/haushalt-vorabend.yml`, Cron `0 17 * * *` (= 19:00 CEST / 18:00 CET) + `workflow_dispatch` für Test.
+- **Secrets:** `TELEGRAM_HAUSHALT_BOT_TOKEN`, `TELEGRAM_HAUSHALT_CHAT_ID`, `NOTION_TOKEN` (Integration muss Zugriff auf die Haushalts-Liste haben).
+- **Doku:** `scripts/haushalts-bot/README.md`. Konzept-Hintergrund: `outputs/produkte/mama-ceo/bonus-haushalts-helfer-bot-PATRICIA.md` (das war „Stufe 2").
+
 ### Instagram Content-Engine (Automatisiert, v2 seit 2026-04-21)
 
 **Vollautomatisches Content-System für beide Profile** (Mentoring + doTERRA). Weekly Content-Generation + Daily Auto-Posting + Monthly Best-Performer-Repost. Gesteürt durch 3 Scheduled Tasks + 2 Assistenten (`/reels`, `/karussell`).
