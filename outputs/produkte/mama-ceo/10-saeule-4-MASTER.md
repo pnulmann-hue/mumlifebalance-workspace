@@ -268,7 +268,7 @@ Ich zeig dir meinen eigenen Business-Brief als Beispiel, dann siehst du genau, w
 📋 Lektion 4.3 im Arbeitsblatt: dein eigener Business-Brief, Baustein für Baustein
 ```
 
-## Folien-Plan (9 Folien)
+## Folien-Plan (10 Folien)
 
 | # | Folie | Inhalt | Sprechnotizen |
 |---|---|---|---|
@@ -279,6 +279,7 @@ Ich zeig dir meinen eigenen Business-Brief als Beispiel, dann siehst du genau, w
 | 5 | **Baustein 1-3: dein Fundament** | Wer bin ich (Mama, Network, Thema) · Kundin (konkret, nicht „alle") · Angebot (Gratis/Mini/Gross aus S3) | „Die ersten drei Bausteine kennst du eigentlich schon aus den letzten Säulen. Wer du bist, deine Kundin so konkret wie möglich, nicht ‚alle Frauen', und dein Angebot, das du in Säule 3 als Gratis-, Mini- und grosses Produkt schon sortiert hast. Du schreibst hier nur zusammen, was du längst weisst." |
 | 6 | **Baustein 4-6: dein Charakter** | Themen (deine Überthemen aus S3) · Stimme (wie redest du) · Tabus (was nie) | „Die zweiten drei geben dem Bot deinen Charakter. Deine Überthemen aus der Jahres-Strategie, deine Stimme, also redest du eher locker oder seriös, per du oder per Sie, und deine Tabus, zum Beispiel keine übertriebenen Versprechen, keine Fremdwörter, was auch immer dir wichtig ist. Damit hat die KI Leitplanken." |
 | 7 | **Stimme einfangen: gib Beispiele** | „Häng 2-3 deiner echten Texte an" → Bot lernt deinen Ton | „Der beste Trick für deine Stimme ist erstaunlich einfach: häng zwei, drei deiner echten Texte an den Brief, eine Caption, eine Nachricht, irgendwas das nach dir klingt. Die KI liest das und ahmt deinen Ton nach. Du musst deine Stimme nicht beschreiben können, du musst sie nur zeigen." |
+| 7b 🆕 | **Der einfachere Weg: lass dich interviewen (Buch-Technik)** | Visual: KI stellt Fragen, Mama antwortet → fertiger Brief. „Bonus 5: Business-Brief-Erarbeiten-Prompt" | „Und jetzt mein Lieblings-Trick, den ich selbst die ganze Zeit benutze: du musst dieses Blatt gar nicht alleine ausfüllen. Sag der KI einfach, sie soll tun, als würde sie ein Buch über dich und dein Business schreiben, und sie soll dir so lange und so vertieft Fragen stellen, bis sie wirklich alle Infos von dir hat. Dann sitzt du nicht vor einem leeren Blatt, sondern beantwortest einfach eine Frage nach der anderen, und am Schluss spuckt sie dir deinen fertigen Business-Brief aus. Genau diesen Prompt hab ich dir als Bonus dazugelegt, du musst ihn nur reinkopieren." |
 | 8 | **Mein Business-Brief als Beispiel** | Screenshot/abstrahiert: Patricias Brief (Mama, Network + Online, vierstellig-ehrlich, Anti-Bali, Schweizer Ton) | „Ich zeig dir jetzt meinen eigenen Business-Brief, damit du ein Gefühl kriegst. Du siehst, das ist nichts Hochgestochenes, sondern in normalen Worten: wer ich bin, für wen ich da bin, wie ich rede und was bei mir nie vorkommt. Genau so grob und ehrlich darf deiner auch sein." |
 | 9 | **Arbeitsblatt + nächste Lektion** | „📋 Schreib deinen Business-Brief (6 Bausteine)" · „Nächste Lektion: 4.4 — Cockpit-Bot bauen" | „Im Arbeitsblatt schreibst du jetzt deinen Business-Brief, Baustein für Baustein, und du legst ihn als Notiz ab, wo du ihn immer findest. Den brauchst du in der nächsten Lektion sofort, denn da bauen wir deinen ersten echten Bot, den Cockpit-Bot. Bis gleich." |
 
@@ -729,12 +730,12 @@ MEINE LISTE:
 |---|---|---|
 | 4.1 | `03-praesentationen/saeule-4/01-lektion-4-1.pptx` | ✅ 9 Folien |
 | 4.2 | `.../02-lektion-4-2.pptx` | ✅ 10 Folien |
-| 4.3 | `.../03-lektion-4-3.pptx` | ✅ 9 Folien |
+| 4.3 | `.../03-lektion-4-3.pptx` | ✅ 10 Folien (inkl. Buch-Technik) |
 | 4.4 | `.../04-lektion-4-4.pptx` | ✅ 13 Folien — Live-Demo Cockpit-Bot (Cowork) |
 | 4.5 MASTERY | `.../05-lektion-4-5.pptx` | ✅ 14 Folien — Live-Demo Haushalts-Helfer (Cowork) |
 | 4.6 | `.../06-lektion-4-6.pptx` | ✅ 9 Folien |
 
-→ **6 PPTX im einheitlichen Säule-4-Brand-Look** (python-pptx, weiss/Navy/Petrol/Orange wie Säule 3, Sprechnotizen pro Folie).
+→ **6 PPTX im einheitlichen Säule-4-Brand-Look** (python-pptx, Creme F1ECDD/Navy/Petrol/Orange wie Säule 3, ✓-Häkchen, Sprechnotizen pro Folie).
 → ⚠️ Visuelles Rendern lokal nicht möglich (kein LibreOffice) — Inhalts-QA bestanden (Folienzahl + Titel + Notizen). Patricia: beim ersten Öffnen kurz durchklicken, ob Textmengen passen.
 → **Aufnahme-Hinweis:** L4.4 + L4.5 sind Live-Demos mit Screenshare (Bot bauen). Patricia braucht ihren Bildschirm + **Claude Cowork** + Notion + die Vorlagen offen.
 

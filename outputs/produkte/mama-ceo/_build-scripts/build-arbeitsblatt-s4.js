@@ -100,6 +100,7 @@ children.push(new Paragraph({ pageBreakBefore: true, children: [new TextRun("")]
 // ---------------- 4.3 ----------------
 children.push(H2("Lektion 4.3 · Dein Business-Brief schreiben"));
 children.push(small("Schreib jeden Baustein in 2-4 Sätzen. Kein Roman — Stichworte reichen. Diesen Brief kopierst du später in jeden deiner Bots."));
+children.push(small("💡 Lieber im Gespräch statt vor dem leeren Blatt? Nimm den Bonus-Prompt „Business-Brief erarbeiten\": sag der KI, sie soll ein Buch über dich schreiben und so lange fragen, bis sie alles hat — am Schluss spuckt sie dir den fertigen Brief aus. Diese Felder hier dienen dann als deine Checkliste, dass nichts fehlt."));
 children.push(sub("▸ Baustein 1 — Wer bin ich (Name, Mama von …, im Network mit …, mein Thema)"));
 children.push(blank()); children.push(blank());
 children.push(sub("▸ Baustein 2 — Wer ist meine Kundin (so konkret wie möglich)"));
