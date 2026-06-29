@@ -30,6 +30,7 @@ Auto-Index aller Files in `outputs/reels/`. Siehe [[_MOCs/MOC-Content-Engine]] f
 - [[2026-06-08-mentoring-reel-drehbuecher]]
 - [[2026-06-15-kw25-drehtag-master]]
 - [[2026-06-22-kw26-drehtag-master]]
+- [[2026-06-29-kw27-drehtag-master]]
 - [[2026-06-juni-reel-briefings]]
 - [[2026-KW17-doterra-hot-take-salat-reicht-nicht]]
 - [[2026-KW17-doterra-koerper-schreit]]

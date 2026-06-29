@@ -39,6 +39,7 @@ Auto-Index aller Files in `outputs/karussells/`. Siehe [[_MOCs/MOC-Content-Engin
 - [[2026-06-08-mentoring-eine-sache-positionierung]]
 - [[2026-06-15-mentoring-kw25-aufwaerm-briefings]]
 - [[2026-06-22-mentoring-kw26-aufwaerm-briefings]]
+- [[2026-06-29-mentoring-kw27-cart-weekend-briefing]]
 - [[2026-KW17-doterra-3-naehrstoffe-35]]
 - [[2026-KW17-doterra-3-uhr-mental-load]]
 - [[2026-KW17-doterra-haarausfall-wake-up]]
