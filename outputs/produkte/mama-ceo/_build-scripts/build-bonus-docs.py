@@ -193,47 +193,119 @@ def build_haushalt():
     path = os.path.join(OUT, "Haushalts-Helfer-Vorlage.docx")
     doc.save(path); print("saved", path)
 
-# ===================== DOC 4: Kochassistent =====================
+# ===================== DOC 4: Kochassistent (ausführlich) =====================
 KOCH = [
  "ROLLE",
- "Du bist mein persönlicher Kochassistent.",
- "Dein Job ist, mir das tägliche „was koch ich heute\" abzunehmen — mit Wochenplänen,",
- "Spontan-Ideen aus dem was da ist, und sortierten Einkaufslisten.",
+ "Du bist mein persönlicher Kochassistent. Dein Job ist, mir das tägliche",
+ "„was koch ich heute\" abzunehmen — mit Wochenplänen, Spontan-Ideen aus dem,",
+ "was gerade da ist, sortierten Einkaufslisten und Hilfe bei Küchen-Projekten.",
  "",
- "MEINE FAMILIE (Kontext)",
- "Wir sind [Anzahl] Personen, davon [Anzahl] Kinder.",
- "Wir essen gern: [Lieblingsessen / Stil, z.B. proteinreich, frisch].",
- "Kommt NIE auf den Tisch: [no-gos / Allergien].",
- "Besonderheiten: [z.B. eigenes Brot, schnelle Gerichte unter der Woche].",
+ "MEIN HAUSHALT",
+ "- Wir sind [Anzahl] Personen: [z.B. 2 Erwachsene + 3 Kinder, Alter 9/7/4].",
+ "- Mittagessen: [wer isst mit, an welchen Tagen].",
+ "- Abendessen: [warm oder kalt, wie viele Personen].",
+ "- Wochenende: [kocht jemand mit, mehr Zeit?].",
+ "- Unterwegs / Wandertage: [brauche ich transportfähige Mahlzeiten + Snacks?].",
  "",
- "DEINE 3 AUFGABEN",
- "1. WOCHENPLAN: Wenn ich frage, gib mir einen Plan (Mittag/Abend nach Wunsch),",
- "   passend zu meiner Familie und meinem Stil.",
- "2. SPONTAN-KOCH: Wenn ich dir Zutaten nenne, schlag mir 1-2 konkrete Gerichte vor —",
- "   mit Mengen für meine Personenzahl.",
- "3. EINKAUFSLISTE: Auf Wunsch gib mir die Liste zum Plan, sortiert nach",
- "   Kategorien (Gemüse, Milchprodukte, …) oder nach Laden.",
+ "ERNÄHRUNGSPROFIL",
+ "- Stil: [z.B. proteinreich, viel Gemüse, wenig Zucker, wenig Weizen, saisonal].",
+ "- Was immer geht / Lieblingsgerichte: [...].",
+ "- Kommt NIE auf den Tisch: [No-Gos, Allergien, Unverträglichkeiten].",
+ "- Besondere Ziele (optional): [z.B. mehr Protein, abnehmen, bestimmte Makros].",
+ "",
+ "KÜCHENRHYTHMUS",
+ "- Unter der Woche: schnelle Gerichte (max [X] Min aktive Zeit) ODER morgens vorbereitbar.",
+ "- Abend: [Ideen-Rotation, z.B. Salate, Wraps, Aufschnitt, Reste kreativ].",
+ "- Wochenende: mehr Zeit, evtl. Projekte (Brot, Meal Prep, Einmachen).",
+ "",
+ "KÜCHENAUSSTATTUNG",
+ "- [z.B. Thermomix, Backofen, Dampfgarer, Airfryer, Slow Cooker] —",
+ "  nutze jeweils die beste Methode, nicht zwingend dasselbe Gerät.",
+ "",
+ "EINKAUF & VORRÄTE",
+ "- Hauptladen: [z.B. Migros / Aldi / Lidl].",
+ "- Einkaufsrhythmus: [1x pro Woche / alle 14 Tage].",
+ "- Das ist IMMER da (Grundvorrat): [kurze Liste].",
+ "- Prüf bei jeder Einkaufsliste, ob diese Sachen noch reichen: [Immer-Check-Liste].",
+ "",
+ "DEINE AUFGABEN",
+ "1. WOCHENPLAN: Auf Anfrage ein Plan (Mittag/Abend nach Wunsch), passend zu",
+ "   Haushalt, Stil und verfügbaren Zutaten. Mit kurzer Zeitangabe pro Gericht.",
+ "2. SPONTAN-KOCH: Wenn ich dir Zutaten nenne, 1-2 konkrete Gerichte mit Mengen",
+ "   für meine Personenzahl.",
+ "3. EINKAUFSLISTE: Auf Wunsch die Liste zum Plan, sortiert nach Kategorien",
+ "   (Gemüse, Milchprodukte, Vorrat …) oder nach Laden.",
+ "4. RESTE-VERWERTUNG: Aus „ich hab noch X übrig\" machst du mir ein Gericht.",
+ "5. PROJEKTMODUS: Auf Wunsch ein Schritt-für-Schritt-Plan über mehrere Tage",
+ "   (z.B. Brot/Sauerteig, Meal Prep, Einmachen) mit Erinnerungen an die nächsten Schritte.",
  "",
  "REGELN",
- "- Frag nach, wenn dir Infos fehlen (z.B. wie viele Tage, Mittag oder Abend).",
+ "- Frag nach, wenn dir Infos fehlen (wie viele Tage, Mittag oder Abend, was ist da).",
  "- Keine ausgefallenen Spezialzutaten, die ich im normalen Laden nicht kriege —",
  "  ausser ich frage ausdrücklich danach.",
- "- Wenn ich sage „das mögen wir nicht\", merk es dir für nächste Vorschläge.",
- "- Sprich mich mit DU an, locker und alltagsnah.",
+ "- Wenn ich sage „das mögen wir nicht\", merk es dir für die nächsten Vorschläge.",
+ "- Rechne Mengen immer auf meine Personenzahl um.",
+ "- Sprich mich mit DU an, locker und alltagsnah, kein Geschwafel.",
 ]
 
 def build_koch():
     doc = Document()
     h1(doc, "🍳 Dein Kochassistent — Schluss mit „was koch ich heute\"", "Extra-Bonus · Säule 4 · Lektion 4.5")
-    body(doc, "Gleiche Mechanik wie deine anderen Bots — du fügst die Vorlage in Claude Cowork ein und gibst deine Familie als Kontext.")
+    body(doc, "Gleiche Mechanik wie deine anderen Bots — du fügst die Vorlage in Claude Cowork ein und gibst deinen Haushalt als Kontext. Je genauer du die Klammern ausfüllst, desto besser passen die Vorschläge zu deiner Familie.")
     h2(doc, "So setzt du ihn ein")
     step(doc, "In Claude Cowork neuen Bot anlegen → System-Prompt unten einfügen.")
-    step(doc, "Bei [ … ] deine Familie eintragen (wie viele, was ihr mögt, was nie auf den Tisch kommt).")
-    step(doc, "Loslegen: „Ich hab [Zutaten] — was koch ich?\" oder „Wochenplan für 5 Tage\".")
+    step(doc, "Füll die [ … ]-Klammern aus (Haushalt, Ernährungsstil, No-Gos, Ausstattung, Vorräte). Nimm dir 10 Minuten — das ist die Einarbeitung deiner „Küchen-Praktikantin\".")
+    step(doc, "Loslegen: „Ich hab [Zutaten] — was koch ich?\" · „Wochenplan für 5 Tage\" · „Einkaufsliste dazu\".")
+    body(doc, "💡 Tipp: Du musst nicht alles auf einmal ausfüllen. Fang mit Haushalt + Ernährungsstil + No-Gos an, den Rest ergänzt du, wenn der Bot mal etwas vorschlägt, das nicht passt.")
     h2(doc, "👇 Das hier kopierst du in deinen Bot")
     codebox(doc, KOCH)
+    body(doc, "Je mehr du den Bot mit der Zeit fütterst („das war super\", „das mochten die Kinder nicht\"), desto besser trifft er deinen Geschmack — genau wie eine echte Küchenhilfe, die dich kennenlernt.", italic=True)
     footer(doc)
     path = os.path.join(OUT, "Kochassistent-Vorlage.docx")
+    doc.save(path); print("saved", path)
+
+# ===================== DOC 8: Notion-Haushalts-Liste-Vorlage =====================
+def build_notion_haushalt():
+    doc = Document()
+    h1(doc, "🗂 Deine Notion-Haushalts-Liste (Vorlage)", "Bonus · Säule 4 · Lektion 4.5")
+    body(doc, "Das ist die Liste, aus der dein Haushalts-Helfer-Bot liest. Du baust sie EINMAL — danach trägst du nur noch ein, was anfällt, und der Bot erinnert dich morgens daran.")
+    h2(doc, "Der schnelle Weg: duplizieren (empfohlen)")
+    body(doc, "Die 🏠 Haushalts-Liste ist Teil meines Notion-Master-Templates (das du in Säule 3 schon dupliziert hast). Wenn du das Template kopiert hast, ist die Liste automatisch dabei — du musst nichts selbst bauen. Falls noch nicht: nimm den Duplizieren-Link aus Lektion 3.5 bzw. 4.5 und klick „Duplizieren\". Die Haushalts-Liste kommt mit.")
+    h2(doc, "So ist die Liste aufgebaut (falls du sie selbst anlegst)")
+    rows = [
+        ("Spalte", "Typ", "Wofür"),
+        ("Aufgabe", "Titel", "Was zu tun ist (z.B. „Wäsche waschen\")"),
+        ("Bereich", "Auswahl", "Haushalt · Familie · Schule · Kinder-Ämtli · Me-Time"),
+        ("Rhythmus", "Auswahl", "einmalig · täglich · wöchentlich · monatlich · saisonal"),
+        ("Wochentag", "Auswahl", "bei „wöchentlich\": Mo–So (z.B. „Mi\")"),
+        ("Fixes Datum", "Datum", "bei datierten Sachen (Geburtstag, Kleider raussuchen …)"),
+        ("Wer", "Auswahl/Text", "ich · Mann · Kinder · [Name des Kindes]"),
+        ("Erledigt", "Checkbox", "abhaken, wenn erledigt"),
+    ]
+    t = doc.add_table(rows=len(rows), cols=3)
+    t.style = "Light Grid Accent 1"
+    for r, (c0, c1, c2) in enumerate(rows):
+        cells = t.rows[r].cells
+        for c, txt in zip(cells, (c0, c1, c2)):
+            c.text = ""
+            p = c.paragraphs[0]; run = p.add_run(txt)
+            run.font.name = "Calibri"; run.font.size = Pt(10)
+            run.font.bold = (r == 0)
+            run.font.color.rgb = NAVY if r == 0 else BODY
+    doc.add_paragraph()
+    h2(doc, "Die 4 Sorten Einträge (so denkt der Bot)")
+    step(doc, "WIEDERKEHREND — Rhythmus + Wochentag (z.B. Wäsche wöchentlich, Müll Mi)")
+    step(doc, "DATIERT — festes Datum (z.B. Frühlingskleider letzter Freitag im März)")
+    step(doc, "FAMILIEN-TERMINE / GEBURTSTAGE — mit Datum (Geschenk ~10-14 Tage vorher erinnern)")
+    step(doc, "SCHULE (Vorabend!) — Schwimmen / Turnen / Waldtag: am Abend VOR dem Tag erinnern, mit Vorname des Kindes")
+    h2(doc, "Fertige Ansichten (für Stufe 0 — auch ganz ohne Bot ein Gewinn)")
+    bullet(doc, "„Nach Wochentag“ — was an welchem Tag dran ist")
+    bullet(doc, "„Kommende Termine“ — alles Datierte chronologisch")
+    bullet(doc, "„Schule (Vorabend)“ — was du heute Abend schon packen musst")
+    h2(doc, "So füllst du sie")
+    body(doc, "Nimm deinen Brain-Dump aus Säule 2 (Hütchen-Inventar — alle „muss ich noch\"-Sachen rund um Haushalt + Familie) und trag jede Sache als Zeile ein, mit Rhythmus oder festem Datum. Fertig ist besser als perfekt. Danach setzt du den Haushalts-Helfer-Bot (Bonus 2) drauf — er liest genau diese Liste.")
+    footer(doc)
+    path = os.path.join(OUT, "Notion-Haushalts-Liste-Vorlage.docx")
     doc.save(path); print("saved", path)
 
 # ===================== DOC 5: Gratis-Chat-One-Shot =====================
@@ -347,7 +419,7 @@ def build_cowork():
     path = os.path.join(OUT, "Cowork-einrichten-Anleitung.docx")
     doc.save(path); print("saved", path)
 
-for fn in (build_cockpit, build_claudecode, build_haushalt, build_koch, build_gratis, build_brief, build_cowork):
+for fn in (build_cockpit, build_claudecode, build_haushalt, build_koch, build_gratis, build_brief, build_cowork, build_notion_haushalt):
     try:
         fn()
     except PermissionError as e:

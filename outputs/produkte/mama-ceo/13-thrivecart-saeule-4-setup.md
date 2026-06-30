@@ -37,11 +37,11 @@ Am Ende dieser 2 Wochen:
 Live-Call 3 (Ende W6): Bot-Bau-Werkstatt · 120 Min · wir bauen gemeinsam, und wer irgendwo hängt, kriegt hier seine Lösung.
 ```
 
-**Modul-Downloads (7 Stück, alle als .docx in `_downloads/`):**
+**Modul-Downloads (8 Stück, alle als .docx in `_downloads/`):**
 - 📋 Arbeitsblatt Säule 4 · ✍️ Business-Brief-erarbeiten · 💬 Gratis-Chat-One-Shot
 - 🖥 Cowork-einrichten-Anleitung · 🌅 Cockpit-Bot-Vorlage · ⚙️ Claude-Code-aktivieren-Anleitung
-- 🏠 Haushalts-Helfer-Vorlage · 🍳 Kochassistent-Vorlage
-- 📂 Notion-Haushalts-DB (Teil des Master-Templates)
+- 🗂 Notion-Haushalts-Liste-Vorlage · 🏠 Haushalts-Helfer-Vorlage · 🍳 Kochassistent-Vorlage
+- 📂 Live-Notion-Haushalts-DB ist zusätzlich Teil des Master-Templates (Duplizieren)
 
 ---
 
@@ -208,7 +208,7 @@ Am Ende weisst du genau, wo KI dir hilft — und wo du als Mensch unersetzlich b
 | **4.2** | 💬 `Gratis-Chat-One-Shot.docx` |
 | **4.3** | ✍️ `Business-Brief-erarbeiten.docx` |
 | **4.4** | 🖥 `Cowork-einrichten-Anleitung.docx` · 🌅 `Cockpit-Bot-Vorlage.docx` · ⚙️ `Claude-Code-aktivieren-Anleitung.docx` |
-| **4.5** | 🏠 `Haushalts-Helfer-Vorlage.docx` · 🍳 `Kochassistent-Vorlage.docx` |
+| **4.5** | 🗂 `Notion-Haushalts-Liste-Vorlage.docx` · 🏠 `Haushalts-Helfer-Vorlage.docx` · 🍳 `Kochassistent-Vorlage.docx` |
 | **4.6** | — (nur Video; Arbeitsblatt aus 4.1 deckt den KI-Wochenplan ab) |
 
 **Notion-Vorlage (WICHTIG — leicht zu vergessen):**
