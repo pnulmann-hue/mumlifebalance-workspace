@@ -60,7 +60,7 @@ Am Ende dieser 2 Wochen:
 ✓ Du kennst die Mama-CEO-Matrix mit ihren vier Feldern (ich · KI · System · raus)
 ✓ Du hast 25 echte Aufgaben sortiert und siehst schwarz auf weiss, wie wenig wirklich „nur du" ist
 ✓ Du weisst, was dein innerer Kreis ist — die Beziehungen, die du nie an eine Maschine abgibst
-✓ Du hast einen 90-Tage-Plan: was du als Nächstes baust, und was du bewusst NICHT machst
+✓ Du hast einen konkreten 3-Monats-Plan: pro Monat Thema, Produkt und 0€-Angebot — rückwärts geplant in deine Aufgabenliste, sodass du jeden Tag weisst, was zu tun ist (und was du bewusst NICHT machst)
 
 Live-Call 4 (Ende W8): Abschluss + 90-Tage-Vision · 90 Min · wir feiern, was du gebaut hast, und schauen nach vorne.
 ```
@@ -297,13 +297,15 @@ WAS DU NACH LEKTION 5.3 HAST
 
 **Beschreibungstext:**
 ```
-Die letzte Lektion des ganzen Programms. Aus deiner Matrix wird jetzt ein Plan: was baust du in den nächsten 90 Tagen, und genauso wichtig — was machst du bewusst NICHT. Denn Fokus entsteht durch Weglassen.
+Die letzte Lektion des ganzen Programms — und du gehst mit einem fertigen Plan raus, nicht nur mit einem guten Gefühl. Wir machen jetzt konkret, was du in Säule 3 als Methode gelernt hast: einen klaren Plan für deine nächsten 3 Monate.
+
+Pro Monat legst du EIN Zentrum fest — ein Thema, ein 0€-Angebot, ein Produkt — und rechnest von dort rückwärts in deine Aufgabenliste. So weisst du an jedem Tag der nächsten 90 Tage, was zu tun ist. Deine Bots aus Säule 4 servieren dir die Aufgaben, und deine Matrix sagt dir, wer sie macht: du, die KI oder ein System.
 
 Du lernst:
-→ Wie du aus deiner Matrix die 3 wichtigsten nächsten Schritte ableitest
-→ Warum „was ich JETZT NICHT mache" deine Geheimwaffe ist
-→ Den „fertig besser als perfekt\"-Switch, der dich ins Tun bringt
-→ Wie's nach dem Programm weitergeht — mit der Community und deinem Cockpit-Bot als Begleiter
+→ Wie du pro Monat dein Zentrum festlegst (Thema · 0€-Angebot · Produkt)
+→ Wie du vom Monatsziel rückwärts in konkrete Wochen- und Tagesaufgaben rechnest
+→ Wie diese Aufgaben in deine Notion-Liste wandern, die dein Cockpit-Bot dir täglich serviert
+→ Warum deine „Nicht-Liste\" (was du bewusst NICHT machst) den Fokus schützt
 
 Und dann feiern wir, was du gebaut hast. Du bist jetzt Mama-CEO.
 ```
@@ -313,44 +315,51 @@ Und dann feiern wir, was du gebaut hast. Du bist jetzt Mama-CEO.
 | # | Folie | Inhalt | Sprechnotizen |
 |---|---|---|---|
 | 1 | **Titel** | „5.4 · Dein 90-Tage-Plan" | „Das ist sie, die letzte Lektion des ganzen Programms. Wir machen jetzt aus all deiner Arbeit einen konkreten Plan für die nächsten neunzig Tage, damit du nicht mit einem schönen Gefühl, sondern mit klaren Schritten rausgehst." |
-| 2 | **Aus der Matrix → ein Plan** | Pfeil: Matrix (5.2) → 90-Tage-Plan | „Dein Plan kommt direkt aus deiner Matrix. Du hast dort gesehen, was zu KI und System soll. Jetzt entscheidest du nur noch: was davon baue ich zuerst? Du erfindest nichts Neues, du priorisierst, was schon dasteht." |
-| 3 | **Die 3 Sachen für 90 Tage** | max. 3 konkrete Bauten (Bot / Automatik / Ämtli) | „Und jetzt die wichtigste Begrenzung: maximal drei Sachen für neunzig Tage. Nicht zehn. Drei konkrete Dinge, die du baust oder einrichtest, zum Beispiel einen weiteren Bot, eine Automatik, ein abgegebenes Ämtli. Drei, die du wirklich durchziehst, sind mehr wert als zehn, die du anfängst." |
-| 4 | **Was du JETZT NICHT machst** | bewusste Nicht-Liste · „Fokus durch Weglassen" | „Und jetzt mein Lieblingsteil, der fast nie gemacht wird: schreib auf, was du in diesen neunzig Tagen bewusst NICHT machst. Kein neues Tool, keine neue Plattform, kein neues Produkt. Diese Nicht-Liste schützt deinen Fokus mehr als jede To-do-Liste." |
-| 5 | **Fertig besser als perfekt** | der Switch: machen statt verschönern | „Und damit du wirklich ins Tun kommst, der wichtigste Satz zum Schluss: fertig ist besser als perfekt. Deine Bots dürfen holprig starten, deine Systeme dürfen Version eins sein. Du verbesserst im Tun, nicht im Grübeln. Das ist der Unterschied zwischen Mamas, die planen, und Mama-CEOs, die liefern." |
-| 6 | **Wie's weitergeht: die Community** | Telegram-Community bleibt offen | „Du bist nach diesem Programm nicht allein. Die Community bleibt offen, auch nach den acht Wochen. Da hast du deine Sparring-Partnerinnen, da fragst du nach, da feierst du Erfolge. Skalieren ist leichter, wenn man nicht allein ist." |
-| 7 | **Dein Cockpit-Bot als Begleiter** | der Bot aus S4 trägt dich weiter (täglich) | „Und dein wichtigster Begleiter ist dein Cockpit-Bot aus Säule 4. Der erinnert dich jeden Morgen an deinen Plan, hält dich auf Kurs und wächst mit dir mit. Das Programm endet, aber dein System läuft weiter, jeden Tag." |
-| 8 | **Live-Call 4 + 90-Tage-Vision** | Abschluss-Call: feiern + nach vorne schauen | „Im Live-Call vier feiern wir gemeinsam, was du in diesen Wochen gebaut hast, und du stellst deinen 90-Tage-Plan vor. Komm mit deiner Matrix und deinem Plan, dann nehmen wir ihn nochmal zusammen unter die Lupe." |
-| 9 | **Was du jetzt hast** | Programm-Rückblick: Zeit · Mindset · Struktur · KI · Matrix | „Schau, was du in acht Wochen gebaut hast: du hast dir Zeit geschaffen, dein Mindset gedreht, eine Struktur in Notion, zwei KI-Mitarbeiter und eine klare Matrix für dein ganzes Business. Das ist kein Kleinkram, das ist eine andere Art zu arbeiten." |
-| 10 | **Abschluss + Arbeitsblatt** | „📋 Dein 90-Tage-Plan + Nicht-Liste" · „Du bist jetzt Mama-CEO" | „Im Arbeitsblatt schreibst du deinen 90-Tage-Plan und deine Nicht-Liste. Und dann sag ich dir von Herzen: du bist jetzt Mama-CEO. Nicht weil alles perfekt ist, sondern weil du führst statt funktionierst. Ich bin so stolz auf dich. Wir sehen uns im Abschluss-Call." |
+| 2 | **Von der Methode zum konkreten Plan** | Säule 3 = Methode gelernt → jetzt: DEINE nächsten 3 Monate | „In Säule 3 hast du die Methode gelernt, wie man von oben nach unten plant. Jetzt machen wir's konkret für dich: einen klaren Plan für die nächsten drei Monate. Am Ende dieser Lektion weisst du an jedem einzelnen Tag, was zu tun ist, und musst nie wieder morgens überlegen, wo du anfängst." |
+| 3 | **Pro Monat EIN Zentrum** | je Monat: 1 Thema · 1 0€-Angebot · 1 Produkt (Monats-Trio aus S3) | „Das Geheimnis ist Fokus: pro Monat gibt es EIN Zentrum. Ein Thema, über das du redest, ein 0€-Angebot, mit dem du Leute reinholst, und ein Produkt, das du verkaufst. Genau das Monats-Trio aus Säule 3. Nicht zehn Themen gleichzeitig, eines pro Monat, das du richtig ausspielst." |
+| 4 | **Beispiel: 3 Monate auf einen Blick** | Tabelle Monat 1/2/3 → Thema · 0€-Angebot · Produkt (Patricia-Beispiel) | „Ich zeig dir meine eigenen nächsten drei Monate als Beispiel, damit du siehst, wie schlicht das aussieht. Eine Zeile pro Monat: Thema, 0€-Angebot, Produkt. Mehr braucht das Grundgerüst nicht. Du füllst gleich deine eigenen drei Zeilen." |
+| 5 | **Rückwärts rechnen** | vom Monatsziel → Wochen → konkrete Aufgaben (Launch rückwärts) | „Und jetzt der wichtigste Denk-Dreh: du planst rückwärts. Du nimmst dein Monatsziel, zum Beispiel diesen Launch am Monatsende, und rechnest rückwärts, was vorher passieren muss. Welche Mails, welche Story-Tage, welcher Content, welches Freebie zuerst. So zerfällt ein grosses Ziel in lauter kleine, machbare Aufgaben." |
+| 6 | **Ab in die Aufgabenliste** | Aufgaben → Notion · Cockpit-Bot serviert sie dir täglich (S3+S4) | „Diese Aufgaben schreibst du nicht auf einen Zettel, der verschwindet, sondern direkt in deine Notion-Aufgabenliste aus Säule 3. Und jetzt zahlt sich alles aus: dein Cockpit-Bot aus Säule 4 serviert dir jeden Morgen genau die Aufgaben, die heute dran sind. Du musst nie wieder den Plan suchen, er kommt zu dir." |
+| 7 | **Wer macht was? Die Matrix entscheidet** | jede Aufgabe durch die Matrix-Brille: ich / KI / System | „Und bei jeder Aufgabe stellst du die Matrix-Frage aus dieser Säule: mach ich das selbst, oder kann es die KI vorbereiten, oder läuft es über ein System? So ist dein Plan nicht nur klar, sondern auch leicht, weil die Hälfte gar nicht mehr auf deinem Tisch landet." |
+| 8 | **Die Nicht-Liste** | bewusst NICHT machen · Fokus-Schutz | „Und mein Lieblingsteil, der fast nie gemacht wird: schreib auf, was du in diesen drei Monaten bewusst NICHT machst. Kein neues Tool, keine neue Plattform, kein fünftes Thema. Diese Nicht-Liste schützt deinen Fokus mehr als jede To-do-Liste, weil sie dich vor dir selbst bewahrt." |
+| 9 | **Fertig besser als perfekt + wie's weitergeht** | der Switch + Community bleibt + Cockpit-Bot begleitet dich | „Zwei Sätze zum Schluss. Erstens: fertig ist besser als perfekt, dein Plan darf Version eins sein, du verbesserst im Tun. Und zweitens: du bist nicht allein. Die Community bleibt offen, und dein Cockpit-Bot begleitet dich jeden Morgen weiter. Das Programm endet, dein System läuft weiter." |
+| 10 | **Abschluss: Du bist jetzt Mama-CEO** | Programm-Rückblick (Zeit·Mindset·Struktur·KI·Matrix·Plan) + Live-Call 4 | „Schau, was du in acht Wochen gebaut hast: Zeit, ein neues Mindset, eine Struktur in Notion, zwei KI-Mitarbeiter, eine klare Matrix und jetzt einen konkreten Plan für drei Monate. Im Arbeitsblatt füllst du diesen Plan aus. Und dann sag ich dir von Herzen: du bist jetzt Mama-CEO, nicht weil alles perfekt ist, sondern weil du führst statt funktionierst. Wir sehen uns im Live-Call vier, bring deinen Plan mit." |
 
 ## Arbeitsblatt-Sektion 5.4
 
 ```
-LEKTION 5.4 · Dein 90-Tage-Plan
+LEKTION 5.4 · Dein 90-Tage-Plan (dein konkreter 3-Monats-Plan)
 
-▸ Deine 3 Bauten für die nächsten 90 Tage (aus KI/System deiner Matrix)
-1. _______________________________  (bis wann: ______)
-2. _______________________________  (bis wann: ______)
-3. _______________________________  (bis wann: ______)
+▸ Schritt 1: Pro Monat dein Zentrum festlegen (das Monats-Trio aus Säule 3)
+| Monat | Thema (worüber rede ich) | 🎁 0€-Angebot | 💎 Produkt | Monatsziel |
+| Monat 1 | _____________ | _____________ | _____________ | _____________ |
+| Monat 2 | _____________ | _____________ | _____________ | _____________ |
+| Monat 3 | _____________ | _____________ | _____________ | _____________ |
 
-▸ Was du JETZT NICHT machst (deine Fokus-Schutz-Liste)
-1. _______________________________
-2. _______________________________
-3. _______________________________
+▸ Schritt 2: Rückwärts rechnen (nimm Monat 1)
+Mein Monatsziel: _______________________________
+Was muss VORHER passieren? (Mails, Content, Freebie, Story-Tage …)
+Woche 4: _______________________________
+Woche 3: _______________________________
+Woche 2: _______________________________
+Woche 1: _______________________________
+
+▸ Schritt 3: Aufgaben in die Notion-Liste + stempeln (🤖 KI / ⚙️ System / 🙋 ich)
+☐ Aufgaben aus Monat 1 in meine Notion-Aufgabenliste eingetragen
+☐ Jede Aufgabe gestempelt (wer macht sie?)
+☐ Mein Cockpit-Bot serviert sie mir morgens
+
+▸ Deine Nicht-Liste (was du in diesen 90 Tagen bewusst NICHT machst)
+1. _______________  2. _______________  3. _______________
 
 ▸ Dein „fertig besser als perfekt"-Vorsatz
 Was startest du bewusst in Version 1 (statt es noch zu verschönern)?
 _______________________________
 
-▸ Wie's weitergeht
-☐ Ich bleibe in der Community aktiv
-☐ Mein Cockpit-Bot erinnert mich täglich an meinen Plan
-☐ Ich komme mit Matrix + Plan in den Live-Call 4
-
 WAS DU NACH LEKTION 5.4 HAST · PROGRAMM ABGESCHLOSSEN
-✓ Dein 90-Tage-Plan steht (max. 3 Bauten)
+✓ Dein 3-Monats-Plan steht: pro Monat Thema, 0€-Angebot, Produkt
+✓ Monat 1 ist rückwärts in konkrete Aufgaben heruntergebrochen — in Notion, vom Cockpit-Bot serviert
 ✓ Deine Nicht-Liste schützt deinen Fokus
-✓ Du weisst, wie's nach dem Programm weitergeht
 ✓ Du bist Mama-CEO — du führst statt zu funktionieren
 ```
 
