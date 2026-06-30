@@ -11,7 +11,7 @@ tags: [patricia, expertise]
 2. Finde dein Thema als Network-Mama in 60 Minuten (11 Lektionen)
 3. Instagram Kundenmaschine (31 Lektionen — umfangreichster Kurs)
 4. Vom Network-Wissen zum eigenen Produkt (12 Lektionen)
-5. Mama-CEO (Willkommen + Säule 1–3 = 18 Lektionen · Stand 2026-06-11 · Säule 4–5 folgen)
+5. Mama-CEO (Willkommen + Säule 1–4 = 24 Lektionen · Stand 2026-06-29 · Säule 5 produziert, Aufnahme folgt)
 
 ---
 
@@ -91,7 +91,7 @@ Patricias Zahl: **90% Conversion in Challenges** wenn richtig aufgebaut.
 - **Kürzer ist besser** — Sanitär-Beispiel: 10-Min-Lösung > 3-Stunden-Herumschrauben
 - **Jede Lektion braucht Mehrwert & Ergebnis** — nicht einfach reden um zu reden
 
-### Kurs 5: Mama-CEO (8-Wochen-Programm · Säule 1–3 aufgenommen, Stand 2026-06-11)
+### Kurs 5: Mama-CEO (8-Wochen-Programm · Säule 1–4 aufgenommen, Stand 2026-06-29 · Säule 5 produziert, Aufnahme folgt)
 **Kern-Claim:** „Mama-CEO heisst nicht mehr arbeiten, sondern anders — von der Macherin zur Entscheiderin." Du schaffst dir Zeit + ein System, das mitdenkt, damit neben Familie wirklich Zeit fürs Business bleibt.
 
 **Säule 1 — Du erschaffst dir die Zeit (L1.1–1.5):**
@@ -116,9 +116,17 @@ Patricias Zahl: **90% Conversion in Challenges** wenn richtig aufgebaut.
 - **Cockpit-Bot** (kommt in Säule 4) liest Tagesplaner + offene Aufgaben → tägliches Telegram-Briefing
 - Kernsatz: *„Ein Mama-CEO reagiert nicht, sie führt — sie hat das grosse Ganze im Blick."* · *„Planung ist Freiheit, nicht Starre."*
 
+**Säule 4 — Du delegierst den Adminkram · deine KI-Mitarbeiter (L4.1–4.6):**
+- **KI = Praktikantin, kein Zauberkasten**: „Müll rein, Müll raus" — jeder gute KI-Auftrag braucht 3 Zutaten: **Kontext** (wer bin ich) · **klare Aufgabe** · **Beispiel**. Es liegt fast nie an der KI, sondern am Auftrag.
+- **3-Stufen-Modell (kein Zwang zu Code)**: Stufe 0 = nur Notion · 🌟 Stufe 1 = **Claude Cowork** (Bot ohne Code, Notion einmal per „Connector"/Stecker verbinden) · Stufe 2 = **Claude Code** (automatischer Telegram-Bot, läuft 24/7, Hosting ~5 CHF/Mt). Cowork ≈ 20–23 CHF/Mt Pro-Abo. Auf jeder Stufe ein Win — niemand muss bis Stufe 2.
+- 🌟 **Business-Brief** = das eine Wissens-Dokument, das jeder Bot bekommt, damit er klingt wie DU (6 Bausteine: wer bin ich · Kundin · Angebot · Themen · Stimme · Tabus). **Buch-Technik**: der KI sagen, sie soll „ein Buch über mich schreiben" und so lange + vertieft fragen, bis sie wirklich alles hat. Stimme einfangen = 2–3 eigene Texte anhängen.
+- **Cockpit-Bot** (Business-Morgenbriefing aus dem Notion-Business-Brain: Tagesfokus + 3 wichtigste Aufgaben + Wochenblick) · 🌟 **Haushalts-Helfer-Bot** (Zwilling fürs Zuhause, holt den Mental Load aus dem Kopf; liest eine Notion-Haushalts-Liste mit 4 Eintrags-Sorten: wiederkehrend · datiert · Familien-Termine/Geburtstage · Schule am Vorabend) · **Kochassistent** als Extra. **Gleicher Prompt für Stufe 2** — Claude Code baut nur die Hülle (Telegram/Hosting), das „Gehirn" bleibt derselbe Prompt.
+- **Mensch vs. Maschine (KI-Wochenplan)**: KI macht Wiederholbares + Vorbereitendes (Recherche, erste Entwürfe, Pläne, Listen, Briefing) · DU machst Beziehung · Entscheidung · Stimme — die **5 CEO-Aufgaben aus Säule 1 bleiben immer deins**. Jede Aufgabe stempeln: 🤖 KI / 🙋 ich.
+- Kernsatz: *„KI ist eine Praktikantin — sie ist nur so gut wie dein Auftrag."* · *„Der Prompt ist das Rezept; Cowork ist der Herd zu Hause, Claude Code die Lieferung an die Haustür."* · *„Die KI bereitet vor, du entscheidest und gibst den letzten Schliff."*
+
 **Mama-CEO-Metaphern:** Vogelperspektive (raus aufs Jahr, rein auf den Tag) · Schubladen (Rollen/Bereiche sortieren) · zweites Gehirn / Business-Brain (Notion) · roter Faden (führt Tag für Tag ans Ziel).
 
-> **Voll-Transkripte:** `context/Kurse/aktuelle kurse/Mama-CEO/Transkripte/` (12–17 = Säule 3) · **Master-Doku:** `outputs/produkte/mama-ceo/10-saeule-3-MASTER.md`. **Abgrenzung:** Content-Strategie/Akquise = Insta-Kundenmaschine, NICHT Mama-CEO.
+> **Voll-Transkripte:** `context/Kurse/aktuelle kurse/Mama-CEO/Transkripte/` (12–17 = Säule 3 · 18–23 = Säule 4) · **Master-Doku:** `…/10-saeule-3-MASTER.md` · `…/10-saeule-4-MASTER.md` · `…/10-saeule-5-MASTER.md`. **Abgrenzung:** Content-Strategie/Akquise = Insta-Kundenmaschine, NICHT Mama-CEO. KI-Tools/Bots (Cowork/Claude Code/Notion-Bots) = Säule 4.
 
 ---
 
