@@ -68,12 +68,14 @@ COMMUNITY: „Mum Business Academy"
 ├── 📣 Announcements (Space)        → du sendest: Wochen-Impuls, Call-Reminder, News
 │
 ├── 📚 KURSE (Space-Kategorie mit Course-Spaces)
-│     ├── 🎯 Start hier — Deine MBA-Landkarte   (Willkommens-Kurs, Pflicht oben)
-│     ├── 🤖 PIA — deine KI-Mentorin             (Tool-Kurs: Login + Befehle)
-│     ├── 📱 Instagram-Kundenmaschine            (Phase 1, existiert)
-│     ├── ⏰ Mama-CEO                            (Phase 2, existiert)
-│     ├── 🚀 Digitale Produktwelt               (Phase 3, existiert)
+│     ├── 🎯 Start hier — Deine MBA-Landkarte        (Willkommens-Kurs, Pflicht oben)
+│     ├── 🤖 PIA — deine KI-Mentorin                 (Tool-Kurs: Login + Befehle)
+│     ├── 📱 Sichtbar werden (Instagram-Kundenmaschine)   (Phase 1, existiert)
+│     ├── ⏰ Deine Zeit als Mama (Mama-CEO)          (Phase 2, existiert)
+│     ├── 🚀 Dein eigenes Angebot (Digitale Produktwelt)  (Phase 3, existiert)
 │     └── 🤝 Die Umsetzerinnen — Call-Aufzeichnungen (datiertes Archiv)
+
+> **Kachel-Titel-Prinzip (Patricia 30.6.):** Nutzen zuerst, Kursname in Klammern. Der Name allein („Mama-CEO") sagt der Mama nicht, was drin ist — der Nutzen schon. Gilt für alle Kacheln + überall im Verkaufstext.
 │
 ├── 🙋 Q&A (Space)                  → strukturierte Fragen, beste Antworten gepinnt
 ├── 💬 Lounge (Space)               → Vorstellung, Erfolge, Austausch, Off-Topic

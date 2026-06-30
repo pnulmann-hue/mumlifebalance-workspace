@@ -97,9 +97,9 @@ Und last but not least: Du tauschst nicht mehr Zeit gegen Geld. Dein Funnel läu
 ## 6 · DAS BEKOMMST DU ALLES (jeder Punkt mit „damit du…")
 
 - **🤖 PIA — deine KI-Mentorin, ein Jahr lang jeden Tag.** Baut mit dir Bio, Hooks, fertige Posts, Stories, Leadmagnet, ganze Content-Wochen und deinen Funnel, in deiner Stimme — **damit du nie mehr vorm leeren Blatt sitzt und nie mehr „was poste ich heute?" googelst.**
-- **📱 Instagram-Kundenmaschine** — **damit fremde Menschen dich anschreiben und aus Scham Stolz wird.**
-- **⏰ Mama-CEO** — **damit dein Business in fokussierten Stunden läuft und du deinen Sonntag (und dein Leben) zurückkriegst.**
-- **🚀 Digitale Produktwelt** — **damit du ein Einkommen hast, das dir gehört — statt ein paar Prozent Provision.**
+- **📱 Sichtbar werden** *(Instagram-Kundenmaschine)* — **damit fremde Menschen dich anschreiben und aus Scham Stolz wird.**
+- **⏰ Deine Zeit als Mama** *(Mama-CEO)* — **damit dein Business in fokussierten Stunden läuft und du deinen Sonntag (und dein Leben) zurückkriegst.**
+- **🚀 Dein eigenes Angebot** *(Digitale Produktwelt)* — **damit du ein Einkommen hast, das dir gehört — statt ein paar Prozent Provision.**
 - **🤝 Die Umsetzerinnen** — 2 Live-Calls pro Monat (Experten-Call + Q&A) + begleitete Community direkt in der Academy, Antworten Di & Do — **damit du nie allein dranbleibst, auch wenn der Mut mal bröckelt.** (Calls aufgezeichnet.)
 - **♾️ Alle Kurse unbegrenzt zugänglich** — **damit du in deinem Tempo gehst, auch in der vollen Woche.**
 

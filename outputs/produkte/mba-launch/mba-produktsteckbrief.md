@@ -50,10 +50,10 @@ Das Besondere: Du machst das nicht allein. Mit **PIA**, deiner KI-Mentorin, hast
 
 ## 4. Programminhalte
 
-- **🤖 PIA — deine KI-Mentorin, jeden Tag.** Setzt mit dir um: Bio, Hooks, fertige Posts, Stories, Leadmagnet, ganze Content-Wochen und deinen Funnel — alles in deiner Stimme.
-- **📱 Instagram-Kundenmaschine** — sichtbar werden, sodass Frauen dich anschreiben, statt dass du jagst.
-- **⏰ Mama-CEO** — Zeit & Struktur (Powerzeiten, Hütchenmethode, KI-Mitarbeiter, Notion-Business-Brain), damit dein Business neben der Familie läuft.
-- **🚀 Digitale Produktwelt** — eigenes digitales Angebot aufbauen (mit KI), Produkttreppe & Funnel, verkaufen ohne dich zu verbiegen.
+- **🤖 PIA — deine KI-Mentorin, die dir die Schreibarbeit abnimmt.** Setzt mit dir um: Bio, Hooks, fertige Posts, Stories, Leadmagnet, ganze Content-Wochen und deinen Funnel — alles in deiner Stimme.
+- **📱 Sichtbar werden** *(Instagram-Kundenmaschine)* — dein Profil zieht an, sodass Frauen dich anschreiben, statt dass du jagst.
+- **⏰ Deine Zeit als Mama** *(Mama-CEO)* — so schaffst du dir neben Kindern und Haushalt wirklich Zeit fürs Business (Powerzeiten, Hütchenmethode, KI-Mitarbeiter, Notion-Business-Brain), damit es stattfindet und nicht nur in deinem Kopf.
+- **🚀 Dein eigenes Angebot** *(Digitale Produktwelt)* — ein digitales Angebot aufbauen (mit KI), das dir Einkommen bringt, das dir gehört: Produkttreppe & Funnel, verkaufen ohne dich zu verbiegen.
 - **🤝 Die Umsetzerinnen — Begleitung übers ganze Jahr:**
   - **2 Live-Calls pro Monat:** ein Experten-Thema-Call inkl. Q&A + ein reiner Q&A-Call.
   - **Begleitete Community direkt in der Academy:** Fragen jederzeit im Q&A-Bereich, Austausch & Erfolge im Lounge-Bereich — von Patricia **dienstags & donnerstags** persönlich beantwortet. *(Community-Entscheidung 30.6.2026: läuft komplett in ThriveAcademy, kein separates Telegram für die MBA.)*
