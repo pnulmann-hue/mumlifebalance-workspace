@@ -7,7 +7,7 @@ tags: [produkt, salespage, mba, launch, intern]
 **Für:** ThriveCart-Salespage · Pioneer 997 / Listenpreis 1347 · Programmstart Mitte August
 **Aufbau:** 13 Blöcke (Julia-Trost-Methodik), copy-paste-ready. Platzhalter `[…]` vor dem Live-Gang ersetzen.
 **Regeln:** keine erfundenen Zahlen/Testimonials · Garantie-Thema komplett weglassen · Schweizer ss · Patricia = 4 Kinder.
-**Stand:** 24.6.2026 — auf Basis Produktsteckbrief (finanzielle Freiheit als Nordstern · 2 Calls/Monat + Telegram · Kurs-Anrechnung · Cart 3.–9.7.).
+**Stand:** 24.6.2026 · **Community-Update 30.6.2026: Telegram → ThriveAcademy-Community** (Di & Do bleibt) — auf Basis Produktsteckbrief (finanzielle Freiheit als Nordstern · 2 Calls/Monat + Academy-Community · Kurs-Anrechnung · Cart 3.–9.7.).
 
 ---
 
@@ -61,11 +61,11 @@ Und es ist die Erkenntnis, dass es nicht den *einen* Baustein braucht, sondern a
 
 In der MBA bekommst du:
 
-- **🤖 PIA — deine KI-Mentorin, jeden Tag.** Sie baut mit dir deine Bio, deine Hooks, fertige Posts, Stories, deinen Leadmagnet, ganze Content-Wochen und deinen Funnel — alles in deiner Stimme. Was du im Bootcamp als Kurzform erlebt hast, hast du hier täglich und in voller Tiefe.
-- **📱 Instagram-Kundenmaschine** — damit Frauen DICH anschreiben, statt dass du suchst.
-- **⏰ Mama-CEO** — damit dein Business zwischen Znüni und Abholzeit wirklich stattfindet.
-- **🚀 Digitale Produktwelt** — dein eigenes digitales Angebot, das auch verkauft, wenn du am Spielplatz sitzt.
-- **🤝 Die Umsetzerinnen — deine Begleitung übers ganze Jahr:** **zwei Live-Calls pro Monat** (ein Experten-Call inkl. Q&A + ein reiner Q&A) und eine **begleitete Telegram-Gruppe**, in der du deine Fragen jederzeit stellst — ich antworte dienstags und donnerstags persönlich. *(Alle Calls werden aufgezeichnet.)*
+- **🤖 PIA — deine KI-Mentorin, die dir die Schreibarbeit abnimmt.** Sie baut mit dir deine Bio, deine Hooks, fertige Posts, Stories, deinen Leadmagnet und ganze Content-Wochen — alles in deiner Stimme. Du sagst ihr, worum's geht, und hast etwas zum Rausgeben, statt vor dem leeren Blatt zu sitzen. Was du im Bootcamp als Kurzform erlebt hast, hast du hier täglich und in voller Tiefe.
+- **📱 Sichtbar werden** *(Instagram-Kundenmaschine)* — dein Profil wird zum Schaufenster, das anzieht, damit fremde Frauen DICH anschreiben, statt dass du die warme Liste abklapperst.
+- **⏰ Deine Zeit als Mama** *(Mama-CEO)* — so schaffst du dir neben Kindern und Haushalt wirklich Zeit fürs Business, mit festen Power-Slots und KI, die dir den Kram abnimmt, damit dein Business stattfindet und nicht nur in deinem Kopf.
+- **🚀 Dein eigenes Angebot** *(Digitale Produktwelt)* — du baust dir etwas, das du einmal erstellst und immer wieder verkaufst, auch wenn du am Spielplatz sitzt, damit du ein Einkommen hast, das dir gehört, statt nur ein paar Prozent Provision.
+- **🤝 Du bleibst dran, nie allein** *(Die Umsetzerinnen)* — **zwei Live-Calls pro Monat** (ein Experten-Call inkl. Q&A + ein reiner Q&A) und eine **begleitete Community direkt in der Academy**, in der du deine Fragen jederzeit stellst — ich antworte dienstags und donnerstags persönlich. *(Alle Calls werden aufgezeichnet.)*
 - **♾️ Alle Kurse unbegrenzt zugänglich** — du lernst in deinem Tempo und kommst immer wieder rein.
 
 **[CTA-Button]** → Ich bin dabei
@@ -74,15 +74,15 @@ In der MBA bekommst du:
 
 ## BLOCK 6 — Was in den Kursen steckt (Transformation, nicht Modul-Liste)
 
-**📱 Instagram-Kundenmaschine**
+**📱 Sichtbar werden — damit Kundinnen dich finden** *(Instagram-Kundenmaschine)*
 Dein Profil wird vom „Produktkatalog, den keiner liked" zur Bibliothek, die anzieht. Du lernst dein Thema auf den Punkt zu bringen, Hooks die stoppen, Beiträge und Stories die verkaufen, und Keywords, die Anfragen auslösen — damit am Ende fremde Frauen in deiner DM stehen.
 → *Danach weisst du jeden Tag, was du posten sollst, und es bringt dir echte Gespräche.*
 
-**⏰ Mama-CEO**
+**⏰ Deine Zeit als Mama — Raum fürs Business schaffen** *(Mama-CEO)*
 Du schaffst dir die Zeit (Powerzeiten, Hütchenmethode), holst dir KI-Mitarbeiter, die dir Adminkram und Content abnehmen, und baust dir dein Business-Brain in Notion — vom Jahr runter bis zum Tag.
 → *Danach läuft dein Business in ein paar fokussierten Stunden, nicht in einem schlechten Gewissen rund um die Uhr.*
 
-**🚀 Digitale Produktwelt**
+**🚀 Dein eigenes Angebot — Einkommen, das dir gehört** *(Digitale Produktwelt)*
 Du baust dein erstes digitales Produkt (mit KI), deine Produkttreppe und deinen Funnel — und lernst zu verkaufen, ohne dich zu verbiegen.
 → *Danach hast du Einkommen, das dir gehört — und nicht von der nächsten Teamaktion abhängt.*
 
@@ -131,7 +131,7 @@ Was mich rausgeholt hat, war nicht der nächste Kurs. Es war ein klarer Weg — 
 
 ✔️ Alle drei Kurse, unbegrenzt zugänglich
 ✔️ PIA, deine KI-Mentorin — jeden Tag
-✔️ 2 Live-Calls pro Monat + begleitete Telegram-Gruppe (Antworten Di & Do), ein ganzes Jahr
+✔️ 2 Live-Calls pro Monat + begleitete Community in der Academy (Antworten Di & Do), ein ganzes Jahr
 ✔️ In bis zu **6 flexiblen Raten** — ohne dass es teurer wird
 ✔️ Programmstart Mitte August (Zugang sofort)
 
@@ -161,7 +161,7 @@ Eben. Das Problem war nie das Wissen, sondern die Umsetzung allein. Die MBA gibt
 Dann rechne ich dir den vollen Kaufpreis an die MBA an. Du verlierst nichts.
 
 **„Ich bin technisch nicht so fit."**
-Musst du nicht sein. PIA und die Kurse nehmen dich Schritt für Schritt mit — und in den Calls und der Telegram-Gruppe kannst du jederzeit fragen.
+Musst du nicht sein. PIA und die Kurse nehmen dich Schritt für Schritt mit — und in den Calls und der Community kannst du jederzeit fragen.
 
 **„Wann sind die Calls?"**
 Zweimal im Monat, live (und aufgezeichnet, falls du nicht dabei sein kannst). Wir starten nach den Sommerferien und legen die festen Zeiten gemeinsam mit der Gruppe fest.

@@ -56,14 +56,14 @@ Das Besondere: Du machst das nicht allein. Mit **PIA**, deiner KI-Mentorin, hast
 - **🚀 Digitale Produktwelt** — eigenes digitales Angebot aufbauen (mit KI), Produkttreppe & Funnel, verkaufen ohne dich zu verbiegen.
 - **🤝 Die Umsetzerinnen — Begleitung übers ganze Jahr:**
   - **2 Live-Calls pro Monat:** ein Experten-Thema-Call inkl. Q&A + ein reiner Q&A-Call.
-  - **Begleitete Telegram-Gruppe:** Fragen jederzeit, auch ausserhalb der Calls — von Patricia **dienstags & donnerstags** persönlich beantwortet.
+  - **Begleitete Community direkt in der Academy:** Fragen jederzeit im Q&A-Bereich, Austausch & Erfolge im Lounge-Bereich — von Patricia **dienstags & donnerstags** persönlich beantwortet. *(Community-Entscheidung 30.6.2026: läuft komplett in ThriveAcademy, kein separates Telegram für die MBA.)*
 - **♾️ Alle Kurse unbegrenzt zugänglich** — im eigenen Tempo, immer wieder.
 
 ---
 
 ## 5. Programmdauer & Zeitrahmen
 
-- **Begleitzeitraum: 12 Monate** (PIA täglich, 2 Calls/Monat, Telegram Di & Do).
+- **Begleitzeitraum: 12 Monate** (PIA täglich, 2 Calls/Monat, Academy-Community Di & Do).
 - **Programmstart: Mitte August 2026** (Zugang zu Kursen + PIA sofort nach Kauf).
 - **Live-Calls starten nach den Sommerferien** — so hat sie den Sommer zum Reinkommen, danach gemeinsamer Start in die Call-Runde.
 - **Kurse im eigenen Tempo, unbegrenzter Zugang.**
@@ -105,11 +105,11 @@ Das Besondere: Du machst das nicht allein. Mit **PIA**, deiner KI-Mentorin, hast
 
 ## 10. Termine & Veranstaltungsorte
 
-- **Ort:** komplett online — Kurse auf ThriveCart Academy · Live-Calls per Zoom · Austausch in der Telegram-Gruppe (Antworten Di & Do).
+- **Ort:** komplett online — Kurse + Community auf ThriveAcademy · Live-Calls per Zoom · Austausch im Community-Bereich der Academy (Antworten Di & Do).
 - **Cart-Phase:** Do 3.7. – Mi 9.7.2026 (7 Tage). Alle Cart-Mails + Stories vorgeplant & in AC/Telegram terminiert (läuft auch während Urlaub ab 5.7. durch).
 - **Programmstart / Zugang:** Mitte August 2026.
 - **Live-Calls:** Start nach den Sommerferien, danach 2×/Monat (1 Experten-Call + Q&A · 1 reiner Q&A) — Wochentage/Uhrzeit gemeinsam mit der Gruppe festgelegt.
-- **Telegram-Begleitung:** laufend, Antworten dienstags & donnerstags.
+- **Community-Begleitung (ThriveAcademy):** laufend, Antworten dienstags & donnerstags.
 - **Optionale 2. Verkaufswelle:** „Letzte Chance vor Programmstart" Mitte August.
 
 ---

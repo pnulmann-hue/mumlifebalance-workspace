@@ -19,7 +19,7 @@ tags: [produkt, mba, onboarding, calls]
 |---|---|---|---|---|
 | 1.1 | Schön, dass du da bist | Video (du persönlich) | 4 Min | Ankommen, Erleichterung, „du bist richtig" |
 | 1.2 | Deine Landkarte — der Weg in 3 Phasen | Video + Folien | 6 Min | Reihenfolge verstehen (sichtbar → Zeit → Angebot) |
-| 1.3 | PIA, deine Calls & deine Gruppe | Video + Folien | 5 Min | Begleitung aktivieren (PIA-Login, Telegram, Call-Termin) |
+| 1.3 | PIA, deine Calls & deine Community | Video + Folien | 5 Min | Begleitung aktivieren (PIA-Login, Community-Bereich, Call-Termin) |
 | 1.4 | Deine ersten 7 Tage | Video + Arbeitsblatt | 5 Min | Konkreter erster Schritt, raus aus Überforderung |
 
 ---
@@ -60,7 +60,7 @@ Du musst diese Reihenfolge nicht sklavisch einhalten. Wenn du schon sichtbar bis
 
 ---
 
-### Lektion 1.3 — „PIA, deine Calls & deine Gruppe" (Skript + Folien)
+### Lektion 1.3 — „PIA, deine Calls & deine Community" (Skript + Folien)
 
 **Video-Skript:**
 
@@ -70,13 +70,13 @@ Das Erste ist PIA, deine KI-Mentorin. Stell sie dir vor wie eine Praktikantin, d
 
 Das Zweite sind unsere Calls. Zweimal im Monat sind wir live zusammen, einmal zu einem konkreten Thema mit deinen Fragen und einmal nur für deine Fragen. Alles wird aufgezeichnet, du findest die Aufnahmen in der Umsetzerinnen-Kachel, also verpasst du nie etwas, auch wenn das Kind mal Fieber hat.
 
-Und das Dritte ist unsere Telegram-Gruppe, dein Zuhause für alles dazwischen. Da darfst du jederzeit Fragen stellen, deine Erfolge teilen und dich mit den anderen austauschen, und ich bin dienstags und donnerstags persönlich für dich drin. Trag dich am besten gleich ein, der Link ist unten."
+Und das Dritte ist unsere Community hier in der Academy, dein Zuhause für alles dazwischen. Im Frage-Bereich darfst du jederzeit deine Fragen stellen, im Austausch-Bereich teilst du deine Erfolge und lernst die anderen kennen, und ich bin dienstags und donnerstags persönlich für dich drin. Schau am besten gleich mal rein und stell dich kurz vor."
 
 **Folien zu 1.3:**
 1. **Titel:** „Du machst das nicht allein"
-2. **3 Begleiter:** `🤖 PIA — jeden Tag` · `🤝 Calls — 2× im Monat` · `💬 Telegram — Di & Do mit mir`
-3. **Deine 3 ersten Klicks:** PIA aktivieren · Telegram beitreten · nächsten Call-Termin notieren
-4. **CTA-Folie:** „Klick unten auf den Telegram-Link — wir warten auf dich 🩵"
+2. **3 Begleiter:** `🤖 PIA — jeden Tag` · `🤝 Calls — 2× im Monat` · `💬 Community — Di & Do mit mir`
+3. **Deine 3 ersten Klicks:** PIA aktivieren · im Austausch-Bereich vorstellen · nächsten Call-Termin notieren
+4. **CTA-Folie:** „Geh in den Austausch-Bereich und sag kurz Hallo — wir warten auf dich 🩵"
 
 ---
 
@@ -88,7 +88,7 @@ Und das Dritte ist unsere Telegram-Gruppe, dein Zuhause für alles dazwischen. D
 
 Tag eins: Du aktivierst PIA und machst mit ihr dein `/onboarding`, damit sie deine Stimme kennt. Das fühlt sich sofort gut an, weil du etwas in der Hand hast.
 
-Tag zwei: Du trittst der Telegram-Gruppe bei und stellst dich kurz vor — ein, zwei Sätze reichen, wer du bist und was du verkaufst.
+Tag zwei: Du gehst in den Austausch-Bereich unserer Community und stellst dich kurz vor — ein, zwei Sätze reichen, wer du bist und was du verkaufst.
 
 Tag drei bis sieben: Du startest mit der ersten Lektion der Instagram-Kundenmaschine und lässt PIA gleich die erste Aufgabe mit dir machen.
 
@@ -141,7 +141,7 @@ Du musst diese Woche nicht alles auf einmal schaffen, sondern nur diese paar Sch
 **Deine Schritte:**
 - ☐ **Tag 1 — PIA aktivieren.** Geh in die PIA-Kachel, logg dich ein und mach das `/onboarding`, damit PIA deine Stimme kennt.
   - Notiz für mich: Mein Thema in einem Satz ist ______________________________
-- ☐ **Tag 2 — Telegram beitreten + vorstellen.** Tritt der Gruppe bei und schreib zwei Sätze: wer du bist und was du verkaufst.
+- ☐ **Tag 2 — In der Community vorstellen.** Geh in den Austausch-Bereich und schreib zwei Sätze: wer du bist und was du verkaufst.
 - ☐ **Tag 3 — Nächsten Call eintragen.** Schau, wann der nächste Call ist, und trag ihn dir in den Kalender.
 - ☐ **Tag 4–7 — Erste Lektion starten.** Öffne die Instagram-Kundenmaschine, schau die erste Lektion und lass PIA gleich die erste Aufgabe mit dir machen.
 

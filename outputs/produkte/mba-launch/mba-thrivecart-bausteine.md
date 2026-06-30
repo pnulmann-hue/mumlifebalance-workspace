@@ -100,7 +100,7 @@ Und last but not least: Du tauschst nicht mehr Zeit gegen Geld. Dein Funnel läu
 - **📱 Instagram-Kundenmaschine** — **damit fremde Menschen dich anschreiben und aus Scham Stolz wird.**
 - **⏰ Mama-CEO** — **damit dein Business in fokussierten Stunden läuft und du deinen Sonntag (und dein Leben) zurückkriegst.**
 - **🚀 Digitale Produktwelt** — **damit du ein Einkommen hast, das dir gehört — statt ein paar Prozent Provision.**
-- **🤝 Die Umsetzerinnen** — 2 Live-Calls pro Monat (Experten-Call + Q&A) + begleitete Telegram-Gruppe, Antworten Di & Do — **damit du nie allein dranbleibst, auch wenn der Mut mal bröckelt.** (Calls aufgezeichnet.)
+- **🤝 Die Umsetzerinnen** — 2 Live-Calls pro Monat (Experten-Call + Q&A) + begleitete Community direkt in der Academy, Antworten Di & Do — **damit du nie allein dranbleibst, auch wenn der Mut mal bröckelt.** (Calls aufgezeichnet.)
 - **♾️ Alle Kurse unbegrenzt zugänglich** — **damit du in deinem Tempo gehst, auch in der vollen Woche.**
 
 ---
@@ -125,7 +125,7 @@ JA, ICH KOMME IN DIE MBA!
 Verständlich — und genau deshalb ist Mama-CEO Teil der MBA: damit du dir die Zeit überhaupt erst schaffst. PIA nimmt dir den Grossteil der Arbeit ab, die Lektionen sind in kleine Häppchen portioniert, und du gehst in deinem Tempo. Du brauchst ein paar fokussierte Slots pro Woche — keine 7 Stunden am Tag.
 
 **„Ich bin technisch nicht so fit — KI ist nichts für mich."**
-Musst du auch nicht sein. PIA und die Kurse nehmen dich Schritt für Schritt mit, in einfacher Sprache, ohne Fachchinesisch. Und wenn du irgendwo hängst, fragst du in den Calls oder in der Telegram-Gruppe. Wenn ich das mit vier Kindern hinkriege, kriegst du das auch hin.
+Musst du auch nicht sein. PIA und die Kurse nehmen dich Schritt für Schritt mit, in einfacher Sprache, ohne Fachchinesisch. Und wenn du irgendwo hängst, fragst du in den Calls oder in der Community. Wenn ich das mit vier Kindern hinkriege, kriegst du das auch hin.
 
 **„Brauche ich eine grosse Reichweite, damit das funktioniert?"**
 Nein. Es geht nicht um viele Follower, sondern um die richtigen Menschen, die dich anschreiben. Genau das lernst du: sichtbar werden mit deinem Thema — nicht laut sein, sondern klar.
