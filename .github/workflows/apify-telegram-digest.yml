@@ -1,0 +1,38 @@
+name: Apify Telegram Digest
+
+# Wöchentliche Konkurrenz-Zusammenfassung per Telegram.
+# Liest den neuesten outputs/apify-runs/competitors-*.md (vom täglichen Scraper)
+# und schickt Patricia die relevanten Erkenntnisse.
+on:
+  schedule:
+    # Sonntag 17:00 UTC = 19:00 CEST / 18:00 CET
+    - cron: '0 17 * * 0'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: apify-telegram-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Telegram digest
+        working-directory: scripts/apify
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node telegram-digest.js

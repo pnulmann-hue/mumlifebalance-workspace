@@ -548,6 +548,13 @@ Rendert eine Karussell-HTML-Vorlage zu Instagram-postbaren PNG-Folien. Ersetzt d
 
 **Wenn ein Skill die Top-Performer einer Nische braucht (z.B. neue Hook-Trends):** das jüngste `outputs/apify-runs/discovery-*-{niche}.json` lesen.
 
+#### C) Telegram-Digest (`apify-telegram-digest.yml`) — wöchentlich (live seit 2026-06-30)
+- **Cron:** Sonntag 19:00 Schweiz (`0 17 * * 0`) + `workflow_dispatch` für Sofort-Test
+- **Script:** `scripts/apify/telegram-digest.js` (ESM, nur `fetch`, keine npm-Pakete)
+- **Was es tut:** liest den neuesten `competitors-*.md`, lässt **Claude (`claude-opus-4-8`, raw HTTP) als Konkurrenz-Scout** die relevanten Erkenntnisse + 1-2 Content-Ideen rausziehen (Patricia-Voice) und schickt sie per **Telegram** an Patricia. Schliesst die Lücke, dass der tägliche Scrape bisher ungesehen im Repo lag.
+- **Secrets:** `ANTHROPIC_API_KEY` + `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` (alle bereits vorhanden)
+- **Sofort testen:** GitHub UI → „Apify Telegram Digest" → Run workflow.
+
 Plan: `plans/2026-05-07-apify-mcp-integration.md`.
 
 ### Cashflow-Tracker (`scripts/finanzen/`, live seit 2026-05-09)
