@@ -22,6 +22,10 @@ tags: [notiz, inbox]
 Der Gedanke im Volltext. Optional #themen-tag.
 -->
 
+### 2026-07-01 — Gesamt-Funnel in E-Mails aufbauen (0€ → Minikurse → grosse Kurse → MBA)
+Den kompletten Funnel noch in den E-Mails aufbauen: von den **0€-Produkten** → in die **Minikurse** → in die **grösseren Kurse** → schliesslich zur **MBA**. Sprich: die Mail-Strecke, die über die ganze Produkttreppe führt.
+#funnel #mails #mba
+
 ### 2026-07-01 — KI-Companion für Kundenmaschine hochladen + für Produktwelt erstellen
 - **Instagram Kundenmaschine:** KI-Companion ist bereits erstellt → noch ins Programm hochladen.
 - **Digitale Produktwelt:** so einen KI-Companion noch erstellen → danach ebenfalls ins Programm hochladen.
