@@ -40,16 +40,23 @@ _Erstellt 2026-07-01. Prinzip (Julia Trost): Aus jedem grossen Kurs einen nieder
 
 ### → für DIGITALE PRODUKTWELT
 
-**Idee 1 (Top-Pick): „Deine erste Produkttreppe in 60 Minuten"**
-- **Löst das EINE Problem:** „Ich weiss nicht, wie ich aus meinem Wissen ein verkaufbares Angebot mache / wie meine Angebote aufeinander aufbauen."
+**Idee 1 (NEUER Top-Pick — von Patricia, ZWEITE Perspektive: „Leadmagnet für ALLE, auch ohne Onlinekurs"): „Dein erster Leadmagnet — so gewinnst du Kundinnen (auch fürs Network)"**
+- **Löst das EINE Problem:** „Wie gewinne ich passende Kundinnen, ohne kalt anzuschreiben?"
+- **Der Clou / breite Zielgruppe:** Diesen Minikurs würde Patricia JEDER empfehlen — auch Network-Mamas, die (noch) keine Onlinekurse verkaufen wollen. Jede braucht einen Leadmagneten. Mechanik: Leadmagnet zieht Menschen über IHR Thema an (sie finden die Lösung in Profil/Angebot) → holen sich den Freebie → **im Leadmagneten wird das Network-Produkt verkauft**.
+- **Baut auf:** 0€-Produkt-Konzept + Transformation statt Produkt (Digitale Produktwelt) + Experten-Satz & Themenlandkarte (aus „Finde dein Thema") + Keyword-System zur Auslieferung (aus Insta-Kundenmaschine).
+- **Türöffner-Versprechen:** Du hast danach deinen ersten themen-passenden Leadmagneten skizziert, der automatisch die richtigen Menschen anzieht — der grosse Kurs zeigt die ganze Produktwelt/Automationen dahinter.
+- **Warum stark:** BREITESTER Sog von allen — spricht auch reine Network-Mamas an (grösserer Markt als „ich will einen Kurs bauen"). Perfekter Top-of-Funnel.
+
+**Idee 2: „Deine erste Produkttreppe in 60 Minuten"**
+- **Löst:** „Wie bauen meine Angebote aufeinander auf?"
 - **Baut auf:** Produkttreppe (0€ → Minikurs → Signature → Membership) + Transformation statt Produkt.
 - **Türöffner-Versprechen:** Du hast danach deine 4-stufige Produkttreppe skizziert — der grosse Kurs zeigt Bau + Automationen.
-- **Warum stark:** genau die Frage, die deine Zielgruppe vor dem grossen Kauf hat → natürliche Brücke.
+- **Hinweis:** strategischer/abstrakter als Idee 1 → eher für Käuferinnen, die schon Kurse bauen wollen.
 
-**Idee 2: „Vom Network-Wissen zum ersten Minikurs"**
-- **Löst:** „Wie packe ich mein Wissen in ein erstes kleines Produkt?"
-- **Baut auf:** Kurs 4 „Vom Network-Wissen zum eigenen Produkt" (Transformation statt Format · Mini vs. Signature · MVP-Prinzip · kürzer ist besser).
-- **Wichtig:** Kurs 4 ist inhaltlich schon A→C — er eignet sich fast 1:1 als eigenständiger Minikurs (evtl. sogar DAS ist dein zweiter Minikurs, nur neu verpackt + bepreist).
+**Idee 3 + OFFENE FRAGE: „Vom Network-Wissen zum eigenen Produkt" (Kurs 4) umbenennen?**
+- **Ausgangslage:** Kurs 4 existiert bereits und ist inhaltlich schon A→C (Transformation statt Format · Mini vs. Signature · MVP · kürzer ist besser) → er IST faktisch schon ein Minikurs.
+- **Patricias Überlegung:** evtl. umbenennen — passt einer der neuen Vorschläge als Titel?
+- **Empfehlung:** NICHT in „Produkttreppe" umbenennen — Kurs-4-Inhalt = „Wissen → erstes verkaufbares Produkt", nicht „die ganze Treppe planen" (anderes Versprechen). Besser ein nutzen-getriebener Titel, der zum Inhalt passt, z.B. **„Dein erstes digitales Produkt in einem Wochenende"** oder **„Vom Network-Wissen zum ersten Minikurs"**. → Kurs 4 als eigenständigen 37-49er-Minikurs neu verpacken + bepreisen (schnellster Quick Win, Content steht schon). Der Leadmagnet-Minikurs (Idee 1) und die Produkttreppe (Idee 2) sind DAVON getrennte, zusätzliche Türöffner.
 
 ### → für INSTAGRAM KUNDENMASCHINE (Ergänzung, hat schon „Finde dein Thema")
 
@@ -67,8 +74,10 @@ _Erstellt 2026-07-01. Prinzip (Julia Trost): Aus jedem grossen Kurs einen nieder
 ## Empfehlung: die nächsten 2-3 Minikurse
 
 1. **„Schaff dir Zeit fürs Business — als Mama, in 60 Min"** (→ Mama-CEO) — Zeit-Angle, breitester emotionaler Sog, messbarer Quick Win.
-2. **„Deine erste Produkttreppe in 60 Min"** (→ Digitale Produktwelt) — löst die Kernfrage vor dem grossen Kauf.
+2. **„Dein erster Leadmagnet" (→ Digitale Produktwelt)** — breitester Sog, spricht auch reine Network-Mamas an.
 3. **„Dein Instagram-Schaufenster in 60 Min"** (→ Insta-Kundenmaschine) — schnellster sichtbarer Quick Win.
+
+**Schnellster Quick Win zum Start:** Kurs 4 „Vom Network-Wissen zum eigenen Produkt" neu benennen + als Minikurs bepreisen — Content steht schon.
 
 So hat **jeder** grosse Kurs seinen eigenen Türöffner — und du hast 3-4 täglich bewerbbare 37-49er-Einstiege statt nur einen.
 
