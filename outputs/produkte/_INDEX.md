@@ -111,6 +111,11 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 - [[00-pia-architektur]]
 
+### 📁 produkttreppe-2026-07
+
+- [[00-markt-research]]
+- [[01-produkttreppe]]
+
 ### 📁 vom-networkwissen-zur-digitalen-produktwelt
 
 - [[00-UEBERSICHT-UND-NAECHSTE-SCHRITTE]]
