@@ -60,22 +60,26 @@ c.push(blank());
 c.push(new Paragraph({ pageBreakBefore: true, children: [new TextRun("")] }));
 
 // 5.4
-c.push(H2("Lektion 5.4 · Dein 90-Tage-Plan"));
-c.push(sub("▸ Deine 3 Bauten für die nächsten 90 Tage (aus KI/System deiner Matrix)"));
-c.push(line("1.   (bis wann: ____)"));
-c.push(line("2.   (bis wann: ____)"));
-c.push(line("3.   (bis wann: ____)"));
-c.push(sub("▸ Was du JETZT NICHT machst (deine Fokus-Schutz-Liste)"));
+c.push(H2("Lektion 5.4 · Dein 90-Tage-Plan (dein konkreter 3-Monats-Plan)"));
+c.push(sub("▸ Schritt 1: Pro Monat dein Zentrum festlegen (Monats-Trio aus Säule 3)"));
+c.push(tbl([1200, 2100, 2100, 2100, 2100],
+  ["Monat", "Thema", "🎁 0€-Angebot", "💎 Produkt", "Monatsziel"],
+  [["Monat 1", " ", " ", " ", " "], ["Monat 2", " ", " ", " ", " "], ["Monat 3", " ", " ", " ", " "]]));
+c.push(sub("▸ Schritt 2: Rückwärts rechnen (nimm Monat 1)"));
+c.push(line("Mein Monatsziel:"));
+c.push(p("Was muss VORHER passieren? (Mails, Content, Freebie, Story-Tage …)"));
+c.push(line("Woche 4:")); c.push(line("Woche 3:")); c.push(line("Woche 2:")); c.push(line("Woche 1:"));
+c.push(sub("▸ Schritt 3: Aufgaben in die Notion-Liste + stempeln (🤖 KI / ⚙️ System / 🙋 ich)"));
+c.push(chk("Aufgaben aus Monat 1 in meine Notion-Aufgabenliste eingetragen"));
+c.push(chk("Jede Aufgabe gestempelt (wer macht sie?)"));
+c.push(chk("Mein Cockpit-Bot serviert sie mir morgens"));
+c.push(sub("▸ Deine Nicht-Liste (was du in diesen 90 Tagen bewusst NICHT machst)"));
 c.push(line("1.")); c.push(line("2.")); c.push(line("3."));
 c.push(sub("▸ Dein „fertig besser als perfekt\"-Vorsatz"));
 c.push(p("Was startest du bewusst in Version 1 (statt es noch zu verschönern)?"));
 c.push(blank());
-c.push(sub("▸ Wie's weitergeht"));
-c.push(chk("Ich bleibe in der Community aktiv"));
-c.push(chk("Mein Cockpit-Bot erinnert mich täglich an meinen Plan"));
-c.push(chk("Ich komme mit Matrix + Plan in den Live-Call 4"));
 c.push(sub("✓ Was du nach Säule 5 hast — PROGRAMM ABGESCHLOSSEN"));
-c.push(p("Deine Matrix gefüllt · innerer Kreis geschützt · 90-Tage-Plan + Nicht-Liste · du führst statt zu funktionieren. Du bist Mama-CEO. 💛"));
+c.push(p("Deine Matrix gefüllt · innerer Kreis geschützt · konkreter 3-Monats-Plan (Thema/0€/Produkt rückwärts in Notion) · du führst statt zu funktionieren. Du bist Mama-CEO. 💛"));
 
 const doc = new Document({
   styles: { default: { document: { run: { font: "Arial", size: 22 } } },

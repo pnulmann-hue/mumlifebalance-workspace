@@ -14,9 +14,9 @@ tags: [produkt, mama-ceo, saeule-5, intern, aufnahme]
 ☐ **0.1 Die 4 PPTX** (`03-praesentationen/saeule-5/01–04`) offen, Sprechnotizen geprüft.
 ☐ **0.2 ⚠️ Dein 90-Tage-Plan / „Telegram-Community"-Satz klären (5.4):** Aktuell steht in 5.4 „Telegram-Community bleibt offen". Stimmt das? Falls die Pilot-Community woanders lebt (ThriveCart Academy / Mentoring-Runde), Satz anpassen — sonst versprichst du was Falsches. → Sag mir die Wahrheit, ich pass die Folie an.
 ☐ **0.3 ⚠️ Deine 3 echten Beispiele** bereitlegen (das Herz von S5):
-   - **Deine Mama-CEO-Matrix** (5.2): ~15-25 deiner echten Tasks, sortiert nach ich/KI/System/raus — am besten **in Notion gefüllt** zum Screenshare. (Wir können die wie beim Haushalts-Bot zusammen interaktiv bauen — sag „bau meine Matrix mit mir".)
+   - **Deine Mama-CEO-Matrix** (5.2): deine echten Tasks, sortiert nach ich/KI/System/raus — ✅ schon als Notion-Seite „Mama-CEO-Matrix — Patricia (Beispiel)" angelegt, zum Screenshare bereit.
    - **Dein innerer Kreis** (5.3): wer ist bei dir „heilig" (Bestandskundinnen · Sparring/Mentorin · Familie).
-   - **Dein 90-Tage-Plan + Nicht-Liste** (5.4): die max. 3 Sachen, die du als Nächstes baust + was du bewusst NICHT machst.
+   - **Dein 3-Monats-Plan** (5.4): deine nächsten 3 Monate — pro Monat 1 Thema · 1 0€-Angebot · 1 Produkt (+ Monatsziel). Am besten als kleine Tabelle/Screenshare. (Können wir zusammen vorab bauen — sag „bau meinen 3-Monats-Plan".)
 ☐ **0.4 Notion-Mama-CEO-Matrix prüfen:** Hat die Matrix im Master-Template wirklich die 4 Felder ich/KI/System/raus sauber? (Mentees füllen sie in 5.2.) → Falls unklar, prüfe ich das in Notion für dich.
 
 ---
@@ -46,13 +46,17 @@ tags: [produkt, mama-ceo, saeule-5, intern, aufnahme]
 
 ---
 
-## TEIL D — Lektion 5.4: 90-Tage-Plan + Abschluss (10 Folien · DEIN Beispiel + Feier)
-☐ **D1.** Aus der Matrix → **max. 3 Bauten** für 90 Tage (deine echten aus Teil 0.3 zeigen).
-☐ **D2.** 🌟 **Die Nicht-Liste** („was ich JETZT NICHT mache") — dein Lieblingsteil, sprich aus Überzeugung.
-☐ **D3.** **„Fertig besser als perfekt"**-Switch (Rückgriff S1 L1.5).
-☐ **D4.** ⚠️ **Folie 6 „Community"**: hier den in 0.2 geklärten echten Satz sagen (nicht „Telegram", falls das nicht stimmt).
-☐ **D5.** Folie 7: **Cockpit-Bot aus S4 als täglicher Begleiter** — schöner Callback.
-☐ **D6.** Folie 9+10: **Programm-Rückblick** (Zeit · Mindset · Struktur · KI · Matrix) → **„Du bist jetzt Mama-CEO."** Mit Herz, das ist der letzte Satz des ganzen Programms.
+## TEIL D — Lektion 5.4: Dein konkreter 3-Monats-Plan + Abschluss (10 Folien · DEIN Beispiel + Feier)
+> NEU (an dein echtes Vorgehen angepasst): 5.4 ist jetzt der **operative 3-Monats-Plan**, der Modul 3 abrundet — nicht mehr „3 Bauten". Die Mentees gehen mit einem fertigen Quartalsplan raus.
+☐ **D1.** Rahmen: **Säule 3 = Methode gelernt → jetzt konkret für die nächsten 3 Monate.** „Am Ende weisst du jeden Tag, was zu tun ist."
+☐ **D2.** **Pro Monat EIN Zentrum** (Thema · 0€-Angebot · Produkt = Monats-Trio aus S3).
+☐ **D3.** 🌟 **Folie 4 = DEIN Beispiel:** zeig deine eigenen nächsten 3 Monate (Thema/0€/Produkt pro Monat) aus Teil 0.3 — am besten als kleine Tabelle/Screenshare.
+☐ **D4.** **Rückwärts rechnen:** Monatsziel → Wochen → Aufgaben (Launch rückwärts denken).
+☐ **D5.** **Ab in die Notion-Aufgabenliste** → **Cockpit-Bot serviert sie täglich** (hier zahlen sich S3 + S4 sichtbar aus — schöner Callback).
+☐ **D6.** **Wer macht was?** Jede Aufgabe durch die **Matrix-Brille** (ich/KI/System) — Plan wird klar UND leicht.
+☐ **D7.** 🌟 **Die Nicht-Liste** („was ich in diesen 3 Monaten bewusst NICHT mache") — dein Lieblingsteil, aus Überzeugung.
+☐ **D8.** **„Fertig besser als perfekt"** + ⚠️ **„Community"-Satz** (den in 0.2 geklärten echten — nicht „Telegram", falls das nicht stimmt) + Cockpit-Bot begleitet weiter.
+☐ **D9.** **Abschluss-Folie 10:** Programm-Rückblick (Zeit · Mindset · Struktur · KI · Matrix · **Plan**) → **„Du bist jetzt Mama-CEO."** Mit Herz — der letzte Satz des ganzen Programms.
 
 ---
 

@@ -31,7 +31,7 @@ Am Ende dieser 2 Wochen:
 ✓ Du kennst die Mama-CEO-Matrix mit ihren vier Feldern (ich · KI · System · raus)
 ✓ Du hast 25 echte Aufgaben sortiert und siehst, wie wenig wirklich „nur du" ist
 ✓ Du weisst, was dein innerer Kreis ist — die Beziehungen, die du nie an eine Maschine abgibst
-✓ Du hast einen 90-Tage-Plan: was du als Nächstes baust, und was du bewusst NICHT machst
+✓ Du hast einen konkreten 3-Monats-Plan: pro Monat Thema, Produkt und 0€-Angebot, rückwärts in deine Aufgabenliste — du weisst jeden Tag, was zu tun ist (und was du bewusst NICHT machst)
 
 Live-Call 4 (Ende W8): Abschluss + 90-Tage-Vision · 90 Min · wir feiern, was du gebaut hast.
 ```
@@ -109,19 +109,21 @@ Du lernst:
 ## LEKTION 5.4
 **Titel:**
 ```
-5.4 · Dein 90-Tage-Plan — was kommt als Nächstes, was machst du NICHT
+5.4 · Dein 90-Tage-Plan — dein konkreter Plan für die nächsten 3 Monate
 ```
 **Video:** `saeule-05-lektion-5-4.mp4` (ca. 15 Min · Programm-Abschluss)
 
 **Beschreibung:**
 ```
-Die letzte Lektion des ganzen Programms. Aus deiner Matrix wird jetzt ein Plan: was baust du in den nächsten 90 Tagen, und genauso wichtig — was machst du bewusst NICHT. Denn Fokus entsteht durch Weglassen.
+Die letzte Lektion des ganzen Programms — und du gehst mit einem fertigen Plan raus, nicht nur mit einem guten Gefühl. Wir machen jetzt konkret, was du in Säule 3 als Methode gelernt hast: einen klaren Plan für deine nächsten 3 Monate.
+
+Pro Monat legst du EIN Zentrum fest — ein Thema, ein 0€-Angebot, ein Produkt — und rechnest von dort rückwärts in deine Aufgabenliste. So weisst du an jedem Tag der nächsten 90 Tage, was zu tun ist. Deine Bots aus Säule 4 servieren dir die Aufgaben, und deine Matrix sagt dir, wer sie macht: du, die KI oder ein System.
 
 Du lernst:
-→ Wie du aus deiner Matrix die 3 wichtigsten nächsten Schritte ableitest
-→ Warum „was ich JETZT NICHT mache" deine Geheimwaffe ist
-→ Den „fertig besser als perfekt"-Switch, der dich ins Tun bringt
-→ Wie's nach dem Programm weitergeht — mit der Community und deinem Cockpit-Bot als Begleiter
+→ Wie du pro Monat dein Zentrum festlegst (Thema · 0€-Angebot · Produkt)
+→ Wie du vom Monatsziel rückwärts in konkrete Wochen- und Tagesaufgaben rechnest
+→ Wie diese Aufgaben in deine Notion-Liste wandern, die dein Cockpit-Bot dir täglich serviert
+→ Warum deine „Nicht-Liste" (was du bewusst NICHT machst) den Fokus schützt
 
 Und dann feiern wir, was du gebaut hast. Du bist jetzt Mama-CEO.
 ```
@@ -140,7 +142,7 @@ Und dann feiern wir, was du gebaut hast. Du bist jetzt Mama-CEO.
 **Vor Aufnahme klären (Patricia-Inputs für die Live-Demos):**
 - ☐ 5.2: Patricias eigene Matrix (10-15 echte Tasks, sortiert nach ich/KI/System/raus)
 - ☐ 5.3: Patricias innerer Kreis (Bestandskundinnen, Sparring, Familie)
-- ☐ 5.4: Patricias 90-Tage-Plan + Nicht-Liste
+- ☐ 5.4: Patricias eigener 3-Monats-Plan (Thema/0€/Produkt pro Monat) + Nicht-Liste
 - ☐ PPTX-Folien (4) gebaut — `03-praesentationen/saeule-5/`
 
 ---
