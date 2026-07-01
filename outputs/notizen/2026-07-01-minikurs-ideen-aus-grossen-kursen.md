@@ -109,6 +109,28 @@ Diese Minikurse setzen nicht am Kurs-Modul an, sondern am **realen Schmerz** —
 - **Schmerz (belegt aus Call, Leck #1):** „Profil ist gut, aber ich krieg keine Anfragen." Hook spricht die Falsche an.
 - **Verspricht:** die Hook-Caption-CTA-Formel für einen Post, der Anfragen bringt. → führt in Insta-Kundenmaschine.
 
+## 🎤 Aus den ECHTEN Mama-CEO-Calls (harter Kern) — validiert mit O-Tönen
+
+_Quelle: `outputs/calls/mama-ceo-transkripte/` (2 Live-Coaching-Calls, hochgeladen 2026-07-01). Das sind die tatsächlichen Aussagen deiner Ladies → stärkste Validierung._
+
+**Wiederkehrende Muster (nach Häufigkeit + Emotion):**
+1. **Content/Mental Load im Kopf** — am häufigsten + emotionalsten. „Im Hirn ist bei mir immer der Content", „gedanklich absolut nicht bei den Kindern". Sehnsucht nach „leerem Kopf" durch Vorausplanung.
+2. **Sich zu viel vornehmen / gegen die Realität planen** — Andrea: „Ich bin einfach immer hinterher, es war sehr optimistisch geplant."
+3. **Zeit schützen / Nein sagen / Grenzen (auch mit dem Mann)** — Business-Zeit wird sofort wieder mit Haushalt/Ehrenamt gefüllt; „du bist ja eh zu Hause, die Wäsche…".
+4. **KI/Claude produktiv machen** — Susan: „Ich tue zu lang mit Claude hin und her, bis er mich versteht" — Striche/abgehackte Sätze, erfundene Captions.
+5. **Klarheit über Angebot/Zielgruppe + ins Tun kommen** — Andrea: „Was biete ich für eine Lösung an? Ich denke zu viel."
+
+**Minikurs-Ideen direkt aus den Calls (mit O-Ton-Beleg):**
+
+- **„Kopf leer in 60 Minuten: dein Monats-Content an einem Vormittag"** — löst den nie endenden Content-Mental-Load. Zahlt ein auf: Insta-Kundenmaschine. Zieht weil: Patricias „6 Stunden = ganzer Monat" hat im Call ALLE elektrisiert („da bin ich meilenweit entfernt", „wie schaffst du das?"). **→ heissester Kandidat.**
+- **„Die 30-Minuten-Methode: anfangen, auch wenn du nur ein kleines Zeitfenster hast"** — löst die Blockade „unter einem halben Tag lohnt sich nichts" + Unterbrechungs-Frust. Zahlt ein auf: Mama-CEO. Zieht weil: Miriams O-Ton „eine halbe Stunde geht nicht" ist die exakte Blockade.
+- **„Nein sagen ohne schlechtes Gewissen: deine Business-Zeit verteidigen"** — löst Ja-Sag-Reflex + Diskussion mit dem Mann. Zahlt ein auf: Mama-CEO. Zieht weil: Patricias „Ich war am Arbeiten"-Szene traf im Call einen Nerv, den alle kennen.
+- **„Claude versteht dich endlich: die Kontextdatei, die deine Stimme trifft"** — löst langes Hin-und-Her, Striche, erfundene Captions. Zahlt ein auf: Insta-Kundenmaschine / Mama-CEO Modul 4 (KI). Zieht weil: Susans Kampf mit Claude war das konkreteste Praxis-Problem des Calls.
+- **„Vom Verzetteln zum Angebot: dein erstes Freebie in 3 Stunden"** — löst Verkopfen/endloses Schrauben. Zahlt ein auf: Digitale Produktwelt. Zieht weil: Andreas „ich denke zu viel / was biete ich an" + „einfach raushauen" = Problem und Versprechen 1:1.
+- **„Hate, Ränge, Vergleich: souverän bleiben, wenn Reichweite kommt"** _(kleineres, aber emotionales Thema)_ — löst: mehr Hate ab ~500 Followern, Vergleich mit Diamond-Uplines. Zahlt ein auf: Insta-Kundenmaschine.
+
+_Einzelstimme (nicht als Minikurs tragfähig): Human-Design / „gegen meine Energie arbeiten" (nur Andrea) — besser als Story-/Reel-Winkel._
+
 ### ⚠️ Strategischer Merker (aus dem Schmerz-Pool)
 - **Universelle Lebens-Schmerzen** (Umfeld glaubt nicht, Mom-Guilt, sich selbst verloren) = stark für **kalte Reichweite** → ideal als **Leadmagnet-Aufhänger**.
 - **Business-interne Themen** (Funnel, Hook, System) floppen im kalten Feed → aber perfekt, um sie der **warmen** Zielgruppe als **Minikurs zu verkaufen**.
