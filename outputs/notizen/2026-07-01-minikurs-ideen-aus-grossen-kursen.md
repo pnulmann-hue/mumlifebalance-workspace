@@ -85,6 +85,37 @@ So hat **jeder** grosse Kurs seinen eigenen Türöffner — und du hast 3-4 täg
 
 ---
 
+## 🎧 Zusätzliche Ideen aus den Network-Mama-Schmerzen (Voice of Customer)
+
+_Quellen: `context/network-mama-tiefenanalyse.md` (3-Uhr-Ängste) · `context/mama-schmerz-themen-pool.md` (15 getestete Schmerzen) · echter Call `outputs/calls/2026-04-29-ig-kundenmaschine-funnel-lecks.md`. **Hinweis:** die rohen Zoom-Transkripte der Ladies liegen (noch) NICHT im Repo — wenn du sie hochlädst, kann ich noch spezifischer graben. Tipp: die DM-Audit-Antworten aus dem Funnel-Call („welches Leck ist deins?") sind ebenfalls Gold für Themen._
+
+Diese Minikurse setzen nicht am Kurs-Modul an, sondern am **realen Schmerz** — was sie zum niederschwelligen Impulskauf macht:
+
+**Idee A (emotionaler Zwilling zum Leadmagnet): „Kundinnen kommen zu DIR — Schluss mit kaltem Anschreiben"**
+- **Schmerz (belegt):** „warme Liste durch, Angst Beziehungen zu verbrennen und sich zu verbiegen" (3-Uhr-Angst #3). Network-Mamas HASSEN kaltes Anschreiben.
+- **Verspricht:** einen Weg, wie die richtigen Menschen von selbst kommen (statt betteln). → führt in Insta-Kundenmaschine / Digitale Produktwelt.
+
+**Idee B: „Zeig dich — sichtbar werden, ohne dich zu blamieren"**
+- **Schmerz (belegt):** Sichtbarkeits-Angst · Scham („sehen alle, dass ich scheitere?") · Impostor · Perfektionsfalle.
+- **Verspricht:** die ersten mutigen, souveränen Posts/Stories — raus aus dem heimlichen Aufbauen. → führt in Insta-Kundenmaschine.
+- **Warum stark:** trifft die tiefste Hemmschwelle VOR aller Strategie → sehr breiter, emotionaler Sog.
+
+**Idee C: „Wenn keiner an dich glaubt — souverän mit Zweiflern umgehen"**
+- **Schmerz (belegt):** „Rückhalt vom Umfeld — niemand glaubt an dein Business" = der GETESTETE Reichweiten-Gewinner (1.300 Views). Schwiegermutter/Mann/Dorf.
+- **Verspricht:** innere Haltung + konkrete Sätze für die Zweifler-Situationen.
+- **Format-Tipp:** funktioniert auch super als **Leadmagnet** (kalte Reichweite liebt dieses Thema) → dann Network-Produkt/Minikurs darin platzieren.
+
+**Idee D: „Dein erster verkaufender Post — warum keiner reagiert (und was hilft)"**
+- **Schmerz (belegt aus Call, Leck #1):** „Profil ist gut, aber ich krieg keine Anfragen." Hook spricht die Falsche an.
+- **Verspricht:** die Hook-Caption-CTA-Formel für einen Post, der Anfragen bringt. → führt in Insta-Kundenmaschine.
+
+### ⚠️ Strategischer Merker (aus dem Schmerz-Pool)
+- **Universelle Lebens-Schmerzen** (Umfeld glaubt nicht, Mom-Guilt, sich selbst verloren) = stark für **kalte Reichweite** → ideal als **Leadmagnet-Aufhänger**.
+- **Business-interne Themen** (Funnel, Hook, System) floppen im kalten Feed → aber perfekt, um sie der **warmen** Zielgruppe als **Minikurs zu verkaufen**.
+- Heisst: Idee C als Freebie/Reichweite → zieht rein; Ideen A/B/D als bezahlte Minikurse an die Warmen.
+
+---
+
 ## 🔗 Verwandte Notizen
 
 - [[2026-07-01-julia-trost-5k-strategie-gap-analyse]]
