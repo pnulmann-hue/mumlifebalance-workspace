@@ -22,6 +22,10 @@ tags: [notiz, inbox]
 Der Gedanke im Volltext. Optional #themen-tag.
 -->
 
+### 2026-07-01 — Upsell/Downsell/Crosssell-Strategie konsequent umsetzen (nach Julia Trost)
+Die komplette **Upsell-, Downsell- und Crosssell-Strategie** noch konsequent umsetzen: verschiedenes entwickeln und miteinander verknüpfen — alles **nach Julia Trosts Strategie**. Ziel: damit ich später **Ads auf die Minikurse schalten** kann.
+#funnel #julia-trost #minikurse
+
 ### 2026-07-01 — Gesamt-Funnel in E-Mails aufbauen (0€ → Minikurse → grosse Kurse → MBA)
 Den kompletten Funnel noch in den E-Mails aufbauen: von den **0€-Produkten** → in die **Minikurse** → in die **grösseren Kurse** → schliesslich zur **MBA**. Sprich: die Mail-Strecke, die über die ganze Produkttreppe führt.
 #funnel #mails #mba
