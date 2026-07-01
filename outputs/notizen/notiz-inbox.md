@@ -22,6 +22,10 @@ tags: [notiz, inbox]
 Der Gedanke im Volltext. Optional #themen-tag.
 -->
 
+### 2026-07-01 — MBA Sales-Page: Testimonials einfügen
+Die Sales-Page der MBA noch anpassen — konkret die **Testimonials einfügen**.
+#mba #salespage
+
 ### 2026-07-01 — Kurse mit MBA verknüpfen (Instagram Kundenmaschine + digitale Produktwelt)
 Mama-CEO-Programm ist heute fertiggestellt — dort am Schluss die MBA verknüpft (plus Instagram Kundenmaschine + digitale Produktwelt). Das Gleiche jetzt auch bei den anderen Kursen machen:
 - **Instagram Kundenmaschine** anpassen und am Schluss „Wie geht's weiter?" mit der MBA verknüpfen.
