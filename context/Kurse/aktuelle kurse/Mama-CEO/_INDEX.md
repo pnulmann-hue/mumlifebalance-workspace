@@ -75,7 +75,10 @@ Komplette Whisper-Transkripte aller bereits aufgenommenen Lektionen.
 - `outputs/produkte/mama-ceo/10-saeule-5-MASTER.md` — Säule 5 komplett (Mama-CEO-Matrix)
 
 ### ThriveCart-Setup-Files
+- `outputs/produkte/mama-ceo/14-thrivecart-upload-GESAMT-checkliste.md` — 🎯 **GESAMT-Upload-Cockpit** (Reihenfolge + Downloads + Verweise über alle Säulen)
 - `outputs/produkte/mama-ceo/12-thrivecart-modul-1-und-2.md` — alt (4-Modul-Version, archivieren)
+- `outputs/produkte/mama-ceo/13-thrivecart-saeule-1-setup.md` — Willkommen + Säule 1
+- `outputs/produkte/mama-ceo/13-thrivecart-so-gehts-weiter-setup.md` — Abschluss „So geht's weiter" (Cross-Sell)
 - `outputs/produkte/mama-ceo/13-thrivecart-saeule-2-setup.md` — neu (Säule 2)
 - `outputs/produkte/mama-ceo/13-thrivecart-saeule-3-setup.md` — neu (Säule 3)
 - `outputs/produkte/mama-ceo/13-thrivecart-saeule-4-setup.md` — neu (Säule 4)
