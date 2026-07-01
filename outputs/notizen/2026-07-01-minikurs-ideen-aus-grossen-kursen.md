@@ -21,16 +21,22 @@ _Erstellt 2026-07-01. Prinzip (Julia Trost): Aus jedem grossen Kurs einen nieder
 
 ### → für MAMA-CEO
 
-**Idee 1 (Top-Pick): „Raus aus dem Hamsterrad in 60 Minuten"**
-- **Löst das EINE Problem:** ständige Überforderung / Mental Load — „ich funktioniere nur noch".
-- **Baut auf Modulen:** Hamsterrad-Diagnose (L2.1) + das eine Mantra (L2.2) + Hütchenmethode (L2.3) + was kann weg (L2.4).
-- **Türöffner-Versprechen:** In 60 Min erkennst du deine 3 grössten Zeitfresser und hast eine erste Entlastung — der grosse Kurs baut daraus das ganze System.
-- **Warum stark:** universeller Schmerz jeder Mama-Unternehmerin, sofort spürbarer Quick Win, emotionaler Einstieg.
+**Idee 1 (Top-Pick — ZEIT-Angle, von Patricia gewählt): „Schaff dir Zeit fürs Business — als Mama, in 60 Minuten"**
+- **Löst das EINE Problem:** „Ich habe keine Zeit fürs Business neben Familie/Haushalt/Kindern."
+- **Titel-Varianten:** „Endlich Zeit fürs Business — der 60-Minuten-Zeitplan für Mamas" · „Von 0 auf feste Business-Zeit als Mama" · „Der Mama-CEO-Zeitplan: so schaffst du dir 5 Stunden Business-Zeit pro Woche".
+- **Baut auf Modulen:** Hamsterrad-Diagnose (L2.1, Zeitfresser erkennen) + Hütchenmethode (L2.3, Fokuszeit schaffen) + was kann weg (L2.4, streichen statt stopfen) + 4-Wochen-Rollen/Wochenrhythmus (L1.4/1.5, Zeit fix verplanen) + Haushalt & Familie (L2.5).
+- **Türöffner-Versprechen:** In 60 Min hast du deine grössten Zeitfresser entlarvt UND einen realistischen Wochen-Zeitplan mit fixen Business-Slots — der grosse Kurs baut daraus das ganze Mama-CEO-System (Rollen, Notion-Brain, Skalieren).
+- **Warum stark:** „keine Zeit" ist DER meistgenannte Schmerz der Zielgruppe → breitester emotionaler Sog + sofort messbarer Quick Win (freie Stunden).
 
-**Idee 2: „Dein zweites Gehirn — Business-Brain in Notion"**
+**Idee 2: „Raus aus dem Hamsterrad in 60 Minuten"** (Alternative/Ergänzung)
+- **Löst:** ständige Überforderung / Mental Load — „ich funktioniere nur noch".
+- **Baut auf:** Hamsterrad-Diagnose + das eine Mantra + Hütchenmethode + was kann weg.
+- **Hinweis:** inhaltlich nah an Idee 1, aber Mindset/Überlastungs-Angle statt Zeit-Angle. → NICHT beide gleichzeitig, sondern den Zeit-Angle (Idee 1) zuerst, weil konkreter/messbarer.
+
+**Idee 3: „Dein zweites Gehirn — Business-Brain in Notion"**
 - **Löst:** Chaos im Kopf / alles-im-Kopf-behalten.
 - **Baut auf:** Brain-Dump-Struktur (L3.1) + Notion Business Brain (L3.2) + Template (L3.5).
-- **Hinweis:** tool-lastiger → eher für die technik-affinen Käuferinnen; Idee 1 hat breiteren Sog.
+- **Hinweis:** tool-lastiger → eher für technik-affine Käuferinnen; als späterer 3. Minikurs denkbar.
 
 ### → für DIGITALE PRODUKTWELT
 
@@ -60,7 +66,7 @@ _Erstellt 2026-07-01. Prinzip (Julia Trost): Aus jedem grossen Kurs einen nieder
 
 ## Empfehlung: die nächsten 2-3 Minikurse
 
-1. **„Raus aus dem Hamsterrad in 60 Min"** (→ Mama-CEO) — breitester emotionaler Sog, universeller Schmerz.
+1. **„Schaff dir Zeit fürs Business — als Mama, in 60 Min"** (→ Mama-CEO) — Zeit-Angle, breitester emotionaler Sog, messbarer Quick Win.
 2. **„Deine erste Produkttreppe in 60 Min"** (→ Digitale Produktwelt) — löst die Kernfrage vor dem grossen Kauf.
 3. **„Dein Instagram-Schaufenster in 60 Min"** (→ Insta-Kundenmaschine) — schnellster sichtbarer Quick Win.
 
