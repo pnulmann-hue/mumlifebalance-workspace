@@ -68,13 +68,23 @@ Z  MBA: „Ich hab den ganzen Weg + ein Jahr Begleitung + PIA täglich + die
 
 **Befund:** Bootcamp zündet den Launch, die Freebies tragen zwischen den Launches. Empfehlung bleibt: **1 dominantes Evergreen-Freebie** (Quiz) als Haupttor, die anderen als Vertiefung — nicht alle 4 parallel gleich laut bewerben.
 
-### 🟡 LOW PRICE OFFER (B→E) — der Minikurs-Einstieg
+### 🟡 LOW PRICE OFFER (B→E) — ein Minikurs pro Signature (Entscheidung 2026-07-01)
 
-| Produkt | Preis | Rolle | Status |
+**Neues Prinzip:** Jeder Signature-Kurs bekommt seinen eigenen Minikurs als Türöffner (37–39 CHF). Jeder Minikurs bricht die Kaufbarriere für sein Thema, liefert einen schnellen Win — und leitet dann weiter: **zuerst in die MBA (Upsell), und wer die nicht nimmt, in den passenden Einzel-Signature (Downsell).**
+
+| Signature-Kurs | Passender Minikurs (Einstieg) | Preis | Status |
 |---|---|---|---|
-| **Finde dein Thema als Network-Mama (in 60 Min)** | ? CHF | **Minikurs / Evergreen-Zubringer → MBA** | vorhanden ✅ |
+| Instagram-Kundenmaschine (Sichtbar) | **Finde dein Thema als Network-Mama** | 37/39 ✅ | vorhanden |
+| Mama-CEO (Deine Zeit) | **Zeit-Minikurs** („wie du dir als Mama Zeit fürs Business schaffst") | ~39 | 🔨 in Bau → `../minikurs-mama-ceo-zeit/` |
+| Digitale Produktwelt (Dein Angebot) | z.B. „Deine erste Produktidee in 7 Tagen" | ~39 | 🔜 später |
 
-**Befund:** ✅ **Kein neues Tripwire-Produkt nötig — du hast es schon.** Die eine offene Aufgabe: sicherstellen, dass „Finde dein Thema" **dauerhaft offen** läuft (nicht nur im Launch) und sein Funnel **klar in die MBA** leitet. Preis-Check offen — als niedrigschwelliger Einstieg wirkt er am besten im 37–49-CHF-Bereich; falls er teurer ist, ist das eine bewusste Entscheidung, kein Fehler.
+**Funnel-Logik jedes Minikurs (einheitlich):**
+```
+Freebie → Minikurs (39) → [Upsell] MBA (997/1347)
+                          → [Downsell, wenn keine MBA] passender Signature (333)
+```
+
+**Befund:** ✅ Symmetrische Einstiegs-Ebene. Du hast 1 von 3 schon („Finde dein Thema", 37/39). **Einer nach dem anderen bauen** (Julia: erst verkaufen, dann erstellen) — Start mit dem Zeit-Minikurs für Mama-CEO. „Finde dein Thema" läuft dauerhaft offen und leitet in die MBA.
 
 > **Nicht einzeln:** Die Umsetzerinnen tauchen hier **bewusst nicht** auf — sie gibt es nur in der MBA (siehe High Price).
 

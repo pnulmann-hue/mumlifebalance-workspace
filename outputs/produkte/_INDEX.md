@@ -107,6 +107,15 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[99-AC-SETUP-MBA]]
 - [[webinar-phase-1-folien]]
 
+### 📁 minikurs-mama-ceo-zeit
+
+- [[00-briefing]]
+- [[01-modul-outline]]
+- [[modul-01]]
+- [[modul-02]]
+- [[modul-03]]
+- [[05-ki-assistent-check]]
+
 ### 📁 pia
 
 - [[00-pia-architektur]]
