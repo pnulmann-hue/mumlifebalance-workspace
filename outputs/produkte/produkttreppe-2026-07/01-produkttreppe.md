@@ -2,221 +2,186 @@
 tags: [produkt]
 ---
 
-# 🪜 Produkttreppe Onlinebusiness — Konsolidiert Juli 2026
+# 🪜 Produkttreppe Onlinebusiness — Konsolidiert & FINAL Juli 2026
 
-**Datum:** 2026-07-01
+**Datum:** 2026-07-01 · **Finalisiert:** 2026-07-01 (nach Patricias Entscheidungen)
 **Profil:** Onlinebusiness (Mentoring — Mum Life Balance)
-**Modus:** /produkt Modus 1 — Produkttreppe entwerfen (Portfolio-Refresh, nicht Einzelprodukt)
-**Basis:** Vollprofil + Expertise + April-Audit (`../audit-2026-04-22/`) + aktuelle Produkt-Briefings + Notion-Produkte-DB (Kategorien gelesen 2026-07-01) + Markt-Research (`00-markt-research.md`)
+**Modus:** /produkt Modus 1 — Produkttreppe entwerfen (Portfolio-Refresh)
+**Basis:** Vollprofil + Expertise + April-Audit (`../audit-2026-04-22/`) + aktuelle Produkt-Briefings + Notion-Produkte-DB (Kategorien 2026-07-01) + Markt-Research (`00-markt-research.md`) + Patricia-Entscheidungen 2026-07-01
 
-> **Warum dieser Refresh?** Das letzte strategische Gesamtbild ist von April. Seither ist viel passiert: **Mama-CEO ist gebaut**, die **MBA (Mum Business Academy, 997/1347)** ist als Flaggschiff live, der **0€-Bootcamp-Funnel** (29.6.–3.7.) läuft, die **Umsetzerinnen-Membership (39/Mt)** ist konzipiert. Die Säulen wurden zu Bausteinen eines Komplettpakets — das ist strategisch stark, hinterlässt aber eine konkrete Lücke. Genau die zeigt dieses Dokument.
-
----
-
-## TL;DR — das Wichtigste in 6 Zeilen
-
-1. **Die MBA ist jetzt dein Flaggschiff (M→Z)** — richtig gedacht, markt-konform (Premium-Jahresprogramm ist das stärkste 2026-Format).
-2. **Der Bootcamp→MBA-Pfad ist ein Launch-Funnel** — er zündet, wenn du live launchst. Zwischen den Launches brauchst du einen **Selbst-Läufer-Pfad**, der auch schläft-und-verkauft.
-3. **Deine echte Lücke 2026 ist nicht ein fehlendes Produkt, sondern ein fehlender Evergreen-Tripwire** (37–49 CHF) zwischen Freebie und MBA. Der April-Befund „kein echter Tripwire" gilt immer noch.
-4. **Der 333-CHF-Cluster ist teilweise entschärft** (die drei Kurse leben jetzt sichtbar als MBA-Bausteine) — aber standalone verkauft, konkurrieren sie immer noch um denselben Sprung. Klärung nötig: Einzelverkauf drosseln oder klar positionieren.
-5. **Die Umsetzerinnen (39/Mt) ist dein wichtigstes unterschätztes Asset** — der einzige wiederkehrende Umsatz + der sanfte Auffang für alle, die (noch) nicht MBA kaufen.
-6. **Mit einem Evergreen-Tripwire + laufender Umsetzerinnen-Continuity + 1–2 MBA-Runden/Jahr ist das 40k-Ziel klar erreichbar** (Rechnung unten).
+> **Warum dieser Refresh?** Das letzte Gesamtbild war von April. Seither: Mama-CEO gebaut, **MBA als Flaggschiff live**, 0€-Bootcamp-Funnel (29.6.–3.7.), Umsetzerinnen als MBA-Begleitung. Die Säulen wurden zu Bausteinen eines Komplettpakets.
 
 ---
 
-## A → B → E → M → Z — die konsolidierte Treppe
+## 🧭 Das Leitprinzip (Patricias Entscheidung 2026-07-01)
+
+> **Die MBA ist das eine Flaggschiff. JEDER Funnel von JEDEM Produkt führt in die MBA.**
+
+Alles andere ist Einstieg, Vorgeschmack oder Zubringer. Zwei bewusste Ausnahmen:
+- **Die Umsetzerinnen** gibt es **nicht einzeln** — nur als Begleitungs-Baustein **innerhalb der MBA**.
+- **„Aus Nebenbei wird Business" (1:1)** ist ein **Side-Offer**, den Patricia **zwischendurch mal 1 Woche** bewirbt — kein Treppen-Baustein, kein Dauer-Funnel.
+- **„Mompreneur All-In" existiert nicht** (frühere Annahme gestrichen).
+
+---
+
+## TL;DR — das Wichtigste in 5 Zeilen
+
+1. **MBA = Flaggschiff, alle Wege führen dahin.** Klar, richtig, markt-konform.
+2. **Du hast bereits alle Einstiege** — Bootcamp (Launch), Freebies (evergreen), **„Finde dein Thema" (Minikurs)**. Kein neues Produkt nötig.
+3. **Die eine offene Aufgabe:** „Finde dein Thema" als **dauerhaft offenen Evergreen-Zubringer → MBA** scharf stellen (läuft er auch zwischen den Launches?).
+4. **Umsetzerinnen = nur in der MBA.** Damit ist die MBA das einzige Continuity-Zuhause — sauber, keine Konkurrenz zum Flaggschiff.
+5. **Dein 40k-Hebel heisst jetzt MBA-Volumen** (1 → 2 starke Runden/Jahr) + Evergreen-Zubringer, der die Liste zwischen den Launches warm füttert.
+
+---
+
+## A → B → E → M → Z — die finale Treppe
 
 ```
 A  Network-Mama, „paar hundert Franken/Monat", verzettelt, viele Kurse halb,
    will finanzielle Freiheit — weiss aber nicht, womit anfangen.
-   ↓  (Freebie / Bootcamp)
-B  „Ich hab EINEN klaren ersten Schritt + hab PIA/das System kurz erlebt."
-   ↓  (Evergreen-Tripwire 37–49 CHF)  ← LÜCKE
-E  „Ich hab EIN Thema/EINEN Baustein wirklich umgesetzt — erster kleiner Win."
-   ↓  (Umsetzerinnen 39/Mt  ODER  Einzelkurs 333)
-M  „Ich bin dran, hab Rhythmus + Begleitung, treffe schneller Entscheidungen."
-   ↓  (MBA 997/1347)
-Z  „Ich hab den ganzen Weg + ein Jahr Begleitung + PIA täglich — mein Business
-   läuft neben der Familie, Einkommen das mir gehört."
+   ↓  (Freebie / Bootcamp — evergreen ODER Launch)
+B  „Ich hab EINEN klaren ersten Schritt + PIA/das System kurz erlebt."
+   ↓  (Minikurs „Finde dein Thema als Network-Mama")
+E  „Ich hab mein Thema/meine Positionierung — erster echter Win."
+   ↓  (jeder Funnel führt weiter …)
+M  … in Richtung Komplett-Weg + Begleitung
+   ↓
+Z  MBA: „Ich hab den ganzen Weg + ein Jahr Begleitung + PIA täglich + die
+   Umsetzerinnen-Runde — mein Business läuft neben der Familie."
 ```
 
-**Ein Sprung pro Produkt, keine Überlappung.** Der rote Faden über alle Stufen: **PIA + Hybrid-Modell + Schweizer Mama-Realness** (kein Bali, kein 6-stellig-Versprechen, kein Hochglanz).
+**Roter Faden über alle Stufen:** PIA + Hybrid-Modell + Schweizer Mama-Realness (kein Bali, kein 6-stellig, kein Hochglanz). **Ziel jeder Stufe: die MBA.**
 
 ---
 
-## Die Suite heute — nach Notion-Kategorie sortiert
+## Die Suite FINAL — nach Notion-Kategorie
 
-Die Notion-Produkte-DB gruppiert nach **Free / Low / Mid / High Price Offer**. So sieht die Realität Juli 2026 aus:
+### 🟠 FREE OFFER (A→B) — Einstiege, alle → MBA
 
-### 🟠 FREE OFFER (A→B) — Lead-Ebene
+| Produkt | Rolle | Status |
+|---|---|---|
+| **0€ Mama-Business-Bootcamp** (5 Tage, PIA live) | **Launch**-Zubringer → MBA | live 29.6.–3.7. |
+| Quiz „Network-Business-Potenzial" | Evergreen-Einstieg (Haupt) | vorhanden |
+| Workbook „Von 0 auf echt" | Evergreen-Vertiefung | vorhanden |
+| 0€-Fahrplan „Von Produktposts zu doppeltem Einkommen" | Evergreen (Hybrid) | vorhanden |
+| Starterguide Instagram | Evergreen | vorhanden |
 
-| Produkt | Rolle | Status | Befund |
+**Befund:** Bootcamp zündet den Launch, die Freebies tragen zwischen den Launches. Empfehlung bleibt: **1 dominantes Evergreen-Freebie** (Quiz) als Haupttor, die anderen als Vertiefung — nicht alle 4 parallel gleich laut bewerben.
+
+### 🟡 LOW PRICE OFFER (B→E) — der Minikurs-Einstieg
+
+| Produkt | Preis | Rolle | Status |
 |---|---|---|---|
-| **0€ Mama-Business-Bootcamp** (5 Tage, PIA-powered) | Launch-Lead-Event vor MBA | live 29.6.–3.7. | ⭐ stark, aber **event-gebunden** (nur bei Live-Launch) |
-| Quiz „Network-Business-Potenzial" | Dauer-Freebie | vorhanden | ok, als Evergreen-Einstieg halten |
-| Workbook „Von 0 auf echt" | Dauer-Freebie | vorhanden | ok |
-| 0€-Fahrplan „Von Produktposts zu doppeltem Einkommen" | Dauer-Freebie (Hybrid) | vorhanden | ok |
-| Starterguide Instagram | Dauer-Freebie | vorhanden | ⚠️ Freebie-Inflation — konsolidieren (siehe unten) |
+| **Finde dein Thema als Network-Mama (in 60 Min)** | ? CHF | **Minikurs / Evergreen-Zubringer → MBA** | vorhanden ✅ |
 
-**Befund:** Das Bootcamp ist ein exzellentes **Launch**-Freebie, aber es läuft nicht durchgehend. Für den Selbst-Läufer-Pfad brauchst du **1 klar dominantes Evergreen-Freebie** (Empfehlung: Quiz als Einstieg → führt in Tripwire). Die 4 Dauer-Freebies bündeln, nicht alle parallel bewerben.
+**Befund:** ✅ **Kein neues Tripwire-Produkt nötig — du hast es schon.** Die eine offene Aufgabe: sicherstellen, dass „Finde dein Thema" **dauerhaft offen** läuft (nicht nur im Launch) und sein Funnel **klar in die MBA** leitet. Preis-Check offen — als niedrigschwelliger Einstieg wirkt er am besten im 37–49-CHF-Bereich; falls er teurer ist, ist das eine bewusste Entscheidung, kein Fehler.
 
-### 🟡 LOW PRICE OFFER (B→E / Continuity) — Einstiegs-Ebene
+> **Nicht einzeln:** Die Umsetzerinnen tauchen hier **bewusst nicht** auf — sie gibt es nur in der MBA (siehe High Price).
 
-| Produkt | Preis | Rolle | Status | Befund |
-|---|---|---|---|---|
-| **Die Umsetzerinnen** (Membership) | 39/Mt | Continuity B→E + Auffang | Konzept→Pre-Launch | ⭐ **wichtigstes Asset** — einziger Recurring-Umsatz |
-| „Finde dein Thema als Network-Mama in 60 Min" | ? CHF | Tripwire Säule 1 | vorhanden | Preis klären: echter Tripwire (37–49) oder höher? |
-| **Evergreen-Tripwire** (z.B. „Deine erste Produktidee/Positionierung in 7 Tagen") | 39 | Kaufbarriere-Brecher | ❌ **fehlt** | 🔴 **die Kernlücke** |
+### 🟢 MID PRICE OFFER (E→M) — die drei Kern-Kurse (= MBA-Bausteine)
 
-**Befund:** Hier klemmt es. Es gibt **keinen durchgehenden 37–49-CHF-Tripwire**, der kalte Leads in zahlende Erstkäuferinnen verwandelt, wenn kein Launch läuft. Genau das „verschenkt 60% der Conversion" (Julia-Logik, April-Befund — unverändert gültig).
-
-### 🟢 MID PRICE OFFER (E→M) — die drei Kern-Kurse
-
-| Produkt | Preis | Rolle heute | Befund |
+| Produkt | Preis | Rolle | Funnel |
 |---|---|---|---|
-| **Instagram-Kundenmaschine** | 333 | MBA-Baustein „Sichtbar werden" | standalone weiter verkaufbar |
-| **Mama-CEO** | (gebaut) | MBA-Baustein „Deine Zeit als Mama" | standalone weiter verkaufbar |
-| **Digitale Produktwelt / „Vom Network-Wissen…"** | 333 | MBA-Baustein „Dein Angebot" | ⚠️ Namens-Doppelgänger-Historie |
+| **Instagram-Kundenmaschine** | 333 | MBA-Baustein „Sichtbar werden" | → MBA |
+| **Mama-CEO** | (gebaut) | MBA-Baustein „Deine Zeit als Mama" | → MBA |
+| **Digitale Produktwelt / „Vom Network-Wissen…"** | 333 | MBA-Baustein „Dein Angebot" | → MBA |
 
-**Befund:** Der April-**333-CHF-Cluster** ist **halb entschärft**: Die drei Kurse haben jetzt einen klaren gemeinsamen Ort (die MBA) und eine logische Reihenfolge (Sichtbar → Zeit → Angebot). Solange sie aber **auch einzeln zu 333** verkauft werden, konkurrieren sie standalone weiter um „welcher passt mir?". **Entscheidung nötig** (siehe „Offene Entscheidungen").
+**Befund:** Die drei leben jetzt in klarer Reihenfolge (Sichtbar → Zeit → Angebot) als MBA-Bausteine. Standalone weiter verkaufbar — aber **jeder Einzelkurs-Funnel leitet am Ende in die MBA** (Leitprinzip). So löst sich der alte „333-Cluster-Verwirrung"-Befund von selbst: Einzelkauf ist der schmale Pfad, die MBA der breite.
 
-### 🔴 HIGH PRICE OFFER (M→Z) — Flaggschiff
+### 🔴 HIGH PRICE OFFER (M→Z) — Flaggschiff + 1:1-Side-Offer
 
-| Produkt | Preis | Rolle | Status | Befund |
-|---|---|---|---|---|
-| **MBA — Mum Business Academy** | 997 (Pioneer) / 1347 (Final) | **Flaggschiff**, alle Funnels leiten hierhin | live, Start Mitte Aug | ⭐ genau das Über-Säulen-Produkt aus der April-Roadmap — realisiert |
-| „Aus Nebenbei wird Business" | 1'199 | Säule-2-Premium standalone | vorhanden | ⚠️ Rolle klären neben MBA — Kannibalisierung? |
-| „Mompreneur All-In"-Bundle | 1'497 | Vorläufer der MBA | wohl abgelöst | → als **abgelöst markieren** (sonst Verwirrung) |
+| Produkt | Preis | Rolle | Status |
+|---|---|---|---|
+| ⭐ **MBA — Mum Business Academy** | 997 (Pioneer) / 1347 (Final) | **DAS Flaggschiff** — enthält 3 Kurse + PIA täglich + **Umsetzerinnen-Begleitung** (2 Calls/Mt + Community) + 12 Monate | live, Start Mitte Aug |
+| **Aus Nebenbei wird Business** (1:1) | 1'199 | **Side-Offer** — zwischendurch **1 Woche** bewerben, wenn Patricia 1:1-Plätze öffnen will | vorhanden |
+| ~~Mompreneur All-In~~ | — | **existiert nicht** — gestrichen | ❌ |
 
-**Befund:** Die MBA hat die April-Vision umgesetzt — **aber schlanker und klüger als geplant** (997/1347 statt 1997/2997, ThriveCart-Academy + PIA + Bootcamp-Funnel statt Webinar). Das ist gut. Zwei ältere Premium-Angebote (1'199 / 1'497) brauchen jetzt eine klare Rolle **oder** ein Archiv-Flag, damit die Treppe sauber bleibt.
-
----
-
-## Die drei kritischen Befunde (worauf es ankommt)
-
-### 1. 🔴 Evergreen-Tripwire fehlt (die eine echte Lücke)
-Der Bootcamp→MBA-Pfad ist ein **Launch**-Funnel. Zwischen den Launches hast du keinen bezahlten Einstieg, der automatisch aus Freebie-Leads Erstkäuferinnen macht. Das ist die wichtigste Baustelle — und die günstigste zu schliessen, weil der Inhalt teils schon existiert (aus Lead-Challenge / Bootcamp-Tag-1+2 recycelbar).
-
-### 2. 🟡 Rollen-Klärung im Premium (MBA vs. 1'199 vs. 1'497)
-Drei High-Price-Angebote nebeneinander verwirren. Sauber wäre: **MBA = das eine Flaggschiff**, alles andere ordnet sich unter oder wird archiviert.
-
-### 3. 🟡 Umsetzerinnen als eigenständiger Dauer-Motor sichtbar machen
-Sie ist Continuity **und** MBA-Baustein zugleich. Als **standalone 39/Mt** ist sie der sanfte Auffang für alle, die MBA (noch) nicht kaufen — und dein einziger planbarer Recurring-Umsatz. Sie verdient einen eigenen, dauerhaft offenen Funnel, nicht nur die Bundle-Rolle.
+**Befund:** Sauberes Bild. Die MBA ist das einzige Continuity-/Komplett-Zuhause (inkl. Umsetzerinnen). Das 1:1 ist bewusst ein seltener, aktiv terminierter Side-Offer — es konkurriert nicht mit dem Flaggschiff, weil es nur punktuell läuft.
 
 ---
 
-## Soll-Treppe (Endbild, das ich empfehle)
+## Die verbleibenden To-Dos (nach den Entscheidungen)
 
-```
-FREE (A→B)
-  Evergreen:  Quiz „Network-Business-Potenzial" (Haupt-Einstieg, ManyChat QUIZ)
-              + 1 gebündeltes Workbook/Fahrplan als Vertiefung
-  Launch:     0€ Mama-Business-Bootcamp (PIA live) — 1–2×/Jahr als MBA-Zünder
-        ↓
-LOW (B→E)
-  NEU:        Evergreen-Tripwire 39 CHF „[Ergebnis] in 7 Tagen" (+ Offer-Bump + Bundle)
-              → dauerhaft offen, füttert Liste + qualifiziert Käuferinnen
-  Continuity: DIE UMSETZERINNEN 39/Mt (dauerhaft offen, sanfter Auffang)
-        ↓
-MID (E→M)  — als MBA-Bausteine positioniert, standalone nur bewusst
-  Instagram-Kundenmaschine · Mama-CEO · Digitale Produktwelt (je 333)
-        ↓
-HIGH (M→Z)
-  ⭐ MBA — Mum Business Academy (997 Pioneer / 1347 Final)
-     = das eine Flaggschiff, alle Funnels leiten hierhin
-  ( „Aus Nebenbei wird Business" 1'199 → Rolle klären oder archivieren )
-  ( „Mompreneur All-In" 1'497 → als abgelöst markieren )
-```
-
-**Reihenfolge des Bauens (Julia-Logik „Kaufbarriere zuerst brechen"):**
-1. **Evergreen-Tripwire** bauen (grösster Hebel, kleinster Aufwand — Inhalt teils vorhanden).
-2. **Umsetzerinnen** dauerhaft öffnen + eigenen Funnel geben.
-3. **Premium aufräumen** (MBA = Flaggschiff, Rest zuordnen/archivieren).
-4. **Freebies konsolidieren** (Quiz als Haupt-Einstieg).
+1. 🟢 **„Finde dein Thema" als Evergreen-Zubringer scharf stellen** — dauerhaft offen + Funnel eindeutig → MBA. (Kein Bau, nur Funnel-Setup. Grösster Hebel für „warme Liste zwischen den Launches".)
+2. 🟢 **Alle Einzelkurs- + Freebie-Funnels auf die MBA ausrichten** — überall dieselbe Ziel-Story (Leitprinzip technisch umsetzen: ManyChat/AC-Mails enden im MBA-Pitch).
+3. 🟢 **1:1-Bewerbungs-Woche als wiederkehrenden Mini-Slot** einplanen (z.B. 1×/Quartal 1 Woche) — sonst geht das Side-Offer unter.
+4. 🟢 **Notion-DB bereinigen** — „Mompreneur All-In" raus, Umsetzerinnen als „nur in MBA" markieren (Blöcke unten).
 
 ---
 
-## Umsatz-Realitäts-Check — 40'000 CHF/Jahr
+## Umsatz-Realitäts-Check — 40'000 CHF/Jahr (FINAL)
 
 **Ziel:** 40'000 ÷ 12 ≈ **3'333 CHF/Monat.**
-*(Profil-Erinnerung: Patricias echter Massstab ist „mehr als letztes Jahr, stetig" — keine Druck-Rechnung, sondern Orientierung. Zahlen konservativ.)*
+*(Profil-Erinnerung: Patricias echter Massstab ist „mehr als letztes Jahr, stetig" — Zahlen konservativ, kein Druck.)*
 
-| Baustein | Preis | realistisch/Monat | Umsatz/Monat |
+Ohne Standalone-Umsetzerinnen ist die **MBA der Umsatz-Motor**. Realistischer Pfad:
+
+| Baustein | Preis | realistisch | Umsatz/Monat |
 |---|---|---|---|
-| Evergreen-Tripwire (NEU) | 39 | 15 | 585 |
-| „Finde dein Thema" (Tripwire Säule 1) | ~39 | 8 | 312 |
-| **Umsetzerinnen** (Recurring, wachsend) | 39/Mt | 30 Mitglieder | 1'170 |
-| Einzelkurse Mid (333) | 333 | 2 (verteilt) | 666 |
-| **MBA** (1–2 Runden/Jahr, ⌀ auf Monat umgelegt) | 997–1347 | ~1 (= ~12/Jahr) | ~1'100 |
-| **TOTAL** | | | **~3'833 CHF/Monat** |
-| **= ~46'000 CHF/Jahr** | | | **~115 % des 40k-Ziels** |
+| **MBA** (Flaggschiff, ~2 Runden/Jahr, ⌀ auf Monat) | 997–1347 | ~14/Jahr | ~1'400 |
+| Minikurs „Finde dein Thema" (Evergreen-Zubringer) | ~39–49 | 12/Mt | ~540 |
+| Einzelkurse Mid (333, Direktkäufe) | 333 | ~2/Mt | ~666 |
+| 1:1 „Aus Nebenbei wird Business" (1 Woche/Quartal) | 1'199 | ~4/Jahr | ~400 |
+| **TOTAL** | | | **~3'006 CHF/Monat** |
+| **= ~36'000 CHF/Jahr** | | | **~90 % des 40k-Ziels** |
 
-**Konservativer Boden (50 %):** ~1'900 CHF/Monat = ~23'000 CHF/Jahr = ~58 % — die Untergrenze bei schleppendem Start.
-**Hebel Nr. 1:** die **Umsetzerinnen-Mitgliederzahl** — jede 10 zusätzlichen Mitglieder = +390 CHF/Monat planbarer Recurring-Umsatz. Das ist der stabilste Weg zum Ziel, unabhängig von Launch-Wellen.
-**Hebel Nr. 2:** **MBA-Runden pro Jahr** — von 1 auf 2 Runden = grösster Einzel-Sprung nach oben.
+**Der Hebel auf 100 %+:** **MBA-Volumen.** Von ~14 auf ~18 MBA-Käufe/Jahr (= stärkere/zusätzliche Launch-Runde) → ~+560 CHF/Monat → **~43k/Jahr, über Ziel.**
+**Zweit-Hebel:** der Evergreen-Zubringer „Finde dein Thema" — je mehr er dauerhaft läuft, desto mehr warme MBA-Kandidatinnen pro Launch (indirekter, aber grosser Effekt aufs MBA-Volumen).
+**Konservativer Boden (50 %):** ~1'500 CHF/Monat = ~18k/Jahr — Untergrenze bei nur 1 schwachem Launch/Jahr.
 
----
-
-## Offene Entscheidungen (brauche kurz deinen Input)
-
-1. **Einzelkurse (333):** Weiter aktiv einzeln bewerben — oder bewusst als „gibt's nur noch in der MBA" positionieren (Wert der MBA steigt, Cluster-Verwirrung sinkt)?
-2. **„Aus Nebenbei wird Business" (1'199):** behalten als Standalone-Premium für Säule-2-Only-Käuferinnen — oder in die MBA überführen/archivieren?
-3. **„Mompreneur All-In" (1'497):** offiziell als **abgelöst durch MBA** markieren? (Empfehlung: ja.)
-4. **„Finde dein Thema"-Preis:** wie viel kostet es aktuell wirklich? (bestimmt, ob es der Evergreen-Tripwire ist oder ein zweiter Mid-Baustein).
-
-→ Sobald du diese 4 beantwortest, schärfe ich die Treppe final + bereite die Notion-DB-Updates zum Eintragen vor.
+> **Kern-Einsicht:** Weil die MBA jetzt Continuity + Komplett-Weg bündelt, hängt dein Jahr stärker an **wenigen, starken Launch-Runden** als an vielen kleinen Verkäufen. Darum: **2 gut vorbereitete MBA-Launches/Jahr schlagen 10 einzelne Kurs-Verkäufe.** Und der Evergreen-Zubringer sorgt dafür, dass jeder Launch auf eine warme Liste trifft.
 
 ---
 
-## 📋 Notion-Produkte-DB — Eintrags-/Update-Blöcke
+## 📋 Notion-Produkte-DB — Update-Blöcke
 
-*(DB: https://www.notion.so/2ae7078e8b7e81efaafaf03993ef344f · Kategorie-Feld: Free/Low/Mid/High Price Offer · Preis in CHF. Notion-MCP-Schreiben ist aktuell plan-gated (Business-Plan nötig) — darum hier Blöcke zum manuellen Eintragen/Anpassen.)*
+*(DB: https://www.notion.so/2ae7078e8b7e81efaafaf03993ef344f · Kategorie: Free/Low/Mid/High Price Offer · Preis CHF. Notion-MCP-Schreiben aktuell plan-gated (Business-Plan) — darum Blöcke zum manuellen Anpassen.)*
 
-### NEU anlegen — Evergreen-Tripwire
+### Bestätigen — Minikurs als Evergreen-Zubringer
 ```
-Name:      [Ergebnis] in 7 Tagen — dein Evergreen-Einstieg   (Titel final beim Bau)
+Name:      Finde dein Thema als Network-Mama (in 60 Min)
 Kategorie: Low Price Offer
-Preis:     39
-Status:    Idee
-Zielgruppe: Network-Mama, die ein Freebie gemacht hat + einen ersten bezahlten,
-            schnellen Win sucht — bevor sie sich für MBA entscheidet
-Painpoint: „Ich hab gelesen/geschaut, aber noch nie was von mir umgesetzt/verkauft."
-Sprung:    B → E
-Format:    Mini-Kurs (Audio/Video) + Workbook + Offer-Bump + Bundle
-Umsatz-Beitrag: ~7'000 CHF/Jahr (15/Mt × 39) + Funnel-Füller für MBA
-Markt-Research-Notiz: Kernlücke lt. 00-markt-research.md — kein Evergreen-Tripwire
+Preis:     [aktuellen Preis eintragen]
+Status:    Live (dauerhaft offen)
+Sprung:    B → E  ·  Funnel-Ziel: MBA
+Notiz:     Evergreen-Einstieg — leitet in die MBA. Nicht nur im Launch aktiv.
 ```
 
-### Bestätigen/Öffnen — Die Umsetzerinnen
+### Markieren — Umsetzerinnen = nur in MBA
 ```
-Name:      Die Umsetzerinnen — Continuity-Club
-Kategorie: Low Price Offer
-Preis:     39
-Status:    Live (dauerhaft offen)  ← von „Pre-Launch" hochstufen, sobald offen
-Sprung:    B → E (Continuity) + Baustein der MBA
-Umsatz-Beitrag: Recurring — Haupt-Stabilitäts-Hebel (30 Mitgl. = ~14'000 CHF/Jahr)
+Name:      Die Umsetzerinnen (Begleitung)
+Kategorie: (Baustein) — NICHT einzeln verkaufen
+Notiz:     Gibt es ausschliesslich als Begleitungs-Teil der MBA. Kein Standalone-Funnel.
 ```
 
-### Rolle klären — Premium-Altbestand
+### Löschen/Archivieren
 ```
-„Aus Nebenbei wird Business" (High, 1'199) → Status prüfen: Standalone behalten ODER → Archiv
-„Mompreneur All-In"        (High, 1'497) → Archiv = ja (abgelöst durch MBA)   [Empfehlung]
+„Mompreneur All-In" (1'497)  → existiert nicht  →  aus DB entfernen / Archiv
 ```
 
-### Referenz — Flaggschiff (steht, keine Änderung nötig)
+### Bestätigen — 1:1 als Side-Offer
 ```
-MBA — Mum Business Academy · High Price Offer · 997/1347 · Status: Live (Start Mitte Aug)
-= das M→Z-Endprodukt, in das alle Funnels leiten.
+Name:      Aus Nebenbei wird Business (1:1)
+Kategorie: High Price Offer
+Preis:     1'199
+Status:    Aktiv auf Abruf — 1 Bewerbungs-Woche pro Quartal
+Notiz:     Side-Offer, kein Dauer-Funnel. Kein Treppen-Baustein.
+```
+
+### Referenz — Flaggschiff (steht)
+```
+MBA — Mum Business Academy · High Price Offer · 997/1347 · Live (Start Mitte Aug)
+= das M→Z-Endprodukt. Enthält 3 Kurse + PIA + Umsetzerinnen-Begleitung + 12 Mt.
+Jeder Funnel führt hierhin.
 ```
 
 ---
 
 ## Nächste sinnvolle Schritte
 
-- **Sofort:** die 4 offenen Entscheidungen beantworten → ich finalisiere die Treppe.
-- **Modus 3 (Einzelprodukt):** Evergreen-Tripwire bauen (Tag-für-Tag-Outline + Workbook + Offer-Bump). Grösster Hebel, kleinster Aufwand.
-- **Modus 6 (Funnel):** Umsetzerinnen dauerhaft öffnen + eigener Evergreen-Funnel (Freebie → Tripwire → Umsetzerinnen → MBA).
-- **Modus 5 (Launch):** nächste MBA-Runde terminieren (1→2 Runden/Jahr = grösster Umsatz-Sprung).
+- **Modus 6 (Funnel):** „Finde dein Thema" als dauerhaft offenen Evergreen-Funnel → MBA aufsetzen (grösster Hebel, kein Produktbau).
+- **Modus 5 (Launch):** 2. MBA-Runde des Jahres terminieren — das ist der direkteste Weg über 40k.
+- **Quartals-Slot:** 1:1-Bewerbungs-Woche fix in den Jahresplan.
 
 ---
 

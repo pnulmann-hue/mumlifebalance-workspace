@@ -48,7 +48,7 @@ tags: [produkt, research]
 
 > Die Offer-Suite hat sich von **„Säulen mit je eigener Treppe"** (April-Denkmodell) zu **„ein Flaggschiff (MBA), das die Säulen als Bausteine bündelt"** verschoben.
 
-Das ist strategisch richtig (Premium-Jahresprogramm = stärkstes 2026-Format) — **erzeugt aber eine neue Lücke:** Ausserhalb des Bootcamp→MBA-Pfads fehlt eine saubere, günstige Selbst-Läufer-Treppe (Freebie → echter Tripwire → Continuity), die kalte Leads warm macht, wenn gerade kein Live-Launch läuft. Genau das löst `01-produkttreppe.md`.
+Das ist strategisch richtig (Premium-Jahresprogramm = stärkstes 2026-Format). Die Aufgabe ist darum nicht ein neues Produkt, sondern **Funnel-Ausrichtung:** jeder Einstieg (Freebie, Bootcamp, Minikurs „Finde dein Thema") muss dauerhaft und eindeutig in die MBA leiten — auch zwischen den Live-Launches. Genau das regelt `01-produkttreppe.md` (finalisiert nach Patricias Entscheidungen 2026-07-01: MBA = Flaggschiff, alle Funnels dahin · Umsetzerinnen nur in der MBA · 1:1 als Side-Offer · „Mompreneur All-In" gestrichen).
 
 ---
 
