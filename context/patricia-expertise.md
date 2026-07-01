@@ -11,7 +11,7 @@ tags: [patricia, expertise]
 2. Finde dein Thema als Network-Mama in 60 Minuten (11 Lektionen)
 3. Instagram Kundenmaschine (31 Lektionen — umfangreichster Kurs)
 4. Vom Network-Wissen zum eigenen Produkt (12 Lektionen)
-5. Mama-CEO (Willkommen + Säule 1–4 = 24 Lektionen · Stand 2026-06-29 · Säule 5 produziert, Aufnahme folgt)
+5. Mama-CEO (Willkommen + Säule 1–5 + Abschluss = 29 Files · KOMPLETT aufgenommen, Stand 2026-07-01)
 
 ---
 
@@ -91,7 +91,7 @@ Patricias Zahl: **90% Conversion in Challenges** wenn richtig aufgebaut.
 - **Kürzer ist besser** — Sanitär-Beispiel: 10-Min-Lösung > 3-Stunden-Herumschrauben
 - **Jede Lektion braucht Mehrwert & Ergebnis** — nicht einfach reden um zu reden
 
-### Kurs 5: Mama-CEO (8-Wochen-Programm · Säule 1–4 aufgenommen, Stand 2026-06-29 · Säule 5 produziert, Aufnahme folgt)
+### Kurs 5: Mama-CEO (8-Wochen-Programm · KOMPLETT aufgenommen: Säule 1–5 + Abschluss, Stand 2026-07-01)
 **Kern-Claim:** „Mama-CEO heisst nicht mehr arbeiten, sondern anders — von der Macherin zur Entscheiderin." Du schaffst dir Zeit + ein System, das mitdenkt, damit neben Familie wirklich Zeit fürs Business bleibt.
 
 **Säule 1 — Du erschaffst dir die Zeit (L1.1–1.5):**
@@ -124,9 +124,18 @@ Patricias Zahl: **90% Conversion in Challenges** wenn richtig aufgebaut.
 - **Mensch vs. Maschine (KI-Wochenplan)**: KI macht Wiederholbares + Vorbereitendes (Recherche, erste Entwürfe, Pläne, Listen, Briefing) · DU machst Beziehung · Entscheidung · Stimme — die **5 CEO-Aufgaben aus Säule 1 bleiben immer deins**. Jede Aufgabe stempeln: 🤖 KI / 🙋 ich.
 - Kernsatz: *„KI ist eine Praktikantin — sie ist nur so gut wie dein Auftrag."* · *„Der Prompt ist das Rezept; Cowork ist der Herd zu Hause, Claude Code die Lieferung an die Haustür."* · *„Die KI bereitet vor, du entscheidest und gibst den letzten Schliff."*
 
+**Säule 5 — Business skalieren · die Mama-CEO-Matrix (L5.1–5.4):**
+- 🌟 **Die Mama-CEO-Matrix (4 Felder)**: 🙋 **ich** (Beziehung/Stimme/Entscheidung — die 5 CEO-Aufgaben + 1:1) · 🤖 **KI** (vorbereitend/wiederholbar, braucht Urteil) · ⚙️ **System/Tool** (läuft mechanisch/automatisiert) · 🗑 **raus** (weglassen statt delegieren). Der feine Unterschied: **KI denkt mit, System läuft mechanisch.** Faustregel: musst du jedes Mal urteilen → KI; läuft's immer gleich → System.
+- **25 Tasks sortieren (MASTERY)**: dein ganzes Business einmal ins Raster — der Aha: *„das ich-Feld ist erstaunlich klein, das meiste läuft über KI + System."* „Aufräumen statt Skalieren — sonst skalierst du das Chaos." Raus = das X aus dem 4-Filter (S2).
+- **Innerer Kreis**: was NIE an KI/System geht — Bestandskundinnen (= Gold, günstiger zu halten als neue zu gewinnen) · Sparring/Mentorin · Familie (innerster Kreis). Schützen = feste Zeit im Wochenrhythmus blocken, nicht „wenn Zeit bleibt". „Alles automatisieren ist der teuerste Fehler beim Skalieren."
+- **Der 90-Tage-Plan (rundet Säule 3 ab)**: konkreter 3-Monats-Plan — **pro Monat EIN Zentrum** (Thema · 0€-Angebot · Produkt = Monats-Trio) → **rückwärts rechnen** (Monatsziel → Wochen → Aufgaben) → in die Notion-Aufgabenliste, die der Cockpit-Bot täglich serviert. Jede Aufgabe durch die Matrix stempeln. Plus **Nicht-Liste** (was du bewusst NICHT machst = Fokus-Schutz) + „fertig besser als perfekt".
+- Kernsatz: *„Skalieren heisst nicht mehr tun, sondern weniger selbst tun und das Richtige schützen."* · *„Weglassen ist die ehrlichste Form von Skalieren."* · *„Du bist Mama-CEO — du führst statt zu funktionieren."*
+
+**Abschluss „So geht's weiter" (Cross-Sell, INTERN):** am Kursende verweist Patricia auf die weiterführenden Angebote (Insta-Kundenmaschine · Digitale Produktwelt · MBA/ThriveCart Academy) mit Teilnehmerinnen-Rabatt. ⚠️ Reines Verkaufs-/Verweis-Video — kein Lehrinhalt; beim Customer-Sync nicht als „Methode" behandeln.
+
 **Mama-CEO-Metaphern:** Vogelperspektive (raus aufs Jahr, rein auf den Tag) · Schubladen (Rollen/Bereiche sortieren) · zweites Gehirn / Business-Brain (Notion) · roter Faden (führt Tag für Tag ans Ziel).
 
-> **Voll-Transkripte:** `context/Kurse/aktuelle kurse/Mama-CEO/Transkripte/` (12–17 = Säule 3 · 18–23 = Säule 4) · **Master-Doku:** `…/10-saeule-3-MASTER.md` · `…/10-saeule-4-MASTER.md` · `…/10-saeule-5-MASTER.md`. **Abgrenzung:** Content-Strategie/Akquise = Insta-Kundenmaschine, NICHT Mama-CEO. KI-Tools/Bots (Cowork/Claude Code/Notion-Bots) = Säule 4.
+> **Voll-Transkripte:** `context/Kurse/aktuelle kurse/Mama-CEO/Transkripte/` (12–17 = Säule 3 · 18–23 = Säule 4 · 24–27 = Säule 5 · 28 = „So geht's weiter") · **Master-Doku:** `…/10-saeule-3-MASTER.md` · `…/10-saeule-4-MASTER.md` · `…/10-saeule-5-MASTER.md`. **Abgrenzung:** Content-Strategie/Akquise = Insta-Kundenmaschine, NICHT Mama-CEO. KI-Tools/Bots (Cowork/Claude Code/Notion-Bots) = Säule 4. Skalieren/Matrix/innerer Kreis/3-Monats-Plan = Säule 5.
 
 ---
 

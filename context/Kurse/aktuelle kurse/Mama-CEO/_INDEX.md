@@ -11,7 +11,7 @@ tags: [kurs, mama-ceo, wissensbasis]
 
 ### `Transkripte/` — Original-Aufnahmen (Wort-für-Wort von Patricia)
 Komplette Whisper-Transkripte aller bereits aufgenommenen Lektionen.
-**Stand 2026-06-29:** Willkommen + Säule 1 (5) + Säule 2 (6) + Säule 3 (6) + Säule 4 (6) = 24 Files.
+**Stand 2026-07-01:** Willkommen + Säule 1 (5) + Säule 2 (6) + Säule 3 (6) + Säule 4 (6) + Säule 5 (4) + „So geht's weiter" (1) = **29 Files. Kurs komplett aufgenommen.**
 
 | Datei | Säule | Lektion | Dauer-Indikator |
 |---|---|---|---|
@@ -39,13 +39,19 @@ Komplette Whisper-Transkripte aller bereits aufgenommenen Lektionen.
 | `21-lektion-4-4-cockpit-bot.txt` | 4 | 4.4 Cockpit-Bot bauen (Live-Demo) | lang |
 | `22-lektion-4-5-MASTERY-haushalts-helfer.txt` | 4 | 4.5 **MASTERY** Haushalts-Helfer-Bot (Live-Demo) | lang |
 | `23-lektion-4-6-ki-wochenplan-mensch-maschine.txt` | 4 | 4.6 KI-Wochenplan — Mensch vs. Maschine | kurz |
+| `24-lektion-5-1-mama-ceo-matrix.txt` | 5 | 5.1 Die Mama-CEO-Matrix einführen (ich/KI/System/raus) | mittel |
+| `25-lektion-5-2-MASTERY-25-tasks-sortieren.txt` | 5 | 5.2 **MASTERY** 25 Tasks sortieren (Matrix füllen) | lang |
+| `26-lektion-5-3-innerer-kreis.txt` | 5 | 5.3 Dein innerer Kreis (was nie an KI/System geht) | kurz |
+| `27-lektion-5-4-90-tage-plan.txt` | 5 | 5.4 Dein 90-Tage-Plan (konkreter 3-Monats-Plan) | lang |
+| `28-so-gehts-weiter.txt` | — | Abschluss: So geht's weiter (Cross-Sell: Kundenmaschine · Produktwelt · MBA/Academy · Rabatt) | mittel |
 
 **Säule 1:** zusätzlich `.json` (Whisper-API mit Timestamps) + `.srt` (Untertitel-Format)
 **Säule 2 + 3:** nur `.txt` (lokales Whisper, ohne Timestamps; Säule 3 Tool-/Produktnamen leicht bereinigt)
 **Säule 4:** nur `.txt` (Whisper medium, aufgenommen 2026-06-29; Roh-Transkript, Tool-Namen Cowork/Notion/Claude Code authentisch belassen)
+**Säule 5 + So geht's weiter:** nur `.txt` (Whisper medium, aufgenommen 2026-07-01; Roh-Transkript). ⚠️ Das „So geht's weiter"-Transkript ist ein **Cross-Sell/Verkaufs-Video** — beim Sync ins Kunden-Wissen keine Mentoren-Namen übernehmen.
 
-### Noch ausstehend
-- Säule 5 (W7-8): Skalieren / Mama-CEO-Matrix (Aufnahme folgt)
+### Alle 5 Säulen aufgenommen ✅ (Stand 2026-07-01)
+- Kurs komplett: Willkommen + Säule 1–5 + Abschluss „So geht's weiter".
 
 ## Wie Skills das hier verwenden
 
