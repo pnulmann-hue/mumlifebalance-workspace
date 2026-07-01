@@ -94,6 +94,7 @@ tags: [tag1, tag2, tag3]
 | `outputs/calls/` | `[call]` |
 | `outputs/telegram-posts/` | `[content, telegram]` |
 | `outputs/sonstige/` | `[misc]` |
+| `outputs/notizen/` | `[notiz]` |
 | `outputs/bio-update-*/` | `[brand]` |
 | `outputs/bio-check-bot/` | `[tools, bot]` |
 | `outputs/samples/` | `[content, samples]` |
@@ -226,6 +227,12 @@ Volle Doku: `reference/montag-workflow-v2.md`.
 - Optional Telegram-Push der Kurz-Zusammenfassung
 
 **Warum nicht 30 Posts auf einmal bauen?** Live-Posts (BTS, Telegram-Call-Reaktionen) brauchen Frische. Trends auf Reddit/IG müssen reagiert werden. Pre-Sale-Signale aus Woche 1 ändern Wochen 2-4. Deshalb: **Strategie monatlich, Konkretion wöchentlich.**
+
+### /notiz
+
+**Zweck:** Schnelles Erfassen und Abrufen von Gedankenstützen — session-übergreifend.
+
+Patricia kann jederzeit spontane Ideen festhalten (im Chat „Notiz: …" oder `/notiz <text>`), die in `outputs/notizen/notiz-inbox.md` chronologisch abgelegt und automatisch committet/gepusht werden. In einer späteren Session (z.B. am Laptop) holt `/notiz` (ohne Text) oder „zeig mir meine Notizen" alles wieder hervor. „Notiz X erledigt" archiviert einen Eintrag. Grössere Notizen können in eigene Dateien `outputs/notizen/YYYY-MM-DD-<thema>.md` ausgelagert werden. Volle Logik: `.claude/commands/notiz.md`.
 
 ### /garten
 
