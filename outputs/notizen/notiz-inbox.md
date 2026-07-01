@@ -22,6 +22,10 @@ tags: [notiz, inbox]
 Der Gedanke im Volltext. Optional #themen-tag.
 -->
 
+### 2026-07-01 — Minikurs „Kopf leer in 60 Min" ausgearbeitet ✏️
+Erster Minikurs-Favorit ist als Produkt-Konzept ausgearbeitet: Briefing + 3-Modul-Outline + Funnel (Bumps/Upsell/Downsell/5 Mails) + KI-Check. Liegt in `outputs/produkte/kopf-leer-60min/`. Nächste Schritte: Folien in Canva bauen + aufnehmen + Checkout in ThriveCart + Arbeitsblatt (.docx). Siehe [[kopf-leer-60min/_INDEX|Produkt-Index]].
+#minikurse #produkt #5k-ziel
+
 ### 2026-07-01 — 2-3 weitere Minikurse (37-49) aus bestehenden Modulen ausgründen
 Nächster konkreter Schritt Richtung 5k/Monat (aus der Julia-Trost-Gap-Analyse): **weitere Minikurse bauen** — 1 existiert, Julia rechnet mit mehreren täglich laufenden Einstiegen. Idee: aus bestehenden grossen Kursen einzelne Module als eigenständige 37-49er-Minikurse ausgründen (schnell, kein neuer Content nötig). Mögliche Quellen: „Finde dein Thema", Instagram-Kundenmaschine-Modul, digitale Produktwelt-Modul. → Später mit `/produkt` oder `/funnel` konkret ausarbeiten.
 Siehe [[2026-07-01-julia-trost-5k-strategie-gap-analyse]].
