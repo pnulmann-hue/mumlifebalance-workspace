@@ -110,15 +110,17 @@ Was mich rausgeholt hat, war nicht der nächste Kurs. Es war ein klarer Weg — 
 
 ---
 
-## BLOCK 9 — Stimmen (NUR echte einsetzen — Platzhalter)
+## BLOCK 9 — Stimmen (echt · Erlaubnis bestätigt 1.7.2026)
 
-> „[ECHTES MENTEE-TESTIMONIAL — z.B. ‚Seit ich meine Positionierung angepasst habe, geht mein Account ab.']"
+**Zitat-Karten (Text):**
+> „Wärmstens zu empfehlen. Ich habe meine ganze Strategie überarbeitet — und bin auch nach dem Kurs weiter dran." — Susanne · @susanneantonaci
+> „Endlich ein einfaches und umfassendes Verständnis für business-fokussiertes Instagram. Meine Bio ist jetzt klar." — Miriam · @wohlfuehlhof_neuhus
+> „Meine Storyviews sind gestiegen und der Austausch mit meiner Community spürbar intensiver — nicht durch Tricks, sondern weil ich mich mehr gezeigt habe." — Andrea
+> „Auf Insta läufts — diese Woche ein Starterpaket verkauft. Meine Follower reagieren richtig aktiv." — Mentee
 
-> „[ECHTES MENTEE-TESTIMONIAL — z.B. ‚Nach einem Post hatte ich so viele DMs, ich kam nicht mehr hinterher.']"
+**Screenshot-Wand (der „Krach"):** 13 echte Screenshots (WhatsApp/Instagram/Telegram) aus `img/testimonials/t01–t13.jpg`, als Masonry-Galerie in der HTML-Salespage (Sektion 10). Enthält u.a. 2 echte Instagram-Insights (53.897 bzw. 52.939 Aufrufe + Follower-Wachstum + „Starterpaket verkauft"). Erlaubnis für alle am 1.7.2026 bestätigt. Nachnamen nicht sichtbar (nur Vornamen).
 
-> „[ECHTES TESTIMONIAL aus dem Pilot / Bootcamp — anonym oder mit Vornamen + Erlaubnis]"
-
-*(Keine erfundenen Stimmen einsetzen — lieber wenige echte als viele erfundene.)*
+⚠️ **Vor WP-Deploy:** Bilder komprimieren + in die WP-Mediathek laden, dann die `img/testimonials/…`-Pfade auf die Mediathek-URLs umstellen (relative Pfade laufen auf WP nicht). WAF-Hinweis: [[reference_wordpress-waf-lp-deploy]].
 
 ---
 
