@@ -27,7 +27,7 @@ _Erstellt 2026-07-01. Quelle: Julia-Trost-Transkripte (10k Verkaufs-Strategie, 2
 
 ## Lücken ❌ — was Julia empfiehlt, das noch fehlt (priorisiert)
 
-1. **Aktiv verkaufte Minikurse (37-49) als Volumen-Motor fehlen.** Treppe springt von 0€ direkt auf 39/97/333 — kein aktiv beworbener echter Minikurs mit hoher Kauf-Frequenz. *Warum:* niedrigpreisig = Impulskauf ohne Salespage, bricht die Kaufbarriere und speist alle Upsells.
+1. **Zu wenige Minikurse (37-49) als Volumen-Motor.** _Präzisierung durch Patricia (2026-07-01): EIN Minikurs ist vorhanden — es braucht aber MEHRERE._ Julia rechnet mit mehreren niederschwelligen Einstiegen, die täglich laufen. *Warum:* niedrigpreisig = Impulskauf ohne Salespage, bricht die Kaufbarriere und speist alle Upsells. Ein einzelner Minikurs reicht nicht für ~4 Käufe/Tag.
 2. **Offer-Bump-/Upsell-/Downsell-Ketten technisch möglich, aber nicht durchgängig bestückt.** *Warum:* verdoppelt/verdreifacht den Umsatz pro Kunde ohne neuen Lead — je 37er-Kauf +100-150.
 3. **E-Mail-Nachkauf-Sequenzen fehlen bei den meisten Funnels** (Starterguide, Story-Challenge = „KEIN AC-FUNNEL", andere „geplant"). *Warum:* Mail-Marketing = DER Hebel von Einmal- zu Wiederkäufer, läuft passiv weiter.
 4. **Kein „ein Produkt/Monat konsequent verkaufen"-Rhythmus im Normalbetrieb** — starke Einzel-Launches, aber zwischen den Launches fehlt der tägliche Verkaufs-Rhythmus auf EIN Fokus-Produkt. *Warum:* verkaufst du nicht täglich, verkaufst du nicht.
@@ -36,7 +36,7 @@ _Erstellt 2026-07-01. Quelle: Julia-Trost-Transkripte (10k Verkaufs-Strategie, 2
 
 ## 3 konkrete nächste Schritte für konstante 5k/Monat
 
-1. **Einen echten 37-49er-Minikurs bauen und ab sofort TÄGLICH bewerben** (z.B. aus „Finde dein Thema" oder einem Insta-Kundenmaschine-Modul als Standalone) — Ziel: ~4 Verkäufe/Tag + 5 grosse Kurse/Monat = 5k, statt auf 270 Kleinverkäufe zu setzen.
+1. **Weitere 37-49er-Minikurse bauen** (einer existiert bereits) und ab sofort TÄGLICH bewerben — z.B. aus „Finde dein Thema" oder einem Insta-Kundenmaschine-Modul als Standalone. Ziel: ~4 Verkäufe/Tag + 5 grosse Kurse/Monat = 5k, statt auf 270 Kleinverkäufe zu setzen.
 2. **Offer Bump (9-15) + Upsell (97) + Downsell an jeden ThriveCart-Checkout hängen** — vorhandene 39/97-Produkte gegenseitig als Bumps verknüpfen. Aus 37 werden ~150 pro Kunde, ohne neue Leads.
 3. **Nachkauf-Mail-Sequenzen für die Lücken-Funnels nachziehen** (Starterguide + Story-Challenge zuerst) + festen „ein Fokus-Produkt/Monat + täglich Story-Verkauf"-Rhythmus zwischen den Launches etablieren — inkl. monatlicher Bestandskunden-Reaktivierungs-DM-Runde.
 
