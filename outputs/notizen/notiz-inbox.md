@@ -22,6 +22,10 @@ tags: [notiz, inbox]
 Der Gedanke im Volltext. Optional #themen-tag.
 -->
 
+### 2026-07-01 — Ziel: konstant 5k CHF/Monat + Julia-Trost-5k/10k-Strategie prüfen
+Kursgerüst steht im Grundsatz. Nächstes grosses Ziel: **konsequent auf 5k CHF/Monat** kommen. Optionaler Ausbau: **mehr Minikurse** als niederschwelliger Einstieg (monatlich gerechnet). → Julia Trosts 5k/10k-Strategie-Video durchsehen: was empfiehlt sie, das ich noch nicht habe? (Gap-Analyse läuft, Ergebnis in `outputs/notizen/` ablegen.)
+#strategie #julia-trost #5k-ziel
+
 ### 2026-07-01 — Upsell/Downsell/Crosssell-Strategie konsequent umsetzen (nach Julia Trost)
 Die komplette **Upsell-, Downsell- und Crosssell-Strategie** noch konsequent umsetzen: verschiedenes entwickeln und miteinander verknüpfen — alles **nach Julia Trosts Strategie**. Ziel: damit ich später **Ads auf die Minikurse schalten** kann.
 #funnel #julia-trost #minikurse
