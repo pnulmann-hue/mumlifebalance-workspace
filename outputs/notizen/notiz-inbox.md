@@ -22,6 +22,11 @@ tags: [notiz, inbox]
 Der Gedanke im Volltext. Optional #themen-tag.
 -->
 
+### 2026-07-01 — KI-Companion für Kundenmaschine hochladen + für Produktwelt erstellen
+- **Instagram Kundenmaschine:** KI-Companion ist bereits erstellt → noch ins Programm hochladen.
+- **Digitale Produktwelt:** so einen KI-Companion noch erstellen → danach ebenfalls ins Programm hochladen.
+#kurse #ki-companion
+
 ### 2026-07-01 — MBA Sales-Page: Testimonials einfügen
 Die Sales-Page der MBA noch anpassen — konkret die **Testimonials einfügen**.
 #mba #salespage
