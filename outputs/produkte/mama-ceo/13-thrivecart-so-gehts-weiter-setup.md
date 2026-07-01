@@ -46,7 +46,7 @@ Du musst nie wieder überlegen, welchen Kurs du als Nächstes brauchst. Du hast 
 
 **Button (mit Buchungslink):**
 ```
-👉  Ich will das Komplett-Paket: zur Mum Business Academy  →  [MBA-BUCHUNGSLINK EINFÜGEN]
+👉  Ich will das Komplett-Paket: zur Mum Business Academy  →  https://mumlifebalance.thrivecart.com/mba/
 ```
 
 **Teilnehmerinnen-Vorteil (Mini-Zeile direkt darunter):**
@@ -64,7 +64,7 @@ Nutzen: Du zeigst dich, aber die Kundinnen bleiben aus? Hier baust du dein glask
 und lernst Schritt für Schritt, wie Stories, Content und Positionierung wirklich Kundinnen bringen
 — nicht nur Likes.
 
-Button:  Endlich Kundinnen über Instagram  →  [KUNDENMASCHINE-BUCHUNGSLINK EINFÜGEN]
+Button:  Endlich Kundinnen über Instagram  →  https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/
 ```
 
 **🛍 Digitale Produktwelt** — dein eigenes Produkt
@@ -73,7 +73,7 @@ Nutzen: Du weisst noch nicht, WAS du verkaufen sollst? Hier machst du aus deinem
 ein eigenes digitales Produkt — von der Freebie-Idee über den Minikurs bis zum grossen Angebot,
 das auch ohne dich verkauft.
 
-Button:  Bau dein eigenes Produkt  →  [PRODUKTWELT-BUCHUNGSLINK EINFÜGEN]
+Button:  Bau dein eigenes Produkt  →  https://mumlifebalance.thrivecart.com/digitale-produktwelt/
 ```
 
 **📂 (optional) Notion „Business-Brain"-Vorlage**
