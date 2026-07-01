@@ -9,6 +9,7 @@ Patricias Gedankenstützen-Sammlung. Zentrale Inbox für spontane Ideen + themat
 ## Dateien
 
 - [[notiz-inbox]] — laufende Inbox für alles, was spontan reinkommt
+- [[2026-07-01-julia-trost-5k-strategie-gap-analyse]] — Julias 5k/10k-Strategie vs. Patricias Stand + 3 nächste Schritte
 
 ## So nutzt du das
 
