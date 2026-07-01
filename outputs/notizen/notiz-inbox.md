@@ -22,6 +22,11 @@ tags: [notiz, inbox]
 Der Gedanke im Volltext. Optional #themen-tag.
 -->
 
+### 2026-07-01 — 2-3 weitere Minikurse (37-49) aus bestehenden Modulen ausgründen
+Nächster konkreter Schritt Richtung 5k/Monat (aus der Julia-Trost-Gap-Analyse): **weitere Minikurse bauen** — 1 existiert, Julia rechnet mit mehreren täglich laufenden Einstiegen. Idee: aus bestehenden grossen Kursen einzelne Module als eigenständige 37-49er-Minikurse ausgründen (schnell, kein neuer Content nötig). Mögliche Quellen: „Finde dein Thema", Instagram-Kundenmaschine-Modul, digitale Produktwelt-Modul. → Später mit `/produkt` oder `/funnel` konkret ausarbeiten.
+Siehe [[2026-07-01-julia-trost-5k-strategie-gap-analyse]].
+#minikurse #5k-ziel #produkt
+
 ### 2026-07-01 — Ziel: konstant 5k CHF/Monat + Julia-Trost-5k/10k-Strategie prüfen
 Kursgerüst steht im Grundsatz. Nächstes grosses Ziel: **konsequent auf 5k CHF/Monat** kommen. Optionaler Ausbau: **mehr Minikurse** als niederschwelliger Einstieg (monatlich gerechnet). → Julia Trosts 5k/10k-Strategie-Video durchsehen: was empfiehlt sie, das ich noch nicht habe? (Gap-Analyse läuft, Ergebnis in `outputs/notizen/` ablegen.)
 #strategie #julia-trost #5k-ziel
