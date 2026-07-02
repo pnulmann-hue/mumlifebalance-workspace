@@ -1,67 +1,51 @@
 {
-  "datum": "2026-07-02",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": true,
-        "phase": "verkaufsphase",
-        "tag_im_launch": 18,
-        "vorlage": "Eigene Meinung / klare Positionierung",
-        "titel": "TAG 4 — dein Leadmagnet (was als Nächstes kommt)",
-        "story_ziel": "Tag 4 = Leadmagnet. Andeuten: das alles in der richtigen Reihenfolge = die MBA. Erste leise Brücke zum Programm (noch kein Preis).",
-        "kaeufertyp": "Frank",
-        "cta": "Morgen wird's konkret — bleib in den Stories",
-        "cta_keyword": "MBA"
-      },
-      "kontext_snapshot": {
-        "kw": 27,
-        "wochentag": "Donnerstag",
-        "datum": "2026-07-02"
-      },
-      "gesendet_am": "2026-07-02T04:42:01.192Z",
-      "telegram_message_id": 820,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Quick Win",
-        "titel": "Quick Win",
-        "story_ziel": "Eine Formel/Methode die SOFORT funktioniert — Vertrauen + Expertise.",
-        "kaeufertyp": "Willi",
-        "cta": "thematisch passend (STORY / BIO)",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 27,
-        "wochentag": "Donnerstag",
-        "datum": "2026-07-02"
-      },
-      "gesendet_am": "2026-07-02T04:42:02.035Z",
-      "telegram_message_id": 821,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "doterra",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "doTERRA Lifestyle",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": null,
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": {
+    "datum": "2026-07-02",
+    "phase": "verkaufsphase",
+    "julia_vorlage": "eigene-meinung",
+    "titel": "TAG 4 — dein Leadmagnet (was als Nächstes kommt)",
+    "story_ziel": "Tag 4 = Leadmagnet. Andeuten: das alles in der richtigen Reihenfolge = die MBA. Erste leise Brücke zum Programm (noch kein Preis).",
+    "kaeufertyp": "Frank",
+    "cta": "Morgen wird's konkret — bleib in den Stories",
+    "cta_keyword": null,
+    "profil": "mentoring"
+  },
+  "launch_vorlage": {
+    "name": "Eigene Meinung / klare Positionierung",
+    "phase": "alle",
+    "ziel": "Sich klar positionieren, einen Branchen-Mythos/Glaubenssatz aufgreifen der dich aufregt — Expertenstatus + Repel.",
+    "julia_anleitung": "'Ich bin ja normalerweise total X, aber DAS regt mich auf.' Erzähle was dich aufregt (Mythos/Glaubenssatz der Zielgruppe). Liefere dann deine Empfehlung was sie stattdessen tun sollten. Liebevolle Strenge, dann versöhnlich. Bezug zum Angebot.",
+    "kaeufertyp": "Frank + Willi",
+    "slide_bogen": "Hook (das regt mich auf) → der Mythos/Glaubenssatz → warum er schadet → was stattdessen richtig ist → versöhnlich + Brücke"
+  },
+  "kontext_snapshot": {
+    "kw": 27,
+    "wochentag": "Donnerstag",
+    "datum": "2026-07-02"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-07-02T07:51:31.110Z",
+  "telegram_message_id": 822,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
