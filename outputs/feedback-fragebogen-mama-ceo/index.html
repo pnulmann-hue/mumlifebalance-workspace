@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Dein Feedback — Mama-CEO | Mum Life Balance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --petrol: #12828c;
+    --dunkelblau: #29556d;
+    --creme: #f1ecdd;
+    --creme-dark: #e8e1cd;
+    --orange: #dc822e;
+    --text: #0c1c30;
+    --text-soft: #4a5a6e;
+    --weiss: #ffffff;
+    --error: #c0392b;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    color: var(--text);
+    background: var(--creme);
+    line-height: 1.55;
+    font-size: 17px;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 22px 80px;
+  }
+
+  /* HEADER */
+  .header {
+    text-align: center;
+    padding: 18px 0 8px;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--petrol);
+    color: var(--weiss);
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  h1 {
+    font-family: 'Philosopher', serif;
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 40px);
+    color: var(--dunkelblau);
+    margin: 0 0 14px;
+    line-height: 1.2;
+  }
+  h1 .akzent { color: var(--orange); }
+  .lead {
+    font-size: 17px;
+    color: var(--text-soft);
+    max-width: 540px;
+    margin: 0 auto 14px;
+  }
+  .meta {
+    font-size: 14px;
+    color: var(--text-soft);
+    margin-top: 8px;
+  }
+  .meta strong { color: var(--orange); font-weight: 700; }
+
+  /* GIFT BOX */
+  .gift {
+    background: var(--weiss);
+    border: 2px dashed var(--orange);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 26px 0 30px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--text);
+  }
+  .gift strong { color: var(--orange); font-family: 'Philosopher', serif; font-size: 17px; }
+
+  /* FORM */
+  form {
+    background: var(--weiss);
+    border-radius: 16px;
+    padding: 30px 28px;
+    box-shadow: 0 4px 24px rgba(18, 130, 140, 0.08);
+  }
+
+  .frage {
+    margin-bottom: 32px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--creme-dark);
+  }
+  .frage:last-of-type { border-bottom: none; padding-bottom: 0; }
+
+  .frage-nr {
+    display: inline-block;
+    background: var(--petrol);
+    color: var(--weiss);
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  .frage-titel {
+    font-family: 'Philosopher', serif;
+    font-size: 21px;
+    color: var(--dunkelblau);
+    margin: 0 0 6px;
+    line-height: 1.3;
+    font-weight: 700;
+    display: inline;
+  }
+  .frage-hint {
+    font-size: 14px;
+    color: var(--text-soft);
+    margin: 8px 0 16px;
+    margin-left: 38px;
+    font-style: italic;
+  }
+
+  label.optionslabel {
+    display: block;
+    background: var(--creme);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-size: 16px;
+  }
+  label.optionslabel:hover {
+    border-color: var(--petrol);
+    background: var(--creme-dark);
+  }
+  label.optionslabel input[type="radio"],
+  label.optionslabel input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: var(--petrol);
+    transform: scale(1.15);
+    vertical-align: middle;
+  }
+  label.optionslabel input[type="radio"]:checked + span,
+  label.optionslabel input[type="checkbox"]:checked + span {
+    font-weight: 600;
+  }
+  label.optionslabel:has(input:checked) {
+    border-color: var(--orange);
+    background: #fef5ec;
+  }
+
+  textarea, input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid var(--creme-dark);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--text);
+    background: var(--creme);
+    transition: border-color 0.15s ease;
+    resize: vertical;
+  }
+  textarea:focus, input[type="text"]:focus, input[type="email"]:focus {
+    outline: none;
+    border-color: var(--petrol);
+    background: var(--weiss);
+  }
+  textarea { min-height: 110px; }
+
+  /* SKALA */
+  .skala {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+  .skala-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--text-soft);
+    margin-top: 6px;
+  }
+  .skala input[type="radio"] { display: none; }
+  .skala label {
+    flex: 1;
+    min-width: 36px;
+    text-align: center;
+    padding: 12px 4px;
+    background: var(--creme);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.15s ease;
+    font-size: 15px;
+  }
+  .skala label:hover {
+    background: var(--creme-dark);
+    border-color: var(--petrol);
+  }
+  .skala input[type="radio"]:checked + label {
+    background: var(--orange);
+    color: var(--weiss);
+    border-color: var(--orange);
+  }
+
+  /* CHECKBOX-BLOCK (Erlaubnis) */
+  .erlaubnis-block {
+    background: var(--creme);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-top: 16px;
+  }
+  .erlaubnis-block label.optionslabel {
+    background: var(--weiss);
+  }
+
+  .feldgruppe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  @media (max-width: 520px) {
+    .feldgruppe { grid-template-columns: 1fr; }
+  }
+  .feldgruppe label {
+    display: block;
+    font-size: 14px;
+    color: var(--text-soft);
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  /* SUBMIT */
+  .submit-row {
+    margin-top: 30px;
+    text-align: center;
+  }
+  button[type="submit"] {
+    background: var(--orange);
+    color: var(--weiss);
+    border: none;
+    padding: 18px 42px;
+    border-radius: 999px;
+    font-family: 'Philosopher', serif;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.02em;
+    box-shadow: 0 4px 14px rgba(220, 130, 46, 0.3);
+  }
+  button[type="submit"]:hover {
+    background: #c4711f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(220, 130, 46, 0.4);
+  }
+  button[type="submit"]:active { transform: translateY(0); }
+
+  .submit-hint {
+    font-size: 13px;
+    color: var(--text-soft);
+    margin-top: 14px;
+  }
+
+  /* HONEYPOT — versteckt für Spamschutz */
+  .honeypot { display: none !important; }
+
+  /* PFLICHT-MARKER */
+  .req { color: var(--orange); }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--text-soft);
+    font-size: 13px;
+  }
+  footer a { color: var(--petrol); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header class="header">
+    <span class="badge">Nur für Absolventinnen</span>
+    <h1>Dein Feedback macht den <span class="akzent">Unterschied.</span></h1>
+    <p class="lead">
+      Du hast <em>Mama-CEO</em> durch — jetzt brauche ich deine ehrliche Meinung,
+      damit das Programm für die nächsten Mamas noch besser wird.
+    </p>
+    <p class="meta">⏱ ca. <strong>5 Minuten</strong> · 8 Fragen · 100% anonym, ausser du sagst was anderes</p>
+  </header>
+
+  <div class="gift">
+    <strong>Mein Dankeschön:</strong> Nach dem Absenden bekommst du einen <strong>50%-Rabattcode</strong>
+    für einen meiner Minikurse. Versprochen.
+  </div>
+
+  <!-- WICHTIG: data-netlify="true" + name = Form wird automatisch von Netlify erfasst -->
+  <form
+    name="feedback-mama-ceo"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    action="/success.html"
+  >
+    <!-- Netlify Form-Identifier (Pflicht für JS-frei zu funktionieren) -->
+    <input type="hidden" name="form-name" value="feedback-mama-ceo" />
+
+    <!-- Honeypot — Bots füllen das aus, Menschen sehen es nicht -->
+    <p class="honeypot">
+      <label>Bitte nicht ausfüllen: <input name="bot-field" /></label>
+    </p>
+
+    <!-- ============================================================ -->
+    <!-- FRAGE 1 — Vorher-Problem (Testimonial-Setup) -->
+    <!-- ============================================================ -->
+    <div class="frage">
+      <span class="frage-nr">1</span>
+      <h2 class="frage-titel">Was war deine grösste Herausforderung als Mama-Unternehmerin, BEVOR du Mama-CEO gemacht hast?</h2>
+      <p class="frage-hint">Sei konkret — z.B. „Ich hab abends um 22 Uhr noch gearbeitet und trotzdem war nie was fertig" oder „Ich wusste nie, wann ich überhaupt Zeit fürs Business hab".</p>
+      <textarea name="problem-vorher" placeholder="Erzähl mir wie's war..." required></textarea>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FRAGE 2 — Gefühl vorher -->
+    <!-- ============================================================ -->
+    <div class="frage">
+      <span class="frage-nr">2</span>
+      <h2 class="frage-titel">Wie hast du dich in deinem Business-Alltag gefühlt — vor dem Kurs?</h2>
+      <p class="frage-hint">Wähle das was am meisten passt.</p>
+      <label class="optionslabel"><input type="radio" name="gefuehl-vorher" value="ueberfordert" required /> <span>Überfordert — alles gleichzeitig, nie fertig</span></label>
+      <label class="optionslabel"><input type="radio" name="gefuehl-vorher" value="funktionieren" /> <span>Ständig am Funktionieren — keine Zeit für mich</span></label>
+      <label class="optionslabel"><input type="radio" name="gefuehl-vorher" value="planlos" /> <span>Planlos — keine Struktur, jeden Tag Chaos</span></label>
+      <label class="optionslabel"><input type="radio" name="gefuehl-vorher" value="schuldgefuehle" /> <span>Zerrissen — schlechtes Gewissen: Business vs. Familie</span></label>
+      <label class="optionslabel"><input type="radio" name="gefuehl-vorher" value="ausgebrannt" /> <span>Ausgebrannt — abends war nichts mehr übrig</span></label>
+      <label class="optionslabel"><input type="radio" name="gefuehl-vorher" value="anders" /> <span>Anders — schreib's mir unten ✏️</span></label>
+      <textarea name="gefuehl-vorher-detail" placeholder="(optional) Wenn 'anders' — beschreib's hier..."></textarea>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FRAGE 3 — Konkretes Ergebnis -->
+    <!-- ============================================================ -->
+    <div class="frage">
+      <span class="frage-nr">3</span>
+      <h2 class="frage-titel">Was hat sich konkret verändert seit dem Kurs?</h2>
+      <p class="frage-hint">In Zeit, in Struktur oder in Gefühlen — alles ist Gold. Z.B. „Ich weiss jeden Morgen, was dran ist" oder „Ich hab zum ersten Mal einen freien Nachmittag ohne schlechtes Gewissen".</p>
+      <textarea name="ergebnis-nachher" placeholder="Erzähl von deinem Vorher-Nachher..." required></textarea>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FRAGE 4 — Lieblings-Konzept -->
+    <!-- ============================================================ -->
+    <div class="frage">
+      <span class="frage-nr">4</span>
+      <h2 class="frage-titel">Welches Konzept aus dem Programm hat dich am meisten weitergebracht?</h2>
+      <p class="frage-hint">Mehrfach-Auswahl möglich.</p>
+      <label class="optionslabel"><input type="checkbox" name="modul[]" value="wochenrhythmus" /> <span>Dein Wochenrhythmus + die 4 Rollen (Säule 1)</span></label>
+      <label class="optionslabel"><input type="checkbox" name="modul[]" value="huetchen" /> <span>Die Hütchenmethode — Aufgaben radikal reduzieren (Säule 2)</span></label>
+      <label class="optionslabel"><input type="checkbox" name="modul[]" value="notion" /> <span>Notion als Business-Brain / deine Struktur (Säule 3)</span></label>
+      <label class="optionslabel"><input type="checkbox" name="modul[]" value="ki-bots" /> <span>Deine KI-Mitarbeiter: Cockpit- + Haushalts-Bot (Säule 4)</span></label>
+      <label class="optionslabel"><input type="checkbox" name="modul[]" value="matrix" /> <span>Die Mama-CEO-Matrix (ich / KI / System / raus) (Säule 5)</span></label>
+      <label class="optionslabel"><input type="checkbox" name="modul[]" value="plan" /> <span>Der 3-Monats-Plan / rückwärts planen (Säule 5)</span></label>
+      <label class="optionslabel"><input type="checkbox" name="modul[]" value="mindset" /> <span>Der Mindset-Shift: von der Macherin zur Entscheiderin</span></label>
+      <label class="optionslabel"><input type="checkbox" name="modul[]" value="anders" /> <span>Was anderes — schreib's mir ✏️</span></label>
+      <textarea name="modul-detail" placeholder="(optional) Was war's, das dir besonders geholfen hat?"></textarea>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FRAGE 5 — Zufriedenheit jetzt -->
+    <!-- ============================================================ -->
+    <div class="frage">
+      <span class="frage-nr">5</span>
+      <h2 class="frage-titel">Wie fühlt sich dein Business-Alltag JETZT an?</h2>
+      <p class="frage-hint">1 = noch genauso im Hamsterrad · 10 = ich führe, statt zu funktionieren</p>
+      <div class="skala">
+        <input type="radio" id="zufrieden-1" name="zufriedenheit-jetzt" value="1" required /><label for="zufrieden-1">1</label>
+        <input type="radio" id="zufrieden-2" name="zufriedenheit-jetzt" value="2" /><label for="zufrieden-2">2</label>
+        <input type="radio" id="zufrieden-3" name="zufriedenheit-jetzt" value="3" /><label for="zufrieden-3">3</label>
+        <input type="radio" id="zufrieden-4" name="zufriedenheit-jetzt" value="4" /><label for="zufrieden-4">4</label>
+        <input type="radio" id="zufrieden-5" name="zufriedenheit-jetzt" value="5" /><label for="zufrieden-5">5</label>
+        <input type="radio" id="zufrieden-6" name="zufriedenheit-jetzt" value="6" /><label for="zufrieden-6">6</label>
+        <input type="radio" id="zufrieden-7" name="zufriedenheit-jetzt" value="7" /><label for="zufrieden-7">7</label>
+        <input type="radio" id="zufrieden-8" name="zufriedenheit-jetzt" value="8" /><label for="zufrieden-8">8</label>
+        <input type="radio" id="zufrieden-9" name="zufriedenheit-jetzt" value="9" /><label for="zufrieden-9">9</label>
+        <input type="radio" id="zufrieden-10" name="zufriedenheit-jetzt" value="10" /><label for="zufrieden-10">10</label>
+      </div>
+      <div class="skala-label">
+        <span>noch im Hamsterrad</span>
+        <span>ich führe 🚀</span>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FRAGE 6 — NPS Empfehlung -->
+    <!-- ============================================================ -->
+    <div class="frage">
+      <span class="frage-nr">6</span>
+      <h2 class="frage-titel">Würdest du Mama-CEO einer Freundin / Network-Mama empfehlen?</h2>
+      <p class="frage-hint">1 = nein, niemals · 10 = ja, sofort und mit Freude</p>
+      <div class="skala">
+        <input type="radio" id="nps-1" name="empfehlung" value="1" required /><label for="nps-1">1</label>
+        <input type="radio" id="nps-2" name="empfehlung" value="2" /><label for="nps-2">2</label>
+        <input type="radio" id="nps-3" name="empfehlung" value="3" /><label for="nps-3">3</label>
+        <input type="radio" id="nps-4" name="empfehlung" value="4" /><label for="nps-4">4</label>
+        <input type="radio" id="nps-5" name="empfehlung" value="5" /><label for="nps-5">5</label>
+        <input type="radio" id="nps-6" name="empfehlung" value="6" /><label for="nps-6">6</label>
+        <input type="radio" id="nps-7" name="empfehlung" value="7" /><label for="nps-7">7</label>
+        <input type="radio" id="nps-8" name="empfehlung" value="8" /><label for="nps-8">8</label>
+        <input type="radio" id="nps-9" name="empfehlung" value="9" /><label for="nps-9">9</label>
+        <input type="radio" id="nps-10" name="empfehlung" value="10" /><label for="nps-10">10</label>
+      </div>
+      <div class="skala-label">
+        <span>eher nicht</span>
+        <span>auf jeden Fall</span>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FRAGE 7 — Verbesserung -->
+    <!-- ============================================================ -->
+    <div class="frage">
+      <span class="frage-nr">7</span>
+      <h2 class="frage-titel">Was hat dir gefehlt — oder was würdest du dir noch wünschen?</h2>
+      <p class="frage-hint">Sei ehrlich. Genau das hilft mir, das Programm weiterzuentwickeln. Egal ob technisch, inhaltlich oder Struktur.</p>
+      <textarea name="verbesserung" placeholder="Hier kommen deine ehrlichen Gedanken hin..." required></textarea>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FRAGE 8 — Testimonial-Satz -->
+    <!-- ============================================================ -->
+    <div class="frage">
+      <span class="frage-nr">8</span>
+      <h2 class="frage-titel">Wenn du Mama-CEO in EINEM Satz beschreiben müsstest — was sagst du?</h2>
+      <p class="frage-hint">Das wird (mit deiner Erlaubnis unten) dein Testimonial. Stell dir vor, eine andere Mama liest es und denkt „das brauch ich auch".</p>
+      <textarea name="testimonial-satz" placeholder="„Mama-CEO hat mir..." required></textarea>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- ERLAUBNIS-BLOCK -->
+    <!-- ============================================================ -->
+    <div class="frage">
+      <span class="frage-nr">★</span>
+      <h2 class="frage-titel">Darf ich dein Feedback nutzen?</h2>
+      <p class="frage-hint">Komplett freiwillig. Wenn du nichts ankreuzt, bleibt alles 100% intern.</p>
+
+      <div class="erlaubnis-block">
+        <label class="optionslabel">
+          <input type="checkbox" name="erlaubnis-zitat" value="ja" />
+          <span>Ja, Patricia darf mein Zitat (Frage 8) auf Sales-Page / Instagram / Newsletter nutzen.</span>
+        </label>
+        <label class="optionslabel">
+          <input type="checkbox" name="erlaubnis-foto" value="ja" />
+          <span>Ja, Patricia darf mein Profilbild dazu zeigen (sie nimmt's von meinem Insta).</span>
+        </label>
+        <label class="optionslabel">
+          <input type="checkbox" name="erlaubnis-tag" value="ja" />
+          <span>Ja, sie darf mich auf Insta verlinken / taggen.</span>
+        </label>
+
+        <div class="feldgruppe">
+          <div>
+            <label for="vorname">Dein Vorname</label>
+            <input type="text" id="vorname" name="vorname" placeholder="z.B. Sabine" />
+          </div>
+          <div>
+            <label for="instagram">Dein Instagram-Handle</label>
+            <input type="text" id="instagram" name="instagram" placeholder="@deinhandle" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- EMAIL FÜR RABATTCODE -->
+    <!-- ============================================================ -->
+    <div class="frage">
+      <span class="frage-nr">✉</span>
+      <h2 class="frage-titel">An welche E-Mail darf ich dir den 50%-Rabattcode schicken?</h2>
+      <p class="frage-hint">Nur dafür. Kein Newsletter-Spam, versprochen.</p>
+      <input type="email" name="email" placeholder="deine@email.com" required />
+    </div>
+
+    <div class="submit-row">
+      <button type="submit">Feedback absenden &amp; Rabattcode holen →</button>
+      <p class="submit-hint">Du wirst auf eine kurze Danke-Seite weitergeleitet mit deinem Code.</p>
+    </div>
+  </form>
+
+  <footer>
+    <p>Mum Life Balance · Patricia Ulmann · <a href="https://mumlifebalance.ch" target="_blank" rel="noopener">mumlifebalance.ch</a></p>
+  </footer>
+
+</div>
+
+</body>
+</html>

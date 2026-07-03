@@ -1,0 +1,23 @@
+# Netlify-Konfiguration für den Mama-CEO-Feedback-Fragebogen
+# Liegt zusammen mit index.html und success.html im selben Ordner.
+
+[build]
+  publish = "."
+
+# Form-Notification-Einstellungen werden im Netlify-Dashboard gesetzt:
+# Site settings → Forms → Form notifications → "feedback-mama-ceo"
+# → Email an pnulmann@gmail.com bei jedem Submit
+
+# Sicherheits-Header (Best Practice)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache-Control für HTML — kein Caching, damit Updates sofort sichtbar
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
