@@ -9,6 +9,8 @@ tags: [content, framework, hooks]
 Hooks sind die Cover-Slide-Headlines. Sie entscheiden, ob jemand swiped oder weiterscrollt.
 Jeder Hook muss in unter 2 Sekunden Neugier oder einen "Das bin ich"-Moment auslösen.
 
+> **⭐ PFLICHT dazu (seit 2026-06, aus Patricias eigenen A/B/C-Tests):** [`hook-formeln-katalog.md`](hook-formeln-katalog.md) — 22 benannte Formeln mit Live-Ergebnissen (Bekenntnis + Hot Take = Gewinner; „lies die Caption" floppt). **Reichweiten-Hierarchie: candid Video > emotionales Thema > Hook.** Themen aus [`mama-schmerz-themen-pool.md`](mama-schmerz-themen-pool.md), Test-Stand in [`hook-formel-testlog.md`](hook-formel-testlog.md).
+
 ---
 
 ## Zahlen-Hooks
