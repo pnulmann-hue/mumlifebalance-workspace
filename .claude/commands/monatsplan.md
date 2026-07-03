@@ -50,6 +50,7 @@ Lies in dieser Reihenfolge:
 11. `context/reichweiten-posts-pattern.md` — Reichweiten-/Verbindungs-Posts (**mind. 2 von 5**)
 12. jüngster **Content-Radar** (`context/content-radar-*.md`) — Format-Mix (Mentoring max 1 Karussell + Reels, doTERRA Reels-only), Zeitanker-Hook
 13. `context/caption-formeln.md` — Caption-Struktur + Keyword-CTA
+13b. **Content-Tresor** (`context/content-tresor/`) — Hook+Caption-Vorlagen-Pool (50 Sets × 5 Säulen). **Reihenfolge:** zuerst `patricia-varianten.json` prüfen (fertige, freigegebene Fassungen für Säule+Profil+Thema → direkt einplanen), sonst passendes Set aus `tresor-vorlagen.json` nehmen, Platzhalter `[…]` mit Wochen-Thema/Painpoint füllen, **in Brand-Voice adaptieren** und die Adaption als Status `test` in `patricia-varianten.json` zurückschreiben. CTA-Typ pro Säule aus dem CTA-Kompass (im JSON). Details: `context/content-tresor/README.md`.
 14. **Wochenpläne der aktuellen Monatswochen aus Notion** (Wochenplanung-DB) — Fokus + Produkt + Wochen-CTA (vom Story-Bot/uns gesetzt) → die Content-Ideen müssen dazu passen
 15. **Story-Vorlagen:** Launch → `outputs/produkte/mba-launch/story-plan.json` + `context/julia-launch-story-bausteine.md`; sonst → `context/julia-insta-stories-anleitung.md` + `julia-stories-die-verkaufen.md` + `julia-story-ideen.md`
 16. Memory-Regeln: **keine Stakkato-Sätze** · keine erfundenen Zahlen · echte Umlaute/ss · doTERRA keine Heilversprechen · **kein „Julia Trost"-Name in Kunden-Output**

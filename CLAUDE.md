@@ -671,6 +671,7 @@ Statt stumpfer Zusammenfassung **redigiert Claude wie eine Chefredakteurin**: w�
 - `manychat-keywords.md` — ManyChat-Keywords pro Pillar (SYSTEM/QUIZ/PRODUKT/THEMA/SICHTBAR/ANLEITUNG/LEAD/ECHT1 für Mentoring, ENERGIE für doTERRA)
 - `notion-content-db.md` — DB-IDs, Pillar-IDs, Pflicht-Felder-Mapping
 - `business-info.md` — Positionierung beider Profile, Produkt-Paket, Zielgruppen
+- `content-tresor/` — Hook+Caption-Vorlagen-Pool aus dem Reichweitenherz-Board (50 Sets × 5 Säulen: Identifikation/Positionierung/Mehrwert/Storytelling/Verkauf). `tresor-vorlagen.json` = Roh-Bibliothek + CTA-Kompass, `patricia-varianten.json` = fertige, in Brand-Voice adaptierte Fassungen. Wird von `/monatsplan` (Phase 4.5) + `/freitag-hooks` gelesen: erst Varianten prüfen, sonst Set adaptieren + zurückschreiben. Doku: `context/content-tresor/README.md`.
 
 **Notion-Architektur:**
 - **Content-Management-DB** (`2ae7078e-8b7e-811a-ad14-000ba5820c09`) — alle Posts

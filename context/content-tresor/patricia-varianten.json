@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "zweck": "Patricias in Brand-Voice adaptierte Fassungen der Content-Tresor-Vorlagen. Von /monatsplan (Phase 4.5) und /freitag-hooks als fertiger Hook+Caption-Pool gelesen. Roh-Vorlagen: tresor-vorlagen.json.",
+    "schema_version": 1,
+    "brand_voice_regeln": [
+      "Schweizer ss statt ß",
+      "echte Umlaute",
+      "kein Dreier-Stakkato / keine KI-Floskeln (ki-phrasen-blackliste.md)",
+      "keine erfundenen Zahlen (nur Input oder patricia-expertise.md)",
+      "Beste-Freundin-Ton, Fliesstext",
+      "Zeitanker-Hooks bevorzugt (Gestern/Letzte Woche/Heute Morgen)"
+    ],
+    "status_werte": ["test", "freigegeben", "verwendet", "verworfen"],
+    "profile": ["mentoring", "doterra"],
+    "letzte_aktualisierung": "2026-07-03"
+  },
+  "varianten": [
+    {
+      "id": "identifikation-set1-mentoring-001",
+      "quelle_set": {
+        "saeule": "identifikation",
+        "set": 1,
+        "idShort": 1,
+        "shortUrl": "https://trello.com/c/v7lByFRd"
+      },
+      "profil": "mentoring",
+      "saeule_content": "identifikation",
+      "thema": "Als Mama nebenbei ein echtes Business aufbauen",
+      "painpoint": "Selbstzweifel + Vergleich: 'Warum geht das bei allen schneller als bei mir?'",
+      "hooks": [
+        {
+          "variante": "original-adaptiert",
+          "pattern": "Frage / Provokant",
+          "text": "Kann mir mal jemand erklären, warum bei „nebenbei ein Business aufbauen“ immer alle so tun, als wäre das easy?",
+          "einsatz": "gesprochen ODER Text-Cover"
+        },
+        {
+          "variante": "A",
+          "pattern": "Bekenntnis + Zeitanker",
+          "text": "Gestern Abend um halb zehn sass ich am Küchentisch und dachte: „Vielleicht bin ich einfach nicht gemacht für dieses Business-Ding.“",
+          "einsatz": "gesprochen (Talking Head, in die Kamera, leise/ehrlich)"
+        },
+        {
+          "variante": "B",
+          "pattern": "Contrarian + Curiosity-Gap",
+          "text": "Alle tun so, als baut man ein Business mal eben nebenbei auf. Hier ist der Teil, den dir keine zeigt. 👇",
+          "einsatz": "Text-Hook auf dem Cover (Sek. 0–2)"
+        }
+      ],
+      "caption": "Ernsthaft. Du öffnest Instagram, und die nächste Frau erzählt dir: „Mach einfach Reels.“ „Du musst nur konsequent posten.“ „Bleib dran, dann läuft das von selbst.“\n\nGanz leicht – für wen bitte?\n\nWährend alle so tun, als würden sie nebenbei mit links ein Business hochziehen, sitzt du um halb zehn am Küchentisch. Die Kinder endlich im Bett, der Laptop offen – und du denkst dir: „Warum fühlt sich das bei mir an wie ein zweiter Vollzeitjob?“\n\nDu gibst dir Mühe. Du lernst dazu, du probierst aus, du postest, du bleibst dran. Und trotzdem fragst du dich immer öfter: „Warum geht das bei allen anderen schneller als bei mir?“\n\nZugeben tust du das natürlich nicht. So etwas sagt man nicht laut, während im Kopf längst der nächste Satz wartet: „Vielleicht bin ich einfach nicht gemacht für dieses Business-Ding.“\n\nAutsch. Und weisst du, was mich daran am meisten berührt? Dass kaum eine darüber spricht. Keine zeigt dir die Abende, an denen du am liebsten alles hinschmeisst. Keine erzählt von den Momenten, in denen du dich fragst, ob du spinnst, weil du immer noch an diesen Traum glaubst.\n\nUnd irgendwann passiert etwas Gefährliches: Du hörst auf, an der Methode zu zweifeln – und fängst an, an dir selbst zu zweifeln.\n\nDie Wahrheit? Fast jede Frau, die du heute bewunderst, hatte genau diese Gedanken. Ich auch. Ich habe mein Business gestartet, als mein Jüngstes noch nicht durchgeschlafen hat.\n\nFalls du also gerade am Küchentisch sitzt und denkst „Warum klappt das bei mir nicht?“ – dann lass dir das sagen: Vielleicht steckst du einfach in dem Teil der Geschichte, den auf Instagram niemand zeigt. Dem Teil zwischen „Ich glaube, ich schaff das nicht“ und „Oh wow … jetzt ergibt plötzlich alles Sinn.“",
+      "cta": "Folg mir, wenn es bei dir endlich Sinn ergeben soll. 💗",
+      "cta_typ": "folgen",
+      "visual_empfehlung": "Emotions-Look (Storytelling/Identifikation): dunkler Filter, weisse Schrift mittig, ruhige emotionale Audio",
+      "hashtags_hinweis": "max 5, #mamabusiness als Pflicht-Anker (Content-Radar)",
+      "status": "test",
+      "erstellt_am": "2026-07-03",
+      "notizen": "3 Hooks zum A/B-Test auf gleichem Video/Caption. Story-Anker 'Jüngstes noch nicht durchgeschlafen' aus brand-voice.md Beispiel 1."
+    }
+  ]
+}
