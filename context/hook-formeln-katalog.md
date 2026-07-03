@@ -75,4 +75,5 @@ Voller Vorlagen-Schatz gesichert in **[`reference/content-tresor-reichweitenherz
 
 ## 🔗 Verwandte Notizen
 - [[hook-framework]] · [[mama-schmerz-themen-pool]] · [[hook-formel-testlog]]
-- Quelle Reach-Hunter-Formeln: `reichweite-hook-caption.skill` (Desktop) — Inspiration, Patricias Testdaten überschreiben die Defaults.
+- **Ur-Quelle (gesichert im Vault):** [`reference/reach-hunter-frameworks.md`](../reference/reach-hunter-frameworks.md) — die 10 Original-Reach-Hunter-Frameworks mit Beispielen. Patricias Testdaten überschreiben die Defaults.
+- **Vorlagen-Schatz:** [`reference/content-tresor-reichweitenherz.md`](../reference/content-tresor-reichweitenherz.md) — 50 Trello-Vorlagen (5 Säulen).
