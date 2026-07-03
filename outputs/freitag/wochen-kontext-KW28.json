@@ -1,0 +1,32 @@
+{
+  "kw": 28,
+  "zeitraum": "2026-07-06/2026-07-12",
+  "generiert_am": "2026-07-03",
+  "launch_phase": "post-launch",
+  "hauptthema": "Post-Launch-Reset — zurück zum Reichweiten-Motor (Mama-Identity) + Funnel neu füllen",
+  "launch_detail": {
+    "mba_cart_close": "2026-07-05 23:59",
+    "mo_6_7": "Käuferinnen-Onboarding + Feedback (kein Feed-Verkauf)",
+    "feed_regel": "Feed nennt KEINE Programme/Preise — MBA-Nachzügler nur via Stories + DM (Memory feedback_keine-programme-im-feed)",
+    "launch_fenster": "KW24-27 abgeschlossen; KW28 ausserhalb"
+  },
+  "mentoring_saeule": "Reichweite (Mama-Alltag/Ehrlichkeit) + Positionierungs-Grundlagen (Bio/roter Faden) → Funnel-Neuaufbau",
+  "doterra_saeule": "Mama-Körper ab 35 + Wake-Up (Reels-only-Phase <300 Follower, kein Launch)",
+  "aktiver_funnel_primaer": { "name": "Funnel-Neuaufbau Mentoring", "keywords": ["BIO", "QUIZ", "STORY", "ECHT1"], "profile": "mentoring" },
+  "aktiver_funnel_sekundaer": [
+    { "name": "Bio-Check", "keyword": "BIO", "profile": "mentoring" },
+    { "name": "0€ Potenzial-Test (Quiz)", "keyword": "QUIZ", "profile": "mentoring" },
+    { "name": "Story-Challenge (7-Tage)", "keyword": "STORY", "profile": "mentoring" },
+    { "name": "Workbook Von 0 auf echt", "keyword": "ECHT1", "profile": "mentoring" },
+    { "name": "doTERRA Energie-Kur", "keyword": "ENERGIE", "profile": "doterra", "hinweis": "nur via DM, kein Feed-Keyword" }
+  ],
+  "verkaufs_trigger": "Kein aktiver Feed-Launch. MBA-Nachzügler via Stories/DM. Feed baut Reichweite + Liste neu auf (3 Reichweite + 1 Lead pro Profil).",
+  "notion_wochenfokus": "abgeleitet aus operativem Launch-Kalender (launch-kalender-juli-2026.md) — Notion-Query im autonomen Cron nicht verifiziert",
+  "quellen": [
+    "outputs/produkte/mba-launch/launch-kalender-juli-2026.md",
+    "outputs/freitag/wochen-kontext-KW27.json",
+    "outputs/freitag/2026-06-26-hooks.md",
+    "context/active-funnels.json",
+    "context/reichweiten-formel-mama-identity.md"
+  ]
+}
