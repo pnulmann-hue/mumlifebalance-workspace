@@ -1,5 +1,7 @@
 # Feedback-Fragebogen — Mama-CEO
 
+**🟢 LIVE-URL:** https://feedback-mamaceo.netlify.app/ (deployed auf Netlify, Site-Name `feedback-mamaceo`)
+
 **Zweck:** Strukturiertes Feedback von Mama-CEO-Absolventinnen einsammeln → Testimonials für Sales-Page + Programm-Verbesserung. Baugleich mit dem Instagram-Kundenmaschine-Formular, nur mit Mama-CEO-Fragen.
 
 **Anreiz für Teilnahme:** 50%-Rabattcode `MAMACEO50` auf einen Minikurs (siehe Schritt 3 zur ThriveCart-Einrichtung).
@@ -19,7 +21,10 @@
 
 ---
 
-## Schritt 1 — Auf Netlify hosten (5 Minuten)
+## Schritt 1 — Auf Netlify hosten (5 Minuten) — ✅ ERLEDIGT
+
+> Läuft live unter **https://feedback-mamaceo.netlify.app/** — Site-Name `feedback-mamaceo`.
+> Die Schritte unten nur nötig, falls du neu deployen oder umbenennen willst.
 
 ### Option A: Drag & Drop (einfachster Weg)
 1. Geh auf **[app.netlify.com/drop](https://app.netlify.com/drop)** (gratis Account).
