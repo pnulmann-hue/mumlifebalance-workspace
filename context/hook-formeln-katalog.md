@@ -57,9 +57,19 @@ Der Hook ist NICHT der grösste Hebel. Daten aus mehreren A/B/C-Tests:
 
 ---
 
-## 📥 Weitere Ideen (Trello-Kurs) — noch zu ergänzen
+## 📥 Content-Tresor von Reichweitenherz (Trello-Kurs) — 50 Vorlagen in 5 Säulen
 
-*(Platzhalter: Patricia liefert Hook-Ideen aus einem Trello-Kurs nach → hier einsortieren, Dubletten mit oben vermeiden, in A–E einordnen.)*
+Voller Vorlagen-Schatz gesichert in **[`reference/content-tresor-reichweitenherz.md`](../reference/content-tresor-reichweitenherz.md)** — je 10 fertige **Hook+Caption-Vorlagen** (mit `[...]`-Platzhaltern) pro Säule:
+
+| Säule | Was sie tut | Verwandt mit Formeln oben |
+|---|---|---|
+| **1 Identifikation** | „die meint mich"-Moment, Schmerz spiegeln | #16 Call-out · #4 POV · #1 Bekenntnis |
+| **2 Positionierung** | zeigen wofür du stehst, Haltung | #13 Unpopuläre Meinung · #15 Reframe · #12 Hot Take |
+| **3 Mehrwert** | konkret helfen, Tipp/Anleitung | #9 Grösster-Fehler · #10 Liste · #8 Lektion |
+| **4 Storytelling** | Ich-Story, Wendepunkt | #1 Bekenntnis · #20 Ich-lächle-nur · #22 Vorher-Nachher |
+| **5 Verkauf** | zum Angebot führen (nur Stories/Mails, nicht Reichweiten-Feed) | #18 Wenn-dann · CTA-Kompass |
+
+**Nutzung:** als **Struktur-Inspiration**, die `[...]` mit Patricias echten Themen (grüne Liste) füllen — und **zwingend durch die KI-Phrasen-Blackliste** filtern (der Tresor nutzt teils gesperrte Muster: Dreier-Aufzählungen, „Du musst nur…", „ganz leicht"). Reichweiten-Hierarchie bleibt: candid Video > Thema > Hook.
 
 ---
 
