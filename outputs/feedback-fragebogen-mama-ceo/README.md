@@ -2,9 +2,9 @@
 
 **Zweck:** Strukturiertes Feedback von Mama-CEO-Absolventinnen einsammeln → Testimonials für Sales-Page + Programm-Verbesserung. Baugleich mit dem Instagram-Kundenmaschine-Formular, nur mit Mama-CEO-Fragen.
 
-**Anreiz für Teilnahme:** 50%-Rabattcode `KUNDENMASCHINE50` auf einen Minikurs (siehe Schritt 3 zur ThriveCart-Einrichtung).
+**Anreiz für Teilnahme:** 50%-Rabattcode `MAMACEO50` auf einen Minikurs (siehe Schritt 3 zur ThriveCart-Einrichtung).
 
-> 💡 Bewusst **derselbe Code wie beim Instagram-Kundenmaschine-Formular** (`KUNDENMASCHINE50`) — so pflegst du nur EINEN Coupon in ThriveCart für beide Feedback-Formulare. (Nicht zu verwechseln mit `MAMACEO`, dem MBA-Teilnehmerinnen-Code aus der „So geht's weiter"-Lektion.)
+> ⚠️ Nicht verwechseln: `MAMACEO50` = Feedback-Belohnung (50% Minikurs, dieser Kurs). `MAMACEO` (ohne 50) ist der Teilnehmerinnen-Code für die MBA aus der „So geht's weiter"-Lektion. Zwei verschiedene Coupons. (Das IKM-Formular nutzt analog `KUNDENMASCHINE50` — Code trägt jeweils den Kursnamen.)
 
 ---
 
@@ -13,7 +13,7 @@
 | Datei | Zweck |
 |---|---|
 | `index.html` | Der Fragebogen — 8 Fragen, ca. 5 Min Ausfüllzeit |
-| `success.html` | Danke-Seite mit Rabattcode `KUNDENMASCHINE50` (Kopier-Button) |
+| `success.html` | Danke-Seite mit Rabattcode `MAMACEO50` (Kopier-Button) |
 | `netlify.toml` | Netlify-Config (Build + Security-Header) |
 | `README.md` | Diese Anleitung |
 
@@ -45,7 +45,7 @@ Ab jetzt kommt jede Antwort als Mail + steht im Dashboard unter **Forms**.
 
 ## Schritt 3 — Rabattcode in ThriveCart anlegen
 1. ThriveCart → **Coupons & Discounts** → neuen Coupon.
-2. **Code:** `KUNDENMASCHINE50` · **Rabatt:** 50% · **Gilt für:** deine Minikurse · **Max/Kunde:** 1 · **Gültig:** z.B. 30 Tage.
+2. **Code:** `MAMACEO50` · **Rabatt:** 50% · **Gilt für:** deine Minikurse · **Max/Kunde:** 1 · **Gültig:** z.B. 30 Tage.
 3. Speichern — **vor dem ersten Versand testen**, dass der Code funktioniert.
 
 ---
@@ -90,7 +90,7 @@ Ab jetzt kommt jede Antwort als Mail + steht im Dashboard unter **Forms**.
 - Email nur für den Rabattcode nutzen. Anonyme Antworten (ohne Name/Erlaubnis) rein intern behandeln.
 
 ## Anpassungen
-- **Rabattcode tauschen:** in `success.html` an 2 Stellen (`<div class="code">` + Anleitung-Liste) `KUNDENMASCHINE50` ersetzen.
+- **Rabattcode tauschen:** in `success.html` an 2 Stellen (`<div class="code">` + Anleitung-Liste) `MAMACEO50` ersetzen.
 - **Fragen ändern:** `index.html` editieren → Ordner neu auf Netlify ziehen.
 - **Brand-Farben:** CSS-Variablen oben (`--petrol`, `--orange` …).
 
@@ -99,4 +99,4 @@ Ab jetzt kommt jede Antwort als Mail + steht im Dashboard unter **Forms**.
 - [ ] Site umbenannt
 - [ ] E-Mail-Notification `feedback-mama-ceo` → pnulmann@gmail.com aktiviert
 - [ ] Test-Submit gemacht → Mail kam an? Success-Seite erscheint?
-- [ ] `KUNDENMASCHINE50` in ThriveCart angelegt + getestet
+- [ ] `MAMACEO50` in ThriveCart angelegt + getestet
