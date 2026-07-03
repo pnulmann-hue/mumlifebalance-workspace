@@ -9,6 +9,8 @@ Quelle für MBA-Salespage (Block „Stimmen") + Launch-Mails.
 
 > ⚠️ **Vor Veröffentlichung pro Person Erlaubnis einholen.** Nachnamen weglassen, nur Vorname. Keine erfundenen Zahlen.
 >
+> 📋 **Fertige Zitat-Übersicht nach Sparten zum Rauspicken:** [[zitate-uebersicht]] (Stand 3.7.2026).
+>
 > ✅ **UPDATE 1.7.2026:** Patricia hat die Veröffentlichungs-Erlaubnis für alle Screenshots bestätigt. Die 13 Screenshots sind ins Repo kopiert (`../img/testimonials/t01–t13.jpg`) und als Masonry-Galerie in die MBA-Salespage (Sektion 10, HTML) eingebaut. In den Screenshots keine Nachnamen sichtbar (nur Vornamen). Vor WP-Deploy: Bilder komprimieren + in Mediathek laden, Pfade umstellen.
 
 ---
