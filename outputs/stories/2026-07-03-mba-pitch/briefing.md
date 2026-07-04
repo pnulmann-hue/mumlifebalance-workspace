@@ -18,7 +18,7 @@ tags: [content, story, mba, launch]
 4. **Details** — „Das steckt drin" (PIA · IKM · Mama-CEO · Digitale Produktwelt · Begleitung)
 5. **Proof** — Kunden-Zitat + „50.000 Aufrufe · +77 Followerinnen"
 6. **Preis** — Pioneer-Preis CHF 997 (statt 1347 · in Raten)
-7. **CTA** — „Türen offen bis 9. Juli" + Link-Aufruf
+7. **CTA** — „So geht's los": Start Mitte August (nach den Sommerferien), Zugang zu den Kursen schon jetzt + Link-Aufruf
 
 ## In der Instagram-App noch drauf (interaktiv):
 - **Slide 1:** Umfrage-Sticker „Kennst du das?" (Ja/Nein)

@@ -94,12 +94,12 @@ tags: [content, story, mba, launch]
 
 ---
 
-## SLIDE 7 — CTA
-*(IKM-CTA-Slide — Foto von dir + klarer Call-to-Action + Link-Sticker)*
+## SLIDE 7 — CTA / So geht's los
+*(Creme-Story-Slide + Link-Sticker · KEIN Deadline-Druck)*
 
-**Headline:** Willst du dabei sein?
+**Label:** So geht's los
 
-**Text:** Tipp auf den Link und sichere dir deinen Pioneer-Platz. Wenn du Fragen hast, schreib mir einfach hier in die DM — ich antworte dir persönlich.
+**Text:** Wir starten Mitte August, nach den Sommerferien. Zugang zu den Kursen bekommst du aber **schon jetzt** — damit du dich in Ruhe einlesen und einarbeiten kannst. → Tipp auf den Link in der Story.
 
 **Sticker:** Link-Sticker → deine Salespage (`mumlifebalance.thrivecart.com/mba`)
 *(zusätzlich: „Fragen? → schreib mir" antworten-Sticker)*
