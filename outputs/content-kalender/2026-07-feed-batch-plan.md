@@ -16,7 +16,7 @@ tags: [content]
 | KW31 (28.–31.7.) | Recap / alle 3 | — (Nachkauf) | Nachkauf/Ausblick |
 
 > **Posting-Weg:** Talking-Head-Reel + beide Karussells → Blotato. **2 B-Roll-Reels → nativ selbst posten** (wegen Trending-Sound = Reichweite).
-> **Hooks = erste Fassung zum Reagieren** (deine Reichweitenherz-Patterns: konkrete Antagonist-Figur · Zeitanker · Bekenntnis · keine Stakkato · Freundin-Voice · erste Zeile catcht allein).
+> **Hooks gebaut auf den Reichweitenherz-Tresor-Vorlagen** (5 Säulen: Identifikation · Positionierung · Mehrwert · Storytelling · Verkauf), CTA nach dem RWH-CTA-Kompass. **Gefiltert durch Patricias Voice:** fliessender Freundin-Text statt Tresor-Zeilen-Stakkato · kein „stell dir vor" · Schweizer ss · keine erfundenen Zahlen.
 
 ---
 
@@ -26,36 +26,41 @@ tags: [content]
 **Ziel der Woche:** Reichweite auf den Sichtbarkeits-Schmerz + 1 Lead-Post auf den Bio-Check.
 
 ### Mo 7.7. — REEL · Talking-Head · 🟢 Reichweite
-- **Hook (Overlay + erster Satz):** „Ich hab ein Jahr lang fast täglich gepostet — und trotzdem hat mich im Dorf niemand als das gesehen, was ich wirklich mache."
+- **RWH-Säule:** 📖 Storytelling (Set 5: „Ich war zu 100 % überzeugt … Spoiler: war es nicht.")
+- **Hook (Overlay + erster Satz):** „Ich war ein Jahr lang zu 100 % überzeugt, dass ich einfach nur *mehr* posten muss, damit man mich endlich als Expertin sieht — und nicht als die Mama, die halt nebenbei was verkauft. Spoiler: war komplett falsch."
 - **Aufbau (Talking-Head, ~25 Sek):** Bekenntnis → das eigentliche Problem (es lag nicht an der Menge, sondern dass niemand in 3 Sekunden verstanden hat, wofür ich stehe) → die Wende (ein Satz in der Bio hat mehr verändert als 100 Posts) → Mini-Learning.
-- **Caption-Richtung:** Freundin-Ton, Zeitanker, das Gefühl von „unsichtbar trotz Fleiss". **Kein Keyword.**
-- **CTA:** „Kennst du das? Schick's einer Mama-Freundin, die auch ständig postet und trotzdem übersehen wird." (Share = Reichweite)
+- **Caption-Richtung:** fliessender Freundin-Ton (kein Zeilen-Stakkato), das Gefühl von „unsichtbar trotz Fleiss". **Kein Keyword.**
+- **CTA (Kompass: Storytelling → Folgen):** „Wenn du grad dachtest ‚oh Gott, genau da steck ich' — dann bleib hier, hier bist du richtig."
 
 ### Di 8.7. — REEL · B-Roll · 🟢 Reichweite
-- **Hook (Overlay):** „Sonntagabend, 21 Uhr. Du lädst zum 100. Mal ein schönes Produktbild hoch — und wieder: keine einzige Nachricht."
+- **RWH-Säule:** ♥️ Identifikation (Set 2/4: „POV: Du hoffst heimlich, dass dich heute niemand fragt …")
+- **Hook (Overlay):** „POV: Du lädst zum 100. Mal ein schönes Produktbild hoch und hoffst insgeheim, dass dich heute keiner fragt, wie's mit deinem Business eigentlich läuft."
 - **B-Roll (aus deinen Canva-Videos):** du abends am Handy auf dem Sofa / Blick aufs stille Handy / müde-ehrlicher Moment. Trending-Sound drüber (nativ posten).
 - **Text-Overlays (Cut-Folge):** der stille Sonntagabend → „es liegt nicht an dir, dass keiner reagiert" → „es liegt daran, dass dein Profil *Produkt* zeigt statt *dich*" → kleiner Hoffnungs-Turn.
-- **CTA:** „Teil das in deiner Story für die Mama, die das grad genau so erlebt." (Share)
+- **CTA (Kompass: Identifikation → Folgen/Teilen):** „Sag mir, dass ich nicht die Einzige bin 🙈 — und teil's der Mama-Freundin, der's grad genau so geht."
 
 ### Mi 9.7. — KARUSSELL · 🟡 Lead-Post (der 1 Freebie-Post der Woche)
-- **Hook (Cover):** „3 Gründe, warum deine Bio dich unsichtbar macht (und keiner davon ist ‚zu wenig Follower')."
-- **Slides (7–8):** 1 Cover · 2 „deine Bio sagt, WAS du verkaufst — nicht, WEM du hilfst" · 3 „kein Satz, der in 3 Sek klarmacht, wofür du stehst" · 4 „Produktname statt Problem, das du löst" · 5 Mini-Beispiel vorher/nachher · 6 „so testest du's in 2 Minuten" · 7 CTA.
-- **Caption-Richtung:** Wert zuerst (die 3 Gründe kurz ausschreiben), dann die Brücke zum Bio-Check. Nicht mit „💾 Speicher das" einsteigen.
-- **CTA (Keyword):** „Kommentier **BIO** und ich schick dir meinen kostenlosen Bio-Check — der zeigt dir in Minuten, was deine Bio gerade sagt und was sie sagen sollte."
+- **RWH-Säule:** 👩‍🏫 Mehrwert-Hook (Set 2: „90 % … DIESE eine Sache") + 💰 Verkauf-CTA (Freebie)
+- **Hook (Cover):** „90 % der Network-Mamas machen in ihrer Bio denselben einen Fehler — und wundern sich dann, warum trotz täglichem Posten keine einzige Anfrage kommt."
+- **Slides (7–8):** 1 Cover · 2 der eine Fehler (Bio sagt WAS du verkaufst, nicht WEM du hilfst) · 3 warum das killt (in 3 Sek nicht klar, wofür du stehst) · 4 Produktname statt gelöstes Problem · 5 Mini-Beispiel vorher/nachher · 6 „so testest du's in 2 Minuten" · 7 CTA.
+- **Caption-Richtung:** Wert zuerst (den Fehler + Fix ausschreiben, fliessend), dann Brücke zum Bio-Check. **Nicht** mit „💾 Speicher das" einsteigen.
+- **CTA (Kompass: Verkauf → Freebie):** „Kommentier **BIO** und ich schick dir meinen kostenlosen Bio-Check — der zeigt dir in ein paar Minuten, was deine Bio grad wirklich sagt und was sie sagen müsste."
 
 ### Do 10.7. — REEL · B-Roll · 🟢 Reichweite
-- **Hook (Overlay):** „Die Reichweiten-Tipps von den ganzen Gurus? Genau die halten dich klein."
+- **RWH-Säule:** 🎯 Positionierung (Set 4: „Du brauchst nicht noch mehr Tipps … du musst aufhören, 90 % vom Müll zu machen")
+- **Hook (Overlay):** „Du brauchst nicht noch mehr Reichweiten-Tipps von irgendwelchen Gurus — du musst endlich aufhören, die 90 % von dem Zeug zu machen, das dich nur Zeit kostet und trotzdem keine Kundin bringt."
 - **B-Roll:** du unterwegs/alltäglich (kein posiertes Business-Setting), candid. Trending-Sound (nativ posten).
-- **Aufbau (Contrarian/eigene Meinung):** der Mythos („poste einfach mehr / öfter / mehr Hashtags") → warum das bei einer Mama mit wenig Zeit genau falsch ist → was stattdessen zählt (ein klares Profil, das für ein Problem steht) → versöhnlicher Turn.
-- **CTA:** „Speicher's, wenn du auch keine Lust mehr auf ‚poste einfach mehr' hast." (Save/Share)
+- **Aufbau (Repel + Anziehung):** der Mythos („poste einfach mehr / öfter / mehr Hashtags") → warum das bei einer Mama mit wenig Zeit genau falsch ist → was stattdessen zählt (ein klares Profil, das für ein Problem steht) → versöhnlicher Turn.
+- **CTA (Kompass: Positionierung → Folgen/Repel):** „Folge mir, wenn du auch genug hast von ‚poste einfach mehr'."
 
 ### Fr 11.7. — KARUSSELL · 🟢 Reichweite
-- **Hook (Cover):** „So findet dich deine Traumkundin in 5 Sekunden — ohne dass du lauter wirst."
-- **Slides (7):** Schaufenster-Metapher (Laden, in dem sofort klar ist: hier gibt's genau *das*) → übertragen aufs Profil → die 3 Elemente, die dein „Schaufenster" klar machen → nahbarer Abschluss.
+- **RWH-Säule:** 👩‍🏫 Mehrwert (Set 4: „Der grösste Fehler bei …?")
+- **Hook (Cover):** „Der eine Grund, warum deine Traumkundin auf Instagram an dir vorbeiscrollt — und es liegt nicht an deinen Fotos."
+- **Slides (7):** Schaufenster-Metapher (Laden, in dem sofort klar ist: hier gibt's genau *das*) → übertragen aufs Profil → die Elemente, die dein „Schaufenster" klar machen → nahbarer Abschluss.
 - **Caption-Richtung:** warm, bildhaft (Schaufenster), Wert, am Ende leise „mehr dazu grad in meinen Stories" (Brücke zur MBA über Stories, **ohne** Programm/Preis im Feed).
-- **CTA:** „Speicher's als Erinnerung fürs nächste Bio-Update." (Save)
+- **CTA (Kompass: Mehrwert → Speichern):** „Speicher's als Erinnerung fürs nächste Mal, wenn du deine Bio anfasst."
 
-**KW28-Check:** 2 Karussell (Mi Lead, Fr Reichweite) · 3 Reels (Mo TH, Di + Do B-Roll) · genau 1 Keyword-Post (Mi BIO) · Rest Reichweite. ✅
+**KW28-Check:** 2 Karussell (Mi Lead, Fr Reichweite) · 3 Reels (Mo TH, Di + Do B-Roll) · genau 1 Keyword-Post (Mi BIO) · Rest Reichweite · **5 verschiedene RWH-Säulen** (Storytelling/Identifikation/Mehrwert/Positionierung/Mehrwert). ✅
 
 ---
 
