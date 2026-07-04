@@ -2,17 +2,21 @@
   "_meta": {
     "zweck": "Materialisierter Julia-Trost-Launch-Kalender für den MBA-Launch via 5-Tage-PIA-Bootcamp. Der content-assistent (Telegram-Story-Bot) liest diesen Plan via launch_engine.py: für HEUTE wird die passende Julia-Vorlage + Phase + CTA gezogen und in den Story-Auftrag injiziert. Vorlagen-Schlüssel verweisen auf context/julia-launch-kalender.json.",
     "erstellt": "2026-06-09",
-    "basis": "outputs/produkte/mba-launch/challenge-launch-plan.md + outputs/monatsplaene/2026-06-mentoring-monatsplan-v2-bootcamp.md + context/active-funnels.json (funnel mama-business-bootcamp + mba)",
+    "aktualisiert": "2026-07-04 — Cart-Close von 6.7. auf 27.7. verlängert (Patricia-Entscheidung). Verkaufsphase läuft jetzt durchgehend Pioneer 997 bis So 27.7. 23:59, Close-Cascade 25.-27.7., Nachkauf 28.-31.7. Tage 4.7.-31.7. neu/überarbeitet. Menschlicher Fahrplan: outputs/produkte/mba-launch/story-fahrplan-juli-2026.md",
+    "basis": "outputs/produkte/mba-launch/challenge-launch-plan.md + outputs/produkte/mba-launch/story-fahrplan-juli-2026.md + context/active-funnels.json (funnel mama-business-bootcamp + mba)",
     "regel_feed_vs_story": "Feed nennt KEINE Programme/Preise (Memory feedback_keine-programme-im-feed). Verkauf (MBA, Pioneer 997, Cart) läuft NUR über Stories + Mails. Dieser Story-Plan ist genau der Ort wo Preis/Cart vorkommen dürfen.",
-    "regel_julia_intern": "Julia Trost NIE namentlich in der Story. Struktur folgt Julia, Stimme bleibt Patricia."
+    "regel_julia_intern": "Julia Trost NIE namentlich in der Story. Struktur folgt Julia, Stimme bleibt Patricia.",
+    "regel_keine_erfundenen_zahlen": "Pilot = 5 echte Mamas. Bootcamp-/Kohorte-Wins nur echt + anonym."
   },
 
   "launch_id": "mba-bootcamp-juli-2026",
   "funnel_id": "mama-business-bootcamp",
   "fuehrt_zu": "mba",
   "produkt_kostenlos": "5-Tage-Mama-Business-Bootcamp (mit PIA)",
-  "produkt_bezahlt": "Mum Business Academy (MBA) · Pioneer 997 / Final 1347 CHF",
+  "produkt_bezahlt": "Mum Business Academy (MBA) · Pioneer 997 durchgehend / Final 1347 CHF",
   "profil": "mentoring",
+  "cart_open": "2026-07-03T19:30",
+  "cart_close": "2026-07-27T23:59",
 
   "phasen": {
     "aufwaermphase": {
@@ -24,15 +28,15 @@
     },
     "verkaufsphase": {
       "von": "2026-06-29",
-      "bis": "2026-07-06",
-      "ziel": "29.6.-3.7. Bootcamp läuft LIVE (Transformation erlebbar, Wins zeigen) → Fr 3.7. abends Cart-Open MBA → bis So 6.7. 23:59 Cart-Close. Stories tragen den Verkauf (MBA, Pioneer 997).",
+      "bis": "2026-07-27",
+      "ziel": "29.6.-3.7. Bootcamp läuft LIVE → Fr 3.7. abends Cart-Open MBA → durchgehend Pioneer 997 bis So 27.7. 23:59. Stories tragen den Verkauf. Rhythmus: Cart-Open-Weekend (3.-6.7. stärkster Push) → Warm-Sell Mo-So mit Mehrwert/Beweis/Einwand/Inhalte (7.-24.7.) → Close-Cascade (25.-27.7.). KEIN 'Cart schliesst heute'-Frame vor dem 25.7.",
       "cta_keyword": "MBA",
-      "cta_typ": "Bis Cart-Open: Bootcamp-Teilnahme. Ab 3.7. abends: MBA-Cart-Link (Pioneer 997) in Story / DM MBA. ACHTUNG: kein ManyChat-Keyword für MBA eingerichtet → CTA ist Link in Story + DM."
+      "cta_typ": "MBA-Cart-Link (Pioneer 997) in Story / DM MBA. ACHTUNG: kein ManyChat-Keyword für MBA → CTA ist Link in Story + DM."
     },
     "nachkaufphase": {
-      "von": "2026-07-07",
-      "bis": "2026-07-09",
-      "ziel": "Cart ist zu. Feedback + Wins der Bootcamp-Mamas zeigen, Dankbarkeit, Leidenschaft fürs Thema. Nachzügler-DMs ermöglichen, Brücke zur nächsten Runde / zum Programmstart August.",
+      "von": "2026-07-28",
+      "bis": "2026-07-31",
+      "ziel": "Cart ist zu (27.7. 23:59). Feedback + Wins der MBA-Käuferinnen zeigen, Dankbarkeit, Leidenschaft fürs Thema. Nachzügler-DMs ermöglichen, Brücke zum Programmstart August. Danach Ferien.",
       "cta_keyword": null,
       "cta_typ": "Mehrwert + Beziehung. Sanfter Hinweis: Programm startet August, nächste Möglichkeit kommt."
     }
@@ -58,13 +62,40 @@
     { "datum": "2026-06-30", "phase": "verkaufsphase", "julia_vorlage": "inhalte-zeigen", "titel": "TAG 2 — Hooks", "story_ziel": "Zeigen was die Mamas heute mit PIA bauen (Hooks). Transformation sichtbar machen. Screenshots (anonym).", "kaeufertyp": "Frank", "cta": "Folge in der Bootcamp-Gruppe / Stories", "cta_keyword": null, "profil": "mentoring" },
     { "datum": "2026-07-01", "phase": "verkaufsphase", "julia_vorlage": "social-proof", "titel": "TAG 3 — Zeit (erste Wins)", "story_ziel": "Echte Wins der Bootcamp-Mamas (Zitate, anonym). Tag 3 = Zeit/Struktur. Emotionale Aha-Momente.", "kaeufertyp": "Zoe", "cta": "Schick einer Mama-Freundin die das auch kennt", "cta_keyword": null, "profil": "mentoring" },
     { "datum": "2026-07-02", "phase": "verkaufsphase", "julia_vorlage": "eigene-meinung", "titel": "TAG 4 — dein Leadmagnet (was als Nächstes kommt)", "story_ziel": "Tag 4 = Leadmagnet. Andeuten: das alles in der richtigen Reihenfolge = die MBA. Erste leise Brücke zum Programm (noch kein Preis).", "kaeufertyp": "Frank", "cta": "Morgen wird's konkret — bleib in den Stories", "cta_keyword": null, "profil": "mentoring" },
-    { "datum": "2026-07-03", "phase": "verkaufsphase", "julia_vorlage": "start-omg-es-ist-soweit", "titel": "TAG 5 + CART OPEN — die MBA ist da", "story_ziel": "Tag 5 Finale (Patricia live, roter Faden) → abends Cart-Open MBA. Erstmals MBA vorstellen: was drin ist, Transformation, Pioneer 997. Schmerzpunkt → Lösung → Cart-Link.", "kaeufertyp": "Ina", "cta": "MBA-Cart ist offen — Link in der Story / DM MBA. Pioneer 997 bis So 23:59", "cta_keyword": "MBA", "profil": "mentoring" },
-    { "datum": "2026-07-04", "phase": "verkaufsphase", "julia_vorlage": "inhalte-zeigen", "titel": "Was in der MBA steckt", "story_ziel": "MBA greifbar machen: 3 Kurse (Instagram-Kundenmaschine + Mama-CEO + Digitale Produktwelt) + 2 Calls/Monat + PIA. Inhalte zeigen, Käufer Frank/Willi abholen. Cart-Link.", "kaeufertyp": "Frank", "cta": "Cart bis So 23:59 — Link in Story / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
-    { "datum": "2026-07-05", "phase": "verkaufsphase", "julia_vorlage": "einwandbehandlung", "titel": "Ist die MBA was für mich?", "story_ziel": "Einwände (Geld/Zeit/'schaff ich das') + Antikunden-Frame. Wer es IST / NICHT ist. Keine Geld-zurück-Garantie ehrlich rahmen. Social Proof Pilot-Mamas.", "kaeufertyp": "Amelie", "cta": "Letzte Nacht morgen — Fragen? DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
-    { "datum": "2026-07-06", "phase": "verkaufsphase", "julia_vorlage": "last-call", "titel": "Heute 23:59 schliesst der Cart", "story_ziel": "Cart-Close-Tag. Countdown-Cascade, Post-It-Wand (wer dabei ist), letzte Dringlichkeit. Pioneer 997 endet heute.", "kaeufertyp": "Zoe", "cta": "Cart schliesst heute 23:59 — Link in Story / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-03", "phase": "verkaufsphase", "julia_vorlage": "start-omg-es-ist-soweit", "titel": "TAG 5 + CART OPEN — die MBA ist da", "story_ziel": "Tag 5 Finale (Patricia live, roter Faden) → abends Cart-Open MBA. Erstmals MBA vorstellen: was drin ist, Transformation, Pioneer 997. Schmerzpunkt → Lösung → Cart-Link. Cart bleibt bis 27.7. offen.", "kaeufertyp": "Ina", "cta": "MBA-Cart ist offen — Link in der Story / DM MBA. Pioneer 997", "cta_keyword": "MBA", "profil": "mentoring" },
 
-    { "datum": "2026-07-07", "phase": "nachkaufphase", "julia_vorlage": "feedback-social-proof", "titel": "Was die Gründungs-Kohorte sagt", "story_ziel": "Feedback + Begeisterung der MBA-Käuferinnen zeigen. Dankbarkeit. Nachzügler-DMs möglich machen.", "kaeufertyp": "Rudi", "cta": "Du warst zu spät? DM mir — schauen wir, was geht", "cta_keyword": null, "profil": "mentoring" },
-    { "datum": "2026-07-08", "phase": "nachkaufphase", "julia_vorlage": "an-was-ich-arbeite", "titel": "Wie es jetzt weitergeht", "story_ziel": "Ausblick: Programmstart August, erste Calls nach den Ferien, beide Gruppen zusammen. Leidenschaft fürs Thema.", "kaeufertyp": "Ina", "cta": "Bleib dran — die nächste Möglichkeit kommt", "cta_keyword": null, "profil": "mentoring" },
-    { "datum": "2026-07-09", "phase": "nachkaufphase", "julia_vorlage": "werte", "titel": "Worauf es mir wirklich ankommt", "story_ziel": "Wert/Haltung teilen (echte Begleitung statt Verzetteln). Community auf die MBA-Denkweise einstimmen. Beziehung > Verkauf.", "kaeufertyp": "Amelie", "cta": "Mehrwert — kein Verkauf heute", "cta_keyword": null, "profil": "mentoring" }
+    { "datum": "2026-07-04", "phase": "verkaufsphase", "julia_vorlage": "inhalte-zeigen", "titel": "Was in der MBA steckt", "story_ziel": "MBA greifbar machen: 3 Kurse (Instagram-Kundenmaschine + Mama-CEO + Digitale Produktwelt) + 2 Calls/Monat + PIA. Inhalte zeigen, Käufer Frank/Willi abholen. Cart-Link.", "kaeufertyp": "Frank", "cta": "Cart offen — Link in Story / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-05", "phase": "verkaufsphase", "julia_vorlage": "einwandbehandlung", "titel": "Ist die MBA was für mich?", "story_ziel": "Einwände (Geld/Zeit/'schaff ich das') + Antikunden-Frame. Wer es IST / NICHT ist. Keine Geld-zurück-Garantie ehrlich rahmen. Social Proof Pilot-Mamas.", "kaeufertyp": "Amelie", "cta": "Fragen? DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-06", "phase": "verkaufsphase", "julia_vorlage": "social-proof", "titel": "Wer im ersten Wochenende dabei ist", "story_ziel": "KEIN 'Cart schliesst heute' — Cart läuft weiter bis 27.7. Stattdessen: erste Käuferinnen anonym zeigen (Rudeltier), Momentum aus dem Cart-Open-Weekend. Wer schon Ja gesagt hat.", "kaeufertyp": "Rudi", "cta": "Cart ist offen — Link in Story / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+
+    { "datum": "2026-07-07", "phase": "verkaufsphase", "julia_vorlage": "lehrreich", "titel": "Mini-Training aus dem MBA-Kosmos", "story_ziel": "1 konkreter umsetzbarer Schritt (Expertise), dann sanfte Brücke: genau so arbeiten wir in der MBA weiter. Feed-Block 1 (Bio-Check) startet parallel.", "kaeufertyp": "Willi", "cta": "Cart offen — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-08", "phase": "verkaufsphase", "julia_vorlage": "social-proof", "titel": "Was sich für eine Mama verändert hat", "story_ziel": "Echter Bootcamp-/Pilot-Win (anonym): Ausgangslage die die Leserin kennt → was sie tat → 'auch für dich'. Nur echte Fakten.", "kaeufertyp": "Zoe", "cta": "DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-09", "phase": "verkaufsphase", "julia_vorlage": "einwandbehandlung", "titel": "Keine Zeit neben den Kindern?", "story_ziel": "Häufigster Einwand (Zeit) → wie die MBA mit Morgen-Impuls/KI genau das löst. Ehrlich, am Küchentisch erklärt.", "kaeufertyp": "Amelie", "cta": "Cart offen — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-10", "phase": "verkaufsphase", "julia_vorlage": "inhalte-zeigen", "titel": "Kurs 1: Instagram-Kundenmaschine", "story_ziel": "Einen der 3 MBA-Kurse zeigen (Sichtbarkeit/Kunden gewinnen). Was sie danach kann. Käufer Frank/Willi.", "kaeufertyp": "Frank", "cta": "Cart offen — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-11", "phase": "verkaufsphase", "julia_vorlage": "persoenlich", "titel": "Warum ich die MBA gebaut habe", "story_ziel": "Patricias Story (Wendepunkt, 4 Kinder, Funktionsmodus → echte Begleitung statt Verzetteln). Emotion + Identifikation.", "kaeufertyp": "Amelie", "cta": "leise: DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-12", "phase": "verkaufsphase", "julia_vorlage": "persoenlich", "titel": "Sonntag, ganz nahbar", "story_ziel": "Ruhiger Ferien-BTS-Moment, Beziehung stärken, Cart nur als leise Erinnerung. Story darf leicht sein.", "kaeufertyp": "Ina", "cta": "Cart offen — Link", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-13", "phase": "verkaufsphase", "julia_vorlage": "quick-win", "titel": "Quick Win + wer dabei ist", "story_ziel": "Kleine sofort-umsetzbare Methode + anonyme Käuferinnen-Wand. Vertrauen + sanfte Dringlichkeit.", "kaeufertyp": "Willi", "cta": "Cart offen — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+
+    { "datum": "2026-07-14", "phase": "verkaufsphase", "julia_vorlage": "eigene-meinung", "titel": "Du brauchst kein 5000-Module-Programm", "story_ziel": "Positionierung: die richtige Reihenfolge schlägt 10 halbe Kurse — das ist die MBA-Logik. Repel + Anziehung.", "kaeufertyp": "Frank", "cta": "Cart offen — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-15", "phase": "verkaufsphase", "julia_vorlage": "inhalte-zeigen", "titel": "Kurs 2: Mama-CEO", "story_ziel": "Zeit/Struktur-Kurs zeigen — Kernschmerz 'Zeit fürs Business schaffen'. Was sie danach anders macht.", "kaeufertyp": "Willi", "cta": "Cart offen — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-16", "phase": "verkaufsphase", "julia_vorlage": "einwandbehandlung", "titel": "Schaff ich das überhaupt?", "story_ziel": "Selbstzweifel-Einwand → wie die MBA Schritt-für-Schritt begleitet (2 Calls/Monat, Community). Ermutigend.", "kaeufertyp": "Zoe", "cta": "DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-17", "phase": "verkaufsphase", "julia_vorlage": "social-proof", "titel": "Stimmen aus der Gründungskohorte", "story_ziel": "Echte Stimmen Pilot-/MBA-Mamas (anonym) — 'niemand ist allein'. Glaubwürdigkeit + Pull.", "kaeufertyp": "Rudi", "cta": "Cart offen — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-18", "phase": "verkaufsphase", "julia_vorlage": "inhalte-zeigen", "titel": "Kurs 3: Digitale Produktwelt + Bonus PIA", "story_ziel": "Dritten Kurs zeigen + PIA (KI-Mentorin) als Bonus. Das Gesamtbild wird rund.", "kaeufertyp": "Frank", "cta": "Cart offen — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-19", "phase": "verkaufsphase", "julia_vorlage": "persoenlich", "titel": "Ferien-nahbar", "story_ziel": "Ehrlicher Alltags-Einblick (Ferien), leise Brücke zur MBA. Beziehung > Verkauf an diesem Tag.", "kaeufertyp": "Ina", "cta": "leise: Cart offen", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-20", "phase": "verkaufsphase", "julia_vorlage": "persoenlich", "titel": "POV: ein Dienstag, wenn dein Business läuft", "story_ziel": "POV/Vision (kein 'stell dir vor'): das neue Bild vom Alltag mit laufendem Business. Inspirierend, machbar.", "kaeufertyp": "Ina", "cta": "Cart offen — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+
+    { "datum": "2026-07-21", "phase": "verkaufsphase", "julia_vorlage": "quick-win", "titel": "Roter Faden in 1 Satz — und: diese Woche schliesst der Cart", "story_ziel": "Quick Win (Was-für-wen-Satz) + ERSTE Ansage der Deadline: Cart schliesst diese Woche (So 27.7.). Feed-Block 2 (Zeit-Freebie) startet parallel.", "kaeufertyp": "Willi", "cta": "Cart offen — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-22", "phase": "verkaufsphase", "julia_vorlage": "social-proof", "titel": "Wer schon in der MBA ist", "story_ziel": "Post-it-Wand: anonyme Käuferinnen, Rudeltier-Effekt. Dringlichkeit baut auf.", "kaeufertyp": "Zoe", "cta": "Cart offen — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-23", "phase": "verkaufsphase", "julia_vorlage": "einwandbehandlung", "titel": "Letzte Zweifel", "story_ziel": "Geld/Zeit/Technik-Einwände final abräumen, keine Geld-zurück-Garantie ehrlich rahmen. Klarheit schaffen.", "kaeufertyp": "Amelie", "cta": "DM MBA bei Fragen", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-24", "phase": "verkaufsphase", "julia_vorlage": "persoenlich", "titel": "Persönlicher Brief: warum ich das mit dir bauen will", "story_ziel": "Persönlicher Brief + Werte. Nähe, Vertrauen, Einladung. Übergang in die Close-Cascade.", "kaeufertyp": "Rudi", "cta": "Cart offen — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+
+    { "datum": "2026-07-25", "phase": "verkaufsphase", "julia_vorlage": "last-call", "titel": "3 Tage noch", "story_ziel": "Alles was drin ist auf einen Blick, Pioneer 997 endet So 27.7. Dringlichkeit + Klarheit.", "kaeufertyp": "Frank", "cta": "Cart schliesst So 27.7. — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-26", "phase": "verkaufsphase", "julia_vorlage": "last-call", "titel": "Morgen 23:59 ist Schluss", "story_ziel": "Countdown-Sticker, Post-it-Wand, letzte Fragen einsammeln. Hohe Dringlichkeit.", "kaeufertyp": "Zoe", "cta": "Cart schliesst morgen 23:59 — Link / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+    { "datum": "2026-07-27", "phase": "verkaufsphase", "julia_vorlage": "last-call", "titel": "Heute 23:59 schliesst der Cart", "story_ziel": "CART-CLOSE-TAG. Live-Story + Countdown-Cascade (morgens/mittags/abends), letzter Aufruf. Close 23:59.", "kaeufertyp": "Ina", "cta": "Cart schliesst heute 23:59 — Link in Story / DM MBA", "cta_keyword": "MBA", "profil": "mentoring" },
+
+    { "datum": "2026-07-28", "phase": "nachkaufphase", "julia_vorlage": "feedback-social-proof", "titel": "Was die Gründungs-Kohorte sagt", "story_ziel": "Feedback + Begeisterung der MBA-Käuferinnen zeigen. Dankbarkeit. Nachzügler-DMs möglich machen.", "kaeufertyp": "Rudi", "cta": "Du warst zu spät? DM mir — schauen wir, was geht", "cta_keyword": null, "profil": "mentoring" },
+    { "datum": "2026-07-29", "phase": "nachkaufphase", "julia_vorlage": "an-was-ich-arbeite", "titel": "Wie es jetzt weitergeht", "story_ziel": "Ausblick: Programmstart Mitte August, erste Calls nach den Ferien, beide Gruppen zusammen. Leidenschaft fürs Thema.", "kaeufertyp": "Ina", "cta": "Bleib dran — die nächste Möglichkeit kommt", "cta_keyword": null, "profil": "mentoring" },
+    { "datum": "2026-07-30", "phase": "nachkaufphase", "julia_vorlage": "werte", "titel": "Worauf es mir wirklich ankommt", "story_ziel": "Wert/Haltung teilen (echte Begleitung statt Verzetteln). Community auf die MBA-Denkweise einstimmen. Beziehung > Verkauf.", "kaeufertyp": "Amelie", "cta": "Mehrwert — kein Verkauf heute", "cta_keyword": null, "profil": "mentoring" },
+    { "datum": "2026-07-31", "phase": "nachkaufphase", "julia_vorlage": "lifestyle-reflexion", "titel": "Leiser Monats-Abschluss", "story_ziel": "Ruhige Ferien-Reflexion, Monats-Abschluss, sanfter Ausblick. Niederschwellig, nahbar.", "kaeufertyp": "Ina", "cta": "niederschwellig, kein harter CTA", "cta_keyword": null, "profil": "mentoring" }
   ]
 }
