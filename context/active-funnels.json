@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Zentrales Register aller aktiven Funnels für Mum Life Balance (Mentoring + doTERRA). Wird vom /funnel Skill gepflegt und von /story, /montag, /reels, /karussell gelesen — damit Content-Assistenten wissen welche ManyChat-Keywords diese Woche prioritär sind.",
-    "last_updated": "2026-06-05 · Mama-CEO Pilot läuft (5 Mamas, seit 1.6.) + weiterhin Solo-Verkauf 333 · MBA-Launch eingetragen (Pioneer 997, Webinar Mi 24.6., Cart-Close So 5.7.) · Warteliste live (mumlifebalance.ch/mba-warteliste).",
+    "last_updated": "2026-07-04 · MBA-Launch LÄUFT: 5-Tage-PIA-Bootcamp gelaufen (29.6.–3.7.), öffentlicher Cart offen Fr 3.7.–So 27.7. 23:59 (Pioneer 997 durchgehend, verlängert von 6.7.) · Mama-CEO-Kurs fertiggestellt · Neues 0€-Freebie 'To-Do-Liste halbieren' (Keyword ZEIT) für Juli-Feed-Block 2 ergänzt · Warteliste live (mumlifebalance.ch/mba-warteliste).",
     "funnel_architektur": "3 Produkttreppen (Sichtbarkeit/Instagram · Zeit/Struktur=Mama-CEO · Digitale Produktwelt). Jede: 0€-Freebie → Minikurs (39/97) → grosser Kurs (333) → MBA. ALLE Funnels führen am Ende zur MBA (Bundle · Pioneer 997 / Final 1347). Die 3 grossen Kurse (Instagram-Kundenmaschine · Mama-CEO · Digitale Produktwelt) sind einzeln verkaufbar UND Bestandteil der MBA.",
     "schema_version": 1,
     "brand": "Mum Life Balance",
@@ -281,6 +281,42 @@
     },
 
     {
+      "id": "todo-halbieren",
+      "name": "3 Schritte, um deine To-Do-Liste zu halbieren",
+      "status": "asset-vorhanden-ohne-ac-funnel",
+      "profile": "mentoring",
+      "typ": "0€ Leadmagnet · Checkliste/Guide",
+      "preis_chf": 0,
+      "saeule": "Zeit/Struktur (Mama-CEO)",
+      "zielgruppe": "Network-Mamas, die es nicht schaffen, sich neben der Familie die Zeit fürs Business zu nehmen",
+      "problem": "Mental Load + überfüllte To-Do-Liste → kommt nie zum Business (Kernschmerz laut Patricia)",
+      "transformation": "Sofort umsetzbare Struktur, die die To-Do-Liste halbiert und Zeit fürs Business schafft",
+
+      "traffic_quellen": {
+        "wordpress_landing": null,
+        "manychat_keyword": "ZEIT",
+        "asset_status": "Von Patricia bereits gebaut (kam mega an) — Ablageort/Format noch zu verlinken (Canva/PDF/Padlet?), liegt nicht im Repo"
+      },
+
+      "ac_integration": {
+        "tags": {},
+        "automation_id": null,
+        "notes": "TODO vor 21.7.: ManyChat-Keyword ZEIT + Auslieferung + AC-Nurture-Sequenz einrichten (analog Bio-Check)"
+      },
+
+      "produkttreppe_anschluss": [
+        { "stufe": "M (333)", "produkt": "Mama-CEO", "preis": 333 },
+        { "stufe": "Z", "produkt": "MBA", "preis": 997 }
+      ],
+
+      "content_hinweise": {
+        "pillar": "Zeit/Struktur — Business neben der Familie",
+        "primaer_keyword": "ZEIT",
+        "einsatz": "Juli Feed-Block 2 (21.–31.7.) — Freebie-Reise führt zur MBA"
+      }
+    },
+
+    {
       "id": "doterra-energie",
       "name": "doTERRA Energie-Kur",
       "status": "live",
@@ -468,7 +504,7 @@
         "bootcamp_start_datum": "2026-06-29",
         "bootcamp_ende_datum": "2026-07-03",
         "cart_open_datum": "2026-07-03",
-        "cart_close_datum": "2026-07-06T23:59",
+        "cart_close_datum": "2026-07-27T23:59",
         "modell": "Morgen-Impuls (Patricia 1 Sprachnotiz/Tag, Bot+PIA tragen den Rest; live nur Tag 1 Kick-off + Tag 5 Finale)",
         "bauplan": "outputs/produkte/mba-launch/challenge-launch-plan.md",
         "produkt_brief": "outputs/produkte/bootcamp/00-bootcamp-produkt.md"
@@ -523,11 +559,11 @@
         "bootcamp_start_datum": "2026-06-29",
         "bootcamp_ende_datum": "2026-07-03",
         "cart_open_datum": "2026-07-03",
-        "cart_close_datum": "2026-07-06T23:59",
+        "cart_close_datum": "2026-07-27T23:59",
         "programmstart": "Mitte August 2026 (nach Sommerferien; erster Live-Call nach Ferien). Kurse sofort zugänglich.",
         "lead_event": "mama-business-bootcamp (siehe eigener Funnel-Eintrag)",
         "bauplan": "outputs/produkte/mba-launch/challenge-launch-plan.md",
-        "scope": "Kostenloses 5-Tage-Mama-Business-Bootcamp (Mo 29.6.-Fr 3.7., Telegram, PIA-powered) → Cart-Open Fr 3.7. → Cart-Close So 6.7. 23:59. Pioneer 997 / Final 1347. Morgen-Impuls-Modell.",
+        "scope": "Kostenloses 5-Tage-Mama-Business-Bootcamp (Mo 29.6.-Fr 3.7., Telegram, PIA-powered) → Cart-Open Fr 3.7. → Cart-Close So 27.7. 23:59 (verlängert von 6.7.). Pioneer 997 durchgehend / Final 1347. Morgen-Impuls-Modell.",
         "webinar_archiviert": "Webinar-Assets archiviert: story-plan → story-plan-webinar-archiv.json, launch-kalender-juli-2026.md, AC-Mails #596-600 (Webinar-Reminder ersetzt). Recycelt: Cart-Mails #601-609, Tag mba-kauf 79.",
         "ziele": { "mba_verkaeufe": 8 }
       },
@@ -535,7 +571,7 @@
       "content_hinweise": {
         "pillar": "Alles aus einer Hand — vom Thema bis zum planbaren Einkommen neben der Familie",
         "primaer_keyword_launch": "BOOTCAMP (Anmeldung) → ab Cart-Open MBA-Link/DM",
-        "hinweis": "Launch läuft als 5-Tage-PIA-Bootcamp. Der content-assistent (Telegram-Story-Bot) liest via launch_engine.py den materialisierten Tag-für-Tag-Plan outputs/produkte/mba-launch/story-plan.json (Aufwärm 15.-28.6. · Verkauf 29.6.-6.7. · Nachkauf 7.-9.7.) mit Vorrang. Ausserhalb des Launch-Fensters: Julia-Storyvorlagen-Rotation (context/julia-story-vorlagen.json) + Monatsplan-MD. MBA bleibt Fernziel, alle anderen Funnels führen hierher."
+        "hinweis": "Launch läuft als 5-Tage-PIA-Bootcamp. Der content-assistent (Telegram-Story-Bot) liest via launch_engine.py den materialisierten Tag-für-Tag-Plan outputs/produkte/mba-launch/story-plan.json (Aufwärm 15.-28.6. · Verkauf 29.6.-27.7. · Nachkauf 28.-31.7.) mit Vorrang. Ausserhalb des Launch-Fensters: Julia-Storyvorlagen-Rotation (context/julia-story-vorlagen.json) + Monatsplan-MD. MBA bleibt Fernziel, alle anderen Funnels führen hierher."
       },
 
       "umsatzziel_contribution_chf": 7976,
@@ -544,7 +580,7 @@
   ],
 
   "produkttreppe_mentoring": [
-    { "stufe": "A (0€)", "produkte": ["Bio-Check", "Lead-Challenge", "Von 0 auf echt", "Potenzial-Test", "Starterguide", "Story-Challenge"] },
+    { "stufe": "A (0€)", "produkte": ["Bio-Check", "Lead-Challenge", "Von 0 auf echt", "Potenzial-Test", "Starterguide", "Story-Challenge", "3 Schritte To-Do-Liste halbieren"] },
     { "stufe": "B (39 CHF)", "produkt": "Finde dein Thema als Network-Mama" },
     { "stufe": "E (97 CHF)", "produkt": "Expertin statt Verkäuferin" },
     { "stufe": "M (333 CHF) — 3 grosse Kurse", "produkte": ["Instagram-Kundenmaschine", "Mama-CEO", "Digitale Produktwelt"] },
