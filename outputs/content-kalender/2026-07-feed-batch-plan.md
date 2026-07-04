@@ -21,6 +21,8 @@ tags: [content]
 > 🚨 **Zielgruppe der Mama-Kundin = geschlechtsneutral (gilt IMMER):** Die Kundschaft *ihrer* Kundinnen ist nicht zwingend weiblich. NIE „Frau / Kundin / Traumkundin / die richtigen Frauen" → immer „Person / Interessent / Wunschkundschaft / die richtigen Leute / wen du erreichen willst". „Mama/du als Mama" bleibt nur für die direkte Ansprache an Patricias Kundin selbst.
 >
 > 🎨 **Feed-Rhythmus (ABAB):** Farbe + Stil strikt abwechseln — Tag 1 Foto+Hook · Tag 2 Beige+Hook · Tag 3 Foto · Tag 4 Petrol · Tag 5 Foto. Template-Farben rotieren, Foto nie 2× dasselbe, **Lead-Post (Mi) nie Petrol/Grün** (→ als Foto gelöst).
+>
+> 🚫 **Kein „mehr dazu in meinen Stories"-CTA im Feed (gilt IMMER):** bindet Patricia zu fest — sie müsste die Story dann zwingend machen. Feed-CTAs bleiben eigenständig (Folgen / Teilen / Speichern / Keyword).
 
 ---
 
@@ -61,7 +63,7 @@ tags: [content]
 - **RWH-Säule:** 👩‍🏫 Mehrwert (Set 4: „Der grösste Fehler bei …?")
 - **Hook (Cover):** „Der eine Grund, warum deine Traumkundin auf Instagram an dir vorbeiscrollt — und es liegt nicht an deinen Fotos."
 - **Slides (7):** Schaufenster-Metapher (Laden, in dem sofort klar ist: hier gibt's genau *das*) → übertragen aufs Profil → die Elemente, die dein „Schaufenster" klar machen → nahbarer Abschluss.
-- **Caption-Richtung:** warm, bildhaft (Schaufenster), Wert, am Ende leise „mehr dazu grad in meinen Stories" (Brücke zur MBA über Stories, **ohne** Programm/Preis im Feed).
+- **Caption-Richtung:** warm, bildhaft (Schaufenster), Wert. Reiner Speichern-CTA — **KEIN** „mehr dazu in meinen Stories" (bindet Patricia zu fest).
 - **CTA (Kompass: Mehrwert → Speichern):** „Speicher's als Erinnerung fürs nächste Mal, wenn du deine Bio anfasst."
 
 **KW28-Check:** 2 Karussell (Mi Lead, Fr Reichweite) · 3 Reels (Mo TH, Di + Do B-Roll) · genau 1 Keyword-Post (Mi BIO) · Rest Reichweite · **5 verschiedene RWH-Säulen** (Storytelling/Identifikation/Mehrwert/Positionierung/Mehrwert). ✅
@@ -108,7 +110,7 @@ tags: [content]
 4. „Du gehst dorthin, wo sofort klar ist: **Hier. Gibt. Es. Schuhe.**"
 5. „Genau so geht's der Person, die du erreichen willst, mit deinem Profil. Sieht sie in 3 Sekunden nicht, wofür du stehst — ist sie weg."
 6. „Ein klares Schaufenster braucht 3 Dinge: einen Satz, der dein Thema zeigt · ein Profilbild, auf dem man dich erkennt · Highlights, die sagen, was drin ist."
-7. *(CTA)* „Das kannst du heute ändern, ganz ohne mehr zu posten. Mehr dazu grad in meinen Stories. 👉 Speicher's fürs nächste Bio-Update."
+7. *(CTA)* „Das kannst du heute ändern, ganz ohne mehr zu posten. 👉 Speicher's fürs nächste Bio-Update."
 
 ### ✍️ Captions (postfertig, neutral)
 
@@ -167,7 +169,7 @@ tags: [content]
 >
 > Genau so geht's der Person, die du erreichen willst, mit deinem Profil. Wenn sie in drei Sekunden nicht sieht, für welches Problem du stehst, ist sie weg — nicht weil du nicht gut genug bist, sondern weil dein Schaufenster nicht klar spricht.
 >
-> Und das Schöne: Das kannst du heute noch ändern, ganz ohne mehr zu posten. Mehr dazu zeig ich dir grad in meinen Stories.
+> Und das Schöne: Das kannst du heute noch ändern, ganz ohne mehr zu posten.
 >
 > 👉 Speicher dir das für's nächste Mal, wenn du deine Bio anfasst.
 >
