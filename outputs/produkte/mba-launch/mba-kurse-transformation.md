@@ -31,14 +31,14 @@ tags: [produkt, mba, salespage, launch]
 
 ---
 
-## 🚀 Digitale Produktwelt — *du hast endlich etwas Eigenes*
+## 🚀 Digitale Produktwelt — *du baust dir dein System, das für dich arbeitet*
 
 **Danach fühlt es sich so an:**
-- Du hast ein **eigenes digitales Angebot, das dir gehört** — und verdienst nicht mehr nur ein paar Prozent Provision an fremden Produkten.
-- Dein **Funnel** nimmt deine Interessentinnen an die Hand und begleitet sie bis zum Kauf — auch nachts, auch wenn du gerade am Spielplatz sitzt. Du **tauschst nicht mehr Zeit gegen Geld.**
-- Aus „ich verkaufe das Produkt von jemand anderem" wird „**ich hab etwas Eigenes, über das ich mit Stolz rede.**"
-- Du weisst genau, wie du aus deinem Wissen ein Produkt machst, das verkauft — **ohne dich zu verbiegen.**
-- Dein Business fühlt sich zum ersten Mal an wie **DEINS**, mit einem Einkommen, das mehr ist als Taschengeld.
+- Du hast dein eigenes **digitales Freebie** gebaut — den ersten Schritt zu deiner Lösung, den du Menschen an die Hand gibst, auch wenn du gerade am Spielplatz sitzt oder schläfst.
+- Du weisst genau, wie dein Post die richtigen Menschen **weiterführt**: vom Scrollen ins Freebie — und aus dem Freebie heraus verkaufst du dann ganz natürlich dein bezahltes Angebot. Ohne dass du dabei viel Zeit verlierst.
+- Aus „ich verkaufe ein einzelnes Produkt" wird „ich verkaufe echte **Transformation**" — weil ein Produkt immer nur ein Teil der Lösung ist und du deinen Kundinnen den ganzen Weg zeigen kannst.
+- Aus „ich verkaufe fremde Produkte" wird „ich hab etwas Eigenes, das mir gehört — und für mich arbeitet, während ich lebe."
+- Dein Business fühlt sich zum ersten Mal an wie **DEINS**: mit einem Einkommen, das nicht mehr an deine Zeit gekoppelt ist.
 
 ---
 
