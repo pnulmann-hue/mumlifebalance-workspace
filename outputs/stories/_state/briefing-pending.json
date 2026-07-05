@@ -1,51 +1,67 @@
 {
-  "profil": "doterra",
-  "modus": "tagesplan",
-  "disg": "Rot",
-  "disg_sekundaer": "Gelb",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
-  "aktives_produkt": "doTERRA Lifestyle",
-  "wochen_fokus": "(kein Fokus eingetragen)",
-  "sales_pattern": "",
-  "wochen_cta": "",
-  "monat_kontext": "",
-  "produkt_themen": null,
-  "vorschlag_idee": null,
-  "wochen_fokus_quelle": "fallback",
-  "launch_tag": {
-    "datum": "2026-07-04",
-    "phase": "verkaufsphase",
-    "julia_vorlage": "inhalte-zeigen",
-    "titel": "Was in der MBA steckt",
-    "story_ziel": "MBA greifbar machen: 3 Kurse (Instagram-Kundenmaschine + Mama-CEO + Digitale Produktwelt) + 2 Calls/Monat + PIA. Inhalte zeigen, Käufer Frank/Willi abholen. Cart-Link.",
-    "kaeufertyp": "Frank",
-    "cta": "Cart bis So 23:59 — Link in Story / DM MBA",
-    "cta_keyword": "MBA",
-    "profil": "mentoring"
-  },
-  "launch_vorlage": {
-    "name": "Inhalte / Daten & Fakten zeigen",
-    "phase": "verkaufsphase",
-    "ziel": "Konkret zeigen WAS man bekommt — viele buchen nicht weil sie den Inhalt nicht kennen.",
-    "julia_anleitung": "Statt nur zu sagen 'du bekommst ein Workbook' — ZEIGE es. Titelbild, Inhaltsverzeichnis, Seitenzahl, Modulaufbau. Mach das Angebot greifbar. Für Frank besonders wichtig.",
-    "kaeufertyp": "Frank + Willi",
-    "slide_bogen": "Hook (schau was drin ist) → Inhalt 1 zeigen → Inhalt 2 zeigen → was es für sie bedeutet → CTA mit Link"
-  },
-  "kontext_snapshot": {
-    "kw": 27,
-    "wochentag": "Samstag",
-    "datum": "2026-07-04"
-  },
-  "fragen": [
-    "Was hast du erlebt?",
-    "Hast du grad einen Gedanken zum Thema?",
-    "Oder Standard-Pool?"
-  ],
-  "gesendet_am": "2026-07-04T07:25:02.145Z",
-  "telegram_message_id": 835,
-  "patricia_antworten": [],
-  "patricia_fotos": [],
-  "patricia_videos": [],
-  "status": "warten_auf_antwort"
+  "datum": "2026-07-05",
+  "profile": {
+    "mentoring": {
+      "profil": "mentoring",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Instagram-Strategie für NM",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": true,
+        "phase": "verkaufsphase",
+        "tag_im_launch": 21,
+        "vorlage": "Einwandbehandlung",
+        "titel": "Ist die MBA was für mich?",
+        "story_ziel": "Einwände (Geld/Zeit/'schaff ich das') + Antikunden-Frame. Wer es IST / NICHT ist. Keine Geld-zurück-Garantie ehrlich rahmen. Social Proof Pilot-Mamas.",
+        "kaeufertyp": "Amelie",
+        "cta": "Fragen? DM MBA",
+        "cta_keyword": "MBA"
+      },
+      "kontext_snapshot": {
+        "kw": 27,
+        "wochentag": "Sonntag",
+        "datum": "2026-07-05"
+      },
+      "gesendet_am": "2026-07-05T04:42:01.172Z",
+      "telegram_message_id": 836,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    },
+    "doterra": {
+      "profil": "doterra",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Lifestyle / Sonntags-Reflexion / Lifehack",
+        "titel": "Lifestyle / Sonntags-Reflexion / Lifehack",
+        "story_ziel": "Nahbarer Produktivitäts-/Motivations-Hack oder ruhige Reflexion — Beziehung stärken.",
+        "kaeufertyp": "Ina",
+        "cta": "optional, niederschwellig",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 27,
+        "wochentag": "Sonntag",
+        "datum": "2026-07-05"
+      },
+      "gesendet_am": "2026-07-05T04:42:01.936Z",
+      "telegram_message_id": 837,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    }
+  }
 }
