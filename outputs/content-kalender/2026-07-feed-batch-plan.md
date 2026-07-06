@@ -206,18 +206,18 @@ Mo = Viral-Trend-Reel, Cover ergibt sich aus dem Clip. ABAB ab Di: Foto → Oran
 - **CTA (Mehrwert → Speichern):** „Speicher's fürs nächste Mal, wenn deine Woche wieder überquillt."
 
 ### Do 17.7. — REEL · B-Roll · 🟢 Reichweite
-- **RWH-Säule:** 🎯 Positionierung (Set 1: „Ich bin nicht diejenige, die dir … verspricht")
-- **Hook:** „Ich bin nicht die, die dir noch eine 5-Uhr-Morgenroutine verkauft, während dein Alltag eh schon aus allen Nähten platzt."
+- **RWH-Säule:** 🎯 Positionierung (Set 1: „Ich bin nicht die, die dir …")
+- **Hook:** „Ich bin nicht die, die dir sagt, dass du einfach alle Produkte jeden Tag erklären sollst."
 - **Cover:** Foto (candid) · Trending-Sound nativ
-- **CTA (Positionierung → Folgen):** „Folg mir, wenn du genug hast von Produktivitäts-Tipps, die auf kinderlose Leben ausgelegt sind."
+- **CTA (Positionierung → Folgen):** „Folg mir, wenn du genug hast von ‚erklär täglich deine Produkte'."
 
 ### Fr 18.7. — KARUSSELL · 🟢 Reichweite
-- **RWH-Säule:** ♥️ Identifikation (Set 8: „POV: Du hast … 47 Podcasts … 0 Entscheidungen")
-- **Hook (Cover):** „POV: Du hast 47 Produktivitäts-Reels gespeichert, 3 Planer gekauft — und trotzdem keine Minute mehr fürs Business."
+- **RWH-Säule:** 💰 Verkauf (Set 1: „Wer […] erreichen will, muss nicht härter arbeiten…") — weicher Folgen-CTA (Feed programm-frei)
+- **Hook (Cover):** „Wer ein Business neben der Familie will, muss nicht härter arbeiten — sondern aufhören, Energie an Dinge zu verschwenden, die eh keiner merkt."
 - **Cover:** Template **Petrol** (Reach-Post, kein Lead → Petrol ok)
-- **CTA (Identifikation → Folgen):** „Erkennst du dich? Folg mir, hier reden wir Klartext übers Mama-Business."
+- **CTA (Verkauf → weiches Folgen):** „Folg mir, wenn du dein Business smarter statt härter aufbauen willst."
 
-**KW29-Check:** 2 Karussell (Mi, Fr) · 3 Reels (Mo Viral-Trend/reaktiv, Di + Do B-Roll) · 0 Keyword (kein Freebie) · alles Reichweite · **5 andere RWH-Sets als KW28**. ✅
+**KW29-Check:** 2 Karussell (Mi, Fr) · 3 Reels (Mo Viral-Trend/reaktiv, Di + Do B-Roll) · 0 Keyword (kein Freebie) · alles Reichweite · **alle 5 Säulen abgedeckt** (Storytelling · Identifikation · Mehrwert · Positionierung · Verkauf). ✅
 
 ### ✍️ KW29-Captions (postfertig, neutral, kein Story-CTA)
 
@@ -255,26 +255,26 @@ Mo = Viral-Trend-Reel, Cover ergibt sich aus dem Clip. ABAB ab Di: Foto → Oran
 > `#mamabusiness #mamaunternehmerin #zeitmanagement #mamaceo #selbstständigmitkind`
 
 **Do — Positionierung → Folgen**
-> Ich sag's ganz ehrlich: Ich bin nicht die, die dir jetzt noch eine 5-Uhr-Morgenroutine verkauft.
+> Ich sag's ganz ehrlich: Ich bin nicht die, die dir sagt, dass du einfach jeden Tag brav alle deine Produkte erklären sollst.
 >
-> Dein Alltag platzt doch eh schon aus allen Nähten — das Letzte, was du brauchst, ist noch ein Programm, das dir sagt, du müsstest einfach früher aufstehen und mehr wollen.
+> Weil genau das ist der Rat, der dich stundenlang Content produzieren lässt — und am Ende steht trotzdem keine einzige Anfrage in den DMs. Du redest über Inhaltsstoffe und Rabatte, und die Leute scrollen weiter, weil sie in dir die Verkäuferin sehen und nicht die Frau, die ihr Problem wirklich versteht.
 >
-> Was dich weiterbringt, ist nicht noch mehr reinquetschen, sondern ehrlich hinschauen, was raus darf, damit überhaupt Platz entsteht. Realistische Fenster im echten Mama-Alltag schlagen jede Hochglanz-Routine, die für ein kinderloses Leben gemacht ist.
+> Was dich weiterbringt, ist nicht mehr Produkt-Posts, sondern für EIN Thema zu stehen, das deine Leute nachts wachhält. Lieber dreimal übers echte Problem reden als täglich den nächsten Artikel erklären — das spart dir Zeit und bringt dir die Richtigen.
 >
-> Folg mir, wenn du genug hast von Produktivitäts-Tipps, die so tun, als hättest du den ganzen Tag für dich. 💛
+> Folg mir, wenn du genug hast von „erklär einfach täglich deine Produkte". 💛
 >
-> `#mamabusiness #mamaunternehmerin #ehrlichesbusiness #mamaceo #networkmarketing`
+> `#mamabusiness #networkmarketing #mamaunternehmerin #ehrlichesbusiness #positionierung`
 
-**Fr — Identifikation (POV) → Folgen**
-> POV: Du hast 47 Produktivitäts-Reels gespeichert, dir den dritten Planer gekauft und dir fest vorgenommen, dass jetzt alles anders wird — und trotzdem hast du am Ende der Woche keine Minute mehr fürs Business gehabt.
+**Fr — Verkauf (weiches Folgen)**
+> Wer ein Business neben der Familie aufbauen will, muss nicht härter arbeiten. Du musst aufhören, deine Energie an Dinge zu verschwenden, die am Ende eh keiner merkt.
 >
-> Kommt dir bekannt vor? Mir auch, viel zu lange. Und irgendwann hab ich gemerkt: Mir hat nie noch ein Tool gefehlt. Was mir gefehlt hat, war die Erlaubnis, ein paar von den ganzen Mama-Aufgaben einfach loszulassen, damit überhaupt Zeit frei wird.
+> Die perfekt gestylten Produktbilder, die dritte Story am Tag, das ewige Optimieren an Details, die keine Kundin je bemerkt — das kostet dich genau die Kraft, die dir dann fürs Wesentliche fehlt.
 >
-> Kein neuer Planer der Welt macht Platz, wenn die Liste voll bleibt.
+> Ein Business neben Kindern und Haushalt wächst nicht, weil du mehr machst, sondern weil du das Richtige machst und den Rest bewusst weglässt. Weniger, aber gezielt — das schlägt „viel und verzettelt" jedes Mal.
 >
-> Erkennst du dich? Folg mir, hier reden wir Klartext übers Mama-Business — ohne Hochglanz. 💛
+> Folg mir, wenn du dein Business smarter statt härter aufbauen willst. 💛
 >
-> `#mamabusiness #mamaunternehmerin #mentalload #momlife #mamaceo`
+> `#mamabusiness #mamaunternehmerin #networkmarketing #wenigeraberbesser #mamaceo`
 
 ---
 
@@ -285,7 +285,7 @@ Ziel: über die Wochen erkennen, welche Reichweitenherz-Muster bei der Zielgrupp
 | Woche | Mo | Di | Mi | Do | Fr |
 |---|---|---|---|---|---|
 | **KW28** (Sichtbarkeit) | Storytelling S5 | Identifikation POV S2/4 | Mehrwert S2 (90%) | Positionierung S4 | Mehrwert S4 (grösster Fehler) |
-| **KW29** (Zeit) | Storytelling **S3** (Viral-Trend-Reel) | Identifikation **S1** (erklär mir) | Mehrwert **S7** (der eine Hebel) | Positionierung **S1** (kein Wundermittel) | Identifikation **S8** (47 Podcasts/POV) |
+| **KW29** (Zeit) | Storytelling **S3** (Viral-Trend-Reel) | Identifikation **S1** (erklär mir) | Mehrwert **S7** (der eine Hebel) | Positionierung **S1** (nicht täglich Produkte) | Verkauf **S1** (smarter statt härter) |
 | Performance | _nachtragen_ | _nachtragen_ | _nachtragen_ | _nachtragen_ | _nachtragen_ |
 
 → So decken wir Woche für Woche neue Muster ab und finden das, was **richtig zündet**.
