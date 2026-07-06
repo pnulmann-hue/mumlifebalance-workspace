@@ -299,10 +299,11 @@
       },
 
       "ac_integration": {
-        "tags": {},
+        "tags": { "abgeschlossen": 82, "mba_interesse": 83 },
         "automation_id": null,
-        "notes": "TODO vor 21.7.: ManyChat-Keyword ZEIT + Auslieferung + AC-Nurture-Sequenz einrichten (analog Bio-Check)"
+        "notes": "KI-Web-App gebaut (scripts/freischaufeln/, Bio-Check-Zwilling), Frontend verifiziert 6.7. AC-Tags angelegt (82 abgeschlossen, 83 MBA-Interesse). OFFEN (Patricia): Vercel-Deploy + ENV (Anthropic-Key + AC_API_KEY + Tag-IDs) + ManyChat-Keyword ZEIT + WP-Anmeldeseite /freischaufeln + AC-Auslieferungs-Mail."
       },
+      "app": "scripts/freischaufeln/ (Vercel, Bio-Check-Zwilling) · README mit Deploy-Anleitung · Bauplan plans/2026-07-04-freischaufeln-freebie.md",
 
       "produkttreppe_anschluss": [
         { "stufe": "M (333)", "produkt": "Mama-CEO", "preis": 333 },
