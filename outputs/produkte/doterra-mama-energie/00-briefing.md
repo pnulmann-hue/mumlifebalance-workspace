@@ -29,6 +29,7 @@ tags: [produkt, doterra]
 - [x] Stufe 1: 3-Tage-Kickstart komplett getextet ([02-freebie-3-tage-kickstart.md](02-freebie-3-tage-kickstart.md)) — Opt-in, 3 Tage, Brücke
 - [ ] Stufe 3: Retention-Rhythmus + 1:1-Rahmen
 - [x] KI-/Automatisierungs-Konzept (Freebie + 21 Tage, alles auto ausser Telegram-Gruppe) ([03-automatisierung-ki-konzept.md](03-automatisierung-ki-konzept.md))
+- [x] Freebie-Auslieferung ManyChat-Setup (Weg B, DM + AC-Mail wegen 24h-Fenster) ([04-manychat-freebie-setup.md](04-manychat-freebie-setup.md))
 - [ ] Optional: Launch-/Content-Plan (Reels-Reichweite → Kickstart)
 
 ## Geklärt

@@ -13,3 +13,4 @@ Produkttreppe für das doTERRA-Business (Provisions-Modell, gratis Begleitung).
 - [[01-produkttreppe]]
 - [[02-freebie-3-tage-kickstart]]
 - [[03-automatisierung-ki-konzept]]
+- [[04-manychat-freebie-setup]]
