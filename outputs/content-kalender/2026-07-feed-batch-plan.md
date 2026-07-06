@@ -177,8 +177,117 @@ tags: [content]
 
 ---
 
-## KW29 — Säule Zeit/Struktur (14.–18.7.) · *noch zu bauen*
-Kernschmerz: „Ich komm neben der Familie einfach nicht zum Business." Reichweite auf den Zeit-Schmerz, Verkauf via Stories/MBA. (Freischaufeln noch im Bau → kein Freebie-Keyword diese Woche.) Story parallel: Kurs 2 Mama-CEO.
+## KW29 — Säule Zeit/Struktur (14.–18.7.)
+
+**Wochen-Kernschmerz:** „Ich komm neben der Familie einfach nicht zum Business." · **Alle Reichweite** (Freischaufeln noch im Bau → **kein** Freebie-Keyword diese Woche, Verkauf via Stories/MBA) · **Story parallel:** Kurs 2 Mama-CEO.
+**Hooks = andere RWH-Sets als KW28** (Experiment, siehe Tracker unten). Neutral, kein „mehr in Stories".
+
+### 🎨 Feed-Rhythmus (Anschluss an KW28-Fr = Foto → KW29 startet mit Template)
+`Mo Template Dunkelblau · Di Foto · Mi Template Orange · Do Foto · Fr Template Petrol`
+2 neue Fotos (Di, Do), 3 rotierende Template-Farben. Keine Petrol-Lead-Kollision (diese Woche kein Lead).
+
+### Mo 14.7. — REEL · Talking-Head · 🟢 Reichweite
+- **RWH-Säule:** 📖 Storytelling (Set 3: „Das Peinliche? Ich war felsenfest überzeugt…")
+- **Hook:** „Das Peinliche? Ich war felsenfest überzeugt, dass ich einfach nur disziplinierter sein muss, um neben vier Kindern Zeit fürs Business zu finden."
+- **Cover:** Template **Dunkelblau** (Text-Cover, Video = du sprichst)
+- **CTA (Storytelling → Folgen):** „Wenn du dich grad wiedererkennst — bleib hier, hier bist du richtig."
+
+### Di 15.7. — REEL · B-Roll · 🟢 Reichweite
+- **RWH-Säule:** ♥️ Identifikation (Set 1: „Kann mir bitte mal jemand erklären, warum…")
+- **Hook:** „Kann mir bitte mal jemand erklären, warum alle so tun, als wäre ‚nimm dir doch einfach Zeit fürs Business' total einfach?"
+- **Cover:** Foto (candid Alltag-Still) · Trending-Sound nativ
+- **CTA (Identifikation → Folgen/Teilen):** „Sag mir, dass ich nicht die Einzige bin — und teil's der Mama, die's grad genauso jongliert."
+
+### Mi 16.7. — KARUSSELL · 🟢 Reichweite
+- **RWH-Säule:** 👩‍🏫 Mehrwert (Set 7: „Der wichtigste Hebel – den fast alle ignorieren")
+- **Hook (Cover):** „Der wichtigste Zeit-Hebel fürs Business — den fast jede Mama übersieht."
+- **Cover:** Template **Orange**
+- **CTA (Mehrwert → Speichern):** „Speicher's fürs nächste Mal, wenn deine Woche wieder überquillt."
+
+### Do 17.7. — REEL · B-Roll · 🟢 Reichweite
+- **RWH-Säule:** 🎯 Positionierung (Set 1: „Ich bin nicht diejenige, die dir … verspricht")
+- **Hook:** „Ich bin nicht die, die dir noch eine 5-Uhr-Morgenroutine verkauft, während dein Alltag eh schon aus allen Nähten platzt."
+- **Cover:** Foto (candid) · Trending-Sound nativ
+- **CTA (Positionierung → Folgen):** „Folg mir, wenn du genug hast von Produktivitäts-Tipps, die auf kinderlose Leben ausgelegt sind."
+
+### Fr 18.7. — KARUSSELL · 🟢 Reichweite
+- **RWH-Säule:** ♥️ Identifikation (Set 8: „POV: Du hast … 47 Podcasts … 0 Entscheidungen")
+- **Hook (Cover):** „POV: Du hast 47 Produktivitäts-Reels gespeichert, 3 Planer gekauft — und trotzdem keine Minute mehr fürs Business."
+- **Cover:** Template **Petrol** (Reach-Post, kein Lead → Petrol ok)
+- **CTA (Identifikation → Folgen):** „Erkennst du dich? Folg mir, hier reden wir Klartext übers Mama-Business."
+
+**KW29-Check:** 2 Karussell (Mi, Fr) · 3 Reels (Mo TH, Di + Do B-Roll) · 0 Keyword (kein Freebie) · alles Reichweite · **5 andere RWH-Sets als KW28**. ✅
+
+### ✍️ KW29-Captions (postfertig, neutral, kein Story-CTA)
+
+**Mo — Storytelling → Folgen**
+> Das ist mir fast ein bisschen peinlich, aber ich sag's trotzdem: Jahrelang war ich felsenfest überzeugt, dass ich einfach nur disziplinierter sein muss, um neben den Kindern Zeit fürs Business zu finden.
+>
+> Also hab ich mich morgens noch früher aus dem Bett gequält und mich abends um 21 Uhr todmüde an den Laptop gesetzt — und mich gefragt, warum trotzdem nichts vorwärtsgeht.
+>
+> Bis ich kapiert hab: Disziplin war nie mein Problem. Mir hat eine Struktur gefehlt — ein festes, geschütztes Fenster, das ich behandle wie einen Termin mit einer Kundin, und nicht das, was übrig bleibt, wenn alle anderen versorgt sind.
+>
+> Seitdem ist es nicht mehr Willenskraft gegen mein Leben, sondern ein Plan, der zu meinem Leben passt. Wenn du dich grad wiedererkennst — bleib hier, hier bist du richtig. 💛
+>
+> `#mamabusiness #mamaunternehmerin #networkmarketing #zeitmanagement #mamaceo`
+
+**Di — Identifikation → Folgen/Teilen**
+> Kann mir bitte mal jemand erklären, warum alle so tun, als wäre „nimm dir doch einfach Zeit fürs Business" total einfach?
+>
+> Zwischen Znüni machen, Wäscheberg, zum Training fahren und dem Kind, das genau dann etwas braucht, wenn du dich endlich hinsetzen willst — ehrlich, wo genau soll dieses „einfach" passieren?
+>
+> Und dann liest du noch so einen Tipp von jemandem, der abends in Ruhe drei Stunden am Stück arbeiten kann, und fühlst dich schlecht, weil es bei dir eben nicht so läuft. Weisst du was? Es liegt nicht an dir. Es liegt daran, dass die meisten Tipps für ein Leben gemacht sind, das mit deinem nichts zu tun hat.
+>
+> Sag mir, dass ich nicht die Einzige bin — und schick's der Mama, die das grad genauso jongliert. 💛
+>
+> `#mamabusiness #mamaunternehmerin #momlife #mentalload #networkmarketing`
+
+**Mi — Mehrwert → Speichern**
+> Der wichtigste Hebel für mehr Business-Zeit ist nicht mehr Disziplin — und auch nicht das nächste Produktivitäts-Tool. Es ist ein einziges, festes Zeitfenster in der Woche, das du behandelst wie einen unverschiebbaren Termin.
+>
+> Nicht „wenn die Kinder mal schlafen", nicht „wenn ich mal Luft hab", sondern ein fixer Block, der genauso ernst genommen wird wie der Zahnarzt.
+>
+> Klingt banal, ändert aber alles: Weil du dann nicht mehr gegen deinen Alltag ankämpfst, sondern einen Platz hast, an dem dein Business wächst — auch in einer chaotischen Woche.
+>
+> Speicher's fürs nächste Mal, wenn deine Woche wieder überquillt.
+>
+> `#mamabusiness #mamaunternehmerin #zeitmanagement #mamaceo #selbstständigmitkind`
+
+**Do — Positionierung → Folgen**
+> Ich sag's ganz ehrlich: Ich bin nicht die, die dir jetzt noch eine 5-Uhr-Morgenroutine verkauft.
+>
+> Dein Alltag platzt doch eh schon aus allen Nähten — das Letzte, was du brauchst, ist noch ein Programm, das dir sagt, du müsstest einfach früher aufstehen und mehr wollen.
+>
+> Was dich weiterbringt, ist nicht noch mehr reinquetschen, sondern ehrlich hinschauen, was raus darf, damit überhaupt Platz entsteht. Realistische Fenster im echten Mama-Alltag schlagen jede Hochglanz-Routine, die für ein kinderloses Leben gemacht ist.
+>
+> Folg mir, wenn du genug hast von Produktivitäts-Tipps, die so tun, als hättest du den ganzen Tag für dich. 💛
+>
+> `#mamabusiness #mamaunternehmerin #ehrlichesbusiness #mamaceo #networkmarketing`
+
+**Fr — Identifikation (POV) → Folgen**
+> POV: Du hast 47 Produktivitäts-Reels gespeichert, dir den dritten Planer gekauft und dir fest vorgenommen, dass jetzt alles anders wird — und trotzdem hast du am Ende der Woche keine Minute mehr fürs Business gehabt.
+>
+> Kommt dir bekannt vor? Mir auch, viel zu lange. Und irgendwann hab ich gemerkt: Mir hat nie noch ein Tool gefehlt. Was mir gefehlt hat, war die Erlaubnis, ein paar von den ganzen Mama-Aufgaben einfach loszulassen, damit überhaupt Zeit frei wird.
+>
+> Kein neuer Planer der Welt macht Platz, wenn die Liste voll bleibt.
+>
+> Erkennst du dich? Folg mir, hier reden wir Klartext übers Mama-Business — ohne Hochglanz. 💛
+>
+> `#mamabusiness #mamaunternehmerin #mentalload #momlife #mamaceo`
+
+---
+
+## 🔬 Hook-Experiment-Tracker (welches Muster zündet?)
+
+Ziel: über die Wochen erkennen, welche Reichweitenherz-Muster bei der Zielgruppe am besten performen. Nach dem Posten **Reichweite/Saves/Shares pro Post nachtragen**, dann sehen wir das Gewinner-Muster.
+
+| Woche | Mo | Di | Mi | Do | Fr |
+|---|---|---|---|---|---|
+| **KW28** (Sichtbarkeit) | Storytelling S5 | Identifikation POV S2/4 | Mehrwert S2 (90%) | Positionierung S4 | Mehrwert S4 (grösster Fehler) |
+| **KW29** (Zeit) | Storytelling **S3** (peinlich) | Identifikation **S1** (erklär mir) | Mehrwert **S7** (der eine Hebel) | Positionierung **S1** (kein Wundermittel) | Identifikation **S8** (47 Podcasts/POV) |
+| Performance | _nachtragen_ | _nachtragen_ | _nachtragen_ | _nachtragen_ | _nachtragen_ |
+
+→ So decken wir Woche für Woche neue Muster ab und finden das, was **richtig zündet**.
 
 ## KW30 — Säule Digitale Produktwelt (21.–25.7.) · *noch zu bauen*
 Kernschmerz: „Ich tausche Zeit gegen Geld / hab kein skalierbares Angebot." Lead-Post → Keyword **QUIZ** (Potenzial-Test). Story parallel: Kurs 3 Digitale Produktwelt.
