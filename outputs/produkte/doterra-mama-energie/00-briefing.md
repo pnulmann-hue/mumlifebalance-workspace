@@ -18,7 +18,7 @@ tags: [produkt, doterra]
 
 ## Stufen
 - **Stufe 1 (0€) A→B:** 3-Tage-Energie-Kickstart 🔥 (Erlebnis-Freebie, Wumms)
-- **Stufe 2 ⭐ B→M:** Die 21-Tage-Energie-Routine — Paket (VMG+PB Assist+Omega3 + Shake-Upgrade) + 21-Tage-Begleitung = Haupt-Provision
+- **Stufe 2 ⭐ B→M:** Die 21-Tage-Energie-Routine — Paket (Anker = doTERRA Protein-Pulver/Shake + VMG + PB Assist + Omega 3) + 21-Tage-Begleitung = Haupt-Provision
 - **Stufe 3 M→Z:** Deine neue Normalität — Nachbestellung/LRP + 1:1 (limitiert) + Weg zur Beraterin
 
 ## Status & nächste Schritte

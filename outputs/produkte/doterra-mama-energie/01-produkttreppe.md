@@ -106,11 +106,13 @@ Z  neue Normalität:  Energie zurück, hört auf ihren Körper, bestellt
 │  3. nach 21 Tagen sitzt die Routine → bleibt (Nachbestellung) │
 │                                                              │
 │ DAS PAKET (die 4 Bausteine der Perimenopause-Forschung):     │
-│  • BASIS-PAKET:  VMG (Mikronährstoffe) · PB Assist (Darm) ·   │
+│  ★ ANKER/HELD:  doTERRA Protein-Pulver — der tägliche Shake   │
+│    als sichtbares Morgen-Ritual (Patricias Favorit!)         │
+│    (genauer Produktname noch bestätigen)                     │
+│  • SUPPORTING:  VMG (Mikronährstoffe) · PB Assist (Darm) ·    │
 │    Omega 3 (+ Öle als Lifestyle-Layer)                       │
-│  • UPGRADE/ADD-ON:  doTERRA-Shake als Protein-Anker           │
-│    (genaues Produkt bestätigt Patricia)                      │
-│  → Protein-Fokus läuft sonst über Ernährung (40g-Frühstück)   │
+│  • Basis-Variante ohne Shake bleibt für die möglich, die's    │
+│    über Ernährung machen wollen (40g-Frühstück)              │
 │                                                              │
 │ DIE BEGLEITUNG (21 Tage, gratis dabei):                      │
 │  • täglich 1 kurzer Input (Sprachnotiz/Video)                │
@@ -240,7 +242,7 @@ Kern-Transformation (Sprung): B → M (Routine sitzt nach 21 Tagen)
 Learnings: 4 Bausteine (VMG/PB Assist/Omega3 + Protein) · Morgen-Ritual · Familienalltag
 Dauer: 21 Tage Begleitung · körperl. Veränderung 3–4 Monate (NICHT 21)
 Preis (CHF): Begleitung 0 · Geld via Paket-Bestellung + LRP
-Paket: Basis (VMG+PB Assist+Omega3) + Shake-Upgrade
+Paket: Anker = doTERRA Protein-Pulver (täglicher Shake) + VMG + PB Assist + Omega 3 · Basis-Variante ohne Shake möglich
 Format: Produktpaket + tägl. Input + Tracker + Telegram-Gruppe + Öl-Bot
 KI-Assistent: Öl-Bibliothek-Bot (live) + Menü-Bot
 Launch-Datum: TBD — ZUERST bauen
