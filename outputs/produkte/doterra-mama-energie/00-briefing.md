@@ -28,6 +28,7 @@ tags: [produkt, doterra]
 - [ ] Stufe 2: Paket-Inhalt final (Shake-Produkt bestätigen) + 21-Tage-Begleit-Plan Tag 1–21 + Tracker
 - [x] Stufe 1: 3-Tage-Kickstart komplett getextet ([02-freebie-3-tage-kickstart.md](02-freebie-3-tage-kickstart.md)) — Opt-in, 3 Tage, Brücke
 - [ ] Stufe 3: Retention-Rhythmus + 1:1-Rahmen
+- [x] KI-/Automatisierungs-Konzept (Freebie + 21 Tage, alles auto ausser Telegram-Gruppe) ([03-automatisierung-ki-konzept.md](03-automatisierung-ki-konzept.md))
 - [ ] Optional: Launch-/Content-Plan (Reels-Reichweite → Kickstart)
 
 ## Geklärt
