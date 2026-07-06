@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Der wichtigste Zeit-Hebel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --petrol: #12828c; --dunkelblau: #29556d; --creme: #f1ecdd; --text: #0c1c30; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #1a1a1a; font-family: "Source Sans 3", sans-serif; color: var(--text); padding: 40px; }
+      .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; margin: 40px auto; display: flex; flex-direction: column; padding: 100px 80px; }
+      .slide.bg-creme { background: var(--creme); color: var(--text); }
+      .slide.bg-petrol { background: var(--petrol); color: #fff; }
+      .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 30px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--petrol); margin-bottom: 36px; }
+      .bg-petrol .eyebrow { color: rgba(255,255,255,0.85); }
+      .footer { position: absolute; bottom: 50px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(12,28,48,0.55); letter-spacing: 0.08em; z-index: 5; }
+      .bg-petrol .footer { color: rgba(255,255,255,0.7); }
+
+      /* COVER — Template (Creme) */
+      .cover { justify-content: center; align-items: flex-start; text-align: left; }
+      .cover .kicker { font-family: "Source Sans 3"; font-weight: 700; font-size: 32px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--petrol); margin-bottom: 44px; }
+      .cover .hook { font-family: "Philosopher"; font-weight: 700; font-size: 96px; line-height: 1.06; color: var(--dunkelblau); }
+      .cover .hook .pop { color: var(--petrol); font-style: italic; }
+
+      .s2 { justify-content: center; }
+      .s2 .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 52px; line-height: 1.4; color: var(--text); }
+      .s2 .body .pop { color: var(--petrol); font-weight: 700; }
+
+      .baustein-petrol { justify-content: center; color: #fff; }
+      .baustein-petrol .headline { font-family: "Philosopher"; font-weight: 700; font-size: 84px; line-height: 1.1; color: #fff; margin-bottom: 34px; }
+      .baustein-petrol .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 46px; line-height: 1.4; color: #fff; }
+
+      .baustein-creme { justify-content: center; }
+      .baustein-creme .headline { font-family: "Philosopher"; font-weight: 700; font-size: 80px; line-height: 1.08; color: var(--dunkelblau); margin-bottom: 38px; }
+      .baustein-creme .headline .pop { color: var(--petrol); font-style: italic; }
+      .baustein-creme .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 46px; line-height: 1.4; color: var(--text); opacity: 0.95; }
+      .baustein-creme .body .pop { color: var(--petrol); font-weight: 700; }
+      .baustein-creme .list .item { display: flex; align-items: flex-start; gap: 26px; margin-bottom: 28px; }
+      .baustein-creme .list .item .num { font-family: "Philosopher"; font-weight: 700; font-size: 52px; color: var(--petrol); flex-shrink: 0; min-width: 58px; line-height: 1.05; }
+      .baustein-creme .list .item .item-text { font-family: "Source Sans 3"; font-weight: 500; font-size: 44px; line-height: 1.38; color: var(--text); padding-top: 4px; }
+
+      .s7 { justify-content: center; align-items: center; text-align: center; }
+      .s7 .big { font-family: "Philosopher"; font-weight: 700; font-style: italic; font-size: 120px; line-height: 1.05; color: var(--dunkelblau); margin-bottom: 44px; }
+      .s7 .body { font-family: "Source Sans 3"; font-weight: 600; font-size: 46px; line-height: 1.45; color: var(--text); max-width: 860px; }
+      .s7 .body .pop { color: var(--petrol); font-weight: 700; }
+    </style>
+  </head>
+  <body>
+
+    <div class="slide bg-creme cover">
+      <div class="kicker">Zeit fürs Business</div>
+      <div class="hook">Der wichtigste <span class="pop">Zeit-Hebel</span> — den fast jede Mama übersieht.</div>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme s2">
+      <p class="body">Und nein, es ist <span class="pop">nicht</span> mehr Disziplin. Und auch nicht das nächste Produktivitäts-Tool.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-petrol baustein-petrol">
+      <div class="eyebrow">Der Hebel</div>
+      <div class="headline">EIN festes Zeitfenster pro Woche</div>
+      <p class="body">Behandelt wie ein unverschiebbarer Termin — nicht wie das, was übrig bleibt.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Nicht irgendwann</div>
+      <div class="headline">Nicht <span class="pop">„wenn die Kinder schlafen"</span></div>
+      <p class="body">Nicht „wenn ich mal Luft hab". Sondern fix im Kalender — genauso ernst wie der Zahnarzt.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Warum das alles ändert</div>
+      <p class="body">Du kämpfst nicht mehr gegen deinen Alltag. Du hast einen <span class="pop">Platz, an dem dein Business wächst</span> — auch in einer chaotischen Woche.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">So richtest du's ein</div>
+      <div class="list">
+        <div class="item"><span class="num">1.</span><div class="item-text">Block <span style="color:var(--petrol);font-weight:700">fix in den Kalender</span></div></div>
+        <div class="item"><span class="num">2.</span><div class="item-text">Familie kurz Bescheid geben</div></div>
+        <div class="item"><span class="num">3.</span><div class="item-text">Handy in den anderen Raum</div></div>
+        <div class="item"><span class="num">4.</span><div class="item-text">60–90 Min reichen völlig</div></div>
+      </div>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme s7">
+      <div class="big">Speicher's</div>
+      <p class="body">…fürs nächste Mal, wenn deine Woche wieder überquillt — dann hast du den Hebel parat.</p>
+      <div class="footer"><span>@mumlifebalance</span><span></span></div>
+    </div>
+
+  </body>
+</html>

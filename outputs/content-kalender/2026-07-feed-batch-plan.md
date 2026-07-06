@@ -183,7 +183,7 @@ tags: [content]
 **Hooks = andere RWH-Sets als KW28** (Experiment, siehe Tracker unten). Neutral, kein „mehr in Stories".
 
 ### 🎨 Feed-Rhythmus
-`Mo (reaktiv, je nach Trend) · Di Foto · Mi Template Orange · Do Foto · Fr Template Petrol`
+`Mo (reaktiv, je nach Trend) · Di Foto · Mi Template Creme/Beige · Do Foto · Fr Template Petrol`
 Mo = Viral-Trend-Reel, Cover ergibt sich aus dem Clip. ABAB ab Di: Foto → Orange → Foto → Petrol. Falls Mo mit einem Foto-Still startet, Di auf ein Template ziehen, damit nicht 2 Fotos in Folge.
 
 ### Mo 14.7. — REEL · Viral-Trend (reaktiv) · 🟢 Reichweite
@@ -202,7 +202,7 @@ Mo = Viral-Trend-Reel, Cover ergibt sich aus dem Clip. ABAB ab Di: Foto → Oran
 ### Mi 16.7. — KARUSSELL · 🟢 Reichweite
 - **RWH-Säule:** 👩‍🏫 Mehrwert (Set 7: „Der wichtigste Hebel – den fast alle ignorieren")
 - **Hook (Cover):** „Der wichtigste Zeit-Hebel fürs Business — den fast jede Mama übersieht."
-- **Cover:** Template **Orange**
+- **Cover:** Template **Creme/Beige**
 - **CTA (Mehrwert → Speichern):** „Speicher's fürs nächste Mal, wenn deine Woche wieder überquillt."
 
 ### Do 17.7. — REEL · B-Roll · 🟢 Reichweite
