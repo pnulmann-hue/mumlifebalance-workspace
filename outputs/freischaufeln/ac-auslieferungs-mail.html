@@ -1,0 +1,88 @@
+<!-- ============================================================
+  Freischaufeln — AC-Auslieferungs-Mail (Mail 1)
+  ============================================================
+  In ActiveCampaign: Automation „Freischaufeln Auslieferung"
+  Trigger: Tag "Freischaufeln Lead" (bzw. Formular-Submit)
+  → diese Mail sofort senden.
+
+  VOR DEM EINSETZEN ERSETZEN:
+    [FREISCHAUFELN-URL]   → deine Vercel-URL (z.B. https://freischaufeln-xxxx.vercel.app)
+  AC-Merge-Tags %FIRSTNAME% / %EMAIL% bleiben stehen (füllt AC automatisch).
+  ============================================================ -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dein Business-Fenster wartet</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f0e6;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Dein Business-Fenster wartet — leg direkt los. &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f0e6;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+
+          <!-- HEADER -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);border-radius:16px 16px 0 0;padding:48px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding-bottom:20px;">
+                  <span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">Freischaufeln · dein Freebie</span>
+                </td></tr>
+                <tr><td>
+                  <h1 style="margin:0 0 16px 0;font-family:Georgia,serif;font-size:32px;font-weight:bold;color:#f1ecdd;line-height:1.25;">In 10 Minuten zu deiner ersten geschützten Business-Zeit</h1>
+                </td></tr>
+                <tr><td>
+                  <p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:rgba(241,236,221,0.72);line-height:1.5;">Ohne dass zuhause etwas liegen bleibt.</p>
+                </td></tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- BODY -->
+          <tr>
+            <td style="background-color:#ffffff;padding:40px;">
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.7;">Schön, dass du da bist, %FIRSTNAME%! 💛</p>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.7;">Du kennst das bestimmt: Du weisst genau, was du fürs Business tun müsstest — aber zwischen Wäscheberg, Znüni und dem Kind, das genau dann etwas braucht, wenn du dich endlich hinsetzen willst, kommst du einfach nicht dazu.</p>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.7;">Genau da setzt <strong>Freischaufeln</strong> an. In den nächsten 10 Minuten schauen wir gemeinsam an, was in deiner Woche wirklich anfällt, <strong>halbieren</strong> es — und schaufeln dir ein festes, geschütztes <strong>Zeitfenster fürs Business</strong> frei.</p>
+
+              <!-- Button -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+                <tr><td align="center">
+                  <a href="[FREISCHAUFELN-URL]/?e=%EMAIL%&n=%FIRSTNAME%" style="display:inline-block;background-color:#dc822e;color:#ffffff;text-decoration:none;font-family:Arial,sans-serif;font-weight:bold;font-size:16px;padding:16px 32px;border-radius:12px;">
+                    Jetzt Freischaufeln →
+                  </a>
+                </td></tr>
+              </table>
+
+              <!-- Info-Box -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+                <tr><td style="background-color:#e4f3f4;border-left:4px solid #12828c;border-radius:0 12px 12px 0;padding:20px 24px;">
+                  <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#12828c;text-transform:uppercase;letter-spacing:2px;">So funktioniert's</p>
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">3 kurze Schritte: deine Woche anschauen · halbieren (was darf weg, was delegierst du) · dein Business-Fenster festlegen. Am Ende hast du einen konkreten Plan, den du direkt nutzen kannst.</p>
+                </td></tr>
+              </table>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.7;">Nimm dir die 10 Minuten wirklich — es ist die beste Investition in deine Business-Zeit diese Woche.</p>
+
+              <p style="margin:24px 0 0 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.7;">Ich freu mich auf dich,<br>Patricia 💛</p>
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td style="background-color:#0c1c30;border-radius:0 0 16px 16px;padding:28px 40px;text-align:center;">
+              <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#f1ecdd;text-transform:uppercase;letter-spacing:1px;">MUMLIFEBALANCE · PATRICIA ULMANN</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:rgba(241,236,221,0.55);">Network + Onlinekurse für Mamas</p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

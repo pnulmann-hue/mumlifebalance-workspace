@@ -1,0 +1,75 @@
+<!-- ============================================================
+  Freischaufeln — WordPress-Anmeldeseite  (mumlifebalance.ch/freischaufeln)
+  ============================================================
+  So richtest du's ein (einmalig):
+  1. In ActiveCampaign ein Formular „Freischaufeln Anmeldung" anlegen
+     (Felder: Vorname + E-Mail + Datenschutz-Checkbox).
+     → Aktion: Tag „Freischaufeln Lead" setzen  +  Automation
+       „Freischaufeln Auslieferung" starten (schickt die Auslieferungs-Mail).
+  2. AC gibt dir den „Inline"-Embed-Code. Ersetze damit den Block
+     unten zwischen  <!-- AC-FORMULAR START -->  und  <!-- AC-FORMULAR ENDE -->.
+     (Wegen der WordPress-WAF NICHT das <script>-Embed nehmen, sondern
+      den Inline-HTML-Embed — genau wie beim Bio-Check.)
+  3. Diese ganze Datei als „Custom HTML"-Block in die WP-Seite einfügen.
+     Falls die WAF meckert (Fehler 510): den <style>-Block oben in den
+     WordPress-Customizer → „Zusätzliches CSS" verschieben.
+  ============================================================ -->
+
+<style>
+  .fs-lp{--petrol:#12828c;--dunkelblau:#29556d;--creme:#f1ecdd;--orange:#dc822e;--text:#0c1c30;
+    max-width:720px;margin:0 auto;padding:8px 18px 60px;color:var(--text);
+    font-family:"Source Sans 3",Arial,sans-serif;line-height:1.6;}
+  .fs-lp .hero{background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);
+    color:#f1ecdd;border-radius:20px;padding:44px 34px;text-align:center;margin-top:14px;}
+  .fs-lp .hero .eyebrow{font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:13px;color:#f1ecdd;opacity:.8;}
+  .fs-lp .hero h1{font-family:Georgia,"Philosopher",serif;font-size:38px;line-height:1.15;margin:12px 0 14px;color:#f1ecdd;}
+  .fs-lp .hero p{font-size:18px;opacity:.9;margin:0;}
+  .fs-lp .intro{font-size:18px;margin:30px 0 8px;}
+  .fs-lp .benefits{list-style:none;padding:0;margin:20px 0;}
+  .fs-lp .benefits li{padding:12px 0 12px 38px;position:relative;font-size:17px;border-bottom:1px solid rgba(41,85,109,.12);}
+  .fs-lp .benefits li:before{content:"✓";position:absolute;left:0;top:11px;width:26px;height:26px;
+    background:var(--petrol);color:#fff;border-radius:50%;text-align:center;line-height:26px;font-weight:700;font-size:15px;}
+  .fs-lp h2{font-family:Georgia,"Philosopher",serif;color:var(--dunkelblau);font-size:26px;margin:34px 0 6px;text-align:center;}
+  .fs-lp .sub{text-align:center;opacity:.85;margin-bottom:6px;}
+</style>
+
+<div class="fs-lp">
+
+  <div class="hero">
+    <div class="eyebrow">Kostenlos · in 10 Minuten</div>
+    <h1>Schaufel dir dein Business-Fenster frei</h1>
+    <p>Aus deinem Familien-Chaos ein echtes Zeitfenster fürs Business — ohne dass zuhause etwas liegen bleibt.</p>
+  </div>
+
+  <p class="intro">Du weisst genau, was du fürs Business tun müsstest. Aber zwischen Wäscheberg, Znüni und dem Kind, das genau dann etwas braucht, kommst du einfach nicht dazu. Kennst du, oder?</p>
+
+  <p>Das liegt nicht an zu wenig Disziplin. Es fehlt dir ein festes, geschütztes Zeitfenster — und genau das schaufeln wir jetzt gemeinsam frei. In 3 kurzen Schritten:</p>
+
+  <ul class="benefits">
+    <li>Du siehst auf einen Blick, was in deiner Woche wirklich alles anfällt (auch der unsichtbare Mental Load).</li>
+    <li>Wir halbieren die Liste — was darf weg, was delegierst du, was legst du clever zusammen.</li>
+    <li>Am Ende steht dein festes Business-Fenster, das du behandelst wie einen Termin mit einer Kundin.</li>
+  </ul>
+
+  <h2>Hol dir Freischaufeln — gratis</h2>
+  <p class="sub">Trag dich ein, dann kommt dein persönlicher Link direkt per Mail.</p>
+
+  <!-- AC-FORMULAR START — hier den Inline-Embed deines AC-Formulars „Freischaufeln Anmeldung" einsetzen -->
+  <!--
+    (Platzhalter — ersetzen. Struktur wie beim Bio-Check-Formular:
+     <form method="POST" action="https://mumlifebalance.activehosted.com/proc.php" ...>
+       <input type="hidden" name="u" value="[NEUE-FORM-ID]" />
+       <input type="hidden" name="f" value="[NEUE-FORM-ID]" />
+       <input type="hidden" name="or" value="[NEUER-OR-TOKEN]" />
+       ... Vorname + E-Mail + Datenschutz + Submit „Freischaufeln kostenlos holen 🕒" ...
+     </form>)
+  -->
+  <div style="max-width:500px;margin:24px auto 0;background:#f1ecdd;border-radius:18px;padding:34px 30px;text-align:center;font-family:Arial,sans-serif;">
+    <p style="margin:0;color:#29556d;font-weight:700;">➜ Hier kommt dein ActiveCampaign-Formular rein.</p>
+    <p style="margin:8px 0 0;font-size:14px;color:#0c1c30;opacity:.75;">(Inline-Embed aus AC einsetzen — siehe Kommentar oben.)</p>
+  </div>
+  <!-- AC-FORMULAR ENDE -->
+
+  <p style="text-align:center;font-size:13px;opacity:.6;margin-top:22px;">Kein Spam. Nur dein Freischaufeln-Link + ab und zu ehrliche Post rund ums Mama-Business. Abmeldung jederzeit.</p>
+
+</div>

@@ -43,8 +43,59 @@ Kein Heilversprechen, keine Krankheits-Aussage, keine doTERRA-Pyramide namentlic
 
 ---
 
-## Quellen
+## Quellen (Runde 1)
 
 - [TK-/Mama-Burnout-Signale — Easy Family](https://easy-family.de/selbstfuersorge-mama-raus-aus-der-dauererschoepfung-rein-in-mehr-energie/) · [Lebensbrücke „Mama Burnout"](https://blog.lebensbruecke.de/start/mama-burnout-das-sind-die-symptome-einer-ueberforderten-mutter)
 - [Wechseljahre unter 40 — Klimaktoplant](https://www.klimaktoplant.de/wechseljahre/wechseljahre-unter-40) · [Menopause mit 30 — Fertilly](https://fertilly.com/de/menopause-mit-30-meine-persoenliche-geschichte/) · [Erschöpfung in den Wechseljahren — xbyx](https://xbyx.de/blogs/magazin/erschoepfung-in-den-wechseljahren)
 - [Markt ätherische Öle 2026 (CAGR ~11%) — Fortune Business Insights](https://www.fortunebusinessinsights.com/industry-reports/essential-oils-market-101063) · [Aromatherapie-Hausapotheke-Kurs — WIFI NÖ](https://www.noe.wifi.at/kurs/13005x-teh-aetherische-oele-fundiert-anwenden)
+
+---
+
+# 🔎 Runde 2 — Vertiefung (Painpoint schärfen + Was-hilft + Modell)
+
+**Anlass:** Patricia will ein **Produktpaket + zeitlich begrenzte Begleitung** (Get-Your-Routine-Modell: „ich bestelle das Paket und werde 21 Tage begleitet"). Freebie muss „Wumms" machen, nicht „nur nettes eBook".
+
+## DER eine grösste Painpoint (geschärft, priorisiert)
+
+> **„Ich schlafe — und wache trotzdem gerädert auf. Ich komme einfach nicht durch den Tag."**
+> Erschöpfung TROTZ ausreichend Schlaf = das #1-Symptom über alle Quellen. Nicht „zu wenig Schlaf", sondern: der Körper regeneriert nachts nicht mehr richtig (leichterer/unterbrochener Schlaf → weniger Reparatur).
+
+**Painpoint-Rangordnung (Perimenopause/Mama 35–45):**
+1. **Erschöpfung trotz Schlaf** (Kern) — deckt sich exakt mit Patricias Wendepunkt (Nachmittags-Müdigkeit, schlechter Schlaf → nach Protein: tiefer Schlaf, erholtes Aufwachen)
+2. Stimmungsschwankungen / Reizbarkeit / innere Unruhe
+3. Gewichtszunahme v.a. am Bauch
+4. Haare/Haut-Veränderungen, Gelenkschmerzen
+
+→ **Hook-Zentrum:** *„Warum du erschöpft aufwachst, obwohl du 8 Stunden im Bett warst."* (nicht das vage „mehr Energie")
+
+## Was konkret hilft — 1:1-Deckung mit Patricias Routine
+
+Perimenopause-Ernährungsforschung: **keine Einzel-Pille, sondern eine Kombi aus 4 Bausteinen** — deckungsgleich mit Patricias echten Täglichen:
+
+| Empfehlung Forschung | Patricias Baustein | doTERRA |
+|---|---|---|
+| Protein 1,0–1,2 g/kg (Muskeln, Energie, Sättigung) | Protein-Fokus (Game-Changer) | Ernährung + optional Shake |
+| Ballaststoffe / Darmgesundheit (bindet überschüssige Hormone) | Darm-Hormon-Modell | **PB Assist** |
+| Omega-3 (entzündungsmodulierend, Energie) | tägliches Omega 3 (auch Kids) | **Omega 3** |
+| Mikronährstoffe (Vit D, Magnesium, B12, Zink, Selen) | tägliche Basis | **VMG** |
+| „Regelmässigkeit schlägt Perfektion" | Achtsamkeit im Alltag | 21-Tage-Logik |
+
+→ **Strategischer Wert:** unabhängige Wissenschaft empfiehlt exakt Patricias gelebte Routine. Stärkster, ehrlichster Beweis für die Begleitung. Compliance-safe, weil als *ihre* Routine + allgemeine Ernährung geframt (nie „heilt Hormone").
+
+## Modell-Validierung: Get Your Routine / 21-Tage-Challenge
+
+- **21 Tage = Gewohnheits-Fenster** — danach sinkt innerer Widerstand deutlich, Routine etabliert.
+- **GYR-Bausteine:** Produkt/Ritual-Start (Power-Tea → bei Patricia Protein-Frühstück + Supplements) + täglich kurzer Video-/Sprach-Input + einfach umsetzbar + persönliche Begleitung + Follow-up nach 21 Tagen.
+- **Warum Supplement-Challenges konvertieren (Herbalife-Modell):** (1) klarer Zeitrahmen mit Wochen-Themen, (2) emotionaler Painpoint-Bezug, (3) Einfachheit + sichtbarer Fortschritt, (4) alles-in-einem-Support (Aufgaben, Rezepte, Journaling, Tracker). = greifbares Produkt + Struktur + Emotion + Begleitung.
+- **Schweizer Markt-Beleg:** GYR läuft bei Madlaina Fausch / EmpowermentFlow — Patricias exakte Zielgruppe & Region.
+
+## Freebie-mit-Wumms-Prinzip
+
+Wumms = die Frau **spürt in 3 Tagen einen echten Unterschied** (Erlebnis), statt ein PDF zu lesen (Information). → **3-Tage-Energie-Kickstart** (iss 3 Tage wie Patricia seit dem Wendepunkt) als Erlebnis-Freebie mit nahtloser Brücke ins 21-Tage-Paket. Genau so nutzen GYR/Herbalife den Gratis-Einstieg (Tina Halder: gratis Get-Fit-Challenge → Programm).
+
+## Quellen (Runde 2)
+
+- [Perimenopause Symptome & was hilft — DocMorris](https://www.docmorris.de/ratgeber/magazin/wohlfuehlen/perimenopause) · [Erschöpfung ab 40 / Perimenopause — spermidineLIFE](https://spermidinelife.com/de-cz/blogs/articles/keine-energie-mehr-mit-anfang-40-liegt-es-an-den-hormonen-ursachen-fur-erschopfung-in-der-perimenopause-verstehen) · [Menopause-Zentrum](https://menopause-zentrum.com/perimenopause-bedeutung-und-auswirkungen-fuer-frauen-ab-37-jahren/)
+- [Ernährung Wechseljahre: Protein/Omega-3/Darm — Ernährungsberatung](https://www.ernaehrungsberatung-bei-autoimmunkrankheiten.de/ernaehrungsmagazin/ernaehrung-in-den-wechseljahren) · [Wichtige Vitamine in den Wechseljahren — xbyx](https://xbyx.de/blogs/magazin/wichtige-vitamine-in-den-wechseljahren)
+- [Get Your Routine — getyourroutine.ch](https://www.getyourroutine.ch/get-your-routine) · [Get Your Routine — EmpowermentFlow](https://empowermentflow.ch/get-your-routine/) · [21-Tage-Gewohnheitsregel — Lykke Life](https://www.alykkelife.com/gewohnheiten-aendern-so-gehts-mit-der-21-tage-bzw-90-tage-regel/)
+- [Herbalife 21-Tage-Challenge (Modell-Referenz) — MyHerbal](https://myherbal.at/herbalife-21-tage-challenge-power/) · [Gratis 21-Tage-Challenge als Lead — Tina Halder](https://tina-halder.com/get-fit-challenge/)
