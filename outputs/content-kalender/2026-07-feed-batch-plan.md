@@ -182,14 +182,15 @@ tags: [content]
 **Wochen-Kernschmerz:** „Ich komm neben der Familie einfach nicht zum Business." · **Alle Reichweite** (Freischaufeln noch im Bau → **kein** Freebie-Keyword diese Woche, Verkauf via Stories/MBA) · **Story parallel:** Kurs 2 Mama-CEO.
 **Hooks = andere RWH-Sets als KW28** (Experiment, siehe Tracker unten). Neutral, kein „mehr in Stories".
 
-### 🎨 Feed-Rhythmus (Anschluss an KW28-Fr = Foto → KW29 startet mit Template)
-`Mo Template Dunkelblau · Di Foto · Mi Template Orange · Do Foto · Fr Template Petrol`
-2 neue Fotos (Di, Do), 3 rotierende Template-Farben. Keine Petrol-Lead-Kollision (diese Woche kein Lead).
+### 🎨 Feed-Rhythmus
+`Mo (reaktiv, je nach Trend) · Di Foto · Mi Template Orange · Do Foto · Fr Template Petrol`
+Mo = Viral-Trend-Reel, Cover ergibt sich aus dem Clip. ABAB ab Di: Foto → Orange → Foto → Petrol. Falls Mo mit einem Foto-Still startet, Di auf ein Template ziehen, damit nicht 2 Fotos in Folge.
 
-### Mo 14.7. — REEL · Talking-Head · 🟢 Reichweite
-- **RWH-Säule:** 📖 Storytelling (Set 3: „Das Peinliche? Ich war felsenfest überzeugt…")
-- **Hook:** „Das Peinliche? Ich war felsenfest überzeugt, dass ich einfach nur disziplinierter sein muss, um neben vier Kindern Zeit fürs Business zu finden."
-- **Cover:** Template **Dunkelblau** (Text-Cover, Video = du sprichst)
+### Mo 14.7. — REEL · Viral-Trend (reaktiv) · 🟢 Reichweite
+- **Format:** Kein fixes Talking-Head — **du wartest auf ein passendes virales Reel-Format/Audio** (Zeit-/Mama-Business-Thema) und legst deinen Hook als Text-Overlay drauf. Fallback: kommt bis Mo kein Trend, nutzt du den Hook als kurzes TH oder ziehst den Post nach hinten.
+- **RWH-Säule (Message):** 📖 Storytelling (Set 3: „Das Peinliche? Ich war felsenfest überzeugt…")
+- **Hook (als Overlay/Aufhänger):** „Das Peinliche? Ich war felsenfest überzeugt, dass ich einfach nur disziplinierter sein muss, um neben vier Kindern Zeit fürs Business zu finden."
+- **Cover:** je nach Trend (Still aus dem Clip) — **kein fixer Render** von mir
 - **CTA (Storytelling → Folgen):** „Wenn du dich grad wiedererkennst — bleib hier, hier bist du richtig."
 
 ### Di 15.7. — REEL · B-Roll · 🟢 Reichweite
@@ -216,7 +217,7 @@ tags: [content]
 - **Cover:** Template **Petrol** (Reach-Post, kein Lead → Petrol ok)
 - **CTA (Identifikation → Folgen):** „Erkennst du dich? Folg mir, hier reden wir Klartext übers Mama-Business."
 
-**KW29-Check:** 2 Karussell (Mi, Fr) · 3 Reels (Mo TH, Di + Do B-Roll) · 0 Keyword (kein Freebie) · alles Reichweite · **5 andere RWH-Sets als KW28**. ✅
+**KW29-Check:** 2 Karussell (Mi, Fr) · 3 Reels (Mo Viral-Trend/reaktiv, Di + Do B-Roll) · 0 Keyword (kein Freebie) · alles Reichweite · **5 andere RWH-Sets als KW28**. ✅
 
 ### ✍️ KW29-Captions (postfertig, neutral, kein Story-CTA)
 
@@ -284,7 +285,7 @@ Ziel: über die Wochen erkennen, welche Reichweitenherz-Muster bei der Zielgrupp
 | Woche | Mo | Di | Mi | Do | Fr |
 |---|---|---|---|---|---|
 | **KW28** (Sichtbarkeit) | Storytelling S5 | Identifikation POV S2/4 | Mehrwert S2 (90%) | Positionierung S4 | Mehrwert S4 (grösster Fehler) |
-| **KW29** (Zeit) | Storytelling **S3** (peinlich) | Identifikation **S1** (erklär mir) | Mehrwert **S7** (der eine Hebel) | Positionierung **S1** (kein Wundermittel) | Identifikation **S8** (47 Podcasts/POV) |
+| **KW29** (Zeit) | Storytelling **S3** (Viral-Trend-Reel) | Identifikation **S1** (erklär mir) | Mehrwert **S7** (der eine Hebel) | Positionierung **S1** (kein Wundermittel) | Identifikation **S8** (47 Podcasts/POV) |
 | Performance | _nachtragen_ | _nachtragen_ | _nachtragen_ | _nachtragen_ | _nachtragen_ |
 
 → So decken wir Woche für Woche neue Muster ab und finden das, was **richtig zündet**.
