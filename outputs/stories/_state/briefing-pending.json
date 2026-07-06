@@ -1,67 +1,51 @@
 {
-  "datum": "2026-07-06",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": true,
-        "phase": "verkaufsphase",
-        "tag_im_launch": 22,
-        "vorlage": "Beweise / Social Proof",
-        "titel": "Wer im ersten Wochenende dabei ist",
-        "story_ziel": "KEIN 'Cart schliesst heute' — Cart läuft weiter bis 27.7. Stattdessen: erste Käuferinnen anonym zeigen (Rudeltier), Momentum aus dem Cart-Open-Weekend. Wer schon Ja gesagt hat.",
-        "kaeufertyp": "Rudi",
-        "cta": "Cart ist offen — Link in Story / DM MBA",
-        "cta_keyword": "MBA"
-      },
-      "kontext_snapshot": {
-        "kw": 28,
-        "wochentag": "Montag",
-        "datum": "2026-07-06"
-      },
-      "gesendet_am": "2026-07-06T04:42:01.050Z",
-      "telegram_message_id": 839,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Lehrreich / Mini-Training",
-        "titel": "Lehrreich / Mini-Training",
-        "story_ziel": "Ein konkretes, sofort umsetzbares Learning aus Patricias Wissen — screenshotbar.",
-        "kaeufertyp": "Willi",
-        "cta": "passend zum Thema (BIO / STORY / ECHT1)",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 28,
-        "wochentag": "Montag",
-        "datum": "2026-07-06"
-      },
-      "gesendet_am": "2026-07-06T04:42:01.837Z",
-      "telegram_message_id": 840,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "mentoring",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "Bio-Check",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": null,
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": {
+    "datum": "2026-07-06",
+    "phase": "verkaufsphase",
+    "julia_vorlage": "social-proof",
+    "titel": "Wer im ersten Wochenende dabei ist",
+    "story_ziel": "KEIN 'Cart schliesst heute' — Cart läuft weiter bis 27.7. Stattdessen: erste Käuferinnen anonym zeigen (Rudeltier), Momentum aus dem Cart-Open-Weekend. Wer schon Ja gesagt hat.",
+    "kaeufertyp": "Rudi",
+    "cta": "Cart ist offen — Link in Story / DM MBA",
+    "cta_keyword": "MBA",
+    "profil": "mentoring"
+  },
+  "launch_vorlage": {
+    "name": "Beweise / Social Proof",
+    "phase": "verkaufsphase",
+    "ziel": "Erfolgsgeschichte (eigene oder Kundin) zeigen — Glaubwürdigkeit + FOMO.",
+    "julia_anleitung": "Erzähle die Erfolgsgeschichte eines Kunden oder deine eigene. Was hat die Person getan? Zeige Screenshots/Nachrichten (anonym ausser du darfst verlinken). Erzeugt FOMO.",
+    "kaeufertyp": "Zoe + Rudi",
+    "slide_bogen": "Hook → die Ausgangslage (kennt sie wieder) → was sie getan hat → das Ergebnis → 'auch für dich möglich' + CTA"
+  },
+  "kontext_snapshot": {
+    "kw": 28,
+    "wochentag": "Montag",
+    "datum": "2026-07-06"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-07-06T08:47:50.934Z",
+  "telegram_message_id": 841,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
