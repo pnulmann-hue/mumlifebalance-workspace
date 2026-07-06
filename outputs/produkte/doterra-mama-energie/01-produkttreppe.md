@@ -2,293 +2,266 @@
 tags: [produkt, doterra]
 ---
 
-# doTERRA-Produkttreppe — „Mama, zurück zu deiner Energie"
+# doTERRA-Produkttreppe — „Die 21-Tage-Energie-Routine"
 
-**Erstellt:** 2026-06-19 · **Modus:** /produkt doterra → Produkttreppe entwerfen
-**Geld-Modell (Patricia-Entscheidung):** nur doTERRA-Provision · Begleitung gratis
-**Top-End:** 1:1-Begleitung (gratis, limitierte Plätze)
-**Umsatzziel dieser Treppe:** 12'000–15'000 CHF/Jahr (gleichwertige zweite Säule)
-**Kernthema:** eng — Energie & Hormone zurück nach dem Funktionsmodus
-**Markt-Beleg:** [00-markt-research.md](00-markt-research.md)
-**Zielgruppe (1 Satz):** Mamas 30–45 in der Schweiz/DACH, die die Kleinkinderphase hinter sich haben und nach Jahren im Funktionsmodus merken, dass ihre Energie weg ist — und endlich wieder hinschauen wollen.
+**Erstellt:** 2026-06-19 · **Überarbeitet:** 2026-07-06 (Get-Your-Routine-Modell)
+**Modus:** /produkt doterra → Produkttreppe entwerfen
+**Positionierung:** Hormone natürlich begleiten — Mamas raus aus dem Funktionsmodus, zurück zu echter Energie
+**Geld-Modell:** nur doTERRA-Provision · Begleitung gratis (im Paket enthalten)
+**Angebots-Modell:** Produktpaket + 21-Tage-Begleitung (wie *Get Your Routine* — Paket bestellen → 21 Tage begleitet werden)
+**Umsatzziel dieser Treppe:** 12'000–15'000 CHF/Jahr
+**Markt-Beleg:** [00-markt-research.md](00-markt-research.md) (Runde 2)
 
 ---
 
-## ⚙️ Wichtig: Das ist eine andere Treppe als beim Mentoring
+## 🎯 DER Painpoint, um den sich ALLES dreht
 
-Bei deinen Kursen verdienst du am **Preis des Produkts**. Hier verdienst du an der **doTERRA-Provision** — also dann, wenn eine Mama ein Starterset holt und monatlich nachbestellt. Heisst:
+> **„Ich schlafe — und wache trotzdem gerädert auf. Ich komme einfach nicht durch den Tag."**
 
-- Die „Stufen" sind keine Preis-Stufen, sondern **Vertiefungs-Stufen** (wie tief geht die Mama in den Lifestyle).
-- Geld fliesst nur an zwei Punkten: **erster Produkt-Kauf** und **wiederkehrende Monats-Bestellung**.
-- Deine **gratis Begleitung ist der Motor** — sie sorgt dafür, dass aus „Interessentin" eine „Kundin" wird und dass die Kundin bleibt.
+Erschöpfung *trotz* genug Schlaf = das #1-Symptom bei Frauen 35–45 (Markt-Research Runde 2). Genau Patricias Wendepunkt. Alle Stufen zahlen auf diesen einen Satz ein.
 
-→ Darum ist diese Treppe gleichzeitig dein Weg zum **Gold-Rang** (mehr treue Kundinnen + wer selbst aufbaut = Team-Volumen).
+**Hook-Zentrum:** *„Warum du erschöpft aufwachst, obwohl du 8 Stunden im Bett warst."*
+
+---
+
+## 🌿 Das Säulen-Modell (Patricias Wunsch: verschiedene Säulen)
+
+| Säule | Thema | Kern-Angebot | Status |
+|---|---|---|---|
+| **Säule 1** | Hormone natürlich begleiten / Energie zurück | **Die 21-Tage-Energie-Routine** (Paket + Begleitung) | 👉 wird jetzt gebaut |
+| **Säule 2** | Familien-Hausapotheke | eigenes Paket + Mini-Begleitung (Öle für die ganze Familie, Kids, Erkältungszeit) | 🅿️ geparkt für später — eigene Treppe, gleiches Modell |
+
+→ **Erst Säule 1 fertig machen**, dann Säule 2. (Patricias Profil: Tendenz „100 Sachen gleichzeitig starten" — hier bewusst nacheinander.)
+
+---
+
+## ⚙️ Warum das eine andere Treppe ist als beim Mentoring
+
+Geld kommt nicht aus einem Kurs-Preis, sondern aus der **doTERRA-Provision**: dann, wenn eine Mama das **Produktpaket bestellt** und danach **monatlich nachbestellt**. Die **21-Tage-Begleitung ist gratis dabei** — sie ist der Grund, warum aus „Interessentin" eine „Kundin" wird und warum die Kundin bleibt.
+
+💶 **Geld-Punkte:** Bestellung des 21-Tage-Pakets (Haupt-Provision) · monatliche Nachbestellung (Recurring) · Team-Volumen (wenn eine Kundin selbst startet → Gold-Rang-Weg).
 
 ---
 
 ## A → B → E → M → Z — die Reise einer Mama
 
 ```
-A  Mama im Funktionsmodus. Schiebt die Erschöpfung weg.
+A  Mama im Funktionsmodus. Wacht erschöpft auf, funktioniert trotzdem.
    „Ist halt so. Ich hab keine Zeit für mich."
 
-B  nach dem 0€-Check:  „Moment — meine Müdigkeit hat einen GRUND.
-   Das ist nicht Schwäche, das ist mein Körper der ruft."
+B  nach dem 3-Tage-Kickstart:  Sie hat 3 Tage lang gegessen wie Patricia
+   — und SPÜRT morgens einen Unterschied. „Moment… da ist echt was dran."
 
-E  nach dem ersten Schritt:  Sie hat den ersten echten Schritt gemacht
-   (Hormontest ODER erstes Produkt-Erlebnis) statt nur weiterzulesen.
+E  Start der 21-Tage-Routine:  Sie bestellt das Paket, richtet ihr
+   Morgen-Ritual ein, ist drin. Erste Woche geschafft.
 
-M  nach dem Hausapotheke-Start:  Sie lebt ihre Energie-Routine, baut
-   ihre Hausapotheke auf, spürt nach 3–4 Monaten den Unterschied.
+M  nach 21 Tagen:  Routine sitzt. Sie wacht erholter auf, kennt ihre
+   Bausteine, hat's in den Familienalltag integriert.
 
-Z  dauerhaft draussen:  Energie zurück, hört auf ihren Körper, lebt die
-   Routine als Selbstverständlichkeit — und gibt sie weiter (Familie /
-   eigenes kleines Standbein). = deine treueste Kundin / nächste Beraterin.
+Z  neue Normalität:  Energie zurück, hört auf ihren Körper, bestellt
+   selbstverständlich nach — und gibt es weiter (Familie / eigenes
+   kleines Standbein). = deine treueste Kundin / nächste Beraterin.
 ```
-
-💶 **Geld-Punkte:** Stufe 2 (kleiner erster Kauf) · Stufe 3 (Starterset + erste Monats-Bestellung = Hauptprovision) · Stufe 4 (wiederkehrend + Team).
 
 ---
 
-## STUFE 1 — 0€ Einstieg · A → B
+## STUFE 1 — 0€ · Der 3-Tage-Energie-Kickstart · A → B  🔥 WUMMS-Freebie
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│ Titel (Arbeitstitel): „Müde-Mama-Check — welcher Energie-Typ  │
-│   bist du?"  (3-Minuten-Selbsttest)                           │
-│ Alternativ-Titel: „Der 3-Minuten-Energie-Check für Mamas im   │
-│   Funktionsmodus"                                             │
+│ Titel: „Der 3-Tage-Energie-Kickstart — iss 3 Tage wie ich,    │
+│   seit ich mit 36 meinen Wendepunkt hatte"                    │
 │                                                              │
-│ Format:    9-Fragen-Quiz (Single-Page) ODER das bestehende    │
-│            Energie-Padlet als Einstieg                        │
-│ Status:    Quiz in Planung (plans/2026-04-21-freebie-quiz-     │
-│            regenerations-typ.md) · Padlet ist live            │
-│ Keyword:   ENERGIE  (ManyChat → AC Liste 18 doTERRA Interess.)│
+│ Format:    Erlebnis-Freebie (kein PDF-Grab): 3 Tage geführt   │
+│            per Telegram/Mail — 1 kurzer Impuls/Tag            │
+│ Inhalt/Tag: • Protein-Frühstück (dein 40g-Prinzip, 1 Rezept)  │
+│            • 1 Mini-Ritual (Wasser/Bewegung/Atem)             │
+│            • 1 Öl-Anwendung (Lifestyle, kein Heilversprechen)  │
+│ Keyword:   ENERGIE (ManyChat → AC Liste 18 doTERRA Interess.) │
 │                                                              │
-│ Painpoint: „Ich bin ständig müde und denk, ich bin halt       │
-│            schwach / muss härter funktionieren."             │
-│ Sprung A→B: Nach 3 Minuten versteht sie — ihre Erschöpfung    │
-│            hat einen Grund (Hormone / Nährstoffe / Cortisol), │
-│            das ist kein Charakterfehler.                     │
-│ Brücke zu Stufe 2: Jedes Typ-Ergebnis endet mit „dein erster  │
-│            konkreter Schritt" → führt in die gratis Mini-     │
-│            Begleitung.                                        │
-│ Geld:      0 CHF · Ziel: X neue Interessentinnen/Monat auf    │
-│            AC-Liste 18                                        │
+│ Painpoint: „Ich wach erschöpft auf und komm nicht durch       │
+│            den Tag — und glaub, ich bin halt schwach."       │
+│ Sprung A→B: Sie SPÜRT in 3 Tagen einen Unterschied → „da ist  │
+│            was dran, das ist nicht nur ein Ratgeber."        │
+│ 💶 Geld:   0 CHF · Motor: warme, überzeugte Leads für Stufe 2  │
+│ Brücke:    „Wenn schon 3 Tage was bewegen — stell dir 21 vor. │
+│            Genau dafür gibt's meine 21-Tage-Routine."         │
 └──────────────────────────────────────────────────────────────┘
 ```
 
-**Warum Quiz statt PDF:** Typ-Tests sind 2026 das stärkste 0€-Format im Wellness-Funnel (Markt-Research). Die Mama bekommt sofort ein „das bin ja ICH"-Erlebnis statt noch ein PDF, das sie nie öffnet.
+**Warum Erlebnis statt eBook:** Wumms entsteht durch ein *gefühltes* Resultat, nicht durch Information. Die Frau erlebt einen Mini-Win → sie glaubt dir → sie will die Vollversion. (Genau so nutzen Get Your Routine / Herbalife den Gratis-Einstieg.)
 
 ---
 
-## STUFE 2 — Erster Schritt · B → E
+## STUFE 2 — Die 21-Tage-Energie-Routine · B → E → M  ⭐ KERN-ANGEBOT / HAUPT-GELD-PUNKT
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│ Titel: „Dein erster Schritt raus aus dem Funktionsmodus"      │
-│   (gratis Mini-Begleitung, 1 Woche)                          │
+│ Titel (Arbeitstitel): „Die 21-Tage-Energie-Routine"          │
+│   (Produktpaket + 21 Tage Begleitung — Get-Your-Routine-Stil) │
 │                                                              │
-│ Format:    Telegram-Mini-Serie ODER Padlet-Onboarding —       │
-│            7 kurze Impulse: hinschauen statt wegdrücken       │
-│ Inhalt:    Deine Wendepunkt-Story als roter Faden +           │
-│            Achtsamkeits-Fragen (Darm/Bewegung/Cortisol/Schlaf)│
-│            + Einladung zum Hormontest-Gedanken                │
-│ Begleitung: GRATIS (das ist der Magnet)                       │
+│ SO LÄUFT'S (wie GYR):                                        │
+│  1. Kundin bestellt dein PRODUKTPAKET  →  💶 Haupt-Provision   │
+│  2. bekommt automatisch die 21-TAGE-BEGLEITUNG dazu (gratis)  │
+│  3. nach 21 Tagen sitzt die Routine → bleibt (Nachbestellung) │
 │                                                              │
-│ Painpoint: „Ich hab den Test gemacht und weiss jetzt mein     │
-│            Typ — aber was mach ich JETZT damit?"             │
-│ Sprung B→E: Sie macht den ersten echten Schritt — entweder    │
-│            den Hormontest-Gedanken ernst nehmen ODER ihr      │
-│            erstes kleines Produkt-Erlebnis (ein Hero-Öl /     │
-│            ein Einstiegsprodukt) — statt nur weiterzulesen.   │
-│ 💶 Geld:   erster kleiner Produkt-Kauf möglich (Retail /      │
-│            Vorteilskunde) — kleiner Provisions-Punkt          │
-│ Brücke zu Stufe 3: „Wenn du gemerkt hast, da ist was dran —   │
-│            so baust du dir deine eigene Hausapotheke auf."    │
+│ DAS PAKET (die 4 Bausteine der Perimenopause-Forschung):     │
+│  • BASIS-PAKET:  VMG (Mikronährstoffe) · PB Assist (Darm) ·   │
+│    Omega 3 (+ Öle als Lifestyle-Layer)                       │
+│  • UPGRADE/ADD-ON:  doTERRA-Shake als Protein-Anker           │
+│    (genaues Produkt bestätigt Patricia)                      │
+│  → Protein-Fokus läuft sonst über Ernährung (40g-Frühstück)   │
+│                                                              │
+│ DIE BEGLEITUNG (21 Tage, gratis dabei):                      │
+│  • täglich 1 kurzer Input (Sprachnotiz/Video)                │
+│  • Wochen-Themen (Wo.1 Ankommen · Wo.2 dranbleiben ·          │
+│    Wo.3 Routine sitzt)                                        │
+│  • Morgen-Ritual + Protein-Frühstück + Öl-Anwendung          │
+│  • Tracker + Telegram-Gruppe (Sisterhood) + dein Öl-Bot       │
+│                                                              │
+│ Painpoint: „Ich will's angehen, weiss aber nicht WO anfangen  │
+│            — und hab Angst, Geld zu verbrennen für Zeug,      │
+│            das ich dann eh nicht durchziehe."                │
+│ Sprung B→M: Aus „3 Tage gespürt" wird eine sitzende Routine — │
+│            sie wacht nach 3 Wochen erholter auf und weiss,    │
+│            wie sie's im Familienalltag hält.                 │
+│ Zeitlinie: die 21 Tage bauen die GEWOHNHEIT. Die grosse       │
+│            körperliche Veränderung braucht 3–4 Monate         │
+│            (Patricias echte Zeitlinie) — ehrlich so sagen,    │
+│            NIE „in 21 Tagen alles gut".                       │
+│ 💶 Geld:   ⭐ Paket-Bestellung = Haupt-Provision + Basis-LRP   │
+│ Brücke:    „Willst du drüber hinaus dranbleiben? Ein paar      │
+│            Plätze begleite ich enger — 1:1."                  │
 └──────────────────────────────────────────────────────────────┘
 ```
 
-**Compliance-Anker:** Frame durchgängig „bei mir war es…" / „mein Ansatz". Kein „das hilft gegen". Der Hormontest-Verweis geht an Hausarzt / Naturheilpraktikerin (ohne Namen).
+**Ehrlichkeits-Anker (wichtig):** Die 21 Tage etablieren die *Routine/Gewohnheit* — nicht „Hormone in 21 Tagen repariert". Deine echte Veränderung war 3–4 Monate. So kommunizieren, sonst verbrennst du Vertrauen. „Heilung braucht Zeit"-Tonalität.
+
+**Compliance:** Paket-Name ergebnis-/routine-orientiert („Energie-Routine"), NICHT „Hormonpaket" (wäre Heilversprechen). Die Hormon-Sprache lebt in *deinen Stories als deine Erfahrung* („mein Progesteron war im Keller"), nie auf dem Produkt-Etikett. Medizin-Ebene → Hausarzt/Hormontest/Naturheilpraktikerin (ohne Namen).
 
 ---
 
-## STUFE 3 — Hausapotheke-Start · E → M  ⭐ HAUPT-GELD-PUNKT
+## STUFE 3 — Deine neue Normalität · M → Z  (Recurring + 1:1-Tiefe)
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│ Titel: „Dein Start als Hausapothekerin — die Energie-Routine" │
-│   (gratis Begleit-Programm rund um den doTERRA-Einstieg)      │
+│ Titel: „Deine neue Normalität — dranbleiben nach den 21 Tagen"│
 │                                                              │
-│ Format:    Enrollment mit Starterset + gratis Onboarding:     │
-│            • Padlet „Wohlfühlen leicht gemacht" (live)         │
-│            • Telegram-Gruppe / Sisterhood                      │
-│            • Öl-Bibliothek-Bot (deine KI — Differenzierer!)   │
-│ Routine:   die 3 Täglichen (VMG · PB Assist · Omega 3) +      │
-│            Öle im Alltag + Protein-Fokus (dein Game-Changer)  │
+│ Format:    • Nachbestellung/LRP der Bausteine (Recurring)     │
+│            • Bleib-dran-Gruppe / monatlicher Impuls           │
+│            • 1:1-Begleitung GRATIS · limitierte Plätze für    │
+│              die, die WIRKLICH tief gehen (Hormontest-Weg,    │
+│              persönliche Ritual-/Menü-Planung, Check-ins)    │
+│            • sanft: Weg zur eigenen Beraterin (Power of 3)     │
 │                                                              │
-│ Painpoint: „Ich will das wirklich angehen, aber ich weiss     │
-│            nicht WO anfangen und hab Angst, Geld zu           │
-│            verbrennen für Sachen, die ich dann nicht nutze."  │
-│ Sprung E→M: Sie hat ihre Hausapotheke + lebt die Routine im   │
-│            Familien-Alltag (Kids machen mit) — und spürt nach │
-│            3–4 Monaten den Unterschied (nicht „30 Tage"!).    │
-│ 💶 Geld:   ⭐ Starterset-Enrollment + erste Monats-Bestellung  │
-│            = deine HAUPT-Provision (Einmal-Boni + Basis-LRP)  │
-│ Brücke zu Stufe 4: „Wenn du tiefer gehen willst — ich nehme   │
-│            jeden Monat ein paar Mamas enger an die Hand."     │
-└──────────────────────────────────────────────────────────────┘
-```
-
-**Zeitlinie ehrlich halten:** Deine echte Veränderung war 3–4 Monate, nicht 30 Tage. Jede Kommunikation mit „in 30 Tagen energiegeladen" ist erfunden und verbrennt Vertrauen, wenn's nicht eintritt. → „Heilung braucht Zeit"-Tonalität.
-
----
-
-## STUFE 4 — 1:1-Begleitung + dauerhaft · M → Z  (Top-End)
-
-```
-┌──────────────────────────────────────────────────────────────┐
-│ Titel: „Dein Energie-Weg — 1:1 mit mir"                       │
-│   (gratis · limitierte Plätze · für die, die WIRKLICH dran    │
-│    bleiben wollen)                                           │
-│                                                              │
-│ Format:    persönliche 1:1-Begleitung über mehrere Monate:    │
-│            • Hormontest-Weg begleiten (zu Hausarzt/Heilprakt.)│
-│            • persönliche Ritual- & Routine-Planung            │
-│            • Menü-/Protein-Planung (dein KI-Menü-Assistent)   │
-│            • Check-ins bis die Routine sitzt                  │
-│ Plätze:    bewusst limitiert (dein Zeit-Invest, 18h-Woche!)  │
-│                                                              │
-│ Painpoint: „Ich hab schon vieles probiert und es nie          │
-│            durchgezogen — ich brauch jemand, der dranbleibt." │
-│ Sprung M→Z: Sie ist dauerhaft raus aus dem Funktionsmodus,    │
-│            lebt die Routine selbstverständlich — und gibt sie │
-│            weiter (Familie / eigenes kleines Standbein).      │
+│ Painpoint: „Nach jeder Challenge fall ich zurück — ich brauch │
+│            jemand, der dranbleibt."                          │
+│ Sprung M→Z: Dauerhaft raus aus dem Funktionsmodus — Routine   │
+│            ist Selbstverständlichkeit, sie gibt's weiter.     │
 │ 💶 Geld:   wiederkehrende Monats-Bestellungen (Recurring-      │
-│            Provision) + Team-Volumen, wenn sie selbst startet  │
-│            → dein Weg Richtung Gold-Rang                      │
+│            Provision) + Team-Volumen → dein Gold-Rang-Weg     │
+│ Plätze:    1:1 bewusst limitiert (18h-Woche!)                │
 └──────────────────────────────────────────────────────────────┘
 ```
 
-**Doppel-Funktion:** Die 1:1-Plätze bedienen zwei Mamas — die treue Tief-Kundin UND die, die irgendwann selbst Beraterin wird (Power-of-3-Logik). Beide sind für deinen Rang Gold wert. Nicht jede will aufbauen — sanft anbieten, nie drücken.
+**Doppel-Funktion der 1:1-Plätze:** treue Tief-Kundin UND angehende Beraterin — beide sind für deinen Rang Gold wert. Nie drücken, sanft anbieten.
 
 ---
 
-## 💶 Umsatz-Realitäts-Check — 12'000–15'000 CHF/Jahr nur aus Provision
+## 💶 Umsatz-Realitäts-Check — 12'000–15'000 CHF/Jahr aus Provision
 
 ```
 12'000–15'000 CHF / Jahr ÷ 12  =  ~1'000–1'250 CHF Provision / Monat
 ```
 
-**Annahmen (intern, grob — bitte gegen deine echten doTERRA-Zahlen prüfen):**
-- Effektiver Provisions-Anteil am Kundenvolumen ~20–25 % (Retail/Vorteilskunden-Marge + Fast-Start / Power-of-3 / Unilevel zusammengefasst).
+**Annahmen (intern, grob — gegen deine echten doTERRA-Zahlen prüfen):**
+- Effektiver Provisions-Anteil ~20–25 % des Kundenvolumens (Marge + Fast-Start/Power-of-3/Unilevel zusammengefasst).
 - Aktiver LRP-Schnitt pro treuer Kundin ~100–120 CHF/Monat.
+- 21-Tage-Paket-Bestellung = grösserer Einmal-Warenkorb + Einstiegs-Boni.
 
-**→ Nötiges monatliches Produktvolumen (Kunden + Team):** ~4'500–5'700 CHF/Monat.
+**→ Nötiges monatliches Produktvolumen:** ~4'500–5'700 CHF/Monat (Kunden + Team).
 
-### Was das konkret heisst — 3 Szenarien:
+### Was das mit dem 21-Tage-Modell konkret heisst:
 
-| Szenario | Was passiert | Realismus |
+| Hebel | Was passiert | Realismus |
 |---|---|---|
-| **A — Kunden-Basis** | ~40–50 aktive Monats-Kundinnen × ~110 CHF LRP | Tragfähigste Basis. Von heute (Handvoll aktiv) auf 40–50 = **12–18-Monats-Aufbau** über den 0€-Funnel. |
-| **B — Enrollment-Wellen** | regelmässige Neu-Startersets bringen Einmal-Boni + wachsende LRP-Basis | Beschleunigt A. Hebel = genug Interessentinnen aus Stufe 1+2. |
-| **C — Team-Hebel** | 2–3 Kundinnen werden selbst Beraterin (Power of 3) → Team-Volumen | Stärkster Hebel + dein **Gold-Rang-Weg**. Kommt über Stufe 4. |
+| **Paket-Wellen** | z.B. 4–6 neue 21-Tage-Pakete/Monat (grösserer Warenkorb je Start) | Der Programm-Rhythmus (feste Start-Termine) bündelt Bestellungen → planbarer als Einzel-Verkäufe. |
+| **Retention** | von den Startenden bleiben X % im LRP (Bleib-dran-Stufe 3) | Macht-oder-bricht-Hebel. Ohne Stufe 3 versickert der Umsatz nach 21 Tagen. |
+| **Team (Power of 3)** | 2–3 Kundinnen starten selbst | Stärkster Hebel + dein Gold-Rang-Weg. |
 
 ### 🟠 Ehrliche Einschätzung
+12–15k nur aus Provision ist **machbar, aber volumengetrieben**. Der 21-Tage-Rhythmus hilft (feste Starts = gebündelte Bestellungen). Zwei Stellschrauben bleiben:
+1. **Genug warme Leads** aus dem 3-Tage-Kickstart (Reels-Reichweite auf @patricia_ulmann treibt das).
+2. **Retention** — dass Startende danach im LRP bleiben (Stufe 3).
 
-12–15k nur aus Provision ist **machbar, aber volumengetrieben** — es braucht stetigen Kundinnen-Zuwachs UND Bindung. Deine zwei Stellschrauben:
-
-1. **Der 0€-Funnel muss genug Interessentinnen liefern** (Quiz + Reels-Reichweite auf dem doTERRA-Profil — das ist laut deiner Content-Analyse Reels-only bis >300–500 Follower).
-2. **Die gratis Begleitung muss halten** — Conversion (Interessentin → Kundin) UND Retention (Kundin bleibt im LRP). Genau dafür sind Stufe 2–4 gebaut.
-
-**Plan B, falls die Menge nicht kommt:** Wenn der reine Provisions-Weg zu langsam skaliert, ist der naheliegende Umsatz-Hebel eine **bezahlte Begleitung** (z.B. ein dreistelliges Energie-Programm) zusätzlich zur Provision — die Option hattest du heute bewusst weggelassen. Kein Muss, nur dein Ass im Ärmel, falls du in 3–4 Monaten merkst, dass Provision allein das 12–15k-Ziel nicht trägt.
+**Plan B, falls Menge zu langsam kommt:** eine **bezahlte** Begleitungs-Variante zusätzlich zur Provision (z.B. dreistelliges Premium-21-Tage mit mehr 1:1). Bewusst heute weggelassen — dein Ass im Ärmel.
 
 ---
 
-## 🚦 Was zuerst bauen? (Reihenfolge-Empfehlung)
+## 🚦 Reihenfolge — was zuerst bauen
 
-Julia-Logik „erst der Kaufbarriere-Brecher" — übersetzt auf dein Provisions-Modell heisst das: **erst den Conversion-Pfad rund um den ersten Produkt-Kauf sauber machen**, dann die Reichweite davor.
-
-1. **Stufe 3 zuerst sauber aufsetzen** (Onboarding-Programm + Öl-Bot + Routine-Padlet) — das ist dein Geld-Punkt. Ohne sauberes Onboarding versickern Enrollments.
-2. **Stufe 2 (gratis Mini-Begleitung)** als Brücke — damit aus „Quiz gemacht" auch „erster Schritt" wird.
-3. **Stufe 1 (Quiz)** finalisieren — füttert oben rein. Padlet trägt übergangsweise.
-4. **Stufe 4 (1:1)** zuletzt — erst wenn genug Kundinnen da sind, aus denen du die Tief-Plätze besetzt.
+1. **Stufe 2 „21-Tage-Routine" zuerst konzipieren** (Paket-Inhalt final + 21-Tage-Begleit-Plan Tag 1–21 + Tracker) — das ist dein Geld-Punkt.
+2. **Stufe 1 „3-Tage-Kickstart"** bauen — der Wumms-Einstieg, der genau dort reinführt.
+3. **Stufe 3 Bleib-dran** aufsetzen (Retention-Rhythmus + 1:1-Rahmen).
+4. **Säule 2 Hausapotheke** erst danach.
 
 ---
 
-## 📋 Notion-Produkt-Einträge — bitte in die Produkte-DB übertragen
+## 📋 Notion-Produkt-Einträge — in die Produkte-DB übertragen
 
 DB-URL: https://www.notion.so/2ae7078e8b7e81efaafaf03993ef344f
 
-### Eintrag 1 — Stufe 1
+### Eintrag 1 — Stufe 1 (Freebie)
 ```
-Produktname: Müde-Mama-Check (Energie-Typ-Quiz)
-Typ: Freebie
-Status: In Erstellung (Quiz) / Padlet live als Übergang
-Zielgruppe: Mamas 30–45, erschöpft, nach Kleinkinderphase
-Painpoint: Müdigkeit als „Schwäche" missverstanden
-Kern-Transformation (Sprung): A → B
-Learnings: Erschöpfung hat einen Grund · Hormone/Nährstoffe/Cortisol · kein Charakterfehler
-Dauer: 3 Min
-Preis (CHF): 0
-Format: Single-Page-Quiz / Padlet
-KI-Assistent: —
-Launch-Datum: TBD
-Markt-Research-Notiz: 70%+ Mütter-Erschöpfung (TK) · Typ-Tests = Top-0€-Format 2026
-Umsatz-Beitrag: 0 CHF direkt · Lead-Motor für Liste 18
-```
-
-### Eintrag 2 — Stufe 2
-```
-Produktname: Dein erster Schritt raus aus dem Funktionsmodus
-Typ: Freebie (gratis Mini-Begleitung)
+Produktname: 3-Tage-Energie-Kickstart
+Typ: Freebie (Erlebnis-Challenge)
 Status: Idee
-Zielgruppe: wie oben, Quiz-Absolventinnen
-Painpoint: „Ich weiss meinen Typ — aber was jetzt?"
-Kern-Transformation (Sprung): B → E
-Learnings: Hinschauen statt wegdrücken · Achtsamkeits-Fragen · Hormontest-Gedanke
-Dauer: 1 Woche (7 Impulse)
+Zielgruppe: Mamas 35–45, wachen erschöpft auf trotz Schlaf
+Painpoint: Erschöpfung trotz Schlaf, „ich bin halt schwach"
+Kern-Transformation (Sprung): A → B (spürt in 3 Tagen Unterschied)
+Learnings: Protein-Frühstück · 1 Ritual · 1 Öl-Anwendung
+Dauer: 3 Tage
 Preis (CHF): 0
-Format: Telegram-Serie / Padlet-Onboarding
-KI-Assistent: optional Öl-Bot-Vorschau
-Launch-Datum: TBD
-Markt-Research-Notiz: Selbst-Erfahrungs-Storytelling performt (Menopause-mit-30-Genre)
-Umsatz-Beitrag: kleiner erster Produkt-Kauf möglich
+Format: geführt per Telegram/Mail, 1 Impuls/Tag
+Keyword: ENERGIE
+Launch-Datum: TBD (Stufe 2 zuerst)
+Markt-Research-Notiz: Wumms via gefühltem Resultat statt PDF; GYR/Herbalife-Muster
+Umsatz-Beitrag: 0 CHF · warmer Lead-Motor für Stufe 2
 ```
 
-### Eintrag 3 — Stufe 3 ⭐
+### Eintrag 2 — Stufe 2 ⭐ Kern-Angebot
 ```
-Produktname: Dein Start als Hausapothekerin — Energie-Routine
-Typ: Begleitung (gratis) rund um doTERRA-Enrollment
-Status: Teilweise vorhanden (Padlet + Produktpaket) · Onboarding ausbauen
-Zielgruppe: entschlossene Mamas, bereit für ersten echten Schritt
-Painpoint: „Wo anfangen? Angst, Geld zu verbrennen."
-Kern-Transformation (Sprung): E → M
-Learnings: 3 Tägliche (VMG/PB Assist/Omega3) · Öle im Alltag · Protein-Fokus · Familie macht mit
-Dauer: 3–4 Monate bis spürbar (NICHT 30 Tage)
-Preis (CHF): 0 Begleitung · Geld via Starterset + LRP
-Format: Padlet + Telegram-Gruppe + Öl-Bibliothek-Bot
-KI-Assistent: Öl-Bibliothek-Bot (live) — Differenzierer
+Produktname: Die 21-Tage-Energie-Routine
+Typ: Produktpaket + 21-Tage-Begleitung (Provisions-Modell)
+Status: In Konzeption
+Zielgruppe: entschlossene Mamas nach dem Kickstart
+Painpoint: „Wo anfangen? Angst, Geld für Nicht-durchgezogenes zu verbrennen"
+Kern-Transformation (Sprung): B → M (Routine sitzt nach 21 Tagen)
+Learnings: 4 Bausteine (VMG/PB Assist/Omega3 + Protein) · Morgen-Ritual · Familienalltag
+Dauer: 21 Tage Begleitung · körperl. Veränderung 3–4 Monate (NICHT 21)
+Preis (CHF): Begleitung 0 · Geld via Paket-Bestellung + LRP
+Paket: Basis (VMG+PB Assist+Omega3) + Shake-Upgrade
+Format: Produktpaket + tägl. Input + Tracker + Telegram-Gruppe + Öl-Bot
+KI-Assistent: Öl-Bibliothek-Bot (live) + Menü-Bot
 Launch-Datum: TBD — ZUERST bauen
-Markt-Research-Notiz: „natürliche Hausapotheke"-Kurse boomen 2026
-Umsatz-Beitrag: ⭐ Haupt-Provisions-Punkt (Enrollment + Basis-LRP)
+Markt-Research-Notiz: 21 Tage = Gewohnheits-Fenster; GYR (CH) + Herbalife validiert; Forschung deckt Patricias Routine 1:1
+Umsatz-Beitrag: ⭐ Haupt-Provisions-Punkt
 ```
 
-### Eintrag 4 — Stufe 4
+### Eintrag 3 — Stufe 3
 ```
-Produktname: Dein Energie-Weg — 1:1 mit mir
-Typ: Premium-Begleitung (gratis, limitierte Plätze)
-Status: Idee (= Notion-TODO „bezahltes Begleitungsangebot" → hier als GRATIS-Variante umgesetzt)
-Zielgruppe: Tief-Kundinnen + potenzielle Beraterinnen
-Painpoint: „Ich zieh's nie durch — brauch jemand, der dranbleibt."
-Kern-Transformation (Sprung): M → Z
-Learnings: Hormontest-Weg · persönliche Ritual-/Menü-Planung · Dranbleiben · ggf. selbst aufbauen
-Dauer: mehrere Monate, limitierte Plätze
-Preis (CHF): 0 Begleitung · Geld via Recurring-LRP + Team-Volumen
-Format: 1:1 + KI-Menü-Assistent
-KI-Assistent: Menü-/Protein-Planungs-Bot
-Launch-Datum: TBD — zuletzt
-Markt-Research-Notiz: Wechseljahre-Begleitungen mit Abo-Modell zahlungsstark
+Produktname: Deine neue Normalität (Bleib-dran + 1:1)
+Typ: Retention-Begleitung (gratis) + 1:1 limitiert
+Status: Idee
+Zielgruppe: Absolventinnen der 21 Tage · potenzielle Beraterinnen
+Painpoint: „Nach jeder Challenge fall ich zurück"
+Kern-Transformation (Sprung): M → Z (neue Normalität, gibt's weiter)
+Learnings: Nachbestell-Rhythmus · 1:1-Tiefe · ggf. selbst aufbauen
+Dauer: fortlaufend
+Preis (CHF): 0 · Geld via Recurring-LRP + Team
+Format: Bleib-dran-Gruppe + 1:1 (limitiert) + Menü-Bot
+Launch-Datum: TBD — nach Stufe 2
+Markt-Research-Notiz: Retention = Umsatz-Macht-oder-Bricht-Hebel
 Umsatz-Beitrag: Recurring-Provision + Team → Gold-Rang-Weg
 ```
 
@@ -296,14 +269,13 @@ Umsatz-Beitrag: Recurring-Provision + Team → Gold-Rang-Weg
 
 ## ✅ Qualitäts-Check (bestanden)
 
-- [x] Transformation statt Features (jede Stufe = ein Zustand, nicht Module)
-- [x] Ziel statt Problem im Fokus
-- [x] Spezifisch (konkrete Painpoint-Sätze der Zielgruppe)
-- [x] Markt-validiert (00-markt-research.md)
-- [x] A→B→E→M→Z sichtbar, ein Sprung pro Stufe
-- [x] Umsatzbeitrag beziffert + ehrlicher Realitäts-Check
-- [x] doTERRA-Compliance: kein Heilversprechen, „bei mir war"-Frame, keine Pyramide namentlich
-- [x] Keine erfundenen Zahlen (3–4 Monate statt 30 Tage; Provisions-Annahmen klar als Schätzung markiert)
-- [x] Keine Dopplung — füllt die leere bezahlte/begleitete Seite der doTERRA-Treppe
-- [x] Skalierbarkeit geprüft (volumengetrieben, Hebel benannt, Plan B notiert)
-- [x] Notion-Einträge generiert
+- [x] Transformation statt Features · Ziel statt Problem
+- [x] EIN scharfer Painpoint (Erschöpfung trotz Schlaf), markt-validiert (Research Runde 2)
+- [x] A→B→E→M→Z sichtbar
+- [x] Angebots-Modell = Produktpaket + zeitlich begrenzte Begleitung (Patricias GYR-Wunsch)
+- [x] Freebie mit Wumms (Erlebnis statt eBook)
+- [x] Umsatzbeitrag beziffert + ehrlicher Realitäts-Check + Plan B
+- [x] doTERRA-Compliance: kein Heilversprechen, Paket ergebnis-benannt, „bei mir war"-Frame, keine Pyramide namentlich
+- [x] Keine erfundenen Zahlen (21 Tage = Gewohnheit, 3–4 Monate = körperlich; Provisions-Annahmen als Schätzung markiert)
+- [x] Säulen-Modell dokumentiert (Säule 2 Hausapotheke geparkt)
+- [x] Skalierbarkeit + Hebel benannt · Notion-Einträge generiert
