@@ -106,13 +106,16 @@ Z  neue Normalität:  Energie zurück, hört auf ihren Körper, bestellt
 │  3. nach 21 Tagen sitzt die Routine → bleibt (Nachbestellung) │
 │                                                              │
 │ DAS PAKET (die 4 Bausteine der Perimenopause-Forschung):     │
-│  ★ ANKER/HELD:  doTERRA Protein-Pulver — der tägliche Shake   │
-│    als sichtbares Morgen-Ritual (Patricias Favorit!)         │
-│    (genauer Produktname noch bestätigen)                     │
-│  • SUPPORTING:  VMG (Mikronährstoffe) · PB Assist (Darm) ·    │
-│    Omega 3 (+ Öle als Lifestyle-Layer)                       │
-│  • Basis-Variante ohne Shake bleibt für die möglich, die's    │
-│    über Ernährung machen wollen (40g-Frühstück)              │
+│  ★ KERN (Provisions-Produkte):  VMG (Mikronährstoffe) ·       │
+│    PB Assist (Darm) · Omega 3  (+ Öle als Lifestyle-Layer)   │
+│  ★ PROTEIN über ERNÄHRUNG:  Patricias 40g-Frühstücks-Prinzip  │
+│    (Rezepte in der Begleitung) — ihr echter Game-Changer,    │
+│    KEIN Shake als Pflicht                                    │
+│  • Optionales Add-on:  dōTERRA Protein (Plant Protein         │
+│    Schoko/Vanille) zum „Pimpen" für die, die's mal schnell   │
+│    brauchen — kein Muss                                       │
+│  Ritual-Anker = der MORGEN-STACK (Supplements + Protein-      │
+│    Frühstück + Öl), nicht ein Shake                          │
 │                                                              │
 │ DIE BEGLEITUNG (21 Tage, gratis dabei):                      │
 │  • täglich 1 kurzer Input (Sprachnotiz/Video)                │
