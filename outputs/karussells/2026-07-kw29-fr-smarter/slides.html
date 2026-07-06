@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Smarter statt härter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --petrol: #12828c; --dunkelblau: #29556d; --creme: #f1ecdd; --text: #0c1c30; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #1a1a1a; font-family: "Source Sans 3", sans-serif; color: var(--text); padding: 40px; }
+      .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; margin: 40px auto; display: flex; flex-direction: column; padding: 100px 80px; }
+      .slide.bg-creme { background: var(--creme); color: var(--text); }
+      .slide.bg-petrol { background: var(--petrol); color: #fff; }
+      .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 30px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--petrol); margin-bottom: 36px; }
+      .bg-petrol .eyebrow { color: rgba(255,255,255,0.85); }
+      .footer { position: absolute; bottom: 50px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(12,28,48,0.55); letter-spacing: 0.08em; z-index: 5; }
+      .bg-petrol .footer { color: rgba(255,255,255,0.7); }
+
+      .cover { justify-content: center; align-items: flex-start; text-align: left; color: #fff; }
+      .cover .kicker { font-family: "Source Sans 3"; font-weight: 700; font-size: 32px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.85); margin-bottom: 40px; }
+      .cover .hook { font-family: "Philosopher"; font-weight: 700; font-size: 88px; line-height: 1.07; color: #fff; }
+      .cover .hook .pop { font-style: italic; background: rgba(255,255,255,0.18); padding: 0 12px; border-radius: 8px; }
+
+      .s2 { justify-content: center; }
+      .s2 .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 52px; line-height: 1.4; color: var(--text); }
+      .s2 .body .pop { color: var(--petrol); font-weight: 700; }
+
+      .baustein-petrol { justify-content: center; color: #fff; }
+      .baustein-petrol .big { font-family: "Philosopher"; font-weight: 700; font-size: 90px; line-height: 1.08; color: #fff; }
+      .baustein-petrol .big .pop { font-style: italic; }
+
+      .baustein-creme { justify-content: center; }
+      .baustein-creme .headline { font-family: "Philosopher"; font-weight: 700; font-size: 82px; line-height: 1.08; color: var(--dunkelblau); margin-bottom: 36px; }
+      .baustein-creme .headline .pop { color: var(--petrol); font-style: italic; }
+      .baustein-creme .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 46px; line-height: 1.4; color: var(--text); opacity: 0.95; }
+      .baustein-creme .body .pop { color: var(--petrol); font-weight: 700; }
+
+      .s7 { justify-content: center; align-items: center; text-align: center; }
+      .s7 .big { font-family: "Philosopher"; font-weight: 700; font-style: italic; font-size: 108px; line-height: 1.05; color: var(--dunkelblau); margin-bottom: 44px; }
+      .s7 .body { font-family: "Source Sans 3"; font-weight: 600; font-size: 46px; line-height: 1.45; color: var(--text); max-width: 860px; }
+      .s7 .body .pop { color: var(--petrol); font-weight: 700; }
+    </style>
+  </head>
+  <body>
+
+    <div class="slide bg-petrol cover">
+      <div class="kicker">Ehrlich gesagt</div>
+      <div class="hook">Wer ein Business neben der Familie will, muss nicht härter arbeiten — <span class="pop">sondern aufhören, Energie zu verschwenden.</span></div>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme s2">
+      <p class="body">Ich weiss, wie sich das anfühlt: mehr Stunden, mehr Posts, mehr Druck — und trotzdem <span class="pop">tritt's auf der Stelle</span>.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <p class="body">Denn „härter" löst das Problem nicht. Die perfekten Produktbilder, die dritte Story am Tag, das Optimieren an Details, die <span class="pop">keine Kundin je bemerkt</span> — das frisst genau die Kraft, die dir fürs Wesentliche fehlt.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-petrol baustein-petrol">
+      <div class="big">Dein Business wächst nicht, weil du mehr machst.<br/><span class="pop">Sondern weil du das Richtige machst.</span></div>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="headline">…und den Rest <span class="pop">bewusst weglässt.</span></div>
+      <p class="body">Nicht alles ist wichtig, nur weil es sich produktiv anfühlt.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <p class="body">Weniger, aber gezielt — das schlägt „viel und verzettelt" jedes Mal. <span class="pop">Gerade wenn deine Zeit eh knapp ist.</span></p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme s7">
+      <div class="big">Smarter statt härter</div>
+      <p class="body">Folg mir, wenn du dein Business <span class="pop">smarter statt härter</span> aufbauen willst.</p>
+      <div class="footer"><span>@mumlifebalance</span><span></span></div>
+    </div>
+
+  </body>
+</html>
