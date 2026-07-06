@@ -4,9 +4,19 @@ tags: [produkt, mba, launch, mail]
 
 # MBA — Launch-Mails für die übrige Mailliste (nicht Bootcamp)
 
-> Erstellt 2026-07-03. Zwei Segmente, zwei Töne. Laufen parallel zur Cart-Phase.
+> Erstellt 2026-07-03 · **überarbeitet nach Audit gegen Patricia-Voice + Hormozi + Julia Trost.**
+> Zwei Segmente, zwei Töne. Laufen parallel zur Cart-Phase.
 > Brand-Voice: Freundin-Ton, keine Stakkato, Schweizer ss, du-Anrede, keine Mentoren-Namen. `%FIRSTNAME%` = Merge-Tag.
 > CTA-Link überall: `mumlifebalance.thrivecart.com/mba`
+
+**Was der Audit geändert hat (Kurzfassung):**
+- **P.S. in JEDE Mail** (Hormozi-Hack #10 — wird fast immer gelesen, stärkste Wiederholung dahin).
+- **Schmerz in konkrete Momente** statt Adjektive (Hormozi „Pain is the Pitch": Schwiegermutter-WhatsApp-Status, „oh shit, wie viel hab ich noch auf dem Konto").
+- **Reason-Why an die CTAs** (jedes „klick, weil …").
+- **Anrechnung mit Zahl konkret** (Segment A: „hast du 333 bezahlt, kommen die voll runter").
+- **Repel + Skeptiker-Frame** (Segment B4: „NICHT für dich, wenn …" + „endlich beweisen, dass du's kannst").
+- **Flaunt-your-flaws** (B4: „ich hab etliche Kurse, die ich nie angefangen hab").
+- **Sequenz-Klammer** (B: „gestern", „morgen" — hält sie in der Reihe).
 
 ---
 
@@ -18,65 +28,64 @@ tags: [produkt, mba, launch, mail]
 ## A1 — „Du hast schon einen Baustein"
 
 **Betreff:** Dein Kurs zählt voll — hier kommt der ganze Weg
-**Preheader:** Du kennst schon ein Stück. Jetzt gibt's das ganze Bild (und du zahlst nie doppelt).
+**Preheader:** Du kennst schon ein Stück. Jetzt gibt's das ganze Bild — und du zahlst nie doppelt.
 
 Hey %FIRSTNAME%,
 
 du hast schon einen meiner Kurse gemacht — du weisst also, wie ich arbeite und was drinsteckt. Genau deshalb bekommst du diese Mail zuerst.
 
-Ich hab etwas gebaut, auf das ich richtig stolz bin: die **Mum Business Academy**. Das ist nicht noch ein Kurs, der im Regal verstaubt — das ist der **ganze Weg in der richtigen Reihenfolge**: sichtbar werden, dir Zeit schaffen, dein eigenes Angebot aufbauen. Ein Jahr Begleitung. Plus PIA, deine KI-Mentorin, die dir jeden Tag die Arbeit abnimmt.
+Ich hab etwas gebaut, auf das ich richtig stolz bin: die **Mum Business Academy**. Das ist kein weiterer Kurs, der im Regal verstaubt — es ist der **ganze Weg in der richtigen Reihenfolge**: sichtbar werden, dir Zeit schaffen, dein eigenes Angebot aufbauen. Ein Jahr Begleitung. Plus PIA, deine KI-Mentorin, die dir jeden Tag die Schreibarbeit abnimmt.
 
-Und das Beste für dich, weil du schon dabei warst: **Dein gekaufter Kurs wird zu 100% angerechnet.** Du zahlst also keinen Rappen doppelt — dein Investment zählt voll.
+Und das Beste für dich, weil du schon dabei warst: **Dein gekaufter Kurs wird zu 100% angerechnet.** Hast du zum Beispiel 333 bezahlt, kommen die voll runter — du zahlst keinen Rappen doppelt.
 
-Schau dir in Ruhe an, was drin ist:
-👉 [Ja, ich will's mir ansehen]
+👉 [Ja, ich will's mir ansehen] — weil du den Weg, den du angefangen hast, verdient hast zu Ende zu gehen.
 
-Ich freu mich, wenn du den Weg zu Ende gehst. 🩵
 Patricia
+
+**P.S.** Der Pioneer-Preis dieser ersten Runde ist der niedrigste, den die MBA je haben wird. Mit deiner Anrechnung steigst du günstiger ein als alle anderen.
 
 ---
 
 ## A2 — „Ein Puzzleteil ist noch kein Bild"
 
 **Betreff:** Du hast ein Puzzleteil. Hier ist das ganze Bild.
-**Preheader:** Warum ein einzelner Kurs dich nicht ans Ziel bringt (und was fehlt).
+**Preheader:** Warum ein einzelner Kurs dich nicht ans Ziel bringt.
 
 Hey %FIRSTNAME%,
 
-ganz ehrlich: Ein einzelner Kurs bringt dich selten ans Ziel. Nicht, weil der Kurs schlecht ist — sondern weil es **alle Bausteine zusammen** braucht.
+kennst du das Gefühl: Du hast den Kurs gemacht, warst voller Motivation — und ein paar Wochen später versandet es wieder im Alltag zwischen Wäsche und Znünibox?
 
-Du wirst sichtbar (damit fremde Frauen dich anschreiben). Du schaffst dir Zeit und Struktur (damit dein Business neben der Familie läuft). Und du baust dir dein eigenes Angebot (damit du ein Einkommen hast, das dir gehört — statt ein paar Prozent Provision). Erst alle zusammen bringen dich wirklich weiter.
+Das liegt nicht an dir. Ein einzelner Baustein bringt dich selten ans Ziel — es braucht alle: sichtbar werden, dir Zeit schaffen, dein eigenes Angebot aufbauen. Und jemanden, der mit dir dranbleibt.
 
 Genau das hast du in der **Mum Business Academy**: alle drei Kurse, ein Jahr Begleitung mit zwei Live-Calls im Monat, deine Community — und PIA, die mit dir umsetzt, statt dich allein zu lassen.
 
-Und nicht vergessen: **Dein bereits gekaufter Kurs wird voll angerechnet.** Du steigst also günstiger ein als alle anderen.
+👉 [Den ganzen Weg ansehen] — dein bereits gekaufter Kurs zählt voll dazu, du zahlst nie doppelt.
 
-👉 [Den ganzen Weg ansehen]
-
-Bis gleich,
 Patricia
+
+**P.S.** Genau weil ich diese erste Runde so eng begleite, ist sie klein. Wenn du dabei sein willst, sei früh dran.
 
 ---
 
-## A3 — „Warum ich mit einer kleinen Runde starte"
+## A3 — „Warum diese erste Runde besonders ist"
 
 **Betreff:** Warum diese erste Runde besonders ist (und günstiger als je wieder)
 **Preheader:** Pioneer-Preis, engste Begleitung — und dein Kurs zählt voll dazu.
 
 Hey %FIRSTNAME%,
 
-diese erste Runde ist mir besonders wichtig, weil wir sie zusammen formen. Du bist nicht Teilnehmerin Nummer 300 in einem fertigen System — du baust mit auf. Deshalb gehe ich mit dieser Gruppe so eng mit wie mit keiner danach.
+diese erste Runde forme ich zusammen mit dir. Du bist nicht Teilnehmerin Nummer 300 in einem fertigen System — du baust mit auf. Deshalb gehe ich mit dieser Gruppe so eng mit wie mit keiner danach.
 
-Und deshalb ist der **Pioneer-Preis von CHF 997** der niedrigste, den die MBA je haben wird (später CHF 1347) — in bis zu sechs Raten, ohne Aufpreis. Dein bereits gekaufter Kurs kommt zu 100% obendrauf angerechnet.
+Und deshalb ist der **Pioneer-Preis von CHF 997** der niedrigste, den die MBA je haben wird (später CHF 1347) — in bis zu sechs Raten, und dein bereits gekaufter Kurs kommt voll angerechnet obendrauf.
 
-Was andere Frauen mit meiner Begleitung schon erleben:
+Das erleben Frauen mit meiner Begleitung schon:
 > „Diese Woche ein Starterpaket verkauft. Meine Followerinnen sind richtig aktiv." — über 50.000 Aufrufe und +77 neue Followerinnen in einem Monat.
 
-Wenn du spürst, dass es dran ist:
 👉 [Ich sichere mir meinen Pioneer-Platz]
 
-Ich freu mich riesig auf dich. 🩵
 Patricia
+
+**P.S.** Stell dir vor, du schaust in einem Jahr zurück und denkst: gut, dass ich damals den ganzen Weg gegangen bin — statt beim einen Kurs stehenzubleiben. Genau das ist die MBA.
 
 ---
 
@@ -92,16 +101,17 @@ Patricia
 
 Hey %FIRSTNAME%,
 
-„Kauft das wirklich jemand?" — kennst du diesen Satz? Von der Schwiegermutter, der Nachbarin, manchmal von der leisen Stimme in dir selbst?
+„Also, kauft das wirklich jemand?" — fragt die Schwiegermutter bei jedem WhatsApp-Status. Kennst du das?
 
-Ich kenne ihn gut. Ich hab jahrelang einfach Produkte verkauft, ohne mir je zu überlegen, wem ich eigentlich wobei helfe. Ich hab gepostet, und es passierte nichts. Meine warme Liste war irgendwann durch. Und nachts kam die Frage: verbrenn ich hier gerade unser Geld — oder hat das eine Zukunft?
+Ich kenne diesen Satz gut. Ich hab jahrelang einfach Produkte verkauft, ohne mir je zu überlegen, wem ich eigentlich wobei helfe. Ich hab gepostet, und es passierte nichts. Und abends, wenn die Kinder schliefen, sass ich am Laptop und dachte: „Oh shit, wie viel hab ich noch auf dem Konto — und hat das überhaupt eine Zukunft?"
 
-Tief drin wollte ich etwas Eigenes. Frei sein. Beweisen, dass ich's kann. Aber ich wusste nicht, wo anfangen.
+Tief drin wollte ich etwas Eigenes. Frei sein und beweisen, dass ich's kann. Ich wusste nur nicht, wo anfangen.
 
-Falls dir das bekannt vorkommt: Du machst nichts falsch. Dir fehlt nur eins — ein roter Faden. In den nächsten Tagen zeig ich dir, wie der aussieht.
+Falls dir das bekannt vorkommt: Du machst nichts falsch. Dir fehlt nur ein roter Faden — und den zeig ich dir in den nächsten Tagen.
 
-Bis morgen,
 Patricia
+
+**P.S.** Diese leise Stimme „läuft das wirklich?" wird nicht leiser, wenn du wartest. Sie wird leiser, wenn du das Richtige tust. Dazu gleich mehr.
 
 ---
 
@@ -112,16 +122,19 @@ Patricia
 
 Hey %FIRSTNAME%,
 
-was den Unterschied macht, ist nicht noch ein Reel oder noch ein PDF. Es ist ein **klarer Weg in der richtigen Reihenfolge.**
+gestern hab ich dir vom roten Faden geschrieben. Hier ist er.
 
-Erst wirst du sichtbar — dein Profil zieht an, statt zu verkaufen, sodass fremde Frauen dich anschreiben. Dann schaffst du dir Zeit und Struktur, damit dein Business neben Kindern und Alltag überhaupt stattfindet. Und dann baust du dir dein eigenes Angebot, das dir Einkommen bringt, das dir gehört. Erst alle zusammen bringen dich ans Ziel.
+Was den Unterschied macht, ist nicht noch ein Reel oder noch ein PDF. Es ist ein **klarer Weg in der richtigen Reihenfolge**:
 
-Genau diesen Weg gibt es jetzt als Ganzes: die **Mum Business Academy**. Drei aufeinander aufbauende Kurse, ein Jahr Begleitung — und PIA, deine KI-Mentorin, die dir Bio, Hooks, Posts und deinen Funnel in deiner Stimme abnimmt.
+Erst wirst du sichtbar — dein Profil zieht an, sodass fremde Frauen DICH anschreiben, statt dass du jagst. Dann schaffst du dir Zeit und Struktur, damit dein Business neben Kindern und Alltag überhaupt stattfindet. Und dann baust du dir dein eigenes Angebot, das dir Einkommen bringt, das dir gehört. Erst alle zusammen bringen dich ans Ziel.
+
+Diesen Weg gibt es jetzt als Ganzes: die **Mum Business Academy**. Drei aufeinander aufbauende Kurse, ein Jahr Begleitung — und PIA, deine KI-Mentorin, die dir Bio, Hooks, Posts und deinen Funnel in deiner Stimme abnimmt.
 
 👉 [Den ganzen Weg ansehen]
 
-Morgen zeig ich dir, wie sich das anfühlt, wenn's läuft.
 Patricia
+
+**P.S.** Morgen zeig ich dir, wie sich das anfühlt, wenn's läuft — mit echten Zahlen von Frauen, die genau da standen, wo du gerade stehst.
 
 ---
 
@@ -132,19 +145,21 @@ Patricia
 
 Hey %FIRSTNAME%,
 
-stell dir kurz vor, wie sich dein Business anfühlt, wenn der Weg sitzt:
+stell dir dein Business in ein paar Monaten vor:
 
-Du fragst dich morgens nicht mehr „was poste ich heute?" — du hast einen klaren Fahrplan. Deine Bio sagt in einem Blick, was du für wen machst, sodass genau deine Wunschkundin auf dem Profil landet. Und in der Story verkaufst du an genau die Frauen, die sowieso schon wollen.
+Du fragst dich morgens nicht mehr „was poste ich heute?" — du hast einen klaren Fahrplan. Deine Bio ist dein Schaufenster: In einem Blick sagt sie, was du für wen machst, sodass genau deine Wunschkundin auf dem Profil landet. Und in der Story verkaufst du an genau die Frauen, die sowieso schon wollen.
 
-Das ist keine Theorie. Das erleben Frauen mit meiner Begleitung:
+Das ist keine Theorie:
 > „Meine Storyviews sind gestiegen, der Austausch mit meiner Community wurde spürbar intensiver — nicht durch Tricks, sondern weil ich mich mehr gezeigt habe." — Andrea
-> „Diese Woche ein Starterpaket verkauft." — +77 neue Followerinnen in einem Monat.
+> „Diese Woche ein Starterpaket verkauft." — über 50.000 Aufrufe, +77 neue Followerinnen in einem Monat.
 
 Und du bist dabei nie allein: PIA an deiner Seite, zwei Live-Calls im Monat, deine Community.
 
 👉 [Ich will das auch]
 
 Patricia
+
+**P.S.** Das Schönste daran: Du musst dich dafür nicht verbiegen. Du zeigst mehr von dir — nicht mehr von irgendwelchen Tricks.
 
 ---
 
@@ -155,27 +170,30 @@ Patricia
 
 Hey %FIRSTNAME%,
 
-„Ich hab schon so viele Kurse und nichts umgesetzt." Diesen Satz höre ich oft — und ich schliesse mich mit ein. Das Problem war nie das Wissen, sondern die Umsetzung allein.
+„Ich hab schon so viele Kurse und nichts umgesetzt." Diesen Satz höre ich oft — und ich schliesse mich ein: Ich hab etliche Kurse, die ich nie angefangen hab. Das Problem war nie das Wissen, sondern die Umsetzung allein.
 
 Genau deshalb ist die **Mum Business Academy** an eine echte Begleitung gekoppelt: zwei Live-Calls im Monat, eine Community, in der du dranbleibst, und PIA, die dir die Arbeit abnimmt. Du setzt endlich um, statt nur zu sammeln.
 
-Du brauchst dafür keine grosse Reichweite und musst technisch nicht fit sein — PIA und die Kurse nehmen dich Schritt für Schritt mit.
+Du brauchst dafür keine grosse Reichweite (ich hatte selbst keine, als ich meinen ersten Funnel baute) und musst technisch nicht fit sein.
 
-Diese erste Runde gibt's zum **Pioneer-Preis von CHF 997** (später CHF 1347), in bis zu sechs Raten. Es ist die engste Begleitung, die es je geben wird.
+Ehrlich: Die MBA ist NICHT für dich, wenn du die schnelle Abkürzung suchst. Sie ist für dich, wenn du bereit bist, den Weg zu gehen — und dir endlich selbst beweisen willst, dass du's kannst.
 
-Wenn du spürst, dass es dran ist:
-👉 [Ich bin dabei]
+Diese erste Runde gibt's zum **Pioneer-Preis von CHF 997** (später CHF 1347), in bis zu sechs Raten.
 
-Ich freu mich auf dich. 🩵
+👉 [Ich bin dabei] — weil du es satt hast, dass ein Jahr vergeht und du fast genau da stehst wie heute.
+
 Patricia
+
+**P.S.** In einem Jahr hast du entweder ein Business, über das du mit Stolz redest — oder denselben Satz „ich müsste eigentlich mal". Die MBA ist der Unterschied.
 
 ---
 
 ## Einbau-Hinweise
-- **Segment A** an alle, die Instagram-Kundenmaschine ODER Mama-CEO gekauft haben (Tag in ActiveCampaign) und NICHT im Bootcamp-Tag sind.
+- **Segment A** an alle mit IKM- ODER Mama-CEO-Kauf-Tag (ActiveCampaign), die NICHT im Bootcamp-Tag sind.
 - **Segment B** an die restliche Liste (Freebie/Newsletter, kein Produkt, kein Bootcamp).
 - **Bootcamp-Teilnehmerinnen** bekommen ihre eigene Cart-Sequenz (`bootcamp-mails/C1–C7`) — NICHT diese hier.
 - Anrechnungs-Abwicklung: „schreib mir kurz per DM/Mail für deinen persönlichen Rabatt-Link" (wie in der Salespage-FAQ).
+- **Conversion-Hebel im Blick:** Segment A lebt von der Anrechnung (heisser Kontakt, wenig Überzeugung nötig) → A ist dein wahrscheinlichster Verkaufskanal. Segment B braucht die 4-Mail-Strecke, um Vertrauen aufzubauen → nicht nach Mail 1 aufgeben.
 
 ## 🔗 Verwandte Notizen
 - [[mba-salespage]] · [[mba-kurse-transformation]] · [[zitate-uebersicht]] · [[auslieferungsmail]]

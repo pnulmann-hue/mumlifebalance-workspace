@@ -43,6 +43,12 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[00-markt-research]]
 - [[01-produkttreppe]]
 
+### 📁 doterra-mama-energie
+
+- [[00-briefing]]
+- [[00-markt-research]]
+- [[01-produkttreppe]]
+
 ### 📁 mama-ceo
 
 - [[00-briefing-FINAL]]
