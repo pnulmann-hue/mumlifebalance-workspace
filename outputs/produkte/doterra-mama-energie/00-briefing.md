@@ -18,7 +18,7 @@ tags: [produkt, doterra]
 
 ## Stufen
 - **Stufe 1 (0€) A→B:** 3-Tage-Energie-Kickstart 🔥 (Erlebnis-Freebie, Wumms)
-- **Stufe 2 ⭐ B→M:** Die 21-Tage-Energie-Routine — Paket (Anker = doTERRA Protein-Pulver/Shake + VMG + PB Assist + Omega 3) + 21-Tage-Begleitung = Haupt-Provision
+- **Stufe 2 ⭐ B→M:** Die 21-Tage-Energie-Routine — Paket (Kern = VMG + PB Assist + Omega 3 + Öle · Protein über Ernährung · dōTERRA Protein optional) + 21-Tage-Begleitung = Haupt-Provision
 - **Stufe 3 M→Z:** Deine neue Normalität — Nachbestellung/LRP + 1:1 (limitiert) + Weg zur Beraterin
 
 ## Status & nächste Schritte
@@ -30,8 +30,10 @@ tags: [produkt, doterra]
 - [ ] Stufe 3: Retention-Rhythmus + 1:1-Rahmen
 - [ ] Optional: Launch-/Content-Plan (Reels-Reichweite → Kickstart)
 
+## Geklärt
+- Protein über Ernährung (40g-Frühstück) = Weg · dōTERRA Protein (Plant Protein Schoko/Vanille) nur optionales „Pimp"-Add-on · Ritual-Anker = Morgen-Stack
+
 ## Offene Entscheidung
-- Genaues doTERRA-Shake-Produkt als Protein-Upgrade (Patricia bestätigt)
 - Paket-Name final (compliance-safe, ergebnis-orientiert — NICHT „Hormonpaket")
 
 ## 🔗 Verwandte Notizen

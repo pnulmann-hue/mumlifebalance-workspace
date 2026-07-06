@@ -22,15 +22,14 @@ Patricias doTERRA-Business ist **sichtbar als das reale Business** (Team, Produk
 ## WICHTIG, damit der Beweis wirkt
 Konkretes echtes Network zeigen — echtes doTERRA-Team, echte Network-Momente, die Strategie **auf einem echten Öl-/Network-Post angewandt**. NICHT abstraktes „ich nutze KI fürs Business". Sonst denkt sie: „siehste, sie networkt ja gar nicht richtig."
 
-## Name (Arbeitstitel)
-**„Mama-CEO Werkstatt"** (Favorit) · Alternativen: „Der Maschinenraum", „Network neu aufgebaut", „Backstage mit Patricia", „Funktionieren war gestern".
+## Name
+**„Backstage"** (festgelegt 2026-07-03).
 
-## Leichtes Format (broadcast-light, KEIN Support-Kanal)
-*Ziel: dokumentieren, was Patricia eh macht — minimaler Zusatzaufwand, damit's die Energie für die 10 nicht frisst.*
-- **2–3× pro Woche ein kurzer Einblick:** ein Screen-Recording / Screenshot „so hab ich das grad mit Claude gelöst" · ein Win · ein Fail/Learning · ein „so sieht mein Network-Post heute aus und warum".
-- **1× pro Woche ein Aha/Prinzip:** ein Satz Strategie, den sie mitnehmen können (deep + wide).
-- **Kein tägliches Beantworten-Müssen.** Reaktionen ja, aber kein 1:1-Coaching-Zwang.
-- **Alle paar Wochen ein sanfter Brücken-Post:** „Du siehst, wie ich's mache — willst du, dass ich dir zeige, wie DU es machst? → MBA." (Link in Bio / Academy.)
+## Format: NICHTS geplant — rein spontan
+*Patricias Ansatz: kein Redaktionsplan, keine Frequenz-Pflicht. Sie nimmt die Gruppe **spontan mit, wenn sie gerade baut** — Screen-Recording, Screenshot, ein „schau, so löse ich das grad mit Claude", ein Win, ein Fail. Roh und echt, im Moment.*
+- **Keine Verpflichtung, keinen Plan** — genau das ist der Reiz: authentisch, ungeschnitten.
+- **Kein Support-Kanal** (kein 1:1-Coaching-Zwang; Reaktionen ja, Betreuung nein).
+- **Ab und zu** — wenn's grad passt — eine sanfte Brücke: „Du siehst, wie ich's mache — willst du, dass ich dir zeige, wie DU es machst? → MBA." (Link in Bio.) Kein Schema, einfach wenn's natürlich kommt.
 
 ## Willkommens-Post (Entwurf)
 > Schön, dass du da bist! 🩵

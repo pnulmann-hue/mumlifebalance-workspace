@@ -245,7 +245,7 @@ Kern-Transformation (Sprung): B → M (Routine sitzt nach 21 Tagen)
 Learnings: 4 Bausteine (VMG/PB Assist/Omega3 + Protein) · Morgen-Ritual · Familienalltag
 Dauer: 21 Tage Begleitung · körperl. Veränderung 3–4 Monate (NICHT 21)
 Preis (CHF): Begleitung 0 · Geld via Paket-Bestellung + LRP
-Paket: Anker = doTERRA Protein-Pulver (täglicher Shake) + VMG + PB Assist + Omega 3 · Basis-Variante ohne Shake möglich
+Paket: Kern = VMG + PB Assist + Omega 3 (+ Öle) · Protein über Ernährung (40g-Frühstück) · dōTERRA Protein (Plant Protein Schoko/Vanille) nur optionales Add-on
 Format: Produktpaket + tägl. Input + Tracker + Telegram-Gruppe + Öl-Bot
 KI-Assistent: Öl-Bibliothek-Bot (live) + Menü-Bot
 Launch-Datum: TBD — ZUERST bauen
