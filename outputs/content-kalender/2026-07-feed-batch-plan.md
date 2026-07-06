@@ -207,9 +207,9 @@ Mo = Viral-Trend-Reel, Cover ergibt sich aus dem Clip. ABAB ab Di: Foto → Oran
 
 ### Do 17.7. — REEL · B-Roll · 🟢 Reichweite
 - **RWH-Säule:** 🎯 Positionierung (Set 1: „Ich bin nicht die, die dir …")
-- **Hook:** „Ich bin nicht die, die dir sagt, dass du einfach alle Produkte jeden Tag erklären sollst."
+- **Hook:** „Ich bin nicht die, die dir sagt, dass du täglich dein Produkt in die Kamera halten sollst."
 - **Cover:** Foto (candid) · Trending-Sound nativ
-- **CTA (Positionierung → Folgen):** „Folg mir, wenn du genug hast von ‚erklär täglich deine Produkte'."
+- **CTA (Positionierung → Folgen):** „Folg mir, wenn du genug hast von ‚halt einfach dein Produkt in die Kamera'."
 
 ### Fr 18.7. — KARUSSELL · 🟢 Reichweite
 - **RWH-Säule:** 💰 Verkauf (Set 1: „Wer […] erreichen will, muss nicht härter arbeiten…") — weicher Folgen-CTA (Feed programm-frei)
@@ -255,13 +255,13 @@ Mo = Viral-Trend-Reel, Cover ergibt sich aus dem Clip. ABAB ab Di: Foto → Oran
 > `#mamabusiness #mamaunternehmerin #zeitmanagement #mamaceo #selbstständigmitkind`
 
 **Do — Positionierung → Folgen**
-> Ich sag's ganz ehrlich: Ich bin nicht die, die dir sagt, dass du einfach jeden Tag brav alle deine Produkte erklären sollst.
+> Ich sag's ganz ehrlich: Ich bin nicht die, die dir sagt, dass du täglich dein Produkt in die Kamera halten sollst.
 >
-> Weil genau das ist der Rat, der dich stundenlang Content produzieren lässt — und am Ende steht trotzdem keine einzige Anfrage in den DMs. Du redest über Inhaltsstoffe und Rabatte, und die Leute scrollen weiter, weil sie in dir die Verkäuferin sehen und nicht die Frau, die ihr Problem wirklich versteht.
+> Weil genau das ist der Rat, der dich stundenlang Content produzieren lässt — und am Ende steht trotzdem keine einzige Anfrage in den DMs. Du hältst zum hundertsten Mal dein Produkt in die Linse, und die Leute scrollen weiter, weil sie in dir die Verkäuferin sehen und nicht die Frau, die ihr Problem wirklich versteht.
 >
-> Was dich weiterbringt, ist nicht mehr Produkt-Posts, sondern für EIN Thema zu stehen, das deine Leute nachts wachhält. Lieber dreimal übers echte Problem reden als täglich den nächsten Artikel erklären — das spart dir Zeit und bringt dir die Richtigen.
+> Was dich weiterbringt, ist nicht mehr Produkt-Videos, sondern für EIN Thema zu stehen, das deine Leute nachts wachhält. Lieber dreimal übers echte Problem reden als täglich dein Produkt zeigen — das spart dir Zeit und bringt dir die Richtigen.
 >
-> Folg mir, wenn du genug hast von „erklär einfach täglich deine Produkte". 💛
+> Folg mir, wenn du genug hast von „halt einfach dein Produkt in die Kamera". 💛
 >
 > `#mamabusiness #networkmarketing #mamaunternehmerin #ehrlichesbusiness #positionierung`
 
@@ -285,7 +285,7 @@ Ziel: über die Wochen erkennen, welche Reichweitenherz-Muster bei der Zielgrupp
 | Woche | Mo | Di | Mi | Do | Fr |
 |---|---|---|---|---|---|
 | **KW28** (Sichtbarkeit) | Storytelling S5 | Identifikation POV S2/4 | Mehrwert S2 (90%) | Positionierung S4 | Mehrwert S4 (grösster Fehler) |
-| **KW29** (Zeit) | Storytelling **S3** (Viral-Trend-Reel) | Identifikation **S1** (erklär mir) | Mehrwert **S7** (der eine Hebel) | Positionierung **S1** (nicht täglich Produkte) | Verkauf **S1** (smarter statt härter) |
+| **KW29** (Zeit) | Storytelling **S3** (Viral-Trend-Reel) | Identifikation **S1** (erklär mir) | Mehrwert **S7** (der eine Hebel) | Positionierung **S1** (Produkt in die Kamera) | Verkauf **S1** (smarter statt härter) |
 | Performance | _nachtragen_ | _nachtragen_ | _nachtragen_ | _nachtragen_ | _nachtragen_ |
 
 → So decken wir Woche für Woche neue Muster ab und finden das, was **richtig zündet**.
