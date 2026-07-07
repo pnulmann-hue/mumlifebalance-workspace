@@ -20,8 +20,8 @@ Standort: **920 m, Appenzellerland** — neue, eigene Rabatte (nicht Teil des be
 | Echter Alant | *Inula helenium* | ✅ Ja (bis −20 °C) | Gigant bis 2 m, uralte Kloster-Heilpflanze → nach hinten pflanzen |
 | Herzgespann (T10) | *Leonurus cardiaca* | ✅ Ja (bis −40 °C, versamt sich) | Hummelmagnet, alte Frauen-Heilpflanze |
 | Gazanie / Mittagsgold | *Gazania* | ⚠️ **NEIN** | Südafrika-Exotin, Einjährige → im Sept. ausgraben oder neu kaufen |
-| Unbekannt 1 | *(zu bestimmen)* | ? | Foto folgt → Bestimmung |
-| Unbekannt 2 | *(zu bestimmen)* | ? | Foto folgt → Bestimmung |
+| Mönchspfeffer (Topf) | *Vitex agnus-castus* | ⚠️ Grenzwertig (Winterschutz!) | Frauen-Heilpflanze (Zyklus/PMS), Bienenweide → Topf geschützt überwintern |
+| Gelber Sonnenhut | *Rudbeckia hirta* | ⚠️ Eher nein (ein-/zweijährig) | Samen abnehmen & 2027 neu aussäen; versamt sich evtl. selbst |
 
 ---
 
@@ -45,9 +45,11 @@ Echte Kauf-Fotos, datiert abgelegt (bewusst nur lokal — Kinder im Bild):
 ---
 
 ## 🗓️ Erinnerungen
-- **Anfang September 2026:** Gazanie-Entscheid (ausgraben & überwintern oder ziehen lassen).
-- **Frühjahr 2027 (März/April):** Rabatte checken — welche Stauden treiben wieder aus? Mit diesen Fotos vergleichen.
-- **Offen:** 2 unbekannte Pflanzen bestimmen, sobald die Handy-Fotos synchronisiert sind.
+- **Anfang September 2026:** Gazanie-Entscheid (ausgraben & überwintern oder ziehen lassen). Mönchspfeffer-Topf geschützt einwintern. Rudbeckia-Samen abnehmen.
+- **Aug/Sept 2026:** Steckling vom African-Blue-Basilikum ziehen (Absicherung, anderer Standort).
+- **Frühjahr 2027 (März/April):** Rabatte checken — welche Stauden treiben wieder aus? Mit diesen Fotos vergleichen. Mönchspfeffer erst jetzt zurückschneiden (nicht im Herbst).
+
+**Winterhärte-Fazit:** Sicher wieder → Roter Sonnenhut, Minibelle, Alant, Herzgespann. Schutz/Aufwand nötig → Mönchspfeffer (Winterschutz), Gazanie (rein). Eher Neukauf/Aussaat → Rudbeckia, Gazanie.
 
 ---
 
