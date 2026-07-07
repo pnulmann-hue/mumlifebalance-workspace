@@ -70,8 +70,13 @@ Nachricht:
   4. **Warten** bis „nächster Tag, 07:30"
   5. **E-Mail „Tag 3 — Schlaf + Brücke"**
   6. **Tag hinzufügen** `kickstart-abgeschlossen` *(optional, für Auswertung — sag Bescheid, ich lege den Tag auch an)*
-- Mail-Inhalte + Betreffzeilen: siehe [05-freebie-mails-kickstart.md](05-freebie-mails-kickstart.md)
-- Design: dein Brand-Look (doTERRA-Variante, Orange-Akzent) — ich adaptiere dir das Mentoring-Template, wenn du willst.
+- Mail-Texte: [05-freebie-mails-kickstart.md](05-freebie-mails-kickstart.md)
+- **Fertiges HTML zum Einfügen** (doTERRA-Design, Orange-Header):
+  - Tag 1 → `mails/tag-1-protein.html`
+  - Tag 2 → `mails/tag-2-bewegung.html`
+  - Tag 3 → `mails/tag-3-schlaf.html`
+  - Vorlage: `context/mail-design-doterra.html`
+- In AC: Mail-Schritt → „Quellcode/HTML" → HTML-Datei-Inhalt reinkopieren → Betreff aus [05](05-freebie-mails-kickstart.md) setzen.
 
 > ⚠️ **Warum du das im UI machst:** AC lässt das Bauen von Automationen (Wartezeiten + Mail-Reihenfolge) nicht über die Schnittstelle zu — ich kann Tags/Kontakte/Entwürfe anlegen, aber die Automation selbst klickst du zusammen. Ich hab dir jeden Schritt oben vorgegeben.
 
