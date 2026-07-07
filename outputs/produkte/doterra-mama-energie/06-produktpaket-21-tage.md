@@ -23,15 +23,16 @@ Grundlage: Patricias echte tägliche Routine aus der Wendepunkt-Story. Produktna
 
 → Protein läuft über die **Ernährung** (30g/Mahlzeit, 1/3-Teller-Regel) — kein Produkt nötig.
 
-**PV-Auffüller auf 150 (Einschreibegrenze) — EMPFOHLEN: das Öltrio**
+**PV-Auffüller auf 150 (Einschreibegrenze) — EMPFOHLEN: Serenity-Roller**
 
 | Zusatz | Warum genau das |
 |---|---|
-| ⭐ **Öltrio Lavendel + Peppermint + Lemon** | Klinkt sich direkt in die Programm-Rituale: 🍋 Lemon morgens ins Wasser · 🌿 Peppermint Nachmittags-Kick (Aroma) · 💜 Lavendel Abend-Ritual (Tag 3). Macht Öle erlebbar, viel Begleitungs-Content, Türöffner für spätere Öl-Bestellungen. Füllt die ~25-PV-Lücke. |
+| ⭐ **Serenity-Roller** (Restful Blend, fertig verdünnt) | Trifft genau das Abend-Ritual (Tag 3) → zahlt direkt auf den Kern-Painpoint „besser schlafen → erholt aufwachen" ein. **Schon verdünnt = kein Kokosöl/Trägeröl nötig**, ein Produkt, sofort einsatzbereit. Günstiger als ein Öltrio + Trägeröl. Sinnliches „das ist meins"-Produkt. |
 
-**Alternative statt Öltrio:** **TerraZyme** (Verdauungsenzyme → Nährstoffaufnahme/Energie, ergänzt PB Assist) — solide, aber „noch eine Kapsel" statt Ritual-Erlebnis. → Öltrio bevorzugt.
+**Verworfen:** Öltrio Lavendel/Peppermint/Lemon → zu teuer, bräuchte zusätzlich Kokosöl (Trägeröl) für die Hautanwendung → 4 Produkte, zu viel.
+**Alternative:** TerraZyme (Verdauung → Energie) — solide, aber kein Ritual-Erlebnis.
 
-> ⚠️ **Patricia im Backoffice bestätigen:** Kern (125) + Öltrio ≥ **150 PV**. Falls knapp: 15ml-Flaschen statt 5ml, oder Diffuser dazu.
+> ⚠️ **Patricia im Backoffice bestätigen:** Kern (125) + Serenity-Roller ≥ **150 PV**. Falls der Roller allein zu knapp ist → **Diffuser** dazu (schöneres Abend-Ritual + PV) oder ein zweiter Morgen-Roller.
 
 ---
 

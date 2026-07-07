@@ -121,7 +121,7 @@ Und genau da setz ich mit Mamas in meiner **21-Tage-Energie-Routine** an: Dein P
 - ✓ VMG+ — deine Mikronährstoff-Basis
 - ✓ PB Assist+ — für deinen Darm
 - ✓ Omega 3 — für den klaren Kopf
-- ✓ Öltrio Lavendel · Peppermint · Lemon — für deine Morgen- und Abend-Rituale
+- ✓ Serenity-Roller — für dein Abend-Ritual, damit du besser runterkommst
 
 **→ [Hol dir dein Energie-Paket]({{PAKET-LINK}})**
 
