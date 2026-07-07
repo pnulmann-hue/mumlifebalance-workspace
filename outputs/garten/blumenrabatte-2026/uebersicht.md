@@ -25,6 +25,25 @@ Standort: **920 m, Appenzellerland** — neue, eigene Rabatte (nicht Teil des be
 
 ---
 
+## 🗓️ Blühkalender (Juni–Oktober)
+Von Juni bis zum ersten Frost blüht fast durchgehend etwas. **Höhepunkt: Juli/August.**
+
+| Pflanze | Jun | Jul | Aug | Sep | Okt |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Roter Sonnenhut | | ● | ● | ● | |
+| Echinacea Minibelle | ● | ● | ● | ● | |
+| Echter Alant | | ● | ● | | |
+| Herzgespann | ● | ● | ● | | |
+| Gazanie *(Dauerblüher)* | ● | ● | ● | ● | ● |
+| Mönchspfeffer | | ● | ● | ● | |
+| Rauer Sonnenhut | | ● | ● | ● | ● |
+| African Blue Basilikum *(Dauerblüher)* | ● | ● | ● | ● | ● |
+| Wilde Möhre | ● | ● | ● | | |
+
+*920 m → alles ~1–2 Wochen später; 2026 noch zurückhaltend, ab 2027 üppiger; Ausputzen verlängert die Blüte bei Echinacea/Rudbeckia/Gazanie/Basilikum.*
+
+---
+
 ## ⚠️ Die eine Warnung: Gazanie
 Die einzige der Neuen, die auf 920 m **nicht überwintert**. Zwei Wege:
 1. Als Einjährige geniessen, nächstes Jahr neu kaufen.
