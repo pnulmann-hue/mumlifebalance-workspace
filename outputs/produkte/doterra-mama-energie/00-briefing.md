@@ -25,7 +25,8 @@ tags: [produkt, doterra]
 - [x] Markt-Research Runde 1 + 2 ([00-markt-research.md](00-markt-research.md))
 - [x] Produkttreppe (GYR-Modell) + Umsatz-Check + Notion-Einträge ([01-produkttreppe.md](01-produkttreppe.md))
 - [ ] Notion-Produkte-DB: 3 Einträge übertragen
-- [ ] Stufe 2: Paket-Inhalt final (Shake-Produkt bestätigen) + 21-Tage-Begleit-Plan Tag 1–21 + Tracker
+- [x] Stufe 2: Produktpaket definiert (LLV + PB Assist+, Add-ons) ([06-produktpaket-21-tage.md](06-produktpaket-21-tage.md)) — offen: CHF-Preise/PV/Kit bestätigen
+- [ ] Stufe 2: 21-Tage-Begleit-Plan Tag 1–21 (läuft über Bot, NICHT Mail)
 - [x] Stufe 1: 3-Tage-Kickstart komplett getextet ([02-freebie-3-tage-kickstart.md](02-freebie-3-tage-kickstart.md)) — Opt-in, 3 Tage, Brücke
 - [ ] Stufe 3: Retention-Rhythmus + 1:1-Rahmen
 - [x] KI-/Automatisierungs-Konzept (Freebie + 21 Tage, alles auto ausser Telegram-Gruppe) ([03-automatisierung-ki-konzept.md](03-automatisierung-ki-konzept.md))
