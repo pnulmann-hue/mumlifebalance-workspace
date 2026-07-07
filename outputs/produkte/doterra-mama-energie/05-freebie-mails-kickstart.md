@@ -32,10 +32,10 @@ Wenn du morgens vor allem Kohlenhydrate isst (Brot mit Konfi, süsses Müesli, G
 
 Protein und Ballaststoffe machen das Gegenteil: Sie bremsen den Anstieg ab, dein Blutzucker bleibt ruhig — und damit auch deine Energie. Kein Hoch, kein Absturz. Dazu hält Protein deine Muskeln, und die sind ab Mitte 30 dein wichtigster Energie-Motor. Genau der baut sonst nämlich langsam ab.
 
-**Dein Schritt heute:** Iss ein Frühstück mit mindestens 30 Gramm Protein. Klingt viel, ist aber einfach:
-- 🍳 Rührei oder Spiegelei (2–3 Eier) mit einer Scheibe Vollkornbrot
-- 🥞 Protein-Pancakes (mach ich für die ganze Bande)
-- 🥣 Porridge mit Skyr oder Quark und ein paar Nüssen
+**Dein Schritt heute:** Iss ein Frühstück mit mindestens 30 Gramm Protein. Damit du's leicht hast, hier meine drei liebsten — die ess ich wirklich, alle in ~10–15 Min:
+- **🥞 Protein-Pancakes (~33 g):** 140 g Magerquark, 1 Ei, 55 g Dinkel-Vollkornmehl, Schuss Milch, 1 TL Backpulver, Prise Vanille. In etwas Kokosöl goldbraun braten. Mach ich für die ganze Bande, halten ein paar Tage.
+- **🍳 Rührei mit Gemüse (~33 g):** 2–3 Eier (+ optional etwas Eiweiss), Champignons + Frühlingszwiebeli kurz anbraten, Eier drüber, dazu 1–2 Scheiben Vollkorn-/Knäckebrot.
+- **🍓 Erdbeer-Skyr-Proats (~31 g):** abends 30 g Haferflocken mit Buttermilch einweichen, 160 g Skyr drauf, über Nacht kühlen. Morgens mit Erdbeeren + 1 EL Mandelmus toppen.
 
 **Und meine Faustregel für JEDEN Teller** — Mittag, Abend, nicht nur Frühstück:
 > ⅓ Proteinquelle · ⅓ Ballaststoffe (Gemüse, Vollkorn) · ⅓ Kohlenhydrate
