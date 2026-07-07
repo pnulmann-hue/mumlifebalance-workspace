@@ -25,7 +25,7 @@ tags: [produkt, doterra]
 - [x] Markt-Research Runde 1 + 2 ([00-markt-research.md](00-markt-research.md))
 - [x] Produkttreppe (GYR-Modell) + Umsatz-Check + Notion-Einträge ([01-produkttreppe.md](01-produkttreppe.md))
 - [ ] Notion-Produkte-DB: 3 Einträge übertragen
-- [x] Stufe 2: Produktpaket definiert — VMG+ · PB Assist+ · Omega 3 (~125 PV) + Serenity-Roller als PV-Auffüller auf ≥150 (Abend-Ritual, fertig verdünnt) ([06-produktpaket-21-tage.md](06-produktpaket-21-tage.md)) — offen: Shareable-Cart-Link + PV/Preise bestätigen
+- [x] Stufe 2: Produktpaket definiert — VMG+ · PB Assist+ · Omega 3 (~125 PV) + ClaryCalm-Roller als PV-Auffüller auf ≥150 (Frauen-Blend, on-brand, fertig verdünnt · Compliance: nur „bei mir"-Frame) ([06-produktpaket-21-tage.md](06-produktpaket-21-tage.md)) — offen: Shareable-Cart-Link + PV/Preise bestätigen
 - [ ] Tag-3-Mail: {{PAKET-LINK}} durch echten Shareable-Cart-Link ersetzen
 - [ ] Stufe 2: 21-Tage-Begleit-Plan Tag 1–21 (läuft über Bot, NICHT Mail)
 - [x] Stufe 1: 3-Tage-Kickstart komplett getextet ([02-freebie-3-tage-kickstart.md](02-freebie-3-tage-kickstart.md)) — Opt-in, 3 Tage, Brücke

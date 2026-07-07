@@ -23,16 +23,18 @@ Grundlage: Patricias echte tägliche Routine aus der Wendepunkt-Story. Produktna
 
 → Protein läuft über die **Ernährung** (30g/Mahlzeit, 1/3-Teller-Regel) — kein Produkt nötig.
 
-**PV-Auffüller auf 150 (Einschreibegrenze) — EMPFOHLEN: Serenity-Roller**
+**PV-Auffüller auf 150 (Einschreibegrenze) — EMPFOHLEN: ClaryCalm-Roller**
 
 | Zusatz | Warum genau das |
 |---|---|
-| ⭐ **Serenity-Roller** (Restful Blend, fertig verdünnt) | Trifft genau das Abend-Ritual (Tag 3) → zahlt direkt auf den Kern-Painpoint „besser schlafen → erholt aufwachen" ein. **Schon verdünnt = kein Kokosöl/Trägeröl nötig**, ein Produkt, sofort einsatzbereit. Günstiger als ein Öltrio + Trägeröl. Sinnliches „das ist meins"-Produkt. |
+| ⭐ **ClaryCalm-Roller** (doTERRAs Frauen-Mischung, fertig verdünnt) | **On-Brand:** doTERRAs Frauen-Blend → trifft die Positionierung „Hormone natürlich begleiten" direkt. Ist ein **Signature-Produkt** statt austauschbar. Enthält u.a. Lavendel/Kamille/Ylang Ylang → dient **zugleich** als Abend-/Runterkomm-Roller (Tag 3). Fertig verdünnt = kein Kokosöl nötig. |
 
-**Verworfen:** Öltrio Lavendel/Peppermint/Lemon → zu teuer, bräuchte zusätzlich Kokosöl (Trägeröl) für die Hautanwendung → 4 Produkte, zu viel.
-**Alternative:** TerraZyme (Verdauung → Energie) — solide, aber kein Ritual-Erlebnis.
+**🚨 Compliance-Regel für ClaryCalm:** NIE „reguliert/balanciert die Hormone" oder „hilft bei Hormonbeschwerden" (Heilversprechen). NUR „bei mir"-Lifestyle-Frame: *„mein Wohlfühl-Roller"* / *„der, den ich abends nehm / an den Tagen, wo alles zu viel ist"*.
 
-> ⚠️ **Patricia im Backoffice bestätigen:** Kern (125) + Serenity-Roller ≥ **150 PV**. Falls der Roller allein zu knapp ist → **Diffuser** dazu (schöneres Abend-Ritual + PV) oder ein zweiter Morgen-Roller.
+**Alternative:** **Serenity-Roller** (Ruhe/Schlaf) — compliance-unkomplizierter, aber weniger on-brand. · **TerraZyme** (Verdauung→Energie) — kein Ritual-Erlebnis.
+**Verworfen:** Öltrio Lavendel/Peppermint/Lemon → zu teuer + bräuchte Kokosöl (Trägeröl) → 4 Produkte.
+
+> ⚠️ **Patricia im Backoffice bestätigen:** Kern (125) + ClaryCalm-Roller ≥ **150 PV**. Falls knapp → Diffuser oder ein zweiter Roller dazu.
 
 ---
 
