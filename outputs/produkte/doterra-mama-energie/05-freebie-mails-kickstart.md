@@ -121,9 +121,9 @@ Und genau da setz ich mit Mamas in meiner **21-Tage-Energie-Routine** an: Dein P
 - ✓ VMG+ — deine Mikronährstoff-Basis
 - ✓ PB Assist+ — für deinen Darm
 - ✓ Omega 3 — für den klaren Kopf
-- ✓ ClaryCalm-Roller — mein Wohlfühl-Roller für den Abend und die Tage, wo alles zu viel ist
+- ✓ ClaryCalm-Roller — mein Wohlfühl-Roller für die Momente, wo als Frau alles zu viel wird
 
-**→ [Hol dir dein Energie-Paket]({{PAKET-LINK}})**
+**→ [Hol dir dein Energie-Paket](https://doterra.me/b0yKEX)**
 
 Und du bist damit nicht allein: Sobald deine Bestellung da ist, **meld ich mich persönlich bei dir** — und wir richten deinen Start in die 21 Tage gemeinsam ein. Du wirst nie mit einem Paket und einer Anleitung alleingelassen.
 
@@ -131,7 +131,7 @@ Und du bist damit nicht allein: Sobald deine Bestellung da ist, **meld ich mich 
 
 Und ganz egal, wie du dich entscheidest: Ich bin stolz auf dich, dass du drei Tage drangeblieben bist. Das ist mehr, als die meisten tun.
 
-> ⚠️ **{{PAKET-LINK}}** = dein doTERRA Shareable-Cart / Einschreibe-Link (Paket ≥150 PV vorausgefüllt). Siehe [06-produktpaket-21-tage.md](06-produktpaket-21-tage.md).
+> ✅ **Paket-Link:** https://doterra.me/b0yKEX (doTERRA Shareable-Cart, Paket vorausgefüllt). Vor Launch einmal testen + PV ≥150 prüfen. Siehe [06-produktpaket-21-tage.md](06-produktpaket-21-tage.md).
 
 Alles Liebe,
 Patricia

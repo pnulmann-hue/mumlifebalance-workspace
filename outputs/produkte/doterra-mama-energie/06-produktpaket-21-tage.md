@@ -56,15 +56,16 @@ Damit du dabei **keine Provision verlierst**: KEIN normaler Retail-Produktlink, 
 Paket (Kern + Öltrio) drin. Dann kauft sie über EINEN Klick **und** wird als **Vorteilskundin
 mit ≥150 PV eingeschrieben** — Direktkauf UND sauberes Setup.
 
-1. Shareable Cart im Backoffice bauen: VMG+ · PB Assist+ · Omega 3 · Öltrio (≥150 PV).
+**✅ Cart-Link steht:** https://doterra.me/b0yKEX (in Tag-3-Mail eingesetzt)
+
+1. Cart-Inhalt: VMG+ · PB Assist+ · Omega 3 · ClaryCalm-Roller (≥150 PV).
 2. Als Einschreibe-/Vorteilskunden-Cart konfigurieren (Wholesale-Preis).
 3. Optional Loyalty-Order (monatliche Bestellung) gleich mitanbieten → **wiederkehrende Provision**.
 4. AC-Tags: `kunde` (56) / `vorteilskunde` (57) / `wellness_advocate` (58) — vorhanden.
 
 **Offen für dich:**
-- [ ] Shareable-Cart-Link erstellen → in Tag-3-Mail als `{{PAKET-LINK}}` einsetzen
-- [ ] Prüfen: Paket ≥150 PV
-- [ ] CHF-Preise (Wholesale) für die Paket-Übersicht in der Mail
+- [ ] Link einmal testen (öffnet Cart korrekt?) + prüfen: Paket ≥150 PV
+- [ ] CHF-Preise (Wholesale) — optional für die Paket-Übersicht in der Mail
 
 ---
 
