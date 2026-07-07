@@ -55,7 +55,7 @@ Patricia
 
 ## 📧 MAIL 2 — Tag 2 · Bewegung (+24h, 07:30)
 
-**Betreff:** Tag 2: Der unterschätzte Schlaf-Hebel 🚶‍♀️
+**Betreff:** Tag 2: 8000 Schritte — der unterschätzte Energie-Hebel 🚶‍♀️
 **Preheader:** Nein, du musst nicht ins Fitnessstudio. Es ist viel einfacher.
 
 ---
