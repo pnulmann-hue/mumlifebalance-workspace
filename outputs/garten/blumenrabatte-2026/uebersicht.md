@@ -21,7 +21,7 @@ Standort: **920 m, Appenzellerland** — neue, eigene Rabatte (nicht Teil des be
 | Herzgespann (T10) | *Leonurus cardiaca* | ✅ Ja (bis −40 °C, versamt sich) | Hummelmagnet, alte Frauen-Heilpflanze |
 | Gazanie / Mittagsgold | *Gazania* | ⚠️ **NEIN** | Südafrika-Exotin, Einjährige → im Sept. ausgraben oder neu kaufen |
 | Mönchspfeffer (Topf) | *Vitex agnus-castus* | ⚠️ Grenzwertig (Winterschutz!) | Frauen-Heilpflanze (Zyklus/PMS), Bienenweide → Topf geschützt überwintern |
-| Gelbe Sonnenblumen-Verwandte | *(Art offen — nicht Rudbeckia)* | ❓ Frostprobe abwarten | Rau + geruchlos, dunkler Kegel; Herkunft/Art klären |
+| Rauer Sonnenhut | *Rudbeckia hirta* | ⚠️ Eher nein (ein-/zweijährig) | Top Schnittblume + Bienen-/Vogelweide; Samen abnehmen & 2027 säen |
 
 ---
 
