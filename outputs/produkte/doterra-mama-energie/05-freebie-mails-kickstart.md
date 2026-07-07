@@ -60,7 +60,7 @@ Patricia
 
 ---
 
-Guten Morgen. ☀️
+Schön, bist du wieder dabei. 🌿
 
 Kurze Frage vorweg: Hat sich dein Nachmittag gestern ein bisschen anders angefühlt? Wenn ja — genau das ist der Anfang. Wenn noch nicht — dranbleiben, dein Körper braucht ein paar Tage.
 
@@ -92,7 +92,7 @@ Patricia
 
 ---
 
-Guten Morgen, du. 💛
+Da bist du. 💛
 
 Heute der wichtigste Tag. Und er fängt mit dem Satz an, mit dem bei mir alles losging:
 
