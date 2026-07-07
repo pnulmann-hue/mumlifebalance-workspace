@@ -125,7 +125,9 @@ Und genau da setz ich mit Mamas in meiner **21-Tage-Energie-Routine** an: Dein P
 
 **→ [Hol dir dein Energie-Paket]({{PAKET-LINK}})**
 
-*Unsicher, ob das für dich passt, oder hast du eine Frage vorher? Schreib mir einfach `ROUTINE` auf Instagram — dann helf ich dir persönlich weiter. 🌿*
+Und du bist damit nicht allein: Sobald deine Bestellung da ist, **meld ich mich persönlich bei dir** — und wir richten deinen Start in die 21 Tage gemeinsam ein. Du wirst nie mit einem Paket und einer Anleitung alleingelassen.
+
+*Hast du vorher noch eine Frage? Schreib mir einfach `ROUTINE` auf Instagram, dann helf ich dir weiter. 🌿*
 
 Und ganz egal, wie du dich entscheidest: Ich bin stolz auf dich, dass du drei Tage drangeblieben bist. Das ist mehr, als die meisten tun.
 
