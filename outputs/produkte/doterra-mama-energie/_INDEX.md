@@ -17,3 +17,4 @@ Produkttreppe für das doTERRA-Business (Provisions-Modell, gratis Begleitung).
 - [[05-freebie-mails-kickstart]]
 - [[06-produktpaket-21-tage]]
 - [[07-reel-opt-in-energie]]
+- [[08-bio-und-beitraege]]

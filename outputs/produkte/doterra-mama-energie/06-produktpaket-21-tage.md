@@ -82,7 +82,7 @@ Das ist der Unterschied zu „nur Produkte verkaufen": Die Kundin kauft die Prod
 ---
 
 ## 🔗 Verwandte
-- [[01-produkttreppe]] · [[03-automatisierung-ki-konzept]] · [[08-21-tage-begleitung]]
+- [[01-produkttreppe]] · [[03-automatisierung-ki-konzept]] · [[09-21-tage-begleitung]]
 
 ## Quellen (Produkt-Recherche)
 - [doTERRA Lifelong Vitality Pack — offiziell EU/DE](https://shop.doterra.com/de/de_de/create-account/lifelong-vitality-pack/) · [LLV PIP (PDF)](https://media.doterra.com/eu/de/pips/lifelong-vitality-pack.pdf)
