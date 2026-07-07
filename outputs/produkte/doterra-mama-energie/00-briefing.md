@@ -35,7 +35,8 @@ tags: [produkt, doterra]
 - [x] Die 3 Kickstart-Mails fertig getextet ([05-freebie-mails-kickstart.md](05-freebie-mails-kickstart.md))
 - [x] Die 3 Mails als gebrandetes HTML gebaut (`mails/tag-1-protein.html` · `tag-2-bewegung.html` · `tag-3-schlaf.html`) + doTERRA-Mail-Template (`context/mail-design-doterra.html`)
 - [x] ManyChat-Flow steht (Patricia) — offen: AC-Automation verdrahten + HTML einfügen
-- [ ] Optional: Launch-/Content-Plan (Reels-Reichweite → Kickstart)
+- [x] Opt-in-Reel „Kommentier ENERGIE" (Hooks + Dreh + Caption) ([07-reel-opt-in-energie.md](07-reel-opt-in-energie.md))
+- [ ] 21-Tage-Begleitung strukturieren (Tag 1–21, läuft über Bot)
 
 ## Geklärt
 - Protein über Ernährung (40g-Frühstück) = Weg · dōTERRA Protein (Plant Protein Schoko/Vanille) nur optionales „Pimp"-Add-on · Ritual-Anker = Morgen-Stack
