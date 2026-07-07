@@ -59,11 +59,12 @@ Du meldest dich nach der Bestellung **persönlich** — die Bestellung kommt als
 
 ## Teil 2 — ActiveCampaign-Automation (du im UI, ~10 Min · Mails liefere ich)
 
-**✅ Die 3 Mails liegen schon als Kampagnen-Entwürfe in AC (von mir angelegt):**
-- #641 · doTERRA Kickstart · Tag 1 · Protein
-- #642 · doTERRA Kickstart · Tag 2 · Bewegung
-- #643 · doTERRA Kickstart · Tag 3 · Schlaf + Paket
-→ Im Automations-E-Mail-Schritt kannst du sie als Vorlage wählen oder das HTML aus `mails/*.html` einfügen.
+**✅ Die 3 Mails liegen als Kampagnen-Entwürfe in AC (Absender info@mumlifebalance.ch, Liste 18):**
+- **#644** · doTERRA Kickstart · Tag 1 · Protein (info)
+- **#647** · doTERRA Kickstart · Tag 2 · Bewegung (info)
+- **#648** · doTERRA Kickstart · Tag 3 · Schlaf + Paket (info)
+→ Im Automations-E-Mail-Schritt als Vorlage wählen oder HTML aus `mails/*.html` einfügen.
+⚠️ Alte patricia@-Entwürfe #641/#642/#643 in AC löschen (Anbindung kann das nicht).
 
 **Automation neu:** „doTERRA · 3-Tage-Kickstart"
 - **Trigger:** *Tag added → `energie-kickstart` (84)*  (sauberer als Listen-Trigger)

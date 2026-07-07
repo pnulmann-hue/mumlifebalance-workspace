@@ -5,9 +5,9 @@
   Trigger: Tag "Freischaufeln Lead" (bzw. Formular-Submit)
   → diese Mail sofort senden.
 
-  VOR DEM EINSETZEN ERSETZEN:
-    [FREISCHAUFELN-URL]   → deine Vercel-URL (z.B. https://freischaufeln-xxxx.vercel.app)
-  AC-Merge-Tags %FIRSTNAME% / %EMAIL% bleiben stehen (füllt AC automatisch).
+  Tool-URL ist eingesetzt: https://freischaufeln.vercel.app/?e=%EMAIL%&n=%FIRSTNAME%
+  Der ?e=%EMAIL% sorgt dafür, dass das Tool die Person kennt und automatisch taggt.
+  AC-Merge-Tags %FIRSTNAME% / %EMAIL% bleiben stehen (füllt AC beim Versand automatisch).
   ============================================================ -->
 <!DOCTYPE html>
 <html lang="de">
@@ -52,7 +52,7 @@
               <!-- Button -->
               <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
                 <tr><td align="center">
-                  <a href="[FREISCHAUFELN-URL]/?e=%EMAIL%&n=%FIRSTNAME%" style="display:inline-block;background-color:#dc822e;color:#ffffff;text-decoration:none;font-family:Arial,sans-serif;font-weight:bold;font-size:16px;padding:16px 32px;border-radius:12px;">
+                  <a href="https://freischaufeln.vercel.app/?e=%EMAIL%&n=%FIRSTNAME%" style="display:inline-block;background-color:#dc822e;color:#ffffff;text-decoration:none;font-family:Arial,sans-serif;font-weight:bold;font-size:16px;padding:16px 32px;border-radius:12px;">
                     Jetzt Freischaufeln →
                   </a>
                 </td></tr>
