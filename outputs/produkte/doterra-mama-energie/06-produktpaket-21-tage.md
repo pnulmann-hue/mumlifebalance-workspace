@@ -11,44 +11,57 @@ Grundlage: Patricias echte tägliche Routine aus der Wendepunkt-Story. Produktna
 
 ---
 
-## ⭐ Kern-Paket („Energie-Paket") — 2 Produkte, alles abgedeckt
+## ⭐ Das Einschreibe-Paket („Energie-Paket") — muss ≥150 PV ergeben
+
+**Kern (Patricias echte 3 Täglichen) — ~125 PV:**
 
 | Produkt | Was es abdeckt (deine Bausteine) |
 |---|---|
-| **Lifelong Vitality Pack (LLV)** — Microplex VMz + xEO Mega + Alpha CRS+ | Mikronährstoffe (VMz) · **Omega 3** (xEO Mega) · Zell-Vitalität (Alpha CRS+). = dein „VMG + Omega 3" in einem Bundle. doTERRAs Flaggschiff für Vitalität/Energie. |
-| **PB Assist+** | Darm — dein Darm-Hormon-Modell (Ballaststoffe + Probiotika) |
+| **VMG+** (Microplex VMz) | Mikronährstoffe |
+| **PB Assist+** | Darm — dein Darm-Hormon-Modell (Präbiotika + Probiotika) |
+| **Omega 3** | Entzündung / Energie / klarer Kopf |
 
-→ Damit ist deine komplette tägliche Nährstoff-Routine drin. **Protein läuft über die Ernährung** (40g-Frühstück, 1/3-Teller-Regel) — kein Produkt nötig.
+→ Protein läuft über die **Ernährung** (30g/Mahlzeit, 1/3-Teller-Regel) — kein Produkt nötig.
 
-**Warum LLV der clevere Anker ist:**
-- Deckt 3 deiner Bausteine in einem Paket → einfach zu erklären, einfach zu bestellen
-- Ist das klassische **Loyalty-Order-Produkt** (monatliche Bestellung) → **wiederkehrende Provision** = dein 12–15k-Ziel
-- Ist markt-positioniert als „Vitalität/Energie" → passt 1:1 auf deine Nische
+**PV-Auffüller auf 150 (Einschreibegrenze) — EMPFOHLEN: das Öltrio**
+
+| Zusatz | Warum genau das |
+|---|---|
+| ⭐ **Öltrio Lavendel + Peppermint + Lemon** | Klinkt sich direkt in die Programm-Rituale: 🍋 Lemon morgens ins Wasser · 🌿 Peppermint Nachmittags-Kick (Aroma) · 💜 Lavendel Abend-Ritual (Tag 3). Macht Öle erlebbar, viel Begleitungs-Content, Türöffner für spätere Öl-Bestellungen. Füllt die ~25-PV-Lücke. |
+
+**Alternative statt Öltrio:** **TerraZyme** (Verdauungsenzyme → Nährstoffaufnahme/Energie, ergänzt PB Assist) — solide, aber „noch eine Kapsel" statt Ritual-Erlebnis. → Öltrio bevorzugt.
+
+> ⚠️ **Patricia im Backoffice bestätigen:** Kern (125) + Öltrio ≥ **150 PV**. Falls knapp: 15ml-Flaschen statt 5ml, oder Diffuser dazu.
 
 ---
 
-## ➕ Optionale Add-ons (kein Muss — für die, die mehr wollen)
+## ➕ Optionale Add-ons (Upsell, kein Muss)
 
 | Add-on | Wofür |
 |---|---|
-| **doTERRA Protein** (Plant Protein Schoko/Vanille) | zum „Pimpen", wenn's mal schnell gehen muss — nicht der Anker |
-| **Ein Ruhe-/Abend-Öl + Diffuser** | fürs Abend-Ritual (Tag 3 im Kickstart) — Lifestyle, kein Schlaf-Versprechen |
-| **Ein Citrus-/Morgen-Öl** | fürs Morgen-Ritual, frischer Start |
+| **doTERRA Protein** (Plant Protein Schoko/Vanille) | zum „Pimpen", wenn's mal schnell gehen muss |
+| **Diffuser** | für die Öle zu Hause — macht das Abend-Ritual schöner |
 
 ---
 
-## 💶 Enrollment-Logik (so entsteht deine Provision — du bestätigst Details)
+## 💶 Enrollment-Logik + der Verkaufs-Link (Tag 3)
 
-1. Kundin wird **Vorteilskundin / Wellness Advocate** (Wholesale-Preis statt Retail).
-2. Einstieg über ein **Enrollment-Kit** ODER LLV + PB Assist+ als Erstbestellung.
-3. **LLV als monatliche Bestellung (Loyalty Order)** → wiederkehrende Provision + sie bleibt in der Routine.
-4. Tags in AC: `kunde` (56) / `vorteilskunde` (57) / `wellness_advocate` (58) — schon vorhanden.
+**Verkaufsweg (Patricia-Entscheidung): direkter Paket-Link in Tag 3.**
 
-**Offen für dich zu füllen:**
-- [ ] CHF-Preis LLV (Wholesale + Retail)
-- [ ] CHF-Preis PB Assist+
-- [ ] Welches Enrollment-Kit empfiehlst du als Einstieg?
-- [ ] PV-Summe des Kern-Pakets (für die Provisions-/Rang-Rechnung)
+Damit du dabei **keine Provision verlierst**: KEIN normaler Retail-Produktlink, sondern ein
+**vorausgefüllter Warenkorb / Einschreibe-Link (doTERRA „Shareable Cart")** mit dem ganzen
+Paket (Kern + Öltrio) drin. Dann kauft sie über EINEN Klick **und** wird als **Vorteilskundin
+mit ≥150 PV eingeschrieben** — Direktkauf UND sauberes Setup.
+
+1. Shareable Cart im Backoffice bauen: VMG+ · PB Assist+ · Omega 3 · Öltrio (≥150 PV).
+2. Als Einschreibe-/Vorteilskunden-Cart konfigurieren (Wholesale-Preis).
+3. Optional Loyalty-Order (monatliche Bestellung) gleich mitanbieten → **wiederkehrende Provision**.
+4. AC-Tags: `kunde` (56) / `vorteilskunde` (57) / `wellness_advocate` (58) — vorhanden.
+
+**Offen für dich:**
+- [ ] Shareable-Cart-Link erstellen → in Tag-3-Mail als `{{PAKET-LINK}}` einsetzen
+- [ ] Prüfen: Paket ≥150 PV
+- [ ] CHF-Preise (Wholesale) für die Paket-Übersicht in der Mail
 
 ---
 

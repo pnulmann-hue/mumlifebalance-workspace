@@ -115,11 +115,21 @@ Und dann schau morgen früh, wie du aufwachst.
 
 Es braucht keine Radikal-Kur und kein Kopfstellen deines Lebens. Es sind ein paar einfache Anpassungen — anders frühstücken, sich bewegen, abends runterfahren — und die machen zusammen mega viel aus. Das ist das eigentlich Verrückte: wie viel Wirkung in so kleinen Stellschrauben steckt.
 
-Und genau da setz ich mit Mamas in meiner **21-Tage-Energie-Routine** an: Dein Paket kommt nach Hause, und ich begleite dich 21 Tage lang Schritt für Schritt — bis diese kleinen Anpassungen zu deiner Routine geworden sind und du sie nicht mehr „schaffen" musst, sondern einfach lebst.
+Und genau da setz ich mit Mamas in meiner **21-Tage-Energie-Routine** an: Dein Paket kommt nach Hause, du machst 21 Tage lang das, was du hier angefangen hast — und ich begleite dich Schritt für Schritt, bis es keine „Challenge" mehr ist, sondern einfach dein Alltag.
 
-Wenn du wissen willst, wie das für dich aussehen könnte, **antworte mir einfach mit `ROUTINE`** (oder schreib mir das Wort auf Instagram) — dann erzähl ich dir mehr. Kein Druck. Nur, falls du bereit bist. 🌿
+**Dein Energie-Paket** — genau die Sachen, die ich selbst täglich nehme:
+- ✓ VMG+ — deine Mikronährstoff-Basis
+- ✓ PB Assist+ — für deinen Darm
+- ✓ Omega 3 — für den klaren Kopf
+- ✓ Öltrio Lavendel · Peppermint · Lemon — für deine Morgen- und Abend-Rituale
 
-Ich bin stolz auf dich, dass du drei Tage drangeblieben bist. Das ist mehr, als die meisten tun.
+**→ [Hol dir dein Energie-Paket]({{PAKET-LINK}})**
+
+*Unsicher, ob das für dich passt, oder hast du eine Frage vorher? Schreib mir einfach `ROUTINE` auf Instagram — dann helf ich dir persönlich weiter. 🌿*
+
+Und ganz egal, wie du dich entscheidest: Ich bin stolz auf dich, dass du drei Tage drangeblieben bist. Das ist mehr, als die meisten tun.
+
+> ⚠️ **{{PAKET-LINK}}** = dein doTERRA Shareable-Cart / Einschreibe-Link (Paket ≥150 PV vorausgefüllt). Siehe [06-produktpaket-21-tage.md](06-produktpaket-21-tage.md).
 
 Alles Liebe,
 Patricia
