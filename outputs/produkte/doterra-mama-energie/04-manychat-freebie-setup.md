@@ -29,10 +29,9 @@ AC-Automation „doTERRA · 3-Tage-Kickstart"  (Trigger: Tag 84)
    ├─ warten bis nächster Tag 07:30
    ├─ Mail Tag 2  (Bewegung)         → +24h
    ├─ warten bis nächster Tag 07:30
-   └─ Mail Tag 3  (Schlaf + Brücke)  → +48h  · CTA „antworte ROUTINE"
-   
-Antwort „ROUTINE"  → ManyChat Tag „routine-interesse" (85)
-                   → 21-Tage-Info + Notiz an dich
+   └─ Mail Tag 3  (Schlaf + Paket)   → +48h  · CTA: Paket-Link (Cart)
+
+Bestellung im Cart  →  du meldest dich PERSÖNLICH (neue Einschreibung im doTERRA-Backoffice)
 ```
 
 ---
@@ -53,9 +52,8 @@ Nachricht:
 - Bestätigungs-DM:
 > Perfekt, hab ich! 🌸 Tag 1 ist grad unterwegs in dein Postfach — schau auch kurz im Spam, falls er sich versteckt. Bis gleich!
 
-### 3. Keyword `ROUTINE` (Brücke)
-- Neues Keyword `ROUTINE`
-- Aktion: **Tag `routine-interesse` (85)** + Antwort mit kurzer 21-Tage-Info + **Benachrichtigung an dich** (ManyChat → dein Telegram), damit du das Gespräch aufnimmst.
+### 3. Kein ROUTINE-Keyword mehr nötig
+Du meldest dich nach der Bestellung **persönlich** — die Bestellung kommt als neue Einschreibung in dein doTERRA-Backoffice. Also **kein** ManyChat-ROUTINE-Flow nötig. (Tag `routine-interesse` (85) bleibt ungenutzt, kann gelöscht werden.)
 
 ---
 
@@ -84,7 +82,7 @@ Nachricht:
 
 ## Was noch offen ist
 
-- [ ] ManyChat: `ENERGIE`-Flow + `ROUTINE`-Keyword bauen (Anleitung oben)
+- [ ] ManyChat: `ENERGIE`-Flow bauen (Anleitung oben)
 - [ ] ManyChat↔AC-Integration prüfen/verbinden (E-Mail → Liste 18 + Tag 84)
 - [ ] AC-Automation „doTERRA · 3-Tage-Kickstart" bauen (3 Mails + 2 Wartezeiten)
 - [ ] Mails ins Brand-Design bringen (ich adaptiere Template auf doTERRA-Orange, wenn gewünscht)
