@@ -107,19 +107,35 @@
       <div class="pain-list">
         <button class="pain-card" onclick="dShow('d-energie')">
           <span class="emoji">😴</span>
-          <span class="text">Ich bin ständig müde und komm einfach nicht durch den Tag.</span>
+          <span class="text">Ich bin ständig müde und komm nicht durch den Tag.</span>
+        </button>
+        <button class="pain-card" onclick="dShow('d-energie')">
+          <span class="emoji">🧠</span>
+          <span class="text">Ab Mitte 30 fühlt sich mein Körper anders an — irgendwas stimmt nicht mehr.</span>
+        </button>
+        <button class="pain-card" onclick="dShow('d-stress')">
+          <span class="emoji">😖</span>
+          <span class="text">Ich bin oft gestresst und innerlich unruhig.</span>
         </button>
         <button class="pain-card" onclick="dShow('d-familie')">
           <span class="emoji">🌿</span>
-          <span class="text">Ich will meinen Körper und den meiner Familie natürlich unterstützen — damit die Selbstheilungskräfte arbeiten können.</span>
+          <span class="text">Ich will meinen Körper und den meiner Familie natürlich unterstützen.</span>
+        </button>
+        <button class="pain-card" onclick="dShow('d-familie')">
+          <span class="emoji">🤧</span>
+          <span class="text">Ich will die Abwehrkräfte meiner Familie natürlich stärken (Erkältungszeit & Co.).</span>
         </button>
         <button class="pain-card" onclick="dShow('d-testen')">
           <span class="emoji">🧪</span>
           <span class="text">Ich bin neugierig auf Öle und will sie erstmal ausprobieren.</span>
         </button>
-        <button class="pain-card joker" onclick="dShow('d-oele')">
+        <button class="pain-card" onclick="dShow('d-oele')">
           <span class="emoji">📚</span>
           <span class="text">Ich hab schon Öle zuhause — nutze aber nur einen Bruchteil.</span>
+        </button>
+        <button class="pain-card joker" onclick="dShow('d-business')">
+          <span class="emoji">💰</span>
+          <span class="text">Ich will mir mit doTERRA selbst etwas aufbauen.</span>
         </button>
       </div>
     </div>
@@ -194,6 +210,41 @@
         <span><span class="res-title">3-Tage-Energie-Kickstart</span><br><span class="res-desc">3 Tage das, was mir geholfen hat, aus dem Dauer-Müde rauszukommen.</span></span>
         <span class="chev">→</span>
       </a>
+      <button class="back" onclick="dShow('d-select')">← zurück</button>
+    </div>
+
+    <!-- ERGEBNIS: STRESS & INNERE UNRUHE -->
+    <div class="screen" id="d-stress">
+      <div class="quote-card">
+        <p class="quote-text">Wenn der Kopf nie stillsteht und du innerlich ständig unter Strom bist — das kenn ich gut. Oft braucht's nur ein kleines Ritual, das dich zwischendurch runterholt.</p>
+      </div>
+      <span class="section-label">Zum Ausprobieren</span>
+      <a href="{{OELREISE-LINK}}" class="result-link primary" target="_blank" rel="noopener">
+        <span class="res-icon">🧪</span>
+        <span><span class="res-title">Ölreise — Muster bestellen</span><br><span class="res-desc">Teste in Ruhe die Öle, die mir helfen runterzukommen.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <span class="section-label">Und für mehr Energie</span>
+      <a href="{{KICKSTART-LINK}}" class="result-link">
+        <span class="res-icon">🔥</span>
+        <span><span class="res-title">3-Tage-Energie-Kickstart</span><br><span class="res-desc">Mit einem Abend-Ritual zum Runterfahren. Gratis.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <button class="back" onclick="dShow('d-select')">← zurück</button>
+    </div>
+
+    <!-- ERGEBNIS: BUSINESS AUFBAUEN -->
+    <div class="screen" id="d-business">
+      <div class="quote-card">
+        <p class="quote-text">Du willst doTERRA nicht nur nutzen, sondern dir was aufbauen? Ich zeig dir, wie das als Mama realistisch geht — mit System, ehrlich, ohne dein Leben auf den Kopf zu stellen.</p>
+      </div>
+      <span class="section-label">Lass uns reden</span>
+      <a href="https://www.instagram.com/patricia_ulmann" class="result-link primary" target="_blank" rel="noopener">
+        <span class="res-icon">💬</span>
+        <span><span class="res-title">Schreib mir eine DM</span><br><span class="res-desc">Erzähl mir kurz, wo du stehst — dann schauen wir, ob's passt.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <div class="note">Kein Hype, keine leeren Versprechen — nur ein ehrliches Gespräch.</div>
       <button class="back" onclick="dShow('d-select')">← zurück</button>
     </div>
 
