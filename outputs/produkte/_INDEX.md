@@ -25,6 +25,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 ### 📁 content-box-hooks
 
+- [[canva-bauplan]]
 - [[content-box-30-hook-vorlagen]]
 
 ### 📁 die-umsetzerinnen-club
