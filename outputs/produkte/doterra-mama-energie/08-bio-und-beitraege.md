@@ -36,7 +36,21 @@ Natürlich, als Mama von 4, mit 36 selbst erlebt
 👇 Gratis 3-Tage-Kickstart
 ```
 
-→ **Bio-Link** (das „👇"): ein **ManyChat-Link**, der den ENERGIE-Flow startet (ManyChat → Growth Tools → Ref-URL). Alternativ später eine kleine Landingpage. Solange kein Link steht: in der letzten Zeile stattdessen *„Kommentier ENERGIE unter meinen Beiträgen"*.
+**Variante D (mit Hausapotheke — 2 Standbeine, 1 CTA):**
+Name-Feld: `Patricia · natürlich gesunde Mama-Familie`
+```
+🌿 Mehr Energie für dich – Hausapotheke für deine Familie
+Mama von 4 · mit 36 selbst durch den Wendepunkt
+Natürlich, ehrlich, kein Hochglanz
+👇 Gratis: Energie-Kickstart + Hausapotheke-Workbook
+```
+→ Bei zwei Freebies: Bio-Link = **kleiner Hub (Linktree-Style)** mit beiden. In der Bio bleibt EIN „👇", dahinter beide Freebies.
+
+→ **Bio-Link** (das „👇"): ein **ManyChat-Link**, der den ENERGIE-Flow startet (ManyChat → Growth Tools → Ref-URL), ODER ein Link-Hub mit beiden Freebies. Alternativ später eine kleine Landingpage. Solange kein Link steht: in der letzten Zeile stattdessen *„Kommentier ENERGIE unter meinen Beiträgen"*.
+
+**Bausteine einer starken Bio (Checkliste):** 1) Wem hilfst du wobei · 2) Warum du (Mama 4, mit 36 erlebt) · 3) Differenzierer (kein Heilversprechen, echt) · 4) EIN klarer CTA · 5) Scanbarkeit (Emoji/Ort).
+
+**Hausapotheke-Workbook:** als eigenes 2. Freebie aufsetzen (Keyword `HAUSAPOTHEKE`, eigene Lieferung wie beim Kickstart) → zweiter Einstieg, gleiche Zielgruppe. = Säule 2 der Treppe.
 
 ---
 
