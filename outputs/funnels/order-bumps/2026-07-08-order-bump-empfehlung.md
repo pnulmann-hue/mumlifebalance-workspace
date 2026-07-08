@@ -27,9 +27,17 @@ tags: [funnel, order-bump]
 
 ## ✍️ Fertiger Bump-Text (copy-paste in ThriveCart)
 
-> **[ICH EMPFEHLE DIR DAS UNBEDINGT] Nimm die Content-Box für dein Thema gleich mit (17 CHF)**
+**Version A — vollständig:**
+
+> **[ICH EMPFEHLE DIR DAS UNBEDINGT] — nimm die Content-Box gleich mit (nur 17 CHF)**
 >
-> Du hast jetzt dein Thema — die grösste Hürde ist geschafft. Nur: Ein Thema, das keiner sieht, bringt dir keine Kundinnen. Genau hier setzt die Content-Box an: 30 fertige Hook-Vorlagen, die du nur noch mit deinem Thema füllst — und schon hast du Posts, die Menschen beim Scrollen stoppen lassen. **Das ist derselbe Hook-Baukasten, mit dem ich meine eigenen Reels und Karussells baue** — du sparst dir das stundenlange Grübeln „was poste ich bloss". Je klarer dein Content, desto schneller kommen die ersten Anfragen. Kein Rätselraten mehr, sondern eine Vorlage für jeden Tag. Ich würde sie an deiner Stelle mitnehmen — für ein paar Franken hast du Content-Ideen für Wochen.
+> Du hast dir gerade deinen Fahrplan zu deinem Thema gesichert — und die logische Fortsetzung ist der Content, der dieses Thema sichtbar macht. Die Content-Box gibt dir 30 fertige Hook-Vorlagen, die du nur noch mit deinem Thema füllst — und schon hast du Posts, die beim Scrollen stoppen. **Das ist derselbe Hook-Baukasten, mit dem ich meine eigenen Reels und Karussells schreibe** — Schluss mit dem stundenlangen Grübeln „was poste ich bloss". Je klarer dein Content, desto schneller kommen die ersten Anfragen — die Box spart dir Wochen an Ausprobieren. Wer sein Thema findet, will sowieso sofort wissen, wie er es rausträgt — hier hast du beides in einem Rutsch. **Ich empfehle dir unbedingt, sie jetzt für ein paar Franken mitzunehmen.**
+
+**Version B — kompakt (für die schmale Bump-Box):**
+
+> **[ICH EMPFEHLE DIR DAS UNBEDINGT] Nimm die Content-Box mit — 17 CHF**
+>
+> 30 fertige Hook-Vorlagen, die du nur noch mit deinem Thema füllst. **Derselbe Baukasten, mit dem ich meine eigenen Reels und Karussells schreibe.** Dein Thema ist gefunden — hier kommt sofort der Content dazu, ohne Grübeln „was poste ich". Ausfüllen und posten. Ich würde sie an deiner Stelle unbedingt mitnehmen.
 
 *(Ton geprüft: Patricia-Voice, Schweizer „ss", keine erfundenen Zahlen, keine Heilversprechen.)*
 
