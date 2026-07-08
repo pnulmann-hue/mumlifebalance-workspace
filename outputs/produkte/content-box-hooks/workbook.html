@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Die Content-Box — 30 Hook-Vorlagen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --creme:#f1ecdd; --petrol:#12828c; --petrol-d:#0e6a72; --blau:#29556d;
+    --ink:#1a1a1a; --muted:#5c5750; --line:#c9c1ad; --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  @page{ size:A4; margin:0; }
+  html,body{ font-family:'Source Sans 3',-apple-system,sans-serif; color:var(--ink); }
+  h1,h2,h3,.disp{ font-family:'Philosopher',Georgia,serif; }
+
+  .page{
+    position:relative; width:210mm; height:297mm; padding:20mm 18mm;
+    background:var(--creme); overflow:hidden; page-break-after:always;
+  }
+  .page:last-child{ page-break-after:auto; }
+
+  /* --- shared bits --- */
+  .kicker{ font-size:10pt; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--petrol); font-weight:700; }
+  .foot{ position:absolute; left:18mm; right:18mm; bottom:12mm;
+    display:flex; justify-content:space-between; font-size:8.5pt;
+    color:var(--muted); letter-spacing:.04em; }
+  .foot .brand{ font-family:'Philosopher',serif; }
+
+  /* --- COVER --- */
+  .cover{ background:var(--petrol); color:var(--white); padding:0; }
+  .cover .inner{ position:absolute; inset:14mm; border:1.4px solid rgba(255,255,255,.42);
+    display:flex; flex-direction:column; justify-content:space-between; padding:16mm 14mm; }
+  .cover .badge{ align-self:flex-start; font-size:9pt; letter-spacing:.18em;
+    text-transform:uppercase; border:1px solid rgba(255,255,255,.55);
+    padding:5px 12px; border-radius:20px; }
+  .cover h1{ font-size:52pt; line-height:1.02; font-weight:700; }
+  .cover .sub{ font-size:17pt; font-weight:300; margin-top:10mm; max-width:150mm;
+    font-family:'Source Sans 3',sans-serif; }
+  .cover .by{ font-size:12pt; letter-spacing:.05em; }
+  .cover .by b{ font-family:'Philosopher',serif; font-weight:700; }
+  .cover .dot{ color:#bfe6ea; }
+
+  /* --- text page --- */
+  h2.title{ font-size:30pt; font-weight:700; color:var(--blau); line-height:1.06;
+    margin:6mm 0 8mm; }
+  .lead{ font-size:13pt; line-height:1.62; color:var(--ink); max-width:150mm; }
+  .lead p{ margin-bottom:5mm; }
+  .sig{ font-family:'Philosopher',serif; font-style:italic; font-size:15pt;
+    color:var(--petrol); margin-top:10mm; }
+
+  /* --- rules --- */
+  .rule{ display:flex; gap:8mm; align-items:flex-start; margin-bottom:9mm; }
+  .rule .num{ font-family:'Philosopher',serif; font-size:30pt; font-weight:700;
+    color:var(--petrol); line-height:1; min-width:16mm; }
+  .rule h3{ font-size:15pt; color:var(--blau); margin-bottom:2mm; }
+  .rule p{ font-size:12pt; line-height:1.55; color:var(--muted); }
+
+  /* --- agenda --- */
+  .agenda{ margin-top:4mm; }
+  .agenda .row{ display:flex; align-items:center; gap:6mm; padding:6.5mm 0;
+    border-bottom:1px solid var(--line); }
+  .agenda .row:last-child{ border-bottom:none; }
+  .agenda .tag{ font-size:16pt; }
+  .agenda .txt b{ font-family:'Philosopher',serif; font-size:15pt; color:var(--blau);
+    font-weight:700; }
+  .agenda .txt span{ display:block; font-size:11pt; color:var(--muted); margin-top:1mm; }
+
+  /* --- category divider --- */
+  .div{ background:var(--blau); color:var(--white); }
+  .div .inner{ position:absolute; inset:0; display:flex; flex-direction:column;
+    justify-content:center; padding:0 24mm; }
+  .div .cat{ font-size:12pt; letter-spacing:.2em; text-transform:uppercase;
+    color:#bfe6ea; font-weight:700; margin-bottom:6mm; }
+  .div h2{ font-size:40pt; font-weight:700; line-height:1.05; }
+  .div .desc{ font-size:14pt; font-weight:300; margin-top:8mm; max-width:130mm;
+    line-height:1.5; font-style:italic; }
+  .div .no{ position:absolute; right:18mm; bottom:16mm; font-family:'Philosopher',serif;
+    font-size:60pt; color:rgba(255,255,255,.16); font-weight:700; }
+
+  /* --- worksheet --- */
+  .ws h2.title{ margin:0 0 6mm; font-size:24pt; }
+  .ws .catbar{ display:inline-block; font-size:9.5pt; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--petrol); font-weight:700; margin-bottom:1mm; }
+  .hook{ margin-bottom:6.2mm; }
+  .hook .nm{ font-size:11.5pt; font-weight:700; color:var(--blau); }
+  .hook .nm b{ color:var(--petrol); }
+  .hook .vor{ font-size:10.5pt; line-height:1.4; color:var(--ink); margin-top:1mm; }
+  .hook .bsp{ font-size:9.5pt; line-height:1.35; color:var(--muted);
+    font-style:italic; margin-top:.6mm; }
+  .hook .fill{ margin-top:2.4mm; border-bottom:1.2px dotted var(--line);
+    font-size:9pt; color:var(--line); padding-bottom:.5mm; }
+
+  /* --- checklist --- */
+  .check .item{ display:flex; gap:6mm; align-items:flex-start; padding:6mm 0;
+    border-bottom:1px solid var(--line); font-size:13pt; color:var(--ink); }
+  .check .box{ min-width:8mm; height:8mm; border:1.6px solid var(--petrol);
+    border-radius:2px; margin-top:1mm; }
+
+  /* --- back --- */
+  .back{ background:var(--petrol); color:var(--white); }
+  .back .inner{ position:absolute; inset:14mm; border:1.4px solid rgba(255,255,255,.42);
+    display:flex; flex-direction:column; justify-content:center; padding:16mm; }
+  .back h2{ font-size:32pt; line-height:1.1; font-weight:700; }
+  .back p{ font-size:13pt; line-height:1.6; font-weight:300; margin-top:8mm;
+    max-width:150mm; font-family:'Source Sans 3',sans-serif; }
+  .back .cta{ margin-top:12mm; font-family:'Philosopher',serif; font-size:15pt;
+    letter-spacing:.03em; }
+  .back .cta b{ display:block; font-size:19pt; margin-top:2mm; }
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <div class="inner">
+    <span class="badge">Ausdruckbar &amp; digital ausfüllbar</span>
+    <div>
+      <div class="kicker" style="color:#bfe6ea;">Deine Content-Box</div>
+      <h1>Die<br>Content-Box</h1>
+      <p class="sub">30 Hook-Vorlagen, die du nur noch mit deinem Thema füllst.</p>
+    </div>
+    <p class="by">Ein Workbook von <b>Patricia</b> <span class="dot">·</span> Mum Life Balance</p>
+  </div>
+</section>
+
+<!-- 2 WILLKOMMEN -->
+<section class="page">
+  <div class="kicker">Willkommen</div>
+  <h2 class="title">Schön, dass du<br>dabei bist.</h2>
+  <div class="lead">
+    <p>Du hast dein Thema gefunden — die grösste Hürde ist geschafft. Jetzt machen wir es sichtbar.</p>
+    <p>Ein Hook ist der erste Satz deines Reels oder Karussells. Er entscheidet in zwei Sekunden, ob jemand stehen bleibt oder weiterscrollt. Du musst ihn dir nie wieder aus dem Nichts ausdenken: In dieser Box hast du 30 fertige Muster. Du füllst nur die eckigen Klammern mit deinem Thema — fertig.</p>
+    <p>Nimm dir pro Woche zwei bis drei Vorlagen. Wechsle die Kategorien durch, damit dein Feed nicht gleich klingt. Und denk dran: fertig ist besser als perfekt.</p>
+  </div>
+  <p class="sig">Deine Patricia</p>
+  <div class="foot"><span class="brand">Mum Life Balance</span><span>Die Content-Box</span></div>
+</section>
+
+<!-- 3 REGELN -->
+<section class="page">
+  <div class="kicker">So nutzt du die Box</div>
+  <h2 class="title">3 Regeln, damit<br>deine Hooks ziehen.</h2>
+  <div style="margin-top:4mm;">
+    <div class="rule"><div class="num">1</div><div>
+      <h3>Setz den Hook ab Sekunde 0.</h3>
+      <p>Als Text im Bild und gesprochen — nicht erst nach dem Intro. Die ersten zwei Sekunden entscheiden alles.</p></div></div>
+    <div class="rule"><div class="num">2</div><div>
+      <h3>Nutze nur echte Zahlen.</h3>
+      <p>Wo <b>[Zahl]</b> steht: deine echte Zahl rein — oder den Baustein weglassen. Erfundene Zahlen spürt deine Zielgruppe.</p></div></div>
+    <div class="rule"><div class="num">3</div><div>
+      <h3>Film candid, nicht posiert.</h3>
+      <p>Der beste Hook rettet kein gestelltes Video. Sprich beim Tun — in der Küche, unterwegs, mit Kind auf dem Arm.</p></div></div>
+  </div>
+  <div class="foot"><span class="brand">Mum Life Balance</span><span>Die Content-Box</span></div>
+</section>
+
+<!-- 4 INHALT -->
+<section class="page">
+  <div class="kicker">Inhalt</div>
+  <h2 class="title">Was dich erwartet.</h2>
+  <div class="agenda">
+    <div class="row"><span class="tag">🟢</span><div class="txt"><b>Kategorie A — Reichweiten-stark</b><span>Kurz &amp; emotional. Löst sofort ein Gefühl aus.</span></div></div>
+    <div class="row"><span class="tag">🔵</span><div class="txt"><b>Kategorie B — Neugier &amp; Wissenslücke</b><span>Macht neugierig auf die Auflösung.</span></div></div>
+    <div class="row"><span class="tag">🔴</span><div class="txt"><b>Kategorie C — Provokation &amp; Gegenmeinung</b><span>Eine Wahrheit, die weh tut, aber stimmt.</span></div></div>
+    <div class="row"><span class="tag">🟡</span><div class="txt"><b>Kategorie D — Identifikation &amp; Erlaubnis</b><span>Dein „die meint mich"-Moment.</span></div></div>
+    <div class="row"><span class="tag">🟣</span><div class="txt"><b>Kategorie E — Story &amp; Szene</b><span>Nimm sie mit in einen Moment.</span></div></div>
+    <div class="row"><span class="tag">✅</span><div class="txt"><b>Deine Checkliste vor dem Posten</b><span>Fünf Häkchen, dann geht der Post raus.</span></div></div>
+  </div>
+  <div class="foot"><span class="brand">Mum Life Balance</span><span>Die Content-Box</span></div>
+</section>
+
+<!-- 5 DIV A -->
+<section class="page div">
+  <div class="inner">
+    <div class="cat">Kategorie A · 🟢</div>
+    <h2>Reichweiten-<br>stark.</h2>
+    <p class="desc">Kurz und emotional. Diese Hooks lösen sofort ein Gefühl aus — und Gefühl wird geteilt.</p>
+  </div>
+  <div class="no">A</div>
+</section>
+
+<!-- 6 WS A -->
+<section class="page ws">
+  <div class="catbar">🟢 Kategorie A · Reichweiten-stark</div>
+  <h2 class="title">Füll deine Hooks 1–6.</h2>
+  <div class="hook"><div class="nm"><b>1 · Bekenntnis</b></div>
+    <div class="vor">„Ich hab mich lange geschämt, <b>[etwas, das du heimlich getan/gefühlt hast]</b>."</div>
+    <div class="bsp">Bsp: „Ich hab mich lange geschämt, mein Business im Auto vor der Kita aufzubauen."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>2 · Antagonist-Call-out</b></div>
+    <div class="vor">„Für jede Mama, deren <b>[Thema]</b> von <b>[wem]</b> noch belächelt wird."</div>
+    <div class="bsp">Bsp: „Für jede Mama, deren Nebenbei-Business von den Pausenplatz-Mamas belächelt wird."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>3 · Zeitanker</b></div>
+    <div class="vor">„<b>[Gestern / Letzte Woche]</b> um <b>[Uhrzeit]</b> <b>[konkrete Szene zu deinem Thema]</b>."</div>
+    <div class="bsp">Bsp: „Gestern um 22 Uhr sass ich im dunklen Kinderzimmer und betreute meine erste Kundin."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>4 · POV</b></div>
+    <div class="vor">„POV: du bist die Einzige in deinem Umfeld, die <b>[was du rund um dein Thema tust]</b>."</div>
+    <div class="bsp">Bsp: „POV: du bist die Einzige in deinem Umfeld, die neben drei Kindern was Eigenes aufbaut."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>5 · Erlaubnis</b></div>
+    <div class="vor">„Du darfst <b>[was sich deine Zielgruppe insgeheim wünscht]</b> — auch <b>[trotz Einwand]</b>."</div>
+    <div class="bsp">Bsp: „Du darfst dir was Eigenes wünschen — auch als Mama, die eh keine Minute für sich hat."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>6 · „Die meint mich"-Call-out</b></div>
+    <div class="vor">„Wenn du <b>[heimliches Verhalten deiner Zielgruppe]</b>, ist das hier für dich."</div>
+    <div class="bsp">Bsp: „Wenn du dein Business noch vor der eigenen Familie versteckst, ist das hier für dich."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="foot"><span class="brand">Mum Life Balance</span><span>Kategorie A</span></div>
+</section>
+
+<!-- 7 DIV B -->
+<section class="page div">
+  <div class="inner">
+    <div class="cat">Kategorie B · 🔵</div>
+    <h2>Neugier &amp;<br>Wissenslücke.</h2>
+    <p class="desc">Öffne eine Lücke, die deine Leserin schliessen will — und sie bleibt bis zur Auflösung.</p>
+  </div>
+  <div class="no">B</div>
+</section>
+
+<!-- 8 WS B -->
+<section class="page ws">
+  <div class="catbar">🔵 Kategorie B · Neugier &amp; Wissenslücke</div>
+  <h2 class="title">Füll deine Hooks 7–12.</h2>
+  <div class="hook"><div class="nm"><b>7 · Falsche-Annahme</b></div>
+    <div class="vor">„<b>[Das Problem]</b> liegt nicht an <b>[naheliegender Grund]</b> — es liegt an DEM:"</div>
+    <div class="bsp">Bsp: „Dass du nie zum Posten kommst, liegt nicht an der Zeit — es liegt an dem:"</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>8 · Du-denkst</b></div>
+    <div class="vor">„Du denkst, dir fehlt <b>[X]</b> — dabei ist es in Wahrheit <b>[Y]</b>:"</div>
+    <div class="bsp">Bsp: „Du denkst, dir fehlen die Follower — dabei fehlt dir nur ein klares Thema:"</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>9 · Lektion / Curiosity-Gap</b></div>
+    <div class="vor">„Der eine Satz <b>[von wem]</b>, der bei <b>[deinem Thema]</b> alles verändert hat:"</div>
+    <div class="bsp">Bsp: „Der eine Satz meiner Mentorin, der mein ganzes Instagram-Profil verändert hat:"</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>10 · Grösster-Fehler</b></div>
+    <div class="vor">„Der grösste Fehler, den ich am Anfang bei <b>[deinem Thema]</b> gemacht hab:"</div>
+    <div class="bsp">Bsp: „Der grösste Fehler, den ich am Anfang mit meinen Reels gemacht hab:"</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>11 · Specificity-Bait / Liste</b></div>
+    <div class="vor">„<b>[Zahl]</b> <b>[Dinge]</b>, die <b>[Ergebnis]</b> — Nr. <b>[X]</b> nutzt fast keiner:"</div>
+    <div class="bsp">Bsp: „3 Sätze in deiner Bio, die deine Traumkundin abholen — Nr. 2 nutzt fast keiner:"</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>12 · Reframe</b></div>
+    <div class="vor">„Du hast kein <b>[vermeintliches Problem]</b> — du hast ein <b>[echtes Problem]</b>."</div>
+    <div class="bsp">Bsp: „Du hast kein Zeitproblem — du hast ein Prioritäten-Problem."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="foot"><span class="brand">Mum Life Balance</span><span>Kategorie B</span></div>
+</section>
+
+<!-- 9 DIV C -->
+<section class="page div">
+  <div class="inner">
+    <div class="cat">Kategorie C · 🔴</div>
+    <h2>Provokation &amp;<br>Gegenmeinung.</h2>
+    <p class="desc">Sag eine Wahrheit, die weh tut, aber stimmt. Haltung stoppt den Daumen.</p>
+  </div>
+  <div class="no">C</div>
+</section>
+
+<!-- 10 WS C -->
+<section class="page ws">
+  <div class="catbar">🔴 Kategorie C · Provokation &amp; Gegenmeinung</div>
+  <h2 class="title">Füll deine Hooks 13–18.</h2>
+  <div class="hook"><div class="nm"><b>13 · Hot Take</b></div>
+    <div class="vor">„<b>[Provokante Wahrheit zu deinem Thema, die weh tut, aber stimmt]</b>."</div>
+    <div class="bsp">Bsp: „Dein schlechtes Gewissen ist der schlechteste Business-Ratgeber, den du hast."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>14 · Unpopuläre Meinung</b></div>
+    <div class="vor">„Unpopuläre Meinung: Du brauchst kein <b>[was alle für nötig halten]</b>."</div>
+    <div class="bsp">Bsp: „Unpopuläre Meinung: Du brauchst kein weiteres Zertifikat, um sichtbar zu werden."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>15 · Befehl / Warnung</b></div>
+    <div class="vor">„Hör auf, <b>[kontraproduktives Verhalten deiner Zielgruppe]</b>."</div>
+    <div class="bsp">Bsp: „Hör auf, auf den perfekten Moment zum Starten zu warten."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>16 · Wenn-dann-Warnung</b></div>
+    <div class="vor">„Wenn du <b>[Verhalten]</b>, dann <b>[unangenehme Konsequenz]</b> — hör kurz zu:"</div>
+    <div class="bsp">Bsp: „Wenn du abends Ideen hast und sie dir morgens ausredest, dann hör kurz zu:"</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>17 · Contrarian-Vergleich</b></div>
+    <div class="vor">„Alle reden über <b>[Standard-Rat]</b>. Dabei bringt dir <b>[dein anderer Weg]</b> viel mehr."</div>
+    <div class="bsp">Bsp: „Alle reden über mehr Posten. Dabei bringt dir ein klares Thema viel mehr."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>18 · Kostet-dich</b></div>
+    <div class="vor">„<b>[Verbreitete Gewohnheit]</b> kostet dich <b>[konkrete Sache]</b> — und du merkst es nicht mal."</div>
+    <div class="bsp">Bsp: „Dein ständiges Umbauen der Bio kostet dich jede Woche Kundinnen."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="foot"><span class="brand">Mum Life Balance</span><span>Kategorie C</span></div>
+</section>
+
+<!-- 11 DIV D -->
+<section class="page div">
+  <div class="inner">
+    <div class="cat">Kategorie D · 🟡</div>
+    <h2>Identifikation<br>&amp; Erlaubnis.</h2>
+    <p class="desc">Spiegle den Moment, in dem deine Leserin denkt: „Die meint ja mich."</p>
+  </div>
+  <div class="no">D</div>
+</section>
+
+<!-- 12 WS D -->
+<section class="page ws">
+  <div class="catbar">🟡 Kategorie D · Identifikation &amp; Erlaubnis</div>
+  <h2 class="title">Füll deine Hooks 19–24.</h2>
+  <div class="hook"><div class="nm"><b>19 · Zwei-Typen</b></div>
+    <div class="vor">„Es gibt zwei Arten von <b>[Zielgruppe]</b>, die <b>[Ziel]</b> wollen:"</div>
+    <div class="bsp">Bsp: „Es gibt zwei Arten von Mamas, die endlich sichtbar werden wollen:"</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>20 · Für-dich-wenn</b></div>
+    <div class="vor">„Das hier ist für dich, wenn <b>[spezifische Situation deiner Zielgruppe]</b>."</div>
+    <div class="bsp">Bsp: „Das ist für dich, wenn du drei Kurse gekauft und keinen zu Ende gebracht hast."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>21 · Ich-kenne-das</b></div>
+    <div class="vor">„Ich kenne das selber: <b>[gemeinsamer Schmerz rund um dein Thema]</b>."</div>
+    <div class="bsp">Bsp: „Ich kenne das selber: Du sitzt vorm Handy und weisst nicht, was du posten sollst."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>22 · Endlich-Erlaubnis</b></div>
+    <div class="vor">„Du musst nicht <b>[Druck]</b>. Du darfst <b>[erleichternde Alternative]</b>."</div>
+    <div class="bsp">Bsp: „Du musst nicht jeden Tag posten. Du darfst mit einem Thema anfangen und dranbleiben."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>23 · Heimlich</b></div>
+    <div class="vor">„Wenn du <b>[dein Thema]</b> heimlich <b>[tust]</b>, weil <b>[Angst/Einwand]</b> — bleib hier."</div>
+    <div class="bsp">Bsp: „Wenn du dein Business heimlich aufbaust, weil du Angst vor Kommentaren hast — bleib hier."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>24 · Du-bist-nicht-allein</b></div>
+    <div class="vor">„Falls du denkst, du bist die Einzige, die <b>[Schmerz]</b> — du bist es nicht."</div>
+    <div class="bsp">Bsp: „Falls du denkst, du bist die Einzige, die abends heulend vorm Laptop sitzt — bist du nicht."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="foot"><span class="brand">Mum Life Balance</span><span>Kategorie D</span></div>
+</section>
+
+<!-- 13 DIV E -->
+<section class="page div">
+  <div class="inner">
+    <div class="cat">Kategorie E · 🟣</div>
+    <h2>Story &amp;<br>Szene.</h2>
+    <p class="desc">Nimm sie mit in einen Moment. Menschen erinnern Geschichten, nicht Tipps.</p>
+  </div>
+  <div class="no">E</div>
+</section>
+
+<!-- 14 WS E -->
+<section class="page ws">
+  <div class="catbar">🟣 Kategorie E · Story &amp; Szene</div>
+  <h2 class="title">Füll deine Hooks 25–30.</h2>
+  <div class="hook"><div class="nm"><b>25 · Szene / Belauscht</b></div>
+    <div class="vor">„<b>[Gestern/Neulich]</b> sagte <b>[wer]</b> einen Satz, der <b>[Wirkung]</b>:"</div>
+    <div class="bsp">Bsp: „Neulich sagte meine Tochter einen Satz, der mich mein Business hinterfragen liess:"</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>26 · Ich-lächle-nur</b></div>
+    <div class="vor">„Alle dachten, ich <b>[spinne]</b>, als ich <b>[Entscheidung]</b>. Ich lächle nur, weil …"</div>
+    <div class="bsp">Bsp: „Alle dachten, ich spinne, als ich mein altes Angebot rauswarf. Ich lächle nur, weil …"</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>27 · Vorher-Nachher</b></div>
+    <div class="vor">„<b>[Zeitpunkt früher]</b>: <b>[alter Zustand]</b>. Heute: <b>[neuer Zustand]</b>."</div>
+    <div class="bsp">Bsp: „Vor einem Jahr: keine Ahnung, wofür ich stehe. Heute: eine klare Botschaft."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>28 · Tag-Timeline</b> <span style="font-weight:400;color:var(--muted);font-size:9pt;">(nur echte Zahlen)</span></div>
+    <div class="vor">„Tag 1: <b>[Start]</b>. Tag <b>[Zahl]</b>: <b>[erster Erfolg]</b>. Tag <b>[Zahl]</b>: <b>[Punkt]</b>."</div>
+    <div class="bsp">Bsp: „Tag 1: keiner reagiert. Tag 40: die erste Anfrage. Tag 90: die erste zahlende Kundin."</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>29 · Der Moment</b></div>
+    <div class="vor">„Der Moment, in dem ich wusste, dass <b>[Erkenntnis zu deinem Thema]</b>:"</div>
+    <div class="bsp">Bsp: „Der Moment, in dem ich wusste, dass ich nie wieder ein Produkt in den Vordergrund stelle:"</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="hook"><div class="nm"><b>30 · Wendepunkt-Frage</b></div>
+    <div class="vor">„Was, wenn <b>[Glaubenssatz deiner Zielgruppe]</b> gar nicht stimmt?"</div>
+    <div class="bsp">Bsp: „Was, wenn du gar nicht mehr Reichweite brauchst, sondern nur ein klares Thema?"</div>
+    <div class="fill">Dein Hook: ______________________________________________________________</div></div>
+  <div class="foot"><span class="brand">Mum Life Balance</span><span>Kategorie E</span></div>
+</section>
+
+<!-- 15 CHECKLISTE -->
+<section class="page check">
+  <div class="kicker">Vor dem Posten</div>
+  <h2 class="title">Deine Checkliste.</h2>
+  <div style="margin-top:4mm;">
+    <div class="item"><div class="box"></div><div>Hook steht im Bild <b>und</b> wird gesprochen — ab Sekunde 0</div></div>
+    <div class="item"><div class="box"></div><div>Alle Klammern mit deinem echten Thema gefüllt</div></div>
+    <div class="item"><div class="box"></div><div>Nur echte Zahlen verwendet (den Rest weggelassen)</div></div>
+    <div class="item"><div class="box"></div><div>Video candid gefilmt — beim Tun, nicht posiert</div></div>
+    <div class="item"><div class="box"></div><div>Diese Woche zwei verschiedene Kategorien genutzt</div></div>
+  </div>
+  <div class="foot"><span class="brand">Mum Life Balance</span><span>Die Content-Box</span></div>
+</section>
+
+<!-- 16 BACK -->
+<section class="page back">
+  <div class="inner">
+    <div class="kicker" style="color:#bfe6ea;">Und jetzt?</div>
+    <h2>Dein Thema hat<br>jetzt Content.</h2>
+    <p>Du hast 30 Vorlagen — genug für Wochen. Wenn du merkst, dass die Hooks ziehen, du beim Verkaufen aber noch stockst: genau da geht's weiter. In „Expertin statt Verkäuferin" zeige ich dir, wie aus Reichweite Anfragen und aus Anfragen Kundinnen werden.</p>
+    <p>Und häng bei mir auf Instagram rein — dort siehst du die Hooks täglich in Aktion.</p>
+    <div class="cta">Wir sehen uns.<b>@mumlifebalance · mumlifebalance.ch</b></div>
+  </div>
+</section>
+
+</body>
+</html>
