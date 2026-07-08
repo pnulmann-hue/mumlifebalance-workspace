@@ -11,6 +11,10 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 - [[funnel-landkarte]]
 - [[instagram-lead-nurture-mails]]
 
+### 📁 order-bumps
+
+- [[2026-07-08-order-bump-empfehlung]]
+
 ### 📁 bio-check
 
 - [[werbeanzeige-bio-check]]
