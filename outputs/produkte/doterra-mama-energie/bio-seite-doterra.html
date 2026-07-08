@@ -1,0 +1,263 @@
+<!-- ============================================================
+  doTERRA Bio-Seite (@patricia_ulmann) — interaktiv, Design wie mumlifebalance.ch/bio
+  In doTERRA-Orange, ausgerichtet auf Mama-Bedürfnisse.
+  Auf neue WP-Seite (z.B. /energie oder /doterra) als Custom-HTML-Block.
+  Platzhalter ersetzen:
+    AVATAR_URL_HIER · {{KICKSTART-LINK}} · {{HAUSAPOTHEKERIN-LINK}} · {{OELREISE-LINK}}
+  Echte Links schon drin: Öl-Bibliothek-Bot, Padlet, doTERRA-Energie-Paket, IG-DM.
+  ============================================================ -->
+<style>
+  :root {
+    --orange: #dc822e; --orange-dark: #c4711f; --braun: #6b3410; --braun-soft: #8a5a2f;
+    --creme: #f7f1e4; --bg: #faf6ec; --text: #3a2a1a; --text-soft: #8a7a68; --weiss: #ffffff;
+  }
+  #dbio * { box-sizing: border-box; margin: 0; padding: 0; }
+  #dbio {
+    font-family: 'Source Sans 3', system-ui, sans-serif; color: var(--text);
+    background: var(--bg); line-height: 1.55; font-size: 18px; min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  #dbio .container { max-width: 580px; margin: 0 auto; padding: 32px 22px 56px; }
+  #dbio .hero { text-align: center; margin-bottom: 26px; }
+  #dbio .avatar {
+    width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 16px; overflow: hidden;
+    border: 5px solid var(--weiss); box-shadow: 0 10px 32px rgba(107,52,16,0.22); background: var(--orange);
+  }
+  #dbio .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #dbio .name { font-family: 'Philosopher', serif; font-size: 30px; font-weight: 700; color: var(--braun); margin-bottom: 6px; }
+  #dbio .slogan { font-family: 'Philosopher', serif; font-style: italic; font-size: 18px; color: var(--orange); font-weight: 400; }
+  #dbio .sub { font-size: 15px; color: var(--text-soft); margin-top: 8px; }
+
+  #dbio .cta-card {
+    background: linear-gradient(135deg, var(--orange), var(--orange-dark)); border-radius: 22px;
+    padding: 32px 26px; margin-bottom: 30px; text-align: center; color: var(--weiss);
+    box-shadow: 0 8px 26px rgba(220,130,46,0.32);
+  }
+  #dbio .cta-card h2 { font-family: 'Philosopher', serif; font-size: 25px; margin-bottom: 10px; font-weight: 700; line-height: 1.25; }
+  #dbio .cta-card p { font-size: 16px; opacity: 0.95; margin-bottom: 20px; }
+  #dbio .cta-btn {
+    display: inline-block; background: var(--weiss); color: var(--orange-dark); padding: 14px 30px;
+    border-radius: 999px; font-weight: 700; font-size: 16px; border: none; cursor: pointer;
+    transition: transform .15s ease, box-shadow .15s ease; box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  }
+  #dbio .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.24); }
+
+  #dbio .screen { display: none; animation: dfade .35s ease-out; }
+  #dbio .screen.active { display: block; }
+  @keyframes dfade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+  #dbio .pain-headline { font-family: 'Philosopher', serif; font-size: 24px; color: var(--braun); text-align: center; margin-bottom: 8px; line-height: 1.3; }
+  #dbio .pain-sub { text-align: center; color: var(--text-soft); font-size: 15px; margin-bottom: 24px; }
+  #dbio .pain-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+  #dbio .pain-card {
+    background: var(--orange); border: 2px solid transparent; border-radius: 16px; padding: 20px 22px;
+    text-align: left; cursor: pointer; display: flex; align-items: center; gap: 16px;
+    transition: all .18s ease; width: 100%; color: var(--weiss); font: inherit; box-shadow: 0 4px 14px rgba(220,130,46,0.18);
+  }
+  #dbio .pain-card .emoji { font-size: 26px; flex-shrink: 0; line-height: 1; }
+  #dbio .pain-card .text { flex: 1; font-size: 15.5px; line-height: 1.45; font-weight: 500; }
+  #dbio .pain-card:hover { background: var(--orange-dark); transform: translateX(2px); }
+  #dbio .pain-card.joker { background: var(--braun); }
+  #dbio .pain-card.joker:hover { background: var(--braun-soft); }
+
+  #dbio .quote-card { background: var(--weiss); border-radius: 18px; padding: 22px 24px; margin-bottom: 6px; border-left: 5px solid var(--orange); box-shadow: 0 3px 12px rgba(107,52,16,0.08); }
+  #dbio .quote-card .quote-text { font-family: 'Philosopher', serif; font-style: italic; font-size: 18px; color: var(--braun); line-height: 1.4; }
+  #dbio .section-label { display: block; font-size: 12px; color: var(--orange); text-transform: uppercase; letter-spacing: 0.18em; font-weight: 700; margin: 22px 0 10px; text-align: center; }
+  #dbio .result-link {
+    display: flex; align-items: center; gap: 14px; background: var(--weiss); border-radius: 14px;
+    padding: 16px 20px; color: var(--text); text-decoration: none; margin-bottom: 10px;
+    transition: all .15s ease; box-shadow: 0 2px 10px rgba(107,52,16,0.08); border: 2px solid transparent;
+  }
+  #dbio .result-link:hover { transform: translateY(-2px); border-color: var(--orange); box-shadow: 0 6px 18px rgba(220,130,46,0.18); }
+  #dbio .result-link.primary { background: linear-gradient(135deg, var(--orange), var(--orange-dark)); color: var(--weiss); }
+  #dbio .res-icon { font-size: 26px; flex-shrink: 0; }
+  #dbio .res-title { font-weight: 700; font-size: 16px; }
+  #dbio .res-desc { font-size: 13.5px; color: var(--text-soft); }
+  #dbio .result-link.primary .res-desc { color: rgba(255,255,255,0.9); }
+  #dbio .chev { margin-left: auto; font-size: 20px; opacity: 0.6; }
+  #dbio .note { background: #fbf3e8; border: 1px solid #f0d9bd; border-radius: 12px; padding: 14px 18px; font-size: 14px; color: var(--text-soft); margin-top: 16px; line-height: 1.5; }
+  #dbio .back { display: block; margin: 22px auto 0; background: none; border: none; cursor: pointer; color: var(--text-soft); font: inherit; font-size: 14px; text-decoration: underline; }
+  #dbio .foot { text-align: center; margin-top: 34px; font-size: 13px; color: var(--text-soft); }
+</style>
+
+<div id="dbio">
+  <div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="avatar"><img src="AVATAR_URL_HIER" alt="Patricia"></div>
+      <div class="name">Patricia</div>
+      <div class="slogan">Funktionieren war gestern.</div>
+      <div class="sub">Natürlich mehr Energie & Wohlbefinden für dich und deine Familie 🌿</div>
+    </div>
+
+    <!-- INTRO -->
+    <div class="screen active" id="d-intro">
+      <div class="cta-card">
+        <h2>Was brauchst du grad am meisten?</h2>
+        <p>Ein Klick — und ich zeig dir deinen passenden ersten Schritt. Ganz ohne Druck.</p>
+        <button class="cta-btn" onclick="dShow('d-select')">Los geht's 🌿</button>
+      </div>
+    </div>
+
+    <!-- BEDÜRFNIS-AUSWAHL -->
+    <div class="screen" id="d-select">
+      <div class="pain-headline">Was passt grad am ehesten zu dir?</div>
+      <div class="pain-sub">Ehrlich — es gibt kein falsch.</div>
+      <div class="pain-list">
+        <button class="pain-card" onclick="dShow('d-energie')">
+          <span class="emoji">😴</span>
+          <span class="text">Ich bin ständig müde und komm einfach nicht durch den Tag.</span>
+        </button>
+        <button class="pain-card" onclick="dShow('d-familie')">
+          <span class="emoji">🌿</span>
+          <span class="text">Ich will meinen Körper und den meiner Familie natürlich unterstützen — damit die Selbstheilungskräfte arbeiten können.</span>
+        </button>
+        <button class="pain-card" onclick="dShow('d-testen')">
+          <span class="emoji">🧪</span>
+          <span class="text">Ich bin neugierig auf Öle und will sie erstmal ausprobieren.</span>
+        </button>
+        <button class="pain-card joker" onclick="dShow('d-oele')">
+          <span class="emoji">📚</span>
+          <span class="text">Ich hab schon Öle zuhause — nutze aber nur einen Bruchteil.</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ERGEBNIS: ENERGIE -->
+    <div class="screen" id="d-energie">
+      <div class="quote-card">
+        <p class="quote-text">„Ich schlaf doch genug — warum bin ich trotzdem gerädert?" Genau diesen Satz kenn ich. Mit 36 war das mein Wendepunkt.</p>
+      </div>
+      <span class="section-label">Dein erster Schritt · gratis</span>
+      <a href="{{KICKSTART-LINK}}" class="result-link primary">
+        <span class="res-icon">🔥</span>
+        <span><span class="res-title">3-Tage-Energie-Kickstart</span><br><span class="res-desc">Iss 3 Tage wie ich seit meinem Wendepunkt — und spür den Unterschied.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <span class="section-label">Wenn du magst</span>
+      <a href="https://padlet.com/pnulmann/wohlf-hlen-leicht-gemacht-hfzk8ccha55mu9ny" class="result-link" target="_blank" rel="noopener">
+        <span class="res-icon">🌱</span>
+        <span><span class="res-title">Wohlfühlen leicht gemacht</span><br><span class="res-desc">Meine Sammlung mit Anwendungen & Ritualen.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <button class="back" onclick="dShow('d-select')">← zurück</button>
+    </div>
+
+    <!-- ERGEBNIS: FAMILIE / HAUSAPOTHEKERIN -->
+    <div class="screen" id="d-familie">
+      <div class="quote-card">
+        <p class="quote-text">Als Mama willst du für deine Familie das Natürlichste. Mit den richtigen Ölen im Haus hast du das Gefühl: Ich kann meinen Körper und den meiner Kinder im Alltag unterstützen.</p>
+      </div>
+      <span class="section-label">Dein Weg dahin</span>
+      <a href="{{HAUSAPOTHEKERIN-LINK}}" class="result-link primary">
+        <span class="res-icon">🏡</span>
+        <span><span class="res-title">Werde Hausapothekerin</span><br><span class="res-desc">Die 10 wichtigsten Öle + mein Workbook — deine natürliche Familien-Basis, Schritt für Schritt begleitet.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <span class="section-label">Lieber erst schnuppern?</span>
+      <a href="{{OELREISE-LINK}}" class="result-link" target="_blank" rel="noopener">
+        <span class="res-icon">🧪</span>
+        <span><span class="res-title">Ölreise — Muster bestellen</span><br><span class="res-desc">Teste die Öle erstmal in Ruhe zuhause.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <a href="https://bot.mumlifebalance.ch" class="result-link" target="_blank" rel="noopener">
+        <span class="res-icon">🤖</span>
+        <span><span class="res-title">Meine Öl-Bibliothek</span><br><span class="res-desc">Frag im Chat, welches Öl wofür.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <button class="back" onclick="dShow('d-select')">← zurück</button>
+    </div>
+
+    <!-- ERGEBNIS: ERSTMAL TESTEN -->
+    <div class="screen" id="d-testen">
+      <div class="quote-card">
+        <p class="quote-text">Du musst nicht gleich all-in gehen. Schnupper rein, finde raus, was dir guttut — und geh dann deinen Schritt.</p>
+      </div>
+      <span class="section-label">Mach die Ölreise</span>
+      <a href="{{OELREISE-LINK}}" class="result-link primary" target="_blank" rel="noopener">
+        <span class="res-icon">🧪</span>
+        <span><span class="res-title">Ölreise — Muster bestellen</span><br><span class="res-desc">Öle in Ruhe zuhause testen, ganz ohne Verpflichtung.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <span class="section-label">Zum Stöbern</span>
+      <a href="https://bot.mumlifebalance.ch" class="result-link" target="_blank" rel="noopener">
+        <span class="res-icon">🤖</span>
+        <span><span class="res-title">Meine Öl-Bibliothek</span><br><span class="res-desc">Alles zum Nachschlagen im Chat.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <button class="back" onclick="dShow('d-select')">← zurück</button>
+    </div>
+
+    <!-- ERGEBNIS: SCHON ÖLE -->
+    <div class="screen" id="d-oele">
+      <div class="quote-card">
+        <p class="quote-text">Die meisten haben ihre Öle im Schrank und nutzen sie nur zum Diffusen. Dabei geht so viel mehr — im Alltag, für dich und die ganze Familie.</p>
+      </div>
+      <span class="section-label">Hol mehr aus deinen Ölen</span>
+      <a href="https://bot.mumlifebalance.ch" class="result-link primary" target="_blank" rel="noopener">
+        <span class="res-icon">🤖</span>
+        <span><span class="res-title">Meine Öl-Bibliothek</span><br><span class="res-desc">Frag im Chat jede Anwendung ab — rund um die Uhr.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <a href="https://padlet.com/pnulmann/wohlf-hlen-leicht-gemacht-hfzk8ccha55mu9ny" class="result-link" target="_blank" rel="noopener">
+        <span class="res-icon">🌱</span>
+        <span><span class="res-title">Wohlfühlen leicht gemacht</span><br><span class="res-desc">Anwendungen & Rituale zum Nachmachen.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <span class="section-label">Willst du tiefer gehen?</span>
+      <div class="pain-list">
+        <button class="pain-card" onclick="dShow('d-oele-meine')">
+          <span class="emoji">💛</span>
+          <span class="text">Ich bin schon über Patricia dabei.</span>
+        </button>
+        <button class="pain-card joker" onclick="dShow('d-oele-andere')">
+          <span class="emoji">🌿</span>
+          <span class="text">Ich hab (noch) keine Beraterin / kaufe selbst.</span>
+        </button>
+      </div>
+      <button class="back" onclick="dShow('d-select')">← zurück</button>
+    </div>
+
+    <!-- ÖLE: schon meine Kundin -->
+    <div class="screen" id="d-oele-meine">
+      <div class="quote-card">
+        <p class="quote-text">Wie schön, dass wir schon zusammen unterwegs sind! 🌿 Dann lass uns schauen, wie du wirklich alles rausholst.</p>
+      </div>
+      <span class="section-label">Melde dich bei mir</span>
+      <a href="https://www.instagram.com/patricia_ulmann" class="result-link primary" target="_blank" rel="noopener">
+        <span class="res-icon">💬</span>
+        <span><span class="res-title">Schreib mir eine DM</span><br><span class="res-desc">Wir schauen gemeinsam deine Routine an.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <button class="back" onclick="dShow('d-oele')">← zurück</button>
+    </div>
+
+    <!-- ÖLE: keine/andere Beraterin -->
+    <div class="screen" id="d-oele-andere">
+      <div class="quote-card">
+        <p class="quote-text">Ganz ehrlich: Wenn du schon eine Beraterin hast, bleib bei ihr — das gehört sich so. Das Wissen hier ist trotzdem für dich da. 🌿</p>
+      </div>
+      <span class="section-label">Wenn du (noch) keine hast</span>
+      <a href="https://doterra.me/b0yKEX" class="result-link primary" target="_blank" rel="noopener">
+        <span class="res-icon">🌿</span>
+        <span><span class="res-title">Mein Energie-Paket ansehen</span><br><span class="res-desc">Die Sachen, die ich täglich nehme — mit persönlicher Begleitung.</span></span>
+        <span class="chev">→</span>
+      </a>
+      <div class="note">Kein Druck — schau in Ruhe. Bei Fragen schreib mir einfach auf Instagram.</div>
+      <button class="back" onclick="dShow('d-oele')">← zurück</button>
+    </div>
+
+    <div class="foot">Patricia Ulmann · natürlich mehr Energie im Mama-Alltag</div>
+  </div>
+</div>
+
+<script>
+  function dShow(id) {
+    var scr = document.querySelectorAll('#dbio .screen');
+    for (var i = 0; i < scr.length; i++) scr[i].classList.remove('active');
+    var el = document.getElementById(id);
+    if (el) el.classList.add('active');
+    if (window.scrollTo) window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
