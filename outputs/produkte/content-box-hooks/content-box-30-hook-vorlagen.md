@@ -19,7 +19,7 @@ Ein Hook ist der erste Satz deines Reels oder Karussells. Er entscheidet in 2 Se
 
 1. **Setz den Hook ab Sekunde 0.** Als Text im Bild *und* gesprochen. Nicht erst nach dem Intro.
 2. **Nutze nur echte Zahlen.** Wo `[Zahl]` steht: schreib deine echte Zahl rein oder lass den Baustein weg. Erfundene Zahlen spürt deine Zielgruppe.
-3. **Film candid, nicht posiert.** Der beste Hook rettet kein gestelltes Video. Sprich beim Tun — in der Küche, unterwegs, mit Kind auf dem Arm.
+3. **Film ungestellt, nicht posiert.** Der beste Hook rettet kein gestelltes Video. Sprich beim Tun — in der Küche, unterwegs, mit Kind auf dem Arm.
 
 Such dir pro Woche 2–3 Vorlagen aus. Wechsle die Kategorien durch, damit dein Feed nicht gleich klingt.
 
@@ -171,7 +171,7 @@ Such dir pro Woche 2–3 Vorlagen aus. Wechsle die Kategorien durch, damit dein 
 - [ ] Hook steht im Bild UND wird gesprochen — ab Sekunde 0
 - [ ] Alle `[Klammern]` mit deinem echten Thema gefüllt
 - [ ] Nur echte Zahlen verwendet (Rest weggelassen)
-- [ ] Video candid gefilmt (beim Tun, nicht posiert)
+- [ ] Video ungestellt gefilmt (beim Tun, nicht posiert)
 - [ ] Diese Woche 2 verschiedene Kategorien genutzt
 
 ---

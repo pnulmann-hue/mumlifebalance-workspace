@@ -51,7 +51,7 @@ Such dir in der Vorlage jeweils die **Variante, die dir optisch am besten gefäl
 
 1. **Setz den Hook ab Sekunde 0.** Als Text im Bild und gesprochen — nicht erst nach dem Intro.
 2. **Nutze nur echte Zahlen.** Wo `[Zahl]` steht: deine echte Zahl rein oder den Baustein weglassen. Erfundene Zahlen spürt deine Zielgruppe.
-3. **Film candid, nicht posiert.** Der beste Hook rettet kein gestelltes Video. Sprich beim Tun — in der Küche, unterwegs, mit Kind auf dem Arm.
+3. **Film ungestellt, nicht posiert.** Der beste Hook rettet kein gestelltes Video. Sprich beim Tun — in der Küche, unterwegs, mit Kind auf dem Arm.
 
 ---
 
@@ -106,7 +106,7 @@ Die 30 Hook-Texte stehen fertig in **`content-box-30-hook-vorlagen.md`** (gleich
 - [ ] Hook steht im Bild UND wird gesprochen — ab Sekunde 0
 - [ ] Alle Klammern mit deinem echten Thema gefüllt
 - [ ] Nur echte Zahlen verwendet (Rest weggelassen)
-- [ ] Video candid gefilmt (beim Tun, nicht posiert)
+- [ ] Video ungestellt gefilmt (beim Tun, nicht posiert)
 - [ ] Diese Woche zwei verschiedene Kategorien genutzt
 
 ---
