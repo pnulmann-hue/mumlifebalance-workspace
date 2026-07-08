@@ -23,6 +23,10 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[00-bootcamp-produkt]]
 - [[anmeldeseite]]
 
+### 📁 content-box-hooks
+
+- [[content-box-30-hook-vorlagen]]
+
 ### 📁 die-umsetzerinnen-club
 
 - [[00-briefing]]
