@@ -7,7 +7,7 @@ tags: [produkt, order-bump, hooks]
 **Order-Bump-Produkt zu „Finde dein Thema als Network-Mama" · 17 CHF**
 *Roh-Content der PDF (gerendert via `workbook.html` → `content-box-30-hook-vorlagen.pdf`).*
 
-> **Beispiele bewusst nischen-gemischt:** Ernährung · Naturkosmetik/Gesichtspflege · natürliche Reinigungsmittel · ätherische Öle · Nahrungsergänzung · Fitness. So sieht jede Network-Mama, wie sie ihr eigenes Thema einsetzt. **Endkund:innen geschlechtsoffen** gehalten. **Network-Compliance:** keine Heilversprechen.
+> **Prinzip der Beispiele:** nischen-gemischt (Ernährung · Naturkosmetik/Gesichtspflege · natürliche Reinigungsmittel · ätherische Öle · Nahrungsergänzung · Fitness) UND die meisten sprechen das **Problem der Endkundin** an, nicht das Business der Mama. Story-Hooks (Bekenntnis, Vorher-Nachher) bleiben persönlich, aber am Kundenthema. **Endkund:innen geschlechtsoffen. Network-Compliance: keine Heilversprechen** (Öle/Supplements/Ernährung lifestyle-formuliert).
 
 ---
 
@@ -31,83 +31,83 @@ Such dir pro Woche 2–3 Vorlagen aus. Wechsle die Kategorien durch, damit dein 
 
 **1 · Bekenntnis**
 > Vorlage: „Ich hab mich lange geschämt, `[etwas, das du heimlich getan/gefühlt hast]`."
-> Bsp (Naturkosmetik): „Ich hab mich lange geschämt, meine Naturkosmetik offen auf Instagram zu zeigen."
+> Bsp (Naturkosmetik): „Ich hab jahrelang jeden Morgen fünf Cremes ins Gesicht geschmiert — und mich trotzdem nie richtig wohlgefühlt."
 
 **2 · Antagonist-Call-out**
 > Vorlage: „Für jede Mama, deren `[Thema]` von `[wem]` noch belächelt wird."
-> Bsp (Reinigungsmittel): „Für jede Mama, deren plastikfreier Haushalt von der Verwandtschaft noch belächelt wird."
+> Bsp (Reinigungsmittel): „Für jede Mama, die die Flut an Putzflaschen unter der Spüle einfach satt hat."
 
 **3 · Zeitanker**
-> Vorlage: „`[Gestern / Letzte Woche]` um `[Uhrzeit]` `[konkrete Szene zu deinem Thema]`."
-> Bsp (Ernährung): „Gestern um 22 Uhr sass ich im dunklen Kinderzimmer und beantwortete die erste Anfrage zu meinem Ernährungs-Coaching."
+> Vorlage: „`[Gestern / Letzte Woche]` um `[Uhrzeit]` `[konkrete Szene]`."
+> Bsp (Ernährung): „Gestern um 22 Uhr schrieb mir eine Mama: ‚Ich weiss abends einfach nie, was ich noch kochen soll.'"
 
 **4 · POV**
-> Vorlage: „POV: du bist die Einzige in deinem Umfeld, die `[was du rund um dein Thema tust]`."
-> Bsp (ätherische Öle): „POV: du bist die Einzige in deinem Umfeld, die mit ätherischen Ölen statt Chemie durch den Alltag geht."
+> Vorlage: „POV: du bist die Einzige in deinem Umfeld, die `[…]`." *(oder POV auf die Kundin: „POV: dein `[Kundenwunsch]`")*
+> Bsp (ätherische Öle): „POV: dein Zuhause riecht frisch — ganz ohne ein einziges künstliches Duftspray."
 
 **5 · Erlaubnis**
 > Vorlage: „Du darfst `[was sich deine Zielgruppe insgeheim wünscht]` — auch `[trotz Einwand]`."
-> Bsp (Fitness): „Du darfst dein Bewegungs-Business aufbauen — auch wenn du selbst gerade nicht in Topform bist."
+> Bsp (Fitness): „Du darfst wieder mit deinem Körper anfangen — auch wenn seit dem Baby schon Jahre vergangen sind."
 
 **6 · „Die meint mich"-Call-out**
-> Vorlage: „Wenn du `[heimliches Verhalten deiner Zielgruppe]`, ist das hier für dich."
-> Bsp (Nahrungsergänzung): „Wenn du deine Nahrungsergänzung heimlich nimmst, statt offen darüber zu reden, ist das hier für dich."
+> Vorlage: „Wenn du `[Situation deiner Kundin]`, ist das hier für dich."
+> Bsp (Nahrungsergänzung): „Wenn du im Vitamin-Regal stehst und keine Ahnung hast, was du eigentlich brauchst, ist das hier für dich."
 
 ---
 
 ## 🔵 Kategorie B — Neugier & Wissenslücke
 
 **7 · Falsche-Annahme**
-> Vorlage: „`[Das Problem]` liegt nicht an `[naheliegender Grund]` — es liegt an DEM:"
-> Bsp (Gesichtspflege): „Dass deine Wunschkundschaft nicht kauft, liegt nicht am Preis der Gesichtspflege — es liegt an dem:"
+> Vorlage: „`[Problem der Kundin]` liegt nicht an `[naheliegender Grund]` — es liegt an DEM:"
+> Bsp (Gesichtspflege): „Dass deine Haut sich nicht wohlfühlt, liegt nicht an zu wenig Produkten — es liegt an dem:"
 
 **8 · Du-denkst**
-> Vorlage: „Du denkst, dir fehlt `[X]` — dabei ist es in Wahrheit `[Y]`:"
-> Bsp (Reinigungsmittel): „Du denkst, keiner will natürliche Reinigungsmittel — dabei fehlt dir nur der richtige erste Satz:"
+> Vorlage: „Du denkst, `[Annahme der Kundin]` — dabei ist es in Wahrheit `[Y]`:"
+> Bsp (Reinigungsmittel): „Du denkst, du brauchst zehn verschiedene Reiniger — dabei reicht in Wahrheit einer:"
 
 **9 · Lektion / Curiosity-Gap**
-> Vorlage: „Der eine Satz `[von wem]`, der bei `[deinem Thema]` alles verändert hat:"
-> Bsp (Ernährung): „Der eine Satz meiner Mentorin, der mein Ernährungs-Business verändert hat:"
+> Vorlage: „Der eine Satz `[von wem]`, der bei `[Thema]` alles verändert hat:"
+> Bsp (Ernährung): „Der eine Satz meiner Oma, der meine ganze Ernährung verändert hat:"
 
 **10 · Grösster-Fehler**
-> Vorlage: „Der grösste Fehler, den ich am Anfang bei `[deinem Thema]` gemacht hab:"
-> Bsp (ätherische Öle): „Der grösste Fehler, den ich am Anfang mit meinen Ölen gemacht hab:"
+> Vorlage: „Der grösste Fehler, den fast alle bei `[Thema]` machen:"
+> Bsp (ätherische Öle): „Der grösste Fehler, den fast alle beim Kauf von ätherischen Ölen machen:"
 
 **11 · Specificity-Bait / Liste**
-> Vorlage: „`[Zahl]` `[Dinge]`, die `[Ergebnis]` — Nr. `[X]` nutzt fast keiner:"
-> Bsp (Naturkosmetik): „3 Sätze in deiner Bio, die deine Wunschkundschaft für Naturkosmetik sofort abholen — Nr. 2 nutzt fast keiner:"
+> Vorlage: „`[Zahl]` `[Dinge]`, die `[Ergebnis für die Kundin]` — Nr. `[X]` nutzt fast keiner:"
+> Bsp (Naturkosmetik): „3 Inhaltsstoffe, die in keiner Gesichtscreme stecken sollten — Nr. 2 nutzt fast jede:"
 
 **12 · Reframe**
 > Vorlage: „Du hast kein `[vermeintliches Problem]` — du hast ein `[echtes Problem]`."
-> Bsp (Fitness): „Du hast kein Motivations-Problem beim Training — du hast ein Struktur-Problem."
+> Bsp (Fitness): „Du hast kein Motivations-Problem — du hast ein ‚keine Zeit im Mama-Alltag'-Problem."
 
 ---
 
 ## 🔴 Kategorie C — Provokation & Gegenmeinung
 
 **13 · Hot Take**
-> Vorlage: „`[Provokante Wahrheit zu deinem Thema, die weh tut, aber stimmt]`."
-> Bsp (Ernährung): „Dein Vorher-Nachher-Foto verkauft weniger als deine ehrliche Geschichte dahinter."
+> Vorlage: „`[Provokante Wahrheit, die weh tut, aber stimmt]`."
+> Bsp (Gesichtspflege): „Die teuerste Creme im Bad bringt dir nichts, wenn du nicht weisst, was deine Haut wirklich braucht."
 
 **14 · Unpopuläre Meinung**
 > Vorlage: „Unpopuläre Meinung: Du brauchst kein `[was alle für nötig halten]`."
-> Bsp (Nahrungsergänzung): „Unpopuläre Meinung: Du brauchst keine Studien auswendig, um über deine Produkte zu reden."
+> Bsp (Nahrungsergänzung): „Unpopuläre Meinung: Du brauchst keine zehn Nahrungsergänzungsmittel — du brauchst die richtigen zwei."
 
 **15 · Befehl / Warnung**
-> Vorlage: „Hör auf, `[kontraproduktives Verhalten deiner Zielgruppe]`."
-> Bsp (Reinigungsmittel): „Hör auf, jede Zutat deiner Reinigungsmittel zu erklären, bevor überhaupt jemand fragt."
+> Vorlage: „Hör auf, `[kontraproduktives Verhalten der Kundin]`."
+> Bsp (Reinigungsmittel): „Hör auf, aggressive Chemie zu putzen, wo deine Kinder danach mit den Händen drüberfahren."
 
 **16 · Wenn-dann-Warnung**
-> Vorlage: „Wenn du `[Verhalten]`, dann `[unangenehme Konsequenz]` — hör kurz zu:"
-> Bsp (Gesichtspflege): „Wenn du abends Ideen zu deiner Hautpflege hast und sie dir morgens ausredest, dann hör kurz zu:"
+> Vorlage: „Wenn `[Situation der Kundin]`, dann `[Konsequenz]` — hör kurz zu:"
+> Bsp (Gesichtspflege): „Wenn deine Haut abends spannt und du morgens einfach die nächste Creme kaufst, dann hör kurz zu:"
 
 **17 · Contrarian-Vergleich**
-> Vorlage: „Alle reden über `[Standard-Rat]`. Dabei bringt dir `[dein anderer Weg]` viel mehr."
-> Bsp (ätherische Öle): „Alle posten Produktfotos ihrer Öle. Dabei verkauft deine eigene Alltags-Geschichte viel mehr."
+> Vorlage: „Alle `[Standard-Verhalten]`. Dabei bringt `[deine Alternative]` viel mehr."
+> Bsp (ätherische Öle): „Alle greifen zum Raumspray. Dabei macht ein einziger Tropfen ätherisches Öl viel mehr her."
 
 **18 · Kostet-dich**
-> Vorlage: „`[Verbreitete Gewohnheit]` kostet dich `[konkrete Sache]` — und du merkst es nicht mal."
-> Bsp (allgemein): „Dein ständiges Ändern deines Angebots kostet dich jede Woche Anfragen — und du merkst es nicht mal."
+> Vorlage: „`[Gewohnheit der Kundin]` kostet dich `[konkrete Sache]` — und du merkst es nicht mal."
+> Bsp (Reinigungsmittel): „Jede Plastikflasche Putzmittel kostet dich mehr, als draufsteht — spätestens beim Entsorgen."
 
 ---
 
@@ -115,27 +115,27 @@ Such dir pro Woche 2–3 Vorlagen aus. Wechsle die Kategorien durch, damit dein 
 
 **19 · Zwei-Typen**
 > Vorlage: „Es gibt zwei Arten von `[Zielgruppe]`, die `[Ziel]` wollen:"
-> Bsp (Naturkosmetik): „Es gibt zwei Arten von Mamas, die mit Naturkosmetik sichtbar werden wollen:"
+> Bsp (Naturkosmetik): „Es gibt zwei Arten von Mamas, die auf Naturkosmetik umsteigen wollen:"
 
 **20 · Für-dich-wenn**
-> Vorlage: „Das hier ist für dich, wenn `[spezifische Situation deiner Zielgruppe]`."
-> Bsp (Ernährung): „Das hier ist für dich, wenn du schon drei Ernährungs-Ausbildungen gemacht und trotzdem nie gestartet hast."
+> Vorlage: „Das hier ist für dich, wenn `[spezifische Situation der Kundin]`."
+> Bsp (Ernährung): „Das hier ist für dich, wenn du schon zig Diäten probiert und keine davon durchgehalten hast."
 
 **21 · Ich-kenne-das**
-> Vorlage: „Ich kenne das selber: `[gemeinsamer Schmerz rund um dein Thema]`."
-> Bsp (Reinigungsmittel): „Ich kenne das selber: Du stehst mit deinem plastikfreien Putzmittel da und weisst nicht, wie du es zeigen sollst."
+> Vorlage: „Ich kenne das selber: `[gemeinsamer Schmerz]`."
+> Bsp (Reinigungsmittel): „Ich kenne das selber: Du willst weg von der Chemie, aber im Regal stehen zwanzig Flaschen und du weisst nicht, wo anfangen."
 
 **22 · Endlich-Erlaubnis**
 > Vorlage: „Du musst nicht `[Druck]`. Du darfst `[erleichternde Alternative]`."
-> Bsp (Fitness): „Du musst nicht jeden Tag ein Workout zeigen. Du darfst mit einem Thema anfangen und dranbleiben."
+> Bsp (Fitness): „Du musst nicht stundenlang ins Studio. Du darfst mit zehn Minuten zuhause anfangen."
 
 **23 · Heimlich**
-> Vorlage: „Wenn du `[dein Thema]` heimlich `[tust]`, weil `[Angst/Einwand]` — bleib hier."
-> Bsp (Gesichtspflege): „Wenn du deine Hautpflege-Empfehlungen nur heimlich per DM gibst, weil du Angst vor Kommentaren hast — bleib hier."
+> Vorlage: „Wenn du `[Thema]` heimlich `[tust]`, weil `[Angst/Einwand]` — bleib hier."
+> Bsp (Nahrungsergänzung): „Wenn du deine Vitamine heimlich nimmst, weil deine Familie denkt, das sei Geldverschwendung — bleib hier."
 
 **24 · Du-bist-nicht-allein**
 > Vorlage: „Falls du denkst, du bist die Einzige, die `[Schmerz]` — du bist es nicht."
-> Bsp (ätherische Öle): „Falls du denkst, du bist die Einzige, die abends heulend vorm Laptop sitzt und an ihrem Öl-Business zweifelt — bist du nicht."
+> Bsp (ätherische Öle): „Falls du denkst, du bist die Einzige, die den ganzen künstlichen Duft im Haushalt leid ist — bist du nicht."
 
 ---
 
@@ -143,7 +143,7 @@ Such dir pro Woche 2–3 Vorlagen aus. Wechsle die Kategorien durch, damit dein 
 
 **25 · Szene / Belauscht**
 > Vorlage: „`[Gestern/Neulich]` sagte `[wer]` einen Satz, der `[Wirkung]`:"
-> Bsp (Ernährung): „Neulich sagte meine Tochter einen Satz über mein Essen, der mein Ernährungs-Business veränderte:"
+> Bsp (Ernährung): „Neulich sagte meine Tochter beim Znacht einen Satz, der mir zeigte, warum ich unser Essen umgestellt hab:"
 
 **26 · Ich-lächle-nur**
 > Vorlage: „Alle dachten, ich `[spinne]`, als ich `[Entscheidung]`. Ich lächle nur, weil …"
@@ -154,16 +154,16 @@ Such dir pro Woche 2–3 Vorlagen aus. Wechsle die Kategorien durch, damit dein 
 > Bsp (Naturkosmetik): „Vor einem Jahr: ein Regal voller Drogerie-Cremes. Heute: eine klare Naturkosmetik-Routine, hinter der ich stehe."
 
 **28 · Tag-Timeline** *(nur echte Zahlen)*
-> Vorlage: „Tag 1: `[Start]`. Tag `[Zahl]`: `[erster Erfolg]`. Tag `[Zahl]`: `[Punkt]`."
-> Bsp (Fitness): „Tag 1: keiner reagiert auf meine Trainings-Posts. Tag 40: die erste Anfrage. Tag 90: der erste bezahlte Auftrag."
+> Vorlage: „Tag 1: `[Start]`. Tag `[Zahl]`: `[erster Fortschritt]`. Tag `[Zahl]`: `[Punkt]`."
+> Bsp (Fitness): „Tag 1: Rücken platt nach dem Tragen. Tag 30: die erste Übung sitzt. Tag 90: der Alltag mit Baby fällt leichter."
 
 **29 · Der Moment**
-> Vorlage: „Der Moment, in dem ich wusste, dass `[Erkenntnis zu deinem Thema]`:"
-> Bsp (ätherische Öle): „Der Moment, in dem ich wusste, dass ich nie wieder das Öl in den Vordergrund stelle, sondern die Geschichte dahinter:"
+> Vorlage: „Der Moment, in dem ich wusste, dass `[Erkenntnis]`:"
+> Bsp (ätherische Öle): „Der Moment, in dem ich wusste, dass ich nie wieder ein künstliches Duftspray kaufe:"
 
 **30 · Wendepunkt-Frage**
-> Vorlage: „Was, wenn `[Glaubenssatz deiner Zielgruppe]` gar nicht stimmt?"
-> Bsp (Ernährung): „Was, wenn nicht das perfekte Produkt verkauft, sondern deine ehrliche Ernährungs-Geschichte?"
+> Vorlage: „Was, wenn `[Glaubenssatz der Kundin]` gar nicht stimmt?"
+> Bsp (Ernährung): „Was, wenn nicht die nächste Diät dein Problem löst, sondern ein ehrlicher Blick auf deine Gewohnheiten?"
 
 ---
 
