@@ -117,7 +117,7 @@ Die 30 Hook-Texte stehen fertig in **`content-box-30-hook-vorlagen.md`** (gleich
 **Überschrift:** Dein Thema hat jetzt Content. Und jetzt?
 
 **Text:**
-> Du hast 30 Vorlagen — genug für Wochen. Wenn du merkst, dass die Hooks ziehen, aber du beim Verkaufen noch stockst: Genau da geht's weiter. In **„Expertin statt Verkäuferin"** zeige ich dir, wie aus Reichweite Anfragen und aus Anfragen Kundinnen werden.
+> Du hast 30 Vorlagen — genug für Wochen. Wenn deine Hooks ziehen und du dein Instagram wirklich zur Kundenquelle machen willst: genau da geht's weiter. In der **„Instagram-Kundenmaschine"** zeige ich dir Schritt für Schritt, wie aus Reichweite laufend Anfragen und daraus zahlende Kundschaft werden.
 >
 > Und häng bei mir auf Instagram rein — dort siehst du die Hooks täglich in Aktion.
 
