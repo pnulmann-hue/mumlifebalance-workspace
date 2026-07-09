@@ -2,7 +2,7 @@
 tags: [content, hooks, reference]
 ---
 
-# Hook-Master-Liste — alle Hook-Formeln aus allen Quellen
+# Hook-Master-Liste — alle Hook-Formeln
 
 **Zweck:** Der komplette Hook-Vorrat deines Content-Assistenten an EINEM Ort. Wird von `/monats-hooks`, `/hooks` und `/freitag-hooks` gelesen. **Erfinden ist verboten — hier auswählen und auf Thema + Zielgruppe zuschneiden.**
 
@@ -10,7 +10,7 @@ tags: [content, hooks, reference]
 
 ---
 
-## 🥇 Vor dem Auswählen — die Reichweiten-Hierarchie (aus Patricias Tests)
+## 🥇 Vor dem Auswählen — die Reichweiten-Hierarchie
 
 1. **Video-Stil = #1** — candid „beim Tun" (Alltag, Bewegung) schlägt posiert deutlich.
 2. **Thema = #2** — universeller Lebens-Schmerz reicht weit; business-interne Themen floppen.
@@ -21,7 +21,7 @@ tags: [content, hooks, reference]
 
 ---
 
-## Quelle 1 — Hook-Formeln-Katalog (22 Formeln, mit Test-Daten)
+## 1 · Kern-Formeln (mit Test-Ergebnissen)
 
 **Reichweiten-stark (kurz + emotional):**
 1. `[P]` **Bekenntnis** ✅ — „Ich hab mich lange geschämt, [Geständnis zum Thema]."
@@ -57,21 +57,21 @@ tags: [content, hooks, reference]
 
 ---
 
-## Quelle 2 — Hook-Framework (Grund-Kategorien + Julia-Trost-Sync)
+## 2 · Kategorie-Vorlagen
 
 **Zahlen `[E]`:** „Ich mache [Zahl] mit [Detail]." · „[Zahl] Stunden reichen — wenn du DAS machst." · „Von 0 auf [Zahl] in [Zeitraum]." · „[Zahl] Fehler, die dein [Thema] killen."
 **Anleitung `[E]`:** „Die exakte [Strategie] hinter meinen [Ergebnis]:" · „So baust du [Ergebnis] auf — Schritt für Schritt." · „Der einzige [Prozess], den du für [Ergebnis] brauchst."
 **Provokant `[I]`:** „Du brauchst keine [was alle denken]. Du brauchst [was hilft]." · „Das sagt dir niemand über [Thema]." · „[Annahme] ist ein Mythos."
 **Neugier `[E]`:** „Das hätte ich gerne [Zeitraum] früher gewusst." · „Was passiert, wenn du [Aktion] [Zeitraum] durchziehst:"
 **Identifikation `[P]`:** „Für jede Mama, die [Situation] kennt." · „Du bist nicht zu müde. Du brauchst ein besseres System."
-**Bragging (Julia) `[I]`:** „Wenn du realisierst, dass du die erste [X] in deiner Familie bist, die [Ziel]."
-**Widerstand-Watch-me (Julia) `[I]`:** „Alle sagen [Einwand]. Bei mir war es genau andersrum."
-**Kritiker-Zitat (Julia) `[P]`:** „[echtes Zitat aus dem Umfeld]. Hier ist meine Antwort."
-**You-can-be-both (Julia) `[P]`:** „Ich bin [erwartete Rolle] UND [Gegenteil]."
+**Bragging `[I]`:** „Wenn du realisierst, dass du die erste [X] in deiner Familie bist, die [Ziel]."
+**Widerstand-Watch-me `[I]`:** „Alle sagen [Einwand]. Bei mir war es genau andersrum."
+**Kritiker-Zitat `[P]`:** „[echtes Zitat aus dem Umfeld]. Hier ist meine Antwort."
+**You-can-be-both `[P]`:** „Ich bin [erwartete Rolle] UND [Gegenteil]."
 
 ---
 
-## Quelle 3 — Content-Radar (5 datenbasierte Formeln, echte Performance)
+## 3 · Datenbasierte Formeln (Performance-getestet)
 
 - `[P]` **A · Zeitanker + Zahl + Ergebnis + Mama-Kontext** — „Letzte Woche haben [Zahl] [ZG] in [Zeit] entschieden, [Handlung]. Ich war noch in [Alltagsdetail]."
 - `[E]` **B · Zeitersparnis + Alltag + KI + Ergebnis** — „In [X] Minuten — beim [Tätigkeit] — hat KI heute [Ergebnis]. Kommentier [KEYWORD]."
@@ -81,7 +81,7 @@ tags: [content, hooks, reference]
 
 ---
 
-## Quelle 4 — Reach-Hunter (10 Frameworks · Views = Original-Kurs, NICHT Patricias)
+## 4 · Reveal- & Neugier-Frameworks
 
 1. `[E]` **Experten-Interview** (nur Nicht-Expertin) — „Ich fragte [Experte]: '[Frage]?' Nicht [A], nicht [B] — sondern DAS:"
 2. `[E]` **Experten-Aussage** — „[Experte + Erfahrung] sagt: [Situation] — [überraschende Erkenntnis]."
@@ -98,7 +98,7 @@ tags: [content, hooks, reference]
 
 ---
 
-## Quelle 5 — Content-Tresor Reichweitenherz (50 Vorlagen in 5 Säulen)
+## 5 · Vorlagen-Bibliothek · 5 Content-Säulen
 
 ### Säule 1 · Identifikation `[P]`
 1. „Kann mir mal jemand erklären, warum bei […] alle so tun, als wäre das total einfach?"
@@ -159,11 +159,11 @@ tags: [content, hooks, reference]
 8. „Wenn du bei […] schneller vorankommen willst als die meisten, musst du jetzt […]."
 9. „Blicke 90 Tage nach vorn. Wenn du dort […] erreicht haben willst, führt kein Weg an dieser Entscheidung vorbei."
 
-> Tresor-Regel: `[...]` mit echtem Thema füllen, CTA nach Ziel wählen (Folgen/Speichern/Teilen/Keyword), durch die Blackliste filtern (Tresor nutzt teils gesperrte Dreier-Aufzählungen — Struktur-Inspiration, nicht 1:1).
+> Vorlagen-Regel: `[...]` mit echtem Thema füllen, CTA nach Ziel wählen (Folgen/Speichern/Teilen/Keyword), durch die Blackliste filtern (manche Vorlagen nutzen gesperrte Dreier-Aufzählungen — Struktur-Inspiration, nicht 1:1).
 
 ---
 
-## Quelle 6 — Hormozi (8 Hook-Kategorien)
+## 6 · Struktur-Kategorien (Persuasion)
 
 1. `[E]` **Schock-Statistik** ⚠️ echte Zahl — „[X %] der [ZG] [Fakt]."
 2. `[I]` **Konträre Meinung** — „Vergiss [verbreiteter Rat]. Das ist nicht dein Problem."
@@ -177,6 +177,5 @@ tags: [content, hooks, reference]
 ---
 
 ## 🔗 Verwandte Notizen
-- [[hook-formeln-katalog]] · [[hook-framework]] · [[content-radar-juni-2026]]
 - [[ki-phrasen-blackliste]] — Filter, gewinnt immer
 - [[mama-schmerz-themen-pool]] — welche Themen reichweitenstark
