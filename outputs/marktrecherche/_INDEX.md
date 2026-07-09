@@ -26,3 +26,6 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 - [[KW25-mentoring]]
 - [[KW26-doterra]]
 - [[KW26-mentoring]]
+- [[KW27-doterra]]
+- [[KW27-mentoring]]
+- [[2026-07-doterra-hormonwechsel/_INDEX|📦 doTERRA Monatspaket Juli 2026 (Hormonwechsel)]]
