@@ -50,6 +50,11 @@ Komplette Whisper-Transkripte aller bereits aufgenommenen Lektionen.
 **Säule 4:** nur `.txt` (Whisper medium, aufgenommen 2026-06-29; Roh-Transkript, Tool-Namen Cowork/Notion/Claude Code authentisch belassen)
 **Säule 5 + So geht's weiter:** nur `.txt` (Whisper medium, aufgenommen 2026-07-01; Roh-Transkript). ⚠️ Das „So geht's weiter"-Transkript ist ein **Cross-Sell/Verkaufs-Video** — beim Sync ins Kunden-Wissen keine Mentoren-Namen übernehmen.
 
+### Live-Calls / Coaching-Calls (kein Lektions-Material)
+| Datei | Datum | Inhalt | Länge |
+|---|---|---|---|
+| `2026-07-09-mama-ceo-call-live.txt` (+ `.srt` / `.json`) | 2026-07-09 | Live-Coaching-Call — Thema/Säulen-Klarheit, Customer Journey, viele weitere Themen. Themen-Landkarte: `2026-07-09-mama-ceo-call-THEMENKARTE.md`. Relevante Abschnitte auf Wunsch in andere Kurse kopiert. | ~158 Min (Whisper medium, lokal) |
+
 ### Alle 5 Säulen aufgenommen ✅ (Stand 2026-07-01)
 - Kurs komplett: Willkommen + Säule 1–5 + Abschluss „So geht's weiter".
 
