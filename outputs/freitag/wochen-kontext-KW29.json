@@ -1,0 +1,33 @@
+{
+  "kw": 29,
+  "zeitraum": "2026-07-13/2026-07-19",
+  "generiert_am": "2026-07-10",
+  "launch_phase": "post-launch",
+  "hauptthema": "Kein Notion-Wochenfokus eingetragen → Reichweiten-Motor (Mama-Identity) + Funnel-Neuaufbau aus frischer Marktrecherche",
+  "launch_detail": {
+    "mba_cart_close": "2026-07-05 23:59 (technisch geschlossen; Nachzügler nur via Stories/DM)",
+    "feed_regel": "Feed nennt KEINE Programme/Preise — MBA-Nachzügler nur via Stories + DM (Memory feedback_keine-programme-im-feed)",
+    "launch_fenster": "KW24-27 abgeschlossen; KW29 ausserhalb"
+  },
+  "mentoring_saeule": "B-Story (Legitimation/Familie nimmt Business nicht ernst) + C-Reichweite (Mama-Identitaet, altes Ich)",
+  "doterra_saeule": "Brain Fog + Mental Load + Schlaf/Wake-Up (Reels-only-Phase <300 Follower, kein Launch)",
+  "aktiver_funnel_primaer": { "name": "Funnel-Neuaufbau Mentoring", "keywords": ["BIO", "QUIZ", "STORY", "ECHT1", "ZEIT"], "profile": "mentoring" },
+  "aktiver_funnel_sekundaer": [
+    { "name": "Bio-Check", "keyword": "BIO", "profile": "mentoring" },
+    { "name": "0€ Potenzial-Test (Quiz)", "keyword": "QUIZ", "profile": "mentoring" },
+    { "name": "Story-Challenge (7-Tage)", "keyword": "STORY", "profile": "mentoring" },
+    { "name": "Workbook Von 0 auf echt", "keyword": "ECHT1", "profile": "mentoring" },
+    { "name": "0€ To-Do-Liste halbieren", "keyword": "ZEIT", "profile": "mentoring" },
+    { "name": "doTERRA Energie-Kur", "keyword": "ENERGIE", "profile": "doterra", "hinweis": "nur via DM, kein Feed-Keyword" }
+  ],
+  "verkaufs_trigger": "Kein aktiver Feed-Launch, kein Wochen-Produkt in Notion. Feed baut Reichweite + Liste neu auf (3 Reichweite + 1 Lead pro Profil).",
+  "notion_wochenfokus": "Kein Wochenfokus fuer KW29 verifizierbar (autonomer Cron) — abgeleitet aus frischer Marktrecherche (KW28-mentoring.md + KW28-doterra.md) + Post-Launch-Kontext KW28.",
+  "quellen": [
+    "outputs/marktrecherche/KW28-mentoring.md",
+    "outputs/marktrecherche/KW28-doterra.md",
+    "outputs/freitag/2026-07-10-hooks.md",
+    "outputs/freitag/wochen-kontext-KW28.json",
+    "context/active-funnels.json",
+    "context/reichweiten-formel-mama-identity.md"
+  ]
+}
