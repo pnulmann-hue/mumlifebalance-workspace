@@ -1,67 +1,51 @@
 {
-  "datum": "2026-07-12",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": true,
-        "phase": "verkaufsphase",
-        "tag_im_launch": 28,
-        "vorlage": "Persönliche Story / Dein Weg",
-        "titel": "Sonntag, ganz nahbar",
-        "story_ziel": "Ruhiger Ferien-BTS-Moment, Beziehung stärken, Cart nur als leise Erinnerung. Story darf leicht sein.",
-        "kaeufertyp": "Ina",
-        "cta": "Cart offen — Link",
-        "cta_keyword": "MBA"
-      },
-      "kontext_snapshot": {
-        "kw": 28,
-        "wochentag": "Sonntag",
-        "datum": "2026-07-12"
-      },
-      "gesendet_am": "2026-07-12T04:42:01.626Z",
-      "telegram_message_id": 874,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Lifestyle / Sonntags-Reflexion / Lifehack",
-        "titel": "Lifestyle / Sonntags-Reflexion / Lifehack",
-        "story_ziel": "Nahbarer Produktivitäts-/Motivations-Hack oder ruhige Reflexion — Beziehung stärken.",
-        "kaeufertyp": "Ina",
-        "cta": "optional, niederschwellig",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 28,
-        "wochentag": "Sonntag",
-        "datum": "2026-07-12"
-      },
-      "gesendet_am": "2026-07-12T04:42:02.602Z",
-      "telegram_message_id": 875,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "mentoring",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "Bio-Check",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": null,
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": {
+    "datum": "2026-07-12",
+    "phase": "verkaufsphase",
+    "julia_vorlage": "persoenlich",
+    "titel": "Sonntag, ganz nahbar",
+    "story_ziel": "Ruhiger Ferien-BTS-Moment, Beziehung stärken, Cart nur als leise Erinnerung. Story darf leicht sein.",
+    "kaeufertyp": "Ina",
+    "cta": "Cart offen — Link",
+    "cta_keyword": "MBA",
+    "profil": "mentoring"
+  },
+  "launch_vorlage": {
+    "name": "Persönliche Story / Dein Weg",
+    "phase": "alle",
+    "ziel": "Nahbarkeit + Identifikation. Eigene Geschichte zum Thema — was hat es mit DIR gemacht.",
+    "julia_anleitung": "Bringe deine eigene Story ein (wir können nur verkaufen was wir selbst erlebt/verkörpert haben). Erste Slide für Spannung ('willst du was Unglaubliches sehen?'), dann Vorher/Nachher oder Vision, dann wie du dahin kamst, dann sanfte Weiterleitung. Alles visualisieren.",
+    "kaeufertyp": "Amelie (Ängstlich) + Zoe (Zögerlich)",
+    "slide_bogen": "Spannungs-Hook → Vision/Ergebnis zeigen → früher war es anders (deine Story) → was du gelernt/investiert hast → Brücke zum Angebot"
+  },
+  "kontext_snapshot": {
+    "kw": 28,
+    "wochentag": "Sonntag",
+    "datum": "2026-07-12"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-07-12T07:08:04.235Z",
+  "telegram_message_id": 876,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
