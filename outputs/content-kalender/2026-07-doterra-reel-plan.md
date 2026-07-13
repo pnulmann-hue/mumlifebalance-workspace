@@ -4,7 +4,7 @@ tags: [content, reels, doterra, monatsplan]
 
 # doTERRA Juli 2026 — Reel-Plan „Zurück zu deiner Energie"
 
-**Profil:** doTERRA/Network · **Ziel:** Reichweite auf den Energie-/Erschöpfungs-Schmerz + Leads auf den **Energietracker**.
+**Profil:** doTERRA/Network · **Ziel:** Reichweite auf den Energie-/Erschöpfungs-Schmerz + Leads auf den **3-Tage-Energie-Kickstart** (Freebie · Keyword **ENERGIE** · Landing `mumlifebalance.ch/energie-kickstart` · 3-Mail-Sequenz · Tag 84).
 **Wissens-Quellen:** [[Perimenopause-Power]] · [[Aromatherapie fuer entspannte Wechseljahre (Snyder)]] · Mikronährstoffe · Omega-3 · Gamechanger Protein · Moringa · Organuhr · Schlafstörungen (alle in `context/doTERRA/wissen/`).
 
 ## Format-Regeln (Pflicht)
@@ -15,7 +15,7 @@ tags: [content, reels, doterra, monatsplan]
 - **Reichweitenherz-Voice:** Komplizen-Einstieg · wörtlicher innerer Monolog · harter Cut („Die Wahrheit?" / „Spoiler:") · Alltags-Bild · weicher Trost-Turn · 1–2 derbe Wörter · CTA als Gesprächs-Fortsetzung. **Clean-warm gewinnt** · Schweizer ss · **kein** „Nicht X, sondern Y".
 - **Facebook parallel** posten (deine 35+-Zielgruppe ist dort aktiver).
 
-> ⚠️ **Bitte bestätigen:** Ist der **Energietracker** dein bestehendes ENERGIE-Freebie (Padlet, Keyword ENERGIE) oder ein neues Tool? Und läuft der Lead-CTA über **„kommentier ENERGIE"** (ManyChat) oder einen Link? Ich hab unten ENERGIE als Keyword gesetzt — sag, wenn's anders ist.
+> ✅ **Lead-Freebie geklärt:** doTERRA **3-Tage-Energie-Kickstart** — Opt-in via **„kommentier ENERGIE"** (ManyChat) ODER Landing `mumlifebalance.ch/energie-kickstart`. Danach 3-Mail-Sequenz. Beim Reel-CTA immer das Keyword nennen; Landing ist der Bio-Link-Weg.
 
 ---
 
@@ -35,10 +35,10 @@ tags: [content, reels, doterra, monatsplan]
 - **CTA (Speichern/Teilen):** „Speicher's — und schick's der Freundin, die auch ständig sagt ‚ich bin halt einfach müde'."
 
 ### Reel 3 · 🟡 LEAD · Energietracker · Talking-Head oder B-Roll
-- **Hook:** „Ich hab **eine Woche** lang nur EINE Sache getrackt — und endlich gesehen, wann mir wirklich die Energie flöten geht."
+- **Hook:** „Ich hab **3 Tage** lang nur EINE Sache getrackt — und endlich gesehen, wann mir wirklich die Energie flöten geht."
 - **Aufbau:** Energie ist nicht random, sie hat Muster (Tageszeit, nach dem Essen, Schlaf) — wer's sieht, kann was ändern. Weich, ohne Pitch bis zum CTA.
 - **Buch-Anker:** *Perimenopause-Power* Kp4 — „Energie ist der Massstab", Blutzucker-Muster; Organuhr (Tagesrhythmus).
-- **CTA (Lead):** „Ich hab dir dafür meinen **Energietracker** gebaut — kommentier **ENERGIE** und ich schick ihn dir in die DMs. 💛"
+- **CTA (Lead):** „Ich hab dir dafür meinen **3-Tage-Energie-Kickstart** gebaut — kommentier **ENERGIE** und ich schick ihn dir in die DMs. 💛"
 
 ---
 
@@ -59,7 +59,7 @@ tags: [content, reels, doterra, monatsplan]
 ### Reel 3 · 🟡 LEAD · Energietracker · B-Roll
 - **Hook:** „Bevor du am Schlaf schraubst: check **einen Tag** lang, wann deine Energie kippt."
 - **Aufbau:** Schlaf + Energie hängen zusammen; der Tracker macht sichtbar, wo du ansetzen musst. Weich bis CTA.
-- **CTA (Lead):** „Kommentier **ENERGIE** — ich schick dir meinen Energietracker, mit dem du's in ein paar Tagen selbst siehst."
+- **CTA (Lead):** „Kommentier **ENERGIE** — ich schick dir meinen 3-Tage-Energie-Kickstart, mit dem du's in 3 Tagen selbst siehst."
 
 ---
 
@@ -80,7 +80,7 @@ tags: [content, reels, doterra, monatsplan]
 ### Reel 3 · 🟡 LEAD · Energietracker · Talking-Head
 - **Hook:** „Ich hör auf zu raten, warum ich müde bin — und **schau's mir an**."
 - **Aufbau:** Recap der 3 Wochen (Erschöpfung → Schlaf → Nervensystem/Tank); der Tracker bündelt alles an einem Ort.
-- **CTA (Lead):** „Kommentier **ENERGIE** — dein Energietracker kommt direkt in die DMs, und du siehst endlich dein Muster statt nur zu ahnen."
+- **CTA (Lead):** „Kommentier **ENERGIE** — dein 3-Tage-Energie-Kickstart kommt direkt in die DMs, und du siehst endlich dein Muster statt nur zu ahnen."
 
 ---
 
