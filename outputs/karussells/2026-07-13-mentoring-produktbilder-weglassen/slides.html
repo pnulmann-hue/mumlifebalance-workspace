@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Produktbilder weglassen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --petrol: #12828c; --dunkelblau: #29556d; --creme: #f1ecdd; --text: #0c1c30; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #1a1a1a; font-family: "Source Sans 3", sans-serif; color: var(--text); padding: 40px; }
+      .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; margin: 40px auto; display: flex; flex-direction: column; padding: 100px 80px; }
+      .slide.bg-creme { background: var(--creme); color: var(--text); }
+      .slide.bg-petrol { background: var(--petrol); color: #fff; }
+      .slide.bg-dunkelblau { background: var(--dunkelblau); color: #fff; }
+      .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 30px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--petrol); margin-bottom: 36px; }
+      .bg-petrol .eyebrow, .bg-dunkelblau .eyebrow { color: rgba(255,255,255,0.85); }
+      .footer { position: absolute; bottom: 50px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(12,28,48,0.55); letter-spacing: 0.08em; z-index: 5; }
+      .bg-petrol .footer, .bg-dunkelblau .footer { color: rgba(255,255,255,0.7); }
+
+      .cover { justify-content: center; align-items: flex-start; text-align: left; }
+      .cover .kicker { font-family: "Source Sans 3"; font-weight: 700; font-size: 32px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--petrol); margin-bottom: 44px; }
+      .cover .hook { font-family: "Philosopher"; font-weight: 700; font-size: 90px; line-height: 1.07; color: var(--dunkelblau); }
+      .cover .hook .pop { color: var(--petrol); font-style: italic; }
+      .bg-petrol.cover .kicker, .bg-dunkelblau.cover .kicker { color: rgba(255,255,255,0.9); }
+      .bg-petrol.cover .hook, .bg-dunkelblau.cover .hook { color: #fff; }
+      .bg-petrol.cover .hook .pop, .bg-dunkelblau.cover .hook .pop { color: var(--creme); font-style: italic; }
+
+      .s2 { justify-content: center; }
+      .s2 .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 52px; line-height: 1.4; color: var(--text); }
+      .s2 .body .pop { color: var(--petrol); font-weight: 700; }
+
+      .baustein-petrol { justify-content: center; color: #fff; }
+      .baustein-petrol .headline { font-family: "Philosopher"; font-weight: 700; font-size: 82px; line-height: 1.1; color: #fff; margin-bottom: 34px; }
+      .baustein-petrol .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 46px; line-height: 1.4; color: #fff; }
+
+      .baustein-creme { justify-content: center; }
+      .baustein-creme .headline { font-family: "Philosopher"; font-weight: 700; font-size: 78px; line-height: 1.08; color: var(--dunkelblau); margin-bottom: 38px; }
+      .baustein-creme .headline .pop { color: var(--petrol); font-style: italic; }
+      .baustein-creme .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 46px; line-height: 1.42; color: var(--text); opacity: 0.95; }
+      .baustein-creme .body .pop { color: var(--petrol); font-weight: 700; }
+
+      .cta { justify-content: center; color: #fff; }
+      .cta .headline { font-family: "Philosopher"; font-weight: 700; font-size: 76px; line-height: 1.1; color: #fff; margin-bottom: 34px; }
+      .cta .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 46px; line-height: 1.42; color: #fff; }
+      .cta .keyword { font-family: "Philosopher"; font-weight: 700; font-style: italic; color: var(--creme); }
+    </style>
+  </head>
+  <body>
+
+    <div class="slide bg-creme cover">
+      <div class="kicker">Für Network-Mamas</div>
+      <div class="hook">Du postest keine <span class="pop">Produktbilder</span> mehr. Und genau deshalb schreiben sie dich an.</div>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme s2">
+      <p class="body">Ich weiss, wie sich das anfühlt. Du hast dein Fläschchen fotografiert, den Rabattcode drangehängt — und dann? <span class="pop">Stille.</span> Kein Like, keine Nachricht, gar nichts.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-petrol baustein-petrol">
+      <div class="eyebrow">Meine erste Runde</div>
+      <div class="headline">Drei Jahre lang Produkte gepostet</div>
+      <p class="body">Mein erstes Network hab ich nach drei Jahren aufgegeben. Ich hab über die Produkte geredet, nie über die Frau, die sie eigentlich braucht. Kein Wunder, dass keine angebissen hat.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Der Wechsel</div>
+      <p class="body">Heute red ich über den Moment, in dem du abends im Auto sitzt und dich fragst, wer du ausser Mama eigentlich noch bist. Und plötzlich schreiben mir Frauen: <span class="pop">»Genau das ist es.«</span></p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Warum das zieht</div>
+      <p class="body">Kein Mensch verliebt sich in ein Öl oder eine Kapsel. Frauen verlieben sich in das Gefühl, endlich gesehen zu werden. <span class="pop">Verkauf das</span> — der Rest kommt danach von allein.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Fang bei dir an</div>
+      <p class="body">Bevor du den nächsten Post machst, schau dir deine eigene Bio an. Steht da, <span class="pop">für wen</span> du da bist — oder nur, was du verkaufst? Das ist der erste Hebel.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-dunkelblau cta">
+      <div class="eyebrow">Dein nächster Schritt</div>
+      <div class="headline">Ich hab dir einen Bio-Check gebaut</div>
+      <p class="body">Ein KI-Helfer schaut sich deine Instagram-Bio an und zeigt dir in Minuten, ob die richtige Frau sofort versteht, dass DU gemeint bist. Kommentier <span class="keyword">»BIO«</span> und ich schick ihn dir.</p>
+      <div class="footer"><span>@mumlifebalance</span><span></span></div>
+    </div>
+
+  </body>
+</html>

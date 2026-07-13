@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reel dreimal umgeschnitten</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --petrol: #12828c; --dunkelblau: #29556d; --creme: #f1ecdd; --text: #0c1c30; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #1a1a1a; font-family: "Source Sans 3", sans-serif; color: var(--text); padding: 40px; }
+      .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; margin: 40px auto; display: flex; flex-direction: column; padding: 100px 80px; }
+      .slide.bg-creme { background: var(--creme); color: var(--text); }
+      .slide.bg-petrol { background: var(--petrol); color: #fff; }
+      .slide.bg-dunkelblau { background: var(--dunkelblau); color: #fff; }
+      .eyebrow { font-family: "Source Sans 3"; font-weight: 700; font-size: 30px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--petrol); margin-bottom: 36px; }
+      .bg-petrol .eyebrow, .bg-dunkelblau .eyebrow { color: rgba(255,255,255,0.85); }
+      .footer { position: absolute; bottom: 50px; left: 80px; right: 80px; display: flex; justify-content: space-between; align-items: center; font-family: "Source Sans 3"; font-weight: 600; font-size: 24px; color: rgba(12,28,48,0.55); letter-spacing: 0.08em; z-index: 5; }
+      .bg-petrol .footer, .bg-dunkelblau .footer { color: rgba(255,255,255,0.7); }
+
+      .cover { justify-content: center; align-items: flex-start; text-align: left; }
+      .cover .kicker { font-family: "Source Sans 3"; font-weight: 700; font-size: 32px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--petrol); margin-bottom: 44px; }
+      .cover .hook { font-family: "Philosopher"; font-weight: 700; font-size: 92px; line-height: 1.07; color: var(--dunkelblau); }
+      .cover .hook .pop { color: var(--petrol); font-style: italic; }
+      .bg-petrol.cover .kicker, .bg-dunkelblau.cover .kicker { color: rgba(255,255,255,0.9); }
+      .bg-petrol.cover .hook, .bg-dunkelblau.cover .hook { color: #fff; }
+      .bg-petrol.cover .hook .pop, .bg-dunkelblau.cover .hook .pop { color: var(--creme); font-style: italic; }
+
+      .s2 { justify-content: center; }
+      .s2 .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 52px; line-height: 1.4; color: var(--text); }
+      .s2 .body .pop { color: var(--petrol); font-weight: 700; }
+
+      .baustein-petrol { justify-content: center; color: #fff; }
+      .baustein-petrol .headline { font-family: "Philosopher"; font-weight: 700; font-size: 84px; line-height: 1.1; color: #fff; margin-bottom: 34px; }
+      .baustein-petrol .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 46px; line-height: 1.4; color: #fff; }
+
+      .baustein-creme { justify-content: center; }
+      .baustein-creme .headline { font-family: "Philosopher"; font-weight: 700; font-size: 78px; line-height: 1.08; color: var(--dunkelblau); margin-bottom: 38px; }
+      .baustein-creme .headline .pop { color: var(--petrol); font-style: italic; }
+      .baustein-creme .body { font-family: "Source Sans 3"; font-weight: 400; font-size: 46px; line-height: 1.42; color: var(--text); opacity: 0.95; }
+      .baustein-creme .body .pop { color: var(--petrol); font-weight: 700; }
+
+      .s7 { justify-content: center; align-items: center; text-align: center; }
+      .s7 .big { font-family: "Philosopher"; font-weight: 700; font-style: italic; font-size: 112px; line-height: 1.05; color: var(--dunkelblau); margin-bottom: 44px; }
+      .s7 .body { font-family: "Source Sans 3"; font-weight: 600; font-size: 46px; line-height: 1.45; color: var(--text); max-width: 880px; }
+      .s7 .body .pop { color: var(--petrol); font-weight: 700; }
+    </style>
+  </head>
+  <body>
+
+    <div class="slide bg-dunkelblau cover">
+      <div class="kicker">Content-Scham</div>
+      <div class="hook">Du hast das Reel <span class="pop">dreimal</span> umgeschnitten. Und postest es dann doch nicht.</div>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme s2">
+      <p class="body">Ich kenn den Ordner auf deinem Handy. Der mit den 40 Videos, die nie rausgehen. <span class="pop">»Zu wackelig. Zu laut. Meine Stimme klingt komisch.«</span> Kommt dir bekannt vor?</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Die ehrliche Wahrheit</div>
+      <p class="body">Die Ausrede heisst »zu wackelig«. Dahinter steckt was ganz anderes: die Angst, dass jemand denkt <span class="pop">»was will die denn«</span>. Genau die hat mich selber mal Monate gekostet.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-petrol baustein-petrol">
+      <div class="eyebrow">Was ich gelernt hab</div>
+      <div class="headline">Fertig ist besser als perfekt</div>
+      <p class="body">Meine Reels sind nicht poliert. Manchmal ruft im Hintergrund ein Kind rein. Und genau die laufen am besten — weil sie echt sind.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Mein Perfektionismus-Trick</div>
+      <p class="body">Ich geb mir eine Aufnahme und einen Schnitt. Was dann da ist, geht raus, kein viertes Mal. Der Ordner voller <span class="pop">»fast fertig«</span> bringt dir keine einzige Kundin.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme baustein-creme">
+      <div class="eyebrow">Kleiner Reminder</div>
+      <p class="body">Die Frau, die dich braucht, wartet nicht auf dein perfektes Reel. Sie wartet darauf, dass endlich jemand ausspricht, was sie gerade fühlt. Und das kannst nur du — <span class="pop">heute, wackelig und ehrlich</span>.</p>
+      <div class="footer"><span>@mumlifebalance</span><span>Swipe →</span></div>
+    </div>
+
+    <div class="slide bg-creme s7">
+      <div class="big">Teil das</div>
+      <p class="body">…mit einer Mama, deren Handy auch voll ungeposteter Videos ist. <span class="pop">Vielleicht traut sie sich morgen</span> 💌</p>
+      <div class="footer"><span>@mumlifebalance</span><span></span></div>
+    </div>
+
+  </body>
+</html>
