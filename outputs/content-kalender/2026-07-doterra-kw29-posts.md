@@ -4,48 +4,68 @@ tags: [content, reels, karussell, doterra]
 
 # doTERRA KW29 — Postfertig · Säule „Erschöpfung & die Ursache, über die keiner spricht"
 
-> Basis: [[energie-story-profil]] · [[content-tresor-reichweitenherz]] · [[perimenopause-power-erkenntnisse]]. **Themenbasiert, doTERRA nicht im Feed. Kein Heilversprechen. Zahlen echt.** Zielgruppe = erschöpfte Mamas (Ansprache „du" als Mama ok).
+> Basis: [[energie-story-profil]] · [[content-tresor-reichweitenherz]] · [[perimenopause-power-erkenntnisse]]. **Voll Reichweitenherz-Deep-Dive** (Komplizen-Einstieg · innerer Monolog in „…" · viele Ein-Satz-Zeilen · „Die Wahrheit?" / „Autsch." / „Vielleicht musst du das heute hören") · themenbasiert, doTERRA nicht im Feed · kein Heilversprechen · Zahlen echt · Schweizer ss · kein „Nicht X, sondern Y".
 
 ---
 
 ## ① Talking-Head-Reel · 🟢 REICHWEITE (Folgen) · Storytelling
 
-**Cover-Overlay:** „Ich dachte, immer müde zu sein gehört einfach zum Mama-Sein."
+**Cover-Overlay:** „Ich dachte, ständig müde zu sein gehört einfach zum Mama-Sein. Bis eine Freundin einen Satz sagte."
 
-**Sprechtext (Wort für Wort, ~35 Sek, ruhig, in die Kamera):**
+**Sprechtext (Wort für Wort, ~40 Sek, ruhig, in die Kamera):**
 > „Ich hab irgendwann echt geglaubt, dass immer müde sein einfach zum Mama-Sein dazugehört.
-> Mittags nach dem Essen hätt ich mich am liebsten hingelegt und einfach durchgeschlafen. Jeden einzelnen Tag.
+> Mittags nach dem Essen hätt ich mich am liebsten hingelegt und einfach nicht mehr aufgestanden. Jeden Tag.
 > Und ich hab mir gesagt: reiss dich zusammen, das ist halt so mit vier Kindern.
 > Dann kam ein Foto aus den Ferien — ich im Bikini — und ich hab mich selbst kaum wiedererkannt. Müde, träge, zehn Kilo mehr.
 > Die Wahrheit? Es lag nicht daran, dass ich mich zu wenig zusammengerissen hab.
 > Eine Freundin, gleich alt wie ich, hat gesagt: mach mal einen Hormontest. Nicht mein Arzt — eine Freundin.
-> Ich hab ihn in der Drogerie gemacht. Und da kam raus: Progesteron im Keller, Vitamine im Mangel. Mit sechsunddreissig.
-> Niemand hatte mir gesagt, dass die Wechseljahre so früh anfangen können.
+> Ich hab ihn in der Drogerie gemacht, ganz allein. Und da kam raus: Progesteron im Keller, Vitamine im Mangel. Mit sechsunddreissig.
+> Niemand hatte mir gesagt, dass die Wechseljahre so früh anklopfen können.
 > Ich erzähl dir das, weil grad so viele Mamas denken, sie sind einfach nicht mehr belastbar.
-> Bist du vielleicht gar nicht. Vielleicht ist es was ganz anderes."
+> Bist du vielleicht gar nicht. Vielleicht redet dein Körper schon länger mit dir."
 
-**Dreh:** Gesicht in Kamera, candid (Küche/Büro), kein posiertes Setting. Cover-Overlay als erstes Standbild, dann sprechen. Ruhige emotionale Audio leise drunter.
+**Dreh:** Gesicht in Kamera, candid (Küche/Büro). Cover-Overlay als Standbild, dann sprechen. Ruhige emotionale Audio leise drunter.
 
 **Caption:**
 > Bitte sag mir, dass ich nicht die Einzige war.
 >
-> Ich hab irgendwann aufgehört zu zählen, seit wann ich müde bin. Es war einfach immer da. Mittags nach dem Essen nur noch ein Gedanke: hinlegen und nie mehr aufstehen.
+> Ernsthaft. Du stehst morgens auf — und bist schon müde.
+> Du schläfst. Und wachst gerädert auf.
+> Du trinkst deinen Kaffee, und um elf denkst du schon: wie halt ich bloss bis heut Abend durch?
 >
-> Und der Satz, den ich mir täglich gesagt hab: „Stell dich nicht so an. Das ist halt das Mama-Leben."
+> Und mittags, nach dem Essen, kommt dieser eine Gedanke, den du niemandem sagst:
+> „Ich würd mich jetzt am liebsten hinlegen und einfach nicht mehr aufstehen."
 >
-> Dann dieses eine Ferienfoto. Ich im Bikini, zehn Kilo mehr, und in den Augen so eine Müdigkeit, dass ich mich selbst kaum erkannt hab.
+> Aber das sagt man nicht. Also machst du weiter.
+> Du funktionierst. Du organisierst. Du bist für alle da.
 >
-> Ehrlich? Ich hab lange geglaubt, ich bin einfach nicht mehr so belastbar wie früher.
+> Und irgendwann glaubst du diesen Satz, den du dir jeden Tag erzählst:
+> „Das ist halt so als Mama. Reiss dich zusammen."
 >
-> Bis eine Freundin — gleich alt wie ich, nicht mein Arzt — gesagt hat: geh mal einen Hormontest machen. Ich hab ihn in der Drogerie gemacht, ganz allein, ohne grosse Sache. Und da stand's schwarz auf weiss: Progesteron im Keller, Vitamine im Mangel. Mit sechsunddreissig.
+> Autsch.
 >
-> Niemand hatte mir je gesagt, dass die Wechseljahre so früh losgehen können.
+> Weil du irgendwann nicht mehr an deine Erschöpfung glaubst — du glaubst an deine Schwäche.
+> „Die anderen Mamas schaffen das doch auch. Was stimmt nicht mit mir?"
 >
-> Und weisst du, was mich am meisten aufregt? Dass so viele Mamas genau da sitzen und denken, sie sind zu schwach für ihr eigenes Leben.
+> Und weisst du, was mich daran am meisten aufregt?
+> Dass über genau das niemand spricht.
 >
-> Vielleicht bist du das gar nicht. Vielleicht flüstert dir dein Körper schon länger etwas, das du bisher als „normal" abgetan hast.
+> Bei mir war es ein Foto. Ferien, Bikini, zehn Kilo mehr — und in meinen Augen eine Müdigkeit, die mich selbst erschreckt hat.
+> Und ein Büschel Haare in der Bürste, das mir so peinlich war, dass ich's vor mir selbst versteckt hab.
 >
-> Folg mir, wenn du grad denkst „oh Gott, das könnte ich sein". Hier schauen wir ehrlich hin. 💛
+> Die Wahrheit?
+> Ich war nicht zu schwach.
+> Eine Freundin — gleich alt wie ich, nicht mein Arzt — hat gesagt: „Geh mal einen Hormontest machen."
+> Ich hab ihn in der Drogerie gemacht. Ganz allein. Ohne grosse Sache.
+> Und da stand's: Progesteron im Keller. Vitamine im Mangel. Mit sechsunddreissig.
+>
+> Niemand hatte mir je gesagt, dass die Wechseljahre so früh anklopfen können.
+>
+> Vielleicht musst du das heute hören:
+> Vielleicht bist du nicht zu schwach für dein Leben.
+> Vielleicht redet dein Körper schon lange mit dir — und du hast es bloss „normal" genannt.
+>
+> Folg mir, wenn du grad gedacht hast „oh Gott, das bin ich". Hier tust du das nicht mehr allein. 💛
 
 **Hashtags:** #erschöpftemama #müdemama #hormonchaos #perimenopause #frauengesundheit
 **Sound:** ruhige, emotionale RF-Audio (leise unter der Stimme).
@@ -57,24 +77,38 @@ tags: [content, reels, karussell, doterra]
 **Hook-Overlay:** „POV: Du sagst zum 100. Mal ‚ich bin halt müde' — und glaubst es selbst nicht mehr."
 
 **Cut-Folge (B-Roll, candid, Trending-Sound):**
-1. abends aufs Sofa fallen · Overlay: „POV: Du sagst zum 100. Mal ‚ich bin halt einfach müde'."
+1. abends aufs Sofa fallen · „POV: Du sagst zum 100. Mal ‚ich bin halt einfach müde'."
 2. müder Blick / Kaffee · „…mittags am liebsten durchgeschlafen."
-3. nachts, dunkles Zimmer, wach · „…um 3 Uhr wach, Kopf läuft, Schlaf weg."
-4. Kinderchaos, du ziehst dich zusammen · „…und du denkst: reiss dich zusammen."
-5. kurzer ruhiger Moment · „Vielleicht ist es nicht Faulheit. Vielleicht ist es dein Körper."
+3. nachts, dunkel, wach · „…um 3 Uhr wach, Kopf läuft, Schlaf weg."
+4. Kinderchaos, du reisst dich zusammen · „…und du denkst: reiss dich zusammen."
+5. ruhiger Moment · „Vielleicht ist es nicht Faulheit. Vielleicht ist es dein Körper."
 
 **Caption:**
-> Bitte sag mir, dass ich das nicht allein so hatte.
+> Bitte sag mir, dass ich nicht die Einzige war.
 >
-> „Ich bin halt müde." Ich hab den Satz so oft gesagt, dass ich ihn selbst irgendwann nicht mehr geglaubt hab.
+> „Ich bin halt müde."
+> Weisst du, wie oft ich diesen Satz gesagt hab?
+> An der Kasse. Am Elternabend. Wenn eine Freundin fragt, wie's mir geht.
+> „Ja… bin einfach müde."
 >
-> Und trotzdem hab ich weiter funktioniert. Weil man das ja macht. Weil andere Mamas es ja auch schaffen.
+> Und das Verrückte: irgendwann glaubst du ihn selbst nicht mehr.
+> Weil es nicht dieses normale „ich hatte 'ne kurze Nacht"-Müde ist.
+> Es ist dieses „ich bin müde, solange ich mich erinnern kann"-Müde.
 >
-> Was ich damals nicht wusste: müde sein, schlecht schlafen, nachts um 3 wach liegen — das muss nicht einfach „dazugehören".
+> Du wachst nachts um drei auf. Der Kopf läuft los. Der Schlaf ist weg.
+> Du liegst da, klatschnass geschwitzt, und rechnest aus, wie viele Stunden dir noch bleiben.
 >
-> Manchmal ist Erschöpfung kein Charakterschwäche. Manchmal ist sie eine Nachricht.
+> Und morgens? Stehst du auf und tust so, als wär alles gut.
+> Weil man das ja macht. Weil die anderen es ja auch schaffen.
 >
-> Teil's mit der Mama, die auch ständig sagt „ich bin halt müde". Vielleicht darf sie das heute hören. 💛
+> Aber ganz ehrlich:
+> Manchmal ist Erschöpfung kein Charakterfehler.
+> Manchmal ist sie eine Nachricht, die du bisher einfach weggedrückt hast.
+>
+> Und nein — du musst jetzt nicht dein ganzes Leben umkrempeln.
+> Du darfst nur anfangen, dir selbst zu glauben.
+>
+> Schick's der Mama, die auch ständig sagt „ich bin halt müde". Vielleicht darf sie das heute lesen. 💛
 
 **Hashtags:** #müdemama #mamaalltag #erschöpfung #mentalload #mamaleben
 **Sound:** aktueller Trending-Sound (ruhig/emotional), nativ posten.
@@ -87,31 +121,40 @@ tags: [content, reels, karussell, doterra]
 
 **Cut-Folge (B-Roll + harte, klare Overlays — heller/knackiger Schnitt):**
 1. „5 Zeichen, dass deine Müdigkeit nicht ‚nur Stress' ist 👇"
-2. „1 — Du schläfst und bist trotzdem morgens schon leer."
+2. „1 — Du schläfst und bist morgens trotzdem schon leer."
 3. „2 — Brain Fog: du verlierst mitten im Satz den Faden."
-4. „3 — Nachts um 3 wach + Nachtschweiss."
+4. „3 — Nachts um 3 wach + klatschnass geschwitzt."
 5. „4 — Heisshunger am Nachmittag, der dich überrollt."
-6. „5 — Das Gewicht geht rauf, obwohl du nichts anders machst."
+6. „5 — Das Gewicht klettert, obwohl du nichts anders machst."
 7. „Das waren bei mir genau die Zeichen. Es war hormonell."
 
 **Caption:**
-> 5 Zeichen, die ich damals alle abgehakt hab als „ist halt Stress":
+> Kann mir bitte mal jemand erklären, warum uns niemand sagt, dass Müdigkeit nicht gleich Müdigkeit ist?
 >
-> → müde trotz Schlaf
-> → Brain Fog
-> → nachts um 3 wach und klatschnass geschwitzt
-> → Heisshunger, der mich am Nachmittag überrollt hat
-> → Gewicht rauf, obwohl ich nichts anders gemacht hab
+> Ich hab jahrelang alles auf „Stress" geschoben.
+> Müde? Stress.
+> Schlecht geschlafen? Stress.
+> Kein klarer Kopf? Zu viel um die Ohren.
 >
-> Ich dachte wirklich, ich muss einfach mehr Disziplin haben.
+> Und dabei hab ich fünf Dinge komplett übersehen — die rückblickend so laut geschrien haben:
 >
-> Dabei war's was ganz anderes: meine Hormone haben sich verschoben — und zwar früher, als ich je gedacht hätte.
+> Ich war müde, obwohl ich geschlafen hab.
+> Ich hab mitten im Satz vergessen, was ich sagen wollte.
+> Ich bin nachts um drei aufgewacht, klatschnass, und nicht mehr eingeschlafen.
+> Mich hat nachmittags ein Heisshunger überrollt, gegen den ich einfach nicht ankam.
+> Und mein Gewicht ist raufgeklettert, obwohl ich nichts anders gemacht hab.
 >
-> Ich bin keine Ärztin, das ist meine Erfahrung. Aber wenn du dich in mehreren wiedererkennst, schau genauer hin. Dein Körper redet mit dir.
+> Ich dachte wirklich: ich muss mich einfach mehr zusammenreissen.
 >
-> Ich hab dir aufgeschrieben, wie ich angefangen hab, meine Energie zu verstehen — in einem kleinen 3-Tage-Energie-Kickstart.
+> Die Wahrheit?
+> Da hat sich was verschoben, das ich überhaupt nicht auf dem Schirm hatte. Meine Hormone. Und zwar viel früher, als ich je gedacht hätte.
 >
-> 👉 Kommentier **ENERGIE** und ich schick ihn dir direkt in die DMs. 💛
+> Ich bin keine Ärztin. Das ist meine Geschichte, kein Rat.
+> Aber wenn du dich in mehreren dieser Punkte wiedererkennst — tu dir den Gefallen und schau genauer hin. Dein Körper redet mit dir. Du musst nur anfangen zuzuhören.
+>
+> Genau da hab ich angesetzt. Ich hab mir aufgeschrieben, wie ich meine Energie zum ersten Mal wirklich verstanden hab — und daraus einen kleinen 3-Tage-Energie-Kickstart gemacht.
+>
+> 👉 Kommentier **ENERGIE** und ich schick ihn dir in die DMs. 💛
 
 **Hashtags:** #hormonchaos #perimenopause #erschöpftemama #frauengesundheit #wechseljahre
 **Sound:** klarer, moderner Sound (Fakten-Reel = hell/schnell).
@@ -122,27 +165,39 @@ tags: [content, reels, karussell, doterra]
 
 **Folie 1 · Foto-Cover:** „Warum du morgens schon leer aufwachst — und es nicht an ‚zu wenig Schlaf' liegt."
 **Folie 2:** „Ich dachte auch lange: ich brauch einfach mehr Schlaf. Stimmte nicht. 💛"
-**Folie 3:** „Stell dir deine Energie wie eine Achterbahn vor: viel schneller Zucker & Weissmehl → steile Spitze → tiefer Absturz. Und der Absturz ist dein Mittagstief."
+**Folie 3:** „Stell dir deine Energie wie eine Achterbahn vor: viel schneller Zucker & Weissmehl → steile Spitze → tiefer Absturz. Der Absturz ist dein Mittagstief."
 **Folie 4:** „Was du willst, sind sanfte Hügel statt Gipfel und Täler. Dann bleibt die Energie den ganzen Tag oben."
-**Folie 5:** „Was bei mir den Unterschied gemacht hat: zuerst Protein essen, echtes Essen, weniger schneller Zucker. Kein Low Carb, keine Diät."
-**Folie 6:** „Und das Verrückte: ich ess heute MEHR als früher, nicht weniger. Einfach die Dinge, die mir Kraft geben statt Blödsinn."
+**Folie 5:** „Was bei mir den Unterschied gemacht hat: zuerst Protein, echtes Essen, weniger schneller Zucker. Kein Low Carb, keine Diät."
+**Folie 6:** „Und das Verrückte: ich ess heute MEHR als früher, nicht weniger. Nur die Dinge, die mir Kraft geben statt Blödsinn."
 **Folie 7 · CTA:** „Genau da hab ich angefangen. Die ersten Schritte hab ich dir in einen 3-Tage-Energie-Kickstart gepackt. 👉 Kommentier **ENERGIE**."
 
 **Caption:**
-> „Ich brauch einfach mehr Schlaf." — Diesen Satz hab ich mir so lange erzählt.
+> „Ich brauch einfach mehr Schlaf."
+> Diesen Satz hab ich mir jahrelang erzählt.
 >
-> Bis ich verstanden hab, dass mein Problem gar nicht nur der Schlaf war, sondern was den ganzen Tag mit meiner Energie passiert.
+> Und dann hab ich mehr geschlafen. Früher ins Bett. Am Wochenende länger liegen geblieben.
+> Und weisst du was? Es hat nichts geändert.
 >
-> Ich hab viel zu viel schnellen Zucker und Kohlenhydrate gegessen. Energie hoch, Energie runter, Heisshunger, Mittagstief. Jeden Tag dieselbe Achterbahn.
+> Weil mein Problem gar nicht nur die Nacht war.
+> Sondern das, was den ganzen Tag mit meiner Energie passiert ist.
 >
-> Was sich verändert hat, war nicht „weniger essen". Ehrlich: ich ess heute mehr. Nur die richtigen Sachen — Protein zuerst, echtes Essen, und den Blödsinn hab ich rausgenommen.
+> Stell dir eine Achterbahn vor:
+> Du isst schnellen Zucker, Weissmehl, „nur schnell was zwischendurch".
+> Deine Energie schiesst hoch — und kracht kurz danach in den Keller.
+> Und dieser Absturz? Das ist dein Mittagstief. Dein Nachmittags-Heisshunger. Dein „ich brauch jetzt sofort was Süsses".
 >
-> Und ja — bei mir steckte zusätzlich eine hormonelle Verschiebung dahinter, die ich lange nicht auf dem Schirm hatte. Deshalb sag ich: versteh deinen Körper, bevor du dich noch mehr disziplinierst.
+> Jeden. Einzelnen. Tag. Dieselbe Achterbahn.
 >
-> 👉 Kommentier **ENERGIE** — ich schick dir meinen 3-Tage-Energie-Kickstart, mit dem du sanft anfängst. 💛
+> Was sich bei mir verändert hat, war nicht „weniger essen".
+> Ehrlich: ich ess heute mehr als früher.
+> Ich hab nur aufgehört, meinem Körper Blödsinn zu geben — und angefangen, ihm das zu geben, was ihm Kraft gibt. Protein zuerst. Echtes Essen. Keine Diät, kein Low Carb, kein Verzicht.
+>
+> Und ja — bei mir steckte zusätzlich eine hormonelle Verschiebung dahinter, die ich lange nicht gesehen hab. Deshalb sag ich dir: bevor du dich noch mehr disziplinierst, versteh erstmal, was dein Körper eigentlich braucht.
+>
+> 👉 Kommentier **ENERGIE** — ich schick dir meinen 3-Tage-Energie-Kickstart, mit dem du sanft anfängst, das bei dir zu sehen. 💛
 
 **Hashtags:** #energielos #hormonbalance #mamaenergie #perimenopause #erschöpftemama
-**Cover:** Foto (Patricia/Lifestyle), Orange-Akzent, kein Petrol/Grün. Max 10 Folien.
+**Cover:** Foto (Lifestyle), Orange-Akzent, kein Petrol/Grün. Max 10 Folien.
 
 ---
 
@@ -157,15 +212,28 @@ tags: [content, reels, karussell, doterra]
 **Folie 7 · CTA:** „Genau das ist mein 3-Tage-Energie-Kickstart. 👉 Kommentier **ENERGIE**, ich schick ihn dir in die DMs. 💛"
 
 **Caption:**
-> Der wichtigste Satz, den ich auf meinem Weg gelernt hab: eine Pille heilt deine Erschöpfung nicht. Du musst deinen Körper verstehen — und dann dein Leben anpassen.
+> Der wichtigste Satz auf meinem ganzen Weg war dieser:
+> Eine Pille heilt deine Erschöpfung nicht.
 >
-> Klingt gross. Ist aber ein winziger erster Schritt: 3 Tage lang einfach hinschauen.
+> Autsch, oder?
+> Weil wir uns genau das so sehr wünschen. Das eine Mittel. Die eine Lösung. Nimm das — und alles wird gut.
 >
-> Wann hast du Energie, wann kippt sie? Nach welchem Essen wirst du müde? Wie schläfst du wirklich?
+> Aber so funktioniert dein Körper nicht.
+> Du musst ihn verstehen. Und dann dein Leben anpassen.
 >
-> Ich hab damals gemerkt, dass mein Tief jeden Tag zur selben Zeit kam — und dass es kein Zufall war.
+> Klingt riesig. Ist aber ein winziger erster Schritt:
+> Drei Tage lang schaust du einfach nur hin.
+> Wann hast du Energie? Wann kippt sie?
+> Nach welchem Essen wirst du müde?
+> Wie schläfst du wirklich — nicht wie du glaubst, dass du schläfst?
 >
-> Kein Selbstoptimierungs-Stress. Kein Verbot. Nur du und ein ehrlicher Blick auf deine 3 Tage.
+> Ich hab damals gemerkt, dass mein Tief jeden Tag zur exakt gleichen Zeit kam.
+> Und dass das kein Zufall war. Sondern ein Muster.
+>
+> Kein Selbstoptimierungs-Stress. Kein Verbot. Keine App, die dich nervt.
+> Nur du und ein ehrlicher Blick auf drei Tage.
+>
+> Und plötzlich hältst du zum ersten Mal etwas in der Hand, das dir keiner sagen kann: dein eigenes Muster.
 >
 > 👉 Kommentier **ENERGIE** und ich schick dir meinen 3-Tage-Energie-Kickstart, der dich genau da an die Hand nimmt. 💛
 
@@ -175,4 +243,4 @@ tags: [content, reels, karussell, doterra]
 ---
 
 ## Wochen-Check KW29
-✅ 5 Posts · 3 Reels (1 TH + 2 B-Roll) + 2 Karussells · **3× Keyword ENERGIE (③④⑤) + 2× Reichweite (①②)** · themenbasiert, doTERRA nicht im Feed · kein Heilversprechen · echte Zahlen · Reichweitenherz-Voice (Komplizen-Einstieg, innerer Monolog, „Die Wahrheit?", Trost-Turn) · Perimenopause = Aufhänger.
+✅ 5 Posts · 3 Reels (1 TH + 2 B-Roll) + 2 Karussells · **3× Keyword ENERGIE (③④⑤) + 2× Reichweite (①②)** · themenbasiert, doTERRA nicht im Feed · kein Heilversprechen · echte Zahlen · **voller Reichweitenherz-Deep-Dive** · Perimenopause = Aufhänger.
