@@ -11,7 +11,7 @@ tags: [content, reels, karussell, doterra, monatsplan]
 - **3 Posts mit Keyword ENERGIE** (Lead → Kickstart) · **2 Posts reine Reichweite** (Folgen/Speichern/Teilen, kein Keyword).
 - **Verteilung:** die 2 Reichweiten-Posts = **Talking-Head-Reel + 1 B-Roll-Reel** (die stärksten emotionalen). Die 3 Keyword-Posts = **1 B-Roll-Reel + 2 Karussells**.
 - **Goldformel** (bei Reichweiten-Posts): emotionales Ich-Reel + Zahl im Hook + niederschwellig + **kein Produktpitch**.
-- **Compliance:** durchgängig „bei mir war…"-Frame, **nie Heilversprechen**. Nährstoffe/Öle nur als Ernährung/Lifestyle-Baustein, **doTERRA-Produkte NICHT im Feed** (die kommen erst in den Kickstart-Mails). Bücher = das *Warum/die Fakten*, Story = Patricia.
+- **Compliance + Positionierung:** durchgängig „bei mir war…"-Frame, **nie Heilversprechen**. **doTERRA NICHT im Feed — rein themenbasiert** (Energie/Hormone/Lifestyle), keine Markennamen/Produkt-Pitches; Marke lebt nur im Freebie/DM/Backend. Patricias Routine (Protein/Kraft/Schlaf/„meine Nährstoffe") als Lebensweise ok, nie als Verkauf. Bücher = das *Warum/die Fakten*, Story = Patricia.
 - **Reichweitenherz-Voice:** Komplizen-Einstieg · wörtlicher innerer Monolog · harter Cut („Die Wahrheit?" / „Spoiler:") · Alltags-Bild · weicher Trost-Turn · 1–2 derbe Wörter · CTA als Gesprächs-Fortsetzung. **Clean-warm gewinnt** · Schweizer ss · **kein** „Nicht X, sondern Y".
 - **Karussell-Cover:** Lead-Karussells **nicht** vollflächig Petrol/Grün → Foto-Cover (Reichweiten-Killer vermeiden). doTERRA-Akzent = Orange. Max 10 Folien. Parallel auf **Facebook** posten.
 
