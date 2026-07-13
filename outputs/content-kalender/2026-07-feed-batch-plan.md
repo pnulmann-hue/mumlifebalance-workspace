@@ -306,8 +306,83 @@ Ziel: über die Wochen erkennen, welche Reichweitenherz-Muster bei der Zielgrupp
 
 → So decken wir Woche für Woche neue Muster ab und finden das, was **richtig zündet**.
 
-## KW30 — Säule Digitale Produktwelt (20.–24.7.) · *noch zu bauen*
-Kernschmerz: „Ich tausche Zeit gegen Geld / hab kein skalierbares Angebot." Lead-Post → Keyword **QUIZ** (Potenzial-Test). Story parallel: Kurs 3 Digitale Produktwelt.
+## KW30 — Säule Digitale Produktwelt (20.–24.7.)
+**Wochen-Kernschmerz:** „Ich tausche Zeit gegen Geld und häng in der 1:1-Falle — mein Umsatz stoppt, sobald ich stoppe." · **Kontext:** letzte Woche vor MBA-Cart-Close (So 27.7.). Story pusht Close + Kurs 3, Feed = Reichweite + QUIZ-Leads. · **Keyword QUIZ (0€ Potenzial-Test) ist bereits live in ManyChat — kein Setup nötig.** · **Mix: 3× QUIZ (Di/Mi/Fr) + 2× Reichweite (Mo/Do).**
+
+| Tag | Format | Säule | CTA |
+|---|---|---|---|
+| Mo 20. | Reel TH (Patricia) | 📖 Storytelling | 🟢 Folgen |
+| Di 21. | Reel B-Roll (Patricia) | ♥️ Identifikation | 🎯 QUIZ |
+| Mi 22. | Karussell (Blotato) | 👩‍🏫 Mehrwert | 🎯 QUIZ |
+| Do 23. | Reel B-Roll (Patricia) | 🎯 Positionierung | 🟢 Folgen |
+| Fr 24. | Karussell (Blotato) | 👩‍🏫 Mehrwert | 🎯 QUIZ |
+
+Cover: Mi + Fr (QUIZ-Leads) kein Petrol — Creme/Foto. Karussell-Slides noch zu bauen.
+
+### ✍️ KW30-Captions (Version-1-Voice + Reichweitenherz-Kniffe)
+
+**Mo — Storytelling → Folgen**
+> Letzten Herbst hab ich mal ausgerechnet, wie viele Stunden ich für einen einzigen Verkauf tatsächlich am Handy war. Das Ergebnis war so ernüchternd, dass ich's niemandem erzählt hab. 😅
+>
+> Jahrelang war mein Business simpel gestrickt: Ich bin da, es läuft. Ich bin weg, es steht. Jede Anfrage, jede Beratung, jeder Abschluss hing an mir und meiner Zeit — und Zeit ist genau das, was ich als Mama von vier Kindern am wenigsten übrig hab.
+>
+> Irgendwann hab ich gemerkt: Solange ich meine Stunden gegen Geld tausche, gibt's eine harte Obergrenze. Die hat wenig mit Fleiss zu tun. Sie hängt schlicht an der Anzahl Stunden, die ein Tag hat.
+>
+> Gedreht hat sich's in dem Moment, als ich angefangen hab, mein Wissen einmal zu verpacken statt es hundertmal einzeln zu erklären.
+>
+> Wenn du das grad liest und denkst „oh, das bin ich" — bleib hier, hier reden wir genau darüber. 💛
+>
+> `#mamabusiness #mamaunternehmerin #onlinebusinessmitkind #networkmarketing #digitaleprodukte`
+
+**Di — Identifikation → QUIZ**
+> Sag mir, dass ich nicht die Einzige war, die das mal geglaubt hat: „Wenn ich erst richtig ausgebucht bin, dann passt's finanziell." 😅
+>
+> Und dann bist du ausgebucht. Jeder Slot voll, das Handy glüht, du funktionierst von früh bis spät — und am Monatsende schaust du auf die Zahlen und denkst: das war's? Für so viel Rennerei?
+>
+> Ich hab damals nicht kapiert, dass „mehr Kundschaft" mein Problem gar nicht löst. Es macht es sogar schlimmer, weil jede neue Anfrage wieder meine Zeit frisst.
+>
+> Was wirklich etwas verändert, ist ein Angebot, das auch dann Geld bringt, wenn du grad mit den Kindern am See sitzt.
+>
+> Willst du wissen, welches digitale Produkt in deinem Wissen schon steckt? Kommentier QUIZ und ich schick dir meinen kleinen Potenzial-Test.
+>
+> `#mamabusiness #mamaunternehmerin #onlinebusinessmitkind #skalieren #digitaleprodukte`
+
+**Mi — Mehrwert → QUIZ**
+> Neulich hat mir eine Mentee gesagt: „Ich hab doch gar nichts, was ich als Produkt verkaufen könnte." Zehn Minuten später hatte sie drei Ideen — sie hatte sie vorher nur nicht als solche erkannt.
+>
+> Die Wahrheit ist: Wenn du in deinem Thema schon Leuten hilfst, trägst du fast sicher ein digitales Produkt in dir. Du merkst es an ein paar Anzeichen.
+>
+> Diese eine Frage zum Beispiel, die dir immer wieder gestellt wird. Der Weg, den du selbst gegangen bist und inzwischen im Schlaf erklären könntest. Die Sache, bei der Leute sagen „das hast du mir so gut erklärt".
+>
+> Genau da drin steckt dein erstes kleines Produkt — etwas, das du einmal baust und das dann für dich arbeitet, auch wenn du grad nicht am Handy bist.
+>
+> Ich hab einen kleinen Potenzial-Test gebaut, der dir zeigt, welches Produkt am ehesten in dir steckt. Kommentier QUIZ und ich schick ihn dir in die DMs.
+>
+> `#mamabusiness #mamaunternehmerin #digitaleprodukte #onlinebusinessmitkind #skalieren`
+
+**Do — Positionierung → Folgen**
+> Nach ein paar Jahren im Business sag ich's inzwischen unbequem direkt: Die meisten Mamas glauben, ihnen fehlt Kundschaft. In Wahrheit fehlt ihnen ein Angebot, das nicht jede Stunde ihrer Zeit auffrisst.
+>
+> Weil „hol dir einfach mehr Kunden" klingt nach Wachstum, ist in Wahrheit aber oft nur mehr vom selben Hamsterrad. Noch mehr Beratungen und Termine, noch mehr Abende am Laptop, während die Kinder schlafen.
+>
+> Was ein Business neben der Familie wirklich trägt, ist ein Angebot, das auch Geld bringt, wenn du grad nicht arbeitest. Ein Kurs, ein Workbook, eine Vorlage — etwas, das du einmal machst und immer wieder verkaufst.
+>
+> Folg mir, wenn du genug hast vom „hol dir einfach mehr Kunden" und lieber smarter aufbaust. 💛
+>
+> `#mamabusiness #mamaunternehmerin #onlinebusinessmitkind #digitaleprodukte #ehrlichesbusiness`
+
+**Fr — Mehrwert → QUIZ**
+> Vor drei Jahren sah mein „gut laufender Monat" so aus: viele Stunden reingesteckt, ordentlich was verdient — und trotzdem fing im neuen Monat alles wieder bei null an. 😅
+>
+> Das ist die Falle von Zeit gegen Geld: Es funktioniert, aber es hört in genau dem Moment auf, in dem du aufhörst. Es gibt keinen Puffer und kein Polster — im neuen Monat startest du wieder bei null.
+>
+> Ein digitales Produkt dreht das um. Du steckst die Arbeit einmal rein, und dann verkauft es sich weiter, während du beim Elternabend sitzt oder mit den Kindern am Waldrand Beeren suchst.
+>
+> Und nein, du brauchst dafür keine grosse Reichweite und kein fertiges Studio. Du brauchst ein Thema, in dem du Leuten schon hilfst, und den Mut, es einmal sauber zu verpacken.
+>
+> Welches Produkt in dir steckt, zeigt dir mein kleiner Potenzial-Test. Kommentier QUIZ und ich schick ihn dir.
+>
+> `#mamabusiness #mamaunternehmerin #digitaleprodukte #onlinebusinessmitkind #skalieren`
 
 ## KW31 — Recap / alle 3 (27.–31.7.) · *noch zu bauen*
 Nachkauf-Modus: „das war alles ein System" — die 3 Säulen zusammenführen, Beziehung > Verkauf.
