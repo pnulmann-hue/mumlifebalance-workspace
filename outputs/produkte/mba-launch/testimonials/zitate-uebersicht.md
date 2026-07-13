@@ -72,7 +72,10 @@ tags: [produkt, mba, testimonials, zitate, intern]
 
 ## ⏰ Mama-CEO / Struktur & Zeit
 
-*→ Ehrlicher Hinweis: Hier habe ich **keine expliziten Mama-CEO-Testimonials** in deinem Material gefunden. Der Kurs ist ja noch frisch (Pilot). Sobald deine 5 Pilot-Mamas Rückmeldung geben, schick sie mir — dann füllen wir diese Sparte. Bis dahin trägt die „Zeit/System"-Aussage am ehesten die allgemeine Begleitungs-Stimme unten.*
+> „Einfach mal ein mega grosses Dankeschön. Ich habe die Aufzeichnungen immer nachgeschaut, weil ich nicht live dabei sein konnte. Aber der Kurs zusammen mit den Aufzeichnungen und den Tipps und Prompts haben mir schon so, so viel weitergeholfen. Danke tausend! Und das nächste Mal bin ich definitiv live dabei." — **Irene** *(WhatsApp, 9.7.2026)*
+
+*→ Erste explizite **Mama-CEO-Stimme**. Belegt zwei Verkaufs-Angles auf einmal: (1) die **Aufzeichnungen** machen den Kurs auch für Mamas nutzbar, die live keine Zeit haben — „ich musste nicht live dabei sein und habe trotzdem alles bekommen"; (2) **Tipps + Prompts** stiften konkreten, sofort spürbaren Mehrwert. Bonus-Signal: Sie will **beim nächsten Mal live dabei sein** = starke Zufriedenheit.*
+*⚠️ **Noch KEINE Veröffentlichungs-Erlaubnis** eingeholt — vor Nutzung auf Salespage/Story kurz bei Irene nachfragen (Zitat + Vorname ok?). Screenshot (nur lokal, *.jpg ist gitignored): `../img/testimonials/mama-ceo-irene-2026-07-09.jpg`.*
 
 ---
 

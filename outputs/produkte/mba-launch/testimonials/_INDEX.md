@@ -35,6 +35,16 @@ Quelle: Netlify-Formular `feedback-instagram-kundenmaschine`, Einsendungen Juni 
 
 ---
 
+## ⏰ Mama-CEO-Kurs (erste Stimme — 9.7.2026)
+
+**Irene** *(WhatsApp, 9.7.2026 · Erlaubnis: noch NICHT eingeholt → vor Veröffentlichung nachfragen)*
+- Schweizerdeutsches Original: „Hallo Patricia. Eifach mal äs mega grosses Dankäschön. Ich ha etz immer d'Üfzeichnigä nachäglüägt will ich nit ha chenä live drbiä sii. Aber dä Kurs zämmä mit dä Üfzeichnigä und dä Tipps und Prompts etc. hend miär scho so so viel wiiter ghulfä. Dankä tüüsig! Und s'negscht Mal bini definitiv live drbiä."
+> Hochdeutsch: „Einfach mal ein mega grosses Dankeschön. Ich habe die Aufzeichnungen immer nachgeschaut, weil ich nicht live dabei sein konnte. Aber der Kurs zusammen mit den Aufzeichnungen und den Tipps und Prompts haben mir schon so, so viel weitergeholfen. Danke tausend! Und das nächste Mal bin ich definitiv live dabei."
+- Angle: Aufzeichnungen + Prompts = Mehrwert auch ohne Live-Teilnahme · will nächstes Mal live dabei sein
+- Screenshot: `../img/testimonials/mama-ceo-irene-2026-07-09.jpg` *(nur lokal — *.jpg ist gitignored)*
+
+---
+
 ## ⭐ Top-Picks für die Salespage (matchen den Schmerz-Angle)
 
 **1 — Andrea (Dranbleiben + sich zeigen + Community ↑)**
