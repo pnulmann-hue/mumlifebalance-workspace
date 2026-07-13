@@ -1,93 +1,117 @@
 ---
-tags: [content, reels, doterra, monatsplan]
+tags: [content, reels, karussell, doterra, monatsplan]
 ---
 
-# doTERRA Juli 2026 — Reel-Plan „Zurück zu deiner Energie"
+# doTERRA Juli 2026 — Content-Plan „Zurück zu deiner Energie"
 
-**Profil:** doTERRA/Network · **Ziel:** Reichweite auf den Energie-/Erschöpfungs-Schmerz + Leads auf den **3-Tage-Energie-Kickstart** (Freebie · Keyword **ENERGIE** · Landing `mumlifebalance.ch/energie-kickstart` · 3-Mail-Sequenz · Tag 84).
-**Wissens-Quellen:** [[Perimenopause-Power]] · [[Aromatherapie fuer entspannte Wechseljahre (Snyder)]] · Mikronährstoffe · Omega-3 · Gamechanger Protein · Moringa · Organuhr · Schlafstörungen (alle in `context/doTERRA/wissen/`).
+**Profil:** doTERRA/Network · **Ziel:** Reichweite auf den Energie-/Erschöpfungs-Schmerz + Leads auf den **3-Tage-Energie-Kickstart** (Freebie · Keyword **ENERGIE** · Landing `mumlifebalance.ch/energie-kickstart` · 3-Mail-Sequenz · Tag 84 · Produkttreppe VMG+/PB Assist+/Omega3/ClaryCalm).
 
-## Format-Regeln (Pflicht)
-- **Nur Reels** (Account < 300 Follower → Karussells floppen). **3 Reels/Woche.**
-- **2 reine Reichweiten-Reels** (CTA = Folgen/Speichern/Teilen) + **1 Lead-Reel** (CTA = Energietracker).
-- **Goldformel:** emotionales Ich-Reel + Zahl im Hook + niederschwellig + **kein Produktpitch** (bei den Reichweiten-Reels).
-- **Compliance:** immer „bei mir war…"-Frame, **nie Heilversprechen**. Öle/Produkte nur weich als *ein* Lifestyle-Baustein, wenn überhaupt. Bücher liefern das **Warum/die Fakten**, die Story kommt von Patricia.
+## Wochen-Struktur (Pflicht)
+- **5 Posts/Woche: 3 Reels (1 Talking-Head + 2 B-Roll) + 2 Karussells.**
+- **3 Posts mit Keyword ENERGIE** (Lead → Kickstart) · **2 Posts reine Reichweite** (Folgen/Speichern/Teilen, kein Keyword).
+- **Verteilung:** die 2 Reichweiten-Posts = **Talking-Head-Reel + 1 B-Roll-Reel** (die stärksten emotionalen). Die 3 Keyword-Posts = **1 B-Roll-Reel + 2 Karussells**.
+- **Goldformel** (bei Reichweiten-Posts): emotionales Ich-Reel + Zahl im Hook + niederschwellig + **kein Produktpitch**.
+- **Compliance:** durchgängig „bei mir war…"-Frame, **nie Heilversprechen**. Nährstoffe/Öle nur als Ernährung/Lifestyle-Baustein, **doTERRA-Produkte NICHT im Feed** (die kommen erst in den Kickstart-Mails). Bücher = das *Warum/die Fakten*, Story = Patricia.
 - **Reichweitenherz-Voice:** Komplizen-Einstieg · wörtlicher innerer Monolog · harter Cut („Die Wahrheit?" / „Spoiler:") · Alltags-Bild · weicher Trost-Turn · 1–2 derbe Wörter · CTA als Gesprächs-Fortsetzung. **Clean-warm gewinnt** · Schweizer ss · **kein** „Nicht X, sondern Y".
-- **Facebook parallel** posten (deine 35+-Zielgruppe ist dort aktiver).
-
-> ✅ **Lead-Freebie geklärt:** doTERRA **3-Tage-Energie-Kickstart** — Opt-in via **„kommentier ENERGIE"** (ManyChat) ODER Landing `mumlifebalance.ch/energie-kickstart`. Danach 3-Mail-Sequenz. Beim Reel-CTA immer das Keyword nennen; Landing ist der Bio-Link-Weg.
+- **Karussell-Cover:** Lead-Karussells **nicht** vollflächig Petrol/Grün → Foto-Cover (Reichweiten-Killer vermeiden). doTERRA-Akzent = Orange. Max 10 Folien. Parallel auf **Facebook** posten.
 
 ---
 
 ## KW29 — Säule: Erschöpfung & die Ursache, über die keiner spricht
+*Buchwissen: Perimenopause-Power (Symptome ≠ „nur Stress", zweite Pubertät ab Ende 30)*
 
-### Reel 1 · 🟢 Reichweite · Identifikation/Storytelling · Talking-Head
-- **Hook:** „Kann mir mal jemand erklären, warum wir Mamas Dauer-Erschöpfung einfach als ‚normal' abhaken? Ich hab **3 Jahre** gedacht, ich bin einfach nicht mehr belastbar."
-- **Aufbau:** innerer Monolog („ich bin halt müde, ist als Mama so", „reiss dich zusammen") → harter Cut: „Die Wahrheit? Es lag nicht an mir." → das Aha aus dem Buch: dass diese Müdigkeit hormonell sein kann und schon Ende 30 anfängt — und meist als ‚nur Stress' fehlgedeutet wird → weicher Trost-Turn.
-- **Buch-Anker:** Snyder, *Perimenopause-Power* — Symptome subtil, werden mit Mama-Stress verwechselt; „du bist nicht verrückt, du wirst nur nicht ernst genommen".
-- **Compliance:** „bei mir war es so…", keine Diagnose, keine Heilung.
-- **CTA (Folgen):** „Wenn du grad dachtest ‚oh Gott, genau ich' — bleib hier, hier bist du richtig. 💛"
+**① Talking-Head-Reel · 🟢 REICHWEITE · Storytelling (Folgen)**
+- Hook: „Kann mir mal jemand erklären, warum wir Mamas Dauer-Erschöpfung als ‚normal' abhaken? Ich hab **3 Jahre** gedacht, ich bin einfach nicht mehr belastbar."
+- Sprechen: innerer Monolog („reiss dich zusammen") → „Die Wahrheit? Es lag nicht an mir." → Aha: kann hormonell sein, fängt früh an, wird als Mama-Stress fehlgedeutet → Trost-Turn.
+- CTA: „Wenn du grad dachtest ‚oh Gott, genau ich' — bleib hier. 💛"
 
-### Reel 2 · 🟢 Reichweite · Mehrwert · B-Roll (candid Alltag) + Trending-Sound
-- **Hook:** „**5 Zeichen**, dass deine Müdigkeit nicht ‚nur Stress' ist."
-- **Aufbau (Overlay-Cuts):** 1 erschöpft trotz Schlaf · 2 Brain Fog / verlierst mitten im Satz den Faden · 3 gereizt schon bei Kleinigkeiten (oft vor der Periode) · 4 Heisshunger nachmittags · 5 Erholung dauert plötzlich viel länger. → kurzer Trost-Satz.
-- **Buch-Anker:** Symptom-Liste aus *Perimenopause-Power* (Kp4 Blutzucker-Crash → Erschöpfung/Heisshunger/Stimmung).
-- **CTA (Speichern/Teilen):** „Speicher's — und schick's der Freundin, die auch ständig sagt ‚ich bin halt einfach müde'."
+**② B-Roll-Reel · 🟢 REICHWEITE · Identifikation (Teilen)**
+- Hook: „POV: Du sagst zum **100. Mal** ‚ich bin halt einfach müde' — und glaubst es selbst schon nicht mehr."
+- B-Roll: candid Alltag (Sofa abends, Blick müde) + Trending-Sound. Overlays = innerer Monolog.
+- CTA: „Teil's mit der Mama, die auch ständig ‚ich bin halt müde' sagt."
 
-### Reel 3 · 🟡 LEAD · Energietracker · Talking-Head oder B-Roll
-- **Hook:** „Ich hab **3 Tage** lang nur EINE Sache getrackt — und endlich gesehen, wann mir wirklich die Energie flöten geht."
-- **Aufbau:** Energie ist nicht random, sie hat Muster (Tageszeit, nach dem Essen, Schlaf) — wer's sieht, kann was ändern. Weich, ohne Pitch bis zum CTA.
-- **Buch-Anker:** *Perimenopause-Power* Kp4 — „Energie ist der Massstab", Blutzucker-Muster; Organuhr (Tagesrhythmus).
-- **CTA (Lead):** „Ich hab dir dafür meinen **3-Tage-Energie-Kickstart** gebaut — kommentier **ENERGIE** und ich schick ihn dir in die DMs. 💛"
+**③ B-Roll-Reel · 🟡 KEYWORD ENERGIE · Mehrwert**
+- Hook: „**5 Zeichen**, dass deine Müdigkeit nicht ‚nur Stress' ist."
+- 5 Overlays: erschöpft trotz Schlaf · Brain Fog · gereizt bei Kleinigkeiten (vor der Periode) · Heisshunger nachmittags · Erholung dauert länger. *(Buch: Blutzucker-Crash → Erschöpfung/Stimmung)*
+- CTA: „Erkennst du dich? Kommentier **ENERGIE** — ich schick dir meinen 3-Tage-Energie-Kickstart."
+
+**④ Karussell · 🟡 KEYWORD ENERGIE · Mehrwert** (Foto-Cover)
+- Hook-Cover: „Warum du morgens schon leer aufwachst — und es nicht an ‚zu wenig Schlaf' liegt."
+- Folien: Blutzucker-Achterbahn erklärt (Alltags-Bild: sanfte Hügel vs. Gipfel & Täler) · was tagsüber Energie zieht · was hilft (Lifestyle, compliance-safe) · Übergang.
+- CTA: „Die ersten Schritte hab ich dir in einen 3-Tage-Kickstart gepackt → kommentier **ENERGIE**."
+
+**⑤ Karussell · 🟡 KEYWORD ENERGIE · Mehrwert** (Foto-Cover)
+- Hook-Cover: „**3 Tage**, die dir zeigen, wann deine Energie wirklich kippt."
+- Folien: warum Tracking (Energie hat Muster, nicht Zufall) · was du 3 Tage lang beobachtest · was du danach weisst → Motivation.
+- CTA: „Genau das ist mein 3-Tage-Energie-Kickstart → kommentier **ENERGIE**, ich schick ihn dir."
 
 ---
 
 ## KW30 — Säule: Schlaf & echte Regeneration
+*Buchwissen: Perimenopause Kp6 · Schasteen Schlafstörungen · Organuhr*
 
-### Reel 1 · 🟢 Reichweite · Storytelling · Talking-Head
-- **Hook:** „Bitte sag mir, dass ich nicht die Einzige bin, die **um 3 Uhr nachts** wach liegt und den ganzen Tag im Kopf durchgeht."
-- **Aufbau:** innerer Monolog um 3 Uhr → „Ehrlich? Ich dachte, ich hab einfach zu viel um die Ohren." → das Aha: Schlaf verändert sich, Regeneration ist keine Faulheit, sondern der Motor → Trost-Turn.
-- **Buch-Anker:** *Perimenopause-Power* Kp6 (Schlaf) · Schasteen *Schlafstörungen*.
-- **CTA (Folgen):** „Wenn du das kennst — folg mir, hier reden wir ehrlich über den Mama-Akku."
+**① Talking-Head-Reel · 🟢 REICHWEITE · Storytelling (Folgen)**
+- Hook: „Bitte sag mir, dass ich nicht die Einzige bin, die **um 3 Uhr nachts** wach liegt und den ganzen Tag durchkaut."
+- Sprechen: 3-Uhr-Monolog → „Ehrlich? Ich dachte, ich hab einfach zu viel um die Ohren." → Aha: Schlaf verändert sich, Regeneration ist kein Luxus, sondern der Motor → Trost-Turn.
+- CTA: „Wenn du das kennst — folg mir, hier reden wir ehrlich über den Mama-Akku."
 
-### Reel 2 · 🟢 Reichweite · Mehrwert · B-Roll (Abend-Routine) + Trending-Sound
-- **Hook:** „**3 Dinge**, die abends deinen Schlaf sabotieren — und die keiner auf dem Schirm hat."
-- **Aufbau:** compliance-safe Lifestyle-Punkte (später Zucker/Heisshunger-Snack → Blutzucker-Crash nachts · Handy-Licht · nie runtergefahren). Konkret, speicherbar.
-- **Buch-Anker:** Blutzucker-Stabilität am Abend (Kp4) · Nervensystem/Ruhe (Kp8).
-- **CTA (Speichern):** „Speicher's für heute Abend — und sag mir in den Kommentaren, welcher Punkt dich erwischt hat."
+**② B-Roll-Reel · 🟢 REICHWEITE · Mehrwert (Speichern)**
+- Hook: „**3 Dinge**, die abends deinen Schlaf sabotieren — und die keiner auf dem Schirm hat."
+- B-Roll Abend-Routine + Trending-Sound. Overlays: später Zucker-Snack (Blutzucker-Crash nachts) · Handy-Licht · nie runtergefahren.
+- CTA: „Speicher's für heut Abend — welcher Punkt erwischt dich? 👇"
 
-### Reel 3 · 🟡 LEAD · Energietracker · B-Roll
-- **Hook:** „Bevor du am Schlaf schraubst: check **einen Tag** lang, wann deine Energie kippt."
-- **Aufbau:** Schlaf + Energie hängen zusammen; der Tracker macht sichtbar, wo du ansetzen musst. Weich bis CTA.
-- **CTA (Lead):** „Kommentier **ENERGIE** — ich schick dir meinen 3-Tage-Energie-Kickstart, mit dem du's in 3 Tagen selbst siehst."
+**③ B-Roll-Reel · 🟡 KEYWORD ENERGIE · Mehrwert**
+- Hook: „Bevor du am Schlaf schraubst: check **3 Tage** lang, wann deine Energie kippt."
+- Aufbau: Schlaf + Energie hängen zusammen; sichtbar machen, wo du ansetzen musst.
+- CTA: „Kommentier **ENERGIE** — mein 3-Tage-Energie-Kickstart zeigt dir dein Muster."
+
+**④ Karussell · 🟡 KEYWORD ENERGIE · Mehrwert** (Foto-Cover)
+- Hook-Cover: „Der Snack-Fehler am Abend, der dich nachts um 3 wach macht."
+- Folien: Blutzucker-Spitze/-Crash am Abend erklärt · was stattdessen sättigt (Lifestyle) · Mini-Abendritual · Übergang.
+- CTA: „Der Einstieg steckt im 3-Tage-Energie-Kickstart → kommentier **ENERGIE**."
+
+**⑤ Karussell · 🟡 KEYWORD ENERGIE · Mehrwert** (Foto-Cover)
+- Hook-Cover: „Deine innere Uhr: wann dein Körper wirklich Pause braucht (Organuhr)."
+- Folien: Tagesrhythmus/Organuhr niederschwellig · typische Mama-Energie-Kurve · kleine Anker im Alltag.
+- CTA: „Dein eigenes Muster findest du im 3-Tage-Kickstart → kommentier **ENERGIE**."
 
 ---
 
 ## KW31 — Säule: Nervensystem runterfahren & der Tank, den keiner sieht
+*Buchwissen: Perimenopause Kp8 (Cortisol/Ruhe) · Mikronährstoffe · Omega-3 · Protein · Moringa · Aromatherapie*
 
-### Reel 1 · 🟢 Reichweite · Identifikation · Talking-Head
-- **Hook:** „Kann mir mal jemand erklären, warum ich bei **jeder Kleinigkeit** explodier — und mich danach mies fühle?"
-- **Aufbau:** innerer Monolog („ich bin doch sonst nicht so") → „Die Wahrheit? Mein System war einfach nie wirklich runtergefahren." → Aha: chronischer Stress/Cortisol frisst Energie, das ist kein Charakterfehler → Trost-Turn.
-- **Buch-Anker:** *Perimenopause-Power* Kp8 (Ruhe/Gelassenheit, Cortisol) · Aromatherapie (Entspannung als Lifestyle).
-- **CTA (Folgen):** „Wenn du dich ertappst — bleib hier, hier bist du keine ‚schlechte Mama', sondern eine erschöpfte. 💛"
+**① Talking-Head-Reel · 🟢 REICHWEITE · Identifikation (Folgen)**
+- Hook: „Kann mir mal jemand erklären, warum ich bei **jeder Kleinigkeit** explodier — und mich danach mies fühl?"
+- Sprechen: „ich bin doch sonst nicht so" → „Die Wahrheit? Mein System war nie wirklich runtergefahren." → Aha: Dauerstress/Cortisol frisst Energie, kein Charakterfehler → Trost-Turn.
+- CTA: „Wenn du dich ertappst — bleib hier. Du bist keine ‚schlechte Mama', nur eine erschöpfte. 💛"
 
-### Reel 2 · 🟢 Reichweite · Mehrwert · B-Roll + Trending-Sound
-- **Hook:** „Der **unsichtbare Tank**, den bei Mamas keiner auffüllt — und woran du merkst, dass er leer ist."
-- **Aufbau:** Alltags-Bild (Handy-Akku bei 4 %) → übertragen auf Grundversorgung/Nervensystem; 3 leise Warnzeichen. Speicherbar.
-- **Buch-Anker:** Mikronährstoffe · Omega-3 · Protein · Moringa (Grundversorgung, compliance-safe als Lifestyle/Ernährung, keine Heilaussage).
-- **CTA (Teilen):** „Teil's mit der Mama, deren Tank grad auch auf Reserve läuft."
+**② B-Roll-Reel · 🟢 REICHWEITE · Mehrwert (Teilen)**
+- Hook: „Der **unsichtbare Tank**, den bei Mamas keiner auffüllt — und woran du merkst, dass er leer ist."
+- B-Roll (Handy-Akku bei 4 % als Bild) + Trending-Sound. 3 leise Warnzeichen.
+- CTA: „Teil's mit der Mama, deren Tank grad auch auf Reserve läuft."
 
-### Reel 3 · 🟡 LEAD · Energietracker · Talking-Head
-- **Hook:** „Ich hör auf zu raten, warum ich müde bin — und **schau's mir an**."
-- **Aufbau:** Recap der 3 Wochen (Erschöpfung → Schlaf → Nervensystem/Tank); der Tracker bündelt alles an einem Ort.
-- **CTA (Lead):** „Kommentier **ENERGIE** — dein 3-Tage-Energie-Kickstart kommt direkt in die DMs, und du siehst endlich dein Muster statt nur zu ahnen."
+**③ B-Roll-Reel · 🟡 KEYWORD ENERGIE · Mehrwert**
+- Hook: „Ich hör auf zu raten, warum ich müde bin — und **schau's mir an**."
+- Aufbau: Recap der 3 Wochen (Erschöpfung → Schlaf → Tank), der Kickstart bündelt's.
+- CTA: „Kommentier **ENERGIE** — dein 3-Tage-Kickstart, endlich Muster statt Ahnen."
+
+**④ Karussell · 🟡 KEYWORD ENERGIE · Mehrwert** (Foto-Cover)
+- Hook-Cover: „Die Grundversorgung, die bei Mamas fast immer als Erstes leidet."
+- Folien: compliance-safe Ernährungs-/Lifestyle-Bausteine (Protein zuerst · gute Fette · genug trinken · Mikronährstoffe über echtes Essen) — als *Alltag*, keine Heilaussage · Übergang.
+- CTA: „Wie du in 3 Tagen siehst, wo's hakt → kommentier **ENERGIE**."
+
+**⑤ Karussell · 🟡 KEYWORD ENERGIE · Mehrwert** (Foto-Cover)
+- Hook-Cover: „So machst du in **3 Tagen** sichtbar, wohin deine Energie verschwindet."
+- Folien: die 3-Tage-Methode Schritt für Schritt (was du beobachtest) · was du danach in der Hand hast · sanfter Abschluss.
+- CTA: „Genau dafür ist mein 3-Tage-Energie-Kickstart → kommentier **ENERGIE**, ich schick ihn dir. 💛"
 
 ---
 
-## Dreh-Batch (alles auf einmal filmen)
-- **3 Talking-Heads** (KW29-R1, KW30-R1, KW31-R1 / R3) — Gesicht in die Kamera, candid, kein posiertes Setting.
-- **B-Roll** (Abend-Routine · Alltag mit Kindern · Handy/Akku-Szene · Kaffee/Tee) — für die Mehrwert-/Lead-Reels, Trending-Sound drüber, nativ posten.
-- Hooks als Overlay + erster gesprochener Satz identisch.
+## Dreh-/Bau-Batch
+- **3 Talking-Heads** (je 1 pro Woche, Post ①) — Gesicht in Kamera, candid, kein posiertes Setting.
+- **6 B-Roll-Reels** (je 2/Woche) — Alltag/Abend/Akku-Szene, Trending-Sound, nativ posten.
+- **6 Karussells** (je 2/Woche) — Foto-Cover (Orange-Akzent), Mehrwert-Folien, max 10, parallel FB.
+- Hooks als Overlay + 1. gesprochener Satz identisch. Captions = Reichweitenherz-Deep-Dive, clean-warm, Compliance.
 
 ---
 
