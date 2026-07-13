@@ -319,25 +319,27 @@
 
     {
       "id": "doterra-energie",
-      "name": "doTERRA Energie-Kur",
+      "name": "doTERRA 3-Tage-Energie-Kickstart",
       "status": "live",
       "profile": "doterra",
-      "typ": "0€ Leadmagnet · Padlet + Kur-Info",
+      "typ": "0€ Erlebnis-Freebie · 3-Tage-Mail-Challenge (kein PDF)",
       "preis_chf": 0,
-      "zielgruppe": "Erschöpfte Mamas im Funktionsmodus",
-      "problem": "Dauerhafter Energie-Mangel, Erschöpfung",
-      "transformation": "4-Säulen-Einstieg in Regeneration",
+      "zielgruppe": "Mamas 35-45, erschöpft trotz Schlaf, im Funktionsmodus",
+      "problem": "Müde trotz genug Schlaf, Nachmittagstief, Dauer-Erschöpfung",
+      "transformation": "Müde trotz Schlaf → erster spürbarer Unterschied in 3 Tagen",
 
       "traffic_quellen": {
-        "wordpress_landing": null,
+        "wordpress_landing": "https://mumlifebalance.ch/energie-kickstart",
         "manychat_keyword": "ENERGIE",
-        "padlet_link": "https://padlet.com/pnulmann/wohlf-hlen-leicht-gemacht-hfzk8ccha55mu9ny"
+        "ac_form_id": 64
       },
 
       "ac_integration": {
         "liste_id": 18,
         "list_name": "doTERRA Interessenten",
         "tags": {
+          "energie_kickstart": 84,
+          "routine_interesse": 85,
           "kunde": 56,
           "vorteilskunde": 57,
           "wellness_advocate": 58
@@ -345,12 +347,14 @@
       },
 
       "produkttreppe_anschluss": [
-        { "stufe": "Kur-Einstieg", "produkt": "PV Assist + VMG+", "preis": "variabel" }
+        { "stufe": "21-Tage-Energie-Routine", "produkt": "VMG+ · PB Assist+ · Omega 3 · ClaryCalm", "preis": "doTERRA-Provision" },
+        { "stufe": "Werde Hausapothekerin", "produkt": "10 Öle + Workbook", "preis": "doTERRA-Provision" }
       ],
 
       "content_hinweise": {
-        "pillar": "Zurück zu deiner Energie (4 Säulen)",
-        "primaer_keyword": "ENERGIE"
+        "pillar": "Zurück zu deiner Energie",
+        "primaer_keyword": "ENERGIE",
+        "assets": "outputs/produkte/doterra-mama-energie/"
       }
     }
     ,

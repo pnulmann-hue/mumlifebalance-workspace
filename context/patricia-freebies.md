@@ -121,19 +121,23 @@ tags: [freebies, sales]
 
 ## doTERRA-Profil
 
-**AKTUELL KEIN AKTIVES FREEBIE.** Der frühere „5 Schritte zur Freiheit" (`context/doTERRA/Freebie/5 Schritte zur Freiheit.pdf`) stammt aus einer alten Positionierung und wird **nicht mehr verwendet**.
+### 🔥 Der 3-Tage-Energie-Kickstart (Keyword: `ENERGIE`) — AKTIVES FREEBIE (seit 2026-07-08)
 
-Bis das neue Freebie live ist, nutzt der Content-Assistent auf dem doTERRA-Profil:
-- **Save-/Share-CTAs** (keine Keyword-DMs)
-- **Direkten Verweis auf den Padlet-Link** (wenn Content zur Kur „Zurück zu deiner Energie" führt): https://padlet.com/pnulmann/wohlf-hlen-leicht-gemacht-hfzk8ccha55mu9ny
-- **Keyword `ENERGIE`** nur dann, wenn ManyChat-Automation wirklich eingerichtet ist (Status prüfen!)
+- **Landingpage**: https://mumlifebalance.ch/energie-kickstart (WP 3911) · **Opt-in**: AC-Formular 64 → Liste **18** „doTERRA Interessenten" + Tag `energie-kickstart` → löst 3-Mail-Automation aus
+- **Format**: Erlebnis-Freebie — 3 Tage geführte Mini-Challenge per E-Mail (AC), **kein PDF**
+- **Zielgruppe**: Mamas 35–45, erschöpft **trotz** genug Schlaf, im Funktionsmodus (nach Kleinkinderphase)
+- **Transformation**: „Ich wache müde auf, obwohl ich geschlafen hab" → „ich spür schon am 3. Tag einen Unterschied"
+- **Kern-Inhalt**: Tag 1 Protein-Frühstück (min. 30g, 1/3-Teller-Regel) · Tag 2 Bewegung (8000 Schritte) · Tag 3 Schlaf/Abend-Ritual
+- **Basis**: Patricias Wendepunkt-Story (mit 36). **Compliance**: „bei mir war"-Frame, keine Heilversprechen
+- **CTA in Captions/Reels**: „Kommentier **ENERGIE**" (ManyChat-Flow „0€ Produkt Energie-Kickstart" ist LIVE auf dem Konto „Mama Regeneration & Energie") — ODER Bio-Link zur Landingpage
+- **Next-Step**: 21-Tage-Energie-Routine (Produktpaket VMG+ · PB Assist+ · Omega 3 · ClaryCalm) → Werde Hausapothekerin
+- **Alle Assets**: `outputs/produkte/doterra-mama-energie/` (02-freebie-3-tage-kickstart · 05-freebie-mails-kickstart · freebie-seite-energie-kickstart.html · 07-reel-opt-in-energie)
 
-### In Planung: doTERRA-Freebie „Welcher Regenerations-Typ bist du?"
-- **Status**: In Planung (siehe [plans/2026-04-21-freebie-quiz-regenerations-typ.md](../plans/2026-04-21-freebie-quiz-regenerations-typ.md))
-- **Keyword**: `ENERGIE` (oder neues Keyword wie `TYP`)
-- **Format**: Interaktive Single-Page mit 9-Fragen-Quiz + 4 Typ-Ergebnissen
-- **Zielgruppe**: Erschöpfte Mamas, 30-45, nach Kleinkinderphase
-- **Next-Step**: Kur „Zurück zu deiner Energie" (30 Tage + doTERRA-Paket)
+> ⚠️ Der frühere „5 Schritte zur Freiheit" + die „Zurück zu deiner Energie"-Kur sind **abgelöst**. Padlet ist **nicht** für Kunden gedacht → nicht mehr in Captions verlinken.
+
+### In Planung (später)
+- **Öl-Schnupperset** (Muster Lavendel/Peppermint/Lemon + Impuls-Serie → „Werde Hausapothekerin") — Konzept in Arbeit, ggf. mit KI-Companion (WhatsApp)
+- **Energie-Typ-Quiz** als 0€-Vorstufe (plans/2026-04-21-freebie-quiz-regenerations-typ.md) — optional
 
 ---
 
@@ -150,6 +154,7 @@ Für /reels + /karussell: Bei passendem Content-Thema das richtige Freebie in de
 | Stories besser nutzen / Gespräche eröffnen | Story-Challenge 7-Tage | `STORY` (noch anlegen!) |
 | Ich will wissen wo ich stehe / Wachstumsblocker | Quiz | `QUIZ` |
 | Eigenes Produkt/Minikurs entwickeln | Lead-Challenge + Minikurs | `LEAD` + `PRODUKT` |
+| **doTERRA:** müde trotz Schlaf / Energie zurück / Funktionsmodus (Mama 35–45) | 3-Tage-Energie-Kickstart | `ENERGIE` |
 
 ## Rotations-Regel (für /reels + /karussell)
 
