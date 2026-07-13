@@ -1,67 +1,51 @@
 {
-  "datum": "2026-07-13",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": true,
-        "phase": "verkaufsphase",
-        "tag_im_launch": 29,
-        "vorlage": "Quick Win",
-        "titel": "Quick Win + wer dabei ist",
-        "story_ziel": "Kleine sofort-umsetzbare Methode + anonyme Käuferinnen-Wand. Vertrauen + sanfte Dringlichkeit.",
-        "kaeufertyp": "Willi",
-        "cta": "Cart offen — Link / DM MBA",
-        "cta_keyword": "MBA"
-      },
-      "kontext_snapshot": {
-        "kw": 29,
-        "wochentag": "Montag",
-        "datum": "2026-07-13"
-      },
-      "gesendet_am": "2026-07-13T04:42:03.061Z",
-      "telegram_message_id": 877,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie (4 Säulen)",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Lehrreich / Mini-Training",
-        "titel": "Lehrreich / Mini-Training",
-        "story_ziel": "Ein konkretes, sofort umsetzbares Learning aus Patricias Wissen — screenshotbar.",
-        "kaeufertyp": "Willi",
-        "cta": "passend zum Thema (BIO / STORY / ECHT1)",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 29,
-        "wochentag": "Montag",
-        "datum": "2026-07-13"
-      },
-      "gesendet_am": "2026-07-13T04:42:03.926Z",
-      "telegram_message_id": 878,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "mentoring",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "Bio-Check",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": null,
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": {
+    "datum": "2026-07-13",
+    "phase": "verkaufsphase",
+    "julia_vorlage": "quick-win",
+    "titel": "Quick Win + wer dabei ist",
+    "story_ziel": "Kleine sofort-umsetzbare Methode + anonyme Käuferinnen-Wand. Vertrauen + sanfte Dringlichkeit.",
+    "kaeufertyp": "Willi",
+    "cta": "Cart offen — Link / DM MBA",
+    "cta_keyword": "MBA",
+    "profil": "mentoring"
+  },
+  "launch_vorlage": {
+    "name": "Quick Win",
+    "phase": "alle",
+    "ziel": "Eine Strategie/Formel die SOFORT umsetzbar ist — stärkt Vertrauen, zeigt Expertise direkt.",
+    "julia_anleitung": "Einleitung mit Statistik/krassem Statement → auf ihr Leben beziehen → warum wichtig → die konkrete Methode → Handlungsaufforderung sofort umzusetzen → Überleitung aufs Angebot (P.S.-Stil).",
+    "kaeufertyp": "Willi",
+    "slide_bogen": "krasses Statement → auf Mama-Alltag beziehen → die Methode → 'mach das jetzt' → P.S. Angebot"
+  },
+  "kontext_snapshot": {
+    "kw": 29,
+    "wochentag": "Montag",
+    "datum": "2026-07-13"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-07-13T07:49:38.784Z",
+  "telegram_message_id": 879,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
