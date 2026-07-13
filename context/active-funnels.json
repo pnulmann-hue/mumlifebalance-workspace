@@ -282,8 +282,8 @@
 
     {
       "id": "todo-halbieren",
-      "name": "3 Schritte, um deine To-Do-Liste zu halbieren",
-      "status": "asset-vorhanden-ohne-ac-funnel",
+      "name": "Freischaufeln (0€-Tool: To-Do halbieren → Business-Zeitfenster)",
+      "status": "live",
       "profile": "mentoring",
       "typ": "0€ Leadmagnet · Checkliste/Guide",
       "preis_chf": 0,
@@ -293,9 +293,10 @@
       "transformation": "Sofort umsetzbare Struktur, die die To-Do-Liste halbiert und Zeit fürs Business schafft",
 
       "traffic_quellen": {
-        "wordpress_landing": null,
+        "wordpress_landing": "https://mumlifebalance.ch/freischaufeln",
         "manychat_keyword": "ZEITFENSTER",
-        "asset_status": "Von Patricia bereits gebaut (kam mega an) — Ablageort/Format noch zu verlinken (Canva/PDF/Padlet?), liegt nicht im Repo"
+        "vercel_app": "https://freischaufeln.vercel.app",
+        "asset_status": "LIVE seit 2026-07-13: WP-Landing + Vercel-App + ManyChat ZEITFENSTER scharf. Erstmals im Feed KW29 (Di/Mi/Fr Lead-Posts). Code: scripts/freischaufeln/"
       },
 
       "ac_integration": {
