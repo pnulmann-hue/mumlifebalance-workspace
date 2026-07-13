@@ -11,6 +11,14 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 - [[funnel-landkarte]]
 - [[instagram-lead-nurture-mails]]
 
+### 📁 mba-anrechnung-bestandskunden
+
+- [[blueprint]]
+- [[mail-1-dein-kurs-ist-drin]]
+- [[mail-2-eine-stufe-zwei-fehlen]]
+- [[mail-3-was-der-rest-kostet]]
+- [[mail-4-anrechnung-laeuft-aus]]
+
 ### 📁 bio-check
 
 - [[werbeanzeige-bio-check]]

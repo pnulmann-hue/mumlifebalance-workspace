@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Zentrales Register aller aktiven Funnels für Mum Life Balance (Mentoring + doTERRA). Wird vom /funnel Skill gepflegt und von /story, /montag, /reels, /karussell gelesen — damit Content-Assistenten wissen welche ManyChat-Keywords diese Woche prioritär sind.",
-    "last_updated": "2026-07-04 · MBA-Launch LÄUFT: 5-Tage-PIA-Bootcamp gelaufen (29.6.–3.7.), öffentlicher Cart offen Fr 3.7.–So 27.7. 23:59 (Pioneer 997 durchgehend, verlängert von 6.7.) · Mama-CEO-Kurs fertiggestellt · Neues 0€-Freebie 'To-Do-Liste halbieren' (Keyword ZEIT) für Juli-Feed-Block 2 ergänzt · Warteliste live (mumlifebalance.ch/mba-warteliste).",
+    "last_updated": "2026-07-13 · Bestandskunden-Anrechnungs-Aktion angelegt (outputs/funnels/mba-anrechnung-bestandskunden/): Käufer der 3 grossen Kurse bekommen vollen Kaufpreis auf die MBA angerechnet, 4-Mail-Sequenz, Deadline 27.7. · Vorher 2026-07-04 · MBA-Launch LÄUFT: 5-Tage-PIA-Bootcamp gelaufen (29.6.–3.7.), öffentlicher Cart offen Fr 3.7.–So 27.7. 23:59 (Pioneer 997 durchgehend, verlängert von 6.7.) · Mama-CEO-Kurs fertiggestellt · Neues 0€-Freebie 'To-Do-Liste halbieren' (Keyword ZEIT) für Juli-Feed-Block 2 ergänzt · Warteliste live (mumlifebalance.ch/mba-warteliste).",
     "funnel_architektur": "3 Produkttreppen (Sichtbarkeit/Instagram · Zeit/Struktur=Mama-CEO · Digitale Produktwelt). Jede: 0€-Freebie → Minikurs (39/97) → grosser Kurs (333) → MBA. ALLE Funnels führen am Ende zur MBA (Bundle · Pioneer 997 / Final 1347). Die 3 grossen Kurse (Instagram-Kundenmaschine · Mama-CEO · Digitale Produktwelt) sind einzeln verkaufbar UND Bestandteil der MBA.",
     "schema_version": 1,
     "brand": "Mum Life Balance",
@@ -578,6 +578,21 @@
         "pillar": "Alles aus einer Hand — vom Thema bis zum planbaren Einkommen neben der Familie",
         "primaer_keyword_launch": "BOOTCAMP (Anmeldung) → ab Cart-Open MBA-Link/DM",
         "hinweis": "Launch läuft als 5-Tage-PIA-Bootcamp. Der content-assistent (Telegram-Story-Bot) liest via launch_engine.py den materialisierten Tag-für-Tag-Plan outputs/produkte/mba-launch/story-plan.json (Aufwärm 15.-28.6. · Verkauf 29.6.-27.7. · Nachkauf 28.-31.7.) mit Vorrang. Ausserhalb des Launch-Fensters: Julia-Storyvorlagen-Rotation (context/julia-story-vorlagen.json) + Monatsplan-MD. MBA bleibt Fernziel, alle anderen Funnels führen hierher."
+      },
+
+      "bestandskunden_upgrade": {
+        "status": "geplant",
+        "beschreibung": "Anrechnungs-Aktion: Käuferinnen der 3 grossen Kurse bekommen vollen Kaufpreis auf die MBA angerechnet (voller Kaufpreis 1:1). Eigene 4-teilige Mailsequenz parallel zum offenen Cart, Deadline So 27.7. 23:59.",
+        "assets_path": "outputs/funnels/mba-anrechnung-bestandskunden/",
+        "segmente": {
+          "instagram_kundenmaschine": { "ac_tag": 39, "anrechnung_chf": 333, "mba_restpreis_chf": 664, "coupon": "KUMA-DRIN" },
+          "mama_ceo_pilot": { "ac_tag": 71, "anrechnung_chf": 249, "mba_restpreis_chf": 748, "coupon": "CEO-DRIN-249" },
+          "mama_ceo_regulaer": { "ac_tag": 71, "anrechnung_chf": 333, "mba_restpreis_chf": 664, "coupon": "CEO-DRIN-333" },
+          "digitale_produktwelt": { "ac_tag": 44, "anrechnung_chf": 333, "mba_restpreis_chf": 664, "coupon": "DPW-DRIN" }
+        },
+        "ausschluss_tag": 79,
+        "sendeplan": { "mail_1": "2026-07-15 08:00", "mail_2": "2026-07-20 09:00", "mail_3": "2026-07-24 08:00", "mail_4": "2026-07-27 08:00" },
+        "offen_patricia": "ThriveCart-Festbetrags-Coupons anlegen (KUMA-DRIN/CEO-DRIN-249/CEO-DRIN-333/DPW-DRIN) · Tag 39 gegen Käufer-Export verifizieren · Mehrfach-Käuferinnen (Tag 39+71) manuell · Segmente in AC bauen + aus allg. Cart-Blasts ausschliessen"
       },
 
       "umsatzziel_contribution_chf": 7976,
