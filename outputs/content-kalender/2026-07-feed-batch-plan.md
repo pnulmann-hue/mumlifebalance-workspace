@@ -11,9 +11,9 @@ tags: [content]
 | Woche | Säule | Freebie-CTA | Story parallel |
 |---|---|---|---|
 | **KW28 (7.–11.7.)** | Sichtbarkeit/Instagram | **BIO** (Bio-Check) | Kurs 1: IG-Kundenmaschine |
-| KW29 (14.–18.7.) | Zeit/Struktur | — (Reichweite; Freischaufeln im Bau) | Kurs 2: Mama-CEO |
-| KW30 (21.–25.7.) | Digitale Produktwelt | **QUIZ** (Potenzial-Test) | Kurs 3: Digitale Produktwelt |
-| KW31 (28.–31.7.) | Recap / alle 3 | — (Nachkauf) | Nachkauf/Ausblick |
+| KW29 (13.–17.7.) | Zeit/Struktur | — (Reichweite; Freischaufeln im Bau) | Kurs 2: Mama-CEO |
+| KW30 (20.–24.7.) | Digitale Produktwelt | **QUIZ** (Potenzial-Test) | Kurs 3: Digitale Produktwelt |
+| KW31 (27.–31.7.) | Recap / alle 3 | — (Nachkauf) | Nachkauf/Ausblick |
 
 > **Posting-Weg:** Talking-Head-Reel + beide Karussells → Blotato. **2 B-Roll-Reels → nativ selbst posten** (wegen Trending-Sound = Reichweite).
 > **Hooks gebaut auf den Reichweitenherz-Tresor-Vorlagen** (5 Säulen: Identifikation · Positionierung · Mehrwert · Storytelling · Verkauf), CTA nach dem RWH-CTA-Kompass. **Gefiltert durch Patricias Voice:** fliessender Freundin-Text statt Tresor-Zeilen-Stakkato · kein „stell dir vor" · Schweizer ss · keine erfundenen Zahlen.
@@ -177,102 +177,118 @@ tags: [content]
 
 ---
 
-## KW29 — Säule Zeit/Struktur (14.–18.7.)
+## KW29 — Säule Zeit/Struktur (13.–17.7.)
 
 **Wochen-Kernschmerz:** „Ich komm neben der Familie einfach nicht zum Business." · **Alle Reichweite** (Freischaufeln noch im Bau → **kein** Freebie-Keyword diese Woche, Verkauf via Stories/MBA) · **Story parallel:** Kurs 2 Mama-CEO.
 **Hooks = andere RWH-Sets als KW28** (Experiment, siehe Tracker unten). Neutral, kein „mehr in Stories".
 
 ### 🎨 Feed-Rhythmus
-`Mo (reaktiv, je nach Trend) · Di Foto · Mi Template Creme/Beige · Do Foto · Fr Template Petrol`
-Mo = Viral-Trend-Reel, Cover ergibt sich aus dem Clip. ABAB ab Di: Foto → Orange → Foto → Petrol. Falls Mo mit einem Foto-Still startet, Di auf ein Template ziehen, damit nicht 2 Fotos in Folge.
+`Mo Foto (orange) · Di Foto (Schilf) · Mi Template Creme · Do Foto (Schilf sw) · Fr Template Petrol`
+⚠️ Mo + Di sind aktuell 2 Foto-Cover in Folge (ABAB-Konflikt). Sauber wäre: Templates auf Di + Do, Fotos auf Mo/Mi/Fr. Offen — mit Patricia entscheiden (siehe Chat 13.7.).
 
-### Mo 14.7. — REEL · Viral-Trend (reaktiv) · 🟢 Reichweite
-- **Format:** Kein fixes Talking-Head — **du wartest auf ein passendes virales Reel-Format/Audio** (Zeit-/Mama-Business-Thema) und legst deinen Hook als Text-Overlay drauf. Fallback: kommt bis Mo kein Trend, nutzt du den Hook als kurzes TH oder ziehst den Post nach hinten.
-- **RWH-Säule (Message):** 📖 Storytelling (Set 3: „Das Peinliche? Ich war felsenfest überzeugt…")
-- **Hook (als Overlay/Aufhänger):** „Das Peinliche? Ich war felsenfest überzeugt, dass ich einfach nur disziplinierter sein muss, um neben vier Kindern Zeit fürs Business zu finden."
-- **Cover:** je nach Trend (Still aus dem Clip) — **kein fixer Render** von mir
-- **CTA (Storytelling → Folgen):** „Wenn du dich grad wiedererkennst — bleib hier, hier bist du richtig."
+### Mo 13.7. — REEL · Talking-Head · 🟢 Reichweite
+- **Format:** Fixes Talking-Head (aufgenommen 13.7.) — Patricia spricht den Hook direkt in die Kamera, ~25–40 Sek. Kein Warten auf einen Trend.
+- **RWH-Säule (Message):** 👩‍🏫 Mehrwert — „Definiere die Transformation, BEVOR du Content machst."
+- **Thema:** Statt trillionen Reels abspeichern, die man nie umsetzt: Ende Juli mit Stift & Papier hinsetzen und überlegen, WAS man im August verkaufen will = die Transformation, nicht das Produkt. Beispiel Abnehm-Shake (Verwandlung statt Vanille-Geschmack), Themen Ernährung/Bewegung/Kopf → Bogen zum Produkt.
+- **Cover:** Foto-Cover gerendert → `outputs/reels/2026-07-kw29-covers/png/mo/01.png` (Foto 250, orange Bluse)
+- **CTA (Mehrwert → Speichern):** „Speicher dir das und mach die Übung, wenn du dich Ende Juli hinsetzt."
 
-### Di 15.7. — REEL · B-Roll · 🟢 Reichweite
+### Di 14.7. — REEL · B-Roll · 🟢 Reichweite
 - **RWH-Säule:** ♥️ Identifikation (Set 1: „Kann mir bitte mal jemand erklären, warum…")
 - **Hook:** „Kann mir bitte mal jemand erklären, warum alle so tun, als wäre ‚nimm dir doch einfach Zeit fürs Business' total einfach?"
 - **Cover:** Foto (candid Alltag-Still) · Trending-Sound nativ
 - **CTA (Identifikation → Folgen/Teilen):** „Sag mir, dass ich nicht die Einzige bin — und teil's der Mama, die's grad genauso jongliert."
 
-### Mi 16.7. — KARUSSELL · 🟢 Reichweite
+### Mi 15.7. — KARUSSELL · 🟢 Reichweite · via Blotato
 - **RWH-Säule:** 👩‍🏫 Mehrwert (Set 7: „Der wichtigste Hebel – den fast alle ignorieren")
 - **Hook (Cover):** „Der wichtigste Zeit-Hebel fürs Business — den fast jede Mama übersieht."
 - **Cover:** Template **Creme/Beige**
 - **CTA (Mehrwert → Speichern):** „Speicher's fürs nächste Mal, wenn deine Woche wieder überquillt."
 
-### Do 17.7. — REEL · B-Roll · 🟢 Reichweite
+### Do 16.7. — REEL · B-Roll · 🟢 Reichweite
 - **RWH-Säule:** 🎯 Positionierung (Set 1: „Ich bin nicht die, die dir …")
 - **Hook:** „Ich bin nicht die, die dir sagt, dass du täglich dein Produkt in die Kamera halten sollst."
 - **Cover:** Foto (candid) · Trending-Sound nativ
 - **CTA (Positionierung → Folgen):** „Folg mir, wenn du genug hast von ‚halt einfach dein Produkt in die Kamera'."
 
-### Fr 18.7. — KARUSSELL · 🟢 Reichweite
-- **RWH-Säule:** 💰 Verkauf (Set 1: „Wer […] erreichen will, muss nicht härter arbeiten…") — weicher Folgen-CTA (Feed programm-frei)
-- **Hook (Cover):** „Wer ein Business neben der Familie will, muss nicht härter arbeiten — sondern aufhören, Energie an Dinge zu verschwenden, die eh keiner merkt."
+### Fr 17.7. — KARUSSELL · 🟢 Reichweite · via Blotato
+- **RWH-Säule:** 💰 Verkauf (Set 1) — weicher Folgen-CTA (Feed programm-frei)
+- **Hook (Cover):** „Wer ein Business neben der Familie will, arbeitet nicht härter — er lässt weg, was eh keiner merkt."
 - **Cover:** Template **Petrol** (Reach-Post, kein Lead → Petrol ok)
-- **CTA (Verkauf → weiches Folgen):** „Folg mir, wenn du dein Business smarter statt härter aufbauen willst."
+- **CTA (Verkauf → weiches Folgen):** „Folg mir, wenn du dein Business clever statt auf Verschleiss aufbauen willst."
 
-**KW29-Check:** 2 Karussell (Mi, Fr) · 3 Reels (Mo Viral-Trend/reaktiv, Di + Do B-Roll) · 0 Keyword (kein Freebie) · alles Reichweite · **alle 5 Säulen abgedeckt** (Storytelling · Identifikation · Mehrwert · Positionierung · Verkauf). ✅
+**KW29-Check:** 2 Karussell (Mi 15.7, Fr 17.7 · via Blotato) · 3 Reels (Mo Talking-Head, Di + Do B-Roll · nativ) · 0 Keyword (kein Freebie) · alles Reichweite · Säulen Mehrwert (2×) · Identifikation · Positionierung · Verkauf. ✅
 
-### ✍️ KW29-Captions (postfertig, neutral, kein Story-CTA)
+### ✍️ KW29-Captions (postfertig · Version-1-Voice, warm-klar)
 
-**Mo — Storytelling → Folgen**
-> Das ist mir fast ein bisschen peinlich, aber ich sag's trotzdem: Jahrelang war ich felsenfest überzeugt, dass ich einfach nur disziplinierter sein muss, um neben den Kindern Zeit fürs Business zu finden.
+**Mo — Mehrwert → Speichern** (neues Talking-Head-Reel, aufgenommen 13.7.)
+> Letzte Woche hab ich mit einer Mentee genau über den einen Punkt geredet, der über deinen ganzen August-Content entscheidet — und ich glaub, das ist das Wichtigste, was ich dir vor dem Abdrehen überhaupt mitgeben kann.
 >
-> Also hab ich mich morgens noch früher aus dem Bett gequält und mich abends um 21 Uhr todmüde an den Laptop gesetzt — und mich gefragt, warum trotzdem nichts vorwärtsgeht.
+> Bevor du dir das hundertste Reel abspeicherst, das du dann eh nie umsetzt, setz dich Ende Juli ein paar Minuten mit Stift und Papier hin und beantworte eine einzige Frage: Was will ich im August eigentlich verkaufen?
 >
-> Bis ich kapiert hab: Disziplin war nie mein Problem. Mir hat eine Struktur gefehlt — ein festes, geschütztes Fenster, das ich behandle wie einen Termin mit einer Kundin, und nicht das, was übrig bleibt, wenn alle anderen versorgt sind.
+> Und „verkaufen" heisst dabei fast nie das Produkt an sich. Es geht um die Veränderung, die es bei jemandem auslöst.
 >
-> Seitdem ist es nicht mehr Willenskraft gegen mein Leben, sondern ein Plan, der zu meinem Leben passt. Wenn du dich grad wiedererkennst — bleib hier, hier bist du richtig. 💛
+> Beispiel Abnehmen: Du hast einen Shake. Wenn du jeden Tag nur erzählst, dass er nach Vanille schmeckt und mit Mandelmilch besonders fein ist, redest du übers Produkt. Spannend wird's, wenn du die Verwandlung dahinter zeigst — das Gefühl, im Sommerkleid wieder gern in den Spiegel zu schauen, ohne abends hungrig ins Bett zu gehen.
 >
-> `#mamabusiness #mamaunternehmerin #networkmarketing #zeitmanagement #mamaceo`
+> Dann überlegst du dir zwei, drei Themen, über die du im August sprichst. Beim Shake wären das zum Beispiel Ernährung, Bewegung und Mindset.
+>
+> Über diese Themen spielst du dann alles: deine Tipps, einen Einblick in deinen Alltag, deine eigene Geschichte, deine Meinung. Und von dort spannst du jedes Mal den Bogen zurück zu dem, was du verkaufst.
+>
+> Auf einmal weisst du morgens schon, was du postest, weil hinter jedem Post ein Ziel steht.
+>
+> Speicher dir das und mach die Übung wirklich, wenn du dich Ende Juli hinsetzt. Die paar Minuten ersparen dir den ganzen August das tägliche Grübeln. 💛
+>
+> `#mamabusiness #contentplanung #onlinebusinessmitkind #networkmarketing #mamaunternehmerin`
 
 **Di — Identifikation → Folgen/Teilen**
-> Kann mir bitte mal jemand erklären, warum alle so tun, als wäre „nimm dir doch einfach Zeit fürs Business" total einfach?
+> Neulich meinte jemand zu mir, ich soll mir doch „einfach mal Zeit fürs Business nehmen". Einfach. Klar. 😅
 >
-> Zwischen Znüni machen, Wäscheberg, zum Training fahren und dem Kind, das genau dann etwas braucht, wenn du dich endlich hinsetzen willst — ehrlich, wo genau soll dieses „einfach" passieren?
+> Zwischen Znüni schmieren, dem Wäscheberg, dem Taxidienst zum Training und dem Kind, das genau in dem Moment was braucht, in dem ich mich endlich hinsetzen will — wo genau soll dieses „einfach" bitte passieren?
 >
-> Und dann liest du noch so einen Tipp von jemandem, der abends in Ruhe drei Stunden am Stück arbeiten kann, und fühlst dich schlecht, weil es bei dir eben nicht so läuft. Weisst du was? Es liegt nicht an dir. Es liegt daran, dass die meisten Tipps für ein Leben gemacht sind, das mit deinem nichts zu tun hat.
+> Und dann liest du so einen Tipp von jemandem, der abends drei Stunden am Stück am Laptop sitzt, und fühlst dich mies, weil's bei dir eben nicht so läuft. Das Ding ist: Die meisten dieser Tipps sind für ein Leben gemacht, das mit deinem nichts zu tun hat.
+>
+> Deine Zeit ist nicht das Problem. Dein Alltag ist einfach voller als der von den meisten, die dir erklären, wie's geht.
 >
 > Sag mir, dass ich nicht die Einzige bin — und schick's der Mama, die das grad genauso jongliert. 💛
 >
 > `#mamabusiness #mamaunternehmerin #momlife #mentalload #networkmarketing`
 
 **Mi — Mehrwert → Speichern**
-> Der wichtigste Hebel für mehr Business-Zeit ist nicht mehr Disziplin — und auch nicht das nächste Produktivitäts-Tool. Es ist ein einziges, festes Zeitfenster in der Woche, das du behandelst wie einen unverschiebbaren Termin.
+> Bis vor Kurzem war meine Business-Zeit immer das, was übrig blieb, wenn alle anderen versorgt waren. Also meistens: nichts. 😅
 >
-> Nicht „wenn die Kinder mal schlafen", nicht „wenn ich mal Luft hab", sondern ein fixer Block, der genauso ernst genommen wird wie der Zahnarzt.
+> Dann hab ich angefangen, mir einen festen Block in die Woche zu setzen, auch wenn's nur zwei Stunden sind, und ihn zu behandeln wie einen Zahnarzttermin — der wird ja auch nicht gecancelt, weil grad ein Wäscheberg ruft.
 >
-> Klingt banal, ändert aber alles: Weil du dann nicht mehr gegen deinen Alltag ankämpfst, sondern einen Platz hast, an dem dein Business wächst — auch in einer chaotischen Woche.
+> Der steht nicht unter dem Vorbehalt „falls ich grad Luft hab". Er ist einfach fix. Und genau das verändert alles: Weil du dann nicht mehr gegen deinen Alltag ankämpfst. Du hast einen festen Platz, an dem dein Business wächst — auch in einer komplett chaotischen Woche.
 >
-> Speicher's fürs nächste Mal, wenn deine Woche wieder überquillt.
+> Klingt fast zu simpel für so einen grossen Effekt. Ist aber genau der Hebel.
+>
+> Speicher dir das für die nächste Woche, die wieder überquillt. 💛
 >
 > `#mamabusiness #mamaunternehmerin #zeitmanagement #mamaceo #selbstständigmitkind`
 
 **Do — Positionierung → Folgen**
-> Ich sag's ganz ehrlich: Ich bin nicht die, die dir sagt, dass du täglich dein Produkt in die Kamera halten sollst.
+> Nach ein paar Jahren Instagram sag ich's inzwischen ganz direkt: Das ständige „halt dein Produkt in die Kamera" ist der Rat, der dich am meisten Zeit kostet und am wenigsten bringt.
 >
-> Weil genau das ist der Rat, der dich stundenlang Content produzieren lässt — und am Ende steht trotzdem keine einzige Anfrage in den DMs. Du hältst zum hundertsten Mal dein Produkt in die Linse, und die Leute scrollen weiter, weil sie in dir die Verkäuferin sehen und nicht die Frau, die ihr Problem wirklich versteht.
+> Du filmst zum hundertsten Mal dein Produkt, packst es hübsch in Szene, und die Leute scrollen weiter. Weil sie in dir bloss eine Verkäuferin sehen und nicht die Person, die ihr Problem wirklich versteht.
 >
-> Was dich weiterbringt, ist nicht mehr Produkt-Videos, sondern für EIN Thema zu stehen, das deine Leute nachts wachhält. Lieber dreimal übers echte Problem reden als täglich dein Produkt zeigen — das spart dir Zeit und bringt dir die Richtigen.
+> Was dich weiterbringt, ist für ein Thema zu stehen, das deine Leute nachts wachhält. Darüber redest du, dazu hast du eine Meinung, das lebst du vor — und irgendwann kommen sie zu dir, weil sie merken: Die checkt, wo ich grad stehe.
 >
-> Folg mir, wenn du genug hast von „halt einfach dein Produkt in die Kamera". 💛
+> Lieber dreimal übers echte Problem reden als dreissig Mal dein Produkt zeigen. Das spart dir Zeit und bringt dir die Richtigen.
 >
-> `#mamabusiness #networkmarketing #mamaunternehmerin #ehrlichesbusiness #positionierung`
+> Folg mir, wenn du auch genug hast von „halt einfach dein Produkt in die Kamera". 💛
+>
+> `#mamabusiness #networkmarketing #mamaunternehmerin #positionierung #ehrlichesbusiness`
 
 **Fr — Verkauf (weiches Folgen)**
-> Wer ein Business neben der Familie aufbauen will, muss nicht härter arbeiten. Du musst aufhören, deine Energie an Dinge zu verschwenden, die am Ende eh keiner merkt.
+> Früher hab ich locker eine Stunde an einem einzigen Produktbild rumgeschraubt, bis Licht und Winkel „perfekt" waren. Geholfen hat's genau niemandem. 😅
 >
-> Die perfekt gestylten Produktbilder, die dritte Story am Tag, das ewige Optimieren an Details, die keine Kundin je bemerkt — das kostet dich genau die Kraft, die dir dann fürs Wesentliche fehlt.
+> Weisst du, was meine Wunschkundschaft in der Zeit gemerkt hat? Nichts. Das perfekte Bild, die dritte Story am Tag, das ewige Feilen an Details, die eh keiner sieht — das frisst genau die Kraft, die dir dann fürs Wesentliche fehlt.
 >
-> Ein Business neben Kindern und Haushalt wächst nicht, weil du mehr machst, sondern weil du das Richtige machst und den Rest bewusst weglässt. Weniger, aber gezielt — das schlägt „viel und verzettelt" jedes Mal.
+> Ein Business neben Kindern und Haushalt wächst dann, wenn du das Richtige machst und den ganzen Rest bewusst weglässt. Mehr vom Falschen bringt dich keinen Schritt weiter.
 >
-> Folg mir, wenn du dein Business smarter statt härter aufbauen willst. 💛
+> Seit ich die halben Perfektionismus-Baustellen einfach sein lasse, hab ich mehr Zeit für das, was wirklich Kundschaft bringt — und abends noch einen Kopf, der nicht qualmt.
+>
+> Folg mir, wenn du dein Business lieber clever als auf Verschleiss aufbauen willst. 💛
 >
 > `#mamabusiness #mamaunternehmerin #networkmarketing #wenigeraberbesser #mamaceo`
 
@@ -285,15 +301,15 @@ Ziel: über die Wochen erkennen, welche Reichweitenherz-Muster bei der Zielgrupp
 | Woche | Mo | Di | Mi | Do | Fr |
 |---|---|---|---|---|---|
 | **KW28** (Sichtbarkeit) | Storytelling S5 | Identifikation POV S2/4 | Mehrwert S2 (90%) | Positionierung S4 | Mehrwert S4 (grösster Fehler) |
-| **KW29** (Zeit) | Storytelling **S3** (Viral-Trend-Reel) | Identifikation **S1** (erklär mir) | Mehrwert **S7** (der eine Hebel) | Positionierung **S1** (Produkt in die Kamera) | Verkauf **S1** (smarter statt härter) |
+| **KW29** (Zeit) | Mehrwert (August-Content-Reel, TH) | Identifikation **S1** (erklär mir) | Mehrwert **S7** (der eine Hebel) | Positionierung **S1** (Produkt in die Kamera) | Verkauf **S1** (clever statt Verschleiss) |
 | Performance | _nachtragen_ | _nachtragen_ | _nachtragen_ | _nachtragen_ | _nachtragen_ |
 
 → So decken wir Woche für Woche neue Muster ab und finden das, was **richtig zündet**.
 
-## KW30 — Säule Digitale Produktwelt (21.–25.7.) · *noch zu bauen*
+## KW30 — Säule Digitale Produktwelt (20.–24.7.) · *noch zu bauen*
 Kernschmerz: „Ich tausche Zeit gegen Geld / hab kein skalierbares Angebot." Lead-Post → Keyword **QUIZ** (Potenzial-Test). Story parallel: Kurs 3 Digitale Produktwelt.
 
-## KW31 — Recap / alle 3 (28.–31.7.) · *noch zu bauen*
+## KW31 — Recap / alle 3 (27.–31.7.) · *noch zu bauen*
 Nachkauf-Modus: „das war alles ein System" — die 3 Säulen zusammenführen, Beziehung > Verkauf.
 
 ---
