@@ -3,8 +3,10 @@ name: Montag-Build-und-Schedule
 # Läuft jeden Montag 10:00 UTC (= 12:00 Sommerzeit / 11:00 Winterzeit Schweiz)
 # Wenn du im Winter exakt 12:00 Schweiz willst, ändere zu "0 11 * * 1"
 on:
-  schedule:
-    - cron: '0 10 * * 1'
+  # PAUSIERT 2026-07-13 (Hand-Planung KW29/30, Kollisions-Vermeidung). Cron aus — nur noch manuell.
+  # Wieder aktivieren: die 2 folgenden Zeilen einkommentieren.
+  # schedule:
+  #   - cron: '0 10 * * 1'
   workflow_dispatch:  # Manuell triggerbar via GitHub-UI
 
 permissions:

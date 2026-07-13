@@ -4,8 +4,10 @@ name: Freitag-Hooks-Engine
 # Wenn du im Winter exakt 08:00 Schweiz willst, ändere zu "0 7 * * 5"
 # GitHub Actions Cron hat oft 5-15 Min Verzögerung — das ist OK für diesen Workflow
 on:
-  schedule:
-    - cron: '0 6 * * 5'
+  # PAUSIERT 2026-07-13 (Hand-Planung KW29/30, Kollisions-Vermeidung). Cron aus — nur noch manuell.
+  # Wieder aktivieren: die 2 folgenden Zeilen einkommentieren.
+  # schedule:
+  #   - cron: '0 6 * * 5'
   workflow_dispatch:  # Manuell triggerbar via GitHub-UI
 
 permissions:
