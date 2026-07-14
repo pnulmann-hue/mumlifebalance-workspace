@@ -97,7 +97,7 @@ TRIGGER: Tag 87 "Automation 0€ Produkt" hinzugefügt
 
 ## ✉️ Die Mails (baufertig, deine Stimme)
 
-Links: **MBA = https://mumlifebalance.ch/mba/** ✅ eingesetzt. Offen: `[MINIKURS-LINK]` (Finde dein Thema 39) · `[IKM-LINK]` · `[MAMACEO-LINK]` · `[DPW-LINK]` (ThriveCart-Checkouts). Kundenstimme M2 ✅ echt eingesetzt (freigegeben). Jede Mail im Design `context/mail-design-onlinebusiness.html`, **1 CTA pro Mail**.
+Links: **MBA = https://mumlifebalance.ch/mba/** ✅ eingesetzt. Offen: `https://mumlifebalance.thrivecart.com/thema-finden/` (Finde dein Thema 39) · `https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/` · `https://mumlifebalance.thrivecart.com/mama-ceo/` · `https://mumlifebalance.thrivecart.com/digitale-produktwelt/` (ThriveCart-Checkouts). Kundenstimme M2 ✅ echt eingesetzt (freigegeben). Jede Mail im Design `context/mail-design-onlinebusiness.html`, **1 CTA pro Mail**.
 
 ---
 
@@ -123,7 +123,7 @@ Und weil das die Grundlage von absolut allem ist, was danach kommt — von deine
 Liebe Grüsse
 Patricia
 
-**CTA-Button:** Mein Thema finden für 39 CHF → [MINIKURS-LINK]
+**CTA-Button:** Mein Thema finden für 39 CHF → https://mumlifebalance.thrivecart.com/thema-finden/
 
 ---
 
@@ -147,7 +147,7 @@ Wenn du das nicht alleine zusammenpuzzeln willst, hab ich dir genau dafür einen
 Liebe Grüsse
 Patricia
 
-**CTA-Button:** Mein Thema finden für 39 CHF → [MINIKURS-LINK]
+**CTA-Button:** Mein Thema finden für 39 CHF → https://mumlifebalance.thrivecart.com/thema-finden/
 
 ---
 
@@ -271,13 +271,13 @@ Vielleicht ist die ganze Academy gerade ein zu grosser Brocken, zeitlich oder vo
 Such dir die eine Tür aus, hinter der bei dir gerade der grösste Druck steht:
 
 **→ Dir fehlen Kundinnen über Instagram?**
-Die Instagram-Kundenmaschine bringt dir Thema, Positionierung und Strategie, damit sich die richtigen Frauen melden. 333 CHF. → [IKM-LINK]
+Die Instagram-Kundenmaschine bringt dir Thema, Positionierung und Strategie, damit sich die richtigen Frauen melden. 333 CHF. → https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/
 
 **→ Dir fehlt vor allem die Zeit?**
-Mama-CEO baut dir das KI-System, das dir den Hintergrundkram abnimmt, damit dein Business in deine Stunden passt. 333 CHF. → [MAMACEO-LINK]
+Mama-CEO baut dir das KI-System, das dir den Hintergrundkram abnimmt, damit dein Business in deine Stunden passt. 333 CHF. → https://mumlifebalance.thrivecart.com/mama-ceo/
 
 **→ Du willst dein Wissen zu einem eigenen Produkt machen?**
-Die Digitale Produktwelt zeigt dir Schritt für Schritt, wie aus deinem Können ein verkaufbares Produkt wird. 333 CHF. → [DPW-LINK]
+Die Digitale Produktwelt zeigt dir Schritt für Schritt, wie aus deinem Können ein verkaufbares Produkt wird. 333 CHF. → https://mumlifebalance.thrivecart.com/digitale-produktwelt/
 
 Fang dort an, wo es am meisten weh tut. Den Rest holst du später nach — und wenn du dann alles zusammen willst, rechne ich dir den Kurs auf die Academy an.
 
