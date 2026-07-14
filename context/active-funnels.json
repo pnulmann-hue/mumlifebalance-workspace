@@ -582,17 +582,13 @@
 
       "bestandskunden_upgrade": {
         "status": "geplant",
-        "beschreibung": "Anrechnungs-Aktion: Käuferinnen der 3 grossen Kurse bekommen vollen Kaufpreis auf die MBA angerechnet (voller Kaufpreis 1:1). Eigene 4-teilige Mailsequenz parallel zum offenen Cart, Deadline So 27.7. 23:59.",
+        "beschreibung": "Anrechnungs-Aktion: Käuferinnen der 3 grossen Kurse bekommen den vollen tatsächlich bezahlten Kaufpreis auf die MBA angerechnet. Mails nennen keinen fixen Restbetrag ('nur die Differenz') — Anrechnung via ThriveCart-Coupon nach bezahltem Betrag (Earlybird-safe). 4-teilige Mailsequenz parallel zum offenen Cart, Deadline So 27.7. 23:59.",
         "assets_path": "outputs/funnels/mba-anrechnung-bestandskunden/",
-        "segmente": {
-          "instagram_kundenmaschine": { "ac_tag": 39, "anrechnung_chf": 333, "mba_restpreis_chf": 664, "coupon": "KUMA-DRIN" },
-          "mama_ceo_pilot": { "ac_tag": 71, "anrechnung_chf": 249, "mba_restpreis_chf": 748, "coupon": "CEO-DRIN-249" },
-          "mama_ceo_regulaer": { "ac_tag": 71, "anrechnung_chf": 333, "mba_restpreis_chf": 664, "coupon": "CEO-DRIN-333" },
-          "digitale_produktwelt": { "ac_tag": 44, "anrechnung_chf": 333, "mba_restpreis_chf": 664, "coupon": "DPW-DRIN" }
-        },
+        "segmente_ac_tags": { "instagram_kundenmaschine": 39, "mama_ceo": 71, "digitale_produktwelt": 44 },
+        "coupons_nach_betrag": { "DRIN-333": "−333 (IKM/Mama-CEO final/DPW)", "DRIN-249": "−249 (Mama-CEO Earlybird/Pilot)", "weitere": "DRIN-<Betrag> pro tatsächlich kassiertem Preispunkt" },
         "ausschluss_tag": 79,
         "sendeplan": { "mail_1": "2026-07-15 08:00", "mail_2": "2026-07-20 09:00", "mail_3": "2026-07-24 08:00", "mail_4": "2026-07-27 08:00" },
-        "offen_patricia": "ThriveCart-Festbetrags-Coupons anlegen (KUMA-DRIN/CEO-DRIN-249/CEO-DRIN-333/DPW-DRIN) · Tag 39 gegen Käufer-Export verifizieren · Mehrfach-Käuferinnen (Tag 39+71) manuell · Segmente in AC bauen + aus allg. Cart-Blasts ausschliessen"
+        "offen_patricia": "ThriveCart-Festbetrags-Coupons nach Preispunkt anlegen (DRIN-333, DRIN-249, ggf. weitere) · Tag 39 gegen Käufer-Export verifizieren · innerhalb Mama-CEO nach bezahltem Betrag zu Coupon zuordnen · Mehrfach-Käuferinnen (Tag 39+71) stapeln/manuell · Segmente in AC bauen + aus allg. Cart-Blasts ausschliessen"
       },
 
       "umsatzziel_contribution_chf": 7976,

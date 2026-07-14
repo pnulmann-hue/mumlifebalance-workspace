@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>doTERRA KW29 Karussell — 3 Tage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --orange:#dc822e; --orange-tief:#c06b1e; --dunkelblau:#29556d; --creme:#f1ecdd; --text:#0c1c30; }
+      * { margin:0; padding:0; box-sizing:border-box; }
+      body { background:#1a1a1a; font-family:"Source Sans 3",sans-serif; padding:40px; }
+      .slide { width:1080px; height:1350px; position:relative; overflow:hidden; margin:40px auto; background:var(--creme); }
+
+      .cover-foto { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:62% 22%; z-index:1; }
+      .scrim { position:absolute; inset:0; background:linear-gradient(180deg, rgba(12,28,48,0) 42%, rgba(12,28,48,0.42) 100%); z-index:2; }
+      .hook-card { position:absolute; left:56px; right:56px; bottom:70px; background:var(--creme); padding:52px 54px; border-radius:28px; box-shadow:0 16px 44px rgba(12,28,48,0.4); z-index:4; }
+      .hook-card .hook { font-family:"Philosopher"; font-weight:700; font-size:64px; line-height:1.12; color:var(--dunkelblau); }
+      .hook-card .hook .pop { color:var(--orange); font-style:italic; }
+
+      .txt { display:flex; flex-direction:column; justify-content:center; padding:120px 96px; }
+      .num { font-family:"Philosopher"; font-weight:700; font-size:44px; color:var(--orange); margin-bottom:34px; }
+      .num::after { content:""; display:block; width:64px; height:5px; background:var(--orange); border-radius:3px; margin-top:18px; }
+      .body { font-family:"Source Sans 3"; font-weight:600; font-size:58px; line-height:1.32; color:var(--dunkelblau); }
+      .body .pop { color:var(--orange); }
+      .body em { color:var(--orange); font-style:italic; font-weight:700; }
+      .handle { position:absolute; bottom:56px; left:96px; font-family:"Source Sans 3"; font-weight:600; font-size:24px; color:rgba(12,28,48,0.45); }
+
+      .cta { background:linear-gradient(160deg,#fbf7ee 0%, var(--creme) 100%); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:120px 90px; }
+      .cta .lead { font-family:"Source Sans 3"; font-weight:600; font-size:52px; line-height:1.3; color:var(--dunkelblau); margin-bottom:56px; }
+      .cta .keyword-box { background:var(--orange); color:#fff; font-family:"Philosopher"; font-weight:700; font-size:72px; padding:34px 70px; border-radius:999px; box-shadow:0 14px 36px rgba(220,130,46,0.36); }
+      .cta .kw-hint { font-family:"Source Sans 3"; font-weight:600; font-size:34px; color:var(--orange-tief); margin-top:34px; }
+    </style>
+  </head>
+  <body>
+
+    <!-- 1 · Foto-Cover -->
+    <div class="slide">
+      <img class="cover-foto" src="assets/cover.jpg" alt="" />
+      <div class="scrim"></div>
+      <div class="hook-card">
+        <div class="hook"><span class="pop">3 Tage</span>, die dir zeigen, wann deine Energie wirklich kippt.</div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="slide txt">
+      <div class="num">01</div>
+      <div class="body">Energie ist <em>kein Zufall</em>. Sie hat ein Muster — du siehst es nur nicht, solange du im Funktionier-Modus rennst.</div>
+      <div class="handle">@mumlifebalance</div>
+    </div>
+
+    <!-- 3 -->
+    <div class="slide txt">
+      <div class="num">02</div>
+      <div class="body"><span class="pop">3 Tage lang</span> schaust du nur hin: Wann bist du wach, wann platt? Nach welchem Essen? Wie schläfst du?</div>
+      <div class="handle">@mumlifebalance</div>
+    </div>
+
+    <!-- 4 -->
+    <div class="slide txt">
+      <div class="num">03</div>
+      <div class="body">Und plötzlich siehst du: <em>aha</em> — DA kippt's jedes Mal.</div>
+      <div class="handle">@mumlifebalance</div>
+    </div>
+
+    <!-- 5 -->
+    <div class="slide txt">
+      <div class="num">04</div>
+      <div class="body">Bei mir kam die Wende nicht über eine Pille. Sondern übers <span class="pop">Verstehen</span> — und dann anpassen: Protein, Krafttraining, Schlaf.</div>
+      <div class="handle">@mumlifebalance</div>
+    </div>
+
+    <!-- 6 -->
+    <div class="slide txt">
+      <div class="num">05</div>
+      <div class="body">Nach 3 Tagen hast du dein <em>eigenes Muster</em> schwarz auf weiss. Und die ersten Hebel, an denen du drehen kannst.</div>
+      <div class="handle">@mumlifebalance</div>
+    </div>
+
+    <!-- 7 · CTA -->
+    <div class="slide cta">
+      <div class="lead">Genau das ist mein 3-Tage-Energie-Kickstart.</div>
+      <div class="keyword-box">Kommentier ENERGIE</div>
+      <div class="kw-hint">… und ich schick ihn dir in die DMs 💛</div>
+    </div>
+
+  </body>
+</html>

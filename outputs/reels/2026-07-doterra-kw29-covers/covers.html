@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>doTERRA KW29 Reel-Cover</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --orange:#dc822e; --orange-tief:#c06b1e; --dunkelblau:#29556d; --creme:#f1ecdd; --text:#0c1c30; }
+      * { margin:0; padding:0; box-sizing:border-box; }
+      body { background:#1a1a1a; font-family:"Source Sans 3",sans-serif; padding:40px; }
+      .slide { width:1080px; height:1920px; position:relative; overflow:hidden; margin:40px auto; background:var(--creme); }
+
+      /* Foto-Cover */
+      .cover-foto { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:60% 30%; z-index:1; }
+      .scrim { position:absolute; inset:0; background:linear-gradient(180deg, rgba(12,28,48,0) 40%, rgba(12,28,48,0.35) 100%); z-index:2; }
+      .hook-card { position:absolute; left:60px; right:60px; bottom:440px; background:var(--creme); padding:56px 58px; border-radius:30px; box-shadow:0 18px 48px rgba(12,28,48,0.45); z-index:4; }
+      .hook-card .hook { font-family:"Philosopher"; font-weight:700; font-size:70px; line-height:1.1; color:var(--dunkelblau); }
+      .hook-card .hook .pop { color:var(--orange); font-style:italic; }
+      .hook-card .spoiler { font-family:"Source Sans 3"; font-weight:700; font-size:40px; color:var(--orange); margin-top:22px; }
+      .handle { position:absolute; bottom:388px; left:64px; font-family:"Source Sans 3"; font-weight:600; font-size:26px; color:#fff; text-shadow:0 2px 8px rgba(0,0,0,0.7); z-index:5; }
+
+      /* Template-Cover */
+      .tmpl { display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:120px 92px; }
+      .tmpl .eyebrow { font-family:"Source Sans 3"; font-weight:700; font-size:34px; letter-spacing:0.22em; text-transform:uppercase; color:var(--orange); margin-bottom:46px; }
+      .tmpl .big-num { font-family:"Philosopher"; font-weight:700; font-size:300px; line-height:0.8; color:var(--orange); margin-bottom:20px; }
+      .tmpl .headline { font-family:"Philosopher"; font-weight:700; font-size:84px; line-height:1.12; color:var(--dunkelblau); }
+      .tmpl .headline .pop { color:var(--orange); font-style:italic; }
+      .tmpl .subline { font-family:"Source Sans 3"; font-weight:600; font-size:46px; line-height:1.35; color:var(--orange); margin-top:40px; }
+      .tmpl .handle-c { position:absolute; bottom:360px; left:0; right:0; text-align:center; font-family:"Source Sans 3"; font-weight:600; font-size:26px; color:rgba(12,28,48,0.5); }
+    </style>
+  </head>
+  <body>
+
+    <!-- ① Talking-Head · Foto-Cover -->
+    <div class="slide">
+      <img class="cover-foto" src="assets/th-cover.jpg" alt="Patricia" />
+      <div class="scrim"></div>
+      <div class="hook-card">
+        <div class="hook">Ich dachte, ständig <span class="pop">müde</span> zu sein gehört einfach zum Mama-Sein.</div>
+        <div class="spoiler">Bis eine Freundin einen Satz gesagt hat.</div>
+      </div>
+      <div class="handle">@mumlifebalance</div>
+    </div>
+
+    <!-- ② B-Roll · Template-Cover -->
+    <div class="slide tmpl">
+      <div class="eyebrow">POV</div>
+      <div class="headline">Du sagst zum 100. Mal „ich bin halt <span class="pop">müde</span>" …</div>
+      <div class="subline">… und glaubst es selbst nicht mehr.</div>
+      <div class="handle-c">@mumlifebalance</div>
+    </div>
+
+    <!-- ③ B-Roll · Template-Cover (grosse Zahl) -->
+    <div class="slide tmpl">
+      <div class="big-num">5</div>
+      <div class="headline">Zeichen, dass deine Müdigkeit <span class="pop">nicht „nur Stress"</span> ist.</div>
+      <div class="handle-c">@mumlifebalance</div>
+    </div>
+
+  </body>
+</html>

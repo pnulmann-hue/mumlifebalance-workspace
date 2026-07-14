@@ -24,36 +24,39 @@ Diese Anrechnung ist bereits offizielle MBA-Policy (`mba-produktsteckbrief.md`, 
 
 ---
 
-## 2. Segmente + Anrechnung (die Preis-Tabelle)
+## 2. Segmente + Anrechnung
 
-**MBA Pioneer-Preis: CHF 997** (danach 1347). Voller Kaufpreis wird abgezogen.
+**MBA Pioneer-Preis: CHF 997** (danach 1347). **Angerechnet wird immer der volle Betrag, den die Frau tatsächlich bezahlt hat** — Earlybird, Pilot oder Vollpreis. Die Mails nennen bewusst **keinen fixen Restbetrag** („du zahlst nur die Differenz"), damit es für alle stimmt. Die konkrete Anrechnung passiert über den ThriveCart-Coupon.
 
-| Segment | AC-Tag | bezahlt | Anrechnung | **MBA-Restpreis** | 6 Raten (≈) | ThriveCart-Coupon |
-|---|---|---|---|---|---|---|
-| Instagram-Kundenmaschine | **39** | 333 | −333 | **664** | ~111/Mt | `KUMA-DRIN` |
-| Mama-CEO (Pilot) | **71** | 249 | −249 | **748** | ~125/Mt | `CEO-DRIN-249` |
-| Mama-CEO (regulär) | **71** | 333 | −333 | **664** | ~111/Mt | `CEO-DRIN-333` |
-| Digitale Produktwelt | **44** | 333 | −333 | **664** | ~111/Mt | `DPW-DRIN` |
+**Wichtig:** Coupons gehen **nach bezahltem Betrag**, nicht nach Kurs — weil innerhalb eines Kurses verschiedene Preise bezahlt wurden (z.B. Mama-CEO Earlybird 249 vs. final 333).
+
+| Segment (Käuferinnen) | AC-Tag | typische Preispunkte | passender Coupon |
+|---|---|---|---|
+| Instagram-Kundenmaschine | **39** | meist 333 | `DRIN-333` |
+| Mama-CEO | **71** | 249 (Earlybird/Pilot) · 333 (final) | `DRIN-249` / `DRIN-333` |
+| Digitale Produktwelt | **44** | 333 | `DRIN-333` |
+
+→ In der Praxis genügen fast sicher **zwei Coupons: `DRIN-249` und `DRIN-333`**. Falls du einen weiteren Preis kassiert hast (z.B. ein IKM-Earlybird), leg einfach `DRIN-<Betrag>` zusätzlich an.
 
 **Ausschliessen:** alle mit Tag **79** `mba-kauf` (haben die MBA schon).
 
 ### Sonderfälle
-- **Mama-CEO (Tag 71):** unterscheidet Pilot (249) und regulär (333) nicht automatisch. Es ist eine kleine, dir bekannte Gruppe (die 5 Pilot-Mamas zahlten 249) → weise pro Person den richtigen Coupon zu. Im Zweifel grosszügig: `CEO-DRIN-333`.
-- **Mehrfach-Käuferin (zwei enthaltene Kurse):** Anrechnung **stapelt**. Beispiel Instagram-Kundenmaschine + Mama-CEO = −666 → MBA für **331**. Diese wenigen Fälle: eigener Coupon `KOMBI-DRIN` (fixer Betrag pro Person) oder du machst es manuell. → **erst prüfen:** Kontakte mit Tag 39 UND 71 (bzw. 44) rausfiltern.
-- **Tag 39 verifizieren:** Tag 39 „Instagram-Kundenmaschine" sollte die **Käuferinnen** sein (Parallele zu Tag 44 „digitale Produktwelt grosser Kurs"). Kurz gegen den ThriveCart-Käufer-Export prüfen, damit keine reinen Interessentinnen (Tag 63 = Klick, nicht Kauf) reinrutschen.
+- **Wer paid was?** Du weisst die Preispunkte aus deinem ThriveCart-Verkaufsexport (die 5 Pilot-Mamas = 249, der Rest = 333). Beim Versand die Käuferinnen entsprechend dem bezahlten Betrag dem richtigen Coupon zuordnen. Im Zweifel grosszügig: `DRIN-333`.
+- **Mehrfach-Käuferin (zwei enthaltene Kurse):** Anrechnung **stapelt** (beide Kaufpreise zusammen). Wenige Fälle → eigener Personen-Coupon oder manuell. **Erst prüfen:** Kontakte mit Tag 39 UND 71 (bzw. 44).
+- **Tag 39 verifizieren:** sollte die **Käuferinnen** sein (Parallele zu Tag 44 „digitale Produktwelt grosser Kurs"). Kurz gegen den ThriveCart-Export prüfen, damit keine reinen Interessentinnen (Tag 63 = Klick, nicht Kauf) reinrutschen.
 
 ---
 
 ## 3. ThriveCart-Setup (einmalig, 5 Min)
 
-Für jeden Coupon aus der Tabelle in ThriveCart einen **Festbetrags-Rabatt** anlegen (nicht Prozent):
+Für jeden Preispunkt einen **Festbetrags-Rabatt** anlegen (nicht Prozent):
 
 1. ThriveCart → MBA-Produkt → **Coupons** → *Add coupon*
-2. Typ: **Fixed amount**, Betrag = die Anrechnung (333 bzw. 249), Währung CHF
-3. Code = aus Tabelle (`KUMA-DRIN` etc.), Gültigkeit **bis 27.7. 23:59**, gilt auch auf den Ratenplan
+2. Typ: **Fixed amount**, Betrag = der bezahlte Kaufpreis (z.B. 333, dann 249), Währung CHF
+3. Code = `DRIN-333`, `DRIN-249` (und ggf. `DRIN-<weiterer Betrag>`), Gültigkeit **bis 27.7. 23:59**, gilt auch auf den Ratenplan
 4. **Button-Link mit vorab gesetztem Coupon** bauen, damit die Frau nichts eintippen muss:
-   `DEINE-THRIVECART-MBA-CHECKOUT-URL?coupon=KUMA-DRIN`
-   *(In den Mails steht als Platzhalter `https://mumlifebalance.ch/mba/` — ersetze das durch deine echte ThriveCart-Checkout-URL mit `?coupon=…`. Den Code zusätzlich sichtbar in der Mail lassen als Fallback.)*
+   `DEINE-THRIVECART-MBA-CHECKOUT-URL?coupon=DRIN-333`
+   *(In den Mails steht als Platzhalter `https://mumlifebalance.ch/mba/?coupon=KUMA-DRIN` — ersetze `KUMA-DRIN` durch den passenden `DRIN-<Betrag>`-Code und die Domain durch deine echte ThriveCart-Checkout-URL. Den Code zusätzlich sichtbar in der Mail lassen als Fallback.)*
 
 ---
 
@@ -75,15 +78,15 @@ Diese Käuferinnen hängen evtl. auch in den allgemeinen Cart-Mails. Damit es pe
 | *(optional 4b — Letzter Aufruf)* | So 27.7. 21:30 | 2,5 h — kann `mba-cart-sequence/14-letzter-aufruf.html` recyceln |
 
 ### Mails pro Segment ausspielen
-Die 4 HTML-Mails sind mit den **Instagram-Kundenmaschine-Zahlen (664 / ~111 / `KUMA-DRIN`)** gefüllt = Zero-Effort für das grösste Segment. Für Mama-CEO / DPW nur diese Stellen tauschen (im HTML als `<!-- SWAP -->` markiert):
+Die Mails nennen **keine käufer-spezifischen Beträge** mehr — nur „du zahlst nur die Differenz". Dadurch bleiben nur **3 Swap-Stellen** (im HTML als `<!-- SWAP -->` markiert), gefüllt als Default mit Instagram-Kundenmaschine:
 
-| Token | IKM (default) | Mama-CEO Pilot | Mama-CEO regulär | DPW |
+| Swap | Wo | IKM (default) | Mama-CEO | DPW |
 |---|---|---|---|---|
-| Kursname | die Instagram-Kundenmaschine | Mama-CEO | Mama-CEO | die Digitale Produktwelt |
-| Restpreis | 664 | 748 | 664 | 664 |
-| Rate (6×) | 111 | 125 | 111 | 111 |
-| Coupon | KUMA-DRIN | CEO-DRIN-249 | CEO-DRIN-333 | DPW-DRIN |
-| „welche Stufe du schon hast" (Mail 2) | Sichtbarkeit (Stufe 1) | Zeit & Struktur (Stufe 2) | Zeit & Struktur (Stufe 2) | dein eigenes Angebot (Stufe 3) |
+| **Kursname** | Mail 1 (2×) | die Instagram-Kundenmaschine | Mama-CEO | die Digitale Produktwelt |
+| **Coupon-Code** | alle Mails (Button-Link + Fallback) | `DRIN-333` | `DRIN-333` bzw. `DRIN-249` | `DRIN-333` |
+| **Deine Stufe ✅** | Mail 2 (Häkchen setzen) | Stufe 1 Sichtbarkeit | Stufe 2 Zeit & Struktur | Stufe 3 eigenes Angebot |
+
+*Hinweis Coupon:* Innerhalb Mama-CEO nach bezahltem Betrag aufteilen (Pilot/Earlybird → `DRIN-249`, final → `DRIN-333`). Der Button-Link im HTML enthält aktuell `?coupon=KUMA-DRIN` → auf den passenden `DRIN-<Betrag>` ändern.
 
 ---
 
