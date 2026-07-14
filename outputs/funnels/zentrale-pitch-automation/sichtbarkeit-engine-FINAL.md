@@ -77,6 +77,7 @@ TRIGGER: Tag 87 "Automation 0€ Produkt" hinzugefügt
   Mail E2 (Minikurs 39)      — warten 3 Tage
   │
   ▼ MBA-TRACK (5 Mails)
+  SET DEADLINE: Pioneer-Frist starten (Automate-Hero-Kampagne ODER Datumsfeld "MBA Pioneer Frist" = heute + 7 Tage)
   Mail M1 (Wende-Story → MBA) — warten 2 Tage
   Mail M2 (alles aus 1 Hand)  — warten 1 Tag
   Mail M3 (Einwände)          — warten 1 Tag
@@ -292,16 +293,27 @@ Patricia
 
 ---
 
-## 🔁 Danach — der Loop (grosser Verteiler)
+## 🔁 Die Endlos-Kette (Julias „Funnel nach Funnel, in die Unendlichkeit")
 
-Wer bis hier nichts gekauft hat → Tag `pitch-durchlaufen-kein-kauf` → **grosser Verteiler**. Kein Ende, sondern Dauerbeziehung (Julias „Funnel nach Funnel"):
+Wer den MBA-Track + Downsell ohne Kauf durchlaufen hat (Tag `Engine Pitch ohne Kauf` 89), fällt **nicht** in einen vagen Verteiler, sondern in eine **strukturierte Kette weiterer Mini-Funnels** — jeder bewirbt EIN Produkt, 3–5 Mails, 1 Tag Abstand, dann nahtlos der nächste. Genau Julias System (Automation 03, 04, 05 …).
 
-- **Laufende Mehrwert-Mails** (Newsletter-Rhythmus)
-- **Rotierende Angebote** im Wechsel Wert ↔ Pitch: „Expertin statt Verkäuferin" (97) · die zwei anderen Signatures · immer wieder zurück auf die MBA
-- **Bei jedem MBA-Launch** / jeder Aktion: Pitch an die ganze Liste
-- **Quartalsweise** Reaktivierung der Nicht-Öffner + Bereinigung (Zustellbarkeit + AC-Kosten schützen)
+**Jede Kette hat dieselben 2 Schutzregeln (Julia-Pflicht):**
+1. **Kauf-Ziel** → Produkt-Kauf-Tag erreicht → raus aus der Kette (kein weiterer Pitch für das, was sie schon hat).
+2. **Kein Doppel:** „ist Kontakt schon in einer anderen Kette? → überspringen." Verhindert, dass jemand in 2 Ketten gleichzeitig Mails kriegt.
 
-Kauft sie später etwas → steigt an der Stelle aus, kein Neustart von vorne.
+| # | Kette (Produkt) | Mails | Winkel |
+|---|---|---|---|
+| **03** | Expertin statt Verkäuferin (97) | 3 | „Du kennst dein Thema — aber verkaufst dich drunter / fühlst dich wie Verkäuferin." → Positionierung als Expertin |
+| **04** | MBA-Webinar (Replay) | 3 Einladung + 2 Pitch | Julias Webinar-Brücke: 3× ins Replay einladen → 2× MBA nachpitchen. Re-Anker aufs grosse Produkt |
+| **05** | Digitale Produktwelt (333) | 3–4 | „Aus deinem Wissen ein eigenes Produkt, das auch verkauft, wenn du grad Mama bist." |
+| **06** | Mama-CEO (333) | 3–4 | „Die Zeit + das KI-System, damit dein Business in deine Stunden passt." |
+| **07** | MBA-Komplett (Re-Pitch) | 3 | „Alles zusammen + Begleitung" — periodischer Flagship-Re-Pitch (Julia streut das grosse Produkt immer wieder ein) |
+
+**Danach:** Übergang in den **Dauer-Newsletter** (Julia: 90 % Beziehung, jede Mail 1 Link) + **Pitch an die ganze Liste bei jedem Launch/jeder Aktion**. Quartalsweise Nicht-Öffner reaktivieren + Karteileichen raus (Zustellbarkeit + AC-Kosten). Wer irgendwo kauft → steigt aus, kein Neustart von vorn.
+
+> **Wichtig — Julias Cadence:** Sie schreibt 1 Mail/Tag ohne Pause. Wir starten bewusst gemächlicher (1–3 Tage), passend zu deinem wärmeren Brand — kann jederzeit auf täglich hochgedreht werden, wenn du mehr Umsatz-Druck willst.
+
+**Status:** Struktur steht. Mail-Texte für Kette 03–07 → schreibe ich auf dein Go (analog zu M1–M5, deine Stimme, Brand-HTML).
 
 ---
 
@@ -326,9 +338,10 @@ Kauft sie später etwas → steigt an der Stelle aus, kein Neustart von vorne.
 - ✅ **MBA-Link** eingesetzt (`https://mumlifebalance.ch/mba/`)
 - ✅ **Mail E1 neu** (Schaufenster-Philosophie) · **Kundenstimme M2** echt + freigegeben
 - ✅ **Go-live: jetzt** (Patricia 14.7.). Kein Konflikt mit dem laufenden Launch, weil die Engine dieselbe MBA zum selben Pioneer-Preis 997 pitcht — sie verstärkt den Launch, statt ihn zu unterbieten. Käuferinnen fliegen über Tag „mba-kauf" (79) sofort raus.
-- ⏳ **Offen (du):** 3 ThriveCart-Links (Finde dein Thema 39 · IKM 333 · Mama-CEO 333 · DPW 333)
+- ✅ **Dringlichkeit = rollende Frist** (Julia-Weg, Entscheid 14.7.): persönlicher Countdown auf den Pioneer-Preis in M5.
+- ⏳ **Offen (du):** Deadline-Tool wählen (**Automate Hero** = Julias Tool, Tutorial liegt in deinem Material · oder Deadline Funnel) → Countdown-Bild in M5 + Preis-Umschaltung 997→1347 nach Ablauf. Ohne Tool: ehrliche Text-Frist + zeitlich begrenzter ThriveCart-Coupon, aber Preis-Switch nicht automatisch pro Person.
 
-**Nächster Schritt:** Klick-Anleitung für den Automation-72-Flow (kommt sofort).
+**Nächster Schritt:** Loop-Mails (Kette 03–07) texten + Deadline-Tool einrichten.
 
 ---
 
