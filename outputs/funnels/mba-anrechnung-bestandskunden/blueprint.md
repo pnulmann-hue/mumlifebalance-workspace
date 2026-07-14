@@ -49,14 +49,17 @@ Diese Anrechnung ist bereits offizielle MBA-Policy (`mba-produktsteckbrief.md`, 
 
 ## 3. ThriveCart-Setup (einmalig, 5 Min)
 
+**Ablauf (NEU): Rabattcode auf Anfrage.** Die Mails enthalten keinen Link und keinen Code — jede Frau antwortet mit dem Wort **MBA** auf die Mail, und du schickst ihr persönlich den passenden Code + den Checkout-Link. So bekommt jede exakt ihren bezahlten Betrag angerechnet (Earlybird-safe), und du hast einen warmen 1:1-Kontakt statt eines anonymen Klicks.
+
 Für jeden Preispunkt einen **Festbetrags-Rabatt** anlegen (nicht Prozent):
 
 1. ThriveCart → MBA-Produkt → **Coupons** → *Add coupon*
 2. Typ: **Fixed amount**, Betrag = der bezahlte Kaufpreis (z.B. 333, dann 249), Währung CHF
 3. Code = `DRIN-333`, `DRIN-249` (und ggf. `DRIN-<weiterer Betrag>`), Gültigkeit **bis 27.7. 23:59**, gilt auch auf den Ratenplan
-4. **Button-Link mit vorab gesetztem Coupon** bauen, damit die Frau nichts eintippen muss:
-   `DEINE-THRIVECART-MBA-CHECKOUT-URL?coupon=DRIN-333`
-   *(In den Mails steht als Platzhalter `https://mumlifebalance.ch/mba/?coupon=KUMA-DRIN` — ersetze `KUMA-DRIN` durch den passenden `DRIN-<Betrag>`-Code und die Domain durch deine echte ThriveCart-Checkout-URL. Den Code zusätzlich sichtbar in der Mail lassen als Fallback.)*
+4. **Antwort-Handling:** Schreibt eine Frau „MBA", schaust du kurz, welchen Kurs/Preis sie hatte, und schickst ihr den passenden Code + `DEINE-THRIVECART-MBA-CHECKOUT-URL?coupon=DRIN-<Betrag>`. Fertige Antwort-Vorlage: siehe unten.
+
+### Antwort-Vorlage (wenn jemand „MBA" schreibt)
+> Wie schön, dass du dabei sein willst! 🧡 Dein [Kursname] ist voll angerechnet — du zahlst nur die Differenz. Hier ist dein persönlicher Rabattcode **DRIN-[Betrag]** und der direkte Link: [Checkout-Link mit ?coupon=…]. Der Code gilt bis Sonntag 27.7. 23:59. Wenn was unklar ist, schreib mir einfach.
 
 ---
 
@@ -78,15 +81,12 @@ Diese Käuferinnen hängen evtl. auch in den allgemeinen Cart-Mails. Damit es pe
 | *(optional 4b — Letzter Aufruf)* | So 27.7. 21:30 | 2,5 h — kann `mba-cart-sequence/14-letzter-aufruf.html` recyceln |
 
 ### Mails pro Segment ausspielen
-Die Mails nennen **keine käufer-spezifischen Beträge** mehr — nur „du zahlst nur die Differenz". Dadurch bleiben nur **3 Swap-Stellen** (im HTML als `<!-- SWAP -->` markiert), gefüllt als Default mit Instagram-Kundenmaschine:
+**Zwei fertige Sätze — kein Editieren nötig.** Die Mails enthalten weder Betrag noch Code (kommt per Antwort), sind aber pro Zielgruppe passend getextet:
 
-| Swap | Wo | IKM (default) | Mama-CEO | DPW |
-|---|---|---|---|---|
-| **Kursname** | Mail 1 (2×) | die Instagram-Kundenmaschine | Mama-CEO | die Digitale Produktwelt |
-| **Coupon-Code** | alle Mails (Button-Link + Fallback) | `DRIN-333` | `DRIN-333` bzw. `DRIN-249` | `DRIN-333` |
-| **Deine Stufe ✅** | Mail 2 (Häkchen setzen) | Stufe 1 Sichtbarkeit | Stufe 2 Zeit & Struktur | Stufe 3 eigenes Angebot |
+- `mails-instagram-kundenmaschine/` → an die Käuferinnen mit Tag **39** (Mail 1 nennt „die Instagram-Kundenmaschine", Mail 2: ✅ Stufe 1 Sichtbarkeit)
+- `mails-mama-ceo/` → an die Käuferinnen mit Tag **71** (Mail 1 nennt „Mama-CEO", Mail 2: ✅ Stufe 2 Zeit & Struktur)
 
-*Hinweis Coupon:* Innerhalb Mama-CEO nach bezahltem Betrag aufteilen (Pilot/Earlybird → `DRIN-249`, final → `DRIN-333`). Der Button-Link im HTML enthält aktuell `?coupon=KUMA-DRIN` → auf den passenden `DRIN-<Betrag>` ändern.
+Einfach HTML kopieren, als AC-Kampagne (Custom HTML) an das jeweilige Segment senden. Der Rabattcode wird erst auf ihre Antwort hin persönlich verschickt (siehe §3).
 
 ---
 
@@ -101,14 +101,12 @@ Zahlt direkt auf das MBA-Launchziel (8 Verkäufe) ein: die wärmsten Käuferinne
 ## 6. Assets
 
 **→ Sendfertig, ohne Bearbeitung (das nimmst du):**
-- `mails-instagram-kundenmaschine/` — 4 Mails für die IKM-Kundinnen (Kursname + Coupon `DRIN-333` fest eingebaut)
-- `mails-mama-ceo/` — 4 Mails für die Mama-CEO-Kundinnen (Kursname + Coupon `DRIN-249` fest eingebaut)
+- `mails-instagram-kundenmaschine/` — 4 Mails für die IKM-Kundinnen (Tag 39)
+- `mails-mama-ceo/` — 4 Mails für die Mama-CEO-Kundinnen (Tag 71)
 
-*(Der Ordner `mails/` ist die Master-Vorlage mit `<!-- SWAP -->`-Markern — nur als Quelle, nicht zum Senden.)*
+*(Der Ordner `mails/` ist die Master-Vorlage — nur als Quelle, nicht zum Senden.)*
 
-Alle im Onlinebusiness-Brand-Design, `%FIRSTNAME%`-Merge, Swiss ss, Patricia-Voice, keine käufer-spezifischen Beträge (Earlybird-safe).
-
-**Coupon-Hinweis Mama-CEO:** Der Satz nutzt `DRIN-249` (Pilot/Earlybird-Preis). Falls einzelne Mama-CEO-Kundinnen den vollen Preis (333) bezahlt haben, im Link `DRIN-249` → `DRIN-333` ändern, damit ihnen der volle Betrag angerechnet wird.
+Alle im Onlinebusiness-Brand-Design, `%FIRSTNAME%`-Merge, Swiss ss, Patricia-Voice, keine käufer-spezifischen Beträge, kein Code/Link in der Mail (Rabattcode kommt per Antwort → Earlybird-safe, warmer 1:1-Kontakt).
 
 ---
 
