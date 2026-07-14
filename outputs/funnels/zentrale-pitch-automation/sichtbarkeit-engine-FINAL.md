@@ -76,8 +76,7 @@ TRIGGER: Tag 87 "Automation 0€ Produkt" hinzugefügt
   WENN Tag "Engine Minikurs gekauft" (88) → springe zu MBA-Track   (Käuferin, kein 39-Pitch mehr)
   Mail E2 (Minikurs 39)      — warten 3 Tage
   │
-  ▼ MBA-TRACK (5 Mails)
-  SET DEADLINE: Pioneer-Frist starten (Automate-Hero-Kampagne ODER Datumsfeld "MBA Pioneer Frist" = heute + 7 Tage)
+  ▼ MBA-TRACK (5 Mails) — Frist wird in M5 rein per Text kommuniziert (kein Tool)
   Mail M1 (Wende-Story → MBA) — warten 2 Tage
   Mail M2 (alles aus 1 Hand)  — warten 1 Tag
   Mail M3 (Einwände)          — warten 1 Tag
@@ -243,11 +242,11 @@ Patricia
 **Betreff B:** Ab jetzt zählt's für dich runter
 **Preheader:** Danach gilt der reguläre Preis.
 
-> ⏱️ **Countdown einbauen:** Hier kommt das Countdown-Bild aus **Automate Hero** (Julias Tool) oder Deadline Funnel rein — persönliche Frist ab Eintritt in den MBA-Track, danach Preis-Umschaltung 997 → 1347.
+> ⏱️ **Kein Tool (Entscheid 14.7.):** ehrliche Text-Frist statt Countdown-Bild. Optional dahinter ein zeitlich begrenzter ThriveCart-Coupon `PIONEER`. Spät-Klick-Mismatch-Risiko bewusst akzeptiert.
 
-In den letzten Tagen hab ich dir die Mum Business Academy gezeigt — was drin ist, für wen sie ist, und warum sie dir das Verzetteln abnimmt. Jetzt wird's konkret: ab jetzt läuft deine persönliche Pioneer-Frist. Solange sie läuft, kommst du für 997 Franken rein statt für 1347. Danach gilt der reguläre Preis — kein Trick, einfach die Belohnung dafür, dass du bei den Ersten dabei bist, die mitgestalten.
+In den letzten Tagen hab ich dir die Mum Business Academy gezeigt — was drin ist, für wen sie ist, und warum sie dir das Verzetteln abnimmt. Jetzt wird's konkret: du hast noch wenige Tage zum Pioneer-Preis. Solange die Pioneer-Runde für dich offen ist, kommst du für 997 Franken rein statt für 1347. Danach gilt der reguläre Preis — kein Trick, einfach die Belohnung dafür, dass du bei den Ersten dabei bist, die mitgestalten.
 
-**[ COUNTDOWN-BILD ]**
+**[ Box: „Nur noch wenige Tage — danach kostet die Academy 1347 statt 997." ]**
 
 Was du nach den ersten Wochen hast: dein Thema steht, dein erstes eigenes Produkt nimmt Form an, und dein KI-System läuft. Du arbeitest dann wieder mit Menschen, statt sechs Stunden am Tag Posts zu schreiben.
 
@@ -338,10 +337,10 @@ Wer den MBA-Track + Downsell ohne Kauf durchlaufen hat (Tag `Engine Pitch ohne K
 - ✅ **MBA-Link** eingesetzt (`https://mumlifebalance.ch/mba/`)
 - ✅ **Mail E1 neu** (Schaufenster-Philosophie) · **Kundenstimme M2** echt + freigegeben
 - ✅ **Go-live: jetzt** (Patricia 14.7.). Kein Konflikt mit dem laufenden Launch, weil die Engine dieselbe MBA zum selben Pioneer-Preis 997 pitcht — sie verstärkt den Launch, statt ihn zu unterbieten. Käuferinnen fliegen über Tag „mba-kauf" (79) sofort raus.
-- ✅ **Dringlichkeit = rollende Frist** (Julia-Weg, Entscheid 14.7.): persönlicher Countdown auf den Pioneer-Preis in M5.
-- ⏳ **Offen (du):** Deadline-Tool wählen (**Automate Hero** = Julias Tool, Tutorial liegt in deinem Material · oder Deadline Funnel) → Countdown-Bild in M5 + Preis-Umschaltung 997→1347 nach Ablauf. Ohne Tool: ehrliche Text-Frist + zeitlich begrenzter ThriveCart-Coupon, aber Preis-Switch nicht automatisch pro Person.
+- ✅ **Dringlichkeit = ehrliche Text-Frist in M5** (Entscheid 14.7.: kein Tool). Optional dahinter zeitlich begrenzter ThriveCart-Coupon `PIONEER`. Spät-Klick-Mismatch bewusst akzeptiert.
+- ✅ **Loop-Kette 03–07 getextet** → [[loop-ketten-mails]]. Kette 04 = MBA-Webinar-Replay (Webinar nimmt Patricia noch auf → `[WEBINAR-REPLAY-LINK]`).
 
-**Nächster Schritt:** Loop-Mails (Kette 03–07) texten + Deadline-Tool einrichten.
+**Nächster Schritt:** Loop-Mails als Brand-HTML rendern (analog Kern-8) + MBA-Webinar aufnehmen.
 
 ---
 
