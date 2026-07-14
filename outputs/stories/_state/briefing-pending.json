@@ -1,51 +1,67 @@
 {
-  "profil": "mentoring",
-  "modus": "tagesplan",
-  "disg": "Rot",
-  "disg_sekundaer": "Gelb",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
-  "aktives_produkt": "Bio-Check",
-  "wochen_fokus": "(kein Fokus eingetragen)",
-  "sales_pattern": "",
-  "wochen_cta": "",
-  "monat_kontext": "",
-  "produkt_themen": null,
-  "vorschlag_idee": null,
-  "wochen_fokus_quelle": "fallback",
-  "launch_tag": {
-    "datum": "2026-07-13",
-    "phase": "verkaufsphase",
-    "julia_vorlage": "quick-win",
-    "titel": "Quick Win + wer dabei ist",
-    "story_ziel": "Kleine sofort-umsetzbare Methode + anonyme Käuferinnen-Wand. Vertrauen + sanfte Dringlichkeit.",
-    "kaeufertyp": "Willi",
-    "cta": "Cart offen — Link / DM MBA",
-    "cta_keyword": "MBA",
-    "profil": "mentoring"
-  },
-  "launch_vorlage": {
-    "name": "Quick Win",
-    "phase": "alle",
-    "ziel": "Eine Strategie/Formel die SOFORT umsetzbar ist — stärkt Vertrauen, zeigt Expertise direkt.",
-    "julia_anleitung": "Einleitung mit Statistik/krassem Statement → auf ihr Leben beziehen → warum wichtig → die konkrete Methode → Handlungsaufforderung sofort umzusetzen → Überleitung aufs Angebot (P.S.-Stil).",
-    "kaeufertyp": "Willi",
-    "slide_bogen": "krasses Statement → auf Mama-Alltag beziehen → die Methode → 'mach das jetzt' → P.S. Angebot"
-  },
-  "kontext_snapshot": {
-    "kw": 29,
-    "wochentag": "Montag",
-    "datum": "2026-07-13"
-  },
-  "fragen": [
-    "Was hast du erlebt?",
-    "Hast du grad einen Gedanken zum Thema?",
-    "Oder Standard-Pool?"
-  ],
-  "gesendet_am": "2026-07-13T07:49:38.784Z",
-  "telegram_message_id": 879,
-  "patricia_antworten": [],
-  "patricia_fotos": [],
-  "patricia_videos": [],
-  "status": "warten_auf_antwort"
+  "datum": "2026-07-14",
+  "profile": {
+    "mentoring": {
+      "profil": "mentoring",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Instagram-Strategie für NM",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": true,
+        "phase": "verkaufsphase",
+        "tag_im_launch": 30,
+        "vorlage": "Eigene Meinung / klare Positionierung",
+        "titel": "Du brauchst kein 5000-Module-Programm",
+        "story_ziel": "Positionierung: die richtige Reihenfolge schlägt 10 halbe Kurse — das ist die MBA-Logik. Repel + Anziehung.",
+        "kaeufertyp": "Frank",
+        "cta": "Cart offen — Link / DM MBA",
+        "cta_keyword": "MBA"
+      },
+      "kontext_snapshot": {
+        "kw": 29,
+        "wochentag": "Dienstag",
+        "datum": "2026-07-14"
+      },
+      "gesendet_am": "2026-07-14T04:42:00.922Z",
+      "telegram_message_id": 881,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    },
+    "doterra": {
+      "profil": "doterra",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Zurück zu deiner Energie",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Persönliche Story / Dein Weg",
+        "titel": "Persönliche Story / Dein Weg",
+        "story_ziel": "Identifikation über Patricias eigene Geschichte (Wendepunkt, 4 Kinder, Funktionsmodus).",
+        "kaeufertyp": "Amelie",
+        "cta": "ECHT1 (Von 0 auf echt) oder thematisch passend",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 29,
+        "wochentag": "Dienstag",
+        "datum": "2026-07-14"
+      },
+      "gesendet_am": "2026-07-14T04:42:01.797Z",
+      "telegram_message_id": 882,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    }
+  }
 }
