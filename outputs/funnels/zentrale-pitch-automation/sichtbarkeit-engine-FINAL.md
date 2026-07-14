@@ -48,22 +48,30 @@ tags: [funnel, mba, pitch-automation, intern]
 
 **Baut auf dem auf, was schon da ist** (siehe [[umbau-plan]] · [[ac-ist-zustand]]) — nichts wird neu von Null gebaut.
 
-### Tags (lege ich per MCP an, auf dein Go)
+### Trigger = dein bestehender Tag (kein neuer nötig!)
+**Automation 72 „Automation 0€ Produkt"** (erstellt 14.7.) ist die zentrale Maschine. Trigger = **Tag 87 „Automation 0€ Produkt"**, den alle 0€-Leads schon bekommen. Keine Auslieferungs-Automation muss angefasst werden.
+
+**Tags (nur diese 2 lege ich noch per MCP an, Rest existiert):**
 | Tag | Wann gesetzt | Zweck |
 |---|---|---|
-| `engine-sichtbarkeit-start` | Ende jeder Sichtbarkeits-Auslieferung | **Trigger** der Engine |
-| `stufe:kunde-mini` | Kauf „Finde dein Thema" 39 | überspringt Rest der Brücke |
+| Tag 87 „Automation 0€ Produkt" | von allen 0€-Auslieferungen (existiert) | **Trigger** der Engine |
+| `stufe:kunde-mini` (neu) | Kauf „Finde dein Thema" 39 | überspringt Rest der Brücke |
 | `mba-kauf` (= Tag 79, existiert) | Kauf MBA | **Exit** aus der ganzen Engine |
-| `stufe:kunde-signature` | Kauf eines 333ers | raus aus Pitch, ab in Loop |
-| `pitch-durchlaufen-kein-kauf` | Ende ohne Kauf | ab in grossen Verteiler |
+| `stufe:kunde-signature` (neu) | Kauf eines 333ers | raus aus Pitch, ab in Loop |
+| `pitch-durchlaufen-kein-kauf` (neu) | Ende ohne Kauf | ab in grossen Verteiler |
 
-### Flow (klickst du 1× zusammen — ich liefere Screenshots-Anleitung)
+### 🚨 doTERRA-Ausschluss (Pflicht — erster Schritt)
+Tag 87 kriegen ALLE 0€-Leads, auch die vom „0€ doTERRA Energiekick" (Automation 70). doTERRA darf NIE in den MBA-Pitch. Erster Schritt der Engine:
+> **Wenn Kontakt auf Liste „doTERRA Interessenten" (18) ODER hat doTERRA-Tag → Automation beenden.**
+
+### Flow (klickst du 1× zusammen — ich liefere Klick-Anleitung)
 ```
-TRIGGER: Tag "engine-sichtbarkeit-start" hinzugefügt
+TRIGGER: Tag 87 "Automation 0€ Produkt" hinzugefügt
   │
-  ├─ ZIEL (gilt ganze Automation): Tag "mba-kauf" → Automation SOFORT beenden
+  ├─ SCHRITT 0: wenn Liste "doTERRA Interessenten" (18) ODER doTERRA-Tag → BEENDEN
+  ├─ ZIEL (gilt ganze Automation): Tag "mba-kauf" (79) → Automation SOFORT beenden
   │
-  ▼ BRÜCKE
+  ▼ BRÜCKE (themen-neutral — gilt für alle Mentoring-Freebies)
   Mail E1 (Wert)              — warten 2 Tage
   WENN Tag "stufe:kunde-mini" → springe zu MBA-Track   (Käuferin, kein 39-Pitch mehr)
   Mail E2 (Minikurs 39)      — warten 3 Tage
