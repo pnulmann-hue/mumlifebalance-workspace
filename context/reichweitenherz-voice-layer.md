@@ -35,6 +35,8 @@ Zwei ihrer Signatur-Moves sind bei Patricia GESPERRT — trotzdem anwenden = Feh
 
 **Dosis-Regel (Patricia-Präferenz, getestet 2026-07-13):** Zwischen „clean-warm" und „voll derb / Reichweitenherz-heavy" **gewinnt clean-warm**. Ihre Kniffe sind die Würze, Patricias warme klare Stimme ist die Basis. 1–2 derbe Stellen pro Text sind okay, mehr nicht.
 
+**🟠 AUSNAHME doTERRA-Content (bestätigt 2026-07-13):** Beim doTERRA-Account (Energie/Hormone/Perimenopause) will Patricia den **VOLLEN Reichweitenherz-Deep-Dive** — lange, immersive Captions mit vielen Ein-Satz-Zeilen, innerem Monolog in „…", harten Cuts („Autsch.", „Die Wahrheit?", „Und weisst du, was mich aufregt?"), „Vielleicht musst du das heute hören"-Turn. Sie identifiziert sich voll mit der Reichweitenherz-Sprache. Dort NICHT clean-warm zurückdrehen. (Blackliste + Schweizer ss + echte Zahlen gelten weiter.)
+
 ---
 
 ## 🔗 Verwandte Notizen
