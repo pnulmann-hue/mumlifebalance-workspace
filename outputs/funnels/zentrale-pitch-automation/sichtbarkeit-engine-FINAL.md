@@ -97,44 +97,44 @@ TRIGGER: Tag 87 "Automation 0€ Produkt" hinzugefügt
 
 ## ✉️ Die Mails (baufertig, deine Stimme)
 
-Platzhalter: `[MINIKURS-LINK]` (Finde dein Thema 39) · `[MBA-LINK]` (MBA-Salespage, später Replay-Swap) · `[IKM-LINK]` · `[MAMACEO-LINK]` · `[DPW-LINK]` · `[KUNDINNEN-STIMME]`. Jede Mail im Design `context/mail-design-onlinebusiness.html`, **1 CTA pro Mail**.
+Links: **MBA = https://mumlifebalance.ch/mba/** ✅ eingesetzt. Offen: `[MINIKURS-LINK]` (Finde dein Thema 39) · `[IKM-LINK]` · `[MAMACEO-LINK]` · `[DPW-LINK]` (ThriveCart-Checkouts). Kundenstimme M2 ✅ echt eingesetzt (freigegeben). Jede Mail im Design `context/mail-design-onlinebusiness.html`, **1 CTA pro Mail**.
 
 ---
 
 ### BRÜCKE
 
-#### Mail E1 · Tag 0 · Wert (kein Pitch)
-**Betreff A:** Viele Follower, und trotzdem meldet sich niemand?
-**Betreff B:** Der eine Satz, der deine Bio zur Kundinnen-Magnetin macht
-**Preheader:** Heute ein Tipp, den du in 5 Minuten umsetzt.
+#### Mail E1 · Tag 0 · Warum ich Network von Anfang an anders gedacht hab
+**Betreff A:** Warum ich Network von Anfang an anders gedacht hab
+**Betreff B:** Niemand wacht morgens auf und will ätherische Öle
+**Preheader:** Der Gedanke, auf dem mein ganzes Business steht.
 
-Schön, dass du da bist.
+Schön, dass du da bist. Ich fang gleich mit dem an, worauf bei mir alles aufbaut.
 
-Jetzt mal ganz ehrlich: die meisten Network-Mamas, die mir schreiben, haben das gleiche Bild. Eine hübsche Seite, ein paar hundert Followerinnen, regelmässig was gepostet — und im Posteingang bleibt es ruhig. Das frisst, weil du ja arbeitest und trotzdem nichts zurückkommt.
+Ich hab Network von Anfang an anders gedacht. Nicht das klassische „ich verkauf dir Produkt XY, und hier noch schnell eine Produktparty, und da noch ein Katalog". Das klingt vielleicht komisch aus dem Mund von einer, die selber im Network ist — aber lies mal kurz weiter, dann verstehst du, was ich meine.
 
-Der häufigste Grund ist, dass deine Bio sagt, *was du verkaufst*, statt *wem du hilfst*. Dreh das heute einmal um und schreib einen Satz nach diesem Muster:
+Stell dir vor, du gehst an eine Hochzeit. Du hast ein richtig geiles violettes Kleid, nur die passenden Schuhe fehlen. Du läufst durch die Stadt und weisst ganz genau, was du brauchst. Und jetzt sag mir ehrlich: gehst du in den Laden, wo im Schaufenster lauter Krimskrams liegt und man gar nicht sieht, was es drin überhaupt gibt? Nein. Du gehst dorthin, wo im Schaufenster sofort klar ist — hier gibt es Schuhe.
 
-> „Ich helfe [wem genau] dabei, [welches Problem] zu lösen — ohne [die typische Hürde]."
+In gewisser Weise ist jede Kundin wie diese Frau, die ihre Schuhe sucht. Denn niemand wacht morgens auf und denkt „shit, ich brauch jetzt unbedingt ätherische Öle" oder „krass, ich sollte mal die neue Gesichtscreme von Ringana bestellen". So ticken wir Menschen einfach nicht. Wir suchen insgeheim immer nach einer Lösung für unser Problem, auch wenn wir das Problem bewusst noch gar nicht in Worte fassen. Wir wollen keinen Shake — wir wollen uns endlich wieder heiss im Bikini fühlen, so wie vor den Kindern.
 
-Beispiel aus meiner Welt: „Ich helfe Network-Mamas, mit ihrem Thema Kundinnen zu gewinnen, ohne stundenlang am Handy zu kleben." Wenn die richtige Frau das liest, denkt sie „die meint mich" — und genau die meldet sich dann.
+Verstehst du, worauf ich hinaus will? Dein Produkt ist nie das Thema. Das Problem deiner Kundin ist das Thema, und dein Produkt ist bloss das Werkzeug dahinter.
 
-Mach das einmal für dich. Und wenn du magst, antworte mir direkt auf diese Mail mit deinem Satz, ich lese jede Antwort.
+Und weil das die Grundlage von absolut allem ist, was danach kommt — von deiner Bio über deine Posts bis zu deinem Angebot — fangen wir genau da an. Ich hab dir einen kleinen Kurs gebaut, der dich in unter zwei Stunden zu deinem Thema führt: „Finde dein Thema als Network-Mama", für 39 Franken, weniger als ein Familien-Znacht auswärts. Wenn du magst, ist das dein erster Schritt.
 
 Liebe Grüsse
 Patricia
 
-**CTA (Reply):** Antworte mir mit deinem Bio-Satz
+**CTA-Button:** Mein Thema finden für 39 CHF → [MINIKURS-LINK]
 
 ---
 
-#### Mail E2 · Tag 2 · Minikurs „Finde dein Thema" (39)
+#### Mail E2 · Tag 2 · Zweit-Kontakt: dein Thema finden (39)
 **Betreff A:** Du brauchst kein neues Logo. Du brauchst ein Thema.
-**Betreff B:** Warum Produktbilder dich Kundinnen kosten
-**Preheader:** 3 Fragen, die dir dein Thema zeigen.
+**Betreff B:** 3 Fragen, die dir dein Thema zeigen
+**Preheader:** Der erste Schritt, damit die richtige Frau sich meldet.
 
-Weisst du, was fast alle im Network falsch machen? Sie posten Produktbilder und wundern sich, warum keine Reaktion kommt. Niemand wacht morgens auf und denkt „ich brauch jetzt dringend ein neues Öl". Aber sehr viele Mamas wachen auf und denken „ich bin so erschöpft" oder „ich krieg meinen Tag nicht geregelt". Genau da setzt dein Thema an.
+Vor zwei Tagen hab ich dir erzählt, warum dein Produkt nie das Thema ist, sondern immer das Problem deiner Kundin. Heute zeig ich dir, wie du deins findest, damit du nicht ewig im Kopf danach suchst.
 
-So findest du es — beantworte diese drei Fragen ehrlich:
+Nimm dir fünf Minuten und beantworte diese drei Fragen ehrlich:
 
 1. Wofür kommen Leute jetzt schon zu dir, ganz ohne dass du etwas verkaufst?
 2. Was hast du selber durchgemacht und für dich gelöst?
@@ -169,7 +169,7 @@ Wie diese vier Teile ineinandergreifen — und wie du sie der Reihe nach bei dir
 Liebe Grüsse
 Patricia
 
-**CTA-Button:** Die Academy ansehen → [MBA-LINK]
+**CTA-Button:** Die Academy ansehen → https://mumlifebalance.ch/mba/
 
 ---
 
@@ -188,14 +188,14 @@ Genau dafür gibt es die Mum Business Academy. Da ist alles drin, in der richtig
 - der Weg von „paar hundert Franken" zu echtem, planbarem Einkommen
 - dazu zweimal im Monat ein Live-Call mit mir und mit Expertinnen, damit du nie stecken bleibst
 
-[KUNDINNEN-STIMME einfügen — echtes Zitat einer Teilnehmerin, sonst weglassen]
+Eine Teilnehmerin hat es so gesagt: *„Mir wurde auf einmal klar, wie ich mein Business immer angeschaut habe — immer von mitten drin, statt aus einer anderen Perspektive. Ich hatte das grosse Ganze nie richtig gesehen."* Genau das passiert hier: du siehst zum ersten Mal das ganze Bild.
 
 Das ist kein weiterer Kurs, der in deiner Mediathek verstaubt. Das ist der Rahmen, in dem du es endlich umsetzt.
 
 Liebe Grüsse
 Patricia
 
-**CTA-Button:** Die Academy ansehen → [MBA-LINK]
+**CTA-Button:** Die Academy ansehen → https://mumlifebalance.ch/mba/
 
 ---
 
@@ -215,7 +215,7 @@ Und wenn dein Kopf gerade sagt „ich hab doch gar keine Zeit für noch einen Ku
 Liebe Grüsse
 Patricia
 
-**CTA-Button:** Schau dir an, wie es aufgebaut ist → [MBA-LINK]
+**CTA-Button:** Schau dir an, wie es aufgebaut ist → https://mumlifebalance.ch/mba/
 
 ---
 
@@ -233,7 +233,7 @@ Und weil du vielleicht denkst, ich erzähl dir das vom Liegestuhl aus: ich bin n
 Liebe Grüsse
 Patricia
 
-**CTA-Button:** Ja, das bin ich → [MBA-LINK]
+**CTA-Button:** Ja, das bin ich → https://mumlifebalance.ch/mba/
 
 ---
 
@@ -253,7 +253,7 @@ Patricia
 
 **P.S.** Ist das Geld gerade knapp? Den Satz „oh shit, wie viel hab ich noch auf dem Konto" kenn ich selber. Antworte mir, es gibt eine Ratenzahlung, dann finden wir einen Weg.
 
-**CTA-Button:** Pioneer-Platz sichern (997 CHF) → [MBA-LINK]
+**CTA-Button:** Pioneer-Platz sichern (997 CHF) → https://mumlifebalance.ch/mba/
 
 ---
 
@@ -310,17 +310,21 @@ Kauft sie später etwas → steigt an der Stelle aus, kein Neustart von vorne.
 | Engine-Flow zusammenklicken (Trigger/Wait/If/Goal) | **du** (1×, ich liefere Klick-Anleitung) |
 | Auslieferungs-Automationen um „→ Tag engine-sichtbarkeit-start" ergänzen | **du** (1×) |
 | MBA-Salespage-Link + 333-Checkout-Links final einsetzen | **du** (Links liefern) |
-| Später: Webinar aufnehmen → `[MBA-LINK]` optional auf Replay swappen | du + ich |
+| Später: Webinar aufnehmen → `https://mumlifebalance.ch/mba/` optional auf Replay swappen | du + ich |
 | Pillar 2 + 3: nur die 2 Brücken-Mails neu texten | **ich** |
 
 ---
 
-## Offene Punkte (deine Freigabe)
+## Status (Stand 2026-07-14)
 
-1. **Go zum AC-Tag-Anlegen?** (harmlos, per MCP — dann sind wir einen Schritt weiter)
-2. **MBA-Salespage-Link + die 3 Signature-Checkout-Links** — hast du die parat? (sonst Platzhalter)
-3. **Echte Kundinnen-Stimme** für M2 — hast du ein Zitat, das ich einsetzen darf? Sonst lass ich die Zeile weg (keine erfundenen Stimmen).
-4. **Scharfschalten erst nach Cart-Close 27.7.** — sonst kannibalisiert die Engine deinen laufenden Live-Launch. Einverstanden?
+- ✅ **Tags angelegt:** 87 (Trigger) · 88 · 79 · 89
+- ✅ **Automation 72 „Automation 0€ Produkt" = leer** bestätigt → wird mit dieser Sequenz gefüllt
+- ✅ **MBA-Link** eingesetzt (`https://mumlifebalance.ch/mba/`)
+- ✅ **Mail E1 neu** (Schaufenster-Philosophie) · **Kundenstimme M2** echt + freigegeben
+- ✅ **Go-live: jetzt** (Patricia 14.7.). Kein Konflikt mit dem laufenden Launch, weil die Engine dieselbe MBA zum selben Pioneer-Preis 997 pitcht — sie verstärkt den Launch, statt ihn zu unterbieten. Käuferinnen fliegen über Tag „mba-kauf" (79) sofort raus.
+- ⏳ **Offen (du):** 3 ThriveCart-Links (Finde dein Thema 39 · IKM 333 · Mama-CEO 333 · DPW 333)
+
+**Nächster Schritt:** Klick-Anleitung für den Automation-72-Flow (kommt sofort).
 
 ---
 
