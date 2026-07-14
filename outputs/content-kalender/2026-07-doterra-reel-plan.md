@@ -14,6 +14,7 @@ tags: [content, reels, karussell, doterra, monatsplan]
 - **Compliance + Positionierung:** durchgängig „bei mir war…"-Frame, **nie Heilversprechen**. **doTERRA NICHT im Feed — rein themenbasiert** (Energie/Hormone/Lifestyle), keine Markennamen/Produkt-Pitches; Marke lebt nur im Freebie/DM/Backend. Patricias Routine (Protein/Kraft/Schlaf/„meine Nährstoffe") als Lebensweise ok, nie als Verkauf. Bücher = das *Warum/die Fakten*, Story = Patricia.
 - **Reichweitenherz-Voice:** Komplizen-Einstieg · wörtlicher innerer Monolog · harter Cut („Die Wahrheit?" / „Spoiler:") · Alltags-Bild · weicher Trost-Turn · 1–2 derbe Wörter · CTA als Gesprächs-Fortsetzung. **Clean-warm gewinnt** · Schweizer ss · **kein** „Nicht X, sondern Y".
 - **Karussell-Cover:** Lead-Karussells **nicht** vollflächig Petrol/Grün → Foto-Cover (Reichweiten-Killer vermeiden). doTERRA-Akzent = Orange. Max 10 Folien. Parallel auf **Facebook** posten.
+- 🎬 **B-Roll-Reel-Format (Patricia-Vorgabe):** ein **ganz normaler ~7-Sek-Clip** aus dem Alltag mit **NUR dem Hook** als Text-Overlay — **kein Overlay-Schnittkonzept**. Der gesamte Inhalt läuft über die **Caption**. Trending-Sound, nativ. (TH-Reel = gesprochen wie gehabt.)
 
 ---
 

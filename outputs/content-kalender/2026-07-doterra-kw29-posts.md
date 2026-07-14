@@ -76,12 +76,7 @@ tags: [content, reels, karussell, doterra]
 
 **Hook-Overlay:** „POV: Du sagst zum 100. Mal ‚ich bin halt müde' — und glaubst es selbst nicht mehr."
 
-**Cut-Folge (B-Roll, candid, Trending-Sound):**
-1. abends aufs Sofa fallen · „POV: Du sagst zum 100. Mal ‚ich bin halt einfach müde'."
-2. müder Blick / Kaffee · „…mittags am liebsten durchgeschlafen."
-3. nachts, dunkel, wach · „…um 3 Uhr wach, Kopf läuft, Schlaf weg."
-4. Kinderchaos, du reisst dich zusammen · „…und du denkst: reiss dich zusammen."
-5. ruhiger Moment · „Vielleicht ist es nicht Faulheit. Vielleicht ist es dein Körper."
+**Dreh:** Ein ganz normaler **~7-Sek-Clip** aus deinem Alltag (candid, z.B. abends aufs Sofa fallen / müder Moment am Küchentisch). **Nur der Hook** als Text-Overlay drauf — sonst nichts. Trending-Sound, nativ posten. Der ganze Inhalt läuft über die **Caption**. *(Template-Cover `02.png` = optionaler Grid-Cover.)*
 
 **Caption:**
 > Bitte sag mir, dass ich nicht die Einzige war.
@@ -119,14 +114,7 @@ tags: [content, reels, karussell, doterra]
 
 **Hook-Overlay:** „5 Zeichen, dass deine Müdigkeit nicht ‚nur Stress' ist."
 
-**Cut-Folge (B-Roll + harte, klare Overlays — heller/knackiger Schnitt):**
-1. „5 Zeichen, dass deine Müdigkeit nicht ‚nur Stress' ist 👇"
-2. „1 — Du schläfst und bist morgens trotzdem schon leer."
-3. „2 — Brain Fog: du verlierst mitten im Satz den Faden."
-4. „3 — Nachts um 3 wach + klatschnass geschwitzt."
-5. „4 — Heisshunger am Nachmittag, der dich überrollt."
-6. „5 — Das Gewicht klettert, obwohl du nichts anders machst."
-7. „Das waren bei mir genau die Zeichen. Es war hormonell."
+**Dreh:** Ein ganz normaler **~7-Sek-Clip** (candid Alltag). **Nur der Hook** als Overlay drauf — die 5 Zeichen stehen in der **Caption** (treibt Caption-Reads = Verweildauer). Trending-Sound, nativ. *(Template-Cover `03.png` = optionaler Grid-Cover.)*
 
 **Caption:**
 > Kann mir bitte mal jemand erklären, warum uns niemand sagt, dass Müdigkeit nicht gleich Müdigkeit ist?
