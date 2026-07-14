@@ -120,7 +120,7 @@ tags: [content, reels, karussell, doterra]
 
 ## ④ Karussell · Do 24.7 · 🟡 KEYWORD ENERGIE (Lead) · Mehrwert · Foto-Cover (7 Folien)
 
-**Folie 1 · Foto-Cover:** „Wie 3×30 Minuten die Woche als 4-fach-Mama realistisch werden."
+**Folie 1 · Foto-Cover:** „‚Ich hab keine Zeit für Sport.' Mein grösster Denkfehler als Mama."
 **Folie 2:** „Ich hab ewig gedacht, für Sport brauch ich Zeit, die ich nicht hab. 💛"
 **Folie 3:** „Der Denkfehler: ich hab an ‚eine Stunde ins Studio' gedacht. Hin, umziehen, trainieren, zurück. Unmöglich mit vier Kindern."
 **Folie 4:** „Was wirklich reicht: 3× die Woche eine halbe Stunde. Auch daheim. Auch mittags. Auch abends, wenn die Kinder schlafen."
@@ -151,26 +151,32 @@ tags: [content, reels, karussell, doterra]
 
 ## ⑤ B-Roll-Reel · Fr 25.7 · 🟡 KEYWORD ENERGIE (Lead) · Mehrwert
 
-**Hook-Overlay:** „Bevor du dir einen neuen Trainingsplan suchst — schau 3 Tage, wann deine Energie da ist."
+**Hook-Overlay:** „Warum du jeden Trainingsplan nach 2 Wochen abbrichst — und es nicht an dir liegt."
 
 **Dreh:** 1 stinknormaler **~7-Sek-Clip** (candid Alltag). **Nur der Hook** als Overlay — der ganze Inhalt läuft über die **Caption**. Trending-Sound, nativ.
 
 **Caption:**
-> Kann mir bitte jemand erklären, warum wir immer beim Trainingsplan anfangen — und nie bei uns selbst?
+> Bitte sag mir, dass ich nicht die Einzige bin, die JEDEN guten Vorsatz nach zwei Wochen wieder hingeschmissen hat.
 
-> Ich hab so oft gedacht: „Jetzt zieh ich das durch." Neuer Plan, neue App, neuer Vorsatz.
-> Und nach zwei Wochen war ich wieder raus. Immer.
+> Neuer Plan, neue App, neuer Montag. „Jetzt zieh ich das durch."
+> Und zack — vierzehn Tage später lag alles wieder brach.
 
-> Was ich damals nicht verstanden hab:
-> Das Problem war nie der Plan. Es war, dass ich gegen meinen eigenen Rhythmus trainiert hab.
+> Ich hab mich dafür so fertig gemacht. „Du hältst halt nie was durch. Dir fehlt einfach die Disziplin."
 
-> Ich hab mich zu Zeiten quälen wollen, an denen ich sowieso schon leer war. Kein Wunder, dass es sich angefühlt hat wie ein Kampf.
+> Autsch. Diesen Satz hab ich mir jahrelang selbst gesagt.
 
-> Erst als ich drei Tage lang einfach nur hingeschaut hab — wann bin ich wach, wann hab ich Kraft, wann kippt's — hab ich gesehen, wann Bewegung bei MIR überhaupt Sinn macht.
+> Die Wahrheit?
+> Es lag nie an der Disziplin. Es lag daran, dass ich mich immer genau dann quälen wollte, wenn ich eh schon leer war. Morgens um sechs. Nach einem Tag, an dem nichts mehr ging.
 
-> Und plötzlich war's kein Kampf mehr. Sondern etwas, das in meinen Tag gepasst hat.
+> Kein Wunder, dass sich Bewegung angefühlt hat wie Strafe.
 
-> Genau da fängt mein 3-Tage-Energie-Kickstart an. Nicht mit einem Plan, den du eh nicht durchhältst — sondern mit deinem eigenen Muster.
+> Was sich verändert hat: ich hab aufgehört, gegen meinen eigenen Tag zu kämpfen. Ich hab erst geschaut, wann ich überhaupt Kraft hab — und die Bewegung genau dahin gelegt. Für mich sind das drei kurze Einheiten die Woche, dann wenn's passt.
+
+> Und plötzlich musste ich mich zu nichts mehr zwingen.
+
+> Vielleicht musst du das heute hören: Du bist nicht undiszipliniert. Du hast nur nie gelernt, wann DEIN Körper überhaupt kann.
+
+> Genau da setzt mein 3-Tage-Energie-Kickstart an — bei deinem Muster, nicht bei einem Plan, den eh keiner durchhält.
 
 > 👉 Kommentier **ENERGIE** und ich schick ihn dir in die DMs. 💛
 
