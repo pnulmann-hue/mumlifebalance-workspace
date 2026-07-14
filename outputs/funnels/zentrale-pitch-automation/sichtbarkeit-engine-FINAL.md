@@ -237,16 +237,20 @@ Patricia
 
 ---
 
-#### Mail M5 · Tag 10 · Pioneer-Preis (sanfte Dringlichkeit) + P.S.
-**Betreff A:** Warum die ersten Frauen weniger zahlen
-**Betreff B:** Pioneer-Preis, solange die erste Runde läuft
-**Preheader:** 997 statt 1347 — und warum.
+#### Mail M5 · Tag 10 · Pioneer-Frist (echter Countdown) + P.S.
+**Betreff A:** Deine Pioneer-Frist läuft — 997 statt 1347
+**Betreff B:** Ab jetzt zählt's für dich runter
+**Preheader:** Danach gilt der reguläre Preis.
 
-Kurz und ehrlich: solange die erste Pioneer-Runde offen ist, kommst du für 997 Franken in die Mum Business Academy statt für 1347. Diesen Unterschied gibt es, weil die ersten Frauen mitgestalten und mir ehrliches Feedback geben — dafür sollen sie belohnt werden. Wenn die Runde voll ist, gilt der reguläre Preis.
+> ⏱️ **Countdown einbauen:** Hier kommt das Countdown-Bild aus **Automate Hero** (Julias Tool) oder Deadline Funnel rein — persönliche Frist ab Eintritt in den MBA-Track, danach Preis-Umschaltung 997 → 1347.
+
+In den letzten Tagen hab ich dir die Mum Business Academy gezeigt — was drin ist, für wen sie ist, und warum sie dir das Verzetteln abnimmt. Jetzt wird's konkret: ab jetzt läuft deine persönliche Pioneer-Frist. Solange sie läuft, kommst du für 997 Franken rein statt für 1347. Danach gilt der reguläre Preis — kein Trick, einfach die Belohnung dafür, dass du bei den Ersten dabei bist, die mitgestalten.
+
+**[ COUNTDOWN-BILD ]**
 
 Was du nach den ersten Wochen hast: dein Thema steht, dein erstes eigenes Produkt nimmt Form an, und dein KI-System läuft. Du arbeitest dann wieder mit Menschen, statt sechs Stunden am Tag Posts zu schreiben.
 
-Wenn dich seit Wochen das Gefühl begleitet „ich will das endlich vergrössern" — das hier ist dein Moment, und der günstigere Einstieg gibt es nur, solange die Pioneer-Runde läuft.
+Wenn dich seit Wochen das Gefühl begleitet „ich will das endlich vergrössern" — das hier ist dein Moment, und den Pioneer-Preis gibt es nur, solange deine Frist oben läuft.
 
 Liebe Grüsse
 Patricia
