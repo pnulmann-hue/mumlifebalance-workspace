@@ -28,6 +28,10 @@ Auto-Index aller Files in `outputs/stories/`. Siehe [[_MOCs/MOC-Content-Engine]]
 
 - [[briefing]]
 
+### 📁 2026-07-14-tagesplan-mentoring-kein-5000-module-programm
+
+- [[briefing]]
+
 ### 📁 preview-2026-06-09-doterra
 
 - [[_user_prompt]]

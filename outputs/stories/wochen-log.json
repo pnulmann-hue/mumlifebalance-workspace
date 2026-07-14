@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Story-Käufertyp-Wochenlog. Wird von /story Modus 1 nach jeder Sequenz aktualisiert, damit DISG-Rotation über die Woche eingehalten wird (alle 4 Achsen pro Woche).",
-    "last_updated": "2026-05-14"
+    "last_updated": "2026-07-14"
   },
   "kw20_2026": [
     {
@@ -36,6 +36,19 @@
       "modus": "tagesplan",
       "produkt_fokus": "ki-webinar (tag -3) · strategie & planung · open loop",
       "story_ordner": "2026-05-17-tagesplan-mentoring-webinar-tag-minus-3-strategie-traegt"
+    }
+  ],
+  "kw29_2026": [
+    {
+      "datum": "2026-07-14",
+      "wochentag": "Dienstag",
+      "profil": "mentoring",
+      "kaeufertyp_disg": "blau-gewissenhaft",
+      "nadja_persona": "frank",
+      "julia_template": "Eigene Meinung/Positionierung (S.34-35)",
+      "modus": "tagesplan",
+      "produkt_fokus": "MBA (Verkaufsphase Tag 29, Cart bis 27.7.)",
+      "story_ordner": "2026-07-14-tagesplan-mentoring-kein-5000-module-programm"
     }
   ]
 }
