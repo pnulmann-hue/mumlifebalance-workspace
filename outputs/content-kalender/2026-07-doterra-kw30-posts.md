@@ -176,19 +176,20 @@ tags: [content, reels, karussell, doterra]
 > Autsch. Diesen Satz hab ich mir jahrelang selbst gesagt.
 
 > Die Wahrheit?
-> Es lag nie an der Disziplin. Es lag daran, dass ich mich immer genau dann quälen wollte, wenn ich eh schon leer war. Morgens um sechs. Nach einem Tag, an dem nichts mehr ging.
+> Es lag nie an der Disziplin. Es lag daran, dass ich Bewegung mit Zwang gleichgesetzt hab.
 
-> Und jetzt der Aha, den ich viel zu spät hatte: Dein Körper hat Tageszeiten, an denen deine Kraft messbar höher ist — bei den meisten am späteren Nachmittag, wenn Körpertemperatur und Koordination oben sind. Kämpfst du dich um sechs Uhr früh durch, trainierst du gegen deine eigene Biologie.
+> Eine Weile bin ich um 5:15 Uhr aufgestanden — nur, damit ich überhaupt regelmässig Bewegung hab. Hat funktioniert. Aber es hat sich angefühlt wie jeden Morgen die Zähne zusammenbeissen.
 
-> Kein Wunder, dass sich Bewegung angefühlt hat wie Strafe.
+> Was sich verändert hat, seit ich intensives, progressives Krafttraining mache: ich trainiere nicht mehr zu einer erzwungenen Uhrzeit. Ich mach's dann, wann's in meinen Tag passt. Drei kurze Einheiten die Woche — mal morgens, mal mittags, mal abends.
 
-> Was sich verändert hat: ich hab aufgehört, gegen meinen eigenen Tag zu kämpfen. Ich hab erst geschaut, wann ich überhaupt Kraft hab — und die Bewegung genau dahin gelegt. Für mich sind das drei kurze Einheiten die Woche, dann wenn's passt.
+> Und jetzt der Punkt, der alles verändert hat: Muskeln wachsen nur, wenn der Reiz mit der Zeit grösser wird — ein bisschen mehr Gewicht, eine Wiederholung mehr. Immer exakt das Gleiche zu machen, bringt dich nicht weiter. Genau da steigt man aus.
+> Aber sobald ich gesehen hab, wie ich von Woche zu Woche stärker werde, wollte ich gar nicht mehr aufhören.
 
-> Und plötzlich musste ich mich zu nichts mehr zwingen.
+> Kein Zwang mehr. Einfach etwas, das ich spüre.
 
-> Vielleicht musst du das heute hören: Du bist nicht undiszipliniert. Du hast nur nie gelernt, wann DEIN Körper überhaupt kann.
+> Vielleicht musst du das heute hören: Du bist nicht undiszipliniert. Dir hat nur nie jemand gezeigt, wie sich Bewegung anfühlt, wenn sie zu deinem Leben passt — und du endlich Fortschritte siehst.
 
-> Genau da setzt mein 3-Tage-Energie-Kickstart an — bei deinem Muster, nicht bei einem Plan, den eh keiner durchhält.
+> Der erste Schritt ist kleiner, als du denkst: zu wissen, wann in deinem Tag überhaupt Kraft für dich übrig ist. Genau da setzt mein 3-Tage-Energie-Kickstart an.
 
 > 👉 Kommentier **ENERGIE** und ich schick ihn dir in die DMs. 💛
 
