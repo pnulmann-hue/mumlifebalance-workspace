@@ -114,9 +114,9 @@ Ich hab Network von Anfang an anders gedacht. Nicht das klassische „ich verkau
 
 Stell dir vor, du gehst an eine Hochzeit. Du hast ein richtig geiles violettes Kleid, nur die passenden Schuhe fehlen. Du läufst durch die Stadt und weisst ganz genau, was du brauchst. Und jetzt sag mir ehrlich: gehst du in den Laden, wo im Schaufenster lauter Krimskrams liegt und man gar nicht sieht, was es drin überhaupt gibt? Nein. Du gehst dorthin, wo im Schaufenster sofort klar ist — hier gibt es Schuhe.
 
-In gewisser Weise ist jede Kundin wie diese Frau, die ihre Schuhe sucht. Denn niemand wacht morgens auf und denkt „shit, ich brauch jetzt unbedingt ätherische Öle" oder „krass, ich sollte mal die neue Gesichtscreme von Ringana bestellen". So ticken wir Menschen einfach nicht. Wir suchen insgeheim immer nach einer Lösung für unser Problem, auch wenn wir das Problem bewusst noch gar nicht in Worte fassen. Wir wollen keinen Shake — wir wollen uns endlich wieder heiss im Bikini fühlen, so wie vor den Kindern.
+In gewisser Weise ist jeder Mensch, den du erreichen willst, wie diese Frau, die ihre Schuhe sucht. Denn niemand wacht morgens auf und denkt „shit, ich brauch jetzt unbedingt ätherische Öle" oder „krass, ich sollte mal die neue Gesichtscreme von Ringana bestellen". So ticken wir Menschen einfach nicht. Wir suchen insgeheim immer nach einer Lösung für unser Problem, auch wenn wir das Problem bewusst noch gar nicht in Worte fassen. Wir wollen keinen Shake — wir wollen uns endlich wieder heiss im Bikini fühlen, so wie vor den Kindern.
 
-Verstehst du, worauf ich hinaus will? Dein Produkt ist nie das Thema. Das Problem deiner Kundin ist das Thema, und dein Produkt ist bloss das Werkzeug dahinter.
+Verstehst du, worauf ich hinaus will? Dein Produkt ist nie das Thema. Das Problem deiner Kundschaft ist das Thema, und dein Produkt ist bloss das Werkzeug dahinter.
 
 Und weil das die Grundlage von absolut allem ist, was danach kommt — von deiner Bio über deine Posts bis zu deinem Angebot — fangen wir genau da an. Ich hab dir einen kleinen Kurs gebaut, der dich in unter zwei Stunden zu deinem Thema führt: „Finde dein Thema als Network-Mama", für 39 Franken, weniger als ein Familien-Znacht auswärts. Wenn du magst, ist das dein erster Schritt.
 
@@ -130,9 +130,9 @@ Patricia
 #### Mail E2 · Tag 2 · Zweit-Kontakt: dein Thema finden (39)
 **Betreff A:** Du brauchst kein neues Logo. Du brauchst ein Thema.
 **Betreff B:** 3 Fragen, die dir dein Thema zeigen
-**Preheader:** Der erste Schritt, damit die richtige Frau sich meldet.
+**Preheader:** Der erste Schritt, damit sich die richtigen Menschen melden.
 
-Vor zwei Tagen hab ich dir erzählt, warum dein Produkt nie das Thema ist, sondern immer das Problem deiner Kundin. Heute zeig ich dir, wie du deins findest, damit du nicht ewig im Kopf danach suchst.
+Vor zwei Tagen hab ich dir erzählt, warum dein Produkt nie das Thema ist, sondern immer das Problem deiner Kundschaft. Heute zeig ich dir, wie du deins findest, damit du nicht ewig im Kopf danach suchst.
 
 Nimm dir fünf Minuten und beantworte diese drei Fragen ehrlich:
 
@@ -162,7 +162,7 @@ Ich sass mit meiner Tochter im Wellness, das Handy eigentlich weg, und dann kam 
 
 Das Verrückte daran ist, dass das kein Glück war. Das passiert, seit bei mir vier Dinge zusammenspielen — mein Thema, eine Positionierung, die sofort verstanden wird, ein Angebot, das wirklich passt, und ein KI-System, das im Hintergrund weiterläuft, auch wenn ich gerade Mama bin. Seitdem gibt es bei mir keinen Monat mehr ohne Verkauf, mit 18 Stunden Arbeit pro Woche und vier Kindern.
 
-Ein Stück davon kannst du sofort mitnehmen: ein einziger Beitrag pro Woche, der ein echtes Problem deiner Wunschkundin löst, bringt dir mehr als zehn Produktbilder. Fang genau da an.
+Ein Stück davon kannst du sofort mitnehmen: ein einziger Beitrag pro Woche, der ein echtes Problem deiner Wunschkundschaft löst, bringt dir mehr als zehn Produktbilder. Fang genau da an.
 
 Wie diese vier Teile ineinandergreifen — und wie du sie der Reihe nach bei dir aufbaust — steckt komplett in der Mum Business Academy. Schau sie dir in Ruhe an.
 
@@ -182,7 +182,7 @@ Patricia
 
 Genau dafür gibt es die Mum Business Academy. Da ist alles drin, in der richtigen Reihenfolge:
 
-- dein Thema und deine Positionierung, damit die richtigen Frauen sich melden
+- dein Thema und deine Positionierung, damit sich die richtigen Menschen melden
 - dein eigenes digitales Produkt, Schritt für Schritt aufgebaut
 - dein KI-System, das dir den Adminkram im Business und im Haushalt abnimmt
 - der Weg von „paar hundert Franken" zu echtem, planbarem Einkommen
@@ -271,7 +271,7 @@ Vielleicht ist die ganze Academy gerade ein zu grosser Brocken, zeitlich oder vo
 Such dir die eine Tür aus, hinter der bei dir gerade der grösste Druck steht:
 
 **→ Dir fehlen Kundinnen über Instagram?**
-Die Instagram-Kundenmaschine bringt dir Thema, Positionierung und Strategie, damit sich die richtigen Frauen melden. 333 CHF. → https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/
+Die Instagram-Kundenmaschine bringt dir Thema, Positionierung und Strategie, damit sich die richtigen Menschen melden. 333 CHF. → https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/
 
 **→ Dir fehlt vor allem die Zeit?**
 Mama-CEO baut dir das KI-System, das dir den Hintergrundkram abnimmt, damit dein Business in deine Stunden passt. 333 CHF. → https://mumlifebalance.thrivecart.com/mama-ceo/
