@@ -42,3 +42,14 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 - [[umbau-plan]]
 - [[variante-B-mailsequenz]]
 - [[variante-C-mailsequenz]]
+
+#### 📁 zentrale-pitch-automation/mails (fertige HTML-Mails)
+
+- [[mail-E1-schaufenster]]
+- [[mail-E2-thema-finden]]
+- [[mail-M1-wende-story]]
+- [[mail-M2-alles-aus-einer-hand]]
+- [[mail-M3-einwaende]]
+- [[mail-M4-fuer-wen]]
+- [[mail-M5-pioneer]]
+- [[mail-D1-drei-tueren]]
