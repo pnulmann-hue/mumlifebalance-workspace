@@ -28,9 +28,8 @@ tags: [content, reels, karussell, doterra]
 **Dreh:** Gesicht in Kamera, ruhig, candid. Cover-Overlay als Standbild.
 
 **Caption:**
-> Kann mir bitte mal jemand erklären, warum keiner müden Mamas sagt, dass Krafttraining wach macht?
+> Ich hab meinem Körper jahrelang genau das Gegenteil von dem gegeben, was er gebraucht hätte.
 
-> Ich hab es jahrelang genau falsch rum gemacht.
 > Müde? Dann bloss schonen. Kaputt? Dann aufs Sofa. Energie will ich? Dann muss ich mich wohl mal so richtig auspowern.
 
 > Also bin ich joggen gegangen. Und war danach nicht wacher, sondern nur noch fertiger.
@@ -71,9 +70,9 @@ tags: [content, reels, karussell, doterra]
 **Folie 7 · CTA:** „Wo bei DIR die Energie kippt, findest du in 3 Tagen raus. 👉 Kommentier **ENERGIE**."
 
 **Caption:**
-> „Du musst dich mehr schonen." Diesen Satz hab ich so oft gehört. Und befolgt.
+> Je mehr ich mich geschont hab, desto müder wurde ich.
 
-> Und weisst du, was passiert ist? Ich wurde nicht erholter. Ich wurde müder.
+> Klingt verrückt, ich weiss. Aber genau so ist es gelaufen — über Jahre.
 
 > Weil Schonen bei Dauererschöpfung oft genau das Falsche ist.
 > Je weniger ich mich bewegt hab, desto mehr Muskeln hab ich abgebaut. Und Muskeln sind nun mal dein Energiespeicher — dein Akku für den ganzen Tag.
@@ -105,9 +104,9 @@ tags: [content, reels, karussell, doterra]
 **Dreh:** 1 stinknormaler **~7-Sek-Clip** (candid Alltags-Moment). **Nur der Hook** als Overlay — die 3 Sätze stehen in der **Caption**. Trending-Sound, nativ.
 
 **Caption:**
-> Bitte sag mir, dass ich nicht die Einzige war, die diese Sätze geglaubt hat.
+> Es gibt drei Sätze über Sport, die genau die Frauen kleinhalten, die eh schon am Limit sind.
 
-> Über Sport und Bewegung kursieren drei Dinge, die genau die Frauen kleinhalten, die eh schon am Limit sind:
+> Ich hab alle drei geglaubt. Jahrelang.
 
 > „Du musst dich richtig auspowern, sonst bringt's nichts."
 > Falsch. Reine Auspower-Sessions treiben dein Stresshormon Cortisol hoch — und das ist genau das, was dich als erschöpfte Mama noch mehr auslaugt. Kurze, kraftvolle Reize bringen dir mehr als jede Auspower-Runde.
@@ -167,7 +166,7 @@ tags: [content, reels, karussell, doterra]
 **Dreh:** 1 stinknormaler **~7-Sek-Clip** (candid Alltag). **Nur der Hook** als Overlay — der ganze Inhalt läuft über die **Caption**. Trending-Sound, nativ.
 
 **Caption:**
-> Bitte sag mir, dass ich nicht die Einzige bin, die JEDEN guten Vorsatz nach zwei Wochen wieder hingeschmissen hat.
+> Ich weiss noch genau, wie ich den Trainingsplan das letzte Mal weggeklickt hab. Wieder nach zwei Wochen. Wieder mit diesem „typisch ich"-Gefühl im Bauch.
 
 > Neuer Plan, neue App, neuer Montag. „Jetzt zieh ich das durch."
 > Und zack — vierzehn Tage später lag alles wieder brach.
