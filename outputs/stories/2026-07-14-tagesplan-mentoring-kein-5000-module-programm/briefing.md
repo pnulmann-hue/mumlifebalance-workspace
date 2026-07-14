@@ -15,10 +15,10 @@ tags: [content, story]
 
 ## Slides
 
-### Slide 1 — Hook (template-hook)
+### Slide 1 — Hook (template-bts, Vollbild-Selfie)
 - **Eyebrow:** Unpopuläre Meinung
 - **Hook:** „Kauf dir bloss **nicht** noch einen Kurs."
-- **Foto:** keins (clean creme, maximale BÄM-Wirkung)
+- **Foto:** `fotos/hook-selfie-garten.webp` (Patricias eigenes Handy-Foto, Garten, Petrol-Top) — Vollbild, Gesicht frei oben, Text im dunklen Verlauf unten
 - **Sticker:** keiner
 
 ### Slide 2 — Story (template-story) 🔁 FOTO-SWAP-KANDIDAT
@@ -48,13 +48,14 @@ tags: [content, story]
 
 ### Slide 7 — Lösung / MBA (template-bts) 🔁 FOTO-SWAP-KANDIDAT
 - **Label:** Die Lösung
-- **Body:** MBA = nicht noch ein Kurs, sondern alles in der richtigen Reihenfolge + 2× im Monat Live-Call, nie mehr allein im Tunnel.
+- **Body:** MBA = nicht noch ein Kurs zum Wegklicken. In der **Umsetzerinnen-Membership setzen wir gemeinsam um** — 2× im Monat live, Schritt für Schritt, bis es läuft. (Betont: nicht nur Theorie.)
 - **Foto (Base):** `fotos/loesung-selbstbewusst.jpg` (Shootingbild B&W, Gesicht frei) → durch Patricias eigenes Foto ersetzbar
 
 ### Slide 8 — CTA / Countdown (template-countdown)
 - **Eyebrow:** Cart offen bis So 27.7.
-- **Message:** Pioneer-Preis 997 statt später 1347. Wenn du Struktur statt noch-ein-Kurs willst:
-- **CTA:** Schreib mir „MBA" · Link in Bio
+- **Message:** Pioneer-Preis 997 statt später 1347. Alles drin — und wir setzen gemeinsam um.
+- **CTA:** 👉 Tipp auf den Link
+- **⚠️ LINK-STICKER:** Patricia setzt einen **Instagram-Link-Sticker** auf diese Slide mit dem **echten MBA-Checkout-Link** (kein „Bio", kein Kommentar-Keyword). Link aus ThriveCart / active-funnels.json einsetzen.
 - **Sticker:** Countdown-Sticker auf So 27.7. 23:59 setzen
 
 ## CTA-Plan
