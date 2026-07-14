@@ -100,12 +100,15 @@ Zahlt direkt auf das MBA-Launchziel (8 Verkäufe) ein: die wärmsten Käuferinne
 
 ## 6. Assets
 
-- `mails/mail-1-dein-kurs-ist-drin.html`
-- `mails/mail-2-eine-stufe-zwei-fehlen.html`
-- `mails/mail-3-was-der-rest-kostet.html`
-- `mails/mail-4-anrechnung-laeuft-aus.html`
+**→ Sendfertig, ohne Bearbeitung (das nimmst du):**
+- `mails-instagram-kundenmaschine/` — 4 Mails für die IKM-Kundinnen (Kursname + Coupon `DRIN-333` fest eingebaut)
+- `mails-mama-ceo/` — 4 Mails für die Mama-CEO-Kundinnen (Kursname + Coupon `DRIN-249` fest eingebaut)
 
-Alle im Onlinebusiness-Brand-Design, `%FIRSTNAME%`-Merge, Swiss ss, Patricia-Voice.
+*(Der Ordner `mails/` ist die Master-Vorlage mit `<!-- SWAP -->`-Markern — nur als Quelle, nicht zum Senden.)*
+
+Alle im Onlinebusiness-Brand-Design, `%FIRSTNAME%`-Merge, Swiss ss, Patricia-Voice, keine käufer-spezifischen Beträge (Earlybird-safe).
+
+**Coupon-Hinweis Mama-CEO:** Der Satz nutzt `DRIN-249` (Pilot/Earlybird-Preis). Falls einzelne Mama-CEO-Kundinnen den vollen Preis (333) bezahlt haben, im Link `DRIN-249` → `DRIN-333` ändern, damit ihnen der volle Betrag angerechnet wird.
 
 ---
 
