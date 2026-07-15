@@ -309,3 +309,7 @@ scripts/story-render-bot/render/node_modules/
 
 # Lokale MCP-Konfig mit echten Tokens — nie committen (Beispiel: .mcp.json.example)
 .mcp.json
+
+# doTERRA-Strategie + Funnel-Interna — nicht ins oeffentliche Repo (Team/Upline)
+outputs/content-kalender/doterra-jahresrhythmus.md
+outputs/funnels/doterra-schlaf-ritual/**
