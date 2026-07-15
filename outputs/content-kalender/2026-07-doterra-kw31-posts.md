@@ -122,7 +122,10 @@ tags: [content, reels, karussell, doterra]
 
 ## ④ Karussell · Do 30.7 · 🟡 KEYWORD ENERGIE (Lead) · Mehrwert · Foto-Cover (7 Folien)
 
-**Folie 1 · Foto-Cover:** „Eine Freundin hat gesehen, was mein Arzt übersehen hat."
+**Folie 1 · Foto-Cover (Dialog):**
+> Mein Arzt sagte: „Setzen Sie mal Ihre Nahrungsergänzung ab."
+> Meine Freundin fragte: „Hast du mal die Hormone testen lassen?"
+> **Rate mal, wer recht hatte.**
 **Folie 2:** „Ich war beim Arzt, weil ich am Ende war. Sein Rat: setzen Sie Ihre Nahrungsergänzung ab. 💛"
 **Folie 3:** „Es wurde kein Stück besser. Ich bin genauso erschöpft wieder nach Hause."
 **Folie 4:** „Dann eine Freundin — gleich alt, gleiche Müdigkeit. Sie sagte: hast du mal deine Hormone testen lassen?"
