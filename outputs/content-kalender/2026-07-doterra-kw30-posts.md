@@ -10,7 +10,7 @@ tags: [content, reels, karussell, doterra]
 
 ---
 
-## ① Talking-Head-Reel · Mo 21.7 · 🟢 REICHWEITE (Folgen) · Storytelling
+## ① Talking-Head-Reel · Mo 20.7 · 🟢 REICHWEITE (Folgen) · Storytelling
 
 **Cover-Overlay:** „Mit 36 hab ich angefangen, schwer zu heben. Freiwillig."
 
@@ -59,7 +59,7 @@ tags: [content, reels, karussell, doterra]
 
 ---
 
-## ② Karussell · Di 22.7 · 🟡 KEYWORD ENERGIE (Lead) · Mehrwert · Foto-Cover (7 Folien)
+## ② Karussell · Di 21.7 · 🟡 KEYWORD ENERGIE (Lead) · Mehrwert · Foto-Cover (7 Folien)
 
 **Folie 1 · Foto-Cover:** „Warum du müder wirst, je mehr du dich schonst."
 **Folie 2:** „Klingt verrückt, oder? Aber genau das ist mir jahrelang passiert. 💛"
@@ -97,7 +97,7 @@ tags: [content, reels, karussell, doterra]
 
 ---
 
-## ③ B-Roll-Reel · Mi 23.7 · 🟢 REICHWEITE (Speichern) · Mehrwert
+## ③ B-Roll-Reel · Mi 22.7 · 🟢 REICHWEITE (Speichern) · Mehrwert
 
 **Hook-Overlay:** „3 Sätze über Sport, die müde Mamas jahrelang kleinhalten."
 
@@ -126,7 +126,7 @@ tags: [content, reels, karussell, doterra]
 
 ---
 
-## ④ Karussell · Do 24.7 · 🟡 KEYWORD ENERGIE (Lead) · Mehrwert · Foto-Cover (7 Folien)
+## ④ Karussell · Do 23.7 · 🟡 KEYWORD ENERGIE (Lead) · Mehrwert · Foto-Cover (7 Folien)
 
 **Folie 1 · Foto-Cover:** „‚Ich hab keine Zeit für Sport.' Mein grösster Denkfehler als Mama."
 **Folie 2:** „Ich hab ewig gedacht, für Sport brauch ich Zeit, die ich nicht hab. 💛"
@@ -159,7 +159,7 @@ tags: [content, reels, karussell, doterra]
 
 ---
 
-## ⑤ B-Roll-Reel · Fr 25.7 · 🟡 KEYWORD ENERGIE (Lead) · Mehrwert
+## ⑤ B-Roll-Reel · Fr 24.7 · 🟡 KEYWORD ENERGIE (Lead) · Mehrwert
 
 **Hook-Overlay:** „Warum du jeden Trainingsplan nach 2 Wochen abbrichst — und es nicht an dir liegt."
 
