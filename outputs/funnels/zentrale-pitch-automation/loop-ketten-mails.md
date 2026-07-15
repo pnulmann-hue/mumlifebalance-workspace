@@ -29,7 +29,26 @@ tags: [funnel, mba, pitch-automation, intern]
 ---
 
 ## LOOP 2 — Expertin statt Verkäuferin (97) · 3 Mails
-**Trigger:** Tag 89 „Engine Pitch ohne Kauf" · **Exit:** Kauf „Expertin" · **Ende:** Tag → startet Loop 3
+**Status:** ✅ in AC gebaut (Automation 73), noch **inaktiv**.
+**Trigger:** Tag 89 „Engine Pitch ohne Kauf" · **Läuft:** Einmal
+**Exit-Ziel am Ende** („Springen zu", Position = *unter Position des Kontakts*):
+> Tag besteht **Expertin** (51) **ODER** Tag besteht **mba-kauf** (79) **ODER** Tag besteht **Instagram-Kundenmaschine** (39) → raus
+
+### 🚨 Ausschluss-Regel (Patricia 2026-07-15) — gilt für JEDEN Loop
+Ein Loop darf nie an jemanden gehen, die den Inhalt schon hat:
+- **MBA-Käuferinnen (79)** werden aus **allen** Loops ausgeschlossen — sie haben alles.
+- **IKM-Käuferinnen (39)** kriegen **kein** „Expertin" (97) — Positionierung/Thema steckt schon in der Instagram-Kundenmaschine.
+- Analog beim Bauen von Loop 4/5: DPW-Käuferin (44) nicht Loop 4, Mama-CEO-Käuferin (71) nicht Loop 5.
+
+**Kauf-Tags (verifiziert — NICHT die „Automation …"-Tags, die nur Pitch-Funnels starten!):**
+| Produkt | Kauf-Tag | ❌ nicht verwechseln mit |
+|---|---|---|
+| Finde dein Thema (39) | **41** „Thema finden" | 46 „Automation Finde dein Thema" |
+| Expertin (97) | **51** „Expertin" | 50 „Automation Expertin statt Verkäuferin" |
+| Instagram-Kundenmaschine (333) | **39** | 47 „Automation IG Kundenmaschine" |
+| Mama-CEO (333) | **71** | — |
+| Digitale Produktwelt (333) | **44** | — |
+| MBA | **79** „mba-kauf" | — |
 
 ### Mail 2-1
 **Betreff A:** Fühlst du dich manchmal wie eine Verkäuferin?
