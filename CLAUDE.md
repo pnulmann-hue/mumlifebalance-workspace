@@ -657,6 +657,18 @@ Statt stumpfer Zusammenfassung **redigiert Claude wie eine Chefredakteurin**: w�
 - **Secrets:** `TELEGRAM_HAUSHALT_BOT_TOKEN`, `TELEGRAM_HAUSHALT_CHAT_ID`, `NOTION_TOKEN` (Integration muss Zugriff auf die Haushalts-Liste haben).
 - **Doku:** `scripts/haushalts-bot/README.md`. Konzept-Hintergrund: `outputs/produkte/mama-ceo/bonus-haushalts-helfer-bot-PATRICIA.md` (das war „Stufe 2").
 
+### Öl-Begleiter — 7-Tage-Sample-Companion (`scripts/oel-begleiter/`, seit 2026-07-15)
+
+**Mehrbenutzer-Telegram-Bot für Menschen, die Patricias Öl-Pröbchen (Samples) testen wollen** — das KI-Tool ganz oben im doTERRA-Funnel (Energie-Kickstart, Keyword `ENERGIE`). Löst das „Sample bleibt ungenutzt in der Schublade"-Problem: Jede Testerin chattet privat, durchläuft ein 5-Fragen-Onboarding (Name, welche Pröbchen, Wunsch, Alltag, Erfahrung) und wird dann **7 Tage lang** begleitet — jeden Morgen (Default 08:00 Europe/Zurich) automatisch eine kleine, machbare Etappe. Am Tag 7: Rückblick + Mini-Routine + sanfte Brücke zur eigenen Hausapotheke.
+
+- **Öl-Wissen aus dem Companion (Kern-Feature):** Der Bot erfindet KEINE Öl-Fakten, sondern zieht das echte Produktwissen aus **derselben Supabase-Wissensbasis wie der doTERRA-Companion** (`doterra-bot`) — Tabelle `documents`, `category="product"` (Enjoils + Produktwissen). Vor jeder Etappe holt `companion_kb.py` das Wissen zu den Ölen der Testerin. Fehlt die Anbindung → keine konkreten Wirkungs-Aussagen (statt Erfindung).
+- **7-Tage-Bogen:** Tag 1 richtig testen · 2 Morgen-Frische · 3 Fokus · 4 Abend-Ruhe · 5 Wohlfühl-Moment · 6 Familien-Alltag · 7 Mini-Routine + Brücke.
+- **Sprache:** Python 3.11+ · python-telegram-bot 21 (`[job-queue]` für Auto-Push) · Anthropic + (optional) Whisper · Supabase.
+- **Module:** `bot.py` (Handler, Onboarding, Auto-Push via JobQueue) · `onboarding.py` · `store.py` (Profile + 7-Tage-Fortschritt als JSON in `data/users/`) · `begleiter_brain.py` (Etappen-Generatoren) · `companion_kb.py` (Companion-Wissensbasis) · `knowledge.py` (Voice/Compliance) · `config.py`.
+- **Regeln eingebaut:** Freundin-Voice, kein Stakkato, Schweizer ss, keine erfundenen Zahlen, doTERRA-Compliance (keine Heilversprechen, „bei mir war"-Frame, Sicherheit als Fürsorge), Öl-Aussagen NUR aus dem Companion-Wissen, korrekte doTERRA-Ölnamen.
+- **Env:** `OEL_BOT_TOKEN` (eigener BotFather-Bot!) + `ANTHROPIC_API_KEY` + `SUPABASE_URL`/`SUPABASE_SERVICE_KEY` (dieselben wie doterra-bot) (+ optional `OPENAI_API_KEY`, `OEL_ADMIN_CHAT_ID`, `OEL_SEND_HOUR`, `OEL_PATRICIA_KONTAKT`).
+- **Deploy:** Railway als Worker (`Procfile`). **Offen:** BotFather-Token + Supabase-Keys + Railway-Deploy + Testrunde. Doku: `scripts/oel-begleiter/README.md`.
+
 ### Instagram Content-Engine (Automatisiert, v2 seit 2026-04-21)
 
 **Vollautomatisches Content-System für beide Profile** (Mentoring + doTERRA). Weekly Content-Generation + Daily Auto-Posting + Monthly Best-Performer-Repost. Gesteürt durch 3 Scheduled Tasks + 2 Assistenten (`/reels`, `/karussell`).
