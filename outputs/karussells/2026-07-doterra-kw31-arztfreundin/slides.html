@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>doTERRA KW31 Karussell — Arzt vs Freundin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --orange:#dc822e; --orange-tief:#c06b1e; --dunkelblau:#29556d; --creme:#f1ecdd; --text:#0c1c30; }
+      * { margin:0; padding:0; box-sizing:border-box; }
+      body { background:#1a1a1a; font-family:"Source Sans 3",sans-serif; padding:40px; }
+      .slide { width:1080px; height:1350px; position:relative; overflow:hidden; margin:40px auto; background:var(--creme); }
+      .cover-foto { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:48% 18%; z-index:1; }
+      .scrim { position:absolute; inset:0; background:linear-gradient(180deg, rgba(12,28,48,0) 38%, rgba(12,28,48,0.5) 100%); z-index:2; }
+      .hook-card { position:absolute; left:52px; right:52px; bottom:60px; background:var(--creme); padding:46px 50px; border-radius:28px; box-shadow:0 16px 44px rgba(12,28,48,0.4); z-index:4; }
+      .hook-card .line { font-family:"Source Sans 3"; font-weight:600; font-size:39px; line-height:1.3; color:var(--dunkelblau); margin-bottom:16px; }
+      .hook-card .line .who { font-weight:700; color:var(--orange-tief); }
+      .hook-card .punch { font-family:"Philosopher"; font-weight:700; font-size:56px; line-height:1.1; color:var(--orange); margin-top:26px; }
+      .txt { display:flex; flex-direction:column; justify-content:center; padding:120px 96px; }
+      .num { font-family:"Philosopher"; font-weight:700; font-size:44px; color:var(--orange); margin-bottom:34px; }
+      .num::after { content:""; display:block; width:64px; height:5px; background:var(--orange); border-radius:3px; margin-top:18px; }
+      .body { font-family:"Source Sans 3"; font-weight:600; font-size:56px; line-height:1.32; color:var(--dunkelblau); }
+      .body .pop { color:var(--orange); }
+      .body em { color:var(--orange); font-style:italic; font-weight:700; }
+      .handle { position:absolute; bottom:56px; left:96px; font-family:"Source Sans 3"; font-weight:600; font-size:24px; color:rgba(12,28,48,0.45); }
+      .cta { background:linear-gradient(160deg,#fbf7ee 0%, var(--creme) 100%); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:120px 90px; }
+      .cta .lead { font-family:"Source Sans 3"; font-weight:600; font-size:52px; line-height:1.3; color:var(--dunkelblau); margin-bottom:56px; }
+      .cta .keyword-box { background:var(--orange); color:#fff; font-family:"Philosopher"; font-weight:700; font-size:72px; padding:34px 70px; border-radius:999px; box-shadow:0 14px 36px rgba(220,130,46,0.36); }
+      .cta .kw-hint { font-family:"Source Sans 3"; font-weight:600; font-size:34px; color:var(--orange-tief); margin-top:34px; }
+    </style>
+  </head>
+  <body>
+    <div class="slide">
+      <img class="cover-foto" src="assets/cover.jpg" alt="" />
+      <div class="scrim"></div>
+      <div class="hook-card">
+        <div class="line"><span class="who">Mein Arzt:</span> „Setzen Sie mal Ihre Nahrungsergänzung ab."</div>
+        <div class="line"><span class="who">Meine Freundin:</span> „Hast du mal die Hormone testen lassen?"</div>
+        <div class="punch">Rate mal, wer recht hatte.</div>
+      </div>
+    </div>
+    <div class="slide txt"><div class="num">01</div><div class="body">Ich war beim Arzt, weil ich am Ende war. Sein Rat: <em>setzen Sie Ihre Nahrungsergänzung ab</em>. 💛</div><div class="handle">@patricia_ulmann</div></div>
+    <div class="slide txt"><div class="num">02</div><div class="body">Es wurde kein Stück besser. Ich bin genauso erschöpft wieder nach Hause.</div><div class="handle">@patricia_ulmann</div></div>
+    <div class="slide txt"><div class="num">03</div><div class="body">Dann eine Freundin — gleich alt, gleiche Müdigkeit. Sie fragte: <span class="pop">hast du mal deine Hormone testen lassen?</span></div><div class="handle">@patricia_ulmann</div></div>
+    <div class="slide txt"><div class="num">04</div><div class="body">Ich hab den Test selbst in der Drogerie geholt. Ergebnis: mein <em>Progesteron war viel zu tief</em>. Mit 36.</div><div class="handle">@patricia_ulmann</div></div>
+    <div class="slide txt"><div class="num">05</div><div class="body">Manchmal sehen Frauen, was das System übersieht. Und du darfst <span class="pop">selbst aktiv werden</span> — nicht warten, bis dich jemand ernst nimmt.</div><div class="handle">@patricia_ulmann</div></div>
+    <div class="slide cta"><div class="lead">Fang mit dem kleinsten Schritt an: deinem eigenen Energie-Muster.</div><div class="keyword-box">Kommentier ENERGIE</div><div class="kw-hint">… und ich schick dir den 3-Tage-Kickstart 💛</div></div>
+  </body>
+</html>
