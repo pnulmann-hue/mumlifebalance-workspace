@@ -1,0 +1,69 @@
+<!--
+  AC Öl-Begleiter Anmeldung — Embed-Only Block
+  ============================================================
+  Zweck: Als „Custom HTML"-Block in WordPress (oder in eine Biolink-Seite) einfügen.
+  Nimmt E-Mail + Vorname auf → trägt in AC-Liste 18 „doTERRA Interessenten" ein
+  → leitet nach dem Absenden zum Telegram-Öl-Begleiter weiter.
+
+  ⚠️ 3 PLATZHALTER VOR DEM LIVE-GANG ERSETZEN (aus deinem AC-Formular):
+     {{AC_FORM_ID}}    → die Nummer deines neuen AC-Formulars (z.B. 71)
+     {{AC_ORG_TOKEN}}  → der „or"-Token deines Formulars (aus dem AC-Embed-Code)
+     {{BOT_LINK}}      → dein Telegram-Bot-Link (z.B. https://t.me/DeinOelBot)
+  Den {{BOT_LINK}} zusätzlich in AC unter Formular → Aktionen → „Weiterleiten zu URL"
+  eintragen, damit die Weiterleitung serverseitig sicher passiert.
+  ============================================================
+-->
+
+<style>@import url(https://fonts.bunny.net/css?family=philosopher:400,700|source-sans-3:400,600,700);</style>
+<style>
+  /* Patricia-Brand (doTERRA-Variante: Creme + Petrol + Orange) */
+  #oel_form { max-width: 500px; margin: 32px auto 0; background: #f1ecdd; padding: 36px 32px; border-radius: 18px;
+              font-family: 'Source Sans 3', system-ui, sans-serif; color: #0c1c30; box-sizing: border-box; }
+  #oel_form h2 { font-family: 'Philosopher', Georgia, serif; color: #29556d; font-size: 25px; font-weight: 700;
+                 margin: 0 0 8px; text-align: center; line-height: 1.25; }
+  #oel_form .oel_sub { text-align: center; font-size: 15px; color: #29556d; margin: 0 0 22px; opacity: 0.9; }
+  #oel_form label { display: block; font-weight: 700; color: #29556d; margin: 0 0 6px; font-size: 15px; }
+  #oel_form input[type="text"], #oel_form input[type="email"] {
+      display: block; width: 100%; box-sizing: border-box; background: #fff;
+      border: 1.5px solid rgba(41,85,109,0.18); border-radius: 10px; padding: 13px; font-size: 15px; margin: 0 0 16px; }
+  #oel_form input::placeholder { color: #8a94a0; }
+  #oel_form .oel_consent { display: flex; align-items: flex-start; gap: 10px; margin: 4px 0 20px; }
+  #oel_form .oel_consent input { margin-top: 3px; width: 18px; height: 18px; flex-shrink: 0; }
+  #oel_form .oel_consent label { font-weight: 400; font-size: 13px; line-height: 1.55; color: #0c1c30; margin: 0; }
+  #oel_form button { width: 100%; background: #dc822e; color: #fff; font-weight: 700; font-size: 17px;
+      padding: 16px 32px; border: 0; border-radius: 14px; cursor: pointer; letter-spacing: 0.3px;
+      transition: transform 0.12s ease, box-shadow 0.2s ease; }
+  #oel_form button:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(220,130,46,0.4); }
+  #oel_form .oel_hinweis { text-align: center; font-size: 12px; color: #29556d; opacity: 0.75; margin: 14px 0 0; }
+</style>
+
+<form method="POST" action="https://mumlifebalance.activehosted.com/proc.php" id="oel_form" novalidate>
+  <!-- AC-Pflichtfelder — {{AC_FORM_ID}} und {{AC_ORG_TOKEN}} ersetzen -->
+  <input type="hidden" name="u" value="{{AC_FORM_ID}}" />
+  <input type="hidden" name="f" value="{{AC_FORM_ID}}" />
+  <input type="hidden" name="s" />
+  <input type="hidden" name="c" value="0" />
+  <input type="hidden" name="m" value="0" />
+  <input type="hidden" name="act" value="sub" />
+  <input type="hidden" name="v" value="2" />
+  <input type="hidden" name="or" value="{{AC_ORG_TOKEN}}" />
+
+  <h2>Dein 7-Tage-Öl-Begleiter 🌿</h2>
+  <p class="oel_sub">Trag dich ein — dann begleite ich dich Schritt für Schritt durch deine Pröbchen.</p>
+
+  <label for="oel_fullname">Vorname</label>
+  <input type="text" id="oel_fullname" name="fullname" placeholder="Wie heisst du?" required />
+
+  <label for="oel_email">E-Mail</label>
+  <input type="email" id="oel_email" name="email" placeholder="Deine E-Mail-Adresse" required />
+
+  <input type="hidden" name="field[1][]" value="~|">
+  <div class="oel_consent">
+    <input id="oel_consent" type="checkbox" name="field[1][]"
+           value="Ich möchte Patricias E-Mails mit Wissen und Angeboten rund ums Wohlfühlen mit ätherischen Ölen erhalten. Ich kann mich jederzeit abmelden." checked>
+    <label for="oel_consent">Ich möchte Patricias E-Mails rund ums Wohlfühlen mit ätherischen Ölen erhalten. Ich kann mich jederzeit abmelden.</label>
+  </div>
+
+  <button type="submit">Ja, ich will meinen Öl-Begleiter 🌿</button>
+  <p class="oel_hinweis">Gleich nach dem Eintragen öffnet sich dein Begleiter auf Telegram.</p>
+</form>

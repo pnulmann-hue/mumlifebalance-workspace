@@ -1,0 +1,118 @@
+<!--
+  Öl-Begleiter — Anmelde-Landing (Ziel für den Biolink)
+  ============================================================
+  Vollständige, brand-gestylte Opt-in-Seite. Zwei Nutzungswege:
+   A) Als eigene WordPress-Seite veröffentlichen (via /wp als Draft) und den Link
+      in deine Biolinks setzen.  →  mumlifebalance.ch/oel-begleiter
+   B) Den <form>-Block unten (id="oel_form") auch einzeln als „Custom HTML" nutzen
+      (identisch mit ac-form-embed.html).
+
+  ⚠️ PLATZHALTER ERSETZEN: {{AC_FORM_ID}} · {{AC_ORG_TOKEN}} · {{BOT_LINK}}
+  ============================================================
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dein 7-Tage-Öl-Begleiter · Mum Life Balance</title>
+<style>@import url(https://fonts.bunny.net/css?family=philosopher:400,700|source-sans-3:400,600,700);</style>
+<style>
+  :root { --creme:#f1ecdd; --petrol:#29556d; --orange:#dc822e; --dark:#0c1c30; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--creme); color: var(--dark);
+         font-family: 'Source Sans 3', system-ui, sans-serif; line-height: 1.6; }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 40px 22px 60px; }
+  .hero { text-align: center; }
+  .kicker { display: inline-block; background: rgba(220,130,46,0.14); color: var(--orange);
+            font-weight: 700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase;
+            padding: 6px 14px; border-radius: 999px; margin-bottom: 18px; }
+  h1 { font-family: 'Philosopher', Georgia, serif; color: var(--petrol); font-size: 32px;
+       line-height: 1.2; margin: 0 0 14px; }
+  .lead { font-size: 18px; color: var(--petrol); margin: 0 0 8px; }
+  .sub { font-size: 16px; opacity: 0.85; margin: 0 auto 30px; max-width: 460px; }
+  .tage { list-style: none; padding: 0; margin: 6px 0 34px; }
+  .tage li { display: flex; gap: 12px; align-items: baseline; padding: 9px 0;
+             border-bottom: 1px solid rgba(41,85,109,0.12); font-size: 16px; }
+  .tage .t { font-family: 'Philosopher', serif; font-weight: 700; color: var(--orange);
+             min-width: 54px; }
+  /* Formular */
+  #oel_form { max-width: 500px; margin: 0 auto; background: #fff; padding: 34px 30px; border-radius: 18px;
+              box-shadow: 0 10px 30px rgba(41,85,109,0.10); }
+  #oel_form h2 { font-family: 'Philosopher', serif; color: var(--petrol); font-size: 24px; font-weight: 700;
+                 margin: 0 0 6px; text-align: center; }
+  #oel_form .oel_sub { text-align: center; font-size: 15px; color: var(--petrol); margin: 0 0 20px; opacity: 0.9; }
+  #oel_form label { display: block; font-weight: 700; color: var(--petrol); margin: 0 0 6px; font-size: 15px; }
+  #oel_form input[type="text"], #oel_form input[type="email"] {
+      display: block; width: 100%; background: var(--creme); border: 1.5px solid rgba(41,85,109,0.18);
+      border-radius: 10px; padding: 13px; font-size: 15px; margin: 0 0 16px; font-family: inherit; }
+  #oel_form input::placeholder { color: #8a94a0; }
+  #oel_form .oel_consent { display: flex; align-items: flex-start; gap: 10px; margin: 4px 0 20px; }
+  #oel_form .oel_consent input { margin-top: 3px; width: 18px; height: 18px; flex-shrink: 0; }
+  #oel_form .oel_consent label { font-weight: 400; font-size: 13px; line-height: 1.55; color: var(--dark); margin: 0; }
+  #oel_form button { width: 100%; background: var(--orange); color: #fff; font-weight: 700; font-size: 17px;
+      padding: 16px; border: 0; border-radius: 14px; cursor: pointer; letter-spacing: 0.3px;
+      transition: transform 0.12s ease, box-shadow 0.2s ease; }
+  #oel_form button:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(220,130,46,0.4); }
+  .fallback { text-align: center; margin: 26px auto 0; font-size: 14px; color: var(--petrol); }
+  .fallback a { color: var(--orange); font-weight: 700; text-decoration: none; }
+  .hinweis { text-align: center; font-size: 12px; color: var(--petrol); opacity: 0.75; margin: 12px 0 0; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <span class="kicker">Kostenlos · 7 Tage</span>
+      <h1>Deine Öl-Pröbchen — und ich begleite dich durch jeden Tag</h1>
+      <p class="lead">Kein Fläschchen, das ungenutzt in der Schublade landet.</p>
+      <p class="sub">Trag dich ein, und ab morgen bekommst du jeden Morgen eine kleine, machbare Etappe —
+        wir entdecken deine Öle zusammen, ganz in Ruhe, eins nach dem anderen. 🌿</p>
+    </div>
+
+    <ul class="tage">
+      <li><span class="t">Tag 1</span> Ankommen &amp; dein erstes Öl richtig erleben</li>
+      <li><span class="t">Tag 2</span> Frische &amp; Energie am Morgen</li>
+      <li><span class="t">Tag 3</span> Ein Moment Klarheit im Alltags-Trubel</li>
+      <li><span class="t">Tag 4</span> Abends bewusst runterfahren</li>
+      <li><span class="t">Tag 5</span> Ein Wohlfühl-Moment nur für dich</li>
+      <li><span class="t">Tag 6</span> Deine Öle im Familien-Alltag</li>
+      <li><span class="t">Tag 7</span> Deine kleine Routine — die bleibt</li>
+    </ul>
+
+    <!-- ===== AC-Formular (Platzhalter ersetzen) ===== -->
+    <form method="POST" action="https://mumlifebalance.activehosted.com/proc.php" id="oel_form" novalidate>
+      <input type="hidden" name="u" value="{{AC_FORM_ID}}" />
+      <input type="hidden" name="f" value="{{AC_FORM_ID}}" />
+      <input type="hidden" name="s" />
+      <input type="hidden" name="c" value="0" />
+      <input type="hidden" name="m" value="0" />
+      <input type="hidden" name="act" value="sub" />
+      <input type="hidden" name="v" value="2" />
+      <input type="hidden" name="or" value="{{AC_ORG_TOKEN}}" />
+
+      <h2>Ja, ich hol mir meinen Begleiter</h2>
+      <p class="oel_sub">Danach öffnet sich dein Begleiter direkt auf Telegram.</p>
+
+      <label for="oel_fullname">Vorname</label>
+      <input type="text" id="oel_fullname" name="fullname" placeholder="Wie heisst du?" required />
+
+      <label for="oel_email">E-Mail</label>
+      <input type="email" id="oel_email" name="email" placeholder="Deine E-Mail-Adresse" required />
+
+      <input type="hidden" name="field[1][]" value="~|">
+      <div class="oel_consent">
+        <input id="oel_consent" type="checkbox" name="field[1][]"
+               value="Ich möchte Patricias E-Mails mit Wissen und Angeboten rund ums Wohlfühlen mit ätherischen Ölen erhalten. Ich kann mich jederzeit abmelden." checked>
+        <label for="oel_consent">Ich möchte Patricias E-Mails rund ums Wohlfühlen mit ätherischen Ölen erhalten. Ich kann mich jederzeit abmelden.</label>
+      </div>
+
+      <button type="submit">Meinen Öl-Begleiter starten 🌿</button>
+      <p class="hinweis">Kostenlos &amp; jederzeit abbestellbar.</p>
+    </form>
+
+    <p class="fallback">Es öffnet sich nichts?
+      <a href="{{BOT_LINK}}" target="_blank" rel="noopener">Hier direkt zum Öl-Begleiter auf Telegram →</a>
+    </p>
+  </div>
+</body>
+</html>

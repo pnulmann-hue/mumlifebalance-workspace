@@ -34,6 +34,10 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 - [[README]]
 - [[leadmagnet-komplett]]
 
+### 📁 oel-begleiter
+
+- [[SETUP]]
+
 ### 📁 zentrale-pitch-automation
 
 - [[ac-ist-zustand]]

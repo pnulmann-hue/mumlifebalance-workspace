@@ -361,6 +361,49 @@
     ,
 
     {
+      "id": "oel-begleiter",
+      "name": "doTERRA Öl-Begleiter — 7-Tage-Sample-Companion",
+      "status": "gebaut-offen-deploy",
+      "profile": "doterra",
+      "typ": "0€ KI-Tool · 7-Tage-Telegram-Begleiter fürs Öle-Testen",
+      "preis_chf": 0,
+      "zielgruppe": "Menschen, die ein Öl-Pröbchen (Sample) von Patricia bekommen haben",
+      "problem": "Sample bleibt ungenutzt in der Schublade → kein Erlebnis, kein Anschluss",
+      "transformation": "Pröbchen liegen lassen → 7 Tage begleitet ausprobieren → eigene Mini-Routine → Hausapotheke",
+
+      "traffic_quellen": {
+        "biolink_landing": "https://mumlifebalance.ch/oel-begleiter (Draft, via /wp)",
+        "telegram_bot": "https://t.me/DEIN_OEL_BOT (Platzhalter — BotFather-Token offen)",
+        "manychat_keyword": "ÖLE (optional, analog ENERGIE)"
+      },
+
+      "ac_integration": {
+        "liste_id": 18,
+        "list_name": "doTERRA Interessenten",
+        "form": "neu anzulegen (oder Form 64 duplizieren) → Redirect auf Bot",
+        "tags": {
+          "oel_sample_lead": "NEU anzulegen",
+          "energie_kickstart": 84
+        }
+      },
+
+      "produkttreppe_anschluss": [
+        { "stufe": "Werde Hausapothekerin", "produkt": "10 Öle + Workbook", "preis": "doTERRA-Provision", "brücke": "Tag 7 · Keyword HAUSAPOTHEKE" }
+      ],
+
+      "assets_code": "scripts/oel-begleiter/",
+      "assets_funnel": "outputs/funnels/oel-begleiter/",
+      "offen": ["BotFather-Token", "Supabase-Companion-Keys", "AC-Formular anlegen", "Railway-Deploy", "Landing via /wp publishen"],
+
+      "content_hinweise": {
+        "pillar": "Zurück zu deiner Energie",
+        "primaer_keyword": "ÖLE",
+        "hausapotheke_trio_beispiel": ["Lavendel", "Pfefferminz", "Zitrone"]
+      }
+    }
+    ,
+
+    {
       "id": "mama-ceo",
       "name": "Mama-CEO — Möglichkeit schaffen, Business neben Familie aufzubauen",
       "status": "pilot-laeuft-und-solo-verkauf",
