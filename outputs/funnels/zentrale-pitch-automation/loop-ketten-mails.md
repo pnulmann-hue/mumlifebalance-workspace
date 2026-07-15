@@ -2,37 +2,36 @@
 tags: [funnel, mba, pitch-automation, intern]
 ---
 
-# 🔁 Loop-Ketten 03–07 — Mail-Texte (Julias Endlos-Kette)
+# 🔁 Loop 2–6 — Mail-Texte (Julias Endlos-Kette)
 
-## 📍 Wo bin ich? Die ganze Kette 01–07 auf einen Blick
+## 📍 Die ganze Kette 1–6 auf einen Blick
 
-**01 und 02 fehlen hier nicht — das ist die Kern-Engine, die schon gebaut ist.** Die Nummerierung folgt Julias System (Automation 01, 02, 03 …), der Kontakt läuft durchgehend 01 → 07:
+**Nummerierung = wie tatsächlich gebaut (Stand 2026-07-14).** Jeder Loop ist eine eigene Automation; am Ende übergibt sie per Tag an die nächste:
 
-| # | Kette | Mails | Wo | Status |
+| # | Loop | Mails | Wo | Status |
 |---|---|---|---|---|
-| **01** | Brücke + MBA-Track | E1 · E2 · M1–M5 | **in Automation 72** | ✅ Text + Brand-HTML fertig → [[sichtbarkeit-engine-FINAL]] |
-| **02** | Downsell (3 Türen) | D1 | **in Automation 72** | ✅ Text + Brand-HTML fertig → [[sichtbarkeit-engine-FINAL]] |
-| **03** | Expertin statt Verkäuferin (97) | 3 | eigene Automation | Text fertig (unten) |
-| **04** | MBA-Webinar (Replay) | 5 | eigene Automation | Text fertig (unten) · Webinar noch aufzunehmen |
-| **05** | Digitale Produktwelt (333) | 3 | eigene Automation | Text fertig (unten) |
-| **06** | Mama-CEO (333) | 3 | eigene Automation | Text fertig (unten) |
-| **07** | MBA Re-Pitch | 3 | eigene Automation | Text fertig (unten) |
+| **1** | Brücke + MBA-Track + Downsell | E1 · E2 · M1–M5 · D1 (8) | **Automation 72 „Automation 0€ Produkt"** | ✅ **LIVE GEBAUT** → [[sichtbarkeit-engine-FINAL]] |
+| **2** | Expertin statt Verkäuferin (97) | 3 | eigene Automation · Trigger **Tag 89** | Text fertig (unten) |
+| **3** | MBA-Webinar (Replay) | 5 | eigene Automation | Text fertig (unten) · Webinar noch aufzunehmen |
+| **4** | Digitale Produktwelt (333) | 3 | eigene Automation | Text fertig (unten) |
+| **5** | Mama-CEO (333) | 3 | eigene Automation | Text fertig (unten) |
+| **6** | MBA Re-Pitch | 3 | eigene Automation | Text fertig (unten) → danach Dauer-Newsletter |
 
-> 01 + 02 liegen bewusst zusammen in **einer** Automation (72), weil „Runs: Once" dort schon das Doppel-Problem löst. Ab 03 ist jede Kette eine eigene Automation — dann greift Julias „schon in einer anderen Kette? → überspringen"-Regel.
+> **Loop 1 liegt bewusst komplett in einer Automation**, weil „Läuft: Einmal" dort das Doppel-Problem schon löst. Ab Loop 2 ist jede Kette eine eigene Automation — dann greift Julias „schon in einer anderen Kette? → überspringen"-Regel.
 
 ---
 
-> Fortsetzung von [[sichtbarkeit-engine-FINAL]]. Wer 01 + 02 ohne Kauf durchlaufen hat (Tag `Engine Pitch ohne Kauf` 89), läuft durch die Ketten 03–07 — je 1 Produkt, 3–5 Mails, 1 Tag Abstand, dann die nächste.
+> Fortsetzung von [[sichtbarkeit-engine-FINAL]]. Wer Loop 1 ohne Kauf durchlaufen hat, kriegt am Ende Tag `Engine Pitch ohne Kauf` (89) — der startet Loop 2. Danach läuft sie durch 3 → 4 → 5 → 6, je 1 Produkt, 3–5 Mails, 1–2 Tage Abstand.
 > **2 Schutzregeln pro Kette (Julia-Pflicht):** (1) Produkt-Kauf-Ziel → raus. (2) „schon in anderer Kette? → überspringen" (kein Doppel).
 > Blacklist-geprüft: keine Stakkato, kein „Kennst du das", kein „6-stellig", kein Mentorin-Name, keine erfundenen Zahlen, Schweizer ss, Kundenebene geschlechtsneutral.
 > Links: Expertin `…/expertin/` · DPW `…/digitale-produktwelt/` · Mama-CEO `…/mama-ceo/` · MBA `mumlifebalance.ch/mba/` · Webinar `[WEBINAR-REPLAY-LINK]` (nimmt Patricia noch auf).
 
 ---
 
-## KETTE 03 — Expertin statt Verkäuferin (97) · 3 Mails
-**Exit:** Kauf „Expertin".
+## LOOP 2 — Expertin statt Verkäuferin (97) · 3 Mails
+**Trigger:** Tag 89 „Engine Pitch ohne Kauf" · **Exit:** Kauf „Expertin" · **Ende:** Tag → startet Loop 3
 
-### Mail 03-1
+### Mail 2-1
 **Betreff A:** Fühlst du dich manchmal wie eine Verkäuferin?
 **Betreff B:** Der Unterschied zwischen pushen und empfohlen werden
 **Preheader:** Warum die Leute bei den einen kaufen — und bei den anderen wegscrollen.
@@ -50,7 +49,7 @@ Patricia
 
 **CTA-Button:** Expertin werden statt verkaufen → https://mumlifebalance.thrivecart.com/expertin/
 
-### Mail 03-2
+### Mail 2-2
 **Betreff A:** „Seit ich das geändert hab, geht mein Account ab"
 **Betreff B:** Nicht das Produkt hat verkauft — die Haltung
 **Preheader:** Was sich ändert, wenn du aufhörst zu pitchen.
@@ -68,7 +67,7 @@ Patricia
 
 **CTA-Button:** Zur Expertin-Positionierung → https://mumlifebalance.thrivecart.com/expertin/
 
-### Mail 03-3
+### Mail 2-3
 **Betreff A:** Bevor du weiterscrollst
 **Betreff B:** Der günstigste Weg raus aus dem Verkäuferinnen-Gefühl
 **Preheader:** Kleiner Schritt, grosse Wirkung.
@@ -86,10 +85,10 @@ Patricia
 
 ---
 
-## KETTE 04 — MBA-Webinar (Replay) · 3 Einladung + 2 Pitch = 5 Mails
-**Exit:** Tag `mba-kauf` (79). Webinar-Link = `[WEBINAR-REPLAY-LINK]` (sobald aufgenommen).
+## LOOP 3 — MBA-Webinar (Replay) · 3 Einladung + 2 Pitch = 5 Mails
+**Exit:** Tag `mba-kauf` (79) · **Ende:** Tag → startet Loop 4. Webinar-Link = `[WEBINAR-REPLAY-LINK]` (sobald aufgenommen).
 
-### Mail 04-1 · Einladung
+### Mail 3-1 · Einladung
 **Betreff A:** Ich hab das ganze System in ein Video gepackt
 **Betreff B:** Einmal alles zusammen — in unter einer Stunde
 **Preheader:** Wie die vier Teile bei dir ineinandergreifen.
@@ -105,7 +104,7 @@ Patricia
 
 **CTA-Button:** Video jetzt ansehen → [WEBINAR-REPLAY-LINK]
 
-### Mail 04-2 · Einladung
+### Mail 3-2 · Einladung
 **Betreff A:** Die drei Dinge, die im Video Klick machen
 **Betreff B:** Warum es nicht an dir liegt, dass es stockt
 **Preheader:** Kurz, warum sich das Anschauen lohnt.
@@ -125,7 +124,7 @@ Patricia
 
 **CTA-Button:** Zum Video → [WEBINAR-REPLAY-LINK]
 
-### Mail 04-3 · Einladung (letzte)
+### Mail 3-3 · Einladung (letzte)
 **Betreff A:** Noch nicht geschaut?
 **Betreff B:** Das Video läuft noch die nächsten Tage
 **Preheader:** Danach nehm ich es wieder offline.
@@ -141,7 +140,7 @@ Patricia
 
 **CTA-Button:** Jetzt ansehen, bevor es weg ist → [WEBINAR-REPLAY-LINK]
 
-### Mail 04-4 · Pitch
+### Mail 3-4 · Pitch
 **Betreff A:** Und wenn du sagst „genau das will ich"
 **Betreff B:** Der nächste Schritt nach dem Video
 **Preheader:** Alles zusammen, in der richtigen Reihenfolge.
@@ -157,7 +156,7 @@ Patricia
 
 **CTA-Button:** Die Academy ansehen → https://mumlifebalance.ch/mba/
 
-### Mail 04-5 · Pitch
+### Mail 3-5 · Pitch
 **Betreff A:** Was dich wirklich aufhält
 **Betreff B:** Nicht das Wissen fehlt dir
 **Preheader:** Sondern der Rahmen, es zu tun.
@@ -175,10 +174,10 @@ Patricia
 
 ---
 
-## KETTE 05 — Digitale Produktwelt (333) · 3 Mails
-**Exit:** Kauf „Digitale Produktwelt".
+## LOOP 4 — Digitale Produktwelt (333) · 3 Mails
+**Exit:** Kauf „Digitale Produktwelt" · **Ende:** Tag → startet Loop 5
 
-### Mail 05-1
+### Mail 4-1
 **Betreff A:** Dein Wissen verkauft — auch wenn du grad am Spielplatz bist
 **Betreff B:** Warum du dein Können in ein Produkt packen solltest
 **Preheader:** Einmal erstellen, immer wieder verkaufen.
@@ -194,7 +193,7 @@ Patricia
 
 **CTA-Button:** Eigenes Produkt aufbauen → https://mumlifebalance.thrivecart.com/digitale-produktwelt/
 
-### Mail 05-2
+### Mail 4-2
 **Betreff A:** „Aber ich hab doch schon ein Network"
 **Betreff B:** Warum ein eigenes Produkt dein Network stärker macht
 **Preheader:** Das eine schliesst das andere nicht aus.
@@ -210,7 +209,7 @@ Patricia
 
 **CTA-Button:** Zur Digitalen Produktwelt → https://mumlifebalance.thrivecart.com/digitale-produktwelt/
 
-### Mail 05-3
+### Mail 4-3
 **Betreff A:** Der Gedanke, den die meisten wegschieben
 **Betreff B:** „Wer soll das ausgerechnet von mir kaufen?"
 **Preheader:** Genau das klären wir zuerst.
@@ -228,10 +227,10 @@ Patricia
 
 ---
 
-## KETTE 06 — Mama-CEO (333) · 3 Mails
-**Exit:** Kauf „Mama-CEO".
+## LOOP 5 — Mama-CEO (333) · 3 Mails
+**Exit:** Kauf „Mama-CEO" · **Ende:** Tag → startet Loop 6
 
-### Mail 06-1
+### Mail 5-1
 **Betreff A:** Du weisst genau, was du tun müsstest
 **Betreff B:** Und kommst dann doch nie dazu
 **Preheader:** Es liegt nicht an deiner Disziplin.
@@ -247,7 +246,7 @@ Patricia
 
 **CTA-Button:** Zeit fürs Business schaffen → https://mumlifebalance.thrivecart.com/mama-ceo/
 
-### Mail 06-2
+### Mail 5-2
 **Betreff A:** Mein KI-Team arbeitet, während ich Mama bin
 **Betreff B:** Wie ich mit rund 18 Stunden Woche keinen Monat ohne Verkauf hab
 **Preheader:** Kein Hexenwerk — ein System.
@@ -263,7 +262,7 @@ Patricia
 
 **CTA-Button:** Mein KI-System aufbauen → https://mumlifebalance.thrivecart.com/mama-ceo/
 
-### Mail 06-3
+### Mail 5-3
 **Betreff A:** Die Lösung ist nicht „mehr schaffen"
 **Betreff B:** Sondern weniger selber machen
 **Preheader:** Der letzte Gedanke zum Thema Zeit.
@@ -281,10 +280,10 @@ Patricia
 
 ---
 
-## KETTE 07 — MBA Re-Pitch · 3 Mails
-**Exit:** Tag `mba-kauf` (79). Danach → Dauer-Newsletter + Launch-Pitches an die ganze Liste.
+## LOOP 6 — MBA Re-Pitch · 3 Mails
+**Exit:** Tag `mba-kauf` (79) · **Ende:** → Dauer-Newsletter + Launch-Pitches an die ganze Liste.
 
-### Mail 07-1
+### Mail 6-1
 **Betreff A:** Erinnerst du dich an die Academy?
 **Betreff B:** Alles, was ich dir einzeln gezeigt hab — an einem Ort
 **Preheader:** Der rote Faden, der alles verbindet.
@@ -300,7 +299,7 @@ Patricia
 
 **CTA-Button:** Die Academy ansehen → https://mumlifebalance.ch/mba/
 
-### Mail 07-2
+### Mail 6-2
 **Betreff A:** Was nach ein paar Wochen anders ist
 **Betreff B:** Von „paar hundert im Monat" zu planbar
 **Preheader:** Kein Wunder, sondern Reihenfolge.
@@ -316,7 +315,7 @@ Patricia
 
 **CTA-Button:** Pioneer-Platz sichern → https://mumlifebalance.ch/mba/
 
-### Mail 07-3
+### Mail 6-3
 **Betreff A:** Ich lass dich damit erstmal in Ruhe — versprochen
 **Betreff B:** Der ehrliche letzte Anstoss
 **Preheader:** Danach nur noch, wenn du willst.

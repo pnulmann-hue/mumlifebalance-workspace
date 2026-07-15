@@ -300,15 +300,15 @@ Wer den MBA-Track + Downsell ohne Kauf durchlaufen hat (Tag `Engine Pitch ohne K
 1. **Kauf-Ziel** → Produkt-Kauf-Tag erreicht → raus aus der Kette (kein weiterer Pitch für das, was sie schon hat).
 2. **Kein Doppel:** „ist Kontakt schon in einer anderen Kette? → überspringen." Verhindert, dass jemand in 2 Ketten gleichzeitig Mails kriegt.
 
-> **Nummerierung:** **Kette 01 = Brücke + MBA-Track** (E1·E2·M1–M5) und **Kette 02 = Downsell** (D1) — beide stecken in Automation 72 und sind oben schon beschrieben. Die Kette läuft durchgehend 01 → 07.
+> **Nummerierung (= wie gebaut):** **Loop 1 = Automation 72** — Brücke + MBA-Track + Downsell (8 Mails), oben beschrieben, ✅ live. Ab Loop 2 ist jede Kette eine **eigene Automation**, Start jeweils per Übergabe-Tag. Texte: [[loop-ketten-mails]].
 
-| # | Kette (Produkt) | Mails | Winkel |
+| # | Loop (Produkt) | Mails | Winkel |
 |---|---|---|---|
-| **03** | Expertin statt Verkäuferin (97) | 3 | „Du kennst dein Thema — aber verkaufst dich drunter / fühlst dich wie Verkäuferin." → Positionierung als Expertin |
-| **04** | MBA-Webinar (Replay) | 3 Einladung + 2 Pitch | Julias Webinar-Brücke: 3× ins Replay einladen → 2× MBA nachpitchen. Re-Anker aufs grosse Produkt |
-| **05** | Digitale Produktwelt (333) | 3–4 | „Aus deinem Wissen ein eigenes Produkt, das auch verkauft, wenn du grad Mama bist." |
-| **06** | Mama-CEO (333) | 3–4 | „Die Zeit + das KI-System, damit dein Business in deine Stunden passt." |
-| **07** | MBA-Komplett (Re-Pitch) | 3 | „Alles zusammen + Begleitung" — periodischer Flagship-Re-Pitch (Julia streut das grosse Produkt immer wieder ein) |
+| **2** | Expertin statt Verkäuferin (97) · Trigger **Tag 89** | 3 | „Du kennst dein Thema — aber fühlst dich wie eine Verkäuferin." → Positionierung als Expertin |
+| **3** | MBA-Webinar (Replay) | 3 Einladung + 2 Pitch | Julias Webinar-Brücke: 3× ins Replay einladen → 2× MBA nachpitchen. Re-Anker aufs grosse Produkt |
+| **4** | Digitale Produktwelt (333) | 3 | „Aus deinem Wissen ein eigenes Produkt, das auch verkauft, wenn du grad Mama bist." |
+| **5** | Mama-CEO (333) | 3 | „Die Zeit + das KI-System, damit dein Business in deine Stunden passt." |
+| **6** | MBA-Komplett (Re-Pitch) | 3 | „Alles zusammen + Begleitung" — periodischer Flagship-Re-Pitch (Julia streut das grosse Produkt immer wieder ein) |
 
 **Danach:** Übergang in den **Dauer-Newsletter** (Julia: 90 % Beziehung, jede Mail 1 Link) + **Pitch an die ganze Liste bei jedem Launch/jeder Aktion**. Quartalsweise Nicht-Öffner reaktivieren + Karteileichen raus (Zustellbarkeit + AC-Kosten). Wer irgendwo kauft → steigt aus, kein Neustart von vorn.
 
