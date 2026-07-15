@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Freischaufeln — dein Business-Fenster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--petrol:#12828c;--dunkelblau:#29556d;--creme:#f1ecdd;--text:#0c1c30;--weg:#c0603a;--deleg:#dc822e;--zus:#3f7d86;--behalt:#2f8f6b;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:var(--creme);font-family:"Source Sans 3",sans-serif;color:var(--text);line-height:1.5;}
+    .wrap{max-width:680px;margin:0 auto;padding:28px 20px 80px;}
+    header{text-align:center;margin-bottom:26px;}
+    header .eyebrow{font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--petrol);font-size:14px;}
+    header h1{font-family:"Philosopher";font-weight:700;font-size:40px;color:var(--dunkelblau);line-height:1.1;margin-top:6px;}
+    header p{color:var(--text);opacity:.85;margin-top:8px;font-size:17px;}
+    .steps{display:flex;gap:8px;justify-content:center;margin:22px 0 26px;}
+    .steps .dot{width:34px;height:6px;border-radius:3px;background:rgba(41,85,109,.2);}
+    .steps .dot.on{background:var(--petrol);}
+    .card{background:#fff;border-radius:20px;padding:26px 22px;box-shadow:0 10px 30px rgba(12,28,48,.08);margin-bottom:18px;}
+    h2{font-family:"Philosopher";font-weight:700;font-size:26px;color:var(--dunkelblau);margin-bottom:6px;}
+    .lead{color:var(--text);opacity:.9;margin-bottom:18px;}
+    label{display:block;font-weight:600;margin:16px 0 6px;}
+    select,input[type=text]{width:100%;padding:13px 14px;border:1.5px solid rgba(41,85,109,.25);border-radius:12px;font-size:16px;font-family:inherit;background:#fff;color:var(--text);}
+    select:focus,input:focus{outline:none;border-color:var(--petrol);}
+    .kid-row{display:flex;gap:8px;margin-bottom:8px;align-items:center;}
+    .kid-row select{flex:1;}
+    .btn{display:inline-block;width:100%;padding:15px 20px;border:none;border-radius:14px;background:var(--petrol);color:#fff;font-size:17px;font-weight:700;font-family:inherit;cursor:pointer;margin-top:22px;transition:transform .05s;}
+    .btn:active{transform:scale(.99);}
+    .btn:disabled{opacity:.5;cursor:default;}
+    .btn.ghost{background:transparent;color:var(--petrol);border:1.5px solid var(--petrol);}
+    .btn.small{width:auto;padding:9px 16px;font-size:14px;margin-top:0;}
+    .link-add{background:none;border:none;color:var(--petrol);font-weight:700;font-family:inherit;font-size:15px;cursor:pointer;padding:6px 0;}
+    .task{display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:1px solid rgba(41,85,109,.1);}
+    .task input[type=checkbox]{width:22px;height:22px;accent-color:var(--petrol);flex-shrink:0;}
+    .task .name{flex:1;font-size:16px;}
+    .task.off .name{opacity:.4;text-decoration:line-through;}
+    .badge{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:20px;flex-shrink:0;}
+    .badge.sichtbar{background:#dfeef0;color:var(--zus);}
+    .badge.mental{background:#fbeede;color:var(--deleg);}
+    .badge.emotional{background:#f6e2da;color:var(--weg);}
+    .badge.hut{background:#e9e3f2;color:#6b4fa0;}
+    .hut-info{background:#f3eff8;border-left:4px solid #6b4fa0;border-radius:0 12px 12px 0;padding:14px 18px;font-size:14.5px;line-height:1.6;margin:2px 0 18px;color:var(--text);}
+    .hut-info strong{color:#6b4fa0;}
+    .task .del{background:none;border:none;color:rgba(12,28,48,.35);font-size:20px;cursor:pointer;flex-shrink:0;}
+    .cat-item{padding:14px 0;border-bottom:1px solid rgba(41,85,109,.1);}
+    .cat-item .cname{font-weight:600;margin-bottom:8px;}
+    .cat-item .vorschlag{font-size:14px;opacity:.75;margin-top:6px;}
+    .cat-select{width:100%;}
+    .fenster{background:var(--petrol);color:#fff;border-radius:18px;padding:24px;margin:18px 0;}
+    .fenster .k{font-weight:700;letter-spacing:.15em;text-transform:uppercase;font-size:13px;opacity:.85;}
+    .fenster .big{font-family:"Philosopher";font-weight:700;font-size:34px;margin:6px 0 10px;line-height:1.1;}
+    .fenster .schutz{font-size:15px;opacity:.95;}
+    .block-list li,.plain-list li{list-style:none;padding:10px 0;border-bottom:1px solid rgba(41,85,109,.1);font-size:16px;}
+    .block-list .bt{font-weight:700;color:var(--dunkelblau);}
+    .sec-title{font-weight:700;color:var(--petrol);letter-spacing:.05em;text-transform:uppercase;font-size:13px;margin:20px 0 4px;}
+    .schluss{font-size:17px;line-height:1.55;margin:18px 0;}
+    .cta-box{background:var(--creme);border-radius:16px;padding:22px;margin-top:20px;text-align:center;}
+    .cta-box p{margin-bottom:6px;}
+    .loading{text-align:center;padding:34px 0;color:var(--petrol);font-weight:600;}
+    .spinner{width:38px;height:38px;border:4px solid rgba(18,130,140,.2);border-top-color:var(--petrol);border-radius:50%;margin:0 auto 14px;animation:spin 1s linear infinite;}
+    @keyframes spin{to{transform:rotate(360deg);}}
+    .err{background:#f6e2da;color:var(--weg);border-radius:12px;padding:14px;margin-top:14px;font-weight:600;text-align:center;}
+    .hide{display:none;}
+    footer{text-align:center;margin-top:28px;font-size:13px;color:rgba(12,28,48,.5);}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Freischaufeln</div>
+      <h1>Dein Business-Fenster</h1>
+      <p id="hello">In 10 Minuten aus deinem Familien-Chaos ein echtes Zeitfenster fürs Business — ohne dass zuhause etwas liegen bleibt.</p>
+    </header>
+
+    <div class="steps"><div class="dot on" id="d1"></div><div class="dot" id="d2"></div><div class="dot" id="d3"></div></div>
+
+    <!-- SCHRITT 0 — INTAKE -->
+    <section id="intake" class="card">
+      <h2>Erst mal kurz zu dir 💛</h2>
+      <p class="lead">Damit ich deinen Alltag treffe — 30 Sekunden, dann geht's los.</p>
+
+      <label>Deine Kinder</label>
+      <div id="kids"></div>
+      <button class="link-add" id="addKid">+ Kind hinzufügen</button>
+
+      <label for="partner">Dein Partner ist …</label>
+      <select id="partner">
+        <option value="kein">kein Partner / alleinerziehend</option>
+        <option value="wenig eingebunden">wenig eingebunden</option>
+        <option value="teils eingebunden" selected>teils eingebunden</option>
+        <option value="stark eingebunden">stark eingebunden</option>
+      </select>
+
+      <label for="pensum">Arbeitest du daneben noch?</label>
+      <select id="pensum">
+        <option value="kein Job">nein, kein Job daneben</option>
+        <option value="Teilzeit" selected>Teilzeit</option>
+        <option value="Vollzeit">Vollzeit</option>
+      </select>
+
+      <label for="stunden">Wie viele Stunden pro Woche willst du fürs Business?</label>
+      <select id="stunden">
+        <option value="2">ca. 2 Stunden</option>
+        <option value="3">ca. 3 Stunden</option>
+        <option value="4" selected>ca. 4 Stunden</option>
+        <option value="5">ca. 5 Stunden</option>
+        <option value="6">6+ Stunden</option>
+      </select>
+
+      <button class="btn" id="startBtn">Los geht's →</button>
+    </section>
+
+    <!-- SCHRITT 1 — KLARHEIT -->
+    <section id="step1" class="card hide">
+      <div class="loading" id="load1"><div class="spinner"></div>Ich schau mir deine Woche an …</div>
+      <div id="body1" class="hide">
+        <h2>Schritt 1: deine Woche</h2>
+        <p class="lead" id="intro1"></p>
+        <div class="hut-info">🎩 <strong>Was ist ein „Hut"?</strong> Das sind die Rollen, die du neben Mama + Haushalt noch trägst — z. B. als Vereinsmitglied, im Ehrenamt, als Freundin oder in der Pflege deiner Eltern. Frag dich bei jedem ehrlich: Muss das wirklich sein? Könnte es jemand übernehmen? Und: Gibt es mir mehr, als es mich an Zeit fürs Business kostet?</div>
+        <div id="taskList"></div>
+        <div style="display:flex;gap:8px;margin-top:12px;">
+          <input type="text" id="newTask" placeholder="Eigene Aufgabe ergänzen …" />
+          <button class="btn small" id="addTaskBtn" style="margin-top:0;">+</button>
+        </div>
+        <button class="btn" id="toStep2">Weiter zum Halbieren →</button>
+      </div>
+    </section>
+
+    <!-- SCHRITT 2 — HALBIEREN -->
+    <section id="step2" class="card hide">
+      <div class="loading" id="load2"><div class="spinner"></div>Ich halbiere mit dir …</div>
+      <div id="body2" class="hide">
+        <h2>Schritt 2: halbieren</h2>
+        <p class="lead">Mein Vorschlag pro Aufgabe — ändere frei, du hast das letzte Wort.</p>
+        <div id="catList"></div>
+        <button class="btn" id="toStep3">Weiter zu deinem Fenster →</button>
+      </div>
+    </section>
+
+    <!-- SCHRITT 3 — ERGEBNIS -->
+    <section id="result" class="card hide">
+      <div class="loading" id="load3"><div class="spinner"></div>Ich schaufle dein Business-Fenster frei …</div>
+      <div id="body3" class="hide">
+        <h2>Deine neue Woche 🎉</h2>
+        <div class="fenster">
+          <div class="k">Dein Business-Fenster</div>
+          <div class="big" id="fensterBig"></div>
+          <div class="schutz" id="fensterSchutz"></div>
+        </div>
+        <div class="sec-title">🏠 Feste Haushalts-Blöcke</div>
+        <ul class="block-list" id="bloecke"></ul>
+        <div class="sec-title">🙌 Delegiert / vereinfacht</div>
+        <ul class="plain-list" id="deleg"></ul>
+        <div class="sec-title">❌ Darf weg</div>
+        <ul class="plain-list" id="weg"></ul>
+        <p class="schluss" id="schluss"></p>
+        <div class="cta-box" id="ctaBox">
+          <p><strong>Ehrlich? Das war jetzt ein schneller Anfang</strong> — das, was man in knapp 10 Minuten grob auf eine Liste bringt. 😊</p>
+          <p>Wenn du wirklich tiefer einsteigen willst — dir <strong>dauerhaft</strong> Zeit schaffen, raus aus dem Hamsterrad, echte Struktur reinbringen und dir sogar einen KI-Mitarbeiter aufbauen, der dir den Adminkram abnimmt — dann gehen wir genau das Schritt für Schritt in <strong>Mama-CEO</strong> durch.</p>
+          <a class="btn" id="ctaBtn" href="#">Schau dir Mama-CEO an →</a>
+        </div>
+      </div>
+      <div id="err3"></div>
+    </section>
+
+    <footer>Freischaufeln · Mum Life Balance</footer>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const EMAIL = params.get('e') || '';
+    const NAME = params.get('n') || '';
+    // Ziel-Link fürs Ende → Mama-CEO-Salespage (live, geprüft 6.7.). Der tiefere Zeit/Struktur-Kurs,
+    // führt eh in die MBA. Für einen Zeit-Minikurs später einfach hier die URL tauschen.
+    const CTA_URL = 'https://www.mumlifebalance.ch/mama-ceo';
+    const CTA_TAG = 'mba';
+
+    if (NAME) document.getElementById('hello').innerHTML =
+      `Schön, dass du da bist, <strong>${NAME}</strong>! In 10 Minuten aus deinem Familien-Chaos ein echtes Zeitfenster fürs Business.`;
+
+    const state = { intake:{}, tasks:[], categories:[], result:null };
+    const $ = (id) => document.getElementById(id);
+    const show = (id) => $(id).classList.remove('hide');
+    const hide = (id) => $(id).classList.add('hide');
+    function markStep(n){ ['d1','d2','d3'].forEach((d,i)=>$(d).classList.toggle('on', i<n)); }
+
+    // ---- Kinder-Rows ----
+    const AGE = ['Baby','Kleinkind','Kindergarten','Schulkind','Teenie'];
+    function addKidRow(sel='Kleinkind'){
+      const row=document.createElement('div'); row.className='kid-row';
+      const s=document.createElement('select');
+      AGE.forEach(a=>{const o=document.createElement('option');o.value=a;o.textContent=a;if(a===sel)o.selected=true;s.appendChild(o);});
+      const del=document.createElement('button'); del.className='task'; del.style.cssText='background:none;border:none;color:rgba(12,28,48,.35);font-size:22px;cursor:pointer;padding:0 6px;border-bottom:none;'; del.textContent='×';
+      del.onclick=()=>{ if($('kids').children.length>1) row.remove(); };
+      row.appendChild(s); row.appendChild(del); $('kids').appendChild(row);
+    }
+    addKidRow();
+    $('addKid').onclick=()=>addKidRow();
+
+    // ---- API ----
+    async function api(step){
+      const body={ step, intake:state.intake };
+      if(step===2) body.tasks=state.tasks.filter(t=>t.keep);
+      if(step===3) body.categories=state.categories;
+      for(let attempt=1; attempt<=2; attempt++){
+        const res=await fetch('/api/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+        if(res.ok) return res.json();
+        if(res.status===503||res.status===502){ await new Promise(r=>setTimeout(r,1500)); continue; }
+        throw new Error('Fehler');
+      }
+      throw new Error('Fehler');
+    }
+    async function tag(t){ try{ if(!EMAIL) return; await fetch('/api/tag',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:EMAIL,tag:t})}); }catch(e){} }
+
+    // ---- Schritt 0 → 1 ----
+    $('startBtn').onclick=async()=>{
+      const kinder=[...$('kids').querySelectorAll('select')].map(s=>({alter_gruppe:s.value}));
+      state.intake={ kinder, partner:$('partner').value, pensum:$('pensum').value, business_stunden_ziel:Number($('stunden').value) };
+      hide('intake'); show('step1'); markStep(2); window.scrollTo(0,0);
+      try{
+        const d=await api(1);
+        state.tasks=(d.aufgaben||[]).map(a=>({...a,keep:true}));
+        $('intro1').textContent=d.intro||'';
+        renderTasks(); hide('load1'); show('body1');
+      }catch(e){ $('load1').innerHTML='<div class="err">Hat nicht geklappt — lad die Seite neu und probier nochmal.</div>'; }
+    };
+
+    function renderTasks(){
+      const el=$('taskList'); el.innerHTML='';
+      state.tasks.forEach(t=>{
+        const row=document.createElement('div'); row.className='task'+(t.keep?'':' off');
+        const cb=document.createElement('input'); cb.type='checkbox'; cb.checked=t.keep;
+        cb.onchange=()=>{ t.keep=cb.checked; row.classList.toggle('off',!t.keep); };
+        const nm=document.createElement('div'); nm.className='name'; nm.textContent=t.name;
+        const bd=document.createElement('span'); bd.className='badge '+(t.load||'sichtbar'); bd.textContent=t.load||'';
+        const del=document.createElement('button'); del.className='del'; del.textContent='×';
+        del.onclick=()=>{ state.tasks=state.tasks.filter(x=>x!==t); renderTasks(); };
+        row.append(cb,nm,bd,del); el.appendChild(row);
+      });
+    }
+    $('addTaskBtn').onclick=()=>{
+      const v=$('newTask').value.trim(); if(!v) return;
+      const id=Math.max(0,...state.tasks.map(t=>t.id||0))+1;
+      state.tasks.push({id,name:v,load:'sichtbar',frequenz:'',keep:true}); $('newTask').value=''; renderTasks();
+    };
+
+    // ---- Schritt 1 → 2 ----
+    $('toStep2').onclick=async()=>{
+      const kept=state.tasks.filter(t=>t.keep); if(kept.length===0){ alert('Lass mindestens eine Aufgabe stehen 🙂'); return; }
+      hide('step1'); show('step2'); markStep(2); window.scrollTo(0,0);
+      try{
+        const d=await api(2);
+        // Sicherheitsnetz: aus ALLEN behaltenen Aufgaben aufbauen (nicht nur aus der KI-Antwort),
+        // damit garantiert keine verloren geht. KI-Vorschlag per id mergen; fehlt er → Default "behalten".
+        const byAi=Object.fromEntries((d.eintraege||[]).map(e=>[e.id,e]));
+        state.categories=kept.map(t=>{const e=byAi[t.id]||{};return {id:t.id,name:t.name,kategorie:e.kategorie||'behalten',vorschlag:e.vorschlag||''};});
+        renderCats(); hide('load2'); show('body2');
+      }catch(e){ $('load2').innerHTML='<div class="err">Hat nicht geklappt — bitte Seite neu laden.</div>'; }
+    };
+
+    const CATS=[['weg','❌ weg'],['delegieren','🙌 delegieren'],['zusammenlegen','📦 zusammenlegen'],['behalten','✅ behalten']];
+    function renderCats(){
+      const el=$('catList'); el.innerHTML='';
+      state.categories.forEach(c=>{
+        const item=document.createElement('div'); item.className='cat-item';
+        const nm=document.createElement('div'); nm.className='cname'; nm.textContent=c.name;
+        const sel=document.createElement('select'); sel.className='cat-select';
+        CATS.forEach(([v,l])=>{const o=document.createElement('option');o.value=v;o.textContent=l;if(v===c.kategorie)o.selected=true;sel.appendChild(o);});
+        sel.onchange=()=>c.kategorie=sel.value;
+        const vs=document.createElement('div'); vs.className='vorschlag'; vs.textContent=c.vorschlag||'';
+        item.append(nm,sel,vs); el.appendChild(item);
+      });
+    }
+
+    // ---- Schritt 2 → 3 ----
+    $('toStep3').onclick=async()=>{
+      hide('step2'); show('result'); markStep(3); window.scrollTo(0,0);
+      try{
+        const d=await api(3); state.result=d;
+        $('fensterBig').textContent=`${d.business_fenster?.tage||''} · ${d.business_fenster?.zeit||''}`;
+        $('fensterSchutz').textContent=d.business_fenster?.schutz||'';
+        $('bloecke').innerHTML=(d.haushalts_bloecke||[]).map(b=>`<li><span class="bt">${b.tag} · ${b.zeit} (${b.dauer})</span> — ${b.inhalt}</li>`).join('');
+        $('deleg').innerHTML=(d.delegier_liste||[]).map(x=>`<li>${x}</li>`).join('')||'<li>—</li>';
+        $('weg').innerHTML=(d.weg_liste||[]).map(x=>`<li>${x}</li>`).join('')||'<li>—</li>';
+        $('schluss').textContent=d.schluss||'';
+        $('ctaBtn').href=CTA_URL;
+        $('ctaBtn').onclick=()=>tag(CTA_TAG);
+        hide('load3'); show('body3');
+        tag('abgeschlossen');
+      }catch(e){ $('load3').innerHTML='<div class="err">Fast geschafft — lad die Seite neu und starte nochmal.</div>'; }
+    };
+  </script>
+</body>
+</html>

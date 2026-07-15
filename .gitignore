@@ -160,6 +160,10 @@ context/doTERRA/
 context/Instavideos/
 context/Kurse/
 
+# Buch-Volltext-Wissen (urheberrechtlich geschützt) — NUR lokal, nie public
+context/mentoring/wissen/
+context/persoenlich/wissen/
+
 # Komplette Shootingbilder-Ordner (ausser patricia-hero fuer Bot-Deploy in scripts/)
 context/Shootingbilder/
 

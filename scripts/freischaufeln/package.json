@@ -1,0 +1,19 @@
+{
+  "name": "freischaufeln",
+  "version": "1.0.0",
+  "description": "Freischaufeln — 0€-KI-Tool: Familien-Aufgaben halbieren und ein geschütztes Business-Fenster freischaufeln (Bio-Check-Zwilling)",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0"
+  },
+  "devDependencies": {
+    "vercel": "^52.0.0"
+  }
+}

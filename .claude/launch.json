@@ -12,6 +12,24 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["-y", "serve", "outputs/salespages/umsetzerinnen-pioneer", "-l", "4330"],
       "port": 4330
+    },
+    {
+      "name": "freischaufeln",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["-y", "serve", "scripts/freischaufeln/public", "-l", "4340"],
+      "port": 4340
+    },
+    {
+      "name": "mba-anrechnung-mails",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["-y", "serve", "outputs/funnels/mba-anrechnung-bestandskunden/mails-kombi", "-l", "4350"],
+      "port": 4350
+    },
+    {
+      "name": "mama-ceo-mail",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["-y", "serve", "outputs/produkte/mama-ceo", "-l", "4360"],
+      "port": 4360
     }
   ]
 }
