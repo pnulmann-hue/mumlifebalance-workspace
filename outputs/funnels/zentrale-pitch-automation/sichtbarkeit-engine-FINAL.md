@@ -300,6 +300,8 @@ Wer den MBA-Track + Downsell ohne Kauf durchlaufen hat (Tag `Engine Pitch ohne K
 1. **Kauf-Ziel** → Produkt-Kauf-Tag erreicht → raus aus der Kette (kein weiterer Pitch für das, was sie schon hat).
 2. **Kein Doppel:** „ist Kontakt schon in einer anderen Kette? → überspringen." Verhindert, dass jemand in 2 Ketten gleichzeitig Mails kriegt.
 
+> **Nummerierung:** **Kette 01 = Brücke + MBA-Track** (E1·E2·M1–M5) und **Kette 02 = Downsell** (D1) — beide stecken in Automation 72 und sind oben schon beschrieben. Die Kette läuft durchgehend 01 → 07.
+
 | # | Kette (Produkt) | Mails | Winkel |
 |---|---|---|---|
 | **03** | Expertin statt Verkäuferin (97) | 3 | „Du kennst dein Thema — aber verkaufst dich drunter / fühlst dich wie Verkäuferin." → Positionierung als Expertin |

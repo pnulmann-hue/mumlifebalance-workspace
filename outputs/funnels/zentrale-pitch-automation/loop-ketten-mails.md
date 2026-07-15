@@ -4,7 +4,25 @@ tags: [funnel, mba, pitch-automation, intern]
 
 # 🔁 Loop-Ketten 03–07 — Mail-Texte (Julias Endlos-Kette)
 
-> Fortsetzung von [[sichtbarkeit-engine-FINAL]]. Wer den MBA-Track + Downsell ohne Kauf durchlaufen hat (Tag `Engine Pitch ohne Kauf` 89), läuft durch diese Ketten — je 1 Produkt, 3–5 Mails, 1 Tag Abstand, dann die nächste.
+## 📍 Wo bin ich? Die ganze Kette 01–07 auf einen Blick
+
+**01 und 02 fehlen hier nicht — das ist die Kern-Engine, die schon gebaut ist.** Die Nummerierung folgt Julias System (Automation 01, 02, 03 …), der Kontakt läuft durchgehend 01 → 07:
+
+| # | Kette | Mails | Wo | Status |
+|---|---|---|---|---|
+| **01** | Brücke + MBA-Track | E1 · E2 · M1–M5 | **in Automation 72** | ✅ Text + Brand-HTML fertig → [[sichtbarkeit-engine-FINAL]] |
+| **02** | Downsell (3 Türen) | D1 | **in Automation 72** | ✅ Text + Brand-HTML fertig → [[sichtbarkeit-engine-FINAL]] |
+| **03** | Expertin statt Verkäuferin (97) | 3 | eigene Automation | Text fertig (unten) |
+| **04** | MBA-Webinar (Replay) | 5 | eigene Automation | Text fertig (unten) · Webinar noch aufzunehmen |
+| **05** | Digitale Produktwelt (333) | 3 | eigene Automation | Text fertig (unten) |
+| **06** | Mama-CEO (333) | 3 | eigene Automation | Text fertig (unten) |
+| **07** | MBA Re-Pitch | 3 | eigene Automation | Text fertig (unten) |
+
+> 01 + 02 liegen bewusst zusammen in **einer** Automation (72), weil „Runs: Once" dort schon das Doppel-Problem löst. Ab 03 ist jede Kette eine eigene Automation — dann greift Julias „schon in einer anderen Kette? → überspringen"-Regel.
+
+---
+
+> Fortsetzung von [[sichtbarkeit-engine-FINAL]]. Wer 01 + 02 ohne Kauf durchlaufen hat (Tag `Engine Pitch ohne Kauf` 89), läuft durch die Ketten 03–07 — je 1 Produkt, 3–5 Mails, 1 Tag Abstand, dann die nächste.
 > **2 Schutzregeln pro Kette (Julia-Pflicht):** (1) Produkt-Kauf-Ziel → raus. (2) „schon in anderer Kette? → überspringen" (kein Doppel).
 > Blacklist-geprüft: keine Stakkato, kein „Kennst du das", kein „6-stellig", kein Mentorin-Name, keine erfundenen Zahlen, Schweizer ss, Kundenebene geschlechtsneutral.
 > Links: Expertin `…/expertin/` · DPW `…/digitale-produktwelt/` · Mama-CEO `…/mama-ceo/` · MBA `mumlifebalance.ch/mba/` · Webinar `[WEBINAR-REPLAY-LINK]` (nimmt Patricia noch auf).
