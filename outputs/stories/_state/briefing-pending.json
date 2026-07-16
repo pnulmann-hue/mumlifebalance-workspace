@@ -1,67 +1,51 @@
 {
-  "datum": "2026-07-16",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": true,
-        "phase": "verkaufsphase",
-        "tag_im_launch": 32,
-        "vorlage": "Einwandbehandlung",
-        "titel": "Schaff ich das überhaupt?",
-        "story_ziel": "Selbstzweifel-Einwand → wie die MBA Schritt-für-Schritt begleitet (2 Calls/Monat, Community). Ermutigend.",
-        "kaeufertyp": "Zoe",
-        "cta": "DM MBA",
-        "cta_keyword": "MBA"
-      },
-      "kontext_snapshot": {
-        "kw": 29,
-        "wochentag": "Donnerstag",
-        "datum": "2026-07-16"
-      },
-      "gesendet_am": "2026-07-16T04:42:01.360Z",
-      "telegram_message_id": 923,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Quick Win",
-        "titel": "Quick Win",
-        "story_ziel": "Eine Formel/Methode die SOFORT funktioniert — Vertrauen + Expertise.",
-        "kaeufertyp": "Willi",
-        "cta": "thematisch passend (STORY / BIO)",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 29,
-        "wochentag": "Donnerstag",
-        "datum": "2026-07-16"
-      },
-      "gesendet_am": "2026-07-16T04:42:02.245Z",
-      "telegram_message_id": 924,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "doterra",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "doTERRA Lifestyle",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": null,
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": {
+    "datum": "2026-07-16",
+    "phase": "verkaufsphase",
+    "julia_vorlage": "einwandbehandlung",
+    "titel": "Schaff ich das überhaupt?",
+    "story_ziel": "Selbstzweifel-Einwand → wie die MBA Schritt-für-Schritt begleitet (2 Calls/Monat, Community). Ermutigend.",
+    "kaeufertyp": "Zoe",
+    "cta": "DM MBA",
+    "cta_keyword": "MBA",
+    "profil": "mentoring"
+  },
+  "launch_vorlage": {
+    "name": "Einwandbehandlung",
+    "phase": "verkaufsphase",
+    "ziel": "Glaubenssätze die vom Kauf abhalten selbst ansprechen + entkräften.",
+    "julia_anleitung": "Liste die häufigsten Einwände/Glaubenssätze auf (Geld, Angst, Zeit, 'kenn mich nicht aus'). Lass abstimmen welcher zutrifft. Zeige Verständnis (hatte ich auch), dann entkräfte jeden. Danach Fragen-Sticker für eigene Einwände.",
+    "kaeufertyp": "Amelie + Zoe",
+    "slide_bogen": "Hook (ich räum mit Einwänden auf) → Einwand 1+2+3 (Abstimmung) → Verständnis + Entkräftung → Fragen-Sticker → sanfter CTA"
+  },
+  "kontext_snapshot": {
+    "kw": 29,
+    "wochentag": "Donnerstag",
+    "datum": "2026-07-16"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-07-16T07:03:26.966Z",
+  "telegram_message_id": 925,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
