@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Produkttreppe — Merk-Slide (Mentoring)</title>
+<link rel="stylesheet" href="../../../scripts/karussell-render/brand-stories.css">
+<style>
+  .slide.treppe {
+    background: #f1ecdd;
+    padding: 130px 80px 90px;
+    justify-content: flex-start;
+  }
+  .treppe .eyebrow {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 34px; font-weight: 700;
+    letter-spacing: 5px; text-transform: uppercase;
+    color: #dc822e; margin-bottom: 34px;
+  }
+  .treppe h1 {
+    font-family: 'Philosopher', serif;
+    font-size: 104px; font-weight: 700; line-height: 1.02;
+    color: #0c1c30; margin-bottom: 30px;
+  }
+  .treppe .sub {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 40px; font-weight: 400; line-height: 1.35;
+    color: #29556d; margin-bottom: 70px; max-width: 860px;
+  }
+  .stairs { display: flex; flex-direction: column; gap: 22px; }
+  .step {
+    width: 640px; height: 196px; border-radius: 22px;
+    display: flex; align-items: center; gap: 34px;
+    padding: 0 46px 0 32px;
+    box-shadow: 0 14px 34px rgba(12,28,48,0.16);
+  }
+  .step .num {
+    flex: 0 0 auto;
+    width: 96px; height: 96px; border-radius: 50%;
+    background: #dc822e; color: #f1ecdd;
+    font-family: 'Philosopher', serif; font-size: 60px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step .txt .lvl {
+    font-family: 'Philosopher', serif; font-size: 54px; font-weight: 700;
+    color: #f1ecdd; line-height: 1.05;
+  }
+  .step .txt .lvl .price { font-size: 34px; opacity: 0.85; font-weight: 400; }
+  .step .txt .desc {
+    font-family: 'Source Sans 3', sans-serif; font-size: 32px; font-weight: 400;
+    color: #f1ecdd; opacity: 0.92; margin-top: 8px;
+  }
+  /* dunkler werdend nach oben */
+  .step-4 { background: #0c1c30; margin-left: 210px; }
+  .step-3 { background: #29556d; margin-left: 140px; }
+  .step-2 { background: #12828c; margin-left: 70px; }
+  .step-1 { background: #4f9aa0; margin-left: 0; }
+
+  .rule {
+    margin-top: 60px; align-self: center;
+    background: #dc822e; color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif; font-size: 40px; font-weight: 700;
+    padding: 26px 56px; border-radius: 999px;
+    box-shadow: 0 12px 30px rgba(220,130,46,0.35);
+  }
+</style>
+</head>
+<body class="profil-mentoring">
+<div class="grid">
+  <div class="stage-wrap"><div class="stage">
+    <div class="slide treppe">
+      <div class="eyebrow">📌 Speicher dir das</div>
+      <h1>Die Produkttreppe</h1>
+      <div class="sub">Wie du im Network aus Einmal-Verkäufen ein Einkommen machst, das mitwächst.</div>
+
+      <div class="stairs">
+        <div class="step step-4">
+          <div class="num">4</div>
+          <div class="txt">
+            <div class="lvl">Gross</div>
+            <div class="desc">Alles + Begleitung — dein grösstes Angebot</div>
+          </div>
+        </div>
+        <div class="step step-3">
+          <div class="num">3</div>
+          <div class="txt">
+            <div class="lvl">Mittel</div>
+            <div class="desc">Echte Vertiefung — dein Hauptangebot</div>
+          </div>
+        </div>
+        <div class="step step-2">
+          <div class="num">2</div>
+          <div class="txt">
+            <div class="lvl">Klein</div>
+            <div class="desc">Der erste Ja-Schritt — kleiner Preis</div>
+          </div>
+        </div>
+        <div class="step step-1">
+          <div class="num">1</div>
+          <div class="txt">
+            <div class="lvl">Gratis</div>
+            <div class="desc">Reinschnuppern, null Risiko</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">Pro Stufe nur EIN Sprung.</div>
+      <div class="brand-corner">Mum Life Balance</div>
+    </div>
+  </div></div>
+</div>
+</body>
+</html>

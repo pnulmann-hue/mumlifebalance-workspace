@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Produkttreppe — Lebensgefühl (Mentoring)</title>
+<link rel="stylesheet" href="../../../scripts/karussell-render/brand-stories.css">
+<style>
+  .slide.treppe {
+    background: #f1ecdd;
+    padding: 120px 80px 80px;
+    justify-content: flex-start;
+  }
+  .treppe .eyebrow {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 34px; font-weight: 700;
+    letter-spacing: 5px; text-transform: uppercase;
+    color: #dc822e; margin-bottom: 28px;
+  }
+  .treppe h1 {
+    font-family: 'Philosopher', serif;
+    font-size: 92px; font-weight: 700; line-height: 1.05;
+    color: #0c1c30; margin-bottom: 20px;
+  }
+  .treppe h1 .hl { color: #12828c; }
+  .treppe .sub {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 36px; font-weight: 400; line-height: 1.35;
+    color: #29556d; margin-bottom: 62px; max-width: 880px;
+  }
+  .stairs { display: flex; flex-direction: column; gap: 26px; }
+  .step {
+    width: 680px; min-height: 220px; border-radius: 22px;
+    display: flex; align-items: center; gap: 30px;
+    padding: 28px 42px 28px 30px;
+    box-shadow: 0 14px 34px rgba(12,28,48,0.16);
+  }
+  .step .num {
+    flex: 0 0 auto;
+    width: 92px; height: 92px; border-radius: 50%;
+    background: #dc822e; color: #f1ecdd;
+    font-family: 'Philosopher', serif; font-size: 56px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step .txt .lvl {
+    font-family: 'Philosopher', serif; font-size: 52px; font-weight: 700;
+    color: #f1ecdd; line-height: 1.05;
+  }
+  .step .txt .desc {
+    font-family: 'Source Sans 3', sans-serif; font-size: 32px; font-weight: 400;
+    color: #f1ecdd; opacity: 0.92; margin-top: 8px; line-height: 1.28;
+  }
+  .step-3 { background: #12828c; margin-left: 180px; }
+  .step-2 { background: #29556d; margin-left: 90px; }
+  .step-1 { background: #0c1c30; margin-left: 0; }
+
+  /* Optional-Stufe: kommt von selbst */
+  .step.optional {
+    background: transparent;
+    border: 4px dashed #12828c;
+    box-shadow: none;
+  }
+  .step.optional .num { background: #12828c; }
+  .step.optional .lvl { color: #0c1c30; }
+  .step.optional .desc { color: #29556d; opacity: 1; }
+  .step.optional .chip {
+    display: inline-block; margin-top: 12px;
+    font-family: 'Source Sans 3', sans-serif; font-size: 26px; font-weight: 700;
+    color: #dc822e; letter-spacing: 1px;
+  }
+
+  .rule {
+    margin-top: 54px; align-self: center; text-align: center;
+    background: #dc822e; color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif; font-size: 38px; font-weight: 700;
+    padding: 24px 54px; border-radius: 999px;
+    box-shadow: 0 12px 30px rgba(220,130,46,0.35);
+  }
+</style>
+</head>
+<body class="profil-mentoring">
+<div class="grid">
+  <div class="stage-wrap"><div class="stage">
+    <div class="slide treppe">
+      <div class="eyebrow">Mein Konzept</div>
+      <h1>Kein Produkt —<br>ein <span class="hl">Lebensgefühl</span></h1>
+      <div class="sub">Und das baue ich Schritt für Schritt auf — wie eine Treppe:</div>
+
+      <div class="stairs">
+        <div class="step optional step-opt">
+          <div class="num">3</div>
+          <div class="txt">
+            <div class="lvl">Treuekundin &amp; evtl. Partnerin</div>
+            <div class="desc">Sie hat ihre Lösung gefunden — und will sie weitergeben</div>
+            <div class="chip">↑ kommt von selbst</div>
+          </div>
+        </div>
+        <div class="step step-2">
+          <div class="num">2</div>
+          <div class="txt">
+            <div class="lvl">Das Paket</div>
+            <div class="desc">Produktpaket + meine Begleitung — hier baut sich's auf</div>
+          </div>
+        </div>
+        <div class="step step-1">
+          <div class="num">1</div>
+          <div class="txt">
+            <div class="lvl">Gratis-Einblick</div>
+            <div class="desc">Testwoche: ein Vorgeschmack aufs neue Lebensgefühl</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">Ich verkaufe kein Produkt. Ich gebe ein Lebensgefühl weiter.</div>
+      <div class="brand-corner">Mum Life Balance</div>
+    </div>
+  </div></div>
+</div>
+</body>
+</html>

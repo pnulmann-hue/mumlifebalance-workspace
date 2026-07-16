@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Produkttreppe — Network-Beispiel (Mentoring)</title>
+<link rel="stylesheet" href="../../../scripts/karussell-render/brand-stories.css">
+<style>
+  .slide.treppe {
+    background: #f1ecdd;
+    padding: 120px 80px 90px;
+    justify-content: flex-start;
+  }
+  .treppe .eyebrow {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 34px; font-weight: 700;
+    letter-spacing: 5px; text-transform: uppercase;
+    color: #dc822e; margin-bottom: 30px;
+  }
+  .treppe h1 {
+    font-family: 'Philosopher', serif;
+    font-size: 100px; font-weight: 700; line-height: 1.02;
+    color: #0c1c30; margin-bottom: 26px;
+  }
+  .treppe .sub {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 38px; font-weight: 600; line-height: 1.35;
+    color: #29556d; margin-bottom: 62px; max-width: 900px;
+  }
+  .treppe .sub .theme { color: #dc822e; }
+  .stairs { display: flex; flex-direction: column; gap: 22px; }
+  .step {
+    width: 660px; height: 200px; border-radius: 22px;
+    display: flex; align-items: center; gap: 30px;
+    padding: 0 42px 0 30px;
+    box-shadow: 0 14px 34px rgba(12,28,48,0.16);
+  }
+  .step .num {
+    flex: 0 0 auto;
+    width: 92px; height: 92px; border-radius: 50%;
+    background: #dc822e; color: #f1ecdd;
+    font-family: 'Philosopher', serif; font-size: 56px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step .txt .lvl {
+    font-family: 'Philosopher', serif; font-size: 50px; font-weight: 700;
+    color: #f1ecdd; line-height: 1.05;
+  }
+  .step .txt .desc {
+    font-family: 'Source Sans 3', sans-serif; font-size: 32px; font-weight: 400;
+    color: #f1ecdd; opacity: 0.92; margin-top: 8px; line-height: 1.25;
+  }
+  .step-4 { background: #0c1c30; margin-left: 210px; }
+  .step-3 { background: #29556d; margin-left: 140px; }
+  .step-2 { background: #12828c; margin-left: 70px; }
+  .step-1 { background: #4f9aa0; margin-left: 0; }
+
+  .rule {
+    margin-top: 56px; align-self: center;
+    background: #dc822e; color: #f1ecdd;
+    font-family: 'Source Sans 3', sans-serif; font-size: 38px; font-weight: 700;
+    padding: 24px 52px; border-radius: 999px;
+    box-shadow: 0 12px 30px rgba(220,130,46,0.35);
+  }
+</style>
+</head>
+<body class="profil-mentoring">
+<div class="grid">
+  <div class="stage-wrap"><div class="stage">
+    <div class="slide treppe">
+      <div class="eyebrow">Beispiel · Network</div>
+      <h1>So sieht's konkret aus</h1>
+      <div class="sub">Thema: <span class="theme">natürliche Energie &amp; Frische für erschöpfte Mamas</span></div>
+
+      <div class="stairs">
+        <div class="step step-4">
+          <div class="num">4</div>
+          <div class="txt">
+            <div class="lvl">Gross</div>
+            <div class="desc">Partnerin werden &amp; selber aufbauen</div>
+          </div>
+        </div>
+        <div class="step step-3">
+          <div class="num">3</div>
+          <div class="txt">
+            <div class="lvl">Mittel</div>
+            <div class="desc">4-Wochen-Frische-Kur + Begleitung</div>
+          </div>
+        </div>
+        <div class="step step-2">
+          <div class="num">2</div>
+          <div class="txt">
+            <div class="lvl">Klein</div>
+            <div class="desc">1 Produkt testen (z.B. ein Shake)</div>
+          </div>
+        </div>
+        <div class="step step-1">
+          <div class="num">1</div>
+          <div class="txt">
+            <div class="lvl">Gratis</div>
+            <div class="desc">Energie-Guide zum Reinschnuppern</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule">Das Thema zuerst — Produkte sind die Stufen.</div>
+      <div class="brand-corner">Mum Life Balance</div>
+    </div>
+  </div></div>
+</div>
+</body>
+</html>
