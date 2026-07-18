@@ -65,7 +65,6 @@ tags: [camping, packliste]
 - [ ] **Verlängerungskabel / Mehrfachstecker** für den Thermomix
 - [ ] **Gaskocher mit 2 Platten** + genug Gaskartuschen (Faustregel: 1 Kartusche ≈ 2–3 Kochtage bei 1 warmen Mahlzeit/Tag → für ~4–5 Tage **mind. 3 Kartuschen + 1 Reserve**)
 - [ ] **Windschutz für den Gaskocher** (Wind bläst sonst die Flamme aus — wichtig!)
-- [ ] **Elektrischer Wasserkocher** (ihr habt Strom → Kaffee/Tee/heisses Wasser viel schneller & spart Gas)
 - [ ] **Grill / Einweggrill** + Grillzange + Grillrost + Grillanzünder (falls am Platz erlaubt)
 - [ ] Feuerzeug + Streichhölzer (2×, an verschiedenen Orten)
 
