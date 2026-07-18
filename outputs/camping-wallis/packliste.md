@@ -33,7 +33,10 @@ tags: [camping, packliste]
 - [ ] Zusatz-Decke pro Person (die Nächte werden kühl)
 - [ ] Stirnlampen / Taschenlampen × 6 + Ersatzbatterien
 - [ ] Campinglaterne (fürs Zelt / Essbereich)
+- [ ] **Nachtlicht / kleine Lampe fürs Kinderzelt** (die 8-/9-Jährigen)
 - [ ] Fussmatte vor den Zelteingang (gegen Dreck)
+- [ ] **Reparaturset: Zeltflicken + Nahtdichter + Luftbett-/Isomatten-Flicken + Ersatz-Gestängehülse**
+- [ ] Ohrstöpsel (Campingplätze sind nachts laut) + evtl. Schlafmaske
 
 ---
 
@@ -42,10 +45,16 @@ tags: [camping, packliste]
 - [ ] Campingtisch
 - [ ] Campingstühle × 6 (+ evtl. 1 Reserve für Gäste)
 - [ ] Pavillon / Sonnensegel + Heringe (Schatten UND Regenschutz beim Kochen)
-- [ ] Picknickdecke
+- [ ] **Tischdecke + Tischklammern** (gegen Wind — sonst fliegt sie beim Essen weg)
+- [ ] Picknickdecke + Sitzkissen/Sitzunterlagen
+- [ ] Zeltteppich / Vorzeltteppich (weniger Dreck & wärmer unter den Füssen)
 - [ ] Wäscheleine + Klammern
 - [ ] Fussabtreter / kleiner Teppich
 - [ ] Klappbox(en) für Ordnung
+- [ ] Klappbarer Abfalleimer / Müllsack-Ständer
+- [ ] Wäschekorb / grosse Tasche für Dreckwäsche
+- [ ] Solardusche / Campingdusche (falls Platz keine warme Dusche hat — optional)
+- [ ] Hängematte (optional, für die faule Stunde)
 
 ---
 
@@ -55,6 +64,9 @@ tags: [camping, packliste]
 - [ ] **Thermomix** + Rezeptteile (Messbecher, Spatel, Gareinsatz, Varoma!)
 - [ ] **Verlängerungskabel / Mehrfachstecker** für den Thermomix
 - [ ] **Gaskocher mit 2 Platten** + genug Gaskartuschen (Faustregel: 1 Kartusche ≈ 2–3 Kochtage bei 1 warmen Mahlzeit/Tag → für ~4–5 Tage **mind. 3 Kartuschen + 1 Reserve**)
+- [ ] **Windschutz für den Gaskocher** (Wind bläst sonst die Flamme aus — wichtig!)
+- [ ] **Elektrischer Wasserkocher** (ihr habt Strom → Kaffee/Tee/heisses Wasser viel schneller & spart Gas)
+- [ ] **Grill / Einweggrill** + Grillzange + Grillrost + Grillanzünder (falls am Platz erlaubt)
 - [ ] Feuerzeug + Streichhölzer (2×, an verschiedenen Orten)
 
 **Töpfe & Pfannen**
@@ -63,13 +75,15 @@ tags: [camping, packliste]
 - [ ] Grosse Bratpfanne
 - [ ] Deckel passend
 - [ ] Kochlöffel, Pfannenwender, Schaumlöffel, Schöpfkelle
-- [ ] Scharfes Messer (2×) + kleines Rüstmesser
+- [ ] Scharfes Messer (2×) + kleines Rüstmesser + Brotmesser
 - [ ] Schneidebrett (2×)
-- [ ] Grosse Schüssel (Salat / Teig / Müesli anrühren)
+- [ ] Grosse Schüssel (Salat / Teig / Müesli anrühren) + Salatbesteck
 - [ ] Sieb / Abtropfsieb
 - [ ] Dosenöffner + Flaschenöffner + Sparschäler
 - [ ] Reibe (klein)
 - [ ] Küchenschere
+- [ ] Brotbrett / Brotkorb + Butterdose
+- [ ] Eierbox (Transportschutz) für die Kühlbox
 
 **Kühlen & Wasser**
 - [ ] Kühlbox / Kühltasche (gross) + Kühlakkus (mehrere, vorgefroren)
@@ -78,7 +92,7 @@ tags: [camping, packliste]
 
 **Verbrauch & Reinigung**
 - [ ] Abwasch: Spülmittel (bio), Schwamm, Lappen, Geschirrtuch × 2
-- [ ] Abwaschschüssel / faltbares Becken
+- [ ] Abwaschschüssel / faltbares Becken (+ Eimer für Abwasser)
 - [ ] Haushaltspapier / Küchenrolle
 - [ ] Alufolie + Frischhaltefolie + Gefrierbeutel (Zip) + Butterbrotpapier
 - [ ] Vorratsdosen (für Resten & vorbereitete Lunch-Komponenten)
@@ -126,11 +140,13 @@ tags: [camping, packliste]
 - [ ] Leichte Jacke + **Regenjacke** (Wallis-Gewitter!)
 - [ ] Kurze Hosen + 1–2 lange Hosen
 - [ ] Unterwäsche + Socken (1 pro Tag + Reserve)
-- [ ] Pyjama / warme Schlafkleidung
-- [ ] Badesachen + Badetuch (Fluss/See/Bad im Wallis)
+- [ ] Pyjama / warme Schlafkleidung + warme Socken für die Nacht
+- [ ] Badesachen + Badetuch (Fluss/See/Bad im Wallis) + Badeschlappen
 - [ ] Sonnenhut / Cap × Person
 - [ ] Feste Schuhe / Wanderschuhe + Sandalen/Crocs + Turnschuhe
-- [ ] Warme Mütze/Dünnes Halstuch für kühle Abende (v. a. Kids)
+- [ ] **Finken / Hausschuhe fürs Zelt** (Boden ist morgens kalt/feucht)
+- [ ] **Regenponcho / Regenjacke pro Kind** (Wallis-Gewitter kommen schnell)
+- [ ] Warme Mütze / Buff / dünnes Halstuch für kühle Abende (v. a. Kids)
 
 **Gemeinsam:**
 - [ ] Grosser Wäschesack für Dreckwäsche
@@ -220,6 +236,8 @@ tags: [camping, packliste]
 - [ ] Ersatzschlüssel Auto
 - [ ] Klebeband (Panzertape — repariert fast alles)
 - [ ] Kabelbinder + Schnur
+- [ ] Kleines Nähzeug (Nadel, Faden, Sicherheitsnadeln)
+- [ ] Warndreieck + Warnwesten (in CH Pflicht im Auto)
 - [ ] Wäscheklammern (Verpackungen schliessen, Sonnensegel)
 - [ ] Notizzettel + Stift
 - [ ] Kehrichtsäcke (Reserve)
