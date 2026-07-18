@@ -23,6 +23,11 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[00-bootcamp-produkt]]
 - [[anmeldeseite]]
 
+### 📁 claude-networkerin
+
+- [[00-briefing]]
+- [[01-produkttreppe]]
+
 ### 📁 die-umsetzerinnen-club
 
 - [[00-briefing]]
