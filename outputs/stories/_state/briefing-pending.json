@@ -1,67 +1,51 @@
 {
-  "datum": "2026-07-18",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": true,
-        "phase": "verkaufsphase",
-        "tag_im_launch": 34,
-        "vorlage": "Inhalte / Daten & Fakten zeigen",
-        "titel": "Kurs 3: Digitale Produktwelt + Bonus PIA",
-        "story_ziel": "Dritten Kurs zeigen + PIA (KI-Mentorin) als Bonus. Das Gesamtbild wird rund.",
-        "kaeufertyp": "Frank",
-        "cta": "Cart offen — Link / DM MBA",
-        "cta_keyword": "MBA"
-      },
-      "kontext_snapshot": {
-        "kw": 29,
-        "wochentag": "Samstag",
-        "datum": "2026-07-18"
-      },
-      "gesendet_am": "2026-07-18T04:42:01.209Z",
-      "telegram_message_id": 936,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Beweise / Social Proof (auf Freebie gemünzt)",
-        "titel": "Beweise / Social Proof (auf Freebie gemünzt)",
-        "story_ziel": "Eine echte Erfolgsgeschichte (Mentee/Pilot-Mama) — Glaubwürdigkeit + sanfter Pull.",
-        "kaeufertyp": "Zoe",
-        "cta": "thematisch passend",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 29,
-        "wochentag": "Samstag",
-        "datum": "2026-07-18"
-      },
-      "gesendet_am": "2026-07-18T04:42:02.110Z",
-      "telegram_message_id": 937,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "doterra",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "doTERRA Lifestyle",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": null,
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": {
+    "datum": "2026-07-18",
+    "phase": "verkaufsphase",
+    "julia_vorlage": "inhalte-zeigen",
+    "titel": "Kurs 3: Digitale Produktwelt + Bonus PIA",
+    "story_ziel": "Dritten Kurs zeigen + PIA (KI-Mentorin) als Bonus. Das Gesamtbild wird rund.",
+    "kaeufertyp": "Frank",
+    "cta": "Cart offen — Link / DM MBA",
+    "cta_keyword": "MBA",
+    "profil": "mentoring"
+  },
+  "launch_vorlage": {
+    "name": "Inhalte / Daten & Fakten zeigen",
+    "phase": "verkaufsphase",
+    "ziel": "Konkret zeigen WAS man bekommt — viele buchen nicht weil sie den Inhalt nicht kennen.",
+    "julia_anleitung": "Statt nur zu sagen 'du bekommst ein Workbook' — ZEIGE es. Titelbild, Inhaltsverzeichnis, Seitenzahl, Modulaufbau. Mach das Angebot greifbar. Für Frank besonders wichtig.",
+    "kaeufertyp": "Frank + Willi",
+    "slide_bogen": "Hook (schau was drin ist) → Inhalt 1 zeigen → Inhalt 2 zeigen → was es für sie bedeutet → CTA mit Link"
+  },
+  "kontext_snapshot": {
+    "kw": 29,
+    "wochentag": "Samstag",
+    "datum": "2026-07-18"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-07-18T06:29:55.497Z",
+  "telegram_message_id": 938,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
