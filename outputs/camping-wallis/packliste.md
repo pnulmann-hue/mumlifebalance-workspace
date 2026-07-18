@@ -109,7 +109,8 @@ tags: [camping, packliste]
 - [ ] Trinkflaschen × 6 (für unterwegs)
 - [ ] Besteck-Sets × 6 (+ 2 Reserve)
 - [ ] Scharfe Kindermesser für die Kleinen (optional)
-- [ ] Kaffee-Lösung (Bialetti / French Press / Filter) — je nach Vorliebe
+- [ ] **Kapselmaschine** + genug Kapseln (grosszügig rechnen — Ferien = mehr Kaffee!) + Steckdose/Verlängerung am Platz
+- [ ] Milch für den Kaffee (ist eh in der Kühlbox) + evtl. Milchschäumer
 
 ---
 
