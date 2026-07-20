@@ -8,7 +8,7 @@ tags: [camping, tagesplan]
 **Ausrüstung:** Campingkocher (2 Platten) · Grill (Campingaz 400SG) · Thermomix
 **Rezept-Codes** verweisen auf [[rezepte]] (F = Frühstück, H = warme Mahlzeit, L = To-Go-Lunch)
 
-> **Wetter-Logik:** Bergtouren & Ausgesetztes am **Vormittag** (nachmittags Gewittergefahr im Tal). An heissen oder gewittrigen Tagen die **Joker** ziehen: 🏊 **Brigerbad** oder 🕳️ **Lac Souterrain** (beide kühl/wettersicher).
+> **Wetter-Logik:** Bergtouren & Ausgesetztes am **Vormittag** (nachmittags Gewittergefahr im Tal). An heissen oder gewittrigen Tagen die **wettersicheren Programme** vorziehen: 🏊 **Brigerbad** oder 🕳️ **Lac Souterrain** (beide kühl & wetterunabhängig) — Tage einfach tauschen.
 > **Prognose 2–3 Tage vor Abreise nochmal checken** und Tage bei Bedarf tauschen — der Plan ist flexibel.
 
 ---
@@ -41,22 +41,31 @@ tags: [camping, tagesplan]
 
 ---
 
-## 🧘 Di 28.7. — Ruhetag & Baden
-- **Tag:** Erholung am Platz · bei Hitze 🏊 **Brigerbad** (grösstes Alpen-Freiluft-Thermalbad, 182-m-Rutsche, Kinder bis 10 gratis, ~15 Min)
-- **F:** F3 Bircher-Bowl · **Mittag:** am Platz / im Brigerbad · **Abend:** 🔥 **H6 Kartoffel-Gemüse-Pfanne mit Würsten** (Grill + Kocher, entspannt)
+## 🐄 Di 28.7. — Belalp: Eringer-Kühe-Führung ⭐
+- **Vormittag:** **Belalp** (Seilbahn ab Blatten/Naters, ~30–40 Min Anfahrt) — **geführter Besuch bei den Eringer-Kühen** (eure „Kampfkühe" live auf der Alp, inkl. Rangordnung/Verhalten). **Treffpunkt 08:30 Bergstation Belalp-Seilbahn, Dauer ~2 h.**
+- ⚠️ **Früher Start!** Die Führung ist um 08:30 **oben** → ihr müsst ~07:00 am Platz los (Fahrt + Bergbahn). F am besten to-go.
+- ⚠️ **Anmeldung bis Montag 11:00** (Tourismusbüro Blatten) → **schon am Sonntag/Montagfrüh buchen**, weil ihr Montag in Zermatt seid!
+- **Nachmittag:** zurück, Platz/Pool
+- **F:** **F1 Overnight Oats** (am Vorabend anrühren, schnell essbar) · **Mittag:** **L2 Wraps** to-go · **Abend:** **H3 Gemüse-Kokos-Curry** mit Reis
+
+> 📋 **Belalp — Führungszeiten & Anmeldung** (bitte vor Ort/telefonisch bestätigen, Zeiten variieren je Saison):
+> - 🐄 **Eringer-Kühe:** dienstags, **08:30 Bergstation Belalp**, ~2 h · **Anmeldung bis Mo 11:00**
+> - 🐑 **Schwarznasenschafe:** freitags, ~1,5 h · **Anmeldung bis Do** (bei euch nur Anreise-/Abreisetag → stattdessen Ausserberg am Sa)
+> - Mit **Gästekarte oft gratis** (exkl. Bergbahn), sonst ~CHF 10
+> - **Tourismusbüro Blatten:** +41 27 921 60 40 · tourismus@belalp.ch
 
 ---
 
-## 🏞️ Mi 29.7. — Saas-Fee / Kreuzboden
-- **Tag:** **Kreuzboden** — Wellness-/Genussweg (Hängebrücke, Kneippbecken, Hängematten), Alpenblumenpromenade, bei der Bergstation Spielplatz + Streichelzoo + Wasserspielpark. Aussicht auf den Talkessel spektakulär.
-- **F:** F5 Porridge (Thermomix) · **Mittag:** **L2 Wraps** to-go · **Abend:** **H3 Gemüse-Kokos-Curry** mit Reis
+## 🕳️ Mi 29.7. — Lac Souterrain de St-Léonard (der unterirdische See)
+- **Tag:** **Lac Souterrain** (~40 Min, Richtung Sion) — **30-Min-Ruderboot** über Europas grössten natürlichen Höhlensee, konstant kühl (~15 °C). ⚠️ **Online reservieren!** Im Juli tägl. 09:00–17:30. Familie ~CHF 52.
+- Danach: z. B. in Sierre/Sion einkehren oder zurück an den Platz/Pool
+- **F:** F3 Bircher-Bowl · **Mittag:** unterwegs / **L1** · **Abend:** 🔥 **H6 Kartoffel-Gemüse-Pfanne mit Würsten** (Grill + Kocher, entspannt)
 
 ---
 
-## 🐄 Do 30.7. — Belalp: Schwarznasenschafe & Eringer-Kühe
-- **Vormittag:** **Belalp** (Seilbahn ab Blatten/Naters, ~30–40 Min) — **geführter Besuch bei Schwarznasenschafen UND den Eringer-Kühen** (eure „Kampfkühe" live auf der Alp). Termin **vorher buchen**.
-- **Nachmittag:** zurück, Platz/Pool, langsam ans Zusammenpacken denken
-- **F:** F1/F3 · **Mittag:** **L1** to-go · **Abend:** **H4 Chili** ⭐ (doppelte Menge → Reste für die Heimfahrt/Fr-Lunch)
+## 🧘 Do 30.7. — Ruhetag, Baden & Puffer
+- **Tag:** Erholung am Platz · bei Hitze 🏊 **Brigerbad** (grösstes Alpen-Freiluft-Thermalbad, 182-m-Rutsche, Kinder bis 10 gratis, ~15 Min) · langsam ans Zusammenpacken denken
+- **F:** F4 Café complet · **Mittag:** am Platz / im Brigerbad · **Abend:** **H4 Chili** ⭐ (doppelte Menge → Reste für die Heimfahrt/Fr-Lunch)
 
 ---
 
@@ -68,7 +77,7 @@ tags: [camping, tagesplan]
 
 ## 🃏 Joker (jederzeit einschieben bei Hitze/Gewitter/wenn jemand nicht mag)
 - 🏊 **Brigerbad** (~15 Min) — warmes Thermalwasser, auch bei kühlem/nassem Wetter super
-- 🕳️ **Lac Souterrain St-Léonard** (~40 Min) — Ruderboot auf Europas grösstem unterird. See, konstant ~15 °C, **online reservieren**
+- 🏞️ **Saas-Fee / Kreuzboden** — Wellness-/Genussweg, Hängebrücke, Spielplatz + Streichelzoo (falls ihr doch noch einen Bergtag wollt)
 - 🛍️ **Brig** bummeln · 🐑 **Ausserberg** nochmal · fauler Pool-Tag am Platz
 
 ---
