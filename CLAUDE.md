@@ -87,6 +87,7 @@ tags: [tag1, tag2, tag3]
 | `outputs/marktrecherche/` | `[research]` |
 | `outputs/zielgruppen-research/` | `[research]` |
 | `outputs/doterra-strategie/` | `[doterra]` |
+| `outputs/doterra-mail/` | `[doterra, mail]` |
 | `outputs/ads/` | `[ads]` |
 | `outputs/monatsplaene/` | `[monatsplan]` |
 | `outputs/content-kalender/` | `[content]` |
@@ -411,6 +412,25 @@ Bio-Check · Lead-Challenge · Workbook „Von 0 auf echt" · 0€ Potenzial-Tes
 1. User tippt `/funnel` → Skill fragt Modus (Plan / Bau / Ads / Launch / Analyse / list)
 2. In Mode 3 (Ads) ALS PFLICHT-SCHRITT 0: Painpoint-Analyse (AC-Signale + Instagram-Engagement + DMs + Reddit/Google-Trends) → empfiehlt passenden Funnel zum Bewerben
 3. Output in `outputs/funnels/[slug]/` und Update `active-funnels.json`
+
+### /doterra-mail
+
+**Zweck:** E-Mail-Assistent fürs **doTERRA-Profil** — schreibt fertige E-Mails in Patricias Stimme, doTERRA-compliant (keine Heilversprechen, „bei mir war"-Frame), als Draft + optional direkt als ActiveCampaign-Entwurf.
+
+**5 Modi:**
+1. **`reaktivierung`** — inaktive Kundinnen zurückholen (Soft 3-6 Mo / Hard 6-12 Mo / Last-Call 12+ Mo), baut auf `outputs/doterra-strategie/reaktivierungs-templates.md` auf
+2. **`onboarding`** — Welcome-/Onboarding-Sequenz für neue Beraterinnen (4-Wochen-Bogen aus `onboarding-system-outline.md`)
+3. **`newsletter`** — Mehrwert-Mail an bestehende Kundinnen (Öl-Tipp, saisonal, Routine)
+4. **`follow-up`** — Nachfassen nach Antwort / DM / Gespräch
+5. **`einzel`** — freie Einzel-Mail nach Anlass + Ziel
+
+**Pflicht-Lektüre:** `patricia-wendepunkt-story.md` (Story + Compliance-No-Gos) · `ki-phrasen-blackliste.md` (gewinnt bei Konflikt) · `brand-voice.md` · `network-wissensbasis.md` · `business-info.md` · `patricia-expertise.md` (einzige Zahlen-Quelle) · `patricia-freebies.md` (aktives Freebie **3-Tage-Energie-Kickstart**, Keyword `ENERGIE`) · `mail-design-doterra.html` (HTML-Template, Orange-Header).
+
+**Compliance-Pakt:** keine Heilversprechen · „bei mir war"/„viel besser" statt „heilt/weg" · nie „Wellness Lifestyle Pyramide" namentlich (→ „mein Ansatz") · keine Einkommens-Versprechen · keine erfundenen Zahlen/Zeitlinien · Naturheilpraktikerin nicht namentlich.
+
+**Ausgabe:** `outputs/doterra-mail/YYYY-MM-DD-[modus]-[slug].md` (Betreff + Preheader + Plain-Text-Body + HTML-Fassung) + `_INDEX.md`-Eintrag. Optional als ActiveCampaign-Entwurf via `mcp__activecampaign__create_campaign` (meist Liste **18 „doTERRA Interessenten"**). **`send_campaign` nie automatisch** — nur auf ausdrücklichen Befehl.
+
+Volle Doku: `.claude/commands/doterra-mail.md`. Tool-Referenz AC: `reference/activecampaign-mcp-tools.md`.
 
 ### /jahresplan
 
