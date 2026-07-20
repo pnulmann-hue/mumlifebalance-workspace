@@ -30,6 +30,14 @@ Die MBA verspricht: Instagram-Kundenmaschine + Mama-CEO + Digitale Produktwelt +
 
 ---
 
+## 🟢 Evergreen-Webinar — der Verkaufs-Mechanismus NACH dem Cart
+
+Nicht nur eine vergessene To-do: das Evergreen-Webinar ist das, was die MBA weiterverkauft, sobald der Live-Cart am 27.7. schliesst. Ohne Evergreen fallen die MBA-Verkäufe nach Sonntag auf null bis zum nächsten Live-Launch — dabei sollen alle Funnels ganzjährig zur MBA führen. Zwei Tasks lagen schon in Notion (beim Bootcamp-Pivot geparkt), sind jetzt reaktiviert. Konzept: `outputs/produkte/mba-launch/evergreen-webinar-konzept.md`.
+
+- [ ] **Evergreen-Webinar Phase 2 + 3 schreiben** (~18.8. · nach Delivery, mit Testimonials der 1. MBA-Kohorte)
+- [ ] **Evergreen-Webinar Phase 2 + 3 aufnehmen** (~25.8. · Phase-1-Folien existieren schon)
+- [ ] Danach **Evergreen-Funnel scharf schalten** → MBA verkauft dauerhaft weiter
+
 ## 🟡 Neuer Claude-Kurs «Claude als Networkerin» — August-Projekt
 
 Konzept steht: eigenständiger 4. Kurs (333), Standalone-Launch September, still als Überraschung in der MBA. Volles Konzept: `outputs/produkte/claude-als-networkerin/00-kurs-konzept.md`.
