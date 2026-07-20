@@ -12,3 +12,4 @@ Packliste und Rezepte für den Zelt-/Camping-Trip ins Wallis (6 Personen).
 - [[rezepte]] — Camping-Rezepte für Thermomix + Gaskocher (Frühstück · warme Mahlzeit · To-Go-Lunch)
 - [[vor-ort-raron]] — Einkaufen, Restaurants & Wetter-Trend für Raron / Camping Santa Monica
 - [[ausfluege]] — Entspannte Bahn-Ausflüge (Gornergrat/Riffelsee · Kreuzboden · Fiescheralp–Riederalp)
+- [[tagesplan]] — Tag-für-Tag-Plan 24.–31. Juli + Migros-Online-Bestellliste („muss mit")
