@@ -10,6 +10,10 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 - 📘 [[README]]
 
+### 📁 claude-als-networkerin
+
+- [[00-kurs-konzept]]
+
 ### 📁 audit-2026-04-22
 
 - [[00-markt-research]]
