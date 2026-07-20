@@ -41,18 +41,17 @@ tags: [camping, tagesplan]
 
 ---
 
-## 🐄 Di 28.7. — Belalp: Eringer-Kühe-Führung ⭐
-- **Vormittag:** **Belalp** (Seilbahn ab Blatten/Naters, ~30–40 Min Anfahrt) — **geführter Besuch bei den Eringer-Kühen** (eure „Kampfkühe" live auf der Alp, inkl. Rangordnung/Verhalten). **Treffpunkt 08:30 Bergstation Belalp-Seilbahn, Dauer ~2 h.**
-- ⚠️ **Früher Start!** Die Führung ist um 08:30 **oben** → ihr müsst ~07:00 am Platz los (Fahrt + Bergbahn). F am besten to-go.
-- ⚠️ **Anmeldung bis Montag 11:00** (Tourismusbüro Blatten) → **schon am Sonntag/Montagfrüh buchen**, weil ihr Montag in Zermatt seid!
+## 🐄 Di 28.7. — Belalp auf eigene Faust (Schafe & Kühe)
+- **Tag:** **Belalp** (Seilbahn ab Blatten/Naters, ~30–40 Min Anfahrt) — **auf eigene Faust**, ohne Führung. Hochfahren wann's passt, über die **Alpweiden spazieren** und die **Schwarznasenschafe und Eringer-Kühe** ganz entspannt selbst suchen (weiden meist gut sichtbar auf den Wiesen). Familienfreundliche, gemütliche Wege oben.
+- **Vorteil:** kein früher Start, keine Anmeldung, eigenes Tempo — ihr geht rauf, wann ihr wollt, und so lang ihr mögt.
 - **Nachmittag:** zurück, Platz/Pool
-- **F:** **F1 Overnight Oats** (am Vorabend anrühren, schnell essbar) · **Mittag:** **L2 Wraps** to-go · **Abend:** **H3 Gemüse-Kokos-Curry** mit Reis
+- **F:** **F2 Rührei** (in Ruhe) · **Mittag:** **L2 Wraps** to-go od. Bergrestaurant · **Abend:** **H3 Gemüse-Kokos-Curry** mit Reis
 
-> 📋 **Belalp — Führungszeiten & Anmeldung** (bitte vor Ort/telefonisch bestätigen, Zeiten variieren je Saison):
-> - 🐄 **Eringer-Kühe:** dienstags, **08:30 Bergstation Belalp**, ~2 h · **Anmeldung bis Mo 11:00**
-> - 🐑 **Schwarznasenschafe:** freitags, ~1,5 h · **Anmeldung bis Do** (bei euch nur Anreise-/Abreisetag → stattdessen Ausserberg am Sa)
-> - Mit **Gästekarte oft gratis** (exkl. Bergbahn), sonst ~CHF 10
-> - **Tourismusbüro Blatten:** +41 27 921 60 40 · tourismus@belalp.ch
+> 📋 **Belalp-Praxis:**
+> - Nur **Seilbahn-Ticket Blatten–Belalp** nötig (Sommer-Betriebszeiten am Vortag kurz checken) — Tiere anschauen ist gratis.
+> - Schwarznasenschafe habt ihr zusätzlich schon am **Sa 25. in Ausserberg** gesehen.
+> - ⚠️ **Massa-Hängebrücke auslassen** — die ist hoch & ausgesetzt über der Schlucht (nichts bei Höhen-Panik). Bleibt auf den gemütlichen Alpwegen, die Aussicht gibt's auch ohne Brücke.
+> - Info: Tourismusbüro Blatten +41 27 921 60 40
 
 ---
 
