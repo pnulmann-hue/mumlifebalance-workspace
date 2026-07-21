@@ -14,6 +14,22 @@ Quellen-Übersicht am Ende der Datei.
 
 ---
 
+## 📢 Eröffnungspost — Mittsommer-Gruss
+
+☀️ *Hallo ihr Lieben*
+
+Mitten im Sommer — die Tage sind lang, die Abende lau, und die Natur schenkt uns gerade alles auf einmal. 💛
+
+Genau jetzt sind ätherische Öle wunderbare Begleiter: Sie kühlen, wenn die Hitze zu viel wird, halten kleine Plagegeister auf Abstand, pflegen sonnenverwöhnte Haut und schenken uns diese kleinen Wohlfühl-Momente, die den Sommer so besonders machen.
+
+Ich hab für euch ein paar **Sommer-Inspirationen** zusammengestellt — einfache Rezepte und Ideen zum Ausprobieren, direkt für den Alltag: fürs Fussbad, den Diffuser, den Sommerdrink im Glas oder die Reisetasche. Die schicke ich euch über die nächsten Wochen häppchenweise hier rein.
+
+Freut euch drauf — und wenn ihr was ausprobiert, erzählt mir gern, wie's war. 🌿
+
+Auf einen duftenden Sommer!
+
+---
+
 ## 🧊 Beitrag 1 — Das erfrischende Körperspray
 
 🌞 *Wenn die Hitze steht und die Haut nach Abkühlung ruft.*
@@ -403,12 +419,30 @@ Was ist dein liebster Sommer-Ort draussen? 🏕️
 
 ---
 
-## 📋 Posting-Strategie
+## 📅 Posting-Kalender (2 Beiträge/Woche, Di + Fr, 9:00)
 
-**Aufholen (diese Woche):** Beiträge 1–3 posten (alle 2 Tage), damit du wieder aktuell bist
-**Reguläres Posting:** 1–2 Beiträge/Woche, immer gleicher Tag/gleiche Zeit
-**16 Beiträge** decken die ganze Sommer-Saison locker ab — plus Reserve
-**Ende August:** Übergang zum Herbst-Paket vorbereiten
+| Datum | Beitrag |
+|---|---|
+| Di 21.07. | 📢 Eröffnungspost |
+| Fr 24.07. | 1 — Erfrischendes Körperspray |
+| Di 28.07. | 2 — Kühler Kopf |
+| Fr 31.07. | 3 — Fussbäder |
+| Di 04.08. | 4 — Kühle Kompresse |
+| Fr 07.08. | 5 — Haut nach dem Sonnenbad |
+| Di 11.08. | 6 — Wenn's summt und surrt |
+| Fr 14.08. | 7 — Entspannungsbad |
+| Di 18.08. | 8 — Meditation & Achtsamkeit |
+| Fr 21.08. | 9 — Sonnenuntergang im Fläschchen |
+| Di 25.08. | 10 — Zitronen-Pfefferminz-Limonade |
+| Fr 28.08. | 11 — Aromawürfel |
+| Di 01.09. | 12 — Botanical Spritz & Bowle |
+| Fr 04.09. | 13 — Trink dich wach & Sundowner |
+| Di 08.09. | 14 — Kräuteröle in der Küche |
+| Fr 11.09. | 15 — Reisebegleiter |
+| Di 15.09. | 16 — Wandern, Lagerfeuer, Garten |
+
+**Anpassbar:** Bei Sommerferien die Reise- (15) und Outdoor-Beiträge (16) gern in den August vorziehen. Für schnelleres Tempo 3×/Woche (Mo/Mi/Fr) posten — dann bist du Ende August durch.
+**Ende August/September:** Übergang zum Herbst-Paket vorbereiten.
 
 ---
 
