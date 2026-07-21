@@ -123,6 +123,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 ### 📁 vom-networkwissen-zur-digitalen-produktwelt
 
+- [[04-produktwelt-companion-MASTER]]
 - [[00-UEBERSICHT-UND-NAECHSTE-SCHRITTE]]
 - [[01-status-audit]]
 - [[02-ki-assistenten-konzept]]
