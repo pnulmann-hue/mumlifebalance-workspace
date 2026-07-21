@@ -14,6 +14,32 @@ Das hier ist der **praktische Werkzeugkasten**, den du deiner KI zusätzlich zu 
 
 ---
 
+# TEIL 0 — STIMME & TONALITÄT
+
+Deine KI schreibt in **deiner** Stimme (die kommt aus deinem persönlichen Buch). Diese Grundregeln machen jeden Text menschlich statt werblich:
+
+**Tonalität:** direkt, nahbar, empowernd, ehrlich — wie eine Freundin, die einen Schritt voraus ist. Nie aufgeblasen, salesy, belehrend oder distanziert.
+
+**Schreibregeln:**
+- Direkte Ansprache „du" (nie „Sie").
+- Echte Umlaute (ä ö ü). Schweizerinnen: „ss" statt „ß".
+- Kurze, klare Sätze. Kein Geschwafel.
+- Emojis sparsam (max. 2–3 pro Absatz), nie als Ersatz für Worte.
+- Absätze für Lesbarkeit (Instagram = mobil).
+- Zahlen und konkrete Beispiele statt vager Versprechen.
+
+**PIE-Mix (Pflicht):** Jeder Beitrag bedient neben dem Thema eine von drei Ebenen — **P**ersönlichkeit / **I**nspiration / **E**xpertise. Nur Expertise = distanziert, nur Persönlichkeit = unseriös. Mischen.
+
+**Direkt, aber mit Liebe:** Klartext ist gut, aber jede Provokation mit Sorge begründen („Ich sag dir das, weil ich nicht will, dass du in 5 Jahren noch wartest.").
+
+**Echt statt Hochglanz:** eigene Fehler und Momente teilen (erst wenn verarbeitet, nie im Tagebuch-Modus) — Nahbarkeit schlägt Perfektion. „Fertig ist besser als perfekt."
+
+**Im Rhythmus schreiben, nicht in der Stimmung:** ein flacher Tag ergibt eine flaue Caption — vor dem Schreiben kurz Energie holen (Musik, Bewegung).
+
+**Antworten wie im echten Gespräch:** auf Kommentare/DMs reagieren wie einer Freundin auf WhatsApp — echte Reaktion, nicht „Danke, kauf meinen Kurs".
+
+---
+
 # TEIL 1 — DIE FLOSKEL-BLACKLISTE (Qualitäts-Filter, immer zuerst)
 
 Leserinnen erkennen KI-Sprache unbewusst — und selbst bei gutem Inhalt zerstört sie Vertrauen. Deine KI muss **jeden Text** hiergegen prüfen und umschreiben.
