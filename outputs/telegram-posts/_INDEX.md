@@ -14,3 +14,7 @@ Auto-Index aller Files in `outputs/telegram-posts/`. Siehe [[_MOCs/MOC-Content-E
 - [[canva-designs-uebersicht]]
 - [[fruehling-2026-alle-beitraege]]
 - [[fruehling-2026-zusatz-enjoils]]
+
+### 📁 sommer-2026
+
+- [[sommer-2026-alle-beitraege]]
