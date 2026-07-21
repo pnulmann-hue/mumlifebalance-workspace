@@ -1,12 +1,12 @@
 ---
-tags: [produkt, produktwelt-companion, mba, ki-assistent]
+tags: [produkt, produktwelt-companion, ki-assistent]
 ---
 
 # Produktwelt-Companion — MASTER-Spec
 
 **Stand:** 2026-07-21 · Weiterentwicklung von `02-ki-assistenten-konzept.md`
 **Was neu ist:** Statt 6 getrennter Bots (alter Plan) EIN geführter End-to-End-Companion, der aus Thema/Nische/Zielgruppe die komplette Produktwelt baut — inkl. Inhalten, Funnel und Salespage.
-**Einsatz:** Bonus im Kurs „Vom Networkwissen zur digitalen Produktwelt" + MBA-Companion.
+**Einsatz:** Eigenständiges Tool — Companion zum Kurs „Vom Networkwissen zur digitalen Produktwelt". Steht für sich; eine MBA-Einbindung ist optional und später.
 **Zielperson:** Deine Ladys (Network-Mamas), die ihr Networkwissen in eigene digitale Produkte verwandeln wollen.
 
 ---
@@ -221,7 +221,7 @@ scripts/produktwelt-companion/
 1. **Wissensgrundlage-Export** für „Digitale Produktwelt" bauen (wie IKM) — damit der Companion grounded ist.
 2. **System-Prompt** aus dieser Spec finalisieren + mit 2-3 **Test-Dialogen** durchspielen (baut sie fürs eigene Thema wirklich eine saubere Treppe?).
 3. **Deployment-Weg wählen** (Web-App vs. Claude Project) → dann bauen.
-4. Im Kurs + MBA-Hub als Lektion **„Dein Produktwelt-Companion"** verlinken.
+4. Im Kurs als Lektion **„Dein Produktwelt-Companion"** verlinken (MBA-Einbindung optional später).
 
 ---
 
