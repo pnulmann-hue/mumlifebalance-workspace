@@ -9,7 +9,7 @@ Auto-Index aller Files in `outputs/doterra-mail/`. Erstellt vom `/doterra-mail`-
 
 ## Dateien
 
-_(noch keine — der erste `/doterra-mail`-Lauf trägt hier ein)_
+- [[2026-07-21-newsletter-bogo-sommer]]
 
 ---
 
