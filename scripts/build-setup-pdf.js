@@ -1,7 +1,10 @@
 const fs = require('fs');
 
-const SRC = '/home/user/mumlifebalance-workspace/outputs/produkte/claude-als-networkerin/03-business-brain-setup-paket.md';
-const OUT_HTML = '/tmp/claude-0/-home-user-mumlifebalance-workspace/f0de49ee-3b32-5bb6-a1b0-af7e1ff508f4/scratchpad/setup-paket.html';
+// argv: [2]=src md, [3]=out html, [4]=cover title (| = Zeilenumbruch), [5]=cover subtitle
+const SRC = process.argv[2] || '/home/user/mumlifebalance-workspace/outputs/produkte/claude-als-networkerin/03-business-brain-setup-paket.md';
+const OUT_HTML = process.argv[3] || '/tmp/claude-0/-home-user-mumlifebalance-workspace/f0de49ee-3b32-5bb6-a1b0-af7e1ff508f4/scratchpad/setup-paket.html';
+const COVER_TITLE = process.argv[4] || 'Dein Claude-|Business-Brain';
+const COVER_SUB = process.argv[5] || 'Setup, Skill-Datei &amp; Prompts — damit Claude dein Kurs-Wissen kennt und dich. Schritt für Schritt zum Assistenten, der in deiner Sprache denkt.';
 
 let md = fs.readFileSync(SRC, 'utf8');
 // strip frontmatter
@@ -123,8 +126,8 @@ const page = `<!DOCTYPE html>
 <div class="cover">
   <div class="cover__kicker">Dein Starter-Kit</div>
   <div class="cover__rule"></div>
-  <div class="cover__title">Dein Claude-<br/>Business-Brain</div>
-  <div class="cover__sub">Setup, Skill-Datei &amp; Prompts — damit Claude dein Kurs-Wissen kennt und dich. Schritt für Schritt zum Assistenten, der in deiner Sprache denkt.</div>
+  <div class="cover__title">${COVER_TITLE.split('|').join('<br/>')}</div>
+  <div class="cover__sub">${COVER_SUB}</div>
   <div class="cover__brand">Patricia Ulmann · Mum Life Balance</div>
 </div>
 ${html}
