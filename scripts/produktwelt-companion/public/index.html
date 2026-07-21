@@ -50,6 +50,9 @@
     .btn{border:none;border-radius:14px;background:var(--petrol);color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer;padding:13px 22px;transition:transform .05s;}
     .btn:active{transform:scale(.98);} .btn:disabled{opacity:.5;cursor:default;}
     .btn.full{width:100%;margin-top:18px;}
+    .actions{display:none;justify-content:center;gap:8px;margin-top:12px;}
+    .mini{border:1.5px solid var(--petrol);background:#fff;color:var(--petrol);font-family:inherit;font-weight:700;font-size:13px;border-radius:20px;padding:7px 15px;cursor:pointer;}
+    .mini.ghost{border-color:rgba(41,85,109,.3);color:var(--dunkelblau);}
     .err{background:#f6e2da;color:#c0603a;border-radius:12px;padding:12px 14px;margin:10px 0;font-weight:600;text-align:center;}
     footer{text-align:center;padding:10px 0 18px;font-size:12.5px;color:rgba(12,28,48,.5);}
   </style>
@@ -60,6 +63,10 @@
       <div class="eyebrow">Produktwelt-Companion</div>
       <h1>Von der Idee zur fertigen Produktwelt</h1>
       <p>Von deinem Thema bis zur fertigen Salespage — Schritt für Schritt gemeinsam gebaut.</p>
+      <div class="actions" id="actions">
+        <button class="mini" id="saveBtn">💾 Ergebnis sichern</button>
+        <button class="mini ghost" id="newBtn">↻ Neu starten</button>
+      </div>
     </header>
 
     <section id="intro">
@@ -92,8 +99,16 @@
     const sendBtn = document.getElementById('sendBtn');
     const startBtn = document.getElementById('startBtn');
     const intro = document.getElementById('intro');
+    const actions = document.getElementById('actions');
+    const saveBtn = document.getElementById('saveBtn');
+    const newBtn = document.getElementById('newBtn');
+    const STORAGE_KEY = 'pwc_conversation_v1';
     let messages = [];   // {role, content}
     let busy = false;
+
+    function saveState(){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(messages)); }catch(e){} }
+    function clearState(){ try{ localStorage.removeItem(STORAGE_KEY); }catch(e){} }
+    function enterChat(){ intro.style.display='none'; chat.style.display='block'; composer.style.display='flex'; actions.style.display='flex'; }
 
     function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 
@@ -141,25 +156,60 @@
 
     async function send(userText){
       if(busy) return; busy=true; sendBtn.disabled=true;
-      if(userText){ messages.push({role:'user',content:userText}); addBubble('user',userText,false); }
+      if(userText){ messages.push({role:'user',content:userText}); addBubble('user',userText,false); saveState(); }
       showTyping();
       try{
         const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages})});
         const data=await r.json();
         hideTyping();
         if(!r.ok||!data.reply){ showErr(data.error||'Hat nicht geklappt — bitte nochmal.'); }
-        else{ messages.push({role:'assistant',content:data.reply}); addBubble('assistant',md(data.reply),true); }
+        else{ messages.push({role:'assistant',content:data.reply}); addBubble('assistant',md(data.reply),true); saveState(); }
       }catch(e){ hideTyping(); showErr('Verbindung hat gehakt — bitte nochmal senden.'); }
       busy=false; sendBtn.disabled=false; inp.focus();
     }
 
     startBtn.addEventListener('click',()=>{
-      intro.style.display='none'; chat.style.display='block'; composer.style.display='flex';
+      enterChat();
       send('Los, lass uns meine Produktwelt bauen.');
     });
     sendBtn.addEventListener('click',()=>{ const v=inp.value.trim(); if(v){ inp.value=''; inp.style.height='auto'; send(v); } });
     inp.addEventListener('keydown',(e)=>{ if(e.key==='Enter'&&!e.shiftKey){ e.preventDefault(); sendBtn.click(); } });
     inp.addEventListener('input',()=>{ inp.style.height='auto'; inp.style.height=Math.min(inp.scrollHeight,140)+'px'; });
+
+    // --- Ergebnis als Textdatei herunterladen ---
+    function downloadResult(){
+      if(!messages.length){ return; }
+      const stamp=new Date().toISOString().slice(0,10);
+      let out='MEINE PRODUKTWELT\nerstellt mit dem Produktwelt-Companion · '+stamp+'\n\n';
+      messages.forEach((m,i)=>{
+        if(i===0 && m.role==='user') return; // Start-Trigger überspringen
+        const who=m.role==='user'?'DU':'COMPANION';
+        const t=m.content.replace(/\*\*(.+?)\*\*/g,'$1').replace(/^#{1,6}\s+/gm,'');
+        out+='── '+who+' ──\n'+t.trim()+'\n\n';
+      });
+      const blob=new Blob([out],{type:'text/plain;charset=utf-8'});
+      const a=document.createElement('a');
+      a.href=URL.createObjectURL(blob);
+      a.download='meine-produktwelt-'+stamp+'.txt';
+      document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(a.href);
+    }
+    saveBtn.addEventListener('click',downloadResult);
+    newBtn.addEventListener('click',()=>{ if(confirm('Neu starten? Dein aktueller Verlauf wird gelöscht.')){ clearState(); location.reload(); } });
+
+    // --- Bei Rückkehr: gespeicherten Verlauf wiederherstellen ---
+    (function restore(){
+      let saved=null;
+      try{ saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null'); }catch(e){}
+      if(Array.isArray(saved) && saved.length){
+        messages=saved; enterChat();
+        messages.forEach((m,i)=>{
+          if(i===0 && m.role==='user') return;
+          if(m.role==='assistant') addBubble('assistant',md(m.content),true);
+          else addBubble('user',m.content,false);
+        });
+      }
+    })();
   </script>
 </body>
 </html>
