@@ -16,7 +16,7 @@ tags: [camping, tagesplan]
 ## 🚗 Fr 24.7. — Anreise & Einrichten
 - **Tag:** Ankommen, Zelt aufbauen, Platz einrichten, ankommen lassen. Kein Programm.
 - **Znüni/Mittag unterwegs:** aus dem Vorrat / Raststätte
-- **Abend:** 🔥 **D1 Grillplausch** — Würste/Cervelats/Steaks vom Grill + Kartoffelsalat/Brot + Maiskolben + grüner Salat (locker, kein Kochstress)
+- **Abend:** **einfach** — Take-away von Oma Anni's od. Wienerli + Brot/Kartoffelsalat + Salat (kein Kochstress am Ankunftstag)
 - **To-Do:** Brot fürs Frühstück am Platz-Laden **vorbestellen** · Gästekarte am Empfang holen
 
 ---
@@ -24,20 +24,20 @@ tags: [camping, tagesplan]
 ## 🐑 Sa 25.7. — Ankommen im Wallis (lokal & entspannt)
 - **Vormittag:** **Grosseinkauf in Visp** (Migros/Coop) — Frisches + Kühlbox-Nachschub
 - **Nachmittag:** **Ausserberg** (Nachbardorf, wenige Min) — Schwarznasenschafe auf den Weiden + kurzer Spaziergang · danach Platz-Pool
-- **F:** F1 Brot/Café complet (Brot vorbestellt) · **Mittag:** leicht am Platz / Znüni · **Abend:** **D5 Älplermagronen** + grüner Salat (gemütlicher erster Camp-Znacht)
+- **F:** F1 Brot/Café complet (Brot vorbestellt) · **Mittag:** leicht am Platz / Znüni · **Abend:** **Älplermagronen** + Apfelmus + grüner Salat (gemütlicher erster Camp-Znacht)
 
 ---
 
 ## 🏔️ So 26.7. — Aletsch-Panorama (Familienklassiker)
 - **Tag:** **Fiescheralp → Bettmeralp → Riederalp** — breite Wege, autofreie Dörfer, Beizen unterwegs, grandioses Panorama. Nächste Bahn nie weit.
-- **F:** F4 Overnight Oats (am Vorabend anrühren) · **Mittag:** **L1 Sandwiches** to-go · **Abend:** **D3 Spaghetti Bolognese** (Thermomix-Sauce, hands-off) + grüner Salat
+- **F:** F4 Overnight Oats (am Vorabend anrühren) · **Mittag:** **L1 Sandwiches** to-go · **Abend:** **Spaghetti Bolognese** (Thermomix-Sauce, hands-off) + Salat
 
 ---
 
 ## 🚞 Mo 27.7. — Zermatt & Gornergrat (der grosse Tag)
 - **Früh los!** Gornergratbahn hinauf → **3100 m, 29 Viertausender** ganz ohne Wandern. Dann **Riffelseeweg Rotenboden → Riffelberg** (~1 h, fast nur bergab, Matterhorn-Spiegelung im Riffelsee).
 - ⚠️ Stück **Gornergrat → Rotenboden auslassen** (steinig/steil) — dafür ist die Bahn da.
-- **F:** F2 Rührei (kräftig vor dem langen Tag) · **Mittag:** **L1/L3** to-go od. im Bergrestaurant · **Abend:** 🔥 **D2 Grill-Pouletschenkel + Reis** + Gemüse + Salat (Grill easy nach langem Tag)
+- **F:** F2 Rührei (kräftig vor dem langen Tag) · **Mittag:** **L1/L3** to-go od. im Bergrestaurant · **Abend:** **Bratwurst mit Zwiebelsauce + Kartoffelstock** + Erbsli-Rüebli + Salat
 
 ---
 
@@ -45,7 +45,7 @@ tags: [camping, tagesplan]
 - **Tag:** **Belalp** (Seilbahn ab Blatten/Naters, ~30–40 Min Anfahrt) — **auf eigene Faust**, ohne Führung. Hochfahren wann's passt, über die **Alpweiden spazieren** und die **Schwarznasenschafe und Eringer-Kühe** ganz entspannt selbst suchen (weiden meist gut sichtbar auf den Wiesen). Familienfreundliche, gemütliche Wege oben.
 - **Vorteil:** kein früher Start, keine Anmeldung, eigenes Tempo — ihr geht rauf, wann ihr wollt, und so lang ihr mögt.
 - **Nachmittag:** zurück, Platz/Pool
-- **F:** **F2 Rührei** (in Ruhe) · **Mittag:** **L2 Wraps** to-go od. Bergrestaurant · **Abend:** **D4 Pouletgeschnetzeltes an Rahmsauce + Nudeln** + Salat
+- **F:** **F2 Rührei** (in Ruhe) · **Mittag:** **L2 Wraps** to-go od. Bergrestaurant · **Abend:** **Pouletgeschnetzeltes an Rahmsauce + Reis + Gemüse** + Salat
 
 > 📋 **Belalp-Praxis:**
 > - Nur **Seilbahn-Ticket Blatten–Belalp** nötig (Sommer-Betriebszeiten am Vortag kurz checken) — Tiere anschauen ist gratis.
@@ -58,13 +58,13 @@ tags: [camping, tagesplan]
 ## 🕳️ Mi 29.7. — Lac Souterrain de St-Léonard (der unterirdische See)
 - **Tag:** **Lac Souterrain** (~40 Min, Richtung Sion) — **30-Min-Ruderboot** über Europas grössten natürlichen Höhlensee, konstant kühl (~15 °C). ⚠️ **Online reservieren!** Im Juli tägl. 09:00–17:30. Familie ~CHF 52.
 - Danach: z. B. in Sierre/Sion einkehren oder zurück an den Platz/Pool
-- **F:** F3 Bircher-Bowl · **Mittag:** unterwegs / **L1** · **Abend:** 🔥 **D6 Grillkoteletts + Grillkartoffeln** + Grillgemüse + Salat (entspannter Grillabend)
+- **F:** F3 Bircher-Bowl · **Mittag:** unterwegs / **L1** · **Abend:** **Spaghetti Bolognese** (2. Mal) od. Reste + Salat
 
 ---
 
 ## 🧘 Do 30.7. — Ruhetag, Baden & Puffer
 - **Tag:** Erholung am Platz · bei Hitze 🏊 **Brigerbad** (grösstes Alpen-Freiluft-Thermalbad, 182-m-Rutsche, Kinder bis 10 gratis, ~15 Min) · langsam ans Zusammenpacken denken
-- **F:** F1 Brot/Café complet · **Mittag:** am Platz / im Brigerbad · **Abend:** **D7 Hacktätschli + Kartoffelstock** + Erbsli-Rüebli + Salat
+- **F:** F1 Brot/Café complet · **Mittag:** am Platz / im Brigerbad · **Abend:** **Älplermagronen** (2. Mal) od. Bratwurst + Kartoffelstock + Salat
 
 ---
 
