@@ -15,6 +15,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 export const config = { runtime: 'nodejs', maxDuration: 60 };
 
@@ -23,7 +24,10 @@ const MAX_TURNS = 60; // Sicherheitsnetz gegen zu lange Verläufe
 
 let promptCache = null;
 async function loadFile(name) {
+  // Modul-relativer Pfad zuerst: Vercels Bundler (@vercel/nft) erkennt das
+  // import.meta.url-Muster und packt die Datei in die Serverless-Funktion mit ein.
   const candidates = [
+    fileURLToPath(new URL(`../lib/${name}`, import.meta.url)),
     join(process.cwd(), 'lib', name),
     join(process.cwd(), 'scripts/produktwelt-companion/lib', name),
   ];
