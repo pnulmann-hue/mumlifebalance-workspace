@@ -103,5 +103,38 @@ Milch · Brot (täglich am Platz-Laden vorbestellen) · Eier · Naturjoghurt · 
 
 ---
 
+## 🥐 C) Frühstück, Snacks & Getränke
+
+### 📦 Mitnehmen (haltbar)
+**Frühstück:**
+- Haferflocken ~1 kg + Müesli/Birchermüesli ~1 kg
+- Kaffeekapseln (grosszügig) · Tee · Kakao/Ovomaltine
+- Konfi (1–2) · Honig · Nutella
+- Nüsse/Samen + Dörrfrüchte (fürs Müesli)
+- Zucker/Vanillezucker (klein)
+
+**Znüni/Snacks & To-Go-Lunch:**
+- Tortilla-Wraps · Knäckebrot/Darvida/Cracker
+- Farmer-Riegel · Reiswaffeln · Guetzli · Chips/Salziges
+- Nüsse/Trockenfrüchte fürs Wandern
+
+**Getränke:**
+- Mineralwasser (Harass) · Sirup für die Kids · optional Bier/Wein
+
+**Diverses (Basis):**
+- Ketchup · Senf · Mayo · Essiggurken
+
+### 🧊 Vor Ort kaufen (gekühlt/frisch, laufend alle 1–2 Tage)
+**Frühstück:**
+- Milch (viel — Frühstück + Kaffee) · Butter · Eier (Rührei) · Naturjoghurt (Bircher/Overnight Oats)
+- Frühstückskäse + Aufschnitt · Brot/Zopf/Gipfeli (täglich am Platz vorbestellen)
+- Frische Früchte (Äpfel, Bananen, Beeren)
+
+**Für die To-Go-Lunches unterwegs:**
+- Trockenfleisch/Salami · Käsewürfel/Babybel · Hummus/Frischkäse
+- Sandwich-Zutaten (nutzt den Frühstückskäse + Aufschnitt mit)
+
+---
+
 ## 🔗 Verwandte Notizen
 - [[tagesplan|Tagesplan 24.–31. Juli]] · [[packliste|Packliste]]
