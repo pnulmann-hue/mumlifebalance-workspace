@@ -18,8 +18,8 @@ Geh auf **claude.ai** und melde dich an. Der Gratis-Zugang reicht zum Starten. W
 **Schritt 2 — Projekt erstellen**
 In der linken Leiste auf **„Projekte"** → **„Neues Projekt"**. Nenn es **„Mein Business-Brain"**. Ein Projekt ist wie ein eigener Raum, in dem Claude sich alles merkt, was du reinlegst — über jeden Chat hinweg.
 
-**Schritt 3 — Die drei Dokumente reinladen**
-Lade die drei Dokumente aus Teil 2 ins Projekt (beim Projekt auf **„Wissen hinzufügen"** bzw. das Büroklammer-Symbol). Das ist das Gehirn deines Assistenten.
+**Schritt 3 — Die Wissensdateien reinladen**
+Lade die Dateien aus Teil 2 ins Projekt (beim Projekt auf **„Wissen hinzufügen"** bzw. das Büroklammer-Symbol). Das ist das Gehirn deines Assistenten.
 
 **Schritt 4 — Die Projekt-Instruktion einsetzen**
 Jedes Projekt hat ein Feld für **„Instruktionen"** (manchmal „Custom Instructions" oder „Anweisungen"). Kopier dort den kompletten Text aus **Teil 3** rein. Das sagt Claude, wie er für dich arbeiten soll — deine Regeln, deine Tonalität.
@@ -28,18 +28,15 @@ Fertig. Ab jetzt denkt Claude in deiner Logik und deiner Sprache.
 
 ---
 
-## Teil 2 — Die drei Dokumente, die ins Projekt gehören
+## Teil 2 — Die zwei Dateien, die ins Projekt gehören
 
-Damit Claude echte, kurs-taugliche Ergebnisse in deiner Stimme liefert, braucht er drei Dokumente:
+Damit Claude echte, kurs-taugliche Ergebnisse in deiner Stimme liefert, braucht er zwei Dinge:
 
-**1. Das Kurs-Wissen**
-Die Wissensgrundlage aus deinem Kurs (bekommst du als Download). Das ist die komplette Methode plus alle Frameworks — die Grundlage, auf der Claude denkt.
+**1. Die Instagram-Wissensgrundlage** (Download im Kurs)
+Die Datei `instagram-kundenmaschine-wissensgrundlage.txt` lädst du dir hier im Kurs runter und legst sie ins Projekt. Sie enthält die komplette Methode der Instagram-Kundenmaschine **plus** alle Hook-Formeln, Caption-Strukturen, die sieben Kaufpsychologie-Trigger, die Einwandbehandlung und die Floskel-Blackliste. Genau das macht den Unterschied zwischen generischem und richtig gutem Output.
 
-**2. Die Content-Praxis**
-Das Dokument `content-praxis-frameworks.md` (ebenfalls als Download). Da drin stehen die Hook-Formeln, die Caption-Strukturen, die sieben Kaufpsychologie-Trigger, die Einwandbehandlung und die Floskel-Blackliste. Genau das macht den Unterschied zwischen generischem und richtig gutem Output.
-
-**3. Dein persönliches Buch**
-Dein Business, deine Geschichte, deine Persönlichkeit, deine Stimme. Das gibt es noch nicht — das erstellst du dir selbst mit dem Interview-Prompt aus **Teil 4**. Es ist der wichtigste Teil, denn ohne ihn kennt Claude die Methode, aber nicht dich.
+**2. Dein persönliches Buch** (erstellst du selbst)
+Dein Business, deine Geschichte, deine Persönlichkeit, deine Stimme. Das gibt es noch nicht — das erstellst du dir mit dem Interview-Prompt aus **Teil 4** und legst es als PDF ebenfalls ins Projekt. Es ist der wichtigste Teil, denn ohne ihn kennt Claude die Methode, aber nicht dich.
 
 ---
 
@@ -49,8 +46,9 @@ Das ist der Text, der ins **Instruktionen-Feld** deines Projekts kommt. Kopier i
 
 ```
 Du bist mein persönlicher Business-Assistent. Du kennst mein Business durch
-die Dokumente in diesem Projekt: mein Kurs-Wissen, meine Content-Praxis-
-Frameworks und mein persönliches Buch. Nutze dieses Wissen bei jeder Antwort.
+die Dateien in diesem Projekt: meine Instagram-Wissensgrundlage (Methode plus
+Content-Frameworks) und mein persönliches Buch. Nutze dieses Wissen bei jeder
+Antwort.
 
 MEINE STIMME (halte dich immer daran):
 - Du sprichst mich mit „du" an und schreibst so, wie ich rede: herzlich,
@@ -130,7 +128,7 @@ er mich meinem Kunden vorstellt.
 Fang jetzt mit deiner ersten Frage an.
 ```
 
-**Danach:** Das fertige Dokument, das Claude dir schreibt, kopierst du raus und speicherst es als PDF (oder als Textdatei). Dann lädst du es als drittes Dokument in dein Business-Brain-Projekt. Ab jetzt kennt Claude dein Kurs-Wissen UND dich.
+**Danach:** Das fertige Dokument, das Claude dir schreibt, kopierst du raus und speicherst es als PDF (oder als Textdatei). Dann lädst du es als zweite Datei in dein Business-Brain-Projekt — neben die Instagram-Wissensgrundlage. Ab jetzt kennt Claude die Methode UND dich.
 
 ---
 

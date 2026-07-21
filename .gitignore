@@ -313,3 +313,6 @@ scripts/story-render-bot/render/node_modules/
 # doTERRA-Strategie + Funnel-Interna — nicht ins oeffentliche Repo (Team/Upline)
 outputs/content-kalender/doterra-jahresrhythmus.md
 outputs/funnels/doterra-schlaf-ritual/**
+
+# Kurs-Download-Deliverables (Kundenmaterial, bewusst versioniert)
+!outputs/produkte/**/downloads/*.pdf
