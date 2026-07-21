@@ -5,289 +5,446 @@ tags: [content, telegram, doterra]
 # ☀️ Sommer-Beiträge 2026
 ## Telegramgruppe "Gesund durchs ganze Jahr mit ätherischen Ölen"
 
-**10 Haupt-Beiträge für die Sommer-Saison** (Mitte Mai – Ende August)
+**16 Beiträge für die Sommer-Saison** (Mitte Mai – Ende August)
 Copy-paste-ready für Telegram — Markdown wird unterstützt.
-Knüpft direkt an das Frühlings-Paket an ([[fruehling-2026-alle-beitraege]]).
+
+**Alle Rezepte & Tropfenzahlen stammen 1:1 aus den Enjoils-Sommerheften** (Sommer 24 „Aromatisch durch den Sommer" + Sommer 25 „Von der Sonne geküsst") — nur in Patricias Stimme neu erzählt und compliance-sicher formuliert. Nichts erfunden.
+
+Quellen-Übersicht am Ende der Datei.
 
 ---
 
-## ☀️ Beitrag 1 — Sommer-Energie ohne Nachmittagstief
+## 🧊 Beitrag 1 — Das erfrischende Körperspray
 
-🌞 *Sommer klingt nach Leichtigkeit — aber die Hitze zieht ganz schön Kraft.*
+🌞 *Wenn die Hitze steht und die Haut nach Abkühlung ruft.*
 
-Kennst du das? Mittags gebrochen, nachmittags nur noch am Funktionieren. Bei mir war das jeden Sommer so, bis ich zwei kleine Rituale eingebaut hab.
+Ich hab immer eine kleine Sprühflasche im Kühlschrank stehen. Ein Sprüher — und der Sommer ist gleich viel angenehmer.
 
-🌬️ *Mein Frische-Diffuser für heisse Tage:*
+💧 *Mein Frische-Spray:*
 
-• 3 Tropfen **Peppermint** — kühlt gefühlt sofort
-• 2 Tropfen **Lime** — spritzig
-• 2 Tropfen **Wild Orange** — hebt die Stimmung
+• 100 ml destilliertes Wasser
+• 10 Tropfen **Peppermint**
+• 10 Tropfen **Lemon**
 
-Läuft bei mir am Küchentisch, wenn die Luft steht.
+📍 *So geht's:*
+Alles in eine Sprühflasche, im Kühlschrank aufbewahren, vor Gebrauch schütteln. Auf die Haut sprühen — sorgt für sofortige Abkühlung und Frische.
 
-💡 *Bonus-Tipp:* 1 Tropfen **Peppermint** in fraktioniertes Kokosöl, in den Nacken. Das ist wie ein kalter Waschlappen — nur eleganter.
+🌿 *Sommer 25 macht's noch feiner:* ein pflegendes Körperspray aus **Neroli-Hydrolat** und einem Hauch **Grapefruitöl** — belebt und pflegt zugleich.
 
 ━━━━━━━━━━━━━━━━━━
-Wann trifft dich das Sommer-Tief am meisten? ☀️
-Schreib mir in die Kommentare!
+Wo brauchst du die Abkühlung am dringendsten? 🧊
 
-💛 *Hinweis:* Zitrusöle sind photosensitiv — nach dem Auftragen nicht direkt in die Sonne.
+💛 *Hinweis:* Zitrusöle sind photosensitiv — besprühte Haut nicht direkt in die Sonne.
 
 ---
 
-## 🦟 Beitrag 2 — Wenn die Sommergäste summen
+## ❄️ Beitrag 2 — Kühler Kopf, wenn's heiss wird
 
-🌿 *Laue Sommerabende auf der Terrasse — und dann kommen SIE.*
+🔥 *Hitze im Nacken, Druck an den Schläfen, alles zäh?*
 
-Mücken finden mich, egal wo ich sitze. Statt zur Chemie zu greifen, hab ich mir was Natürliches gemischt.
+Für genau diese Momente hab ich einen kleinen Roller, der sofort erfrischt — ohne die Haut zu reizen.
 
-🛡️ *Mein "Lasst-mich-in-Ruhe"-Spray:*
+🌬️ *Kühler-Kopf-Roller:*
 
-• 100 ml Sprühflasche
-• 15 Tropfen **TerraShield** (der fertige Outdoor-Blend)
-• mit Wasser auffüllen, vor Gebrauch schütteln
+• 10 ml Roll-On
+• 1 Tropfen **Peppermint**
+• 1 Tropfen **Rosmarin**
+• 1 Tropfen **Spearmint**
+• aufgefüllt mit fraktioniertem Kokosöl
 
 📍 *Anwendung:*
-Auf Arme, Beine, Nacken sprühen, bevor du rausgehst. Alle paar Stunden nachlegen.
+Bei Hitze auf Nacken und Schläfen auftragen. Die Frische stellt sich sofort ein.
 
-🌱 *Wer selber blendet:*
-Je 5 Tropfen **Citronella**, **Lemongrass** und **Cedarwood** in 30 ml fraktioniertem Kokosöl.
+━━━━━━━━━━━━━━━━━━
+Team „Fenster auf" oder „Rollläden runter" an Hitzetagen? ❄️
 
-🕯️ *Extra:* **Citronella** oder **Lemongrass** in den Outdoor-Diffuser oder ein paar Tropfen auf eine Kerzen-Untertasse — hält die Runde angenehm.
+💛 *Hinweis:* Peppermint nicht bei Kleinkindern in Gesicht/Nacken anwenden.
+
+---
+
+## 🦶 Beitrag 3 — Fussbäder, die den Sommer retten
+
+🌡️ *Nach einem langen, heissen Tag sind die Füsse oft das Erste, was streikt.*
+
+Ein kühles Fussbad ist mein liebstes Feierabend-Ritual im Sommer. Zwei Varianten, beide aus den Heften:
+
+🌿 *Die einfache (Sommer 24):*
+Schüssel mit kaltem Wasser, dazu
+• 10 Tropfen **Peppermint**
+• 5 Tropfen **Lavender**
+Füsse 15–20 Minuten eintauchen.
+
+✨ *Die Deluxe-Version (Sommer 25):*
+Kühles (nicht eiskaltes!) Wasser + 3 EL Meersalz, dazu
+• 3 Tropfen **Peppermint**
+• 2 Tropfen **Lavender**
+• 1 Tropfen **Lemon**
+Die Öle vorher in 1 TL Honig oder einem Schuss Sahne verrühren, damit sie sich gut verteilen.
+
+💡 *Extra-Tipp:* Nebenbei die Fusssohlen mit einer kleinen Bürste aktivieren — bringt den Kreislauf in Schwung.
+
+━━━━━━━━━━━━━━━━━━
+Fussbad-Fans hier? 🙋‍♀️
+
+💛 *Hinweis:* Zitrusöle sind photosensitiv. Ätherische Öle im Wasser immer erst emulgieren.
+
+---
+
+## 🧖‍♀️ Beitrag 4 — Die kühle Kompresse für Nacken & Stirn
+
+😮‍💨 *Stickige Temperaturen, schwerer Kopf, Hitze-Kopfweh?*
+
+Wenn mir die Wärme zu viel wird, hilft mir eine gezielte kühle Kompresse — schnell gemacht, sofort spürbar.
+
+💧 *So geht's:*
+
+• 1 Liter kaltes Wasser
+• 2 Tropfen **Peppermint**
+• 2 Tropfen **Lavender**
+• 1 Tropfen **Rosengeranie (Geranium)**
+
+Die Öle vorher mit einem Schuss Apfelessig oder Hydrolat emulgieren. Ein kleines Gästehandtuch oder Mulltuch darin tränken, auswringen, auf Nacken oder Stirn legen, Augen schliessen.
+
+🧳 *Frischekick to go:*
+Die Mischung in ein Schraubglas füllen, ein Tuch reinlegen, im Kühlschrank lagern. Perfekt für unterwegs.
+
+━━━━━━━━━━━━━━━━━━
+Wie spürst du Sommerhitze am stärksten — Kopf, Füsse oder Kreislauf? 🌡️
+
+---
+
+## 🌅 Beitrag 5 — Haut nach dem Sonnenbad
+
+☀️ *Ein Tag draussen — und abends will die Haut umsorgt werden.*
+
+Nach der Sonne braucht die Haut Kühlung und Pflege. Aloe Vera und Lavendel sind dafür ein perfektes Duo.
+
+💜 *After-Sun-Lotion (Sommer 24):*
+
+• 100 ml Aloe-Vera-Gel
+• 10 Tropfen **Lavender**
+• 5 Tropfen **Kamille (Roman Chamomile)**
+
+Wirkt kühlend und wohltuend auf sonnengereizte Haut.
+
+🌿 *Sommer-Gesichtsöl für den Glow (Sommer 25):*
+
+• 30 ml Jojobaöl
+• je 2 Tropfen **Manuka**, **Rosengeranie** und **Frankincense**
+
+Regeneriert nach dem Sonnenbad und schenkt einen sommerlichen Glow. Im Sommer gilt: leichte Texturen, weniger ist mehr.
+
+━━━━━━━━━━━━━━━━━━
+Welches Öl ist dein Hautliebling im Sommer? 🌅
+
+💛 *Hinweis:* Ätherische Öle ersetzen keinen Sonnenschutz. Bei Sonnenbrand mit Blasen bitte ärztlich abklären.
+
+---
+
+## 🦟 Beitrag 6 — Wenn's summt und surrt
+
+🌿 *Laue Sommerabende sind traumhaft — bis die Mücken kommen.*
+
+Duftende Abwehr statt chemischer Keule. Diese Öle finden Insekten alles andere als einladend — wir dagegen herrlich frisch.
+
+🛡️ *Insektenschutzspray (Sommer 24):*
+
+• 50 ml Hamameliswasser
+• 50 ml destilliertes Wasser
+• 10 Tropfen **Zitronengras (Lemongrass)**
+• 10 Tropfen **Teebaum (Tea Tree)**
+• 10 Tropfen **Eukalyptus**
+
+Auf unbedeckte Hautstellen sprühen.
+
+🎯 *DIY-Stich-Roller (Sommer 25):*
+
+• 10 ml Roll-On mit neutralem Bio-Öl
+• 1 Tropfen **Lavender**
+• 1 Tropfen **Teebaum**
+• 1 Tropfen **Immortelle**
+Sanft auf juckende Stellen — beruhigt zuverlässig.
+
+🕯️ *Für Balkonabende:*
+Terrakottaschälchen oder Duftsteine mit **Citronella** und **Eukalyptus** beträufeln — hält Mücken fern und bringt Sommerduft in die Luft.
 
 ━━━━━━━━━━━━━━━━━━
 Team Mückenmagnet oder wirst du verschont? 🦟
 
-💛 *Hinweis:* Bei Kindern immer stärker verdünnen. Nicht auf gereizte Haut.
+💛 *Hinweis:* Bei Kindern stärker verdünnen, nicht auf gereizte Haut.
 
 ---
 
-## 🌅 Beitrag 3 — Nach der Sonne: Haut beruhigen
+## 🛁 Beitrag 7 — Entspannungsbad für laue Abende
 
-☀️ *Ein Tag am See, im Garten, auf dem Berg — und abends spannt die Haut.*
+🌙 *Der Sommer ist die perfekte Zeit, um Stress abzubauen und die Seele baumeln zu lassen.*
 
-Zu viel Sonne erwischt uns alle mal. Was mir danach hilft, die Haut runterzukühlen:
+Öle wie Lavendel, Bergamotte und Ylang-Ylang sind bekannt für ihre beruhigenden Eigenschaften. Mein Favorit an milden Abenden:
 
-💜 *Meine After-Sun-Mischung:*
+🌿 *Entspannungsbad (Sommer 24):*
 
-• 30 ml Aloe-Vera-Gel
-• 5 Tropfen **Lavender**
-• 3 Tropfen **Peppermint** (für den Kühl-Effekt)
-• 2 Tropfen **Frankincense**
+• 10 Tropfen **Lavender**
+• 5 Tropfen **Ylang Ylang**
 
-📍 *Anwendung:*
-Sanft auf die erwärmte Haut auftragen — nicht reiben. Fühlt sich an wie ein kühler Hauch.
+Vorher in einem Schuss Sahne oder etwas Honig verrühren, dann ins Badewasser. Die warmen Düfte helfen, den Tag loszulassen.
 
-🧊 *Extra-Tipp:* Das Gel im Kühlschrank lagern. Kalt aufgetragen ist es doppelt wohltuend.
+💛 *Mein Ritual:* Kerze an, Handy weg, einfach nur da sein.
 
 ━━━━━━━━━━━━━━━━━━
-Wie beruhigst du deine Haut nach einem Sonnentag? 🌅
+Bist du Team Wanne oder Team Dusche im Sommer? 🛁
 
-💛 *Hinweis:* Bei Sonnenbrand mit Blasen oder starken Beschwerden bitte ärztlich abklären. Ätherische Öle ersetzen keinen Sonnenschutz.
+💛 *Hinweis:* Ätherische Öle nie unverdünnt ins Badewasser — immer emulgieren.
 
 ---
 
-## 🧊 Beitrag 4 — Der Trick gegen Sommerhitze
+## 🧘 Beitrag 8 — Meditation & Achtsamkeit
 
-🔥 *Wenn das Thermometer klettert und die Wohnung sich aufheizt.*
+✨ *Der Sommer lädt nicht nur zum Geniessen ein — sondern auch zum Innehalten.*
 
-Ich hab keine Klimaanlage. Was ich stattdessen habe: einen kleinen Peppermint-Trick, der Wunder wirkt.
+Die goldene Abendstunde, das Summen der Insekten, das Lichtspiel im Blätterdach. Aromatherapie kann solche Momente vertiefen.
 
-❄️ *Mein Cool-Down-Roller:*
+🌬️ *Meditationsdiffusion (Sommer 24):*
 
-• 10 ml Roll-On
-• 8 Tropfen **Peppermint**
-• aufgefüllt mit fraktioniertem Kokosöl
+• 3 Tropfen **Sandelholz (Sandalwood)**
+• 3 Tropfen **Weihrauch (Frankincense)**
+• 2 Tropfen **Myrrhe**
 
-📍 *Anwendung:*
-Auf Handgelenke, Nacken und Schläfen. Die Haut fühlt sich sofort kühler an.
-
-🌬️ *Für den Raum:*
-Ein feuchtes Tuch mit 2 Tropfen **Peppermint** + **Eucalyptus** vor den Ventilator hängen. Die Luft wird gefühlt frischer.
-
-💧 *Von innen:*
-Immer eine Glasflasche Wasser dabei — bei Hitze trinken wir oft viel zu wenig.
+Diese Öle schaffen eine Atmosphäre der Ruhe und Konzentration — ideal für Meditation, Journaling oder einfach ein paar bewusste Atemzüge.
 
 ━━━━━━━━━━━━━━━━━━
-Wie überlebst du heisse Tage ohne Klimaanlage? 🧊
-
-💛 *Hinweis:* Peppermint nicht bei Kleinkindern im Gesicht/Nacken anwenden.
+Wann findest du im Sommer deine ruhigen Minuten? 🧘
 
 ---
 
-## 🧳 Beitrag 5 — Mein Ferien-Öl-Set
+## 🌆 Beitrag 9 — Sonnenuntergang im Fläschchen
 
-✈️ *Koffer packen mit vier Kindern — da zählt jedes Teil.*
+🌇 *Wenn der Tag sich neigt und die Welt im goldenen Abendlicht schimmert, entfalten Öle ihre besondere Magie.*
 
-Meine Öle kommen immer mit. Nicht das ganze Regal — sondern eine kleine, feine Reise-Crew, die fast alles abdeckt.
+Diese Diffuser-Mischungen sind wie kleine Duftgeschichten für laue Abende — alle aus dem Sommer-25-Heft:
 
-🎒 *Meine Top 5 für unterwegs:*
+🌬️ *Sonnenuntergang im Fläschchen*
+• 3 Tropfen **Bergamotte**
+• 2 Tropfen **Lavender**
+• 1 Tropfen **Vetiver**
 
-• **Lavender** — beruhigt, hilft beim Runterkommen, für kleine Hautthemen
-• **Peppermint** — Erfrischung, Reiseübelkeit, wacher Kopf
-• **ZenGest** (früher DigestZen) — wenn das Essen mal fremd ist
-• **On Guard** — mein Reise-Schutzengel für Hände & Raumluft
-• **Lemon** — im Wasser, als Reiniger, für Frische
+🌅 *Sunset Lounge*
+• 2 Tropfen **Wild Orange**
+• 2 Tropfen **Sandelholz**
+• 1 Tropfen **Ylang Ylang**
 
-🧴 *Praktisch:*
-Als Roll-Ons oder in kleinen 5-ml-Fläschchen — passt in jede Handtasche und übersteht die Flugkontrolle.
-
-💡 *Mein Reise-Ritual:*
-Im Flieger/Auto 1 Tropfen **Lavender** in die Hände, tief einatmen. Die Kinder machen inzwischen mit. 💛
-
-━━━━━━━━━━━━━━━━━━
-Was darf in deinem Koffer nie fehlen? 🧳
-
-💛 *Hinweis:* Bei kleinen Kindern gut verdünnen. Bei Beschwerden im Ausland: Reiseapotheke + Arzt.
-
----
-
-## 🍖 Beitrag 6 — Nach dem Grillabend
-
-🌭 *Sommer heisst Grillieren, Glace, Apéro — herrlich, aber der Bauch murrt manchmal.*
-
-Wenn ich abends zu viel oder zu spät gegessen hab, greif ich zu meinem treuen Helfer.
-
-🌿 *Mein Wohlfühl-Bauch-Ritual:*
-
-• 2 Tropfen **ZenGest** (früher DigestZen)
-• 1 EL fraktioniertes Kokosöl
-
-📍 *Anwendung:*
-Im Uhrzeigersinn sanft auf den Bauch einmassieren. Fühlt sich an, als würde sich alles etwas lösen.
-
-☕ *Als Tee-Alternative:*
-1 Tropfen **Peppermint** oder **ZenGest** in warmem Wasser (Glasbecher!). Nach dem Essen ein Genuss.
-
-💡 *Mein Abend-Tipp:* Nicht direkt nach dem letzten Bissen hinlegen — ein kleiner Spaziergang wirkt Wunder.
-
-━━━━━━━━━━━━━━━━━━
-Was ist dein liebstes Sommer-Grillgericht? 🍖
-
-💛 *Hinweis:* Bei anhaltenden Verdauungsbeschwerden bitte ärztlich abklären.
-
----
-
-## 🌙 Beitrag 7 — Schlafen trotz Sommerhitze
-
-😴 *Die Nächte sind warm, das Zimmer heiss, und der Schlaf will einfach nicht kommen.*
-
-Im Sommer ist erholsamer Schlaf oft die grösste Herausforderung. Das hilft mir, trotzdem runterzufahren.
-
-💜 *Mein Sommer-Schlaf-Setup:*
-
-**🌬️ Im Diffuser (mit kaltem Wasser):**
+⭐ *Sternenzelt*
 • 3 Tropfen **Lavender**
-• 2 Tropfen **Cedarwood**
-• 1 Tropfen **Vetiver** (erdet tief)
+• 2 Tropfen **Bergamotte**
+• 1 Tropfen **Frankincense**
 
-**🦶 Auf die Fusssohlen:**
-1-2 Tropfen **Serenity Blend** (früher Lavender Peace) vor dem Einschlafen.
+🌊 *Salty Breeze*
+• 3 Tropfen **Zypresse**
+• 2 Tropfen **Zitronengras**
+• 1 Tropfen **Peppermint**
 
-🧊 *Hitze-Hack:*
-Bettwäsche tagsüber im Kühlschrank kühlen (in einem Beutel) — kurz vor dem Schlafen aufs Bett. Klingt verrückt, wirkt herrlich.
-
-🌑 *Und:* Zimmer tagsüber abdunkeln, abends stosslüften.
+🌿 *Waldbaden bei Nacht*
+• 2 Tropfen **Fichte**
+• 2 Tropfen **Zeder**
+• 1 Tropfen **Lavender**
 
 ━━━━━━━━━━━━━━━━━━
-Bist du Team "Fenster auf" oder "alles zu" in heissen Nächten? 🌙
+Welcher Name klingt am meisten nach deinem Sommer? Ich hab noch 20 weitere in petto — sag Bescheid, dann teil ich sie. 🌆
 
-💛 *Hinweis:* Bei Schwangerschaft/Stillzeit einzelne Öle vorher abklären.
+💛 *Haustier-Hinweis:* Bei Katzen im Raum Vorsicht beim Diffusen.
 
 ---
 
-## 🍋 Beitrag 8 — Erfrischung im Glas
+## 🍋 Beitrag 10 — Die Zitronen-Pfefferminz-Limonade
 
-💧 *Bei Hitze trinken wir oft zu wenig — und pures Wasser wird schnell langweilig.*
+🥤 *Der Sommer-Klassiker aus dem Heft — erfrischend und ideal für heisse Tage.*
 
-Ich pimpe mein Wasser mit einem Tropfen Öl. Erfrischend, spannend, und ich trinke automatisch mehr.
+🍹 *Zitronen-Pfefferminz-Limonade (Sommer 24):*
 
-🥤 *Meine Sommer-Wasser-Favoriten (je 1 Tropfen pro Glas):*
+• Saft von 4 Zitronen
+• 1 Liter Wasser
+• 2 Tropfen **Lemon**
+• 1 Tropfen **Peppermint**
+• nach Belieben mit Honig oder Agavendicksaft süssen
 
-• **Lemon** — der Klassiker, belebt
-• **Lime** — spritzig-frisch
-• **Grapefruit** — leicht herb, sommerlich
-• **Wild Orange** — süss und fröhlich
-
-⚠️ *Wichtig:*
-Immer eine **Glas- oder Edelstahlflasche** verwenden — Zitrusöle greifen Plastik an. Und wirklich nur EIN Tropfen, die Öle sind hochkonzentriert.
-
-🧊 *Sommer-Deluxe:*
-Wasser + 1 Tropfen **Lime** + ein paar frische Minzblätter + Eiswürfel. Wie Ferien im Glas.
+Alles verrühren, kalt stellen — fertig ist die Erfrischung für den Gartentisch.
 
 ━━━━━━━━━━━━━━━━━━
-Welches Öl kommt bei dir ins Sommerwasser? 🍋
+Wer stellt diesen Sommer eine Kanne davon auf die Terrasse? 🍋
 
 💛 *Hinweis:* Nur Öle in Lebensmittelqualität innerlich verwenden. Nicht bei Kleinkindern.
 
 ---
 
-## 🩹 Beitrag 9 — Die Sommer-Hausapotheke für draussen
+## 🧊 Beitrag 11 — Aromawürfel mit Wow-Effekt
 
-🌳 *Barfuss im Gras, Klettern, Baden, Velofahren — Sommer mit Kindern ist wild.*
+💧 *Wassertrinken langweilig? Nicht mit diesen kleinen Geschmackskünstlern.*
 
-Und wild heisst auch mal: aufgeschürftes Knie, ein Zeckchen, ein Insektenstich. Meine kleine Outdoor-Crew liegt immer griffbereit.
+Ich frier mir Aromawürfel auf Vorrat ein — und trinke automatisch mehr. Alle aus Sommer 25:
 
-🎒 *Was bei uns in der Sommertasche ist:*
+🧊 *Minze-Zitrone*
+1 Tropfen **Lemon** auf 500 ml Wasser + frische Minze, einfrieren.
 
-• **Lavender** — der Allrounder für gereizte, beanspruchte Haut
-• **Correct-X** — die pflegende Salbe für kleine Missgeschicke
-• **Frankincense** — mein "König" für anspruchsvolle Hautstellen
-• **Tea Tree (Melaleuca)** — reinigend, wenn's mal nötig ist
-• **TerraShield** — damit die Insekten Abstand halten
+🥒 *Gurke-Limette*
+Gurkenscheiben + ein Hauch **Lime** + Minzblatt — herrlich herb.
 
-📍 *Bei einem Insektenstich:*
-1 Tropfen **Lavender** verdünnt auf die Stelle. Beruhigt das Gefühl von Jucken.
+🌺 *Hibiskus-Lavendel*
+Kalter Hibiskustee + 1 Tropfen **Lavender** + Lavendelblüte.
 
-💛 *Mein Mama-Trick:* Ein Pflaster mit 1 Tropfen **Lavender** beträufeln — Kinder finden das gleich weniger schlimm.
+📍 *So geht's:*
+In Eiswürfelformen giessen und bei Bedarf ins Glas geben — als Eyecatcher oder dezenter Aromaboost für Wasser, Mocktails oder Bowlen.
 
 ━━━━━━━━━━━━━━━━━━
-Was ist in deiner Sommer-Notfalltasche? 🩹
+Welcher Würfel kommt bei dir zuerst ins Glas? 🧊
 
-💛 *Hinweis:* Zecken bei Auffälligkeiten und tiefe/entzündete Wunden immer ärztlich abklären lassen.
+💛 *Hinweis:* Nur Öle in Lebensmittelqualität. Sparsam dosieren — die Öle sind hochkonzentriert.
 
 ---
 
-## 🌻 Beitrag 10 — Sommer heisst: weniger müssen
+## 🍹 Beitrag 12 — Botanical Spritz & Sommerbowle
 
-🌞 *Wir wollen im Sommer alles: Ausflüge, Erlebnisse, Erinnerungen für die Kinder.*
+🌿 *Sommerdrinks mit ätherischen Ölen — geschmacklich ein Highlight, ganz ohne Alkohol.*
 
-Und dabei vergessen wir oft das Wichtigste — einfach mal DA sein. Ohne To-do-Liste im Kopf.
+Die Grundlage: prickelndes Mineralwasser, ein Schuss Fruchtsaft, ein Hauch botanischer Raffinesse. Immer den Tropfen Öl vorher in Honig oder etwas Pflanzenöl vorverdünnen.
 
-🏛️ *Mein Sommer erinnert mich an meine 5 Säulen — leichter gelebt:*
+🥂 *Botanical Spritz (Sommer 25):*
 
-**1️⃣ Schlaf** 😴 — auch mal die Mittagshitze für eine Pause nutzen
-**2️⃣ Ernährung** 🥗 — leicht, saisonal, viel Wasser
-**3️⃣ Stressmanagement** 🧘 — bewusst Gänge rausnehmen
-**4️⃣ Nahrungsergänzung** 🌿 — dort, wo der Alltag Lücken lässt
-**5️⃣ Bewegung** 🏃‍♀️ — draussen, freudvoll, ohne Plan
+**Zitrone & Lavendel** — Zitronensaft, 1 Tropfen **Lavender**, Mineralwasser, Lavendelblüte
+**Grapefruit-Rosmarin** — Grapefruitsaft, 1 Tropfen **Rosmarin**, Rosmarinzweig, Eiswürfel
+**Orangenblüten-Twist** — Orangenhydrolat, Sprudel, Basilikumblatt, Orangenzeste
 
-🌬️ *Mein Sommer-Diffuser für Leichtigkeit:*
-• 3 Tropfen **Wild Orange**
-• 2 Tropfen **Bergamot**
-• 1 Tropfen **Lime**
-
-✨ *Öle unterstützen jede dieser Säulen — aber der eigentliche Zauber ist:*
-sich erlauben, den Sommer wirklich zu geniessen. 💛
+🍧 *Sommerbowle mit Twist:*
+1 Liter naturtrüber Apfelsaft, Saft von 1 Limette, 1 Tropfen **Spearmint** (auf 1 TL Honig), frische Früchte (Beeren, Nektarine, Wassermelone), Pfefferminzblätter, Eiswürfel. Wer mag, mit Sprudel auffüllen.
 
 ━━━━━━━━━━━━━━━━━━
-Was willst DU diesen Sommer bewusster geniessen?
-Schreib's mir — ich bin gespannt. ⬇️
+Welchen probierst du zuerst? 🍹
+
+💛 *Hinweis:* Nur Öle in Lebensmittelqualität innerlich verwenden.
+
+---
+
+## ☀️ Beitrag 13 — Trink dich wach & Sundowner
+
+🌞 *Bei Hitze braucht der Körper leichte, aber wirksame Wachmacher — und am Abend darf's ruhiger werden.*
+
+☕ *Trink dich wach (Sommer 25):*
+
+**Zitrone-Ingwer-Kick** — warmes Wasser, 1 Tropfen **Lemon**, frischer Ingwer, Minzblatt
+**Green Mandarin Glow** — 1 Tropfen **Green Mandarin**, Apfelsaft, Mineralwasser
+**Grapefruit Mint** — Grapefruitsaft, 1 Tropfen **Grapefruit**, Minze — belebend & stimmungsaufhellend
+
+🌙 *Sundowner für den Abend:*
+
+**Lavendel-Limo** — Lavendelhydrolat, Honigwasser, Mineralwasser, Eis
+**Vanille-Mandel-Traum** — Mandelmilch, 1 Tropfen **Vanille**, Zimt, kalt serviert
+**Ingwer-Zimt-Fizz** — 1 Tropfen **Ingwer** auf Honig, Apfelsaft, Zimtstange, Sprudel
+
+━━━━━━━━━━━━━━━━━━
+Morgenmuffel oder Sundowner-Typ? ☀️🌙
+
+💛 *Hinweis:* Nur Öle in Lebensmittelqualität. Zitrusöle photosensitiv.
+
+---
+
+## 🌿 Beitrag 14 — Kräuteröle in der Sommerküche
+
+🍅 *Ätherische Öle geben deinen Sommergerichten eine ganz besondere Note.*
+
+Basilikum-, Oregano- und Rosmarinöl eignen sich hervorragend zum Würzen — von Tomatensalat bis Ofengemüse.
+
+🎯 *Wichtig: die Zahnstochermethode.*
+Diese Öle sind extrem kräftig. Statt zu tropfen, tunkst du einen sauberen Zahnstocher kurz ins Fläschchen und rührst damit durchs Essen. So dosierst du fein und übertreibst nicht.
+
+💡 *Mein Favorit:* ein Hauch **Basilikum** in die Tomatensauce oder **Rosmarin** über die Ofenkartoffeln.
+
+━━━━━━━━━━━━━━━━━━
+Welches Kräuteröl fehlt in deiner Küche noch? 🌿
+
+💛 *Hinweis:* Nur Öle in Lebensmittelqualität. Weniger ist mehr.
+
+---
+
+## 🧳 Beitrag 15 — Öle als Reisebegleiter
+
+✈️ *Ätherische Öle sind auch unterwegs Gold wert — sie helfen bei Reiseübelkeit, beim Entspannen und beim Schlafen.*
+
+🎒 *Reise-Roll-On (Sommer 24):*
+
+• 10 ml Trägeröl (z.B. Jojobaöl)
+• 5 Tropfen **Lavender**
+• 3 Tropfen **Peppermint**
+• 2 Tropfen **Ingwer**
+
+In einen Roll-On-Flakon füllen und bei Bedarf auf der Reise anwenden.
+
+🏨 *Wohlfühl-Atmosphäre im Hotel:*
+Mit einem kleinen tragbaren Diffuser und deinen Lieblingsölen. **Lavender** und **Orange** sind ideale Düfte, um dich wie zu Hause zu fühlen.
+
+━━━━━━━━━━━━━━━━━━
+Was darf in deinem Koffer nie fehlen? 🧳
+
+💛 *Hinweis:* Bei Kindern gut verdünnen. Zitrusöle photosensitiv.
+
+---
+
+## 🏕️ Beitrag 16 — Öle draussen: Wandern, Lagerfeuer, Garten
+
+🌲 *Ätherische Öle machen deine Outdoor-Erlebnisse noch schöner — und helfen sogar im Garten.*
+
+🥾 *Wander-Inhalierstift (Sommer 24):*
+Befülle einen Inhalierstift mit je 5 Tropfen **Zypresse**, **Kiefer** und **Eukalyptus**. Verbindet dich mit der Natur und unterstützt die Atmung, wenn's warm ist. Beim Wandern regelmässig daran riechen.
+
+🔥 *Lagerfeuerduft:*
+Getrocknete Kräuter wie **Salbei**, **Rosmarin** und **Lavendel** ins Feuer geben. Die ätherischen Öle in den Kräutern verströmen einen wunderbaren Duft.
+
+🪴 *Pflanzenschutz für den Garten:*
+500 ml Wasser + 10 Tropfen **Lavender** + 10 Tropfen **Rosmarin** in eine Sprühflasche. Auf die Pflanzen sprühen, um Schädlinge fernzuhalten.
+
+🪨 *Duftende Steine:*
+Ein paar Tropfen **Geranium** und **Lemon** auf dekorative Steine — verströmen im Garten eine aromatische Atmosphäre.
+
+━━━━━━━━━━━━━━━━━━
+Was ist dein liebster Sommer-Ort draussen? 🏕️
 
 ---
 
 ## 📋 Posting-Strategie
 
-**Aufholen (diese Woche):** Beiträge 1-3 posten (alle 2 Tage), damit du wieder aktuell bist
-**Reguläres Posting:** 1 Beitrag/Woche, immer gleicher Tag (z.B. Montag 9:00)
-**Ab Ende August:** Übergang zum Herbst-Paket vorbereiten
+**Aufholen (diese Woche):** Beiträge 1–3 posten (alle 2 Tage), damit du wieder aktuell bist
+**Reguläres Posting:** 1–2 Beiträge/Woche, immer gleicher Tag/gleiche Zeit
+**16 Beiträge** decken die ganze Sommer-Saison locker ab — plus Reserve
+**Ende August:** Übergang zum Herbst-Paket vorbereiten
+
+---
+
+## 🗂️ Quellen-Übersicht (welcher Beitrag aus welchem Heft)
+
+| # | Beitrag | Heft |
+|---|---|---|
+| 1 | Erfrischendes Körperspray | Sommer 24 (+ 25) |
+| 2 | Kühler-Kopf-Roller | Sommer 25 |
+| 3 | Fussbäder | Sommer 24 + 25 |
+| 4 | Kühle Kompresse | Sommer 25 |
+| 5 | Haut nach dem Sonnenbad | Sommer 24 + 25 |
+| 6 | Schutz vor Insekten | Sommer 24 + 25 |
+| 7 | Entspannungsbad | Sommer 24 |
+| 8 | Meditation & Achtsamkeit | Sommer 24 |
+| 9 | Sundowner-Diffuser-Blends | Sommer 25 |
+| 10 | Zitronen-Pfefferminz-Limonade | Sommer 24 |
+| 11 | Aromawürfel | Sommer 25 |
+| 12 | Botanical Spritz & Bowle | Sommer 25 |
+| 13 | Trink dich wach & Sundowner | Sommer 25 |
+| 14 | Kräuteröle in der Küche | Sommer 24 |
+| 15 | Reisebegleiter | Sommer 24 |
+| 16 | Wandern, Lagerfeuer, Garten | Sommer 24 |
+
+**Noch nicht verbaut (Reserve für Stories/Zusatz):** die restlichen ~20 Diffuser-Blends aus Sommer 25 (Garden Glow, Rosy Rosmarin, Chill & Charisma, Afterglow, Summer Soul, Pink Sky, Moonlight Garden, Lazy Haze, Citralight, Jungle Jazz, Himmel über dem Lavendelfeld, Island Whisper, Riviera Nights, Amber Glow, Secret Garden, Midnight Mojito, Vanilla Sky, Dolce Note, Blue Hour, Sundowner) + das „Bienen & Insekten auf dem Balkon"-Umweltthema aus Sommer 24.
 
 ---
 
 ## ✅ Nächste Schritte
 
-- [ ] Beiträge 1-3 als Aufholer diese Woche posten
-- [ ] Beiträge 4-10 einplanen für die restlichen Sommerwochen
+- [ ] Beiträge 1–3 als Aufholer diese Woche posten
+- [ ] Restliche Beiträge über die Sommerwochen verteilen
 - [ ] Parallel in WhatsApp-Gruppe kopieren
 - [ ] Interaktionen sammeln — Antwortende persönlich folgen
 - [ ] Ende August: Herbst-Paket briefen
