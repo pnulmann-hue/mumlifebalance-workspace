@@ -145,22 +145,20 @@ Welches Öl ist dein Hautliebling im Sommer? 🌅
 
 Duftende Abwehr statt chemischer Keule. Diese Öle finden Insekten alles andere als einladend — wir dagegen herrlich frisch.
 
-🛡️ *Insektenschutzspray (Sommer 24):*
+🛡️ *Insektenschutzspray:*
 
-• 50 ml Hamameliswasser
-• 50 ml destilliertes Wasser
+• 100 ml destilliertes Wasser
 • 10 Tropfen **Zitronengras (Lemongrass)**
 • 10 Tropfen **Teebaum (Tea Tree)**
 • 10 Tropfen **Eukalyptus**
 
-Auf unbedeckte Hautstellen sprühen.
+In eine Sprühflasche geben, vor jedem Gebrauch kräftig schütteln, auf unbedeckte Hautstellen sprühen.
 
-🎯 *DIY-Stich-Roller (Sommer 25):*
+🎯 *DIY-Stich-Roller:*
 
-• 10 ml Roll-On mit neutralem Bio-Öl
-• 1 Tropfen **Lavender**
+• 10 ml Roll-On mit fraktioniertem Kokosöl
+• 2 Tropfen **Lavender**
 • 1 Tropfen **Teebaum**
-• 1 Tropfen **Immortelle**
 Sanft auf juckende Stellen — beruhigt zuverlässig.
 
 🕯️ *Für Balkonabende:*
