@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>IKM-Assistent · Patricia Ulmann</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app" id="app">
+    <!-- Landing Screen -->
+    <section class="screen screen--landing" id="screen-landing">
+      <div class="brand">
+        <div class="brand__logo">📱</div>
+        <h1 class="brand__title">Instagram-Kundenmaschine<br/>Dein Assistent</h1>
+        <p class="brand__sub">Von Patricia Ulmann · Mum Life Balance</p>
+      </div>
+
+      <div class="landing__body">
+        <p class="landing__hook">
+          Du hast den Kurs gekauft. Jetzt setzen wir das auf <strong>DEIN Profil</strong> um — Schritt für Schritt.
+        </p>
+
+        <p class="landing__text">
+          Ich bin dein IKM-Assistent. Du kommst mit einer Frage — eine Story-Idee für heute, ein Beitragsthema, dein nächster Schritt — und wir wenden das gemeinsam auf dein Profil an.
+        </p>
+
+        <p class="landing__text">
+          Am Ende hast du:
+        </p>
+        <ul class="landing__list">
+          <li>Eine Story-Idee zugeschnitten auf dein Profil</li>
+          <li>2-3 Beitragsideen mit fertigen Hooks</li>
+          <li>Deinen nächsten Schritt für diese Woche</li>
+          <li>Bezug zu deinem IKM-Modul wenn du Theorie nochmal brauchst</li>
+        </ul>
+
+        <button class="btn btn--primary" id="btn-start">Los geht's 📱</button>
+
+        <p class="landing__fine">
+          Du brauchst ca. 5-10 Minuten pro Frage. Kein Druck — du kannst jederzeit pausieren.
+        </p>
+      </div>
+    </section>
+
+    <!-- Chat Screen -->
+    <section class="screen screen--chat" id="screen-chat" hidden>
+      <header class="chat__header">
+        <div class="chat__header-left">
+          <span class="chat__avatar">📱</span>
+          <div>
+            <h2 class="chat__title">IKM-Assistent</h2>
+            <p class="chat__subtitle">von Patricia Ulmann</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="chat__messages" id="chat-messages" aria-live="polite">
+        <!-- Messages werden hier dynamisch eingefuegt -->
+      </main>
+
+      <div class="chat__typing" id="chat-typing" hidden>
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- Profil-Screenshot Vorschau (vor dem Senden) -->
+      <div class="chat__attachment-preview" id="chat-attachment-preview" hidden>
+        <img id="chat-attachment-thumb" alt="Profil-Screenshot" />
+        <div class="chat__attachment-meta">
+          <span class="chat__attachment-label">Profil-Screenshot bereit</span>
+          <button type="button" class="chat__attachment-remove" id="chat-attachment-remove" aria-label="Bild entfernen">×</button>
+        </div>
+      </div>
+
+      <form class="chat__input-bar" id="chat-form">
+        <input
+          type="file"
+          id="chat-file-input"
+          accept="image/png,image/jpeg,image/webp,image/gif"
+          hidden
+        />
+        <button type="button" class="chat__attach" id="chat-attach" aria-label="Profil-Screenshot hochladen" title="Profil-Screenshot hochladen">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+        </button>
+        <textarea
+          class="chat__input"
+          id="chat-input"
+          placeholder="Schreib hier …"
+          rows="1"
+          autocomplete="off"
+          aria-label="Deine Antwort"
+        ></textarea>
+        <button type="submit" class="chat__send" id="chat-send" aria-label="Senden">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </form>
+    </section>
+
+    <!-- Done Screen -->
+    <section class="screen screen--done" id="screen-done" hidden>
+      <div class="done__inner">
+        <div class="done__icon">💪</div>
+        <h2 class="done__title">Du hast einen Plan!</h2>
+        <p class="done__text">
+          Du hast einen Plan für diese Woche. Setz ihn um — und komm wieder, wenn die nächste Frage kommt. Der IKM-Assistent ist immer da.
+        </p>
+        <p class="done__signature">— Patricia</p>
+
+        <div class="done__links">
+          <a href="https://instagram.com/mumlifebalance_patricia_ulmann" class="done__link done__link--primary" data-pitch="insta" target="_blank" rel="noopener">
+            Schreib Patricia auf Instagram →
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
