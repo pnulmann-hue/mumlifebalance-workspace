@@ -13,6 +13,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 ### 📁 claude-als-networkerin
 
 - [[00-kurs-konzept]]
+- [[01-bruecke-lektion-von-chatgpt-zu-claude]]
 
 ### 📁 audit-2026-04-22
 
