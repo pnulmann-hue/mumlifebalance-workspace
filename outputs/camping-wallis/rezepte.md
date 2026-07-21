@@ -2,276 +2,156 @@
 tags: [camping, mealplan]
 ---
 
-# 🍳 Camping-Rezepte Wallis — Thermomix + 2 Platten (auch Grill) · für 6 Personen
+# 🍳 Camping-Essensplan Wallis — Thermomix + 2 Platten (auch Grill) · für 6 Personen
 
-**Ausgangslage:** Zeltplatz mit Strom (Thermomix läuft), Gaskocher mit **2 Platten** (die auch als **Grill** nutzbar sind — Campingaz 400SG), Kühlbox statt Kühlschrank.
+**Ausgangslage:** Zeltplatz mit Strom (Thermomix läuft), Gaskocher mit **2 Platten** (auch als **Grill** nutzbar — Campingaz 400SG), Kühlbox statt Kühlschrank.
 **Familie:** 6 Personen (2 Erwachsene, Teenies 13 + 11, Kids 9 + 8).
-**Ernährungsleitplanken diese Woche:** **Viel Gemüse ist Pflicht — in jedem Gericht.** Protein diese Woche **nebensächlich** (kein extra Protein-Boost nötig). Wenig Zucker, kids-approved, unkompliziert. Kein Fisch (ausser Thunfisch kalt nur für Patricia).
+
+## 🍽️ Teller-Prinzip (gilt für JEDES Abendessen)
+> **⅓ Protein** (Fleisch oder anderes Protein) · **⅓ Gemüse** · **⅓ Stärkebeilage** — **+ Salat immer dazu.**
+> Ausgewogen, unkompliziert, kids-approved. Gemüse normal portioniert, nicht überladen.
 
 **So ist das aufgebaut:**
-1. 🌅 **Frühstück am Platz** — 5 Varianten (schnell, mit Früchten)
-2. 🍲 **Warme Hauptmahlzeit** — 7 gemüsereiche Gerichte (Thermomix und/oder 2 Platten/Grill)
-3. 🥪 **To-Go-Lunch** — einfache, kaufbare/vorbereitbare Sachen für Wanderung & Ausflug
+1. 🌅 **Frühstück am Platz** — 5 einfache Varianten
+2. 🍲 **Abendessen** — 7 ausgewogene Teller (Protein + Stärke + Gemüse + Salat)
+3. 🧩 **Beilagen-Baukasten** — Stärke, Gemüse & Salat schnell dazu
+4. 🥪 **To-Go-Lunch** — einfach, kaufbar, für Wanderung & Ausflug
 
-> **Camping-Küchen-Faustregeln:** Ein-Topf-Gerichte bevorzugen (weniger Abwasch), robustes Gemüse (Karotten, Zucchini, Peperoni, Zwiebeln, Kabis, Fenchel) hält in der Kühlbox länger als Salat — also grosszügig einkaufen. Die **2 Platten lassen sich auch zum Grillen von Gemüse & Würsten** nutzen. Dosen/Vorräte als Basis (halten ohne Kühlung).
-
-> 🥗 **Gemüse-Boost-Prinzip (gilt für ALLE Gerichte):** Immer mind. 3–4 verschiedene Gemüse rein, Mengen ruhig verdoppeln. Und zu jedem Abendessen zusätzlich **Rohkost/Salat** oder ein Blech **Grillgemüse** (siehe Kasten unten) auf den Tisch.
+> **Camping-Küchen-Faustregel:** Fleisch/Frisches in den ersten Tagen verbrauchen (Kühlbox am kältesten). Grillen auf den 2 Platten spart Abwasch. Reis/Kartoffelstock macht der Thermomix nebenbei.
 
 ---
 
 # 🌅 1. Frühstück am Campingplatz
 
-## F1 — Overnight Oats / Bircher (am Vorabend angerührt, 0 Kochen)
-**Für 6 · am Abend vorher in einer grossen Dose anrühren, über Nacht in der Kühlbox**
-
-- 500 g Haferflocken
-- 800 ml Milch (oder Milch + Joghurt gemischt)
-- 500 g Naturjoghurt (oder Skyr)
-- 2 geriebene Äpfel + 1 Handvoll Nüsse/Samen
-- 2 EL Honig, Zimt, Prise Salz
-- Frische Beeren/Banane am Morgen drauf
-
-**So geht's:** Alles am Vorabend in einer grossen Vorratsdose mischen, Deckel drauf, in die Kühlbox. Morgens rühren, Früchte drauf, fertig. **Kein Kocher nötig.**
-👉 *Protein-Trick für Patricia: extra Portion Skyr oder ein Löffel Proteinpulver unterrühren.*
-
-## F2 — Rührei / Eier vom Gaskocher (der Klassiker)
-**Für 6 · 1 Platte · ~15 Min**
-
-- 12 Eier
-- 100 ml Milch, Salz, Pfeffer, Schnittlauch/Kräuter
-- Butter zum Braten
-- Dazu: Brot/Dinkelbrot, Käse, Tomaten
-
-**So geht's:** Eier mit Milch verquirlen, in der grossen Pfanne bei mittlerer Hitze stocken lassen, langsam rühren. Mit Brot servieren. **Sattmacher & proteinreich.**
-
-## F3 — Birchermüesli-Bowl (schnell, ohne Kochen)
-**Für 6 · 5 Min**
-
-- 1 kg Naturjoghurt oder Skyr
-- 400 g Müesli/Haferflocken
-- Frische Früchte (Äpfel, Bananen, Beeren)
-- Nüsse, Samen, Honig
-
-**So geht's:** In tiefe Teller schichten, jeder nach Lust. Für die Kids ein Schuss Sirup/Honig statt viel Zucker.
-
-## F4 — Café complet Camping-Style (Zero-Aufwand-Tag)
-**Für 6 · nur einkaufen**
-
-- Frisches Brot/Zopf/Gipfeli vom Zeltplatz-Lädeli oder Bäcker
-- Butter, Konfi, Honig, Käse, Aufschnitt
-- Kaffee/Tee/Kakao
-- Obst dazu
-
-👉 Perfekt für den Anreise- oder Abreisemorgen, wenn's schnell gehen muss.
-
-## F5 — Warmer Grissbrei / Porridge vom Thermomix (kühler Morgen)
-**Für 6 · Thermomix · ~10 Min**
-
-- 400 g Haferflocken
-- 1 L Milch + 200 ml Wasser
-- Prise Salz, Zimt, 2 EL Honig
-
-**Thermomix:** Alles in den Mixtopf → **90 °C / 8 Min / Stufe 1** (gelegentlich mit Spatel schauen). Cremig servieren mit Früchten/Nüssen. Wärmt an einem kühlen Wallis-Morgen.
+- **F1 — Zopf/Brot-Frühstück:** Brot/Zopf/Gipfeli (am Platz-Laden vorbestellen) + Butter, Konfi, Honig, Käse, Aufschnitt + Kaffee/Kakao + Obst. Der einfache Standard.
+- **F2 — Rührei/Spiegelei vom Gaskocher:** 12 Eier mit etwas Milch, Salz, Schnittlauch, in Butter stocken lassen. Dazu Brot + Tomaten. Sättigt gut.
+- **F3 — Birchermüesli/Joghurt-Bowl:** Naturjoghurt + Müesli/Haferflocken + frische Früchte + Honig. 5 Min, kein Kochen.
+- **F4 — Overnight Oats:** Am Vorabend Haferflocken + Milch + Joghurt + geriebener Apfel + Zimt in einer Dose anrühren, über Nacht in die Kühlbox. Morgens Früchte drauf.
+- **F5 — Warmer Porridge (Thermomix):** 400 g Haferflocken + 1 L Milch + 200 ml Wasser + Zimt/Honig → **90 °C / 8 Min / Stufe 1**. Cremig, für kühle Morgen.
 
 ---
 
-# 🍲 2. Warme Hauptmahlzeit
+# 🍲 2. Abendessen — 7 ausgewogene Teller
 
-## H1 — Älplermagronen (der Camping-Klassiker) ⭐
-**Für 6 · 1 grosser Topf + Gaskocher · ~30 Min · kids-approved**
+> Jeder Teller: **Protein · Stärke · Gemüse · Salat.** Mengen für 6.
 
-- 550 g Hörnli (Dinkel-Hörnli gehen super)
-- 4 grosse Kartoffeln, gewürfelt
-- 300 ml Rahm + 200 ml Milch
-- 250 g geriebener Käse (Sbrinz/Gruyère-Mix)
-- 2 Zwiebeln
-- Butter, Salz, Pfeffer, Muskat
-- **Extra Gemüse:** 1 Lauch + 200 g TK-Erbsen oder Blattspinat mitkochen
-- Dazu: Apfelmus (Klassiker!) **+ grosser grüner Salat**
+## D1 — Grillplausch zum Start 🔥 (Anreiseabend)
+- **Protein:** Bratwürste + Cervelats + Schweinshalssteaks (grill)
+- **Stärke:** frisches Brot + gekaufter Kartoffelsalat
+- **Gemüse:** Maiskolben vom Grill + Tomaten/Gurken
+- **Salat:** grüner Salat
 
-**So geht's:**
-1. Zwiebeln in Ringe schneiden, in Butter goldbraun rösten (2. Platte) → beiseite.
-2. Kartoffelwürfel im grossen Topf ~10 Min kochen, dann Hörnli + Lauch dazu, zusammen fertigkochen. Erbsen/Spinat die letzten 3 Min dazu.
-3. Abgiessen, Rahm + Milch + Käse dazu, schmelzen lassen, würzen.
-4. Röstzwiebeln drüber. Apfelmus + Salat separat.
+**So geht's:** Alles auf den 2 Platten grillen, Kartoffelsalat & Brot dazu. Null Kochstress am Ankunftstag.
 
-👉 *Der Lauch + die Erbsen machen aus dem Klassiker einen richtig gemüsigen Teller.*
+## D2 — Grill-Pouletschenkel mit Reis 🔥
+- **Protein:** 8–10 Pouletschenkel/-flügel, mariniert (grill)
+- **Stärke:** Reis (Thermomix Gareinsatz **100 °C / ~18 Min / Stufe 1** oder Topf)
+- **Gemüse:** Rüebli-Erbsen in Butter (Pfanne) oder Maiskolben
+- **Salat:** grüner Salat
 
-## H2 — One-Pot-Tomaten-Pasta (Ein Topf, wenig Abwasch) ⭐
-**Für 6 · 1 Topf · ~20 Min · vegetarisch**
+**So geht's:** Poulet auf dem Grill garen (Reis parallel im Thermomix, Gemüse auf der 2. Platte). Fertig in ~25 Min.
 
-- 600 g Pasta (Dinkel/Vollkorn)
-- 1 Dose passierte Tomaten (500 g) + 1 Dose gehackte Tomaten
-- **Viel Gemüse:** 2 Zucchini + 2 Peperoni + 1 Aubergine + 250 g Cherrytomaten + 200 g Champignons (was da ist)
-- 2 Zwiebeln, 2 Knoblauch
-- 1 L Wasser + Bouillon
-- Italienische Kräuter, Salz, Pfeffer
-- Geriebener Käse zum Bestreuen
+## D3 — Spaghetti Bolognese (Thermomix-Sauce)
+- **Protein:** 600 g Hackfleisch in der Sauce
+- **Stärke:** Spaghetti
+- **Gemüse:** Rüebli + Sellerie fein in der Sauce + grüner Salat
+- **Salat:** grüner Salat
 
-**So geht's:** Alles roh in den grossen Topf (Pasta, das ganze Gemüse gewürfelt, Tomaten, Wasser, Bouillon), aufkochen, ~12–14 Min köcheln bis Pasta gar und Sauce cremig — ab und zu rühren. Käse drüber.
-👉 *Die Pasta kocht direkt in der Sauce → nur EIN Topf. Je mehr Gemüse, desto besser — es fällt schön in die Sauce.*
+**Thermomix-Sauce:** Zwiebel/Knoblauch/Rüebli **5 Sek/St.5** hacken, mit Öl **5 Min/120 °C/St.1** andünsten, Hack dazu **5 Min/100 °C/Linkslauf/St.1**, passierte Tomaten + Bouillon + Kräuter, **20 Min/100 °C/Linkslauf/St.1**. Spaghetti parallel im Topf. Parmesan drüber.
 
-## H3 — Grosses Gemüse-Kokos-Curry mit Reis (Thermomix + Platte parallel) ⭐
-**Für 6 · Thermomix (Reis) + Pfanne · ~30 Min · vegetarisch**
+## D4 — Pouletgeschnetzeltes an Rahmsauce mit Nudeln
+- **Protein:** 700 g Pouletgeschnetzeltes
+- **Stärke:** Hörnli/Nudeln
+- **Gemüse:** Champignons in der Sauce + Broccoli (gedämpft)
+- **Salat:** grüner Salat
 
-- 500 g Reis (Basmati)
-- 2 Dosen Kokosmilch
-- **Gemüseberg:** 3 Karotten, 2 Zucchini, 2 Peperoni, 1 Brokkoli, 1 Süsskartoffel, 200 g TK-Erbsen (+ Blumenkohl wenn da)
-- 2 Zwiebeln, Knoblauch, Stück Ingwer
-- 2–3 EL Currypaste oder Currypulver
-- Bouillon, Salz
+**So geht's:** Poulet in der Pfanne anbraten, rausnehmen. Zwiebel + Champignons andünsten, mit Rahm + Bouillon ablöschen, Poulet zurück, köcheln. Nudeln im Topf, Broccoli im Dämpfeinsatz/Varoma.
 
-**So geht's:**
-- **Reis im Thermomix:** Reis + Wasser (Verhältnis nach Cookidoo) + Salz → im Gareinsatz **100 °C / ~18 Min / Stufe 1**. (Oder klassisch im 2. Topf.)
-- **Curry in der Pfanne:** Zwiebel/Knoblauch/Ingwer andünsten, das ganze Gemüse dazu (härteres wie Karotte/Süsskartoffel zuerst), kurz braten, Currypaste, Kokosmilch + Bouillon aufgiessen, ~15 Min köcheln bis das Gemüse gar ist. Erbsen zum Schluss.
-👉 *Richtig gemüselastig — die Süsskartoffel macht's schön sämig. Für die Kids milder, Erwachsene schärfen am Teller nach.*
+## D5 — Älplermagronen (Camping-Klassiker)
+- **Protein:** geriebener Käse (Sbrinz/Gruyère), optional Speckwürfeli
+- **Stärke:** Hörnli + Kartoffeln
+- **Gemüse:** dazu grüner Salat (Apfelmus als Klassiker)
+- **Salat:** grüner Salat
 
-## H4 — Gemüse-Chili (One-Pot, super vorzubereiten) ⭐
-**Für 6 · 1 Topf · ~30 Min · vegetarisch (Hack optional)**
+**So geht's:** Kartoffelwürfel ~10 Min kochen, Hörnli dazu, fertig kochen, abgiessen. Rahm + Milch + Käse unterrühren, würzen. Röstzwiebeln drüber, Apfelmus + Salat separat.
 
-- 2 Dosen Kidneybohnen + 1 Dose Mais
-- 2 Dosen gehackte Tomaten
-- **Viel Gemüse:** 3 Peperoni, 2 Zucchini, 2 Karotten, 1 Aubergine — alles gewürfelt
-- 2 Zwiebeln, 2 Knoblauch
-- Kreuzkümmel, Paprika, Chili (mild für Kids), Bouillon
-- Optional: 400 g Hackfleisch für die, die mögen
-- Dazu: Reis, Brot oder Nachos
+## D6 — Grillkoteletts mit Grillkartoffeln 🔥
+- **Protein:** Schweins-/Lammkoteletts oder Halssteaks (grill)
+- **Stärke:** Grillkartoffeln in Folie (Kartoffeln vorgekocht, mit Öl/Salz in Alufolie auf den Grill)
+- **Gemüse:** Grillgemüse (Peperoni, Zucchini, Zwiebeln)
+- **Salat:** grüner Salat oder Tomatensalat
 
-**So geht's:** Zwiebeln + (optional Hack) im grossen Topf anbraten, das ganze Gemüse dazu, kurz mitbraten, Gewürze, dann Tomaten + Bohnen + Mais dazu, ~20 Min köcheln bis das Gemüse weich ist. Mit Reis/Brot servieren.
-👉 *Doppelte Menge machen — die Reste sind am nächsten Tag kalt-warm super als Wrap-Füllung fürs Lunch (siehe L4).*
+**So geht's:** Vorgekochte Kartoffeln in Folie auf die eine Platte, Fleisch + Gemüse auf die andere grillen.
 
-## H5 — Risotto vom Thermomix (macht sich fast von selbst) ⭐
-**Für 6 · Thermomix · ~30 Min**
+## D7 — Hacktätschli mit Kartoffelstock & Erbsli-Rüebli
+- **Protein:** Hacktätschli/Fleischküchli (600 g Hack, Ei, Zwiebel, Semmelbrösel)
+- **Stärke:** Kartoffelstock (Thermomix)
+- **Gemüse:** Erbsli & Rüebli (TK, Pfanne mit Butter)
+- **Salat:** grüner Salat
 
-- 500 g Risottoreis
-- 2 Zwiebeln
-- 1.2 L Bouillon (heiss)
-- 100 ml Weisswein (optional) oder mehr Bouillon
-- 150 g geriebener Käse (Sbrinz/Parmesan)
-- **Viel Gemüse (mind. 3 Sorten):** 300 g Champignons + 2 Zucchini + 200 g Erbsen + Kürbis/Peperoni — grosszügig
-- Butter, Pfeffer
-
-**Thermomix:**
-1. Zwiebeln **5 Sek / Stufe 5** hacken, mit Butter **3 Min / 120 °C / Stufe 1** andünsten.
-2. Reis + Wein dazu, **2 Min / 120 °C / Linkslauf / Stufe 1**.
-3. Bouillon + Gemüse dazu, **16 Min / 100 °C / Linkslauf / Stufe 1** (Messbecher raus).
-4. Käse unterrühren, 2 Min ruhen lassen.
-👉 *Praktisch: Thermomix rührt selber → du hast Zeit fürs Zelt/die Kids.*
-
-## H6 — Kartoffel-Gemüse-Pfanne + Grillgemüse & Würste
-**Für 6 · Pfanne auf Platte 1 + Grill auf Platte 2 · ~35 Min · kids-approved**
-
-- 1 kg festkochende Kartoffeln
-- 6 Bratwürste/Cervelats (oder vegi-Würste)
-- **Viel Gemüse:** 2 Zwiebeln, 2 Peperoni, 2 Zucchini, 1 Aubergine, 250 g Cherrytomaten, 1 Fenchel
-- Öl, Salz, Paprika, Kräuter
-- Senf/Ketchup dazu
-
-**So geht's:**
-1. Kartoffeln vorkochen (zu Hause vorkochen spart Zeit & Gas), würfeln, in der Pfanne mit Zwiebeln + der Hälfte des Gemüses anbraten.
-2. **Platte 2 als Grill:** die andere Hälfte Gemüse (Zucchini-, Peperoni-, Auberginen-Scheiben, Fenchel) mit Öl bestreichen und grillen — dazu die Würste.
-👉 *So habt ihr Bratkartoffeln + buntes Grillgemüse gleichzeitig. Reichlich Gemüse grillen, das geht immer weg.*
-
-## H7 — Couscous-Pfanne mit viel Gemüse (der schnellste warme Teller)
-**Für 6 · 1 Topf · ~20 Min · vegetarisch**
-
-- 500 g Couscous (oder Vollkorn-Couscous)
-- 700 ml heisse Bouillon
-- **Gemüseberg:** 3 Karotten, 2 Zucchini, 2 Peperoni, 1 Aubergine, 250 g Cherrytomaten gewürfelt
-- 1 Dose Kichererbsen (optional, für die Sättigung)
-- 2 Zwiebeln, Knoblauch
-- Öl, Kreuzkümmel, Paprika, Zitrone, frische Kräuter
-- Feta zum Bestreuen (optional)
-
-**So geht's:** Das ganze Gemüse + Zwiebeln in der Pfanne anbraten, würzen. Couscous separat mit heisser Bouillon übergiessen, 5 Min quellen lassen, auflockern. Gemüse untermischen, Zitrone drüber (Feta wer mag).
-👉 *Geht auch komplett kalt am nächsten Tag als Gemüse-Couscous-Salat fürs Lunch.*
+**Thermomix-Stock:** Kartoffeln stückeln, im Varoma dämpfen (oder weich kochen), dann mit warmer Milch + Butter + Muskat **~20 Sek/St.4** pürieren. Tätschli in der Pfanne braten, Erbsli-Rüebli auf der 2. Platte.
 
 ---
 
-## 🔥 Gemüse-Baustein: Grillgemüse von der Platte (zu jedem Abendessen)
-**Für 6 · Platte als Grill · ~15 Min · die einfachste Art, viel Gemüse auf den Tisch zu bringen**
+# 🧩 3. Beilagen-Baukasten (schnell dazu)
 
-- Was da ist: Zucchini, Peperoni, Aubergine, Fenchel, Champignons, Spargeln, Maiskolben, Zwiebeln, Cherrytomaten
-- Olivenöl, Salz, Pfeffer, Kräuter, evtl. Knoblauch
+**Stärke (⅓ des Tellers) — je nach Gericht rotieren:**
+- Reis (Thermomix Gareinsatz oder Topf)
+- Kartoffelstock (Thermomix) · Grill-/Ofenkartoffeln in Folie · Kartoffelsalat (gekauft)
+- Nudeln/Hörnli · Brot
 
-**So geht's:** Gemüse in Scheiben/Spalten, mit Öl + Salz mischen, auf der heissen Platte (als Grill) von beiden Seiten grillen bis Röststreifen. Passt zu **jedem** Gericht oben — oder solo mit Brot & Kräuterquark/Hummus als leichtes Znacht.
-👉 *Grillgemüse ist euer „immer-Gemüse" — macht satt, schmeckt Kindern (süsslich durch's Rösten) und braucht null Rezept.*
+**Gemüse (⅓) — einfach halten:**
+- TK-Erbsli & Rüebli (Pfanne, Butter) · Broccoli/Blumenkohl gedämpft
+- Maiskolben · Grillgemüse (Peperoni/Zucchini/Zwiebeln) · Bohnen aus der Dose warm
 
-## 🥗 Rohkost- & Salat-Beilage (zu jedem Abendessen dazu)
-- **Rohkost-Teller:** Karotten-, Gurken-, Peperoni-, Fenchel-Sticks + Kräuterquark/Hummus als Dip
-- **Schneller Salat:** Blattsalat oder Tomaten-Gurken-Salat mit Essig-Öl-Dressing
-- **Tomaten-Mozzarella** oder **griechischer Salat** (Gurke, Tomate, Peperoni, Zwiebel, Oliven, Feta)
-👉 *Immer einen davon zusätzlich auf den Tisch → dann ist die Gemüse-Pflicht easy erfüllt.*
+**🥗 Salat (immer dazu):**
+- Grüner Salat mit Essig-Öl-Dressing (Dressing zu Hause in Flasche vormischen!)
+- Tomaten-Gurken-Salat · Rüebli-Salat · gekaufter Fertigsalat als Backup
 
 ---
 
-# 🥪 3. To-Go-Lunch (Wanderung & Ausflug — einfach, kaufbar)
+# 🥪 4. To-Go-Lunch (Wanderung & Ausflug — einfach, kaufbar)
 
-> **Ziel:** nichts Kompliziertes — Sandwich-Niveau, robust, hält im Rucksack, sättigt. Vieles kann man **fixfertig im Migros/Denner/Volg unterwegs kaufen** oder am Morgen in 5 Min zusammenstellen.
+> **Ziel:** Sandwich-Niveau, robust im Rucksack, sättigt. Vieles **fixfertig im Migros/Volg** kaufbar oder in 5 Min am Morgen gemacht.
 
-## L1 — Klassische Sandwiches (am Morgen geschmiert)
-- Dinkel-/Vollkornbrötchen oder Baguette
-- Belag-Mix: Käse, Aufschnitt, Thunfisch (nur für Patricia), Hummus, gekochtes Ei
-- Salatblatt, Tomate, Gurke, Butter/Senf
-👉 In Butterbrotpapier wickeln → hält besser als Frischhaltefolie, matscht weniger.
-
-## L2 — Wraps (rollen, einwickeln, fertig)
-- Tortilla-Wraps (Vollkorn)
-- Füllung: Frischkäse/Hummus + Poulet-/Käsestreifen + Rüebli/Gurke/Peperoni-Stifte
-- Oder Reste vom Chili (H4) / Curry (H3)
-👉 Fest rollen, in Alufolie, schräg halbieren.
-
-## L3 — Fixfertig aus dem Laden (Null-Aufwand-Tag)
-- Fertige Sandwiches / belegte Brötchen
-- Käse, Trockenfleisch (Bündnerfleisch/Salami), Brot
-- Hummus + Gemüsesticks + Cracker (Darvida/Blevita)
-- Früchte, hartgekochte Eier (im Laden erhältlich)
-👉 Perfekt für den Tag, an dem ihr spät los oder lang unterwegs seid.
-
-## L4 — Reste-Recycling (clever & günstig)
-- Chili (H4) oder Couscous-Pfanne (H7) kalt in die Lunchbox
-- Als Wrap-Füllung oder Salat
-👉 Doppelte Menge am Vorabend kochen → Lunch ist automatisch dabei.
-
-## L5 — Snacks & Energie für die Kids (in jeden Rucksack)
-- Farmer-Riegel, Reiswaffeln, Trockenfrüchte, Nüsse
-- Äpfel, Bananen, Trauben, Karotten-/Gurkensticks
-- Käsewürfel / Babybel
-- Proteinriegel (für Patricia)
-- Genug Wasser + evtl. Sirup-Flasche
+- **L1 — Sandwiches:** Brötchen/Baguette mit Käse, Aufschnitt, Ei, Salatblatt, Tomate, Butter/Senf. In Butterbrotpapier wickeln (matscht weniger).
+- **L2 — Wraps:** Tortilla mit Frischkäse/Hummus + Poulet-/Käsestreifen + Gemüsestiften, fest rollen, in Alufolie.
+- **L3 — Fixfertig aus dem Laden:** belegte Brötchen, Käse, Trockenfleisch/Salami, Hummus + Gemüsesticks + Cracker, Früchte, hartgekochte Eier. Null-Aufwand-Tag.
+- **L4 — Reste-Recycling:** Bolo/Geschnetzeltes vom Vorabend kalt in die Lunchbox oder als Wrap.
+- **L5 — Snacks für die Kids:** Farmer-Riegel, Reiswaffeln, Trockenfrüchte, Nüsse, Käsewürfel/Babybel, Äpfel, Bananen, Karotten-/Gurkensticks + genug Wasser.
 
 ---
 
 # 📋 Wochenrhythmus (abgestimmt auf den [[tagesplan]])
 
-| Tag | Frühstück | Warme Mahlzeit (+ Gemüse-Beilage!) | To-Go-Lunch |
+| Tag | Frühstück | Abendessen (Protein·Stärke·Gemüse·Salat) | To-Go |
 |---|---|---|---|
-| Fr 24 Anreise | (unterwegs) | 🔥 Grill-Würste + Grillgemüse + Brot/Salat | — |
-| Sa 25 | F4 Café complet | H1 Älplermagronen + Salat | leicht am Platz |
-| So 26 | F1 Overnight Oats | H5 Risotto (viel Gemüse) | L1 Sandwiches |
-| Mo 27 | F2 Rührei | H2 One-Pot-Pasta (Gemüseberg) | L1/L3 |
-| Di 28 | F2 Rührei | H3 Gemüse-Kokos-Curry | L2 Wraps |
-| Mi 29 | F3 Bircher-Bowl | 🔥 H6 Kartoffeln + Grillgemüse + Würste | unterwegs/L1 |
-| Do 30 | F4 Café complet | H4 Gemüse-Chili (doppelt) | am Platz |
-| Fr 31 Abreise | F4 + Reste | — | L4 Chili-Reste |
+| Fr 24 Anreise | (unterwegs) | 🔥 D1 Grillplausch | — |
+| Sa 25 | F1 Brot | D5 Älplermagronen | leicht am Platz |
+| So 26 | F4 Overnight Oats | D3 Spaghetti Bolognese (Thermomix) | L1 Sandwiches |
+| Mo 27 | F2 Rührei | 🔥 D2 Grill-Poulet + Reis | L1/L3 |
+| Di 28 | F2 Rührei | D4 Pouletgeschnetzeltes + Nudeln | L2 Wraps |
+| Mi 29 | F3 Bircher | 🔥 D6 Grillkoteletts + Grillkartoffeln | unterwegs/L1 |
+| Do 30 | F1 Brot | D7 Hacktätschli + Kartoffelstock | am Platz |
+| Fr 31 Abreise | F1 + Reste | — | L4 Reste-Wrap |
 
-👉 **Zu JEDEM Abendessen zusätzlich Grillgemüse ODER Rohkost/Salat** auf den Tisch — dann ist die Gemüse-Pflicht locker erfüllt. Reihenfolge frei; Würste/Frisches in den ersten Tagen verbrauchen, solange die Kühlbox am kältesten ist.
+👉 Reihenfolge frei — Grilltage (Fr/Mo/Mi), Thermomix-Tage (So Bolo, Do Stock). **Salat gehört immer dazu.**
 
 ---
 
-# 🛒 Einkaufs-Kurzliste für die Rezepte (haltbar, vorab)
+# 🛒 Einkaufs-Kurzliste für die Rezepte
 
-**Trocken/Dose (ins Auto):** Hörnli, Pasta, Reis (Basmati + Risotto), Couscous, Haferflocken/Müesli · passierte + gehackte Tomaten · Kokosmilch · Kidneybohnen, Kichererbsen, Mais · Bouillon, Currypaste/-pulver, Gewürze · Öl, Honig · Nüsse/Samen/Trockenfrüchte · Cracker, Riegel · Tortilla-Wraps
+**Trocken/Dose (ins Auto, haltbar):** Spaghetti, Hörnli/Nudeln, Reis, Haferflocken/Müesli · passierte Tomaten · Bouillon, Kräuter, Gewürze · Öl, Essig (fürs Salatdressing), Honig, Konfi · Semmelbrösel · Cracker, Riegel, Nüsse · Tortilla-Wraps · Apfelmus · Alufolie
 
-**Kühlbox (Anreisetag frisch):** Eier · Milch, Rahm, Naturjoghurt · geriebener Käse, Feta, Sbrinz · Butter · Würste (früh verbrauchen) · Hummus/Kräuterquark · optional wenig Hackfleisch · Aufschnitt/Trockenfleisch (für Sandwiches)
+**Kühlbox / frisch in Visp — Protein:** Poulet (Schenkel + Geschnetzeltes) · Hackfleisch (2×) · Bratwürste, Cervelats · Koteletts/Halssteaks · Speckwürfeli · Eier · Käse (gerieben, Sbrinz), Aufschnitt, Trockenfleisch · Rahm, Milch, Butter, Naturjoghurt · Hummus/Frischkäse
 
-**🥗 Gemüse & Obst — GROSSZÜGIG (Gemüse ist diese Woche Pflicht):** Kartoffeln, Karotten, Zwiebeln, Knoblauch, Zucchini (viele!), Peperoni (viele!), Aubergine, Fenchel, Brokkoli, Blumenkohl, Süsskartoffel, Champignons, Lauch, Cherrytomaten, TK-Erbsen · Salat, Tomaten, Gurken (für Rohkost & Sandwiches) · Äpfel, Bananen, Beeren, Zitrone
-→ Grossteil davon **frisch in Visp** kaufen (nicht die Fahrt über bunkern), robustes Gemüse hält dann die Woche.
+**Stärke frisch:** Kartoffeln (viel — Stock, Grillkartoffeln, Magronen) · gekaufter Kartoffelsalat · Brot/Zopf (+ täglich am Platz vorbestellen)
 
-**Brot:** Dinkel-/Vollkornbrot + Brötchen (vor Ort nachkaufen)
+**Gemüse & Salat (normal, nicht überladen):** Rüebli, Erbsli (TK), Broccoli, Champignons, Peperoni, Zucchini, Zwiebeln, Knoblauch, Maiskolben · Kopf-/Blattsalat, Tomaten, Gurken · Äpfel, Bananen, Beeren, Zitrone
 
 ---
 
 ## 🔗 Verwandte Notizen
 
+- [[tagesplan|Tagesplan 24.–31. Juli]]
 - [[packliste|Packliste Wallis-Zelten]]
