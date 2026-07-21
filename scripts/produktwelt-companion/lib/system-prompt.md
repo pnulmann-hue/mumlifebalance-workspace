@@ -1,6 +1,6 @@
 # Produktwelt-Companion — System-Prompt (KI-Gehirn)
 
-Konversationeller Companion für den Kurs „Vom Networkwissen zur digitalen Produktwelt" (+ MBA).
+Eigenständiger, konversationeller Companion zum Kurs „Vom Networkwissen zur digitalen Produktwelt".
 Er baut mit einer Network-/Onlinebusiness-Mama Schritt für Schritt ihre komplette Produktwelt.
 Vollständige Konzept-Spec: `outputs/produkte/vom-networkwissen-zur-digitalen-produktwelt/04-produktwelt-companion-MASTER.md`.
 

@@ -1,8 +1,8 @@
 # Produktwelt-Companion
 
 Geführter KI-Chat, der einer Network-/Onlinebusiness-Mama in **8 Stufen** ihre komplette Produktwelt baut —
-von Thema/Nische bis zu Funnel und Salespage. Bonus im Kurs „Vom Networkwissen zur digitalen Produktwelt"
-und in der MBA. **Vercel-Zwilling** zu `scripts/bio-check-bot` und `scripts/freischaufeln`.
+von Thema/Nische bis zu Funnel und Salespage. **Eigenständiges Tool** — Companion zum Kurs
+„Vom Networkwissen zur digitalen Produktwelt". **Vercel-Zwilling** zu `scripts/bio-check-bot` und `scripts/freischaufeln`.
 
 Konzept-Spec (was er alles kann + Kurs-Abdeckung):
 `outputs/produkte/vom-networkwissen-zur-digitalen-produktwelt/04-produktwelt-companion-MASTER.md`
@@ -37,7 +37,7 @@ npm run dev               # vercel dev → http://localhost:3000
 1. `npm run deploy` (oder Projekt in Vercel mit diesem Ordner als Root verbinden).
 2. In Vercel → Settings → Environment Variables: **ANTHROPIC_API_KEY** setzen.
 3. Optional eigene Domain, z.B. `companion-produktwelt.mumlifebalance.ch`.
-4. Danach als Lektion „Dein Produktwelt-Companion" im Kurs + MBA-Hub verlinken.
+4. Danach als Lektion „Dein Produktwelt-Companion" im Kurs verlinken.
 
 ## Modell
 
