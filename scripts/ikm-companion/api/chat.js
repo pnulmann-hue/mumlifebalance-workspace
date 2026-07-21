@@ -21,6 +21,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 export const config = {
   runtime: 'nodejs',
@@ -32,7 +33,10 @@ let systemPromptCache = null;
 async function loadSystemPrompt() {
   if (systemPromptCache) return systemPromptCache;
 
+  // Modul-relativer Pfad zuerst: dieses Muster erkennt Vercels Bundler (@vercel/nft)
+  // und packt die Datei zuverlaessig in die Serverless-Funktion mit ein.
   const candidates = [
+    fileURLToPath(new URL('../lib/system-prompt.md', import.meta.url)),
     join(process.cwd(), 'lib', 'system-prompt.md'),
   ];
 
