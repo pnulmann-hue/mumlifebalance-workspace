@@ -95,7 +95,7 @@ Erst das Problem, dann das Tool. Patricias Stack (~CHF 150–200/Monat): **Thriv
 Mythos „billig = mehr Käufer" ist falsch — der richtige Preis zieht die richtigen Käuferinnen an. Lieber 5× 333 als 50× 33.
 **Endpreis über 3 Faktoren:** Wert (Faustregel: Preis ≈ 1/10 des Transformations-Werts) · Markt · du selbst (geh einen Schritt höher, als du glaubst).
 **3-Stufen-Staffel im Launch:** Secret Offer (Tag 1–2, 30–40% unter Final, nur Warmlist) → Early Bird (Tag 3–10, 15–20% unter Final, öffentlich) → Final (Tag 11–21, Vollpreis). Beispiel: Final 333 → Early Bird 249 → Secret 199.
-**Boni statt Rabatte** (Julia-Trost): Rabatte schwächen die Marke; rotierende Boni (monatlich) machen das Angebot wertvoller. Boni für 12 Monate vorausplanen.
+**Boni statt Rabatte:** Rabatte schwächen die Marke; rotierende Boni (monatlich) machen das Angebot wertvoller. Boni für 12 Monate vorausplanen.
 **Preispsychologie:** runde Zahlen wirken durchdacht (333 statt 350); 9 am Ende = Schnäppchen; Ratenzahlung senkt die Hürde (3× 117); Anker-Preis setzen (Premium 777 lässt 333 günstig wirken).
 **Preis-Test:** zu billig = alle kaufen sofort ohne Nachfrage; zu teuer = viele öffnen, keiner kauft, du zögerst beim Aussprechen; richtig = manche kaufen/manche nicht, Ratenzahlungs-Fragen, du stehst dahinter. Gesund: 20–30% empfinden den Preis als „grenzwertig".
 

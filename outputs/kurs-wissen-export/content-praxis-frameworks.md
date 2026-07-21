@@ -64,7 +64,7 @@ Leserinnen erkennen KI-Sprache unbewusst — und selbst bei gutem Inhalt zerstö
 ## Weitere Verbote
 
 - **Anleitungs-Floskeln:** „So machst du…" · „So geht's…" · „Damit du…" → stattdessen konkrete Szene/POV.
-- **„Stell dir vor…" / „Kennst du das…"** in geschriebenem Instagram-Content → direkt in die Szene einsteigen („Du sitzt um 23 Uhr am Laptop…"). *(Ausnahme: in gesprochenen Verkaufs-Kontexten — Webinar, Sales-Call, Video — ist „Stell dir vor" als Future-Pacing erlaubt.)*
+- **„Stell dir vor…" / „Kennst du das…"** in geschriebenem Instagram-Content → direkt in die Szene einsteigen („Du sitzt um 23 Uhr am Laptop…"). *(Ausnahme: in gesprochenen Verkaufs-Kontexten — Webinar, Sales-Call, Video — ist „Stell dir vor" als Future-Pacing erlaubt.)* Der vage Opener „Kennst du das?" ist gesperrt; eine konkrete Variante, die den Gedanken benennt („Kennst du den Gedanken, dass du abends Ideen hast und sie dir morgens wieder ausredest?"), ist erlaubt.
 - **Marketing-Buzzwords:** „Game-Changer" · „Level-Up" · „auf das nächste Level" · „Deep Dive" · „Mindset-Shift" · „die ultimative Lösung" · „das Geheimnis zu…".
 - **Spirituelle Floskeln:** „Leichtigkeit" · „in deine Kraft kommen" · „deine Energie" · „manifestieren" · „limitierende Glaubenssätze".
 - **Leere Begriffe:** „Erfolg" · „Glück" · „Balance" · „Wachstum" · „Potenzial entfalten" · „deine Vision/Mission". *(„Balance" bleibt nur als Brand-Name „Mum Life Balance", nie als Benefit.)*
@@ -153,7 +153,7 @@ Nie das Werkzeug, immer die Alltagsszene:
 
 ## 2.4 — Reveal- & Neugier-Frameworks
 
-1. `[E]` **Experten-Aussage** — „[Experte + Erfahrung] sagt: [Situation] — [überraschende Erkenntnis]." *(Als Expertin umbauen: eigene Erfahrung statt externem Experten — „Nach [X] Kundinnen weiss ich: [Problem] liegt nie an [A] — sondern an DAS:")*
+1. `[E]` **Experten-Aussage** — „[Experte + Erfahrung] sagt: [Situation] — [überraschende Erkenntnis]." *(Als Expertin umbauen: eigene Erfahrung statt externem Experten — „Nach [X] Kundinnen weiss ich: bei [Problem] ist [A] nie der wahre Grund. Der ist DAS:")*
 2. `[P]` **Ich-lächle-nur** — „[Ungewöhnliches Tun]. [Person]: '[Zweifel]'. Ich lächle nur — was sie nicht ahnt:"
 3. `[E]` **Warum-Paradox** — „Warum [Person] plötzlich [Verhalten], aber heimlich [Gegenteil braucht]:"
 4. `[E]` **Falsche-Annahme-Korrektur** — „[Symptom] liegt nicht an [A], nicht an [B] — der wahre Grund ist [Ursache]:"
@@ -165,7 +165,7 @@ Nie das Werkzeug, immer die Alltagsszene:
 
 ## 2.5 — Vorlagen-Bibliothek: 5 Content-Säulen (fertige Muster zum Füllen)
 
-Setze `[…]` mit deinem echten Thema ein, wähl den CTA nach Ziel und filter durch die Blackliste (einige Muster nutzen gesperrte Dreier-Aufzählungen — nimm sie als Struktur-Inspiration, nicht 1:1).
+Setze `[…]` mit deinem echten Thema ein und wähl den CTA nach Ziel. Wichtig: Einige Vorlagen nutzen bewusst Kontraste („kein X, sondern Y") oder Dreier-Reihen, die die Blackliste bei fertigem Content flaggt — nimm sie als Struktur-Inspiration und formulier den finalen Text sauber aus (z. B. in zwei eigenen Sätzen statt einem „nicht/sondern"-Satz).
 
 **Säule 1 · Identifikation `[P]`**
 1. „Kann mir mal jemand erklären, warum bei […] alle so tun, als wäre das total einfach?"
@@ -277,7 +277,7 @@ Vor [Zeitraum]:
 Heute:
 - [Ergebnis 1]
 - [Ergebnis 2]
-Was sich geändert hat? Mein System, nicht mein Tag.
+Was sich geändert hat? Mein System — der Tag ist derselbe geblieben.
 [CTA]
 ```
 
@@ -301,7 +301,7 @@ Nummer [X] hat am meisten verändert.
 [CTA]
 ```
 
-## 3.2 — Julias 7-Punkte-Caption (Alternative, verkaufsstark)
+## 3.2 — Die 7-Punkte-Caption (Alternative, verkaufsstark)
 ```
 1. Hook (erste Zeile, NICHT den Cover-/Reel-Hook kopieren)
 2. CTA 1 („Speicher den Beitrag")
