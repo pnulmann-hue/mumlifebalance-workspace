@@ -24,17 +24,15 @@ Ich hab immer eine kleine Sprühflasche im Kühlschrank stehen. Ein Sprüher —
 
 • 100 ml destilliertes Wasser
 • 10 Tropfen **Peppermint**
-• 10 Tropfen **Lemon**
+• 10 Tropfen **Wild Orange**
 
 📍 *So geht's:*
 Alles in eine Sprühflasche, im Kühlschrank aufbewahren, vor Gebrauch schütteln. Auf die Haut sprühen — sorgt für sofortige Abkühlung und Frische.
 
-🌿 *Sommer 25 macht's noch feiner:* ein pflegendes Körperspray aus **Neroli-Hydrolat** und einem Hauch **Grapefruitöl** — belebt und pflegt zugleich.
+💡 *Warum Wild Orange statt Lemon?* Weil man das Spray an heissen Tagen ja gerade draussen in der Sonne benutzt — und Wild Orange (Süssorange) gilt im Gegensatz zu Lemon als nicht photosensitiv. So bist du auf der sicheren Seite.
 
 ━━━━━━━━━━━━━━━━━━
 Wo brauchst du die Abkühlung am dringendsten? 🧊
-
-💛 *Hinweis:* Zitrusöle sind photosensitiv — besprühte Haut nicht direkt in die Sonne.
 
 ---
 
