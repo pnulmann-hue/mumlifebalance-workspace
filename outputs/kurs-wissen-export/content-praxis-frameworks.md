@@ -107,7 +107,7 @@ Nie das Werkzeug, immer die Alltagsszene:
 5. `[E]` **Zwei-Typen** — „Es gibt zwei Arten von [Zielgruppe], die [Ziel] wollen:"
 
 **Neugier & Wissenslücke:**
-6. `[E]` **Falsche-Annahme** — „[Problem] liegt nicht an [Ursache] — der wahre Grund ist DAS:"
+6. `[E]` **Falsche-Annahme** — „Bei [Problem] ist [A] gar nicht das Problem. Es ist [B]:"
 7. `[E]` **Du-denkst** — „Du denkst, dir fehlt [Ressource] — dabei frisst was anderes deine [Ressource]:"
 8. `[E]` **Lektion / Curiosity-Gap** — „Der eine Satz, der bei [Thema] alles verändert hat:"
 9. `[P]` **Grösster-Fehler** — „Der grösste Fehler, den ich bei [Thema] am Anfang gemacht hab:"
@@ -153,10 +153,10 @@ Nie das Werkzeug, immer die Alltagsszene:
 
 ## 2.4 — Reveal- & Neugier-Frameworks
 
-1. `[E]` **Experten-Aussage** — „[Experte + Erfahrung] sagt: [Situation] — [überraschende Erkenntnis]." *(Als Expertin umbauen: eigene Erfahrung statt externem Experten — „Nach [X] Kundinnen weiss ich: bei [Problem] ist [A] nie der wahre Grund. Der ist DAS:")*
+1. `[E]` **Experten-Aussage** — „[Experte + Erfahrung] sagt: [Situation] — [überraschende Erkenntnis]." *(Als Expertin umbauen: eigene Erfahrung statt externem Experten — „Nach [X] Kundinnen weiss ich: bei [Problem] ist [A] nie der wahre Grund. Es ist [B]:")*
 2. `[P]` **Ich-lächle-nur** — „[Ungewöhnliches Tun]. [Person]: '[Zweifel]'. Ich lächle nur — was sie nicht ahnt:"
 3. `[E]` **Warum-Paradox** — „Warum [Person] plötzlich [Verhalten], aber heimlich [Gegenteil braucht]:"
-4. `[E]` **Falsche-Annahme-Korrektur** — „[Symptom] liegt nicht an [A], nicht an [B] — der wahre Grund ist [Ursache]:"
+4. `[E]` **Falsche-Annahme-Korrektur** — „[Symptom] hat mit [A] und [B] nichts zu tun. Der wahre Grund ist [C]:"
 5. `[E]` **Wenn-dann-Revelation** — „Wenn [konkrete Beobachtung], bedeutet das [X] (denn [Erklärung]):"
 6. `[E]` **Statistik-Schock** ⚠️ echte Zahl — „[X von Y] aller [ZG] [Verhalten] — und deshalb [Konsequenz]:"
 7. `[P]` **Szenen-Moment** — „[Ort]. [Person] meint: '[direkte Rede]'. Alle nickten. Bis [Reveal]:"
