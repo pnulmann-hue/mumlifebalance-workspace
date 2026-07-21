@@ -8,5 +8,6 @@ Aufbereitete Kurs-Transkripte, die Teilnehmerinnen ihrer eigenen KI als Wissensg
 
 ## Dateien
 
+- [[content-praxis-frameworks]]
 - [[digitale-produktwelt-wissensgrundlage]]
 - [[instagram-kundenmaschine-wissensgrundlage]]

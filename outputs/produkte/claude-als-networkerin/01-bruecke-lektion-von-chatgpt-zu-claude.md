@@ -48,12 +48,13 @@ Damit sie echten Nutzen mitnehmen (kein blosser Teaser):
 
 → Ab jetzt antwortet Claude in ihrer Logik und ihrer Sprache.
 
-### A2) Die 2 Dokumente, die ins Projekt kommen
+### A2) Die 3 Dokumente, die ins Projekt kommen
 
-Damit Claude echte, kurs-taugliche Ergebnisse liefern kann, braucht er **zwei** Dokumente im Projekt:
+Damit Claude echte, kurs-taugliche Ergebnisse in deiner Stimme liefert, braucht er **drei** Dokumente im Projekt:
 
-1. **Das Kurs-Wissen** — die Wissensgrundlage aus diesem Kurs (fertig, bekommst du hier: `…-wissensgrundlage.md` → als Dokument reinladen). Das ist deine Methode + alle Frameworks.
-2. **Dein persönliches „Buch"** — dein Business, deine Geschichte, deine Persönlichkeit, deine Stimme. Das erzeugst du selbst mit diesem Prompt:
+1. **Das Kurs-Wissen** — die Wissensgrundlage aus deinem Kurs (fertig, bekommst du als Download: `…-wissensgrundlage.md`). Das ist die Methode + alle Frameworks des Kurses.
+2. **Die Content-Praxis** — `content-praxis-frameworks.md` (Hook-Formeln, Caption-Strukturen, die 7 Kaufpsychologie-Trigger, Einwandbehandlung und die Floskel-Blackliste). **Das** macht den Unterschied zwischen generischem und richtig gutem Output.
+3. **Dein persönliches „Buch"** — dein Business, deine Geschichte, deine Persönlichkeit, deine Stimme. Das erzeugst du selbst mit diesem Prompt:
 
 **Interview-Prompt (kopieren, in einen Claude-Chat geben):**
 > „Ich möchte, dass du mich so ausführlich zu mir und meinem Business befragst, dass am Ende ein kleines Buch über mein Thema, meine Geschichte und meine Persönlichkeit entstehen könnte. Stell mir deine Fragen einzeln, nacheinander — zu meiner Person, meinem Warum, meiner Zielgruppe, ihrem grössten Schmerz, meinem Angebot, meiner Sprache, meinen Werten und meinen bisherigen Erfahrungen. Frag so lange nach, bis du ein vollständiges Bild von mir hast. Am Schluss fasst du alles zu einem strukturierten Dokument zusammen, das ich als PDF speichern kann."
