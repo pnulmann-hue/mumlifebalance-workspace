@@ -1161,6 +1161,19 @@ Leserinnen erkennen KI-Sprache unbewusst — und selbst bei gutem Inhalt zerstö
 
 Der Hook ist die erste Zeile / das Cover — er entscheidet in unter 2 Sekunden, ob jemand bleibt.
 
+## ⚠️ So nutzt du diese Beispiele (Pflicht — zuerst lesen)
+
+Alle Hooks und Captions hier sind **Muster, keine fertigen Posts.** Es gibt zwei Sorten:
+
+- **Vorlagen mit `[Platzhalter]`** → die eckigen Klammern mit dem echten Thema, der Zielgruppe und der Situation der Nutzerin füllen.
+- **Ausformulierte Beispiele** (z. B. „Ich arbeite 2 Stunden am Tag — mit 4 Kindern", „POV: die erste Mama in deiner Familie mit eigenem Business") → das ist **das Leben und die Nische der Autorin**, nicht das der Nutzerin. Diese Beispiele NIE 1:1 übernehmen.
+
+**Die Regel:** Übernimm aus jedem Beispiel nur **Struktur, Rhythmus und Psychologie** — nie die konkreten Inhalte (Zahlen, „4 Kinder", Berufe, Uhrzeiten, Namen). Trage die echte Realität der Nutzerin ein: ihr Thema, ihre Zielgruppe, ihre Geschichte, ihre Zahlen.
+
+Beispiel für den Transfer: Das Muster hinter „Ich arbeite 2 Stunden am Tag — mit 4 Kindern" ist **Zahl + überraschender Kontext**. Für eine Ernährungsberaterin wird daraus z. B. „Ich koche 3× die Woche vor — und esse trotzdem jeden Tag frisch." Gleiche Mechanik, ihre Welt.
+
+**Wenn Infos zur Nutzerin fehlen** (Thema, Zielgruppe, echte Zahlen, ihre Story), fragt die KI nach — sie kopiert nie ersatzweise das Beispiel der Autorin und erfindet keine Zahlen.
+
 ## Die Reichweiten-Hierarchie (vor dem Hook verstehen)
 1. **Video-Stil = #1** — candid „beim Tun" (Alltag, Bewegung) schlägt posiert deutlich.
 2. **Thema = #2** — ein universeller Lebens-Schmerz reicht weit; business-interne Themen floppen.

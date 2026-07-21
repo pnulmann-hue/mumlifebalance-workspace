@@ -39,7 +39,9 @@ console.log('IKM system-prompt aktualisiert:', ikmNew.split('\n').length, 'Zeile
 // ---- 3. Produktwelt-Companion: Hook/Caption/Verkauf-Sektionen ersetzen ----
 const pwPath = ROOT + '/scripts/produktwelt-companion/lib/wissensgrundlage.md';
 let pw = fs.readFileSync(pwPath, 'utf8');
-const hookIdx = pw.indexOf('## HOOK-FORMELN');
+// Start-Anker: Erstlauf hat "## HOOK-FORMELN", Folgelaeufe "## TEIL 2 — HOOK-FORMELN"
+let hookIdx = pw.indexOf('## TEIL 2 — HOOK-FORMELN');
+if (hookIdx < 0) hookIdx = pw.indexOf('## HOOK-FORMELN');
 const methodeIdx = pw.indexOf('## PRODUKT-METHODE');
 if (hookIdx < 0 || methodeIdx < 0) throw new Error('Produktwelt-Anker fehlt');
 const pwHead = pw.slice(0, hookIdx).trimEnd();
