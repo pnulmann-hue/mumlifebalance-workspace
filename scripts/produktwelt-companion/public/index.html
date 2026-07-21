@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Produktwelt-Companion — von der Idee bis zur Salespage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--petrol:#12828c;--dunkelblau:#29556d;--creme:#f1ecdd;--text:#0c1c30;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html,body{height:100%;}
+    body{background:var(--creme);font-family:"Source Sans 3",sans-serif;color:var(--text);line-height:1.55;}
+    .wrap{max-width:720px;margin:0 auto;min-height:100%;display:flex;flex-direction:column;padding:20px 16px 0;}
+    header{text-align:center;margin-bottom:16px;}
+    header .eyebrow{font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--petrol);font-size:13px;}
+    header h1{font-family:"Philosopher";font-weight:700;font-size:30px;color:var(--dunkelblau);line-height:1.1;margin-top:4px;}
+    header p{opacity:.85;margin-top:6px;font-size:15.5px;}
+
+    #intro{background:#fff;border-radius:20px;padding:26px 22px;box-shadow:0 10px 30px rgba(12,28,48,.08);text-align:center;}
+    #intro h2{font-family:"Philosopher";font-size:24px;color:var(--dunkelblau);margin-bottom:10px;}
+    #intro p{opacity:.9;margin-bottom:8px;}
+    #intro ul{text-align:left;max-width:440px;margin:12px auto 4px;padding-left:20px;}
+    #intro li{margin:5px 0;}
+
+    #chat{flex:1;overflow-y:auto;padding:6px 2px 12px;display:none;}
+    .msg{margin:12px 0;display:flex;}
+    .msg.bot{justify-content:flex-start;}
+    .msg.me{justify-content:flex-end;}
+    .bubble{max-width:88%;padding:14px 16px;border-radius:18px;font-size:16px;box-shadow:0 4px 14px rgba(12,28,48,.06);}
+    .bot .bubble{background:#fff;border-top-left-radius:6px;}
+    .me .bubble{background:var(--petrol);color:#fff;border-top-right-radius:6px;}
+    .bubble h2,.bubble h3{font-family:"Philosopher";color:var(--dunkelblau);margin:10px 0 4px;line-height:1.2;}
+    .bubble h2{font-size:20px;} .bubble h3{font-size:17px;}
+    .me .bubble h2,.me .bubble h3{color:#fff;}
+    .bubble p{margin:8px 0;} .bubble p:first-child{margin-top:0;} .bubble p:last-child{margin-bottom:0;}
+    .bubble ul,.bubble ol{margin:6px 0 6px 20px;} .bubble li{margin:3px 0;}
+    .bubble strong{font-weight:700;}
+    .bubble table{border-collapse:collapse;width:100%;margin:8px 0;font-size:14px;}
+    .bubble th,.bubble td{border:1px solid rgba(41,85,109,.2);padding:6px 8px;text-align:left;}
+
+    .typing .bubble{color:var(--petrol);font-weight:600;}
+    .dot-anim::after{content:'';animation:dots 1.2s steps(4,end) infinite;}
+    @keyframes dots{0%{content:'';}25%{content:'.';}50%{content:'..';}75%{content:'...';}}
+
+    .composer{position:sticky;bottom:0;background:var(--creme);padding:10px 0 16px;display:none;gap:8px;}
+    #inp{flex:1;padding:13px 14px;border:1.5px solid rgba(41,85,109,.25);border-radius:14px;font-size:16px;font-family:inherit;background:#fff;color:var(--text);resize:none;max-height:140px;}
+    #inp:focus{outline:none;border-color:var(--petrol);}
+    .btn{border:none;border-radius:14px;background:var(--petrol);color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer;padding:13px 22px;transition:transform .05s;}
+    .btn:active{transform:scale(.98);} .btn:disabled{opacity:.5;cursor:default;}
+    .btn.full{width:100%;margin-top:18px;}
+    .err{background:#f6e2da;color:#c0603a;border-radius:12px;padding:12px 14px;margin:10px 0;font-weight:600;text-align:center;}
+    footer{text-align:center;padding:10px 0 18px;font-size:12.5px;color:rgba(12,28,48,.5);}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Mum Business Academy</div>
+      <h1>Dein Produktwelt-Companion</h1>
+      <p>Von deinem Thema bis zur fertigen Salespage — Schritt für Schritt gemeinsam gebaut.</p>
+    </header>
+
+    <section id="intro">
+      <h2>Bereit, deine Produktwelt zu bauen? 💛</h2>
+      <p>Ich nehme dich in 8 Schritten an die Hand — von der Idee bis zum kompletten Paket:</p>
+      <ul>
+        <li>deine Produkttreppe (0€ → Mini → Mittel → Gross)</li>
+        <li>das Freebie, das deine Community heiss macht</li>
+        <li>Zusatzangebote, Funnel und Salespage</li>
+        <li>und die Inhalte gleich dazu</li>
+      </ul>
+      <p>Wir gehen immer nur einen Schritt aufs Mal — du kannst jederzeit „ändern" sagen.</p>
+      <button class="btn full" id="startBtn">Los geht's →</button>
+    </section>
+
+    <div id="chat"></div>
+
+    <div class="composer" id="composer">
+      <textarea id="inp" rows="1" placeholder="Deine Antwort …"></textarea>
+      <button class="btn" id="sendBtn">Senden</button>
+    </div>
+    <footer>Dein Companion denkt mit dir — die Entscheidungen bleiben deine.</footer>
+  </div>
+
+  <script>
+    const API = '/api/generate';
+    const chat = document.getElementById('chat');
+    const composer = document.getElementById('composer');
+    const inp = document.getElementById('inp');
+    const sendBtn = document.getElementById('sendBtn');
+    const startBtn = document.getElementById('startBtn');
+    const intro = document.getElementById('intro');
+    let messages = [];   // {role, content}
+    let busy = false;
+
+    function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+    // Minimaler, sicherer Markdown→HTML-Renderer (escaped zuerst)
+    function md(t){
+      const lines = esc(t).split('\n');
+      let html='', list=null;
+      const inline = s => s
+        .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+        .replace(/(^|[^*])\*(?!\s)(.+?)\*/g,'$1<em>$2</em>');
+      const closeList=()=>{ if(list){ html+='</'+list+'>'; list=null; } };
+      for(let raw of lines){
+        const line=raw.trimEnd();
+        if(!line.trim()){ closeList(); continue; }
+        let m;
+        if((m=line.match(/^###\s+(.*)/))){ closeList(); html+='<h3>'+inline(m[1])+'</h3>'; continue; }
+        if((m=line.match(/^##\s+(.*)/))){ closeList(); html+='<h2>'+inline(m[1])+'</h2>'; continue; }
+        if((m=line.match(/^\s*[-•]\s+(.*)/))){ if(list!=='ul'){closeList();list='ul';html+='<ul>';} html+='<li>'+inline(m[1])+'</li>'; continue; }
+        if((m=line.match(/^\s*\d+[.)]\s+(.*)/))){ if(list!=='ol'){closeList();list='ol';html+='<ol>';} html+='<li>'+inline(m[1])+'</li>'; continue; }
+        closeList(); html+='<p>'+inline(line)+'</p>';
+      }
+      closeList();
+      return html;
+    }
+
+    function addBubble(role, htmlOrText, isHtml){
+      const wrap=document.createElement('div');
+      wrap.className='msg '+(role==='assistant'?'bot':'me');
+      const b=document.createElement('div');
+      b.className='bubble';
+      b.innerHTML=isHtml?htmlOrText:esc(htmlOrText).replace(/\n/g,'<br>');
+      wrap.appendChild(b); chat.appendChild(wrap);
+      chat.scrollTop=chat.scrollHeight;
+      return wrap;
+    }
+
+    function showTyping(){
+      const wrap=document.createElement('div');
+      wrap.className='msg bot typing'; wrap.id='typing';
+      wrap.innerHTML='<div class="bubble"><span class="dot-anim">Ich denke mit</span></div>';
+      chat.appendChild(wrap); chat.scrollTop=chat.scrollHeight;
+    }
+    function hideTyping(){ const t=document.getElementById('typing'); if(t) t.remove(); }
+    function showErr(msg){ const e=document.createElement('div'); e.className='err'; e.textContent=msg; chat.appendChild(e); chat.scrollTop=chat.scrollHeight; }
+
+    async function send(userText){
+      if(busy) return; busy=true; sendBtn.disabled=true;
+      if(userText){ messages.push({role:'user',content:userText}); addBubble('user',userText,false); }
+      showTyping();
+      try{
+        const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages})});
+        const data=await r.json();
+        hideTyping();
+        if(!r.ok||!data.reply){ showErr(data.error||'Hat nicht geklappt — bitte nochmal.'); }
+        else{ messages.push({role:'assistant',content:data.reply}); addBubble('assistant',md(data.reply),true); }
+      }catch(e){ hideTyping(); showErr('Verbindung hat gehakt — bitte nochmal senden.'); }
+      busy=false; sendBtn.disabled=false; inp.focus();
+    }
+
+    startBtn.addEventListener('click',()=>{
+      intro.style.display='none'; chat.style.display='block'; composer.style.display='flex';
+      send('Los, lass uns meine Produktwelt bauen.');
+    });
+    sendBtn.addEventListener('click',()=>{ const v=inp.value.trim(); if(v){ inp.value=''; inp.style.height='auto'; send(v); } });
+    inp.addEventListener('keydown',(e)=>{ if(e.key==='Enter'&&!e.shiftKey){ e.preventDefault(); sendBtn.click(); } });
+    inp.addEventListener('input',()=>{ inp.style.height='auto'; inp.style.height=Math.min(inp.scrollHeight,140)+'px'; });
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "produktwelt-companion",
+  "version": "1.0.0",
+  "description": "Produktwelt-Companion — geführter KI-Chat, der aus Thema/Nische/Zielgruppe die komplette Produktwelt baut (Treppe → Freebie → Funnel → Salespage). Bonus im Kurs 'Vom Networkwissen zur digitalen Produktwelt' + MBA. Vercel-Zwilling zu bio-check / freischaufeln.",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0"
+  },
+  "devDependencies": {
+    "vercel": "^52.0.0"
+  }
+}
