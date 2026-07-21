@@ -1,6 +1,6 @@
 {
   "name": "ikm-companion-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Instagram-Kundenmaschine-Companion — Bonus-Assistent fuer IKM-Kaeuferinnen (Anwendung > Theorie). Chat-Bot nach Patricia-Ulmann-Methodik.",
   "type": "module",
   "scripts": {
