@@ -22,16 +22,25 @@ const MODEL = 'claude-sonnet-4-5';
 const MAX_TURNS = 60; // Sicherheitsnetz gegen zu lange Verläufe
 
 let promptCache = null;
-async function loadSystemPrompt() {
-  if (promptCache) return promptCache;
+async function loadFile(name) {
   const candidates = [
-    join(process.cwd(), 'lib', 'system-prompt.md'),
-    join(process.cwd(), 'scripts/produktwelt-companion/lib/system-prompt.md'),
+    join(process.cwd(), 'lib', name),
+    join(process.cwd(), 'scripts/produktwelt-companion/lib', name),
   ];
   for (const path of candidates) {
-    try { promptCache = await readFile(path, 'utf-8'); return promptCache; } catch { /* next */ }
+    try { return await readFile(path, 'utf-8'); } catch { /* next */ }
   }
-  throw new Error('system-prompt.md nicht gefunden');
+  return null;
+}
+async function loadSystemPrompt() {
+  if (promptCache) return promptCache;
+  const sys = await loadFile('system-prompt.md');
+  if (!sys) throw new Error('system-prompt.md nicht gefunden');
+  const wissen = await loadFile('wissensgrundlage.md');
+  promptCache = wissen
+    ? `${sys}\n\n---\n\n# WISSENSGRUNDLAGE (wende dieses Wissen bei jeder Stufe an)\n\n${wissen}`
+    : sys;
+  return promptCache;
 }
 
 function sanitizeMessages(messages) {
