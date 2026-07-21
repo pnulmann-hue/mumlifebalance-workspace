@@ -1,47 +1,241 @@
-# Wissensgrundlage — Produktwelt-Companion
+VOM NETWORKWISSEN ZUR DIGITALEN PRODUKTWELT — WISSENSGRUNDLAGE FUER DEIN CLAUDE-BUSINESS-BRAIN
+Von Patricia Ulmann · Mum Life Balance
 
-Dieses Wissen wendest du bei JEDER Stufe an, damit deine Ergebnisse konkret, verkaufsstark und
-menschlich sind — in der Stimme der Nutzerin (die du in Stufe 0 erfragst und kalibrierst).
+So nutzt du diese Datei:
+Lade sie in dein Claude-Projekt "Mein Business-Brain" hoch (zusammen mit deinem
+persoenlichen Buch). Sie enthaelt die komplette Methode aus "Vom Networkwissen zur
+digitalen Produktwelt" (Produkttreppe, Freebie, Funnel, Salespage, Launch, Pricing)
+plus alle Hook-, Caption- und Verkaufspsychologie-Frameworks. Ab dann baut Claude
+deine Produktwelt in genau dieser Logik — in deiner Sprache.
 
----
+============================================================================
+TEIL A — DIE METHODE: DIGITALE PRODUKTWELT
+============================================================================
 
-## STIMME & TONALITÄT
+## KERN-PHILOSOPHIE (der rote Faden über alles)
 
-- Schreib in **der Stimme der Nutzerin** (Wortwahl, Beispiele aus ihrem Onboarding). Solange du sie
-  noch nicht kennst: direkt, nahbar, empowernd, ehrlich — wie eine Freundin, die einen Schritt voraus ist.
-- Du-Ansprache, echte Umlaute, Schweizer ss (kein ß). Kurze klare Sätze, Emojis sparsam.
-- **PIE-Mix:** Persönlichkeit / Inspiration / Expertise mischen — nie nur Fakten.
-- Direkt, aber mit Liebe. Echt statt Hochglanz. Konkrete Zahlen/Situationen statt vager Versprechen.
-
----
-
-## FLOSKEL-BLACKLISTE (prüfe JEDEN Text, bevor du ihn ausgibst)
-
-**Absolute Verbote — umschreiben, wenn sie auftauchen:**
-- **Nicht/Sondern-Konstrukte** in jeder Form („Nicht X, sondern Y" · „Es liegt nicht an X, es liegt an Y" ·
-  „Weniger X, mehr Y" · „Es braucht kein X, es braucht Y"). → Zwei eigene Sätze oder direkt sagen, was Sache ist.
-- **Dreier-Stakkato / gleiche Satzanfänge** („Du lernst. Du wächst. Du gewinnst."). → einen Punkt vertiefen.
-- **Worthülsen:** „klarer Nutzen", „echte Ergebnisse", „individuelle Lösung", „massgeschneidert", „praxisnah",
-  „auf Augenhöhe". → sagen, WAS gemeint ist.
-- **Abstrakte Benefits:** „sichtbar werden", „Wunschkundinnen erreichen", „dich zeigen". → was danach passiert.
-- **„Stell dir vor…" / „Kennst du das…"** in geschriebenem Content → direkt in die Szene. *(In gesprochenen
-  Verkaufs-Kontexten erlaubt.)*
-- **Buzzwords:** „Game-Changer", „Level-Up", „nächstes Level", „Deep Dive", „ultimativ", „das Geheimnis".
-- **Spirituelle Floskeln:** „Leichtigkeit", „in deine Kraft kommen", „manifestieren", „limitierende Glaubenssätze".
-- **Leere Begriffe:** „Erfolg", „Balance", „Wachstum", „Potenzial entfalten", „deine Vision".
-- **Superlative & Zeit-Floskeln:** „die beste/ultimative", „nie wieder", „100% garantiert", „in nur X Tagen",
-  „schnell und einfach", „über Nacht".
-- **Frage-Floskeln:** „Bist du bereit für…?", „Willst du endlich…?".
-
-**Selbstcheck:** Würde ich das wirklich so sagen? Seh ich ein Bild? Klingt es menschlich? Kein Blackliste-Wort?
+- **Hybridmodell:** Du verbindest dein Networkprodukt mit deinem eigenen Thema/Produkt. Nicht Produkt verkaufen, sondern die **Lösung** verkaufen. Das Produkt ist Teil der Lösung, nie das Thema selbst.
+- **A→B→E→M→Z-Produkttreppe:** 0€-Freebie (A→B) · Miniprodukt (B→E) · Mittleres/Signature (E→M) · Grosses/Premium (M→Z). Ein Sprung pro Produkt, keine Überlappung.
+- **Erst verkaufen, dann erstellen:** Immer erst validieren (Pre-Sale/Warmlist), dann bauen. Nie monatelang am Kurs bauen ohne Markt-Test.
+- **Transformation statt Features:** Nie „5 Module, 2 PDFs" — immer die konkrete Alltagsszene nach der Transformation („Du sitzt im Café und denkst: ich hab es endlich geschafft").
+- **Roter Faden:** Ein Kurs ohne roten Faden ist eine Sammlung von Tipps. Mit rotem Faden ist er eine Transformation. Test: Kannst du eine Lektion ohne Verlust streichen? Dann gehört sie nicht rein.
 
 ---
 
-## TEIL 2 — HOOK-FORMELN (der grosse Vorrat)
+# MODUL 1 — Psychologie & Fundament
+
+## 1.1 Die Psychologie hinter dem Hybridmodell
+Menschen kaufen im Online-Verkauf nicht das Produkt, sondern die Lösung ihres Problems. Als Networkerin bist du eine unter vielen mit dem gleichen Produkt — du unterscheidest dich über dein **eigenes Thema**. Kontrast-Denken „Nicht X, sondern Y" (z.B. „Ohne eigenes Produkt vs. mit eigenem Produkt").
+
+## 1.2 Was Menschen wirklich zum Kauf bewegt (Kaufmotive)
+Kaufentscheidungen sind grösstenteils **emotional**, danach rational gerechtfertigt. Drei typische Käufer-Ausprägungen, auf die du deine Sprache abstimmst:
+- **Die Inspirierte** (emotional, Vision) — will das grosse Gefühl, die Transformation.
+- **Die Faktenorientierte** (Beweise, Struktur) — will Belege, klare Schritte, Logik.
+- **Die Ängstliche** (Sicherheit) — braucht Vertrauen, Garantie, „du schaffst das".
+Für jedes Angebot alle drei ansprechen: Vision + Beweis + Sicherheit.
+
+## 1.3 Social Proof aufbauen als Networkerin
+Social Proof ist der Networkerinnen-USP. Sammle aktiv Testimonials: O-Töne, konkrete Ergebnisse, Fotos. Ohne mind. 3–5 Testimonials ist die Conversion auf einer Mid-Price-Sales-Page um ein Vielfaches niedriger.
+
+---
+
+# MODUL 2 — Produkt & Positionierung
+
+## 2.1 Welche Art Produkt passt zu dir?
+Produktformate: 0€-Freebie · Minikurs · Signature-Kurs · 1:1/Begleitung · Mastermind/Membership. Wahl richtet sich nach der Transformation (Quick-Win → Minikurs, ganze Transformation → grosser Kurs) und deinem Stand (erstes Mal → immer Minikurs).
+
+## 2.2 Positionierung & unwiderstehliche Angebote
+**Angebots-Formel:** „Ich helfe **[Wer]** dabei, **[Was]** zu erreichen, auch wenn **[Einwand]**."
+- Zu breit = kein Sog. Der Einwand muss drin sein (das macht es glaubwürdig).
+- NM-Beispiele: „Ich helfe Mamas, wieder Energie zu haben, auch wenn sie schon alles probiert haben." / „…unreine Haut in den Griff zu bekommen, auch wenn teure Cremes bisher nicht geholfen haben."
+
+## 2.3 Produkte, die immer wieder gekauft werden
+Baue Wiederkäufer-Logik: jedes Produkt führt zum nächsten Schritt. Denk in Kundenbeziehung, nicht in Einzelverkauf.
+
+---
+
+# MODUL 3 — Produkterstellung
+
+## 3.1 / 3.2 Produkterstellung Schritt für Schritt (+ mit KI)
+**5-Schritte-KI-Workflow:** Sprache definieren (deine Stimme) → Herausforderungen der Zielgruppe sammeln → 3 Produkt-/Kursideen → Inhaltsverzeichnis (IHV) → Folieninhalte. Denk vom **Ende** her: Was kann die Kundin am Schluss (in EINEM Satz)? Dann rückwärts die Schritte.
+
+## 3.3 Minikurse & grosse Kurse erstellen
+**Entscheidungsfrage:** Welches Problem löst du? Ein konkretes, schnell lösbares → **Minikurs (CHF 37–49)**. Eine komplette Transformation → **grosser Kurs (CHF 99–333+)**.
+- **Minikurs-Aufbau:** Willkommen (1 Lektion) → 3 Kern-Lektionen (max. 5, besser 3: Erkennen/Verstehen/Umsetzen) → Nächster Schritt (Cross-Sell).
+- **Grosser Kurs:** Willkommen + Roadmap → 4–6 Kapitel (je ein Phasensprung, 3–5 Lektionen à 8–15 Min) → Community-Komponente (Live-Calls in Runde 1 + Telegram) → Nächster Schritt.
+- **Jede Lektion in 3 Teilen:** Einstieg (1 Min) → Kern (5–10 Min, 3–4 Punkte, eine Folie = ein Punkt, frei sprechen) → Abschluss (Zusammenfassung + Aufgabe + Brücke zur nächsten).
+- **Roter Faden finden:** Ende zuerst → Weg rückwärts → Lücken prüfen → Anfang setzen. Jede Lektion endet mit Brücke „Im nächsten Schritt zeige ich dir…".
+- **Häufigster Fehler:** den grossen Kurs bauen, bevor der Minikurs verkauft wurde. Erst Mini (= Markt-Test), dann gross.
+- **Erstes Mal? → immer Minikurs** (du lernst den ganzen Prozess: Checkout, Mails, Sales-Page).
+
+## 3.4 Tool-Stack (getestet, ehrlich, bezahlbar)
+Erst das Problem, dann das Tool. Patricias Stack (~CHF 150–200/Monat): **ThriveCart Learn+** (Checkout/Kurse/Upsells, einmalig ~USD 690) · **Canva** (~12/Mt, ab Tag 1) · **Zoom/Loom** (Aufnahmen) · **ManyChat** (IG-Automation, gratis bis 1'000 Kontakte) · **ActiveCampaign** (E-Mail; für Anfang reicht MailerLite gratis bis 1'000) · **Claude** (KI, ~USD 20/Mt Pro). Was du NICHT brauchst: Profi-Mikro, Ringlicht, Studio. Smartphone + helle Fensterstelle + Canva reichen.
+
+## 3.5 0€-Produkte & ManyChat
+**4 Kriterien fürs Freebie:** löst EIN Mini-Problem · in <30 Min konsumierbar · zeigt Expertise („wenn das schon gratis so gut ist…") · leitet zum nächsten Schritt.
+**5 Formate:** PDF/Workbook · Checkliste · Mini-Video · Quiz · E-Mail-Kurs (+ Masterclass als Premium-0€). Anfang: PDF/Checkliste.
+**ManyChat-Flow (6 Schritte):** Post/Story mit Keyword → jemand kommentiert Keyword → DM mit Freebie-Link → nach E-Mail fragen → E-Mail auf Liste (Sync AC/MailerLite) → 3–5-Mail-Sequenz.
+**Keyword-Regeln:** einfach & eindeutig · themenbezogen · GROSSBUCHSTABEN · pro Post EIN Keyword. Patricias Keywords: ECHT1 · STARTER · QUIZ · SYSTEM · SICHTBAR · ENERGIE · LEAD.
+**DM-Sequenz (nicht spammig):** warme Begrüssung → sofort liefern → sanfte Brücke (Bonus + E-Mail-Frage). Erst antworten/geben, dann verkaufen.
+**3 Freebie-Fehler:** zu umfangreich · kein nächster Schritt · kein E-Mail-Fang. „Reichweite ist geliehen — deine Liste gehört dir."
+
+---
+
+# MODUL 4 — Verkaufen
+
+## 4.1 Pricing — selbstbewusst & strategisch
+Mythos „billig = mehr Käufer" ist falsch — der richtige Preis zieht die richtigen Käuferinnen an. Lieber 5× 333 als 50× 33.
+**Endpreis über 3 Faktoren:** Wert (Faustregel: Preis ≈ 1/10 des Transformations-Werts) · Markt · du selbst (geh einen Schritt höher, als du glaubst).
+**3-Stufen-Staffel im Launch:** Secret Offer (Tag 1–2, 30–40% unter Final, nur Warmlist) → Early Bird (Tag 3–10, 15–20% unter Final, öffentlich) → Final (Tag 11–21, Vollpreis). Beispiel: Final 333 → Early Bird 249 → Secret 199.
+**Boni statt Rabatte:** Rabatte schwächen die Marke; rotierende Boni (monatlich) machen das Angebot wertvoller. Boni für 12 Monate vorausplanen.
+**Preispsychologie:** runde Zahlen wirken durchdacht (333 statt 350); 9 am Ende = Schnäppchen; Ratenzahlung senkt die Hürde (3× 117); Anker-Preis setzen (Premium 777 lässt 333 günstig wirken).
+**Preis-Test:** zu billig = alle kaufen sofort ohne Nachfrage; zu teuer = viele öffnen, keiner kauft, du zögerst beim Aussprechen; richtig = manche kaufen/manche nicht, Ratenzahlungs-Fragen, du stehst dahinter. Gesund: 20–30% empfinden den Preis als „grenzwertig".
+
+## 4.2 Checkout-Seite & E-Mails
+Eine Checkout-Seite ist eine **kleine Sales-Page**, nicht nur ein Formular (verdient 30–50% mehr).
+**5 Pflicht-Elemente:** Überschrift mit Transformation · Kurz-Zusammenfassung (3–5 Bullets) · mind. 1 Testimonial · Bezahl-Formular (mobil, viele Zahlarten, Ratenzahlung) · 1–3 Order Bumps. Bonus: Garantie.
+**Order Bumps:** verwandtes Zusatzprodukt, 10–30% des Hauptpreises, 1-Klick. 20–40% nehmen mit.
+**Bundle („Wäre-schön-blöd"-Effekt):** Einzelpreise der Bumps echt zeigen (z.B. 37+97+147=281) → „alle 3 für 99". Einzelpreise müssen real sein.
+**Bestätigungs-Mail sofort** (persönlich, Zugang, erster Schritt; optional Loom-Begrüssung).
+**5-Mail-Sequenz nach Kauf:** Mail 1 (sofort) Willkommen + Quick-Win · Mail 2 (Tag 1 früh) Story + Lern-Impuls · Mail 3 (Tag 1 abend) nächstes Produkt weich · Mail 4 (Tag 2) Social Proof · Mail 5 (Tag 3) CTA mit Dringlichkeit/Bonus. „Der Funnel beginnt NACH dem Kauf." Stammkundinnen kaufen ~5× teurer als Neukundinnen.
+
+## 4.3 Produktkommunikation die bucht
+Die **Hook ist alles** (das Buchcover). 4 Eigenschaften: zielt aufs Ergebnis (nicht Problem) · positiv formuliert · Zahlen/besondere Wörter · so spezifisch wie möglich.
+**5 Hook-Formeln:** Zahlen · Anleitung · Provokant · Neugier · Identifikation (durchwechseln).
+**5 Caption-Strukturen:** Hook→Mehrwert→CTA (Klassiker, 80%) · Story→Learning→CTA · Problem→Lösung→Angebot · Meinung→Begründung→Diskussion · Liste→Erklärung→CTA.
+**CTA = Keyword statt „Link in Bio":** „Kommentier ENERGIE und ich schicke dir…" (bleibt im Beitrag, Algorithmus liebt Kommentare, 3–5× höhere Conversion). **Kein Beitrag ohne CTA.**
+
+## 4.4 Verkaufen über Storytelling
+95% der Kaufentscheidungen sind emotional. **3-Teile-Formel:** Geschichte (konkret/sinnlich/emotional/mit Konflikt) → Learning (eine Botschaft) → Bezug zum Angebot + CTA. Immer in dieser Reihenfolge.
+**Gute Geschichte:** konkret (nicht „neulich", sondern „letzten Mittwoch um 15 Uhr") · sinnlich · emotional · mit Konflikt. Test: Würdest du's einer Freundin am Küchentisch erzählen?
+**5-Slides-Story-Sequenz:** Hook → Verbindung → Learning → Lösung → CTA + Cliffhanger.
+Deine Community ist deine grösste Story-Quelle (Engagement-Fragen → Story-/Post-Material, mit Erlaubnis).
+
+## 4.5 Täglich verkaufen ohne Druck
+Verkaufen ist Beziehung: Stories bauen Verbindung, Feed-Posts liefern Mehrwert, daraus entsteht Verkauf. Wer immer nur verkauft, verkauft am Ende nichts. Jeder Post hat EINEN Job (Autorität / Story / Reichweite / Sales). Verkaufe täglich in kleinen Dosen statt in Verkaufs-Blöcken, die ermüden.
+
+---
+
+# MODUL 5 — Produkttreppe & Skalieren
+
+## 5.1 Deine Produkttreppe aufbauen
+Die volle Treppe A→B→E→M→Z: 0€ (führt in dein Universum) → Mini (39–49, Quick-Win + Markt-Test) → Signature (297–555, Hauptprodukt/Cashflow) → Premium 1:1 (1'199+) → Jahres-Mastermind (2'997+). Mehrere Eingänge ins Universum — jede Kundin findet den passenden Schritt. Jedes Produkt zahlt aufs Networkprodukt ein und führt zum nächsten.
+
+## 5.2 Upsells, Order Bumps & Bundles
+Order Bump = auf der Checkout-Seite (1-Klick). Upsell = Angebot NACH dem Kauf („Willst du zusätzlich…"). Downsell = günstigere Alternative bei Nein. Bundle = mehrere echte Einzelprodukte zum Paketpreis. Ziel: Customer Lifetime Value erhöhen, nicht neue Kundinnen jagen.
+
+## 5.3 Automation — ManyChat & E-Mail
+System aus ManyChat (Lead-Einsammeln) + E-Mail-Automation (Tags, Sequenzen, Trigger). Einmal bauen, 365 Tage läuft es. Tagging (z.B. „hat Workbook X" / „hat Kurs gekauft") steuert, wer welche Sequenz bekommt.
+
+## 5.4 Wiederkehrendes Einkommen
+Membership / Mastermind / Abo als Recurring-Baustein — planbares Einkommen statt Launch-zu-Launch. Erst sinnvoll, wenn ein grosser Kurs + Community stehen.
+
+---
+
+# MODUL 6 — Mindset & Autorität
+
+## 6.1 Verkaufen ist Liebe — nicht Manipulation
+Wer ein echtes Problem löst und nicht verkauft, lässt die Kundin mit ihrem Problem allein. Verkaufen = anbieten, was wirklich hilft. Kein Druck, keine Fake-Knappheit — echte Dringlichkeit (echte Preisstufen/Deadlines) ist ok.
+
+## 6.2 Als Expertin wahrgenommen werden
+Autorität entsteht durch: eigenes Thema (nicht Produkt), konsistente Haltung, Social Proof, eigene Meinung (Magnet-Prinzip: zieht die Richtigen an, stösst die Falschen ab). Du musst nicht alles wissen — nur einen Schritt weiter sein als deine Zielgruppe.
+
+---
+
+## PATRICIAS STIMME & REGELN (immer einhalten)
+
+- Herzlich, du-Anrede, auf Augenhöhe wie eine Freundin am Küchentisch. **Schweizer ss** (kein ß).
+- **Keine Stakkato-Sätze** — Gedanken mit Konjunktionen verbinden. Nie „Du musst" — immer „Du darfst".
+- **Keine erfundenen Zahlen** (Preise/Umsätze/Reichweiten) — Spannen vorschlagen, entscheiden lässt die Nutzerin.
+- **Transformation statt Features.** Network-Compliance: keine Heil- oder Einkommensversprechen, „bei mir war"-Frame.
+- **„Nicht X, sondern Y" ist ein Denk- und Positionierungs-Werkzeug** (z. B. „die Lösung verkaufen, nicht das Produkt") — im fertig geschriebenen Content gilt aber die Floskel-Blackliste aus den Content-Praxis-Frameworks: dort löst du solche Kontraste in zwei eigene Sätze auf.
+- Konkret statt vage: echte Titel, echte Texte, echte Outlines. „Fertig ist besser als perfekt."
+
+
+============================================================================
+TEIL B — DIE CONTENT-PRAXIS: HOOKS, CAPTIONS & VERKAUFSPSYCHOLOGIE
+============================================================================
+
+# Content-Praxis — Hooks, Captions & Verkaufspsychologie
+
+Hallo liebe Lady 💛
+
+Das hier ist der **praktische Werkzeugkasten**, den du deiner KI zusätzlich zu deinem Kurs-Wissen gibst — damit sie Hooks, Captions und Verkaufstexte in meiner bewährten Logik und deiner Stimme schreibt, statt generisch. Leg dieses Dokument zusammen mit deinem Kurs-Wissen und deinem persönlichen Profil ins Claude-Projekt.
+
+**So sagst du es der KI:** *„Halte dich bei jedem Text an diese Frameworks. Prüfe JEDEN Output am Ende gegen die Floskel-Blackliste und schreib alles um, was dagegen verstösst. Erfinde nie Zahlen — nimm nur, was ich dir gebe."*
+
+---
+
+# TEIL 0 — STIMME & TONALITÄT
+
+Deine KI schreibt in **deiner** Stimme (die kommt aus deinem persönlichen Buch). Diese Grundregeln machen jeden Text menschlich statt werblich:
+
+**Tonalität:** direkt, nahbar, empowernd, ehrlich — wie eine Freundin, die einen Schritt voraus ist. Nie aufgeblasen, salesy, belehrend oder distanziert.
+
+**Schreibregeln:**
+- Direkte Ansprache „du" (nie „Sie").
+- Echte Umlaute (ä ö ü). Schweizerinnen: „ss" statt „ß".
+- Kurze, klare Sätze. Kein Geschwafel.
+- Emojis sparsam (max. 2–3 pro Absatz), nie als Ersatz für Worte.
+- Absätze für Lesbarkeit (Instagram = mobil).
+- Zahlen und konkrete Beispiele statt vager Versprechen.
+
+**PIE-Mix (Pflicht):** Jeder Beitrag bedient neben dem Thema eine von drei Ebenen — **P**ersönlichkeit / **I**nspiration / **E**xpertise. Nur Expertise = distanziert, nur Persönlichkeit = unseriös. Mischen. (Die Hooks unten sind mit `[P]` / `[E]` / `[I]` getaggt, damit du bewusst mischst.)
+
+**Direkt, aber mit Liebe:** Klartext ist gut, aber jede Provokation mit Sorge begründen („Ich sag dir das, weil ich nicht will, dass du in 5 Jahren noch wartest.").
+
+**Echt statt Hochglanz:** eigene Fehler und Momente teilen (erst wenn verarbeitet, nie im Tagebuch-Modus) — Nahbarkeit schlägt Perfektion. „Fertig ist besser als perfekt."
+
+**Im Rhythmus schreiben, nicht in der Stimmung:** ein flacher Tag ergibt eine flaue Caption — vor dem Schreiben kurz Energie holen (Musik, Bewegung).
+
+**Antworten wie im echten Gespräch:** auf Kommentare/DMs reagieren wie einer Freundin auf WhatsApp — echte Reaktion, nicht „Danke, kauf meinen Kurs".
+
+---
+
+# TEIL 1 — DIE FLOSKEL-BLACKLISTE (Qualitäts-Filter, immer zuerst)
+
+Leserinnen erkennen KI-Sprache unbewusst — und selbst bei gutem Inhalt zerstört sie Vertrauen. Deine KI muss **jeden Text** hiergegen prüfen und umschreiben. **Bei Konflikt mit jeder anderen Formel gewinnt die Blackliste.**
+
+## Absolute Top-Verbote
+
+**1. Nicht/Sondern-Konstrukte (in JEDER Form):** „Nicht X, sondern Y" · „Es geht nicht um X, sondern um Y" · „Es liegt nicht an X, es liegt an Y" · „Weniger X, mehr Y" · „Es braucht kein X, es braucht Y".
+→ Korrektur: zwei eigene Sätze („Du bist nicht zu leise. Deine Botschaft ist zu unscharf.") oder bildhaft umbauen oder direkt sagen, was Sache ist.
+
+**2. Dreier-Stakkatos / gleiche Satzanfänge:** „Du lernst. Du wächst. Du gewinnst." · „Kein X, kein Y, kein Z."
+→ Korrektur: einen Punkt vertiefen statt drei aufzählen; in fliessenden Satz umbauen.
+
+**3. Pseudo-konkrete Worthülsen:** „klarer Nutzen" · „echte Ergebnisse" · „konkreter Plan" · „individuelle Lösung" · „massgeschneidert" · „praxisnah" · „auf Augenhöhe".
+→ Korrektur: sagen, WAS der Nutzen/das Ergebnis ist. „echte Ergebnisse" → „treue Kundinnen, volle Kalender".
+
+**4. Abstrakte Content-Benefits:** „sichtbar werden" · „Wunschkundinnen erreichen" · „die zu dir passen" · „dich zeigen" · „deine Expertise zeigen".
+→ Korrektur: beschreiben, was NACH „sichtbar" passiert. „Content, der deine Wunschkundinnen erreicht" → „Posts, bei denen die richtige Frau denkt: Die meint mich."
+
+**5. Verräter-Phrasen (schreien KI):** „Das ist kein Zufall. Das ist System." · „Kein Tippfehler." · „Lies das nochmal." · „Faire Frage." · „Verständlich." · „Hier ist, was du brauchst."
+→ Korrektur: streichen. Die Aussage trägt sich selbst, wenn sie stark ist.
+
+## Weitere Verbote
+
+- **Anleitungs-Floskeln:** „So machst du…" · „So geht's…" · „Damit du…" → stattdessen konkrete Szene/POV.
+- **„Stell dir vor…" / „Kennst du das…"** in geschriebenem Instagram-Content → direkt in die Szene einsteigen („Du sitzt um 23 Uhr am Laptop…"). *(Ausnahme: in gesprochenen Verkaufs-Kontexten — Webinar, Sales-Call, Video — ist „Stell dir vor" als Future-Pacing erlaubt.)* Der vage Opener „Kennst du das?" ist gesperrt; eine konkrete Variante, die den Gedanken benennt („Kennst du den Gedanken, dass du abends Ideen hast und sie dir morgens wieder ausredest?"), ist erlaubt.
+- **Marketing-Buzzwords:** „Game-Changer" · „Level-Up" · „auf das nächste Level" · „Deep Dive" · „Mindset-Shift" · „die ultimative Lösung" · „das Geheimnis zu…".
+- **Spirituelle Floskeln:** „Leichtigkeit" · „in deine Kraft kommen" · „deine Energie" · „manifestieren" · „limitierende Glaubenssätze".
+- **Leere Begriffe:** „Erfolg" · „Glück" · „Balance" · „Wachstum" · „Potenzial entfalten" · „deine Vision/Mission". *(„Balance" bleibt nur als Brand-Name „Mum Life Balance", nie als Benefit.)*
+- **Superlative:** „die beste/perfekte/ultimative/einzige" · „nie wieder" · „100% garantiert".
+- **Frage-Floskeln:** „Bist du bereit für…?" · „Willst du endlich…?" · „Träumst du davon…?" *(Echte „Warum"-Fragen sind ok.)*
+- **Zeit-Floskeln:** „in nur X Tagen" · „schnell und einfach" · „ohne Aufwand" · „über Nacht".
+- **Passiv:** „Es wird gesagt, dass…" · „Man könnte meinen…" → aktive, klare Haltung.
+- **Emoji-Missbrauch:** max. 2–3 pro Absatz, nie als Ersatz für Worte.
+
+## Pflicht-Selbstcheck nach jedem Text
+1. Würde ich das wirklich so sagen? 2. Ist es eine konkrete Situation/Emotion? 3. Seh ich ein Bild vor mir? 4. Klingt es menschlich? 5. Kein Wort aus der Blackliste? — Bei einem „Nein": überarbeiten.
+
+---
+
+# TEIL 2 — HOOK-FORMELN (der grosse Vorrat)
 
 Der Hook ist die erste Zeile / das Cover — er entscheidet in unter 2 Sekunden, ob jemand bleibt.
 
-### ⚠️ So nutzt du diese Beispiele (Pflicht — zuerst lesen)
+## ⚠️ So nutzt du diese Beispiele (Pflicht — zuerst lesen)
 
 Alle Hooks und Captions hier sind **Muster, keine fertigen Posts.** Es gibt zwei Sorten:
 
@@ -54,7 +248,7 @@ Beispiel für den Transfer: Das Muster hinter „Ich arbeite 2 Stunden am Tag �
 
 **Wenn Infos zur Nutzerin fehlen** (Thema, Zielgruppe, echte Zahlen, ihre Story), fragt die KI nach — sie kopiert nie ersatzweise das Beispiel der Autorin und erfindet keine Zahlen.
 
-### Die Reichweiten-Hierarchie (vor dem Hook verstehen)
+## Die Reichweiten-Hierarchie (vor dem Hook verstehen)
 1. **Video-Stil = #1** — candid „beim Tun" (Alltag, Bewegung) schlägt posiert deutlich.
 2. **Thema = #2** — ein universeller Lebens-Schmerz reicht weit; business-interne Themen floppen.
 3. **Hook = #3** — der Feinschliff, er wirkt erst NACH Video + Thema.
@@ -62,13 +256,13 @@ Beispiel für den Transfer: Das Muster hinter „Ich arbeite 2 Stunden am Tag �
 **Getestet:** Bekenntnis ✅ Gewinner · Hot Take ✅ stark · „lies die Caption" / „schau bis zum Ende" ❌ floppt.
 **Immer:** kurz (2-Sekunden-Catch, ~10–12 Wörter), echte Umlaute, kein Stakkato, keine erfundenen Zahlen, durch die Blackliste filtern.
 
-### Grundregel: Ziel HINTER dem Ziel
+## Grundregel: Ziel HINTER dem Ziel
 Nie das Werkzeug, immer die Alltagsszene:
 - ❌ „Reels erstellen" → ✅ „Kunden gewinnen durch Reels"
 - ❌ „Abnehmen" → ✅ „Ins Lieblingskleid passen, dich wieder trauen"
 - ❌ „Kunden gewinnen" → ✅ „Morgens aufs Handy schauen und 5 Verkäufe sehen"
 
-### 2.1 — Kern-Formeln (die 22, mit PIE-Tag)
+## 2.1 — Kern-Formeln (die 22, mit PIE-Tag)
 
 **Reichweiten-stark (kurz + emotional):**
 1. `[P]` **Bekenntnis** ✅ — „Ich hab mich lange geschämt, [Geständnis zum Thema]."
@@ -102,7 +296,7 @@ Nie das Werkzeug, immer die Alltagsszene:
 21. `[I]` **Tag-Timeline** — „Tag 1: keiner glaubt dran. Tag 47: die erste Kundin. Tag 312:…"
 22. `[I]` **Vorher-Nachher** — „Vor [Zeitraum]: [alt]. Heute: [neu]."
 
-### 2.2 — Kategorie-Vorlagen (schnell zuschneiden)
+## 2.2 — Kategorie-Vorlagen (schnell zuschneiden)
 
 **Zahlen `[E]`:** „Ich mache [Zahl] mit [Detail]." · „[Zahl] Stunden reichen — wenn du DAS machst." · „Von 0 auf [Zahl] in [Zeitraum]." · „[Zahl] Fehler, die dein [Thema] killen."
 **Anleitung `[E]`:** „Die exakte [Strategie] hinter meinen [Ergebnis]:" · „So baust du [Ergebnis] auf — Schritt für Schritt." · „Der einzige [Prozess], den du für [Ergebnis] brauchst."
@@ -114,7 +308,7 @@ Nie das Werkzeug, immer die Alltagsszene:
 **Kritiker-Zitat `[P]`:** „[echtes Zitat aus dem Umfeld]. Hier ist meine Antwort."
 **Beides-zugleich `[P]`:** „Ich bin [erwartete Rolle] UND [Gegenteil]."
 
-### 2.3 — Datenbasierte Formeln (Performance-getestet)
+## 2.3 — Datenbasierte Formeln (Performance-getestet)
 
 - `[P]` **A · Zeitanker + Zahl + Ergebnis + Mama-Kontext** — „Letzte Woche haben [Zahl] [ZG] in [Zeit] entschieden, [Handlung]. Ich war noch in [Alltagsdetail]."
 - `[E]` **B · Zeitersparnis + Alltag + KI + Ergebnis** — „In [X] Minuten — beim [Tätigkeit] — hat KI heute [Ergebnis]. Kommentier [KEYWORD]."
@@ -122,7 +316,7 @@ Nie das Werkzeug, immer die Alltagsszene:
 - `[P]` **D · Schuldgefühl + Erwartung vs. Wirklichkeit + Reframe** — „Ich war [Situation]. Und ich habe kein schlechtes Gewissen mehr — weil [Grund]."
 - `[I]` **E · Vorher-Situation + Wendepunkt + Heute-Zahl** — „Vor [Zeit] hatte ich [alt]. Dann [Wendepunkt]. Heute: [neu, Zahl]."
 
-### 2.4 — Reveal- & Neugier-Frameworks
+## 2.4 — Reveal- & Neugier-Frameworks
 
 1. `[E]` **Experten-Aussage** — „[Experte + Erfahrung] sagt: [Situation] — [überraschende Erkenntnis]." *(Als Expertin umbauen: eigene Erfahrung statt externem Experten — „Nach [X] Kundinnen weiss ich: bei [Problem] ist [A] nie der wahre Grund. Es ist [B]:")*
 2. `[P]` **Ich-lächle-nur** — „[Ungewöhnliches Tun]. [Person]: '[Zweifel]'. Ich lächle nur — was sie nicht ahnt:"
@@ -134,7 +328,7 @@ Nie das Werkzeug, immer die Alltagsszene:
 8. `[E]` **Du-denkst** — „Du denkst [falsche Annahme] — aber in Wahrheit [Gegenwahrheit]:"
 9. `[I]` **Kurz-Provokation** — „[Gegenüberstellung ohne Cliffhanger]." (z. B. „Mit Warten kommst du nicht weiter. Mit dem ersten Schritt schon.")
 
-### 2.5 — Vorlagen-Bibliothek: 5 Content-Säulen (fertige Muster zum Füllen)
+## 2.5 — Vorlagen-Bibliothek: 5 Content-Säulen (fertige Muster zum Füllen)
 
 Setze `[…]` mit deinem echten Thema ein und wähl den CTA nach Ziel. Wichtig: Einige Vorlagen nutzen bewusst Kontraste („kein X, sondern Y") oder Dreier-Reihen, die die Blackliste bei fertigem Content flaggt — nimm sie als Struktur-Inspiration und formulier den finalen Text sauber aus (z. B. in zwei eigenen Sätzen statt einem „nicht/sondern"-Satz).
 
@@ -197,7 +391,7 @@ Setze `[…]` mit deinem echten Thema ein und wähl den CTA nach Ziel. Wichtig: 
 8. „Wenn du bei […] schneller vorankommen willst als die meisten, musst du jetzt [Handlung]."
 9. „Blick 90 Tage nach vorn. Wenn du dort [Ziel] erreicht haben willst, führt kein Weg an dieser Entscheidung vorbei."
 
-### 2.6 — Struktur-Kategorien (Persuasion, für jeden Kontext)
+## 2.6 — Struktur-Kategorien (Persuasion, für jeden Kontext)
 
 1. `[E]` **Schock-Statistik** ⚠️ echte Zahl — „[X %] der [ZG] [Fakt]."
 2. `[I]` **Konträre Meinung** — „Vergiss [verbreiteter Rat]. Das ist nicht dein Problem."
@@ -212,11 +406,11 @@ Setze `[…]` mit deinem echten Thema ein und wähl den CTA nach Ziel. Wichtig: 
 
 ---
 
-## TEIL 3 — CAPTION-FORMELN
+# TEIL 3 — CAPTION-FORMELN
 
 Die Caption ergänzt den Beitrag — den Hook NICHT wiederholen. Ein Gedanke pro Caption, ein CTA am Ende.
 
-### 3.1 — Die 5 Grundstrukturen (mit Aufbau + Beispiel)
+## 3.1 — Die 5 Grundstrukturen (mit Aufbau + Beispiel)
 
 **Formel 1 · Provokante Behauptung + Beweis**
 ```
@@ -272,7 +466,7 @@ Nummer [X] hat am meisten verändert.
 [CTA]
 ```
 
-### 3.2 — Die 7-Punkte-Caption (Alternative, verkaufsstark)
+## 3.2 — Die 7-Punkte-Caption (Alternative, verkaufsstark)
 ```
 1. Hook (erste Zeile, NICHT den Cover-/Reel-Hook kopieren)
 2. CTA 1 („Speicher den Beitrag")
@@ -284,7 +478,7 @@ Nummer [X] hat am meisten verändert.
 ```
 **Mehrfach-CTAs erlaubt**, solange sie aufs gleiche Produkt zeigen. Stichwörter (ohne #) ≠ Hashtags (separat darunter).
 
-### 3.3 — Persönlichkeits-Trigger-Post (Reichweite + Haltung)
+## 3.3 — Persönlichkeits-Trigger-Post (Reichweite + Haltung)
 ```
 [Steile These / konträre Meinung zur Nische]
 [1–2 Sätze Begründung aus eigener Erfahrung]
@@ -292,31 +486,31 @@ Nummer [X] hat am meisten verändert.
 ```
 Das sind die Posts, die man mit unguten Gefühl rausgibt — genau die ziehen. Besonders für die Pillar „Authentizität".
 
-### 3.4 — Power-Phrasen zum Einstreuen (Patricia-Stil)
+## 3.4 — Power-Phrasen zum Einstreuen (Patricia-Stil)
 - **Vertrauens-Opener:** „Ich kenne das selber." · „Das war bei mir genauso." · „Seit [X] Jahren — und dieser eine Fehler taucht bei 9 von 10 auf."
 - **Vergleichs-Trigger:** „So viel wie ein Kaffee pro Tag." · „Weniger als ein Friseurbesuch." · „So wie andere in einem Jahr schaffen."
 - **Angebots-Opener:** „Ich liefere dir die Abkürzung." · „Das ist der direkte Weg, kein jahrelanges Ausprobieren."
 - **Einwand-Öffner:** „Kennst du den Gedanken?" (öffnet ein Einwand-Gespräch ohne Druck)
 
-### 3.5 — Vorfreude-Bausteine (Launch-Phase)
+## 3.5 — Vorfreude-Bausteine (Launch-Phase)
 - **IKEA-Prinzip:** Community einbeziehen — „Titel A oder B?"
 - **Making-of:** „Bisschen verwackelt: so sieht mein Workbook gerade aus. In 2 Wochen ist es live."
 - **Warteliste:** „Wer will's als Erste? Kommentier 1 — du kommst auf die Geheim-Liste."
 - **Mini-Result vor Launch:** „Ich hab den Kurs selbst durchgearbeitet — dieser eine Satz hat mir 2h/Woche zurückgegeben."
 
-### 3.6 — Hashtag-Strategie
+## 3.6 — Hashtag-Strategie
 Pro Post 5–10 Hashtags (mobil eher 5), gemischt:
 - 2–3 Nischen-Hashtags · 2–3 Themen-Hashtags · 2–3 Reichweiten-Hashtags · 1–2 Community-Hashtags.
 - Ein fester Anker-Hashtag als Wiedererkennung (z. B. #mumlifebalance / #mamabusiness).
 
 ---
 
-## TEIL 4 — VERKAUFSPSYCHOLOGIE
+# TEIL 4 — VERKAUFSPSYCHOLOGIE
 
-### Warum Menschen kaufen
+## Warum Menschen kaufen
 Kaufentscheidungen sind emotional, danach rational gerechtfertigt. Die Kundin kauft die **Transformation**, nicht die Module. Der emotionale Zustand im Kaufmoment entscheidet mit. Ziel jeder Caption: das Gefühl „Das habe ich gebraucht — du sprichst mir aus der Seele."
 
-### Die 7 Kaufpsychologie-Trigger (mind. einer pro Caption)
+## Die 7 Kaufpsychologie-Trigger (mind. einer pro Caption)
 1. **Reziprozität** — erst geben (Mini-Schritt / Tipps / Freebie), dann fragen.
 2. **Konsistenz** — dieselbe Kern-Botschaft wochenlang aus neuen Winkeln (viele Kontaktpunkte bis zum Kauf). Mut zur Wiederholung.
 3. **Social Proof** — Hierarchie: Video-Testimonial > Screenshot mit Name + Foto > Zitat > Zahlen. Platziert vor/nach dem CTA, nie isoliert.
@@ -325,7 +519,7 @@ Kaufentscheidungen sind emotional, danach rational gerechtfertigt. Die Kundin ka
 6. **Knappheit / Dringlichkeit** — nur wenn echt (keine Fake-Countdowns, keine Fake-Platzzahlen). Boni statt Rabatte, Boni monatlich wechseln.
 7. **Know-Like-Trust** — Likes aber keine Käufe? → zu wenig Persönlichkeit (Like) oder Konsistenz/Beweis (Trust). Jede Caption bedient mindestens eine KLT-Stufe.
 
-### Einwände proaktiv auflösen (in Caption/Story, nicht erst im Gespräch)
+## Einwände proaktiv auflösen (in Caption/Story, nicht erst im Gespräch)
 Öffner-Phrase: **„Kennst du den Gedanken?"**
 
 | Einwand | Konter |
@@ -335,10 +529,10 @@ Kaufentscheidungen sind emotional, danach rational gerechtfertigt. Die Kundin ka
 | „Ich versuch's allein" | „Wie oft hattest du den Gedanken schon? Und wie weit hat er dich gebracht?" |
 | „Schon viel investiert, nichts gebracht" | „Was ist die Alternative — nie wieder probieren? Kann auch nicht die Lösung sein." |
 
-### Stadt-Land-Autobahn (für jede Caption/Salespage)
+## Stadt-Land-Autobahn (für jede Caption/Salespage)
 Stadt = wo die Zielgruppe JETZT steht (Schmerz, Glaubenssätze) · Land = wo sie HIN will (Wunschzustand) · Autobahn = dein Produkt als direkter Weg · Blockaden = Einwände, die du unterwegs entkräftest.
 
-### Feature → Transformation (Pflicht bei jedem Produkt-Pitch)
+## Feature → Transformation (Pflicht bei jedem Produkt-Pitch)
 | Feature (nicht so) | Transformation (so) |
 |---|---|
 | „5 Module + 3 PDFs" | „In 3 Wochen sitzt du im Café und denkst: Ich hab das wirklich geschafft." |
@@ -347,7 +541,7 @@ Stadt = wo die Zielgruppe JETZT steht (Schmerz, Glaubenssätze) · Land = wo sie
 
 **Titel-Regel:** Das Ziel muss im Titel stecken. ❌ „Content-Kurs" → ✅ „Content, der verkauft."
 
-### Pricing-Psychologie (wenn ein Preis in der Caption vorkommt)
+## Pricing-Psychologie (wenn ein Preis in der Caption vorkommt)
 - **Schnapszahlen:** 37, 49, 97, 149, 222, 333 — nie glatte 50/100/500.
 - **Anker sichtbar machen:** „statt 333 CHF" vor „149 CHF".
 - **Alltags-Vergleich:** „1 CHF pro Tag — weniger als ein Kaffee" · „37 CHF = ein guter Friseurbesuch".
@@ -357,7 +551,7 @@ Stadt = wo die Zielgruppe JETZT steht (Schmerz, Glaubenssätze) · Land = wo sie
 
 ---
 
-## TEIL 5 — CTA-VARIANTEN (abwechseln, nie immer derselbe)
+# TEIL 5 — CTA-VARIANTEN (abwechseln, nie immer derselbe)
 
 - **Saves:** „Speicher dir das — du wirst es brauchen."
 - **Kommentar-Keyword:** „Kommentier SYSTEM und ich schick dir den ersten Schritt." (Ein Kern-Keyword pro Thema, konsistent über mehrere Posts — nicht pro Post ein neues erfinden.)
@@ -371,33 +565,6 @@ Stadt = wo die Zielgruppe JETZT steht (Schmerz, Glaubenssätze) · Land = wo sie
 
 ---
 
-## TEIL 6 — WAS FLOPPT (Antipatterns)
+# TEIL 6 — WAS FLOPPT (Antipatterns)
 
 Overexplaining statt Bild zeigen · Features statt Transformation · den Hook im Caption-Opener wiederholen · Problem ohne Lösung anreissen · Worthülsen („Next Level", „durchstarten") · kein CTA / nur „Link in Bio" · Tagebuch-Modus (Negatives vor der Verarbeitung) · Textwüste ohne Absätze · jede Woche ein neues Thema (die Pillar bleibt, Mut zur Wiederholung) · flache Energie beim Schreiben · „lies die Caption" / „schau bis zum Ende" als Hook.
-
-## PRODUKT-METHODE (Kern der 8 Stufen)
-
-- **A→B→E→M→Z-Treppe:** 0€ (führt ins Universum) → Mini 39–49 (Quick-Win + Markt-Test) → Signature 297–555
-  (Cashflow) → Premium 1:1 1'199+ → Mastermind 2'997+. Ein Sprung pro Produkt, keine Überlappung.
-- **Angebots-Formel:** „Ich helfe [Wer] dabei, [Was] zu erreichen, auch wenn [Einwand]." Der Einwand muss rein.
-- **Minikurs-Aufbau:** Willkommen → 3 Kern-Lektionen (Erkennen/Verstehen/Umsetzen) → Nächster Schritt.
-  **Grosser Kurs:** Willkommen+Roadmap → 4–6 Kapitel (je ein Phasensprung) → Community → Nächster Schritt.
-  Jede Lektion: Einstieg (1') → Kern (5–10', eine Folie = ein Punkt) → Abschluss (Aufgabe + Brücke). Roter Faden:
-  vom Ende her denken.
-- **Erst verkaufen, dann erstellen** (Minikurs = Markt-Test vor dem grossen Kurs).
-- **0€-Freebie:** löst EIN Mini-Problem · <30 Min · zeigt Expertise · leitet zum nächsten Schritt. Formate:
-  PDF/Checkliste/Mini-Video/Quiz/E-Mail-Kurs. Immer E-Mail einsammeln (ManyChat-Keyword, GROSSBUCHSTABEN, 1 pro Post).
-- **Pricing:** 3-Stufen-Staffel (Secret 30–40% unter Final → Early Bird 15–20% → Final). Runde Zahlen, Ratenzahlung,
-  Anker-Preis. **Boni statt Rabatte.** Schnapszahlen (37/49/97/149/333).
-- **Checkout = kleine Sales-Page:** Überschrift mit Transformation · 3–5 Bullets · Testimonial · Formular
-  (mobil, viele Zahlarten) · 1–3 **Order Bumps** (10–30% des Preises) · **Bundle** („wäre-schön-blöd", echte Einzelpreise).
-- **5-Mail-Sequenz nach Kauf:** Willkommen+Quick-Win → Story → nächstes Produkt weich → Social Proof →
-  CTA mit Dringlichkeit/Bonus. Der Funnel beginnt NACH dem Kauf.
-- **Storytelling-Verkauf:** Geschichte (konkret/sinnlich/emotional/mit Konflikt) → Learning → Angebot+CTA.
-  5-Slides-Story: Hook → Verbindung → Learning → Lösung → CTA+Cliffhanger.
-
----
-
-## COMPLIANCE
-Keine Heil- oder Einkommensversprechen. Transformation statt Behauptung. „Bei mir war"-Frame. Keine erfundenen
-Zahlen — bei Preisen Spannen vorschlagen, entscheiden lässt die Nutzerin.

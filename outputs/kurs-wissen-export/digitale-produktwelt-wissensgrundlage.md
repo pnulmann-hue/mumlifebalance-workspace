@@ -25,7 +25,7 @@ Danach fragst du z.B.: „Entwirf meine Produkttreppe passend zu meinem Networkp
 - **Hybridmodell:** Du verbindest dein Networkprodukt mit deinem eigenen Thema/Produkt. Nicht Produkt verkaufen, sondern die **Lösung** verkaufen. Das Produkt ist Teil der Lösung, nie das Thema selbst.
 - **A→B→E→M→Z-Produkttreppe:** 0€-Freebie (A→B) · Miniprodukt (B→E) · Mittleres/Signature (E→M) · Grosses/Premium (M→Z). Ein Sprung pro Produkt, keine Überlappung.
 - **Erst verkaufen, dann erstellen:** Immer erst validieren (Pre-Sale/Warmlist), dann bauen. Nie monatelang am Kurs bauen ohne Markt-Test.
-- **Transformation statt Features:** Nie „5 Module, 2 PDFs" — immer „stell dir vor, du hast endlich [Ergebnis]".
+- **Transformation statt Features:** Nie „5 Module, 2 PDFs" — immer die konkrete Alltagsszene nach der Transformation („Du sitzt im Café und denkst: ich hab es endlich geschafft").
 - **Roter Faden:** Ein Kurs ohne roten Faden ist eine Sammlung von Tipps. Mit rotem Faden ist er eine Transformation. Test: Kannst du eine Lektion ohne Verlust streichen? Dann gehört sie nicht rein.
 
 ---
@@ -95,7 +95,7 @@ Erst das Problem, dann das Tool. Patricias Stack (~CHF 150–200/Monat): **Thriv
 Mythos „billig = mehr Käufer" ist falsch — der richtige Preis zieht die richtigen Käuferinnen an. Lieber 5× 333 als 50× 33.
 **Endpreis über 3 Faktoren:** Wert (Faustregel: Preis ≈ 1/10 des Transformations-Werts) · Markt · du selbst (geh einen Schritt höher, als du glaubst).
 **3-Stufen-Staffel im Launch:** Secret Offer (Tag 1–2, 30–40% unter Final, nur Warmlist) → Early Bird (Tag 3–10, 15–20% unter Final, öffentlich) → Final (Tag 11–21, Vollpreis). Beispiel: Final 333 → Early Bird 249 → Secret 199.
-**Boni statt Rabatte** (Julia-Trost): Rabatte schwächen die Marke; rotierende Boni (monatlich) machen das Angebot wertvoller. Boni für 12 Monate vorausplanen.
+**Boni statt Rabatte:** Rabatte schwächen die Marke; rotierende Boni (monatlich) machen das Angebot wertvoller. Boni für 12 Monate vorausplanen.
 **Preispsychologie:** runde Zahlen wirken durchdacht (333 statt 350); 9 am Ende = Schnäppchen; Ratenzahlung senkt die Hürde (3× 117); Anker-Preis setzen (Premium 777 lässt 333 günstig wirken).
 **Preis-Test:** zu billig = alle kaufen sofort ohne Nachfrage; zu teuer = viele öffnen, keiner kauft, du zögerst beim Aussprechen; richtig = manche kaufen/manche nicht, Ratenzahlungs-Fragen, du stehst dahinter. Gesund: 20–30% empfinden den Preis als „grenzwertig".
 
@@ -156,6 +156,7 @@ Autorität entsteht durch: eigenes Thema (nicht Produkt), konsistente Haltung, S
 - **Keine Stakkato-Sätze** — Gedanken mit Konjunktionen verbinden. Nie „Du musst" — immer „Du darfst".
 - **Keine erfundenen Zahlen** (Preise/Umsätze/Reichweiten) — Spannen vorschlagen, entscheiden lässt die Nutzerin.
 - **Transformation statt Features.** Network-Compliance: keine Heil- oder Einkommensversprechen, „bei mir war"-Frame.
+- **„Nicht X, sondern Y" ist ein Denk- und Positionierungs-Werkzeug** (z. B. „die Lösung verkaufen, nicht das Produkt") — im fertig geschriebenen Content gilt aber die Floskel-Blackliste aus den Content-Praxis-Frameworks: dort löst du solche Kontraste in zwei eigene Sätze auf.
 - Konkret statt vage: echte Titel, echte Texte, echte Outlines. „Fertig ist besser als perfekt."
 
 ---
