@@ -98,6 +98,39 @@ Pro Produkt der Treppe:
 
 ---
 
+## Kurs-Abdeckung — Video lehrt → Companion setzt um (22 Lektionen)
+
+Damit jedes Video sein Umsetzungs-Pendant hat. `✅` = gedeckt · `➕` = als Umsetzungs-Schritt ergänzt (v1.1) · `🧠` = reines Mindset/Info, kein Companion-Schritt (der Companion *lebt* es in der Haltung, statt es zu „bauen").
+
+| Lektion | Thema | Companion |
+|---|---|---|
+| 1.1 | Psychologie Hybridmodell | 🧠 Haltung |
+| 1.2 | Was zum Kauf bewegt (Käufertypen) | ➕ Stufe 0: **Kaufmotive deiner Zielgruppe** rausarbeiten |
+| 1.3 | Social Proof aufbauen | ➕ Stufe 6/8: **Testimonial-Plan** (wen fragen, wie fragen, wo zeigen) |
+| 2.1 | Welche Art Produkt passt zu dir | ✅ Stufe 1 + 3 |
+| 2.2 | Positionierung & unwiderstehliche Angebote | ➕ Stufe 1a: **Angebots-Formel** „Ich helfe [Wer] dabei [Was], auch wenn [Einwand]" |
+| 2.3 | Produkte, die immer wieder gekauft werden | ✅ Stufe 3/6 |
+| 3.1 | Produkterstellung Schritt für Schritt | ✅ Stufe 5 |
+| 3.2 | Produkterstellung mit KI | ✅ ist der Companion selbst |
+| 3.3 | Minikurse & grosse Kurse erstellen | ✅ Stufe 5 |
+| 3.4 | Tool-Stack („diese Programme nutze ich") | 🧠 Info (Companion kann Tools empfehlen) |
+| 3.5 | 0€-Produkte & ManyChat | ✅ Stufe 2 + 6 |
+| 4.1 | Pricing — selbstbewusst & strategisch | ➕ Stufe 1: **Preis-Strategie** vertiefen (nicht nur Range vorschlagen) |
+| 4.2 | Checkout-Seite & E-Mails | ✅ Stufe 6 |
+| 4.3 | Produktkommunikation die bucht | ✅ Stufe 7 + 8 |
+| 4.4 | Verkaufen über Storytelling | ➕ Stufe 8: **Alltagsstory → Verkaufsstory** (5-Slides + Hook) |
+| 4.5 | Täglich verkaufen ohne Druck | ✅ Stufe 8 (Content-Ideen) |
+| 5.1 | Deine Produkttreppe aufbauen | ✅ Stufe 1 (Kern) |
+| 5.2 | Upsells, Order Bumps & Bundles | ✅ Stufe 6 |
+| 5.3 | Automation — ManyChat & E-Mail | ✅ Stufe 6 |
+| 5.4 | Wiederkehrendes Einkommen | ➕ Stufe 3: **Membership/Recurring** als eigenes Zusatzangebot |
+| 6.1 | Verkaufen ist Liebe, nicht Manipulation | 🧠 Haltung |
+| 6.2 | Als Expertin wahrgenommen werden | ✅ Stufe 7/8 (Positionierung/Authority) |
+
+**Fazit:** Kern-Strecke (Idee → Treppe → Freebie → Inhalte → Funnel → Salespage → Launch) war schon voll drin. Neu ergänzt für lückenlose Umsetzung: **Kaufmotive · Angebots-Formel · Preis-Strategie · Social-Proof-/Testimonial-Plan · Story-Verkauf · Recurring.** Reines Mindset (1.1 · 6.1) und Tool-Info (3.4) bleiben bewusst Video-only — der Companion baut kein Mindset, er lebt es in Ton und Haltung.
+
+---
+
 ## System-Prompt (der Brain — v1)
 
 ```
@@ -113,8 +146,11 @@ DEINE METHODE (nie abweichen):
 - Produkt ist Teil der Lösung, nie das Thema selbst (Schaufenster-Prinzip).
 
 DEIN ABLAUF (8 Stufen, strikt der Reihe nach — NIE vorausspringen):
-0 Onboarding · 1 Produkttreppe · 2 0€-Freebie · 3 Zusatzangebote ·
-4 Platzierung · 5 Inhalte erstellen · 6 Funnel · 7 Salespage · 8 Übergabe.
+0 Onboarding (inkl. Kaufmotive der Zielgruppe) · 1 Produkttreppe (inkl.
+Angebots-Formel „Ich helfe [Wer] dabei [Was], auch wenn [Einwand]" +
+Preis-Strategie) · 2 0€-Freebie · 3 Zusatzangebote (inkl. Membership/Recurring) ·
+4 Platzierung · 5 Inhalte erstellen · 6 Funnel · 7 Salespage ·
+8 Übergabe (inkl. Alltagsstory→Verkaufsstory + Testimonial-/Social-Proof-Plan).
 - Zu Beginn jeder Stufe: stell nur die Fragen, die du für DIESE Stufe brauchst.
 - Am Ende jeder Stufe: liefere ein konkretes Ergebnis und frag „Passt das,
   oder sollen wir etwas ändern?", bevor du weitergehst.
