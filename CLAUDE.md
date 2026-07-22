@@ -657,6 +657,20 @@ Statt stumpfer Zusammenfassung **redigiert Claude wie eine Chefredakteurin**: w�
 - **Secrets:** `TELEGRAM_HAUSHALT_BOT_TOKEN`, `TELEGRAM_HAUSHALT_CHAT_ID`, `NOTION_TOKEN` (Integration muss Zugriff auf die Haushalts-Liste haben).
 - **Doku:** `scripts/haushalts-bot/README.md`. Konzept-Hintergrund: `outputs/produkte/mama-ceo/bonus-haushalts-helfer-bot-PATRICIA.md` (das war „Stufe 2").
 
+### KI-Companion-Bots — Kurs-Assistenten auf Vercel (seit 2026-07)
+
+**Chat-Companions, die das Kurswissen auf das konkrete Business der Nutzerin anwenden.** Zwillinge des bio-check-/freischaufeln-Templates (Claude-Proxy + optional ActiveCampaign-Tagging). Jeder Bot ist ein **eigenes Vercel-Projekt**, git-verbunden mit diesem Repo, deployt von `main` (Root Directory = der jeweilige Ordner). Modell `claude-sonnet-4-5`, Env `ANTHROPIC_API_KEY` (Pflicht, pro Projekt).
+
+- **`scripts/ikm-companion/`** — Companion zur **Instagram-Kundenmaschine**. Live: `companion-ikm.mumlifebalance.ch`. Lädt `lib/system-prompt.md` (Persona + Kurswissen + voller Hook-/Caption-/Verkaufs-Werkzeugkasten). API: `api/chat.js`.
+- **`scripts/produktwelt-companion/`** — Companion zu **Digitale Produktwelt**, führt in 8 Stufen durch den Bau der Produktwelt. Live: `companion-produktwelt.mumlifebalance.ch`. Lädt `lib/system-prompt.md` + `lib/wissensgrundlage.md`. API: `api/generate.js`.
+- **Wichtig (Vercel-Bundling):** Die API-Routen laden ihre `.md`-Dateien **modul-relativ** (`fileURLToPath(new URL('../lib/…', import.meta.url))`) — sonst bündelt Vercel sie beim Git-Deploy nicht in die Serverless-Funktion. `vercel.json` darf **kein** ungültiges Feld wie `public` enthalten (Schema-Validierung bricht sonst den Build ab).
+
+**Framework-Single-Source-of-Truth:** Die Hook-/Caption-/Verkaufs-Frameworks der Companions kommen aus `outputs/kurs-wissen-export/content-praxis-frameworks.md`. **`scripts/sync-companions.js`** extrahiert den Block (Teil 2–6) und schreibt ihn idempotent in beide Companions. Nach jeder Framework-Änderung `node scripts/sync-companions.js` laufen lassen, damit die Bots nicht auseinanderdriften.
+
+**Kurs-Wissensgrundlagen (`outputs/kurs-wissen-export/`):** Die kundentauglichen Wissens-Dokumente, die Nutzerinnen in ihr eigenes Claude-Projekt („Business-Brain") laden — `instagram-kundenmaschine-wissensgrundlage.md`, `digitale-produktwelt-wissensgrundlage.md`, `content-praxis-frameworks.md`. **Regeln:** keine Quellennamen (Julia etc. neutralisiert), keine Blackliste-Widersprüche, Hook-Beispiele sind Muster (Struktur übernehmen, nie 1:1 kopieren). Daraus gebaut: die Download-TXTs + PDF-Anleitungen unter `outputs/produkte/claude-als-networkerin/downloads/` (Instagram) und `outputs/produkte/vom-networkwissen-zur-digitalen-produktwelt/downloads/` (Produktwelt).
+
+**`scripts/build-setup-pdf.js`** — rendert die Business-Brain-Anleitung (Markdown → gebrandetes HTML → PDF) via Headless-Chromium. Parametrisiert: `node scripts/build-setup-pdf.js <src.md> <out.html> "<Cover-Titel|mit-Umbruch>" "<Untertitel>"`. Der „Claude-als-Networkerin"-Kurs (Bridge von ChatGPT zu Claude + 333-KI-Kurs-Teaser) liegt unter `outputs/produkte/claude-als-networkerin/`.
+
 ### Instagram Content-Engine (Automatisiert, v2 seit 2026-04-21)
 
 **Vollautomatisches Content-System für beide Profile** (Mentoring + doTERRA). Weekly Content-Generation + Daily Auto-Posting + Monthly Best-Performer-Repost. Gesteürt durch 3 Scheduled Tasks + 2 Assistenten (`/reels`, `/karussell`).
