@@ -12,3 +12,4 @@ Auto-Index aller Files in `outputs/content-kalender/`. Siehe [[_MOCs/MOC-Content
 - [[2026-06-captions-v2]]
 - [[2026-06-captions]]
 - [[2026-06-hook-plan-final]]
+- [[2026-07-KW30-32-overview]]
