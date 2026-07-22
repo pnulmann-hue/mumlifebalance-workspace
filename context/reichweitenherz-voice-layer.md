@@ -39,5 +39,26 @@ Zwei ihrer Signatur-Moves sind bei Patricia GESPERRT — trotzdem anwenden = Feh
 
 ---
 
+## 🔄 Formel-Rotation (PFLICHT — seit 2026-07-21)
+
+Patricia will, dass die **verschiedenen Reichweitenherz-Formeln durchgetestet** werden — **nie zweimal dasselbe Muster in kurzer Folge.** Der Pool (aus [`reference/content-tresor-reichweitenherz.md`](../reference/content-tresor-reichweitenherz.md), 5 Säulen × ~10 Sets):
+
+| Familie | Opener-Signatur |
+|---|---|
+| Komplizen-Rant | „Kann mir bitte mal jemand erklären, warum…?" |
+| POV | „POV: du [konkrete Szene]…" |
+| Bekenntnis / Das Peinliche | „Das Peinliche? Ich war überzeugt, dass…" |
+| Erlaubnis / Reframe | „Nö, du musst nicht [konkretes Cringe-Ding]…" |
+| Steile These / Hot Take | „Man muss kein Mathegenie sein, um…" |
+| Konkrete-Zahl-Szenario | „47 Podcasts gehört, 0 Entscheidungen getroffen…" |
+| Vergleich-Metapher | „Du vergleichst dein Kapitel 2 mit ihrem Kapitel 27…" |
+| Wörtlicher-Gedanke | startet mit dem inneren Satz in „…" |
+| Unpopuläre Meinung | „Unpopuläre Meinung: du brauchst kein…" |
+| Zwei-Typen | „Es gibt zwei Arten von Network-Mamas…" |
+| Vorher-Nachher-Timeline | „Vor einem Jahr: … Heute: …" |
+| Zeitanker | „Letzten Herbst… / Gestern um 21 Uhr…" |
+
+**Regel:** Pro Post eine ANDERE Familie, pro Woche mind. 4–5 verschiedene. Vor jedem Set prüfen, welche zuletzt dran war, und bewusst frisch wählen. **Zuletzt überstrapaziert (KW29/30): Zeitanker + Komplizen-Rant + „Nö-du-musst-nicht" → eine Weile meiden.**
+
 ## 🔗 Verwandte Notizen
 - [[ki-phrasen-blackliste]] · [[caption-formeln]] · [[hook-framework]] · [[brand-voice]]
