@@ -8,6 +8,8 @@ Auto-Index aller Files in `outputs/telegram-posts/`. Siehe [[_MOCs/MOC-Content-E
 
 ## Dateien
 
+- [[2026-07-22-ikm-upgrade-mba]]
+
 
 ### 📁 fruehling-2026
 
