@@ -419,29 +419,31 @@ Was ist dein liebster Sommer-Ort draussen? 🏕️
 
 ---
 
-## 📅 Posting-Kalender (2 Beiträge/Woche, Di + Fr, 9:00)
+## 📅 Posting-Kalender (Auto-Posting via Userbot-Pipeline)
+
+Eingeplant über `scripts/telegram-userbot/src/import-sommer-2026.ts` — 3×/Woche (Di/Do/Sa), variierende Uhrzeiten (wirkt organisch), gepostet vom Userbot in die Gruppe „Gesund durchs ganze Jahr mit ätherischen Ölen" (Chat-ID `-4518699226`). Status: `pending_approval` → startet erst nach Patricias „OK" per Telegram-DM.
 
 | Datum | Beitrag |
 |---|---|
-| Di 21.07. | 📢 Eröffnungspost |
-| Fr 24.07. | 1 — Erfrischendes Körperspray |
-| Di 28.07. | 2 — Kühler Kopf |
-| Fr 31.07. | 3 — Fussbäder |
-| Di 04.08. | 4 — Kühle Kompresse |
-| Fr 07.08. | 5 — Haut nach dem Sonnenbad |
-| Di 11.08. | 6 — Wenn's summt und surrt |
-| Fr 14.08. | 7 — Entspannungsbad |
-| Di 18.08. | 8 — Meditation & Achtsamkeit |
-| Fr 21.08. | 9 — Sonnenuntergang im Fläschchen |
-| Di 25.08. | 10 — Zitronen-Pfefferminz-Limonade |
-| Fr 28.08. | 11 — Aromawürfel |
-| Di 01.09. | 12 — Botanical Spritz & Bowle |
-| Fr 04.09. | 13 — Trink dich wach & Sundowner |
-| Di 08.09. | 14 — Kräuteröle in der Küche |
-| Fr 11.09. | 15 — Reisebegleiter |
-| Di 15.09. | 16 — Wandern, Lagerfeuer, Garten |
+| Di 28.07. 08:30 | 📢 Eröffnungspost |
+| Do 30.07. 14:15 | 1 — Erfrischendes Körperspray |
+| Sa 01.08. 19:45 | 2 — Kühler Kopf |
+| Di 04.08. 09:15 | 3 — Fussbäder |
+| Do 06.08. 16:30 | 4 — Kühle Kompresse |
+| Sa 08.08. 11:00 | 5 — Haut nach dem Sonnenbad |
+| Di 11.08. 15:20 | 6 — Wenn's summt und surrt |
+| Do 13.08. 20:10 | 7 — Entspannungsbad |
+| Sa 15.08. 07:45 | 8 — Meditation & Achtsamkeit |
+| Di 18.08. 17:30 | 9 — Sonnenuntergang im Fläschchen |
+| Do 20.08. 10:20 | 10 — Zitronen-Pfefferminz-Limonade |
+| Sa 22.08. 13:40 | 11 — Aromawürfel |
+| Di 25.08. 18:15 | 12 — Botanical Spritz & Bowle |
+| Do 27.08. 09:45 | 13 — Trink dich wach & Sundowner |
+| Sa 29.08. 15:50 | 14 — Kräuteröle in der Küche |
+| Di 01.09. 08:15 | 15 — Reisebegleiter |
+| Do 03.09. 20:30 | 16 — Wandern, Lagerfeuer, Garten |
 
-**Anpassbar:** Bei Sommerferien die Reise- (15) und Outdoor-Beiträge (16) gern in den August vorziehen. Für schnelleres Tempo 3×/Woche (Mo/Mi/Fr) posten — dann bist du Ende August durch.
+**Freigabe/Steuerung per DM:** „OK" startet · „zeig mir Post 3" · „Übersicht" · „abbrechen".
 **Ende August/September:** Übergang zum Herbst-Paket vorbereiten.
 
 ---
