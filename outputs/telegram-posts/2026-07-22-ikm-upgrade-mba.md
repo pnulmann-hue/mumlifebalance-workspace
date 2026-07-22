@@ -12,18 +12,20 @@ tags: [content, telegram]
 
 💛 **Kleine grosse Neuigkeit für dich als Kundenmaschine-Teilnehmerin**
 
-Ich hab die Instagram-Kundenmaschine aufgerüstet — und zwar so, dass sie ab jetzt **mit dir mitdenkt.**
+Ich hab die Instagram-Kundenmaschine aufgerüstet — mit gleich zwei neuen Sachen, die dir das Content-Machen richtig abnehmen.
 
-Neu im Kurs: **dein Claude-Business-Brain.** Du baust dir in ein paar Minuten deinen eigenen KI-Assistenten, der die komplette Kundenmaschine-Methode kennt UND dich — dein Thema, deine Geschichte, deine Sprache. Ab dann bekommst du Hooks, Captions und Content-Ideen, die klingen, als hättest du sie selbst geschrieben. Nur schneller.
+🤖 **Neu 1: Dein Companion-Bot ist jetzt direkt im Kursbereich.**
+Dein persönlicher IKM-Assistent wohnt ab sofort im Kurs. Du fragst ihn dein nächstes Thema, und er gibt dir Hooks, Story-Ideen und deinen nächsten Schritt — zugeschnitten auf dein Profil. Und er ist frisch aufgerüstet: **über 100 Hook-Muster** plus die kompletten Caption- und Verkaufs-Frameworks. Einfach ausprobieren 👉 companion-ikm.mumlifebalance.ch
+
+🧠 **Neu 2: Dein Claude-Business-Brain.**
+Du baust dir in ein paar Minuten deinen eigenen KI-Assistenten, der die komplette Kundenmaschine-Methode kennt UND dich — dein Thema, deine Geschichte, deine Sprache. Ab dann bekommst du Content, der klingt, als hättest du ihn selbst geschrieben. Nur schneller.
 
 So einfach geht's:
 1️⃣ Kurzes Video anschauen (neue Lektion)
 2️⃣ Zwei Dateien runterladen — die Wissensgrundlage + die Schritt-für-Schritt-Anleitung als PDF
 3️⃣ In dein Claude-Projekt laden, dein persönliches Profil per Interview-Prompt erstellen. Fertig.
 
-Und der Companion-Bot ist auch aufgerüstet: über 100 Hook-Muster plus die kompletten Caption- und Verkaufs-Frameworks. Probier ihn direkt aus 👉 companion-ikm.mumlifebalance.ch
-
-📍 Alles findest du im Kursbereich unter der neuen Lektion + den Downloads.
+📍 Beides findest du ab sofort im Kursbereich.
 
 —
 
