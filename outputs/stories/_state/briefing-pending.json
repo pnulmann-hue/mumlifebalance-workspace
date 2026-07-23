@@ -1,51 +1,67 @@
 {
-  "profil": "mentoring",
-  "modus": "tagesplan",
-  "disg": "Rot",
-  "disg_sekundaer": "Gelb",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
-  "aktives_produkt": "Bio-Check",
-  "wochen_fokus": "(kein Fokus eingetragen)",
-  "sales_pattern": "",
-  "wochen_cta": "",
-  "monat_kontext": "",
-  "produkt_themen": null,
-  "vorschlag_idee": null,
-  "wochen_fokus_quelle": "fallback",
-  "launch_tag": {
-    "datum": "2026-07-22",
-    "phase": "verkaufsphase",
-    "julia_vorlage": "social-proof",
-    "titel": "Wer schon in der MBA ist",
-    "story_ziel": "Post-it-Wand: anonyme Käuferinnen, Rudeltier-Effekt. Dringlichkeit baut auf.",
-    "kaeufertyp": "Zoe",
-    "cta": "Cart offen — Link / DM MBA",
-    "cta_keyword": "MBA",
-    "profil": "mentoring"
-  },
-  "launch_vorlage": {
-    "name": "Beweise / Social Proof",
-    "phase": "verkaufsphase",
-    "ziel": "Erfolgsgeschichte (eigene oder Kundin) zeigen — Glaubwürdigkeit + FOMO.",
-    "julia_anleitung": "Erzähle die Erfolgsgeschichte eines Kunden oder deine eigene. Was hat die Person getan? Zeige Screenshots/Nachrichten (anonym ausser du darfst verlinken). Erzeugt FOMO.",
-    "kaeufertyp": "Zoe + Rudi",
-    "slide_bogen": "Hook → die Ausgangslage (kennt sie wieder) → was sie getan hat → das Ergebnis → 'auch für dich möglich' + CTA"
-  },
-  "kontext_snapshot": {
-    "kw": 30,
-    "wochentag": "Mittwoch",
-    "datum": "2026-07-22"
-  },
-  "fragen": [
-    "Was hast du erlebt?",
-    "Hast du grad einen Gedanken zum Thema?",
-    "Oder Standard-Pool?"
-  ],
-  "gesendet_am": "2026-07-22T07:15:02.211Z",
-  "telegram_message_id": 973,
-  "patricia_antworten": [],
-  "patricia_fotos": [],
-  "patricia_videos": [],
-  "status": "warten_auf_antwort"
+  "datum": "2026-07-23",
+  "profile": {
+    "mentoring": {
+      "profil": "mentoring",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Instagram-Strategie für NM",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": true,
+        "phase": "verkaufsphase",
+        "tag_im_launch": 39,
+        "vorlage": "Einwandbehandlung",
+        "titel": "Letzte Zweifel",
+        "story_ziel": "Geld/Zeit/Technik-Einwände final abräumen, keine Geld-zurück-Garantie ehrlich rahmen. Klarheit schaffen.",
+        "kaeufertyp": "Amelie",
+        "cta": "DM MBA bei Fragen",
+        "cta_keyword": "MBA"
+      },
+      "kontext_snapshot": {
+        "kw": 30,
+        "wochentag": "Donnerstag",
+        "datum": "2026-07-23"
+      },
+      "gesendet_am": "2026-07-23T04:42:01.326Z",
+      "telegram_message_id": 989,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    },
+    "doterra": {
+      "profil": "doterra",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Zurück zu deiner Energie",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Quick Win",
+        "titel": "Quick Win",
+        "story_ziel": "Eine Formel/Methode die SOFORT funktioniert — Vertrauen + Expertise.",
+        "kaeufertyp": "Willi",
+        "cta": "thematisch passend (STORY / BIO)",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 30,
+        "wochentag": "Donnerstag",
+        "datum": "2026-07-23"
+      },
+      "gesendet_am": "2026-07-23T04:42:02.174Z",
+      "telegram_message_id": 990,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    }
+  }
 }
