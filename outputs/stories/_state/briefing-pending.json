@@ -1,51 +1,67 @@
 {
-  "profil": "doterra",
-  "modus": "tagesplan",
-  "disg": "Rot",
-  "disg_sekundaer": "Gelb",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
-  "aktives_produkt": "doTERRA Lifestyle",
-  "wochen_fokus": "(kein Fokus eingetragen)",
-  "sales_pattern": "",
-  "wochen_cta": "",
-  "monat_kontext": "",
-  "produkt_themen": null,
-  "vorschlag_idee": null,
-  "wochen_fokus_quelle": "fallback",
-  "launch_tag": {
-    "datum": "2026-07-23",
-    "phase": "verkaufsphase",
-    "julia_vorlage": "einwandbehandlung",
-    "titel": "Letzte Zweifel",
-    "story_ziel": "Geld/Zeit/Technik-Einwände final abräumen, keine Geld-zurück-Garantie ehrlich rahmen. Klarheit schaffen.",
-    "kaeufertyp": "Amelie",
-    "cta": "DM MBA bei Fragen",
-    "cta_keyword": "MBA",
-    "profil": "mentoring"
-  },
-  "launch_vorlage": {
-    "name": "Einwandbehandlung",
-    "phase": "verkaufsphase",
-    "ziel": "Glaubenssätze die vom Kauf abhalten selbst ansprechen + entkräften.",
-    "julia_anleitung": "Liste die häufigsten Einwände/Glaubenssätze auf (Geld, Angst, Zeit, 'kenn mich nicht aus'). Lass abstimmen welcher zutrifft. Zeige Verständnis (hatte ich auch), dann entkräfte jeden. Danach Fragen-Sticker für eigene Einwände.",
-    "kaeufertyp": "Amelie + Zoe",
-    "slide_bogen": "Hook (ich räum mit Einwänden auf) → Einwand 1+2+3 (Abstimmung) → Verständnis + Entkräftung → Fragen-Sticker → sanfter CTA"
-  },
-  "kontext_snapshot": {
-    "kw": 30,
-    "wochentag": "Donnerstag",
-    "datum": "2026-07-23"
-  },
-  "fragen": [
-    "Was hast du erlebt?",
-    "Hast du grad einen Gedanken zum Thema?",
-    "Oder Standard-Pool?"
-  ],
-  "gesendet_am": "2026-07-23T07:08:20.616Z",
-  "telegram_message_id": 991,
-  "patricia_antworten": [],
-  "patricia_fotos": [],
-  "patricia_videos": [],
-  "status": "warten_auf_antwort"
+  "datum": "2026-07-24",
+  "profile": {
+    "mentoring": {
+      "profil": "mentoring",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Instagram-Strategie für NM",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": true,
+        "phase": "verkaufsphase",
+        "tag_im_launch": 40,
+        "vorlage": "Persönliche Story / Dein Weg",
+        "titel": "Persönlicher Brief: warum ich das mit dir bauen will",
+        "story_ziel": "Persönlicher Brief + Werte. Nähe, Vertrauen, Einladung. Übergang in die Close-Cascade.",
+        "kaeufertyp": "Rudi",
+        "cta": "Cart offen — Link / DM MBA",
+        "cta_keyword": "MBA"
+      },
+      "kontext_snapshot": {
+        "kw": 30,
+        "wochentag": "Freitag",
+        "datum": "2026-07-24"
+      },
+      "gesendet_am": "2026-07-24T04:42:01.126Z",
+      "telegram_message_id": 998,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    },
+    "doterra": {
+      "profil": "doterra",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Zurück zu deiner Energie",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Inspiration / Vision (Vorher-Nachher / POV)",
+        "titel": "Inspiration / Vision (Vorher-Nachher / POV)",
+        "story_ziel": "Zeigen was möglich ist — Bild im Kopf der Leserin erzeugen.",
+        "kaeufertyp": "Ina",
+        "cta": "thematisch passend",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 30,
+        "wochentag": "Freitag",
+        "datum": "2026-07-24"
+      },
+      "gesendet_am": "2026-07-24T04:42:01.976Z",
+      "telegram_message_id": 999,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    }
+  }
 }
