@@ -1,67 +1,51 @@
 {
-  "datum": "2026-07-26",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": true,
-        "phase": "verkaufsphase",
-        "tag_im_launch": 42,
-        "vorlage": "Last Call / letzter Tag",
-        "titel": "Morgen 23:59 ist Schluss",
-        "story_ziel": "Countdown-Sticker, Post-it-Wand, letzte Fragen einsammeln. Hohe Dringlichkeit.",
-        "kaeufertyp": "Zoe",
-        "cta": "Cart schliesst morgen 23:59 — Link / DM MBA",
-        "cta_keyword": "MBA"
-      },
-      "kontext_snapshot": {
-        "kw": 30,
-        "wochentag": "Sonntag",
-        "datum": "2026-07-26"
-      },
-      "gesendet_am": "2026-07-26T04:42:01.018Z",
-      "telegram_message_id": 1010,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Lifestyle / Sonntags-Reflexion / Lifehack",
-        "titel": "Lifestyle / Sonntags-Reflexion / Lifehack",
-        "story_ziel": "Nahbarer Produktivitäts-/Motivations-Hack oder ruhige Reflexion — Beziehung stärken.",
-        "kaeufertyp": "Ina",
-        "cta": "optional, niederschwellig",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 30,
-        "wochentag": "Sonntag",
-        "datum": "2026-07-26"
-      },
-      "gesendet_am": "2026-07-26T04:42:01.873Z",
-      "telegram_message_id": 1011,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "mentoring",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "Bio-Check",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": null,
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": {
+    "datum": "2026-07-26",
+    "phase": "verkaufsphase",
+    "julia_vorlage": "last-call",
+    "titel": "Morgen 23:59 ist Schluss",
+    "story_ziel": "Countdown-Sticker, Post-it-Wand, letzte Fragen einsammeln. Hohe Dringlichkeit.",
+    "kaeufertyp": "Zoe",
+    "cta": "Cart schliesst morgen 23:59 — Link / DM MBA",
+    "cta_keyword": "MBA",
+    "profil": "mentoring"
+  },
+  "launch_vorlage": {
+    "name": "Last Call / letzter Tag",
+    "phase": "verkaufsphase",
+    "ziel": "Letzte Chance vor Cart-Close. Höchste Dringlichkeit + Post-It-Wand.",
+    "julia_anleitung": "Am Tag vor Ende: alle Teilnehmer zeigen, letzte Fragen beantworten, volle Energie. Mach klar dass jetzt Schluss ist. Liebevolle Strenge: negative Konsequenz des Nicht-Handelns.",
+    "kaeufertyp": "Zoe + Amelie",
+    "slide_bogen": "Hook (letzter Tag) → was jetzt auf dem Spiel steht → Social Proof → klare Deadline → CTA mit Link"
+  },
+  "kontext_snapshot": {
+    "kw": 30,
+    "wochentag": "Sonntag",
+    "datum": "2026-07-26"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-07-26T07:12:48.832Z",
+  "telegram_message_id": 1012,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
