@@ -1,67 +1,51 @@
 {
-  "datum": "2026-07-28",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": true,
-        "phase": "nachkaufphase",
-        "tag_im_launch": 44,
-        "vorlage": "Feedback nach dem Launch",
-        "titel": "Was die Gründungs-Kohorte sagt",
-        "story_ziel": "Feedback + Begeisterung der MBA-Käuferinnen zeigen. Dankbarkeit. Nachzügler-DMs möglich machen.",
-        "kaeufertyp": "Rudi",
-        "cta": "Du warst zu spät? DM mir — schauen wir, was geht",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 31,
-        "wochentag": "Dienstag",
-        "datum": "2026-07-28"
-      },
-      "gesendet_am": "2026-07-28T04:42:01.256Z",
-      "telegram_message_id": 1016,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Persönliche Story / Dein Weg",
-        "titel": "Persönliche Story / Dein Weg",
-        "story_ziel": "Identifikation über Patricias eigene Geschichte (Wendepunkt, 4 Kinder, Funktionsmodus).",
-        "kaeufertyp": "Amelie",
-        "cta": "ECHT1 (Von 0 auf echt) oder thematisch passend",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 31,
-        "wochentag": "Dienstag",
-        "datum": "2026-07-28"
-      },
-      "gesendet_am": "2026-07-28T04:42:02.358Z",
-      "telegram_message_id": 1017,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "doterra",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "doTERRA Lifestyle",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": null,
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": {
+    "datum": "2026-07-28",
+    "phase": "nachkaufphase",
+    "julia_vorlage": "feedback-social-proof",
+    "titel": "Was die Gründungs-Kohorte sagt",
+    "story_ziel": "Feedback + Begeisterung der MBA-Käuferinnen zeigen. Dankbarkeit. Nachzügler-DMs möglich machen.",
+    "kaeufertyp": "Rudi",
+    "cta": "Du warst zu spät? DM mir — schauen wir, was geht",
+    "cta_keyword": null,
+    "profil": "mentoring"
+  },
+  "launch_vorlage": {
+    "name": "Feedback nach dem Launch",
+    "phase": "nachkaufphase",
+    "ziel": "Hype nutzen, Feedback posten, Nachzügler abholen.",
+    "julia_anleitung": "Poste das Feedback deiner Community. Nutze den Hype um auch nach der Verkaufsphase nachzuverkaufen (für die nächste Runde / Nachzügler).",
+    "kaeufertyp": "Zoe + Rudi",
+    "slide_bogen": "Hook → Feedback zeigen → warum dich das berührt → Hinweis nächste Möglichkeit"
+  },
+  "kontext_snapshot": {
+    "kw": 31,
+    "wochentag": "Dienstag",
+    "datum": "2026-07-28"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-07-28T07:17:54.966Z",
+  "telegram_message_id": 1018,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
