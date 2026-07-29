@@ -15,9 +15,9 @@ Beide sind die Budget-Reedereien im Mittelmeer, und die Häfen erreichst du **oh
 
 ---
 
-## 🎯 Konkret für eure Daten: 8.–15.10.2027 (Fr–Fr, 7 Nächte)
+## 🎯 Konkret für die Familie: ~Oktober 2027, 7 Nächte (flexibel)
 
-**Gute Nachricht:** Oktober = **Nebensaison** → deutlich günstiger als Sommer. Und **8.10. ist ein Freitag**, 15.10. auch → passt exakt auf die wöchentlichen Fr–Fr-Abfahrten ab Genua.
+**Gute Nachricht:** Oktober = **Nebensaison** → deutlich günstiger als Sommer, aber noch angenehm mild. Deine ursprüngliche Woche **8.–15.10. (Fr–Fr)** passt exakt auf die wöchentlichen Fr–Fr-Abfahrten ab Genua — und weil ihr **zeitlich flexibel** seid, kann ich beim Buchen gezielt die **günstigste Abfahrt im Oktober** (oder Anfang November, noch etwas billiger) herauspicken statt auf eine fixe Woche festgenagelt zu sein.
 
 **Familie: Erwachsene + Kinder 14 / 12 / 10 / 9** — alle 4 sind unter 18, also grundsätzlich „Kinder-gratis"-fähig. **Aber:** Die Gratis-Regel gilt für **max. 2 Kinder pro Kabine mit 2 Erwachsenen**. Bei 6 Personen brauchst du **2 (verbundene) Kabinen** → nur **2 Kinder fahren wirklich gratis**, die anderen 2 zahlen einen reduzierten Zusatz-/Kindertarif in der Nachbarkabine.
 
@@ -83,17 +83,23 @@ Beim Alleinreisen ist der **Einzelkabinen-Zuschlag** normalerweise der Killer (K
 - **AIDA** hat echte **Einzelkabinen ohne Doppel-Aufschlag** (ab Hamburg/Kiel, ohne Flug) — aber früh buchen (oft 1 Jahr im Voraus) und Anreise weiter.
 - Auf regulären Doppelkabinen fällt der Zuschlag manchmal **Last-Minute (4–8 Wochen vorher)** weg.
 
-### 🎯 Konkrete Solo-Route für dich (Zug-Anreise)
+### 🎯 Konkrete Solo-Route für dich — Kurzreise unter 7 Tagen (Zug-Anreise)
 
-**Empfehlung: Costa Fascinosa** — steht auf der **Zuschlags-frei-Liste** und fährt im Herbst 2027 **7–9-Nächte-Runden ab Savona/Genua** im westlichen Mittelmeer.
+Kürzer = günstiger, und für eine Solo-Auszeit perfekt. Costa hat **Minikreuzfahrten (3–5 Nächte)** ab Savona/Genua — und **für Alleinreisende auf ausgewählten Terminen ganz ohne Einzelkabinenzuschlag** (u.a. auf den zuschlagsfreien Schiffen wie **Costa Favolosa/Fascinosa**).
 
-- **Typische Route (7 Nächte):** Genua/Savona → La Spezia → Rom/Civitavecchia → Salerno → Sizilien (Messina) → Sardinien → Marseille → zurück. Sonnige Häfen, viel Italien — ideal zum Runterkommen.
-- **Anreise per Zug:** Zürich HB → **Genova Piazza Principe direkt ~5 h 19** (ab ~24 €), Terminal 10 Min. zu Fuss. Fährt dein Schiff ab **Savona**: ab Genua noch ~45 Min. Regionalzug. → 1 Nacht Hotel Genua davor.
-- **💰 Preis Solo:** Innenkabine **~500–750 € für 7 Nächte inkl. Vollpension, KEIN Einzelzuschlag** + ~70 € Service. Solo per Zug ist die Anreise fast geschenkt.
+**Empfehlung: Costa-Minikreuzfahrt, 3–4 Nächte ab Savona/Genua**
 
-**🔥 Spar-Geheimtipp (wenn du zeitlich flexibel wärst):** **Costa Pacifica ab Savona**, Herbst-Mittelmeer inkl. Marokko, **11 Nächte ab ~599–899 € p.P. ganz ohne Einzelzuschlag** — pro Nacht unschlagbar günstig. Nur eben 11 statt 7 Nächte und nicht exakt in deiner Familienwoche.
+| Länge | Typische Route | Innen ab (p.P., Vollpension) |
+|---|---|---|
+| **4 Tage / 3 Nächte** | Savona → Marseille → Barcelona → Savona | **~259–300 €** |
+| 4 Tage / 3 Nächte | Savona → Civitavecchia/Rom → Savona | ~259 € |
+| 5 Tage / 4 Nächte | Savona → Marseille → Barcelona → (Seetag) → Savona | ~340–539 € |
 
-> Für exakt **8.–15.10.2027** suche ich dir gern die konkrete zuschlagsfreie Costa-Abfahrt + Route + Tagespreis raus — sag nur, ob's genau diese Woche sein soll oder du für den besten Preis ±1 Woche flexibel bist.
+- **💰 Solo-Preis:** ab **~259–300 € für eine 3-Nächte-Runde inkl. Vollpension, KEIN Einzelzuschlag** + ~30 € Service. Das ist fast schon lächerlich günstig für eine Auszeit am Meer.
+- **Anreise per Zug:** Zürich HB → **Genova Piazza Principe direkt ~5 h 19** (ab ~24 €), Terminal 10 Min. zu Fuss. Ab Savona: ab Genua noch ~45 Min. Regionalzug → 1 Nacht Hotel Genua davor (schöner Städte-Auftakt).
+- **Timing:** Da du flexibel bist — Costa-Kurzreisen gibt's gehäuft im **Frühling (März–Mai)** und Herbst. Du musst also nicht an den Familien-Oktober gebunden sein; ein **verlängertes Solo-Wochenende** irgendwann 2027 tut's auch.
+
+**🔥 Spar-Geheimtipp (wenn du doch mehr Nächte willst):** **Costa Pacifica ab Savona**, Herbst-Mittelmeer inkl. Marokko, **11 Nächte ab ~599 € p.P. ganz ohne Einzelzuschlag** — pro Nacht der absolute Tiefpreis.
 
 ---
 
