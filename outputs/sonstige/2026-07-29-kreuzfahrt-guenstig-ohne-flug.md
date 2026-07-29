@@ -15,6 +15,31 @@ Beide sind die Budget-Reedereien im Mittelmeer, und die Häfen erreichst du **oh
 
 ---
 
+## 🎯 Konkret für eure Daten: 8.–15.10.2027 (Fr–Fr, 7 Nächte)
+
+**Gute Nachricht:** Oktober = **Nebensaison** → deutlich günstiger als Sommer. Und **8.10. ist ein Freitag**, 15.10. auch → passt exakt auf die wöchentlichen Fr–Fr-Abfahrten ab Genua.
+
+**Familie: Erwachsene + Kinder 14 / 12 / 10 / 9** — alle 4 sind unter 18, also grundsätzlich „Kinder-gratis"-fähig. **Aber:** Die Gratis-Regel gilt für **max. 2 Kinder pro Kabine mit 2 Erwachsenen**. Bei 6 Personen brauchst du **2 (verbundene) Kabinen** → nur **2 Kinder fahren wirklich gratis**, die anderen 2 zahlen einen reduzierten Zusatz-/Kindertarif in der Nachbarkabine.
+
+### Passende Familien-Schiffe in dieser Woche
+
+| Schiff | Ab Hafen | Beispiel-Route (7 Nächte, westl. Mittelmeer) | Innen ab |
+|---|---|---|---|
+| **MSC Seaview** | **Genua** ⭐ (direkt per Zug) | Genua → Rom/Civitavecchia → Palermo → Ibiza → Barcelona → Marseille → Genua | ~579 €/Erw. |
+| **Costa Toscana** | Savona | Savona → Marseille → Barcelona → Tunis → Palermo → Rom → Savona | ~449 €/Erw. |
+| **Costa Smeralda** | Savona/Genua | Genua → Marseille → Barcelona → Cagliari → Neapel → Genua | ~499 €/Erw. |
+
+> ⭐ **Für Zug-Anreise ist MSC Seaview ab Genua ideal** — der direkte EC hält quasi am Terminal (10 Min. zu Fuss). Costa fährt meist ab Savona (per Zug 1× umsteigen, Genua→Savona ~45 Min. Regionalzug).
+
+**💰 Realistischer Familien-Richtwert (2 Innenkabinen, Vollpension, Okt = günstig):**
+- Kabinen + Vollpension: **ca. 1'600 – 2'400 €** (2 Erwachsene voll + 2 Kinder gratis + 2 Kinder reduziert).
+- + Servicegebühr ~10 €/Person/Tag → ~420 €.
+- + Zug für 6 (Zürich↔Genua, ab ~24 €/Weg) + 1 Hotelnacht Genua (Anreise Do 7.10.).
+
+**Ablauf:** Do 7.10. mit dem Zug nach Genua, 1 Nacht Hotel → Fr 8.10. einschiffen → Fr 15.10. zurück in Genua, Zug heim. Sauber ohne Flug.
+
+---
+
 ## 🚗 Anreise ohne Flug (ab Urnäsch)
 
 | Weg | Details |
@@ -57,6 +82,18 @@ Beim Alleinreisen ist der **Einzelkabinen-Zuschlag** normalerweise der Killer (K
 **Alternativen für Solo:**
 - **AIDA** hat echte **Einzelkabinen ohne Doppel-Aufschlag** (ab Hamburg/Kiel, ohne Flug) — aber früh buchen (oft 1 Jahr im Voraus) und Anreise weiter.
 - Auf regulären Doppelkabinen fällt der Zuschlag manchmal **Last-Minute (4–8 Wochen vorher)** weg.
+
+### 🎯 Konkrete Solo-Route für dich (Zug-Anreise)
+
+**Empfehlung: Costa Fascinosa** — steht auf der **Zuschlags-frei-Liste** und fährt im Herbst 2027 **7–9-Nächte-Runden ab Savona/Genua** im westlichen Mittelmeer.
+
+- **Typische Route (7 Nächte):** Genua/Savona → La Spezia → Rom/Civitavecchia → Salerno → Sizilien (Messina) → Sardinien → Marseille → zurück. Sonnige Häfen, viel Italien — ideal zum Runterkommen.
+- **Anreise per Zug:** Zürich HB → **Genova Piazza Principe direkt ~5 h 19** (ab ~24 €), Terminal 10 Min. zu Fuss. Fährt dein Schiff ab **Savona**: ab Genua noch ~45 Min. Regionalzug. → 1 Nacht Hotel Genua davor.
+- **💰 Preis Solo:** Innenkabine **~500–750 € für 7 Nächte inkl. Vollpension, KEIN Einzelzuschlag** + ~70 € Service. Solo per Zug ist die Anreise fast geschenkt.
+
+**🔥 Spar-Geheimtipp (wenn du zeitlich flexibel wärst):** **Costa Pacifica ab Savona**, Herbst-Mittelmeer inkl. Marokko, **11 Nächte ab ~599–899 € p.P. ganz ohne Einzelzuschlag** — pro Nacht unschlagbar günstig. Nur eben 11 statt 7 Nächte und nicht exakt in deiner Familienwoche.
+
+> Für exakt **8.–15.10.2027** suche ich dir gern die konkrete zuschlagsfreie Costa-Abfahrt + Route + Tagespreis raus — sag nur, ob's genau diese Woche sein soll oder du für den besten Preis ±1 Woche flexibel bist.
 
 ---
 
