@@ -11,7 +11,9 @@ tags: [misc, ferien, kreuzfahrt]
 **Günstigste Kreuzfahrt ohne Flug = Westliches Mittelmeer mit MSC oder Costa ab Genua/Savona.**
 Beide sind die Budget-Reedereien im Mittelmeer, und die Häfen erreichst du **ohne Flugzeug** — per Auto (~4 h über den Gotthard) oder direktem Zug ab Zürich. Nordeuropa (AIDA ab Hamburg/Kiel) und Rhein-Flusskreuzfahrt ab Basel gehen auch ohne Flug, sind aber teurer bzw. weniger günstig → siehe unten.
 
-> ⚠️ Preise sind Richtwerte für 7 Nächte inkl. Vollpension, Innenkabine (= günstigste Kategorie). Sommer/Schulferien liegen am oberen Ende, Nebensaison deutlich tiefer. Servicegebühr (~10 €/Person/Tag) + Anreise kommen dazu.
+> ⚠️ Preise sind Richtwerte inkl. Vollpension. Sommer/Schulferien liegen am oberen Ende, Nebensaison deutlich tiefer. Servicegebühr (~10 €/Person/Tag) + Anreise kommen dazu.
+
+> 🛏️ **Zwingend Balkonkabine** (dein Wunsch) — alle Preise unten sind entsprechend auf **Balkon** gerechnet, nicht auf die billigste Innenkabine.
 
 ---
 
@@ -21,20 +23,24 @@ Beide sind die Budget-Reedereien im Mittelmeer, und die Häfen erreichst du **oh
 
 **Familie: Erwachsene + Kinder 14 / 12 / 10 / 9** — alle 4 sind unter 18, also grundsätzlich „Kinder-gratis"-fähig. **Aber:** Die Gratis-Regel gilt für **max. 2 Kinder pro Kabine mit 2 Erwachsenen**. Bei 6 Personen brauchst du **2 (verbundene) Kabinen** → nur **2 Kinder fahren wirklich gratis**, die anderen 2 zahlen einen reduzierten Zusatz-/Kindertarif in der Nachbarkabine.
 
-### Passende Familien-Schiffe in dieser Woche
+### ⭐ Die ideale Balkon-Lösung für 6 Personen: MSC „Super-Familienkabine"
 
-| Schiff | Ab Hafen | Beispiel-Route (7 Nächte, westl. Mittelmeer) | Innen ab |
+Genau für euch gemacht (auf **MSC Seaview** & **MSC Grandiosa**): **zwei verbundene Kabinen mit Verbindungstür, 2 Badezimmer (1× mit Badewanne) und 2 eigenen Balkonen**, Platz für **bis zu 6 Personen**. So habt ihr die geforderten getrennten Schlafbereiche **plus 2 Balkone** — und die Kinder-gratis-Regel greift trotzdem.
+
+### Passende Familien-Schiffe (Balkon)
+
+| Schiff | Ab Hafen | Beispiel-Route (7 Nächte, westl. Mittelmeer) | Balkon ab (p.P.) |
 |---|---|---|---|
-| **MSC Seaview** | **Genua** ⭐ (direkt per Zug) | Genua → Rom/Civitavecchia → Palermo → Ibiza → Barcelona → Marseille → Genua | ~579 €/Erw. |
-| **Costa Toscana** | Savona | Savona → Marseille → Barcelona → Tunis → Palermo → Rom → Savona | ~449 €/Erw. |
-| **Costa Smeralda** | Savona/Genua | Genua → Marseille → Barcelona → Cagliari → Neapel → Genua | ~499 €/Erw. |
+| **MSC Seaview** | **Genua** ⭐ (direkt per Zug) | Genua → Rom → Palermo → Ibiza → Barcelona → Marseille → Genua | ~977 €/Erw. |
+| **Costa Toscana** | Savona | Savona → Marseille → Barcelona → Tunis → Palermo → Rom → Savona | ~739 €/Erw. |
+| **Costa Smeralda** | Savona/Genua | Genua → Marseille → Barcelona → Cagliari → Neapel → Genua | ~790 €/Erw. |
 
 > ⭐ **Für Zug-Anreise ist MSC Seaview ab Genua ideal** — der direkte EC hält quasi am Terminal (10 Min. zu Fuss). Costa fährt meist ab Savona (per Zug 1× umsteigen, Genua→Savona ~45 Min. Regionalzug).
 
-**💰 Realistischer Familien-Richtwert (2 Innenkabinen, Vollpension, Okt = günstig):**
-- Kabinen + Vollpension: **ca. 1'600 – 2'400 €** (2 Erwachsene voll + 2 Kinder gratis + 2 Kinder reduziert).
+**💰 Realistischer Familien-Richtwert (2 verbundene Balkonkabinen / Super-Familienkabine, Vollpension, Okt = günstig):**
+- Kabinen + Vollpension: **ca. 2'600 – 3'800 €** (2 Erwachsene voll auf Balkon + 2 Kinder gratis + 2 Kinder reduziert).
 - + Servicegebühr ~10 €/Person/Tag → ~420 €.
-- + Zug für 6 (Zürich↔Genua, ab ~24 €/Weg) + 1 Hotelnacht Genua (Anreise Do 7.10.).
+- + Zug für 6 (Zürich↔Genua, ab ~24 €/Weg) + 1 Hotelnacht Genua (Anreise am Vortag).
 
 **Ablauf:** Do 7.10. mit dem Zug nach Genua, 1 Nacht Hotel → Fr 8.10. einschiffen → Fr 15.10. zurück in Genua, Zug heim. Sauber ohne Flug.
 
@@ -85,21 +91,23 @@ Beim Alleinreisen ist der **Einzelkabinen-Zuschlag** normalerweise der Killer (K
 
 ### 🎯 Konkrete Solo-Route für dich — Kurzreise unter 7 Tagen (Zug-Anreise)
 
-Kürzer = günstiger, und für eine Solo-Auszeit perfekt. Costa hat **Minikreuzfahrten (3–5 Nächte)** ab Savona/Genua — und **für Alleinreisende auf ausgewählten Terminen ganz ohne Einzelkabinenzuschlag** (u.a. auf den zuschlagsfreien Schiffen wie **Costa Favolosa/Fascinosa**).
+Kürzer = günstiger, und für eine Solo-Auszeit perfekt. Costa hat **Minikreuzfahrten (3–5 Nächte)** ab Savona/Genua.
 
-**Empfehlung: Costa-Minikreuzfahrt, 3–4 Nächte ab Savona/Genua**
+**⚠️ Balkon + Solo — ehrlich gerechnet:** Der „**kein Einzelzuschlag**"-Deal von Costa gilt meist nur für **Innen- und Aussenkabinen**. Für die **Balkonkabine** musst du solo in der Regel den **Einzelzuschlag (~50 %)** einkalkulieren — ausser du erwischst einen speziellen Nebensaison-/Last-Minute-Termin, an dem auch Balkon zuschlagsfrei ist (kommt vor, ist aber nicht garantiert).
 
-| Länge | Typische Route | Innen ab (p.P., Vollpension) |
-|---|---|---|
-| **4 Tage / 3 Nächte** | Savona → Marseille → Barcelona → Savona | **~259–300 €** |
-| 4 Tage / 3 Nächte | Savona → Civitavecchia/Rom → Savona | ~259 € |
-| 5 Tage / 4 Nächte | Savona → Marseille → Barcelona → (Seetag) → Savona | ~340–539 € |
+**Empfehlung: Costa-Minikreuzfahrt, 3–4 Nächte ab Savona/Genua, Balkon**
 
-- **💰 Solo-Preis:** ab **~259–300 € für eine 3-Nächte-Runde inkl. Vollpension, KEIN Einzelzuschlag** + ~30 € Service. Das ist fast schon lächerlich günstig für eine Auszeit am Meer.
+| Länge | Typische Route | Balkon-Basis (p.P.) | Solo mit ~50 % Zuschlag |
+|---|---|---|---|
+| **4 Tage / 3 Nächte** | Savona → Civitavecchia/Rom → Savona | ~319 € | **~480 €** |
+| 4 Tage / 3 Nächte | Savona → Marseille → Barcelona → Savona | ~350 € | ~525 € |
+| 5 Tage / 4 Nächte | Savona → Marseille → Barcelona → (Seetag) → Savona | ~739 € | ~1'100 € |
+
+- **💰 Solo-Balkon-Richtwert:** **~480–550 € für 3 Nächte** inkl. Vollpension (Balkon-Basis + 50 % Zuschlag) + ~30 € Service. **Erwischst du einen zuschlagsfreien Balkon-Termin, zahlst du nur die Basis (~320–350 €).** → Genau danach würde ich für dich gezielt suchen.
 - **Anreise per Zug:** Zürich HB → **Genova Piazza Principe direkt ~5 h 19** (ab ~24 €), Terminal 10 Min. zu Fuss. Ab Savona: ab Genua noch ~45 Min. Regionalzug → 1 Nacht Hotel Genua davor (schöner Städte-Auftakt).
-- **Timing:** Da du flexibel bist — Costa-Kurzreisen gibt's gehäuft im **Frühling (März–Mai)** und Herbst. Du musst also nicht an den Familien-Oktober gebunden sein; ein **verlängertes Solo-Wochenende** irgendwann 2027 tut's auch.
+- **Timing:** Da du flexibel bist — Costa-Kurzreisen gibt's gehäuft im **Frühling (März–Mai)** und Herbst. Genau in diesen Nebensaison-Fenstern ist die Chance auf einen **zuschlagsfreien Balkon** am grössten.
 
-**🔥 Spar-Geheimtipp (wenn du doch mehr Nächte willst):** **Costa Pacifica ab Savona**, Herbst-Mittelmeer inkl. Marokko, **11 Nächte ab ~599 € p.P. ganz ohne Einzelzuschlag** — pro Nacht der absolute Tiefpreis.
+**🔥 Spar-Geheimtipp (wenn du doch mehr Nächte willst):** **Costa Pacifica ab Savona**, Herbst-Mittelmeer inkl. Marokko, **11 Nächte ohne Einzelzuschlag** — dort lohnt der Aufpreis Innen→Balkon besonders, weil die Basis so tief ist.
 
 ---
 
@@ -115,8 +123,8 @@ Kürzer = günstiger, und für eine Solo-Auszeit perfekt. Costa hat **Minikreuzf
 
 ## 📌 Mein Fazit
 
-- **Familie am günstigsten:** MSC oder Costa, 7 Nächte westl. Mittelmeer **ab Genua/Savona**, Innen-/Familienkabine, **Kinder gratis** — Anreise mit dem Auto.
-- **Solo am günstigsten:** **Costa auf einem zuschlagsfreien Schiff ab Genua**, Innenkabine — ~500–800 € die Woche, Zug-Anreise.
+- **Familie (Balkon):** MSC **Super-Familienkabine** (2 verbundene Balkonkabinen, 6 Pers.) auf MSC Seaview ab Genua, 7 Nächte westl. Mittelmeer, **Kinder gratis** → ~2'600–3'800 € + Anreise. Zug-Anreise ideal ab Genua.
+- **Solo (Balkon, Kurzreise <7 Nächte):** Costa-Minikreuzfahrt 3 Nächte ab Savona/Genua, Balkon → **~480–550 €** (bzw. nur ~320–350 € an einem zuschlagsfreien Balkon-Termin), Zug-Anreise.
 
 ### Was ich als Nächstes für dich raussuchen kann
 1. **Konkrete 2027-Termine + Preise** für eine bestimmte Woche (Sommer? Herbstferien? Nebensaison?) — dann vergleiche ich MSC vs. Costa direkt.
