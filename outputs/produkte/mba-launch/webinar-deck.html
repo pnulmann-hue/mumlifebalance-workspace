@@ -53,9 +53,9 @@ body{margin:0;background:var(--navy);}
 .s-card{align-items:center;}
 .cardbox{background:#fff;border-radius:2.4vmin;border-top:.8vmin solid var(--petrol);padding:7vmin;max-width:70ch;box-shadow:0 2vmin 5vmin rgba(12,28,48,.09);}
 .cardbox .eyebrow{margin-bottom:2.6vmin;}
-.s-value .vstack{margin-top:2vmin;max-width:60ch;width:100%;}
+.s-value .vstack{margin-top:2vmin;max-width:70vmin;width:100%;}
 .vrow{display:flex;justify-content:space-between;align-items:baseline;padding:2.4vmin 0;border-bottom:1px solid #ddd3bf;font-family:var(--serif);font-size:3vmin;}
-.vprice{color:var(--ink-soft);font-variant-numeric:tabular-nums;}
+.vprice{color:var(--ink-soft);font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:3vmin;}
 .vsum{margin-top:3vmin;font-family:var(--serif);font-weight:700;font-size:3.6vmin;color:var(--petrol);}
 .vextra{margin-top:1.6vmin;font-size:2.3vmin;color:var(--ink-soft);}
 .s-price{align-items:center;}
@@ -73,6 +73,11 @@ body{margin:0;background:var(--navy);}
 .nav button{width:1.7vmin;height:1.7vmin;border-radius:50%;border:none;background:rgba(150,150,150,.4);cursor:pointer;padding:0;}
 .nav button.on{background:var(--orange);}
 .hint{position:fixed;left:3.4vmin;bottom:3vmin;font-size:1.5vmin;letter-spacing:.1em;color:#fff;opacity:.6;z-index:20;mix-blend-mode:difference;}
+.s-testi{align-items:center;}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.6vmin;margin-top:2vmin;width:100%;}
+.tcard{background:#fff;border-radius:2vmin;padding:3.6vmin;box-shadow:0 1.6vmin 4vmin rgba(12,28,48,.09);display:flex;flex-direction:column;}
+.tcard p{font-family:var(--serif);font-style:italic;font-size:2.15vmin;line-height:1.5;color:var(--ink);margin:0 0 2.2vmin;}
+.tcard .who{font-family:var(--sans);font-weight:700;font-size:1.8vmin;color:var(--petrol);margin-top:auto;}
 @media (max-width:760px){
   .xl{font-size:8.6vw;}.lg{font-size:7.4vw;}.md{font-size:6.4vw;}.huge{font-size:9vw;}
   .body,.sub{font-size:4vw;max-width:90%;}.biglist li{font-size:4.4vw;}
@@ -225,7 +230,7 @@ body{margin:0;background:var(--navy);}
   <div class="vstack"><div class="vrow"><span>Instagram-Kundenmaschine</span><span class="vprice">CHF 333</span></div><div class="vrow"><span>Mama-CEO</span><span class="vprice">CHF 333</span></div><div class="vrow"><span>Digitale Produktwelt</span><span class="vprice">CHF 333</span></div><div class="vsum">Nur die drei Kurse: rund CHF 1&#39;000</div><div class="vextra">+ Live-Calls, ein ganzes Jahr &nbsp;·&nbsp; + PIA &nbsp;·&nbsp; + Community</div></div>
 </section>
 <section class="slide s-cream s-price">
-  <div class="pricebox"><span class="eyebrow">Nur für kurze Zeit</span><div class="bignum display">CHF 997</div><p class="sub dark">Sichere dir deine Mitgliedschaft für ein ganzes Jahr — Kurse, Live-Calls, PIA und Community. Nur für kurze Zeit zu diesem Preis.</p></div>
+  <div class="pricebox"><span class="eyebrow">Pioneer-Preis</span><div class="bignum display">CHF 997</div><p class="sub dark">Statt regulär CHF 1&#39;347. Deine Mitgliedschaft für ein ganzes Jahr — Kurse, Live-Calls, PIA und Community. Der Pioneer-Preis gilt 2 Tage nach dem Webinar.</p></div>
 </section>
 <section class="slide s-cream s-list">
   <span class="eyebrow">Damit es machbar ist</span>
@@ -233,9 +238,13 @@ body{margin:0;background:var(--navy);}
   <ul class="biglist"><li><span class="mk">✓</span><span>Bis zu 6 Raten — ohne Aufpreis</span></li><li><span class="mk">✓</span><span>Gekaufte Kurse werden voll angerechnet</span></li><li><span class="mk">✓</span><span>Keine Geld-zurück-Garantie — dafür Begleitung, bis es läuft</span></li></ul>
 </section>
 <section class="slide s-cream s-statement">
-  <span class="eyebrow">Nur für kurze Zeit</span>
-  <p class="display huge quote">Ein ganzes Jahr Begleitung — für 997.</p>
-  <p class="body center">Deine komplette Mitgliedschaft: alle Kurse, die Live-Calls, PIA und die Community, ein ganzes Jahr lang. Dieser Preis gilt nur für kurze Zeit — danach steigt er.</p>
+  <span class="eyebrow">Deine Pioneer-Frist</span>
+  <p class="display huge quote">Der Pioneer-Preis läuft 2 Tage nach dem Webinar.</p>
+  <p class="body center">Danach ist die Mum Business Academy nur noch zum regulären Preis von CHF 1&#39;347 zu haben — nicht mehr für 997. Kein Trick, einfach die Wahrheit.</p>
+</section>
+<section class="slide s-cream s-testi">
+  <span class="eyebrow">Frauen, die schon dabei sind</span>
+  <div class="tgrid"><div class="tcard"><p>Auf Insta läufts. Diese Woche ein Starterpaket verkauft — und das, obwohl ich krank war. Meine Follower sind sehr aktiv, wenn ich einen Call-to-Action mache.</p><span class="who">— Miriam K.</span></div><div class="tcard"><p>Mir wurde auf einmal klar, wie ich mein Business immer angeschaut habe — von mitten drin. Ich hatte das grosse Ganze nie richtig gesehen.</p><span class="who">— Teilnehmerin</span></div><div class="tcard"><p>Meine Storyviews sind gestiegen, der Austausch mit meiner Community intensiver — weil ich mich mehr gezeigt habe. Und ich bleibe definitiv dran.</p><span class="who">— Andrea</span></div></div>
 </section>
 <section class="slide s-cream s-statement">
   
@@ -246,7 +255,7 @@ body{margin:0;background:var(--navy);}
   <span class="eyebrow">Dein Moment</span>
   <h2 class="display lg">Wollen wir den Weg zusammen gehen?</h2>
   <div class="ctabtn">→ Dein Pioneer-Platz in der MBA</div>
-  <div class="title-foot">mumlifebalance.ch/mba</div>
+  <div class="title-foot">www.mumlifebalance.ch/mba-webinar</div>
 </section></div>
 <script>
 (function(){
