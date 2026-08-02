@@ -23,6 +23,20 @@ Julias Prinzip: eine Automation = ein Produkt · Käufer fliegen raus · Nicht-K
 2. **Ende für Nicht-Käufer:** Tag „Loop N+1 Start" setzen → nächster Loop startet.
 3. **Ausschluss beim Eintritt:** hat MBA (79) → sofort beenden (MBA-Käuferin = null Mails). Plus: nie das eigene Produkt pitchen.
 
+### ✅ Bestätigte Architektur-Entscheidungen (Patricia, 2026-08-02)
+- **D1 Drei-Türen (Downsell) fliegt raus** aus Loop 1 — die Einzel-Loops pro Signature-Kurs ersetzen ihn (fokussierter, bessere Conversion, keine Doppel-Pitches). Jeder Signature-Kurs (Expertin · IKM · DPW · Mama-CEO) kriegt eine eigene Loop.
+- **Ein konvergierender Motor, mehrere Eingänge:** 0€ + Minikurs → Loop 1 Start · Signature-Käuferin → direkt Loop 2 (Webinar) · MBA-Käuferin → nichts. Umsetzung über zusätzliche Trigger (Minikurs-/Signature-Kauf-Tags) + bestehende Ausschluss-Sprünge. **TODO:** Minikurs-/Signature-Kauf-Tag-Namen aus AC ziehen.
+- **Voice-Pflicht ALLER Mails: Reichweitenherz-Layer** — innerer Monolog in „…", harte Cuts, konkrete Mama-Szenen, Schweizer ss, kein KI-Sprech, Blacklist gewinnt (kein Nicht/Sondern!), keine erfundenen Zahlen, kein Julia-Name. Die 5 Webinar-Mails sind schon so gebaut; die 8 Loop-1-Mails sind noch im flacheren Ton → Upgrade offen.
+
+### 📦 Webinar-Loop-Mails gebaut (2026-08-02) — `mails/mail-W1..W5-*.html`
+| Datei | Betreff | CTA → |
+|---|---|---|
+| W1 Einladung | „Ich hab mich zwei Stunden vor die Kamera gesetzt" | Replay-Seite |
+| W2 Einladung | „Lohnt sich die knappe Stunde überhaupt?" | Replay-Seite |
+| W3 Einladung (letzte) | „Ich nehm das Video bald wieder runter" | Replay-Seite |
+| W4 Pitch | „Falls du beim Video gedacht hast: genau das will ich" | ThriveCart 997 |
+| W5 Pitch | „Wissen hast du eigentlich genug" | ThriveCart 997 |
+
 ### 🔧 Nächste Bau-Schritte (frische Sitzung)
 1. **Loop 2 Webinar bauen** (Trigger 89 · 3 Einladung + 2 Pitch → Replay-Seite/997-Checkout · Exit 79 · Ende → Tag 90).
 2. **Loop 3 (Expertin, 73) umhängen:** Trigger von 89 → 90. (Rest steht schon.)
