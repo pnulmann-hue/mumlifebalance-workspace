@@ -45,6 +45,20 @@ Alle als HTML in `mails/`, Header-Fallback drin, echte Umlaute, Schweizer ss, ke
 - **Loop 6 IKM (333):** `mail-L6-ikm-1..3` — ⚠️ **frisch getextet** (kein Doc-Original vorhanden); Inhalt = „Instagram bringt Kundinnen statt nur Likes" → **Patricia gegenchecken**, ob das den echten IKM-Kurs trifft.
 - **Loop 7 MBA-Re-Pitch:** `mail-L7-mba-repitch-1..3` (1→/mba/ · 2+3→ThriveCart 997)
 
+### 🔒 Ausschluss-Matrix (VERBINDLICH für JEDEN Loop — Patricia 2026-08-02)
+Jeder Loop startet mit einem **„Springen zu Ende"-Goal** (feuert laufend → Kauf mitten im Loop = sofort raus). Zwei Prinzipien ausnahmslos: **(1) MBA-Käuferin (79) = null Mails aus dem ganzen Funnel. (2) Wer den gepitchten Kurs schon hat, kriegt dessen Mails nie.**
+
+| Loop | Pitcht | „Springen zu Ende" wenn Tag |
+|---|---|---|
+| 2 Webinar | MBA | **79** |
+| 3 Expertin | Expertin 97 | **79** · 51 · 39 (IKM-Käuferin raus) |
+| 4 DPW | DPW 333 | **79** · 44 |
+| 5 Mama-CEO | Mama-CEO 333 | **79** · 71 |
+| 6 IKM | IKM 333 | **79** · 39 |
+| 7 Re-Pitch | MBA | **79** |
+
+Optionale Julia-Verfeinerung (Signature-Käuferin nur rauf zum Flagship): auf Loop 3–6 zusätzlich „ODER ist-Signature-Kundin (44 ODER 71 ODER 39) → Ende".
+
 ### 🔧 Nächste Bau-Schritte (frische Sitzung)
 1. **Loop 2 Webinar bauen** (Trigger 89 · 3 Einladung + 2 Pitch → Replay-Seite/997-Checkout · Exit 79 · Ende → Tag 90).
 2. **Loop 3 (Expertin, 73) umhängen:** Trigger von 89 → 90. (Rest steht schon.)
