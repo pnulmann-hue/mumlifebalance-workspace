@@ -4,20 +4,34 @@ tags: [funnel, mba, pitch-automation, intern]
 
 # 🔁 Loop 2–6 — Mail-Texte (Julias Endlos-Kette)
 
-## 📍 Die ganze Kette 1–6 auf einen Blick
+## 📍 Die FINALE Kette (bestätigt Patricia 2026-07-22) — Julia-Reihenfolge
 
-**Nummerierung = wie tatsächlich gebaut (Stand 2026-07-14).** Jeder Loop ist eine eigene Automation; am Ende übergibt sie per Tag an die nächste:
+Julias Prinzip: eine Automation = ein Produkt · Käufer fliegen raus · Nicht-Käufer fallen in die nächste · endlos. **Webinar direkt nach dem MBA-Pitch** (Julias „Automation 02"). Jeder Loop übergibt am Ende per Tag an den nächsten.
 
-| # | Loop | Mails | Wo | Status |
+| Loop | Automation | Produkt | Trigger-Tag | Status |
 |---|---|---|---|---|
-| **1** | Brücke + MBA-Track + Downsell | E1 · E2 · M1–M5 · D1 (8) | **Automation 72 „Automation 0€ Produkt"** | ✅ **LIVE GEBAUT** → [[sichtbarkeit-engine-FINAL]] |
-| **2** | Expertin statt Verkäuferin (97) | 3 | eigene Automation · Trigger **Tag 89** | Text fertig (unten) |
-| **3** | MBA-Webinar (Replay) | 5 | eigene Automation | Text fertig (unten) · Webinar noch aufzunehmen |
-| **4** | Digitale Produktwelt (333) | 3 | eigene Automation | Text fertig (unten) |
-| **5** | Mama-CEO (333) | 3 | eigene Automation | Text fertig (unten) |
-| **6** | MBA Re-Pitch | 3 | eigene Automation | Text fertig (unten) → danach Dauer-Newsletter |
+| **1** | **72** „Automation 0€ Produkt" | Brücke 39 → MBA-Track → Downsell | **87** | ✅ **LIVE** |
+| **2** | NEU | 🎥 Webinar → MBA **997** | **89** „Engine Pitch ohne Kauf" | zu bauen |
+| **3** | **73** (schon gebaut!) | Expertin **97** | **90** „Loop 3 Start" — Trigger **von 89 → 90 umhängen** | gebaut, umhängen |
+| **4** | prüfen: #56 od. neu | Digitale Produktwelt **333** | Tag „Loop 4 Start" (Ende Loop 3) | zu bauen/prüfen |
+| **5** | prüfen: #62 od. neu | Mama-CEO **333** | Tag „Loop 5 Start" (Ende Loop 4) | zu bauen/prüfen |
+| **6** | NEU | MBA-Re-Pitch | Tag „Loop 6 Start" (Ende Loop 5) | zu bauen |
+| → | Dauer-Newsletter + Launch-Pitches | — | — | — |
 
-> **Loop 1 liegt bewusst komplett in einer Automation**, weil „Läuft: Einmal" dort das Doppel-Problem schon löst. Ab Loop 2 ist jede Kette eine eigene Automation — dann greift Julias „schon in einer anderen Kette? → überspringen"-Regel.
+### Übergabe-Mechanik pro Loop (Julia)
+1. **Käufer-Exit** („Springen zu" ans Ende): hat sie das Produkt (oder MBA 79) → raus.
+2. **Ende für Nicht-Käufer:** Tag „Loop N+1 Start" setzen → nächster Loop startet.
+3. **Ausschluss beim Eintritt:** hat MBA (79) → sofort beenden (MBA-Käuferin = null Mails). Plus: nie das eigene Produkt pitchen.
+
+### 🔧 Nächste Bau-Schritte (frische Sitzung)
+1. **Loop 2 Webinar bauen** (Trigger 89 · 3 Einladung + 2 Pitch → Replay-Seite/997-Checkout · Exit 79 · Ende → Tag 90).
+2. **Loop 3 (Expertin, 73) umhängen:** Trigger von 89 → 90. (Rest steht schon.)
+3. **Loop 3 Ende:** Tag „Loop 4 Start" ergänzen.
+4. **Loop 4 DPW + Loop 5 Mama-CEO:** erst bestehende Funnels #56/#62 prüfen (Inhalt + Blacklist), dann einhängen ODER frisch bauen wie Expertin.
+5. **Loop 6 MBA-Re-Pitch** bauen → dann Newsletter.
+6. ~~AC-Live-Mails neu pasten (Header-Fallback + M5-Preisversion).~~ ✅ **erledigt 2026-08-02** — alle 8 Loop-1-Mails (E1·E2·M1–M5·D1) haben den Handy-Header-Fallback `background-color:#12828c` direkt in AC bekommen; M5 zusätzlich auf die neue Webinar-/997-Version + Betreff „So kommst du zum Pioneer-Preis der Academy" + Preheader „997 statt 1347 — über einen Weg." umgestellt.
+
+> Loop 1 liegt bewusst komplett in *einer* Automation (72), weil „Läuft: Einmal" das Doppel-Problem löst. Ab Loop 2 = eigene Automationen mit Übergabe-Tags.
 
 ---
 
