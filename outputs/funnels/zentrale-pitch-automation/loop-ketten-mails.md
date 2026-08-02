@@ -24,7 +24,7 @@ tags: [funnel, mba, pitch-automation, intern]
 > Fortsetzung von [[sichtbarkeit-engine-FINAL]]. Wer Loop 1 ohne Kauf durchlaufen hat, kriegt am Ende Tag `Engine Pitch ohne Kauf` (89) — der startet Loop 2. Danach läuft sie durch 3 → 4 → 5 → 6, je 1 Produkt, 3–5 Mails, 1–2 Tage Abstand.
 > **2 Schutzregeln pro Kette (Julia-Pflicht):** (1) Produkt-Kauf-Ziel → raus. (2) „schon in anderer Kette? → überspringen" (kein Doppel).
 > Blacklist-geprüft: keine Stakkato, kein „Kennst du das", kein „6-stellig", kein Mentorin-Name, keine erfundenen Zahlen, Schweizer ss, Kundenebene geschlechtsneutral.
-> Links: Expertin `…/expertin/` · DPW `…/digitale-produktwelt/` · Mama-CEO `…/mama-ceo/` · MBA `mumlifebalance.ch/mba/` · Webinar `[WEBINAR-REPLAY-LINK]` (nimmt Patricia noch auf).
+> Links: Expertin `…/expertin/` · DPW `…/digitale-produktwelt/` · Mama-CEO `…/mama-ceo/` · MBA `mumlifebalance.ch/mba/` · Webinar `https://mumlifebalance.ch/mba-webinar-replay` (nimmt Patricia noch auf).
 
 ---
 
@@ -33,6 +33,18 @@ tags: [funnel, mba, pitch-automation, intern]
 **Trigger:** Tag 89 „Engine Pitch ohne Kauf" · **Läuft:** Einmal
 **Exit-Ziel am Ende** („Springen zu", Position = *unter Position des Kontakts*):
 > Tag besteht **Expertin** (51) **ODER** Tag besteht **mba-kauf** (79) **ODER** Tag besteht **Instagram-Kundenmaschine** (39) → raus
+
+### ✅ Umgesetzt (2026-07-22)
+- **Loop 1 Bridge-Skip erweitert:** „Springen zu M1" feuert jetzt bei **Thema finden (41) ODER Expertin (51) ODER IKM (39) ODER mama-ceo-kauf (71) ODER digitale Produktwelt grosser Kurs (44)** → jede Kurs-Käuferin überspringt E1+E2.
+- **Loop 1 MBA-Exit:** Tag 79 am Ende → MBA-Käuferin kriegt aus Loop 1 nichts.
+- **Loop 2 Exit:** Expertin(51)/MBA(79)/IKM(39).
+- **Replay-Seite:** mumlifebalance.ch/mba-webinar-replay (Vimeo + Pioneer-997/48h-CTA).
+
+### ⏳ Offen (Review-Findings)
+- **Loop 3–6:** je Start-Check „hat MBA (79)? → beenden" (MBA-Käuferin = null Mails), plus produkt-eigener Exit.
+- **Preis-Konsistenz:** MBA-Salespage zeigt jetzt **1347** (Pioneer-Phase vorbei). → Loop-1-Mail **M5** verspricht aber „Pioneer 997 solange Runde läuft" = Widerspruch. Empfehlung: 997 wird zum **Webinar-Angebot** (48h nach Replay), M5 auf 1347 + Webinar-Weg umstellen.
+- **Pioneer-997-Checkout:** damit die 48h real sind, braucht die Replay-CTA einen **997-Checkout/ThriveCart-Coupon** (Salespage zeigt 1347). Link fehlt noch.
+- **D1-Downsell:** IKM-Käuferin sieht dort noch die IKM-Tür → owned-Tür ausblenden (Feinschliff).
 
 ### 🚨 Ausschluss-Regel (Patricia 2026-07-15) — gilt für JEDEN Loop
 Ein Loop darf nie an jemanden gehen, die den Inhalt schon hat:
@@ -105,7 +117,7 @@ Patricia
 ---
 
 ## LOOP 3 — MBA-Webinar (Replay) · 3 Einladung + 2 Pitch = 5 Mails
-**Exit:** Tag `mba-kauf` (79) · **Ende:** Tag → startet Loop 4. Webinar-Link = `[WEBINAR-REPLAY-LINK]` (sobald aufgenommen).
+**Exit:** Tag `mba-kauf` (79) · **Ende:** Tag → startet Loop 4. Webinar-Link = `https://mumlifebalance.ch/mba-webinar-replay` (sobald aufgenommen).
 
 ### Mail 3-1 · Einladung
 **Betreff A:** Ich hab das ganze System in ein Video gepackt
@@ -121,7 +133,7 @@ Wenn du eine ruhige halbe Stunde findest, schau es dir an. Es macht Klick.
 Liebe Grüsse
 Patricia
 
-**CTA-Button:** Video jetzt ansehen → [WEBINAR-REPLAY-LINK]
+**CTA-Button:** Video jetzt ansehen → https://mumlifebalance.ch/mba-webinar-replay
 
 ### Mail 3-2 · Einladung
 **Betreff A:** Die drei Dinge, die im Video Klick machen
@@ -141,7 +153,7 @@ Schau es dir an, solange du dran denkst.
 Liebe Grüsse
 Patricia
 
-**CTA-Button:** Zum Video → [WEBINAR-REPLAY-LINK]
+**CTA-Button:** Zum Video → https://mumlifebalance.ch/mba-webinar-replay
 
 ### Mail 3-3 · Einladung (letzte)
 **Betreff A:** Noch nicht geschaut?
@@ -157,7 +169,7 @@ Mach es dir kurz gemütlich und schau rein.
 Liebe Grüsse
 Patricia
 
-**CTA-Button:** Jetzt ansehen, bevor es weg ist → [WEBINAR-REPLAY-LINK]
+**CTA-Button:** Jetzt ansehen, bevor es weg ist → https://mumlifebalance.ch/mba-webinar-replay
 
 ### Mail 3-4 · Pitch
 **Betreff A:** Und wenn du sagst „genau das will ich"
