@@ -42,7 +42,7 @@ Alle als HTML in `mails/`, Header-Fallback drin, echte Umlaute, Schweizer ss, ke
 - **Loop 3 Expertin (97):** `mail-L3-expertin-1..3` (upgraded Voice → ersetzt die alten in Automation 73)
 - **Loop 4 DPW (333):** `mail-L4-dpw-1..3`
 - **Loop 5 Mama-CEO (333):** `mail-L5-mamaceo-1..3`
-- **Loop 6 IKM (333):** `mail-L6-ikm-1..3` — ⚠️ **frisch getextet** (kein Doc-Original vorhanden); Inhalt = „Instagram bringt Kundinnen statt nur Likes" → **Patricia gegenchecken**, ob das den echten IKM-Kurs trifft.
+- **Loop 6 IKM (333):** `mail-L6-ikm-1..3` — ✅ auf **echten Kursinhalt** umgeschrieben (Quelle: `outputs/produkte/claude-als-networkerin/downloads/instagram-kundenmaschine-wissensgrundlage.txt`): „warum bei dir, nicht bei Frau XY" · Schaufenster/grüne Schuhe · eigenes Thema statt Produkt-Pushen · Profil-Fundament.
 - **Loop 7 MBA-Re-Pitch:** `mail-L7-mba-repitch-1..3` (1→/mba/ · 2+3→ThriveCart 997)
 
 ### 🔒 Ausschluss-Matrix (VERBINDLICH für JEDEN Loop — Patricia 2026-08-02)
@@ -57,7 +57,9 @@ Jeder Loop startet mit einem **„Springen zu Ende"-Goal** (feuert laufend → K
 | 6 IKM | IKM 333 | **79** · 39 |
 | 7 Re-Pitch | MBA | **79** |
 
-Optionale Julia-Verfeinerung (Signature-Käuferin nur rauf zum Flagship): auf Loop 3–6 zusätzlich „ODER ist-Signature-Kundin (44 ODER 71 ODER 39) → Ende".
+**Entscheidung Patricia 2026-08-02: KEIN Signature-Skip.** Volle Kaskade — jede Nicht-MBA-Käuferin sieht alle Signatures (ausser dem eigenen), dann finaler MBA-Re-Pitch. So sieht sie, was in den anderen Kursen steckt, bevor Loop 7 nochmal die MBA anbietet. Es gilt NUR die Ausschluss-Matrix oben (MBA raus + eigenes Produkt raus).
+
+**Mehrwert-Prinzip (Patricia):** jede Mail führt mit Story/Tipp vor dem Pitch (nie nackter Verkauf); nach Loop 7 → Dauer-Newsletter für die laufende Beziehung.
 
 ### 🔧 Nächste Bau-Schritte (frische Sitzung)
 1. **Loop 2 Webinar bauen** (Trigger 89 · 3 Einladung + 2 Pitch → Replay-Seite/997-Checkout · Exit 79 · Ende → Tag 90).
