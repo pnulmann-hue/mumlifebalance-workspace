@@ -37,6 +37,14 @@ Julias Prinzip: eine Automation = ein Produkt · Käufer fliegen raus · Nicht-K
 | W4 Pitch | „Falls du beim Video gedacht hast: genau das will ich" | ThriveCart 997 |
 | W5 Pitch | „Wissen hast du eigentlich genug" | ThriveCart 997 |
 
+### 📦 Kaskaden-Mails gebaut (2026-08-02) — Reichweitenherz-Voice, blacklist-sauber
+Alle als HTML in `mails/`, Header-Fallback drin, echte Umlaute, Schweizer ss, kein Julia-Name, kein Nicht/Sondern:
+- **Loop 3 Expertin (97):** `mail-L3-expertin-1..3` (upgraded Voice → ersetzt die alten in Automation 73)
+- **Loop 4 DPW (333):** `mail-L4-dpw-1..3`
+- **Loop 5 Mama-CEO (333):** `mail-L5-mamaceo-1..3`
+- **Loop 6 IKM (333):** `mail-L6-ikm-1..3` — ⚠️ **frisch getextet** (kein Doc-Original vorhanden); Inhalt = „Instagram bringt Kundinnen statt nur Likes" → **Patricia gegenchecken**, ob das den echten IKM-Kurs trifft.
+- **Loop 7 MBA-Re-Pitch:** `mail-L7-mba-repitch-1..3` (1→/mba/ · 2+3→ThriveCart 997)
+
 ### 🔧 Nächste Bau-Schritte (frische Sitzung)
 1. **Loop 2 Webinar bauen** (Trigger 89 · 3 Einladung + 2 Pitch → Replay-Seite/997-Checkout · Exit 79 · Ende → Tag 90).
 2. **Loop 3 (Expertin, 73) umhängen:** Trigger von 89 → 90. (Rest steht schon.)
