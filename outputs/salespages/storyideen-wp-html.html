@@ -1,0 +1,317 @@
+<div class="si">…</div>
+    in einen "Custom HTML"-Block kopieren (CSS unter .si gescopt).
+  CHECKOUT: alle href="#CHECKOUT" durch deinen ThriveCart-Link ersetzen.
+  FOTOS: 2 Bilder liegen in img/ (patricia-story.jpg · patricia-about.jpg). Für WordPress
+    zur Mediathek hochladen und die zwei src="img/…"-Pfade durch die WP-URLs ersetzen.
+  TESTIMONIALS: der auskommentierte Block wird sichtbar, sobald echte Stimmen da sind.
+  HERO-BILD: rechts ist ein CSS-Cover-Mockup (kein Foto nötig).
+  ============================================================
+-->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+.si { --creme:#f1ecdd; --creme-soft:#faf6ec; --dunkelblau:#29556d; --orange:#dc822e; --orange-tief:#c06b1e; --petrol:#12828c; --petrol-dark:#0a5e66; --text:#0c1c30; --muted:#5a6b7a; --white:#fff; --border:rgba(41,85,109,.12); font-family:'Source Sans 3',system-ui,sans-serif; color:var(--text); line-height:1.65; }
+.si *,.si *::before,.si *::after { box-sizing:border-box; margin:0; padding:0; }
+.si p { margin:0 0 1.3rem; font-size:1.1rem; }
+.si strong { color:var(--dunkelblau); font-weight:700; }
+.si a { color:var(--petrol); }
+.si .hl { background:linear-gradient(transparent 55%, rgba(220,130,46,.30) 55%); padding:0 .12em; }
+.si__split { display:grid; grid-template-columns:1fr 1fr; gap:3.5rem; align-items:center; max-width:1080px; margin:0 auto; }
+.si__split img { width:100%; height:auto; border-radius:10px; box-shadow:0 18px 44px rgba(12,28,48,.18); display:block; }
+
+/* Typo */
+.si__eyebrow { font-size:.8rem; letter-spacing:.25em; text-transform:uppercase; color:var(--orange); font-weight:700; margin:0 0 1.2rem; }
+.si__h1 { font-family:'Philosopher',Georgia,serif; font-size:clamp(2.2rem,5vw,3.5rem); font-weight:700; line-height:1.15; margin:0 0 1.3rem; color:var(--dunkelblau); }
+.si__h2 { font-family:'Philosopher',Georgia,serif; font-size:clamp(2rem,4.5vw,3rem); font-weight:700; line-height:1.18; margin:0 0 1.3rem; color:var(--dunkelblau); }
+.si__h2--c { text-align:center; }
+.si__h2 em,.si__h1 em { font-style:italic; color:var(--orange); }
+.si__script { font-family:'Philosopher',serif; font-style:italic; font-size:.72em; display:block; color:var(--orange); font-weight:400; }
+.si__lead { font-size:clamp(1.1rem,2vw,1.35rem); line-height:1.55; max-width:720px; margin:0 auto 2rem; }
+
+/* Sections */
+.si__sec { padding:5.5rem 1.5rem; }
+.si__sec--white { background:var(--white); }
+.si__sec--creme { background:var(--creme); }
+.si__sec--soft { background:var(--creme-soft); }
+.si__sec--dark { background:var(--dunkelblau); color:var(--creme); }
+.si__sec--dark .si__h1,.si__sec--dark .si__h2 { color:var(--creme); }
+.si__sec--dark p { color:var(--creme); }
+.si__sec--dark strong { color:var(--orange); }
+.si__sec--grad { background:linear-gradient(180deg,var(--petrol) 0%,var(--petrol-dark) 55%,var(--dunkelblau) 100%); color:var(--creme); }
+.si__sec--grad .si__h2 { color:var(--creme); }
+.si__sec--grad .si__h2 em { color:var(--orange); }
+.si__sec--grad .si__script { color:var(--orange); }
+.si__sec--grad p { color:var(--creme); }
+.si__sec--grad .si__eyebrow { color:var(--creme); }
+.si__wrap { max-width:1080px; margin:0 auto; }
+.si__narrow { max-width:760px; margin:0 auto; }
+.si__center { max-width:820px; margin:0 auto; text-align:center; }
+
+/* Buttons */
+.si__btn { display:inline-block; padding:1.1rem 2.5rem; font-family:'Source Sans 3',sans-serif; font-size:1rem; font-weight:700; text-decoration:none; border-radius:999px; letter-spacing:.1em; text-transform:uppercase; transition:transform .2s,box-shadow .2s; box-shadow:0 6px 22px rgba(220,130,46,.28); cursor:pointer; }
+.si__btn--orange { background:var(--orange); color:var(--white); }
+.si__btn--orange:hover { transform:translateY(-2px); background:var(--orange-tief); color:#fff; }
+.si__btn--cream { background:var(--creme); color:var(--dunkelblau); box-shadow:0 6px 22px rgba(0,0,0,.18); }
+.si__btn--cream:hover { transform:translateY(-2px); color:var(--dunkelblau); }
+.si__btn-note { display:block; margin-top:.7rem; font-size:.82rem; letter-spacing:.04em; text-transform:none; opacity:.8; font-weight:400; }
+
+/* HERO */
+.si__hero { background:var(--creme); padding:4rem 1.5rem 0; }
+.si__hero-grid { max-width:1120px; margin:0 auto; display:grid; grid-template-columns:1.1fr .9fr; gap:3rem; align-items:center; }
+.si__hero-visual { justify-self:center; }
+.si__cover { width:270px; aspect-ratio:1080/1350; background:var(--petrol); border-radius:8px; box-shadow:0 30px 60px rgba(12,28,48,.32); transform:rotate(-3deg); padding:34px 26px; display:flex; flex-direction:column; justify-content:center; text-align:center; color:var(--creme); position:relative; }
+.si__cover-kick { font-family:'Philosopher',serif; text-transform:uppercase; letter-spacing:2px; font-size:11px; color:var(--orange); margin-bottom:20px; }
+.si__cover-num { font-family:'Philosopher',serif; font-size:66px; font-weight:700; color:var(--orange); line-height:1; }
+.si__cover-t { font-family:'Philosopher',serif; font-size:26px; font-weight:700; line-height:1.15; margin:6px 0 16px; }
+.si__cover-sub { font-size:13px; font-weight:300; border-top:1px solid rgba(241,236,221,.35); padding-top:14px; }
+.si__cover-foot { position:absolute; bottom:20px; left:0; right:0; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:rgba(241,236,221,.7); }
+
+/* MEGA + Trust */
+.si__mega-bar { background:var(--orange); padding:1.3rem 1rem; margin-top:3.5rem; }
+.si__mega { font-family:'Philosopher',serif; font-size:clamp(3rem,13vw,10rem); font-weight:700; line-height:.85; letter-spacing:-.03em; text-transform:uppercase; margin:0; color:var(--white); text-align:center; }
+.si__trust { background:var(--dunkelblau); color:var(--creme); padding:1.1rem 1.5rem; text-align:center; font-size:.95rem; font-weight:500; }
+.si__trust span { margin:0 .5rem; display:inline-block; }
+.si__trust .dot { color:var(--orange); }
+
+/* Loop */
+.si__loop { background:var(--petrol); color:var(--creme); padding:1.2rem 0; overflow:hidden; white-space:nowrap; border-top:3px solid var(--dunkelblau); border-bottom:3px solid var(--dunkelblau); }
+.si__loop-track { display:inline-block; animation:si-mq 26s linear infinite; font-family:'Philosopher',serif; font-size:clamp(1.1rem,2.4vw,1.6rem); font-weight:700; letter-spacing:.07em; text-transform:uppercase; }
+.si__loop-track span { margin:0 1.3rem; }
+.si__loop-track .dot { color:var(--orange); margin:0 .7rem; }
+@keyframes si-mq { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+/* Bausteine (nummerierte Rows) */
+.si__row { display:grid; grid-template-columns:90px 1fr; gap:2rem; padding:2.6rem 0; border-bottom:1px solid var(--border); align-items:start; }
+.si__row:last-child { border-bottom:none; }
+.si__row-num { font-family:'Philosopher',serif; font-size:clamp(3rem,6vw,4.6rem); font-weight:700; color:var(--orange); line-height:1; }
+.si__row h3 { font-family:'Philosopher',serif; font-size:clamp(1.5rem,3vw,2.1rem); color:var(--dunkelblau); margin:0 0 .7rem; line-height:1.2; }
+.si__row p { margin:0; font-size:1.08rem; }
+
+/* Bonus */
+.si__bonuses { display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; margin-top:2.5rem; }
+.si__bonus { background:var(--white); border-left:4px solid var(--orange); padding:1.9rem; border-radius:6px; box-shadow:0 4px 16px rgba(41,85,109,.06); }
+.si__bonus-eye { font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--petrol); font-weight:700; margin:0 0 .5rem; }
+.si__bonus h4 { font-family:'Philosopher',serif; font-size:1.4rem; color:var(--dunkelblau); margin:0 0 .7rem; }
+.si__bonus p { margin:0; font-size:1rem; }
+
+/* Preis */
+.si__price-card { background:var(--white); border:2px solid var(--orange); border-radius:16px; padding:3rem 2.4rem; max-width:460px; margin:2.5rem auto 0; text-align:center; box-shadow:0 16px 40px rgba(220,130,46,.16); }
+.si__price-amount { font-family:'Philosopher',serif; font-size:4.6rem; font-weight:700; color:var(--dunkelblau); line-height:1; margin:.4rem 0; }
+.si__price-amount span { font-size:1.6rem; vertical-align:top; }
+.si__price-note { color:var(--muted); margin:0 0 1.6rem; font-size:1rem; }
+
+/* FAQ */
+.si__faq details { border-bottom:1px solid var(--border); padding:1.5rem 0; }
+.si__faq summary { font-family:'Philosopher',serif; font-size:1.2rem; font-weight:700; cursor:pointer; color:var(--dunkelblau); list-style:none; position:relative; padding-right:2.5rem; }
+.si__faq summary::after { content:"+"; position:absolute; right:0; top:-6px; font-size:1.8rem; color:var(--orange); }
+.si__faq details[open] summary { color:var(--orange); }
+.si__faq details[open] summary::after { content:"−"; }
+.si__faq summary::-webkit-details-marker { display:none; }
+.si__faq p { margin:.9rem 0 0; font-size:1.05rem; line-height:1.7; }
+.si__faq .honest { background:var(--creme); border-radius:10px; padding:1.5rem 1.6rem; margin-top:1.4rem; }
+.si__faq .honest strong { color:var(--orange); }
+
+/* Über mich */
+.si__stats { display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; margin:2rem 0; padding:1.8rem; background:var(--creme); border-radius:12px; text-align:center; }
+.si__stat-num { font-family:'Philosopher',serif; font-size:2.4rem; font-weight:700; color:var(--orange); line-height:1; }
+.si__stat-lab { font-size:.9rem; color:var(--muted); margin-top:.3rem; }
+
+/* Final */
+.si__final { text-align:center; }
+.si__sig { font-family:'Philosopher',serif; font-style:italic; font-size:1.2rem; color:var(--orange); margin-top:2rem; }
+
+/* CTA center */
+.si__cta-c { text-align:center; margin-top:3rem; }
+
+@media (max-width:820px){
+  .si__hero-grid { grid-template-columns:1fr; gap:2.5rem; text-align:center; }
+  .si__hero-grid .si__eyebrow { text-align:center; }
+  .si__row { grid-template-columns:1fr; gap:.6rem; }
+  .si__bonuses { grid-template-columns:1fr; }
+  .si__stats { grid-template-columns:1fr 1fr; }
+  .si__sec { padding:4rem 1.2rem; }
+  .si__hero { padding:3rem 1.2rem 0; }
+}
+</style>
+</head>
+<body>
+
+<div class="si">
+
+  <!-- HERO -->
+  <section class="si__hero">
+    <div class="si__hero-grid">
+      <div>
+        <p class="si__eyebrow">Workbook für Networkerinnen</p>
+        <h1 class="si__h1">Endlich wissen, was du posten sollst — <span class="hl">ohne ständig dein Produkt</span> in den Vordergrund zu stellen.</h1>
+        <p class="si__lead" style="margin-left:0;">90 fertige Storyideen für Networkerinnen, die sichtbar werden wollen, ohne ihre Freundinnen zu vergraulen — und ohne jeden Morgen ratlos vor der Kamera zu sitzen.</p>
+        <a href="#CHECKOUT" class="si__btn si__btn--orange">Ja, ich will die 90 Ideen · 19 CHF
+          <span class="si__btn-note">Sofort-Download · direkt loslegen</span>
+        </a>
+      </div>
+      <div class="si__hero-visual">
+        <div class="si__cover">
+          <div class="si__cover-kick">Dein Ideen-Vorrat für Stories</div>
+          <div class="si__cover-num">90</div>
+          <div class="si__cover-t">Storyideen für Networkerinnen</div>
+          <div class="si__cover-sub">Sichtbar werden, ohne ständig dein Produkt zu pushen.</div>
+          <div class="si__cover-foot">Workbook zum Ausfüllen</div>
+        </div>
+      </div>
+    </div>
+    <div class="si__mega-bar"><p class="si__mega">Storyideen</p></div>
+    <div class="si__trust">
+      <span>🎯 90 Ideen</span><span class="dot">·</span>
+      <span>🗂 8 Anlässe</span><span class="dot">·</span>
+      <span>🧭 Story-Kompass</span><span class="dot">·</span>
+      <span>✍️ zum Ausfüllen</span><span class="dot">·</span>
+      <span>⚡ Sofort-Download</span>
+    </div>
+  </section>
+
+  <!-- LOOP -->
+  <div class="si__loop" aria-hidden="true"><div class="si__loop-track"><span>90 Ideen</span><span class="dot">●</span><span>8 Anlässe</span><span class="dot">●</span><span>Story-Kompass</span><span class="dot">●</span><span>Brücken-Baukasten</span><span class="dot">●</span><span>Nur 19 CHF</span><span class="dot">●</span><span>90 Ideen</span><span class="dot">●</span><span>8 Anlässe</span><span class="dot">●</span><span>Story-Kompass</span><span class="dot">●</span><span>Brücken-Baukasten</span><span class="dot">●</span><span>Nur 19 CHF</span><span class="dot">●</span></div></div>
+
+  <!-- PAIN -->
+  <section class="si__sec si__sec--grad">
+    <div class="si__center">
+      <p class="si__eyebrow">Kennst du das?</p>
+      <h2 class="si__h2 si__h2--c">Du postest und postest — <em>und trotzdem</em><span class="si__script">reagiert einfach niemand.</span></h2>
+    </div>
+    <div class="si__narrow" style="margin-top:2.5rem;">
+      <p>Du sitzt am Sonntagabend auf dem Sofa und denkst dir, dass du diese Woche unbedingt regelmässiger posten solltest — und schon beim Gedanken daran wird dir mulmig, weil du gar nicht weisst, was du eigentlich erzählen sollst ausser dem nächsten Produktbild.</p>
+      <p>Also postest du doch wieder ein Foto von deinem Produkt, wartest den ganzen Tag, und am Ende sind es drei Likes — davon einer von deiner Mama. Und beim Treffen mit den Freundinnen erzählst du lieber gar nicht mehr, was du gerade machst, weil du dieses kurze, betretene Schweigen kennst, sobald das Thema aufkommt.</p>
+      <p>Tief drin weisst du: Das Problem ist nicht, dass du zu wenig über dein Produkt sprichst. Es ist, dass du fast <strong>nur</strong> darüber sprichst — und dabei komplett untergeht, wer du eigentlich bist und wobei du wirklich helfen kannst.</p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="si__sec si__sec--white">
+    <div class="si__split">
+      <div>
+        <p class="si__eyebrow">Warum ich das kenne</p>
+        <h2 class="si__h2">Ich hab genau da gestanden, <em>wo du jetzt vielleicht stehst.</em></h2>
+        <p>Ich hab jahrelang mein Produkt in den Vordergrund gestellt und mich ehrlich gewundert, warum niemand kauft. Ich hab gepostet und gepostet, brav die Produktbilder, die schönen Sprüche — und es kam einfach nichts zurück.</p>
+        <p>Der Moment, in dem sich alles gedreht hat, war unspektakulär: Ich hab aufgehört, über mein Produkt zu reden, und angefangen, über mein Thema und über mich zu sprechen. Und plötzlich haben mir die richtigen Menschen zugehört — und irgendwann von ganz allein gefragt, was ich denn eigentlich anbiete.</p>
+        <p>Genau diese Ideen hab ich über die Jahre gesammelt und für Networkerinnen aufbereitet. Damit du nicht erst jahrelang rumprobieren musst wie ich, sondern einfach loslegen kannst.</p>
+      </div>
+      <div><img src="https://mumlifebalance.ch/wp-content/uploads/2026/08/patricia-story.jpg" alt="Patricia Nulmann, Mentorin für Networkerinnen"></div>
+    </div>
+  </section>
+
+  <!-- WAS DRIN IST -->
+  <section class="si__sec si__sec--soft">
+    <div class="si__wrap">
+      <div style="text-align:center;">
+        <p class="si__eyebrow">Das steckt drin</p>
+        <h2 class="si__h2 si__h2--c">Kein PDF zum Wegklicken — <span class="hl">dein Nachschlagewerk</span> für jeden Tag</h2>
+      </div>
+      <div style="margin-top:2.5rem;">
+        <div class="si__row"><div class="si__row-num">01</div><div><h3>90 fertige Storyideen</h3><p>In 8 Anlässen — von Alltags-Momenten über dein Warum und dein Thema bis zur dezenten Einladung. Jede mit konkretem Impuls, einem Beispiel aus der Network-Welt und Platz für deine eigene Version.</p></div></div>
+        <div class="si__row"><div class="si__row-num">02</div><div><h3>Übung „Finde dein Thema"</h3><p>Der wichtigste Schritt: endlich festlegen, wobei du eigentlich hilfst. Denn ohne Thema bleibt nur das Produkt zum Reden übrig.</p></div></div>
+        <div class="si__row"><div class="si__row-num">03</div><div><h3>Dein Story-Kompass</h3><p>Die einfache Entscheidungshilfe, welche Idee zu welchem Tag passt und wie du deine Story-Woche zusammenstellst. Damit du nie ratlos davorstehst.</p></div></div>
+        <div class="si__row"><div class="si__row-num">04</div><div><h3>Der Brücken-Baukasten</h3><p>Fertige Sätze, mit denen du am Schluss ganz natürlich zu deinem Freebie oder Angebot überleitest — ohne dass es aufdringlich wirkt.</p></div></div>
+        <div class="si__row"><div class="si__row-num">05</div><div><h3>Dein Ideen-Speicher</h3><p>Damit jede spontane Idee einen Platz hat und dir nie wieder unterwegs verloren geht.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSFORMATION -->
+  <section class="si__sec si__sec--white">
+    <div class="si__center">
+      <p class="si__eyebrow">Stell dir vor</p>
+      <h2 class="si__h2 si__h2--c">Wie sich deine Woche <em>bald anfühlt</em></h2>
+    </div>
+    <div class="si__narrow" style="margin-top:2rem;">
+      <p>Du stehst morgens auf, schaust kurz ins Workbook, und statt Panik spürst du fast so etwas wie Vorfreude — weil du sofort eine Idee findest, die genau zu deinem Tag passt. Du erzählst etwas Echtes, ganz nebenbei, und es fühlt sich kein bisschen nach Verkaufen an.</p>
+      <p>Und dann passiert etwas, das dir vorher gefehlt hat: Die Leute reagieren. Da kommt eine Antwort auf deine Frage, jemand speichert deinen Tipp, eine Frau schreibt dir in die DMs, dass sie sich total wiedererkennt. Deine Freundinnen fragen auf einmal von selbst, was du da eigentlich machst — <span class="hl">weil du nicht mehr die mit dem Produkt bist, sondern die mit dem Thema.</span></p>
+    </div>
+    <div class="si__cta-c"><a href="#CHECKOUT" class="si__btn si__btn--orange">Ja, so will ich posten · 19 CHF</a></div>
+  </section>
+
+  <!-- BONUS -->
+  <section class="si__sec si__sec--creme">
+    <div class="si__wrap">
+      <div style="text-align:center;">
+        <p class="si__eyebrow">Nicht nur Ideen — ein System</p>
+        <h2 class="si__h2 si__h2--c">Zwei Dinge machen aus Ideen echtes Handwerk</h2>
+      </div>
+      <div class="si__bonuses">
+        <div class="si__bonus">
+          <p class="si__bonus-eye">🧭 dabei</p>
+          <h4>Der Story-Kompass</h4>
+          <p>Nimmt dir jeden Morgen die Entscheidung ab. Du schaust auf deinen Tag und weisst sofort, wo du greifst. So wird aus „90 Ideen" ein Werkzeug, das du wirklich benutzt.</p>
+        </div>
+        <div class="si__bonus">
+          <p class="si__bonus-eye">🌉 dabei</p>
+          <h4>Der Brücken-Baukasten</h4>
+          <p>Der Teil, an dem die meisten scheitern: aus einer schönen Story tatsächlich eine Anfrage machen. Mit den fertigen Brücken-Sätzen verkaufst du nebenbei, ohne dich unwohl zu fühlen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (einblenden, sobald echte Stimmen da sind)
+  <section class="si__sec si__sec--white">
+    <div class="si__wrap" style="text-align:center;">
+      <p class="si__eyebrow">Das sagen die ersten Frauen</p>
+      <h2 class="si__h2 si__h2--c">…</h2>
+      [ECHTE Screenshots / Zitate — kein erfundenes Zitat verwenden]
+    </div>
+  </section>
+  -->
+
+  <!-- PREIS -->
+  <section class="si__sec si__sec--grad">
+    <div class="si__center">
+      <p class="si__eyebrow">Dein Preis</p>
+      <h2 class="si__h2 si__h2--c">Für den Preis eines <em>Mittagessens auswärts</em></h2>
+      <p style="max-width:560px; margin:0 auto;">Nur dass dich dieses hier nicht eine Stunde satt macht, sondern dir Woche für Woche die Worte gibt, mit denen du sichtbar wirst.</p>
+      <div class="si__price-card">
+        <p class="si__bonus-eye" style="color:var(--petrol);">Sofort-Download</p>
+        <div class="si__price-amount">19<span> CHF</span></div>
+        <p class="si__price-note">Einmalig · dein Vorrat für Monate</p>
+        <a href="#CHECKOUT" class="si__btn si__btn--orange" style="width:100%;">Ja, ich hol mir die 90 Ideen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="si__sec si__sec--soft">
+    <div class="si__narrow si__faq">
+      <div style="text-align:center;">
+        <p class="si__eyebrow">Bevor du dich entscheidest</p>
+        <h2 class="si__h2 si__h2--c" style="margin-bottom:2rem;">Häufige Fragen</h2>
+      </div>
+      <details><summary>19 CHF für ein PDF — lohnt sich das?</summary><p>Es ist kein PDF zum einmal Durchlesen, sondern ein Vorrat, aus dem du monatelang schöpfst. Wenn dir eine einzige Idee daraus eine echte Anfrage bringt, hat es sich schon mehrfach bezahlt gemacht. Und der eigentliche Wert ist die Zeit, die du dir sparst.</p></details>
+      <details><summary>Ich hab schon so viele Workbooks, die ich nie nutze.</summary><p>Kenn ich. Genau deshalb ist der Story-Kompass dabei — damit du nicht überfordert vor 90 Ideen stehst, sondern in Sekunden weisst, welche du heute nimmst. Es ist zum Benutzen gemacht, nicht zum Ablegen.</p></details>
+      <details><summary>Ich hab so wenig Zeit.</summary><p>Gerade dann. Das Workbook nimmt dir genau den Teil ab, der am meisten Zeit frisst: das Grübeln, was du überhaupt posten sollst. Eine Idee raussuchen dauert eine Minute — und du hast sogar schon ein Beispiel als Vorlage.</p></details>
+      <details><summary>Funktioniert das auch für mein Network / mein Produkt?</summary><p>Ja, denn es geht bewusst nicht um dein Produkt, sondern um dich und dein Thema. Die Ideen funktionieren unabhängig davon, was du vertreibst — ob Öle, Kosmetik, Nahrungsergänzung oder etwas ganz anderes.</p></details>
+      <div class="honest"><p><strong>Ganz ehrlich, damit du weisst, worauf du dich einlässt:</strong> Das Workbook nimmt dir das Posten nicht ab — du musst dich schon selbst zeigen und die Ideen umsetzen. Und es ist kein Reichweiten-Trick über Nacht. Es ist der ehrliche, machbare Weg, sichtbar zu werden, ohne dich zu verstellen.</p></div>
+    </div>
+  </section>
+
+  <!-- ÜBER MICH -->
+  <section class="si__sec si__sec--creme">
+    <div class="si__split">
+      <div><img src="https://mumlifebalance.ch/wp-content/uploads/2026/08/patricia-about.jpg" alt="Patricia Nulmann, vierfache Mama und Networkerin"></div>
+      <div>
+        <p class="si__eyebrow">Über mich</p>
+        <h2 class="si__h2">Hey, ich bin Patricia.</h2>
+        <p>Vierfache Mama und selbst Networkerin — und ich hab dieses Business auf die harte Tour gelernt. Mein erstes Network hab ich nach Jahren aufgegeben, weil ich alles falsch gemacht hab, was man falsch machen kann: nur das Produkt in den Vordergrund gestellt und mich gewundert, warum es nicht läuft.</p>
+        <p>Heute baue ich mein Business anders auf — über mein Thema, über echte Sichtbarkeit, neben vier Kindern und mit ein paar Stunden am Tag. Kein Hochglanz, keine Bühne am Strand, sondern ehrliche Mama-Realität. Genau dieses Wissen gebe ich in diesem Workbook an dich weiter — damit du dir die Jahre sparst, die ich gebraucht hab.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="si__sec si__sec--dark si__final">
+    <div class="si__center">
+      <h2 class="si__h1">Du kannst nächste Woche wieder ratlos vor der Kamera stehen — oder heute anfangen.</h2>
+      <p class="si__lead" style="color:var(--creme);">Jeder Tag, an dem du weiter nur Produktbilder postest, die niemand speichert, ist ein Tag, an dem dich die richtigen Menschen nicht kennenlernen. Für 19 CHF kannst du das heute ändern.</p>
+      <a href="#CHECKOUT" class="si__btn si__btn--cream">Ja, ich starte jetzt · 19 CHF</a>
+      <p class="si__sig">„Funktionieren war gestern."<br><span style="font-size:.85rem; opacity:.7;">— Patricia</span></p>
+    </div>
+  </section>
+
+</div>
