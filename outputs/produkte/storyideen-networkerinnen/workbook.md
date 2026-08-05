@@ -81,7 +81,42 @@ Gute Stories über eine Woche gedacht bedienen immer drei Anlässe. Wenn einer f
 
 Die meisten machen den Fehler, fast nur bei „Einladung" zu hängen — und wundern sich, dass keine Nähe entsteht. Dreh das Verhältnis um: Der grösste Teil deiner Stories baut Nähe und Mehrwert. Die Einladung darf dann selbstverständlich dazwischen liegen, ohne Druck.
 
-Die 7 Ideen-Kapitel auf den nächsten Seiten sind genau nach diesem Prinzip aufgebaut. Du erkennst am Kapitel-Symbol, welchen Anlass es bedient.
+Die 8 Ideen-Kapitel auf den nächsten Seiten sind genau nach diesem Prinzip aufgebaut. Du erkennst am Kapitel-Symbol, welchen Anlass es bedient: **❤️ Nähe · 💡 Mehrwert · 📨 Einladung**.
+
+---
+
+## Dein Story-Kompass — wann nimmst du welche Idee?
+
+90 Ideen sind viel — damit du morgens nicht ratlos davorstehst, hier zwei einfache Wegweiser. Der erste beantwortet „welche Idee heute?", der zweite „wie verteile ich das über die Woche?".
+
+### 1. Welche Idee passt zu heute?
+
+Schau, wie dein Tag oder deine Stimmung gerade ist — und greif ins passende Kapitel.
+
+| Wenn du heute … | … dann nimm eine Idee aus |
+|---|---|
+| einen Moment erlebt hast (Kind, Kaffee, Chaos, ein Foto) | Kapitel 1 · 6 — Alltag & hinter den Kulissen |
+| Lust hast, etwas beizubringen | Kapitel 3 — Mehrwert zu deinem Thema |
+| eine Meinung loswerden willst | Kapitel 4 — Haltung |
+| Reichweite & Reaktionen willst | Kapitel 5 — Fragen & Umfragen |
+| über dich & deinen Weg erzählen magst | Kapitel 2 — deine Geschichte |
+| gerade ein Angebot oder freie Plätze hast | Kapitel 7 — die Einladung (+ Brücke) |
+| platt bist und kaum Zeit hast | Kapitel 8 — die kleinen Extras (1 Slide) |
+
+### 2. Wie verteilst du das über die Woche?
+
+Die wichtigste Regel: **Das Verhältnis muss über die Woche stimmen, nicht an einem einzelnen Tag.** Du musst nicht jeden Tag alles abdecken. Grob als Faustregel: viel Nähe, ordentlich Mehrwert, dazwischen ab und zu eine Einladung mit Brücke. So ein Rhythmus könnte aussehen:
+
+| Tag | Anlass | Woraus? |
+|---|---|---|
+| Montag | 💡 Mehrwert (+ Brücke zum Freebie) | Kapitel 3 |
+| Dienstag | ❤️ Nähe | Kapitel 1 |
+| Mittwoch | ❤️ Verbindung | Kapitel 5 |
+| Donnerstag | 💡 Haltung | Kapitel 4 |
+| Freitag | ❤️ Hinter den Kulissen (+ evtl. Einladung) | Kapitel 6 · 7 |
+| Wochenende | ❤️ Persönlich / kleine Extras | Kapitel 2 · 8 |
+
+Nimm das als Startpunkt, nicht als Gesetz. Sobald du ein Gefühl dafür hast, machst du deinen eigenen Rhythmus daraus.
 
 ---
 ---
@@ -659,10 +694,14 @@ Immer, wenn dir zwischendurch eine Idee kommt — im Auto, unter der Dusche, bei
 
 ## Wie es jetzt weitergeht
 
-Du hast jetzt einen Vorrat, der dir nie wieder ausgeht. Und wenn du bereit bist, den entscheidenden Schritt weiterzugehen, dann ist das hier dein Weg.
+Du hast jetzt einen Vorrat an Ideen, der dir nie wieder ausgeht. Aber Ideen allein bringen noch keine Kundinnen. Wenn du wirklich sichtbar werden und aus deinen Stories echte Anfragen machen willst, hab ich zwei Wege für dich — je nachdem, wie weit du gehen willst.
 
-**➜ Dein nächster Schritt: „Finde dein Thema als Network-Mama" (39 CHF)**
-Übung 1 hat den ersten Funken gezündet — hier machst du daraus ein glasklares Thema. Das eine, mit dem du dich von allen anderen in deinem Network abhebst, sodass die richtigen Menschen sofort verstehen, warum sie zu dir kommen. Kein Rätselraten mehr, worüber du eigentlich sprichst. Genau der Punkt 2, an dem die meisten stecken bleiben.
+**➜ Wenn du's wirklich willst: die Instagram-Kundenmaschine (333 CHF)**
+Hier lernst du das komplette System, mit dem aus Followern echte Kundinnen werden: dein glasklares Thema, deine Positionierung, deine Instagram-Strategie und dein eigenes Freebie, das dir wie von selbst Kontakte bringt. Kein Rätselraten mehr, warum niemand kauft — sondern ein Weg, den du Schritt für Schritt gehst. Genau das, worauf dieses Workbook Lust gemacht hat, in voller Tiefe.
+👉 mumlifebalance.thrivecart.com/instagram-kundenmaschine
+
+**➜ Der sanfte Einstieg: „Finde dein Thema als Network-Mama" (39 CHF)**
+Noch nicht bereit für den ganzen Weg? Dann starte mit dem ersten Baustein. Übung 1 hat den Funken gezündet — hier machst du daraus dein glasklares Thema, mit dem du dich abhebst. Klein anfangen ist auch anfangen.
 👉 mumlifebalance.thrivecart.com/thema-finden
 
 ---
