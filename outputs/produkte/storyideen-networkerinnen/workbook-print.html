@@ -163,6 +163,48 @@ table.speicher .sp-idea { width: 55%; }
 .outro h2 { font-size: 26pt; color: var(--petrol); margin-bottom: 8mm; }
 .outro p { max-width: 150mm; margin: 0 auto 5mm; font-size: 12pt; }
 .outro .big { font-size: 15pt; color: var(--orange); font-family: 'Philosopher', serif; font-style: italic; }
+
+/* ---------- BRIDGE (Von der Story zum Ja) ---------- */
+.bridge-steps { counter-reset: bstep; margin: 5mm 0; }
+.bridge-step { display: flex; gap: 4mm; margin-bottom: 4mm; page-break-inside: avoid; }
+.bridge-badge { flex: 0 0 auto; width: 9mm; height: 9mm; border-radius: 50%; background: var(--teal); color: #fff; font-family: 'Philosopher', serif; font-weight: 700; text-align: center; line-height: 9mm; font-size: 12pt; }
+.bridge-step .bs-body { flex: 1; }
+.bridge-step h3 { font-size: 12.5pt; color: var(--teal); margin-bottom: 1mm; }
+.reveal { background: var(--creme); border-left: 5px solid var(--orange); border-radius: 0 3mm 3mm 0; padding: 6mm 7mm; margin-top: 6mm; font-size: 11.5pt; }
+.reveal strong { color: var(--orange); }
+
+/* ---------- NEXT STEPS / OFFERS ---------- */
+.next-steps { page-break-before: always; }
+.next-steps h2 { font-size: 22pt; color: var(--petrol); margin-bottom: 3mm; }
+.next-steps > p { margin-bottom: 6mm; }
+.offer-card { border-radius: 4mm; padding: 7mm 7mm 6mm; margin-bottom: 6mm; page-break-inside: avoid; }
+.offer-primary { background: var(--petrol); color: var(--creme); }
+.offer-far { background: #faf8f1; border: 1.5px solid #d8d2c0; color: var(--ink); }
+.offer-tag { display: inline-block; font-size: 8.5pt; letter-spacing: 2px; text-transform: uppercase; font-family: 'Philosopher', serif; padding: 1.5mm 4mm; border-radius: 10mm; margin-bottom: 3mm; }
+.offer-primary .offer-tag { background: var(--orange); color: #fff; }
+.offer-far .offer-tag { background: var(--petrol); color: var(--creme); }
+.offer-card h3 { font-family: 'Philosopher', serif; font-size: 19pt; line-height: 1.15; margin-bottom: 2mm; }
+.offer-primary h3 { color: #fff; }
+.offer-far h3 { color: var(--teal); }
+.offer-price { font-family: 'Philosopher', serif; font-size: 13pt; margin-bottom: 3mm; }
+.offer-primary .offer-price { color: #ffe4c4; }
+.offer-far .offer-price { color: var(--orange); }
+.offer-card p { font-size: 10.8pt; margin-bottom: 3mm; line-height: 1.5; }
+.offer-link { font-family: 'Philosopher', serif; font-size: 11pt; word-break: break-all; }
+.offer-primary .offer-link { color: #fff; }
+.offer-primary .offer-link strong { color: var(--orange); }
+.offer-far .offer-link strong { color: var(--petrol); }
+
+/* ---------- BRIDGE KIT ---------- */
+.formula { background: var(--teal); color: var(--creme); border-radius: 3mm; padding: 5mm 6mm; margin: 4mm 0 5mm; text-align: center; font-family: 'Philosopher', serif; font-size: 12.5pt; }
+.kit-h { font-size: 13.5pt; color: var(--orange); margin: 7mm 0 3mm; font-family: 'Philosopher', serif; }
+.bridge-kit { list-style: none; margin: 0 0 4mm; }
+.bridge-kit li { background: var(--creme); border-left: 4px solid var(--orange); border-radius: 0 2mm 2mm 0; padding: 3.5mm 5mm; margin-bottom: 2.5mm; font-size: 10.8pt; page-break-inside: avoid; }
+.bridge-kit li em { font-style: normal; font-weight: 700; color: var(--teal); }
+.bridge-ex { border: 1px solid #e0d9c6; border-radius: 2mm; padding: 4mm 5mm; margin-bottom: 3mm; font-size: 10.5pt; page-break-inside: avoid; line-height: 1.5; }
+.bridge-ex strong { color: var(--petrol); }
+.bridge-ex em { color: var(--orange); font-style: normal; font-weight: 700; }
+.fill-block { margin: 5mm 0; }
 </style>
 </head>
 <body>
@@ -1146,12 +1188,60 @@ table.speicher .sp-idea { width: 55%; }
 </div>
 
 <div class="bonus">
+  <h2>Die Story-Brücke — so verkaufst du nebenbei aus jeder Story</h2>
+  <p>Jetzt kommt der Trick, den die Frauen draufhaben, die mit Stories verkaufen, ohne dass es jemanden nervt: Sie erzählen eine ganz normale Story — irgendeine aus diesem Workbook — und hängen am Schluss eine kleine Brücke dran. Einen Satz, der überleitet, und einen klaren nächsten Schritt. Nicht bei jeder Story, aber bei den meisten. So wird aus „nur erzählen" ganz natürlich „nebenbei verkaufen".</p>
+
+  <div class="formula">Deine Story &nbsp;→&nbsp; ein Brückensatz &nbsp;→&nbsp; ein klarer nächster Schritt (mit Link oder Keyword)</div>
+
+  <p>Und wohin führt die Brücke? Am liebsten <strong>zu deinem kostenlosen Freebie</strong>. Warum nicht gleich zum Produkt? Weil „gratis" die kleinste Hürde ist — dein Gegenüber sagt viel eher Ja, du gewinnst einen Kontakt, und das Vertrauen wächst weiter, bis irgendwann von allein gekauft wird. Ein Freebie ist deine sanfteste Brücke. Hast du noch keins, führt die Brücke eben zu einem Gespräch in den DMs — auch das funktioniert.</p>
+
+  <h3 class="kit-h">Dein Brücken-Baukasten — zum Freebie</h3>
+  <ul class="bridge-kit">
+    <li>„Falls du das kennst — ich hab dir genau dazu was gemacht. Kommentier <em>[WORT]</em> und ich schick's dir."</li>
+    <li>„Genau darum geht's in meinem kostenlosen <em>[Freebie]</em>. Der Link ist in meiner Bio."</li>
+    <li>„Wenn du da grad auch stehst: Ich hab was, das dir den ersten Schritt abnimmt. Schreib mir <em>[WORT]</em>."</li>
+    <li>„Das ist übrigens der Grund, warum ich <em>[Freebie]</em> gemacht habe. Hol's dir gratis über den Link in meiner Bio."</li>
+  </ul>
+
+  <h3 class="kit-h">… und wenn die Story warm genug ist — zum Angebot</h3>
+  <ul class="bridge-kit">
+    <li>„Wenn du das wirklich angehen willst, begleite ich genau dabei. Schreib mir <em>[WORT]</em>, dann erzähl ich dir mehr."</li>
+    <li>„Genau dafür gibt's <em>[dein Angebot]</em>. Alle Infos über den Link in meiner Bio."</li>
+  </ul>
+
+  <div class="fill-block">
+    <span class="fill-label">Meine Brücke zu meinem Freebie</span>
+    <div class="fill-line"></div><div class="fill-line"></div>
+  </div>
+
+  <h3 class="kit-h">So sieht das in echt aus</h3>
+  <div class="bridge-ex"><strong>Story „Ein ganz normaler Morgen":</strong> du erzählst von deiner ruhigen halben Stunde mit Kaffee am Küchentisch. <em>Brücke:</em> „Diese Ruhe am Morgen ist Gold wert. Wenn du auch mehr davon in deinen Tag willst — kommentier RUHE, ich schick dir meine kostenlose Mini-Anleitung."</div>
+  <div class="bridge-ex"><strong>Story „Der grösste Fehler, den ich sehe":</strong> du erzählst den typischen Fehler bei deinem Thema. <em>Brücke:</em> „Genau diesen Fehler nehm ich dir in meinem Gratis-Guide ab. Der Link ist in meiner Bio."</div>
+  <div class="bridge-ex"><strong>Story „Womit du gerade kämpfst":</strong> du zeigst dich ehrlich mit einer Herausforderung. <em>Brücke zum Gespräch:</em> „Wenn's dir grad ähnlich geht — schreib mir einfach. Manchmal hilft schon ein ehrliches Gespräch."</div>
+
+  <div class="reveal">Wichtig bleibt nur eins: <strong>nicht bei jeder einzelnen Story</strong> die Brücke — sonst wird's zur Dauerwerbung. Ein paar Stories dürfen einfach nur Nähe sein. Aber trau dich, öfter die Brücke zu bauen, als du denkst. Solange sie aus einer echten Geschichte kommt und zu etwas Kostenlosem führt, nervt sie niemanden — im Gegenteil, sie hilft.</div>
+</div>
+
+<div class="bonus">
   <h2>Dein Ideen-Speicher</h2>
   <p>Immer, wenn dir zwischendurch eine Idee kommt — im Auto, unter der Dusche, beim Kochen — schreib sie hier rein. So gehst du nie wieder leer in den Tag.</p>
   <table class="speicher">
     <tr><th class="sp-idea">Idee</th><th>Anlass (❤️/💡/📨)</th><th>Wann posten?</th></tr>
     <tr><td class="sp-idea"></td><td class="sp-anlass"></td><td class="sp-when"></td></tr><tr><td class="sp-idea"></td><td class="sp-anlass"></td><td class="sp-when"></td></tr><tr><td class="sp-idea"></td><td class="sp-anlass"></td><td class="sp-when"></td></tr><tr><td class="sp-idea"></td><td class="sp-anlass"></td><td class="sp-when"></td></tr><tr><td class="sp-idea"></td><td class="sp-anlass"></td><td class="sp-when"></td></tr><tr><td class="sp-idea"></td><td class="sp-anlass"></td><td class="sp-when"></td></tr><tr><td class="sp-idea"></td><td class="sp-anlass"></td><td class="sp-when"></td></tr><tr><td class="sp-idea"></td><td class="sp-anlass"></td><td class="sp-when"></td></tr><tr><td class="sp-idea"></td><td class="sp-anlass"></td><td class="sp-when"></td></tr><tr><td class="sp-idea"></td><td class="sp-anlass"></td><td class="sp-when"></td></tr>
   </table>
+</div>
+
+<div class="next-steps">
+  <h2>Wie es jetzt weitergeht</h2>
+  <p>Du hast jetzt einen Vorrat, der dir nie wieder ausgeht. Und wenn du bereit bist, den entscheidenden Schritt weiterzugehen, dann ist das hier dein Weg.</p>
+
+  <div class="offer-card offer-primary">
+    <span class="offer-tag">Dein nächster Schritt</span>
+    <h3>Finde dein Thema als Network-Mama</h3>
+    <div class="offer-price">39 CHF</div>
+    <p>Übung 1 hat den ersten Funken gezündet — hier machst du daraus ein glasklares Thema. Das eine, mit dem du dich von allen anderen in deinem Network abhebst, sodass die richtigen Menschen sofort verstehen, warum sie zu dir kommen. Kein Rätselraten mehr, worüber du eigentlich sprichst. Genau der Punkt 2, an dem die meisten stecken bleiben.</p>
+    <div class="offer-link">👉 <strong>mumlifebalance.thrivecart.com/thema-finden</strong></div>
+  </div>
 </div>
 
 <div class="outro">

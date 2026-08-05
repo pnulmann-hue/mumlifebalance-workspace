@@ -603,6 +603,41 @@ Was soll dein Gegenüber jetzt tun? Antworten, abstimmen, dir schreiben, mitmach
 
 ---
 
+## Die Story-Brücke — so verkaufst du nebenbei aus jeder Story
+
+Jetzt kommt der Trick, den die Frauen draufhaben, die mit Stories verkaufen, ohne dass es jemanden nervt: Sie erzählen eine ganz normale Story — irgendeine aus diesem Workbook — und hängen am Schluss eine kleine Brücke dran. Einen Satz, der überleitet, und einen klaren nächsten Schritt. Nicht bei jeder Story, aber bei den meisten. So wird aus „nur erzählen" ganz natürlich „nebenbei verkaufen".
+
+**Die Formel ist immer gleich:**
+
+> Deine Story → ein Brückensatz → ein klarer nächster Schritt (mit Link oder Keyword)
+
+Und wohin führt die Brücke? Am liebsten **zu deinem kostenlosen Freebie**. Warum nicht gleich zum Produkt? Weil „gratis" die kleinste Hürde ist — dein Gegenüber sagt viel eher Ja, du gewinnst einen Kontakt, und das Vertrauen wächst weiter, bis irgendwann von allein gekauft wird. Ein Freebie ist deine sanfteste Brücke. Hast du noch keins, führt die Brücke eben zu einem Gespräch in den DMs — auch das funktioniert.
+
+### Dein Brücken-Baukasten — zum Freebie
+
+- „Falls du das kennst — ich hab dir genau dazu was gemacht. Kommentier **[WORT]** und ich schick's dir."
+- „Genau darum geht's in meinem kostenlosen **[Freebie]**. Der Link ist in meiner Bio."
+- „Wenn du da grad auch stehst: Ich hab was, das dir den ersten Schritt abnimmt. Schreib mir **[WORT]**."
+- „Das ist übrigens der Grund, warum ich **[Freebie]** gemacht habe. Hol's dir gratis über den Link in meiner Bio."
+
+### … und wenn die Story warm genug ist — zum Angebot
+
+- „Wenn du das wirklich angehen willst, begleite ich genau dabei. Schreib mir **[WORT]**, dann erzähl ich dir mehr."
+- „Genau dafür gibt's **[dein Angebot]**. Alle Infos über den Link in meiner Bio."
+
+**Meine Brücke zu meinem Freebie:**
+`_______________________________________________________________`
+
+### So sieht das in echt aus
+
+- **Story „Ein ganz normaler Morgen":** du erzählst von deiner ruhigen halben Stunde mit Kaffee am Küchentisch. *Brücke:* „Diese Ruhe am Morgen ist Gold wert. Wenn du auch mehr davon in deinen Tag willst — kommentier RUHE, ich schick dir meine kostenlose Mini-Anleitung."
+- **Story „Der grösste Fehler, den ich sehe":** du erzählst den typischen Fehler bei deinem Thema. *Brücke:* „Genau diesen Fehler nehm ich dir in meinem Gratis-Guide ab. Der Link ist in meiner Bio."
+- **Story „Womit du gerade kämpfst":** du zeigst dich ehrlich mit einer Herausforderung. *Brücke zum Gespräch:* „Wenn's dir grad ähnlich geht — schreib mir einfach. Manchmal hilft schon ein ehrliches Gespräch."
+
+> Wichtig bleibt nur eins: **nicht bei jeder einzelnen Story** die Brücke — sonst wird's zur Dauerwerbung. Ein paar Stories dürfen einfach nur Nähe sein. Aber trau dich, öfter die Brücke zu bauen, als du denkst. Solange sie aus einer echten Geschichte kommt und zu etwas Kostenlosem führt, nervt sie niemanden — im Gegenteil, sie hilft.
+
+---
+
 ## Dein Ideen-Speicher
 
 Immer, wenn dir zwischendurch eine Idee kommt — im Auto, unter der Dusche, beim Kochen — schreib sie hier rein. So gehst du nie wieder leer in den Tag.
@@ -619,6 +654,16 @@ Immer, wenn dir zwischendurch eine Idee kommt — im Auto, unter der Dusche, bei
 | | | |
 | | | |
 | | | |
+
+---
+
+## Wie es jetzt weitergeht
+
+Du hast jetzt einen Vorrat, der dir nie wieder ausgeht. Und wenn du bereit bist, den entscheidenden Schritt weiterzugehen, dann ist das hier dein Weg.
+
+**➜ Dein nächster Schritt: „Finde dein Thema als Network-Mama" (39 CHF)**
+Übung 1 hat den ersten Funken gezündet — hier machst du daraus ein glasklares Thema. Das eine, mit dem du dich von allen anderen in deinem Network abhebst, sodass die richtigen Menschen sofort verstehen, warum sie zu dir kommen. Kein Rätselraten mehr, worüber du eigentlich sprichst. Genau der Punkt 2, an dem die meisten stecken bleiben.
+👉 mumlifebalance.thrivecart.com/thema-finden
 
 ---
 
