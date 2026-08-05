@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>90 Storyideen für Networkerinnen</title>
+<!--
+  ============================================================
+  LANDINGPAGE · 90 Storyideen für Networkerinnen (19 CHF)
+  ============================================================
+  EINSETZEN IN WORDPRESS:
+  - Alles zwischen <style>…</style> UND <div class="si-lp">…</div> in einen
+    "Custom HTML"-Block kopieren (WAF-sicher, CSS ist unter .si-lp gescopt).
+  - KAUF-BUTTON: alle href="#CHECKOUT" durch deinen ThriveCart-Checkout-Link
+    ersetzen (Produkt in ThriveCart anlegen → Checkout-URL kopieren).
+  - TESTIMONIALS: der auskommentierte Block (weiter unten) wird sichtbar,
+    sobald du echte Stimmen einfügst.
+  ============================================================
+-->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap');
+
+.si-lp { --petrol:#12828c; --teal:#29556d; --creme:#f1ecdd; --orange:#dc822e; --ink:#29556d; }
+.si-lp * { margin:0; padding:0; box-sizing:border-box; }
+.si-lp { font-family:'Source Sans 3',system-ui,sans-serif; color:var(--ink); line-height:1.6; font-size:18px; background:#fff; }
+.si-lp h1,.si-lp h2,.si-lp h3,.si-lp .kicker { font-family:'Philosopher',Georgia,serif; }
+.si-lp .wrap { max-width:760px; margin:0 auto; padding:0 22px; }
+.si-lp section { padding:56px 0; }
+
+/* HERO */
+.si-lp .hero { background:var(--petrol); color:var(--creme); text-align:center; padding:70px 0 60px; }
+.si-lp .hero .kicker { text-transform:uppercase; letter-spacing:3px; font-size:14px; color:var(--orange); font-weight:700; margin-bottom:20px; }
+.si-lp .hero h1 { font-size:40px; line-height:1.12; margin-bottom:22px; }
+.si-lp .hero p { font-size:20px; font-weight:300; max-width:620px; margin:0 auto 16px; }
+.si-lp .hero .p2 { font-size:18px; opacity:.92; margin-bottom:30px; }
+
+/* BUTTONS */
+.si-lp .cta { display:inline-block; background:var(--orange); color:#fff; text-decoration:none; font-family:'Philosopher',serif; font-size:20px; font-weight:700; padding:17px 38px; border-radius:50px; box-shadow:0 6px 20px rgba(220,130,46,.35); transition:transform .15s; }
+.si-lp .cta:hover { transform:translateY(-2px); }
+.si-lp .cta-note { display:block; margin-top:12px; font-size:14px; opacity:.85; }
+.si-lp .ctawrap { text-align:center; margin-top:34px; }
+
+/* BENEFITS */
+.si-lp .benefits { background:var(--creme); }
+.si-lp .benefits h2 { text-align:center; font-size:30px; color:var(--petrol); margin-bottom:38px; }
+.si-lp .bgrid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; }
+.si-lp .bcard { background:#fff; border-radius:14px; padding:26px 22px; box-shadow:0 4px 16px rgba(41,85,109,.08); }
+.si-lp .bcard .ico { font-size:30px; display:block; margin-bottom:12px; }
+.si-lp .bcard h3 { font-size:19px; color:var(--teal); margin-bottom:8px; line-height:1.25; }
+.si-lp .bcard p { font-size:15.5px; }
+
+/* GENERIC SECTION */
+.si-lp h2.sec { font-size:29px; color:var(--petrol); margin-bottom:20px; line-height:1.2; }
+.si-lp p.lead { margin-bottom:16px; }
+.si-lp .pain { background:#fbfaf6; }
+
+/* STORY */
+.si-lp .story { background:var(--teal); color:var(--creme); }
+.si-lp .story h2 { color:#fff; }
+.si-lp .story p { margin-bottom:16px; }
+
+/* WHAT / LIST */
+.si-lp .list { list-style:none; }
+.si-lp .list li { position:relative; padding:14px 0 14px 40px; border-bottom:1px solid #ece6d6; font-size:17px; }
+.si-lp .list li:before { content:"✓"; position:absolute; left:0; top:12px; width:26px; height:26px; background:var(--petrol); color:#fff; border-radius:50%; text-align:center; line-height:26px; font-size:15px; }
+.si-lp .list li strong { color:var(--teal); }
+
+/* BONUS */
+.si-lp .bonus { background:var(--creme); }
+.si-lp .bonusbox { background:#fff; border-left:5px solid var(--orange); border-radius:0 12px 12px 0; padding:22px 26px; margin-bottom:18px; box-shadow:0 3px 12px rgba(41,85,109,.07); }
+.si-lp .bonusbox h3 { color:var(--orange); font-size:20px; margin-bottom:6px; }
+
+/* PRICE */
+.si-lp .price { background:var(--petrol); color:var(--creme); text-align:center; }
+.si-lp .price h2 { color:#fff; font-size:30px; margin-bottom:14px; }
+.si-lp .price p { max-width:560px; margin:0 auto 8px; font-size:18px; font-weight:300; }
+.si-lp .pricetag { font-family:'Philosopher',serif; font-size:52px; color:var(--orange); margin:18px 0 6px; font-weight:700; }
+
+/* FAQ */
+.si-lp .faq h2.sec { text-align:center; margin-bottom:30px; }
+.si-lp .qa { border-bottom:1px solid #ece6d6; padding:20px 0; }
+.si-lp .qa h3 { font-size:19px; color:var(--teal); margin-bottom:8px; }
+.si-lp .qa.honest { background:#fbfaf6; border-radius:12px; border:none; padding:22px 24px; margin-top:14px; }
+.si-lp .qa.honest h3 { color:var(--orange); }
+
+/* ABOUT */
+.si-lp .about { background:#fbfaf6; }
+.si-lp .about .ps { background:#fff; border-radius:12px; padding:20px 24px; margin-top:22px; font-size:17px; box-shadow:0 3px 12px rgba(41,85,109,.06); }
+.si-lp .about .ps strong { color:var(--orange); }
+
+/* FINAL */
+.si-lp .final { background:var(--teal); color:var(--creme); text-align:center; }
+.si-lp .final h2 { color:#fff; font-size:32px; line-height:1.18; margin-bottom:18px; }
+.si-lp .final p { max-width:580px; margin:0 auto 10px; font-weight:300; }
+
+.si-lp .foot { text-align:center; padding:26px 0; font-size:13px; color:#a99f83; }
+
+@media (max-width:640px){
+  .si-lp .hero h1{font-size:30px;} .si-lp h2.sec,.si-lp .benefits h2,.si-lp .price h2,.si-lp .final h2{font-size:25px;}
+  .si-lp .bgrid{grid-template-columns:1fr; gap:16px;} .si-lp section{padding:44px 0;}
+  .si-lp .pricetag{font-size:44px;} .si-lp { font-size:17px; }
+}
+</style>
+</head>
+<body>
+
+<div class="si-lp">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="kicker">Dein Ideen-Vorrat für Instagram-Stories</div>
+      <h1>Endlich wissen, was du posten sollst — ohne ständig dein Produkt in den Vordergrund zu stellen</h1>
+      <p>90 fertige Storyideen für Networkerinnen, die sichtbar werden wollen, ohne ihre Freundinnen zu vergraulen — und ohne jeden Morgen ratlos vor der Kamera zu sitzen.</p>
+      <p class="p2">Kein Produktbild, das niemand speichert. Sondern ein Vorrat, aus dem du dir täglich genau die Idee rauspickst, die zu dir passt.</p>
+      <div class="ctawrap">
+        <a href="#CHECKOUT" class="cta">Ja, ich will meine 90 Storyideen — 19 CHF
+          <span class="cta-note">Sofort-Download · direkt loslegen</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+    <div class="wrap">
+      <h2>Was sich für dich ändert</h2>
+      <div class="bgrid">
+        <div class="bcard">
+          <span class="ico">🎯</span>
+          <h3>Nie wieder ratlos vor der Kamera</h3>
+          <p>Du schaust ins Workbook, siehst deinen Tag und weisst in Sekunden, worüber du heute sprichst.</p>
+        </div>
+        <div class="bcard">
+          <span class="ico">💛</span>
+          <h3>Sichtbar werden, ohne zu nerven</h3>
+          <p>Du zeigst dich als Mensch mit einem Thema — statt als die, die schon wieder mit dem Produkt kommt.</p>
+        </div>
+        <div class="bcard">
+          <span class="ico">✨</span>
+          <h3>Aus Zuschauern werden Anfragen</h3>
+          <p>Du lernst, wie du am Schluss ganz natürlich die Brücke baust — ohne Verkaufsdruck.</p>
+        </div>
+      </div>
+      <div class="ctawrap"><a href="#CHECKOUT" class="cta">Ja, das will ich — 19 CHF</a></div>
+    </div>
+  </section>
+
+  <!-- PAIN -->
+  <section class="pain">
+    <div class="wrap">
+      <h2 class="sec">Kommt dir das bekannt vor?</h2>
+      <p class="lead">Du sitzt am Sonntagabend auf dem Sofa und denkst dir, dass du diese Woche unbedingt regelmässiger posten solltest — und schon beim Gedanken daran wird dir mulmig, weil du gar nicht weisst, was du eigentlich erzählen sollst ausser dem nächsten Produktbild.</p>
+      <p class="lead">Also postest du doch wieder ein Foto von deinem Produkt, wartest den ganzen Tag, und am Ende sind es drei Likes — davon einer von deiner Mama. Und irgendwo im Hinterkopf sitzt dieser Gedanke, dass die Leute bei deinem Namen inzwischen wahrscheinlich denken „ah, die verkauft ja auch dieses Zeug".</p>
+      <p class="lead">Beim Treffen mit den Freundinnen erzählst du lieber gar nicht mehr, was du gerade machst, weil du dieses kurze, betretene Schweigen kennst, sobald das Thema aufkommt.</p>
+      <p class="lead">Und tief drin weisst du: Das Problem ist nicht, dass du zu wenig über dein Produkt sprichst. Es ist, dass du fast <em>nur</em> darüber sprichst — und dabei komplett untergeht, wer du eigentlich bist und wobei du wirklich helfen kannst.</p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story">
+    <div class="wrap">
+      <h2 class="sec">Ich hab genau da gestanden, wo du jetzt vielleicht stehst</h2>
+      <p>Ich hab jahrelang mein Produkt in den Vordergrund gestellt und mich ehrlich gewundert, warum niemand kauft. Ich hab gepostet und gepostet, brav die Produktbilder, die schönen Sprüche — und es kam einfach nichts zurück.</p>
+      <p>Der Moment, in dem sich alles gedreht hat, war eigentlich unspektakulär: Ich hab aufgehört, über mein Produkt zu reden, und angefangen, über mein Thema und über mich zu sprechen. Und plötzlich haben mir die richtigen Menschen zugehört — und irgendwann von ganz allein gefragt, was ich denn eigentlich anbiete.</p>
+      <p>Genau diese Ideen hab ich über die Jahre gesammelt und für Networkerinnen aufbereitet. Damit du nicht erst jahrelang rumprobieren musst wie ich, sondern einfach loslegen kannst.</p>
+    </div>
+  </section>
+
+  <!-- TRANSFORMATION -->
+  <section>
+    <div class="wrap">
+      <h2 class="sec">Stell dir vor, wie sich deine Woche bald anfühlt</h2>
+      <p class="lead">Du stehst morgens auf, schaust kurz ins Workbook, und statt Panik spürst du fast so etwas wie Vorfreude — weil du sofort eine Idee findest, die genau zu deinem Tag passt. Du erzählst etwas Echtes, ganz nebenbei, und es fühlt sich kein bisschen nach Verkaufen an.</p>
+      <p class="lead">Und dann passiert etwas, das dir vorher gefehlt hat: Die Leute reagieren. Da kommt eine Antwort auf deine Frage, jemand speichert deinen Tipp, eine Frau schreibt dir in die DMs, dass sie sich total wiedererkennt. Deine Freundinnen fragen auf einmal von selbst, was du da eigentlich machst — weil du nicht mehr die mit dem Produkt bist, sondern die mit dem Thema.</p>
+      <p class="lead">Das ist keine Zauberei — das ist einfach der Unterschied, den es macht, wenn du weisst, worüber du sprichst.</p>
+      <div class="ctawrap"><a href="#CHECKOUT" class="cta">Ja, so will ich posten — 19 CHF</a></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (einblenden, sobald echte Stimmen da sind)
+  <section class="pain">
+    <div class="wrap">
+      <h2 class="sec">Das sagen die ersten Frauen</h2>
+      [ECHTE Screenshots / Zitate hier einfügen]
+    </div>
+  </section>
+  -->
+
+  <!-- WHAT'S INSIDE -->
+  <section>
+    <div class="wrap">
+      <h2 class="sec">Das steckt in deinem Workbook</h2>
+      <p class="lead">Kein PDF, das du einmal überfliegst und nie wieder öffnest. Sondern dein Nachschlagewerk für jeden Tag, an dem dir die Worte fehlen.</p>
+      <ul class="list">
+        <li><strong>90 fertige Storyideen</strong> in 8 Anlässen — jede mit Impuls, Beispiel aus der Network-Welt und Platz für deine eigene Version.</li>
+        <li><strong>Übung „Finde dein Thema"</strong> — endlich festlegen, wobei du eigentlich hilfst. Denn ohne Thema bleibt nur das Produkt zum Reden übrig.</li>
+        <li><strong>Dein Story-Kompass</strong> — die Entscheidungshilfe, welche Idee zu welchem Tag passt und wie du deine Woche zusammenstellst.</li>
+        <li><strong>Der Brücken-Baukasten</strong> — fertige Sätze, mit denen du am Schluss zu deinem Freebie oder Angebot überleitest, ohne aufdringlich zu wirken.</li>
+        <li><strong>Dein Ideen-Speicher</strong> — damit jede spontane Idee einen Platz hat und dir nie verloren geht.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- BONUS -->
+  <section class="bonus">
+    <div class="wrap">
+      <h2 class="sec">Du bekommst nicht nur Ideen, sondern ein System</h2>
+      <div class="bonusbox">
+        <h3>🎁 Der Story-Kompass</h3>
+        <p>Nimmt dir jeden Morgen die Entscheidung ab. Du schaust auf deinen Tag und weisst sofort, wo du greifst. So wird aus „90 Ideen" ein Werkzeug, das du wirklich benutzt.</p>
+      </div>
+      <div class="bonusbox">
+        <h3>🎁 Der Brücken-Baukasten</h3>
+        <p>Der Teil, an dem die meisten scheitern: aus einer schönen Story tatsächlich eine Anfrage machen. Mit den fertigen Brücken-Sätzen verkaufst du nebenbei, ohne dich unwohl zu fühlen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE -->
+  <section class="price">
+    <div class="wrap">
+      <h2>Für den Preis eines Mittagessens auswärts</h2>
+      <p>Weniger, als du für ein Mittagessen in der Stadt bezahlst. Nur dass dich dieses hier nicht eine Stunde satt macht, sondern dir Woche für Woche die Worte gibt, mit denen du sichtbar wirst.</p>
+      <div class="pricetag">19 CHF</div>
+      <div class="ctawrap"><a href="#CHECKOUT" class="cta">Ja, ich hol mir die 90 Storyideen</a></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="wrap">
+      <h2 class="sec">Bevor du dich entscheidest</h2>
+      <div class="qa">
+        <h3>„19 CHF für ein PDF — lohnt sich das?"</h3>
+        <p>Es ist kein PDF zum einmal Durchlesen, sondern ein Vorrat, aus dem du monatelang schöpfst. Wenn dir eine einzige Idee daraus eine echte Anfrage bringt, hat es sich schon mehrfach bezahlt gemacht. Und der eigentliche Wert ist die Zeit, die du dir sparst.</p>
+      </div>
+      <div class="qa">
+        <h3>„Ich hab schon so viele Workbooks, die ich nie nutze."</h3>
+        <p>Kenn ich. Genau deshalb ist der Story-Kompass dabei — damit du nicht überfordert vor 90 Ideen stehst, sondern in Sekunden weisst, welche du heute nimmst. Es ist zum Benutzen gemacht, nicht zum Ablegen.</p>
+      </div>
+      <div class="qa">
+        <h3>„Ich hab so wenig Zeit."</h3>
+        <p>Gerade dann. Das Workbook nimmt dir genau den Teil ab, der am meisten Zeit frisst: das Grübeln, was du überhaupt posten sollst. Eine Idee raussuchen dauert eine Minute.</p>
+      </div>
+      <div class="qa">
+        <h3>„Funktioniert das auch für mein Network / mein Produkt?"</h3>
+        <p>Ja, denn es geht bewusst nicht um dein Produkt, sondern um dich und dein Thema. Die Ideen funktionieren unabhängig davon, was du vertreibst.</p>
+      </div>
+      <div class="qa honest">
+        <h3>Ganz ehrlich, damit du weisst, worauf du dich einlässt:</h3>
+        <p>Das Workbook nimmt dir das Posten nicht ab — du musst dich schon selbst zeigen und die Ideen umsetzen. Und es ist kein Reichweiten-Trick über Nacht. Es ist der ehrliche, machbare Weg, sichtbar zu werden, ohne dich zu verstellen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="wrap">
+      <h2 class="sec">Wer dir hier schreibt</h2>
+      <p class="lead">Ich bin Patricia, vierfache Mama und selbst Networkerin — und ich hab dieses Business auf die harte Tour gelernt. Mein erstes Network hab ich nach Jahren aufgegeben, weil ich alles falsch gemacht hab, was man falsch machen kann: nur das Produkt in den Vordergrund gestellt und mich gewundert, warum es nicht läuft.</p>
+      <p class="lead">Heute baue ich mein Business anders auf — über mein Thema, über echte Sichtbarkeit, neben vier Kindern und mit ein paar Stunden am Tag. Kein Hochglanz, keine Bühne am Strand, sondern ehrliche Mama-Realität. Und genau dieses Wissen gebe ich in diesem Workbook an dich weiter.</p>
+      <div class="ps"><strong>P.S.</strong> — Denk noch mal kurz an dieses betretene Schweigen beim Freundinnen-Treffen. Stell dir vor, das dreht sich um, und die Leute fragen dich von selbst, was du eigentlich machst — weil du nicht mehr die mit dem Produkt bist, sondern die mit dem Thema, das sie berührt. Genau dahin bringen dich diese 90 Ideen. Und du fängst schon heute an.</div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final">
+    <div class="wrap">
+      <h2>Du kannst nächste Woche wieder ratlos vor der Kamera stehen — oder heute anfangen</h2>
+      <p>Jeder Tag, an dem du weiter nur Produktbilder postest, die niemand speichert, ist ein Tag, an dem dich die richtigen Menschen nicht kennenlernen. Für 19 CHF kannst du das heute ändern.</p>
+      <div class="ctawrap"><a href="#CHECKOUT" class="cta">Ja, ich starte jetzt — 19 CHF</a></div>
+    </div>
+  </section>
+
+  <div class="foot">© Mum Life Balance · Patricia Ulmann</div>
+
+</div>
+
+</body>
+</html>
