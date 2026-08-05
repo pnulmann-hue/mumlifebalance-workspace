@@ -1,67 +1,34 @@
 {
-  "datum": "2026-08-05",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Eigene Meinung / klare Positionierung",
-        "titel": "Eigene Meinung / klare Positionierung",
-        "story_ziel": "Branchen-Mythos im Network-Marketing aufgreifen, klar positionieren (Repel + Anziehung).",
-        "kaeufertyp": "Frank",
-        "cta": "BIO oder thematisch passend",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 32,
-        "wochentag": "Mittwoch",
-        "datum": "2026-08-05"
-      },
-      "gesendet_am": "2026-08-05T04:42:01.561Z",
-      "telegram_message_id": 1054,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Eigene Meinung / klare Positionierung",
-        "titel": "Eigene Meinung / klare Positionierung",
-        "story_ziel": "Branchen-Mythos im Network-Marketing aufgreifen, klar positionieren (Repel + Anziehung).",
-        "kaeufertyp": "Frank",
-        "cta": "BIO oder thematisch passend",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 32,
-        "wochentag": "Mittwoch",
-        "datum": "2026-08-05"
-      },
-      "gesendet_am": "2026-08-05T04:42:02.710Z",
-      "telegram_message_id": 1055,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "mentoring",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "Bio-Check",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": "Idee: Patricia zeigt einen Screenshot aus ihrem Teamchat mit einer Network-Mama, die gerade sagt, \"mein Bio-Check war ein Game-Changer\" — und erzählt, warum die meisten Unternehmerinnen ihre Bio falsch aufbauen (zu viel über sich, zu wenig Nutzen für die Käuferin).\n\nMuster: Expertise + Fehler-Reframing (was die meisten falsch machen, warum, wie es besser geht)\n\nCTA: \"Lass deine Bio checken — link in der Bio, kostenlos.\"",
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": null,
+  "launch_vorlage": null,
+  "kontext_snapshot": {
+    "kw": 32,
+    "wochentag": "Mittwoch",
+    "datum": "2026-08-05"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-08-05T07:17:52.347Z",
+  "telegram_message_id": 1056,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
