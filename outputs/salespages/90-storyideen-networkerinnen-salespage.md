@@ -4,7 +4,7 @@ tags: [produkt, salespage]
 
 # Sales-Page — 90 Storyideen für Networkerinnen (19 CHF)
 
-> Copy-paste-ready für ThriveCart. 13 Blöcke in Julias Sales-Architektur, in Patricias Stimme.
+> Copy-paste-ready für ThriveCart. 13 Blöcke in bewährter Sales-Architektur, in Patricias Stimme.
 > **Zwei Stellen mit deinem Input:** die Testimonial-Blöcke (Block 3 + 10) mit echten Kundinnen-Stimmen füllen, sobald du welche hast. Bis dahin nicht veröffentlichen — lieber echte Screenshots als erfundene Zitate.
 
 ---
