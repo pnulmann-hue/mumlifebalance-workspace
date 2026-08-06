@@ -1,67 +1,34 @@
 {
-  "datum": "2026-08-06",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Quick Win",
-        "titel": "Quick Win",
-        "story_ziel": "Eine Formel/Methode die SOFORT funktioniert — Vertrauen + Expertise.",
-        "kaeufertyp": "Willi",
-        "cta": "thematisch passend (STORY / BIO)",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 32,
-        "wochentag": "Donnerstag",
-        "datum": "2026-08-06"
-      },
-      "gesendet_am": "2026-08-06T04:42:01.103Z",
-      "telegram_message_id": 1057,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Quick Win",
-        "titel": "Quick Win",
-        "story_ziel": "Eine Formel/Methode die SOFORT funktioniert — Vertrauen + Expertise.",
-        "kaeufertyp": "Willi",
-        "cta": "thematisch passend (STORY / BIO)",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 32,
-        "wochentag": "Donnerstag",
-        "datum": "2026-08-06"
-      },
-      "gesendet_am": "2026-08-06T04:42:02.094Z",
-      "telegram_message_id": 1058,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "doterra",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "doTERRA Lifestyle",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": "Idee: Patricia zeigt, wie sie morgens (vor den Kindern) ihre Energie mit einem doTERRA-Ritual kickstartet — und warum das bei ihr funktioniert, obwohl sie vorher immer erst nach der dritten Tasse Kaffee wach wurde.\n\nMuster: Expertise + Behind-the-Scenes (Mini-Training mit Lifestyle-Einblick)\n\nCTA: \"Welches Ritual brauchst du jetzt? Schreib mir — vielleicht haben wir genau das für dich.\"",
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": null,
+  "launch_vorlage": null,
+  "kontext_snapshot": {
+    "kw": 32,
+    "wochentag": "Donnerstag",
+    "datum": "2026-08-06"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-08-06T07:19:14.928Z",
+  "telegram_message_id": 1059,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
