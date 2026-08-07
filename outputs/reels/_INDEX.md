@@ -33,6 +33,7 @@ Auto-Index aller Files in `outputs/reels/`. Siehe [[_MOCs/MOC-Content-Engine]] f
 - [[2026-06-29-kw27-drehtag-master]]
 - [[2026-06-juni-reel-briefings]]
 - [[2026-08-06-testreel-3-hooks-zeit-leads]]
+- [[2026-08-07-reel-familientisch-insta-ding]]
 - [[2026-KW17-doterra-hot-take-salat-reicht-nicht]]
 - [[2026-KW17-doterra-koerper-schreit]]
 - [[2026-KW17-doterra-pov-7-min-abendroutine]]
