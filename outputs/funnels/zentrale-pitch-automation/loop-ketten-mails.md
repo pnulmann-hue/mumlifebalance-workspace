@@ -419,3 +419,26 @@ Patricia
 ## 🔗 Verwandte Notizen
 - [[sichtbarkeit-engine-FINAL]]
 - [[blueprint]]
+
+---
+
+## ✅ BUILD-STATUS: KOMPLETT (2026-08-07)
+
+Alle Loops als **einzelne, benannte Automationen** in ActiveCampaign gebaut — **alle INAKTIV** (Patricia prüft + stellt selbst scharf).
+
+| Loop | Automation-Name | Trigger-Tag | Mails | GoalA (Skip) | Handoff-Tag | GoalB (Exit) |
+|---|---|---|---|---|---|---|
+| 2 | Loop 2 - Webinar (MBA-Pitch) | (Loop-1-Handoff) | 5 (W1–W5) | — | Loop 3 Start | mba-kauf |
+| 3 | Loop 3 - Expertin (97) | Loop 3 Start | 3 | Expertin-Tag | Loop 4 Start | mba-kauf |
+| 4 | Loop 4 - DPW (333) | Loop 4 Start | 3 | digitale Produktwelt grosser Kurs | Loop 5 Start | mba-kauf |
+| 5 | Loop 5 - Mama-CEO (333) | Loop 5 Start | 3 | mama-ceo-kauf | Loop 6 Start | mba-kauf |
+| 6 | Loop 6 - IKM (333) | Loop 6 Start | 3 | Instagram-Kundenmaschine | Loop 7 Start | mba-kauf |
+| 7 | Loop 7 - MBA Re-Pitch (997) | Loop 7 Start | 3 | — (letzter Loop) | — | mba-kauf |
+
+**Anti-Kaskaden-Logik pro Loop:** 3 Mails + Warten-2-Tage-Schritte → GoalA „Springen zu" (Skip-Tag: Produkt-Besitzerinnen überspringen die Mails, laufen aber weiter) → Handoff-Tag „Loop N+1 Start" (LETZTER inhaltlicher Schritt, startet nächsten Loop erst nach den Waits) → GoalB „Springen zu MBA gekauft – raus aus Funnel" (mba-kauf: MBA-Besitzerinnen springen an den Handoff-Tag vorbei = komplett raus).
+
+**Verifizierte Kauf-Tags:** DPW = `digitale Produktwelt grosser Kurs` · Mama-CEO = `mama-ceo-kauf` · IKM = `Instagram-Kundenmaschine` · MBA-Exit = `mba-kauf`.
+
+**Alle Mails:** Brand-Template (Petrol-Gradient, Georgia-Headline, oranger CTA-Button, Footer), echte Umlaute, Reichweitenherz-Voice, Blackliste-clean, Betreff + Preheader gesetzt, per Code-Editor 1:1 injiziert.
+
+**Offen für Patricia:** Jeden Loop prüfen und auf Aktiv schalten. Wichtig: Zuerst prüfen, dass Loop 1 (0€-Engine) am Ende den Tag setzt, der Loop 2 triggert — dann läuft die ganze Kette durch.
