@@ -118,5 +118,5 @@ Patricia
 ---
 
 ## Offene Punkte
-- **CTA-Link Mama-CEO-Checkout** bestätigen.
+- **CTA-Link Mama-CEO-Checkout:** `https://mumlifebalance.thrivecart.com/mama-ceo/` ✅
 - «trägt» entfernt (durch «auffängt» ersetzt).

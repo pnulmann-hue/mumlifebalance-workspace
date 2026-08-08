@@ -7,7 +7,7 @@ tags: [funnel]
 Struktur wie Loop 4: **3 Mehrwert-Mails (kein CTA) → Einladung → Einwand.**
 Roter Faden: **Ein Ziel hängt nie an einem einzigen Baustein.** Kein Shake nimmt allein ab (Ernährung + Bewegung + Mindset), kein Thermomix kocht allein stressfrei (Lebensmittel-Verständnis + Mealprep). Ein rentables Business neben der Familie braucht nicht „nur" Instagram, sondern: **Sichtbarkeit (IKM) + eigene Produkttreppe (unabhängig, DPW) + Zeit & Organisation als Mama (Mama-CEO)** — die **Komplettlösung ist die MBA**.
 
-> ⚠️ **Preis-Integrität:** MBA-Pioneer 997 ist ein Event-Preis. In Evergreen-Mails **kein fixer Preis / kein direkter 1347-Link** (Widerspruch). CTA führt auf **Warteliste / persönliche Antwort**, Patricia nennt den Einstiegspreis individuell.
+> ⚠️ **Preis im Mail weglassen:** MBA-Pioneer 997 war Event-Preis. Damit sich Event- und Evergreen-Preis nicht widersprechen, steht **im Mail kein Preis** — der Button führt direkt auf die MBA-Buchungsseite, wo der aktuelle Preis steht. Buchen ist möglich (keine Warteliste).
 
 ---
 
@@ -83,11 +83,9 @@ Die letzten Tage hast du die einzelnen Teile gesehen: sichtbar werden, unabhäng
 
 Die Mum Business Academy ist all das zusammen — in der richtigen Reihenfolge, mit den Calls, die dich drankommen lassen. Kein Zusammensuchen von drei Kursen, sondern ein Weg, den du Schritt für Schritt gehst.
 
-Wenn du wissen willst, wie der Einstieg für dich konkret aussieht, dann trag dich hier ein — ich zeig dir den Weg rein und was er für dich bedeutet:
+Wenn du bereit bist, den ganzen Weg zu gehen, dann schau dir die komplette Academy an — dort siehst du in Ruhe, wie alles ineinandergreift, und kannst dir direkt deinen Platz sichern:
 
-[BUTTON: Zeig mir den Weg in die MBA] → (Warteliste / mumlifebalance.ch/mba-warteliste — bitte bestätigen)
-
-*(Alternative statt Button: «Antworte mir einfach mit MBA, dann melde ich mich persönlich bei dir.»)*
+[BUTTON: MBA ansehen und Platz sichern] → https://mumlifebalance.ch/mba-webinar-replay/
 
 Liebe Grüsse
 Patricia
@@ -107,7 +105,7 @@ Sie ist für dich, wenn du gemerkt hast, dass ein einzelner Baustein dich nicht 
 
 Sie ist ehrlich nicht für dich, wenn du weiter auf die eine Abkürzung hoffst, die alles allein löst.
 
-[BUTTON: Zeig mir den Weg in die MBA] → (Warteliste / persönliche Antwort)
+[BUTTON: MBA ansehen und Platz sichern] → https://mumlifebalance.ch/mba-webinar-replay/
 
 Liebe Grüsse
 Patricia
@@ -115,4 +113,4 @@ Patricia
 ---
 
 ## Offene Punkte
-- **CTA-Ziel bestätigen:** Warteliste-Seite (`mumlifebalance.ch/mba-warteliste`) ODER Reply-Mechanik («antworte mit MBA»). Kein fixer Preis/1347-Link (Preis-Integrität).
+- **CTA-Ziel:** MBA-Webinar-Seite `mumlifebalance.ch/mba-webinar` (997-Angebot + Buchung). Exakten Slug + Erreichbarkeit vor Push testen. Kein Preis im Mail.
