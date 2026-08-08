@@ -457,3 +457,25 @@ Alle Loops als **einzelne, benannte Automationen** in ActiveCampaign gebaut — 
 - **🗑 D1 „Drei Türen (Downsell)" GELÖSCHT** — die Doppelung mit den Signature-Loops (v.a. IKM/Loop 6) ist raus. Sequenz jetzt sauber: E1·E2 → M1–M5 → `Engine Pitch ohne Kauf` → Loop 2.
 
 **Kette komplett verifiziert:** Loop 1 (0€-Engine) → Loop 2 (Webinar) → Loop 3–6 (Signature) → Loop 7 (MBA-Re-Pitch). Loop 1 ist aktiv; Loops 2–7 stehen auf Inaktiv für Patricias Freigabe.
+
+---
+
+## ✅ VALUE-FIRST-REWRITE LOOP 3 + LOOP 4 · BEIDE SCHARF (2026-08-08)
+
+Patricia-Feedback umgesetzt: Loops 3 & 4 waren zu „verkäuferisch/trocken". Jetzt value-first (Expertise · Persönlichkeit · Inspiration zuerst, Einladung später).
+
+**Loop 4 – DPW (333) → von 3 auf 5 Mails erweitert + Aktiv geschaltet.**
+Neue Reihenfolge: Trigger → **M1 → W → M2 → W → M3 → W → M4 → W → M5** → GoalA (DPW schon da – Skip) → Tag `Loop 5 Start` (Handoff) → GoalB (mba-kauf – raus).
+- M1 „Networkmarketing ist geil — und trotzdem hätte ich's fast hingeschmissen" — Patricias **verbatim Network-Story** (1 % schaffen es · Team-Abbrüche · „Perle von Mensch" · „halbe Niere") 1:1 eingebaut, kein CTA (reiner Mehrwert).
+- M2 „Warum dein Produkt nie im Zentrum stehen sollte" — Hybridmodell, kein CTA.
+- M3 „Warum ich mit einem 0€-Produkt anfangen würde" — Produkttreppe, kein CTA.
+- M4 „Ein Einkommen, das nicht jeden Monat bei null anfängt" — **erste Einladung**, CTA → DPW (333).
+- M5 „„Ich bin doch noch keine Expertin genug"" — Einwand-Mail, CTA → DPW.
+- Wort „trägt" durchgängig durch „ergänzt" ersetzt (Patricia-Wunsch). Verifiziert.
+
+**Loop 3 – Expertin (97) → bereits value-first + Aktiv** (Live-Check 2026-08-08): Mail 1 „Fühlst du dich manchmal wie eine Verkäuferin?" hat warmen, empathischen Body (Reframe Verkäuferin→Expertin/Dienstleisterin + Mehrwert-Tipp), Branded-Design. Nicht überschrieben.
+
+**Technik:** M4/M5 neu via modernem Editor → HTML-Block mit gebrandetem Tabellen-HTML (ACE `setValue`), Platzhalter-Blöcke entfernt. M1–M3 (Legacy) waren bereits ersetzt.
+
+**Status Kette:** Loop 1 aktiv · Loop 3 aktiv · **Loop 4 jetzt aktiv** · Loops 2, 5, 6, 7 weiter Inaktiv für Patricias Freigabe.
+**Noch offen (geparkt beim Pivot):** Entry-Guard „War schon in der Engine" (If/Else) am Loop-1-Anfang wurde NICHT eingebaut — auf Patricias Wunsch später.
