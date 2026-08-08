@@ -442,3 +442,18 @@ Alle Loops als **einzelne, benannte Automationen** in ActiveCampaign gebaut — 
 **Alle Mails:** Brand-Template (Petrol-Gradient, Georgia-Headline, oranger CTA-Button, Footer), echte Umlaute, Reichweitenherz-Voice, Blackliste-clean, Betreff + Preheader gesetzt, per Code-Editor 1:1 injiziert.
 
 **Offen für Patricia:** Jeden Loop prüfen und auf Aktiv schalten. Wichtig: Zuerst prüfen, dass Loop 1 (0€-Engine) am Ende den Tag setzt, der Loop 2 triggert — dann läuft die ganze Kette durch.
+
+---
+
+## ✅ LOOP-1-CHECK + BEREINIGUNG (2026-08-07)
+
+**Loop 1 = Automation 72 „Automation 0€ Produkt" (AKTIV).** Live geprüft und bereinigt:
+
+- **Zwei Eingänge bestätigt:** Trigger „Automation 0€ Produkt" **+** „Story-Ideen" → mehrere 0€-Produkte laufen in denselben Motor (Prinzip live in Betrieb).
+- **Warmup vor Pitch:** E1 (Schaufenster-Philosophie) + E2 (Thema finden, 39.-) laufen vor dem ersten MBA-Pitch. M1 startet mit Story. ✅
+- **Bridge-Skip-Goal intakt:** „Springen zu Finde dein Thema gekauft" (Kurs-Besitzerin überspringt E1/E2).
+- **Überleitung zu Loop 2 bestätigt:** Letzter Content-Schritt = Tag hinzufügen `Engine Pitch ohne Kauf` — AC zeigt explizit „Dieser Block kann Folgendes auslösen: Loop 2 - Webinar (MBA-Pitch)". ✅
+- **MBA-Exit-Goal intakt:** „Springen zu MBA gekauft → raus aus der Engine" (Tag besteht mba-kauf).
+- **🗑 D1 „Drei Türen (Downsell)" GELÖSCHT** — die Doppelung mit den Signature-Loops (v.a. IKM/Loop 6) ist raus. Sequenz jetzt sauber: E1·E2 → M1–M5 → `Engine Pitch ohne Kauf` → Loop 2.
+
+**Kette komplett verifiziert:** Loop 1 (0€-Engine) → Loop 2 (Webinar) → Loop 3–6 (Signature) → Loop 7 (MBA-Re-Pitch). Loop 1 ist aktiv; Loops 2–7 stehen auf Inaktiv für Patricias Freigabe.
