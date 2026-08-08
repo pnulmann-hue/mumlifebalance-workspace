@@ -593,6 +593,26 @@
 
       "umsatzziel_contribution_chf": 7976,
       "launched_on": null
+    },
+
+    {
+      "id": "content-box",
+      "name": "Content-Box (30 Hook-Vorlagen)",
+      "status": "in-aufbau",
+      "profile": "mentoring",
+      "typ": "Downsell / Order-Bump · PDF-Workbook (30 Hook-Vorlagen zum Ausfüllen)",
+      "preis_chf": null,
+      "zielgruppe": "Networkerinnen, die ihr Thema kennen und es sichtbar machen wollen",
+      "problem": "Wissen nicht, wie sie fesselnde Hooks für Reels/Karussells schreiben",
+      "transformation": "30 fertige Hook-Muster nach eigenem Thema füllen — nie wieder ratlos beim ersten Satz",
+      "assets": "outputs/produkte/content-box/ (00-briefing.md, thrivecart-auslieferung.md) · PDF bei Patricia (Contentbox Hookvorlage.pdf), in ThriveCart als Bump-Kurs 'Content-Box'",
+      "produkttreppe_anschluss": [
+        { "stufe": "B", "produkt": "Finde dein Thema", "preis": 39, "thrivecart": "https://mumlifebalance.thrivecart.com/thema-finden/" },
+        { "stufe": "M", "produkt": "Instagram-Kundenmaschine", "preis": 333, "thrivecart": "https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/" }
+      ],
+      "verwandt": "Ergaenzt die 90 Storyideen (Ideen = Worueber, Content-Box = erster Satz/Hook). Wurzel-Idee: outputs/salespages/von-nebenbei-zu-business-salespage.md",
+      "offen_patricia": "Preis setzen · PDF ins Los-gehts-Modul hochladen · Auslieferungstexte einsetzen · als Bump/Downsell im Storyideen-Checkout verknuepfen",
+      "launched_on": null
     }
   ],
 
