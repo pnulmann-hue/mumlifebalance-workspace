@@ -1,34 +1,67 @@
 {
-  "profil": "mentoring",
-  "modus": "tagesplan",
-  "disg": "Rot",
-  "disg_sekundaer": "Gelb",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
-  "aktives_produkt": "Bio-Check",
-  "wochen_fokus": "(kein Fokus eingetragen)",
-  "sales_pattern": "",
-  "wochen_cta": "",
-  "monat_kontext": "",
-  "produkt_themen": null,
-  "vorschlag_idee": "Idee: Patricia zeigt einen echten Screenshot aus ihrem Team-Chat, wo eine Mama gerade ihre erste Kundin gewonnen hat – und erzählt, welche EINE Fähigkeit den Unterschied gemacht hat zwischen \"ich weiss nicht, wie ich verkaufe\" und \"es funktioniert\".\n\nMuster: Expertise / Skills-Slides (welche tatsächliche Fähigkeit brauchts wirklich)\n\nCTA: \"Wenn du wissen willst, welche 3 Skills dich vom ersten Verkauf trennen – schreib mir 'BIO' in die DMs. Ich zeige dir, wo du gerade stehst.\"",
-  "wochen_fokus_quelle": "fallback",
-  "launch_tag": null,
-  "launch_vorlage": null,
-  "kontext_snapshot": {
-    "kw": 32,
-    "wochentag": "Freitag",
-    "datum": "2026-08-07"
-  },
-  "fragen": [
-    "Was hast du erlebt?",
-    "Hast du grad einen Gedanken zum Thema?",
-    "Oder Standard-Pool?"
-  ],
-  "gesendet_am": "2026-08-07T05:57:17.799Z",
-  "telegram_message_id": 1062,
-  "patricia_antworten": [],
-  "patricia_fotos": [],
-  "patricia_videos": [],
-  "status": "warten_auf_antwort"
+  "datum": "2026-08-08",
+  "profile": {
+    "mentoring": {
+      "profil": "mentoring",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Instagram-Strategie für NM",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Beweise / Social Proof (auf Freebie gemünzt)",
+        "titel": "Beweise / Social Proof (auf Freebie gemünzt)",
+        "story_ziel": "Eine echte Erfolgsgeschichte (Mentee/Pilot-Mama) — Glaubwürdigkeit + sanfter Pull.",
+        "kaeufertyp": "Zoe",
+        "cta": "thematisch passend",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 32,
+        "wochentag": "Samstag",
+        "datum": "2026-08-08"
+      },
+      "gesendet_am": "2026-08-08T04:42:01.263Z",
+      "telegram_message_id": 1070,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    },
+    "doterra": {
+      "profil": "doterra",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Zurück zu deiner Energie",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Beweise / Social Proof (auf Freebie gemünzt)",
+        "titel": "Beweise / Social Proof (auf Freebie gemünzt)",
+        "story_ziel": "Eine echte Erfolgsgeschichte (Mentee/Pilot-Mama) — Glaubwürdigkeit + sanfter Pull.",
+        "kaeufertyp": "Zoe",
+        "cta": "thematisch passend",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 32,
+        "wochentag": "Samstag",
+        "datum": "2026-08-08"
+      },
+      "gesendet_am": "2026-08-08T04:42:02.138Z",
+      "telegram_message_id": 1071,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    }
+  }
 }
