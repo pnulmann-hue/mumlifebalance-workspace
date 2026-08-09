@@ -2,7 +2,9 @@
 tags: [funnel]
 ---
 
-# Loop 6 – Instagram-Kundenmaschine (333) · Value-First-Warm-up (Entwurf)
+# Loop 6 – Instagram-Kundenmaschine (333) · Value-First-Warm-up ✅ LIVE (in AC gebaut 2026-08-09)
+
+> Status: In AC-Automation 78 umgesetzt — M1–M5 als „Loop 6 · IKM M1–M5", je 2 Tage Warten, M4+M5 mit CTA → thrivecart.com/instagram-kundenmaschine/. GoalA „IKM schon da – Loop 6 überspringen" (Tag Instagram-Kundenmaschine), Handoff-Tag „Loop 7 Start" als letzter Content-Schritt, GoalB „MBA gekauft – raus" (Tag mba-kauf). Automation ist **Aktiv**.
 
 Struktur wie Loop 4: **3 Mehrwert-Mails (kein CTA) → Einladung → Einwand.**
 Roter Faden: **Weg von Zeit gegen Geld** → automatisiertes System (Content + Storys → kostenloser Leadmagnet → Verkauf im Schlaf).
@@ -90,7 +92,7 @@ Genau das baust du in der Instagram-Kundenmaschine auf:
 
 Kein «poste einfach mehr», kein Dauer-am-Handy-sein. Sondern der ehrliche Weg, wie ich mein System selber gebaut hab — als Mama mit vier Kindern und einer Handvoll Stunden pro Woche. 333 Franken.
 
-[BUTTON: Instagram-Kundenmaschine ansehen] → (CTA-Link IKM-Checkout — bitte bestätigen)
+[BUTTON: Instagram-Kundenmaschine ansehen] → https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/
 
 Wenn du das ständige Von-vorne-Anfangen satt hast, ist das dein nächster Schritt.
 
@@ -112,7 +114,7 @@ Die Instagram-Kundenmaschine ist für dich, wenn du schon eine Weile im Network 
 
 Sie ist ehrlich nicht für dich, wenn du auf den einen viralen Beitrag hoffst und nichts Kontinuierliches aufbauen willst.
 
-[BUTTON: Ja, ich bau meine Kundenmaschine] → (CTA-Link IKM-Checkout)
+[BUTTON: Ja, ich bau meine Kundenmaschine] → https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/
 
 Liebe Grüsse
 Patricia
@@ -120,5 +122,5 @@ Patricia
 ---
 
 ## Offene Punkte
-- **CTA-Link IKM-Checkout** bestätigen (analog `…thrivecart.com/digitale-produktwelt/`).
+- ✅ CTA-Link IKM-Checkout gesetzt: `https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/`.
 - Kundenstimme M3: Angaben bewusst ohne erfundene Zahlen. Falls du konkrete (echte) Zahlen nennen willst, sag Bescheid.
