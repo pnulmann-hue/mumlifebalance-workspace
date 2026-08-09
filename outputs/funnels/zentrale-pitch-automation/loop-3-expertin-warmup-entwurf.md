@@ -2,7 +2,10 @@
 tags: [funnel]
 ---
 
-# Loop 3 – Expertin (97) · Value-First-Warm-up (Entwurf)
+# Loop 3 – Expertin (97) · Value-First-Warm-up ✅ LIVE (in AC gebaut 2026-08-09)
+
+> Status: In AC-Automation 73 umgesetzt — M1–M5 als „Loop 3 · Expertin M1–M5", je 2 Tage Warten, M4+M5 mit CTA → thrivecart.com/expertin/. Automation ist Aktiv. Alte „Loop 2 · Mail X"-Namen bereinigt.
+
 
 Struktur wie Loop 4: **3 Mehrwert-Mails (kein CTA) → Einladung → Einwand.**
 Roter Faden: **Erkenne das Experten-Thema HINTER dir.** Vom früheren Ich zu heute — jeder kann anderen was beibringen, sieht es aber nicht (mehr). Es reicht, einen **Minischritt** weiter zu sein. Du verkaufst nicht den Shake, du bringst deine **Story / dein Experten-Thema** rein — das macht dich zum Kundenmagneten.
