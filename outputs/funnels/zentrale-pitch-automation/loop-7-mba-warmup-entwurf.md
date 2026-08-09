@@ -2,7 +2,9 @@
 tags: [funnel]
 ---
 
-# Loop 7 – MBA (997/1347) · Value-First-Abschluss (Entwurf)
+# Loop 7 – MBA (997/1347) · Value-First-Abschluss ✅ LIVE (in AC gebaut 2026-08-09)
+
+> Status: In AC-Automation 79 umgesetzt — M1–M5 als „Loop 7 · MBA M1–M5", je 2 Tage Warten, M4+M5 mit CTA → mumlifebalance.ch/mba-webinar-replay/ (997-Pioneer-Preis auf der Seite, **kein Preis im Mail**, Buchen möglich). GoalB „MBA gekauft – raus" (Tag mba-kauf). Kein GoalA und kein Handoff-Tag (Loop 7 = terminaler MBA-Loop). Alte „New Campaign"-Distanz-Mails M1–M3 ersetzt. Automation ist **Aktiv**. Replay-Link vor Aktivierung getestet: liefert „997 statt 1347" + Buchen-Button.
 
 Struktur wie Loop 4: **3 Mehrwert-Mails (kein CTA) → Einladung → Einwand.**
 Roter Faden: **Ein Ziel hängt nie an einem einzigen Baustein.** Kein Shake nimmt allein ab (Ernährung + Bewegung + Mindset), kein Thermomix kocht allein stressfrei (Lebensmittel-Verständnis + Mealprep). Ein rentables Business neben der Familie braucht nicht „nur" Instagram, sondern: **Sichtbarkeit (IKM) + eigene Produkttreppe (unabhängig, DPW) + Zeit & Organisation als Mama (Mama-CEO)** — die **Komplettlösung ist die MBA**.
@@ -113,4 +115,5 @@ Patricia
 ---
 
 ## Offene Punkte
-- **CTA-Ziel:** MBA-Webinar-Seite `mumlifebalance.ch/mba-webinar` (997-Angebot + Buchung). Exakten Slug + Erreichbarkeit vor Push testen. Kein Preis im Mail.
+- ✅ **CTA-Ziel bestätigt & getestet:** `https://mumlifebalance.ch/mba-webinar-replay/` — Seite live, zeigt „997 statt 1347 Franken" (Pioneer-Preis) + Buchen-Button. Kein Preis im Mail-Body.
+- Hinweis: Die Replay-Seite formuliert „weil du das Webinar geschaut hast". Für Evergreen-Kontakte aus Loop 1–6 (die evtl. kein Webinar sahen) ggf. später eine neutralere Variante der Seite erwägen — auf Patricias Entscheidung (mba-webinar-replay) belassen.
