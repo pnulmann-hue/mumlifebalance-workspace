@@ -15,3 +15,4 @@ Auto-Index aller Files in `outputs/mealplans/`. Siehe [[_MOCs/MOC-Mealplan]] fü
 - [[2026-KW24-wochenplan]]
 - [[2026-KW25-wochenplan]]
 - [[2026-KW26-wochenplan]]
+- [[2026-KW33-wochenplan]]
