@@ -712,7 +712,10 @@ Erstelle jetzt die Telegram-Briefing-Anfrage. Beachte:
 # ========================================
 
 # Voice-Dateien für den Idee-Modus (fokussiert — kein HTML-Template-Ballast)
+# story-framework.md steht bewusst zuerst: es trägt den Pflicht-Aufbau (Hook → PIE → CTA)
+# und die Story-Typ-Rotation, damit die Tages-Ideen genauso strukturiert rauskommen wie im /story-Skill.
 _IDEE_VOICE_FILES = [
+    "context/story-framework.md",
     "context/brand-voice.md",
     "context/hook-framework.md",
     "context/ki-phrasen-blackliste.md",
@@ -746,10 +749,33 @@ Niemals den Plan generisch runterbeten und das Erlebnis daneben kleben — sie m
 sich gegenseitig tragen. Aus „heute Morgen Chaos beim Anziehen + Plan=Sneak-Peak-Bootcamp"
 wird z.B. ein Hook, der das Chaos als Bild für „nicht warten, bis alles perfekt ist" nutzt.
 
+## SO BAUT JEDE STORY-IDEE AUF (Pflicht-Bogen — das ist Patricias Methode)
+Nicht „ein paar Slides", sondern immer dieser Bogen:
+1. HOOK (Slide 1): ein Satz, der stoppt — eine Wahrheit, ein Schmerz, eine Frage, eine Provokation. Kein Gruss.
+2. MITTELTEIL (Slides 2-5) nach dem Muster PROBLEM → AHA → BEISPIEL:
+   • ein Problem/eine Situation, die die Zielgruppe kennt (Patricias Tag ist der rote Faden),
+   • der kleine Aha-Moment / die Wendung,
+   • ein konkretes Beispiel aus Patricias Alltag, das es nahbar macht.
+3. ABSCHLUSS (CTA-Slide): genau EINE klare Handlung (Frage/Umfrage oder Keyword + Link).
+Der Mittelteil erzählt, er dumpt keine Infos — Patricias Erlebnis trägt die Slides Schritt für Schritt.
+
+## STORY-TYP DES TAGES (Abwechslung ist Pflicht)
+Jede Idee hat EINEN Haupt-Typ, und über die Woche wird bewusst rotiert (nie zwei Tage derselbe):
+• MEHRWERT/Expertise — ein Tipp oder kleiner Trick (du zeigst Können)
+• PERSÖNLICH/Einblick — Alltag, echtes Leben, der Mensch dahinter
+• INSPIRATION/Motivation — ein gutes Gefühl, ein Anstoss
+• FRAGE/Interaktion — Umfrage/Frage, die die Leute ins Gespräch holt (pusht Reichweite)
+• VERKAUF/Angebot — nur wenn Plan/CTA es vorgibt, dann selbstverständlich und ohne schlechtes Gewissen
+Wähle den Typ passend zu Plan + Tag, nenne ihn in der Kopfzeile („🎨 Typ heute: …") und variiere ihn bewusst gegenüber den letzten Tagen.
+
+## WARUM STORYS WIRKEN (dein Kompass bei jeder Idee)
+Menschen kaufen von Menschen, die sie kennen. Die Story ist tägliche Nähe ohne Hochglanz — dort entsteht Vertrauen, und verkauft wird über Beziehung, nicht über den zehnten Produkt-Post. Jede Idee soll Patricia ein Stück nahbarer machen, nicht nur Information liefern.
+
 ## Output-Format (genau so, Telegram-tauglich, KEIN Markdown-Codeblock):
 
 🎬 <b>Story-Idee — [Wochentag DD.MM.] · [Profil]</b>
 📋 Plan: [Vorlagen-Name in 3-4 Worten] · Käufertyp [Name]
+🎨 Typ heute: [Mehrwert | Persönlich | Inspiration | Frage/Interaktion | Verkauf]
 💬 Dein Tag: [1 Satz, der ihr Erlebnis als roten Faden zusammenfasst]
 
 <b>Slide 1 — Hook:</b> „[fertiger BÄM-Hook zum Abtippen]"
@@ -821,7 +847,19 @@ def build_idee_user_prompt(profil: str, kontext: dict[str, Any], heute: date = N
         parts.append("\n# === PLAN DES TAGES (inhaltlich verbindlich) ===")
         parts.append(launch["prompt_block"])
 
-    # Monatsplan-MD (Wochenthema als Anker)
+    # === NOTION-WOCHENPLAN (spezifischer als Monatsplan → geht ihm inhaltlich vor) ===
+    if kontext.get("wochenplan"):
+        w = kontext["wochenplan"]
+        fdw = (w.get("fokus_der_woche") or "").strip()
+        body = (w.get("body_text") or "").strip()
+        if fdw or body:
+            parts.append("\n## 📌 Notion-Wochenplan (was DIESE Woche dran ist — geht dem allgemeinen Monatsthema vor)")
+            if fdw:
+                parts.append(f"**Fokus der Woche:** {fdw[:1000]}")
+            if body:
+                parts.append(f"\n**Wochenplan-Details:**\n{body[:1500]}")
+
+    # Monatsplan-MD (Wochenthema als Anker — greift, wenn der Wochenplan nichts Spezifisches vorgibt)
     mp = kontext.get("monatsplan_md")
     if mp and mp.get("wochen_pillar"):
         parts.append(f"\n## Wochen-Thema (Monatsplan): {mp['wochen_pillar']}")
@@ -846,8 +884,10 @@ def build_idee_user_prompt(profil: str, kontext: dict[str, Any], heute: date = N
 
 ## Dein Auftrag
 Schreibe JETZT die Story-Idee im vorgegebenen Telegram-Format.
+- Inhaltliche Priorität: Fokus-Override > Launch-Plan > Notion-Wochenplan > Monatsplan. Was weiter oben steht, gewinnt bei Widerspruch.
 - Verwebe Patricias Tag (roter Faden) mit dem Plan (Ziel + CTA).
-- Slide 1 muss als Hook knallen, Slide-Bogen der Vorlage folgen.
+- Slide 1 muss als Hook knallen; den Mittelteil nach Problem → Aha → Beispiel bauen (Patricias Erlebnis trägt jede Slide einen Schritt weiter).
+- Wähle den Story-Typ des Tages bewusst (Mehrwert/Persönlich/Inspiration/Frage/Verkauf), variiere ihn gegenüber den Vortagen und nenne ihn in der Kopfzeile („🎨 Typ heute").
 - CTA + Keyword EXAKT aus dem Plan.
 - Käufertyp des Tages im Ton treffen.
 - Anti-Halluzination: keine Zahl, die nicht in den Quellen/Input steht.
