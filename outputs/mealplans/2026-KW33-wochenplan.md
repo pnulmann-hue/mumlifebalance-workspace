@@ -92,8 +92,8 @@ Damit du deine Ziele wirklich triffst, kommt pro Tag ein kleiner Booster dazu:
 *Sizing: Frühstück + Mittag für **5 Personen** (du + 4 Kids), Abende **nur du**. Runde grosszügig auf, was die Kids gern zweimal essen. Was du eh im Haus hast → unter „Immer-Check" prüfen, nicht doppelt kaufen.*
 
 ### 🥩 Fleisch & Proteine (frisch/Theke)
-- **Hähnchenbrustfilet** — ca. **1,2 kg** (Grill-Mittag Mi für 5 + Halloumi-Couscous Sa + dein Thunfisch-Mittag Mo braucht keins → 1,2 kg reicht für Mi+Sa Familie)
-- **Rinderhackfleisch mager (3–7%)** — ca. **800 g** (Schlemmertopf Do + Big-Mac-Wrap Fr, je Familie)
+- **Hähnchenbrustfilet** — ca. **1,4 kg** (2 Familien-Mahlzeiten: Grill-Mittag Mi + Halloumi-Couscous Sa — je ~700 g für 5 Esser)
+- **Rinderhackfleisch mager (3–7%)** — ca. **1,2 kg** (2 Familien-Mahlzeiten: Schlemmertopf Do + Big-Mac-Wrap Fr — 800 g waren zu knapp)
 - **Rindertatar** *(optional statt Hack für die Wraps)* — 1 Pack, sonst weglassen
 - **Hähnchen-Aufschnitt** (Brustscheiben) — 1 Pack (Sonntagsfrühstück)
 
@@ -107,11 +107,11 @@ Damit du deine Ziele wirklich triffst, kommt pro Tag ein kleiner Booster dazu:
 
 ### 🥛 Milchprodukte & Eier (PROTEIN — Pflicht-Check!)
 - **Skyr Natur 0,2%** — **~3 kg (Grossgebinde!)** — dein Workhorse: Frühstücke (Overnight Oats, Chia, Apple Crumble, Pfannkuchen, Muffins) **+ täglicher 200-g-Protein-Booster** (allein 1,4 kg/Woche). Lieber zu viel als zu wenig.
-- **Magerquark 0,2%** — 500 g (Haferflockenbrötchen So + Dinkel-Sandwich Mo)
+- **Magerquark 0,2%** — **~2,5 kg** ⬅️ *für den Brötchen-Grossbatch!* (je 1 kg pro Batch + Rest für Dinkel-Sandwich). Ohne Batch wären's nur 500 g.
 - **Frühlingsquark / Quark 2,4%** (Milram o.ä.) — 1 Becher (Dinkel-Sandwich)
 - **Hüttenkäse / körniger Frischkäse** — **3 Becher** (Frühstück So + Abende Do + Mo)
 - **Frischkäse Doppelrahm (Philadelphia)** — 1 Becher (Sonntagsfrühstück)
-- **Eier** — **mind. 18 Stück** (Waffeln, Muffins, Makkaroni-Auflauf, Spargel-Pfannkuchen, Brownies, Kartoffelsalat) → *2 Kartons*
+- **Eier** — **mind. 20 Stück** (Muffins, Makkaroni-Auflauf, Ofen-Pfannkuchen, Brownies, Kartoffelsalat + Familien-Portionen) → *2 Kartons*
 - **Vollmilch 3–4%** — 1 L (Kaffee + Makkaroni-Auflauf + Spargel-Pfannkuchen)
 - **Kefir Natur mild 1,5%** — 1 L (Brombeer-Bowl)
 - **Joghurt Natur 3,5%** — 1 Becher (Wrap-Sauce Fr + Abend Mi)
@@ -119,20 +119,20 @@ Damit du deine Ziele wirklich triffst, kommt pro Tag ein kleiner Booster dazu:
 - **Crème fraîche** — 1 kleiner Becher (Kartoffelsalat So)
 
 ### 🧀 Käse
-- **Mozzarella light (8–9%)** — 2 Pack (Waffeln Di + Wrap Fr)
+- **Mozzarella light (8–9%)** — 1 Pack (Big-Mac-Wrap Fr)
 - **Schnittkäse** (Halbfett 20% + Vollfett) — 1 Stück je (Makkaroni-Auflauf + Dinkel-Sandwich)
 - **Parmesan** — 1 Stück (Makkaroni-Auflauf + Spargel-Pfannkuchen)
 - **Halloumi** — 1 Pack (Sa)
 - **Schafskäse light 9% (Salakis)** — **3 Pack** (deine Abende Di + Fr + Sa — die Feta-Salate sind nur für dich, passt also 👍)
 
 ### 🥦 Gemüse & Früchte *(Gemüsemann Kräuchi wenn möglich)*
-- **Grüner Spargel** — 2 Bund (Mittag So + Abend So)
+- ~~Grüner Spargel~~ **entfällt** (saisonal getauscht → Zucchini + grüne Bohnen)
 - **Brokkoli** — 1 Kopf (Mittag Mo)
-- **Zucchini** — 2 · **Aubergine** — 1 · **Rote Paprika** — 5 (Grill Mi, Schlemmertopf Do, Halloumi Sa)
+- **Zucchini** — **3** (Grill Mi + Ofen-Pfannkuchen So statt Spargel) · **Aubergine** — 1 · **Rote Paprika** — 5 (Grill Mi, Schlemmertopf Do, Halloumi Sa)
 - **Gurken** — **4 Stück** (zieht sich durch fast alle Abende)
 - **Radieschen** — 1 Bund · **Rucola** — 1 Beutel · **Feldsalat** — 1 Beutel · **Salatmischung/Kopfsalat** — 1 (Makkaroni-Beilage + Wrap)
 - **Lauch/Porree** — 1 Stange · **Gelbe + rote Zwiebeln** — je ein Netz · **Frühlingszwiebeln** — 1 Bund
-- **Grüne Bohnen** — 200 g (Schlemmertopf) · **Grüne Erbsen TK** — 1 Beutel (Abend Mo) · **Bohnensprossen** — 1 Pack
+- **Grüne Bohnen** — **~350 g** (Schlemmertopf Do + Kartoffelsalat So statt Spargel) · **Grüne Erbsen TK** — 1 Beutel (Abend Mo) · **Bohnensprossen** — 1 Pack
 - **Kartoffeln** — 1 kg (Schlemmertopf + Kartoffelsalat)
 - **Kirschtomaten** — 1 Schale · **Tomaten** — 6–8 Stück
 - **Wassermelone** — 1 kleine (Halloumi-Mittag Sa + dein Rucolasalat Fr)
@@ -140,17 +140,20 @@ Damit du deine Ziele wirklich triffst, kommt pro Tag ein kleiner Booster dazu:
 - **Frische Kräuter:** Schnittlauch, Petersilie, Dill, Basilikum
 
 ### 🌾 Stärke, Backen & Trocken
-- **Haferflocken** (glutenfrei wenn möglich) — **1 grosse Packung** (fast jedes Frühstück!)
+- **Haferflocken** (glutenfrei wenn möglich) — **~2,5 kg (Grossgebinde)** ⬅️ *inkl. 1 kg für den Hafer-Brötchen-Batch* — sonst Workhorse für fast jedes Frühstück
+- **Dinkelvollkornmehl** — **~1,2 kg** ⬅️ *inkl. 1 kg für den Dinkel-Brötchen-Batch* · **Dinkelmehl Type 630** — 1 Pack (Ofen-Pfannkuchen)
+- **Sprudelwasser** — 1 Flasche (Hafer-Brötchen-Batch, ~480 ml)
+- **Backpulver** — **grosse Dose / 5+ Päckli** (Batches brauchen ~8 TL + 3 Päckli, dazu Muffins/Brownies/Pfannkuchen)
 - **Vollkornnudeln** + **Makkaroni Vollkorn** + **Emmernudeln** — je 1 Pack
-- **Couscous** — 1 Pack · **Dinkelmehl Vollkorn + Type 630** — je 1 Pack
+- **Couscous** — 1 Pack
 - **Roggenvollkornbrot** — 1 Laib (Grill Mi + Abende Fr + Mo) · **Dinkelwraps** — 1 Pack
 - **Linsenwaffeln gesalzen (dmBio)** — 1 Pack (Abend Do)
 - **Chiasamen · Flohsamenschalen · Mandelmehl (teilentölt)** — je 1 Pack *(Vorrat-Check)*
 - **Kokosdrink + Mandeldrink Natur (dmBio)** — je 1 (Overnight Oats + Chia-Pudding)
-- **Backpulver, Kakaopulver, Vanillepulver, Zimt, Erythrit** *(Immer-Check)*
+- **Kakaopulver, Vanillepulver, Zimt, Erythrit** *(Immer-Check)*
 
 ### 🥜 Nüsse, Kerne, Öle, Saucen
-- **Gehobelte Mandeln · ganze Mandeln · Haselnüsse · Kürbiskerne · Pinienkerne** — je 1 Beutel
+- **Gehobelte Mandeln · ganze Mandeln · Haselnüsse · Kürbiskerne · Pinienkerne · Sonnenblumenkerne** *(Kürbis/Sonnenblume zum Wälzen der Dinkel-Brötchen)* — je 1 Beutel
 - **Pistazienmus (100%)** — 1 Glas (Overnight Oats) · **dunkle Schokolade 85%** — 1 Tafel
 - **Medjool-Datteln** — 1 Pack (Abend Do)
 - **Hummus** — 1 Becher · **Pesto Basilikum** + **Pesto Rosso** — je 1 Glas
@@ -158,7 +161,29 @@ Damit du deine Ziele wirklich triffst, kommt pro Tag ein kleiner Booster dazu:
 - **Olivenöl, Balsamico, weisser Balsamico, Weissweinessig, Brühe, Kräutersalz** *(Immer-Check)*
 
 ### ✅ Immer-Check (nachschauen statt kaufen)
-Olivenöl · Butter · Eier-Reserve · Tomatenmark · Senf · alle Essige · Brühe · Backpulver · Kakao · Gewürze · Kaffee · Sprudelwasser (für die Haferflockenbrötchen) · Knoblauch
+Olivenöl · Butter · Tomatenmark · Senf · alle Essige · Brühe · Kakao · Gewürze · Kaffee · Knoblauch
+
+---
+
+## 🥯 Brötchen-Grossbatch für den TK
+
+Beide Plan-Brötchen frieren top ein — mit deinen 2 Öfen backst du in einem Rutsch einen Wochenvorrat. Die Extra-Mengen dafür sind oben schon in der Einkaufsliste eingerechnet (Magerquark ~2,5 kg, Haferflocken ~2,5 kg, Dinkelvollkornmehl ~1,2 kg).
+
+### 1️⃣ Hafer-Quark-Brötchen — ×4 = ~32 Stück
+- **1 kg Haferflocken · 1 kg Magerquark · ~480 ml Sprudelwasser · 8 geh. TL Backpulver · Salz**
+- Verrühren → 5 Min quellen → Brötchen formen, in Haferflocken wälzen
+- **200 °C O/U ~25 Min** goldbraun (2 Bleche parallel)
+
+### 2️⃣ Dinkel-Protein-Brötchen — ~20 Stück
+- **1 kg Dinkelvollkornmehl · 1 kg Magerquark · 3 Päckli Backpulver · 2 TL Salz** · Kürbis-/Sonnenblumenkerne zum Wälzen
+- Trockenes mischen, Quark einkneten (klebrig, ggf. etwas Wasser) → Rollen formen
+- **200 °C nicht vorgeheizt 20 Min, dann 150 °C 5–10 Min**
+
+### ❄️ Einfrieren (beide gleich)
+1. **Komplett auskühlen** lassen.
+2. **Vorfrieren:** einzeln auf Blech ~1 h, dann in Beutel → kleben nicht zusammen.
+3. Haltbar **2–3 Monate**.
+4. **Aus dem TK:** gefroren **180 °C, 8–10 Min** aufbacken (oder Toaster/Airfryer) → wie frisch. 🙌
 
 ---
 
