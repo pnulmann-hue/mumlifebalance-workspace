@@ -19,16 +19,37 @@ tags: [mealplan]
 
 | Tag | 🌅 Frühstück (Familie · deine Portion) | 🍝 Mittag (Familie · deine Portion) | 🍎 Znüni | 🌙 Abend (nur du) |
 |---|---|---|---|---|
-| **Di 11.8** | Herzhafte Kräuterwaffeln · *433 kcal / 31P* | Makkaroni-Auflauf · *494 kcal / 36P* | Schoko-Muffin · *171 kcal / 13P* | 🎒 **To-Go:** Lisas Nudelbowl · *521 kcal / 36P* |
-| **Mi 12.8** | Pistazien Overnight Oats *(Di Abend vorbereiten)* · *439 kcal / 34P* | Hähnchen + Gemüse vom Grill + Knoblauchbrot · *509 kcal / 37P* | Apfel + Nüsse · *176 kcal / 3P* | Zitroniger Kichererbsen-Gurken-Salat *(ohne kochen)* · *481 kcal / 35P* |
-| **Do 13.8** | Brombeer-Kefir-Bowl · *436 kcal / 30P* | Schlemmertopf *(Hackfleisch-Eintopf)* · *504 kcal / 38P* | Schoko-Muffin · *171 kcal / 13P* | Linsenwaffeln mit Hüttenkäse + Gemüse · *500 kcal / 37P* |
-| **Fr 14.8** | Banana-Split-Chia-Pudding *(Do Abend vorbereiten)* · *441 kcal / 32P* | Big-Mac-Wrap mit Hackfleisch · *489 kcal / 35P* | Banane + Nüsse · *186 kcal / 4P* | Kräuter-Rucolasalat mit Wassermelone, Feta + Tomaten · *491 kcal / 37P* |
+| **Di 11.8** | Brombeer-Kefir-Bowl · *436 kcal / 30P* | Makkaroni-Auflauf · *494 kcal / 36P* | Schoko-Muffin · *171 kcal / 13P* | 🎒 **To-Go:** Lisas Nudelbowl · *521 kcal / 36P* |
+| **Mi 12.8** 🏋️ | Pistazien Overnight Oats · *439 kcal / 34P* | Hähnchen + Gemüse vom Grill + Knoblauchbrot · *509 kcal / 37P* | 🏋️ Pre/Intra-Shake · *206 kcal / 2P* | Zitroniger Kichererbsen-Gurken-Salat *(ohne kochen)* · *481 kcal / 35P* |
+| **Do 13.8** | Banana-Split-Chia-Pudding · *441 kcal / 32P* | Schlemmertopf *(Hackfleisch-Eintopf)* · *504 kcal / 38P* | Schoko-Muffin · *171 kcal / 13P* | Linsenwaffeln mit Hüttenkäse + Gemüse · *500 kcal / 37P* |
+| **Fr 14.8** 🏋️ | Brombeer-Kefir-Bowl · *436 kcal / 30P* | Big-Mac-Wrap mit Hackfleisch · *489 kcal / 35P* | 🏋️ Pre/Intra-Shake · *206 kcal / 2P* | Kräuter-Rucolasalat mit Wassermelone, Feta + Tomaten · *491 kcal / 37P* |
 | **Sa 15.8** | Apple Crumble mit Vanille-Skyr · *441 kcal / 30P* | Gegrillter Halloumi + Wassermelone + Couscous · *481 kcal / 36P* | Süßkartoffel-Brownie · *193 kcal / 13P* | Gurkensalat mit Pfirsich + Feta *(ohne kochen)* · *504 kcal / 36P* |
-| **So 16.8** | Sonntagsfrühstück mit Haferflockenbrötchen · *439 kcal / 34P* | Ofenspargel-Pfannkuchen · *490 kcal / 36P* | Süßkartoffel-Brownie · *193 kcal / 13P* | Ei-Spargel-Thunfisch-Kartoffelsalat · *498 kcal / 36P* |
-| **Mo 17.8** | Protein-Dinkel-Sandwich mit Käse + Tomaten · *439 kcal / 32P* | Nudeln mit Brokkoli + Thunfisch *(Kids: ohne Thunfisch)* · *472 kcal / 36P* | Banane + Nüsse · *176 kcal / 3P* | Frühlingsgemüsesalat mit grünen Erbsen + Radieschen · *477 kcal / 35P* |
+| **So 16.8** | Sonntagsfrühstück mit Haferflockenbrötchen · *439 kcal / 34P* | **Ofen-Pfannkuchen mit Zucchini** *(statt Spargel — saisonal)* · *~490 kcal / 36P* | Süßkartoffel-Brownie · *193 kcal / 13P* | **Ei-Kartoffelsalat mit Thunfisch + grünen Bohnen** *(statt Spargel — saisonal)* · *~498 kcal / 36P* |
+| **Mo 17.8** 🏋️ | Protein-Dinkel-Sandwich mit Käse + Tomaten · *439 kcal / 32P* | Nudeln mit Brokkoli + Thunfisch *(Kids: ohne Thunfisch)* · *472 kcal / 36P* | 🏋️ Pre/Intra-Shake · *206 kcal / 2P* | Frühlingsgemüsesalat mit grünen Erbsen + Radieschen · *477 kcal / 35P* |
 
-> ☕ **Kaffee** (Cappuccino mit 50 ml Vollmilch, 32 kcal) ist in deinem Plan täglich eingerechnet.
-> 🏋️ **Pre/Intra-Workout** (Apfelschorle + Banane, 206 kcal) nur an deinen **Trainingstagen** dazunehmen — dann landest du bei ~1850 kcal, sonst ~1640.
+> 🏋️ = **Trainingstag (Mo · Mi · Fr).** Hier ersetzt der Pre/Intra-Shake (Apfelschorle + Banane) den süssen Znüni.
+> ☕ **Kaffee** (Cappuccino mit 50 ml Vollmilch, 32 kcal) ist täglich eingerechnet.
+> 💪 **Protein-Booster** (200 g Skyr) läuft täglich mit — Details in der Makro-Tabelle unten.
+
+### 🌿 Saisonal angepasst (statt Spargel)
+Grüner Spargel hat im August keine Saison (CH-Saison: April–Juni). Beide Spargel-Gerichte bleiben dein Plan-Rezept, nur das Gemüse ist getauscht — Makros bleiben quasi gleich:
+- **So Mittag** – Ofen-Pfannkuchen: die 80 g grünen Spargel → **80 g Zucchini** (in Scheiben, genauso auf den Teig legen).
+- **So Abend** – Kartoffelsalat: die 100 g Spargel → **100 g grüne Bohnen** (5 Min blanchieren, in Stücke schneiden). Rest vom Rezept identisch (Kartoffel, Thunfisch, Ei, Gurke, Crème fraîche).
+
+---
+
+## ⏰ Was du WANN vorbereitest
+
+| Wann | Was vorbereiten | Für |
+|---|---|---|
+| **Mo Abend (heute)** | Nichts nötig – Di ist die Kefir-Bowl (5 Min frisch morgens) | Di Frühstück ✅ |
+| **Di Abend** | 1) **Pistazien Overnight Oats** ansetzen (Skyr + Kokosdrink + Haferflocken + Pistazienmus + Chiasamen, in Glas, Kühlschrank). 2) Für Di ausserdem: **Schoko-Muffins backen** – gleich **doppelte Menge** (deckt Di + Do Znüni) | Mi Frühstück · Di+Do Znüni |
+| **Mi Abend** | **Banana-Split-Chia-Pudding** ansetzen (Chiasamen + Mandeldrink + Skyr, Kühlschrank) | Do Frühstück |
+| **Fr oder Sa** | **Süsskartoffel-Brownies** als Batch backen | Sa + So Znüni |
+| **Sa Abend** | Optional: Teig für die **Haferflockenbrötchen** vorformen (spart So morgens Zeit) | So Frühstück |
+| **So Abend** | Optional: Teig für die **Dinkel-Brötchen** vorbereiten (Kühlschrank), Mo morgens nur backen | Mo Frühstück |
+
+**Kein Vorbereiten nötig** bei: Di/Fr Kefir-Bowl (5 Min), allen Mittagessen (frisch gekocht), allen Abend-Salaten (nur schneiden + mischen).
 
 ---
 
@@ -42,6 +63,27 @@ tags: [mealplan]
 - Alles in eine **auslaufsichere Box**, Gabel + Serviette einpacken → *521 kcal / 36P / 50KH / 19F*
 
 **Damit du unterwegs nicht drüber nachdenken musst** — schnelle Picknick-Ergänzung für Kids + Mann aus dem Vorrat (kein Extra-Kochen): Brot + Käse-/Aufschnitt, die **Schoko-Muffins** von Dienstag, Trauben/Apfel, ein paar Rüebli-Sticks, Wasser/Sirup. Fertig.
+
+---
+
+## 🎯 Makros exakt treffen — 1850 kcal / 135 P / 180 KH / 63 F
+
+Damit du deine Ziele wirklich triffst, kommt pro Tag ein kleiner Booster dazu:
+
+- **Trainingstage (Mo · Mi · Fr):** Pre/Intra-Shake *(Apfelschorle + Banane)* + **200 g Skyr** + **1 EL Mandeln** → der Shake liefert die Trainings-Carbs, Skyr + Mandeln heben Protein & Fett.
+- **Ruhetage (Di · Do · Sa · So):** süsser Znüni *(Muffin/Brownie)* + **200 g Skyr** + **1 Banane**.
+
+| Tag | Booster | = Tages-Total (kcal · P · KH · F) |
+|---|---|---|
+| **Di** | Skyr + Banane | **1854 · 140 · 188 · 60** ✅ |
+| **Mi** 🏋️ | Pre/Intra + Skyr + Mandeln | **1872 · 135 · 198 · 60** ✅ |
+| **Do** | Skyr + Banane | **1848 · 145 · 188 · 58** ✅ |
+| **Fr** 🏋️ | Pre/Intra + Skyr + Mandeln | **1859 · 131 · 191 · 60** ✅ |
+| **Sa** | Skyr + Banane | **1851 · 138 · 184 · 62** ✅ |
+| **So** | Skyr + Banane | **1852 · 143 · 181 · 62** ✅ |
+| **Mo** 🏋️ | Pre/Intra + Skyr + Mandeln | **1831 · 132 · 189 · 57** ✅ |
+
+→ Protein landet jeden Tag bei **131–145 g**, Kalorien bei **~1850**. Wenn du an einem Tag exakt auf 135 g willst und drunter bist (Fr/Mo ~131): einfach die Skyr-Portion auf **250 g** erhöhen (+5 g P). Das ist der einzige Stellhebel, den du brauchst.
 
 ---
 
@@ -61,9 +103,10 @@ tags: [mealplan]
 - **Weisse Bohnen Dose** — 1 Dose (Abend Mi)
 - **Mais Dose** — 1 kleine (Schlemmertopf)
 - **Tomatenmark** (2-fach konz.) — 1 Tube *(Immer-Check)*
+- **Apfelsaft naturtrüb** — 1 L (Pre/Intra-Shake an Trainingstagen Mo/Mi/Fr, je ~200 ml + Wasser)
 
 ### 🥛 Milchprodukte & Eier (PROTEIN — Pflicht-Check!)
-- **Skyr Natur 0,2%** — **mind. 1,5 kg** (Overnight Oats, Chia-Pudding, Apple Crumble, Spargel-Pfannkuchen, Muffins — Frühstücke laufen fast alle über Skyr!)
+- **Skyr Natur 0,2%** — **~3 kg (Grossgebinde!)** — dein Workhorse: Frühstücke (Overnight Oats, Chia, Apple Crumble, Pfannkuchen, Muffins) **+ täglicher 200-g-Protein-Booster** (allein 1,4 kg/Woche). Lieber zu viel als zu wenig.
 - **Magerquark 0,2%** — 500 g (Haferflockenbrötchen So + Dinkel-Sandwich Mo)
 - **Frühlingsquark / Quark 2,4%** (Milram o.ä.) — 1 Becher (Dinkel-Sandwich)
 - **Hüttenkäse / körniger Frischkäse** — **3 Becher** (Frühstück So + Abende Do + Mo)
@@ -93,7 +136,7 @@ tags: [mealplan]
 - **Kartoffeln** — 1 kg (Schlemmertopf + Kartoffelsalat)
 - **Kirschtomaten** — 1 Schale · **Tomaten** — 6–8 Stück
 - **Wassermelone** — 1 kleine (Halloumi-Mittag Sa + dein Rucolasalat Fr)
-- **Äpfel** — 6 (Apple Crumble + Znüni + Pre/Intra) · **Bananen** — **10** (Chia-Pudding, Muffins, Znüni, Pre/Intra) · **Brombeeren TK** — 1 Beutel · **Pfirsich** — 1 · **Erdbeeren** — 1 Schale · **Süsskartoffel** — 1 (Brownies) · **Zitronen + Limette** — je 1–2
+- **Äpfel** — 6 (Apple Crumble + Znüni) · **Bananen** — **15** (Chia-Pudding, Muffins, Pre/Intra-Shakes Mo/Mi/Fr, Ruhetags-Booster + Kids) · **Brombeeren TK** — 1 Beutel · **Pfirsich** — 1 · **Erdbeeren** — 1 Schale · **Süsskartoffel** — 1 (Brownies) · **Zitronen + Limette** — je 1–2
 - **Frische Kräuter:** Schnittlauch, Petersilie, Dill, Basilikum
 
 ### 🌾 Stärke, Backen & Trocken
@@ -130,9 +173,9 @@ Olivenöl · Butter · Eier-Reserve · Tomatenmark · Senf · alle Essige · Br�
 
 ---
 
-## 💡 Coaching-Impuls der Woche — Protein clever verteilen
+## 💡 Coaching-Impuls der Woche — Timing des Protein-Boosters
 
-Deine Plan-Tage landen (ohne Pre/Intra) bei **~115–120 g Protein** — die Frühstücke tragen mit ~30 g schon stark. Wenn du an einem Tag merkst, dir fehlen noch ein paar Gramm auf deine 135 g: **200 g Skyr oder 1 Becher Hüttenkäse** am Abend dazu bringt +20 g, ohne den Plan zu sprengen. Deshalb steht Skyr/Hüttenkäse bewusst reichlich auf der Liste. 🙌
+Deinen täglichen 200-g-Skyr-Booster musst du nicht auf einmal essen. **Split ihn:** die Hälfte morgens ins Frühstück, die Hälfte abends. So hast du über den Tag verteilt konstant Protein im Blut — besser für Muskelaufbau und Sättigung, als alles in einer Mahlzeit. An Trainingstagen: **Skyr eher nach dem Workout** (Regeneration), der Pre/Intra-Shake davor/dabei (Energie). 🙌
 
 ---
 
