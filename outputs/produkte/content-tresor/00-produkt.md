@@ -5,7 +5,7 @@ tags: [produkt]
 # Content-Box
 
 **Erfasst:** 2026-08-11 · **Kategorie:** Low Price Offer · **Preis:** 17 CHF (Bump) · Ø-Bestellwert mit Tripwire = 36 CHF
-**Notion:** [Content-Tresor](https://app.notion.com/p/3b97078e8b7e8192a3b5d3ffe1b7c82a)
+**Notion:** [Content-Box – 30 Hook-Vorlagen (Order Bump)](https://app.notion.com/3977078e8b7e81db8989e328d1abac96) *(mein Duplikat 11.8. archiviert)*
 **Datei:** OneDrive → `…\Business\Kurse\Orderbump\Contentbox Hookvorlage.pdf`
 
 ## Was es ist
