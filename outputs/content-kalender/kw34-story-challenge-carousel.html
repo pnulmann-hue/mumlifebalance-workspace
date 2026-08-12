@@ -1,0 +1,92 @@
+<style>
+:root{
+  --petrol:#12828c; --creme:#f4f0e6; --creme-2:#efe9db; --ink:#1c2f3a; --ink-soft:#5a6b74;
+  --orange:#dc822e;
+  --serif:'Philosopher',Georgia,'Times New Roman',serif;
+  --sans:'Source Sans 3',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#fff;}
+.slide{
+  width:1080px;height:1350px;position:relative;overflow:hidden;
+  background:var(--creme);color:var(--ink);
+  display:flex;flex-direction:column;justify-content:center;
+  padding:110px 96px;font-family:var(--sans);
+}
+.eyebrow{align-self:flex-start;display:inline-block;background:var(--petrol);color:#fff;
+  font-family:var(--sans);font-size:24px;font-weight:700;letter-spacing:5px;
+  text-transform:uppercase;padding:12px 26px;border-radius:100px;margin-bottom:44px;z-index:1;}
+.serif{font-family:var(--serif);font-weight:700;line-height:1.18;letter-spacing:-.5px;z-index:1;color:var(--ink);}
+.cover .serif{font-size:66px;}
+.body .serif{font-size:54px;line-height:1.3;}
+.hl{color:var(--orange);}
+.pt{color:var(--petrol);}
+.soft{color:var(--ink-soft);}
+.foot{position:absolute;left:96px;right:96px;bottom:64px;display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--sans);font-size:22px;letter-spacing:2px;color:var(--ink-soft);z-index:1;}
+.dots{display:flex;gap:9px;}
+.dot{width:11px;height:11px;border-radius:50%;background:rgba(28,47,58,.22);}
+.dot.on{background:var(--orange);}
+.swipe{font-weight:700;text-transform:uppercase;letter-spacing:3px;font-size:20px;color:var(--petrol);}
+.close{background:var(--petrol);color:var(--creme);}
+.close .serif{color:var(--creme);}
+.close .kicker{font-family:var(--serif);font-size:52px;line-height:1.24;color:var(--creme);z-index:1;}
+.cta{margin-top:52px;z-index:1;}
+.cta .label{font-family:var(--sans);font-size:27px;font-weight:700;letter-spacing:.5px;color:#fff;
+  background:var(--orange);display:inline-block;padding:22px 34px;border-radius:16px;line-height:1.3;}
+.handle{margin-top:38px;font-family:var(--sans);font-size:25px;letter-spacing:1px;color:rgba(244,240,230,.72);z-index:1;}
+.close .foot{color:rgba(244,240,230,.7);}
+.close .dot{background:rgba(244,240,230,.35);}
+.close .dot.on{background:var(--orange);}
+</style>
+
+<!-- 1 COVER -->
+<section class="slide cover">
+  <span class="eyebrow">Ab 1. September</span>
+  <h1 class="serif">Diesen Monat: 14 Reels gespeichert. 2 Kurse angefangen.<br><span class="hl">0 eigene Storys gepostet.</span></h1>
+  <div class="foot"><span class="swipe">→ weiterwischen</span><div class="dots"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 2 -->
+<section class="slide body">
+  <p class="serif">Kenn ich.<br><br>Du bleibst nicht am Wissen hängen — <span class="pt">am Anfangen.</span></p>
+  <div class="foot"><span>2 / 8</span><div class="dots"><span class="dot"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 3 -->
+<section class="slide body">
+  <p class="serif">Abends leuchtet das Kamera-Symbol, und du denkst:<br><br><span class="soft">„Was soll ich jetzt schon wieder erzählen?"</span></p>
+  <div class="foot"><span>3 / 8</span><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 4 -->
+<section class="slide body">
+  <p class="serif">Ab 1. September ändern wir das.<br><br><span class="pt">7 Tage Story-Challenge.</span> <span class="hl">Kostenlos.</span></p>
+  <div class="foot"><span>4 / 8</span><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 5 -->
+<section class="slide body">
+  <p class="serif">Jeden Tag ein kurzes <span class="pt">Impuls-Video</span> von mir + ein <span class="pt">Workbook</span> mit einer konkreten Aufgabe.</p>
+  <div class="foot"><span>5 / 8</span><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 6 -->
+<section class="slide body">
+  <p class="serif">In einer <span class="pt">Telegram-Gruppe</span> — wo du jederzeit deine Fragen stellen kannst.</p>
+  <div class="foot"><span>6 / 8</span><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 7 -->
+<section class="slide body">
+  <p class="serif">Nach 7 Tagen fühlt sich deine Story nicht mehr wie ein Kampf an —<br><br>sondern wie <span class="hl">deine Bühne.</span></p>
+  <div class="foot"><span>7 / 8</span><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot on"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 8 CLOSE -->
+<section class="slide close" style="justify-content:center;">
+  <p class="kicker">Start <span class="hl">1. September.</span><br>Bist du dabei?</p>
+  <div class="cta"><span class="label">Kommentier STORY und du bist dabei 🤍</span></div>
+  <div class="handle">@mumlifebalance_patricia_ulmann</div>
+  <div class="foot"><span>8 / 8</span><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot on"></span></div></div>
+</section>
