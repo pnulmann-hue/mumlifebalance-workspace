@@ -1,67 +1,34 @@
 {
-  "datum": "2026-08-12",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Eigene Meinung / klare Positionierung",
-        "titel": "Eigene Meinung / klare Positionierung",
-        "story_ziel": "Branchen-Mythos im Network-Marketing aufgreifen, klar positionieren (Repel + Anziehung).",
-        "kaeufertyp": "Frank",
-        "cta": "BIO oder thematisch passend",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 33,
-        "wochentag": "Mittwoch",
-        "datum": "2026-08-12"
-      },
-      "gesendet_am": "2026-08-12T04:42:01.288Z",
-      "telegram_message_id": 1084,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Eigene Meinung / klare Positionierung",
-        "titel": "Eigene Meinung / klare Positionierung",
-        "story_ziel": "Branchen-Mythos im Network-Marketing aufgreifen, klar positionieren (Repel + Anziehung).",
-        "kaeufertyp": "Frank",
-        "cta": "BIO oder thematisch passend",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 33,
-        "wochentag": "Mittwoch",
-        "datum": "2026-08-12"
-      },
-      "gesendet_am": "2026-08-12T04:42:02.398Z",
-      "telegram_message_id": 1085,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "mentoring",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "Bio-Check",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": "**Idee:** \"Zeig einen Screenshot aus deinem Teamchat oder deiner Kundenliste — wer sind die Frauen, die gerade bei dir sind? Erzähl: Was ist das eine Skill, das ALL deine erfolgreichsten Kundinnen gemeinsam haben, bevor sie zu dir kamen?\"\n\n**Muster:** Expertise / Skills-Slides + Glaubenssatz-Reframing (was hält sie zurück)\n\n**CTA:** \"Neugierig, ob DU dieses Skill hast? Mach meinen Bio-Check — 5 Min, dann weisst du, wo du wirklich stehst.\"",
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": null,
+  "launch_vorlage": null,
+  "kontext_snapshot": {
+    "kw": 33,
+    "wochentag": "Mittwoch",
+    "datum": "2026-08-12"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-08-12T05:59:32.163Z",
+  "telegram_message_id": 1086,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
