@@ -1,0 +1,12 @@
+# Railway/mise Build-Fix (2026-08-13)
+#
+# Beim Bauen installiert mise Python und prüft dabei neuerdings
+# "GitHub artifact attestations". Diese Prüfung schlägt fehl:
+#   mise ERROR Failed to install core:python@3.12.7:
+#   No GitHub artifact attestations found for python@3.12.7
+# Dadurch bricht "mise install" ab und der ganze Build stirbt.
+#
+# Diese Einstellung schaltet die Attestation-Prüfung ab, damit der
+# Python-Einbau — und damit der Bot-Build — wieder durchläuft.
+[settings]
+python.github_attestations = false

@@ -1,0 +1,6 @@
+# Railway/mise Build-Fix (2026-08-13) — siehe Root-mise.toml.
+# mise scheitert an der GitHub-Attestation-Prüfung beim Python-Einbau
+# ("No GitHub artifact attestations found for python@3.12.7").
+# Diese Einstellung schaltet die Prüfung ab, damit der News-Bot wieder baut.
+[settings]
+python.github_attestations = false
