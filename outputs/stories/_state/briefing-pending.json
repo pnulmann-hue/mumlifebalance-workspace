@@ -1,67 +1,34 @@
 {
-  "datum": "2026-08-13",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Quick Win",
-        "titel": "Quick Win",
-        "story_ziel": "Eine Formel/Methode die SOFORT funktioniert — Vertrauen + Expertise.",
-        "kaeufertyp": "Willi",
-        "cta": "thematisch passend (STORY / BIO)",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 33,
-        "wochentag": "Donnerstag",
-        "datum": "2026-08-13"
-      },
-      "gesendet_am": "2026-08-13T04:42:02.006Z",
-      "telegram_message_id": 1087,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Quick Win",
-        "titel": "Quick Win",
-        "story_ziel": "Eine Formel/Methode die SOFORT funktioniert — Vertrauen + Expertise.",
-        "kaeufertyp": "Willi",
-        "cta": "thematisch passend (STORY / BIO)",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 33,
-        "wochentag": "Donnerstag",
-        "datum": "2026-08-13"
-      },
-      "gesendet_am": "2026-08-13T04:42:02.822Z",
-      "telegram_message_id": 1088,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "doterra",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "doTERRA Lifestyle",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": "Idee: Patricia zeigt in ihrer Story, wie sie morgens 3 Tropfen Frankincense ins diffuser macht — und erklärt kurz, warum ausgerechnet dieses Öl für erschöpfte Mamas in der Vormenopause der Game-Changer ist (Energie, Fokus, innere Ruhe gleichzeitig).\n\nMuster: Expertise + Tool-/Methoden-Slide (ihr eigenes Daily-Ritual)\n\nCTA: \"Wenn du wissen willst, welche 3 Öle ich täglich nutze — schreib mir 'ENERGIE' in die DM, dann schick ich dir die komplette Liste für deinen Morgen.\"",
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": null,
+  "launch_vorlage": null,
+  "kontext_snapshot": {
+    "kw": 33,
+    "wochentag": "Donnerstag",
+    "datum": "2026-08-13"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-08-13T06:00:22.304Z",
+  "telegram_message_id": 1089,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
