@@ -1,67 +1,34 @@
 {
-  "datum": "2026-08-16",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Lifestyle / Sonntags-Reflexion / Lifehack",
-        "titel": "Lifestyle / Sonntags-Reflexion / Lifehack",
-        "story_ziel": "Nahbarer Produktivitäts-/Motivations-Hack oder ruhige Reflexion — Beziehung stärken.",
-        "kaeufertyp": "Ina",
-        "cta": "optional, niederschwellig",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 33,
-        "wochentag": "Sonntag",
-        "datum": "2026-08-16"
-      },
-      "gesendet_am": "2026-08-16T04:42:01.150Z",
-      "telegram_message_id": 1103,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Lifestyle / Sonntags-Reflexion / Lifehack",
-        "titel": "Lifestyle / Sonntags-Reflexion / Lifehack",
-        "story_ziel": "Nahbarer Produktivitäts-/Motivations-Hack oder ruhige Reflexion — Beziehung stärken.",
-        "kaeufertyp": "Ina",
-        "cta": "optional, niederschwellig",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 33,
-        "wochentag": "Sonntag",
-        "datum": "2026-08-16"
-      },
-      "gesendet_am": "2026-08-16T04:42:02.280Z",
-      "telegram_message_id": 1104,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "mentoring",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "Bio-Check",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": "Idee: Patricia zeigt ihren Bio-Check-Prozess live — wie sie in 10 Minuten durchscaut, wo eine Network-Mama wirklich blockiert ist (Positionierung? Messaging? Vertrauen?). Real, konkret, sofort hilfreich.\n\nMuster: Expertise / Tool-/Methoden-Slides (zeige dein System)\n\nCTA: \"Neugierig, wo DU steckst? Bio-Check buchen — Link in Bio\"",
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": null,
+  "launch_vorlage": null,
+  "kontext_snapshot": {
+    "kw": 33,
+    "wochentag": "Sonntag",
+    "datum": "2026-08-16"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-08-16T05:02:40.034Z",
+  "telegram_message_id": 1105,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
