@@ -94,6 +94,22 @@ Pro Türchen ein Video, in dem das Set vorgestellt und bebastelt wird. Zusätzli
 
 **Warum keine vollständige 24er-Liste:** YouTube zeigt pro Suche nur eine Auswahl und lädt den Rest per Lazy-Load, der in dieser Umgebung nicht greift. Die Kanal-Playlist-Seite steckt hinter einer Cookie-Wall, die ich nicht ohne Patricias Zustimmung wegklicke. Die Suchlinks oben sind der zuverlässige Weg — ein Klick, alle Tage der Serie.
 
+### ❌ Getestet und gescheitert: Sets ueber die Videos identifizieren (2026-08-18)
+
+Damit das niemand nochmal versucht — diese Wege sind tot:
+
+| Versuch | Ergebnis |
+|---|---|
+| Video-Beschreibungen lesen | leer / laedt nicht |
+| Videotitel auswerten | nur ‚Tag 10‘ — kein Set-Name |
+| **Thumbnails ansehen** | 9 heruntergeladen und geprueft: zeigen **Arbeitsschritte**, keine Set-Uebersichten (z.B. Jahreskalender 2023 Tag 01 = Falzvorgang dunkelblaues Papier; Advent 2021 Tag 14 = Osterkoerbchen auf dem Envelope Punchboard) |
+| Videos selbst ansehen | nicht moeglich — keine Videoanalyse |
+| Kanal-Playlists | Cookie-Wall, wird nicht ohne Patricias Zustimmung geklickt |
+
+**Fazit:** Eine automatische Zuordnung Spruch → Tuerchen gibt es nicht. Entweder Patricia sucht selbst per Klickliste, oder — besser — wir ueberspringen es: die Spruechefotos genuegen fuer Projektideen.
+
+**Nebenfund mit Wert:** Das **Envelope Punchboard kann Koerbchen** (Advent 2021 Tag 14 zeigt genau das). Patricia hat eins — also eine Technik, die sie sofort kann.
+
 **Für Textstempel-Sets ist das ohnehin unnötig** (siehe Tabelle oben): Foto reicht, ich lese die Sprüche.
 
 ---
