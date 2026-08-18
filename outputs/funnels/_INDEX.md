@@ -11,14 +11,6 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 - [[funnel-landkarte]]
 - [[instagram-lead-nurture-mails]]
 
-### 📁 mba-anrechnung-bestandskunden
-
-- [[blueprint]]
-- [[mail-1-dein-kurs-ist-drin]]
-- [[mail-2-eine-stufe-zwei-fehlen]]
-- [[mail-3-was-der-rest-kostet]]
-- [[mail-4-anrechnung-laeuft-aus]]
-
 ### 📁 bio-check
 
 - [[werbeanzeige-bio-check]]
@@ -34,23 +26,29 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 - [[README]]
 - [[leadmagnet-komplett]]
 
+### 📁 doterra-schlaf-ritual
+
+- [[freebie-3-abende-ritual]]
+
+### 📁 freischaufeln
+
+- [[manychat-flow-ZEITFENSTER]]
+
+### 📁 mba-anrechnung-bestandskunden
+
+- [[blueprint]]
+
 ### 📁 zentrale-pitch-automation
 
+- [[_BAU-LOG-LOKAL]]
 - [[ac-ist-zustand]]
 - [[blueprint]]
+- [[loop-3-expertin-warmup-entwurf]]
+- [[loop-5-mama-ceo-warmup-entwurf]]
+- [[loop-6-ikm-warmup-entwurf]]
+- [[loop-7-mba-warmup-entwurf]]
 - [[loop-ketten-mails]]
 - [[sichtbarkeit-engine-FINAL]]
 - [[umbau-plan]]
 - [[variante-B-mailsequenz]]
 - [[variante-C-mailsequenz]]
-
-#### 📁 zentrale-pitch-automation/mails (fertige HTML-Mails)
-
-- [[mail-E1-schaufenster]]
-- [[mail-E2-thema-finden]]
-- [[mail-M1-wende-story]]
-- [[mail-M2-alles-aus-einer-hand]]
-- [[mail-M3-einwaende]]
-- [[mail-M4-fuer-wen]]
-- [[mail-M5-pioneer]]
-- [[mail-D1-drei-tueren]]

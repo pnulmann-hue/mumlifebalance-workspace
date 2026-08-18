@@ -28,6 +28,10 @@ Auto-Index aller Files in `outputs/stories/`. Siehe [[_MOCs/MOC-Content-Engine]]
 
 - [[briefing]]
 
+### 📁 2026-07-03-mba-pitch
+
+- [[briefing]]
+
 ### 📁 preview-2026-06-09-doterra
 
 - [[_user_prompt]]

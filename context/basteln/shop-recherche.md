@@ -38,6 +38,66 @@ node scripts/basteln/sf-lookup.mjs SF363 SF370 SF353 --bilder
 
 ---
 
+## ⚠️ Wichtige Einschränkung: ausgelistete Sets (gelernt 2026-08-18)
+
+**Der Hersteller-Shop führt nur das aktuelle Sortiment.** Getestet: SF108–SF126 geben alle die Startseite zurück, die Geburtstag-Kategorie hat nur noch 6 Sets. Patricias älteres Sortiment ist dort nicht mehr auffindbar.
+
+**Ohne Artikelnummer auf der Verpackung ist ein altes Set praktisch nicht identifizierbar.** Händler-Restposten ([stempelmuehle.de](https://www.stempelmuehle.de/Stempel-Zubehoer/Stempel-S-Z/Scrapbook-Forever-Stempel/) hat SF-Nummern in der URL, [bigtime.ch](https://bigtime.ch/de/181_scrapbook-forever), [vohaerze.com](https://www.vohaerze.com/stempel-scrapbook-forever)) sind die einzige Chance — lohnt aber nur bei Motiv-Sets.
+
+**Die entscheidende Unterscheidung:**
+
+| Set-Typ | Braucht Hersteller-Ideen? | Vorgehen |
+|---|---|---|
+| **Textstempel-Set** (nur Sprüche) | ❌ nein | Foto reicht. Ich lese die Sprüche und baue Projekte direkt auf ihr Material |
+| **Motiv-Set** (zum Kolorieren) | ✅ ja, hilfreich | Beispielkarten zeigen Kolorier- und Aufbau-Technik → `sf-lookup.mjs`, wenn das Set noch im Shop ist |
+
+→ **Bei Textstempeln nie Zeit mit Nummern-Suche verbrennen.** Foto ansehen, Sprüche notieren, Projekte bauen.
+
+---
+
+## 📅 Kalender-Sets — die eigentliche Erklärung (gefunden 2026-08-18)
+
+**Viele von Patricias Sets stammen aus SF-Kalendern, nicht aus dem Shop-Sortiment.** Deshalb sind sie nirgends zu finden.
+
+- **Adventskalender:** 24 A7-Sonder-Sets pro Kalender (Coloration-, Silhouette- und Textstempel)
+- **Jahreskalender:** eigene Serie mit allgemeinen Lebenssprüchen
+- **Erkennungsmerkmal:** Lagernummer `WO1D38…` auf der Verpackung statt einer `SF___`-Artikelnummer. A7-Format.
+- **Im Shop:** die A7-Kategorie führt nur noch **1** Set (geprüft 2026-08-18) — die Kalender-Sets sind weg
+
+### Die Ideen dazu gibt es auf YouTube
+**Kanal:** [@scrapbookforever6137](https://www.youtube.com/@scrapbookforever6137) — Format „**Scrapbook Forever TV**"
+
+Belegte Serien:
+- „Scrapbook Forever TV **Adventskalender 2022** Tag 1…" ([Tag 1](https://www.youtube.com/watch?v=pCtIIqiFUUc), [Tag 10](https://www.youtube.com/watch?v=nlJ1DkgH5p0), [Tag 19](https://www.youtube.com/watch?v=Y8Q74V6Mhj0))
+- „Scrapbook Forever TV **Jahreskalender 2023** Tag 01…" ([Tag 01](https://www.youtube.com/watch?v=Dj6nOoCutMI), [Tag 02](https://www.youtube.com/watch?v=Z-f9eUTcLk8))
+
+Pro Türchen ein Video, in dem das Set vorgestellt und bebastelt wird. Zusätzlich lief der Kalender live in der **Facebook-Ideengruppe** (Mo–Fr 8:00), am Wochenende als Bildposts.
+
+**Grenzen:** YouTube liefert Videotitel („Tag 10"), aber keine Set-Namen — eine automatische Zuordnung Spruch → Türchen ist damit nicht möglich. Und die Videos selbst kann ich nicht ansehen, nur Metadaten lesen. Die Kanal-Übersicht lädt per Lazy-Load + Cookie-Wall; **Consent-Banner klicke ich nicht ohne Patricias Zustimmung**.
+
+### Patricias Kalender (von ihr bestätigt 2026-08-18)
+
+| Kalender | Status | Alle Tag-Videos |
+|---|---|---|
+| **Adventskalender 2021** | ✅ sicher dabei | [Suche öffnen](https://www.youtube.com/results?search_query=Scrapbook+Forever+TV+Adventskalender+2021+Tag) |
+| **Sommerkalender 2022 ‚Chill mal ab‘** | ✅ sicher dabei | [Suche öffnen](https://www.youtube.com/results?search_query=Scrapbook+Forever+TV+Chill+mal+ab+Tag) |
+| **Adventskalender 2022** | 🤔 glaubt ja | [Suche öffnen](https://www.youtube.com/results?search_query=Scrapbook+Forever+TV+Adventskalender+2022+Tag) |
+| Jahreskalender 2023 | ❓ unklar — aber Set 2 passt dazu | [Suche öffnen](https://www.youtube.com/results?search_query=Scrapbook+Forever+TV+Jahreskalender+2023+Tag) |
+
+**Belegte Direkt-Links (Stichproben):**
+- Adventskalender 2021: [Tag 01](https://www.youtube.com/watch?v=xWL07g9zN_Y) · [Tag 14](https://www.youtube.com/watch?v=4cNGkvFm83w) · [Tag 20](https://www.youtube.com/watch?v=wVfCB4W4psA) · [Tag 24](https://www.youtube.com/watch?v=SeGo1DeWv0k)
+- Adventskalender 2022: [Tag 1](https://www.youtube.com/watch?v=pCtIIqiFUUc) · [Tag 10](https://www.youtube.com/watch?v=nlJ1DkgH5p0) · [Tag 19](https://www.youtube.com/watch?v=Y8Q74V6Mhj0)
+- Jahreskalender 2023: [Tag 01](https://www.youtube.com/watch?v=Dj6nOoCutMI) · [Tag 02](https://www.youtube.com/watch?v=Z-f9eUTcLk8)
+- Sommerkalender-Ankündigung: [‚Chill mal ab‘ + Märzneuheiten](https://www.youtube.com/watch?v=5dJocrK7KEw)
+
+**Vermuteter Zusammenhang:** Die 109 Dateien in `Digistamps/Elemente-Chillkröten` stammen wahrscheinlich aus dem Sommerkalender ‚Chill mal ab‘ — Name und Thema passen. Nicht bestätigt.
+
+**Warum keine vollständige 24er-Liste:** YouTube zeigt pro Suche nur eine Auswahl und lädt den Rest per Lazy-Load, der in dieser Umgebung nicht greift. Die Kanal-Playlist-Seite steckt hinter einer Cookie-Wall, die ich nicht ohne Patricias Zustimmung wegklicke. Die Suchlinks oben sind der zuverlässige Weg — ein Klick, alle Tage der Serie.
+
+**Für Textstempel-Sets ist das ohnehin unnötig** (siehe Tabelle oben): Foto reicht, ich lese die Sprüche.
+
+---
+
 ## 🟡 Mundart Stempel — geht, aber ohne Automatik
 
 **Shop:** [mundartstempel.ch](https://www.mundartstempel.ch/de/) (Gambio) — Schweizer Laden, geführt von zwei Schwestern

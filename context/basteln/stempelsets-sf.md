@@ -31,7 +31,64 @@ node scripts/basteln/sf-lookup.mjs SF363 --bilder
 
 ## Erfasste Sets
 
-_(noch keine — schick mir das erste Foto)_
+### SF Stamps „Verspätete Geburtstagspost" (Name inoffiziell)
+- **Artikel-Nr.:** ❌ unbekannt — **Set ist beim Hersteller ausgelistet.** Geprüft 2026-08-18: Geburtstag-Kategorie führt nur noch 6 Sets, SF108–SF126 alle offline. Auf der Verpackung nur die Lagernummer (`WO:D38…`), keine SF-Nummer.
+- **Typ:** A6 Textstempel-Set, 7 Stempel, **kein Motivstempel** → keine Kolorierung nötig, sofort einsetzbar
+- **Zustand:** noch in Originalverpackung
+
+**Die 7 Sprüche:**
+| Stempel | Ton |
+|---|---|
+| Verspätete Geburtstagspost | sachlich-charmant |
+| Ich habe Deinen GEBURTSTAG vergessen. | Bekenntnis, Schreibschrift-Mix |
+| Upsi vergessen | frech, vertikal gesetzt |
+| Nachträglich | Schreibschrift, kurz |
+| Alles Liebe zum Geburtstag! | klassisch, 2-zeilig |
+| ALLES GUTE! | Versalien, vertikal — schmal, gut als Randakzent |
+| Entschuldigung! | Typewriter-Look, lange Zeile |
+
+**Warum dieses Set für dich Gold ist:** Es löst genau dein Problem. Du bist „nie vorbereitet" — mit einem Vorrat *nachträglicher* Karten ist Vergessen keine Panne mehr, sondern ein Stil. Das Set macht aus der Verspätung den Witz.
+
+**Projekte damit (alles aus deinem Bestand):**
+1. **Notvorrat „Upsi"** — 5 Karten aus `Karten/Kartenrohlinge`, gestempelt „Upsi vergessen" + „Nachträglich", Rest blanko. Liegen bereit, du schreibst nur noch rein.
+2. **Kombi mit Zahlen** — „Nachträglich" + grosse Zahl aus `Digistamps/Vintage Zahlen` oder `Coole Kalenderzahlen` → nachträgliche Rundgeburtstags-Karte
+3. **Ballon-Kombi** — „Alles Liebe zum Geburtstag!" mit Ballon-Motiven; du hast Copics für die Schattierung
+4. **Typewriter-Look** — „Entschuldigung!" auf Kraftpapier-Optik aus `Papier/Basics`, dazu Bakerstwine
+5. **Vertikaler Randakzent** — „ALLES GUTE!" ist schmal und hochkant: perfekt als Streifen neben einem Digipapier-Panel
+6. **doTERRA-Variante** — „Verspätete Geburtstagspost" auf einer Handcremebox mit Handcreme drin. Verspätet, aber mit Inhalt.
+
+**Dein Material dazu:** Kartenrohlinge ✅ · Digipapiere ✅ · Copics ✅ · Envelope Punchboard für passende Couverts ✅ · Stempelfarbe ❓ (welche hast du?)
+
+**Ideen-Quelle:** keine Hersteller-Beispielkarten nötig — Textstempel-Sets werte ich direkt über die Sprüche aus.
+
+---
+
+### SF Stamps „Glück bedeutet / Reichtum des Lebens" (Name inoffiziell)
+- **Artikel-Nr.:** ❌ unbekannt — **Kalender-Set, nie im normalen Sortiment.** Lagernummer auf der Verpackung: `WO1D38373`
+- **Typ:** A7 Textstempel-Set, 2 Stempel, reine Sprüche
+- **Herkunft:** Kalender-Set. Patricia besitzt **Adventskalender 2021** und **Sommerkalender 2022 ‚Chill mal ab‘** (beide bestätigt), wahrscheinlich auch **Adventskalender 2022**. Die zeitlosen Sprüche passen am besten zum Jahreskalender-Typ — Türchen über die YouTube-Klicklisten in [[shop-recherche]] findbar.
+
+**Die 2 Sprüche:**
+| Stempel | Gestaltung |
+|---|---|
+| Glück bedeutet …deinen eigenen Weg zu gehen. | „Glück bedeutet" in grosser Schreibschrift, Nachsatz klein in Druckschrift darunter |
+| Gesundheit, Liebe & schöne Momente sind der wahre Reichtum des Lebens. | mehrzeilig, Mix aus Schreibschrift-Highlights (Momente, Reichtum, Lebens) und Druckschrift — grosser Blockstempel |
+
+**⭐ Das ist dein wertvollstes Set — aus zwei Gründen:**
+
+1. **„Glück bedeutet deinen eigenen Weg zu gehen"** liegt genau auf deiner Marke („Funktionieren war gestern"). Karten mit diesem Spruch kannst du Mentees, Kundinnen und Freundinnen schenken, ohne dass es nach Business riecht.
+2. **„Gesundheit, Liebe & schöne Momente sind der wahre Reichtum des Lebens"** ist der **perfekte doTERRA-Begleiter** — er spricht von Gesundheit als Lebensqualität, ohne jedes Wirkversprechen. Compliance-sicher und trifft trotzdem den Kern.
+
+**Projekte damit:**
+1. **doTERRA-Geschenkkarte** — „Gesundheit, Liebe & schöne Momente" auf ein Kärtchen zur Handcremebox oder zum Flaschenanhänger. Compliance-sicher, weil der Spruch über *Leben* redet, nicht über Wirkung.
+2. **Der grosse Blockstempel als Hauptmotiv** — er füllt eine Karte fast allein. Auf Creme-Karton aus `Papier/Basics`, dünner Rahmen, fertig. Schnellste schöne Karte deines Bestands.
+3. **„Eigener Weg" + Gartenglück** — kombiniert mit Motiven aus `Digistamps/Elemente Gartenglück` (169 Motive) für Freundinnen-Karten
+4. **Umzugs-/Neuanfangs-Karte** — „deinen eigenen Weg zu gehen" passt auf Umzug, Jobwechsel, Schulabschluss. Anlass, für den du bisher nichts hattest.
+5. **Aquarell-Hintergrund** — grosser Textstempel auf zarten Aquarell-Wash, du hast Copics und die Gonis-Techniken
+
+**Dein Material dazu:** Kartenrohlinge ✅ · `Papier/Basics` (42) ✅ · Copics ✅ · Gonis Glitzer-/Spitzencreme für Akzente ✅
+
+**Achtung Technik:** Der grosse Blockstempel braucht gleichmässigen Druck — auf weicher Unterlage stempeln, sonst wird die Mitte blass.
 
 ---
 

@@ -8,12 +8,8 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 ## Dateien
 
+- [[network-bts-telegram-konzept]]
 - 📘 [[README]]
-
-### 📁 claude-als-networkerin
-
-- [[00-kurs-konzept]]
-- [[01-bruecke-lektion-von-chatgpt-zu-claude]]
 
 ### 📁 audit-2026-04-22
 
@@ -27,6 +23,23 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 - [[00-bootcamp-produkt]]
 - [[anmeldeseite]]
+
+### 📁 claude-als-networkerin
+
+- [[00-kurs-konzept]]
+- [[01-bruecke-lektion-von-chatgpt-zu-claude]]
+- [[02-begleittext-claude-video]]
+- [[03-business-brain-setup-paket]]
+- [[_INDEX]]
+
+### 📁 content-box
+
+- [[00-briefing]]
+- [[thrivecart-auslieferung]]
+
+### 📁 content-tresor
+
+- [[00-produkt]]
 
 ### 📁 die-umsetzerinnen-club
 
@@ -45,14 +58,17 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 ### 📁 doterra-mama-energie
 
-- [[00-markt-research]]
-- [[01-produkttreppe]]
-
-### 📁 doterra-mama-energie
-
 - [[00-briefing]]
 - [[00-markt-research]]
 - [[01-produkttreppe]]
+- [[02-freebie-3-tage-kickstart]]
+- [[03-automatisierung-ki-konzept]]
+- [[04-manychat-freebie-setup]]
+- [[05-freebie-mails-kickstart]]
+- [[06-produktpaket-21-tage]]
+- [[07-reel-opt-in-energie]]
+- [[08-bio-und-beitraege]]
+- [[_INDEX]]
 
 ### 📁 mama-ceo
 
@@ -79,8 +95,14 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[10-saeule-2-MASTER]]
 - [[10-saeule-3-MASTER]]
 - [[10-saeule-4-MASTER]]
+- [[10-saeule-5-MASTER]]
+- [[13-thrivecart-saeule-1-setup]]
 - [[13-thrivecart-saeule-2-setup]]
 - [[13-thrivecart-saeule-3-setup]]
+- [[13-thrivecart-saeule-4-setup]]
+- [[13-thrivecart-saeule-5-setup]]
+- [[13-thrivecart-so-gehts-weiter-setup]]
+- [[14-thrivecart-upload-GESAMT-checkliste]]
 - [[_KRITISCHER-AUDIT]]
 - [[_NEXT-SESSION-HANDOFF]]
 - [[_NOTION-MAI-EINTRAEGE]]
@@ -91,13 +113,28 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[01-modul-outline-v2]]
 - [[01-modul-outline]]
 - [[01-modul-uebersicht-KOMPAKT]]
+- [[_aufnahme-drehbuch-modul-4]]
+- [[_aufnahme-drehbuch-modul-5]]
+- [[README]]
+- [[_patricia-business-brief]]
 - [[_patricia-durchlauf-haushaltsbot]]
 - [[_re-eval-rohdaten]]
 - [[bonus-haushalts-helfer-bot-PATRICIA]]
+- [[bonus-1-cockpit-bot]]
+- [[bonus-2-haushalts-helfer-bot]]
+- [[bonus-3-kochassistent]]
+- [[bonus-4-gratis-chat-one-shot]]
+- [[bonus-5-businessbrief-erarbeiten]]
+- [[bonus-6-cowork-einrichten]]
+- [[bonus-7-claude-code-anleitung]]
+- [[bonus-8-notion-haushalts-liste]]
+- [[evergreen-aenderungsliste]]
 
 ### 📁 mba
 
 - [[08-webinar-plan]]
+- [[10-academy-architektur]]
+- [[11-willkommens-modul-und-callplan]]
 - [[_INDEX]]
 
 ### 📁 mba-launch
@@ -110,11 +147,22 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[feed-content-plan]]
 - [[launch-kalender-juli-2026]]
 - [[mail-sendeplan-bootcamp]]
+- [[mba-kurse-transformation]]
+- [[mba-list-mails]]
+- [[_onboarding-mails-setup]]
+- [[auslieferungsmail]]
+- [[mba-pitch-stories]]
 - [[mba-produktsteckbrief]]
 - [[mba-salespage]]
+- [[mba-start-hier-willkommen]]
+- [[mba-thrivecart-bausteine]]
+- [[story-fahrplan-juli-2026]]
 - [[story-plan-tag-fuer-tag-webinar-archiv]]
 - [[telegram-gruppe-bootcamp]]
 - [[_INDEX]]
+- [[zitate-uebersicht]]
+- [[webinar-aufnahme-skript-solo]]
+- [[webinar-folien-KOMPLETT]]
 - [[99-AC-SETUP-MBA]]
 - [[webinar-phase-1-folien]]
 
@@ -122,13 +170,19 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 - [[00-pia-architektur]]
 
+### 📁 storyideen-networkerinnen
+
+- [[willkommensmail]]
+- [[workbook]]
+
 ### 📁 vom-networkwissen-zur-digitalen-produktwelt
 
-- [[04-produktwelt-companion-MASTER]]
 - [[00-UEBERSICHT-UND-NAECHSTE-SCHRITTE]]
 - [[01-status-audit]]
 - [[02-ki-assistenten-konzept]]
 - [[03-fehlende-lektionen-roadmap]]
+- [[04-produktwelt-companion-MASTER]]
+- [[05-business-brain-setup-paket-produktwelt]]
 - [[AB-LEKTION-4.4-BIS-SCHLUSS]]
 - [[MODUL-3-ROHDATEI-FUER-CANVA-CHAT]]
 - [[MODUL-4-ROHDATEI-FUER-CANVA-CHAT]]

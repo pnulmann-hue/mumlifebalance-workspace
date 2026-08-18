@@ -14,3 +14,4 @@ Auto-Index aller Files in `outputs/monatsplaene/`. Siehe [[_MOCs/MOC-Produkte-Fu
 - [[2026-06-mentoring-monatsplan-v2-bootcamp]]
 - [[2026-06-mentoring-monatsplan]]
 - [[2026-06]]
+- [[2026-08]]

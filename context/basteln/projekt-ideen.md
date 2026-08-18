@@ -16,10 +16,37 @@ Deine Kombination ist stark: **Plotter + 21 Verpackungs-Bauformen + Wellness-Dig
 1. **Öl-Fläschchen bleiben im Original-Etikett.** Deine Bastelverpackung kommt *drumherum* — nie ein Öl umfüllen und selbst beschriften. Das ist Compliance, nicht Perfektionismus.
 2. **Auf deinen Kärtchen keine Wirkversprechen.** Also nicht „hilft bei X", sondern Duft, Ritual, Wohlfühlen, „bei mir war's so". → siehe `context/doTERRA/` + Compliance-Memory.
 
+### 🎯 Erst die Zielgruppe klären — dann den Inhalt (Patricias eigene Erkenntnis, 2026-08-18)
+
+**Ein 15ml-Öl ist nur für Leute ein Geschenk, die schon wissen, was sie damit tun.** Für alle anderen ist es ein Rätsel — „Niemand wacht mit Öl-Bedarf auf". Deshalb zwei Wege:
+
+#### Weg A — sie kennt doTERRA (Kundinnen, Team, Öle-Gruppe)
+**Inhalt:** 15ml-Fläschchen (ihr Standard-Format), 10ml-Roller, Proben-Vials
+**Verpackung:** `Anhänger/Flaschenanhänger mit Grußkarte` · `Verpackungen/Split-Top-Box` · `Danke Böxchen`
+**Kärtchen:** darf konkret sein — Anwendungs-Idee, Duft-Kombi, Ritual
+
+#### Weg B — sie kennt doTERRA NICHT (Nachbarin, Lehrerin, Gastgeschenk, Kindergeburtstags-Mama)
+Hier muss der Nutzen **ohne Erklärung funktionieren**. Ein Öl braucht Vorwissen, ein fertiges Produkt nicht.
+
+| Inhalt | Passende Verpackung | Warum es funktioniert |
+|---|---|---|
+| **Handcreme / Body Lotion** | `Verpackungen/Handcremebox` (24 Dateien) | Der Name der Box ist Programm. Jede Frau weiss, was Handcreme ist |
+| **Lippenbalsam** | `Böxchen` · `Button in der Box` | klein, selbsterklärend, wird benutzt |
+| **Duschgel / Bodywash klein** | `Kreativ_entspannt Shopping bag` | Wellness-Optik ohne Wellness-Erklärung |
+| **Beadlets** | `Sternenboxen` · `Danke Böxchen` | praktisch, niedrigschwellig |
+| **Selbstgemachtes mit Öl drin** — Badesalz, Zuckerpeeling, Duftsäckchen | `Ziehschachtel` · `Böxchen` · Gift Bag Punchboard | **Das Stärkste:** es ist ein Geschenk von dir, kein Produkt. Du bastelst eh — das Öl ist Zutat, nicht Botschaft |
+
+**Kärtchen bei Weg B:** kein Produktname, kein Pitch. Nur was drin ist und ein lieber Satz. Wenn Interesse kommt, kommt es von selbst — genau wie in deiner Positionierung.
+
+**Compliance bei Selbstgemachtem:** verschenken ja, verkaufen nein. Kein doTERRA-Logo aufs Etikett (Markenrecht), keine Wirkversprechen, Inhaltsstoffe draufschreiben.
+
+---
+
 ### Projekt 1 — Roller-Box aus der Handcremebox ⭐ Start hier
 - **Material:** `Verpackungen/Handcremebox` (24 Dateien) + Digipapier `Wellnesstag` oder `Basics`
-- **Warum:** Handcreme-Tuben und 10ml-Roller haben ähnliche Proportionen — schlank und hoch.
-- **Zu prüfen:** Masse der Box gegen deinen Roller. Falls zu knapp → im Plotter-Programm proportional skalieren.
+- **Warum:** Handcreme-Tuben, 15ml-Fläschchen und 10ml-Roller haben ähnliche Proportionen — schlank und hoch.
+- **Zu prüfen:** Masse der Box gegen ein 15ml-Fläschchen (Patricias Standard-Format). Falls zu knapp → im Plotter-Programm proportional skalieren.
+- **Doppelnutzen:** dieselbe Box trägt bei Weg A ein Öl, bei Weg B eine Handcreme. Einmal Datei anpassen, zwei Zielgruppen.
 - **Kärtchen dazu:** `Elemente-Wellnesstag` oder `Elemente-Sonnenschein` + Spruch aus `die-kleinen-Dinge`
 - **Einsatz:** Kundin-Dankeschön, Erstbestellung-Willkommen, Mitbringsel
 

@@ -59,6 +59,18 @@ Auto-Index aller Files in `outputs/karussells/`. Siehe [[_MOCs/MOC-Content-Engin
 
 - [[briefing]]
 
+### 📁 2026-07-13-mentoring-konsistenz-mythos
+
+- [[caption]]
+
+### 📁 2026-07-13-mentoring-produktbilder-weglassen
+
+- [[caption]]
+
+### 📁 2026-07-13-mentoring-reel-dreimal-umgeschnitten
+
+- [[caption]]
+
 ### 📁 master-template-guide
 
 - [[master-template-spec]]
