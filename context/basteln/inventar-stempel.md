@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1010** |
+| Clearstamps | **1015** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -127,7 +127,7 @@ Pflichtfelder pro Eintrag:
 
 Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht auswendig lernen — nur damit du weisst, wonach ich filtere.
 
-**Anlässe:** `geburtstag` · `weihnachten` · `advent` · `ostern` · `geburt` · `taufe` · `konfirmation` · `hochzeit` · `muttertag` · `vatertag` · `danke` · `trost` · `aufmunterung` · `umzug` · `neuanfang` · `schulanfang` · `abschluss` · `gute-besserung` · `einladung` · `sommer` · `herbst` · `winter` · `allgemein`
+**Anlässe:** `geburtstag` · `weihnachten` · `advent` · `ostern` · `geburt` · `taufe` · `konfirmation` · `hochzeit` · `muttertag` · `vatertag` · `danke` · `trost` · `aufmunterung` · `umzug` · `neuanfang` · `schulanfang` · `abschluss` · `gute-besserung` · `einladung` · `sommer` · `herbst` · `winter` · `neujahr` · `allgemein`
 
 **Empfänger:** `mama` · `papa` · `kind` · `freundin` · `kollegin` · `paten` · `oma-opa` · `partner`
 
@@ -187,13 +187,27 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 - **Warum Arbeitspferd:** deckt sechs Anlässe in einem Set ab. Die drei Bausteine „für dich / für euch / von Herzen" kombinieren sich mit **jedem** anderen Set. Und es enthält als einziges „herzliche Anteilnahme" — für Trauerfälle hattest du sonst nichts.
 
 ### 1005 — „Wintergeflüster" (Alexandra Renke) ⭐ grösstes Weihnachts-Set
-- **Typ:** Clearstamp-Set (Photopolymer) · **Format:** ca. 18 Stempel, Text + Motive, made in UK
+- **Typ:** Clearstamp-Set (Photopolymer) · **Format:** L'-Clear Stamp, **14 Textstempel** + Motive, made in UK
 - **Hersteller:** Alexandra Renke — **neuer Hersteller im Bestand** · **Artikel-Nr.:** `CS-XX-AR-W0016`
-- **Korrektur 19.8.:** Set heisst „Wintergeflüster" (Patricia-Angabe). Meine erste Erfassung als „Weihnachtsmomente" war eine Fehllesung des Verpackungsaufdrucks; die per Websuche gefundene Nummer `CS-AR-0229` gehört zu einem anderen Set. **Lehre: Artikelnummern aus Websuchen nicht ungeprüft übernehmen.**
-- **Inhalt Text:** Erst eins, dann zwei, dann drei, dann vier… · Weihnachtsmomente · Wintergeflüster (Rundstempel) · Weihnachtliche FAMILIENzeit · WeihnachtsTraum · FROHES FEST (im Geweih-Rahmen) · FÜR kleine WÜNSCHE · 3 magische Worte: HO HO HO · Lass uns einen Schneemann bauen! · WEHE, du weisst wieder vorher, was drin ist! · Ho Ho Fröhliche Weihnachten (Kreisstempel mit Herz) · Gänsehaut MOMENT · Barfuss im Schnee
-- **Inhalt Motive:** Schleife · Tannenzweig · Feder · kleiner Stern · dunkles Flächenelement
+- **Korrektur 19.8.:** Set heisst „Wintergeflüster", Art.-Nr. `CS-XX-AR-W0016` — beides Patricia-Angabe. Meine Erstlesung hatte drei Fehler: falscher Set-Name („Weihnachtsmomente" ist der Stempel *„Zauberhafte Weihnachtsmomente"*, nur halb gelesen), **„Happy Christmas" komplett übersehen**, und die per Websuche gefundene Nummer `CS-AR-0229` gehört zu einem anderen Set. **Zwei Lehren: Artikelnummern aus Websuchen nie ungeprüft übernehmen — und bei transparenten Folien mit vielen Kleinstempeln immer nachzählen lassen.**
+- **Inhalt Text (14, von Patricia bestätigt 19.8.):**
+  1. Erst eins, dann zwei, dann drei, dann vier…
+  2. Zauberhafte Weihnachtsmomente
+  3. Wintergeflüster *(Kreisstempel)*
+  4. Weihnachtliche Familienzeit
+  5. Weihnachtstraum
+  6. Frohes Fest *(im Hirschgeweih)*
+  7. 3 magische Worte: Hohoho
+  8. Für kleine Wünsche
+  9. Lass uns einen Schneemann bauen
+  10. Wehe, du weisst wieder vorher was drin ist
+  11. Hoho fröhliche Weihnachten *(Kreisstempel)*
+  12. Gänsehautmoment
+  13. Barfuss im Schnee
+  14. Happy Christmas *(einziger englischer Spruch)*
+- **Inhalt Motive:** Schleife · Tannenzweig · Feder · kleiner Stern · ein dunkles Flächenelement (nicht identifiziert)
 - **Tags:** `weihnachten` `advent` `winter` `textstempel` `motivstempel` `sofort-einsetzbar` `zum-kolorieren`
-- **Notiz:** Die humorvollen Sprüche sind das Besondere — „WEHE, du weisst wieder vorher, was drin ist!" auf einen Geschenkanhänger für die Familie. Die Rundstempel funktionieren als Siegel-Optik.
+- **Notiz:** Die humorvollen Sprüche sind das Besondere — „Wehe, du weisst wieder vorher was drin ist" auf einen Geschenkanhänger für die Familie, „Gänsehautmoment" und „Barfuss im Schnee" für Winterfotos. Die **zwei Kreisstempel** (Wintergeflüster, Hoho fröhliche Weihnachten) funktionieren als Siegel-Optik — und lassen sich gut mit den Hintergrund-Kreisen aus 1009 unterlegen.
 
 ### 1006 — „Magische Wintermomente" (SF, Silhouette)
 - **Typ:** Clearstamp-Set · **Format:** 2 Stempel — 1 grosser Silhouette-Motivstempel + 1 Textstempel
@@ -218,9 +232,9 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 - **Tags:** `trost` `textstempel` `motivstempel` `sofort-einsetzbar` `grossflächig`
 - **Warum wichtig:** Bis jetzt hattest du für Trauerfälle nur „herzliche Anteilnahme" aus 1004 — ein einzelner Baustein. Mit diesem Set entsteht eine **vollständige Trauerkarte**: der Sterne-Spruch trägt eine Karte allein, „Ohne Worte" ist für die Fälle, in denen jeder Satz zu viel wäre. Das Katzen-Motiv passt zusätzlich bei Tierverlust.
 
-### 1008 — Blumen-Outlines (Hersteller unbekannt) ⭐ dein Copic-Set
+### 1008 — Blumen-Outlines (ohne Herstellerangabe) ⭐ dein Copic-Set
 - **Typ:** Clearstamp-Set · **Format:** gross (ca. A5), ca. 12–14 Motivstempel, reine Outlines
-- **Hersteller:** unbekannt — kein Label im Foto sichtbar
+- **Hersteller / Artikel-Nr.:** **beides nicht vorhanden** — das Set trägt keine Herstellerangabe (von Patricia bestätigt 19.8., nicht nachfragen)
 - **Inhalt Motive** (alles Outline, zum Kolorieren):
   - grosse Sonnenblume
   - offene Rose · Rosenknospe mit Blatt
@@ -240,6 +254,50 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
   - Kreis hinter einer Blüte (1008)
   - Siegel-Optik unter einem Spruch
   - In hellem Farbton stempeln, sonst erschlägt das Muster den Vordergrund.
+
+---
+
+### 1010 — Blätter-Zweige, 3 Ranken (SF)
+- **Typ:** Clearstamp-Set · **Format:** 3 längliche Zweig-Stempel
+- **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** nicht abgelesen
+- **Inhalt Motive:** drei Blätter-Zweige in unterschiedlichen Blattformen — fein gefiedert, rundlich, spitz. Alle als schmale Ranke.
+- **Tags:** `allgemein` `sommer` `herbst` `danke` `trost` `motivstempel` `randakzent` `sofort-einsetzbar`
+- **Notiz:** Rand- und Rahmen-Set. Die Zweige laufen als Streifen am Kartenrand, unter einem Spruch oder im Kreis als Kranz. Neutral genug für jeden Anlass — auch für Trauerkarten (1007). Ergänzt 1008 um das grüne Beiwerk, das dort fehlt.
+
+### 1011 — Ornament-Hintergrund, ganzflächig (SF)
+- **Typ:** Clearstamp-Set · **Format:** 1 grosser rechteckiger Flächenstempel, ca. A6
+- **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** nicht abgelesen
+- **Inhalt Motiv:** dichtes Ornament-/Paisley-Muster über die ganze Fläche — Schnörkel und Blattwerk, barock anmutend
+- **Tags:** `allgemein` `hochzeit` `geburtstag` `hintergrund` `grossflächig` `sofort-einsetzbar`
+- **Notiz:** Deckt eine ganze Kartenfront ab — **damit brauchst du für edle Karten kein Designpapier.** Ton-in-Ton auf Creme stempeln, Motiv oder Spruch darüber. Gleichmässig einfärben und auf weicher Unterlage arbeiten, sonst bleibt die Mitte blass.
+
+### 1012 — Blatt gross, Grunge-Struktur (SF)
+- **Typ:** Clearstamp-Set · **Format:** 1 grosser Einzelstempel
+- **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** nicht abgelesen
+- **Inhalt Motiv:** grosses Blatt (oder Federform) mit gestreifter, ausgefranster Struktur — Grunge-Optik statt sauberer Outline
+- **Tags:** `allgemein` `herbst` `trost` `motivstempel` `grossflächig` `sofort-einsetzbar`
+- **Notiz:** Struktur-Stempel, lebt vom Farbverlauf statt von Kolorierung. Mehrfach überlappend in zwei Tönen gestempelt ergibt ein Blattwerk-Panel. Passt zu 1007 (Trauer) und zu Herbstkarten.
+
+### 1013 — Flasche mit Wildblumen (ohne Verpackung)
+- **Typ:** Clearstamp-Set · **Format:** 1 Hauptmotiv + 3–4 kleine Streu-Elemente
+- **Hersteller / Artikel-Nr.:** keine Verpackung vorhanden
+- **Inhalt Motive:** Flasche/Vase mit Wildblumen-Strauss (Hauptmotiv) · einzelne kleine Blätter und Blütenblätter zum Streuen
+- **Tags:** `allgemein` `danke` `geburtstag` `muttertag` `freundschaft` `umzug` `motivstempel` `zum-kolorieren` `mentoring-tauglich`
+- **Notiz:** Charmantes Einzelmotiv für Freundinnen-Karten — Wiesenblumen in der Flasche wirken beiläufig statt festlich. Mit Copic kolorieren, Streu-Elemente drumherum. Gute Kombination mit 1002 und 1003.
+
+### 1014 — Frohe Weihnachten & Neujahr (China-Import) ⭐ Lücke Neujahr
+- **Typ:** Clearstamp-Set · **Format:** ca. 6 Textstempel + ca. 6 Motive, Folie ohne Trägerkarton
+- **Hersteller:** unbekannt (Jinan, CN — EU-Rep SINO-SEAR GmbH Potsdam) · **Kennung:** Style One · Batch 08091203 · EAN 7962140916
+- **Inhalt Text:**
+  1. FROHE WEIHNACHTEN UND EIN GUTES NEUES JAHR
+  2. FROHE WEIHNACHTEN & EIN GESUNDES NEUES JAHR
+  3. FRÖHLICHE Weihnachten
+  4. Frohe Weihnachten MEINE LIEBEN
+  5. VON HERZEN FROHE WEIHNACHTEN
+  6. FROHE Weihnachten
+- **Inhalt Motive:** zwei Stern-Outlines (gross/klein) · kleiner gefüllter Stern · zwei Tannenbaum-Outlines stilisiert · kleines Herz · kleine Blättchen
+- **Tags:** `weihnachten` `advent` `winter` `allgemein` `neujahr` `textstempel` `motivstempel` `sofort-einsetzbar` `zum-kolorieren`
+- **Warum wichtig:** Die zwei langen Sprüche sind die **einzigen Neujahrsgrüsse im ganzen Bestand** — genau für die Weihnachtspost, die erst zwischen den Feiertagen ankommt. „MEINE LIEBEN" ist der Familien-Spruch, „VON HERZEN" der persönliche. Billiger Import, aber inhaltlich das praktischste Weihnachts-Textset.
 
 ---
 
