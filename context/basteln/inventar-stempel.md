@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1023** |
+| Clearstamps | **1024** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -393,9 +393,8 @@ Bis jetzt waren alle Vorrats-Karten unpersonalisiert — schön, aber beliebig. 
 ### 1022 — MEERESBRISE, Lebens- und Mutsprüche ⭐⭐⭐ stärkstes Mentoring-Set
 - **Typ:** Clearstamp-Set · **Format:** 8 Stempel — 5 grosse Textblöcke + 1 vertikaler Schriftzug + 2 Sonnen-Motive
 - **Hersteller / Artikel-Nr.:** nicht abgelesen
-- **⚠️ Nummer prüfen:** im Foto sieht die letzte Ziffer nach einer 9 aus (`1029`?). `1022` ist die logisch nächste — bitte bestätigen.
 - **Inhalt Text:**
-  1. Du wurdest geboren um **ECHT** zu sein, nicht um perfekt zu sein!  *(das Wort „ECHT" war von einer Lichtreflexion verdeckt — Lesung sehr wahrscheinlich, aber nicht sicher)*
+  1. Du wurdest geboren um **echt** zu sein, nicht um perfekt zu sein!  *(von Patricia bestätigt 19.8.)*
   2. Zuhause ist nicht einfach nur ein **ORT**, es ist ein wundervolles Gefühl!
   3. Fühl Dich gedrückt aus der Ferne
   4. Wer ins kalte Wasser springt, taucht in ein **Meer** voller Möglichkeiten!
@@ -413,6 +412,31 @@ Bis jetzt waren alle Vorrats-Karten unpersonalisiert — schön, aber beliebig. 
 Und **eine echte Lücke schliesst sich:** *„Fühl Dich gedrückt aus der Ferne"* ist Trost über Distanz — bei Krankheit, bei Kummer, wenn man nicht hinkann. Bisher hattest du für Trost nur `1007`, und das ist ein Trauerset für Todesfälle. Diese beiden Situationen brauchen unterschiedliche Karten.
 
 Dazu *„Zuhause ist ein Gefühl"* für Umzug und Einzug, und *„Sonne im Gesicht, Wind im Rücken"* als Segenswunsch für Abschied, Reise oder Schulabschluss.
+
+---
+
+### 1023 — Geburt & Lebensweisheiten, 8 Sprüche ⭐ Geburts-Lücke geschlossen
+- **Typ:** Clearstamp-Set · **Format:** grosse Folie, 8 Textstempel, durchgehend verschnörkelte Schreibschrift
+- **Hersteller / Artikel-Nr.:** nicht abgelesen · **Nummer angenommen** (im Foto keine sichtbar) — bitte bestätigen
+- **Inhalt — Geburt & Baby:**
+  1. Ein bisschen **Mama**, ein bisschen **Papa** und ganz viel **Wunder**
+  2. Wenn aus **Liebe** Leben wird, hat das **Glück** einen Namen
+  3. **Sterne** fallen nicht vom Himmel, sie werden **geboren**
+  4. Ab **sofort** gehen Schritt für Schritt zwei winzig kleine **Füsschen** mit
+- **Inhalt — Lebensweisheiten:**
+  5. **Lebe** jeden Moment
+  6. Wer um die ganze **Welt** reist, um das **Schöne** zu suchen, findet es nur, wenn er es in **sich** trägt  *(Goethe)*
+  7. Wer den Tag mit einem **Lächeln** beginnt, hat ihn bereits **gewonnen**
+  8. Auch der längste **Weg** beginnt mit einem kleinen **Schritt**
+- **Tags:** `geburt` `taufe` `muttertag` `allgemein` `neuanfang` `abschluss` `aufmunterung` `freundschaft` `textstempel` `grossflächig` `mentoring-tauglich`
+
+**Warum wichtig:** **Die Geburts-Lücke ist damit geschlossen.** Bisher hattest du dafür nur den Baustein „Willkommen kleines Wunder" aus 1018 — jetzt vier vollwertige Sprüche. Damit sind echte Geburts- und Babyparty-Karten möglich, passend zur **Kinderwagen-Box** aus deinem Plotter-Ordner.
+
+**Bonus fürs Mentoring:** *„Auch der längste Weg beginnt mit einem kleinen Schritt"* für Mentees am Anfang, und *„Wer den Tag mit einem Lächeln beginnt, hat ihn bereits gewonnen"*.
+
+**Stil-Hinweis:** Alle acht in derselben Schnörkelschrift — untereinander wirken sie als Serie, aber mit dem Versalien-Alphabet (1021) beisst sich das. Namen darum eher handschriftlich dazuschreiben.
+
+*(Bei Spruch 3 und 6 waren einzelne Wörter von Lichtreflexionen verdeckt — über den bekannten Wortlaut ergänzt.)*
 
 ---
 
