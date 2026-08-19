@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1028** |
+| Clearstamps | **1071** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -127,7 +127,7 @@ Pflichtfelder pro Eintrag:
 
 Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht auswendig lernen — nur damit du weisst, wonach ich filtere.
 
-**Anlässe:** `geburtstag` · `weihnachten` · `advent` · `ostern` · `geburt` · `taufe` · `konfirmation` · `hochzeit` · `muttertag` · `vatertag` · `danke` · `trost` · `aufmunterung` · `umzug` · `neuanfang` · `schulanfang` · `abschluss` · `gute-besserung` · `einladung` · `sommer` · `herbst` · `winter` · `neujahr` · `feier` · `kueche` · `allgemein`
+**Anlässe:** `geburtstag` · `weihnachten` · `advent` · `ostern` · `geburt` · `taufe` · `konfirmation` · `hochzeit` · `muttertag` · `vatertag` · `danke` · `trost` · `aufmunterung` · `umzug` · `neuanfang` · `schulanfang` · `abschluss` · `einladung` · `fruehling` · `sommer` · `herbst` · `winter` · `neujahr` · `feier` · `jubilaeum` · `garten` · `kinder` · `kueche` · `allgemein`
 
 **Empfänger:** `mama` · `papa` · `kind` · `freundin` · `kollegin` · `paten` · `oma-opa` · `partner` · `maenner`
 
@@ -549,6 +549,599 @@ Die Quellenangabe lautet **„Budda"** — richtig wäre *Buddha*. Ein Fehler de
 **Zweites Blumen-Set neben `1008`, aber anderes Repertoire:** dort Sonnenblume, Rose, Margerite, Hibiskus — hier Tulpen, Dahlie und der Vintage-Zweig.
 
 **Wichtig beim Bauen:** Die drei Stilrichtungen **nicht mischen**. Eine grafische Silhouette neben einer feinen Vintage-Strichzeichnung sieht nach Zufall aus. Pro Karte eine Richtung wählen.
+
+---
+
+### 1028 — Blumen-Motive III (kräftig/Folklore) + Ornament-Ranken
+- **Typ:** Clearstamp-Set · **Format:** grosse Folie, ca. 10 Motivstempel, kräftiger Strich mit gefüllten Flächen
+- **Hersteller / Artikel-Nr.:** nicht abgelesen
+- **Inhalt Blüten:**
+  - zwei grosse sternförmige Blüten mit spitzen Blütenblättern (Clematis-Typ), samt Knospen und Blättern
+  - Wildrose mit gezackten Blättern — kräftig, teils gefüllt
+  - kleine 5-blättrige Blüte · zwei mittlere Kirschblüten mit Blättern
+  - gefüllte Rose/Ranunkel, dunkel und kompakt
+  - Blätter-Zweig
+- **Inhalt Ornament-Ranken** *(neu im Bestand)*:
+  - grosse Barock-Ranke mit Blättern (gefüllt)
+  - Ranke mit integrierter Blüte
+  - kleine Schnörkel-Ranke
+- **Tags:** `allgemein` `hochzeit` `muttertag` `danke` `geburtstag` `sommer` `trost` `freundschaft` `motivstempel` `zum-kolorieren` `grossflächig`
+
+**Die Ornament-Ranken sind der eigentliche Gewinn.** Zusammen mit dem Ornament-Hintergrund `1011` bilden sie eine konsistente **Barock-Linie**: Flächenstempel als Untergrund, Ranke als Ecke oder Rand. Damit sind **edle, formelle Karten** möglich — Hochzeit, Jubiläum, Kondolenz — für die der übrige Bestand zu verspielt ist.
+
+**Dein dritter Blumen-Block** — und damit sind Blumen klar dein grösster Motiv-Schwerpunkt:
+
+| Set | Charakter |
+|---|---|
+| `1008` | saubere Outlines — Sonnenblume, Rose, Margerite, Hibiskus |
+| `1027` | drei Stile gemischt, inkl. **Tulpen** (Frühling) |
+| `1028` | kräftig/Folklore + **Ornament-Ranken** |
+
+Wenig Überschneidung, jedes mit eigenem Charakter. Der kräftige Strich hier funktioniert gut **einfarbig oder Ton-in-Ton** — du musst nicht kolorieren.
+
+---
+
+### 1029 — Rosen-Set (Outlines, mit langem Stiel)
+- **Typ:** Clearstamp-Set · **Format:** ca. 8 Motivstempel, feine Outlines zum Kolorieren
+- **Hersteller / Artikel-Nr.:** nicht abgelesen
+- **Inhalt Motive:**
+  - **langer Rosenstiel mit Dornen und Blatt** — quer, Kompositions-Element
+  - grosse offene Rose *(Statement-Motiv)* · offene Rose mittelgross · Rose halb offen mit Blättern · geschlossene Knospe mit Blättern
+  - Rosenblätter-Gruppe (drei Blätter mit Adern)
+  - kleiner Blüten-Zweig (Schleierkraut-Typ) · gefüllte Blüte (Gerbera/Aster, schattiert)
+- **Tags:** `allgemein` `muttertag` `hochzeit` `trost` `danke` `geburtstag` `freundschaft` `sommer` `motivstempel` `zum-kolorieren` `grossflächig`
+
+**Der lange Stiel macht daraus einen Baukasten.** Stiel, Blüte und Blätter einzeln setzen — dann entsteht eine langstielige Rose in beliebiger Länge, auch über die ganze Kartenhöhe. Kein anderes Set kann das.
+
+**Zwei starke Kombinationen aus deinem Bestand:**
+1. **Rose + Trauerspruch** aus `1023` oder `1007` = würdevolle Kondolenzkarte. Rosen sind das klassische Kondolenz-Motiv, und der lange Stiel wirkt darin besonders ruhig.
+2. **Rose + „HAB DICH lieb"** aus `1025` = Liebes- oder Valentinskarte. Physisch hast du sonst keinen Valentins-Spruch.
+
+---
+
+### 1030 — Blätter botanisch (11 Blattformen) ⭐ Herbst-Lücke geschlossen
+- **Typ:** Clearstamp-Set · **Format:** ca. 11 Motivstempel, naturalistisch mit Adern und Struktur
+- **Hersteller:** wahrscheinlich **Viva Decor** — der kleine Oval-Stempel auf der Folie ist dasselbe Logo wie auf 1038, ich hatte es als „Vira" gelesen
+- **Inhalt Motive:**
+  - grosses gefiedertes Blatt (Ahorn/Wein-Typ) · zwei gezackte Blätter mit Adern (gross und klein)
+  - Zweig mit gefiederten Blättern (Esche/Robinie-Typ)
+  - **Farn-Wedel** — fein gefiedert, lang
+  - zwei Blätter mit **Netz-/Punktstruktur** (wirken skelettiert)
+  - Eichenblatt-artig gelappt · tief gelapptes Blatt (Löwenzahn-Typ) · ovales Blatt mit Adern
+- **Tags:** `herbst` `allgemein` `trost` `danke` `sommer` `freundschaft` `motivstempel` `zum-kolorieren` `grossflächig` `sofort-einsetzbar`
+
+**Die Herbst-Lücke ist damit geschlossen** — bisher nur über `1010` (Zweige) und `1012` (Grunge-Blatt) abgedeckt, jetzt elf naturalistische Blattformen. Zusammen ergibt das einen kompletten Blätter-Baukasten.
+
+Der **Farn-Wedel** ist das modernste Motiv in deinem ganzen Bestand: elegant, zurückhaltend, passt sowohl zu Kondolenzkarten (mit `1023` oder `1007`) als auch zu formellen Anlässen. Die **Netz-/Skelett-Blätter** sind ungewöhnlich und Ton-in-Ton stark.
+
+**Und eine Idee ausserhalb der Karten:** Du hast einen Permakultur-Garten. Diese Blätter eignen sich für **Saatgut-Tütchen, Kräuter-Etiketten und Pflanzschilder** — mit dem Alphabet aus `1020` beschriftest du die Sorte dazu.
+
+---
+
+### 1031 — Universal-Sammelfolie, ~49 Sprüche ⭐⭐⭐ mit Schweizerdeutsch
+- **Typ:** Clearstamp-Set · **Format:** grosse Folie, ca. 49 Textstempel in Handschrift-Optik
+- **Hersteller / Artikel-Nr.:** nicht abgelesen
+- **Tags:** `geburtstag` `danke` `erfolg` `feier` `weihnachten` `neujahr` `trost` `gute-besserung` `entschuldigung` `geburt` `willkommen` `selbstgemacht` `dialekt` `freundschaft` `abschluss` `allgemein` `textstempel` `sofort-einsetzbar` `doterra-tauglich`
+
+**Inhalt, nach Anlass sortiert:**
+
+| Anlass | Sprüche |
+|---|---|
+| **Geburtstag** | Alles Gute · HAPPY BIRTHDAY · **Häppi Börsdei!** · **ZUM GEBURRI** · Gratuliere! · ♡-LICHEN GLÜCKWUNSCH · lass dich feiern! |
+| **Danke** | Ein herzliches Dankeschön · ein ♡-liches Dankeschön · HERZLICHEN Dank · danke |
+| **Gruss** | FÜR DICH · Liebe Grüsse · nur ein kleiner Gruss · einfach nur so · Einfach nur schön! · Lass dich drücken! · hab dich lieb! · **GUGUSELI!** |
+| **Erfolg & Lob** | **BESTANDEN!** · BRAVO! · Genial! · TOLL GEMACHT! · WOW! · SUPER! · Cool! · Rattenscharf |
+| **Feier** | Hip Hip Hurra! · Hoch die Tassen! · PROST! · ÜBERRASCHUNG! |
+| **Weihnachten & Neujahr** | FROHES FEST · FROHE WEIHNACHTEN · Himmlische Weihnachten · GUTEN RUTSCH · Frohes neues Jahr · Ein gutes neues Jahr |
+| **Trauer** | Herzliches Beileid · AUFRICHTIGE ANTEILNAHME |
+| **Krankheit** | **Gute Besserung!** |
+| **Entschuldigung** | ENTSCHULDIGUNG! · SORRY! |
+| **Geburt** | Hurra ein Baby! |
+| **Willkommen** | ♡-lich Willkommen |
+| **Selbstgemacht** | **Mit Liebe GEMACHT** · **SALBER GMACHT VO** |
+| **Funktion** | **HIER ÖFFNEN** · **HIER ZIEHEN** · ACHTUNG! |
+
+### Vier Dinge, die kein anderes Set hat
+
+**1. Schweizerdeutsch.** *Häppi Börsdei!* · *ZUM GEBURRI* · *GUGUSELI!* · *SALBER GMACHT VO* — sowas findest du in deutschen Sets nicht. Für dich als Schweizerin ist das der persönlichste Ton, den dein ganzer Bestand hergibt.
+
+**2. „SALBER GMACHT VO" und „Mit Liebe GEMACHT".** Das sind **Etiketten-Sprüche für Selbstgemachtes** — Marmelade, Badesalz, Zuckerpeeling. Und genau das fehlte für deinen **doTERRA-Weg B**: Selbstgemachtes mit Öl als Zutat, verschenkt statt gepitcht. Jetzt hast du die Aufschrift dafür.
+
+**3. „HIER ÖFFNEN" und „HIER ZIEHEN".** Funktionswörter für **interaktive Verpackungen** und Ziehkarten — passt direkt auf deine geplotteten Boxen.
+
+**4. Lockerer Ton.** *Rattenscharf · Cool! · WOW! · SUPER!* — für Jugendliche und Kinder. Der Rest deines Bestands ist deutlich erwachsener.
+
+**Und es schliesst fünf Lücken auf einen Schlag:** Gute Besserung (Krankheit war 0) · BESTANDEN!/TOLL GEMACHT! (Prüfung und Lob waren 0) · Herzliches Beileid (dritter Trauer-Block) · Entschuldigung · Willkommen.
+
+---
+
+### 1032 — Tropische Blätter (Monstera & Farn, Boho) (SF)
+- **Typ:** Clearstamp-Set · **Format:** 4 Motivstempel · **Lagernr.:** `WO1D28154` (evtl.)
+- **Inhalt Motive:** kleines Monstera-Blatt (gefüllt) · grosses Monstera-Blatt mit Stiel (gefüllt) · zwei gefiederte Farn-/Palmblätter mit sichtbaren Adern
+- **Tags:** `allgemein` `sommer` `danke` `freundschaft` `motivstempel` `grossflächig` `sofort-einsetzbar`
+- **Der modernste Look in deinem Bestand.** Deutlich zeitgenössischer als die klassischen Blumen-Sets und die botanischen Blätter aus `1030`. Monstera wirkt gross und einfarbig am besten — **in Petrol wird es deine Brand-Farbe**. Gut für jüngere Empfängerinnen und für Karten ohne Anlass.
+
+---
+
+### 1033 — Trauerspruch „Sterne sind die Vergissmeinnicht der Engel" (SF)
+- **Typ:** Clearstamp-Set · **Format:** 1 Textstempel **in Zierrahmen-Form** · **Lagernr.:** `WO1D27211` (evtl.)
+- **Inhalt Text:** Sterne sind die Vergissmeinnicht der Engel
+- **Tags:** `trost` `textstempel` `grossflächig` `sofort-einsetzbar`
+
+**Damit ist eine Sterne-Trauer-Familie komplett:**
+
+| Set | Spruch |
+|---|---|
+| `1007` | Erinnerungen sind kleine Sterne, die tröstend in das Dunkel unserer Trauer leuchten |
+| `1023` | Wenn die Sonne des Lebens untergeht, dann leuchten die Sterne der Erinnerung |
+| `1033` | Sterne sind die Vergissmeinnicht der Engel |
+
+Alle drei sind bildlich verwandt und lassen sich mit **denselben Motiven** kombinieren: Sterne aus `1016`, Farn aus `1030` oder `1032`, Rosen aus `1029`, Zweige aus `1010`. Praktisch heisst das: bei mehreren Trauerkarten in Folge kannst du den Spruch wechseln, ohne den Stil zu brechen. Der **Zierrahmen** um den Text macht ein zusätzliches Rahmen-Element unnötig.
+
+---
+
+### 1034 — Winter-Poesie (SF)
+- **Typ:** Clearstamp-Set · **Format:** 2 Textstempel — 1 grosser + 1 kleiner
+- **Inhalt Text:** Schneeflocken sind die Schmetterlinge des Winters · **Glitzer Momente**
+- **Tags:** `winter` `weihnachten` `advent` `allgemein` `textstempel` `grossflächig` `sofort-einsetzbar`
+- **Wozu:** Ein poetischer Winterspruch **ohne Weihnachtsbezug** — damit sind Winterkarten im Januar und Februar möglich, wo deine anderen Winter-Sets zu weihnachtlich wären. „Glitzer Momente" funktioniert sogar ganz ohne Winter: Fotoalben, Erinnerungen, Feiern.
+
+---
+
+### 1035 — „Loslassen kostet weniger Kraft…" (SF) ⭐⭐ der tiefste Spruch
+- **Typ:** Clearstamp-Set · **Format:** 1 grosser Textstempel, 4-zeilig + 2 kleine Elemente · **Lagernr.:** `WO1D18187` (evtl.)
+- **Inhalt Text:** *Loslassen kostet weniger Kraft als Festhalten und trotzdem ist es so viel schwerer.*
+- **Tags:** `trost` `neuanfang` `abschluss` `umzug` `aufmunterung` `allgemein` `textstempel` `grossflächig` `mentoring-tauglich`
+
+**Dieser Spruch füllt eine Lücke, die ich bisher nicht benennen konnte.** Zwischen deinen Trauer-Sets (`1007`, `1023`, `1033` — alle für Todesfälle) und den Mut-Sprüchen (`1021`, `1026`) lag eine leere Zwischenlage: **Trennung, Scheidung, Kinder die ausziehen, ein Job den man aufgibt, ein Abschied ohne Todesfall.** Dafür hattest du nichts.
+
+**Auch stark fürs Mentoring** — für Mentees, die etwas aufgeben müssen, um weiterzukommen.
+
+Und das Beste daran: der Spruch **urteilt nicht und tröstet nicht billig**. Er benennt nur. Deshalb funktioniert er auch dann, wenn man eigentlich nicht weiss, was man sagen soll.
+
+---
+
+### 1036 — Wildflower (englisch, Vintage-Dictionary-Stil)
+- **Typ:** Clearstamp-Set · **Format:** ca. 7 Stempel — 2 Text + 5 Motive
+- **Hersteller / Artikel-Nr.:** nicht abgelesen
+- **Inhalt Text:**
+  - **Bloom** *(geschwungener Schriftzug)*
+  - *May your life be like a wildflower… Growing freely in the beauty & joy of each new day.*
+- **Inhalt Motive:**
+  - **Blütenblätter mit Wörterbuch-Text** — fünf Blütenblätter, innen mit Lexikon-Definitionen gefüllt (hibiscus, mallow family, flower). Ungewöhnliches Mixed-Media-Motiv, gibt's in keinem anderen Set
+  - grosse 5-blättrige Blüte, innen mit kleinen Blumen-Ornamenten
+  - grosse Wildblume/Hibiskus (feine Outline) · Blatt · kleiner Rosen-Ornament-Zweig
+- **Tags:** `allgemein` `geburtstag` `neuanfang` `abschluss` `freundschaft` `sommer` `danke` `textstempel` `motivstempel` `zum-kolorieren` `mentoring-tauglich`
+- **Der Wildflower-Spruch ist mentoring-tauglich** und trifft dasselbe Thema wie „Glück bedeutet deinen eigenen Weg zu gehen" (`1002`) und „Du wurdest geboren um echt zu sein" (`1021`) — nur auf Englisch, dadurch unauffälliger und dekorativer. Die Dictionary-Blütenblätter funktionieren stark als Collage auf Kraftpapier oder Buchseiten-Optik.
+
+---
+
+### 1037 — Kirschblüten-Zweige (Sakura) (SF) ⭐ Ostern-Lücke motivisch zu
+- **Typ:** Clearstamp-Set · **Format:** 5 Motivstempel — 2 lange Zweige + 3 einzelne Blüten
+- **Hersteller:** Scrapbook Forever
+- **Inhalt Motive:** grosser Kirschblüten-Zweig (lang, viele Blüten und Knospen) · zweiter Zweig (voller, andere Anordnung) · Kirschblüte mittel · Kirschblüte klein · einzelne detaillierte Blüte
+- **Tags:** `ostern` `sommer` `muttertag` `hochzeit` `danke` `freundschaft` `geburtstag` `allgemein` `motivstempel` `zum-kolorieren` `grossflächig`
+
+**Zweites Frühlings-Set nach `1027` (Tulpen)** — damit ist die Ostern-Lücke **motivisch geschlossen**. Kirschblüten sind das Frühlingsmotiv schlechthin: Ostern, Muttertag, Frühlingsgrüsse.
+
+Die **zwei langen Zweige** sind Rand- und Rahmen-Werkzeuge: als Bordüre über die Kartenbreite oder als Rahmen um einen Spruch. Die einzelnen Blüten streust du dazu. Fein gezeichnet, lebt von zarter Kolorierung — Rosa-Töne mit Copic. Mit „FRÖHLICHE Grüsse" aus `1025` steht die Osterkarte, mit einem Sakura-Zweig auch eine Hochzeitskarte.
+
+---
+
+### 1038 — Doodle-Blumen & Ornamente (Viva Decor)
+- **Typ:** Clearstamp-Set · **Format:** ca. 11 Motivstempel, Doodle-/Zentangle-Stil
+- **Hersteller:** **Viva Decor** (Logo auf der Folie)
+- **Inhalt Motive:**
+  - lange Schnörkel-Bordüre (Wellen und Spiralen, vertikal)
+  - Schmetterling · **Pusteblume** als Kreis mit feinen Punkten
+  - Blätter-Zweig mit Adern · Margerite/Gerbera mit Blättern · Chrysantheme spiralig
+  - grosses Kalligrafie-Ornament (Paisley-artig) · verschlungene Blüten-Ranke
+  - kleine Ornament-Ecke mit Herz · Punkt-Kreise · kleine Kreuze/Sterne
+- **Tags:** `allgemein` `geburtstag` `danke` `freundschaft` `sommer` `aufmunterung` `motivstempel` `zum-kolorieren` `randakzent`
+
+**Der verspielteste Look in deinem Bestand** — handgezeichneter Doodle-Charakter, deutlich lockerer als die botanischen Sets.
+
+**Die Pusteblume ist das wertvollste Einzelmotiv:** Dandelions stehen für Loslassen und Wünsche. Das passt inhaltlich genau zum Loslassen-Spruch aus `1035` und zu den Trauersprüchen — eine der stärksten Kombinationen, die dein Bestand hergibt.
+
+**Zier-Repertoire komplett:** Schnörkel-Bordüre und Ornament-Ecke hier, Ranken aus `1028`, Ornament-Hintergrund `1011`. Damit kannst du jede Karte rahmen. Die Punkt-Kreise und Kreuze füllen leere Stellen.
+
+---
+
+### 1039 — Frühlingsblumen + Mut-Sprüche (SF)
+- **Typ:** Clearstamp-Set · **Format:** 4 Stempel — 2 Motive + 2 Textstempel
+- **Hersteller:** Scrapbook Forever
+- **Inhalt Motive** — beide **eigenständig einsetzbar**, nicht nur als Beiwerk zum Spruch:
+  1. **Geschlossene Tulpe mit Blättern** (Outline) — trägt eine Karte allein, kombiniert mit jedem Spruch
+  2. **Schneeglöckchen mit Blättern** (Outline) — frühester Frühling
+- **Inhalt Text:**
+  1. GIB IMMER DER **Möglichkeit** EINE CHANCE
+  2. **CARPE DIEM**
+- **Tags:** `fruehling` `ostern` `neuanfang` `aufmunterung` `abschluss` `geburtstag` `allgemein` `textstempel` `motivstempel` `zum-kolorieren` `mentoring-tauglich`
+
+**Das Schneeglöckchen ist ein Alleinstellungsmotiv** — frühester Frühling, Februar/März. Damit deckst du jetzt die ganze Frühlingsspanne ab:
+
+`1039` Schneeglöckchen → `1027`/`1039` Tulpen → `1037` Kirschblüten. Drei Sets, drei Zeitpunkte.
+
+*„GIB IMMER DER MÖGLICHKEIT EINE CHANCE"* ist mentoring-tauglich — verwandt mit „Wer ins kalte Wasser springt…" aus `1021`, aber deutlich sanfter. Und *„CARPE DIEM"* ist der kürzeste universelle Spruch im Bestand: Geburtstag, Abschluss, Neuanfang, sogar Geschenkanhänger.
+
+**Die beiden Blumen sind frei kombinierbar** — Tulpe und Schneeglöckchen funktionieren mit jedem Spruch aus deinem Bestand, nicht nur mit den zwei aus diesem Set. Tulpe + „FRÖHLICHE Grüsse" (`1025`) = Osterkarte. Schneeglöckchen + „Gute Besserung!" (`1031`) = Aufmunterung im Februar. Schneeglöckchen + Loslassen-Spruch (`1035`) = ein leiser Neuanfang.
+
+---
+
+### 1040 — Margeriten & Jubiläum (SF) ⭐ neuer Anlass
+- **Typ:** Clearstamp-Set · **Format:** ca. 8 Stempel — 3 Blüten + 2 Stiele + 3 Textbausteine · **Lagernr.:** `WO1D54944` (evtl.)
+- **Hersteller:** Scrapbook Forever
+- **Inhalt Motive** — die drei Blüten sind **vollwertige Einzelmotive**, unabhängig vom Jubiläum-Text:
+  1. **Grosse Margerite/Gerbera von der Seite** (Outline) — die dynamischste der drei
+  2. **Margerite frontal** (Outline) — die klassische
+  3. **Dritte Margerite in anderer Perspektive** — leicht gedreht
+  4. **Zwei lange geschwungene Stiele** als separate Stempel
+- **Inhalt Text:** **Jubiläum** *(Schreibschrift)* · ZUM · ALLES LIEBE
+- **Tags:** `jubilaeum` `hochzeit` `geburtstag` `danke` `freundschaft` `sommer` `muttertag` `allgemein` `motivstempel` `textstempel` `zum-kolorieren` `grossflächig`
+
+**Bringt einen Anlass, den du noch nicht hattest: Jubiläum.** Hochzeitstag, Firmen- oder Vereinsjubiläum — dafür gab es in keinem Set etwas. Die Bausteine sind **modular**: „ZUM" + „Jubiläum" zusammen, „ALLES LIEBE" separat.
+
+**Die separaten Stiele sind der zweite Clou** — dasselbe Prinzip wie beim Rosenstiel in `1029`. Blüte und Stiel einzeln setzen, dann steht die Margerite in beliebiger Höhe und Neigung. Und weil du **drei Perspektiven derselben Blume** hast, wirkt eine Gruppe natürlich statt wie dreimal derselbe Abdruck.
+
+**Die Margeriten sind nicht ans Jubiläum gebunden** — sie sind dein vielseitigstes Blumen-Motiv, weil Margeriten weder festlich noch traurig wirken. Sie passen zu Geburtstag, Danke, Muttertag, Sommergruss und Freundschaft gleichermassen. Kombinationen: Margerite + „HAB DICH lieb" (`1025`), + Rechen-Spruch (`1020`), + „Du wurdest geboren um echt zu sein" (`1021`), + „CARPE DIEM" (`1039`).
+
+**Und ein Baukasten-Hinweis quer über die Sets:** Du hast jetzt drei Sets mit separaten Stielen oder langen Zweigen — Rosenstiel (`1029`), Margeriten-Stiele (`1040`), Kirschblüten-Zweige (`1037`). Die Stiele lassen sich **untereinander tauschen**: Margeriten-Blüte auf Rosenstiel, oder mehrere Blütensorten an einem Strauss. Damit wird aus vier Blumen-Sets ein einziges grosses Sortiment.
+
+---
+
+### 1041 — Weihnachtswichtel + Kugeln ⭐ erste Weihnachts-Figuren
+- **Typ:** Clearstamp-Set · **Format:** ca. 9 Stempel · **Lagernr.:** `SO1D812`
+- **⚠️ Stanzen vorhanden** — Nummerierung offen, siehe Hinweis unten
+- **Inhalt Motive:** zwei grosse **Weihnachtswichtel** (Zipfelmütze, Bart, Füsse — zwei Varianten) · grosse Weihnachtskugel mit Aufhänger · kleine Weihnachtskugel · drei bis vier Schneeflocken/Sterne
+- **Inhalt Text:** Frohes Fest
+- **Tags:** `weihnachten` `advent` `winter` `motivstempel` `textstempel` `zum-kolorieren` `grossflächig`
+
+**Das erste Figuren-Set in deinem Weihnachts-Bestand.** Bisher war alles Text (`1005`, `1014`, `1017`, `1034`) oder Silhouette und Stern (`1006`, `1016`) — jetzt kommen **Charaktere** dazu. Wichtel funktionieren besonders bei Kindern und als Geschenkanhänger.
+
+Mit den passenden Stanzen kannst du die Wichtel **ausschneiden und mit Foam-Pads erhöhen** — 3D-Effekt. Die Kugeln mit Aufhänger taugen als Rahmen: innen ein Foto oder ein Muster aus `1009`.
+
+---
+
+### 1042 — Baby- & Kindertiere (englisch) ⭐⭐ Kinder-Lücke geschlossen
+- **Typ:** Clearstamp-Set · **Format:** ca. 14 Stempel — 10 Motive + 4 Texte, alle Outline
+- **⚠️ Stanzen vorhanden** — Nummerierung offen, siehe Hinweis unten
+- **Inhalt Tiere:** grosser Elefant mit Girlande · Baby-Elefant · dritter kleiner Elefant · **Löwe** mit Mähne · zwei Hasen · grosser **Bär/Teddy** · kleines Tier mit Flügeln · **Pfotenabdruck**
+- **Weitere Motive:** Herzluftballon am Stiel · **HOORAY-Banner** · kleine Blume · Schmetterling
+- **Inhalt Text (englisch):** YOU'RE UNFORGETTABLE · **THANKS A TON** · DREAM BIG! · HOORAY
+- **Tags:** `geburt` `taufe` `geburtstag` `danke` `erfolg` `abschluss` `freundschaft` `allgemein` `motivstempel` `textstempel` `zum-kolorieren`
+
+**Das schliesst eine Lücke, die ich schon lange sehe: Kinder.** Dein ganzer Bestand war erwachsen — für Kindergeburtstage gab es nur *Sprüche* („Birthday Girl" aus `1018`, HURRA und Jabadabadu aus `1026`), aber **keine kindgerechten Motive**. Jetzt gehen Kindergeburtstag, Babyparty, Geburt, Taufe und Schuleintritt.
+
+*„THANKS A TON"* ist ein **Wortspiel mit dem Elefanten** — *ton* heisst Tonne. Wenn du Elefant und Spruch zusammen stempelst, funktioniert der Witz.
+
+Mit den Stanzen lassen sich die Tiere ausschneiden — für Anhänger, Mobile-Elemente oder 3D-Karten.
+
+---
+
+### ⚠️ Offen: wie werden die Stanzen nummeriert?
+
+Zu `1041` und `1042` gehören **passende Stanzen**. Zwei Wege:
+
+| Wenn… | dann… |
+|---|---|
+| Stanzen liegen **zusammen** mit den Stempeln in einer Hülle | gleiche Nummer, im Register als „inkl. Stanzen" vermerkt — nichts extra zu beschriften |
+| Stanzen liegen **getrennt** (Magnetbox) | eigene Nummer im **3000er-Block** (`3001`, `3002`, …) mit Querverweis „passt zu 1041" |
+
+Bei Stamp-&-Die-Sets ist beides üblich. **Sag mir, wie du sie lagerst** — danach richte ich die Nummerierung aus. Das betrifft alle künftigen Stanzen, darum lohnt die Entscheidung jetzt.
+
+---
+
+### 1043 — Mohnblumen + „Lachen verleiht der Seele Flügel" (SF)
+- **Typ:** Clearstamp-Set · **Format:** ca. 11 Stempel · **Lagernr.:** `SO1D1674`
+- **Inhalt Motive:** vier Mohnblüten in verschiedenen Perspektiven · geschlossene Knospe am Stiel · drei gezackte Mohn-Blätter · **zwei bis drei lange Stiele separat**
+- **Inhalt Text:** LACHEN verleiht der Seele FLÜGEL · Für Dich
+- **Tags:** `sommer` `aufmunterung` `freundschaft` `geburtstag` `danke` `trost` `allgemein` `motivstempel` `textstempel` `zum-kolorieren` `mentoring-tauglich`
+- **Mohn ist doppeldeutig lesbar** — sommerlich-leicht, aber auch Gedenkblume. Funktioniert damit auf Sommergrüssen *und* Trauerkarten (mit `1023`/`1033`). *„LACHEN verleiht der Seele FLÜGEL"* ist dein leichtester Aufmunterungsspruch — anders als die tiefen aus `1021`/`1035` wirkt er unbeschwert.
+
+---
+
+### 1044 — Tulpen gross, mit Umriss-Stempeln (SF)
+- **Typ:** Clearstamp-Set · **Format:** ca. 5 Stempel — 2 detaillierte Tulpen + 3 Umriss-Formen
+- **Tags:** `fruehling` `ostern` `muttertag` `geburtstag` `danke` `allgemein` `motivstempel` `zum-kolorieren` `grossflächig`
+- **Die drei Umriss-Formen sind Layering-Stempel** — erst die Kontur in hellem Ton, dann die detaillierte Blüte darüber oder daneben. Ergibt Tiefe **ohne Kolorieren**. Diese Technik hast du sonst nirgends.
+- Drittes Tulpen-Set (nach `1027`, `1039`), aber das grösste. Zusammen mit Schneeglöckchen (`1039`) und Kirschblüten (`1037`) deckst du die ganze Frühlingssaison ab.
+
+---
+
+### 1045 — Entenfamilie + Wertschätzungs-Sprüche (SF) ⭐
+- **Typ:** Clearstamp-Set · **Format:** 4 Stempel — 2 Motive + 2 Texte
+- **Inhalt Motive:** grosse Ente mit Flügel (Comic) · kleines Küken
+- **Inhalt Text:** **Ich mag Dich, so wie Du bist!** · **Schön, dass es Dich gibt!**
+- **Tags:** `allgemein` `freundschaft` `geburtstag` `aufmunterung` `danke` `geburt` `kinder` `textstempel` `motivstempel` `mentoring-tauglich`
+
+**Die zwei Sprüche sind das Wertvollste — reine Wertschätzung, ohne Anlass.** *„Ich mag Dich, so wie Du bist!"* trifft deinen **Anti-Perfekt-Markenwert** direkt, nur viel schlichter als „Du wurdest geboren um echt zu sein" (`1021`). Zusammen mit „Schön dass du da bist" (`1018`) und „HAB DICH lieb" (`1025`) hast du jetzt vier Sprüche, die **keinen Grund brauchen**.
+
+---
+
+### 1046 — Giraffen (Comic) (SF)
+- **Typ:** Clearstamp-Set · **Format:** 2 grosse Motivstempel
+- **Inhalt Motive:** ganze Giraffe (Comic, mit Flecken) · Giraffen-Kopf mit Hals
+- **Tags:** `kinder` `geburt` `taufe` `geburtstag` `freundschaft` `allgemein` `motivstempel` `zum-kolorieren` `grossflächig`
+- Zweites Kinder-Motivset. Die ganze Giraffe trägt eine Karte allein, der Kopf funktioniert als Guck-Motiv am Rand oder als Anhänger. Klassisches Babyzimmer-Tier.
+
+---
+
+### 1047 — ⚠️ Tiermotiv, Inhalt unklar (SF)
+- **Typ:** Clearstamp-Set · **Format:** ca. 3–4 Stempel
+- **⚠️ Nicht sicher gelesen:** Die Verpackung lag gedreht, die transparenten Stempel überlagerten sich. Erkennbar: ein grösseres Tier (Maus oder Hase) mit einem grossen runden Objekt (Trommel? Ei? Ball?), ein kleineres Tier darüber, zwei bis drei Ringformen. Kein Text erkennbar.
+- **Bitte neu fotografieren** — einzeln, ungedreht, am besten auf **dunklem Untergrund**. Dann heben sich die transparenten Stempel ab und ich kann es vervollständigen.
+
+---
+
+### 1048 — Eltern-Kind-Silhouette + Herzen (SF) ⭐⭐ Vatertag-Lücke zu
+- **Typ:** Clearstamp-Set · **Format:** 2 Stempel · **Lagernr.:** `SO1D2812`
+- **Inhalt Motive:** **Silhouette eines Erwachsenen, der ein Kind hochhebt** (gefüllt, dynamisch) · kleines Element mit zwei bis drei Herzen
+- **Tags:** `vatertag` `muttertag` `geburt` `geburtstag` `danke` `freundschaft` `allgemein` `motivstempel` `grossflächig` `mentoring-tauglich`
+
+**Die Vatertag-Lücke ist damit geschlossen** — die stand bis jetzt bei null. Das Motiv funktioniert für **Vatertag und Muttertag**, dazu Geburt und Familienkarten. Silhouette heisst: gefüllt, keine Kolorierung, wirkt sofort. Stark auf hellem Aquarell-Wash oder vor einem Kreis aus `1009`.
+
+Und es trifft deine Zielgruppe ohne ein Wort — du arbeitest mit Müttern.
+
+---
+
+### 1049 — Tannenzweige mit Zapfen (SF) ⭐ botanische Weihnacht
+- **Typ:** Clearstamp-Set · **Format:** 3 Motivstempel · **Lagernr.:** `wo1d37595`
+- **Inhalt Motive:** grosser Tannenzweig **mit Zapfen** (fein gefiedert) · zweiter Zweig ohne Zapfen · kleiner Zweig
+- **Tags:** `weihnachten` `advent` `winter` `herbst` `trost` `motivstempel` `grossflächig` `sofort-einsetzbar`
+
+**Das fehlte im Weihnachts-Bestand: ein echtes botanisches Motiv.** Bisher war Weihnachten Text (`1005`/`1014`/`1017`/`1034`), Silhouette (`1006`), Stern (`1016`) oder Figur (`1041`). Der Zweig mit Zapfen ist das Element für **zurückhaltende, edle** Weihnachtskarten — kein Kitsch, kein Comic. Einfarbig in Dunkelgrün oder Petrol, ohne Kolorieren.
+
+**Auch für Winter-Trauerkarten** (mit `1023`/`1033`/`1043`) — Tannengrün ist traditionelles Kondolenz-Grün.
+
+---
+
+### 1050 — ⚠️ Baby- oder Tiermotiv (SF)
+- **Typ:** Clearstamp-Set · **Format:** 1 grosser Motivstempel · **Lagernr.:** `WO1D25745`
+- **⚠️ Motiv nicht sicher bestimmt:** ein grosses rundliches Wesen mit zwei auffällig grossen Augen, kleinen Armen und Beinen, in der Mitte ein Objekt. Am wahrscheinlichsten ein **liegendes Baby mit Schnuller** — möglich wären auch Koala oder Faultier.
+- **Bitte bestätigen: Baby oder Tier?** Falls Baby, wäre es dein **erstes echtes Baby-Motiv** — passend zu den Geburtssprüchen aus `1022` und der Kinderwagen-Box aus dem Plotter-Ordner.
+
+---
+
+### 1051 — Garten- & Wiesentiere, ca. 20 Motive ⭐⭐ grösstes Motivset
+- **Typ:** Clearstamp-Set · **Format:** grosse Folie, ca. 20 Stempel im Doodle-Stil
+- **⚠️ Stanzen vorhanden**
+- **Inhalt Tiere:** Frosch (springend) · zweiter Frosch/Kröte · Maus · Vogel/Küken · langbeiniger Vogel · zwei **Marienkäfer** · Käfer · zwei **Bienen** · Schmetterling · **Schnecke** · Wurm/Raupe · Igel (?)
+- **Inhalt Pflanzen:** zwei bis drei **Fliegenpilze** · grosser Pilz-Cluster · Beeren/Punkte
+- **Inhalt Text:** Let's celebrate you! · chirp · tweet
+- **Tags:** `garten` `kinder` `geburtstag` `sommer` `fruehling` `herbst` `feier` `freundschaft` `allgemein` `motivstempel` `zum-kolorieren` `randakzent`
+
+**Dein grösstes Motivset — und das erste mit Garten-Bezug.** Eine komplette Wiese im Doodle-Stil.
+
+**Doppelter Nutzen:** Erstens Kinderkarten — drittes Kinder-Set nach `1042` und `1046`, aber das vielseitigste. Zweitens **dein Garten**: Frosch, Marienkäfer, Biene und Pilze gehören auf **Saatgut-Tütchen, Kräuter-Etiketten und Pflanzschilder**. Mit dem Alphabet aus `1020` für die Sortennamen und den botanischen Blättern aus `1030` wird daraus ein Garten-Werkzeug, nicht nur ein Bastel-Set.
+
+---
+
+### 1052 — ⚠️ Kleine Weihnachtsmotive (Foto fehlt)
+- **Typ:** Clearstamp-Set · **Inhalt:** nur deine Kurzbeschreibung „kleine Weihnachtsmotive" — Einzelmotive noch nicht erfasst
+- **Tags:** `weihnachten` `advent` `winter` `randakzent`
+- **Wozu sie taugen:** kleine Weihnachtsmotive sind **Streu- und Füllelemente**. Damit ergänzt du die grossen Sets (`1017` Wort-Baum, `1006` Hirsch, `1041` Wichtel, `1049` Tannenzweig), ohne dass die Karte überladen wirkt. Auch zum Bestempeln der geplotteten Verpackungen.
+- **Foto schicken, wenn du magst** — dann liste ich die Motive auf.
+
+---
+
+### 1053 — Engel-Spruch (SF) ⭐ vierter Trauerspruch
+- **Typ:** Clearstamp-Set · **Format:** 2 Stempel · **Lagernr.:** `WO1D16187`
+- **Inhalt Text:**
+  - **Engel** *(grosser Schreibschrift-Schriftzug, einzeln nutzbar)*
+  - *Engel kommen vielleicht nicht, wenn Du sie rufst, aber sie werden immer da sein, wenn Du sie brauchst.*
+- **Tags:** `trost` `gute-besserung` `aufmunterung` `allgemein` `textstempel` `grossflächig` `mentoring-tauglich`
+
+**Deine Trauer-Familie ist damit komplett:** `1007` · `1023` · `1033` · `1053` — alle mit Stern- oder Engel-Bildsprache, untereinander stil-kompatibel.
+
+**Aber dieser hier ist anders:** Er spricht von **Beistand, nicht von Verlust**. Damit funktioniert er auch bei Krankheit, Sorge und schweren Zeiten ohne Todesfall. Zusammen mit „Fühl Dich gedrückt aus der Ferne" (`1021`) und dem Loslassen-Spruch (`1035`) hast du drei Abstufungen für schwere Momente.
+
+---
+
+### 1054 — Rund-Etiketten / Siegel ⭐⭐⭐ das Verpackungs-Set
+- **Typ:** Clearstamp-Set · **Format:** ca. 14 Stempel — 6 runde Etiketten mit Bogenrand + 8 kleine Füllmotive
+- **Inhalt Etiketten** *(Text läuft im Ring, Mitte bleibt frei)*:
+  1. Ein kleines Dankeschön ♡ von ganzem Herzen ♡
+  2. Frohe Weihnachten *(3× im Ring)*
+  3. Happy Birthday *(2× im Ring)*
+  4. **Aus der Weihnachtsbäckerei ★ etwas Gutes für dich!**
+  5. ♡ FÜR DICH ♡ *(3× im Ring)*
+  6. **Mit Liebe gemacht** *(2× im Ring)*
+- **Inhalt Füllmotive:** Weihnachtskugel · kleiner Tannenbaum · Schneeflocke · Geschenk mit Schleife · kleines gefülltes Motiv · Stern · Herz Outline · Herz gefüllt
+- **Tags:** `selbstgemacht` `kueche` `danke` `weihnachten` `advent` `geburtstag` `gutschein` `allgemein` `textstempel` `sofort-einsetzbar` `doterra-tauglich`
+
+**Die perfekte Ergänzung zu deinen 467 Verpackungs-Plotterdateien.** Die freie Mitte ist der Trick: dort setzt du ein Füllmotiv aus demselben Set, ein Monogramm aus dem Alphabet (`1020`) oder schreibst den Namen hin.
+
+**Vier Etiketten mit direktem Nutzen:**
+- *„Aus der Weihnachtsbäckerei"* → Guetzli-Dosen und Plätzchentüten
+- *„Mit Liebe gemacht"* → Marmelade, Badesalz, Zuckerpeeling — und **deine doTERRA-Geschenke nach Weg B**
+- *„Ein kleines Dankeschön von ganzem Herzen"* → Kundinnen und Team
+- *„FÜR DICH"* → universell
+
+Auf Kraftpapier gestempelt und ausgeschnitten sehen die aus wie gekauft.
+
+---
+
+### 1055 — Blüten mit Strichstruktur + Pusteblume
+- **Typ:** Clearstamp-Set · **Format:** ca. 10 Motivstempel, feine Strichzeichnung
+- **Inhalt Motive:** zwei grosse gestreifte Blüten · mittlere gestreifte Blüte · zwei kleine · Hibiskus/Lilie mit langen Staubgefässen · Wildrose mit Punktmuster · Anemone mit detaillierten Staubgefässen · **Pusteblume mit fliegenden Samen** · einzelne Samen-Schirmchen · kleiner Schmetterling
+- **Tags:** `allgemein` `sommer` `fruehling` `muttertag` `danke` `geburtstag` `freundschaft` `trost` `neuanfang` `motivstempel` `zum-kolorieren` `mentoring-tauglich`
+
+Fünftes Blumen-Set — aber mit **einheitlicher Strichstruktur**, dadurch mischen sich alle zehn Motive frei (anders als `1027`, wo drei Stile kollidieren).
+
+**Die Pusteblume mit Samenflug ist der wertvollste Stempel des Sets.** Zweite nach `1038`, aber hier fliegen die Samen — das Bild für **Loslassen, Wünsche, Neuanfang**. Stärkste Kombinationen: mit dem Loslassen-Spruch (`1035`), mit „Nutze die Zeit zum Träumen" (`1026`), mit den Engel- und Trauersprüchen (`1053`/`1033`). Die einzelnen Schirmchen streust du dazu, das gibt Bewegung.
+
+---
+
+### 1056 — „Der schönste Weg ist der gemeinsame." ⭐⭐ Hochzeits-Lücke zu
+- **Typ:** Clearstamp-Set · **Format:** 1 grosser Textstempel, Schriftmix
+- **Inhalt Text:** Der schönste Weg ist der gemeinsame.
+- **Tags:** `hochzeit` `jubilaeum` `freundschaft` `danke` `abschluss` `allgemein` `textstempel` `grossflächig` `mentoring-tauglich`
+
+**Endlich ein echter Hochzeitsspruch.** Für Hochzeiten hattest du bisher nur **Motive** — Ornament-Hintergrund (`1011`), Sektflasche (`1013`), Punktier-Blüte (`1019`), Ranken (`1028`), Rosen (`1029`), Kirschblüten (`1037`) — aber keinen Text.
+
+**Und es entsteht eine Weg-Familie:**
+
+| Set | Spruch | Perspektive |
+|---|---|---|
+| `1002` | Glück bedeutet …deinen eigenen Weg zu gehen | der eigene Weg |
+| `1022` | Auch der längste Weg beginnt mit einem kleinen Schritt | der erste Schritt |
+| `1056` | Der schönste Weg ist der gemeinsame | zusammen gehen |
+
+Drei Blickwinkel auf dasselbe Bild. Auch für Mentoring-Runden und Teamkarten, nicht nur für Paare.
+
+---
+
+### 1057 — Stechpalme / Ilex mit Beeren (SF)
+- **Typ:** Clearstamp-Set · **Format:** 3 Motivstempel
+- **Inhalt Motive:** grosser Ilex-Zweig mit Blättern und Beeren (detailliert) · zwei einzelne Ilex-Blätter
+- **Tags:** `weihnachten` `advent` `winter` `motivstempel` `zum-kolorieren` `randakzent`
+- Zweites botanisches Weihnachtsmotiv nach `1049` (Tanne). Zusammen mit den Zweigen aus `1010` deckst du die traditionelle Weihnachtsbotanik ab. Klassisch koloriert (grüne Blätter, rote Beeren) wirkt's traditionell — **einfarbig in Petrol oder Gold modern**.
+
+---
+
+### 1058 — Sterne ornamental, 6 Varianten (SF)
+- **Typ:** Clearstamp-Set · **Format:** 6 Sternstempel, jeder anders gestaltet
+- **Inhalt Motive:** spitzer 8-strahliger Stern (gefüllt) · kleiner 4-strahliger (Outline) · Stern mit Schnörkel-Ornamenten · Stern mit Punktmuster und Innenstern · grosser Stern mit dichten Ornamenten · kleiner Stern mit Punkten
+- **Tags:** `weihnachten` `advent` `winter` `neujahr` `trost` `allgemein` `motivstempel` `zum-kolorieren` `randakzent`
+
+Zweites Stern-Set nach `1016`, aber ornamentaler. **Zusammen zehn verschiedene Sterne** — damit baust du einen Sternenhimmel, in dem sich keiner wiederholt.
+
+**Doppelnutzen Weihnachten und Trauer:** Sterne sind das gemeinsame Bild deiner vier Trauersprüche (`1007`/`1023`/`1033`/`1053`) — und die ornamentalen hier sind dafür feiner und würdevoller als die Bubble-Sterne aus `1016`. Der spitze gefüllte Stern passt als Spitze über den Wort-Baum (`1017`).
+
+---
+
+### 1059 — Schutzengel im Bogen (SF) ⭐⭐ das Motiv zu 1053
+- **Typ:** Clearstamp-Set · **Format:** 1–2 Motivstempel · **Lagernr.:** `WO1D2545` (evtl.)
+- **Inhalt Motiv:** schwebendes Engelchen mit Flügeln in einem Bogen/Halbmond, kindlich-weicher Stil
+- **Tags:** `taufe` `geburt` `trost` `weihnachten` `gute-besserung` `kinder` `allgemein` `motivstempel` `zum-kolorieren`
+
+**Perfekte Ergänzung zu `1053`:** dort der Text („Engel kommen vielleicht nicht, wenn Du sie rufst…" plus der Schriftzug „Engel"), hier das Bild. Zusammen eine vollständige Karte.
+
+**Und kaum ein Motiv ist so vielseitig:** Taufe und Geburt · Trauer, besonders bei Kindern · Weihnachten · Krankheit und Sorge · als Schutzengel-Anhänger für Schulanfang oder Reise. Der Bogen wirkt als Rahmen, du brauchst kein zusätzliches Rahmenelement.
+
+---
+
+### 1060 — Herbstblätter + Loslassen-Spruch (SF) ⭐⭐
+- **Typ:** Clearstamp-Set · **Format:** ca. 6 Stempel — 5 Ahornblätter + 1 Text · **Lagernr.:** `WO1D3664` (evtl.)
+- **Inhalt Motive:** zwei grosse Ahornblätter in **Punktier-Technik** · mittleres Ahornblatt · zwei kleine gefüllte Ahornblätter
+- **Inhalt Text:** DER HERBST ZEIGT UNS, WIE WUNDERSCHÖN ES SEIN KANN LOSZULASSEN.
+- **Tags:** `herbst` `trost` `neuanfang` `abschluss` `aufmunterung` `allgemein` `textstempel` `motivstempel` `zum-kolorieren` `mentoring-tauglich`
+
+**Das Gegenstück zu `1035` — zwei Blickwinkel auf dasselbe Thema:**
+
+| Set | Spruch | Perspektive |
+|---|---|---|
+| `1035` | Loslassen kostet weniger Kraft als Festhalten und trotzdem ist es so viel schwerer. | benennt die **Schwere** |
+| `1060` | Der Herbst zeigt uns, wie wunderschön es sein kann loszulassen. | zeigt die **Schönheit** darin |
+
+Je nach Situation wählst du den tröstenden oder den ermutigenden. **Erstes Herbst-Set mit Spruch** — Herbst war bisher nur Motiv (`1010`, `1012`, `1030`). Und hier passen Bild und Text zusammen: fallende Blätter als Bild für Loslassen. Sehr stark auch mit der **Pusteblume aus `1055`** kombiniert, das ist dasselbe Bild.
+
+---
+
+### 1061 — Elfe & Fliegenpilze (Fantasy, filigran)
+- **Typ:** Clearstamp-Set · **Format:** ca. 10 Motivstempel, sehr feine Strichzeichnung
+- **Inhalt Motive:** **Elfe mit Flügeln und Zauberstab** (Sternenschweif) · zwei bis drei Fliegenpilze · zwei filigrane **Gräser-Streifen** · Schmetterling · Blüten-Zweig mit Punktmuster · Schnörkel-Ranken · Sterne-Streuelemente
+- **Tags:** `kinder` `geburtstag` `garten` `taufe` `geburt` `sommer` `freundschaft` `allgemein` `motivstempel` `zum-kolorieren` `randakzent`
+- **Erstes Fantasy-Set — die Elfe ist ein Alleinstellungsmotiv.** Für Kindergeburtstage, Taufe, Zahnfee-Kärtchen. Deutlich **filigraner** als die Doodle-Sets (`1038`/`1051`) — zart statt süss. Die **Gräser-Streifen** sind Rand-Werkzeuge: als Bodenlinie unten, dazu Pilze und Schmetterling. Mit den Garten-Tieren aus `1051` entsteht eine komplette Wiesenlandschaft.
+
+---
+
+### 1062 — Glücksklee + Glücks-Sprüche ⭐⭐ Mentoring
+- **Typ:** Clearstamp-Set · **Format:** ca. 8 Stempel — 5 Kleeblätter + 3 Texte
+- **Inhalt Motive:** grosses vierblättriges Kleeblatt (Punktier) · zwei mittlere · zwei kleine (gefüllt)
+- **Inhalt Text:**
+  1. Nimm Dir die Zeit um glücklich zu sein.
+  2. Überraschung
+  3. **Manchmal sagt das Glück ganz leise: DU BIST DRAN!**
+- **Tags:** `neujahr` `erfolg` `abschluss` `neuanfang` `geburtstag` `aufmunterung` `freundschaft` `allgemein` `textstempel` `motivstempel` `mentoring-tauglich`
+
+***„Manchmal sagt das Glück ganz leise: DU BIST DRAN!"*** — das ist genau der Satz für eine Mentee, die lange gewartet hat und jetzt losläuft. Verwandt mit „GIB IMMER DER MÖGLICHKEIT EINE CHANCE" (`1039`) und „Wer ins kalte Wasser springt…" (`1021`), aber **persönlich adressiert**: *DU* bist dran.
+
+*„Nimm Dir die Zeit um glücklich zu sein"* trifft dein Mama-CEO-Thema — Selbstfürsorge statt Funktionieren.
+
+**Und die Kleeblätter schliessen eine kleine Lücke:** Glücksbringer für Prüfungen, Neujahr, Umzug, neuen Job. Dafür hattest du kein Bild.
+
+---
+
+### 1063 — „Die besten Wünsche" (Wunschliste)
+- **Typ:** Clearstamp-Set · **Format:** 1 grosser Textstempel, mehrzeilige Aufzählung
+- **Inhalt Text:** *Die besten Wünsche: Spannende Abenteuer ❀ Gesundheit ❀ Freude ❀ Spass ❀ viel Glück ❀ Freunde ❀ tolle Erlebnisse ❀ Erfolg ❀ Herzenswünsche, die sich erfüllen*
+- **Tags:** `geburtstag` `neujahr` `abschluss` `erfolg` `neuanfang` `freundschaft` `allgemein` `textstempel` `grossflächig` `mentoring-tauglich`
+
+**Aufzählungs-Spruch** — diese Form hat sonst nur der Rechen-Spruch (`1020`). Neun Wünsche in einem Stempel, mit **Kleeblättern als Trennzeichen** — damit passt er stilistisch exakt zu `1062`. Die beiden zusammen sind eine fertige Karte: Kleeblatt-Motiv plus Wunschliste.
+
+Funktioniert für **jeden Anlass mit Zukunftsbezug**: Geburtstag, Neujahr, Schulabschluss, neuer Job, Umzug, Hochzeit. Auf Creme-Karton mit einem kleinen Kleeblatt daneben — fertig in zwei Minuten.
+
+---
+
+### 1064 — Fische + „Kurz abtauchen und entspannen" (SF) ⭐⭐ erster Wellness-Spruch
+- **Typ:** Clearstamp-Set · **Format:** ca. 7 Stempel — 3 Fische + 3 Luftblasen-Gruppen + 1 Text
+- **Inhalt Motive:** grosser Fisch (Kugelfisch-Typ) · zweiter Fisch mit Fächerschwanz · kleiner Fisch · drei Luftblasen-Gruppen
+- **Inhalt Text:** Kurz abtauchen und entspannen
+- **Tags:** `allgemein` `gute-besserung` `aufmunterung` `sommer` `kinder` `geburtstag` `danke` `textstempel` `motivstempel` `doterra-tauglich` `mentoring-tauglich`
+
+**Der erste Wellness-Spruch im Bestand — und dreifach relevant:**
+1. **doTERRA Weg B** — genau die Aufschrift für Badesalz, Zuckerpeeling, Wellness-Geschenke. Mit „Mit Liebe gemacht" (`1054`) und der Kreativ-entspannt-Shopping-Bag aus dem Plotter-Ordner steht das Päckchen.
+2. **Mama-CEO-Thema** — Selbstfürsorge statt Funktionieren, wie „Nimm Dir die Zeit um glücklich zu sein" (`1062`).
+3. Genesungs- und Urlaubskarten.
+
+---
+
+### 1065 — Faultier am Ast (SF)
+- **Typ:** Clearstamp-Set · **Format:** 1–2 grosse Motivstempel
+- **Inhalt Motiv:** grosses **Faultier**, hängend an einem Ast mit Blättern
+- **Tags:** `allgemein` `gute-besserung` `aufmunterung` `kinder` `geburtstag` `freundschaft` `motivstempel` `doterra-tauglich` `mentoring-tauglich`
+- **Das Bild zum Spruch aus `1064`.** Faultiere stehen für Langsamkeit ohne schlechtes Gewissen — genau dein Anti-Funktionieren-Thema. Trägt eine Karte allein. Auch für Mentee-Karten zum Thema Pause machen. Mit den Monstera-Blättern (`1032`) entsteht eine Dschungel-Szene.
+
+---
+
+### 1066 — ⚠️ Motive unklar (Stempel eingefärbt)
+- Die Stempel haben noch Farbe drauf, im Foto sind nur schwarze Flächen zu sehen. Vermutlich 3–4 Motive.
+- **Der beste Weg bei eingefärbten Stempeln:** einmal auf weisses Papier abstempeln und **das Papier** fotografieren. Das liest sich besser als der Stempel selbst — und hilft auch bei `1047` und `1050`.
+
+---
+
+### 1067 — „Die Leichtigkeit des Lebens…" (SF) ⭐⭐⭐ dein Markenwert
+- **Typ:** Clearstamp-Set · **Format:** 1 Textstempel, mehrzeilig
+- **Inhalt Text:** *Die Leichtigkeit des Lebens beginnt, wenn man sich selbst leicht nimmt.*
+- **Tags:** `allgemein` `aufmunterung` `freundschaft` `geburtstag` `neuanfang` `textstempel` `grossflächig` `mentoring-tauglich`
+
+**Das ist Anti-Perfektionismus in einem Satz** — und die präziseste deiner drei Varianten:
+
+| Set | Spruch | was er tut |
+|---|---|---|
+| `1021` | Du wurdest geboren um echt zu sein, nicht um perfekt zu sein | spricht die Empfängerin an |
+| `1045` | Ich mag Dich, so wie Du bist! | drückt Zuneigung aus |
+| `1067` | Die Leichtigkeit des Lebens beginnt, wenn man sich selbst leicht nimmt | benennt **den Mechanismus** |
+
+Für Frauen, die zu streng mit sich sind — deine Zielgruppe.
+
+---
+
+### 1068 — „Besondere Momente sind immer ein Grund zum Feiern" (SF)
+- **Typ:** Clearstamp-Set · **Format:** 1 Textstempel
+- **Tags:** `feier` `geburtstag` `jubilaeum` `erfolg` `abschluss` `hochzeit` `freundschaft` `allgemein` `textstempel` `grossflächig`
+- **Der universelle Feier-Spruch** — passt auf jeden Anlass, ohne ihn zu benennen. Wenn du nicht weisst, ob's ein Geburtstag, ein Jubiläum oder ein Erfolg ist: dieser passt. Und er ist der einzige, der **den Moment würdigt** statt zum Feiern aufzufordern.
+
+---
+
+### 1069 — „Nachschenken statt Nachdenken" (SF)
+- **Typ:** Clearstamp-Set · **Format:** 1 Textstempel
+- **Inhalt Text:** *Es gibt Tage im Leben, da lautet DAS MOTTO: Nachschenken statt Nachdenken*
+- **Tags:** `feier` `freundschaft` `aufmunterung` `geburtstag` `maenner` `allgemein` `textstempel` `grossflächig`
+- **Der humorvollste Spruch im Bestand.** Für Freundinnen, Feierabend-Grüsse, Trost mit Augenzwinkern — und einer der wenigen, die auch für **Männer** taugen (bisher nur „Männerträume" aus `1018`). Achtung beim Empfänger: der Spruch spielt mit Alkohol.
+
+---
+
+### 1070 — Vögel-Silhouetten + „Frühlingserwachen" (SF)
+- **Typ:** Clearstamp-Set · **Format:** ca. 7 Stempel, alle als gefüllte **Silhouetten**
+- **Inhalt Motive:** grosser Vogel auf Zweig mit Beeren · Vogel auf Zweig mit Blättern · zwei bis drei kleine fliegende Vögel · Zweig mit Blättern und Beeren
+- **Inhalt Text:** Frühlingserwachen
+- **Tags:** `fruehling` `ostern` `neuanfang` `garten` `sommer` `trost` `allgemein` `motivstempel` `textstempel` `grossflächig` `sofort-einsetzbar`
+
+**Erstes Vogel-Set** — und im Silhouetten-Stil, den du sonst nur zweimal hast (Hirsch `1006`, Eltern-Kind `1048`). Keine Kolorierung nötig; einfarbig in Petrol oder Dunkelblau sehr elegant.
+
+**Und endlich ein Frühlings-Wort:** `1039` und `1037` liefern Frühlingsmotive, aber „Frühlingserwachen" ist der erste passende **Text**. Die kleinen fliegenden Vögel taugen ausserdem für **Trauerkarten** — Vogelflug als Bild für Abschied, mit `1023`/`1033`/`1053`.
 
 ---
 
