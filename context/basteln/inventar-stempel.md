@@ -16,33 +16,68 @@ tags: [basteln, inventar, stempel, system]
 
 Heisst konkret:
 > Du: „Ich will Weihnachtskarten basteln."
-> Ich: „Nimm **0014** und **0023** (beide Stempel) und **0031** (Stanze). Dazu Digipapier `Papiere Vintage Weihnachten`. Hier drei Ideen.“
+> Ich: „Nimm **1017** und **1023** (Clearstamps) und **3042** (Stanze). Dazu Digipapier `Papiere Vintage Weihnachten`. Hier drei Ideen.“
 > Du: greifst dreimal zu, fertig. Kein Suchen, kein Kistenwühlen.
 
 **Ein Set kann bei mir in zehn Themen auftauchen — es liegt trotzdem nur an einer Stelle.**
 
 ---
 
-## Das Nummern-Schema
+## Das Nummern-Schema: Typ-Block + laufende Nummer
 
-**Ein einziger Nummernkreis, vierstellig, ohne Buchstaben:**
+Vierstellig, nur Zahlen — **die erste Stelle sagt, um welche Sorte Material es sich handelt.** Damit hat jede Kiste ihren eigenen, lückenlosen Nummernkreis, und du schreibst trotzdem nur Ziffern.
+
+| Block | Material | Kiste |
+|---|---|---|
+| **1000–1999** | Clearstamps | Clearstamp-Kisten |
+| **2000–2999** | Holz-/Gummistempel | |
+| **3000–3999** | Stanzen | Magnetbox / Mappe |
+| **4000–4999** | Schablonen / Stencils | flach |
+| **5000–5999** | Embossing-Folder | |
+| **6000–6999** | Punchboards & Werkzeuge | |
+| **7000–7999** | Farben & Stempelkissen | Farbkasten |
+| 8000–9999 | frei — für Sorten, die noch dazukommen | |
+
+**Beim Anschauen sofort klar:** `3042` ist eine Stanze. `1017` ein Clearstamp. Kein Nachschlagen, keine Buchstaben.
+
+---
+
+## Bündel à 10 — so findest du in Sekunden
+
+Genau wie du es vorhast: **immer 10 Stück mit einem Gummi zusammen**, dazu ein Beschriftungs-Kärtchen.
 
 ```
-0001 · 0002 · 0003 · … · 9999
+[ 1001 – 1010 ]   ← Kärtchen oben aufs Bündel, mit Gummi fixiert
+[ 1011 – 1020 ]
+[ 1021 – 1030 ]
 ```
 
-Das war's. Du nimmst die nächste freie Nummer — egal ob Stempel, Stanze, Schablone oder Punchboard.
+Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `1001–1010` enthält genau zehn Clearstamps, keine Sprungstellen.
 
-**Warum kein Buchstaben-Praefix (`ST-`/`SZ-`):** Bei Kombi-Sets (Stempel *plus* passende Stanze) muesstest du jedes Mal entscheiden, was es "eigentlich" ist. Und wenn du dich mal anders entscheidest, muss die Nummer neu geschrieben werden. **Der Typ gehoert ins Register, nicht auf das Etikett.**
+**Wenn ich dir `1017` nenne:** du greifst das Bündel `1011–1020`, ziehst den Gummi ab, nimmst die siebte Hülle. Kein Durchblättern der ganzen Kiste.
 
-**Warum vierstellig mit fuehrenden Nullen:** `0002` sortiert korrekt vor `0010`. Ohne die Nullen wuerde jede alphabetische Sortierung — in Ordnern, Dateinamen, Listen — die 10 vor die 2 stellen. Vierstellig reicht bis 9999.
+**Praktische Regeln:**
+- **Nicht vorsortieren.** Nummerier einfach in der Reihenfolge, wie du die Sets in die Hand nimmst. Das Thema spielt keine Rolle — die Suche mache ich.
+- **Angebrochenes Bündel bleibt offen**, bis 10 zusammen sind. Zwischenstand ist kein Problem.
+- **Nie neu vergeben:** Sortierst du ein Set aus, bleibt die Nummer verbrannt und das Bündel hat neun. Sonst zeigt ein altes Foto irgendwann aufs falsche Material.
+- **Block voll?** Unrealistisch (1000 Plätze pro Sorte), aber falls doch: nächsten freien Block übernehmen und hier notieren.
 
-**Physische Ablage:** Nummern-Reihenfolge, aber die Kategorien duerfen getrennt liegen — Stempel in der Mappe, Stanzen in der Magnetbox. Innerhalb jeder Box steigt die Nummer, nur mit Luecken. Das stoert nicht: du suchst `0347` in der Stempelmappe und findest es zwischen `0341` und `0352`.
+**Meine Antwortform** — immer Nummer plus Sorte, damit du die richtige Kiste ziehst:
+> "Nimm **1017** (Clearstamp) und **3042** (Stanze). Dazu Digipapier X aus Ordner Y."
 
-**Meine Antwortform:** Ich nenne immer Nummer **und** Typ, damit du weisst, in welche Box du greifst:
-> "Nimm **0014** (Stempel) und **0231** (Stanze). Dazu Digipapier X aus Ordner Y."
+---
 
-**Nie neu vergeben:** Auch wenn du ein Set aussortierst, bleibt die Nummer verbrannt. Sonst zeigt ein altes Foto irgendwann auf das falsche Material.
+## Nächste freie Nummern
+
+| Block | Nächste frei |
+|---|---|
+| Clearstamps | **1003** |
+| Holz-/Gummistempel | 2001 |
+| Stanzen | 3001 |
+| Schablonen | 4001 |
+| Embossing-Folder | 5001 |
+| Punchboards & Werkzeuge | 6001 |
+| Farben & Kissen | 7001 |
 
 ## Der Erfassungs-Workflow (du musst nicht auf mich warten)
 
@@ -53,9 +88,8 @@ Das war's. Du nimmst die nächste freie Nummer — egal ob Stempel, Stanze, Scha
 
 Der Punkt an dieser Reihenfolge: **du kannst 20 Sets in einem Rutsch durchnummerieren und ablegen**, ohne dass ich dazwischen etwas tun muss. Die Fotos schickst du, wann es passt. Nichts blockiert.
 
-**Etiketten:** Du hast einen Plotter — plotte oder drucke dir einen Bogen kleiner Nummern-Etiketten (`0001` bis `0100`) auf Klebefolie. Einmal machen, dann nur noch aufkleben. Sag Bescheid, wenn ich dir eine Vorlage dafür bauen soll.
+**Etiketten:** Du hast einen Plotter — plotte oder drucke dir einen Bogen kleiner Nummern-Etiketten (z.B. `1001` bis `1100` für die Clearstamps, dazu die Bündel-Kärtchen `1001–1010` usw.) auf Klebefolie. Einmal machen, dann nur noch aufkleben. Sag Bescheid, wenn ich dir eine Vorlage dafür bauen soll.
 
-**Nächste freie Nummer: `0003`**
 
 ---
 
@@ -77,16 +111,16 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 
 ## Register
 
-### 0001 — „Verspätete Geburtstagspost" (SF, Kalender-Set)
-- **Typ:** Stempel-Set
+### 1001 — „Verspätete Geburtstagspost" (SF, Kalender-Set)
+- **Typ:** Clearstamp-Set
 - **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** unbekannt (ausgelistet) · **Lagernr.:** `WO1D38232`
 - **Format:** A6, 7 Textstempel, kein Motiv
 - **Inhalt:** Verspätete Geburtstagspost · Ich habe Deinen GEBURTSTAG vergessen. · Upsi vergessen · Nachträglich · Alles Liebe zum Geburtstag! · ALLES GUTE! · Entschuldigung!
 - **Tags:** `geburtstag` `nachträglich` `textstempel` `sofort-einsetzbar` `allgemein` `randakzent`
 - **Details & Projekte:** [[stempelsets-sf]]
 
-### 0002 — „Glück bedeutet / Reichtum des Lebens" (SF, Kalender-Set)
-- **Typ:** Stempel-Set
+### 1002 — „Glück bedeutet / Reichtum des Lebens" (SF, Kalender-Set)
+- **Typ:** Clearstamp-Set
 - **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** unbekannt (Kalender) · **Lagernr.:** `WO1D38373`
 - **Format:** A7, 2 Textstempel
 - **Inhalt:** Glück bedeutet …deinen eigenen Weg zu gehen. · Gesundheit, Liebe & schöne Momente sind der wahre Reichtum des Lebens.
