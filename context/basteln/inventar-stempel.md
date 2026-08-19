@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1019** |
+| Clearstamps | **1021** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -344,6 +344,31 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
   - **Männerträume** — der einzige Männer-Spruch, den du hast
   - **Geheimrezept** und **Bettmümpfeli** — Rezeptkarten und Küchengeschenke. Das ist die Brücke zu deiner Koch-Welt: ein Rezept aufschreiben, „Geheimrezept" drauf, verschenken.
 - **Notiz:** „Bettmümpfeli" ist Schweizerdeutsch — sowas findest du in deutschen Sets nicht. Meine Fotolesung hatte nur 18 der 34 Sprüche und darunter Fehler („Bettmümpfeli" las ich als „Bequemarell", „Geheimrezept" als „ich mag Dept"). **Lehre: grosse Sammelfolien nicht aus dem Übersichtsfoto lesen — Liste von Patricia ist schneller und richtig.**
+
+---
+
+### 1019 — Punktier-Blüte mit „Lasst uns feiern" / „Gratulation" (SF)
+- **Typ:** Clearstamp-Set · **Format:** 4 Stempel — 1 grosse Blüte + 1 kleines Blatt + 2 Textstempel
+- **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** nicht abgelesen
+- **⚠️ Nummer bitte noch aufschreiben:** ursprünglich als `1009` genannt, das war aber schon an die Hintergrund-Kreise vergeben. Dieses Set trägt jetzt **1019**.
+- **Inhalt Motive:** grosse Blüte in Punktier-/Perlen-Optik (Blütenblätter aus feinen Punkten, wirkt wie Spitze) · kleines Blatt in derselben Technik
+- **Inhalt Text:** Lasst uns feiern *(senkrecht gesetzt, Schreibschrift)* · Gratulation
+- **Tags:** `feier` `geburtstag` `abschluss` `hochzeit` `neujahr` `allgemein` `motivstempel` `textstempel` `grossflächig` `sofort-einsetzbar`
+- **Notiz:** Eine komplette Gratulationskarte in einem Set — Blüte trägt die Front, Text sitzt darunter. Punktier-Technik ist gefüllt, keine Kolorierung nötig. **Einziges Set mit dem Einzelwort „Gratulation".** Starke Kombination mit 1013: Sektflasche plus „Lasst uns feiern".
+
+---
+
+### 1020 — Zitate & Kurzgrüsse ⭐⭐ Mentoring-Gold
+- **Typ:** Clearstamp-Set · **Format:** ca. 9 Stempel — 2 grosse Zitat-Blöcke + 6 Kurzgrüsse + 1 vertikales Element
+- **Hersteller / Artikel-Nr.:** nicht abgelesen
+- **Die zwei grossen Zitat-Blöcke:**
+  1. **Rechen-Spruch:** *SCHÖNE MOMENTE addieren · Wünsche & Träume teilen · Kummer und Sorgen HALBIEREN · Erfahrungen zusammenlegen · Glück & Freude MULTIPLIZIEREN · ERFOLGE aufrunden · Zweifel abrunden · SPASS VERDOPPELN* (Schriftmix)
+  2. **Leinwand-Zitat:** *Die Gedanken, die wir auswählen, sind die Farben, mit denen wir die Leinwand unseres Lebens bemalen.*
+- **Kurzgrüsse:** liebe Grüsse · für Dich · Alles Gute *(Schreibschrift)* · Alles Gute *(Blockschrift, zweite Variante)* · Auf Dich · Geburtstage zählt man nicht, man feiert sie!
+- **⚠️ Unklar:** ein vertikal gesetzter Stempel am rechten Rand — sieht nach **„OPA"** aus, aber nicht sicher gelesen. Bitte prüfen.
+- **Tags:** `geburtstag` `allgemein` `freundschaft` `danke` `aufmunterung` `feier` `abschluss` `neuanfang` `textstempel` `grossflächig` `mentoring-tauglich`
+- **Warum das dein bestes Mentoring-Set ist:** Das **Leinwand-Zitat** liegt noch näher an deiner Marke als das Buddha-Zitat aus 1015 — es geht um bewusste Entscheidung statt Zufall, genau dein Thema. Der **Rechen-Spruch** ist der beste Freundschafts- und Jubiläumsspruch im ganzen Bestand: charmant, humorvoll, trägt eine Karte allein. Und *„Geburtstage zählt man nicht, man feiert sie!"* entschärft jeden Rundgeburtstag.
+- **Praktisch:** zwei Varianten von „Alles Gute" in verschiedenen Schriften — damit kannst du eine Serie bauen, die nicht monoton wirkt.
 
 ---
 
