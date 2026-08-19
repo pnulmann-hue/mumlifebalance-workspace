@@ -127,9 +127,9 @@ Pflichtfelder pro Eintrag:
 
 Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht auswendig lernen — nur damit du weisst, wonach ich filtere.
 
-**Anlässe:** `geburtstag` · `weihnachten` · `advent` · `ostern` · `geburt` · `taufe` · `konfirmation` · `hochzeit` · `muttertag` · `vatertag` · `danke` · `trost` · `aufmunterung` · `umzug` · `neuanfang` · `schulanfang` · `abschluss` · `gute-besserung` · `einladung` · `sommer` · `herbst` · `winter` · `neujahr` · `feier` · `allgemein`
+**Anlässe:** `geburtstag` · `weihnachten` · `advent` · `ostern` · `geburt` · `taufe` · `konfirmation` · `hochzeit` · `muttertag` · `vatertag` · `danke` · `trost` · `aufmunterung` · `umzug` · `neuanfang` · `schulanfang` · `abschluss` · `gute-besserung` · `einladung` · `sommer` · `herbst` · `winter` · `neujahr` · `feier` · `kueche` · `allgemein`
 
-**Empfänger:** `mama` · `papa` · `kind` · `freundin` · `kollegin` · `paten` · `oma-opa` · `partner`
+**Empfänger:** `mama` · `papa` · `kind` · `freundin` · `kollegin` · `paten` · `oma-opa` · `partner` · `maenner`
 
 **Typ:** `textstempel` · `motivstempel` · `hintergrund` · `zahlen` · `alphabet`
 
@@ -324,13 +324,26 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 - **Tags:** `weihnachten` `advent` `neujahr` `winter` `motivstempel` `textstempel` `grossflächig` `sofort-einsetzbar`
 - **Warum wichtig:** **Das schnellste Weihnachtskarten-Set im Bestand.** Motiv und Gruss in einem Abdruck, nichts muss dazu — und es deckt Weihnachten *und* Neujahr gleichzeitig ab. Für Batch-Produktion ideal: einmal stempeln, fertig. Gleichmässig einfärben und auf weicher Unterlage arbeiten, sonst brechen Buchstaben weg.
 
-### 1018 — Gross-Sammelfolie, ~28 Sprüche ⚠️ Inhalt noch offen
-- **Typ:** Clearstamp-Set · **Format:** grosse Folie, ca. 28 Textstempel in Handschrift-Optik
+### 1018 — Gross-Sammelfolie, 34 Sprüche ⭐⭐ das vielseitigste Set
+- **Typ:** Clearstamp-Set · **Format:** grosse Folie, 34 Textstempel in Handschrift-Optik
 - **Hersteller / Artikel-Nr.:** nicht abgelesen
-- **Sicher gelesen:** Happy Birthday · ALLES GUTE ZUM GEBURTSTAG · HERZLICHEN GLÜCKWUNSCH · EINE KLEINE ÜBERRASCHUNG · NUR EIN KLEINER GRUSS · FREUNDE FÜR IMMER · GUTSCHEIN · EINLADUNG · DAS MUSS GEFEIERT WERDEN · Willkommen kleines Wunder · Einfach nur so · OH HAPPY DAY! · Neugierig? · für dich! · Zum Muttertag · WINTERZAUBER · Frohe Feiertage · du bist ein Schatz
-- **⚠️ Offen:** rund 10 weitere Sprüche nicht lesbar — **Detailfoto nötig**, am besten in zwei Hälften und ungedreht.
-- **Tags:** `geburtstag` `geburt` `danke` `feier` `muttertag` `winter` `weihnachten` `freundschaft` `allgemein` `textstempel` `sofort-einsetzbar`
-- **Warum wichtig:** Potenziell das **vielseitigste Set** im ganzen Bestand. Und es enthält als einziges die Funktionswörter **GUTSCHEIN** und **EINLADUNG** — damit sind Einladungskarten und Gutscheine überhaupt erst möglich.
+- **Inhalt (34, von Patricia vollständig geliefert 19.8.):**
+
+  *Danke & Gruss:* ein kleiner Dank für einen lieben Menschen · Danke · süsse Grüsse · nur ein kleiner Gruss · einfach nur so · für dich · ich denk an dich · schön dass du da bist
+  *Geburtstag:* Happy Birthday *(2 Varianten)* · Birthday Girl · alles Gute zum Geburtstag · herzlichen Glückwunsch · wünsch dir was
+  *Feiern & Freude:* das muss gefeiert werden · oh happy day · Glückspilz · zauberhaft · eine kleine Überraschung · guck mal hier · neugierig?
+  *Funktion:* **Gutschein** · **Einladung**
+  *Küche:* **Geheimrezept** · **Bettmümpfeli**
+  *Beziehung:* Freunde für immer · du bist ein Schatz · **Männerträume** · zum Muttertag · willkommen kleines Wunder
+  *Winter:* besinnliche Adventszeit · schöne Weihnachtszeit · frohe Festtage · Winterzauber
+
+- **Tags:** `geburtstag` `geburt` `danke` `feier` `muttertag` `maenner` `winter` `weihnachten` `advent` `freundschaft` `einladung` `gutschein` `kueche` `aufmunterung` `allgemein` `textstempel` `sofort-einsetzbar` `randakzent`
+
+- **Warum das dein wichtigstes Set ist:** 34 Sprüche über 15 Anlässe — und **vier Funktionen, die kein anderes Set im Bestand hat**:
+  - **Gutschein** und **Einladung** — damit sind Gutscheinkarten und Einladungen überhaupt erst möglich
+  - **Männerträume** — der einzige Männer-Spruch, den du hast
+  - **Geheimrezept** und **Bettmümpfeli** — Rezeptkarten und Küchengeschenke. Das ist die Brücke zu deiner Koch-Welt: ein Rezept aufschreiben, „Geheimrezept" drauf, verschenken.
+- **Notiz:** „Bettmümpfeli" ist Schweizerdeutsch — sowas findest du in deutschen Sets nicht. Meine Fotolesung hatte nur 18 der 34 Sprüche und darunter Fehler („Bettmümpfeli" las ich als „Bequemarell", „Geheimrezept" als „ich mag Dept"). **Lehre: grosse Sammelfolien nicht aus dem Übersichtsfoto lesen — Liste von Patricia ist schneller und richtig.**
 
 ---
 
