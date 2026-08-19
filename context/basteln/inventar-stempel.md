@@ -93,6 +93,34 @@ Der Punkt an dieser Reihenfolge: **du kannst 20 Sets in einem Rutsch durchnummer
 
 ---
 
+## Wie ein Set erfasst wird — zwei Ebenen
+
+**Ebene 1: die Nummer = das Set.** Eine Nummer pro physischer Einheit (= was in einer Hülle liegt). Keine Unternummern für Einzelstempel — wenn eine Folie neu geordnet wird, wären sie falsch.
+
+**Ebene 2: der Inhalt = einzeln aufgelistet.** Jeder Spruch im Klartext, jedes Motiv als kurze Beschreibung. **Darauf suche ich.** Ohne diese Liste kann ich nur ‚irgendwas mit Geburtstag‘ sagen statt den passenden Stempel benennen.
+
+Pflichtfelder pro Eintrag:
+
+```
+### 1001 — "Set-Name"
+- **Typ:** Clearstamp-Set / Stanze / Schablone …
+- **Format:** A6, 7 Stempel  (bzw. Grosse bei Stanzen)
+- **Hersteller / Artikel-Nr. / Lagernr.:** falls bekannt
+- **Inhalt:** Spruch 1 · Spruch 2 · …   (vollstaendig!)
+- **Tags:** aus dem Vokabular unten
+```
+
+**Verweis-Form in meinen Antworten:** Nummer bringt sie zur Hülle, Klartext zum Stempel darin.
+> "**1001** (Clearstamp) — daraus die Stempel *Nachträglich* und *Alles Liebe zum Geburtstag!*"
+
+**Gemischte Sets: pro Spruch taggen, nicht pro Set.** Wenn ein Set vier Weihnachtssprüche und zwei allgemeine enthält, würde ein Set-Tag `weihnachten` sie zu sechs Stempeln führen, von denen nur vier passen. Dann so:
+
+```
+- **Inhalt & Tags:**
+  - Frohe Weihnachten — `weihnachten`
+  - Alles Gute — `allgemein` `geburtstag`
+```
+
 ## Das Tag-Vokabular
 
 Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht auswendig lernen — nur damit du weisst, wonach ich filtere.
