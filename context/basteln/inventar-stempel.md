@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1022** |
+| Clearstamps | **1023** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -375,8 +375,9 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 ### 1021 — Alphabet, Einzelbuchstaben ⭐⭐ dein wichtigstes Werkzeug
 - **Typ:** Clearstamp-Set · **Format:** Alphabet, jeder Buchstabe als einzelner Stempel
 - **Hersteller / Artikel-Nr.:** nicht abgelesen
-- **Inhalt:** komplettes Alphabet als Einzelstempel *(im Foto sichtbar: N, O, P, Q)*
-- **⚠️ Noch offen:** A–Z vollständig? Gross- **und** Kleinbuchstaben? Zahlen und Satzzeichen dabei? Wie hoch sind die Buchstaben?
+- **Inhalt:** Alphabet als Einzelstempel, **nur Grossbuchstaben** (von Patricia bestätigt 19.8., keine Kleinbuchstaben) — *im Foto sichtbar: N, O, P, Q*
+- **⚠️ Noch offen:** A–Z vollständig? Zahlen und Satzzeichen dabei? Buchstabenhöhe?
+- **Konsequenz für den Einsatz:** Namen werden zu **LENA**, **MAMA**, **OPA** — plakativ statt verspielt. Passt darum besonders gut unter deine Versalien-Sprüche — `ALLES GUTE!` aus 1001, `FROHE WEIHNACHTEN UND EIN GUTES NEUES JAHR` aus 1014, der Rechen-Spruch aus 1020. Unter Schreibschrift-Sprüchen wirkt es als bewusster Kontrast — nicht zufällig, sondern gesetzt. Für Monogramme und Platzkarten ist Versalien sogar die bessere Wahl.
 - **Tags:** `geburtstag` `geburt` `einladung` `gutschein` `feier` `weihnachten` `allgemein` `alphabet` `sofort-einsetzbar`
 
 **Warum das alles ändert:** Mit einem Alphabet kannst du **Namen stempeln**. Und damit funktioniert deine Vorrats-Strategie erst richtig:
@@ -386,6 +387,32 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 Bis jetzt waren alle Vorrats-Karten unpersonalisiert — schön, aber beliebig. Der Name macht aus „eine Karte" eine Karte *für dich*. Dazu kommen Monogramme auf Verpackungen, Namensanhänger am Weihnachtsbaum, Platzkarten für den Tisch.
 
 **Technik-Tipp:** Buchstaben einzeln auf dem Acrylblock ausrichten ist fummelig. Zieh eine feine Bleistiftlinie und setz die Buchstaben daran — sonst läuft die Zeile schief. Radieren geht nach dem Trocknen.
+
+---
+
+### 1022 — MEERESBRISE, Lebens- und Mutsprüche ⭐⭐⭐ stärkstes Mentoring-Set
+- **Typ:** Clearstamp-Set · **Format:** 8 Stempel — 5 grosse Textblöcke + 1 vertikaler Schriftzug + 2 Sonnen-Motive
+- **Hersteller / Artikel-Nr.:** nicht abgelesen
+- **⚠️ Nummer prüfen:** im Foto sieht die letzte Ziffer nach einer 9 aus (`1029`?). `1022` ist die logisch nächste — bitte bestätigen.
+- **Inhalt Text:**
+  1. Du wurdest geboren um **ECHT** zu sein, nicht um perfekt zu sein!  *(das Wort „ECHT" war von einer Lichtreflexion verdeckt — Lesung sehr wahrscheinlich, aber nicht sicher)*
+  2. Zuhause ist nicht einfach nur ein **ORT**, es ist ein wundervolles Gefühl!
+  3. Fühl Dich gedrückt aus der Ferne
+  4. Wer ins kalte Wasser springt, taucht in ein **Meer** voller Möglichkeiten!
+  5. Die besten Wünsche: Sonne im Gesicht, Wind im Rücken und immer die besten Aussichten!
+  6. MEERESBRISE *(vertikal, Blockschrift)*
+- **Inhalt Motive:** Sonne gross · Sonne klein
+- **Tags:** `allgemein` `umzug` `neuanfang` `abschluss` `trost` `aufmunterung` `freundschaft` `sommer` `geburtstag` `textstempel` `grossflächig` `mentoring-tauglich`
+
+**Warum das dein stärkstes Mentoring-Set ist:**
+
+*„Du wurdest geboren um echt zu sein, nicht um perfekt zu sein!"* trifft deinen Anti-Perfekt-Markenwert wörtlich — deutlicher als Buddha (1015) und deutlicher als das Leinwand-Zitat (1020). Das ist ein Satz, den du so oder so sagst.
+
+*„Wer ins kalte Wasser springt, taucht in ein Meer voller Möglichkeiten"* ist der Spruch für Mentees, die zögern.
+
+Und **eine echte Lücke schliesst sich:** *„Fühl Dich gedrückt aus der Ferne"* ist Trost über Distanz — bei Krankheit, bei Kummer, wenn man nicht hinkann. Bisher hattest du für Trost nur `1007`, und das ist ein Trauerset für Todesfälle. Diese beiden Situationen brauchen unterschiedliche Karten.
+
+Dazu *„Zuhause ist ein Gefühl"* für Umzug und Einzug, und *„Sonne im Gesicht, Wind im Rücken"* als Segenswunsch für Abschied, Reise oder Schulabschluss.
 
 ---
 
