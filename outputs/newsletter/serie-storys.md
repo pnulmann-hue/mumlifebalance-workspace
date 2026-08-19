@@ -12,7 +12,7 @@ tags: [content, newsletter, funnel]
 | **Datei** | [[serie-storys-mail1-vier-folien.html]] | [[serie-storys-mail2-gespraech.html]] |
 | **Thema** | Die 4-Folien-Abfolge um die Firmen-Slide herum | Was du mit denen machst, die abgestimmt haben |
 | **Versand** | Mi 19.8. oder Do 20.8. | Mi 26.8. |
-| **CTA** | gratis Story-Challenge (**Start Di 1.9.**) | 90 Storyideen (19 CHF) + Challenge-Erinnerung |
+| **CTA** | gratis Story-Challenge (**Start Di 1.9.**) | gratis Story-Challenge — letzter Aufruf vor dem Start |
 
 ---
 
@@ -68,13 +68,20 @@ Wer abgestimmt hat, steht mit Namen in ihrer Story-Ansicht. Das ist die wertvoll
 
 **Mail 2:** Sie haben abgestimmt — und jetzt?
 *(Alternativen: „Die wertvollste Liste, die du auf Instagram hast" · „Was du nach der Umfrage schreibst")*
+*Versand Mi 26.8. — die Frist „bis Montagabend" bezieht sich auf Mo 31.8.*
 **Preheader:** Wer getippt hat, steht bei dir mit Namen da. Das ist die wertvollste Liste, die du auf Instagram bekommst.
 
 ---
 
-## Warum Mail 1 auf die Challenge zeigt und nicht auf den 19er
+## Warum beide Mails auf die Challenge zeigen und nicht auf die 90 Storyideen
 
-In Mail 1 ist ihr Ideen-Mangel noch gar nicht spürbar, weil sie noch nie versucht hat, etwas Eigenes zu formulieren. Ein Ideen-Workbook würde dort ein Problem lösen, das sie noch nicht hat. Erst in Mail 2 wird der Mangel fühlbar („der erste Moment fällt dir ein, der zweite vielleicht auch, und dann…"), und genau dort verkauft sich das Workbook von selbst.
+**Entscheidung Patricia, 19.8.:** Die Storyideen kommen in dieser Serie gar nicht vor.
+
+Der Grund ist ein Preis-Konflikt: Im Storyideen-Checkout liegt aktuell ein Upsell auf die **Instagram-Kundenmaschine für 97**. Nach der Challenge wird die Kundenmaschine aber für **333** gepitcht — und dieser Pitch hat bei der letzten Runde **4 von 5 Teilnehmerinnen** konvertiert. Wer erst 97 gesehen hat und danach 333 bezahlen soll, fühlt sich vorgeführt und kauft nie mehr.
+
+Dazu kommt die Rechnung: Eine Frau, die in die Challenge geht, ist eine 333er-Kandidatin. Sie stattdessen zur 19er-Käuferin zu machen, kostet Geld — und macht sie für den IKM-Pitch vorerst unbrauchbar. Also geht in diesem Fenster **jeder Klick in die Challenge**.
+
+**Offene Baustelle (nicht dringend, aber real):** Die Kundenmaschine hat zwei Preise. Das gehört im September beim Selbstlerner-Umbau aufgelöst — entweder heisst die günstige Fassung anders und ist klar abgegrenzt, oder es gibt einen Preis. Solange beides existiert, kollidiert es überall dort, wo Storyideen-Funnel und IKM-Pitch sich berühren (laufende Meta-Ad, Kaskade Loop 6).
 
 ---
 
@@ -82,7 +89,7 @@ In Mail 1 ist ihr Ideen-Mangel noch gar nicht spürbar, weil sie noch nie versuc
 
 1. **Landingpage-Abgleich:** Auf `mumlifebalance.ch/story-challenge/` steht aktuell „In deinem Tempo" und kein Startdatum. Die Mails sagen **Start Dienstag, 1. September**. Das muss zusammenpassen, sonst wirkt die Seite wie ein anderer Termin — Datum auf der Seite ergänzen, bevor Mail 1 rausgeht.
 2. Betreff + Preheader setzen, Merge-Tag `%FIRSTNAME%` prüfen.
-3. Beide Links antippen: `https://mumlifebalance.ch/story-challenge/` und `https://mumlifebalance.ch/storyideen` (beide am 19.8. geprüft, liefern 200).
+3. Link antippen: `https://mumlifebalance.ch/story-challenge/` (am 19.8. geprüft, liefert 200). Beide Mails führen ausschliesslich dorthin.
 4. Testmail an dich selbst, einmal auf dem Handy anschauen.
 5. Versand vormittags, Antwort-Adresse auf dein echtes Postfach — beide P.S. laden zum Antworten ein.
 
