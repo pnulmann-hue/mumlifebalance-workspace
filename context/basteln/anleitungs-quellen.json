@@ -1,0 +1,105 @@
+{
+  "hinweis": "Quellen fuer scripts/basteln/anleitungs-radar.mjs. typ=feed -> RSS/Atom; typ=html -> Seite scrapen nach link_muster. feed=null bei typ=feed -> Skript probiert Standardpfade und traegt den funktionierenden ein.",
+  "stand": "2026-08-18",
+  "quellen": [
+    {
+      "name": "Scrapbook Forever TV (YouTube)",
+      "typ": "feed",
+      "url": "https://www.youtube.com/@scrapbookforever6137",
+      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCt-kuzp5AQbQfTNsslWpE_g",
+      "schwerpunkt": "Video-Anleitungen der Herstellerin zu ihren eigenen Sets — Wochenkalender, Neuheiten, Techniken. Patricia kann Videos ansehen, Claude nicht: darum besonders wertvoll.",
+      "relevanz": "sehr hoch"
+    },
+    {
+      "name": "Mundart Stempel — Gratis-Anleitungen",
+      "typ": "html",
+      "url": "https://www.mundartstempel.ch/de/Inspirationen/gratis-anleitungen/",
+      "feed": null,
+      "link_muster": "(gratis-anleitungen/anleitung|/de/a\\d\\d[-\\d]*)",
+      "titel_putzen": "\\s*\\((?:Nicht|Kein)[^)]*\\)?\\s*$",
+      "schwerpunkt": "~40 kostenlose Verpackungs- und Karten-Anleitungen als Download: Punchboard-Verpackung, Buchschachtel, Teestick-Box, Sternenbox, Milchbox, Explosionsbox, Karte mit integrierter Box. Direkt doTERRA-relevant.",
+      "relevanz": "sehr hoch"
+    },
+    {
+      "name": "Karten-Kunst",
+      "url": "https://blog.karten-kunst.de/",
+      "feed": null,
+      "schwerpunkt": "Kartenbasteln mit Stempeln und Stanzschablonen",
+      "relevanz": "hoch",
+      "typ": "feed"
+    },
+    {
+      "name": "Kartenwind",
+      "url": "https://kartenwind.blogspot.com/",
+      "feed": "https://kartenwind.blogspot.com/feeds/posts/default",
+      "schwerpunkt": "Karten, Stempeltechniken",
+      "relevanz": "hoch",
+      "typ": "feed"
+    },
+    {
+      "name": "Papierschaetzchen",
+      "url": "https://papierschaetzchen.de/bastelideen-anleitungen/",
+      "feed": null,
+      "schwerpunkt": "Papier-Bastelanleitungen, Geschenkideen, Verpackungen",
+      "relevanz": "hoch",
+      "typ": "feed"
+    },
+    {
+      "name": "bitavins Bastel-Blog",
+      "url": "https://bitavin.blogspot.com/",
+      "feed": "https://bitavin.blogspot.com/feeds/posts/default",
+      "schwerpunkt": "Karten, eigene Anleitungs-Sammlung unter /p/anleitungen.html",
+      "relevanz": "hoch",
+      "typ": "feed"
+    },
+    {
+      "name": "Kruemels Bastel-Blog",
+      "url": "https://kruemelsbastelblog.blogspot.com/",
+      "feed": "https://kruemelsbastelblog.blogspot.com/feeds/posts/default",
+      "schwerpunkt": "Karten mit Stempeln und Techniken",
+      "relevanz": "mittel",
+      "typ": "feed"
+    },
+    {
+      "name": "KreativDsein (Billes Bastelblog)",
+      "url": "http://billes-bastelblog.blogspot.com/",
+      "feed": "http://billes-bastelblog.blogspot.com/feeds/posts/default",
+      "schwerpunkt": "Basteln allgemein, Anleitungen",
+      "relevanz": "mittel",
+      "typ": "feed"
+    },
+    {
+      "name": "danipeuss",
+      "url": "https://danipeuss.blogspot.com/",
+      "feed": "https://danipeuss.blogspot.com/feeds/posts/default",
+      "schwerpunkt": "Scrapbooking, Karten, Journaling",
+      "relevanz": "mittel",
+      "typ": "feed"
+    },
+    {
+      "name": "Gonis Bloggarei",
+      "url": "https://gonis-blog.blogspot.com/",
+      "feed": "https://gonis-blog.blogspot.com/feeds/posts/default",
+      "schwerpunkt": "Gonis-Techniken — Betonpaste, Rubbel-Coll, Cremes (Patricia hat das Material!)",
+      "relevanz": "hoch",
+      "typ": "feed"
+    },
+    {
+      "name": "Mrs Greenhouse",
+      "url": "https://mrsgreenhouse.de/blog",
+      "feed": "https://mrsgreenhouse.de/feed",
+      "schwerpunkt": "DIY breit gefaechert, Upcycling — nur teilweise Papier",
+      "relevanz": "niedrig",
+      "typ": "feed"
+    },
+    {
+      "name": "abgestempelt.net",
+      "url": "https://abgestempelt.net/",
+      "feed": "https://abgestempelt.net/feed/",
+      "schwerpunkt": "Kartentechniken-Grundlagen, gut fuer Technik-Lexikon",
+      "relevanz": "mittel",
+      "typ": "feed"
+    }
+  ],
+  "quellen_geprueft": "2026-08-19"
+}

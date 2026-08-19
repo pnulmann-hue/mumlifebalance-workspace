@@ -6,6 +6,8 @@ tags: [basteln, inventar, stempel, system]
 
 **Angelegt:** 2026-08-18 · **Das ist das Herzstück.** Hier steht, was du hast, wo es liegt und wofür es taugt.
 
+> **Auch in Notion:** [✂️ Bastel-Material](https://app.notion.com/p/0219d4d79a3b4f6cbc7a4d5dd143d101) in „🏡 Privat & Familie" — für den Basteltisch, mobil filterbar nach Anlass. **Diese Datei ist der Master**, Notion die Zweitansicht. Claude schreibt in beide.
+
 ---
 
 ## Die Grundidee: Nummer statt Thema
@@ -71,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1003** |
+| Clearstamps | **1007** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -102,8 +104,8 @@ Der Punkt an dieser Reihenfolge: **du kannst 20 Sets in einem Rutsch durchnummer
 Pflichtfelder pro Eintrag:
 
 ```
-### 1001 — "Set-Name"
-- **Typ:** Clearstamp-Set / Stanze / Schablone …
+### NNNN — <Set-Name>
+- **Typ:** Clearstamp-Set / Stanze / Schablone …   (Platzhalter-Vorlage, kein echter Eintrag)
 - **Format:** A6, 7 Stempel  (bzw. Grosse bei Stanzen)
 - **Hersteller / Artikel-Nr. / Lagernr.:** falls bekannt
 - **Inhalt:** Spruch 1 · Spruch 2 · …   (vollstaendig!)
@@ -154,6 +156,52 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 - **Inhalt:** Glück bedeutet …deinen eigenen Weg zu gehen. · Gesundheit, Liebe & schöne Momente sind der wahre Reichtum des Lebens.
 - **Tags:** `allgemein` `danke` `umzug` `neuanfang` `abschluss` `freundin` `textstempel` `grossflächig` `doterra-tauglich` `mentoring-tauglich`
 - **Details & Projekte:** [[stempelsets-sf]]
+
+---
+
+### 1003 — „3 Wünsche für dich" (SF, Kalender-Set)
+- **Typ:** Clearstamp-Set · **Format:** 3 Textstempel
+- **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** unbekannt (Kalender-Set)
+- **Inhalt:**
+  - 3 Wünsche für dich: SONNE IM HERZEN, GUTE FREUNDE AN DEINER SEITE UND IMMER EINEN GRUND ZUM LÄCHELN!
+  - Möge jeder Tag so viele schöne Momente für dich bereithalten, dass dir am Abend ganz schwindelig ist vor Glück.
+  - Mein Wunsch für dich:
+- **Tags:** `geburtstag` `allgemein` `freundschaft` `neuanfang` `textstempel` `grossflächig` `mentoring-tauglich`
+- **Notiz:** „Mein Wunsch für dich:" ist ein Anfangs-Stempel — danach handschriftlich weiter. Kombiniert gut mit 1002.
+
+### 1004 — Allrounder-Grussworte (Hersteller unbekannt) ⭐ Arbeitspferd
+- **Typ:** Clearstamp-Set · **Format:** 11 Textstempel, Druckschrift + Schreibschrift gemischt
+- **Hersteller:** unbekannt — keine Verpackung mehr vorhanden
+- **Inhalt & Tags** (gemischtes Set, darum pro Spruch):
+  - frohe Weihnachten — `weihnachten`
+  - fröhliche Adventszeit — `advent`
+  - happy Birthday — `geburtstag`
+  - herzlichen Glückwunsch — `geburtstag` `allgemein` `abschluss`
+  - Geburtstagspost — `geburtstag`
+  - herzliche Anteilnahme — `trost`
+  - herzlichen Dank — `danke`
+  - alles Liebe — `allgemein`
+  - für dich — `allgemein` (Baustein)
+  - für euch — `allgemein` (Baustein)
+  - von Herzen — `allgemein` (Baustein)
+- **Warum Arbeitspferd:** deckt sechs Anlässe in einem Set ab. Die drei Bausteine „für dich / für euch / von Herzen" kombinieren sich mit **jedem** anderen Set. Und es enthält als einziges „herzliche Anteilnahme" — für Trauerfälle hattest du sonst nichts.
+
+### 1005 — „Weihnachtsmomente" (Alexandra Renke) ⭐ grösstes Weihnachts-Set
+- **Typ:** Clearstamp-Set (Photopolymer) · **Format:** ca. 18 Stempel, Text + Motive, made in UK
+- **Hersteller:** Alexandra Renke — **neuer Hersteller im Bestand**
+- **Inhalt Text:** Erst eins, dann zwei, dann drei, dann vier… · Weihnachtsmomente · Wintergeflüster (Rundstempel) · Weihnachtliche FAMILIENzeit · WeihnachtsTraum · FROHES FEST (im Geweih-Rahmen) · FÜR kleine WÜNSCHE · 3 magische Worte: HO HO HO · Lass uns einen Schneemann bauen! · WEHE, du weisst wieder vorher, was drin ist! · Ho Ho Fröhliche Weihnachten (Kreisstempel mit Herz) · Gänsehaut MOMENT · Barfuss im Schnee
+- **Inhalt Motive:** Schleife · Tannenzweig · Feder · kleiner Stern · dunkles Flächenelement
+- **Tags:** `weihnachten` `advent` `winter` `textstempel` `motivstempel` `sofort-einsetzbar` `zum-kolorieren`
+- **Notiz:** Die humorvollen Sprüche sind das Besondere — „WEHE, du weisst wieder vorher, was drin ist!" auf einen Geschenkanhänger für die Familie. Die Rundstempel funktionieren als Siegel-Optik.
+
+### 1006 — „Magische Wintermomente" (SF, Silhouette)
+- **Typ:** Clearstamp-Set · **Format:** 2 Stempel — 1 grosser Silhouette-Motivstempel + 1 Textstempel
+- **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** unbekannt
+- **Inhalt:**
+  - MOTIV: Hirsch-Silhouette mit Tannenwald und Mond (grossflächige Szene)
+  - TEXT: Magische Wintermomente
+- **Tags:** `weihnachten` `winter` `advent` `motivstempel` `grossflächig` `sofort-einsetzbar`
+- **Notiz:** Silhouette-Stempel, füllt eine Karte fast allein. Keine Kolorierung nötig — wirkt als Scherenschnitt. Stark auf hellem Aquarell-Wash oder mit ausgestanztem Mond dahinter.
 
 ---
 

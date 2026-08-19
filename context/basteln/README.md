@@ -22,6 +22,11 @@ tags: [basteln, hub]
 | [[stempelsets-sf]] | 🔄 erfasste Scrapbook-Forever-Sets mit Ideen-Auswertung |
 | `context/persoenlich/basteln-anlaesse.md` | 🔄 Anlass-Liste — **gitignored** (Namen & Geburtsdaten gehören nicht ins öffentliche Repo) |
 
+## Notion (mobile Ansicht)
+
+[✂️ Bastel-Material](https://app.notion.com/p/0219d4d79a3b4f6cbc7a4d5dd143d101) in „🏡 Privat & Familie" — dieselben Daten wie [[inventar-stempel]], am Basteltisch nach Anlass filterbar.
+**Master bleibt das Markdown**, Notion ist die Zweitansicht. Claude schreibt in beide.
+
 ## Quelle der digitalen Dateien
 `C:\Users\pnulm\OneDrive\Dokumente\Patricia\Hobby\Basteln\`
 → `Plotter/` (7'605) · `Gonis/` (304) · `scrapbook forever/` (140)
