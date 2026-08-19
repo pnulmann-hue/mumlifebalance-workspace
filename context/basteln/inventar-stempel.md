@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1021** |
+| Clearstamps | **1022** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -359,16 +359,33 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 ---
 
 ### 1020 — Zitate & Kurzgrüsse ⭐⭐ Mentoring-Gold
-- **Typ:** Clearstamp-Set · **Format:** ca. 9 Stempel — 2 grosse Zitat-Blöcke + 6 Kurzgrüsse + 1 vertikales Element
+- **Typ:** Clearstamp-Set · **Format:** ca. 8 Stempel — 2 grosse Zitat-Blöcke + 6 Kurzgrüsse
 - **Hersteller / Artikel-Nr.:** nicht abgelesen
 - **Die zwei grossen Zitat-Blöcke:**
   1. **Rechen-Spruch:** *SCHÖNE MOMENTE addieren · Wünsche & Träume teilen · Kummer und Sorgen HALBIEREN · Erfahrungen zusammenlegen · Glück & Freude MULTIPLIZIEREN · ERFOLGE aufrunden · Zweifel abrunden · SPASS VERDOPPELN* (Schriftmix)
   2. **Leinwand-Zitat:** *Die Gedanken, die wir auswählen, sind die Farben, mit denen wir die Leinwand unseres Lebens bemalen.*
 - **Kurzgrüsse:** liebe Grüsse · für Dich · Alles Gute *(Schreibschrift)* · Alles Gute *(Blockschrift, zweite Variante)* · Auf Dich · Geburtstage zählt man nicht, man feiert sie!
-- **⚠️ Unklar:** ein vertikal gesetzter Stempel am rechten Rand — sieht nach **„OPA"** aus, aber nicht sicher gelesen. Bitte prüfen.
+- **Korrektur 19.8.:** Die vertikalen Buchstaben am Bildrand gehören **nicht** zu diesem Set — das ist das separate Alphabet-Set **1021**.
 - **Tags:** `geburtstag` `allgemein` `freundschaft` `danke` `aufmunterung` `feier` `abschluss` `neuanfang` `textstempel` `grossflächig` `mentoring-tauglich`
 - **Warum das dein bestes Mentoring-Set ist:** Das **Leinwand-Zitat** liegt noch näher an deiner Marke als das Buddha-Zitat aus 1015 — es geht um bewusste Entscheidung statt Zufall, genau dein Thema. Der **Rechen-Spruch** ist der beste Freundschafts- und Jubiläumsspruch im ganzen Bestand: charmant, humorvoll, trägt eine Karte allein. Und *„Geburtstage zählt man nicht, man feiert sie!"* entschärft jeden Rundgeburtstag.
 - **Praktisch:** zwei Varianten von „Alles Gute" in verschiedenen Schriften — damit kannst du eine Serie bauen, die nicht monoton wirkt.
+
+---
+
+### 1021 — Alphabet, Einzelbuchstaben ⭐⭐ dein wichtigstes Werkzeug
+- **Typ:** Clearstamp-Set · **Format:** Alphabet, jeder Buchstabe als einzelner Stempel
+- **Hersteller / Artikel-Nr.:** nicht abgelesen
+- **Inhalt:** komplettes Alphabet als Einzelstempel *(im Foto sichtbar: N, O, P, Q)*
+- **⚠️ Noch offen:** A–Z vollständig? Gross- **und** Kleinbuchstaben? Zahlen und Satzzeichen dabei? Wie hoch sind die Buchstaben?
+- **Tags:** `geburtstag` `geburt` `einladung` `gutschein` `feier` `weihnachten` `allgemein` `alphabet` `sofort-einsetzbar`
+
+**Warum das alles ändert:** Mit einem Alphabet kannst du **Namen stempeln**. Und damit funktioniert deine Vorrats-Strategie erst richtig:
+
+> Zehn Karten blanko vorproduzieren → beim Anlass nur den Namen drauf → **fertig in zwei Minuten statt zwei Stunden.**
+
+Bis jetzt waren alle Vorrats-Karten unpersonalisiert — schön, aber beliebig. Der Name macht aus „eine Karte" eine Karte *für dich*. Dazu kommen Monogramme auf Verpackungen, Namensanhänger am Weihnachtsbaum, Platzkarten für den Tisch.
+
+**Technik-Tipp:** Buchstaben einzeln auf dem Acrylblock ausrichten ist fummelig. Zieh eine feine Bleistiftlinie und setz die Buchstaben daran — sonst läuft die Zeile schief. Radieren geht nach dem Trocknen.
 
 ---
 
