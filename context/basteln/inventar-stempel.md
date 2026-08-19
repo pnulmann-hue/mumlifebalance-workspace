@@ -123,6 +123,32 @@ Pflichtfelder pro Eintrag:
   - Alles Gute — `allgemein` `geburtstag`
 ```
 
+## 🔮 Symbolik — was ein Motiv BEDEUTET, nicht nur was es zeigt
+
+**Patricias Hinweis vom 19.8.:** Ein Motiv gehört nicht nur zu seiner Kategorie. Kleeblätter sind nicht „Garten", sie sind **Glück** — und passen damit überall, wo es um Glück geht. Diese Tabelle ist darum bei jeder Suche mitzudenken.
+
+| Motiv | Set | Bedeutet | Passt zusätzlich bei |
+|---|---|---|---|
+| **Kleeblatt** | `1062` | Glück | Prüfung · Neujahr · Umzug · neuer Job · Hochzeit · Geburt · Geburtstag · Abschied · jeder Neuanfang |
+| **Fliegenpilz** | `1051` `1061` | Glückspilz | Neujahr · Prüfung · Geburtstag · Gratulation |
+| **Marienkäfer** | `1051` | Glücksbringer | Neujahr · Prüfung · Geburt · Kinderkarten |
+| **Schmetterling** | `1038` `1051` `1055` `1061` | Verwandlung | Neuanfang · Abschluss · **Trauer** · Genesung |
+| **Pusteblume** | `1038` `1055` | Loslassen, Wünsche | Trauer · Abschied · Geburtstag (Wünsche) · Neuanfang |
+| **Herbstblatt** | `1060` | Loslassen | Trauer · Abschied · Ruhestand |
+| **Biene** | `1051` | Fleiss | Erfolg · Prüfung · Danke (fleissige Helferin) |
+| **Schnecke** | `1051` | Langsamkeit | Entspannung · Geduld · Genesung — passt zum Faultier (`1065`) |
+| **Vogelflug** | `1070` | Freiheit, Aufbruch | **Trauer** · Abschied · Auszug der Kinder · Reise |
+| **Stern** | `1016` `1058` | Wunsch, Erinnerung | Weihnachten · **Trauer** (alle vier Trauersprüche nutzen Sterne) · Geburt |
+| **Rose** | `1029` | Liebe, Würde | Muttertag · Valentinstag · **Kondolenz** (klassisches Trauermotiv) · Hochzeit |
+| **Mohn** | `1043` | Leichtigkeit, Gedenken | Sommer · **Trauer** (Gedenkblume) |
+| **Tannenzweig** | `1049` | Immergrün | Weihnachten · **Kondolenz** (traditionelles Trauergrün) |
+| **Farn** | `1030` `1032` | Zurückhaltung | modern-elegant · **Kondolenz** · formelle Anlässe |
+| **Engel** | `1059` | Schutz | Taufe · Geburt · **Trauer** · Krankheit · Schulanfang · Reise |
+| **Tulpe / Schneeglöckchen / Kirschblüte** | `1027` `1037` `1039` `1044` | Frühling, Anfang | Ostern · Muttertag · **Neuanfang** · Genesung |
+| **Sektflasche** | `1013` | Erfolg feiern | Silvester · Prüfung · Beförderung · Hochzeit · Jubiläum |
+
+**Faustregel für mich:** Bei jeder Anlass-Suche nicht nur nach dem Tag filtern, sondern auch fragen — **welches Bild trägt diese Botschaft?** Ein Kleeblatt auf einer Prüfungskarte sagt mehr als ein Blumenstrauss.
+
 ## Das Tag-Vokabular
 
 Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht auswendig lernen — nur damit du weisst, wonach ich filtere.
@@ -791,7 +817,7 @@ Die **zwei langen Zweige** sind Rand- und Rahmen-Werkzeuge: als Bordüre über d
 
 ### 1041 — Weihnachtswichtel + Kugeln ⭐ erste Weihnachts-Figuren
 - **Typ:** Clearstamp-Set · **Format:** ca. 9 Stempel · **Lagernr.:** `SO1D812`
-- **⚠️ Stanzen vorhanden** — Nummerierung offen, siehe Hinweis unten
+- **Inkl. passende Stanzen** — liegen in derselben Hülle, keine eigene Nummer nötig
 - **Inhalt Motive:** zwei grosse **Weihnachtswichtel** (Zipfelmütze, Bart, Füsse — zwei Varianten) · grosse Weihnachtskugel mit Aufhänger · kleine Weihnachtskugel · drei bis vier Schneeflocken/Sterne
 - **Inhalt Text:** Frohes Fest
 - **Tags:** `weihnachten` `advent` `winter` `motivstempel` `textstempel` `zum-kolorieren` `grossflächig`
@@ -804,7 +830,7 @@ Mit den passenden Stanzen kannst du die Wichtel **ausschneiden und mit Foam-Pads
 
 ### 1042 — Baby- & Kindertiere (englisch) ⭐⭐ Kinder-Lücke geschlossen
 - **Typ:** Clearstamp-Set · **Format:** ca. 14 Stempel — 10 Motive + 4 Texte, alle Outline
-- **⚠️ Stanzen vorhanden** — Nummerierung offen, siehe Hinweis unten
+- **Inkl. passende Stanzen** — liegen in derselben Hülle, keine eigene Nummer nötig
 - **Inhalt Tiere:** grosser Elefant mit Girlande · Baby-Elefant · dritter kleiner Elefant · **Löwe** mit Mähne · zwei Hasen · grosser **Bär/Teddy** · kleines Tier mit Flügeln · **Pfotenabdruck**
 - **Weitere Motive:** Herzluftballon am Stiel · **HOORAY-Banner** · kleine Blume · Schmetterling
 - **Inhalt Text (englisch):** YOU'RE UNFORGETTABLE · **THANKS A TON** · DREAM BIG! · HOORAY
@@ -818,16 +844,13 @@ Mit den Stanzen lassen sich die Tiere ausschneiden — für Anhänger, Mobile-El
 
 ---
 
-### ⚠️ Offen: wie werden die Stanzen nummeriert?
+### ✅ Geklärt: Stanzen bekommen keine eigene Nummer
 
-Zu `1041` und `1042` gehören **passende Stanzen**. Zwei Wege:
+Zu `1041`, `1042` und `1051` gehören passende Stanzen — **sie liegen zusammen mit den Stempeln in derselben Hülle** (Patricia 19.8.).
 
-| Wenn… | dann… |
-|---|---|
-| Stanzen liegen **zusammen** mit den Stempeln in einer Hülle | gleiche Nummer, im Register als „inkl. Stanzen" vermerkt — nichts extra zu beschriften |
-| Stanzen liegen **getrennt** (Magnetbox) | eigene Nummer im **3000er-Block** (`3001`, `3002`, …) mit Querverweis „passt zu 1041" |
+> **Stamp-&-Die-Sets behalten eine Nummer.** Im Register steht „inkl. passende Stanzen", du musst nichts extra beschriften.
 
-Bei Stamp-&-Die-Sets ist beides üblich. **Sag mir, wie du sie lagerst** — danach richte ich die Nummerierung aus. Das betrifft alle künftigen Stanzen, darum lohnt die Entscheidung jetzt.
+Der **3000er-Block** bleibt reserviert für **einzelne** Stanzen, die ohne zugehörigen Stempel in der Magnetbox liegen.
 
 ---
 
@@ -866,10 +889,11 @@ Bei Stamp-&-Die-Sets ist beides üblich. **Sag mir, wie du sie lagerst** — dan
 
 ---
 
-### 1047 — ⚠️ Tiermotiv, Inhalt unklar (SF)
+### 1047 — Elefanten, gross und klein (SF)
 - **Typ:** Clearstamp-Set · **Format:** ca. 3–4 Stempel
-- **⚠️ Nicht sicher gelesen:** Die Verpackung lag gedreht, die transparenten Stempel überlagerten sich. Erkennbar: ein grösseres Tier (Maus oder Hase) mit einem grossen runden Objekt (Trommel? Ei? Ball?), ein kleineres Tier darüber, zwei bis drei Ringformen. Kein Text erkennbar.
-- **Bitte neu fotografieren** — einzeln, ungedreht, am besten auf **dunklem Untergrund**. Dann heben sich die transparenten Stempel ab und ich kann es vervollständigen.
+- **Inhalt Motive** (von Patricia bestätigt 19.8.): **ein grosser und ein kleiner Elefant** — was ich für „Tier mit Trommel" hielt, waren die Elefantenkörper mit Rüssel
+- **Tags:** `kinder` `geburt` `taufe` `geburtstag` `freundschaft` `allgemein` `motivstempel` `zum-kolorieren`
+- **Zusammen mit `1042` hast du fünf Elefanten** in verschiedenen Grössen. Damit lässt sich eine **Elefantenfamilie** bauen — gross und klein nebeneinander für Mutter-Kind, das klassische Bild für Geburtskarten. Kombiniert mit „Ein bisschen Mama, ein bisschen Papa und ganz viel Wunder" (`1022`) oder „THANKS A TON" (`1042`, das Elefanten-Wortspiel).
 
 ---
 
@@ -895,20 +919,30 @@ Und es trifft deine Zielgruppe ohne ein Wort — du arbeitest mit Müttern.
 
 ---
 
-### 1050 — ⚠️ Baby- oder Tiermotiv (SF)
+### 1050 — Bär oder Faultier, gross (SF)
 - **Typ:** Clearstamp-Set · **Format:** 1 grosser Motivstempel · **Lagernr.:** `WO1D25745`
-- **⚠️ Motiv nicht sicher bestimmt:** ein grosses rundliches Wesen mit zwei auffällig grossen Augen, kleinen Armen und Beinen, in der Mitte ein Objekt. Am wahrscheinlichsten ein **liegendes Baby mit Schnuller** — möglich wären auch Koala oder Faultier.
-- **Bitte bestätigen: Baby oder Tier?** Falls Baby, wäre es dein **erstes echtes Baby-Motiv** — passend zu den Geburtssprüchen aus `1022` und der Kinderwagen-Box aus dem Plotter-Ordner.
+- **Inhalt Motiv:** ein grosses Tier — **Bär oder Faultier** (Patricia 19.8.: „irgendein Bär oder Faultier")
+- **Tags:** `kinder` `geburt` `taufe` `geburtstag` `aufmunterung` `allgemein` `motivstempel` `zum-kolorieren` `grossflächig`
+- **Praktisch macht es keinen Unterschied:** Als **Bär** gehört es zum Kinder-Bestand (`1042` hat auch einen Teddy), als **Faultier** zum Entspannungs-Thema von `1065` und „Kurz abtauchen und entspannen" (`1064`). Grosses Einzelmotiv, trägt eine Karte allein. **Beim Kolorieren entscheidet sich's von selbst** — braun mit Schnauze wird's ein Bär, graubraun mit Schlitzaugen ein Faultier.
 
 ---
 
 ### 1051 — Garten- & Wiesentiere, ca. 20 Motive ⭐⭐ grösstes Motivset
 - **Typ:** Clearstamp-Set · **Format:** grosse Folie, ca. 20 Stempel im Doodle-Stil
-- **⚠️ Stanzen vorhanden**
+- **Inkl. passende Stanzen** — liegen in derselben Hülle
 - **Inhalt Tiere:** Frosch (springend) · zweiter Frosch/Kröte · Maus · Vogel/Küken · langbeiniger Vogel · zwei **Marienkäfer** · Käfer · zwei **Bienen** · Schmetterling · **Schnecke** · Wurm/Raupe · Igel (?)
 - **Inhalt Pflanzen:** zwei bis drei **Fliegenpilze** · grosser Pilz-Cluster · Beeren/Punkte
 - **Inhalt Text:** Let's celebrate you! · chirp · tweet
-- **Tags:** `garten` `kinder` `geburtstag` `sommer` `fruehling` `herbst` `feier` `freundschaft` `allgemein` `motivstempel` `zum-kolorieren` `randakzent`
+- **Tags:** `garten` `kinder` `geburtstag` `sommer` `fruehling` `herbst` `feier` `freundschaft` `neujahr` `erfolg` `allgemein` `motivstempel` `zum-kolorieren` `randakzent`
+
+**Symbolik — dieses Set ist mehr als „Garten":**
+- **Fliegenpilz** = Glückspilz → Neujahr, Prüfung, Gratulation
+- **Marienkäfer** = Glücksbringer → Neujahr, Prüfung, Geburt
+- **Biene** = Fleiss → Erfolg, Danke
+- **Schnecke** = Langsamkeit → Entspannung, Geduld (passt zum Faultier `1065`)
+- **Schmetterling** = Verwandlung → Neuanfang, Trauer
+
+Zusammen mit den **Kleeblättern aus `1062`** hast du damit einen kompletten **Glücksbringer-Satz**: Kleeblatt, Fliegenpilz, Marienkäfer. Das ist die Standard-Kombination für Prüfungs- und Neujahrskarten.
 
 **Dein grösstes Motivset — und das erste mit Garten-Bezug.** Eine komplette Wiese im Doodle-Stil.
 
@@ -916,11 +950,25 @@ Und es trifft deine Zielgruppe ohne ein Wort — du arbeitest mit Müttern.
 
 ---
 
-### 1052 — ⚠️ Kleine Weihnachtsmotive (Foto fehlt)
-- **Typ:** Clearstamp-Set · **Inhalt:** nur deine Kurzbeschreibung „kleine Weihnachtsmotive" — Einzelmotive noch nicht erfasst
-- **Tags:** `weihnachten` `advent` `winter` `randakzent`
-- **Wozu sie taugen:** kleine Weihnachtsmotive sind **Streu- und Füllelemente**. Damit ergänzt du die grossen Sets (`1017` Wort-Baum, `1006` Hirsch, `1041` Wichtel, `1049` Tannenzweig), ohne dass die Karte überladen wirkt. Auch zum Bestempeln der geplotteten Verpackungen.
-- **Foto schicken, wenn du magst** — dann liste ich die Motive auf.
+### 1052 — Kleine Weihnachtsmänner & Schneemänner
+- **Typ:** Clearstamp-Set · **Format:** kleine Figuren-Motive
+- **Inhalt Motive:** kleine **Weihnachtsmänner** und kleine **Schneemänner** *(Patricia 19.8.)*
+- **Tags:** `weihnachten` `advent` `winter` `kinder` `motivstempel` `zum-kolorieren` `randakzent`
+- **Noch offen:** Anzahl und Varianten — bei Gelegenheit nachzählen.
+
+**Damit ist dein Weihnachts-Figurenbestand komplett:**
+
+| Set | Figuren |
+|---|---|
+| `1041` | grosse Wichtel |
+| `1052` | kleine Weihnachtsmänner und Schneemänner |
+| `1059` | Schutzengel |
+
+Vorher war Weihnachten bei dir reiner Text und Botanik — jetzt hast du Charaktere in drei Grössen.
+
+**Der Vorteil der kleinen Grösse:** mehrere auf einer Karte ergeben eine **Szene**, einzeln passen sie auf Geschenkanhänger und in die freie Mitte der Rund-Etiketten (`1054`). Auf die geplotteten Verpackungen — Sternenbox, Schneeflockenbox, Weihnachtsbaum-Box — passen sie ebenfalls.
+
+**Und die Schneemänner gehen über Weihnachten hinaus:** Winterkarten im Januar und Februar, dann mit „Schneeflocken sind die Schmetterlinge des Winters" (`1034`) statt einem Weihnachtsgruss.
 
 ---
 
@@ -1053,7 +1101,8 @@ Je nach Situation wählst du den tröstenden oder den ermutigenden. **Erstes Her
   1. Nimm Dir die Zeit um glücklich zu sein.
   2. Überraschung
   3. **Manchmal sagt das Glück ganz leise: DU BIST DRAN!**
-- **Tags:** `neujahr` `erfolg` `abschluss` `neuanfang` `geburtstag` `aufmunterung` `freundschaft` `allgemein` `textstempel` `motivstempel` `mentoring-tauglich`
+- **Tags:** `neujahr` `erfolg` `abschluss` `neuanfang` `geburtstag` `aufmunterung` `freundschaft` `umzug` `hochzeit` `geburt` `allgemein` `textstempel` `motivstempel` `mentoring-tauglich`
+- **Symbolik: Kleeblatt = Glück.** Damit passt es **überall, wo Glück gewünscht wird** — Prüfung, Neujahr, Umzug, neuer Job, Hochzeit, Geburt, Abschied. Nicht auf „Garten" oder „Frühling" begrenzt.
 
 ***„Manchmal sagt das Glück ganz leise: DU BIST DRAN!"*** — das ist genau der Satz für eine Mentee, die lange gewartet hat und jetzt losläuft. Verwandt mit „GIB IMMER DER MÖGLICHKEIT EINE CHANCE" (`1039`) und „Wer ins kalte Wasser springt…" (`1021`), aber **persönlich adressiert**: *DU* bist dran.
 
