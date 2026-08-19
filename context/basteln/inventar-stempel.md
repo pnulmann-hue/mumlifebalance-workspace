@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1026** |
+| Clearstamps | **1027** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -490,6 +490,37 @@ Ein Stempel trägt die Karte allein — bei Trauerkarten ist Zurückhaltung ohne
 *„EIN PÄCKCHEN DER Freude"* ist ein Geschenkanhänger-Spruch — passt direkt auf deine geplotteten Verpackungen. Und *„HAB DICH lieb"* ist der herzlichste Kurzspruch im Bestand.
 
 Die **kleinen Herzen** sind Streu-Elemente, die zu allen anderen Sets passen.
+
+---
+
+### 1026 — Motivation & Lebensweisheiten, 9 Sprüche ⭐⭐⭐ Mentoring
+- **Typ:** Clearstamp-Set · **Format:** grosse Folie, 9 Textstempel, Mix aus Schreib- und Blockschrift
+- **Hersteller / Artikel-Nr.:** nicht abgelesen
+- **Inhalt Text (9):**
+  1. Nutze die Zeit zum **Träumen**, denn das ist der Weg zu den **Sternen**
+  2. **Lächle** und die Welt verändert sich!  *(Quellenangabe „Budda" — siehe Warnung unten)*
+  3. **HURRA**
+  4. Das **Gestern** ist fort, das **Morgen** noch nicht da, drum lebe **heute**
+  5. ICH MACH' MIR DIE WELT WIE SIE MIR GEFÄLLT!  *(Pippi Langstrumpf)*
+  6. **Jabadabadu**  *(vertikal)*
+  7. Warte nicht auf grosse **Wunder**, sonst verpasst Du viele **kleine**
+  8. Jahre vergehen, aber ein schöner Tag **leuchtet** ein Leben hindurch
+  9. Mach' **HEUTE** so wunderbar, dass **GESTERN** neidisch wird.
+- **Tags:** `allgemein` `neuanfang` `aufmunterung` `geburtstag` `abschluss` `freundschaft` `feier` `textstempel` `grossflächig` `mentoring-tauglich`
+
+**Nach 1021 dein zweitstärkstes Mentoring-Set — und das modernste.**
+
+*„Mach' heute so wunderbar, dass gestern neidisch wird"* ist der frechste Spruch im ganzen Bestand. *„Ich mach mir die Welt wie sie mir gefällt"* trifft dein Selbstbestimmungs-Thema. Und *„Warte nicht auf grosse Wunder, sonst verpasst Du viele kleine"* ist der Achtsamkeits-Spruch, den du sonst nirgends hast.
+
+**HURRA** und **Jabadabadu** sind Fun-Bausteine — die gibt es in keinem anderen Set. Gut für Kinderkarten und für Erfolgs-Glückwünsche.
+
+### ⚠️ Achtung bei Spruch 2: Schreibfehler im Stempel
+
+Die Quellenangabe lautet **„Budda"** — richtig wäre *Buddha*. Ein Fehler des Herstellers, kein Lesefehler von mir. Sitzt die Angabe im selben Stempel wie der Spruch, kannst du sie nicht weglassen. Drei Wege:
+
+1. Zeile nach dem Stempeln überdecken — Motiv, ein Herz aus `1025`, Washi-Streifen
+2. Den Spruch nehmen und darauf setzen, dass es niemandem auffällt
+3. **Sauberste Lösung:** stattdessen das Buddha-Zitat aus `1015` verwenden — dort ist es korrekt geschrieben
 
 ---
 
