@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1024** |
+| Clearstamps | **1026** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -358,39 +358,33 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 
 ---
 
-### 1020 — Zitate & Kurzgrüsse ⭐⭐ Mentoring-Gold
-- **Typ:** Clearstamp-Set · **Format:** ca. 8 Stempel — 2 grosse Zitat-Blöcke + 6 Kurzgrüsse
+### 1020 — Zitate, Kurzgrüsse & Alphabet ⭐⭐⭐ Mentoring-Gold + Personalisierung
+- **Typ:** Clearstamp-Set · **Format:** 2 grosse Zitat-Blöcke + 6 Kurzgrüsse + **komplettes Alphabet**
 - **Hersteller / Artikel-Nr.:** nicht abgelesen
 - **Die zwei grossen Zitat-Blöcke:**
   1. **Rechen-Spruch:** *SCHÖNE MOMENTE addieren · Wünsche & Träume teilen · Kummer und Sorgen HALBIEREN · Erfahrungen zusammenlegen · Glück & Freude MULTIPLIZIEREN · ERFOLGE aufrunden · Zweifel abrunden · SPASS VERDOPPELN* (Schriftmix)
   2. **Leinwand-Zitat:** *Die Gedanken, die wir auswählen, sind die Farben, mit denen wir die Leinwand unseres Lebens bemalen.*
 - **Kurzgrüsse:** liebe Grüsse · für Dich · Alles Gute *(Schreibschrift)* · Alles Gute *(Blockschrift, zweite Variante)* · Auf Dich · Geburtstage zählt man nicht, man feiert sie!
-- **Korrektur 19.8.:** Die vertikalen Buchstaben am Bildrand gehören **nicht** zu diesem Set — das ist das separate Alphabet-Set **1021**.
-- **Tags:** `geburtstag` `allgemein` `freundschaft` `danke` `aufmunterung` `feier` `abschluss` `neuanfang` `textstempel` `grossflächig` `mentoring-tauglich`
+- **Inhalt Alphabet:** Buchstaben als Einzelstempel, **nur Grossbuchstaben** (keine Kleinbuchstaben) — im Foto war der Streifen N, O, P, Q am Rand sichtbar
+- **Tags:** `geburtstag` `allgemein` `freundschaft` `danke` `aufmunterung` `feier` `abschluss` `neuanfang` `einladung` `gutschein` `textstempel` `alphabet` `grossflächig` `mentoring-tauglich`
 - **Warum das dein bestes Mentoring-Set ist:** Das **Leinwand-Zitat** liegt noch näher an deiner Marke als das Buddha-Zitat aus 1015 — es geht um bewusste Entscheidung statt Zufall, genau dein Thema. Der **Rechen-Spruch** ist der beste Freundschafts- und Jubiläumsspruch im ganzen Bestand: charmant, humorvoll, trägt eine Karte allein. Und *„Geburtstage zählt man nicht, man feiert sie!"* entschärft jeden Rundgeburtstag.
 - **Praktisch:** zwei Varianten von „Alles Gute" in verschiedenen Schriften — damit kannst du eine Serie bauen, die nicht monoton wirkt.
 
----
-
-### 1021 — Alphabet, Einzelbuchstaben ⭐⭐ dein wichtigstes Werkzeug
-- **Typ:** Clearstamp-Set · **Format:** Alphabet, jeder Buchstabe als einzelner Stempel
-- **Hersteller / Artikel-Nr.:** nicht abgelesen
-- **Inhalt:** Alphabet als Einzelstempel, **nur Grossbuchstaben** (von Patricia bestätigt 19.8., keine Kleinbuchstaben) — *im Foto sichtbar: N, O, P, Q*
-- **⚠️ Noch offen:** A–Z vollständig? Zahlen und Satzzeichen dabei? Buchstabenhöhe?
-- **Konsequenz für den Einsatz:** Namen werden zu **LENA**, **MAMA**, **OPA** — plakativ statt verspielt. Passt darum besonders gut unter deine Versalien-Sprüche — `ALLES GUTE!` aus 1001, `FROHE WEIHNACHTEN UND EIN GUTES NEUES JAHR` aus 1014, der Rechen-Spruch aus 1020. Unter Schreibschrift-Sprüchen wirkt es als bewusster Kontrast — nicht zufällig, sondern gesetzt. Für Monogramme und Platzkarten ist Versalien sogar die bessere Wahl.
-- **Tags:** `geburtstag` `geburt` `einladung` `gutschein` `feier` `weihnachten` `allgemein` `alphabet` `sofort-einsetzbar`
-
-**Warum das alles ändert:** Mit einem Alphabet kannst du **Namen stempeln**. Und damit funktioniert deine Vorrats-Strategie erst richtig:
+**Und das Alphabet macht dieses Set zum wichtigsten überhaupt.** Damit kannst du **Namen stempeln** — und damit funktioniert deine Vorrats-Strategie erst richtig:
 
 > Zehn Karten blanko vorproduzieren → beim Anlass nur den Namen drauf → **fertig in zwei Minuten statt zwei Stunden.**
 
-Bis jetzt waren alle Vorrats-Karten unpersonalisiert — schön, aber beliebig. Der Name macht aus „eine Karte" eine Karte *für dich*. Dazu kommen Monogramme auf Verpackungen, Namensanhänger am Weihnachtsbaum, Platzkarten für den Tisch.
+Bis hierhin waren alle Vorrats-Karten unpersonalisiert: schön, aber beliebig. Der Name macht aus „eine Karte" eine Karte *für dich*. Dazu Monogramme auf deinen geplotteten Verpackungen, Namensanhänger am Weihnachtsbaum, Platzkarten für den Tisch.
 
-**Technik-Tipp:** Buchstaben einzeln auf dem Acrylblock ausrichten ist fummelig. Zieh eine feine Bleistiftlinie und setz die Buchstaben daran — sonst läuft die Zeile schief. Radieren geht nach dem Trocknen.
+Weil es **nur Grossbuchstaben** sind, werden Namen zu **LENA**, **MAMA**, **OPA** — plakativ statt verspielt. Das passt gut unter deine Versalien-Sprüche (`ALLES GUTE!` aus 1001, `FROHE WEIHNACHTEN…` aus 1014, den Rechen-Spruch aus diesem Set). Unter Schreibschrift wirkt es als bewusster Kontrast.
+
+**Technik-Tipp:** Einzelbuchstaben auf dem Acrylblock auszurichten ist fummelig. Zieh eine feine Bleistiftlinie und setz die Buchstaben daran, sonst läuft die Zeile bergab. Nach dem Trocknen wegradieren.
+
+**Noch offen:** A–Z vollständig? Zahlen und Satzzeichen dabei? Wie hoch sind die Buchstaben? Das Letzte entscheidet, ob ein Name auf eine Karte passt oder nur auf einen Anhänger.
 
 ---
 
-### 1022 — MEERESBRISE, Lebens- und Mutsprüche ⭐⭐⭐ stärkstes Mentoring-Set
+### 1021 — MEERESBRISE, Lebens- und Mutsprüche ⭐⭐⭐ stärkstes Mentoring-Set
 - **Typ:** Clearstamp-Set · **Format:** 8 Stempel — 5 grosse Textblöcke + 1 vertikaler Schriftzug + 2 Sonnen-Motive
 - **Hersteller / Artikel-Nr.:** nicht abgelesen
 - **Inhalt Text:**
@@ -415,9 +409,9 @@ Dazu *„Zuhause ist ein Gefühl"* für Umzug und Einzug, und *„Sonne im Gesic
 
 ---
 
-### 1023 — Geburt & Lebensweisheiten, 8 Sprüche ⭐ Geburts-Lücke geschlossen
+### 1022 — Geburt & Lebensweisheiten, 8 Sprüche ⭐ Geburts-Lücke geschlossen
 - **Typ:** Clearstamp-Set · **Format:** grosse Folie, 8 Textstempel, durchgehend verschnörkelte Schreibschrift
-- **Hersteller / Artikel-Nr.:** nicht abgelesen · **Nummer angenommen** (im Foto keine sichtbar) — bitte bestätigen
+- **Hersteller / Artikel-Nr.:** nicht abgelesen · **Nummer 1022 von Patricia bestätigt**
 - **Inhalt — Geburt & Baby:**
   1. Ein bisschen **Mama**, ein bisschen **Papa** und ganz viel **Wunder**
   2. Wenn aus **Liebe** Leben wird, hat das **Glück** einen Namen
@@ -434,9 +428,67 @@ Dazu *„Zuhause ist ein Gefühl"* für Umzug und Einzug, und *„Sonne im Gesic
 
 **Bonus fürs Mentoring:** *„Auch der längste Weg beginnt mit einem kleinen Schritt"* für Mentees am Anfang, und *„Wer den Tag mit einem Lächeln beginnt, hat ihn bereits gewonnen"*.
 
-**Stil-Hinweis:** Alle acht in derselben Schnörkelschrift — untereinander wirken sie als Serie, aber mit dem Versalien-Alphabet (1021) beisst sich das. Namen darum eher handschriftlich dazuschreiben.
+**Stil-Hinweis:** Alle acht in derselben Schnörkelschrift — untereinander wirken sie als Serie, aber mit dem Versalien-Alphabet aus 1020 beisst sich das. Namen darum eher handschriftlich dazuschreiben.
 
 *(Bei Spruch 3 und 6 waren einzelne Wörter von Lichtreflexionen verdeckt — über den bekannten Wortlaut ergänzt.)*
+
+---
+
+### 1023 — Trauerspruch „Sterne der Erinnerung" (SF)
+- **Typ:** Clearstamp-Set · **Format:** 1 grosser Textstempel, 4-zeilig, Schreibschrift-Mix
+- **Hersteller:** Scrapbook Forever · **Lagernr.:** `WO1D18188`
+- **Inhalt Text:** Wenn die Sonne des Lebens untergeht, dann leuchten die Sterne der Erinnerung.
+- **Tags:** `trost` `textstempel` `grossflächig` `sofort-einsetzbar`
+
+**Zweiter vollwertiger Trauerspruch nach 1007** — und beide arbeiten mit derselben **Sterne-Metapher**:
+- 1007: *„Erinnerungen sind kleine Sterne, die tröstend in das Dunkel unserer Trauer leuchten."*
+- 1023: *„…dann leuchten die Sterne der Erinnerung."*
+
+**Damit entsteht eine ganze Trauerkarten-Linie aus vorhandenem Material:** Spruch aus `1023` oder `1007` · Stern-Motive aus `1016` · Zweige aus `1010` oder das grosse Blatt aus `1012`. Stilistisch konsistent, alles da.
+
+Ein Stempel trägt die Karte allein — bei Trauerkarten ist Zurückhaltung ohnehin richtig.
+
+---
+
+### 1024 — Englische Grussworte (Kalligrafie)
+- **Typ:** Clearstamp-Set · **Format:** 6 Textstempel, kalligrafische Schriften, teils sehr schwungvoll
+- **Hersteller / Artikel-Nr.:** nicht abgelesen
+- **Inhalt Text:**
+  1. THANK YOU *(Versalien, elegante Serifen)*
+  2. Thank You *(Schreibschrift, schwungvoll)*
+  3. Congrats! *(Schreibschrift, gross und schwungvoll — auffälligster Stempel des Sets)*
+  4. HAPPY BIRTHDAY *(Versalien, Serifen)*
+  5. Happy Birthday *(gemischte Schrift, schmaler)*
+  6. FRIENDS *(Versalien)*
+- **Tags:** `geburtstag` `danke` `freundschaft` `abschluss` `feier` `allgemein` `textstempel` `sofort-einsetzbar`
+- **Warum wichtig:** Dein **einziges rein englisches Set**. Bisher gab es nur einzelne englische Brocken — „Happy Birthday" in 1004 und 1018, „Happy Christmas" in 1005. Hier sind sechs, und in deutlich schöneren Schriften. *„Congrats!"* und *„FRIENDS"* hast du sonst nirgends.
+- **Praktisch:** Zwei Varianten von „Thank You" und zwei von „Happy Birthday" in unterschiedlichen Schriften — damit lässt sich eine Serie bauen, ohne dass sie eintönig wirkt. Englische Kalligrafie funktioniert auch als reines Design-Element, wenn der Text zweitrangig ist.
+
+---
+
+### 1025 — Geburtstag & Danke, grosses Sprucheset mit Herzen
+- **Typ:** Clearstamp-Set · **Format:** ca. 10 Textstempel + 3–4 Herz-/Blüten-Motive, grosse Folie
+- **Hersteller / Artikel-Nr.:** nicht abgelesen
+- **Inhalt Text — sicher gelesen:**
+  1. ALLES LIEBE FÜR DAS **Geburtstagskind**
+  2. HAB ♥ DICH **lieb**
+  3. ALLES LIEBE ZUM **Geburtstag**
+  4. EIN **Dankeschön** VON MIR
+  5. EIN PÄCKCHEN DER **Freude**
+  6. DAS BESTE ALTER IST **jetzt**
+  7. JETZT IST DIE BESTE **Zeit**
+  8. ALLES GUTE
+- **⚠️ Zwei Sprüche unsicher — bitte ergänzen:**
+  9. ein Stempel mit **„DAS LEBEN"** + einem Schreibschrift-Wort, das ich nicht lesen konnte *(„ist schön"? „lieben"?)*
+  10. ein Stempel mit **„FRÖHLICHE"** + Schreibschrift — der lag verdreht über einem anderen, der Rest ist verdeckt *(Ostern? Weihnachten?)*
+- **Inhalt Motive:** mehrere kleine Herzen in 2–3 Grössen · kleines Blüten-/Herz-Cluster
+- **Tags:** `geburtstag` `danke` `freundschaft` `feier` `allgemein` `textstempel` `motivstempel` `sofort-einsetzbar` `randakzent`
+
+**Warum wichtig:** *„DAS BESTE ALTER IST jetzt"* und *„JETZT IST DIE BESTE Zeit"* sind die einzigen Sprüche im ganzen Bestand, die **Alter positiv drehen** — starke Ergänzung zu „Geburtstage zählt man nicht, man feiert sie" aus 1020. Für Vierzigste und Fünfzigste hast du damit drei Sprüche, die nicht ins Altwerden-Klischee rutschen.
+
+*„EIN PÄCKCHEN DER Freude"* ist ein Geschenkanhänger-Spruch — passt direkt auf deine geplotteten Verpackungen. Und *„HAB DICH lieb"* ist der herzlichste Kurzspruch im Bestand.
+
+Die **kleinen Herzen** sind Streu-Elemente, die zu allen anderen Sets passen.
 
 ---
 
