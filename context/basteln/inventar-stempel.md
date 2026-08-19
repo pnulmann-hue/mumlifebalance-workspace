@@ -146,6 +146,7 @@ Pflichtfelder pro Eintrag:
 | **Engel** | `1059` | Schutz | Taufe · Geburt · **Trauer** · Krankheit · Schulanfang · Reise |
 | **Tulpe / Schneeglöckchen / Kirschblüte** | `1027` `1037` `1039` `1044` | Frühling, Anfang | Ostern · Muttertag · **Neuanfang** · Genesung |
 | **Sektflasche** | `1013` | Erfolg feiern | Silvester · Prüfung · Beförderung · Hochzeit · Jubiläum |
+| **Flamingo / Monstera / Faultier / Fische** | `1066` `1032` `1065` `1064` | Sommer, Leichtigkeit | Ferien · Urlaubsgrüsse · Sommergeburtstag · Einladung · junge Empfängerinnen — **als Stil-Familie zusammen einsetzen** |
 
 **Faustregel für mich:** Bei jeder Anlass-Suche nicht nur nach dem Tag filtern, sondern auch fragen — **welches Bild trägt diese Botschaft?** Ein Kleeblatt auf einer Prüfungskarte sagt mehr als ein Blumenstrauss.
 
@@ -1144,9 +1145,24 @@ Funktioniert für **jeden Anlass mit Zukunftsbezug**: Geburtstag, Neujahr, Schul
 
 ---
 
-### 1066 — ⚠️ Motive unklar (Stempel eingefärbt)
-- Die Stempel haben noch Farbe drauf, im Foto sind nur schwarze Flächen zu sehen. Vermutlich 3–4 Motive.
-- **Der beste Weg bei eingefärbten Stempeln:** einmal auf weisses Papier abstempeln und **das Papier** fotografieren. Das liest sich besser als der Stempel selbst — und hilft auch bei `1047` und `1050`.
+### 1066 — Flamingos (SF) ⭐ Tropical-Block komplett
+- **Typ:** Clearstamp-Set · **Format:** ca. 3–4 Motivstempel
+- **Inhalt Motive:** **Flamingos** *(Patricia 19.8.)* — im Foto stark eingefärbt, darum nur als Flächen erkennbar
+- **Tags:** `sommer` `geburtstag` `feier` `freundschaft` `kinder` `allgemein` `motivstempel` `zum-kolorieren` `grossflächig`
+- **Noch offen:** Anzahl und Haltungen. Wenn du magst: einmal auf weisses Papier abstempeln und das Papier fotografieren.
+
+**Damit sehe ich eine Gruppe, die ich vorher übersehen habe — dein Tropical-Block:**
+
+| Set | Motiv |
+|---|---|
+| `1066` | **Flamingos** |
+| `1032` | Monstera und Farn (Boho) |
+| `1065` | Faultier |
+| `1064` | Fische + „Kurz abtauchen und entspannen" |
+
+Diese vier sind **eine Stil-Familie**, keine vier Einzelsets. Zusammen dein stärkster **Sommer-Block**: Sommergeburtstage, Ferien- und Urlaubsgrüsse, Einladungen, Karten an jüngere Empfängerinnen.
+
+**Farbtipp:** Flamingo in Rosa ist der Klassiker. **In Petrol** — deiner Brand-Farbe — wird er ungewöhnlich und passt zu den Monstera-Blättern aus `1032`, die in Petrol ebenfalls am stärksten wirken.
 
 ---
 
