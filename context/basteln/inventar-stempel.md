@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1015** |
+| Clearstamps | **1019** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -127,7 +127,7 @@ Pflichtfelder pro Eintrag:
 
 Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht auswendig lernen — nur damit du weisst, wonach ich filtere.
 
-**Anlässe:** `geburtstag` · `weihnachten` · `advent` · `ostern` · `geburt` · `taufe` · `konfirmation` · `hochzeit` · `muttertag` · `vatertag` · `danke` · `trost` · `aufmunterung` · `umzug` · `neuanfang` · `schulanfang` · `abschluss` · `gute-besserung` · `einladung` · `sommer` · `herbst` · `winter` · `neujahr` · `allgemein`
+**Anlässe:** `geburtstag` · `weihnachten` · `advent` · `ostern` · `geburt` · `taufe` · `konfirmation` · `hochzeit` · `muttertag` · `vatertag` · `danke` · `trost` · `aufmunterung` · `umzug` · `neuanfang` · `schulanfang` · `abschluss` · `gute-besserung` · `einladung` · `sommer` · `herbst` · `winter` · `neujahr` · `feier` · `allgemein`
 
 **Empfänger:** `mama` · `papa` · `kind` · `freundin` · `kollegin` · `paten` · `oma-opa` · `partner`
 
@@ -278,12 +278,13 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 - **Tags:** `allgemein` `herbst` `trost` `motivstempel` `grossflächig` `sofort-einsetzbar`
 - **Notiz:** Struktur-Stempel, lebt vom Farbverlauf statt von Kolorierung. Mehrfach überlappend in zwei Tönen gestempelt ergibt ein Blattwerk-Panel. Passt zu 1007 (Trauer) und zu Herbstkarten.
 
-### 1013 — Flasche mit Wildblumen (ohne Verpackung)
+### 1013 — Sektflasche mit knallendem Korken (ohne Verpackung)
 - **Typ:** Clearstamp-Set · **Format:** 1 Hauptmotiv + 3–4 kleine Streu-Elemente
 - **Hersteller / Artikel-Nr.:** keine Verpackung vorhanden
-- **Inhalt Motive:** Flasche/Vase mit Wildblumen-Strauss (Hauptmotiv) · einzelne kleine Blätter und Blütenblätter zum Streuen
-- **Tags:** `allgemein` `danke` `geburtstag` `muttertag` `freundschaft` `umzug` `motivstempel` `zum-kolorieren` `mentoring-tauglich`
-- **Notiz:** Charmantes Einzelmotiv für Freundinnen-Karten — Wiesenblumen in der Flasche wirken beiläufig statt festlich. Mit Copic kolorieren, Streu-Elemente drumherum. Gute Kombination mit 1002 und 1003.
+- **Inhalt Motive:** Sekt-/Champagnerflasche mit herausschiessendem Korken (Hauptmotiv) · einzelne Korken und Konfetti-/Spritzer-Elemente zum Streuen
+- **Korrektur 19.8. (Patricia):** Das ist ein **Feier-Motiv, keine Blumenvase** — meine Erstlesung war falsch, die „Blätter" sind Korken und Konfetti.
+- **Tags:** `neujahr` `feier` `geburtstag` `abschluss` `hochzeit` `freundschaft` `motivstempel` `zum-kolorieren` `mentoring-tauglich`
+- **Notiz:** Silvester, Geburtstag, bestandene Prüfung, Jubiläum, Beförderung, Hochzeit. **Traumpaar mit 1014** — dessen zwei Neujahrssprüche plus dieses Motiv ergeben eine komplette Silvesterkarte. Auch fürs Mentoring: die Karte für eine Mentee, die etwas erreicht hat.
 
 ### 1014 — Frohe Weihnachten & Neujahr (China-Import) ⭐ Lücke Neujahr
 - **Typ:** Clearstamp-Set · **Format:** ca. 6 Textstempel + ca. 6 Motive, Folie ohne Trägerkarton
@@ -298,6 +299,38 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 - **Inhalt Motive:** zwei Stern-Outlines (gross/klein) · kleiner gefüllter Stern · zwei Tannenbaum-Outlines stilisiert · kleines Herz · kleine Blättchen
 - **Tags:** `weihnachten` `advent` `winter` `allgemein` `neujahr` `textstempel` `motivstempel` `sofort-einsetzbar` `zum-kolorieren`
 - **Warum wichtig:** Die zwei langen Sprüche sind die **einzigen Neujahrsgrüsse im ganzen Bestand** — genau für die Weihnachtspost, die erst zwischen den Feiertagen ankommt. „MEINE LIEBEN" ist der Familien-Spruch, „VON HERZEN" der persönliche. Billiger Import, aber inhaltlich das praktischste Weihnachts-Textset.
+
+---
+
+### 1015 — Buddha-Zitat „Glücklichsein ist der Weg" (SF) ⭐ Mentoring
+- **Typ:** Clearstamp-Set · **Format:** 1 grosser Textstempel, mehrzeilig in Schreibschrift-Mix
+- **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** nicht abgelesen
+- **Nummer angenommen** — im Foto oben angeschnitten, folgt logisch auf 1014. Bitte prüfen.
+- **Inhalt Text:** Es gibt keinen Weg zum Glück. Glücklichsein ist der Weg. *(mit kleiner Quellenangabe „Buddha")*
+- **Tags:** `allgemein` `neuanfang` `umzug` `abschluss` `freundschaft` `aufmunterung` `textstempel` `grossflächig` `mentoring-tauglich`
+- **Warum wichtig:** Nach 1002 das **zweitwertvollste Set fürs Mentoring** — das Zitat liegt auf der Marke, ohne dass es nach Business klingt. Ein Stempel trägt die Karte. Gut mit 1011 als Ornament-Untergrund oder 1010 als Zweig-Rand.
+
+### 1016 — Sterne mit Bubble-Struktur, 3 Grössen (SF)
+- **Typ:** Clearstamp-Set · **Format:** 3 Sternstempel, unterschiedlich gross
+- **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** nicht abgelesen
+- **Inhalt Motive:** grosser Stern mit Bubble-/Kreisstruktur · mittlerer Stern glatt gefüllt · kleiner Stern mit feiner Struktur
+- **Tags:** `weihnachten` `advent` `winter` `neujahr` `allgemein` `motivstempel` `grossflächig` `sofort-einsetzbar`
+- **Notiz:** Flächige Sterne mit fertiger Textur, kein Outline zum Kolorieren. Die drei Grössen erlauben eine Streu-Anordnung (gross/mittel/klein im Dreieck). Beiwerk zur Hirsch-Silhouette (1006) und zum Wort-Baum (1017).
+
+### 1017 — Wort-Tannenbaum (SF) ⭐ ein Stempel = eine Karte
+- **Typ:** Clearstamp-Set · **Format:** 1 grosser Flächenstempel in Tannenbaum-Form
+- **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** nicht abgelesen
+- **Inhalt (Motiv und Text in einem):** Tannenbaum, dessen Fläche komplett aus Schrift gebaut ist — *HO HO HO · FROHE Weihnachten · und einen guten Rutsch · INS NEUE JAHR*, Stern an der Spitze, kleine Sterne und Feuerwerk-Elemente im Satzbild
+- **Tags:** `weihnachten` `advent` `neujahr` `winter` `motivstempel` `textstempel` `grossflächig` `sofort-einsetzbar`
+- **Warum wichtig:** **Das schnellste Weihnachtskarten-Set im Bestand.** Motiv und Gruss in einem Abdruck, nichts muss dazu — und es deckt Weihnachten *und* Neujahr gleichzeitig ab. Für Batch-Produktion ideal: einmal stempeln, fertig. Gleichmässig einfärben und auf weicher Unterlage arbeiten, sonst brechen Buchstaben weg.
+
+### 1018 — Gross-Sammelfolie, ~28 Sprüche ⚠️ Inhalt noch offen
+- **Typ:** Clearstamp-Set · **Format:** grosse Folie, ca. 28 Textstempel in Handschrift-Optik
+- **Hersteller / Artikel-Nr.:** nicht abgelesen
+- **Sicher gelesen:** Happy Birthday · ALLES GUTE ZUM GEBURTSTAG · HERZLICHEN GLÜCKWUNSCH · EINE KLEINE ÜBERRASCHUNG · NUR EIN KLEINER GRUSS · FREUNDE FÜR IMMER · GUTSCHEIN · EINLADUNG · DAS MUSS GEFEIERT WERDEN · Willkommen kleines Wunder · Einfach nur so · OH HAPPY DAY! · Neugierig? · für dich! · Zum Muttertag · WINTERZAUBER · Frohe Feiertage · du bist ein Schatz
+- **⚠️ Offen:** rund 10 weitere Sprüche nicht lesbar — **Detailfoto nötig**, am besten in zwei Hälften und ungedreht.
+- **Tags:** `geburtstag` `geburt` `danke` `feier` `muttertag` `winter` `weihnachten` `freundschaft` `allgemein` `textstempel` `sofort-einsetzbar`
+- **Warum wichtig:** Potenziell das **vielseitigste Set** im ganzen Bestand. Und es enthält als einziges die Funktionswörter **GUTSCHEIN** und **EINLADUNG** — damit sind Einladungskarten und Gutscheine überhaupt erst möglich.
 
 ---
 
