@@ -467,9 +467,9 @@ Ein Stempel trägt die Karte allein — bei Trauerkarten ist Zurückhaltung ohne
 ---
 
 ### 1025 — Geburtstag & Danke, grosses Sprucheset mit Herzen
-- **Typ:** Clearstamp-Set · **Format:** ca. 10 Textstempel + 3–4 Herz-/Blüten-Motive, grosse Folie
+- **Typ:** Clearstamp-Set · **Format:** 10 Textstempel + 3–4 Herz-/Blüten-Motive, grosse Folie
 - **Hersteller / Artikel-Nr.:** nicht abgelesen
-- **Inhalt Text — sicher gelesen:**
+- **Inhalt Text (10):**
   1. ALLES LIEBE FÜR DAS **Geburtstagskind**
   2. HAB ♥ DICH **lieb**
   3. ALLES LIEBE ZUM **Geburtstag**
@@ -478,11 +478,12 @@ Ein Stempel trägt die Karte allein — bei Trauerkarten ist Zurückhaltung ohne
   6. DAS BESTE ALTER IST **jetzt**
   7. JETZT IST DIE BESTE **Zeit**
   8. ALLES GUTE
-- **⚠️ Zwei Sprüche unsicher — bitte ergänzen:**
-  9. ein Stempel mit **„DAS LEBEN"** + einem Schreibschrift-Wort, das ich nicht lesen konnte *(„ist schön"? „lieben"?)*
-  10. ein Stempel mit **„FRÖHLICHE"** + Schreibschrift — der lag verdreht über einem anderen, der Rest ist verdeckt *(Ostern? Weihnachten?)*
+  9. DAS LEBEN **lacht**
+  10. FRÖHLICHE **Grüsse**
+
+  *(9 und 10 am 19.8. von Patricia ergänzt — auf dem Foto waren beide verdeckt bzw. verdreht.)*
 - **Inhalt Motive:** mehrere kleine Herzen in 2–3 Grössen · kleines Blüten-/Herz-Cluster
-- **Tags:** `geburtstag` `danke` `freundschaft` `feier` `allgemein` `textstempel` `motivstempel` `sofort-einsetzbar` `randakzent`
+- **Tags:** `geburtstag` `danke` `freundschaft` `feier` `allgemein` `aufmunterung` `textstempel` `motivstempel` `sofort-einsetzbar` `randakzent`
 
 **Warum wichtig:** *„DAS BESTE ALTER IST jetzt"* und *„JETZT IST DIE BESTE Zeit"* sind die einzigen Sprüche im ganzen Bestand, die **Alter positiv drehen** — starke Ergänzung zu „Geburtstage zählt man nicht, man feiert sie" aus 1020. Für Vierzigste und Fünfzigste hast du damit drei Sprüche, die nicht ins Altwerden-Klischee rutschen.
 
