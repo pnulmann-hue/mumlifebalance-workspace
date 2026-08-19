@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1027** |
+| Clearstamps | **1028** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -521,6 +521,34 @@ Die Quellenangabe lautet **„Budda"** — richtig wäre *Buddha*. Ein Fehler de
 1. Zeile nach dem Stempeln überdecken — Motiv, ein Herz aus `1025`, Washi-Streifen
 2. Den Spruch nehmen und darauf setzen, dass es niemandem auffällt
 3. **Sauberste Lösung:** stattdessen das Buddha-Zitat aus `1015` verwenden — dort ist es korrekt geschrieben
+
+---
+
+### 1027 — Blumen-Motive II (Tulpen, Dahlie, Hartriegel)
+- **Typ:** Clearstamp-Set · **Format:** grosse Folie, ca. 9 Motivstempel — **drei Stilrichtungen**
+- **Hersteller / Artikel-Nr.:** nicht abgelesen
+- **Inhalt Motive:**
+
+  *Gefüllte Silhouetten (grafisch, sofort einsetzbar):*
+  - Blätter-Zweig
+  - kleine 5-blättrige Blüte
+
+  *Runde Blüten mit Struktur (Ton-in-Ton stark):*
+  - kleine Aster/Margerite · runde Margerite · dichte Dahlie/Chrysantheme
+
+  *Feine Outlines (für Copic):*
+  - grosse 5-blättrige Blüte mit Streifenstruktur
+  - **grosse Tulpe mit Stiel und Blatt** — Statement-Motiv, füllt halbe Karte
+  - geschlossene Tulpen-Knospe
+  - Hartriegel-/Kirschblüten-Zweig mit drei Blüten (Vintage-Strichzeichnung)
+
+- **Tags:** `allgemein` `ostern` `sommer` `muttertag` `danke` `geburtstag` `freundschaft` `trost` `motivstempel` `zum-kolorieren` `grossflächig` `mentoring-tauglich`
+
+**Rührt an die Ostern-Lücke:** Tulpen sind Frühlingsblumen — damit sind Frühlings- und Osterkarten **motivisch** möglich, auch ohne Osterhasen und Ostereier. Was weiter fehlt, ist ein **Oster-Spruch**. Der beste Ersatz ist „FRÖHLICHE Grüsse" aus `1025`; digital hast du zusätzlich die Digistamps `Elemente-Erste-Sonnenstrahlen` (178 Dateien).
+
+**Zweites Blumen-Set neben `1008`, aber anderes Repertoire:** dort Sonnenblume, Rose, Margerite, Hibiskus — hier Tulpen, Dahlie und der Vintage-Zweig.
+
+**Wichtig beim Bauen:** Die drei Stilrichtungen **nicht mischen**. Eine grafische Silhouette neben einer feinen Vintage-Strichzeichnung sieht nach Zufall aus. Pro Karte eine Richtung wählen.
 
 ---
 
