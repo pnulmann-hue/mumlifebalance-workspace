@@ -17,7 +17,7 @@ tags: [basteln, hub]
 | [[inventar-digital]] | ✅ **fertig** — vollständiger Katalog aller Plotterdateien, Digistamps, Papiere, Gonis-Anleitungen |
 | [[inventar-physisch]] | 🔄 **in Arbeit** — Stempel, Stanzen, Punchboards, Pasten. Wird per Foto gefüllt |
 | [[projekt-ideen]] | ✅ Projekt-Matches auf dein Material + doTERRA-Verpackungen + Anlass-Matrix |
-| [[inventar-stempel]] | ⭐ **Herzstueck** — ID-System (ST-001 …), Tag-Vokabular, Erfassungs-Workflow. Hier findet die Themen-Suche statt |
+| [[inventar-stempel]] | ⭐ **Herzstück** — ID-System (`0001`, `0002`, …), Tag-Vokabular, Erfassungs-Workflow. Hier findet die Themen-Suche statt |
 | [[shop-recherche]] | ✅ wie ich Hersteller-Ideen zu deinen Sets dazuhole — was geht, was nicht |
 | [[stempelsets-sf]] | 🔄 erfasste Scrapbook-Forever-Sets mit Ideen-Auswertung |
 | `context/persoenlich/basteln-anlaesse.md` | 🔄 Anlass-Liste — **gitignored** (Namen & Geburtsdaten gehören nicht ins öffentliche Repo) |

@@ -16,7 +16,7 @@ tags: [basteln, inventar, stempel, system]
 
 Heisst konkret:
 > Du: „Ich will Weihnachtskarten basteln."
-> Ich: „Nimm ST-014, ST-023 und ST-031. Dazu Digipapier `Papiere Vintage Weihnachten`. Hier drei Ideen."
+> Ich: „Nimm **0014** und **0023** (beide Stempel) und **0031** (Stanze). Dazu Digipapier `Papiere Vintage Weihnachten`. Hier drei Ideen.“
 > Du: greifst dreimal zu, fertig. Kein Suchen, kein Kistenwühlen.
 
 **Ein Set kann bei mir in zehn Themen auftauchen — es liegt trotzdem nur an einer Stelle.**
@@ -25,17 +25,24 @@ Heisst konkret:
 
 ## Das Nummern-Schema
 
-| Präfix | Für | Physische Ablage |
-|---|---|---|
-| **ST-001** | Stempel-Sets | Klarsichthüllen in einem Ordner, nach Nummer |
-| **SZ-001** | Stanzen | Magnetbox oder Mappe, nach Nummer |
-| **SCH-001** | Schablonen / Stencils | flach, nach Nummer |
-| **WZ-01** | Werkzeuge (Punchboards, Stanzmaschine) | wo sie eh stehen |
-| **FB-01** | Farben & Stempelkissen | Farbkasten |
+**Ein einziger Nummernkreis, vierstellig, ohne Buchstaben:**
 
-Dreistellig, fortlaufend, **nie neu vergeben** — auch wenn du ein Set mal aussortierst, bleibt die Nummer verbrannt. Das verhindert Verwechslungen mit alten Fotos.
+```
+0001 · 0002 · 0003 · … · 9999
+```
 
----
+Das war's. Du nimmst die nächste freie Nummer — egal ob Stempel, Stanze, Schablone oder Punchboard.
+
+**Warum kein Buchstaben-Praefix (`ST-`/`SZ-`):** Bei Kombi-Sets (Stempel *plus* passende Stanze) muesstest du jedes Mal entscheiden, was es "eigentlich" ist. Und wenn du dich mal anders entscheidest, muss die Nummer neu geschrieben werden. **Der Typ gehoert ins Register, nicht auf das Etikett.**
+
+**Warum vierstellig mit fuehrenden Nullen:** `0002` sortiert korrekt vor `0010`. Ohne die Nullen wuerde jede alphabetische Sortierung — in Ordnern, Dateinamen, Listen — die 10 vor die 2 stellen. Vierstellig reicht bis 9999.
+
+**Physische Ablage:** Nummern-Reihenfolge, aber die Kategorien duerfen getrennt liegen — Stempel in der Mappe, Stanzen in der Magnetbox. Innerhalb jeder Box steigt die Nummer, nur mit Luecken. Das stoert nicht: du suchst `0347` in der Stempelmappe und findest es zwischen `0341` und `0352`.
+
+**Meine Antwortform:** Ich nenne immer Nummer **und** Typ, damit du weisst, in welche Box du greifst:
+> "Nimm **0014** (Stempel) und **0231** (Stanze). Dazu Digipapier X aus Ordner Y."
+
+**Nie neu vergeben:** Auch wenn du ein Set aussortierst, bleibt die Nummer verbrannt. Sonst zeigt ein altes Foto irgendwann auf das falsche Material.
 
 ## Der Erfassungs-Workflow (du musst nicht auf mich warten)
 
@@ -46,9 +53,9 @@ Dreistellig, fortlaufend, **nie neu vergeben** — auch wenn du ein Set mal auss
 
 Der Punkt an dieser Reihenfolge: **du kannst 20 Sets in einem Rutsch durchnummerieren und ablegen**, ohne dass ich dazwischen etwas tun muss. Die Fotos schickst du, wann es passt. Nichts blockiert.
 
-**Etiketten:** Du hast einen Plotter — plotte oder drucke dir einen Bogen kleiner Nummern-Etiketten (ST-001 bis ST-050) auf Klebefolie. Einmal machen, dann nur noch aufkleben. Sag Bescheid, wenn ich dir eine Vorlage dafür bauen soll.
+**Etiketten:** Du hast einen Plotter — plotte oder drucke dir einen Bogen kleiner Nummern-Etiketten (`0001` bis `0100`) auf Klebefolie. Einmal machen, dann nur noch aufkleben. Sag Bescheid, wenn ich dir eine Vorlage dafür bauen soll.
 
-**Nächste freie Nummern:** ST-003 · SZ-001 · SCH-001 · WZ-01 · FB-01
+**Nächste freie Nummer: `0003`**
 
 ---
 
@@ -70,16 +77,18 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 
 ## Register
 
-### ST-001 — „Verspätete Geburtstagspost" (SF, Kalender-Set)
+### 0001 — „Verspätete Geburtstagspost" (SF, Kalender-Set)
+- **Typ:** Stempel-Set
 - **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** unbekannt (ausgelistet) · **Lagernr.:** `WO1D38232`
-- **Typ:** A6, 7 Textstempel, kein Motiv
+- **Format:** A6, 7 Textstempel, kein Motiv
 - **Inhalt:** Verspätete Geburtstagspost · Ich habe Deinen GEBURTSTAG vergessen. · Upsi vergessen · Nachträglich · Alles Liebe zum Geburtstag! · ALLES GUTE! · Entschuldigung!
 - **Tags:** `geburtstag` `nachträglich` `textstempel` `sofort-einsetzbar` `allgemein` `randakzent`
 - **Details & Projekte:** [[stempelsets-sf]]
 
-### ST-002 — „Glück bedeutet / Reichtum des Lebens" (SF, Kalender-Set)
+### 0002 — „Glück bedeutet / Reichtum des Lebens" (SF, Kalender-Set)
+- **Typ:** Stempel-Set
 - **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** unbekannt (Kalender) · **Lagernr.:** `WO1D38373`
-- **Typ:** A7, 2 Textstempel
+- **Format:** A7, 2 Textstempel
 - **Inhalt:** Glück bedeutet …deinen eigenen Weg zu gehen. · Gesundheit, Liebe & schöne Momente sind der wahre Reichtum des Lebens.
 - **Tags:** `allgemein` `danke` `umzug` `neuanfang` `abschluss` `freundin` `textstempel` `grossflächig` `doterra-tauglich` `mentoring-tauglich`
 - **Details & Projekte:** [[stempelsets-sf]]
