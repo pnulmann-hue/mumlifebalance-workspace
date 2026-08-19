@@ -1,34 +1,67 @@
 {
-  "profil": "doterra",
-  "modus": "tagesplan",
-  "disg": "Rot",
-  "disg_sekundaer": "Gelb",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
-  "aktives_produkt": "doTERRA Lifestyle",
-  "wochen_fokus": "(kein Fokus eingetragen)",
-  "sales_pattern": "",
-  "wochen_cta": "",
-  "monat_kontext": "",
-  "produkt_themen": null,
-  "vorschlag_idee": "Idee: Patricia zeigt ihr Morning-Routine-Ritual mit einem ätherischen Öl und erklärt, wie 2 Minuten Aromatherapie ihren Energielevel vor 9 Uhr ankurbelt — das echte Problem der 35+-Mama ohne Kaffee-Crash.\n\nMuster: Säule 1 (Expertise) + Behind-the-Scenes + praktischer Tipp für müde Mamas\n\nCTA: \"Welches Öl nutzt ihr morgens? Schreibt mir — oder testet den doTERRA Lifestyle.\"",
-  "wochen_fokus_quelle": "fallback",
-  "launch_tag": null,
-  "launch_vorlage": null,
-  "kontext_snapshot": {
-    "kw": 34,
-    "wochentag": "Dienstag",
-    "datum": "2026-08-18"
-  },
-  "fragen": [
-    "Was hast du erlebt?",
-    "Hast du grad einen Gedanken zum Thema?",
-    "Oder Standard-Pool?"
-  ],
-  "gesendet_am": "2026-08-18T05:04:13.469Z",
-  "telegram_message_id": 1111,
-  "patricia_antworten": [],
-  "patricia_fotos": [],
-  "patricia_videos": [],
-  "status": "warten_auf_antwort"
+  "datum": "2026-08-19",
+  "profile": {
+    "mentoring": {
+      "profil": "mentoring",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Instagram-Strategie für NM",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Eigene Meinung / klare Positionierung",
+        "titel": "Eigene Meinung / klare Positionierung",
+        "story_ziel": "Branchen-Mythos im Network-Marketing aufgreifen, klar positionieren (Repel + Anziehung).",
+        "kaeufertyp": "Frank",
+        "cta": "BIO oder thematisch passend",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 34,
+        "wochentag": "Mittwoch",
+        "datum": "2026-08-19"
+      },
+      "gesendet_am": "2026-08-19T04:42:01.305Z",
+      "telegram_message_id": 1112,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    },
+    "doterra": {
+      "profil": "doterra",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Zurück zu deiner Energie",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Eigene Meinung / klare Positionierung",
+        "titel": "Eigene Meinung / klare Positionierung",
+        "story_ziel": "Branchen-Mythos im Network-Marketing aufgreifen, klar positionieren (Repel + Anziehung).",
+        "kaeufertyp": "Frank",
+        "cta": "BIO oder thematisch passend",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 34,
+        "wochentag": "Mittwoch",
+        "datum": "2026-08-19"
+      },
+      "gesendet_am": "2026-08-19T04:42:02.105Z",
+      "telegram_message_id": 1113,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    }
+  }
 }
