@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sie haben abgestimmt — und jetzt?</title>
+  <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+  <!--[if !mso]><!-- -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+  <!--<![endif]-->
+</head>
+<body style="margin:0;padding:0;background-color:#f4f0e6;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Wer getippt hat, steht mit Namen da. Das ist deine wichtigste Liste. &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f0e6;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+
+          <!-- HEADER -->
+          <tr>
+            <td style="background-color:#12828c;background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);border-radius:16px 16px 0 0;padding:48px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance · Teil 2 von 2</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h1 style="margin:0 0 16px 0;font-family:Georgia,serif;font-size:32px;font-weight:bold;color:#f1ecdd;line-height:1.25;">Sie haben abgestimmt — und jetzt?</h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:rgba(241,236,221,0.72);line-height:1.5;">Wer getippt hat, steht bei dir mit Namen da. Das ist die wertvollste Liste, die du auf Instagram bekommst.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- BODY -->
+          <tr>
+            <td style="background-color:#ffffff;padding:40px;">
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Hey %FIRSTNAME%,</p>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">letzte Woche ging es um die vier Folien: dein Foto mit deinem Satz, dann die Umfrage, dann die Überleitung, und erst danach die Slide von der Firma. Falls du das ausprobiert hast — jetzt kommt der Teil, der tatsächlich zählt.</p>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Wisch in deiner eigenen Story nach oben. Da siehst du nicht nur, wie viele geschaut haben, sondern bei der Umfrage auch, <strong>wer was getippt hat</strong> — mit Namen und Profilbild.</p>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Jede dieser Frauen hat dir gerade etwas gesagt, ohne es zu merken: <em>Das Thema betrifft mich.</em> Diese Namen sind mehr wert als jede Followerzahl.</p>
+
+              <h2 style="margin:38px 0 14px 0;font-family:Georgia,serif;font-size:23px;font-weight:bold;color:#29556d;line-height:1.35;">Was du ihnen jetzt nicht schreibst</h2>
+
+              <!-- Negativ-Box -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 20px 0;">
+                <tr><td style="background-color:#f7f0ec;border-left:4px solid #c25a3c;border-radius:0 12px 12px 0;padding:20px 24px;">
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">„Hey, du hast bei meiner Umfrage abgestimmt — hast du Interesse an meinem Produkt?"</p>
+                </td></tr>
+              </table>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Das ist der Moment, in dem sie merkt, dass die Umfrage ein Köder war. Sie antwortet dann meistens gar nicht, und beim nächsten Mal tippt sie erst recht nicht mehr. Damit hast du dir genau das kaputt gemacht, was du gerade aufgebaut hast.</p>
+
+              <h2 style="margin:38px 0 14px 0;font-family:Georgia,serif;font-size:23px;font-weight:bold;color:#29556d;line-height:1.35;">Was du stattdessen schreibst</h2>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Bedank dich fürs Abstimmen und stell eine Frage, die wirklich sie meint. Kurz, ohne Aufhänger, ohne Hintergedanken:</p>
+
+              <!-- Positiv-Box -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 20px 0;">
+                <tr><td style="background-color:#e4f3f4;border-left:4px solid #12828c;border-radius:0 12px 12px 0;padding:20px 24px;">
+                  <p style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">„Danke fürs Abstimmen! Du hast ‚oh ja' getippt — wie sieht das bei dir gerade aus?"</p>
+                  <p style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">„Danke dir. Ist es bei dir auch morgens am schlimmsten oder eher gegen Abend?"</p>
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">„Schön, dass du mitgemacht hast. Sag mal, wie machst du das bei euch daheim?"</p>
+                </td></tr>
+              </table>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Und dann kommt der schwierigste Teil, weil er Geduld braucht: <strong>Lies wirklich, was zurückkommt, und geh darauf ein.</strong> Wenn sie schreibt, dass die Kleine seit Wochen nicht durchschläft, dann fragst du nach der Kleinen. Du springst nicht zum nächsten Punkt und du biegst das Gespräch nicht ab.</p>
+
+              <!-- Pull-Quote -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+                <tr><td style="background-color:#f1ecdd;border-left:4px solid #dc822e;border-radius:0 12px 12px 0;padding:20px 24px;">
+                  <p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:20px;color:#0c1c30;line-height:1.6;">„Verkauft wird über Beziehung. Also interessier dich ehrlich für die Person, bevor du ihr irgendetwas anbietest."</p>
+                </td></tr>
+              </table>
+
+              <h2 style="margin:38px 0 14px 0;font-family:Georgia,serif;font-size:23px;font-weight:bold;color:#29556d;line-height:1.35;">Merk dir, was du erfährst</h2>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Schreib dir auf, was sie dir erzählt hat — Schichtarbeit, das Kind das nicht schläft, der Umzug im Herbst. Und dann frag zwei Wochen später nach, wie es damit gelaufen ist. Das kostet dich eine Minute, und es macht fast niemand. Genau daran erinnern sich Menschen.</p>
+
+              <h2 style="margin:38px 0 14px 0;font-family:Georgia,serif;font-size:23px;font-weight:bold;color:#29556d;line-height:1.35;">Und wann kommt dann das Angebot?</h2>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Wenn sie dir das Problem selbst nennt, zu dem du etwas hast. Dann ist dein Angebot keine Störung mehr, sondern eine Antwort auf etwas, das sie gerade beschäftigt. Bis dahin bleibst du einfach die, die sich für sie interessiert.</p>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Das dauert manchmal Wochen, und ja, das fühlt sich langsamer an. Diese Kundinnen bleiben dafür — und sie erzählen weiter, dass du die bist, die zuhört.</p>
+
+              <h2 style="margin:38px 0 14px 0;font-family:Georgia,serif;font-size:23px;font-weight:bold;color:#29556d;line-height:1.35;">Damit dir für Folie 1 nicht die Ideen ausgehen</h2>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Der erste Alltags-Moment fällt dir noch ein, der zweite vielleicht auch, und dann stehst du morgens da und weisst nicht weiter. Genau dafür hab ich mein neues Workbook gebaut: <strong>90 Storyideen für Networkerinnen</strong>.</p>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">90 fertige Ideen zum Abgucken, sortiert nach Anlässen. Zu jeder bekommst du den Impuls, ein Beispiel aus der Network-Welt und eine leere Zeile für deine eigene Version. Du schlägst es morgens auf, suchst dir eine raus und weisst, was heute auf deine erste Folie kommt — für 19 Franken, also etwa zwei Kaffee auswärts.</p>
+
+              <!-- Button -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+                <tr><td align="center">
+                  <a href="https://mumlifebalance.ch/storyideen" style="display:inline-block;background-color:#dc822e;color:#ffffff;text-decoration:none;font-family:Arial,sans-serif;font-weight:bold;font-size:16px;padding:16px 32px;border-radius:12px;">
+                    Ich hol mir die 90 Storyideen
+                  </a>
+                </td></tr>
+              </table>
+
+              <!-- Challenge-Erinnerung -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+                <tr><td style="background-color:#e4f3f4;border-left:4px solid #12828c;border-radius:0 12px 12px 0;padding:20px 24px;">
+                  <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#12828c;text-transform:uppercase;letter-spacing:2px;">NÄCHSTEN DIENSTAG GEHT'S LOS</p>
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">Am <strong>1. September</strong> startet meine gratis Story-Challenge, und wir üben sieben Tage lang genau das, worum es in diesen beiden Mails ging. Wenn du magst, komm dazu: <a href="https://mumlifebalance.ch/story-challenge/" style="color:#12828c;font-weight:bold;text-decoration:underline;">hier anmelden</a>.</p>
+                </td></tr>
+              </table>
+
+              <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Herzlich,</p>
+              <p style="margin:0 0 26px 0;font-family:Georgia,serif;font-size:20px;color:#29556d;line-height:1.4;">Patricia</p>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:8px 0 0 0;border-top:1px solid #e6e1d4;">
+                <tr><td style="padding-top:20px;">
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#4a5663;line-height:1.7;"><strong>P.S.</strong> Wenn du diese Woche nur eine Sache machst, dann diese: Schreib den drei Frauen, die zuletzt bei dir abgestimmt haben. Ohne Angebot, nur mit einer echten Frage. Und schreib mir gern, was zurückgekommen ist — ich lese jede Antwort selbst.</p>
+                </td></tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td style="background-color:#0c1c30;border-radius:0 0 16px 16px;padding:28px 40px;text-align:center;">
+              <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#f1ecdd;text-transform:uppercase;letter-spacing:1px;">MUMLIFEBALANCE · PATRICIA ULMANN</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:rgba(241,236,221,0.55);">Network + Onlinekurse für Mamas</p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

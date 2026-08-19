@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deine Story braucht vier Folien, nicht eine</title>
+  <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+  <!--[if !mso]><!-- -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+  <!--<![endif]-->
+</head>
+<body style="margin:0;padding:0;background-color:#f4f0e6;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Foto, Umfrage, Überleitung — und dann erst die Slide von der Firma. &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f0e6;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+
+          <!-- HEADER -->
+          <tr>
+            <td style="background-color:#12828c;background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);border-radius:16px 16px 0 0;padding:48px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:20px;">
+                    <span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance · Teil 1 von 2</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h1 style="margin:0 0 16px 0;font-family:Georgia,serif;font-size:32px;font-weight:bold;color:#f1ecdd;line-height:1.25;">Deine Story braucht vier Folien, nicht eine</h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:rgba(241,236,221,0.72);line-height:1.5;">Foto, Umfrage, Überleitung — und dann erst die Slide von der Firma.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- BODY -->
+          <tr>
+            <td style="background-color:#ffffff;padding:40px;">
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Hey %FIRSTNAME%,</p>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">du machst es eigentlich genau so, wie es dir gesagt wurde. In der Community liegen fertige Slides bereit, du lädst sie runter, schiebst sie in deine Story, und das ziehst du auch ziemlich regelmässig durch. Das ist schon mehr, als die meisten durchhalten.</p>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Und trotzdem passiert danach nichts. Keine Antwort, keine Nachricht, nicht mal ein Daumen.</p>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Das hat einen simplen Grund: Die Grafik steht ganz allein da. Sie erklärt das Produkt, erzählt aber nichts von dir — und für deine Zuschauerin gibt es dabei nichts zu tun ausser weiterwischen.</p>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Deshalb bau eine kleine Abfolge drumherum. <strong>Vier Folien, und drei davon machst du selbst</strong> — ohne dass du dich dafür filmen musst.</p>
+
+              <h2 style="margin:38px 0 14px 0;font-family:Georgia,serif;font-size:23px;font-weight:bold;color:#29556d;line-height:1.35;">Folie 1 — dein Foto, dein Satz</h2>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Mach ein Foto von dem Moment, in dem du sowieso gerade steckst: der Kaffee neben dem Laptop, die vergessene Znünibox auf der Ablage, das Chaos auf dem Küchentisch, der dunkle Blick aus dem Fenster um halb sieben. Dann tippst du deinen Satz mit dem Text-Werkzeug direkt aufs Bild.</p>
+
+              <!-- Beispiele -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 24px 0;">
+                <tr><td style="background-color:#e4f3f4;border-left:4px solid #12828c;border-radius:0 12px 12px 0;padding:20px 24px;">
+                  <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#12828c;">📷 dein Kaffee im noch dunklen Wohnzimmer</p>
+                  <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">„Es ist 6.40 Uhr und das hier ist die einzige ruhige halbe Stunde, die ich heute kriege."</p>
+                  <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#12828c;">📷 die vergessene Znünibox auf der Ablage</p>
+                  <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">„Diese Woche schon zum dritten Mal. Ich frag mich langsam, woran das eigentlich liegt."</p>
+                  <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#12828c;">📷 das leere Wasserglas neben dem vollen Kaffeebecher</p>
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">„Gestern Abend um zehn hab ich gemerkt, dass ich den ganzen Tag nichts getrunken hab ausser dem hier."</p>
+                </td></tr>
+              </table>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Das Foto muss nichts hermachen, im Gegenteil — schnell geknipst und unaufgeräumt wirkt echter als jedes schön gestellte Bild.</p>
+
+              <h2 style="margin:38px 0 14px 0;font-family:Georgia,serif;font-size:23px;font-weight:bold;color:#29556d;line-height:1.35;">Folie 2 — die Umfrage</h2>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Jetzt gibst du deinen Leuten etwas zu tun. Das dauert zehn Sekunden, und falls du noch nie mit Stickern gearbeitet hast, hier Schritt für Schritt:</p>
+
+              <!-- Schritt für Schritt -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 24px 0;">
+                <tr><td style="background-color:#f1ecdd;border-left:4px solid #dc822e;border-radius:0 12px 12px 0;padding:20px 24px;">
+                  <p style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#dc822e;text-transform:uppercase;letter-spacing:2px;">SO LEGST DU DIE UMFRAGE AN</p>
+                  <p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>1.</strong> Nimm dasselbe Foto nochmal oder ein zweites aus demselben Moment.</p>
+                  <p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>2.</strong> Tipp oben in der Leiste auf das <strong>Sticker-Symbol</strong> — das quadratische Gesicht mit dem Eselsohr.</p>
+                  <p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>3.</strong> Such <strong>„Umfrage"</strong> raus (sonst oben ins Suchfeld „Umfrage" tippen).</p>
+                  <p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>4.</strong> Überschreib die vorgeschlagene Frage mit deiner und tipp die zwei Antworten ein.</p>
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>5.</strong> Schieb den Sticker mit dem Finger auf eine freie Stelle, damit er nichts Wichtiges verdeckt — und senden.</p>
+                </td></tr>
+              </table>
+
+              <p style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Fragen, die zu fast jedem Alltags-Foto passen:</p>
+
+              <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">· „Geht dir das auch so?" — <em>Ja / Oh ja</em></p>
+              <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">· „Bei dir auch morgens am schlimmsten?" — <em>Morgens / Eher abends</em></p>
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">· Emoji-Slider mit einem Kaffee: „Wie müde bist du heute?"</p>
+
+              <h2 style="margin:38px 0 14px 0;font-family:Georgia,serif;font-size:23px;font-weight:bold;color:#29556d;line-height:1.35;">Folie 3 — die Überleitung</h2>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Ein einziger Satz, der die Brücke baut. Zum Beispiel: <strong>„Wenn du das kennst — ich hab da was, das mir dabei geholfen hat."</strong></p>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Oder „Ich erzähl dir kurz, was bei mir den Unterschied gemacht hat" oder „Falls dir das bekannt vorkommt, schau mal weiter". Diese Folie ist deine Einladung, weiterzuschauen, und sie nimmt der nächsten den Werbe-Beigeschmack.</p>
+
+              <h2 style="margin:38px 0 14px 0;font-family:Georgia,serif;font-size:23px;font-weight:bold;color:#29556d;line-height:1.35;">Folie 4 — jetzt erst die Slide von der Firma</h2>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Genau dieselbe Grafik, die du sonst allein gepostet hättest. Nur wirkt sie jetzt völlig anders, weil vorher ein Mensch stand, den man kennt.</p>
+
+              <!-- Pull-Quote -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+                <tr><td style="background-color:#f1ecdd;border-left:4px solid #dc822e;border-radius:0 12px 12px 0;padding:20px 24px;">
+                  <p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:20px;color:#0c1c30;line-height:1.6;">„Die Grafik erklärt das Produkt. Die drei Folien davor erklären, warum ausgerechnet du."</p>
+                </td></tr>
+              </table>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Und noch etwas, das dir Druck nimmt: Du musst das nicht jeden Tag durchziehen. Regelmässig schlägt viel — zwei- oder dreimal die Woche diese Abfolge bringt dir mehr als sieben Tage lang die Grafik allein.</p>
+
+              <h2 style="margin:38px 0 14px 0;font-family:Georgia,serif;font-size:23px;font-weight:bold;color:#29556d;line-height:1.35;">Am 1. September üben wir das gemeinsam</h2>
+
+              <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Dann startet meine gratis <strong>Story-Challenge</strong>: sieben Tage, jeden Tag eine kleine Aufgabe, und am Ende hast du eine Routine, die du danach einfach weiterführst. Das läuft neben deinem Alltag her, ohne dass dir jemand im Nacken sitzt — und wenn du unterwegs eine Frage hast, schreibst du mir und ich antworte dir persönlich.</p>
+
+              <!-- Button -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+                <tr><td align="center">
+                  <a href="https://mumlifebalance.ch/story-challenge/" style="display:inline-block;background-color:#dc822e;color:#ffffff;text-decoration:none;font-family:Arial,sans-serif;font-weight:bold;font-size:16px;padding:16px 32px;border-radius:12px;">
+                    Ich bin am 1. September dabei
+                  </a>
+                  <p style="margin:14px 0 0 0;font-family:Arial,sans-serif;font-size:13px;color:#4a5663;">Start: Dienstag, 1. September · 7 Tage · gratis</p>
+                </td></tr>
+              </table>
+
+              <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.75;">Herzlich,</p>
+              <p style="margin:0 0 26px 0;font-family:Georgia,serif;font-size:20px;color:#29556d;line-height:1.4;">Patricia</p>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:8px 0 0 0;border-top:1px solid #e6e1d4;">
+                <tr><td style="padding-top:20px;">
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#4a5663;line-height:1.7;"><strong>P.S.</strong> Nächste Woche schreib ich dir, was du mit den Frauen machst, die bei deiner Umfrage abgestimmt haben. Denn genau dort — und nicht in der Story selbst — entsteht am Ende der Verkauf.</p>
+                </td></tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td style="background-color:#0c1c30;border-radius:0 0 16px 16px;padding:28px 40px;text-align:center;">
+              <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#f1ecdd;text-transform:uppercase;letter-spacing:1px;">MUMLIFEBALANCE · PATRICIA ULMANN</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:rgba(241,236,221,0.55);">Network + Onlinekurse für Mamas</p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
