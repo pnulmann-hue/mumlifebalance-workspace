@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1007** |
+| Clearstamps | **1010** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -186,9 +186,10 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
   - von Herzen — `allgemein` (Baustein)
 - **Warum Arbeitspferd:** deckt sechs Anlässe in einem Set ab. Die drei Bausteine „für dich / für euch / von Herzen" kombinieren sich mit **jedem** anderen Set. Und es enthält als einziges „herzliche Anteilnahme" — für Trauerfälle hattest du sonst nichts.
 
-### 1005 — „Weihnachtsmomente" (Alexandra Renke) ⭐ grösstes Weihnachts-Set
+### 1005 — „Wintergeflüster" (Alexandra Renke) ⭐ grösstes Weihnachts-Set
 - **Typ:** Clearstamp-Set (Photopolymer) · **Format:** ca. 18 Stempel, Text + Motive, made in UK
-- **Hersteller:** Alexandra Renke — **neuer Hersteller im Bestand**
+- **Hersteller:** Alexandra Renke — **neuer Hersteller im Bestand** · **Artikel-Nr.:** `CS-XX-AR-W0016`
+- **Korrektur 19.8.:** Set heisst „Wintergeflüster" (Patricia-Angabe). Meine erste Erfassung als „Weihnachtsmomente" war eine Fehllesung des Verpackungsaufdrucks; die per Websuche gefundene Nummer `CS-AR-0229` gehört zu einem anderen Set. **Lehre: Artikelnummern aus Websuchen nicht ungeprüft übernehmen.**
 - **Inhalt Text:** Erst eins, dann zwei, dann drei, dann vier… · Weihnachtsmomente · Wintergeflüster (Rundstempel) · Weihnachtliche FAMILIENzeit · WeihnachtsTraum · FROHES FEST (im Geweih-Rahmen) · FÜR kleine WÜNSCHE · 3 magische Worte: HO HO HO · Lass uns einen Schneemann bauen! · WEHE, du weisst wieder vorher, was drin ist! · Ho Ho Fröhliche Weihnachten (Kreisstempel mit Herz) · Gänsehaut MOMENT · Barfuss im Schnee
 - **Inhalt Motive:** Schleife · Tannenzweig · Feder · kleiner Stern · dunkles Flächenelement
 - **Tags:** `weihnachten` `advent` `winter` `textstempel` `motivstempel` `sofort-einsetzbar` `zum-kolorieren`
@@ -202,6 +203,43 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
   - TEXT: Magische Wintermomente
 - **Tags:** `weihnachten` `winter` `advent` `motivstempel` `grossflächig` `sofort-einsetzbar`
 - **Notiz:** Silhouette-Stempel, füllt eine Karte fast allein. Keine Kolorierung nötig — wirkt als Scherenschnitt. Stark auf hellem Aquarell-Wash oder mit ausgestanztem Mond dahinter.
+
+---
+
+### 1007 — Trauer / „In stiller Trauer" (SF, Katzen-Silhouetten) ⭐ Lücke geschlossen
+- **Typ:** Clearstamp-Set · **Format:** ca. 6 Stempel — 2 grosse Silhouette-Motive + 4 Textstempel
+- **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** nicht abgelesen
+- **Inhalt Text:**
+  - In stiller Trauer
+  - Ohne Worte
+  - Aufrichtige Anteilnahme (Schreibschrift, schräg gesetzt)
+  - Erinnerungen sind kleine Sterne, die tröstend in das Dunkel unserer Trauer leuchten.
+- **Inhalt Motive:** zwei Katzen-Silhouetten unter Sternenhimmel (gross, schwarz gefüllt) · einzelne Katzen-Silhouette mit Sternen
+- **Tags:** `trost` `textstempel` `motivstempel` `sofort-einsetzbar` `grossflächig`
+- **Warum wichtig:** Bis jetzt hattest du für Trauerfälle nur „herzliche Anteilnahme" aus 1004 — ein einzelner Baustein. Mit diesem Set entsteht eine **vollständige Trauerkarte**: der Sterne-Spruch trägt eine Karte allein, „Ohne Worte" ist für die Fälle, in denen jeder Satz zu viel wäre. Das Katzen-Motiv passt zusätzlich bei Tierverlust.
+
+### 1008 — Blumen-Outlines (Hersteller unbekannt) ⭐ dein Copic-Set
+- **Typ:** Clearstamp-Set · **Format:** gross (ca. A5), ca. 12–14 Motivstempel, reine Outlines
+- **Hersteller:** unbekannt — kein Label im Foto sichtbar
+- **Inhalt Motive** (alles Outline, zum Kolorieren):
+  - grosse Sonnenblume
+  - offene Rose · Rosenknospe mit Blatt
+  - Wildrose-/Hibiskus-Blüten (2–3 Varianten, teils als Gruppe)
+  - grosse Margerite · kleine Margerite an Ranke
+  - geschwungene Blätter-Ranke · einzelne Blatt-Elemente · kleine Zier-Striche
+- **Tags:** `allgemein` `sommer` `geburtstag` `danke` `muttertag` `freundschaft` `motivstempel` `zum-kolorieren` `grossflächig` `mentoring-tauglich`
+- **Warum wichtig:** Dein Bestand war bisher stark textlastig. Das hier ist das **Gegengewicht** — Karten, die von einem Bild getragen werden statt von einem Spruch. Und es ist das Set, für das du die Copics hast. Kombiniert mit 1002/1003 (Glück, Wünsche) und mit 1009 als Hintergrund.
+
+### 1009 — Hintergrund-Kreise, 5 Muster (SF)
+- **Typ:** Clearstamp-Set · **Format:** 5 runde Hintergrundstempel, 2 grössere + 3 kleinere
+- **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** nicht abgelesen
+- **Inhalt Motive:** Schachbrett fein · Gitter/Netz · Punkte-Raster · Netz grob · Schachbrett grob — alle kreisrund
+- **Tags:** `allgemein` `hintergrund` `sofort-einsetzbar` `grossflächig`
+- **Kein Anlass-Set, ein Werkzeug-Set.** Die Kreise gehen *hinter* alles andere:
+  - Vollmond hinter der Hirsch-Silhouette (1006)
+  - Kreis hinter einer Blüte (1008)
+  - Siegel-Optik unter einem Spruch
+  - In hellem Farbton stempeln, sonst erschlägt das Muster den Vordergrund.
 
 ---
 
