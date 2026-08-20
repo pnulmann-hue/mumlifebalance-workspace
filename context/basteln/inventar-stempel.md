@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1085** |
+| Clearstamps | **1086** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -1522,9 +1522,51 @@ Dazu: **Entschuldigung** („sorry — und ich mag dich trotzdem") und stille **
 
 **Nummer 3 und 4 sind Aufmunterungs-Sprüche.** „Wende Dein Gesicht der Sonne zu" passt bei schweren Zeiten, Genesung und Neuanfang, ohne zu bagatellisieren — dieselbe Ecke wie `1021`, `1045`, `1067`.
 
-> **Bündel 9 läuft** — `1081`–`1084` erfasst, sechs Plätze frei bis `1090`.
-
 > **Optik:** gemischte Kalligrafie mit hervorgehobenen Schlüsselwörtern. Die Sprüche tragen die Karte allein — wenig Deko dazu, sonst wird es unruhig. **Ideal: Spruch mittig, ein einzelnes Element aus `1083` in die Ecke.**
+
+---
+
+### 1085 — Küche & Backen: 20 Sprüche ⭐⭐⭐ grösstes Textset im Bestand
+- **Typ:** Clearstamp-Set · **Format:** 20 Textstempel auf A5, gemischte Schriften
+- **Inhalt — Selbstgemachtes beschriften:**
+  1. „Mit Liebe gebacken"
+  2. „Kekse mit meinem Geheimrezept"
+  3. „Frisch vom Backblech"
+  4. „vom Chefkoch persönlich"
+  5. „von der Chefköchin persönlich"
+  6. „Etwas Süsses für Dich"
+- **Inhalt — frech & humorvoll:**
+  7. „In mir ist jedes Gramm zartester Wahnsinn"
+  8. „Lass dir nie einreden, dass Schokolade Kalorien hat"
+  9. „Nasch mich"
+  10. „Warnung! Der Inhalt hat mehr als 2 Kalorien. Verzehr auf eigene Gefahr!"
+  11. „Nervennahrung"
+- **Inhalt — Einladung & Zuwendung:**
+  12. „Tee und ich warten auf dich"
+  13. „Kaffee und ich warten auf dich"
+  14. „Einladung zum Essen"
+  15. „Ich weiss doch, was du magst"
+  16. „Ich weiss, du brauchst das jetzt"
+  17. „Einfach nur geniessen"
+- **Inhalt — „Rezept" in drei Schriftvarianten:**
+  18. „Rezept" — feine Schreibschrift
+  19. „Rezept" — gerade Druckschrift
+  20. „Rezept" — verschnörkelte Kalligrafie
+- **Tags:** `kueche` `selbstgemacht` `einladung` `gutschein` `danke` `freundschaft` `allgemein` `aufmunterung` `trost` `weihnachten` `advent` `muttertag` `textstempel` `sofort-einsetzbar` `doterra-tauglich`
+
+**Zwanzig Sprüche in einer Hülle — das grösste Textset im ganzen Bestand.** Und es deckt einen Bereich ab, in dem du bisher nichts hattest: **alles Selbstgemachte aus der Küche.**
+
+**Der wichtigste Anlass ist Weihnachten.** Guetzli verschenken heisst Guetzli verpacken — mit dem Envelope-Punchboard, dem Gift-Bag-Punchboard und dem Plotter baust du die Tüte, hier kommt der Text drauf. „Mit Liebe gebacken", „Frisch vom Backblech", „Kekse mit meinem Geheimrezept". **Das ersetzt gekaufte Etiketten komplett.**
+
+**Drei Mal „Rezept" in verschiedenen Schriften ist kein Zufall** — das Set ist auch für **Rezeptkarten und Rezeptbücher** gedacht. Passt zu deinem Rezept-Archiv: schöne Karte, „Rezept" als Kopfzeile, handschriftlich ausfüllen. Ein ganzes Set davon ist ein Geschenk zum Einzug oder zur Hochzeit.
+
+**„Ich weiss, du brauchst das jetzt" und „Nervennahrung" sind die Trost-Sprüche darin** — Schokolade plus Karte an eine Freundin, der es gerade nicht gut geht. Ohne grosse Worte, und darum wirksam.
+
+**„Tee und ich warten auf dich" / „Kaffee und ich warten auf dich"** sind Einladungs-Sprüche, charmant und ganz ohne Anlass — dieselbe Ecke wie `1080`.
+
+> **doTERRA-Brücke:** funktioniert bei **kulinarischen Ölen** (Zitrone, Pfefferminz, Wild Orange im Gebäck). Das Etikett bleibt am Original-Fläschchen, hier geht es nur ums Verpacken des Gebäcks — **keine Wirkaussagen auf die Karte.**
+
+> **Bündel 9:** `1081`–`1085` erfasst, fünf Plätze frei bis `1090`.
 
 ---
 
