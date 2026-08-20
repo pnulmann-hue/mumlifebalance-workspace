@@ -25,10 +25,11 @@ Läuft auch mobil (claude.ai/code): einfach `/storyidee` tippen.
 
 4. **Passende Workbook-Idee wählen** aus `outputs/produkte/storyideen-networkerinnen/workbook.md` (8 Kapitel, 90 Ideen, je mit Impuls + Beispiel). Kriterien: passt zur **Tages-Säule** UND lässt sich sinnvoll an das **Thema des letzten Beitrags** anknüpfen. Nicht dieselbe Idee/dasselbe Kapitel wie an den Vortagen (Abwechslung).
 
-5. **Ausgeben — je Profil:**
-   - **Bezug zum Beitrag:** 1 Anschluss-Satz („Falls du meinen Post … gesehen hast …").
-   - **Worüber du reden könntest:** konkreter Vorschlag, auf Patricias echtes Leben / den Zielgruppen-Schmerz gemünzt (nicht generisch).
-   - **Brücke zum Angebot:** ein Brückensatz + Keyword, nach dem Brücken-Baukasten im Workbook (Abschnitt „Die Story-Brücke"). Bevorzugt zum **Freebie** (kleinste Hürde); nur wenn die Story warm genug ist, zum bezahlten Angebot.
+5. **Ausgeben — je Profil, IMMER im 4-Slide-Aufbau (Patricias Blog-Struktur):**
+   - **Slide 1 — Hook / Einleitung:** knallt und knüpft an den letzten Beitrag an (Anschluss-Satz). NIE Smalltalk/„Guten Morgen".
+   - **Slide 2 — Umfrage / Interaktion:** eine Frage oder Umfrage (Sticker), die die Zuschauerin einbindet.
+   - **Slide 3 — Auflösung:** warum das Fokus-Produkt genau zu diesem Schmerz/Thema passt (Mehrwert + Brücke im Kopf, noch kein harter CTA).
+   - **Slide 4 — Übergang zum Produkt:** ERST HIER die Brücke/CTA (Keyword/Link), nach dem Brücken-Baukasten im Workbook. Bevorzugt zum **Freebie** (kleinste Hürde).
 
 ---
 
