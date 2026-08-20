@@ -1,0 +1,464 @@
+/* ================================================================
+   Blogartikel-Design "mama-artikel" — Mum Life Balance
+   Einmal hier einfügen, dann gilt es für ALLE Blogartikel.
+   Vorher lag dieses CSS in jedem Artikel-Inhalt und hat dort
+   Rank-Math-Punkte gekostet (Keyword erst nach 9000 Zeichen CSS).
+   Brand: #12828c Petrol | #29556d Dunkelblau | #f1ecdd Creme
+          #dc822e Orange | #0c1c30 Text
+   ================================================================ */
+
+<!-- ================================================
+
+     WORDPRESS BLOGARTIKEL: Network + Onlinekurse für Mamas
+
+     Branding: #12828c | #29556d | #f1ecdd | #dc822e | #0c1c30
+
+     Schweizer Rechtschreibung (ss statt ß)
+
+     ================================================ -->
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+
+
+  :root {
+
+    --teal:        #12828c;
+
+    --navy:        #29556d;
+
+    --cream:       #f1ecdd;
+
+    --orange:      #dc822e;
+
+    --dark:        #0c1c30;
+
+    --teal-light:  #e4f3f4;
+
+    --orange-light:#fdf0e4;
+
+    --cream-dark:  #e2dcc9;
+
+  }
+
+
+
+  .mama-artikel {
+
+    font-family: 'Lato', sans-serif;
+
+    color: var(--dark);
+
+    line-height: 1.85;
+
+    max-width: 780px;
+
+    margin: 0 auto;
+
+    font-size: 17px;
+
+  }
+
+
+
+  /* HERO */
+
+  .mama-hero {
+
+    background: linear-gradient(135deg, var(--dark) 0%, var(--navy) 60%, #1a4a60 100%);
+
+    border-radius: 20px;
+
+    padding: 65px 50px;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    position: relative;
+
+    overflow: hidden;
+
+  }
+
+  .mama-hero::before {
+
+    content: ''; position: absolute;
+
+    top: -60px; right: -60px;
+
+    width: 220px; height: 220px;
+
+    border-radius: 50%;
+
+    background: var(--teal); opacity: 0.2;
+
+  }
+
+  .mama-hero::after {
+
+    content: ''; position: absolute;
+
+    bottom: -80px; left: -40px;
+
+    width: 280px; height: 280px;
+
+    border-radius: 50%;
+
+    background: var(--orange); opacity: 0.12;
+
+  }
+
+  .mama-hero-label {
+
+    display: inline-block;
+
+    background: var(--orange); color: #fff;
+
+    font-size: 11px; font-weight: 700;
+
+    letter-spacing: 2.5px; text-transform: uppercase;
+
+    padding: 7px 20px; border-radius: 30px;
+
+    margin-bottom: 24px; position: relative; z-index: 1;
+
+  }
+
+  .mama-hero h1 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 38px; font-weight: 700;
+
+    color: var(--cream); line-height: 1.25;
+
+    margin: 0 0 22px 0; position: relative; z-index: 1;
+
+  }
+
+  .mama-hero-intro {
+
+    font-size: 17px; color: rgba(241,236,221,0.78);
+
+    max-width: 580px; margin: 0 auto;
+
+    font-weight: 300; line-height: 1.75;
+
+    position: relative; z-index: 1;
+
+  }
+
+
+
+  .mama-lead { font-size: 19px; color: #2a2a2a; line-height: 1.9; margin-bottom: 40px; font-weight: 300; }
+
+  .mama-lead strong { color: var(--teal); font-weight: 700; }
+
+  .mama-section { margin-bottom: 55px; }
+
+
+
+  .mama-h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 27px; font-weight: 700; color: var(--dark);
+
+    margin: 0 0 18px 0; line-height: 1.3;
+
+    padding-bottom: 12px; border-bottom: 3px solid var(--teal);
+
+  }
+
+  .mama-h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 20px; font-weight: 700; font-style: italic;
+
+    color: var(--navy); margin: 30px 0 12px 0;
+
+  }
+
+  .mama-artikel p { margin: 0 0 18px 0; }
+
+
+
+  .mama-pull {
+
+    border-left: 4px solid var(--orange);
+
+    background: var(--orange-light);
+
+    padding: 18px 24px; margin: 28px 0;
+
+    border-radius: 0 12px 12px 0;
+
+    font-family: 'Playfair Display', serif;
+
+    font-style: italic; font-size: 19px;
+
+    color: var(--dark); line-height: 1.55;
+
+  }
+
+
+
+  .mama-quote {
+
+    background: linear-gradient(135deg, var(--teal-light), var(--cream));
+
+    border-radius: 16px; padding: 40px 44px; margin: 36px 0;
+
+    text-align: center; position: relative;
+
+    border: 1px solid rgba(18,130,140,0.15);
+
+  }
+
+  .mama-quote::before {
+
+    content: '\201C';
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 90px; color: var(--teal); opacity: 0.22;
+
+    position: absolute; top: -10px; left: 18px; line-height: 1;
+
+  }
+
+  .mama-quote-text {
+
+    font-family: 'Playfair Display', serif;
+
+    font-style: italic; font-size: 22px;
+
+    color: var(--dark); line-height: 1.55;
+
+    position: relative; z-index: 1;
+
+  }
+
+
+
+  .mama-info {
+
+    background: var(--teal-light);
+
+    border: 1px solid rgba(18,130,140,0.2);
+
+    border-left: 4px solid var(--teal);
+
+    border-radius: 0 14px 14px 0;
+
+    padding: 24px 28px; margin: 28px 0;
+
+  }
+
+  .mama-info-title {
+
+    font-weight: 700; font-size: 12px;
+
+    letter-spacing: 2px; text-transform: uppercase;
+
+    color: var(--teal); margin-bottom: 10px;
+
+  }
+
+
+
+  .mama-definition {
+
+    background: var(--cream);
+
+    border-left: 4px solid var(--navy);
+
+    border-radius: 0 14px 14px 0;
+
+    padding: 22px 28px; margin: 18px 0;
+
+  }
+
+  .mama-definition strong {
+
+    color: var(--navy); display: block; margin-bottom: 6px;
+
+    font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px;
+
+  }
+
+
+
+  .mama-vergleich { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 30px 0; }
+
+  .mama-vergleich-card { border-radius: 14px; padding: 24px 22px; }
+
+  .mama-vergleich-card.nein { background: #f5f5f2; border: 1px solid #ddd; }
+
+  .mama-vergleich-card.ja {
+
+    background: linear-gradient(135deg, var(--teal-light), var(--cream));
+
+    border: 1px solid rgba(18,130,140,0.25);
+
+  }
+
+  .mama-vergleich-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+
+  .mama-vergleich-card.nein .mama-vergleich-label { color: #999; }
+
+  .mama-vergleich-card.ja .mama-vergleich-label { color: var(--teal); }
+
+  .mama-vergleich-card p { font-size: 15px; margin: 0; line-height: 1.65; color: var(--dark); }
+
+
+
+  .mama-steps { margin: 28px 0; }
+
+  .mama-step { display: flex; align-items: flex-start; gap: 18px; margin-bottom: 18px; }
+
+  .mama-step-num {
+
+    flex-shrink: 0; width: 36px; height: 36px;
+
+    background: var(--teal); color: #fff;
+
+    font-weight: 700; font-size: 15px; border-radius: 50%;
+
+    display: flex; align-items: center; justify-content: center; margin-top: 2px;
+
+  }
+
+  .mama-step-text { font-size: 16px; line-height: 1.65; padding-top: 5px; }
+
+  .mama-step-text strong { color: var(--navy); }
+
+
+
+  .mama-pillars { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin: 28px 0; }
+
+  .mama-pillar {
+
+    background: #fff; border-radius: 14px; padding: 26px 18px;
+
+    text-align: center; box-shadow: 0 2px 18px rgba(12,28,48,0.08);
+
+    border-top: 4px solid var(--teal);
+
+  }
+
+  .mama-pillar:nth-child(2) { border-top-color: var(--orange); }
+
+  .mama-pillar:nth-child(3) { border-top-color: var(--navy); }
+
+  .mama-pillar-icon { font-size: 32px; margin-bottom: 12px; }
+
+  .mama-pillar-title { font-weight: 700; font-size: 13px; color: var(--dark); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+
+  .mama-pillar p { font-size: 13px; color: #666; margin: 0; line-height: 1.55; }
+
+
+
+  .mama-check { list-style: none; padding: 0; margin: 18px 0; }
+
+  .mama-check li { padding: 10px 0 10px 40px; position: relative; border-bottom: 1px solid var(--cream-dark); font-size: 16px; line-height: 1.5; }
+
+  .mama-check li:last-child { border-bottom: none; }
+
+  .mama-check li::before {
+
+    content: '✓'; position: absolute; left: 0; top: 10px;
+
+    width: 24px; height: 24px; background: var(--teal); color: #fff;
+
+    border-radius: 50%; font-size: 12px; font-weight: 700;
+
+    line-height: 24px; text-align: center;
+
+  }
+
+
+
+  .mama-fazit {
+
+    background: linear-gradient(135deg, var(--dark) 0%, var(--navy) 100%);
+
+    border-radius: 20px; padding: 54px 44px; color: #fff;
+
+    margin-top: 50px; text-align: center;
+
+    position: relative; overflow: hidden;
+
+  }
+
+  .mama-fazit::before {
+
+    content: ''; position: absolute; top: -50px; right: -50px;
+
+    width: 200px; height: 200px; border-radius: 50%;
+
+    background: var(--teal); opacity: 0.15;
+
+  }
+
+  .mama-fazit h2 { font-family: 'Playfair Display', serif; font-size: 30px; color: var(--cream); margin: 0 0 18px 0; position: relative; z-index: 1; }
+
+  .mama-fazit p { color: rgba(241,236,221,0.8); font-size: 16px; line-height: 1.8; margin-bottom: 14px; position: relative; z-index: 1; }
+
+  .mama-fazit ul { list-style: none; padding: 0; text-align: left; display: inline-block; margin: 20px 0 32px 0; position: relative; z-index: 1; }
+
+  .mama-fazit ul li { padding: 7px 0 7px 30px; position: relative; color: var(--cream); font-size: 15px; }
+
+  .mama-fazit ul li::before { content: '→'; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
+
+  .mama-cta {
+
+    display: inline-block; background: var(--orange); color: #fff;
+
+    font-weight: 700; font-size: 16px; padding: 16px 42px;
+
+    border-radius: 50px; text-decoration: none;
+
+    position: relative; z-index: 1;
+
+  }
+
+
+
+  .mama-share {
+
+    text-align: center; margin-top: 40px; padding: 28px;
+
+    background: var(--cream); border-radius: 14px;
+
+    font-size: 15px; color: #666; font-style: italic;
+
+    border: 1px solid var(--cream-dark);
+
+  }
+
+  .mama-share strong { color: var(--teal); }
+
+
+
+  .mama-divider { text-align: center; margin: 45px 0; color: var(--teal); font-size: 18px; letter-spacing: 12px; opacity: 0.5; }
+
+
+
+  @media (max-width: 600px) {
+
+    .mama-vergleich, .mama-pillars { grid-template-columns: 1fr; }
+
+    .mama-hero { padding: 44px 24px; }
+
+    .mama-hero h1 { font-size: 28px; }
+
+    .mama-fazit { padding: 40px 24px; }
+
+  }
