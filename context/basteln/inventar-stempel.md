@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1118** |
+| Clearstamps | **1119** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -2274,7 +2274,39 @@ Dazu: **Kinder** (Schulanfang, mit einer Packung Stifte) und als **Signatur** au
 
 > **Bau-Idee:** Ein **echtes gepresstes Kleeblatt** in einem Sichtfenster oder unter einer Klappe, davor dieser Vers. Dann stimmt die Geschichte buchstäblich — und aus der Karte wird ein kleines Geschenk.
 
-> **Bündel 12 läuft:** `1111`–`1117` erfasst, drei Plätze frei bis `1120`.
+---
+
+### 1118 — Nasch- & Tisch-Sprüche, 5 Stück (Design Ursula Langhammer)
+- **Typ:** Clearstamp-Set · **Hersteller:** noch offen — **gleicher Designer wie `1111`** · **Format:** 5 Textstempel auf einer Folie, teils hochkant
+- **Inhalt Texte:**
+  - „Mit **Schokolade** geht alles besser"
+  - „**Betthupferl**" *(hochkant)*
+  - „Eine süße **Kleinigkeit**" *(schräg)*
+  - „**Zum genießen**" *(hochkant)*
+  - „**Guten Appetit**" *(dünne Konturschrift)*
+- **Aufdruck:** „Z9001" · seitlich „Design Von Ursula Langhammer"
+- **Tags:** `kueche` `selbstgemacht` `danke` `freundschaft` `allgemein` `gutschein` `geburtstag` `trost` `aufmunterung` `weihnachten` `advent` `einladung` `textstempel` `sofort-einsetzbar` `randakzent` `doterra-tauglich`
+
+**Schwester-Set zu `1111`** — gleicher Designer, gleiche Handschrift-Optik. Die beiden gehören zusammen und ergeben ein Nasch-Sortiment von acht Sprüchen.
+
+**Damit ist Schokolade endgültig dein grösstes Einzelthema — sieben Sprüche über vier Sets:** `1085` (×2) · `1109` · `1111` (×3) · `1118`.
+
+**Aber die vier anderen Sprüche können mehr als Schokolade:**
+
+| Spruch | Wofür |
+|---|---|
+| **„Betthupferl"** | das kleine Süsse aufs Kopfkissen · für Gäste · für Kinder — ein Wort, das sonst niemand mehr benutzt |
+| **„Eine süße Kleinigkeit"** | der universelle **Mitbringsel-Text** — passt auf jedes kleine Geschenk, ohne nach Anlass auszusehen |
+| **„Zum genießen"** | kurz und breit: Konfi, Sirup, Tee, Badesalz, ein Gutschein für Zeit |
+| **„Guten Appetit"** | dein erster **Tisch**-Spruch — Tischkarten, Menükarten, Einladung zum Essen, Vorratsgläser |
+
+**Deine Küchen-Ecke steht damit bei 29 Sprüchen** (`1085` mit 20, `1090` mit 4, `1118` mit 5) — mit Abstand der am besten ausgestattete Bereich. Für Weihnachts-Guetzli, Geschenke aus der Küche und Tischdeko brauchst du nichts mehr dazuzukaufen.
+
+> ⚠️ **„süße" und „genießen" mit ß** — deutsche Schreibweise, wie bei `1108` und `1111`.
+
+**Bildpartner:** Hamster (`1089`) · Katze (`1103`) · Igel mit Geschenk (`1078`) · Herzen (`1083`) · Kuh (`1101`) für Milchiges.
+
+> **Bündel 12 läuft:** `1111`–`1118` erfasst, zwei Plätze frei bis `1120`.
 
 ---
 
