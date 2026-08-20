@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1112** |
+| Clearstamps | **1118** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -2126,8 +2126,155 @@ Die SF-Kalender bringen eine Sorte Stempel mit, die dir Arbeit spart: **Spruch p
 
 **Bildpartner:** Hamster mit dicken Backen (`1089`) · Katze zu „Naschkatzen" (`1103`) · Igel mit Geschenk (`1078`) · Herzen (`1083`). Zum Verpacken: Tüte aus dem Punchboard mit „super lecker" (`1090`).
 
-> **Bündel 12 läuft:** `1111` erfasst, neun Plätze frei bis `1120`.
 > **Und das erste Set seit Längerem, das nicht von Scrapbook Forever ist** — Hersteller bitte beim nächsten Griff in die Kiste auf der Verpackung nachschauen.
+
+---
+
+### 1112 — „Zum Geburtstag viel FREUDE" + „Nur das Beste für Dich!" (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(**Shop**-Verpackung, alte Adresse Bad Liebenzell — kein Kalender-Set)* · **Format:** 2 Textstempel, Versalien, **ohne** Zierrahmen
+- **Inhalt Texte:** „ZUM GEBURTSTAG VIEL **FREUDE**" *(FREUDE in grosser Blockschrift)* · „NUR DAS BESTE FÜR DICH!"
+- **Tags:** `geburtstag` `allgemein` `feier` `danke` `freundschaft` `jubilaeum` `gutschein` `willkommen` `erfolg` `textstempel` `sofort-einsetzbar` `randakzent`
+
+**Endlich der schlichte Geburtstagsgruss ohne Pointe.** Deine anderen sind alle irgendwie *speziell* — humorvoll (`1081`, `1109`, `1111`), nachdenklich (`1084`, `1100`) oder verspielt (`1110`). Das hier ist der **neutrale Standard** für Menschen, bei denen du den Ton nicht kennst: Nachbarn, Kollegen, entfernte Verwandte.
+
+**„Zum Geburtstag viel FREUDE" ist die Anspielung aufs Lied** — jeder hört beim Lesen die Melodie mit. Das macht den nüchternen Satz warm, ohne etwas zu riskieren.
+
+**„Nur das Beste für Dich!" ist der flexiblere** — passt auch ohne Geburtstag: Gutschein-Beschriftung, Abschied, Start in etwas Neues, auf ein Geschenk.
+
+**Beide ohne Zierrahmen** — anders als `1100` und `1105`–`1110` brauchen sie ein Motiv drumherum. Sie sind **Text zu einem Bild**, nicht die Karte selbst.
+
+---
+
+### 1113 — „Der Lack ist zwar ab, aber die Grundierung ist immer noch erste Sahne" + „Alles Liebe zum Geburtstag!" (SF) ⭐⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 2 Textstempel, **beide mit eigenem Zierrahmen**
+- **Inhalt Texte:**
+  - „Der **Lack** ist zwar ab, aber die **Grundierung** ist immer noch **erste Sahne**."
+  - „Alles Liebe zum **Geburtstag**!"
+- **Tags:** `geburtstag` `jubilaeum` `allgemein` `freundschaft` `feier` `maenner` `ruhestand` `aufmunterung` `danke` `textstempel` `sofort-einsetzbar` `grossflächig`
+
+**Der Spruch für runde Geburtstage — und der hat gefehlt.** Bei 40, 50, 60 brauchst du einen Satz, der das Alter anspricht, **ohne zu sticheln**. Dieser gibt zu, dass Zeit vergeht, und dreht es im selben Atemzug zum Kompliment.
+
+**Damit hast du zwei Alters-Zugänge:**
+
+| Zugang | Set | Ton |
+|---|---|---|
+| **Schildkröte** | `1095` | als Bild — liebevoll und still |
+| **„Der Lack ist ab…"** | `1113` | als Text — augenzwinkernd |
+
+Zusammen auf einer Karte sind sie stark: eine gemütliche Schildkröte und dieser Satz trifft bei einem Fünfzigsten genau.
+
+**Das Set liefert Spruch UND Glückwunsch** — „Alles Liebe zum Geburtstag!" ist die zweite Zeile dazu. Damit ist die Karte komplett, ohne aus einem anderen Set nachzulegen. Beide haben einen eigenen Rahmen, du setzt sie einfach über- und untereinander.
+
+**Geht auch für Männer** — der Vergleich kommt aus der Werkstatt. Einer der wenigen Sprüche im Bestand, die bei Männern ohne Weiteres funktionieren (neben Goldesel `1081` und Nashorn `1080`).
+
+---
+
+## 🎂 Geburtstag — welcher Spruch für wen
+
+Geburtstag ist dein häufigster Anlass (65 Sets tragen den Tag). Damit du nicht jedes Mal suchst:
+
+| Situation | Spruch | Set |
+|---|---|---|
+| **Ton unbekannt** — Nachbarn, Kollegen | „Zum Geburtstag viel FREUDE" | `1112` |
+| **Runder Geburtstag** — 40/50/60 | „Der Lack ist zwar ab…" | `1113` |
+| **Mit Kuchen oder Gebäck** | „Kalorien zählen nicht, wenn eine Kerze drinsteckt" | `1109` |
+| **Mit Schokolade** | drei Varianten | `1111` |
+| **Geldgeschenk, derb** | vier Goldesel-Sprüche | `1081` |
+| **Geldgeschenk, brav** | Sparschwein als Bild | `1096` |
+| **Beste Freundin** | „Du weisst zu viel!" | `1097` |
+| **Fröhlich, ohne Anlassnennung** | „Lieblingstage…" | `1110` |
+| **Nachdenklich** | 8 Sprüche Liebe & Lebensweisheiten | `1084` |
+| **Kinder** | Igel mit Ballons und Geschenken | `1078` |
+| **Nachträglich** | Schnecke als Bild | `1094` |
+
+---
+
+### 1114 — „Der wundervollste Mensch liest gerade diese Worte: Schön, dass es dich gibt!" (SF) ⭐⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 Textstempel **im Zierrahmen**, vier Zeilen
+- **Inhalt Text:** „Der wundervollste **Mensch** liest gerade diese Worte: **SCHÖN, DASS ES DICH GIBT!**"
+- **Tags:** `allgemein` `freundschaft` `danke` `geburtstag` `muttertag` `trost` `aufmunterung` `jubilaeum` `gute-besserung` `willkommen` `abschluss` `textstempel` `sofort-einsetzbar` `mentoring-tauglich`
+
+**Der cleverste Spruch im ganzen Bestand — weil er die Empfängerin beim Lesen erwischt.** „Der wundervollste Mensch liest gerade diese Worte": das funktioniert nur auf einer Karte, und genau deshalb wirkt es. Man liest den Satz und ist gemeint, bevor man es merkt.
+
+**Damit ist dein Vorrats-Problem endgültig gelöst — vier anlasslose Sprüche mit vier verschiedenen Zugängen:**
+
+| Spruch | Set | Zugang |
+|---|---|---|
+| „weil ich dich mag" | `1080` | Zuneigung |
+| „Einfach so" | `1093` | Überraschung |
+| „Alles gut bei dir?" | `1099` | Nachfrage |
+| **„Schön, dass es dich gibt!"** | `1114` | **Kompliment** |
+
+**Der universellste Text, den du hast** — weil er nichts über den Anlass sagt, nur über den Menschen. Geburtstag, Muttertag, Danke, Jubiläum, Genesung, Abschied und einfach so.
+
+**Bester Kandidat für eine Vorrats-Serie:** fünf Karten damit, jede mit einem anderen Motiv — Blumen (`1030`), Herzen (`1083`), Schmetterling (`1075`), Vögelchen (`1102`), Marienkäfer (`1079`). Fünf Karten, ein Spruch, für jeden Fall was da.
+
+---
+
+### 1115 — „Sei wie die Sonne: Steh morgens auf und strahle, egal welches Wetter gestern war" (SF) ⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 grosser Textstempel **im Zierrahmen**, sechs Zeilen
+- **Inhalt Text:** „**Sei wie die Sonne**: Steh' morgens auf und **STRAHLE**, egal welches **Wetter** gestern war."
+- **Tags:** `aufmunterung` `trost` `neuanfang` `allgemein` `freundschaft` `geburtstag` `abschluss` `erfolg` `gute-besserung` `muttertag` `neujahr` `textstempel` `sofort-einsetzbar` `mentoring-tauglich`
+
+**Der Neuanfangs-Spruch für den Morgen danach.** Er hat einen Zwilling im Bestand: „Wende Dein Gesicht der Sonne zu, so fallen die Schatten hinter Dich!" (`1084`). Beide arbeiten mit der Sonne — **zusammen sind sie deine Sonnen-Familie.**
+
+**Der Unterschied entscheidet, welchen du nimmst:**
+
+| Spruch | Ton | Für |
+|---|---|---|
+| „Gesicht der Sonne zu" `1084` | sanfter | **anhaltend** schwere Zeiten |
+| „egal welches Wetter gestern war" `1115` | konkreter | **einen einzelnen** schlechten Tag, Streit, Fehlschlag |
+
+**„Egal welches Wetter gestern war" ist der Teil, der zählt** — der Satz verlangt nicht, dass gestern gut war. Er erlaubt, dass es schlecht war, und fängt trotzdem neu an. Genau der Ton, der bei einer erschöpften Freundin funktioniert.
+
+**Wo er passt:** nach einem Streit · nach einem Misserfolg · Neujahr · Montagmorgen · Wiedereinstieg nach Krankheit · erster Schultag · neuer Job · und als **Muttertagskarte für eine Mutter, die sich zu viel vorwirft**.
+
+> **Ein Sonnen-Motiv fehlt dir noch** — bis dahin gehen die Punktier-Blüten aus `1083` als Strahlenkranz, oder die Flamme (`1104`) als Lichtsymbol.
+
+---
+
+### 1116 — „Das Leben ist kunterbunt … wenn wir es ausmalen!" (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 Textstempel, konturgeschnitten — **ohne** Rahmen
+- **Inhalt Text:** „**Das Leben** ist **KUNTERBUNT** … wenn wir es **ausmalen**!"
+- **Tags:** `allgemein` `geburtstag` `kinder` `freundschaft` `aufmunterung` `selbstgemacht` `neuanfang` `danke` `abschluss` `erfolg` `textstempel` `sofort-einsetzbar` `mentoring-tauglich`
+
+**Der zweite Spruch, der aufs Gestalten zielt — nach „Kreativität ist Intelligenz, die Spass hat" (`1108`).** Zusammen sind sie dein **Bastel-Duo**.
+
+**Aber dieser kann mehr:** „ausmalen" meint das Kolorieren genauso wie das Leben selbst gestalten. Auf zwei Ebenen lesbar — deshalb passt er weit über die Bastelecke hinaus: Neuanfang, Abschluss, Ermutigung, Mentoring.
+
+**Die naheliegendste Verwendung: auf einer Karte, die du selbst koloriert hast.** Der Spruch kommentiert dann, was du gerade gemacht hast — eines der grossen Solo-Tiere (`1086`, `1092`, `1098`, `1101`, `1103`) in kräftigen Copic-Farben, darunter dieser Satz. Stimmiger als jede Deko.
+
+Dazu: **Kinder** (Schulanfang, mit einer Packung Stifte) und als **Signatur** auf der Rückseite deiner Karten, zusammen mit „Spass muss sein" (`1108`).
+
+---
+
+### 1117 — Kleeblatt-Vers: „Ich schenk es Dir, es bringt Dir Glück!" ⭐⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** noch unklar — **keine** SF-Verpackung · **Format:** 1 Textstempel, fünf Zeilen Blockschrift
+- **Inhalt Text:**
+  > „Ein **Kleeblatt** lag am Wegesrand,
+  > war ganz allein, als ich es fand.
+  > Ich hob es auf und ging ein Stück,
+  > ich schenk' es Dir, es bringt Dir **Glück**!"
+- **Tags:** `neujahr` `erfolg` `umzug` `hochzeit` `geburt` `neuanfang` `abschluss` `freundschaft` `danke` `willkommen` `aufmunterung` `gute-besserung` `allgemein` `textstempel` `sofort-einsetzbar`
+
+**Das ist der Vers zu deinem Kleeblatt-Stempel (`1062`)** — Bild und Text aus zwei verschiedenen Sets, die perfekt zusammengehören. Der Vers erzählt genau die Geste, die die Karte vollzieht: jemand findet ein Kleeblatt und gibt es weiter.
+
+**Damit ist deine Glücksbringer-Ecke komplett:**
+
+| Teil | Set |
+|---|---|
+| **Kleeblatt** | `1062` — das Bild |
+| **Marienkäfer** | `1051` `1079` `1093` — mit „Glück ist, wenn man es teilt" |
+| **Fliegenpilz** | `1051` `1093` |
+| **Dieser Vers** | `1117` — der Text, der alles zusammenhält |
+
+**Wo Glückwünsche gebraucht werden — öfter als man denkt:** Prüfung, Lehrabschluss, Führerschein · **Neujahr** (der Klassiker) · Umzug, neuer Job, Selbständigkeit · Hochzeit und Geburt · Genesung als stiller Wunsch.
+
+**Der Vers hat einen Vorteil, den kurze Sprüche nicht haben: er ist eine kleine Geschichte.** Damit trägt er eine Karte allein — ein gestempeltes Kleeblatt in die Ecke reicht.
+
+> **Bau-Idee:** Ein **echtes gepresstes Kleeblatt** in einem Sichtfenster oder unter einer Klappe, davor dieser Vers. Dann stimmt die Geschichte buchstäblich — und aus der Karte wird ein kleines Geschenk.
+
+> **Bündel 12 läuft:** `1111`–`1117` erfasst, drei Plätze frei bis `1120`.
 
 ---
 
