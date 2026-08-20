@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1127** |
+| Clearstamps | **1129** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -2487,7 +2487,43 @@ Bisher lief Ostern bei dir **ausschliesslich über Frühlingsblumen**: Tulpen (`
 
 Weil die Figur schläft, taugt sie auch für **Genesung** (mit `1087`, `1099`) — und als Winter-/Weihnachtsmotiv, wenn du die Mütze wie eine Wichtelmütze kolorierst.
 
-> **Bündel 13 läuft:** `1121`–`1126` erfasst, vier Plätze frei bis `1130`.
+---
+
+### 1127 — Baby-Drache (SF) ⭐⭐ erstes Fantasiewesen
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 grosser Stempel
+- **Inhalt Motiv:** **kleiner sitzender Drache** — rundlicher Körper, grosse Augen, kleine Hörner, Fledermausflügelchen, gemusterter Bauch, eingerollter Schwanz
+- **Tags:** `kinder` `geburtstag` `allgemein` `erfolg` `aufmunterung` `abschluss` `freundschaft` `maenner` `einladung` `geburt` `motivstempel` `zum-kolorieren` `grossflächig`
+
+**Das erste Fantasiewesen im Bestand — und damit eine Zielgruppe, die du nicht bedienen konntest.** Deine Tiere sind alle real: Bauernhof, Wald, Meer, Wildtiere. Wichtel (`1041`, `1076`) und Schutzengel (`1059`) sind Weihnachten und Taufe. **Ein Drache trifft Kinder zwischen vier und zehn**, die Ritter- und Drachengeschichten lieben — eine sehr treffsichere Altersgruppe für Kindergeburtstage.
+
+**Symbolik: Drache = Mut und Stärke.** In modernen Kinderbüchern kein Ungeheuer, sondern ein kleiner Beschützer. Damit:
+- **Kindergeburtstag** — der Hauptfall
+- **Mut machen** — mit „Du schaffst das!" (`1088`) oder „Beiss dich durch!" (`1091`): der kleine Drache, der schon Feuer spucken kann
+- **Schulanfang** · **Einladung** zur Ritter-Party
+- **Jungs** — einer der wenigen Motive im Bestand, die klar an Jungen gehen (neben Auto `1072` und Goldesel `1081`)
+
+> **Die Kombination, auf die das Set wartet:** Drache plus **Flamme (`1104`)** als Feuerstrahl vor der Schnauze. Bauch und Flügel sind zum Ausmalen gedacht — Grün oder Türkis, Bauch in Gelb.
+
+---
+
+### 1128 — „Kein Pilz ist klein genug, um nicht auch ein Glückspilz zu sein" (SF) ⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 Textstempel **im Zierrahmen**, sechs Zeilen
+- **Inhalt Text:** „Kein **Pilz** ist klein genug, um nicht auch ein **Glückspilz** zu sein."
+- **Tags:** `erfolg` `neujahr` `aufmunterung` `allgemein` `freundschaft` `geburtstag` `danke` `abschluss` `gute-besserung` `neuanfang` `herbst` `willkommen` `kinder` `textstempel` `sofort-einsetzbar` `mentoring-tauglich`
+
+**Der Text zu deinen Fliegenpilzen (`1051`, `1093`)** — und damit ist die Glücksbringer-Ecke **vollständig doppelt besetzt: jedes Symbol hat sein Text-Gegenstück.**
+
+| Symbol | Bild | Text |
+|---|---|---|
+| **Kleeblatt** | `1062` · Glückskind `1121` | Kleeblatt-Vers `1117` |
+| **Marienkäfer** | `1051` `1079` `1093` | „Glück ist, wenn man es teilt" `1079` |
+| **Fliegenpilz** | `1051` `1093` | **dieser Spruch** `1128` |
+
+Drei Glücks-Symbole, drei passende Texte. **Damit kannst du dreimal Glück wünschen, ohne dich zu wiederholen** — bei Prüfungen, Neujahr und Neuanfängen ist das öfter nötig, als man denkt.
+
+**Aber die zweite Lesart ist die stärkere.** „Kein Pilz ist klein genug" heisst eigentlich: **auch das Kleine zählt.** Damit funktioniert er als Ermutigung an jemanden, der sich für unwichtig hält · als **Danke für eine kleine Geste**, die viel bedeutet hat · als Mentoring-Satz (kleine Schritte gelten auch) · und bei Kindern als „auch du bist gross genug".
+
+> **Bündel 13 läuft:** `1121`–`1128` erfasst, zwei Plätze frei bis `1130`.
 
 ---
 
