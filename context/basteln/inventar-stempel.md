@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1111** |
+| Clearstamps | **1112** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -2095,6 +2095,39 @@ Die SF-Kalender bringen eine Sorte Stempel mit, die dir Arbeit spart: **Spruch p
 **Alle sechs sind sofort einsetzbar** — kein Kolorieren, kein Layout überlegen. Das ist die Kategorie für Tage, an denen du wenig Zeit hast.
 
 > 🎉 **Bündel 11 ist voll** — `1101`–`1110`. Nächste freie Nummer: **`1111`** (Bündel 12).
+
+---
+
+### 1111 — Schokoladen-Sprüche, 3 Stück (Design Ursel Langhammer)
+- **Typ:** Clearstamp-Set · **Hersteller:** noch unklar — **nicht** Scrapbook Forever · **Format:** 3 Textstempel auf einer Folie
+- **Inhalt Texte:**
+  1. „Ich esse nicht einfach **Schokolade**. Ich gebe **Kalorien** ein **Zuhause**."
+  2. „**SCHOKOLADE** macht nicht dick, sie formt bloß."
+  3. „**Man(n)** kann nicht alleine von **Schokolade** leben … **Frau** schon."
+- **Aufdruck:** „7893" auf der Folie · seitlich „Design von Ursel Langhammer" *(Folien-Aufdruck, nicht Teil des Stempels)*
+- **Tags:** `geburtstag` `freundschaft` `danke` `allgemein` `trost` `aufmunterung` `kueche` `selbstgemacht` `gutschein` `feier` `entschuldigung` `textstempel` `sofort-einsetzbar`
+
+**Damit ist die Schoggi- und Kalorien-Familie auf sechs Sprüche gewachsen — die grösste Themen-Sammlung im ganzen Bestand:**
+
+| Spruch | Set |
+|---|---|
+| „Lass dir nie einreden, dass Schokolade Kalorien hat" | `1085` |
+| „Warnung! Der Inhalt hat mehr als 2 Kalorien" | `1085` |
+| „Kalorien zählen nicht, wenn eine Kerze drinsteckt" | `1109` |
+| „Ich gebe Kalorien ein Zuhause" | `1111` |
+| „Schokolade macht nicht dick, sie formt bloß" | `1111` |
+| „Man(n) kann nicht alleine von Schokolade leben … Frau schon" | `1111` |
+
+**Warum das mehr wert ist, als es klingt:** Eine Tafel Schokolade plus Karte ist das Standard-Mitbringsel — Nachbarin, Kollegin, Freundin mit schlechtem Tag, kleines Dankeschön. Mit sechs Sprüchen **wiederholst du dich ein ganzes Jahr nicht**, auch nicht bei derselben Person.
+
+**Der stärkste der drei ist Nummer 1** — „Ich gebe Kalorien ein Zuhause" ist selbstironisch statt rechtfertigend, und trifft den Ton besser als die anderen zwei. **Nummer 3 ist der Frauen-Spruch** für Freundinnenrunden; bei Männern lieber Nummer 2.
+
+> ⚠️ **„bloß" steht mit ß auf dem Stempel** — deutsche Schreibweise, fällt bei Schweizer Empfängerinnen leicht auf.
+
+**Bildpartner:** Hamster mit dicken Backen (`1089`) · Katze zu „Naschkatzen" (`1103`) · Igel mit Geschenk (`1078`) · Herzen (`1083`). Zum Verpacken: Tüte aus dem Punchboard mit „super lecker" (`1090`).
+
+> **Bündel 12 läuft:** `1111` erfasst, neun Plätze frei bis `1120`.
+> **Und das erste Set seit Längerem, das nicht von Scrapbook Forever ist** — Hersteller bitte beim nächsten Griff in die Kiste auf der Verpackung nachschauen.
 
 ---
 
