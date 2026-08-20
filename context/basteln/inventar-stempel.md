@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1086** |
+| Clearstamps | **1088** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -151,7 +151,8 @@ Pflichtfelder pro Eintrag:
 | **Kahle Zweige** | `1077` | Kargheit, Stille | **Winter · Trauer · Herbst** — mit Vogel und Blüten kippt es in Frühling und Neuanfang |
 | **Marienkäfer** | `1079` `1051` | Glücksbringer | **Prüfung · Neujahr · Umzug · Hochzeit · Geburt · neuer Job** |
 | **Nashorn mit Blumen** | `1080` | grosses Tier, zarte Geste | Karte **ohne Anlass** · für Empfängerinnen, denen Herzchen zu viel sind · **für Männer** |
-| **Goldesel / Münzen** | `1081` | Geld, Humor | **Geldgeschenk** bei Hochzeit · Konfirmation · runder Geburtstag · Lehrabschluss · Ruhestand |
+| **Schlafender Elefant** | `1087` | Ruhe ohne schlechtes Gewissen | **Erschöpfung · Genesung · Mama-Karten** · Ruhestand · Babykarte |
+| **Goldesel / Münzen** | `1081` `1086` | Geld, Humor | **Geldgeschenk** bei Hochzeit · Konfirmation · runder Geburtstag · Lehrabschluss · Ruhestand |
 | **Spirale mit Pfeil** | `1083` | Richtung, Entscheidung | Neuanfang · neuer Job · Umzug — passt zur Weg-Familie `1002`/`1022`/`1056` |
 | **Auto mit Koffer** | `1072` | Aufbruch mit Gepäck | **Ruhestand · Auswandern** · Umzug · grosse Reise · Sabbatical |
 | **Mädchen mit Blumenstrauss** | `1072` | Kind schenkt Blumen | **Muttertag** · Grossmutter · Danke · Erzieherin, Lehrerin |
@@ -1566,7 +1567,53 @@ Dazu: **Entschuldigung** („sorry — und ich mag dich trotzdem") und stille **
 
 > **doTERRA-Brücke:** funktioniert bei **kulinarischen Ölen** (Zitrone, Pfefferminz, Wild Orange im Gebäck). Das Etikett bleibt am Original-Fläschchen, hier geht es nur ums Verpacken des Gebäcks — **keine Wirkaussagen auf die Karte.**
 
-> **Bündel 9:** `1081`–`1085` erfasst, fünf Plätze frei bis `1090`.
+---
+
+### 1086 — Zwei Crazy-Esel (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever · **Format:** 2–3 Stempel
+- **Inhalt Motive:** **grosser Comic-Esel** (grinsend, Schleife am Ohr, aufrecht) · **kleinerer Esel** · evtl. drittes Kleinteil
+- **Tags:** `geburtstag` `feier` `allgemein` `kinder` `maenner` `freundschaft` `aufmunterung` `motivstempel` `zum-kolorieren` `grossflächig`
+- ⚠️ **Artikel-Nr. offen** — Set ist noch original verpackt, Nummer steht auf der SF-Hülle
+
+**Gleiche Machart wie der Goldesel aus `1081`** — grinsender Comic-Esel, dieselbe Strichführung, sehr wahrscheinlich dieselbe SF-Serie. Damit hast du eine **Esel-Familie**: hier zwei ohne Text, dort einer mit vier Geld-Sprüchen.
+
+**Kombiniert ergibt das Abwechslung bei einem Anlass, den du oft hast:** Esel von hier auf die Karte, Geld-Spruch aus `1081` dazu — und die nächste Geldgeschenk-Karte sieht anders aus als die letzte.
+
+**Ohne eigenen Text ist das Set der flexible Teil** — jeder Humor-Spruch passt: „Nervennahrung" (`1085`), `1021`, `1045`, `1067`. Damit auch für **Aufmunterung** brauchbar, nicht nur Geburtstag.
+
+Gross und zum Kolorieren gemacht — Copics. Ein grosser Esel plus ein kleiner ergibt eine Szene („der Grosse und der Kleine"), gut für Karten zwischen Geschwistern oder Vater und Kind.
+
+---
+
+### 1087 — Schlafender Elefant — „In der Ruhe liegt die Kraft" (SF) ⭐⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever · **Format:** ca. 4 Stempel
+- **Inhalt Motive:** **schlafender Elefant**, liegend mit angelegten Ohren und geschlossenen Augen (gross, Outline) · **„Zzzz"-Schlafzeichen** als eigener Stempel
+- **Inhalt Texte:**
+  - „In der Ruhe liegt die Kraft."
+  - „Die Welt gehört dem, der sie geniesst."
+- **Tags:** `trost` `aufmunterung` `gute-besserung` `geburt` `kinder` `allgemein` `ruhestand` `danke` `freundschaft` `muttertag` `geburtstag` `motivstempel` `textstempel` `zum-kolorieren` `grossflächig` `mentoring-tauglich`
+- ⚠️ **Artikel-Nr. offen** — Set ist noch original verpackt, Nummer steht auf der SF-Hülle
+
+**„In der Ruhe liegt die Kraft" ist der Spruch für erschöpfte Mütter — und dein einziger, der genau das trifft.** Bild und Text passen perfekt: ein Elefant, der einfach schläft, ohne schlechtes Gewissen. Das ist keine Aufforderung zum Durchhalten, sondern die **Erlaubnis zur Pause**.
+
+**Er gehört zur Entspannungs-Familie:**
+
+| Set | Motiv |
+|---|---|
+| `1065` `1072` | Faultier |
+| `1064` | „Kurz abtauchen und entspannen" |
+| `1067` | „Die Leichtigkeit des Lebens…" |
+| `1087` | **schlafender Elefant** — der ruhigste von allen |
+
+Und der einzige daraus, der auch bei **Krankheit und Genesung** funktioniert, ohne aufdringlich zu sein.
+
+**Der zweite Spruch geht in eine andere Richtung:** „Die Welt gehört dem, der sie geniesst" passt bei **Ruhestand**, runden Geburtstagen und Reisekarten — zusammen mit dem Auto mit Koffer (`1072`) oder dem Segelboot (`1071`).
+
+**Vierter Elefanten-Bestand** nach `1042`, `1047` und `1072` — aber der einzige gross und allein stehend. Als **Babykarte** funktioniert er auch (schlafendes Elefantenbaby), dann mit den Geburts-Sprüchen aus `1022`.
+
+**Das „Zzzz" ist ein separater Stempel** — du setzt es dahin, wo Platz ist, statt es mitzudrucken.
+
+> **Bündel 9:** `1081`–`1087` erfasst, drei Plätze frei bis `1090`.
 
 ---
 
