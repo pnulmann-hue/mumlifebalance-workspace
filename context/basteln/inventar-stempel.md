@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1091** |
+| Clearstamps | **1101** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -87,6 +87,8 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 2. **Fotografieren** — Set mit **sichtbarer Nummer** im Bild
 3. **Ablegen** — in Nummernfolge, fertig
 4. **Schicken** — Foto an mich, ich trage alles unten ein
+
+> **Artikelnummern:** Nur Sets aus dem laufenden Shop-Sortiment haben eine. **Sets aus SF-Advents-, Sommer- oder Jahreskalendern haben keine** — die gab es nie einzeln zu kaufen (bestätigt 20.8.). Bei denen frage ich nicht nach, und `sf-lookup` bringt dort nichts.
 
 Der Punkt an dieser Reihenfolge: **du kannst 20 Sets in einem Rutsch durchnummerieren und ablegen**, ohne dass ich dazwischen etwas tun muss. Die Fotos schickst du, wann es passt. Nichts blockiert.
 
@@ -151,6 +153,17 @@ Pflichtfelder pro Eintrag:
 | **Kahle Zweige** | `1077` | Kargheit, Stille | **Winter · Trauer · Herbst** — mit Vogel und Blüten kippt es in Frühling und Neuanfang |
 | **Marienkäfer** | `1079` `1051` | Glücksbringer | **Prüfung · Neujahr · Umzug · Hochzeit · Geburt · neuer Job** |
 | **Nashorn mit Blumen** | `1080` | grosses Tier, zarte Geste | Karte **ohne Anlass** · für Empfängerinnen, denen Herzchen zu viel sind · **für Männer** |
+| **Sparschwein** | `1096` | Geld, harmlos | **Geldgeschenk für förmliche Anlässe** · Taufe · Kinder · Schwiegermutter |
+| **Flamingo** | `1098` `1066` | Leichtigkeit, Balance | Sommer · Poolparty · Ferien · jüngere Empfängerinnen |
+| **Koala** | `1099` | Festhalten, Ruhe | **„ich halte zu dir"** · Genesung · Trost |
+| **Tiefe Wurzeln** | `1100` | Fundament trägt | **Krise · Trauer · Jubiläum · Umzug · Muttertag · Mentoring** |
+| **Biber** | `1091` | Ausdauer, nagt bis der Baum fällt | **Prüfung · Schulanfang · Lehrabschluss · Matura** |
+| **Kamel** | `1092` | Durststrecke, Reserven | **lange Krankheit · zähe Projekte** · Reise · Auswandern |
+| **Raupe** | `1093` | wird zum Schmetterling | **Entwicklung** — mit `1074`/`1075` als Bildpaar: Raupe links, Schmetterling rechts |
+| **Fliegenpilz** | `1093` `1051` | Glückspilz | Prüfung · Neujahr · Neuanfang |
+| **Frosch** | `1093` | Verwandlung im Märchen | augenzwinkernd bei Hochzeit und Verlobung |
+| **Schnecke** | `1094` | eigenes Tempo, Haus dabei | **Umzug · Einzug** · Entschleunigung · nachträgliche Geburtstagskarte |
+| **Schildkröte** | `1095` `1071` | langes Leben, Geduld | **runder Geburtstag · Jubiläum · Ruhestand** · Rückzug |
 | **Ameise mit Last** | `1088` | Kraft trotz kleiner Grösse | **Prüfung · Lehrabschluss · neuer Job · Genesung · Schulanfang** · Mütter, die zu viel tragen |
 | **Hamster mit vollen Backen** | `1089` | Vorrat, Naschen | **Selbstgemachtes aus der Küche** · Herbst · Erntedank · Kindergeburtstag |
 | **Schlafender Elefant** | `1087` | Ruhe ohne schlechtes Gewissen | **Erschöpfung · Genesung · Mama-Karten** · Ruhestand · Babykarte |
@@ -1685,6 +1698,215 @@ Die Weihnachts-Guetzli-Verpackung ist damit durchgeplant.
 > **doTERRA-Brücke:** für Gebäck und Konfi mit kulinarischen Ölen (Zitrone, Pfefferminz, Wild Orange). Etikett bleibt am Original-Fläschchen, **keine Wirkaussagen auf die Karte.**
 
 > ## 🎉 Bündel 9 ist voll — `1081`–`1090`. Nächste freie Nummer: **`1091`** (Bündel 10).
+
+---
+
+### 1091 — Biber — „Beiss dich durch!" (SF) ⭐⭐ das Prüfungs-Motiv
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 2 Stempel
+- **Inhalt Motiv:** **grosser Biber**, aufrecht sitzend, mit **Stift/Zweig in der Pfote** und breitem Kellenschwanz
+- **Inhalt Text:** „BEISS DICH DURCH!"
+- **Tags:** `erfolg` `aufmunterung` `abschluss` `neuanfang` `kinder` `allgemein` `freundschaft` `gute-besserung` `trost` `maenner` `motivstempel` `textstempel` `zum-kolorieren` `grossflächig` `mentoring-tauglich`
+
+**Dasselbe Prinzip wie bei der Ameise (`1088`): Das Tier beweist den Spruch.** Ein Biber nagt sich durch einen Baumstamm, darunter „Beiss dich durch!". Kein leerer Zuspruch — das Bild macht ihn glaubwürdig.
+
+**Der Stift in der Pfote macht es zum Schul-Motiv.** Damit hast du endlich das Bild für **Prüfung, Schulanfang, Lehrabschluss, Matura** — ein Anlass, den du jedes Jahr brauchst.
+
+**Symbolik: Biber = Ausdauer, Fleiss, Bauen.** Er nagt so lange, bis der Baum fällt — langsam, aber unaufhaltsam.
+
+---
+
+### 1092 — Kamel, gross & klein (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 2 Stempel
+- **Inhalt Motive:** **grosses Kamel** mit zwei Höckern, langen Wimpern und leicht spöttischem Blick · **kleines Kamel**
+- **Tags:** `reise` `aufmunterung` `allgemein` `kinder` `geburtstag` `freundschaft` `abschluss` `neuanfang` `erfolg` `maenner` `motivstempel` `zum-kolorieren` `grossflächig` `mentoring-tauglich`
+
+**Symbolik: Kamel = Durststrecke überstehen, Reserven haben.** Ein Kamel läuft tagelang ohne Wasser und kommt an. Der Zuspruch lautet also nicht „schneller", sondern **„du hältst das durch"**.
+
+**Deine drei Motivations-Tiere unterscheiden sich in der Nuance:**
+
+| Tier | Situation | Für wen |
+|---|---|---|
+| **Ameise** `1088` | trägt eine zu grosse Last | Erschöpfte |
+| **Biber** `1091` | arbeitet an einem Hindernis | Prüfung, Aufgabe |
+| **Kamel** `1092` | hält eine lange Strecke durch | **Durststrecken**, lange Krankheit, zähe Projekte |
+
+**Ohne eigenen Text ist es das flexibelste der drei** — nimm „Du schaffst das!" (`1088`), „Beiss dich durch!" (`1091`) oder „In der Ruhe liegt die Kraft" (`1087`) dazu.
+
+**Zweite Richtung: Reise und Fernweh** — mit Auto und Koffer (`1072`) und Segelboot (`1071`) für Auswandern, Sabbatical, grosse Fahrt.
+
+---
+
+### 1093 — Mini-Tierchen: Frosch, Pilz, Vögelchen, Raupe (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** ca. 10 kleine Stempel + 2 Texte
+- **Inhalt Motive:** **Frosch** (grösstes Motiv, gepunktet) · **Fliegenpilz mit Gesicht** · **Vögelchen** · **Raupe mit Gesicht** · zwei bis drei **Marienkäferchen** · kleine Beere
+- **Inhalt Texte:** „Hab einen tollen Tag" · „Einfach so" *(hochkant)*
+- **Tags:** `allgemein` `kinder` `freundschaft` `geburtstag` `fruehling` `sommer` `garten` `aufmunterung` `danke` `gute-besserung` `erfolg` `neuanfang` `motivstempel` `textstempel` `zum-kolorieren` `randakzent` `kleinformat`
+
+**„Einfach so" ist dein zweiter anlassloser Spruch** — nach „weil ich dich mag" (`1080`). Zwei davon heisst: du kannst zwei Menschen im selben Monat überraschen, ohne dich zu wiederholen.
+
+**Symbolik — in diesem kleinen Set stecken vier Bedeutungsträger:**
+
+| Motiv | Bedeutet | Passt bei |
+|---|---|---|
+| **Fliegenpilz** | Glückspilz | Prüfung · Neujahr · Neuanfang (mit `1051`, `1062`, `1079`) |
+| **Marienkäfer** | Glücksbringer | dasselbe Feld |
+| **Raupe** | wird zum Schmetterling | **Entwicklung, Verwandlung** |
+| **Frosch** | Verwandlung im Märchen | augenzwinkernd, auch Hochzeit und Verlobung |
+
+**Die Raupe ist der stille Star.** Mit den Schmetterlingen aus `1074`/`1075` auf einer Karte erzählst du eine ganze Geschichte: Raupe links, Schmetterling rechts. **Das ist dein stärkstes Mentoring-Bild** — Entwicklung, ohne ein Wort dazu.
+
+Alles klein — der Gegenpol zu den grossen Solo-Motiven. Zum Streuen um einen Spruch, für Anhänger und Verpackungen.
+
+---
+
+### 1094 — Schnecke, gross & klein (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 2 Stempel
+- **Inhalt Motive:** **grosse Schnecke** im Kriechen, fein geringeltes Haus, verschmitzter Blick, auf einer Spur · **kleine Schnecke**
+- **Tags:** `umzug` `willkommen` `aufmunterung` `allgemein` `kinder` `garten` `fruehling` `sommer` `freundschaft` `trost` `gute-besserung` `nachtraeglich` `motivstempel` `zum-kolorieren` `grossflächig`
+
+**Die Schnecke trägt ihr Haus mit sich — damit ist sie dein zweites Umzugs-Motiv** neben dem Vogelhäuschen (`1077`). Beide auf einer Karte: das alte Haus, das mitkommt, und das neue, das wartet.
+
+**Symbolik: Langsamkeit als Haltung, eigenes Tempo, alles dabeihaben.**
+- **Umzug und Einzug** — „dein Zuhause ist da, wo du bist"
+- **Entschleunigung** — für alle, die zu schnell unterwegs sind
+- **Genesung** — langsam wieder in Gang kommen, ohne Druck
+
+**Als nachträgliche Geburtstagskarte ist sie unschlagbar** — die Schnecke entschuldigt die Verspätung, ohne dass du es schreiben musst.
+
+---
+
+### 1095 — Schildkröte, gross & mini (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 2 Stempel
+- **Inhalt Motive:** **grosse Schildkröte**, stehend, gemusterter Panzer, gepunktete Füsse, grosse Augen · **Mini-Schildkröte**
+- **Tags:** `jubilaeum` `geburtstag` `ruhestand` `aufmunterung` `allgemein` `kinder` `freundschaft` `gute-besserung` `trost` `sommer` `abschluss` `motivstempel` `zum-kolorieren` `grossflächig` `mentoring-tauglich`
+
+**Zweite Schildkröte nach der kleinen aus `1071`** — aber diese ist gross genug, um eine Karte allein zu tragen.
+
+**Symbolik: langes Leben, Geduld, Panzer als Schutz.** Für **runde Geburtstage und Jubiläen** ist sie das Alters-Symbol schlechthin — liebevoll statt spöttisch. Dazu **Ruhestand** (mit „Die Welt gehört dem, der sie geniesst", `1087`) und **Rückzug** wie beim Igel.
+
+---
+
+## 🐌 Die Langsam-Familie — dein stärkster inhaltlicher Block
+
+Vier Motive, die alle dasselbe sagen und sich trotzdem unterscheiden:
+
+| Motiv | Set | Nuance |
+|---|---|---|
+| **Faultier** | `1065` `1072` | nichts tun |
+| **Schlafender Elefant** | `1087` | ausruhen |
+| **Schnecke** | `1094` | eigenes Tempo |
+| **Schildkröte** | `1095` | lange durchhalten |
+| **Koala** | `1099` | festhalten und ausruhen |
+
+Dazu die passenden Sprüche: „In der Ruhe liegt die Kraft" (`1087`) · „Die Leichtigkeit des Lebens…" (`1067`) · „Kurz abtauchen und entspannen" (`1064`).
+
+**Das ist inhaltlich dein stärkster Block** — alles, was gegen Hektik und Dauerleistung spricht. Und der einzige Themenbereich, in dem du für praktisch jede Empfängerin ein passendes Bild hast.
+
+---
+
+### 1096 — Sparschwein mit Münzen (SF) ⭐⭐ die brave Schwester zum Goldesel
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 3–4 Stempel
+- **Inhalt Motive:** **rundes Sparschwein** von vorn, freundlich lächelnd, mit **Münzen die oben in den Schlitz fallen** · **zwei einzelne Münzen** als Kleinstempel
+- **Tags:** `geburtstag` `gutschein` `hochzeit` `konfirmation` `taufe` `geburt` `abschluss` `jubilaeum` `ruhestand` `kinder` `feier` `allgemein` `motivstempel` `zum-kolorieren` `grossflächig`
+
+**Der Goldesel (`1081`) ist derb, das Sparschwein ist charmant — und damit kannst du jetzt jedem Geld schenken:**
+
+| Motiv | Für wen |
+|---|---|
+| **Sparschwein** `1096` | Schwiegermutter · förmliche Hochzeit · Taufe · Kinder · Kolleginnen |
+| **Goldesel** `1081` | Familie · Freunde · Männer · alle mit Humor |
+
+**Sparschwein plus Kinder ist die stärkste Kombination** — bei Taufe, Geburt und Kindergeburtstagen ist Geld „fürs Sparschwein" der Normalfall, und dieses Motiv sagt genau das.
+
+**Die zwei separaten Münzen sind der praktische Teil** — als Münzspur über die Karte oder Richtung Sichtfenster. **In Gold embossen**, dann glitzert es.
+
+**Bau-Tipp:** Sparschwein mittig, Schlitz nach oben, die echten Noten in einer Klappe direkt darüber — dann sieht es aus, als würde man gerade einzahlen.
+
+---
+
+### 1097 — „Sorry, aber wir müssen für immer befreundet bleiben. Du weisst zu viel!" (SF) ⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 grosser Textstempel
+- **Inhalt Text:** „**SORRY**, aber wir müssen für **IMMER** befreundet bleiben. **DU WEISST ZU VIEL!**"
+- **Tags:** `freundschaft` `geburtstag` `allgemein` `danke` `jubilaeum` `entschuldigung` `abschluss` `textstempel` `sofort-einsetzbar` `grossflächig`
+
+**Der beste Freundschafts-Spruch im Bestand — und der einzige, der wirklich lustig ist.** Deine anderen Freundschafts-Texte sind warm und ernst (`1002`, `1056`, `1084`). Dieser ist eine Pointe, und die trifft bei einer langjährigen Freundin genau.
+
+**Ein Stempel, eine ganze Karte.** Er bringt sein Layout selbst mit — Negativ-Kästchen, wechselnde Schriften, Grössensprung. **Deko nur sparsam**, sonst wird es unruhig: ein Element aus `1083` in die Ecke, oder ein Minimotiv aus `1093`.
+
+**Wo er hinpasst:** Geburtstag der besten Freundin (Hauptfall) · Freundschafts-Jubiläum · Beileger zu einem gemeinsamen Foto · Abschied, wenn eine Freundin wegzieht (mit `1072`).
+
+> ⚠️ **Nur bei echter Vertrautheit.** Bei Bekannten und im Geschäftlichen wirkt es aufdringlich — da lieber `1084`.
+
+---
+
+### 1098 — Flamingo, gross (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 grosser Stempel
+- **Inhalt Motiv:** **grosser Flamingo** auf einem Bein, das andere angehoben, **Blüte am Kopf**, breites Grinsen — hochformatig
+- **Tags:** `sommer` `geburtstag` `einladung` `feier` `freundschaft` `allgemein` `kinder` `reise` `motivstempel` `zum-kolorieren` `grossflächig`
+
+**Zweiter Flamingo-Bestand nach `1066` — aber anderes Format.** Dort mehrere zum Gruppieren, hier **ein grosser Solo-Auftritt**, der eine Karte allein trägt. Beides braucht man.
+
+**Das angehobene Bein ist das Detail, das ihn trägt** — Balance mit Leichtigkeit. Passt zu „Die Leichtigkeit des Lebens…" (`1067`) und „Einfach nur geniessen" (`1085`).
+
+**Hochformatig** — füllt eine schmale Karte, wo ein breites Motiv nicht passt.
+
+Gehört in die **Tropical-Familie**: `1032` Monstera · `1066` Flamingos · `1065` Faultier · `1064` Fische · `1071` Strand · `1082` Unterwasser · `1098` Flamingo solo.
+
+---
+
+### 1099 — Koala mit Eukalyptus — „Alles gut bei dir?" (SF) ⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 2 Stempel
+- **Inhalt Motiv:** **sitzender Koala** mit grossen Ohren, der einen **Eukalyptus-Zweig** an sich drückt
+- **Inhalt Text:** „ALLES GUT BEI DIR?" *(schmaler Streifen)*
+- **Tags:** `freundschaft` `trost` `aufmunterung` `gute-besserung` `allgemein` `danke` `kinder` `entschuldigung` `motivstempel` `textstempel` `zum-kolorieren` `grossflächig` `mentoring-tauglich`
+
+**Der dritte anlasslose Spruch — und der einzige, der eine echte Frage stellt.** Nach „weil ich dich mag" (`1080`) und „Einfach so" (`1093`) füllt er eine feine Lücke: **wenn du länger nichts gehört hast.** Keine Karte, die etwas wünscht, sondern eine, die nachfragt.
+
+Genau der Satz, den man einer Freundin schreibt, bei der man ein Gefühl hat. Ohne Druck, ohne dass man wissen muss, was los ist. **Und weil es eine Frage ist, kommt oft eine Antwort zurück** — anders als bei einem Wunsch.
+
+**Symbolik: Koala = Anhänglichkeit und Ruhe.** Koalas halten sich fest und schlafen den halben Tag — beides passt: „ich halte zu dir" und „ruh dich aus". Damit ist er das **fünfte Mitglied der Langsam-Familie**.
+
+---
+
+### 1100 — „Wenn die Wurzeln tief sind, braucht man den Wind nicht zu fürchten" (SF) ⭐⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 Textstempel **im fertigen Zierrahmen**
+- **Inhalt Text:** „Wenn die **Wurzeln** tief sind, braucht man den **Wind** nicht zu fürchten."
+- **Tags:** `trost` `aufmunterung` `jubilaeum` `hochzeit` `abschluss` `neuanfang` `umzug` `ruhestand` `allgemein` `freundschaft` `danke` `muttertag` `textstempel` `sofort-einsetzbar` `mentoring-tauglich`
+
+**Der erwachsenste Spruch im ganzen Bestand — und der mit der grössten Reichweite.** Ein chinesisches Sprichwort, das ohne Kitsch tröstet und ohne Pathos ermutigt.
+
+**Warum er so breit passt: Er verspricht nichts, er stellt nur fest.** Damit funktioniert er, wo „Du schaffst das!" zu forsch und „Kopf hoch" zu billig wäre:
+
+| Anlass | Lesart |
+|---|---|
+| **Krisen** — Trennung, Jobverlust, Diagnose | „was dich trägt, ist noch da" |
+| **Trauer** (mit kahlen Zweigen `1077`) | sehr würdig, ganz ohne Kitsch |
+| **Jubiläum, Hochzeit** | „euer Fundament trägt" |
+| **Umzug, Auswandern, Ruhestand** | Wurzeln bleiben, auch wenn man geht |
+| **Muttertag** | die Wurzeln, die eine Mutter gibt |
+| **Mentoring** | Fundament vor Tempo |
+
+**Der fertige Zierrahmen ist der praktische Vorteil** — der Stempel ist eine ganze Kartenmitte, du brauchst nichts drumherum. Ein Zweig aus `1077` oder `1083` in die Ecke, fertig.
+
+**Bildpartner:** kahle Zweige und Gartenzaun (`1077`) · Farnzweige (`1083`) · Blumenwiese (`1074`). Alles mit Wurzeln, Erde und Wachstum.
+
+---
+
+## 🎉 Hundert Sets — Bündel 10 ist voll
+
+`1001`–`1100` erfasst, **keine Duplikate, keine Lücken.** Nächste freie Nummer: **`1101`** (Bündel 11).
+
+### Die drei anlasslosen Karten — dein Vorrats-Trio
+
+Das war dein grösstes Problem: *„bin nie vorbereitet."* Diese drei brauchen keinen Anlass und keinen Vorlauf:
+
+| Spruch | Set | Wann |
+|---|---|---|
+| „weil ich dich mag" | `1080` | wenn dir jemand einfällt |
+| „Einfach so" | `1093` | kleine Überraschung ohne Grund |
+| **„Alles gut bei dir?"** | `1099` | **wenn du länger nichts gehört hast** |
+
+**Bastle von jedem drei Stück auf Vorrat** — dann hast du immer eine Karte da, egal was kommt.
 
 ---
 

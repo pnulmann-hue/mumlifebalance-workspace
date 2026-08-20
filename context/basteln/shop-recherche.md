@@ -57,6 +57,18 @@ node scripts/basteln/sf-lookup.mjs SF363 SF370 SF353 --bilder
 
 ## 📅 Kalender-Sets — die eigentliche Erklärung (gefunden 2026-08-18)
 
+> ### 🚫 REGEL: Kalender-Sets haben KEINE Artikelnummer
+> **Bestätigt von Patricia am 2026-08-20.** Sets aus SF-Advents-, Sommer- oder Jahreskalendern waren nie einzeln im Shop und tragen deshalb keine Artikelnummer — auch dann nicht, wenn sie noch original in der SF-Hülle stecken.
+>
+> **Konsequenz für mich:**
+> - **Nie nach der Artikelnummer fragen**, wenn ein Set aus einem Kalender stammt.
+> - `sf-lookup.mjs` läuft dort ins Leere — nicht anbieten.
+> - Im Register und in Notion als `keine — Kalender-Set, nicht im Shop erhältlich` eintragen.
+> - Betrifft im Bestand mindestens `1086`–`1090`, vermutlich auch weitere SF-Sets ohne Nummer.
+>
+> **Was stattdessen geht:** Patricia schickt Screenshots aus der Facebook-Ideengruppe oder aus den YouTube-Tag-Videos, ich werte sie aus. Oder wir arbeiten mit den Layout-Rezepten aus dem Register.
+
+
 **Viele von Patricias Sets stammen aus SF-Kalendern, nicht aus dem Shop-Sortiment.** Deshalb sind sie nirgends zu finden.
 
 - **Adventskalender:** 24 A7-Sonder-Sets pro Kalender (Coloration-, Silhouette- und Textstempel)
