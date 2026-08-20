@@ -73,13 +73,26 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1124** |
+| Clearstamps | **1127** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
 | Embossing-Folder | 5001 |
 | Punchboards & Werkzeuge | 6001 |
 | Farben & Kissen | 7001 |
+
+## ❓ Offene Kleinigkeiten (beim nächsten Griff in die Kiste)
+
+| Set | Was fehlt |
+|---|---|
+| `1019` | Nummer noch auf die Verpackung schreiben |
+| `1026` | Hersteller-Tippfehler „Budda" → Buddha |
+| `1111` `1117` `1118` `1120` | Hersteller ablesen (keine SF-Verpackung) |
+| `1112` | Artikelnummer? — ist eine **Shop**-Verpackung, nicht Kalender → sf-lookup möglich |
+| `1124` | zweiter Textstempel nicht lesbar (Bonjour? Time to say…?) |
+| `1126` | Tierart — Eule, Vogel oder Wichtel? |
+
+---
 
 ## Der Erfassungs-Workflow (du musst nicht auf mich warten)
 
@@ -2419,7 +2432,62 @@ Bisher lief Ostern bei dir **ausschliesslich über Frühlingsblumen**: Tulpen (`
 
 **Kirschblütenzweige (`1037`) hinter den Korb, Tulpen (`1044`) daneben** — daraus wird eine Szene.
 
-> **Bündel 13 läuft:** `1121`–`1123` erfasst, sieben Plätze frei bis `1130`.
+---
+
+### 1124 — Eiffelturm + „Alles Liebe" (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 3 Stempel — 1 grosses Motiv + 2 Textstreifen
+- **Inhalt Motiv:** **Eiffelturm**, gross und hochformatig, feine Gitterstruktur
+- **Inhalt Texte:** „Alles Liebe" · **zweiter Text noch offen** ❓ *(auf dem Foto gespiegelt — sah nach „Bonjour" / „Time to say…" aus)*
+- **Tags:** `reise` `hochzeit` `allgemein` `freundschaft` `danke` `jubilaeum` `geburtstag` `abschluss` `einladung` `motivstempel` `textstempel` `grossflächig`
+
+**Das erste Städte-Motiv im Bestand — eine neue Kategorie.** Reise lief bisher nur über Symbole: Segelboot (`1071`), Auto mit Koffer (`1072`), Kamel (`1092`). Ein Eiffelturm ist etwas Anderes — **er nennt einen Ort.**
+
+**Wo er passt:** Reise- und Urlaubskarten · **Hochzeit und Verlobung** (Paris, mit „Alles Liebe" und den Liebes-Sprüchen aus `1084`) · **Fotoalben** als Titelmotiv einer Reise-Seite (mit `1119`) · Abschied beim Wegziehen · Frankreich-Fans.
+
+> ⚠️ **Die Gitterstruktur ist zu fein zum Kolorieren.** Er wirkt besser in einer Farbe gestempelt — Silber oder Schwarz auf Creme. Hochformatig wie der Flamingo (`1098`), füllt eine schmale Karte gut aus.
+
+**„Alles Liebe" ist der wertvollste Teil des Sets** — ein Allzweck-Gruss, den du in dieser knappen Form noch nicht hattest.
+
+---
+
+### 1125 — Lesender Frosch mit Brille + „LESEZEICHEN" (SF) ⭐⭐⭐ neues Format
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 2 Stempel — 1 grosses Motiv + Textstreifen hochkant
+- **Inhalt Motiv:** **liegender Frosch mit runder Brille**, der in einem aufgeschlagenen **Buch** liest
+- **Inhalt Text:** „LESEZEICHEN" *(hochkant, Versalien)*
+- **Tags:** `kinder` `geburtstag` `danke` `allgemein` `abschluss` `erfolg` `freundschaft` `willkommen` `selbstgemacht` `motivstempel` `textstempel` `zum-kolorieren` `mentoring-tauglich`
+
+**Das ist kein Karten-Set — das ist ein Produkt-Set.** „LESEZEICHEN" hochkant plus ein lesendes Tier: dafür gemacht, dass du **Lesezeichen bastelst**. Damit bedient es als erstes Set im Bestand ein anderes Format.
+
+**Und es löst das Problem „kleines Mitbringsel":** schnell gemacht, günstig im Material, **auf Vorrat produzierbar** — zehn Stück in einer Batch-Session — und immer passend. Als Beileger zu einer Karte, als Geschenk für Lehrerinnen, zum Schulabschluss, für Leseratten.
+
+**Bau-Ideen:**
+- Streifen aus Digipapier plotten, Frosch drauf, „LESEZEICHEN" hochkant an den Rand, oben lochen, Band durch
+- Mit dem **Alphabet (`1020`)** den Namen drauf — **hier stören die 5 mm nicht**, hier passen sie
+- Als **Klassengeschenk** — für jedes Kind eines, jedes anders koloriert
+- Der Brillen-Frosch ist ein **Lern-Motiv** — auf Karten mit „Du schaffst das!" (`1088`) für Prüfungen
+
+---
+
+### 1126 — Schlafende Figur mit Zipfelmütze + „LaLeLu…" (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 2 Stempel
+- **Inhalt Motiv:** **rundliche schlafende Figur** mit gestreifter **Zipfelmütze mit Bommel**, geschlossene Augen, angelegte Flügel/Arme — wirkt wie ein Vogel oder eine Eule im Schlafanzug ❓ *(Tierart bitte prüfen)*
+- **Inhalt Text:** „LaLeLu…" *(hochkant)*
+- **Tags:** `geburt` `taufe` `kinder` `allgemein` `willkommen` `trost` `gute-besserung` `winter` `weihnachten` `motivstempel` `textstempel` `zum-kolorieren`
+
+**„LaLeLu" ist das Schlaflied — damit ist das Set eindeutig auf Babys gemünzt.** Und es passt genau zu deinem neuen Schutzengel-Vers (`1105`): „ein Engel … Nacht für Nacht bewacht" und „LaLeLu" sagen dasselbe.
+
+**Zusammen mit dem schlafenden Elefanten (`1087`) hast du drei Bausteine für eine Gute-Nacht-Geburtskarte:** Motiv, Schlaflied-Zeile und Vers.
+
+**Deine Geburts- und Taufkarten-Ecke ist damit gut bestückt:**
+
+| Rolle | Sets |
+|---|---|
+| **Sprüche** | `1022` · Schutzengel-Vers `1105` · „LaLeLu" `1126` |
+| **Motive** | Schutzengel `1059` · schlafender Elefant `1087` · Elefanten `1042`/`1047`/`1072` · Giraffen `1046` · Teddy `1072` · Vögelchen `1093`/`1102` |
+
+Weil die Figur schläft, taugt sie auch für **Genesung** (mit `1087`, `1099`) — und als Winter-/Weihnachtsmotiv, wenn du die Mütze wie eine Wichtelmütze kolorierst.
+
+> **Bündel 13 läuft:** `1121`–`1126` erfasst, vier Plätze frei bis `1130`.
 
 ---
 
