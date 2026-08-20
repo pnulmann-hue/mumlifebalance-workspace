@@ -17,8 +17,11 @@ Läuft auch mobil (claude.ai/code): einfach `/storyidee` tippen.
    - Fallback (wenn Notion nicht erreichbar): `context/active-funnels.json` → live-Funnel + `manychat_keyword` je Profil.
 
 3. **Letzten veröffentlichten Beitrag je Profil holen** (der Anker der Story):
-   - Notion **Content-Management-DB** `2ae7078e-8b7e-811a-ad14-000ba5820c09` → jüngster Eintrag mit Status „veröffentlicht/gepostet" je Plattform (Instagram Mentoring / Instagram doTERRA).
-   - Falls kein Eintrag / keine Caption abrufbar: **Patricia kurz fragen** — „Was war dein letzter Post pro Profil? 1 Satz reicht." NICHT erfinden.
+   - Notion **Content-Management-DB**, data source `collection://2ae7078e-8b7e-811a-ad14-000ba5820c09`.
+   - ⚠️ **Richtig sortieren:** NICHT nach `date:Veröffentlichung:start` sortieren — geplante Posts liegen in der Zukunft und verfälschen die Reihenfolge. Nach `createdTime` (Post-Reihenfolge) DESC sortieren und auf `Status='Veröffentlicht'` filtern.
+   - **Query:** `SELECT "Content-Titel", "Kurzbeschreibung", "Content-Typ", "Content-Plattformen", "Keyword" FROM "collection://2ae7078e-8b7e-811a-ad14-000ba5820c09" WHERE "Status"='Veröffentlicht' ORDER BY datetime(createdTime) DESC LIMIT 12`
+   - **Profil bestimmen** über die Relation `Content-Plattformen` (collection `2ae7078e-8b7e-8103-81e2-000b93a36fc7`: Instagram Mentoring vs. Instagram doTERRA) oder ersatzweise am Thema. Nimm je Profil den jüngsten Eintrag; als Anker dient `Content-Titel` + `Kurzbeschreibung`.
+   - Falls für ein Profil kein aktueller Post da ist: dieses Profil heute **weglassen** (nicht erfinden). Falls die Caption ganz fehlt: Patricia kurz fragen.
 
 4. **Passende Workbook-Idee wählen** aus `outputs/produkte/storyideen-networkerinnen/workbook.md` (8 Kapitel, 90 Ideen, je mit Impuls + Beispiel). Kriterien: passt zur **Tages-Säule** UND lässt sich sinnvoll an das **Thema des letzten Beitrags** anknüpfen. Nicht dieselbe Idee/dasselbe Kapitel wie an den Vortagen (Abwechslung).
 
