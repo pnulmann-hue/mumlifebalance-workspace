@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1119** |
+| Clearstamps | **1121** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -2306,7 +2306,60 @@ Dazu: **Kinder** (Schulanfang, mit einer Packung Stifte) und als **Signatur** au
 
 **Bildpartner:** Hamster (`1089`) · Katze (`1103`) · Igel mit Geschenk (`1078`) · Herzen (`1083`) · Kuh (`1101`) für Milchiges.
 
-> **Bündel 12 läuft:** `1111`–`1118` erfasst, zwei Plätze frei bis `1120`.
+---
+
+### 1119 — „Geniesse den Tag, die Momente von heute sind die Erinnerungen von morgen" (SF) ⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 Textstempel **im Zierrahmen**, vier Zeilen
+- **Inhalt Text:** „Genieße den Tag, die **Momente** von **HEUTE** sind die Erinnerungen von **MORGEN**"
+- **Tags:** `geburtstag` `allgemein` `jubilaeum` `freundschaft` `danke` `abschluss` `hochzeit` `neujahr` `ruhestand` `muttertag` `reise` `textstempel` `sofort-einsetzbar` `mentoring-tauglich`
+
+**Der erste Spruch im Bestand, der aufs Erinnern zielt — und damit dein Scrapbooking-Spruch.**
+
+Alle anderen Texte richten sich an einen Menschen zu einem Anlass. Dieser richtet sich an die **Zeit selbst**. Damit bedient er etwas, was du bisher nicht abdecken konntest:
+
+- **Fotoalben und Erinnerungsbücher** — als Titelseite oder Kapitelüberschrift
+- **Jahresrückblick** — Neujahr, Silvester
+- **Hochzeit** — Gastgeschenk oder Gästebuch
+- **Abschied** — Kollegin, Nachbarin, Schulwechsel
+- **Ruhestand** — Rückblick ohne Wehmut
+- **Reise** — Urlaubsalbum, Fotobuch
+
+**Er ist der ruhige Zwilling zu „Lieblingstage…" (`1110`)** — beide handeln von guten Tagen. `1110` feiert sie im Moment, `1119` schaut von morgen zurück. Bei einem runden Geburtstag ist `1119` der treffendere.
+
+**Bildpartner:** kahle Zweige (`1077`) für Vintage-Anmutung · Schmetterlinge (`1074`/`1075`) · Blumenwiese (`1074`) · Farnzweige (`1083`) · Segelboot (`1071`).
+
+---
+
+### 1120 — „Du hast jetzt genau das richtige Alter. Jetzt musst du nur noch herausfinden, wofür!" ⭐⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** noch offen — **keine** SF-Verpackung · **Format:** 1 grosser Textstempel + 1 Kleinstelement
+- **Inhalt Text:** „**DU HAST JETZT** GENAU DAS RICHTIGE **ALTER**. JETZT MUSST DU NUR NOCH HERAUSFINDEN, **WOFÜR!**"
+- **Layout:** siebenzeilig, Versalien. „ALTER" in **Negativ-Kästchen**, „DU HAST JETZT" und „WOFÜR!" fett — der Stempel bringt sein Layout selbst mit
+- **Aufdruck:** „WO1D10816"
+- **Tags:** `geburtstag` `jubilaeum` `allgemein` `freundschaft` `maenner` `feier` `ruhestand` `aufmunterung` `abschluss` `textstempel` `sofort-einsetzbar` `mentoring-tauglich`
+
+**Dein zweiter Alters-Spruch — und er funktioniert genau umgekehrt zum ersten:**
+
+| Spruch | Richtung |
+|---|---|
+| „Der Lack ist zwar ab…" `1113` | blickt **zurück** — was war, ist noch gut |
+| „Du hast jetzt genau das richtige Alter…" `1120` | blickt **nach vorn** — es kommt noch was |
+
+**Und das macht ihn zur besten Karte für jemanden zwischen 30 und 50, der gerade nicht weiss, wohin.** Der Satz nimmt den Druck raus, ohne zu vertrösten — und er ist lustig, ohne auf Kosten der Empfängerin zu gehen. Das ist die schwierigste Balance bei Geburtstagssprüchen, und dieser trifft sie.
+
+**Drei Zugänge zum runden Geburtstag hast du jetzt:**
+1. **Schildkröte** (`1095`) — als Bild, liebevoll
+2. **„Der Lack ist ab…"** (`1113`) — Rückblick mit Kompliment
+3. **„Das richtige Alter…"** (`1120`) — Ausblick mit Augenzwinkern
+
+**Geht bei Männern und Frauen gleich gut** — einer der wenigen im Bestand.
+
+**Ein Stempel, eine ganze Karte** — wie `1097`. Deko sehr sparsam, das Kleinstelement aus dem Set reicht.
+
+---
+
+## 🎉 Bündel 12 ist voll — Zwischenstand
+
+`1001`–`1120` erfasst, **120 Sets, keine Lücke, kein Duplikat.** Nächste freie Nummer: **`1121`** (Bündel 13).
 
 ---
 
