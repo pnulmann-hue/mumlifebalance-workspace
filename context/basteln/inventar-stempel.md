@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1075** |
+| Clearstamps | **1085** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -132,7 +132,7 @@ Pflichtfelder pro Eintrag:
 | **Kleeblatt** | `1062` | Glück | Prüfung · Neujahr · Umzug · neuer Job · Hochzeit · Geburt · Geburtstag · Abschied · jeder Neuanfang |
 | **Fliegenpilz** | `1051` `1061` | Glückspilz | Neujahr · Prüfung · Geburtstag · Gratulation |
 | **Marienkäfer** | `1051` | Glücksbringer | Neujahr · Prüfung · Geburt · Kinderkarten |
-| **Schmetterling** | `1074` (Haupt-Set) · `1038` `1051` `1055` `1061` | Verwandlung | Neuanfang · Abschluss · **Trauer** · Genesung · Mentoring (Entwicklung) |
+| **Schmetterling** | `1074` `1075` (Haupt-Sets) · `1038` `1051` `1055` `1061` `1077` · Spruch in `1084` | Verwandlung | Neuanfang · Abschluss · **Trauer** · Genesung · Mentoring (Entwicklung) |
 | **Pusteblume** | `1038` `1055` | Loslassen, Wünsche | Trauer · Abschied · Geburtstag (Wünsche) · Neuanfang |
 | **Herbstblatt** | `1060` | Loslassen | Trauer · Abschied · Ruhestand |
 | **Biene** | `1051` | Fleiss | Erfolg · Prüfung · Danke (fleissige Helferin) |
@@ -147,12 +147,21 @@ Pflichtfelder pro Eintrag:
 | **Tulpe / Schneeglöckchen / Kirschblüte** | `1027` `1037` `1039` `1044` | Frühling, Anfang | Ostern · Muttertag · **Neuanfang** · Genesung |
 | **Sektflasche** | `1013` | Erfolg feiern | Silvester · Prüfung · Beförderung · Hochzeit · Jubiläum |
 | **Segelboot** | `1071` | Aufbruch, Kurs setzen | Neuanfang · Umzug · neuer Job · Abschluss · Ruhestand · Abschied |
+| **Vogelhäuschen** | `1077` | Zuhause, Nest | **Einzug · neues Heim** · Hochzeit · erstes gemeinsames Zuhause |
+| **Kahle Zweige** | `1077` | Kargheit, Stille | **Winter · Trauer · Herbst** — mit Vogel und Blüten kippt es in Frühling und Neuanfang |
+| **Marienkäfer** | `1079` `1051` | Glücksbringer | **Prüfung · Neujahr · Umzug · Hochzeit · Geburt · neuer Job** |
+| **Nashorn mit Blumen** | `1080` | grosses Tier, zarte Geste | Karte **ohne Anlass** · für Empfängerinnen, denen Herzchen zu viel sind · **für Männer** |
+| **Goldesel / Münzen** | `1081` | Geld, Humor | **Geldgeschenk** bei Hochzeit · Konfirmation · runder Geburtstag · Lehrabschluss · Ruhestand |
+| **Spirale mit Pfeil** | `1083` | Richtung, Entscheidung | Neuanfang · neuer Job · Umzug — passt zur Weg-Familie `1002`/`1022`/`1056` |
+| **Auto mit Koffer** | `1072` | Aufbruch mit Gepäck | **Ruhestand · Auswandern** · Umzug · grosse Reise · Sabbatical |
+| **Mädchen mit Blumenstrauss** | `1072` | Kind schenkt Blumen | **Muttertag** · Grossmutter · Danke · Erzieherin, Lehrerin |
 | **Seestern** | `1071` | Regeneration | Genesung · Neuanfang nach schwerer Zeit |
 | **Schildkröte** | `1071` | Langsamkeit, langes Leben | Geduld · Jubiläum · Genesung |
 | **Muschel** | `1071` | Schutz, Verborgenes | Geburt · Erinnerung |
+| **Entchen im Schwimmreif** | `1071` | erste Schritte, sich über Wasser halten | Baby · Kleinkind · Schwimmabzeichen · humorvolle Aufmunterung — passt zur Entenfamilie `1045` |
 | **Teddy** | `1072` `1042` | Trost, Geborgenheit | **Krankheit und Trauer auch bei Erwachsenen** · nicht nur Kinder |
 | **Igel** | `1072` `1051` | Schutz, Rückzug | Genesung · Trost |
-| **Flamingo / Monstera / Faultier / Fische / Strand** | `1066` `1032` `1065` `1064` `1071` | Sommer, Leichtigkeit | Ferien · Urlaubsgrüsse · Sommergeburtstag · Einladung · junge Empfängerinnen — **als Stil-Familie zusammen einsetzen** |
+| **Flamingo / Monstera / Faultier / Fische / Strand** | `1066` `1032` `1065` `1064` `1071` `1082` | Sommer, Leichtigkeit | Ferien · Urlaubsgrüsse · Sommergeburtstag · Einladung · junge Empfängerinnen — **als Stil-Familie zusammen einsetzen** |
 
 **Faustregel für mich:** Bei jeder Anlass-Suche nicht nur nach dem Tag filtern, sondern auch fragen — **welches Bild trägt diese Botschaft?** Ein Kleeblatt auf einer Prüfungskarte sagt mehr als ein Blumenstrauss.
 
@@ -1218,7 +1227,8 @@ Für Frauen, die zu streng mit sich sind — deine Zielgruppe.
 
 ### 1071 — Meer & Strand („EASY") ⭐ Sommer-Sortiment komplett
 - **Typ:** Clearstamp-Set · **Format:** ca. 12 Stempel, Outlines
-- **Inhalt Motive:** grosser Hummer/Krebs · Fisch mit Brille · Schildkröte mit Ball · Robbe oder Bär mit Ball · kleine Schildkröte · **Muschel** (fein gepunktet) · zwei **Seesterne** · **Segelboot** · zwei bis drei **Seegras-Streifen** · Sandflecken
+- **Inhalt Motive:** grosser Hummer/Krebs · Fisch mit Brille · Schildkröte mit Ball · **Entchen im Schwimmreif** · kleine Schildkröte · **Muschel** (fein gepunktet) · zwei **Seesterne** · **Segelboot** · zwei bis drei **Seegras-Streifen** · Sandflecken
+- *(Korrektur 19.8.: das Entchen hatte ich als „Robbe oder Bär mit Ball" gelesen.)*
 - **Inhalt Text:** EASY
 - **Tags:** `sommer` `kinder` `geburtstag` `feier` `freundschaft` `allgemein` `motivstempel` `zum-kolorieren` `randakzent`
 
@@ -1244,16 +1254,20 @@ Für Ferien- und Urlaubsgrüsse, Sommergeburtstage, Poolparty-Einladungen, Reise
 | **Seestern** | Regeneration *(Seesterne lassen Arme nachwachsen)* | **Genesung** · Neuanfang nach schwerer Zeit |
 | **Schildkröte** | Langsamkeit, langes Leben | Geduld · **Jubiläum** · Genesung · passt zum Faultier (`1065`) |
 | **Muschel** | Schutz, Verborgenes | Geburt · Erinnerung · Souvenir-Karten |
+| **Entchen im Schwimmreif** | erste Schritte, sich über Wasser halten | **Baby und Kleinkind** · Schwimmabzeichen · Ferien · humorvolle Aufmunterung |
 | **„EASY"** | Leichtigkeit | zusammen mit „Die Leichtigkeit des Lebens…" (`1067`) |
 
 **Das Segelboot ist der wertvollste Fund darin** — Aufbruch-Motive hattest du sonst kaum. Mit „Wer ins kalte Wasser springt, taucht in ein Meer voller Möglichkeiten" (`1021`) ergibt das eine sehr stimmige Karte: Bild und Spruch teilen dasselbe Wasser-Bild.
 
+**Und das Entchen im Schwimmreif ist die zweite Entdeckung.** Es verbindet sich mit der **Entenfamilie aus `1045`** — dort die Ente mit Küken plus „Schön, dass es Dich gibt!" und „Ich mag Dich, so wie Du bist!". Zusammen ergibt das eine kleine Enten-Linie für Baby- und Kinderkarten. Das Entchen ist ausserdem das einzige Motiv im Bestand für **Schwimmabzeichen und erste Badeferien** — und mit „Wer ins kalte Wasser springt…" (`1021`) wird es augenzwinkernd: Mut haben, mit Schwimmhilfe.
+
 ---
 
-### 1072 — Kinder- & Babytiere mit Spielzeug
+### 1072 — Kindertiere + Auto mit Koffer & Mädchen mit Blumenstrauss ⭐⭐ zwei neue Anlässe
 - **Typ:** Clearstamp-Set · **Format:** ca. 10 Motivstempel, Outlines
-- **Inhalt Motive:** **Teddy mit Geschenkpaket** · grosser Teddy · Elefant mit Bär · **Faultier am Ast** · Igel · **Baby/Kind mit Blume** · Schmetterling mit Blüte · Sektflasche mit spritzenden Blüten · Spielzeugauto oder Schaukelpferd · kleine Blätter
-- **Tags:** `kinder` `geburt` `taufe` `geburtstag` `feier` `freundschaft` `allgemein` `motivstempel` `zum-kolorieren` `grossflächig`
+- **Inhalt Motive:** **Teddy mit Geschenkpaket** · grosser Teddy · Elefant mit Bär · **Faultier am Ast** · Igel · **Mädchen mit Blumenstrauss** · Schmetterling mit Blüte · **Sektflasche mit springendem Korken** · **Auto mit Koffer auf dem Dach** · kleine Blätter
+- *(Korrekturen 19.8.: „Spielzeugauto oder Schaukelpferd" ist ein **Auto mit Koffer**, „Baby mit Blume" ist ein **Mädchen mit Blumenstrauss**.)*
+- **Tags:** `kinder` `geburt` `taufe` `geburtstag` `feier` `trost` `gute-besserung` `muttertag` `danke` `umzug` `reise` `ruhestand` `neuanfang` `abschluss` `freundschaft` `allgemein` `motivstempel` `zum-kolorieren` `grossflächig`
 
 **Vierter Kinder-Block** nach `1042`, `1046` und `1051`. Heute Morgen hattest du **kein einziges** kindgerechtes Motiv — jetzt ist das einer deiner stärksten Bereiche.
 
@@ -1265,13 +1279,18 @@ Der **Teddy mit Geschenkpaket** ist neu und dein bestes Kinder-Geburtstagsmotiv.
 
 | Motiv | Bedeutet | Passt damit auch bei |
 |---|---|---|
+| **Auto mit Koffer** | Aufbruch mit Gepäck | **Ruhestand · Auswandern** · Umzug · grosse Reise · Sabbatical · Wegzug |
+| **Mädchen mit Blumenstrauss** | Kind schenkt Blumen | **Muttertag** · Grossmutter · Danke · Erzieherin und Lehrerin |
 | **Teddy** | Trost, Geborgenheit | **Krankheit** · Trauer · schwere Zeiten — auch bei **Erwachsenen**. Ein Teddy sagt „ich denk an dich", ohne kindisch zu wirken |
 | **Igel** | Schutz, Rückzug | Genesung · Trost · „sich einigeln dürfen" |
-| **Schaukelpferd / Spielzeugauto** | Kindheit, Nostalgie | Geburt · erste Geburtstage · **Erinnerungsalben** |
 | **Faultier** | Langsamkeit ohne schlechtes Gewissen | Entspannung · Genesung (wie `1065`) |
 | **Schmetterling** | Verwandlung | Neuanfang · Genesung (siehe `1074`) |
 
-**Der Teddy ist der unterschätzte Stempel.** Mit „Fühl Dich gedrückt aus der Ferne" (`1021`) oder „Gute Besserung!" (`1031`) wird daraus eine Karte für eine erwachsene Freundin, der es schlecht geht — kein Kindermotiv, sondern ein Trostbild.
+**Das Auto mit Koffer schliesst zwei Anlässe, die du gar nicht hattest: Ruhestand und Auswandern.** Und es bildet mit dem **Segelboot aus `1071`** eine Aufbruch-Familie — Boot heisst Kurs setzen, Auto heisst losfahren mit Gepäck. Kombiniert mit „Glück bedeutet deinen eigenen Weg zu gehen" (`1002`), „Sonne im Gesicht, Wind im Rücken" (`1021`) oder dem Loslassen-Paar (`1035`/`1060`).
+
+**Das Mädchen mit Blumenstrauss ist dein stärkstes Muttertagsmotiv** — ein Kind, das Blumen schenkt, sagt mehr als jeder Blumenstrauss allein. Auch für Grossmütter, Erzieherinnen und Lehrerinnen.
+
+**Und der Teddy ist der unterschätzte Stempel.** Mit „Fühl Dich gedrückt aus der Ferne" (`1021`) oder „Gute Besserung!" (`1031`) wird daraus eine Karte für eine erwachsene Freundin, der es schlecht geht — kein Kindermotiv, sondern ein Trostbild.
 
 ---
 
@@ -1292,14 +1311,220 @@ Drei Formen bedeuten Abwechslung in einer Serie. Und die Banner kombinieren mit 
 
 ### 1074 — Schmetterlinge & Blüten-Ranken
 - **Typ:** Clearstamp-Set · **Format:** ca. 7 Motivstempel, feine Strichzeichnung
-- **Inhalt Motive:** **grosser Schmetterling** mit Punkt- und Fleckenmuster (Statement, Vintage-Anmutung) · drei kleinere Schmetterlinge in verschiedenen Flügelhaltungen · Blüten mit Ranken (untere Hälfte) · Schnörkel-Ranken · kleine Punkte
+- **Inhalt Motive:** **grosser Schmetterling** mit Punkt- und Fleckenmuster (Statement, Vintage-Anmutung) · drei kleinere Schmetterlinge in verschiedenen Flügelhaltungen · **Blumenwiese** mit Blüten, Blättern und Ranken (untere Hälfte) · Schnörkel-Ranken · kleine Punkte
 - **Tags:** `allgemein` `sommer` `fruehling` `neuanfang` `trost` `abschluss` `muttertag` `danke` `freundschaft` `geburtstag` `motivstempel` `zum-kolorieren` `mentoring-tauglich`
 
 **Erstes dediziertes Schmetterlings-Set** — einzelne gab es in `1038`, `1051`, `1055`, `1061`, hier sind sie das Hauptmotiv.
 
 **Und die Symbolik macht es vielseitig: Schmetterling = Verwandlung.** Damit passt das Set auf **Neuanfang** (neuer Job, Umzug, Trennung), **Trauer** (mit `1023`/`1033`/`1053`), **Genesung**, **Abschluss** — und aufs **Mentoring**, zusammen mit dem Loslassen-Paar (`1035`/`1060`) und der Pusteblume (`1055`). Das ist deine Entwicklungs-Bildsprache.
 
-Die Blüten-Ranken unten funktionieren als **Bodenlinie**, wie die Gräser aus `1061` und das Seegras aus `1071`.
+Die **Blumenwiese** unten ist eine fertige **Bodenlinie** — anders als die Gräser aus `1061` und das Seegras aus `1071` bringt sie schon Blüten mit. Damit steht eine Sommerkarte in zwei Stempeln: Wiese unten, grosser Schmetterling darüber.
+
+---
+
+### 1075 — Schmetterlinge, 6 Stück (realistisch + ornamental)
+- **Typ:** Clearstamp-Set · **Format:** 6 Schmetterlinge in **zwei Stilrichtungen**
+- **Inhalt Motive:**
+  - *realistisch:* zwei grosse Schmetterlinge mit detailliertem Flügelmuster · ein mittlerer (Schwalbenschwanz-Typ)
+  - *ornamental/Zentangle:* drei Schmetterlinge mit Schnörkel- und Spiralmustern
+- **Tags:** `allgemein` `sommer` `fruehling` `neuanfang` `trost` `abschluss` `muttertag` `danke` `freundschaft` `geburtstag` `gute-besserung` `motivstempel` `zum-kolorieren` `mentoring-tauglich`
+
+**Zweites Schmetterlings-Set nach `1074` — zusammen rund zehn.** Damit ist Schmetterling **nach Blumen dein zweithäufigstes Motiv**.
+
+**Der Unterschied:** `1074` hat ein grosses Statement-Motiv plus Blumenwiese, hier sind es **sechs gleichwertige** in zwei Stilen. Die ornamentalen passen zu den Doodle-Sets (`1038`) und zum Ornament-Hintergrund (`1011`), die realistischen zu den botanischen (`1030`, `1055`, `1074`). **Nicht mischen** — die Stile beissen sich.
+
+Sechs Stück erlauben eine **Schmetterlings-Wolke** über die ganze Karte, ohne dass sich eines wiederholt. Symbolik wie bei `1074`: Verwandlung, also Neuanfang, Trauer, Genesung, Mentoring.
+
+---
+
+### 1076 — Wichtel, zweites Set (mit Bordüre)
+- **Typ:** Clearstamp-Set · **Format:** ca. 3–4 Stempel — 2 Wichtel + 1 lange Bordüre
+- **Inhalt Motive:** zwei **Wichtel** mit Zipfelmütze und Bart (unterschiedliche Grössen) · **lange schmale Bordüre** mit Wichtel-/Ziermuster
+- **Tags:** `weihnachten` `advent` `winter` `kinder` `motivstempel` `zum-kolorieren` `randakzent`
+
+**Die lange Bordüre ist das Besondere** — Rand-Elemente in Weihnachtsoptik hattest du keine. Sie läuft über die ganze Kartenbreite und rahmt jedes Weihnachtsmotiv: Wort-Baum (`1017`), Hirsch (`1006`), Tannenzweig (`1049`), Ilex (`1057`). Auch für Geschenkanhänger und die geplotteten Verpackungen.
+
+**Dein Weihnachts-Figurenbestand ist damit vierfach besetzt:**
+
+| Set | Figuren |
+|---|---|
+| `1041` | grosse Wichtel + Kugeln |
+| `1052` | kleine Weihnachtsmänner und Schneemänner |
+| `1059` | Schutzengel |
+| `1076` | Wichtel + Bordüre |
+
+Mit `1041` zusammen hast du **vier Wichtel in verschiedenen Grössen** — genug für eine Wichtel-Familie auf einer Karte.
+
+---
+
+### 1077 — Zweige, Gartenzaun & Vogelhäuschen ⭐⭐ erstes Garten-Set
+- **Typ:** Clearstamp-Set · **Format:** ca. 8 Stempel, gross und feinlinig
+- **Inhalt Motive:** zwei grosse **kahle Zweige/Äste** (einer waagrecht hängend, einer aufrecht-ausladend) · **Vogelhäuschen auf Pfahl** mit Vogel auf dem Dach · zwei bis drei **Gartenzaun-Segmente** · drei bis vier kleine Schmetterlinge · kleiner sitzender Vogel
+- **Tags:** `garten` `fruehling` `sommer` `winter` `trost` `umzug` `willkommen` `neuanfang` `allgemein` `freundschaft` `motivstempel` `hintergrund` `randakzent` `zum-kolorieren`
+
+**Drei von acht Stempeln sind Bau-Teile, keine Motive** — und das macht das Set wertvoller als eine reine Motiv-Sammlung.
+
+**Der Gartenzaun ist eine Bodenlinie** wie die Gräser (`1061`) und das Seegras (`1071`), aber die einzige mit *gebauter* Struktur. Er trägt eine ganze Szene: Zaun unten, dahinter Blumen (`1030`, `1055`, `1074`), drüber die Schmetterlinge.
+
+**Symbolik — die kahlen Zweige sind der vielseitigste Stempel des Sets:**
+
+| Umgebung | Wird daraus |
+|---|---|
+| Schnee, Sterne (`1016`) | **Winter**, still |
+| mit `1023`/`1033`/`1053` | **Trauer** — karg und würdig, ohne Kitsch |
+| warme Töne | **Herbst** |
+| Vogel + Blüten drüber | **Frühling, Neuanfang** |
+| ganz blass gestempelt | Vintage-Hintergrund unter allem |
+
+Ein Stempel, fünf Stimmungen.
+
+**Das Vogelhäuschen ist ein Zuhause-Symbol** — damit ist **Einzug und neues Heim** endlich als Bild abgedeckt, bisher ging das nur über Sprüche. Auch für „Nestbau": Hochzeit, erstes gemeinsames Zuhause.
+
+Stilistisch fein-linig — passt zu den botanischen Sets, **nicht** zu den Kinder-Outlines.
+
+---
+
+### 1078 — Igel mit Luftballons, Geschenken & Blumenstrauss („Have a Wonderful Day")
+- **Typ:** Clearstamp-Set · **Format:** ca. 10–12 kleine, fein detaillierte Stempel
+- **Inhalt Motive:** **Igel in Szenen** — mit Luftballons · mit Geschenken · mit Blumenstrauss · Igel-Paar · einzelner Igel
+- **Inhalt Zubehör:** grosser **Luftballon** mit Schnur · zwei kleine Ballons · **Blumen-Bordüre** · kleiner Blumentopf · Beerenzweiglein
+- **Inhalt Text:** „Have a Wonderful Day" *(englisch)*
+- **Tags:** `geburtstag` `kinder` `danke` `muttertag` `freundschaft` `gute-besserung` `trost` `allgemein` `motivstempel` `zum-kolorieren` `randakzent` `kleinformat`
+
+**Dritter Igel-Bestand nach `1051` und `1072` — aber der einzige, wo die Igel etwas TUN.** Ballons, Geschenk, Blumenstrauss: fertige Anlass-Szenen statt bloss Tiermotive. Damit ist es dein **komplettestes Kinder-Geburtstagsset** — Motiv und Anlass stecken schon im Stempel, du brauchst nur noch einen Spruch.
+
+**Der grosse Luftballon geht auch solo** — mit dem Alphabet (`1020`) oder im Banner (`1073`) schreibst du das Alter hinein.
+
+> ⚠️ **Der Textstempel ist englisch.** Für Schweizer Empfängerinnen besser einen deutschen Spruch aus `1002`/`1021`/`1031` setzen und „Have a Wonderful Day" klein an den Rand — oder weglassen.
+
+Symbolik: **Igel = Schutz und Rückzug**, taugt wie bei `1051`/`1072` auch für **Genesung und Trost**. Der Igel mit Blumenstrauss ist nach dem Mädchen aus `1072` dein zweitstärkstes **Muttertags- und Danke-Motiv**.
+
+---
+
+### 1079 — Glückskäfer — „Glück ist, wenn man es teilt"
+- **Typ:** Clearstamp-Set · **Format:** Marienkäfer-Motive + Textstempel
+- **Inhalt Motive:** **Glückskäfer / Marienkäfer**
+- **Inhalt Text:** „Glück ist, wenn man es teilt"
+- **Tags:** `allgemein` `freundschaft` `danke` `geburtstag` `erfolg` `neujahr` `neuanfang` `willkommen` `garten` `sommer` `aufmunterung` `motivstempel` `textstempel` `zum-kolorieren`
+- *(Detail-Erfassung offen — Anzahl und Grössen beim nächsten Foto nachtragen)*
+
+**Zweiter Glückskäfer nach `1051` — aber hier mit dem passenden Spruch im selben Set.**
+
+**Symbolik: Marienkäfer = Glücksbringer**, und der Spruch macht es explizit. Damit ist alles abgedeckt, wo Glück gewünscht wird: **Prüfung und Erfolg** · **Neujahr** · Umzug · Hochzeit · Geburt · neuer Job · Aufmunterung. Gehört zur Glücksbringer-Familie mit Kleeblatt (`1062`) und Fliegenpilz (`1051`) — die drei zusammen ergeben eine ganze Glücks-Karte.
+
+**„Glück ist, wenn man es teilt" ist einer deiner wenigen Sprüche mit Beziehungs-Botschaft** — er sagt nicht nur was zum Anlass, sondern etwas über euch beide. Darum auch stark als **Danke-Karte** und als Beileger zu einem Geschenk, das man gemeinsam nutzt.
+
+---
+
+### 1080 — Nashorn mit Blumenstrauss — „weil ich dich mag" ⭐⭐ die Karte ohne Anlass
+- **Typ:** Clearstamp-Set · **Format:** kleine Nashorn-Motive + Textstempel
+- **Inhalt Motive:** **kleine Nashörner mit Blumensträussen**
+- **Inhalt Text:** „weil ich dich mag"
+- **Tags:** `freundschaft` `danke` `muttertag` `allgemein` `kinder` `geburtstag` `trost` `aufmunterung` `entschuldigung` `maenner` `motivstempel` `textstempel` `zum-kolorieren`
+- *(Detail-Erfassung offen — Anzahl und Haltungen beim nächsten Foto nachtragen)*
+
+**„Weil ich dich mag" ist der Spruch für die Karte ohne Anlass — und genau die fehlte dir.** Alles andere im Bestand hängt an einem Datum: Geburtstag, Weihnachten, Genesung. Dieser hier braucht nichts als den Menschen.
+
+**Das macht es zum stärksten Vorrats-Set.** Eine Handvoll auf Vorrat gebastelt und du hast immer eine Karte da, wenn dir jemand einfällt — ohne Anlass, ohne Vorlauf. Genau die Lücke, die dich sonst unvorbereitet erwischt.
+
+**Das Nashorn ist bewusst unerwartet** — ein grosses, dickhäutiges Tier, das Blumen bringt. Diese Diskrepanz ist der ganze Witz und macht die Karte warm statt süsslich. Passt darum für Empfängerinnen, denen Herzchen zu viel wären, und **für Männer** besser als jedes andere Tiermotiv im Bestand.
+
+Dazu: **Entschuldigung** („sorry — und ich mag dich trotzdem") und stille **Aufmunterung**.
+
+> **Bündel 8 ist damit voll** — `1071`–`1080`.
+
+---
+
+### 1081 — Goldesel — das Geldgeschenk-Set ⭐⭐⭐ grosse Lücke geschlossen
+- **Typ:** Clearstamp-Set · **Format:** ca. 8 Stempel — 1 grosses Motiv + 1 kleines + Münzen + **4 Textstempel**
+- **Inhalt Motive:** **grosser Goldesel** (Comic, grinsend, scheidet Münzen aus) · **kleiner Goldesel** mit Münzhäufchen · grosser **Münzhaufen** · kleine **Münzreihe**
+- **Inhalt Texte:**
+  - „Shoppen ist so einfach, mit dem richtigen Haustier!"
+  - „Wenn schon kein Millionär… dann wünsche ich Dir halt einen Goldesel!"
+  - „Ein Goldesel ist glaub leichter in der Haltung, als ein Millionär."
+  - „Wo ist mein Geldscheißer?" *(hochkant, schmaler Streifen)*
+- **Tags:** `geburtstag` `gutschein` `feier` `maenner` `hochzeit` `konfirmation` `abschluss` `jubilaeum` `ruhestand` `allgemein` `motivstempel` `textstempel` `zum-kolorieren` `grossflächig`
+
+**Das ist dein Geldgeschenk-Set — und die Lücke war gross.** Geld verschenken ist der häufigste Fall überhaupt: Hochzeit, Konfirmation, Firmung, runder Geburtstag, Lehrabschluss, Ruhestand. Dafür hattest du bisher **nichts**. Jetzt hast du **vier Sprüche** — genug, dass es sich innerhalb einer Familie nicht wiederholt.
+
+> ⚠️ **Das ist der derbste Ton im ganzen Bestand.** „Geldscheißer" geht bei Kollegen, in der Familie und bei Männern — **nicht** bei der Schwiegermutter oder einer förmlichen Hochzeit. Die anderen drei sind harmloser, „Shoppen ist so einfach…" ist der charmanteste.
+
+**Bau-Tipps:**
+- Der Esel ist gross und will **koloriert** werden — Copics.
+- Die Münzen einzeln in **Gold embossen**, dafür sind sie gemacht.
+- Geldschein als Fächer oder Rolle **hinter** den Esel setzen, so dass es aussieht, als käme er hinten raus.
+- Oder: Münzreihe als Bodenlinie unter dem Esel, das echte Geld in einem Sichtfenster darunter.
+
+**Erstes Set in Bündel 9** — `1081`–`1090`.
+
+---
+
+### 1082 — Unterwasserwelt — Fische & Wasserpflanzen
+- **Typ:** Clearstamp-Set · **Format:** ca. 8–9 Stempel — 2 Fische + 6–7 Pflanzen
+- **Inhalt Motive:** **grosser Comic-Fisch** mit grossen Augen und Schmollmund · **kleiner Fisch** (gleiche Machart)
+- **Inhalt Pflanzen (6–7 verschiedene):** gebogene Federalge · aufrechte Federalge · Korallen-Büschel · welliges Seegras (breit) · kleine Muschel-Alge · schmale Alge · Tang-Büschel
+- **Tags:** `sommer` `kinder` `geburtstag` `allgemein` `freundschaft` `einladung` `motivstempel` `zum-kolorieren` `randakzent` `grossflächig`
+
+**Das Besondere sind nicht die Fische, sondern die sieben Pflanzen.** Bei `1064` und `1071` hattest du Fische und ein bisschen Seegras — hier kommt eine **komplette Unterwasser-Kulisse** dazu, in der jede Pflanze anders aussieht. Damit baust du eine ganze Szene, ohne dass sich etwas wiederholt: Pflanzen als Bodenlinie und seitliche Rahmen, Fische mittendrin.
+
+**Die Fische hier sind Comic mit grossen Augen** — andere Stilrichtung als die feineren aus `1064`. **Nicht mischen** — aber die Pflanzen passen zu beiden.
+
+**Dritter Wasser-Bestand:**
+
+| Set | Bereich |
+|---|---|
+| `1064` | Fische + „Kurz abtauchen und entspannen" |
+| `1071` | Strand — Muschel, Seestern, Segelboot |
+| `1082` | **Unterwasser-Kulisse** |
+
+**Die Pflanzen können auch trocken:** in Grün gestempelt sind das Farne und Gräser — damit taugen sie für Garten- und Frühlingskarten genauso.
+
+---
+
+### 1083 — Blattzweige, Blüten, Spiral-Kreise & Herzen
+- **Typ:** Clearstamp-Set · **Format:** ca. 10 Deko-Elemente in **vier verschiedenen Techniken**
+- **Inhalt Motive:**
+  - **zwei Farn-/Blattzweige** (ein grosser, ein kleiner) — flächig-schwarz, sehr grafisch
+  - **drei Spiral-Kreise** in verschiedenen Grössen — skizzenhaft-gemalt, einer mit **Pfeil**
+  - **zwei gemusterte Herzen** — Zentangle-Stil, mit Punkten und Bögen gefüllt
+  - **drei Blüten in Punktier-Technik** (klein / mittel / gross)
+- **Tags:** `allgemein` `fruehling` `sommer` `garten` `hochzeit` `freundschaft` `danke` `trost` `muttertag` `motivstempel` `randakzent` `grossflächig` `zum-kolorieren`
+
+**Ein reines Deko-Set — kein Anlass steckt drin, dafür passt es zu fast allem.** Vier völlig verschiedene Techniken in einer Hülle, und genau das macht es flexibel.
+
+**Die Farnzweige sind flächig-schwarz und sehr grafisch** — das Gegenteil der feinlinigen Botanik aus `1030`/`1055`/`1077`. Sie setzen einen harten Akzent, gut als Ecke oder als Rahmen links und rechts. Passen zu den Monstera-Blättern (`1032`).
+
+**Die Spiral-Kreise sind der ungewöhnlichste Teil** — gemalt-skizzenhaft, fast wie mit dem Pinsel. Der mit dem Pfeil ist ein **Richtungs-Symbol**: passt zur Weg-Familie (`1002` eigener Weg, `1022` erster Schritt, `1056` gemeinsamer Weg) und zu allem mit Neuanfang und Entscheidung. Auch als Untergrund unter Text.
+
+**Die Punktier-Blüten gehören zur Stipple-Familie** mit `1019`, `1060` und `1062` — dieselbe Machart, also stilsicher kombinierbar.
+
+**Die Herzen sind gemustert, nicht romantisch-glatt** — dadurch taugen sie für Hochzeit genauso wie für Freundschaft, Danke und Trost, ohne kitschig zu werden.
+
+---
+
+### 1084 — Acht Sprüche: Liebe & Lebensweisheiten ⭐⭐⭐ dein Hochzeits-Set
+- **Typ:** Clearstamp-Set · **Format:** 8 Textstempel, gemischte Kalligrafie-Schriften
+- **Inhalt Texte — Lebensweisheiten:**
+  1. „Das Glück ist wie ein Schmetterling — wenn wir es jagen, vermögen wir es nicht zu fangen"
+  2. „Die schönsten Dinge des Lebens kann man nicht sehen, man fühlt sie mit dem Herzen"
+  3. „Wende Dein Gesicht der Sonne zu, so fallen die Schatten hinter Dich!"
+  4. „Lache — und die Welt lacht mit Dir"
+- **Inhalt Texte — Liebe:**
+  5. „Liebe besteht nicht darin, dass man einander anschaut, sondern dass man gemeinsam in dieselbe Richtung blickt"
+  6. „Liebe ist ein Stoff, den die Natur gewebt und die Phantasie bestickt hat"
+  7. „Liebe ist mehr als ein Wort"
+  8. „Das Glück der Liebe besteht darin, Ruhe in einem anderen Herzen zu finden"
+- **Tags:** `hochzeit` `jubilaeum` `allgemein` `freundschaft` `trost` `aufmunterung` `danke` `muttertag` `abschluss` `neuanfang` `textstempel` `sofort-einsetzbar`
+
+**Das ist dein Hochzeits-Set — und der Bereich war dünn.** Vier Liebes-Sprüche in einer Hülle, alle ruhig und erwachsen, keiner kitschig. Nummer 5 (Saint-Exupéry) ist der Klassiker für Hochzeit und Hochzeitstag.
+
+**Nummer 1 ist der Brückenspruch zu deinen Schmetterlings-Sets** (`1074`, `1075`, `1077`) — Bild und Text teilen dasselbe Motiv. Solche Paare hast du selten. Genauso Nummer 2 und 8 mit den Herzen aus `1083`.
+
+**Nummer 3 und 4 sind Aufmunterungs-Sprüche.** „Wende Dein Gesicht der Sonne zu" passt bei schweren Zeiten, Genesung und Neuanfang, ohne zu bagatellisieren — dieselbe Ecke wie `1021`, `1045`, `1067`.
+
+> **Bündel 9 läuft** — `1081`–`1084` erfasst, sechs Plätze frei bis `1090`.
+
+> **Optik:** gemischte Kalligrafie mit hervorgehobenen Schlüsselwörtern. Die Sprüche tragen die Karte allein — wenig Deko dazu, sonst wird es unruhig. **Ideal: Spruch mittig, ein einzelnes Element aus `1083` in die Ecke.**
 
 ---
 
