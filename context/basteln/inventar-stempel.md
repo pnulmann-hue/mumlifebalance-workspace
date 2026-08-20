@@ -146,6 +146,12 @@ Pflichtfelder pro Eintrag:
 | **Engel** | `1059` | Schutz | Taufe · Geburt · **Trauer** · Krankheit · Schulanfang · Reise |
 | **Tulpe / Schneeglöckchen / Kirschblüte** | `1027` `1037` `1039` `1044` | Frühling, Anfang | Ostern · Muttertag · **Neuanfang** · Genesung |
 | **Sektflasche** | `1013` | Erfolg feiern | Silvester · Prüfung · Beförderung · Hochzeit · Jubiläum |
+| **Segelboot** | `1071` | Aufbruch, Kurs setzen | Neuanfang · Umzug · neuer Job · Abschluss · Ruhestand · Abschied |
+| **Seestern** | `1071` | Regeneration | Genesung · Neuanfang nach schwerer Zeit |
+| **Schildkröte** | `1071` | Langsamkeit, langes Leben | Geduld · Jubiläum · Genesung |
+| **Muschel** | `1071` | Schutz, Verborgenes | Geburt · Erinnerung |
+| **Teddy** | `1072` `1042` | Trost, Geborgenheit | **Krankheit und Trauer auch bei Erwachsenen** · nicht nur Kinder |
+| **Igel** | `1072` `1051` | Schutz, Rückzug | Genesung · Trost |
 | **Flamingo / Monstera / Faultier / Fische / Strand** | `1066` `1032` `1065` `1064` `1071` | Sommer, Leichtigkeit | Ferien · Urlaubsgrüsse · Sommergeburtstag · Einladung · junge Empfängerinnen — **als Stil-Familie zusammen einsetzen** |
 
 **Faustregel für mich:** Bei jeder Anlass-Suche nicht nur nach dem Tag filtern, sondern auch fragen — **welches Bild trägt diese Botschaft?** Ein Kleeblatt auf einer Prüfungskarte sagt mehr als ein Blumenstrauss.
@@ -1230,6 +1236,18 @@ Für Ferien- und Urlaubsgrüsse, Sommergeburtstage, Poolparty-Einladungen, Reise
 
 **Die Seegras-Streifen sind Rand-Elemente** — wie die Gräser aus `1061`. Als Bodenlinie unten, darüber die Fische aus `1064` und die Tiere von hier. Muschel und Seesterne sind fein gepunktet, stilistisch verwandt mit der Punktier-Technik aus `1019`, `1060` und `1062`.
 
+**Symbolik — dieses Set kann mehr als Sommer:**
+
+| Motiv | Bedeutet | Passt damit auch bei |
+|---|---|---|
+| **Segelboot** | Aufbruch, Kurs setzen | **Neuanfang** · Umzug · neuer Job · Schulabschluss · Ruhestand · Abschied |
+| **Seestern** | Regeneration *(Seesterne lassen Arme nachwachsen)* | **Genesung** · Neuanfang nach schwerer Zeit |
+| **Schildkröte** | Langsamkeit, langes Leben | Geduld · **Jubiläum** · Genesung · passt zum Faultier (`1065`) |
+| **Muschel** | Schutz, Verborgenes | Geburt · Erinnerung · Souvenir-Karten |
+| **„EASY"** | Leichtigkeit | zusammen mit „Die Leichtigkeit des Lebens…" (`1067`) |
+
+**Das Segelboot ist der wertvollste Fund darin** — Aufbruch-Motive hattest du sonst kaum. Mit „Wer ins kalte Wasser springt, taucht in ein Meer voller Möglichkeiten" (`1021`) ergibt das eine sehr stimmige Karte: Bild und Spruch teilen dasselbe Wasser-Bild.
+
 ---
 
 ### 1072 — Kinder- & Babytiere mit Spielzeug
@@ -1242,6 +1260,18 @@ Für Ferien- und Urlaubsgrüsse, Sommergeburtstage, Poolparty-Einladungen, Reise
 **Zwei Doppelungen, die nützen:** Das **Faultier** doppelt `1065` (mehr Auswahl fürs Entspannungs-Thema), die **Sektflasche** doppelt `1013` (zwei Varianten für Feier-Karten).
 
 Der **Teddy mit Geschenkpaket** ist neu und dein bestes Kinder-Geburtstagsmotiv. Das **Baby mit Blume** ergänzt die Geburtskarten-Ecke: Sprüche aus `1022`, Elefanten aus `1042`/`1047`, Giraffen aus `1046`.
+
+**Symbolik — und das hebt das Set aus der Kinder-Ecke heraus:**
+
+| Motiv | Bedeutet | Passt damit auch bei |
+|---|---|---|
+| **Teddy** | Trost, Geborgenheit | **Krankheit** · Trauer · schwere Zeiten — auch bei **Erwachsenen**. Ein Teddy sagt „ich denk an dich", ohne kindisch zu wirken |
+| **Igel** | Schutz, Rückzug | Genesung · Trost · „sich einigeln dürfen" |
+| **Schaukelpferd / Spielzeugauto** | Kindheit, Nostalgie | Geburt · erste Geburtstage · **Erinnerungsalben** |
+| **Faultier** | Langsamkeit ohne schlechtes Gewissen | Entspannung · Genesung (wie `1065`) |
+| **Schmetterling** | Verwandlung | Neuanfang · Genesung (siehe `1074`) |
+
+**Der Teddy ist der unterschätzte Stempel.** Mit „Fühl Dich gedrückt aus der Ferne" (`1021`) oder „Gute Besserung!" (`1031`) wird daraus eine Karte für eine erwachsene Freundin, der es schlecht geht — kein Kindermotiv, sondern ein Trostbild.
 
 ---
 
