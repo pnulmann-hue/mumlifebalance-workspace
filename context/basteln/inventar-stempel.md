@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1071** |
+| Clearstamps | **1073** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -146,7 +146,7 @@ Pflichtfelder pro Eintrag:
 | **Engel** | `1059` | Schutz | Taufe · Geburt · **Trauer** · Krankheit · Schulanfang · Reise |
 | **Tulpe / Schneeglöckchen / Kirschblüte** | `1027` `1037` `1039` `1044` | Frühling, Anfang | Ostern · Muttertag · **Neuanfang** · Genesung |
 | **Sektflasche** | `1013` | Erfolg feiern | Silvester · Prüfung · Beförderung · Hochzeit · Jubiläum |
-| **Flamingo / Monstera / Faultier / Fische** | `1066` `1032` `1065` `1064` | Sommer, Leichtigkeit | Ferien · Urlaubsgrüsse · Sommergeburtstag · Einladung · junge Empfängerinnen — **als Stil-Familie zusammen einsetzen** |
+| **Flamingo / Monstera / Faultier / Fische / Strand** | `1066` `1032` `1065` `1064` `1071` | Sommer, Leichtigkeit | Ferien · Urlaubsgrüsse · Sommergeburtstag · Einladung · junge Empfängerinnen — **als Stil-Familie zusammen einsetzen** |
 
 **Faustregel für mich:** Bei jeder Anlass-Suche nicht nur nach dem Tag filtern, sondern auch fragen — **welches Bild trägt diese Botschaft?** Ein Kleeblatt auf einer Prüfungskarte sagt mehr als ein Blumenstrauss.
 
@@ -1207,6 +1207,41 @@ Für Frauen, die zu streng mit sich sind — deine Zielgruppe.
 **Erstes Vogel-Set** — und im Silhouetten-Stil, den du sonst nur zweimal hast (Hirsch `1006`, Eltern-Kind `1048`). Keine Kolorierung nötig; einfarbig in Petrol oder Dunkelblau sehr elegant.
 
 **Und endlich ein Frühlings-Wort:** `1039` und `1037` liefern Frühlingsmotive, aber „Frühlingserwachen" ist der erste passende **Text**. Die kleinen fliegenden Vögel taugen ausserdem für **Trauerkarten** — Vogelflug als Bild für Abschied, mit `1023`/`1033`/`1053`.
+
+---
+
+### 1071 — Meer & Strand („EASY") ⭐ Sommer-Sortiment komplett
+- **Typ:** Clearstamp-Set · **Format:** ca. 12 Stempel, Outlines
+- **Inhalt Motive:** grosser Hummer/Krebs · Fisch mit Brille · Schildkröte mit Ball · Robbe oder Bär mit Ball · kleine Schildkröte · **Muschel** (fein gepunktet) · zwei **Seesterne** · **Segelboot** · zwei bis drei **Seegras-Streifen** · Sandflecken
+- **Inhalt Text:** EASY
+- **Tags:** `sommer` `kinder` `geburtstag` `feier` `freundschaft` `allgemein` `motivstempel` `zum-kolorieren` `randakzent`
+
+**Damit ist dein Sommer-Sortiment komplett** — Dschungel, Wasser und jetzt Strand:
+
+| Set | Bereich |
+|---|---|
+| `1032` | Monstera und Farn — Dschungel |
+| `1066` | Flamingos |
+| `1065` | Faultier |
+| `1064` | Fische + „Kurz abtauchen und entspannen" |
+| `1071` | **Muschel, Seestern, Segelboot, Seegras — Strand** |
+
+Für Ferien- und Urlaubsgrüsse, Sommergeburtstage, Poolparty-Einladungen, Reisekarten.
+
+**Die Seegras-Streifen sind Rand-Werkzeuge** — wie die Gräser aus `1061`. Als Bodenlinie unten, darüber die Fische aus `1064` und die Tiere von hier. Muschel und Seesterne sind fein gepunktet, stilistisch verwandt mit der Punktier-Technik aus `1019`, `1060` und `1062`.
+
+---
+
+### 1072 — Kinder- & Babytiere mit Spielzeug
+- **Typ:** Clearstamp-Set · **Format:** ca. 10 Motivstempel, Outlines
+- **Inhalt Motive:** **Teddy mit Geschenkpaket** · grosser Teddy · Elefant mit Bär · **Faultier am Ast** · Igel · **Baby/Kind mit Blume** · Schmetterling mit Blüte · Sektflasche mit spritzenden Blüten · Spielzeugauto oder Schaukelpferd · kleine Blätter
+- **Tags:** `kinder` `geburt` `taufe` `geburtstag` `feier` `freundschaft` `allgemein` `motivstempel` `zum-kolorieren` `grossflächig`
+
+**Vierter Kinder-Block** nach `1042`, `1046` und `1051`. Heute Morgen hattest du **kein einziges** kindgerechtes Motiv — jetzt ist das einer deiner stärksten Bereiche.
+
+**Zwei Doppelungen, die nützen:** Das **Faultier** doppelt `1065` (mehr Auswahl fürs Entspannungs-Thema), die **Sektflasche** doppelt `1013` (zwei Varianten für Feier-Karten).
+
+Der **Teddy mit Geschenkpaket** ist neu und dein bestes Kinder-Geburtstagsmotiv. Das **Baby mit Blume** ergänzt die Geburtskarten-Ecke: Sprüche aus `1022`, Elefanten aus `1042`/`1047`, Giraffen aus `1046`.
 
 ---
 
