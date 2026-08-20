@@ -36,7 +36,7 @@ Vierstellig, nur Zahlen — **die erste Stelle sagt, um welche Sorte Material es
 | **3000–3999** | Stanzen | Magnetbox / Mappe |
 | **4000–4999** | Schablonen / Stencils | flach |
 | **5000–5999** | Embossing-Folder | |
-| **6000–6999** | Punchboards & Werkzeuge | |
+| **6000–6999** | Punchboards & Werkzeuge *(echte Geräte — Stempel gehören nie hierher, auch wenn sie „werkzeugartig" wirken)* | |
 | **7000–7999** | Farben & Stempelkissen | Farbkasten |
 | 8000–9999 | frei — für Sorten, die noch dazukommen | |
 
@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1073** |
+| Clearstamps | **1075** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -132,7 +132,7 @@ Pflichtfelder pro Eintrag:
 | **Kleeblatt** | `1062` | Glück | Prüfung · Neujahr · Umzug · neuer Job · Hochzeit · Geburt · Geburtstag · Abschied · jeder Neuanfang |
 | **Fliegenpilz** | `1051` `1061` | Glückspilz | Neujahr · Prüfung · Geburtstag · Gratulation |
 | **Marienkäfer** | `1051` | Glücksbringer | Neujahr · Prüfung · Geburt · Kinderkarten |
-| **Schmetterling** | `1038` `1051` `1055` `1061` | Verwandlung | Neuanfang · Abschluss · **Trauer** · Genesung |
+| **Schmetterling** | `1074` (Haupt-Set) · `1038` `1051` `1055` `1061` | Verwandlung | Neuanfang · Abschluss · **Trauer** · Genesung · Mentoring (Entwicklung) |
 | **Pusteblume** | `1038` `1055` | Loslassen, Wünsche | Trauer · Abschied · Geburtstag (Wünsche) · Neuanfang |
 | **Herbstblatt** | `1060` | Loslassen | Trauer · Abschied · Ruhestand |
 | **Biene** | `1051` | Fleiss | Erfolg · Prüfung · Danke (fleissige Helferin) |
@@ -276,7 +276,7 @@ Damit meine Suche zuverlässig trifft, nutze ich immer dieselben Begriffe. Nicht
 - **Hersteller:** Scrapbook Forever · **Artikel-Nr.:** nicht abgelesen
 - **Inhalt Motive:** Schachbrett fein · Gitter/Netz · Punkte-Raster · Netz grob · Schachbrett grob — alle kreisrund
 - **Tags:** `allgemein` `hintergrund` `sofort-einsetzbar` `grossflächig`
-- **Kein Anlass-Set, ein Werkzeug-Set.** Die Kreise gehen *hinter* alles andere:
+- **Kein Anlass-Set — ein Untergrund-Set.** Die Kreise gehen *hinter* alles andere:
   - Vollmond hinter der Hirsch-Silhouette (1006)
   - Kreis hinter einer Blüte (1008)
   - Siegel-Optik unter einem Spruch
@@ -751,7 +751,7 @@ Und das Beste daran: der Spruch **urteilt nicht und tröstet nicht billig**. Er 
 
 **Zweites Frühlings-Set nach `1027` (Tulpen)** — damit ist die Ostern-Lücke **motivisch geschlossen**. Kirschblüten sind das Frühlingsmotiv schlechthin: Ostern, Muttertag, Frühlingsgrüsse.
 
-Die **zwei langen Zweige** sind Rand- und Rahmen-Werkzeuge: als Bordüre über die Kartenbreite oder als Rahmen um einen Spruch. Die einzelnen Blüten streust du dazu. Fein gezeichnet, lebt von zarter Kolorierung — Rosa-Töne mit Copic. Mit „FRÖHLICHE Grüsse" aus `1025` steht die Osterkarte, mit einem Sakura-Zweig auch eine Hochzeitskarte.
+Die **zwei langen Zweige** sind Rand- und Rahmen-Elemente: als Bordüre über die Kartenbreite oder als Rahmen um einen Spruch. Die einzelnen Blüten streust du dazu. Fein gezeichnet, lebt von zarter Kolorierung — Rosa-Töne mit Copic. Mit „FRÖHLICHE Grüsse" aus `1025` steht die Osterkarte, mit einem Sakura-Zweig auch eine Hochzeitskarte.
 
 ---
 
@@ -1091,7 +1091,7 @@ Je nach Situation wählst du den tröstenden oder den ermutigenden. **Erstes Her
 - **Typ:** Clearstamp-Set · **Format:** ca. 10 Motivstempel, sehr feine Strichzeichnung
 - **Inhalt Motive:** **Elfe mit Flügeln und Zauberstab** (Sternenschweif) · zwei bis drei Fliegenpilze · zwei filigrane **Gräser-Streifen** · Schmetterling · Blüten-Zweig mit Punktmuster · Schnörkel-Ranken · Sterne-Streuelemente
 - **Tags:** `kinder` `geburtstag` `garten` `taufe` `geburt` `sommer` `freundschaft` `allgemein` `motivstempel` `zum-kolorieren` `randakzent`
-- **Erstes Fantasy-Set — die Elfe ist ein Alleinstellungsmotiv.** Für Kindergeburtstage, Taufe, Zahnfee-Kärtchen. Deutlich **filigraner** als die Doodle-Sets (`1038`/`1051`) — zart statt süss. Die **Gräser-Streifen** sind Rand-Werkzeuge: als Bodenlinie unten, dazu Pilze und Schmetterling. Mit den Garten-Tieren aus `1051` entsteht eine komplette Wiesenlandschaft.
+- **Erstes Fantasy-Set — die Elfe ist ein Alleinstellungsmotiv.** Für Kindergeburtstage, Taufe, Zahnfee-Kärtchen. Deutlich **filigraner** als die Doodle-Sets (`1038`/`1051`) — zart statt süss. Die **Gräser-Streifen** sind Rand-Elemente: als Bodenlinie unten, dazu Pilze und Schmetterling. Mit den Garten-Tieren aus `1051` entsteht eine komplette Wiesenlandschaft.
 
 ---
 
@@ -1228,7 +1228,7 @@ Für Frauen, die zu streng mit sich sind — deine Zielgruppe.
 
 Für Ferien- und Urlaubsgrüsse, Sommergeburtstage, Poolparty-Einladungen, Reisekarten.
 
-**Die Seegras-Streifen sind Rand-Werkzeuge** — wie die Gräser aus `1061`. Als Bodenlinie unten, darüber die Fische aus `1064` und die Tiere von hier. Muschel und Seesterne sind fein gepunktet, stilistisch verwandt mit der Punktier-Technik aus `1019`, `1060` und `1062`.
+**Die Seegras-Streifen sind Rand-Elemente** — wie die Gräser aus `1061`. Als Bodenlinie unten, darüber die Fische aus `1064` und die Tiere von hier. Muschel und Seesterne sind fein gepunktet, stilistisch verwandt mit der Punktier-Technik aus `1019`, `1060` und `1062`.
 
 ---
 
@@ -1242,6 +1242,34 @@ Für Ferien- und Urlaubsgrüsse, Sommergeburtstage, Poolparty-Einladungen, Reise
 **Zwei Doppelungen, die nützen:** Das **Faultier** doppelt `1065` (mehr Auswahl fürs Entspannungs-Thema), die **Sektflasche** doppelt `1013` (zwei Varianten für Feier-Karten).
 
 Der **Teddy mit Geschenkpaket** ist neu und dein bestes Kinder-Geburtstagsmotiv. Das **Baby mit Blume** ergänzt die Geburtskarten-Ecke: Sprüche aus `1022`, Elefanten aus `1042`/`1047`, Giraffen aus `1046`.
+
+---
+
+### 1073 — Banner / Spruchbänder zum Beschriften (SF) ⭐⭐
+- **Typ:** Clearstamp-Set · **Format:** 3 Bannerformen, Outline, **innen leer**
+- **Inhalt Motive:** geschwungenes Band · Band mit V-Ausschnitt · Band mit gerollten Enden
+- **Tags:** `geburtstag` `feier` `willkommen` `erfolg` `einladung` `gutschein` `jubilaeum` `weihnachten` `allgemein` `motivstempel` `sofort-einsetzbar` `randakzent`
+
+**Banner, in die du etwas hineinschreibst oder -stempelst.** Die Fläche bleibt leer, du füllst sie: handschriftlich, mit dem Alphabet aus `1020` oder mit einem Kurz-Textstempel.
+
+**Und damit löst sich nebenbei das 5mm-Problem.** Ein Name in 5mm wirkt auf einer leeren Kartenfront verloren — **im Banner wirkt dieselbe Grösse absichtlich und gerahmt.** Personalisierung geht damit wieder, ohne den Plotter anzuwerfen.
+
+**Weitere Einsätze:** Datum eintragen · Namen auf Platzkarten · „GUTSCHEIN" oder „EINLADUNG" (`1018`) ins Band setzen · Zahlen für Rundgeburtstage.
+
+Drei Formen bedeuten Abwechslung in einer Serie. Und die Banner kombinieren mit **allem**: über die Blüte, unter den Wichtel, quer über den Wort-Baum (`1017`).
+
+---
+
+### 1074 — Schmetterlinge & Blüten-Ranken
+- **Typ:** Clearstamp-Set · **Format:** ca. 7 Motivstempel, feine Strichzeichnung
+- **Inhalt Motive:** **grosser Schmetterling** mit Punkt- und Fleckenmuster (Statement, Vintage-Anmutung) · drei kleinere Schmetterlinge in verschiedenen Flügelhaltungen · Blüten mit Ranken (untere Hälfte) · Schnörkel-Ranken · kleine Punkte
+- **Tags:** `allgemein` `sommer` `fruehling` `neuanfang` `trost` `abschluss` `muttertag` `danke` `freundschaft` `geburtstag` `motivstempel` `zum-kolorieren` `mentoring-tauglich`
+
+**Erstes dediziertes Schmetterlings-Set** — einzelne gab es in `1038`, `1051`, `1055`, `1061`, hier sind sie das Hauptmotiv.
+
+**Und die Symbolik macht es vielseitig: Schmetterling = Verwandlung.** Damit passt das Set auf **Neuanfang** (neuer Job, Umzug, Trennung), **Trauer** (mit `1023`/`1033`/`1053`), **Genesung**, **Abschluss** — und aufs **Mentoring**, zusammen mit dem Loslassen-Paar (`1035`/`1060`) und der Pusteblume (`1055`). Das ist deine Entwicklungs-Bildsprache.
+
+Die Blüten-Ranken unten funktionieren als **Bodenlinie**, wie die Gräser aus `1061` und das Seegras aus `1071`.
 
 ---
 
