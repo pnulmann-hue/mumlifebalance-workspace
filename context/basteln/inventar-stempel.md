@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1088** |
+| Clearstamps | **1091** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -151,6 +151,8 @@ Pflichtfelder pro Eintrag:
 | **Kahle Zweige** | `1077` | Kargheit, Stille | **Winter · Trauer · Herbst** — mit Vogel und Blüten kippt es in Frühling und Neuanfang |
 | **Marienkäfer** | `1079` `1051` | Glücksbringer | **Prüfung · Neujahr · Umzug · Hochzeit · Geburt · neuer Job** |
 | **Nashorn mit Blumen** | `1080` | grosses Tier, zarte Geste | Karte **ohne Anlass** · für Empfängerinnen, denen Herzchen zu viel sind · **für Männer** |
+| **Ameise mit Last** | `1088` | Kraft trotz kleiner Grösse | **Prüfung · Lehrabschluss · neuer Job · Genesung · Schulanfang** · Mütter, die zu viel tragen |
+| **Hamster mit vollen Backen** | `1089` | Vorrat, Naschen | **Selbstgemachtes aus der Küche** · Herbst · Erntedank · Kindergeburtstag |
 | **Schlafender Elefant** | `1087` | Ruhe ohne schlechtes Gewissen | **Erschöpfung · Genesung · Mama-Karten** · Ruhestand · Babykarte |
 | **Goldesel / Münzen** | `1081` `1086` | Geld, Humor | **Geldgeschenk** bei Hochzeit · Konfirmation · runder Geburtstag · Lehrabschluss · Ruhestand |
 | **Spirale mit Pfeil** | `1083` | Richtung, Entscheidung | Neuanfang · neuer Job · Umzug — passt zur Weg-Familie `1002`/`1022`/`1056` |
@@ -1573,7 +1575,7 @@ Dazu: **Entschuldigung** („sorry — und ich mag dich trotzdem") und stille **
 - **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever · **Format:** 2–3 Stempel
 - **Inhalt Motive:** **grosser Comic-Esel** (grinsend, Schleife am Ohr, aufrecht) · **kleinerer Esel** · evtl. drittes Kleinteil
 - **Tags:** `geburtstag` `feier` `allgemein` `kinder` `maenner` `freundschaft` `aufmunterung` `motivstempel` `zum-kolorieren` `grossflächig`
-- ⚠️ **Artikel-Nr. offen** — Set ist noch original verpackt, Nummer steht auf der SF-Hülle
+- ℹ️ **Keine Artikelnummer** — aus einem SF-**Advents- oder Sommerkalender**, nicht einzeln im Shop erhältlich
 
 **Gleiche Machart wie der Goldesel aus `1081`** — grinsender Comic-Esel, dieselbe Strichführung, sehr wahrscheinlich dieselbe SF-Serie. Damit hast du eine **Esel-Familie**: hier zwei ohne Text, dort einer mit vier Geld-Sprüchen.
 
@@ -1592,7 +1594,7 @@ Gross und zum Kolorieren gemacht — Copics. Ein grosser Esel plus ein kleiner e
   - „In der Ruhe liegt die Kraft."
   - „Die Welt gehört dem, der sie geniesst."
 - **Tags:** `trost` `aufmunterung` `gute-besserung` `geburt` `kinder` `allgemein` `ruhestand` `danke` `freundschaft` `muttertag` `geburtstag` `motivstempel` `textstempel` `zum-kolorieren` `grossflächig` `mentoring-tauglich`
-- ⚠️ **Artikel-Nr. offen** — Set ist noch original verpackt, Nummer steht auf der SF-Hülle
+- ℹ️ **Keine Artikelnummer** — aus einem SF-**Advents- oder Sommerkalender**, nicht einzeln im Shop erhältlich
 
 **„In der Ruhe liegt die Kraft" ist der Spruch für erschöpfte Mütter — und dein einziger, der genau das trifft.** Bild und Text passen perfekt: ein Elefant, der einfach schläft, ohne schlechtes Gewissen. Das ist keine Aufforderung zum Durchhalten, sondern die **Erlaubnis zur Pause**.
 
@@ -1613,7 +1615,76 @@ Und der einzige daraus, der auch bei **Krankheit und Genesung** funktioniert, oh
 
 **Das „Zzzz" ist ein separater Stempel** — du setzt es dahin, wo Platz ist, statt es mitzudrucken.
 
-> **Bündel 9:** `1081`–`1087` erfasst, drei Plätze frei bis `1090`.
+---
+
+### 1088 — Ameisen mit Früchten — „Du schaffst das!" (SF) ⭐⭐⭐ deine Motivations-Karte
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** ca. 5 Stempel
+- **Inhalt Motive:** **Ameise mit Beere auf dem Buckel** (gepunktet) · **Ameise mit Frucht** · **grosser Apfel** mit Stiel und Blatt · **kleine Ameise**, die den Apfel schiebt
+- **Inhalt Text:** „Du schaffst das!"
+- **Tags:** `erfolg` `aufmunterung` `allgemein` `kinder` `abschluss` `neuanfang` `gute-besserung` `trost` `freundschaft` `sommer` `garten` `motivstempel` `textstempel` `zum-kolorieren` `grossflächig` `mentoring-tauglich`
+
+**Wieder ein Bild-Text-Paar — und das stärkste im ganzen Bestand.** Eine Ameise, die ein Vielfaches ihres Gewichts schleppt, darunter „Du schaffst das!". **Das Bild beweist den Satz, statt ihn zu behaupten.** Genau deshalb wirkt es.
+
+**Symbolik: Ameise = Kraft trotz kleiner Grösse, Ausdauer.** Passt überall dort, wo jemand etwas Grosses vor sich hat:
+
+| Anlass | Warum |
+|---|---|
+| **Prüfung, Lehrabschluss, Matura** | der klassische Fall |
+| **Neuer Job, Selbständigkeit, Neuanfang** | die Last ist gross, die Person klein |
+| **Schwere Zeiten, Genesung** | ermutigt, ohne zu bagatellisieren |
+| **Schulanfang** | für Kinder |
+| **Mütter, die zu viel tragen** | das Bild sagt es, ohne dass du es schreibst |
+
+**Damit ist eine Lücke geschlossen:** Aufmunterung ging bisher nur über Sprüche (`1021`, `1045`, `1067`, `1084`), ein passendes **Bild** dazu fehlte.
+
+**Der grosse Apfel ist auch solo brauchbar** — Herbst, Garten, Erntedank, Lehrerinnen-Karte. Mit den Gartenzaun-Elementen aus `1077` wird eine Szene daraus.
+
+---
+
+### 1089 — Hamster mit dicken Backen (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 2 Stempel
+- **Inhalt Motive:** **grosser Hamster** mit prall gefüllten Backen, aufrecht sitzend · **kleiner Hamster** in gleicher Haltung
+- **Tags:** `kinder` `geburtstag` `allgemein` `freundschaft` `herbst` `kueche` `selbstgemacht` `aufmunterung` `motivstempel` `zum-kolorieren` `grossflächig`
+
+**Der Hamster gehört zu `1090` wie der Deckel zum Topf.** Dicke Backen plus „für Schleckermäulchen" und „super lecker" — fertige Karte, und du hast beide Teile am selben Tag erfasst.
+
+**Symbolik: Hamster = hamstern, Vorrat, Naschen.** Damit für alles Selbstgemachte aus der Küche (mit `1085` und `1090`), für **Herbst und Erntedank**, für Kindergeburtstage und augenzwinkernd für jemanden, der gern nascht.
+
+**Zwei Grössen sind praktisch:** gross auf die Karte, klein auf den Anhänger oder die Guetzli-Tüte. Dasselbe Motiv, zwei Formate, ein Auftritt.
+
+Gleicher runder Comic-Strich wie die Esel (`1081`, `1086`) — die drei sind untereinander kombinierbar.
+
+---
+
+### 1090 — Nasch-Sprüche: „super lecker" & Co. (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 5 Stempel
+- **Inhalt Texte:**
+  - „für Schleckermäulchen"
+  - „für Naschkatzen"
+  - „für Dich gemacht" *(schräg gestellt)*
+  - **„super lecker"** *(gross und fett — der Blickfang)*
+- **Inhalt Motiv:** kleines **Herz** (Outline)
+- **Tags:** `kueche` `selbstgemacht` `gutschein` `danke` `freundschaft` `allgemein` `kinder` `weihnachten` `advent` `muttertag` `textstempel` `sofort-einsetzbar` `randakzent` `doterra-tauglich`
+
+**Die Ergänzung zu `1085` — zusammen hast du jetzt 24 Küchen-Sprüche.** Während `1085` breit aufgestellt ist (Backen, Rezepte, Einladung, Trost), ist dieses Set **spitz auf eine Sache**: etwas Selbstgemachtes zum Naschen verschenken.
+
+**„super lecker" ist gross und fett** — der Blickfang-Stempel, der eine ganze Guetzli-Tüte allein trägt. Die anderen drei sind kleiner und gehen als Beschriftung auf Anhänger und Etiketten.
+
+**„für Dich gemacht" ist der vielseitigste** — passt auf ALLES Selbstgemachte, nicht nur Essbares: Konfi, Sirup, Seife, Badesalz, Kräutersalz.
+
+**Damit steht dein Verpackungs-Trio:**
+
+| Teil | Set |
+|---|---|
+| Motiv | Hamster `1089` |
+| Text | Nasch-Spruch `1090` |
+| Verpackung | Gift-Bag-Punchboard oder Plotter |
+
+Die Weihnachts-Guetzli-Verpackung ist damit durchgeplant.
+
+> **doTERRA-Brücke:** für Gebäck und Konfi mit kulinarischen Ölen (Zitrone, Pfefferminz, Wild Orange). Etikett bleibt am Original-Fläschchen, **keine Wirkaussagen auf die Karte.**
+
+> ## 🎉 Bündel 9 ist voll — `1081`–`1090`. Nächste freie Nummer: **`1091`** (Bündel 10).
 
 ---
 
