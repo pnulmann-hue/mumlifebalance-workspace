@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1121** |
+| Clearstamps | **1124** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -2360,6 +2360,66 @@ Alle anderen Texte richten sich an einen Menschen zu einem Anlass. Dieser richte
 ## 🎉 Bündel 12 ist voll — Zwischenstand
 
 `1001`–`1120` erfasst, **120 Sets, keine Lücke, kein Duplikat.** Nächste freie Nummer: **`1121`** (Bündel 13).
+
+---
+
+### 1121 — Glückskind mit Kleeblatt — Silhouette, gross & mini (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 2 Stempel — **Silhouetten**, flächig gefüllt
+- **Inhalt Motive:** **Kind in Silhouette** mit Zipfelmütze, das ein **vierblättriges Kleeblatt** hochhält — gross · dasselbe als **Mini**
+- **Tags:** `neujahr` `erfolg` `neuanfang` `umzug` `hochzeit` `geburt` `abschluss` `kinder` `freundschaft` `willkommen` `aufmunterung` `allgemein` `motivstempel` `grossflächig` `randakzent`
+
+**Das dritte Teil deiner Glücksbringer-Ecke — und das einzige mit einer Figur:**
+
+| Teil | Set | Was es zeigt |
+|---|---|---|
+| Kleeblatt | `1062` | das Symbol |
+| Kleeblatt-Vers | `1117` | den Text |
+| **Glückskind** | `1121` | **jemanden, der es bringt** |
+
+Damit zeigst du die Geste, statt sie nur zu benennen. Mit dem Vers aus `1117` („ich hob es auf … ich schenk es Dir") ist das eine fertige Neujahrskarte: die Figur bringt das Blatt, der Vers erzählt warum.
+
+> ⚠️ **Silhouette, keine Outline.** Nicht kolorieren — in **einer** Farbe stempeln. Gehört mit den Vögel-Silhouetten (`1070`) und der Flamme (`1104`) in dieselbe Technik-Familie. **In Gold oder Kupfer embosst** am schönsten. Nicht mit filigranen Outline-Motiven mischen, die Stile beissen sich.
+
+---
+
+### 1122 — Smartphone-Rahmen (SF) — zum Beschriften ⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 grosser Stempel — Umriss mit **leerem Display**
+- **Inhalt Motiv:** **Smartphone** als Outline — Gehäuse, Hörmuschel, Home-Button, **grosses leeres Displayfeld**
+- **Tags:** `geburtstag` `allgemein` `freundschaft` `einladung` `kinder` `danke` `abschluss` `erfolg` `willkommen` `aufmunterung` `maenner` `motivstempel` `grossflächig` `sofort-einsetzbar`
+
+**Ein Rahmen-Stempel, kein Motiv — der Bruder vom Banner (`1073`).** Das leere Display ist die Fläche, die du füllst: handschriftlich, mit dem Alphabet (`1020`) oder mit einem kurzen Textstempel.
+
+**Der Witz liegt im Format:** Was du ins Display schreibst, liest sich automatisch wie eine **Nachricht**. „Wann sehen wir uns?", „Du fehlst", „Happy Birthday" — das wirkt wie ein Screenshot und ist sofort verständlich. Damit ist es die beste Karte für **Jugendliche, junge Erwachsene und alle, die dauernd am Handy sind**.
+
+**Weitere Ideen:**
+- **Einladung** — Datum und Ort ins Display, wie eine Chat-Nachricht
+- **„Ich hätte fast angerufen"** — für eine Freundin, bei der man sich lange nicht gemeldet hat (mit `1099`)
+- ein **Foto** ins Displayfeld statt Text
+
+**Einer der wenigen zeitgenössischen Motive in deinem Bestand** — fast alles andere ist Natur, Tier oder Vintage. Für jüngere Empfängerinnen ist genau das der Unterschied.
+
+---
+
+### 1123 — Osterkorb mit Eiern + einzelne Eier (SF) ⭐⭐⭐ erstes echtes Oster-Motiv
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 4 Stempel — 1 grosser Korb + 3 einzelne Eier
+- **Inhalt Motive:** **Osterkorb** mit Flechtmuster, grosser **Schleife** am Henkel, gefüllt mit gemusterten **Ostereiern** · **drei einzelne Eier** in verschiedenen Grössen
+- **Tags:** `ostern` `fruehling` `kinder` `allgemein` `danke` `freundschaft` `willkommen` `einladung` `selbstgemacht` `motivstempel` `zum-kolorieren` `grossflächig` `randakzent`
+
+**Dein erstes echtes Oster-Motiv — und die Lücke war grösser, als sie aussah.**
+
+Bisher lief Ostern bei dir **ausschliesslich über Frühlingsblumen**: Tulpen (`1027`, `1044`), Kirschblüten (`1037`), Frühlingsblumen (`1039`), Mohnblumen (`1043`), Vögel-Silhouetten (`1070`). Schön — aber kein einziges Motiv, das Ostern **eindeutig** sagt. Ein Korb mit Eiern sagt es.
+
+**Die drei einzelnen Eier sind der praktische Teil** — zum Streuen über die Karte, als Bodenlinie unter dem Korb, auf Anhängern und Verpackungen. Und jedes koloriert sich anders: mit einem Set bekommst du Variation.
+
+**Bau-Ideen:**
+- Korb gross auf die Front, Eier drumherum gestreut, Gras (`1061`) als Bodenlinie
+- Eier auf **geplottete Tüten** mit echten Schoggi-Eiern, dazu „Eine süße Kleinigkeit" (`1118`) oder „super lecker" (`1090`)
+- **Osterfrühstücks-Einladung** — Korb plus „Guten Appetit" (`1118`) oder „Einladung zum Essen" (`1085`)
+- Eier als **Tischkarten**, mit dem Alphabet (`1020`) beschriftet
+
+**Kirschblütenzweige (`1037`) hinter den Korb, Tulpen (`1044`) daneben** — daraus wird eine Szene.
+
+> **Bündel 13 läuft:** `1121`–`1123` erfasst, sieben Plätze frei bis `1130`.
 
 ---
 
