@@ -73,7 +73,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 
 | Block | Nächste frei |
 |---|---|
-| Clearstamps | **1101** |
+| Clearstamps | **1111** |
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
@@ -153,6 +153,10 @@ Pflichtfelder pro Eintrag:
 | **Kahle Zweige** | `1077` | Kargheit, Stille | **Winter · Trauer · Herbst** — mit Vogel und Blüten kippt es in Frühling und Neuanfang |
 | **Marienkäfer** | `1079` `1051` | Glücksbringer | **Prüfung · Neujahr · Umzug · Hochzeit · Geburt · neuer Job** |
 | **Nashorn mit Blumen** | `1080` | grosses Tier, zarte Geste | Karte **ohne Anlass** · für Empfängerinnen, denen Herzchen zu viel sind · **für Männer** |
+| **Kuh** | `1101` | Bauernhof, Heimat | **Appenzellerland-Karten** · Alpabzug · Umzug ins Dorf · Kinder |
+| **Vogel mit Blumen** | `1102` | Botschaft von weit her | **Danke · Muttertag · Entschuldigung** · Gruss an selten Gesehene |
+| **Katze** | `1103` | Zuhause, Gesellschaft | Katzenmenschen · Einzug · Trost — Paar mit „für Naschkatzen" `1090` |
+| **Flamme** | `1104` | Licht, Wärme, Hoffnung | **Geburtstagskerze · Advent · Kerze für Verstorbene · Neujahr · Lagerfeuer** |
 | **Sparschwein** | `1096` | Geld, harmlos | **Geldgeschenk für förmliche Anlässe** · Taufe · Kinder · Schwiegermutter |
 | **Flamingo** | `1098` `1066` | Leichtigkeit, Balance | Sommer · Poolparty · Ferien · jüngere Empfängerinnen |
 | **Koala** | `1099` | Festhalten, Ruhe | **„ich halte zu dir"** · Genesung · Trost |
@@ -1907,6 +1911,190 @@ Das war dein grösstes Problem: *„bin nie vorbereitet."* Diese drei brauchen k
 | **„Alles gut bei dir?"** | `1099` | **wenn du länger nichts gehört hast** |
 
 **Bastle von jedem drei Stück auf Vorrat** — dann hast du immer eine Karte da, egal was kommt.
+
+---
+
+### 1101 — Kuh (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 grosser Stempel
+- **Inhalt Motiv:** **Kuh** im Comic-Stil, mit kleinen Hörnern, Fleckenmuster und grossen Augen
+- **Tags:** `kinder` `geburtstag` `allgemein` `freundschaft` `garten` `sommer` `umzug` `willkommen` `kueche` `aufmunterung` `motivstempel` `zum-kolorieren` `grossflächig`
+
+**Das erste Bauernhof-Motiv — und für dich regional aufgeladen.** Im Appenzellerland auf 920 m ist eine Kuh kein exotisches Tier, sondern Alltag. Damit funktioniert sie für **Heimat- und Dorf-Karten**, wo ein Flamingo völlig danebenliegt: Alpabzug, Sennenfest, Umzug ins Dorf, „willkommen bei uns".
+
+**Zweite Richtung: Kinder** — Bauernhoftiere sind das Erste, was Kinder benennen. **Dritte Richtung: Küche** — mit „Mit Liebe gebacken" (`1085`) für selbstgemachte Milchprodukte oder Butterzopf.
+
+**Die Flecken sind zum Ausmalen gedacht**, nicht als Füllung mitgestempelt. Mit Copics wird das ein Hingucker.
+
+---
+
+### 1102 — Vögelchen mit Blumenstrauss (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 grosser Stempel
+- **Inhalt Motiv:** **rundliches Vögelchen**, das einen **Blumenstrauss** im Flügel hält, mit Schleife und grossen Augen
+- **Tags:** `danke` `muttertag` `freundschaft` `entschuldigung` `geburtstag` `allgemein` `trost` `gute-besserung` `fruehling` `hochzeit` `aufmunterung` `motivstempel` `zum-kolorieren` `grossflächig`
+
+**Drittes „Tier bringt Blumen"-Motiv — inzwischen dein zuverlässigstes Muster für Danke und Muttertag:**
+
+| Motiv | Set | Charakter |
+|---|---|---|
+| **Mädchen mit Blumenstrauss** | `1072` | das stärkste — ein Kind schenkt |
+| **Igel mit Blumenstrauss** | `1078` | klein und fein |
+| **Vögelchen mit Blumenstrauss** | `1102` | gross, trägt eine Karte allein |
+
+Drei Varianten heisst: dreimal Danke sagen in derselben Familie, ohne Wiederholung.
+
+**Symbolik: Vogel = Botschaft bringen.** Ein Vogel, der Blumen bringt, ist ein **Gruss von weit her** — passt besonders bei Menschen, die du selten siehst, und zu „Fühl Dich gedrückt aus der Ferne" (`1021`). Auch für **Entschuldigung**: Blumen bringen ist die universelle Wiedergutmachung, und ein Vogel macht es leicht statt schwer.
+
+Mit dem Vogelhäuschen (`1077`) wird eine Szene daraus — der Vogel bringt Blumen nach Hause.
+
+---
+
+### 1103 — Katze, sitzend (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 grosser Stempel
+- **Inhalt Motiv:** **sitzende Katze** von vorn, aufgestellte Ohren, Schwanz um die Pfoten gelegt, grosse runde Augen
+- **Tags:** `allgemein` `geburtstag` `kinder` `freundschaft` `danke` `trost` `gute-besserung` `kueche` `selbstgemacht` `willkommen` `umzug` `motivstempel` `zum-kolorieren` `grossflächig`
+
+**Die Katze und „für Naschkatzen" (`1090`) sind ein fertiges Paar** — Motiv und Spruch aus zwei verschiedenen Sets, die genau zusammengehören. Guetzli-Verpackung in zwei Stempeln.
+
+**Erstes Haustier im Bestand.** Bisher waren alle Tiere Wildtiere, Bauernhof oder Fantasie — die Katze ist das erste, das bei jemandem *zu Hause* lebt. Damit trifft sie **Katzenmenschen**, und das ist eine sehr treffsichere Zielgruppe.
+
+**Die Fellfarbe kannst du an das echte Tier der Empfängerin anpassen** — das ist der Punkt, wo aus einer Karte ein Geschenk wird.
+
+---
+
+### 1104 — Flamme / Feuerzungen (SF) ⭐⭐ erster Effekt-Stempel
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 grosser Stempel — **Silhouette, keine Outline**
+- **Inhalt Motiv:** **Flamme** als geschlossene Fläche — mehrere unterschiedlich hohe Feuerzungen über einer Grundlinie
+- **Tags:** `geburtstag` `weihnachten` `advent` `winter` `trost` `feier` `neujahr` `jubilaeum` `maenner` `kinder` `allgemein` `motivstempel` `grossflächig` `randakzent`
+
+**Ein Sonderfall: flächig gefüllt statt Outline.** Du kolorierst ihn nicht — du stempelst ihn in einer Farbe, und die Wirkung entsteht durch die Farbe selbst.
+
+**Symbolik: Flamme = Licht, Wärme, Hoffnung — je nach Kontext etwas völlig Anderes:**
+
+| Kontext | Wird daraus |
+|---|---|
+| **Geburtstag** | Kerzenflammen — eine pro Jahrzehnt, oder alle als „du brennst noch"-Witz |
+| **Weihnachten, Advent** | Kerzenschein, in Gold über einer Kerzensilhouette |
+| **Trauer** | eine Kerze anzünden — mit `1100`, `1023`/`1033`/`1053` und den kahlen Zweigen `1077` |
+| **Neujahr** | Feuerwerk, Neuanfang |
+| **Lagerfeuer** | mit Bauernhof- und Sommermotiven, für Kinder und Männer |
+
+**Techniktipp:** Dieser Stempel lebt vom **Farbverlauf** — unten gelb, oben orange und rot mit einem Distress-Kissen aufs Gummi getupft, dann in einem Zug stempeln. Oder in **Kupfer/Gold embossen**, dann glänzt es wie echtes Feuer.
+
+**Als Randelement** läuft die Grundlinie über die ganze Kartenbreite — wie Gräser (`1061`), Seegras (`1071`) und Gartenzaun (`1077`), nur eben brennend.
+
+---
+
+### 1105 — Schutzengel-Vers für Neugeborene (SF) ⭐⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 Textstempel **im Zierrahmen**, sechs Zeilen
+- **Inhalt Text:** „Kommt irgendwo ein **Kind** zur Welt, ein **Engel** sich daneben stellt und Tag für Tag und Nacht für Nacht ein **Leben** lang es nun bewacht."
+- **Tags:** `geburt` `taufe` `willkommen` `kinder` `konfirmation` `allgemein` `danke` `trost` `textstempel` `sofort-einsetzbar`
+
+**Der Geburtskarten-Spruch, der dir gefehlt hat.** Bisher hattest du für Geburt und Taufe nur kurze Zeilen (`1022`) — das hier ist ein **kompletter Vers**, der eine Karte allein trägt und trotzdem nicht kitschig wird.
+
+**Und er passt zu deinem Schutzengel-Motiv (`1059`)** — Bild und Text sagen dasselbe. Zusammen ist das eine fertige Taufkarte.
+
+**Weitere Bildpartner:** Elefanten (`1042`, `1047`, `1072`) — besonders der **schlafende Elefant** (`1087`) als Babymotiv · Giraffen (`1046`) · Teddy mit Geschenk (`1072`) · Vögelchen (`1093`, `1102`).
+
+**Er funktioniert auch bei Trauer um ein Kind**, wo fast alles andere versagt — dann mit den kahlen Zweigen (`1077`) und der Flamme (`1104`).
+
+---
+
+### 1106 — „Geduld ist das Vertrauen, dass alles dann passiert, wenn die Zeit reif ist" (SF) ⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 Textstempel **im Zierrahmen**, sechs Zeilen
+- **Inhalt Text:** „**Geduld** ist das **Vertrauen**, dass **ALLES** dann passiert, wenn die **Zeit REIF** ist."
+- **Tags:** `trost` `aufmunterung` `allgemein` `freundschaft` `neuanfang` `abschluss` `gute-besserung` `erfolg` `danke` `muttertag` `garten` `textstempel` `sofort-einsetzbar` `mentoring-tauglich`
+
+**Der Spruch für die Wartezeit — und der hat gefehlt.** Deine Zuspruch-Sprüche zielen alle aufs **Tun**: „Du schaffst das!" (`1088`), „Beiss dich durch!" (`1091`). Dieser zielt aufs **Aushalten**, wenn man gerade nichts tun kann. Andere Situation, oft der treffendere Satz.
+
+**Wo er passt:** wenn jemand wartet (Diagnose, Bewerbung, Schwangerschaft) · nach einem Scheitern („es kommt noch", ohne zu vertrösten) · **Genesung**, wenn es langsamer geht als gehofft · **Garten**, ganz wörtlich.
+
+**Bildpartner sind deine Langsam-Tiere:** Schnecke (`1094`), Schildkröte (`1095`), schlafender Elefant (`1087`), Faultier (`1065`), Koala (`1099`). Und die **Raupe** (`1093`) — die wird auch nicht auf Kommando zum Schmetterling.
+
+---
+
+### 1107 — „Sei du der Grund, dass andere an das Gute glauben!" (SF) ⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 Textstempel **im Zierrahmen** — Versalien
+- **Inhalt Text:** „**SEI DU DER GRUND, DASS ANDERE AN DAS GUTE GLAUBEN!**"
+- **Tags:** `danke` `freundschaft` `allgemein` `abschluss` `erfolg` `muttertag` `aufmunterung` `jubilaeum` `willkommen` `textstempel` `sofort-einsetzbar` `mentoring-tauglich`
+
+**Die stärkste Danke-Karte, die du bauen kannst — weil sie nicht danke sagt, sondern beschreibt, was jemand ist.** „Danke für alles" ist abgenutzt. Dieser Satz sagt: *du bist der Mensch, wegen dem ich noch an das Gute glaube.*
+
+**Damit gehört der Stempel nicht in die Danke-Schublade, sondern in die Anerkennungs-Schublade:** Lehrerin, Erzieherin, Pflegerin, Hebamme — Menschen, die Gutes tun und es selten hören. Dazu Abschied von einer Kollegin, **Muttertag** ohne Blümchen-Ton, Freundinnen-Jubiläum.
+
+> ⚠️ **Lesart beachten:** Der Satz ist eine **Aufforderung**. Willst du danken, kommt eine handschriftliche Zeile darunter: „… und genau das bist du für mich." Sonst liest es sich als Ratschlag statt als Kompliment.
+
+---
+
+### 1108 — „Kreativität ist Intelligenz, die Spass hat" + „Spass muss sein" (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 2 Textstempel
+- **Inhalt Texte:** „**KREATIVITÄT** ist **Intelligenz**, die **Spaß** hat" *(mit Autorenzeile „Albert Einstein")* · „**SPASS MUSS SEIN**" *(kleiner Block, Versalien)*
+- **Tags:** `allgemein` `geburtstag` `danke` `freundschaft` `selbstgemacht` `erfolg` `kinder` `abschluss` `feier` `textstempel` `sofort-einsetzbar` `randakzent` `mentoring-tauglich`
+
+**Der erste Spruch im Bestand, der aufs Basteln selbst zielt — und damit auf dich.** Drei Verwendungen, die kein anderer Stempel kann:
+
+1. **Karten an Bastelfreundinnen** — oder auf der Rückseite deiner eigenen Karten als kleine Signatur
+2. **Beschriftung deiner eigenen Sachen** — Bastelordner, Materialkisten, Anleitungsmappen
+3. **Mentoring und Business** — Kreativität ernst nehmen, ohne verkopft zu klingen
+
+**„Spass muss sein" ist der praktische Teil** — klein, blockig, Versalien. Ein **Stempel für die Ecke**, und der einzige richtig kurze Text in deinem Bestand. Fast alle anderen sind mehrzeilig.
+
+> ⚠️ **„Spaß" steht mit ß auf dem Stempel** — fällt auf, wenn du sonst konsequent „ss" schreibst. Die Autorenzeile „Albert Einstein" ist mitgestempelt, also nicht weglassbar.
+
+---
+
+### 1109 — „Kalorien zählen nicht, wenn eine Kerze drinsteckt" (SF) ⭐⭐⭐
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 Textstempel **im Zierrahmen**, Schreibschrift
+- **Inhalt Text:** „**Kalorien** zählen nicht, wenn eine **Kerze** drinsteckt."
+- **Tags:** `geburtstag` `feier` `kueche` `selbstgemacht` `allgemein` `freundschaft` `jubilaeum` `einladung` `textstempel` `sofort-einsetzbar` `doterra-tauglich`
+
+**Der beste Geburtstagsspruch im Bestand — weil er Kuchen und Geburtstag in einem Satz verbindet.**
+
+**Er hat zwei Verwandte in `1085`:** „Lass dir nie einreden, dass Schokolade Kalorien hat" und „Warnung! Der Inhalt hat mehr als 2 Kalorien". Damit steht eine **Kalorien-Humor-Familie mit drei Sprüchen** — genug, dass sich im Freundinnenkreis nichts wiederholt.
+
+**Und hier kommt die stimmigste Kombination im ganzen Bestand zusammen:**
+
+| Teil | Set |
+|---|---|
+| Kerze als Bild | **Flamme** `1104` |
+| Spruch | `1109` |
+| Verpackung | Gift-Bag-Punchboard oder Plotter |
+| Backspruch fürs Etikett | `1085` / `1090` |
+
+Bild und Text teilen dasselbe Motiv, und mit echtem Gebäck darin ist das keine Karte mehr, sondern **ein Geschenk mit Karte dran.**
+
+---
+
+### 1110 — „Lieblingstage sind die mit dem Lachen, der Leichtigkeit, der Lebensfreude und der Konfetti-Laune" (SF)
+- **Typ:** Clearstamp-Set · **Hersteller:** Scrapbook Forever *(Kalender-Set)* · **Format:** 1 grosser Textstempel **im Zierrahmen**, neun Zeilen
+- **Inhalt Text:** „**Lieblingstage** sind die mit dem **Lachen**, der **Leichtigkeit**, der **Lebensfreude** und der **Konfetti-Laune**"
+- **Tags:** `geburtstag` `feier` `jubilaeum` `freundschaft` `allgemein` `danke` `neujahr` `einladung` `hochzeit` `abschluss` `textstempel` `sofort-einsetzbar` `grossflächig`
+
+**Der fröhlichste Spruch im Bestand — und der einzige, der reine Feier-Stimmung trägt, ohne einen Anlass zu nennen.** Deine anderen Geburtstagssprüche sind humorvoll (`1081`, `1109`) oder nachdenklich (`1084`, `1100`). Dieser ist einfach **hell**.
+
+Vier L-Wörter in Reihe — Lachen, Leichtigkeit, Lebensfreude, Konfetti-Laune. Ein Sprachrhythmus, der gute Laune macht, bevor man den Inhalt gelesen hat.
+
+**Weil kein Anlass drinsteht, passt er breit:** Geburtstag · Einladung · Hochzeit · Neujahr · Jubiläum · Danke an eine fröhliche Freundin · Abschied im Guten.
+
+**Neunzeilig, füllt eine Kartenfront fast allein.** Deko sparsam: Konfetti-Punkte (`1009`, `1019`, `1083`), Flamingo (`1098`) oder Sektflasche (`1013`, `1072`).
+
+---
+
+## ✍️ Textstempel mit fertigem Zierrahmen — eine eigene Klasse
+
+Die SF-Kalender bringen eine Sorte Stempel mit, die dir Arbeit spart: **Spruch plus Rahmen in einem.** Damit ist die Kartenmitte fertig, du brauchst nur noch ein Motiv in die Ecke.
+
+| Set | Spruch | Stärke bei |
+|---|---|---|
+| `1100` | „Wenn die Wurzeln tief sind…" | Krise · Trauer · Jubiläum · Muttertag |
+| `1105` | Schutzengel-Vers | **Geburt · Taufe** |
+| `1106` | „Geduld ist das Vertrauen…" | **Warten** · Genesung · Garten |
+| `1107` | „Sei du der Grund…" | **Anerkennung** · Danke an Helfende |
+| `1109` | „Kalorien zählen nicht…" | **Geburtstag mit Kuchen** |
+| `1110` | „Lieblingstage…" | **Feier ohne Anlass** |
+
+**Alle sechs sind sofort einsetzbar** — kein Kolorieren, kein Layout überlegen. Das ist die Kategorie für Tage, an denen du wenig Zeit hast.
+
+> 🎉 **Bündel 11 ist voll** — `1101`–`1110`. Nächste freie Nummer: **`1111`** (Bündel 12).
 
 ---
 
