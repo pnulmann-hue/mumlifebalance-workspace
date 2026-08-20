@@ -1,0 +1,46 @@
+{
+  "title_seo": "Instagram für Network Marketing: Strategie mit wenig Zeit",
+  "title_laenge": 56,
+  "h1": "Instagram für Network Marketing: die Strategie, die auch mit vier Kindern funktioniert",
+  "slug": "instagram-network-marketing-strategie",
+  "url": "https://mumlifebalance.ch/instagram-network-marketing-strategie",
+  "meta_description": "Instagram für Network Marketing ohne Namensliste und ohne täglich Produktbilder: die 6 Schritte, die auch neben Familie und Job funktionieren.",
+  "meta_description_laenge": 141,
+  "primary_keyword": "Instagram für Network Marketing",
+  "secondary_keywords": [
+    "Instagram Network Marketing Strategie",
+    "Kunden gewinnen Network Marketing Instagram",
+    "Network Marketing ohne Freunde und Familie",
+    "Instagram Storys Network Marketing"
+  ],
+  "keyword_platzierung": {
+    "seo_title": "vorne",
+    "h1": "vorne",
+    "meta_description": "ja",
+    "erste_100_woerter": "ja",
+    "slug": "ja",
+    "vorkommen_im_text": 14,
+    "dichte_prozent": 0.6
+  },
+  "woerter": 2295,
+  "lesezeit_min": 9,
+  "rolle": "Pfeiler-Artikel der Themensäule Instagram + Network — spätere Artikel verlinken hierher zurück",
+  "interne_links": [
+    "https://mumlifebalance.ch/bio-check",
+    "https://mumlifebalance.ch/story-challenge/",
+    "https://mumlifebalance.ch/angebote",
+    "https://mumlifebalance.ch/instagram-starterguide"
+  ],
+  "externe_links": [
+    "https://www.fanpagekarma.com/insights/the-instagram-algorithm-2026-how-to-adapt-your-strategy/",
+    "https://skill-sprinters.de/blog/social-media/instagram-algorithmus-2026/"
+  ],
+  "faq_anzahl": 6,
+  "schema_markup": "FAQPage-Schema für die 6 Fragen setzen (Yoast/RankMath macht das automatisch, wenn die FAQ als Block angelegt ist)",
+  "related_funnel": "story-challenge",
+  "cta_primary": "Story-Challenge (0€, Start Di 1.9.2026)",
+  "cta_secondary": "Instagram-Kundenmaschine über die Angebotsseite",
+  "bewusst_nicht_verlinkt": "90 Storyideen — wegen des offenen Preis-Konflikts (IKM 97 im Checkout-Upsell vs. 333 regulär). Sobald das aufgelöst ist, kann der Link in Schritt 4 ergänzt werden.",
+  "aktualisieren_bis": "2027-02-19",
+  "aktualisieren_warum": "Algorithmus-Aussagen und die beiden externen Quellen sind jahresgebunden"
+}
