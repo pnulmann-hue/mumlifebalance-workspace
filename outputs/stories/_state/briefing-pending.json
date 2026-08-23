@@ -1,34 +1,67 @@
 {
-  "profil": "doterra",
-  "modus": "tagesplan",
-  "disg": "Rot",
-  "disg_sekundaer": "Gelb",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
-  "aktives_produkt": "doTERRA Lifestyle",
-  "wochen_fokus": "(kein Fokus eingetragen)",
-  "sales_pattern": "",
-  "wochen_cta": "",
-  "monat_kontext": "",
-  "produkt_themen": null,
-  "vorschlag_idee": "Idee: Patricia zeigt, wie sie morgens mit einer Tasse Kaffee und dem Diffuser (z.B. Lavender oder Balance) ihre Energie vor dem Tag stabilisiert – und teilt kurz, warum das für erschöpfte Mamas der Game-Changer ist.\n\nMuster: Expertise + Behind-the-Scenes (Ritual-Tipp, den man sofort umsetzen kann)\n\nCTA: \"Schreib mir, welches Aroma du ausprobieren willst – für dich selbst, nicht für andere.\"",
-  "wochen_fokus_quelle": "fallback",
-  "launch_tag": null,
-  "launch_vorlage": null,
-  "kontext_snapshot": {
-    "kw": 34,
-    "wochentag": "Samstag",
-    "datum": "2026-08-22"
-  },
-  "fragen": [
-    "Was hast du erlebt?",
-    "Hast du grad einen Gedanken zum Thema?",
-    "Oder Standard-Pool?"
-  ],
-  "gesendet_am": "2026-08-22T05:01:06.036Z",
-  "telegram_message_id": 1130,
-  "patricia_antworten": [],
-  "patricia_fotos": [],
-  "patricia_videos": [],
-  "status": "warten_auf_antwort"
+  "datum": "2026-08-23",
+  "profile": {
+    "mentoring": {
+      "profil": "mentoring",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Instagram-Strategie für NM",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Lifestyle / Sonntags-Reflexion / Lifehack",
+        "titel": "Lifestyle / Sonntags-Reflexion / Lifehack",
+        "story_ziel": "Nahbarer Produktivitäts-/Motivations-Hack oder ruhige Reflexion — Beziehung stärken.",
+        "kaeufertyp": "Ina",
+        "cta": "optional, niederschwellig",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 34,
+        "wochentag": "Sonntag",
+        "datum": "2026-08-23"
+      },
+      "gesendet_am": "2026-08-23T04:42:01.402Z",
+      "telegram_message_id": 1131,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    },
+    "doterra": {
+      "profil": "doterra",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Zurück zu deiner Energie",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Lifestyle / Sonntags-Reflexion / Lifehack",
+        "titel": "Lifestyle / Sonntags-Reflexion / Lifehack",
+        "story_ziel": "Nahbarer Produktivitäts-/Motivations-Hack oder ruhige Reflexion — Beziehung stärken.",
+        "kaeufertyp": "Ina",
+        "cta": "optional, niederschwellig",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 34,
+        "wochentag": "Sonntag",
+        "datum": "2026-08-23"
+      },
+      "gesendet_am": "2026-08-23T04:42:02.245Z",
+      "telegram_message_id": 1132,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    }
+  }
 }
