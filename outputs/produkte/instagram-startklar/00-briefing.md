@@ -14,7 +14,7 @@ tags: [produkt, mentoring]
 > In einer Woche steht dein Profil fertig da und deine ersten fünf Beiträge sind draussen.
 
 **Format:** Selbstlern-Minikurs · 15 Lektionen · rund 100 Minuten Video · 1 Mitmach-Heft
-**Preis:** **29 CHF** (Launch-Preis 19 CHF in den ersten 5 Tagen)
+**Preis:** **39 CHF** — Patricias einheitliche Minikurs-Stufe (Launch-Preis 29 CHF in den ersten 5 Tagen)
 **Betreuung:** keine — bewusst. Reine Selbstlern-Strecke, damit sie neben 18 Stunden Wochenarbeit läuft.
 
 ---
@@ -55,12 +55,12 @@ A   Networkerin postet Produktbilder oder gar nichts. Kein Profil, keine Anfrage
 B   Sie weiss, WAS ein gutes Profil ausmacht. Bio-Struktur, Highlights, Schaufenster-Idee.
  │  Und sitzt vor ihrem Handy, ohne den ersten Klick zu finden.
  │
- │  ⭐ STARTKLAR — 29 CHF  ← DIESES PRODUKT
+ │  ⭐ STARTKLAR — 39 CHF  ← DIESES PRODUKT
  ▼
 C   Ihr Profil steht fertig. Sie hat ein Reel, ein Karussell und Stories draussen.
  │  Sie kann Instagram bedienen. Ihr Thema ist noch grob.
  │
- │  Finde dein Thema als Network-Mama — 39 CHF
+ │  Finde dein Thema als Network-Mama — 39 CHF (gleiche Stufe, anderes Problem)
  ▼
 E   Ihr Expertenthema sitzt. Der Experten-Satz steht.
  │
@@ -123,19 +123,19 @@ Startklar allein trägt das nicht, und das soll es auch gar nicht. Seine Aufgabe
 
 | Posten | Annahme | CHF / Monat |
 |---|---|---|
-| Startklar-Verkäufe | 15 × 29 CHF | 435 |
-| Order Bump „Finde dein Thema" dazu | 35 % nehmen ihn, +20 CHF | 105 |
+| Startklar-Verkäufe | 15 × 39 CHF | 585 |
+| Order Bump „Finde dein Thema" dazu | 35 % nehmen ihn, +25 statt 39 CHF | 130 |
 | Upsell in ein 333er-Programm | 5 % von 15 Käuferinnen = 0,75 | 250 |
-| **Summe** | | **790** |
+| **Summe** | | **965** |
 
-→ **9480 CHF im Jahr = 24 % des 40k-Ziels.**
+→ **11580 CHF im Jahr = 29 % des 40k-Ziels.**
 
 **Was das kostet:** eine Aufnahme-Session, danach null Stunden pro Verkauf.
 
 **Der eigentliche Wert steht in der zweiten Zeile:** 15 Käuferinnen im Monat sind 180 neue Käuferinnen im Jahr auf der Liste — Frauen, die schon einmal Geld überwiesen haben. Das ist die Menge, aus der die MBA-Verkäufe kommen, die im Juli gefehlt haben.
 
 **Vergleichs-Szenarien:**
-- Nur über bestehende Follower verkauft (kein Ad-Budget): eher 5–8 Verkäufe im Monat, rund 300 CHF. Trotzdem sinnvoll, weil die Liste wächst.
+- Nur über bestehende Follower verkauft (kein Ad-Budget): eher 5–8 Verkäufe im Monat, rund 250 CHF. Trotzdem sinnvoll, weil die Liste wächst.
 - Mit Meta-Ad wie bei den Storyideen (die laut Auswertung profitabel läuft): 20–30 Verkäufe im Monat realistisch, sobald ein Text zieht.
 
 ---
@@ -144,13 +144,30 @@ Startklar allein trägt das nicht, und das soll es auch gar nicht. Seine Aufgabe
 
 | Element | Inhalt | Preis |
 |---|---|---|
-| Hauptprodukt | Startklar, 15 Lektionen + Mitmach-Heft | 29 CHF |
-| Order Bump 1 | „Finde dein Thema als Network-Mama in 60 Minuten" | +20 statt 39 |
+| Hauptprodukt | Startklar, 15 Lektionen + Mitmach-Heft | 39 CHF |
+| Order Bump 1 | „Finde dein Thema als Network-Mama in 60 Minuten" | +25 statt 39 |
 | Order Bump 2 | Bio-Check (bestehender Funnel, als Bonus-Zugang) | 0 CHF, als Wert-Zugabe |
 | Upsell direkt nach Kauf | Instagram-Kundenmaschine | 333 CHF |
 | Downsell | „Expertin statt Verkäuferin" | 97 CHF |
 
-**Warum jetzt kaufen (ehrlich begründet, kein Fake-Countdown):** Launch-Preis 19 CHF für fünf Tage, weil die ersten Käuferinnen die Version 1 bekommen und Patricia ihre Rückmeldungen für die Überarbeitung braucht. Das ist ein echter Grund und darf so gesagt werden.
+**Warum jetzt kaufen (ehrlich begründet, kein Fake-Countdown):** Launch-Preis 29 CHF für fünf Tage, weil die ersten Käuferinnen die Version 1 bekommen und Patricia ihre Rückmeldungen für die Überarbeitung braucht. Das ist ein echter Grund und darf so gesagt werden. Danach steht der Preis bei 39 und wird nicht mehr unterboten.
+
+---
+
+## Preis-Architektur: alle Minikurse auf 39
+
+Patricias Entscheidung vom 24.08.2026: **jeder Minikurs kostet 39 CHF.** Kein Staffeln, kein Vergleichen.
+
+**Was das bringt:**
+- Eine Käuferin, die schon einen Minikurs hat, muss beim zweiten nicht überlegen. Sie kennt den Preis.
+- Beim Bündeln entsteht sofort ein sichtbarer Vorteil, weil die Einzelpreise echt und gleich sind.
+- Auf der Website lassen sich alle Minikurse als eine Reihe zeigen, ohne dass der günstigste wie der schwächste wirkt.
+
+**Was das verlangt:** Wenn der Preis nicht mehr unterscheidet, muss das **Problem** unterscheiden. Jeder Minikurs braucht einen Satz, der sofort klar macht, für wen er NICHT ist. Für Startklar lautet er:
+
+> „Startklar ist für dich, wenn du auf Instagram noch nie geschäftlich gepostet hast. Wenn dein Profil schon steht und dir nur die Ideen fehlen, nimm ‚Finde dein Thema'."
+
+**Naheliegender nächster Schritt (noch nicht gebaut):** ein Minikurs-Bündel aus Startklar + „Finde dein Thema" + „Vom Network-Wissen zum eigenen Produkt" für 89 statt 117. Sobald drei Minikurse auf derselben Stufe stehen, verkauft sich das Bündel praktisch von selbst.
 
 ---
 

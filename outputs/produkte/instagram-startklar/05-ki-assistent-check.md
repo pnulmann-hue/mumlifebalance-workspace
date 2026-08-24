@@ -11,7 +11,7 @@ tags: [produkt, mentoring, tools]
 
 ## Empfehlung: kein neuer Bot
 
-Für ein 29-CHF-Produkt wäre ein eigener Bot ein Draufzahlgeschäft — Bau, Hosting und Wartung fressen die Marge, und bei fünfzehn Käuferinnen im Monat rechnet sich das nie. Dazu kommt: die Käuferin steckt hier an einer Handbewegung fest, keiner Denkaufgabe. Ein Chat-Bot löst das nicht, eine Bildschirmaufnahme schon.
+Für ein 39-CHF-Produkt wäre ein eigener Bot ein Draufzahlgeschäft — Bau, Hosting und Wartung fressen die Marge, und bei fünfzehn Käuferinnen im Monat rechnet sich das nie. Dazu kommt: die Käuferin steckt hier an einer Handbewegung fest, keiner Denkaufgabe. Ein Chat-Bot löst das nicht, eine Bildschirmaufnahme schon.
 
 ---
 
@@ -33,7 +33,7 @@ Patricia hat den **Bio-Check für Network-Mamas** bereits als Funnel am Laufen (
 
 ## Falls das Produkt läuft: eine Ausbaustufe, die sich rechnen würde
 
-Sobald Startklar stabil dreissig Verkäufe im Monat macht, lohnt sich ein Ausbau — allerdings gehört er dann in die **Instagram-Kundenmaschine** (333 CHF), wo die Marge ihn trägt. Im 29er-Produkt niemals:
+Sobald Startklar stabil dreissig Verkäufe im Monat macht, lohnt sich ein Ausbau — allerdings gehört er dann in die **Instagram-Kundenmaschine** (333 CHF), wo die Marge ihn trägt. Im Minikurs niemals:
 
 **„Der Profil-Check"** — sie schickt einen Screenshot ihres Profils, bekommt eine Rückmeldung entlang von Patricias Schaufenster-Logik: Name-Feld, Bio-Zeilen, Highlights, gepinnte Beiträge, Cover-Rhythmus.
 
