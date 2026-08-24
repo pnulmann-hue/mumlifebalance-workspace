@@ -295,32 +295,49 @@ Startklar macht dich nicht sichtbar und bringt dir keine Kundinnen. Es sorgt daf
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 BLOCK 11: Häufige Fragen
-ThriveCart-Tipp: Akkordeon
+ThriveCart-Tipp: Akkordeon, zugeklappt. Reihenfolge nicht ändern — sie geht von der grössten Kaufbremse nach unten
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**Ich bin technisch wirklich eine Niete. Komme ich da mit?**
-Ja. Du siehst bei jeder Lektion meinen Bildschirm und jeden Klick. Wenn etwas zu schnell geht, hältst du an und spulst zurück. Genau dafür sind die Lektionen kurz gehalten.
-
-**Ich hab noch gar kein Instagram-Konto.**
-Dann fängst du bei Lektion 1.1 an, dort legen wir es gemeinsam an. Wenn du eins hast, entscheiden wir dort, ob du es umbaust.
-
-**Wie lange brauche ich?**
-75 Minuten Video. Mit Mitmachen und Ausfüllen rechne mit einem ruhigen Nachmittag oder drei Abenden.
-
-**Ich weiss noch nicht, was mein Thema ist.**
-Das ist in Ordnung. In Lektion 1.3 setzen wir einen groben Platzhalter, damit deine Bio gefüllt ist. Wenn du merkst, dass du dort wirklich feststeckst, hab ich dafür einen eigenen kurzen Kurs — aber der ist für Startklar keine Voraussetzung.
+**Was du vielleicht noch wissen willst**
 
 **Bringt mir das Kundinnen?**
-Nein, und das sag ich lieber direkt. Startklar bringt dich dahin, dass dein Profil steht und du posten kannst. Damit daraus Anfragen und Kundinnen werden, braucht es Strategie — das ist die Instagram-Kundenmaschine und ein anderer Preis.
+Nein, und das sag ich dir lieber vorher als hinterher. Startklar bringt dich dahin, dass dein Profil steht und du posten kannst. Damit daraus Anfragen und Kundinnen werden, braucht es eine Strategie — das ist die Instagram-Kundenmaschine und ein anderer Preis. Wenn du diesen Schritt aber überspringst, nützt dir die beste Strategie nichts.
 
-**Gilt das auch für Facebook?**
-Nein. Hier geht es nur um Instagram.
+**Ich bin technisch wirklich eine Niete. Komme ich da mit?**
+Ja. Du siehst bei jeder Lektion meinen Bildschirm und jeden einzelnen Klick. Wenn es zu schnell geht, hältst du an und spulst zurück. Genau dafür sind die Lektionen kurz.
+
+**Ich hab schon deinen Gratis-Guide gelesen. Ist das dasselbe nochmal?**
+Nein. Der Guide erklärt, WAS in ein gutes Profil gehört — Bio-Zeilen, Highlights, gepinnte Beiträge. Hier siehst du, WO du das auf deinem Handy einstellst und wie es aussieht, wenn es fertig ist. Der Guide ist der Bauplan, Startklar sind die Handgriffe.
+
+**Was ist diese Werkstatt genau?**
+Eine Seite, die du im Browser öffnest, am Handy oder am Computer. Zwölf Stationen, eine pro Lektion. Du tippst rein, was du auf Instagram schreiben willst, drückst auf Prüfen und bekommst sofort zurück, was schon zieht und was noch nicht. Deine Eingaben bleiben gespeichert, du kannst jederzeit weitermachen.
+
+**Brauche ich dafür ein Konto oder ein Passwort?**
+Nein. Du bekommst mit dem Kauf einen Zugangscode, den tippst du einmal ein. Deine Antworten bleiben in deinem Browser, ich sehe sie nicht. Nur der Text, den du prüfen lässt, geht kurz an den Prüf-Dienst und wird dort nicht gespeichert.
+
+**Ich hab noch gar kein Instagram-Konto.**
+Dann fangen wir in Lektion 1.1 damit an. Wenn du eins hast, entscheiden wir dort gemeinsam, ob du es umbaust oder ein zweites anlegst.
+
+**Ich weiss noch nicht, was mein Thema ist.**
+Das ist in Ordnung. In Lektion 1.3 setzen wir einen groben Platzhalter, damit deine Bio gefüllt ist. Wenn du merkst, dass du genau dort feststeckst, hab ich dafür einen eigenen kurzen Kurs — für Startklar brauchst du ihn nicht.
+
+**Wie lange brauche ich?**
+75 Minuten Video. Mit Mitmachen und Ausfüllen ein ruhiger Nachmittag oder drei Abende.
+
+**Funktioniert das auch mit meiner Firma?**
+Ja. Hier geht es um Instagram, nicht um ein bestimmtes Unternehmen. Was du über Produkte und über Verdienst sagen darfst, steht in den Richtlinien deiner Firma — wo du die findest und worauf du achten musst, ist eine eigene Lektion.
+
+**Gilt das auch für Facebook oder TikTok?**
+Nein, nur Instagram.
 
 **Gibt es eine Geld-zurück-Garantie?**
-Nein. Bei digitalen Inhalten, die du sofort komplett siehst, gebe ich keine. Dafür siehst du oben genau, was drin ist, und ich verspreche dir nichts, was der Kurs nicht hält.
+Nein. Bei digitalen Inhalten, die du sofort komplett siehst, gebe ich keine. Dafür steht oben genau, was drin ist, und du liest hier schwarz auf weiss, was der Kurs nicht kann.
 
 **Veraltet das nicht, wenn Instagram sich ändert?**
-Instagram baut regelmässig um. Ich schau zweimal im Jahr drüber und nehme betroffene Lektionen neu auf. Du bekommst die Aktualisierungen ohne Aufpreis.
+Instagram baut regelmässig um, das lässt sich nicht ändern. Ich schau zweimal im Jahr drüber und nehme betroffene Lektionen neu auf. Du bekommst die Aktualisierungen ohne Aufpreis.
+
+**Ich hab noch eine andere Frage.**
+Schreib mir auf Instagram. Ich antworte selbst.
 
 ---
 
