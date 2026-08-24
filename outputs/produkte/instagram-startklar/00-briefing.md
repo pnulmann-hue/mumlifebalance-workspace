@@ -14,7 +14,7 @@ tags: [produkt, mentoring]
 > In einer Woche steht dein Profil fertig da und deine ersten fünf Beiträge sind draussen.
 
 **Format:** Selbstlern-Minikurs · 15 Lektionen · rund 100 Minuten Video · 1 Mitmach-Heft
-**Preis:** **39 CHF** — Patricias einheitliche Minikurs-Stufe (Launch-Preis 29 CHF in den ersten 5 Tagen)
+**Preis:** **39 CHF, fix.** Patricias einheitliche Minikurs-Stufe — kein Early-Bird, keine Aktion, kein Rabatt.
 **Betreuung:** keine — bewusst. Reine Selbstlern-Strecke, damit sie neben 18 Stunden Wochenarbeit läuft.
 
 ---
@@ -150,7 +150,21 @@ Startklar allein trägt das nicht, und das soll es auch gar nicht. Seine Aufgabe
 | Upsell direkt nach Kauf | Instagram-Kundenmaschine | 333 CHF |
 | Downsell | „Expertin statt Verkäuferin" | 97 CHF |
 
-**Warum jetzt kaufen (ehrlich begründet, kein Fake-Countdown):** Launch-Preis 29 CHF für fünf Tage, weil die ersten Käuferinnen die Version 1 bekommen und Patricia ihre Rückmeldungen für die Überarbeitung braucht. Das ist ein echter Grund und darf so gesagt werden. Danach steht der Preis bei 39 und wird nicht mehr unterboten.
+**Warum jetzt kaufen — ohne Preisspiel:** Der Preis bleibt bei 39, immer. Die Dringlichkeit kommt aus zwei anderen Quellen:
+
+1. **Aus dem Problem selbst.** Jede Woche ohne fertiges Profil ist eine Woche, in der sie postet und nichts zurückkommt — oder gar nicht erst postet. Das darf in der Salespage klar benannt werden, weil es stimmt.
+2. **Über einen Bonus, der wechselt.** Ein Zusatz pro Monat, der nach vier Wochen durch den nächsten ersetzt wird. Kein Rabatt, kein Countdown, keine erfundene Knappheit.
+
+**Bonus-Rotation als Vorschlag:**
+
+| Monat | Bonus | Aufwand für Patricia |
+|---|---|---|
+| 1 | Canva-Vorlagen-Set: 6 Karussell-Folien + 5 Highlight-Cover in Brand-Farben | einmalig bauen, danach null |
+| 2 | Bio-Check als geführter Durchgang (bestehender Funnel) | null, läuft schon |
+| 3 | Aufnahme-Liste: 10 Reel-Einstiege zum Nachsprechen für die erste Woche | eine Seite, einmalig |
+| 4 | Q&A-Aufzeichnung: die 12 häufigsten Fragen aus den DMs | einmal aufnehmen, danach evergreen |
+
+Danach wieder von vorne. Wer im Monat 1 kauft, bekommt den Vorlagen-Bonus — wer im Monat 2 kauft, bekommt einen anderen. Beide haben einen echten Grund, nicht zu warten.
 
 ---
 
@@ -160,12 +174,14 @@ Patricias Entscheidung vom 24.08.2026: **jeder Minikurs kostet 39 CHF.** Kein St
 
 **Was das bringt:**
 - Eine Käuferin, die schon einen Minikurs hat, muss beim zweiten nicht überlegen. Sie kennt den Preis.
-- Beim Bündeln entsteht sofort ein sichtbarer Vorteil, weil die Einzelpreise echt und gleich sind.
+- Beim Bündeln entsteht sofort ein sichtbarer Vorteil, weil die Einzelpreise echt, gleich und nie rabattiert sind.
 - Auf der Website lassen sich alle Minikurse als eine Reihe zeigen, ohne dass der günstigste wie der schwächste wirkt.
 
 **Was das verlangt:** Wenn der Preis nicht mehr unterscheidet, muss das **Problem** unterscheiden. Jeder Minikurs braucht einen Satz, der sofort klar macht, für wen er NICHT ist. Für Startklar lautet er:
 
 > „Startklar ist für dich, wenn du auf Instagram noch nie geschäftlich gepostet hast. Wenn dein Profil schon steht und dir nur die Ideen fehlen, nimm ‚Finde dein Thema'."
+
+**Keine Early-Bird-Preise bei Minikursen.** Ein Minikurs läuft evergreen und wird ständig quergelesen — wer letzten Monat 39 gezahlt hat und diesen Monat 29 sieht, kauft den nächsten Kurs nicht mehr sofort, sondern wartet auf die Aktion. Dringlichkeit läuft über wechselnde Boni.
 
 **Naheliegender nächster Schritt (noch nicht gebaut):** ein Minikurs-Bündel aus Startklar + „Finde dein Thema" + „Vom Network-Wissen zum eigenen Produkt" für 89 statt 117. Sobald drei Minikurse auf derselben Stufe stehen, verkauft sich das Bündel praktisch von selbst.
 

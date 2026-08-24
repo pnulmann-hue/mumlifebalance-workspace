@@ -26,7 +26,8 @@ Learnings:
   4. Die drei Zahlen lesen, die etwas aussagen
   5. Die fünf Network-Fallen auf Instagram vermeiden
 Dauer: rund 100 Minuten Video, umsetzbar in einer Woche
-Preis (CHF): 39 (einheitliche Minikurs-Stufe; Launch-Preis 29 für 5 Tage)
+Preis (CHF): 39 fix — einheitliche Minikurs-Stufe, kein Early-Bird, keine Aktion.
+           Warum-jetzt läuft über monatlich wechselnde Boni.
 Module: 3 Module / 15 Lektionen
   M1 Dein Profil steht (5 Lektionen, 38 Min)
   M2 Du kannst posten (5 Lektionen, 46 Min)
