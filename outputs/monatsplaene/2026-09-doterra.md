@@ -22,7 +22,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 Der **3-Tage-Energie-Kickstart** (Keyword `ENERGIE`) existiert seit dem 8. Juli und ist inhaltlich fertig: 3-Mail-Automation in ActiveCampaign, AC-Formular 64, Liste 18, ManyChat-Flow live. Er wurde nur nie richtig genutzt, weil **die Landingpage nie veröffentlicht wurde** (WP 3911 liefert 404). Ein zweites Freebie zu bauen, während das erste nicht online ist, wäre die teuerste Art, das Problem zu umgehen.
 
 - **Keyword:** `ENERGIE` (bleibt)
-- **Landingpage:** https://mumlifebalance.ch/energie-kickstart → **veröffentlichen, das ist Aufgabe Nummer 1 des Monats**
+- **Landingpage:** https://mumlifebalance.ch/energie-kickstart/ → ✅ **seit 24.08.2026 live** (mobil + Desktop geprüft)
 - **Inhalt passt zur Positionierung:** Tag 1 Protein · Tag 2 Bewegung · Tag 3 Schlaf — genau deine drei Säulen
 - ⚠️ **Was fehlt und im September dazukommt — die DM-Brücke in Mail 3:** eine echte Frage, auf die man antworten kann („Was war bei dir der Moment, an dem du gemerkt hast, dass das nicht mehr normale Müdigkeit ist? Schreib mir zurück."). Das ist der wichtigste einzelne Baustein des Monats.
 - **Ergänzung zur Positionierung:** In Mail 1 und auf der Landingpage die drei Symptome **Hormonchaos · ständige Müdigkeit · Haarausfall** explizit nennen. Haarausfall fehlt bisher komplett und ist dein stärkster Wiedererkennungs-Treffer.
@@ -42,7 +42,7 @@ Ein eigenes Nervensystem-Freebie kommt frühestens im Oktober — und nur, wenn 
 
 | KW | Tage | Fokus der Woche | Was ausserhalb des Contents passiert |
 |---|---|---|---|
-| **36** | Di 1.9.–Fr 4.9. | **Aufschlag Funktionier-Modus** | Profil-Audit (Bio + Link + 3 Pinned + Highlights) · Landingpage 3911 veröffentlichen + Link testen |
+| **36** | Di 1.9.–Fr 4.9. | **Aufschlag Funktionier-Modus** | Profil-Audit (Bio + Link + 3 Pinned + Highlights) · ~~Landingpage veröffentlichen~~ ✅ erledigt |
 | **37** | Mo 7.9.–Fr 11.9. | **Warum dein Körper nicht mehr runterkommt** | Freebie live · Reaktivierung Stadium Soft (7 Kundinnen) |
 | **38** | Mo 14.9.–Fr 18.9. | **Die drei Kipp-Punkte im Tag** | Reaktivierung Stadium Hard (8) · erste DM-Gespräche führen |
 | **39** | Mo 21.9.–Fr 25.9. | **Was ich selbst geändert habe** | Reaktivierung Last-Call (7) · Gleichgewicht-Runde anbieten |
@@ -131,7 +131,7 @@ Ein eigenes Nervensystem-Freebie kommt frühestens im Oktober — und nur, wenn 
 | Wann | Was | Aufwand |
 |---|---|---|
 | **1.–4.9.** | Profil-Audit: Bio umschreiben, Freebie-Link rein, 3 Beiträge anheften, Highlights neu ordnen | ½ Tag |
-| **1.–4.9.** | Landingpage veröffentlichen · drei Symptome ergänzen · **DM-Brücke in Mail 3** | 1 Tag |
+| **1.–4.9.** | ~~Landingpage veröffentlichen~~ ✅ · drei Symptome ergänzen · **DM-Brücke in Mail 3** | ½ Tag |
 | **ab 8.9.** | Reaktivierung: 22 inaktive Kundinnen in drei Wellen, Templates liegen fertig | 3× 45 Min |
 | **laufend** | Jeden ENERGIE-Lead innerhalb 24 h persönlich anschreiben | 15 Min/Tag |
 | **ab 21.9.** | Gleichgewicht-Runde anbieten in den Gesprächen, die schon laufen | im Gespräch |

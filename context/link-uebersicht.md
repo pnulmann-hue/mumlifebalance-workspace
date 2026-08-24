@@ -13,20 +13,22 @@ Bei jeder Änderung hier nachführen. Skills, die Links in Captions/Mails setzen
 
 | Was | Link | Status |
 |---|---|---|
-| **0€ Freebie: 3-Tage-Energie-Kickstart** | https://mumlifebalance.ch/energie-kickstart | 🔴 **404 — Seite ist Entwurf, nicht veröffentlicht** (WP 3911) |
+| **0€ Freebie: 3-Tage-Energie-Kickstart** | https://mumlifebalance.ch/energie-kickstart/ | 🟢 **live seit 24.08.2026** (WP 3911) · mobil + Desktop geprüft |
 | Keyword-Weg zum selben Freebie | Kommentar/DM **`ENERGIE`** → ManyChat-Flow | 🟢 live (Flow „0€ Produkt Energie-Kickstart") |
 | **Produktpaket 21-Tage-Energie-Routine** | https://doterra.me/b0yKEX | 🟢 200 — vorgefüllter Warenkorb |
 | Öl-Wissen-Bot / Team-Companion | https://bot.mumlifebalance.ch | 🟢 200 |
 | Ältere doTERRA-Seiten | /mama-wird-hausapothekerin · /oelreise | 🟢 200 (Inhalt veraltet, passt nicht zur neuen Positionierung) |
 | Telegram-Kanal „Gesund durchs ganze Jahr" | Chat-ID -1002221396127 | 🟢 live · ⚠️ **Einladungslink fehlt in der Doku** — bitte nachtragen |
 
-### 🚨 Das ist dein dringendster Fix
+### ✅ Erledigt am 24.08.2026 — die Seite ist online
 
-**Dein einziges doTERRA-Freebie hat keine funktionierende Landingpage.** Die Seite existiert in WordPress (ID 3911, die API antwortet mit „nicht berechtigt" statt „nicht gefunden", das heisst sie liegt als Entwurf oder privat), aber sie ist nie veröffentlicht worden. Damit läuft dein gesamter doTERRA-Funnel seit dem 8. Juli nur über den ManyChat-Weg, und jede Frau, die über ein Reel auf dein Profil kommt und auf den Bio-Link tippt, landet im Nichts.
+Die Landingpage war seit dem 8. Juli als leerer Entwurf in WordPress (nur ein Platzhalter-Satz im Content). Am 24.08. wurde das fertige Markup per API eingespielt, das gescopte CSS in den Customizer gehängt und die Seite veröffentlicht. Beide Ansichten sind geprüft: mobil (375px) und Desktop (1280px) ohne horizontalen Überstand, Fotos geladen, AC-Formular 64 vollständig inklusive funktionierendem reCAPTCHA.
 
-Das ist genau der „Übergang 1", den ich in der Strategie als Hauptengpass beschrieben habe — nur schlimmer als gedacht, weil es kein Optimierungsproblem ist, sondern eine tote Seite. Das lässt sich in fünf Minuten beheben: Seite in WordPress veröffentlichen, Link testen, in die Bio setzen.
+**Ein Fehler wurde dabei gefunden und behoben:** Das reCAPTCHA-Widget ist fest 304px breit und blähte auf dem Handy die Grid-Spalte auf 358px auf, weil Grid-Items standardmässig `min-width: auto` haben. Fix: `minmax(0,1fr)` plus `min-width:0` auf den Grid-Kindern, dazu das reCAPTCHA unter 430px auf 80 % skaliert.
 
-⚠️ **Auch das PV-Paket prüfen:** Der Cart-Link ist erreichbar, aber im Briefing steht „vor Launch testen + PV ≥ 150 prüfen" und das ist bisher nicht abgehakt.
+⚠️ **Die Seite ab jetzt nicht mehr im WordPress- oder Elementor-Editor öffnen** — ein Speichern dort wirft den per API eingefügten Inhalt raus. Änderungen laufen über `scripts/wordpress/deploy-energie-kickstart.mjs`.
+
+⚠️ **Offen:** Das PV-Paket hinter `doterra.me/b0yKEX` ist weiterhin nicht auf ≥ 150 PV geprüft.
 
 ---
 
@@ -99,7 +101,7 @@ Die Seite muss in drei Sekunden sagen: *„Ich weiss, wie du dich fühlst, und e
 4. **Ein einziger nächster Schritt** — das 3-Tage-Freebie. Nicht drei Optionen, eine.
 5. **Kein Produkt, kein Preis, keine Marke.**
 
-Das ist genau die Seite, die als Entwurf in deinem WordPress liegt. Sie muss nur online.
+Diese Seite ist seit dem 24.08.2026 live: https://mumlifebalance.ch/energie-kickstart/ — sie gehört als Ziel in die Bio-Link-Seite.
 
 ### Der Satz, der die Brücke im Gespräch baut
 
