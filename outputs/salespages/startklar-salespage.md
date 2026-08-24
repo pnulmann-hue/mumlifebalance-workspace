@@ -87,25 +87,39 @@ Du kennst wahrscheinlich mindestens einen dieser Abende:
 ---
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 BLOCK 4b: Was du dafür NICHT brauchst
-ThriveCart-Tipp: Heller Abschnitt mit Häkchen-Liste, direkt nach dem Schmerz-Block — er nimmt den Druck raus
+📋 BLOCK 4b: Was dich bisher abgehalten hat
+ThriveCart-Tipp: Heller Abschnitt direkt nach dem Schmerz-Block. Die Gedanken in kursiv, die Antworten darunter normal
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 **Denn um auf Instagram anzufangen und gefunden zu werden, braucht es weniger, als du denkst.**
 
-Du brauchst dafür:
+Ich weiss ziemlich genau, was dich bis jetzt davon abgehalten hat. Das sind die Sätze, die ich am häufigsten höre — und was ich dazu sage:
 
-- **Kein zweites Handy und keine Kamera.** Das Gerät, auf dem du das hier gerade liest, reicht.
-- **Keine tausend Follower.** Deine ersten Beiträge sehen ein paar Leute. Das ist bei allen so gewesen.
-- **Kein Ringlicht, kein Stativ, kein Schnittprogramm.** Ich zeig dir alles in der Instagram-App selbst.
-- **Kein fertiges Thema.** Wir setzen einen Platzhalter, damit deine Bio gefüllt ist. Schärfen kannst du später.
-- **Keine Ahnung von Algorithmus und Hashtags.** Du erfährst nur das, was du in der ersten Woche wirklich brauchst.
-- **Keinen Computer.** Ein einziger Schritt läuft über Canva, alles andere machst du am Handy.
-- **Kein bezahltes Werkzeug.** Alles, was ich dir zeige, ist gratis.
-- **Nicht tanzen, nicht auf Trends springen, keine Musik mitsprechen.** Du redest in dein Handy oder zeigst, was du gerade tust.
-- **Nicht extrovertiert sein.** Ich bin es auch nicht. Ich mag Ruhe und rede nicht gern vor Leuten.
-- **Nicht geschminkt und nicht gestylt sein.** Die Videos, die bei mir am besten laufen, sind die aus der Küche.
-- **Keine Erlaubnis von irgendwem.** Es ist dein Profil.
+**„Was denken die Leute, wenn ich plötzlich anfange zu posten?"**
+Sie denken drei Tage lang etwas und dann nichts mehr. Meine Schwiegermutter fragt bei jedem Status, ob das wirklich jemand kauft. Ich hab aufgehört zu antworten, und es hat mich nichts gekostet. Die Frauen, die dich brauchen, kennen dich noch gar nicht.
+
+**„Ich weiss doch gar nicht, was ich erzählen soll."**
+Für die erste Woche musst du dir nichts ausdenken. Du bekommst fünf fertige Beiträge vorgegeben, du füllst nur dein Thema ein.
+
+**„Dafür hab ich keine Zeit."**
+Die Lektionen dauern fünf bis zwölf Minuten. Zusammen 75. Ich baue mein Business seit über einem Jahr in achtzehn Stunden pro Woche mit vier Kindern — es geht in kleinen Stücken.
+
+**„Ich mag mich auf Video nicht anschauen und anhören."**
+Ich auch nicht, und ich bin nicht der Typ, der sich gern zeigt. Dein erstes Reel dauert sieben Sekunden, du sagst einen einzigen Satz, und du darfst ihn zweimal aufnehmen. Beim dritten Mal wird es nur steifer.
+
+**„Ich will niemanden zuspammen."**
+Musst du auch nicht. Du wirst hier niemanden anschreiben und niemandem etwas anbieten. Du richtest dein Profil ein und postest, damit Leute dich finden können.
+
+**„Es machen doch schon alle, ich bin zu spät."**
+Es posten viele Produktbilder. Eine Frau mit einem eigenen Thema ist etwas anderes, und davon gibt es erstaunlich wenige.
+
+**„Ich hab schon mal gepostet, da kam nichts zurück."**
+Das kenne ich. Ich hab drei Jahre lang gepostet, was die Firma geschickt hat, und dann aufgehört. Es lag nicht an dir, und wir gehen die Gründe hier durch.
+
+**„Ich muss vorher noch ein paar Sachen lernen."**
+Das ist der Satz, an dem die meisten hängenbleiben — teilweise über Monate. Du lernst das hier beim Machen.
+
+Und die Technik ist wirklich das kleinste Problem: Es reicht das Handy, auf dem du gerade liest. Kein Ringlicht, kein Stativ, kein Schnittprogramm, kein bezahltes Werkzeug, keine tausend Follower, kein fertiges Thema.
 
 **Was du brauchst, sind drei Sachen:** ein Handy, einen ruhigen Nachmittag und die Bereitschaft, den ersten Beitrag rauszulassen, obwohl er noch nicht perfekt ist.
 
