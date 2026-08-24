@@ -87,6 +87,33 @@ Du kennst wahrscheinlich mindestens einen dieser Abende:
 ---
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 BLOCK 4b: Was du dafür NICHT brauchst
+ThriveCart-Tipp: Heller Abschnitt mit Häkchen-Liste, direkt nach dem Schmerz-Block — er nimmt den Druck raus
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Denn um auf Instagram anzufangen und gefunden zu werden, braucht es weniger, als du denkst.**
+
+Du brauchst dafür:
+
+- **Kein zweites Handy und keine Kamera.** Das Gerät, auf dem du das hier gerade liest, reicht.
+- **Keine tausend Follower.** Deine ersten Beiträge sehen ein paar Leute. Das ist bei allen so gewesen.
+- **Kein Ringlicht, kein Stativ, kein Schnittprogramm.** Ich zeig dir alles in der Instagram-App selbst.
+- **Kein fertiges Thema.** Wir setzen einen Platzhalter, damit deine Bio gefüllt ist. Schärfen kannst du später.
+- **Keine Ahnung von Algorithmus und Hashtags.** Du erfährst nur das, was du in der ersten Woche wirklich brauchst.
+- **Keinen Computer.** Ein einziger Schritt läuft über Canva, alles andere machst du am Handy.
+- **Kein bezahltes Werkzeug.** Alles, was ich dir zeige, ist gratis.
+- **Nicht tanzen, nicht auf Trends springen, keine Musik mitsprechen.** Du redest in dein Handy oder zeigst, was du gerade tust.
+- **Nicht extrovertiert sein.** Ich bin es auch nicht. Ich mag Ruhe und rede nicht gern vor Leuten.
+- **Nicht geschminkt und nicht gestylt sein.** Die Videos, die bei mir am besten laufen, sind die aus der Küche.
+- **Keine Erlaubnis von irgendwem.** Es ist dein Profil.
+
+**Was du brauchst, sind drei Sachen:** ein Handy, einen ruhigen Nachmittag und die Bereitschaft, den ersten Beitrag rauszulassen, obwohl er noch nicht perfekt ist.
+
+Fertig ist besser als perfekt. Das gilt hier ganz besonders, weil ein Profil, das steht, dir mehr bringt als eins, das du seit Monaten im Kopf planst.
+
+---
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 BLOCK 5: Storytelling — die Brücke
 ThriveCart-Tipp: Textblock, evtl. mit einem ehrlichen Foto von dir
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
