@@ -1,67 +1,34 @@
 {
-  "datum": "2026-08-24",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Lehrreich / Mini-Training",
-        "titel": "Lehrreich / Mini-Training",
-        "story_ziel": "Ein konkretes, sofort umsetzbares Learning aus Patricias Wissen — screenshotbar.",
-        "kaeufertyp": "Willi",
-        "cta": "passend zum Thema (BIO / STORY / ECHT1)",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 35,
-        "wochentag": "Montag",
-        "datum": "2026-08-24"
-      },
-      "gesendet_am": "2026-08-24T04:42:01.162Z",
-      "telegram_message_id": 1134,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Lehrreich / Mini-Training",
-        "titel": "Lehrreich / Mini-Training",
-        "story_ziel": "Ein konkretes, sofort umsetzbares Learning aus Patricias Wissen — screenshotbar.",
-        "kaeufertyp": "Willi",
-        "cta": "passend zum Thema (BIO / STORY / ECHT1)",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 35,
-        "wochentag": "Montag",
-        "datum": "2026-08-24"
-      },
-      "gesendet_am": "2026-08-24T04:42:02.099Z",
-      "telegram_message_id": 1135,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "mentoring",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "Bio-Check",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": "Idee: Patricia zeigt einen Screenshot aus ihrem Teamchat, in dem eine Network-Mama fragt, wie sie ihre \"warme Liste\" strukturiert — und beantwortet die Frage live in 3 konkreten Schritten, die sofort umsetzbar sind.\n\nMuster: Expertise / Mini-Training (praktischer Schritt, den die Traumkundin heute implementieren kann)\n\nCTA: \"Wenn du wissen willst, ob deine Liste richtig aufgebaut ist — schreib mir eine DM, wir machen dir einen kostenlosen Bio-Check.\"",
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": null,
+  "launch_vorlage": null,
+  "kontext_snapshot": {
+    "kw": 35,
+    "wochentag": "Montag",
+    "datum": "2026-08-24"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-08-24T05:20:43.002Z",
+  "telegram_message_id": 1136,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
