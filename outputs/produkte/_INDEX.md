@@ -70,6 +70,16 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[08-bio-und-beitraege]]
 - [[_INDEX]]
 
+### 📁 instagram-startklar
+
+- [[00-briefing]]
+- [[00-markt-research]]
+- [[05-ki-assistent-check]]
+- [[notion-eintrag]]
+- [[modul-01]]
+- [[modul-02]]
+- [[modul-03]]
+
 ### 📁 mama-ceo
 
 - [[00-briefing-FINAL]]
