@@ -53,7 +53,7 @@ tags: [produkt, mentoring]
 
 **Folie 5 — Deine Aufgabe**
 > Entscheide dich jetzt. Wenn du umstellst: archiviere alles, was nicht zu dir als Unternehmerin passt.
-> **Mitmach-Heft Seite 2**
+> **Werkstatt · Station „Konto“**
 
 *Sprechnotiz:* Mach das wirklich jetzt und nicht später. Später ist der Ort, an dem Instagram-Profile sterben.
 
@@ -99,7 +99,7 @@ tags: [produkt, mentoring]
 *Sprechnotiz:* Beim Profilbild bitte kein Produktbild und kein Firmenlogo. Menschen kaufen bei Menschen. Nimm ein Bild, auf dem man dein Gesicht erkennt, wenn man das Handy auf Armlänge hält.
 
 **Folie 5 — Deine Aufgabe**
-> Trag beides ein. Mitmach-Heft Seite 3.
+> Trag beides ein — in der Werkstatt bei Station „Namensfelder“.
 
 **Folie 6 — Ausblick**
 > Jetzt kommt der Teil, vor dem sich alle drücken: die Bio.
@@ -155,14 +155,14 @@ tags: [produkt, mentoring]
 **Folie 6 — Dein Bio-Check**
 > Bio steht? Dann lass sie durch meinen **Bio-Check** laufen.
 > Du bekommst zurück, was schon zieht und was noch schwammig ist.
-> *(Link im Kursbereich · Mitmach-Heft Seite 5)*
+> *(Link im Kursbereich · auch in der Werkstatt bei Station „Bio“)*
 
 *Sprechnotiz:* Den Bio-Check hab ich sowieso für alle offen — du kriegst ihn hier gleich mit dazu. Schick deine Bio durch und schau, was zurückkommt. Und wenn was schwammig bleibt, liegt das fast immer am Thema, nicht an den Worten.
 
 > ⚠️ **Beim Aufnehmen:** nur die automatisierte Version nennen. Keinen persönlichen Profilcheck per Sprachnachricht versprechen — der gehört zu „Expertin statt Verkäuferin".
 
 **Folie 7 — Deine Aufgabe**
-> Bio steht auf deinem Profil. Mitmach-Heft Seite 4–5.
+> Bio steht auf deinem Profil. Vorher durch die Werkstatt, Station „Bio“.
 
 **Folie 8 — Ausblick**
 > Als Nächstes bauen wir dein Schaufenster: Highlights und dein Link.
@@ -217,7 +217,7 @@ tags: [produkt, mentoring]
 *Sprechnotiz:* Du brauchst am Anfang kein Linktree und nichts, was monatlich Geld kostet. Instagram lässt dich mehrere Links direkt eintragen. Fang damit an.
 
 **Folie 6 — Deine Aufgabe**
-> Fünf Highlights angelegt, Link steht. Mitmach-Heft Seite 6.
+> Fünf Highlights angelegt, Link steht. Werkstatt · Station „Schaufenster“.
 
 **Folie 7 — Ausblick**
 > Eine letzte Sache, bevor wir posten: dein Konto absichern.
@@ -254,7 +254,7 @@ tags: [produkt, mentoring]
 **Folie 5 — Modul-Abschluss**
 > **Dein Profil steht.** Name, Bio, Highlights, Link, Sicherheit.
 > Schau es dir jetzt einmal so an, wie es eine Fremde sieht.
-> Mitmach-Heft Seite 7: die Profil-Checkliste zum Abhaken.
+> Werkstatt · Station „Profil-Check“: die Checkliste zum Abhaken.
 
 *Sprechnotiz:* Geh raus aus deinem Profil, such dich selber über die Suche und schau dich an wie eine Fremde. Was siehst du in zwei bis drei Sekunden? Wenn du die Frage beantworten kannst, ist Modul eins erledigt.
 

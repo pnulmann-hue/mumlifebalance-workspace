@@ -95,7 +95,7 @@ tags: [produkt, mentoring]
 *Sprechnotiz:* Also lieber einen Tippfehler stehen lassen als löschen und neu hochladen. Kein Mensch ausser dir sieht den Tippfehler. Die Reichweite siehst du dagegen sofort.
 
 **Folie 6 — Deine Aufgabe**
-> Ein Reel ist online. Mitmach-Heft Seite 8.
+> Ein Reel ist online. Deinen ersten Satz vorher durch die Werkstatt, Station „Reel-Hook“.
 
 **Folie 7 — Ausblick**
 > Als Nächstes: dein erstes Karussell, von Canva bis auf dein Profil.
@@ -144,7 +144,7 @@ tags: [produkt, mentoring]
 *Sprechnotiz:* Das Antippen bestimmt die Reihenfolge, nicht die Dateiliste. Wenn du falsch tippst, wischt sich dein Karussell rückwärts. Passiert jeder einmal.
 
 **Folie 5 — Deine Aufgabe**
-> Ein Karussell ist online. Mitmach-Heft Seite 9.
+> Ein Karussell ist online. Die Folien vorher durch die Werkstatt, Station „Karussell“.
 
 **Folie 6 — Ausblick**
 > Jetzt die Story — das Format, in dem später verkauft wird.
@@ -190,7 +190,7 @@ tags: [produkt, mentoring]
 *Sprechnotiz:* Schau dir immer an, wer abgestimmt hat. Das sind die Menschen, die dich schon interessant finden. Die schreibst du später an, wenn du soweit bist.
 
 **Folie 5 — Deine Aufgabe**
-> Eine Story mit Umfrage ist gepostet. Mitmach-Heft Seite 10.
+> Eine Story mit Umfrage ist gepostet. Die Frage vorher durch die Werkstatt, Station „Story“.
 
 **Folie 6 — Ausblick**
 > Zum Abschluss von Modul 2 räumen wir auf: Caption, Hashtags, Musik, Cover.
@@ -230,7 +230,7 @@ tags: [produkt, mentoring]
 
 **Folie 5 — Modul-Abschluss**
 > **Du hast gepostet.** Reel, Karussell, Story — alles drei erledigt.
-> Mitmach-Heft Seite 11: die Post-Checkliste.
+> Werkstatt · Station „Caption“: lass deinen Text einmal prüfen.
 
 *Sprechnotiz:* Wie geil ist das denn. Vor einer Woche wusstest du nicht, wo du drücken sollst, und jetzt sind drei Sachen von dir online. Das war der schwerste Teil.
 

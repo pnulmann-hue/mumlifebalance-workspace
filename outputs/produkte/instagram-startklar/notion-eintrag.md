@@ -32,7 +32,8 @@ Module: 3 Module / 12 Lektionen
   M1 Dein Profil steht (5 Lektionen, 38 Min)
   M2 Du kannst posten (5 Lektionen, 46 Min)
   M3 Sauber starten (2 Lektionen, 17 Min)
-Format: Selbstlernkurs, Bildschirmaufnahmen vom Handy + Folien, plus Mitmach-Heft (PDF)
+Format: Selbstlernkurs, Bildschirmaufnahmen vom Handy + Folien, plus Startklar-Werkstatt
+           (interaktives Mitmach-Tool, startklar.mumlifebalance.ch)
 KI-Assistent (Bonus): kein neuer Bot. Der bestehende 0€-Bio-Check ist fest in Lektion 1.3
            eingebaut (nicht der persönliche Sprachnachricht-Profilcheck — der bleibt
            exklusiv bei „Expertin statt Verkäuferin"). Warum-jetzt läuft über zwei

@@ -21,14 +21,14 @@ Patricia hat den **Bio-Check für Network-Mamas** bereits als 0€-Funnel am Lau
 
 **Umsetzung:**
 - In Lektion 1.3 einblenden, nachdem die Bio getippt ist
-- Im Mitmach-Heft auf Seite 5, unter dem Selbst-Check
+- In der Werkstatt bei Station „Bio“, unter dem Selbst-Check
 - Auf der Checkout-Seite als eingebauter Bestandteil aufführen
 
 **Was das bringt:** kein Bau-Aufwand, der Funnel steht. Jede Käuferin landet zusätzlich in der Bio-Check-Automation. Und der Funnel bekommt hier zum ersten Mal warmes Publikum, das schon gezahlt hat.
 
 ⚠️ **Grenze:** kein **persönlicher** Profilcheck per Sprachnachricht — der bleibt der Kauf-Bonus von „Expertin statt Verkäuferin" (97 CHF).
 
-**Davor im Mitmach-Heft:** ein Selbst-Check in drei Fragen, den sie allein durchgeht, bevor sie den Bio-Check nutzt.
+**Davor in der Werkstatt:** ein Selbst-Check in drei Fragen, den sie allein durchgeht, bevor sie den Bio-Check nutzt.
 
 > Lies deine Bio laut vor. Steht in Zeile 1, wem du wobei hilfst? Erkennt jemand nach drei Sekunden, ob er hier richtig ist? Steht irgendwo ein Firmenname, der da nicht hingehört?
 
@@ -54,4 +54,4 @@ Sobald Startklar stabil dreissig Verkäufe im Monat macht, lohnt sich ein Ausbau
 |---|---|
 | Hook-Generator im Basiskurs | Gehört inhaltlich zur Kundenmaschine, und Patricia hat dafür bereits eigene Werkzeuge |
 | Caption-Bot | Dasselbe. Ausserdem produziert er Texte, die die Käuferin noch nicht beurteilen kann |
-| Support-Bot für Kursfragen | Bei 15 Lektionen und einem Mitmach-Heft gibt es kaum Fragen, die das Heft nicht beantwortet |
+| Support-Bot für Kursfragen | Bei 12 kurzen Lektionen gibt es kaum Fragen, die das Video nicht beantwortet |

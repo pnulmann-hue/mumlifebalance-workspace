@@ -5,7 +5,7 @@ tags: [produkt, salespage, mentoring]
 # 09 — Sales-Page „Startklar"
 
 **Produkt:** Startklar — das Instagram-Grundgerüst für Network-Mamas
-**Preis:** 39 CHF fix · **Format:** 12 Lektionen, ~75 Min, Mitmach-Heft, Werkstatt
+**Preis:** 39 CHF fix · **Format:** 12 Lektionen, ~75 Min, Startklar-Werkstatt
 **Ziel-Plattform:** ThriveCart
 **Erstellt:** 2026-08-24
 
@@ -26,7 +26,7 @@ Nach zwölf kurzen Lektionen steht dein Profil, du hast dein erstes Reel, dein e
 
 🔘 **Ja, ich fang jetzt an — 39 CHF**
 
-*Sofort-Zugang · kein Abo · 12 Lektionen à 5–12 Minuten*
+*Sofort-Zugang · kein Abo · 12 Lektionen à 5–12 Minuten · Werkstatt inklusive*
 
 ---
 
@@ -196,7 +196,7 @@ ThriveCart-Tipp: Drei nummerierte Karten nebeneinander (am Handy untereinander),
 Kein Startdatum, keine Warteliste. Du bekommst deine Zugangsdaten per Mail, dazu deinen Zugangscode für die Werkstatt. Öffnen kannst du alles direkt am Handy.
 
 **2 · Du schaust nicht zu, du machst mit**
-Du startest die erste Lektion und legst dein Handy neben meins. Ich drücke, du drückst mit. Nach jeder Lektion füllst du eine Seite in deinem Mitmach-Heft aus — und was du dort hineinschreibst, tippst du in die Werkstatt, die dir sofort sagt, ob das für deine Wunschkundin funktioniert.
+Du startest die erste Lektion und legst dein Handy neben meins. Ich drücke, du drückst mit. Nach jeder Lektion gehst du in deine Werkstatt und füllst die passende Station aus. Was du dort hineinschreibst, wird sofort geprüft — und du siehst, ob es für deine Wunschkundin funktioniert, bevor du es postest.
 
 **3 · Du postest deine erste Woche**
 Am Ende steht dein Plan: fünf Beiträge, auf feste Tage verteilt. Montag, Mittwoch und Freitag je ein Beitrag, Dienstag und Donnerstag eine Story mit Umfrage. Am Wochenende ist frei. Du musst dir nichts mehr ausdenken, du machst nur noch.
@@ -231,21 +231,29 @@ Die fünf Fallen, in die als Networkerin fast jede tappt, und die dich im schlim
 ---
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 BLOCK 8: Was du zusätzlich bekommst
-ThriveCart-Tipp: Karten nebeneinander, jede mit Wert-Angabe
+📋 BLOCK 8: Das bekommst du alles
+ThriveCart-Tipp: Liste mit Häkchen, jede Zeile fett beginnen. Darunter der Preis-Block
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**🧰 Deine Startklar-Werkstatt**
-Zwölf Stationen zum Ausfüllen. Du tippst deine Bio, deinen ersten Satz, deine Folien rein — und bekommst sofort zurück, ob das für deine Wunschkundin funktioniert. Die Form wird geprüft, und dazu die Frage, ob der Inhalt überhaupt zu deinem Thema passt. Deine Antworten bleiben gespeichert, du kannst jederzeit weitermachen.
+**Das bekommst du alles:**
 
-**📓 Dein Mitmach-Heft**
-13 Seiten zum Ausdrucken oder Ausfüllen am Bildschirm. Jede Lektion hat eine Seite, dazu drei Checklisten zum Abhaken.
+✅ **12 Lektionen zum Mitmachen** — Bildschirmaufnahmen von meinem Handy, je 5 bis 12 Minuten. Du siehst jeden Klick und drückst mit.
 
-**🔍 Dein Bio-Check**
-Wenn deine Bio steht, lässt du sie durch meinen Bio-Check laufen. Er geht sie Zeile für Zeile mit dir durch.
+✅ **Deine Startklar-Werkstatt** — 12 Stationen zum Ausfüllen. Du tippst deine Bio, deinen ersten Satz, deine Folien und deine Umfrage hinein und bekommst sofort zurück, ob das für deine Wunschkundin funktioniert. Nicht nur, ob die Form stimmt, auch ob der Inhalt zu deinem Thema passt.
 
-**🎁 Der Bonus dieses Monats**
-Wechselt jeden Monat. Aktuell: [hier eintragen — Canva-Vorlagen-Set ODER „Fünf Testreels in zehn Minuten"]
+✅ **Fertige Beispiele für jedes Feld** — bei Bio, Hook, Folien und Umfrage liegt jeweils ein ausformulierter Vorschlag bereit. Du füllst dein Thema ein und passt ihn an, bis er nach dir klingt.
+
+✅ **Dein Bio-Check** — geht deine fertige Bio Zeile für Zeile mit dir durch.
+
+✅ **Dein Startplan für die erste Woche** — fünf Beiträge, auf feste Tage verteilt. Du musst dir nichts mehr ausdenken.
+
+✅ **Der Bonus des Monats** — wechselt jeden Monat. Aktuell: [hier eintragen]
+
+✅ **Alle Aktualisierungen** — Instagram baut regelmässig um. Ich nehme betroffene Lektionen neu auf, du bekommst sie ohne Aufpreis.
+
+✅ **Sofort-Zugang, kein Abo, kein Zeitlimit** — du hast alles, solange es den Kurs gibt.
+
+*Und wenn du lieber auf Papier arbeitest: In der Werkstatt gibt es einen Drucken-Knopf, damit kannst du dir alles ausdrucken und von Hand ausfüllen.*
 
 ---
 
@@ -256,7 +264,7 @@ ThriveCart-Tipp: Farbiger Abschnitt, Preis gross, Button darunter
 
 **39 CHF. Einmalig.**
 
-12 Lektionen · Mitmach-Heft · Werkstatt · Bio-Check · Bonus des Monats
+12 Lektionen · Werkstatt mit 12 Stationen · Bio-Check · Bonus des Monats
 
 Kein Abo. Kein Zeitlimit. Du hast den Zugang, solange es den Kurs gibt.
 

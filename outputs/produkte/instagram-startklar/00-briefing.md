@@ -13,7 +13,7 @@ tags: [produkt, mentoring]
 > **Startklar — das Instagram-Grundgerüst für Network-Mamas, die noch nie etwas gepostet haben.**
 > In einer Woche steht dein Profil fertig da und deine ersten fünf Beiträge sind draussen.
 
-**Format:** Selbstlern-Minikurs · 12 Lektionen · rund 75 Minuten Video · 1 Mitmach-Heft (13 Seiten)
+**Format:** Selbstlern-Minikurs · 12 Lektionen · rund 75 Minuten Video · Startklar-Werkstatt mit 12 Stationen
 **Preis:** **39 CHF, fix.** Patricias einheitliche Minikurs-Stufe — kein Early-Bird, keine Aktion, kein Rabatt.
 **Betreuung:** keine — bewusst. Reine Selbstlern-Strecke, damit sie neben 18 Stunden Wochenarbeit läuft.
 
@@ -147,7 +147,7 @@ Startklar allein trägt das nicht, und das soll es auch gar nicht. Seine Aufgabe
 
 | Element | Inhalt | Preis |
 |---|---|---|
-| Hauptprodukt | Startklar, 12 Lektionen + Mitmach-Heft | 39 CHF |
+| Hauptprodukt | Startklar, 12 Lektionen + Werkstatt | 39 CHF |
 | Order Bump 1 | „Finde dein Thema als Network-Mama in 60 Minuten" | +25 statt 39 |
 | Fest eingebaut | **Bio-Check** (dein 0€-Funnel) — direkt in Lektion 1.3 verlinkt | 0 CHF |
 | Upsell direkt nach Kauf | Instagram-Kundenmaschine | 333 CHF |
@@ -227,7 +227,7 @@ Patricias Entscheidung vom 24.08.2026: **jeder Minikurs kostet 39 CHF.** Kein St
 ## Was noch offen ist
 
 - [ ] Aufnahme der 12 Lektionen (eine Vormittags-Session, geschätzt 2 Stunden mit Pausen)
-- [ ] Mitmach-Heft in Patricias Brand bringen (Rohfassung liegt in `04-arbeitsblaetter/`)
+- [x] ~~Mitmach-Heft~~ — gestrichen am 24.08.2026. Die Werkstatt ersetzt es vollständig; wer auf Papier arbeiten will, nutzt dort den Drucken-Knopf. Die .docx bleibt als Archiv in `04-arbeitsblaetter/` liegen.
 - [ ] ThriveCart-Produkt anlegen + Order Bumps verknüpfen
 - [ ] Salespage (Modus 7 in diesem Skill)
 - [ ] Notion-Eintrag in der Produkte-DB (Block liegt in `notion-eintrag.md`)

@@ -46,7 +46,7 @@ tags: [produkt, mentoring]
 *Sprechnotiz:* Meine Kundinnen kaufen nicht das Produkt. Sie kaufen die Frau, die abends wieder schläft. Das Produkt ist nur das Werkzeug dazu.
 
 **Folie 5 — Deine Aufgabe**
-> Prüf dein Profil gegen die fünf Punkte. Mitmach-Heft Seite 12.
+> Prüf dein Profil gegen die fünf Punkte. Werkstatt · Station „Network-Fallen“.
 
 **Folie 6 — Ausblick**
 > Letzte Lektion: dein Plan für die erste eigene Woche.
@@ -96,7 +96,7 @@ tags: [produkt, mentoring]
 > **Dein Profil steht, du kannst posten und du hast einen Plan für die nächste Woche.**
 > Das war der schwerste Teil, und er ist erledigt.
 >
-> Mitmach-Heft Seite 13.
+> Werkstatt · Station „Startplan“.
 
 *Sprechnotiz:* Und jetzt mal ganz ehrlich: du hast in einer Woche mehr gemacht als die meisten in einem halben Jahr. Du bist nicht schneller als die anderen. Du hast angefangen. Der Rest ist Wiederholung.
 
