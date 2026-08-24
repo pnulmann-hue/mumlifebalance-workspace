@@ -13,6 +13,7 @@ Bei jeder Änderung hier nachführen. Skills, die Links in Captions/Mails setzen
 
 | Was | Link | Status |
 |---|---|---|
+| 🔗 **Bio-Link-Seite** (das gehört in die Instagram-Bio) | https://mumlifebalance.ch/hormone/ | 🟢 **live seit 24.08.2026** (WP 4078) · mobil geprüft |
 | **0€ Freebie: 3-Tage-Energie-Kickstart** | https://mumlifebalance.ch/energie-kickstart/ | 🟢 **live seit 24.08.2026** (WP 3911) · mobil + Desktop geprüft |
 | Keyword-Weg zum selben Freebie | Kommentar/DM **`ENERGIE`** → ManyChat-Flow | 🟢 live (Flow „0€ Produkt Energie-Kickstart") |
 | **Produktpaket 21-Tage-Energie-Routine** | https://doterra.me/b0yKEX | 🟢 200 — vorgefüllter Warenkorb |
@@ -69,6 +70,24 @@ Die Landingpage war seit dem 8. Juli als leerer Entwurf in WordPress (nur ein Pl
 | Blog | https://mumlifebalance.ch/blog/ | 🟢 200 |
 
 ⚠️ **Preis-Integrität MBA:** Nie aus einem Evergreen-Produkt direkt zum 1347er-Link verlinken — das widerspricht dem 997er-Event-Preis.
+
+---
+
+## 🔗 Die Bio-Link-Seite — /hormone/
+
+**Live seit 24.08.2026.** Das ist der einzige Link, der in die Instagram-Bio des doTERRA-Profils gehört. Aufbau in der Reihenfolge, in der eine Frau denkt:
+
+1. **Hero** — Foto, Positionierungssatz, die drei Symptome als Chips („müde trotz Schlaf", „Haare im Bürstenkamm", „Kopf wie in Watte")
+2. **Block „Für dich"** — der Energie-Kickstart als grosse orange Karte, darunter die Einladung zur DM
+3. **Der Brückensatz** — *„Ich hab mit meinem eigenen Körper angefangen. Heute greift meine ganze Familie darauf zurück."*
+4. **Block „Für deine Familie"** — Hausapothekerin, Mini-Notfallapotheke, Ölreise, Wissens-Tool
+5. **Kontakt** — Instagram-DM und E-Mail
+
+**Warum diese Reihenfolge:** Das Hormon-Thema ist der Eingang, die Hausapotheke die Erweiterung. Wer über ein Reel kommt, findet oben genau ihr Problem; wer schon Kundin ist, scrollt zum zweiten Block. Damit bleibt die Positionierung vorne scharf, ohne dass die bestehenden Familien-Angebote verloren gehen.
+
+**Regel für diese Seite:** kein Markenname, kein Preis, kein Shop-Link. Alle acht ausgehenden Links am 24.08. geprüft, alle 200.
+
+**Ändern:** `scripts/wordpress/deploy-bio-link-seite.mjs` — nicht im WP-Editor öffnen.
 
 ---
 
