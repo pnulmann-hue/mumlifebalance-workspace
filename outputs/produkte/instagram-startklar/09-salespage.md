@@ -186,6 +186,28 @@ Das ist kein fertiges Business. Das ist der Boden, auf dem eins wachsen kann. Oh
 ---
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 BLOCK 6b: So einfach funktioniert es
+ThriveCart-Tipp: Drei nummerierte Karten nebeneinander (am Handy untereinander), darunter die Zeitangabe
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Und so einfach funktioniert es.**
+
+**1 · Du klickst auf den Knopf und bist drin**
+Kein Startdatum, keine Warteliste. Du bekommst deine Zugangsdaten per Mail, dazu deinen Zugangscode für die Werkstatt. Öffnen kannst du alles direkt am Handy.
+
+**2 · Du schaust nicht zu, du machst mit**
+Du startest die erste Lektion und legst dein Handy neben meins. Ich drücke, du drückst mit. Nach jeder Lektion füllst du eine Seite in deinem Mitmach-Heft aus — und was du dort hineinschreibst, tippst du in die Werkstatt, die dir sofort sagt, ob das für deine Wunschkundin funktioniert.
+
+**3 · Du postest deine erste Woche**
+Am Ende steht dein Plan: fünf Beiträge, auf feste Tage verteilt. Montag, Mittwoch und Freitag je ein Beitrag, Dienstag und Donnerstag eine Story mit Umfrage. Am Wochenende ist frei. Du musst dir nichts mehr ausdenken, du machst nur noch.
+
+**Zeitaufwand:** 75 Minuten Video. Mit Mitmachen und Ausfüllen ein ruhiger Nachmittag — oder drei Abende, wenn dir das lieber ist.
+
+Und wenn du zwischendrin unterbrochen wirst, weil jemand von der Schule anruft: Die Lektionen sind fünf bis zwölf Minuten lang, du findest immer wieder rein.
+
+---
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 BLOCK 7: Was drinsteckt
 ThriveCart-Tipp: Akkordeon, drei Blöcke zum Aufklappen
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
