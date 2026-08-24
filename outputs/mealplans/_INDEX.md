@@ -8,6 +8,7 @@ Auto-Index aller Files in `outputs/mealplans/`. Siehe [[_MOCs/MOC-Mealplan]] fü
 
 ## Dateien
 
+- [[2026-08-24-bohnen-kartoffeln-proteinreich]]
 - [[2026-KW18-einkaufsliste]]
 - [[2026-KW18-wochenplan]]
 - [[2026-KW19-wochenplan]]
