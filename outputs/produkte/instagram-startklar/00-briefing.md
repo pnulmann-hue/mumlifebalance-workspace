@@ -127,11 +127,12 @@ Startklar allein trägt das nicht, und das soll es auch gar nicht. Seine Aufgabe
 | Posten | Annahme | CHF / Monat |
 |---|---|---|
 | Startklar-Verkäufe | 15 × 39 CHF | 585 |
-| Order Bump „Finde dein Thema" dazu | 35 % nehmen ihn, +25 statt 39 CHF | 130 |
-| Upsell in ein 333er-Programm | 5 % von 15 Käuferinnen = 0,75 | 250 |
-| **Summe** | | **965** |
+| Order Bump 1 · Storyideen | 40 % × 12 CHF | 72 |
+| Order Bump 2 · Finde dein Thema | 25 % × 25 CHF | 94 |
+| Upsell in ein 333er-Programm | 2 % (korrigiert 24.08., 5 % war zu optimistisch) | 88 |
+| **Summe** | | **839** |
 
-→ **11580 CHF im Jahr = 29 % des 40k-Ziels.**
+→ **rund 10 000 CHF im Jahr = 25 % des 40k-Ziels.** Durchschnittsbon rund 56 CHF pro Käuferin.
 
 **Was das kostet:** eine Aufnahme-Session, danach null Stunden pro Verkauf.
 
@@ -145,13 +146,16 @@ Startklar allein trägt das nicht, und das soll es auch gar nicht. Seine Aufgabe
 
 ## Angebots-Aufbau beim Verkauf
 
+> ⚠️ **Detaillierte Fassung:** [`08-funnel/bump-upsell-strategie.md`](08-funnel/bump-upsell-strategie.md) — dort steht die verbindliche Version inklusive Checkout-Texten und korrigierter Umsatzrechnung.
+
 | Element | Inhalt | Preis |
 |---|---|---|
 | Hauptprodukt | Startklar, 12 Lektionen + Werkstatt | 39 CHF |
-| Order Bump 1 | „Finde dein Thema als Network-Mama in 60 Minuten" | +25 statt 39 |
+| Order Bump 1 | „90 Storyideen für Networkerinnen" | +12 statt 19 |
+| Order Bump 2 | „Finde dein Thema als Network-Mama in 60 Minuten" | +25 statt 39 |
 | Fest eingebaut | **Bio-Check** (dein 0€-Funnel) — direkt in Lektion 1.3 verlinkt | 0 CHF |
-| Upsell direkt nach Kauf | Instagram-Kundenmaschine | 333 CHF |
-| Downsell | keiner | — |
+| Upsell direkt nach Kauf | Instagram-Kundenmaschine, Startklar angerechnet | 294 statt 333 |
+| Downsell | keiner — erst möglich, wenn das Bonusmodul im 97er umbenannt ist | — |
 
 **„Expertin statt Verkäuferin" kommt bewusst NICHT in diesen Funnel** (Entscheidung 24.08.2026). Der 97er hat ein Bonusmodul „Dein Instagram-Profil als Expertinnen-Magnet" mit Bio, Highlights und den ersten drei gepinnten Posts — auf der Verkaufsseite steht damit fast dasselbe Wort wie bei Startklar. Wer beide hintereinander angeboten bekommt, liest das als Doppelverkauf und kauft dann keines von beiden. Der Weg aus Startklar geht deshalb direkt in die Instagram-Kundenmaschine.
 
