@@ -144,6 +144,33 @@ textarea{resize:vertical; min-height:78px; line-height:1.5}
 .tipp a.tipp-link:hover{filter:brightness(1.07)}
 .tipp a.tipp-link.zweit:hover{background:color-mix(in srgb, var(--orange) 12%, transparent); filter:none}
 
+/* ---------- Patricias Blick (KI-Analyse) ---------- */
+.blick{
+  margin-top:18px; border:1px solid var(--petrol); border-left-width:4px; border-radius:8px;
+  padding:16px 18px; background:color-mix(in srgb, var(--petrol) 6%, transparent);
+}
+.blick .kopfzeile{
+  font-family:var(--display); font-size:16px; font-weight:700; color:var(--petrol); margin-bottom:8px;
+  display:flex; align-items:center; gap:8px;
+}
+.blick p{margin:0 0 10px; font-size:15px; line-height:1.6}
+.blick p:last-child{margin-bottom:0}
+.blick.laedt .kopfzeile::after{
+  content:""; width:13px; height:13px; border-radius:50%;
+  border:2px solid var(--petrol); border-top-color:transparent;
+  animation:dreh .8s linear infinite;
+}
+@keyframes dreh{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){ .blick.laedt .kopfzeile::after{animation:none; opacity:.4} }
+.blick .fehlt{font-size:14px; color:var(--ink-weich)}
+
+.zugang{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+.zugang input{
+  font-family:inherit; font-size:14px; padding:7px 11px; width:180px;
+  background:var(--feld); border:1px solid var(--linie); border-radius:7px; color:var(--ink);
+}
+.zugang input:focus{border-color:var(--petrol); outline:none}
+
 .fuss{display:flex; justify-content:space-between; gap:12px; margin-top:26px; padding-top:18px; border-top:1px solid var(--linie)}
 .fuss .knopf.stumm[disabled]{opacity:.35; cursor:not-allowed}
 
@@ -181,6 +208,10 @@ textarea{resize:vertical; min-height:78px; line-height:1.5}
   <button class="knopf stumm" id="kopieren">Alles kopieren</button>
   <button class="knopf stumm" id="drucken">Drucken</button>
   <button class="knopf stumm" id="leeren">Von vorn</button>
+  <span class="zugang" id="zugang" hidden>
+    <label for="codefeld">Zugangscode</label>
+    <input type="text" id="codefeld" placeholder="STARTKLAR-..." autocomplete="off">
+  </span>
   <span id="status"></span>
 </div>
 
@@ -278,7 +309,7 @@ const STATIONEN = [
 },
 
 {
-  id:"bio", modul:"Modul 1 · Dein Profil steht", lektion:"Lektion 1.3", kurz:"Bio",
+  id:"bio", ki:true, modul:"Modul 1 · Dein Profil steht", lektion:"Lektion 1.3", kurz:"Bio",
   titel:"Deine Bio in vier Zeilen",
   lead:"Zwei bis drei Sekunden schaut jemand auf dein Profil, bevor er entscheidet. Schreib erst hier, dann tipp es ab.",
   felder:[
@@ -380,7 +411,7 @@ const STATIONEN = [
 
 /* ---------- Modul 2 ---------- */
 {
-  id:"hook", modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.2", kurz:"Reel-Hook",
+  id:"hook", ki:true, modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.2", kurz:"Reel-Hook",
   titel:"Dein erster Satz im Reel",
   lead:"Sieben Sekunden Video — aber entschieden wird in den ersten zwei bis dreien. Schreib hier rein, was du in dieser Zeit sagst.",
   felder:[
@@ -408,7 +439,7 @@ const STATIONEN = [
 },
 
 {
-  id:"karussell", modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.3", kurz:"Karussell",
+  id:"karussell", ki:true, modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.3", kurz:"Karussell",
   titel:"Deine sechs Folien",
   lead:"Ein Gedanke pro Folie. Wenn du einen zweiten Satz draufschreiben willst, mach eine neue Folie.",
   felder:[
@@ -443,7 +474,7 @@ const STATIONEN = [
 },
 
 {
-  id:"story", modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.4", kurz:"Story",
+  id:"story", ki:true, modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.4", kurz:"Story",
   titel:"Deine erste Umfrage",
   lead:"Jeder Tipp auf einen Sticker sagt Instagram, dass deine Story interessant war. Und jede Antwort ist ein Gespräch, das du sonst nie gehabt hättest.",
   felder:[
@@ -467,7 +498,7 @@ const STATIONEN = [
 },
 
 {
-  id:"caption", modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.5", kurz:"Caption",
+  id:"caption", ki:true, modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.5", kurz:"Caption",
   titel:"Der Text unter deinem Beitrag",
   lead:"Nur die ersten ein bis zwei Zeilen werden angezeigt. Alles danach liest nur, wer auf „mehr“ tippt.",
   felder:[
@@ -521,7 +552,7 @@ const STATIONEN = [
 },
 
 {
-  id:"startplan", modul:"Modul 3 · Sauber starten", lektion:"Lektion 3.2", kurz:"Startplan",
+  id:"startplan", ki:true, modul:"Modul 3 · Sauber starten", lektion:"Lektion 3.2", kurz:"Startplan",
   titel:"Deine ersten fünf Beiträge",
   lead:"Damit du am Montag nicht vor dem leeren Handy sitzt, planen wir die erste Woche jetzt.",
   felder:[
@@ -548,7 +579,16 @@ const STATIONEN = [
 /* ---------------------------------------------------------------
    Zustand + Speicherung
 ----------------------------------------------------------------*/
+/* ---------------------------------------------------------------
+   Dienst fuer die ausfuehrliche Analyse.
+   URL leer lassen = nur Formcheck (die Datei laeuft dann komplett offline).
+   Nach dem Vercel-Deploy hier die Adresse eintragen, z.B.
+   "https://startklar.mumlifebalance.ch/api/pruefen"
+----------------------------------------------------------------*/
+const DIENST_URL = "";
+
 const SPEICHER="startklar-werkstatt-v1";
+const CODE_SPEICHER="startklar-code";
 let daten = {};
 let aktiv = 0;
 
@@ -559,6 +599,37 @@ function sichern(){
   catch(e){ /* privater Modus: läuft ohne Speichern weiter */ }
 }
 function wert(id){ return daten[id] || (daten[id]={}); }
+
+function zugangscode(){
+  try{ return localStorage.getItem(CODE_SPEICHER)||""; }catch(e){ return ""; }
+}
+function zugangscodeSetzen(c){
+  try{ localStorage.setItem(CODE_SPEICHER, c); }catch(e){}
+}
+
+/** Ihr Thema aus Bio + Name-Feld — das ist der Kontext, gegen den geprueft wird. */
+function themaDerFrau(){
+  const bio=daten.bio||{}, namen=daten.namen||{};
+  const teile=[namen.name, bio.z1, bio.z2].map(x=>(x||"").trim()).filter(Boolean);
+  return teile.join(" \u00b7 ");
+}
+
+async function analyseHolen(st, v, formcheck){
+  const antwort = await fetch(DIENST_URL, {
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({
+      station: st.id,
+      eingabe: v,
+      thema: themaDerFrau(),
+      formcheck: formcheck,
+      code: zugangscode()
+    })
+  });
+  const daten2 = await antwort.json().catch(()=>({}));
+  if(!antwort.ok) throw new Error(daten2.text || "Der Dienst antwortet gerade nicht. Sag Patricia bitte kurz Bescheid, damit sie es weiss.");
+  return daten2.text || "";
+}
 function erledigt(st){
   const v = daten[st.id]; if(!v) return false;
   return Object.values(v).some(x => Array.isArray(x) ? x.length : String(x||"").trim());
@@ -660,7 +731,7 @@ function zeichnen(){
   const antwort=document.createElement("div"); antwort.className="antwort";
   buehne.appendChild(antwort);
 
-  pruef.addEventListener("click",()=>{
+  pruef.addEventListener("click",async ()=>{
     antwort.innerHTML="";
     const meldungen=st.pruefen(v)||[];
     meldungen.forEach(m=>{
@@ -692,6 +763,35 @@ function zeichnen(){
       antwort.appendChild(t);
     }
     railBauen();
+
+    /* ---- Patricias Blick: die ausfuehrliche Analyse ---- */
+    if(!st.ki || !DIENST_URL) return;
+
+    const blick=document.createElement("div");
+    blick.className="blick laedt";
+    const bk=document.createElement("div"); bk.className="kopfzeile";
+    bk.appendChild(document.createTextNode("Ich schau mir das genauer an"));
+    blick.appendChild(bk);
+    antwort.insertBefore(blick, antwort.firstChild);
+
+    try{
+      const text = await analyseHolen(st, v, meldungen.map(m=>m.text));
+      blick.className="blick";
+      bk.textContent="Mein Blick drauf";
+      text.split(/\n{2,}|\n/).map(x=>x.trim()).filter(Boolean).forEach(abs=>{
+        const p=document.createElement("p"); p.textContent=abs; blick.appendChild(p);
+      });
+    }catch(e){
+      blick.className="blick";
+      bk.textContent="Der ausf\u00fchrliche Blick fehlt gerade";
+      const p=document.createElement("p"); p.className="fehlt";
+      let meldung = /bescheid|patricia/i.test(e.message)
+        ? e.message
+        : e.message+" Sag Patricia bitte kurz Bescheid, damit sie es weiss.";
+      if(!/Formcheck/.test(meldung)) meldung += " Der Formcheck oben gilt trotzdem.";
+      p.textContent = meldung;
+      blick.appendChild(p);
+    }
   });
 
   const fuss=document.createElement("div"); fuss.className="fuss";
@@ -736,6 +836,14 @@ document.getElementById("kopieren").addEventListener("click", async ()=>{
   catch(e){ melden("Kopieren hat nicht geklappt. Nimm stattdessen Drucken."); }
 });
 document.getElementById("drucken").addEventListener("click",()=>window.print());
+
+const zugang=document.getElementById("zugang");
+const codefeld=document.getElementById("codefeld");
+if(DIENST_URL){
+  zugang.hidden=false;
+  codefeld.value=zugangscode();
+  codefeld.addEventListener("input",()=>zugangscodeSetzen(codefeld.value.trim()));
+}
 document.getElementById("leeren").addEventListener("click",()=>{
   if(!confirm("Alles löschen und von vorn anfangen?")) return;
   daten={}; sichern(); aktiv=0; zeichnen(); melden("Alles geleert.");
