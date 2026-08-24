@@ -17,7 +17,7 @@ Bei jeder Änderung hier nachführen. Skills, die Links in Captions/Mails setzen
 | **0€ Freebie: 3-Tage-Energie-Kickstart** | https://mumlifebalance.ch/energie-kickstart/ | 🟢 **live seit 24.08.2026** (WP 3911) · mobil + Desktop geprüft |
 | Keyword-Weg zum selben Freebie | Kommentar/DM **`ENERGIE`** → ManyChat-Flow | 🟢 live (Flow „0€ Produkt Energie-Kickstart") |
 | **Produktpaket 21-Tage-Energie-Routine** | https://doterra.me/b0yKEX | 🟢 200 — vorgefüllter Warenkorb |
-| Öl-Wissen-Bot / Team-Companion | https://bot.mumlifebalance.ch | 🟢 200 |
+| Öl-Wissen-Bot / Team-Companion | https://bot.mumlifebalance.ch | 🟢 200 · 🚫 **NUR für bestehende Kundinnen und das Team — nie öffentlich verlinken** (nennt die Marke im Titel, zeigt Team-Login) |
 | Ältere doTERRA-Seiten | /mama-wird-hausapothekerin · /oelreise | 🟢 200 (Inhalt veraltet, passt nicht zur neuen Positionierung) |
 | Telegram-Kanal „Gesund durchs ganze Jahr" | Chat-ID -1002221396127 | 🟢 live · ⚠️ **Einladungslink fehlt in der Doku** — bitte nachtragen |
 
@@ -80,12 +80,12 @@ Die Landingpage war seit dem 8. Juli als leerer Entwurf in WordPress (nur ein Pl
 1. **Hero** — Foto, Positionierungssatz, die drei Symptome als Chips („müde trotz Schlaf", „Haare im Bürstenkamm", „Kopf wie in Watte")
 2. **Block „Für dich"** — der Energie-Kickstart als grosse orange Karte, darunter die Einladung zur DM
 3. **Der Brückensatz** — *„Ich hab mit meinem eigenen Körper angefangen. Heute greift meine ganze Familie darauf zurück."*
-4. **Block „Für deine Familie"** — Hausapothekerin, Mini-Notfallapotheke, Ölreise, Wissens-Tool
+4. **Block „Für deine Familie"** — Hausapothekerin, Mini-Notfallapotheke, Ölreise
 5. **Kontakt** — Instagram-DM und E-Mail
 
 **Warum diese Reihenfolge:** Das Hormon-Thema ist der Eingang, die Hausapotheke die Erweiterung. Wer über ein Reel kommt, findet oben genau ihr Problem; wer schon Kundin ist, scrollt zum zweiten Block. Damit bleibt die Positionierung vorne scharf, ohne dass die bestehenden Familien-Angebote verloren gehen.
 
-**Regel für diese Seite:** kein Markenname, kein Preis, kein Shop-Link. Alle acht ausgehenden Links am 24.08. geprüft, alle 200.
+**Regel für diese Seite:** kein Markenname, kein Preis, kein Shop-Link — und **kein Link auf den Bot**, der ist Kundinnen und Team vorbehalten. Alle ausgehenden Links am 24.08. geprüft, alle 200.
 
 **Ändern:** `scripts/wordpress/deploy-bio-link-seite.mjs` — nicht im WP-Editor öffnen.
 
@@ -135,6 +135,7 @@ Das ist dein Anker-Prinzip in einem Satz: Das Produkt kriegt sie überall, den W
 - **Bio-Link direkt in den Shop** — der häufigste Fehler und der teuerste
 - **Produktfotos im Feed** — sobald Fläschchen das Hauptmotiv sind, bist du wieder Verkäuferin
 - **Das Paket anbieten, bevor sie gefragt hat** — dann ist es ein Pitch, kein Rat
+- **Den Öl-Bot öffentlich verlinken** — `bot.mumlifebalance.ch` heißt „Patricia's doTERRA-Assistentin“, nennt die Marke im ersten Satz und zeigt einen Team-Login. Der Link gehört in die Willkommens-Mail nach dem Kauf, nie auf eine öffentliche Seite.
 
 ---
 

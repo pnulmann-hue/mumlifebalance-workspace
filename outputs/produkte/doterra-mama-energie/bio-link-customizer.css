@@ -51,9 +51,9 @@
   .ebio__emoji { font-size:26px; line-height:1; flex:0 0 auto; }
   .ebio__karte--haupt .ebio__emoji { font-size:30px; }
   .ebio__txt { flex:1 1 auto; min-width:0; }
-  .ebio__titel { font-weight:700; font-size:16px; color:var(--braun); margin-bottom:2px; }
+  .ebio__titel { font-weight:700; font-size:16px; color:var(--braun); margin-bottom:2px; display:block; }
   .ebio__karte--haupt .ebio__titel { color:var(--white); font-size:18px; }
-  .ebio__zeile { font-size:14px; color:var(--soft); }
+  .ebio__zeile { font-size:14px; color:var(--soft); display:block; }
   .ebio__karte--haupt .ebio__zeile { color:rgba(255,255,255,0.92); }
   .ebio__pfeil { flex:0 0 auto; font-size:19px; color:var(--orange); }
   .ebio__karte--haupt .ebio__pfeil { color:var(--white); }
