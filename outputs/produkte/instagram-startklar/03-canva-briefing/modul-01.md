@@ -116,9 +116,9 @@ tags: [produkt, mentoring]
 
 **Folie 1 — Titel**
 > Lektion 1.3
-> Vier Zeilen, die entscheiden, ob jemand bleibt
+> Vier Zeilen, die in zwei bis drei Sekunden entscheiden, ob jemand bleibt
 
-*Sprechnotiz:* Du hast ungefähr drei Sekunden. In der Zeit entscheidet jemand, ob er dir folgt oder weiterwischt. Diese drei Sekunden sind deine Bio.
+*Sprechnotiz:* Du hast zwei bis drei Sekunden. In der Zeit entscheidet jemand, ob er dir folgt oder weiterwischt. Diese zwei bis drei Sekunden sind deine Bio.
 
 **Folie 2 — Was du lernen wirst**
 > - Die vier Zeilen und was in jede gehört
@@ -256,7 +256,7 @@ tags: [produkt, mentoring]
 > Schau es dir jetzt einmal so an, wie es eine Fremde sieht.
 > Mitmach-Heft Seite 7: die Profil-Checkliste zum Abhaken.
 
-*Sprechnotiz:* Geh raus aus deinem Profil, such dich selber über die Suche und schau dich an wie eine Fremde. Was siehst du in drei Sekunden? Wenn du die Frage beantworten kannst, ist Modul eins erledigt.
+*Sprechnotiz:* Geh raus aus deinem Profil, such dich selber über die Suche und schau dich an wie eine Fremde. Was siehst du in zwei bis drei Sekunden? Wenn du die Frage beantworten kannst, ist Modul eins erledigt.
 
 **Folie 6 — Ausblick**
 > Modul 2: jetzt posten wir. Reel, Karussell, Story — und ich zeig dir jedes einzeln.

@@ -280,7 +280,7 @@ const STATIONEN = [
 {
   id:"bio", modul:"Modul 1 · Dein Profil steht", lektion:"Lektion 1.3", kurz:"Bio",
   titel:"Deine Bio in vier Zeilen",
-  lead:"Drei Sekunden schaut jemand auf dein Profil, bevor er entscheidet. Schreib erst hier, dann tipp es ab.",
+  lead:"Zwei bis drei Sekunden schaut jemand auf dein Profil, bevor er entscheidet. Schreib erst hier, dann tipp es ab.",
   felder:[
     {typ:"kurz", key:"z1", titel:"Zeile 1 — Wem hilfst du wobei?"},
     {typ:"kurz", key:"z2", titel:"Zeile 2 — Warum ausgerechnet du?", hinweis:"Deine Erfahrung, eine Zahl, dein Leben."},
@@ -353,7 +353,7 @@ const STATIONEN = [
 {
   id:"profilcheck", modul:"Modul 1 · Dein Profil steht", lektion:"Abschluss Modul 1", kurz:"Profil-Check",
   titel:"Schau dich an wie eine Fremde",
-  lead:"Geh raus aus deinem Profil, such dich über die Suche und schau, was du in drei Sekunden siehst.",
+  lead:"Geh raus aus deinem Profil, such dich über die Suche und schau, was du in zwei bis drei Sekunden siehst.",
   felder:[
     {typ:"haken", key:"check", titel:"Checkliste", optionen:[
       "Business-Profil ist aktiv",
@@ -365,7 +365,7 @@ const STATIONEN = [
       "Ein Link ist eingetragen und funktioniert",
       "Zwei-Faktor ist an"
     ]},
-    {typ:"lang", key:"eindruck", titel:"Was sieht eine Fremde in drei Sekunden auf deinem Profil?"}
+    {typ:"lang", key:"eindruck", titel:"Was sieht eine Fremde in zwei bis drei Sekunden auf deinem Profil?"}
   ],
   pruefen(v){
     const r=[]; const n=(v.check||[]).length;
@@ -382,19 +382,19 @@ const STATIONEN = [
 {
   id:"hook", modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.2", kurz:"Reel-Hook",
   titel:"Dein erster Satz im Reel",
-  lead:"Sieben Sekunden, ein Satz. Schreib hier rein, was du sagen willst — bevor du dreimal neu aufnimmst.",
+  lead:"Sieben Sekunden Video — aber entschieden wird in den ersten zwei bis dreien. Schreib hier rein, was du in dieser Zeit sagst.",
   felder:[
-    {typ:"lang", key:"hook", titel:"Dein erster Satz", hinweis:"Genau der, den du in Sekunde null sagst."}
+    {typ:"lang", key:"hook", titel:"Dein erster Satz", hinweis:"Genau der, den du ab Sekunde null sagst — in zwei bis drei Sekunden muss er durch sein."}
   ],
   pruefen(v){
     const h=v.hook||"";
     if(!h.trim()) return [warn("Schreib deinen ersten Satz rein.")];
     const r=[]; const w=woerter(h).length;
     const g=beginntMit(h,GRUSS);
-    if(g) r.push(stop(`Dein Hook fängt mit „${g.trim()}“ an. Die ersten zwei Sekunden entscheiden, ob jemand bleibt — da darf keine Begrüssung stehen.`));
+    if(g) r.push(stop(`Dein Hook fängt mit „${g.trim()}“ an. Die ersten zwei bis drei Sekunden entscheiden, ob jemand bleibt — da darf keine Begrüssung stehen.`));
     const fl=hat(h,FLOSKEL);
     if(fl) r.push(stop(`„${fl}“ als Einstieg killt dir die Reichweite. Sag stattdessen, worum es geht.`));
-    if(w>18) r.push(warn(`${w} Wörter. Das kriegst du in drei Sekunden nicht gesagt — kürz auf zehn bis zwölf.`));
+    if(w>18) r.push(warn(`${w} Wörter. So lange bleibt niemand — du hast zwei bis drei Sekunden, das sind zehn bis zwölf Wörter.`));
     else if(w<3) r.push(warn("Das ist sehr knapp. Ein Hook braucht einen ganzen Gedanken."));
     else r.push(ok(`${w} Wörter — die Länge sitzt.`));
     const za=hat(h,ZEITANKER); const zahl=/\d/.test(h);

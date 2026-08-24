@@ -65,7 +65,9 @@ tags: [produkt, mentoring]
 > - Cover, Titel, hochladen
 
 **Folie 3 — Dein Übungs-Reel**
-> Sieben Sekunden. Ein Satz. Zum Beispiel:
+> Sieben Sekunden Video. Ein Satz. Entschieden wird in den ersten zwei bis dreien.
+>
+> Zum Beispiel:
 > *„Ich bin [Name] und ich zeig dir hier, wie du als Mama zu mehr [dein Thema] kommst."*
 >
 > Das ist kein Meisterwerk. Das ist dein erster Klick.
