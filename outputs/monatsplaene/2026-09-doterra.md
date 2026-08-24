@@ -17,11 +17,17 @@ tags: [monatsplan, doterra, content]
 
 Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slogan wörtlich das Thema ist: *Funktionieren war gestern.* Nach dem Schlaf-Monat im August ist das die logische Fortsetzung — im August ging es um die Nacht, im September geht es um den Tag, an dem sie durchrennt und abends nicht runterkommt.
 
-**Freebie (0€) — Vorschlag:** „Runterkommen ohne Rückzug — 3 Mikro-Pausen, die dein Nervensystem wirklich erreichen"
-- **Keyword:** `RUHE`
-- **Format:** 3-Mail-Serie, analog aufgebaut zum [[freebie-3-abende-ritual]]
-- **Der Unterschied zum Schlaf-Freebie:** Es geht nicht ums Zubettgehen, sondern um die drei Momente im Mama-Alltag, in denen dein System kippt — Morgen-Hetze, Nachmittags-Crash, Abend-Übergang.
-- ⚠️ **In Mail 3 kommt die DM-Brücke**: eine echte Frage, auf die man antworten kann („Welche der drei Pausen ist bei dir die schwierigste? Schreib mir das Wort zurück."). Das ist der wichtigste einzelne Baustein des Monats.
+**Freebie: KEIN neues bauen — das bestehende reparieren.** ⚠️ Korrektur vom 24.08.2026
+
+Der **3-Tage-Energie-Kickstart** (Keyword `ENERGIE`) existiert seit dem 8. Juli und ist inhaltlich fertig: 3-Mail-Automation in ActiveCampaign, AC-Formular 64, Liste 18, ManyChat-Flow live. Er wurde nur nie richtig genutzt, weil **die Landingpage nie veröffentlicht wurde** (WP 3911 liefert 404). Ein zweites Freebie zu bauen, während das erste nicht online ist, wäre die teuerste Art, das Problem zu umgehen.
+
+- **Keyword:** `ENERGIE` (bleibt)
+- **Landingpage:** https://mumlifebalance.ch/energie-kickstart → **veröffentlichen, das ist Aufgabe Nummer 1 des Monats**
+- **Inhalt passt zur Positionierung:** Tag 1 Protein · Tag 2 Bewegung · Tag 3 Schlaf — genau deine drei Säulen
+- ⚠️ **Was fehlt und im September dazukommt — die DM-Brücke in Mail 3:** eine echte Frage, auf die man antworten kann („Was war bei dir der Moment, an dem du gemerkt hast, dass das nicht mehr normale Müdigkeit ist? Schreib mir zurück."). Das ist der wichtigste einzelne Baustein des Monats.
+- **Ergänzung zur Positionierung:** In Mail 1 und auf der Landingpage die drei Symptome **Hormonchaos · ständige Müdigkeit · Haarausfall** explizit nennen. Haarausfall fehlt bisher komplett und ist dein stärkster Wiedererkennungs-Treffer.
+
+Ein eigenes Nervensystem-Freebie kommt frühestens im Oktober — und nur, wenn `ENERGIE` dann nachweislich Leads bringt.
 
 **Angebot im Hintergrund — Nervensystem-Bundle:**
 - **VMG+** (95 PV) — Basis, deine tägliche Routine
@@ -36,7 +42,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 
 | KW | Tage | Fokus der Woche | Was ausserhalb des Contents passiert |
 |---|---|---|---|
-| **36** | Di 1.9.–Fr 4.9. | **Aufschlag Funktionier-Modus** | Profil-Audit (Bio + Link + 3 Pinned + Highlights) · Freebie fertigstellen |
+| **36** | Di 1.9.–Fr 4.9. | **Aufschlag Funktionier-Modus** | Profil-Audit (Bio + Link + 3 Pinned + Highlights) · Landingpage 3911 veröffentlichen + Link testen |
 | **37** | Mo 7.9.–Fr 11.9. | **Warum dein Körper nicht mehr runterkommt** | Freebie live · Reaktivierung Stadium Soft (7 Kundinnen) |
 | **38** | Mo 14.9.–Fr 18.9. | **Die drei Kipp-Punkte im Tag** | Reaktivierung Stadium Hard (8) · erste DM-Gespräche führen |
 | **39** | Mo 21.9.–Fr 25.9. | **Was ich selbst geändert habe** | Reaktivierung Last-Call (7) · Gleichgewicht-Runde anbieten |
@@ -50,7 +56,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 
 **Leitplanken:** Reels-only (Profil unter 300 Follower) · Zeitanker im Hook · Emotion **und** konkreter Mehrwert · keine Stakkato-Sätze · doTERRA bleibt unsichtbar · kein Heilversprechen, immer „bei mir war" · max 5 Hashtags · **jedes Reel zusätzlich auf Facebook** (dort sitzt deine 35+-Zielgruppe aktiver).
 
-**Job-Verteilung pro Woche:** 2× Reichweite (Share-CTA, kein Keyword) · 1× Autorität/Mehrwert · 1× Lead (Keyword RUHE).
+**Job-Verteilung pro Woche:** 2× Reichweite (Share-CTA, kein Keyword) · 1× Autorität/Mehrwert · 1× Lead (Keyword ENERGIE).
 
 ### KW36 — Aufschlag „Funktionier-Modus"
 
@@ -66,7 +72,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 |---|---|---|---|---|---|
 | 4 | Mo 7.9. | Reichweite | Talking Head | „Ich dachte jahrelang, ich sei einfach nicht belastbar." — der Reframe: nicht kaputt, sondern im Dauer-Alarm. *(Bekenntnis)* | Teilen |
 | 5 | Di 8.9. | Autorität | B-Roll | Perimenopause und Nervensystem: warum das ab Ende 30 zusammenhängt und dir das niemand sagt. *(Contrarian)* | Speichern |
-| 6 | Mi 9.9. | **Lead** | Talking Head | Die drei Momente am Tag, in denen dein System kippt — und was du in fünf Minuten tun kannst. *(Konkrete Zahl)* | **Kommentier RUHE** |
+| 6 | Mi 9.9. | **Lead** | Talking Head | Die drei Momente am Tag, in denen dein System kippt — und was du in fünf Minuten tun kannst. *(Konkrete Zahl)* | **Kommentier ENERGIE** |
 | 7 | Fr 11.9. | Reichweite | POV | Der Nachmittags-Crash um halb vier, den jede Mama kennt und keine benennt. *(Zeitanker)* | Teilen |
 
 ### KW38 — Die drei Kipp-Punkte im Tag
@@ -75,7 +81,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 |---|---|---|---|---|---|
 | 8 | Mo 14.9. | Reichweite | Talking Head | Morgen-Hetze: warum die ersten 20 Minuten deines Tages den Rest bestimmen. *(Zeitanker)* | Teilen |
 | 9 | Di 15.9. | Autorität | B-Roll | Was „Runterkommen" wirklich heisst — und warum Netflix und Handy es nicht sind. *(Anti-Hook)* | Speichern |
-| 10 | Mi 16.9. | **Lead** | Talking Head | Deine Abend-Übergabe: der Moment zwischen Kinder-ins-Bett und Sofa, den du verschenkst. *(Curiosity-Gap)* | **Kommentier RUHE** |
+| 10 | Mi 16.9. | **Lead** | Talking Head | Deine Abend-Übergabe: der Moment zwischen Kinder-ins-Bett und Sofa, den du verschenkst. *(Curiosity-Gap)* | **Kommentier ENERGIE** |
 | 11 | Fr 18.9. | Reichweite | POV | Die Frau, die dir sagt „du musst halt mal entspannen" — und warum das der unbrauchbarste Rat überhaupt ist. *(Contrarian, konkrete Antagonist-Figur)* | Teilen |
 
 ### KW39 — Was ich selbst geändert habe
@@ -84,7 +90,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 |---|---|---|---|---|---|
 | 12 | Mo 21.9. | Reichweite | Talking Head, Goldformel | Vorher-Nachher ohne Zahlen-Show: wie sich ein Dienstagabend bei dir vor zwei Jahren angefühlt hat und wie heute. *(Vorher-Nachher)* | Teilen |
 | 13 | Di 22.9. | Autorität | B-Roll | Was tatsächlich geholfen hat — Krafttraining, Protein, Schlaf, Nährstoffe. Deine echte Routine, kein Produktpitch. *(Konkrete Zahl)* | Speichern |
-| 14 | Mi 23.9. | **Lead** | Talking Head | „Du bist nicht kaputt, du kannst was tun" — die Kernbotschaft als eigenes Reel. *(Bekenntnis)* | **Kommentier RUHE** |
+| 14 | Mi 23.9. | **Lead** | Talking Head | „Du bist nicht kaputt, du kannst was tun" — die Kernbotschaft als eigenes Reel. *(Bekenntnis)* | **Kommentier ENERGIE** |
 
 ### KW40 — Einladung
 
@@ -98,17 +104,17 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 
 ## 4. Story-Plan
 
-**Zwei Kernregeln:** Jede Sequenz hat einen CTA (Freebie RUHE oder Gleichgewicht-Runde), und über die Woche werden alle vier Käufertypen bedient.
+**Zwei Kernregeln:** Jede Sequenz hat einen CTA (Freebie ENERGIE oder Gleichgewicht-Runde), und über die Woche werden alle vier Käufertypen bedient.
 
 **Wochen-Bogen (jede Woche gleich getaktet):**
 
 | Tag | Käufertyp | Sequenz-Typ | CTA |
 |---|---|---|---|
-| **Mo** | 🔴 Rot (direkt, ergebnisorientiert) | Klartext-Slide zum Wochenthema, 3 Slides, keine Umschweife | Freebie RUHE |
+| **Mo** | 🔴 Rot (direkt, ergebnisorientiert) | Klartext-Slide zum Wochenthema, 3 Slides, keine Umschweife | Freebie ENERGIE |
 | **Di** | 🟡 Gelb (emotional, Story) | Behind-the-Scenes aus deinem Tag, echter Moment | Antwort-Sticker (Gespräch!) |
-| **Mi** | 🟢 Grün (Sicherheit, Beziehung) | Frage-Sticker + du beantwortest Antworten in Slides | Freebie RUHE |
+| **Mi** | 🟢 Grün (Sicherheit, Beziehung) | Frage-Sticker + du beantwortest Antworten in Slides | Freebie ENERGIE |
 | **Do** | 🔵 Blau (Fakten, Details) | Aufklärung: Cortisol, Perimenopause, Nervensystem — mit Quelle | Speichern + Link |
-| **Fr** | gemischt | Wochen-Rückblick + Ausblick, lockerer Ton | Freebie RUHE |
+| **Fr** | gemischt | Wochen-Rückblick + Ausblick, lockerer Ton | Freebie ENERGIE |
 
 **Zwei Pflicht-Sequenzen im Monat:**
 
@@ -125,9 +131,9 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 | Wann | Was | Aufwand |
 |---|---|---|
 | **1.–4.9.** | Profil-Audit: Bio umschreiben, Freebie-Link rein, 3 Beiträge anheften, Highlights neu ordnen | ½ Tag |
-| **1.–4.9.** | Freebie-Text fertig + AC-Automation aufsetzen + **DM-Brücke in Mail 3** | 1 Tag |
+| **1.–4.9.** | Landingpage veröffentlichen · drei Symptome ergänzen · **DM-Brücke in Mail 3** | 1 Tag |
 | **ab 8.9.** | Reaktivierung: 22 inaktive Kundinnen in drei Wellen, Templates liegen fertig | 3× 45 Min |
-| **laufend** | Jeden RUHE-Lead innerhalb 24 h persönlich anschreiben | 15 Min/Tag |
+| **laufend** | Jeden ENERGIE-Lead innerhalb 24 h persönlich anschreiben | 15 Min/Tag |
 | **ab 21.9.** | Gleichgewicht-Runde anbieten in den Gesprächen, die schon laufen | im Gespräch |
 | **28.–30.9.** | Einschreibungen abschliessen, Oktober-Freebie vorbereiten | 1 Tag |
 
@@ -138,7 +144,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 - Keine Karussells auf dem doTERRA-Profil
 - Kein Produktname, kein Markenname, kein Preis im Feed
 - Kein Beraterinnen-Content im Feed — die Botschafterinnen-Frage kommt frühestens im Oktober und nur im Gespräch
-- Kein neues Freebie zusätzlich zum RUHE-Freebie
+- Kein neues Freebie zusätzlich zum ENERGIE-Freebie
 - Kein Wochenend-Posting
 
 ---
@@ -147,7 +153,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 
 - `/content-bauen` oder `/reels` für die Detail-Briefings der 15 Reels
 - `/story` für die Tages-Slides, besonders die beiden Pflicht-Sequenzen
-- `/funnel` für die RUHE-Mail-Serie inklusive DM-Brücke
+- `/funnel` für die ENERGIE-Mail-Serie inklusive DM-Brücke
 - Notion: Jahresplanung-Einträge mit Status „doTERRa" für Freebie und Bundle anlegen
 
 ---
