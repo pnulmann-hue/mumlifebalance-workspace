@@ -82,7 +82,9 @@ Das ist der wichtigste Teil des Briefings. Ohne diese Grenzen frisst Startklar d
 | Thema | Gehört zu | In Startklar erlaubt |
 |---|---|---|
 | Thema, Nische, Experten-Satz | „Finde dein Thema" (39) | Nur ein **Platzhalter-Satz in 10 Minuten**, damit die Bio überhaupt gefüllt werden kann. Mit klarem Verweis: die scharfe Version kommt später. |
-| Positionierung, Expertin-Haltung | „Expertin statt Verkäuferin" (97) | Nichts. Kein Wort. |
+| Positionierung, Expertin-Haltung, Story-Typen, Message, Content-Säulen | „Expertin statt Verkäuferin" (97) | Nichts. Kein Wort. |
+| **Bio, Highlights, 3 gepinnte Posts als Positionierungs-Aufgabe** | „Expertin statt Verkäuferin", Bonusmodul „Dein Instagram-Profil als Expertinnen-Magnet" | ⚠️ **Echte Nähe.** Startklar zeigt nur, **wo sie tippt und klickt**. Was inhaltlich reingehört, damit man sie als Expertin erkennt, bleibt im 97er. |
+| Persönlicher Profilcheck per Sprachnachricht | „Expertin statt Verkäuferin" (dortiger Kauf-Bonus) | Nichts. Der bleibt exklusiv im 97er. |
 | Content-Säulen, Ideen-System, Käufertypen, Keyword-Strategie, DM-Gesprächsführung bis zum Abschluss | Instagram-Kundenmaschine (333) | Nichts von der Strategie. Nur die **Bedienung**: wo drückst du, wie lädst du hoch, welcher Ordner ist welcher. |
 | Zeitsystem, KI-Mitarbeiter, Delegieren | Mama-CEO (333) | Nichts. Die 20-Minuten-Routine in Modul 3 ist eine reine Klick-Reihenfolge, kein Zeitmanagement-Konzept. |
 | Eigene digitale Produkte, Produkttreppe | Digitale Produktwelt (333) | Nichts. |
@@ -146,25 +148,56 @@ Startklar allein trägt das nicht, und das soll es auch gar nicht. Seine Aufgabe
 |---|---|---|
 | Hauptprodukt | Startklar, 15 Lektionen + Mitmach-Heft | 39 CHF |
 | Order Bump 1 | „Finde dein Thema als Network-Mama in 60 Minuten" | +25 statt 39 |
-| Order Bump 2 | Bio-Check (bestehender Funnel, als Bonus-Zugang) | 0 CHF, als Wert-Zugabe |
 | Upsell direkt nach Kauf | Instagram-Kundenmaschine | 333 CHF |
-| Downsell | „Expertin statt Verkäuferin" | 97 CHF |
+| Downsell | keiner | — |
+
+**„Expertin statt Verkäuferin" kommt bewusst NICHT in diesen Funnel** (Entscheidung 24.08.2026). Der 97er hat ein Bonusmodul „Dein Instagram-Profil als Expertinnen-Magnet" mit Bio, Highlights und den ersten drei gepinnten Posts — auf der Verkaufsseite steht damit fast dasselbe Wort wie bei Startklar. Wer beide hintereinander angeboten bekommt, liest das als Doppelverkauf und kauft dann keines von beiden. Der Weg aus Startklar geht deshalb direkt in die Instagram-Kundenmaschine.
+
+**Auch kein Bio-Check als Zugabe.** Der persönliche Profilcheck ist der Kauf-Bonus von „Expertin statt Verkäuferin". Wenn er im 39er gratis mitläuft, ist er im 97er nichts mehr wert.
 
 **Warum jetzt kaufen — ohne Preisspiel:** Der Preis bleibt bei 39, immer. Die Dringlichkeit kommt aus zwei anderen Quellen:
 
 1. **Aus dem Problem selbst.** Jede Woche ohne fertiges Profil ist eine Woche, in der sie postet und nichts zurückkommt — oder gar nicht erst postet. Das darf in der Salespage klar benannt werden, weil es stimmt.
 2. **Über einen Bonus, der wechselt.** Ein Zusatz pro Monat, der nach vier Wochen durch den nächsten ersetzt wird. Kein Rabatt, kein Countdown, keine erfundene Knappheit.
 
-**Bonus-Rotation als Vorschlag:**
+**Bonus-Rotation — zwei Stück im Wechsel:**
 
 | Monat | Bonus | Aufwand für Patricia |
 |---|---|---|
-| 1 | Canva-Vorlagen-Set: 6 Karussell-Folien + 5 Highlight-Cover in Brand-Farben | einmalig bauen, danach null |
-| 2 | Bio-Check als geführter Durchgang (bestehender Funnel) | null, läuft schon |
-| 3 | Aufnahme-Liste: 10 Reel-Einstiege zum Nachsprechen für die erste Woche | eine Seite, einmalig |
-| 4 | Q&A-Aufzeichnung: die 12 häufigsten Fragen aus den DMs | einmal aufnehmen, danach evergreen |
+| ungerade | **Canva-Vorlagen-Set:** 6 Karussell-Folien + 5 Highlight-Cover in Brand-Farben | einmalig bauen, danach null |
+| gerade | **„Fünf Testreels in zehn Minuten"** — Handy-Aufnahme, in der Patricia es live macht und dabei die Testreel-Logik erklärt | einmal aufnehmen, danach evergreen |
 
-Danach wieder von vorne. Wer im Monat 1 kauft, bekommt den Vorlagen-Bonus — wer im Monat 2 kauft, bekommt einen anderen. Beide haben einen echten Grund, nicht zu warten.
+Wer diesen Monat kauft, bekommt den einen — wer nächsten Monat kauft, den anderen. Beide haben einen echten Grund, nicht zu warten.
+
+*Der Bio-Check als dritter Bonus ist gestrichen: der persönliche Profilcheck gehört „Expertin statt Verkäuferin" und darf im 39er nicht verschenkt werden.*
+
+---
+
+### Bonus 3 im Detail — „Fünf Testreels in zehn Minuten"
+
+Der stärkste der drei, weil er das grösste Anfängerinnen-Problem auflöst: sie steht vor der Kamera und weiss nicht, ob das, was sie sagt, funktioniert — und dreht deshalb gar nicht.
+
+**Die Logik (Patricias eigene Testmethode, vereinfacht):**
+
+> Ein Video. Fünf verschiedene erste Sätze. Über die Woche verteilt hochladen.
+> Was sich unterscheidet, ist nur der Anfang — also sagt dir das Ergebnis, welcher Anfang zieht.
+
+**Was Patricia im Video zeigt (rund 10 Minuten, in einem Rutsch):**
+
+1. Handy hinstellen, ein ganz normales Alltagsvideo aufnehmen — beim Brötchen schmieren, beim Aufräumen, beim Kaffee holen. Sieben bis zehn Sekunden, ungeschminkt, kein Set.
+2. Dasselbe Video fünfmal duplizieren.
+3. Fünf verschiedene erste Sätze drauflegen — als Text und gesprochen.
+4. Beschreibung, Musik und Hashtags bleiben bei allen fünf **gleich**. Das ist der ganze Trick, sonst weiss sie hinterher nicht, woran es lag.
+5. Über sieben Tage verteilt hochladen, nie zwei am selben Tag.
+6. Nach der Woche die Aufrufe nebeneinanderlegen. Der Anfang mit den meisten Aufrufen ist ihr Muster — den baut sie nach.
+
+**Die Regel, die im Video fallen muss:** immer nur eine Sache ändern. Wer gleichzeitig Video, Thema und Anfang wechselt, lernt gar nichts.
+
+**Beweis-Linie, die Patricia dazu erzählen kann (ihre echten Zahlen):** dasselbe candide Küchen-Video mit drei verschiedenen Anfängen — 1300, 980 und 482 Aufrufe. Gleiches Video, gleiche Beschreibung, dreifacher Unterschied allein durch den ersten Satz. Posierte Videos zum selben Zeitpunkt lagen bei rund 120.
+
+**Abgrenzung:** Hier wird die **Testmethode** gezeigt, nicht Patricias Hook-Bibliothek. Welche Hook-Formeln es gibt und wann welche greift, bleibt in der Instagram-Kundenmaschine.
+
+*Verworfen: eine Q&A-Aufzeichnung aus den häufigsten DM-Fragen — Patricia will den Kurs nicht mit Erklär-Material aufblasen, das im Mitmach-Heft schon steht.*
 
 ---
 
@@ -183,7 +216,7 @@ Patricias Entscheidung vom 24.08.2026: **jeder Minikurs kostet 39 CHF.** Kein St
 
 **Keine Early-Bird-Preise bei Minikursen.** Ein Minikurs läuft evergreen und wird ständig quergelesen — wer letzten Monat 39 gezahlt hat und diesen Monat 29 sieht, kauft den nächsten Kurs nicht mehr sofort, sondern wartet auf die Aktion. Dringlichkeit läuft über wechselnde Boni.
 
-**Naheliegender nächster Schritt (noch nicht gebaut):** ein Minikurs-Bündel aus Startklar + „Finde dein Thema" + „Vom Network-Wissen zum eigenen Produkt" für 89 statt 117. Sobald drei Minikurse auf derselben Stufe stehen, verkauft sich das Bündel praktisch von selbst.
+**Zum Bündel-Gedanken — Korrektur:** Auf der 39er-Stufe stehen aktuell nur zwei Kurse, Startklar und „Finde dein Thema". Für ein Bündel braucht es einen dritten. „Expertin statt Verkäuferin" taugt dafür nicht, weil er 97 kostet und inhaltlich über die Einstiegsstufe hinausgeht. Also entweder erst einen dritten 39er bauen — oder das Bündel als Zweierpack Startklar + Finde dein Thema für 65 statt 78 anbieten.
 
 ---
 

@@ -15,19 +15,15 @@ Für ein 39-CHF-Produkt wäre ein eigener Bot ein Draufzahlgeschäft — Bau, Ho
 
 ---
 
-## Stattdessen: der bestehende Bio-Check als eingebauter Bonus
+## Und auch kein Bio-Check als Zugabe
 
-Patricia hat den **Bio-Check für Network-Mamas** bereits als Funnel am Laufen (`context/active-funnels.json`, Status live). Genau das Werkzeug, das in Lektion 1.3 gebraucht wird — sie tippt ihre Bio und will wissen, ob sie taugt.
+Naheliegend wäre, den bestehenden **Bio-Check** einzubauen — sie tippt in Lektion 1.3 ihre Bio und will wissen, ob sie taugt. **Geht trotzdem nicht:** der persönliche Profilcheck per Sprachnachricht ist der Kauf-Bonus von „Expertin statt Verkäuferin" (97 CHF). Wer ihn im 39er gratis bekommt, hat im 97er einen Grund weniger.
 
-**Umsetzung:**
-- In Lektion 1.3 als Bonus einblenden: „Wenn deine Bio steht, lass sie einmal durch meinen Bio-Check laufen."
-- Im Mitmach-Heft auf Seite 5 als Kasten mit Link
-- Auf der Checkout-Seite als Order Bump 2 zum Preis von null — er kostet Patricia nichts, sieht in der Auflistung aber nach Wert aus
+**Stattdessen in Lektion 1.3 und im Mitmach-Heft:** ein Selbst-Check in drei Fragen, den sie allein durchgeht — kostet Patricia nichts und nimmt dem 97er nichts weg.
 
-**Was das bringt:**
-1. Kein Bau-Aufwand. Der Funnel steht.
-2. Jede Käuferin landet zusätzlich in der Bio-Check-Automation und wird dort weiter betreut.
-3. Der Bio-Check hat bisher kaltes Publikum bekommen. Hier bekommt er warmes, das schon gezahlt hat.
+> Lies deine Bio laut vor. Steht in Zeile 1, wem du wobei hilfst? Erkennt jemand nach drei Sekunden, ob er hier richtig ist? Steht irgendwo ein Firmenname, der da nicht hingehört?
+
+**Das Warum-jetzt beim Kauf** läuft über die zwei wechselnden Boni im Briefing (Canva-Vorlagen-Set / „Fünf Testreels in zehn Minuten").
 
 ---
 

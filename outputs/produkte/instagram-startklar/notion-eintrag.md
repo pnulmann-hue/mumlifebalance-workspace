@@ -33,7 +33,9 @@ Module: 3 Module / 15 Lektionen
   M2 Du kannst posten (5 Lektionen, 46 Min)
   M3 Du bleibst dran (5 Lektionen, 40 Min)
 Format: Selbstlernkurs, Bildschirmaufnahmen vom Handy + Folien, plus Mitmach-Heft (PDF)
-KI-Assistent (Bonus): kein neuer Bot. Bestehender Bio-Check wird als Bonus eingebaut.
+KI-Assistent (Bonus): kein neuer Bot. Bio-Check bleibt exklusiv bei „Expertin statt
+           Verkäuferin". Warum-jetzt läuft über zwei wechselnde Boni
+           (Canva-Vorlagen-Set / „Fünf Testreels in zehn Minuten").
 Launch-Datum (geplant): offen — Vorschlag KW 37/2026, sobald aufgenommen
 Markt-Research-Notiz: Top-Painpoint = Lücke zwischen Strategie-Wissen und
            Klick-Können. Wettbewerb im 2-stelligen Segment reichlich vorhanden
@@ -47,5 +49,8 @@ Verknüpfte Produkte:
   Vorgelagert: 0€ Starter-Guide (Keyword SICHTBAR)
   Order Bump: Finde dein Thema als Network-Mama (39 → 25)
   Upsell: Instagram-Kundenmaschine (333)
-  Downsell: Expertin statt Verkäuferin (97)
+  Downsell: keiner
+  BEWUSST NICHT im Funnel: Expertin statt Verkäuferin (97) — dessen Bonusmodul
+  „Instagram-Profil als Expertinnen-Magnet" (Bio/Highlights/3 gepinnte Posts)
+  liest sich für Käuferinnen wie eine Doppelung von Startklar-Modul 1.
 ```
