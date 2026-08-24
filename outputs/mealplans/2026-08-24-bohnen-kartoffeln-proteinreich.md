@@ -72,7 +72,8 @@ tags: [mealplan]
 ---
 
 ## 4. Bohnengratin vom Hotzenhof — dein eigenes Rezept, protein-umgebaut
-**Quelle:** eigene DB → `Bohnengratin.pdf` (Coopzeitung, Rezept von Bernadette Hotz)
+**Quelle:** eigene DB → [Bohnengratin.pdf im Drive](https://drive.google.com/file/d/1neMcNgvEf4cP1sJ_mHmFfozKNOucq8l7/view?usp=drivesdk) (Coopzeitung KW28/2012, Rezept von Bernadette Hotz, Hotzenhof Deiniken/Baar ZG)
+**Online-Fassung:** [Volg](https://www.volg.ch/dorfplatz/rezepte/artikel/bohnengratin-a-la-bernadette/) · [Naturena](https://www.naturena.ch/rezepte/rezepte-details/bohnengratin-a-la-bernadette/) — dort mit 200 g Crème fraîche und 120 g Greyerzer. Der alte Coopzeitung-PDF-Link ist tot (302 auf die Startseite).
 **Original (4 P):** 100 g Speckwürfeli · 500 g Bohnen · 300 g Kartoffeln · 200 g Sauerrahm · 150 g Greyerzer · 2 Fleischtomaten. Keine Nährwerte im PDF — gerechnet landet das bei ~20 g P und ~40 g Fett pro Portion. Also fett-lastig, protein-arm.
 
 ### Patricia-Umbau (4 Portionen)
