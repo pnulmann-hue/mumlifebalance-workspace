@@ -336,7 +336,7 @@ const STATIONEN = [
     if(v.z4 && hat(v.z4,CTA)) r.push(ok("Zeile 4 sagt, was als Nächstes passiert."));
     return r;
   },
-  tipp:{kopf:"Und jetzt der Bio-Check", text:"Wenn deine Bio steht, lass sie durch meinen Bio-Check laufen — du bekommst zurück, was schon zieht und was noch schwammig ist. Den Link findest du in deinem Kursbereich. Und wenn dabei rauskommt, dass dein Thema selbst noch wackelt: genau dafür gibt es „Finde dein Thema als Network-Mama in 60 Minuten“.", link:{url:"https://mumlifebalance.thrivecart.com/thema-finden/", label:"Finde dein Thema ansehen"}}
+  tipp:{kopf:"Und jetzt der Bio-Check", text:"Deine Bio steht — jetzt lass sie durch meinen Bio-Check laufen. Der geht Zeile für Zeile mit dir durch und sagt dir, was schon zieht und was noch schwammig ist. Kostet dich nichts. Und falls dabei rauskommt, dass dein Thema selbst noch wackelt: genau dafür gibt es „Finde dein Thema als Network-Mama in 60 Minuten“.", links:[{url:"https://mumlifebalance.ch/bio-check", label:"Zum Bio-Check"}, {url:"https://mumlifebalance.thrivecart.com/thema-finden/", label:"Finde dein Thema ansehen"}]}
 },
 
 {
@@ -581,11 +581,18 @@ const STATIONEN = [
 ----------------------------------------------------------------*/
 /* ---------------------------------------------------------------
    Dienst fuer die ausfuehrliche Analyse.
-   URL leer lassen = nur Formcheck (die Datei laeuft dann komplett offline).
-   Nach dem Vercel-Deploy hier die Adresse eintragen, z.B.
-   "https://startklar.mumlifebalance.ch/api/pruefen"
+
+   Auf der eigenen Domain wird relativ aufgerufen (kein CORS noetig),
+   ueberall sonst absolut. Leerer String = nur Formcheck.
+
+   WICHTIG: In einer claude.ai-Vorschau ist der Aufruf technisch
+   gesperrt (die Seite darf dort keine fremden Adressen aufrufen).
+   Zum Testen die Werkstatt unter startklar-service.vercel.app oeffnen.
 ----------------------------------------------------------------*/
-const DIENST_URL = "https://startklar-service.vercel.app/api/pruefen";
+const EIGENE_HOSTS = ["startklar.mumlifebalance.ch", "startklar-service.vercel.app", "mumlifebalance.ch", "www.mumlifebalance.ch"];
+const DIENST_URL = EIGENE_HOSTS.includes(location.hostname)
+  ? "/api/pruefen"
+  : "https://startklar-service.vercel.app/api/pruefen";
 
 const SPEICHER="startklar-werkstatt-v1";
 const CODE_SPEICHER="startklar-code";
@@ -785,9 +792,16 @@ function zeichnen(){
       blick.className="blick";
       bk.textContent="Der ausf\u00fchrliche Blick fehlt gerade";
       const p=document.createElement("p"); p.className="fehlt";
-      let meldung = /bescheid|patricia/i.test(e.message)
-        ? e.message
-        : e.message+" Sag Patricia bitte kurz Bescheid, damit sie es weiss.";
+      let meldung;
+      if(/Failed to fetch|NetworkError|Load failed/i.test(e.message)){
+        meldung = EIGENE_HOSTS.includes(location.hostname)
+          ? "Ich komme gerade nicht an den Dienst ran. Sag Patricia bitte kurz Bescheid, damit sie es weiss."
+          : "Diese Vorschau darf den Dienst nicht aufrufen. \u00d6ffne die Werkstatt \u00fcber deinen Kursbereich, dann geht es.";
+      } else {
+        meldung = /bescheid|patricia/i.test(e.message)
+          ? e.message
+          : e.message+" Sag Patricia bitte kurz Bescheid, damit sie es weiss.";
+      }
       if(!/Formcheck/.test(meldung)) meldung += " Der Formcheck oben gilt trotzdem.";
       p.textContent = meldung;
       blick.appendChild(p);
