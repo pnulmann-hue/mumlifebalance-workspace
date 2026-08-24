@@ -1,0 +1,745 @@
+<title>Startklar-Werkstatt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+
+<style>
+:root{
+  --creme:#f1ecdd; --petrol:#12828c; --tief:#29556d; --orange:#dc822e;
+  --ground:#f7f4ec; --card:#ffffff; --ink:#16323a; --ink-weich:#5a6b70;
+  --linie:#e2dccd; --feld:#fdfcf8;
+  --ok:#2f7d5c; --ok-bg:#e8f2ec; --warn:#b45e12; --warn-bg:#fbf0e2; --stop:#a8332a; --stop-bg:#f8e8e6;
+  --schatten:0 1px 2px rgba(22,50,58,.06), 0 8px 24px rgba(22,50,58,.05);
+  --radius:10px;
+  --display:"Philosopher", Georgia, serif;
+  --body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --creme:#1d2b30; --petrol:#4bb8bf; --tief:#8fb6c6; --orange:#e79a51;
+    --ground:#121c20; --card:#1a262b; --ink:#e8e2d4; --ink-weich:#9dabaf;
+    --linie:#2b3b41; --feld:#162126;
+    --ok:#6cc79a; --ok-bg:#17302a; --warn:#e0a35f; --warn-bg:#33261a; --stop:#e58a80; --stop-bg:#331f1e;
+    --schatten:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  --creme:#1d2b30; --petrol:#4bb8bf; --tief:#8fb6c6; --orange:#e79a51;
+  --ground:#121c20; --card:#1a262b; --ink:#e8e2d4; --ink-weich:#9dabaf;
+  --linie:#2b3b41; --feld:#162126;
+  --ok:#6cc79a; --ok-bg:#17302a; --warn:#e0a35f; --warn-bg:#33261a; --stop:#e58a80; --stop-bg:#331f1e;
+  --schatten:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--body); font-size:16px; line-height:1.55;
+  -webkit-text-size-adjust:100%;
+}
+h1,h2,h3{font-family:var(--display); font-weight:700; text-wrap:balance; margin:0}
+p{margin:0}
+button{font-family:inherit; font-size:inherit}
+:focus-visible{outline:3px solid var(--petrol); outline-offset:2px; border-radius:4px}
+
+/* ---------- Kopf ---------- */
+.kopf{
+  background:var(--tief); color:#f4efe3;
+  padding:26px clamp(16px,4vw,40px) 22px;
+}
+:root[data-theme="dark"] .kopf, :root:not([data-theme="light"]) .kopf{color:#eef3f5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .kopf{background:#16323d}}
+:root[data-theme="dark"] .kopf{background:#16323d}
+.kopf-innen{max-width:1120px; margin:0 auto; display:flex; flex-wrap:wrap; gap:16px; align-items:baseline; justify-content:space-between}
+.kopf h1{font-size:clamp(26px,4vw,36px); letter-spacing:.01em; color:inherit}
+.kopf .unter{font-size:14.5px; opacity:.82; margin-top:4px; max-width:52ch}
+.fortschritt{display:flex; align-items:center; gap:10px; font-size:14px; opacity:.9}
+.balken{width:120px; height:6px; border-radius:99px; background:rgba(255,255,255,.22); overflow:hidden}
+.balken span{display:block; height:100%; background:#7fd0d4; width:0; transition:width .35s ease}
+.zaehler{font-variant-numeric:tabular-nums}
+
+/* ---------- Rahmen ---------- */
+.rahmen{max-width:1120px; margin:0 auto; padding:clamp(16px,3vw,32px); display:grid; gap:clamp(16px,3vw,32px); grid-template-columns:250px 1fr; align-items:start}
+@media (max-width:860px){ .rahmen{grid-template-columns:1fr} }
+
+/* ---------- Stationsleiste ---------- */
+.rail{position:sticky; top:16px; display:flex; flex-direction:column; gap:2px}
+@media (max-width:860px){
+  .rail{position:static; flex-direction:row; overflow-x:auto; gap:8px; padding-bottom:6px; -webkit-overflow-scrolling:touch}
+}
+.rail-gruppe{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-weich); font-weight:700; margin:14px 0 6px; padding-left:10px}
+@media (max-width:860px){ .rail-gruppe{display:none} }
+.rail button{
+  display:flex; align-items:center; gap:9px; width:100%; text-align:left;
+  background:transparent; border:0; border-radius:8px; padding:8px 10px; cursor:pointer;
+  color:var(--ink); font-size:14.5px; line-height:1.3;
+}
+@media (max-width:860px){ .rail button{width:auto; white-space:nowrap; background:var(--card); border:1px solid var(--linie)} }
+.rail button:hover{background:var(--creme)}
+.rail button[aria-current="true"]{background:var(--petrol); color:#fff}
+.rail button[aria-current="true"] .punkt{border-color:#fff}
+.punkt{flex:0 0 auto; width:15px; height:15px; border-radius:50%; border:2px solid var(--ink-weich); display:grid; place-items:center; font-size:10px; line-height:1}
+.punkt.fertig{background:var(--ok); border-color:var(--ok); color:#fff}
+.punkt.fertig::after{content:"✓"}
+
+/* ---------- Station ---------- */
+.karte{background:var(--card); border:1px solid var(--linie); border-radius:var(--radius); box-shadow:var(--schatten); padding:clamp(18px,3.5vw,30px)}
+.eyebrow{font-size:11.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--orange); font-weight:700}
+.karte h2{font-size:clamp(21px,3vw,27px); margin:6px 0 8px; color:var(--tief)}
+.lead{color:var(--ink-weich); max-width:62ch; margin-bottom:20px}
+
+.feldgruppe{display:flex; flex-direction:column; gap:16px; margin-bottom:20px}
+label.feld{display:flex; flex-direction:column; gap:5px}
+label.feld .titel{font-weight:600; font-size:14.5px}
+label.feld .hinweis{font-size:13px; color:var(--ink-weich)}
+input[type=text], textarea{
+  font-family:inherit; font-size:16px; color:var(--ink);
+  background:var(--feld); border:1px solid var(--linie); border-radius:8px; padding:10px 12px; width:100%;
+  transition:border-color .15s ease;
+}
+input[type=text]:focus, textarea:focus{border-color:var(--petrol)}
+textarea{resize:vertical; min-height:78px; line-height:1.5}
+
+.wahl{display:flex; flex-direction:column; gap:8px}
+.wahl label, .haken label{
+  display:flex; gap:10px; align-items:flex-start; padding:10px 12px;
+  border:1px solid var(--linie); border-radius:8px; background:var(--feld); cursor:pointer; font-size:15px;
+}
+.wahl label:hover, .haken label:hover{border-color:var(--petrol)}
+.wahl input, .haken input{margin-top:3px; accent-color:var(--petrol); flex:0 0 auto; width:17px; height:17px}
+.haken{display:flex; flex-direction:column; gap:7px}
+
+.aktion{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-top:4px}
+.knopf{
+  border:0; border-radius:8px; padding:11px 20px; font-weight:600; cursor:pointer;
+  background:var(--petrol); color:#fff;
+}
+.knopf:hover{filter:brightness(1.08)}
+.knopf.stumm{background:transparent; color:var(--petrol); border:1px solid var(--petrol)}
+.knopf.stumm:hover{background:var(--creme); filter:none}
+
+/* ---------- Rückmeldung ---------- */
+.antwort{margin-top:20px; display:flex; flex-direction:column; gap:9px}
+.antwort:empty{display:none}
+.zeile{display:flex; gap:11px; padding:12px 14px; border-radius:8px; font-size:15px; line-height:1.5; border-left:4px solid}
+.zeile b{font-weight:700}
+.zeile .zeichen{flex:0 0 auto; font-weight:700; font-size:14px; line-height:1.6}
+.z-ok{background:var(--ok-bg); border-color:var(--ok); color:var(--ok)}
+.z-warn{background:var(--warn-bg); border-color:var(--warn); color:var(--warn)}
+.z-stop{background:var(--stop-bg); border-color:var(--stop); color:var(--stop)}
+.zeile span.txt{color:var(--ink)}
+
+.tipp{
+  margin-top:18px; border:1px dashed var(--orange); border-radius:8px; padding:14px 16px;
+  background:color-mix(in srgb, var(--orange) 7%, transparent);
+  font-size:14.5px;
+}
+.tipp .kopfzeile{font-weight:700; color:var(--orange); margin-bottom:3px}
+.tipp-reihe{display:flex; flex-wrap:wrap; gap:9px; margin-top:12px}
+.tipp a.tipp-link{
+  display:inline-block; padding:9px 16px; border-radius:7px;
+  background:var(--orange); color:#fff; font-weight:700; text-decoration:none; font-size:14px;
+}
+.tipp a.tipp-link.zweit{background:transparent; color:var(--orange); border:1px solid var(--orange)}
+.tipp a.tipp-link:hover{filter:brightness(1.07)}
+.tipp a.tipp-link.zweit:hover{background:color-mix(in srgb, var(--orange) 12%, transparent); filter:none}
+
+.fuss{display:flex; justify-content:space-between; gap:12px; margin-top:26px; padding-top:18px; border-top:1px solid var(--linie)}
+.fuss .knopf.stumm[disabled]{opacity:.35; cursor:not-allowed}
+
+.werkzeug{max-width:1120px; margin:0 auto; padding:0 clamp(16px,3vw,32px) 48px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; font-size:14px; color:var(--ink-weich)}
+.werkzeug .knopf{padding:8px 14px; font-size:14px}
+
+@media print{
+  .rail,.werkzeug,.fuss,.aktion{display:none}
+  .karte{box-shadow:none; border:0}
+}
+@media (prefers-reduced-motion: reduce){ *{transition:none !important} }
+</style>
+
+<div class="kopf">
+  <div class="kopf-innen">
+    <div>
+      <h1>Startklar-Werkstatt</h1>
+      <p class="unter">Dein Mitmach-Heft zum Tippen. Du schreibst rein, was du auf Instagram stehen haben willst — und kriegst sofort zurück, was schon sitzt und was noch nicht.</p>
+    </div>
+    <div class="fortschritt">
+      <span class="zaehler"><span id="fertig">0</span>/12</span>
+      <div class="balken"><span id="balken"></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="rahmen">
+  <nav class="rail" id="rail" aria-label="Stationen"></nav>
+  <main>
+    <section class="karte" id="buehne" aria-live="polite"></section>
+  </main>
+</div>
+
+<div class="werkzeug">
+  <button class="knopf stumm" id="kopieren">Alles kopieren</button>
+  <button class="knopf stumm" id="drucken">Drucken</button>
+  <button class="knopf stumm" id="leeren">Von vorn</button>
+  <span id="status"></span>
+</div>
+
+<script>
+"use strict";
+
+/* ---------------------------------------------------------------
+   Regelwerk — die Prüfungen kommen aus Patricias Unterricht.
+   Rückgabe je Prüfung: {level:"ok"|"warn"|"stop", text:"..."}
+----------------------------------------------------------------*/
+
+const FIRMEN = ["doterra","ringana","herbalife","lifeplus","life plus","pm international","pm-international","juice plus","juiceplus","zinzino","forever living","younique","nuskin","nu skin","arbonne","amway","tupperware","vorwerk","thermomix","lr health","farmasi","itworks","it works","modere","kyani","enagic","partylite","pmi"];
+const GRUSS = ["hallo","hey","hi ","guten morgen","guten abend","ihr lieben","meine lieben","grüezi","gruezi","servus","moin","willkommen","schön dass du"];
+const ZEITANKER = ["gestern","heute","vorgestern","letzte woche","letzten","vorhin","neulich","vor drei","vor zwei","vor einem","seit","heute morgen","gerade eben","diese woche","vor kurzem"];
+const CTA = ["↓","kommentier","schreib","hol dir","klick","link","gratis","kostenlos","speicher","teile","folg","melde","sichere","hier"];
+const FLOSKEL = ["speicher diesen post","speichere diesen post","swipe","in diesem post zeige ich dir","lies die caption","mehr dazu in meinen stories","mehr in meinen stories"];
+
+const norm = s => (s||"").toLowerCase();
+const woerter = s => (s||"").trim().split(/\s+/).filter(Boolean);
+const saetze = s => (s||"").split(/[.!?…]+/).map(x=>x.trim()).filter(Boolean);
+const hat = (s,liste) => liste.find(k => norm(s).includes(k));
+const beginntMit = (s,liste) => liste.find(k => norm(s).trimStart().startsWith(k));
+
+const ok   = t => ({level:"ok",   text:t});
+const warn = t => ({level:"warn", text:t});
+const stop = t => ({level:"stop", text:t});
+
+function firmenCheck(text, wo){
+  const f = hat(text, FIRMEN);
+  return f ? stop(`Ich lese „${f}“ in ${wo}. Der Firmenname macht dich zu einer von tausend — nimm ihn raus und schreib stattdessen hin, wobei du hilfst.`) : null;
+}
+
+/* ---------------------------------------------------------------
+   Stationen
+----------------------------------------------------------------*/
+
+const STATIONEN = [
+
+/* ---------- Modul 1 ---------- */
+{
+  id:"konto", modul:"Modul 1 · Dein Profil steht", lektion:"Lektion 1.1", kurz:"Konto",
+  titel:"Neues Konto oder dein altes umbauen?",
+  lead:"Die erste Entscheidung, an der die meisten zwei Wochen hängen. Wir klären sie jetzt.",
+  felder:[
+    {typ:"wahl", key:"weg", titel:"Was machst du?", optionen:[
+      "Ich stelle mein bestehendes Profil um und nehme meine Leute mit.",
+      "Ich lege ein neues Konto an, weil mein altes zu privat ist."
+    ]},
+    {typ:"lang", key:"archiv", titel:"Wenn du umstellst: welche Beiträge archivierst du?", hinweis:"Stichworte reichen. Archivieren ist kein Löschen — die Bilder liegen in einer Schublade, die nur du siehst."}
+  ],
+  pruefen(v){
+    const r=[];
+    if(!v.weg) return [warn("Kreuz zuerst an, welchen Weg du gehst.")];
+    if(v.weg.startsWith("Ich lege ein neues")){
+      r.push(warn("Neues Konto heisst: du startest bei null Followern. Überleg nochmal, ob du deine Leute nicht doch mitnehmen willst — deine Tante und die Mädels aus dem Turnverein sind deine ersten Zuschauerinnen, auch wenn sie nie kaufen."));
+    } else {
+      r.push(ok("Gute Wahl. Menschen, die dich schon kennen, sind mehr wert als ein aufgeräumtes leeres Konto."));
+      if(!v.archiv || v.archiv.trim().length<3) r.push(warn("Schreib noch auf, was du archivierst. Sonst machst du es nicht."));
+      else r.push(ok("Archiv-Liste steht. Mach das direkt jetzt und nicht später."));
+    }
+    return r;
+  },
+  tipp:null
+},
+
+{
+  id:"namen", modul:"Modul 1 · Dein Profil steht", lektion:"Lektion 1.2", kurz:"Namensfelder",
+  titel:"Deine zwei Namensfelder",
+  lead:"Der Username ist deine Adresse. Das Name-Feld ist dein Suchbegriff. Nur diese beiden durchsucht Instagram — deine Bio nicht.",
+  felder:[
+    {typ:"kurz", key:"user", titel:"Dein @username", hinweis:"Kurz, merkbar, ohne Zahlenwüste."},
+    {typ:"kurz", key:"name", titel:"Dein Name-Feld", hinweis:"Dein Name plus wobei du hilfst. Zum Beispiel: Sandra · Energie für Mamas ab 35"}
+  ],
+  pruefen(v){
+    const r=[];
+    const u=(v.user||"").replace(/^@/,"");
+    if(!u) r.push(warn("Trag deinen Username ein."));
+    else{
+      const f=firmenCheck(u,"deinem Username"); if(f) r.push(f);
+      if(u.length>25) r.push(warn(`${u.length} Zeichen sind viel. Kürzer merkt man sich leichter.`));
+      if((u.match(/\d/g)||[]).length>=3) r.push(warn("Drei oder mehr Ziffern im Namen sehen nach Zweitkonto aus. Geht das ohne?"));
+      if(!f && u.length<=25) r.push(ok("Username passt."));
+    }
+    const n=v.name||"";
+    if(!n) r.push(warn("Das Name-Feld ist leer — genau hier verschenken die meisten ihre Sichtbarkeit."));
+    else{
+      const f=firmenCheck(n,"deinem Name-Feld"); if(f) r.push(f);
+      if(woerter(n).length<3) r.push(warn("Da steht nur dein Name. Schreib dazu, wobei du hilfst — sonst findet dich niemand, der dich nicht schon kennt."));
+      else if(n.length>60) r.push(warn(`${n.length} Zeichen — das wird auf dem Handy abgeschnitten. Bleib unter 40.`));
+      else if(!f) r.push(ok("Dein Name-Feld sagt, worum es geht. Genau so."));
+    }
+    return r;
+  },
+  tipp:{kopf:"Dein Profil ist dein Schaufenster", text:"Wie du Name-Feld, Bio und die ersten drei Beiträge so aufstellst, dass eine Fremde in drei Sekunden denkt „die ist meine Expertin“ — das ist die Schaufenster-Strategie aus der Instagram-Kundenmaschine.", link:{url:"https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/", label:"Instagram-Kundenmaschine ansehen"}}
+},
+
+{
+  id:"bio", modul:"Modul 1 · Dein Profil steht", lektion:"Lektion 1.3", kurz:"Bio",
+  titel:"Deine Bio in vier Zeilen",
+  lead:"Drei Sekunden schaut jemand auf dein Profil, bevor er entscheidet. Schreib erst hier, dann tipp es ab.",
+  felder:[
+    {typ:"kurz", key:"z1", titel:"Zeile 1 — Wem hilfst du wobei?"},
+    {typ:"kurz", key:"z2", titel:"Zeile 2 — Warum ausgerechnet du?", hinweis:"Deine Erfahrung, eine Zahl, dein Leben."},
+    {typ:"kurz", key:"z3", titel:"Zeile 3 — Was gibt es hier zu holen?"},
+    {typ:"kurz", key:"z4", titel:"Zeile 4 — Was soll sie jetzt tun?", hinweis:"Ein Pfeil nach unten auf deinen Link gehört hierhin."}
+  ],
+  pruefen(v){
+    const r=[];
+    const alle=[v.z1,v.z2,v.z3,v.z4].map(x=>x||"");
+    const leer=alle.filter(x=>!x.trim()).length;
+    const ganz=alle.join("\n");
+    if(leer===4) return [warn("Noch nichts drin. Fang mit Zeile 1 an — die ist die wichtigste.")];
+    if(leer) r.push(warn(`${leer} von 4 Zeilen sind noch leer. Eine halbe Bio wirkt wie ein halbes Schaufenster.`));
+    const f=firmenCheck(ganz,"deiner Bio"); if(f) r.push(f);
+    if(/beraterin bei|vertriebspartnerin|selbstständige partnerin|unabhängige beraterin/i.test(ganz))
+      r.push(stop("„Beraterin bei …“ sagt, für wen du arbeitest — nicht, wobei du jemandem hilfst. Dreh es um."));
+    const laenge=ganz.replace(/\n/g,"").length;
+    if(laenge>150) r.push(stop(`${laenge} Zeichen. Instagram lässt nur 150 zu — der Rest fällt weg.`));
+    else r.push(ok(`${laenge} von 150 Zeichen. ${laenge<50?"Da ist noch Platz.":"Gute Länge."}`));
+    if(v.z1 && woerter(v.z1).length<3) r.push(warn("Zeile 1 ist sehr knapp. Da muss stehen, WEM du WOBEI hilfst."));
+    if(v.z4 && !hat(v.z4,CTA)) r.push(warn("In Zeile 4 fehlt die Aufforderung. Ein Pfeil nach unten und ein Wort wie „gratis“ oder „hol dir“ reichen."));
+    if(v.z4 && hat(v.z4,CTA)) r.push(ok("Zeile 4 sagt, was als Nächstes passiert."));
+    return r;
+  },
+  tipp:{kopf:"Und jetzt der Bio-Check", text:"Wenn deine Bio steht, lass sie durch meinen Bio-Check laufen — du bekommst zurück, was schon zieht und was noch schwammig ist. Den Link findest du in deinem Kursbereich. Und wenn dabei rauskommt, dass dein Thema selbst noch wackelt: genau dafür gibt es „Finde dein Thema als Network-Mama in 60 Minuten“.", link:{url:"https://mumlifebalance.thrivecart.com/thema-finden/", label:"Finde dein Thema ansehen"}}
+},
+
+{
+  id:"schaufenster", modul:"Modul 1 · Dein Profil steht", lektion:"Lektion 1.4", kurz:"Schaufenster",
+  titel:"Highlights und dein Link",
+  lead:"Die kleinen Kreise unter deiner Bio sind die Stelle, an der jemand nachschaut, ob du echt bist. Fünf Ordner reichen.",
+  felder:[
+    {typ:"haken", key:"ordner", titel:"Angelegt", optionen:["Über mich","Mein Thema","Feedback","Gratis für dich","Mein Angebot"]},
+    {typ:"kurz", key:"link", titel:"Welcher Link steht in deiner Bio?"}
+  ],
+  pruefen(v){
+    const r=[];
+    const n=(v.ordner||[]).length;
+    if(n===0) r.push(warn("Noch kein Highlight angelegt. Poste fünf einfache Stories hintereinander und pack sie sofort in die Ordner — niemand merkt, dass du das an einem Nachmittag gemacht hast."));
+    else if(n<5) r.push(warn(`${n} von 5 Ordnern stehen. Leg auch die leeren an — dann weisst du, wo die erste Rückmeldung hingehört, wenn sie kommt.`));
+    else r.push(ok("Alle fünf stehen. Dein Schaufenster ist eingerichtet."));
+    if(!v.link) r.push(warn("Ohne Link in der Bio führt dein Profil nirgendwohin."));
+    else if(/linktr\.ee|linktree/i.test(v.link)) r.push(warn("Linktree kostet dich einen Zwischenklick. Instagram lässt dich inzwischen mehrere Links direkt eintragen — nimm lieber das."));
+    else r.push(ok("Link steht."));
+    return r;
+  },
+  tipp:{kopf:"Und was gehört jetzt in jedes Highlight rein?", text:"Fünf leere Ordner sind noch kein Schaufenster. Welche Stories in welchen Ordner gehören, damit jemand nach zwei Minuten kaufen will — das zeig ich dir in der Instagram-Kundenmaschine.", link:{url:"https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/", label:"Instagram-Kundenmaschine ansehen"}}
+},
+
+{
+  id:"sicherheit", modul:"Modul 1 · Dein Profil steht", lektion:"Lektion 1.5", kurz:"Sicherheit",
+  titel:"Fünf Minuten, damit dir dein Konto nicht abhandenkommt",
+  lead:"Der langweiligste Punkt im ganzen Kurs. Mach ihn trotzdem — ein verlorenes Konto ist bei dir der ganze Vertriebsweg.",
+  felder:[
+    {typ:"haken", key:"sich", titel:"Erledigt", optionen:[
+      "Zwei-Faktor ist eingeschaltet",
+      "Wiederherstellungscodes sind gesichert",
+      "Mir ist klar: Instagram schreibt mir nie per DM, dass mein Konto gelöscht wird"
+    ]}
+  ],
+  pruefen(v){
+    const n=(v.sich||[]).length;
+    if(n===3) return [ok("Alles erledigt. Weiter zum spannenderen Teil.")];
+    if(n===0) return [stop("Noch nichts davon gemacht. Das dauert fünf Minuten und erspart dir im Ernstfall alles.")];
+    return [warn(`${n} von 3. Der Rest dauert zwei Minuten.`)];
+  },
+  tipp:null
+},
+
+{
+  id:"profilcheck", modul:"Modul 1 · Dein Profil steht", lektion:"Abschluss Modul 1", kurz:"Profil-Check",
+  titel:"Schau dich an wie eine Fremde",
+  lead:"Geh raus aus deinem Profil, such dich über die Suche und schau, was du in drei Sekunden siehst.",
+  felder:[
+    {typ:"haken", key:"check", titel:"Checkliste", optionen:[
+      "Business-Profil ist aktiv",
+      "Username ist kurz und ohne Zahlenwüste",
+      "Im Name-Feld steht, wobei ich helfe",
+      "Profilbild zeigt mein Gesicht",
+      "Bio steht in vier Zeilen untereinander",
+      "Fünf Highlights sind angelegt und haben ein Cover",
+      "Ein Link ist eingetragen und funktioniert",
+      "Zwei-Faktor ist an"
+    ]},
+    {typ:"lang", key:"eindruck", titel:"Was sieht eine Fremde in drei Sekunden auf deinem Profil?"}
+  ],
+  pruefen(v){
+    const r=[]; const n=(v.check||[]).length;
+    if(n===8) r.push(ok("Acht von acht. Dein Profil steht."));
+    else r.push(warn(`${n} von 8 abgehakt. Die offenen Punkte kosten dich jeweils unter zwei Minuten.`));
+    if(!v.eindruck || woerter(v.eindruck).length<4) r.push(warn("Beantworte die Frage wirklich. Wenn du sie nicht beantworten kannst, kann es deine Wunschkundin auch nicht."));
+    else r.push(ok("Du kannst in einem Satz sagen, was dein Profil ausstrahlt. Das können die wenigsten."));
+    return r;
+  },
+  tipp:{kopf:"Dein Profil steht — und jetzt?", text:"Ein fertiges Profil bringt dir noch keine Anfragen. Was du ab jetzt postest, damit aus Zuschauerinnen Kundinnen werden, ist die Instagram-Kundenmaschine.", link:{url:"https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/", label:"Instagram-Kundenmaschine ansehen"}}
+},
+
+/* ---------- Modul 2 ---------- */
+{
+  id:"hook", modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.2", kurz:"Reel-Hook",
+  titel:"Dein erster Satz im Reel",
+  lead:"Sieben Sekunden, ein Satz. Schreib hier rein, was du sagen willst — bevor du dreimal neu aufnimmst.",
+  felder:[
+    {typ:"lang", key:"hook", titel:"Dein erster Satz", hinweis:"Genau der, den du in Sekunde null sagst."}
+  ],
+  pruefen(v){
+    const h=v.hook||"";
+    if(!h.trim()) return [warn("Schreib deinen ersten Satz rein.")];
+    const r=[]; const w=woerter(h).length;
+    const g=beginntMit(h,GRUSS);
+    if(g) r.push(stop(`Dein Hook fängt mit „${g.trim()}“ an. Die ersten zwei Sekunden entscheiden, ob jemand bleibt — da darf keine Begrüssung stehen.`));
+    const fl=hat(h,FLOSKEL);
+    if(fl) r.push(stop(`„${fl}“ als Einstieg killt dir die Reichweite. Sag stattdessen, worum es geht.`));
+    if(w>18) r.push(warn(`${w} Wörter. Das kriegst du in drei Sekunden nicht gesagt — kürz auf zehn bis zwölf.`));
+    else if(w<3) r.push(warn("Das ist sehr knapp. Ein Hook braucht einen ganzen Gedanken."));
+    else r.push(ok(`${w} Wörter — die Länge sitzt.`));
+    const za=hat(h,ZEITANKER); const zahl=/\d/.test(h);
+    if(za) r.push(ok(`Zeitanker drin („${za}“). Das macht aus einer Behauptung eine Szene.`));
+    if(zahl) r.push(ok("Eine konkrete Zahl. Gut — Zahlen sind glaubwürdiger als Adjektive."));
+    if(!za && !zahl) r.push(warn("Weder Zeitanker noch Zahl. „Gestern“, „letzte Woche“ oder eine konkrete Zahl machen den Unterschied zwischen Aussage und Szene."));
+    const f=firmenCheck(h,"deinem Hook"); if(f) r.push(f);
+    return r;
+  },
+  tipp:{kopf:"Ob er wirklich zieht, siehst du erst draussen", text:"Dieses Tool prüft die Form, nicht ob dein Satz jemanden packt. Wie du Hooks baust, die Menschen direkt anziehen — und wie du in einer Woche herausfindest, welcher davon zieht — lernst du in der Instagram-Kundenmaschine.", link:{url:"https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/", label:"Instagram-Kundenmaschine ansehen"}}
+},
+
+{
+  id:"karussell", modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.3", kurz:"Karussell",
+  titel:"Deine sechs Folien",
+  lead:"Ein Gedanke pro Folie. Wenn du einen zweiten Satz draufschreiben willst, mach eine neue Folie.",
+  felder:[
+    {typ:"kurz", key:"f1", titel:"Folie 1 — die Aussage, die hängen bleibt"},
+    {typ:"kurz", key:"f2", titel:"Folie 2"},
+    {typ:"kurz", key:"f3", titel:"Folie 3"},
+    {typ:"kurz", key:"f4", titel:"Folie 4"},
+    {typ:"kurz", key:"f5", titel:"Folie 5"},
+    {typ:"kurz", key:"f6", titel:"Folie 6 — was soll sie jetzt tun?"}
+  ],
+  pruefen(v){
+    const r=[]; const F=["f1","f2","f3","f4","f5","f6"].map(k=>v[k]||"");
+    const voll=F.filter(x=>x.trim());
+    if(!voll.length) return [warn("Noch keine Folie getippt. Fang bei Folie 1 an — die entscheidet, ob überhaupt gewischt wird.")];
+    if(voll.length<6) r.push(warn(`${voll.length} von 6 Folien. Weniger als vier lohnt den Aufwand kaum.`));
+    const g=beginntMit(F[0],GRUSS);
+    if(g) r.push(stop("Folie 1 fängt mit einer Begrüssung an. Auf die erste Folie gehört die Aussage, wegen der jemand weiterwischt."));
+    if(F[0] && woerter(F[0]).length>12) r.push(warn(`Folie 1 hat ${woerter(F[0]).length} Wörter. Auf dem Handy wird das eine Textwand — halbier sie.`));
+    F.forEach((t,i)=>{
+      if(!t.trim()) return;
+      if(saetze(t).length>2) r.push(warn(`Folie ${i+1} hat ${saetze(t).length} Sätze. Ein Gedanke pro Folie — mach zwei Folien draus.`));
+      else if(t.length>140) r.push(warn(`Folie ${i+1} hat ${t.length} Zeichen. Das liest auf dem Handy niemand zu Ende.`));
+    });
+    const letzte=voll[voll.length-1];
+    if(letzte && !hat(letzte,CTA)) r.push(warn("Auf der letzten Folie steht keine Aufforderung. Was soll sie jetzt tun — kommentieren, speichern, dir schreiben?"));
+    else if(letzte) r.push(ok("Die letzte Folie sagt, was als Nächstes passiert."));
+    const f=firmenCheck(F.join(" "),"deinen Folien"); if(f) r.push(f);
+    if(!r.some(x=>x.level!=="ok")) r.push(ok("Sauber aufgebaut. Ab nach Canva."));
+    return r;
+  },
+  tipp:{kopf:"Dir gehen die Folien-Ideen aus?", text:"Aus einer einzigen Idee fünf Beiträge machen, ohne dass es sich wiederholt — das ist eine der Methoden aus der Instagram-Kundenmaschine.", link:{url:"https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/", label:"Instagram-Kundenmaschine ansehen"}}
+},
+
+{
+  id:"story", modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.4", kurz:"Story",
+  titel:"Deine erste Umfrage",
+  lead:"Jeder Tipp auf einen Sticker sagt Instagram, dass deine Story interessant war. Und jede Antwort ist ein Gespräch, das du sonst nie gehabt hättest.",
+  felder:[
+    {typ:"kurz", key:"frage", titel:"Deine Umfrage-Frage"},
+    {typ:"kurz", key:"a", titel:"Antwort A"},
+    {typ:"kurz", key:"b", titel:"Antwort B"}
+  ],
+  pruefen(v){
+    const r=[];
+    if(!v.frage) return [warn("Schreib deine Frage rein.")];
+    const w=woerter(v.frage).length;
+    if(w>12) r.push(warn(`${w} Wörter. Eine Umfrage muss man im Vorbeiwischen erfassen — sechs bis acht reichen.`));
+    else r.push(ok(`${w} Wörter — schnell erfassbar.`));
+    if(!/\?\s*$/.test(v.frage.trim())) r.push(warn("Da fehlt das Fragezeichen. Klingt kleinlich, macht aber den Unterschied zwischen Aussage und Einladung."));
+    if(!v.a || !v.b) r.push(warn("Beide Antwortfelder ausfüllen — sonst kann niemand tippen."));
+    else if(norm(v.a)===norm(v.b)) r.push(warn("Beide Antworten sind gleich."));
+    else r.push(ok("Zwei echte Möglichkeiten. Merk dir, wer abstimmt — das sind die Frauen, die du später anschreibst."));
+    return r;
+  },
+  tipp:{kopf:"Und was erzählst du morgen?", text:"Ideen, was du alles in deinen Stories erzählen kannst — und wie daraus Gespräche werden, aus denen Käufe entstehen — findest du in der Instagram-Kundenmaschine.", link:{url:"https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/", label:"Instagram-Kundenmaschine ansehen"}}
+},
+
+{
+  id:"caption", modul:"Modul 2 · Du kannst posten", lektion:"Lektion 2.5", kurz:"Caption",
+  titel:"Der Text unter deinem Beitrag",
+  lead:"Nur die ersten ein bis zwei Zeilen werden angezeigt. Alles danach liest nur, wer auf „mehr“ tippt.",
+  felder:[
+    {typ:"lang", key:"text", titel:"Deine Caption", hinweis:"Ruhig komplett — Hashtags ans Ende."}
+  ],
+  pruefen(v){
+    const t=v.text||"";
+    if(!t.trim()) return [warn("Tipp deine Caption rein.")];
+    const r=[];
+    const erste=t.split("\n")[0];
+    const g=beginntMit(erste,GRUSS);
+    if(g) r.push(stop(`Deine Caption fängt mit „${g.trim()}“ an. Das kostet dich deine besten zwei Zeilen.`));
+    const fl=hat(erste,FLOSKEL);
+    if(fl) r.push(stop(`„${fl}“ ganz vorne funktioniert nicht mehr. Damit fängt heute jede zweite Caption an.`));
+    if(!g && !fl) r.push(ok("Der erste Satz geht direkt in die Sache."));
+    if(erste.length>125) r.push(warn(`Deine erste Zeile hat ${erste.length} Zeichen — abgeschnitten wird nach rund 125. Setz den wichtigsten Gedanken davor.`));
+    const tags=(t.match(/#[\wäöüÄÖÜß]+/g)||[]);
+    if(tags.length>5) r.push(warn(`${tags.length} Hashtags. Fünf reichen — nimm die, die dein Thema beschreiben, nicht die grössten.`));
+    else if(tags.length===0) r.push(warn("Keine Hashtags. Drei bis fünf thematische gehören ans Ende."));
+    else r.push(ok(`${tags.length} Hashtags — passt.`));
+    if(!/[?]|kommentier|schreib mir|erzähl|teile/i.test(t)) r.push(warn("Am Ende fehlt eine Einladung. Eine Frage genügt, damit überhaupt jemand antwortet."));
+    return r;
+  },
+  tipp:{kopf:"Eine Caption, die am Ende verkauft", text:"Aufbau, Keywords in den Kommentaren und der Übergang vom Text ins Gespräch — das komplette System steckt in der Instagram-Kundenmaschine.", link:{url:"https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/", label:"Instagram-Kundenmaschine ansehen"}}
+},
+
+/* ---------- Modul 3 ---------- */
+{
+  id:"fallen", modul:"Modul 3 · Sauber starten", lektion:"Lektion 3.1", kurz:"Network-Fallen",
+  titel:"Die fünf Fallen — prüf dein Profil dagegen",
+  lead:"Diese fünf Punkte hab ich in meinem ersten Network alle selber gemacht. Drei Jahre lang. Es hat nicht funktioniert.",
+  felder:[
+    {typ:"haken", key:"fallen", titel:"Ich kann bestätigen", optionen:[
+      "Der Firmenname steht nicht in meiner Bio und nicht im Username",
+      "Produktbilder sind nicht mein Hauptinhalt",
+      "Preise und Bestellinfos stehen nicht im Beitrag",
+      "Ich schreibe keine Fremden ungefragt an",
+      "Ich mache keine Aussagen über Wirkung oder über Verdienst"
+    ]},
+    {typ:"kurz", key:"richtlinien", titel:"Wo stehen die Richtlinien deiner Firma?", hinweis:"Link oder Ordner. Einmal lesen dauert zwanzig Minuten und erspart dir viel."}
+  ],
+  pruefen(v){
+    const r=[]; const n=(v.fallen||[]).length;
+    if(n===5) r.push(ok("Alle fünf. Dein Profil steht auf sauberem Boden."));
+    else r.push(stop(`${n} von 5. Die offenen Punkte sind keine Feinheiten — Punkt fünf kostet im Zweifel dein Konto.`));
+    if(!v.richtlinien) r.push(warn("Notier dir, wo die Richtlinien deiner Firma liegen. Was du über Produkte und über Einkommen sagen darfst, steht dort drin."));
+    else r.push(ok("Du weisst, wo du nachschauen kannst."));
+    return r;
+  },
+  tipp:{kopf:"Diese fünf Punkte sind Symptome", text:"Solange sich dein Profil um Produkte dreht, streifst du diese Fallen immer wieder. Wie du dich über dein eigenes Thema zeigst statt über das Produkt deiner Firma, steckt in „Expertin statt Verkäuferin“. Und wie du verkaufst, ohne Preise in den Beitrag zu schreiben — also so, dass das Gespräch in der DM passiert statt unter dem Post — das ist die Instagram-Kundenmaschine.", links:[{url:"https://mumlifebalance.thrivecart.com/expertin/", label:"Expertin statt Verkäuferin ansehen"}, {url:"https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/", label:"Instagram-Kundenmaschine ansehen"}]}
+},
+
+{
+  id:"startplan", modul:"Modul 3 · Sauber starten", lektion:"Lektion 3.2", kurz:"Startplan",
+  titel:"Deine ersten fünf Beiträge",
+  lead:"Damit du am Montag nicht vor dem leeren Handy sitzt, planen wir die erste Woche jetzt.",
+  felder:[
+    {typ:"kurz", key:"p1", titel:"1. Wer bist du", hinweis:"Reel, sieben Sekunden, dein Gesicht."},
+    {typ:"kurz", key:"p2", titel:"2. Warum dieses Thema", hinweis:"Dein Wendepunkt, ehrlich und kurz."},
+    {typ:"kurz", key:"p3", titel:"3. Ein Tipp, der sofort hilft", hinweis:"Karussell."},
+    {typ:"kurz", key:"p4", titel:"4. Ein Blick in deinen Alltag", hinweis:"Reel, ungeschminkt."},
+    {typ:"kurz", key:"p5", titel:"5. Wobei du hilfst", hinweis:"Karussell mit Einladung zum Schreiben."}
+  ],
+  pruefen(v){
+    const P=["p1","p2","p3","p4","p5"].map(k=>(v[k]||"").trim());
+    const voll=P.filter(Boolean).length;
+    const r=[];
+    if(voll===0) return [warn("Noch nichts geplant. Stichworte reichen völlig.")];
+    if(voll===5) r.push(ok("Fünf Beiträge stehen. Montag, Mittwoch, Freitag posten — Dienstag und Donnerstag je eine Story mit Umfrage. Wochenende ist frei."));
+    else r.push(warn(`${voll} von 5 geplant. Drei pro Woche reichen, wenn sie regelmässig kommen — plan trotzdem alle fünf, dann hast du Luft.`));
+    if(!P[1]) r.push(warn("Beitrag 2 ist der, vor dem du dich drückst. Er ist auch der, der am meisten bringt — Menschen bleiben wegen deiner Geschichte, nicht wegen deiner Tipps."));
+    return r;
+  },
+  tipp:{kopf:"Das war der schwerste Teil", text:"Dein Profil steht, du kannst posten und du hast einen Plan. Was hier bewusst fehlt: wie du dranbleibst, welche Zahlen du liest und wie aus einem Kommentar ein Gespräch wird, das in einem Kauf endet. Genau dafür gibt es die Instagram-Kundenmaschine. Aber erst mal: poste vier Wochen. Kein Druck.", link:{url:"https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/", label:"Instagram-Kundenmaschine ansehen"}}
+}
+];
+
+/* ---------------------------------------------------------------
+   Zustand + Speicherung
+----------------------------------------------------------------*/
+const SPEICHER="startklar-werkstatt-v1";
+let daten = {};
+let aktiv = 0;
+
+try{ daten = JSON.parse(localStorage.getItem(SPEICHER)||"{}"); }catch(e){ daten={}; }
+
+function sichern(){
+  try{ localStorage.setItem(SPEICHER, JSON.stringify(daten)); }
+  catch(e){ /* privater Modus: läuft ohne Speichern weiter */ }
+}
+function wert(id){ return daten[id] || (daten[id]={}); }
+function erledigt(st){
+  const v = daten[st.id]; if(!v) return false;
+  return Object.values(v).some(x => Array.isArray(x) ? x.length : String(x||"").trim());
+}
+
+/* ---------------------------------------------------------------
+   Aufbau
+----------------------------------------------------------------*/
+const rail = document.getElementById("rail");
+const buehne = document.getElementById("buehne");
+
+function railBauen(){
+  rail.innerHTML="";
+  let letztesModul=null;
+  STATIONEN.forEach((st,i)=>{
+    if(st.modul!==letztesModul){
+      const h=document.createElement("div");
+      h.className="rail-gruppe"; h.textContent=st.modul;
+      rail.appendChild(h); letztesModul=st.modul;
+    }
+    const b=document.createElement("button");
+    b.type="button";
+    b.setAttribute("aria-current", i===aktiv ? "true" : "false");
+    const p=document.createElement("span");
+    p.className="punkt"+(erledigt(st)?" fertig":"");
+    b.appendChild(p);
+    b.appendChild(document.createTextNode(st.kurz));
+    b.addEventListener("click",()=>{ aktiv=i; zeichnen(); window.scrollTo({top:0,behavior:"smooth"}); });
+    rail.appendChild(b);
+  });
+  const n=STATIONEN.filter(erledigt).length;
+  document.getElementById("fertig").textContent=n;
+  document.getElementById("balken").style.width=(n/STATIONEN.length*100)+"%";
+}
+
+function feldBauen(st,f,v){
+  if(f.typ==="wahl" || f.typ==="haken"){
+    const box=document.createElement("div");
+    const t=document.createElement("div");
+    t.className="titel"; t.style.marginBottom="7px"; t.textContent=f.titel;
+    box.appendChild(t);
+    const liste=document.createElement("div");
+    liste.className = f.typ==="wahl" ? "wahl" : "haken";
+    f.optionen.forEach(opt=>{
+      const l=document.createElement("label");
+      const i=document.createElement("input");
+      i.type = f.typ==="wahl" ? "radio" : "checkbox";
+      i.name = st.id+"-"+f.key;
+      if(f.typ==="wahl") i.checked = v[f.key]===opt;
+      else i.checked = (v[f.key]||[]).includes(opt);
+      i.addEventListener("change",()=>{
+        if(f.typ==="wahl") v[f.key]=opt;
+        else{
+          const arr=new Set(v[f.key]||[]);
+          i.checked ? arr.add(opt) : arr.delete(opt);
+          v[f.key]=[...arr];
+        }
+        sichern(); railBauen();
+      });
+      l.appendChild(i);
+      l.appendChild(document.createTextNode(opt));
+      liste.appendChild(l);
+    });
+    box.appendChild(liste);
+    return box;
+  }
+  const l=document.createElement("label");
+  l.className="feld";
+  const t=document.createElement("span"); t.className="titel"; t.textContent=f.titel; l.appendChild(t);
+  if(f.hinweis){ const h=document.createElement("span"); h.className="hinweis"; h.textContent=f.hinweis; l.appendChild(h); }
+  const el = f.typ==="lang" ? document.createElement("textarea") : document.createElement("input");
+  if(f.typ!=="lang") el.type="text";
+  el.value = v[f.key]||"";
+  el.addEventListener("input",()=>{ v[f.key]=el.value; sichern(); railBauen(); });
+  l.appendChild(el);
+  return l;
+}
+
+function zeichnen(){
+  const st=STATIONEN[aktiv];
+  const v=wert(st.id);
+  buehne.innerHTML="";
+
+  const eb=document.createElement("p"); eb.className="eyebrow"; eb.textContent=st.lektion;
+  const h2=document.createElement("h2"); h2.textContent=st.titel;
+  const lead=document.createElement("p"); lead.className="lead"; lead.textContent=st.lead;
+  buehne.append(eb,h2,lead);
+
+  const gruppe=document.createElement("div"); gruppe.className="feldgruppe";
+  st.felder.forEach(f=>gruppe.appendChild(feldBauen(st,f,v)));
+  buehne.appendChild(gruppe);
+
+  const aktion=document.createElement("div"); aktion.className="aktion";
+  const pruef=document.createElement("button");
+  pruef.className="knopf"; pruef.type="button"; pruef.textContent="Prüf das mal";
+  aktion.appendChild(pruef);
+  buehne.appendChild(aktion);
+
+  const antwort=document.createElement("div"); antwort.className="antwort";
+  buehne.appendChild(antwort);
+
+  pruef.addEventListener("click",()=>{
+    antwort.innerHTML="";
+    const meldungen=st.pruefen(v)||[];
+    meldungen.forEach(m=>{
+      const z=document.createElement("div");
+      z.className="zeile z-"+m.level;
+      const ic=document.createElement("span");
+      ic.className="zeichen";
+      ic.textContent = m.level==="ok" ? "✓" : m.level==="warn" ? "!" : "✕";
+      const tx=document.createElement("span"); tx.className="txt"; tx.textContent=m.text;
+      z.append(ic,tx); antwort.appendChild(z);
+    });
+    if(st.tipp){
+      const t=document.createElement("div"); t.className="tipp";
+      const k=document.createElement("div"); k.className="kopfzeile"; k.textContent=st.tipp.kopf;
+      const p=document.createElement("p"); p.textContent=st.tipp.text;
+      t.append(k,p);
+      const verweise = st.tipp.links || (st.tipp.link ? [st.tipp.link] : []);
+      if(verweise.length){
+        const reihe=document.createElement("div"); reihe.className="tipp-reihe";
+        verweise.forEach((lk,i)=>{
+          const a=document.createElement("a");
+          a.className="tipp-link"+(i?" zweit":"");
+          a.href=lk.url; a.target="_blank"; a.rel="noopener";
+          a.textContent=lk.label+" \u2192";
+          reihe.appendChild(a);
+        });
+        t.appendChild(reihe);
+      }
+      antwort.appendChild(t);
+    }
+    railBauen();
+  });
+
+  const fuss=document.createElement("div"); fuss.className="fuss";
+  const zurueck=document.createElement("button");
+  zurueck.className="knopf stumm"; zurueck.type="button"; zurueck.textContent="Zurück";
+  zurueck.disabled = aktiv===0;
+  zurueck.addEventListener("click",()=>{ if(aktiv>0){aktiv--; zeichnen(); window.scrollTo({top:0,behavior:"smooth"});} });
+  const weiter=document.createElement("button");
+  weiter.className="knopf"; weiter.type="button";
+  weiter.textContent = aktiv===STATIONEN.length-1 ? "Fertig" : "Weiter";
+  weiter.disabled = aktiv===STATIONEN.length-1;
+  weiter.addEventListener("click",()=>{ if(aktiv<STATIONEN.length-1){aktiv++; zeichnen(); window.scrollTo({top:0,behavior:"smooth"});} });
+  fuss.append(zurueck,weiter);
+  buehne.appendChild(fuss);
+
+  railBauen();
+}
+
+/* ---------------------------------------------------------------
+   Werkzeugleiste
+----------------------------------------------------------------*/
+const status=document.getElementById("status");
+function melden(t){ status.textContent=t; setTimeout(()=>{ if(status.textContent===t) status.textContent=""; },3500); }
+
+function alsText(){
+  const zeilen=["STARTKLAR — deine Antworten",""];
+  STATIONEN.forEach(st=>{
+    const v=daten[st.id]; if(!v) return;
+    const inhalt=st.felder.map(f=>{
+      const x=v[f.key];
+      const s=Array.isArray(x) ? x.join(", ") : (x||"").trim();
+      return s ? "  "+f.titel+": "+s : null;
+    }).filter(Boolean);
+    if(inhalt.length){ zeilen.push(st.lektion+" — "+st.titel, ...inhalt, ""); }
+  });
+  return zeilen.join("\n");
+}
+
+document.getElementById("kopieren").addEventListener("click", async ()=>{
+  const t=alsText();
+  try{ await navigator.clipboard.writeText(t); melden("Kopiert — jetzt kannst du es irgendwo einfügen."); }
+  catch(e){ melden("Kopieren hat nicht geklappt. Nimm stattdessen Drucken."); }
+});
+document.getElementById("drucken").addEventListener("click",()=>window.print());
+document.getElementById("leeren").addEventListener("click",()=>{
+  if(!confirm("Alles löschen und von vorn anfangen?")) return;
+  daten={}; sichern(); aktiv=0; zeichnen(); melden("Alles geleert.");
+});
+
+zeichnen();
+</script>

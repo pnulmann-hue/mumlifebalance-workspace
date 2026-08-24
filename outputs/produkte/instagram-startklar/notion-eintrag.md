@@ -23,15 +23,15 @@ Learnings:
   1. Business-Profil einrichten und die Bio wirklich getippt bekommen
   2. Highlights und Link als Schaufenster anlegen
   3. Reel, Karussell und Story hochladen — je einmal geführt
-  4. Die drei Zahlen lesen, die etwas aussagen
-  5. Die fünf Network-Fallen auf Instagram vermeiden
-Dauer: rund 100 Minuten Video, umsetzbar in einer Woche
+  4. Die fünf Network-Fallen auf Instagram vermeiden
+  5. Die ersten fünf Beiträge planen
+Dauer: rund 75 Minuten Video, umsetzbar in einer Woche
 Preis (CHF): 39 fix — einheitliche Minikurs-Stufe, kein Early-Bird, keine Aktion.
            Warum-jetzt läuft über monatlich wechselnde Boni.
-Module: 3 Module / 15 Lektionen
+Module: 3 Module / 12 Lektionen
   M1 Dein Profil steht (5 Lektionen, 38 Min)
   M2 Du kannst posten (5 Lektionen, 46 Min)
-  M3 Du bleibst dran (5 Lektionen, 40 Min)
+  M3 Sauber starten (2 Lektionen, 17 Min)
 Format: Selbstlernkurs, Bildschirmaufnahmen vom Handy + Folien, plus Mitmach-Heft (PDF)
 KI-Assistent (Bonus): kein neuer Bot. Der bestehende 0€-Bio-Check ist fest in Lektion 1.3
            eingebaut (nicht der persönliche Sprachnachricht-Profilcheck — der bleibt

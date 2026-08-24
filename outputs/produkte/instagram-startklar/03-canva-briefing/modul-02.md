@@ -233,4 +233,4 @@ tags: [produkt, mentoring]
 *Sprechnotiz:* Wie geil ist das denn. Vor einer Woche wusstest du nicht, wo du drücken sollst, und jetzt sind drei Sachen von dir online. Das war der schwerste Teil.
 
 **Folie 6 — Ausblick**
-> Modul 3: dranbleiben, ohne dass Instagram deinen Tag frisst.
+> Modul 3: die fünf Fallen, die du als Networkerin vermeidest — und dein Plan für Woche eins.

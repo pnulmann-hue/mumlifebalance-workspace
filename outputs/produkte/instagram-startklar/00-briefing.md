@@ -13,7 +13,7 @@ tags: [produkt, mentoring]
 > **Startklar — das Instagram-Grundgerüst für Network-Mamas, die noch nie etwas gepostet haben.**
 > In einer Woche steht dein Profil fertig da und deine ersten fünf Beiträge sind draussen.
 
-**Format:** Selbstlern-Minikurs · 15 Lektionen · rund 100 Minuten Video · 1 Mitmach-Heft
+**Format:** Selbstlern-Minikurs · 12 Lektionen · rund 75 Minuten Video · 1 Mitmach-Heft (13 Seiten)
 **Preis:** **39 CHF, fix.** Patricias einheitliche Minikurs-Stufe — kein Early-Bird, keine Aktion, kein Rabatt.
 **Betreuung:** keine — bewusst. Reine Selbstlern-Strecke, damit sie neben 18 Stunden Wochenarbeit läuft.
 
@@ -86,7 +86,8 @@ Das ist der wichtigste Teil des Briefings. Ohne diese Grenzen frisst Startklar d
 | **Bio, Highlights, 3 gepinnte Posts als Positionierungs-Aufgabe** | „Expertin statt Verkäuferin", Bonusmodul „Dein Instagram-Profil als Expertinnen-Magnet" | ⚠️ **Echte Nähe.** Startklar zeigt nur, **wo sie tippt und klickt**. Was inhaltlich reingehört, damit man sie als Expertin erkennt, bleibt im 97er. |
 | Persönlicher Profilcheck per Sprachnachricht | „Expertin statt Verkäuferin" (dortiger Kauf-Bonus) | Nichts. Der bleibt exklusiv im 97er. |
 | Content-Säulen, Ideen-System, Käufertypen, Keyword-Strategie, DM-Gesprächsführung bis zum Abschluss | Instagram-Kundenmaschine (333) | Nichts von der Strategie. Nur die **Bedienung**: wo drückst du, wie lädst du hoch, welcher Ordner ist welcher. |
-| Zeitsystem, KI-Mitarbeiter, Delegieren | Mama-CEO (333) | Nichts. Die 20-Minuten-Routine in Modul 3 ist eine reine Klick-Reihenfolge, kein Zeitmanagement-Konzept. |
+| Zeitsystem, KI-Mitarbeiter, Delegieren | Mama-CEO (333) | Nichts. |
+| Instagram-Routine, Statistiken lesen, DM-Gespräche | Instagram-Kundenmaschine (333) | Nichts — bewusst gestrichen (24.08.2026). Löst „ich bleibe nicht dran", also ein anderes Problem. Wird am Kursende als nächster Schritt angekündigt. |
 | Eigene digitale Produkte, Produkttreppe | Digitale Produktwelt (333) | Nichts. |
 
 **Die Trennlinie in einem Satz:** Startklar erklärt **das Werkzeug**. Alles andere in der Treppe erklärt, **was man damit sagt.**
@@ -99,7 +100,7 @@ Das ist der wichtigste Teil des Briefings. Ohne diese Grenzen frisst Startklar d
 |---|---|---|---|---|
 | 1 | Dein Profil steht | 5 | ~38 Min | Business-Profil eingerichtet, Bio getippt, Highlights angelegt, Konto abgesichert |
 | 2 | Du kannst posten | 5 | ~46 Min | Ein Reel, ein Karussell und eine Story sind hochgeladen |
-| 3 | Du bleibst dran | 5 | ~40 Min | Routine steht, Zahlen verstanden, Startplan für die erste Woche liegt fertig da |
+| 3 | Sauber starten | 2 | ~17 Min | Die fünf Network-Fallen sind geprüft, die ersten fünf Beiträge sind geplant |
 
 Details je Modul: [`03-canva-briefing/modul-01.md`](03-canva-briefing/modul-01.md) · [`modul-02.md`](03-canva-briefing/modul-02.md) · [`modul-03.md`](03-canva-briefing/modul-03.md)
 
@@ -146,7 +147,7 @@ Startklar allein trägt das nicht, und das soll es auch gar nicht. Seine Aufgabe
 
 | Element | Inhalt | Preis |
 |---|---|---|
-| Hauptprodukt | Startklar, 15 Lektionen + Mitmach-Heft | 39 CHF |
+| Hauptprodukt | Startklar, 12 Lektionen + Mitmach-Heft | 39 CHF |
 | Order Bump 1 | „Finde dein Thema als Network-Mama in 60 Minuten" | +25 statt 39 |
 | Fest eingebaut | **Bio-Check** (dein 0€-Funnel) — direkt in Lektion 1.3 verlinkt | 0 CHF |
 | Upsell direkt nach Kauf | Instagram-Kundenmaschine | 333 CHF |
@@ -225,7 +226,7 @@ Patricias Entscheidung vom 24.08.2026: **jeder Minikurs kostet 39 CHF.** Kein St
 
 ## Was noch offen ist
 
-- [ ] Aufnahme der 15 Lektionen (eine Vormittags-Session, geschätzt 3 Stunden mit Pausen)
+- [ ] Aufnahme der 12 Lektionen (eine Vormittags-Session, geschätzt 2 Stunden mit Pausen)
 - [ ] Mitmach-Heft in Patricias Brand bringen (Rohfassung liegt in `04-arbeitsblaetter/`)
 - [ ] ThriveCart-Produkt anlegen + Order Bumps verknüpfen
 - [ ] Salespage (Modus 7 in diesem Skill)
