@@ -8,6 +8,10 @@ tags: [doterra, funnel, produkt]
 **Ziel (Patricia):** 3 Einschreibungen pro Monat · neue Botschafterinnen, die ins Team passen
 **Rahmen:** [[doterra-jahresrhythmus]] · [[energie-story-profil]] · [[onboarding-system-outline]] · [[reaktivierungs-templates]]
 
+> **Positionierung (Kanon, 24.08.2026):**
+> *„Ich begleite Mamas ab 35 mit Hormonchaos, ständiger Müdigkeit und Haarausfall dabei, ihren Körper wieder ins Gleichgewicht zu bringen — und ihn zu verstehen."*
+> Alles in diesem Dokument bezieht sich auf diese Zielgruppe. Volle Herleitung in [[energie-story-profil]].
+
 ---
 
 ## 1. Ausgangslage — nur belegte Zahlen
@@ -72,7 +76,9 @@ Die gute Nachricht: **Die oberste Zeile hast du schon.** Bei 10'737 Reach im Mon
 
 Dein Anker-Prinzip gilt hier eins zu eins: *Die Öle kriegt sie überall, die Verwandlung gibt es nur bei dir.* Was eine Frau bei dir kauft, ist nicht ein Warenkorb mit 151 PV, sondern **begleitete Veränderung**, in der die Produkte das Werkzeug sind. Das ist gleichzeitig dein Compliance-Schutzschild, weil du Begleitung und Wissen versprichst und nie Wirkung.
 
-### 4.2 Das Kundinnen-Angebot — „Dein Energie-Comeback" (Arbeitstitel)
+### 4.2 Das Kundinnen-Angebot — „Wieder im Gleichgewicht" (Arbeitstitel)
+
+Der Name kommt direkt aus deinem eigenen Positionierungs-Satz, und genau deshalb funktioniert er: Deine Kundin sucht nicht nach „Energie" im Allgemeinen, sondern danach, dass ihr Körper aufhört, sich gegen sie zu verhalten. „Ins Gleichgewicht kommen" ist ausserdem compliance-sicher, weil es einen Weg beschreibt und kein Ergebnis verspricht.
 
 Ein **begleiteter Einstieg über 8 Wochen**, den es nur bei Einschreibung über dich gibt. Kein bezahltes Zusatzprodukt, die Leitplanke „kein eigenes doTERRA-Produkt" bleibt unangetastet. Es ist schlicht der Grund, warum sie sich bei dir einschreibt statt bei der Beraterin aus dem Nachbardorf.
 
@@ -84,7 +90,7 @@ Ein **begleiteter Einstieg über 8 Wochen**, den es nur bei Einschreibung über 
 | **Dein Routine-Plan** | Eine Seite: was wann, angelehnt an deine echte Routine | Das ist dein Wissen, nicht doTERRAs Material |
 | **Check-in nach 4 und nach 8 Wochen** | Kurze DM, keine Calls | Verhindert die schlafende Kundin |
 
-**Der Warum-jetzt-Anlass:** Das Comeback startet **immer zum Monatsersten** in einer neuen Runde und ist an das Monatsthema gekoppelt. Damit bekommt dein Gespräch eine natürliche Frist, die nicht künstlich wirkt, und deine Content-Planung bekommt einen echten Takt.
+**Der Warum-jetzt-Anlass:** Eine neue Runde startet **immer zum Monatsersten** und ist an das Monatsthema gekoppelt. Damit bekommt dein Gespräch eine natürliche Frist, die nicht künstlich wirkt, und deine Content-Planung bekommt einen echten Takt.
 
 **Warum das die Einschreibung löst:** Der Sprung heisst nicht mehr „bestell für 150 PV", sondern „komm in die September-Runde". Das ist eine Zusage zu einem Weg statt zu einem Warenkorb.
 
@@ -117,7 +123,7 @@ Dein eigentliches Problem war nie „zu wenig Botschafterinnen", sondern dass 13
 
 ### 4.5 Woher die Botschafterinnen kommen — und woher ausdrücklich nicht
 
-**Quelle 1, der Hauptweg: aus deinen Kundinnen.** Erfolg zuerst, Frage danach. Nach dem 8-Wochen-Comeback kommt der natürliche Moment: *„Du erzählst gerade allen davon — willst du wissen, wie du das zu deinem eigenen Ding machst?"*
+**Quelle 1, der Hauptweg: aus deinen Kundinnen.** Erfolg zuerst, Frage danach. Nach den 8 Wochen kommt der natürliche Moment: *„Du erzählst gerade allen davon — willst du wissen, wie du das zu deinem eigenen Ding machst?"*
 
 **Quelle 2: die zwei inaktiven mit Potenzial.** Ein ehrliches Gespräch statt Nachfassen. Entweder sie steigt mit einem Startplan wieder ein, oder ihr klärt es sauber ab.
 
@@ -153,12 +159,12 @@ Das sind ungefähr drei Stunden. Alles darüber ist Kür.
 ### September — die drei Übergänge reparieren
 - **Profil-First-Impression-Audit:** Bio mit Link, drei angeheftete Beiträge, Highlights neu — ein halber Tag, grösster Hebel
 - **Freebie-zu-DM-Brücke einbauen:** In Mail 3 der Serie steht eine echte Frage, auf die man antworten kann
-- **„Energie-Comeback" definieren:** Name final, eine Seite Beschreibung, DM-Skript für das Start-Gespräch
+- **„Wieder im Gleichgewicht" definieren:** Name final, eine Seite Beschreibung, DM-Skript für das Start-Gespräch
 - **Reaktivierungs-Welle:** alle 22 inaktiven, gestaffelt nach den drei Stadien
 - **Ziel:** 30 Leads · 8 Gespräche · **2 Einschreibungen** · erste Runde mit 2 bis 3 Frauen
 
 ### Oktober — die Runde skalieren
-- Zweite Comeback-Runde mit Ziel 4 bis 5 Frauen
+- Zweite Gleichgewicht-Runde mit Ziel 4 bis 5 Frauen
 - Onboarding-Pfad für Botschafterinnen ausbauen, die offene Session aus [[onboarding-system-outline]]
 - Erste Botschafterinnen-Frage an Kandidatinnen aus der September-Runde
 - **Ziel:** **3 Einschreibungen** · 1 Botschafterinnen-Gespräch
@@ -183,7 +189,7 @@ Das sind ungefähr drei Stunden. Alles darüber ist Kür.
 
 ## 8. Offene Entscheidungen für dich
 
-1. Heisst das Kundinnen-Angebot „Dein Energie-Comeback", oder findest du etwas Besseres?
+1. Bleibt es bei „Wieder im Gleichgewicht" als Name der Runde?
 2. Start-Gespräch als Call über 20 Minuten oder als reiner DM-Dialog? Der Call konvertiert besser, kostet aber Zeit.
 3. Läuft die Begleitung im bestehenden Telegram-Kanal, oder willst du eine eigene Gruppe pro Runde?
 4. Die drei Back-Office-Zahlen aus Abschnitt 1 — wann trägst du sie nach?

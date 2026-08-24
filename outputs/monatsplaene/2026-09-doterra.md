@@ -7,7 +7,7 @@ tags: [monatsplan, doterra, content]
 **Erstellt:** 24.08.2026 · `/cockpit` · **Zeitraum:** 1.9.–30.9.2026
 **Strategie-Rahmen:** [[2026-strategie-einschreibungen-botschafterinnen]]
 **Monats-Nordstern:** 🎯 **Die drei Übergänge reparieren** — Profil, Freebie-zu-DM-Brücke, Einschreibe-Anlass.
-**Monatsziel:** 30 Freebie-Leads · 8 Gespräche · **2 Einschreibungen** · erste Comeback-Runde mit 2–3 Frauen
+**Monatsziel:** 30 Freebie-Leads · 8 Gespräche · **2 Einschreibungen** · erste Gleichgewicht-Runde mit 2–3 Frauen
 
 ---
 
@@ -28,7 +28,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 - **Adaptiv** · **Balance** · **Copaiba** — laut Jahresrhythmus die Monatsprodukte
 - ⚠️ **PV-Summe im CH-Shop verifizieren**, Ziel ≥ 150 PV. Ich erfinde keine PV-Werte — nur VMG+ 95 PV ist belegt.
 
-**Einschreibe-Anlass:** Start der ersten **Energie-Comeback-Runde am 1. Oktober**. Alles im September läuft darauf zu.
+**Einschreibe-Anlass:** Start der ersten **Gleichgewicht-Runde am 1. Oktober**. Alles im September läuft darauf zu.
 
 ---
 
@@ -39,7 +39,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 | **36** | Di 1.9.–Fr 4.9. | **Aufschlag Funktionier-Modus** | Profil-Audit (Bio + Link + 3 Pinned + Highlights) · Freebie fertigstellen |
 | **37** | Mo 7.9.–Fr 11.9. | **Warum dein Körper nicht mehr runterkommt** | Freebie live · Reaktivierung Stadium Soft (7 Kundinnen) |
 | **38** | Mo 14.9.–Fr 18.9. | **Die drei Kipp-Punkte im Tag** | Reaktivierung Stadium Hard (8) · erste DM-Gespräche führen |
-| **39** | Mo 21.9.–Fr 25.9. | **Was ich selbst geändert habe** | Reaktivierung Last-Call (7) · Comeback-Runde anbieten |
+| **39** | Mo 21.9.–Fr 25.9. | **Was ich selbst geändert habe** | Reaktivierung Last-Call (7) · Gleichgewicht-Runde anbieten |
 | **40** | Mo 28.9.–Mi 30.9. | **Einladung zur Oktober-Runde** | Einschreibungen abschliessen · Oktober vorbereiten |
 
 **Deine drei Fixpunkte pro Woche** (wenn sonst nichts geht): 3 Reels · 5 Reaktivierungs-Nachrichten · alle neuen Leads persönlich angeschrieben.
@@ -98,7 +98,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 
 ## 4. Story-Plan
 
-**Zwei Kernregeln:** Jede Sequenz hat einen CTA (Freebie RUHE oder Comeback-Runde), und über die Woche werden alle vier Käufertypen bedient.
+**Zwei Kernregeln:** Jede Sequenz hat einen CTA (Freebie RUHE oder Gleichgewicht-Runde), und über die Woche werden alle vier Käufertypen bedient.
 
 **Wochen-Bogen (jede Woche gleich getaktet):**
 
@@ -114,7 +114,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 
 1. **Mi 16.9. — die Umfrage-Sequenz.** „Was ist bei dir der schwierigste Moment am Tag?" mit drei Antwortmöglichkeiten. Jede Antwort ist ein Gesprächs-Einstieg, und du schreibst **jeder** Antwortenden zurück. Das ist deine wichtigste Lead-Quelle des Monats, wichtiger als jedes Reel.
 
-2. **Mo 22.9. bis Fr 26.9. — die Comeback-Ankündigungs-Serie.** Fünf Tage, ein Bogen: Montag der Schmerz, Dienstag deine eigene Geschichte, Mittwoch was du dir damals gewünscht hättest, Donnerstag was die Runde ist, Freitag wie man reinkommt. Kein Preis, keine Marke — es geht um den Weg, nicht um den Warenkorb.
+2. **Mo 22.9. bis Fr 26.9. — die Ankündigungs-Serie der Runde.** Fünf Tage, ein Bogen: Montag der Schmerz, Dienstag deine eigene Geschichte, Mittwoch was du dir damals gewünscht hättest, Donnerstag was die Runde ist, Freitag wie man reinkommt. Kein Preis, keine Marke — es geht um den Weg, nicht um den Warenkorb.
 
 **Ab Woche 4 zusätzlich:** In den Storys sichtbar machen, dass die Runde begrenzt ist. Nicht künstlich verknappt, sondern ehrlich: du begleitest im Oktober eine kleine Gruppe.
 
@@ -128,7 +128,7 @@ Das ist inhaltlich der stärkste Monat des Jahres für dich, weil dein Brand-Slo
 | **1.–4.9.** | Freebie-Text fertig + AC-Automation aufsetzen + **DM-Brücke in Mail 3** | 1 Tag |
 | **ab 8.9.** | Reaktivierung: 22 inaktive Kundinnen in drei Wellen, Templates liegen fertig | 3× 45 Min |
 | **laufend** | Jeden RUHE-Lead innerhalb 24 h persönlich anschreiben | 15 Min/Tag |
-| **ab 21.9.** | Comeback-Runde anbieten in den Gesprächen, die schon laufen | im Gespräch |
+| **ab 21.9.** | Gleichgewicht-Runde anbieten in den Gesprächen, die schon laufen | im Gespräch |
 | **28.–30.9.** | Einschreibungen abschliessen, Oktober-Freebie vorbereiten | 1 Tag |
 
 ---
