@@ -152,10 +152,19 @@ tags: [produkt, mentoring]
 
 *Sprechnotiz:* Der Notizen-Trick spart dir eine halbe Stunde Fluchen. Ich hab damals ewig gebraucht, bis mir das jemand gesagt hat.
 
-**Folie 6 — Deine Aufgabe**
+**Folie 6 — Dein Bio-Check**
+> Bio steht? Dann lass sie durch meinen **Bio-Check** laufen.
+> Du bekommst zurück, was schon zieht und was noch schwammig ist.
+> *(Link im Kursbereich · Mitmach-Heft Seite 5)*
+
+*Sprechnotiz:* Den Bio-Check hab ich sowieso für alle offen — du kriegst ihn hier gleich mit dazu. Schick deine Bio durch und schau, was zurückkommt. Und wenn was schwammig bleibt, liegt das fast immer am Thema, nicht an den Worten.
+
+> ⚠️ **Beim Aufnehmen:** nur die automatisierte Version nennen. Keinen persönlichen Profilcheck per Sprachnachricht versprechen — der gehört zu „Expertin statt Verkäuferin".
+
+**Folie 7 — Deine Aufgabe**
 > Bio steht auf deinem Profil. Mitmach-Heft Seite 4–5.
 
-**Folie 7 — Ausblick**
+**Folie 8 — Ausblick**
 > Als Nächstes bauen wir dein Schaufenster: Highlights und dein Link.
 
 ---

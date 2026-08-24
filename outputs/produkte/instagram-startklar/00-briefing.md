@@ -148,12 +148,15 @@ Startklar allein trägt das nicht, und das soll es auch gar nicht. Seine Aufgabe
 |---|---|---|
 | Hauptprodukt | Startklar, 15 Lektionen + Mitmach-Heft | 39 CHF |
 | Order Bump 1 | „Finde dein Thema als Network-Mama in 60 Minuten" | +25 statt 39 |
+| Fest eingebaut | **Bio-Check** (dein 0€-Funnel) — direkt in Lektion 1.3 verlinkt | 0 CHF |
 | Upsell direkt nach Kauf | Instagram-Kundenmaschine | 333 CHF |
 | Downsell | keiner | — |
 
 **„Expertin statt Verkäuferin" kommt bewusst NICHT in diesen Funnel** (Entscheidung 24.08.2026). Der 97er hat ein Bonusmodul „Dein Instagram-Profil als Expertinnen-Magnet" mit Bio, Highlights und den ersten drei gepinnten Posts — auf der Verkaufsseite steht damit fast dasselbe Wort wie bei Startklar. Wer beide hintereinander angeboten bekommt, liest das als Doppelverkauf und kauft dann keines von beiden. Der Weg aus Startklar geht deshalb direkt in die Instagram-Kundenmaschine.
 
-**Auch kein Bio-Check als Zugabe.** Der persönliche Profilcheck ist der Kauf-Bonus von „Expertin statt Verkäuferin". Wenn er im 39er gratis mitläuft, ist er im 97er nichts mehr wert.
+**Der Bio-Check ist fest eingebaut** (Patricia-Entscheid 24.08.2026). Er ist ohnehin ein 0€-Funnel, also wird nichts verschenkt, was sonst Geld kostet — und er sitzt inhaltlich genau an der Stelle, an der die Käuferin ihn braucht: sie hat in Lektion 1.3 ihre Bio getippt und will wissen, ob sie taugt. Nebeneffekt: jede Käuferin landet zusätzlich in der Bio-Check-Automation, und die bekommt hier zum ersten Mal warmes Publikum, das schon gezahlt hat.
+
+⚠️ **Eine Grenze bleibt:** nirgends einen **persönlichen Profilcheck per Sprachnachricht** versprechen. Das ist der Kauf-Bonus von „Expertin statt Verkäuferin" und bleibt dort exklusiv. Im 39er läuft nur die automatisierte Version.
 
 **Warum jetzt kaufen — ohne Preisspiel:** Der Preis bleibt bei 39, immer. Die Dringlichkeit kommt aus zwei anderen Quellen:
 
@@ -169,7 +172,7 @@ Startklar allein trägt das nicht, und das soll es auch gar nicht. Seine Aufgabe
 
 Wer diesen Monat kauft, bekommt den einen — wer nächsten Monat kauft, den anderen. Beide haben einen echten Grund, nicht zu warten.
 
-*Der Bio-Check als dritter Bonus ist gestrichen: der persönliche Profilcheck gehört „Expertin statt Verkäuferin" und darf im 39er nicht verschenkt werden.*
+*Der **Bio-Check** ist kein Rotations-Bonus, sondern **immer dabei** — er gehört inhaltlich zu Lektion 1.3 und wäre als wechselndes Extra an der falschen Stelle. Die Rotation dient nur dem Warum-jetzt.*
 
 ---
 

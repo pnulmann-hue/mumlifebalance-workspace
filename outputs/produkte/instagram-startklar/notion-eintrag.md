@@ -33,9 +33,10 @@ Module: 3 Module / 15 Lektionen
   M2 Du kannst posten (5 Lektionen, 46 Min)
   M3 Du bleibst dran (5 Lektionen, 40 Min)
 Format: Selbstlernkurs, Bildschirmaufnahmen vom Handy + Folien, plus Mitmach-Heft (PDF)
-KI-Assistent (Bonus): kein neuer Bot. Bio-Check bleibt exklusiv bei „Expertin statt
-           Verkäuferin". Warum-jetzt läuft über zwei wechselnde Boni
-           (Canva-Vorlagen-Set / „Fünf Testreels in zehn Minuten").
+KI-Assistent (Bonus): kein neuer Bot. Der bestehende 0€-Bio-Check ist fest in Lektion 1.3
+           eingebaut (nicht der persönliche Sprachnachricht-Profilcheck — der bleibt
+           exklusiv bei „Expertin statt Verkäuferin"). Warum-jetzt läuft über zwei
+           wechselnde Boni (Canva-Vorlagen-Set / „Fünf Testreels in zehn Minuten").
 Launch-Datum (geplant): offen — Vorschlag KW 37/2026, sobald aufgenommen
 Markt-Research-Notiz: Top-Painpoint = Lücke zwischen Strategie-Wissen und
            Klick-Können. Wettbewerb im 2-stelligen Segment reichlich vorhanden
