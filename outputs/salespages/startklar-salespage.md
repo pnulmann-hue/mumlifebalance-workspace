@@ -149,21 +149,37 @@ Deshalb gibt es Startklar.
 ---
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 BLOCK 6: SOLL-Zustand + CTA
-ThriveCart-Tipp: Textblock, danach Button
+📋 BLOCK 6: SOLL-Zustand — drei Szenen + CTA
+ThriveCart-Tipp: Drei Textblöcke untereinander, jeder mit kleiner Überschrift. Danach der Button
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**Stell dir vor, es ist nächsten Sonntagabend.**
+**Stell dir vor, das könnte zukünftig bei dir so aussehen.**
 
-Du machst dein Profil auf und schaust es dir an, wie eine Fremde es sehen würde. Oben steht dein Name und daneben, wobei du hilfst. Darunter vier Zeilen, die jemand in zwei Sekunden versteht. Fünf Highlight-Kreise, alle mit Cover. Ein Link, der funktioniert.
+**🌙 Sonntagabend, die Kinder schlafen**
 
-Und darunter: dein erstes Reel, dein erstes Karussell. Beide von dir. Beide gepostet, ohne dass du jemanden fragen musstest.
+Du sitzt auf dem Sofa und machst dein Profil auf. Diesmal zum Anschauen, so wie eine Fremde es sehen würde. Oben dein Name, daneben steht, wobei du hilfst. Darunter vier Zeilen, die man in zwei Sekunden versteht. Fünf Highlight-Kreise, alle mit Cover. Ein Link, der funktioniert.
 
-Du gehst in deine Nachrichten und findest zwei Antworten auf deine Story-Umfrage. Von Frauen, die du nicht persönlich kennst.
+Vor zwei Wochen wusstest du nicht, wo man den Zeilenumbruch einstellt. Und wenn dein Mann fragt, was du eigentlich den ganzen Nachmittag gemacht hast, drehst du ihm einfach das Handy hin.
 
-**Und wenn dein Mann fragt, was du eigentlich den ganzen Nachmittag gemacht hast, drehst du ihm einfach das Handy hin.**
+**☕ Dienstagmorgen, kurz nach acht**
 
-Das ist kein Business. Das ist der Boden, auf dem eins wachsen kann. Aber ohne diesen Boden fängt gar nichts an.
+Die Kinder sind aus dem Haus, du stehst in der Küche und schmierst dir ein Brot. Dir fällt ein Satz ein, den du deiner Wunschkundin schon lange sagen willst.
+
+Du stellst das Handy ans Fenster, drückst auf Aufnahme, sagst deinen Satz und legst Text drüber. Sieben Sekunden. Hochgeladen, bevor der Kaffee kalt ist.
+
+Kein Anlauf, keine drei Versuche, kein Löschen. Du weisst inzwischen, wo du hindrücken musst — und dass es nicht perfekt sein muss, damit es zählt.
+
+**💬 Donnerstagabend, halb zehn**
+
+Du schaust nochmal kurz aufs Handy und siehst zwei Antworten auf deine Story-Umfrage. Beide von Frauen, die du nicht persönlich kennst.
+
+Eine hat dazugeschrieben: „Genau mein Thema."
+
+Das ist noch kein Verkauf und noch keine Kundin. Aber es ist zum ersten Mal jemand, der wegen dir da ist und nicht wegen deiner Produkte. Und du weisst, dass du weisst, wie das geht — weil du es diese Woche selbst gemacht hast.
+
+---
+
+Das ist kein fertiges Business. Das ist der Boden, auf dem eins wachsen kann. Ohne diesen Boden fängt gar nichts an.
 
 🔘 **Ich will das — 39 CHF**
 
