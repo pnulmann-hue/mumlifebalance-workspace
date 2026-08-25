@@ -52,7 +52,7 @@ Du exportierst ein Reel aus Canva und siehst den Hook im Bild. Such die ersten W
 ---
 
 ## C — Positionierung, Thema, Profil
-*Caption C · Keyword `SICHTBAR` · Job: Lead*
+*Caption C · Keyword `BIO` (Bio-Check-Bot) · Job: Lead*
 
 - Ich war überzeugt, mir fehlt Reichweite
 - Bevor du etwas postest, öffnest du das Profil deiner Sponsorin

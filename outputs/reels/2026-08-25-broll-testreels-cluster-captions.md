@@ -10,6 +10,18 @@ tags: [content, reels]
 
 ---
 
+## 📌 Dein Standard-Schluss
+
+Kommt bei **allen Reichweiten-Clustern** (A, B ohne Keyword, E, F, G, H, I) ans Ende:
+
+> Falls du gerade denkst: oh, cooler Ansatz, mal was anderes als die 100-Personen-Liste abzutelefonieren — dann folg mir. Hier gibt es Klartext zum Businessaufbau als Mama im Network.
+>
+> Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Instagram sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst und wie du das ganze Business in deinen Mama-Alltag packst.
+
+**Bei den Lead-Clustern C und D** nur den zweiten Absatz anhängen, den Vorstellungsteil. Der Folgen-Satz fällt dort weg, weil sonst zwei CTAs im selben Post stehen.
+
+---
+
 ## So funktioniert dieses Dokument
 
 Neun Themen-Cluster. Pro Cluster **eine Caption**, die zu **allen** Hooks des Clusters passt, plus ein fest zugeordnetes Keyword. Du musst also nicht 68 Captions verwalten, sondern neun. Der Hook steht im Video, die Caption liefert den Inhalt.
@@ -71,7 +83,9 @@ Was du siehst, ist ihr Kapitel 27. Du bist gerade bei Kapitel 2, und Kapitel 2 s
 
 Der Unterschied kam bei mir erst, als ich aufgehört habe, das gleiche Rennen zu laufen. Seit ich mein eigenes Thema aufgebaut habe statt der nächsten Rangstufe hinterherzurennen, vergeht kein Monat ohne Verkauf. Bei achtzehn Stunden Arbeit pro Woche und vier Kindern.
 
-Falls du gerade jemanden im Kopf hast, die genau so scrollt: schick ihr das hier.
+Falls du gerade denkst: oh, cooler Ansatz, mal was anderes als die 100-Personen-Liste abzutelefonieren — dann folg mir. Hier gibt es Klartext zum Businessaufbau als Mama im Network.
+
+Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Instagram sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst und wie du das ganze Business in deinen Mama-Alltag packst.
 
 #mamabusiness #networkmarketing #networkmama #mamaselbstständig #onlinebusinessmitkindern
 
@@ -95,13 +109,15 @@ Als ich 2023 neu angefangen habe, habe ich zuerst mein Thema festgelegt und dana
 
 Kommentier FAHRPLAN und ich schick dir die zehn Schritte als PDF.
 
+Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Instagram sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst und wie du das ganze Business in deinen Mama-Alltag packst.
+
 #mamabusiness #networkmarketing #networkmama #instagramtipps #onlinebusinessmitkindern
 
 ---
 
 ## Cluster C — Positionierung, Thema, Profil
 **Hooks:** „mir fehlt Reichweite" · Profil der Sponsorin öffnen · eine Änderung im Profil · „Die muss ich kontaktieren" · Unpopuläre Meinung · niemand zeigt dir wie · 5 Dinge auf die ich mich fokussiert habe
-**Job:** Lead · **Keyword:** `SICHTBAR`
+**Job:** Lead · **Keyword:** `BIO`
 
 **Caption:**
 
@@ -115,7 +131,9 @@ Mehr Reichweite hilft dagegen nicht. Mehr Menschen auf ein unklares Profil bring
 
 Bei mir hat sich das gedreht, als in Zeile eins stand, wobei ich helfe. Nicht wer mich bezahlt.
 
-Kommentier SICHTBAR und ich schick dir meinen Starterguide, da steht die Bio-Struktur Zeile für Zeile drin.
+Falls du gerade selbst nachschaust und merkst, dass da nur dein Firmenname steht: Kommentier BIO. Dann schaut mein Bot sich deine Bio an und sagt dir in ein paar Minuten, was fehlt.
+
+Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Instagram sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst und wie du das ganze Business in deinen Mama-Alltag packst.
 
 #mamabusiness #networkmarketing #instagramtipps #networkmama #sichtbarkeit
 
@@ -139,6 +157,8 @@ Der häufigste Fehler dabei: zuerst monatelang basteln und erst danach fragen, o
 
 Kommentier LEAD und ich schick dir das Drei-Tage-Workbook, damit baust du deinen ersten eigenen Leadmagneten.
 
+Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Instagram sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst und wie du das ganze Business in deinen Mama-Alltag packst.
+
 #mamabusiness #networkmarketing #digitaleprodukte #networkmama #onlinebusinessmitkindern
 
 ---
@@ -159,7 +179,9 @@ Früher habe ich diese Stunden mit Posten gefüllt und gehofft, dass etwas zurü
 
 Der ehrliche Teil: Es liegt selten wirklich an der Zeit. Es ist bequemer, der Zeit die Schuld zu geben, als sich einzugestehen, dass die Strategie nicht passt. Das habe ich lange genug selbst gemacht.
 
-Wenn du gerade auch mit dem Wäschekorb dasitzt: teil das hier mit einer Frau, die es genauso kennt.
+Falls du gerade denkst: oh, cooler Ansatz, mal was anderes als die 100-Personen-Liste abzutelefonieren — dann folg mir. Hier gibt es Klartext zum Businessaufbau als Mama im Network.
+
+Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Instagram sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst und wie du das ganze Business in deinen Mama-Alltag packst.
 
 #mamabusiness #mamaselbstständig #networkmama #vereinbarkeit #onlinebusinessmitkindern
 
@@ -179,7 +201,9 @@ Das war der Punkt, an dem ich dachte, ich kann das einfach nicht.
 
 Ich bin nicht die Mentorin mit dem sechsstelligen Einkommen und dem Laptop am Strand. Ich bin die mit vier Kindern, achtzehn Stunden Arbeitswoche und einem Haushalt, der auch nicht von allein läuft. Genau deshalb weiss ich, wie es sich anfühlt, wenn es nicht läuft.
 
-Falls du gerade an dem Punkt bist, an dem ich 2021 war: Es lag bei mir nicht an mir. Es lag an der Reihenfolge.
+Falls du gerade denkst: oh, cooler Ansatz, mal was anderes als die 100-Personen-Liste abzutelefonieren — dann folg mir. Hier gibt es Klartext zum Businessaufbau als Mama im Network.
+
+Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Instagram sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst und wie du das ganze Business in deinen Mama-Alltag packst.
 
 #mamabusiness #networkmarketing #networkmama #mamaceo #onlinebusinessmitkindern
 
@@ -199,7 +223,11 @@ Ich habe mich jahrelang bei meinem Mann für das rechtfertigen müssen, was ich 
 
 Was das geändert hat, war nicht mehr Mut. Es war, dass ich aufgehört habe, Produkte anzubieten, und angefangen habe, über mein Thema zu sprechen. Seitdem kommen die Fragen von allein, und ich muss niemanden mehr auf einen Kaffee locken.
 
-Wenn du dich hier wiedererkennst: schick es der Frau, die es auch gerade so erlebt.
+Schreib mir in die Kommentare, welche Situation dir sofort eingefallen ist. Ich will wissen, wie viele von uns das kennen.
+
+Falls du gerade denkst: oh, cooler Ansatz, mal was anderes als die 100-Personen-Liste abzutelefonieren — dann folg mir. Hier gibt es Klartext zum Businessaufbau als Mama im Network.
+
+Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Instagram sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst und wie du das ganze Business in deinen Mama-Alltag packst.
 
 #mamabusiness #networkmarketing #networkmama #mamaselbstständig #ehrlichesbusiness
 
@@ -219,7 +247,11 @@ Klingt nach Technik, ist aber vor allem eine Entscheidung: Ich weigere mich, jed
 
 Achtzehn Stunden pro Woche, vier Kinder, kein Monat ohne Verkauf. Das geht nur, weil ich die immer gleichen Entscheidungen nicht immer wieder neu treffe.
 
-Teil das mit einer Frau, die auch jeden Morgen bei null anfängt.
+Schreib mir in die Kommentare, woran du morgens hängen bleibst. Ich antworte dir ehrlich.
+
+Falls du gerade denkst: oh, cooler Ansatz, mal was anderes als die 100-Personen-Liste abzutelefonieren — dann folg mir. Hier gibt es Klartext zum Businessaufbau als Mama im Network.
+
+Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Instagram sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst und wie du das ganze Business in deinen Mama-Alltag packst.
 
 #mamabusiness #kiimalltag #mamaceo #networkmama #onlinebusinessmitkindern
 
@@ -237,7 +269,11 @@ Meine ehrliche Antwort: Frag, womit sie ihr Geld verdient. Der Markt ist voll mi
 
 Ich verkaufe über mein Network, und ich verkaufe eigene Produkte. Beides läuft parallel, seit 2023, und beides bringt vierstellig im Monat. Das ist keine grosse Zahl, aber es ist eine echte, und sie kommt aus genau der Situation, in der du auch steckst.
 
-Frag also ruhig nach, bevor du irgendwo investierst. Bei mir auch.
+Schreib mir in die Kommentare, was du dich vor einer Investition nicht zu fragen traust. Ich beantworte es dir, auch wenn es gegen mich läuft.
+
+Falls du gerade denkst: oh, cooler Ansatz, mal was anderes als die 100-Personen-Liste abzutelefonieren — dann folg mir. Hier gibt es Klartext zum Businessaufbau als Mama im Network.
+
+Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Instagram sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst und wie du das ganze Business in deinen Mama-Alltag packst.
 
 #mamabusiness #networkmarketing #networkmama #ehrlichesbusiness #mamaselbstständig
 
