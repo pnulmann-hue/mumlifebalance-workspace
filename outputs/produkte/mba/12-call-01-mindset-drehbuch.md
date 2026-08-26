@@ -231,18 +231,20 @@ Der Thread stirbt, wenn nach ein paar Tagen nichts mehr kommt. Leg dir diese dre
 
 ---
 
-## 9. Folien (bewusst minimal — 6 Stück, weisser Hintergrund)
+## 9. Präsentation
 
-Du sprichst frei, die Folien sind nur Halt für die Gruppe.
+**Fertig gebaut:** `praesentationen/call-01-dranbleiben.pptx` — 19 Folien, 16:9, im gleichen Look wie deine Mama-CEO-Decks (Creme, Georgia in Dunkelblau, Petrol-Häkchen, oranger Akzent). **In jeder Folie stehen die Sprechnotizen** in der Notizen-Ansicht — frei nachsprechen, nicht ablesen.
 
-1. **„Es ist Arbeit. Auch wenn noch kein Geld kommt."** — nur der Satz.
-2. **Die vier Konten** — Sichtbarkeit · Vertrauen · Aufgebautes · Geld, mit dem Zusatz: *Geld füllt sich zuletzt.*
-3. **Deine Bestandsaufnahme** — die drei Fragen aus der Live-Arbeit A.
-4. **„Vier Wochen sind keine Challenge. Vier Wochen sind die Mindestdosis."**
-5. **Deine eine Sache + deine Notfall-Version** — die Arbeitsvorlage für Live-Arbeit B.
-6. **Deine Aufgabe: vier Wochen, eine Sache, jede Woche drei Zeilen.**
+Drei Folien-Sorten:
+- **Aussage-Folien** (oranger Balken links, nur ein grosser Satz) für die Kernsätze — die lässt du stehen und redest dazu.
+- **Inhalts-Folien** mit maximal vier bis fünf Zeilen.
+- **Arbeits-Folien** mit orangem „JETZT DU"-Badge — die bleiben stehen, während die Gruppe schreibt.
 
-Kein Datum auf den Folien. Wenn ein Foto von dir drauf soll, dann nur auf Folie 1 und dein Gesicht bleibt frei.
+Aufbau: Titel · Ablauf · Runde · dein Bekenntnis · der Denkfehler · die vier Konten · woran du sie merkst · „Geld füllt sich zuletzt" · wie lange es dauert · **Bestandsaufnahme (Arbeit)** · „vier Wochen sind die Mindestdosis" · was am häufigsten passiert · „es liegt nie an dir als Person" · die Regel · Beispiele Sache/Notfall-Version · **deine eine Sache (Arbeit)** · deine Aufgabe · wenn eine Woche nicht klappt · wie es weitergeht.
+
+Kein Datum auf den Folien. Wenn du ein Foto von dir einbauen willst, dann nur auf Folie 1 rechts unten anstelle des orangen Kreises, und dein Gesicht bleibt frei.
+
+**Neu bauen nach Änderungen:** `python outputs/produkte/mba/_build-scripts/build_pptx_call01.py`
 
 ---
 
