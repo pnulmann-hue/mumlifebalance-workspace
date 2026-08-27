@@ -11,6 +11,10 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[network-bts-telegram-konzept]]
 - 📘 [[README]]
 
+### 📁 antwort-retter
+
+- [[00-briefing]]
+
 ### 📁 audit-2026-04-22
 
 - [[00-markt-research]]

@@ -10,3 +10,4 @@ Auto-Index aller Files in `outputs/zielgruppen-research/`. Siehe [[_MOCs/MOC-Mar
 
 - [[doterra-2026-04-22]]
 - [[mentoring-2026-04-21]]
+- [[mentoring-2026-08-27]]
