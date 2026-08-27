@@ -11,7 +11,8 @@ tags: [produkt, mba]
 - [[09-webinar-anmelde-lp]] — Webinar-Anmelde-Landingpage (HTML, Meta-safe, AC-Form 59) → **LIVE als Draft: WP-Seite 3795, Slug `mba-webinar`** (HTML in Seite + CSS im Customizer wegen WAF, siehe [[reference_wordpress-waf-lp-deploy]])
 - [[10-academy-architektur]] — Academy-Aufbau auf **ThriveAcademy (community-first, Launch Mai 2026)**: 1-Community-Struktur mit Spaces, roter Faden, Skool-Mapping, PIA-Einbettung, Telegram-Entscheidung, Kosten/Setup (Skool-Elevate-Analyse + ThriveCart-Recherche 30.6.)
 - [[11-willkommens-modul-und-callplan]] — Willkommens-Kurs (4 Lektionen, Skripte + Folien), Umsetzerinnen-Call-12-Monatsplan, „Erste 7 Tage"-Arbeitsblatt
-- [[12-call-01-mindset-drehbuch]] — Call 1 (27.08.2026) „Es ist Arbeit, auch wenn noch kein Geld kommt": Dranbleiben & Konsistenz, Framework „Die vier Konten", 4-Wochen-Aufgabe + Community-Thread
+- [[12-call-01-mindset-drehbuch]] — Call 1 (27.08.2026) „Es ist Arbeit, auch wenn noch kein Geld kommt": Dranbleiben & Konsistenz, Framework „Die vier Konten", 4-Wochen-Aufgabe + Community-Thread + Pausen-Erlaubnis
+- [[13-telegram-erfolgs-indikatoren]] — Telegram-Nachricht zum Call: Erfolgs-Indikatoren statt Geld + Reflexions- und 4-Wochen-Aufgabe
 
 ## 🔗 Verwandte Notizen
 - [[umbau-plan]] — MBA-Pitch-Automation (Funnel-Spitze)
