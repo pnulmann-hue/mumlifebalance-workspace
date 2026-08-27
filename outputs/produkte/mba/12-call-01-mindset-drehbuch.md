@@ -20,6 +20,8 @@ tags: [produkt, mba, calls, mindset]
 | **Ziel** | Jede geht raus mit (a) einer Liste von dem, was sie schon gebaut hat, und (b) EINER Sache, die sie vier Wochen durchzieht |
 | **Was rausgeht** | 1 Aufgabe für 4 Wochen + 1 Thread in der Academy, in dem bis zum nächsten Themen-Call gepostet wird |
 
+> ⚠️ **Angepasst am 26.08.2026:** Eine aus der Gruppe hat geschrieben, dass es ihr persönlich nicht gut geht und ihr Business seit sechs Wochen stillsteht. Der Call bleibt beim Thema, bekommt aber eine ausdrückliche Pausen-Erlaubnis (Abschnitt 2b) — Teil 1 wiegt schwerer, der Satz „Aufhören ist das Einzige, was nicht funktioniert" ist raus, die Notfall-Version ist gleichwertig statt Notlösung, und die Aufgabe lässt eine Pausen-Variante zu. Angesprochen wird es **allgemein, ohne sie zu nennen**. Schreib ihr zusätzlich vor dem Call kurz persönlich.
+
 **Was im Plan verschoben wird:** Im 12-Monats-Themenplan stand für Monat 1 „Kick-off: dein Thema & dein Experten-Satz". Das rutscht auf den Themen-Call im September — dort sitzt es besser, weil die Frauen dann in den Kursen drin sind. Ein Rest davon steckt in der Vorstellungsrunde.
 
 **Warum dieses Thema als erster Call richtig ist:** Die häufigste Abbruch-Ursache im ersten Jahr ist nicht fehlendes Wissen, sondern der Moment, in dem eine Frau nach acht Wochen ohne Verkauf beschliesst, dass das hier keine richtige Arbeit ist. Wenn du das gleich im ersten Call abräumst, kaufst du dir die nächsten zwölf Monate. Und es passt zu jeder in der Runde, egal wie weit sie in den Kursen ist.
@@ -59,7 +61,7 @@ Was die meisten machen: drei Wochen Vollgas, dann kommt eine Woche mit krankem K
 
 > **Wähle etwas, das du auch an einem beschissenen Tag noch schaffst. Lieber klein und vier Wochen durch, als gross und nach acht Tagen weg.**
 
-Und deshalb bekommt bei dir jede Sache eine **Notfall-Version** — die Mini-Ausgabe für den Tag, an dem alles schiefgeht. Nicht als Ausrede, sondern damit die Kette nicht reisst.
+Und deshalb bekommt bei dir jede Sache eine **Notfall-Version** — die Mini-Ausgabe für den Tag, an dem alles schiefgeht. Sag im Call ausdrücklich dazu, dass die Notfall-Version **kein Rückfall und keine schlechtere Variante** ist, sondern dieselbe Sache, nur kleiner. Wer die Notfall-Version macht, hat die Woche geschafft, fertig.
 
 **Beispiele, wie das aussieht:**
 
@@ -69,6 +71,26 @@ Und deshalb bekommt bei dir jede Sache eine **Notfall-Version** — die Mini-Aus
 | Drei Beiträge pro Woche | Ein Beitrag, dafür fix am selben Tag |
 | Jeden Tag zwei echte DMs | Eine Sprachnachricht an eine Person |
 | Jeden Sonntag die Woche planen | Zehn Minuten, drei Zeilen, fertig |
+
+---
+
+## 2b. Die Pausen-Erlaubnis (kommt VOR dem Konsistenz-Teil)
+
+Ohne diesen Block kippt der zweite Teil bei jeder, die gerade nicht kann, in Druck. Mit ihm wird er zur Entlastung — und für alle anderen ist es der Moment, in dem sie merken, dass sie hier ehrlich sein dürfen.
+
+> **Sprech-Anker (frei nachsprechen):**
+> „Bevor wir zum zweiten Teil kommen, muss ich noch etwas sagen, weil es sonst schief ankommt. Es gibt Phasen, in denen gar nichts geht. Wo du keine Kraft hast, wo privat etwas läuft, wo dein Business einfach steht, wochenlang. Und ich will, dass ihr das von mir hört und nicht von irgendeinem Coach im Internet: das gehört dazu. Das ist kein Rückschritt und es ist auch nicht dein Versagen. Ich hatte solche Phasen und ich werde wieder welche haben."
+
+**Die vier Sätze, die du dann setzt:**
+
+1. **Eine Pause ist keine verlorene Zeit** — dein aufgebautes Konto bleibt. Dein Profil, dein Wissen, deine Leute verschwinden nicht in sechs Wochen.
+2. **Pause ist nicht aufhören.** Aufhören heisst stilles Wegbleiben, ohne dass es jemand merkt.
+3. **Sag es laut** — ein Satz im Fragen-Bereich reicht, dann muss niemand raten und niemand denkt, du hättest es aufgegeben.
+4. **Wenn du wieder kannst, fängst du nicht bei null an.** Du fängst da an, wo du aufgehört hast.
+
+**Und ganz zu Beginn des Calls** (direkt beim „so läuft das hier") setzt du schon einen Satz, damit sie nicht die ganze erste Hälfte im Anspannungs-Modus sitzt:
+
+> „Eins sag ich gleich vorneweg, damit es keine falsche Erwartung gibt: es geht heute ums Dranbleiben, aber es geht nicht um Vollgas. Wenn bei dir gerade wenig oder gar nichts geht, dann bist du hier genau richtig, denn genau dafür bauen wir das nachher passend."
 
 ---
 

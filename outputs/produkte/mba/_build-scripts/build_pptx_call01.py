@@ -83,12 +83,21 @@ def add_content_slide(prs, title, bullets, mark="✓"):
     run(tf.paragraphs[0], title, "Georgia", 30, True, NAVY)
     _, tf = textbox(s, 0.6, 1.55, 8.8, 3.45)
     first = True
+    prev = None
     for b in bullets:
         p = tf.paragraphs[0] if first else tf.add_paragraph()
         first = False
         p.space_after = Pt(10)
-        run(p, mark + "  ", "Calibri", 16, True, PETROL)
-        run(p, b, "Calibri", 16, False, BODY)
+        # "~" am Anfang = Fortsetzungszeile: kein eigenes Zeichen, eingerückt
+        if b.startswith("~"):
+            if prev is not None:
+                prev.space_after = Pt(1)
+            run(p, "      ", "Calibri", 16, False, BODY)
+            run(p, b[1:], "Calibri", 16, False, BODY)
+        else:
+            run(p, mark + "  ", "Calibri", 16, True, PETROL)
+            run(p, b, "Calibri", 16, False, BODY)
+        prev = p
     footer(s)
     return s
 
@@ -166,7 +175,7 @@ SLIDES = [
            "Deine Bestandsaufnahme: was du l\u00e4ngst gebaut hast",
            "Warum vier Wochen die Mindestdosis sind",
            "Deine eine Sache f\u00fcr die n\u00e4chsten vier Wochen"],
-     "n": "Kurz, was heute passiert, damit du weisst, worauf es hinausläuft. Wir machen eine Runde, dann rede ich einen Moment, danach arbeitest du selber, dann rede ich nochmal, und dann arbeitest du nochmal. Am Ende gehst du mit einer ganz konkreten Sache raus. Das ist mir wichtig, ich will keine Calls machen, nach denen man ein gutes Gefühl hat und am nächsten Tag nichts anders ist."},
+     "n": "Kurz, was heute passiert, damit du weisst, worauf es hinausläuft. Wir machen eine Runde, dann rede ich einen Moment, danach arbeitest du selber, dann rede ich nochmal, und dann arbeitest du nochmal. Am Ende gehst du mit einer ganz konkreten Sache raus. Das ist mir wichtig, ich will keine Calls machen, nach denen man ein gutes Gefühl hat und am nächsten Tag nichts anders ist. Und eins sag ich gleich vorneweg, damit es keine falsche Erwartung gibt: es geht heute um Dranbleiben, aber es geht nicht um Vollgas. Wenn bei dir gerade wenig oder gar nichts geht, dann bist du hier genau richtig, denn genau dafür bauen wir das nachher passend."},
 
     {"k": "w", "t": "Kurze Runde",
      "b": ["Dein Name und was du verkaufst",
@@ -209,7 +218,7 @@ SLIDES = [
      "b": ["Meine Erfahrung: online mindestens ein Jahr",
            "Und zwar unter der Bedingung, dass du konstant dranbleibst",
            "Bei mir hat es l\u00e4nger gedauert \u2014 selbst\u00e4ndig seit 2023,",
-           "regelm\u00e4ssiges Einkommen ab Fr\u00fchling 2025"],
+           "~regelm\u00e4ssiges Einkommen ab Fr\u00fchling 2025"],
      "n": "Jetzt zur ehrlichen Zahl, und das ist keine Statistik, das ist meine Erfahrung. Online brauchst du normalerweise mindestens ein Jahr, bis regelmässig Geld kommt. Und zwar unter der Bedingung, dass du konstant dranbleibst. Bei mir hat es sogar länger gedauert, ich bin seit 2023 selbständig und regelmässig kam es ab Frühling 2025. Ich sag dir das nicht, um dich zu entmutigen, sondern damit du in Woche sechs nicht denkst, du machst was falsch."},
 
     {"k": "w", "t": "Deine Bestandsaufnahme",
@@ -218,6 +227,18 @@ SLIDES = [
            "Was kannst du heute, was du vor einem Jahr nicht konntest?"],
      "hint": "Alles z\u00e4hlt. Auch ein Kurs, den du durchgearbeitet hast.",
      "n": "So, jetzt bist du dran. Du hast sieben, acht Minuten und schreibst zu diesen drei Fragen auf, was dir einfällt. Und alles zählt: dein Profil, deine Beiträge, dein Freebie, deine Liste, ein Kurs, den du durchgearbeitet hast, ein Thema, das klarer geworden ist. Danach lesen wir reihum je zwei Sachen vor, und ich sag dir bei jeder, auf welches Konto das eingezahlt hat."},
+
+    {"k": "s",
+     "t": "Und dann gibt es Phasen,\nin denen gar nichts geht.",
+     "src": "Auch die gehören dazu. Auch die sind Teil vom Aufbau.",
+     "n": "Und bevor wir zum zweiten Teil kommen, muss ich noch etwas sagen, weil es sonst schief ankommt. Es gibt Phasen, in denen gar nichts geht. Wo du keine Kraft hast, wo privat etwas läuft, wo dein Business einfach steht, wochenlang. Und ich will, dass ihr das von mir hört und nicht von irgendeinem Coach im Internet: das gehört dazu. Das ist kein Rückschritt und es ist auch nicht dein Versagen. Ich hatte solche Phasen und ich werde wieder welche haben."},
+
+    {"k": "c", "t": "Was in so einer Phase gilt",
+     "b": ["Eine Pause ist keine verlorene Zeit — dein Aufgebautes bleibt",
+           "Pause ist nicht aufhören — aufhören heisst stilles Wegbleiben",
+           "Sag es laut, dann muss niemand raten — ein Satz bei uns reicht",
+           "Und wenn du wieder kannst, fängst du nicht bei null an"],
+     "n": "Vier Sachen, die in so einer Phase gelten. Erstens: eine Pause ist keine verlorene Zeit, weil dein aufgebautes Konto bleibt. Dein Profil, dein Wissen, deine Leute, das verschwindet nicht in sechs Wochen. Zweitens, und das ist mir das wichtigste: Pause ist nicht aufhören. Aufhören heisst wegbleiben, ohne dass es jemand merkt. Drittens: sag es laut, ein Satz bei uns im Fragen-Bereich reicht, dann muss niemand raten und niemand denkt, du hättest es aufgegeben. Und viertens: wenn du wieder kannst, fängst du nicht bei null an. Du fängst da an, wo du aufgehört hast, und das ist ein grosser Unterschied."},
 
     {"k": "s",
      "t": "Vier Wochen sind\nkeine Challenge.",
@@ -239,9 +260,9 @@ SLIDES = [
     {"k": "c", "t": "Die Regel, die alles \u00e4ndert",
      "b": ["W\u00e4hl EINE Sache. Nicht drei.",
            "Sie muss so klein sein, dass du sie auch an einem",
-           "beschissenen Tag noch schaffst",
-           "Und sie kriegt eine Notfall-Version f\u00fcr genau diese Tage"],
-     "n": "Darum machen wir das heute anders. Du suchst dir eine Sache. Nicht drei, eine. Und die muss so klein sein, dass du sie auch an dem Tag noch schaffst, an dem alles schiefgeht. Und dann kriegt sie noch eine Notfall-Version, also die Mini-Ausgabe für genau diese Tage. Nicht als Ausrede, sondern damit die Kette nicht reisst."},
+           "~beschissenen Tag noch schaffst",
+           "Und sie kriegt eine Notfall-Version \u2014 gleichwertig, kein R\u00fcckfall"],
+     "n": "Darum machen wir das heute anders. Du suchst dir eine Sache. Nicht drei, eine. Und die muss so klein sein, dass du sie auch an dem Tag noch schaffst, an dem alles schiefgeht. Und dann kriegt sie eine Notfall-Version. Und jetzt hör mir gut zu: die Notfall-Version ist kein Rutsch nach unten und keine schlechtere Variante. Sie ist deine Sache, nur kleiner. Wer die Notfall-Version macht, hat die Woche geschafft, Punkt."},
 
     {"k": "c", "t": "So sieht das aus",
      "b": ["Jeden Tag eine Story  \u2192  eine einzige Story mit dem Handy im Auto",
@@ -260,15 +281,16 @@ SLIDES = [
      "b": ["Vier Wochen deine eine Sache durchziehen",
            "Jede Woche drei Zeilen bei uns im Fragen-Bereich",
            "Meine Sache \u00b7 Durchgezogen: ja / mit Notfall-Version / nein",
-           "Was passiert ist \u2014 und da geht es NICHT ums Geld"],
+           "Was passiert ist — und da geht es NICHT ums Geld",
+           "Geht gerade gar nichts? Dann SIND die drei Zeilen deine eine Sache"],
      "n": "Deine Aufgabe ist einfach und trotzdem die schwerste, die ich dir dieses Jahr gebe. Du ziehst deine eine Sache vier Wochen durch, mit Notfall-Version wenn es sein muss. Und du schreibst jede Woche drei Zeilen bei uns in den Fragen-Bereich. Was du geschafft hast, ob mit Notfall-Version, und was passiert ist. Und da geht es ausdrücklich nicht ums Geld, sondern um alles andere: wer sich gemeldet hat, was du fertig gebaut hast, was leichter ging als letzte Woche."},
 
     {"k": "c", "t": "Und wenn eine Woche nicht klappt?",
      "b": ["Dann schreibst du genau das rein",
            "Wir schauen gemeinsam, ob deine Sache zu gross gebaut war",
            "Dranbleiben heisst nicht l\u00fcckenlos \u2014 es heisst zur\u00fcckkommen",
-           "Aufh\u00f6ren ist das Einzige, was hier wirklich nicht funktioniert"],
-     "n": "Und wenn eine Woche nicht klappt, dann schreibst du genau das rein. Nein ist eine völlig gültige Antwort, und dann schauen wir gemeinsam, ob deine Sache zu gross gebaut war, und machen sie kleiner. Dranbleiben heisst nämlich nicht lückenlos, es heisst zurückkommen. Aufhören ist das Einzige, was hier wirklich nicht funktioniert."},
+           "Pause ist nicht aufhören — aufhören heisst stilles Wegbleiben"],
+     "n": "Und wenn eine Woche nicht klappt, dann schreibst du genau das rein. Nein ist eine völlig gültige Antwort, und dann schauen wir gemeinsam, ob deine Sache zu gross gebaut war, und machen sie kleiner. Dranbleiben heisst nämlich nicht lückenlos, es heisst zurückkommen. Und wenn es länger dauert als eine Woche, dann ist das eine Pause, und Pause ist nicht aufhören. Aufhören heisst wegbleiben, ohne dass es jemand merkt — und genau das musst du hier nie machen."},
 
     {"k": "c", "t": "Wie es weitergeht",
      "b": ["Zwei Calls im Monat \u2014 ein Thema mit euren Fragen, einer nur f\u00fcr Fragen",
