@@ -149,7 +149,10 @@ Danach reihum: **jede liest zwei Sachen von ihrer Liste vor.** Du verstärkst li
 
 **Wenn eine sagt „bei mir ist da nichts":** frag konkret nach. Wann hast du dein Profil das letzte Mal überarbeitet? Wie viele Beiträge hast du gemacht? Mit wie vielen Menschen hast du über dein Thema geredet? Es kommt immer etwas, sie hat es nur nie als Ergebnis gezählt.
 
-### 45–60 · Impuls Teil 2 — Konsistenz
+### 45–50 · Die Pausen-Erlaubnis
+Bevor die Anforderung kommt, kommt die Erlaubnis (Abschnitt 2b). Fünf Minuten, ruhig gesprochen.
+
+### 50–62 · Impuls Teil 2 — Konsistenz
 Die Reel-Geschichte erzählen (Abschnitt 3), dann die Mindestdosis-Regel und die Notfall-Version (Abschnitt 2).
 
 > **Sprech-Anker:**
@@ -157,7 +160,7 @@ Die Reel-Geschichte erzählen (Abschnitt 3), dann die Mindestdosis-Regel und die
 >
 > Darum machen wir das heute anders. Du suchst dir EINE Sache. Nicht drei. Eine. Und die muss so klein sein, dass du sie auch an dem Tag noch schaffst, an dem alles schiefgeht. Und genau dafür kriegt sie noch eine Notfall-Version."
 
-### 60–70 · Live-Arbeit B — deine eine Sache
+### 62–70 · Live-Arbeit B — deine eine Sache
 Jede schreibt zwei Zeilen auf und sagt sie danach laut in die Runde:
 
 > **Meine eine Sache für die nächsten vier Wochen: …**
@@ -168,6 +171,7 @@ Du schärfst live nach:
 - **Zu vage** („ich zeig mich mehr") → auf eine konkrete Handlung mit fixem Tag runterbrechen.
 - **Zu viele** („ich mach Stories UND drei Posts UND DMs") → sie muss sich für eine entscheiden, und du hilfst ihr dabei.
 - **Notfall-Version fehlt oder ist auch schon gross** → nachbohren, bis es wirklich die Zwei-Minuten-Variante ist.
+- **Wenn eine sagt, sie kann gerade gar nichts** → dann ist ihre eine Sache genau eine: jede Woche die drei Zeilen in den Thread schreiben. Das reicht, und das sagst du auch so, ohne Trostpflaster-Ton. Sie bleibt damit im Raum, und mehr braucht es im Moment nicht.
 
 ### 70–75 · Aufgabe, Thread & Ausblick
 Aufgabe stellen (Wortlaut unten in Abschnitt 6), Thread in der Academy zeigen, Ausblick, Fragen-Puffer.
@@ -183,8 +187,9 @@ Aufgabe stellen (Wortlaut unten in Abschnitt 6), Thread in der Academy zeigen, A
 | 0–7 | Runde mit derselben Frage („seit wann machst du das schon") |
 | 7–18 | Impuls 1: dein Bekenntnis + die vier Konten + der Zeit-Rahmen |
 | 18–27 | Bestandsaufnahme, nur Frage 1, danach reihum je eine Sache |
-| 27–36 | Impuls 2: Reel-Geschichte + Mindestdosis + Notfall-Version |
-| 36–43 | Jede sagt ihre eine Sache + Notfall-Version laut |
+| 26–30 | Pausen-Erlaubnis (Abschnitt 2b) |
+| 30–37 | Impuls 2: Reel-Geschichte + Mindestdosis + Notfall-Version |
+| 37–43 | Jede sagt ihre eine Sache + Notfall-Version laut |
 | 43–45 | Aufgabe + Thread |
 
 Was rausfällt: Fragen 2 und 3 der Bestandsaufnahme und der Fragen-Puffer.
@@ -195,7 +200,7 @@ Was rausfällt: Fragen 2 und 3 der Bestandsaufnahme und der Fragen-Puffer.
 
 **So stellst du sie im Call (Wortlaut zum Vorlesen oder frei nachsprechen):**
 
-> „Deine Aufgabe bis zum nächsten Themen-Call ist einfach und sie ist trotzdem die schwerste, die ich dir dieses Jahr gebe. Du ziehst deine eine Sache vier Wochen durch. Ohne Pause, aber mit Notfall-Version, wenn es sein muss.
+> „Deine Aufgabe bis zum nächsten Themen-Call ist einfach und sie ist trotzdem die schwerste, die ich dir dieses Jahr gebe. Du ziehst deine eine Sache vier Wochen durch — an guten Tagen ganz, an schlechten in der Notfall-Version. Beides zählt gleich viel.
 >
 > Und dann kommt das Zweite, das genauso wichtig ist: Du schreibst jede Woche drei Zeilen bei uns in den Fragen-Bereich. Nicht wie viel du verdient hast. Sondern was passiert ist. Wer sich gemeldet hat, was besser lief, was du geschafft hast, auch wenn es klein war.
 >
@@ -211,6 +216,8 @@ Was passiert ist: …
 ```
 
 Ausdrücklich dazusagen: **„nein" ist auch eine gültige Antwort.** Wer eine Woche nicht geschafft hat, schreibt genau das rein, und ihr schaut gemeinsam, ob die Sache zu gross gebaut war. Genau daran erkennt ihr, was angepasst werden muss.
+
+**Und die Pausen-Variante, die du laut aussprichst:** Wer gerade in einer Phase ist, in der wirklich nichts geht, für die sind **die drei Zeilen selbst die eine Sache**. Einmal pro Woche schreiben, wie es ist. Damit bleibt sie im Raum, und wenn die Kraft zurückkommt, fängt sie nicht bei null an.
 
 ---
 
@@ -230,7 +237,9 @@ Ausdrücklich dazusagen: **„nein" ist auch eine gültige Antwort.** Wer eine W
 >
 > Und ganz wichtig: Bei „was passiert ist" geht es nicht ums Geld. Es geht um alles andere — wer sich gemeldet hat, wer geantwortet hat, was du fertig gebaut hast, was dir leichter gefallen ist als letzte Woche.
 >
-> Wenn eine Woche nicht geklappt hat, schreib genau das rein. Dann schauen wir gemeinsam, ob deine Sache zu gross gebaut war, und machen sie kleiner. Aufhören ist nämlich das Einzige, was hier wirklich nicht funktioniert.
+> Wenn eine Woche nicht geklappt hat, schreib genau das rein. Dann schauen wir gemeinsam, ob deine Sache zu gross gebaut war, und machen sie kleiner.
+>
+> Und wenn du gerade in einer Phase bist, in der wirklich nichts geht: dann sind diese drei Zeilen deine eine Sache. Einmal die Woche schreiben, wie es ist, mehr nicht. Eine Pause ist keine verlorene Zeit, und wenn du wieder kannst, fängst du nicht bei null an.
 >
 > Ich bin dienstags und donnerstags hier drin und antworte jeder von euch. 🩵
 >
@@ -255,14 +264,14 @@ Der Thread stirbt, wenn nach ein paar Tagen nichts mehr kommt. Leg dir diese dre
 
 ## 9. Präsentation
 
-**Fertig gebaut:** `praesentationen/call-01-dranbleiben.pptx` — 19 Folien, 16:9, im gleichen Look wie deine Mama-CEO-Decks (Creme, Georgia in Dunkelblau, Petrol-Häkchen, oranger Akzent). **In jeder Folie stehen die Sprechnotizen** in der Notizen-Ansicht — frei nachsprechen, nicht ablesen.
+**Fertig gebaut:** `praesentationen/call-01-dranbleiben.pptx` — 21 Folien, 16:9, im gleichen Look wie deine Mama-CEO-Decks (Creme, Georgia in Dunkelblau, Petrol-Häkchen, oranger Akzent). **In jeder Folie stehen die Sprechnotizen** in der Notizen-Ansicht — frei nachsprechen, nicht ablesen.
 
 Drei Folien-Sorten:
 - **Aussage-Folien** (oranger Balken links, nur ein grosser Satz) für die Kernsätze — die lässt du stehen und redest dazu.
 - **Inhalts-Folien** mit maximal vier bis fünf Zeilen.
 - **Arbeits-Folien** mit orangem „JETZT DU"-Badge — die bleiben stehen, während die Gruppe schreibt.
 
-Aufbau: Titel · Ablauf · Runde · dein Bekenntnis · der Denkfehler · die vier Konten · woran du sie merkst · „Geld füllt sich zuletzt" · wie lange es dauert · **Bestandsaufnahme (Arbeit)** · „vier Wochen sind die Mindestdosis" · was am häufigsten passiert · „es liegt nie an dir als Person" · die Regel · Beispiele Sache/Notfall-Version · **deine eine Sache (Arbeit)** · deine Aufgabe · wenn eine Woche nicht klappt · wie es weitergeht.
+Aufbau: Titel · Ablauf · Runde · dein Bekenntnis · der Denkfehler · die vier Konten · woran du sie merkst · „Geld füllt sich zuletzt" · wie lange es dauert · **Bestandsaufnahme (Arbeit)** · „und dann gibt es Phasen, in denen gar nichts geht" · was in so einer Phase gilt · „vier Wochen sind die Mindestdosis" · was am häufigsten passiert · „es liegt nie an dir als Person" · die Regel · Beispiele Sache/Notfall-Version · **deine eine Sache (Arbeit)** · deine Aufgabe · wenn eine Woche nicht klappt · wie es weitergeht.
 
 Kein Datum auf den Folien. Wenn du ein Foto von dir einbauen willst, dann nur auf Folie 1 rechts unten anstelle des orangen Kreises, und dein Gesicht bleibt frei.
 
@@ -276,6 +285,7 @@ Kein Datum auf den Folien. Wenn du ein Foto von dir einbauen willst, dann nur au
 - **Kein Geduld-Predigen ohne Gegenstück.** Die Botschaft ist nicht „hab einfach Geduld", sondern „miss dich an dem, was tatsächlich wächst, und bleib dran". Sonst klingt es nach Vertrösten.
 - **Keine Schuldzuweisung an die aus der Reel-Geschichte.** Sie hat den Beweis geliefert, dass es funktioniert. Das System war zu gross, nicht sie zu schwach.
 - **Kein Vortrag.** Mehr als die Hälfte des Calls ist Arbeit und Runde. Wenn du 20 Minuten am Stück redest, brich ab und stell eine Frage.
+- **Niemand wird auf ihre Pause angesprochen.** Die Erlaubnis gilt allgemein für den Raum. Wer erzählen will, erzählt von selbst — und wenn nicht, ist auch gut.
 
 ---
 
