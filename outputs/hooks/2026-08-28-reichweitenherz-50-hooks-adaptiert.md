@@ -24,18 +24,33 @@ tags: [content, hooks, mentoring]
 > ⚠️ **⭐ = braucht deine echte Erinnerung.** Dort stehen Platzhalter, wo ich sonst deine Biografie
 > erfinden müsste.
 
+## Der „die meint mich"-Test (v2.1, 2026-08-28)
+
+Jeder Hook braucht **Symptom und Network-Realität in derselben Zeile**. Sonst fühlt sich jede Mama
+mit Smartphone angesprochen — und keine Network-Mama gemeint.
+
+❌ *„Dein Kind erzählt dir was, und du sagst: gleich, Mami muss nur schnell."* → jede Mutter
+✅ *„… weil im Teamchat gerade jemand geschrieben hat."* → sie weiss, dass sie gemeint ist
+
+**Die Anker, die routen:** Teamchat · Teamcall · Sponsorin · Upline · Produktabend · Namensliste ·
+Autoship · Punkte/Volumen · Provision · Starterpaket · Monatsabschluss · Anmeldeliste ·
+die Gruppe · dein Team
+
+**Regel:** Kein Hook ohne mindestens einen dieser Anker — auch der Handy-Hook nicht. Gerade der nicht,
+weil das Handy-Symptom für sich genommen das unspezifischste der neun Probleme ist.
+
 ---
 
 ## Säule 1: Identifikation
 
 **1.1** ⟨Handy⟩
-> Kann mir bitte mal jemand erklären, warum ich beim Frühstück öfter aufs Handy schaue als meinem Kind ins Gesicht?
+> Kann mir bitte mal jemand erklären, warum eine unbeantwortete Einladung zum Produktabend mein ganzes Frühstück auffressen kann?
 
 **1.2** ⟨Freundschaften⟩
-> POV: Deine beste Freundin schreibt seit drei Wochen nicht zurück. Und du weisst ganz genau, ab welcher Nachricht es angefangen hat.
+> POV: Deine beste Freundin schreibt seit drei Wochen nicht zurück. Und du weisst ganz genau, welche Nachricht mit dem Produktlink daran schuld ist.
 
 **1.3** ⟨Geld⟩
-> POV: Du rechnest abends heimlich nach, was diesen Monat reingekommen ist und was rausgegangen ist. Und dann machst du den Taschenrechner ziemlich schnell wieder zu.
+> POV: Du rechnest abends heimlich nach, was diesen Monat an Provision reingekommen ist und was du selber bestellt hast. Und machst den Taschenrechner ziemlich schnell wieder zu.
 
 **1.4** ⟨Warmmarkt⟩
 > POV: Du scrollst dein Adressbuch von oben nach unten durch und suchst einen Namen, bei dem du noch nicht gefragt hast.
@@ -50,13 +65,13 @@ tags: [content, hooks, mentoring]
 > POV: Eine Frau in der Gruppe fragt, was ihr bei etwas hilft. Du weisst die Antwort ganz genau. Und du darfst sie nicht hinschreiben.
 
 **1.8** ⟨Abhängigkeit⟩
-> POV: Dein Account spinnt für zwei Stunden, und dir wird schlecht, weil da drin alles liegt, was du dir aufgebaut hast.
+> POV: Dein Account spinnt für zwei Stunden, und dir wird schlecht, weil deine Kundinnen und dein halbes Team da drin liegen.
 
 **1.9** ⟨Isolation⟩
-> POV: Du sagst am Telefon „passt schon, viel los gerade", während du eigentlich sagen willst, dass dich seit Wochen niemand von sich aus angerufen hat.
+> POV: Du sagst deiner Sponsorin am Telefon „passt schon, läuft", während du eigentlich sagen willst, dass sich seit Wochen niemand von selbst bei dir gemeldet hat.
 
 **1.10** ⟨Handy⟩
-> POV: Dein Kind erzählt dir etwas, und du sagst „gleich, Mami muss nur schnell". Zum dritten Mal seit dem Aufstehen.
+> POV: Dein Kind erzählt dir etwas, und du sagst „gleich, Mami muss nur schnell", weil im Teamchat gerade jemand geschrieben hat. Zum dritten Mal seit dem Aufstehen.
 
 ---
 
@@ -69,7 +84,7 @@ tags: [content, hooks, mentoring]
 > Bei mir hörst du nicht, dass du einfach mehr Nachrichten rausschicken musst. Ich frage dich, wie du dich danach jedes Mal fühlst.
 
 **2.3** ⟨Geld⟩
-> Ich rede mit dir über die Zahl, die am Monatsende wirklich übrig bleibt. Auch wenn sie einstellig ist.
+> Ich rede mit dir über die Zahl, die nach Autoship und eigenen Bestellungen wirklich übrig bleibt. Auch wenn sie einstellig ist.
 
 **2.4** ⟨Quote⟩
 > Ich bin nicht die, die dir am 28. schreibt, dass dir noch Punkte fehlen.
@@ -78,7 +93,7 @@ tags: [content, hooks, mentoring]
 > Mich interessiert weniger, wie gross dein Team ist. Mich interessiert, ob deine Freundinnen noch zurückschreiben.
 
 **2.6** ⟨Handy⟩
-> Mir ist ziemlich egal, wie viele Stunden du reinsteckst. Mich interessiert, ob dein Kind dich beim Frühstück noch erreicht.
+> Mir ist ziemlich egal, wie viele Teamcalls du mitmachst. Mich interessiert, ob dein Kind dich beim Frühstück noch erreicht.
 
 **2.7** ⟨Abhängigkeit⟩
 > Ich baue mit dir nichts, das weg ist, wenn morgen ein Account gesperrt wird oder eine Firma ihren Plan ändert.
@@ -105,7 +120,7 @@ tags: [content, hooks, mentoring]
 > Rechne einmal ehrlich: alles, was du dieses Jahr bestellt hast, minus alles, was reingekommen ist. Die meisten machen das nie. Aus gutem Grund.
 
 **3.3** ⟨Handy⟩
-> Leg dein Handy morgen beim Frühstück in die andere Ecke der Küche. Wie oft du aufstehst, ist deine Antwort.
+> Leg dein Handy morgen beim Frühstück in die andere Ecke der Küche. Wie oft du wegen des Teamchats aufstehst, ist deine Antwort.
 
 **3.4** ⟨DM-Akquise⟩
 > Lies die letzte Nachricht, die du an eine Fremde geschickt hast, einmal laut vor. Würdest du sie am Elternabend genauso sagen?
@@ -126,17 +141,17 @@ tags: [content, hooks, mentoring]
 > Die 3 Sätze, die du in der Gruppe nicht schreiben darfst. Und warum am Ende du dafür geradestehst.
 
 **3.10** ⟨Scham⟩
-> 5 Anzeichen, dass du näher dran bist, als sich dieser Monat gerade anfühlt.
+> 5 Anzeichen, dass du näher dran bist, als es dein Monatsvolumen gerade vermuten lässt.
 
 ---
 
 ## Säule 4: Storytelling
 
 **4.1** ⟨Handy⟩
-> Ich dachte lange, mein Problem sei zu wenig Zeit. Bis ich gemerkt habe, dass ich am Frühstückstisch sass und trotzdem nicht da war.
+> Ich dachte lange, mein Problem sei zu wenig Zeit. Bis ich gemerkt habe, dass ich am Frühstückstisch sass und im Kopf bei einer Anmeldeliste war, auf der niemand stand.
 
 **4.2** ⟨Handy⟩
-> Am Frühstückstisch sassen wir zu dritt: mein Kind, ich und mein Handy. Und geredet habe ich mit dem Handy.
+> Am Frühstückstisch sassen wir zu dritt: mein Kind, ich und mein Handy. Und ich habe alle fünf Minuten geschaut, ob sich jemand für meinen Produktabend angemeldet hat.
 
 **4.3** ⟨Warmmarkt⟩
 > Das Peinliche? Ich war überzeugt, ich mache alles richtig. Ich hatte ja jeden auf meiner Liste angerufen.
@@ -160,7 +175,7 @@ tags: [content, hooks, mentoring]
 > Das ist wahrscheinlich das Unangenehmste, was ich zugeben kann: [echte Szene — z.B. dass ich irgendwann Menschen danach sortiert habe, wer noch nicht gefragt worden war].
 
 **4.10** ⟨Handy⟩
-> POV: Du stehst um vier Uhr morgens auf, um noch etwas fertigzumachen. Und am nächsten Tag merkt kein Mensch, dass du es getan hast.
+> POV: Du stehst um vier Uhr morgens auf, um noch Stories fertigzumachen, weil im Teamcall gesagt wurde, dass Konsistenz alles ist. Und am nächsten Tag merkt kein Mensch, dass du es getan hast.
 
 ---
 
@@ -176,7 +191,7 @@ tags: [content, hooks, mentoring]
 > Wer will, dass Fremde von selbst anfragen, muss aufhören, jeden Abend dieselben Bekannten anzuschreiben. Genau dort geht die Kraft verloren, die woanders etwas bewegen würde.
 
 **5.2** ⟨Handy⟩
-> Nimm dir 30 Sekunden und geh den Montag durch, an dem dein Handy beim Frühstück in der Schublade liegt und dir das überhaupt nichts ausmacht. Was wäre da anders als heute?
+> Nimm dir 30 Sekunden und geh den Montag durch, an dem du morgens nicht als Erstes in den Teamchat schaust, weil du es gar nicht mehr nötig hast. Was wäre da anders als heute?
 
 **5.3** ⟨Geld⟩
 > Die meisten Frauen im Network machen die Rechnung nie ganz auf. Und genau deshalb ändert sich Jahr für Jahr nichts.
@@ -200,7 +215,7 @@ tags: [content, hooks, mentoring]
 > Wenn du in einem Jahr nicht wieder vor derselben Namensliste stehen willst, muss diesen Herbst etwas anderes anfangen. Sonst landest du dort, wo die meisten landen: beim leisen Aufhören, das niemand mitbekommt.
 
 **5.10** ⟨Geld⟩
-> Geh mal 90 Tage weiter. Wenn im Dezember unter dem Strich mehr stehen soll als dieses Jahr, führt ab heute kein Weg an einer Entscheidung vorbei.
+> Geh mal 90 Tage weiter. Wenn im Dezember nach Abzug deiner eigenen Bestellungen mehr übrig bleiben soll als dieses Jahr, führt ab heute kein Weg an einer Entscheidung vorbei.
 
 ---
 
