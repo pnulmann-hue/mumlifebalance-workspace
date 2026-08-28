@@ -14,25 +14,33 @@ tags: [produkt, research, mentoring]
 
 ## 1 · Überblick
 
-**Das gewählte Problem:** Das Instagram-Profil steht halb fertig seit Monaten. Bio angefangen,
-Profilbild provisorisch, Highlights leer.
+**Das gewählte Problem:** Das Instagram-Profil steht halb fertig seit Monaten.
 
-**Was die Recherche verändert hat:** Das Symptom heisst nicht „unfertiges Profil". Es heisst
-**Perfektionismus-Lähmung**, und das unfertige Profil ist nur die sichtbare Spur davon. Der
-Zusammenhang Perfektionismus → Aufschieben → nichts geht online ist über mehrere unabhängige
-deutschsprachige Quellen belegt. Das unfertige Profil selbst ist in keiner Studie erfasst, aber die
-Mechanik dahinter ist es.
+> **Korrektur nach zweiter Recherche (Patricia-Einwand aus der Praxis):** Die erste Fassung dieses
+> Dokuments deutete das Problem als **Perfektionismus-Lähmung**. Das war ein Übertragungsfehler —
+> die Quellen dazu handeln von Selbstständigen und Coaches, die ein eigenes Thema haben und um die
+> Formulierung ringen. Network-Mamas haben kein eigenes Thema, sondern ein Firmenprodukt. Ihr
+> Verhalten ist ein anderes.
 
-**Konsequenz für den Kurs:** Er löst kein Wissensproblem („wie schreibe ich eine Bio") — davon gibt
-es Anleitungen im Überfluss. Er löst ein **Fertigwerden-Problem**. Der Unterschied entscheidet über
-Titel, Salespage und Aufbau.
+**Was tatsächlich passiert:** Die Bio ist meistens nicht leer. Sie ist **nichtssagend**. Es wird
+irgendetwas hingeschrieben, ohne dass vorher jemand die Frage beantwortet hätte, wofür das Profil
+eigentlich steht. Belegt: In jeder gefundenen Fehler-Liste steht **fehlende Klarheit an erster
+Stelle** — nie „die Bio fehlt". Alle beschriebenen Fehler setzen voraus, dass etwas dasteht.
 
-**Kunden-Avatar:** Network-Mama, hat vor Monaten ein Profil angelegt, weiss ungefähr was reingehört,
-hat vielleicht sogar schon drei Bio-Vorlagen gespeichert — und ändert seit Wochen nichts, weil jede
-Version sich falsch anfühlt. Sie hält sich für undiszipliniert.
+**Der Kern:** Sie setzt sich nicht mit der Frage auseinander, sondern füllt das Feld. Das Ergebnis
+ist eine Bio, die auf jede andere im Team genauso passen würde — und ein Profil, das für sie selbst
+nie „fertig" wirkt, weil es nichts trifft.
 
-**Der stärkste Angle:** Deadline statt Anleitung. Belegt als wirksamstes Gegenmittel gegen
-Perfektionismus, und es ist genau das, was ihre gespeicherten Vorlagen nicht liefern.
+**Konsequenz für den Kurs:** Er löst weder ein Wissensproblem („wie schreibe ich eine Bio", davon
+gibt es Anleitungen im Überfluss) noch ein Disziplinproblem. Er erzwingt die **Auseinandersetzung
+vor dem Schreiben**. Das ist der Unterschied zu allen acht Bio-Vorlagen-Anbietern: Die liefern das
+Gefäss, nicht den Inhalt.
+
+**Kunden-Avatar:** Network-Mama, Profil existiert, Bio steht da — Vorname, Firmenname, ein Emoji,
+vielleicht „Mama von 2" und ein Spruch. Sie hat das in fünf Minuten ausgefüllt und seither nicht
+angefasst. Sie spürt, dass es nicht stimmt, weiss aber nicht, was sie stattdessen hinschreiben soll.
+
+**Der stärkste Angle:** Die Bio ist nicht das Problem — die Frage davor ist unbeantwortet.
 
 ---
 
