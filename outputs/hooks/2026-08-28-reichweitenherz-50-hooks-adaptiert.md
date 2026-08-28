@@ -161,8 +161,12 @@ Erlaubt: das Gefühl, die Szene, der Satz, den sie sich selber nicht laut sagt.
 
 ## Säule 5: Verkauf
 
-> ⚠️ Diese zehn gehören in **Stories und Mails**, nicht in den Feed
-> (siehe `feedback_keine-programme-im-feed`). Auch hier: das Symptom benennen, das Angebot bleibt draussen.
+> 🧪 **Bewusster Test (Patricia-Entscheidung 2026-08-28):** Diese zehn gehen auch in den **Feed**,
+> nicht nur in Stories und Mails. Die bisherige Regel „keine Verkaufs-Posts im Feed" wird hier
+> absichtlich aufgeweicht, weil sie etwas Neues ausprobieren will.
+> Das geht, weil kein einziger dieser Hooks ein Produkt, ein Programm oder einen Preis nennt —
+> sie benennen das Symptom und lassen die Entscheidung offen. Nach 2-3 Wochen an der Reichweite
+> und den Anfragen ablesen, ob es trägt.
 
 **5.1** — *Original: „Muss nicht härter arbeiten, muss aufhören Energie zu verschwenden."*
 > Wer will, dass fremde Frauen anfragen, muss aufhören, jeden Abend Bekannte anzuschreiben. Genau da fehlt die Energie, wo sie wirken würde.
