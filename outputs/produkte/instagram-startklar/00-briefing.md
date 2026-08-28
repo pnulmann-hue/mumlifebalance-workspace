@@ -83,7 +83,7 @@ Das ist der wichtigste Teil des Briefings. Ohne diese Grenzen frisst Startklar d
 |---|---|---|
 | Thema, Nische, Experten-Satz | „Finde dein Thema" (39) | Nur ein **Platzhalter-Satz in 10 Minuten**, damit die Bio überhaupt gefüllt werden kann. Mit klarem Verweis: die scharfe Version kommt später. |
 | Positionierung, Expertin-Haltung, Story-Typen, Message, Content-Säulen | „Expertin statt Verkäuferin" (97) | Nichts. Kein Wort. |
-| **Bio, Highlights, 3 gepinnte Posts als Positionierungs-Aufgabe** | „Expertin statt Verkäuferin", Bonusmodul „Dein Instagram-Profil als Expertinnen-Magnet" | ⚠️ **Echte Nähe.** Startklar zeigt nur, **wo sie tippt und klickt**. Was inhaltlich reingehört, damit man sie als Expertin erkennt, bleibt im 97er. |
+| **Bio, Highlights, 3 gepinnte Posts als Positionierungs-Aufgabe** | „Expertin statt Verkäuferin", Bonusmodul | ⚠️ **Echte Nähe.** Startklar zeigt nur, **wo sie tippt und klickt**. Was inhaltlich reingehört, bleibt im 97er. Weil der 97er jetzt Downsell ist, muss das Bonusmodul umbenannt werden — siehe Funnel-Datei. |
 | Persönlicher Profilcheck per Sprachnachricht | „Expertin statt Verkäuferin" (dortiger Kauf-Bonus) | Nichts. Der bleibt exklusiv im 97er. |
 | Content-Säulen, Ideen-System, Käufertypen, Keyword-Strategie, DM-Gesprächsführung bis zum Abschluss | Instagram-Kundenmaschine (333) | Nichts von der Strategie. Nur die **Bedienung**: wo drückst du, wie lädst du hoch, welcher Ordner ist welcher. |
 | Zeitsystem, KI-Mitarbeiter, Delegieren | Mama-CEO (333) | Nichts. |
@@ -127,12 +127,13 @@ Startklar allein trägt das nicht, und das soll es auch gar nicht. Seine Aufgabe
 | Posten | Annahme | CHF / Monat |
 |---|---|---|
 | Startklar-Verkäufe | 15 × 39 CHF | 585 |
-| Order Bump 1 · Storyideen | 40 % × 12 CHF | 72 |
-| Order Bump 2 · Finde dein Thema | 25 % × 25 CHF | 94 |
-| Upsell in ein 333er-Programm | 2 % (korrigiert 24.08., 5 % war zu optimistisch) | 88 |
-| **Summe** | | **839** |
+| Bump 1 · Storyideen einzeln | 12 % × 19 CHF | 34 |
+| Bump 2 · Starter-Set | 30 % × 39 CHF | 176 |
+| Upsell · Kundenmaschine 199 | 2 % | 60 |
+| Downsell · Expertin 97 | 3 % der Ablehnenden | 43 |
+| **Summe** | | **898** |
 
-→ **rund 10 000 CHF im Jahr = 25 % des 40k-Ziels.** Durchschnittsbon rund 56 CHF pro Käuferin.
+→ **rund 10 800 CHF im Jahr = 27 % des 40k-Ziels.** Durchschnittsbon rund 60 CHF pro Käuferin.
 
 **Was das kostet:** eine Aufnahme-Session, danach null Stunden pro Verkauf.
 
@@ -151,13 +152,13 @@ Startklar allein trägt das nicht, und das soll es auch gar nicht. Seine Aufgabe
 | Element | Inhalt | Preis |
 |---|---|---|
 | Hauptprodukt | Startklar, 12 Lektionen + Werkstatt | 39 CHF |
-| Order Bump 1 | „90 Storyideen für Networkerinnen" | +12 statt 19 |
-| Order Bump 2 | „Finde dein Thema als Network-Mama in 60 Minuten" | +25 statt 39 |
+| Order Bump 1 | 90 Storyideen für Networkerinnen | 19 CHF |
+| Order Bump 2 | **Starter-Set:** Storyideen + Content-Box + Finde dein Thema | 39 statt 75 |
 | Fest eingebaut | **Bio-Check** (dein 0€-Funnel) — direkt in Lektion 1.3 verlinkt | 0 CHF |
-| Upsell direkt nach Kauf | Instagram-Kundenmaschine, Startklar angerechnet | 294 statt 333 |
-| Downsell | keiner — erst möglich, wenn das Bonusmodul im 97er umbenannt ist | — |
+| Upsell direkt nach Kauf | Instagram-Kundenmaschine | 199 statt 333 |
+| Downsell | Expertin statt Verkäuferin | 97 CHF |
 
-**„Expertin statt Verkäuferin" kommt bewusst NICHT in diesen Funnel** (Entscheidung 24.08.2026). Der 97er hat ein Bonusmodul „Dein Instagram-Profil als Expertinnen-Magnet" mit Bio, Highlights und den ersten drei gepinnten Posts — auf der Verkaufsseite steht damit fast dasselbe Wort wie bei Startklar. Wer beide hintereinander angeboten bekommt, liest das als Doppelverkauf und kauft dann keines von beiden. Der Weg aus Startklar geht deshalb direkt in die Instagram-Kundenmaschine.
+**„Expertin statt Verkäuferin" ist der Downsell** (Entscheidung 24.08.2026, revidiert). Voraussetzung: das Bonusmodul „Dein Instagram-Profil als Expertinnen-Magnet" muss vorher umbenannt werden, sonst liest es sich wie eine Doppelung zu Startklar-Modul 1. Vorschlag steht in [`08-funnel/bump-upsell-strategie.md`](08-funnel/bump-upsell-strategie.md).
 
 **Der Bio-Check ist fest eingebaut** (Patricia-Entscheid 24.08.2026). Er ist ohnehin ein 0€-Funnel, also wird nichts verschenkt, was sonst Geld kostet — und er sitzt inhaltlich genau an der Stelle, an der die Käuferin ihn braucht: sie hat in Lektion 1.3 ihre Bio getippt und will wissen, ob sie taugt. Nebeneffekt: jede Käuferin landet zusätzlich in der Bio-Check-Automation, und die bekommt hier zum ersten Mal warmes Publikum, das schon gezahlt hat.
 
