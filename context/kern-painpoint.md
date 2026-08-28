@@ -63,6 +63,49 @@ Bau dir was Eigenes — ohne dein Network aufzugeben und ohne mehr zu arbeiten
 **Reels/Hooks:** Teil 1 in einer konkreten Szene (Kontoauszug, Teamcall, Adressbuch), nie als
 Zusammenfassung.
 
+## Belege — geprüft am 2026-08-28
+
+### ✅ Verifiziert (Primärquelle gelesen)
+
+**WKO Branchenreport Direktvertrieb Österreich 2024** — [PDF](https://www.wko.at/oe/handel/direktvertrieb/branchenreport-2024.pdf), Seite 12 und 22, n = 1.358 bzw. 1.361:
+
+- **73 %** investieren bis zu 15 Std./Woche → bis **1.000 €** Brutto-Monatseinkommen
+- **7 %** investieren über 30 Std./Woche → über **4.000 €**
+- **75 %** üben die Tätigkeit nebenberuflich aus
+- **Drei Viertel sind weiblich**, arbeiten unter 10 Std./Woche → bis **500 €** brutto
+- **69 %** sind zwischen 35 und 59 Jahre alt
+- Verkaufen **überwiegend Wellness- und Gesundheitsprodukte**
+
+> ⚠️ **Framing-Warnung:** Der Report ist eine Branchenstudie der Wirtschaftskammer und formuliert
+> dieselben Zahlen positiv — wörtlich „ein sehr gutes Zusatzeinkommen" und „sind damit sehr zufrieden".
+> Die Zahlen **nie als Anklage** verwenden. Wer die Quelle aufmacht, liest das Gegenteil.
+>
+> **Die richtige Verwendung** (loyal und trotzdem überzeugend): Das Zusatzeinkommen ist gut — und es
+> ist genau das, ein Zusatz. Wer mehr will, braucht laut Report über 30 Std./Woche. Wer die als Mama
+> nicht hat, braucht keinen längeren Hebel, sondern einen zweiten. Damit belegt die Branche selbst
+> das Hybrid-Argument.
+
+### ⏳ Noch nicht gegengeprüft — vor Verwendung verifizieren
+
+- 78 % der erwerbstätigen Mütter in der Schweiz arbeiten Teilzeit *(BFS)* — **für den CH-Markt die
+  relevanteste Zahl, unbedingt prüfen**
+- 68 % Teilzeit bei Müttern in Deutschland, 74,4 % bei Kindern unter 6 *(Destatis 2024)*
+- 75,3 % Teilzeit bei Müttern in Österreich *(Statistik Austria 2025)*
+- 34,7 % der Schweizer Frauen halten sich für gründungsfähig, Männer 54,0 % *(GEM Schweiz 2024)*
+- 31 % in Deutschland *(GEM Women Entrepreneurship Monitor 2024/25)*
+
+### ❌ Datenlücke — keine Zahl verwenden
+
+Warum Frauen trotz niedriger Einnahmen im Network bleiben oder nicht parallel etwas aufbauen. Weder
+im DACH-Raum noch international gibt es dazu eine belastbare Statistik. Mit Szenen arbeiten, nicht
+mit Zahlen.
+
+### 🇺🇸 US-Zahlen — nur mit Herkunftsangabe
+
+FTC-Daten (Mehrheit ≤ 1.000 $/Jahr) und AARP 2018 (47 % verlieren Geld · 39 % fanden es unangenehm,
+Freunde anzusprechen). Belastbar, aber **nicht auf den DACH-Markt übertragbar** — die WKO-Zahlen
+zeigen ein anderes Bild. Nur verwenden, wenn die Herkunft im selben Satz steht.
+
 ## Was NICHT in den Einstieg gehört
 
 Sichtbarkeit · Positionierung · eigenes Thema · digitale Produktwelt · Hybridmodell · Expertin
