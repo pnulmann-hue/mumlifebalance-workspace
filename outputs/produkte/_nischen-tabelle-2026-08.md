@@ -27,7 +27,9 @@ Die vier Bereiche unten sind die Türen in diese Nische — nicht vier Nischen.
 | Sie glaubt, sie müsse täglich posten und Videos machen | Belegt: „muss Sichtbarkeit immer gleich aussehen?" — ausdrücklich mit Nein beantwortet | Startklar · Content-Box (17) |
 | Das eigene Gesicht zu zeigen ist die Schwelle | Belegt: hohe Hemmschwelle bei eigenen Bildern wegen Kritikangst | Startklar |
 
-**Lücke:** Kein Produkt adressiert die Kamera-Angst direkt. Aktuell nur Nebenthema.
+**Ungenutzter Angle:** Kamera-Angst wird von **Startklar** und der **Content-Box** gelöst — über
+B-Roll-Reels (ein Alltagsclip mit Hook, der Inhalt steht in der Caption, kein Gesicht nötig). Steht
+in keinem Verkaufstext.
 
 ---
 
@@ -38,11 +40,13 @@ Die vier Bereiche unten sind die Türen in diese Nische — nicht vier Nischen.
 | Austauschbar: 20 Frauen im Team posten dasselbe Produktbild | Belegt: schwache Positionierung → „du gehst in der Masse unter" | **Finde dein Thema** (39) · Expertin statt Verkäuferin |
 | In der Bio steht der Firmenname statt eines Themas | Belegt: Mehrwert bleibt auf der Strecke = schnellster Weg, Follower zu verlieren | Finde dein Thema · Startklar |
 | Sie weiss nicht, was sie posten soll ausser Produkten | Nur Beobachtung, nicht belegt | Storyideen (19) · Content-Box (17) |
-| Sie darf nicht schreiben, was sie weiss (Compliance) | Belegt: FTC-Verfahren 2023 gegen Distributorinnen · Swissmedic-Verbot für Heilaussagen | **keine** |
+| Sie darf nicht schreiben, was sie weiss (Compliance) | Belegt: FTC-Verfahren 2023 gegen Distributorinnen · Swissmedic-Verbot für Heilaussagen | **Finde dein Thema** · MBA |
 | Ohne eigenes Thema hängt alles an Firma, Plattform und Upline | Gender Pension Gap D 2023: 27,1 % *(Statistisches Bundesamt)* — belegt die Langfristfolge, nicht das Symptom | MBA |
 
-**Lücke:** Compliance — das Problem ist real und belegt, du hast kein Produkt dafür. Könnte ein
-Miniprodukt sein („Was du sagen darfst, ohne dich angreifbar zu machen").
+**Ungenutzter Angle — der stärkste der drei:** Dein Hybridmodell **löst** das Compliance-Problem
+strukturell. Wer über sein eigenes Thema spricht („Energie im Mama-Alltag") statt über Produkt-
+wirkungen, fällt gar nicht erst unter die Firmenregeln. Das ist dein eigener Satz — *das Produkt ist
+nicht mein Thema* — nur nie als Verkaufsargument benutzt.
 
 ---
 
@@ -51,13 +55,14 @@ Miniprodukt sein („Was du sagen darfst, ohne dich angreifbar zu machen").
 | Problem | Statistiken / Belege | Deine Lösung |
 |---|---|---|
 | Die Rechnung geht nicht auf: mehr bestellt als verdient | AARP-Studie 2018: 47 % verlieren Geld, weitere 27 % verdienen null, obwohl 90 % wegen des Geldes einstiegen | Vom Network-Wissen zum eigenen Produkt · MBA |
-| Kartons im Keller, Quote am Monatsende | Nur Beobachtung in Foren, keine belastbare Zahl | **keine** |
+| Kartons im Keller, Quote am Monatsende | Nur Beobachtung in Foren, keine belastbare Zahl | Vom Network-Wissen zum eigenen Produkt · MBA |
 | Sie hat Wissen, aber kein Format dafür | Nur Beobachtung | Vom Network-Wissen zum eigenen Produkt |
 | Einkommen hängt an Provisionsstufen, die sie nicht steuert | AARP 2018: 44 % steigen im ersten Jahr wieder aus | MBA |
 | Kein Leadmagnet, keine eigene Liste → abhängig vom Account | Nur Beobachtung, keine Zahl gefunden | Lead-Challenge (0€) · IKM |
 
-**Lücke:** Das Keller-/Quoten-Problem ist emotional das stärkste in dieser Zeile und hat weder
-Produkt noch Content. Bisher kein einziger Hook dazu.
+**Ungenutzter Angle:** Das Keller-/Quoten-Problem wird von Säule 2 gelöst — mit eigener Marge muss
+sie nicht mehr selbst bestellen, damit die Zahlen stimmen. Emotional das stärkste Problem der Zeile,
+und es existiert dazu weder ein Verkaufstext noch ein einziger Hook.
 
 ---
 
@@ -97,10 +102,18 @@ strukturell, nicht behebbar — er gehört zur Nische dazu und ist in der Preist
 
 ## Was die Tabelle sichtbar macht
 
-**Drei Lücken ohne Produkt:**
-1. **Compliance** — belegtes Problem (FTC, Swissmedic), kein Angebot
-2. **Kartons im Keller / Monatsquote** — emotional stark, weder Produkt noch ein einziger Hook
-3. **Kamera-Angst** — überall Nebenthema, nirgends adressiert
+**Keine Produktlücken — drei ungenutzte Verkaufs-Angles.** Alle neun Probleme sind gedeckt; drei
+davon werden gelöst, ohne dass es je jemand sagt:
+
+| Problem | Wird gelöst von | Der Satz, der fehlt |
+|---|---|---|
+| Compliance | Finde dein Thema · MBA | „Über dein eigenes Thema darfst du reden, wie du willst." |
+| Kartons im Keller | Vom Network-Wissen zum eigenen Produkt | „Wenn du selber verdienst, musst du nicht mehr für die Zahlen kaufen." |
+| Kamera-Angst | Startklar · Content-Box | „Du musst dein Gesicht nicht zeigen, um zu posten." |
+
+Dasselbe Muster wie bei Problem 6 (Freundschaften ↔ Säule 1): Das Produkt löst es, der Verkaufstext
+erwähnt es nicht. **Hier liegt der grösste ungenutzte Hebel dieser Tabelle** — keine neuen Produkte
+nötig, nur andere Sätze davor.
 
 **Wo die Belege dünn sind:** Bereich 3 (digitale Produkte) hat die schwächste Beleglage — vier von
 fünf Problemen sind reine Beobachtung. Für Salespage-Texte in diesem Bereich also mit Szenen
