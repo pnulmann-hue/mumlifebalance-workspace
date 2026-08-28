@@ -2,105 +2,116 @@
 tags: [produkt, research, mentoring]
 ---
 
-# Recherche-Dokument — „Das Profil steht halb fertig seit Monaten"
+# Recherche-Dokument — „Das Profil ist da, aber es verkauft nichts"
 
 **Datum:** 2026-08-28 · **Produkt:** `instagram-startklar` · **Profil:** Mentoring
 **Methode:** Agas 4-Abschnitte-Struktur, ausgeführt mit echter Websuche statt aus dem Modellgedächtnis
 
 > **Wiederverwendbar für:** Salespage · Ads · Mails · Content · Kursaufbau.
-> Das ist der eigentliche Zweck dieses Dokuments — einmal gründlich, danach immer wieder.
+
+## Wie sich das Problem im Lauf der Recherche geschärft hat
+
+| Fassung | Problemdefinition | Warum verworfen |
+|---|---|---|
+| 1 | Perfektionismus-Lähmung, nichts wird fertig | Übertragungsfehler: Quellen handeln von Selbstständigen **mit** eigenem Thema. Network-Mamas haben ein Firmenprodukt, kein Thema |
+| 2 | Bio ist nichtssagend | Zu eng — Patricia: „es geht nicht nur um Bios" |
+| **3** | **Das ganze Profil ist ein leeres Schaufenster** | ✅ aktuell |
 
 ---
 
 ## 1 · Überblick
 
-**Das gewählte Problem:** Das Instagram-Profil steht halb fertig seit Monaten.
+**Das Problem:** Das Profil existiert seit Monaten. Aber alles, was es verkaufsfähig machen würde,
+fehlt: keine Beiträge, keine Stories, keine Highlights, eine Bio, die auf jede andere im Team
+genauso passen würde. Wer draufkommt, findet nichts, das ihn hält.
 
-> **Korrektur nach zweiter Recherche (Patricia-Einwand aus der Praxis):** Die erste Fassung dieses
-> Dokuments deutete das Problem als **Perfektionismus-Lähmung**. Das war ein Übertragungsfehler —
-> die Quellen dazu handeln von Selbstständigen und Coaches, die ein eigenes Thema haben und um die
-> Formulierung ringen. Network-Mamas haben kein eigenes Thema, sondern ein Firmenprodukt. Ihr
-> Verhalten ist ein anderes.
+**Warum das nicht Faulheit ist:** Sie hat das Profil in fünf Minuten angelegt und seither nicht
+angefasst, weil die Frage davor unbeantwortet ist — wofür steht dieses Profil eigentlich? Ohne diese
+Antwort gibt es kein Kriterium dafür, was ein guter Beitrag wäre, was in ein Highlight gehört oder
+was sie heute in eine Story sprechen sollte. Also passiert nichts.
 
-**Was tatsächlich passiert:** Die Bio ist meistens nicht leer. Sie ist **nichtssagend**. Es wird
-irgendetwas hingeschrieben, ohne dass vorher jemand die Frage beantwortet hätte, wofür das Profil
-eigentlich steht. Belegt: In jeder gefundenen Fehler-Liste steht **fehlende Klarheit an erster
-Stelle** — nie „die Bio fehlt". Alle beschriebenen Fehler setzen voraus, dass etwas dasteht.
+**Das ist deine Schaufenster-Metapher, wörtlich:** Der Laden ist angemietet, das Schild hängt, die
+Tür ist auf — und drinnen stehen keine Waren. Niemand geht rein, und das liegt nicht an der Tür.
 
-**Der Kern:** Sie setzt sich nicht mit der Frage auseinander, sondern füllt das Feld. Das Ergebnis
-ist eine Bio, die auf jede andere im Team genauso passen würde — und ein Profil, das für sie selbst
-nie „fertig" wirkt, weil es nichts trifft.
+**Belegt ist:** Der erste Eindruck entscheidet, ob jemand folgt oder das Profil sofort wieder
+verlässt. Highlights liefern strukturierte Infos und Social Proof und bauen schneller Vertrauen auf,
+als wenn sich jemand erst durchklicken muss — sie stehen direkt unter der Bio und gehören zu den
+ersten Elementen, die ein Besucher sieht. Gepinnte Beiträge sind die Visitenkarte für neue
+Besucherinnen. Ein Feed mit erkennbarer Handschrift schafft Vertrauen, bevor ein Wort gelesen ist.
+Und: Ein leeres Profil hat es schwer, selbst gute Inhalte wirken darauf schwächer.
 
-**Konsequenz für den Kurs:** Er löst weder ein Wissensproblem („wie schreibe ich eine Bio", davon
-gibt es Anleitungen im Überfluss) noch ein Disziplinproblem. Er erzwingt die **Auseinandersetzung
-vor dem Schreiben**. Das ist der Unterschied zu allen acht Bio-Vorlagen-Anbietern: Die liefern das
-Gefäss, nicht den Inhalt.
+**In jeder gefundenen Fehler-Liste steht fehlende Klarheit an erster Stelle — nie „es fehlt etwas".**
+Alle beschriebenen Fehler setzen voraus, dass etwas dasteht. Das Problem ist nicht Leere aus
+Bequemlichkeit, sondern Leere aus Unentschiedenheit.
 
-**Kunden-Avatar:** Network-Mama, Profil existiert, Bio steht da — Vorname, Firmenname, ein Emoji,
-vielleicht „Mama von 2" und ein Spruch. Sie hat das in fünf Minuten ausgefüllt und seither nicht
-angefasst. Sie spürt, dass es nicht stimmt, weiss aber nicht, was sie stattdessen hinschreiben soll.
+**Konsequenz für den Kurs:** Er löst kein Wissensproblem (Anleitungen gibt es im Überfluss) und kein
+Disziplinproblem. Er erzwingt **eine Entscheidung, und daraus dann alle Profil-Bausteine in einem
+Zug** — Bio, Highlights, gepinnte Beiträge, erste Posts. Alles aus derselben Antwort abgeleitet.
 
-**Der stärkste Angle:** Die Bio ist nicht das Problem — die Frage davor ist unbeantwortet.
+**Kunden-Avatar:** Network-Mama, Profil seit Monaten angelegt. Bio: Vorname, Firmenname, ein Emoji,
+vielleicht „Mama von 2". Highlights: keine oder eine mit dem Titel „Über mich", leer. Beiträge: drei
+Produktfotos vom Anfang. Sie spürt, dass es nicht stimmt, und weiss nicht, wo sie anfangen soll.
 
 ---
 
 ## 2 · Marketing-Angles & Hooks
 
-Symptombewusst formuliert — kein Lösungsvokabular im Hook, Network-Anker in derselben Zeile.
+Symptombewusst — kein Lösungsvokabular, Network-Anker in derselben Zeile.
 
-**Angle A — Die Bio, die seit Monaten dieselbe ist**
-- POV: In deiner Bio steht seit vier Monaten derselbe halbe Satz, und du hast ihn schon dreimal geändert und wieder zurückgesetzt.
-- Du hast drei Bio-Vorlagen gespeichert. Deine Bio ist trotzdem noch die von der Anmeldung.
-- Das Peinliche? Ich hatte alles, was ich brauchte. Ich habe es nur nie fertig gemacht.
+**Angle A — Das leere Schaufenster**
+- POV: Jemand landet auf deinem Profil, scrollt zwei Sekunden und ist wieder weg. Da war ja auch nichts.
+- Dein Profil ist seit vier Monaten online. Highlights: keine. Beiträge: drei Produktfotos vom Anfang.
+- Der Laden ist angemietet, das Schild hängt — und drinnen steht keine Ware.
 
-**Angle B — Nicht undiszipliniert, sondern gelähmt**
-- Du bist nicht zu faul für dein Profil. Du willst es zu gut machen, um es fertig zu machen.
-- Was aussieht wie Aufschieben, ist meistens ein zu hoher Anspruch. *(belegt, Abschnitt 4)*
-- 5 Anzeichen, dass dein Anspruch dein Profil ausbremst — und nicht deine Zeit.
+**Angle B — Die Frage davor ist offen**
+- Du weisst nicht, was du posten sollst, weil du nicht entschieden hast, wofür dein Profil steht.
+- In deiner Bio steht dein Firmenname. Das sagt, bei wem du eingekauft hast, nicht warum jemand bleiben sollte.
+- Es fehlt dir kein Beitrag. Es fehlt die Antwort, aus der die Beiträge kommen.
 
-**Angle C — Die Kosten des Halbfertigen**
-- Ein Profil, das keiner sieht, kann auch keiner kaufen.
-- Deine Sponsorin fragt, wie es läuft. Dein Profil beantwortet die Frage schon.
-- Wer heute auf dein Profil kommt, entscheidet in Sekunden — und deine Bio erklärt gerade nichts.
+**Angle C — Nicht faul, sondern unentschieden**
+- Du bist nicht zu faul für dein Profil. Du hast nur kein Kriterium, an dem du merkst, was reingehört.
+- Was aussieht wie Aufschieben, ist meistens eine offene Frage. *(belegt, Abschnitt 4)*
+- 5 Anzeichen, dass dein Profil auf eine Entscheidung wartet und nicht auf mehr Zeit.
 
-**Angle D — Gut genug schlägt perfekt**
-- Deine Bio muss nicht die beste sein. Sie muss existieren.
-- Fertig ist besser als perfekt. *(Patricias eigener Satz aus der Lead-Challenge — passt hier exakt)*
-- Ich habe meine Bio in 20 Minuten geschrieben und sie war nicht perfekt. Sie war online.
+**Angle D — Was ein Profil verkaufsfähig macht**
+- Drei Dinge entscheiden, ob eine Fremde bleibt — und bei den meisten Profilen im Team fehlen alle drei.
+- Deine Highlights sind das Erste, was sie sieht. Bei dir stehen da null. *(belegt)*
+- Neue Besucherinnen sehen deine gepinnten Beiträge zuerst. Was steht bei dir oben?
 
-**Angle E — Deadline als Mechanik**
-- Der Grund, warum dein Profil seit Monaten steht: Es hat kein Enddatum.
-- Was fehlt, ist kein weiterer Tipp. Es ist ein Datum, an dem es fertig sein muss.
+**Angle E — In einer Woche steht es**
+- Dein Profil braucht keine sechs Wochen. Es braucht eine Woche und eine Entscheidung.
+- Fertig ist besser als perfekt. *(Patricias eigener Satz aus der Lead-Challenge)*
 
 ---
 
 ## 3 · Kundengefühle & emotionale Trigger
 
 **Was sie im Alltag macht**
-Sie öffnet die Bio-Bearbeitung, tippt zwei Zeilen, liest sie laut, löscht sie wieder. Sie schaut sich
-das Profil einer anderen aus dem Team an und findet es besser. Sie speichert einen weiteren Beitrag
-mit Bio-Vorlagen. Sie legt das Handy weg.
+Sie öffnet Instagram, schaut sich das Profil einer anderen aus dem Team an, findet es besser, und
+schliesst die App. Sie speichert einen Beitrag mit Bio-Vorlagen. Sie denkt „ich müsste mal ein
+Highlight machen" und weiss nicht, welches. Sie postet nichts, weil ihr nichts einfällt, das gut
+genug wäre.
 
 **Was sie abends denkt**
-„Ich weiss ja, was ich machen müsste." — „Andere kriegen das doch auch hin." — „Sobald ich weiss, wie
-ich mich nennen will, mache ich es fertig."
+„Ich weiss ja, was ich machen müsste." — „Was soll ich denn posten, ausser Produkten?" — „Sobald ich
+weiss, wofür ich stehen will, mache ich es fertig."
 
 **Was sie heimlich will**
-Dass jemand sie zwingt, es abzuschliessen. Nicht noch eine Anleitung, sondern einen Rahmen mit einem
-Ende. Und die Erlaubnis, dass es nicht perfekt sein muss.
+Einen Rahmen mit einem Ende. Und jemanden, der ihr die eine Frage stellt, die sie sich selbst nicht
+stellt: Wofür steht dieses Profil eigentlich — jenseits der Firma?
 
 **Wie sie es bisher versucht hat**
-Vorlagen gespeichert. Kostenlose Guides heruntergeladen. Ein paar Reels von Bio-Coachinnen angesehen.
-Alles davon hat ihr mehr Kriterien gegeben, an denen ihre Bio scheitern kann.
-→ **Genau deshalb hat mehr Wissen bei ihr noch nie geholfen.**
+Vorlagen gespeichert, Guides heruntergeladen, Reels von Bio-Coachinnen angesehen. Alles davon hat
+ihr weitere Kriterien gegeben, an denen ihr Profil scheitern kann.
+→ **Deshalb hat mehr Wissen bei ihr noch nie geholfen.**
 
 **Die Scham darunter**
-Sie erzählt niemandem, dass ihr Profil seit Monaten so aussieht. Wenn im Team über Sichtbarkeit
-geredet wird, sagt sie „bin dran". Das ist derselbe Satz, den sie sich selbst sagt.
+Sie erzählt niemandem, wie ihr Profil aussieht. Wenn im Team über Sichtbarkeit geredet wird, sagt sie
+„bin dran". Das ist derselbe Satz, den sie sich selbst sagt.
 
 **Der Trigger, der zieht**
-Die Entlastung: Es liegt nicht an ihrer Disziplin. Und danach sofort der Rahmen: eine Woche, ein
-Enddatum, fertig.
+Erst die Entlastung — es liegt nicht an ihrer Disziplin. Dann sofort der Rahmen: eine Entscheidung,
+eine Woche, danach steht es.
 
 ---
 
@@ -108,42 +119,48 @@ Enddatum, fertig.
 
 ### Belegt
 
-**Perfektionismus und Aufschieben hängen ursächlich zusammen**
-Mehrfach unabhängig beschrieben: Der hohe Anspruch sorgt dafür, dass man zu lange wartet, zu viel
-denkt und nicht ins Tun kommt.
-→ [Perfektionismus loslassen (Selbständige Frauen Schweiz)](https://selbstaendigefrauen.ch/weiblichkeit-im-business/perfektionismus-loslassen-5-strategien-um-endlich-ins-tun-zu-kommen/) · [Perfektionismus im Alltag (aufschiebenwargestern.de)](https://www.aufschiebenwargestern.de/perfektionismus-im-alltag-warum-gutgenug-besser-ist/)
+**Der erste Eindruck entscheidet über Folgen oder Verlassen**
+→ [Instagram-Profil professionell optimieren (Deutsche Handwerks Zeitung)](https://www.deutsche-handwerks-zeitung.de/instagram-profil-so-optimieren-sie-ihre-bio-professionell-357829/)
 
-**Was nicht veröffentlicht wird, erreicht niemanden**
-Ein Angebot, das nie online geht, bringt keinen Gewinn — Perfektionismus als konkrete Wachstumsbremse
-für Selbstständige.
-→ [Warum Perfektionismus dein Online-Business ausbremst (Marlis Schorcht)](https://www.marlisschorcht.de/blog/warum-perfektionismus-dich-daran-hindert-erfolgreich-zu-sein/) · [Perfektionismus ablegen (Kolibri Design)](https://kolibridesign.at/selbststaendigkeit/perfektionismus-ablegen-selbststaendigkeit/)
+**Highlights liefern Struktur und Social Proof und bauen schneller Vertrauen auf**
+Sie stehen direkt unter der Bio und gehören zu den ersten Elementen, die Besucher sehen.
+→ [Instagram Highlights: Strategien (Swat.io)](https://swat.io/de/publizieren/instagram-highlights/) · [Highlights richtig nutzen (datenwerk)](https://weblog.datenwerk.at/instagram-highlights-wie-du-sie-richtig-nutzt)
 
-**Eine feste Deadline ist das wirksamste Gegenmittel**
-Entscheide, bis wann etwas fertig sein muss, und halte dich daran — unabhängig davon, ob es
-„perfekt" ist.
-→ [Perfektionismus loslassen (Selbständige Frauen Schweiz)](https://selbstaendigefrauen.ch/weiblichkeit-im-business/perfektionismus-loslassen-5-strategien-um-endlich-ins-tun-zu-kommen/)
+**Gepinnte Beiträge sind die Visitenkarte für neue Besucherinnen**
+→ [Was Menschen zum Folgen bewegt](https://anwalt-seiten.de/was-menschen-wirklich-dazu-bringt-dir-auf-instagram-zu-folgen)
 
-**Perfektionismus kostet Zeit, in der Kundinnen hätten gewonnen werden können**
-→ [Perfektionismus in der Selbständigkeit (Lexware Office)](https://office.lexware.de/blog/perfektionismus/) · [Startup-Wissen](https://startupwissen.biz/perfektionismus-selbststaendigkeit/)
+**Ein Feed mit erkennbarer Handschrift schafft Vertrauen, bevor ein Wort gelesen ist**
+→ wie oben
+
+**Ein leeres Profil hat es schwer — auch gute Inhalte wirken darauf schwächer**
+→ wie oben
+
+**Der häufigste Fehler ist fehlende Klarheit, nicht fehlende Inhalte**
+Beispiel aus einer Fehler-Liste: „Ich bin Coach und helfe dir, dein volles Potenzial zu entfalten" —
+zu unkonkret. Ebenfalls häufig: schwache Positionierung („du gehst in der Masse unter") und
+überladene Bios, in die alles hineingepresst wird.
+→ [Die 3 grössten Fehler von Selbstständigen (hey strategies)](https://heystrategies.com/selbststandige-auf-instagram/) · [Die 10 häufigsten Instagram-Fehler (Boost my Business)](https://boost-my-business.de/blog/die-zehn-haeufigsten-instagram-fehler-und-wie-du-sie-vermeidest/) · [Instagram Bio (DIM)](https://www.marketinginstitut.biz/blog/instagram-bio/)
+
+**Mehrwert bleibt auf der Strecke — der schnellste Weg, Follower zu verlieren**
+Man muss klarmachen, warum jemand dem Account folgen sollte.
+→ [3 Instagram Marketing Fehler (Marcel Pohl)](https://www.marcelpohl.com/3-instagram-marketing-fehler-und-wie-man-sie-behebt/) · [7 Instagram Marketing Fails (Agentur Gerhard)](https://agentur-gerhard.de/social-media-marketing/7-instagram-marketing-fails)
+
+**Perfektionismus und Aufschieben hängen zusammen; eine feste Deadline ist das Gegenmittel**
+Gilt für Selbstständige allgemein — als Mechanik brauchbar, nicht als Diagnose für diese Zielgruppe.
+→ [Perfektionismus loslassen (Selbständige Frauen Schweiz)](https://selbstaendigefrauen.ch/weiblichkeit-im-business/perfektionismus-loslassen-5-strategien-um-endlich-ins-tun-zu-kommen/) · [Warum Perfektionismus dein Online-Business ausbremst (Marlis Schorcht)](https://www.marlisschorcht.de/blog/warum-perfektionismus-dich-daran-hindert-erfolgreich-zu-sein/)
 
 **Es gibt Nachfrage — bewiesen durch das Angebot**
-Mindestens acht deutschsprachige Anbieter halten Bio-Vorlagen und Anleitungen bereit. Nach Agas
-eigenem Qualifizierungskriterium („gibt es schon Angebote dazu?") ist das ein Ja.
-→ [Marlis Schorcht](https://www.marlisschorcht.de/blog/instagram-bio-vorlagen/) · [nachtsum2](https://www.nachtsum2.de/instagram-bio-vorlagen) · [Kreativkarussell](https://www.kreativkarussell.de/magazin/instagram-bio-erstellen/) · [Swat.io](https://swat.io/de/lernen/instagram-bio/) · [Metricool](https://metricool.com/de/instagram-bio-2026-ideen-und-beispiele/)
+Mindestens acht deutschsprachige Anbieter mit Bio-Vorlagen und Profil-Anleitungen. Nach Agas
+Qualifizierungskriterium („gibt es schon Angebote dazu?") ein klares Ja.
 
-**Handwerkswissen für den Kursinhalt**
-Bio-Struktur: Wer bist du · was bietest du · was ist der nächste Klick — in rund 150 Zeichen. Eine
-verbreitete Drei-Zeilen-Variante: Zeile 1 der Wunsch der Kundin, Zeile 2 ihr Schmerz, Zeile 3 der
-nächste Schritt. Sprache: die Wörter, die die Kundin selbst benutzt.
-→ Quellen wie oben
+### Nicht belegt — nicht verwenden
 
-### Nicht belegt — ehrlich gekennzeichnet
-
-- **Wie viele Profile halb fertig bleiben.** Keine Zahl gefunden, weder für Selbstständige noch für
-  Network-Vertrieblerinnen. Nicht behaupten.
-- **Wie schnell Profilbesucher entscheiden.** Es kursieren Sekundenangaben, ich habe keine
-  belastbare Primärquelle gefunden. Nicht als Zahl verwenden — als Beobachtung formulieren.
+- **Wie viele Profile leer bleiben.** Keine Zahl gefunden.
+- **Wie schnell Besucher entscheiden.** Es kursieren Sekundenangaben ohne auffindbare Primärquelle.
+  Als Beobachtung formulieren, nie als Zahl.
 - **Ob Network-Mamas stärker betroffen sind als andere Selbstständige.** Plausibel, unbelegt.
+- **Perfektionismus als Hauptursache bei dieser Zielgruppe.** Für Selbstständige mit eigenem Thema
+  belegt, für Network-Mamas nicht übertragbar. War der Fehler in Fassung 1.
 
 ---
 
@@ -151,14 +168,24 @@ nächste Schritt. Sprache: die Wörter, die die Kundin selbst benutzt.
 
 | Bisherige Annahme | Nach der Recherche |
 |---|---|
-| Sie weiss nicht, was in die Bio gehört | Sie weiss es meistens — sie wird nicht fertig |
-| Der Kurs liefert Anleitung | Der Kurs liefert **Rahmen und Enddatum** |
+| Sie weiss nicht, wie man eine Bio schreibt | Sie weiss es ungefähr — ihr fehlt die Antwort, aus der alles folgt |
+| Der Kurs liefert Anleitung und Vorlagen | Der Kurs erzwingt **eine Entscheidung** und leitet daraus alle Bausteine ab |
+| Ergebnis: fertige Bio | Ergebnis: **verkaufsfähiges Schaufenster** — Bio, Highlights, gepinnte Beiträge, erste Posts |
 | Verkaufsargument: Vorlagen | Verkaufsargument: **in einer Woche steht es, gut genug** |
-| Titel betont das Ergebnis | Titel darf die **Deadline** betonen |
 
-Der bestehende Briefing-Satz („In einer Woche steht dein Profil fertig da") trifft das bereits —
-die Recherche belegt jetzt, **warum** ausgerechnet die Woche das Verkaufsargument ist und nicht
-der Inhalt.
+Der bestehende Briefing-Satz („In einer Woche steht dein Profil fertig da und deine ersten fünf
+Beiträge sind draussen") trifft das bereits. Die Recherche belegt jetzt, **warum die Woche und die
+Vollständigkeit das Verkaufsargument sind** — und nicht der Inhalt der einzelnen Lektion.
+
+## ⚠️ Offene strategische Frage
+
+Wenn Startklar die Frage „wofür steht dein Profil?" mitbeantwortet, rückt er nah an den Minikurs
+**„Finde dein Thema"** (ebenfalls 39 CHF). Zwei Produkte auf derselben Stufe, die sich überlappen,
+verletzen die Produkttreppe.
+
+Möglicher Schnitt: Startklar beantwortet die Frage **nur so weit, wie es für ein funktionierendes
+Profil reicht** — drei Fragen, eine Arbeitsentscheidung, weiter nicht. „Finde dein Thema" macht
+daraus die tragfähige Positionierung. Muss vor dem Kursaufbau entschieden werden.
 
 ## 🔗 Verwandte Notizen
 
