@@ -70,3 +70,4 @@ Auto-Index aller Files in `outputs/reels/`. Siehe [[_MOCs/MOC-Content-Engine]] f
 ### 📁 2026-guru-konter-mama
 
 - [[caption]]
+- [[2026-08-28-story-challenge-reels]]
