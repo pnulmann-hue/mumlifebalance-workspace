@@ -2,215 +2,223 @@
 tags: [content, hooks, mentoring]
 ---
 
-# 50 Reichweitenherz-Hooks — auf Patricias Thema adaptiert
+# 50 Reichweitenherz-Hooks — auf Patricias Zielgruppe adaptiert (v2)
 
 **Basis:** `reference/content-tresor-reichweitenherz.md` (5 Säulen × 10 Sets)
 **Marktforschung:** `context/persoenlich/marktrecherche/2026-08-28-network-mama-alltagsprobleme.md`
-**Bewusstseinsstufe:** **symptom- und problembewusst** — nie produktbewusst.
+**Bewusstseinsstufe:** streng **symptom- und problembewusst**
 
-## Die Regel, nach der adaptiert wurde
+> **v2 (2026-08-28):** Komplett neu geschrieben. In v1 drehten sich 18 von 50 Hooks um „meine Posts
+> funktionieren nicht" — ein Thema, das in der Marktforschung gar nicht vorkommt und bereits
+> solution aware ist. v2 geht von den neun belegten Problemen aus und gewichtet nach ihrer
+> Sprengkraft.
 
-Jeder Hook beschreibt ein **Symptom, das die Frau heute körperlich spürt** — den leeren Posteingang, das Handy am Frühstückstisch, die Freundin, die nicht mehr zurückschreibt, die Kartons im Keller.
+## Was im Hook nichts zu suchen hat
 
-Verboten im Hook, weil produktbewusst:
-- „eigenes Thema" · „Positionierung" · „Leadmagnet" · „E-Mail-Liste" · „digitales Produkt" · „Hybridmodell" · „Funnel"
-- Alles, was voraussetzt, dass sie die Lösung schon kennt
+**Produkt-Vokabular:** eigenes Thema · Positionierung · Leadmagnet · E-Mail-Liste · digitales Produkt · Hybridmodell · Funnel · Expertin werden
 
-Erlaubt: das Gefühl, die Szene, der Satz, den sie sich selber nicht laut sagt.
+**Solution-aware-Vokabular (der v1-Fehler):** „meine Posts funktionieren nicht" · „niemand reagiert" · Reichweite · Algorithmus · Content-Strategie · sichtbar werden
 
-> ⚠️ **Mit ⭐ markierte Hooks brauchen eine echte Erinnerung von dir.** Ich habe Platzhalter gesetzt,
-> wo ich sonst deine Biografie erfinden müsste — füll sie mit dem, was wirklich war.
+**Was reingehört:** die Szene, das Gefühl, der Satz, den sie sich selber nicht laut sagt.
+
+> ⚠️ **⭐ = braucht deine echte Erinnerung.** Dort stehen Platzhalter, wo ich sonst deine Biografie
+> erfinden müsste.
 
 ---
 
 ## Säule 1: Identifikation
 
-**1.1** — *Original: „Kann mir bitte mal jemand erklären, warum bei […] alle so tun, als wäre das total einfach?"*
-> Kann mir bitte mal jemand erklären, warum im Teamcall immer so getan wird, als wäre „sprich einfach mehr Menschen an" ein Plan?
+**1.1** ⟨Handy⟩
+> Kann mir bitte mal jemand erklären, warum ich beim Frühstück öfter aufs Handy schaue als meinem Kind ins Gesicht?
 
-**1.2** — *Original: „POV: Du hoffst heimlich, dass dich niemand fragt, wie es läuft."*
-> POV: Du hoffst am Familienfest heimlich, dass dich niemand fragt, wie es eigentlich mit deinem Business läuft.
+**1.2** ⟨Freundschaften⟩
+> POV: Deine beste Freundin schreibt seit drei Wochen nicht zurück. Und du weisst ganz genau, ab welcher Nachricht es angefangen hat.
 
-**1.3** — *Original: „Kapitel 2 vs. Kapitel 27."*
-> POV: Du vergleichst deinen Kontoauszug mit ihrem Foto vom Incentive-Trip. Hör auf damit.
+**1.3** ⟨Geld⟩
+> POV: Du rechnest abends heimlich nach, was diesen Monat reingekommen ist und was rausgegangen ist. Und dann machst du den Taschenrechner ziemlich schnell wieder zu.
 
-**1.4** — *Original: „Instagram motiviert geöffnet, 20 Minuten später mit Selbstzweifeln geschlossen."*
-> POV: Du öffnest Instagram, um eine Story zu posten, und schliesst es 20 Minuten später mit dem Gefühl, dass alle anderen das besser können als du.
+**1.4** ⟨Warmmarkt⟩
+> POV: Du scrollst dein Adressbuch von oben nach unten durch und suchst einen Namen, bei dem du noch nicht gefragt hast.
 
-**1.5** — *Original: „Du fragst 17 Menschen nach ihrer Meinung."*
-> POV: Du fragst drei Frauen im Team, warum auf deine Posts niemand reagiert. Und alle sagen: dranbleiben, Konsistenz ist alles.
+**1.5** ⟨DM-Akquise⟩
+> POV: Es ist 21 Uhr, die Kinder schlafen, und du schreibst eine Frau an, die du nicht kennst, weil sie mal etwas mit #mamaleben gepostet hat.
 
-**1.6** — *Original: „47 Gründe warum es klappt — und du denkst an den einen, warum nicht."*
-> POV: Du hast zehn Ideen, wie du endlich anders sichtbar werden könntest, und denkst trotzdem nur an den einen Spruch deiner Schwägerin.
+**1.6** ⟨Quote⟩
+> POV: Es ist der 28., dir fehlen Punkte, und du bestellst etwas, das du gar nicht brauchst.
 
-**1.7** — *Original: „Du stellst dir vor, wie dein Leben aussähe, wenn…"*
-> POV: Du rechnest abends im Kopf durch, wie dein Monat aussehen würde, wenn Frauen von selbst auf dich zukämen.
+**1.7** ⟨Compliance⟩
+> POV: Eine Frau in der Gruppe fragt, was ihr bei etwas hilft. Du weisst die Antwort ganz genau. Und du darfst sie nicht hinschreiben.
 
-**1.8** — *Original: „47 Podcasts, 18 Bücher, 0 Entscheidungen."*
-> POV: Du hast jede Schulung im Backoffice durchgeklickt, zwei Notizbücher vollgeschrieben und nichts davon je gepostet.
+**1.8** ⟨Abhängigkeit⟩
+> POV: Dein Account spinnt für zwei Stunden, und dir wird schlecht, weil da drin alles liegt, was du dir aufgebaut hast.
 
-**1.9** — *Original: „Du willst X — aber nicht das Gefühl davor."*
-> POV: Du willst, dass fremde Frauen bei dir anfragen. Aber nicht das Gefühl, im Team die Erste zu sein, die es anders macht.
+**1.9** ⟨Isolation⟩
+> POV: Du sagst am Telefon „passt schon, viel los gerade", während du eigentlich sagen willst, dass dich seit Wochen niemand von sich aus angerufen hat.
 
-**1.10** — *Original: „Du willst X — und dann kommt dieser fiese Gedanke."*
-> POV: Du willst endlich zeigen, was du wirklich draufhast. Und dann kommt dieser Gedanke: „Wer bin ich denn, dass mir jemand zuhört?"
+**1.10** ⟨Handy⟩
+> POV: Dein Kind erzählt dir etwas, und du sagst „gleich, Mami muss nur schnell". Zum dritten Mal seit dem Aufstehen.
 
 ---
 
 ## Säule 2: Positionierung
 
-**2.1** — *Original: „Ich bin nicht die, die dir das nächste Wundermittel verspricht."*
-> Ich bin nicht die, die dir noch ein Skript für die DMs in die Hand drückt, während dein Adressbuch längst durch ist.
+**2.1** ⟨Warmmarkt⟩
+> Ich bin nicht die, die dir erzählt, dass in deinem Adressbuch schon noch jemand drin ist.
 
-**2.2** — *Original: „Bei mir bekommst du kein Mitleid, sondern die Lösung."*
-> Bei mir hörst du nicht, dass Instagram gerade halt schwierig ist. Bei mir hörst du, woran es bei dir konkret hängt.
+**2.2** ⟨DM-Akquise⟩
+> Bei mir hörst du nicht, dass du einfach mehr Nachrichten rausschicken musst. Ich frage dich, wie du dich danach jedes Mal fühlst.
 
-**2.3** — *Original: „Wenn du denkst, du musst nur fest genug manifestieren…"*
-> Wenn du denkst, du musst nur fest genug an dich glauben, damit die Anfragen kommen, muss ich dich leider enttäuschen.
+**2.3** ⟨Geld⟩
+> Ich rede mit dir über die Zahl, die am Monatsende wirklich übrig bleibt. Auch wenn sie einstellig ist.
 
-**2.4** — *Original: „Du brauchst nicht mehr Tipps, du musst 90 % vom Müll weglassen."*
-> Du brauchst keine elfte Schulung zur Einwandbehandlung. Du musst aufhören, das meiste davon überhaupt zu machen.
+**2.4** ⟨Quote⟩
+> Ich bin nicht die, die dir am 28. schreibt, dass dir noch Punkte fehlen.
 
-**2.5** — *Original: „Ich stülpe dir keine 0815-Schablone über."*
-> Ich stülpe dir nicht das Skript über, das bei deiner Sponsorin funktioniert hat. Deine Leute sind andere Leute.
+**2.5** ⟨Freundschaften⟩
+> Mich interessiert weniger, wie gross dein Team ist. Mich interessiert, ob deine Freundinnen noch zurückschreiben.
 
-**2.6** — *Original: „Bei mir bekommst du keine Ausreden für deinen Stillstand."*
-> Bei mir hörst du nicht mehr, dass es am Algorithmus liegt. Wir schauen uns an, was du tatsächlich postest.
+**2.6** ⟨Handy⟩
+> Mir ist ziemlich egal, wie viele Stunden du reinsteckst. Mich interessiert, ob dein Kind dich beim Frühstück noch erreicht.
 
-**2.7** — *Original: „Kein 2-Wochen-Glücks-Quickie."*
-> Ich baue mit dir keine Motivationswoche nach dem Teamcall. Ich baue mit dir etwas, das noch steht, wenn die Firma morgen den Vergütungsplan ändert.
+**2.7** ⟨Abhängigkeit⟩
+> Ich baue mit dir nichts, das weg ist, wenn morgen ein Account gesperrt wird oder eine Firma ihren Plan ändert.
 
-**2.8** — *Original: „Ich zeige dir nicht nur die Hochglanz-Seite."* ⭐
-> Ich zeige dir nicht nur den Monat, in dem es lief. Ich zeige dir auch den, in dem ich [echte Szene: die Story dreimal gelöscht / den Produktabend abgesagt / …].
+**2.8** ⟨Compliance⟩
+> Ich rede mit dir auch über das, was du nicht schreiben darfst. Das gehört zur Wahrheit genauso dazu wie der Rest.
 
-**2.9** — *Original: „Mein Fokus liegt auf deinem Ergebnis, nicht auf meinem Applaus."*
-> Meine Followerzahl interessiert mich weniger als die Frage, ob dir diese Woche eine fremde Frau geschrieben hat.
+**2.9** ⟨Scham⟩ ⭐
+> Ich zeige dir nicht nur die Monate, in denen es lief. Ich erzähl dir auch von [echte Szene: dem Abend mit zwei Zusagen / der Nachricht, die ich nie abgeschickt habe / …].
 
-**2.10** — *Original: „Wenn alle nach links rennen…"*
-> Wenn im Team alle gleichzeitig dasselbe Produktbild posten, sollten wir kurz darüber reden, warum das für keine von euch funktioniert.
+**2.10** ⟨Austauschbarkeit⟩
+> Wenn zwanzig Frauen aus einem Team am selben Tag dasselbe Bild posten, sollten wir kurz darüber reden, wie sich das für die anfühlt, die es sieht.
 
 ---
 
 ## Säule 3: Mehrwert
 
-**3.1** — *Original: „Die 3 Schritte, die fast niemand beachtet."*
-> Die 3 Dinge, die in deinem Profil stehen müssen, bevor Posten überhaupt Sinn ergibt. Ohne die bleiben die Anfragen aus.
+*Erkenntnis-Werkzeuge, keine Rezepte. Jede Übung führt zu einer Selbsterkenntnis, nicht zu einer Umsetzung.*
 
-**3.2** — *Original: „Alle reden über X. Das ist Quatsch."*
-> Alle reden davon, dass du konsistenter posten musst. Die meisten Frauen, die mir schreiben, posten längst genug — nur immer über dasselbe.
+**3.1** ⟨Warmmarkt⟩
+> Zähl einmal durch, wie viele Namen auf deiner Liste wirklich noch übrig sind. Diese Zahl sagt mehr über deine nächsten Monate als jedes Monatsziel.
 
-**3.3** — *Original: „Die 80/20-Übung: womit du aufhören solltest."*
-> Streich eine Woche lang jeden Post, in dem ein Produkt vorkommt. Was übrig bleibt, ist der Grund, warum dir jemand folgen würde.
+**3.2** ⟨Geld⟩
+> Rechne einmal ehrlich: alles, was du dieses Jahr bestellt hast, minus alles, was reingekommen ist. Die meisten machen das nie. Aus gutem Grund.
 
-**3.4** — *Original: „Du arbeitest an Schritt 7, obwohl Schritt 1 fehlt."*
-> Du feilst an Reel-Übergängen, während in deiner Bio immer noch nur steht, für welche Firma du unterwegs bist. Pass auf:
+**3.3** ⟨Handy⟩
+> Leg dein Handy morgen beim Frühstück in die andere Ecke der Küche. Wie oft du aufstehst, ist deine Antwort.
 
-**3.5** — *Original: „Die 5-Minuten-Methode."*
-> Die 5-Minuten-Übung, mit der du herausfindest, worüber du reden würdest, wenn das Produkt nicht vorkommen darf.
+**3.4** ⟨DM-Akquise⟩
+> Lies die letzte Nachricht, die du an eine Fremde geschickt hast, einmal laut vor. Würdest du sie am Elternabend genauso sagen?
 
-**3.6** — *Original: „Die 5 Warnsignale, dass du auf dem falschen Weg bist."*
-> 5 Anzeichen, dass dein Profil aussieht wie zweihundert andere in deiner Firma. 🚨
+**3.5** ⟨Freundschaften⟩
+> Geh deine letzten fünf Nachrichten an Freundinnen durch. Wie viele davon hatten am Ende einen Zweck?
 
-**3.7** — *Original: „Der wichtigste Hebel, den fast alle ignorieren."*
-> Der eine Satz in deiner Bio, der entscheidet, ob eine fremde Frau bleibt oder weiterscrollt.
+**3.6** ⟨Quote⟩
+> 5 Anzeichen, dass du inzwischen für die Zahlen kaufst und nicht mehr, weil du etwas brauchst. 🚨
 
-**3.8** — *Original: „Diese 5 Fragen decken auf, warum X nicht funktioniert."*
-> 5 Fragen, die schonungslos zeigen, warum sich bei dir nur Leute melden, die dich sowieso schon kennen.
+**3.7** ⟨Austauschbarkeit⟩
+> Häng dein Profil neben drei andere aus deinem Team. Wenn du selber suchen musst, welches deins ist, weisst du Bescheid.
 
-**3.9** — *Original: „5 Anzeichen, dass du näher am Durchbruch bist."*
-> 5 Anzeichen, dass du näher dran bist, als sich dein leerer Posteingang gerade anfühlt.
+**3.8** ⟨Abhängigkeit⟩
+> Beantworte diese eine Frage: Wenn dein Account morgen weg wäre — wie viele von diesen Menschen könntest du überhaupt noch erreichen?
 
-**3.10** — *Original: „Der grösste Mythos über X."*
-> Der grösste Mythos im Network: dass du einfach nur genug Menschen ansprechen musst. Damit räume ich heute auf.
+**3.9** ⟨Compliance⟩
+> Die 3 Sätze, die du in der Gruppe nicht schreiben darfst. Und warum am Ende du dafür geradestehst.
+
+**3.10** ⟨Scham⟩
+> 5 Anzeichen, dass du näher dran bist, als sich dieser Monat gerade anfühlt.
 
 ---
 
 ## Säule 4: Storytelling
 
-**4.1** — *Original: „Ich dachte, X ist mein Problem. Bis ich verstand, es war Y."*
-> Ich dachte lange, mein Problem sei, dass ich zu wenig Menschen anspreche. Bis ich verstanden habe, dass mir niemand zugehört hat, weil ich nichts zu sagen hatte ausser Produktnamen.
+**4.1** ⟨Handy⟩
+> Ich dachte lange, mein Problem sei zu wenig Zeit. Bis ich gemerkt habe, dass ich am Frühstückstisch sass und trotzdem nicht da war.
 
-**4.2** — *Original: „Rückblickend war das der Moment, in dem ich hätte merken müssen…"*
-> Rückblickend war das der Moment, in dem ich hätte merken müssen, dass etwas schiefläuft: Ich habe beim Frühstück alle fünf Minuten aufs Handy geschaut, ob sich jemand für meinen Produktabend angemeldet hat.
+**4.2** ⟨Handy⟩
+> Am Frühstückstisch sassen wir zu dritt: mein Kind, ich und mein Handy. Und geredet habe ich mit dem Handy.
 
-**4.3** — *Original: „Das Peinliche? Ich war überzeugt, alles richtig zu machen."*
-> Das Peinliche? Ich war überzeugt, ich mache alles richtig. Ich hatte ja jeden einzelnen Tag gepostet.
+**4.3** ⟨Warmmarkt⟩
+> Das Peinliche? Ich war überzeugt, ich mache alles richtig. Ich hatte ja jeden auf meiner Liste angerufen.
 
-**4.4** — *Original: „Denselben Fehler wie 90 % — fast hätte er mich aus der Bahn geworfen."* ⭐
-> Ich habe denselben Fehler gemacht wie fast jede Frau, die im Network anfängt. Und ich habe ihn [Zeitraum] lang nicht gesehen.
-
-**4.5** — *Original: „Ich war zu 100 % überzeugt. Spoiler: war es nicht."*
-> Ich war überzeugt, dass die Namensliste der richtige Weg ist. Spoiler: Sie war nach drei Monaten leer.
-
-**4.6** — *Original: „Ich dachte erst, das wäre Zufall. Beim dritten Mal…"*
+**4.4** ⟨Freundschaften⟩
 > Beim ersten Mal dachte ich, sie hat einfach viel um die Ohren. Beim dritten Mal musste ich mir eingestehen: Sie meldet sich nicht mehr, weil sie weiss, was danach kommt.
 
-**4.7** — *Original: „Etwas Absurdes gemacht — und es hat funktioniert."* ⭐
-> Ich habe etwas gemacht, das im Team niemand verstanden hat: [echte Szene, z.B. einen Monat lang kein Produkt erwähnt]. Das Verrückte? [echtes Ergebnis — nur verwenden, wenn es wirklich so war.]
+**4.5** ⟨Warmmarkt⟩
+> Ich war überzeugt, dass die Namensliste der richtige Weg ist. Spoiler: Nach drei Monaten stand da niemand mehr.
 
-**4.8** — *Original: „Sprachnachricht ans 5-jährige Ich."*
-> Wenn ich der Frau, die 2023 gekündigt hat, heute eine Sprachnachricht schicken könnte, würde sie mit diesem Satz anfangen 👇
+**4.6** ⟨Geld⟩ ⭐
+> Rückblickend war das der Moment, in dem ich hätte merken müssen, dass etwas nicht stimmt: [echte Szene — z.B. als ich den Kontoauszug aufgemacht und sofort wieder weggeklickt habe].
 
-**4.9** — *Original: „Die unangenehmste Wahrheit, die ich zugeben kann."* ⭐
-> Das ist wahrscheinlich das Unangenehmste, was ich über meine erste Zeit im Network zugeben kann: [echte Szene — z.B. „Ich habe Freundschaften danach sortiert, wer noch nicht gefragt worden war."]
+**4.7** ⟨Quote⟩ ⭐
+> Ich habe einmal etwas bestellt, das ich nicht gebraucht habe, nur damit eine Zahl stimmt. [Was danach passiert ist — echte Erinnerung.]
 
-**4.10** — *Original: „Du hast alles ausprobiert. Jeden Tipp. Jeden Hack."*
-> POV: Du hast mittlerweile jeden Tipp aus dem Teamcall ausprobiert, und der Posteingang ist so leer wie letzten Monat.
+**4.8** ⟨DM-Akquise⟩
+> Wenn ich der Frau, die 2023 abends fremde Mamas angeschrieben hat, eine Sprachnachricht schicken könnte, würde sie mit diesem Satz anfangen 👇
+
+**4.9** ⟨Freundschaften⟩ ⭐
+> Das ist wahrscheinlich das Unangenehmste, was ich zugeben kann: [echte Szene — z.B. dass ich irgendwann Menschen danach sortiert habe, wer noch nicht gefragt worden war].
+
+**4.10** ⟨Handy⟩
+> POV: Du stehst um vier Uhr morgens auf, um noch etwas fertigzumachen. Und am nächsten Tag merkt kein Mensch, dass du es getan hast.
 
 ---
 
 ## Säule 5: Verkauf
 
 > 🧪 **Bewusster Test (Patricia-Entscheidung 2026-08-28):** Diese zehn gehen auch in den **Feed**,
-> nicht nur in Stories und Mails. Die bisherige Regel „keine Verkaufs-Posts im Feed" wird hier
-> absichtlich aufgeweicht, weil sie etwas Neues ausprobieren will.
-> Das geht, weil kein einziger dieser Hooks ein Produkt, ein Programm oder einen Preis nennt —
-> sie benennen das Symptom und lassen die Entscheidung offen. Nach 2-3 Wochen an der Reichweite
-> und den Anfragen ablesen, ob es trägt.
+> nicht nur in Stories und Mails. Die Regel „keine Verkaufs-Posts im Feed" wird hier absichtlich
+> aufgeweicht. Das geht, weil kein einziger dieser Hooks ein Produkt, ein Programm oder einen Preis
+> nennt — sie benennen das Symptom und lassen die Entscheidung offen.
+> Nach 2-3 Wochen an Reichweite und Anfragen ablesen, ob es trägt.
 
-**5.1** — *Original: „Muss nicht härter arbeiten, muss aufhören Energie zu verschwenden."*
-> Wer will, dass fremde Frauen anfragen, muss aufhören, jeden Abend Bekannte anzuschreiben. Genau da fehlt die Energie, wo sie wirken würde.
+**5.1** ⟨Warmmarkt⟩
+> Wer will, dass Fremde von selbst anfragen, muss aufhören, jeden Abend dieselben Bekannten anzuschreiben. Genau dort geht die Kraft verloren, die woanders etwas bewegen würde.
 
-**5.2** — *Original: „Blende das Chaos aus und stell dir vor…"* (Original-Formulierung ist bei dir gesperrt)
-> Nimm dir 30 Sekunden und geh deinen nächsten Montag durch — den, an dem drei Frauen von selbst geschrieben haben. Was wäre da anders als heute?
+**5.2** ⟨Handy⟩
+> Nimm dir 30 Sekunden und geh den Montag durch, an dem dein Handy beim Frühstück in der Schublade liegt und dir das überhaupt nichts ausmacht. Was wäre da anders als heute?
 
-**5.3** — *Original: „Wir machen X komplizierter, als es ist."*
-> Wir machen das Sichtbarwerden viel komplizierter, als es ist. Die meisten Frauen brauchen keinen neuen Trend, sondern einen Satz, der sitzt.
+**5.3** ⟨Geld⟩
+> Die meisten Frauen im Network machen die Rechnung nie ganz auf. Und genau deshalb ändert sich Jahr für Jahr nichts.
 
-**5.4** — *Original: „Kein Wissensproblem, ein Entscheidungsproblem."*
-> Die meisten Frauen im Network glauben, ihnen fehle noch eine Schulung. In Wahrheit fehlt eine Entscheidung. Genau da liegt der Hund begraben.
+**5.4** ⟨DM-Akquise⟩
+> Die meisten glauben, ihnen fehle noch ein besserer Gesprächsleitfaden. In Wahrheit fehlt eine Entscheidung. Genau da liegt der Hund begraben.
 
-**5.5** — *Original: „Mir ist etwas aufgefallen bei denen, die es mühelos schaffen."*
-> Mir ist etwas aufgefallen bei den Frauen im Network, denen es scheinbar zufliegt: Keine von ihnen postet Produkte.
+**5.5** ⟨Freundschaften⟩
+> Mir ist etwas aufgefallen bei den Frauen, bei denen es wirklich läuft: Ihre Freundinnen schreiben noch zurück.
 
-**5.6** — *Original: „Ich weiss, das nervt. Aber du musst diese eine Sache akzeptieren."*
-> Ich weiss, das nervt. Aber wenn Fremde bei dir anfragen sollen, musst du akzeptieren, dass dein Firmenname allein niemanden anzieht.
+**5.6** ⟨Abhängigkeit⟩
+> Ich weiss, das nervt jetzt. Aber wenn du das hier ernst meinst, musst du akzeptieren, dass dir von dem, was du gerade aufbaust, nichts wirklich gehört.
 
-**5.7** — *Original: „Du brauchst weder Strategie noch mehr Informationen."*
-> Du brauchst für mehr Anfragen wahrscheinlich weder ein neues Reel-Format noch die nächste Schulung. Dir fehlt etwas ganz anderes.
+**5.7** ⟨Quote⟩
+> Du brauchst wahrscheinlich keinen besseren Monatsabschluss. Dir fehlt etwas ganz anderes.
 
-**5.8** — *Original: „Deine Energie ist zu wertvoll."*
-> Deine Abende sind zu wertvoll, um sie mit Nachrichten an Frauen zu verbringen, die nie geantwortet haben.
+**5.8** ⟨DM-Akquise⟩
+> Deine Abende sind zu wertvoll für Nachrichten an Frauen, die nie geantwortet haben.
 
-**5.9** — *Original: „Wenn du schneller vorankommen willst… sonst landest du bei…"*
+**5.9** ⟨Warmmarkt⟩
 > Wenn du in einem Jahr nicht wieder vor derselben Namensliste stehen willst, muss diesen Herbst etwas anderes anfangen. Sonst landest du dort, wo die meisten landen: beim leisen Aufhören, das niemand mitbekommt.
 
-**5.10** — *Original: „Blicke 90 Tage in die Zukunft."*
-> Geh mal 90 Tage weiter. Wenn im Dezember Frauen bei dir kaufen sollen, die dich heute noch nicht kennen, führt ab jetzt kein Weg an einer Entscheidung vorbei.
+**5.10** ⟨Geld⟩
+> Geh mal 90 Tage weiter. Wenn im Dezember unter dem Strich mehr stehen soll als dieses Jahr, führt ab heute kein Weg an einer Entscheidung vorbei.
 
 ---
 
-## Woher die Szenen kommen
+## Verteilung über die neun Probleme
 
-| Hook-Nummern | Symptom aus der Marktforschung |
-|---|---|
-| 1.1 · 2.1 · 4.5 · 5.1 · 5.8 · 5.9 | Warmmarkt leer, Namensliste durch (Problem 1) |
-| 2.1 · 5.8 | DM-Akquise, die sich falsch anfühlt (Problem 2) |
-| 4.2 | Handy als dritter Elternteil (Problem 3) |
-| 1.3 | Die Rechnung geht nicht auf (Problem 4) |
-| 1.2 · 4.6 · 4.9 | Freundschaften zerbrechen (Problem 6) |
-| 2.10 · 3.3 · 3.6 · 3.7 · 5.5 · 5.6 | Austauschbar unter Tausenden (Problem 8) |
-| 2.7 | Abhängigkeit von Firma und Account (Problem 9) |
+| Problem aus der Marktforschung | Hooks | Anzahl |
+|---|---|---|
+| 1 — Warmmarkt leer, Namensliste durch | 1.4 · 2.1 · 3.1 · 3.10 · 4.3 · 4.5 · 5.1 · 5.9 | 8 |
+| 3 — Handy als dritter Elternteil | 1.1 · 1.10 · 2.6 · 3.3 · 4.1 · 4.2 · 4.10 · 5.2 | 8 |
+| 6 — Freundschaften zerbrechen | 1.2 · 1.9 · 2.5 · 3.5 · 4.4 · 4.9 · 5.5 | 7 |
+| 2 — DM-Akquise fühlt sich falsch an | 1.5 · 2.2 · 3.4 · 4.8 · 5.4 · 5.8 | 6 |
+| 4 — Die Rechnung geht nicht auf | 1.3 · 2.3 · 3.2 · 4.6 · 5.3 · 5.10 | 6 |
+| 5 — Kartons im Keller, Quote im Nacken | 1.6 · 2.4 · 3.6 · 4.7 · 5.7 | 5 |
+| 9 — Ein Ban und alles ist weg | 1.8 · 2.7 · 3.8 · 5.6 | 4 |
+| 7 — Du darfst nicht sagen, was du weisst | 1.7 · 2.8 · 3.9 | 3 |
+| 8 — Austauschbar unter Tausenden | 2.10 · 3.7 | 2 |
+
+Die drei mit der grössten Content-Sprengkraft laut Bericht (Handy · Freundschaften · DM-Akquise) haben zusammen **21 Hooks**. In v1 waren es sechs.
 
 ## 🔗 Verwandte Notizen
 
