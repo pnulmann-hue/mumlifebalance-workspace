@@ -78,6 +78,29 @@ und es existiert dazu weder ein Verkaufstext noch ein einziger Hook.
 
 ---
 
+### 5 — Der Sprung ins Eigene (Nachtrag aus dem ChatGPT-Gegentest, 2026-08-28)
+
+Vier Probleme, die weder im Research-Bericht noch in der ersten Tabelle vorkamen. Alle betreffen die
+**Schwelle** zwischen „ich merke, dass es so nicht geht" und „ich fange etwas Eigenes an".
+
+| Problem | Statistiken / Belege | Deine Lösung |
+|---|---|---|
+| **Angst vor der Upline.** „Was sagt meine Sponsorin? Denken die, ich glaube nicht mehr an die Firma? Darf ich das überhaupt parallel?" | Keine Quelle — aus dem Modellwissen. Deckt sich mit dem „Familien"-Gefühl im Team aus dem Research-Bericht | **keine** — echte Lücke |
+| **Angst vor der nächsten Fehlinvestition.** Sie hat schon Produkte, Events, Tools bezahlt. Noch ein Versprechen löst Misstrauen aus, nicht Begeisterung | Keine Quelle. Passt zu AARP: 47 % verlieren Geld | Einwand für alle Verkaufstexte, kein eigenes Produkt |
+| **Sie hält ihre Fähigkeiten für normal.** Kann längst Content, Verkaufsgespräche, Community — und sucht trotzdem eine ganz neue Idee | Keine Quelle | Finde dein Thema (4 Quellen der Expertise) |
+| **„Wann denn bitte?"** Ein zweites Business klingt nach noch mehr Arbeit | Keine Quelle. Passt zu 66,2 % Mütter in Teilzeit | **Mama-CEO** |
+
+**Der wichtigste Fund: die Upline-Angst.** Sie ist ein Kaufhindernis, kein Problem, das ein Produkt
+löst — und sie erklärt möglicherweise, warum Leads zögern, obwohl sie den Schmerz erkennen. Gehört in
+die Einwandbehandlung jeder Salespage und jeder Mailsequenz, nicht in ein eigenes Angebot.
+
+**Methodischer Befund:** ChatGPT ist stark auf der **wirtschaftlich-psychologischen** Ebene
+(Loyalität, Selbstwert, Investitionsangst) und blind für die **soziale** (Freundschaften zerbrechen
+kam nicht vor). Der Research-Bericht war umgekehrt. Beide Quellen zusammen ergeben erst das
+vollständige Bild — keine allein reicht.
+
+---
+
 ## Blatt 2 · Qualifizierung
 
 | Frage | Antwort | Notizen |
