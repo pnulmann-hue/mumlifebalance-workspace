@@ -2918,6 +2918,18 @@ Von „geht heute sofort" bis „braucht einen Nachmittag Übung":
 | **8** | **Glanzfolie plotten** | `8002` + Plotter | Setup nötig | randscharfe Gold-Schriftzüge |
 | **9** | **Lindy's mit Wasser** | `7001`–`7003`, `7007` + Yupo | wird schnell Matsch | Wow-Flächen |
 
+> ### ⚠️ Korrektur 2.9.2026: Lindy's ist einfacher als hier zuerst stand
+>
+> Der Herstellerblog zeigt einen Weg, der **kein Wasser und kein Yupo** braucht:
+>
+> **Motiv mit dem Embossing-Kissen (`7010`) stempeln → Magicals-Pulver mit weichem Pinsel auftragen → überschüssiges abbürsten.** Ergibt einen weichen, schimmernden Auftrag.
+>
+> Das ist **dasselbe Prinzip wie bei den Perfect Pearls** — heisst: **12 Farben (8 Lindy's + 4 Perfect Pearls) über einen einzigen einfachen Weg.** Damit rutscht Lindy's von Platz 9 auf **Platz 4**, gleichauf mit den Perfect Pearls.
+>
+> *Unterschied bleibt: Perfect Pearls werden permanent, Lindy's sollten fixiert werden (Haarspray oder Fixativ).*
+>
+> Quellen und die vier Magicals-Wege: [[technik-quellen]]
+
 **Fang bei 1 an, nicht bei 9.** Die ersten vier brauchen kein Gerät, keine Vorbereitung und keine Übung — und drei davon kannst du auf jede Karte anwenden, die du sowieso machst.
 
 ---

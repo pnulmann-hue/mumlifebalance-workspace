@@ -74,7 +74,36 @@ Trocken mit dem Finger über die geprägte Fläche — bleibt nur auf den erhabe
 
 ## Lindy's Magicals (`7001`–`7003`, `7007`)
 
-*Noch keine Quellen abgelegt.*
+| Quelle | Sprache | Was drin ist |
+|---|---|---|
+| [YouTube-Video](https://www.youtube.com/watch?v=4d0B4xEYTbc) *(Patricia, 2.9.2026)* | ? | Inhalt offen — Claude kann Videos nicht lesen |
+| [„Just Sprinkle"-Technik (Lindy's Gang Blog)](https://lindysgang.blog/2016/01/07/just-sprinkle-magical-technique/) | 🇬🇧 Blog | ⭐ **Herstellerblog** — Fläche mit Wasser besprühen, Pulver trocken drüberstreuen |
+| [Multicolor Stamping mit Magicals (Lindy's Gang Blog)](https://lindysgang.blog/2020/10/20/multicolor-stamping-using-magicals-with-asia-part-1/) | 🇬🇧 Blog | ⭐ Mehrfarbig stempeln **ohne Stempelkissen** |
+| [Alle Magicals-Anleitungen (Lindy's Gang Blog)](https://lindysgang.blog/category/how-to/magicals/) | 🇬🇧 Blog | ⭐ die komplette How-to-Kategorie des Herstellers |
+| [Six Ways to Use Magicals (Sparkle Tart)](https://www.sparkletart.com/rsr/2014/10/six-ways-to-use-magicals-from-lindys-stamp-gang.html) | 🇬🇧 Blog | sechs Wege im Überblick |
+| [Magicals beim Scrapbooking (Miss Carries Creations)](https://misscarriescreations.com/2023/12/05/mixed-media-tricks-for-scrapbooking/) | 🇬🇧 Blog | Anwendung auf Album-Seiten |
+| [Easy stamping technique with Magicals](https://www.youtube.com/watch?v=PoDsjDPjlBE) · [6 Fun And Easy Ways](https://m.youtube.com/watch?v=0aSR_QQin_U) | 🇬🇧 Video | für Patricia |
+
+### ⭐ Die wichtigste Erkenntnis: Magicals gehen auch trocken mit dem Stempelkissen
+
+**Das ändert alles an der Einordnung.** Bisher stand hier, Lindy's sei die schwierigste Technik, weil man Wasser und Yupo braucht. Der Herstellerblog zeigt einen viel einfacheren Weg:
+
+> **Motiv mit dem Embossing-Kissen (`7010`) stempeln → Magicals-Pulver mit einem weichen Pinsel auftragen → überschüssiges sanft abbürsten.**
+>
+> Ergibt einen **weichen, schimmernden Farbauftrag** — kein Wasser, kein Yupo, kein Föhn.
+
+Das ist **genau dasselbe Prinzip wie bei den Perfect Pearls** (`7008`). Heisst praktisch: **du kannst 8 Lindy's-Farben und 4 Perfect Pearls über denselben einfachen Weg verwenden — 12 Farben, eine Technik.**
+
+Der Unterschied bleibt: Perfect Pearls werden permanent (Bindemittel), Lindy's bleiben empfindlich und sollten fixiert werden (Haarspray oder Fixativ).
+
+**Die vier Wege für Magicals, nach Aufwand:**
+
+| # | Weg | Braucht | Ergebnis |
+|---|---|---|---|
+| **1** | **Stempelkissen + Pinsel** ⭐ | `7010` + weicher Pinsel | weicher Schimmer auf dem Motiv — **der einfachste Weg** |
+| **2** | **Wassertankpinsel** | Pinsel mit Wassertank | direkt malen, **grösste Farbvariation** |
+| **3** | **„Just Sprinkle"** | Sprühflasche | Fläche einsprühen, Pulver drüberstreuen → wilde Flecken |
+| **4** | **Als Aquarell** | Palette + Yupo (`8001`) | kontrollierte Fläche, intensivste Farbe |
 
 ---
 
