@@ -107,9 +107,44 @@ Der Unterschied bleibt: Perfect Pearls werden permanent (Bindemittel), Lindy's b
 
 ---
 
-## Wax Paste (`7009`) · Gilding Flakes (`8003`) · Glossy Accents (`7012`)
+## Metallic Wax Paste (`7009`)
+
+| Quelle | Sprache | Was drin ist |
+|---|---|---|
+| [YouTube-Video](https://www.youtube.com/watch?v=8p-3oyxqxCY) *(Patricia, 2.9.2026)* | ? | Inhalt offen — Claude kann Videos nicht lesen |
+| [Gilding Wax auf Karten (Gathered)](https://www.gathered.how/papercraft/how-to-use-gilding-wax) | 🇬🇧 Blog | ⭐ **speziell fürs Kartenbasteln** — Blends und Akzente |
+| [How to use gilding wax (Crafter's Companion)](https://www.crafterscompanion.com/blogs/inspiration/how-to-use-gilding-wax) | 🇬🇧 Blog | ⭐ vom Hersteller deiner Gilding Flakes (`8003`) |
+| [What is Gilding Wax — Comprehensive Guide (Graphics Fairy)](https://thegraphicsfairy.com/what-is-gilding-wax/) | 🇬🇧 Blog | Grundlagen, Materialkunde |
+| [Detail mit Gilding Wax (Annie Sloan)](https://www.anniesloan.com/techniques/how-to-add-detail-with-gilding-wax/) | 🇬🇧 Blog | Technik auf Möbeln und Objekten — überträgt sich auf Karton |
+| [Gilding Wax selber machen (Graphics Fairy)](https://thegraphicsfairy.com/how-to-make-faux-metallic-rubbing-wax/) · [DIY-Variante](https://apapercraftworkshop.blogspot.com/2024/11/make-gilding-wax-diy.html) | 🇬🇧 Blog | falls die Dosen mal leer sind |
+
+### Was die Recherche ergeben hat (2.9.2026)
+
+**1 · Bestätigt: Prägungen sind die Paradedisziplin.**
+Mehrere Quellen sagen unabhängig dasselbe — Wax Paste funktioniert **besonders gut auf geprägten oder leicht erhabenen Flächen**, weil sie Tiefe und Dimension erzeugt. Genau das, was mit Patricias Prägeschablonen (5000er) möglich ist.
+
+**2 · Neu: Trocknungszeiten.**
+| | trocken (anfassbar) | polierbar |
+|---|---|---|
+| **Wax Paste** *(hat Patricia)* | ca. **1 Stunde** | nach **12 Stunden** |
+| einfaches Wax | ca. 4 Stunden | nach 4 Tagen |
+
+**→ Nach 12 Stunden mit einem weichen Tuch nachpolieren** — dann kommt der Metallglanz erst richtig raus. Das ist der Schritt, den man ohne Anleitung nicht macht.
+
+**3 · Neu: Farben mischen ist ausdrücklich empfohlen.**
+Zitat sinngemäss: *„Jede Farbe ist für sich schön, aber der Effekt lebt erst richtig auf, wenn man mehrere Töne auf einem Stück kombiniert."*
+→ **Bronze und Rosé-Gold auf derselben Fläche**, ineinander verrieben. Für Patricia besonders interessant, weil sie genau zwei Töne hat, die zusammenpassen.
+
+**4 · Der Glanz verblasst nicht und läuft nicht an** — im Gegensatz zu echtem Metall. Karten und Anhänger bleiben also dauerhaft schön.
+
+**5 · Auftragen mit Finger, Pinsel oder Tuch.** Finger für Kanten und Prägungen, Pinsel für kleine Details, Tuch für grosse Flächen.
+
+---
+
+## Gilding Flakes (`8003`) · Glossy Accents (`7012`)
 
 *Noch keine Quellen abgelegt.*
+*(Für die Flakes ist der Crafter's-Companion-Blog oben ebenfalls die Herstelleradresse.)*
 
 ---
 

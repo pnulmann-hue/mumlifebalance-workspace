@@ -2758,6 +2758,14 @@ Mit dem Finger etwas Bronze aufnehmen und **über die Schnittkante** einer Karte
 
 **Praktisch:** wenig nehmen, reicht extrem weit · **mit dem Finger geht es am besten** (Körperwärme macht die Paste weich) · Dose gut verschliessen · kurz antrocknen lassen, sonst verschmiert es.
 
+> **Zwei Dinge aus der Herstellerrecherche (2.9.), die man ohne Anleitung nicht macht:**
+>
+> **1 · Nach 12 Stunden nachpolieren.** Die Paste ist nach etwa einer Stunde anfassbar, aber **erst nach zwölf Stunden polierbar** — mit einem weichen Tuch drübergehen, dann kommt der Metallglanz richtig raus.
+>
+> **2 · Die zwei Töne mischen.** Bronze und Rosé-Gold auf derselben Fläche ineinander verreiben — der Effekt lebt laut Hersteller erst auf, wenn mehrere Töne zusammenkommen. Du hast genau zwei, die zusammenpassen.
+>
+> Und: Der Glanz **verblasst nicht und läuft nicht an**, anders als echtes Metall. Quellen: [[technik-quellen]]
+
 ---
 
 ### 7010 — Embossing-Medien, klar: 4 Stück ⭐⭐
