@@ -34,6 +34,18 @@ Baumstanze · Pilz · Blattstanze · Blattschablone · Blumenschablone (3 Varian
 ### Gonis-Techniken (Material im Haus)
 Betonpaste · Rubbel-Coll · Glitzer-Creme · Spitzencreme · Design Freezer · Glanz Decor
 
+### Distress Ink (Tim Holtz) — 29 Farben, bestätigt 2026-09-02
+Gruppiert für Farbkombis:
+- **Grau / Neutral:** Pumice Stone · Hickory Smoke · Stormy Sky · Antique Linen · Scattered Straw · Vintage Photo
+- **Braun / Terracotta:** Walnut Stain · Ground Espresso · Aged Mahogany · Fired Brick
+- **Grün:** Rustic Wilderness (Oliv) · Mowed Lawn · Evergreen Bough · Cracked Pistachio (Mint)
+- **Blau / Türkis:** Chipped Sapphire · Blueprint Sketch · Salty Ocean · Mermaid Lagoon
+- **Rot / Pink:** Festive Berries · Picked Raspberry · Kitsch Flamingo · Tattered Rose · Worn Lipstick
+- **Lila:** Wilted Violet · Victorian Velvet · Seedless Preserves
+- **Gelb / Orange / Amber:** Squeezed Lemonade · Spiced Marmalade · Fossilized Amber
+
+> **Technik-Merker:** Distress ist wasserlöslich → ideal für Wash / Smooshing / Blending. Für scharfe Motive über einem Wash braucht's ein **wasserfestes** schwarzes Kissen (Archival/StazOn) — steht noch nicht im Bestand.
+
 ---
 
 ## ❓ Offen — das brauche ich noch von dir
@@ -45,7 +57,7 @@ Foto pro Zeile genügt. Häkchen setze ich, wenn erfasst.
 - [ ] **Scrapbook-Forever-Stempel** — dito
 - [ ] **Alphabet-/Schrift-Stempel** — hast du welche?
 - [ ] **Hintergrund-/Textur-Stempel**
-- [ ] **Stempelkissen** — welche Farben? Pigment oder Dye? Distress?
+- [x] **Distress Ink** — 29 Farben erfasst (siehe „Bestätigt") · [ ] weitere Kissen (Pigment/Dye/**Archival wasserfest**) noch offen
 
 ### Stanzen & Werkzeuge
 - [ ] **Stanzen-Sammlung** komplett (die Schublade/Mappe fotografieren)
@@ -66,7 +78,7 @@ Foto pro Zeile genügt. Häkchen setze ich, wenn erfasst.
 
 ### Farbe
 - [ ] **Copic-Liste** — welche Nummern hast du wirklich
-- [ ] **Aquarell** — Stifte, Farben, Distress
+- [x] **Distress Ink** — 29 Farben erfasst · [ ] Aquarellstifte/-farben & weitere Marker noch offen
 - [ ] **Weitere Marker / Stifte**
 
 ### doTERRA-Verbindung
