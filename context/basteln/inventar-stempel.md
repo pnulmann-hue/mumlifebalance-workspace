@@ -79,7 +79,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 | Schablonen | 4001 |
 | Embossing-Folder | 5001 |
 | Punchboards & Werkzeuge | 6001 |
-| Farben & Kissen | 7001 |
+| Farben & Kissen | **7004** |
 
 ## ❓ Offene Kleinigkeiten (beim nächsten Griff in die Kiste)
 
@@ -2524,6 +2524,62 @@ Drei Glücks-Symbole, drei passende Texte. **Damit kannst du dreimal Glück wün
 **Aber die zweite Lesart ist die stärkere.** „Kein Pilz ist klein genug" heisst eigentlich: **auch das Kleine zählt.** Damit funktioniert er als Ermutigung an jemanden, der sich für unwichtig hält · als **Danke für eine kleine Geste**, die viel bedeutet hat · als Mentoring-Satz (kleine Schritte gelten auch) · und bei Kindern als „auch du bist gross genug".
 
 > **Bündel 13 läuft:** `1121`–`1128` erfasst, zwei Plätze frei bis `1130`.
+
+---
+
+## 🎨 7000er — Farben & Kissen
+
+> **Ablage:** Farben stehen zusammen in einer Kiste, **keine Gummi-Bündel** — die 10er-Bündel-Regel gilt nur für Clearstamps.
+
+### 7001 — Lindy's Magical Shaker: Oktoberfest Orange
+- **Typ:** Pigmentpulver mit Perlglanz · **Format:** Streudose (Shaker)
+- **Anwendung:** trocken auftupfen · **mit Wasser aktivieren** (Pinsel oder Sprühflasche) → schimmernde Aquarellfläche · in Gel-Medium mischen · sehr farbintensiv, wenige Körner reichen · **deckt auf dunklem Papier**
+- **Tags:** `herbst` `weihnachten` `advent` `geburtstag` `feier` `sommer` `neujahr` `kinder` `allgemein` `doterra-tauglich` `grossflächig`
+
+**Dafür ist diese Farbe gemacht: die Flamme (`1104`).** Unten gelb, oben dieses Orange — der Perlglanz macht das Feuer lebendig. Und mit dem **Baby-Drachen (`1127`)** davor ergibt das den Feuerstrahl.
+
+**Weiter:** Herbstblätter (`1060`) · Fliegenpilz (`1051`, `1093`) · Ilex-Beeren (`1057`) · Kerzenschein über Wichteln (`1041`, `1076`).
+
+**Und es löst eine Lücke:** Zu „Sei wie die Sonne…" (`1115`) und „Wende Dein Gesicht der Sonne zu" (`1084`) **fehlt dir ein Sonnenmotiv** — eine gewischte Orange-Fläche ersetzt es.
+
+**doTERRA-Brücke:** Orange ist die Akzentfarbe des doTERRA-Profils. Selbstgemachte Verpackungen passen damit farblich zur Marke.
+
+---
+
+### 7002 — Lindy's Magical Shaker: Alpine Ice Rose
+- **Typ:** Pigmentpulver mit Perlglanz · **Format:** Streudose (Shaker) · kühles Rosé mit Eis-Schimmer
+- **Tags:** `fruehling` `sommer` `muttertag` `hochzeit` `geburt` `taufe` `ostern` `kinder` `danke` `freundschaft` `geburtstag` `allgemein` `grossflächig` `zum-kolorieren`
+
+**Die Farbe für deine grösste Motivgruppe — Blüten und Schmetterlinge.** Zehn Schmetterlinge (`1074`, `1075`) liegen im Bestand; der Eis-Schimmer macht die Flügel glaubwürdig statt kitschig.
+
+**Dazu:** Kirschblüten (`1037`) · Blüten (`1027`, `1030`, `1055`) · Tulpen (`1044`) · **Flamingos (`1066`, `1098`)** — die naheliegendste Verwendung überhaupt · Ostereier (`1123`) · Herzen (`1083`).
+
+**Der kühle Ton ist der Vorteil.** Ein warmes Rosa wäre süsslich — „Alpine Ice" hat Blau darin und bleibt erwachsen. Damit taugt es auch für Frauen, die Rosa sonst nicht mögen.
+
+---
+
+### 7003 — Lindy's Magical Shaker: Lederhosen Laurel
+- **Typ:** Pigmentpulver mit Perlglanz · **Format:** Streudose (Shaker) · tiefes Lorbeer-Grün
+- **Tags:** `garten` `fruehling` `sommer` `weihnachten` `advent` `winter` `herbst` `kueche` `selbstgemacht` `danke` `allgemein` `grossflächig` `randakzent` `zum-kolorieren`
+
+**Deine Blatt- und Zweig-Farbe — und die vielseitigste der drei.**
+
+Farnzweige (`1083`) · Monstera und Farn (`1032`) · Gräser (`1061`) · **Tannenzweige und Ilex (`1049`, `1057`)** als Weihnachtsgrün mit Schimmer · **die sieben Unterwasser-Pflanzen (`1082`)** · Gartenzaun-Szene (`1077`) · **Kleeblatt (`1062`)** — mit Perlglanz wirkt es wie ein echtes Glücks-Symbol, passend zum Vers (`1117`) und zum Glückskind (`1121`).
+
+---
+
+### 🎨 Zwei fertige Paletten
+
+| Palette | Farben | Wofür |
+|---|---|---|
+| **Frühling / Muttertag** | `7002` Rosé + `7003` Laurel | Blüten über grünen Blättern |
+| **Weihnachten** | `7003` Laurel + `7001` Orange | Tannengrün mit Kerzenschein und Beeren |
+
+**`7001` und `7002` gehören nicht zusammen** — Orange ist Herbst und Feuer, Rosé ist Frühling. Nicht auf derselben Karte.
+
+> ⚠️ **Zwei Technik-Regeln für Magicals:**
+> - **Immer auf einem Reststreifen testen** — nass wirkt die Farbe viel dunkler als trocken.
+> - **Nicht für Trauerkarten** und nicht für sehr schlichte, ruhige Karten. Perlglanz braucht Fläche und Kontrast, sonst wirkt es unruhig.
 
 ---
 
