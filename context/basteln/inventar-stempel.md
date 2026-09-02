@@ -80,7 +80,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 | Schablonen | 4001 |
 | Embossing-Folder | 5001 |
 | Punchboards & Werkzeuge | 6001 |
-| Farben & Kissen | **7008** |
+| Farben & Kissen | **7013** |
 | Papier & Folien | **8004** |
 
 ## ❓ Offene Kleinigkeiten (beim nächsten Griff in die Kiste)
@@ -93,6 +93,11 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 | `1112` | Artikelnummer? — ist eine **Shop**-Verpackung, nicht Kalender → sf-lookup möglich |
 | `1124` | zweiter Textstempel nicht lesbar (Bonjour? Time to say…?) |
 | `1126` | Tierart — Eule, Vogel oder Wichtel? |
+| `7005` | StazOn-Farbe(n) ablesen |
+| `8001` | Yupo-Bogengrösse und Grammatur |
+| **5000er** | hast du **Embossing-Folder**? Mit der Wax Paste (`7009`) wären sie viel wert |
+| **3000er** | hast du **einzelne Stanzen** ohne zugehörige Stempel? |
+| `7011` | **Distress Inks oder Oxides** vorhanden? Wären mit der Glaze ein Paar |
 
 ---
 
@@ -2644,22 +2649,33 @@ Damit kannst du markenkonforme Anhänger und Verpackungen machen, ohne zu suchen
 
 ---
 
-### 7006 — Embossing-Zubehör (Pulver + Heissluftföhn + Embossing-Kissen)
-- **Bestandteile:** Embossing-Pulver *(Farben noch nachtragen)* · Heissluftföhn · Embossing-Kissen (VersaMark-Typ)
+### 7006 — Embossing-Zubehör: 8 Pulverfarben + Heissluftföhn + Kissen
+- **Pulverfarben (vollständig erfasst 2.9.):** **Clear/transparent** · **Weiss** · **Black** · **Schwarz mit Glitter** · **Schwarz-Weiss** (Sprenkel) · **Princess Pink** · **Blau glänzend** · **Rot glänzend**
+- **Dazu:** Heissluftföhn · Embossing-Kissen (VersaMark-Typ)
 - **Ablauf:** mit Embossing-Kissen stempeln → Pulver darüber streuen → abklopfen → mit Föhn schmelzen → erhabener Glanz
 
-**Die Technik, die deine Karten am schnellsten „gekauft" aussehen lässt** — und im Bestand an vier Stellen ausdrücklich gebraucht:
+> ⚠️ **KEIN Silber, KEIN Gold, KEIN Kupfer.** Beides lässt sich aber besser lösen:
+>
+> **Trauerkarten → WEISS auf grauem Karton.** Das ist würdiger als Silber: weisser Glanz auf Grau wirkt still und klar, ohne festlichen Beiklang. Für Sterne (`1016`), kahle Zweige (`1077`), Katzen-Silhouetten (`1007`). *Zweitbeste Option: **Pewter** aus den Perfect Pearls (`7008`) — gedeckt metallisch statt glitzernd.*
+>
+> **Gold (Münzen `1081`/`1096`, Weihnachtssterne) → drei andere Wege:** Gold-Glanzfolie (`8002`) · **Heirloom Gold** (`7008`, mit dem Kissen aufgetupft, ohne Föhn) · **Wax Paste Bronze** (`7009`, mit dem Finger drübergerieben).
 
-| Einsatz | Sets |
+**Was du mit den acht Farben, die du hast, am besten machst:**
+
+| Farbe | Stärke |
 |---|---|
-| **Silber auf Grau für Trauerkarten** | Sterne `1016` · kahle Zweige `1077` · Katzen `1007` |
-| **Gold für Münzen** | Goldesel `1081` · Sparschwein `1096` |
-| **Gold/Kupfer für Silhouetten** | Glückskind `1121` · Vögel `1070` · Flamme `1104` |
-| **Auf Alcohol-Ink-Flächen** | Alternative zu StazOn, wenn erhaben gewünscht |
+| **Clear** | ⭐ Der Universalist. Über ein farbig gestempeltes Motiv gestreut gibt es **Glanz, ohne die Farbe zu ändern** — funktioniert bei jedem Motiv im Bestand |
+| **Weiss** | auf dunklem oder grauem Karton — **Trauer**, Winter, Schnee, elegante Hochzeit |
+| **Black** | harte Kontraste, **Silhouetten** (`1070`, `1104`, `1121`), auf Alcohol-Ink-Flächen |
+| **Schwarz-Glitter** | Silvester und Neujahr · 80er-Optik mit `7007` · Party-Einladungen |
+| **Schwarz-Weiss** | der ungewöhnlichste — Terrazzo-Optik, moderne schlichte Karten, Handy-Rahmen (`1122`) |
+| **Princess Pink** | Kinder und Mädchen — Igel mit Ballons (`1078`), Schmetterlinge, Ostereier (`1123`) |
+| **Blau glänzend** | Winter und Weihnachten · Wasser-Motive (`1064`, `1071`, `1082`) · Jungen, Geburt |
+| **Rot glänzend** | Weihnachten (Ilex-Beeren `1057`, Wichtelmützen `1041`/`1076`) · Herzen (`1083`) · Fliegenpilz-Köpfe (`1051`, `1093`) |
 
-**Klar-Pulver ist der unterschätzte Teil:** über ein farbig gestempeltes Motiv gestreut gibt es Glanz, **ohne die Farbe zu ändern**.
+**Praktisch:** Papier vorher mit **Antistatik-Kissen** abwischen · Föhn nicht zu nah halten · überschüssiges Pulver zurück ins Döschen (wiederverwendbar) · abkühlen lassen, nicht anfassen.
 
-**Praktisch:** Papier vorher mit Antistatik-Kissen abwischen · Föhn nicht zu nah halten · überschüssiges Pulver zurück ins Döschen (wiederverwendbar) · abkühlen lassen, nicht anfassen.
+*Falls du irgendwann nachkaufst: **Silber und Gold** wären die zwei sinnvollsten Ergänzungen. Kein Muss — für jeden Fall hast du eine Alternative.*
 
 ---
 
@@ -2684,6 +2700,284 @@ Damit kannst du markenkonforme Anhänger und Verpackungen machen, ohne zu suchen
 |---|---|---|
 | **Erwachsen / edel** | Gray + Copper | Jubiläum · runde Geburtstage · **Männer** (mit `1113`, `1120`) |
 | **Nacht / Winter** | Midnight Rendezvous + Gray + Sterne `1016` | Weihnachten und Neujahr in dunkler Optik statt Rot-Grün |
+
+---
+
+### 7008 — Ranger Perfect Pearls: Cappuccino · Heirloom Gold · Forever Violet · Pewter ⭐⭐
+- **Typ:** Pigmentpulver **mit eingebautem Bindemittel** · 4 Streudosen
+- **Anwendung:**
+  1. **Mit dem Embossing-Kissen (`7006`) stempeln, dann Pulver auftupfen** → haftet nur am Medium → **Perlglanz-Motiv ohne Föhn, ohne Schmelzen**
+  2. Mit Wasser aktivieren → **permanente** Perlglanz-Aquarellfarbe
+  3. Trocken auf feuchtes Papier tupfen
+- **Tags:** `trost` `hochzeit` `jubilaeum` `konfirmation` `geburtstag` `danke` `muttertag` `weihnachten` `advent` `winter` `herbst` `abschluss` `maenner` `allgemein` `grossflächig` `randakzent`
+
+**Der entscheidende Unterschied zu deinen Lindy's:**
+
+| | Lindy's `7001`–`7003`, `7007` | Perfect Pearls `7008` |
+|---|---|---|
+| Aufbau | reines Pigment | Pigment **+ Bindemittel** |
+| Nach dem Trocknen | reaktivierbar, braucht Fixativ | **permanent und wasserfest** |
+| Glanz | knallig, intensiv | subtiler, perlig |
+| Am besten für | Wow-Flächen | **edle Zurückhaltung**, alles was angefasst wird |
+
+**⭐ Der Trick, der das Set besonders macht:** Motiv mit dem Embossing-Kissen stempeln, Pulver darauf tupfen — es haftet nur am Medium. **Perlglanz ohne Heissluftföhn, ohne Wartezeit.** Die schnellste Metallic-Technik in deinem Bestand.
+
+**⭐ Pewter ist der Fund: deine Trauerkarten-Farbe.** Zinngrau, gedeckt metallisch, **nicht glitzernd**. Damit gehen Sterne (`1016`), kahle Zweige (`1077`) und Katzen-Silhouetten (`1007`) auf Grau, ohne festlich zu werden. Zusammen mit dem **weissen Embossing-Pulver** hast du damit zwei würdige Wege — Silber brauchst du nicht.
+
+**Forever Violet ist deine erste Violett-Farbe überhaupt** — und schliesst **Konfirmation und Firmung** (die liturgische Farbe dafür; den Anlass hattest du im Tag-Vokabular, aber keine Farbe). Dazu Advent, Lavendel und Flieder (`1027`, `1030`, `1055`), und Trauer zusammen mit Pewter.
+
+**Heirloom Gold ist antikes Gold, nicht Neu-Gold** — für Vintage-Optik, wo die Glanzfolie (`8002`) zu spiegelnd wäre: kahle Zweige (`1077`), Ornament-Hintergrund (`1011`), Zierrahmen der Spruch-Stempel, Eiffelturm (`1124`). **Und es ist einer deiner drei Gold-Wege**, weil im Embossing-Pulver keines dabei ist.
+
+**Cappuccino ist deine Brand-Farbe Creme in Pulverform.**
+
+**Drei neue Paletten:** Würdig/Trauer *(Pewter + Forever Violet)* · Vintage *(Heirloom Gold + Cappuccino)* · Konfirmation *(Forever Violet + Heirloom Gold)*.
+
+---
+
+### 7009 — CraftEmotions Metallic Wax Paste: Bronze & Rose Gold ⭐⭐⭐
+- **Typ:** Metallic-Wachspaste · 2 Dosen
+- **Anwendung:** mit **Finger, Schwämmchen oder Tuch** auftragen und verreiben. **Kein Wasser, kein Kleber, kein Hitzegerät.** Trocknet aus, wird permanent.
+- **Für:** Papier · Karton · **Kanten** · erhabene Prägungen · Stanzteile · getrocknete Texture-Paste · Holz · Metall · Ton
+- **Tags:** `allgemein` `weihnachten` `advent` `hochzeit` `jubilaeum` `geburtstag` `herbst` `winter` `danke` `muttertag` `maenner` `feier` `randakzent` `sofort-einsetzbar`
+
+**⭐ Der schnellste Aufwertungs-Trick in deinem ganzen Material — wegen einer einzigen Sache: der Kanten-Technik.**
+
+Mit dem Finger etwas Bronze aufnehmen und **über die Schnittkante** einer Karte, einer Tüte oder eines Anhängers reiben. **Zehn Sekunden pro Teil**, und das Ding sieht gerahmt und fertig aus statt nach ausgeschnittenem Papier. Es funktioniert bei **jedem** Projekt, egal welches Motiv:
+
+- Kartenkanten und Passepartout-Lagen
+- **Punchboard-Tüten und -Boxen** — Kanten und Falze
+- Anhänger · Lesezeichen (`1125`) · Rezeptkarten (`1085`)
+- Stanzteil-Kanten
+
+**Zweiter Haupteinsatz: erhabene Strukturen hervorheben.** Die Paste bleibt nur auf den **Spitzen**, die Vertiefungen bleiben dunkel — dadurch Tiefe. Dafür gemacht: **Embossing-Folder-Prägungen** *(der 5000er-Block ist noch leer — falls du Folder hast, sind sie mit dieser Paste doppelt so wertvoll)*, getrocknete Struktur-Paste, Holz, Ton.
+
+**Was sie einzigartig macht:** Sie ist die **einzige Metallic-Option, die du spontan zum Schluss** auf ein fertiges Projekt geben kannst. Alle anderen musst du einplanen.
+
+**Bronze ist der Ton, der dir gefehlt hat** — wärmer als Silber, dunkler als Gold. Für **Männer-Karten** (`1113`, `1120`, `1081`), Herbst (`1060`), Vintage (`1077`, `1011`) und **Weihnachten in gedeckter Optik**.
+
+**Praktisch:** wenig nehmen, reicht extrem weit · **mit dem Finger geht es am besten** (Körperwärme macht die Paste weich) · Dose gut verschliessen · kurz antrocknen lassen, sonst verschmiert es.
+
+---
+
+### 7010 — Embossing-Medien, klar: 4 Stück ⭐⭐
+- **Inhalt:** **Embossing Stamp Pad clear** · **VersaMark Watermark** (Tsukineko) · **Distress Embossing Ink, acid free** (Ranger — das passende Kissen zur Glaze `7011`) · **Embossing It Dabber clear** (Ranger — Schwamm-Applikator statt Kissen)
+- **Typ:** farblos, klebrig, langsam trocknend
+- **Drei Anwendungen:**
+  1. **Embossing** — stempeln, Pulver (`7006`/`7011`) drauf, mit Föhn schmelzen
+  2. **Perfect Pearls** (`7008`) — stempeln, Pulver auftupfen → Perlglanz **ohne Föhn**
+  3. **Watermark solo** — auf **farbigen** Karton stempeln, kein Pulver → Ton-in-Ton
+
+**Das sind die Medien, die deine 15 Pulver überhaupt nutzbar machen.** Ohne sie liegt das Pulver nirgends.
+
+**Vier Stück sind kein Luxus — jedes hat seinen Platz:**
+
+| Medium | Wofür |
+|---|---|
+| **Stamp Pad + VersaMark** | gestempelte Motive — eines für grosse Flächen, eines für kleine, ohne Wechseln |
+| **Distress Embossing Ink** | speziell auf die **Distress Glaze (`7011`)** abgestimmt |
+| **Embossing It Dabber** | ⭐ **kein Kissen, ein Schwamm-Applikator** — für Flächen und unregelmässige Formen, wo ein Kissen nicht hinkommt |
+
+**Der Dabber ist der Weg zu ganzflächigem Embossing:** über die Kartenfront wischen, Pulver drauf, föhnen → eine komplett glänzende oder glasige Fläche **ohne einen einzigen Stempel**. Auch für Kanten, Stanzteile, Ränder von Punchboard-Tüten und dreidimensionale Sachen.
+
+**⭐ Und die dritte Anwendung kennen viele nicht: Watermark solo.**
+
+VersaMark **ohne Pulver** auf **farbigen** Karton gestempelt gibt einen dezenten, etwas dunkleren Abdruck in derselben Farbe — wie ein Wasserzeichen. Kein Pulver, kein Föhn, keine zweite Farbe.
+
+**Dafür hast du genau die richtigen Stempel:**
+- **Ornament-Hintergrund (`1011`)** — ganzflächig auf farbigem Karton → elegantes Ton-in-Ton-Muster
+- **Hintergrund-Kreise (`1009`)** — dasselbe, subtiler
+- Gartenzaun und Zweige (`1077`) · Farnzweige (`1083`) · Unterwasser-Pflanzen (`1082`) — als leiser Hintergrund
+- Punktier-Blüten (`1019`, `1060`, `1062`, `1083`)
+
+**Warum das praktisch ist:** Du bekommst Tiefe und Struktur, **ohne eine weitere Farbe einzuführen** — genau das Problem, das man bei Karten dauernd hat. Und es ist die **einfachste Technik in deinem Bestand**: stempeln, fertig.
+
+**Praktisch:** Reste sofort vom Stempel wischen (VersaMark ist klebrig und zieht Staub) · auf **porösem** Papier wirkt der Watermark-Effekt am stärksten, auf Glossy kaum.
+
+> **Bündel `7001`–`7010` ist damit voll.**
+
+---
+
+### 7011 — Distress Embossing Glaze: 7 Farben (Ranger / Tim Holtz) ⭐⭐
+- **Typ:** **transluzentes** Embossing-Pulver mit glasiger Optik · 7 Döschen
+- **Inhalt:** **Vintage Photo** (Sepia) · **Walnut Stain** (Nussbraun) · **Fossilized Amber** (Bernstein) · **Crackling Campfire** (Feuerton) · **Kitsch Flamingo** (Pink) · **Hickory Smoke** (Grau-Blau) · **Weathered Wood** (verwittertes Blaugrau)
+- **Tags:** `herbst` `winter` `weihnachten` `trost` `geburtstag` `jubilaeum` `sommer` `maenner` `danke` `kinder` `ruhestand` `allgemein` `grossflächig` `randakzent`
+
+**Eine andere Sorte Pulver als deine acht in `7006` — und der Unterschied entscheidet, wofür du es nimmst:**
+
+| | Wirkung | Wofür |
+|---|---|---|
+| **Normales Pulver** `7006` | **deckt ab** — was drunter war, ist weg | saubere Motive auf hellem Papier |
+| **Distress Glaze** `7011` | **transluzent, glasig** — Untergrund scheint durch | **Flächen und Alterungs-Effekte** |
+
+**⭐ Zwei Farben treffen Motive in deinem Bestand punktgenau:**
+
+- **Crackling Campfire** → die **Flamme (`1104`)** und der **Baby-Drache (`1127`)**. Der Name ist Programm: glasig aufgeschmolzen sieht das nach echter Glut aus. Mit Oktoberfest Orange (`7001`) als Untergrund darunter.
+- **Kitsch Flamingo** → die **Flamingos (`1066`, `1098`)**. Auch hier sagt der Name alles.
+
+**⭐ Und zwei schliessen die Trauer-Lücke:** **Hickory Smoke** und **Weathered Wood** sind gedeckte Grau- und Blaugrautöne. Damit hast du neben **Weiss** (`7006`) und **Pewter** (`7008`) einen dritten würdigen Weg — Ton-in-Ton auf grauem Karton, glasig statt glitzernd.
+
+**Vintage Photo und Walnut Stain sind deine Sepia-Töne** — für alles Alte und Ruhige: kahle Zweige (`1077`), Ornament-Hintergrund (`1011`), Eiffelturm (`1124`), die Zierrahmen der Spruch-Stempel. Und für **Männer-Karten** (`1113`, `1120`) zusammen mit Wax Paste Bronze (`7009`).
+
+**Fossilized Amber** → Herbst (`1060`), Fliegenpilz (`1051`, `1093`), Kerzenschein, Ilex-Beeren (`1057`).
+
+**Damit stehen deine Embossing-Pulver bei 15** — 8 deckende + 7 transluzente.
+
+> ❓ **Das sind alles Distress-Farbnamen.** Vintage Photo, Walnut Stain, Weathered Wood und Hickory Smoke sind die Standardfarben der Distress-Familie. **Hast du auch Distress Inks oder Distress Oxides?** Falls ja, sind sie mit dieser Glaze ein Paar: Fläche mit Distress Ink wischen, Glaze in derselben Farbe drüber → die Farbe wird tiefer und bekommt Glanz.
+
+> **Technik:** Glaze braucht **etwas mehr Hitze** als normales Pulver und wird schöner, wenn du länger föhnst — dann verläuft es glatter. Zwei Schichten übereinander (schmelzen, wieder Kissen, wieder Pulver) geben eine dicke Glasur mit Craquelé.
+
+---
+
+### 7012 — Ranger Glossy Accents: klares 3D-Medium ⭐⭐⭐
+- **Typ:** glasklares, dickflüssiges Medium in der Tube mit Feinspitze — trocknet **erhaben und glasklar**
+- **Trocknung:** 1–3 Stunden. Blasen mit einer Nadel aufstechen, solange es feucht ist.
+- **Tags:** `allgemein` `kinder` `geburtstag` `weihnachten` `sommer` `fruehling` `hochzeit` `danke` `selbstgemacht` `randakzent` `sofort-einsetzbar`
+
+**⭐ Das ist der Detail-Trick, auf den dein ganzer Tier-Bestand wartet: ein Glanzpunkt aufs Auge.**
+
+Du hast auffallend viele **Comic-Tiere mit grossen Augen** — und ein einziger Tropfen macht sie **lebendig** statt gemalt. Zwei Sekunden pro Figur, und es ist der grösste optische Sprung, den ein einzelnes Material in deinem Bestand hergibt:
+
+Hamster (`1089`) · Kamel (`1092`) · Schildkröte (`1095`) · Kuh (`1101`) · Katze (`1103`) · Frosch mit Brille (`1125`) · Baby-Drache (`1127`) · Igel (`1078`) · Esel (`1081`, `1086`) · Biber (`1091`) · Koala (`1099`) · Vögelchen (`1102`) · Mini-Tierchen (`1093`) · Meerestiere (`1071`). Beim schlafenden Elefanten (`1087`) auf die Nase statt aufs Auge — er hat sie zu.
+
+**Weitere Stellen, wo ein Glanztropfen sofort wirkt:**
+- **Beeren** — Ilex (`1057`), Zweig mit Beeren (`1070`), Ameisen-Früchte (`1088`), Erdbeere (`1093`)
+- **Wassertropfen** auf Blüten und Blättern (`1030`, `1055`, `1074`, `1083`)
+- **Blasen** in der Unterwasserwelt (`1082`) und beim Segelboot (`1071`)
+- **Münzen** (`1081`, `1096`) als Glasur über Gold
+- **Ostereier** (`1123`) — der Glanzpunkt macht sie plastisch
+- **Luftballons** (`1078`) — der klassische Lichtreflex
+- Nasen aller Tiere · Sektflasche und Gläser (`1013`, `1072`)
+
+**Zweite Verwendung: als Kleber.** Hält Pailletten, Halbperlen und Steinchen besser als jeder Flüssigkleber — und bleibt unsichtbar, weil es glasklar trocknet.
+
+**Dritte Verwendung: als Glasur über Alcohol Ink (`7004`).** Eine Fläche dünn überziehen → die Farben wirken tiefer, es sieht emailliert aus. Auf Domino-Steinen und Anhängern der Standard-Abschluss.
+
+> **Praktisch:** sparsam dosieren, es verläuft nach · Trocknungszeit einplanen, nicht stapeln · Spitze abwischen und Kappe fest zu, sie verklebt sonst · **nicht auf Trauerkarten** — Glanz passt dort nicht.
+
+---
+
+## 🧪 Wofür ist dieses ganze Zeug? — Die Technik-Anleitung
+
+> **Patricia am 2.9.: „Von all dem Zeugs ab den Alcohol Inks habe ich keinen Schimmer, für was ich die Dinge nutzen kann."**
+>
+> Deshalb dieser Abschnitt. Er erklärt nicht die Produkte, sondern **die vier Prinzipien**, aus denen sich alles ableitet — und in welcher Reihenfolge du anfängst.
+
+---
+
+### Es gibt nur vier Prinzipien
+
+Alle vierzehn Farb- und Effekt-Materialien funktionieren nach einem von vier Prinzipien. Wenn du die kennst, brauchst du keine Anleitung mehr.
+
+**1 · KLEBRIG MACHEN, DANN PULVER ODER FOLIE DRAUF**
+
+Du machst eine Stelle klebrig, und etwas haftet darauf. Das ist es. Klebrig machen kannst du mit:
+- **Embossing-Kissen** (`7010`) — gestempeltes Motiv wird klebrig
+- **Embossing-Dabber** (`7010`) — ganze Fläche wird klebrig
+- **Doppelseitiges Klebeband** oder geplottete Klebefolie
+
+Und darauf haftet dann:
+- **Embossing-Pulver** (`7006`) → mit Föhn schmelzen → erhaben und glänzend
+- **Distress Glaze** (`7011`) → mit Föhn schmelzen → erhaben und **glasig-durchscheinend**
+- **Perfect Pearls** (`7008`) → **kein Föhn** → perliger Glanz
+- **Gilding Flakes** (`8003`) → überschüssiges wegbürsten → gebrochene Metallfläche
+- **Glanzfolie** (`8002`) → andrücken, abziehen → spiegelndes Gold
+
+**Ein Prinzip, sechs Materialien.** Der Unterschied ist nur, wie es hinterher aussieht.
+
+**2 · WASSER AKTIVIERT PIGMENT**
+
+Pulver plus Wasser wird Farbe.
+- **Lindy's Magicals** (`7001`–`7003`, `7007`) → schimmernde Aquarellfläche, bleibt reaktivierbar
+- **Perfect Pearls** (`7008`) → dasselbe, aber wird **permanent**
+- **Alcohol Inks** (`7004`) → das kennst du schon
+
+**3 · MIT DEM FINGER REIBEN**
+
+- **Wax Paste** (`7009`) → auf Kanten und erhabene Strukturen. Kein Wasser, kein Kleber, kein Föhn.
+
+**4 · TROPFEN AUFSETZEN**
+
+- **Glossy Accents** (`7012`) → erhabener Glastropfen. Trocknet 1–3 Stunden.
+
+---
+
+### In dieser Reihenfolge anfangen
+
+Von „geht heute sofort" bis „braucht einen Nachmittag Übung":
+
+| # | Technik | Material | Aufwand | Was es bringt |
+|---|---|---|---|---|
+| **1** | **Kante reiben** | `7009` Wax Paste | **10 Sekunden**, nur Finger | Karte sieht gerahmt und fertig aus |
+| **2** | **Glanzpunkt aufs Auge** | `7012` Glossy Accents | **2 Sekunden** pro Figur | Comic-Tiere werden lebendig |
+| **3** | **Watermark solo** | `7010` VersaMark | stempeln, fertig | Ton-in-Ton-Hintergrund ohne zweite Farbe |
+| **4** | **Perfect Pearls auftupfen** | `7010` + `7008` | stempeln, tupfen, **kein Föhn** | Perlglanz-Motiv |
+| **5** | **Klassisch embossen** | `7010` + `7006` | stempeln, Pulver, **Föhn** | erhabener Glanz — braucht Übung mit Föhn-Abstand |
+| **6** | **Distress Glaze** | `7010` + `7011` | wie 5, mehr Hitze | glasige Alterungs-Optik |
+| **7** | **Gilding Flakes** | `8003` + Kleber | krümelt, braucht Geduld | Vintage-Vergoldung |
+| **8** | **Glanzfolie plotten** | `8002` + Plotter | Setup nötig | randscharfe Gold-Schriftzüge |
+| **9** | **Lindy's mit Wasser** | `7001`–`7003`, `7007` + Yupo | wird schnell Matsch | Wow-Flächen |
+
+**Fang bei 1 an, nicht bei 9.** Die ersten vier brauchen kein Gerät, keine Vorbereitung und keine Übung — und drei davon kannst du auf jede Karte anwenden, die du sowieso machst.
+
+---
+
+### 🎯 Erstes Projekt: eine Karte, drei neue Techniken, 15 Minuten
+
+Ohne Föhn, ohne Yupo, ohne Sauerei:
+
+1. **Farbigen oder grauen Karton** als Basis nehmen
+2. **Ornament-Hintergrund (`1011`) mit VersaMark** (`7010`) draufstempeln — kein Pulver. Ergibt ein Ton-in-Ton-Muster. **→ Technik 3**
+3. **Ein Tier stempeln** — Katze (`1103`), Hamster (`1089`) oder Kuh (`1101`) — in Schwarz auf weissem Papier, mit Copics kolorieren, ausschneiden, aufkleben
+4. **Ein Tropfen Glossy Accents (`7012`) aufs Auge.** Trocknen lassen. **→ Technik 4**
+5. **Kanten mit Wax Paste Bronze (`7009`) abreiben** — die Kartenkante und die Kante des aufgeklebten Motivs. **→ Technik 1**
+6. Spruch dazu, fertig
+
+**Danach weisst du, wie sich drei Materialien anfühlen** — und hast eine Karte, die aussieht wie gekauft.
+
+---
+
+### 🎨 Und die beste Investition: ein Musterbogen
+
+**Mach dir einmal einen Musterbogen.** Ein A4-Karton, darauf jedes Pulver, jede Farbe, jede Paste einmal aufgetragen und **daneben mit Bleistift beschriftet.**
+
+Warum das mehr wert ist als jede Anleitung: **Du siehst dann, was du hast.** Die Namen sagen nichts — „Fossilized Amber" und „Walnut Stain" kann sich niemand vorstellen. Ein Farbfleck mit Beschriftung dagegen entscheidet in zwei Sekunden.
+
+**Mach zwei Bögen:**
+- einen auf **weissem** Karton
+- einen auf **grauem oder farbigem** Karton
+
+Weil dieselbe Farbe auf verschiedenen Untergründen völlig anders aussieht — besonders die transluzente Distress Glaze (`7011`) und die Perlglanz-Pulver.
+
+**Das ist auch für mich wichtig:** Ich kenne die Produktnamen, aber ich sehe deine Farben nicht. Wenn du die Musterbögen fotografierst, kann ich dir bei jeder Karte sagen, welche Farbe konkret passt — statt nur „ein warmes Braun".
+
+---
+
+## 🕯️ Trauerkarten — drei würdige Wege
+
+Ohne Silber-Pulver, dafür mit drei besseren Optionen:
+
+| Weg | Material | Wirkung |
+|---|---|---|
+| **Weiss embossen auf Grau** | `7006` | still und klar, kein festlicher Beiklang — **der klarste Weg** |
+| **Pewter** | `7008` | gedeckt metallisch, nicht glitzernd — mit dem Kissen aufgetupft, ohne Föhn |
+| **Hickory Smoke / Weathered Wood** | `7011` | glasig, Ton-in-Ton auf grauem Karton |
+
+Dazu: **kein Glitzer, mindestens die Hälfte der Karte leer, Grundton Creme/Weiss/Grau.** Motive: Sterne (`1016`), kahle Zweige (`1077`), Katzen-Silhouetten (`1007`), Flamme als Kerze (`1104`). Sprüche: `1007` · `1023` · `1033` · `1035` · `1053` · `1100`.
+
+---
+
+## ✨ Deine sechs Metallic-Techniken — welche wann
+
+| Technik | Set | Wirkung | Braucht | Am besten für |
+|---|---|---|---|---|
+| **Embossing-Pulver** | `7006` | erhaben, körnig | Kissen + **Föhn** | gestempelte Motive · **Trauer in Weiss** |
+| **Perfect Pearls** | `7008` | perlig, permanent | Kissen *(kein Föhn)* | **schnelle** Motive · **Trauer in Pewter** · Gold-Ersatz |
+| **Lindy's Magicals** | `7001`–`7003`, `7007` | schimmernd, intensiv | Wasser + Fixativ | Wow-Flächen, Verläufe |
+| **Glanzfolie Gold** | `8002` | flach, spiegelnd, randscharf | **Kleber / Plotter** | Schriftzüge, Rahmen, Linien |
+| **Gilding Flakes** | `8003` | gebrochen, Craquelé | Kleber | Teilflächen, Vintage-Vergoldung |
+| **Wax Paste** | `7009` | seidig auf Struktur | **nur Finger** | **Kanten** · Prägungen · spontan zum Schluss |
+
+**Nie mehr als zwei davon auf einer Karte.** Metallglanz konkurriert mit sich selbst — zwei Techniken wirken abgestimmt, drei wirken zufällig.
 
 ---
 
