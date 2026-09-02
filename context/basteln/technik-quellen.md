@@ -145,7 +145,8 @@ Zitat sinngemäss: *„Jede Farbe ist für sich schön, aber der Effekt lebt ers
 
 | Quelle | Sprache | Was drin ist |
 |---|---|---|
-| [YouTube-Video](https://www.youtube.com/watch?v=EC8XVt-SkKQ) *(Patricia, 2.9.2026)* | ? | Inhalt offen — Claude kann Videos nicht lesen |
+| [YouTube-Video 1](https://www.youtube.com/watch?v=EC8XVt-SkKQ) *(Patricia, 2.9.2026)* | ? | Inhalt offen — Claude kann Videos nicht lesen |
+| [YouTube-Video 2](https://www.youtube.com/watch?v=QmZ5O6E8_-4) *(Patricia, 2.9.2026)* | ? | Inhalt offen — Claude kann Videos nicht lesen |
 | [**Gilding Flakes mit Stempeln** (Crafter's Companion)](https://www.crafterscompanion.com/blogs/inspiration/how-to-use-gilding-flakes-with-stamps) | 🇬🇧 Blog | ⭐⭐⭐ **Herstelleranleitung** — metallische Stempelbilder |
 | [How to use Spectrum Noir Gilding Flakes (Crafter's Companion)](https://www.crafterscompanion.co.uk/blogs/inspiration/how-to-use-spectrum-noir-gilding-flakes) | 🇬🇧 Blog | ⭐ Grundanleitung des Herstellers |
 | [Gilding Flakes auf Karten, 2 Wege (Smiling Colors)](https://www.smilingcolors.com/how-to-use-gilding-flakes-on-cards/) | 🇬🇧 Blog | ⭐ **DIY-Klebekissen ohne Spezialkleber** |
