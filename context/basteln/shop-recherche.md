@@ -57,6 +57,11 @@ node scripts/basteln/sf-lookup.mjs SF363 SF370 SF353 --bilder
 
 ## 📅 Kalender-Sets — die eigentliche Erklärung (gefunden 2026-08-18)
 
+> ### 🚫 REGEL: YouTube ist für Claude nicht lesbar
+> **Geprüft 2.9.2026** mit einem Perfect-Pearls-Video: YouTube liefert an Claude nur die Seitenhülle (Footer, Rechtstexte) — **kein Titel, keine Beschreibung, kein Transkript.** Gilt für alle YouTube-Links, auch die SF-Kalender-Videos.
+>
+> **Arbeitsteilung:** Patricia schaut, Claude legt ab. Links sammeln in [[technik-quellen]]. Wenn etwas Behaltenswertes drin ist → Screenshot oder zwei Sätze an Claude, dann kommt es als Technik-Notiz ins Register.
+
 > ### 🚫 REGEL: Kalender-Sets haben KEINE Artikelnummer
 > **Bestätigt von Patricia am 2026-08-20.** Sets aus SF-Advents-, Sommer- oder Jahreskalendern waren nie einzeln im Shop und tragen deshalb keine Artikelnummer — auch dann nicht, wenn sie noch original in der SF-Hülle stecken.
 >

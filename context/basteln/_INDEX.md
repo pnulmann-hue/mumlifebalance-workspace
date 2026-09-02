@@ -12,6 +12,7 @@ tags: [basteln, index]
 - [[projekt-ideen]]
 - [[shop-recherche]]
 - [[stempelsets-sf]]
+- [[technik-quellen]]
 
 ## Nicht hier (gitignored, privat)
 - `context/persoenlich/basteln-anlaesse.md` — Geburtstage & Anlässe
