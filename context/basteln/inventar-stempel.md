@@ -35,7 +35,7 @@ Vierstellig, nur Zahlen — **die erste Stelle sagt, um welche Sorte Material es
 | **2000–2999** | Holz-/Gummistempel | |
 | **3000–3999** | Stanzen | Magnetbox / Mappe |
 | **4000–4999** | Schablonen / Stencils | flach |
-| **5000–5999** | Embossing-Folder | |
+| **5000–5999** | **Prägeschablonen** *(engl. Embossing Folder)* | |
 | **6000–6999** | Punchboards & Werkzeuge *(echte Geräte — Stempel gehören nie hierher, auch wenn sie „werkzeugartig" wirken)* | |
 | **8000–8999** | **Papier, Folien & Effekt-Materialien** *(neu 2.9.26 — Yupo, Transferfolien, Gilding Flakes)* | |
 | **7000–7999** | Farben & Stempelkissen | Farbkasten |
@@ -78,7 +78,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 | Holz-/Gummistempel | 2001 |
 | Stanzen | 3001 |
 | Schablonen | 4001 |
-| Embossing-Folder | 5001 |
+| **Prägeschablonen** *(engl. Embossing Folder)* | 5001 |
 | Punchboards & Werkzeuge | 6001 |
 | Farben & Kissen | **7013** |
 | Papier & Folien | **8004** |
@@ -95,8 +95,9 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 | `1126` | Tierart — Eule, Vogel oder Wichtel? |
 | `7005` | StazOn-Farbe(n) ablesen |
 | `8001` | Yupo-Bogengrösse und Grammatur |
-| **5000er** | hast du **Embossing-Folder**? Mit der Wax Paste (`7009`) wären sie viel wert |
+| **4000er + 5000er** | ✅ vorhanden (bestätigt 2.9.) — **Fotos zur Erfassung fehlen noch** |
 | **3000er** | hast du **einzelne Stanzen** ohne zugehörige Stempel? |
+| **6000er** | Punchboards, Prägemaschine und Plotter erfassen |
 | `7011` | **Distress Inks oder Oxides** vorhanden? Wären mit der Glaze ein Paar |
 
 ---
@@ -2918,6 +2919,74 @@ Von „geht heute sofort" bis „braucht einen Nachmittag Übung":
 | **9** | **Lindy's mit Wasser** | `7001`–`7003`, `7007` + Yupo | wird schnell Matsch | Wow-Flächen |
 
 **Fang bei 1 an, nicht bei 9.** Die ersten vier brauchen kein Gerät, keine Vorbereitung und keine Übung — und drei davon kannst du auf jede Karte anwenden, die du sowieso machst.
+
+---
+
+### 🔲 Prägeschablonen & Schablonen — was damit möglich wird
+
+> **Bestätigt 2.9.2026: Patricia hat Prägeschablonen (Embossing-Folder) UND Schablonen (Stencils).** Beide Blöcke sind noch nicht erfasst — Fotos folgen. Die Techniken hier gelten unabhängig davon, welche Motive es genau sind.
+
+**Erst die Begriffe auseinanderhalten**, weil sie ständig verwechselt werden:
+
+| | Prägeschablone / Embossing-Folder | Schablone / Stencil |
+|---|---|---|
+| **Was** | Kunststoff-Folder, zwei Hälften | flache Folie mit Aussparungen |
+| **Wie** | kommt in die **Prägemaschine** | wird **aufgelegt** |
+| **Ergebnis** | Papier wird **3D** — eine Seite erhaben, die andere vertieft | Farbe wird **durchgetupft** |
+| **Farbe?** | keine — nur Struktur | ja, das ist der Zweck |
+
+---
+
+#### ⭐⭐⭐ Die stärkste Kombination im ganzen Bestand: Prägeschablone + Wax Paste
+
+**Prägen → mit dem Finger Wax Paste (`7009`) leicht über die Fläche reiben → fertig.**
+
+Die Paste bleibt **nur auf den erhabenen Stellen**, die Vertiefungen bleiben dunkel. Ergebnis: eine geprägte Fläche, bei der die Struktur in Bronze oder Rosé-Gold aufleuchtet und die Tiefen dunkel bleiben. **Das sieht aus wie gepresstes Metall** und dauert zehn Sekunden.
+
+Genau dafür ist Wax Paste gemacht. Ohne Prägeschablone ist sie ein Kanten-Werkzeug — **mit** Prägeschablone ist sie das Hauptwerkzeug.
+
+**Dasselbe Prinzip auch mit:**
+- **Perfect Pearls (`7008`) trocken** — mit dem Finger oder einem trockenen Pinsel über die Prägung, perliger statt metallisch
+- **Distress Glaze (`7011`)** über den **Dabber** (`7010`): Dabber flach über die geprägte Fläche → Medium bleibt nur auf den Höhen → Pulver drauf → föhnen → **Glasur nur auf den Spitzen**
+
+---
+
+#### ⭐⭐ Schablone + Embossing-Dabber + Pulver = erhabenes Muster
+
+Schablone auflegen → mit dem **Embossing-Dabber (`7010`)** durchtupfen → Schablone abnehmen → Pulver (`7006` oder `7011`) darauf → föhnen.
+
+Ergebnis: **ein erhabenes, glänzendes Muster ohne jeden Stempel.** Das ist der Weg zu Hintergründen, die nach Designpapier aussehen, aber selbstgemacht sind — und du kannst die Farbe frei wählen.
+
+---
+
+#### ⭐⭐ Schablone + Lindy's oder Perfect Pearls = schimmerndes Muster
+
+Schablone auflegen → Papier durch die Aussparungen leicht anfeuchten → Pulver (`7001`–`7003`, `7007`, `7008`) mit einem feuchten Schwämmchen durchtupfen → Schablone **sofort** abnehmen und flach ablegen.
+
+**Wichtig:** Schablone zügig abheben und **liegend** trocknen lassen, sonst verläuft die Farbe unter den Rand.
+
+Mit **Perfect Pearls** wird das Muster permanent, mit **Lindy's** intensiver, aber reaktivierbar.
+
+---
+
+#### Was du damit an Hintergründen gewinnst
+
+Das ist der eigentliche Zugewinn: **Du kannst Hintergründe jetzt selbst herstellen**, statt sie zu kaufen oder zu plotten. Und zwar in **deinen** Farben, passend zum Motiv, auf der Karte, die du gerade baust.
+
+Deine drei Wege zum Hintergrund, nach Aufwand:
+
+| Weg | Material | Wirkung |
+|---|---|---|
+| **Watermark solo** | `7010` + Hintergrund-Sets (`1009`, `1011`) | Ton-in-Ton, leise, 30 Sekunden |
+| **Prägeschablone + Wax Paste** | 5000er + `7009` | 3D mit Metallglanz, 1 Minute |
+| **Schablone + Dabber + Pulver** | 4000er + `7010` + `7006`/`7011` | erhabenes Farbmuster, 5 Minuten |
+
+---
+
+> ### 📸 Zur Erfassung
+> Für die **4000er (Schablonen)** und **5000er (Prägeschablonen)** gilt derselbe Weg wie bei den Stempeln: **Nummer draufschreiben, fotografieren, schicken.** Bei diesen beiden Sorten ist es besonders nützlich, weil ich dann sagen kann, welche Prägung zu welchem Motiv passt.
+>
+> **Auch noch offen: der 6000er-Block** (Punchboards & Werkzeuge). Envelope-Punchboard, Gift-Bag-Punchboard, Prägemaschine und Plotter sind alle noch nicht erfasst — die gehören dort hin.
 
 ---
 
