@@ -3144,6 +3144,28 @@ Dazu: **kein Glitzer, mindestens die Hälfte der Karte leer, Grundton Creme/Weis
 
 ---
 
+#### ⭐⭐⭐ Nachtrag 2.9.: Flakes gehen mit JEDEM deiner Stempel
+
+Oben steht, Flakes brauchen eine Klebefläche. **Der Hersteller zeigt einen viel besseren Weg:**
+
+> **Kleber aufs trockene Stempelkissen geben → Stempel darauf abtupfen → stempeln → Flakes darüber streuen → mit einem Schwämmchen polieren.**
+
+**Ergebnis: ein metallisches Stempelbild.** Damit sind deine **128 Stempelsets alle in Rosé-Gold-Metall verfügbar** — Schriftzüge, Zierrahmen, Silhouetten, Motive.
+
+**Und du brauchst keinen Spezialkleber:** Weissleim auf ein **gefaltetes Küchenpapier** drücken, Stempel hineindrücken, stempeln. Das ist dein DIY-Klebekissen.
+
+| Regel | Warum |
+|---|---|
+| **Kleber 1:1 mit Wasser verdünnen** — milchig, nicht dick | Flakes sind zart, schwerer Kleber verklumpt sie |
+| **Mit Schwämmchen polieren, nicht mit Pinsel** | Unterschied zwischen krümelig und gleichmässig |
+| **Reste aufkehren und wiederverwenden** | die Flakes gehen nicht kaputt |
+
+**Wo das am stärksten wirkt:** die Zierrahmen der Spruch-Stempel (`1100`, `1105`–`1119`) · Silhouetten (`1070`, `1104`, `1121`) · Herzen (`1083`) für Hochzeit · „Alles Liebe" (`1124`) · Schmetterlinge (`1074`, `1075`).
+
+Quellen: [[technik-quellen]]
+
+---
+
 ## 🎄 Beispiel: „Ich will Weihnachtskarten basteln"
 
 So sieht meine Antwort aus — **heute schon**, allein aus dem digitalen Bestand. Physische Stempel kommen dazu, sobald erfasst.
