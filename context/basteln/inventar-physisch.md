@@ -46,6 +46,22 @@ Gruppiert für Farbkombis:
 
 > **Technik-Merker:** Distress ist wasserlöslich → ideal für Wash / Smooshing / Blending. Für scharfe Motive über einem Wash braucht's ein **wasserfestes** schwarzes Kissen (Archival/StazOn) — steht noch nicht im Bestand.
 
+### Copic-Marker — Nummern (bestätigt 2026-09-02)
+- **B (Blau):** 12, 14, 16, 18, 21, 23, 24, 26, 29, 32, 34, 37, 39, 66, 79
+- **BG (Blaugrün):** 01, 02, 05, 09, 10, 11, 13, 15, 18, 53, 70, 75, 78 · **FBG2**
+- **G (Grün):** 12, 14, 16, 17, 19, 21, 24, 28, 29
+- **YG (Gelbgrün):** 03, 05, 06, 07, 17, 95, 99
+- **Y (Gelb):** 11, 13, 15, 19, 28
+- **YR (Gelb-Orange):** 00, 02, 04, 07, 16, 23, 30
+- **R (Rot):** 02, 05, 08, 20, 22, 24, 27, 29, 32, 35, 37, 39
+- **RV (Rotviolett):** 02, 04, 06, 11, 13, 17, 19, 63, 69, 91, 93 · **FRV1**
+- **V (Violett):** 04, 06, 09
+- **E (Erdtöne/Braun):** 04, 21, 25, 27, 29, 33, 37, 49, 55, 57, 59
+- **C (Kühlgrau):** 1, 3, 5, 7, 9 · **W (Warmgrau):** 1, 3, 5, 7, 9
+- **Schwarz:** 100 Black · 110 Special Black · **0** Colorless Blender
+
+> Ein paar Ziffern in der Rohliste evtl. Tippfehler (z.B. „YR72") — bei nächster Sichtung der Farbkarte abgleichen. Starke Bereiche: volles **Rot** (Blumen), breite **Erdtöne** (Schatten/Holz/Vintage), viel **Grau** (Schattierung).
+
 ---
 
 ## ❓ Offen — das brauche ich noch von dir
@@ -77,7 +93,7 @@ Foto pro Zeile genügt. Häkchen setze ich, wenn erfasst.
 - [ ] **Kleber** — was genau (Tape Runner, Foam Pads, Nassklebe)
 
 ### Farbe
-- [ ] **Copic-Liste** — welche Nummern hast du wirklich
+- [x] **Copic-Liste** — erfasst 2026-09-02 (siehe „Bestätigt")
 - [x] **Distress Ink** — 29 Farben erfasst · [ ] Aquarellstifte/-farben & weitere Marker noch offen
 - [ ] **Weitere Marker / Stifte**
 
