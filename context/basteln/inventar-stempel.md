@@ -37,6 +37,7 @@ Vierstellig, nur Zahlen — **die erste Stelle sagt, um welche Sorte Material es
 | **4000–4999** | Schablonen / Stencils | flach |
 | **5000–5999** | Embossing-Folder | |
 | **6000–6999** | Punchboards & Werkzeuge *(echte Geräte — Stempel gehören nie hierher, auch wenn sie „werkzeugartig" wirken)* | |
+| **8000–8999** | **Papier, Folien & Effekt-Materialien** *(neu 2.9.26 — Yupo, Transferfolien, Gilding Flakes)* | |
 | **7000–7999** | Farben & Stempelkissen | Farbkasten |
 | 8000–9999 | frei — für Sorten, die noch dazukommen | |
 
@@ -79,7 +80,8 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 | Schablonen | 4001 |
 | Embossing-Folder | 5001 |
 | Punchboards & Werkzeuge | 6001 |
-| Farben & Kissen | **7005** |
+| Farben & Kissen | **7008** |
+| Papier & Folien | **8004** |
 
 ## ❓ Offene Kleinigkeiten (beim nächsten Griff in die Kiste)
 
@@ -2630,6 +2632,61 @@ Damit kannst du markenkonforme Anhänger und Verpackungen machen, ohne zu suchen
 
 ---
 
+### 7005 — StazOn (lösungsmittelbasiertes Stempelkissen)
+- **Typ:** Stempelkissen, lösungsmittelbasiert · Farbe(n) noch nachtragen
+- **Für:** Alcohol-Ink-Hintergründe · Yupo · Glossy Cardstock · **Glas · Metall · Acryl · Folie · Schrumpffolie**
+
+**Der Schlüssel zur Alcohol-Ink-Technik** — ohne StazOn oder Embossing trocknet auf einem Alcohol-Ink-Hintergrund keine Stempelfarbe.
+
+> ⚠️ **Pflege:** StazOn greift Clearstamps stärker an als normale Tinte. **Sofort nach Gebrauch reinigen**, mit StazOn Cleaner oder Isopropylalkohol — Wasser reicht nicht. Clearstamps werden davon mit der Zeit leicht trüb; normal, der Abdruck bleibt gut.
+
+**Zweite Verwendung:** Beschriften von **Glas** — Vorratsgläser mit den Küchensprüchen (`1085`, `1118`), Kerzengläser, Metall-Anhänger. Bei doTERRA bleibt das Original-Etikett drauf, StazOn nur auf Anhänger und Verpackung.
+
+---
+
+### 7006 — Embossing-Zubehör (Pulver + Heissluftföhn + Embossing-Kissen)
+- **Bestandteile:** Embossing-Pulver *(Farben noch nachtragen)* · Heissluftföhn · Embossing-Kissen (VersaMark-Typ)
+- **Ablauf:** mit Embossing-Kissen stempeln → Pulver darüber streuen → abklopfen → mit Föhn schmelzen → erhabener Glanz
+
+**Die Technik, die deine Karten am schnellsten „gekauft" aussehen lässt** — und im Bestand an vier Stellen ausdrücklich gebraucht:
+
+| Einsatz | Sets |
+|---|---|
+| **Silber auf Grau für Trauerkarten** | Sterne `1016` · kahle Zweige `1077` · Katzen `1007` |
+| **Gold für Münzen** | Goldesel `1081` · Sparschwein `1096` |
+| **Gold/Kupfer für Silhouetten** | Glückskind `1121` · Vögel `1070` · Flamme `1104` |
+| **Auf Alcohol-Ink-Flächen** | Alternative zu StazOn, wenn erhaben gewünscht |
+
+**Klar-Pulver ist der unterschätzte Teil:** über ein farbig gestempeltes Motiv gestreut gibt es Glanz, **ohne die Farbe zu ändern**.
+
+**Praktisch:** Papier vorher mit Antistatik-Kissen abwischen · Föhn nicht zu nah halten · überschüssiges Pulver zurück ins Döschen (wiederverwendbar) · abkühlen lassen, nicht anfassen.
+
+---
+
+### 7007 — Lindy's Magicals Set „Totally 80's" — 5 Farben
+- **Inhalt:** **Bodacious Blush** (Rosé) · **Gag Me With A Spoon Gray** (Grau) · **Cowabunga Copper** (Kupfer) · **Pretty In Pink** (Pink) · **Midnight Rendezvous** (Nachtblau)
+- **Anwendung** wie `7001`–`7003`
+- **Tags:** `geburtstag` `feier` `hochzeit` `jubilaeum` `muttertag` `danke` `freundschaft` `maenner` `winter` `weihnachten` `neujahr` `allgemein` `grossflächig` `randakzent`
+
+**Damit stehen deine Lindy's bei acht Farben** — und das Set schliesst genau die Lücken der Einzelfarben.
+
+**Die zwei wichtigsten darin:**
+
+**Gag Me With A Spoon Gray** ist dein **erstes Grau in Pulverform**. Grau hält alles zusammen: als Untergrund unter bunten Motiven, für Vintage-Optik, als Schatten. **Mit Kupfer zusammen ergibt es eine erwachsene, edle Palette** — erstmals eine Farbwelt, die eindeutig nicht nach Blümchen aussieht.
+
+**Midnight Rendezvous ist deine Brand-Farbe Dunkelblau** — zusammen mit Cobalt und Slate aus den Alcohol Inks (`7004`) kannst du markenkonform arbeiten, ohne zu mischen.
+
+**Cowabunga Copper ist die dritte Metallic-Option** neben Gold-Glanzfolie (`8002`) und Rosé-Flakes (`8003`). Wärmer und unaufdringlicher als Gold — für Herbst (`1060`), Ilex-Beeren (`1057`), die Flamme (`1104`) und **Silhouetten**, die in Kupfer edler wirken als in Schwarz.
+
+**Zwei Paletten, die vorher nicht möglich waren:**
+
+| Palette | Farben | Wofür |
+|---|---|---|
+| **Erwachsen / edel** | Gray + Copper | Jubiläum · runde Geburtstage · **Männer** (mit `1113`, `1120`) |
+| **Nacht / Winter** | Midnight Rendezvous + Gray + Sterne `1016` | Weihnachten und Neujahr in dunkler Optik statt Rot-Grün |
+
+---
+
 ### 🎨 Zwei fertige Paletten
 
 | Palette | Farben | Wofür |
@@ -2642,6 +2699,65 @@ Damit kannst du markenkonforme Anhänger und Verpackungen machen, ohne zu suchen
 > ⚠️ **Zwei Technik-Regeln für Magicals:**
 > - **Immer auf einem Reststreifen testen** — nass wirkt die Farbe viel dunkler als trocken.
 > - **Nicht für Trauerkarten** und nicht für sehr schlichte, ruhige Karten. Perlglanz braucht Fläche und Kontrast, sonst wirkt es unruhig.
+
+---
+
+## 📄 8000er — Papier, Folien & Effekt-Materialien
+
+> **Neuer Block, angelegt am 2.9.2026.** Das Nummernschema hatte für Papier und Folien keinen Platz — die sind weder Stempel noch Werkzeug noch Farbe. **Wenn dir die Einordnung nicht passt, sag es, dann ziehen wir sie in den 6000er.**
+>
+> **In Notion steht bei diesen Einträgen „Punchboard/Werkzeug"** als Typ — die Auswahlliste nimmt den neuen Wert „Papier/Untergrund" derzeit nicht an. Hier im Register ist es korrekt geführt.
+
+### 8001 — Yupo-Papier (synthetisch, nicht-porös)
+- **Format:** Bogen — Grösse und Grammatur noch nachtragen
+- **Geeignet für:** **Alcohol Inks** (`7004`) · Aquarell · Lindy's Magicals (`7001`–`7003`, `7007`) · Alkohol-Marker
+- **Nicht geeignet für:** wasserbasierte Stempelfarbe → dort **StazOn** (`7005`) oder **Embossing** (`7006`)
+
+**Damit ist die Alcohol-Ink-Kette vollständig — du hast alle vier Teile, es fehlt nichts:**
+
+> **Yupo (`8001`) → Alcohol Inks (`7004`) → Motiv mit StazOn (`7005`) oder embosst (`7006`)**
+
+**Warum Yupo besser ist als Glossy Cardstock:** Die Tinte bleibt länger beweglich — du kannst länger wischen, pusten und Zellen ziehen.
+
+**Und Yupo ist reaktivierbar.** Ein Tropfen Isopropylalkohol löst getrocknete Tinte wieder an. Heisst: **du kannst nichts falsch machen** — gefällt dir eine Fläche nicht, wischst du sie weg und fängst neu an. Der Bogen ist praktisch unzerstörbar.
+
+> ⚠️ **Yupo nicht falzen** — es bricht nicht, es knüllt. Also **nicht als Kartenbasis** verwenden, sondern die bemalte Fläche **in Streifen oder Formen schneiden und aufkleben**. Kleber: doppelseitiges Klebeband oder Gel — wasserbasierter Flüssigkleber haftet schlecht. Ein A4-Bogen reicht für viele Karten.
+
+---
+
+### 8002 — Glanzfolie Gold (Gonis)
+- **Typ:** Gold-Transferfolie — wird auf **Klebeflächen** übertragen, nicht gestempelt
+- **Ablauf:** Folie auf die klebende Fläche legen · **fest andrücken** · abziehen → Gold haftet nur, wo Kleber ist
+- **Klebeflächen:** doppelseitiges Klebeband · Klebefolie · Stempelkleber · **geplottete Klebeformen**
+- **Tags:** `weihnachten` `advent` `neujahr` `hochzeit` `jubilaeum` `geburtstag` `feier` `konfirmation` `danke` `allgemein` `randakzent` `grossflächig`
+
+**Ihr stärkster Einsatz ist die Kombination mit dem Plotter:** Form aus Klebefolie plotten, Glanzfolie andrücken, abziehen. So bekommst du **randscharfe Gold-Elemente**, die mit Stempeln unmöglich sind — Schriftzüge, Rahmen, Linien, Ornamente.
+
+**Wo Gold in diesem Bestand hingehört:** Münzen (`1081`, `1096`) · Sterne (`1016`) für Weihnachten · Ilex-Beeren (`1057`) · die Zierrahmen der Spruch-Stempel (`1100`, `1105`–`1119`) · Herzen (`1083`) und „Alles Liebe" (`1124`) für Hochzeit · Silhouetten in Gold statt Schwarz.
+
+**Praktisch:** Der Rest des Bogens bleibt brauchbar — Gold geht nur weg, wo Kleber war. **Fest andrücken ist alles**; bei schwachem Druck bleiben Löcher (kann als Vintage-Look gewollt sein).
+
+---
+
+### 8003 — Spectrum Noir Luxury Gilding Flakes: Pretty Pink · Rose Gold · Soft Rose
+- **Typ:** Blattmetall-Flocken in drei Rosé-Tönen
+- **Ablauf:** Klebefläche anlegen (Gilding Glue, Klebefolie oder Stempelkleber) → Flocken auflegen und andrücken → **mit weichem Pinsel überschüssiges wegbürsten** → unregelmässige Metallfläche mit Craquelé-Textur. Reste auffangen und wiederverwenden.
+- **Tags:** `hochzeit` `muttertag` `geburt` `taufe` `geburtstag` `jubilaeum` `danke` `freundschaft` `fruehling` `sommer` `feier` `allgemein` `randakzent`
+
+**Sie passen exakt zu Alpine Ice Rose (`7002`)** — Pigmentpulver für die Fläche, Flakes für den Akzent. Dieselbe Farbwelt in zwei Techniken.
+
+**Deine drei Metallic-Optionen unterscheiden sich klar:**
+
+| Material | Wirkung | Für |
+|---|---|---|
+| **Embossing-Pulver** `7006` | erhaben, körnig | **gestempelte** Motive |
+| **Glanzfolie Gold** `8002` | flach, spiegelnd, randscharf | **geschnittene, geklebte** Formen |
+| **Gilding Flakes** `8003` | unregelmässig, gebrochen, Textur | freie Flächen — wie abgeblätterte Vergoldung |
+| **Cowabunga Copper** `7007` | schimmernd, wischbar | Flächen und Verläufe |
+
+**Rosé-Gold ist die Hochzeitsfarbe schlechthin** — mit den Liebes-Sprüchen (`1084`), „Alles Liebe" (`1124`), den Herzen (`1083`) und dem Wurzeln-Spruch (`1100`). Dazu Muttertag, Schmetterlinge (`1074`/`1075`), Flamingos (`1066`/`1098`), Kirschblüten (`1037`).
+
+> ⚠️ **Weniger ist mehr.** Flakes wirken als **Teilfläche** — ein Streifen am Rand, eine Ecke, ein Element. Vollflächig sehen sie nach Bastelbedarf aus statt nach Handwerk. Und sie brauchen einen **ruhigen Untergrund**: auf einem Alcohol-Ink-Hintergrund (`7004`) wäre es zu viel, beide Techniken wollen die Aufmerksamkeit. Auf Creme oder Weiss dagegen perfekt.
 
 ---
 
