@@ -79,7 +79,7 @@ Weil jeder Typ seinen eigenen Block hat, sind die Bündel **lückenlos** — `10
 | Schablonen | 4001 |
 | Embossing-Folder | 5001 |
 | Punchboards & Werkzeuge | 6001 |
-| Farben & Kissen | **7004** |
+| Farben & Kissen | **7005** |
 
 ## ❓ Offene Kleinigkeiten (beim nächsten Griff in die Kiste)
 
@@ -2530,6 +2530,8 @@ Drei Glücks-Symbole, drei passende Texte. **Damit kannst du dreimal Glück wün
 ## 🎨 7000er — Farben & Kissen
 
 > **Ablage:** Farben stehen zusammen in einer Kiste, **keine Gummi-Bündel** — die 10er-Bündel-Regel gilt nur für Clearstamps.
+>
+> **Nummerierungs-Regel für Farben:** Fläschchen und Dosen tragen ihren **Farbnamen** — du findest sie also ohne Nummer. Deshalb gilt hier: **eine Nummer pro Produktlinie**, nicht pro Farbe. Die Farbnamen stehen im Inhalt und sind über die Suche auffindbar.
 
 ### 7001 — Lindy's Magical Shaker: Oktoberfest Orange
 - **Typ:** Pigmentpulver mit Perlglanz · **Format:** Streudose (Shaker)
@@ -2565,6 +2567,66 @@ Drei Glücks-Symbole, drei passende Texte. **Damit kannst du dreimal Glück wün
 **Deine Blatt- und Zweig-Farbe — und die vielseitigste der drei.**
 
 Farnzweige (`1083`) · Monstera und Farn (`1032`) · Gräser (`1061`) · **Tannenzweige und Ilex (`1049`, `1057`)** als Weihnachtsgrün mit Schimmer · **die sieben Unterwasser-Pflanzen (`1082`)** · Gartenzaun-Szene (`1077`) · **Kleeblatt (`1062`)** — mit Perlglanz wirkt es wie ein echtes Glücks-Symbol, passend zum Vers (`1117`) und zum Glückskind (`1121`).
+
+---
+
+### 7004 — Alcohol Inks: Sammlung mit 23 Farben (Ranger / Adirondack)
+- **Typ:** alkoholbasierte, transparente Tinte · **Format:** 23 Einzelfläschchen
+- **Nummerierung:** Die Farbnamen stehen auf den Fläschchen — **eine Sammel-Nummer reicht**, du brauchst keine 23 Etiketten.
+- **Tags:** `allgemein` `geburtstag` `fruehling` `sommer` `herbst` `winter` `weihnachten` `hochzeit` `danke` `freundschaft` `selbstgemacht` `kinder` `grossflächig` `doterra-tauglich`
+
+**Alle 23 Farben, nach Familien:**
+
+| Familie | Farben |
+|---|---|
+| **Blau / Türkis** | Glacier · Monsoon · Laguna · Cobalt · Slate |
+| **Grün** | Mojito · Everglades · Meadow · Moss |
+| **Rot / Beere** | Currant · Boysenberry · Vineyard · Rosewood · Fiesta |
+| **Orange / Braun / Erde** | Ginger · Ember · Caramel · Latte · Sienna · Dijon |
+| **Pink** | Gumball |
+| **Metallic-Mixative** | Alloy · Sterling |
+
+---
+
+> ## ⚠️ Zwei Fallen, die du kennen musst
+>
+> **1. Alcohol Inks funktionieren NICHT auf normalem Bastelpapier.** Sie ziehen ein und werden stumpf und fleckig. Du brauchst eine **nicht-poröse** Oberfläche: **Yupo-Papier** (der Klassiker), **Glossy Cardstock**, Metall, Glas, Acryl, Folie, Fliesen, Domino-Steine, Schrumpffolie.
+>
+> **2. Auf einem Alcohol-Ink-Hintergrund trocknet normale Stempelfarbe nicht.** Dort brauchst du **lösungsmittelbasierte Tinte (StazOn)** — oder du **embosst** das Motiv. Sonst verschmiert alles.
+
+---
+
+**Wenn beides beachtet ist, ist das die spektakulärste Technik in deinem Bestand** — und sie passt genau zu einer Stempelsorte, die du hast:
+
+**Silhouetten auf Alcohol-Ink-Hintergrund.** Vögel-Silhouetten (`1070`) · Glückskind mit Kleeblatt (`1121`) · Flamme (`1104`) · Katzen-Silhouetten (`1007`). Schwarz gestempelt oder embosst auf einer bunt gewischten Fläche — das sieht gekauft aus. Für Silhouetten war die Technik gemacht, weil sie keine feinen Linien braucht.
+
+**Deine Markenfarben stecken in der Sammlung:**
+
+| Brand | Farben |
+|---|---|
+| **Petrol / Türkis** (Mentoring) | Laguna · Glacier · Monsoon |
+| **Orange** (doTERRA) | Ginger · Ember · Fiesta |
+| **Dunkelblau** | Cobalt · Slate |
+| **Creme / Beige** | Latte · Caramel · Dijon |
+
+Damit kannst du markenkonforme Anhänger und Verpackungen machen, ohne zu suchen.
+
+**Sechs fertige Trios** — Alcohol Inks brauchen zwei bis drei Farben, nicht mehr:
+
+| Stimmung | Trio |
+|---|---|
+| **Meer** | Laguna + Glacier + Sterling |
+| **Herbst** | Ginger + Sienna + Dijon |
+| **Wald** | Moss + Meadow + Latte |
+| **Beere** | Boysenberry + Vineyard + Currant |
+| **Weihnachten** | Everglades + Currant + Alloy |
+| **Sonnenuntergang** | Fiesta + Ginger + Gumball |
+
+**Die Metallics (Alloy, Sterling) sind Mixative** — opak statt transparent. **Vor Gebrauch schütteln**, sie setzen sich ab. Sparsam als Akzent, nicht als Fläche.
+
+**Praktisch:** Handschuhe (färbt die Finger tagelang) · gute Lüftung (starker Geruch) · Unterlage, die Tinte kriecht über den Rand.
+
+**Projekte, die dafür gemacht sind:** Anhänger aus Schrumpffolie oder Metall · Domino-Steine als Mini-Kunstwerke · Untersetzer-Fliesen · Hintergrund auf Yupo, in Streifen geschnitten als Kartenakzent · **Lesezeichen** (mit `1125`) · durchsichtige Acryl-Anhänger für Verpackungen.
 
 ---
 
