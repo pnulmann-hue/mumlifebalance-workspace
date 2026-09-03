@@ -26,7 +26,7 @@ Hallo [Vorname]
 
 der September ist der Monat, in dem ich jedes Jahr merke, dass der Herbst wirklich kommt: die Kinder schleppen die ersten Schnupfnasen heim, abends wird's früh dunkel und ich hab plötzlich wieder Lust auf warme Düfte in der Küche.
 
-Und weil doTERRA diesen Monat gleich mehrere Aktionen zusammenlegt, kriegst du hier alles auf einen Blick — plus meine ehrliche Meinung dazu, was davon wirklich in deinen Warenkorb gehört.
+Und weil doTERRA diesen Monat gleich mehrere Aktionen zusammenlegt, kriegst du hier alles auf einen Blick — plus meine ehrliche Meinung dazu, was davon wirklich in deinen Warenkorb gehört. Das komplette Aktions-Booklet mit allen Produkten kannst du dir [hier in Ruhe anschauen]([AKTIONSFLYER-LINK EINSETZEN]).
 
 ### Ab 200 PV: Copaiba und Deep Blue Rub geschenkt (Wert 123 €)
 
@@ -63,6 +63,30 @@ Der On Guard Stick ist brandneu und für mich das Familienprodukt dieser Saison.
 
 Dazu gibt es das **Echinacea Öl 2.5 ml**, und zwar nur jetzt und limitiert auf zwei Stück pro Bestellung. Echinacea wird seit vielen Jahren traditionell genutzt, unterstützt die Pflege der Haut und ist ein schöner Begleiter durch die wechselnden Jahreszeiten. Wenn dich das interessiert, würde ich es dir gleich diesen Monat mitbestellen, weil es danach wieder weg ist.
 
+### Ätherische Öle im Herbst und Winter — meine liebste Öl-Zeit
+
+Im Sommer stehen bei uns die Fenster offen und wir sind sowieso den ganzen Tag draussen. Aber sobald es früher dunkel wird und wir alle wieder mehr drinnen hocken, verändert sich die ganze Stimmung im Haus — und genau da kommen die Öle bei mir am meisten zum Einsatz. Ein Duft macht innerhalb von zwei Minuten aus einem grauen Nachmittag was Gemütliches, und die Roller in der Jackentasche sind in der kalten Jahreszeit ehrlich gesagt mein wichtigstes Utensil.
+
+Ein paar Ideen, die du sofort ausprobieren kannst:
+
+- **Morgens, wenn es draussen noch dunkel ist:** Wild Orange in den Diffuser. Der Duft macht bei uns die Küche wach, bevor überhaupt jemand redet.
+- **Nachmittags im Wohnzimmer:** Harvest Spice oder Vanilla Chai mit Zimt, Nelke und Vanille. Das ist Herbst zum Einatmen und riecht, als hättest du gebacken, auch wenn du es gar nicht hast.
+- **Für unterwegs:** der On Guard Stick in der Jackentasche, in der Schultasche und im Auto. Einmal über die Handgelenke, fertig.
+- **Wenn die Heizungsluft drückt:** Air Touch auf Brust und Nacken. Er ist schon fertig verdünnt, deshalb können die Kinder ihn sich selber auftragen.
+- **Abends zum Runterfahren:** ein Tropfen Copaiba und der Diffuser läuft mit etwas Warmem dazu.
+- **Nach dem Sport oder einer langen Wanderung:** Deep Blue Rub auf Nacken, Schultern und Beine.
+
+Und wenn du das lieber einmal live siehst, statt es in einer Mail zu lesen, dann komm doch zu einem meiner **Öl-Abende bei mir zuhause**. Wir sitzen gemütlich zusammen, ich zeige dir, wie du die Öle ganz einfach in euren Alltag holst, und du mischst dir deinen eigenen Roller, den du am Ende mitnimmst. Vorwissen brauchst du keins, Neugier reicht völlig.
+
+Die Termine, jeweils um 20 Uhr:
+
+- Dienstag, 15. September
+- Mittwoch, 21. Oktober
+- Donnerstag, 12. November
+- Montag, 7. Dezember
+
+Jeder Abend hat einen anderen Herbst- oder Winter-Schwerpunkt, du kannst also auch mehrmals kommen. [Hier ist der Flyer mit allen Infos](https://drive.google.com/file/d/1nXfy0fbvsms8TshVuC8ILXpmbGKmvfHf/view?usp=sharing) — anmelden kannst du dich einfach mit einer Nachricht an mich, die Adresse schicke ich dir dann.
+
 ### Was sonst noch läuft
 
 - **Cypress 15 ml gratis** bei einer Treuebestellung ab 125 PV — aber nur bis zum 15. September
@@ -84,6 +108,9 @@ Patricia
 - **Bewusst offen gelassen:** ob sich die 200-PV-Aktion und die Diamond-Club-Aktion kombinieren lassen. Steht so nicht im Booklet — deshalb im Text als Anlass fürs Nachfragen genutzt.
 - **Der Tipp für Vielbestellerinnen** ist absichtlich nur angedeutet und wandert in die DM.
 - **Vor dem Versand einsetzen:** dein Bestell-Link und dein Instagram-Handle im Schluss-CTA.
+- ⚠️ **`[AKTIONSFLYER-LINK EINSETZEN]` im ersten Absatz ersetzen** — für das September-Booklet fehlt mir noch eine Adresse. Wenn du magst, lade ich dir das PDF in dein Google Drive und hol dir den Freigabe-Link, dann setze ich ihn überall ein.
+- **Workshop-Flyer ist verlinkt:** `drive.google.com/file/d/1nXfy0fbvsms8TshVuC8ILXpmbGKmvfHf/view` — bitte einmal aus einem fremden Browser (oder Inkognito) öffnen und prüfen, dass die Freigabe auf „alle mit dem Link" steht. Sonst sehen deine Kundinnen nur eine Zugriffs-Anfrage.
+- **Der Workshop-Block trägt den weichen CTA:** niemand muss etwas kaufen, um zu kommen. Über den Roller, den jede mit heimnimmt, ergibt sich das Öl-Gespräch dann von allein.
 
 ---
 
@@ -114,6 +141,12 @@ Kurz, direkt, mit Namen — für die Kundinnen, die du einzeln anschreibst. Pers
 > Und falls du länger als ein Jahr nichts bestellt hast: dein Konto wurde aus Datenschutzgründen gelöscht — was gerade perfekt ist. Du kannst dich einfach als Neukundin neu einschreiben, bekommst die Versandkosten gutgeschrieben und über den Diamond Club **ab 100 PV Wild Orange, ab 200 PV Wild Orange + Balance** gratis (167 €).
 >
 > Wenn bei dir eh gerade was leer wird, wäre jetzt echt der Moment. Schreib mir kurz, ich schau dir nach, ob dein Konto noch aktiv ist. 😊
+
+### Zusatz-Baustein: Öl-Abend (an jede der drei Fassungen anhängbar)
+
+> Und noch was Schönes: ich mache diesen Herbst und Winter wieder meine **Öl-Abende bei mir zuhause**. Gemütlich zusammensitzen, ich zeig dir, wie du die Öle ganz einfach in euren Alltag holst, und du mischst dir deinen eigenen Roller, den du mitnimmst. Termine jeweils 20 Uhr: **15.9. · 21.10. · 12.11. · 7.12.** — jeder Abend mit einem anderen Schwerpunkt, du kannst also auch mehrmals kommen. Hier der Flyer: https://drive.google.com/file/d/1nXfy0fbvsms8TshVuC8ILXpmbGKmvfHf/view?usp=sharing
+>
+> Sag einfach Bescheid, wenn du dabei sein magst, dann schick ich dir die Adresse. 😊
 
 ### Reaktivierungs-Fassung (gezielt an alle, die länger nichts bestellt haben)
 
