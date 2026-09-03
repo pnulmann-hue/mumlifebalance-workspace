@@ -154,6 +154,19 @@ Dazu ~250 Foto-/Video-Ideen aus den Partys (2021).
 
 ## 📚 SCRAPBOOK FOREVER — 140 Dateien
 
+> ### ⭐ FUND 2.9.2026: Das sind Beispielkarten-FOTOS, sortiert nach Anlass — und Claude kann sie ansehen
+>
+> Unterordner: **Geburtstag** · **Karte Geburt** · **Liebe, Hochzeit** · **Trauer** · **Weihnacht** (plus 118 Dateien direkt im Ordner).
+>
+> **Warum das wichtig ist:** Das ist die Ideen-Quelle, die Patricia am Anfang gesucht hat („Pinterest-Ideen sind nicht auf mein Material gematcht") — und sie lag die ganze Zeit im eigenen OneDrive. **Claude kann Bild-Dateien lesen** (im Gegensatz zu Videos) und daraus Layout-Anleitungen mit Patricias Stempelnummern ableiten.
+>
+> **Beispiel, geprüft am 2.9.:** die Datei `silhouette bäume, spruch die sterne der Erinnerung.JPG` im Unterordner `Trauer` zeigt eine Trauerkarte mit **genau dem Spruch aus Set 1023**: Querformat, schwarzer Karton, Sonnenuntergang-Verlauf von Gelb nach Braun gewischt, Sonne mit runder Maske ausgespart, unten schwarze Silhouetten-Landschaft (Schilf, Gräser, Trauerweide), Spruch oben links.
+> → Nachbaubar mit **1023** (Spruch) + **1077** (kahle Zweige) + **1061** (Gräser) + **1070** (Vogel-Zweige) + **7001** Oktoberfest Orange / **7011** Fossilized Amber für den Verlauf.
+>
+> **Nächster sinnvoller Schritt:** die fünf Anlass-Ordner durchgehen und daraus einen **Layout-Ideen-Katalog** mit Nummern bauen. Angeboten am 2.9., noch nicht beauftragt.
+>
+> ⚠️ **Urheberrecht:** Hersteller-Fotos. Bleiben im OneDrive, **nie ins Repo kopieren** (Repo ist public). Claude beschreibt sie in eigenen Worten.
+
 Fotos deiner **echten Stanzen & Schablonen** — die Dateinamen verraten das Material:
 Baumstanze · Pilz · Blattschablone · Blumenschablone (3 Varianten) · Blattstanze · Bubblekreise · Bücherwurm · Boot · Coloration-Stifte · Blümchenschablone …
 

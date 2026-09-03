@@ -88,6 +88,40 @@ Zusatzfrage nur bei Schnuppern/Praktikum:
 
 ---
 
+## C2 · Abbruch-Nachbesprechung (für Sachen, die NICHT passiert sind)
+
+Wenn ein Vorhaben stecken geblieben ist — angefangen und liegen gelassen, oder nie
+angefangen. Die Fragen aus C passen dann nicht («was hast du gemacht?» → «nichts»).
+
+**Das ist der wertvollste Diagnose-Moment des ganzen Systems**, weil sich hier
+entscheidet, ob jemand nicht *konnte*, nicht *wollte*, nicht *wusste wie*, oder mit dem
+Denken schon fertig war. Von aussen sieht das alles gleich aus.
+
+**Vor der ersten Frage immer sagen:** «Das ist keine Vorwurfsfrage. Mich interessiert
+nur, was da passiert ist — es ist voll okay, dass nichts draus wurde.»
+Ohne diesen Satz kommt «weiss nicht», und das Fenster ist zu.
+
+1. **Was hättest du als allererstes tun müssen?**
+   → *trennt: erster Schritt war unklar (dann ist es kein Motivations-, sondern ein
+   Strukturproblem) von: Schritt war klar, Lust war weg*
+2. **Wie ist es dir gegangen, als du dann davor gestanden bist?**
+   → *trennt: überfordert · gelangweilt · Angst etwas falsch zu machen · einfach abgelenkt*
+3. **War das dein Plan oder eher der von jemand anderem?**
+   → *trennt: fremdes Projekt von eigenem. Bei fremden Projekten ist Nicht-Anfangen
+   keine Aussage über ihn.*
+4. **Was war beim Planen das Beste daran? Und wäre das fertige Ding noch besser
+   gewesen — oder war es mit dem Plan eigentlich erledigt?**
+   → *die Kernfrage. Trennt «Belohnung liegt im Verstehen/Planen» (Ursache c) von
+   «ich hätt schon gern, aber ich hab mich nicht getraut» (Ursache b)*
+
+**Optional, wenn er noch mag** — die praktisch nützlichste von allen:
+5. Was hätte geholfen, damit du angefangen hättest?
+
+Danach: Eintrag in `erlebnis-log.md`, und die Achse **Umsetzung** im Profil
+schärfen. Kein Ratschlag, kein «nächstes Mal machst du».
+
+---
+
 ## D · Umformulierungen bei «keine Ahnung»
 
 | Blockierende Frage | Konkretere Variante |
