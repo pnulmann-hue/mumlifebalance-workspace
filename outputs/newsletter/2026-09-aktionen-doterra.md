@@ -169,3 +169,34 @@ Flyer `flyer-september-2026.png` schicken, direkt darunter:
 > Und obendrauf kommen im September die Gratis-Öle: **ab 100 PV Wild Orange, ab 200 PV Wild Orange und Balance** über den Diamond Club (167 €). Dazu gibt's bei jeder Bestellung ab 200 PV noch **Copaiba und Deep Blue Rub** geschenkt (123 €).
 >
 > Eine bessere Gelegenheit zum Wiedereinsteigen wirst du so schnell nicht kriegen. Sag mir einfach, was du brauchst, den Rest mach ich. 😊
+
+---
+
+## Kundengruppe auf WhatsApp (Flyer-Post)
+
+Flyer `flyer-september-2026.png` senden, Text ins **Bildunterschrift-Feld** — eine Nachricht, nicht zwei.
+Die Regeln dahinter stehen in `reference/whatsapp-kundenkommunikation.md`.
+
+### Hauptnachricht
+
+> Ihr Lieben 💛 der September hat's echt in sich.
+>
+> Ab 200 PV gibt's Copaiba und den Deep Blue Rub gratis dazu — der Rub ist bei uns zuhause das meistgebrauchte Produkt überhaupt, ich geh damit inzwischen nicht mal mehr ohne wandern.
+>
+> Neu ist ausserdem der On Guard Stick mit Echinacea, der passt in jede Jackentasche. Und das Echinacea Öl gibt's wirklich nur diesen Monat.
+>
+> Alle Details stehen auf dem Flyer. Wenn du wissen willst, was für dich Sinn macht oder ob du auf die 200 PV kommst, **schreib mir einfach privat**, dann schau ich mir das mit dir an. 😊
+
+### Kurz-Fassung
+
+> Ihr Lieben, im September gibt's ab 200 PV Copaiba und Deep Blue Rub gratis dazu 💛 Alles Weitere auf dem Flyer. Fragen gern privat an mich, dann schau ich mit dir, was für dich passt.
+
+### Aktivierungs-Frage (einen Tag später)
+
+> Mal aus Neugier: wer von euch nimmt den Deep Blue eigentlich auch für die Kinder nach dem Sport? 🙋‍♀️
+
+### Erinnerung (um den 26.9.)
+
+> Kurze Erinnerung: die Gratis-Aktion läuft noch bis Dienstag. Ich mach meine eigene Bestellung am [Datum] — wer noch was braucht, meldet sich einfach bei mir. 💛
+
+**Nicht in die Gruppe:** die Sache mit den nach 12 Monaten gelöschten Konten. Vor Publikum klingt das nach „du warst zu lange inaktiv" — das gehört in die Einzelnachricht an genau die Betroffenen (Reaktivierungs-Fassung weiter oben).
