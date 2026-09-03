@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#ffffff; }
+
+  .slide {
+    width:1080px; height:1350px;
+    background:#faf6ec;
+    position:relative;
+    overflow:hidden;
+    font-family:'Source Sans 3', Arial, sans-serif;
+    color:#3a2a1a;
+    display:flex; flex-direction:column;
+  }
+
+  /* dezente Blatt-Ornamente aus reinem CSS (keine KI-Bilder) */
+  .blob { position:absolute; border-radius:50%; }
+  .blob-1 { width:520px; height:520px; top:-230px; right:-190px; background:rgba(220,130,46,0.10); }
+  .blob-2 { width:400px; height:400px; bottom:-190px; left:-160px; background:rgba(107,52,16,0.07); }
+
+  /* ---------- Kopf ---------- */
+  .head {
+    position:relative;
+    background:linear-gradient(135deg,#6b3410 0%,#b5601f 58%,#dc822e 100%);
+    padding:40px 70px 34px;
+  }
+  .eyebrow {
+    display:inline-block;
+    font-size:17px; font-weight:700; letter-spacing:4.5px; text-transform:uppercase;
+    color:#f7f1e4;
+    border:1.5px solid rgba(247,241,228,0.5);
+    border-radius:40px;
+    padding:8px 21px;
+    margin-bottom:18px;
+  }
+  .head h1 {
+    font-family:'Philosopher', Georgia, serif;
+    font-size:57px; line-height:1.09; font-weight:700; color:#f7f1e4;
+    letter-spacing:-1px;
+  }
+  .head p {
+    margin-top:12px;
+    font-size:23px; font-weight:300; color:rgba(247,241,228,0.85); line-height:1.4;
+  }
+
+  /* ---------- Karten ---------- */
+  .body { position:relative; padding:22px 70px 0; flex:1; }
+
+  .card {
+    background:#ffffff;
+    border:1px solid #eddcc4;
+    border-left:9px solid #dc822e;
+    border-radius:0 18px 18px 0;
+    padding:17px 28px 19px;
+    margin-bottom:13px;
+  }
+  .card.neu { border-left-color:#6b3410; }
+
+  .card-label {
+    font-size:15px; font-weight:700; letter-spacing:3px; text-transform:uppercase;
+    color:#c0691f; margin-bottom:7px;
+  }
+  .card.neu .card-label { color:#6b3410; }
+
+  .card h2 {
+    font-family:'Philosopher', Georgia, serif;
+    font-size:33px; line-height:1.16; font-weight:700; color:#6b3410;
+    margin-bottom:9px;
+  }
+  .card ul { list-style:none; }
+  .card li {
+    font-size:21px; line-height:1.4; font-weight:400; color:#3a2a1a;
+    padding-left:26px; position:relative; margin-bottom:5px;
+  }
+  .card li::before {
+    content:''; position:absolute; left:0; top:11px;
+    width:9px; height:9px; border-radius:50%; background:#dc822e;
+  }
+  .card.neu li::before { background:#6b3410; }
+  .card li b { font-weight:700; }
+
+  .wert {
+    display:inline-block; margin-top:10px;
+    background:#fbf3e8; border:1px solid #f0d9bd; border-radius:30px;
+    padding:6px 18px;
+    font-size:18px; font-weight:700; letter-spacing:1px; color:#c0691f;
+    text-transform:uppercase;
+  }
+
+  .hinweis {
+    font-family:'Philosopher', Georgia, serif;
+    font-style:italic; font-size:20px; color:#6b3410; line-height:1.4;
+    text-align:center; padding:0 20px 0;
+  }
+
+  /* ---------- Fuss ---------- */
+  .foot {
+    position:relative;
+    background:#6b3410;
+    padding:26px 70px 28px;
+    text-align:center;
+  }
+  .foot .gueltig {
+    font-size:17px; letter-spacing:2.5px; text-transform:uppercase;
+    color:rgba(247,241,228,0.62); margin-bottom:10px; font-weight:600;
+  }
+  .foot .cta {
+    font-family:'Philosopher', Georgia, serif;
+    font-size:31px; font-weight:700; color:#f7f1e4; line-height:1.24;
+  }
+  .foot .name {
+    margin-top:10px;
+    font-size:20px; font-weight:600; letter-spacing:3px; text-transform:uppercase;
+    color:#dc822e;
+  }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="head">
+      <span class="eyebrow">Aktionen · September 2026</span>
+      <h1>Diesen Monat<br>gibt es Öle geschenkt</h1>
+      <p>Alles, was im September läuft — auf einen Blick</p>
+    </div>
+
+    <div class="body">
+
+      <div class="card">
+        <div class="card-label">Für alle · ab 200 PV</div>
+        <h2>Copaiba 15 ml + Deep Blue Rub</h2>
+        <ul>
+          <li>Beides <b>gratis</b> bei jeder Bestellung ab 200 PV</li>
+          <li>Egal ob Neukundin oder seit Jahren dabei</li>
+        </ul>
+        <span class="wert">Wert 123 €</span>
+      </div>
+
+      <div class="card">
+        <div class="card-label">Für neue Konten · Diamond Club</div>
+        <h2>Wild Orange und Balance dazu</h2>
+        <ul>
+          <li>ab <b>100 PV</b> → Wild Orange gratis</li>
+          <li>ab <b>200 PV</b> → Wild Orange + Balance gratis</li>
+          <li>Konto über 12 Monate inaktiv? Dann zählst du wieder als neu</li>
+        </ul>
+        <span class="wert">Wert 167 €</span>
+      </div>
+
+      <div class="card neu">
+        <div class="card-label">Neu &amp; nur jetzt</div>
+        <h2>Herbst-Neuheiten</h2>
+        <ul>
+          <li><b>On Guard Stick</b> mit Echinacea — brandneu</li>
+          <li><b>Echinacea Öl 2.5 ml</b> — limitiert auf 2 Stück</li>
+          <li><b>Harvest Spice</b> und <b>Vanilla Chai</b> sind zurück</li>
+        </ul>
+      </div>
+
+      <p class="hinweis">Dazu: Cypress 15 ml gratis ab 125 PV Treuebestellung (bis 15.9.)<br>und 10 % auf Air Touch</p>
+    </div>
+
+    <div class="foot">
+      <div class="gueltig">Gültig 1. bis 30. September 2026</div>
+      <div class="cta">Schreib mir — ich stelle dir<br>deinen Warenkorb zusammen</div>
+      <div class="name">Patricia · 079 359 19 37</div>
+    </div>
+  </div>
+</body>
+</html>

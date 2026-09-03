@@ -142,6 +142,16 @@ Kurz, direkt, mit Namen — für die Kundinnen, die du einzeln anschreibst. Pers
 >
 > Wenn bei dir eh gerade was leer wird, wäre jetzt echt der Moment. Schreib mir kurz, ich schau dir nach, ob dein Konto noch aktiv ist. 😊
 
+### WhatsApp-Fassung MIT Flyer-Bild (kürzeste Variante)
+
+Flyer `flyer-september-2026.png` schicken, direkt darunter:
+
+> Hey [Name] 💛 schau mal, was im September läuft — ab 200 PV gibt's Copaiba und den Deep Blue Rub gratis dazu. Deep Blue ist bei uns das meistgebrauchte Produkt überhaupt, ich geh damit sogar nie mehr ohne wandern.
+>
+> Und falls du länger als ein Jahr nichts bestellt hast: dein Konto wurde aus Datenschutzgründen gelöscht, du zählst also wieder als Neukundin — und kriegst nochmal Öle im Wert von 167 € obendrauf.
+>
+> Sag mir einfach, was du brauchst, ich stell dir den Warenkorb zusammen. 😊
+
 ### Zusatz-Baustein: Öl-Abend (an jede der drei Fassungen anhängbar)
 
 > Und noch was Schönes: ich mache diesen Herbst und Winter wieder meine **Öl-Abende bei mir zuhause**. Gemütlich zusammensitzen, ich zeig dir, wie du die Öle ganz einfach in euren Alltag holst, und du mischst dir deinen eigenen Roller, den du mitnimmst. Termine jeweils 20 Uhr: **15.9. · 21.10. · 12.11. · 7.12.** — jeder Abend mit einem anderen Schwerpunkt, du kannst also auch mehrmals kommen. Hier der Flyer: https://drive.google.com/file/d/1nXfy0fbvsms8TshVuC8ILXpmbGKmvfHf/view?usp=sharing
