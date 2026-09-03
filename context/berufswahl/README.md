@@ -97,6 +97,13 @@ unterscheiden kann und muss — sie führen zu gegensätzlichen Empfehlungen:
 | **b) Frustrationstoleranz** | Bricht ab, sobald es nicht sofort geht; das Bild im Kopf ist besser als das Ergebnis | Trainierbar — und wichtig, weil es sonst später jedes Studium trifft. Sehr häufig bei schnellen Kindern, die es nicht gewohnt sind, dass etwas nicht gleich klappt |
 | **c) Belohnung liegt im Verstehen** | Er ist *fertig*, wenn er es kapiert hat — das Herstellen fügt für ihn nichts hinzu | **Kein Defizit.** Richtung: analysieren, ordnen, vermitteln, entscheiden — Umsetzung im Kopf/Text |
 | **d) Alter** | Kognitiv voraus, motorisch/organisatorisch altersgemäss oder jünger | Abwarten und in 1-2 Jahren nochmal schauen. Besonders bei übersprungenen Klassen |
+| **e) Abhängigkeit** | Er hätte gekonnt und gewollt, aber das Vorhaben brauchte einen Erwachsenen — Werkstatt, Werkzeug, Erlaubnis, Know-how — und der war nicht verfügbar | **Keine Aussage über ihn.** Nächstes Projekt so wählen, dass er niemanden dazu braucht |
+
+> ⚠️ **Ursache (e) wurde am 2026-09-03 ergänzt, und sie ist die wichtigste.**
+> Die Tabelle hatte vorher einen blinden Fleck: alle vier Ursachen lagen **im Kind**.
+> Von aussen sieht «war abhängig und hat gewartet» genau gleich aus wie «hat keine
+> Ausdauer» — und Erwachsene wählen fast immer die Erklärung, die im Kind liegt.
+> **Vor jeder anderen Ursache zuerst prüfen: Konnte er überhaupt allein anfangen?**
 
 Mehrere können zugleich zutreffen. **Zu unterscheiden ist Aufgabe von Modus 3**
 (ein kleines Umsetzungs-Erlebnis, danach die 5 Fragen) — nicht von einem Gespräch
