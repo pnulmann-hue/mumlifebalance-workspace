@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Die Salbe, ohne die ich nie mehr wandern gehe</title>
+</head>
+<body style="margin:0;padding:0;background-color:#faf6ec;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Ab 200 PV zwei Produkte geschenkt. Und für Neukundinnen kommt sogar noch mehr dazu. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#faf6ec;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+
+          <!-- HEADER -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#6b3410 0%,#b5601f 55%,#dc822e 100%);background-color:#b5601f;border-radius:16px 16px 0 0;padding:44px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-bottom:18px;">
+                    <span style="background-color:rgba(247,241,228,0.22);color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">AKTIONEN SEPTEMBER 2026</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h1 style="margin:0 0 14px 0;font-family:Georgia,serif;font-size:30px;font-weight:bold;color:#f7f1e4;line-height:1.28;">Die Salbe, ohne die ich nie mehr wandern gehe</h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:rgba(247,241,228,0.78);line-height:1.5;">Und warum ein gelöschtes Konto diesen Monat dein Vorteil ist</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- BODY -->
+          <tr>
+            <td style="background-color:#ffffff;padding:40px;">
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Hallo %FIRSTNAME%</p>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">der September ist der Monat, in dem ich jedes Jahr merke, dass der Herbst wirklich kommt: die Kinder schleppen die ersten Schnupfnasen heim, abends wird's früh dunkel und ich hab plötzlich wieder Lust auf warme Düfte in der Küche.</p>
+
+              <p style="margin:0 0 28px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Und weil doTERRA diesen Monat gleich mehrere Aktionen zusammenlegt, kriegst du hier alles auf einen Blick &mdash; plus meine ehrliche Meinung dazu, was davon wirklich in deinen Warenkorb gehört. Das komplette Aktions-Booklet mit allen Produkten kannst du dir <a href="AKTIONSFLYER-LINK-EINSETZEN" style="color:#c0691f;font-weight:bold;text-decoration:underline;">hier in Ruhe anschauen</a>.</p>
+
+              <h2 style="margin:0 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#6b3410;line-height:1.35;">Ab 200 PV: Copaiba und Deep Blue Rub geschenkt</h2>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 22px 0;">
+                <tr><td style="background-color:#fbf3e8;border:1px solid #f0d9bd;border-radius:12px;padding:20px 24px;">
+                  <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#c0691f;text-transform:uppercase;letter-spacing:2px;">1.9. BIS 30.9.2026 &middot; WERT 123 &euro;</p>
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;">Bei jeder Bestellung ab 200 PV kommen <strong>Copaiba 15 ml</strong> und der <strong>Deep Blue Rub</strong> gratis dazu. Egal ob du seit Jahren dabei bist oder gerade erst anfängst.</p>
+                </td></tr>
+              </table>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Und ehrlich, das sind genau die zwei Produkte, die ich sowieso nachbestellen würde.</p>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;"><strong>Deep Blue Rub</strong> ist bei uns zuhause das meistgebrauchte Produkt überhaupt. Meine Kinder machen Sport, kommen abends mit schweren Beinen heim und im Wachstum ziept sowieso ständig irgendwas &mdash; die Salbe gehört bei uns fest zum Abendritual. Ich selber nehm sie für den Nacken, wenn ich zu lange am Laptop gesessen hab. Und beim Wandern hab ich sie immer im Rucksack, da geh ich echt nie mehr ohne los.</p>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;"><strong>Copaiba</strong> ist mein Feierabend-Öl. Wenn bei mir irgendwo was zwickt, kommt es auf die Stelle, und abends nehm ich einen Tropfen unter die Zunge, wenn ich vom Tag runterkommen will. Es riecht dabei nicht mal aufdringlich, was ich bei einem Öl fürs Schlafzimmer sehr schätze.</p>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+                <tr><td style="background-color:#f7f1e4;border-left:4px solid #dc822e;border-radius:0 12px 12px 0;padding:20px 24px;">
+                  <p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:20px;color:#4a2c12;line-height:1.6;">&bdquo;Ohne den Deep Blue Rub geh ich nie mehr wandern. Wirklich nie mehr.&ldquo;</p>
+                </td></tr>
+              </table>
+
+              <h2 style="margin:36px 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#6b3410;line-height:1.35;">Für Neukundinnen: nochmal Gratis-Öle im Wert von 167 &euro;</h2>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Parallel läuft die Diamond-Club-Aktion, und die ist ausschliesslich für neue Konten:</p>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 22px 0;">
+                <tr><td style="background-color:#fbf3e8;border:1px solid #f0d9bd;border-radius:12px;padding:20px 24px;">
+                  <p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;">&#9656; ab <strong>100 PV</strong> gibt es <strong>Wild Orange</strong> gratis dazu</p>
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;">&#9656; ab <strong>200 PV</strong> gibt es <strong>Wild Orange und Balance</strong> gratis dazu</p>
+                </td></tr>
+              </table>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Jetzt denkst du vielleicht: schön für die Neuen, ich bin ja längst dabei. Aber genau da wird's spannend.</p>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">doTERRA hat alle Konten gelöscht, die zwölf Monate lang nicht aktiv waren. Das passiert aus Datenschutzgründen und klingt erstmal blöd, hat aber ehrlich gesagt nur Vorteile für dich. Denn wenn du damals ein Home Essential Kit bestellt hast, hält das ja ewig &mdash; aber nach einem Jahr ist das eine oder andere Fläschchen halt doch langsam leer. Und statt einfach nachzubestellen, kannst du dich jetzt ganz easy neu einschreiben und bekommst alle Neukundinnen-Vorteile nochmal, zum Beispiel die Versandkosten gutgeschrieben. Plus eben die Gratisprodukte aus der aktuellen Aktion.</p>
+
+              <p style="margin:0 0 28px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Ob du noch ein aktives Konto hast oder nicht, kann ich dir in zwei Minuten nachschauen. Antworte mir einfach auf diese E-Mail oder schreib mir eine WhatsApp.</p>
+
+              <h2 style="margin:36px 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#6b3410;line-height:1.35;">Und wenn du regelmässig von solchen Aktionen profitieren willst</h2>
+
+              <p style="margin:0 0 28px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Für alle, die bei so einer Aktion gern öfter mitmachen würden: ich hätte da eine Idee, die ich hier nicht in aller Öffentlichkeit breittreten will. &#128522; Antworte mir auf diese E-Mail oder schreib mir eine WhatsApp, dann erzähl ich dir, wie ich das handhabe.</p>
+
+              <h2 style="margin:36px 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#6b3410;line-height:1.35;">Neu im September: On Guard Stick mit Echinacea</h2>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Der On Guard Stick ist brandneu und für mich das Familienprodukt dieser Saison. Die Mischung, die eh schon alle lieben, jetzt als Stick mit Kokosöl und Sonnenblumenkernwachs, dazu angereichert mit Echinacea. Er lässt sich unkompliziert auftragen und passt in jede Jackentasche, was bei uns mit vier Kindern und dem morgendlichen Chaos ehrlich gesagt entscheidend ist.</p>
+
+              <p style="margin:0 0 28px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Dazu gibt es das <strong>Echinacea Öl 2.5 ml</strong>, und zwar nur jetzt und limitiert auf zwei Stück pro Bestellung. Echinacea wird seit vielen Jahren traditionell genutzt, unterstützt die Pflege der Haut und ist ein schöner Begleiter durch die wechselnden Jahreszeiten. Wenn dich das interessiert, würde ich es dir gleich diesen Monat mitbestellen, weil es danach wieder weg ist.</p>
+
+              <h2 style="margin:36px 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#6b3410;line-height:1.35;">Ätherische Öle im Herbst und Winter &mdash; meine liebste Öl-Zeit</h2>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Im Sommer stehen bei uns die Fenster offen und wir sind sowieso den ganzen Tag draussen. Aber sobald es früher dunkel wird und wir alle wieder mehr drinnen hocken, verändert sich die ganze Stimmung im Haus &mdash; und genau da kommen die Öle bei mir am meisten zum Einsatz. Ein Duft macht innerhalb von zwei Minuten aus einem grauen Nachmittag was Gemütliches, und die Roller in der Jackentasche sind in der kalten Jahreszeit ehrlich gesagt mein wichtigstes Utensil.</p>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Ein paar Ideen, die du sofort ausprobieren kannst:</p>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 28px 0;">
+                <tr><td style="background-color:#fbf3e8;border:1px solid #f0d9bd;border-radius:12px;padding:20px 24px;">
+                  <p style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;"><strong>Morgens, wenn es draussen noch dunkel ist:</strong> Wild Orange in den Diffuser. Der Duft macht bei uns die Küche wach, bevor überhaupt jemand redet.</p>
+                  <p style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;"><strong>Nachmittags im Wohnzimmer:</strong> Harvest Spice oder Vanilla Chai mit Zimt, Nelke und Vanille. Das ist Herbst zum Einatmen und riecht, als hättest du gebacken, auch wenn du es gar nicht hast.</p>
+                  <p style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;"><strong>Für unterwegs:</strong> der On Guard Stick in der Jackentasche, in der Schultasche und im Auto. Einmal über die Handgelenke, fertig.</p>
+                  <p style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;"><strong>Wenn die Heizungsluft drückt:</strong> Air Touch auf Brust und Nacken. Er ist schon fertig verdünnt, deshalb können die Kinder ihn sich selber auftragen.</p>
+                  <p style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;"><strong>Abends zum Runterfahren:</strong> ein Tropfen Copaiba und der Diffuser läuft mit etwas Warmem dazu.</p>
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;"><strong>Nach dem Sport oder einer langen Wanderung:</strong> Deep Blue Rub auf Nacken, Schultern und Beine.</p>
+                </td></tr>
+              </table>
+
+              <h2 style="margin:36px 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#6b3410;line-height:1.35;">Mehr davon live: meine Öl-Abende bei mir zuhause</h2>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Wenn du das lieber einmal live siehst, statt es in einer Mail zu lesen, dann komm doch vorbei. Wir sitzen gemütlich zusammen, ich zeige dir, wie du die Öle ganz einfach in euren Alltag holst, und du mischst dir deinen eigenen Roller, den du am Ende mitnimmst. Vorwissen brauchst du keins, Neugier reicht völlig.</p>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 22px 0;">
+                <tr><td style="background-color:#f7f1e4;border-left:4px solid #dc822e;border-radius:0 12px 12px 0;padding:20px 24px;">
+                  <p style="margin:0 0 12px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#c0691f;text-transform:uppercase;letter-spacing:2px;">TERMINE &middot; JEWEILS 20.00 UHR</p>
+                  <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;">Dienstag, 15. September</p>
+                  <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;">Mittwoch, 21. Oktober</p>
+                  <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;">Donnerstag, 12. November</p>
+                  <p style="margin:0 0 14px 0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;">Montag, 7. Dezember</p>
+                  <p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:15px;color:#6b3410;line-height:1.6;">Jeder Abend mit einem anderen Herbst- oder Winter-Schwerpunkt</p>
+                </td></tr>
+              </table>
+
+              <p style="margin:0 0 22px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Du kannst also auch mehrmals kommen. Anmelden kannst du dich mit einer Antwort auf diese E-Mail oder einer WhatsApp an mich, die Adresse schicke ich dir dann.</p>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 28px 0;">
+                <tr><td align="center">
+                  <a href="https://drive.google.com/file/d/1nXfy0fbvsms8TshVuC8ILXpmbGKmvfHf/view?usp=sharing" style="display:inline-block;background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;padding:15px 32px;border-radius:30px;">Flyer mit allen Infos ansehen</a>
+                </td></tr>
+              </table>
+
+              <h2 style="margin:36px 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#6b3410;line-height:1.35;">Was sonst noch läuft</h2>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 28px 0;">
+                <tr><td style="background-color:#fbf3e8;border:1px solid #f0d9bd;border-radius:12px;padding:20px 24px;">
+                  <p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;">&#9656; <strong>Cypress 15 ml gratis</strong> bei einer Treuebestellung ab 125 PV &mdash; aber nur bis zum 15. September</p>
+                  <p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;">&#9656; <strong>10 % Rabatt auf Air Touch</strong>, den fertig verdünnten Roll-on für Brust und Nacken</p>
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#3a2a1a;line-height:1.7;">&#9656; <strong>Harvest Spice und Vanilla Chai</strong> sind zurück, die beiden Herbstdüfte, nach denen ihr jedes Jahr fragt</p>
+                </td></tr>
+              </table>
+
+              <h2 style="margin:36px 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#6b3410;line-height:1.35;">Und jetzt du</h2>
+
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Antworte mir einfach auf diese E-Mail oder schreib mir eine WhatsApp und sag mir, was du gerade brauchst &mdash; ich stell dir deinen Warenkorb so zusammen, dass du die Aktionen wirklich mitnimmst und nicht knapp drunter landest.</p>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 28px 0;">
+                <tr><td align="center">
+                  <a href="https://wa.me/41793591937" style="display:inline-block;background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;padding:15px 32px;border-radius:30px;">Schreib mir eine WhatsApp</a>
+                </td></tr>
+              </table>
+
+              <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:16px;color:#3a2a1a;line-height:1.75;">Ich freu mich auf dich.</p>
+              <p style="margin:0;font-family:Georgia,serif;font-size:18px;color:#6b3410;line-height:1.6;">Patricia</p>
+
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td style="background-color:#6b3410;border-radius:0 0 16px 16px;padding:26px 40px;text-align:center;">
+              <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#f7f1e4;text-transform:uppercase;letter-spacing:1px;">PATRICIA ULMANN &middot; MUM LIFE BALANCE</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:rgba(247,241,228,0.6);">Natürlich mehr Energie im Mama-Alltag</p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
