@@ -1,34 +1,67 @@
 {
-  "profil": "mentoring",
-  "modus": "tagesplan",
-  "disg": "Rot",
-  "disg_sekundaer": "Gelb",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
-  "aktives_produkt": "Bio-Check",
-  "wochen_fokus": "(kein Fokus eingetragen)",
-  "sales_pattern": "",
-  "wochen_cta": "",
-  "monat_kontext": "",
-  "produkt_themen": null,
-  "vorschlag_idee": "Idee: Patricia zeigt einen Screenshot aus ihrem Teamchat, in dem eine Network-Mama fragt, wie sie ihre \"warme Liste\" richtig strukturiert — und gibt direkt die drei häufigsten Fehler, die sie dabei sieht, damit keine Zeit verschwendet wird.\n\nMuster: Expertise / Fehler-Reframing (Schmerzpunkt schärfen)\n\nCTA: \"Wenn du auch unsicher bei deiner Liste bist — lass mich schauen. Bio-Check buchen, Link in Bio.\"",
-  "wochen_fokus_quelle": "fallback",
-  "launch_tag": null,
-  "launch_vorlage": null,
-  "kontext_snapshot": {
-    "kw": 36,
-    "wochentag": "Mittwoch",
-    "datum": "2026-09-02"
-  },
-  "fragen": [
-    "Was hast du erlebt?",
-    "Hast du grad einen Gedanken zum Thema?",
-    "Oder Standard-Pool?"
-  ],
-  "gesendet_am": "2026-09-02T08:59:01.059Z",
-  "telegram_message_id": 1170,
-  "patricia_antworten": [],
-  "patricia_fotos": [],
-  "patricia_videos": [],
-  "status": "warten_auf_antwort"
+  "datum": "2026-09-03",
+  "profile": {
+    "mentoring": {
+      "profil": "mentoring",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Instagram-Strategie für NM",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Quick Win",
+        "titel": "Quick Win",
+        "story_ziel": "Eine Formel/Methode die SOFORT funktioniert — Vertrauen + Expertise.",
+        "kaeufertyp": "Willi",
+        "cta": "thematisch passend (STORY / BIO)",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 36,
+        "wochentag": "Donnerstag",
+        "datum": "2026-09-03"
+      },
+      "gesendet_am": "2026-09-03T04:42:01.276Z",
+      "telegram_message_id": 1171,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    },
+    "doterra": {
+      "profil": "doterra",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Zurück zu deiner Energie",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Quick Win",
+        "titel": "Quick Win",
+        "story_ziel": "Eine Formel/Methode die SOFORT funktioniert — Vertrauen + Expertise.",
+        "kaeufertyp": "Willi",
+        "cta": "thematisch passend (STORY / BIO)",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 36,
+        "wochentag": "Donnerstag",
+        "datum": "2026-09-03"
+      },
+      "gesendet_am": "2026-09-03T04:42:02.146Z",
+      "telegram_message_id": 1172,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    }
+  }
 }
