@@ -12,6 +12,29 @@ tags: [basteln, inventar, digital]
 
 ---
 
+## 🔍 Suchen statt blättern — `digi-index.py`
+
+**Diese Datei ist die Übersicht. Für die Suche gibt es ein Skript** (angelegt 2.9.2026):
+
+```bash
+python scripts/basteln/digi-index.py badewanne
+python scripts/basteln/digi-index.py schmetterling --limit 40
+python scripts/basteln/digi-index.py hochzeit --ordner
+```
+
+**Warum das gebraucht wurde:** Diese Datei listet die ~60 Themenwelten mit Namen und Dateizahl — aber nicht, welche Motive drinstecken. Bei den physischen Stempeln kann Claude sagen „nimm `1084`, Spruch 5", bei den digitalen ging nur „schau mal in Elemente-Hochzeit-Heute, 213 Dateien". Das Skript schliesst diese Lücke.
+
+**Was der Index enthält:** **5'251 Motive** aus **292 Ordnern** (7'526 Dateien, PNG/SVG/DXF mit gleichem Namen zusammengefasst). 104 Dateien ohne sprechenden Namen (Facebook-Downloads, Kamera-IDs) sind aussortiert.
+
+**Neu aufbauen** nach jedem Materialzukauf:
+```bash
+python scripts/basteln/digi-index.py --neu-aufbauen
+```
+
+Der Index liegt als `context/basteln/digi-index.json` — dadurch ist er auch nutzbar, **wenn der OneDrive-Ordner nicht erreichbar ist** (andere Session, andere Maschine).
+
+---
+
 ## 🖨️ Dein Plotter-Setup
 
 - **Silhouette** — 114 `.studio3` + 8 `.studio` Dateien (Silhouette-Studio-Format)
