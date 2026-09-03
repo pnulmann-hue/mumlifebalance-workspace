@@ -51,11 +51,11 @@ Jetzt denkst du vielleicht: schön für die Neuen, ich bin ja längst dabei. Abe
 
 doTERRA hat alle Konten gelöscht, die zwölf Monate lang nicht aktiv waren. Das passiert aus Datenschutzgründen und klingt erstmal blöd, hat aber ehrlich gesagt nur Vorteile für dich. Denn wenn du damals ein Home Essential Kit bestellt hast, hält das ja ewig — aber nach einem Jahr ist das eine oder andere Fläschchen halt doch langsam leer. Und statt einfach nachzubestellen, kannst du dich jetzt ganz easy neu einschreiben und bekommst alle Neukundinnen-Vorteile nochmal, zum Beispiel die Versandkosten gutgeschrieben. Plus eben die Gratisprodukte aus der aktuellen Aktion.
 
-Ob du noch ein aktives Konto hast oder nicht, kann ich dir in zwei Minuten nachschauen. Schreib mir einfach.
+Ob du noch ein aktives Konto hast oder nicht, kann ich dir in zwei Minuten nachschauen. Antworte mir einfach auf diese E-Mail oder schreib mir eine WhatsApp.
 
 ### Und wenn du regelmässig von solchen Aktionen profitieren willst
 
-Für alle, die bei so einer Aktion gern öfter mitmachen würden: ich hätte da eine Idee, die ich hier nicht in aller Öffentlichkeit breittreten will. 😊 Antworte einfach auf diese Mail oder schreib mir auf Instagram, dann erzähl ich dir, wie ich das handhabe.
+Für alle, die bei so einer Aktion gern öfter mitmachen würden: ich hätte da eine Idee, die ich hier nicht in aller Öffentlichkeit breittreten will. 😊 Antworte mir auf diese E-Mail oder schreib mir eine WhatsApp, dann erzähl ich dir, wie ich das handhabe.
 
 ### Neu im September: On Guard Stick mit Echinacea
 
@@ -85,7 +85,7 @@ Die Termine, jeweils um 20 Uhr:
 - Donnerstag, 12. November
 - Montag, 7. Dezember
 
-Jeder Abend hat einen anderen Herbst- oder Winter-Schwerpunkt, du kannst also auch mehrmals kommen. [Hier ist der Flyer mit allen Infos](https://drive.google.com/file/d/1nXfy0fbvsms8TshVuC8ILXpmbGKmvfHf/view?usp=sharing) — anmelden kannst du dich einfach mit einer Nachricht an mich, die Adresse schicke ich dir dann.
+Jeder Abend hat einen anderen Herbst- oder Winter-Schwerpunkt, du kannst also auch mehrmals kommen. [Hier ist der Flyer mit allen Infos](https://drive.google.com/file/d/1nXfy0fbvsms8TshVuC8ILXpmbGKmvfHf/view?usp=sharing) — anmelden kannst du dich mit einer Antwort auf diese E-Mail oder einer WhatsApp an mich, die Adresse schicke ich dir dann.
 
 ### Was sonst noch läuft
 
@@ -95,7 +95,7 @@ Jeder Abend hat einen anderen Herbst- oder Winter-Schwerpunkt, du kannst also au
 
 ### Und jetzt du
 
-Wenn du magst, schreib mir kurz, was du gerade brauchst — ich stell dir deinen Warenkorb so zusammen, dass du die Aktionen wirklich mitnimmst und nicht knapp drunter landest.
+**Antworte mir einfach auf diese E-Mail oder schreib mir eine WhatsApp** und sag mir, was du gerade brauchst — ich stell dir deinen Warenkorb so zusammen, dass du die Aktionen wirklich mitnimmst und nicht knapp drunter landest.
 
 Ich freu mich auf dich.
 Patricia
@@ -107,7 +107,7 @@ Patricia
 - **Compliance-Check gemacht:** keine Heilversprechen, alle Produkt-Erwähnungen im „bei mir / bei uns"-Frame, Echinacea nur mit der offiziellen Formulierung aus dem Aktions-Booklet (Hautpflege, Begleiter durch wechselnde Jahreszeiten). Bitte trotzdem nochmal drüberlesen — vor allem die Deep-Blue-Passage.
 - **Bewusst offen gelassen:** ob sich die 200-PV-Aktion und die Diamond-Club-Aktion kombinieren lassen. Steht so nicht im Booklet — deshalb im Text als Anlass fürs Nachfragen genutzt.
 - **Der Tipp für Vielbestellerinnen** ist absichtlich nur angedeutet und wandert in die DM.
-- **Vor dem Versand einsetzen:** dein Bestell-Link und dein Instagram-Handle im Schluss-CTA.
+- **Vor dem Versand einsetzen:** dein Bestell-Link im Schluss-CTA. Der WhatsApp-Button in der HTML-Fassung zeigt auf `wa.me/41793591937` (die Nummer vom Workshop-Flyer) — wenn du eine andere Nummer willst, sag Bescheid.
 - ⚠️ **`[AKTIONSFLYER-LINK EINSETZEN]` im ersten Absatz ersetzen** — für das September-Booklet fehlt mir noch eine Adresse. Wenn du magst, lade ich dir das PDF in dein Google Drive und hol dir den Freigabe-Link, dann setze ich ihn überall ein.
 - **Workshop-Flyer ist verlinkt:** `drive.google.com/file/d/1nXfy0fbvsms8TshVuC8ILXpmbGKmvfHf/view` — bitte einmal aus einem fremden Browser (oder Inkognito) öffnen und prüfen, dass die Freigabe auf „alle mit dem Link" steht. Sonst sehen deine Kundinnen nur eine Zugriffs-Anfrage.
 - **Der Workshop-Block trägt den weichen CTA:** niemand muss etwas kaufen, um zu kommen. Über den Roller, den jede mit heimnimmt, ergibt sich das Öl-Gespräch dann von allein.
