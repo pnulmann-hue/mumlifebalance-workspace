@@ -233,6 +233,54 @@ Volle Doku: `reference/montag-workflow-v2.md`.
 
 Lädt den Garten-Kontext (Standort Appenzellerland, 920 m, Permakultur-Philosophie) und greift auf die Notion-Datenbanken (Samen, Beetplan, Gartentagebuch, Wissensarchiv) zu. Gibt einen aktuellen Status, zeigt was ansteht und fragt, was heute im Garten geplant ist. Berücksichtigt Mondkalender, Mischkultur, Fruchtfolge und die kurze alpine Vegetationsperiode.
 
+### /basteln (Hobby, seit 2026-08-18)
+
+**Zweck:** Persönlicher Bastel-Assistent für Papierbasteln — Material-Überblick, Projekt-Ideen aus **eigenem** Bestand, Anlass-Vorlauf und doTERRA-Verpackungen.
+
+**Löst drei Probleme:** kein Überblick (8'070 digitale Dateien + volle Schubladen) · nie vorbereitet bei Geburtstagen · Pinterest-Ideen nicht auf eigenes Material gematcht.
+
+**Wissensgrundlagen** (in `context/basteln/`):
+- `README.md` — Systemlogik + Arbeitsregeln
+- `inventar-digital.md` — vollständiger Katalog: 467 Verpackungs-Dateien (21 Bauformen), 343 Karten, 70 Anhänger, 2'287 digitale Papiere, ~60 Digistamp-Themenwelten, Gonis-Techniken
+- `inventar-stempel.md` — ⭐ **Herzstück:** ID-System (**vierstellig mit Typ-Block:** 1000er Clearstamps, 2000er Holzstempel, 3000er Stanzen, 4000er Schablonen, 5000er Embossing, 6000er Werkzeuge, 7000er Farben — physisch in 10er-Bündeln mit Gummi und Bündel-Kärtchen), Tag-Vokabular, Erfassungs-Workflow. Physische Ablage nach Nummer, thematische Suche macht Claude über die Tags. Antwort immer mit Nummer + Typ
+- `inventar-physisch.md` — Werkzeuge/Papier/Farben (wird per Foto gefüllt)
+- `projekt-ideen.md` — Projekt-Matches + Anlass-Material-Matrix
+- `shop-recherche.md` — wie Hersteller-Ideen dazukommen (was geht, was nicht)
+- `stempelsets-sf.md` — erfasste Scrapbook-Forever-Sets mit Technik-Auswertung
+- `context/persoenlich/basteln-anlaesse.md` — Anlass-Liste, **gitignored** (Namen/Geburtsdaten)
+
+**7 Modi:** „Was schenke ich X?" · Inventar erfassen (Foto) · Set-Recherche · Pinterest-Check · Bastel-Check (Vorlauf) · doTERRA-Verpackung · Batch-Session planen.
+
+**Setup:** Silhouette-Plotter (Print&Cut kalibriert) · Envelope- + Gift-Bag-Punchboard · Copic-Marker · Quellen Mundart Stempel (CH) / Scrapbook Forever / Gonis.
+
+**Digitale Quelle:** `C:\Users\pnulm\OneDrive\Dokumente\Patricia\Hobby\Basteln\`
+
+**Nicht möglich (getestet 2026-08-18):** Pinterest-Pins scrapen (nur App-Shell, Pins hinter Login) · Facebook-Gruppen durchsuchen · Sets über die Kalender-YouTube-Videos identifizieren. → Patricia schickt Screenshots, Claude wertet aus.
+
+**Harte Regeln:** nur vorhandenes Material vorschlagen · Dateipfade und IDs mitgeben · keine Nummern erfinden · keine Masse erfinden · doTERRA-Öle bleiben im Original-Etikett, keine Wirkversprechen · fremde Produktfotos nur in `context/persoenlich/` (Repo ist public).
+
+### /berufswahl (Familie, seit 2026-09-03)
+
+**Zweck:** Richtungs-Kompass für einen Jugendlichen aus Patricias Familie, der noch keine Idee hat, in welche Richtung er will. **Alle Personendaten** (Name, Alter, Klasse, Schule, Zielschule, Termine) liegen ausschliesslich in `context/persoenlich/berufswahl/` — gitignored, weil das Repo public ist. Skill und Wissensbasis bleiben personenfrei.
+
+**Kein Berufstest.** Ein Interessentest in dem Alter misst vor allem, was jemand zufällig schon erlebt hat. Stattdessen sammelt der Skill über Monate/Jahre Datenpunkte auf **5 Achsen** (Material · Modus · Antrieb · Kontext · **Umsetzung**) und fragt konsequent nach **Tätigkeiten, nie nach Berufen**.
+
+**8 Modi:** Start-Gespräch (einmalig) · Wochen-Impuls (2-4 Fragen, alle 1-2 Wochen) · Erlebnis nachbesprechen (5 feste Fragen nach Schnuppern/Kurs/Projekt) · Richtungen zeigen (ab ≥10 Beobachtungen, immer Gymi- UND Lehr-Weg) · Reinschnupper-Plan (genau ein nächster Schritt) · Eltern-Auswertung (2×/Jahr) · Gymi-Entscheid-Check · **Vertiefung Interessenbereich** (zerlegt einen Test-Label wie «Forschung» in etwas Testbares).
+
+**Wissensgrundlagen** (in `context/berufswahl/`, public — keine persoenlichen Daten):
+- `README.md` — Systemlogik, 4 Achsen, 10 harte Arbeitsregeln, realistischer Rhythmus
+- `fragen-pool.md` — Start-Blöcke, Wochen-Rotation, Erlebnis-Fragen, **Abbruch-Nachbesprechung** (für Vorhaben, die nicht passiert sind), Umformulierungen bei „keine Ahnung", verbotene Fragen
+- `bildungswege-ch.md` — 3 Hauptwege rückwärts gedacht, Übersetzungs-Tabelle Achse→Richtung→Weg, Gymi-Situation Appenzellerland/Ostschweiz
+- **README zusätzlich:** 5. Achse «Umsetzung» · Ursachen-Tabelle a–e für «macht nichts fertig», inkl. **(e) Abhängigkeit** (konnte gar nicht allein anfangen) — zuerst (e) prüfen, sonst landet man reflexhaft bei Ursachen, die im Kind liegen · «Labels sind das Gegenteil von Hilfe» · Sonderfall «vielseitig Interessierter»
+- `reinschnuppern-katalog.md` — Möglichkeiten in 4 Aufwand-Stufen + Anfrage-Vorlage
+- `vertiefung-interessenbereiche.md` — pro Interessenbereich 4 **trennende** Fragen (Forschung, Technik, Informatik, Natur, Menschen, Wirtschaft, Gestaltung, Handwerk) + Regel 0: ein Test-Label ist eine Hypothese, kein Befund
+
+**Persoenliche Daten** (in `context/persoenlich/berufswahl/`, **gitignored** — Repo ist public): `profil.md` · `erlebnis-log.md` · `richtungen.md` · `fertig-liste.md` (nur was fertig geworden ist — Gegengewicht zum Eltern-Label «der Theoretiker», in fünf Jahren mehr wert als jedes Interessenprofil) · `schnupper-plan.md` (Schnuppern variiert **das Medium, nicht das Thema** — jede Idee beantwortet eine offene Frage).
+
+**Harte Regeln:** max 4 Fragen pro Runde · nie einen Beruf zuweisen (nur Hypothese + Test) · „keine Ahnung" ist gültig · nichts bewerten (Gamen ist ein Datenpunkt) · kein Druck im Ton · **keine erfundenen Termine/Fristen/Löhne** — immer per WebSearch auf berufsberatung.ch oder die Schul-Website · nach jeder Runde die Datei aktualisieren.
+
+**Nächster Ausbaustufe (offen):** Telegram-Bot analog Garten-Bot, damit der Wochen-Impuls von selbst aufs Handy kommt.
+
 ### /mealplan
 
 **Zweck:** Persönlicher Kochassistent und Meal Planning Bot starten.
@@ -607,6 +655,42 @@ MCP-Server, der Claude direkten Zugriff auf ActiveCampaign gibt — registriert 
 - **Migration:** ersetzt den Vorgänger unter `scripts/activecampaign-mcp/` (17 Tools) als Superset. Der alte Ordner bleibt nur, weil die `bulk-upload-*.mjs`-Skripte dort die Credentials aus `.mcp.json` lesen.
 - **🟢 Für ALLE Skills verfügbar:** Die Tools sind global da (kein „Verbinden" nötig). Tool-Katalog mit Pflicht-Args + Listen-IDs + Limits: **`reference/activecampaign-mcp-tools.md`** — jeder Skill, der AC braucht (`/funnel`, `/cockpit`, `/produkt`, Bots), liest diese Datei statt zu raten.
 - **Doku:** `04-projects/activecampaign-mcp/README.md`.
+
+### Bastel-Set-Lookup (`scripts/basteln/`, seit 2026-08-18)
+
+**Holt zu einer Scrapbook-Forever-Artikelnummer den Set-Inhalt und die Beispielkarten des Design-Teams.** Schliesst die Lücke „ich hab das Set, aber keine Idee dazu".
+
+- **Sprache:** Node.js (ESM, nur `fetch` — keine npm-Pakete)
+- **Nutzung:**
+  ```bash
+  node scripts/basteln/sf-lookup.mjs SF363
+  node scripts/basteln/sf-lookup.mjs SF363 SF370 --bilder
+  ```
+- **Liefert:** Set-Name · Preis + Altpreis · exakte Inhaltsangabe mit Massen · URLs aller Beispielkarten (typisch 12 pro Set)
+- **`--bilder`:** lädt die Beispielkarten nach `context/persoenlich/basteln-shopbilder/<Nr>/` (**gitignored** — Urheberrecht, Repo ist public). Claude liest sie und beschreibt die Techniken in eigenen Worten.
+- **Shop:** epages, per `curl` erreichbar (kein Browser nötig). Mundart Stempel (Gambio) hat kein Nummern-System → dort Suchwort-Recherche.
+- **Facebook-Gruppen sind nicht scrapebar** (Login-Wall + fremde Inhalte) → Screenshot-Weg, siehe `context/basteln/shop-recherche.md`.
+
+### Digitales Bastel-Material durchsuchen (`scripts/basteln/digi-index.py`, seit 2026-09-02)
+
+**Macht Patricias ~8'000 digitale Bastel-Dateien durchsuchbar** — Digistamps, Plotter-Vorlagen, Verpackungen, digitale Papiere. Schliesst die Lücke, dass `inventar-digital.md` nur die Themenwelten listet, nicht die einzelnen Motive.
+
+- **Sprache:** Python 3 (nur Standardbibliothek)
+- **Index aufbauen** (nach Materialzukauf):
+  ```bash
+  python scripts/basteln/digi-index.py --neu-aufbauen
+  ```
+- **Suchen:**
+  ```bash
+  python scripts/basteln/digi-index.py badewanne
+  python scripts/basteln/digi-index.py schmetterling --limit 40
+  python scripts/basteln/digi-index.py hochzeit --ordner
+  ```
+- **Umfang:** 5'251 Motive aus 292 Themenwelten (PNG/SVG/DXF mit gleichem Namen zusammengefasst). Sucht in Dateinamen **und** Ordnernamen.
+- **Index:** `context/basteln/digi-index.json` — committed, dadurch auch ohne Zugriff auf den OneDrive-Ordner nutzbar
+- **Quelle:** `C:\Users\pnulm\OneDrive\Dokumente\Patricia\Hobby\Basteln\`
+
+**`/basteln` Modus 0 nutzt das Skript verbindlich** — nie aus `inventar-digital.md` raten, immer suchen.
 
 ### Kochbot-RAG (`scripts/kochbot-rag/`)
 
