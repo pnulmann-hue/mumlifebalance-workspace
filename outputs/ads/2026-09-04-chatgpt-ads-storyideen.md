@@ -71,17 +71,17 @@ Entwurfs-Kampagne „Mum Life Balance campaign" (Typ Klicks, noch nicht bereitge
 - [x] **Punkt 3 — robots.txt (OAI-AdsBot):** bereits ok. ThriveCart blockt nur fremde `/private-*`-Pfade, WordPress nur `/wp-admin/`. `/storyideen` ist frei → OAI-AdsBot darf crawlen. **Nichts zu tun.**
 - [x] **Punkt 4 — Pixel angelegt:** „Mum Life Balance Pixel", Pixel-ID `VanFa9UJwn47VgwSWc1goK`
 - [x] **Punkt 5 — Conversion-Ereignis angelegt:** „Kauf Storyideen", Schlüssel `order_created`, Attributionsfenster 30 Tage
-- [ ] **Basiscode in ThriveCart einbauen** (Checkout → Tracking, Kopfbereich) — auf Verkaufs-/Checkout-Seite:
+- [x] **Basiscode in ThriveCart eingebaut** (Checkout → Tracking → Custom → Feld „All pages") ✅ **verifiziert live** (4.9.: `oaiq`=function, SDK geladen) — auf Verkaufs-/Checkout-Seite:
   ```html
   <script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"VanFa9UJwn47VgwSWc1goK"});</script>
   ```
-- [ ] **Event-Code auf der Danke-/Erfolgsseite** (nach dem Basiscode) — feuert nur bei Kauf:
+- [x] **Event-Code eingebaut** (Checkout → Tracking → Custom → Feld „Main product" + Häkchen „Only run this code the first time…" gegen Doppelzählung) ✅ — feuert nur bei Kauf:
   ```html
   <script>oaiq("track","order_created");</script>
   ```
   *(Stufe 2 später: Bestellwert mitschicken → `oaiq("track","order_created",{value:19,currency:"CHF"});`)*
-- [ ] **Punkt 6 — noindex** der Danke-/Erfolgsseite (ThriveCart-Erfolgsseiten sind i. d. R. eh nicht indexiert — beim Einbau prüfen)
-- [ ] **Punkt 7 — Messung prüfen** mit „Pixel Helper"-Browser-Erweiterung (Besuch + Event grün)
+- [x] **Punkt 6 — Doppelzählung** entschärft (ThriveCart-Häkchen „nur beim ersten Mal"). noindex: ThriveCart-Erfolgsseiten sind nicht indexiert.
+- [x] **Punkt 7 — Basis-Messung geprüft** (per Code auf der Live-Seite, 4.9.). Kauf-Event testet sich beim ersten echten Kauf / optional per Pixel-Helper-Testkauf.
 - [ ] **Punkt 8 — UTM** am Anzeigen-Link: `?utm_source=chatgpt&utm_campaign=fruehstart` (beim Kampagnen-Bau)
 - [ ] **Schritt 4 (OpenAI):** Conversion-Ereignis mit der Kampagne verknüpfen (beim Deploy)
 - [x] **Verkaufsseite:** Block 6B „Warum Storys verkaufen" live (Message-Match-Anker)
