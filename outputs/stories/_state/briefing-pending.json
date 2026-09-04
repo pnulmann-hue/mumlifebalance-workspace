@@ -1,34 +1,67 @@
 {
-  "profil": "doterra",
-  "modus": "tagesplan",
-  "disg": "Rot",
-  "disg_sekundaer": "Gelb",
-  "nadja_persona": "Charlie / Stefan",
-  "story_saeule": "Expertise",
-  "aktives_produkt": "doTERRA Lifestyle",
-  "wochen_fokus": "(kein Fokus eingetragen)",
-  "sales_pattern": "",
-  "wochen_cta": "",
-  "monat_kontext": "",
-  "produkt_themen": null,
-  "vorschlag_idee": "Idee: Patricia zeigt ihre Morgen-Routine mit doTERRA Energize — während sie ihre Kaffeemaschine anmacht und sagt: \"Das ist der Moment, wo ich früher zusammengeklappt bin. Jetzt nutze ich einen Tropfen und schaffe den ganzen Tag.\"\n\nMuster: Expertise + Behind-the-Scenes (Mini-Training: einfacher, umsetzbarer Schritt für erschöpfte Mamas)\n\nCTA: \"Wenn dich interessiert, wie ich das hinbekomme — schreib mir eine DM. Ich zeig dir, wie das bei dir auch funktionieren kann.\"",
-  "wochen_fokus_quelle": "fallback",
-  "launch_tag": null,
-  "launch_vorlage": null,
-  "kontext_snapshot": {
-    "kw": 36,
-    "wochentag": "Donnerstag",
-    "datum": "2026-09-03"
-  },
-  "fragen": [
-    "Was hast du erlebt?",
-    "Hast du grad einen Gedanken zum Thema?",
-    "Oder Standard-Pool?"
-  ],
-  "gesendet_am": "2026-09-03T09:07:51.191Z",
-  "telegram_message_id": 1173,
-  "patricia_antworten": [],
-  "patricia_fotos": [],
-  "patricia_videos": [],
-  "status": "warten_auf_antwort"
+  "datum": "2026-09-04",
+  "profile": {
+    "mentoring": {
+      "profil": "mentoring",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Instagram-Strategie für NM",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Inspiration / Vision (Vorher-Nachher / POV)",
+        "titel": "Inspiration / Vision (Vorher-Nachher / POV)",
+        "story_ziel": "Zeigen was möglich ist — Bild im Kopf der Leserin erzeugen.",
+        "kaeufertyp": "Ina",
+        "cta": "thematisch passend",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 36,
+        "wochentag": "Freitag",
+        "datum": "2026-09-04"
+      },
+      "gesendet_am": "2026-09-04T04:42:01.599Z",
+      "telegram_message_id": 1174,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    },
+    "doterra": {
+      "profil": "doterra",
+      "modus": "tagesplan",
+      "disg": "Rot",
+      "disg_sekundaer": "Gelb",
+      "nadja_persona": "Charlie / Stefan",
+      "story_saeule": "Expertise",
+      "aktives_produkt": "Zurück zu deiner Energie",
+      "wochen_fokus": "(kein Fokus eingetragen)",
+      "plan": {
+        "launch_aktiv": false,
+        "phase": null,
+        "tag_im_launch": null,
+        "vorlage": "Inspiration / Vision (Vorher-Nachher / POV)",
+        "titel": "Inspiration / Vision (Vorher-Nachher / POV)",
+        "story_ziel": "Zeigen was möglich ist — Bild im Kopf der Leserin erzeugen.",
+        "kaeufertyp": "Ina",
+        "cta": "thematisch passend",
+        "cta_keyword": null
+      },
+      "kontext_snapshot": {
+        "kw": 36,
+        "wochentag": "Freitag",
+        "datum": "2026-09-04"
+      },
+      "gesendet_am": "2026-09-04T04:42:02.458Z",
+      "telegram_message_id": 1175,
+      "patricia_antworten": [],
+      "patricia_fotos": [],
+      "status": "warten_auf_antwort"
+    }
+  }
 }
