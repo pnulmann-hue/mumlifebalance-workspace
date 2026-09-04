@@ -1,0 +1,84 @@
+<!-- Produkt-Ideen-Finder Landingpage — Quelle. Deploy via scripts/wordpress/deploy-produkt-ideen-finder.mjs. Enthaelt einen scoped .pif-Wrapper + einen style-Block (wird beim Deploy in Customizer-CSS ausgelagert, WAF-safe). Button-Links sind Platzhalter (#), bis das Tool gebaut ist. -->
+<style>
+.pif{--creme:#f1ecdd;--blau:#1e3a4c;--petrol:#2f6f6f;--orange:#d6832f;background:var(--creme);color:var(--blau);font-family:'Source Sans 3',system-ui,sans-serif;font-size:19px;line-height:1.65;margin:0;padding:0}
+.pif *{box-sizing:border-box}
+.pif .pif-wrap{max-width:760px;margin:0 auto;padding:0 22px}
+.pif h1,.pif h2{font-family:'Philosopher','Source Sans 3',serif;color:var(--blau);line-height:1.2;font-weight:700}
+.pif h1{font-size:2.35rem;margin:0 0 .5em}
+.pif h2{font-size:1.7rem;margin:2.2em 0 .5em}
+.pif .pif-hero{text-align:center;padding:64px 0 48px}
+.pif .pif-sub{font-size:1.2rem;margin:0 auto 1.6em;max-width:620px}
+.pif .pif-cta{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:700;font-size:1.15rem;padding:16px 34px;border-radius:40px;box-shadow:0 6px 18px rgba(214,131,47,.28);transition:transform .15s}
+.pif .pif-cta:hover{transform:translateY(-2px)}
+.pif .pif-note{font-size:.95rem;color:var(--petrol);margin-top:.9em}
+.pif .pif-sec{padding:22px 0}
+.pif .pif-lead{font-size:1.28rem;font-weight:700;color:var(--petrol)}
+.pif ul.pif-list{list-style:none;padding:0;margin:1.2em 0}
+.pif ul.pif-list li{position:relative;padding:14px 16px 14px 52px;margin-bottom:12px;background:#fff;border-radius:14px;box-shadow:0 3px 10px rgba(30,58,76,.06)}
+.pif ul.pif-list li::before{content:"✔";position:absolute;left:18px;top:14px;color:var(--orange);font-weight:700}
+.pif ol.pif-steps{counter-reset:s;list-style:none;padding:0;margin:1.2em 0}
+.pif ol.pif-steps li{position:relative;padding:12px 0 12px 56px;margin-bottom:10px}
+.pif ol.pif-steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:8px;width:36px;height:36px;background:var(--petrol);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Philosopher',serif}
+.pif .pif-about{background:#fff;border-radius:18px;padding:30px 28px;margin:2em 0;box-shadow:0 4px 14px rgba(30,58,76,.07)}
+.pif .pif-about h2{margin-top:0}
+.pif .pif-final{text-align:center;padding:20px 0 70px}
+.pif .pif-final .pif-cta{margin-top:.6em}
+@media(max-width:560px){.pif h1{font-size:1.85rem}.pif h2{font-size:1.4rem}.pif{font-size:18px}}
+</style>
+<div class="pif">
+  <section class="pif-hero">
+    <div class="pif-wrap">
+      <h1>Neugierig, womit du neben deinem Network schneller was verdienen könntest?</h1>
+      <p class="pif-sub">In 5 Minuten zeigt dir mein kostenloser Produkt-Ideen-Finder, welches eigene kleine Produkt wirklich zu dir und deinem Network passt — ganz ohne dass du dafür fremde Leute anschreiben musst.</p>
+      <a class="pif-cta" href="#tool-kommt-bald">Jetzt starten — kostenlos</a>
+      <p class="pif-note">Kostenlos &amp; unverbindlich · dauert keine 5 Minuten</p>
+    </div>
+  </section>
+
+  <div class="pif-wrap">
+    <section class="pif-sec">
+      <h2>Kennst du das?</h2>
+      <p>Du bist im Network, weil du ans Produkt glaubst und dir ein Stück Freiheit aufbauen willst — nur geht das Ganze quälend langsam, Rang für Rang, und am Monatsende rechnest du heimlich nach, ob wirklich mehr reinkommt, als du reinsteckst.</p>
+      <p>Und dann ist da noch dieser Teil, den eigentlich keine mag: das ständige Anschreiben, die halben Bekannten mit „Heyy, wie geht's dir?", die Partys, bei denen drei aus Höflichkeit zusagen und am Ende doch nichts hängen bleibt. Irgendwann sagst du lieber gar nicht mehr, was du eigentlich machst.</p>
+    </section>
+
+    <section class="pif-sec">
+      <h2>Es gibt einen leiseren Weg</h2>
+      <p>Network ist ein Marathon, und das ist völlig okay. Aber wer früher etwas Eigenes in der Hand haben will, baut sich neben dem Network ein kleines eigenes Produkt auf — eins, das DIR gehört und in das dein Network-Produkt einfach als ein Teil der Lösung reinfliesst.</p>
+      <p class="pif-lead">Du gibst nichts auf. Du stellst nur ein zweites Standbein daneben.</p>
+      <p>Und das Verrückte ist: Genau dafür steckt in dir längst eine Idee — du siehst sie nur noch nicht.</p>
+    </section>
+
+    <section class="pif-sec">
+      <h2>Was der Produkt-Ideen-Finder für dich macht</h2>
+      <ul class="pif-list">
+        <li>Er kitzelt aus dir heraus, was du eigentlich schon alles kannst — auch wenn du gerade denkst, du hast „nichts Besonderes".</li>
+        <li>Er gibt dir 1–3 konkrete Ideen für dein eigenes kleines Produkt, mit deinem Network-Produkt clever eingebaut.</li>
+        <li>Und er zeigt dir den einen ersten Schritt, den du sofort gehen kannst.</li>
+      </ul>
+    </section>
+
+    <section class="pif-sec">
+      <h2>So funktioniert's</h2>
+      <ol class="pif-steps">
+        <li>Du beantwortest ein paar einfache Fragen — dauert keine 5 Minuten.</li>
+        <li>Der Finder verwandelt deine Antworten in deine ganz persönliche Produktidee.</li>
+        <li>Du bekommst dein Ergebnis und deinen nächsten Schritt direkt zugeschickt.</li>
+      </ol>
+    </section>
+
+    <section class="pif-about">
+      <h2>Wer dir das hier gebaut hat</h2>
+      <p>Ich bin Patricia, vierfache Mama aus der Schweiz — und ich weiss genau, wie sich das anfühlt.</p>
+      <p>Von 2018 bis Ende 2022 war ich selbst im Network. Nur: Auf Instagram hat mein Produkt niemanden interessiert, und die Menschen, die mich kannten, waren längst schon meine Kundinnen. Ich hab viel zu viel Arbeit gegen viel zu wenig Verdienst getauscht — und irgendwann hingeschmissen. Damit gehörte ich zur grossen Mehrheit, denn fast alle, die je mit Network anfangen, hören irgendwann wieder auf.</p>
+      <p>2023 hab ich mich trotzdem entschieden, nochmal ein Business zu starten. Aber nicht nach dem Motto „dann verkauf ich halt ein anderes Network-Produkt", sondern auf der Grundlage von genau den Fragen, die dir mein Ideen-Finder gleich stellt. Mein Network-Produkt ist erst später einfach dazugekommen, und es war nie mein Hauptfokus.</p>
+      <p>Und weisst du, was das Verrückte ist? Genau dadurch hat sich mein Network sogar weiterentwickelt — heute hab ich ein eigenes Team und verdiene dort regelmässig. Aber eben nicht nur dort. Und genau das macht mich ein Stück weit unabhängiger.</p>
+    </section>
+
+    <section class="pif-final">
+      <h2>Bereit für deine Idee?</h2>
+      <p>Schau einfach mal, was rauskommt — kostenlos, unverbindlich, in 5 Minuten. Vielleicht hältst du gleich den Anfang von etwas in der Hand, das nicht nur dein Instagram, sondern dein ganzes Business verändert.</p>
+      <a class="pif-cta" href="#tool-kommt-bald">Meinen Produkt-Ideen-Finder starten</a>
+    </section>
+  </div>
+</div>
