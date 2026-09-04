@@ -90,6 +90,25 @@ Entwurfs-Kampagne „Mum Life Balance campaign" (Typ Klicks, noch nicht bereitge
 
 ---
 
+## Launch-Status (4.9.2026) — ⏸️ BLOCKIERT bis Kontoprüfung durch
+
+Anzeige ist **komplett komponiert**, aber Veröffentlichen scheitert an:
+> `POST /v1/ads failed with status 403: Account review must be approved before using a different ad URL.`
+
+**Heisst:** Konto zugänglich, aber OpenAIs manuelle Kontoprüfung ist noch NICHT vollständig freigegeben. Solange nur die ursprünglich angemeldete Domain (`mumlifebalance.ch`) erlaubt ist — eine andere Ziel-URL (ThriveCart `storyideen`) wird geblockt. Freigabe dauert lt. Checkliste bis zu 2 Wochen.
+
+**→ Sobald Freigabe-Mail von OpenAI da ist:** Anzeige in 1 Klick erstellen. Alles liegt bereit.
+
+### Fertig komponierte Anzeige (zum 1:1-Wiederherstellen)
+- **Kampagne:** „Mum Life Balance campaign" (Typ Klicks), Budget **CHF 25/Tag**, Anzeigengruppe „Recommended ad group"
+- **Titel:** `Nie wieder ratlos vor der Story` (31/50)
+- **Beschreibung:** `90 fertige Storyideen für Networkerinnen – sichtbar werden, ohne dein Produkt zu pushen. 19 CHF.` (96/100)
+- **Link:** `https://mumlifebalance.thrivecart.com/storyideen/?utm_source=chatgpt&utm_campaign=fruehstart`
+- **Bild:** `storyideen_ad_orange_variant_zeitersparnis.png` (1920×1920, orange) aus Downloads
+- **Nach dem Erstellen noch:** Conversion-Ereignis „Kauf Storyideen" mit der Kampagne verknüpfen, dann bereitstellen.
+
+---
+
 ## 🔗 Verwandte Notizen
 - [[90-storyideen-networkerinnen-salespage]] — Block 6B ist der Message-Match-Anker
 - [[2026-08-28-storyideen-mama-nebenbei]] — Meta-Pendant (pausiert)
