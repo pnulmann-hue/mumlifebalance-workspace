@@ -42,7 +42,7 @@ Annahme: Viele kommen nur aus Neugier und haben NIE über „was Eigenes" nachge
 2. **Sanfter Türöffner:** „Du wolltest vielleicht nur mal schauen, was rauskommt — und jetzt hältst du den Anfang von etwas Eigenem in der Hand. Kein Druck."
 3. **Zwei Möglichkeiten:** (a) daraus ein eigenes kleines (auch bezahltes) Produkt machen; ODER (b) es als **Gesamtkonzept** nutzen — du verkaufst nicht „Produkt xy" wie gefühlt tausend andere, sondern zeigst der Kundin, wie sie IHR Problem löst (dein Network-Produkt = ein Teil davon).
 4. **Der Kommunikations-Vorteil (Kern):** ❌ „Ich verkaufe [Produkt xy]" → ✅ „Ich helfe [Mamas wie dir], [Problem] zu lösen — und das gehört dazu." → damit **hebst du dich ab von der Nische und von den gefühlt tausend, die alle dasselbe posten**. Du bist nicht die Verkäuferin, du bist die, die versteht und löst.
-5. **Konsequenz:** deinen ganzen Insta-Auftritt + Content kannst du ab jetzt genau darum herum bauen.
+5. **Konsequenz (gross + konkret):** Das verändert nicht nur deinen Insta-Auftritt — es verändert dein ganzes Business. Und die konkrete Folge daraus: Du redest auf Insta ab jetzt über dein **Thema**, nicht mehr über dein **Produkt**. (= roter Faden des ganzen Hybrid-Monats.)
 6. **Brücke (weich):** „Wenn du magst, dass ich dir zeig, wie du vom Verkäuferin-Gefühl zur Expertin wirst, der man vertraut — das ist mein Minikurs **‚Expertin statt Verkäuferin'** 👉 [Link]." *(alternativ/tiefer: „Finde dein Thema" bzw. „Vom Network-Wissen zum eigenen Produkt")*
 
 ## KI-System-Prompt (Kern — zum Bauen)
