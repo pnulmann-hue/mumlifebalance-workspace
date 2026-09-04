@@ -36,7 +36,14 @@ Pro Idee (1–3 Stück):
 - **Wie dein Network-Produkt als Teil der Lösung reinkommt** (nie als Pitch, immer als ein Baustein)
 - **Dein erster nächster Schritt**
 
-**Abschluss-Slide (Brücke):** „Du hast jetzt deine Idee. Sie zu einem fertigen Produkt zu machen — Format, Aufbau, verkaufen —, das zeig ich dir Schritt für Schritt in meinem Minikurs ‚Vom Network-Wissen zum eigenen Produkt' 👉 [Link]."
+**FAZIT (Abschluss-Screen — der Dreh-Moment):**
+Annahme: Viele kommen nur aus Neugier und haben NIE über „was Eigenes" nachgedacht. Das Fazit ist deshalb ein sanftes Aha/Geschenk, kein Pitch. Aufbau:
+1. **„Ich hab festgestellt…"** — spiegelt ihr in 1–2 Sätzen ihr verstecktes Thema/ihre Stärke zurück (personalisiert aus ihren Antworten).
+2. **Sanfter Türöffner:** „Du wolltest vielleicht nur mal schauen, was rauskommt — und jetzt hältst du den Anfang von etwas Eigenem in der Hand. Kein Druck."
+3. **Zwei Möglichkeiten:** (a) daraus ein eigenes kleines (auch bezahltes) Produkt machen; ODER (b) es als **Gesamtkonzept** nutzen — du verkaufst nicht „Produkt xy" wie gefühlt tausend andere, sondern zeigst der Kundin, wie sie IHR Problem löst (dein Network-Produkt = ein Teil davon).
+4. **Der Kommunikations-Vorteil (Kern):** ❌ „Ich verkaufe [Produkt xy]" → ✅ „Ich helfe [Mamas wie dir], [Problem] zu lösen — und das gehört dazu." → damit **hebst du dich ab von der Nische und von den gefühlt tausend, die alle dasselbe posten**. Du bist nicht die Verkäuferin, du bist die, die versteht und löst.
+5. **Konsequenz:** deinen ganzen Insta-Auftritt + Content kannst du ab jetzt genau darum herum bauen.
+6. **Brücke (weich):** „Wenn du magst, dass ich dir zeig, wie du vom Verkäuferin-Gefühl zur Expertin wirst, der man vertraut — das ist mein Minikurs **‚Expertin statt Verkäuferin'** 👉 [Link]." *(alternativ/tiefer: „Finde dein Thema" bzw. „Vom Network-Wissen zum eigenen Produkt")*
 
 ## KI-System-Prompt (Kern — zum Bauen)
 ```
