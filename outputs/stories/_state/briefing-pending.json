@@ -1,67 +1,34 @@
 {
-  "datum": "2026-09-04",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Inspiration / Vision (Vorher-Nachher / POV)",
-        "titel": "Inspiration / Vision (Vorher-Nachher / POV)",
-        "story_ziel": "Zeigen was möglich ist — Bild im Kopf der Leserin erzeugen.",
-        "kaeufertyp": "Ina",
-        "cta": "thematisch passend",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 36,
-        "wochentag": "Freitag",
-        "datum": "2026-09-04"
-      },
-      "gesendet_am": "2026-09-04T04:42:01.599Z",
-      "telegram_message_id": 1174,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Inspiration / Vision (Vorher-Nachher / POV)",
-        "titel": "Inspiration / Vision (Vorher-Nachher / POV)",
-        "story_ziel": "Zeigen was möglich ist — Bild im Kopf der Leserin erzeugen.",
-        "kaeufertyp": "Ina",
-        "cta": "thematisch passend",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 36,
-        "wochentag": "Freitag",
-        "datum": "2026-09-04"
-      },
-      "gesendet_am": "2026-09-04T04:42:02.458Z",
-      "telegram_message_id": 1175,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "mentoring",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "Bio-Check",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": "Idee: Patricia zeigt einen Screenshot aus ihrem Teamchat – eine Network-Mama, die fragt, wie sie ihre Bio optimiert. Patricia antwortet live in der Story: \"Das ist genau das Problem, das ich täglich sehe.\"\n\nMuster: Expertise + Fehler-Reframing (was die meisten falsch machen bei der Bio, welche Konsequenzen das hat, besserer Weg)\n\nCTA: \"Wenn du wissen willst, ob deine Bio verkauft oder nur informiert – mach meinen kostenlosen Bio-Check, Link in Bio.\"",
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": null,
+  "launch_vorlage": null,
+  "kontext_snapshot": {
+    "kw": 36,
+    "wochentag": "Freitag",
+    "datum": "2026-09-04"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-09-04T09:00:05.509Z",
+  "telegram_message_id": 1183,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
