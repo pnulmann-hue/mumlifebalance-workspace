@@ -63,12 +63,30 @@ verschiedene der drei Jobs ab. Titel bewusst unter 40 Zeichen, damit nichts abge
 2. Nach ~50–100 Klicks: schwächeren Titel raus, V2 oder V4 dazu.
 3. Erst wenn das Conversion-Event auf der Danke-Seite steht (Startklar-Technik), auf **Kauf** umstellen.
 
-## Offene Technik vor dem Scharfschalten (Startklar-Checkliste)
+## Technik-Setup (Startklar-Checkliste) — Stand 4.9.2026
 
-- [ ] `OAI-AdsBot` in der `robots.txt` erlauben (WordPress)
-- [ ] OpenAI-Pixel + Conversion-Event auf der ThriveCart-Danke-Seite (`noindex`)
-- [ ] UTM am Link (siehe oben)
-- [ ] Verkaufsseite: **Block 6B** eingebaut (Message-Match-Anker)
+**Konto:** freigeschaltet, Werbekonto `adacct_6a96b51ecb548190b365b2153f85373a` (Mum Life Balance).
+Entwurfs-Kampagne „Mum Life Balance campaign" (Typ Klicks, noch nicht bereitgestellt).
+
+- [x] **Punkt 3 — robots.txt (OAI-AdsBot):** bereits ok. ThriveCart blockt nur fremde `/private-*`-Pfade, WordPress nur `/wp-admin/`. `/storyideen` ist frei → OAI-AdsBot darf crawlen. **Nichts zu tun.**
+- [x] **Punkt 4 — Pixel angelegt:** „Mum Life Balance Pixel", Pixel-ID `VanFa9UJwn47VgwSWc1goK`
+- [x] **Punkt 5 — Conversion-Ereignis angelegt:** „Kauf Storyideen", Schlüssel `order_created`, Attributionsfenster 30 Tage
+- [ ] **Basiscode in ThriveCart einbauen** (Checkout → Tracking, Kopfbereich) — auf Verkaufs-/Checkout-Seite:
+  ```html
+  <script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"VanFa9UJwn47VgwSWc1goK"});</script>
+  ```
+- [ ] **Event-Code auf der Danke-/Erfolgsseite** (nach dem Basiscode) — feuert nur bei Kauf:
+  ```html
+  <script>oaiq("track","order_created");</script>
+  ```
+  *(Stufe 2 später: Bestellwert mitschicken → `oaiq("track","order_created",{value:19,currency:"CHF"});`)*
+- [ ] **Punkt 6 — noindex** der Danke-/Erfolgsseite (ThriveCart-Erfolgsseiten sind i. d. R. eh nicht indexiert — beim Einbau prüfen)
+- [ ] **Punkt 7 — Messung prüfen** mit „Pixel Helper"-Browser-Erweiterung (Besuch + Event grün)
+- [ ] **Punkt 8 — UTM** am Anzeigen-Link: `?utm_source=chatgpt&utm_campaign=fruehstart` (beim Kampagnen-Bau)
+- [ ] **Schritt 4 (OpenAI):** Conversion-Ereignis mit der Kampagne verknüpfen (beim Deploy)
+- [x] **Verkaufsseite:** Block 6B „Warum Storys verkaufen" live (Message-Match-Anker)
+
+**Nächster Schritt:** Basiscode + Event-Code in ThriveCart einbauen (Checkout → Tracking), dann mit Pixel Helper testen.
 
 ---
 
