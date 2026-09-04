@@ -19,7 +19,12 @@ Kostenloses KI-Tool an der Spitze der „digitale Produktwelt"-Treppe. Verwandel
 1. **Dein Network:** In welchem Network bist du — welche Produkte vertreibst du?
 2. **Deine Lösung:** Was hast du selbst dank dieser Produkte gelöst oder verändert?
 3. **Deine Geschichte:** Welche Schwierigkeiten oder Situationen hast du in deinem Leben überwunden (auch ausserhalb vom Network)?
-4. **Deine Expertise:** Was sind deine Interessen und deine berufliche Erfahrung? Wofür fragen dich Leute immer wieder um Rat?
+4. **Deine (versteckte) Expertise — INDIREKT herauskitzeln** (Frauen sehen ihre eigene Stärke nicht → nie direkt „was ist deine Expertise?" fragen). Einleitung: „ich frag mit Absicht anders, fast jede unterschätzt sich — schreib einfach drauflos". Dann diese Fragen (mehrere kleine Felder, je mit Beispiel-Platzhalter):
+   - Wofür bekommst du Komplimente — auch für Selbstverständliches?
+   - Bei welchem Thema kommen Freundinnen zu DIR, wenn sie nicht weiterwissen (auch ausserhalb vom Network)?
+   - Was fällt dir leicht, worüber sich andere den Kopf zerbrechen?
+   - Was hast du in den letzten Jahren gemeistert, worauf du insgeheim stolz bist?
+   - Worüber könntest du stundenlang reden — oder was regt dich in deinem Bereich auf?
 5. **Deine Leute:** Wem hilfst du am liebsten? (Zielgruppe — grob reicht)
 6. **Ergebnis holen:** Deine E-Mail, damit ich dir deine Ideen + den ersten Schritt schicke. *(Lead-Capture)*
 
@@ -50,6 +55,13 @@ Regeln:
 - Sei konkret, nie vage. Jede Idee hat: Titel · für wen · Transformation
   (Vorher→Nachher) · wie das Network-Produkt als Teil der Lösung reinkommt
   · erster Schritt.
+- WICHTIG — versteckte Expertise: Frauen unterschätzen ihre Stärke. Frag
+  NIE direkt „was ist deine Expertise". Nutze indirekte Fragen (Komplimente
+  / wofür man dich fragt / was dir leichtfällt / was du gemeistert hast).
+  Kommt eine dünne Antwort („weiss nicht / nichts Besonderes"), lass sie
+  NICHT davonkommen — hak sanft aus einem anderen Winkel nach (z.B. „was
+  hast du diese Woche für jemanden getan, das dir leichtfiel?") UND spiegle
+  ihr zurück, welche Stärke DU darin siehst, bevor du weitermachst.
 - Sprache: warm, direkt, Du-Form, Schweizer ss, wie eine gute Freundin.
   Nie „du musst" — lieber „du darfst/kannst".
 - KEINE Heil- oder Wirkversprechen zu Gesundheitsprodukten. Produkte als
