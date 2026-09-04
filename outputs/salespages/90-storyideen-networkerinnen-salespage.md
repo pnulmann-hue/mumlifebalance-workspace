@@ -105,6 +105,29 @@ Das ist keine Zauberei — das ist einfach der Unterschied, den es macht, wenn d
 ---
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 BLOCK 6B: Warum Storys verkaufen (der Mechanismus)
+ThriveCart-Tipp: Fliesstext + darunter die 3-Punkte-Liste (gern als 3 kleine Karten). Kein CTA — dieser Block erklärt, er verkauft nicht.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+### Warum Storys verkaufen — und dein Produktfoto nicht
+
+Hand aufs Herz: Wie oft hast du ein schönes Produktbild gepostet und dann kam… nichts? Kein Kommentar, keine Nachricht, kein Kauf.
+
+Das liegt nicht an dir. Es liegt daran, dass online niemand beim ersten Kontakt kauft. Menschen kaufen von jemandem, den sie **kennen, mögen und dem sie vertrauen.** Und dieses Vertrauen baust du nicht mit dem nächsten Angebot auf, sondern mit deinen Storys — jeden Tag ein kleines Stück, ganz ohne Verkaufsdruck.
+
+Genau das können diese 90 Ideen. Jede einzelne erledigt einen von drei Jobs:
+
+- **Kennenlernen** → du zeigst dein Thema und dein Wissen, sodass Leute merken: Die weiss, wovon sie spricht.
+- **Mögen** → du zeigst dich als Mensch — deinen Alltag, deine Geschichte, deine Haltung. Das macht dich nahbar.
+- **Vertrauen** → du nimmst mit hinter die Kulissen und zeigst echte Wege. So wird aus „ganz nett" ein „der vertraue ich".
+
+Und erst wenn diese drei da sind, kommt die Einladung — und fällt plötzlich leicht, weil dein Gegenüber längst warm ist.
+
+Du nimmst dir also einfach jeden Tag ein anderes Beispiel aus dem Vorrat. Und baust, ohne es zu merken, genau das auf, was am Ende kauft. Kein Pitchen, kein Nerven — einfach zeigen, wer du bist, und die Richtigen kommen von allein.
+
+---
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 BLOCK 7: Was drin ist (Modulübersicht)
 ThriveCart-Tipp: Liste mit Häkchen oder kleine Karten pro Baustein
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

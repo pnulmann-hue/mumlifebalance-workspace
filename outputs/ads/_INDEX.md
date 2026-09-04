@@ -11,3 +11,4 @@ Auto-Index aller Files in `outputs/ads/`. Siehe [[_MOCs/MOC-Produkte-Funnels]] f
 - [[2026-05-13-ki-mastermind-webinar-anzeige]]
 - [[2026-08-08-storyideen-tripwire-anzeige]]
 - [[2026-08-28-storyideen-mama-nebenbei]]
+- [[2026-09-04-chatgpt-ads-storyideen]]
