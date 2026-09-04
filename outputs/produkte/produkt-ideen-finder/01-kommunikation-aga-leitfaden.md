@@ -63,10 +63,11 @@ tags: [produkt, funnel, research]
 
 > aga-Titel-Formel: Name + konkretes Ergebnis + „ohne [gefürchteter Weg]".
 
-**Tool-Titel-Optionen (Gratis-Leadmagnet):**
-- „PRODUKT-IDEEN-FINDER — in 5 Minuten deine erste eigene Produktidee, ohne dich neu zu erfinden"
-- „DEIN PRODUKT-KOMPASS — finde heraus, womit du online sichtbar wirst, ohne fremde Leute anzuschreiben"
-- „VOM ÖL ZUR IDEE — mach aus deinem Networkwissen dein eigenes kleines Angebot"
+**Leit-Angle (der echte Antrieb = Geld/Zeit):** Man macht das Business, um zu verdienen. Network ist ein **Marathon** (Rang für Rang). Wer **früher Cash** will, baut sich was Eigenes dazu — ohne das Network aufzugeben. Neugier-Einstieg: „Was würde theoretisch zu meinem Network passen?" (Ehrlich, keine Zahlen, kein „reich über Nacht" — nur „früher als der Marathon".)
+
+**Tool-Titel (locked):**
+- **HEADLINE (C):** „Neugierig, womit du neben deinem Network schneller Cash machen könntest? Dein Produkt-Ideen-Finder zeigt's dir in 5 Minuten."
+- **CONTENT-/MARATHON-ANGLE (B):** „Network ist ein Marathon. Finde in 5 Minuten heraus, mit welchem eigenen Produkt du schneller was dazuverdienst."
 
 **Angebots-/Treppen-Sprache (wie du's kommunizierst):**
 - 🎁 Freebie: „deine erste Idee / deine Einladung, die immer läuft"

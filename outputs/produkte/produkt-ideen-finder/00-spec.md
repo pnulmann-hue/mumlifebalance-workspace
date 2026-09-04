@@ -9,6 +9,8 @@ tags: [produkt, funnel, tools]
 ## Zweck & Funnel-Rolle
 Kostenloses KI-Tool an der Spitze der „digitale Produktwelt"-Treppe. Verwandelt das Rohmaterial einer Network-Mama (ihr Network + was sie gelöst hat + überwundene Situationen + Interessen/Expertise) in **1–3 konkrete eigene Produktideen**, in die ihr Network-Produkt als *Teil der Lösung* eingebaut ist. Liefert den **Aha (die Idee)** — und pitcht den 39er-Kurs zum Umsetzen.
 
+**Leit-Angle (echter Antrieb):** Neugier („Was würde theoretisch zu meinem Network passen?") + **Geld/Zeit**: Man ist im Network, um zu verdienen — aber Network ist ein **Marathon** (Rang für Rang). Wer **früher Cash** will, baut sich was Eigenes dazu, ohne das Network aufzugeben. Ehrlich framen (keine Zahlen, kein „reich über Nacht" — nur „früher als der Marathon"). Titel/Headline (C) + Marathon-Angle (B): siehe [[01-kommunikation-aga-leitfaden]].
+
 **Treppe:** 🎁 Produkt-Ideen-Finder → 💸 „Vom Network-Wissen zum eigenen Produkt" (39) → 👑 „…zur digitalen Produktwelt" (333) → MBA.
 
 **Anti-Kannibalisierung (wichtig):** Das Gratis-Tool gibt NUR die **Idee**. Das „und so baust & verkaufst du sie" bleibt bewusst im 39er/333er. → Tool macht Lust, ersetzt den Kurs nicht.
