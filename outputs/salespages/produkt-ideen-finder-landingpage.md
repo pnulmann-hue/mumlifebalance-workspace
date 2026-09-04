@@ -46,7 +46,13 @@ Du gibst dabei nichts auf, du stellst nur ein zweites Standbein daneben. Und das
 ---
 
 ## BLOCK 6 — Über mich
-Ich bin Patricia, vierfache Mama aus der Schweiz. Ich bin selbst im Network — und hab mir daneben ein eigenes Business aufgebaut, das genau dazu passt. Kein Bali-Strand, keine leeren Versprechen, sondern ehrlich gezeigt, wie man sich als Mama neben dem Network etwas Eigenes baut, das sich wirklich nach einem selbst anfühlt.
+Ich bin Patricia, vierfache Mama aus der Schweiz — und ich weiss genau, wie sich das anfühlt.
+
+Von 2018 bis Ende 2022 war ich selbst im Network. Nur: Auf Instagram hat mein Produkt niemanden interessiert, und die Menschen, die mich kannten, waren längst schon meine Kundinnen. Ich hab viel zu viel Arbeit gegen viel zu wenig Verdienst getauscht — und irgendwann hingeschmissen. Damit gehörte ich zur grossen Mehrheit, denn fast alle, die je mit Network anfangen, hören irgendwann wieder auf.
+
+2023 hab ich mich trotzdem entschieden, nochmal ein Business zu starten. Aber nicht nach dem Motto „dann verkauf ich halt ein anderes Network-Produkt", sondern auf der Grundlage von genau den Fragen, die dir mein Ideen-Finder gleich stellt. Mein Network-Produkt ist erst später einfach dazugekommen, und es war nie mein Hauptfokus.
+
+Und weisst du, was das Verrückte ist? Genau dadurch hat sich mein Network sogar weiterentwickelt — heute hab ich ein eigenes Team und verdiene dort regelmässig. Aber eben nicht nur dort. Und genau das macht mich ein Stück weit unabhängiger.
 
 ---
 
