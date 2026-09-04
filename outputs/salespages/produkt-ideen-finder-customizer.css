@@ -1,26 +1,66 @@
 /* === PRODUKT-IDEEN-FINDER LP (auto) === */
-.pif{--creme:#f1ecdd;--blau:#1e3a4c;--petrol:#2f6f6f;--orange:#d6832f;background:var(--creme);color:var(--blau);font-family:'Source Sans 3',system-ui,sans-serif;font-size:19px;line-height:1.65;margin:0;padding:0}
+.pif{--creme:#f1ecdd;--creme2:#f7f3e8;--blau:#1e3a4c;--petrol:#2f6f6f;--orange:#d6832f;--muted:#5a6b76;background:var(--creme);color:var(--blau);font-family:'Source Sans 3',system-ui,-apple-system,sans-serif;font-size:19px;line-height:1.65;margin:0;padding:0}
 .pif *{box-sizing:border-box}
-.pif .pif-wrap{max-width:760px;margin:0 auto;padding:0 22px}
-.pif h1,.pif h2{font-family:'Philosopher','Source Sans 3',serif;color:var(--blau);line-height:1.2;font-weight:700}
-.pif h1{font-size:2.35rem;margin:0 0 .5em}
-.pif h2{font-size:1.7rem;margin:2.2em 0 .5em}
-.pif .pif-hero{text-align:center;padding:64px 0 48px}
-.pif .pif-sub{font-size:1.2rem;margin:0 auto 1.6em;max-width:620px}
-.pif .pif-cta{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:700;font-size:1.15rem;padding:16px 34px;border-radius:40px;box-shadow:0 6px 18px rgba(214,131,47,.28);transition:transform .15s}
-.pif .pif-cta:hover{transform:translateY(-2px)}
-.pif .pif-note{font-size:.95rem;color:var(--petrol);margin-top:.9em}
-.pif .pif-sec{padding:22px 0}
-.pif .pif-lead{font-size:1.28rem;font-weight:700;color:var(--petrol)}
-.pif ul.pif-list{list-style:none;padding:0;margin:1.2em 0}
-.pif ul.pif-list li{position:relative;padding:14px 16px 14px 52px;margin-bottom:12px;background:#fff;border-radius:14px;box-shadow:0 3px 10px rgba(30,58,76,.06)}
-.pif ul.pif-list li::before{content:"✔";position:absolute;left:18px;top:14px;color:var(--orange);font-weight:700}
-.pif ol.pif-steps{counter-reset:s;list-style:none;padding:0;margin:1.2em 0}
-.pif ol.pif-steps li{position:relative;padding:12px 0 12px 56px;margin-bottom:10px}
-.pif ol.pif-steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:8px;width:36px;height:36px;background:var(--petrol);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Philosopher',serif}
-.pif .pif-about{background:#fff;border-radius:18px;padding:30px 28px;margin:2em 0;box-shadow:0 4px 14px rgba(30,58,76,.07)}
-.pif .pif-about h2{margin-top:0}
-.pif .pif-final{text-align:center;padding:20px 0 70px}
-.pif .pif-final .pif-cta{margin-top:.6em}
-@media(max-width:560px){.pif h1{font-size:1.85rem}.pif h2{font-size:1.4rem}.pif{font-size:18px}}
+.pif .w{max-width:820px;margin:0 auto;padding:0 22px}
+.pif h1,.pif h2,.pif h3{font-family:'Philosopher','Source Sans 3',serif;color:var(--blau);line-height:1.18;font-weight:700;margin:0}
+.pif p{margin:0 0 16px}
+.pif .cta{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:700;font-size:1.15rem;padding:17px 40px;border-radius:44px;box-shadow:0 10px 24px rgba(214,131,47,.32);transition:transform .15s}
+.pif .cta:hover{transform:translateY(-2px)}
+.pif .cta.big{font-size:1.28rem;padding:20px 48px}
+
+/* Hero */
+.pif .hero{text-align:center;padding:66px 0 54px;background:radial-gradient(120% 130% at 50% 0%,#fbf8ef 0%,var(--creme) 60%)}
+.pif .badge{display:inline-block;background:#fff;border:1px solid #e7dfc9;color:var(--petrol);font-size:.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:8px 16px;border-radius:30px;margin-bottom:22px}
+.pif .hero h1{font-size:2.7rem;margin:0 auto .45em;max-width:640px}
+.pif .hero .sub{font-size:1.28rem;color:#33505f;max-width:620px;margin:0 auto 1.7em}
+.pif .trust{margin-top:20px;color:var(--muted);font-size:.98rem}
+.pif .trust b{color:var(--petrol)}
+
+/* Sections */
+.pif .sec{padding:46px 0}
+.pif .kicker{color:var(--orange);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.82rem;margin-bottom:10px}
+.pif h2{font-size:2rem;margin-bottom:.5em}
+.pif .lead{font-size:1.3rem;font-weight:700;color:var(--petrol)}
+
+/* Petrol reframe band */
+.pif .band{background:var(--petrol);color:#fff;padding:52px 0}
+.pif .band h2,.pif .band h3{color:#fff}
+.pif .band .lead{color:#ffe9d3}
+.pif .band p{color:#eaf3f1}
+
+/* vs box */
+.pif .vs{display:flex;gap:16px;flex-wrap:wrap;margin:26px 0 6px}
+.pif .vs>div{flex:1 1 240px;border-radius:16px;padding:22px 22px;font-size:1.12rem}
+.pif .vs .no{background:#fbe9e5;border:1px solid #f3cfc7;color:#8a3b2e}
+.pif .vs .yes{background:#e6f2ec;border:1px solid #c9e4d5;color:#1f6a4a}
+.pif .vs .tag{display:block;font-weight:700;font-size:.8rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;opacity:.8}
+
+/* feature cards */
+.pif .cards{display:flex;gap:18px;flex-wrap:wrap;margin:28px 0}
+.pif .card{flex:1 1 220px;background:#fff;border-radius:18px;padding:26px 24px;box-shadow:0 6px 18px rgba(30,58,76,.07)}
+.pif .card .ic{font-size:30px;margin-bottom:10px}
+.pif .card h3{font-size:1.2rem;margin-bottom:8px}
+.pif .card p{font-size:1rem;color:#3a5462;margin:0}
+
+/* steps */
+.pif .steps{counter-reset:s;list-style:none;padding:0;margin:26px 0}
+.pif .steps li{position:relative;padding:16px 0 16px 66px;font-size:1.12rem;border-bottom:1px dashed #e2d9c4}
+.pif .steps li:last-child{border-bottom:0}
+.pif .steps li::before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:12px;width:42px;height:42px;background:var(--orange);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Philosopher',serif;font-size:1.2rem}
+
+/* quote highlight */
+.pif .quote{background:var(--creme2);border-left:5px solid var(--orange);border-radius:0 16px 16px 0;padding:24px 26px;font-size:1.28rem;line-height:1.5;color:var(--blau);font-family:'Philosopher',serif}
+
+/* about */
+.pif .about{background:#fff;border-radius:20px;padding:34px 32px;box-shadow:0 8px 22px rgba(30,58,76,.08)}
+.pif .about h2{margin-bottom:.4em}
+.pif .about p{font-size:1.05rem}
+
+/* final */
+.pif .final{background:var(--petrol);color:#fff;text-align:center;padding:64px 0 70px}
+.pif .final h2{color:#fff;font-size:2.2rem;margin-bottom:.4em}
+.pif .final p{color:#eaf3f1;max-width:600px;margin:0 auto 1.6em;font-size:1.2rem}
+.pif .final .mini{color:#bcd6d1;font-size:.95rem;margin-top:14px}
+
+@media(max-width:600px){.pif .hero h1{font-size:2rem}.pif h2{font-size:1.6rem}.pif{font-size:18px}}
 /* === ENDE PRODUKT-IDEEN-FINDER LP === */

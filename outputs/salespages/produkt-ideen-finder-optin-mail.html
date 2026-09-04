@@ -1,53 +1,80 @@
 <!-- Produkt-Ideen-Finder — Double-Opt-in-Bestaetigungsmail fuer ActiveCampaign.
-     Merge-Tag %FIRSTNAME% = AC-Vorname. Button-Link: in AC beim Verlinken den
-     Bestaetigungs-Link einfuegen (ersetzt {{CONFIRM_LINK}}). -->
-<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Ein Klick fehlt noch, dann kommt dein Produkt-Ideen-Finder.</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f1ecdd;margin:0;padding:0;">
+     %FIRSTNAME% = AC-Vorname. Button-Link: in AC den Bestaetigungs-Link einfuegen (ersetzt %CONFIRMLINK%). -->
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Nur noch ein Klick, dann startet dein Produkt-Ideen-Finder ✨</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f1ecdd;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;">
   <tr>
-    <td align="center" style="padding:28px 14px;">
-      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:16px;overflow:hidden;">
+    <td align="center" style="padding:30px 14px;">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:20px;overflow:hidden;box-shadow:0 10px 34px rgba(30,58,76,.14);">
+
+        <!-- Header-Band -->
         <tr>
-          <td style="padding:40px 40px 8px;font-family:Georgia,'Times New Roman',serif;font-size:26px;line-height:1.25;color:#1e3a4c;font-weight:bold;">
-            Fast geschafft — ein Klick fehlt noch 🙌
+          <td align="center" bgcolor="#2f6f6f" style="background:#2f6f6f;padding:34px 40px 30px;">
+            <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#cfe3e0;font-weight:bold;">Dein Produkt-Ideen-Finder</div>
+            <div style="font-size:44px;line-height:1;margin:14px 0 0;">🎁</div>
+            <div style="font-family:Georgia,'Times New Roman',serif;font-size:23px;line-height:1.3;color:#ffffff;font-weight:bold;margin-top:12px;">Nur noch ein Klick — dann geht's los</div>
           </td>
         </tr>
+
+        <!-- Body -->
         <tr>
-          <td style="padding:12px 40px 0;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.65;color:#1e3a4c;">
+          <td style="padding:34px 40px 6px;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.65;color:#1e3a4c;">
             <p style="margin:0 0 16px;">Hey %FIRSTNAME%,</p>
             <p style="margin:0 0 16px;">schön, dass du rausfinden willst, welche eigene Produktidee wirklich zu dir passt! 🎉</p>
-            <p style="margin:0 0 16px;">Bevor's losgeht, brauch ich noch ein kurzes Okay von dir. Einmal auf den Button klicken und bestätigen, dass du wirklich du bist und meine Mails bekommen möchtest — dann sind wir startklar:</p>
+            <p style="margin:0 0 4px;">Bevor's losgeht, brauch ich noch ein kurzes Okay von dir — einmal klicken und bestätigen, dass du wirklich du bist und meine Mails bekommen möchtest:</p>
           </td>
         </tr>
+
+        <!-- CTA -->
         <tr>
-          <td align="center" style="padding:14px 40px 22px;">
+          <td align="center" style="padding:22px 40px 10px;">
             <table role="presentation" cellpadding="0" cellspacing="0">
               <tr>
-                <td align="center" bgcolor="#d6832f" style="border-radius:40px;">
-                  <a href="{{CONFIRM_LINK}}" style="display:inline-block;padding:16px 38px;font-family:Arial,Helvetica,sans-serif;font-size:17px;font-weight:bold;color:#ffffff;text-decoration:none;border-radius:40px;">Ja, ich bin dabei</a>
+                <td align="center" bgcolor="#d6832f" style="background:#d6832f;border-radius:44px;box-shadow:0 8px 20px rgba(214,131,47,.35);">
+                  <a href="%CONFIRMLINK%" style="display:inline-block;padding:17px 44px;font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold;color:#ffffff;text-decoration:none;border-radius:44px;">Ja, ich bin dabei →</a>
+                </td>
+              </tr>
+            </table>
+            <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#8a97a0;margin-top:12px;">Dauert 2 Sekunden · kostenlos &amp; unverbindlich</div>
+          </td>
+        </tr>
+
+        <!-- Teaser-Box -->
+        <tr>
+          <td style="padding:20px 40px 6px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f7f3e8;border-radius:14px;border:1px solid #ece3cf;">
+              <tr>
+                <td style="padding:18px 22px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6;color:#1e3a4c;">
+                  <span style="font-size:20px;">✨</span> &nbsp;Sobald du bestätigt hast, kommt dein Zugang zum Produkt-Ideen-Finder — und in <strong>5 Minuten</strong> hältst du deine erste eigene Produktidee in der Hand.
                 </td>
               </tr>
             </table>
           </td>
         </tr>
+
+        <!-- Rest -->
         <tr>
-          <td style="padding:0 40px;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.65;color:#1e3a4c;">
-            <p style="margin:0 0 16px;">Sobald du bestätigt hast, schick ich dir direkt deinen Zugang zum Produkt-Ideen-Finder. Und keine Sorge, falls du gerade denkst „ich hab doch nichts Besonderes anzubieten" — genau das kitzeln wir da gemeinsam raus. 😉</p>
-            <p style="margin:0 0 16px;">Falls du dich gar nicht angemeldet hast, ignorier diese Mail einfach, dann passiert nichts weiter.</p>
-            <p style="margin:0 0 4px;">Bis gleich,</p>
-            <p style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:19px;color:#2f6f6f;">Patricia</p>
+          <td style="padding:18px 40px 0;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.65;color:#1e3a4c;">
+            <p style="margin:0 0 16px;">Und keine Sorge, falls du gerade denkst „ich hab doch nichts Besonderes anzubieten" — genau das kitzeln wir da gemeinsam raus. 😉</p>
+            <p style="margin:0 0 16px;color:#5a6b76;font-size:15px;">Falls du dich gar nicht angemeldet hast, ignorier diese Mail einfach, dann passiert nichts weiter.</p>
+            <p style="margin:0 0 2px;">Bis gleich,</p>
+            <p style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:20px;color:#2f6f6f;font-weight:bold;">Patricia</p>
+            <p style="margin:2px 0 0;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#a7b0b6;">Mum Life Balance</p>
           </td>
         </tr>
+
+        <!-- P.S. -->
         <tr>
-          <td style="padding:0 40px 40px;">
+          <td style="padding:22px 40px 38px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #ece5d3;">
               <tr>
                 <td style="padding-top:18px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#5a6b76;">
-                  <strong style="color:#1e3a4c;">P.S.</strong> Der Klick dauert zwei Sekunden — und danach hast du in fünf Minuten deine erste eigene Produktidee in der Hand. Versprochen.
+                  <strong style="color:#1e3a4c;">P.S.</strong> Der Klick dauert zwei Sekunden — und danach hast du in fünf Minuten deine erste eigene Produktidee. Versprochen.
                 </td>
               </tr>
             </table>
           </td>
         </tr>
+
       </table>
     </td>
   </tr>
