@@ -1,67 +1,34 @@
 {
-  "datum": "2026-09-05",
-  "profile": {
-    "mentoring": {
-      "profil": "mentoring",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Instagram-Strategie für NM",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Beweise / Social Proof (auf Freebie gemünzt)",
-        "titel": "Beweise / Social Proof (auf Freebie gemünzt)",
-        "story_ziel": "Eine echte Erfolgsgeschichte (Mentee/Pilot-Mama) — Glaubwürdigkeit + sanfter Pull.",
-        "kaeufertyp": "Zoe",
-        "cta": "thematisch passend",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 36,
-        "wochentag": "Samstag",
-        "datum": "2026-09-05"
-      },
-      "gesendet_am": "2026-09-05T04:42:01.094Z",
-      "telegram_message_id": 1184,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    },
-    "doterra": {
-      "profil": "doterra",
-      "modus": "tagesplan",
-      "disg": "Rot",
-      "disg_sekundaer": "Gelb",
-      "nadja_persona": "Charlie / Stefan",
-      "story_saeule": "Expertise",
-      "aktives_produkt": "Zurück zu deiner Energie",
-      "wochen_fokus": "(kein Fokus eingetragen)",
-      "plan": {
-        "launch_aktiv": false,
-        "phase": null,
-        "tag_im_launch": null,
-        "vorlage": "Beweise / Social Proof (auf Freebie gemünzt)",
-        "titel": "Beweise / Social Proof (auf Freebie gemünzt)",
-        "story_ziel": "Eine echte Erfolgsgeschichte (Mentee/Pilot-Mama) — Glaubwürdigkeit + sanfter Pull.",
-        "kaeufertyp": "Zoe",
-        "cta": "thematisch passend",
-        "cta_keyword": null
-      },
-      "kontext_snapshot": {
-        "kw": 36,
-        "wochentag": "Samstag",
-        "datum": "2026-09-05"
-      },
-      "gesendet_am": "2026-09-05T04:42:01.901Z",
-      "telegram_message_id": 1185,
-      "patricia_antworten": [],
-      "patricia_fotos": [],
-      "status": "warten_auf_antwort"
-    }
-  }
+  "profil": "doterra",
+  "modus": "tagesplan",
+  "disg": "Rot",
+  "disg_sekundaer": "Gelb",
+  "nadja_persona": "Charlie / Stefan",
+  "story_saeule": "Expertise",
+  "aktives_produkt": "doTERRA Lifestyle",
+  "wochen_fokus": "(kein Fokus eingetragen)",
+  "sales_pattern": "",
+  "wochen_cta": "",
+  "monat_kontext": "",
+  "produkt_themen": null,
+  "vorschlag_idee": "Idee: Patricia zeigt im Spiegel, wie ihre Haut heute aussieht seit sie doTERRA-Öle nutzt – und erzählt offen, welche drei Fehler erschöpfte Mamas bei ihrer Hautpflege machen und warum das mit Vormenopause zusammenhängt.\n\nMuster: Expertise / Fehler-Reframing + Glaubenssatz-Slides\n\nCTA: \"Wenn das nach dir klingt – schreib mir eine DM. Ich zeige dir, wie der doTERRA Lifestyle meine Energie zurückgebracht hat.\"",
+  "wochen_fokus_quelle": "fallback",
+  "launch_tag": null,
+  "launch_vorlage": null,
+  "kontext_snapshot": {
+    "kw": 36,
+    "wochentag": "Samstag",
+    "datum": "2026-09-05"
+  },
+  "fragen": [
+    "Was hast du erlebt?",
+    "Hast du grad einen Gedanken zum Thema?",
+    "Oder Standard-Pool?"
+  ],
+  "gesendet_am": "2026-09-05T08:32:14.398Z",
+  "telegram_message_id": 1186,
+  "patricia_antworten": [],
+  "patricia_fotos": [],
+  "patricia_videos": [],
+  "status": "warten_auf_antwort"
 }
