@@ -150,6 +150,7 @@ das für die nächsten Wochen überall sichtbar. Die anderen dürfen liegenbleib
 
 ## 🔗 Verwandte Notizen
 
+- [[julia-gesamtanalyse-leads]] — was in ihren übrigen Kursen steht
 - [[active-funnels|Funnel-Register]]
 - [[content-radar-juni-2026]]
 - [[patricia-freebies]]
