@@ -99,13 +99,22 @@ Anzeige ist **komplett komponiert**, aber Veröffentlichen scheitert an:
 
 **→ Sobald Freigabe-Mail von OpenAI da ist:** Anzeige in 1 Klick erstellen. Alles liegt bereit.
 
-### Fertig komponierte Anzeige (zum 1:1-Wiederherstellen)
+### Fertig komponierte Anzeige (zum 1:1-Wiederherstellen) — Stand 6.9. (kurstreu korrigiert: kein Preis, CTA)
 - **Kampagne:** „Mum Life Balance campaign" (Typ Klicks), Budget **CHF 25/Tag**, Anzeigengruppe „Recommended ad group"
+- **Anzeigenname:** `Storyideen – Nie wieder ratlos`
 - **Titel:** `Nie wieder ratlos vor der Story` (31/50)
-- **Beschreibung:** `90 fertige Storyideen für Networkerinnen – sichtbar werden, ohne dein Produkt zu pushen. 19 CHF.` (96/100)
+- **Beschreibung:** `90 fertige Storyideen für Networkerinnen – sichtbar werden ohne Produkt-Pushen. Jetzt ansehen.` (kein Preis, CTA)
 - **Link:** `https://mumlifebalance.thrivecart.com/storyideen/?utm_source=chatgpt&utm_campaign=fruehstart`
-- **Bild:** `storyideen_ad_orange_variant_zeitersparnis.png` (1920×1920, orange) aus Downloads
+- **Bild:** `storyideen_ad_orange_variant_zeitersparnis.png` (1920×1920, orange) aus Downloads — Upload über echtes Datei-Feld möglich (kein Bild-Editor)
+- **2. Variante (Vorlage 3 Miniprodukt):** Titel `Storyideen in 2 Minuten` · Beschreibung `Fertiges Workbook mit 90 Storyideen für Networkerinnen. Sofort loslegen.`
 - **Nach dem Erstellen noch:** Conversion-Ereignis „Kauf Storyideen" mit der Kampagne verknüpfen, dann bereitstellen.
+
+### ✅ Am 6.9. erledigt
+- **Kontexthinweise** der Anzeigengruppe von Auto-Persona auf **Storyideen-Gesprächskontext** umgestellt (aus Kontext-Finder, siehe [[2026-09-04-kontext-finder-storyideen]]) → „Anzeigengruppe aktualisiert".
+
+### ⏸️ Immer noch blockiert (6.9.): 403 „Account review must be approved before using a different ad URL"
+- Anzeige zweimal komplett gebaut → beide Male gleicher 403. **Kontoprüfung weiterhin nicht durch.**
+- Einstellungen → **Verifizierung: Werbetreibendentyp = „Unternehmen"** → braucht Geschäfts-Verifizierung (langsamer). Vermutlich DER Grund. Auf Freigabe-Mail warten; bei >2 Wochen OpenAI-Support kontaktieren. Ggf. Advertiser-Typ prüfen (Änderung löst aber neue Prüfung aus).
 
 ---
 
