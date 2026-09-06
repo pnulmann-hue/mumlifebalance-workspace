@@ -1,0 +1,56 @@
+name: ActiveCampaign Report
+
+# Montags 06:00 Schweiz (= 04:00 UTC im Sommer / 05:00 UTC im Winter).
+# Zweck: die AC-Kennzahlen liegen als Markdown im Repo, unabhängig davon ob
+# der MCP-Connector verbindet — der Sandbox-Proxy blockt activehosted.com.
+on:
+  schedule:
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+    inputs:
+      telegram:
+        description: 'Zusammenfassung zusätzlich per Telegram schicken?'
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ac-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Report ziehen
+        env:
+          AC_API_URL: ${{ secrets.AC_API_URL }}
+          AC_API_KEY: ${{ secrets.AC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SEND_TELEGRAM: ${{ (github.event_name == 'schedule' || inputs.telegram) && '1' || '0' }}
+        run: node scripts/activecampaign-report/fetch-report.mjs
+
+      - name: Ergebnis committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outputs/activecampaign/
+          if git diff --staged --quiet; then
+            echo "Keine Änderung, kein Commit."
+          else
+            git commit -m "ac-report: $(date -u +%Y-%m-%d)"
+            git push
+          fi

@@ -88,6 +88,7 @@ tags: [tag1, tag2, tag3]
 | `outputs/zielgruppen-research/` | `[research]` |
 | `outputs/doterra-strategie/` | `[doterra]` |
 | `outputs/ads/` | `[ads]` |
+| `outputs/activecampaign/` | `[ac, kennzahlen]` |
 | `outputs/monatsplaene/` | `[monatsplan]` |
 | `outputs/content-kalender/` | `[content]` |
 | `outputs/garten/` | `[garten]` |
@@ -691,6 +692,29 @@ MCP-Server, der Claude direkten Zugriff auf ActiveCampaign gibt — registriert 
 - **Quelle:** `C:\Users\pnulm\OneDrive\Dokumente\Patricia\Hobby\Basteln\`
 
 **`/basteln` Modus 0 nutzt das Skript verbindlich** — nie aus `inventar-digital.md` raten, immer suchen.
+
+### ActiveCampaign-Report (`scripts/activecampaign-report/`, seit 2026-09-06)
+
+**Wöchentlicher Kennzahlen-Report aus ActiveCampaign — als GitHub Action, nicht über MCP.**
+
+Schliesst die Lücke, dass der AC-Connector in der Web-Sandbox regelmässig nicht verbindet und
+`*.activehosted.com` vom Sandbox-Proxy mit `403 host_not_allowed` geblockt wird. Die Action läuft
+ausserhalb der Sandbox — die Zahlen liegen danach im Repo und **jede Session liest sie einfach aus
+`outputs/activecampaign/`**, unabhängig vom Connector-Status.
+
+- **Sprache:** Node.js 20 (ESM, nur `fetch` — keine npm-Pakete)
+- **Workflow:** `.github/workflows/ac-report.yml` — Cron montags 06:00 Schweiz + `workflow_dispatch`
+- **Secrets:** `AC_API_URL` + `AC_API_KEY` (neu anzulegen) · `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` (vorhanden)
+- **Output:** `outputs/activecampaign/YYYY-MM-DD-report.md` + `_snapshot.json` für die Deltas
+- **Inhalt:** Kontakte gesamt · neu in 7/30 Tagen · Ø Intake pro Woche · Listen mit Zuwachs ·
+  **Tags = Intake pro Freebie/Funnel-Einstieg** · letzte 15 Kampagnen mit Öffnungs-/Klickrate ·
+  regelbasierte Beobachtungen (Listen/Tags ohne Zuwachs, Kampagnen unter dem eigenen Schnitt)
+- **Datenschutz:** ausschliesslich Aggregate — keine Adressen, keine Namen, keine Kontakt-IDs
+  (das Repo ist public)
+
+**Wenn ein Skill AC-Zahlen braucht** (`/cockpit`, `/monatsplan`, `/funnel`): den jüngsten
+`outputs/activecampaign/*-report.md` lesen. Älter als 10 Tage → Hinweis an Patricia, dass der
+Workflow nicht gelaufen ist. Doku: `scripts/activecampaign-report/README.md`.
 
 ### Kochbot-RAG (`scripts/kochbot-rag/`)
 

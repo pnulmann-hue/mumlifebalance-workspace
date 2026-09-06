@@ -110,6 +110,7 @@ make_index "outputs/telegram-posts" "📣 Telegram-Posts" "_MOCs/MOC-Content-Eng
 make_index "outputs/praesentationen" "📊 Präsentationen" "_MOCs/MOC-Produkte-Funnels" "moc, produkt"
 make_index "outputs/samples" "🧪 Samples" "_MOCs/MOC-Content-Engine" "moc, content, samples"
 make_index "outputs/bio-check-bot" "🤖 Bio-Check Bot" "_MOCs/MOC-Tools-Skripte" "moc, tools, bot"
+make_index "outputs/activecampaign" "📊 ActiveCampaign" "_MOCs/MOC-Produkte-Funnels" "moc, ac, kennzahlen"
 
 # Optional bio-update Ordner (datums-gestempelt)
 for d in outputs/bio-update-*; do
@@ -149,6 +150,7 @@ tag_dir() {
   fi
 }
 
+tag_dir "outputs/activecampaign" "ac, kennzahlen"
 tag_dir "outputs/karussells" "content, karussell"
 tag_dir "outputs/reels" "content, reels"
 tag_dir "outputs/freitag" "content, freitag-hooks"
