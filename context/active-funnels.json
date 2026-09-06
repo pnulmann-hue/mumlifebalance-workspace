@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Zentrales Register aller aktiven Funnels für Mum Life Balance (Mentoring + doTERRA). Wird vom /funnel Skill gepflegt und von /story, /montag, /reels, /karussell gelesen — damit Content-Assistenten wissen welche ManyChat-Keywords diese Woche prioritär sind.",
-    "last_updated": "2026-07-13 · Bestandskunden-Anrechnungs-Aktion angelegt (outputs/funnels/mba-anrechnung-bestandskunden/): Käufer der 3 grossen Kurse bekommen vollen Kaufpreis auf die MBA angerechnet, 4-Mail-Sequenz, Deadline 27.7. · Vorher 2026-07-04 · MBA-Launch LÄUFT: 5-Tage-PIA-Bootcamp gelaufen (29.6.–3.7.), öffentlicher Cart offen Fr 3.7.–So 27.7. 23:59 (Pioneer 997 durchgehend, verlängert von 6.7.) · Mama-CEO-Kurs fertiggestellt · Neues 0€-Freebie 'To-Do-Liste halbieren' (Keyword ZEIT) für Juli-Feed-Block 2 ergänzt · Warteliste live (mumlifebalance.ch/mba-warteliste).",
+    "last_updated": "2026-09-06 · Mentoring-Funnels: alle Nurture-Sequenzen und die Übergänge zu den Funnelmails stehen (von Patricia bestätigt) — das Register hing auf dem Stand 13.7. und zeigte sie fälschlich als 'geplant/nicht gebaut'. Automation-IDs sind noch nicht nachgetragen, ac_integration-Felder daher weiterhin unvollständig. · Vorher: 2026-07-13 · Bestandskunden-Anrechnungs-Aktion angelegt (outputs/funnels/mba-anrechnung-bestandskunden/): Käufer der 3 grossen Kurse bekommen vollen Kaufpreis auf die MBA angerechnet, 4-Mail-Sequenz, Deadline 27.7. · Vorher 2026-07-04 · MBA-Launch LÄUFT: 5-Tage-PIA-Bootcamp gelaufen (29.6.–3.7.), öffentlicher Cart offen Fr 3.7.–So 27.7. 23:59 (Pioneer 997 durchgehend, verlängert von 6.7.) · Mama-CEO-Kurs fertiggestellt · Neues 0€-Freebie 'To-Do-Liste halbieren' (Keyword ZEIT) für Juli-Feed-Block 2 ergänzt · Warteliste live (mumlifebalance.ch/mba-warteliste).",
     "funnel_architektur": "3 Produkttreppen (Sichtbarkeit/Instagram · Zeit/Struktur=Mama-CEO · Digitale Produktwelt). Jede: 0€-Freebie → Minikurs (39/97) → grosser Kurs (333) → MBA. ALLE Funnels führen am Ende zur MBA (Bundle · Pioneer 997 / Final 1347). Die 3 grossen Kurse (Instagram-Kundenmaschine · Mama-CEO · Digitale Produktwelt) sind einzeln verkaufbar UND Bestandteil der MBA.",
     "schema_version": 1,
     "brand": "Mum Life Balance",
@@ -40,7 +40,7 @@
         "nurture_automation_id": null
       },
       "mail_sequenz": {
-        "status": "Mail 1 Auslieferung + Mail 1 Launch-Paukenschlag fertig",
+        "status": "Sequenz + Übergang zu den Funnelmails LIVE (Patricia bestätigt 2026-09-06; Automation-IDs noch nicht ins Register nachgetragen)",
         "design_template": "context/mail-design-onlinebusiness.html",
         "mails": [
           "outputs/bio-check-bot/ac-mail-1-auslieferung.html",
@@ -127,7 +127,7 @@
         "notes": "Registration via Thrivecart überführt Kontakt zurück in AC"
       },
       "mail_sequenz": {
-        "status": "AC-Automation existiert, Inhalt noch zu prüfen",
+        "status": "Sequenz + Übergang zu den Funnelmails LIVE (Patricia bestätigt 2026-09-06; Automation-IDs noch nicht ins Register nachgetragen)",
         "design_template": "context/mail-design-onlinebusiness.html",
         "geplant": 6
       },
@@ -166,7 +166,7 @@
         "nurture_automation_id": null
       },
       "mail_sequenz": {
-        "status": "AC-Automation existiert",
+        "status": "Sequenz + Übergang zu den Funnelmails LIVE (Patricia bestätigt 2026-09-06; Automation-IDs noch nicht ins Register nachgetragen)",
         "design_template": "context/mail-design-onlinebusiness.html",
         "geplant": 6
       },
@@ -211,7 +211,7 @@
         "notes": "AC-Liste 24 'Quiz-Kontakte' · AC-Automation 52 '0€ Potenzial-Test'. Auslieferung erfolgt via Jotform+ManyChat, Leads werden nachträglich in AC importiert."
       },
       "mail_sequenz": {
-        "status": "AC-Automation existiert",
+        "status": "Sequenz + Übergang zu den Funnelmails LIVE (Patricia bestätigt 2026-09-06; Automation-IDs noch nicht ins Register nachgetragen)",
         "design_template": "context/mail-design-onlinebusiness.html",
         "geplant": 6
       },
@@ -223,7 +223,7 @@
     {
       "id": "0-euro-starterguide",
       "name": "0€ Starterguide",
-      "status": "live-ohne-ac-funnel",
+      "status": "live",
       "profile": "mentoring",
       "typ": "0€ Leadmagnet · Guide",
       "preis_chf": 0,
@@ -241,7 +241,7 @@
         "notes": "AUSLIEFERUNG ERFOLGT IN MANYCHAT · KEIN AC-FUNNEL · TODO: AC-Automation bauen für Nurture-Sequenz"
       },
       "mail_sequenz": {
-        "status": "GEPLANT — noch nicht gebaut",
+        "status": "Sequenz + Übergang zu den Funnelmails LIVE (Patricia bestätigt 2026-09-06; Automation-IDs noch nicht ins Register nachgetragen)",
         "design_template": "context/mail-design-onlinebusiness.html",
         "geplant": 6
       },
@@ -253,7 +253,7 @@
     {
       "id": "story-challenge",
       "name": "Story-Challenge (7-Tage-Workbook)",
-      "status": "live-ohne-ac-funnel",
+      "status": "live",
       "profile": "mentoring",
       "typ": "0€ Leadmagnet · Challenge + Telegram-Kanal",
       "preis_chf": 0,
@@ -272,7 +272,7 @@
         "notes": "KEIN AC-FUNNEL · TODO: AC-Automation + Mail-Sequenz"
       },
       "mail_sequenz": {
-        "status": "GEPLANT — noch nicht gebaut",
+        "status": "Sequenz + Übergang zu den Funnelmails LIVE (Patricia bestätigt 2026-09-06; Automation-IDs noch nicht ins Register nachgetragen)",
         "design_template": "context/mail-design-onlinebusiness.html",
         "geplant": 6
       },
@@ -323,6 +323,9 @@
         "pillar": "Zeit/Struktur — Business neben der Familie",
         "primaer_keyword": "ZEIT",
         "einsatz": "Juli Feed-Block 2 (21.–31.7.) — Freebie-Reise führt zur MBA"
+      },
+      "mail_sequenz": {
+        "status": "Sequenz + Übergang zu den Funnelmails LIVE (Patricia bestätigt 2026-09-06; Automation-IDs noch nicht ins Register nachgetragen)"
       }
     },
     {
@@ -731,7 +734,10 @@
       "verwandt": "Ergaenzt die 90 Storyideen (Ideen = Worueber, Content-Box = erster Satz/Hook). Wurzel-Idee: outputs/salespages/von-nebenbei-zu-business-salespage.md",
       "offen_patricia": "PDF ins Los-gehts-Modul hochladen · Auslieferungstexte einsetzen",
       "launched_on": null,
-      "verwendung": "Order-Bump fuer 17 CHF im Storyideen-Checkout (live) · ab 2026-08-24 zusaetzlich Teil des Starter-Sets im Startklar-Checkout (39 statt 75)"
+      "verwendung": "Order-Bump fuer 17 CHF im Storyideen-Checkout (live) · ab 2026-08-24 zusaetzlich Teil des Starter-Sets im Startklar-Checkout (39 statt 75)",
+      "mail_sequenz": {
+        "status": "Sequenz + Übergang zu den Funnelmails LIVE (Patricia bestätigt 2026-09-06; Automation-IDs noch nicht ins Register nachgetragen)"
+      }
     }
   ],
   "produkttreppe_mentoring": [
