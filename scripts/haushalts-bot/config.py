@@ -61,6 +61,25 @@ WOCHEN_SLOTS = ["Mo", "Di", "Mi", "Do", "Fr", "Sa"]
 # Schutz gegen wucherndes "Dranbleiben": max. so viele Pins pro Nachricht.
 PINNED_MAX = 5
 
+# ---- Saison-Liste ----
+# Saison-Aufgaben (Hecke schneiden, Sommersachen raus, Reifenwechsel …) haben
+# keinen Kalendertag. Taeglich zeigen waere Nagging, gar nicht zeigen laesst
+# den Herbst durchrutschen. Darum: einmal pro Woche, am Vorabend von SAISON_TAG.
+SAISON_TAG = "So"          # -> die Liste kommt am Samstagabend
+SAISON_MAX = 12            # Liste kommt nur 1x/Woche, darf laenger sein;
+                           # im Saisonwechsel-Monat kommen die Quartalsaufgaben dazu
+SAISON_RHYTHMEN = ["saisonal", "2x/Jahr", "3x/Jahr", "jährlich", "alle 3 Monate"]
+SAISON_MONATE = {
+    3: "Frühling", 4: "Frühling", 5: "Frühling",
+    6: "Sommer", 7: "Sommer", 8: "Sommer",
+    9: "Herbst", 10: "Herbst", 11: "Herbst",
+    12: "Winter", 1: "Winter", 2: "Winter",
+}
+SAISON_EMOJI = {"Frühling": "🌱", "Sommer": "☀️", "Herbst": "🍂", "Winter": "❄️"}
+# Startmonate der Saisons — hier kommen zusaetzlich die Quartalsaufgaben
+# ("alle 3 Monate" ohne Saison-Angabe in der Notiz) auf die Liste.
+SAISON_START_MONATE = {3, 6, 9, 12}
+
 # Business: welche Status als offen gelten + wie viele Ueberfaellige gezeigt werden
 BUSINESS_STATUS_OFFEN = ["Geplant", "Aktiv", "Wartend", "Termin"]
 BUSINESS_UEBERFAELLIG_MAX = 3

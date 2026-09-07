@@ -49,6 +49,8 @@ BLOCK_META = {
     "haushalt":      ("🏠 Haushalt", "HAUSHALT"),
     "aemtli":        ("🧒 Kinder-Ämtli", "KINDER-ÄMTLI"),
     "slot":          ("🧘 Dein Slot", "DEIN SLOT"),
+    # Titel wird zur Laufzeit mit der Saison gefuellt
+    "saison":        ("Saison-Liste", "SAISON-LISTE"),
 }
 
 MONATE = {
@@ -124,6 +126,29 @@ def _strip_emoji(text: str) -> str:
     for emoji, wort in _EMOJI_WORT.items():
         text = text.replace(emoji, wort)
     return _EMOJI_RE.sub("", text).strip()
+
+
+# Woerter in der Notiz, die eine Saison verraten. Die Liste deckt ab, was in
+# Patricias Haushalts-Liste tatsaechlich steht ("Herbst", "Frühling + Winter",
+# "Dezember", "vor Fasnacht (Feb)", "vor Ostern").
+_SAISON_WORTE = {
+    "frühling": "Frühling", "fruehling": "Frühling", "frühjahr": "Frühling",
+    "ostern": "Frühling", "märz": "Frühling", "april": "Frühling", "mai": "Frühling",
+    "sommer": "Sommer", "juni": "Sommer", "juli": "Sommer", "august": "Sommer",
+    "herbst": "Herbst", "september": "Herbst", "oktober": "Herbst",
+    "november": "Herbst", "nov": "Herbst",
+    "winter": "Winter", "dezember": "Winter", "advent": "Winter",
+    "weihnacht": "Winter", "januar": "Winter", "februar": "Winter",
+    "feb": "Winter", "fasnacht": "Winter",
+}
+
+
+def _saisonen_aus_notiz(notiz: str) -> set[str]:
+    """Welche Saisons nennt die Notiz? Leer = keine Zuordnung moeglich."""
+    if not notiz:
+        return set()
+    low = notiz.lower()
+    return {saison for wort, saison in _SAISON_WORTE.items() if wort in low}
 
 
 def _streu(text: str) -> int:
@@ -282,6 +307,9 @@ def baue_briefing_struktur(
     aemtli: list[str] = []
     aemtli_taeglich: list[str] = []
     slot: list[str] = []
+    saison_liste: list[str] = []
+
+    saison = config.SAISON_MONATE[(heute + timedelta(days=1)).month]
 
     for e in offen:
         bereich = e["bereich"]
@@ -386,12 +414,34 @@ def baue_briefing_struktur(
                     ziel.append(_wer_prefix(wer, f"{zeile} (diesen Monat dran)"))
             elif _slot_monatstag(aufgabe) == morgen.day:
                 ziel.append(_wer_prefix(wer, f"{zeile} (diesen Monat dran)"))
-        # alle 3 Monate / 2x-3x/Jahr / jaehrlich ohne Datum / saisonal /
-        # nach Bedarf: bewusst NICHT im taeglichen Push (sonst Dauer-Nagging).
+        elif rhythmus in config.SAISON_RHYTHMEN:
+            # Saison-Aufgaben haben keinen Kalendertag. Sie kommen einmal pro
+            # Woche (Vorabend von SAISON_TAG) und nur, wenn die Notiz die
+            # laufende Saison nennt — sonst wuerde geraten.
+            if morgen_key != config.SAISON_TAG:
+                pass
+            elif saison in _saisonen_aus_notiz(notiz):
+                saison_liste.append(_wer_prefix(wer, zeile))
+            elif (rhythmus == "alle 3 Monate"
+                  and not _saisonen_aus_notiz(notiz)
+                  and morgen.month in config.SAISON_START_MONATE):
+                # Quartalsaufgaben ohne Saison-Angabe: viermal im Jahr, jeweils
+                # zum Saisonwechsel. Das ist genau ihr Rhythmus — kein Raten.
+                # Kein Suffix, wenn die Notiz das schon sagt ("quartalsweise").
+                suffix = "" if "quartal" in notiz_low else " (quartalsweise)"
+                saison_liste.append(_wer_prefix(wer, f"{zeile}{suffix}"))
+        # "nach Bedarf" sowie Saison-Aufgaben ohne Saison-Angabe in der Notiz:
+        # bewusst NICHT im Push — lieber nichts sagen als raten.
 
     # ---- Struktur zusammenbauen ----
     if aemtli_taeglich:
         aemtli.insert(0, "tägliche Ämtli-Runde: " + " · ".join(aemtli_taeglich))
+
+    if len(saison_liste) > config.SAISON_MAX:
+        rest_saison = len(saison_liste) - config.SAISON_MAX
+        saison_liste = saison_liste[:config.SAISON_MAX]
+        wort = "weiterer Punkt" if rest_saison == 1 else "weitere Punkte"
+        saison_liste.append(f"… und {rest_saison} {wort} auf der Saison-Liste")
 
     if pinned:
         rest_pins = len(pinned) - config.PINNED_MAX
@@ -421,6 +471,7 @@ def baue_briefing_struktur(
         ("familie", familie),
         ("haushalt", haushalt),
         ("aemtli", aemtli),
+        ("saison", saison_liste),
         ("slot", slot),
     ]
 
@@ -432,6 +483,10 @@ def baue_briefing_struktur(
         if key == "business":
             titel = _business_titel(morgen_key)
             marker = _business_marker(morgen_key)
+        elif key == "saison":
+            emoji = config.SAISON_EMOJI.get(saison, "")
+            titel = f"{emoji} {saison}-Liste (einmal pro Woche)".strip()
+            marker = f"{saison.upper()}-LISTE"
         bloecke.append({"key": key, "titel": titel, "marker": marker, "items": items})
 
     return {
@@ -441,6 +496,7 @@ def baue_briefing_struktur(
         "morgen_lang": morgen_lang,
         "datum_lang": f"{morgen_lang}, {morgen.day}. {MONATE[morgen.month]} {morgen.year}",
         "tagesthema": tagesthema,
+        "saison": saison,
         "bloecke": bloecke,
         "hat_inhalt": bool(bloecke),
     }
