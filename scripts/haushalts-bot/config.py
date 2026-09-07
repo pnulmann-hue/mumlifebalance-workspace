@@ -66,8 +66,8 @@ PINNED_MAX = 5
 # keinen Kalendertag. Taeglich zeigen waere Nagging, gar nicht zeigen laesst
 # den Herbst durchrutschen. Darum: einmal pro Woche, am Vorabend von SAISON_TAG.
 SAISON_TAG = "So"          # -> die Liste kommt am Samstagabend
-SAISON_MAX = 12            # Liste kommt nur 1x/Woche, darf laenger sein;
-                           # im Saisonwechsel-Monat kommen die Quartalsaufgaben dazu
+SAISON_MAX = 10            # laengere Listen werden woechentlich durchrotiert,
+                           # damit nichts dauerhaft hinten runterfaellt
 SAISON_RHYTHMEN = ["saisonal", "2x/Jahr", "3x/Jahr", "jährlich", "alle 3 Monate"]
 SAISON_MONATE = {
     3: "Frühling", 4: "Frühling", 5: "Frühling",

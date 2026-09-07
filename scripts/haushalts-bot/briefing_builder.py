@@ -438,10 +438,19 @@ def baue_briefing_struktur(
         aemtli.insert(0, "tägliche Ämtli-Runde: " + " · ".join(aemtli_taeglich))
 
     if len(saison_liste) > config.SAISON_MAX:
-        rest_saison = len(saison_liste) - config.SAISON_MAX
-        saison_liste = saison_liste[:config.SAISON_MAX]
+        # Nicht einfach abschneiden — dann haengt es an der zufaelligen
+        # Reihenfolge in Notion, welche Aufgabe nie drankommt (die
+        # Steuererklaerung war so ein Fall). Stattdessen wird die alphabetisch
+        # sortierte Liste woechentlich weitergedreht: ueber zwei, drei Wochen
+        # sieht Patricia alles, und die Liste bleibt trotzdem kurz.
+        saison_liste.sort()
+        n = len(saison_liste)
+        rest_saison = n - config.SAISON_MAX
+        offset = (morgen.isocalendar()[1] * config.SAISON_MAX) % n
+        gedreht = saison_liste[offset:] + saison_liste[:offset]
+        saison_liste = gedreht[:config.SAISON_MAX]
         wort = "weiterer Punkt" if rest_saison == 1 else "weitere Punkte"
-        saison_liste.append(f"… und {rest_saison} {wort} auf der Saison-Liste")
+        saison_liste.append(f"… und {rest_saison} {wort} — kommen nächste Woche dran")
 
     if pinned:
         rest_pins = len(pinned) - config.PINNED_MAX

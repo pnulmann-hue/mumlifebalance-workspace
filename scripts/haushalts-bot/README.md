@@ -42,7 +42,9 @@ Quartals-/Halbjahres-/Saison-Aufgaben kommen NICHT im täglichen Push (kein Daue
 | `config.py` | Tokens + DB-ID + Verhalten |
 | `notion_reader.py` | Liest Haushalts-Liste + Business-Aufgaben (REST, paginiert) |
 | `briefing_builder.py` | Vorabend-Logik → Telegram-Text |
+| `pdf_builder.py` | Tageszeitungs-PDF („Mum Life Daily") |
 | `run_once.py` | Build + Senden (One-Shot für GitHub Actions) |
+| `test_abdeckung.py` | Prüft, ob jede offene Aufgabe im Jahr mindestens einmal auftaucht |
 
 ## Deployment (GitHub Actions)
 Workflow: `.github/workflows/haushalt-vorabend.yml` — Cron `0 17 * * *` (= 19:00 CEST).
@@ -64,6 +66,35 @@ Manueller Test: GitHub → Actions → **Haushalt-Vorabend** → *Run workflow*.
 1. Bei @BotFather neuen Bot anlegen → Token kopieren.
 2. Dem neuen Bot in Telegram **eine Nachricht schreiben** (z.B. „hallo").
 3. `https://api.telegram.org/bot<TOKEN>/getUpdates` im Browser öffnen → `chat.id` ablesen.
+
+## Abdeckungs-Test — taucht wirklich jede Aufgabe auf?
+
+Der Bot kann eine Aufgabe nur nennen, wenn ihr Rhythmus einen Zeitpunkt ergibt.
+`test_abdeckung.py` simuliert 400 Vorabend-Briefings und meldet jede Aufgabe,
+die im ganzen Jahr **kein einziges Mal** vorkommt:
+
+```bash
+cd scripts/haushalts-bot && python test_abdeckung.py
+```
+
+Damit eine Aufgabe auslesbar ist, braucht sie **eines** davon:
+
+| Rhythmus | nötig | sonst |
+|---|---|---|
+| täglich / jeden 2. Tag | nichts | — |
+| wöchentlich | Wochentag-Feld | Notiz mit Tagen („Mo / Mi / Fr"), sonst fester Tag aus dem Namen |
+| monatlich | nichts | fester Tag im Monat aus dem Namen |
+| alle 3 Monate | nichts | erscheint zum Saisonwechsel (März/Juni/Sept/Dez) |
+| saisonal, 2x/3x/Jahr, jährlich | **Saison in der Notiz** („Herbst", „Frühling + Winter", „Dezember", „vor Ostern") | **fällt durch — wird nie genannt** |
+| einmalig | Fixes Datum oder „überfällig"/„jetzt" in der Notiz | fällt durch |
+| nach Bedarf | — | fällt bewusst durch |
+
+> Saison-Aufgaben ohne Saison-Angabe werden **nicht geraten**. Lieber nichts
+> sagen als den falschen Monat behaupten. Der Test zeigt genau diese Fälle.
+
+Ist die Saison-Liste länger als `SAISON_MAX`, wird sie **wöchentlich
+durchrotiert** statt abgeschnitten — sonst hängt es an der zufälligen
+Reihenfolge in Notion, welche Aufgabe nie drankommt.
 
 ## Lokaler Test
 ```bash
