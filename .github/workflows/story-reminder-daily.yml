@@ -3,8 +3,10 @@ name: Story-Reminder-Daily
 # Mo-So 04:30 UTC = 06:30 Schweiz Sommer / 05:30 Schweiz Winter
 # (Im Winter wenn du exakt 06:30 willst: cron auf '30 5 * * *' anpassen)
 on:
-  schedule:
-    - cron: '30 4 * * *'
+  # PAUSIERT 2026-09-07 (Patricia plant Content jetzt manuell in Notion). Cron aus — nur noch manuell.
+  # Wieder aktivieren: die 2 folgenden Zeilen einkommentieren.
+  # schedule:
+  #   - cron: '30 4 * * *'
   workflow_dispatch:  # Manuell triggerbar
 
 permissions:
