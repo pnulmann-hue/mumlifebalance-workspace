@@ -32,6 +32,10 @@ Auto-Index aller Files in `outputs/stories/`. Siehe [[_MOCs/MOC-Content-Engine]]
 
 - [[briefing]]
 
+### 📁 2026-09-07-tagesplan-mentoring-hybridmodell-tag7
+
+- [[briefing]]
+
 ### 📁 preview-2026-06-09-doterra
 
 - [[_user_prompt]]
