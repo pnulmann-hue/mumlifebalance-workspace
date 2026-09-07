@@ -8,6 +8,7 @@ Auto-Index aller Files in `outputs/doterra-strategie/`. Siehe [[_MOCs/MOC-doTERR
 
 ## Dateien
 
+- [[2026-09-immun-themenwoche-planung]]
 - [[2026-strategie-einschreibungen-botschafterinnen]]
 - [[onboarding-system-outline]]
 - [[reaktivierungs-templates]]
