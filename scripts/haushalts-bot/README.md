@@ -1,30 +1,46 @@
 # 🏠 Haushalts-Bot — Vorabend-Push
 
 Zwilling des Cockpit-Bots, fürs Zuhause. Schickt Patricia **jeden Abend 19:00**
-(Europe/Zurich) einen Vorabend-Überblick für den **nächsten Tag** aus der Notion
-**🏠 Haushalts-Liste** — über einen **eigenen** Telegram-Bot (nicht der Cockpit-Bot).
+(Europe/Zurich) einen Vorabend-Überblick für den **nächsten Tag** — privat aus der
+Notion **🏠 Haushalts-Liste** und geschäftlich aus der **✅ Aufgaben**-DB — über einen
+**eigenen** Telegram-Bot (nicht der Cockpit-Bot).
 
 ## Warum Vorabend?
 Schule (Turnsachen packen) und Termine lassen sich am Abend vorher vorbereiten.
 Darum kündigt die Nachricht den *morgigen* Tag an.
 
 ## Was drinsteht
-- 📌 **Dranbleiben** — überfällige einmalige Termine (z.B. Zahnarzt/Frauenarzt), bleiben oben bis `Erledigt = ja`
-- 🏠 **Haushalt** — täglich / jeden 2. Tag / wöchentlich (Wochentag = morgen); Wochen-Tasks ohne festen Tag 1× zum Wochenstart (Mo)
+- 📌 **Dranbleiben** — überfällige einmalige Termine (z.B. Zahnarzt/Frauenarzt), bleiben oben bis `Erledigt = ja`, gedeckelt auf 5
+- 🏠 **Haushalt** — täglich / jeden 2. Tag / wöchentlich
 - 👨‍👩‍👧 **Familie / Termine** — datierte Termine (morgen bis +3 Tage), Geburtstage 10–14 Tage vorher (Geschenk) + am Tag (Gratulieren)
 - 🎒 **Schule** — Vorabend für morgen, mit Vorname
-- 🧒 **Kinder-Ämtli** — „erinnere die Kinder …"
+- 🧒 **Kinder-Ämtli** — die täglichen als eine „Ämtli-Runde"-Zeile, wöchentliche einzeln
+- 💼 **Business** — offene Aufgaben mit Datum morgen + die 3 ältesten überfälligen
 - 🧘 **Dein Slot** — Me-Time, als Schutz formuliert, nie mit Druck
 
-Wochentage werden auch aus der **Notiz** gelesen (z.B. Krafttraining „Mo / Mi / Fr"),
-wenn das Wochentag-Feld leer ist. Quartals-/Halbjahres-/Saison-Aufgaben kommen
-NICHT im täglichen Push (kein Dauer-Nagging) — sie laufen über datierte Termine.
+### Wie der Rhythmus auf Tage verteilt wird
+- **Wochentag gesetzt** → erscheint an diesem Tag.
+- **Wochentag leer, aber Notiz nennt Tage** (z.B. Krafttraining „Mo / Mi / Fr") → an diesen Tagen.
+- **Wochentag leer und Notiz ohne Tage** → die Aufgabe bekommt einen festen, aus ihrem
+  Namen abgeleiteten Tag (Mo–Sa, `crc32`-Streuung). So verteilen sich die ~17 wöchentlichen
+  Haushaltsaufgaben auf die Woche, statt jeden Montag als ein Block zu erscheinen.
+- **monatlich ohne Datum** → fester Tag im Monat (1–28), gleiche Streuung.
+- **jeden 2. Tag** → feste gerade/ungerade Tage je Aufgabe.
+- **jährlich mit Datum** → als Jahrestag (kommt jedes Jahr wieder), nicht als Einmal-Termin.
+
+Quartals-/Halbjahres-/Saison-Aufgaben kommen NICHT im täglichen Push (kein Dauer-Nagging)
+— sie laufen über datierte Termine.
+
+> **Schule wird nie gepinnt.** Ein vergangener Turn-/Schwimm-/Waldtag ist vorbei, auch wenn
+> niemand „Erledigt" angehakt hat. (Genau das war bis 7.9.2026 der Bug: jeder abgelaufene
+> Schultermin blieb dauerhaft unter „Dranbleiben" stehen und die Nachricht sah jeden Tag
+> gleich aus.)
 
 ## Dateien
 | Datei | Zweck |
 |---|---|
 | `config.py` | Tokens + DB-ID + Verhalten |
-| `notion_reader.py` | Liest die Haushalts-Liste (REST, paginiert) |
+| `notion_reader.py` | Liest Haushalts-Liste + Business-Aufgaben (REST, paginiert) |
 | `briefing_builder.py` | Vorabend-Logik → Telegram-Text |
 | `run_once.py` | Build + Senden (One-Shot für GitHub Actions) |
 
@@ -37,10 +53,12 @@ Manueller Test: GitHub → Actions → **Haushalt-Vorabend** → *Run workflow*.
 |---|---|
 | `TELEGRAM_HAUSHALT_BOT_TOKEN` | Token des eigenen Haushalts-Bots (via @BotFather) |
 | `TELEGRAM_HAUSHALT_CHAT_ID` | Chat-ID (Patricias Chat mit dem Bot) |
-| `NOTION_TOKEN` | bestehendes Secret — Integration muss Zugriff auf die Haushalts-Liste haben |
+| `NOTION_TOKEN` | bestehendes Secret — Integration muss Zugriff auf beide DBs haben |
 
-> **Wichtig:** Die „🏠 Haushalts-Liste" muss mit der Integration hinter `NOTION_TOKEN`
-> geteilt sein (Notion → ••• → Verbindungen). Sonst liest der Bot 0 Einträge.
+> **Wichtig:** Die „🏠 Haushalts-Liste" **und** die „✅ Aufgaben"-DB müssen mit der
+> Integration hinter `NOTION_TOKEN` geteilt sein (Notion → ••• → Verbindungen).
+> Ohne Freigabe der Haushalts-Liste liest der Bot 0 Einträge; ohne Freigabe der
+> Aufgaben-DB fehlt einfach der 💼-Block (der Push geht trotzdem raus).
 
 ### Chat-ID herausfinden
 1. Bei @BotFather neuen Bot anlegen → Token kopieren.

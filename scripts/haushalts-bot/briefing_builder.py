@@ -1,17 +1,25 @@
 """Vorabend-Briefing fuer den Haushalts-Bot.
 
-Baut aus den Haushalts-Liste-Eintraegen eine kurze Telegram-Nachricht, die
-am Abend (19:00) kommt und den NAECHSTEN Tag ankuendigt — Vorabend-Logik,
-damit Schule + Termine rechtzeitig gepackt/vorbereitet sind.
+Baut aus den Haushalts-Liste-Eintraegen (privat) und den offenen Business-
+Aufgaben eine Telegram-Nachricht, die am Abend (19:00) kommt und den
+NAECHSTEN Tag ankuendigt — Vorabend-Logik, damit Schule + Termine
+rechtzeitig gepackt/vorbereitet sind.
 
-Regeln (aus dem Bot-System-Prompt):
+Regeln:
 - Wiederkehrend morgen: taeglich + (jeden 2. Tag) + woechentlich mit Wochentag = morgen
-- Woechentlich ohne festen Tag: 1x/Woche anstossen (am So-Abend = Wochenstart Mo)
-- Monatlich: nur wenn morgen der 1. ist
+- Woechentlich OHNE festen Tag: bekommt einen festen, aus dem Aufgabennamen
+  abgeleiteten Wochentag (Mo-Sa) — so verteilt sich die Wochenlast, statt
+  jeden Montag als Block "diese Woche dran" zu erscheinen.
+- Monatlich ohne Tag: analog auf einen festen Tag im Monat verteilt
 - Datierte Termine: Fixes Datum morgen bis +3 Tage
+- Jaehrliche Termine mit Datum: als Jahrestag, nicht als Einmal-Termin
 - Geburtstage: 10-14 Tage vor dem Datum an Geschenk erinnern, am Tag ans Gratulieren
-- Schule: Vorabend — Eintraege fuer morgen, immer mit Vorname
-- Pinned: ueberfaellige einmalige Termine bleiben ganz oben bis erledigt
+- Schule: Vorabend — Eintraege fuer morgen, immer mit Vorname.
+  Schule wird NIE gepinnt: ein vergangener Turn-/Schwimmtag ist vorbei,
+  auch wenn niemand "Erledigt" angehakt hat.
+- Pinned: ueberfaellige einmalige Termine (Familie/Haushalt) bleiben oben
+  bis erledigt, gedeckelt auf PINNED_MAX
+- Business: offene Aufgaben mit Datum morgen + die aeltesten Ueberfaelligen
 - Wer: Kinder -> "erinnere die Kinder", Mann -> "Mann:", Patricia -> deine Aufgabe
 - Erledigte (Erledigt=ja) werden nie genannt
 """
@@ -20,6 +28,7 @@ from __future__ import annotations
 
 import re
 from datetime import date, timedelta
+from zlib import crc32
 
 import config
 
@@ -68,6 +77,31 @@ def _wochentage_aus_notiz(notiz: str) -> set[str]:
     return set(_WD_RE.findall(notiz))
 
 
+def _streu(text: str) -> int:
+    """Stabiler Streuwert fuer einen Aufgabennamen.
+
+    crc32 statt hash(): hash() ist pro Prozess randomisiert, der Wochentag
+    einer Aufgabe wuerde sonst bei jedem Lauf springen.
+    """
+    return crc32(text.encode("utf-8"))
+
+
+def _slot_wochentag(aufgabe: str) -> str:
+    """Fester Wochentag (Mo-Sa) fuer eine Aufgabe ohne eigenen Wochentag."""
+    slots = config.WOCHEN_SLOTS
+    return slots[_streu(aufgabe) % len(slots)]
+
+
+def _slot_monatstag(aufgabe: str) -> int:
+    """Fester Tag im Monat (1-28) fuer eine monatliche Aufgabe ohne Datum."""
+    return _streu(aufgabe) % 28 + 1
+
+
+def _ist_zweitagesslot(aufgabe: str, tag: date) -> bool:
+    """Deterministisches 'jeden 2. Tag' — gerade/ungerade Tage je Aufgabe."""
+    return tag.toordinal() % 2 == _streu(aufgabe) % 2
+
+
 def _wer_prefix(wer: str | None, text: str) -> str:
     """Formatiert eine Zeile je nach Zustaendigkeit."""
     if wer == "Kinder":
@@ -77,7 +111,46 @@ def _wer_prefix(wer: str | None, text: str) -> str:
     return text
 
 
-def baue_vorabend_briefing(eintraege: list[dict], heute: date | None = None) -> str:
+def _business_block(aufgaben: list[dict], heute: date, morgen: date) -> list[str]:
+    """Baut die Business-Zeilen: morgen faellig + aelteste Ueberfaellige."""
+    faellig: list[str] = []
+    ueberfaellig: list[tuple[date, str]] = []
+
+    for a in aufgaben:
+        d = _parse_datum(a.get("datum"))
+        if d is None:
+            continue
+        titel = a.get("aufgabe") or ""
+        if not titel:
+            continue
+        prio = a.get("prioritaet")
+        suffix = f" [{prio}]" if prio else ""
+        if d == morgen:
+            faellig.append(f"{titel}{suffix}")
+        elif d < heute:
+            ueberfaellig.append((d, f"{titel} (seit {d.strftime('%d.%m.')})"))
+
+    zeilen: list[str] = []
+    for x in faellig:
+        zeilen.append(x)
+
+    if ueberfaellig:
+        ueberfaellig.sort(key=lambda t: t[0])
+        rest = len(ueberfaellig) - config.BUSINESS_UEBERFAELLIG_MAX
+        for _, text in ueberfaellig[:config.BUSINESS_UEBERFAELLIG_MAX]:
+            zeilen.append(f"⏳ {text}")
+        if rest > 0:
+            wort = "weitere überfällige Aufgabe" if rest == 1 else "weitere überfällige Aufgaben"
+            zeilen.append(f"⏳ … und {rest} {wort}")
+
+    return zeilen
+
+
+def baue_vorabend_briefing(
+    eintraege: list[dict],
+    heute: date | None = None,
+    business: list[dict] | None = None,
+) -> str:
     """Baut die Vorabend-Nachricht fuer morgen."""
     if heute is None:
         heute = date.today()
@@ -92,6 +165,7 @@ def baue_vorabend_briefing(eintraege: list[dict], heute: date | None = None) -> 
     familie: list[str] = []
     schule: list[str] = []
     aemtli: list[str] = []
+    aemtli_taeglich: list[str] = []
     slot: list[str] = []
 
     for e in offen:
@@ -108,7 +182,17 @@ def baue_vorabend_briefing(eintraege: list[dict], heute: date | None = None) -> 
         if notiz:
             zeile = f"{aufgabe} — {notiz}"
 
-        # ---- 1. PINNED: ueberfaellige einmalige Termine (bis erledigt) ----
+        # ---- 1. SCHULE (Vorabend fuer morgen) ----
+        # Bewusst VOR dem Pinned-Block: ein vergangener Turn-/Schwimm-/Waldtag
+        # ist vorbei und darf nicht als "Dranbleiben" haengenbleiben, auch
+        # wenn die Erledigt-Checkbox nie gesetzt wurde.
+        if bereich == "Schule":
+            faellig_morgen = (wochentag == morgen_key) or (d == morgen)
+            if faellig_morgen:
+                schule.append(zeile)
+            continue
+
+        # ---- 2. PINNED: ueberfaellige einmalige Termine (bis erledigt) ----
         ueberfaellig = (
             rhythmus == "einmalig"
             and (
@@ -121,13 +205,6 @@ def baue_vorabend_briefing(eintraege: list[dict], heute: date | None = None) -> 
             pinned.append(_wer_prefix(wer, zeile))
             continue
 
-        # ---- 2. SCHULE (Vorabend fuer morgen) ----
-        if bereich == "Schule":
-            faellig_morgen = (wochentag == morgen_key) or (d == morgen)
-            if faellig_morgen:
-                schule.append(zeile)
-            continue
-
         # ---- 3. GEBURTSTAG (Geschenk-Vorlauf / Tag selbst) ----
         if bereich == "Geburtstag" and d is not None:
             tage = _tage_bis_jahrestag(d, morgen)
@@ -137,7 +214,16 @@ def baue_vorabend_briefing(eintraege: list[dict], heute: date | None = None) -> 
                 familie.append(f"🎁 {aufgabe} — in {tage} Tagen, jetzt Geschenk besorgen")
             continue
 
-        # ---- 4. DATIERTE TERMINE (morgen bis +Lookahead) ----
+        # ---- 4. JAEHRLICHE TERMINE MIT DATUM (Jahrestag, nicht einmalig) ----
+        if rhythmus == "jährlich" and d is not None:
+            tage = _tage_bis_jahrestag(d, morgen)
+            if tage <= config.TERMIN_LOOKAHEAD_TAGE:
+                wann = "morgen" if tage == 0 else f"in {tage + 1} Tagen"
+                ziel = familie if bereich in ("Familie/Termin", "Geburtstag") else haushalt
+                ziel.append(_wer_prefix(wer, f"{zeile} ({wann})"))
+            continue
+
+        # ---- 5. DATIERTE TERMINE (morgen bis +Lookahead) ----
         if d is not None:
             delta = (d - morgen).days
             if 0 <= delta <= config.TERMIN_LOOKAHEAD_TAGE:
@@ -145,7 +231,7 @@ def baue_vorabend_briefing(eintraege: list[dict], heute: date | None = None) -> 
                 familie.append(_wer_prefix(wer, f"{zeile} ({wann})"))
             continue
 
-        # ---- 5. WIEDERKEHREND ----
+        # ---- 6. WIEDERKEHREND ----
         ziel = haushalt
         if bereich == "Kinder-Ämtli":
             ziel = aemtli
@@ -155,29 +241,38 @@ def baue_vorabend_briefing(eintraege: list[dict], heute: date | None = None) -> 
             ziel = familie
 
         if rhythmus == "täglich":
-            ziel.append(_wer_prefix(wer, zeile))
+            if ziel is aemtli:
+                # Die taeglichen Kinder-Aemtli sind jeden Tag dieselben —
+                # als eine Zeile buendeln statt sieben Zeilen Rauschen.
+                aemtli_taeglich.append(aufgabe)
+            else:
+                ziel.append(_wer_prefix(wer, zeile))
         elif rhythmus == "jeden 2. Tag":
-            ziel.append(_wer_prefix(wer, f"{aufgabe} (jeden 2. Tag — schau ob morgen dran)"))
+            if _ist_zweitagesslot(aufgabe, morgen):
+                ziel.append(_wer_prefix(wer, zeile))
         elif rhythmus == "wöchentlich":
             if wochentag and wochentag != "–":
                 if wochentag == morgen_key:
                     ziel.append(_wer_prefix(wer, zeile))
             else:
-                # kein festes Wochentag-Feld: erst Notiz nach Tagen absuchen
-                # (z.B. Krafttraining "Mo / Mi / Fr"), sonst 1x/Woche zum
-                # Wochenstart (morgen = Montag) anstossen.
+                # kein Wochentag-Feld: erst Notiz nach Tagen absuchen
+                # (z.B. Krafttraining "Mo / Mi / Fr"), sonst festen Slot
+                # aus dem Aufgabennamen ableiten.
                 tage_notiz = _wochentage_aus_notiz(notiz)
                 if tage_notiz:
                     if morgen_key in tage_notiz:
                         ziel.append(_wer_prefix(wer, zeile))
-                elif morgen_key == "Mo":
-                    ziel.append(_wer_prefix(wer, f"{aufgabe} (diese Woche dran)"))
+                elif _slot_wochentag(aufgabe) == morgen_key:
+                    ziel.append(_wer_prefix(wer, zeile))
         elif rhythmus == "monatlich":
-            if morgen.day == 1:
-                ziel.append(_wer_prefix(wer, f"{aufgabe} (diesen Monat dran)"))
-        # alle 3 Monate / 2x-3x/Jahr / jaehrlich / saisonal / nach Bedarf:
-        # bewusst NICHT im taeglichen Push (sonst Dauer-Nagging) — kommen ueber
-        # die datierten Termine bzw. werden manuell angestossen.
+            if wochentag and wochentag != "–":
+                # z.B. "Mi" = am ersten passenden Wochentag des Monats
+                if wochentag == morgen_key and morgen.day <= 7:
+                    ziel.append(_wer_prefix(wer, f"{zeile} (diesen Monat dran)"))
+            elif _slot_monatstag(aufgabe) == morgen.day:
+                ziel.append(_wer_prefix(wer, f"{zeile} (diesen Monat dran)"))
+        # alle 3 Monate / 2x-3x/Jahr / jaehrlich ohne Datum / saisonal /
+        # nach Bedarf: bewusst NICHT im taeglichen Push (sonst Dauer-Nagging).
 
     # ---- Nachricht zusammenbauen ----
     lines: list[str] = []
@@ -185,16 +280,26 @@ def baue_vorabend_briefing(eintraege: list[dict], heute: date | None = None) -> 
     lines.append("")
 
     if pinned:
+        rest_pins = len(pinned) - config.PINNED_MAX
         lines.append("📌 Dranbleiben (bis erledigt):")
-        for x in pinned:
+        for x in pinned[:config.PINNED_MAX]:
             lines.append(f"   ⚠️ {x}")
+        if rest_pins > 0:
+            wort = "weiterer offener Punkt" if rest_pins == 1 else "weitere offene Punkte"
+            lines.append(f"   ⚠️ … und {rest_pins} {wort}")
         lines.append("")
+
+    if aemtli_taeglich:
+        aemtli.insert(0, "tägliche Ämtli-Runde: " + " · ".join(aemtli_taeglich))
+
+    business_zeilen = _business_block(business or [], heute, morgen)
 
     bloecke = [
         ("🏠 Haushalt", haushalt),
         ("👨‍👩‍👧 Familie / Termine", familie),
         ("🎒 Schule (für morgen packen)", schule),
         ("🧒 Kinder-Ämtli", aemtli),
+        ("💼 Business", business_zeilen),
         ("🧘 Dein Slot", slot),
     ]
     hat_inhalt = bool(pinned)

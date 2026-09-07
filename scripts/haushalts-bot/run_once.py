@@ -51,7 +51,10 @@ def main() -> None:
     eintraege = notion_reader.lade_haushalt_eintraege()
     print(f"[OK] {len(eintraege)} Eintraege aus Haushalts-Liste gelesen")
 
-    text = briefing_builder.baue_vorabend_briefing(eintraege)
+    business = notion_reader.lade_business_aufgaben()
+    print(f"[OK] {len(business)} offene Business-Aufgaben gelesen")
+
+    text = briefing_builder.baue_vorabend_briefing(eintraege, business=business)
 
     if dry:
         print("\n----- DRY RUN (nicht gesendet) -----\n")

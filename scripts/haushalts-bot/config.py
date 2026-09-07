@@ -35,6 +35,10 @@ NOTION_API_KEY = os.getenv("NOTION_TOKEN", "") or os.getenv("NOTION_API_KEY", ""
 # 🏠 Haushalts-Liste (Database-ID) im Privat-Bereich "🏡 Privat & Familie"
 NOTION_DB_HAUSHALT = "745ae127-1f03-4dc0-83d4-a6a8058d99dc"
 
+# ✅ Aufgaben (Business-Brain) — liefert den Business-Teil des Vorabend-Briefings.
+# Data-Source: collection://2ae7078e-8b7e-81a2-a070-000b54019c80
+NOTION_DB_AUFGABEN = "2ae7078e-8b7e-81bd-b07a-deaa99c01b71"
+
 # ========================================
 # Verhalten
 # ========================================
@@ -45,6 +49,17 @@ TERMIN_LOOKAHEAD_TAGE = 3
 # Geburtstage: Geschenk-Erinnerung X-Y Tage vorher
 GEBURTSTAG_VORLAUF_MIN = 10
 GEBURTSTAG_VORLAUF_MAX = 14
+
+# Wiederkehrende Aufgaben OHNE festen Wochentag werden deterministisch ueber
+# diese Tage verteilt, statt alle am Montag als "diese Woche dran" zu landen.
+WOCHEN_SLOTS = ["Mo", "Di", "Mi", "Do", "Fr", "Sa"]
+
+# Schutz gegen wucherndes "Dranbleiben": max. so viele Pins pro Nachricht.
+PINNED_MAX = 5
+
+# Business: welche Status als offen gelten + wie viele Ueberfaellige gezeigt werden
+BUSINESS_STATUS_OFFEN = ["Geplant", "Aktiv", "Wartend", "Termin"]
+BUSINESS_UEBERFAELLIG_MAX = 3
 
 
 def validate_setup() -> list[str]:
@@ -72,3 +87,4 @@ if __name__ == "__main__":
     print(f"   Telegram-Token: ...{TELEGRAM_BOT_TOKEN[-6:]}")
     print(f"   Chat-ID: {TELEGRAM_CHAT_ID}")
     print(f"   Haushalts-DB: {NOTION_DB_HAUSHALT}")
+    print(f"   Aufgaben-DB:  {NOTION_DB_AUFGABEN}")

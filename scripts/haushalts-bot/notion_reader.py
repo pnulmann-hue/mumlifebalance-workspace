@@ -4,6 +4,9 @@ Liest die "🏠 Haushalts-Liste" (eine flache DB) komplett aus und gibt eine
 Liste normalisierter Eintraege zurueck. Nutzt den Standard-REST-Endpoint
 (databases.query) — funktioniert auf jedem Notion-Plan, anders als die
 MCP-Bulk-Query (die einen Business-Plan braucht).
+
+Zusaetzlich: lade_business_aufgaben() holt die offenen Eintraege aus der
+Business-Aufgaben-DB, damit das Vorabend-Briefing privat UND Business zeigt.
 """
 
 from __future__ import annotations
@@ -99,6 +102,63 @@ def lade_haushalt_eintraege() -> list[dict[str, Any]]:
     return eintraege
 
 
+def _query_all(database_id: str, filter_: dict | None = None) -> list[dict]:
+    """Paginierter databases.query-Durchlauf."""
+    client = _get_client()
+    pages: list[dict] = []
+    cursor = None
+    while True:
+        kwargs: dict[str, Any] = {"database_id": database_id, "page_size": 100}
+        if filter_:
+            kwargs["filter"] = filter_
+        if cursor:
+            kwargs["start_cursor"] = cursor
+        res = client.databases.query(**kwargs)
+        pages.extend(res.get("results", []))
+        if not res.get("has_more"):
+            break
+        cursor = res.get("next_cursor")
+    return pages
+
+
+def lade_business_aufgaben() -> list[dict[str, Any]]:
+    """Holt die offenen Business-Aufgaben (Status offen, nicht abgehakt).
+
+    Gibt [] zurueck (statt zu werfen), wenn die DB nicht erreichbar ist —
+    ein fehlender Business-Teil darf den Vorabend-Push nie verhindern.
+
+    Returns Liste von Dicts:
+      { aufgabe, status, prioritaet, datum, anmerkung }
+    """
+    filter_ = {
+        "and": [
+            {"property": "Erledigt (für Projekte)", "checkbox": {"equals": False}},
+            {"or": [
+                {"property": "Status", "select": {"equals": s}}
+                for s in config.BUSINESS_STATUS_OFFEN
+            ]},
+        ]
+    }
+    try:
+        pages = _query_all(config.NOTION_DB_AUFGABEN, filter_)
+    except Exception as e:
+        logger.warning(f"Business-Aufgaben konnten nicht gelesen werden: {e}")
+        return []
+
+    aufgaben: list[dict[str, Any]] = []
+    for page in pages:
+        p = page.get("properties", {})
+        aufgaben.append({
+            "id": page.get("id"),
+            "aufgabe": _prop(p.get("Aufgabe")) or "",
+            "status": _prop(p.get("Status")),
+            "prioritaet": _prop(p.get("Priorität")),
+            "datum": _prop(p.get("Datum")),
+            "anmerkung": _prop(p.get("Anmerkung")) or "",
+        })
+    return aufgaben
+
+
 if __name__ == "__main__":
     import sys
     if hasattr(sys.stdout, "reconfigure"):
@@ -109,3 +169,8 @@ if __name__ == "__main__":
         flag = "[x]" if e["erledigt"] else "[ ]"
         print(f"  {flag} {e['aufgabe']} | {e['bereich']} | {e['rhythmus']} | "
               f"{e['wochentag']} | {e['fixes_datum']} | Wer={e['wer']}")
+
+    business = lade_business_aufgaben()
+    print(f"\n{len(business)} offene Business-Aufgaben:\n")
+    for b in business:
+        print(f"  - {b['aufgabe']} | {b['status']} | {b['prioritaet']} | {b['datum']}")
