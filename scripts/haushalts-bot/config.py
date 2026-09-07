@@ -84,6 +84,14 @@ SAISON_START_MONATE = {3, 6, 9, 12}
 BUSINESS_STATUS_OFFEN = ["Geplant", "Aktiv", "Wartend", "Termin"]
 BUSINESS_UEBERFAELLIG_MAX = 3
 
+# Aufgaben OHNE Datum tauchen im taeglichen Block nicht auf — der kennt nur
+# "morgen faellig" und "ueberfaellig". Damit sie nicht unsichtbar liegen
+# bleiben, kommen sie einmal pro Woche als Auswahl-Liste (Vorabend von
+# BUSINESS_UNDATIERT_TAG).
+BUSINESS_UNDATIERT_TAG = "Mo"      # -> die Liste kommt am Sonntagabend
+BUSINESS_UNDATIERT_MAX = 5
+BUSINESS_UNDATIERT_PRIOS = ["Prio 1", "Prio 2"]
+
 # Business-Wochenrhythmus — Quelle: Notion "🧭 Wochenstruktur Patricia 2026"
 # https://www.notion.so/3587078e8b7e815cabebd1259b8e9794
 # Hier als Config, weil sich der Rhythmus selten aendert (Schulferien,

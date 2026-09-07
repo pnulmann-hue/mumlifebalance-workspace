@@ -217,14 +217,25 @@ def _business_marker(morgen_key: str) -> str:
     return f"BUSINESS — {sauber}-TAG ({config.BUSINESS_ARBEITSFENSTER})"
 
 
-def _business_block(aufgaben: list[dict], heute: date, morgen: date) -> list[str]:
-    """Baut die Business-Zeilen: morgen faellig + aelteste Ueberfaellige."""
+def _business_block(
+    aufgaben: list[dict], heute: date, morgen: date, morgen_key: str
+) -> list[str]:
+    """Baut die Business-Zeilen: morgen faellig + aelteste Ueberfaellige.
+
+    Einmal pro Woche kommen zusaetzlich die Aufgaben ohne Datum dazu — sonst
+    bleiben sie fuer immer unsichtbar, weil der taegliche Block nur "morgen
+    faellig" und "ueberfaellig" kennt.
+    """
     faellig: list[str] = []
     ueberfaellig: list[tuple[date, str]] = []
+    undatiert: list[str] = []
 
     for a in aufgaben:
         d = _parse_datum(a.get("datum"))
         if d is None:
+            titel = a.get("aufgabe") or ""
+            if titel and a.get("prioritaet") in config.BUSINESS_UNDATIERT_PRIOS:
+                undatiert.append(f"{titel} [{a['prioritaet']}]")
             continue
         titel = a.get("aufgabe") or ""
         if not titel:
@@ -253,6 +264,20 @@ def _business_block(aufgaben: list[dict], heute: date, morgen: date) -> list[str
             # bewusst ohne ⏳ — sonst liest es sich im PDF als
             # "überfällig — … und 1 weitere überfällige Aufgabe"
             zeilen.append(f"… und {rest} {wort}")
+
+    if undatiert and morgen_key == config.BUSINESS_UNDATIERT_TAG:
+        undatiert.sort()
+        n = len(undatiert)
+        max_u = config.BUSINESS_UNDATIERT_MAX
+        zeilen.append("— ohne Termin, willst du eine davon diese Woche einplanen? —")
+        if n <= max_u:
+            zeilen.extend(undatiert)
+        else:
+            # wie die Saison-Liste woechentlich weiterdrehen, damit nicht immer
+            # dieselben oben stehen
+            offset = (morgen.isocalendar()[1] * max_u) % n
+            zeilen.extend((undatiert + undatiert)[offset:offset + max_u])
+            zeilen.append(f"… und {n - max_u} weitere ohne Termin")
 
     return zeilen
 
@@ -484,7 +509,7 @@ def baue_briefing_struktur(
     # Business-Block nur an Arbeitstagen — Sa/So bleibt frei.
     tagesthema = config.BUSINESS_TAGESTHEMA.get(morgen_key)
     if tagesthema:
-        business_zeilen = _business_block(business or [], heute, morgen)
+        business_zeilen = _business_block(business or [], heute, morgen, morgen_key)
         notiz_tag = config.BUSINESS_TAGESNOTIZ.get(morgen_key)
         if notiz_tag and business_zeilen:
             business_zeilen.append(notiz_tag)
