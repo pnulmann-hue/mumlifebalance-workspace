@@ -37,6 +37,20 @@ WOCHENTAG_LANG = {
     "Mo": "Montag", "Di": "Dienstag", "Mi": "Mittwoch", "Do": "Donnerstag",
     "Fr": "Freitag", "Sa": "Samstag", "So": "Sonntag",
 }
+# Pro Block: (Telegram-Titel mit Emoji, PDF-Ressort-Marker ohne Emoji —
+# Emojis rendern in den PDF-Standardfonts nicht).
+BLOCK_META = {
+    "pinned":        ("📌 Dranbleiben (bis erledigt)", "DRANBLEIBEN"),
+    "schule":        ("🎒 Schule (für morgen packen)", "SCHULE — FÜR MORGEN PACKEN"),
+    "content_feed":  ("📱 Content morgen", "CONTENT MORGEN"),
+    "content_story": ("📖 Story morgen", "STORY MORGEN"),
+    "business":      ("💼 Business", "BUSINESS"),
+    "familie":       ("👨‍👩‍👧 Familie / Termine", "FAMILIE & TERMINE"),
+    "haushalt":      ("🏠 Haushalt", "HAUSHALT"),
+    "aemtli":        ("🧒 Kinder-Ämtli", "KINDER-ÄMTLI"),
+    "slot":          ("🧘 Dein Slot", "DEIN SLOT"),
+}
+
 MONATE = {
     1: "Januar", 2: "Februar", 3: "März", 4: "April", 5: "Mai", 6: "Juni",
     7: "Juli", 8: "August", 9: "September", 10: "Oktober", 11: "November",
@@ -75,6 +89,41 @@ def _wochentage_aus_notiz(notiz: str) -> set[str]:
     if not notiz:
         return set()
     return set(_WD_RE.findall(notiz))
+
+
+_EMOJI_RE = re.compile(
+    "["
+    "\U0001F000-\U0001FAFF"    # Emoji-Bloecke
+    "←-⇿"            # Pfeile
+    "⌀-⏿"            # Misc Technical (u.a. Sanduhr ⏳)
+    "■-➿"            # Geometrisch + Dingbats (u.a. Warnzeichen ⚠)
+    "⬀-⯿"
+    "〰〽⃣"
+    "︎️‍"       # Variantenselektoren + ZWJ
+    "]+"
+)
+
+# Emojis, die im Telegram-Text Bedeutung tragen, bekommen fuers PDF ein Wort.
+# Reine Typ-Icons (Karussell, Reel, Story) brauchen keins — der Typ steht
+# ohnehin als Wort daneben.
+_EMOJI_WORT = {
+    "⏳": "überfällig — ",
+    "⚠️": "Achtung: ",
+    "🎁": "Geschenk: ",
+    "🎂": "Geburtstag: ",
+}
+
+
+def _strip_emoji(text: str) -> str:
+    """Macht eine Zeile PDF-tauglich.
+
+    Die PDF-Standardfonts (Helvetica) koennen keine Emojis rendern und
+    zeichnen stattdessen schwarze Kaesten. Bedeutungstragende Emojis werden
+    darum durch ein Wort ersetzt, der Rest faellt weg.
+    """
+    for emoji, wort in _EMOJI_WORT.items():
+        text = text.replace(emoji, wort)
+    return _EMOJI_RE.sub("", text).strip()
 
 
 def _streu(text: str) -> int:
@@ -119,6 +168,15 @@ def _business_titel(morgen_key: str) -> str:
     return f"💼 Business — morgen ist {thema}-Tag ({config.BUSINESS_ARBEITSFENSTER})"
 
 
+def _business_marker(morgen_key: str) -> str:
+    """PDF-Ressort-Marker mit Tagesthema, ohne Emoji."""
+    thema = config.BUSINESS_TAGESTHEMA.get(morgen_key)
+    if not thema:
+        return "BUSINESS"
+    sauber = _strip_emoji(thema).upper()
+    return f"BUSINESS — {sauber}-TAG ({config.BUSINESS_ARBEITSFENSTER})"
+
+
 def _business_block(aufgaben: list[dict], heute: date, morgen: date) -> list[str]:
     """Baut die Business-Zeilen: morgen faellig + aelteste Ueberfaellige."""
     faellig: list[str] = []
@@ -152,7 +210,9 @@ def _business_block(aufgaben: list[dict], heute: date, morgen: date) -> list[str
             zeilen.append(f"⏳ {text}")
         if rest > 0:
             wort = "weitere überfällige Aufgabe" if rest == 1 else "weitere überfällige Aufgaben"
-            zeilen.append(f"⏳ … und {rest} {wort}")
+            # bewusst ohne ⏳ — sonst liest es sich im PDF als
+            # "überfällig — … und 1 weitere überfällige Aufgabe"
+            zeilen.append(f"… und {rest} {wort}")
 
     return zeilen
 
@@ -196,13 +256,17 @@ def _content_block(content: list[dict], morgen: date) -> tuple[list[str], list[s
     return feed, stories
 
 
-def baue_vorabend_briefing(
+def baue_briefing_struktur(
     eintraege: list[dict],
     heute: date | None = None,
     business: list[dict] | None = None,
     content: list[dict] | None = None,
-) -> str:
-    """Baut die Vorabend-Nachricht fuer morgen."""
+) -> dict:
+    """Sammelt alles fuer morgen und gibt eine Render-neutrale Struktur zurueck.
+
+    Telegram-Text und PDF rendern beide hieraus — so koennen die beiden
+    Ausgaben nie inhaltlich auseinanderlaufen.
+    """
     if heute is None:
         heute = date.today()
     morgen = heute + timedelta(days=1)
@@ -325,26 +389,20 @@ def baue_vorabend_briefing(
         # alle 3 Monate / 2x-3x/Jahr / jaehrlich ohne Datum / saisonal /
         # nach Bedarf: bewusst NICHT im taeglichen Push (sonst Dauer-Nagging).
 
-    # ---- Nachricht zusammenbauen ----
-    lines: list[str] = []
-    lines.append(f"🌙 Vorabend — morgen ist {morgen_lang}, {morgen.day}. {MONATE[morgen.month]}")
-    lines.append("")
-
-    if pinned:
-        rest_pins = len(pinned) - config.PINNED_MAX
-        lines.append("📌 Dranbleiben (bis erledigt):")
-        for x in pinned[:config.PINNED_MAX]:
-            lines.append(f"   ⚠️ {x}")
-        if rest_pins > 0:
-            wort = "weiterer offener Punkt" if rest_pins == 1 else "weitere offene Punkte"
-            lines.append(f"   ⚠️ … und {rest_pins} {wort}")
-        lines.append("")
-
+    # ---- Struktur zusammenbauen ----
     if aemtli_taeglich:
         aemtli.insert(0, "tägliche Ämtli-Runde: " + " · ".join(aemtli_taeglich))
 
+    if pinned:
+        rest_pins = len(pinned) - config.PINNED_MAX
+        pinned = pinned[:config.PINNED_MAX]
+        if rest_pins > 0:
+            wort = "weiterer offener Punkt" if rest_pins == 1 else "weitere offene Punkte"
+            pinned.append(f"… und {rest_pins} {wort}")
+
     # Business-Block nur an Arbeitstagen — Sa/So bleibt frei.
-    if config.BUSINESS_TAGESTHEMA.get(morgen_key):
+    tagesthema = config.BUSINESS_TAGESTHEMA.get(morgen_key)
+    if tagesthema:
         business_zeilen = _business_block(business or [], heute, morgen)
         notiz_tag = config.BUSINESS_TAGESNOTIZ.get(morgen_key)
         if notiz_tag and business_zeilen:
@@ -354,30 +412,97 @@ def baue_vorabend_briefing(
 
     content_feed, content_stories = _content_block(content or [], morgen)
 
-    bloecke = [
-        ("🏠 Haushalt", haushalt),
-        ("👨‍👩‍👧 Familie / Termine", familie),
-        ("🎒 Schule (für morgen packen)", schule),
-        ("🧒 Kinder-Ämtli", aemtli),
-        (_business_titel(morgen_key), business_zeilen),
-        ("📱 Content morgen", content_feed),
-        ("📖 Story morgen", content_stories),
-        ("🧘 Dein Slot", slot),
+    roh = [
+        ("pinned", pinned),
+        ("schule", schule),
+        ("content_feed", content_feed),
+        ("content_story", content_stories),
+        ("business", business_zeilen),
+        ("familie", familie),
+        ("haushalt", haushalt),
+        ("aemtli", aemtli),
+        ("slot", slot),
     ]
-    hat_inhalt = bool(pinned)
-    for titel, items in bloecke:
-        if items:
-            hat_inhalt = True
-            lines.append(f"{titel}:")
-            for x in items:
-                lines.append(f"   • {x}")
-            lines.append("")
 
-    if not hat_inhalt:
+    bloecke = []
+    for key, items in roh:
+        if not items:
+            continue
+        titel, marker = BLOCK_META[key]
+        if key == "business":
+            titel = _business_titel(morgen_key)
+            marker = _business_marker(morgen_key)
+        bloecke.append({"key": key, "titel": titel, "marker": marker, "items": items})
+
+    return {
+        "heute": heute,
+        "morgen": morgen,
+        "morgen_key": morgen_key,
+        "morgen_lang": morgen_lang,
+        "datum_lang": f"{morgen_lang}, {morgen.day}. {MONATE[morgen.month]} {morgen.year}",
+        "tagesthema": tagesthema,
+        "bloecke": bloecke,
+        "hat_inhalt": bool(bloecke),
+    }
+
+
+def baue_vorabend_briefing(
+    eintraege: list[dict],
+    heute: date | None = None,
+    business: list[dict] | None = None,
+    content: list[dict] | None = None,
+    struktur: dict | None = None,
+) -> str:
+    """Rendert die Vorabend-Nachricht als Telegram-Text."""
+    if struktur is None:
+        struktur = baue_briefing_struktur(eintraege, heute, business, content)
+
+    lines: list[str] = []
+    lines.append(f"🌙 Vorabend — morgen ist {struktur['datum_lang']}")
+    lines.append("")
+
+    for block in struktur["bloecke"]:
+        bullet = "⚠️" if block["key"] == "pinned" else "•"
+        lines.append(f"{block['titel']}:")
+        for x in block["items"]:
+            lines.append(f"   {bullet} {x}")
+        lines.append("")
+
+    if not struktur["hat_inhalt"]:
         lines.append("Morgen ist zu Hause wenig los — gönn dir einen ruhigen Tag. 💛")
         lines.append("")
 
-    if slot:
+    if any(b["key"] == "slot" for b in struktur["bloecke"]):
         lines.append("Dein Slot ist Schutz, kein Druck — nimm ihn dir, wenn er passt. 💛")
 
     return "\n".join(lines).strip()
+
+
+def baue_kurzfassung(struktur: dict) -> str:
+    """Kurze Telegram-Begleitnachricht zum PDF (Sperrbildschirm-tauglich)."""
+    kopf = f"🌙 Vorabend — morgen ist {struktur['datum_lang']}"
+    if struktur["tagesthema"]:
+        kopf += f" · {struktur['tagesthema']}-Tag"
+
+    lines = [kopf, ""]
+    # Die Blöcke, die am Abend noch Handlung auslösen
+    for key in ("pinned", "schule", "content_feed", "content_story"):
+        block = next((b for b in struktur["bloecke"] if b["key"] == key), None)
+        if not block:
+            continue
+        lines.append(f"{block['titel']}:")
+        for x in block["items"][:3]:
+            lines.append(f"   • {x}")
+        rest = len(block["items"]) - 3
+        if rest > 0:
+            lines.append(f"   • … +{rest} im PDF")
+        lines.append("")
+
+    if len(lines) <= 2:
+        lines.append("Morgen ist wenig los — Details im PDF. 💛")
+    else:
+        lines.append("Alles Weitere steht im PDF. 💛")
+
+    text = "\n".join(lines).strip()
+    # Telegram-Caption-Limit
+    return text[:1000]
