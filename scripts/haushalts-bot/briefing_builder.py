@@ -27,6 +27,7 @@ Regeln:
 from __future__ import annotations
 
 import re
+from calendar import monthrange
 from datetime import date, timedelta
 from zlib import crc32
 
@@ -164,6 +165,20 @@ def _slot_wochentag(aufgabe: str) -> str:
     """Fester Wochentag (Mo-Sa) fuer eine Aufgabe ohne eigenen Wochentag."""
     slots = config.WOCHEN_SLOTS
     return slots[_streu(aufgabe) % len(slots)]
+
+
+_MONATSTAG_RE = re.compile(r"\bam\s+(\d{1,2})\.")
+
+
+def _monatstag_aus_notiz(notiz: str) -> int | None:
+    """Liest einen festen Monatstag aus der Notiz (z.B. 'am 10. des Monats')."""
+    if not notiz:
+        return None
+    m = _MONATSTAG_RE.search(notiz)
+    if not m:
+        return None
+    tag = int(m.group(1))
+    return tag if 1 <= tag <= 31 else None
 
 
 def _slot_monatstag(aufgabe: str) -> int:
@@ -412,6 +427,13 @@ def baue_briefing_struktur(
                 # z.B. "Mi" = am ersten passenden Wochentag des Monats
                 if wochentag == morgen_key and morgen.day <= 7:
                     ziel.append(_wer_prefix(wer, f"{zeile} (diesen Monat dran)"))
+            elif (gewuenscht := _monatstag_aus_notiz(notiz)) is not None:
+                # Patricia hat einen Tag vorgegeben ("am 10. des Monats").
+                # In kurzen Monaten auf den letzten Tag ziehen, damit ein
+                # 31. im Februar nicht verschluckt wird.
+                letzter = monthrange(morgen.year, morgen.month)[1]
+                if morgen.day == min(gewuenscht, letzter):
+                    ziel.append(_wer_prefix(wer, zeile))
             elif _slot_monatstag(aufgabe) == morgen.day:
                 ziel.append(_wer_prefix(wer, f"{zeile} (diesen Monat dran)"))
         elif rhythmus in config.SAISON_RHYTHMEN:
