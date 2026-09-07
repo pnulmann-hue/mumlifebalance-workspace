@@ -54,7 +54,14 @@ def main() -> None:
     business = notion_reader.lade_business_aufgaben()
     print(f"[OK] {len(business)} offene Business-Aufgaben gelesen")
 
-    text = briefing_builder.baue_vorabend_briefing(eintraege, business=business)
+    from datetime import date, timedelta
+    morgen = (date.today() + timedelta(days=1)).isoformat()
+    content = notion_reader.lade_content_plan(morgen, morgen)
+    print(f"[OK] {len(content)} Content-Eintraege fuer morgen gelesen")
+
+    text = briefing_builder.baue_vorabend_briefing(
+        eintraege, business=business, content=content
+    )
 
     if dry:
         print("\n----- DRY RUN (nicht gesendet) -----\n")

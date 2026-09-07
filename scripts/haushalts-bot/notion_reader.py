@@ -49,6 +49,10 @@ def _prop(prop: dict) -> Any:
     if t == "select":
         s = prop.get("select")
         return s["name"] if s else None
+    if t == "multi_select":
+        return [o["name"] for o in prop.get("multi_select", [])]
+    if t == "url":
+        return prop.get("url")
     if t == "checkbox":
         return prop.get("checkbox", False)
     if t == "date":
@@ -159,6 +163,45 @@ def lade_business_aufgaben() -> list[dict[str, Any]]:
     return aufgaben
 
 
+def lade_content_plan(von: str, bis: str) -> list[dict[str, Any]]:
+    """Holt die Content-Eintraege mit Veroeffentlichungs-Datum im Bereich.
+
+    Gibt [] zurueck (statt zu werfen), wenn die DB nicht erreichbar ist.
+
+    Returns Liste von Dicts:
+      { titel, typen, profil, status, datum, keyword, saeule, storyart,
+        canva, briefing }
+    """
+    filter_ = {
+        "and": [
+            {"property": "Veröffentlichung", "date": {"on_or_after": von}},
+            {"property": "Veröffentlichung", "date": {"on_or_before": bis}},
+        ]
+    }
+    try:
+        pages = _query_all(config.NOTION_DB_CONTENT, filter_)
+    except Exception as e:
+        logger.warning(f"Content-Plan konnte nicht gelesen werden: {e}")
+        return []
+
+    eintraege: list[dict[str, Any]] = []
+    for page in pages:
+        p = page.get("properties", {})
+        eintraege.append({
+            "id": page.get("id"),
+            "titel": _prop(p.get("Content-Titel")) or "",
+            "typen": _prop(p.get("Content-Typ")) or [],
+            "profil": _prop(p.get("Profil")),
+            "status": _prop(p.get("Status")),
+            "datum": _prop(p.get("Veröffentlichung")),
+            "keyword": _prop(p.get("Keyword")) or "",
+            "storyart": _prop(p.get("Storyart")),
+            "canva": _prop(p.get("Canva-Link")),
+            "briefing": _prop(p.get("Briefing-Link")),
+        })
+    return eintraege
+
+
 if __name__ == "__main__":
     import sys
     if hasattr(sys.stdout, "reconfigure"):
@@ -174,3 +217,10 @@ if __name__ == "__main__":
     print(f"\n{len(business)} offene Business-Aufgaben:\n")
     for b in business:
         print(f"  - {b['aufgabe']} | {b['status']} | {b['prioritaet']} | {b['datum']}")
+
+    from datetime import date, timedelta
+    heute = date.today()
+    content = lade_content_plan(heute.isoformat(), (heute + timedelta(days=7)).isoformat())
+    print(f"\n{len(content)} Content-Eintraege in den naechsten 7 Tagen:\n")
+    for c in content:
+        print(f"  - {c['datum']} | {c['typen']} | {c['profil']} | {c['status']} | {c['titel']}")

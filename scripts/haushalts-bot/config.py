@@ -39,6 +39,10 @@ NOTION_DB_HAUSHALT = "745ae127-1f03-4dc0-83d4-a6a8058d99dc"
 # Data-Source: collection://2ae7078e-8b7e-81a2-a070-000b54019c80
 NOTION_DB_AUFGABEN = "2ae7078e-8b7e-81bd-b07a-deaa99c01b71"
 
+# 📝 Content-Management — was morgen gepostet wird (Reel/Karussell/Story).
+# Data-Source: collection://2ae7078e-8b7e-811a-ad14-000ba5820c09
+NOTION_DB_CONTENT = "2ae7078e-8b7e-8134-9e36-f8c630a850f2"
+
 # ========================================
 # Verhalten
 # ========================================
@@ -60,6 +64,36 @@ PINNED_MAX = 5
 # Business: welche Status als offen gelten + wie viele Ueberfaellige gezeigt werden
 BUSINESS_STATUS_OFFEN = ["Geplant", "Aktiv", "Wartend", "Termin"]
 BUSINESS_UEBERFAELLIG_MAX = 3
+
+# Business-Wochenrhythmus — Quelle: Notion "🧭 Wochenstruktur Patricia 2026"
+# https://www.notion.so/3587078e8b7e815cabebd1259b8e9794
+# Hier als Config, weil sich der Rhythmus selten aendert (Schulferien,
+# Strategiewechsel) und der Push nicht an einem Tabellen-Parse haengen soll.
+# Wenn die Notion-Page geaendert wird: hier nachziehen.
+BUSINESS_TAGESTHEMA = {
+    "Mo": "🎯 Mentoring",
+    "Di": "🌿 doTERRA",
+    "Mi": "🎯 Mentoring",
+    "Do": "🎯 Mentoring",
+    "Fr": "🎯 Mentoring",
+    "Sa": None,   # frei
+    "So": None,   # frei
+}
+BUSINESS_ARBEITSFENSTER = "08:00–11:30"
+# Zusatzhinweis pro Tag (Nachmittag), leer = kein Hinweis
+# Content: welche Status noch Arbeit bedeuten (-> Warnhinweis im Briefing)
+CONTENT_STATUS_UNFERTIG = ["Idee", "Geplant", "Erstellung begonnen"]
+# Icons pro Content-Typ
+CONTENT_ICONS = {
+    "Reel": "🎬", "Karussell": "🎠", "Story": "📖", "Einzelpost": "🖼",
+    "Newsletter": "✉️", "Blogartikel": "📄", "Podcast": "🎙",
+    "YouTube Video": "▶️",
+}
+
+BUSINESS_TAGESNOTIZ = {
+    "Di": "Nachmittag ist Auszeit — nicht „nur kurz Mails\"",
+    "Fr": "Nachmittag ist Bonus-Slot (Mann da), kein Muss",
+}
 
 
 def validate_setup() -> list[str]:
@@ -88,3 +122,4 @@ if __name__ == "__main__":
     print(f"   Chat-ID: {TELEGRAM_CHAT_ID}")
     print(f"   Haushalts-DB: {NOTION_DB_HAUSHALT}")
     print(f"   Aufgaben-DB:  {NOTION_DB_AUFGABEN}")
+    print(f"   Content-DB:   {NOTION_DB_CONTENT}")

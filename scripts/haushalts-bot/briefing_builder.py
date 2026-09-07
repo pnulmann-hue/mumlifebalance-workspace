@@ -111,6 +111,14 @@ def _wer_prefix(wer: str | None, text: str) -> str:
     return text
 
 
+def _business_titel(morgen_key: str) -> str:
+    """Blocktitel mit dem Tagesthema aus dem Business-Wochenrhythmus."""
+    thema = config.BUSINESS_TAGESTHEMA.get(morgen_key)
+    if not thema:
+        return "💼 Business"
+    return f"💼 Business — morgen ist {thema}-Tag ({config.BUSINESS_ARBEITSFENSTER})"
+
+
 def _business_block(aufgaben: list[dict], heute: date, morgen: date) -> list[str]:
     """Baut die Business-Zeilen: morgen faellig + aelteste Ueberfaellige."""
     faellig: list[str] = []
@@ -134,6 +142,9 @@ def _business_block(aufgaben: list[dict], heute: date, morgen: date) -> list[str
     for x in faellig:
         zeilen.append(x)
 
+    if not faellig:
+        zeilen.append("nichts mit Datum morgen eingetragen")
+
     if ueberfaellig:
         ueberfaellig.sort(key=lambda t: t[0])
         rest = len(ueberfaellig) - config.BUSINESS_UEBERFAELLIG_MAX
@@ -146,10 +157,50 @@ def _business_block(aufgaben: list[dict], heute: date, morgen: date) -> list[str
     return zeilen
 
 
+def _content_block(content: list[dict], morgen: date) -> tuple[list[str], list[str]]:
+    """Trennt den Content fuer morgen in (Feed-Posts, Stories).
+
+    Feed-Posts (Reel/Karussell/Einzelpost/...) und Stories werden getrennt
+    ausgegeben, weil sie unterschiedliche Vorbereitung brauchen.
+    """
+    feed: list[str] = []
+    stories: list[str] = []
+
+    for c in content:
+        if _parse_datum(c.get("datum")) != morgen:
+            continue
+        titel = (c.get("titel") or "").strip()
+        if not titel:
+            continue
+
+        typen = c.get("typen") or []
+        ist_story = "Story" in typen
+        haupt_typ = typen[0] if typen else None
+        icon = config.CONTENT_ICONS.get(haupt_typ, "•")
+
+        teile = []
+        if haupt_typ:
+            teile.append(haupt_typ)
+        if c.get("profil"):
+            teile.append(c["profil"])
+        kopf = f"{icon} {' · '.join(teile)}: " if teile else f"{icon} "
+
+        zeile = f"{kopf}{titel}"
+        if c.get("keyword"):
+            zeile += f" · Keyword {c['keyword']}"
+        if c.get("status") in config.CONTENT_STATUS_UNFERTIG:
+            zeile += f" ⚠️ noch „{c['status']}\""
+
+        (stories if ist_story else feed).append(zeile)
+
+    return feed, stories
+
+
 def baue_vorabend_briefing(
     eintraege: list[dict],
     heute: date | None = None,
     business: list[dict] | None = None,
+    content: list[dict] | None = None,
 ) -> str:
     """Baut die Vorabend-Nachricht fuer morgen."""
     if heute is None:
@@ -292,14 +343,25 @@ def baue_vorabend_briefing(
     if aemtli_taeglich:
         aemtli.insert(0, "tägliche Ämtli-Runde: " + " · ".join(aemtli_taeglich))
 
-    business_zeilen = _business_block(business or [], heute, morgen)
+    # Business-Block nur an Arbeitstagen — Sa/So bleibt frei.
+    if config.BUSINESS_TAGESTHEMA.get(morgen_key):
+        business_zeilen = _business_block(business or [], heute, morgen)
+        notiz_tag = config.BUSINESS_TAGESNOTIZ.get(morgen_key)
+        if notiz_tag and business_zeilen:
+            business_zeilen.append(notiz_tag)
+    else:
+        business_zeilen = []
+
+    content_feed, content_stories = _content_block(content or [], morgen)
 
     bloecke = [
         ("🏠 Haushalt", haushalt),
         ("👨‍👩‍👧 Familie / Termine", familie),
         ("🎒 Schule (für morgen packen)", schule),
         ("🧒 Kinder-Ämtli", aemtli),
-        ("💼 Business", business_zeilen),
+        (_business_titel(morgen_key), business_zeilen),
+        ("📱 Content morgen", content_feed),
+        ("📖 Story morgen", content_stories),
         ("🧘 Dein Slot", slot),
     ]
     hat_inhalt = bool(pinned)
