@@ -90,7 +90,25 @@ Entwurfs-Kampagne „Mum Life Balance campaign" (Typ Klicks, noch nicht bereitge
 
 ---
 
-## Launch-Status (4.9.2026) — ⏸️ BLOCKIERT bis Kontoprüfung durch
+## ✅ LIVE — Startdatum 8.9.2026
+
+Kampagne **Storyideen-Start-2026-09** am **8.9.2026** veröffentlicht (Patricias Go). Details siehe [[chatgpt-ads-storyideen-state]].
+
+- **Typ:** Conversions · **Ereignis:** „Kauf Storyideen" (`order_created`)
+- **Struktur:** 3 Anzeigengruppen (Reaktionen · Ohne Anschreiben · Wenig Zeit) × je 3 Winkel-Anzeigen = **9 Anzeigen**
+- **Standorte:** Schweiz, Deutschland, Österreich · **Budget:** CHF 20/Tag · Enddatum offen
+- **Bild:** textfreies echtes Office-/Handy-Foto (1024²)
+- **Ziel-URL:** `https://mumlifebalance.ch/storyideen/?utm_source=chatgpt&utm_campaign=fruehstart`
+- **Messung:** Basis-Pixel jetzt auch auf allen WP-Seiten (Elementor Custom Code, post 4093) + Kauf-Event auf ThriveCart — beide live per curl verifiziert
+- **Roboter-Zugang:** robots.txt frei + NinjaFirewall lässt OAI-AdsBot durch (HTTP 200)
+- **Status direkt nach Start:** „Nicht bereitgestellt" = normale OpenAI-Prüfphase (Std–Tage), dann Ausspielung
+- **Nächste 2 Wochen:** Finger stillhalten, täglich kurz schauen, dann Diagnose-Tabelle (Miriam-Wissensbasis)
+
+> Der Block unten (Kontoprüfungs-403) ist **historisch/gelöst** — Freigabe kam, Start über die eigene Domain erfolgreich.
+
+---
+
+## Launch-Status (4.9.2026) — ⏸️ BLOCKIERT bis Kontoprüfung durch (GELÖST, s.o.)
 
 Anzeige ist **komplett komponiert**, aber Veröffentlichen scheitert an:
 > `POST /v1/ads failed with status 403: Account review must be approved before using a different ad URL.`

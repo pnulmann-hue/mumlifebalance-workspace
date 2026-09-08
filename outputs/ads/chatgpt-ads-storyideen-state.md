@@ -20,7 +20,7 @@ tags: [ads, chatgpt-ads]
 - [x] **E3 Kampagne** — **Storyideen-Start-2026-09** gebaut: Typ Standard, Ziel **Conversions**, Ereignis „Kauf Storyideen" zugeordnet, Standorte Schweiz+Deutschland+Österreich, **CHF 20/Tag**, Enddatum offen, Abrechnung CPC, Textanpassung OFF
 - [x] **E4 Anzeigengruppen** — **3 Gruppen** gebaut (Reaktionen · Ohne Anschreiben · Wenig Zeit), je eigener doppelter Kontexthinweis + Ziel-URL `…/storyideen/?utm_source=chatgpt&utm_campaign=fruehstart`, Gebotsstrategie „Ergebnisse maximieren"
 - [x] **E5 Anzeigen** — **9 Anzeigen gebaut** (3 Winkel je Gruppe), alle mit textfreiem echtem Foto (Office/Handy, 1024². KI-Anzeigenvorschläge bewusst NICHT übernommen
-- [~] **E6 Prüfung & Start** — Zusammenfassung geprüft ✅, Ad-Link `curl -I` = **200 OK** ✅. **Steht auf „Veröffentlichen" — wartet auf Patricias ausdrückliches Go** (Budget läuft ab Klick)
+- [x] **E6 Prüfung & Start** — **VERÖFFENTLICHT am 8.9.2026** (Patricias Go) ✅. Status „Nicht bereitgestellt" = normale OpenAI-Prüfphase (Std–Tage). Aktiv-Schalter an. Ad-Link 200 OK, Roboter-Zugang frei.
 - [ ] **E7 Auswertung** — 2 Wochen messen, Diagnose-Tabelle
 
 ### Gebaute Anzeigen (3 je Gruppe)
