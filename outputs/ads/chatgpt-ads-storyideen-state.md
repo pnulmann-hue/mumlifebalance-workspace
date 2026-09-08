@@ -37,6 +37,13 @@ Gewählt: Gespräch **5, 7, 8** (klar getrennte Themen, kein Awareness-Mix). Zie
 
 *(Ältere Kontext-Finder-Notizen: `outputs/ads/2026-09-04-kontext-finder-storyideen.md`.)*
 
-## Bisher gebaute Anzeige (Winkel: Ergebnis)
+## Anzeigentexte (Anzeigen-Schreiber, 8.9.) — Patricias Favoriten je Gruppe
+Regel-Check ok (kein Preis/Frage, Titel <25, Beschreibung <50 = voll sichtbar). Miriam empfiehlt 3-4 Anzeigen/Gruppe → weitere Winkel liegen im Anzeigen-Schreiber-Chat bereit (aktuell 1 Favorit/Gruppe).
+- **Gruppe 5 (Reaktionen):** Titel `Mehr echte Antworten` · Beschr. `Stories, die Gespräche anstossen.`
+- **Gruppe 7 (Ohne Anschreiben):** Titel `Neue Kontakte aufbauen` · Beschr. `Stories, die Interesse an deinem Thema wecken.`
+- **Gruppe 8 (Wenig Zeit):** Titel `Stories im Mama-Alltag` · Beschr. `90 Ideen für deine nächste Story.`
+- **Bild je Gruppe:** textfreies echtes Foto (offen — aus context/Shootingbilder wählen)
+
+## Erste Test-Anzeige (obsolet, wird durch obige Struktur ersetzt) — Winkel Ergebnis
 - Titel: `Storys, die Kunden bringen` · Beschreibung: `Für Networkerinnen: Kunden gewinnen, ohne ständig dein Produkt zu verkaufen. Jetzt ansehen.`
 - Link: `mumlifebalance.ch/storyideen/?utm_source=chatgpt&utm_campaign=fruehstart` · Bild: orange (NICHT konform → ersetzen durch textfreies Foto)
