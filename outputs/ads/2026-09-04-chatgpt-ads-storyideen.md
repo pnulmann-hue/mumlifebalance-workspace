@@ -82,8 +82,8 @@ Entwurfs-Kampagne „Mum Life Balance campaign" (Typ Klicks, noch nicht bereitge
   *(Stufe 2 später: Bestellwert mitschicken → `oaiq("track","order_created",{value:19,currency:"CHF"});`)*
 - [x] **Punkt 6 — Doppelzählung** entschärft (ThriveCart-Häkchen „nur beim ersten Mal"). noindex: ThriveCart-Erfolgsseiten sind nicht indexiert.
 - [x] **Punkt 7 — Basis-Messung geprüft** (per Code auf der Live-Seite, 4.9.). Kauf-Event testet sich beim ersten echten Kauf / optional per Pixel-Helper-Testkauf.
-- [ ] **Punkt 8 — UTM** am Anzeigen-Link: `?utm_source=chatgpt&utm_campaign=fruehstart` (beim Kampagnen-Bau)
-- [ ] **Schritt 4 (OpenAI):** Conversion-Ereignis mit der Kampagne verknüpfen (beim Deploy)
+- [x] **Punkt 8 — UTM** am Anzeigen-Link: `?utm_source=chatgpt&utm_campaign=fruehstart` (in allen 3 Gruppen gesetzt)
+- [x] **Schritt 4 (OpenAI):** Conversion-Ereignis „Kauf Storyideen" mit der Kampagne verknüpft ✅ (am 8.9. im Conversions-Setup bestätigt, Schritt 4 grün)
 - [x] **Verkaufsseite:** Block 6B „Warum Storys verkaufen" live (Message-Match-Anker)
 
 **Nächster Schritt:** Basiscode + Event-Code in ThriveCart einbauen (Checkout → Tracking), dann mit Pixel Helper testen.
