@@ -16,7 +16,7 @@ tags: [ads, chatgpt-ads]
 
 ## Fortschritt
 - [x] **E1 Konto** — freigegeben (bauen geht; nur eigene Domain als URL)
-- [~] **E2 Messung** — Pixel `VanFa9UJwn47VgwSWc1goK` + Ereignis „Kauf Storyideen" (`order_created`) in ThriveCart-Tracking ✅. **Offen:** OAI-AdsBot durch Imunify360-WAF prüfen · Pixel zusätzlich auf `mumlifebalance.ch/storyideen` setzen
+- [x] **E2 Messung** — Pixel `VanFa9UJwn47VgwSWc1goK` + Ereignis „Kauf Storyideen" (`order_created`) auf ThriveCart ✅. **OAI-AdsBot-Check:** robots.txt frei + WAF (NinjaFirewall) lässt OAI-AdsBot durch → HTTP 200 ✅. **Basis-Pixel auf WP:** via Elementor Custom Code „OpenAI Ads Pixel" (post 4093, `<head>`, Globale Seite) live auf allen Seiten — verifiziert per curl ✅ (automatischer REST-Push scheiterte an NinjaFirewall, daher Elementor-Route)
 - [x] **E3 Kampagne** — **Storyideen-Start-2026-09** gebaut: Typ Standard, Ziel **Conversions**, Ereignis „Kauf Storyideen" zugeordnet, Standorte Schweiz+Deutschland+Österreich, **CHF 20/Tag**, Enddatum offen, Abrechnung CPC, Textanpassung OFF
 - [x] **E4 Anzeigengruppen** — **3 Gruppen** gebaut (Reaktionen · Ohne Anschreiben · Wenig Zeit), je eigener doppelter Kontexthinweis + Ziel-URL `…/storyideen/?utm_source=chatgpt&utm_campaign=fruehstart`, Gebotsstrategie „Ergebnisse maximieren"
 - [x] **E5 Anzeigen** — **9 Anzeigen gebaut** (3 Winkel je Gruppe), alle mit textfreiem echtem Foto (Office/Handy, 1024². KI-Anzeigenvorschläge bewusst NICHT übernommen
