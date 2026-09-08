@@ -17,11 +17,16 @@ tags: [ads, chatgpt-ads]
 ## Fortschritt
 - [x] **E1 Konto** — freigegeben (bauen geht; nur eigene Domain als URL)
 - [~] **E2 Messung** — Pixel `VanFa9UJwn47VgwSWc1goK` + Ereignis „Kauf Storyideen" (`order_created`) in ThriveCart-Tracking ✅. **Offen:** OAI-AdsBot durch Imunify360-WAF prüfen · Pixel zusätzlich auf `mumlifebalance.ch/storyideen` setzen
-- [ ] **E3 Kampagne** — aktuell Typ **Klicks** → auf **Conversions** umbauen + Ereignis zuordnen; Budget ≥15 €/Tag; Enddatum offen
-- [ ] **E4 Anzeigengruppen** — aktuell 1 breite Gruppe („Recommended ad group", Kontexthinweise gesetzt) → auf **3-4 thematische Gruppen** aufsplitten (Kennenlern ≠ Kaufentscheidung nie mischen), doppelte Hints
-- [ ] **E5 Anzeigen** — 1 Anzeige gebaut („Storys, die Kunden bringen"). Neu nach Struktur: **6 Winkel je Gruppe**, **textfreie** Bilder (oranges Typo-Bild ist NICHT mehr konform!)
-- [ ] **E6 Prüfung & Start** — Ereignis mit Kampagne verknüpfen, Dreier-Kette, dann Patricias Go
+- [x] **E3 Kampagne** — **Storyideen-Start-2026-09** gebaut: Typ Standard, Ziel **Conversions**, Ereignis „Kauf Storyideen" zugeordnet, Standorte Schweiz+Deutschland+Österreich, **CHF 20/Tag**, Enddatum offen, Abrechnung CPC, Textanpassung OFF
+- [x] **E4 Anzeigengruppen** — **3 Gruppen** gebaut (Reaktionen · Ohne Anschreiben · Wenig Zeit), je eigener doppelter Kontexthinweis + Ziel-URL `…/storyideen/?utm_source=chatgpt&utm_campaign=fruehstart`, Gebotsstrategie „Ergebnisse maximieren"
+- [x] **E5 Anzeigen** — **9 Anzeigen gebaut** (3 Winkel je Gruppe), alle mit textfreiem echtem Foto (Office/Handy, 1024². KI-Anzeigenvorschläge bewusst NICHT übernommen
+- [~] **E6 Prüfung & Start** — Zusammenfassung geprüft ✅, Ad-Link `curl -I` = **200 OK** ✅. **Steht auf „Veröffentlichen" — wartet auf Patricias ausdrückliches Go** (Budget läuft ab Klick)
 - [ ] **E7 Auswertung** — 2 Wochen messen, Diagnose-Tabelle
+
+### Gebaute Anzeigen (3 je Gruppe)
+- **Reaktionen:** Storys ohne Reaktionen · Mehr echte Antworten ⭐ · Deine Story darf mehr
+- **Ohne Anschreiben:** Network ohne Anschreiben · Neue Kontakte aufbauen ⭐ · Stories statt Anschreiben
+- **Wenig Zeit:** Kaum Zeit für Stories · Stories im Mama-Alltag ⭐ · Storys ohne Grübeln
 
 ## Wunschkunden-Gespräche (Kontext-Finder, 8.9.) → 3 Anzeigengruppen
 Gewählt: Gespräch **5, 7, 8** (klar getrennte Themen, kein Awareness-Mix). Ziel-Adresse aller Gruppen: `https://mumlifebalance.ch/storyideen/?utm_source=chatgpt&utm_campaign=fruehstart` (später ggf. je Gruppe eigene UTM-Kampagne).
@@ -37,12 +42,28 @@ Gewählt: Gespräch **5, 7, 8** (klar getrennte Themen, kein Awareness-Mix). Zie
 
 *(Ältere Kontext-Finder-Notizen: `outputs/ads/2026-09-04-kontext-finder-storyideen.md`.)*
 
-## Anzeigentexte (Anzeigen-Schreiber, 8.9.) — Patricias Favoriten je Gruppe
-Regel-Check ok (kein Preis/Frage, Titel <25, Beschreibung <50 = voll sichtbar). Miriam empfiehlt 3-4 Anzeigen/Gruppe → weitere Winkel liegen im Anzeigen-Schreiber-Chat bereit (aktuell 1 Favorit/Gruppe).
-- **Gruppe 5 (Reaktionen):** Titel `Mehr echte Antworten` · Beschr. `Stories, die Gespräche anstossen.`
-- **Gruppe 7 (Ohne Anschreiben):** Titel `Neue Kontakte aufbauen` · Beschr. `Stories, die Interesse an deinem Thema wecken.`
-- **Gruppe 8 (Wenig Zeit):** Titel `Stories im Mama-Alltag` · Beschr. `90 Ideen für deine nächste Story.`
-- **Bild je Gruppe:** textfreies echtes Foto (offen — aus context/Shootingbilder wählen)
+## Anzeigentexte — EXAKT nach Miriam: 4 Winkel je Gruppe = 12 Anzeigen (Anzeigen-Schreiber, 8.9.)
+2 Brand-Korrekturen: „Kaltakquise" → „Anschreiben" (Gruppe 7 #3); Frage-Titel entschärft (Gruppe 8 #1).
+
+**Gruppe 5 · Reaktionen**
+1. `Storys ohne Reaktionen` / `Ideen, die zum Antworten einladen.` (Schmerz)
+2. `Mehr echte Antworten` / `Stories, die Gespräche anstossen.` (Ergebnis) ⭐Favorit
+3. `Deine Story darf mehr` / `90 Ideen für persönliche Stories.` (Tempo/Ermutigung)
+4. `90 Storyideen` / `Dein Vorrat für abwechslungsreiche Stories.` (Angebot)
+
+**Gruppe 7 · Ohne Anschreiben**
+1. `Network ohne Anschreiben` / `Zeig dein Thema, statt Bekannte anzuschreiben.` (Schmerz)
+2. `Neue Kontakte aufbauen` / `Mit Stories, die Interesse an deinem Thema wecken.` (Ergebnis) ⭐Favorit
+3. `Stories statt Anschreiben` / `Zeig, wofür du stehst, ohne Druck.` (Beweis/Haltung — „Kaltakquise" ersetzt)
+4. `90 Ideen für Stories` / `Dein Workbook für natürliche Storys.` (Angebot)
+
+**Gruppe 8 · Wenig Zeit**
+1. `Kaum Zeit für Stories` / `Finde schnell eine passende Storyidee.` (Schmerz — Frage entschärft)
+2. `Stories im Mama-Alltag` / `90 Ideen für deine nächste Story.` (Zielgruppe) ⭐Favorit
+3. `Storys ohne Grübeln` / `Der Story-Kompass hilft dir bei der Auswahl.` (Beweis/Mechanismus)
+4. `90 Ideen für jeden Tag` / `Dein Vorrat für planbare Stories.` (Angebot)
+
+**Bild:** 1 textfreies quadratisches Bild (≥1024) zum Start, über alle Anzeigen — Manus-Bild aus dem Bild-Prompt ODER echtes Shooting-Foto. (Miriam: Bild-Varianten erst später testen.)
 
 ## Erste Test-Anzeige (obsolet, wird durch obige Struktur ersetzt) — Winkel Ergebnis
 - Titel: `Storys, die Kunden bringen` · Beschreibung: `Für Networkerinnen: Kunden gewinnen, ohne ständig dein Produkt zu verkaufen. Jetzt ansehen.`
