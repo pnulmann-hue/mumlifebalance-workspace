@@ -11,7 +11,7 @@ tags: [ads, chatgpt-ads]
 
 ## Tools-Links
 - **Kontext-Finder:** https://chatgpt.com/share/6a9fc2e3-86b4-83ed-9cd9-3d65f72769f5
-- **Anzeigen-Schreiber:** ⬜ noch von Patricia holen
+- **Anzeigen-Schreiber:** https://chatgpt.com/share/6a9fc4a9-38ac-83eb-82b6-3ac4f1089df8
 - **Bild-Prompt:** in der Wissensbasis (textfrei) · Alternative: echtes Foto aus `context/Shootingbilder/`
 
 ## Fortschritt
@@ -23,8 +23,19 @@ tags: [ads, chatgpt-ads]
 - [ ] **E6 Prüfung & Start** — Ereignis mit Kampagne verknüpfen, Dreier-Kette, dann Patricias Go
 - [ ] **E7 Auswertung** — 2 Wochen messen, Diagnose-Tabelle
 
-## Wunschkunden-Gespräche (Kontext-Finder, alt — neu ziehen bei E4)
-Storyideen-relevant: „was poste ich als Networkerin", „sichtbar werden ohne jeden anzuschreiben", „fertige Storyideen kaufen vs. selbst grübeln", „unsicher vor der Kamera". Details: `outputs/ads/2026-09-04-kontext-finder-storyideen.md`.
+## Wunschkunden-Gespräche (Kontext-Finder, 8.9.) → 3 Anzeigengruppen
+Gewählt: Gespräch **5, 7, 8** (klar getrennte Themen, kein Awareness-Mix). Ziel-Adresse aller Gruppen: `https://mumlifebalance.ch/storyideen/?utm_source=chatgpt&utm_campaign=fruehstart` (später ggf. je Gruppe eigene UTM-Kampagne).
+
+**Gruppe „Reaktionen" (Gespräch 5) — Context Hint:**
+> Storyideen für mehr Reaktionen, Stories ohne Produktpush, Networkmarketing Stories, Storytelling für Networkerinnen, Instagram Stories mit Gesprächen, natürliche Storyideen, Stories für Networkerinnen, Eine Networkerin möchte verstehen warum ihre Stories kaum Reaktionen bekommen und sucht konkrete Ideen für Inhalte die Menschen zum Antworten bringen. Sie möchte über ihr Thema sichtbar werden und dabei passende Storyideen als praktische Hilfe nutzen.
+
+**Gruppe „Ohne Anschreiben" (Gespräch 7) — Context Hint:**
+> Networkmarketing ohne Bekannte, neue Kontakte ohne Anschreiben, Networkerinnen auf Instagram, Instagram statt Kaltakquise, Kundinnen gewinnen ohne Freunde, natürliche Kontaktaufnahme, Storyideen für Networkerinnen, Eine Networkerin möchte ihr Networkgeschäft über Instagram aufbauen ohne ständig Freundinnen und Bekannte anzuschreiben. Sie sucht konkrete Storyideen mit denen sie über ihr Thema sichtbar werden und interessierte Menschen natürlich auf ihr Angebot aufmerksam machen kann.
+
+**Gruppe „Wenig Zeit" (Gespräch 8) — Context Hint:**
+> Instagram Stories trotz wenig Zeit, Content planbar machen, Storyideen für Mamas, Networkmarketing mit Kindern, schneller Stories erstellen, Content ohne Grübeln, Instagram Alltag als Mama, Eine Mama im Networkmarketing hat wenig Zeit und möchte ihre Stories trotzdem regelmässig umsetzen. Sie sucht einen einfachen Vorrat an konkreten Ideen damit sie schnell passende Inhalte findet und über ihr Thema sichtbar werden kann.
+
+*(Ältere Kontext-Finder-Notizen: `outputs/ads/2026-09-04-kontext-finder-storyideen.md`.)*
 
 ## Bisher gebaute Anzeige (Winkel: Ergebnis)
 - Titel: `Storys, die Kunden bringen` · Beschreibung: `Für Networkerinnen: Kunden gewinnen, ohne ständig dein Produkt zu verkaufen. Jetzt ansehen.`
