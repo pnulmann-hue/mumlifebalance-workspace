@@ -42,10 +42,18 @@ Akzentwort orange. Kein Sticker, der Hook steht allein.
 Sticker ins untere Drittel, Gesicht frei.
 
 ### Slide 7 — Brücke + CTA
-> Wenn du gerade „keinen Meter" getippt hast: Das war bei mir genauso. Der erste Schritt war bei mir, mir überhaupt Zeit freizuschaufeln, in der ich am System bauen konnte, statt nur im Alltag zu rennen. Genau dafür hab ich mein kostenloses Tool gemacht — kommentier **ZEITFENSTER** und ich schick's dir.
+> Wenn du gerade „keinen Meter" getippt hast: Das war bei mir drei Jahre lang genauso. Schreib mir kurz, was bei dir als Erstes liegenbleibt, wenn du mal einen Tag ausfällst — ich schau's mir an und sag dir, wo ich anfangen würde.
 
-⚠️ Keyword prüfen: `active-funnels.json` führt bei „Freischaufeln" sowohl `ZEITFENSTER`
-(traffic_quellen) als auch `ZEIT` (content_hinweise). Nimm das, was in ManyChat scharf ist.
+**Warum kein Keyword-CTA** (Patricia-Einwand 9.9., berechtigt): Die Story verspricht
+„mein Business lief weiter, ohne dass ich etwas getan habe" — also Automation.
+Freischaufeln/`ZEIT` liefert To-Do-Halbieren, also Zeitmanagement. Zwei verschiedene
+Versprechen; ein Keyword-CTA darauf würde die Leserin enttäuschen.
+
+⚠️ **Offene Funnel-Lücke:** Für das Versprechen „bau dir etwas, das ohne dich
+weiterläuft" existiert kein 0€-Freebie. Die 7 Mentoring-Freebies decken Sichtbarkeit
+und Zeit/Struktur ab; der Hybrid-Kern führt ohne Zwischenstufe zur Digitalen
+Produktwelt (333). Betrifft jeden Hybrid-Post, nicht nur diesen.
+Bis dahin: DM-Gespräch als Brücke (so auch im Workbook vorgesehen).
 
 ---
 
