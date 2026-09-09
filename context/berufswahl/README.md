@@ -173,6 +173,31 @@ Kategorie wechseln (von Thema zu Tätigkeit, von Fach zu Bedingung).
 Wer stattdessen weiter unterteilt, produziert Antworten, die immer vager werden,
 und hält am Ende Vagheit für ein Ergebnis.
 
+### Ein Urteil über einen Beruf, den er nie gesehen hat, ist eine Annahme
+
+Jugendliche sagen Sätze wie «da lernt man ja nichts dazu», «das ist doch immer
+dasselbe», «das kann jeder». Solche Sätze klingen nach einem Kriterium und sind
+in Wahrheit **eine Vermutung aus der Distanz**.
+
+**In jedem Beruf lernt man laufend dazu.** Auch beim Coiffeur: Frauenfrisuren, Bob,
+Kurzhaarschnitte, Hundefrisuren. Auch in der Pflege, im Verkauf, im Handwerk.
+Eine Frage wie «lernt man dort dazu?» bekommt überall ein Ja und **trennt darum
+nichts** — ausser man beantwortet sie aus Unkenntnis, und dann trennt sie das Falsche.
+
+**Regeln:**
+1. Solche Sätze **als Ausschluss notieren, nie als Kriterium befördern.** Der Wunsch
+   bleibt sein Wunsch; die Begründung ist ungeprüft.
+2. **Nicht dagegen argumentieren** — wer sich einen Beruf nicht vorstellen kann, wird
+   nicht durch Widerspruch offener.
+3. Stattdessen die Frage **beschreibend** stellen, und erst **nach** dem Hinschauen:
+   *«Was lernt man da in den ersten Jahren vor allem — besser werden im Machen, oder
+   mehr wissen und verstehen?»* Beides sind vollwertige Formen von Lernen, und die
+   Unterscheidung trennt wirklich.
+4. Und immer: *«Was wusstest du vorher nicht, das du jetzt weisst?»*
+5. **Ein Kriterium, mit dem man vom Schreibtisch aus ganze Berufsfelder abräumt, ist
+   kein Kriterium, sondern ein Vorurteil mit gutem Ruf.** Besonders vorsichtig sein,
+   wenn es zugleich das Selbstbild schmeichelt.
+
 ---
 
 ## Harte Arbeitsregeln
