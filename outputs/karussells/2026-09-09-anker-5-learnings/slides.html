@@ -1,0 +1,106 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0c1c30; --petrol:#12828c; --creme:#f4f0e6; --ink:#1c2f3a;
+  --orange:#dc822e; --creme-soft:rgba(244,240,230,.62);
+  --serif:'Philosopher',Georgia,'Times New Roman',serif;
+  --sans:'Source Sans 3',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#fff;}
+.slide{
+  width:1080px;height:1350px;position:relative;overflow:hidden;
+  background:var(--navy);color:var(--creme);
+  display:flex;flex-direction:column;justify-content:center;
+  padding:170px 96px;font-family:var(--sans);
+}
+.cover{background:var(--petrol);}
+.close{background:var(--petrol);}
+.eyebrow{align-self:flex-start;display:inline-block;background:var(--orange);color:#fff;
+  font-family:var(--sans);font-size:24px;font-weight:700;letter-spacing:4px;
+  text-transform:uppercase;padding:12px 28px;border-radius:100px;margin-bottom:44px;z-index:1;white-space:nowrap;}
+.cover .eyebrow{background:var(--navy);}
+.serif{font-family:var(--serif);font-weight:700;line-height:1.2;letter-spacing:-.5px;z-index:1;color:var(--creme);}
+.cover .serif{font-size:64px;line-height:1.22;}
+.body .serif{font-size:64px;line-height:1.24;}
+.hl{color:var(--orange);}
+.pt{color:#5cc4cf;}
+.cover .pt{color:#0c1c30;}
+.sub{font-family:var(--sans);font-size:32px;line-height:1.42;color:var(--creme-soft);margin-top:34px;font-weight:400;z-index:1;}
+.cover .sub{color:rgba(244,240,230,.85);}
+.num{font-family:var(--serif);font-size:150px;font-weight:700;color:rgba(92,196,207,.26);line-height:.78;margin-bottom:26px;z-index:1;}
+.foot{position:absolute;left:96px;right:96px;bottom:64px;display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--sans);font-size:22px;letter-spacing:2px;color:var(--creme-soft);z-index:1;}
+.dots{display:flex;gap:9px;}
+.dot{width:11px;height:11px;border-radius:50%;background:rgba(244,240,230,.24);}
+.dot.on{background:var(--orange);}
+.swipe{font-weight:700;text-transform:uppercase;letter-spacing:3px;font-size:20px;color:#0c1c30;}
+.cta{margin-top:52px;z-index:1;}
+.cta .label{font-family:var(--sans);font-size:29px;font-weight:700;letter-spacing:.5px;color:#fff;
+  background:var(--orange);display:inline-block;padding:24px 36px;border-radius:16px;line-height:1.3;}
+.handle{margin-top:40px;font-family:var(--sans);font-size:25px;letter-spacing:1px;color:rgba(244,240,230,.8);z-index:1;}
+.close .foot,.cover .foot{color:rgba(244,240,230,.72);}
+.close .dot,.cover .dot{background:rgba(244,240,230,.3);}
+.close .dot.on,.cover .dot.on{background:var(--navy);}
+.close .swipe{color:var(--creme);}
+</style>
+
+<!-- 1 COVER -->
+<section class="slide cover">
+  <span class="eyebrow">3 Jahre Hybrid</span>
+  <h1 class="serif">Vor 3 Jahren zwischen Mittagessen, Wäsche und Teamcalls mein Network aufgebaut — und <span class="pt">nebenher ein eigenes Business dazu.</span></h1>
+  <p class="sub">Meine 5 wichtigsten Learnings →</p>
+  <div class="foot"><span class="swipe">→ weiterwischen</span><div class="dots"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 2 -->
+<section class="slide body">
+  <div class="num">1</div>
+  <p class="serif">Ein Einkommen ist ein <span class="hl">Risiko.</span><br>Zwei sind ein <span class="pt">Fundament.</span></p>
+  <div class="foot"><span>2 / 8</span><div class="dots"><span class="dot"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 3 -->
+<section class="slide body">
+  <div class="num">2</div>
+  <p class="serif">Dein Produkt ist <span class="hl">austauschbar.</span><br>Dein Thema <span class="pt">nicht.</span></p>
+  <div class="foot"><span>3 / 8</span><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 4 -->
+<section class="slide body">
+  <div class="num">3</div>
+  <p class="serif">Dein Eigenes ist kein <span class="hl">Konkurrent.</span><br>Es ist der <span class="pt">Türöffner.</span></p>
+  <div class="foot"><span>4 / 8</span><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 5 -->
+<section class="slide body">
+  <div class="num">4</div>
+  <p class="serif"><span class="pt">Doppelter Gewinn.</span><br>Du verdienst <span class="hl">so oder so.</span></p>
+  <div class="foot"><span>5 / 8</span><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 6 -->
+<section class="slide body">
+  <div class="num">5</div>
+  <p class="serif">Du fängst <span class="hl">nicht bei null</span> an.<br>Dein Vorsprung ist <span class="pt">schon da.</span></p>
+  <div class="foot"><span>6 / 8</span><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 7 KERNSATZ -->
+<section class="slide body" style="justify-content:center;">
+  <p class="serif" style="font-size:76px;">Ein Thema.<br><span class="pt">Zwei Einkommen.</span></p>
+  <p class="sub">Keine zwei Business nebeneinander.</p>
+  <div class="foot"><span>7 / 8</span><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot on"></span><span class="dot"></span></div></div>
+</section>
+
+<!-- 8 CTA -->
+<section class="slide close" style="justify-content:center;">
+  <p class="serif" style="font-size:62px;">Welches Learning trifft dich grad <span class="pt">am meisten?</span></p>
+  <div class="cta"><span class="label">Schreib mir die Nummer 👇</span></div>
+  <p class="handle">Folg mir für Klartext zum Businessaufbau<br>als Mama im Network — @mumlifebalance_patricia_ulmann</p>
+  <div class="foot"><span>8 / 8</span><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot on"></span></div></div>
+</section>
