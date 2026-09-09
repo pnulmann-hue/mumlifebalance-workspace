@@ -70,21 +70,15 @@ jobs:
           BLOTATO_API_KEY=${{ secrets.BLOTATO_API_KEY }}
           EOF
 
-      - name: Upload und Schedule
+      - name: Schedule bei Blotato
         if: steps.q.outputs.skip == 'false'
-        # wp-api.js liest process.env (nicht die .env-Datei) — Secrets muessen
-        # als echte Env-Variablen kommen. schedule-post.js liest die .env-Datei.
-        env:
-          WP_URL: ${{ secrets.WP_URL }}
-          WP_USER: ${{ secrets.WP_USER }}
-          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
-          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+        # Kein WordPress-Umweg: Das Repo ist public, also zieht Blotato die PNGs
+        # direkt von raw.githubusercontent.com (mediaUrls stehen in der Config).
+        # schedule-post.js laedt sie via POST /v2/media auf Blotato und plant den Post.
         run: |
           set -e
           cd scripts/blotato-post
-          node upload-and-schedule.js \
-            --slides-dir="../../${{ steps.q.outputs.slides }}" \
-            --config="../../${{ steps.q.outputs.config }}"
+          node schedule-post.js --config="../../${{ steps.q.outputs.config }}"
 
       - name: Config mit Blotato-URLs zurueckcommitten
         if: steps.q.outputs.skip == 'false'
