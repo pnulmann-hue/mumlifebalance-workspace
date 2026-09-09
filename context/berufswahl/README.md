@@ -64,6 +64,37 @@ zeigen sich Tendenzen; vorher wird **nicht** interpretiert.
 > (Versuche aufbauen, Daten sauber halten, schreiben). Wer nur die Theorie liebt und
 > das nicht weiß, wählt begeistert ein Fach und steigt aus, wenn es ans Tun geht.
 
+6. **Lern-Art** — **worin wird er lieber besser: im Können oder im Wissen?**
+   - **Können:** besser werden im *Machen* — mit den Händen, mit Übung, bis es sitzt.
+     Handwerk, Pflege, Sport, Musik, Kochen, Operieren, Coiffeur.
+   - **Wissen:** mehr verstehen und einordnen — Zusammenhänge, Modelle, Erklärungen.
+     Wissenschaft, Recht, Journalismus, Lehre, Analyse.
+
+> **Achse 6 wurde am 2026-09-09 ergänzt** — auf einen Einwand einer Mutter hin, und
+> sie ist die trennschärfste der sechs. Vier Bedingungen, damit sie nicht schadet:
+>
+> 1. **Kein Entweder-oder.** Fast jeder Beruf verlangt beides; ein Chirurg braucht
+>    enormes Wissen **und** extremes Können. Gefragt ist das **Mischverhältnis** und
+>    welche Art von Zuwachs antreibt — nicht ein Lager.
+> 2. **Keine der beiden ist mehr wert.** Wer die Frage stellt, muss das dazusagen,
+>    sonst ist sie nicht neutral gestellt — und die Antwort sagt dann mehr über
+>    Status als über den Menschen.
+> 3. **SPERRE: erst fragen, wenn beide Seiten erlebt wurden.** Wer Können-Lernen nie
+>    ernsthaft probiert hat (kein Instrument, keine Sportart, kein Handwerk), wählt
+>    zwangsläufig die Seite, die er kennt. Die Antwort wäre dann keine Neigung,
+>    sondern eine Biografie-Lücke.
+> 4. **Sie darf nie zum Etikett werden.** «Ich bin ein Wissens-Lerner» ist genau die
+>    Sorte Satz, vor der der Abschnitt «Labels sind das Gegenteil von Hilfe» warnt —
+>    und er liefert eine erwachsen klingende Begründung dafür, das Mühsame gar nicht
+>    erst zu probieren. Immer als **Beobachtung an Beispielen** notieren, nie als Typ.
+
+**Formulierung, wenn die Sperre aufgehoben ist:**
+> «Es gibt zwei Arten, in einem Beruf besser zu werden. Bei der einen wirst du besser
+> darin, etwas zu **machen** — mit den Händen, mit Übung, bis es sitzt. Bei der
+> anderen weisst und verstehst du immer mehr. Die meisten Berufe haben beides, nur in
+> verschiedenen Anteilen, und keine der beiden ist besser als die andere.
+> Welche würde dich eher aus dem Bett holen?»
+
 ---
 
 ## Sonderfall: der vielseitig Interessierte
