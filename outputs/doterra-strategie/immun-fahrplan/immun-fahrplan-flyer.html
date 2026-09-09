@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Immun-Fahrplan für Familien</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --petrol:#2f6f6f;
+    --dunkelblau:#1e3a4c;
+    --creme:#f1ecdd;
+    --creme-tief:#e8e1cd;
+    --orange:#d6832f;
+    --orange-tief:#c56f1f;
+    --text:#33413f;
+    --white:#fffdf8;
+    --ff-head:'Philosopher', serif;
+    --ff-body:'Source Sans 3','Source Sans Pro',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  @page{ size:A4; margin:0; }
+  html,body{ background:#ccc; }
+  .page{
+    width:210mm;
+    height:297mm;
+    background:var(--creme);
+    color:var(--text);
+    font-family:var(--ff-body);
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+  }
+  /* dekorativer Kopf-Bogen */
+  .topband{
+    background:var(--dunkelblau);
+    color:var(--white);
+    padding:16mm 16mm 12mm;
+    position:relative;
+  }
+  .topband::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; bottom:-7mm;
+    height:14mm;
+    background:var(--dunkelblau);
+    border-radius:0 0 50% 50%/0 0 100% 100%;
+  }
+  .kicker{
+    font-family:var(--ff-body);
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:10pt;
+    color:var(--orange);
+    margin-bottom:5mm;
+  }
+  .title{
+    font-family:var(--ff-head);
+    font-weight:700;
+    font-size:33pt;
+    line-height:1.05;
+    letter-spacing:-0.5px;
+  }
+  .title .em{ color:var(--orange); }
+  .subtitle{
+    margin-top:5mm;
+    font-size:12pt;
+    line-height:1.45;
+    color:#dfe7e5;
+    max-width:150mm;
+    font-style:italic;
+  }
+  .body{
+    flex:1;
+    padding:14mm 16mm 8mm;
+    display:flex;
+    flex-direction:column;
+    gap:6.5mm;
+  }
+  .block{
+    display:flex;
+    gap:6mm;
+    align-items:flex-start;
+  }
+  .num{
+    flex:0 0 12mm;
+    height:12mm;
+    background:var(--orange);
+    color:var(--white);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:var(--ff-head);
+    font-weight:700;
+    font-size:16pt;
+    box-shadow:0 2px 6px rgba(197,111,31,.35);
+  }
+  .block--soft .num{ background:var(--petrol); box-shadow:0 2px 6px rgba(47,111,111,.3); }
+  .block__inner{ flex:1; padding-top:0.5mm; }
+  .block__title{
+    font-family:var(--ff-head);
+    font-weight:700;
+    font-size:15.5pt;
+    color:var(--dunkelblau);
+    line-height:1.15;
+    margin-bottom:2.5mm;
+  }
+  ul{ list-style:none; display:flex; flex-direction:column; gap:2mm; }
+  li{ font-size:11pt; line-height:1.4; padding-left:8mm; position:relative; }
+  li .ic{ position:absolute; left:0; top:-0.3mm; font-size:12pt; }
+  .recipe{
+    margin-top:2.5mm;
+    background:var(--white);
+    border-left:3px solid var(--orange);
+    border-radius:8px;
+    padding:4mm 5mm;
+    font-size:10.5pt;
+    line-height:1.45;
+  }
+  .recipe b{ color:var(--dunkelblau); }
+  .recipe .kids{ color:var(--petrol); font-weight:600; display:block; margin-top:1.5mm; }
+  .footer{
+    background:var(--creme-tief);
+    padding:7mm 16mm 8mm;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:6mm;
+  }
+  .footer__note{ font-size:10.5pt; line-height:1.45; max-width:120mm; }
+  .footer__note b{ color:var(--dunkelblau); }
+  .sign{
+    font-family:var(--ff-head);
+    font-style:italic;
+    font-size:15pt;
+    color:var(--petrol);
+    white-space:nowrap;
+  }
+  .disclaimer{
+    padding:0 16mm 6mm;
+    background:var(--creme-tief);
+    font-size:7.5pt;
+    color:#8a8574;
+    line-height:1.3;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="topband">
+      <div class="kicker">Von Patricia Ulmann · 4-fach Mama</div>
+      <div class="title">Mein Immun-Fahrplan<br><span class="em">für Familien</span> 🍋</div>
+      <div class="subtitle">Was bei uns das ganze Jahr läuft — nicht übertrieben, einfach konsequent. Häng ihn an den Kühlschrank, pick dir EINEN Punkt raus und fang damit an.</div>
+    </div>
+
+    <div class="body">
+      <div class="block">
+        <div class="num">1</div>
+        <div class="block__inner">
+          <div class="block__title">Das tägliche Fundament</div>
+          <ul>
+            <li><span class="ic">🌈</span><b>Farbe auf den Teller</b> — bei jeder Mahlzeit was Buntes. Je bunter, desto mehr Vitamine.</li>
+            <li><span class="ic">💧</span><b>Genug trinken</b> — Wasser &amp; ungesüsster Tee statt Süssgetränke.</li>
+            <li><span class="ic">☀️</span><b>Raus &amp; bewegen</b> — jeden Tag kurz an die Luft, auch bei grauem Wetter.</li>
+            <li><span class="ic">😴</span><b>Schlaf zuerst</b> — in der kalten Zeit 30 Min früher ins Bett. Ein müder Körper hält weniger aus.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="num">2</div>
+        <div class="block__inner">
+          <div class="block__title">Der grösste Hebel: Zucker</div>
+          <ul>
+            <li><span class="ic">🍭</span>Zucker ist der grösste Vitaminräuber. Nicht streichen — realistisch bleiben 🙈 — aber in der Rotationszeit bewusst tiefer halten.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="num">3</div>
+        <div class="block__inner">
+          <div class="block__title">Das 20-Sekunden-Morgen-Ritual</div>
+          <ul>
+            <li><span class="ic">🌅</span>Ein kleines Ritual, das bei uns jeden Morgen dazugehört, bevor die Kids aus dem Haus gehen.</li>
+          </ul>
+          <div class="recipe">
+            <b>Immun-Roller zum Selbermachen:</b> 3 Tr. On Guard · 2 Tr. Oregano · 3 Tr. Lemon in 10 ml Trägeröl → morgens auf die Fusssohlen einreiben.
+            <span class="kids">👶 Für Kids stärker verdünnen: 1 Tr. je Öl auf 10 ml Trägeröl.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="block block--soft">
+        <div class="num">4</div>
+        <div class="block__inner">
+          <div class="block__title">Wenn's doch jemanden erwischt</div>
+          <ul>
+            <li><span class="ic">🛌</span>Früh dranbleiben: viel Ruhe, viel Flüssigkeit, warm halten.</li>
+            <li><span class="ic">🌿</span>Diffuser an und Handwäsche-Rhythmus hoch — damit's nicht durch die ganze Familie geht.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer__note"><b>Pick dir EINEN Punkt raus und fang damit an.</b><br>Mehr braucht's für den Anfang nicht. Fragen? Schreib mir einfach.</div>
+      <div class="sign">— Patricia 🤍</div>
+    </div>
+    <div class="disclaimer">
+      Dieser Fahrplan spiegelt meinen persönlichen Familien-Alltag und ersetzt keine medizinische Beratung. Ätherische Öle immer verdünnt anwenden. Bei Beschwerden oder Unsicherheit bitte an eine Fachperson wenden.
+    </div>
+  </div>
+</body>
+</html>

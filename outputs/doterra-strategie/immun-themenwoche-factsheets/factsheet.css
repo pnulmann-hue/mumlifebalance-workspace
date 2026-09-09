@@ -1,0 +1,89 @@
+/* Immun-Themenwoche Factsheets · Patricia-Brand (doTERRA-Variante) */
+:root{
+  --petrol:#2f6f6f;
+  --dunkelblau:#1e3a4c;
+  --creme:#f1ecdd;
+  --creme-tief:#e8e1cd;
+  --orange:#d6832f;
+  --orange-tief:#c56f1f;
+  --text:#33413f;
+  --white:#fffdf8;
+  --ff-head:'Philosopher', serif;
+  --ff-body:'Source Sans 3','Source Sans Pro',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+@page{ size:A4; margin:0; }
+html,body{ background:#ccc; }
+.page{
+  width:210mm; height:297mm;
+  background:var(--creme);
+  color:var(--text);
+  font-family:var(--ff-body);
+  position:relative; overflow:hidden;
+  display:flex; flex-direction:column;
+}
+.topband{
+  background:var(--dunkelblau);
+  color:var(--white);
+  padding:15mm 16mm 12mm;
+  position:relative;
+}
+.topband::after{
+  content:""; position:absolute; left:0; right:0; bottom:-7mm;
+  height:14mm; background:var(--dunkelblau);
+  border-radius:0 0 50% 50%/0 0 100% 100%;
+}
+.kicker{
+  display:flex; align-items:center; gap:4mm;
+  font-weight:700; letter-spacing:2.5px; text-transform:uppercase;
+  font-size:9.5pt; color:var(--orange); margin-bottom:5mm;
+}
+.kicker .dot{ width:22px;height:22px;border-radius:50%;background:var(--orange);
+  color:var(--white);display:flex;align-items:center;justify-content:center;
+  font-family:var(--ff-head);font-weight:700;font-size:11pt;letter-spacing:0;}
+.title{
+  font-family:var(--ff-head); font-weight:700;
+  font-size:30pt; line-height:1.06; letter-spacing:-0.5px;
+}
+.title .em{ color:var(--orange); }
+.weekday{ margin-top:4mm; font-size:11.5pt; color:#dfe7e5; font-style:italic; }
+.body{ flex:1; padding:14mm 16mm 6mm; display:flex; flex-direction:column; gap:6mm; }
+.sec__label{
+  font-weight:700; text-transform:uppercase; letter-spacing:1.5px;
+  font-size:9.5pt; color:var(--petrol); margin-bottom:2.5mm;
+}
+.lead{ font-size:11.5pt; line-height:1.5; }
+.lead b{ color:var(--dunkelblau); }
+.byway{
+  margin-top:3mm; font-size:10pt; line-height:1.45; color:#5a5f57;
+  border-left:2px solid var(--creme-tief); padding-left:4mm;
+}
+.card{
+  background:var(--white); border-radius:10px; padding:5mm 5.5mm;
+  box-shadow:0 1px 4px rgba(30,58,76,.08);
+}
+.card--recipe{ border-left:4px solid var(--orange); }
+.card--todo{ border-left:4px solid var(--petrol); background:var(--creme-tief); box-shadow:none; }
+.card__title{
+  font-family:var(--ff-head); font-weight:700; font-size:14pt;
+  color:var(--dunkelblau); margin-bottom:2.5mm; display:flex; align-items:center; gap:3mm;
+}
+.card__mix{ font-size:11pt; line-height:1.5; }
+.card__mix b{ color:var(--dunkelblau); }
+.card__anwendung{ margin-top:2mm; font-size:10.5pt; line-height:1.45; }
+.card__source{ margin-top:2.5mm; font-size:8.5pt; color:#8a8574; font-style:italic; }
+.kids{ display:block; margin-top:2mm; color:var(--petrol); font-weight:600; font-size:10pt; }
+.todo__text{ font-size:11pt; line-height:1.45; }
+.todo__text .box{ color:var(--petrol); font-weight:700; margin-right:2mm; }
+.pitchbox{
+  background:linear-gradient(135deg,#fdf3e6 0%,#fbe9d2 100%);
+  border-left:4px solid var(--orange); border-radius:10px; padding:5mm 5.5mm;
+  font-size:10.5pt; line-height:1.5;
+}
+.pitchbox b{ color:var(--orange-tief); }
+.footer{
+  background:var(--creme-tief); padding:5mm 16mm;
+  display:flex; justify-content:space-between; align-items:center; gap:5mm;
+}
+.footer .brand{ font-family:var(--ff-head); font-style:italic; font-size:13pt; color:var(--petrol); white-space:nowrap; }
+.disclaimer{ background:var(--creme-tief); padding:0 16mm 6mm; font-size:7.5pt; color:#8a8574; line-height:1.3; }
