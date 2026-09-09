@@ -32,16 +32,26 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_HAUSHALT_CHAT_ID", "")
 # "🏠 Haushalts-Liste" haben (in Notion -> ••• -> Verbindungen freigeben).
 NOTION_API_KEY = os.getenv("NOTION_TOKEN", "") or os.getenv("NOTION_API_KEY", "")
 
+# Notion-API-Version. 2025-09-03 kennt den data_sources-Endpoint — den brauchen
+# wir, weil Datenbanken mit MEHREREN Datenquellen (z.B. Content-Management) vom
+# alten databases/{id}/query mit "multiple data sources are not supported"
+# abgelehnt werden.
+NOTION_VERSION = "2025-09-03"
+
 # 🏠 Haushalts-Liste (Database-ID) im Privat-Bereich "🏡 Privat & Familie"
 NOTION_DB_HAUSHALT = "745ae127-1f03-4dc0-83d4-a6a8058d99dc"
+NOTION_DS_HAUSHALT = "caf1c565-9c66-46bb-ae03-73d029b91d87"
 
 # ✅ Aufgaben (Business-Brain) — liefert den Business-Teil des Vorabend-Briefings.
 # Data-Source: collection://2ae7078e-8b7e-81a2-a070-000b54019c80
 NOTION_DB_AUFGABEN = "2ae7078e-8b7e-81bd-b07a-deaa99c01b71"
+NOTION_DS_AUFGABEN = "2ae7078e-8b7e-81a2-a070-000b54019c80"
 
 # 📝 Content-Management — was morgen gepostet wird (Reel/Karussell/Story).
 # Data-Source: collection://2ae7078e-8b7e-811a-ad14-000ba5820c09
 NOTION_DB_CONTENT = "2ae7078e-8b7e-8134-9e36-f8c630a850f2"
+# Diese DB hat MEHRERE Datenquellen — nur ueber die Data-Source-ID lesbar.
+NOTION_DS_CONTENT = "2ae7078e-8b7e-811a-ad14-000ba5820c09"
 
 # ========================================
 # Verhalten

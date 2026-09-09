@@ -43,7 +43,7 @@ GRAU = HexColor("#6b6b6b")
 TEXT = HexColor("#2b2b2b")
 
 # Ressorts, die am Abend noch Handlung ausloesen -> Orange statt Petrol.
-DRINGEND = {"pinned", "schule", "content_feed", "content_story"}
+DRINGEND = {"fehler", "pinned", "schule", "content_feed", "content_story"}
 
 _OUT_DIR = Path(__file__).resolve().parent
 

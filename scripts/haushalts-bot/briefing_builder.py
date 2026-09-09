@@ -50,6 +50,7 @@ BLOCK_META = {
     "haushalt":      ("🏠 Haushalt", "HAUSHALT"),
     "aemtli":        ("🧒 Kinder-Ämtli", "KINDER-ÄMTLI"),
     "slot":          ("🧘 Dein Slot", "DEIN SLOT"),
+    "fehler":        ("🛠 Der Bot kam nicht an alle Daten", "DATENQUELLEN — PROBLEM"),
     # Titel wird zur Laufzeit mit der Saison gefuellt
     "saison":        ("Saison-Liste", "SAISON-LISTE"),
 }
@@ -326,6 +327,7 @@ def baue_briefing_struktur(
     heute: date | None = None,
     business: list[dict] | None = None,
     content: list[dict] | None = None,
+    lese_fehler: list[str] | None = None,
 ) -> dict:
     """Sammelt alles fuer morgen und gibt eine Render-neutrale Struktur zurueck.
 
@@ -519,6 +521,7 @@ def baue_briefing_struktur(
     content_feed, content_stories = _content_block(content or [], morgen)
 
     roh = [
+        ("fehler", list(lese_fehler or [])),
         ("pinned", pinned),
         ("schule", schule),
         ("content_feed", content_feed),

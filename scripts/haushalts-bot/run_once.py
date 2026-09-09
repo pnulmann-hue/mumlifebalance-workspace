@@ -76,8 +76,13 @@ def main() -> None:
     content = notion_reader.lade_content_plan(morgen, morgen)
     print(f"[OK] {len(content)} Content-Eintraege fuer morgen gelesen")
 
+    if notion_reader.LESE_FEHLER:
+        for f in notion_reader.LESE_FEHLER:
+            print(f"[WARN] {f}", file=sys.stderr)
+
     struktur = briefing_builder.baue_briefing_struktur(
-        eintraege, business=business, content=content
+        eintraege, business=business, content=content,
+        lese_fehler=notion_reader.LESE_FEHLER,
     )
     text = briefing_builder.baue_vorabend_briefing(eintraege, struktur=struktur)
     caption = briefing_builder.baue_kurzfassung(struktur)
