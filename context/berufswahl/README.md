@@ -156,6 +156,23 @@ bei Y ist es fertig geworden, der Unterschied war Z».
 Und was Eltern in seiner Hörweite sagen, gehört zu den Bedingungen, die man ändern
 kann — im Gegensatz zu fast allem anderen.
 
+### Wenn Unterteilungen mehrfach zurückgewiesen werden: die Kategorie prüfen
+
+Wenn jemand zwei-, drei-, viermal sagt «kommt darauf an», «kann ich nicht sagen» oder
+«mich interessiert alles davon», ist die naheliegende Deutung «breit interessiert,
+noch unentschieden». **Sie ist oft falsch.**
+
+Die zweite Möglichkeit ist, dass die **Kategorie nicht stimmt**, in der gefragt wird.
+Wer nach Themen fragt, bekommt keine Antwort von jemandem, dessen Material gar kein
+Thema ist — sondern zum Beispiel **Information selbst**, ein bestimmter
+**Tätigkeitsmodus** oder eine bestimmte **Art von Zuwachs**.
+
+**Regel:** Nach der **zweiten** zurückgewiesenen Unterteilung nicht feiner
+unterteilen, sondern fragen, **warum** die Unterteilung nicht greift — oder die
+Kategorie wechseln (von Thema zu Tätigkeit, von Fach zu Bedingung).
+Wer stattdessen weiter unterteilt, produziert Antworten, die immer vager werden,
+und hält am Ende Vagheit für ein Ergebnis.
+
 ---
 
 ## Harte Arbeitsregeln
