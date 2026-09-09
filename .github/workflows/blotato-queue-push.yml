@@ -72,6 +72,13 @@ jobs:
 
       - name: Upload und Schedule
         if: steps.q.outputs.skip == 'false'
+        # wp-api.js liest process.env (nicht die .env-Datei) — Secrets muessen
+        # als echte Env-Variablen kommen. schedule-post.js liest die .env-Datei.
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
         run: |
           set -e
           cd scripts/blotato-post
