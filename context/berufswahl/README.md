@@ -88,6 +88,37 @@ zeigen sich Tendenzen; vorher wird **nicht** interpretiert.
 >    und er liefert eine erwachsen klingende Begründung dafür, das Mühsame gar nicht
 >    erst zu probieren. Immer als **Beobachtung an Beispielen** notieren, nie als Typ.
 
+**Schärfung (2026-09-09):** Können ↔ Wissen ist zu grob. Das Beispiel, an dem es
+sich zeigte: *lieber der Gescheite, der die Tischbeine abschraubt, um den Tisch aus
+dem Raum zu bringen — als der, der ein Loch in die Wand schlägt.*
+
+**Beide tragen den Tisch raus. Beide handeln. Beide brauchen Hände.**
+Der Unterschied ist nicht Wissen gegen Können, sondern:
+
+- **Verstehen zuerst** — wie ist das Ding gebaut, wo gibt es nach, was ist der
+  kleinste Eingriff? Dann handeln.
+- **Anpacken und durchbeissen** — losgehen, Kraft und Ausdauer einsetzen, im Tun
+  korrigieren.
+
+Diese Unterscheidung **verläuft quer zu Können/Wissen** und ist die brauchbarere:
+Es gibt Handwerker, die zuerst das System lesen, und Akademiker, die sich mit roher
+Ausdauer durch Literatur pflügen. Für jemanden, dem man Untaugliches im Praktischen
+nachsagt, ist sie ausserdem fairer — sie lässt offen, dass er **handelt**, nur eben
+erst nach dem Durchschauen.
+
+⚠️ **Warnung zur Formulierung:** «der Gescheite» gegen «den Muskelprotz» ist als
+Illustration brauchbar und als **Frage unbrauchbar** — niemand wählt den Muskelprotz.
+Eine Frage mit einer schmeichelhaften und einer abwertenden Seite misst nichts.
+**Beide Seiten müssen einen echten Vorteil haben**, sonst ist es keine Wahl:
+
+> «Zwei müssen einen Tisch aus einem Zimmer bringen, der nicht durch die Tür passt.
+> Der eine schraubt die Beine ab, braucht dafür Werkzeug und zwanzig Minuten, und
+> nachher ist alles heil. Der andere packt an, würgt ihn mit Wucht durch die Tür,
+> ist in fünf Minuten fertig — dafür hat der Türrahmen eine Schramme.
+> Beide haben den Tisch draussen. Welcher wärst du lieber?»
+
+Erst mit dem Zeit-gegen-Schaden-Tausch wird es eine ehrliche Frage.
+
 **Formulierung, wenn die Sperre aufgehoben ist:**
 > «Es gibt zwei Arten, in einem Beruf besser zu werden. Bei der einen wirst du besser
 > darin, etwas zu **machen** — mit den Händen, mit Übung, bis es sitzt. Bei der
