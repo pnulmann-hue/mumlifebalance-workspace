@@ -1,0 +1,94 @@
+name: Blotato Queue Push
+
+# Postet ein Karussell, sobald .github/blotato-queue.json geaendert und gepusht wird.
+# Existiert, weil Web-Sessions keinen workflow_dispatch ausloesen duerfen (403) und
+# backend.blotato.com aus der Sandbox nicht erreichbar ist. Ein Push = ein Post.
+#
+# Queue-Datei:
+#   { "slides-dir": "outputs/.../png", "config": "scripts/blotato-post/post-configs/....json" }
+#
+# Secrets wie karussell-push.yml: WP_URL, WP_USER, WP_APP_PASSWORD, BLOTATO_API_KEY
+
+on:
+  push:
+    paths:
+      - '.github/blotato-queue.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blotato-queue-push
+  cancel-in-progress: false
+
+jobs:
+  push:
+    # Schuetzt vor Endlosschleifen durch eigene Bot-Commits
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Queue lesen
+        id: q
+        run: |
+          set -e
+          SLIDES=$(jq -r '."slides-dir"' .github/blotato-queue.json)
+          CONFIG=$(jq -r '.config' .github/blotato-queue.json)
+          if [ -z "$SLIDES" ] || [ "$SLIDES" = "null" ]; then
+            echo "Queue leer — nichts zu tun."; echo "skip=true" >> $GITHUB_OUTPUT; exit 0
+          fi
+          echo "slides=$SLIDES" >> $GITHUB_OUTPUT
+          echo "config=$CONFIG" >> $GITHUB_OUTPUT
+          echo "skip=false" >> $GITHUB_OUTPUT
+
+      - name: Install dependencies
+        if: steps.q.outputs.skip == 'false'
+        run: |
+          if [ -f scripts/wordpress/package.json ]; then
+            cd scripts/wordpress && npm install --silent && cd -
+          fi
+          cd scripts/blotato-post && npm install --silent
+
+      - name: Write .env files from secrets
+        if: steps.q.outputs.skip == 'false'
+        run: |
+          cat > .env << EOF
+          BLOTATO_API_KEY=${{ secrets.BLOTATO_API_KEY }}
+          EOF
+          cat > scripts/wordpress/.env << EOF
+          WP_URL=${{ secrets.WP_URL }}
+          WP_USER=${{ secrets.WP_USER }}
+          WP_APP_PASSWORD=${{ secrets.WP_APP_PASSWORD }}
+          EOF
+          cat > scripts/blotato-post/.env << EOF
+          BLOTATO_API_KEY=${{ secrets.BLOTATO_API_KEY }}
+          EOF
+
+      - name: Upload und Schedule
+        if: steps.q.outputs.skip == 'false'
+        run: |
+          set -e
+          cd scripts/blotato-post
+          node upload-and-schedule.js \
+            --slides-dir="../../${{ steps.q.outputs.slides }}" \
+            --config="../../${{ steps.q.outputs.config }}"
+
+      - name: Config mit Blotato-URLs zurueckcommitten
+        if: steps.q.outputs.skip == 'false'
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ steps.q.outputs.config }}"
+          git diff --staged --quiet || git commit -m "blotato-queue: config mit CDN-URLs aktualisiert [skip ci]"
+          git push || echo "nichts zu pushen"
+
+      - name: Cleanup .env files
+        if: always()
+        run: rm -f .env scripts/wordpress/.env scripts/blotato-post/.env
