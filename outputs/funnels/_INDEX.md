@@ -8,9 +8,11 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 
 ## Dateien
 
+- [[ac-einrichtung]]
 - [[funnel-landkarte]]
 - [[instagram-lead-nurture-mails]]
 - [[mail-1-auslieferung]]
+- [[mails-2-4-bruecke]]
 - [[manychat-flow-STANDBEIN]]
 
 ### 📁 bio-check
