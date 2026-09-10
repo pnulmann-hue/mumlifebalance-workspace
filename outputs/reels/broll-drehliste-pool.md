@@ -4,14 +4,15 @@ tags: [content, reels, broll]
 
 # B-Roll-Pool — was du einmal abdrehst und dann monatelang brauchst
 
-**Warum das hier steht (2026-09-10):** Der Ordner `DCIM/Reel-Videos` enthält
-zwölf Clips — elf davon Urlaub, Garten, Wandern und Kinder. Für Business-Reels
-ist praktisch nichts brauchbar. Als ich einen Clip zum Hook „was ist dein Thema?"
-suchen sollte, gab es schlicht keinen.
-
-**Was fehlt, ist dein Arbeitsalltag als Mama.** Nicht steriles Büro — das wäre
-nicht deine Marke. Sondern genau das, wofür du stehst: Business zwischen Wäsche
-und Teamcalls.
+> ⚠️ **Korrektur vom 2026-09-10:** Hier stand zuerst, im Ordner `DCIM/Reel-Videos`
+> sei „praktisch nichts brauchbar". Das war falsch gedacht. Ein Clip muss das Thema
+> **nicht zeigen — er muss die Metapher tragen** (Blumenkohl + „bevor du erntest,
+> säst du aus"). Strand, Kochen, Wandern, Garten: alles brauchbar, wenn der Gedanke
+> dazu stimmt. Siehe [[videoschnitt-animationen]].
+>
+> Diese Liste ist deshalb **keine Mängelliste, sondern eine Ergänzung**: Szenen aus
+> dem Arbeits- und Mama-Alltag, die im Bestand noch fehlen und besonders vielseitig
+> einsetzbar sind. Das vorhandene Material bleibt gültig.
 
 Alles kommt in das Album **`DCIM/B-Roll-Pool`** auf dem Handy.
 
@@ -63,15 +64,14 @@ Alles kommt in das Album **`DCIM/B-Roll-Pool`** auf dem Handy.
 
 ---
 
-## Was du dir sparen kannst
+## Was schon da ist
 
-Von deinen bestehenden Clips brauchbar ist **einer**: die Küchenszene, in der du
-etwas auspackst. Urlaub, Bachlauf, Schneefeld und Blumenkohl sind schöne
-Aufnahmen, aber sie erzählen nichts über dein Business — und ein B-Roll-Reel
-lebt davon, dass Bild und Hook zusammenpassen.
+Der Bestand ist **nicht** unbrauchbar — im Gegenteil. Strandspaziergang, Kochen,
+Wandern, Garten und Küche tragen alle einen Business-Hook, sobald der Gedanke
+dazu steht. Der einzige harte Ausschlussgrund ist die **Länge**: unter etwa sechs
+Sekunden trägt kein Reel.
 
-**Die Garten- und Familienclips bleiben, wo sie sind.** Für `/garten` und für
-Privates sind sie genau richtig.
+Diese Liste ergänzt also, statt zu ersetzen.
 
 ---
 

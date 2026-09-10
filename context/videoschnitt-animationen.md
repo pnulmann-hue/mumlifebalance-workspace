@@ -166,6 +166,45 @@ Sound. Sie muss also nichts selbst gestalten — nur hochladen und Ton wählen.
 
 ---
 
+## 🚨 Der Clip muss nicht das Thema zeigen — er muss die Metapher tragen
+
+**Festgehalten am 2026-09-10, nachdem Claude es falsch herum gedacht hatte.**
+
+Claude hatte zu einem Business-Hook einen passenden Clip gesucht, keinen
+gefunden und daraus geschlossen, es fehle Material. Falsch. Patricias
+Denkrichtung ist die umgekehrte:
+
+> **Erst den Clip anschauen, dann den Hook finden, den dieser Clip möglich macht.**
+
+Ihr Beispiel, an einem Blumenkohl im Garten:
+
+> „Bevor du Gurken erntest, säst du doch Gurken aus, oder? Warum hast du dann das
+> Gefühl, dass es bei deinem Networkbusiness und der Kundenfindung über Instagram
+> anders läuft?"
+
+Damit trägt ein Gemüse-Clip einen Business-Post. Das Bild ist die **Metapher**,
+nicht die Illustration.
+
+**Heisst konkret:** Strandspaziergang, Kochen, Wandern, Garten, Kinder — alles
+brauchbar. Es gibt kein „unpassendes" Material, es gibt nur einen fehlenden
+Gedanken dazu. Bevor Claude sagt, es fehle Material, schaut es sich erst an,
+**wofür die vorhandenen Clips stehen könnten**.
+
+**Wann ein Clip trotzdem nicht geht:** wenn er zu kurz ist (unter ~6 Sekunden
+trägt kein Reel) oder wenn weder Bewegung noch Stimmung da ist, an der das Auge
+hängen bleibt.
+
+### Drei harte Regeln für jeden B-Roll-Hook
+
+1. **In drei Sekunden muss klar sein, worum es geht.** Wer erst nach fünf
+   Sekunden versteht, ist schon weg.
+2. **Symptombewusst, problembewusst oder wunschbewusst — nie produktbewusst.**
+   Die Leserin denkt in ihrem Symptom, nicht in Patricias Lösungswort.
+   Siehe `feedback_hooks-symptombewusst-nicht-produktbewusst`.
+3. **Der ganze Inhalt gehört in die Caption**, auf dem Bild steht nur der Hook.
+
+---
+
 ## Beim Drehen: jede B-Roll-Handlung mehrfach
 
 Bei B-Roll wird **nicht gesprochen** — deshalb darf dieselbe Handlung beliebig
