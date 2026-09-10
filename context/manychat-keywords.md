@@ -7,6 +7,8 @@ tags: [content, manychat, automation]
 Zentrale Liste aller aktiven ManyChat-Keywords für Instagram-Kommentar-Trigger.
 **Jedes Keyword triggert eine DM-Automation die auf ein 0€-Produkt oder einen Minikurs führt.**
 
+**Regel für neue Keywords (2026-09-10):** unverwechselbar wählen. Alltagswörter wie „Idee“ oder „Hilfe“ tippt jemand versehentlich in einem normalen Kommentar und löst die Automation aus. Gut sind Wörter aus dem Versprechen selbst (`STANDBEIN`, `FAHRPLAN`) oder mit Ziffer (`ECHT1`).
+
 Der `/reels`- und `/karussell`-Assistent wählt IMMER aus dieser Liste — niemals neue Keywords erfinden.
 
 ---
@@ -26,7 +28,7 @@ Der `/reels`- und `/karussell`-Assistent wählt IMMER aus dieser Liste — niema
 | `ECHT1`          | Workbook „Von 0 auf echt"      | Workbook (Lead Magnet) |
 | `STORY`          | Story-Challenge „7-Tage-Workbook" + Telegram-Kanal | Story-Challenge (Lead Magnet) — **TODO: in ManyChat einrichten!** |
 | `BIO`            | Bio-Check für Network-Mamas (KI-Bot)              | Bio-Check (Lead Magnet) — Launch seit 2026-04-24. Flow-Anleitung: `outputs/funnels/bio-check/launch/manychat-flow-BIO.md` |
-| `IDEE`           | Produkt-Ideen-Finder (0€ KI-Tool)                 | Produkt-Ideen-Finder (Lead Magnet) — festgelegt 2026-09-10 für den KW38/39-Launch. ⚠️ **ManyChat-Flow muss noch angelegt werden**, sonst löst der Kommentar nichts aus. Landingpage live: https://mumlifebalance.ch/produkt-ideen-finder/ |
+| `STANDBEIN`      | Produkt-Ideen-Finder (0€ KI-Tool)                 | Produkt-Ideen-Finder (Lead Magnet) — festgelegt 2026-09-10. Bewusst **nicht** `IDEE`: zu alltäglich, würde in normalen Kommentaren versehentlich auslösen. ⚠️ **ManyChat-Flow fehlt noch** UND ⚠️ **das Tool selbst ist noch nicht deployt** (Knopf zeigt auf `#tool-kommt-bald`). Landingpage: https://mumlifebalance.ch/produkt-ideen-finder/ |
 | `ZEITFENSTER`    | Freischaufeln (0€-Tool: To-Do halbieren + Business-Zeitfenster freischaufeln) | Freischaufeln (Lead Magnet) — live seit 2026-07. Flow: `outputs/funnels/freischaufeln/manychat-flow-ZEITFENSTER.md` |
 
 ---
