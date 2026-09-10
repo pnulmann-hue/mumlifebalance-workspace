@@ -14,6 +14,30 @@ Jeder Hook muss in unter 2 Sekunden Neugier oder einen "Das bin ich"-Moment ausl
 ---
 
 
+
+## 🎯 Die eine Frage vor jedem Hook (Patricia, 2026-09-10)
+
+> **„Was ist gerade der grösste Painpoint meiner Zielgruppe? DAS ist der Hook."**
+
+Diese Frage steht über allen anderen Regeln hier. Vor jedem Hook wird sie
+beantwortet — und die Antwort kommt aus [[kern-painpoint]], nicht aus dem Bauch:
+
+> „Ich investiere so viel Zeit, aber es kommt zu wenig zurück — und ich weiss nicht, wie ich mir
+> etwas Eigenes aufbaue, ohne mein Network aufzugeben, noch mehr zu arbeiten oder bei null
+> anzufangen."
+
+Ein Hook, der keinen dieser Schmerzen trifft, ist kein Hook. Er ist eine Aussage.
+
+**Woran man das Scheitern erkennt:** Beobachtungen („Es gibt zwei Arten von…"),
+Kategorien, Thesen und Ankündigungen fühlen sich klug an und tun niemandem weh.
+Sie beschreiben die Zielgruppe, statt sie zu treffen. Wer sich nicht wiedererkennt,
+scrollt weiter.
+
+**Der Test:** Schreib den Hook auf und frag: *hat diese Frau das gestern Abend
+gedacht?* Wenn die Antwort „nein, aber sie würde zustimmen" ist, reicht es nicht.
+
+---
+
 ## 🔴 Verbotene Hook-Formeln (belegt 2026-09-10)
 
 Das Reel vom 10.9. mit dem Hook **„So findest du dein eigenes Thema neben dem Network — 3 Schritte"**

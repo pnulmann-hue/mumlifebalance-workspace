@@ -16,6 +16,66 @@ tags: [brand, positionierung, mentoring]
 Das ist, was die Wunschkundin denkt, **bevor** sie weiss, dass es eine Lösung gibt. Sie sagt nicht
 „ich will ein zweites Business" — das wäre schon die Lösung und ist damit produktbewusst.
 
+
+## 🔴 Wie sie es sich selbst stellt (Patricia, 2026-09-10)
+
+Der Satz oben ist die **Zusammenfassung**. So denkt sie ihn nicht. Was ihr wirklich
+durch den Kopf geht, in dieser Reihenfolge:
+
+1. **Die Rechnung geht nicht auf.** „Wie soll ich mit ein paar Prozent Provision
+   jemals das Einkommen aus meinem Teilzeitjob erreichen?"
+2. **Die Zeitfrage.** „Wie lange dauert das noch, bis ich ein Team aufgebaut hab
+   und endlich mehr verdiene?"
+3. **Der Zweifel.** „Ist Network überhaupt das Richtige für mich?"
+4. **Die Abhängigkeit.** Insgeheim das Unangenehmste: vieles liegt gar nicht in
+   ihrer Macht. Vergütungsplan, Preise, Aktionen, Regeln — alles macht jemand
+   anders.
+
+**Und das Entscheidende:** Sie denkt **nicht** „ich will etwas anderes verkaufen"
+und **nicht** „ich hab so viel Wissen im Kopf". Beides ist schon die Antwort.
+Wer damit hookt, erreicht nur die, die den Weg ohnehin verstanden haben.
+
+**Das Hybridmodell ist die Antwort auf Punkt 1 bis 4** — es muss im Hook nicht
+vorkommen. Der Hook stellt ihre Frage. Das Angebot gibt die Antwort.
+
+⚠️ **Zur Provision:** Patricia nennt hier 15–30 %, die Memory
+[[feedback_network-mama-kernschmerz]] nennt 10–30 %. Solange das nicht geklärt
+ist, in Kundentexten **keine Zahl** verwenden — „ein paar Prozent" oder sie selbst
+rechnen lassen.
+
+⚠️ **Nie gegen das Network argumentieren** — siehe
+[[feedback_network-passiv-aber-fremdes-fundament]]. Punkt 4 heisst „die Regeln
+macht das Partnerunternehmen", nie „Network funktioniert nicht".
+
+---
+
+
+### 💚 Sie liebt ihr Network — das ist keine Nebensache (Patricia, 2026-09-10)
+
+Das Produkt ist gut, das Team ist gut, die Community ist gut. **Sie will da nicht raus.**
+Der Schmerz ist ein anderer:
+
+> „Wär halt auch geil, damit mal richtig Geld zu verdienen. Damit ich mich morgen früh
+> nicht doch wieder ins Büro quälen muss, in einen Job, den ich eigentlich gar nicht
+> mehr machen will."
+
+**Die Gegenspielerin ist der Job, nicht das Network.** Das ist die wichtigste
+Tonkorrektur überhaupt:
+
+- ❌ Jeder Hook, der Network, Team oder Upline schlechtmacht, trifft sie ins Herz und
+  verliert sie sofort. Sie verteidigt dann das, was sie liebt.
+- ✅ Der Hook, der zieht, zeigt den **Montagmorgen im Büro** — die Sache, aus der sie
+  raus will. Und das Network steht auf ihrer Seite, nur eben noch zu klein.
+
+**Sprachbilder, die daraus kommen:** sich ins Büro quälen · der Wecker am Montag ·
+Ferien beantragen für den Teamevent · Kündigungsfrist ausrechnen · „nur noch zwei
+Tage die Woche" · der Job, den man eigentlich nicht mehr machen will.
+
+**Der Bogen für jeden Post:** Sie liebt, was sie tut → es trägt nur noch nicht →
+darum baust du etwas Eigenes daneben, ohne das Erste aufzugeben.
+
+---
+
 ## Der Aufbau
 
 | Teil | Inhalt | Wofür im Text |
