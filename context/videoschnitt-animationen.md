@@ -166,6 +166,35 @@ Sound. Sie muss also nichts selbst gestalten — nur hochladen und Ton wählen.
 
 ---
 
+## Das Cover-System ✅ festgelegt 2026-09-10
+
+Gebaut mit `scripts/videoschnitt/cover.py`. **Zwei Arten im Wechsel**, damit der
+Feed nicht jeden Tag gleich aussieht:
+
+| Art | Aufbau |
+|---|---|
+| **foto** | Bild (Shootingbild oder Videostandbild) + weicher Farbschleier über dem ganzen Bild, der nach unten dichter wird, aber nie ganz zumacht |
+| **farbe** | Vollfläche in einer Brandfarbe, ganz ohne Bild |
+
+**Farbe rotiert automatisch:** Petrol → Dunkelblau → Orange. Merkzettel in
+`outputs/reels/_cover-verlauf.json`.
+
+**Typografie:** Philosopher für die Headline in Creme, **ein** Wort in Orange.
+Source Sans 3 für die Unterzeile. Die Headline wird im Browser **eingepasst**,
+nicht geschätzt — so gross wie möglich, höchstens drei Zeilen.
+
+**Zwei Sachen, die leicht schiefgehen:**
+- Der Schleier darf nicht als **Balken mit harter Kante** unten liegen. Er
+  gehört über das ganze Bild, sonst sieht es nach Aufkleber aus.
+- Instagram zeigt im Feed-Raster nur das **mittige 4:5** eines 9:16-Covers. Der
+  Text muss innerhalb dieser Zone sitzen, sonst ist er im Raster abgeschnitten.
+
+**Bildquelle:** 347 der 1007 Shootingbilder sind Hochformat — davon wird
+ausgewählt, nicht vom Videostandbild. Ein Querformat-Foto geht auch, wenn
+Patricia nicht mittig steht; der Zuschnitt wird dann pro Post entschieden.
+
+---
+
 ## 🚨 Der Clip muss nicht das Thema zeigen — er muss die Metapher tragen
 
 **Festgehalten am 2026-09-10, nachdem Claude es falsch herum gedacht hatte.**

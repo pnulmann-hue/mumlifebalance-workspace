@@ -2868,7 +2868,8 @@
       db.collection("reels").doc(r.id).set({
         name: r.name, hook: r.hook, unter: r.unter, pos: r.pos, brand: r.brand,
         scrim: !!r.scrim, skript: r.skript || "", caption: r.caption || "",
-        untertitel: r.untertitel || "", updatedAt: r.updatedAt
+        untertitel: r.untertitel || "", videodatei: r.videodatei || "",
+        blotato: r.blotato || null, updatedAt: r.updatedAt
       }).then(function () { setSaveState("gespeichert", "on"); })
         .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
     }, 700);
@@ -3341,6 +3342,28 @@
       rt.appendChild(gen);
     }
 
+    // --- Freigabe für Blotato, wie beim Karussell
+    var bloBox = document.createElement("div");
+    bloBox.className = "panel gate" + (bloR(r).status === "wartet" ? " frei" : "");
+    bloBox.style.marginTop = "18px";
+    bloBox.innerHTML =
+      '<h2>An Blotato geben</h2>' +
+      '<div class="note" id="rblonote" style="margin-bottom:10px"></div>' +
+      '<div style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end">' +
+        '<div class="field"><label for="rblodatum">Datum</label>' +
+          '<input type="date" id="rblodatum" value="' + esc(bloR(r).datum || "") + '"></div>' +
+        '<div class="field"><label for="rblozeit">Uhrzeit</label>' +
+          '<input type="time" id="rblozeit" value="' + esc(bloR(r).zeit || "18:00") + '"></div>' +
+        '<div class="field"><label for="rbloprofil">Profil</label><select id="rbloprofil">' +
+          '<option value="mentoring"' + (bloR(r).profil === "doterra" ? "" : " selected") + '>Instagram Mentoring</option>' +
+          '<option value="doterra"' + (bloR(r).profil === "doterra" ? " selected" : "") + '>Instagram doTERRA</option>' +
+        '</select></div>' +
+        '<button class="btn primary" id="rblobtn">Für Blotato freigeben</button>' +
+        '<button class="btn ghost" id="rblozurueck" hidden>Freigabe zurückziehen</button>' +
+      '</div>';
+    rt.appendChild(bloBox);
+    setupBlotatoReel(bloBox, r);
+
     var del = document.createElement("button");
     del.className = "btn ghost";
     del.textContent = "Dieses Reel löschen";
@@ -3353,6 +3376,112 @@
       render();
     };
     rt.appendChild(del);
+  }
+
+  /* Freigabe-Daten eines Reels. */
+  function bloR(r) {
+    return r.blotato || (r.blotato = { datum: "", zeit: "18:00", profil: "mentoring", status: "" });
+  }
+
+  function setupBlotatoReel(box, r) {
+    var b = bloR(r);
+    var note = box.querySelector("#rblonote");
+    var btn = box.querySelector("#rblobtn");
+    var zurueck = box.querySelector("#rblozurueck");
+    var datum = box.querySelector("#rblodatum");
+    var zeit = box.querySelector("#rblozeit");
+    var profil = box.querySelector("#rbloprofil");
+
+    function speichern() {
+      b.datum = datum.value; b.zeit = zeit.value; b.profil = profil.value;
+      saveReel(r);
+    }
+    datum.onchange = zeit.onchange = profil.onchange = speichern;
+
+    if (!db) {
+      note.textContent = "Die Freigabe braucht die Verbindung zur Datenbank. Öffne das Cockpit über den Link.";
+      btn.disabled = true;
+      return;
+    }
+    if (!r.videodatei) {
+      note.textContent = "Für dieses Reel ist noch keine fertige Videodatei hinterlegt. " +
+        "Die trägt Claude ein, sobald das Reel geschnitten und gerendert ist.";
+      btn.disabled = true;
+      return;
+    }
+    if (b.status === "wartet") {
+      note.textContent = "Freigegeben für " + (b.datum || "kein Datum") + " um " + (b.zeit || "") +
+        ". Sag es mir im Chat, dann lade ich Video und Cover hoch und plane den Beitrag ein.";
+      btn.textContent = "Cover neu ablegen";
+      zurueck.hidden = false;
+      zurueck.onclick = function () {
+        b.status = ""; saveReel(r);
+        db.collection("freigaben").doc(r.id).set({
+          name: r.name, typ: "reel", status: "zurueckgezogen",
+          updatedAt: new Date().toISOString()
+        }).catch(function () {});
+        render();
+        toast("Freigabe zurückgezogen.");
+      };
+    } else if (b.status === "geplant") {
+      note.textContent = "Eingeplant bei Blotato für " + (b.datum || "") + " um " + (b.zeit || "") + ".";
+      btn.disabled = true;
+      return;
+    } else {
+      note.textContent = "Datum und Uhrzeit setzen, dann freigeben. Dabei wird das Titelbild " +
+        "als Cover abgelegt — genau so, wie es hier aussieht.";
+    }
+
+    btn.onclick = function () {
+      if (!datum.value) { datum.focus(); toast("Setz zuerst ein Datum."); return; }
+      if (!(r.caption || "").trim()) { toast("Ohne Caption kein Beitrag. Schreib sie oben rein."); return; }
+      speichern();
+      btn.disabled = true;
+      btn.textContent = "lege ab …";
+
+      var wann = new Date(datum.value + "T" + (zeit.value || "18:00"));
+      var basis = "freigaben/" + r.id;
+
+      function steuerSchreiben() {
+        db.collection("freigaben").doc(r.id).set({
+          name: r.name,
+          typ: "reel",
+          videodatei: r.videodatei,
+          caption: r.caption || "",
+          profil: profil.value,
+          datum: datum.value,
+          zeit: zeit.value || "18:00",
+          zeitpunktISO: isNaN(wann) ? "" : wann.toISOString(),
+          status: "wartet",
+          updatedAt: new Date().toISOString()
+        }).then(function () {
+          b.status = "wartet";
+          saveReel(r);
+          btn.disabled = false;
+          render();
+          toast("Freigegeben. Sag mir im Chat Bescheid, dann geht es raus.");
+        }).catch(function () {
+          btn.disabled = false;
+          btn.textContent = "Für Blotato freigeben";
+          toast("Das Ablegen hat nicht geklappt.");
+        });
+      }
+
+      // Das Titelbild wird als Cover mitgegeben, damit im Feed steht, was sie sieht.
+      var c = document.createElement("canvas");
+      renderReelCanvas(c, r, {});
+      setTimeout(function () {
+        var q = 0.9, out = c.toDataURL("image/jpeg", q);
+        while (out.length > 700000 && q > 0.45) { q -= 0.08; out = c.toDataURL("image/jpeg", q); }
+        db.doc(basis).collection("bilder").doc("cover").set({ dataUrl: out, nr: 1 })
+          .then(steuerSchreiben)
+          .catch(function () {
+            btn.disabled = false;
+            btn.textContent = "Für Blotato freigeben";
+            toast("Das Cover liess sich nicht ablegen.");
+          });
+      }, 320);
+    };
   }
 
   function komprimiereDataUrl(dataUrl, cb) {
@@ -3470,7 +3599,7 @@
         state.reels.forEach(function (x) { seen[x.id] = x; });
         qs.docs.forEach(function (doc) {
           var d0 = doc.data() || {};
-          var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", updatedAt: d0.updatedAt || "" };
+          var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, updatedAt: d0.updatedAt || "" };
           if (seen[rl.id]) Object.assign(seen[rl.id], rl); else state.reels.push(rl);
         });
         state.reels.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });
