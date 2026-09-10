@@ -37,6 +37,7 @@ Auto-Index aller Files in `outputs/reels/`. Siehe [[_MOCs/MOC-Content-Engine]] f
 - [[2026-08-25-broll-testreels-cluster-captions]]
 - [[2026-08-25-broll-zuordnung-hook-zu-caption]]
 - [[2026-08-25-hooks-sichtbarkeit-5-hebel]]
+- [[2026-09-doterra-drehliste-kw38-40]]
 - [[2026-KW17-doterra-hot-take-salat-reicht-nicht]]
 - [[2026-KW17-doterra-koerper-schreit]]
 - [[2026-KW17-doterra-pov-7-min-abendroutine]]
