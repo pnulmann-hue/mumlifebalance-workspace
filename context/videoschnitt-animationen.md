@@ -113,7 +113,7 @@ Für Reels, die auf die Bio zeigen („was du bei mir findest").
 
 ---
 
-## 4 · Marker-Hook 🔨 zu bauen — **der Jenya-B-Roll-Stil**
+## 4 · Marker-Hook ✅ gebaut — **der Jenya-B-Roll-Stil**
 
 Angesehen am 2026-09-10 bei `jenya_kork` (Post Dciv4ZggNX9). **Das ist B-Roll mit
 gestaltetem Text** — genau das Format, das Patricia für ihre B-Roll-Reels will.
@@ -134,7 +134,7 @@ Trending-Audio.
 
 ---
 
-## 5 · Serif-Mix 🔨 zu bauen — **der zweite Jenya-Stil**
+## 5 · Serif-Mix ✅ gebaut — **der zweite Jenya-Stil**
 
 Ebenfalls B-Roll, ebenfalls ohne Sprechen: sie läuft durch einen Raum, oder eine
 Aufsicht auf einen Kaffee in ihrer Hand. Der Text steht **mittig oben**.
@@ -163,6 +163,24 @@ es nur beim Posten in der App.
 **Aber der Text kommt trotzdem von mir:** Ich rendere den Clip **mit
 eingebranntem Overlay**, Patricia lädt ihn in der App hoch und wählt dort den
 Sound. Sie muss also nichts selbst gestalten — nur hochladen und Ton wählen.
+
+---
+
+## Beim Drehen: jede B-Roll-Handlung mehrfach
+
+Bei B-Roll wird **nicht gesprochen** — deshalb darf dieselbe Handlung beliebig
+oft wiederholt werden. Patricia filmt jede Szene **zwei- bis dreimal von
+verschiedenen Positionen** (von rechts, von links, näher dran), ohne etwas anders
+zu machen. Daraus schneidet Claude einen Clip mit Perspektivwechsel statt einer
+statischen Einstellung.
+
+Das ist der billigste Qualitätssprung überhaupt: kein Equipment, keine neue
+Fähigkeit, nur zweimal aufstehen.
+
+Bei **Talking Head geht das nicht** — derselbe Satz wäre nie zweimal gleich, der
+Ton würde nicht zum Bild passen. Dort bringen Zoom und Textebene die Bewegung.
+
+**Gehört in jedes B-Roll-Drehbriefing.**
 
 ---
 
