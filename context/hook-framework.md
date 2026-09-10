@@ -13,6 +13,39 @@ Jeder Hook muss in unter 2 Sekunden Neugier oder einen "Das bin ich"-Moment ausl
 
 ---
 
+
+## 🔴 Verbotene Hook-Formeln (belegt 2026-09-10)
+
+Das Reel vom 10.9. mit dem Hook **„So findest du dein eigenes Thema neben dem Network — 3 Schritte"**
+hat kaum Reichweite bekommen. Patricias Befund: produktbewusst. Daraus zwei harte Verbote für
+**jeden** Hook, in Reels, Karussell-Folie 1, Caption-Einstieg, Story-Slide 1 und Anzeigen:
+
+**1 — Kein Lösungswort im Hook.**
+Gesperrt: eigenes Thema · Positionierung · digitales Produkt · Leadmagnet · Funnel · E-Mail-Liste ·
+Hybridmodell · sichtbar werden · Reichweite · Algorithmus · Content-Strategie.
+Diese Wörter sind Patricias Antwort. Wer sie versteht, kennt das Angebot schon — und genau die
+erreicht sie ohnehin. Der Engpass sind die anderen.
+
+**2 — Keine Anleitungs-Formel.**
+Gesperrt: „So findest du…" · „So machst du…" · „In 3 Schritten zu…" · „X Tipps für…" ·
+„Die 5 Fehler, die…".
+Das liest sich als Hausaufgabe. Ein Hook ist ein Spiegel, kein Kursmodul. Die Formel allein reicht
+zum Wegscrollen, auch wenn danach ein symptombewusstes Wort steht.
+
+**Was stattdessen trägt:**
+- der wörtliche innere Satz: „Ich bin doch keine Expertin."
+- die körperliche Szene mit Uhrzeit: „Zehn nach zehn abends hab ich das Fenster mit der Abrechnung
+  wieder zugemacht."
+- das unbezahlte Symptom: „Du beantwortest ständig Fragen, für die dich niemand bezahlt."
+
+**Pflicht-Check vor der Abgabe — beide Fragen müssen Ja ergeben:**
+1. Könnte diesen Satz eine Frau denken, die noch nie von Patricias Angebot gehört hat?
+2. Steht darin kein Lösungswort und keine Anleitungs-Formel?
+
+Bei Nein wird der **Hook** umgeschrieben, nie nur die Caption nachgebessert.
+
+---
+
 ## Zahlen-Hooks
 
 - "Ich mache [Zahl] im Monat — mit [Detail]."
