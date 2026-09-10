@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Zentrales Register aller aktiven Funnels für Mum Life Balance (Mentoring + doTERRA). Wird vom /funnel Skill gepflegt und von /story, /montag, /reels, /karussell gelesen — damit Content-Assistenten wissen welche ManyChat-Keywords diese Woche prioritär sind.",
-    "last_updated": "2026-07-13 · Bestandskunden-Anrechnungs-Aktion angelegt (outputs/funnels/mba-anrechnung-bestandskunden/): Käufer der 3 grossen Kurse bekommen vollen Kaufpreis auf die MBA angerechnet, 4-Mail-Sequenz, Deadline 27.7. · Vorher 2026-07-04 · MBA-Launch LÄUFT: 5-Tage-PIA-Bootcamp gelaufen (29.6.–3.7.), öffentlicher Cart offen Fr 3.7.–So 27.7. 23:59 (Pioneer 997 durchgehend, verlängert von 6.7.) · Mama-CEO-Kurs fertiggestellt · Neues 0€-Freebie 'To-Do-Liste halbieren' (Keyword ZEIT) für Juli-Feed-Block 2 ergänzt · Warteliste live (mumlifebalance.ch/mba-warteliste).",
+    "last_updated": "2026-09-10 · Produkt-Ideen-Finder aufgenommen (0€ KI-Tool, Keyword STANDBEIN, Launch KW38/39, Brückenmails + Übergabe an Automation 72). · 2026-07-13 · Bestandskunden-Anrechnungs-Aktion angelegt (outputs/funnels/mba-anrechnung-bestandskunden/): Käufer der 3 grossen Kurse bekommen vollen Kaufpreis auf die MBA angerechnet, 4-Mail-Sequenz, Deadline 27.7. · Vorher 2026-07-04 · MBA-Launch LÄUFT: 5-Tage-PIA-Bootcamp gelaufen (29.6.–3.7.), öffentlicher Cart offen Fr 3.7.–So 27.7. 23:59 (Pioneer 997 durchgehend, verlängert von 6.7.) · Mama-CEO-Kurs fertiggestellt · Neues 0€-Freebie 'To-Do-Liste halbieren' (Keyword ZEIT) für Juli-Feed-Block 2 ergänzt · Warteliste live (mumlifebalance.ch/mba-warteliste).",
     "funnel_architektur": "3 Produkttreppen (Sichtbarkeit/Instagram · Zeit/Struktur=Mama-CEO · Digitale Produktwelt). Jede: 0€-Freebie → Minikurs (39/97) → grosser Kurs (333) → MBA. ALLE Funnels führen am Ende zur MBA (Bundle · Pioneer 997 / Final 1347). Die 3 grossen Kurse (Instagram-Kundenmaschine · Mama-CEO · Digitale Produktwelt) sind einzeln verkaufbar UND Bestandteil der MBA.",
     "schema_version": 1,
     "brand": "Mum Life Balance",
@@ -732,6 +732,39 @@
       "offen_patricia": "PDF ins Los-gehts-Modul hochladen · Auslieferungstexte einsetzen",
       "launched_on": null,
       "verwendung": "Order-Bump fuer 17 CHF im Storyideen-Checkout (live) · ab 2026-08-24 zusaetzlich Teil des Starter-Sets im Startklar-Checkout (39 statt 75)"
+    },
+    {
+      "id": "produkt-ideen-finder",
+      "name": "Produkt-Ideen-Finder",
+      "status": "live",
+      "profile": "mentoring",
+      "typ": "0€ Leadmagnet · KI-Tool (Chat in Patricias Stimme)",
+      "preis_chf": 0,
+      "zielgruppe": "Network-Mamas, die ihr Wissen im Kopf haben, aber immer nur das Firmenprodukt verkaufen",
+      "problem": "„Ich hab so viel Wissen im Kopf — aber verkaufen tu ich immer nur das eine Produkt.“ Kein eigenes Thema, kein eigenes Angebot.",
+      "transformation": "In fünf Minuten eine bis drei konkrete Produktideen, in die das Network-Produkt als Teil der Lösung reinfliesst — statt eines vagen Gefühls",
+      "traffic_quellen": {
+        "wordpress_landing": "https://mumlifebalance.ch/produkt-ideen-finder/",
+        "danke_seite": "https://mumlifebalance.ch/produkt-ideen-finder-los/",
+        "manychat_keyword": "STANDBEIN",
+        "tool_direct": "https://produkt-ideen-finder-service.vercel.app/"
+      },
+      "ac_integration": {
+        "liste_id": 2,
+        "formular_id": 66,
+        "tags": {
+          "lead": 98
+        },
+        "auslieferung_automation_id": null,
+        "nurture_automation_id": null,
+        "uebergabe_an": "Tag 87 → Automation 72 (0€ Engine / Loop 1)"
+      },
+      "mail_sequenz": "Auslieferung sofort · Tag 1 Split 2a/2b · Tag 3 „Idee ist kein Produkt“ · Tag 6 Minikurs 39 · Tag 8 Übergabe. Texte: outputs/funnels/produkt-ideen-finder/",
+      "launch_window": "KW38/KW39 2026 (14.9.–25.9.)",
+      "produkttreppe_anschluss": "Minikurs „Vom Network-Wissen zum eigenen Produkt“ (39) → Digitale Produktwelt (333) → MBA",
+      "content_hinweise": "Keyword STANDBEIN (exact match). Symptombewusst posten — nie „eigenes Produkt“ als Lockwort im Hook. Petrol/Grün-Cover bei diesen Lead-Posts verboten.",
+      "umsatzziel_contribution_chf": 0,
+      "launched_on": "2026-09-10"
     }
   ],
   "produkttreppe_mentoring": [

@@ -28,7 +28,7 @@ Der `/reels`- und `/karussell`-Assistent wählt IMMER aus dieser Liste — niema
 | `ECHT1`          | Workbook „Von 0 auf echt"      | Workbook (Lead Magnet) |
 | `STORY`          | Story-Challenge „7-Tage-Workbook" + Telegram-Kanal | Story-Challenge (Lead Magnet) — **TODO: in ManyChat einrichten!** |
 | `BIO`            | Bio-Check für Network-Mamas (KI-Bot)              | Bio-Check (Lead Magnet) — Launch seit 2026-04-24. Flow-Anleitung: `outputs/funnels/bio-check/launch/manychat-flow-BIO.md` |
-| `STANDBEIN`      | Produkt-Ideen-Finder (0€ KI-Tool)                 | Produkt-Ideen-Finder (Lead Magnet) — festgelegt 2026-09-10. Bewusst **nicht** `IDEE`: zu alltäglich, würde in normalen Kommentaren versehentlich auslösen. ⚠️ **ManyChat-Flow fehlt noch** UND ⚠️ **das Tool selbst ist noch nicht deployt** (Knopf zeigt auf `#tool-kommt-bald`). Landingpage: https://mumlifebalance.ch/produkt-ideen-finder/ |
+| `STANDBEIN`      | Produkt-Ideen-Finder (0€ KI-Tool)                 | Produkt-Ideen-Finder (Lead Magnet) — festgelegt 2026-09-10. Bewusst **nicht** `IDEE`: zu alltäglich, würde in normalen Kommentaren versehentlich auslösen. **Match-Typ: exact.** Tool live (https://produkt-ideen-finder-service.vercel.app/), Landingpage https://mumlifebalance.ch/produkt-ideen-finder/, Mailstrecke steht. ⚠️ **ManyChat-Flow fehlt noch** — Anleitung: `outputs/funnels/produkt-ideen-finder/manychat-flow-STANDBEIN.md` |
 | `ZEITFENSTER`    | Freischaufeln (0€-Tool: To-Do halbieren + Business-Zeitfenster freischaufeln) | Freischaufeln (Lead Magnet) — live seit 2026-07. Flow: `outputs/funnels/freischaufeln/manychat-flow-ZEITFENSTER.md` |
 
 ---
