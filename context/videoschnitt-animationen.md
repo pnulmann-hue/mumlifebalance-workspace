@@ -113,20 +113,56 @@ Für Reels, die auf die Bio zeigen („was du bei mir findest").
 
 ---
 
-## 4 · B-Roll-Minimal ✅ gilt schon
+## 4 · Marker-Hook 🔨 zu bauen — **der Jenya-B-Roll-Stil**
 
-Patricias festgelegtes B-Roll-Format, hier nur der Vollständigkeit halber.
+Angesehen am 2026-09-10 bei `jenya_kork` (Post Dciv4ZggNX9). **Das ist B-Roll mit
+gestaltetem Text** — genau das Format, das Patricia für ihre B-Roll-Reels will.
+
+Sie sitzt am Schreibtisch und schreibt auf Klebezettel, **von der Seite gefilmt,
+nicht in die Kamera**. Kein gesprochenes Wort. Der ganze Inhalt steht in der
+Caption („Meine Strategie für die nächsten 70 Tage ↓"), der Ton ist ein
+Trending-Audio.
 
 | | |
 |---|---|
-| **Aussehen** | Ein einziger normaler Alltagsclip, ~7 Sekunden, **nur der Hook** als Overlay. |
-| **Bewegung** | keine. Kein Schnitt, keine Einblendungen. |
-| **Stelle** | Hook steht von Anfang an. |
-| **Sound** | **Trending-Sound aus Instagram, nativ gepostet.** |
+| **Aussehen** | Hook in zwei Teilen, mittig-links im Bild. Erster Teil weiss und fett mit dunkler Kontur („was ist"). Zweiter Teil mit einem **Marker-Balken in der Akzentfarbe dahinter** („der Plan?"), leicht schief wie mit dem Textmarker gezogen. Darunter eine **kleine dünne Zeile** in Weiss, die die Frage konkretisiert. |
+| **Bewegung** | Der Marker-Balken **wischt von links nach rechts auf**, ~0,35 s, danach steht alles still. Sonst keine Bewegung. |
+| **Stelle** | Ab Sekunde 0. Der Hook steht das ganze Reel. |
+| **Sound** | Trending-Audio, in der App gewählt. |
 
-⚠️ **Deshalb geht dieser Stil nicht über Blotato.** Trending-Sounds gibt es nur
-beim Posten in der App. Wer B-Roll über Blotato plant, verliert genau den Hebel,
-für den das Format gebaut ist. → B-Roll bleibt Handarbeit in der App.
+**Für Patricia:** Marker-Balken in Petrol oder Orange, weisse Schrift darauf.
+
+---
+
+## 5 · Serif-Mix 🔨 zu bauen — **der zweite Jenya-Stil**
+
+Ebenfalls B-Roll, ebenfalls ohne Sprechen: sie läuft durch einen Raum, oder eine
+Aufsicht auf einen Kaffee in ihrer Hand. Der Text steht **mittig oben**.
+
+| | |
+|---|---|
+| **Aussehen** | Zentrierter Textblock, drei bis vier Zeilen, weiss in einer normalen Grotesk — und **genau ein Wort in kursiver Serifenschrift**, deutlich grösser („Ich habe aus *Claude* meinen besten Social Media Manager gemacht."). Unten rechts ein kleiner kursiver Serif-Zusatz („*wirklich?*") und darunter eine kleine Zeile, die auf die Caption zeigt. |
+| **Bewegung** | Sehr ruhig: der Block blendet weich auf, das Serif-Wort kommt einen Tick später. |
+| **Stelle** | Ab Sekunde 0. |
+| **Sound** | Trending-Audio, in der App gewählt. |
+
+**Gute Nachricht zur Schrift:** Dafür braucht es keine neue. **Philosopher
+kursiv** — Patricias eigene Display-Schrift — macht genau diesen Effekt. Die
+Caveat-Frage von oben erübrigt sich damit für diesen Stil.
+
+---
+
+## 6 · B-Roll-Minimal ✅ gilt schon
+
+Die schlichteste Fassung, wenn es schnell gehen muss: ein Alltagsclip, ~7 Sek,
+nur der Hook als schlichtes Overlay, Inhalt in der Caption, Trending-Sound.
+
+⚠️ **Alle B-Roll-Stile (4, 5, 6) gehen nicht über Blotato.** Trending-Sounds gibt
+es nur beim Posten in der App.
+
+**Aber der Text kommt trotzdem von mir:** Ich rendere den Clip **mit
+eingebranntem Overlay**, Patricia lädt ihn in der App hoch und wählt dort den
+Sound. Sie muss also nichts selbst gestalten — nur hochladen und Ton wählen.
 
 ---
 
@@ -138,9 +174,10 @@ einen anderen. Rotiert wird auf drei Ebenen:
 
 | Ebene | Wechselt |
 |---|---|
-| **Stil** | Kelsie-Textebene → Beweis-Collage → Profil-Verweis → wieder von vorn |
+| **Stil bei Talking Head** | Kelsie-Textebene → Beweis-Collage → Profil-Verweis |
+| **Stil bei B-Roll** | Marker-Hook → Serif-Mix → B-Roll-Minimal |
 | **Akzentfarbe** | Petrol → Orange → Dunkelblau (kein Gelb) |
-| **Schrift des betonten Worts** | Script kursiv ↔ fett in Versalien |
+| **Schrift des betonten Worts** | Philosopher kursiv ↔ fett in Versalien |
 | **Auftritt** | von links → von rechts → aufgepoppt |
 
 Wenn ein Stil zweimal hintereinander sinnvoll wäre, wird das begründet — nicht
@@ -148,19 +185,26 @@ stillschweigend gemacht.
 
 ---
 
-## Was Kelsie NICHT macht (geprüft 2026-09-10)
+## Zwei Vorbilder, zwei Systeme (geprüft 2026-09-10)
 
-Ihr Profil ist fast vollständig **Talking Head**. Von rund zwanzig angesehenen
-Reels sind praktisch alle sie selbst im Bild, sprechend, mit dem Textsystem
-darüber — Aufrufe zwischen 95'000 und 1,2 Millionen.
+Wichtig zu trennen, sonst mischt man die falschen Zutaten:
 
-**Echte B-Roll gibt es nur vereinzelt** (z.B. eine Drohnenaufnahme über einem
-Haus, ohne Text, ohne sie) — und die läuft mit 123'000 Aufrufen **schlechter**
-als ihre Talking Heads.
+**Kelsie Blevins (`_k.elsie`)** — fast ausschliesslich **Talking Head**. Von rund
+zwanzig angesehenen Reels ist praktisch jedes sie selbst, sprechend, mit dem
+Wort-für-Wort-Textsystem darüber (95'000 bis 1,2 Millionen Aufrufe). Echte B-Roll
+gibt es bei ihr nur vereinzelt und läuft schlechter.
+→ **Stile 1 und 1b gehören auf Talking Heads.**
 
-→ **Ihr Stil ist für Talking Heads gebaut, nicht für B-Roll.** Das deckt sich mit
-Patricias eigener Festlegung: B-Roll bleibt der simple 7-Sekunden-Clip mit
-Trending-Sound, nativ in der App. Der Kelsie-Aufwand gehört auf die Talking Heads.
+**Jenya Kork (`jenya_kork`)** — das Gegenteil: **B-Roll ohne ein gesprochenes
+Wort**, sie am Schreibtisch, beim Gehen, ein Kaffee von oben. Der gesamte Inhalt
+steht in der Caption, der Hook ist **gestaltet** (Marker-Balken oder
+Serif-Mix), der Ton ist Trending-Audio.
+→ **Stile 4 und 5 gehören auf B-Roll.**
+
+Das heisst: **B-Roll muss nicht schlicht sein.** Patricias eigene Regel („ein
+Clip, nur der Hook als Overlay, Inhalt in der Caption") ist damit nicht verletzt
+— Jenya hält sie ein, sie lässt den Hook nur gut aussehen. Genau das übernehmen
+wir.
 
 ---
 
