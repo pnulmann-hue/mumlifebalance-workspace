@@ -130,6 +130,40 @@ für den das Format gebaut ist. → B-Roll bleibt Handarbeit in der App.
 
 ---
 
+## Abwechslung ist Pflicht
+
+**Kein Reel sieht aus wie das davor.** Vor jedem Build schaut Claude in
+`outputs/reels/_stil-verlauf.md` nach, welche Stile zuletzt liefen, und nimmt
+einen anderen. Rotiert wird auf drei Ebenen:
+
+| Ebene | Wechselt |
+|---|---|
+| **Stil** | Kelsie-Textebene → Beweis-Collage → Profil-Verweis → wieder von vorn |
+| **Akzentfarbe** | Petrol → Orange → Dunkelblau (kein Gelb) |
+| **Schrift des betonten Worts** | Script kursiv ↔ fett in Versalien |
+| **Auftritt** | von links → von rechts → aufgepoppt |
+
+Wenn ein Stil zweimal hintereinander sinnvoll wäre, wird das begründet — nicht
+stillschweigend gemacht.
+
+---
+
+## Was Kelsie NICHT macht (geprüft 2026-09-10)
+
+Ihr Profil ist fast vollständig **Talking Head**. Von rund zwanzig angesehenen
+Reels sind praktisch alle sie selbst im Bild, sprechend, mit dem Textsystem
+darüber — Aufrufe zwischen 95'000 und 1,2 Millionen.
+
+**Echte B-Roll gibt es nur vereinzelt** (z.B. eine Drohnenaufnahme über einem
+Haus, ohne Text, ohne sie) — und die läuft mit 123'000 Aufrufen **schlechter**
+als ihre Talking Heads.
+
+→ **Ihr Stil ist für Talking Heads gebaut, nicht für B-Roll.** Das deckt sich mit
+Patricias eigener Festlegung: B-Roll bleibt der simple 7-Sekunden-Clip mit
+Trending-Sound, nativ in der App. Der Kelsie-Aufwand gehört auf die Talking Heads.
+
+---
+
 ## Wie ein Stil dazukommt
 
 Patricia schickt einen Screenshot oder einen Link, Claude schaut ihn sich über
