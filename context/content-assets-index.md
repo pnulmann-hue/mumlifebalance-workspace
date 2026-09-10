@@ -6,7 +6,27 @@ tags: [content, assets, tools]
 
 **Zweck:** Single Source of Truth, welches Bild-/Video-Material wo liegt — für Story- und Reel-Planung. Gepflegt am 2026-06-15. Handy = Samsung S25 Ultra, erreichbar vom PC über `C:\Users\pnulm\CrossDevice\S25 Ultra von Patricia\storage`.
 
-> ⚠️ Claude kann den Handy-Speicher vom PC aus lesen/schreiben (CrossDevice), aber **nicht erkennen, was schon gepostet wurde**, und Fotos nur an Stichproben per Auge prüfen (sonst nur Dateinamen). Kuratieren = gemeinsam mit Patricia.
+> ⚠️ Claude kann den Handy-Speicher vom PC aus lesen und **beschreiben** (Ordner anlegen, Dateien kopieren), aber **nicht löschen** — CrossDevice verweigert das Löschen von Clouddateien (`WinError 395`). Wenn auf dem Handy etwas weg soll, macht das Patricia in der Galerie. Ausserdem kann Claude **nicht erkennen, was schon gepostet wurde**. Kuratieren = gemeinsam mit Patricia.
+
+---
+
+## 📥 CONTENT-INBOX — der eine Ordner für Neues (seit 2026-09-10)
+
+| Pfad (Handy) | Wofür |
+|---|---|
+| `DCIM/Content-Inbox` | **Alles, was für Content verwendet werden soll.** Patricia verschiebt oder kopiert es in der Galerie dort hinein. |
+
+**Abholen:** `/handy` im Chat, oder `python scripts/handy/hol-content.py`
+
+| Was | Landet in |
+|---|---|
+| Videos | `video/input/` (→ `/videoschnitt`, `/reels`) |
+| Fotos | `context/content-assets/inbox/YYYY-MM/` (→ `/karussell`, `/story`) |
+| Standbild je Video | `context/content-assets/vorschau/` — damit Claude den **Inhalt** sieht, nicht nur Dateinamen |
+| Bericht | `context/content-assets-inbox.md` |
+
+Schon Geholtes steht in `context/content-assets-inbox-log.json` und wird übersprungen.
+Auf dem Handy wird **nichts** gelöscht oder verschoben.
 
 ---
 
