@@ -1,0 +1,37 @@
+[
+ {
+  "art": "foto",
+  "quelle": "context\\Shootingbilder\\1000 - Patricia_Nulmann_mumlifebalance_schöniaugeblick-497.jpg",
+  "farbe": "petrol",
+  "headline": "3 Nährstoffe ab 35",
+  "betont": "35",
+  "unter": "die fast jeder Mama fehlen — und keiner sagt es ihr.",
+  "ziel": "outputs/cover/_muster-1-petrol.png"
+ },
+ {
+  "art": "foto",
+  "quelle": "context\\Shootingbilder\\1001 - Patricia_Nulmann_mumlifebalance_schöniaugeblick-498.jpg",
+  "farbe": "dunkelblau",
+  "headline": "Mehr posten war nie dein Problem",
+  "betont": "nie",
+  "unter": "Was wirklich fehlt, ist eine Entscheidung.",
+  "ziel": "outputs/cover/_muster-2-dunkelblau.png"
+ },
+ {
+  "art": "foto",
+  "quelle": "context\\Shootingbilder\\1002 - Patricia_Nulmann_mumlifebalance_schöniaugeblick-499.jpg",
+  "farbe": "orange",
+  "headline": "Du bist nicht kaputt",
+  "betont": "nicht",
+  "unter": "Vieles davon kann hormonell sein — und du kannst etwas tun.",
+  "ziel": "outputs/cover/_muster-3-orange.png"
+ },
+ {
+  "art": "farbe",
+  "farbe": "petrol",
+  "headline": "In 4 Schritten zu deinem eigenen Thema",
+  "betont": "4",
+  "unter": "Ohne dein Network aufzugeben.",
+  "ziel": "outputs/cover/_muster-4-flaeche.png"
+ }
+]
