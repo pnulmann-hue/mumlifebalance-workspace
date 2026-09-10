@@ -2,11 +2,17 @@
 tags: [content, assets]
 ---
 
-# Content-Inbox — zuletzt geholt am 10.09.2026 um 13:40
+# Content-Inbox — zuletzt geholt am 10.09.2026 um 21:35
 
 Quelle: Handy, Album `DCIM/Content-Inbox`. Auf dem Handy wurde nichts geloescht.
 
-Nichts Neues. Alles aus dem Album ist schon auf dem PC.
+**1 neu geholt** — 1 Videos, 0 Fotos.
+
+## Videos → `video/input/`
+
+| Datei | aufgenommen | Dauer | Format | Vorschaubild |
+|---|---|---|---|---|
+| `20260513_143539.mp4` | 2026-05-13 | 3.0 s | hochkant 1080x1920 | `context\content-assets\vorschau\20260513_143539.png` |
 
 ## So kommt neues Material her
 
