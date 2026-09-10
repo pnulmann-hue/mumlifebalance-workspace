@@ -573,7 +573,7 @@
       db.collection("karussells").doc(car.id).set({
         name: car.name, brand: car.brand, handle: car.handle,
         typ: car.typ || "listicle", funnel: car.funnel || "TOF",
-        textfrei: !!car.textfrei,
+        textfrei: !!car.textfrei, blotato: car.blotato || null,
         slides: car.slides, caption: car.caption || "", updatedAt: car.updatedAt
       }).then(function () { setSaveState("gespeichert", "on"); })
         .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
@@ -1276,6 +1276,20 @@
           '<span id="hookslot"></span>' +
         '</div>' +
         '<div class="hooklist" id="hooklist"></div>' +
+      '</div>' +
+      '<div class="panel gate' + (blo(car).status === "wartet" ? " frei" : "") + '" style="margin-top:18px">' +
+        '<h2>Schritt 2: An Blotato geben</h2>' +
+        '<div class="note" id="blonote" style="margin-bottom:10px"></div>' +
+        '<div style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end">' +
+          '<div class="field"><label for="blodatum">Datum</label><input type="date" id="blodatum" value="' + esc(blo(car).datum || "") + '"></div>' +
+          '<div class="field"><label for="blozeit">Uhrzeit</label><input type="time" id="blozeit" value="' + esc(blo(car).zeit || "07:30") + '"></div>' +
+          '<div class="field"><label for="bloprofil">Profil</label><select id="bloprofil">' +
+            '<option value="mentoring"' + (blo(car).profil === "doterra" ? "" : " selected") + '>Instagram Mentoring</option>' +
+            '<option value="doterra"' + (blo(car).profil === "doterra" ? " selected" : "") + '>Instagram doTERRA</option>' +
+          '</select></div>' +
+          '<button class="btn primary" id="blobtn">Für Blotato freigeben</button>' +
+          '<button class="btn ghost" id="blozurueck" hidden>Freigabe zurückziehen</button>' +
+        '</div>' +
       '</div>';
 
     var bp = ed.querySelector("#brandpick");
@@ -1409,6 +1423,126 @@
 
     renderStrip(ed.querySelector("#strip"), car);
     setupHooks(ed, car);
+    setupBlotato(ed, car);
+  }
+
+  /* Freigabe-Daten eines Karussells, mit Vorbelegung. */
+  function blo(car) {
+    return car.blotato || (car.blotato = { datum: "", zeit: "07:30", profil: "mentoring", status: "" });
+  }
+
+  /* Eine Slide als JPEG, klein genug für ein Dokument. */
+  function slideJpeg(car, slide, i, cb) {
+    var cv = document.createElement("canvas");
+    renderSlide(cv, slide, car, i, car.slides.length);
+    setTimeout(function () {
+      var q = 0.92;
+      var out = cv.toDataURL("image/jpeg", q);
+      while (out.length > 700000 && q > 0.45) { q -= 0.08; out = cv.toDataURL("image/jpeg", q); }
+      cb(out);
+    }, 320);
+  }
+
+  function setupBlotato(ed, car) {
+    var b = blo(car);
+    var note = ed.querySelector("#blonote");
+    var btn = ed.querySelector("#blobtn");
+    var zurueck = ed.querySelector("#blozurueck");
+    var datum = ed.querySelector("#blodatum");
+    var zeit = ed.querySelector("#blozeit");
+    var profil = ed.querySelector("#bloprofil");
+
+    function speichern() {
+      b.datum = datum.value; b.zeit = zeit.value; b.profil = profil.value;
+      saveCarousel(car);
+    }
+    datum.onchange = zeit.onchange = profil.onchange = speichern;
+
+    if (!db) {
+      note.textContent = "Die Freigabe braucht die Verbindung zur Datenbank. Öffne das Cockpit über den Link, dann geht es.";
+      btn.disabled = true;
+      return;
+    }
+    if (!car.textfrei) {
+      note.textContent = "Erst die Texte oben freigeben. Was du nicht gelesen hast, geht auch nicht raus.";
+      btn.disabled = true;
+      return;
+    }
+    if (b.status === "wartet") {
+      note.textContent = "Freigegeben für " + (b.datum || "kein Datum") + " um " + (b.zeit || "") +
+        ", Profil " + (b.profil === "doterra" ? "doTERRA" : "Mentoring") +
+        ". Sag es mir im Chat, dann lade ich die Folien hoch und plane den Beitrag ein.";
+      btn.textContent = "Folien neu ablegen";
+      zurueck.hidden = false;
+      zurueck.onclick = function () {
+        b.status = ""; saveCarousel(car);
+        db.collection("freigaben").doc(car.id).set({
+          name: car.name, status: "zurueckgezogen", updatedAt: new Date().toISOString()
+        }).catch(function () {});
+        render();
+        toast("Freigabe zurückgezogen.");
+      };
+    } else if (b.status === "geplant") {
+      note.textContent = "Eingeplant bei Blotato für " + (b.datum || "") + " um " + (b.zeit || "") + ".";
+      btn.disabled = true;
+      return;
+    } else {
+      note.textContent = "Datum und Uhrzeit setzen, dann freigeben. Dabei werden die fertigen Folien abgelegt — genau so, wie sie hier aussehen.";
+    }
+
+    btn.onclick = function () {
+      if (!datum.value) { datum.focus(); toast("Setz zuerst ein Datum."); return; }
+      if (!(car.caption || "").trim()) { toast("Ohne Caption kein Beitrag. Schreib sie oben rein."); return; }
+      speichern();
+      btn.disabled = true;
+      var gesamt = car.slides.length;
+      var i = 0;
+      var basis = "freigaben/" + car.id;
+
+      function nächste() {
+        if (i >= gesamt) {
+          var wann = new Date(datum.value + "T" + (zeit.value || "07:30"));
+          db.collection("freigaben").doc(car.id).set({
+            name: car.name,
+            caption: car.caption || "",
+            profil: profil.value,
+            datum: datum.value,
+            zeit: zeit.value || "07:30",
+            zeitpunktISO: isNaN(wann) ? "" : wann.toISOString(),
+            typ: car.typ || "",
+            funnel: car.funnel || "",
+            anzahl: gesamt,
+            status: "wartet",
+            updatedAt: new Date().toISOString()
+          }).then(function () {
+            b.status = "wartet";
+            saveCarousel(car);
+            btn.disabled = false;
+            render();
+            toast("Freigegeben. Sag mir im Chat Bescheid, dann geht es raus.");
+          }).catch(function () {
+            btn.disabled = false;
+            btn.textContent = "Für Blotato freigeben";
+            toast("Das Ablegen hat nicht geklappt.");
+          });
+          return;
+        }
+        var nr = i++;
+        btn.textContent = "lege Folie " + (nr + 1) + " von " + gesamt + " ab …";
+        slideJpeg(car, car.slides[nr], nr, function (dataUrl) {
+          db.doc(basis).collection("bilder")
+            .doc("slide-" + String(nr + 1).padStart(2, "0"))
+            .set({ dataUrl: dataUrl, nr: nr + 1 })
+            .then(nächste)
+            .catch(function () {
+              btn.disabled = false;
+              btn.textContent = "Für Blotato freigeben";
+              toast("Folie " + (nr + 1) + " liess sich nicht ablegen.");
+            });
+        });
+      }
+      nächste();
+    };
   }
 
   function renderStrip(strip, car) {
@@ -3374,7 +3508,7 @@
         state.karussells.forEach(function (c) { seen[c.id] = c; });
         qs.docs.forEach(function (doc) {
           var d0 = doc.data() || {};
-          var car = { id: doc.id, name: d0.name || "Karussell", brand: d0.brand || "mlb_dark", handle: d0.handle || "", typ: d0.typ || "listicle", funnel: d0.funnel || "TOF", textfrei: !!d0.textfrei, caption: d0.caption || "", slides: d0.slides || [], updatedAt: d0.updatedAt || "" };
+          var car = { id: doc.id, name: d0.name || "Karussell", brand: d0.brand || "mlb_dark", handle: d0.handle || "", typ: d0.typ || "listicle", funnel: d0.funnel || "TOF", textfrei: !!d0.textfrei, blotato: d0.blotato || null, caption: d0.caption || "", slides: d0.slides || [], updatedAt: d0.updatedAt || "" };
           if (!car.slides.length) return;
           if (seen[car.id]) { Object.assign(seen[car.id], car); }
           else { state.karussells.push(car); }
