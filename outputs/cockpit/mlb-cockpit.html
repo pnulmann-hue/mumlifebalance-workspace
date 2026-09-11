@@ -538,6 +538,8 @@
      State + Speicherung
      ========================================================= */
   var DOC_KEYS = ["posts", "ideen", "leads", "team", "produkte", "funnel", "launches", "zahlen"];
+  /* Kommt aus ActiveCampaign und wird nur angezeigt, nie hier bearbeitet. */
+  var mailings = { listen: [], automationen: [], stand: "" };
   var state = { posts: [], ideen: [], leads: [], team: [], produkte: [], funnel: [], launches: [], zahlen: [], karussells: [], storys: [], reels: [] };
   var settings = { monatsziel: 5000, waehrung: "CHF", rangJetzt: "Executive", rangZiel: "Silver", ovIst: 0, ovZiel: 0 };
   var WISSEN_FELDER = [
@@ -947,7 +949,7 @@
       neu: function () { return { id: uid("a"), name: "", stufe: "Mini-Kurs", preis: "", keyword: "", status: "In Arbeit", link: "" }; },
       cols: [
         { k: "name", l: "Angebot", t: "text", w: "minmax(230px, 1fr)" },
-        { k: "stufe", l: "Stufe", t: "select", opts: ["Freebie", "Mini-Kurs", "Signature-Kurs", "1:1", "Öle"], w: "155px" },
+        { k: "stufe", l: "Stufe", t: "select", opts: ["Freebie", "Mini-Kurs", "Kurs", "Signature-Kurs", "Programm", "1:1", "Öle", "Angebot"], w: "155px" },
         { k: "preis", l: "Preis", t: "text", w: "110px" },
         { k: "keyword", l: "Keyword", t: "text", w: "125px" },
         { k: "status", l: "Status", t: "pill", opts: ["Idee", "In Arbeit", "Live", "Pausiert"], w: "128px" },
@@ -979,6 +981,7 @@
     { id: "launches", label: "Launches" },
     { g: "Business" },
     { id: "funnel", label: "Funnel & Keywords" },
+    { id: "mailings", label: "Listen & Automationen" },
     { id: "leads", label: "Kundinnen & Leads" },
     { id: "team", label: "Team" },
     { id: "produkte", label: "Angebote" },
@@ -2313,6 +2316,66 @@
       state.funnel.push({ id: uid("f"), freebie: "", keyword: "", automation: "", sequenz: "", angebot: "" });
       saveList("funnel"); render();
     };
+  }
+
+  /* =========================================================
+     Listen & Automationen — Abbild aus ActiveCampaign
+     ========================================================= */
+  /* fmtDate laesst das Jahr weg — hier stehen Listen von 2023, da muss es mit. */
+  function mailDatum(iso) {
+    if (!iso) return "—";
+    var p = String(iso).split("-");
+    return p.length === 3 ? p[2] + "." + p[1] + "." + p[0] : iso;
+  }
+
+  function mailTabelle(titel, spalten, reihen, leer) {
+    var breiten = spalten.map(function (s) { return s.w; }).join(" ");
+    var h = '<h2>' + esc(titel) + '</h2>';
+    if (!reihen.length) return '<div class="panel">' + h + '<div class="empty">' + esc(leer) + '</div></div>';
+    h += '<div class="tablewrap"><div class="trow head" style="grid-template-columns:' + breiten + '">' +
+         spalten.map(function (s) { return '<span>' + esc(s.l) + '</span>'; }).join("") + '</div>';
+    reihen.forEach(function (r) {
+      h += '<div class="trow" style="grid-template-columns:' + breiten + '">' +
+           spalten.map(function (s) { return '<span>' + (s.f ? s.f(r) : esc(r[s.k] == null ? "" : String(r[s.k]))) + '</span>'; }).join("") +
+           '</div>';
+    });
+    return '<div class="panel" style="margin-bottom:18px">' + h + '</div></div>';
+  }
+
+  function renderMailings(main) {
+    var listen = mailings.listen || [];
+    var autos = mailings.automationen || [];
+    var kontakte = listen.reduce(function (s, l) { return s + (parseInt(l.kontakte, 10) || 0); }, 0);
+    var aktiv = autos.filter(function (a) { return a.status === "aktiv"; }).length;
+    var leere = listen.filter(function (l) { return !parseInt(l.kontakte, 10); }).length;
+
+    main.innerHTML =
+      '<div class="page-head"><div><h1>Listen & Automationen</h1>' +
+      '<p>So sieht deine E-Mail-Seite gerade aus. Die Zahlen kommen direkt aus ActiveCampaign und werden beim täglichen Abgleich neu geholt — hier wird nichts eingetragen.</p></div></div>' +
+      '<div class="tiles">' +
+      tile("Kontakte", kontakte, "auf allen Listen zusammen") +
+      tile("Listen", listen.length, leere ? leere + " davon noch leer" : "alle mit Kontakten") +
+      tile("Automationen", autos.length, aktiv + " laufen") +
+      '</div>' +
+      '<div id="mailbody"></div>' +
+      '<p class="note" style="margin-top:14px">' +
+      (mailings.stand ? "Stand: " + esc(mailDatum(mailings.stand)) : "Noch kein Abgleich gelaufen.") +
+      '</p>';
+
+    main.querySelector("#mailbody").innerHTML =
+      mailTabelle("Deine Listen",
+        [{ k: "name", l: "Liste", w: "minmax(240px, 1fr)" },
+         { k: "kontakte", l: "Kontakte", w: "110px" },
+         { k: "nummer", l: "Nr.", w: "70px" },
+         { k: "seit", l: "Angelegt", w: "130px", f: function (r) { return esc(mailDatum(r.seit)); } }],
+        listen, "Noch nichts abgeglichen.") +
+      mailTabelle("Deine Automationen",
+        [{ k: "name", l: "Automation", w: "minmax(280px, 1fr)" },
+         { k: "status", l: "Status", w: "110px",
+           f: function (r) { return '<span class="flag ' + (r.status === "aktiv" ? "ok" : "bad") + '">' + esc(r.status) + '</span>'; } },
+         { k: "nummer", l: "Nr.", w: "70px" },
+         { k: "seit", l: "Gebaut", w: "130px", f: function (r) { return esc(mailDatum(r.seit)); } }],
+        autos, "Noch nichts abgeglichen.");
   }
 
   /* =========================================================
@@ -3929,6 +3992,7 @@
     else if (activeTab === "reels") renderReels(main);
     else if (activeTab === "wissen") renderWissen(main);
     else if (activeTab === "funnel") renderFunnel(main);
+    else if (activeTab === "mailings") renderMailings(main);
     else if (activeTab === "launches") renderLaunches(main);
     else if (activeTab === "woche") renderWoche(main);
     else if (activeTab === "zahlen") renderZahlen(main);
@@ -3940,6 +4004,7 @@
      ========================================================= */
   DOC_KEYS.forEach(function (k) { state[k] = lsGet(k, []); });
   Object.assign(settings, lsGet("einstellungen", {}) || {});
+  Object.assign(mailings, lsGet("mailings", {}) || {});
   WISSEN_FELDER.forEach(function (f) { wissen[f.k] = f.d; });
   Object.assign(wissen, lsGet("wissen", {}) || {});
   (lsGet("karliste", []) || []).forEach(function (id) {
@@ -4030,6 +4095,14 @@
         });
         render();
       }).catch(function () {});
+      db.doc("daten/mailings").onSnapshot(function (snap) {
+        if (!snap.exists) return;
+        var d0 = snap.data() || {};
+        mailings = { listen: d0.listen || [], automationen: d0.automationen || [],
+                     stand: d0.stand || "" };
+        lsSet("mailings", mailings);
+        if (activeTab === "mailings") render();
+      }, function () {});
       db.doc("daten/einstellungen").onSnapshot(function (snap) {
         if (!snap.exists) return;
         Object.assign(settings, snap.data() || {});

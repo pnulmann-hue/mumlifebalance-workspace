@@ -54,10 +54,11 @@ Die Landingpage war seit dem 8. Juli als leerer Entwurf in WordPress (nur ein Pl
 |---|---|---|---|
 | **Storyideen für Networkerinnen** (+ Content-Box-Bump 17) | 19 | https://mumlifebalance.thrivecart.com/storyideen/ | 🟢 200 |
 | Finde dein Thema als Network-Mama | 39 | https://mumlifebalance.thrivecart.com/thema-finden/ | 🟢 200 |
+| Vom Network-Wissen zum eigenen Produkt | 39 | https://mumlifebalance.thrivecart.com/eigene-produkterstellung/ | 🟢 200 (geprüft 10.09.2026) |
 | Expertin statt Verkäuferin | 97 | https://mumlifebalance.thrivecart.com/expertin/ | 🟢 200 |
 | Instagram-Kundenmaschine | 333 | https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/ | 🟢 200 |
 | Mama-CEO | Preis prüfen | https://mumlifebalance.thrivecart.com/mama-ceo/ | 🟢 200 |
-| Digitale Produktwelt | Preis prüfen | https://mumlifebalance.thrivecart.com/digitale-produktwelt/ | 🟢 200 |
+| Digitale Produktwelt | 333 | https://mumlifebalance.thrivecart.com/digitale-produktwelt/ | 🟢 200 |
 | **MBA (Bundle)** | Pioneer 997 / Liste 1347 | https://mumlifebalance.thrivecart.com/mba/ | 🟢 200 |
 | 1:1 „Aus Nebenbei wird Business" | Beta 777 statt 1500 | https://mumlifebalance.thrivecart.com/aus-nebenbei-wird-business/ | 🟢 200 |
 
