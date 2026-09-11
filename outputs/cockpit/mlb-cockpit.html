@@ -321,11 +321,21 @@
   .farbknopf.f-petrol { background: #12828c; }
   .farbknopf.f-dunkelblau { background: #29556d; }
   .farbknopf.f-orange { background: #dc822e; }
-  .wk-folien { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; }
+  .wk-folien { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 8px; }
+  .wk-folienkarte {
+    flex: 0 0 168px; display: flex; flex-direction: column; gap: 5px;
+  }
   .wk-folie {
-    flex: 0 0 118px; width: 118px; height: auto; border-radius: 6px;
+    width: 168px; height: auto; border-radius: 6px;
     border: 1px solid var(--line); background: #0c1c30;
   }
+  .wk-folienr { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+  .wk-folienfeld {
+    width: 100%; resize: vertical; font-size: 12px; line-height: 1.4;
+    background: var(--ground); border: 1px solid var(--line); border-radius: 6px;
+    padding: 6px 8px; font-family: var(--body);
+  }
+  .wk-folienfeld:focus { border-color: var(--teal); outline: none; }
 
   /* Text-Freigabe */
   .textliste {
@@ -1125,6 +1135,7 @@
         '<div class="wk-fuss">' +
           '<input type="date" value="' + esc(b.obj.datum || "") + '">' +
           '<button class="btn">Caption kopieren</button>' +
+          (b.art === "karussells" ? '<button class="btn">Im Editor öffnen</button>' : "") +
           '<button class="btn' + (b.obj.textfrei ? "" : " primary") + '">' +
             (b.obj.textfrei ? "Freigabe zurücknehmen" : "Freigeben") + '</button>' +
         '</div>' +
@@ -1134,11 +1145,38 @@
     var folienbox = karte.querySelector(".wk-folien");
     if (folienbox && b.obj.slides) {
       b.obj.slides.forEach(function (sl, i) {
+        var sp = document.createElement("div");
+        sp.className = "wk-folienkarte";
+
         var c = document.createElement("canvas");
         c.className = "wk-folie";
-        c.title = "Folie " + (i + 1);
-        folienbox.appendChild(c);
+        sp.appendChild(c);
         renderSlide(c, sl, b.obj, i, b.obj.slides.length);
+
+        var nr = document.createElement("div");
+        nr.className = "wk-folienr";
+        nr.textContent = "Folie " + (i + 1);
+        sp.appendChild(nr);
+
+        // Beide Felder schreiben direkt in die Folie, zeichnen sie neu und
+        // speichern. Kein Umweg ueber den Editor.
+        function feld(schluessel, platzhalter, zeilen) {
+          var t = document.createElement("textarea");
+          t.className = "wk-folienfeld";
+          t.rows = zeilen;
+          t.placeholder = platzhalter;
+          t.value = sl[schluessel] || "";
+          t.oninput = function () {
+            sl[schluessel] = this.value;
+            renderSlide(c, sl, b.obj, i, b.obj.slides.length);
+            saveCarousel(b.obj);
+          };
+          sp.appendChild(t);
+        }
+        feld("headline", "Headline", 2);
+        if (sl.layout !== "hook" && sl.layout !== "zitat") feld("body", "Text", 3);
+
+        folienbox.appendChild(sp);
       });
     }
 
@@ -1163,7 +1201,15 @@
                                               function () { toast("Kopieren hat nicht geklappt"); });
       }
     };
-    felder[2].onclick = function () {
+    if (b.art === "karussells") {
+      felder[2].onclick = function () {
+        activeCarousel = b.obj.id;
+        activeTab = "karussell";
+        render();
+      };
+    }
+    var freigabeKnopf = felder[felder.length - 1];
+    freigabeKnopf.onclick = function () {
       b.obj.textfrei = !b.obj.textfrei;
       if (b.art === "reels") saveReel(b.obj); else saveCarousel(b.obj);
       toast(b.obj.textfrei ? "Freigegeben" : "Freigabe zurückgenommen");
