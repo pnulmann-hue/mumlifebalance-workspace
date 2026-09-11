@@ -166,6 +166,53 @@ Sound. Sie muss also nichts selbst gestalten — nur hochladen und Ton wählen.
 
 ---
 
+
+## 7 · Was die Profile besser machen (angeschaut 2026-09-11)
+
+Patricias Referenzen: **anka.klh** (26k in 5 Monaten, Personal Brand) und
+**alinascreatorclub** (UGC/Creator). Dazu die zwei aus dem Workbook — Kelsie
+(Textebene) und jenya_kork (B-Roll-Hooks).
+
+### anka.klh — die ruhige, teure Optik
+
+- **Eine Serif über alles**, zweifarbig: Creme für den Vorlauf, Gold/Akzent für
+  das betonte Wort. „Serien über **Serien**" · „Der Folge-mir-Trend **killt deinen
+  Account**" · „Die neue Instagram **Erfolgsfalle**"
+- **Kleine kursive Unterzeile** unter der Headline, halb so gross
+- **Serien-System:** „Folge 1", „Folge 3", „Woche 5/42" — macht aus Einzelposts
+  eine Reihe, auf die man wartet
+- **Gestapelte Info-Pillen** für Zwischenstände: „Ziel 1: … · Aktuell: 1.028 Follower"
+- **Untertitel Wort für Wort**, immer nur eins, klein und mittig unten
+- **Screenshot als Beweis** mitten im Reel, klein über dem Bild
+- Kein einziger Schnitt in 76 Sekunden — die Ruhe ist Teil der Wirkung
+
+### alinascreatorclub — der schnelle, verspielte Stil
+
+- **Schrift-Mix innerhalb eines Satzes:** fette Sans + Serif kursiv Wort für Wort
+  („**große** *Creator*")
+- **Farbige Marker** hinter einzelnen Wörtern, Rosa/Creme
+- **B-Roll mit Textblock oben** und ohne Sprechen — genau Patricias Format
+
+### Was davon in die B-Roll-Pipeline gehört
+
+| Baustein | Stand |
+|---|---|
+| Zweifarbige Serif-Headline (Creme + Akzent) | ✅ gebaut — `stil: serif` setzt das betonte Wort in der Akzentfarbe |
+| Weicher Schleier statt Kasten | ✅ gebaut — `grund: "verlauf"`, läuft in seiner eigenen Fläche aus |
+| **CTA erst am Schluss und allein** | ✅ gebaut — `zusatz` startet automatisch 2,6 s vor Ende, steuerbar über `zusatz_ab` |
+| **Schnittwechsel alle 2–3 s** | ✅ über mehrere Segmente in der Schnittliste, auch aus **einer** Quelle an verschiedenen Stellen |
+| Zoom je Schnitt | ✅ `zoom.modus: "auto"` nimmt die Clipgrenzen |
+| Serien-Marker („Folge 1 von 3") | ⏳ als `elemente`-Chip möglich, noch nicht als eigener Baustein |
+| Gestapelte Info-Pillen | ⏳ `elemente` mit `typ: "chip"`, Stapel-Layout fehlt |
+| Wort-für-Wort-Untertitel (nur ein Wort) | ⏳ vorhanden sind Gruppen, Einzelwort fehlt |
+| Schrift-Mix pro Wort | ⏳ offen |
+| Screenshot-Einblendung | ⏳ offen — braucht einen Bild-Elementtyp |
+
+**Wichtig:** Untertitel-Bausteine brauchen Sprache. Für B-Roll ohne Ton zählen
+Schnitt, Zoom, Typo und der späte CTA — das ist der ganze Hebel.
+
+---
+
 ## Das Cover-System ✅ festgelegt 2026-09-10
 
 Gebaut mit `scripts/videoschnitt/cover.py`. **Zwei Arten im Wechsel**, damit der
