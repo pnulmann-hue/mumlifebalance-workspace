@@ -260,6 +260,32 @@ nichts** — ausser man beantwortet sie aus Unkenntnis, und dann trennt sie das 
    kein Kriterium, sondern ein Vorurteil mit gutem Ruf.** Besonders vorsichtig sein,
    wenn es zugleich das Selbstbild schmeichelt.
 
+### Was aus einer Antwort NICHT folgt
+
+Der häufigste Fehler in diesem System ist nicht die falsche Deutung einer Antwort,
+sondern dass **die eigene Formulierung als seine Aussage protokolliert wird**.
+Drei Formen, alle real vorgekommen:
+
+**1. Eine Frage mit eingebauter Beschreibung misst die Beschreibung.**
+«Forschen heisst oft: monatelang dasselbe messen, und meistens kommt nichts raus —
+wie klingt das?» Ein «nicht gut» beantwortet **die Beschreibung**, nicht das Feld.
+Niemand hätte anders geantwortet. → **Daraus darf nie ein Ausschluss werden.**
+Und die Beschreibung war nicht einmal zutreffend.
+
+**2. Eine Wahl aus vorgegebenen Optionen ist keine Rangliste.**
+Was in einer Liste nicht gewählt wurde, ist **nicht ausgeschlossen** — es war nur
+nicht das Beste unter den Vorgaben. Und was gar nicht auf der Liste stand, ist damit
+erst recht nichts über ihn. → Bei jeder Auswahlfrage **eine offene Option anbieten**
+(«oder etwas ganz anderes?»), und die Auswahl im Protokoll **mitschreiben**.
+
+**3. Ein Urteil über etwas, das er nie gesehen hat, ist eine Annahme** — siehe
+den Abschnitt darüber.
+
+**Pflicht daraus:** Zu jeder Antwort gehört **die Frage im Wortlaut** ins Protokoll.
+Ohne die Frage ist eine Antwort nicht interpretierbar, und später kann niemand mehr
+prüfen, wessen Gedanke da eigentlich steht. Wer nur die Antwort notiert, baut ein
+Profil aus den eigenen Vorgaben und hält es für das Kind.
+
 ---
 
 ## Harte Arbeitsregeln
