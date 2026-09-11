@@ -6,6 +6,8 @@ const P = { petrol:"2F6F6F", blau:"1E3A4C", orange:"D6832F", creme:"F1ECDD",
             text:"33413F", weiss:"FFFFFF", muted:"7A8B88", tint:"EAF1F0", cremetint:"F7F3E8" };
 const HEAD = "Cambria", BODY = "Calibri";
 const W = 13.3, H = 7.5, MX = 0.75;
+const IMG = "outputs/produkte/instagram-startklar/06-praesentation/assets/mein-profil.jpg";
+const TINT = { [P.petrol]:"EAF1F0", [P.orange]:"FBEEDD" };
 
 const pres = new pptxgen();
 pres.defineLayout({ name:"MLB", width:W, height:H });
@@ -116,6 +118,31 @@ function abschluss(d){
   notes(s,d.note); return s;
 }
 
+function markBox(s, x, y, w, h, col, num){
+  s.addShape(pres.ShapeType.roundRect, { x, y, w, h, rectRadius:0.05, fill:{ color:P.weiss, transparency:100 }, line:{ color:col, width:3 } });
+  s.addText(num, { x:x-0.16, y:y-0.16, w:0.4, h:0.4, isTextBox:true, shape:pres.ShapeType.ellipse, fill:{color:col}, color:P.weiss, fontFace:HEAD, fontSize:16, bold:true, align:"center", valign:"middle", margin:0 });
+}
+function erklaerkarte(s, x, y, w, h, col, title, body){
+  s.addShape(pres.ShapeType.roundRect, { x, y, w, h, rectRadius:0.1, fill:{ color:TINT[col] }, line:{type:"none"} });
+  s.addText(title, { x:x+0.35, y:y+0.28, w:w-0.7, h:0.55, isTextBox:true, color:col, fontFace:HEAD, fontSize:22, bold:true });
+  s.addText(body, { x:x+0.35, y:y+0.95, w:w-0.7, h:h-1.2, isTextBox:true, color:P.text, fontFace:BODY, fontSize:16.5, valign:"top", lineSpacingMultiple:1.05 });
+}
+function beispielProfil(d){
+  const s = pres.addSlide(); s.background = { color:P.weiss };
+  s.addText("SO SIEHT DAS AN MEINEM PROFIL AUS", { x:MX, y:0.55, w:W-2*MX, h:0.5, isTextBox:true, color:P.petrol, fontFace:BODY, fontSize:16, bold:true, charSpacing:3 });
+  const ix=0.65, iy=1.35, iw=6.7, sc=iw/1080, ih=897*sc;
+  s.addImage({ path:IMG, x:ix, y:iy, w:iw, h:ih });
+  s.addShape(pres.ShapeType.roundRect, { x:ix, y:iy, w:iw, h:ih, rectRadius:0.03, fill:{ color:P.weiss, transparency:100 }, line:{ color:"D9D9D9", width:1 } });
+  markBox(s, ix+sc*298, iy+sc*40,  sc*385, sc*70,  P.petrol, "1"); // @username oben
+  markBox(s, ix+sc*328, iy+sc*196, sc*695, sc*112, P.orange, "2"); // Name-Feld (fette Zeile)
+  const cx=7.75, cw=W-MX-cx;
+  erklaerkarte(s, cx, 1.55, cw, 2.15, P.petrol, "① @username",
+    "Deine feste Adresse: @mumlifebalance. Kurz, merkbar, ohne Zahlenwüste — steht ganz oben in der Leiste und in der URL.");
+  erklaerkarte(s, cx, 3.95, cw, 2.7, P.orange, "② Name-Feld",
+    "Die fette Zeile darunter: „Patricia Ulmann I mehr verdienen als Networkerin“. Das ist dein Suchbegriff — Instagram durchsucht GENAU dieses Feld. Hier gehört dein Thema rein, nicht nur dein Name.");
+  notes(s,d.note); return s;
+}
+
 // ---------- Inhalt Modul 1 ----------
 modultitel({ kicker:"STARTKLAR · MODUL 1", title:"Dein Profil steht", sub:"5 Lektionen · rund 38 Minuten",
   note:"Ziel des Moduls: Am Ende hat sie ein eingerichtetes Business-Profil mit getippter Bio, angelegten Highlights, Profilbild, Link und Zwei-Faktor-Schutz. Überprüfbar, indem man ihr Profil aufmacht." });
@@ -149,6 +176,7 @@ inhalt({ header:"Das Prinzip", items:[
   {label:"Name-Feld", text:"= dein Suchbegriff. Hier steht, wobei du hilfst."},
   {label:"Beispiel:", text:"@sandra.wellness  ·  Name-Feld: Sandra · Energie für Mamas ab 35"}],
   note:"Das Name-Feld ist das einzige Feld ausser dem Username, das Instagram durchsucht. Wenn da nur dein Vorname steht, findet dich genau niemand, der dich nicht schon kennt. Schreib dein Thema rein und deinen Namen." });
+beispielProfil({ note:"Zeig es an deinem eigenen Profil. Der @username oben ist deine Adresse — den tippt man ein, um dich direkt zu finden. Das fette Name-Feld darunter ist der Suchbegriff: Instagram durchsucht genau dieses Feld. Wenn da nur dein Name steht, findet dich niemand, der dich nicht schon kennt. Deshalb gehört dein Thema hier rein." });
 handy({ sub:"Profil bearbeiten → Name und Username setzen", steps:[
   "Profil → „Profil bearbeiten“",
   "Name-Feld tippen, Beispiel live eintippen",

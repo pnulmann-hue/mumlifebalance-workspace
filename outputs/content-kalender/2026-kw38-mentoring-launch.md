@@ -223,7 +223,7 @@ tags: [content, monatsplan, mentoring]
 
 ## Vor dem ersten Lead-Post muss stehen
 
-- [ ] **ManyChat-Flow `STANDBEIN`** gebaut und mit einem Zweitkonto getestet — sonst kommentiert am Mittwoch jemand und es passiert nichts. Anleitung: [[manychat-flow-STANDBEIN]]
+- [x] **ManyChat-Flow `STANDBEIN`** — ✅ steht (Patricia, 2026-09-11)
 - [ ] **Automation in ActiveCampaign** mit den vier Mails — Anleitung: [[ac-einrichtung]]
 - [ ] **Kauf-Tag** für den Minikurs geklärt (Verdacht: 43)
 - [ ] Der ganze Weg einmal selbst durchlaufen: kommentieren → DM → Landingpage → eintragen → Mail → Tool

@@ -5,7 +5,7 @@ tags: [funnel]
 # ManyChat-Flow: Keyword `STANDBEIN`
 
 **Funnel:** Produkt-Ideen-Finder · **Profil:** Mentoring (@mumlifebalance_patricia_ulmann)
-**Status:** TODO — einrichten, bevor der erste Lead-Post rausgeht
+**Status:** ✅ **steht** (Patricia, 2026-09-11) — der Flow ist in ManyChat gebaut
 **Erstellt:** 2026-09-10
 
 ---
@@ -150,7 +150,7 @@ Dazu läuft der DM-Flow aus Schritt 2.
 | Landingpage | ✅ live, mit AC-Formular f/66 |
 | Seite nach dem Eintragen | ✅ live, Knopf zeigt aufs Tool |
 | Tool (Vercel) | ✅ läuft, alle Schlüssel gesetzt, Chat antwortet |
-| ManyChat-Flow | ⏳ dieser hier |
+| ManyChat-Flow | ✅ steht seit 2026-09-11 |
 | **Minikurs-Link** | ❌ **tot.** Der Finder pitcht am Ende den 39er-Minikurs, der hinterlegte Checkout gibt 404. Muss an zwei Stellen ersetzt werden: `MINIKURS_URL` im Vercel-Projekt und `#zum-minikurs` auf der Seite nach dem Eintragen. |
 
 ---
