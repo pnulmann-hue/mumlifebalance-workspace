@@ -15,6 +15,56 @@ Jeder Hook muss in unter 2 Sekunden Neugier oder einen "Das bin ich"-Moment ausl
 
 
 
+
+## ✅ Der Hook-Check — Pflicht vor jedem gebauten Hook (Patricia, 2026-09-10)
+
+**Kein Hook geht in ein Reel, eine Folie 1, einen Caption-Anfang oder eine Anzeige,
+bevor er hier durch ist.** Der Check besteht aus zwei Toren und einem Skript.
+
+### Tor 1 — der Freundinnen-Test
+
+> **Würdest du das so zu einer Freundin sagen, die gerade im Network ist und noch
+> nichts verdient?**
+
+Nicht „würde sie es verstehen". Würdest du **es so sagen** — am Telefon, ohne
+Anlauf. Wenn es sich geschrieben anfühlt statt gesprochen, ist es keiner.
+Erkennungszeichen: Substantivketten, „man", erklärende Nebensätze, Fachwörter.
+
+### Tor 2 — der Gesehen-Test
+
+> **Fühlt sich jemand mit diesen Painpoints gesehen?**
+
+Benenne **welchen** Schmerz aus [[kern-painpoint]] der Hook trifft — wörtlich, einen
+von diesen: die Rechnung geht nicht auf · wie lange dauert das noch · ist Network das
+Richtige · die Abhängigkeit · der Job am Montagmorgen · ohne aufzugeben / ohne mehr zu
+arbeiten / ohne bei null.
+
+Findest du keinen, ist es **kein Hook, sondern eine Aussage**. Dann umschreiben, nie
+die Caption nachbessern.
+
+### Das Skript für alles Mechanische
+
+```bash
+python scripts/content/hook-pruefen.py "Mein Hook"
+python scripts/content/hook-pruefen.py --datei hooks.txt
+```
+
+Es findet: „nicht X, sondern Y" · „Kennst du das" · „Stell dir vor" · ß statt ss ·
+ae/oe/ue statt Umlauten · Anleitungs-Formeln („So findest du…", „In 3 Schritten…",
+„5 Tipps…") · Lösungswörter (eigenes Thema, Positionierung, Funnel, Reichweite …) ·
+Formulierungen gegen das Network · fehlenden Network-Anker · Stakkato · Zahlen ·
+zu lange erste Zeile · **und ob es den Hook so ähnlich schon gab** (Abgleich gegen
+`outputs/` und `context/`).
+
+**Rote Befunde blockieren.** Gelbe müssen begründet werden, nicht übergangen.
+
+### Was im Ergebnis stehen muss
+
+Bei jedem gelieferten Hook-Set gehört die Antwort auf Tor 1 und Tor 2 dazu —
+ein Satz pro Hook, welcher Schmerz getroffen wird. Ohne das ist das Set nicht fertig.
+
+---
+
 ## 🎯 Die eine Frage vor jedem Hook (Patricia, 2026-09-10)
 
 > **„Was ist gerade der grösste Painpoint meiner Zielgruppe? DAS ist der Hook."**
