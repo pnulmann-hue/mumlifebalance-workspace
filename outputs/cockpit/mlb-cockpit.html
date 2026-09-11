@@ -311,6 +311,11 @@
   }
   .wk-datei { font-size: 12px; color: var(--ink-soft); font-family: var(--body); }
 
+  .wk-video { background: #0c1c30; }
+  .wk-covermini {
+    width: 78px; border-radius: 6px; border: 1px solid var(--line);
+    display: block; margin-top: 8px;
+  }
   .wk-farben { display: flex; gap: 6px; align-items: center; margin-top: 8px; }
   .farbknopf {
     width: 22px; height: 22px; border-radius: 50%; cursor: pointer;
@@ -1040,7 +1045,8 @@
     state.reels.forEach(function (r) {
       beitraege.push({ art: "reels", id: r.id, obj: r, format: "Reel",
                        titel: r.name, hook: r.hook || "", unter: r.unter || "",
-                       caption: r.caption || "", datei: r.videodatei || "" });
+                       caption: r.caption || "", datei: r.videodatei || "",
+                       videourl: r.videourl || "" });
     });
     state.karussells.forEach(function (c) {
       var s1 = (c.slides && c.slides[0]) || {};
@@ -1103,14 +1109,23 @@
     karte.className = "wkarte" + (b.obj.textfrei ? " frei" : "");
 
     var quelle = coverBild(b);
-    var bild = quelle
-      ? '<img class="wk-bild" src="' + quelle + '" alt="">'
-      : '<div class="wk-leer">Noch kein Vorschaubild</div>';
+    // Wenn ein Video hinterlegt ist, steht hier der Player. Sonst das Cover.
+    var bild = b.videourl
+      ? '<video class="wk-bild wk-video" src="' + esc(b.videourl) + '" controls ' +
+        'playsinline preload="metadata"' + (quelle ? ' poster="' + quelle + '"' : "") + '></video>'
+      : (quelle
+          ? '<img class="wk-bild" src="' + quelle + '" alt="">'
+          : '<div class="wk-leer">Noch kein Vorschaubild</div>');
 
     // Farbwaehler nur beim Reel — beim Karussell macht die Farbe der Editor.
+    // Laeuft daneben ein Video, kommt das Cover als kleines Bild dazu, damit
+    // beides sichtbar bleibt: was im Feed steht und was abgespielt wird.
     var farbwahl = "";
     if (b.art === "reels") {
-      farbwahl = '<div class="wk-farben">' +
+      if (b.videourl && quelle) {
+        farbwahl += '<img class="wk-covermini" src="' + quelle + '" alt="Cover">';
+      }
+      farbwahl += '<div class="wk-farben">' +
         COVERFARBEN.map(function (f) {
           var an = (b.obj.coverfarbe || "dunkelblau") === f.k;
           return '<button class="farbknopf f-' + f.k + '" data-farbe="' + f.k + '"' +
@@ -3174,6 +3189,7 @@
         name: r.name, hook: r.hook, unter: r.unter, pos: r.pos, brand: r.brand,
         datum: r.datum || "", textfrei: !!r.textfrei,
         coverfarbe: r.coverfarbe || "dunkelblau",
+        videourl: r.videourl || "",
         scrim: !!r.scrim, skript: r.skript || "", caption: r.caption || "",
         untertitel: r.untertitel || "", videodatei: r.videodatei || "",
         blotato: r.blotato || null, updatedAt: r.updatedAt
@@ -3907,7 +3923,7 @@
         state.reels.forEach(function (x) { seen[x.id] = x; });
         qs.docs.forEach(function (doc) {
           var d0 = doc.data() || {};
-          var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, updatedAt: d0.updatedAt || "" };
+          var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", videourl: d0.videourl || "", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, updatedAt: d0.updatedAt || "" };
           if (seen[rl.id]) Object.assign(seen[rl.id], rl); else state.reels.push(rl);
         });
         state.reels.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });
