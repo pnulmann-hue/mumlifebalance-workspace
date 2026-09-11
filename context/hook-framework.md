@@ -58,6 +58,20 @@ zu lange erste Zeile · **und ob es den Hook so ähnlich schon gab** (Abgleich g
 
 **Rote Befunde blockieren.** Gelbe müssen begründet werden, nicht übergangen.
 
+### Der CTA zeigt aufs Ziel, nie auf den Schmerz
+
+Ein Folgen-Aufruf mit Rückbezug („…wenn du **das** auch willst") hängt sich an den
+zuletzt genannten Satz. Nach einem Schmerz-Hook ist das der Schmerz — und dann steht
+dort sinngemäss „folg mir, wenn du auch ausweichen willst".
+
+Beispiel, das danebenlag (Reel vom 11.9.): Hook „Mein Mann hat gefragt, ob sich das
+Network gelohnt hat. Ich hab das Thema gewechselt." → Chip „Folg mir, wenn du das
+auch willst." Niemand will das Thema wechseln.
+
+**Regel:** Der CTA benennt die Veränderung, nicht den Zustand. Am besten knüpft er an
+die Szene an und dreht sie: „Folg mir, wenn du nächstes Mal anders antworten willst."
+Bei jedem „das/es/sowas" im CTA prüfen, worauf es im Text zurückverweist.
+
 ### Was im Ergebnis stehen muss
 
 Bei jedem gelieferten Hook-Set gehört die Antwort auf Tor 1 und Tor 2 dazu —
