@@ -466,6 +466,7 @@
   .sxtitel { font-weight: 600; font-size: 14px; }
   .sxauszug { margin: 6px 0 4px; font-size: 13px; line-height: 1.55; color: var(--ink-soft); }
   .sxpfad { margin: 0; font-size: 11px; color: var(--ink-soft); opacity: 0.75; }
+  .sxpfad a { color: var(--teal); opacity: 1; }
   .sxtreffer.fremd { border-left: 3px solid var(--orange); }
   .sxbereich.fremd { color: var(--orange); background: var(--orange-soft); }
   mark { background: var(--orange-soft); color: inherit; border-radius: 3px; padding: 0 2px; }
@@ -2884,7 +2885,11 @@
              '">' + esc(x.b || "") + '</span>' +
              '<span class="sxtitel">' + markiere(x.t || "", suchWort) + '</span></div>' +
              '<p class="sxauszug">' + markiere(x.a || "", suchWort) + '</p>' +
-             '<p class="sxpfad">' + esc(x.d || "") + '</p></div>';
+             '<p class="sxpfad">' +
+             (/^https?:/.test(x.d || "")
+               ? '<a href="' + esc(x.d) + '" target="_blank" rel="noopener">' +
+                 esc(x.d.replace(/^https?:\/\//, "").slice(0, 72)) + ' ↗</a>'
+               : esc(x.d || "")) + '</p></div>';
       });
       raus.innerHTML = h;
     }
