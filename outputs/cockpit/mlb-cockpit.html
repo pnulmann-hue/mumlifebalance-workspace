@@ -359,6 +359,18 @@
   }
   .dfeld textarea:focus { outline: 2px solid var(--teal-soft); border-color: var(--teal); }
 
+  /* ---------- Befund aus ThriveCart ---------- */
+  .tcbefund {
+    background: var(--teal-soft); border-radius: 8px;
+    padding: 10px 12px; margin-top: 12px;
+  }
+  .tckopf {
+    font-size: 10px; letter-spacing: 0.09em; text-transform: uppercase;
+    color: var(--teal); margin-bottom: 6px;
+  }
+  .tczeile { display: grid; grid-template-columns: 96px 1fr; gap: 8px; font-size: 13px; padding: 2px 0; }
+  .tczeile > span:first-child { color: var(--ink-soft); }
+
   /* ---------- Mailtexte ---------- */
   .mailkarte { border: 1px solid var(--line); border-radius: 8px; margin-top: 10px; background: var(--ground); }
   .mailkopf { display: flex; gap: 10px; align-items: baseline; padding: 9px 12px; border-bottom: 1px solid var(--line); }
@@ -2509,6 +2521,23 @@
           feld.appendChild(lab); feld.appendChild(ta);
           koerper.appendChild(feld);
         });
+        // Was ThriveCart wirklich am Checkout haengen hat. Das ist Befund,
+        // kein Eingabefeld — deshalb steht es ueber den Notizfeldern.
+        var tc = [["Order Bump", a.tc_bumps], ["Upsell", a.tc_upsells],
+                  ["Downsell", a.tc_downsells]].filter(function (r) {
+          return r[1] && r[1].length;
+        });
+        if (tc.length) {
+          var kasten = document.createElement("div");
+          kasten.className = "tcbefund";
+          kasten.innerHTML = '<div class="tckopf">Am Checkout hängt</div>' +
+            tc.map(function (r) {
+              return '<div class="tczeile"><span>' + esc(r[0]) + '</span><span>' +
+                     r[1].map(esc).join(" · ") + '</span></div>';
+            }).join("");
+          koerper.insertBefore(kasten, koerper.firstChild);
+        }
+
         if (a.bumphinweis) {
           var hw = document.createElement("p");
           hw.className = "note";
