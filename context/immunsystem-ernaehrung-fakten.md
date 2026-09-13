@@ -247,6 +247,76 @@ Und das ist der Punkt, den du machen kannst, ohne ein Produkt zu erwähnen: **Es
 
 ---
 
+## 7b. Die Produkte — wo sie in die Erklärung passen
+
+**Nachtrag 13.09.2026.** Grundregel: **Zuerst der Teller, dann die Lücke.** Jedes Produkt wird nur dort erwähnt, wo es eine konkrete Lücke schliesst, die vorher benannt wurde. Nie andersrum.
+
+### dōTERRA Fiber — bei der Ballaststoff-Lücke
+
+**Zusammensetzung** (aus dem Convention-Recap 2026, `context/doterra/Produktwissen/2026-06-17-convention-neue-produkte.md`): lösliche **und** unlösliche Ballaststoffe — Apfelfasern, Tapiokastärke, Leinsamen, Oligofructose, Flohsamenschalen, Baobab, Inulin, Topinambur, dazu Vitamin C, Lemon-Öl und Stevia.
+
+**Warum das hier so gut passt:** doTERRAs eigene Schulungsunterlage erklärt **exakt denselben Mechanismus**, den du in Abschnitt 1 aufbaust — Ballaststoffe werden zu kurzkettigen Fettsäuren (Butyrat) vergoren, die der Dickdarmschleimhaut als Energiequelle dienen, die Barriere stabilisieren und das Darm-Immunsystem regulieren. Du musst also nichts hinzuerfinden: **Deine Wissenschaft und ihr Produktwissen sind dieselbe Geschichte.**
+
+**Die Brücke im Gespräch:**
+> „30 Gramm wären empfohlen, im Schnitt kommen wir auf 18 bis 23. Das Erste ist immer der Teller — Hülsenfrüchte, Leinsamen, Vollkorn. Und wenn du an Tagen, an denen das nicht klappt, etwas willst, das beides abdeckt, lösliche und unlösliche Fasern: Dafür gibt's das Fiber-Pulver."
+
+⚠️ Vitamin C ist drin — **damit hast du hier einen zugelassenen Satz** (siehe unten). Die Ballaststoff-Wirkung selbst darfst du in der Schweiz/EU **nicht frei bewerben**; „Ballaststoffe tragen zu einer normalen Darmfunktion bei" ist die Art von Formulierung, die zulässig ist. **„Fördert dein Mikrobiom" ist es nicht.**
+
+### VMG+ — bei der Mikronährstoff-Lücke
+
+**Das ist dein stärkster Compliance-Trumpf.** Die offizielle deutsche Produktinformationsseite von doTERRA listet die zugelassenen Angaben wörtlich. Du darfst sie **exakt so** verwenden — sie stehen auf dem Herstellerdokument.
+
+**In VMG+ enthalten und mit zugelassener Immun-Angabe:**
+> **Vitamin A · Vitamin C · Vitamin D · Folat · Vitamin B12 · Eisen · Zink · Selen** — für jeden dieser acht Nährstoffe gilt: *„… trägt zu einer normalen Funktion des Immunsystems bei."*
+
+**Acht von acht — und genau die decken alle drei Verteidigungslinien ab.** Das ist der Satz, der deine ganze Erklärung mit dem Produkt verbindet, ohne ein einziges Heilversprechen:
+
+> „Mein Teller deckt die drei Linien ab. Und die acht Nährstoffe, für die offiziell gilt, dass sie zu einer normalen Funktion des Immunsystems beitragen, sind bei mir in einem Sachet."
+
+**Weitere zugelassene Sätze, die für deine Zielgruppe zählen** (alle wörtlich aus der doTERRA-PIP):
+- *„Vitamin C trägt zur Reduzierung von Müdigkeit und Ermüdung bei."* — dein Energie-Thema
+- *„Vitamin A trägt zur Erhaltung normaler Schleimhäute bei."* — **exakt Linie 1, die Mauer**
+- *„Vitamin C trägt zu einer normalen Kollagenbildung bei"* — ebenfalls Linie 1
+- *„Zink trägt dazu bei, die Zellen vor oxidativem Stress zu schützen."* — Linie 2
+- *„Eisen trägt zur Reduzierung von Müdigkeit und Ermüdung bei."*
+- *„Vitamin D trägt zur Erhaltung einer normalen Muskelfunktion bei."*
+
+**Weitere Fakten aus der PIP:** über 70 Inhaltsstoffe · vereint Alpha CRS+, Microplex VMz (Vegan) und TerraGreens · liposomale Technologie für die Aufnahme · vegan, glutenfrei, gentechnikfrei · 30 Sachets à 9,4 g · ätherische Öle von Ingwer, Lavendel, Zitronengras, Pfefferminze, Orange · **1 Sachet täglich in 150–240 ml kaltes Wasser, nie in heisse Getränke.**
+
+🚨 **Achtung, Falle in derselben PIP:** Bei Kelp steht „stärkt die Abwehrkräfte", bei Klettenwurzel stehen Leber-Aussagen — **diese Sätze sind mit einem Sternchen markiert und sind keine zugelassenen Angaben.** Nicht übernehmen. Nur die Vitamin- und Mineralstoff-Sätze verwenden.
+
+### PB Assist+ und PB Restore — bei der Mikrobiom-Lücke
+
+**PB Restore ProBiome Complex** (offizielle Produktinformation): 30 prä-, pro- und postbiotische Bestandteile plus Bakteriophagen · **18 Milliarden KBE** · **24 aktive Kulturen aus 22 verschiedenen Arten** · präbiotische Fructooligosaccharide · ein Postbiotikum (L. rhamnosus CRL 1505) · Doppelkammerkapsel mit zeitversetzter Freisetzung · **1 Kapsel täglich mit viel Wasser, am besten vor einer Mahlzeit mit gesunden Fetten** (⚠️ hübsch: das ist genau dein Fett-Argument aus 6b) · nach dem Öffnen im Kühlschrank lagern.
+
+doTERRA selbst sagt: PB Restore **und** PB Assist+ ergänzen sich, für Erwachsene sind beide zusammen gedacht.
+
+🚨🚨 **Die wichtigste Warnung dieser Datei:** Die Produktinformation zu PB Restore, die im Netz kursiert, ist die **US-Fassung** — erkennbar am Sternchen und dem Satz „These statements have not been evaluated by the FDA". Dort stehen Sätze wie „supports the immune system" und „gut barrier integrity". **Diese Sätze sind in der Schweiz und der EU nicht zulässig.** In der EU gilt: „Probiotikum" ist selbst schon eine gesundheitsbezogene Angabe und darf in der Bewerbung **nicht** verwendet werden — für einen Joghurt mit probiotischen Bakterien ist „stärkt das Immunsystem" ausdrücklich nicht mehr erlaubt.
+
+**Heisst konkret für dich:**
+
+| ❌ So nicht | ✅ So schon |
+|---|---|
+| „PB Restore stärkt dein Immunsystem" | „Bei mir gehören die Bakterienkulturen seit zwei Jahren zur Routine." |
+| „unterstützt deine Darmbarriere" | „24 aktive Kulturen aus 22 Arten — mir war Vielfalt wichtig, nicht ein einzelner Stamm." |
+| „probiotisch für dein Mikrobiom" | Über das **Thema** sprechen (Vielfalt im Darm), über das **Produkt** nur beschreibend und persönlich |
+
+**Die ehrliche Positionierung, die auch inhaltlich stimmt:**
+> „Eine Kapsel bringt dir 24 Kulturen. Deine 30 Pflanzen pro Woche bringen dir Hunderte. Das Pulver und die Kapsel sind das Sicherheitsnetz, nicht der Plan."
+
+Das ist glaubwürdiger als jeder Pitch — und es ist die Wahrheit.
+
+### Die Reihenfolge, in der du es erzählst
+
+1. **Der Mechanismus** — Darm, Butyrat, drei Linien. Ohne Produkt.
+2. **Die Lücke mit Zahl** — 30 g empfohlen vs. 18–23 g real · Vitamin D im Winter >60 % · 25–75 % unter der Empfehlung.
+3. **Was jede zuerst tun kann** — ohne einen Franken: Öl über den Salat, Kräuter mitzählen, Eiweiss zum Frühstück.
+4. **Erst dann, und nur wenn gefragt wird:** was bei dir im Regal steht.
+
+Schritt 3 ist nicht verhandelbar. Wer ihn weglässt, verkauft. Wer ihn drinlässt, wird gefragt.
+
+---
+
 ## 8. Compliance-Regeln für diese Woche
 
 1. **Kein Heilversprechen.** Nie „heilt", „schützt vor", „stärkt dein Immunsystem", „beugt Erkältungen vor". Immer „trägt zu einer normalen Funktion bei" oder der persönliche Rahmen: **„Bei mir war es so, dass …"**
