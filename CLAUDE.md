@@ -91,6 +91,7 @@ tags: [tag1, tag2, tag3]
 | `outputs/monatsplaene/` | `[monatsplan]` |
 | `outputs/content-kalender/` | `[content]` |
 | `outputs/garten/` | `[garten]` |
+| `outputs/ferien/` | `[ferien]` |
 | `outputs/calls/` | `[call]` |
 | `outputs/telegram-posts/` | `[content, telegram]` |
 | `outputs/sonstige/` | `[misc]` |
@@ -232,6 +233,50 @@ Volle Doku: `reference/montag-workflow-v2.md`.
 **Zweck:** Persönlicher Gartenassistent und Permakultur-Berater starten.
 
 Lädt den Garten-Kontext (Standort Appenzellerland, 920 m, Permakultur-Philosophie) und greift auf die Notion-Datenbanken (Samen, Beetplan, Gartentagebuch, Wissensarchiv) zu. Gibt einen aktuellen Status, zeigt was ansteht und fragt, was heute im Garten geplant ist. Berücksichtigt Mondkalender, Mischkultur, Fruchtfolge und die kurze alpine Vegetationsperiode.
+
+### /ferien (Familie, seit 2026-09-13)
+
+**Zweck:** Ferienassistent für die Familienferien — Reka-Feriendorf finden, Gästekarten auf
+echte Gratis-Bergbahnen prüfen, Unterbringung für zwei Generationen klären, Buchung vorbereiten.
+
+**Das Problem, das er löst:** 6 Personen in zwei Haushalten (Familie + Schwiegereltern) brauchen
+gleichzeitig zwei Bäder, eine Region, in der Ausflüge nicht das halbe Budget fressen, und einen
+Buchungszeitpunkt, an dem die passenden Wohnungen noch frei sind.
+
+**Die drei harten Kriterien:** Bergbahnen in der Ferienkarte **gratis** (nicht ermässigt) ·
+mind. 2 Schlafzimmer für 6 Personen · zweites Bad oder zweite Wohnung.
+
+**Kernerkenntnis der Erst-Recherche (13.09.2026):** Von zwölf Reka-Feriendörfern erfüllen nur
+**drei** das Bergbahn-Kriterium — **Disentis** (Karte „Disentis Sedrun inclusive"), **Sörenberg**
+(„Sörenberg Card", von Reka selbst bestätigt) und **Zinal** („Pass Anniviers Liberté").
+Alle anderen geben nur Rabatt. Lenk ist ein Nachrücker, sobald geklärt ist, ob
+Ferienwohnungsgäste die Simmental Card voll bekommen.
+
+**6 Modi:** `suche` (Dörfer vergleichen, mit klarer Empfehlung) · `karte [Region]`
+(Gästekarte gegen 5 Prüf-Fragen durchleuchten) · `wohnform` (eine grosse vs. zwei
+nebeneinanderliegende Wohnungen) · `buchen` (Schulferien + Buchungsfenster + Checkliste) ·
+`vorort` (Wochenprogramm für drei Generationen) · `status`.
+
+**Wissensgrundlagen** (in `context/ferien/`, public — keine persönlichen Daten):
+- `README.md` — Systemlogik, 3 harte Kriterien, 7 Arbeitsregeln
+- `gaestekarten-bergbahnen.md` — alle Regionen nach Gruppe A/B/C, mit Quelle und Konfidenz-Marker
+- `reka-doerfer.md` — Steckbriefe aller zwölf Dörfer + Wohnform-Vergleich
+- `familie-rahmen.md` — Anforderungen der Reisegruppe, personenfrei
+
+**Persönliche Daten** in `context/persoenlich/ferien/reisegruppe.md` (**gitignored** — Repo ist public).
+
+**Harte Regeln:** keine erfundenen Preise/Termine/Verfügbarkeiten · „ermässigt" ist nie „inklusive" ·
+jede Gästekarten-Aussage mit Quelle · Konfidenz kennzeichnen (✅ / ⚠️ / ❌ / 🔍) · bei zwei
+Wohnungen immer Nachbarschaft ins Bemerkungsfeld · empfehlen statt auffächern.
+
+**⚠️ Sandbox-Limit:** `reka.ch`, `surselva.info` und `valdanniviers.ch` sind vom Netzwerk-Proxy
+blockiert (403 / EGRESS_BLOCKED). Live-Verfügbarkeiten kann der Skill **nicht** abrufen — er
+liefert stattdessen eine Prüf-Liste mit Direktlinks. Dauerhafte Lösung wäre wie bei den anderen
+Tools eine GitHub Action mit Cron.
+
+Output: `outputs/ferien/YYYY-MM-DD-[slug].md`. Erste Recherche:
+`outputs/ferien/2026-09-13-reka-vergleich-sommer-2027.md`.
+
 
 ### /basteln (Hobby, seit 2026-08-18)
 
