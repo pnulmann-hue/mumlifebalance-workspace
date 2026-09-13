@@ -1,0 +1,472 @@
+<meta charset="utf-8">
+<title>Dein Immunsystem und dein Teller</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap">
+
+<style>
+@page { size: A4; margin: 0; }
+
+:root {
+  --creme:   #f1ecdd;
+  --papier:  #faf7ef;
+  --petrol:  #12828c;
+  --tief:    #29556d;
+  --orange:  #dc822e;
+  --rost:    #a8432a;
+  --tinte:   #1d3742;
+  --leise:   #63747b;
+  --linie:   #d6cdb6;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+body {
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  color: var(--tinte);
+  background: var(--creme);
+  font-size: 10.6pt;
+  line-height: 1.5;
+}
+
+.seite {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 14mm 16mm 8mm;
+  background: var(--creme);
+  page-break-after: always;
+  display: flex;
+  flex-direction: column;
+  gap: 6.5mm;
+}
+.seite:last-child { page-break-after: auto; }
+
+/* Seiten mit weniger Bausteinen bekommen grosszuegigeren Satz statt Leerraum */
+.seite.luftig { gap: 10mm; }
+.seite.luftig .linie { padding: 6.5mm 0; }
+.seite.luftig .irrtum { padding: 6mm 0; }
+.seite.luftig .block { gap: 4.5mm; }
+
+h1, h2, h3 { font-family: Philosopher, Georgia, serif; font-weight: 700; line-height: 1.15; }
+
+/* ---------- Titel ---------- */
+
+.titel { border-bottom: 2.5pt solid var(--petrol); padding-bottom: 5mm; }
+
+.eyebrow {
+  font-size: 8.5pt;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--petrol);
+  display: block;
+  margin-bottom: 3mm;
+}
+
+h1 { font-size: 27pt; margin-bottom: 2.5mm; }
+.unterzeile { font-size: 11pt; color: var(--leise); max-width: 135mm; }
+
+/* ---------- Kernsatz ---------- */
+
+.kernsatz {
+  background: var(--petrol);
+  color: #f7f4ec;
+  padding: 6mm 7mm;
+  border-radius: 1.5mm;
+}
+.kernsatz p { font-family: Philosopher, Georgia, serif; font-size: 15.5pt; line-height: 1.3; }
+
+/* ---------- Abschnitt ---------- */
+
+.block { display: flex; flex-direction: column; gap: 3.2mm; page-break-inside: avoid; }
+
+h2 {
+  font-size: 17.5pt;
+  color: var(--tief);
+  display: flex;
+  align-items: baseline;
+  gap: 3mm;
+}
+h2 .nr { font-size: 10pt; color: var(--orange); font-family: "Source Sans 3", sans-serif; font-weight: 700; }
+
+.intro { color: var(--leise); font-size: 10.4pt; max-width: 150mm; }
+
+/* ---------- Haus / Linien ---------- */
+
+.linie {
+  display: grid;
+  grid-template-columns: 11mm 1fr;
+  gap: 5mm;
+  padding: 3.8mm 0;
+  border-bottom: .5pt solid var(--linie);
+  align-items: start;
+  page-break-inside: avoid;
+}
+.linie:first-of-type { border-top: .5pt solid var(--linie); }
+
+.linie .nr {
+  font-family: Philosopher, Georgia, serif;
+  font-size: 23pt;
+  color: var(--petrol);
+  line-height: .85;
+}
+
+.linie h3 { font-size: 13.5pt; margin-bottom: 1.2mm; }
+.linie p { font-size: 10.1pt; }
+.linie .naehr {
+  font-size: 9.5pt;
+  color: var(--petrol);
+  font-weight: 600;
+  margin-top: 2mm;
+  padding-top: 2mm;
+  border-top: .5pt dotted var(--linie);
+}
+
+/* ---------- Vier Jobs ---------- */
+
+.jobs { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm; }
+
+.job {
+  background: var(--papier);
+  border: .5pt solid var(--linie);
+  border-top: 2pt solid var(--petrol);
+  border-radius: 1mm;
+  padding: 4.2mm 4.8mm 4.8mm;
+  page-break-inside: avoid;
+}
+.job:nth-child(2) { border-top-color: var(--tief); }
+.job:nth-child(3) { border-top-color: var(--orange); }
+.job:nth-child(4) { border-top-color: var(--rost); }
+
+.job .was { font-size: 8.5pt; letter-spacing: .09em; text-transform: uppercase; color: var(--leise); font-weight: 600; }
+.job h3 { font-size: 13pt; margin: 1mm 0 2mm; }
+.job p { font-size: 9.9pt; line-height: 1.45; }
+
+/* ---------- Zahlen ---------- */
+
+.zahlen { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm; }
+
+.zahl-kachel {
+  background: var(--papier);
+  border-left: 2.5pt solid var(--orange);
+  border-radius: 1mm;
+  padding: 4mm 4.5mm;
+  page-break-inside: avoid;
+  display: flex;
+  flex-direction: column;
+  gap: 1mm;
+}
+.zahl-kachel b {
+  font-family: Philosopher, Georgia, serif;
+  font-size: 19pt;
+  color: var(--tief);
+  line-height: 1;
+}
+.zahl-kachel span { font-size: 9.7pt; line-height: 1.4; }
+
+/* ---------- Irrtümer ---------- */
+
+.irrtum {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 6mm;
+  padding: 3.4mm 0;
+  border-bottom: .5pt solid var(--linie);
+  page-break-inside: avoid;
+}
+.irrtum:first-of-type { border-top: .5pt solid var(--linie); }
+
+.irrtum .falsch, .irrtum .richtig { display: flex; flex-direction: column; gap: 1.5mm; }
+.irrtum .kopf { font-size: 8.5pt; letter-spacing: .09em; text-transform: uppercase; font-weight: 700; }
+.irrtum .falsch .kopf { color: var(--rost); }
+.irrtum .richtig .kopf { color: var(--petrol); }
+.irrtum p { font-size: 9.9pt; line-height: 1.42; }
+
+/* ---------- Schritte ---------- */
+
+.schritte { display: flex; flex-direction: column; }
+
+.schritt {
+  display: grid;
+  grid-template-columns: 9mm 1fr;
+  gap: 3mm;
+  padding: 3.2mm 0;
+  border-bottom: .5pt solid var(--linie);
+  align-items: baseline;
+  page-break-inside: avoid;
+}
+.schritt:first-of-type { border-top: .5pt solid var(--linie); }
+.schritt .haken { color: var(--orange); font-size: 13pt; font-weight: 700; }
+.schritt b { font-size: 11pt; font-weight: 600; display: block; margin-bottom: .8mm; }
+.schritt span { font-size: 9.9pt; color: var(--leise); line-height: 1.45; }
+
+/* ---------- Merksatz ---------- */
+
+.merksatz {
+  background: var(--papier);
+  border: .5pt solid var(--petrol);
+  border-left: 3pt solid var(--petrol);
+  border-radius: 1mm;
+  padding: 5mm 5.5mm;
+  page-break-inside: avoid;
+}
+.merksatz p { font-family: Philosopher, Georgia, serif; font-size: 13pt; line-height: 1.35; color: var(--tief); }
+
+/* ---------- Fuss ---------- */
+
+.fuss {
+  margin-top: auto;
+  padding-top: 4mm;
+  border-top: .5pt solid var(--linie);
+  font-size: 8.6pt;
+  color: var(--leise);
+  display: flex;
+  justify-content: space-between;
+  gap: 6mm;
+}
+.fuss b { color: var(--petrol); font-weight: 700; }
+</style>
+
+<!-- ===== SEITE 1 ===== -->
+<div class="seite">
+
+  <div class="titel">
+    <span class="eyebrow">Immunwoche · September</span>
+    <h1>Dein Immunsystem<br>und dein Teller</h1>
+    <p class="unterzeile">Warum das, was du isst, viel mehr mit deiner Abwehr zu tun hat, als die meisten denken — einfach erklärt.</p>
+  </div>
+
+  <div class="kernsatz">
+    <p>Du fütterst nicht dich. Du fütterst die Bakterien, die dein Immunsystem ausbilden.</p>
+  </div>
+
+  <div class="block">
+    <h2><span class="nr">01</span> Warum der Darm überhaupt mitredet</h2>
+    <p>Der Darm ist nicht nur ein Verdauungsrohr. In seiner Wand sitzt der <b>grösste Teil deiner Immunzellen — rund 70 Prozent</b>. Und die Bakterien, die dort leben, bringen ihnen bei, wann sie reagieren sollen und wann nicht.</p>
+    <p>Dazwischen steht ein einziger Stoff. Ballaststoffe kommen unverdaut im Dickdarm an, deine Bakterien vergären sie — und daraus entsteht etwas, das gleich zwei Dinge tut: Es ernährt deine Darmschleimhaut, und es beruhigt die Immunzellen, wenn sie überreagieren.</p>
+    <p><b>Deshalb ist dein Teller keine Kosmetik.</b> Er ist die Zutatenliste dafür.</p>
+  </div>
+
+  <div class="block">
+    <h2><span class="nr">03</span> Dein Teller hat vier Jobs</h2>
+    <p class="intro">Ballaststoffe, Eiweiss, Kohlenhydrate und gutes Fett sind keine willkürliche Einteilung. Jeder Baustein erledigt eine andere Aufgabe für deine Abwehr. Fehlt einer, fehlt genau diese eine Funktion.</p>
+
+    <div class="jobs">
+      <div class="job">
+        <span class="was">Ballaststoffe</span>
+        <h3>Das Futter</h3>
+        <p>Nicht für dich — für deine Bakterien. Aus ihnen entsteht der Stoff, von dem deine Darmschleimhaut lebt und der deine Immunzellen reguliert.</p>
+      </div>
+      <div class="job">
+        <span class="was">Eiweiss</span>
+        <h3>Das Baumaterial</h3>
+        <p>Antikörper <i>sind</i> Eiweiss. Genauso die Botenstoffe, mit denen deine Immunzellen miteinander reden. Ohne Material kann dein Körper im Ernstfall nichts bauen.</p>
+      </div>
+      <div class="job">
+        <span class="was">Kohlenhydrate</span>
+        <h3>Der Treibstoff</h3>
+        <p>Trifft eine Immunzelle auf einen Erreger, muss sie sich innerhalb von Stunden vervielfachen. Diese Geschwindigkeit gibt es sonst nirgends im Körper — und sie kostet Energie.</p>
+      </div>
+      <div class="job">
+        <span class="was">Gutes Fett</span>
+        <h3>Transport und Bremse</h3>
+        <p>Es holt die Vitamine A, D, E und K überhaupt erst in dein Blut. Und aus Omega‑3 baut dein Körper die Stoffe, die eine Entzündung wieder aktiv beenden.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="fuss">
+    <span>Dein Immunsystem und dein Teller</span>
+    <span><b>Mum Life Balance</b> · Seite 1 von 4</span>
+  </div>
+</div>
+
+<!-- ===== SEITE 2 ===== -->
+<div class="seite luftig">
+
+  <div class="block">
+    <h2><span class="nr">02</span> Dein Körper ist ein Haus</h2>
+    <p class="intro">Ein Erreger trifft nacheinander auf drei Linien. Jede braucht andere Nährstoffe — und keine funktioniert allein.</p>
+
+    <div class="linie">
+      <span class="nr">1</span>
+      <div>
+        <h3>Die Hauswand</h3>
+        <p>Deine Haut und deine Schleimhäute sind die Aussenwand: die Nase, der Rachen, und innen drin der ganze Darm. Solange die Wand dicht ist, kommt gar nichts rein. Das ist die Linie, die fast die ganze Arbeit macht — und du merkst nie etwas davon.</p>
+        <p class="naehr">Vitamin A hält sie feucht · Vitamin C ist der Mörtel · Vitamin D dichtet die Fugen · Zink · Eisen</p>
+      </div>
+    </div>
+
+    <div class="linie">
+      <span class="nr">2</span>
+      <div>
+        <h3>Die Feuerwehr</h3>
+        <p>Kommt doch etwas durch, rennt die Feuerwehr los. Die fragt nicht lange, wer da ist — die macht alles platt, was fremd riecht. Schnell, aber grob, und beim Löschen gehen auch eigene Möbel kaputt. <b>Das ist die Linie, die du spürst:</b> Fieber, Halsweh und Gliederschmerzen sind nicht der Virus. Das ist deine eigene Feuerwehr bei der Arbeit.</p>
+        <p class="naehr">Vitamin C schickt sie los · Vitamin E ist die Plane über den Möbeln · Zink und Selen sagen, wann Schluss ist</p>
+      </div>
+    </div>
+
+    <div class="linie">
+      <span class="nr">3</span>
+      <div>
+        <h3>Der Schlüsseldienst</h3>
+        <p>Die Feuerwehr kauft nur Zeit. Parallel baut dein Körper einen passgenauen Schlüssel für genau diesen einen Erreger. Das dauert ein paar Tage — dafür merkt er sich den Schlüssel jahrelang. Deshalb bekommt man manche Sachen nur einmal im Leben. Und so ein Schlüssel wird aus Eiweiss gebaut: <b>kein Eiweiss, kein Schlüssel.</b></p>
+        <p class="naehr">Eiweiss ist das Material · B6, B12 und Folsäure sind das Werkzeug · Vitamin A · Zink</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="merksatz">
+    <p>Eine dichte Wand nützt nichts, wenn die Feuerwehr nicht ausrückt. Und die beste Feuerwehr bringt nichts, wenn der Schlüsseldienst kein Material hat.</p>
+  </div>
+
+  <div class="fuss">
+    <span>Dein Immunsystem und dein Teller</span>
+    <span><b>Mum Life Balance</b> · Seite 2 von 4</span>
+  </div>
+</div>
+
+<!-- ===== SEITE 3 ===== -->
+<div class="seite luftig">
+
+  <div class="block">
+    <h2><span class="nr">04</span> Zwei Dinge, die kaum jemand weiss</h2>
+
+    <p><b>Fettarmer Salat ist der teuerste Salat.</b> Die orangen, roten und dunkelgrünen Farbstoffe im Gemüse kann dein Körper nur mit Fett aufnehmen. In einer Untersuchung nahmen Menschen aus demselben Salat <b>ein Vielfaches</b> davon auf, sobald Avocado oder Öl dabei war. Ohne Fett zahlst du für das Gemüse und lässt das meiste ungenutzt wieder raus. Ein Esslöffel Olivenöl ist kein Luxus — das ist die Eintrittskarte.</p>
+
+    <p><b>Farbe ist Bakterienfutter.</b> Von den Farbstoffen in Beeren, Rotkohl, Zwiebeln, Kräutern und Kakao werden nur etwa fünf bis zehn Prozent überhaupt aufgenommen. <b>Der ganze Rest landet im Dickdarm</b> und wird dort von deinen Bakterien verarbeitet. Farbe wirkt also wie ein zweiter Ballaststoff: Sie füttert die guten Bakterien und bremst die ungünstigen.</p>
+
+    <p>Und deshalb gilt die einfachste Regel von allen: <b>30 verschiedene Pflanzen pro Woche.</b> Kräuter, Gewürze, Nüsse und Samen zählen mit. Basilikum zählt. Zimt zählt. Kürbiskerne zählen. Wer glaubt, das nie zu schaffen, kommt mit einer Handvoll Kräutern und einem gemischten Salat schnell auf zwölf an einem einzigen Tag.</p>
+  </div>
+
+  <div class="block">
+    <h2><span class="nr">05</span> Die drei grössten Irrtümer</h2>
+
+    <div class="irrtum">
+      <div class="falsch">
+        <span class="kopf">Der Irrtum</span>
+        <p>„Zucker raubt dir die Vitamine."</p>
+      </div>
+      <div class="richtig">
+        <span class="kopf">Was wirklich stimmt</span>
+        <p>Dafür gibt es keinen Beleg. Das Problem ist nicht der Zucker an sich, sondern die Achterbahn: wenn dein Blutzucker den ganzen Tag rauf und runter fährt. Zum Vergleich: In einem Glas Cola stecken neun Stück Würfelzucker.</p>
+      </div>
+    </div>
+
+    <div class="irrtum">
+      <div class="falsch">
+        <span class="kopf">Der Irrtum</span>
+        <p>„Wenig Kohlenhydrate sind besser, auch wenn ich krank bin."</p>
+      </div>
+      <div class="richtig">
+        <span class="kopf">Was wirklich stimmt</span>
+        <p>Deine Immunzellen verbrennen Zucker, um sich zu vermehren. Sie fahren dafür sogar extra Transporter hoch. Gerade im Infekt ist Low Carb genau das Falsche — gemeint ist aber Kartoffel, Hafer und Linse, nicht Cola.</p>
+      </div>
+    </div>
+
+    <div class="irrtum">
+      <div class="falsch">
+        <span class="kopf">Der Irrtum</span>
+        <p>„Vitamin C schützt mich vor der Erkältung."</p>
+      </div>
+      <div class="richtig">
+        <span class="kopf">Was wirklich stimmt</span>
+        <p>Vorbeugen tut es nicht. Es verkürzt eine Erkältung um etwa acht Prozent — von sieben Tagen ist das ein halber Tag. Es hängt eben nie an einem einzigen Nährstoff.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="fuss">
+    <span>Dein Immunsystem und dein Teller</span>
+    <span><b>Mum Life Balance</b> · Seite 3 von 4</span>
+  </div>
+</div>
+
+<!-- ===== SEITE 4 ===== -->
+<div class="seite">
+
+  <div class="block">
+    <h2><span class="nr">06</span> Die Zahlen, die du dir merken kannst</h2>
+
+    <div class="zahlen">
+      <div class="zahl-kachel">
+        <b>70 %</b>
+        <span>deiner Immunzellen sitzen im Darm — nicht dort, wo die meisten sie vermuten.</span>
+      </div>
+      <div class="zahl-kachel">
+        <b>30</b>
+        <span>verschiedene Pflanzen pro Woche. Wer das schafft, hat eine deutlich vielfältigere Darmflora als jemand mit zehn.</span>
+      </div>
+      <div class="zahl-kachel">
+        <b>30 g</b>
+        <span>Ballaststoffe pro Tag wären empfohlen. Tatsächlich kommen Frauen im Schnitt auf 18 bis 23.</span>
+      </div>
+      <div class="zahl-kachel">
+        <b>10 g</b>
+        <span>fehlen damit jeden Tag. Das sind zwei Esslöffel Leinsamen und eine Portion Linsen. Mehr nicht.</span>
+      </div>
+      <div class="zahl-kachel">
+        <b>30 g</b>
+        <span>Eiweiss pro Hauptmahlzeit. Am wichtigsten beim Frühstück — da fehlt es fast immer.</span>
+      </div>
+      <div class="zahl-kachel">
+        <b>60 %</b>
+        <span>von uns sind im Winter mit Vitamin D unterversorgt. Im Sommer sind es umgekehrt 80 Prozent, die gut versorgt sind. Genau jetzt kippt es.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <h2><span class="nr">07</span> Was du ab heute tun kannst</h2>
+    <p class="intro">Nichts davon kostet etwas. Und alles davon wirkt sofort.</p>
+
+    <div class="schritte">
+      <div class="schritt">
+        <span class="haken">✓</span>
+        <div>
+          <b>Öl über den Salat.</b>
+          <span>Ein Esslöffel reicht. Ohne Fett bleibt das meiste vom Gemüse ungenutzt.</span>
+        </div>
+      </div>
+      <div class="schritt">
+        <span class="haken">✓</span>
+        <div>
+          <b>Kräuter und Gewürze mitzählen.</b>
+          <span>Sie zählen voll zu deinen 30 Pflanzen. Eine Handvoll Petersilie ist ein Punkt wie jeder andere.</span>
+        </div>
+      </div>
+      <div class="schritt">
+        <span class="haken">✓</span>
+        <div>
+          <b>Eiweiss ans Frühstück.</b>
+          <span>Das ist bei fast jeder Frau die Mahlzeit mit dem wenigsten davon. Und danach kommt der Einbruch um halb elf und der Griff zum Süssen.</span>
+        </div>
+      </div>
+      <div class="schritt">
+        <span class="haken">✓</span>
+        <div>
+          <b>Zwei Esslöffel Leinsamen, eine Portion Linsen.</b>
+          <span>Damit ist deine Ballaststoff-Lücke für heute zu.</span>
+        </div>
+      </div>
+      <div class="schritt">
+        <span class="haken">✓</span>
+        <div>
+          <b>Etwas Buntes, das du sonst nie kaufst.</b>
+          <span>Rotkohl, eine andere Beere, ein Kraut, das du noch nie probiert hast. Vielfalt ist der Wirkstoff, nicht die Menge.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="merksatz">
+    <p>Es hängt nie an einem einzigen Nährstoff. Vitamin C im Oktober ist wie die Feuerwehr rufen, während die Haustür offen steht.</p>
+  </div>
+
+  <div class="fuss">
+    <span>Dein Immunsystem und dein Teller</span>
+    <span><b>Mum Life Balance</b> · Seite 4 von 4</span>
+  </div>
+</div>
