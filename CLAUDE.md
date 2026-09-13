@@ -246,11 +246,20 @@ Buchungszeitpunkt, an dem die passenden Wohnungen noch frei sind.
 **Die drei harten Kriterien:** Bergbahnen in der Ferienkarte **gratis** (nicht ermässigt) ·
 mind. 2 Schlafzimmer für 6 Personen · zweites Bad oder zweite Wohnung.
 
-**Kernerkenntnis der Erst-Recherche (13.09.2026):** Von zwölf Reka-Feriendörfern erfüllen nur
-**drei** das Bergbahn-Kriterium — **Disentis** (Karte „Disentis Sedrun inclusive"), **Sörenberg**
-(„Sörenberg Card", von Reka selbst bestätigt) und **Zinal** („Pass Anniviers Liberté").
-Alle anderen geben nur Rabatt. Lenk ist ein Nachrücker, sobald geklärt ist, ob
-Ferienwohnungsgäste die Simmental Card voll bekommen.
+**Kernerkenntnis Runde 1 (13.09.2026):** Von zwölf Reka-Feriendörfern erfüllen nur **drei** das
+Bergbahn-Kriterium — **Disentis**, **Sörenberg** und **Zinal**. Alle anderen geben nur Rabatt.
+**Lenk ist geklärt und raus:** Die Bergbahnen sind in der Simmental Card nur für ausgewählte
+Hotels inklusive, Ferienwohnungsgäste bekommen bloss vergünstigte Tageskarten.
+
+**Kernerkenntnis Runde 2 (13.09.2026):** Nachdem Disentis, Sörenberg und Hasliberg als „schon
+gewesen" und Zinal als „zu weit" wegfielen, war kein Reka-*Feriendorf* mehr übrig. Der Hebel:
+Reka vermittelt neben den zwölf Dörfern **über 1200 Ferienwohnungen**, und die Gratis-Bergbahn-
+Karten gelten fast überall ausdrücklich auch für Ferienwohnungsgäste (Schweiz Tourismus führt:
+Arosa · Brig Simplon · Engadin · Lötschental · Saas-Fee · Samnaun · Scuol · Sörenberg · Surselva ·
+Verbier). Drei Formate unterscheiden: **Feriendorf** (volle Infrastruktur) · **Ferienanlage**
+(klein, Gemeinschaftsteile) · **Ferienwohnung** (vermittelt, keine Anlage). Reka-Geld gilt überall.
+Aktuelle Empfehlung: **Reka-Ferienanlage Scuol** (einziger Standort mit Anlage *und*
+Gästekarte), Alternative **Reka-Wohnungen Arosa** (stärkste Karte, kürzeste Anreise).
 
 **6 Modi:** `suche` (Dörfer vergleichen, mit klarer Empfehlung) · `karte [Region]`
 (Gästekarte gegen 5 Prüf-Fragen durchleuchten) · `wohnform` (eine grosse vs. zwei

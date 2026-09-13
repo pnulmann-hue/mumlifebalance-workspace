@@ -28,6 +28,20 @@ stehen in `context/persoenlich/ferien/reisegruppe.md` (gitignored, Repo ist publ
 - Einkaufsmöglichkeit im Ort, damit nicht jede Milchpackung eine Autofahrt ist
 - Wanderungen, die für drei Generationen gleichzeitig funktionieren
 
+## Ausschlusskriterien (Stand 13.09.2026)
+
+**Schon gewesen — kommt nicht nochmal in Frage:**
+- Reka-Feriendorf **Disentis**
+- Reka-Feriendorf **Sörenberg**
+- Reka-Feriendorf **Hasliberg**
+
+**Zu weit:**
+- **Zinal** (Val d'Anniviers) — trotz der besten Gästekarte der Schweiz
+
+→ Damit sind alle Reka-*Feriendörfer* mit Gratis-Bergbahnen-Karte vergeben. Die Suche
+läuft ab jetzt über **Reka-Ferienanlagen und Reka-Ferienwohnungen**, siehe
+[[reka-doerfer]] Abschnitt „Reka jenseits der Feriendörfer".
+
 ## Zeitraum
 - **Sommerferien 2027** (Schulferien Kanton AR — Daten vor jeder Planung live nachschlagen,
   nie schätzen)

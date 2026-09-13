@@ -77,6 +77,50 @@ Zwei davon lohnen eine Zweitbetrachtung, falls Patricia das Karten-Kriterium wei
 
 ---
 
+## 🔑 Reka jenseits der Feriendörfer (Erkenntnis Runde 2, 13.09.2026)
+
+Reka betreibt **zwölf eigene Feriendörfer**, vermittelt aber zusätzlich über **1200
+Ferienwohnungen**. Das ist der entscheidende Hebel, sobald die Feriendörfer mit passender
+Gästekarte abgehakt sind — denn die Gratis-Bergbahn-Karten gelten fast überall
+ausdrücklich auch für Ferienwohnungsgäste.
+
+Drei Abstufungen, die man auseinanderhalten muss:
+
+| Format | Was drin ist | Beispiele |
+|---|---|---|
+| **Reka-Feriendorf** | Volle Infrastruktur: Hallenbad, Spielräume, Rekalino-Programm, Gemeinschaftshaus | Disentis, Sörenberg, Bergün, Morschach, Zinal |
+| **Reka-Ferienanlage** | Kleinere Anlage, Gemeinschaftsteile, aber kein volles Dorf | **Scuol** (18 Wohnungen, 1–4 Zi) |
+| **Reka-Ferienwohnung** | Einzelne vermittelte Wohnung oder Haus, keine Anlage — dafür grosse Auswahl und grössere Wohnungen (bis 6½ Zi) | Arosa, Saas-Fee (Royal, Alphitta), Saas-Grund (Fortuna), Breil/Brigels (Casa Crestas) |
+
+**Reka-Geld und Reka-Checks sind in allen drei Formaten einsetzbar.** Wer also „ein Reka-Dorf"
+sagt und eigentlich „Reka-Konditionen plus Familien-Infrastruktur" meint, sollte wissen:
+die Konditionen gibt es überall, die Infrastruktur nur im Dorf.
+
+### Konkrete Objekte mit passender Gästekarte
+
+- **Reka-Ferienanlage Scuol** (GR) — 18 Wohnungen, 1 bis 4 Zimmer, moderne Einrichtung,
+  Garten, Terrasse, Aussenfeuerstelle, Spielzimmer, Kinderspielplatz. Gästekarte
+  Scuol/Valsot. Der einzige Reka-Standort, der Anlage **und** Gratis-Bergbahnen verbindet.
+  🔍 Nur 18 Einheiten — zwei nebeneinander in den Sommerferien wird eng, früh buchen.
+- **Casa Crestas, Breil/Brigels** (GR) — 4½-Zimmer-Maisonette, 76 m², **max 6 Personen,
+  3 Schlafzimmer** (2× Doppelbett, 1× Kajütenbett, Babybett vorhanden). Trifft die
+  Personen- und Zimmeranforderung exakt. Surselva Gästekarte. 🔍 Anzahl Nasszellen offen.
+- **Reka-Wohnungen Arosa** (GR) — Reka führt in Arosa auch grosse Einheiten von 4 bis 6½
+  Zimmern, ausdrücklich für Gruppen aus mehreren Haushalten. Arosa Card.
+- **Reka-Häuser Saas-Fee / Saas-Grund** (VS) — Royal, Alphitta, Fortuna. SaastalCard,
+  aber Zusatzkosten bis CHF 3.80 pro Person und Nacht möglich.
+
+### Der Trade-off, ehrlich benannt
+
+Von den Reka-**Feriendörfern** haben nur Disentis, Sörenberg und Zinal eine Gästekarte mit
+gratis Bergbahnen — und die sind entweder bereits besucht oder zu weit weg. Wer beides
+will, Dorf-Infrastruktur **und** Gratis-Bergbahnen, hat als einzige verbleibende Option
+die Reka-Ferienanlage Scuol. Wer die Gästekarte höher gewichtet, geht in eine
+Reka-Ferienwohnung. Wer die Dorf-Infrastruktur höher gewichtet, nimmt Morschach oder
+Bergün und bezahlt die Bergbahnen (in Bergün mit 75 % Rabatt).
+
+---
+
 ## Wohnform: eine grosse oder zwei kleine Wohnungen?
 
 **Zwei nebeneinanderliegende Wohnungen schlagen eine grosse — fast immer.** Gründe:
