@@ -4,6 +4,11 @@ tags: [content, hooks, research]
 
 # Hook-Formeln-Katalog
 
+> 🎯 **Der verbindliche Stand steht seit 13.09.2026 in `.claude/skills/hooks/SKILL.md`.**
+> Dort ist alles zusammengefasst: Kundensprache, Bewusstseinsstufen, Angles, 27 Formeln,
+> 10 Reveal-Frameworks, 50 Vorlagen, Voice-Kniffe, Verbote und der Hook-Check.
+> **Diese Datei hier ist die Herkunft** — bei Abweichungen gewinnt der Skill.
+
 **Zweck:** Der komplette Werkzeugkasten an Hook-Formeln für Patricias Reels/Karussells/Stories — mit den Ergebnissen ihrer eigenen A/B/C-Tests (Juni 2026). **Pflicht-Lese bei jeder Hook-Generierung.** Ergänzt `hook-framework.md` (Grundlagen) um konkrete, benannte Formeln + Live-Daten.
 
 ---

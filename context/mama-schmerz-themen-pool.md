@@ -4,6 +4,11 @@ tags: [content, research, hooks]
 
 # Mama-Business Schmerz-Themen-Pool
 
+> 🎯 **Der verbindliche Stand steht seit 13.09.2026 in `.claude/skills/hooks/SKILL.md`.**
+> Dort ist alles zusammengefasst: Kundensprache, Bewusstseinsstufen, Angles, 27 Formeln,
+> 10 Reveal-Frameworks, 50 Vorlagen, Voice-Kniffe, Verbote und der Hook-Check.
+> **Diese Datei hier ist die Herkunft** — bei Abweichungen gewinnt der Skill.
+
 **Zweck:** Themen-Bank für Reels/Stories/Captions. Sortiert nach Reichweiten-Kraft (Daten aus den A/B/C-Tests Juni 2026). Pflicht-Lese vor Reichweiten-Content.
 
 **Goldene Regel (datenbelegt):** Reichweite = **universeller Mama-Lebens-Schmerz** + **candid Home-Video beim Tun**. Business-interne Themen floppen im Feed (~100-140 Views) — die gehören in Stories + Mails. Siehe Memory `feedback_reel-test-fatigue-themen-rotieren`.

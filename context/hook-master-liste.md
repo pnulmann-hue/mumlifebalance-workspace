@@ -4,6 +4,11 @@ tags: [content, hooks, reference]
 
 # Hook-Master-Liste — alle Hook-Formeln
 
+> 🎯 **Der verbindliche Stand steht seit 13.09.2026 in `.claude/skills/hooks/SKILL.md`.**
+> Dort ist alles zusammengefasst: Kundensprache, Bewusstseinsstufen, Angles, 27 Formeln,
+> 10 Reveal-Frameworks, 50 Vorlagen, Voice-Kniffe, Verbote und der Hook-Check.
+> **Diese Datei hier ist die Herkunft** — bei Abweichungen gewinnt der Skill.
+
 **Zweck:** Der komplette Hook-Vorrat deines Content-Assistenten an EINEM Ort. Wird von `/monats-hooks`, `/hooks` und `/freitag-hooks` gelesen. **Erfinden ist verboten — hier auswählen und auf Thema + Zielgruppe zuschneiden.**
 
 **Jeder Hook ist mit Content-Art getaggt:** `[P]` Persönlichkeit · `[E]` Expertise · `[I]` Inspiration.

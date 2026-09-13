@@ -4,6 +4,11 @@ tags: [content, framework, hooks]
 
 # Hook-Framework — Instagram Karussells
 
+> 🎯 **Der verbindliche Stand steht seit 13.09.2026 in `.claude/skills/hooks/SKILL.md`.**
+> Dort ist alles zusammengefasst: Kundensprache, Bewusstseinsstufen, Angles, 27 Formeln,
+> 10 Reveal-Frameworks, 50 Vorlagen, Voice-Kniffe, Verbote und der Hook-Check.
+> **Diese Datei hier ist die Herkunft** — bei Abweichungen gewinnt der Skill.
+
 > **PFLICHT vor jedem Hook-Output:** [`ki-phrasen-blackliste.md`](ki-phrasen-blackliste.md) — 5-Punkte-Pflicht-Prüfung. Besonders scharf: keine Nicht/Sondern-Konstrukte, keine „Stell dir vor...", keine „So wirst du...", keine Marketing-Buzzwords („Game-Changer", „Level-Up", „Die ultimative..."), keine abstrakten Benefits („Leichtigkeit", „Balance", „sichtbar werden"). Bei Konflikt mit Julia-Trost-Templates: **Blackliste gewinnt.**
 
 Hooks sind die Cover-Slide-Headlines. Sie entscheiden, ob jemand swiped oder weiterscrollt.
@@ -114,11 +119,13 @@ Hybridmodell · sichtbar werden · Reichweite · Algorithmus · Content-Strategi
 Diese Wörter sind Patricias Antwort. Wer sie versteht, kennt das Angebot schon — und genau die
 erreicht sie ohnehin. Der Engpass sind die anderen.
 
-**2 — Keine Anleitungs-Formel.**
-Gesperrt: „So findest du…" · „So machst du…" · „In 3 Schritten zu…" · „X Tipps für…" ·
-„Die 5 Fehler, die…".
-Das liest sich als Hausaufgabe. Ein Hook ist ein Spiegel, kein Kursmodul. Die Formel allein reicht
-zum Wegscrollen, auch wenn danach ein symptombewusstes Wort steht.
+**2 — Anleitungs-Formeln: aufgehoben am 13.09.2026, jetzt „mit Bedacht".**
+~~Gesperrt: „So findest du…" · „So machst du…" · „In 3 Schritten zu…" · „X Tipps für…"~~
+Der Beleg für dieses Verbot war **ein einziges Reel** (10.09.), das gleichzeitig drei Probleme
+hatte: Anleitungs-Formel UND Lösungswort („eigenes Thema") UND ein business-internes Thema aus
+der roten Liste. Welche Variable die Reichweite gekostet hat, ist nicht belegt.
+**Jetzt gilt:** für kalte Reichweite zurückhaltend, für warme Zielgruppe regulär. Das Prüfskript
+meldet diese Formeln als **gelb**, nicht als Fehler. Volle Begründung in Teil 6 des Hook-Skills.
 
 **Was stattdessen trägt:**
 - der wörtliche innere Satz: „Ich bin doch keine Expertin."
