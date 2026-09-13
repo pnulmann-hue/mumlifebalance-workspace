@@ -5,7 +5,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap">
 <style>
-@page { size: A4; margin: 15mm 16mm 20mm; }
+@page { size: A4; margin: 0; }
 
 :root {
   --creme:#f1ecdd; --papier:#faf7ef; --petrol:#12828c; --tief:#29556d;
@@ -14,36 +14,47 @@
 * { box-sizing:border-box; margin:0; padding:0; }
 html { background:var(--creme); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
 body { font-family:"Source Sans 3",system-ui,sans-serif; color:var(--tinte); background:var(--creme);
-       font-size:10.6pt; line-height:1.5; }
+       font-size:11pt; line-height:1.58; }
 
 h1,h2,h3 { font-family:Philosopher,Georgia,serif; font-weight:700; line-height:1.15; }
 
-.tag { page-break-before:always; }
-.tag:first-of-type { page-break-before:auto; }
+/* Jede Seite ist ein eigener, randlos beiger Kasten — dadurch kein weisser Rand. */
+.seite {
+  width:210mm; min-height:297mm; padding:17mm 18mm 13mm;
+  background:var(--creme); page-break-after:always;
+  display:flex; flex-direction:column; gap:7mm;
+}
+.seite:last-child { page-break-after:auto; }
 
-.titel { border-bottom:2.5pt solid var(--petrol); padding-bottom:4mm; margin-bottom:6mm; page-break-after:avoid; }
+.seitenfuss {
+  margin-top:auto; padding-top:5mm; border-top:.5pt solid var(--linie);
+  font-size:8.6pt; color:var(--leise); display:flex; justify-content:space-between; gap:6mm;
+}
+.seitenfuss b { color:var(--petrol); font-weight:700; }
+
+.titel { border-bottom:2.5pt solid var(--petrol); padding-bottom:4mm; page-break-after:avoid; }
 .eyebrow { font-size:8.5pt; letter-spacing:.18em; text-transform:uppercase; font-weight:700;
            color:var(--petrol); display:block; margin-bottom:2.5mm; }
-h1 { font-size:25pt; margin-bottom:2mm; }
-.unterzeile { font-size:11pt; color:var(--leise); max-width:135mm; }
+h1 { font-size:26pt; margin-bottom:2.5mm; }
+.unterzeile { font-size:11.4pt; color:var(--leise); max-width:140mm; }
 
-.kernsatz { background:var(--petrol); color:#f7f4ec; padding:5mm 6.5mm; border-radius:1.5mm;
-            margin-bottom:6.5mm; page-break-inside:avoid; }
+.kernsatz { background:var(--petrol); color:#f7f4ec; padding:6mm 7mm; border-radius:1.5mm;
+            page-break-inside:avoid; }
 .kernsatz p { font-family:Philosopher,Georgia,serif; font-size:15.5pt; line-height:1.3; }
 
-.block { display:flex; flex-direction:column; gap:3.2mm; margin-bottom:6.5mm; page-break-inside:avoid; }
+.block { display:flex; flex-direction:column; gap:3.6mm; page-break-inside:avoid; }
 h2 { font-size:17.5pt; color:var(--tief); display:flex; align-items:baseline; gap:3mm;
      page-break-after:avoid; margin-bottom:1mm; }
 h2 .nr { font-size:10pt; color:var(--orange); font-family:"Source Sans 3",sans-serif; font-weight:700; }
 .block p { max-width:none; }
-.intro { color:var(--leise); font-size:10.4pt; }
+.intro { color:var(--leise); font-size:10.8pt; }
 b, strong { font-weight:600; color:var(--tief); }
 
 .zahlen { display:grid; grid-template-columns:1fr 1fr; gap:3.5mm; }
 .zahl-kachel { background:var(--papier); border-left:2.5pt solid var(--orange); border-radius:1mm;
                padding:4mm 4.5mm; page-break-inside:avoid; display:flex; flex-direction:column; gap:1mm; }
 .zahl-kachel b { font-family:Philosopher,Georgia,serif; font-size:19pt; color:var(--tief); line-height:1; }
-.zahl-kachel span { font-size:9.7pt; line-height:1.4; }
+.zahl-kachel span { font-size:10pt; line-height:1.48; }
 
 .irrtum { display:grid; grid-template-columns:1fr 1fr; gap:0 6mm; padding:3.4mm 0;
           border-bottom:.5pt solid var(--linie); page-break-inside:avoid; }
@@ -53,7 +64,7 @@ b, strong { font-weight:600; color:var(--tief); }
 .irrtum .kopf { font-size:8.5pt; letter-spacing:.09em; text-transform:uppercase; font-weight:700; }
 .irrtum .falsch .kopf { color:var(--rost); }
 .irrtum .richtig .kopf { color:var(--petrol); }
-.irrtum p { font-size:9.9pt; line-height:1.42; }
+.irrtum p { font-size:10.2pt; line-height:1.5; }
 
 .schritte { display:flex; flex-direction:column; }
 .schritt { display:grid; grid-template-columns:9mm 1fr; gap:3mm; padding:3.2mm 0;
@@ -61,24 +72,24 @@ b, strong { font-weight:600; color:var(--tief); }
 .schritt:first-of-type { border-top:.5pt solid var(--linie); }
 .schritt .haken { color:var(--orange); font-size:13pt; font-weight:700; }
 .schritt b { font-size:11pt; font-weight:600; display:block; margin-bottom:.8mm; color:var(--tinte); }
-.schritt span { font-size:9.9pt; color:var(--leise); line-height:1.45; }
+.schritt span { font-size:10.2pt; color:var(--leise); line-height:1.5; }
 
 .merksatz { background:var(--papier); border:.5pt solid var(--petrol); border-left:3pt solid var(--petrol);
-            border-radius:1mm; padding:5mm 5.5mm; margin-bottom:6.5mm; page-break-inside:avoid; }
+            border-radius:1mm; padding:5.5mm 6mm; page-break-inside:avoid; }
 .merksatz p { font-family:Philosopher,Georgia,serif; font-size:13pt; line-height:1.35; color:var(--tief); }
 
 .beimir { background:var(--papier); border:.5pt solid var(--linie); border-top:2pt solid var(--tief);
-          border-radius:1mm; padding:5mm 5.5mm; margin-bottom:6.5mm; page-break-inside:avoid;
-          display:flex; flex-direction:column; gap:2.5mm; }
+          border-radius:1mm; padding:5.5mm 6mm; page-break-inside:avoid;
+          display:flex; flex-direction:column; gap:2.8mm; }
 .beimir .label { font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:var(--tief); }
-.beimir p { font-size:10.3pt; line-height:1.5; }
+.beimir p { font-size:10.7pt; line-height:1.56; }
 
 .oele { background:var(--papier); border:.5pt solid var(--petrol); border-radius:1mm;
-        padding:5mm 5.5mm; margin-bottom:6.5mm; page-break-inside:avoid;
-        display:flex; flex-direction:column; gap:2.5mm; }
+        padding:5.5mm 6mm; page-break-inside:avoid;
+        display:flex; flex-direction:column; gap:2.8mm; }
 .oele .label { font-family:Philosopher,Georgia,serif; font-size:13pt; color:var(--petrol); }
 .oele .rezept { font-weight:600; color:var(--tief); font-size:11pt; }
-.oele p { font-size:10.2pt; line-height:1.48; }
+.oele p { font-size:10.5pt; line-height:1.55; }
 .oele .warnung { color:var(--rost); font-size:9.8pt; border-top:.5pt dotted var(--linie); padding-top:2.5mm; }
 .oele .warnung b { color:var(--rost); }
 
@@ -87,8 +98,8 @@ table.vergleich { border-collapse:collapse; width:100%; background:var(--papier)
 table.vergleich th { text-align:left; font-size:8.5pt; letter-spacing:.08em; text-transform:uppercase;
                      font-weight:700; color:var(--leise); padding:3.5mm 4mm; background:var(--creme);
                      border-bottom:.5pt solid var(--linie); }
-table.vergleich td { padding:3.5mm 4mm; border-bottom:.5pt solid var(--linie); font-size:9.9pt;
-                     line-height:1.42; vertical-align:top; }
+table.vergleich td { padding:3.8mm 4.2mm; border-bottom:.5pt solid var(--linie); font-size:10.2pt;
+                     line-height:1.5; vertical-align:top; }
 table.vergleich tr:last-child td { border-bottom:none; }
 table.vergleich td.mittel { font-weight:600; color:var(--tief); width:31%; }
 
@@ -102,8 +113,7 @@ table.vergleich td.mittel { font-weight:600; color:var(--tief); width:31%; }
 .abschluss p { font-size:10.8pt; line-height:1.55; }
 .abschluss .danke { font-family:Philosopher,Georgia,serif; font-size:13pt; opacity:.9; }
 </style>
-
-<div class="tag">
+<div class="seite">
   <div class="titel">
     <span class="eyebrow">Immunwoche · Tag 4 von 5 · Donnerstag</span>
     <h1>Die Rituale und die Öle</h1>
@@ -118,7 +128,7 @@ table.vergleich td.mittel { font-weight:600; color:var(--tief); width:31%; }
 <p>Ein Ritual braucht keine. Es hält, wenn es an etwas andockt, das <b>ohnehin jeden Tag passiert</b>: nach dem Zähneputzen, bevor du den Kaffee eingiesst, wenn du die Schuhe der Kinder hinstellst. Der Anker macht die Arbeit, nicht deine Disziplin.</p>
 <p>Und es muss <b>kurz</b> sein. Zwanzig Sekunden sind so kurz, dass dein Kopf gar nicht erst anfängt zu verhandeln.</p>
 </section>
-
+  
 <section class="block">
   <h2><span class="nr">02</span> Das langweiligste Ritual ist das wirksamste</h2>
   <p class="intro">Ich sage das ganz ehrlich, auch wenn es sich nicht spannend verkauft.</p>
@@ -126,7 +136,10 @@ table.vergleich td.mittel { font-weight:600; color:var(--tief); width:31%; }
 <p>Zum Vergleich: Das ist mehr, als in dieser ganzen Woche irgendein Nahrungsergänzungsmittel geschafft hat. Vitamin C verkürzt eine Erkältung um acht Prozent. Händewaschen verhindert jede vierte.</p>
 <p>Und daher kommen die zwanzig Sekunden: So lange braucht Seife, um ihre Arbeit zu tun. Nicht drei Sekunden unter den Hahn halten.</p>
 </section>
-
+  <div class="seitenfuss"><span>Immunwoche · Tag 4 · Die Rituale und die Öle</span><span><b>Mum Life Balance</b> · Seite 1</span></div>
+</div>
+<div class="seite">
+  
 <section class="block">
   <h2><span class="nr">03</span> Was ätherische Öle überhaupt sind</h2>
   <p class="intro">Für alle, die noch keine haben — hier fängt es an.</p>
@@ -134,7 +147,10 @@ table.vergleich td.mittel { font-weight:600; color:var(--tief); width:31%; }
 <p>Genau das steckt in so einem Fläschchen: <b>die Abwehrchemie der Pflanze, hochkonzentriert.</b> Das ist der ganze Zauber, und es erklärt beides auf einmal — warum diese Stoffe überhaupt gegen Keime wirken können, und warum sie so stark sind, dass man sie verdünnen muss.</p>
 <p>Ätherisch heisst übrigens nur, dass sie sich verflüchtigen. Es sind keine fetten Öle wie Olivenöl, sondern leichte Moleküle, die in die Luft übergehen — deshalb riecht man sie überhaupt, und deshalb funktioniert ein Diffuser.</p>
 </section>
-
+  <div class="seitenfuss"><span>Immunwoche · Tag 4 · Die Rituale und die Öle</span><span><b>Mum Life Balance</b> · Seite 2</span></div>
+</div>
+<div class="seite">
+  
 <section class="block">
   <h2><span class="nr">04</span> Warum Öle überhaupt etwas tun — die Chemie</h2>
   <p class="intro">Das ist der Teil, den ich am wichtigsten finde. Öle wirken nicht, weil sie gut riechen. Sie wirken, weil ihre Moleküle etwas können.</p>
@@ -147,7 +163,10 @@ table.vergleich td.mittel { font-weight:600; color:var(--tief); width:31%; }
 <p><b>Viertens: Sie senken messbar Stresshormone.</b> Linalool und Linalylacetat aus dem Lavendel können die <b>Cortisolausschüttung über die Hypothalamus-Hypophysen-Nebennieren-Achse</b> reduzieren. Auch Weihrauch wirkt regulierend auf die Cortisolproduktion. Das ist keine Stimmungssache — das ist eine messbare Hormonachse.</p>
 <p><b>Fünftens: Sie greifen Keime direkt an.</b> Und zwar mechanisch, nicht mystisch. <b>Carvacrol und Thymol</b> aus dem Oregano destabilisieren die Zellwände von Bakterien. <b>Terpinen-4-ol</b> aus dem Teebaum zerstört die Zellmembran von Pilzen — deshalb wird Teebaumöl seit jeher bei Fusspilz und Nagelpilz eingesetzt. <b>Citral</b> aus dem Zitronengras hemmt Enzyme, die Mikroben zum Wachsen brauchen. Und <b>Leptospermone</b> aus dem Manuka wirken sogar gegen Bakterien, die auf herkömmliche Antibiotika nicht mehr ansprechen.</p>
 </section>
-
+  <div class="seitenfuss"><span>Immunwoche · Tag 4 · Die Rituale und die Öle</span><span><b>Mum Life Balance</b> · Seite 3</span></div>
+</div>
+<div class="seite">
+  
 <section class="block">
   <h2><span class="nr">05</span> Und warum das Vorsorge ist</h2>
   <p class="intro">Jetzt setzt sich alles zusammen — das ist die Antwort auf „warum regelmässig".</p>
@@ -157,7 +176,7 @@ table.vergleich td.mittel { font-weight:600; color:var(--tief); width:31%; }
 <p><b>Du senkst die Keimlast, wo du sie erreichst.</b> Auf der Haut, in der Nase, an den Händen. Nicht im ganzen Raum — aber dort, wo du das Öl tatsächlich hinbringst.</p>
 <p>Dazu kommt etwas, das jede Mama vom Einschlafritual ihrer Kinder kennt: <b>Ein Duft, der immer mit Runterfahren verknüpft war, löst das Runterfahren irgendwann selbst aus.</b> Dein Körper lernt die Verknüpfung, und nach ein paar Wochen reicht der Geruch.</p>
 </section>
-
+  
 <section class="block">
   <h2><span class="nr">06</span> Was die Studien am Menschen zeigen</h2>
   <p class="intro">Ich sage bewusst dazu, wo die Forschung stark ist und wo sie noch dünn ist.</p>
@@ -166,23 +185,79 @@ table.vergleich td.mittel { font-weight:600; color:var(--tief); width:31%; }
 <p><b>Die Gesamtschau.</b> Zwei grosse Übersichtsarbeiten von 2024 fassen zusammen, dass ätherische Öle in Labor- und Tierstudien Bakterien, Pilze und teilweise Viren hemmen, oxidativen Stress senken und Entzündungsprozesse steuern können.</p>
 <p>⚠️ Und die Ehrlichkeit, die dazugehört: <b>Dieselben Übersichtsarbeiten sagen auch, dass es mehr kontrollierte Studien am Menschen braucht</b>, um ein vollständiges Bild zu bekommen. Vieles ist aus dem Labor, nicht aus dem Wohnzimmer. Wer das mitsagt, ist glaubwürdiger als jemand, der es weglässt.</p>
 </section>
-
+  <div class="seitenfuss"><span>Immunwoche · Tag 4 · Die Rituale und die Öle</span><span><b>Mum Life Balance</b> · Seite 4</span></div>
+</div>
+<div class="seite">
+  
 <section class="block">
   <h2><span class="nr">07</span> Wenn du noch gar keine Öle hast</h2>
-  <p class="intro">Du brauchst nicht dreissig Fläschchen. Drei reichen für den Anfang.</p>
-  <p><b>Eins zum Runterfahren:</b> Lavendel. Das ist das vielseitigste und sanfteste Öl überhaupt, und es ist dasjenige mit den meisten Studien im Rücken.</p>
-<p><b>Eins für die Atemwege:</b> Eukalyptus — oder eine fertige Atemwegsmischung wie Air, wenn du nichts selbst mischen willst.</p>
-<p><b>Eins für Frische und Reinigung:</b> Zitrone. Riecht nach saubergemacht, lässt sich im Haushalt verwenden und ist günstig.</p>
-<p>Mehr braucht am Anfang niemand. Alles andere kommt, wenn du merkst, was du tatsächlich benutzt — und nicht umgekehrt.</p>
+  <p class="intro">Die häufigste Frage — und sie hat eine einfache Antwort. Du musst nicht auswählen.</p>
+  <p>Das Problem am Anfang ist nicht, dass es zu wenig Auswahl gäbe. Es ist, dass es zu viel ist. Und wer sich drei Fläschchen einzeln zusammensucht, merkt nach zwei Wochen, dass genau das fehlt, was er nicht gekauft hat.</p>
+<p>Deshalb gibt es die <b>zehn Basis-Öle</b> als fertiges Set. Diese zehn decken zusammen ab, was in einem Haushalt tatsächlich vorkommt — nicht nur in der Immunwoche, sondern das ganze Jahr. Hier steht, was jedes einzelne tut und <b>warum</b> es das tut.</p>
 </section>
-
+  <div class="seitenfuss"><span>Immunwoche · Tag 4 · Die Rituale und die Öle</span><span><b>Mum Life Balance</b> · Seite 5</span></div>
+</div>
+<div class="seite">
+  
+<div class="tab-huelle">
+  <table class="vergleich">
+    <thead><tr><th>Einzelöl</th><th>Was es tut</th><th>Der Stoff dahinter</th></tr></thead>
+    <tbody>
+      <tr><td class="mittel"><b>Lavendel</b><br><span style="font-weight:400;color:#63747b">Beruhigung, Haut, Schlaf</span></td><td>Beruhigt die Nerven, hilft beim Einschlafen, entzündungshemmend und hautberuhigend bei Reizungen, Verbrennungen, Insektenstichen.</td><td><b>Linalool</b> erhöht die Aktivität der GABA-Rezeptoren, des körpereigenen Bremssystems. <b>Linalylacetat</b> senkt zusätzlich Cortisol über die Hormonachse.</td></tr>
+      <tr><td class="mittel"><b>Weihrauch</b><br><span style="font-weight:400;color:#63747b">Zellschutz, Entzündung, Haut</span></td><td>Zellschützend und regenerierend, unterstützt die Wundheilung, wirkt beruhigend und schmerzlindernd. Das „Königsöl" im Set.</td><td><b>Alpha-Pinen und Incensol</b> hemmen den NF-κB-Signalweg — einen zentralen Schalter der Entzündungsreaktion. Wirkt zusätzlich regulierend auf Cortisol.</td></tr>
+      <tr><td class="mittel"><b>Teebaum</b><br><span style="font-weight:400;color:#63747b">das Reinigungsöl</span></td><td>Stark antibakteriell, hautklärend. Bei kleinen Wunden, Unreinheiten, Schuppen, Fusspilz, Zeckenbiss.</td><td><b>Terpinen-4-ol</b> zerstört die Zellmembran von Pilzen und Bakterien. Einer der am besten untersuchten antimikrobiellen Pflanzenstoffe überhaupt.</td></tr>
+      <tr><td class="mittel"><b>Oregano</b><br><span style="font-weight:400;color:#63747b">das stärkste im Set</span></td><td>Das kraftvollste Öl der zehn. Bei Warzen, Nagelpilz, im Fussbad, im Winter zusammen mit Zitrone und On Guard.</td><td><b>Carvacrol und Thymol</b> destabilisieren die Zellwände von Bakterien. Genau deshalb ist es auch ein „heisses" Öl — stark verdünnen, nicht bei kleinen Kindern.</td></tr>
+      <tr><td class="mittel"><b>Zitrone</b><br><span style="font-weight:400;color:#63747b">der Allrounder</span></td><td>Frisch, reinigend, stimmungsaufhellend. Im Wasser, im Haushalt, im Kuchen, bei Halskratzen mit Honig.</td><td><b>Limonen</b> — antimikrobiell und stark antioxidativ. Reich an Flavonoiden. ⚠️ Macht die Haut lichtempfindlich: nach dem Auftragen nicht in die Sonne.</td></tr>
+      <tr><td class="mittel"><b>Pfefferminze</b><br><span style="font-weight:400;color:#63747b">Kühlung und Klarheit</span></td><td>Kühlend und erfrischend, bei Spannungsgefühl in Kopf und Nacken, bei Übelkeit, für Wachheit.</td><td><b>Menthol</b> aktiviert die Kälterezeptoren der Haut und Schleimhaut — daher das Frischegefühl. Im Labor zeigt Pfefferminzöl Wirkung auch gegen schwer behandelbare Keime.</td></tr>
+    </tbody>
+  </table>
+</div>
+  <div class="seitenfuss"><span>Immunwoche · Tag 4 · Die Rituale und die Öle</span><span><b>Mum Life Balance</b> · Seite 6</span></div>
+</div>
+<div class="seite">
+  
+<section class="block">
+  <h2><span class="nr">08</span> Und die vier fertigen Mischungen</h2>
+  <p class="intro">Die musst du nicht selbst zusammenstellen — sie sind schon gemischt.</p>
+  
+<div class="tab-huelle">
+  <table class="vergleich">
+    <thead><tr><th>Mischung</th><th>Was sie tut</th><th>Was drin ist und warum</th></tr></thead>
+    <tbody>
+      <tr><td class="mittel"><b>On Guard</b><br><span style="font-weight:400;color:#63747b">die schützende Mischung</span></td><td>Das Immunwoche-Öl schlechthin. Für die Morgenroutine, als Mundspülung, im Diffuser, als Haushaltsreiniger.</td><td>Wild Orange, <b>Nelke</b> (Eugenol), <b>Zimt</b> (Zimtaldehyd), <b>Eukalyptus</b> und <b>Rosmarin</b> (beide 1,8-Cineol). Eine Kombination aus vier verschiedenen antimikrobiellen Wirkstoffklassen.</td></tr>
+      <tr><td class="mittel"><b>Air</b><br><span style="font-weight:400;color:#63747b">die Atemwegsmischung</span></td><td>Schleimlösend und befreiend. Abends im Diffuser bei verstopfter Nase oder Husten, verdünnt auf Brust und Rücken.</td><td>Lorbeer, <b>Eukalyptus</b>, Pfefferminze, Teebaum, Zitrone, Kardamom, <b>Ravintsara</b>. Der Wirkstoff ist <b>1,8-Cineol</b> — er verflüssigt Sekret und treibt die Flimmerhärchen an.</td></tr>
+      <tr><td class="mittel"><b>ZenGest</b><br><span style="font-weight:400;color:#63747b">die Verdauungsmischung</span></td><td>Nach dem Essen auf den Bauch, bei Übelkeit unterwegs, bei Blähungen und Krämpfen.</td><td>Ingwer (<b>Gingerole</b>), Pfefferminze, Fenchel und Anis (<b>Anethol</b>), Kümmel, Koriander — krampflösend auf die glatte Muskulatur im Magen-Darm-Bereich.</td></tr>
+      <tr><td class="mittel"><b>Deep Blue</b><br><span style="font-weight:400;color:#63747b">die lindernde Mischung</span></td><td>Bei Verspannungen, Muskel- und Gelenkschmerzen, Kopfschmerzen, nach dem Sport.</td><td><b>Wintergrün</b> enthält Methylsalicylat — chemisch aus derselben Familie wie der Aspirin-Wirkstoff. Dazu Kampfer und Menthol für den Kühleffekt. ⚠️ Nicht bei kleinen Kindern, nicht bei Blutverdünnern.</td></tr>
+    </tbody>
+  </table>
+</div>
+</section>
+  <div class="seitenfuss"><span>Immunwoche · Tag 4 · Die Rituale und die Öle</span><span><b>Mum Life Balance</b> · Seite 7</span></div>
+</div>
+<div class="seite">
+  
+<section class="block">
+  <h2><span class="nr">09</span> Warum genau diese zehn — und nicht drei</h2>
+  
+  <p>Schau dir die rechte Spalte noch einmal an. Da stehen <b>Linalool, Alpha-Pinen, Eugenol, Zimtaldehyd, 1,8-Cineol, Terpinen-4-ol, Carvacrol, Thymol, Limonen, Menthol, Gingerole, Anethol und Methylsalicylat.</b></p>
+<p>Das sind <b>dreizehn verschiedene Wirkstoffklassen</b> in zehn Fläschchen. Jede greift an einer anderen Stelle an: an Rezeptoren, an Zellwänden von Keimen, an Entzündungsschaltern, an der Schleimproduktion, an Nervenenden.</p>
+<p>Genau das ist der Grund, warum ein Set mehr ist als die Summe seiner Teile: <b>Du deckst nicht ein Problem ab, sondern eine ganze Bandbreite.</b> Und du merkst erst beim Benutzen, welches davon deins wird.</p>
+<p>Für diese Woche brauchst du vor allem <b>On Guard, Air, Lavendel und Zitrone</b>. Die anderen sechs wirst du trotzdem benutzen — nur an Tagen, an denen es nicht um Erkältung geht.</p>
+</section>
+  
 <div class="oele">
   <span class="label">🛡️ Sicherheit — das Wichtigste in einem Block</span>
   <p class="rezept">Immer verdünnen · Zitrusöle nicht vor die Sonne · heisse Öle mit Respekt</p>
   <p>Ein bis zwei Tropfen auf einen Teelöffel Trägeröl reichen völlig — Mandel-, Jojoba- oder Kokosöl. Nie in die Augen und nicht in die Ohren. Zitrusöle wie Zitrone und Bergamotte machen die Haut lichtempfindlich, also nach dem Auftragen einige Stunden nicht in die Sonne. Bei Schwangerschaft, Asthma, Epilepsie oder bei Säuglingen vorher mit der Ärztin sprechen.</p>
   <p class="warnung">⚠️ „Heisse" Öle sind Oregano, Zimt, Nelke und Thymian — stark verdünnen, nicht bei kleinen Kindern. Und beim Kauf auf den botanischen Namen auf dem Etikett achten. Steht nur „Lavendelöl" ohne <i>Lavandula angustifolia</i> drauf, weisst du nicht, was drin ist.</p>
 </div>
-<h2><span class="nr">08</span> Die vier häufigsten Irrtümer</h2>
+  <div class="seitenfuss"><span>Immunwoche · Tag 4 · Die Rituale und die Öle</span><span><b>Mum Life Balance</b> · Seite 8</span></div>
+</div>
+<div class="seite">
+  
+<section class="block">
+  <h2><span class="nr">10</span> Die vier häufigsten Irrtümer</h2>
+  
 <div class="irrtum">
   <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Ich muss erst mal alles umstellen."</p></div>
   <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Nein. Ein einziger Anker reicht. Wer diese Woche fünf Dinge gleichzeitig anfängt, macht in zwei Wochen wieder null. Wer eins anfängt, macht in zwei Wochen eins.</p></div>
@@ -202,9 +277,13 @@ table.vergleich td.mittel { font-weight:600; color:var(--tief); width:31%; }
   <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Öle statt der Basics."</p></div>
   <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Andersrum. Erst Schlaf, Teller, Bewegung und Seife — dann die Öle als das, was die Routine trägt. Wer es umdreht, wundert sich, dass nichts passiert.</p></div>
 </div>
-
+</section>
+  <div class="seitenfuss"><span>Immunwoche · Tag 4 · Die Rituale und die Öle</span><span><b>Mum Life Balance</b> · Seite 9</span></div>
+</div>
+<div class="seite">
+  
 <section class="block">
-  <h2><span class="nr">09</span> Die Zahlen für heute</h2>
+  <h2><span class="nr">11</span> Die Zahlen für heute</h2>
   
   
 <div class="zahlen">
@@ -215,26 +294,29 @@ table.vergleich td.mittel { font-weight:600; color:var(--tief); width:31%; }
   <div class="zahl-kachel"><b>20 Sek</b><span>braucht Seife, um zu wirken. Und genauso lang dauert die Morgenroutine mit dem Stick.</span></div>
   <div class="zahl-kachel"><b>44</b><span>randomisierte Studien mit über 3400 Menschen zeigen: Inhalation senkt Anspannung — messbar an Puls und Blutdruck.</span></div>
   <div class="zahl-kachel"><b>80–95 %</b><span>des Eucalyptus radiata besteht aus 1,8-Cineol. Das ist kein Spurenstoff, das ist der Hauptbestandteil.</span></div>
-  <div class="zahl-kachel"><b>3</b><span>Öle reichen für den Anfang. Lavendel, Eukalyptus, Zitrone. Mehr braucht niemand am ersten Tag.</span></div>
+  <div class="zahl-kachel"><b>13</b><span>verschiedene Wirkstoffklassen stecken in den zehn Basis-Ölen. Deshalb ein Set und nicht drei Fläschchen.</span></div>
 </div>
 </section>
-
+  
 <div class="beimir">
   <span class="label">Bei mir läuft das so</span>
   <p>Das ist mein Lieblingsteil — die kleinen Rituale, genau wie im Reel: die zwanzig Sekunden am Morgen.</p>
 <p>Mein Favorit gerade ist der neue On Guard Stick mit Echinacea. Sekundenschnell aufgetragen, kein Verdünnen nötig, ideal für unterwegs und für die Schule. Es geht aber genauso mit On Guard verdünnt oder mit dem Stronger-Roller, der für die Kinder schon fertig verdünnt ist. On Guard ist die schützende Mischung aus Wilder Orange, Nelke, Zimt, Eukalyptus und Rosmarin — die steckt auch im Home Essentials Kit drin.</p>
 <p>Bei uns läuft das so: Schuhe an, Stick auf die Fusssohlen, Tür auf. Niemand muss daran denken, es gehört einfach dazu.</p>
 </div>
-
+  <div class="seitenfuss"><span>Immunwoche · Tag 4 · Die Rituale und die Öle</span><span><b>Mum Life Balance</b> · Seite 10</span></div>
+</div>
+<div class="seite">
+  
 <div class="oele">
   <span class="label">⭐ Immun-Roller (10 ml)</span>
   <p class="rezept">3 Tropfen On Guard · 2 Tropfen Oregano · 3 Tropfen Lemon, aufgefüllt mit Trägeröl</p>
   <p>Morgens auf die Fusssohlen einreiben. Für unterwegs ist der fertige Stick praktischer, aber selbst gemischt ist er günstiger.</p>
   <p class="warnung">⚠️ Oregano ist ein „heisses" Öl — gut verdünnen und <b>nicht bei Kleinkindern</b> anwenden. Für die Kinder den On Guard Stick oder den Stronger-Roller nehmen.</p>
 </div>
-
+  
 <section class="block">
-  <h2><span class="nr">10</span> Was du heute tun kannst</h2>
+  <h2><span class="nr">12</span> Was du heute tun kannst</h2>
   <p class="intro">Eins davon. Und dann sieben Tage lang dasselbe.</p>
   
 <div class="schritte">
@@ -244,6 +326,7 @@ table.vergleich td.mittel { font-weight:600; color:var(--tief); width:31%; }
   <div class="schritt"><span class="haken">✓</span><div><b>Gib den Kindern ihr eigenes.</b><span>Ein eigener Stick oder ein eigener Diffuser macht aus deiner Regel ihre Sache.</span></div></div>
 </div>
 </section>
-<div class="merksatz"><p>Nicht das perfekte Ritual gewinnt. Das gewinnt, das du auch am Donnerstag noch machst, wenn der Morgen schon schiefgegangen ist.</p></div>
-<p class="morgen"><span>Morgen</span> Wenn es doch mal kommt — ruhig der Reihe nach.</p>
+  <div class="merksatz"><p>Nicht das perfekte Ritual gewinnt. Das gewinnt, das du auch am Donnerstag noch machst, wenn der Morgen schon schiefgegangen ist.</p></div>
+  <p class="morgen"><span>Morgen</span> Wenn es doch mal kommt — ruhig der Reihe nach.</p>
+  <div class="seitenfuss"><span>Immunwoche · Tag 4 · Die Rituale und die Öle</span><span><b>Mum Life Balance</b> · Seite 11</span></div>
 </div>
