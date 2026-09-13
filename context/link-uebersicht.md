@@ -70,6 +70,16 @@ Die Landingpage war seit dem 8. Juli als leerer Entwurf in WordPress (nur ein Pl
 | MBA-Warteliste | https://mumlifebalance.ch/mba-warteliste | 🟢 200 |
 | Blog | https://mumlifebalance.ch/blog/ | 🟢 200 |
 
+### Rechtliches — gehört in den Footer jeder Landingpage
+
+| Was | Link | Status |
+|---|---|---|
+| Impressum | https://mumlifebalance.ch/impressum/ | 🟢 200 (geprüft 13.09.2026) |
+| Datenschutzerklärung | https://mumlifebalance.ch/datenschutzerklaerung/ | 🟢 200 (geprüft 13.09.2026) |
+| AGB | — | 🔴 **existiert nicht** — `/agb/`, `/widerruf/`, `/nutzungsbedingungen/` liefern 404 |
+
+⚠️ **Keinen AGB-Link in einen Footer setzen**, solange die Seite nicht existiert — ein toter Rechtslink ist schlimmer als keiner. Beim Verkauf greifen bis dahin die Bedingungen, die ThriveCart im Checkout anzeigt.
+
 ⚠️ **Preis-Integrität MBA:** Nie aus einem Evergreen-Produkt direkt zum 1347er-Link verlinken — das widerspricht dem 997er-Event-Preis.
 
 ---
