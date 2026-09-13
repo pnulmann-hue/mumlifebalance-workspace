@@ -1,0 +1,213 @@
+<meta charset="utf-8">
+<title>Titelbild-Editor</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,700&family=Source+Sans+3:wght@400;600;700&display=swap');
+  :root{
+    --petrol:#12828c; --blau:#1E3A4C; --orange:#D6832F; --creme:#f1ecdd;
+    --bg:#f5f1e6; --panel:#fff; --ink:#26302f; --muted:#6f7c89; --line:#e4ddc9;
+  }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:#12181c; --panel:#1b242a; --ink:#eef1f0; --muted:#9fb0ac; --line:#2a353c; } }
+  :root[data-theme="dark"]{ --bg:#12181c; --panel:#1b242a; --ink:#eef1f0; --muted:#9fb0ac; --line:#2a353c; }
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif}
+  .layout>div{min-width:0}
+  .top{max-width:1180px;margin:0 auto;padding:22px 18px 6px}
+  .kick{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange)}
+  h1{font-family:"Philosopher",serif;font-size:30px;margin:2px 0 2px}
+  .sub{color:var(--muted);font-size:14px}
+  .layout{max-width:1180px;margin:0 auto;padding:14px 18px 90px;display:grid;grid-template-columns:420px 1fr;gap:26px;align-items:start}
+  @media (max-width:860px){ .layout{grid-template-columns:1fr} }
+
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 16px 18px;margin-bottom:16px}
+  .panel h2{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+  label{display:block;font-size:13px;font-weight:600;color:var(--muted);margin:12px 0 6px}
+  input[type=text], textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-family:inherit;font-size:15px;color:var(--ink);background:var(--bg)}
+  textarea{min-height:78px;resize:vertical;line-height:1.35}
+  input[type=range]{width:100%}
+  .thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+  .thumbs img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:8px;cursor:pointer;border:3px solid transparent}
+  .thumbs img.sel{border-color:var(--petrol)}
+  .swatches{display:flex;gap:10px;flex-wrap:wrap}
+  .sw{width:42px;height:42px;border-radius:50%;cursor:pointer;border:3px solid var(--line)}
+  .sw.sel{border-color:var(--ink);box-shadow:0 0 0 2px var(--panel) inset}
+  .row{display:flex;gap:10px;align-items:center}
+  .seg{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .seg button{flex:1;border:none;background:transparent;color:var(--ink);font-family:inherit;font-weight:700;font-size:14px;padding:9px 8px;cursor:pointer}
+  .seg button.on{background:var(--petrol);color:#fff}
+  .chk{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--ink);margin-top:6px}
+  .btn{width:100%;margin-top:14px;border:none;border-radius:999px;background:var(--petrol);color:#fff;font-family:inherit;font-weight:700;font-size:16px;padding:13px;cursor:pointer}
+  .btn.sec{background:var(--blau)}
+
+  /* Vorschau */
+  .stage{position:sticky;top:16px}
+  .frame-wrap{width:100%;max-width:432px;margin:0 auto;aspect-ratio:4/5;border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.22);position:relative}
+  .stage{min-width:0}
+  /* Die echte 1080x1350-Bühne, herunterskaliert */
+  #cover{width:1080px;height:1350px;transform-origin:top left;position:absolute;top:0;left:0;overflow:hidden;font-family:"Source Sans 3",sans-serif}
+  #cover .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+  #cover .uni{position:absolute;inset:0}
+  #cover .grad{position:absolute;inset:0}
+  #cover .wrap{position:absolute;left:74px;right:74px;display:flex;flex-direction:column;gap:22px}
+  #cover .eyebrow{font-weight:700;font-size:34px;letter-spacing:.18em;text-transform:uppercase}
+  #cover .headline{font-family:"Philosopher",serif;font-weight:700;line-height:1.06}
+  #cover .handle{position:absolute;left:74px;bottom:52px;font-weight:600;font-size:30px}
+  .hint{font-size:13px;color:var(--muted);margin:12px auto 0;max-width:432px;line-height:1.5}
+  #out{display:none;margin:14px auto 0;max-width:432px;width:100%;border-radius:14px;border:1px solid var(--line)}
+  .savebar{max-width:432px;margin:8px auto 0}
+</style>
+
+<div class="top">
+  <div class="kick">Mum Life Balance</div>
+  <h1>Titelbild-Editor</h1>
+  <div class="sub">Bild w&auml;hlen &middot; Verlauffarbe &middot; Hook tippen &middot; Text verschieben &middot; als Bild speichern. Format 1080&times;1350 (4:5).</div>
+</div>
+
+<div class="layout">
+  <!-- Steuerung -->
+  <div>
+    <div class="panel">
+      <h2>Hintergrund</h2>
+      <div class="seg" id="modeSeg">
+        <button data-mode="foto" class="on">Foto</button>
+        <button data-mode="uni">Uni-Seite</button>
+      </div>
+      <label id="lblFoto">Bild aus deinen Shootings</label>
+      <div class="thumbs" id="thumbs"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Farbe &amp; Verlauf</h2>
+      <label>Brandfarbe (Verlauf / Uni-Hintergrund)</label>
+      <div class="swatches" id="swatches"></div>
+      <label id="lblGrad">Verlauf-St&auml;rke <span id="gradVal"></span></label>
+      <input type="range" id="grad" min="0" max="100" value="72">
+      <div class="chk"><input type="checkbox" id="handleOn" checked> <label for="handleOn" style="margin:0">@-Handle unten anzeigen</label></div>
+    </div>
+
+    <div class="panel">
+      <h2>Text</h2>
+      <label>Eyebrow (kleine Zeile oben)</label>
+      <input type="text" id="eyebrow" value="Hybridmodell">
+      <label>Hook / Titel</label>
+      <textarea id="headline">Mehr verdienen &ndash; ohne dein Network zu vernachl&auml;ssigen.</textarea>
+      <label>Schriftgr&ouml;sse Titel <span id="fsVal"></span></label>
+      <input type="range" id="fs" min="54" max="112" value="86">
+      <label>Position (nach oben / unten) <span id="posVal"></span></label>
+      <input type="range" id="pos" min="8" max="88" value="66">
+      <label>Ausrichtung</label>
+      <div class="seg" id="alignSeg">
+        <button data-al="left" class="on">Links</button>
+        <button data-al="center">Mitte</button>
+      </div>
+      <label>Titel-Textfarbe</label>
+      <div class="seg" id="txtSeg">
+        <button data-tc="#ffffff" class="on">Wei&szlig;</button>
+        <button data-tc="#f1ecdd">Creme</button>
+        <button data-tc="#1E3A4C">Dunkelblau</button>
+      </div>
+    </div>
+
+    <button class="btn" id="make">Als Bild erzeugen</button>
+  </div>
+
+  <!-- Vorschau -->
+  <div class="stage">
+    <div class="frame-wrap"><div id="cover"></div></div>
+    <div class="savebar">
+      <img id="out" alt="fertiges Titelbild">
+    </div>
+    <p class="hint" id="hint">Tipp: Wenn du auf <b>Als Bild erzeugen</b> tippst, erscheint unten das fertige Titelbild. <b>Am Handy lange darauf tippen &rarr; &bdquo;Foto speichern&ldquo;.</b> (Downloads direkt aus dieser Seite blockiert der Browser.)</p>
+  </div>
+</div>
+
+<script>
+  const PHOTOS = ["lounge.jpg","p1.jpg","p2.jpg","p3.jpg","p4.jpg","p5.jpg","p6.jpg","p7.jpg","p8.jpg"];
+  const COLORS = [
+    {name:"Dunkelblau", hex:"#1E3A4C"},
+    {name:"Petrol",     hex:"#12828c"},
+    {name:"Orange",     hex:"#D6832F"},
+    {name:"Creme",      hex:"#f1ecdd"},
+  ];
+  const state = { mode:"foto", photo:"lounge.jpg", color:"#1E3A4C", grad:72, handle:true,
+                  eyebrow:"Hybridmodell", headline:"Mehr verdienen – ohne dein Network zu vernachlässigen.",
+                  fs:86, pos:66, align:"left", tc:"#ffffff" };
+
+  const cover = document.getElementById('cover');
+  function hexToRgb(h){h=h.replace('#','');return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)];}
+
+  function render(){
+    const [r,g,b] = hexToRgb(state.color);
+    const a = state.grad/100;
+    const eyeColor = (state.color==="#f1ecdd") ? "#1E3A4C" : (state.color==="#D6832F")? "#1E3A4C" : "#D6832F";
+    let bgLayer = state.mode==="foto"
+      ? `<img class="bg" src="assets/${state.photo}" crossorigin="anonymous">
+         <div class="grad" style="background:linear-gradient(to top, rgba(${r},${g},${b},${Math.min(0.96,a+0.14)}) 0%, rgba(${r},${g},${b},${a*0.82}) 40%, rgba(${r},${g},${b},0) 100%)"></div>`
+      : `<div class="uni" style="background:${state.color}"></div>`;
+    const eyeCol = state.mode==="uni" ? (state.color==="#f1ecdd"?"#1E3A4C":"#f1ecdd") : eyeColor;
+    const uniText = state.mode==="uni" ? (state.color==="#f1ecdd"?"#1E3A4C":"#ffffff") : state.tc;
+    const shadow = state.mode==="uni" ? "none"
+      : "-2px -2px 0 rgba(9,18,26,.75),2px -2px 0 rgba(9,18,26,.75),-2px 2px 0 rgba(9,18,26,.75),2px 2px 0 rgba(9,18,26,.75),0 6px 24px rgba(0,0,0,.5)";
+    const align = state.align;
+    cover.innerHTML = bgLayer + `
+      <div class="wrap" style="top:${state.pos}%;transform:translateY(-50%);align-items:${align==='center'?'center':'flex-start'};text-align:${align};">
+        <div class="eyebrow" style="color:${eyeCol};text-shadow:${state.mode==='uni'?'none':'0 3px 14px rgba(0,0,0,.6)'}">${escapeHtml(state.eyebrow)}</div>
+        <div class="headline" style="font-size:${state.fs}px;color:${uniText};text-shadow:${shadow}">${escapeHtml(state.headline)}</div>
+      </div>` +
+      (state.handle ? `<div class="handle" style="color:${state.mode==='uni'?(state.color==='#f1ecdd'?'rgba(30,58,76,.7)':'rgba(255,255,255,.7)'):'rgba(255,255,255,.72)'}">@mumlifebalance_patricia_ulmann</div>` : "");
+    fit();
+  }
+  function escapeHtml(s){return s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+
+  function fit(){
+    const wrap = cover.parentElement;
+    const scale = wrap.clientWidth / 1080;
+    cover.style.transform = `scale(${scale})`;
+    wrap.style.height = (1350*scale)+"px";
+  }
+  window.addEventListener('resize', fit);
+
+  // Thumbs
+  const th = document.getElementById('thumbs');
+  PHOTOS.forEach(p=>{ const im=document.createElement('img'); im.src="assets/"+p; if(p===state.photo)im.className="sel";
+    im.onclick=()=>{ state.photo=p; state.mode="foto"; syncSeg('modeSeg','mode','foto'); [...th.children].forEach(c=>c.classList.remove('sel')); im.classList.add('sel'); render(); };
+    th.appendChild(im); });
+
+  // Swatches
+  const sw = document.getElementById('swatches');
+  COLORS.forEach(c=>{ const d=document.createElement('div'); d.className="sw"+(c.hex===state.color?" sel":""); d.style.background=c.hex; d.title=c.name;
+    d.onclick=()=>{ state.color=c.hex; [...sw.children].forEach(x=>x.classList.remove('sel')); d.classList.add('sel'); render(); };
+    sw.appendChild(d); });
+
+  function syncSeg(id,key,val){ document.querySelectorAll('#'+id+' button').forEach(b=>{ b.classList.toggle('on', b.dataset[Object.keys(b.dataset)[0]]===val); }); }
+  document.querySelectorAll('#modeSeg button').forEach(b=>b.onclick=()=>{ state.mode=b.dataset.mode; document.querySelectorAll('#modeSeg button').forEach(x=>x.classList.toggle('on',x===b)); render(); });
+  document.querySelectorAll('#alignSeg button').forEach(b=>b.onclick=()=>{ state.align=b.dataset.al; document.querySelectorAll('#alignSeg button').forEach(x=>x.classList.toggle('on',x===b)); render(); });
+  document.querySelectorAll('#txtSeg button').forEach(b=>b.onclick=()=>{ state.tc=b.dataset.tc; document.querySelectorAll('#txtSeg button').forEach(x=>x.classList.toggle('on',x===b)); render(); });
+
+  const g=(id)=>document.getElementById(id);
+  g('grad').oninput=e=>{state.grad=+e.target.value; g('gradVal').textContent=state.grad+'%'; render();};
+  g('fs').oninput=e=>{state.fs=+e.target.value; g('fsVal').textContent=state.fs+'px'; render();};
+  g('pos').oninput=e=>{state.pos=+e.target.value; g('posVal').textContent=state.pos+'%'; render();};
+  g('eyebrow').oninput=e=>{state.eyebrow=e.target.value; render();};
+  g('headline').oninput=e=>{state.headline=e.target.value; render();};
+  g('handleOn').onchange=e=>{state.handle=e.target.checked; render();};
+  g('gradVal').textContent='72%'; g('fsVal').textContent='86px'; g('posVal').textContent='66%';
+
+  // Export via html2canvas
+  g('make').onclick=async()=>{
+    const btn=g('make'); const t=btn.textContent; btn.textContent="Moment…";
+    await document.fonts.ready;
+    const prevTransform=cover.style.transform; cover.style.transform="none";
+    try{
+      const canvas=await html2canvas(cover,{width:1080,height:1350,scale:1,useCORS:true,backgroundColor:null});
+      const out=g('out'); out.src=canvas.toDataURL('image/jpeg',0.92); out.style.display="block";
+      out.scrollIntoView({behavior:"smooth",block:"center"});
+    }catch(err){ g('hint').textContent="Konnte das Bild nicht erzeugen: "+err; }
+    cover.style.transform=prevTransform; fit(); btn.textContent=t;
+  };
+
+  render();
+  setTimeout(fit,60);
+  document.fonts.ready.then(render);
+</script>
