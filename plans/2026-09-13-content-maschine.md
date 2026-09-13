@@ -11,7 +11,8 @@ tags: [plan, automation, content]
 - **Menge Mentoring:** 2 Karussells + 3 Reels/Woche werden GEPOSTET (Di+Do Karussell, Mo/Mi/Fr Reels; Mix B-Roll + Talking-Head).
 - **ABER Pack = Überangebot:** Claude legt **~5 Karussells + ~5 Reels** als Vorschläge ins Cockpit. Patricia gibt die besten frei; **nicht gewählte wandern in den Vorrat** (`wochenpack`-Backlog) für die Folgewoche. Kein Ideen-Verschleiss.
 - **Qualitätslatte hoch:** jeder Vorschlag stark konvertierend — Expertise + Julia-Trost-Methodik (PIE, Reels-to-Cash, Stories-die-verkaufen), nicht Füllmaterial.
-- **Pack-Tag:** **Montag früh** liegt das fertige Wochen-Pack im Cockpit.
+- **Produktions-Tag: jeden FREITAG automatisch** — Claude produziert das komplette Paket für die **nächste** Woche und legt es fixfertig ins Artefakt/Cockpit. (Ersetzt die frühere „Montag früh"-Idee.)
+- **Wochenthema-Check:** Das Paket richtet sich nach dem **definierten aktuellen Wochenthema**. Ist keins definiert/klar → Claude schickt Patricia **von selbst eine Nachricht** „Wochenthema fehlt, lass uns das kurz festlegen", ohne dass sie sonst etwas tun muss. Kein Blind-Produzieren.
 - **Blotato-Slot:** Karussells abends **19:00–20:15**.
 - **Neuer strategischer Fokus (13.9.):** GroImpact bringt bereits zielgruppengenaue Follower → **kalte Reichweite zweitrangig**, Content muss **tief gehen & verkaufen** (warme Zielgruppe heiss machen). Ideen-Motor entsprechend trimmen.
 
@@ -23,17 +24,20 @@ tags: [plan, automation, content]
 - **Cover:** Titelbild-Editor `outputs/reels/_titelbild-editor/` (Artifact `21e66e0e-…`) + Render-Pipeline `scripts/karussell-render/`.
 - **Scheduler:** GitHub Actions (Secrets liegen: ANTHROPIC_API_KEY, BLOTATO_API_KEY, NOTION_TOKEN, TELEGRAM_*, APIFY_API_TOKEN).
 
-## Wochen-Ablauf (Ziel)
-| Wann | Automatisch | Patricias Aufwand |
+## Wochen-Ablauf (Ziel-Spezifikation, von Patricia 2026-09-13)
+| Wann | Automatisch (Claude) | Patricias Aufwand |
 |---|---|---|
-| So abend | Konkurrenz-Scrape + Digest | – |
-| **Mo früh** | Wochen-Pack ins Cockpit: Markt-Kurzfassung · 2 Karussells (Slide-Texte) · B-Roll-Reels (Hook+Caption+Clip-Wahl) · Talking-Head-Reels **mit Sprechtext** · Cover-Vorschläge · doTERRA-Pack getrennt | – |
-| Mo–Di | Cockpit durchschauen, Texte ggf. ändern, **GO** | ~10 Min |
-| laufend | Talking-Heads: Sprechtexte ablesen, Clips in `DCIM/Content-Inbox` | 1× filmen |
-| nach Clip | Auto: `hol-content` → `videoschnitt` (finish.json auto: Untertitel+Zoom+geplante Inserts) → fertige Reels+Cover auf Telegram | – |
-| abends 19–20:15 | Karussells via Blotato raus | – |
+| So abend | Konkurrenz-Scrape + Markt-Digest | – |
+| **FR** | Wochenthema prüfen. Unklar/fehlt → **Nachricht an Patricia** „lass uns das Wochenthema festlegen" (sonst nichts). Sonst: **5 Reels + 5 Karussells fürs nächste Woche** fixfertig ins Artefakt/Cockpit (Texte, Reel-Cover, Karussell-Slides), passend zum Wochenthema, beide Profile | – |
+| FR/SA | Im Artefakt durchsehen: Texte, Cover, Karussells — **Datum je Post setzen** → **Knopf „Veröffentlichen"** | ~10–15 Min |
+| nach „Veröffentlichen" | **Sprechreels + Karussells** postet Claude automatisch (Blotato, zu den gesetzten Daten). **B-Roll-Reels + Reel-Cover** → **Telegram** an Patricia → sie plant sie selbst ein | B-Roll selbst einplanen |
 
-**Harte Grenze (ehrlich):** Talking-Head-Reels brauchen Patricia **einmal vor der Kamera** (Gesicht/Stimme). Danach kein weiterer Input nötig. B-Roll + Karussells brauchen sie gar nicht (ausser GO).
+**Posting-Split (verbindlich):**
+- **Sprechreels (mit Stimme) → Claude postet automatisch** (kein Trending-Sound nötig).
+- **Karussells → Claude postet automatisch.**
+- **B-Roll-Reels + Cover → Telegram an Patricia**, sie plant sie selbst (wegen Trending-Sound in der App).
+
+**Harte Grenze (ehrlich):** Sprechreels brauchen **gefilmtes Material**. Für den automatischen Freitag-Lauf muss ein **Vorrat an Sprech-Clips** da sein (Wissens-Dump in `DCIM/Sprechreels`) — daraus schneidet Claude. Vorrat leer → für die Sprechreel-Slots kommen **Sprechtexte zum Ablesen** statt fertiger Videos. Karussells + B-Roll brauchen kein Filmen.
 
 ## Bau-Phasen
 ### Phase 1 — „A"-Automatik (Freigabe→Auto-Output)
