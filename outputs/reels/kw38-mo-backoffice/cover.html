@@ -1,32 +1,30 @@
 <!doctype html>
 <html lang="de"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+  :root{ --petrol:#12828c; --creme:#f1ecdd; --orange:#E79A45; }
   *{margin:0;padding:0;box-sizing:border-box}
   html,body{background:#000}
-  .page{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:'Poppins',sans-serif}
-  .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 16%}
-  /* weicher Verlauf unten fuer Textlesbarkeit */
-  .scrim{position:absolute;left:0;right:0;bottom:0;height:56%;
-    background:linear-gradient(to top, rgba(10,20,28,.9) 0%, rgba(10,20,28,.7) 40%, rgba(10,20,28,0) 100%)}
-  .txt{position:absolute;left:70px;right:70px;bottom:96px;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
-  .kicker{font-size:40px;font-weight:800;letter-spacing:4px;color:#E79A45;text-transform:uppercase;
+  .cover{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:"Source Sans 3",sans-serif}
+  .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+  .scrim{position:absolute;left:0;right:0;bottom:0;height:60%;
+    background:linear-gradient(to top, rgba(9,18,26,.92) 0%, rgba(9,18,26,.74) 42%, rgba(9,18,26,0) 100%)}
+  .wrap{position:absolute;left:74px;right:74px;bottom:118px;display:flex;flex-direction:column;align-items:flex-start;gap:22px}
+  .eyebrow{font-weight:700;font-size:34px;letter-spacing:.18em;color:var(--orange);text-transform:uppercase;
     text-shadow:0 3px 14px rgba(0,0,0,.6)}
-  .big{font-size:82px;font-weight:800;line-height:1.02;letter-spacing:-.01em;color:#fff;
-    text-shadow:-3px -3px 0 rgba(10,20,26,.9),3px -3px 0 rgba(10,20,26,.9),-3px 3px 0 rgba(10,20,26,.9),3px 3px 0 rgba(10,20,26,.9),0 6px 22px rgba(0,0,0,.4)}
-  .bar{display:inline-block;position:relative;padding:2px 20px 8px;margin-top:6px}
-  .bar i{position:absolute;inset:0;background:#12828c;border-radius:6px;transform:rotate(-1deg)}
-  .bar span{position:relative;font-size:82px;font-weight:800;color:#fff;line-height:1.02;
-    text-shadow:0 3px 14px rgba(0,0,0,.35)}
+  .headline{font-family:"Philosopher",Georgia,serif;font-weight:700;font-size:88px;line-height:1.06;color:#fff;
+    text-shadow:-2px -2px 0 rgba(9,18,26,.85),2px -2px 0 rgba(9,18,26,.85),-2px 2px 0 rgba(9,18,26,.85),2px 2px 0 rgba(9,18,26,.85),0 6px 24px rgba(0,0,0,.5)}
+  .headline b{color:var(--creme);font-weight:700}
+  .handle{position:absolute;bottom:56px;left:74px;font-weight:600;font-size:30px;color:rgba(255,255,255,.72)}
 </style></head>
 <body>
-<div class="page">
-  <img class="bg" src="cover-frame.png">
-  <div class="scrim"></div>
-  <div class="txt">
-    <span class="kicker">Monatsende</span>
-    <span class="big">Backoffice auf &ndash;</span>
-    <span class="bar"><i></i><span>und sofort wieder zu.</span></span>
+  <div class="cover">
+    <img class="bg" src="cover-frame.png">
+    <div class="scrim"></div>
+    <div class="wrap">
+      <div class="eyebrow">Hybridmodell</div>
+      <div class="headline"><b>Mehr verdienen</b> &ndash; ohne dein Network zu vernachl&auml;ssigen.</div>
+    </div>
+    <div class="handle">@mumlifebalance_patricia_ulmann</div>
   </div>
-</div>
 </body></html>
