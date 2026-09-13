@@ -314,5 +314,59 @@ scripts/story-render-bot/render/node_modules/
 outputs/content-kalender/doterra-jahresrhythmus.md
 outputs/funnels/doterra-schlaf-ritual/**
 
+# Zentrale Pitch-Automation — Bau-Log mit internen AC-IDs/Tags/Listen (nur lokal)
+outputs/funnels/zentrale-pitch-automation/_BAU-LOG-LOKAL.md
+
 # Kurs-Download-Deliverables (Kundenmaterial, bewusst versioniert)
 !outputs/produkte/**/downloads/*.pdf
+
+# Privater Bereich komplett (Geburtstage, Familien-Daten, persoenliche Notizen)
+# Repo ist PUBLIC — hier darf nichts raus.
+context/persoenlich/**
+
+# ============================================================
+# Videoschnitt-Workflow (/videoschnitt) — Rohmaterial + Schnitte
+# Repo ist PUBLIC: Rohvideos, Transkripte und Schnitte bleiben lokal.
+# ============================================================
+video/**
+!video/README.md
+# Die Unterordner legen die Skripte selbst an — .gitkeep-Ausnahmen greifen hier
+# nicht, weil Git in einen ausgeschlossenen Ordner gar nicht erst hineinschaut.
+
+# ============================================================
+# Content-Inbox vom Handy (/handy) — Rohmaterial bleibt lokal
+# Repo ist PUBLIC.
+# ============================================================
+context/content-assets/**
+context/content-assets-inbox-log.json
+
+
+# Cockpit-Slide-Fotos (Rohmaterial, Repo ist public)
+outputs/cockpit/bilder/
+outputs/karussells/cockpit/**/*.jpg
+context/content-assets-sichtung.md
+
+# Cockpit-Datenabgleich: Listen, Automationen, Umsatz — bleibt lokal
+outputs/cockpit/abgleich/
+
+# doTERRA-Backoffice-Berichte: echte Namen und Umsaetze — bleibt lokal
+context/doterra/backoffice/
+
+# Salespage-Design-Bundle (gekauftes Fremdmaterial, Repo ist public)
+# Die vier Design-Vorlagen stammen aus einem gekauften Paket. Sie gehoeren
+# nicht ins oeffentliche Repo — weder im Original noch umgefaerbt, weil die
+# reference-page.html in beiden Faellen fremde Bauarbeit ist.
+# Wiederherstellbar: ZIP entpacken nach reference/salespage-designs-original/,
+# dann scripts/salespage-design/marke-anpassen.py + regeln-anpassen.py laufen lassen.
+reference/salespage-designs-original/
+.claude/skills/minikurs-salespage/
+.claude/skills/signature-kurs-salespage/
+.claude/skills/skill-salespage/
+.claude/skills/ki-salespage/
+outputs/salespage-designs/
+
+# Kundendaten — Namen, Mailadressen und Telefonnummern Dritter.
+# Gehoeren nie ins Repo, unabhaengig davon ob es oeffentlich oder privat ist.
+scripts/activecampaign-mcp/doterra-kunden.json
+scripts/**/kunden*.json
+scripts/**/kontakte*.json

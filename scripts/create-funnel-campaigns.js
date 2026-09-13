@@ -2,7 +2,11 @@
 // 1:1 Begleitung "Aus Nebenbei wird Business"
 
 const BASE = 'https://mumlifebalance.api-us1.com/admin/api.php';
-const KEY = 'b3c3542991489fc766fe5f8e0f570412769b252ea525f75a33d72a8944e0fba5b0bf4e29';
+const KEY = process.env.AC_API_KEY;
+if (!KEY) {
+  console.error('AC_API_KEY fehlt — Skript mit --env-file=04-projects/activecampaign-mcp/.env aufrufen.');
+  process.exit(1);
+}
 const LINK = 'https://mumlifebalance.thrivecart.com/aus-nebenbei-wird-business/';
 
 async function acv1(action, data) {
