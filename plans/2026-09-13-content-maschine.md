@@ -47,9 +47,14 @@ tags: [plan, automation, content]
 - Erzeugt pro Profil ein **Überangebot** (~5 Karussells + ~5 Reels: Slide-Texte, B-Roll-Hooks+Captions, Talking-Head-Sprechtexte, Cover-Vorschläge) → schreibt in Cockpit-DB als Entwürfe. Patricia wählt; Rest bleibt als Vorrat (`wochenpack`-Backlog) für Folgewochen.
 - Regeln: PIE-Mix, Feed-Aesthetic ABAB, Caption-Standard-Schluss, keine erfundenen Zahlen, doTERRA-Compliance, **stark konvertierend** (Julia-Trost-Methodik + Patricia-Expertise) statt kalt-reichweitig.
 
-### Phase 3 — Talking-Head-Auto-Loop
-- Trigger: neue Clips in `Content-Inbox` (oder Patricia sagt „Clips sind drin").
-- Auto: `hol-content` → Zuordnung Clip↔geplantes Reel → `textebene.py` mit **auto-generiertem finish.json** (Untertitel, Auto-Zoom, Hook-Overlay immer; Spezial-Inserts wie Backoffice-Mockup wenn im Briefing vorgesehen) → Render → Telegram + Cockpit.
+### Phase 3 — Sprechreel-/Talking-Head-Auto-Loop
+- **Eigenes Handy-Album `DCIM/Sprechreels`** (getrennt von Content-Inbox). Abholung:
+  `python scripts/handy/hol-content.py --album Sprechreels --ziel-video video/sprechreels`
+  (`--ziel-video` am 2026-09-13 zu hol-content.py hinzugefügt; `video/sprechreels/` ist gitignored).
+- **Zwei Aufnahme-Arten:** (1) **Wissens-Dump** — Patricia spricht 10–20 Min frei ihr Wissen/ihre Strategie ein → Claude transkribiert, fischt die stärksten Nuggets, schneidet **viele** Reels + nutzt das Transkript als Treibstoff für den Ideen-Motor (authentische, konvertierende Inhalte in ihrer Stimme). (2) **Geplante Sprechreels** — Sprechtext aus dem Wochen-Pack ablesen.
+- Trigger: täglicher Abhol-Check (wenn PC läuft; Zeit noch festzulegen) **oder** Patricia sagt „Sprechreels sind drin".
+- Auto: abholen → `textebene.py` mit **auto-generiertem finish.json** (Untertitel, Auto-Zoom, Hook-Overlay immer; Spezial-Inserts wie Backoffice-Mockup wenn im Briefing vorgesehen) → Render → Telegram + Cockpit.
+- **Dreh-Anleitung** (Position, Kamera, in-die-Linse, Abwechslung): `context/sprechreels-drehanleitung.md`.
 
 ## Offene Technik-Fragen (beim Bauen klären)
 - Rendering (HyperFrames/ffmpeg) läuft heute **lokal** (Patricias PC). Für Voll-Auto entweder: (a) Render-Schritt bleibt lokal/in-Session wenn Clips da sind, oder (b) GitHub-Action-Runner mit ffmpeg+Chromium. Karussell-PNG-Render ist leichter → eher automatisierbar als Video.
