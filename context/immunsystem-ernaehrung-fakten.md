@@ -144,6 +144,89 @@ Daraus wird ein ganzes Reel: **„Die Vitamin-C-Brausetablette bringt dir einen 
 
 ---
 
+## 6b. Der Bauplan dahinter — warum der Teller vier Aufgaben hat
+
+**Nachtrag 13.09.2026.** Die vier Bausteine auf dem Teller sind keine willkürliche Einteilung aus der Ernährungslehre. **Jeder von ihnen erledigt eine andere Aufgabe für die Abwehr.** Das ist der stärkste Erklär-Rahmen der ganzen Woche, weil er zeigt: Es geht nicht um „gesund essen", es geht um vier verschiedene Jobs.
+
+| Baustein | Sein Job für die Abwehr | Was passiert, wenn er fehlt |
+|---|---|---|
+| **Ballaststoffe** | Futter für die Bakterien, die daraus Butyrat machen — das reguliert die Immunzellen | Die Darmschleimhaut verliert ihre eigene Nahrungsquelle |
+| **Proteine** | Baumaterial — Antikörper und Botenstoffe **sind** Eiweiss | Kein Material für die Produktion im Ernstfall |
+| **Kohlenhydrate** | Treibstoff — aktivierte Immunzellen schalten auf Zuckerverbrennung um, um sich massenhaft zu vermehren | Keine Energie für die Vermehrung |
+| **Gutes Fett** | Transportmittel **und** Bremse — es holt die fettlöslichen Vitamine überhaupt erst ins Blut und liefert das Material, mit dem Entzündung wieder beendet wird | Vitamine bleiben ungenutzt, Entzündung läuft weiter |
+
+### Kohlenhydrate — die überraschende Rolle
+
+**Was im Körper passiert:** Wenn eine T-Zelle auf einen Erreger trifft, muss sie sich innerhalb von Stunden massenhaft vermehren. Diese Teilungsgeschwindigkeit ist einzigartig im ganzen Körper. Dafür schaltet die Zelle ihren Stoffwechsel um und verbrennt **Glukose** — sie erhöht sogar die Zahl ihrer Zuckertransporter (Glut1, Glut3, Glut6, Glut8), um schneller Zucker aufzunehmen. Die Zwischenprodukte dieser Zuckerverbrennung sind gleichzeitig die Bausteine für neue Erbsubstanz, Fette und Aminosäuren.
+
+**Der contrarian Take, den sonst niemand in deiner Nische hat:**
+> „Dein Immunsystem läuft auf Zucker. Nicht auf Cola — auf Glukose aus Kartoffeln, Hafer, Hülsenfrüchten. Deshalb ist Low Carb im Infekt genau das Falsche."
+
+⚠️ **Und genau das ist auch die saubere Auflösung des Zucker-Widerspruchs aus Abschnitt 0:** Das Problem ist nie der Zucker an sich — Immunzellen brauchen ihn. Das Problem ist die **Dauerlast** und die Form: Glukose aus Vollkorn und Hülsenfrüchten kommt langsam und mit Ballaststoffen, Glukose aus der Cola kommt als Schlag. Wenn dich jemand in den Kommentaren auf den Widerspruch anspricht, hast du hier die Antwort.
+
+### Gutes Fett — die stärkste Einzel-Zahl der Woche
+
+**1. Ohne Fett bleiben die Vitamine im Teller liegen.** Die Vitamine A, D, E und K sind fettlöslich. Ohne Fett in derselben Mahlzeit werden sie schlicht nicht aufgenommen.
+
+**Die Zahl:** In einer Studie (Unlu et al. 2005, *Journal of Nutrition*) bekamen Teilnehmende denselben Salat einmal mit und einmal ohne Avocado bzw. Avocadoöl. Mit Fett stieg die Aufnahme von **Beta-Carotin auf das 15,3-Fache**, von Alpha-Carotin auf das 7,2-Fache und von Lutein auf das 5,1-Fache. Bei Salsa stieg Lycopin auf das 4,4-Fache.
+⚠️ Kleine Studie (11 Personen pro Durchgang, Kurzzeit-Messung) — sag „in einer Studie stieg", nicht „es ist 15-mal mehr".
+
+**Der Satz für den Post:**
+> **„Fettarmer Salat ist der teuerste Salat, den du essen kannst. Du zahlst für das Gemüse und lässt das meiste davon ungenutzt wieder rausgehen."**
+
+Das ist dein Reel. Eine Zahl, ein Bild, ein sofort umsetzbarer Satz: *Ein Esslöffel Olivenöl über den Salat ist kein Luxus, das ist die Eintrittskarte.*
+
+**2. Omega-3 liefert die Stopp-Taste.** Aus EPA und DHA baut der Körper sogenannte **Resolvine und Protectine** — Stoffe, deren einzige Aufgabe es ist, eine Entzündung wieder **aktiv zu beenden**. Sie bremsen den Zustrom von Fresszellen und lassen die Aufräumzellen das Gewebe reinigen, **ohne die Abwehr zu schwächen**. Entzündung hört also nicht einfach von selbst auf — der Körper muss sie aktiv abschalten, und das Material dafür kommt aus dem Essen.
+
+> „Dein Körper braucht nicht nur einen Startknopf für die Abwehr. Er braucht auch einen Ausschalter. Den baut er aus Omega-3."
+
+**3. Aus deinem eigenen Buch** (Basenküche, Zeilen 172–173): Ohne Fett können wir die Vitamine A, D, E und K gar nicht verwerten; bei Mangel an guten Fetten „schwächelt das Immunsystem und wir werden schneller krank". Das steht wörtlich in deiner Bibliothek — und ist hier ausnahmsweise korrekt begründet, ohne Säure-Basen-Logik.
+
+### Die Farben — was sie wirklich machen
+
+**Farbe hat zwei Wirkwege, und der zweite ist der spannendere:**
+
+**Weg 1 — die Farbstoffe, die aufgenommen werden:** Carotinoide (orange, rot, dunkelgrün) sind die Vorstufe von Vitamin A. Und Vitamin A ist genau der Nährstoff, der die Schleimhäute intakt hält — also die erste Mauer, an der jeder Erreger zuerst ankommt. **Braucht Fett.** Siehe oben.
+
+**Weg 2 — die Farbstoffe, die gar nicht aufgenommen werden:** Von den Polyphenolen (blau, violett, rot, bitter — Beeren, Rotkohl, Zwiebeln, Kräuter, Kakao, Tee) werden **nur etwa 5–10 % im Dünndarm aufgenommen. Die restlichen 90–95 % landen im Dickdarm** — und werden dort von den Bakterien verarbeitet. Sie wirken also **wie ein zweiter Ballaststoff**: Sie füttern die günstigen Bakterien und bremsen die ungünstigen.
+
+**Das ist der Moment, an dem sich die Woche zusammenfügt:**
+> **„Die Farbe in deinem Essen ist gar nicht für dich. Über 90 Prozent davon kommen nie in deinem Blut an — sie landen im Darm und füttern die Bakterien, die dein Immunsystem ausbilden. Farbe ist Bakterienfutter."**
+
+Damit sind Farbe und Ballaststoffe nicht zwei Themen, sondern **eins**. Und die 30-Pflanzen-Regel aus Abschnitt 2 bekommt ihre Begründung.
+
+### Vitamine — drei Verteidigungslinien statt einer Liste
+
+**Hier ist der Rahmen, der aus „Vitamine sind wichtig" einen echten Post macht.** Der massgebliche Übersichtsartikel dazu ist Gombart, Pierre & Maggini (2020) in *Nutrients* — die meistzitierte Arbeit zum Thema. Er ordnet die Nährstoffe nach **drei Verteidigungslinien**:
+
+**Linie 1 — Die Mauer** (Haut, Schleimhäute, Darmwand): Hier kommt der Erreger zuerst an.
+- **Vitamin A** — normale Entwicklung des Schleimhautgewebes
+- **Vitamin D** — steuert körpereigene antimikrobielle Stoffe (Cathelicidin, Beta-Defensin) **und** die dichten Verbindungen zwischen den Darmzellen
+- **Vitamin C** — Kollagenbildung, also die Struktur der Barriere selbst
+- **Zink** — Unversehrtheit von Haut und Schleimhaut
+- **Eisen** — Differenzierung des Deckgewebes
+
+**Linie 2 — Die schnelle Truppe** (Fresszellen, natürliche Killerzellen):
+- **Vitamin C** — regt Bildung und Wanderung der Fresszellen an, verstärkt das Fressen selbst
+- **Vitamin D** — erhöht die Fressfähigkeit der Makrophagen
+- **Vitamin E** — schützt die eigenen Zellen vor dem Kollateralschaden des Abwehrangriffs
+- **Zink, Selen** — steuern die Entzündungsbotenstoffe und schützen vor oxidativem Stress
+
+**Linie 3 — Die Spezialeinheit** (Antikörper, T- und B-Zellen):
+- **B6, B12, Folat** — werden für die Antikörper-Herstellung gebraucht
+- **Vitamin A** — nötig für die B-Zell-Antwort und dafür, dass Immunzellen überhaupt in den Darm finden
+- **Zink** — an der Antikörperbildung beteiligt, fördert regulatorische T-Zellen
+
+**Die Zahl, die das relevant macht:**
+> **Je nach Nährstoff liegen rund 25 bis 75 % der Menschen unter der empfohlenen Zufuhr.** In Europa sind die Aufnahmen von **Vitamin D, Vitamin E, Folat und Selen quer durch alle Altersgruppen unzureichend.**
+
+Und das ist der Punkt, den du machen kannst, ohne ein Produkt zu erwähnen: **Es ist kein Nährstoff, an dem es hängt.** Die Linien arbeiten zusammen — eine Mauer ohne Truppe nützt nichts, und eine Truppe ohne Munition auch nicht. Deshalb funktioniert die Brausetablette nicht und der Teller schon.
+
+**Sagbar:** „Drei Linien, nicht eine Pille." · „Vitamin A hält die Mauer, Vitamin C schickt die Truppe, B12 baut die Antikörper." · „In Europa ist die Zufuhr von Vitamin D, E, Folat und Selen quer durch alle Altersgruppen unzureichend."
+**Nicht sagbar:** „Vitamin D schützt dich vor Infekten." · Jede Aussage, die einen einzelnen Nährstoff zum Retter macht.
+
+---
+
 ## 7. Zahlen-Spickzettel für die Woche
 
 | Zahl | Aussage | Quelle | Sicherheit |
@@ -157,6 +240,9 @@ Daraus wird ein ganzes Reel: **„Die Vitamin-C-Brausetablette bringt dir einen 
 | **8 % / 14 %** | Verkürzung der Erkältungsdauer durch Vitamin C (Erwachsene/Kinder) | Cochrane, Hemilä & Chalker | 🟢 |
 | **9 Würfelzucker** | in einem 250-ml-Glas Cola (Energydrink bis 26/Dose) | Basenküche, deine Bibliothek | 🟢 dein eigenes Material |
 | **100×** | mehr Sulforaphan in Brokkolisprossen als in Brokkoli | Basenküche | 🟡 Buchangabe, nicht gegengeprüft |
+| **15,3-fach** | mehr Beta-Carotin aufgenommen, wenn Fett im Salat ist (Lutein 5,1× · Lycopin 4,4×) | Unlu et al. 2005, J Nutr | 🟡 nur 11 Personen, „in einer Studie stieg" |
+| **90–95 %** | der Polyphenole werden nicht aufgenommen, sondern landen im Dickdarm als Bakterienfutter | Reviews zur Polyphenol-Mikrobiom-Achse | 🟢 |
+| **25–75 %** | der Menschen liegen je nach Nährstoff unter der empfohlenen Zufuhr; in Europa Vitamin D, E, Folat, Selen quer durch alle Altersgruppen | Gombart, Pierre & Maggini 2020, Nutrients | 🟢 |
 | — | „Zucker ist ein Vitaminräuber" | **nirgends** | 🔴 **nicht verwenden** |
 
 ---
@@ -180,6 +266,11 @@ Daraus wird ein ganzes Reel: **„Die Vitamin-C-Brausetablette bringt dir einen 
 - McDonald D. et al. (2018): *American Gut: an Open Platform for Citizen Science Microbiome Research.* mSystems — [ScienceDaily-Zusammenfassung](https://www.sciencedaily.com/releases/2018/05/180515092931.htm)
 - Li P. et al.: *Amino acids and immune function.* Br J Nutr — [PubMed](https://pubmed.ncbi.nlm.nih.gov/17403271/) · [Volltext PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B1A9C1587A8602613F6447BA8404D8E1/S000711450769936Xa.pdf/amino-acids-and-immune-function.pdf)
 - [Glutamine: Metabolism and Immune Function, Supplementation and Clinical Translation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6266414/)
+- Gombart A.F., Pierre A., Maggini S. (2020): *A Review of Micronutrients and the Immune System — Working in Harmony to Reduce the Risk of Infection.* Nutrients 12(1):236 — [Volltext](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019735/) · [MDPI](https://www.mdpi.com/2072-6643/12/1/236)
+- Unlu N.Z. et al. (2005): *Carotenoid Absorption from Salad and Salsa by Humans Is Enhanced by the Addition of Avocado or Avocado Oil.* J Nutr 135(3):431–436 — [PubMed](https://pubmed.ncbi.nlm.nih.gov/15735074/) · [Volltext](https://academic.oup.com/jn/article/135/3/431/4663712)
+- [Polyphenols—Gut Microbiota Interrelationship: A Transition to a New Generation of Prebiotics](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8747136/) · [(Poly)phenol–gut microbiota interactions and their impact on human health](https://pmc.ncbi.nlm.nih.gov/articles/PMC12147749/)
+- [Effects of Omega-3 Fatty Acids on Immune Cells](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6834330/) · [Resolvins, Protectins, and Maresins: DHA-Derived Specialized Pro-Resolving Mediators](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8912121/)
+- [T‐cell metabolism governing activation, proliferation and differentiation (Dimeloe et al., Immunology 2017)](https://onlinelibrary.wiley.com/doi/10.1111/imm.12655) · [T cell metabolism drives immunity (J Exp Med)](https://rupress.org/jem/article/212/9/1345/41785/T-cell-metabolism-drives-immunityT-cell-metabolism)
 - [Regulation of the effector function of CD8+ T cells by gut microbiota-derived metabolite butyrate](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6158259/)
 - [DGE: Ballaststoffe in der Ernährung senken das Sterberisiko](https://www.dge.de/presse/meldungen/2022/ballaststoffe-in-der-ernaehrung-senken-das-sterberisiko/) · [BZfE: Ballaststoffe](https://www.bzfe.de/essen-und-gesundheit/naehrstoffe/ballaststoffe)
 - [BVL: Zuordnung der zugelassenen gesundheitsbezogenen Angaben (Health Claims)](https://www.bvl.bund.de/SharedDocs/Downloads/01_Lebensmittel/healthclaims/dok2.pdf?__blob=publicationFile&v=3)
