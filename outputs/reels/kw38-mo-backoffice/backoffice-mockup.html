@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',system-ui,sans-serif}
+  .page{width:1080px;height:1920px;background:#EEF1F4;position:relative;overflow:hidden}
+
+  /* Statusleiste */
+  .status{height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 54px;font-size:30px;font-weight:600;color:#1b2733}
+  .status .right{display:flex;gap:14px;align-items:center;font-size:26px}
+
+  /* App-Header */
+  .appbar{background:#1E3A4C;padding:40px 54px 54px;color:#fff}
+  .appbar .row{display:flex;align-items:center;justify-content:space-between}
+  .appbar .hello{font-size:30px;opacity:.75;font-weight:500}
+  .appbar .title{font-size:52px;font-weight:800;margin-top:8px}
+  .avatar{width:96px;height:96px;border-radius:50%;background:#365b6e;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:700}
+  .period{margin-top:40px;display:inline-flex;align-items:center;gap:16px;background:rgba(255,255,255,.12);padding:20px 34px;border-radius:20px;font-size:32px;font-weight:600}
+
+  /* Kacheln */
+  .grid{padding:44px 54px 0;display:grid;grid-template-columns:1fr 1fr;gap:34px}
+  .card{background:#fff;border-radius:32px;padding:44px;box-shadow:0 12px 34px rgba(30,58,76,.08)}
+  .card .lbl{font-size:32px;color:#6a7885;font-weight:600}
+  .card .big{font-size:120px;font-weight:800;color:#c0392b;line-height:1;margin-top:22px}
+  .card .sub{font-size:28px;color:#9aa6b1;font-weight:500;margin-top:18px}
+
+  /* Umsatz-Balken */
+  .wide{margin:34px 54px 0;background:#fff;border-radius:32px;padding:48px 54px;box-shadow:0 12px 34px rgba(30,58,76,.08)}
+  .wide .lbl{font-size:34px;color:#6a7885;font-weight:600}
+  .wide .amount{font-size:96px;font-weight:800;color:#c0392b;margin-top:10px}
+  .wide .goal{font-size:30px;color:#9aa6b1;margin-top:6px;font-weight:500}
+  .bar{margin-top:38px;height:34px;border-radius:18px;background:#eef1f4;overflow:hidden}
+  .bar > i{display:block;height:100%;width:3%;background:#c0392b;border-radius:18px}
+
+  /* Verlauf */
+  .chart{margin:34px 54px 0;background:#fff;border-radius:32px;padding:48px 54px 40px;box-shadow:0 12px 34px rgba(30,58,76,.08)}
+  .chart .lbl{font-size:34px;color:#6a7885;font-weight:600;margin-bottom:24px}
+  .chart svg{width:100%;height:260px;display:block}
+  .months{display:flex;justify-content:space-between;margin-top:18px;font-size:26px;color:#9aa6b1;font-weight:500}
+
+  .note{margin:40px 54px 0;text-align:center;font-size:30px;color:#8a97a3;font-weight:500}
+
+  /* Tabbar */
+  .tabbar{position:absolute;bottom:0;left:0;right:0;height:150px;background:#fff;border-top:1px solid #dfe4e9;display:flex;justify-content:space-around;align-items:center;padding-bottom:26px}
+  .tab{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:24px;color:#9aa6b1;font-weight:600}
+  .tab.active{color:#1E3A4C}
+  .dot{width:44px;height:44px;border-radius:12px;background:#c7d0d8}
+  .tab.active .dot{background:#1E3A4C}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="status"><span>9:41</span><span class="right">📶 &nbsp; 🔋</span></div>
+
+  <div class="appbar">
+    <div class="row">
+      <div>
+        <div class="hello">Willkommen zurück</div>
+        <div class="title">Mein Backoffice</div>
+      </div>
+      <div class="avatar">P</div>
+    </div>
+    <div class="period">📅 &nbsp;September 2026 &nbsp;·&nbsp; Monatsübersicht</div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="lbl">Neue Kundinnen</div>
+      <div class="big">0</div>
+      <div class="sub">diesen Monat</div>
+    </div>
+    <div class="card">
+      <div class="lbl">Neue Partnerinnen</div>
+      <div class="big">0</div>
+      <div class="sub">diesen Monat</div>
+    </div>
+  </div>
+
+  <div class="wide">
+    <div class="lbl">Bonus (voraussichtlich)</div>
+    <div class="amount">CHF 0.00</div>
+    <div class="goal">Ziel diesen Monat: CHF 800.00</div>
+    <div class="bar"><i></i></div>
+  </div>
+
+  <div class="chart">
+    <div class="lbl">Team-Umsatz · letzte 6 Monate</div>
+    <svg viewBox="0 0 900 260" preserveAspectRatio="none">
+      <polyline points="0,120 180,140 360,150 540,165 720,180 900,195"
+        fill="none" stroke="#c0392b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="900" cy="195" r="12" fill="#c0392b"/>
+    </svg>
+    <div class="months"><span>Apr</span><span>Mai</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span></div>
+  </div>
+
+  <div class="note">Noch keine Bestellungen in diesem Zeitraum.</div>
+
+  <div class="tabbar">
+    <div class="tab active"><span class="dot"></span>Übersicht</div>
+    <div class="tab"><span class="dot"></span>Team</div>
+    <div class="tab"><span class="dot"></span>Bestellungen</div>
+    <div class="tab"><span class="dot"></span>Profil</div>
+  </div>
+</div>
+</body>
+</html>

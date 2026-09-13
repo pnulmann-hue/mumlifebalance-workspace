@@ -1,0 +1,181 @@
+<!-- generiert von build-immunwoche.mjs -->
+<meta charset="utf-8">
+<title>Immunwoche Tag 2 — Schlaf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap">
+<style>
+@page { size: A4; margin: 15mm 16mm 20mm; }
+
+:root {
+  --creme:#f1ecdd; --papier:#faf7ef; --petrol:#12828c; --tief:#29556d;
+  --orange:#dc822e; --rost:#a8432a; --tinte:#1d3742; --leise:#63747b; --linie:#d6cdb6;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+html { background:var(--creme); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+body { font-family:"Source Sans 3",system-ui,sans-serif; color:var(--tinte); background:var(--creme);
+       font-size:10.6pt; line-height:1.5; }
+
+h1,h2,h3 { font-family:Philosopher,Georgia,serif; font-weight:700; line-height:1.15; }
+
+.tag { page-break-before:always; }
+.tag:first-of-type { page-break-before:auto; }
+
+.titel { border-bottom:2.5pt solid var(--petrol); padding-bottom:4mm; margin-bottom:6mm; page-break-after:avoid; }
+.eyebrow { font-size:8.5pt; letter-spacing:.18em; text-transform:uppercase; font-weight:700;
+           color:var(--petrol); display:block; margin-bottom:2.5mm; }
+h1 { font-size:25pt; margin-bottom:2mm; }
+.unterzeile { font-size:11pt; color:var(--leise); max-width:135mm; }
+
+.kernsatz { background:var(--petrol); color:#f7f4ec; padding:5mm 6.5mm; border-radius:1.5mm;
+            margin-bottom:6.5mm; page-break-inside:avoid; }
+.kernsatz p { font-family:Philosopher,Georgia,serif; font-size:15.5pt; line-height:1.3; }
+
+.block { display:flex; flex-direction:column; gap:3.2mm; margin-bottom:6.5mm; page-break-inside:avoid; }
+h2 { font-size:17.5pt; color:var(--tief); display:flex; align-items:baseline; gap:3mm;
+     page-break-after:avoid; margin-bottom:1mm; }
+h2 .nr { font-size:10pt; color:var(--orange); font-family:"Source Sans 3",sans-serif; font-weight:700; }
+.block p { max-width:none; }
+.intro { color:var(--leise); font-size:10.4pt; }
+b, strong { font-weight:600; color:var(--tief); }
+
+.zahlen { display:grid; grid-template-columns:1fr 1fr; gap:3.5mm; }
+.zahl-kachel { background:var(--papier); border-left:2.5pt solid var(--orange); border-radius:1mm;
+               padding:4mm 4.5mm; page-break-inside:avoid; display:flex; flex-direction:column; gap:1mm; }
+.zahl-kachel b { font-family:Philosopher,Georgia,serif; font-size:19pt; color:var(--tief); line-height:1; }
+.zahl-kachel span { font-size:9.7pt; line-height:1.4; }
+
+.irrtum { display:grid; grid-template-columns:1fr 1fr; gap:0 6mm; padding:3.4mm 0;
+          border-bottom:.5pt solid var(--linie); page-break-inside:avoid; }
+.irrtum:first-of-type { border-top:.5pt solid var(--linie); }
+.irrtum + .block { margin-top:6.5mm; }
+.irrtum .falsch, .irrtum .richtig { display:flex; flex-direction:column; gap:1.5mm; }
+.irrtum .kopf { font-size:8.5pt; letter-spacing:.09em; text-transform:uppercase; font-weight:700; }
+.irrtum .falsch .kopf { color:var(--rost); }
+.irrtum .richtig .kopf { color:var(--petrol); }
+.irrtum p { font-size:9.9pt; line-height:1.42; }
+
+.schritte { display:flex; flex-direction:column; }
+.schritt { display:grid; grid-template-columns:9mm 1fr; gap:3mm; padding:3.2mm 0;
+           border-bottom:.5pt solid var(--linie); align-items:baseline; page-break-inside:avoid; }
+.schritt:first-of-type { border-top:.5pt solid var(--linie); }
+.schritt .haken { color:var(--orange); font-size:13pt; font-weight:700; }
+.schritt b { font-size:11pt; font-weight:600; display:block; margin-bottom:.8mm; color:var(--tinte); }
+.schritt span { font-size:9.9pt; color:var(--leise); line-height:1.45; }
+
+.merksatz { background:var(--papier); border:.5pt solid var(--petrol); border-left:3pt solid var(--petrol);
+            border-radius:1mm; padding:5mm 5.5mm; margin-bottom:6.5mm; page-break-inside:avoid; }
+.merksatz p { font-family:Philosopher,Georgia,serif; font-size:13pt; line-height:1.35; color:var(--tief); }
+
+.beimir { background:var(--papier); border:.5pt solid var(--linie); border-top:2pt solid var(--tief);
+          border-radius:1mm; padding:5mm 5.5mm; margin-bottom:6.5mm; page-break-inside:avoid;
+          display:flex; flex-direction:column; gap:2.5mm; }
+.beimir .label { font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:var(--tief); }
+.beimir p { font-size:10.3pt; line-height:1.5; }
+
+.oele { background:var(--papier); border:.5pt solid var(--petrol); border-radius:1mm;
+        padding:5mm 5.5mm; margin-bottom:6.5mm; page-break-inside:avoid;
+        display:flex; flex-direction:column; gap:2.5mm; }
+.oele .label { font-family:Philosopher,Georgia,serif; font-size:13pt; color:var(--petrol); }
+.oele .rezept { font-weight:600; color:var(--tief); font-size:11pt; }
+.oele p { font-size:10.2pt; line-height:1.48; }
+.oele .warnung { color:var(--rost); font-size:9.8pt; border-top:.5pt dotted var(--linie); padding-top:2.5mm; }
+.oele .warnung b { color:var(--rost); }
+
+.morgen { border-top:.5pt solid var(--linie); padding-top:4mm; font-size:10.4pt; color:var(--leise);
+          page-break-inside:avoid; }
+.morgen span { font-family:Philosopher,Georgia,serif; color:var(--orange); font-size:12pt; margin-right:2mm; }
+
+.abschluss { background:var(--petrol); color:#f7f4ec; border-radius:1.5mm; padding:6mm 6.5mm;
+             page-break-inside:avoid; display:flex; flex-direction:column; gap:3mm; }
+.abschluss .label { font-size:8.5pt; letter-spacing:.12em; text-transform:uppercase; font-weight:700; opacity:.75; }
+.abschluss p { font-size:10.8pt; line-height:1.55; }
+.abschluss .danke { font-family:Philosopher,Georgia,serif; font-size:13pt; opacity:.9; }
+</style>
+
+<div class="tag">
+  <div class="titel">
+    <span class="eyebrow">Immunwoche · Tag 2 von 5 · Dienstag</span>
+    <h1>Schlaf</h1>
+    <p class="unterzeile">Der Hebel, den fast alle unterschätzen — und die überzeugendste Studie der ganzen Woche.</p>
+  </div>
+  <div class="kernsatz"><p>Dein Immunsystem macht seine wichtigste Arbeit, während du nichts tust.</p></div>
+  
+<section class="block">
+  <h2><span class="nr">01</span> Was nachts wirklich passiert</h2>
+  
+  <p>Tagsüber ist dein Immunsystem im Einsatz. Nachts baut es um — und das sind zwei völlig verschiedene Dinge.</p>
+<p>Im Tiefschlaf fährt dein Stresshormon Cortisol herunter. Erst dann hat dein Körper überhaupt Ruhe für Reparatur. Gleichzeitig werden deine Immunzellen <b>klebriger</b> — und Kleben ist genau das, was sie können müssen, um einen Erreger festzuhalten. Bei zu wenig Schlaf lässt diese Klebkraft messbar nach.</p>
+<p>Und dein Immunsystem <b>lernt</b> im Schlaf, ganz ähnlich wie dein Gehirn. Was es tagsüber an Erregern kennengelernt hat, wird nachts abgespeichert. Deshalb fällt die Antwort auf eine Impfung schwächer aus, wenn jemand in den Nächten davor schlecht geschlafen hat.</p>
+</section>
+
+<section class="block">
+  <h2><span class="nr">02</span> Die Zahl, die alles sagt</h2>
+  <p class="intro">Eine Untersuchung, die man so heute kaum mehr machen dürfte — und gerade deshalb ist sie so aussagekräftig.</p>
+  <p>164 gesunde Erwachsene trugen sieben Nächte lang ein Messarmband. Danach bekamen <b>alle die gleiche Menge Erkältungsviren direkt in die Nase</b> und wurden in Quarantäne beobachtet.</p>
+<p>Wer <b>sechs Stunden oder weniger</b> geschlafen hatte, wurde rund <b>viermal so oft</b> wirklich krank wie die, die mehr als sieben Stunden schliefen. Und das unabhängig von Alter, Gewicht, Jahreszeit, Stress und Rauchen.</p>
+<p>Das ist so überzeugend, weil alle demselben Virus in derselben Menge ausgesetzt waren. Der einzige Unterschied war der Schlaf davor.</p>
+</section>
+
+<section class="block">
+  <h2><span class="nr">03</span> Warum du abends nicht runterkommst</h2>
+  <p class="intro">Das ist kein Charakterfehler und keine fehlende Disziplin.</p>
+  <p>Dein Cortisol soll abends fallen. Wenn dein Tag aber durchgetaktet war und du erst um neun zur Ruhe kommst, ist dein System noch im Alarmmodus — und der lässt sich nicht auf Knopfdruck ausschalten. Müde und trotzdem wach ist genau das.</p>
+<p>Zwei Dinge, die du in der Hand hast: <b>Koffein</b> bleibt lange. Von einem Espresso um drei Uhr nachmittags ist um neun Uhr abends noch rund die Hälfte in dir. Und <b>Licht</b> — helles Deckenlicht und der Bildschirm sagen deinem Körper, dass noch Tag ist.</p>
+<p>Und das Schlafzimmer darf kühl sein. Rund 18 Grad sind angenehmer, als die meisten denken — dein Körper muss zum Einschlafen seine Temperatur senken.</p>
+</section>
+<h2><span class="nr">04</span> Die drei häufigsten Irrtümer</h2>
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Ich brauche halt nur fünf Stunden."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Echte Kurzschläferinnen gibt es, aber sie sind sehr selten. Viel häufiger hat man sich an ein Defizit gewöhnt und merkt nicht mehr, wie es sich mit genug Schlaf anfühlt.</p></div>
+</div>
+
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Am Wochenende hole ich das nach."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Etwas holst du nach, aber nicht alles — und die Regelmässigkeit ersetzt es nicht. Dein Körper arbeitet mit einem Rhythmus, nicht mit einem Konto.</p></div>
+</div>
+
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Ein Glas Wein hilft mir beim Einschlafen."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Beim Einschlafen ja. Beim Durchschlafen nicht: Alkohol drückt genau den Tiefschlaf weg, in dem die Reparatur passiert. Du schläfst schneller ein und wachst weniger erholt auf.</p></div>
+</div>
+
+<section class="block">
+  <h2><span class="nr">05</span> Die Zahlen für heute</h2>
+  
+  
+<div class="zahlen">
+  <div class="zahl-kachel"><b>4×</b><span>so oft wurden Menschen krank, die sechs Stunden oder weniger schliefen — bei gleicher Virusmenge.</span></div>
+  <div class="zahl-kachel"><b>7 Std</b><span>war in der Untersuchung die Schwelle, ab der das Risiko deutlich sank.</span></div>
+  <div class="zahl-kachel"><b>6 Std</b><span>nach dem Espresso ist noch die Hälfte des Koffeins in dir. Der Kaffee um drei wirkt um neun noch.</span></div>
+  <div class="zahl-kachel"><b>18°</b><span>im Schlafzimmer. Zum Einschlafen muss dein Körper seine Temperatur senken — das geht in einem warmen Raum schlechter.</span></div>
+</div>
+</section>
+
+<div class="beimir">
+  <span class="label">Bei mir läuft das so</span>
+  <p>Beim Schlaf geht es vor allem um mich — genug Schlaf ist bei mir das A und O. Mich nimmt es viel schneller, wenn ich zu knapp schlafe, und das merke ich sofort an der Geduld mit den Kindern.</p>
+<p>Darum habe ich mein Abendritual. Ich öle mich abends ein oder gönne mir ein Ölbad und fahre bewusst runter. Die Kinder haben übrigens alle einen eigenen Diffuser — den lassen wir gern mit ihren Lieblingsölen laufen. Das lieben sie, und es ist für sie das Signal, dass der Tag jetzt zu Ende geht.</p>
+</div>
+
+<div class="oele">
+  <span class="label">🌙 Diffuser „Schlaf gut"</span>
+  <p class="rezept">4 Tropfen Lavendel · 2 Tropfen Wilde Orange</p>
+  <p>Abends in den Diffuser. Fürs Ölbad: bis zu 7 Tropfen in einem halben Becher Sahne oder 20 ml Milch verrühren und dann erst ins Wasser geben — sonst schwimmt das Öl obenauf. Oder Lavendel und Weihrauch verdünnt auf Nacken und Fusssohlen.</p>
+  
+</div>
+
+<section class="block">
+  <h2><span class="nr">06</span> Was du heute tun kannst</h2>
+  <p class="intro">Such dir eins aus. Nicht alle vier.</p>
+  
+<div class="schritte">
+  <div class="schritt"><span class="haken">✓</span><div><b>Koffein-Schluss um 14 Uhr.</b><span>Der einzelne Hebel, den fast niemand nutzt — und der am selben Abend wirkt.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Eine halbe Stunde früher ins Bett.</b><span>Nicht zwei. Eine halbe. Das schaffst du, zwei Stunden schaffst du nicht.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Diffuser an, Deckenlicht aus.</b><span>Kleine Lampen statt grosses Licht sagen deinem Körper, dass der Tag vorbei ist.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Fenster auf, bevor du ins Bett gehst.</b><span>Kühl und frisch schläft es sich messbar besser.</span></div></div>
+</div>
+</section>
+<div class="merksatz"><p>Du kannst dein Immunsystem nicht zwingen, schneller zu arbeiten. Aber du kannst ihm die Nacht geben, in der es arbeitet.</p></div>
+<p class="morgen"><span>Morgen</span> Bewegung und frische Luft — und warum nicht die Kälte krank macht.</p>
+</div>

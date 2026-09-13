@@ -1,0 +1,187 @@
+<!-- generiert von build-immunwoche.mjs -->
+<meta charset="utf-8">
+<title>Immunwoche Tag 5 — Wenn es doch mal kommt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap">
+<style>
+@page { size: A4; margin: 15mm 16mm 20mm; }
+
+:root {
+  --creme:#f1ecdd; --papier:#faf7ef; --petrol:#12828c; --tief:#29556d;
+  --orange:#dc822e; --rost:#a8432a; --tinte:#1d3742; --leise:#63747b; --linie:#d6cdb6;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+html { background:var(--creme); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+body { font-family:"Source Sans 3",system-ui,sans-serif; color:var(--tinte); background:var(--creme);
+       font-size:10.6pt; line-height:1.5; }
+
+h1,h2,h3 { font-family:Philosopher,Georgia,serif; font-weight:700; line-height:1.15; }
+
+.tag { page-break-before:always; }
+.tag:first-of-type { page-break-before:auto; }
+
+.titel { border-bottom:2.5pt solid var(--petrol); padding-bottom:4mm; margin-bottom:6mm; page-break-after:avoid; }
+.eyebrow { font-size:8.5pt; letter-spacing:.18em; text-transform:uppercase; font-weight:700;
+           color:var(--petrol); display:block; margin-bottom:2.5mm; }
+h1 { font-size:25pt; margin-bottom:2mm; }
+.unterzeile { font-size:11pt; color:var(--leise); max-width:135mm; }
+
+.kernsatz { background:var(--petrol); color:#f7f4ec; padding:5mm 6.5mm; border-radius:1.5mm;
+            margin-bottom:6.5mm; page-break-inside:avoid; }
+.kernsatz p { font-family:Philosopher,Georgia,serif; font-size:15.5pt; line-height:1.3; }
+
+.block { display:flex; flex-direction:column; gap:3.2mm; margin-bottom:6.5mm; page-break-inside:avoid; }
+h2 { font-size:17.5pt; color:var(--tief); display:flex; align-items:baseline; gap:3mm;
+     page-break-after:avoid; margin-bottom:1mm; }
+h2 .nr { font-size:10pt; color:var(--orange); font-family:"Source Sans 3",sans-serif; font-weight:700; }
+.block p { max-width:none; }
+.intro { color:var(--leise); font-size:10.4pt; }
+b, strong { font-weight:600; color:var(--tief); }
+
+.zahlen { display:grid; grid-template-columns:1fr 1fr; gap:3.5mm; }
+.zahl-kachel { background:var(--papier); border-left:2.5pt solid var(--orange); border-radius:1mm;
+               padding:4mm 4.5mm; page-break-inside:avoid; display:flex; flex-direction:column; gap:1mm; }
+.zahl-kachel b { font-family:Philosopher,Georgia,serif; font-size:19pt; color:var(--tief); line-height:1; }
+.zahl-kachel span { font-size:9.7pt; line-height:1.4; }
+
+.irrtum { display:grid; grid-template-columns:1fr 1fr; gap:0 6mm; padding:3.4mm 0;
+          border-bottom:.5pt solid var(--linie); page-break-inside:avoid; }
+.irrtum:first-of-type { border-top:.5pt solid var(--linie); }
+.irrtum + .block { margin-top:6.5mm; }
+.irrtum .falsch, .irrtum .richtig { display:flex; flex-direction:column; gap:1.5mm; }
+.irrtum .kopf { font-size:8.5pt; letter-spacing:.09em; text-transform:uppercase; font-weight:700; }
+.irrtum .falsch .kopf { color:var(--rost); }
+.irrtum .richtig .kopf { color:var(--petrol); }
+.irrtum p { font-size:9.9pt; line-height:1.42; }
+
+.schritte { display:flex; flex-direction:column; }
+.schritt { display:grid; grid-template-columns:9mm 1fr; gap:3mm; padding:3.2mm 0;
+           border-bottom:.5pt solid var(--linie); align-items:baseline; page-break-inside:avoid; }
+.schritt:first-of-type { border-top:.5pt solid var(--linie); }
+.schritt .haken { color:var(--orange); font-size:13pt; font-weight:700; }
+.schritt b { font-size:11pt; font-weight:600; display:block; margin-bottom:.8mm; color:var(--tinte); }
+.schritt span { font-size:9.9pt; color:var(--leise); line-height:1.45; }
+
+.merksatz { background:var(--papier); border:.5pt solid var(--petrol); border-left:3pt solid var(--petrol);
+            border-radius:1mm; padding:5mm 5.5mm; margin-bottom:6.5mm; page-break-inside:avoid; }
+.merksatz p { font-family:Philosopher,Georgia,serif; font-size:13pt; line-height:1.35; color:var(--tief); }
+
+.beimir { background:var(--papier); border:.5pt solid var(--linie); border-top:2pt solid var(--tief);
+          border-radius:1mm; padding:5mm 5.5mm; margin-bottom:6.5mm; page-break-inside:avoid;
+          display:flex; flex-direction:column; gap:2.5mm; }
+.beimir .label { font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:var(--tief); }
+.beimir p { font-size:10.3pt; line-height:1.5; }
+
+.oele { background:var(--papier); border:.5pt solid var(--petrol); border-radius:1mm;
+        padding:5mm 5.5mm; margin-bottom:6.5mm; page-break-inside:avoid;
+        display:flex; flex-direction:column; gap:2.5mm; }
+.oele .label { font-family:Philosopher,Georgia,serif; font-size:13pt; color:var(--petrol); }
+.oele .rezept { font-weight:600; color:var(--tief); font-size:11pt; }
+.oele p { font-size:10.2pt; line-height:1.48; }
+.oele .warnung { color:var(--rost); font-size:9.8pt; border-top:.5pt dotted var(--linie); padding-top:2.5mm; }
+.oele .warnung b { color:var(--rost); }
+
+.morgen { border-top:.5pt solid var(--linie); padding-top:4mm; font-size:10.4pt; color:var(--leise);
+          page-break-inside:avoid; }
+.morgen span { font-family:Philosopher,Georgia,serif; color:var(--orange); font-size:12pt; margin-right:2mm; }
+
+.abschluss { background:var(--petrol); color:#f7f4ec; border-radius:1.5mm; padding:6mm 6.5mm;
+             page-break-inside:avoid; display:flex; flex-direction:column; gap:3mm; }
+.abschluss .label { font-size:8.5pt; letter-spacing:.12em; text-transform:uppercase; font-weight:700; opacity:.75; }
+.abschluss p { font-size:10.8pt; line-height:1.55; }
+.abschluss .danke { font-family:Philosopher,Georgia,serif; font-size:13pt; opacity:.9; }
+</style>
+
+<div class="tag">
+  <div class="titel">
+    <span class="eyebrow">Immunwoche · Tag 5 von 5 · Freitag</span>
+    <h1>Wenn es doch mal kommt</h1>
+    <p class="unterzeile">Ruhig der Reihe nach: was im Körper passiert, was wirklich hilft — und woran du merkst, dass es kein Hausmittel mehr ist.</p>
+  </div>
+  <div class="kernsatz"><p>Fieber ist nicht der Feind. Fieber ist die Feuerwehr.</p></div>
+  
+<section class="block">
+  <h2><span class="nr">01</span> Was du spürst, ist nicht der Erreger</h2>
+  <p class="intro">Erinnerst du dich an das Haus von Dienstag? Jetzt wird es wichtig.</p>
+  <p>Fieber, Halsweh, Gliederschmerzen, Müdigkeit — das ist nicht der Virus, der dir wehtut. <b>Das ist deine eigene Feuerwehr bei der Arbeit.</b> Dein Körper fährt die Temperatur hoch, weil viele Erreger sich bei Wärme schlechter vermehren und deine Abwehrzellen dabei schneller arbeiten.</p>
+<p>Auch die Müdigkeit hat einen Grund. Eine Immunantwort ist <b>teuer</b>. Dein Körper zieht die Energie von überall ab, wo sie gerade nicht gebraucht wird — und sagt dir damit sehr deutlich, was er jetzt will.</p>
+<p>Das ändert die ganze Haltung: Ruhe ist nicht das, was übrig bleibt, wenn nichts anderes hilft. <b>Ruhe ist die Behandlung.</b></p>
+</section>
+
+<section class="block">
+  <h2><span class="nr">02</span> Was tatsächlich hilft — ehrlich sortiert</h2>
+  <p class="intro">Von gut belegt nach schwach belegt. Ich lasse nichts weg, aber ich sage dazu, wie sicher es ist.</p>
+  <p><b>Honig bei Husten.</b> Das am besten belegte Hausmittel überhaupt. Eine grosse Übersichtsarbeit zeigt: Honig lindert Häufigkeit und Stärke der Hustenanfälle bei Kindern und verbessert den Schlaf — besser als keine Behandlung, und ähnlich gut wie manche rezeptfreien Hustensäfte. Ein Teelöffel, langsam gelutscht. <b>Aber erst ab einem Jahr</b>, für Säuglinge ist Honig gefährlich.</p>
+<p><b>Zink, wenn es früh kommt.</b> Eine Auswertung von 26 Studien mit 2375 Personen fand: Die Erkältung wird etwa <b>einen Tag kürzer</b> — aber nur, wenn innerhalb der ersten 24 Stunden begonnen wird. Die Forschenden selbst stufen die Sicherheit dieser Aussage als niedrig ein. Also: einen Versuch wert, kein Wunder.</p>
+<p><b>Vitamin C.</b> Verkürzt eine Erkältung um rund acht Prozent, von sieben Tagen also einen halben Tag. Vorbeugen tut es nicht.</p>
+<p><b>Trinken, feuchte Luft, Ruhe.</b> Klingt banal, ist aber genau das, was deine Flimmerhärchen und deine Schleimhäute brauchen, um den Erreger wieder hinauszubefördern.</p>
+</section>
+
+<section class="block">
+  <h2><span class="nr">03</span> Woran du merkst, dass es kein Hausmittel mehr ist</h2>
+  <p class="intro">Der wichtigste Abschnitt dieser Woche. Nicht zum Ängstigen, sondern zum Einordnen.</p>
+  <p>Die allermeisten Erkältungen sind nach sieben bis zehn Tagen vorbei und brauchen nichts ausser Geduld. Es gibt aber Punkte, an denen du nicht mehr selbst herumprobierst, sondern anrufst:</p>
+<p><b>Atemnot oder schnelle, angestrengte Atmung.</b> Immer.<br><b>Hohes Fieber, das mehrere Tage nicht runtergeht</b> — oder Fieber bei einem Säugling.<br><b>Es wird besser und dann plötzlich wieder deutlich schlechter.</b> Das ist ein klassisches Warnzeichen.<br><b>Steifer Nacken, starke Kopfschmerzen, Verwirrtheit.</b><br><b>Ein Kind, das nicht mehr trinkt</b> oder auffällig teilnahmslos wird.</p>
+<p>Und ganz grundsätzlich: Du kennst dein Kind und dich selbst. Wenn dein Gefühl sagt, dass etwas anders ist als sonst, dann ist das ein guter Grund anzurufen — auch wenn nichts auf dieser Liste steht.</p>
+</section>
+<h2><span class="nr">04</span> Die drei häufigsten Irrtümer</h2>
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Fieber muss sofort runter."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Fieber ist Teil der Abwehr, nicht die Krankheit. Man senkt es, wenn der Leidensdruck gross ist oder das Kind nicht mehr trinkt — nicht wegen der Zahl auf dem Thermometer. Im Zweifel bei der Kinderärztin nachfragen.</p></div>
+</div>
+
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Ein Antibiotikum hilft schneller."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Eine Erkältung wird von Viren ausgelöst. Antibiotika wirken gegen Bakterien und richten hier nichts aus, ausser dass sie deiner Darmflora schaden — genau der, um die es am Montag ging.</p></div>
+</div>
+
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Richtig schwitzen kuriert es aus."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Schwitzen bringt den Erreger nicht heraus. Was hilft, ist unspektakulärer: trinken, ruhen, feuchte Luft.</p></div>
+</div>
+
+<section class="block">
+  <h2><span class="nr">05</span> Die Zahlen für heute</h2>
+  
+  
+<div class="zahlen">
+  <div class="zahl-kachel"><b>7–10</b><span>Tage dauert eine normale Erkältung. Danach wird es besser — Geduld ist meistens die ganze Behandlung.</span></div>
+  <div class="zahl-kachel"><b>1 Tag</b><span>kürzer mit Zink, aber nur wenn du in den ersten 24 Stunden anfängst.</span></div>
+  <div class="zahl-kachel"><b>ab 1 Jahr</b><span>darf Honig gegeben werden. Für Säuglinge ist er gefährlich — das ist keine Vorsichtsregel, sondern ein echtes Risiko.</span></div>
+  <div class="zahl-kachel"><b>8 %</b><span>kürzer mit Vitamin C. Von sieben Tagen ein halber. Vorbeugen tut es nicht.</span></div>
+</div>
+</section>
+
+<div class="beimir">
+  <span class="label">Bei mir läuft das so</span>
+  <p>Und falls doch mal eine Nase läuft — nicht in Panik, sondern ruhig der Reihe nach.</p>
+<p>Für die Atemwege nehme ich am liebsten Air, also Breathe. Das ist die einfachste und sanfteste Variante und perfekt für Einsteigerinnen, weil man nichts zusammenmischen muss. Einfach in den Diffuser oder verdünnt auf die Brust.</p>
+<p>Bei Halskratzen: ein Tropfen Teebaum und ein Tropfen Zitrone auf einen Teelöffel Honig, und den langsam lutschen.</p>
+</div>
+
+<div class="oele">
+  <span class="label">🫁 Air / Breathe für die Atemwege</span>
+  <p class="rezept">Pur in den Diffuser oder verdünnt auf Brust und Rücken</p>
+  <p>Am besten abends, wenn der Husten sonst den Schlaf stört. Und weil feuchte Luft ohnehin hilft: eine Schale Wasser auf die Heizung stellen, während der Diffuser läuft.</p>
+  
+</div>
+
+<section class="block">
+  <h2><span class="nr">06</span> Was du heute tun kannst</h2>
+  
+  
+<div class="schritte">
+  <div class="schritt"><span class="haken">✓</span><div><b>Leg deine Herbst-Basis griffbereit.</b><span>An einen Ort, den du im Halbschlaf findest. Nicht ganz hinten im Schrank.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Kauf ein Glas guten Honig.</b><span>Das am besten belegte Hausmittel dieser Woche steht im Supermarkt.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Merk dir die Warnzeichen.</b><span>Atemnot, Fieber beim Säugling, Verschlechterung nach Besserung. Der Rest ist meistens Geduld.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Nimm dir vor, beim nächsten Mal wirklich zu ruhen.</b><span>Nicht durcharbeiten. Ruhe ist die Behandlung, nicht die Belohnung fürs Durchhalten.</span></div></div>
+</div>
+</section>
+<div class="merksatz"><p>Du musst eine Erkältung nicht bekämpfen. Du musst deinem Körper die Bedingungen geben, unter denen er sie selbst erledigt.</p></div>
+<div class="abschluss">
+        <span class="label">Das war die Woche</span>
+        <p>Alles, was ich dir diese Woche gezeigt habe, startet mit einer Handvoll Basis-Öle — genau die stecken im Home Essentials Kit. Wenn du wirklich starten willst, mache ich das nicht als Warenkorb: Du bekommst dein Kit, meinen einseitigen Routine-Plan und mich ein paar Wochen an deiner Seite. Ich nehme diese Runde nur eine Handvoll Frauen. Magst du dabei sein? Schreib mir. 🤍</p>
+        <p class="danke">Danke, dass du dabei warst. — Patricia</p>
+      </div>
+</div>

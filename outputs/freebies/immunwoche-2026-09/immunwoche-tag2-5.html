@@ -1,0 +1,450 @@
+<!-- generiert von build-immunwoche.mjs -->
+<meta charset="utf-8">
+<title>Immunwoche Tag 2 bis 5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap">
+<style>
+@page { size: A4; margin: 15mm 16mm 20mm; }
+
+:root {
+  --creme:#f1ecdd; --papier:#faf7ef; --petrol:#12828c; --tief:#29556d;
+  --orange:#dc822e; --rost:#a8432a; --tinte:#1d3742; --leise:#63747b; --linie:#d6cdb6;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+html { background:var(--creme); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+body { font-family:"Source Sans 3",system-ui,sans-serif; color:var(--tinte); background:var(--creme);
+       font-size:10.6pt; line-height:1.5; }
+
+h1,h2,h3 { font-family:Philosopher,Georgia,serif; font-weight:700; line-height:1.15; }
+
+.tag { page-break-before:always; }
+.tag:first-of-type { page-break-before:auto; }
+
+.titel { border-bottom:2.5pt solid var(--petrol); padding-bottom:4mm; margin-bottom:6mm; page-break-after:avoid; }
+.eyebrow { font-size:8.5pt; letter-spacing:.18em; text-transform:uppercase; font-weight:700;
+           color:var(--petrol); display:block; margin-bottom:2.5mm; }
+h1 { font-size:25pt; margin-bottom:2mm; }
+.unterzeile { font-size:11pt; color:var(--leise); max-width:135mm; }
+
+.kernsatz { background:var(--petrol); color:#f7f4ec; padding:5mm 6.5mm; border-radius:1.5mm;
+            margin-bottom:6.5mm; page-break-inside:avoid; }
+.kernsatz p { font-family:Philosopher,Georgia,serif; font-size:15.5pt; line-height:1.3; }
+
+.block { display:flex; flex-direction:column; gap:3.2mm; margin-bottom:6.5mm; page-break-inside:avoid; }
+h2 { font-size:17.5pt; color:var(--tief); display:flex; align-items:baseline; gap:3mm;
+     page-break-after:avoid; margin-bottom:1mm; }
+h2 .nr { font-size:10pt; color:var(--orange); font-family:"Source Sans 3",sans-serif; font-weight:700; }
+.block p { max-width:none; }
+.intro { color:var(--leise); font-size:10.4pt; }
+b, strong { font-weight:600; color:var(--tief); }
+
+.zahlen { display:grid; grid-template-columns:1fr 1fr; gap:3.5mm; }
+.zahl-kachel { background:var(--papier); border-left:2.5pt solid var(--orange); border-radius:1mm;
+               padding:4mm 4.5mm; page-break-inside:avoid; display:flex; flex-direction:column; gap:1mm; }
+.zahl-kachel b { font-family:Philosopher,Georgia,serif; font-size:19pt; color:var(--tief); line-height:1; }
+.zahl-kachel span { font-size:9.7pt; line-height:1.4; }
+
+.irrtum { display:grid; grid-template-columns:1fr 1fr; gap:0 6mm; padding:3.4mm 0;
+          border-bottom:.5pt solid var(--linie); page-break-inside:avoid; }
+.irrtum:first-of-type { border-top:.5pt solid var(--linie); }
+.irrtum + .block { margin-top:6.5mm; }
+.irrtum .falsch, .irrtum .richtig { display:flex; flex-direction:column; gap:1.5mm; }
+.irrtum .kopf { font-size:8.5pt; letter-spacing:.09em; text-transform:uppercase; font-weight:700; }
+.irrtum .falsch .kopf { color:var(--rost); }
+.irrtum .richtig .kopf { color:var(--petrol); }
+.irrtum p { font-size:9.9pt; line-height:1.42; }
+
+.schritte { display:flex; flex-direction:column; }
+.schritt { display:grid; grid-template-columns:9mm 1fr; gap:3mm; padding:3.2mm 0;
+           border-bottom:.5pt solid var(--linie); align-items:baseline; page-break-inside:avoid; }
+.schritt:first-of-type { border-top:.5pt solid var(--linie); }
+.schritt .haken { color:var(--orange); font-size:13pt; font-weight:700; }
+.schritt b { font-size:11pt; font-weight:600; display:block; margin-bottom:.8mm; color:var(--tinte); }
+.schritt span { font-size:9.9pt; color:var(--leise); line-height:1.45; }
+
+.merksatz { background:var(--papier); border:.5pt solid var(--petrol); border-left:3pt solid var(--petrol);
+            border-radius:1mm; padding:5mm 5.5mm; margin-bottom:6.5mm; page-break-inside:avoid; }
+.merksatz p { font-family:Philosopher,Georgia,serif; font-size:13pt; line-height:1.35; color:var(--tief); }
+
+.beimir { background:var(--papier); border:.5pt solid var(--linie); border-top:2pt solid var(--tief);
+          border-radius:1mm; padding:5mm 5.5mm; margin-bottom:6.5mm; page-break-inside:avoid;
+          display:flex; flex-direction:column; gap:2.5mm; }
+.beimir .label { font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:var(--tief); }
+.beimir p { font-size:10.3pt; line-height:1.5; }
+
+.oele { background:var(--papier); border:.5pt solid var(--petrol); border-radius:1mm;
+        padding:5mm 5.5mm; margin-bottom:6.5mm; page-break-inside:avoid;
+        display:flex; flex-direction:column; gap:2.5mm; }
+.oele .label { font-family:Philosopher,Georgia,serif; font-size:13pt; color:var(--petrol); }
+.oele .rezept { font-weight:600; color:var(--tief); font-size:11pt; }
+.oele p { font-size:10.2pt; line-height:1.48; }
+.oele .warnung { color:var(--rost); font-size:9.8pt; border-top:.5pt dotted var(--linie); padding-top:2.5mm; }
+.oele .warnung b { color:var(--rost); }
+
+.morgen { border-top:.5pt solid var(--linie); padding-top:4mm; font-size:10.4pt; color:var(--leise);
+          page-break-inside:avoid; }
+.morgen span { font-family:Philosopher,Georgia,serif; color:var(--orange); font-size:12pt; margin-right:2mm; }
+
+.abschluss { background:var(--petrol); color:#f7f4ec; border-radius:1.5mm; padding:6mm 6.5mm;
+             page-break-inside:avoid; display:flex; flex-direction:column; gap:3mm; }
+.abschluss .label { font-size:8.5pt; letter-spacing:.12em; text-transform:uppercase; font-weight:700; opacity:.75; }
+.abschluss p { font-size:10.8pt; line-height:1.55; }
+.abschluss .danke { font-family:Philosopher,Georgia,serif; font-size:13pt; opacity:.9; }
+</style>
+
+<div class="tag">
+  <div class="titel">
+    <span class="eyebrow">Immunwoche · Tag 2 von 5 · Dienstag</span>
+    <h1>Schlaf</h1>
+    <p class="unterzeile">Der Hebel, den fast alle unterschätzen — und die überzeugendste Studie der ganzen Woche.</p>
+  </div>
+  <div class="kernsatz"><p>Dein Immunsystem macht seine wichtigste Arbeit, während du nichts tust.</p></div>
+  
+<section class="block">
+  <h2><span class="nr">01</span> Was nachts wirklich passiert</h2>
+  
+  <p>Tagsüber ist dein Immunsystem im Einsatz. Nachts baut es um — und das sind zwei völlig verschiedene Dinge.</p>
+<p>Im Tiefschlaf fährt dein Stresshormon Cortisol herunter. Erst dann hat dein Körper überhaupt Ruhe für Reparatur. Gleichzeitig werden deine Immunzellen <b>klebriger</b> — und Kleben ist genau das, was sie können müssen, um einen Erreger festzuhalten. Bei zu wenig Schlaf lässt diese Klebkraft messbar nach.</p>
+<p>Und dein Immunsystem <b>lernt</b> im Schlaf, ganz ähnlich wie dein Gehirn. Was es tagsüber an Erregern kennengelernt hat, wird nachts abgespeichert. Deshalb fällt die Antwort auf eine Impfung schwächer aus, wenn jemand in den Nächten davor schlecht geschlafen hat.</p>
+</section>
+
+<section class="block">
+  <h2><span class="nr">02</span> Die Zahl, die alles sagt</h2>
+  <p class="intro">Eine Untersuchung, die man so heute kaum mehr machen dürfte — und gerade deshalb ist sie so aussagekräftig.</p>
+  <p>164 gesunde Erwachsene trugen sieben Nächte lang ein Messarmband. Danach bekamen <b>alle die gleiche Menge Erkältungsviren direkt in die Nase</b> und wurden in Quarantäne beobachtet.</p>
+<p>Wer <b>sechs Stunden oder weniger</b> geschlafen hatte, wurde rund <b>viermal so oft</b> wirklich krank wie die, die mehr als sieben Stunden schliefen. Und das unabhängig von Alter, Gewicht, Jahreszeit, Stress und Rauchen.</p>
+<p>Das ist so überzeugend, weil alle demselben Virus in derselben Menge ausgesetzt waren. Der einzige Unterschied war der Schlaf davor.</p>
+</section>
+
+<section class="block">
+  <h2><span class="nr">03</span> Warum du abends nicht runterkommst</h2>
+  <p class="intro">Das ist kein Charakterfehler und keine fehlende Disziplin.</p>
+  <p>Dein Cortisol soll abends fallen. Wenn dein Tag aber durchgetaktet war und du erst um neun zur Ruhe kommst, ist dein System noch im Alarmmodus — und der lässt sich nicht auf Knopfdruck ausschalten. Müde und trotzdem wach ist genau das.</p>
+<p>Zwei Dinge, die du in der Hand hast: <b>Koffein</b> bleibt lange. Von einem Espresso um drei Uhr nachmittags ist um neun Uhr abends noch rund die Hälfte in dir. Und <b>Licht</b> — helles Deckenlicht und der Bildschirm sagen deinem Körper, dass noch Tag ist.</p>
+<p>Und das Schlafzimmer darf kühl sein. Rund 18 Grad sind angenehmer, als die meisten denken — dein Körper muss zum Einschlafen seine Temperatur senken.</p>
+</section>
+<h2><span class="nr">04</span> Die drei häufigsten Irrtümer</h2>
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Ich brauche halt nur fünf Stunden."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Echte Kurzschläferinnen gibt es, aber sie sind sehr selten. Viel häufiger hat man sich an ein Defizit gewöhnt und merkt nicht mehr, wie es sich mit genug Schlaf anfühlt.</p></div>
+</div>
+
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Am Wochenende hole ich das nach."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Etwas holst du nach, aber nicht alles — und die Regelmässigkeit ersetzt es nicht. Dein Körper arbeitet mit einem Rhythmus, nicht mit einem Konto.</p></div>
+</div>
+
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Ein Glas Wein hilft mir beim Einschlafen."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Beim Einschlafen ja. Beim Durchschlafen nicht: Alkohol drückt genau den Tiefschlaf weg, in dem die Reparatur passiert. Du schläfst schneller ein und wachst weniger erholt auf.</p></div>
+</div>
+
+<section class="block">
+  <h2><span class="nr">05</span> Die Zahlen für heute</h2>
+  
+  
+<div class="zahlen">
+  <div class="zahl-kachel"><b>4×</b><span>so oft wurden Menschen krank, die sechs Stunden oder weniger schliefen — bei gleicher Virusmenge.</span></div>
+  <div class="zahl-kachel"><b>7 Std</b><span>war in der Untersuchung die Schwelle, ab der das Risiko deutlich sank.</span></div>
+  <div class="zahl-kachel"><b>6 Std</b><span>nach dem Espresso ist noch die Hälfte des Koffeins in dir. Der Kaffee um drei wirkt um neun noch.</span></div>
+  <div class="zahl-kachel"><b>18°</b><span>im Schlafzimmer. Zum Einschlafen muss dein Körper seine Temperatur senken — das geht in einem warmen Raum schlechter.</span></div>
+</div>
+</section>
+
+<div class="beimir">
+  <span class="label">Bei mir läuft das so</span>
+  <p>Beim Schlaf geht es vor allem um mich — genug Schlaf ist bei mir das A und O. Mich nimmt es viel schneller, wenn ich zu knapp schlafe, und das merke ich sofort an der Geduld mit den Kindern.</p>
+<p>Darum habe ich mein Abendritual. Ich öle mich abends ein oder gönne mir ein Ölbad und fahre bewusst runter. Die Kinder haben übrigens alle einen eigenen Diffuser — den lassen wir gern mit ihren Lieblingsölen laufen. Das lieben sie, und es ist für sie das Signal, dass der Tag jetzt zu Ende geht.</p>
+</div>
+
+<div class="oele">
+  <span class="label">🌙 Diffuser „Schlaf gut"</span>
+  <p class="rezept">4 Tropfen Lavendel · 2 Tropfen Wilde Orange</p>
+  <p>Abends in den Diffuser. Fürs Ölbad: bis zu 7 Tropfen in einem halben Becher Sahne oder 20 ml Milch verrühren und dann erst ins Wasser geben — sonst schwimmt das Öl obenauf. Oder Lavendel und Weihrauch verdünnt auf Nacken und Fusssohlen.</p>
+  
+</div>
+
+<section class="block">
+  <h2><span class="nr">06</span> Was du heute tun kannst</h2>
+  <p class="intro">Such dir eins aus. Nicht alle vier.</p>
+  
+<div class="schritte">
+  <div class="schritt"><span class="haken">✓</span><div><b>Koffein-Schluss um 14 Uhr.</b><span>Der einzelne Hebel, den fast niemand nutzt — und der am selben Abend wirkt.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Eine halbe Stunde früher ins Bett.</b><span>Nicht zwei. Eine halbe. Das schaffst du, zwei Stunden schaffst du nicht.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Diffuser an, Deckenlicht aus.</b><span>Kleine Lampen statt grosses Licht sagen deinem Körper, dass der Tag vorbei ist.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Fenster auf, bevor du ins Bett gehst.</b><span>Kühl und frisch schläft es sich messbar besser.</span></div></div>
+</div>
+</section>
+<div class="merksatz"><p>Du kannst dein Immunsystem nicht zwingen, schneller zu arbeiten. Aber du kannst ihm die Nacht geben, in der es arbeitet.</p></div>
+<p class="morgen"><span>Morgen</span> Bewegung und frische Luft — und warum nicht die Kälte krank macht.</p>
+</div>
+
+<div class="tag">
+  <div class="titel">
+    <span class="eyebrow">Immunwoche · Tag 3 von 5 · Mittwoch</span>
+    <h1>Bewegung und frische Luft</h1>
+    <p class="unterzeile">Warum deine Abwehr eine Pumpe braucht, die du selbst bist — und was die Heizung damit zu tun hat.</p>
+  </div>
+  <div class="kernsatz"><p>Dein Blut hat ein Herz, das es pumpt. Deine Lymphe hat nur dich.</p></div>
+  
+<section class="block">
+  <h2><span class="nr">01</span> Die Lymphe hat keine Pumpe</h2>
+  
+  <p>Deine Immunzellen sitzen nicht still. Sie patrouillieren — durch das Blut, vor allem aber durch das <b>Lymphsystem</b>, ein zweites Leitungsnetz, das durch deinen ganzen Körper läuft und in dem die Abwehrzellen unterwegs sind.</p>
+<p>Und dieses Netz hat <b>kein eigenes Herz</b>. Es bewegt sich nur, wenn deine Muskeln sich anspannen und du tief atmest. Wer den ganzen Tag sitzt, lässt die Patrouille im Grunde stehen.</p>
+<p>Das ist der eigentliche Grund, warum Bewegung hier hingehört — nicht Kalorien, nicht Figur. Es ist der Antrieb für ein System, das keinen eigenen hat.</p>
+</section>
+
+<section class="block">
+  <h2><span class="nr">02</span> Was Bewegung messbar bringt</h2>
+  <p class="intro">Und gleich danach die gute Nachricht für alle, die Angst haben, Sport mache anfällig.</p>
+  <p>In einer Untersuchung gingen Frauen fünfmal pro Woche 45 Minuten zügig spazieren, 15 Wochen lang. Ihre <b>Krankheitstage mit Erkältungssymptomen halbierten sich</b> im Vergleich zur Gruppe, die nichts änderte. Quer über mehrere Studien liegt der Effekt bei 25 bis 50 Prozent weniger Symptomtagen.</p>
+<p>Das Bemerkenswerte daran: Es war Spazierengehen. Kein Trainingsplan, kein Studio, keine Ausrüstung.</p>
+<p><b>Und die Entwarnung:</b> Nach einer anstrengenden Einheit sinkt die Zahl der Immunzellen im Blut kurz ab. Das wurde jahrzehntelang als „offenes Fenster" gedeutet — als wäre man danach schutzlos. Eine grosse Übersichtsarbeit hat das widerlegt: Die Zellen verschwinden nicht, sie werden in die <b>Gewebe umverteilt</b>, wo sie patrouillieren. Es ist erhöhte Wachsamkeit, nicht Schwäche.</p>
+</section>
+
+<section class="block">
+  <h2><span class="nr">03</span> Die Heizung ist das eigentliche Problem</h2>
+  <p class="intro">Jetzt beginnt die Zeit, in der wir wieder drinnen sitzen. Und drinnen verändert sich etwas, das kaum jemand auf dem Schirm hat.</p>
+  <p>Kalte Luft kann fast keine Feuchtigkeit halten. Wenn sie hereinkommt und du sie aufheizt, fällt die Luftfeuchtigkeit im Raum auf <b>rund 20 Prozent</b> — trockener als in manchen Wüstenregionen.</p>
+<p>Das hat zwei Folgen. Erstens werden die <b>Flimmerhärchen</b> in deinen Atemwegen langsam. Das sind die feinen Härchen, die Erreger normalerweise nach oben und hinaus befördern. Bei trockener Luft schaffen sie das nicht mehr gut — deine erste Mauer von gestern wird also durchlässiger.</p>
+<p>Zweitens trocknen die winzigen Tröpfchen in der Luft schneller aus, und die Erreger darin bleiben länger in der Schwebe.</p>
+<p>Der Zielbereich sind <b>40 bis 60 Prozent</b> Luftfeuchtigkeit. Und das wichtigste Werkzeug dafür ist kostenlos: <b>Stosslüften</b>. Fenster ganz auf, wenige Minuten, am besten Durchzug. Ein gekipptes Fenster tauscht kaum Luft aus, kühlt dafür die Wände aus.</p>
+</section>
+<h2><span class="nr">04</span> Die drei häufigsten Irrtümer</h2>
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Kälte macht krank."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Nicht die Kälte. Es ist das Drinnensitzen: mehr Menschen auf engem Raum, weniger Luftwechsel und trockene Heizungsluft, die deine Schleimhäute austrocknet. Draussen in der Kälte steckt sich kaum jemand an.</p></div>
+</div>
+
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Nach dem Sport bin ich anfälliger."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Das war jahrzehntelang die Lehrmeinung und gilt heute als widerlegt. Die Immunzellen verschwinden nach dem Training nicht — sie ziehen in die Gewebe um und patrouillieren dort.</p></div>
+</div>
+
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Ich kippe das Fenster, das reicht."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Ein gekipptes Fenster tauscht kaum Luft, kühlt aber die Wand daneben aus. Fünf Minuten ganz offen bringen mehr als eine Stunde gekippt — und kosten weniger Heizung.</p></div>
+</div>
+
+<section class="block">
+  <h2><span class="nr">05</span> Die Zahlen für heute</h2>
+  
+  
+<div class="zahlen">
+  <div class="zahl-kachel"><b>50 %</b><span>weniger Krankheitstage bei fünfmal 45 Minuten zügigem Gehen pro Woche. Kein Studio nötig.</span></div>
+  <div class="zahl-kachel"><b>8000</b><span>Schritte pro Tag — meine eigene Zielmarke. Erreichbar, ohne dass der Tag sich darum drehen muss.</span></div>
+  <div class="zahl-kachel"><b>20 %</b><span>Luftfeuchtigkeit hat ein normal geheizter Raum im Winter. Das ist Wüstenniveau.</span></div>
+  <div class="zahl-kachel"><b>40–60 %</b><span>wären der Zielbereich. Stosslüften, Wäsche drinnen trocknen, Pflanzen — alles hilft.</span></div>
+</div>
+</section>
+
+<div class="beimir">
+  <span class="label">Bei mir läuft das so</span>
+  <p>Jetzt kommt die Zeit, in der wir wieder mehr drinnen hocken — und damit mehr in den Keimen. Ich bewege mich täglich und schaue, dass ich auf rund 8000 Schritte komme.</p>
+<p>Abends drehe ich mit meinem Mann meist noch eine kleine Runde ums Dorf, und das ist Gold: Wir reden mal ungestört, ich schlafe besser, und es tut der Psyche gut. Dazu dreimal die Woche Krafttraining. Und ganz simpel: Stosslüften und die Bettwäsche auslüften.</p>
+</div>
+
+<div class="oele">
+  <span class="label">🍃 Diffuser „Saubere Luft"</span>
+  <p class="rezept">2 Tropfen Eukalyptus · 2 Tropfen Teebaum · 2 Tropfen Zitrone</p>
+  <p>In den Diffuser für die Wohnräume. Morgens mag ich die Aromadusche: ein bis zwei Tropfen Pfefferminze oder Zitrone in die Duschecke tröpfeln — nicht direkt unter den Strahl, sonst ist es sofort weg.</p>
+  
+</div>
+
+<section class="block">
+  <h2><span class="nr">06</span> Was du heute tun kannst</h2>
+  
+  
+<div class="schritte">
+  <div class="schritt"><span class="haken">✓</span><div><b>Fünf Minuten stosslüften.</b><span>Morgens nach dem Aufstehen, Fenster ganz auf. Das ist die billigste Massnahme der ganzen Woche.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Eine Runde nach dem Abendessen.</b><span>Zehn Minuten reichen. Es zählt für die Schritte, für den Kopf und für den Schlaf.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Die Treppe statt den Lift.</b><span>Muskelanspannung ist der Antrieb deines Lymphsystems. Jedes Mal zählt.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Bettwäsche auslüften.</b><span>Fenster auf, Decke zurückschlagen, während du frühstückst.</span></div></div>
+</div>
+</section>
+<div class="merksatz"><p>Es braucht kein Trainingsprogramm. Es braucht, dass du dich zwischendurch bewegst und die Fenster aufmachst.</p></div>
+<p class="morgen"><span>Morgen</span> Die Rituale und die Öle konkret — und welches Ritual tatsächlich das wirksamste ist.</p>
+</div>
+
+<div class="tag">
+  <div class="titel">
+    <span class="eyebrow">Immunwoche · Tag 4 von 5 · Donnerstag</span>
+    <h1>Die Rituale und die Öle</h1>
+    <p class="unterzeile">Warum zwanzig Sekunden am Morgen mehr bringen als jeder gute Vorsatz — und wo die Öle wirklich hingehören.</p>
+  </div>
+  <div class="kernsatz"><p>Was jeden Tag passiert, schlägt das, was du dir vornimmst.</p></div>
+  
+<section class="block">
+  <h2><span class="nr">01</span> Warum kleine Rituale halten und grosse Vorsätze nicht</h2>
+  
+  <p>Ein Vorsatz braucht jeden Tag eine Entscheidung. Und Entscheidungen sind genau das, wovon eine Mama am Morgen schon zu viele trifft.</p>
+<p>Ein Ritual braucht keine. Es hält, wenn es an etwas andockt, das <b>ohnehin jeden Tag passiert</b>: nach dem Zähneputzen, bevor du den Kaffee eingiesst, wenn du die Schuhe der Kinder hinstellst. Der Anker macht die Arbeit, nicht deine Disziplin.</p>
+<p>Und es muss <b>kurz</b> sein. Zwanzig Sekunden sind so kurz, dass dein Kopf gar nicht erst anfängt zu verhandeln.</p>
+</section>
+
+<section class="block">
+  <h2><span class="nr">02</span> Das langweiligste Ritual ist das wirksamste</h2>
+  <p class="intro">Ich sage das ganz ehrlich, auch wenn es sich nicht spannend verkauft.</p>
+  <p>Eine Auswertung von 26 Studien mit insgesamt <b>161 659 Teilnehmenden</b> hat sich angeschaut, was regelmässiges Händewaschen mit Seife bringt. Ergebnis: rund <b>26 Prozent weniger Infekte der oberen Atemwege</b>, rund 22 Prozent weniger der unteren. Vorsichtigere Auswertungen kommen auf etwa 14 Prozent.</p>
+<p>Zum Vergleich: Das ist mehr, als in dieser ganzen Woche irgendein Nahrungsergänzungsmittel geschafft hat. Vitamin C verkürzt eine Erkältung um acht Prozent. Händewaschen verhindert jede vierte.</p>
+<p>Und daher kommen die zwanzig Sekunden: So lange braucht Seife, um ihre Arbeit zu tun. Nicht drei Sekunden unter den Hahn halten.</p>
+</section>
+
+<section class="block">
+  <h2><span class="nr">03</span> Wo die Öle ihren Platz haben</h2>
+  <p class="intro">Ehrlich eingeordnet — das ist mir wichtiger, als sie grösser zu machen, als sie sind.</p>
+  <p>Öle ersetzen keinen Schlaf, keinen Teller, keine Bewegung und kein Händewaschen. Das tun sie nicht, und das sollen sie auch nicht.</p>
+<p>Was sie können: Sie machen aus einer Pflichtübung <b>etwas, das du gern machst</b>. Und ein Ritual, das sich gut anfühlt, machst du auch am siebten Tag noch. Genau da liegt ihr Wert — und der ist nicht klein, denn die beste Routine nützt nichts, wenn du sie nach drei Tagen wieder lässt.</p>
+<p>Bei den Kindern kommt dazu, dass ein Duft ein <b>Signal</b> ist. Sie müssen nicht verstehen, warum — sie riechen es und wissen, was jetzt dran ist.</p>
+</section>
+<h2><span class="nr">04</span> Die drei häufigsten Irrtümer</h2>
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Ich muss erst mal alles umstellen."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Nein. Ein einziger Anker reicht. Wer diese Woche fünf Dinge gleichzeitig anfängt, macht in zwei Wochen wieder null. Wer eins anfängt, macht in zwei Wochen eins.</p></div>
+</div>
+
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Mehr Tropfen wirken besser."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Verdünnen ist keine Sparmassnahme und macht nichts schwächer. Ätherische Öle sind hochkonzentriert — unverdünnt reizen sie die Haut, besonders bei Kindern.</p></div>
+</div>
+
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Öle statt der Basics."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Andersrum. Erst Schlaf, Teller, Bewegung und Seife — dann die Öle als das, was die Routine trägt. Wer es umdreht, wundert sich, dass nichts passiert.</p></div>
+</div>
+
+<section class="block">
+  <h2><span class="nr">05</span> Die Zahlen für heute</h2>
+  
+  
+<div class="zahlen">
+  <div class="zahl-kachel"><b>26 %</b><span>weniger Infekte der oberen Atemwege durch regelmässiges Händewaschen mit Seife.</span></div>
+  <div class="zahl-kachel"><b>161 659</b><span>Menschen wurden dafür ausgewertet, über 26 Studien. Das ist eine sehr solide Grundlage.</span></div>
+  <div class="zahl-kachel"><b>20 Sek</b><span>braucht Seife, um zu wirken. Und genauso lang dauert die Morgenroutine mit dem Stick.</span></div>
+  <div class="zahl-kachel"><b>1</b><span>neue Gewohnheit auf einmal. Nicht fünf. Die eine hält, die fünf halten nicht.</span></div>
+</div>
+</section>
+
+<div class="beimir">
+  <span class="label">Bei mir läuft das so</span>
+  <p>Das ist mein Lieblingsteil — die kleinen Rituale, genau wie im Reel: die zwanzig Sekunden am Morgen.</p>
+<p>Mein Favorit gerade ist der neue On Guard Stick mit Echinacea. Sekundenschnell aufgetragen, kein Verdünnen nötig, ideal für unterwegs und für die Schule. Es geht aber genauso mit On Guard verdünnt oder mit dem Stronger-Roller, der für die Kinder schon fertig verdünnt ist. On Guard ist die schützende Mischung aus Wilder Orange, Nelke, Zimt, Eukalyptus und Rosmarin — die steckt auch im Home Essentials Kit drin.</p>
+<p>Bei uns läuft das so: Schuhe an, Stick auf die Fusssohlen, Tür auf. Niemand muss daran denken, es gehört einfach dazu.</p>
+</div>
+
+<div class="oele">
+  <span class="label">⭐ Immun-Roller (10 ml)</span>
+  <p class="rezept">3 Tropfen On Guard · 2 Tropfen Oregano · 3 Tropfen Lemon, aufgefüllt mit Trägeröl</p>
+  <p>Morgens auf die Fusssohlen einreiben. Für unterwegs ist der fertige Stick praktischer, aber selbst gemischt ist er günstiger.</p>
+  <p class="warnung">⚠️ Oregano ist ein „heisses" Öl — gut verdünnen und <b>nicht bei Kleinkindern</b> anwenden. Für die Kinder den On Guard Stick oder den Stronger-Roller nehmen.</p>
+</div>
+
+<section class="block">
+  <h2><span class="nr">06</span> Was du heute tun kannst</h2>
+  <p class="intro">Eins davon. Und dann sieben Tage lang dasselbe.</p>
+  
+<div class="schritte">
+  <div class="schritt"><span class="haken">✓</span><div><b>Wähl deinen Anker.</b><span>Nach dem Zähneputzen? Bevor der Kaffee läuft? Wenn du die Schuhe anziehst? Entscheide es jetzt, nicht morgen früh.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Leg das Öl dorthin.</b><span>An den Anker, nicht ins Badezimmerregal. Was du nicht siehst, machst du nicht.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Zwanzig Sekunden Hände waschen.</b><span>Mit Seife, und wirklich zwanzig. Einmal innerlich bis zwanzig zählen fühlt sich lang an — das ist der Punkt.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Gib den Kindern ihr eigenes.</b><span>Ein eigener Stick oder ein eigener Diffuser macht aus deiner Regel ihre Sache.</span></div></div>
+</div>
+</section>
+<div class="merksatz"><p>Nicht das perfekte Ritual gewinnt. Das gewinnt, das du auch am Donnerstag noch machst, wenn der Morgen schon schiefgegangen ist.</p></div>
+<p class="morgen"><span>Morgen</span> Wenn es doch mal kommt — ruhig der Reihe nach.</p>
+</div>
+
+<div class="tag">
+  <div class="titel">
+    <span class="eyebrow">Immunwoche · Tag 5 von 5 · Freitag</span>
+    <h1>Wenn es doch mal kommt</h1>
+    <p class="unterzeile">Ruhig der Reihe nach: was im Körper passiert, was wirklich hilft — und woran du merkst, dass es kein Hausmittel mehr ist.</p>
+  </div>
+  <div class="kernsatz"><p>Fieber ist nicht der Feind. Fieber ist die Feuerwehr.</p></div>
+  
+<section class="block">
+  <h2><span class="nr">01</span> Was du spürst, ist nicht der Erreger</h2>
+  <p class="intro">Erinnerst du dich an das Haus von Dienstag? Jetzt wird es wichtig.</p>
+  <p>Fieber, Halsweh, Gliederschmerzen, Müdigkeit — das ist nicht der Virus, der dir wehtut. <b>Das ist deine eigene Feuerwehr bei der Arbeit.</b> Dein Körper fährt die Temperatur hoch, weil viele Erreger sich bei Wärme schlechter vermehren und deine Abwehrzellen dabei schneller arbeiten.</p>
+<p>Auch die Müdigkeit hat einen Grund. Eine Immunantwort ist <b>teuer</b>. Dein Körper zieht die Energie von überall ab, wo sie gerade nicht gebraucht wird — und sagt dir damit sehr deutlich, was er jetzt will.</p>
+<p>Das ändert die ganze Haltung: Ruhe ist nicht das, was übrig bleibt, wenn nichts anderes hilft. <b>Ruhe ist die Behandlung.</b></p>
+</section>
+
+<section class="block">
+  <h2><span class="nr">02</span> Was tatsächlich hilft — ehrlich sortiert</h2>
+  <p class="intro">Von gut belegt nach schwach belegt. Ich lasse nichts weg, aber ich sage dazu, wie sicher es ist.</p>
+  <p><b>Honig bei Husten.</b> Das am besten belegte Hausmittel überhaupt. Eine grosse Übersichtsarbeit zeigt: Honig lindert Häufigkeit und Stärke der Hustenanfälle bei Kindern und verbessert den Schlaf — besser als keine Behandlung, und ähnlich gut wie manche rezeptfreien Hustensäfte. Ein Teelöffel, langsam gelutscht. <b>Aber erst ab einem Jahr</b>, für Säuglinge ist Honig gefährlich.</p>
+<p><b>Zink, wenn es früh kommt.</b> Eine Auswertung von 26 Studien mit 2375 Personen fand: Die Erkältung wird etwa <b>einen Tag kürzer</b> — aber nur, wenn innerhalb der ersten 24 Stunden begonnen wird. Die Forschenden selbst stufen die Sicherheit dieser Aussage als niedrig ein. Also: einen Versuch wert, kein Wunder.</p>
+<p><b>Vitamin C.</b> Verkürzt eine Erkältung um rund acht Prozent, von sieben Tagen also einen halben Tag. Vorbeugen tut es nicht.</p>
+<p><b>Trinken, feuchte Luft, Ruhe.</b> Klingt banal, ist aber genau das, was deine Flimmerhärchen und deine Schleimhäute brauchen, um den Erreger wieder hinauszubefördern.</p>
+</section>
+
+<section class="block">
+  <h2><span class="nr">03</span> Woran du merkst, dass es kein Hausmittel mehr ist</h2>
+  <p class="intro">Der wichtigste Abschnitt dieser Woche. Nicht zum Ängstigen, sondern zum Einordnen.</p>
+  <p>Die allermeisten Erkältungen sind nach sieben bis zehn Tagen vorbei und brauchen nichts ausser Geduld. Es gibt aber Punkte, an denen du nicht mehr selbst herumprobierst, sondern anrufst:</p>
+<p><b>Atemnot oder schnelle, angestrengte Atmung.</b> Immer.<br><b>Hohes Fieber, das mehrere Tage nicht runtergeht</b> — oder Fieber bei einem Säugling.<br><b>Es wird besser und dann plötzlich wieder deutlich schlechter.</b> Das ist ein klassisches Warnzeichen.<br><b>Steifer Nacken, starke Kopfschmerzen, Verwirrtheit.</b><br><b>Ein Kind, das nicht mehr trinkt</b> oder auffällig teilnahmslos wird.</p>
+<p>Und ganz grundsätzlich: Du kennst dein Kind und dich selbst. Wenn dein Gefühl sagt, dass etwas anders ist als sonst, dann ist das ein guter Grund anzurufen — auch wenn nichts auf dieser Liste steht.</p>
+</section>
+<h2><span class="nr">04</span> Die drei häufigsten Irrtümer</h2>
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Fieber muss sofort runter."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Fieber ist Teil der Abwehr, nicht die Krankheit. Man senkt es, wenn der Leidensdruck gross ist oder das Kind nicht mehr trinkt — nicht wegen der Zahl auf dem Thermometer. Im Zweifel bei der Kinderärztin nachfragen.</p></div>
+</div>
+
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Ein Antibiotikum hilft schneller."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Eine Erkältung wird von Viren ausgelöst. Antibiotika wirken gegen Bakterien und richten hier nichts aus, ausser dass sie deiner Darmflora schaden — genau der, um die es am Montag ging.</p></div>
+</div>
+
+<div class="irrtum">
+  <div class="falsch"><span class="kopf">Der Irrtum</span><p>„Richtig schwitzen kuriert es aus."</p></div>
+  <div class="richtig"><span class="kopf">Was wirklich stimmt</span><p>Schwitzen bringt den Erreger nicht heraus. Was hilft, ist unspektakulärer: trinken, ruhen, feuchte Luft.</p></div>
+</div>
+
+<section class="block">
+  <h2><span class="nr">05</span> Die Zahlen für heute</h2>
+  
+  
+<div class="zahlen">
+  <div class="zahl-kachel"><b>7–10</b><span>Tage dauert eine normale Erkältung. Danach wird es besser — Geduld ist meistens die ganze Behandlung.</span></div>
+  <div class="zahl-kachel"><b>1 Tag</b><span>kürzer mit Zink, aber nur wenn du in den ersten 24 Stunden anfängst.</span></div>
+  <div class="zahl-kachel"><b>ab 1 Jahr</b><span>darf Honig gegeben werden. Für Säuglinge ist er gefährlich — das ist keine Vorsichtsregel, sondern ein echtes Risiko.</span></div>
+  <div class="zahl-kachel"><b>8 %</b><span>kürzer mit Vitamin C. Von sieben Tagen ein halber. Vorbeugen tut es nicht.</span></div>
+</div>
+</section>
+
+<div class="beimir">
+  <span class="label">Bei mir läuft das so</span>
+  <p>Und falls doch mal eine Nase läuft — nicht in Panik, sondern ruhig der Reihe nach.</p>
+<p>Für die Atemwege nehme ich am liebsten Air, also Breathe. Das ist die einfachste und sanfteste Variante und perfekt für Einsteigerinnen, weil man nichts zusammenmischen muss. Einfach in den Diffuser oder verdünnt auf die Brust.</p>
+<p>Bei Halskratzen: ein Tropfen Teebaum und ein Tropfen Zitrone auf einen Teelöffel Honig, und den langsam lutschen.</p>
+</div>
+
+<div class="oele">
+  <span class="label">🫁 Air / Breathe für die Atemwege</span>
+  <p class="rezept">Pur in den Diffuser oder verdünnt auf Brust und Rücken</p>
+  <p>Am besten abends, wenn der Husten sonst den Schlaf stört. Und weil feuchte Luft ohnehin hilft: eine Schale Wasser auf die Heizung stellen, während der Diffuser läuft.</p>
+  
+</div>
+
+<section class="block">
+  <h2><span class="nr">06</span> Was du heute tun kannst</h2>
+  
+  
+<div class="schritte">
+  <div class="schritt"><span class="haken">✓</span><div><b>Leg deine Herbst-Basis griffbereit.</b><span>An einen Ort, den du im Halbschlaf findest. Nicht ganz hinten im Schrank.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Kauf ein Glas guten Honig.</b><span>Das am besten belegte Hausmittel dieser Woche steht im Supermarkt.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Merk dir die Warnzeichen.</b><span>Atemnot, Fieber beim Säugling, Verschlechterung nach Besserung. Der Rest ist meistens Geduld.</span></div></div>
+  <div class="schritt"><span class="haken">✓</span><div><b>Nimm dir vor, beim nächsten Mal wirklich zu ruhen.</b><span>Nicht durcharbeiten. Ruhe ist die Behandlung, nicht die Belohnung fürs Durchhalten.</span></div></div>
+</div>
+</section>
+<div class="merksatz"><p>Du musst eine Erkältung nicht bekämpfen. Du musst deinem Körper die Bedingungen geben, unter denen er sie selbst erledigt.</p></div>
+<div class="abschluss">
+        <span class="label">Das war die Woche</span>
+        <p>Alles, was ich dir diese Woche gezeigt habe, startet mit einer Handvoll Basis-Öle — genau die stecken im Home Essentials Kit. Wenn du wirklich starten willst, mache ich das nicht als Warenkorb: Du bekommst dein Kit, meinen einseitigen Routine-Plan und mich ein paar Wochen an deiner Seite. Ich nehme diese Runde nur eine Handvoll Frauen. Magst du dabei sein? Schreib mir. 🤍</p>
+        <p class="danke">Danke, dass du dabei warst. — Patricia</p>
+      </div>
+</div>
