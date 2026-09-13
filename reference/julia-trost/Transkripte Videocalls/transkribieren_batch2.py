@@ -3,7 +3,13 @@ import os
 import sys
 from openai import OpenAI
 
-API_KEY = "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"
+import os
+API_KEY = os.environ.get("OPENAI_API_KEY")
+if not API_KEY:
+    raise SystemExit(
+        "OPENAI_API_KEY fehlt. Schluessel als Umgebungsvariable setzen, "
+        "nie wieder in die Datei schreiben."
+    )
 client = OpenAI(api_key=API_KEY)
 
 URLS = [
