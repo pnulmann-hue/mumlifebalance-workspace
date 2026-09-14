@@ -73,6 +73,7 @@ ans Artifact gehängt.
 
 1. **ThriveCart-Umsätze** — `/transactions` in `scripts/cockpit/thrivecart-holen.py`
    ergänzen. Einziger Endpunkt, der noch fehlt. ~1 Std.
+   → **Von Patricia bestätigt: wird gebaut.**
 2. **Monatslauf** — `scripts/monatsabschluss/` mit den Schritten aus Phase A. ~2 Std.
 3. **Notion-Schreiber** — Kennzahlen, Reichweiten, Content-Performance
    nachtragen. Zuordnung Post → Notion-Eintrag über das Veröffentlichungsdatum. ~1 Std.
@@ -82,24 +83,34 @@ ans Artifact gehängt.
 
 ---
 
-## 🚨 Offene Entscheidungen (blockieren Teile des Baus)
+## Entscheidungen (alle von Patricia bestätigt, 14.9.)
 
-### 1. Welche doTERRA-Zahl gilt?
+### 1. Welche doTERRA-Zahl gilt? — GEKLÄRT
 
-Notion und Backoffice weichen unsystematisch voneinander ab:
+**`Gewinn doTERRA` = Primärbonus + Sekundärbonus.** Patricia wusste das, mir
+war beim ersten Abgleich nur der Primärbonus aufgefallen — daher die
+scheinbare Abweichung.
 
-| Monat | Notion | Backoffice | Differenz |
-|---|---|---|---|
-| Januar | 1'072.78 | 806.13 | −266.65 |
-| März | 583.05 | 437.51 | −145.54 |
-| April | 581.86 | 494.58 | −87.28 |
-| Mai | 399.49 | 441.38 | **+41.89** |
-| Juni | 417.97 | 460.17 | **+42.20** |
+Der Sekundärbonus läuft in Kalenderwochen und wird dem Monat zugeordnet, in
+dem er ausbezahlt wurde. An vier Monaten auf den Rappen belegt:
 
-**Bis das geklärt ist, trägt der Automatismus keine doTERRA-Zahl ein.** Sonst
-schreibt er jeden Monat etwas Falsches, und das merkt später niemand mehr.
-Patricia muss sagen, woher ihre Notion-Werte stammen — Kontoauszug, PayPal
-oder ein anderer Bericht.
+| Monat | Primär | + Sekundär | = | Notion |
+|---|---|---|---|---|
+| Januar | 806.13 | KW 1–5 (266.65) | 1'072.78 | 1'072.78 ✓ |
+| Februar | 510.66 | KW 6–8 (41.85) | 552.51 | 552.51 ✓ |
+| März | 437.51 | KW 10–13 (145.54) | 583.05 | 583.05 ✓ |
+| April | 494.58 | KW 14–18 (87.28) | 581.86 | 581.86 ✓ |
+
+Fehlende Wochen (KW 9, 17) hatten schlicht keinen Sekundärbonus.
+
+**Der Automatismus rechnet künftig selbst.** Rechenweg dokumentiert in
+`context/doterra/backoffice/provisionen-2026.txt`.
+
+⚠️ **Mai und Juni sind Ausreisser** — dort steht in Notion weniger als der
+Primärbonus allein (Lücke je rund 42), die Zahl kam also aus einer anderen
+Quelle. Nach der Formel müsste es heissen: **Mai 474.41 · Juni 460.17 · Juli
+474.75**. Ob die drei Werte korrigiert werden, ist noch offen — es hebt den
+Jahresstand an.
 
 ### 2. Wann kommt die doTERRA-Provision? — ENTSCHIEDEN (Patricia, 14.9.)
 
