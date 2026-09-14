@@ -721,6 +721,7 @@
   var images = {};           // slideId -> dataURL (aktuelle Session + geladen)
   var imageObjs = {};        // slideId -> Image
   var db = null, downloads = null, sampler = null;
+  var BILDEDITOR = "https://claude.ai/code/artifact/21e66e0e-2576-41db-8c8d-f14d7079a1e0";
   var activeTab = "uebersicht";
   var activeCarousel = null;
   var saveTimers = {};
@@ -1151,7 +1152,6 @@
     { id: "uebersicht", label: "Übersicht" },
     { g: "Erstellen" },
     { id: "studio", label: "Content-Studio" },
-    { id: "karussell", label: "Karussell-Editor" },
     { id: "storys", label: "Story-Studio" },
     { id: "reels", label: "Reel-Studio" },
     { g: "Planen" },
@@ -1362,7 +1362,7 @@
         '<div class="wk-fuss">' +
           '<input type="date" value="' + esc(b.obj.datum || "") + '">' +
           '<button class="btn">Caption kopieren</button>' +
-          (b.art === "karussells" ? '<button class="btn">Im Editor öffnen</button>' : "") +
+          (b.art === "karussells" ? '<button class="btn">Im Bild-Editor bauen</button>' : "") +
           '<button class="btn' + (b.obj.textfrei ? "" : " primary") + '">' +
             (b.obj.textfrei ? "Freigabe zurücknehmen" : "Freigeben") + '</button>' +
         '</div>' +
@@ -1496,9 +1496,9 @@
     };
     if (b.art === "karussells") {
       felder[2].onclick = function () {
+        // Gebaut wird im Bild-Editor — hier wird nur geprüft und freigegeben.
         activeCarousel = b.obj.id;
-        activeTab = "karussell";
-        render();
+        window.open(BILDEDITOR, "_blank", "noopener");
       };
     }
     var freigabeKnopf = felder[felder.length - 1];
@@ -4069,9 +4069,9 @@
         state.karussells.unshift(car);
         activeCarousel = car.id;
         saveCarousel(car);
-        activeTab = "karussell";
+        activeTab = "woche";
         render();
-        toast("Karussell angelegt. Erst die Texte prüfen und freigeben, dann bauen.");
+        toast("Karussell angelegt. Texte prüfen und freigeben, gebaut wird im Bild-Editor.");
       };
       var b2 = document.createElement("button");
       b2.className = "btn";
@@ -4805,7 +4805,6 @@
     renderNav();
     var main = document.getElementById("main");
     if (activeTab === "uebersicht") renderUebersicht(main);
-    else if (activeTab === "karussell") renderKarussell(main);
     else if (activeTab === "studio") renderStudio(main);
     else if (activeTab === "storys") renderStorys(main);
     else if (activeTab === "reels") renderReels(main);
@@ -4866,7 +4865,7 @@
 
   if (window.claude && window.claude.use) {
     window.claude.use("downloads").then(function (d) { downloads = d; }).catch(function () {});
-    window.claude.use("sample").then(function (s) { sampler = s; if (activeTab === "karussell") render(); }).catch(function () {});
+    window.claude.use("sample").then(function (s) { sampler = s; render(); }).catch(function () {});
     window.claude.use("db").then(function (d) {
       if (!d) { setSaveState("lokal gespeichert", "off"); return; }
       db = d;
@@ -4990,7 +4989,7 @@
               var u = (b.data() || {}).dataUrl;
               if (u && images[b.id] !== u) { images[b.id] = u; lsSet("img-" + b.id, u); neu = true; }
             });
-            if (neu && activeTab === "karussell") render();
+            if (neu && activeTab === "woche") render();
           }).catch(function () {});
         });
         render();

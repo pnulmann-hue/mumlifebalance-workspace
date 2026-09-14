@@ -258,9 +258,9 @@
     </div>
     <div class="frame-wrap"><div id="cover" class="buehne"></div></div>
     <div class="warn" id="warn"></div>
-    <div class="savebar"><img id="out" alt="fertiges Bild"></div>
+    <div class="savebar" id="savebar"><img id="out" alt="fertiges Bild"></div>
     <div id="alle"></div>
-    <p class="hint" id="hint">Tipp: Nach <b>Als Bild</b> erscheint unten das fertige Bild. <b>Am Handy lange darauf tippen &rarr; &bdquo;Foto speichern&ldquo;.</b> (Downloads direkt aus dieser Seite blockiert der Browser.)</p>
+    <p class="hint" id="hint">Tipp: Nach <b>Als Bild</b> erscheint unten das fertige Bild mit einem <b>Speichern-Knopf</b>. Falls der Knopf fehlt, am Handy lange auf das Bild tippen &rarr; &bdquo;Foto speichern&ldquo;.</p>
   </div>
 </div>
 
@@ -1480,15 +1480,38 @@ Drei bis sechs Folien. Nichts ausserhalb des JSON.`;
     cover.style.transform = "none";
     const canvas = await html2canvas(cover,{width:F.w,height:F.h,scale:1,useCORS:true,backgroundColor:null});
     cover.style.transform = vorher;
-    return canvas.toDataURL('image/jpeg',0.92);
+    const blob = await new Promise(r => canvas.toBlob(r, 'image/jpeg', 0.92));
+    return { url: canvas.toDataURL('image/jpeg',0.92), blob };
   }
+
+  // Ein Speichern-Knopf unter jedem fertigen Bild — nur wenn die Seite Dateien abgeben darf
+  let bildZaehler = 0;
+  function speicherKnopf(blob, name){
+    if (!dlNs) return null;
+    const b = document.createElement('button');
+    b.className = "btn zweit"; b.style.marginTop = "8px";
+    b.textContent = "⬇ " + name + " speichern";
+    b.onclick = async () => {
+      const t = b.textContent; b.disabled = true; b.textContent = "speichern…";
+      try { await dlNs.save({filename: name, data: blob}); b.textContent = "✓ gespeichert"; }
+      catch (err){ b.textContent = (err && err.code === "declined") ? "abgebrochen" : "ging nicht"; b.disabled = false;
+                   setTimeout(()=>{ b.textContent = t; }, 2500); }
+    };
+    return b;
+  }
+  const bildName = nr => (fmt === "slide" ? "folie" : fmt === "cover" ? "cover" : "story")
+    + "-" + String(nr).padStart(2,"0") + ".jpg";
 
   g('make').onclick = async () => {
     const btn=g('make'), t=btn.textContent; btn.textContent="Moment…";
     await document.fonts.ready;
     try{
-      const out=g('out'); out.src = await bildVon(state); out.style.display="block";
-      g('alle').style.display="none";
+      const fertig = await bildVon(state);
+      const out=g('out'); out.src = fertig.url; out.style.display="block";
+      const box = g('alle'); box.innerHTML=""; box.style.display="none";
+      const alt = g('savebar').querySelector('button'); if (alt) alt.remove();
+      const k = speicherKnopf(fertig.blob, bildName(aktiv+1));
+      if (k) g('savebar').appendChild(k);
       out.scrollIntoView({behavior:"smooth",block:"center"});
     }catch(err){ g('hint').textContent="Konnte das Bild nicht erzeugen: "+err; }
     render(); btn.textContent=t;
@@ -1504,7 +1527,10 @@ Drei bis sechs Folien. Nichts ausserhalb des JSON.`;
         const d = document.createElement('div');
         d.className="fertig";
         d.innerHTML = `<b>${FORMATE[fmt].einzel} ${i+1}</b><img alt="${FORMATE[fmt].einzel} ${i+1}">`;
-        d.querySelector('img').src = await bildVon(folien[i]);
+        const fertig = await bildVon(folien[i]);
+        d.querySelector('img').src = fertig.url;
+        const k = speicherKnopf(fertig.blob, bildName(i+1));
+        if (k) d.appendChild(k);
         box.appendChild(d);
       }
       box.scrollIntoView({behavior:"smooth",block:"start"});
