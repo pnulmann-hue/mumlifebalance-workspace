@@ -801,7 +801,8 @@
       lsSet("storyliste", state.storys.map(function (x) { return x.id; }));
       if (!db) { setSaveState("lokal gespeichert", "off"); return; }
       db.collection("storys").doc(st.id).set({
-        name: st.name, brand: st.brand, phase: st.phase || "", frames: st.frames, updatedAt: st.updatedAt
+        name: st.name, brand: st.brand, phase: st.phase || "", frames: st.frames,
+        datum: st.datum || "", textfrei: !!st.textfrei, updatedAt: st.updatedAt
       }).then(function () { setSaveState("gespeichert", "on"); })
         .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
     }, 700);
@@ -1267,6 +1268,15 @@
                        unter: (c.slides ? c.slides.length : 0) + " Folien",
                        caption: c.caption || "", datei: "" });
     });
+    // Die taeglichen Storys gehoeren hierher, nicht nur in den Bild-Editor —
+    // hier prueft Patricia am Freitag.
+    state.storys.forEach(function (s) {
+      var f1 = (s.frames && s.frames[0]) || {};
+      beitraege.push({ art: "storys", id: s.id, obj: s, format: "Story",
+                       titel: s.name, hook: f1.text || "",
+                       unter: (s.frames ? s.frames.length : 0) + " Folien",
+                       caption: "", datei: "" });
+    });
 
     beitraege.forEach(function (b) { wochenBildHolen(b.art, b.id); });
 
@@ -1362,7 +1372,7 @@
         '<pre class="wk-caption">' + esc(zerlegt.text || "Noch keine Caption.") + '</pre>' +
         (zerlegt.tags ? '<div class="wk-tags">' + esc(zerlegt.tags) + '</div>' : "") +
         (b.datei ? '<div class="wk-datei">Datei: ' + esc(b.datei) + '</div>' : "") +
-        (b.art === "karussells" ? '<div class="wk-folien"></div>' : "") +
+        (b.art === "karussells" || b.art === "storys" ? '<div class="wk-folien"></div>' : "") +
         '<div class="wk-fuss">' +
           '<input type="date" value="' + esc(b.obj.datum || "") + '">' +
           '<select class="btn wk-profil">' +
@@ -1370,15 +1380,44 @@
             '<option value="doterra"' + ((b.obj.blotato && b.obj.blotato.profil) === "doterra" ? " selected" : "") + '>doTERRA</option>' +
           '</select>' +
           '<button class="btn">Caption kopieren</button>' +
-          (b.art === "karussells" ? '<button class="btn">Im Bild-Editor bauen</button>' : "") +
+          '<button class="btn">Im Bild-Editor bauen</button>' +
           '<button class="btn' + (b.obj.textfrei ? "" : " primary") + '">' +
             (b.obj.textfrei ? "Freigabe zurücknehmen" : "Freigeben") + '</button>' +
         '</div>' +
       '</div>';
 
+    // Story-Folien zeichnen, mit Text zum Aendern daneben
+    var storybox = karte.querySelector(".wk-folien");
+    if (storybox && b.art === "storys" && b.obj.frames) {
+      b.obj.frames.forEach(function (fr, i) {
+        var sp = document.createElement("div");
+        sp.className = "wk-folienkarte";
+        var c = document.createElement("canvas");
+        c.className = "wk-folie";
+        sp.appendChild(c);
+        renderStoryFrame(c, fr, b.obj, i, b.obj.frames.length);
+        var nr = document.createElement("div");
+        nr.className = "wk-folienr";
+        nr.textContent = "Folie " + (i + 1);
+        sp.appendChild(nr);
+        var ta = document.createElement("textarea");
+        ta.className = "wk-folienfeld";
+        ta.rows = 3;
+        ta.placeholder = "Text auf der Folie";
+        ta.value = fr.text || "";
+        ta.oninput = function () {
+          fr.text = this.value;
+          renderStoryFrame(c, fr, b.obj, i, b.obj.frames.length);
+          saveStory(b.obj);
+        };
+        sp.appendChild(ta);
+        storybox.appendChild(sp);
+      });
+    }
+
     // Folien des Karussells zeichnen — dieselben Canvas-Slides wie im Editor
     var folienbox = karte.querySelector(".wk-folien");
-    if (folienbox && b.obj.slides) {
+    if (folienbox && b.art === "karussells" && b.obj.slides) {
       b.obj.slides.forEach(function (sl, i) {
         var sp = document.createElement("div");
         sp.className = "wk-folienkarte";
@@ -1490,9 +1529,14 @@
     });
 
     var felder = karte.querySelectorAll(".wk-fuss input, .wk-fuss button");
+    function merken() {
+      if (b.art === "reels") saveReel(b.obj);
+      else if (b.art === "storys") saveStory(b.obj);
+      else saveCarousel(b.obj);
+    }
     felder[0].onchange = function () {
       b.obj.datum = this.value;
-      if (b.art === "reels") saveReel(b.obj); else saveCarousel(b.obj);
+      merken();
       render();
     };
     felder[1].onclick = function () {
@@ -1502,13 +1546,11 @@
                                               function () { toast("Kopieren hat nicht geklappt"); });
       }
     };
-    if (b.art === "karussells") {
-      felder[2].onclick = function () {
-        // Gebaut wird im Bild-Editor — hier wird nur geprüft und freigegeben.
-        activeCarousel = b.obj.id;
-        window.open(BILDEDITOR, "_blank", "noopener");
-      };
-    }
+    felder[2].onclick = function () {
+      // Gebaut wird im Bild-Editor — hier wird nur geprüft und freigegeben.
+      if (b.art === "karussells") activeCarousel = b.obj.id;
+      window.open(BILDEDITOR, "_blank", "noopener");
+    };
     var profilWahl = karte.querySelector(".wk-profil");
     if (profilWahl) {
       profilWahl.onchange = function () {
@@ -1522,7 +1564,14 @@
     freigabeKnopf.onclick = function () {
       var an = !b.obj.textfrei;
       b.obj.textfrei = an;
-      if (b.art === "reels") saveReel(b.obj); else saveCarousel(b.obj);
+      merken();
+
+      // Storys postet Patricia selbst vom Handy — die gehen nie an Blotato.
+      if (b.art === "storys") {
+        toast(an ? "Story freigegeben" : "Freigabe zurückgenommen");
+        render();
+        return;
+      }
 
       // Zurueckgenommen: nur den Vermerk setzen, nichts loeschen.
       if (!an) {
@@ -1561,7 +1610,7 @@
           updatedAt: new Date().toISOString()
         }).then(function () {
           bl.status = "wartet";
-          if (b.art === "reels") saveReel(b.obj); else saveCarousel(b.obj);
+          merken();
           toast("Freigegeben und abgelegt. Sag es mir im Chat, dann plane ich es ein.");
           render();
         }).catch(function () { toast("Das Ablegen hat nicht geklappt."); render(); });
@@ -5078,7 +5127,7 @@
         qs.docs.forEach(function (doc) {
           var d0 = doc.data() || {};
           if (!d0.frames || !d0.frames.length) return;
-          var st = { id: doc.id, name: d0.name || "Sequenz", brand: d0.brand || "mlb_dark", handle: d0.handle || "", phase: d0.phase || "", frames: d0.frames, updatedAt: d0.updatedAt || "" };
+          var st = { id: doc.id, name: d0.name || "Sequenz", brand: d0.brand || "mlb_dark", handle: d0.handle || "", phase: d0.phase || "", frames: d0.frames, datum: d0.datum || "", textfrei: !!d0.textfrei, updatedAt: d0.updatedAt || "" };
           if (seen[st.id]) Object.assign(seen[st.id], st); else state.storys.push(st);
         });
         state.storys.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });
