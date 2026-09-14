@@ -36,6 +36,9 @@
   .seg button{flex:1;border:none;background:transparent;color:var(--ink);font-family:inherit;font-weight:700;font-size:14px;padding:9px 8px;cursor:pointer}
   .seg button.on{background:var(--petrol);color:#fff}
   .chk{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--ink);margin-top:8px}
+  .upload{display:block;margin-top:10px;border:2px dashed var(--line);border-radius:12px;padding:12px;
+    text-align:center;font-size:14px;font-weight:700;color:var(--petrol);cursor:pointer;background:var(--bg)}
+  .upload:hover{border-color:var(--petrol)}
   .btn{width:100%;margin-top:14px;border:none;border-radius:999px;background:var(--petrol);color:#fff;font-family:inherit;font-weight:700;font-size:16px;padding:13px;cursor:pointer}
 
   /* Vorschau — die echte Bühne, nur herunterskaliert. Dadurch ist der Export exakt das, was du siehst. */
@@ -86,6 +89,8 @@
       </div>
       <label id="lblFoto">Bild aus deinen Shootings</label>
       <div class="thumbs" id="thumbs"></div>
+      <label for="datei" class="upload" id="lblUp">📷 Eigenes Bild hochladen</label>
+      <input type="file" id="datei" accept="image/*" hidden>
       <label>Brandfarbe (Verlauf / Unifarbe)</label>
       <div class="swatches" id="swatches"></div>
       <label id="lblGrad">Verlauf-St&auml;rke <span id="gradVal"></span></label>
@@ -171,7 +176,7 @@ Und klapp es sofort wieder zu.</textarea>
     const [r,g2,b] = rgb(state.color);
     const a = state.grad/100;
     const bgLayer = state.mode==="foto"
-      ? `<img class="bg" src="assets/${state.photo}" crossorigin="anonymous">
+      ? `<img class="bg" src="${state.photo.startsWith("data:") ? state.photo : "assets/"+state.photo}" crossorigin="anonymous">
          <div class="grad" style="background:linear-gradient(to top, rgba(${r},${g2},${b},${Math.min(0.96,a+0.14)}) 0%, rgba(${r},${g2},${b},${a*0.82}) 40%, rgba(${r},${g2},${b},0) 100%)"></div>`
       : `<div class="uni" style="background:${state.color}"></div>`;
 
@@ -234,6 +239,48 @@ Und klapp es sofort wieder zu.</textarea>
       document.querySelectorAll('#modeSeg button').forEach(x=>x.classList.toggle('on',x.dataset.mode==="foto"));
       [...th.children].forEach(c=>c.classList.remove('sel')); im.classList.add('sel'); render(); };
     th.appendChild(im); });
+
+  // Eigenes Bild hochladen — wird verkleinert, damit die Seite flott bleibt
+  g('datei').addEventListener('change', e => {
+    const f = e.target.files && e.target.files[0];
+    if (!f) return;
+    const leser = new FileReader();
+    leser.onload = () => {
+      const bild = new Image();
+      bild.onload = () => {
+        const max = 1620;                                  // reicht für 1080 Bühne
+        const s = Math.min(1, max / Math.max(bild.width, bild.height));
+        const c = document.createElement('canvas');
+        c.width = Math.round(bild.width * s);
+        c.height = Math.round(bild.height * s);
+        c.getContext('2d').drawImage(bild, 0, 0, c.width, c.height);
+        state.photo = c.toDataURL('image/jpeg', 0.9);
+        state.mode = "foto";
+        document.querySelectorAll('#modeSeg button').forEach(x=>x.classList.toggle('on', x.dataset.mode==="foto"));
+        [...th.children].forEach(x=>x.classList.remove('sel'));
+        eigenesThumb();
+        g('lblUp').textContent = "📷 Anderes Bild hochladen";
+        render();
+      };
+      bild.src = leser.result;
+    };
+    leser.readAsDataURL(f);
+  });
+
+  // Das hochgeladene Bild als erstes Vorschaubild einreihen
+  function eigenesThumb(){
+    let im = document.getElementById('eigen');
+    if (!im){
+      im = document.createElement('img');
+      im.id = "eigen";
+      im.title = "dein hochgeladenes Bild";
+      im.onclick = () => { state.photo = im.src; state.mode="foto";
+        [...th.children].forEach(x=>x.classList.remove('sel')); im.classList.add('sel'); render(); };
+      th.insertBefore(im, th.firstChild);
+    }
+    im.src = state.photo;
+    im.className = "sel";
+  }
 
   // Farbfelder
   function swatches(el, key, nachher){
