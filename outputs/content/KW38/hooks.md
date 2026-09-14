@@ -24,7 +24,7 @@ Alle aus den Formeln im Hook-Master zugeschnitten, alle durch den letzten Check
 | **M6** | P | „Dein Einkommen hängt davon ab, dass andere Leute etwas tun." | Hot Take | Konträr | P3 | 2 |
 | **M7** | E | „Ich hab mir am Anfang ein Thema gesucht, das gut klingt. Statt eins, worüber ich wirklich Bescheid weiss." | Grösster-Fehler | Beweis | H1 „kein Thema" | 3 |
 | **M8** | I | „Provision heisst warten, bis andere etwas tun. Ein Hybridmodell heisst, dass du einen grossen Teil deines Einkommens selber in der Hand hast." | Vergleich | Vergleich | P3 · Wunsch 1 · **Formulierung von Patricia** | 3 |
-| **M9** | P | „Die Frage, die mir am häufigsten kommt, ist nicht wie. Sondern ob ich meine Upline vorher gefragt habe." | Frage aus den DMs | Identität | H3 Angst vor der Upline | 2 |
+| **M9** | P | „Die häufigste Frage an mich ist nicht wie. Sondern ob das Partnerunternehmen etwas dagegen hat, wenn ich mir daneben was Eigenes aufbaue." | Frage aus den DMs | Identität | H3 · **Formulierung von Patricia** | 2 |
 | **M10** | E | „Die meisten Networkerinnen haben längst ein Thema. Sie finden es nur zu normal, um Geld dafür zu verlangen." | Curiosity-Gap | Neugier | H1 · trägt den Lead-Post | 3 |
 
 **Mix geprüft:** P 3 · I 3 · E 4 · zehn verschiedene Formel-Familien · sechs Angles
@@ -158,3 +158,23 @@ Für Montag oder Dienstag wäre er zu weit vorne.
 Willst du ihn trotzdem kalt einsetzen, wäre die Fassung ohne das Fachwort:
 *„Provision heisst warten, bis andere etwas tun. Etwas Eigenes heisst, dass du einen
 grossen Teil selber in der Hand hast.“*
+
+
+---
+
+## M9 — Partnerunternehmen statt Upline
+
+Patricia am 14.09.: *„nimm hier das Beispiel, ob das Partnerunternehmen nichts dagegen
+hat, wenn man noch was Eigenes aufbaut.“*
+
+**Warum das besser ist:** „Upline“ meint einen Menschen aus ihrem Team. Selbst als blosse
+Frage klingt es nach Misstrauen gegen jemanden, den sie schätzt — und die Regel
+„das Network und mein Team bleiben unangetastet“ gilt auch für Andeutungen.
+**Partnerunternehmen** ist die Firma, und die macht tatsächlich die Regeln. Steht so auch
+in `kern-painpoint.md`, Punkt 4.
+
+⚠️ **Eine Sache bitte bestätigen:** Der Hook behauptet, das sei die **häufigste** Frage,
+die Patricia gestellt bekommt. Nach dem erfundenen DM-Hook von vorhin frage ich das lieber
+einmal zu viel — wird ihr das wirklich am häufigsten gefragt? Wenn nicht, aber es kommt
+regelmässig vor: *„Immer wieder werde ich gefragt, ob das Partnerunternehmen etwas
+dagegen hat.“* Wenn gar nicht: Hook streichen.
