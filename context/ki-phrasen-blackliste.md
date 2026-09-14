@@ -113,6 +113,60 @@ Das häufigste und hartnäckigste KI-Muster überhaupt. Tarnt sich in vielen For
 - ❌ „Kundinnen, die zu dir passen"
 - ✅ „Kundinnen, die deine Website lesen und denken: Endlich jemand, der mich versteht"
 
+### 5. Abstrakte Verben ohne Handelnden
+
+- ❌ „aber es trägt noch nicht“
+- ❌ „an dem Punkt, an dem es kippt“
+- ❌ „die Variante, die man als Erstes sieht“
+- ❌ „da entsteht etwas“
+
+**Warum verboten:** Klingt klug, sagt aber keine Frau am Küchentisch. Es passiert etwas,
+ohne dass jemand etwas tut. Patricia am 14.09.2026: *„ich würde nie zu einer Freundin
+sagen ‚aber es trägt noch nicht' — das ist eine KI-Phrase.“*
+
+**Korrektur:** Immer **wer tut was, und was passiert dabei wirklich.**
+
+- ❌ „Du bist nicht mehr neu, aber es trägt noch nicht.“
+- ✅ „Du bist nicht mehr die Neue, und verdienen tust du trotzdem noch nichts.“
+
+---
+
+### 6. Rätsel statt Aussage — die Drei-Sekunden-Regel
+
+- ❌ „Dabei fehlt dir etwas, wofür man dich fragen kann.“
+- ❌ „Die drei Stellen im Tag, an denen es kippt.“
+- ❌ jedes Bild, das man erst aufbauen muss („Bein“, „Schaufenster“) — in Folie 3 ja, im Hook nein
+
+**Warum verboten:** Wer den Hook drei Sekunden sieht, muss **wissen, worum es geht**, nicht
+ahnen. Patricia am 14.09.2026: *„viel zu unklar was gemeint ist — in 3 Sekunden braucht
+es Klarheit.“*
+
+**Korrektur:** Neugier entsteht aus einer **klaren Aussage, der etwas fehlt** — nie aus
+einem Satz, den man zweimal lesen muss.
+
+- ❌ „Du denkst, dir fehlt Reichweite. Dabei fehlt dir etwas, wofür man dich fragen kann.“
+- ✅ „Du postest seit Monaten, und trotzdem fragt dich nie jemand um Rat.“
+
+---
+
+### 7. Erfundene Anekdoten — das schwerste Vergehen
+
+- ❌ „Letzte Woche hat mir jemand geschrieben, dass …“ (wenn es niemand geschrieben hat)
+- ❌ „Eine Kundin von mir hat …“ (ohne echte Kundin)
+
+**Warum verboten:** Eine erfundene DM ist keine Stilfrage, sondern eine Lüge im Namen
+einer echten Person. Patricia am 14.09.2026 zu genau so einem Satz: **„lüge. kenn ich so
+nicht.“** Sie müsste das öffentlich vertreten.
+
+**Korrektur:** Die Szene in die zweite Person drehen — dann wird nichts behauptet.
+
+- ❌ „Letzten Monat hat mir jemand geschrieben, dass …“
+- ✅ „Du planst deinen Monat auf eine Aktion hin. Und dann entscheidet jemand anders …“
+
+Oder Patricia fragen, ob es das gab. **Nie annehmen.**
+
+---
+
 ---
 
 ## ❌ KATEGORIE 1: ANLEITUNGS-FLOSKELN
