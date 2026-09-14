@@ -140,6 +140,11 @@
         <button data-p="mentoring" class="on">Mentoring</button>
         <button data-p="doterra">doTERRA</button>
       </div>
+      <label>Woran knüpft die Story an?</label>
+      <div class="seg" id="ankerSeg">
+        <button data-a="woche" class="on">Wochenfokus</button>
+        <button data-a="beitrag">letzter Beitrag</button>
+      </div>
       <div class="woche" id="woche"></div>
       <label>Thema gerade (Wochenfokus, Angebot, was dich beschäftigt)</label>
       <input type="text" id="thema" placeholder="z.B. sichtbar sein ohne den ganzen Tag am Handy">
@@ -1104,6 +1109,34 @@ Nie: Hustle, 10x, "Du MUSST", Akademikerdeutsch, englische Guru-Sprache.
 - Der Hook enthält nie schon die Lösung. Er stellt ihre Frage.
 - Keine Floskeln wie "in der heutigen Zeit", "es ist kein Geheimnis", "lass uns eintauchen".
 
+== DER IDEEN-KATALOG — daraus wird das Muster gewählt ==
+Wähle für jede Idee GENAU EIN Muster aus der passenden Säule und nenne es sinngemäss im
+Titel. Nicht frei erfinden, nicht zwei mischen.
+
+Expertise: Mini-Training (ein Schritt für heute) · Strategie in kleine Schritte zerlegt ·
+der Fehler, den alle machen · Glaubenssatz auflösen (Satz → Folge → Gegensatz → was sich
+ändert) · ein Werkzeug zeigen, das du täglich benutzt · was passiert, wenn nichts passiert ·
+Frage aus den DMs beantworten · die Fähigkeit benennen, die sie aufbauen muss ·
+Quiz-Sticker: was ist gerade deine grösste Hürde.
+
+Inspiration: ein Tag, wie er wirklich läuft · deine To-do-Liste heute · **Blick hinter die
+Kulissen** (woran du gerade arbeitest, Bildschirm halb zu) · wie du Pausen machst ·
+dein Sonntag und was er mit der Woche macht · woran es heute gehakt hat · dein letztes
+Investment in dich selbst · der Moment, in dem es gekippt ist · Vorbereitung auf das, was
+als Nächstes kommt.
+
+Persönlichkeit: fünf Dinge, die niemand über dich weiss · deine unbequeme Meinung · was
+deine beste Freundin über dich sagen würde · ein Misserfolg und was er dich gelehrt hat ·
+eine Entscheidung aus Angst · eine Ablehnung · eine Hürde, die du ausgesessen hast · das
+grösste Risiko · ein verletzender Kommentar und wie du damit umgegangen bist · deine
+Lieblingssachen · eine alberne Entweder-oder-Frage · Quiz über dich · Rückblick.
+
+Verkauf: „Wie schaffst du das?" · Kundinnen-Erfolg · „Kommt dir das bekannt vor?" ·
+„Es ist nicht einfach" · für wen es ist und für wen nicht · drei Arten, wie es ihr Zeit,
+Geld oder Nerven spart · Blick ins Programm hinein · die drei Einwände, die du selbst
+hattest · warum du es überhaupt gebaut hast · letzte Chance · Willkommen an alle, die
+dabei sind.
+
 == WIE EINE GUTE STORY-ABFOLGE AUSSIEHT ==
 Drei bis sechs Folien, ein Bogen: erst die Szene, die weh tut, dann die Reibung, dann die
 Wendung, dann der Punkt, zuletzt der CTA.
@@ -1115,38 +1148,65 @@ Jede Sequenz endet mit genau einem CTA: entweder Antwort auf einen Sticker oder 
   /* ---------- Was diese Woche läuft ----------
      Ein Artifact kommt nicht an Notion und nicht an die Dateien. Deshalb legt Claude den
      Wochenfokus als Dokument `daten/woche` ab, und die Seite liest ihn hier.             */
-  let wocheDaten = null;
+  let wocheDaten = null, beitragDaten = null, themaAuto = "";
   (async () => {
     try {
       const db = (typeof claude !== "undefined" && claude.use) ? await claude.use("db") : null;
       if (!db) return;
-      const schnapp = await db.doc("daten/woche").get();
-      if (!schnapp.exists) return;
-      wocheDaten = schnapp.data();
-      wocheZeigen();
-    } catch (e) { /* ohne Wochenfokus läuft alles weiter */ }
+      const [w, b] = await Promise.all([ db.doc("daten/woche").get(), db.doc("daten/beitraege").get() ]);
+      if (w.exists) wocheDaten = w.data();
+      if (b.exists) beitragDaten = b.data();
+      kontextZeigen();
+    } catch (e) { /* ohne diese Angaben läuft alles weiter */ }
   })();
 
   function profilJetzt(){ return document.querySelector('#profilSeg button.on').dataset.p; }
+  function ankerJetzt(){ return document.querySelector('#ankerSeg button.on').dataset.a; }
+  const letzterBeitrag = p => (beitragDaten && beitragDaten[p] && beitragDaten[p].gepostet || [])[0];
+  const naechsterBeitrag = p => (beitragDaten && beitragDaten[p] && beitragDaten[p].geplant || [])[0];
 
-  function wocheZeigen(){
-    const box = g('woche');
-    if (!wocheDaten){ box.classList.remove('on'); return; }
-    const p = wocheDaten[profilJetzt()];
-    if (!p){ box.classList.remove('on'); return; }
-    box.innerHTML = `<b>Diese Woche (KW ${wocheDaten.kw}, ${esc(wocheDaten.zeitraum)}):</b> ${esc(p.fokus)}`
-      + (p.angebot ? `<br>Angebot: ${esc(p.angebot)}` : "")
-      + `<span class="quelle">Stand ${esc(wocheDaten.stand)} · ${esc(wocheDaten.quelle)}</span>`;
+  // Zeigt oben, woran die Story hängt — und trägt es als Thema ein
+  function kontextZeigen(){
+    const box = g('woche'), p = profilJetzt(), anker = ankerJetzt();
+    let html = "", neuesThema = "", neueLage = "";
+
+    if (anker === "beitrag"){
+      const letzt = letzterBeitrag(p), naechst = naechsterBeitrag(p);
+      if (!letzt && !naechst){
+        html = `<b>Noch keine Beitragsdaten.</b> Sag mir „hol die letzten Beiträge", dann lege ich sie hier ab.`;
+      } else {
+        if (letzt){
+          html = `<b>Zuletzt gepostet (${esc(letzt.datum)}${letzt.typ ? ", "+esc(letzt.typ) : ""}):</b><br>`
+               + (letzt.thema ? esc(letzt.thema)+"<br>" : "")
+               + `<span style="color:var(--muted)">„${esc(letzt.anfang||"")}…"</span>`;
+          neuesThema = letzt.thema || letzt.anfang;
+        }
+        if (naechst){
+          html += (html ? "<br><br>" : "") + `<b>Als Nächstes geplant (${esc(naechst.datum)}):</b><br>${esc(naechst.name || naechst.hook || "")}`;
+          if (!neuesThema) neuesThema = naechst.hook || naechst.name || "";
+        }
+        html += `<span class="quelle">Stand ${esc((beitragDaten||{}).stand||"")} · ${esc((beitragDaten||{}).quelle||"")}</span>`;
+      }
+    } else if (wocheDaten && wocheDaten[p]){
+      const w = wocheDaten[p];
+      html = `<b>Diese Woche (KW ${wocheDaten.kw}, ${esc(wocheDaten.zeitraum)}):</b> ${esc(w.fokus)}`
+        + (w.angebot ? `<br>Angebot: ${esc(w.angebot)}` : "")
+        + `<span class="quelle">Stand ${esc(wocheDaten.stand)} · ${esc(wocheDaten.quelle)}</span>`;
+      neuesThema = w.fokus; neueLage = w.lage;
+    }
+
+    if (!html){ box.classList.remove('on'); return; }
+    box.innerHTML = html;
     box.classList.add('on');
+
     // Vorbelegen, solange Patricia nichts Eigenes eingetragen hat. Was wir selbst
-    // eingesetzt haben, merken wir uns — dann darf der Profilwechsel es ersetzen.
+    // eingesetzt haben, merken wir uns — dann darf ein Wechsel es ersetzen.
     const feld = g('thema');
-    if (!feld.value.trim() || feld.value === themaAuto){
-      feld.value = p.fokus; themaAuto = p.fokus;
-      if (p.lage) g('lage').value = p.lage;
+    if (neuesThema && (!feld.value.trim() || feld.value === themaAuto)){
+      feld.value = neuesThema; themaAuto = neuesThema;
+      if (neueLage) g('lage').value = neueLage;
     }
   }
-  let themaAuto = "";
 
   /* ---------- Claude direkt fragen (Fähigkeit "sample") ---------- */
   let kiVerfuegbar = null;   // null = noch unbekannt
@@ -1156,16 +1216,35 @@ Jede Sequenz endet mit genau einem CTA: entweder Antwort auf einen Sticker oder 
     g('ideeBtn').textContent = kiVerfuegbar ? "Idee schreiben lassen" : "Idee geben";
   })();
 
-  // Was diese Woche läuft, wörtlich in den Auftrag — damit die Idee dazu passt
+  // Woran die Story hängt, wörtlich in den Auftrag
   function wochenBlock(profil){
-    if (!wocheDaten || !wocheDaten[profil]) return "";
-    const p = wocheDaten[profil];
-    return `
+    let block = "";
+    if (wocheDaten && wocheDaten[profil]){
+      const p = wocheDaten[profil];
+      block += `
 DIESE WOCHE (KW ${wocheDaten.kw}, ${wocheDaten.zeitraum})
 Wochenfokus: ${p.fokus}
 Monatsthema: ${p.monatsthema || "—"}
-Angebot, auf das alles zuläuft: ${p.angebot || "—"}
+Angebot, auf das alles zuläuft: ${p.angebot || "—"}`;
+    }
+    if (ankerJetzt() === "beitrag"){
+      const letzt = letzterBeitrag(profil), naechst = naechsterBeitrag(profil);
+      if (letzt) block += `
+
+DER BEITRAG, AN DEN DIE STORY ANKNÜPFT (gepostet ${letzt.datum}${letzt.typ ? ", "+letzt.typ : ""})
+Worum es ging: ${letzt.thema || "—"}
+Caption-Anfang: „${letzt.anfang || ""}…"`;
+      if (naechst) block += `
+Als Nächstes geht raus (${naechst.datum}): ${naechst.name || ""}${naechst.hook ? " — Hook: „"+naechst.hook+"“" : ""}${naechst.cta ? " — CTA: "+naechst.cta : ""}`;
+      block += `
+Patricias Regel dazu: Der Feed-Beitrag läuft abends, die Story am nächsten Morgen greift ihn auf.
+Die Story wiederholt den Beitrag NICHT. Sie nimmt einen Gedanken daraus, erzählt die Szene
+dahinter oder beantwortet die Frage, die er offen gelassen hat, und führt zum CTA.`;
+    } else if (block){
+      block += `
 Die Story muss auf diesen Wochenfokus einzahlen.`;
+    }
+    return block;
   }
 
   async function ideeVonClaude(thema, lage, saeule, profil){
@@ -1269,7 +1348,11 @@ Drei bis sechs Folien. Nichts ausserhalb des JSON.`;
 
   document.querySelectorAll('#profilSeg button').forEach(b=>b.onclick=()=>{
     document.querySelectorAll('#profilSeg button').forEach(x=>x.classList.toggle('on',x===b));
-    wocheZeigen();
+    kontextZeigen();
+  });
+  document.querySelectorAll('#ankerSeg button').forEach(b=>b.onclick=()=>{
+    document.querySelectorAll('#ankerSeg button').forEach(x=>x.classList.toggle('on',x===b));
+    kontextZeigen();
   });
   g('ideeBtn').onclick = ideeGeben;
   g('ideeUeber').onclick = ()=>{
