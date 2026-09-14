@@ -21,3 +21,12 @@ jemand nachschauen will, woher eine Regel stammt.
 **Warum zusammengelegt:** Die fünf unterschieden sich im Kern nur im Zeitraum, nicht in
 der Arbeit. Vier davon wurden faktisch nie benutzt — nur `freitag-hooks` lief.
 Der Rhythmus ist jetzt ein Parameter: `/content woche` oder `/content monat`.
+
+---
+
+## Ebenfalls abgelöst
+
+**`_titelbild-editor-alt/`** (war `outputs/reels/_titelbild-editor/`) — am 14.09.2026
+ersetzt durch **`outputs/_bild-editor/`**, der dasselbe kann und zusätzlich Story-Format,
+Karussell-Folien, Textbalken mit Brandfarbe und Sticker-Zonen beherrscht. Beide teilen
+sich dieselbe Artifact-Adresse, es gibt also nur einen Editor.
