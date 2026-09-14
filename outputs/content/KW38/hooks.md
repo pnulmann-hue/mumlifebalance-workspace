@@ -23,7 +23,7 @@ Alle aus den Formeln im Hook-Master zugeschnitten, alle durch den letzten Check
 | **M5** | E | „Du postest seit Monaten, und trotzdem fragt dich nie jemand um Rat." | Du-denkst | Neugier | P5 · eigene Zahlen: Ø 210 Reichweite, 2 Speicherungen auf 12 Beiträge | 2 |
 | **M6** | P | „Dein Einkommen hängt davon ab, dass andere Leute etwas tun." | Hot Take | Konträr | P3 | 2 |
 | **M7** | E | „Ich hab mir am Anfang ein Thema gesucht, das gut klingt. Statt eins, worüber ich wirklich Bescheid weiss." | Grösster-Fehler | Beweis | H1 „kein Thema" | 3 |
-| **M8** | I | „Mit einem Standbein wartest du immer darauf, dass andere etwas tun." | Vergleich | Vergleich | P3 · Wunsch 1 | 3 |
+| **M8** | I | „Provision heisst warten, bis andere etwas tun. Ein Hybridmodell heisst, dass du einen grossen Teil deines Einkommens selber in der Hand hast." | Vergleich | Vergleich | P3 · Wunsch 1 · **Formulierung von Patricia** | 3 |
 | **M9** | P | „Die Frage, die mir am häufigsten kommt, ist nicht wie. Sondern ob ich meine Upline vorher gefragt habe." | Frage aus den DMs | Identität | H3 Angst vor der Upline | 2 |
 | **M10** | E | „Die meisten Networkerinnen haben längst ein Thema. Sie finden es nur zu normal, um Geld dafür zu verlangen." | Curiosity-Gap | Neugier | H1 · trägt den Lead-Post | 3 |
 
@@ -122,9 +122,39 @@ Klarheit, um was es geht.“*
 |---|---|---|
 | „Du denkst, dir fehlt Reichweite. Dabei fehlt dir etwas, wofür man dich fragen kann.“ | „Du postest seit Monaten, und trotzdem fragt dich nie jemand um Rat.“ | „etwas, wofür man dich fragen kann“ ist ein Rätsel, keine Aussage |
 | „Der grösste Fehler am Anfang: Ich hab mir ein Thema gesucht, das gut klingt — statt eins, für das mich Leute sowieso schon fragen.“ | „Ich hab mir am Anfang ein Thema gesucht, das gut klingt. Statt eins, worüber ich wirklich Bescheid weiss.“ | zu lang; die erste Zeile muss allein catchen |
-| „Mit einem Bein wartest du, bis andere was tun. Mit zweien …“ | „Mit einem Standbein wartest du immer darauf, dass andere etwas tun.“ | „Bein“ versteht nur, wer das Bild schon kennt |
+| „Mit einem Bein wartest du, bis andere was tun. Mit zweien …“ | „Provision heisst warten, bis andere etwas tun. Ein Hybridmodell heisst, dass du einen grossen Teil deines Einkommens selber in der Hand hast.“ | „Bein“ versteht nur, wer das Bild schon kennt |
 | „Die drei Stellen im Tag, an denen es kippt …“ | „Drei Momente am Tag entscheiden, ob du abends noch kannst.“ | wieder ein abstraktes „es kippt“ |
 
 **Die Regel dahinter:** Wer den Hook drei Sekunden sieht, muss **wissen, worum es geht** —
 nicht ahnen. Ein Rätsel ist kein Hook. Neugier entsteht aus einer klaren Aussage, der
 etwas fehlt — nicht aus einem Satz, den man zweimal lesen muss.
+
+
+---
+
+## ⚠️ M8 — Patricias Formulierung, mit einem Vorbehalt
+
+Patricia am 14.09.: *„das mit Bein ist suspekt. da wäre doch besser: die Provision im
+Network heisst warten, bis andere etwas tun. ein Hybridmodell bedeutet, dass du ein
+grosser Teil deines Einkommens selber in der Hand hast.“*
+
+Übernommen — **„Provision“ sieht man in drei Sekunden, „Bein“ muss man erst aufbauen.**
+
+**Der Vorbehalt:** Das Wort **Hybridmodell** steht in `kern-painpoint.md` auf der Liste
+der Wörter, die **nie in den Einstieg** gehören — zusammen mit Sichtbarkeit,
+Positionierung, eigenes Thema und Expertin werden. Begründung dort: *„Das sind die
+Antworten, nicht der Schmerz. Sie gehören ab Zeile 2, nie in Zeile 1.“*
+
+**Was das praktisch heisst:**
+
+| Einsatz | geht das? |
+|---|---|
+| **Reichweiten-Post** (kalt, Stufe 1–2) | ❌ Wer das Wort nicht kennt, scrollt weiter |
+| **Lead- oder Verkaufs-Post** (warm, Stufe 3+) | ✅ Hier ist das Wort die Antwort, auf die sie wartet |
+
+M8 steht auf **Stufe 3**. Diese Woche wird ab Mittwoch verkauft — dort passt der Hook.
+Für Montag oder Dienstag wäre er zu weit vorne.
+
+Willst du ihn trotzdem kalt einsetzen, wäre die Fassung ohne das Fachwort:
+*„Provision heisst warten, bis andere etwas tun. Etwas Eigenes heisst, dass du einen
+grossen Teil selber in der Hand hast.“*
