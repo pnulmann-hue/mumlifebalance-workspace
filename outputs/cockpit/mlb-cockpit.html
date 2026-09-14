@@ -718,6 +718,10 @@
     { k: "verboten", l: "Was nie vorkommen darf", d: "Erfundene persönliche Details oder Zahlen. Heilversprechen bei den Ölen. Produktnamen der Ölefirma in Verbindung mit Krankheiten. Fremdwörter-Geschwurbel. Alles, was nach Werbetext statt nach echter Person klingt." }
   ];
   var wissen = {};
+  /* Der vollstaendige Marken-Brief. Kommt als Dokument aus der Datenbank,
+     erzeugt von scripts/cockpit/wissen-bauen.py aus den echten Quellen.
+     Fehlt er, laeuft die Seite mit den sieben Feldern weiter. */
+  var wissenVoll = null;
   var images = {};           // slideId -> dataURL (aktuelle Session + geladen)
   var imageObjs = {};        // slideId -> Image
   var db = null, downloads = null, sampler = null;
@@ -3863,6 +3867,10 @@
     teile.push("CONTENT-SÄULEN:\n" + SAEULEN.join(", ") + ". Verhältnis 40/35/25 auf die ersten drei.");
     teile.push("PIE:\nJeder Beitrag ist Persönlichkeit, Inspiration oder Expertise.");
     teile.push(HOOKREGELN);
+    if (wissenVoll && wissenVoll.text) {
+      teile.push("DAS VOLLSTAENDIGE MARKENWISSEN (Stand " +
+        (wissenVoll.stand || "unbekannt") + ")\n" + wissenVoll.text);
+    }
     return teile.join("\n\n");
   }
 
@@ -4891,6 +4899,7 @@
   verknuepfung = lsGet("verknuepfung", null);
   WISSEN_FELDER.forEach(function (f) { wissen[f.k] = f.d; });
   Object.assign(wissen, lsGet("wissen", {}) || {});
+  wissenVoll = lsGet("wissen-voll", null);
   (lsGet("karliste", []) || []).forEach(function (id) {
     var c = lsGet("kar-" + id, null);
     if (c) state.karussells.push(c);
@@ -4928,6 +4937,9 @@
       if (!d) { setSaveState("lokal gespeichert", "off"); return; }
       db = d;
       setSaveState("gespeichert", "on");
+      db.doc("daten/wissen-voll").get().then(function (snap) {
+        if (snap.exists) { wissenVoll = snap.data(); lsSet("wissen-voll", wissenVoll); }
+      }).catch(function () {});
       db.doc("daten/wissen").onSnapshot(function (snap) {
         if (!snap.exists) return;
         Object.assign(wissen, snap.data() || {});

@@ -1200,13 +1200,17 @@ Jede Sequenz endet mit genau einem CTA: entweder Antwort auf einen Sticker oder 
      Ein Artifact kommt nicht an Notion und nicht an die Dateien. Deshalb legt Claude den
      Wochenfokus als Dokument `daten/woche` ab, und die Seite liest ihn hier.             */
   let wocheDaten = null, beitragDaten = null, entwurfDaten = null, themaAuto = "";
+  // Der vollstaendige Marken-Brief aus der Datenbank. Fehlt er, reicht WISSEN.
+  let wissenVoll = null;
   (async () => {
     try {
       const db = (typeof claude !== "undefined" && claude.use) ? await claude.use("db") : null;
       if (!db) return;
-      const [w, b, e] = await Promise.all([ db.doc("daten/woche").get(),
-                                            db.doc("daten/beitraege").get(),
-                                            db.doc("daten/entwuerfe").get() ]);
+      const [w, b, e, v] = await Promise.all([ db.doc("daten/woche").get(),
+                                               db.doc("daten/beitraege").get(),
+                                               db.doc("daten/entwuerfe").get(),
+                                               db.doc("daten/wissen-voll").get() ]);
+      if (v.exists) wissenVoll = v.data();
       if (w.exists) wocheDaten = w.data();
       if (b.exists) beitragDaten = b.data();
       if (e.exists) entwurfDaten = e.data();
@@ -1365,6 +1369,7 @@ Die Story muss auf diesen Wochenfokus einzahlen.`;
                      verkauf:"Verkauf — es führt zu einem Angebot"};
     const auftrag =
 `${WISSEN}
+${wissenVoll && wissenVoll.text ? "\n== DAS VOLLSTAENDIGE MARKENWISSEN (Stand " + (wissenVoll.stand || "unbekannt") + ") ==\n" + wissenVoll.text : ""}
 
 AUFTRAG
 Schreib EINE Instagram-Story-Abfolge für Patricia, fertig ausformuliert — keine Platzhalter
