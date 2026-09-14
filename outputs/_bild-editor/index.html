@@ -86,6 +86,12 @@
   .idee .fuss{margin-top:10px;padding-top:9px;border-top:1px solid var(--line);font-size:13.5px;line-height:1.5}
   .idee .fuss b{color:var(--petrol)}
 
+  .blkLeiste{display:flex;gap:6px;flex-wrap:wrap}
+  .blkLeiste button{border:1px solid var(--line);background:var(--bg);color:var(--muted);
+    font-family:inherit;font-weight:700;font-size:12.5px;padding:7px 10px;border-radius:8px;cursor:pointer}
+  .blkLeiste button.on{background:var(--petrol);border-color:var(--petrol);color:#fff}
+  .blkLeiste button:hover{border-color:var(--petrol)}
+
   .vidbox{display:none}
   .vidbox.on{display:block}
   .auftrag{display:none;margin-top:10px;background:var(--bg);border:1px dashed var(--petrol);border-radius:10px;
@@ -124,6 +130,11 @@
 
     <div class="panel" id="ideenPanel">
       <h2>Ideen</h2>
+      <label>Profil</label>
+      <div class="seg" id="profilSeg">
+        <button data-p="mentoring" class="on">Mentoring</button>
+        <button data-p="doterra">doTERRA</button>
+      </div>
       <label>Thema gerade (Wochenfokus, Angebot, was dich beschäftigt)</label>
       <input type="text" id="thema" placeholder="z.B. sichtbar sein ohne den ganzen Tag am Handy">
       <label>Wo stehst du?</label>
@@ -166,6 +177,7 @@
         <label>Stelle im Video <span id="vtVal"></span></label>
         <input type="range" id="vt" min="0" max="100" value="0">
         <div class="chk"><input type="checkbox" id="playOn"> <label for="playOn" style="margin:0">Abspielen</label></div>
+        <button class="btn" id="vidSave" style="display:none">🎬 Video mit Text speichern</button>
         <div class="auftrag" id="auftrag"></div>
       </div>
       <label>Brandfarbe (Verlauf / Unifarbe)</label>
@@ -177,6 +189,8 @@
 
     <div class="panel">
       <h2>Textbalken</h2>
+      <div class="blkLeiste" id="blkLeiste"></div>
+      <div class="hint" style="margin:8px 0 12px;max-width:none">Mehrere Balken auf einer Folie: erst die Folie <b>Kopieren</b>, dann <b>+ Balken</b> — so wächst der Text von Story zu Story mit, statt alles auf einmal zu zeigen.</div>
       <div class="seg" id="barSeg">
         <button data-bar="balken" class="on">Mit Balken</button>
         <button data-bar="ohne">Nur Text</button>
@@ -255,15 +269,19 @@
             zonen:[]}
   };
 
+  const neuerBlock = () => ({ headline:"", eyebrow:"", fs:72, pos:58, align:"left",
+      bar:"balken", barColor:"#f1ecdd", opa:92, bw:100, tc:"#1E3A4C" });
   const neueFolie = () => ({ mode:"foto", photo:"lounge.jpg", color:"#1E3A4C", grad:72,
-      videoUrl:"", videoName:"", vt:0, poster:"",
-      handle:false, bar:"balken", barColor:"#f1ecdd", opa:92, bw:100,
-      eyebrow:"", headline:"", fs:72, pos:58, align:"left", tc:"#1E3A4C" });
+      videoUrl:"", videoName:"", vt:0, poster:"", handle:false,
+      bloecke:[neuerBlock()], blk:0 });
+  // der Textblock, der gerade bearbeitet wird
+  const B = () => state.bloecke[Math.min(state.blk, state.bloecke.length - 1)];
 
   let fmt = "story";
   let zonenAn = true;
-  let folien = [ Object.assign(neueFolie(), {
-        headline:"Ende Monat mach ich mein Backoffice auf.\nUnd klapp es sofort wieder zu." }) ];
+  let folien = [ (() => { const f = neueFolie();
+        f.bloecke[0].headline = "Ende Monat mach ich mein Backoffice auf.\nUnd klapp es sofort wieder zu.";
+        return f; })() ];
   let aktiv = 0;
   let state = folien[0];
 
@@ -273,13 +291,15 @@
   const esc = s => s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 
   /* ---------- Die Buehne bauen - gilt fuer Vorschau, Streifen und Export gleichermassen ---------- */
-  function inhalt(s, mitZonen){
+  function inhalt(s, mitZonen, ohneBild){
     const F = FORMATE[fmt];
     const [r,g2,b] = rgb(s.color);
     const a = s.grad/100;
     const verlauf = `<div class="grad" style="background:linear-gradient(to top, rgba(${r},${g2},${b},${Math.min(0.96,a+0.14)}) 0%, rgba(${r},${g2},${b},${a*0.82}) 40%, rgba(${r},${g2},${b},0) 100%)"></div>`;
     let bgLayer;
-    if (s.mode==="foto")
+    if (ohneBild)                                        // nur Verlauf und Text — fürs Einbrennen ins Video
+      bgLayer = verlauf;
+    else if (s.mode==="foto")
       bgLayer = `<img class="bg" src="${s.photo.startsWith("data:") ? s.photo : "assets/"+s.photo}" crossorigin="anonymous">` + verlauf;
     else if (s.mode==="video")
       // Im Streifen und beim Export steht das Standbild; auf der grossen Bühne wird es
@@ -288,24 +308,26 @@
     else
       bgLayer = `<div class="uni" style="background:${s.color}"></div>`;
 
-    const [br,bg2,bb] = rgb(s.barColor);
-    const balken = s.bar==="balken"
-      ? `background:rgba(${br},${bg2},${bb},${s.opa/100});padding:46px 52px;`
-      : `text-shadow:-2px -2px 0 rgba(9,18,26,.7),2px -2px 0 rgba(9,18,26,.7),-2px 2px 0 rgba(9,18,26,.7),2px 2px 0 rgba(9,18,26,.7),0 6px 24px rgba(0,0,0,.5);`;
-
-    const eyebrow = s.eyebrow.trim()
-      ? `<div class="eyebrow" style="color:${s.tc};opacity:.85">${esc(s.eyebrow)}</div>` : "";
-
     const zonen = mitZonen ? F.zonen.map(z =>
       `<div class="zone" style="top:${z[0]}%;height:${z[1]-z[0]}%"><b>${z[2]}</b></div>`).join("") : "";
 
-    return bgLayer + `
-      <div class="wrap" style="top:${s.pos}%;transform:translateY(-50%);align-items:${s.align==='center'?'center':'flex-start'}">
-        <div class="bar" style="width:${s.bw}%;text-align:${s.align};color:${s.tc};${balken}">
+    // Jeder Textblock ist eine eigene Lage — so wächst der Text über mehrere Storys auf
+    const bloecke = s.bloecke.map((k, nr) => {
+      const [br,bg2,bb] = rgb(k.barColor);
+      const balken = k.bar==="balken"
+        ? `background:rgba(${br},${bg2},${bb},${k.opa/100});padding:46px 52px;`
+        : `text-shadow:-2px -2px 0 rgba(9,18,26,.7),2px -2px 0 rgba(9,18,26,.7),-2px 2px 0 rgba(9,18,26,.7),2px 2px 0 rgba(9,18,26,.7),0 6px 24px rgba(0,0,0,.5);`;
+      const eyebrow = k.eyebrow.trim()
+        ? `<div class="eyebrow" style="color:${k.tc};opacity:.85">${esc(k.eyebrow)}</div>` : "";
+      return `<div class="wrap" data-blk="${nr}" style="top:${k.pos}%;transform:translateY(-50%);align-items:${k.align==='center'?'center':'flex-start'}">
+        <div class="bar" style="width:${k.bw}%;text-align:${k.align};color:${k.tc};${balken}">
           ${eyebrow}
-          <div class="headline" style="font-size:${s.fs}px">${esc(s.headline)}</div>
+          <div class="headline" style="font-size:${k.fs}px">${esc(k.headline)}</div>
         </div>
-      </div>`
+      </div>`;
+    }).join("");
+
+    return bgLayer + bloecke
       + (s.handle ? `<div class="handle" style="color:rgba(255,255,255,.72)">@mumlifebalance_patricia_ulmann</div>` : "")
       + zonen;
   }
@@ -350,16 +372,115 @@
     state.poster = c.toDataURL('image/jpeg', 0.88);
     miniFuellen(aktiv);
   }
+  /* ---------- Video mit eingebranntem Text — fertige Datei aufs Handy ----------
+     Die Textebene kommt aus derselben Bühne wie der Bild-Export, wird einmal als Bild
+     gezogen und dann über jedes Videobild gelegt. Dadurch sitzt der Text exakt so wie
+     in der Vorschau — kein Nachbauen im Canvas.                                      */
+  let dlNs = null;
+  (async () => {
+    try { dlNs = (typeof claude !== "undefined" && claude.use) ? await claude.use("downloads") : null; }
+    catch (e) { dlNs = null; }
+    if (dlNs && state.videoUrl) g('vidSave').style.display = "block";
+  })();
+
+  const einmal = (el, ereignis) => new Promise(res => el.addEventListener(ereignis, res, {once:true}));
+  let tonQuelle = null;
+
+  async function videoBrennen(){
+    const F = FORMATE[fmt], v = videoCache[state.videoUrl], btn = g('vidSave');
+    if (!v || !dlNs) return;
+    const typen = ["video/mp4;codecs=avc1.42E01E,mp4a.40.2","video/mp4",
+                   "video/webm;codecs=vp9,opus","video/webm"];
+    const typ = window.MediaRecorder && typen.find(t => MediaRecorder.isTypeSupported(t));
+    if (!typ){ g('hint').textContent = "Dieser Browser kann kein Video aufnehmen. Am Handy in Chrome öffnen."; return; }
+
+    btn.disabled = true; btn.textContent = "Textebene…";
+    await document.fonts.ready;
+
+    // 1) Textebene einmal abziehen, ohne Videobild darunter
+    let overlay;
+    const merkTransform = cover.style.transform;
+    try {
+      cover.innerHTML = inhalt(state, false, true);
+      cover.style.transform = "none";
+      overlay = await html2canvas(cover, {width:F.w, height:F.h, scale:1, backgroundColor:null});
+    } finally {
+      cover.style.transform = merkTransform;
+      render();                                          // Bühne zurück, Video wieder drin
+    }
+
+    // 2) Leinwand und Ton
+    const c = document.createElement('canvas'); c.width = F.w; c.height = F.h;
+    const ctx = c.getContext('2d');
+    const strom = c.captureStream(30);
+    try {
+      if (!tonQuelle){                                   // nur einmal je Seite möglich
+        const ac = new (window.AudioContext || window.webkitAudioContext)();
+        tonQuelle = { ac, ziel: ac.createMediaStreamDestination() };
+        ac.createMediaElementSource(v).connect(tonQuelle.ziel);   // bewusst NICHT an die Boxen
+      }
+      await tonQuelle.ac.resume();
+      tonQuelle.ziel.stream.getAudioTracks().forEach(t => strom.addTrack(t));
+      v.muted = false;                                   // stumm bleibt es, weil nichts an die Boxen geht
+    } catch (e) { /* ohne Ton weiter */ }
+
+    const rec = new MediaRecorder(strom, {mimeType: typ, videoBitsPerSecond: 8000000});
+    const teile = []; rec.ondataavailable = e => { if (e.data.size) teile.push(e.data); };
+    const gestoppt = new Promise(res => rec.onstop = res);
+
+    // 3) Aufnehmen, während die Leinwand Bild für Bild gezeichnet wird
+    // Nie blind auf ein Ereignis warten: steht das Video schon auf 0, kommt kein 'seeked'
+    const hoechstens = (p, ms) => Promise.race([p, new Promise(r => setTimeout(r, ms))]);
+    v.pause();
+    if (v.readyState < 2) await hoechstens(einmal(v, 'loadeddata'), 4000);
+    if (v.currentTime > 0.01){ v.currentTime = 0; await hoechstens(einmal(v, 'seeked'), 2000); }
+    const dauer = Math.min(v.duration || 60, 60);
+    let laeuft = true;
+    const zeichne = () => {
+      if (!laeuft) return;
+      const s = Math.max(F.w / v.videoWidth, F.h / v.videoHeight);
+      const bw = v.videoWidth * s, bh = v.videoHeight * s;
+      ctx.drawImage(v, (F.w - bw) / 2, (F.h - bh) * 0.15, bw, bh);   // wie object-position 50% 15%
+      ctx.drawImage(overlay, 0, 0);
+      btn.textContent = "nimmt auf… " + Math.round(v.currentTime) + "/" + Math.round(dauer) + " s";
+      requestAnimationFrame(zeichne);
+    };
+    rec.start(250); zeichne();
+    try { await v.play(); } catch(e){}
+    await Promise.race([ einmal(v, 'ended'), new Promise(r => setTimeout(r, dauer * 1000 + 800)) ]);
+    laeuft = false; v.pause(); rec.stop();
+    await Promise.race([ gestoppt, new Promise(r => setTimeout(r, 4000)) ]);
+
+    // 4) Abgeben
+    btn.textContent = "speichern…";
+    const endung = typ.startsWith("video/mp4") ? "mp4" : "webm";
+    const name = (state.videoName || "story").replace(/\.[^.]+$/, "") + "-mit-text." + endung;
+    try {
+      await dlNs.save({ filename: name, data: new Blob(teile, {type: typ.split(';')[0]}) });
+      g('hint').textContent = "Gespeichert als " + name + ". Liegt in deinen Downloads — von dort in die Story laden.";
+    } catch (err) {
+      g('hint').textContent = (err && err.code === "declined")
+        ? "Abgebrochen — nichts gespeichert."
+        : "Konnte das Video nicht übergeben: " + (err && err.message || err);
+    }
+    btn.disabled = false; btn.textContent = "🎬 Video mit Text speichern";
+    render();
+  }
+  g('vidSave').onclick = videoBrennen;
+
   function auftragZeigen(){
     const box = g('auftrag');
-    if (state.mode!=="video" || !state.videoName){ box.classList.remove('on'); return; }
-    const farbe = (COLORS.find(c=>c.hex===state.barColor)||{}).name || state.barColor;
+    // Nur nötig, solange die Seite die Datei nicht selbst abgeben darf
+    if (state.mode!=="video" || !state.videoName || dlNs){ box.classList.remove('on'); return; }
+    const k = B();
+    const farbe = (COLORS.find(c=>c.hex===k.barColor)||{}).name || k.barColor;
     box.textContent =
       "Für ein Video mit fest eingebranntem Text: Video in DCIM/Content-Inbox legen und mir das hier schicken —\n\n"
       + "Story-Video: " + state.videoName + "\n"
-      + "Text: " + state.headline.replace(/\n/g," / ") + "\n"
-      + "Höhe " + state.pos + "% · Schrift " + state.fs + " · Balken " + farbe + " " + state.opa + "%"
-      + (state.align==="center" ? " · zentriert" : "");
+      + "Text: " + state.bloecke.map(x=>x.headline.replace(/\n/g," / ")).join(" || ") + "\n"
+      + "Höhe " + state.bloecke.map(x=>x.pos+"%").join(" / ") + " · Schrift " + k.fs
+      + " · Balken " + farbe + " " + k.opa + "%"
+      + (k.align==="center" ? " · zentriert" : "");
     box.classList.add('on');
   }
 
@@ -401,7 +522,9 @@
   }
 
   g('bNeu').onclick   = ()=>{ folien.splice(aktiv+1,0,neueFolie()); aktiv++; state=folien[aktiv]; formularFuellen(); stripBauen(); render(); };
-  g('bKopie').onclick = ()=>{ folien.splice(aktiv+1,0,Object.assign({},state)); aktiv++; state=folien[aktiv]; stripBauen(); render(); };
+  // Die Balken müssen echt kopiert werden, sonst ändert die Kopie das Original mit
+  const folieKopie = f => Object.assign({}, f, {bloecke: f.bloecke.map(k => Object.assign({}, k))});
+  g('bKopie').onclick = ()=>{ folien.splice(aktiv+1,0,folieKopie(state)); aktiv++; state=folien[aktiv]; formularFuellen(); stripBauen(); render(); };
   g('bLinks').onclick = ()=>{ if(aktiv===0) return; const t=folien[aktiv-1]; folien[aktiv-1]=folien[aktiv]; folien[aktiv]=t; aktiv--; state=folien[aktiv]; stripBauen(); };
   g('bRechts').onclick= ()=>{ if(aktiv===folien.length-1) return; const t=folien[aktiv+1]; folien[aktiv+1]=folien[aktiv]; folien[aktiv]=t; aktiv++; state=folien[aktiv]; stripBauen(); };
   g('bWeg').onclick   = ()=>{ if(folien.length===1) return; folien.splice(aktiv,1); if(aktiv>=folien.length) aktiv=folien.length-1;
@@ -410,18 +533,22 @@
   /* ---------- Warnt, wenn der Textblock in eine Sticker-Zone ragt ---------- */
   function pruefeZonen(){
     const w = g('warn'), F = FORMATE[fmt];
-    const bar = cover.querySelector('.bar');
-    if (!bar || !F.zonen.length){ w.classList.remove('on'); return; }
-    const mitte = F.h * (state.pos/100);
-    const oben  = (mitte - bar.offsetHeight/2) / F.h * 100;
-    const unten = (mitte + bar.offsetHeight/2) / F.h * 100;
+    const balken = [...cover.querySelectorAll('.bar')];
+    if (!balken.length || !F.zonen.length){ w.classList.remove('on'); return; }
     const zOben  = F.zonen.find(z => z[0] === 0);
     const zUnten = F.zonen.find(z => z[1] === 100);
     let m = "";
-    if (zUnten && unten > zUnten[0] + 2)
-      m = "⚠ Der Text reicht nach unten in die " + (fmt==="cover" ? "Caption-Zone" : "Sticker-Zone") + ". Höhe kleiner stellen oder Schrift verkleinern.";
-    else if (zOben && oben < zOben[1] - 2)
-      m = "⚠ Der Text reicht nach oben in den " + (fmt==="cover" ? "abgeschnittenen Rand" : "Profil-Bereich") + ". Höhe grösser stellen.";
+    balken.forEach((bar, nr) => {
+      if (m) return;
+      const mitte = F.h * (state.bloecke[nr].pos/100);
+      const oben  = (mitte - bar.offsetHeight/2) / F.h * 100;
+      const unten = (mitte + bar.offsetHeight/2) / F.h * 100;
+      const wer = state.bloecke.length > 1 ? `Balken ${nr+1}: ` : "";
+      if (zUnten && unten > zUnten[0] + 2)
+        m = "⚠ " + wer + "Der Text reicht nach unten in die " + (fmt==="cover" ? "Caption-Zone" : "Sticker-Zone") + ". Höhe kleiner stellen oder Schrift verkleinern.";
+      else if (zOben && oben < zOben[1] - 2)
+        m = "⚠ " + wer + "Der Text reicht nach oben in den " + (fmt==="cover" ? "abgeschnittenen Rand" : "Profil-Bereich") + ". Höhe grösser stellen.";
+    });
     if (m){ w.textContent = m; w.classList.add('on'); } else w.classList.remove('on');
   }
 
@@ -509,6 +636,7 @@
   function modusAnsicht(){
     const video = state.mode==="video";
     g('vidbox').classList.toggle('on', video);
+    g('vidSave').style.display = (video && state.videoUrl && dlNs) ? "block" : "none";
     g('thumbs').style.display = video ? "none" : "";
     g('lblFoto').style.display = video ? "none" : "";
     g('lblUp').style.display = video ? "none" : "";
@@ -517,20 +645,21 @@
   }
 
   /* ---------- Farbfelder ---------- */
-  function swatches(el, key, nachher){
+  function swatches(el, key, aufBlock, nachher){
     COLORS.forEach(c=>{ const d=document.createElement('div');
       d.className="sw"; d.style.background=c.hex; d.title=c.name; d.dataset.hex=c.hex;
-      d.onclick=()=>{ state[key]=c.hex; [...el.children].forEach(x=>x.classList.remove('sel')); d.classList.add('sel');
+      d.onclick=()=>{ (aufBlock ? B() : state)[key] = c.hex;
+        [...el.children].forEach(x=>x.classList.remove('sel')); d.classList.add('sel');
         if(nachher) nachher(); render(); };
       el.appendChild(d); });
   }
-  swatches(g('swatches'), 'color');
-  swatches(g('barSw'), 'barColor', ()=>{
-    const hell = ["#f1ecdd","#ffffff"].includes(state.barColor);
-    state.tc = hell ? "#1E3A4C" : "#ffffff";
-    [...g('txtSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===state.tc));
+  swatches(g('swatches'), 'color', false);
+  swatches(g('barSw'), 'barColor', true, ()=>{
+    const hell = ["#f1ecdd","#ffffff"].includes(B().barColor);
+    B().tc = hell ? "#1E3A4C" : "#ffffff";
+    [...g('txtSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===B().tc));
   });
-  swatches(g('txtSw'), 'tc');
+  swatches(g('txtSw'), 'tc', true);
 
   /* ---------- Umschalter ---------- */
   document.querySelectorAll('#fmtSeg button').forEach(b=>b.onclick=()=>{
@@ -541,7 +670,7 @@
   });
   function seg(id, key){
     document.querySelectorAll('#'+id+' button').forEach(b=>b.onclick=()=>{
-      state[key] = b.dataset.mode || b.dataset.bar || b.dataset.al;
+      B()[key] = b.dataset.bar || b.dataset.al;
       document.querySelectorAll('#'+id+' button').forEach(x=>x.classList.toggle('on',x===b));
       render();
     });
@@ -554,31 +683,56 @@
     render();
   });
 
-  const REGLER = [['grad','gradVal','%'],['opa','opaVal','%'],['bw','bwVal','%'],['fs','fsVal','px'],['pos','posVal','%']];
-  REGLER.forEach(([id,out,unit])=>{ const el=g(id);
-     el.addEventListener('input', ()=>{ state[id]=+el.value; g(out).textContent=el.value+unit; render(); }); });
+  // 'folie' = gehört zur ganzen Folie · 'block' = gehört zum gewählten Textbalken
+  const REGLER = [['grad','gradVal','%','folie'],['opa','opaVal','%','block'],['bw','bwVal','%','block'],
+                  ['fs','fsVal','px','block'],['pos','posVal','%','block']];
+  REGLER.forEach(([id,out,unit,wo])=>{ const el=g(id);
+     el.addEventListener('input', ()=>{ (wo==='block'?B():state)[id]=+el.value; g(out).textContent=el.value+unit; render(); }); });
 
-  g('eyebrow').oninput = e => { state.eyebrow = e.target.value; render(); };
-  g('headline').oninput = e => { state.headline = e.target.value; render(); };
+  g('eyebrow').oninput = e => { B().eyebrow = e.target.value; render(); };
+  g('headline').oninput = e => { B().headline = e.target.value; render(); balkenLeiste(); };
   g('handleOn').onchange = e => { state.handle = e.target.checked; render(); };
   g('zonesOn').onchange = e => { zonenAn = e.target.checked; render(); };
 
+  /* ---------- Mehrere Textbalken je Folie ---------- */
+  function balkenLeiste(){
+    const el = g('blkLeiste');
+    el.innerHTML = state.bloecke.map((k,i)=>{
+      const kurz = (k.headline.trim().split("\n")[0] || "leer").slice(0,16);
+      return `<button class="${i===state.blk?'on':''}" data-i="${i}">${i+1} · ${esc(kurz)}</button>`;
+    }).join("") + `<button data-neu="1" title="Balken dazu">+ Balken</button>`
+      + (state.bloecke.length>1 ? `<button data-weg="1" title="diesen Balken löschen">✕</button>` : "");
+    [...el.children].forEach(b => b.onclick = () => {
+      if (b.dataset.neu){
+        const kopie = Object.assign({}, B(), {headline:"", eyebrow:"", pos: Math.min(92, B().pos + 18)});
+        state.bloecke.push(kopie); state.blk = state.bloecke.length-1;
+      } else if (b.dataset.weg){
+        state.bloecke.splice(state.blk,1); state.blk = Math.max(0, state.blk-1);
+      } else state.blk = +b.dataset.i;
+      formularFuellen(); render();
+    });
+  }
+
   // Beim Folienwechsel muessen alle Bedienelemente die Werte dieser Folie zeigen
   function formularFuellen(){
-    REGLER.forEach(([id,out,unit])=>{ g(id).value = state[id]; g(out).textContent = state[id]+unit; });
-    g('eyebrow').value = state.eyebrow;
-    g('headline').value = state.headline;
+    if (state.blk >= state.bloecke.length) state.blk = state.bloecke.length - 1;
+    const k = B();
+    REGLER.forEach(([id,out,unit,wo])=>{ const v = (wo==='block'?k:state)[id];
+      g(id).value = v; g(out).textContent = v+unit; });
+    g('eyebrow').value = k.eyebrow;
+    g('headline').value = k.headline;
     g('handleOn').checked = state.handle;
+    balkenLeiste();
     g('vt').value = state.vt; g('vtVal').textContent = state.vt+"%";
     g('playOn').checked = false;
     g('lblVid').textContent = state.videoName ? "\u{1F3AC} " + state.videoName + " — anderes Video"
                                               : "\u{1F3AC} Video hochladen (dein Sprechvideo)";
     modusAnsicht();
-    document.querySelectorAll('#barSeg button').forEach(x=>x.classList.toggle('on', x.dataset.bar===state.bar));
-    document.querySelectorAll('#alignSeg button').forEach(x=>x.classList.toggle('on', x.dataset.al===state.align));
+    document.querySelectorAll('#barSeg button').forEach(x=>x.classList.toggle('on', x.dataset.bar===k.bar));
+    document.querySelectorAll('#alignSeg button').forEach(x=>x.classList.toggle('on', x.dataset.al===k.align));
     [...g('swatches').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===state.color));
-    [...g('barSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===state.barColor));
-    [...g('txtSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===state.tc));
+    [...g('barSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===k.barColor));
+    [...g('txtSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===k.tc));
     [...th.children].forEach(x=>x.classList.toggle('sel', x.dataset.name===state.photo));
   }
 
@@ -855,8 +1009,151 @@
      st:"Quiz-Sticker mit drei Antworten", c:"Antworte — davon hängt ab, was ich als Nächstes mache."}
   ];
 
+  /* ---------- Wissensbrief: das, was Claude beim Schreiben kennen muss ----------
+     Bewusst ohne Namen fremder Mentorinnen, ohne Zahlen aus dem Back Office und
+     ohne Kundendaten — die Seite ist teilbar.                                    */
+  const WISSEN = `
+PATRICIA — wer schreibt
+Mama von vier Kindern im Appenzellerland, seit 2023 selbstständig neben dem Network.
+Sie führt zwei Instagram-Profile, die nichts miteinander zu tun haben.
+
+== PROFIL MENTORING ==
+Wunschkundin: Mama zwischen 30 und 50, im Network Marketing, daneben meist ein Teilzeitjob.
+
+Ihr Kern-Schmerz, wörtlich:
+"Ich investiere so viel Zeit, aber es kommt zu wenig zurück — und ich weiss nicht, wie ich mir
+etwas Eigenes aufbaue, ohne mein Network aufzugeben, noch mehr zu arbeiten oder bei null anzufangen."
+
+So denkt sie ihn wirklich, in dieser Reihenfolge:
+1. Die Rechnung geht nicht auf. "Wie soll ich mit ein paar Prozent Provision jemals das
+   Einkommen aus meinem Teilzeitjob erreichen?"
+2. Die Zeitfrage. "Wie lange dauert das noch, bis ich ein Team hab und endlich mehr verdiene?"
+3. Der Zweifel. "Ist Network überhaupt das Richtige für mich?"
+4. Die Abhängigkeit. Vergütungsplan, Preise, Aktionen, Regeln — alles macht jemand anders.
+
+WICHTIGSTE TONREGEL: Die Gegenspielerin ist der Job, nicht das Network.
+Sie liebt ihr Produkt, ihr Team, ihre Community. Sie will da nicht raus. Jeder Satz, der
+Network, Team oder Upline schlechtmacht, verliert sie sofort.
+Ihr eigener Satz: "Wär halt auch geil, damit mal richtig Geld zu verdienen. Damit ich mich
+morgen früh nicht doch wieder ins Büro quälen muss, in einen Job, den ich eigentlich gar
+nicht mehr machen will."
+Sprachbilder, die ziehen: sich ins Büro quälen · der Wecker am Montag · Ferien beantragen
+für den Teamevent · Kündigungsfrist ausrechnen · "nur noch zwei Tage die Woche" · der Job,
+den man eigentlich nicht mehr machen will · der Kontoauszug nach dem Teamcall.
+
+Ihre drei Bedingungen und Patricias drei Antwortsätze:
+- ohne mein Network aufzugeben → "Du musst dein Network nicht aufgeben. Du baust daneben
+  etwas auf, das dir gehört."
+- ohne noch mehr zu arbeiten → "Nicht mehr Stunden. Andere Stunden."
+- ohne bei null anzufangen → "Du fängst nicht bei null an. Du hast das meiste schon."
+
+Gehört NIE in den Einstieg (das sind Antworten, nicht Schmerz): Sichtbarkeit · Positionierung ·
+eigenes Thema · digitale Produktwelt · Hybridmodell · Expertin werden. Ab Folie zwei ja.
+
+Angebote Mentoring — 0 CHF: Bio-Check · Lead-Challenge · Workbook "Von 0 auf echt" ·
+Potenzial-Test · Starterguide · Story-Challenge · Freischaufeln (To-do-Liste halbieren) ·
+Produkt-Ideen-Finder. Bezahlt: "Finde dein Thema als Network-Mama" 39 · "Expertin statt
+Verkäuferin" 97 · Instagram-Kundenmaschine / Mama-CEO / Digitale Produktwelt je 333 ·
+Mum Business Academy als Bundle.
+
+== PROFIL doTERRA ==
+Wunschkundin: erschöpfte Mama zwischen 30 und 45, jahrelang im Funktionsmodus.
+Ihre echten Schmerzpunkte, jeweils mit der Szene, in der es weh tut:
+1. "Ich funktioniere nur noch" — abends auf dem Sofa, Kinder im Bett, den ganzen Tag kein
+   Moment für sie selbst.
+2. Mental Load — 22 Uhr, sie liegt im Bett und im Kopf läuft Znüni-Box, Kinderarzt, Wäsche,
+   Mail an die Lehrerin. Aus geht nichts.
+3. Wut, die sie danach hasst — 7:40 Uhr, Kind zieht die Schuhe zum dritten Mal nicht an,
+   sie schreit, das Kind weint, sie weint im Auto.
+4. "Ich bin doch erst 38, das kann keine Perimenopause sein" — sie googelt ihre Symptome.
+5. Nachts um drei wach — schweissgebadet, Herzrasen, um sechs muss sie raus.
+6. "Alle sagen Magnesium, bringt nix" — die dritte Apothekentüte, immer noch müde, und der
+   Gedanke: vielleicht bin ich einfach faul.
+7. Keine Kraft für gar nichts — sie will Sport machen und sitzt nach zwei Minuten am Boden.
+8. Doppel-Orkan — die 16-Jährige knallt die Tür, sie steht da mit eigener Hitzewallung.
+9. "Mein Kind ist dauernd krank" — dritte Krankheitswoche, alle Termine abgesagt, sie weint
+   leise im Bad.
+10. Verwirrung durch Netz-Tipps — 180 Franken für ein Supplement, nichts gespürt, jetzt
+    denkt sie: alles nur Marketing.
+Angebot doTERRA: 3-Tage-Energie-Kickstart als Mail-Challenge, kein PDF.
+PFLICHT: keine Heilversprechen, keine Wirkaussagen zu Ölen. Immer im "bei mir war es so"-Rahmen.
+Nie gegen Ärztinnen oder Medikamente.
+
+== STIMME ==
+Wie eine Freundin, die einen Schritt voraus ist. Küchentisch-Ton, nicht Bühne.
+Du-Ansprache. Echte Umlaute. Schweizer ss statt ß.
+Ganze Sätze mit Bindewörtern — KEIN Stakkato, keine Dreier-Aufzählungen als Satzersatz.
+Patricias Kontrast-Bau: "Nicht X, sondern Y." Beispiel: "Du musst nicht Expertin sein, es
+reicht, einen Schritt weiter zu sein als die, der du hilfst."
+Ihre Sätze: "Verdienen kommt von dienen" · "Fertig besser als perfekt" · "Das macht den
+Unterschied" · "Kein Druck" · "Ich kenne das selber".
+Ihre Bilder: Schaufenster · Bibliothek statt Katalog · der Fisch in der Nische.
+Nie: Hustle, 10x, "Du MUSST", Akademikerdeutsch, englische Guru-Sprache.
+
+== HARTE VERBOTE ==
+- Keine erfundenen Zahlen. Gar keine. Weder Umsätze noch Prozente noch Teilnehmerzahlen.
+  Wenn eine Zahl den Satz trägt, schreib stattdessen eine Szene.
+- Kein "Stell dir vor" als Einstieg.
+- Keine Tipps zum Netzwerkaufbau oder Rekrutieren.
+- Der Hook enthält nie schon die Lösung. Er stellt ihre Frage.
+- Keine Floskeln wie "in der heutigen Zeit", "es ist kein Geheimnis", "lass uns eintauchen".
+
+== WIE EINE GUTE STORY-ABFOLGE AUSSIEHT ==
+Drei bis sechs Folien, ein Bogen: erst die Szene, die weh tut, dann die Reibung, dann die
+Wendung, dann der Punkt, zuletzt der CTA.
+Erste Folie: eine konkrete Szene mit Uhrzeit, Ort oder Gegenstand — nie eine Zusammenfassung.
+Jede Folie höchstens zwei kurze Zeilen, so wie man es einer Freundin sagen würde.
+Jede Sequenz endet mit genau einem CTA: entweder Antwort auf einen Sticker oder ein Link.
+`;
+
+  /* ---------- Claude direkt fragen (Fähigkeit "sample") ---------- */
+  let kiVerfuegbar = null;   // null = noch unbekannt
+  (async () => {
+    try { kiVerfuegbar = (typeof claude !== "undefined" && claude.use) ? await claude.use("sample") : null; }
+    catch (e) { kiVerfuegbar = null; }
+    g('ideeBtn').textContent = kiVerfuegbar ? "Idee schreiben lassen" : "Idee geben";
+  })();
+
+  async function ideeVonClaude(thema, lage, saeule, profil){
+    const lagen = {normal:"ein ganz normaler Tag, kein Launch",
+                   vor:"ein Launch steht bevor, das Thema wird angewärmt, noch kein Verkauf",
+                   start:"der Launch startet heute, die Türen gehen auf",
+                   laeuft:"der Launch läuft mitten drin",
+                   letzter:"heute ist der letzte Tag, die Türen schliessen",
+                   nach:"der Launch ist vorbei"};
+    const saeulen = {egal:"such du die passende Säule aus",
+                     persoenlich:"Persönlichkeit — sie soll Patricia näher kommen",
+                     inspiration:"Inspiration — ein echter Einblick in ihren Alltag oder ihre Arbeit",
+                     expertise:"Expertise — sie nimmt etwas Konkretes mit",
+                     verkauf:"Verkauf — es führt zu einem Angebot"};
+    const auftrag =
+`${WISSEN}
+
+AUFTRAG
+Schreib EINE Instagram-Story-Abfolge für Patricia, fertig ausformuliert — keine Platzhalter
+in eckigen Klammern, keine Lücken zum Ausfüllen. Echte Sätze, die sie so posten könnte.
+
+Profil: ${profil === "doterra" ? "doTERRA (die erschöpfte Mama)" : "Mentoring (die Network-Mama)"}
+Lage: ${lagen[lage]}
+Säule: ${saeulen[saeule]}
+Thema gerade: ${thema || "frei — nimm einen der Schmerzpunkte oben"}
+${gezeigte.length ? "Diese Titel gab es schon, nimm etwas anderes: " + gezeigte.join(" · ") : ""}
+
+Antworte als JSON, genau so:
+{"titel":"kurzer Name der Idee, drei bis fünf Wörter",
+ "saeule":"persoenlich|inspiration|expertise|verkauf",
+ "folien":[{"t":"der Text, der auf die Folie kommt — höchstens zwei kurze Zeilen","s":"was sie dazu sagt oder zeigt, ein Satz"}],
+ "sticker":"welcher Sticker auf welche Folie und was draufsteht",
+ "cta":"der eine CTA am Schluss, ausformuliert"}
+Drei bis sechs Folien. Nichts ausserhalb des JSON.`;
+    const roh = await kiVerfuegbar.json(auftrag, {modelTier:"default", cache:false});
+    if (!roh || !Array.isArray(roh.folien) || !roh.folien.length) throw new Error("leere Antwort");
+    roh.quelle = "ki";
+    return roh;
+  }
+
   let letzteIdee = null, gezeigte = [];
-  function ideeGeben(){
+  function ideeAusVorrat(){
     const thema = g('thema').value.trim();
     const lage  = g('lage').value;
     const saeule= g('saeule').value;
@@ -873,32 +1170,60 @@
     let frisch = passend.filter(i => !gezeigte.includes(i.t));
     if (!frisch.length){ gezeigte = []; frisch = passend; }
     const i = frisch[Math.floor(Math.random()*frisch.length)];
-    gezeigte.push(i.t);
-    letzteIdee = i;
-    zeigeIdee(i, thema);
+    // in dieselbe Form bringen wie eine Antwort von Claude
+    return { titel:i.t, saeule:i.s, quelle:"vorrat", sticker:i.st, cta:i.c,
+             folien:i.f.map(f=>({t:fuellThema(f.t,thema), s:f.s})) };
   }
   const fuellThema = (s, thema) => s.replace(/\{T\}/g, thema || "[dein Thema]");
 
-  function zeigeIdee(i, thema){
+  function zeigeIdee(i){
     const namen = {persoenlich:"Persönlichkeit", inspiration:"Inspiration", expertise:"Expertise", verkauf:"Verkauf"};
+    const herkunft = i.quelle === "ki" ? "frisch geschrieben" : "aus dem Bauplan-Vorrat";
     const box = g('idee');
-    box.innerHTML = `<h3>${i.t}</h3><div class="saeule">${namen[i.s]} · ${i.f.length} Folien</div><ol>`
-      + i.f.map(f=>`<li><b>${esc(fuellThema(f.t,thema))}</b>${f.s?`<span>${esc(f.s)}</span>`:""}</li>`).join("")
-      + `</ol><div class="fuss"><b>Sticker:</b> ${esc(i.st)}<br><b>CTA:</b> ${esc(i.c)}</div>`;
+    box.innerHTML = `<h3>${esc(i.titel)}</h3><div class="saeule">${namen[i.saeule]||"Idee"} · ${i.folien.length} Folien · ${herkunft}</div><ol>`
+      + i.folien.map(f=>`<li><b>${esc(f.t)}</b>${f.s?`<span>${esc(f.s)}</span>`:""}</li>`).join("")
+      + `</ol><div class="fuss">${i.sticker?`<b>Sticker:</b> ${esc(i.sticker)}<br>`:""}${i.cta?`<b>CTA:</b> ${esc(i.cta)}`:""}</div>`;
     box.classList.add('on');
     g('ideeUeber').style.display = "block";
-    g('ideeBtn').textContent = "Andere Idee";
   }
 
+  async function ideeGeben(){
+    const btn = g('ideeBtn'), thema = g('thema').value.trim();
+    const lage = g('lage').value, saeule = g('saeule').value;
+    const profil = document.querySelector('#profilSeg button.on').dataset.p;
+    btn.disabled = true;
+    let idee = null, hinweis = "";
+    if (kiVerfuegbar){
+      btn.textContent = "schreibt…";
+      try { idee = await ideeVonClaude(thema, lage, saeule, profil); }
+      catch (err){
+        hinweis = (err && err.code === "not_granted")
+          ? "Ohne Freigabe nehme ich den Bauplan-Vorrat."
+          : "Hat gerade nicht geklappt, darum der Bauplan-Vorrat.";
+      }
+    }
+    if (!idee) idee = ideeAusVorrat();
+    gezeigte.push(idee.titel);
+    if (gezeigte.length > 12) gezeigte.shift();
+    letzteIdee = idee;
+    zeigeIdee(idee);
+    if (hinweis) g('idee').insertAdjacentHTML('beforeend', `<div class="fuss">${esc(hinweis)}</div>`);
+    btn.disabled = false;
+    btn.textContent = kiVerfuegbar ? "Noch eine Idee" : "Andere Idee";
+  }
+
+  document.querySelectorAll('#profilSeg button').forEach(b=>b.onclick=()=>{
+    document.querySelectorAll('#profilSeg button').forEach(x=>x.classList.toggle('on',x===b));
+  });
   g('ideeBtn').onclick = ideeGeben;
   g('ideeUeber').onclick = ()=>{
     if (!letzteIdee) return;
     if ((folien.length>1 || state.headline.trim()) &&
         !confirm("Deine jetzigen Folien werden durch die Idee ersetzt. Weiter?")) return;
-    const thema = g('thema').value.trim();
     const vorlage = Object.assign({}, state);            // Gestaltung der aktuellen Folie übernehmen
-    folien = letzteIdee.f.map(f => Object.assign({}, vorlage, {
-      headline: fuellThema(f.t, thema), eyebrow:"", poster: vorlage.poster }));
+    const stil = Object.assign({}, B());
+    folien = letzteIdee.folien.map(f => Object.assign({}, vorlage, {
+      bloecke: [ Object.assign({}, stil, {headline: f.t, eyebrow:""}) ], blk: 0 }));
     aktiv = 0; state = folien[0];
     formularFuellen(); stripBauen(); render();
     g('idee').scrollIntoView({behavior:"smooth", block:"start"});
