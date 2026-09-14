@@ -1,6 +1,21 @@
 ---
-description: Wochen-Content aus den Hook-Picks bauen — 1 Talking-Head + 2 B-Roll-Reels + 2 Karussells + Captions, in Patricias Stimme
+name: content-bauen
+description: "Wochen-Content aus den Hook-Picks bauen — 1 Talking-Head + 2 B-Roll-Reels + 2 Karussells + Captions, in Patricias Stimme"
 ---
+
+> 🎯 **HOOKS — Pflicht-Lese `.claude/skills/hooks/SKILL.md` (seit 2026-09-14)**
+>
+> Jeder Hook, der hier entsteht — Cover, Reel-Einstieg, Folie 1, Caption-Anfang,
+> Story-Slide 1, Anzeigen-Zeile — wird nach diesem Skill gebaut. Dort stehen
+> Kundensprache, Bewusstseinsstufen, Angles, PIE-Mix, alle Formeln, die Verbote
+> und das Prüfskript.
+>
+> **Und am Ende „Der letzte Check" — vier Fragen, die jeder Hook bestehen muss:**
+> trifft es wirklich einen Schmerz · denkt sie „krass, wieso weiss die, was ich
+> denke" · sagt man das so am Küchentisch zu einer Freundin · **ist die Lösung
+> draussen** (die Lösung kommt nie im Hook).
+>
+> Eine Frage mit Nein: **den Hook umschreiben, nie die Caption nachbessern.**
 
 Du baust aus den ausgewählten Hooks den **fertigen Wochen-Content** — komplett in
 **meiner Stimme** und mit **meinen echten Infos**. Nichts Generisches, nichts Erfundenes.

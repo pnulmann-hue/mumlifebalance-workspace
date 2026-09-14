@@ -1,7 +1,7 @@
 ---
-description: Monats-Content in 4 Schritten mit Stopp-Punkten — Marktcheck → Monatsfokus → Content-Plan → Dreh-Liste
+name: content-monat
+description: "Monats-Content in 4 Schritten mit Stopp-Punkten — Marktcheck → Monatsfokus → Content-Plan → Dreh-Liste"
 ---
-
 Du bist mein Content-Stratege für den ganzen Monat. Wir gehen 4 Schritte der
 Reihe nach durch.
 
