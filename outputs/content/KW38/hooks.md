@@ -22,7 +22,7 @@ Alle aus den Formeln im Hook-Master zugeschnitten, alle durch den letzten Check
 | **M4** | I | „Du planst deinen Monat auf eine Aktion hin. Und dann entscheidet jemand anders, dass sie anders kommt." | Szene in der zweiten Person | Schmerz | P3 Abhängigkeit | 2 |
 | **M5** | E | „Du postest seit Monaten, und trotzdem fragt dich nie jemand um Rat." | Du-denkst | Neugier | P5 · eigene Zahlen: Ø 210 Reichweite, 2 Speicherungen auf 12 Beiträge | 2 |
 | **M6** | P | „Dein Einkommen hängt davon ab, dass andere Leute etwas tun." | Hot Take | Konträr | P3 | 2 |
-| **M7** | E | „Ich hab mir am Anfang ein Thema gesucht, das gut klingt. Genau das war der Fehler." | Grösster-Fehler | Beweis | H1 „kein Thema" | 3 |
+| **M7** | E | „Ich hab mir am Anfang ein Thema gesucht, das gut klingt. Statt eins, worüber ich wirklich Bescheid weiss." | Grösster-Fehler | Beweis | H1 „kein Thema" | 3 |
 | **M8** | I | „Mit einem Standbein wartest du immer darauf, dass andere etwas tun." | Vergleich | Vergleich | P3 · Wunsch 1 | 3 |
 | **M9** | P | „Die Frage, die mir am häufigsten kommt, ist nicht wie. Sondern ob ich meine Upline vorher gefragt habe." | Frage aus den DMs | Identität | H3 Angst vor der Upline | 2 |
 | **M10** | E | „Die meisten Networkerinnen haben längst ein Thema. Sie finden es nur zu normal, um Geld dafür zu verlangen." | Curiosity-Gap | Neugier | H1 · trägt den Lead-Post | 3 |
@@ -121,7 +121,7 @@ Klarheit, um was es geht.“*
 | vorher | nachher | was fehlte |
 |---|---|---|
 | „Du denkst, dir fehlt Reichweite. Dabei fehlt dir etwas, wofür man dich fragen kann.“ | „Du postest seit Monaten, und trotzdem fragt dich nie jemand um Rat.“ | „etwas, wofür man dich fragen kann“ ist ein Rätsel, keine Aussage |
-| „Der grösste Fehler am Anfang: Ich hab mir ein Thema gesucht, das gut klingt — statt eins, für das mich Leute sowieso schon fragen.“ | „Ich hab mir am Anfang ein Thema gesucht, das gut klingt. Genau das war der Fehler.“ | zu lang; die erste Zeile muss allein catchen |
+| „Der grösste Fehler am Anfang: Ich hab mir ein Thema gesucht, das gut klingt — statt eins, für das mich Leute sowieso schon fragen.“ | „Ich hab mir am Anfang ein Thema gesucht, das gut klingt. Statt eins, worüber ich wirklich Bescheid weiss.“ | zu lang; die erste Zeile muss allein catchen |
 | „Mit einem Bein wartest du, bis andere was tun. Mit zweien …“ | „Mit einem Standbein wartest du immer darauf, dass andere etwas tun.“ | „Bein“ versteht nur, wer das Bild schon kennt |
 | „Die drei Stellen im Tag, an denen es kippt …“ | „Drei Momente am Tag entscheiden, ob du abends noch kannst.“ | wieder ein abstraktes „es kippt“ |
 
