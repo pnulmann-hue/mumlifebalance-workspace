@@ -4,9 +4,22 @@
     {
       "seite": "Patricia Ulmann",
       "handle": "mumlifebalance_patricia_ulmann",
-      "follower": 2011,
-      "beitraege_gesamt": 319,
+      "follower": 2009,
+      "beitraege_gesamt": 320,
       "beitraege": [
+        {
+          "id": "17906797725516461",
+          "datum": "2026-09-14",
+          "typ": "REELS",
+          "link": "https://www.instagram.com/reel/DdRhjUXoJA1/",
+          "likes": 0,
+          "kommentare": 0,
+          "anfang": "Was bei mir funktioniert hat? Ich hab aufgehört, mein Network zu erklären, und angefangen,",
+          "reach": 28,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
         {
           "id": "18113624584814585",
           "datum": "2026-09-11",
@@ -15,7 +28,7 @@
           "likes": 2,
           "kommentare": 0,
           "anfang": "Folge mir, wenn du auf Instagram sichtbar werden willst, ohne dein Profil in einen Produkt",
-          "reach": 192,
+          "reach": 197,
           "saved": 0,
           "shares": 0,
           "total_interactions": 2
@@ -28,7 +41,7 @@
           "likes": 4,
           "kommentare": 0,
           "anfang": "Folge mir, wenn du neben deinem Network ein eigenes Thema aufbauen willst eins, das dir ge",
-          "reach": 208,
+          "reach": 211,
           "saved": 0,
           "shares": 0,
           "total_interactions": 4
@@ -41,7 +54,7 @@
           "likes": 5,
           "kommentare": 0,
           "anfang": "Folge mir, wenn du dein Beruf mal mit Stolz erzählt hast und dich heute dabei ertappst, wi",
-          "reach": 368,
+          "reach": 372,
           "saved": 0,
           "shares": 0,
           "total_interactions": 5
@@ -67,7 +80,7 @@
           "likes": 1,
           "kommentare": 0,
           "anfang": "Folge mir, wenn du als Mama im Network verkaufen willst, ohne fremde Leute anzuschreiben. ",
-          "reach": 215,
+          "reach": 219,
           "saved": 0,
           "shares": 0,
           "total_interactions": 1
@@ -93,7 +106,7 @@
           "likes": 3,
           "kommentare": 0,
           "anfang": "Folge mir, wenn du als Mama im Network manchmal nachts wachliegst und dir insgeheim mehr w",
-          "reach": 293,
+          "reach": 296,
           "saved": 0,
           "shares": 0,
           "total_interactions": 3
@@ -132,7 +145,7 @@
           "likes": 1,
           "kommentare": 0,
           "anfang": "Folge mir, wenn du willst, dass Leute dir folgen wegen dir, nicht wegen deiner Firma. Spei",
-          "reach": 264,
+          "reach": 268,
           "saved": 1,
           "shares": 0,
           "total_interactions": 2
@@ -162,9 +175,202 @@
           "saved": 0,
           "shares": 0,
           "total_interactions": 0
+        },
+        {
+          "id": "18028283945893539",
+          "datum": "2026-08-28",
+          "typ": "REELS",
+          "link": "https://www.instagram.com/reel/Dck_J4hoRkN/",
+          "likes": 0,
+          "kommentare": 0,
+          "anfang": "Und der Unterschied ist nicht Talent. Auch nicht mehr Zeit oder eine grössere Reichweite. ",
+          "reach": 102,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        {
+          "id": "18340813993252649",
+          "datum": "2026-08-28",
+          "typ": "REELS",
+          "link": "https://www.instagram.com/reel/Dck-QjdIxoe/",
+          "likes": 0,
+          "kommentare": 0,
+          "anfang": "Was wäre, wenn morgen früh statt dem Latte mal deine echte Geschichte in die Story kommt w",
+          "reach": 170,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        {
+          "id": "18113191540787041",
+          "datum": "2026-08-28",
+          "typ": "REELS",
+          "link": "https://www.instagram.com/reel/Dck-KhwovDg/",
+          "likes": 0,
+          "kommentare": 0,
+          "anfang": "Was wäre, wenn morgen früh statt dem Latte mal deine echte Geschichte in die Story kommt w",
+          "reach": 134,
+          "saved": 1,
+          "shares": 0,
+          "total_interactions": 1
+        },
+        {
+          "id": "18099457055196997",
+          "datum": "2026-08-28",
+          "typ": "REELS",
+          "link": "https://www.instagram.com/reel/Dck-EUfoRSR/",
+          "likes": 0,
+          "kommentare": 0,
+          "anfang": "Was wäre, wenn morgen früh statt dem Latte mal deine echte Geschichte in die Story kommt w",
+          "reach": 122,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        {
+          "id": "18065605244505052",
+          "datum": "2026-08-28",
+          "typ": "REELS",
+          "link": "https://www.instagram.com/reel/Dck9w5Eo2eK/",
+          "likes": 0,
+          "kommentare": 0,
+          "anfang": "Was wäre, wenn morgen früh statt dem Latte mal deine echte Geschichte in die Story kommt w",
+          "reach": 116,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        {
+          "id": "18116520301934953",
+          "datum": "2026-08-28",
+          "typ": "REELS",
+          "link": "https://www.instagram.com/reel/Dck8Ando_C8/",
+          "likes": 6,
+          "kommentare": 0,
+          "anfang": "Du kennst das, oder? Handy in der Hand. Cursor blinkt. Und irgendwie will kein einziger Sa",
+          "reach": 1322,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 6
+        },
+        {
+          "id": "18352098352216833",
+          "datum": "2026-08-28",
+          "typ": "REELS",
+          "link": "https://www.instagram.com/reel/Dck7k35I46n/",
+          "likes": 2,
+          "kommentare": 0,
+          "anfang": "Kann mir mal jemand erklären, warum ich abends vor dem leeren Story-Feld sitze, als müsste",
+          "reach": 892,
+          "saved": 1,
+          "shares": 0,
+          "total_interactions": 4
+        },
+        {
+          "id": "18028156661838992",
+          "datum": "2026-08-28",
+          "typ": "REELS",
+          "link": "https://www.instagram.com/reel/DcksAzyNYVU/",
+          "likes": 4,
+          "kommentare": 0,
+          "anfang": "Weisst du noch, dieses Magenziehen, wenn dir jemand sagt: Schreib doch einfach mal deine g",
+          "reach": 311,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 4
+        },
+        {
+          "id": "18110584280012591",
+          "datum": "2026-08-27",
+          "typ": "REELS",
+          "link": "https://www.instagram.com/reel/Dci0QFSIHRc/",
+          "likes": 2,
+          "kommentare": 0,
+          "anfang": "Ende 2022 habe ich mein erstes Network beendet. Drei Jahre dabei, Produktbilder gepostet, ",
+          "reach": 112,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 2
+        },
+        {
+          "id": "18141237301602523",
+          "datum": "2026-08-27",
+          "typ": "REELS",
+          "link": "https://www.instagram.com/reel/Dci0DNrIgSx/",
+          "likes": 0,
+          "kommentare": 0,
+          "anfang": "Gestern Abend um halb zehn, Wäschekorb auf dem Sofa, Handy in der Hand. Und dieser Satz im",
+          "reach": 100,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        {
+          "id": "17883950676616972",
+          "datum": "2026-08-27",
+          "typ": "REELS",
+          "link": "https://www.instagram.com/reel/Dciz3CwogYW/",
+          "likes": 1,
+          "kommentare": 0,
+          "anfang": "Vor drei Jahren hätte ich dir gesagt, dass ich nichts habe, was man verkaufen könnte. Ich ",
+          "reach": 104,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 1
+        },
+        {
+          "id": "18030790703667497",
+          "datum": "2026-08-26",
+          "typ": "FEED",
+          "link": "https://www.instagram.com/p/DcgwNQ9ieeD/",
+          "likes": 2,
+          "kommentare": 0,
+          "anfang": "Mama, Networkerin, liebe Kaffee & Sonne\" und genau da klickt deine Traumkundin weg. So ein",
+          "reach": 89,
+          "saved": 1,
+          "shares": 0,
+          "total_interactions": 3
         }
       ],
-      "storys": []
+      "storys": [
+        {
+          "id": "18078839699384191",
+          "zeit": "2026-09-14 14:52",
+          "typ": "VIDEO",
+          "link": "https://www.instagram.com/stories/mumlifebalance_patricia_ulmann/3986078106661709918",
+          "reach": 21,
+          "replies": 0,
+          "navigation": 21
+        },
+        {
+          "id": "18128776549753550",
+          "zeit": "2026-09-14 14:49",
+          "typ": "IMAGE",
+          "link": "https://www.instagram.com/stories/mumlifebalance_patricia_ulmann/3986076598207068524",
+          "reach": 23,
+          "replies": 0,
+          "navigation": 23
+        },
+        {
+          "id": "18431587843177066",
+          "zeit": "2026-09-14 14:48",
+          "typ": "VIDEO",
+          "link": "https://www.instagram.com/stories/mumlifebalance_patricia_ulmann/3986076198773458678",
+          "reach": 24,
+          "replies": 0,
+          "navigation": 20
+        },
+        {
+          "id": "18126059945502405",
+          "zeit": "2026-09-14 14:45",
+          "typ": "VIDEO",
+          "link": "https://www.instagram.com/stories/mumlifebalance_patricia_ulmann/3986074699569842110",
+          "reach": 26,
+          "replies": 0,
+          "navigation": 17
+        }
+      ]
     }
   ]
 }

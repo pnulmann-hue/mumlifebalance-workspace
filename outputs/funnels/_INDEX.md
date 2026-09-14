@@ -8,12 +8,8 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 
 ## Dateien
 
-- [[ac-einrichtung]]
 - [[funnel-landkarte]]
 - [[instagram-lead-nurture-mails]]
-- [[mail-1-auslieferung]]
-- [[mails-2-4-bruecke]]
-- [[manychat-flow-STANDBEIN]]
 
 ### 📁 bio-check
 
@@ -41,6 +37,13 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 ### 📁 mba-anrechnung-bestandskunden
 
 - [[blueprint]]
+
+### 📁 produkt-ideen-finder
+
+- [[ac-einrichtung]]
+- [[mail-1-auslieferung]]
+- [[mails-2-4-bruecke]]
+- [[manychat-flow-STANDBEIN]]
 
 ### 📁 zentrale-pitch-automation
 

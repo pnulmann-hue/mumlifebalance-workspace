@@ -40,6 +40,14 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 - [[KW32-mentoring]]
 - [[KW33-doterra]]
 - [[KW33-mentoring]]
+- [[KW34-doterra]]
+- [[KW34-mentoring]]
+- [[KW35-doterra]]
+- [[KW35-mentoring]]
+- [[KW36-doterra]]
+- [[KW36-mentoring]]
+- [[KW37-doterra]]
+- [[KW37-mentoring]]
 
 ### 📁 2026-07-doterra-hormonwechsel
 

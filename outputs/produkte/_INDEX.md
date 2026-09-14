@@ -8,6 +8,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 ## Dateien
 
+- [[_nischen-tabelle-2026-08]]
 - [[network-bts-telegram-konzept]]
 - 📘 [[README]]
 
@@ -78,11 +79,14 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 - [[00-briefing]]
 - [[00-markt-research]]
-- [[05-ki-assistent-check]]
-- [[notion-eintrag]]
+- [[00-recherche-dokument]]
 - [[modul-01]]
 - [[modul-02]]
 - [[modul-03]]
+- [[05-ki-assistent-check]]
+- [[bump-upsell-strategie]]
+- [[09-salespage]]
+- [[notion-eintrag]]
 
 ### 📁 mama-ceo
 
@@ -149,6 +153,8 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[08-webinar-plan]]
 - [[10-academy-architektur]]
 - [[11-willkommens-modul-und-callplan]]
+- [[12-call-01-mindset-drehbuch]]
+- [[13-telegram-erfolgs-indikatoren]]
 - [[_INDEX]]
 
 ### 📁 mba-launch
@@ -183,6 +189,12 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 ### 📁 pia
 
 - [[00-pia-architektur]]
+
+### 📁 produkt-ideen-finder
+
+- [[00-spec]]
+- [[01-kommunikation-aga-leitfaden]]
+- [[02-marktrecherche-salespage-vorrat]]
 
 ### 📁 storyideen-networkerinnen
 

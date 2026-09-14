@@ -9,4 +9,6 @@ Auto-Index aller Files in `outputs/salespages/`. Siehe [[_MOCs/MOC-Produkte-Funn
 ## Dateien
 
 - [[90-storyideen-networkerinnen-salespage]]
+- [[produkt-ideen-finder-landingpage]]
+- [[startklar-salespage]]
 - [[von-nebenbei-zu-business-salespage]]
