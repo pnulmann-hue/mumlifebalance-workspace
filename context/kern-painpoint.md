@@ -172,6 +172,29 @@ Sichtbarkeit · Positionierung · eigenes Thema · digitale Produktwelt · Hybri
 werden. Das sind die **Antworten**, nicht der Schmerz. Sie gehören ab Zeile 2, nie in Zeile 1.
 Siehe [[ki-phrasen-blackliste]] und das Memory zu symptombewussten Hooks.
 
+### So sagst du es stattdessen (Patricia, 14.09.2026)
+
+Ein Verbot allein hilft nicht — es braucht den Ersatz. Das Prinzip: **nicht das Modell
+benennen, sondern beschreiben, was sie danach hat.**
+
+| Fachwort | so sagst du es einer Freundin |
+|---|---|
+| **Hybridmodell** | etwas Eigenes neben dem Network · ein Teil vom Einkommen, der nur an dir hängt |
+| **Sichtbarkeit** | dass die richtigen Leute dich finden · dass dich endlich mal jemand fragt |
+| **Positionierung** | wofür Leute dich fragen sollen |
+| **eigenes Thema** | worüber du wirklich Bescheid weisst |
+| **digitale Produktwelt** | etwas, das verkauft, während du bei den Kindern bist |
+| **Expertin werden** | dass man dich fragt, statt dass du fragen musst |
+
+Die Zeile zum eigenen Thema ist **Patricias eigene Formulierung** aus der
+Hook-Korrektur vom 14.09. — sie übersetzt beim Gegenlesen automatisch richtig, während
+mir das Fachwort hineinrutscht. Bei jedem Fachwort im Entwurf: **erst hier nachsehen,
+dann schreiben.**
+
+**Gegenprobe, die immer funktioniert:** Würde ich das Wort einer Freundin am Küchentisch
+sagen? Bei „Hybridmodell“ lautet die Antwort nein. Bei „etwas Eigenes neben dem Network“
+ja.
+
 ## 🔗 Verwandte Notizen
 
 - [[business-info]]

@@ -23,7 +23,7 @@ Alle aus den Formeln im Hook-Master zugeschnitten, alle durch den letzten Check
 | **M5** | E | „Du postest seit Monaten, und trotzdem fragt dich nie jemand um Rat." | Du-denkst | Neugier | P5 · eigene Zahlen: Ø 210 Reichweite, 2 Speicherungen auf 12 Beiträge | 2 |
 | **M6** | P | „Dein Einkommen hängt davon ab, dass andere Leute etwas tun." | Hot Take | Konträr | P3 | 2 |
 | **M7** | E | „Ich hab mir am Anfang ein Thema gesucht, das gut klingt. Statt eins, worüber ich wirklich Bescheid weiss." | Grösster-Fehler | Beweis | H1 „kein Thema" | 3 |
-| **M8** | I | „Provision heisst warten, bis andere etwas tun. Ein Hybridmodell heisst, dass du einen grossen Teil deines Einkommens selber in der Hand hast." | Vergleich | Vergleich | P3 · Wunsch 1 · **Formulierung von Patricia** | 3 |
+| **M8** | I | „Bei der Provision wartest du, bis andere etwas tun. Bei etwas Eigenem hängt es nur an dir." | Vergleich | Vergleich | P3 · Wunsch 1 · **Formulierung von Patricia** | 3 |
 | **M9** | P | „Die häufigste Frage an mich ist nicht wie. Sondern ob das Partnerunternehmen etwas dagegen hat, wenn ich mir daneben was Eigenes aufbaue." | Frage aus den DMs | Identität | H3 · **Formulierung von Patricia** | 2 |
 | **M10** | E | „Die meisten Networkerinnen haben längst ein Thema. Sie finden es nur zu normal, um Geld dafür zu verlangen." | Curiosity-Gap | Neugier | H1 · trägt den Lead-Post | 3 |
 
@@ -122,7 +122,7 @@ Klarheit, um was es geht.“*
 |---|---|---|
 | „Du denkst, dir fehlt Reichweite. Dabei fehlt dir etwas, wofür man dich fragen kann.“ | „Du postest seit Monaten, und trotzdem fragt dich nie jemand um Rat.“ | „etwas, wofür man dich fragen kann“ ist ein Rätsel, keine Aussage |
 | „Der grösste Fehler am Anfang: Ich hab mir ein Thema gesucht, das gut klingt — statt eins, für das mich Leute sowieso schon fragen.“ | „Ich hab mir am Anfang ein Thema gesucht, das gut klingt. Statt eins, worüber ich wirklich Bescheid weiss.“ | zu lang; die erste Zeile muss allein catchen |
-| „Mit einem Bein wartest du, bis andere was tun. Mit zweien …“ | „Provision heisst warten, bis andere etwas tun. Ein Hybridmodell heisst, dass du einen grossen Teil deines Einkommens selber in der Hand hast.“ | „Bein“ versteht nur, wer das Bild schon kennt |
+| „Mit einem Bein wartest du, bis andere was tun. Mit zweien …“ | „Bei der Provision wartest du, bis andere etwas tun. Bei etwas Eigenem hängt es nur an dir.“ | „Bein“ versteht nur, wer das Bild schon kennt |
 | „Die drei Stellen im Tag, an denen es kippt …“ | „Drei Momente am Tag entscheiden, ob du abends noch kannst.“ | wieder ein abstraktes „es kippt“ |
 
 **Die Regel dahinter:** Wer den Hook drei Sekunden sieht, muss **wissen, worum es geht** —
@@ -178,3 +178,9 @@ die Patricia gestellt bekommt. Nach dem erfundenen DM-Hook von vorhin frage ich 
 einmal zu viel — wird ihr das wirklich am häufigsten gefragt? Wenn nicht, aber es kommt
 regelmässig vor: *„Immer wieder werde ich gefragt, ob das Partnerunternehmen etwas
 dagegen hat.“* Wenn gar nicht: Hook streichen.
+
+**M8 steht jetzt ohne das Fachwort** (14.09.): „Bei der Provision wartest du, bis andere
+etwas tun. Bei etwas Eigenem hängt es nur an dir.“ — dieselbe Aussage, aber auch kalt
+verständlich, und „hängt nur an dir“ steht fast wörtlich schon im Dienstag-Karussell.
+Patricias Fassung mit „Hybridmodell“ bleibt oben in der Korrekturliste stehen, falls sie
+den Hook doch warm einsetzen will.
