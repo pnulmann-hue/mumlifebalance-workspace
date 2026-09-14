@@ -40,32 +40,73 @@
     text-align:center;font-size:14px;font-weight:700;color:var(--petrol);cursor:pointer;background:var(--bg)}
   .upload:hover{border-color:var(--petrol)}
   .btn{width:100%;margin-top:14px;border:none;border-radius:999px;background:var(--petrol);color:#fff;font-family:inherit;font-weight:700;font-size:16px;padding:13px;cursor:pointer}
+  .btn.zweit{background:transparent;color:var(--petrol);border:2px solid var(--petrol)}
 
-  /* Vorschau — die echte Bühne, nur herunterskaliert. Dadurch ist der Export exakt das, was du siehst. */
+  /* Buehne - echte 1080er-Groesse, nur herunterskaliert. Dadurch ist der Export exakt das, was du siehst. */
+  .buehne{transform-origin:top left;position:absolute;top:0;left:0;overflow:hidden;font-family:"Source Sans 3",sans-serif}
+  .buehne .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+  .buehne .uni,.buehne .grad{position:absolute;inset:0}
+  .buehne .wrap{position:absolute;left:74px;right:74px;display:flex;flex-direction:column}
+  .buehne .bar{border-radius:34px}
+  .buehne .eyebrow{font-weight:700;font-size:34px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:22px}
+  .buehne .headline{font-family:"Philosopher",serif;font-weight:700;line-height:1.1;white-space:pre-wrap}
+  .buehne .handle{position:absolute;left:74px;bottom:52px;font-weight:600;font-size:30px}
+  .buehne .zone{position:absolute;left:0;right:0;background:rgba(0,0,0,.22);border-top:2px dashed rgba(255,255,255,.55);border-bottom:2px dashed rgba(255,255,255,.55)}
+  .buehne .zone b{position:absolute;left:26px;top:10px;font-size:24px;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.9)}
+
   .stage{position:sticky;top:16px;min-width:0}
   .frame-wrap{width:100%;max-width:432px;margin:0 auto;border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.22);position:relative}
-  #cover{transform-origin:top left;position:absolute;top:0;left:0;overflow:hidden;font-family:"Source Sans 3",sans-serif}
-  #cover .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 15%}
-  #cover .uni,#cover .grad{position:absolute;inset:0}
-  #cover .wrap{position:absolute;left:74px;right:74px;display:flex;flex-direction:column}
-  #cover .bar{border-radius:34px}
-  #cover .eyebrow{font-weight:700;font-size:34px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:22px}
-  #cover .headline{font-family:"Philosopher",serif;font-weight:700;line-height:1.1;white-space:pre-wrap}
-  #cover .handle{position:absolute;left:74px;bottom:52px;font-weight:600;font-size:30px}
-  #cover .zone{position:absolute;left:0;right:0;background:rgba(0,0,0,.22);border-top:2px dashed rgba(255,255,255,.55);border-bottom:2px dashed rgba(255,255,255,.55)}
-  #cover .zone b{position:absolute;left:26px;top:10px;font-size:24px;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.9)}
+
+  /* Die ganze Abfolge auf einen Blick */
+  .setbar{max-width:432px;margin:0 auto 12px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 12px 14px}
+  .setbar .kopf{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:9px}
+  .setbar .kopf h2{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}
+  .setbar .kopf span{font-size:12.5px;color:var(--muted)}
+  .strip{display:flex;gap:9px;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:thin}
+  .mini{flex:0 0 auto;cursor:pointer;text-align:center}
+  .minibox{position:relative;overflow:hidden;border-radius:8px;border:3px solid transparent;background:#0b1014}
+  .mini.on .minibox{border-color:var(--petrol)}
+  .mini .nr{display:block;font-size:11.5px;font-weight:700;color:var(--muted);margin-top:3px}
+  .mini.on .nr{color:var(--petrol)}
+  .setknoepfe{display:flex;gap:7px;flex-wrap:wrap}
+  .setknoepfe button{flex:1 1 auto;border:1px solid var(--line);background:var(--bg);color:var(--ink);
+    font-family:inherit;font-weight:700;font-size:13px;padding:8px 6px;border-radius:9px;cursor:pointer;min-width:64px}
+  .setknoepfe button:hover{border-color:var(--petrol);color:var(--petrol)}
+
+  select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;
+    font-family:inherit;font-size:15px;color:var(--ink);background:var(--bg)}
+  .idee{display:none;margin-top:14px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:13px 14px}
+  .idee.on{display:block}
+  .idee h3{font-family:"Philosopher",serif;font-size:19px;margin:0 0 3px;color:var(--ink)}
+  .idee .saeule{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
+  .idee ol{margin:0;padding-left:19px}
+  .idee li{margin-bottom:9px;font-size:14px;line-height:1.45}
+  .idee li b{display:block;font-weight:700}
+  .idee li span{color:var(--muted);font-size:13px}
+  .idee .fuss{margin-top:10px;padding-top:9px;border-top:1px solid var(--line);font-size:13.5px;line-height:1.5}
+  .idee .fuss b{color:var(--petrol)}
+
+  .vidbox{display:none}
+  .vidbox.on{display:block}
+  .auftrag{display:none;margin-top:10px;background:var(--bg);border:1px dashed var(--petrol);border-radius:10px;
+    padding:10px 12px;font-size:13px;line-height:1.5;color:var(--ink);white-space:pre-wrap}
+  .auftrag.on{display:block}
 
   .hint{font-size:13px;color:var(--muted);margin:12px auto 0;max-width:432px;line-height:1.5}
   .warn{max-width:432px;margin:10px auto 0;font-size:13.5px;font-weight:700;color:var(--orange);display:none}
   .warn.on{display:block}
   #out{display:none;margin:14px auto 0;max-width:432px;width:100%;border-radius:14px;border:1px solid var(--line)}
   .savebar{max-width:432px;margin:8px auto 0}
+  #alle{max-width:432px;margin:14px auto 0;display:none}
+  #alle .fertig{margin-bottom:16px}
+  #alle .fertig b{display:block;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+  #alle img{width:100%;border-radius:12px;border:1px solid var(--line);display:block}
 </style>
 
 <div class="top">
   <div class="kick">Mum Life Balance</div>
   <h1>Bild-Editor</h1>
-  <div class="sub">Story &middot; Reel-Cover &middot; Karussell-Folie. Foto tauschen &middot; Brandfarbe &middot; Textbalken &middot; Text verschieben &middot; als Bild speichern.</div>
+  <div class="sub">Story &middot; Reel-Cover &middot; Karussell. Ganze Abfolge im Blick &middot; Foto tauschen &middot; Brandfarbe &middot; Textbalken &middot; Text verschieben &middot; als Bild speichern.</div>
 </div>
 
 <div class="layout">
@@ -74,23 +115,59 @@
       <h2>Format</h2>
       <div class="seg" id="fmtSeg">
         <button data-fmt="story" class="on">Story 9:16</button>
-        <button data-fmt="cover">Reel-Cover</button>
-        <button data-fmt="slide">Karussell</button>
+        <button data-fmt="cover">Reel-Cover 9:16</button>
+        <button data-fmt="slide">Karussell 4:5</button>
       </div>
       <div class="chk"><input type="checkbox" id="zonesOn" checked> <label for="zonesOn" style="margin:0">Sticker-Zonen zeigen</label></div>
-      <div class="hint" style="margin:8px 0 0;max-width:none">Die schraffierten Streifen zeigen, wo Instagram dein Profilbild und die Umfrage hinlegt. Halt den Text da raus.</div>
+      <div class="hint" id="fmtHint" style="margin:8px 0 0;max-width:none"></div>
+    </div>
+
+    <div class="panel" id="ideenPanel">
+      <h2>Ideen</h2>
+      <label>Thema gerade (Wochenfokus, Angebot, was dich beschäftigt)</label>
+      <input type="text" id="thema" placeholder="z.B. sichtbar sein ohne den ganzen Tag am Handy">
+      <label>Wo stehst du?</label>
+      <select id="lage">
+        <option value="normal">normaler Tag</option>
+        <option value="vor">vor dem Launch — Thema anwärmen</option>
+        <option value="start">Launch-Start — Türen auf</option>
+        <option value="laeuft">Launch läuft</option>
+        <option value="letzter">letzter Tag</option>
+        <option value="nach">nach dem Launch</option>
+      </select>
+      <label>Säule</label>
+      <select id="saeule">
+        <option value="egal">egal — überrasch mich</option>
+        <option value="persoenlich">Persönlichkeit</option>
+        <option value="inspiration">Inspiration / Einblick</option>
+        <option value="expertise">Expertise</option>
+        <option value="verkauf">Verkauf</option>
+      </select>
+      <button class="btn" id="ideeBtn">Idee geben</button>
+      <div class="idee" id="idee"></div>
+      <button class="btn zweit" id="ideeUeber" style="display:none">Als Folien übernehmen</button>
     </div>
 
     <div class="panel">
       <h2>Hintergrund</h2>
       <div class="seg" id="modeSeg">
         <button data-mode="foto" class="on">Foto</button>
+        <button data-mode="video">Video</button>
         <button data-mode="uni">Unifarbe</button>
       </div>
       <label id="lblFoto">Bild aus deinen Shootings</label>
       <div class="thumbs" id="thumbs"></div>
-      <label for="datei" class="upload" id="lblUp">📷 Eigenes Bild hochladen</label>
+      <label for="datei" class="upload" id="lblUp">&#128247; Eigenes Bild hochladen</label>
       <input type="file" id="datei" accept="image/*" hidden>
+
+      <div class="vidbox" id="vidbox">
+        <label for="videodatei" class="upload" id="lblVid">&#127909; Video hochladen (dein Sprechvideo)</label>
+        <input type="file" id="videodatei" accept="video/*" hidden>
+        <label>Stelle im Video <span id="vtVal"></span></label>
+        <input type="range" id="vt" min="0" max="100" value="0">
+        <div class="chk"><input type="checkbox" id="playOn"> <label for="playOn" style="margin:0">Abspielen</label></div>
+        <div class="auftrag" id="auftrag"></div>
+      </div>
       <label>Brandfarbe (Verlauf / Unifarbe)</label>
       <div class="swatches" id="swatches"></div>
       <label id="lblGrad">Verlauf-St&auml;rke <span id="gradVal"></span></label>
@@ -117,8 +194,7 @@
       <label>Kleine Zeile oben (optional)</label>
       <input type="text" id="eyebrow" value="">
       <label>Hook / Text</label>
-      <textarea id="headline">Ende Monat mach ich mein Backoffice auf.
-Und klapp es sofort wieder zu.</textarea>
+      <textarea id="headline"></textarea>
       <label>Schriftgr&ouml;sse <span id="fsVal"></span></label>
       <input type="range" id="fs" min="40" max="120" value="72">
       <label>H&ouml;he <span id="posVal"></span></label>
@@ -132,14 +208,27 @@ Und klapp es sofort wieder zu.</textarea>
       <div class="swatches" id="txtSw"></div>
     </div>
 
-    <button class="btn" id="make">Als Bild erzeugen</button>
+    <button class="btn" id="make">Diese Folie als Bild</button>
+    <button class="btn zweit" id="makeAll">Alle Folien als Bilder</button>
   </div>
 
   <div class="stage">
-    <div class="frame-wrap"><div id="cover"></div></div>
+    <div class="setbar">
+      <div class="kopf"><h2 id="setTitel">Abfolge</h2><span id="setZahl"></span></div>
+      <div class="strip" id="strip"></div>
+      <div class="setknoepfe">
+        <button id="bNeu">+ Folie</button>
+        <button id="bKopie">Kopieren</button>
+        <button id="bLinks">&larr;</button>
+        <button id="bRechts">&rarr;</button>
+        <button id="bWeg">L&ouml;schen</button>
+      </div>
+    </div>
+    <div class="frame-wrap"><div id="cover" class="buehne"></div></div>
     <div class="warn" id="warn"></div>
     <div class="savebar"><img id="out" alt="fertiges Bild"></div>
-    <p class="hint" id="hint">Tipp: Nach <b>Als Bild erzeugen</b> erscheint unten das fertige Bild. <b>Am Handy lange darauf tippen &rarr; „Foto speichern".</b> (Downloads direkt aus dieser Seite blockiert der Browser.)</p>
+    <div id="alle"></div>
+    <p class="hint" id="hint">Tipp: Nach <b>Als Bild</b> erscheint unten das fertige Bild. <b>Am Handy lange darauf tippen &rarr; &bdquo;Foto speichern&ldquo;.</b> (Downloads direkt aus dieser Seite blockiert der Browser.)</p>
   </div>
 </div>
 
@@ -152,71 +241,177 @@ Und klapp es sofort wieder zu.</textarea>
     {name:"Creme",      hex:"#f1ecdd"},
     {name:"Weiss",      hex:"#ffffff"},
   ];
+  // Reel-Cover ist 9:16 wie das Reel selbst. Im Profil-Raster zeigt Instagram nur den
+  // mittleren 3:4-Ausschnitt - oben und unten faellt je ein Achtel weg.
   const FORMATE = {
-    story: {w:1080, h:1920, zonen:[[0,14,"PROFIL / ANTWORTEN"],[80,100,"UMFRAGE · FRAGE-STICKER · LINK"]]},
-    cover: {w:1080, h:1350, zonen:[[86,100,"IM FEED ABGESCHNITTEN"]]},
-    slide: {w:1080, h:1350, zonen:[]}
+    story: {w:1080, h:1920, tw:70, titel:"Story-Abfolge", einzel:"Story",
+            hinweis:"Die schraffierten Streifen zeigen, wo Instagram dein Profilbild und die Umfrage hinlegt. Halt den Text da raus.",
+            zonen:[[0,14,"PROFIL / ANTWORTEN"],[80,100,"UMFRAGE · FRAGE-STICKER · LINK"]]},
+    cover: {w:1080, h:1920, tw:70, titel:"Cover", einzel:"Cover",
+            hinweis:"Das Cover ist 9:16 wie das Reel selbst. Im Profil-Raster siehst du nur den mittleren 3:4-Ausschnitt, unten liegen Caption und Bedienknöpfe drüber. Der Hook gehört also in die Mitte.",
+            zonen:[[0,12.5,"IM PROFIL-RASTER WEG"],[82,100,"CAPTION · BEDIENUNG"]]},
+    slide: {w:1080, h:1350, tw:92, titel:"Karussell", einzel:"Folie",
+            hinweis:"Karussell-Folien sind 4:5. Blotato nimmt höchstens 10 Folien.",
+            zonen:[]}
   };
 
-  const state = { fmt:"story", zonen:true, mode:"foto", photo:"lounge.jpg", color:"#1E3A4C", grad:72,
-                  handle:false, bar:"balken", barColor:"#f1ecdd", opa:92, bw:100,
-                  eyebrow:"", headline:"Ende Monat mach ich mein Backoffice auf.\nUnd klapp es sofort wieder zu.",
-                  fs:72, pos:58, align:"left", tc:"#1E3A4C" };
+  const neueFolie = () => ({ mode:"foto", photo:"lounge.jpg", color:"#1E3A4C", grad:72,
+      videoUrl:"", videoName:"", vt:0, poster:"",
+      handle:false, bar:"balken", barColor:"#f1ecdd", opa:92, bw:100,
+      eyebrow:"", headline:"", fs:72, pos:58, align:"left", tc:"#1E3A4C" });
+
+  let fmt = "story";
+  let zonenAn = true;
+  let folien = [ Object.assign(neueFolie(), {
+        headline:"Ende Monat mach ich mein Backoffice auf.\nUnd klapp es sofort wieder zu." }) ];
+  let aktiv = 0;
+  let state = folien[0];
 
   const cover = document.getElementById('cover');
   const g = id => document.getElementById(id);
   const rgb = h => { h=h.replace('#',''); return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)]; };
   const esc = s => s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 
-  function render(){
-    const F = FORMATE[state.fmt];
-    cover.style.width = F.w+"px";
-    cover.style.height = F.h+"px";
+  /* ---------- Die Buehne bauen - gilt fuer Vorschau, Streifen und Export gleichermassen ---------- */
+  function inhalt(s, mitZonen){
+    const F = FORMATE[fmt];
+    const [r,g2,b] = rgb(s.color);
+    const a = s.grad/100;
+    const verlauf = `<div class="grad" style="background:linear-gradient(to top, rgba(${r},${g2},${b},${Math.min(0.96,a+0.14)}) 0%, rgba(${r},${g2},${b},${a*0.82}) 40%, rgba(${r},${g2},${b},0) 100%)"></div>`;
+    let bgLayer;
+    if (s.mode==="foto")
+      bgLayer = `<img class="bg" src="${s.photo.startsWith("data:") ? s.photo : "assets/"+s.photo}" crossorigin="anonymous">` + verlauf;
+    else if (s.mode==="video")
+      // Im Streifen und beim Export steht das Standbild; auf der grossen Bühne wird es
+      // danach durch das echte Video ersetzt (siehe render()).
+      bgLayer = (s.poster ? `<img class="bg" src="${s.poster}">` : `<div class="uni" style="background:#0b1014"></div>`) + verlauf;
+    else
+      bgLayer = `<div class="uni" style="background:${s.color}"></div>`;
 
-    const [r,g2,b] = rgb(state.color);
-    const a = state.grad/100;
-    const bgLayer = state.mode==="foto"
-      ? `<img class="bg" src="${state.photo.startsWith("data:") ? state.photo : "assets/"+state.photo}" crossorigin="anonymous">
-         <div class="grad" style="background:linear-gradient(to top, rgba(${r},${g2},${b},${Math.min(0.96,a+0.14)}) 0%, rgba(${r},${g2},${b},${a*0.82}) 40%, rgba(${r},${g2},${b},0) 100%)"></div>`
-      : `<div class="uni" style="background:${state.color}"></div>`;
-
-    const [br,bg2,bb] = rgb(state.barColor);
-    const balken = state.bar==="balken"
-      ? `background:rgba(${br},${bg2},${bb},${state.opa/100});padding:46px 52px;`
+    const [br,bg2,bb] = rgb(s.barColor);
+    const balken = s.bar==="balken"
+      ? `background:rgba(${br},${bg2},${bb},${s.opa/100});padding:46px 52px;`
       : `text-shadow:-2px -2px 0 rgba(9,18,26,.7),2px -2px 0 rgba(9,18,26,.7),-2px 2px 0 rgba(9,18,26,.7),2px 2px 0 rgba(9,18,26,.7),0 6px 24px rgba(0,0,0,.5);`;
 
-    const eyebrow = state.eyebrow.trim()
-      ? `<div class="eyebrow" style="color:${state.tc};opacity:.85">${esc(state.eyebrow)}</div>` : "";
+    const eyebrow = s.eyebrow.trim()
+      ? `<div class="eyebrow" style="color:${s.tc};opacity:.85">${esc(s.eyebrow)}</div>` : "";
 
-    const zonen = state.zonen ? F.zonen.map(z =>
+    const zonen = mitZonen ? F.zonen.map(z =>
       `<div class="zone" style="top:${z[0]}%;height:${z[1]-z[0]}%"><b>${z[2]}</b></div>`).join("") : "";
 
-    cover.innerHTML = bgLayer + `
-      <div class="wrap" style="top:${state.pos}%;transform:translateY(-50%);align-items:${state.align==='center'?'center':'flex-start'}">
-        <div class="bar" style="width:${state.bw}%;text-align:${state.align};color:${state.tc};${balken}">
+    return bgLayer + `
+      <div class="wrap" style="top:${s.pos}%;transform:translateY(-50%);align-items:${s.align==='center'?'center':'flex-start'}">
+        <div class="bar" style="width:${s.bw}%;text-align:${s.align};color:${s.tc};${balken}">
           ${eyebrow}
-          <div class="headline" style="font-size:${state.fs}px">${esc(state.headline)}</div>
+          <div class="headline" style="font-size:${s.fs}px">${esc(s.headline)}</div>
         </div>
       </div>`
-      + (state.handle ? `<div class="handle" style="color:rgba(255,255,255,.72)">@mumlifebalance_patricia_ulmann</div>` : "")
+      + (s.handle ? `<div class="handle" style="color:rgba(255,255,255,.72)">@mumlifebalance_patricia_ulmann</div>` : "")
       + zonen;
+  }
+
+  function render(){
+    const F = FORMATE[fmt];
+    cover.style.width = F.w+"px";
+    cover.style.height = F.h+"px";
+    cover.innerHTML = inhalt(state, zonenAn);
+    if (state.mode==="video" && state.videoUrl){          // echtes Video auf die grosse Bühne
+      const v = videoEl(state.videoUrl);
+      const alt = cover.querySelector('.bg');
+      if (alt) cover.replaceChild(v, alt); else cover.insertBefore(v, cover.firstChild);
+    }
     fit();
+    miniFuellen(aktiv);
+    auftragZeigen();
     requestAnimationFrame(pruefeZonen);
   }
 
+  /* ---------- Video: ein Element je Datei, damit es beim Nachzeichnen nicht neu lädt ---------- */
+  const videoCache = {};
+  function videoEl(url){
+    if (!videoCache[url]){
+      const v = document.createElement('video');
+      v.className = "bg"; v.src = url; v.muted = true; v.loop = true;
+      v.playsInline = true; v.setAttribute('playsinline','');
+      v.preload = "auto";
+      videoCache[url] = v;
+    }
+    return videoCache[url];
+  }
+  // Standbild der aktuellen Stelle — davon leben Streifen und Export
+  function standbild(){
+    const v = videoCache[state.videoUrl];
+    if (!v || !v.videoWidth) return;
+    const max = 1620;
+    const s = Math.min(1, max / Math.max(v.videoWidth, v.videoHeight));
+    const c = document.createElement('canvas');
+    c.width = Math.round(v.videoWidth*s); c.height = Math.round(v.videoHeight*s);
+    c.getContext('2d').drawImage(v, 0, 0, c.width, c.height);
+    state.poster = c.toDataURL('image/jpeg', 0.88);
+    miniFuellen(aktiv);
+  }
+  function auftragZeigen(){
+    const box = g('auftrag');
+    if (state.mode!=="video" || !state.videoName){ box.classList.remove('on'); return; }
+    const farbe = (COLORS.find(c=>c.hex===state.barColor)||{}).name || state.barColor;
+    box.textContent =
+      "Für ein Video mit fest eingebranntem Text: Video in DCIM/Content-Inbox legen und mir das hier schicken —\n\n"
+      + "Story-Video: " + state.videoName + "\n"
+      + "Text: " + state.headline.replace(/\n/g," / ") + "\n"
+      + "Höhe " + state.pos + "% · Schrift " + state.fs + " · Balken " + farbe + " " + state.opa + "%"
+      + (state.align==="center" ? " · zentriert" : "");
+    box.classList.add('on');
+  }
+
   function fit(){
-    const F = FORMATE[state.fmt], wrap = cover.parentElement;
+    const F = FORMATE[fmt], wrap = cover.parentElement;
     const scale = wrap.clientWidth / F.w;
     cover.style.transform = `scale(${scale})`;
     wrap.style.height = (F.h*scale)+"px";
   }
   window.addEventListener('resize', fit);
 
-  // Warnt, wenn der Textblock in eine Sticker-Zone ragt
+  /* ---------- Der Streifen: die ganze Story bzw. das ganze Karussell auf einen Blick ---------- */
+  function stripBauen(){
+    const F = FORMATE[fmt], strip = g('strip');
+    strip.innerHTML = "";
+    folien.forEach((s,i)=>{
+      const m = document.createElement('div');
+      m.className = "mini" + (i===aktiv ? " on" : "");
+      m.innerHTML = `<div class="minibox" style="width:${F.tw}px;height:${Math.round(F.tw*F.h/F.w)}px">
+          <div class="buehne ministage" style="width:${F.w}px;height:${F.h}px;transform:scale(${F.tw/F.w})"></div>
+        </div><span class="nr">${i+1}</span>`;
+      m.onclick = ()=>{ aktiv=i; state=folien[i]; formularFuellen(); render(); markieren(); };
+      strip.appendChild(m);
+      miniFuellen(i);
+    });
+    markieren();
+    g('setTitel').textContent = F.titel;
+    g('setZahl').textContent = folien.length + (folien.length===1 ? " Folie" : " Folien");
+  }
+  function miniFuellen(i){
+    const b = g('strip').children[i];
+    if (!b) return;
+    b.querySelector('.ministage').innerHTML = inhalt(folien[i], false);
+  }
+  function markieren(){
+    [...g('strip').children].forEach((c,i)=>c.classList.toggle('on', i===aktiv));
+    const m = g('strip').children[aktiv];
+    if (m) m.scrollIntoView({block:"nearest", inline:"nearest"});
+  }
+
+  g('bNeu').onclick   = ()=>{ folien.splice(aktiv+1,0,neueFolie()); aktiv++; state=folien[aktiv]; formularFuellen(); stripBauen(); render(); };
+  g('bKopie').onclick = ()=>{ folien.splice(aktiv+1,0,Object.assign({},state)); aktiv++; state=folien[aktiv]; stripBauen(); render(); };
+  g('bLinks').onclick = ()=>{ if(aktiv===0) return; const t=folien[aktiv-1]; folien[aktiv-1]=folien[aktiv]; folien[aktiv]=t; aktiv--; state=folien[aktiv]; stripBauen(); };
+  g('bRechts').onclick= ()=>{ if(aktiv===folien.length-1) return; const t=folien[aktiv+1]; folien[aktiv+1]=folien[aktiv]; folien[aktiv]=t; aktiv++; state=folien[aktiv]; stripBauen(); };
+  g('bWeg').onclick   = ()=>{ if(folien.length===1) return; folien.splice(aktiv,1); if(aktiv>=folien.length) aktiv=folien.length-1;
+                              state=folien[aktiv]; formularFuellen(); stripBauen(); render(); };
+
+  /* ---------- Warnt, wenn der Textblock in eine Sticker-Zone ragt ---------- */
   function pruefeZonen(){
-    const w = g('warn'), F = FORMATE[state.fmt];
-    const wrap = cover.querySelector('.wrap'), bar = cover.querySelector('.bar');
-    if (!bar || !wrap || !F.zonen.length){ w.classList.remove('on'); return; }
+    const w = g('warn'), F = FORMATE[fmt];
+    const bar = cover.querySelector('.bar');
+    if (!bar || !F.zonen.length){ w.classList.remove('on'); return; }
     const mitte = F.h * (state.pos/100);
     const oben  = (mitte - bar.offsetHeight/2) / F.h * 100;
     const unten = (mitte + bar.offsetHeight/2) / F.h * 100;
@@ -224,23 +419,23 @@ Und klapp es sofort wieder zu.</textarea>
     const zUnten = F.zonen.find(z => z[1] === 100);
     let m = "";
     if (zUnten && unten > zUnten[0] + 2)
-      m = "⚠ Der Text reicht nach unten in die Sticker-Zone. Höhe kleiner stellen oder Schrift verkleinern.";
+      m = "⚠ Der Text reicht nach unten in die " + (fmt==="cover" ? "Caption-Zone" : "Sticker-Zone") + ". Höhe kleiner stellen oder Schrift verkleinern.";
     else if (zOben && oben < zOben[1] - 2)
-      m = "⚠ Der Text reicht nach oben in die Profil-Zone. Höhe grösser stellen.";
+      m = "⚠ Der Text reicht nach oben in den " + (fmt==="cover" ? "abgeschnittenen Rand" : "Profil-Bereich") + ". Höhe grösser stellen.";
     if (m){ w.textContent = m; w.classList.add('on'); } else w.classList.remove('on');
   }
 
-  // Bilder
+  /* ---------- Bilder ---------- */
   const th = g('thumbs');
   PHOTOS.forEach(p=>{ const im=document.createElement('img'); im.src="assets/"+p; im.loading="lazy";
-    if(p===state.photo) im.className="sel";
+    im.dataset.name = p;
     im.onerror=()=>im.remove();
     im.onclick=()=>{ state.photo=p; state.mode="foto";
-      document.querySelectorAll('#modeSeg button').forEach(x=>x.classList.toggle('on',x.dataset.mode==="foto"));
+      modusAnsicht();
       [...th.children].forEach(c=>c.classList.remove('sel')); im.classList.add('sel'); render(); };
     th.appendChild(im); });
 
-  // Eigenes Bild hochladen — wird verkleinert, damit die Seite flott bleibt
+  // Eigenes Bild hochladen - wird verkleinert, damit die Seite flott bleibt
   g('datei').addEventListener('change', e => {
     const f = e.target.files && e.target.files[0];
     if (!f) return;
@@ -248,7 +443,7 @@ Und klapp es sofort wieder zu.</textarea>
     leser.onload = () => {
       const bild = new Image();
       bild.onload = () => {
-        const max = 1620;                                  // reicht für 1080 Bühne
+        const max = 1620;                                  // reicht fuer die 1080er Buehne
         const s = Math.min(1, max / Math.max(bild.width, bild.height));
         const c = document.createElement('canvas');
         c.width = Math.round(bild.width * s);
@@ -256,36 +451,75 @@ Und klapp es sofort wieder zu.</textarea>
         c.getContext('2d').drawImage(bild, 0, 0, c.width, c.height);
         state.photo = c.toDataURL('image/jpeg', 0.9);
         state.mode = "foto";
-        document.querySelectorAll('#modeSeg button').forEach(x=>x.classList.toggle('on', x.dataset.mode==="foto"));
+        modusAnsicht();
         [...th.children].forEach(x=>x.classList.remove('sel'));
         eigenesThumb();
-        g('lblUp').textContent = "📷 Anderes Bild hochladen";
+        g('lblUp').textContent = "📷 Noch ein Bild hochladen";
         render();
       };
       bild.src = leser.result;
     };
     leser.readAsDataURL(f);
+    e.target.value = "";
   });
 
-  // Das hochgeladene Bild als erstes Vorschaubild einreihen
+  // Hochgeladene Bilder bleiben als Vorschaubilder stehen - so bekommt jede Folie ihr eigenes
   function eigenesThumb(){
-    let im = document.getElementById('eigen');
-    if (!im){
-      im = document.createElement('img');
-      im.id = "eigen";
-      im.title = "dein hochgeladenes Bild";
-      im.onclick = () => { state.photo = im.src; state.mode="foto";
-        [...th.children].forEach(x=>x.classList.remove('sel')); im.classList.add('sel'); render(); };
-      th.insertBefore(im, th.firstChild);
-    }
+    const im = document.createElement('img');
+    im.title = "dein hochgeladenes Bild";
     im.src = state.photo;
+    im.dataset.name = state.photo;
     im.className = "sel";
+    im.onclick = () => { state.photo = im.dataset.name; state.mode="foto";
+      modusAnsicht();
+      [...th.children].forEach(x=>x.classList.remove('sel')); im.classList.add('sel'); render(); };
+    th.insertBefore(im, th.firstChild);
   }
 
-  // Farbfelder
+  /* ---------- Video hochladen ---------- */
+  g('videodatei').addEventListener('change', e => {
+    const f = e.target.files && e.target.files[0];
+    if (!f) return;
+    state.videoUrl = URL.createObjectURL(f);     // bleibt im Browser, nichts wird hochgeladen
+    state.videoName = f.name;
+    state.vt = 0; state.poster = "";
+    state.mode = "video";
+    modusAnsicht();
+    const v = videoEl(state.videoUrl);
+    v.addEventListener('loadeddata', ()=>{ v.currentTime = 0; }, {once:true});
+    v.addEventListener('seeked', ()=>{ standbild(); auftragZeigen(); });
+    render();
+    g('lblVid').textContent = "\u{1F3AC} " + f.name + " — anderes Video";
+    e.target.value = "";
+  });
+
+  g('vt').addEventListener('input', ()=>{
+    state.vt = +g('vt').value;
+    g('vtVal').textContent = state.vt + "%";
+    const v = videoCache[state.videoUrl];
+    if (v && v.duration) { v.pause(); g('playOn').checked = false; v.currentTime = v.duration * state.vt/100; }
+  });
+  g('playOn').onchange = e => {
+    const v = videoCache[state.videoUrl];
+    if (!v) return;
+    if (e.target.checked) v.play().catch(()=>{}); else { v.pause(); standbild(); }
+  };
+
+  // Welche Bedienelemente zum gewählten Hintergrund gehören
+  function modusAnsicht(){
+    const video = state.mode==="video";
+    g('vidbox').classList.toggle('on', video);
+    g('thumbs').style.display = video ? "none" : "";
+    g('lblFoto').style.display = video ? "none" : "";
+    g('lblUp').style.display = video ? "none" : "";
+    document.querySelectorAll('#modeSeg button').forEach(x=>x.classList.toggle('on', x.dataset.mode===state.mode));
+    auftragZeigen();
+  }
+
+  /* ---------- Farbfelder ---------- */
   function swatches(el, key, nachher){
     COLORS.forEach(c=>{ const d=document.createElement('div');
-      d.className="sw"+(c.hex===state[key]?" sel":""); d.style.background=c.hex; d.title=c.name;
+      d.className="sw"; d.style.background=c.hex; d.title=c.name; d.dataset.hex=c.hex;
       d.onclick=()=>{ state[key]=c.hex; [...el.children].forEach(x=>x.classList.remove('sel')); d.classList.add('sel');
         if(nachher) nachher(); render(); };
       el.appendChild(d); });
@@ -294,45 +528,425 @@ Und klapp es sofort wieder zu.</textarea>
   swatches(g('barSw'), 'barColor', ()=>{
     const hell = ["#f1ecdd","#ffffff"].includes(state.barColor);
     state.tc = hell ? "#1E3A4C" : "#ffffff";
-    [...g('txtSw').children].forEach((x,i)=>x.classList.toggle('sel', COLORS[i].hex===state.tc));
+    [...g('txtSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===state.tc));
   });
   swatches(g('txtSw'), 'tc');
 
+  /* ---------- Umschalter ---------- */
+  document.querySelectorAll('#fmtSeg button').forEach(b=>b.onclick=()=>{
+    fmt = b.dataset.fmt;
+    document.querySelectorAll('#fmtSeg button').forEach(x=>x.classList.toggle('on',x===b));
+    g('fmtHint').textContent = FORMATE[fmt].hinweis;
+    stripBauen(); render();
+  });
   function seg(id, key){
     document.querySelectorAll('#'+id+' button').forEach(b=>b.onclick=()=>{
-      state[key] = b.dataset.fmt || b.dataset.mode || b.dataset.bar || b.dataset.al;
+      state[key] = b.dataset.mode || b.dataset.bar || b.dataset.al;
       document.querySelectorAll('#'+id+' button').forEach(x=>x.classList.toggle('on',x===b));
       render();
     });
   }
-  seg('fmtSeg','fmt'); seg('modeSeg','mode'); seg('barSeg','bar'); seg('alignSeg','align');
+  seg('barSeg','bar'); seg('alignSeg','align');
+  document.querySelectorAll('#modeSeg button').forEach(b=>b.onclick=()=>{
+    state.mode = b.dataset.mode;
+    modusAnsicht();
+    if (state.mode==="video" && !state.videoUrl) g('videodatei').click();
+    render();
+  });
 
-  [['grad','gradVal','%'],['opa','opaVal','%'],['bw','bwVal','%'],['fs','fsVal','px'],['pos','posVal','%']]
-   .forEach(([id,out,unit])=>{ const el=g(id);
-     el.addEventListener('input', ()=>{ state[id]=+el.value; g(out).textContent=el.value+unit; render(); });
-     g(out).textContent = el.value+unit; });
+  const REGLER = [['grad','gradVal','%'],['opa','opaVal','%'],['bw','bwVal','%'],['fs','fsVal','px'],['pos','posVal','%']];
+  REGLER.forEach(([id,out,unit])=>{ const el=g(id);
+     el.addEventListener('input', ()=>{ state[id]=+el.value; g(out).textContent=el.value+unit; render(); }); });
 
   g('eyebrow').oninput = e => { state.eyebrow = e.target.value; render(); };
   g('headline').oninput = e => { state.headline = e.target.value; render(); };
   g('handleOn').onchange = e => { state.handle = e.target.checked; render(); };
-  g('zonesOn').onchange = e => { state.zonen = e.target.checked; render(); };
+  g('zonesOn').onchange = e => { zonenAn = e.target.checked; render(); };
 
-  // Export — dieselbe Bühne wie die Vorschau, deshalb stimmt der Umbruch exakt
+  // Beim Folienwechsel muessen alle Bedienelemente die Werte dieser Folie zeigen
+  function formularFuellen(){
+    REGLER.forEach(([id,out,unit])=>{ g(id).value = state[id]; g(out).textContent = state[id]+unit; });
+    g('eyebrow').value = state.eyebrow;
+    g('headline').value = state.headline;
+    g('handleOn').checked = state.handle;
+    g('vt').value = state.vt; g('vtVal').textContent = state.vt+"%";
+    g('playOn').checked = false;
+    g('lblVid').textContent = state.videoName ? "\u{1F3AC} " + state.videoName + " — anderes Video"
+                                              : "\u{1F3AC} Video hochladen (dein Sprechvideo)";
+    modusAnsicht();
+    document.querySelectorAll('#barSeg button').forEach(x=>x.classList.toggle('on', x.dataset.bar===state.bar));
+    document.querySelectorAll('#alignSeg button').forEach(x=>x.classList.toggle('on', x.dataset.al===state.align));
+    [...g('swatches').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===state.color));
+    [...g('barSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===state.barColor));
+    [...g('txtSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===state.tc));
+    [...th.children].forEach(x=>x.classList.toggle('sel', x.dataset.name===state.photo));
+  }
+
+  /* ---------- Ideen: Bauplaene fuer ganze Story-Abfolgen ----------
+     s = Saeule · l = zu welcher Lage sie passt · k = Stichwoerter fuers Thema-Matching
+     f = die Folien (t = Text auf der Folie, s = was du dazu sagst/zeigst)            */
+  const IDEEN = [
+    // ---------- Expertise ----------
+    {t:"Der eine Schritt für heute", s:"expertise", l:["normal","vor","nach"], k:["anfangen","überfordert","zeit","struktur"],
+     f:[{t:"Wenn du bei {T} feststeckst, mach heute nur das hier.", s:"Selfie-Video, ruhig reingesprochen."},
+        {t:"Nicht der ganze Plan. Nur der erste Schritt.", s:"Text auf Balken."},
+        {t:"[Dein einer Schritt, ganz konkret]", s:"So klein, dass sie es in zehn Minuten macht."},
+        {t:"Wenn du das gemacht hast, schreib mir kurz.", s:"Frage-Sticker drauf."}],
+     st:"Frage-Sticker: Woran hängst du gerade?", c:"Antworte mir mit einem Wort — ich schick dir das Passende."},
+
+    {t:"Der Fehler, den ich immer wieder sehe", s:"expertise", l:["normal","vor"], k:["fehler","falsch","warum"],
+     f:[{t:"Der eine Fehler, den ich bei {T} immer wieder sehe.", s:"Gerade in die Kamera."},
+        {t:"[Der Fehler — ohne Umweg benannt]", s:"Konkret, nicht allgemein."},
+        {t:"Das Blöde daran: es fühlt sich an, als würdest du was tun.", s:""},
+        {t:"So machst du es stattdessen: [dein Weg]", s:"Ein Satz, kein Vortrag."}],
+     st:"Umfrage: Kennst du das? Ja / Oh nein, ich auch", c:"Speicher dir das oder schick es der Freundin, die genau das macht."},
+
+    {t:"Drei Schritte runtergebrochen", s:"expertise", l:["normal","vor"], k:["anleitung","system","struktur","plan"],
+     f:[{t:"{T} in drei Schritten. Mehr brauchst du nicht.", s:""},
+        {t:"1. [Schritt eins]", s:""},
+        {t:"2. [Schritt zwei]", s:""},
+        {t:"3. [Schritt drei]", s:""},
+        {t:"Wenn du willst, schick ich dir die Vorlage dazu.", s:"Link-Sticker oder Frage-Sticker."}],
+     st:"Frage-Sticker: Bei welchem Schritt hakt es?", c:"Schreib mir das Stichwort, dann kommt die Vorlage."},
+
+    {t:"Der Glaubenssatz, der bremst", s:"expertise", l:["normal","vor"], k:["glaube","angst","zweifel","mindset"],
+     f:[{t:"„[Der Satz, den sie sich selbst sagt]\"", s:"Nur der Satz, sonst nichts."},
+        {t:"Den Satz hab ich mir jahrelang selbst gesagt.", s:"Dein Gesicht dazu."},
+        {t:"Was er anrichtet: [die Folge]", s:""},
+        {t:"Der Satz, der stimmt: [die Umkehrung]", s:""},
+        {t:"Und was sich dadurch ändert: [ganz konkret]", s:""}],
+     st:"Umfrage: Sagst du dir den auch? Jeden Tag / Manchmal", c:"Wenn du den Satz kennst, schreib mir — dann reden wir drüber."},
+
+    {t:"Das Werkzeug, das ich täglich benutze", s:"expertise", l:["normal","vor","nach"], k:["tool","ki","notion","system"],
+     f:[{t:"Das benutze ich bei {T} jeden Tag.", s:"Bildschirm zeigen, nicht erklären — zeigen."},
+        {t:"Dafür brauchte ich vorher [Zeit/Aufwand].", s:""},
+        {t:"Jetzt: [was es ersetzt]", s:""},
+        {t:"Und nein, du musst dafür nicht technisch sein.", s:"Der Einwand gehört hier rein."}],
+     st:"Frage-Sticker: Willst du sehen, wie ich es eingerichtet habe?", c:"Tipp drauf, dann zeig ich es morgen Schritt für Schritt."},
+
+    {t:"Was passiert, wenn nichts passiert", s:"expertise", l:["normal","vor","laeuft"], k:["warten","später","irgendwann"],
+     f:[{t:"Was ist in einem Jahr, wenn du bei {T} nichts änderst?", s:"Ohne Drama gefragt."},
+        {t:"Wahrscheinlich genau das: [der gleiche Zustand]", s:""},
+        {t:"Das ist nicht schlimm. Aber es ist eine Entscheidung.", s:""},
+        {t:"Und die darfst du heute anders treffen.", s:""}],
+     st:"Umfrage: Wo stehst du? Gleich wie letztes Jahr / Hat sich was bewegt", c:"Wenn du mal ehrlich reden willst — meine DMs sind offen."},
+
+    {t:"Mini-Training aus einer echten Frage", s:"expertise", l:["normal","nach"], k:["frage","dm","hilfe"],
+     f:[{t:"Diese Frage kam gestern in meine DMs.", s:"Screenshot der Frage, Name unkenntlich."},
+        {t:"Kurze Antwort: [dein Satz]", s:""},
+        {t:"Lange Antwort: [zwei, drei Sätze mit dem Warum]", s:""},
+        {t:"Wenn du dieselbe Frage hast — stell sie mir.", s:""}],
+     st:"Frage-Sticker: Was willst du wissen?", c:"Frag mich, ich beantworte hier jede Woche eine."},
+
+    {t:"Schnellhilfe, die nicht alles löst", s:"expertise", l:["normal"], k:["schnell","sofort","heute"],
+     f:[{t:"Das löst {T} nicht komplett. Aber es bringt dich heute weiter.", s:""},
+        {t:"[Die Abkürzung]", s:"Wirklich umsetzbar, heute noch."},
+        {t:"Dauert [Zeit]. Mehr nicht.", s:""},
+        {t:"Mach es und sag mir, was passiert ist.", s:""}],
+     st:"Frage-Sticker: Gemacht?", c:"Schick mir ein Häkchen, wenn du es probiert hast."},
+
+    // ---------- Inspiration / Einblick ----------
+    {t:"Ein Tag, wie er wirklich läuft", s:"inspiration", l:["normal","vor","nach"], k:["alltag","mama","kinder","zeit"],
+     f:[{t:"So sieht mein Tag wirklich aus.", s:"Erste Aufnahme früh am Morgen, ungeschminkt."},
+        {t:"[Uhrzeit] — [was gerade los ist]", s:"Zwischendurch filmen, nicht nachstellen."},
+        {t:"[Uhrzeit] — hier arbeite ich am {T}.", s:"Bildschirm oder Notizbuch."},
+        {t:"[Uhrzeit] — fertig. Nicht perfekt, aber fertig.", s:""}],
+     st:"Umfrage: Wie sieht dein Tag aus? Ähnlich / Ganz anders", c:"Erzähl mir deinen Tag — ich lese jede Antwort."},
+
+    {t:"Was gerade auf meinem Bildschirm liegt", s:"inspiration", l:["vor","normal"], k:["neu","projekt","bald"],
+     f:[{t:"Daran sitze ich gerade.", s:"Laptop halb zugeklappt, man ahnt was."},
+        {t:"Es hat mit {T} zu tun.", s:""},
+        {t:"Und ich bin ehrlich gesagt ziemlich aufgeregt.", s:"Dein Gesicht."},
+        {t:"Mehr kommende Woche.", s:""}],
+     st:"Frage-Sticker: Willst du wissen, was es wird?", c:"Tipp drauf, dann bekommst du es zuerst."},
+
+    {t:"Die Pause, die ich mir nehme", s:"inspiration", l:["normal","nach"], k:["pause","erschöpft","erholung"],
+     f:[{t:"Das hier ist meine Pause.", s:"Foto von draussen, Kaffee, was echt ist."},
+        {t:"Früher hätte ich durchgearbeitet.", s:""},
+        {t:"Und dann war ich abends bei den Kindern nicht mehr da.", s:""},
+        {t:"Zwanzig Minuten. Das ist der ganze Trick.", s:""}],
+     st:"Umfrage: Machst du Pausen? Ja / Nur wenn nichts mehr geht", c:"Wenn du auch dauernd durchziehst — schreib mir."},
+
+    {t:"Mein Sonntag und was er mit der Woche macht", s:"inspiration", l:["normal"], k:["planung","woche","sonntag","struktur"],
+     f:[{t:"Das mach ich sonntags, damit die Woche hält.", s:""},
+        {t:"[Einblick 1]", s:"Foto, nicht gestellt."},
+        {t:"[Einblick 2]", s:""},
+        {t:"Es sind keine zwei Stunden. Es ist eine halbe.", s:""}],
+     st:"Frage-Sticker: Wie planst du deine Woche?", c:"Erzähl mir deinen Sonntag — ich sammle die besten Ideen."},
+
+    {t:"Woran es heute gehakt hat", s:"inspiration", l:["normal","nach"], k:["fehler","misserfolg","schlecht"],
+     f:[{t:"Heute lief nichts.", s:"Ehrlich reinsprechen, keine gute Beleuchtung nötig."},
+        {t:"[Was schiefging]", s:"Konkret, kein Jammern."},
+        {t:"Und trotzdem poste ich das hier.", s:""},
+        {t:"Weil du sonst denkst, bei anderen läuft immer alles.", s:""}],
+     st:"Umfrage: Solche Tage? Kenn ich / Zu gut", c:"Schreib mir, wenn du heute auch so einen hattest."},
+
+    {t:"Das Investment, das ich gerade gemacht habe", s:"inspiration", l:["normal","vor"], k:["investition","geld","kurs","entscheidung"],
+     f:[{t:"Ich hab gerade Geld in mich investiert.", s:""},
+        {t:"Wofür: [Art der Investition]", s:""},
+        {t:"Warum jetzt: [dein Grund]", s:""},
+        {t:"Und was mir vorher Angst gemacht hat: [die Angst]", s:"Der wichtigste Slide."},
+        {t:"Das, was du daraus mitnehmen kannst: [Lektion]", s:""}],
+     st:"Frage-Sticker: Wovor hast du gerade Respekt?", c:"Erzähl es mir — ich weiss ziemlich genau, wie sich das anfühlt."},
+
+    {t:"Der Moment, in dem es gekippt ist", s:"inspiration", l:["normal","vor"], k:["wendepunkt","anfang","warum","story"],
+     f:[{t:"Das war der Moment, in dem ich wusste, so geht es nicht weiter.", s:"Altes Foto, wenn du eins hast."},
+        {t:"[Was passiert ist]", s:"Eine Szene, kein Rückblick."},
+        {t:"Ich hab danach [was du getan hast].", s:""},
+        {t:"Und darum rede ich heute über {T}.", s:""}],
+     st:"Frage-Sticker: Hattest du so einen Moment?", c:"Erzähl mir deinen — ich antworte auf jede Nachricht."},
+
+    // ---------- Persönlichkeit ----------
+    {t:"Fünf Dinge, die niemand über mich weiss", s:"persoenlich", l:["normal","nach"], k:["persönlich","privat"],
+     f:[{t:"Fünf Sachen, die du wahrscheinlich nicht über mich weisst.", s:""},
+        {t:"1. [etwas Überraschendes]", s:""},
+        {t:"2. [etwas Alltägliches]", s:""},
+        {t:"3. [etwas, das dich verletzlich zeigt]", s:""},
+        {t:"4. [etwas Lustiges]", s:""},
+        {t:"5. [etwas, das zu deinem Thema führt]", s:"Der Übergang zu {T}."}],
+     st:"Frage-Sticker: Was weiss niemand über dich?", c:"Erzähl mir eins — ich teil die schönsten morgen."},
+
+    {t:"Meine unbequeme Meinung", s:"persoenlich", l:["normal","vor"], k:["meinung","kontrovers","anders"],
+     f:[{t:"Unbequeme Meinung zu {T}:", s:""},
+        {t:"[Deine Meinung, klar und ohne Weichzeichner]", s:"Steh dazu."},
+        {t:"Ich weiss, dass das nicht alle so sehen.", s:""},
+        {t:"Aber ich hab es zu oft anders erlebt.", s:""}],
+     st:"Umfrage: Siehst du das auch so? Ja / Nein, überhaupt nicht", c:"Widersprich mir gern — ich mag die Diskussion."},
+
+    {t:"Was meine Freundin über mich sagen würde", s:"persoenlich", l:["normal","nach"], k:["freundin","persönlich"],
+     f:[{t:"Was meine beste Freundin über mich sagen würde:", s:""},
+        {t:"„[Der Satz]\"", s:"Und sie hat recht."},
+        {t:"Sie hat recht. Und genau das merkt man auch hier.", s:""},
+        {t:"Darum mach ich {T} so, wie ich es mache.", s:""}],
+     st:"Frage-Sticker: Was würde deine Freundin über dich sagen?", c:"Schreib es mir, ich bin neugierig."},
+
+    {t:"Die Frage, über die man streiten kann", s:"persoenlich", l:["normal","nach"], k:["spass","leicht","umfrage"],
+     f:[{t:"Ganz wichtige Frage heute:", s:"Leicht halten, wirklich leicht."},
+        {t:"[Die alberne Frage — Nutella mit oder ohne Butter?]", s:"Umfrage-Sticker direkt drauf."},
+        {t:"Ich sag schon mal: [deine Antwort]", s:""}],
+     st:"Umfrage mit zwei Antworten", c:"Keine Verkaufsabsicht — das hier wärmt nur auf."},
+
+    {t:"Der verletzende Kommentar", s:"persoenlich", l:["normal","vor"], k:["kritik","kommentar","hate"],
+     f:[{t:"Diesen Kommentar hab ich bekommen.", s:"Screenshot, Name weg."},
+        {t:"Erster Gedanke: [ehrlich]", s:""},
+        {t:"Was ich dann gemacht habe: [deine Reaktion]", s:""},
+        {t:"Und was ich daraus mitgenommen habe: [Learning]", s:""},
+        {t:"Falls dir sowas auch passiert — du bist nicht die Einzige.", s:""}],
+     st:"Frage-Sticker: Ist dir das auch schon passiert?", c:"Schreib mir, ich antworte dir persönlich."},
+
+    {t:"Das Risiko, das ich eingegangen bin", s:"persoenlich", l:["normal","vor"], k:["risiko","mut","entscheidung"],
+     f:[{t:"Das war das grösste Risiko, das ich je eingegangen bin.", s:""},
+        {t:"[Was du gemacht hast]", s:""},
+        {t:"Mein Umfeld sagte: [was sie sagten]", s:""},
+        {t:"Ich hab es trotzdem gemacht, weil [dein Grund].", s:""},
+        {t:"Wenn du gerade vor sowas stehst: [dein einer Tipp]", s:""}],
+     st:"Frage-Sticker: Wovor stehst du gerade?", c:"Erzähl es mir — manchmal hilft es schon, es jemandem zu sagen."},
+
+    // ---------- Verkauf (ohne Launch) ----------
+    {t:"Wie schaffst du das?", s:"verkauf", l:["normal","vor","laeuft"], k:["wie","geheimnis","schaffen"],
+     f:[{t:"Ihr fragt mich ständig, wie ich {T} schaffe.", s:"Screenshots der Fragen."},
+        {t:"Ehrliche Antwort: [dein Weg / dein Angebot]", s:""},
+        {t:"Was passiert, wenn du es genauso machst: [Schritt für Schritt]", s:""},
+        {t:"Und was ich seitdem nicht mehr tue: [was wegfällt]", s:"Das überzeugt mehr als jede Aufzählung."},
+        {t:"Wenn du das auch willst: [Angebot + wie sie reinkommt]", s:""}],
+     st:"Link-Sticker oder Keyword", c:"Schreib mir [KEYWORD], dann schick ich dir den Link."},
+
+    {t:"Für wen das ist — und für wen nicht", s:"verkauf", l:["normal","vor","laeuft"], k:["passt","richtig","für wen"],
+     f:[{t:"Kurz, damit du dir nichts kaufst, das nicht passt.", s:""},
+        {t:"Das ist für dich, wenn [drei klare Merkmale].", s:""},
+        {t:"Das ist nichts für dich, wenn [zwei ehrliche Ausschlüsse].", s:"Wirklich ausschliessen. Das baut Vertrauen."},
+        {t:"Wenn du dich im ersten Teil erkannt hast: [CTA]", s:""}],
+     st:"Umfrage: Bist du das? Ja, genau / Eher nicht", c:"Tipp auf Ja, dann schick ich dir die Details."},
+
+    {t:"Kommt dir das bekannt vor?", s:"verkauf", l:["normal","vor","laeuft"], k:["problem","kennen","frust"],
+     f:[{t:"Kommt dir das bekannt vor?", s:""},
+        {t:"[Die Szene, ganz konkret — Uhrzeit, Ort, Gefühl]", s:"Je konkreter, desto stärker."},
+        {t:"Das lag nicht an dir. Das lag an [die echte Ursache].", s:""},
+        {t:"Genau da setzt [dein Angebot] an.", s:""},
+        {t:"[Angebot + CTA]", s:""}],
+     st:"Umfrage: Kennst du das? Jeden Tag / Ab und zu", c:"Schreib mir [KEYWORD] für den Weg raus."},
+
+    {t:"Kundinnen-Erfolg", s:"verkauf", l:["normal","laeuft","nach"], k:["testimonial","erfolg","kundin"],
+     f:[{t:"Das hat mir [Vorname] geschickt.", s:"Screenshot, mit Erlaubnis."},
+        {t:"Wo sie war, als sie angefangen hat: [Ausgangslage]", s:""},
+        {t:"Was den Ausschlag gab: [der Auslöser]", s:""},
+        {t:"Wo sie jetzt steht: [Ergebnis, nur echte Zahlen]", s:"Nichts erfinden, nur was belegt ist."},
+        {t:"Wenn du da auch hinwillst: [Angebot + CTA]", s:""}],
+     st:"Link-Sticker", c:"Schreib mir [KEYWORD], dann erzähl ich dir, wie es bei dir aussehen könnte."},
+
+    // ---------- Launch ----------
+    {t:"Türen sind offen", s:"verkauf", l:["start"], k:["launch","start","offen"],
+     f:[{t:"Es ist so weit.", s:"Dein Gesicht, echte Freude."},
+        {t:"[Name des Angebots] ist ab jetzt offen.", s:""},
+        {t:"Für wen es ist: [ein Satz]", s:""},
+        {t:"Was drin ist: [drei Stichpunkte]", s:""},
+        {t:"Bis wann: [Datum]. Preis: [Betrag].", s:"Klar hinschreiben, nicht verstecken."},
+        {t:"So kommst du rein: [CTA]", s:"Link-Sticker."}],
+     st:"Link-Sticker + Countdown", c:"Link-Sticker antippen oder mir [KEYWORD] schreiben."},
+
+    {t:"Warum ich das überhaupt gebaut habe", s:"verkauf", l:["start","laeuft"], k:["launch","warum","angebot"],
+     f:[{t:"Warum es [Name des Angebots] überhaupt gibt.", s:""},
+        {t:"Ich hab selbst [das Problem] gehabt.", s:""},
+        {t:"Und nichts gefunden, das [was gefehlt hat].", s:""},
+        {t:"Also hab ich es gebaut. Für [genau diese Frau].", s:""},
+        {t:"Wenn du sie bist: [CTA]", s:""}],
+     st:"Frage-Sticker: Bist du das?", c:"Antworte mir, dann sag ich dir ehrlich, ob es passt."},
+
+    {t:"Die Einwände, die ich selbst hatte", s:"verkauf", l:["laeuft"], k:["einwand","zweifel","teuer","zeit"],
+     f:[{t:"Drei Sachen, die du dir gerade denkst.", s:""},
+        {t:"„Keine Zeit\" — [deine ehrliche Antwort]", s:""},
+        {t:"„Zu teuer\" — [deine ehrliche Antwort]", s:"Nicht wegreden, ernst nehmen."},
+        {t:"„Schaff ich eh nicht\" — [deine ehrliche Antwort]", s:""},
+        {t:"Wenn eins davon dein Satz war: [CTA]", s:""}],
+     st:"Frage-Sticker: Welcher Satz ist deiner?", c:"Schreib mir den Satz, ich antworte dir persönlich."},
+
+    {t:"Ein Blick rein", s:"verkauf", l:["laeuft"], k:["launch","inhalt","modul"],
+     f:[{t:"Schau mal rein.", s:"Bildschirm-Aufnahme vom Kursbereich."},
+        {t:"Das ist [Modul / Teil].", s:""},
+        {t:"Darin geht es um [konkret].", s:""},
+        {t:"Und das hier ist das Arbeitsblatt dazu.", s:"Wirklich zeigen."},
+        {t:"Bis [Datum] kommst du rein: [CTA]", s:""}],
+     st:"Link-Sticker", c:"Link-Sticker oder [KEYWORD] in die DMs."},
+
+    {t:"Letzter Tag", s:"verkauf", l:["letzter"], k:["ende","letzter","schluss"],
+     f:[{t:"Heute Abend ist Schluss.", s:"Kein Drama, nur klar."},
+        {t:"[Name des Angebots] schliesst um [Uhrzeit].", s:""},
+        {t:"Wenn du seit Tagen überlegst — das ist das Zeichen.", s:""},
+        {t:"Was du bekommst: [drei Stichpunkte]", s:""},
+        {t:"Hier entlang: [CTA]", s:"Countdown-Sticker dazu."}],
+     st:"Countdown-Sticker + Link", c:"Link antippen oder mir schreiben — ich bin bis [Uhrzeit] da."},
+
+    {t:"Die letzte ehrliche Frage", s:"verkauf", l:["letzter"], k:["ende","entscheidung","zweifel"],
+     f:[{t:"Eine Frage, bevor die Türen zugehen.", s:"Ruhig, direkt in die Kamera."},
+        {t:"Wo willst du bei {T} in einem Jahr stehen?", s:""},
+        {t:"Wenn die Antwort „gleich wie heute\" ist — dann ist alles gut.", s:""},
+        {t:"Wenn nicht: heute [Uhrzeit] ist die Tür zu.", s:""},
+        {t:"[CTA]", s:""}],
+     st:"Countdown-Sticker", c:"Schreib mir, wenn du unsicher bist — ich sag dir ehrlich, ob es passt."},
+
+    {t:"Willkommen, ihr alle", s:"verkauf", l:["nach"], k:["danke","nach","start"],
+     f:[{t:"Die Türen sind zu. Und ich bin ziemlich gerührt.", s:""},
+        {t:"Willkommen, [Namen markieren].", s:"Wall of Fame."},
+        {t:"Wir starten am [Datum].", s:""},
+        {t:"Und wenn du diesmal nicht dabei bist: ich zeig dir trotzdem weiter, wie es geht.", s:"Wichtig — die Nicht-Käuferinnen nicht fallen lassen."}],
+     st:"Frage-Sticker: Was hättest du gebraucht, um dabei zu sein?", c:"Antworte mir ehrlich — das hilft mir fürs nächste Mal."},
+
+    {t:"Was ich beim Launch gelernt habe", s:"inspiration", l:["nach"], k:["rückblick","learning","launch"],
+     f:[{t:"Der Launch ist vorbei. Drei Dinge, die ich mitnehme.", s:""},
+        {t:"1. [was gut lief]", s:""},
+        {t:"2. [was nicht funktioniert hat]", s:"Ehrlich. Das liest sich am besten."},
+        {t:"3. [was du nächstes Mal anders machst]", s:""},
+        {t:"Falls du auch gerade verkaufst — nimm dir was mit.", s:""}],
+     st:"Frage-Sticker: Was willst du wissen?", c:"Frag mich alles zum Launch, ich antworte offen."},
+
+    {t:"Das Thema anwärmen", s:"expertise", l:["vor"], k:["launch","vorbereitung","anwärmen"],
+     f:[{t:"Reden wir mal über {T}.", s:""},
+        {t:"Die meisten machen [was alle machen].", s:""},
+        {t:"Das Ergebnis ist [die Folge].", s:""},
+        {t:"Was tatsächlich hilft: [dein Ansatz]", s:"Noch kein Verkauf. Nur der Gedanke."},
+        {t:"Dazu kommt nächste Woche mehr.", s:""}],
+     st:"Umfrage: Interessiert dich das? Sehr / Läuft bei mir", c:"Noch kein Angebot — das hier baut nur die Brücke."},
+
+    {t:"Die Frage, die alles vorbereitet", s:"expertise", l:["vor"], k:["umfrage","recherche","launch"],
+     f:[{t:"Ich brauch kurz deine Hilfe.", s:""},
+        {t:"Was ist bei {T} gerade deine grösste Hürde?", s:"Quiz-Sticker mit drei Optionen."},
+        {t:"[Option 1] · [Option 2] · [Option 3]", s:""},
+        {t:"Ich baue gerade was und will, dass es wirklich passt.", s:""}],
+     st:"Quiz-Sticker mit drei Antworten", c:"Antworte — davon hängt ab, was ich als Nächstes mache."}
+  ];
+
+  let letzteIdee = null, gezeigte = [];
+  function ideeGeben(){
+    const thema = g('thema').value.trim();
+    const lage  = g('lage').value;
+    const saeule= g('saeule').value;
+    let passend = IDEEN.filter(i => i.l.includes(lage) && (saeule==="egal" || i.s===saeule));
+    if (!passend.length) passend = IDEEN.filter(i => i.l.includes(lage));
+    if (!passend.length) passend = IDEEN.slice();
+
+    // Thema-Treffer bevorzugen
+    const worte = thema.toLowerCase().split(/[^a-zäöüß]+/).filter(w=>w.length>3);
+    if (worte.length){
+      const treffer = passend.filter(i => i.k.some(k => worte.some(w => k.includes(w) || w.includes(k))));
+      if (treffer.length) passend = treffer;
+    }
+    let frisch = passend.filter(i => !gezeigte.includes(i.t));
+    if (!frisch.length){ gezeigte = []; frisch = passend; }
+    const i = frisch[Math.floor(Math.random()*frisch.length)];
+    gezeigte.push(i.t);
+    letzteIdee = i;
+    zeigeIdee(i, thema);
+  }
+  const fuellThema = (s, thema) => s.replace(/\{T\}/g, thema || "[dein Thema]");
+
+  function zeigeIdee(i, thema){
+    const namen = {persoenlich:"Persönlichkeit", inspiration:"Inspiration", expertise:"Expertise", verkauf:"Verkauf"};
+    const box = g('idee');
+    box.innerHTML = `<h3>${i.t}</h3><div class="saeule">${namen[i.s]} · ${i.f.length} Folien</div><ol>`
+      + i.f.map(f=>`<li><b>${esc(fuellThema(f.t,thema))}</b>${f.s?`<span>${esc(f.s)}</span>`:""}</li>`).join("")
+      + `</ol><div class="fuss"><b>Sticker:</b> ${esc(i.st)}<br><b>CTA:</b> ${esc(i.c)}</div>`;
+    box.classList.add('on');
+    g('ideeUeber').style.display = "block";
+    g('ideeBtn').textContent = "Andere Idee";
+  }
+
+  g('ideeBtn').onclick = ideeGeben;
+  g('ideeUeber').onclick = ()=>{
+    if (!letzteIdee) return;
+    if ((folien.length>1 || state.headline.trim()) &&
+        !confirm("Deine jetzigen Folien werden durch die Idee ersetzt. Weiter?")) return;
+    const thema = g('thema').value.trim();
+    const vorlage = Object.assign({}, state);            // Gestaltung der aktuellen Folie übernehmen
+    folien = letzteIdee.f.map(f => Object.assign({}, vorlage, {
+      headline: fuellThema(f.t, thema), eyebrow:"", poster: vorlage.poster }));
+    aktiv = 0; state = folien[0];
+    formularFuellen(); stripBauen(); render();
+    g('idee').scrollIntoView({behavior:"smooth", block:"start"});
+  };
+
+  /* ---------- Export - dieselbe Buehne wie die Vorschau, deshalb stimmt der Umbruch exakt ---------- */
+  async function bildVon(s){
+    const F = FORMATE[fmt];
+    cover.innerHTML = inhalt(s, false);                 // Hilfslinien nie mitexportieren
+    const vorher = cover.style.transform;
+    cover.style.transform = "none";
+    const canvas = await html2canvas(cover,{width:F.w,height:F.h,scale:1,useCORS:true,backgroundColor:null});
+    cover.style.transform = vorher;
+    return canvas.toDataURL('image/jpeg',0.92);
+  }
+
   g('make').onclick = async () => {
     const btn=g('make'), t=btn.textContent; btn.textContent="Moment…";
     await document.fonts.ready;
-    const zeigZonen = state.zonen;
-    state.zonen = false; render();                    // Hilfslinien nie mitexportieren
-    const F = FORMATE[state.fmt];
-    const vorher = cover.style.transform; cover.style.transform="none";
     try{
-      const canvas = await html2canvas(cover,{width:F.w,height:F.h,scale:1,useCORS:true,backgroundColor:null});
-      const out=g('out'); out.src=canvas.toDataURL('image/jpeg',0.92); out.style.display="block";
+      const out=g('out'); out.src = await bildVon(state); out.style.display="block";
+      g('alle').style.display="none";
       out.scrollIntoView({behavior:"smooth",block:"center"});
     }catch(err){ g('hint').textContent="Konnte das Bild nicht erzeugen: "+err; }
-    cover.style.transform=vorher; state.zonen=zeigZonen; render(); btn.textContent=t;
+    render(); btn.textContent=t;
   };
 
+  g('makeAll').onclick = async () => {
+    const btn=g('makeAll'), t=btn.textContent;
+    await document.fonts.ready;
+    const box = g('alle'); box.innerHTML=""; box.style.display="block"; g('out').style.display="none";
+    try{
+      for (let i=0;i<folien.length;i++){
+        btn.textContent = "Moment… " + (i+1) + "/" + folien.length;
+        const d = document.createElement('div');
+        d.className="fertig";
+        d.innerHTML = `<b>${FORMATE[fmt].einzel} ${i+1}</b><img alt="${FORMATE[fmt].einzel} ${i+1}">`;
+        d.querySelector('img').src = await bildVon(folien[i]);
+        box.appendChild(d);
+      }
+      box.scrollIntoView({behavior:"smooth",block:"start"});
+    }catch(err){ g('hint').textContent="Konnte die Bilder nicht erzeugen: "+err; }
+    render(); btn.textContent=t;
+  };
+
+  g('fmtHint').textContent = FORMATE[fmt].hinweis;
+  formularFuellen();
+  stripBauen();
   render();
   setTimeout(fit,60);
   document.fonts.ready.then(render);
