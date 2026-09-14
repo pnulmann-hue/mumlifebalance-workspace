@@ -2,96 +2,73 @@
 tags: [content]
 ---
 
-# Auswahl KW38 · Mo 14.9. – Fr 18.9.2026
+# Typ-Zettel KW38 · Mo 14.9. – Fr 18.9.2026
 
-Welcher Hook wird was, an welchem Tag, mit welchem CTA.
-
----
-
-## Mentoring — @mumlifebalance_patricia_ulmann
-
-**Lage:** Launch-Woche Produkt-Ideen-Finder. Mo und Di anwärmen, ab Mi verkaufen.
-
-| Tag | Format | Hook | PIE | **verkauft** | CTA |
-|---|---|---|---|---|---|
-| **Mo 14.9.** | Reel Talking-Head | **M1** „Zwei Jahre lang war meine einzige Idee: einfach mehr arbeiten, dann reicht es schon.“ | P | **Vertrauen** — sie war da, wo du bist | Teilen |
-| **Di 15.9.** | Karussell *(liegt schon)* | **M6** „Dein Einkommen hängt davon ab, dass andere Leute etwas tun.“ | P | **Vertrauen** — sie spricht aus, was keiner sagt | Kommentar-Frage |
-| **Mi 16.9.** | Karussell | **M10** „Die meisten Networkerinnen haben längst ein Thema. Sie finden es nur zu normal, um Geld dafür zu verlangen.“ | E | **aktiv** | **STANDBEIN** |
-| **Do 17.9.** | Reel B-Roll | **M3** „Über die Phase redet keiner: Du bist nicht mehr die Neue, und verdienen tust du trotzdem noch nichts.“ | I | **aktiv** | **STANDBEIN** |
-| **Fr 18.9.** | Karussell | **M7** „Ich hab mir am Anfang ein Thema gesucht, das gut klingt. Statt eins, worüber ich wirklich Bescheid weiss.“ | E | **aktiv** | **STANDBEIN** |
-
-**Kein Beitrag ohne Verkaufsabsicht** (Patricias Vorgabe vom 14.09., nach ihrer Mentorin):
-*jeder Beitrag verkauft — entweder Vertrauen oder aktiv.* Zwei Beiträge verkaufen
-Vertrauen über eine Haltung, drei verkaufen aktiv über `STANDBEIN`.
-
-**Geprüft:** PIE 2× P · 1× I · 2× E ✅ · 3 Karussells, 2 Reels ✅ · drei Keyword-Posts
-wie gewünscht ✅ · kein Preis und kein Programmname im Feed ✅
-
-**Warum in dieser Reihenfolge:** Montag und Dienstag verkaufen Vertrauen — sie beziehen
-Stellung, ohne einen Schritt zu verlangen. Das ist die Aufwärmphase aus dem Monatsplan.
-Ab Mittwoch verkaufen alle drei Beiträge aktiv auf `STANDBEIN`, jeder aus einer anderen
-Richtung: Mi „du hast längst ein Thema", Do „diese Phase kennt keiner", Fr „ich hab beim
-Thema selbst danebengegriffen". Drei Beiträge auf dasselbe Tool sind in einer Launch-Woche
-keine Wiederholung, sondern der Aufbau.
-
-**Im Vorrat geblieben:** M2, M4, M5, M8, M9. M2 („Mehr arbeiten ist nicht die Lösung")
-ist der stärkste Kandidat für nächste Woche — der Hook lief in der Nische mit
-151 Kommentaren, aber diese Woche liegt der Schmerz schon auf Montag.
-
-> ✅ **Die Caption des Dienstag-Karussells ist ersetzt** (14.09.). Die alte begann mit
-> einer erfundenen DM — Patricia dazu: „lüge. kenn ich so nicht.“ Die neue steigt mit
-> einem Satz ein, den sie selber jahrelang gesagt hat. Auch die Folien sind angepasst:
-> „Bein“ und „Hybridmodell“ sind raus.
+**Der Typ steht vor dem Hook.** Erst wird festgelegt, welcher Beitragstyp an welchem Tag
+läuft, dann wird der passende Hook dazu gesucht.
 
 ---
 
-## doTERRA — @patricia_ulmann
+## Mentoring — Launch Produkt-Ideen-Finder · Keyword `STANDBEIN`
 
-**Lage:** kein Launch. Wochenfokus: die drei Kipp-Punkte im Tag.
-Tage nach Monatsplan September.
+| Tag | Typ | Job | Hook A | Hook B | Thema | CTA |
+|---|---|---|---|---|---|---|
+| **Mo 14.9.** | **3** Reel-CTA | D Verkauf | **M12** „Du beantwortest ständig Fragen, für die dich niemand bezahlt." | **M10** „Wofür fragen dich Leute schon jetzt?" | 🟡 warm | **STANDBEIN** |
+| **Di 15.9.** | **1** Lifestyle | C Reichweite | **M5** „Du erzählst, was du machst. Und dann kommt dieses höfliche Nicken." | **M2** „Mein Mann fragt nicht mehr, wie es läuft. Und ich bin froh drum." | 🟢 Rückhalt | Teilen |
+| **Mi 16.9.** | **2** Tutorial-Karussell | A + D | **M11** „Die drei Fragen, mit denen ich rausfinde, worüber jemand schreiben kann." | **M14** „‚Ich bin doch keine Expertin.' Und genau deshalb funktioniert es." | 🟡 warm | **STANDBEIN** |
+| **Do 17.9.** | **4** Meinung | C Reichweite | **M3** „Für jede, deren Business von den Pausenplatz-Mamas belächelt wird." | **M8** „Meine Schwiegermutter hat gefragt, ob das wirklich jemand kauft." | 🟢 Urteil | Teilen |
+| **Fr 18.9.** | **2** Tutorial-Karussell | A + D | **M13** „Vor zwei Jahren hab ich abends Produktfotos gepostet. Heute schreiben mir Frauen wegen etwas, das nicht im Katalog steht." | **M6** „Ich hab mal ausgerechnet, wie viele Bestellungen ich bräuchte, um meinen Teilzeitjob zu ersetzen." | 🟡 warm | **STANDBEIN** |
 
-| Tag | Format | Hook | PIE | Job | CTA |
-|---|---|---|---|---|---|
-| **Mo 14.9.** | Reel Talking-Head | **D1** „Sieben Uhr vierzig. Die Schuhe zum dritten Mal nicht an. Und ich hab geschrien." | P | Reichweite | Teilen |
-| **Di 15.9.** | Reel B-Roll | **D2** „Runterkommen ist nicht dasselbe wie Netflix. Das eine erholt dich, das andere lenkt dich nur ab." | E | Autorität | Speichern |
-| **Mi 16.9.** | Reel Talking-Head | **D3** „Zwischen Kinder-ins-Bett und Sofa liegt ein Moment, den ich jahrelang verschenkt habe." | I | **Lead** | **Keyword ENERGIE** |
-| **Fr 18.9.** | Reel POV | **D7** „Falls du denkst, ich sitze hier den ganzen Tag ruhig und ausgeglichen — hier ist der Gegenbeweis." | I | Reichweite | Teilen |
+**Geprüft:**
 
-**Geprüft:** PIE 1× P · 2× I · 1× E ✅ · genau ein Keyword-CTA ✅ · kein Produktname in
-einem Hook ✅ · keine Wirkaussage ✅
-
-**Reels-only** — das Profil hat 69 Follower, dort zieht nur Reichweite. Karussells erst
-ab rund 300 Followern.
-
-**Im Vorrat:** D4, D5, D6, D8, D9, D10. D6 („Die dritte Apothekentüte") ist für nächste
-Woche vorgemerkt, D10 als Lead-Hook für den Monatsabschluss.
-
----
-
-## Was als Nächstes gebaut wird
-
-1. Die fünf Mentoring-Beiträge mit Folien, Caption und Design-Bauplan
-2. Die vier doTERRA-Reels mit Sprechtext und Shotlist
-3. Der Story-Bogen Mo–Fr, je Tag eine ausformulierte Sequenz
-4. Alles ins Cockpit und in den Bild-Editor
-
----## Was am 14.09. wirklich im Cockpit gelandet ist
-
-| Sammlung | Dokumente |
+| Regel | Stand |
 |---|---|
-| `karussells` | `kar-kw38-di` (ersetzt) · `kar-kw38-mi` · `kar-kw38-fr` |
-| `reels` | `reel-kw38-mo` · `reel-kw38-do` · `reel-kw38-dt-mo/di/mi/fr` |
-| `storys` | `story-kw38-mo` bis `story-kw38-fr` |
+| Nie zwei Tage derselbe Typ | 3 · 1 · 2 · 4 · 2 ✅ |
+| Mindestens ein Reichweiten-Typ (1 oder 4) | Di und Do ✅ |
+| Mindestens drei Keyword-Beiträge | Mo · Mi · Fr ✅ |
+| Grüne Themen auf den Reichweiten-Tagen | Di und Do ✅ |
+| Rote Themen nur auf Keyword-Tagen | Mo · Mi · Fr ✅ |
+| PIE im Fünfer-Pick (A-Varianten) | E · I · E · I · I → ⚠️ **kein P** |
 
-Bild-Editor: `daten/woche`, `daten/beitraege` und `daten/entwuerfe` neu geschrieben.
+> ⚠️ **Der PIE-Mix ist schief, und ich überschreibe das nicht still.** Bei den
+> A-Varianten fehlt Persönlichkeit komplett. Der saubere Tausch wäre **Dienstag auf M2**
+> („Mein Mann fragt nicht mehr, wie es läuft") statt M5 — das ist ein Bekenntnis und
+> damit `[P]`. Ich habe M5 vorne gelassen, weil „das höfliche Nicken" der stärkere
+> Scroll-Stopper ist. **Dein Entscheid — beide liegen im Cockpit.**
 
-⚠️ **Altbestand vom 11.09.:** In `reels` lagen schon vier KW38-Reels mit fertig
-gerenderten Videos. `reel-kw38-mo` und `reel-kw38-do` wurden von den neuen ersetzt —
-ihre Videos liegen unberührt im Anhang des Artifacts
-(`/_blob/b6656081541e1830457dacf96d07fa6f` und `/_blob/80cd1a51beb74aa3906f477d8e710033`)
-und lassen sich jederzeit wieder anhängen.
+---
 
-**`reel-kw38-mi` und `reel-kw38-fr` stehen noch** — beide mit Video, beide LEAD auf
-STANDBEIN: „3 Wege — ohne eine einzige Namensliste." und „Und du gehst trotzdem am Montag
-ins Büro." Sie liegen jetzt neben den neuen Karussells auf Mi und Fr.
-**Patricia entscheidet, was gilt.**
+## doTERRA — Aufwärmphase Energiekur · Keyword `ENERGIE`
+
+**Reels only** (Profil unter 300 Follower). Verkauft wird ab KW39 über die DM, deshalb
+ist das Ziel dieser Woche **Gespräche**, nicht Klicks.
+
+| Tag | Typ | Job | Hook A | Hook B | CTA |
+|---|---|---|---|---|---|
+| **Mo 14.9.** | **1** Lifestyle-Reel | C Reichweite | **D1** „Sieben Uhr vierzig, die Schuhe zum dritten Mal nicht an — und ich hab geschrien." | **D12** „Gestern bin ich im Auto sitzen geblieben, nachdem ich längst angekommen war." | Teilen |
+| **Di 15.9.** | **2** Tutorial *(als Reel)* | A Autorität | **D3** „Runterkommen und Netflix sind zwei verschiedene Dinge. Das hab ich jahrelang verwechselt." | **D13** „Magnesium, früher ins Bett, weniger Kaffee. Und trotzdem liegst du um drei wach." | **ENERGIE** |
+| **Mi 16.9.** | **4** Meinung | C + D | **D4** „Die Freundin, die sagt ‚das ist halt das Alter' — und warum das der unbrauchbarste Satz überhaupt ist." | **D5** „Mein Arzt sagte, meine Werte seien normal. Ich sass danach im Auto und hab geheult." | **ENERGIE** |
+| **Fr 18.9.** | **3** Reel-CTA | D Lead | **D6** „Zwischen Kinder-ins-Bett und Sofa liegt ein Moment, den ich jahrelang verschenkt habe." | **D8** „Es gibt zwei Arten von müde. Die eine geht nach einer Nacht weg, die andere nicht." | **ENERGIE** |
+
+**Geprüft:**
+
+| Regel | Stand |
+|---|---|
+| Nie zwei Tage derselbe Typ | 1 · 2 · 4 · 3 ✅ |
+| Mindestens drei Keyword-Beiträge | Di · Mi · Fr ✅ *(neu seit 14.09.)* |
+| PIE (A-Varianten) | P · E · I · E ✅ |
+| Kein Produktname, keine Wirkaussage | ✅ |
+| Reels only | ✅ |
+
+---
+
+## Was diese Woche bewusst NICHT gemacht wird
+
+- **Kein Beitrag über die Durststrecke**, über Produktposten oder übers Mindset beim
+  Business-Aufbauen. Alle drei sind im Feed getestet und bei 106–140 Views gefloppt.
+- **Kein Hook gegen Network, Team oder Upline.** Der Gegner ist der Job am
+  Montagmorgen, nicht die Firma.
+- **Kein Preis und kein Programmname im Feed** — weder Produkt-Ideen-Finder noch
+  Energiekur werden benannt. Beides läuft über Keyword, Story und DM.
+- **Kein Lösungswort im Hook** — „eigenes Thema", „Positionierung", „Hybridmodell",
+  „sichtbar werden" kommen in keiner ersten Zeile vor.

@@ -1,139 +1,133 @@
 ---
-tags: [content, research]
+tags: [content]
 ---
 
-# Marktcheck KW38 · 14.–20. September 2026
+# Marktcheck KW38 · Mo 14.9. – Fr 18.9.2026
 
-**Quelle:** Konkurrenz-Scrape `outputs/apify-runs/competitors-2026-09-13.json` (13.09., 14 Accounts)
-· `context/kern-painpoint.md` · `outputs/zielgruppen-research/doterra-2026-04-22.md`
-· `outputs/instagram-insights/2026-09-14.md` (eigene Zahlen)
+**Quellenlage ehrlich:** Reddit und deutschsprachige Foren sind aus dieser Umgebung nicht
+abrufbar, und die Websuche ist US-lastig. Verwendet werden deshalb: der
+Konkurrenz-Scrape vom **13.09.2026** (echte, frische DACH-Daten), Patricias eigene
+Zielgruppen-Recherche und die getesteten Reichweiten-Daten aus ihren A/B/C-Tests.
+**Keine Zahl in diesem Dokument ist geschätzt.**
 
 ---
 
-## Der wichtigste Befund der Woche
+## Mentoring — @mumlifebalance_patricia_ulmann
 
-**Der stärkste Kommentar-Treiber der ganzen Nische ist genau Patricias Thema.**
+### Der wichtigste Befund: ich hatte den falschen Gegner
 
-| Account | Reaktion | Erster Satz |
+Aus `kern-painpoint.md`:
+
+> „**Die Gegenspielerin ist der Job, nicht das Network.** Jeder Hook, der Network, Team
+> oder Upline schlechtmacht, trifft sie ins Herz und verliert sie sofort."
+
+Und aus dem Themen-Pool, mit gemessenen Zahlen aus den eigenen Tests:
+
+| | Thema | Reichweite |
 |---|---|---|
-| powerfrauenfocus (19'175) | 220 ♥ · **151 💬** | „Ich dachte früher wirklich, dass ein zweiter Job meine einzige Möglichkeit wäre, mehr Geld zu verdienen. Mehr arbeiten. Mehr verzichten." |
+| 🟢 | Rückhalt vom Umfeld | **1'300** (Gewinner) |
+| 🟢 | candid „beim Tun" statt posiert | **1'500** vs. ~120 |
+| 🔴 | Durststrecke, keine Anfragen trotz Posten | **120** |
+| 🔴 | Produktposts, „keiner kauft im Network" | **110–140** |
+| 🔴 | Mindset übers Business-Aufbauen | **106** |
 
-**151 Kommentare** ist der mit Abstand höchste Wert im ganzen Scrape — bei mittelmässigen
-220 Likes. Das heisst: Der Beitrag hat kaum gefallen, aber massiv **Widerspruch und
-Zustimmung** ausgelöst. Genau das, was Reichweite bringt.
+→ Business-interne Themen gehören in **Stories, Mails und Lead-Posts**. Für kalte
+Reichweite sind sie nachweislich tot.
 
-Das Thema ist wörtlich Patricias Kern-Painpoint, Punkt 1: *die Rechnung geht nicht auf.*
-Nur von der anderen Seite erzählt — nicht „Network zahlt zu wenig", sondern
-**„ein zweiter Job ist nicht die Antwort"**.
+### Pain (aus der Tiefenanalyse — was sie nachts um drei denkt)
 
-**Zweiter Befund:** Der grösste Ausreisser nach Likes kommt aus derselben Ecke.
-
-| Account | Reaktion | Erster Satz |
-|---|---|---|
-| alleinerziehend.erfolgreich (34'990) | **6'414 ♥** · 122 💬 | „Ich glaube, genau DAS ist die Phase, über die viel zu wenig gesprochen wird." |
-
-Muster: **eine Lebensphase benennen, über die niemand redet.** Kein Tipp, kein System —
-nur „das gibt es, und keiner sagt es".
-
-**Dritter Befund — kleiner Account, enorme Quote:** annabraun_coaching hat 923 Follower
-und holt 102 ♥ / 19 💬 (rund 11 % Engagement) mit einem klaren Hot Take:
-*„Ich finde es verrückt, dass wir es als völlig normal betrachten, unsere Kinder den
-grössten Teil des Tages abzugeben."* Haltung schlägt Reichweite.
-
----
-
-## Mentoring — die Network-Mama
-
-### Pains
-
-| # | Pain | Art | Beleg |
+| # | Pain | Art | In ihren Worten |
 |---|---|---|---|
-| **P1** | **„Mehr arbeiten ist die einzige Option, die ich sehe"** — zweiter Job, mehr Stunden, mehr Verzicht | chronisch | powerfrauenfocus, 151 Kommentare (07.05.) |
-| **P2** | **Die Rechnung geht nicht auf** — ein paar Prozent Provision gegen ein Teilzeit-Einkommen | chronisch | `kern-painpoint.md`, Punkt 1 |
-| **P3** | **Die Abhängigkeit** — Vergütungsplan, Preise, Aktionen macht jemand anders | chronisch, unausgesprochen | `kern-painpoint.md`, Punkt 4 |
-| **P4** | **Die Phase, über die keiner redet** — Kinder werden selbstständiger, und trotzdem ist keine Luft | akut (Schulstart) | alleinerziehend.erfolgreich, 6'414 ♥ |
-| **P5** | **„Ich poste und es kommt nichts zurück"** | chronisch | Patricias eigene Reichweite: Ø 210 pro Beitrag bei 2'011 Followern, 2 Speicherungen auf 12 Beiträge |
+| 1 | **Verbrenne ich gerade unser Geld?** | chronisch | „Diesen Monat können wir nicht auswärts essen." |
+| 2 | **Mache ich mich lächerlich?** | akut | Schwiegermutter: „Kauft das wirklich jemand?" |
+| 3 | **Bin ich die, vor der man das Handy weglegt?** | chronisch | warme Liste durch, Beziehungen verbrannt |
+| 4 | **Liegt's an mir?** | chronisch | „Andere schaffen's scheinbar mühelos." |
+| 5 | **Die Rechnung geht nicht auf** | chronisch | „Wie soll ich mit ein paar Prozent Provision je mein Teilzeit-Einkommen erreichen?" |
 
-### Wünsche
-1. **Eine Seite haben, auf der sie selbst entscheidet** — nicht mehr Geld allein, sondern eigene Regeln
-2. **Morgens nicht mehr ins Büro müssen** — der Job ist die Gegenspielerin, nicht das Network
-3. **Für etwas Eigenes bekannt sein** statt für einen Produktkatalog
+### Wunsch
 
-### Ziele (6–12 Monate)
-1. Ein zweites Standbein, das trägt, ohne das erste aufzugeben
-2. Ein Angebot, das verkauft, während sie bei den Kindern ist
-3. Kündigungsfrist ausrechnen können, ohne dass es Angst macht
+1. **Frei sein, nicht reich** — nicht abhängig vom Mann-Lohn, vom alten Job, von der nächsten Teamaktion
+2. **Beweisen, dass sie's kann** — vor sich selbst und vor dem Umfeld
+3. **Wieder jemand sein**, nicht nur „für alle da"
 
-### Herausforderungen
-1. **Kein Thema** — ohne Thema bleibt nur das Produkt zum Reden übrig
-2. **Keine Zeit für noch etwas** — „ich arbeite doch schon abends"
-3. **Angst vor der Upline** — „darf ich das überhaupt?"
+### Ziel in 6–12 Monaten
+
+1. Aus dem Teilzeitjob raus, den sie eigentlich nicht mehr machen will
+2. Etwas haben, das ihr gehört und das keiner wegnehmen kann
+3. Gefragt werden, statt fragen zu müssen
+
+### Herausforderung
+
+1. **Upline-Angst** — „darf ich überhaupt was Eigenes daneben?" (Kaufhindernis Nr. 1)
+2. **Zeitfrage** — „wann denn bitte noch?"
+3. **Selbstunterschätzung** — „ich bin doch keine Expertin"
+
+### Was die Konkurrenz gerade macht (Scrape 13.09.)
+
+| Account | Follower | Beobachtung |
+|---|---|---|
+| @powerfrauenfocus | — | Ein Beitrag mit **151 Kommentaren** — Aufbau: alter Glaube → was er gekostet hat → was ich stattdessen wollte → Keyword |
+| @alleinerziehend.erfolgreich | — | **6'414 Likes** auf einen Lebensphasen-Beitrag |
+
+→ Beide gewinnen mit **Lebens-Schmerz**, nicht mit Business-Mechanik. Deckt sich exakt
+mit Patricias eigener grüner Liste.
 
 ### Brücke zum Wochenfokus
-Monatsplan KW38: **Launch Produkt-Ideen-Finder**, Mo/Di anwärmen, ab Mi verkaufen.
-Monatsthema: *mit dem eigenen Thema sichtbar werden statt Produktkatalog.*
 
-→ **P1 und P3 tragen die Aufwärmphase.** Wer glaubt, mehr arbeiten sei der einzige Weg,
-braucht zuerst den Gedanken, dass es einen zweiten gibt. Der Produkt-Ideen-Finder ist
-genau die Antwort auf „aber ich hab doch keine Idee".
+Launch Produkt-Ideen-Finder (`STANDBEIN`). Der Fokus „dein Thema hast du längst" ist
+**business-intern** und damit rot für kalte Reichweite. Also: die Keyword-Beiträge tragen
+das Thema, die Reichweiten-Beiträge tragen den Lebens-Schmerz — und beide führen auf
+denselben Punkt zu.
 
 ---
 
-## doTERRA — die erschöpfte Mama
+## doTERRA — @patricia_ulmann
 
-### Pains
+### Pain (die zehn Schmerzen, in ihren Worten)
 
-| # | Pain | Art | Beleg |
+| # | Pain | Art | Zitat |
 |---|---|---|---|
-| **D1** | **Die Morgen-Hetze** — 7:40 Uhr, Schuhe zum dritten Mal nicht an, sie schreit, Kind weint | akut, täglich | Zielgruppen-Research PP3 |
-| **D2** | **Der Kopf schaltet nie ab** — 22 Uhr, Znüni-Box, Kinderarzt, Wäsche, Mail an die Lehrerin | chronisch | PP2 |
-| **D3** | **Die Abend-Übergabe** — der Moment zwischen Kinder-ins-Bett und Sofa, der verschenkt wird | chronisch | Monatsplan KW38 |
-| **D4** | **„Runterkommen" ist nicht Netflix** — sie weiss nicht, was es sonst wäre | chronisch | Monatsthema September |
-| **D5** | **„Alle sagen Magnesium, bringt nix"** — dritte Apothekentüte, immer noch müde | akut | PP6 |
+| 1 | **Nur noch funktionieren** | chronisch | „Irgendwie lebt man nicht mehr, man funktioniert nur noch." |
+| 2 | **Mental Load** | chronisch | „Mein Kopf schaltet nie ab." |
+| 3 | **Perimenopause-Wut** | akut | „Ich raste aus und hasse mich danach." |
+| 4 | **Zu jung dafür** | akut | „Ich bin erst 38, das kann doch keine Perimenopause sein." |
+| 5 | **Standard-Tipps bringen nichts** | chronisch | „Alle sagen, ich soll Magnesium nehmen. Bringt nix." |
 
-### Wünsche
-1. Einen Abend, an dem nichts mehr offen ist
-2. Morgens aufwachen mit mehr als „heute durchhalten"
-3. Verstehen, dass es nicht an ihr liegt
+### Wunsch
 
-### Herausforderungen
-1. Sie hat schon vieles probiert und nichts hat gehalten
-2. Sie hat keine 20 Minuten für ein Ritual — glaubt sie
-3. Was im Netz empfohlen wird, kostet und bringt nichts
+1. **Verstehen, dass es nicht an ihr liegt** — eine Erklärung, warum der Körper das macht
+2. Ein Weg, der Sinn ergibt — ohne Wunderversprechen, ohne noch eine App
+3. Abends noch etwas übrig haben
 
-### Was im doTERRA-Umfeld gerade läuft
-- **Echinacea-Öl erstmals in Europa**, limitiert (doterradachcommunity, 518 ♥) — Produktnews,
-  für Patricia nur als Randnotiz interessant, nicht als Thema
-- Die grossen Community-Accounts fahren **Gewinnspiele und DIY** — nicht Patricias Weg
-- **oilistic.health** holt mit Anti-Perfekt-Posts überdurchschnittliche Kommentare bei
-  kleinem Account: *„Falls du dachtest, ich sitze hier den ganzen Tag mit ätherischen Ölen
-  und perfekt formulierten Sätzen… hier ist der Gegenbeweis."*
+### Ziel in 6–12 Monaten
+
+1. Nicht mehr um halb vier zusammenklappen
+2. Durchschlafen
+3. Sich wiedererkennen
+
+### Herausforderung
+
+1. **Der Arzt findet nichts** — „Ihre Werte sind normal"
+2. **Die Freundin sagt „das ist halt das Alter"**
+3. **TikTok widerspricht sich** — „Was soll ich glauben?"
+
+### Was die Konkurrenz gerade macht (Scrape 13.09.)
+
+| Account | Follower | Bester Beitrag |
+|---|---|---|
+| @doterradachcommunity | 5'105 | 284 Likes / **56 Kommentare** — ein Event, keine Produktinfo |
+| @flowterra.community | 16'477 | 272 Likes / **97 Kommentare** — ein Gewinnspiel |
+| @oilistic.health | 276 | 24 Likes / **11 Kommentare** bei kleinem Konto |
+
+→ Was Kommentare bringt, ist **ein Anlass zum Mitmachen**, nicht Produktwissen. Die
+grossen Konten sammeln Kommentare über Events und Gewinnspiele, nicht über Öl-Erklärungen.
 
 ### Brücke zum Wochenfokus
-Monatsplan: **Nervensystem und Runterkommen — raus aus dem Funktionier-Modus.**
-KW38 sind die **drei Kipp-Punkte im Tag**: Morgen-Hetze · was Runterkommen wirklich heisst
-· die Abend-Übergabe. Angebot: 3-Tage-Energie-Kickstart, Keyword `ENERGIE`.
 
-→ D1, D3 und D4 sind exakt die drei Tage. Der Plan steht, der Marktcheck bestätigt ihn.
+Aufwärmphase Energiekur, Verkauf ab KW39, Bestell-Deadline 25.9. Die Woche muss **Gespräche
+erzeugen**, weil über die DM verkauft wird. Deshalb tragen drei von vier Beiträgen
+`ENERGIE` — jeder Kommentar ist ein Gesprächseinstieg, kein blosser Lead.
 
----
-
-## Was ich für die Hooks mitnehme
-
-1. **Der Zweitjob-Gedanke ist der stärkste Kommentar-Hebel der Nische.** Muss diese Woche
-   vorkommen.
-2. **„Die Phase, über die keiner redet"** ist das stärkste Reichweiten-Muster.
-3. **Haltung schlägt Reichweite** — der kleinste Account der Liste holt die beste Quote
-   mit einem klaren Hot Take.
-4. **Patricias eigener Bestwert** (55 ♥ / 23 💬) kam über die Falsche-Annahme-Formel:
-   *„Wenn ich einfach mehr Produkte zeige, dann kommen die Kunden von allein." ❌ Nein.*
-   Die Formel funktioniert bei ihr nachweislich.
-5. **Speicherungen sind ihr Engpass:** 2 auf 12 Beiträge, 0 Mal geteilt. Jeder Beitrag
-   braucht einen echten Speicher- oder Weiterschick-Grund.
-
----
-
-## 🔗 Verwandte Notizen
-- [[kern-painpoint]]
-- [[2026-09-mentoring]]
-- [[2026-09-doterra]]
+Der Aufhänger bleibt **Perimenopause und Nervensystem**: Die meisten dieser Frauen wissen
+nicht, dass ihre Symptome zusammenhängen. Genau daraus entsteht der
+„krass, wieso weiss die das"-Moment.

@@ -1,186 +1,75 @@
 ---
-tags: [content, freitag-hooks]
+tags: [content]
 ---
 
 # Hooks KW38 · Mo 14.9. – Fr 18.9.2026
 
-Alle aus den Formeln im Hook-Master zugeschnitten, alle durch den letzten Check
-(trifft einen Schmerz · „wieso weiss die, was ich denke" · Küchentisch-Ton · Lösung draussen).
+14 pro Profil, alle aus den Formeln in `.claude/skills/hooks/SKILL.md` zugeschnitten,
+alle durch **Tor 1** (Freundinnen-Test), **Tor 2** (Gesehen-Test) und den letzten Check.
+
+**Gesperrt und deshalb nirgends verwendet:** eigenes Thema · Positionierung · digitales
+Produkt · Funnel · Hybridmodell · sichtbar werden · Reichweite · Algorithmus.
+**Und:** kein Hook macht Network, Team oder Upline schlecht.
 
 ---
 
 ## Mentoring — @mumlifebalance_patricia_ulmann
 
-**Lage:** Launch-Woche Produkt-Ideen-Finder. Mo/Di anwärmen, ab Mi verkaufen.
-**Monatsthema:** mit dem eigenen Thema sichtbar werden statt Produktkatalog.
-
-| # | PIE | Hook | Formel | Angle | Marktbezug | Stufe |
+| # | PIE | Hook | Familie | Angle | trifft (Tor 2) | Thema |
 |---|---|---|---|---|---|---|
-| **M1** | P | „Zwei Jahre lang war meine einzige Idee: einfach mehr arbeiten, dann reicht es schon." | Bekenntnis | Schmerz | P1 · powerfrauenfocus, 151 Kommentare | 2 |
-| **M2** | E | „Mehr arbeiten ist nicht die Lösung. Das ist nur das Erste, was einem einfällt." | Falsche-Annahme | Konträr | P1 · **übernommen aus dem Scrape**, lief dort mit 151 Kommentaren | 2 |
-| **M3** | I | „Über die Phase redet keiner: Du bist nicht mehr die Neue, und verdienen tust du trotzdem noch nichts." | Lebensphase benennen | Identität | P4 · Muster von alleinerziehend.erfolgreich, 6'414 ♥ | 1 |
-| **M4** | I | „Du planst deinen Monat auf eine Aktion hin. Und dann entscheidet jemand anders, dass sie anders kommt." | Szene in der zweiten Person | Schmerz | P3 Abhängigkeit | 2 |
-| **M5** | E | „Du postest seit Monaten, und trotzdem fragt dich nie jemand um Rat." | Du-denkst | Neugier | P5 · eigene Zahlen: Ø 210 Reichweite, 2 Speicherungen auf 12 Beiträge | 2 |
-| **M6** | P | „Dein Einkommen hängt davon ab, dass andere Leute etwas tun." | Hot Take | Konträr | P3 | 2 |
-| **M7** | E | „Ich hab mir am Anfang ein Thema gesucht, das gut klingt. Statt eins, worüber ich wirklich Bescheid weiss." | Grösster-Fehler | Beweis | H1 „kein Thema" | 3 |
-| **M8** | I | „Bei der Provision wartest du, bis andere etwas tun. Bei etwas Eigenem hängt es nur an dir." | Vergleich | Vergleich | P3 · Wunsch 1 · **Formulierung von Patricia** | 3 |
-| **M9** | P | „Die häufigste Frage an mich ist nicht wie. Sondern ob das Partnerunternehmen etwas dagegen hat, wenn ich mir daneben was Eigenes aufbaue." | Frage aus den DMs | Identität | H3 · **Formulierung von Patricia** | 2 |
-| **M10** | E | „Die meisten Networkerinnen haben längst ein Thema. Sie finden es nur zu normal, um Geld dafür zu verlangen." | Curiosity-Gap | Neugier | H1 · trägt den Lead-Post | 3 |
+| **M1** | P | „Ich hab meiner Schwiegermutter drei Monate lang nicht gesagt, was ich abends am Laptop mache." | Bekenntnis | Schmerz | mache ich mich lächerlich | 🟢 heimlich aufbauen |
+| **M2** | P | „Mein Mann fragt nicht mehr, wie es läuft. Und ich bin froh drum." | Bekenntnis | Schmerz | Rückhalt vom Umfeld | 🟢 Einsamkeit im Aufbau |
+| **M3** | I | „Für jede, deren Business von den Pausenplatz-Mamas belächelt wird." | Antagonist-Call-out | Identität | mache ich mich lächerlich | 🟢 Angst vorm Urteil |
+| **M4** | P | „Gestern um zehn nach zehn hab ich das Fenster mit der Abrechnung wieder zugemacht." | Zeitanker | Schmerz | die Rechnung geht nicht auf | 🟢 nachts wachliegen |
+| **M5** | I | „Du erzählst, was du machst. Und dann kommt dieses höfliche Nicken." | Die-meint-mich | Identität | Rückhalt vom Umfeld | 🟢 höfliches Schweigen |
+| **M6** | P | „Ich hab mal ausgerechnet, wie viele Bestellungen ich bräuchte, um meinen Teilzeitjob zu ersetzen. Danach hab ich den Taschenrechner weggelegt." | Bekenntnis | Schmerz | die Rechnung geht nicht auf | 🟡 Rechnung |
+| **M7** | I | „Alle sagen, du brauchst mehr Disziplin. Bei mir war es genau andersrum." | Watch-me | Konträr | liegt's an mir | 🟢 Vergleich |
+| **M8** | P | „Meine Schwiegermutter hat gefragt, ob das wirklich jemand kauft. Das ist meine Antwort." | Kritiker-Zitat | Identität | mache ich mich lächerlich | 🟢 Angst vorm Urteil |
+| **M9** | I | „Du darfst mehr wollen, auch wenn zuhause niemand fragt, wie es läuft." | Erlaubnis | Identität | Rückhalt vom Umfeld | 🟢 Zerrissenheit |
+| **M10** | E | „Wofür fragen dich Leute schon jetzt? Da drin steckt mehr, als du denkst." | Du-denkst | Neugier | Selbstunterschätzung | 🔴 warm |
+| **M11** | E | „Die drei Fragen, mit denen ich rausfinde, worüber jemand schreiben kann." | Schritt-Liste | Beweis | Selbstunterschätzung | 🔴 warm |
+| **M12** | E | „Du beantwortest ständig Fragen, für die dich niemand bezahlt." | Reframe | Schmerz | Selbstunterschätzung | 🟡 Mid |
+| **M13** | I | „Vor zwei Jahren hab ich abends Produktfotos gepostet. Heute schreiben mir Frauen wegen etwas, das nicht im Katalog steht." | Vorher-Nachher | Ergebnis | ohne aufzugeben | 🔴 warm |
+| **M14** | E | „‚Ich bin doch keine Expertin.' Und genau deshalb funktioniert es." | Einwand-Dreher | Konträr | Selbstunterschätzung | 🟡 Mid |
 
-**Mix geprüft:** P 3 · I 3 · E 4 · zehn verschiedene Formel-Familien · sechs Angles
-(Schmerz, Konträr, Identität, Beweis, Neugier, Vergleich).
+**Mix geprüft:** P 6 · I 5 · E 3 · **fünf Angles** (Schmerz, Identität, Konträr, Neugier,
+Beweis/Ergebnis) · **zehn Familien** · **neun aus der grünen Gruppe**.
 
-> **M6 steht schon.** Das Karussell „Was nicht in deiner Hand liegt" liegt für Di 15.9.
-> im Cockpit. Der Hook bleibt, ich baue nicht neu.
+**Bewusstseinsstufe:** M1–M9 auf Stufe 1–2 (Reichweite, stellt ihre Frage).
+M10–M14 auf Stufe 2–3 (Lead, warm).
+
+**Network-Anker geprüft:** Abrechnung · Bestellungen · Katalog · Teilzeitjob ·
+Produktfotos. Kein Hook funktioniert für „jede Mama mit Smartphone".
+
+**Was bewusst NICHT im Set ist:** kein Hook über Durststrecke, kein Hook über
+Produktposten, kein Mindset-Hook übers Business-Aufbauen. Alle drei sind im Feed
+getestet und gefloppt (106–140 Views).
 
 ---
 
 ## doTERRA — @patricia_ulmann
 
-**Lage:** kein Launch. Monatsthema Nervensystem und Runterkommen.
-**Wochenfokus:** die drei Kipp-Punkte im Tag. Angebot im Hintergrund: Energie-Kickstart, Keyword `ENERGIE`.
-
-| # | PIE | Hook | Formel | Angle | Marktbezug | Stufe |
+| # | PIE | Hook | Familie | Angle | trifft | |
 |---|---|---|---|---|---|---|
-| **D1** | P | „Sieben Uhr vierzig. Die Schuhe zum dritten Mal nicht an. Und ich hab geschrien." | Zeitanker + Szene | Schmerz | D1 Morgen-Hetze | 1 |
-| **D2** | E | „Runterkommen ist nicht dasselbe wie Netflix. Das eine erholt dich, das andere lenkt dich nur ab." | Falsche-Annahme | Konträr | D4 | 2 |
-| **D3** | I | „Zwischen Kinder-ins-Bett und Sofa liegt ein Moment, den ich jahrelang verschenkt habe." | Wendepunkt | Ergebnis | D3 Abend-Übergabe | 2 |
-| **D4** | I | „Es gibt eine Uhrzeit, zu der ich todmüde bin und trotzdem nicht schlafen kann. Bei mir ist es zehn." | Lebensphase benennen | Identität | D2 Mental Load | 1 |
-| **D5** | E | „Du denkst, dir fehlt ein Mittel. Dabei hast du einfach keinen Moment im Tag, wo du mal runterkommst." | Du-denkst | Neugier | D5 | 2 |
-| **D6** | P | „Die dritte Apothekentüte stand bei mir im Schrank. Und ich war immer noch müde." | Grösster-Fehler | Schmerz | D5 · PP6 wörtlich | 2 |
-| **D7** | I | „Falls du denkst, ich sitze hier den ganzen Tag ruhig und ausgeglichen — hier ist der Gegenbeweis." | Anti-Perfekt | Identität | Muster von oilistic.health, überdurchschnittliche Kommentare bei kleinem Account | 1 |
-| **D8** | E | „Es gibt zwei Arten von müde. Die eine geht nach einer Nacht weg, die andere nicht." | Zwei-Typen | Vergleich | D5 · PP7 | 2 |
-| **D9** | P | „Gestern bin ich im Auto sitzen geblieben, nachdem ich schon angekommen war. Nur damit zwei Minuten niemand etwas von mir will." | Zeitanker + Szene | Schmerz | D2 | 1 |
-| **D10** | E | „Drei Momente am Tag entscheiden, ob du abends noch kannst. Und es sind nie die, die du denkst." | Curiosity-Gap | Neugier | Wochenfokus · trägt den Lead-Post | 3 |
+| **D1** | P | „Sieben Uhr vierzig, die Schuhe zum dritten Mal nicht an — und ich hab geschrien." | Zeitanker | Schmerz | nur noch funktionieren | |
+| **D2** | P | „Irgendwann lebst du nicht mehr, du funktionierst nur noch. Und keiner sieht es." | Bekenntnis | Schmerz | nur noch funktionieren | |
+| **D3** | E | „Runterkommen und Netflix sind zwei verschiedene Dinge. Das hab ich jahrelang verwechselt." | Falsche-Annahme | Konträr | Standard-Tipps bringen nichts | |
+| **D4** | I | „Die Freundin, die sagt ‚das ist halt das Alter' — und warum das der unbrauchbarste Satz überhaupt ist." | Antagonist-Call-out | Konträr | der Arzt findet nichts | |
+| **D5** | P | „Mein Arzt sagte, meine Werte seien normal. Ich sass danach im Auto und hab geheult." | Szene | Schmerz | der Arzt findet nichts | |
+| **D6** | E | „Zwischen Kinder-ins-Bett und Sofa liegt ein Moment, den ich jahrelang verschenkt habe." | Curiosity-Gap | Neugier | Mental Load | |
+| **D7** | I | „Falls du denkst, ich sitze hier den ganzen Tag ruhig und ausgeglichen — hier ist der Gegenbeweis." | Anti-Perfekt | Identität | nur noch funktionieren | |
+| **D8** | E | „Es gibt zwei Arten von müde. Die eine geht nach einer Nacht weg, die andere nicht." | Zwei-Typen | Vergleich | nur noch funktionieren | |
+| **D9** | P | „Ich war 38 und hab gedacht, dafür bin ich viel zu jung." | Bekenntnis | Schmerz | zu jung dafür | |
+| **D10** | E | „Drei Momente am Tag entscheiden, ob abends noch was geht. Und es sind nie die, die du denkst." | Curiosity-Gap | Neugier | Mental Load | |
+| **D11** | I | „Du bist nicht kaputt. Dein Körper macht gerade etwas, das dir niemand erklärt hat." | Reframe | Ergebnis | zu jung dafür | |
+| **D12** | P | „Gestern bin ich im Auto sitzen geblieben, nachdem ich längst angekommen war." | Zeitanker | Schmerz | Mental Load | |
+| **D13** | E | „Magnesium, früher ins Bett, weniger Kaffee. Und trotzdem liegst du um drei wach." | Du-denkst | Neugier | Standard-Tipps bringen nichts | |
+| **D14** | I | „Auf TikTok sagt jede was anderes. Hier ist, was bei mir tatsächlich etwas verändert hat." | Watch-me | Beweis | Verwirrung | |
 
-**Mix geprüft:** P 3 · I 3 · E 4 · zehn Formel-Familien · fünf Angles.
-**Compliance:** kein Produktname in einem Hook, keine Wirkaussage, alles im „bei mir war"-Rahmen.
+**Mix geprüft:** P 5 · I 4 · E 5 · **sechs Angles** · **elf Familien**.
 
----
+**Compliance geprüft:** kein Produktname in einem Hook · keine Wirkaussage · alles im
+„bei mir war"-Rahmen · kein Markenname.
 
-## Was ich beim letzten Check verworfen habe
-
-| Verworfen | Warum |
-|---|---|
-| „Stell dir vor, du wachst auf und …" | gesperrte Floskel |
-| „Network zahlt einfach zu wenig" | greift das Network an — sie verteidigt es dann |
-| „In 3 Schritten zu deinem eigenen Thema" | Lösungswort im Hook, und die Lösung gehört nicht in die erste Zeile |
-| „Ich verdiene heute X CHF im Monat" | erfundene Zahl, steht nirgends belegt |
-| „Ätherische Öle helfen bei Erschöpfung" | Wirkaussage, doTERRA-Compliance |
-
-
-## Nachgebessert nach Patricias Einwand (14.09.)
-
-Ihr Satz: *„ich würde nie zu einer Freundin sagen ‚aber es trägt noch nicht' — das ist
-eine KI-Phrase.“* Sie hatte recht, und derselbe Fehler steckte in fünf weiteren Hooks.
-
-| vorher | nachher |
-|---|---|
-| „Du bist nicht mehr neu, aber es trägt noch nicht.“ | „Du bist nicht mehr die Neue, und verdienen tust du trotzdem noch nichts.“ |
-| „Es ist nur die Variante, die man als Erstes sieht.“ | „Das ist nur das Erste, was einem einfällt.“ |
-| „Ein Bein heisst warten … Zwei Beine heissen, dass du …“ | „Mit einem Bein wartest du … Mit zweien entscheidest du …“ |
-| „Sie halten es für zu selbstverständlich, um damit Geld zu verdienen.“ | „Sie finden es nur zu normal, um Geld dafür zu verlangen.“ |
-| „Dabei fehlt deinem Tag ein Punkt, an dem er kippen darf.“ | „Dabei hast du einfach keinen Moment im Tag, wo du mal runterkommst.“ |
-| „zu der du gleichzeitig am müdesten und am wachsten bist“ | „zu der ich todmüde bin und trotzdem nicht schlafen kann“ |
-
-**Das Muster dahinter:** ein abstraktes Verb ohne jemanden, der etwas tut —
-*es trägt · es kippt · ein Punkt, an dem · die Variante, die man sieht*. Klingt klug,
-sagt aber keine Frau am Küchentisch. Der Ersatz ist immer derselbe:
-**wer tut was, und was passiert dabei wirklich.**
-
-
-## 🚨 Erfundene Geschichte — rausgeworfen (14.09.)
-
-M4 lautete: *„Letzten Monat hat mir jemand geschrieben, dass sie drei Wochen auf eine
-Aktion hingeplant hat. Dann kam sie anders.“*
-
-Patricias Antwort: **„lüge. kenn ich so nicht.“**
-
-Diese Nachricht hat es nie gegeben. Ich habe eine DM erfunden, um dem Painpoint eine
-Szene zu geben — und damit gegen die Regel verstossen, die genau das verbietet.
-
-**Ersetzt durch eine Szene ohne Behauptung:** „Du planst deinen Monat auf eine Aktion
-hin. Und dann entscheidet jemand anders, dass sie anders kommt.“ Gleicher Schmerz,
-gleiche Konkretheit — aber nichts behauptet, was nicht passiert ist.
-
-### ⚠️ Dieselbe Erfindung steht im Cockpit
-
-Die Caption des Karussells **„KW38 Di · Was nicht in deiner Hand liegt“** (11.09.)
-beginnt mit: *„Letzte Woche hat mir jemand geschrieben, dass die Aktion, auf die sie
-ihren ganzen Monat geplant hatte, kurzfristig anders lief.“*
-
-**Dieselbe erfundene Nachricht.** Muss raus, bevor der Beitrag rausgeht.
-
----
-
-## 🚨 In drei Sekunden unklar — nachgeschärft (14.09.)
-
-Patricia: *„viel zu unklar was gemeint ist — denk dran: in 3 Sekunden braucht es
-Klarheit, um was es geht.“*
-
-| vorher | nachher | was fehlte |
-|---|---|---|
-| „Du denkst, dir fehlt Reichweite. Dabei fehlt dir etwas, wofür man dich fragen kann.“ | „Du postest seit Monaten, und trotzdem fragt dich nie jemand um Rat.“ | „etwas, wofür man dich fragen kann“ ist ein Rätsel, keine Aussage |
-| „Der grösste Fehler am Anfang: Ich hab mir ein Thema gesucht, das gut klingt — statt eins, für das mich Leute sowieso schon fragen.“ | „Ich hab mir am Anfang ein Thema gesucht, das gut klingt. Statt eins, worüber ich wirklich Bescheid weiss.“ | zu lang; die erste Zeile muss allein catchen |
-| „Mit einem Bein wartest du, bis andere was tun. Mit zweien …“ | „Bei der Provision wartest du, bis andere etwas tun. Bei etwas Eigenem hängt es nur an dir.“ | „Bein“ versteht nur, wer das Bild schon kennt |
-| „Die drei Stellen im Tag, an denen es kippt …“ | „Drei Momente am Tag entscheiden, ob du abends noch kannst.“ | wieder ein abstraktes „es kippt“ |
-
-**Die Regel dahinter:** Wer den Hook drei Sekunden sieht, muss **wissen, worum es geht** —
-nicht ahnen. Ein Rätsel ist kein Hook. Neugier entsteht aus einer klaren Aussage, der
-etwas fehlt — nicht aus einem Satz, den man zweimal lesen muss.
-
-
----
-
-## ⚠️ M8 — Patricias Formulierung, mit einem Vorbehalt
-
-Patricia am 14.09.: *„das mit Bein ist suspekt. da wäre doch besser: die Provision im
-Network heisst warten, bis andere etwas tun. ein Hybridmodell bedeutet, dass du ein
-grosser Teil deines Einkommens selber in der Hand hast.“*
-
-Übernommen — **„Provision“ sieht man in drei Sekunden, „Bein“ muss man erst aufbauen.**
-
-**Der Vorbehalt:** Das Wort **Hybridmodell** steht in `kern-painpoint.md` auf der Liste
-der Wörter, die **nie in den Einstieg** gehören — zusammen mit Sichtbarkeit,
-Positionierung, eigenes Thema und Expertin werden. Begründung dort: *„Das sind die
-Antworten, nicht der Schmerz. Sie gehören ab Zeile 2, nie in Zeile 1.“*
-
-**Was das praktisch heisst:**
-
-| Einsatz | geht das? |
-|---|---|
-| **Reichweiten-Post** (kalt, Stufe 1–2) | ❌ Wer das Wort nicht kennt, scrollt weiter |
-| **Lead- oder Verkaufs-Post** (warm, Stufe 3+) | ✅ Hier ist das Wort die Antwort, auf die sie wartet |
-
-M8 steht auf **Stufe 3**. Diese Woche wird ab Mittwoch verkauft — dort passt der Hook.
-Für Montag oder Dienstag wäre er zu weit vorne.
-
-Willst du ihn trotzdem kalt einsetzen, wäre die Fassung ohne das Fachwort:
-*„Provision heisst warten, bis andere etwas tun. Etwas Eigenes heisst, dass du einen
-grossen Teil selber in der Hand hast.“*
-
-
----
-
-## M9 — Partnerunternehmen statt Upline
-
-Patricia am 14.09.: *„nimm hier das Beispiel, ob das Partnerunternehmen nichts dagegen
-hat, wenn man noch was Eigenes aufbaut.“*
-
-**Warum das besser ist:** „Upline“ meint einen Menschen aus ihrem Team. Selbst als blosse
-Frage klingt es nach Misstrauen gegen jemanden, den sie schätzt — und die Regel
-„das Network und mein Team bleiben unangetastet“ gilt auch für Andeutungen.
-**Partnerunternehmen** ist die Firma, und die macht tatsächlich die Regeln. Steht so auch
-in `kern-painpoint.md`, Punkt 4.
-
-⚠️ **Eine Sache bitte bestätigen:** Der Hook behauptet, das sei die **häufigste** Frage,
-die Patricia gestellt bekommt. Nach dem erfundenen DM-Hook von vorhin frage ich das lieber
-einmal zu viel — wird ihr das wirklich am häufigsten gefragt? Wenn nicht, aber es kommt
-regelmässig vor: *„Immer wieder werde ich gefragt, ob das Partnerunternehmen etwas
-dagegen hat.“* Wenn gar nicht: Hook streichen.
-
-**M8 steht jetzt ohne das Fachwort** (14.09.): „Bei der Provision wartest du, bis andere
-etwas tun. Bei etwas Eigenem hängt es nur an dir.“ — dieselbe Aussage, aber auch kalt
-verständlich, und „hängt nur an dir“ steht fast wörtlich schon im Dienstag-Karussell.
-Patricias Fassung mit „Hybridmodell“ bleibt oben in der Korrekturliste stehen, falls sie
-den Hook doch warm einsetzen will.
+**Der Aufhänger ist Perimenopause und Nervensystem** — die meisten dieser Frauen wissen
+nicht, dass ihre Symptome zusammenhängen können. Daraus entsteht der Erkennungsmoment.
