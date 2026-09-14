@@ -214,6 +214,33 @@ h2 .nr { font-size: 10pt; color: var(--orange); font-family: "Source Sans 3", sa
 }
 .merksatz p { font-family: Philosopher, Georgia, serif; font-size: 13pt; line-height: 1.35; color: var(--tief); }
 
+
+/* ---------- Türen ---------- */
+
+.tueren { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm; }
+
+.tuer {
+  background: var(--papier);
+  border: .5pt solid var(--linie);
+  border-left: 2.5pt solid var(--petrol);
+  border-radius: 1mm;
+  padding: 4mm 4.5mm;
+  page-break-inside: avoid;
+}
+.tuer b { display: block; font-size: 11pt; color: var(--tief); margin-bottom: 1mm; }
+.tuer span { font-size: 10pt; line-height: 1.45; }
+
+.stoerer {
+  background: var(--papier);
+  border: .5pt solid var(--rost);
+  border-radius: 1mm;
+  padding: 5mm 5.5mm;
+  page-break-inside: avoid;
+}
+.stoerer .kopf { font-size: 8.5pt; letter-spacing: .09em; text-transform: uppercase; font-weight: 700; color: var(--rost); display: block; margin-bottom: 2.5mm; }
+.stoerer p { font-size: 10.4pt; line-height: 1.5; }
+.stoerer p + p { margin-top: 2.5mm; }
+
 /* ---------- Fuss ---------- */
 
 .fuss {
@@ -279,7 +306,7 @@ h2 .nr { font-size: 10pt; color: var(--orange); font-family: "Source Sans 3", sa
 
   <div class="fuss">
     <span>Dein Immunsystem und dein Teller</span>
-    <span><b>Mum Life Balance</b> · Seite 1 von 4</span>
+    <span><b>Mum Life Balance</b> · Seite 1 von 6</span>
   </div>
 </div>
 
@@ -324,7 +351,7 @@ h2 .nr { font-size: 10pt; color: var(--orange); font-family: "Source Sans 3", sa
 
   <div class="fuss">
     <span>Dein Immunsystem und dein Teller</span>
-    <span><b>Mum Life Balance</b> · Seite 2 von 4</span>
+    <span><b>Mum Life Balance</b> · Seite 2 von 6</span>
   </div>
 </div>
 
@@ -380,7 +407,7 @@ h2 .nr { font-size: 10pt; color: var(--orange); font-family: "Source Sans 3", sa
 
   <div class="fuss">
     <span>Dein Immunsystem und dein Teller</span>
-    <span><b>Mum Life Balance</b> · Seite 3 von 4</span>
+    <span><b>Mum Life Balance</b> · Seite 3 von 6</span>
   </div>
 </div>
 
@@ -388,7 +415,70 @@ h2 .nr { font-size: 10pt; color: var(--orange); font-family: "Source Sans 3", sa
 <div class="seite">
 
   <div class="block">
-    <h2><span class="nr">06</span> Die Zahlen, die du dir merken kannst</h2>
+    <h2><span class="nr">06</span> Keine Angst, wenn dein Kind kein Gemüse isst</h2>
+    <p class="intro">Diesen Satz höre ich fast jede Woche. Und die Antwort darauf ist entspannter, als du denkst.</p>
+
+    <p>Zuerst das Wichtigste: <b>Wählerisch essen ist bei Kindern die Regel, nicht die Ausnahme.</b> In einer Untersuchung galten 67 Prozent der Vier- bis Siebenjährigen als wählerisch. Du bist also nicht die Einzige, und dein Kind ist nicht auffällig.</p>
+
+    <p>Und „kein Gemüse" heisst nicht „keine Vitamine". <b>Kartoffeln enthalten rund 17 mg Vitamin C pro 100 g</b> — ein Drittel des Gehalts einer Zitrone. Bei den Mengen, die bei uns gegessen werden, sind Kartoffeln eine der wichtigsten Vitamin-C-Quellen überhaupt. Milch, Käse und Butter liefern Vitamin A, Fleisch liefert Eisen und Zink, Brot und Hafer liefern Ballaststoffe.</p>
+
+    <p><b>Deine Darmflora lebt nämlich nicht von Gemüse. Sie lebt von Vielfalt.</b> Gemüse und Obst sind der einfachste Weg dorthin — aber längst nicht der einzige. Es gibt sechs andere Türen:</p>
+  </div>
+
+  <div class="tueren">
+    <div class="tuer"><b>Vollkorn, Hafer, Hülsenfrüchte</b><span>Brot, Haferflocken, Linsen im Eintopf — alles Ballaststoffe, alles Bakterienfutter.</span></div>
+    <div class="tuer"><b>Nüsse, Samen, Kräuter, Gewürze</b><span>Zählen voll mit. Eine Handvoll Petersilie ist ein Punkt wie jeder andere.</span></div>
+    <div class="tuer"><b>Kalte Kartoffeln, Nudeln, Reis</b><span>Beim Abkühlen im Kühlschrank entsteht resistente Stärke — dasselbe Futter wie Ballaststoffe. Zwölf bis vierundzwanzig Stunden reichen.</span></div>
+    <div class="tuer"><b>Beeren, Kakao, Tee, Zwiebeln</b><span>Die Farbstoffe darin werden zu über 90 Prozent gar nicht aufgenommen — sie landen im Darm und füttern dort.</span></div>
+    <div class="tuer"><b>Joghurt, Kefir, Käse, Sauerkraut</b><span>Fermentiertes bringt lebende Kulturen direkt mit. Der vielleicht unterschätzteste Punkt auf dieser Liste.</span></div>
+    <div class="tuer"><b>Leicht unreife Bananen</b><span>Je grüner, desto mehr resistente Stärke. Und die isst fast jedes Kind.</span></div>
+  </div>
+
+  <div class="merksatz">
+    <p>Kartoffelsalat ist Mikrobiom-Futter. Kalte Nudeln vom Vortag auch. Du musst den Kampf um den Broccoli nicht gewinnen.</p>
+  </div>
+
+  <div class="fuss">
+    <span>Dein Immunsystem und dein Teller</span>
+    <span><b>Mum Life Balance</b> · Seite 4 von 6</span>
+  </div>
+</div>
+
+<!-- ===== SEITE 5a ===== -->
+<div class="seite">
+
+  <div class="block">
+    <h2><span class="nr">07</span> Was die Darmflora aufbaut — und was sie stört</h2>
+
+    <p><b>Die überraschendste Studie dazu:</b> 36 Erwachsene, zehn Wochen lang. Eine Gruppe ass viel Fermentiertes — Joghurt, Kefir, gereiften Frischkäse, Sauerkraut, Kimchi. Bei ihnen wurde die Darmflora messbar <b>vielfältiger</b>, und <b>19 entzündungsfördernde Eiweisse im Blut gingen zurück</b>. Je mehr Portionen, desto stärker der Effekt.</p>
+
+    <p>Im Klartext: <b>Ein Kind, das Joghurt und Käse isst, füttert seine Darmflora.</b> Auch wenn auf dem Teller kein Broccoli liegt.</p>
+
+    <p>Und es gibt sogar Hinweise darauf, dass sich das bis in die Atemwege auswirkt. In einer Übersichtsarbeit über randomisierte Studien bekamen Menschen, die Bakterienkulturen einnahmen, <b>seltener eine Erkältung</b> — sie dauerte kürzer, und es wurden weniger Antibiotika verschrieben. Der Weg dahin hat sogar einen Namen: Die kurzkettigen Fettsäuren aus dem Darm gehen ins Blut und fördern die Antikörperbildung an den Atemwegsschleimhäuten.</p>
+  </div>
+
+  <div class="stoerer">
+    <span class="kopf">Und das stört die Darmflora</span>
+    <p><b>Antibiotika — mit Abstand der grösste Störfaktor.</b> Sie wirken nicht nur gegen den Erreger, sondern auch gegen deine eigenen Bakterien. Der Wiederaufbau dauert danach Wochen bis Monate. Das ist kein Argument gegen Antibiotika — wenn sie nötig sind, sind sie nötig. Aber es ist ein Argument dafür, in den Wochen danach bewusst zu füttern: Joghurt, Hafer, Hülsenfrüchte, kalte Kartoffeln.</p>
+    <p><b>Sehr einseitige Kost.</b> Wenig Vielfalt heisst wenig verschiedene Arten — und die Vielfalt ist der Punkt.</p>
+    <p><b>Dauerstress, wenig Schlaf, wenig Bewegung.</b> Das wirkt messbar auf die Zusammensetzung. Deshalb hängt diese Woche auch zusammen: Der Dienstag zahlt auf den Montag ein.</p>
+  </div>
+
+  <div class="block">
+    <p class="intro">Und zum Schluss noch das, was am meisten entlastet: Wie oft ein Kind überhaupt krank wird, hängt vor allem an Kita, Geschwistern und Alter — nicht am Teller. Sechs bis acht Erkältungen im Jahr sind normal, bei Kita-Kindern bis zu dreizehn. Das ist keine Schuldfrage. Der Teller entscheidet weniger darüber, <b>wie oft</b> etwas kommt, als darüber, <b>wie gut dein Körper damit umgeht</b>.</p>
+  </div>
+
+  <div class="fuss">
+    <span>Dein Immunsystem und dein Teller</span>
+    <span><b>Mum Life Balance</b> · Seite 5 von 6</span>
+  </div>
+</div>
+
+<!-- ===== SEITE 6 ===== -->
+<div class="seite">
+
+  <div class="block">
+    <h2><span class="nr">08</span> Die Zahlen, die du dir merken kannst</h2>
 
     <div class="zahlen">
       <div class="zahl-kachel">
@@ -419,7 +509,7 @@ h2 .nr { font-size: 10pt; color: var(--orange); font-family: "Source Sans 3", sa
   </div>
 
   <div class="block">
-    <h2><span class="nr">07</span> Was du ab heute tun kannst</h2>
+    <h2><span class="nr">09</span> Was du ab heute tun kannst</h2>
     <p class="intro">Nichts davon kostet etwas. Und alles davon wirkt sofort.</p>
 
     <div class="schritte">
@@ -467,6 +557,6 @@ h2 .nr { font-size: 10pt; color: var(--orange); font-family: "Source Sans 3", sa
 
   <div class="fuss">
     <span>Dein Immunsystem und dein Teller</span>
-    <span><b>Mum Life Balance</b> · Seite 4 von 4</span>
+    <span><b>Mum Life Balance</b> · Seite 6 von 6</span>
   </div>
 </div>
