@@ -3856,7 +3856,7 @@
     "Lead-Beitrag mit Kommentar-Stichwort. Reichweiten-Beitraege nie mit Verkauf ueberladen."
   ].join("\n");
 
-  function wissenText() {
+  function wissenText(format) {
     var teile = WISSEN_FELDER.map(function (f) {
       return f.l.toUpperCase() + ":\n" + (wissen[f.k] || f.d);
     });
@@ -3870,6 +3870,11 @@
     if (wissenVoll && wissenVoll.text) {
       teile.push("DAS VOLLSTAENDIGE MARKENWISSEN (Stand " +
         (wissenVoll.stand || "unbekannt") + ")\n" + wissenVoll.text);
+    }
+    // Nur das Framework des gewaehlten Formats — Reel, Karussell oder Story.
+    if (format && wissenVoll && wissenVoll.formate && wissenVoll.formate[format]) {
+      teile.push("WISSEN ZUM FORMAT " + format.toUpperCase() + "\n" +
+                 wissenVoll.formate[format]);
     }
     return teile.join("\n\n");
   }
@@ -3953,7 +3958,7 @@
     feld("Für welchen Käufertyp", sel("archetyp", ARCHETYPEN.filter(function (a) { return a !== "—"; })));
     feld("Auf welches Angebot zahlt es ein", sel("angebot", [""].concat(state.produkte.map(function (a) { return a.name; }))));
     feld("Launchphase, falls eine läuft", sel("phase", [""].concat(PHASEN)));
-    feld("Was soll entstehen", sel("format", ["Karussell", "Story-Sequenz", "Nur Hooks", "Nur Caption"]));
+    feld("Was soll entstehen", sel("format", ["Karussell", "Reel", "Story-Sequenz", "Nur Hooks", "Nur Caption"]));
 
     var typSel = document.createElement("select");
     Object.keys(TYPEN).forEach(function (k) {
@@ -4016,9 +4021,10 @@
     if (sr) sr.innerHTML = "<h2>Ergebnis</h2><div class=\"thinking\">schreibt gerade, das dauert einen Moment …</div>";
 
     var f = studioForm;
+    var FORMAT_SCHLUESSEL = { "Karussell": "karussell", "Reel": "reel", "Story-Sequenz": "story" };
     var basis =
       "Du bist die Ghostwriterin von Patricia Ulmann. Hier ist alles, was du über ihre Marke, ihre Zielgruppe und ihre Regeln wissen musst:\n\n" +
-      wissenText() +
+      wissenText(FORMAT_SCHLUESSEL[f.format] || "") +
       "\n\nHalte dich streng an Ton, Hookregeln und Verbote. Schreibe so, dass es nach ihr klingt und nicht nach Marketingtext.\n" +
       "Bevor du antwortest: geh die vier Fragen vom letzten Check und die vier vom Beitrags-Check durch. " +
       "Was eine davon nicht besteht, schreibst du neu, statt es abzuliefern.\n\n" +
@@ -4047,6 +4053,14 @@
         "Erlaubte Layouts: hook, text, split, bild, zitat, cta. Headlines kurz, Fliesstext höchstens vierzig Wörter pro Slide. " +
         "Gib ausserdem drei alternative Hooks und die fertige Caption nach dem hinterlegten Aufbau.\n\n" +
         'Antworte als JSON: {"name": "kurzer Titel", "hooks": ["...","...","..."], "slides": [{"layout": "hook", "headline": "...", "body": "...", "keyword": ""}], "caption": "...", "bildidee": "eine Zeile, was auf ein Bild gehört"}';
+    } else if (f.format === "Reel") {
+      auftrag = "Baue ein Reel. Halte dich an die Reel-Regeln oben: 3-Sekunden-Regel, " +
+        "Struktur-Formel, On-Screen-Text, kein langweiliges Reel. " +
+        "Das Sprechskript ist fuer ein Selfie-Video von dreissig bis fuenfundvierzig Sekunden, " +
+        "in gesprochener Sprache, ohne Regieanweisungen im Text. " +
+        "Die Titelbild-Hook hat hoechstens acht Woerter und steht gross lesbar auf dem Standbild. " +
+        "Sag ausserdem, was auf dem Titelbild zu sehen sein soll, und gib drei alternative Hooks.\n\n" +
+        'Antworte als JSON: {"name": "kurzer Titel", "hook": "Titelbild-Hook", "unter": "kurze Unterzeile oder leer", "hooks": ["...","...","..."], "skript": "das Sprechskript", "caption": "die fertige Caption", "bildidee": "was auf dem Titelbild zu sehen ist"}';
     } else if (f.format === "Story-Sequenz") {
       auftrag = "Baue eine Instagram-Story-Sequenz mit sechs bis acht Frames nach dem hinterlegten Storyaufbau. " +
         "Erlaubte Layouts: text, bild, frage, umfrage, cta. Mindestens ein Frame mit Interaktion, also frage oder umfrage. " +
@@ -4153,6 +4167,39 @@
       };
       act.appendChild(b1); act.appendChild(b2);
       wrap.appendChild(act);
+    }
+
+    if (studioResult.__format === "Reel" && (r.skript || r.hook)) {
+      var rw = document.createElement("div");
+      rw.style.cssText = "display:flex;flex-direction:column;gap:10px";
+      if (r.hook) {
+        var hz = document.createElement("div");
+        hz.className = "sp";
+        hz.innerHTML = "<b>" + esc(r.hook) + "</b>" + esc(r.unter || "");
+        rw.appendChild(hz);
+      }
+      if (r.skript) {
+        var st = document.createElement("textarea");
+        st.style.cssText = "width:100%;min-height:190px;background:var(--ground);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:13px";
+        st.value = r.skript;
+        rw.appendChild(st);
+      }
+      var rb = document.createElement("button");
+      rb.className = "btn primary";
+      rb.textContent = "Als Reel anlegen";
+      rb.onclick = function () {
+        var neu = neuesReel(r.name || studioForm.idee.slice(0, 40));
+        neu.hook = r.hook || "";
+        neu.unter = r.unter || "";
+        neu.skript = r.skript || "";
+        neu.caption = r.caption || "";
+        saveReel(neu);
+        activeTab = "reels";
+        render();
+        toast("Reel angelegt. Video reinziehen, Titelbild waehlen, fertig.");
+      };
+      rw.appendChild(rb);
+      block("Reel — Titelbild-Hook und Sprechskript", rw);
     }
 
     if (r.frames && r.frames.length) {
@@ -4681,7 +4728,7 @@
         if (!thema) { themaIn.focus(); toast("Schreib zuerst rein, worum es gehen soll."); return; }
         reelBusy = true; gen.disabled = true; gen.textContent = "schreibt …";
         sampler.json(
-          "Du bist die Ghostwriterin von Patricia Ulmann. Ihr Wissen und ihre Regeln:\n\n" + wissenText() +
+          "Du bist die Ghostwriterin von Patricia Ulmann. Ihr Wissen und ihre Regeln:\n\n" + wissenText("reel") +
           "\n\nSchreibe ein Reel zu diesem Thema: " + thema +
           "\nDas Sprechskript ist für ein Selfie-Video von etwa dreissig bis fünfundvierzig Sekunden, in gesprochener Sprache, ohne Regieanweisungen. " +
           "Die Titelbild-Hook hat höchstens acht Wörter und steht in Grossbuchstaben gut lesbar auf dem Standbild.\n\n" +
