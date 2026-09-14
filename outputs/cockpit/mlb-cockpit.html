@@ -1365,6 +1365,10 @@
         (b.art === "karussells" ? '<div class="wk-folien"></div>' : "") +
         '<div class="wk-fuss">' +
           '<input type="date" value="' + esc(b.obj.datum || "") + '">' +
+          '<select class="btn wk-profil">' +
+            '<option value="mentoring"' + ((b.obj.blotato && b.obj.blotato.profil) === "doterra" ? "" : " selected") + '>Mentoring</option>' +
+            '<option value="doterra"' + ((b.obj.blotato && b.obj.blotato.profil) === "doterra" ? " selected" : "") + '>doTERRA</option>' +
+          '</select>' +
           '<button class="btn">Caption kopieren</button>' +
           (b.art === "karussells" ? '<button class="btn">Im Bild-Editor bauen</button>' : "") +
           '<button class="btn' + (b.obj.textfrei ? "" : " primary") + '">' +
@@ -1505,12 +1509,87 @@
         window.open(BILDEDITOR, "_blank", "noopener");
       };
     }
+    var profilWahl = karte.querySelector(".wk-profil");
+    if (profilWahl) {
+      profilWahl.onchange = function () {
+        var bl = b.obj.blotato || (b.obj.blotato = {});
+        bl.profil = this.value;
+        if (b.art === "reels") saveReel(b.obj); else saveCarousel(b.obj);
+      };
+    }
+
     var freigabeKnopf = felder[felder.length - 1];
     freigabeKnopf.onclick = function () {
-      b.obj.textfrei = !b.obj.textfrei;
+      var an = !b.obj.textfrei;
+      b.obj.textfrei = an;
       if (b.art === "reels") saveReel(b.obj); else saveCarousel(b.obj);
-      toast(b.obj.textfrei ? "Freigegeben" : "Freigabe zurückgenommen");
-      render();
+
+      // Zurueckgenommen: nur den Vermerk setzen, nichts loeschen.
+      if (!an) {
+        if (db) {
+          db.collection("freigaben").doc(b.id).set({
+            name: b.titel, status: "zurueckgezogen",
+            updatedAt: new Date().toISOString()
+          }).catch(function () {});
+        }
+        toast("Freigabe zurückgenommen");
+        render();
+        return;
+      }
+
+      if (!db) { toast("Freigegeben — aber ohne Datenbank nur lokal."); render(); return; }
+      if (!b.obj.datum) { toast("Freigegeben. Setz noch ein Datum, sonst kann ich es nicht einplanen."); render(); return; }
+      if (!(b.caption || "").trim()) { toast("Freigegeben. Ohne Caption kann ich es aber nicht einplanen."); render(); return; }
+
+      var bl = b.obj.blotato || (b.obj.blotato = {});
+      var profil = bl.profil || "mentoring";
+      var zeit = bl.zeit || (b.art === "reels" ? "18:00" : "07:30");
+      var wann = new Date(b.obj.datum + "T" + zeit);
+
+      function steuerSchreiben(anzahl) {
+        db.collection("freigaben").doc(b.id).set({
+          name: b.titel,
+          typ: b.art === "reels" ? "reel" : "karussell",
+          caption: b.caption || "",
+          videodatei: b.obj.videodatei || "",
+          profil: profil,
+          datum: b.obj.datum,
+          zeit: zeit,
+          zeitpunktISO: isNaN(wann) ? "" : wann.toISOString(),
+          anzahl: anzahl,
+          status: "wartet",
+          updatedAt: new Date().toISOString()
+        }).then(function () {
+          bl.status = "wartet";
+          if (b.art === "reels") saveReel(b.obj); else saveCarousel(b.obj);
+          toast("Freigegeben und abgelegt. Sag es mir im Chat, dann plane ich es ein.");
+          render();
+        }).catch(function () { toast("Das Ablegen hat nicht geklappt."); render(); });
+      }
+
+      // Beim Karussell wandern die fertigen Folien mit — genau so, wie sie hier aussehen.
+      if (b.art === "karussells" && b.obj.slides && b.obj.slides.length) {
+        var i = 0, gesamt = b.obj.slides.length;
+        freigabeKnopf.disabled = true;
+        (function naechste() {
+          if (i >= gesamt) { freigabeKnopf.disabled = false; steuerSchreiben(gesamt); return; }
+          var nr = i++;
+          freigabeKnopf.textContent = "lege Folie " + (nr + 1) + " von " + gesamt + " ab …";
+          slideJpeg(b.obj, b.obj.slides[nr], nr, function (dataUrl) {
+            db.doc("freigaben/" + b.id).collection("bilder")
+              .doc("slide-" + String(nr + 1).padStart(2, "0"))
+              .set({ dataUrl: dataUrl, nr: nr + 1 })
+              .then(naechste)
+              .catch(function () {
+                freigabeKnopf.disabled = false;
+                toast("Folie " + (nr + 1) + " liess sich nicht ablegen.");
+                render();
+              });
+          });
+        })();
+        return;
+      }
+      steuerSchreiben(1);
     };
     return karte;
   }
