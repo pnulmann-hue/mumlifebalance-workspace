@@ -75,6 +75,11 @@
 
   select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;
     font-family:inherit;font-size:15px;color:var(--ink);background:var(--bg)}
+  .woche{display:none;margin-top:12px;background:var(--bg);border-left:4px solid var(--petrol);
+    border-radius:0 10px 10px 0;padding:10px 12px;font-size:13.5px;line-height:1.5}
+  .woche.on{display:block}
+  .woche b{color:var(--petrol)}
+  .woche .quelle{display:block;margin-top:6px;font-size:12px;color:var(--muted)}
   .idee{display:none;margin-top:14px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:13px 14px}
   .idee.on{display:block}
   .idee h3{font-family:"Philosopher",serif;font-size:19px;margin:0 0 3px;color:var(--ink)}
@@ -135,6 +140,7 @@
         <button data-p="mentoring" class="on">Mentoring</button>
         <button data-p="doterra">doTERRA</button>
       </div>
+      <div class="woche" id="woche"></div>
       <label>Thema gerade (Wochenfokus, Angebot, was dich beschäftigt)</label>
       <input type="text" id="thema" placeholder="z.B. sichtbar sein ohne den ganzen Tag am Handy">
       <label>Wo stehst du?</label>
@@ -1106,6 +1112,42 @@ Jede Folie höchstens zwei kurze Zeilen, so wie man es einer Freundin sagen wür
 Jede Sequenz endet mit genau einem CTA: entweder Antwort auf einen Sticker oder ein Link.
 `;
 
+  /* ---------- Was diese Woche läuft ----------
+     Ein Artifact kommt nicht an Notion und nicht an die Dateien. Deshalb legt Claude den
+     Wochenfokus als Dokument `daten/woche` ab, und die Seite liest ihn hier.             */
+  let wocheDaten = null;
+  (async () => {
+    try {
+      const db = (typeof claude !== "undefined" && claude.use) ? await claude.use("db") : null;
+      if (!db) return;
+      const schnapp = await db.doc("daten/woche").get();
+      if (!schnapp.exists) return;
+      wocheDaten = schnapp.data();
+      wocheZeigen();
+    } catch (e) { /* ohne Wochenfokus läuft alles weiter */ }
+  })();
+
+  function profilJetzt(){ return document.querySelector('#profilSeg button.on').dataset.p; }
+
+  function wocheZeigen(){
+    const box = g('woche');
+    if (!wocheDaten){ box.classList.remove('on'); return; }
+    const p = wocheDaten[profilJetzt()];
+    if (!p){ box.classList.remove('on'); return; }
+    box.innerHTML = `<b>Diese Woche (KW ${wocheDaten.kw}, ${esc(wocheDaten.zeitraum)}):</b> ${esc(p.fokus)}`
+      + (p.angebot ? `<br>Angebot: ${esc(p.angebot)}` : "")
+      + `<span class="quelle">Stand ${esc(wocheDaten.stand)} · ${esc(wocheDaten.quelle)}</span>`;
+    box.classList.add('on');
+    // Vorbelegen, solange Patricia nichts Eigenes eingetragen hat. Was wir selbst
+    // eingesetzt haben, merken wir uns — dann darf der Profilwechsel es ersetzen.
+    const feld = g('thema');
+    if (!feld.value.trim() || feld.value === themaAuto){
+      feld.value = p.fokus; themaAuto = p.fokus;
+      if (p.lage) g('lage').value = p.lage;
+    }
+  }
+  let themaAuto = "";
+
   /* ---------- Claude direkt fragen (Fähigkeit "sample") ---------- */
   let kiVerfuegbar = null;   // null = noch unbekannt
   (async () => {
@@ -1113,6 +1155,18 @@ Jede Sequenz endet mit genau einem CTA: entweder Antwort auf einen Sticker oder 
     catch (e) { kiVerfuegbar = null; }
     g('ideeBtn').textContent = kiVerfuegbar ? "Idee schreiben lassen" : "Idee geben";
   })();
+
+  // Was diese Woche läuft, wörtlich in den Auftrag — damit die Idee dazu passt
+  function wochenBlock(profil){
+    if (!wocheDaten || !wocheDaten[profil]) return "";
+    const p = wocheDaten[profil];
+    return `
+DIESE WOCHE (KW ${wocheDaten.kw}, ${wocheDaten.zeitraum})
+Wochenfokus: ${p.fokus}
+Monatsthema: ${p.monatsthema || "—"}
+Angebot, auf das alles zuläuft: ${p.angebot || "—"}
+Die Story muss auf diesen Wochenfokus einzahlen.`;
+  }
 
   async function ideeVonClaude(thema, lage, saeule, profil){
     const lagen = {normal:"ein ganz normaler Tag, kein Launch",
@@ -1137,6 +1191,7 @@ Profil: ${profil === "doterra" ? "doTERRA (die erschöpfte Mama)" : "Mentoring (
 Lage: ${lagen[lage]}
 Säule: ${saeulen[saeule]}
 Thema gerade: ${thema || "frei — nimm einen der Schmerzpunkte oben"}
+${wochenBlock(profil)}
 ${gezeigte.length ? "Diese Titel gab es schon, nimm etwas anderes: " + gezeigte.join(" · ") : ""}
 
 Antworte als JSON, genau so:
@@ -1214,6 +1269,7 @@ Drei bis sechs Folien. Nichts ausserhalb des JSON.`;
 
   document.querySelectorAll('#profilSeg button').forEach(b=>b.onclick=()=>{
     document.querySelectorAll('#profilSeg button').forEach(x=>x.classList.toggle('on',x===b));
+    wocheZeigen();
   });
   g('ideeBtn').onclick = ideeGeben;
   g('ideeUeber').onclick = ()=>{
