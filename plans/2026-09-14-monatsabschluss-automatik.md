@@ -41,6 +41,11 @@ Sie liest die Diagnose, beantwortet die acht Fragen im Chat. Mehr nicht.
   Begründung Fokus, Learnings, beide Analyse-Felder)
 - **Alle 4–5 Wochenplanungen anlegen** mit Zeitraum, Fokus der Woche,
   Wochen-Hauptprodukt, Sales-Pattern, Wochen-CTA
+
+  Das sind genau die vier Felder, die `/story`, `/freitag-hooks` und `/cockpit`
+  auslesen. Die Vorlage fragt sie seit dem 14.9. auch ab — vorher tat sie das
+  nicht, deshalb standen sie fast überall leer und die Content-Skills mussten
+  raten. **Eine Woche ohne diese vier Felder ist für die Assistenten wertlos.**
 - `outputs/monatsplaene/JJJJ-MM.md` schreiben, getrennt nach Mentoring und doTERRA
 
 ---

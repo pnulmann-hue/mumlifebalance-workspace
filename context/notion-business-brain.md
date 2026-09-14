@@ -220,11 +220,15 @@ Die Vorlage hat **6 strukturierte Sektionen**, die jeden Monat abgearbeitet werd
 
 2. 🎯 PLANUNG DER NÄCHSTEN WOCHE
    2.1 Fokus für die nächste Woche definieren
-   2.2 Was planst du je Business-Säule?
+   2.2 Produkt- und Themenfokus  ← ergänzt 2026-09-14
+       → füllt die vier Properties, die die Content-Skills lesen:
+         🎯 Wochen-Hauptprodukt · Fokus der Woche ·
+         📅 Sales-Pattern · Wochen-CTA
+   2.3 Was planst du je Business-Säule?
        → 5 Säulen: Kundenarbeit · Produktentwicklung ·
                    Business-Struktur · Content-Creation · Weiterbildung
-   2.3 Wochenplanung (Termine + Tasks aus Aufgaben-DB)
-   2.4 Ausblick auf nächste 2 Wochen + Me-Time einplanen
+   2.4 Wochenplanung (Termine + Tasks aus Aufgaben-DB)
+   2.5 Ausblick auf nächste 2 Wochen + Me-Time einplanen
 
 3. 🧹 ORDNUNGSROUTINEN
    3.1 Allgemeine Ordnung (Downloads · Tabs · Mails · Notizen)
