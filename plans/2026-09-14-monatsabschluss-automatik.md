@@ -96,6 +96,36 @@ jeden Tag mit höchstens einem Hauptbrocken plus zwei kleineren Aufgaben. Was
 verschoben wird, zieht der nächste Wochenblick nach. Ein zu enges Gerüst wird
 sonst nach zehn Tagen ignoriert — und dann ist es schlechter als keins.
 
+#### Der Launch-Baustein — das eigentliche Ziel
+
+**Wenn im Interview ein Launch fällt, erzeugt der Task alles, was daraus
+folgt** — rückwärts vom Verkaufsdatum, verteilt auf Wochen und Tage. Patricia
+sagt „Claude-Kurs am 15.10.", und der Rest steht.
+
+| Strang | Was erzeugt wird | wann |
+|---|---|---|
+| **Produktion** | Aufnahme-Halbtage, Schnitt, Upload in die Academy | 3–4 Wochen vorher |
+| **Technik** | Salespage, Checkout, Order Bump, **Testkauf**, ggf. Zugangscodes | 1 Woche vorher |
+| **Aufwärmen** | Feed-Posts zum Thema, kein Preis, kein Programmname | 1–2 Wochen vorher |
+| **Verkauf** | Story-Fahrplan täglich, Mail-Sequenz, Erinnerung vor Cart-Close | Launch-Fenster |
+| **Nacharbeit** | Testimonials einsammeln, Zahlen auswerten, Salespage-Platzhalter ersetzen | 1–2 Wochen danach |
+
+Jeder Strang wird zu **datierten Aufgaben in der Aufgaben-DB** und zu
+**Tagesfokus-Einträgen** — nicht nur zu einem Dokument, das man aufmachen muss.
+Genau daran ist es bisher gescheitert: Die Launch-Kalender aus `/produkt` und
+`/funnel` sind gut, aber sie landeten nie im Tagesgeschäft.
+
+**Was der Baustein blockiert, ist so wichtig wie das, was er erzeugt.** In der
+Woche vor einem Verkaufsstart wird nichts anderes Grosses eingeplant. Beim
+Startklar-Launch stand der Claude-Kurs 1/9 am selben Freitag wie die
+Launch-Mails — das hätte niemand geschafft.
+
+**Zwei Prüfungen laufen automatisch mit:**
+- Alle Vorbedingungen vor dem Termin erledigt? Beispiel: Schnitt am Montag
+  setzt voraus, dass die Aufnahmen stehen.
+- Kollidiert der Launch mit einem anderen? Zwei Verkaufsfenster gleichzeitig
+  kosten beide Reichweite.
+
 #### Ebene 4 — Dateien
 
 `outputs/monatsplaene/JJJJ-MM.md`, getrennt nach Mentoring und doTERRA.
