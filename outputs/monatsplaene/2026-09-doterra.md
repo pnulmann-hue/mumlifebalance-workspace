@@ -56,7 +56,11 @@ Ein eigenes Nervensystem-Freebie kommt frühestens im Oktober — und nur, wenn 
 
 **Leitplanken:** Reels-only (Profil unter 300 Follower) · Zeitanker im Hook · Emotion **und** konkreter Mehrwert · keine Stakkato-Sätze · doTERRA bleibt unsichtbar · kein Heilversprechen, immer „bei mir war" · max 5 Hashtags · **jedes Reel zusätzlich auf Facebook** (dort sitzt deine 35+-Zielgruppe aktiver).
 
-**Job-Verteilung pro Woche:** 2× Reichweite (Share-CTA, kein Keyword) · 1× Autorität/Mehrwert · 1× Lead (Keyword ENERGIE).
+**Job-Verteilung pro Woche:** 2× Reichweite · 1× Autorität/Mehrwert · 1× Lead.
+
+> ⚠️ **Korrektur vom 14.09.2026 (Patricia):** **Mindestens drei Keyword-Beiträge pro Woche — auch auf doTERRA.** Die ursprüngliche Regel „nur der Lead-Post trägt ein Keyword, Reichweiten-Posts nur Share-CTA" ist damit überholt. Begründung: Die reinen Share-CTAs haben bisher nachweislich nichts gebracht — null Kommentare über zwölf Beiträge. Ein Keyword kostet keine Reichweite, aber ohne eines passiert gar nichts.
+>
+> Weiterhin gilt: **genau ein** Keyword pro Beitrag, nie zwei. Auf doTERRA ist das derzeit `ENERGIE`; weitere (`RUHE`, `NOTFALL`, `SAMPLE`, `CHALLENGE`) sind in `manychat-keywords.md` vorgemerkt, aber **noch nicht in ManyChat angelegt** — vor Verwendung prüfen, sonst läuft der Kommentar ins Leere.
 
 ### KW36 — Aufschlag „Funktionier-Modus"
 
