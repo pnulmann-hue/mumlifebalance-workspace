@@ -38,9 +38,10 @@ keine Wiederholung, sondern der Aufbau.
 ist der stärkste Kandidat für nächste Woche — der Hook lief in der Nische mit
 151 Kommentaren, aber diese Woche liegt der Schmerz schon auf Montag.
 
-> 🚨 **Die Caption des Dienstag-Karussells muss überarbeitet werden**, bevor sie rausgeht.
-> Sie beginnt mit einer erfundenen DM („Letzte Woche hat mir jemand geschrieben …").
-> Patricia am 14.09. zu genau diesem Satz: **„lüge. kenn ich so nicht."**
+> ✅ **Die Caption des Dienstag-Karussells ist ersetzt** (14.09.). Die alte begann mit
+> einer erfundenen DM — Patricia dazu: „lüge. kenn ich so nicht.“ Die neue steigt mit
+> einem Satz ein, den sie selber jahrelang gesagt hat. Auch die Folien sind angepasst:
+> „Bein“ und „Hybridmodell“ sind raus.
 
 ---
 
@@ -73,3 +74,24 @@ Woche vorgemerkt, D10 als Lead-Hook für den Monatsabschluss.
 2. Die vier doTERRA-Reels mit Sprechtext und Shotlist
 3. Der Story-Bogen Mo–Fr, je Tag eine ausformulierte Sequenz
 4. Alles ins Cockpit und in den Bild-Editor
+
+---## Was am 14.09. wirklich im Cockpit gelandet ist
+
+| Sammlung | Dokumente |
+|---|---|
+| `karussells` | `kar-kw38-di` (ersetzt) · `kar-kw38-mi` · `kar-kw38-fr` |
+| `reels` | `reel-kw38-mo` · `reel-kw38-do` · `reel-kw38-dt-mo/di/mi/fr` |
+| `storys` | `story-kw38-mo` bis `story-kw38-fr` |
+
+Bild-Editor: `daten/woche`, `daten/beitraege` und `daten/entwuerfe` neu geschrieben.
+
+⚠️ **Altbestand vom 11.09.:** In `reels` lagen schon vier KW38-Reels mit fertig
+gerenderten Videos. `reel-kw38-mo` und `reel-kw38-do` wurden von den neuen ersetzt —
+ihre Videos liegen unberührt im Anhang des Artifacts
+(`/_blob/b6656081541e1830457dacf96d07fa6f` und `/_blob/80cd1a51beb74aa3906f477d8e710033`)
+und lassen sich jederzeit wieder anhängen.
+
+**`reel-kw38-mi` und `reel-kw38-fr` stehen noch** — beide mit Video, beide LEAD auf
+STANDBEIN: „3 Wege — ohne eine einzige Namensliste." und „Und du gehst trotzdem am Montag
+ins Büro." Sie liegen jetzt neben den neuen Karussells auf Mi und Fr.
+**Patricia entscheidet, was gilt.**
