@@ -37,16 +37,68 @@ Sie liest die Diagnose, beantwortet die acht Fragen im Chat. Mehr nicht.
 
 ### Phase C — automatisch nach den Antworten
 
-- Notion-Monatsplan für den Folgemonat füllen (3 Monatsziele, Produkt-Trio,
-  Begründung Fokus, Learnings, beide Analyse-Felder)
-- **Alle 4–5 Wochenplanungen anlegen** mit Zeitraum, Fokus der Woche,
-  Wochen-Hauptprodukt, Sales-Pattern, Wochen-CTA
+**Vier Ebenen, eine Entscheidung.** Patricia legt den Monatsfokus fest, alles
+darunter leitet sich ab. Sie plant Wochen und Tage **nicht mehr einzeln**.
 
-  Das sind genau die vier Felder, die `/story`, `/freitag-hooks` und `/cockpit`
-  auslesen. Die Vorlage fragt sie seit dem 14.9. auch ab — vorher tat sie das
-  nicht, deshalb standen sie fast überall leer und die Content-Skills mussten
-  raten. **Eine Woche ohne diese vier Felder ist für die Assistenten wertlos.**
-- `outputs/monatsplaene/JJJJ-MM.md` schreiben, getrennt nach Mentoring und doTERRA
+#### Ebene 1 — Monatsfokus
+
+Genau **eine der drei Produkttreppen** trägt den Monat:
+
+| Säule | Treppe (aus `active-funnels.json`) |
+|---|---|
+| Sichtbarkeit / Instagram | Freebie → Finde dein Thema 39 → Expertin 97 → Instagram-Kundenmaschine 333 |
+| Zeit / Struktur | Freebie → Minikurs → Mama-CEO |
+| Digitale Produktwelt | Freebie → Minikurs → Digitale Produktwelt |
+
+Alle drei münden in die MBA. Das 1:1 „Aus Nebenbei wird Business" (777) läuft
+quer dazu und passt in jeden Monat.
+
+#### Ebene 2 — Wochenthemen innerhalb der Säule
+
+Jede Woche ein eigenes Thema aus derselben Säule, mit dem passenden Produkt
+der Treppe. **Beworben wird abwechselnd**, nicht jede Woche dasselbe:
+
+| | Schwerpunkt der Woche | typischer Aufruf |
+|---|---|---|
+| KW 1 | Einstieg ins Thema | Leadmagnet, Keyword |
+| KW 2 | Vertiefung | Minikurs |
+| KW 3 | das grosse Versprechen | grosser Kurs, in Stories |
+| KW 4 | Zusammenführung | MBA oder 1:1, nur in Stories |
+
+Das ist ein Vorschlag, kein Zwang — der Task legt ihn hin, Patricia verschiebt
+ihn, wenn es gerade anders passt. **Feste Regel bleibt:** kein Programm und
+kein Preis im Feed, Verkauf läuft über Stories und Mails.
+
+Gefüllt werden je Woche die vier Felder, die `/story`, `/freitag-hooks` und
+`/cockpit` auslesen: `Fokus der Woche`, `🎯 Wochen-Hauptprodukt`,
+`📅 Sales-Pattern`, `Wochen-CTA`. Die Vorlage fragt sie seit dem 14.9. ab —
+vorher tat sie das nicht, deshalb standen sie fast überall leer und die
+Content-Skills mussten raten. **Eine Woche ohne diese vier Felder ist für die
+Assistenten wertlos.**
+
+#### Ebene 3 — Tage mit Aufgaben
+
+Für jeden Werktag des Monats ein Tagesplaner-Eintrag mit `Tagesfokus`, dazu
+die Aufgaben mit Datum in der Aufgaben-DB. Zusammengesetzt aus:
+
+- **Hauptbrocken nach Wochentag** (steht fest): Mo Wochen-Content · Di doTERRA
+  · Mi Business-Struktur · Do Produktentwicklung · Fr Newsletter + Weiterbildung
+- **Monatliche Fixpunkte:** doTERRA-Newsletter + Bestellung am 1., Mums
+  Bestellung + PO9 am 10., Backoffice-Check um den 20.
+- **Vorlagen-Aufgaben** aus der Aufgaben-DB (Status „Vorlage") auf die Wochen verteilt
+- **Produktarbeit aus dem Monatsfokus** — was gebaut, aufgenommen, geschrieben
+  werden muss, in Halbtagen geschnitten
+- **Ferien und reduzierte Wochen** aus der Energie-Lage-Antwort
+
+⚠️ **Ehrlich zur Tagesplanung:** Ein Monat im Voraus auf Tage verteilt hält
+nie ganz. Deshalb plant der Task **Halbtage, keine Stunden**, und markiert
+jeden Tag mit höchstens einem Hauptbrocken plus zwei kleineren Aufgaben. Was
+verschoben wird, zieht der nächste Wochenblick nach. Ein zu enges Gerüst wird
+sonst nach zehn Tagen ignoriert — und dann ist es schlechter als keins.
+
+#### Ebene 4 — Dateien
+
+`outputs/monatsplaene/JJJJ-MM.md`, getrennt nach Mentoring und doTERRA.
 
 ---
 
@@ -83,8 +135,11 @@ ans Artifact gehängt.
 3. **Notion-Schreiber** — Kennzahlen, Reichweiten, Content-Performance
    nachtragen. Zuordnung Post → Notion-Eintrag über das Veröffentlichungsdatum. ~1 Std.
 4. **Wochen-Anleger** — aus dem beantworteten Interview die 4–5
-   Wochenplanungen erzeugen. ~1 Std.
-5. **Scheduled Task** anlegen, Cron `0 7 29 * *`.
+   Wochenplanungen erzeugen, inklusive der Produkt-Rotation über die Wochen. ~1 Std.
+5. **Tages-Anleger** — für jeden Werktag einen Tagesplaner-Eintrag mit
+   Tagesfokus plus die datierten Aufgaben. Braucht die Hauptbrocken-Rotation,
+   die monatlichen Fixpunkte und die Vorlagen-Aufgaben. ~1,5 Std.
+6. **Scheduled Task** anlegen, Cron `0 7 29 * *`.
 
 ---
 
