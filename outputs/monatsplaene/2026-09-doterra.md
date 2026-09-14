@@ -34,7 +34,29 @@ Ein eigenes Nervensystem-Freebie kommt frühestens im Oktober — und nur, wenn 
 - **Adaptiv** · **Balance** · **Copaiba** — laut Jahresrhythmus die Monatsprodukte
 - ⚠️ **PV-Summe im CH-Shop verifizieren**, Ziel ≥ 150 PV. Ich erfinde keine PV-Werte — nur VMG+ 95 PV ist belegt.
 
-**Einschreibe-Anlass:** Start der ersten **Gleichgewicht-Runde am 1. Oktober**. Alles im September läuft darauf zu.
+**Einschreibe-Anlass:** Start der ersten Runde am 1. Oktober. Alles im September läuft darauf zu.
+
+> 🚨 **Präzisiert am 14.09.2026 (Patricia) — das Angebot heisst Energiekur.**
+>
+> | | |
+> |---|---|
+> | **Was** | 4 Wochen Begleitung **zusammen mit** dem Produkt-Bundle — beides als ein Angebot, nicht getrennt |
+> | **Aufwärmen** | KW38, Mo 14.9. – Fr 18.9. |
+> | **Verkaufsfenster** | ab KW39, Mo 21.9. |
+> | **Bestell-Deadline** | **Do 25.9.** — spätester Tag, damit die Produkte zum Start da sind |
+> | **Kur-Start** | Mi 1.10. |
+> | **Verkaufsweg** | über Patricia persönlich im DM-Gespräch, sie schickt den Bestell-Link. **Kein Checkout.** |
+>
+> **Was daraus für den Content folgt:** Der Beitrag verkauft nicht — er holt ins Gespräch.
+> Ziel jedes Lead-Beitrags ist eine **DM**, kein Klick. Das Keyword `ENERGIE` ist damit
+> nicht nur Lead-Sammler, sondern der Einstieg ins Verkaufsgespräch — und genau deshalb
+> gilt ab jetzt auch hier: mindestens drei Keyword-Beiträge pro Woche.
+>
+> **Die Dringlichkeit ist echt und braucht keine Erfindung:** Die Produkte müssen vor dem
+> 1.10. geliefert sein, deshalb ist der 25.9. der letzte Bestelltag. **Immer den Lieferweg
+> als Grund nennen**, nie künstlich verknappen.
+>
+> Noch offen: Preis, PV-Summe des Bundles, ob die Runde eine Teilnehmerinnen-Obergrenze hat.
 
 ---
 
@@ -44,8 +66,8 @@ Ein eigenes Nervensystem-Freebie kommt frühestens im Oktober — und nur, wenn 
 |---|---|---|---|
 | **36** | Di 1.9.–Fr 4.9. | **Aufschlag Funktionier-Modus** | Profil-Audit (Bio + Link + 3 Pinned + Highlights) · ~~Landingpage veröffentlichen~~ ✅ erledigt |
 | **37** | Mo 7.9.–Fr 11.9. | **Warum dein Körper nicht mehr runterkommt** | Freebie live · Reaktivierung Stadium Soft (7 Kundinnen) |
-| **38** | Mo 14.9.–Fr 18.9. | **Die drei Kipp-Punkte im Tag** | Reaktivierung Stadium Hard (8) · erste DM-Gespräche führen |
-| **39** | Mo 21.9.–Fr 25.9. | **Was ich selbst geändert habe** | Reaktivierung Last-Call (7) · Gleichgewicht-Runde anbieten |
+| **38** | Mo 14.9.–Fr 18.9. | **Die drei Kipp-Punkte im Tag** — zugleich **Aufwärmphase Energiekur** | Reaktivierung Stadium Hard (8) · erste DM-Gespräche führen |
+| **39** | Mo 21.9.–Fr 25.9. | **Was ich selbst geändert habe** — zugleich **Verkaufsfenster Energiekur**, Bestell-Deadline Do 25.9. | Reaktivierung Last-Call (7) · Energiekur im Gespräch anbieten |
 | **40** | Mo 28.9.–Mi 30.9. | **Einladung zur Oktober-Runde** | Einschreibungen abschliessen · Oktober vorbereiten |
 
 **Deine drei Fixpunkte pro Woche** (wenn sonst nichts geht): 3 Reels · 5 Reaktivierungs-Nachrichten · alle neuen Leads persönlich angeschrieben.

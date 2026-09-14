@@ -765,6 +765,42 @@
       "content_hinweise": "Keyword STANDBEIN (exact match). Symptombewusst posten — nie „eigenes Produkt“ als Lockwort im Hook. Petrol/Grün-Cover bei diesen Lead-Posts verboten.",
       "umsatzziel_contribution_chf": 0,
       "launched_on": "2026-09-10"
+    },
+    {
+      "id": "doterra-energiekur",
+      "name": "Energiekur — 4 Wochen Begleitung plus Produkte",
+      "status": "launching",
+      "profile": "doterra",
+      "typ": "Bezahltes Angebot: begleitete Gruppe (4 Wochen) zusammen mit dem Produkt-Bundle",
+      "zielgruppe": "Mamas 35-45, erschoepft trotz Schlaf, im Funktionsmodus",
+      "problem": "Muede trotz genug Schlaf, Nachmittagstief, abends nicht runterkommen",
+      "transformation": "vom Funktionieren zurueck zu eigener Energie",
+      "termine": {
+        "aufwaermen": "KW38, Mo 14.9. bis Fr 18.9.2026",
+        "verkaufsfenster": "KW39, ab Mo 21.9.2026",
+        "bestell_deadline": "Do 25.9.2026 — spaetester Bestelltag, damit die Produkte zum Start da sind",
+        "kur_start": "Mi 1.10.2026",
+        "dauer": "4 Wochen Begleitung"
+      },
+      "verkaufsweg": {
+        "wie": "ueber Patricia persoenlich im DM-Gespraech",
+        "abschluss": "sie schickt einen Bestell-Link",
+        "kein_checkout": true,
+        "folge_fuer_content": "Der Beitrag verkauft nicht, er holt ins Gespraech. Ziel jedes Lead-Beitrags ist eine DM, nicht ein Klick."
+      },
+      "content_hinweise": {
+        "pillar": "Zurueck zu deiner Energie",
+        "primaer_keyword": "ENERGIE",
+        "einstieg": "3-Tage-Energie-Kickstart (0 Euro) waermt vor, siehe Funnel doterra-energie",
+        "dringlichkeit": "Die Deadline 25.9. ist echt und begruendet: die Produkte muessen vor dem 1.10. geliefert sein. Nie kuenstlich verknappen, immer den Lieferweg als Grund nennen.",
+        "compliance": "kein Heilversprechen, alles im 'bei mir war'-Rahmen, kein Produktname und kein Preis im Feed"
+      },
+      "offen": [
+        "Preis des Bundles und der Begleitung",
+        "PV-Summe des Bundles im CH-Shop verifizieren",
+        "ob die Runde eine Teilnehmerinnen-Obergrenze hat"
+      ],
+      "quelle": "Patricia im Chat am 14.09.2026"
     }
   ],
   "produkttreppe_mentoring": [
