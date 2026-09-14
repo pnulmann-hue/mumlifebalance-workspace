@@ -1082,6 +1082,7 @@
       titel: "Ideen & Hooks",
       unter: "Der Vorrat. Hooks nennen das Ziel, nicht nur das Problem, und sind szenisch statt abstrakt.",
       neu: function () { return { id: uid("i"), typ: "Hook", saeule: SAEULEN[0], text: "", quelle: "", status: "Offen" }; },
+      aktion: { label: "→ Beitrag", titel: "Daraus einen Beitrag machen" },
       cols: [
         { k: "typ", l: "Typ", t: "select", opts: ["Hook", "Thema", "Story", "Angebot"], w: "112px" },
         { k: "saeule", l: "Säule", t: "select", opts: SAEULEN, w: "185px" },
@@ -1821,7 +1822,8 @@
      ========================================================= */
   function renderTable(main, key) {
     var def = TABLES[key];
-    var grid = def.cols.map(function (c) { return c.w; }).join(" ") + " 34px";
+    var grid = def.cols.map(function (c) { return c.w; }).join(" ") +
+               (def.aktion ? " 108px" : "") + " 34px";
 
     main.innerHTML =
       '<div class="page-head"><div><h1>' + esc(def.titel) + '</h1><p>' + esc(def.unter) + '</p></div>' +
@@ -1833,7 +1835,8 @@
     var head = document.createElement("div");
     head.className = "trow head";
     head.style.gridTemplateColumns = grid;
-    head.innerHTML = def.cols.map(function (c) { return "<span>" + esc(c.l) + "</span>"; }).join("") + "<span></span>";
+    head.innerHTML = def.cols.map(function (c) { return "<span>" + esc(c.l) + "</span>"; }).join("") +
+                     (def.aktion ? "<span></span>" : "") + "<span></span>";
     rows.appendChild(head);
 
     var list = state[key].slice();
@@ -1876,6 +1879,15 @@
         };
         r.appendChild(el);
       });
+      if (def.aktion) {
+        var akt = document.createElement("button");
+        akt.className = "btn";
+        akt.style.cssText = "font-size:12px;padding:5px 8px";
+        akt.textContent = def.aktion.label;
+        akt.title = def.aktion.titel;
+        akt.onclick = function () { ideeInsStudio(item); };
+        r.appendChild(akt);
+      }
       var del = document.createElement("button");
       del.className = "del"; del.title = "Zeile löschen"; del.textContent = "×";
       del.onclick = function () {
@@ -4042,6 +4054,27 @@
   /* =========================================================
      Content-Studio
      ========================================================= */
+  /* Traegt eine Idee aus dem Vorrat ins Studio. Von dort geht es ueber
+     „Als … anlegen" in die Wochen-Vorschau, wo Patricia freigibt. */
+  function ideeInsStudio(idee) {
+    studioForm.idee = idee.text || "";
+    studioForm.ideeId = idee.id;
+    if (idee.typ === "Angebot") studioForm.ziel = "Verkauf";
+    else if (idee.typ === "Story") studioForm.format = "Story-Sequenz";
+    studioResult = null;
+    activeTab = "studio";
+    render();
+    toast("Idee ins Studio übernommen. Format wählen und schreiben lassen.");
+  }
+
+  /* Wird ein Beitrag daraus, ist die Idee verbraucht. */
+  function ideeVerbraucht() {
+    if (!studioForm.ideeId) return;
+    var i = state.ideen.filter(function (x) { return x.id === studioForm.ideeId; })[0];
+    if (i && i.status === "Offen") { i.status = "Verwendet"; saveList("ideen"); }
+    studioForm.ideeId = null;
+  }
+
   var studioForm = { idee: "", ziel: "Vertrauen", archetyp: "Zögerliche Zoe", angebot: "", phase: "", format: "Karussell", typ: "listicle", funnel: "TOF" };
   var studioResult = null;
   var studioBusy = false;
@@ -4049,7 +4082,9 @@
   function renderStudio(main) {
     main.innerHTML =
       '<div class="page-head"><div><h1>Content-Studio</h1>' +
-      '<p>Eine Idee rein, fertiger Content raus. Alles wird mit deinem hinterlegten Wissen geschrieben, also mit deinem Ton, deinen Hookregeln und deinen Angeboten.</p></div></div>' +
+      '<p>Eine Idee rein, fertiger Content raus. Alles wird mit deinem hinterlegten Wissen geschrieben, also mit deinem Ton, deinen Hookregeln und deinen Angeboten.' +
+      (studioForm.ideeId ? ' <b>Kommt gerade aus deinem Ideen-Vorrat.</b>' : '') +
+      '</p></div></div>' +
       '<div class="studio-grid">' +
         '<div class="panel"><h2>Woraus soll etwas werden</h2><div class="studio-form" id="sf"></div></div>' +
         '<div class="panel" id="sr"><h2>Ergebnis</h2><div class="empty">Noch nichts erstellt. Links eintragen, worum es geht, und auf Erstellen klicken.</div></div>' +
@@ -4279,6 +4314,7 @@
         saveCarousel(car);
         activeTab = "woche";
         render();
+        ideeVerbraucht();
         toast("Karussell angelegt. Texte prüfen und freigeben, gebaut wird im Bild-Editor.");
       };
       var b2 = document.createElement("button");
@@ -4324,6 +4360,7 @@
         saveReel(neu);
         activeTab = "reels";
         render();
+        ideeVerbraucht();
         toast("Reel angelegt. Video reinziehen, Titelbild waehlen, fertig.");
       };
       rw.appendChild(rb);
@@ -4352,6 +4389,7 @@
         }), studioForm.phase);
         activeTab = "storys";
         render();
+        ideeVerbraucht();
         toast("Sequenz angelegt.");
       };
       w2.appendChild(b3);
