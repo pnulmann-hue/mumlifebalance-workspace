@@ -18,20 +18,35 @@ Engagement-Belege aus der Analyse (zur internen Orientierung, NICHT als Output-Z
 
 ---
 
-## Die Wochen-Struktur: 3 Reichweite + 1 Lead
+## Die Wochen-Struktur: 3 Lead + 2 Reichweite
 
-**Pro Profil und Woche: 3 reine Reichweiten-Posts (kein Produkt-CTA) + 1 Lead-Post (mit Keyword-CTA).**
+> 🔄 **Geändert am 15.09.2026 (Patricias Entscheid).** Vorher galt 3 Reichweite +
+> 1 Lead. Begründung für die Umkehrung: der Engpass liegt vorne im Trichter, nicht
+> beim Angebot — es kommen zu wenig Leute in die Liste. Deshalb tragen jetzt drei
+> von fünf Beiträgen ein Keyword.
+>
+> **Was dabei bewusst in Kauf genommen wird:** Lead-Posts holen weniger Reichweite
+> als Share-Posts. Wenn die Reichweite in den nächsten Wochen fällt, ist das die
+> Ursache — nicht die Hooks und nicht die Cover. Das gehört im Monatsrückblick
+> geprüft, bevor an anderen Stellen geschraubt wird.
 
-Die drei Reichweiten-Posts bauen Reichweite und Vertrauen auf, damit der vierte Post nicht in einer leeren Community landet. Das ist die zentrale Korrektur zur bisherigen Praxis: nicht jeder Post verkauft. Drei von vier bauen nur Beziehung.
+**Pro Profil und Woche: 3 Lead-Posts (mit Keyword-CTA) + 2 reine Reichweiten-Posts (kein Produkt-CTA).**
+
+Die zwei Reichweiten-Posts sind der Zulauf — sie sorgen dafür, dass die drei
+Lead-Posts nicht in eine leere Community fallen. Sie bleiben deshalb strikt frei
+von Keyword- und Verkaufs-CTA.
 
 | Slot | Typ | CTA | Job-Säule |
 |---|---|---|---|
+| Lead 1 | Transformation + Angebot | ManyChat-Keyword | C → D |
+| Lead 2 | Problem + Lösungsweg | ManyChat-Keyword | A → D |
+| Lead 3 | Ehrlichkeits-Story mit Brücke | ManyChat-Keyword | B → D |
 | Reichweite 1 | Gesellschaftsspiegel | Share-CTA | C (Reichweite) |
 | Reichweite 2 | Mama-Alltag-Moment | Share-CTA | C / B |
-| Reichweite 3 | Ehrlichkeits-Story | Einladung ohne Druck | B (Story) |
-| Lead | Transformation + Angebot | ManyChat-Keyword | C → D |
 
-**Share-CTA ist der stärkste Reichweiten-Hebel — nicht der Keyword-CTA.** „Schick das einer Mama, die das heute hören muss 💌" erzeugt Reposts, und Reposts erreichen neue Menschen ausserhalb der Followerbasis. Der Keyword-CTA dagegen sammelt Leads — er gehört auf den einen Lead-Post, nicht auf die Reichweiten-Posts.
+**Share-CTA bleibt der stärkste Reichweiten-Hebel — nicht der Keyword-CTA.** „Schick das einer Mama, die das heute hören muss 💌" erzeugt Reposts, und Reposts erreichen neue Menschen ausserhalb der Followerbasis. Genau deshalb bleiben die zwei Reichweiten-Slots keyword-frei: sie sind der einzige Mechanismus, der neue Leute überhaupt heranholt.
+
+**Die drei Lead-Posts müssen unterschiedliche Keywords tragen** — sonst wirkt die Woche wie dreimal dieselbe Werbung. Keywords aus `context/manychat-keywords.md`, nie erfinden.
 
 ---
 
@@ -82,13 +97,17 @@ Ehrlichkeit über Zweifel und Scheitern. Ungewöhnlich in dieser Nische — und 
 
 ---
 
-## Der Lead-Post (1× pro Woche)
+## Die Lead-Posts (3× pro Woche, seit 15.09.2026)
 
 - **Hook:** Transformation zeigen (vorher/nachher, konkrete Zahl NUR wenn aus Vollprofil belegt)
 - **Body:** kurze Story + was möglich ist
 - **CTA:** „Kommentier [KEYWORD] und ich schick dir [kostenlose Ressource]" — genau EIN bestehendes ManyChat-Keyword aus `context/manychat-keywords.md` / `active-funnels.json`
+- **Pro Woche drei verschiedene Keywords** — nie dreimal dasselbe, sonst liest sich die Woche wie eine einzige Werbeschleife
+- **Der Hook nennt das Keyword nie.** Er trägt den Schmerz, der CTA steht in der Caption
 
-Das verbindet den Reichweiten-Motor mit dem Funnel: Reichweiten-Posts erzeugen neue Follower → der Keyword-CTA des Lead-Posts sammelt sie in die Liste → die E-Mail-Sequenz nach der Pitch-Mail-Strategie konvertiert Richtung grosses Produkt (MBA).
+Das verbindet den Reichweiten-Motor mit dem Funnel: die zwei Reichweiten-Posts erzeugen neue Follower → die Keyword-CTAs der drei Lead-Posts sammeln sie in die Liste → die E-Mail-Sequenz nach der Pitch-Mail-Strategie konvertiert Richtung grosses Produkt (MBA).
+
+**Warum drei statt einem:** Der Engpass lag im Juli-Launch nachweislich vorne im Trichter (3 Verkäufe, 0 neue Leads) — nicht beim Angebot. Mehr Einstiegspunkte in die Liste ist die direkte Antwort darauf.
 
 ---
 
@@ -97,16 +116,16 @@ Das verbindet den Reichweiten-Motor mit dem Funnel: Reichweiten-Posts erzeugen n
 1. **Reichweite kommt durch Mama-Identity, nicht durch Business-Content.** Die viralen Posts spielen auf das Gefühl an, zerrissen zu sein, auf gesellschaftliche Erwartungen, auf den Wunsch nach mehr — nicht auf Strategie oder Tools.
 2. **Der „Was wäre wenn"-Trigger weckt kollektive Sehnsucht.** Sobald jemand anfängt, sich das Bild VORZUSTELLEN, ist er emotional drin.
 3. **Ehrlichkeit über das Scheitern schafft Vertrauen und Reichweite.** Gerade weil es selten ist, sticht es heraus und wird geteilt.
-4. **Die stärksten Posts haben keinen Produkt-CTA.** Der Verkaufs-CTA kommt im separaten Lead-Post, nie im Reichweiten-Post.
+4. **Die stärksten Posts haben keinen Produkt-CTA.** Der Verkaufs-CTA kommt in den Lead-Posts, nie in den zwei Reichweiten-Posts.
 5. **Teilen ist der stärkste Reichweiten-Hebel.** Eine Share-CTA schlägt jede Like-Bitte, wenn es um neue Reichweite geht.
 
 ---
 
 ## Anwendung pro Profil
 
-**Mentoring (@mumlifebalance_patricia_ulmann):** volle 3+1-Struktur. Reichweiten-Posts ziehen auf die Mama-Identität (Schulalter-Mama, vier Kinder, 18h-Woche, 5:15-Routine), der Lead-Post trägt ein Mentoring-Keyword (BIO/LEAD/ECHT1/QUIZ/SICHTBAR/STORY).
+**Mentoring (@mumlifebalance_patricia_ulmann):** volle 3+2-Struktur (3 Lead / 2 Reichweite). Reichweiten-Posts ziehen auf die Mama-Identität (Schulalter-Mama, vier Kinder, 18h-Woche, 5:15-Routine), die drei Lead-Posts tragen je ein anderes Mentoring-Keyword (BIO/LEAD/ECHT1/QUIZ/SICHTBAR/STORY).
 
-**doTERRA (@patricia_ulmann):** dieselbe Logik, aber in der Reels-only-Phase (siehe [[content-performance-doterra]]) — Reichweiten-Posts als Reels, kein Karussell, solange der Account unter ~300-500 Followern ist. Reichweiten-Frame bleibt Lifestyle/Mama-Alltag, Lead-Post trägt ENERGIE. doTERRA-Compliance: kein Heilversprechen, „bei mir war"-Frame.
+**doTERRA (@patricia_ulmann):** dieselbe Logik, aber in der Reels-only-Phase (siehe [[content-performance-doterra]]) — Reichweiten-Posts als Reels, kein Karussell, solange der Account unter ~300-500 Followern ist. Reichweiten-Frame bleibt Lifestyle/Mama-Alltag, die Lead-Posts tragen ENERGIE. doTERRA-Compliance: kein Heilversprechen, „bei mir war"-Frame.
 
 ---
 
@@ -114,7 +133,7 @@ Das verbindet den Reichweiten-Motor mit dem Funnel: Reichweiten-Posts erzeugen n
 
 1. **Keine Stakkato.** Auch der Mama-Alltag-Moment wird in verbundenen Sätzen erzählt, nie als drei abgehackte Subject-Verb-Punkt-Sätze. Patricia-Voice gewinnt. Siehe [[feedback_KRITISCH-keine-stakkato-saetze]].
 2. **„Stell dir vor" ist gesperrt** (KI-Phrasen-Blackliste, von Patricia bestätigt 2026-06-01). Immer: szenen-malen oder „Was wäre, wenn".
-3. **Share-CTA auf Reichweiten-Posts, Keyword-CTA nur auf dem Lead-Post.** Korrigiert die ältere Regel „jeder Post trägt ein Keyword".
+3. **Share-CTA auf den zwei Reichweiten-Posts, Keyword-CTA auf den drei Lead-Posts.** (seit 15.09.2026, vorher 3 Reichweite / 1 Lead) Korrigiert die ältere Regel „jeder Post trägt ein Keyword".
 4. **Keine erfundenen Zahlen.** Konkrete Zahlen nur aus Vollprofil / freebies / active-funnels. Siehe [[feedback_keine-erfundenen-zahlen]].
 5. **Hook-Knall bleibt — der Reichweiten-Hook ist eine bewusste Ausnahme.** Der Traum/Szenen-Trigger ist erlaubt, weil das Ziel Sehnsucht + Teilbarkeit ist, nicht sofortige Konversion. Aber nie generisch („guten Morgen / sitze grad") — immer konkret und bildhaft.
 

@@ -193,18 +193,15 @@ REGELN, die über allem stehen:
   der CTA steht in der Caption, nicht im Hook.
 - Mindestens 4 verschiedene Angles über die 10 Skripte.
 - Vermerke bei jedem Skript, von welchem Konkurrenz-Post die Idee kommt (URL).
+- Alle 10 sind Lead-Posts mit Keyword-CTA. Das ist so gewollt —
+  keine Quote gegen Reichweiten-Posts rechnen, keine Rückfrage dazu.
 
 Am Schluss: welchen Kommentar-Auslöser nutzen die anderen, den ich noch nie
 probiert habe?
 ```
 
-**🚨 Einwand, den ich mit reinschreibe (Patricia entscheidet):**
-10 Skripte mit Keyword-CTA sind 10 **Lead-Posts**. Die 3+1-Regel sagt: 3
-Reichweiten-Posts mit Share-CTA, 1 Lead-Post pro Woche — weil Lead-Posts
-nachweislich weniger Reichweite holen (siehe die drei Petrol-Lead-Cover im Juni).
-→ Deshalb sind die 10 als **Vorrat** gedacht, nicht als Wochenplan:
-rund 2,5 Monate an Lead-Slots. Wer alle zehn hintereinander postet, drückt die
-Reichweite selbst runter.
+**Patricias Entscheid 15.09.2026:** Alle 10 sind Lead-Posts. Die frühere
+3+1-Quote (3 Reichweite / 1 Lead pro Woche) gilt hier nicht.
 
 #### 🔹 Prompt 3 — „Video-Nachbau-Tool" (Screenshot aus dem Webinar)
 
