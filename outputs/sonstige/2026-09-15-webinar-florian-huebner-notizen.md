@@ -111,6 +111,101 @@ Speicherungen und Geteilt-Zahlen holt `scripts/instagram-insights/holen.py`
 direkt über die Meta-API — **exakt statt abgelesen**. Ideal ist die Kombination:
 Zahlen aus dem Skript, Hooks/Cover/Kommentar-Stimmung über den Browser.
 
+#### 🔹 Prompt 2 — dieselbe Logik auf den Konkurrenz-Scraper
+
+**Patricias Idee (15.09., im Webinar):** Den Analyse-Prompt nicht aufs eigene
+Profil richten, sondern auf die Konkurrenz-Accounts, die der Apify-Scraper
+ohnehin täglich mitschneidet — Ziel: Skripte, die **Kommentare erzeugen** und
+über das Keyword ins Freebie führen.
+
+**Das ist umsetzbar, die Daten liegen schon da.** Stand 15.09.2026:
+122 Tagesläufe seit 08.05., je Lauf 12 Beiträge pro Account. Über die Historie
+zusammengeführt und nach Post-ID entdoppelt ergibt das:
+
+| Account | unique Posts |
+|---|---|
+| digitalmamashift | 208 |
+| alleinerziehend.erfolgreich | 152 |
+| powerfrauenfocus | 110 |
+| doterradachcommunity | 108 |
+| katharina.lewald | 63 |
+| oele_zauberland_mit_manuela | 60 |
+| flowterra.community | 50 |
+| oilistic.health | 48 |
+| annabraun_coaching | 47 |
+
+🚨 **Was der Scraper NICHT liefert:** Aufrufe, Speicherungen, geteilt. Das sind
+private Insights, die kein Scraper sieht. Vorhanden sind pro Beitrag:
+`caption` · `hashtags` · `likesCount` · **`commentsCount`** · `timestamp` ·
+`type` (Reel/Karussell/Bild) · `url`.
+→ Glücklicher Zufall: Für **dieses** Ziel reicht das genau, weil
+Kommentar-Zahlen das Erfolgsmass sind.
+
+```text
+Analysiere die letzten 50 Beiträge dieser Konkurrenz-Accounts und leite daraus
+10 Reel-Skripte für MICH ab.
+
+DATENQUELLE
+Alle Dateien outputs/apify-runs/competitors-*.json zusammenführen und nach
+Post-ID entdoppeln. Pro Account die letzten 50 Beiträge nach timestamp.
+Accounts: die aus context/competitor-watchlist.json mit profile == "mentoring"
+(für doTERRA entsprechend "doterra").
+Vorhanden: caption, hashtags, likesCount, commentsCount, timestamp, type, url.
+Nicht vorhanden: Aufrufe, Speicherungen, geteilt — rechne nicht damit und
+erfinde sie nicht.
+
+SCHRITT 1 — messen statt schätzen
+Kommentar-Rate = commentsCount / followersCount. Nach der sortieren, nicht nach
+absoluten Likes — sonst gewinnt immer nur der grösste Account.
+Zeig mir die Top-20 Beiträge nach Kommentar-Rate, mit Account, Datum, Format,
+erster Caption-Zeile, Likes und Kommentaren.
+
+SCHRITT 2 — warum kommentieren die Leute dort?
+Geh die Top-20 durch und benenne den Auslöser. Unterscheide sauber:
+- explizite Keyword-Aufforderung („kommentiere X")
+- offene Frage am Schluss
+- Meinungs-Spaltung / Hot Take
+- Wiedererkennung, die zum Bekenntnis verleitet („bin ich die einzige, die…")
+- Listen-/Vorlagen-Versprechen hinter dem Kommentar
+- unecht: Gewinnspiel, Engagement-Bait, gekaufte Kommentare — als solche markieren
+Sag mir, welcher Auslöser am häufigsten oben steht und welcher bei MEINER
+Zielgruppe trotzdem nicht funktionieren würde.
+
+SCHRITT 3 — Abgleich mit meinem Profil
+Was davon habe ich in den letzten 8 Wochen selbst gemacht, was nicht?
+Nenn mir die 3 grössten Lücken. Nur belegt — keine Vermutungen.
+
+SCHRITT 4 — 10 Skripte
+Pro Skript: Hook (gesprochene erste Zeile, wortwörtlich) · 20-40 Sek Sprechtext ·
+Titelbild-Text · Caption · Keyword-CTA · das Freebie dahinter.
+Das Keyword und das Freebie kommen aus context/active-funnels.json und
+context/manychat-keywords.md — **nie erfinden**.
+Gib bei jedem an, von welchem Muster aus Schritt 2 es abgeleitet ist.
+
+REGELN, die über allem stehen:
+- Meine Stimme: wie ein Anruf bei einer Mama-Freundin. Ganze Sätze mit
+  Konjunktionen, kein Stakkato, Schweizer ss, echte Umlaute.
+- Nur MEINE Zahlen und MEINE Szenen. Konkurrenz-Hooks sind Inspiration,
+  nie 1:1 abgeschrieben — durch Blackliste und Hook-Check, Szene aus meinem Leben.
+- Die Gegenspielerin ist der Job, nicht das Network.
+- Keine Netzwerkaufbau-Tipps. Bei doTERRA keine Heilversprechen.
+- Der Hook nennt nie die Lösung, und er nennt nie das Keyword —
+  der CTA steht in der Caption, nicht im Hook.
+- Mindestens 4 verschiedene Angles über die 10 Skripte.
+- Vermerke bei jedem Skript, von welchem Konkurrenz-Post die Idee kommt (URL).
+
+Am Schluss: welchen Kommentar-Auslöser nutzen die anderen, den ich noch nie
+probiert habe?
+```
+
+**🚨 Einwand, den ich mit reinschreibe (Patricia entscheidet):**
+10 Skripte mit Keyword-CTA sind 10 **Lead-Posts**. Die 3+1-Regel sagt: 3
+Reichweiten-Posts mit Share-CTA, 1 Lead-Post pro Woche — weil Lead-Posts
+nachweislich weniger Reichweite holen (siehe die drei Petrol-Lead-Cover im Juni).
+→ Deshalb sind die 10 als **Vorrat** gedacht, nicht als Wochenplan:
+rund 2,5 Monate an Lead-Slots. Wer alle zehn hintereinander postet, drückt die
+Reichweite selbst runter.
+
 ### Zahlen & Beispiele
 
 ### Sein Funnel / Verkaufsmechanik
