@@ -24,6 +24,55 @@ tags: [misc, research, ki, externe-wissen]
   3. ein **Business-Dashboard** mit Infos zu den grossen Unternehmen, die für ihn relevant sind
   4. daraus automatisch **personalisierte Mail-Entwürfe pro Unternehmen**
 
+**Block 2 — „Du brauchst einen KI-Marketingstrategie-Assistenten"**
+- Seine Ansage an den Raum. Führt zum Angebot (Masterclass 49 € → Club 2.990 €).
+
+**Block 3 — Der KI-Marketing-Blueprint, 4 Steps** *(Folie)*
+> „So baust du eine skalierbare Umsatzmaschine mit KI:"
+1. ✅ Zielgruppe definieren & Positionierung schärfen
+2. ❌ (Virale) Contentformate festlegen
+3. ❌ Storyline + Hook entwickeln
+4. ❌ Monetarisierungswege skizzieren
+
+Die Häkchen/Kreuze sind sein Verkaufsmittel — Schritt 1 „hast du schon", 2–4 fehlen.
+→ Patricia hat alle vier. **Sein Blueprint hat keinen Schritt für Reichweite und
+keinen fürs Messen** — genau dort sitzt aber ihr Engpass (Juli-Launch: 3 Verkäufe,
+0 neue Leads).
+
+**Block 4 — KI-getriebene Content-Produktion, Schritt 1: „Out-of-the-box Content"** *(Folie)*
+- Zeigt seinen Custom GPT **„Viraler Content Assistent"** (von startup-creator.com):
+  *„Gebe deine Content Strategie vor und lasse dir von mir viralen Content erstellen."*
+- Ein Chat-Fenster: Strategie jedes Mal neu eintippen, Text kommt raus, selber kopieren.
+- → Entspricht `/content`, aber ohne Datenanbindung und ohne Auslieferung.
+- **Abschauen: die Haustür.** Ein benannter Assistent mit einem Feld statt 30 Skill-Namen.
+
+**Block 5 — „Hook, Hook, Hook!"** *(Folie)*
+> Step 1: Die Hook — der Moment, in dem alle hinschauen.
+> „1 Sekunde, um jemandem das Gefühl zu geben: ‚WTF, das muss ich sehen!'"
+
+Seine drei Fragen bei jedem Content:
+- Was ist der **erste Satz**, der triggert?
+- Was ist der **visuelle Einstieg**, der catcht?
+- Was ist die **emotionale Reaktion**, die bleibt?
+
+Seine Formel: **Hook = Schock + Relevanz + Neugier**
+
+→ Frage 1 und 3 deckt Patricias letzter Check strenger ab.
+→ **Frage 2 fehlt bei ihr komplett** — der Hook-Skill behandelt nur die erste
+  *Zeile*, die Visual-QA prüft nur, ob nichts kaputt ist (Gesicht frei, Motiv frei,
+  ABAB). Niemand fragt, ob das erste *Bild* den Daumen anhält. **Echte Lücke.**
+→ „Schock" nicht übernehmen — das ist seine Marke („kontrovers"). Patricias
+  gemessene Entsprechung: **Bekenntnis gewinnt** (vor Hot Take, vor Cliffhanger).
+
+**Block 6 — „die Menschen neugierig machen aufs Ende"**
+- Retention über eine offene Schleife. Sein Caption-/Video-Muster dazu aus der
+  Recherche: „Schau bis zum Schluss! 😏", Hashtag `#feelsillegal`.
+- 🚨 **Vorsicht:** Als *Hook-Familie* ist der Cliffhanger bei Patricia gemessen
+  **letzter** — Bekenntnis > Hot Take > Cliffhanger. Die Ankündigung „bleib bis
+  zum Schluss" ist ein Versprechen, dem niemand mehr glaubt.
+- ✅ Was dagegen trägt: die Schleife **im** Beitrag — eine Frage in Sekunde 3, die
+  in Sekunde 25 beantwortet wird, ohne sie anzukündigen. Das nutzt sie bisher wenig.
+
 ---
 
 ## Verdichtet
@@ -98,8 +147,8 @@ REGELN, die über allem stehen:
 - Bei doTERRA keine Heilversprechen, immer „bei mir war es so".
 - Der Hook nennt nie die Lösung.
 - Mindestens 3 verschiedene Angles über die 5 Skripte, nicht fünfmal derselbe.
-- Mindestens 3 der 5 sind reine Reichweiten-Posts mit Share-CTA,
-  höchstens 1 ist ein Lead-Post mit Keyword-CTA.
+- 3 der 5 sind Lead-Posts mit Keyword-CTA (je ein anderes Keyword),
+  2 sind reine Reichweiten-Posts mit Share-CTA. (3+2-Regel seit 15.09.2026)
 
 Am Schluss: sag mir in einem Satz, was dir an meinem Profil am meisten im Weg
 steht.
