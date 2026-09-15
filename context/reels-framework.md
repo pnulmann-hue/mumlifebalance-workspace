@@ -159,7 +159,13 @@ Reels unter 15 Sek. sind okay — aber DANN muss die Struktur komprimiert sein, 
 **Regel**: 80% der User schauen Reels ohne Ton. Wer keinen Text einbaut, verliert 80% der Reichweite.
 
 ### Text-Regeln
-- **Position**: Obere Drittel (nicht unten — da ist Caption-Overlay von IG)
+- **Position**: **MITTIG** (Patricias Entscheid 15.09.2026 — ersetzt die alte Angabe
+  „oberes Drittel", die aus allgemeiner Reel-Ratgeber-Weisheit stammte und nie von
+  Patricia entschieden wurde). Begruendung: **oben steht bei einem Talking Head immer
+  ihr Gesicht**, unten ist tote Zone. Die Mitte ist bei ihr der Oberkoerper — eine
+  ruhige Flaeche, auf der Text sitzt, ohne das Gesicht zu verdecken.
+  - Tote Zone **oben 0–12.5 %** (Instagram-Elemente), **unten 82–100 %** (Caption + Knoepfe)
+  - Bei B-Roll ohne Person darf der Text hoeher sitzen — dann entscheidet das Motiv
 - **Grösse**: Gross genug, dass eine 50-jährige es auf dem Handy liest
 - **Dauer**: Mindestens 1 Sek. sichtbar, max. 3 Sek. pro Textblock
 - **Kontrast**: Weisser Text + schwarzer Schatten/Hintergrund ODER Petrol (#12828c) auf Creme (#f1ecdd)
