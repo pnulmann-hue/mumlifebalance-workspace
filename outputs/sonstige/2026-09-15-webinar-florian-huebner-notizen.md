@@ -79,9 +79,39 @@ Seine Formel: **Hook = Schock + Relevanz + Neugier**
 
 ### Kernthesen
 
+- **„Claude ist kein Chatbot, sondern dein komplettes Betriebssystem."** Vier Bausteine:
+  Chat (Stratege) · Browser (analysiert Konkurrenz und Seiten) · Cowork (Outreach-Mails) ·
+  Code (baut Tools, Seiten, Funnels).
+- **„Erst Masse, dann Klasse."** Beiträge sind Versuche, keine Einzelstücke. Er spielt
+  rund **20 Beiträge im Monat als Testreels** aus und fokussiert dann auf das, was zieht.
+- **„Erfinde das Rad NICHT neu."** Bestehende Beiträge analysieren und umschreiben,
+  statt bei null anzufangen.
+- **„Mittelmässiger Input, mittelmässiger Output."** Die Vorgabe entscheidet:
+  Thema · Ton · Stil · Benchmarks. Danach menschliches Finetuning.
+- **„ChatGPT ist kein Wettbewerbsvorteil. Jeder hat ChatGPT."** Systeme schlagen Tools.
+- **Dein Video muss durchgehend hooken.** Bester Part wird am Anfang versprochen und
+  kommt am Ende. Dazwischen bleibt die Spannungskurve oben.
+
 ### Tools
 
+Claude (zentral) · Manus · Veo 3 · Seedance 2.0 / Higgsfield · Nano Banana (Pro) ·
+Kling (Motion Control) · Sora · Midjourney · Leonardo · Hailuo · Freepik ·
+Descript · HeyGen · tokaudit · Make · n8n · Skool · WebinarJam.
+
+Sein eigener Kosten-Hinweis: Claude Pro für rund 20 €/Monat reiche zum Start.
+Und ausdrücklich gegen Tool-Sammelwut: *„Das meiste davon brauchst du nicht.
+Was du brauchst, ist ein System."*
+
 ### Workflows / Automatisierungen
+
+- **Vier Custom GPTs**, alle nach demselben Muster (Name + 3–4 Startknöpfe + freies Feld):
+  Viraler Content Assistent · Viraler Hook Assistent (Nische/Thema/Video) ·
+  Veo3 Prompt Assistent · Seedance 2.0 Prompt Assistent.
+- **Notion-Recycling-Strecke** „Neue LinkedIn Beiträge": Original-Beitrag (URL) →
+  Umschrift in eigener Stimme → Bild → Gepostet-Haken → Datum.
+- **Business-Dashboard** mit Infos zu relevanten Unternehmen → automatisch
+  personalisierte Mail-Entwürfe je Unternehmen.
+- Präsentationen und Angebotsseiten mit Claude, Ansage: *„maximaler Business-Impact"*.
 
 ### Prompts
 
@@ -301,14 +331,95 @@ Wochen-Vorschau. → **Erst umsetzen, wenn seine Anleitung da ist.**
 
 ### Zahlen & Beispiele
 
+🚨 **Alles Selbstangaben von seinen eigenen Seiten. Keine unabhängige Prüfung
+möglich. Nicht als Benchmark verwenden.**
+
+- „über 1 Mio. Follower" (Summe über alle Plattformen; die Einzelquellen widersprechen
+  sich: 300k / 400k / 500k / 600k / 900k je nach Seite)
+- **58'086 LinkedIn-Follower · 9'346'525 Impressionen, +625 %** — die *einzige* Zahl des
+  Tages, die sich mit der Recherche deckt (Profil zeigt rund 59'700)
+- „93 % der Arbeit übernimmt KI" · „30,9 Mio. Aufrufe, 71'318 neue Follower in 30 Tagen"
+  · „+705 % in 28 Tagen" · „62'000+ Webinar-Registrierungen" · „siebenstellige
+  Jahresumsätze" · „persönlich von OpenAI eingeladen" — alles unbelegt
+- Beispiel-Hook auf seiner eigenen Folie: **„80 % der Unternehmer…"** — erfundene Zahl,
+  als Vorbild gezeigt
+
 ### Sein Funnel / Verkaufsmechanik
+
+```
+Social (IG/TikTok/YT/LinkedIn) → Freebies → Gratis-Live-Webinar 90 Min
+   → Claude Masterclass 49 € (statt 299, Countdown)
+   → KI Power Day 999 € (statt 1.999) / Premium 3.997 € · Präsenztag 17.10. München
+   → KI Marketing Club 2.990 €
+   → 1:1 Coaching ab 4.990 € · Sprint · Avatar (fünf- bis sechsstellig)
+```
+
+**Verknappung:** „Keine Aufzeichnung verfügbar!" (ehrlich, wirksam) und
+„Nur noch 5 % der Plätze verfügbar!" (bei einem Online-Webinar frei erfunden —
+**nicht übernehmen**).
+
+**Vor dem Webinar** hat er auf LinkedIn ein 999-€-Ticket verlost, „unter ALLEN, die
+morgen dabei sind" → deutet darauf hin, dass der **Power Day** das Schluss-Angebot ist.
+
+**Zusätzlich:** Affiliate-Programm (die „ehrlichen Erfahrungsberichte" im Netz sind
+Provisions-Seiten), Keynote-Honorare, Agenturgeschäft.
 
 ---
 
 ## Für Patricia relevant
 
-| Erkenntnis | Wo einsetzbar | Nächster Schritt |
-|---|---|---|
+### ✅ Die fünf Punkte, die bleiben
+
+| # | Erkenntnis | Wo | Nächster Schritt |
+|---|---|---|---|
+| 1 | **Visuelle Hook-Frage fehlt.** Der Hook-Skill behandelt nur die erste *Zeile*; die Visual-QA prüft nur, ob nichts kaputt ist. Niemand fragt, ob das erste *Bild* den Daumen anhält. | `skills/hooks` letzter Check | fünfte Frage ergänzen |
+| 2 | **Hooks aus den Wissens-Dumps.** Zehn Transkripte liegen in `video/transkripte/`, der Hook-Skill liest sie nicht. Löst nebenbei „nichts erfinden" — was sie gesprochen hat, ist per Definition echt. | `skills/hooks` | Transkripte als Quelle einhängen |
+| 3 | **Sieben Share-Trigger als Vokabular.** FINALLY · OHH · WTF (als Systemkritik) · AWW · WOW sind ihre. LOL selten, SPINNT DER nie. Ihre Top-Posts waren fast alle FINALLY. | Beitrags-Check in `/content` | Frage 3 schärfen: „welcher Trigger ist es?" |
+| 4 | **Die Pointe sitzt zu früh.** Struktur-Formel legt den Payoff auf 10–20 Sek, dann 10 Sek Wiederholung. Das unterläuft Watch-Through-Rate, das eigene Ranking-Signal Nr. 3. | `context/reels-framework.md` | Payoff nach hinten, CTA folgt aus der Pointe |
+| 5 | ⭐ **Testreels statt Einzelstücke.** Vier Qualitätsprüfungen verhindern Schlechtes, finden aber nie heraus, was wirkt. Alle Beiträge kommen durch denselben Filter, also sagen die Zahlen nichts. | ganzes System | Prüfung bleibt für Stimme und Wahrheit, fällt für Politur. Eine Variable pro Woche. |
+
+**Dazu die Entscheidungen vom selben Tag:**
+- ✅ **3 Lead + 2 Reichweite** statt 3+1 — überall nachgezogen
+- ⏰ **1 Karussell + 4 Reels** statt 3+2 — offen, Frist Freitag 08:00
+- ❓ **KI-Opener** (max. 2 Sek, erkennbar gestaltet, nie doTERRA) — offen, bräuchte
+  eine Ausnahme in der „keine KI-Bilder"-Regel
+
+### ❌ Was NICHT übernommen wird
+
+| Sache | Warum |
+|---|---|
+| Video-Nachbau über Seedance/Higgsfield | Entscheid 09.06.2026: KI-Fakes brechen Nahbar · Anti-Perfekt · Echt |
+| „Hook = Schock + Relevanz + Neugier" | Schock ist seine Marke. Ihre gemessene Entsprechung: **Bekenntnis gewinnt** |
+| Die vier „Extreme Hooks" | Angst als Antrieb, erfundene Prozente, inszenierter Streit |
+| „Bleib bis zum Schluss" als Hook | Cliffhanger ist bei ihr gemessen **letzter**. Schleife öffnen, nicht ankündigen |
+| Erfundene Knappheit | widerspricht *keine erfundenen Zahlen* |
+| Jailbreak-Kniffe, Filter-Umschreiber | braucht sie nicht, funktioniert ohnehin nicht mehr |
+| LinkedIn | ihre Zielgruppe ist nicht dort |
+| Seine Produkte (49 / 999 / 2.990 €) | inhaltlich überall hinter ihrem Stand |
+
+### 🔭 Was er macht und sie nicht — alle auf der Akquise-Seite
+
+1. **Fremde Bühnen** — Keynotes, Podcasts, Kongresse. Sie: nichts. Billigster ungenutzter Hebel.
+2. **Affiliates** — andere verkaufen für ihn. Sie hat 13 Testimonials, keine verdient mit. ThriveCart könnte das.
+3. **Eine Idee, vier Kanäle** — sie ist auf Instagram und Telegram.
+4. **Regelmässige Live-Webinare** als Lead-Ereignis — ihr MBA-Webinar läuft als Evergreen.
+
+→ **Drei von vier haben mit Content nichts zu tun.** Nach drei Stunden über Hooks und
+Formate liegt das, was er wirklich anders macht, komplett daneben.
+
+### ⚖️ Die ehrliche Bilanz (15.09.)
+
+Patricia am Schluss: *„eigentlich funktioniert bei mir gar nichts."*
+
+**Was stimmt:** Engagement 0,3–0,5 % gegen Richtwert 1–3 %. Juli-Launch drei Verkäufe,
+null neue Leads. doTERRA bei 61 Followern.
+
+**Was nicht stimmt:** Story-Challenge 4 von 5 gekauft · Storyideen-Tripwire läuft
+profitabel über Meta · 13 Testimonials · doTERRA zahlt monatlich, Premier, drei Beine
+Richtung Gold.
+
+**Befund:** Wer bei ihr ankommt, kauft und ist zufrieden. Es kommen zu wenige an.
+Das ist ein Zulauf-Problem, kein Produkt-Problem.
 
 ---
 
