@@ -206,6 +206,53 @@ nachweislich weniger Reichweite holen (siehe die drei Petrol-Lead-Cover im Juni)
 rund 2,5 Monate an Lead-Slots. Wer alle zehn hintereinander postet, drückt die
 Reichweite selbst runter.
 
+#### 🔹 Prompt 3 — „Video-Nachbau-Tool" (Screenshot aus dem Webinar)
+
+Patricias Notiz: *„er zeigt hier ein tool, wo er einfach den link eines profils
+schicken kann und dann baut claude code den ganzen content nach für ihn.
+die konkrete anleitung schickt er noch."*
+
+**Was auf dem Screenshot tatsächlich steht** (Claude-Code-Fenster, seine Eingabe):
+
+> „Ich brauch ein Tool: Ich will einen **Video-Link** einfügen.
+> Und es soll mir das Video 1:1 nachbauen."
+
+Claudes Antwort darauf, in drei Schritten:
+1. **Video analysieren** — Link auswerten und beschreiben:
+   Szenerie, Schnitte, Bewegungen, Dialoge, Effekte
+2. **Prompt generieren** — mit dem *Seedance-Skill* einen Shot-by-Shot-Prompt
+   für KI-Video-Generierung (Seedance 2.0, Luma o.ä.)
+3. **Video neu generieren** — in ähnlichem Stil, „aber nicht pixel-perfect identisch"
+
+Und die Einschränkung, die Claude selbst dazuschreibt:
+> ❌ „Ich kann Copyrighted Videos nicht 1:1 klonen (rechtlich problematisch)"
+> ✅ „Ich kann KI-generierte Neuvarianten erstellen (ähnlicher Stil, aber original)"
+
+**Drei Dinge, die vor der Umsetzung geklärt sein müssen:**
+
+1. **Video-Link ≠ Profil-Link.** Der Screenshot zeigt ein Tool für *ein* Video,
+   nicht für einen ganzen Kanal. Ob er zusätzlich etwas auf Profil-Ebene gezeigt
+   hat, steht noch aus — seine Anleitung kommt nach.
+2. **Der Nachbau läuft über Seedance/Higgsfield.** Dazu gibt es bereits eine
+   Entscheidung vom 09.06.2026: *„aktuell nichts für mich"* — KI-Fake-Videos
+   beissen sich mit dem Brand-Manifest (Nahbar · Anti-Perfekt · Echt) und mit
+   doTERRA-Compliance. Siehe `reference_seedance-higgsfield-tool`.
+3. **Ein Artifact kann das nicht selbst.** Die Seite darf per CSP keine fremden
+   Hosts abrufen und kann kein Video auswerten. Der Weg läuft — wie beim
+   Wochenfokus — über Claude: Seite sammelt, Claude holt und arbeitet.
+
+**Was davon für Patricia wirklich taugt: Schritt 1, nicht Schritt 3.**
+Die Zerlegung eines Reels in *Hook-Art · Schnittrhythmus · Textebene ·
+Bildwechsel · Länge · Kommentar-Auslöser* ist genau das Briefing, das `/reels`
+und `/videoschnitt` brauchen — angewendet auf **ihr eigenes** Material.
+Nicht nachbauen, sondern die **Mechanik** übernehmen. Deckt sich mit der Regel
+*Hooks = Inspiration, nicht Copy-Paste*.
+
+**Buildbar wäre daher:** ein Feld im Cockpit „Reel-Link → Mechanik zerlegen".
+Patricia pflückt unterwegs Links, sie landen als Dokument in der
+Artifact-Datenbank, Claude wertet sie aus und legt das Briefing in die
+Wochen-Vorschau. → **Erst umsetzen, wenn seine Anleitung da ist.**
+
 ### Zahlen & Beispiele
 
 ### Sein Funnel / Verkaufsmechanik
