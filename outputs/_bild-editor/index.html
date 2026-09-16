@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
 <meta charset="utf-8">
 <title>Bild-Editor</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -1295,9 +1296,8 @@ Jede Sequenz endet mit genau einem CTA: entweder Antwort auf einen Sticker oder 
   g('entwurfLaden').onclick = () => {
     const e = aktuellerEntwurf();
     if (!e || !e.folien || !e.folien.length) return;
-    // Kein confirm() — in der Artifact-Sandbox ist es blockiert (gibt false zurueck)
-    // und wuerde den Ladevorgang immer abbrechen. Laden ersetzt die aktuellen Folien;
-    // das ist die erwartete Wirkung dieses Knopfs.
+    // confirm() ist in der Artifact-Sandbox gesperrt (liefert false) — deshalb kein
+    // Rückfrage-Dialog mehr, sonst würde das Laden nie ausgeführt.
     if (e.format && FORMATE[e.format]){
       fmt = e.format;
       document.querySelectorAll('#fmtSeg button').forEach(x=>x.classList.toggle('on', x.dataset.fmt===fmt));
@@ -1467,8 +1467,7 @@ Drei bis sechs Folien. Nichts ausserhalb des JSON.`;
   g('ideeBtn').onclick = ideeGeben;
   g('ideeUeber').onclick = ()=>{
     if (!letzteIdee) return;
-    if ((folien.length>1 || state.headline.trim()) &&
-        !confirm("Deine jetzigen Folien werden durch die Idee ersetzt. Weiter?")) return;
+    // confirm() ist in der Artifact-Sandbox gesperrt (liefert false) — kein Rückfrage-Dialog.
     const vorlage = Object.assign({}, state);            // Gestaltung der aktuellen Folie übernehmen
     const stil = Object.assign({}, B());
     folien = letzteIdee.folien.map(f => Object.assign({}, vorlage, {
@@ -1551,3 +1550,5 @@ Drei bis sechs Folien. Nichts ausserhalb des JSON.`;
   setTimeout(fit,60);
   document.fonts.ready.then(render);
 </script>
+
+</body></html>
