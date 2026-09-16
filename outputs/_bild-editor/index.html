@@ -58,6 +58,16 @@
   .stage{position:sticky;top:16px;min-width:0}
   .frame-wrap{width:100%;max-width:432px;margin:0 auto;border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.22);position:relative}
 
+  /* Schnell-Leiste direkt unter dem Bild — Balken anpassen ohne Hochscrollen */
+  .schnell{max-width:432px;margin:10px auto 0;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px 12px 12px}
+  .schnell .kopf{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:2px 0 8px}
+  .qgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
+  .qgrid label{margin:2px 0 2px;font-size:12px}
+  .qgrid input[type=range]{width:100%;accent-color:var(--petrol)}
+  .qthumbs{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+  .qthumbs img{flex:0 0 auto;width:54px;aspect-ratio:4/5;object-fit:cover;border-radius:8px;cursor:pointer;border:3px solid transparent}
+  .qthumbs img.sel{border-color:var(--petrol)}
+
   /* Die ganze Abfolge auf einen Blick */
   .setbar{max-width:432px;margin:0 auto 12px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 12px 14px}
   .setbar .kopf{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:9px}
@@ -258,6 +268,20 @@
       </div>
     </div>
     <div class="frame-wrap"><div id="cover" class="buehne"></div></div>
+    <div class="schnell" id="schnell">
+      <div class="kopf">Balken schnell anpassen</div>
+      <div class="blkLeiste" id="blkLeisteQuick" style="margin-bottom:8px"></div>
+      <div class="qgrid">
+        <div><label>H&ouml;he <span id="qposVal"></span></label><input type="range" id="qpos" min="8" max="92" value="58"></div>
+        <div><label>Breite <span id="qbwVal"></span></label><input type="range" id="qbw" min="50" max="100" value="100"></div>
+        <div><label>Schrift <span id="qfsVal"></span></label><input type="range" id="qfs" min="40" max="120" value="72"></div>
+        <div><label>Verlauf <span id="qgradVal"></span></label><input type="range" id="qgrad" min="0" max="100" value="72"></div>
+      </div>
+      <div id="fotoQuick">
+        <div class="kopf" style="margin:10px 0 6px">Foto wechseln</div>
+        <div class="qthumbs" id="thumbsQuick"></div>
+      </div>
+    </div>
     <div class="warn" id="warn"></div>
     <div class="savebar" id="savebar"><img id="out" alt="fertiges Bild"></div>
     <div id="alle"></div>
@@ -318,8 +342,12 @@
     let bgLayer;
     if (ohneBild)                                        // nur Verlauf und Text — fürs Einbrennen ins Video
       bgLayer = verlauf;
-    else if (s.mode==="foto")
-      bgLayer = `<img class="bg" src="${s.photo.startsWith("data:") ? s.photo : "assets/"+s.photo}" crossorigin="anonymous">` + verlauf;
+    else if (s.mode==="foto"){
+      // Als CSS-Hintergrund statt <img object-fit> — html2canvas verzerrt object-fit
+      // beim Export, background-size:cover behält das Seitenverhältnis exakt bei.
+      const src = s.photo.startsWith("data:") ? s.photo : "assets/"+s.photo;
+      bgLayer = `<div class="bg" style="background-image:url('${src}');background-size:cover;background-position:50% 15%"></div>` + verlauf;
+    }
     else if (s.mode==="video")
       // Im Streifen und beim Export steht das Standbild; auf der grossen Bühne wird es
       // danach durch das echte Video ersetzt (siehe render()).
@@ -573,13 +601,22 @@
 
   /* ---------- Bilder ---------- */
   const th = g('thumbs');
-  PHOTOS.forEach(p=>{ const im=document.createElement('img'); im.src="assets/"+p; im.loading="lazy";
-    im.dataset.name = p;
+  // Ein Foto wählen — egal ob oben im Panel oder unten unter dem Bild getippt
+  function fotoWaehlen(name){
+    state.photo = name; state.mode = "foto";
+    modusAnsicht(); markiereFoto(); render();
+  }
+  function markiereFoto(){
+    ['thumbs','thumbsQuick'].forEach(id=>{ const c=g(id); if(!c) return;
+      [...c.children].forEach(x=>x.classList.toggle('sel', x.dataset.name===state.photo)); });
+  }
+  function bildThumb(container, name, src){
+    const im=document.createElement('img'); im.src=src; im.loading="lazy"; im.dataset.name=name;
     im.onerror=()=>im.remove();
-    im.onclick=()=>{ state.photo=p; state.mode="foto";
-      modusAnsicht();
-      [...th.children].forEach(c=>c.classList.remove('sel')); im.classList.add('sel'); render(); };
-    th.appendChild(im); });
+    im.onclick=()=>fotoWaehlen(name);
+    container.appendChild(im);
+  }
+  PHOTOS.forEach(p => ['thumbs','thumbsQuick'].forEach(id=>{ const c=g(id); if(c) bildThumb(c, p, "assets/"+p); }));
 
   // Eigenes Bild hochladen - wird verkleinert, damit die Seite flott bleibt
   g('datei').addEventListener('change', e => {
@@ -611,15 +648,14 @@
 
   // Hochgeladene Bilder bleiben als Vorschaubilder stehen - so bekommt jede Folie ihr eigenes
   function eigenesThumb(){
-    const im = document.createElement('img');
-    im.title = "dein hochgeladenes Bild";
-    im.src = state.photo;
-    im.dataset.name = state.photo;
-    im.className = "sel";
-    im.onclick = () => { state.photo = im.dataset.name; state.mode="foto";
-      modusAnsicht();
-      [...th.children].forEach(x=>x.classList.remove('sel')); im.classList.add('sel'); render(); };
-    th.insertBefore(im, th.firstChild);
+    const src = state.photo;
+    ['thumbs','thumbsQuick'].forEach(id=>{ const c=g(id); if(!c) return;
+      const im = document.createElement('img');
+      im.title = "dein hochgeladenes Bild"; im.src = src; im.dataset.name = src;
+      im.onclick = () => fotoWaehlen(src);
+      c.insertBefore(im, c.firstChild);
+    });
+    markiereFoto();
   }
 
   /* ---------- Video hochladen ---------- */
@@ -659,6 +695,7 @@
     g('thumbs').style.display = video ? "none" : "";
     g('lblFoto').style.display = video ? "none" : "";
     g('lblUp').style.display = video ? "none" : "";
+    { const fq=g('fotoQuick'); if(fq) fq.style.display = video ? "none" : ""; }
     document.querySelectorAll('#modeSeg button').forEach(x=>x.classList.toggle('on', x.dataset.mode===state.mode));
     auftragZeigen();
   }
@@ -706,7 +743,16 @@
   const REGLER = [['grad','gradVal','%','folie'],['opa','opaVal','%','block'],['bw','bwVal','%','block'],
                   ['fs','fsVal','px','block'],['pos','posVal','%','block']];
   REGLER.forEach(([id,out,unit,wo])=>{ const el=g(id);
-     el.addEventListener('input', ()=>{ (wo==='block'?B():state)[id]=+el.value; g(out).textContent=el.value+unit; render(); }); });
+     el.addEventListener('input', ()=>{ (wo==='block'?B():state)[id]=+el.value; g(out).textContent=el.value+unit;
+       const q=g('q'+id); if(q){ q.value=el.value; g('q'+id+'Val').textContent=el.value+unit; }
+       render(); }); });
+  // Dieselben Balken-Regler direkt unter dem Bild — kein Hochscrollen mehr
+  [['qpos','pos','%','block'],['qbw','bw','%','block'],['qfs','fs','px','block'],['qgrad','grad','%','folie']].forEach(([qid,key,unit,wo])=>{
+    const el=g(qid); if(!el) return;
+    el.addEventListener('input', ()=>{ (wo==='block'?B():state)[key]=+el.value; g(qid+'Val').textContent=el.value+unit;
+      const m=g(key); if(m){ m.value=el.value; g(key+'Val').textContent=el.value+unit; }
+      render(); });
+  });
 
   g('eyebrow').oninput = e => { B().eyebrow = e.target.value; render(); };
   g('headline').oninput = e => { B().headline = e.target.value; render(); balkenLeiste(); };
@@ -715,20 +761,23 @@
 
   /* ---------- Mehrere Textbalken je Folie ---------- */
   function balkenLeiste(){
-    const el = g('blkLeiste');
-    el.innerHTML = state.bloecke.map((k,i)=>{
+    const html = state.bloecke.map((k,i)=>{
       const kurz = (k.headline.trim().split("\n")[0] || "leer").slice(0,16);
       return `<button class="${i===state.blk?'on':''}" data-i="${i}">${i+1} · ${esc(kurz)}</button>`;
     }).join("") + `<button data-neu="1" title="Balken dazu">+ Balken</button>`
-      + (state.bloecke.length>1 ? `<button data-weg="1" title="diesen Balken löschen">✕</button>` : "");
-    [...el.children].forEach(b => b.onclick = () => {
-      if (b.dataset.neu){
-        const kopie = Object.assign({}, B(), {headline:"", eyebrow:"", pos: Math.min(92, B().pos + 18)});
-        state.bloecke.push(kopie); state.blk = state.bloecke.length-1;
-      } else if (b.dataset.weg){
-        state.bloecke.splice(state.blk,1); state.blk = Math.max(0, state.blk-1);
-      } else state.blk = +b.dataset.i;
-      formularFuellen(); render();
+      + (state.bloecke.length>1 ? `<button data-weg="1" title="diesen Balken löschen" style="color:var(--orange);border-color:var(--orange)">✕ Balken löschen</button>` : "");
+    ['blkLeiste','blkLeisteQuick'].forEach(id => {
+      const el = g(id); if (!el) return;
+      el.innerHTML = html;
+      [...el.children].forEach(b => b.onclick = () => {
+        if (b.dataset.neu){
+          const kopie = Object.assign({}, B(), {headline:"", eyebrow:"", pos: Math.min(92, B().pos + 18)});
+          state.bloecke.push(kopie); state.blk = state.bloecke.length-1;
+        } else if (b.dataset.weg){
+          state.bloecke.splice(state.blk,1); state.blk = Math.max(0, state.blk-1);
+        } else state.blk = +b.dataset.i;
+        formularFuellen(); render();
+      });
     });
   }
 
@@ -738,6 +787,10 @@
     const k = B();
     REGLER.forEach(([id,out,unit,wo])=>{ const v = (wo==='block'?k:state)[id];
       g(id).value = v; g(out).textContent = v+unit; });
+    // Schnell-Regler unter dem Bild mitfüllen
+    [['qpos','pos','%','block'],['qbw','bw','%','block'],['qfs','fs','px','block'],['qgrad','grad','%','folie']].forEach(([qid,key,unit,wo])=>{
+      const q=g(qid); if(q){ const v=(wo==='block'?k:state)[key]; q.value=v; g(qid+'Val').textContent=v+unit; }
+    });
     g('eyebrow').value = k.eyebrow;
     g('headline').value = k.headline;
     g('handleOn').checked = state.handle;
@@ -752,7 +805,7 @@
     [...g('swatches').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===state.color));
     [...g('barSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===k.barColor));
     [...g('txtSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===k.tc));
-    [...th.children].forEach(x=>x.classList.toggle('sel', x.dataset.name===state.photo));
+    markiereFoto();
   }
 
   /* ---------- Ideen: Bauplaene fuer ganze Story-Abfolgen ----------
