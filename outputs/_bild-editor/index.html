@@ -1295,8 +1295,9 @@ Jede Sequenz endet mit genau einem CTA: entweder Antwort auf einen Sticker oder 
   g('entwurfLaden').onclick = () => {
     const e = aktuellerEntwurf();
     if (!e || !e.folien || !e.folien.length) return;
-    if ((folien.length > 1 || B().headline.trim()) &&
-        !confirm("Deine jetzigen Folien werden durch den Entwurf ersetzt. Weiter?")) return;
+    // Kein confirm() — in der Artifact-Sandbox ist es blockiert (gibt false zurueck)
+    // und wuerde den Ladevorgang immer abbrechen. Laden ersetzt die aktuellen Folien;
+    // das ist die erwartete Wirkung dieses Knopfs.
     if (e.format && FORMATE[e.format]){
       fmt = e.format;
       document.querySelectorAll('#fmtSeg button').forEach(x=>x.classList.toggle('on', x.dataset.fmt===fmt));
