@@ -56,6 +56,7 @@ Die Landingpage war seit dem 8. Juli als leerer Entwurf in WordPress (nur ein Pl
 | Bio-Check (interaktiver Bot) | `BIO` | https://mumlifebalance.ch/bio-check/ | — | https://bio-check-bot.vercel.app | — | 🟢 200 · 🚨 `bio-check.mumlifebalance.ch` löst **nicht** auf (16.09.2026) — nie verlinken |
 | Freischaufeln / To-Do-Liste halbieren | `ZEIT` | https://mumlifebalance.ch/freischaufeln/ | — | https://freischaufeln.vercel.app | — | 🟢 200 |
 | Produkt-Ideen-Finder (KI-Tool) | — | https://mumlifebalance.ch/produkt-ideen-finder/ → leitet auf `-los/` | — | https://produkt-ideen-finder-service.vercel.app/ | — | 🟢 200 · WP 4085 (4083 ist Entwurf) |
+| **Evergreen-Webinar (MBA)** | — | https://mumlifebalance.ch/mba-webinar-replay/ | — | https://vimeo.com/1214949645 (Einbettung `player.vimeo.com/video/1214949645?h=7f3f299d42`) | — | 🟢 200 · WP 4025 · geht über die Mail-Automationen 72 · 74 · 75 · 79 raus · 🚨 liegt auf **Vimeo**, nicht in Drive — die 599-MB-Quelldatei bleibt lokal |
 | Mama-Business-Bootcamp (5 Tage, PIA) | — | https://mumlifebalance.ch/bootcamp/ | — | https://mumlifebalance.ch/bootcamp-willkommen/ | https://t.me/+HW6lvdlbTBhiOWM0 | 🟢 200 · AC-Formular 60 |
 
 ### Bezahlte Angebote
