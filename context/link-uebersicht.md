@@ -57,7 +57,7 @@ Die Landingpage war seit dem 8. Juli als leerer Entwurf in WordPress (nur ein Pl
 | Vom Network-Wissen zum eigenen Produkt | 39 | https://mumlifebalance.thrivecart.com/eigene-produkterstellung/ | 🟢 200 (geprüft 10.09.2026) |
 | Expertin statt Verkäuferin | 97 | https://mumlifebalance.thrivecart.com/expertin/ | 🟢 200 |
 | Instagram-Kundenmaschine | 333 | https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/ | 🟢 200 |
-| Mama-CEO | Preis prüfen | https://mumlifebalance.thrivecart.com/mama-ceo/ | 🟢 200 |
+| Mama-CEO | 333 | https://mumlifebalance.thrivecart.com/mama-ceo/ | 🟢 200 (Preis aus ThriveCart, 16.09.2026) |
 | Digitale Produktwelt | 333 | https://mumlifebalance.thrivecart.com/digitale-produktwelt/ | 🟢 200 |
 | **MBA (Bundle)** | Pioneer 997 / Liste 1347 | https://mumlifebalance.thrivecart.com/mba/ | 🟢 200 |
 | 1:1 „Aus Nebenbei wird Business" | Beta 777 statt 1500 | https://mumlifebalance.thrivecart.com/aus-nebenbei-wird-business/ | 🟢 200 |
