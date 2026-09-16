@@ -65,14 +65,18 @@ Die Landingpage war seit dem 8. Juli als leerer Entwurf in WordPress (nur ein Pl
 |---|---|---|---|---|---|---|
 | **Storyideen für Networkerinnen** (+ Content-Box-Bump 17) | 19 | https://mumlifebalance.ch/storyideen/ | https://mumlifebalance.thrivecart.com/storyideen/ | /_blob/f4e65f7dcf7d82c94c07ca968a83cac3 (PDF, 47 S.) | — | 🟢 200 · Seite WP 4032 (v2 seit 16.09.) |
 | **Content-Box** (30 Hook-Vorlagen) | 17 | https://mumlifebalance.ch/content-box/ | https://mumlifebalance.thrivecart.com/content-box/ | PDF-Workbook | — | 🟢 200 · WP 3913 · läuft vor allem als Bump |
-| Finde dein Thema als Network-Mama | 39 | — | https://mumlifebalance.thrivecart.com/thema-finden/ | — | — | 🟢 200 · ⚠️ keine Landingpage |
-| Vom Network-Wissen zum eigenen Produkt | 39 | — | https://mumlifebalance.thrivecart.com/eigene-produkterstellung/ | — | https://t.me/+ukSgKKB5hZdiNTQ0 | 🟢 200 · AC-Automationen 48 + 51 |
-| Expertin statt Verkäuferin | 97 | — | https://mumlifebalance.thrivecart.com/expertin/ | — | — | 🟢 200 · ⚠️ keine Landingpage |
-| Instagram-Kundenmaschine | 333 | — | https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/ | — | https://t.me/+s6yEn-RiXZw3Nzg8 | 🟢 200 · AC-Automation 44 |
+| Finde dein Thema als Network-Mama | 39 | https://mumlifebalance.ch/angebote/#positionierung | https://mumlifebalance.thrivecart.com/thema-finden/ | — | — | 🟢 200 · kein eigener Slug — steht auf der Angebote-Seite |
+| Vom Network-Wissen zum eigenen Produkt | 39 | https://mumlifebalance.ch/angebote/#aufbau | https://mumlifebalance.thrivecart.com/eigene-produkterstellung/ | — | https://t.me/+ukSgKKB5hZdiNTQ0 | 🟢 200 · AC-Automationen 48 + 51 |
+| Expertin statt Verkäuferin | 97 | https://mumlifebalance.ch/angebote/#positionierung | https://mumlifebalance.thrivecart.com/expertin/ | — | — | 🟢 200 · kein eigener Slug — steht auf der Angebote-Seite |
+| Instagram-Kundenmaschine | 333 | https://mumlifebalance.ch/angebote/#positionierung | https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/ | — | https://t.me/+s6yEn-RiXZw3Nzg8 | 🟢 200 · AC-Automation 44 |
 | Mama-CEO | 333 | https://mumlifebalance.ch/mama-ceo/ | https://mumlifebalance.thrivecart.com/mama-ceo/ | — | https://t.me/+ZLzeEEok6A02MjRk | 🟢 200 · WP 3444 · AC-Automation 62 |
-| Digitale Produktwelt | 333 | — | https://mumlifebalance.thrivecart.com/digitale-produktwelt/ | — | https://t.me/+ukSgKKB5hZdiNTQ0 | 🟢 200 |
+| Digitale Produktwelt | 333 | https://mumlifebalance.ch/angebote/#aufbau | https://mumlifebalance.thrivecart.com/digitale-produktwelt/ | — | https://t.me/+ukSgKKB5hZdiNTQ0 | 🟢 200 |
 | **MBA (Bundle)** | Pioneer 997 / Liste 1347 | https://mumlifebalance.ch/mba/ · Warteliste https://mumlifebalance.ch/mba-warteliste/ · Replay https://mumlifebalance.ch/mba-webinar-replay/ | https://mumlifebalance.thrivecart.com/mba/ | — | — | 🟢 200 · ⚠️ nie aus Evergreen zum 1347er-Link |
-| 1:1 „Aus Nebenbei wird Business" | Beta 777 statt 1500 | — | https://mumlifebalance.thrivecart.com/aus-nebenbei-wird-business/ | — | — | 🟢 200 |
+| 1:1 „Aus Nebenbei wird Business" | Beta 777 statt 1500 | https://mumlifebalance.ch/angebote/#mama | https://mumlifebalance.thrivecart.com/aus-nebenbei-wird-business/ | — | — | 🟢 200 · 🚨 **zwei Checkouts für dasselbe Angebot**: Produkt 30 (dieser) und Produkt 29 `/aus-nebenbei`, das auf der Angebote-Seite verlinkt ist. Beide 200, beide 777 — einer gehört stillgelegt |
+| Dein Magnet-Ich (1:1) | 333 | https://mumlifebalance.ch/angebote/#positionierung | https://mumlifebalance.thrivecart.com/magnet-ich/ | — | — | 🟢 200 (16.09.2026) · stand bisher nicht in dieser Übersicht |
+| Dein starkes Mama-Business (1:1) | 777 | https://mumlifebalance.ch/angebote/#aufbau | https://mumlifebalance.thrivecart.com/mama-business/ | — | — | 🟢 200 (16.09.2026) · stand bisher nicht in dieser Übersicht |
+| Mama-Zeit | 37 | https://mumlifebalance.ch/mama-zeit/ · https://mumlifebalance.ch/angebote/#mama | https://mumlifebalance.thrivecart.com/mama-zeit-2/ | — | — | 🟢 200 · alte Ausrichtung, wird aber weiter verkauft |
+| Familienorga for real | 37 | https://mumlifebalance.ch/ordnung-im-familienchaos/ · https://mumlifebalance.ch/angebote/#mama | https://mumlifebalance.thrivecart.com/familienorga/ | — | — | 🟢 200 · alte Ausrichtung, wird aber weiter verkauft |
 
 ### Sonstige Seiten
 
