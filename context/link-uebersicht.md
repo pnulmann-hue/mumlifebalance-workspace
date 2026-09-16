@@ -19,7 +19,8 @@ Bei jeder Änderung hier nachführen. Skills, die Links in Captions/Mails setzen
 | **Produktpaket 21-Tage-Energie-Routine** | https://doterra.me/b0yKEX | 🟢 200 — vorgefüllter Warenkorb |
 | Öl-Wissen-Bot / Team-Companion | https://bot.mumlifebalance.ch | 🟢 200 · 🚫 **NUR für bestehende Kundinnen und das Team — nie öffentlich verlinken** (nennt die Marke im Titel, zeigt Team-Login) |
 | **0€ Freebie: Mini-Notfallapotheke** (10 S., 3 Hausmittel für Kinder) | — | 🔴 **keine Landingpage, kein Keyword** · PDF liegt nur in OneDrive · CTA zeigt auf das veraltete „Mama wird Hausapothekerin" · Inhalt: `context/doterra/mini-notfallapotheke.md` |
-| Ältere doTERRA-Seiten | /mama-wird-hausapothekerin · /oelreise | 🟢 200 (Inhalt veraltet, passt nicht zur neuen Positionierung) |
+| **Auslieferung: Mama wird Hausapothekerin** (61-S.-Workbook + MP3 + 5 Videos, ~159 MB) | — kein Checkout | 🟢 **aktiv** — wird ausgeliefert, wenn jemand die doTERRA-Hausapotheke kauft. Material: `Business/doTERRA/Mama wird Hausapothekerin/` · Inhalt: `context/doterra/mama-wird-hausapothekerin.md` |
+| Ältere doTERRA-**Seiten** | /mama-wird-hausapothekerin · /oelreise | 🟢 200 · ⚠️ Seiteninhalt veraltet — **das gleichnamige Programm ist aber aktiv**, nicht verwechseln |
 | Telegram-Kanal „Gesund durchs ganze Jahr" | Chat-ID -1002221396127 | 🟢 live · ⚠️ **Einladungslink fehlt in der Doku** — bitte nachtragen |
 
 ### ✅ Erledigt am 24.08.2026 — die Seite ist online
