@@ -3124,6 +3124,10 @@
         !(e.landingpage || []).length;
     }).length;
     var tot = alle.filter(function (e) { return e.status === "tot"; }).length;
+    var kassen = alle.filter(function (e) { return e.tc_status; });
+    var kassenTot = kassen.filter(function (e) {
+      return e.tc_status !== "live";
+    }).length;
 
     main.innerHTML =
       '<div class="page-head"><div><h1>Links & Material</h1>' +
@@ -3136,6 +3140,9 @@
       tile("Links", mitLink, "Seite · Kasse · Auslieferung · Gruppe") +
       tile("Ohne Seite", luecken, luecken ? "Angebot ohne eigene Landingpage" : "jedes Angebot hat eine Seite") +
       tile("Tot", tot, tot ? "nicht verlinken!" : "keiner tot") +
+      tile("Kassen offen", kassen.length - kassenTot,
+           kassenTot ? kassenTot + " nehmen kein echtes Geld"
+                     : "alle verlinkten Kassen laufen") +
       '</div>' +
       '<div class="suchleiste"><input id="lzfeld" type="search" autocomplete="off" ' +
       'placeholder="Suchen — zum Beispiel Storyideen, ENERGIE, Starterguide, MBA"></div>' +
@@ -3180,8 +3187,25 @@
             (e.status === "tot"
               ? '<span class="flag bad">existiert nicht</span>' : "") +
             (e.status === "achtung"
-              ? '<span class="flag bad">prüfen</span>' : "");
+              ? '<span class="flag bad">prüfen</span>' : "") +
+            // ThriveCart-Zustand: „test" bucht nichts ab, „disabled" ist aus.
+            (e.tc_status && e.tc_status !== "live"
+              ? '<span class="flag bad">' +
+                (e.tc_status === "test" ? "Testmodus" : "abgeschaltet") +
+                '</span>' : "");
           karte.appendChild(kopf);
+
+          if (e.tc_status && e.tc_status !== "live") {
+            var warn = document.createElement("p");
+            warn.className = "note";
+            warn.style.margin = "2px 0 6px";
+            warn.style.color = "var(--bad, #b3261e)";
+            warn.textContent = e.tc_status === "test"
+              ? "Die Kasse steht in ThriveCart auf Testmodus — sie zeigt die "
+                + "Seite, bucht aber nichts ab. Nicht verlinken, solange das so ist."
+              : "Dieser Checkout ist in ThriveCart abgeschaltet.";
+            karte.appendChild(warn);
+          }
 
           // In der Uebersicht steht bei einer Luecke „🔴 fehlt" in der
           // Stichwort-Spalte. Das ist keine Ansage, die man kopiert.
