@@ -107,6 +107,15 @@
     footer .fn a:hover { color:var(--gold-2); }
     footer .cp { margin-top:22px; font-size:12px; color:#9cc2c5; }
 
+    /* OPT-IN FORM */
+    .optin-card { max-width:520px; margin:0 auto; background:#fff; border-radius:20px; border:3px solid var(--gold); box-shadow:0 30px 70px rgba(0,0,0,.18); padding:40px 34px; }
+    .optin-form { display:flex; flex-direction:column; gap:14px; text-align:left; }
+    .optin-form label { font-size:13px; font-weight:700; color:var(--muted); letter-spacing:.5px; }
+    .optin-form input { width:100%; padding:16px 18px; border:2px solid #d7e6e6; border-radius:10px; font-size:17px; font-family:inherit; color:var(--ink); background:#fff; }
+    .optin-form input:focus { outline:none; border-color:var(--black); }
+    .optin-form button { margin-top:8px; background:var(--gold); color:#0c1c30; border:none; padding:20px; font-weight:800; font-size:clamp(15px,2vw,19px); letter-spacing:.5px; text-transform:uppercase; border-radius:8px; cursor:pointer; transition:background .2s,transform .2s; box-shadow:0 14px 34px rgba(41,85,109,.28); }
+    .optin-form button:hover { background:var(--gold-2); transform:translateY(-2px); }
+
     .rev { opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
     .rev.in { opacity:1; transform:none; }
   </style>
@@ -118,7 +127,7 @@
   <div class="wrap">
     <h1>Was könntest du <span class="gold">neben deinem Network</span> eigentlich verkaufen?</h1>
     <p class="sub">In 5 Minuten zeigt dir mein kostenloser Produkt-Ideen-Finder, welches eigene kleine Produkt wirklich zu dir und deinem Network passt — <b>ganz ohne fremde Leute anzuschreiben.</b></p>
-    <a href="#START" class="cta">Jetzt starten — kostenlos →</a>
+    <a href="#optin" class="cta">Jetzt starten — kostenlos →</a>
     <p class="cta-note">Kostenlos · in 5 Minuten durch · du bekommst 1–3 konkrete Ideen</p>
   </div>
 </section>
@@ -151,7 +160,7 @@
     <h2 class="mech-head">Du brauchst kein neues Network. <span class="gold">Du brauchst etwas Eigenes daneben.</span></h2>
     <p class="mech-sub">Network ist ein Marathon, und das ist völlig okay. Aber wer früher etwas in der Hand haben will, baut sich neben dem Network ein kleines eigenes Produkt auf — eins, das DIR gehört und in das dein Network-Produkt einfach als ein Teil der Lösung reinfliesst.</p>
     <p class="mech-sub">Du gibst dabei nichts auf, du stellst nur ein zweites Standbein daneben. Und das Verrückte ist: Genau dafür steckt in dir längst eine Idee — du siehst sie nur noch nicht. Der Finder kitzelt sie heraus.</p>
-    <div style="text-align:center;margin-top:40px"><a href="#START" class="cta">Meine Idee finden →</a></div>
+    <div style="text-align:center;margin-top:40px"><a href="#optin" class="cta">Meine Idee finden →</a></div>
   </div>
 </section>
 
@@ -199,7 +208,7 @@
       <div class="arrow">→</div>
       <div class="step rev"><div class="circle">3</div><p>Du bekommst dein Ergebnis und deinen ersten Schritt direkt zugeschickt.</p></div>
     </div>
-    <div style="text-align:center;margin-top:52px"><a href="#START" class="cta">Los geht's — kostenlos →</a></div>
+    <div style="text-align:center;margin-top:52px"><a href="#optin" class="cta">Los geht's — kostenlos →</a></div>
   </div>
 </section>
 
@@ -214,7 +223,7 @@
         <h2>Ich kenn das Gefühl genau.</h2>
         <p>Ich bin Patricia, vierfache Mama aus der Schweiz. Von 2018 bis Ende 2022 war ich selbst im Network — nur hat auf Instagram mein Produkt niemanden interessiert, und die Menschen, die mich kannten, waren längst meine Kundinnen. Ich hab viel zu viel Arbeit gegen viel zu wenig Verdienst getauscht und irgendwann hingeschmissen.</p>
         <p>2023 hab ich nochmal ein Business gestartet — aber nicht mit „dann verkauf ich halt ein anderes Produkt", sondern auf der Grundlage genau der Fragen, die dir mein Ideen-Finder gleich stellt. Mein Network-Produkt ist erst später einfach dazugekommen. Und weisst du, was das Verrückte ist? Genau dadurch hat sich sogar mein Network weiterentwickelt.</p>
-        <a href="#START" class="cta">Meine Idee finden →</a>
+        <a href="#optin" class="cta">Meine Idee finden →</a>
       </div>
     </div>
   </div>
@@ -227,14 +236,19 @@
   </div>
 </section>
 
-<!-- FINAL -->
-<section class="sec-cream final">
+<!-- OPT-IN (integriert) -->
+<section id="optin" class="sec-cream final">
   <div class="wrap">
     <div class="eyebrow-c">Bereit für deine Idee?</div>
     <h2 style="color:var(--ink)">Schau einfach mal, was rauskommt.</h2>
-    <p style="color:var(--muted)">Kostenlos, unverbindlich, in 5 Minuten. Vielleicht hältst du gleich den Anfang von etwas in der Hand, das nicht nur dein Instagram, sondern dein ganzes Business verändert.</p>
-    <a href="#START" class="cta cta-wide">Meinen Produkt-Ideen-Finder starten →</a>
-    <p class="cta-note">Kostenlos · keine Kreditkarte · sofort loslegen</p>
+    <p style="color:var(--muted);max-width:600px">Trag dich ein, und ich schick dir deinen Produkt-Ideen-Finder direkt zu. Kostenlos, unverbindlich, in 5 Minuten durch — vielleicht hältst du gleich den Anfang von etwas Eigenem in der Hand.</p>
+    <div class="optin-card rev">
+      <!-- ActiveCampaign Opt-in-Formular 66 (Produkt-Ideen-Finder). Der Einbettungs-Code
+           laedt das echte Formular clientseitig; die Marken-Optik kommt aus .optin-card unten. -->
+      <div class="_form_66"></div>
+      <script src="https://mumlifebalance.activehosted.com/f/embed.php?id=66" type="text/javascript" charset="utf-8"></script>
+      <p class="cta-note" style="color:var(--muted);text-align:center;margin-top:16px">Kein Spam · jederzeit abbestellbar</p>
+    </div>
   </div>
 </section>
 
