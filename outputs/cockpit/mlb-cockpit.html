@@ -120,6 +120,9 @@
   .btn.ghost { border-color: transparent; background: transparent; color: var(--ink-soft); padding: 6px 8px; }
   .btn.ghost:hover { background: var(--surface-2); color: var(--ink); }
   .btn[disabled] { opacity: 0.45; cursor: not-allowed; }
+  /* Ein Link, der als Knopf auftritt: ohne das ist er unterstrichen
+     und sitzt als Inline-Element schief in der Fusszeile. */
+  a.btn { display: inline-block; text-decoration: none; line-height: normal; }
 
   /* ---------- overview ---------- */
   .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(158px, 1fr)); gap: 12px; margin-bottom: 26px; }
@@ -1530,12 +1533,26 @@
         'playsinline preload="metadata"' + (quelle ? ' poster="' + quelle + '"' : "") + '></video>'
       : (quelle
           ? '<img class="wk-bild" src="' + quelle + '" alt="">'
-          : '<div class="wk-leer">Noch kein Vorschaubild</div>');
+          : '<div class="wk-leer">Noch kein Cover.<br>' +
+            (b.art === "reels" ? "Knopf „Cover bauen“ darunter." : "Folien stehen rechts.") +
+            '</div>');
 
     // Farbwaehler nur beim Reel — beim Karussell macht die Farbe der Editor.
     // Laeuft daneben ein Video, kommt das Cover als kleines Bild dazu, damit
     // beides sichtbar bleibt: was im Feed steht und was abgespielt wird.
     var farbwahl = "";
+    // Beim Karussell entscheidet der Marken-Look ueber die Farbe aller Folien.
+    // Bisher liess sich auf der Wochenkarte der Text aendern, die Farbe nicht —
+    // also musste Patricia fuer eine Farbe in ein anderes Werkzeug wechseln.
+    if (b.art === "karussells") {
+      farbwahl += '<div class="wk-holen"><select class="btn wk-marke">' +
+        Object.keys(BRANDS).map(function (k) {
+          return '<option value="' + k + '"' +
+            ((b.obj.brand || "mlb_dark") === k ? " selected" : "") + '>' +
+            esc(BRANDS[k].label) + '</option>';
+        }).join("") + '</select>' +
+        '<span class="wk-unter">Marken-Look</span></div>';
+    }
     if (b.art === "reels") {
       if (b.videourl && quelle) {
         farbwahl += '<img class="wk-covermini" src="' + quelle + '" alt="Cover">';
@@ -1543,6 +1560,10 @@
       farbwahl += '<div class="wk-holen">' +
         (b.videourl ? '<button class="btn" data-holen="video">Video speichern</button>' : "") +
         (quelle ? '<button class="btn" data-holen="cover">Cover speichern</button>' : "") +
+        // Das Cover ist ein eigenes Bild, nicht das erste Videobild. Dieser Knopf
+        // fuehrt dorthin, wo es gebaut wird — im selben Fenster.
+        '<button class="btn' + (quelle ? "" : " primary") + '" data-cover="1">' +
+          (quelle ? "Cover ändern" : "Cover bauen") + '</button>' +
         '</div>';
       farbwahl += '<div class="wk-farben">' +
         COVERFARBEN.map(function (f) {
@@ -1573,7 +1594,8 @@
             '<option value="doterra"' + ((b.obj.blotato && b.obj.blotato.profil) === "doterra" ? " selected" : "") + '>doTERRA</option>' +
           '</select>' +
           '<button class="btn">Caption kopieren</button>' +
-          '<button class="btn">Im Bild-Editor bauen</button>' +
+          '<a class="btn wk-editorlink" href="' + BILDEDITOR +
+            '" target="_blank" rel="noopener">Im Bild-Editor bauen</a>' +
           '<button class="btn' + (b.obj.textfrei ? "" : " primary") + '">' +
             (b.obj.textfrei ? "Freigabe zurücknehmen" : "Freigeben") + '</button>' +
         '</div>' +
@@ -1713,6 +1735,21 @@
       };
     });
 
+    // 🚨 Bleibt INNERHALB des Cockpits. Das Reel-Studio kann alles, was fuers
+    // Cover gebraucht wird: Video laden, Standbild vorschlagen, Hook drauflegen,
+    // als PNG speichern. Ein Sprung ins andere Artifact wuerde den Beitrag
+    // verlieren — die beiden Datenbanken sind nicht verbunden.
+    karte.querySelectorAll("[data-cover]").forEach(function (kn) {
+      kn.onclick = function () {
+        activeReel = b.obj.id;
+        reelFrames = [];
+        reelVideo = null;
+        activeTab = "reels";
+        render();
+        toast("Reel-Studio offen. Video reinziehen, Standbild wählen, Cover speichern.");
+      };
+    });
+
     karte.querySelectorAll(".farbknopf").forEach(function (kn) {
       kn.onclick = function () {
         b.obj.coverfarbe = this.getAttribute("data-farbe");
@@ -1739,11 +1776,31 @@
                                               function () { toast("Kopieren hat nicht geklappt"); });
       }
     };
-    felder[2].onclick = function () {
-      // Gebaut wird im Bild-Editor — hier wird nur geprüft und freigegeben.
-      if (b.art === "karussells") activeCarousel = b.obj.id;
-      window.open(BILDEDITOR, "_blank", "noopener");
-    };
+    // 🚨 Frueher stand hier window.open(). In einem Artifact-Rahmen ist das
+    // blockiert, und zwar lautlos — Patricia hat geklickt und nichts passierte.
+    // Ein echter Link mit target="_blank" geht durch, weil die Person ihn selbst
+    // anklickt. Zusaetzlich wandert die Adresse in die Zwischenablage, damit sie
+    // sie notfalls von Hand einsetzen kann.
+    var editorLink = karte.querySelector(".wk-editorlink");
+    if (editorLink) {
+      editorLink.onclick = function () {
+        if (b.art === "karussells") activeCarousel = b.obj.id;
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(BILDEDITOR).catch(function () {});
+        }
+        toast("Bild-Editor wird geöffnet. Falls nichts aufgeht: der Link ist kopiert.");
+      };
+    }
+    var markeWahl = karte.querySelector(".wk-marke");
+    if (markeWahl) {
+      markeWahl.onchange = function () {
+        b.obj.brand = this.value;
+        b.obj.handle = BRANDS[this.value].handle;
+        saveCarousel(b.obj);
+        render();
+      };
+    }
+
     var profilWahl = karte.querySelector(".wk-profil");
     if (profilWahl) {
       profilWahl.onchange = function () {
