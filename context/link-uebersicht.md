@@ -4,24 +4,30 @@ tags: [funnel, produkt, reference]
 
 # Link-Übersicht — alle Angebote auf einen Blick
 
-**Stand:** 24.08.2026 · **Alle Links am 24.08.2026 mit `curl` geprüft**, Status-Codes unten.
+**Stand:** 16.09.2026 · **Alle Links am 16.09.2026 mit `curl` geprüft**, Status-Codes in der Spalte rechts.
+
+**Vier Linkarten je Angebot** — genau die, die Patricia in der Story braucht:
+**Landingpage** (mumlifebalance.ch) · **ThriveCart** (Kasse) · **Auslieferung** (was die Kundin bekommt: PDF, Bot, Tool) · **Telegram** (die Gruppe zum Angebot).
+Ein `—` heisst: gibt es nicht. Eine Lücke bleibt sichtbar, statt geraten zu werden.
 Bei jeder Änderung hier nachführen. Skills, die Links in Captions/Mails setzen, lesen diese Datei statt zu raten.
 
 ---
 
 ## 🌿 doTERRA — Profil „Mama Regeneration & Energie"
 
-| Was | Link | Status |
-|---|---|---|
-| 🔗 **Bio-Link-Seite** (das gehört in die Instagram-Bio) | https://mumlifebalance.ch/hormone/ | 🟢 **live seit 24.08.2026** (WP 4078) · mobil geprüft |
-| **0€ Freebie: 3-Tage-Energie-Kickstart** | https://mumlifebalance.ch/energie-kickstart/ | 🟢 **live seit 24.08.2026** (WP 3911) · mobil + Desktop geprüft |
-| Keyword-Weg zum selben Freebie | Kommentar/DM **`ENERGIE`** → ManyChat-Flow | 🟢 live (Flow „0€ Produkt Energie-Kickstart") |
-| **Produktpaket 21-Tage-Energie-Routine** | https://doterra.me/b0yKEX | 🟢 200 — vorgefüllter Warenkorb |
-| Öl-Wissen-Bot / Team-Companion | https://bot.mumlifebalance.ch | 🟢 200 · 🚫 **NUR für bestehende Kundinnen und das Team — nie öffentlich verlinken** (nennt die Marke im Titel, zeigt Team-Login) |
-| **0€ Freebie: Mini-Notfallapotheke** (10 S., 3 Hausmittel für Kinder) | — | 🔴 **keine Landingpage, kein Keyword** · PDF liegt nur in OneDrive · CTA zeigt auf das veraltete „Mama wird Hausapothekerin" · Inhalt: `context/doterra/mini-notfallapotheke.md` |
-| **Auslieferung: Mama wird Hausapothekerin** (61-S.-Workbook + MP3 + 5 Videos, ~159 MB) | — kein Checkout | 🟢 **aktiv** — wird ausgeliefert, wenn jemand die doTERRA-Hausapotheke kauft. Material: `Business/doTERRA/Mama wird Hausapothekerin/` · Inhalt: `context/doterra/mama-wird-hausapothekerin.md` |
-| Ältere doTERRA-**Seiten** | /mama-wird-hausapothekerin · /oelreise | 🟢 200 · ⚠️ Seiteninhalt veraltet — **das gleichnamige Programm ist aber aktiv**, nicht verwechseln |
-| Telegram-Kanal „Gesund durchs ganze Jahr" | Chat-ID -1002221396127 | 🟢 live · ⚠️ **Einladungslink fehlt in der Doku** — bitte nachtragen |
+| Was | Keyword | Landingpage | Bestellen | Auslieferung | Telegram | Status |
+|---|---|---|---|---|---|---|
+| 🔗 **Bio-Link-Seite** (gehört in die Instagram-Bio) | — | https://mumlifebalance.ch/hormone/ | — | — | — | 🟢 200 · WP 4078 |
+| **0€ Energie-Kickstart** | `ENERGIE` | https://mumlifebalance.ch/energie-kickstart/ | — | 3-Tage-Mail-Challenge, kein PDF | — | 🟢 200 · WP 3911 |
+| **0€ Mini-Notfallapotheke** (10 S., 3 Hausmittel) | 🔴 fehlt | https://mumlifebalance.ch/mini-notfallapotheke-fuer-mamas/ | — | PDF, 22 MB · nur OneDrive, nicht in Drive | — | 🟢 200 · WP 2906 · Inhalt: `context/doterra/mini-notfallapotheke.md` |
+| **E-Book ätherische Öle** | — | https://mumlifebalance.ch/ebook/ | — | E-Book (AC-Automation 29) | https://t.me/+Oh0T-nYDzUJmNTNk | 🟢 200 |
+| **Guide doTERRA Business** | — | https://mumlifebalance.ch/mama-unternehmen/ | — | Guide (AC-Automation 28) | https://t.me/+Oh0T-nYDzUJmNTNk | 🟢 200 |
+| **Mama wird Hausapothekerin** (Programm) | — | https://mumlifebalance.ch/mama-wird-hausapothekerin/ | kein Checkout | 61-S.-Workbook + MP3 + 5 Videos, ~159 MB | — | 🟢 **aktiv** — wird beim Kauf der Hausapotheke ausgeliefert · ⚠️ Seiteninhalt veraltet, Produkt nicht |
+| **Startersets** | — | https://mumlifebalance.ch/startersets/ | — | — | — | 🟢 200 |
+| **Produktpaket 21-Tage-Energie-Routine** | — | — | https://doterra.me/b0yKEX | — | — | 🟢 200 · vorgefüllter Warenkorb · ⚠️ nicht auf ≥150 PV geprüft |
+| **Ölreise** | — | https://mumlifebalance.ch/oelreise/ | — | — | — | 🟢 200 · ⚠️ Inhalt veraltet |
+| Öl-Wissen-Bot / Team-Companion | — | — | — | https://bot.mumlifebalance.ch | — | 🟢 200 · 🚫 **NUR Kundinnen und Team — nie öffentlich verlinken** |
+| Telegram-Kanal „Gesund durchs ganze Jahr" | — | — | — | — | Chat-ID -1002221396127 | 🟢 live · ⚠️ **Einladungslink fehlt** |
 
 ### ✅ Erledigt am 24.08.2026 — die Seite ist online
 
@@ -39,30 +45,33 @@ Die Landingpage war seit dem 8. Juli als leerer Entwurf in WordPress (nur ein Pl
 
 ### 0€ Freebies
 
-| Freebie | Keyword | Link | Status |
-|---|---|---|---|
-| Workbook „Von 0 auf echt" | `ECHT1` | über ManyChat | — |
-| 0€ Fahrplan „Von Produktposts zu doppeltem Einkommen" | `SYSTEM` / `FAHRPLAN` | über ManyChat | — |
-| 0€ Starter-Guide Instagram | `SICHTBAR` / `ANLEITUNG` | https://mumlifebalance.ch/instagram-starterguide | 🟢 200 |
-| Lead-Challenge 3-Tage-Workbook | `LEAD` | über ManyChat | — |
-| Story-Challenge 7-Tage | `STORY` | https://mumlifebalance.ch/story-challenge/ | 🟢 200 · ⚠️ ManyChat-Keyword noch nicht angelegt |
-| 0€ Potenzial-Test / Quiz | `QUIZ` | https://mumlifebalance.ch/potenzial-test/ | 🟢 200 |
-| Bio-Check (interaktiver Bot) | `BIO` | https://mumlifebalance.ch/bio-check | 🟢 200 |
-| Freischaufeln / To-Do-Liste halbieren | `ZEIT` | https://mumlifebalance.ch/freischaufeln | 🟢 200 |
+| Freebie | Keyword | Landingpage | ThriveCart | Auslieferung | Telegram | Status |
+|---|---|---|---|---|---|---|
+| Workbook „Von 0 auf echt" | `ECHT1` | https://mumlifebalance.ch/von-0-auf-echt/ | — | /_blob/45f60d981421530fea57e1c635546237 (PDF, 25 S.) | — | 🟢 200 (16.09.2026) · WP 3836 |
+| 0€ Fahrplan „Von Produktposts zu doppeltem Einkommen" | `SYSTEM` / `FAHRPLAN` | https://mumlifebalance.ch/fahrplan/ | — | /_blob/25a9e0c778b14319e666cf968eb123fe (PDF) | — | 🟢 200 (16.09.2026) · WP 3842 |
+| 0€ Starter-Guide Instagram | `SICHTBAR` / `ANLEITUNG` | https://mumlifebalance.ch/instagram-starterguide/ | — | /_blob/43bb5e33cd93df89cb5955079b331ce3 (PDF, 17 S.) | — | 🟢 200 |
+| Lead-Challenge 3-Tage-Workbook | `LEAD` | https://mumlifebalance.ch/lead-challenge/ | https://mumlifebalance.thrivecart.com/challenge-lead-magnet/ | /_blob/bd461524b5b2efa42c9e3109449c0f42 (PDF, 13 S.) | https://t.me/+lXiK5ZAigFIzZWY0 | 🟢 200 (16.09.2026) · WP 3820 · AC-Automation 47 |
+| Story-Challenge 7-Tage | `STORY` | https://mumlifebalance.ch/story-challenge/ | — | /_blob/bcb120da59f69fcaba91934deeafa3b9 (PDF, 20 S.) | https://t.me/+S-4YWyCtH45mZDE0 | 🟢 200 · ⚠️ ManyChat-Keyword noch nicht angelegt · AC-Automation 45 |
+| 0€ Potenzial-Test / Quiz | `QUIZ` | https://mumlifebalance.ch/potenzial-test/ | — | Quiz auf der Seite · Danke: https://mumlifebalance.ch/dankesseite-potenzial-quiz/ | — | 🟢 200 |
+| Bio-Check (interaktiver Bot) | `BIO` | https://mumlifebalance.ch/bio-check/ | — | https://bio-check-bot.vercel.app | — | 🟢 200 · 🚨 `bio-check.mumlifebalance.ch` löst **nicht** auf (16.09.2026) — nie verlinken |
+| Freischaufeln / To-Do-Liste halbieren | `ZEIT` | https://mumlifebalance.ch/freischaufeln/ | — | https://freischaufeln.vercel.app | — | 🟢 200 |
+| Produkt-Ideen-Finder (KI-Tool) | — | https://mumlifebalance.ch/produkt-ideen-finder/ → leitet auf `-los/` | — | https://produkt-ideen-finder-service.vercel.app/ | — | 🟢 200 · WP 4085 (4083 ist Entwurf) |
+| Mama-Business-Bootcamp (5 Tage, PIA) | — | https://mumlifebalance.ch/bootcamp/ | — | https://mumlifebalance.ch/bootcamp-willkommen/ | https://t.me/+HW6lvdlbTBhiOWM0 | 🟢 200 · AC-Formular 60 |
 
 ### Bezahlte Angebote
 
-| Produkt | Preis | Checkout | Status |
-|---|---|---|---|
-| **Storyideen für Networkerinnen** (+ Content-Box-Bump 17) | 19 | https://mumlifebalance.thrivecart.com/storyideen/ | 🟢 200 |
-| Finde dein Thema als Network-Mama | 39 | https://mumlifebalance.thrivecart.com/thema-finden/ | 🟢 200 |
-| Vom Network-Wissen zum eigenen Produkt | 39 | https://mumlifebalance.thrivecart.com/eigene-produkterstellung/ | 🟢 200 (geprüft 10.09.2026) |
-| Expertin statt Verkäuferin | 97 | https://mumlifebalance.thrivecart.com/expertin/ | 🟢 200 |
-| Instagram-Kundenmaschine | 333 | https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/ | 🟢 200 |
-| Mama-CEO | 333 | https://mumlifebalance.thrivecart.com/mama-ceo/ | 🟢 200 (Preis aus ThriveCart, 16.09.2026) |
-| Digitale Produktwelt | 333 | https://mumlifebalance.thrivecart.com/digitale-produktwelt/ | 🟢 200 |
-| **MBA (Bundle)** | Pioneer 997 / Liste 1347 | https://mumlifebalance.thrivecart.com/mba/ | 🟢 200 |
-| 1:1 „Aus Nebenbei wird Business" | Beta 777 statt 1500 | https://mumlifebalance.thrivecart.com/aus-nebenbei-wird-business/ | 🟢 200 |
+| Produkt | Preis | Landingpage | ThriveCart | Auslieferung | Telegram | Status |
+|---|---|---|---|---|---|---|
+| **Storyideen für Networkerinnen** (+ Content-Box-Bump 17) | 19 | https://mumlifebalance.ch/storyideen/ | https://mumlifebalance.thrivecart.com/storyideen/ | /_blob/f4e65f7dcf7d82c94c07ca968a83cac3 (PDF, 47 S.) | — | 🟢 200 · Seite WP 4032 (v2 seit 16.09.) |
+| **Content-Box** (30 Hook-Vorlagen) | 17 | https://mumlifebalance.ch/content-box/ | https://mumlifebalance.thrivecart.com/content-box/ | PDF-Workbook | — | 🟢 200 · WP 3913 · läuft vor allem als Bump |
+| Finde dein Thema als Network-Mama | 39 | — | https://mumlifebalance.thrivecart.com/thema-finden/ | — | — | 🟢 200 · ⚠️ keine Landingpage |
+| Vom Network-Wissen zum eigenen Produkt | 39 | — | https://mumlifebalance.thrivecart.com/eigene-produkterstellung/ | — | https://t.me/+ukSgKKB5hZdiNTQ0 | 🟢 200 · AC-Automationen 48 + 51 |
+| Expertin statt Verkäuferin | 97 | — | https://mumlifebalance.thrivecart.com/expertin/ | — | — | 🟢 200 · ⚠️ keine Landingpage |
+| Instagram-Kundenmaschine | 333 | — | https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/ | — | https://t.me/+s6yEn-RiXZw3Nzg8 | 🟢 200 · AC-Automation 44 |
+| Mama-CEO | 333 | https://mumlifebalance.ch/mama-ceo/ | https://mumlifebalance.thrivecart.com/mama-ceo/ | — | https://t.me/+ZLzeEEok6A02MjRk | 🟢 200 · WP 3444 · AC-Automation 62 |
+| Digitale Produktwelt | 333 | — | https://mumlifebalance.thrivecart.com/digitale-produktwelt/ | — | https://t.me/+ukSgKKB5hZdiNTQ0 | 🟢 200 |
+| **MBA (Bundle)** | Pioneer 997 / Liste 1347 | https://mumlifebalance.ch/mba/ · Warteliste https://mumlifebalance.ch/mba-warteliste/ · Replay https://mumlifebalance.ch/mba-webinar-replay/ | https://mumlifebalance.thrivecart.com/mba/ | — | — | 🟢 200 · ⚠️ nie aus Evergreen zum 1347er-Link |
+| 1:1 „Aus Nebenbei wird Business" | Beta 777 statt 1500 | — | https://mumlifebalance.thrivecart.com/aus-nebenbei-wird-business/ | — | — | 🟢 200 |
 
 ### Sonstige Seiten
 
