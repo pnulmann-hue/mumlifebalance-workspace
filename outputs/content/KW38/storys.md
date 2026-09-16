@@ -2,203 +2,117 @@
 tags: [content, story]
 ---
 
-# Story-Bogen KW38 · Mo 14.9. – Fr 18.9.2026
+# Story-Bogen KW38 — Do 17.9. bis Sa 19.9.
 
-Jeder Tag ausformuliert. Du tauschst das Bild und schärfst eine Zeile nach — du
-schreibst die Story nicht neu.
+**Regel:** Feed abends, Story am nächsten Morgen greift ihn auf. Sie wiederholt den
+Beitrag nie — sie nimmt einen Gedanken heraus und führt zum CTA.
 
-**Regel:** Feed-Post abends → die Story am nächsten Morgen greift ihn auf. Sie
-wiederholt ihn nie, sie nimmt einen Gedanken heraus und führt zum CTA.
-
-**Jeder Sticker gibt eine echte Wahl.** „Was meinst du?" ist keine.
-
----
-
-## Mentoring
-
-| Tag | knüpft an | Säule | Käufertyp | In einem Satz |
+| Tag | knüpft an | Profil | Käufertyp | Idee in einem Satz |
 |---|---|---|---|---|
-| Mo | Wochenstart | Expertise | 🔴 Rot | Die Liste, die du diese Woche führst |
-| Di | Mo-Reel | Persönlichkeit | 🟡 Gelb | Warum ich nicht mehr erkläre, was ich mache |
-| Mi | Di-Reel | Expertise | 🔵 Blau | Die drei Fragen, live durchgespielt |
-| Do | Mi-Karussell | Inspiration | 🟢 Grün | Was gestern in den Kommentaren kam |
-| Fr | Do-Reel | Verkauf | 🔴 Rot | Für wen der Produkt-Ideen-Finder ist — und für wen nicht |
+| **Do 17.9.** | Mi-Reel „erstes Network" | Mentoring | 🔴 Rot (direkt) | Was ich damals gerechnet habe — und was ich heute rechne |
+| **Fr 18.9.** | Do-Karussell „sechs Fragen" | Mentoring | 🔵 Blau (Fakten) | Die Antworten aus den Kommentaren sortiert, mit Beispiel |
+| **Sa 19.9.** | Fr-Karussell „läuft das wirklich" | Mentoring | 🟡 Gelb (emotional) | Der Moment, in dem ich aufgehört habe auszuweichen |
+
+🚨 **Grün fehlt diese Woche.** Bei drei Tagen gehen drei Käufertypen. Grün
+(Sicherheit, Frage-Sticker) kommt Montag in KW39 als erstes dran.
 
 ---
 
-### MO 14.9. · Expertise · 🔴 Rot · CTA: Keyword
+## DO 17.9. · Mentoring · 5 Folien · Käufertyp Rot
 
-**1 — Szene**
-Ich hab heute Morgen in meinen Chats nach zwei Wörtern gesucht: „wie machst du".
+**Slide 1 — BÄM-Hook**
+> Zwei Jahre lang habe ich die falsche Zahl gerechnet.
 
-**2 — Reibung**
-Sieben Treffer aus den letzten vier Wochen. Alle von verschiedenen Leuten.
+*(Akzentwort ZAHL in Orange.)*
 
-**3 — Wendung**
-Sieben Mal hat mich jemand etwas gefragt, das ich ohne Nachdenken beantworten konnte. Das ist kein Zufall mehr, das ist ein Muster.
+**Slide 2 — Szene**
+> Ich hab jeden Monat ausgerechnet, wie viele Stunden ich noch investieren müsste,
+> damit es endlich reicht.
 
-**4 — Punkt**
-Mach das gleich mal bei dir. Suchfunktion, „wie machst du", und dann zähl.
+**Slide 3 — Reibung**
+> Was ich nie gerechnet habe: wovon diese Stunden überhaupt abhängen. Vergütungsplan,
+> Preise, Aktionen — alles Entscheidungen, bei denen ich nicht am Tisch sass.
 
-**5 — CTA**
-Heute Abend geht dazu ein Reel raus.
-*Sticker:* Umfrage — **„Wie viele Treffer hast du? 0–2 / mehr als 3"**
+**Slide 4 — Wendung**
+> Heute rechne ich anders. Nicht mehr „wie viele Stunden", sondern „welcher Teil davon
+> gehört mir".
 
----
+**Slide 5 — Sticker + CTA**
+> Welche Zahl rechnest du gerade?
+> **Umfrage:** „Stunden" · „Wovon es abhängt"
+>
+> Wer die zweite tippt, bekommt von mir das Werkzeug dazu — Link unten.
+> 🔗 Produkt-Ideen-Finder
 
-### DI 15.9. · Persönlichkeit · 🟡 Gelb · CTA: Antwort-Sticker
-
-**1 — Szene**
-Gestern beim Elternabend. „Und was machst du so?"
-
-**2 — Reibung**
-Ich hab angefangen zu erklären. Nach zwei Sätzen hab ich das höfliche Nicken gesehen und aufgehört.
-
-**3 — Wendung**
-Früher hätte mich das den ganzen Abend beschäftigt. Inzwischen weiss ich: Die meisten fragen nicht nach, weil sie nicht wissen, was sie fragen sollen.
-
-**4 — Punkt**
-Seit ich nicht mehr erkläre, **was** ich mache, sondern **wem ich womit helfe**, kommen Rückfragen. Derselbe Abend, andere Antwort.
-
-**5 — CTA**
-*Sticker:* Frage-Sticker — **„Was antwortest du am Elternabend?"**
-Ich antworte jeder.
+**CTA-Link:** Produkt-Ideen-Finder (0€) · Keyword-Alternative im Feed: `STANDBEIN`
 
 ---
 
-### MI 16.9. · Expertise · 🔵 Blau · CTA: Keyword STANDBEIN
+## FR 18.9. · Mentoring · 5 Folien · Käufertyp Blau
 
-**1 — Anknüpfen**
-Gestern kam die Frage: „Und was, wenn bei mir gar nichts kommt?"
+**Slide 1 — BÄM-Hook**
+> Die häufigste Antwort auf Frage 1 war gestern: „Wie du das mit vier Kindern schaffst."
 
-**2 — Reibung**
-Kommt vor. Meistens liegt es daran, dass man nur in einem Chat sucht.
+*(Nur posten, wenn wirklich Antworten kamen — sonst Slide 1 austauschen gegen:
+„Frage 1 ist die, an der die meisten hängenbleiben." Nichts erfinden.)*
 
-**3 — Konkret**
-Drei Orte, an denen du suchst:
-die WhatsApp-Gruppe deines Teams,
-die Chats mit Freundinnen,
-und deine eigenen Sprachnachrichten der letzten Wochen.
+**Slide 2 — Aufklärung**
+> Das ist kein Small Talk. Wenn dich drei Leute dasselbe fragen, ist das eine
+> Marktforschung, für die andere Geld bezahlen.
 
-**4 — Punkt**
-Bei mir lag das meiste in den Sprachnachrichten. Da erklär ich Sachen, die ich nie aufschreiben würde.
+**Slide 3 — Beispiel**
+> Eine meiner Mentees ist Physiotherapeutin. Sie wurde ständig gefragt, warum der
+> Rücken nach der Schwangerschaft nicht mehr derselbe ist. Genau daraus ist ihr Thema
+> geworden.
 
-**5 — CTA**
-Heute Abend gibt es die ganze Anleitung als Karussell.
-*Sticker:* Link zum Beitrag · **Kommentier STANDBEIN**
+**Slide 4 — Glaubenssatz brechen**
+> Die meisten denken, ein klares Thema grenzt aus. Bei ihr war es andersrum — seit sie
+> eins hat, schreiben ihr mehr Leute, nicht weniger.
 
----
+**Slide 5 — Sticker + CTA**
+> **Frage-Sticker:** „Wofür wirst du am häufigsten gefragt?"
+>
+> Ich antworte jeder einzeln. Und wenn du das Workbook dazu willst: `ECHT1` in die
+> Kommentare unter den Beitrag von gestern.
 
-### DO 17.9. · Inspiration · 🟢 Grün · CTA: Antworten
-
-**1 — Anknüpfen**
-Was gestern unter dem Karussell reinkam, hat mich umgehauen.
-
-**2 — Beispiele**
-Eine kriegt Kinder zum Essen, die nichts essen.
-Eine hat den Familienhaushalt auf ein Budget gebracht, das aufgeht.
-Eine bringt vier Kinder morgens ohne Geschrei aus dem Haus.
-
-**3 — Reibung**
-Alle drei haben dazugeschrieben: „Aber das ist doch nichts Besonderes."
-
-**4 — Punkt**
-Doch. Für jede, die da noch steht, wo du vor zwei Jahren warst, ist es genau das.
-
-**5 — CTA**
-*Sticker:* Frage-Sticker — **„Was ist deins? Ich sag dir ehrlich, ob ich dafür zahlen würde."**
+**CTA-Link:** Workbook „Von 0 auf echt" · Keyword `ECHT1`
 
 ---
 
-### FR 18.9. · Verkauf · 🔴 Rot · CTA: Keyword STANDBEIN
+## SA 19.9. · Mentoring · 5 Folien · Käufertyp Gelb
 
-**1 — Anknüpfen**
-Diese Woche ging es jeden Tag um dieselbe Sache: dass du längst etwas hast, wofür dich jemand fragt.
+**Slide 1 — BÄM-Hook**
+> Ich habe zweieinhalb Jahre lang das Thema gewechselt, wenn jemand nach meinem
+> Business gefragt hat.
 
-**2 — Für wen nicht**
-Der Produkt-Ideen-Finder ist nichts für dich, wenn du schon weisst, was du anbietest. Dann brauchst du keine Ideen, dann brauchst du Kundinnen.
+**Slide 2 — Szene**
+> Familienfest, irgendwer fragt freundlich „und, läuft das jetzt?" — und ich hab
+> irgendwas über die Kinder gesagt und bin in die Küche.
 
-**3 — Für wen schon**
-Er ist für dich, wenn du seit Monaten weisst, dass da was ist, und es nicht in Worte kriegst.
+**Slide 3 — Reibung**
+> Das Schlimme war nicht die Frage. Das Schlimme war, dass ich sie mir selbst auch
+> gestellt habe.
 
-**4 — Was es ist**
-Du gibst rein, was du kannst. Es kommen drei Vorschläge raus, an denen du weiterdenken kannst. Zwanzig Minuten, kostet nichts.
+**Slide 4 — Wendung**
+> Geändert hat es sich nicht, als die Zahlen besser wurden. Es hat sich geändert, als
+> ich aufgehört habe, eine Zwischenbilanz abzuliefern, nach der niemand gefragt hat.
 
-**5 — CTA**
-*Sticker:* Link zum Beitrag · **Kommentier STANDBEIN**
+**Slide 5 — Sticker + CTA**
+> **Umfrage:** „Kenn ich" · „Zum Glück nicht"
+>
+> Wenn du „kenn ich" tippst, schreib ich dir zurück. Ich mein das ernst.
+
+**CTA:** DM-Gespräch (kein Link) — das ist der Sympathie-Tag der Woche.
 
 ---
 
-## doTERRA
+## 🟩 doTERRA-Storys
 
-**Diese Woche wärmt die Energiekur an.** Der Verkauf läuft ab nächster Woche über die
-DM — deshalb ist das Ziel jeder Story ein **Gespräch**, nicht ein Klick.
+Der Monatsplan gibt hier einen eigenen Wochen-Bogen vor (Mo Rot · Di Gelb · Mi Grün ·
+Do Blau · Fr gemischt). Für Mi–Fr gilt:
 
 | Tag | Käufertyp | Sequenz | CTA |
 |---|---|---|---|
-| Mo | 🔴 Rot | Klartext zum Wochenthema | ENERGIE |
-| Di | 🟡 Gelb | Behind-the-Scenes aus dem Abend | Antwort-Sticker |
-| Mi | 🟢 Grün | **Die Umfrage-Sequenz** — Pflicht laut Monatsplan | Antwort auf jede |
-| Do | 🔵 Blau | Aufklärung mit Einordnung | Speichern |
-| Fr | gemischt | Rückblick und Ausblick | ENERGIE |
-
----
-
-### MO 14.9. · 🔴 Rot
-
-**1** Es gibt drei Momente am Tag, an denen bei mir alles kippt.
-**2** Der Morgen zwischen sechs und acht. Der Nachmittag um halb vier. Und der Übergang, wenn die Kinder im Bett sind.
-**3** Jahrelang hab ich alle drei verpasst und mich abends gefragt, wo der Tag hin ist.
-**4** Diese Woche zeig ich dir alle drei.
-*Sticker:* Umfrage — **„Welcher kippt bei dir am meisten? Morgen / Nachmittag / Abend"**
-
----
-
-### DI 15.9. · 🟡 Gelb
-
-**1** Gestern Abend, halb neun. Küche noch nicht fertig, ich sitz schon auf dem Sofa.
-**2** Früher wär das der Moment gewesen, wo ich das Handy nehme und der Abend weg ist.
-**3** Bin nochmal aufgestanden, Küche fertig gemacht, Licht runter. Drei Minuten.
-**4** Und dann hat sich der Abend angefühlt, als hätte er angefangen. Nicht als wäre er passiert.
-*Sticker:* Frage-Sticker — **„Was machst du, wenn die Kinder im Bett sind?"**
-
----
-
-### MI 16.9. · 🟢 Grün · Pflicht-Sequenz
-
-**1** Ich will was von dir wissen, und ich antworte jeder einzeln.
-**2** *Sticker:* Umfrage mit drei Antworten — **„Was ist bei dir der schwierigste Moment am Tag? Morgen / Nachmittag / Abend"**
-**3** Ich frag, weil ich bei jeder Antwort etwas anderes erzählen würde. Und weil ich wissen will, ob es dir geht wie mir.
-**4** Antworte einfach mit dem Wort. Ich schreib zurück.
-
----
-
-### DO 17.9. · 🔵 Blau
-
-**1** Gestern haben die meisten von euch „Nachmittag" getippt.
-**2** Das hat einen Grund, und der hat nichts mit Disziplin zu tun.
-**3** Zwischen drei und fünf fällt bei vielen der Cortisolspiegel ab, und gleichzeitig ist der Blutzucker unten. Wer über Mittag wenig Eiweiss hatte, spürt das doppelt.
-**4** Bei mir hat es geholfen, mittags anders zu essen. Nicht mehr, sondern anders.
-*Sticker:* Speichern-Hinweis · Frage-Sticker — **„Was isst du mittags?"**
-
----
-
-### FR 18.9. · gemischt
-
-**1** Diese Woche ging es um die drei Momente, an denen der Tag kippt.
-**2** Und ganz ehrlich: Bei mir sind diese Woche zwei davon danebengegangen.
-**3** Es geht nicht darum, dass alle drei sitzen. Es geht darum, dass du sie überhaupt siehst.
-**4** Nächste Woche erzähl ich dir, was ich ab Oktober mache — und für wen das gedacht ist.
-*Sticker:* **Kommentier oder schreib mir ENERGIE**, dann schick ich dir die drei Momente aufgeschrieben.
-
----
-
-## Geprüft
-
-| Regel | Stand |
-|---|---|
-| Alle vier Käufertypen über die Woche | Rot · Gelb · Blau · Grün · Rot ✅ |
-| Jede Sequenz mit CTA | ✅ |
-| Jeder Sticker mit echter Wahl | ✅ — drei Umfragen mit benannten Optionen, drei Frage-Sticker mit konkreter Frage |
-| Story greift den Feed-Post auf, wiederholt ihn nicht | ✅ |
-| Pflicht-Sequenz Mi (Umfrage) aus dem Monatsplan | ✅ |
+| **Mi 16.9.** | 🟢 Grün | **Die Pflicht-Umfrage aus dem Monatsplan:** „Was ist bei dir der schwierigste Moment am Tag?" mit drei Antworten (Morgenhetze · Nachmittagstief · Abendübergabe). **Jeder Antwortenden zurückschreiben** — laut Plan die wichtigste Lead-Quelle des Monats. | Freebie `ENERGIE` |
+| **Do 17.9.** | 🔵 Blau | Die drei Antworten aus der Umfrage aufschlüsseln, je eine Folie, sachlich | Speichern + Link |
+| **Fr 18.9.** | gemischt | Wochenrückblick, lockerer Ton, Ausblick auf nächste Woche | Freebie `ENERGIE` |
