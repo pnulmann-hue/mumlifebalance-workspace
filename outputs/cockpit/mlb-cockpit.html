@@ -3068,7 +3068,7 @@
     if (ok) fertig(); else toast("Kopieren ging nicht — Link von Hand markieren.");
   }
 
-  function kopierZeile(lab, wert, istLink) {
+  function kopierZeile(lab, wert, istLink, anzeige) {
     var zeile = document.createElement("div");
     zeile.className = "lzzeile";
 
@@ -3084,7 +3084,9 @@
       a.href = wert;
       a.target = "_blank";
       a.rel = "noopener";
-      a.textContent = wert.replace(/^https?:\/\//, "");
+      // Anzeige und kopierter Wert duerfen auseinandergehen: eine
+      // Blob-Adresse ist 95 Zeichen lang und sagt nichts.
+      a.textContent = anzeige || wert.replace(/^https?:\/\//, "");
       wertfeld.appendChild(a);
     } else {
       wertfeld.textContent = wert;
@@ -3111,18 +3113,28 @@
     }
 
     var alle = links.eintraege || [];
-    var mitLink = alle.filter(function (e) { return e.link; }).length;
-    var luecken = alle.filter(function (e) { return !e.link; }).length;
+    var ARTEN = ["landingpage", "thrivecart", "auslieferung", "telegram"];
+    var mitLink = 0;
+    alle.forEach(function (e) {
+      ARTEN.forEach(function (a) { mitLink += (e[a] || []).length; });
+    });
+    // Luecke heisst hier: ein Angebot ohne eigene Seite auf mumlifebalance.ch.
+    var luecken = alle.filter(function (e) {
+      return (e.gruppe === "freebie" || e.gruppe === "bezahlt") &&
+        !(e.landingpage || []).length;
+    }).length;
     var tot = alle.filter(function (e) { return e.status === "tot"; }).length;
 
     main.innerHTML =
       '<div class="page-head"><div><h1>Links & Material</h1>' +
       '<p>Stichwort tippen, auf <strong>kopieren</strong> tippen, in die Story ' +
-      'einsetzen. Checkout-Links, Landingpages, Kommentar-Stichwörter und die ' +
-      'hinterlegten PDFs — alles an einer Stelle.</p></div></div>' +
+      'einsetzen. Je Angebot vier Links: die <strong>Seite</strong> auf ' +
+      'mumlifebalance.ch, die <strong>Kasse</strong> bei ThriveCart, ' +
+      '<strong>das kriegt sie</strong> (PDF, Bot, Tool) und die ' +
+      '<strong>Gruppe</strong> auf Telegram.</p></div></div>' +
       '<div class="tiles">' +
-      tile("Links", mitLink, "geprüft und live") +
-      tile("Lücken", luecken, luecken ? "laufen über ManyChat oder fehlen" : "alles hat einen Link") +
+      tile("Links", mitLink, "Seite · Kasse · Auslieferung · Gruppe") +
+      tile("Ohne Seite", luecken, luecken ? "Angebot ohne eigene Landingpage" : "jedes Angebot hat eine Seite") +
       tile("Tot", tot, tot ? "nicht verlinken!" : "keiner tot") +
       '</div>' +
       '<div class="suchleiste"><input id="lzfeld" type="search" autocomplete="off" ' +
@@ -3141,8 +3153,12 @@
         var drin = alle.filter(function (e) {
           if (e.gruppe !== g.id) return false;
           if (!w) return true;
-          return (e.name + " " + e.keyword + " " + e.link).toLowerCase()
-            .indexOf(w) >= 0;
+          var heu = e.name + " " + e.keyword + " " +
+            ["landingpage", "thrivecart", "auslieferung", "telegram"]
+              .map(function (a) {
+                return (e[a] || []).join(" ") + " " + (e[a + "_text"] || "");
+              }).join(" ");
+          return heu.toLowerCase().indexOf(w) >= 0;
         });
         if (!drin.length) return;
 
@@ -3167,24 +3183,87 @@
               ? '<span class="flag bad">prüfen</span>' : "");
           karte.appendChild(kopf);
 
-          if (e.keyword) {
+          // In der Uebersicht steht bei einer Luecke „🔴 fehlt" in der
+          // Stichwort-Spalte. Das ist keine Ansage, die man kopiert.
+          var kwLeer = /^(fehlt|keins?|noch offen|—|-)$/i.test(e.keyword || "");
+          if (e.keyword && !kwLeer) {
             karte.appendChild(kopierZeile("Stichwort", e.keyword, false));
+          } else if (kwLeer) {
+            var kw = document.createElement("div");
+            kw.className = "lzzeile";
+            kw.innerHTML = '<span class="lzlab">Stichwort</span>' +
+              '<span class="lzwert lzfehlt">noch keins angelegt</span>';
+            karte.appendChild(kw);
           }
-          if (e.link) {
-            var art = e.link.indexOf("thrivecart") >= 0 ? "Checkout"
-                    : (e.link.indexOf("doterra.me") >= 0 ? "Warenkorb"
-                    : "Seite");
-            karte.appendChild(kopierZeile(art, e.link, true));
-          } else {
-            var luecke = document.createElement("div");
-            luecke.className = "lzzeile";
-            luecke.innerHTML = '<span class="lzlab">Link</span>' +
-              '<span class="lzwert lzfehlt">' +
-              esc(e.wortlaut || "kein Link hinterlegt") + '</span>';
-            karte.appendChild(luecke);
+          // Vier Linkarten, jede mit eigener Zeile und eigenem Knopf.
+          // Die Reihenfolge ist die, in der Patricia sie braucht: erst die
+          // Seite, auf die sie zeigt, dann die Kasse, dann was ankommt.
+          var arten = links.linkarten || [
+            { id: "landingpage", kurz: "Seite" },
+            { id: "thrivecart", kurz: "Kasse" },
+            { id: "auslieferung", kurz: "Das kriegt sie" },
+            { id: "telegram", kurz: "Gruppe" }
+          ];
+          var hatWas = false;
+          var gezeigt = {};
+          // Zu einer Blob-Adresse kennen wir meist den Dateinamen — der ist
+          // als Anzeige brauchbar, die Adresse selbst nicht.
+          var namen = {};
+          (e.dateien || []).forEach(function (d) {
+            if (d.blob) {
+              namen[d.blob] = d.name + (d.seiten ? " · " + d.seiten + " Seiten" : "");
+            }
+          });
+          arten.forEach(function (art) {
+            var urls = e[art.id] || [];
+            urls.forEach(function (u) {
+              // verknuepfung.json speichert „/_blob/…" relativ, die
+              // Link-Zentrale absolut. Darum ueber das Endstueck abgleichen.
+              var kurzname = namen[u];
+              if (!kurzname) {
+                var ab = u.indexOf("/_blob/");
+                if (ab >= 0) kurzname = namen[u.slice(ab)] || "hinterlegte Datei";
+              }
+              karte.appendChild(kopierZeile(art.kurz, u, true, kurzname));
+              // Beide Schreibweisen merken, sonst zeichnet die Datei-Zeile
+              // unten dasselbe PDF ein zweites Mal.
+              gezeigt[u] = true;
+              var ab2 = u.indexOf("/_blob/");
+              if (ab2 >= 0) gezeigt[u.slice(ab2)] = true;
+              hatWas = true;
+            });
+            // Manche Auslieferung ist kein Link, sondern eine Ansage
+            // („3-Tage-Mail-Challenge, kein PDF"). Die gehoert trotzdem hin.
+            var wort = e[art.id + "_text"];
+            if (!urls.length && wort) {
+              var z = document.createElement("div");
+              z.className = "lzzeile";
+              z.innerHTML = '<span class="lzlab">' + esc(art.kurz) + '</span>' +
+                '<span class="lzwert lzfehlt">' + esc(wort) + '</span>';
+              karte.appendChild(z);
+              hatWas = true;
+            }
+          });
+          // Eine fehlende Landingpage ist eine echte Luecke — sichtbar lassen.
+          if (!(e.landingpage || []).length && !e.landingpage_text &&
+              (e.gruppe === "freebie" || e.gruppe === "bezahlt")) {
+            var fehlt = document.createElement("div");
+            fehlt.className = "lzzeile";
+            fehlt.innerHTML = '<span class="lzlab">Seite</span>' +
+              '<span class="lzwert lzfehlt">keine Landingpage</span>';
+            karte.appendChild(fehlt);
+            hatWas = true;
+          }
+          if (!hatWas) {
+            var leer = document.createElement("div");
+            leer.className = "lzzeile";
+            leer.innerHTML = '<span class="lzlab">Link</span>' +
+              '<span class="lzwert lzfehlt">kein Link hinterlegt</span>';
+            karte.appendChild(leer);
           }
 
           (e.dateien || []).forEach(function (d) {
+            if (gezeigt[d.blob]) return;   // steht schon als Auslieferung da
             var zeile = document.createElement("div");
             zeile.className = "lzzeile";
             zeile.innerHTML = '<span class="lzlab">Datei</span>' +
