@@ -56,10 +56,13 @@
   .buehne .zone b{position:absolute;left:26px;top:10px;font-size:24px;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.9)}
 
   .stage{position:sticky;top:16px;min-width:0}
-  .frame-wrap{width:100%;max-width:432px;margin:0 auto;border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.22);position:relative}
+  .frame-wrap{width:100%;max-width:330px;margin:0 auto;border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.22);position:relative}
 
   /* Schnell-Leiste direkt unter dem Bild — Balken anpassen ohne Hochscrollen */
-  .schnell{max-width:432px;margin:10px auto 0;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px 12px 12px}
+  .schnell{max-width:360px;margin:10px auto 0;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px 12px 12px}
+  .schnell label{margin:8px 0 3px}
+  .qsw{gap:8px}
+  .qsw .sw{width:34px;height:34px;border-width:2px}
   .schnell .kopf{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:2px 0 8px}
   .qgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
   .qgrid label{margin:2px 0 2px;font-size:12px}
@@ -277,6 +280,10 @@
         <div><label>Schrift <span id="qfsVal"></span></label><input type="range" id="qfs" min="40" max="120" value="72"></div>
         <div><label>Verlauf <span id="qgradVal"></span></label><input type="range" id="qgrad" min="0" max="100" value="72"></div>
       </div>
+      <label>Balkenfarbe</label>
+      <div class="swatches qsw" id="barSwQuick"></div>
+      <label>Textfarbe</label>
+      <div class="swatches qsw" id="txtSwQuick"></div>
       <div id="fotoQuick">
         <div class="kopf" style="margin:10px 0 6px">Foto wechseln</div>
         <div class="qthumbs" id="thumbsQuick"></div>
@@ -710,12 +717,26 @@
       el.appendChild(d); });
   }
   swatches(g('swatches'), 'color', false);
-  swatches(g('barSw'), 'barColor', true, ()=>{
-    const hell = ["#f1ecdd","#ffffff"].includes(B().barColor);
+  // Balken- und Textfarbe: oben im Panel UND unter dem Bild, immer synchron
+  function syncFarbSwatches(){
+    ['barSw','barSwQuick'].forEach(id=>{const el=g(id); if(el)[...el.children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===B().barColor));});
+    ['txtSw','txtSwQuick'].forEach(id=>{const el=g(id); if(el)[...el.children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===B().tc));});
+  }
+  function setzeBalkenfarbe(hex){
+    B().barColor = hex;
+    const hell = ["#f1ecdd","#ffffff"].includes(hex);
     B().tc = hell ? "#1E3A4C" : "#ffffff";
-    [...g('txtSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===B().tc));
-  });
-  swatches(g('txtSw'), 'tc', true);
+    syncFarbSwatches(); render();
+  }
+  function setzeTextfarbe(hex){ B().tc = hex; syncFarbSwatches(); render(); }
+  function farbSwatches(ids, setter){
+    ids.forEach(id=>{ const el=g(id); if(!el) return;
+      COLORS.forEach(c=>{ const d=document.createElement('div');
+        d.className="sw"; d.style.background=c.hex; d.title=c.name; d.dataset.hex=c.hex;
+        d.onclick=()=>setter(c.hex); el.appendChild(d); }); });
+  }
+  farbSwatches(['barSw','barSwQuick'], setzeBalkenfarbe);
+  farbSwatches(['txtSw','txtSwQuick'], setzeTextfarbe);
 
   /* ---------- Umschalter ---------- */
   document.querySelectorAll('#fmtSeg button').forEach(b=>b.onclick=()=>{
@@ -803,8 +824,7 @@
     document.querySelectorAll('#barSeg button').forEach(x=>x.classList.toggle('on', x.dataset.bar===k.bar));
     document.querySelectorAll('#alignSeg button').forEach(x=>x.classList.toggle('on', x.dataset.al===k.align));
     [...g('swatches').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===state.color));
-    [...g('barSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===k.barColor));
-    [...g('txtSw').children].forEach(x=>x.classList.toggle('sel', x.dataset.hex===k.tc));
+    syncFarbSwatches();
     markiereFoto();
   }
 

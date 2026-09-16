@@ -1534,7 +1534,9 @@
       : (quelle
           ? '<img class="wk-bild" src="' + quelle + '" alt="">'
           : '<div class="wk-leer">Noch kein Cover.<br>' +
-            (b.art === "reels" ? "Knopf „Cover bauen“ darunter." : "Folien stehen rechts.") +
+            (b.art === "reels" ? "Knopf „Cover bauen“ darunter — "
+                + "Foto aus deinen Shootings, Text und Verlauf im Bild-Editor."
+              : "Folien stehen rechts.") +
             '</div>');
 
     // Farbwaehler nur beim Reel — beim Karussell macht die Farbe der Editor.
@@ -1560,10 +1562,13 @@
       farbwahl += '<div class="wk-holen">' +
         (b.videourl ? '<button class="btn" data-holen="video">Video speichern</button>' : "") +
         (quelle ? '<button class="btn" data-holen="cover">Cover speichern</button>' : "") +
-        // Das Cover ist ein eigenes Bild, nicht das erste Videobild. Dieser Knopf
-        // fuehrt dorthin, wo es gebaut wird — im selben Fenster.
-        '<button class="btn' + (quelle ? "" : " primary") + '" data-cover="1">' +
-          (quelle ? "Cover ändern" : "Cover bauen") + '</button>' +
+        // Das Cover ist ein eigenes Bild, nicht das erste Videobild. Gebaut wird
+        // es im Bild-Editor — dort liegen die Shootingbilder, der Verlauf-Regler
+        // und die verschiebbare Texthöhe. Muss ein Link sein: window.open() ist
+        // im Artifact-Rahmen blockiert.
+        '<a class="btn' + (quelle ? "" : " primary") + '" data-cover="1" href="' +
+          BILDEDITOR + '" target="_blank" rel="noopener">' +
+          (quelle ? "Cover ändern" : "Cover bauen") + '</a>' +
         '</div>';
       farbwahl += '<div class="wk-farben">' +
         COVERFARBEN.map(function (f) {
@@ -1735,18 +1740,19 @@
       };
     });
 
-    // 🚨 Bleibt INNERHALB des Cockpits. Das Reel-Studio kann alles, was fuers
-    // Cover gebraucht wird: Video laden, Standbild vorschlagen, Hook drauflegen,
-    // als PNG speichern. Ein Sprung ins andere Artifact wuerde den Beitrag
-    // verlieren — die beiden Datenbanken sind nicht verbunden.
+    // 🚨 Fuehrt in den Bild-Editor, nicht ins Reel-Studio. Das Reel-Studio zieht
+    // ein Standbild aus dem Video — ein Cover aus den Shootingbildern gibt es nur
+    // drueben. Der Beitrag geht dabei nicht verloren: alle Reels stehen als
+    // `daten/entwuerfe` in der Bild-Editor-Datenbank und erscheinen dort unter
+    // „Aus deiner Planung“.
     karte.querySelectorAll("[data-cover]").forEach(function (kn) {
       kn.onclick = function () {
-        activeReel = b.obj.id;
-        reelFrames = [];
-        reelVideo = null;
-        activeTab = "reels";
-        render();
-        toast("Reel-Studio offen. Video reinziehen, Standbild wählen, Cover speichern.");
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(BILDEDITOR).catch(function () {});
+        }
+        toast("Bild-Editor: oben „Reel-Cover 9:16“ wählen, dann unter " +
+              "„Aus deiner Planung“ „" + (b.obj.name || "diesen Beitrag") +
+              "“ antippen.");
       };
     });
 
