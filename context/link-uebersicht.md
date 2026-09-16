@@ -18,6 +18,7 @@ Bei jeder Änderung hier nachführen. Skills, die Links in Captions/Mails setzen
 | Keyword-Weg zum selben Freebie | Kommentar/DM **`ENERGIE`** → ManyChat-Flow | 🟢 live (Flow „0€ Produkt Energie-Kickstart") |
 | **Produktpaket 21-Tage-Energie-Routine** | https://doterra.me/b0yKEX | 🟢 200 — vorgefüllter Warenkorb |
 | Öl-Wissen-Bot / Team-Companion | https://bot.mumlifebalance.ch | 🟢 200 · 🚫 **NUR für bestehende Kundinnen und das Team — nie öffentlich verlinken** (nennt die Marke im Titel, zeigt Team-Login) |
+| **0€ Freebie: Mini-Notfallapotheke** (10 S., 3 Hausmittel für Kinder) | — | 🔴 **keine Landingpage, kein Keyword** · PDF liegt nur in OneDrive · CTA zeigt auf das veraltete „Mama wird Hausapothekerin" · Inhalt: `context/doterra/mini-notfallapotheke.md` |
 | Ältere doTERRA-Seiten | /mama-wird-hausapothekerin · /oelreise | 🟢 200 (Inhalt veraltet, passt nicht zur neuen Positionierung) |
 | Telegram-Kanal „Gesund durchs ganze Jahr" | Chat-ID -1002221396127 | 🟢 live · ⚠️ **Einladungslink fehlt in der Doku** — bitte nachtragen |
 
