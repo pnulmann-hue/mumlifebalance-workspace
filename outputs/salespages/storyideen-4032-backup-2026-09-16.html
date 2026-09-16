@@ -1,0 +1,375 @@
+<style>
+.slp * { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+      --black: #12828c;
+      --cream: #ffffff;
+      --gold: #dc822e;
+      --gold-2: #f2c08a;
+      --ink: #0c1c30;
+      --white: #ffffff;
+      --muted: #5c6b75;
+      --muted-light: #c9e2e3;
+    }
+.slp { font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif; background: var(--black); color: #fff; overflow-x: hidden; line-height: 1.5; }
+.slp img { max-width: 100%; display: block; }
+.slp .wrap { max-width: 1160px; margin: 0 auto; padding: 0 22px; }
+.slp .gold { color: var(--gold); }
+.slp em.i { font-style: italic; }
+.slp .cta { display: inline-block; background: var(--gold); color: #fff; padding: 22px 46px; font-weight: 800; font-size: clamp(15px, 2vw, 21px); letter-spacing: 1px; text-transform: uppercase; text-decoration: none; border-radius: 8px; transition: background 0.2s, transform 0.2s; box-shadow: 0 14px 34px rgba(41, 85, 109, 0.32); text-align: center; }
+.slp .cta:hover { background: var(--gold-2); transform: translateY(-2px); }
+.slp .cta-wide { display: block; max-width: 720px; margin: 0 auto; }
+.slp .cta-note { display: block; margin-top: 12px; font-size: 13px; font-weight: 600; letter-spacing: .5px; text-transform: none; color: #cfe6e6; }
+.slp .sec-cream .cta-note { color: var(--muted); }
+.slp .sec-dark { background: var(--black); color: #fff; }
+.slp .sec-cream { background: var(--cream); color: var(--ink); }
+.slp .sec-berry { background: #0d626a; color: #fff; }
+.slp section { padding: 84px 0; }
+.slp h1, .slp h2, .slp h3 { font-weight: 800; line-height: 1.08; letter-spacing: -0.5px; }
+    /* HERO */
+.slp .hero { padding: 46px 0 20px; text-align: center; }
+.slp .hero h1 { font-size: clamp(32px, 5.4vw, 62px); text-transform: uppercase; max-width: 1000px; margin: 0 auto; }
+.slp .hero .sub { font-size: clamp(16px, 2vw, 22px); font-weight: 500; max-width: 780px; margin: 26px auto 0; color: #e4f0f0; }
+.slp .hero .sub b { color: #fff; font-weight: 800; }
+    /* HERO cover mockup */
+.slp .herocover-wrap { display:flex; justify-content:center; margin: 44px auto 0; }
+.slp .pcover { width: 280px; aspect-ratio: 1080/1350; background: linear-gradient(160deg,#0f6f78,#12828c); border-radius: 10px; box-shadow: 0 34px 70px rgba(0,0,0,.55); transform: rotate(-3deg); padding: 40px 30px; display:flex; flex-direction:column; justify-content:center; text-align:center; color:#eef7f7; position:relative; border: 3px solid #ffffff; }
+.slp .pcover .k { font-family:'Philosopher',serif; text-transform:uppercase; letter-spacing:2px; font-size:12px; color: var(--gold-2); margin-bottom: 20px; }
+.slp .pcover .num { font-family:'Philosopher',serif; font-size:74px; font-weight:700; color: var(--gold-2); line-height:1; }
+.slp .pcover .t { font-family:'Philosopher',serif; font-size:27px; font-weight:700; line-height:1.15; margin:6px 0 18px; color:#fff; }
+.slp .pcover .s { font-size:13.5px; font-weight:300; border-top:1px solid rgba(255,255,255,.35); padding-top:15px; }
+.slp .pcover .f { position:absolute; bottom:20px; left:0; right:0; font-size:9.5px; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,.7); }
+    /* TRUST strip */
+.slp .trust { text-align:center; margin: 30px auto 0; font-size: 14.5px; font-weight:600; color:#d8ecec; }
+.slp .trust span { display:inline-block; margin: 4px 10px; }
+.slp .trust .d { color: var(--gold-2); }
+    /* EYEBROW */
+.slp .eyebrow-c { text-align: center; font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-2); margin-bottom: 16px; }
+.slp .sec-cream .eyebrow-c { color: var(--gold); }
+    /* STORY (empathy) */
+.slp .story-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 46px; align-items: start; max-width: 1080px; margin: 0 auto; }
+@media (max-width: 860px) {
+  .slp .story-grid { grid-template-columns: 1fr; gap: 30px; }
+}
+.slp .story-head { font-size: clamp(24px, 3.8vw, 44px); color: var(--ink); text-transform: none; margin-bottom: 24px; }
+.slp .story-head .gold { color: var(--gold); }
+.slp .story-narr p { font-size: 17px; line-height: 1.75; color: var(--muted); margin-bottom: 18px; }
+.slp .story-narr p:last-child { margin-bottom: 0; }
+.slp .story-narr p b { color: var(--ink); font-weight: 700; }
+.slp .painlist { background: #fff; border: 1px solid #dfeaea; border-radius: 16px; box-shadow: 0 22px 50px rgba(0,0,0,0.09); padding: 8px 26px; }
+.slp .pain { display: flex; gap: 14px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e9f1f1; font-size: 15.5px; color: var(--muted); line-height: 1.55; }
+.slp .pain:last-child { border-bottom: none; }
+.slp .pain .x { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #ddebeb; color: var(--black); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 13px; margin-top: 1px; }
+    /* MECHANISM */
+.slp .mech-head { text-align: center; font-size: clamp(26px, 4.2vw, 48px); text-transform: none; max-width: 900px; margin: 0 auto 20px; }
+.slp .mech-head .gold { color: var(--gold-2); }
+.slp .mech-sub { text-align: center; font-size: 17px; line-height: 1.75; max-width: 740px; margin: 0 auto 14px; color: #e4f0f0; }
+.slp .ba { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 900px; margin: 44px auto 0; }
+@media (max-width: 760px) {
+  .slp .ba { grid-template-columns: 1fr; }
+}
+.slp .bax { background: #fff; color: var(--ink); border-radius: 16px; padding: 28px 26px; box-shadow: 0 22px 50px rgba(0,0,0,0.16); }
+.slp .bax.good { border: 3px solid var(--gold); }
+.slp .bax .bh { font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #8ab8bb; margin-bottom: 16px; }
+.slp .bax.good .bh { color: var(--gold); }
+.slp .bax .br { display: flex; gap: 12px; align-items: flex-start; font-size: 15.5px; color: var(--muted); margin-bottom: 13px; line-height: 1.5; }
+.slp .bax .br:last-child { margin-bottom: 0; }
+.slp .bax .br .m { flex-shrink: 0; font-weight: 900; }
+.slp .bax .br .x { color: #9ac4c7; }
+.slp .bax.good .br .c { color: var(--gold); }
+.slp .ba-label { text-align: center; font-style: italic; font-size: 15px; color: #e4f0f0; margin-top: 28px; }
+    /* SPLIT */
+.slp .split { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; max-width: 1120px; margin: 0 auto; }
+.slp .split .s-img { border-radius: 16px; overflow: hidden; box-shadow: 0 26px 60px rgba(0,0,0,0.2); }
+.slp .split .s-img.photo { min-height: 420px; background: #d6e7e7 center/cover no-repeat; }
+.slp .split h2 { font-size: clamp(26px, 3.6vw, 46px); color: var(--gold); text-transform: uppercase; margin-bottom: 22px; }
+.slp .split.on-cream p { font-size: 17px; line-height: 1.75; color: var(--muted); margin-bottom: 16px; }
+.slp .split .cta { margin-top: 12px; }
+@media (max-width: 820px) {
+  .slp .split { grid-template-columns: 1fr; gap: 28px; }
+  .slp .split .s-img.photo { min-height: 300px; }
+}
+    /* STATEMENT BAND */
+.slp .band { padding: 66px 0; text-align: center; }
+.slp .band .stmt { font-size: clamp(21px, 3.4vw, 38px); font-weight: 800; line-height: 1.25; max-width: 960px; margin: 0 auto 34px; }
+.slp .band .stmt.no-cta { margin-bottom: 0; }
+    /* INCLUDED / VALUE STACK */
+.slp .inc-wrap { max-width: 1000px; margin: 0 auto; background: var(--cream); color: var(--ink); border-radius: 22px; border: 3px solid var(--gold); padding: 44px 24px 52px; box-shadow: 0 30px 70px rgba(0,0,0,0.4); }
+.slp .inc-title { text-align: center; font-size: clamp(24px, 3.6vw, 44px); margin: 0 auto 40px; }
+.slp .inc-list { list-style: none; max-width: 800px; margin: 0 auto; }
+.slp .inc-list li { display: flex; gap: 18px; align-items: flex-start; padding: 15px 0; }
+.slp .inc-list li .ck { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--black); color: var(--gold-2); display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; margin-top: 2px; }
+.slp .inc-list li span.txt { font-size: clamp(15px, 1.9vw, 18px); line-height: 1.55; color: var(--ink); }
+.slp .inc-list li span.txt b { color: var(--gold); font-weight: 800; }
+.slp .inc-list li span.txt em { font-style: italic; color: var(--muted); }
+.slp .inc-list li .val { margin-left: auto; flex-shrink: 0; padding-left: 16px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--muted); white-space: nowrap; align-self: flex-start; margin-top: 3px; }
+.slp .inc-list li .val.core { color: var(--gold); }
+@media (max-width: 600px) {
+  .slp .inc-list li { flex-wrap: wrap; }
+  .slp .inc-list li .val { margin-left: 48px; padding-left: 0; margin-top: 6px; }
+}
+.slp .inc-price { text-align: center; margin: 44px auto 0; padding-top: 30px; border-top: 1px solid #f1ecdd; }
+.slp .inc-price .now { font-family:'Philosopher',serif; font-size: clamp(48px, 9vw, 76px); font-weight: 800; color: var(--black); line-height: 1; }
+.slp .inc-price .now span { font-size: .4em; vertical-align: middle; }
+.slp .inc-price .em { display:block; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+.slp .pfine { text-align: center; font-size: 13.5px; color: var(--muted); margin-top: 16px; }
+    /* VERGLEICHSTABELLE */
+.slp .steps-head { text-align: center; font-size: clamp(26px, 4.4vw, 46px); text-transform: none; max-width: 940px; margin: 0 auto 18px; color: var(--ink); }
+.slp .steps-head .gold { color: var(--gold); }
+.slp .bonus-sub { text-align: center; font-size: 16px; color: var(--muted); max-width: 640px; margin: 0 auto 44px; line-height:1.7; }
+.slp .vtable { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #f1ecdd; border-radius: 18px; overflow: hidden; box-shadow: 0 22px 50px rgba(0,0,0,0.08); }
+@media (max-width: 760px) {
+  .slp .vtable { grid-template-columns: 1fr; }
+}
+.slp .vcol.bad { background: #f7f3e9; }
+.slp .vcol.good { background: #fff; }
+@media (min-width: 761px) {
+  .slp .vcol.good { border-left: 1px solid #f1ecdd; }
+}
+.slp .vhead { padding: 22px 26px; font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 1px solid #f1ecdd; }
+.slp .vcol.bad .vhead { color: #8ab8bb; }
+.slp .vcol.good .vhead { color: var(--gold); }
+.slp .vrow { display: flex; gap: 14px; align-items: flex-start; padding: 17px 26px; border-bottom: 1px solid #eee8d8; font-size: 15px; color: var(--ink); line-height: 1.5; }
+.slp .vrow:last-child { border-bottom: none; }
+.slp .vrow .ic { flex-shrink: 0; width: 25px; height: 25px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 12px; margin-top: 1px; }
+.slp .vcol.bad .ic { background: #ddebeb; color: #17949f; }
+.slp .vcol.good .ic { background: #fae7d3; color: #b4661f; }
+    /* OBJECTIONS */
+.slp .obj-head { text-align: center; font-size: clamp(26px, 4.2vw, 48px); text-transform: none; margin: 0 auto 44px; max-width: 820px; }
+.slp .obj-head .gold { color: var(--gold-2); }
+.slp .obj-grid { display: grid; gap: 14px; max-width: 820px; margin: 0 auto; }
+.slp .ocard { background: #fff; border-radius: 14px; padding: 24px 28px; box-shadow: 0 14px 34px rgba(0,0,0,0.16); }
+.slp .ocard .oq { display: block; font-weight: 800; font-size: 17px; color: var(--black); margin-bottom: 9px; }
+.slp .ocard p { font-size: 15.5px; color: var(--muted); line-height: 1.65; }
+    /* FAQ */
+.slp .faq-head { text-align: center; font-size: clamp(28px, 4.4vw, 50px); text-transform: uppercase; margin-bottom: 44px; color: var(--ink); }
+.slp .faq-item { background: #fff; border: 1px solid #e9e3d2; border-radius: 10px; margin-bottom: 14px; padding: 22px 26px; cursor: pointer; max-width: 820px; margin-left: auto; margin-right: auto; }
+.slp .faq-item summary { list-style: none; font-weight: 700; font-size: 17px; color: var(--ink); display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+.slp .faq-item summary::-webkit-details-marker { display: none; }
+.slp .faq-item summary::after { content: "+"; color: var(--gold); font-size: 28px; line-height: 1; transition: transform 0.2s; }
+.slp .faq-item[open] summary::after { transform: rotate(45deg); }
+.slp .faq-item p { margin-top: 15px; font-size: 16px; line-height: 1.7; color: var(--muted); }
+.slp .faq-honest { max-width: 820px; margin: 22px auto 0; background: #f1ecdd; border-radius: 12px; padding: 22px 26px; }
+.slp .faq-honest p { font-size: 15.5px; line-height: 1.7; color: var(--ink); margin:0; }
+.slp .faq-honest b { color: var(--gold); }
+    /* FINAL / KIPPPUNKT */
+.slp .final { text-align: center; }
+.slp .final h2 { font-size: clamp(28px, 5vw, 56px); text-transform: uppercase; max-width: 920px; margin: 0 auto 22px; }
+.slp .final p { font-size: 18px; color: #ddeaea; max-width: 660px; margin: 0 auto 36px; }
+.slp .sig { font-family:'Philosopher',serif; font-style: italic; font-size: 20px; color: var(--gold-2); margin-top: 30px; }
+    /* FOOTER */
+.slp footer { background: #0d626a; text-align: center; padding: 50px 20px; border-top: 1px solid #ffffff; }
+.slp footer .fl { font-family: 'Philosopher', cursive; font-size: 34px; color: var(--gold-2); margin-bottom: 16px; }
+.slp footer .fn a { color: #c2dedf; margin: 0 12px; font-size: 12px; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; }
+.slp footer .fn a:hover { color: var(--gold-2); }
+.slp footer .cp { margin-top: 22px; font-size: 12px; color: #9cc2c5; }
+    /* reveal */
+.slp .rev { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.slp .rev.in { opacity: 1; transform: none; }
+    /* Marken-Nachtrag */
+.slp h1, .slp h2, .slp h3, .slp .disp, .slp .display {font-family:'Philosopher',Georgia,serif;}
+.slp a.cta, .slp .cta {color:#0c1c30;}
+.slp .sec-dark .gold {color:#f7c08f;}
+  
+/* Reveal ohne JS sichtbar */
+.slp .rev{opacity:1 !important;transform:none !important;}
+
+</style>
+<div class="slp">
+<!-- ===== HERO ===== -->
+<section class="sec-dark hero">
+  <div class="wrap">
+    <h1><span class="gold">90 Storyideen</span>, die endlich Reaktionen bringen</h1>
+    <p class="sub">Für jede Networkerin, die abends vor dem leeren Story-Feld sitzt und nicht weiss, was sie posten soll — ohne ständig ihr Produkt zu zeigen und ohne alte Bekannte anzuschreiben. <b>Zieh dir eine Idee raus, mit fertigem Beispiel, und poste sie in Minuten.</b></p>
+
+    <div class="herocover-wrap">
+      <div class="pcover">
+        <div class="k">Dein Ideen-Vorrat für Stories</div>
+        <div class="num">90</div>
+        <div class="t">Storyideen für Networkerinnen</div>
+        <div class="s">Sichtbar werden, ohne ständig dein Produkt zu pushen.</div>
+        <div class="f">Workbook zum Ausfüllen</div>
+      </div>
+    </div>
+
+    <a href="https://mumlifebalance.thrivecart.com/storyideen/" class="cta" style="margin-top:40px">Ja, ich hol mir die 90 Ideen →
+      <span class="cta-note">19 CHF · einmalig · sofort als Download</span>
+    </a>
+
+    <div class="trust">
+      <span>🎯 90 Ideen in 8 Anlässen</span><span class="d">·</span>
+      <span>🧭 Story-Kompass</span><span class="d">·</span>
+      <span>✍️ zum Ausfüllen</span><span class="d">·</span>
+      <span>⚡ Sofort-Download</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EMPATHY STORY ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <div class="eyebrow-c">Kennst du das?</div>
+    <div class="story-grid">
+      <div class="story-narr rev">
+        <h2 class="story-head">Du postest und postest — und trotzdem <span class="gold">reagiert einfach niemand.</span></h2>
+        <p>Du sitzt am Sonntagabend auf dem Sofa und denkst, diese Woche müsstest du unbedingt regelmässiger posten — und schon beim Gedanken wird dir mulmig, weil du gar nicht weisst, was du erzählen sollst ausser dem nächsten Produktbild.</p>
+        <p>Also postest du doch wieder ein Foto von deinem Produkt, wartest den ganzen Tag, und am Ende sind es drei Likes, davon einer von deiner Mama. <b>Und die Menschen, die wirklich Interesse hätten, sehen dich gar nicht erst.</b></p>
+      </div>
+      <div class="painlist rev">
+        <div class="pain"><span class="x">✕</span> Du sitzt vor dem leeren Story-Feld und weisst nicht, was du erzählen sollst.</div>
+        <div class="pain"><span class="x">✕</span> Du postest wieder ein Produktbild — und es kommt fast keine Reaktion zurück.</div>
+        <div class="pain"><span class="x">✕</span> Storyideen findest du zwar überall, aber keine, die zu dir als Networkerin passt.</div>
+        <div class="pain"><span class="x">✕</span> Neue Leute anzuschreiben, die du seit Jahren nicht gesehen hast, fühlt sich falsch an.</div>
+        <div class="pain"><span class="x">✕</span> Und jeden Tag fängst du wieder beim Grübeln an, was du überhaupt posten könntest.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MECHANISMUS ===== -->
+<section class="sec-dark">
+  <div class="wrap">
+    <div class="eyebrow-c">Der eigentliche Grund</div>
+    <h2 class="mech-head">Dir fehlt keine Disziplin. <span class="gold">Dir fehlt ein Vorrat an Ideen.</span></h2>
+    <p class="mech-sub">Es liegt nicht daran, dass du zu wenig über dein Produkt sprichst — sondern dass jeder Tag beim leeren Blatt anfängt, und im Zweifel landest du wieder beim Produktbild. Dabei geht komplett unter, wer du bist und wobei du wirklich hilfst.</p>
+    <p class="mech-sub">Mit einem fertigen Vorrat an Ideen, die für Networkerinnen gemacht sind, ziehst du morgens einfach eine raus und postest etwas Echtes. Und plötzlich hören dir die richtigen Leute zu — und fragen von ganz allein, was du eigentlich machst.</p>
+    <div class="ba">
+      <div class="bax rev">
+        <div class="bh">Ohne Vorrat</div>
+        <div class="br"><span class="m x">✕</span> Jeden Tag neu grübeln, was du posten sollst</div>
+        <div class="br"><span class="m x">✕</span> Im Zweifel doch wieder ein Produktbild</div>
+        <div class="br"><span class="m x">✕</span> Storys, auf die kaum jemand reagiert</div>
+      </div>
+      <div class="bax good rev">
+        <div class="bh">Mit den 90 Ideen</div>
+        <div class="br"><span class="m c">✓</span> Eine Idee raussuchen, mit fertigem Beispiel</div>
+        <div class="br"><span class="m c">✓</span> Du zeigst dich und dein Thema, nicht das Produkt</div>
+        <div class="br"><span class="m c">✓</span> Storys, die Fragen und Antworten auslösen</div>
+      </div>
+    </div>
+    <p class="ba-label">Dieselbe Networkerin, dasselbe Konto — und trotzdem zwei völlig verschiedene Wochen.</p>
+  </div>
+</section>
+
+<!-- ===== FOUNDER / ÜBER MICH ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <div class="eyebrow-c">Warum ich das kenne</div>
+    <div class="split on-cream">
+      <div class="s-img photo" style="background-image:url('https://mumlifebalance.ch/wp-content/uploads/2026/08/patricia-story.jpg');"></div>
+      <div>
+        <h2>Ich hab genau da gestanden.</h2>
+        <p>Ich bin vierfache Mama und selbst Networkerin — und ich hab jahrelang mein Produkt in den Vordergrund gestellt und mich gewundert, warum niemand kauft. Ich hab gepostet und gepostet, brav die Produktbilder, die schönen Sprüche, und es kam einfach nichts zurück.</p>
+        <p>Der Moment, in dem sich alles gedreht hat, war unspektakulär: Ich hab aufgehört, über mein Produkt zu reden, und angefangen, über mein Thema und über mich zu sprechen. Und plötzlich haben mir die richtigen Menschen zugehört — und irgendwann von ganz allein gefragt, was ich anbiete.</p>
+        <p>Genau diese Ideen hab ich über die Jahre gesammelt und für Networkerinnen aufbereitet, damit du dir die Jahre sparst, die ich gebraucht hab.</p>
+        <a href="https://mumlifebalance.thrivecart.com/storyideen/" class="cta">Ja, ich will die 90 Ideen →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATEMENT ===== -->
+<section class="sec-berry band">
+  <div class="wrap">
+    <p class="stmt no-cta">Du brauchst keinen Reichweiten-Trick und keine neue App. <span class="gold">Du brauchst eine Idee, die du heute posten kannst.</span></p>
+  </div>
+</section>
+
+<!-- ===== WAS STECKT DRIN (VALUE STACK) ===== -->
+<section class="sec-dark">
+  <div class="wrap">
+    <div class="inc-wrap">
+      <h2 class="inc-title">Das steckt drin</h2>
+      <ul class="inc-list">
+        <li><span class="ck">✓</span><span class="txt"><b>90 fertige Storyideen in 8 Anlässen</b> — von Alltags-Momenten über dein Warum und dein Thema bis zur dezenten Einladung. Jede mit konkretem Impuls, einem Beispiel aus der Network-Welt und Platz für deine eigene Version.</span><span class="val core">Kernstück</span></li>
+        <li><span class="ck">✓</span><span class="txt"><b>Die Übung „Finde dein Thema"</b> — der wichtigste Schritt: endlich festlegen, wobei du eigentlich hilfst. Denn ohne Thema bleibt nur das Produkt zum Reden übrig.</span><span class="val">dabei</span></li>
+        <li><span class="ck">✓</span><span class="txt"><b>Dein Story-Kompass</b> — die einfache Entscheidungshilfe, welche Idee zu welchem Tag passt. Damit du nie wieder ratlos davorstehst.</span><span class="val">dabei</span></li>
+        <li><span class="ck">✓</span><span class="txt"><b>Der Brücken-Baukasten</b> — fertige Sätze, mit denen du am Schluss ganz natürlich zu deinem Freebie oder Angebot überleitest, ohne dass es aufdringlich wirkt.</span><span class="val">dabei</span></li>
+        <li><span class="ck">✓</span><span class="txt"><b>Dein Ideen-Speicher</b> — damit jede spontane Idee einen Platz hat und dir unterwegs nie wieder verloren geht.</span><span class="val">dabei</span></li>
+      </ul>
+      <div class="inc-price">
+        <div class="now">19<span> CHF</span></div>
+        <span class="em">einmalig · dein Vorrat für Monate</span>
+      </div>
+      <a href="https://mumlifebalance.thrivecart.com/storyideen/" class="cta cta-wide" style="margin-top:30px">Ja, ich hol mir die 90 Ideen →</a>
+      <p class="pfine">Kein Abo · sofort als Download · für den Preis eines Mittagessens auswärts.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VERGLEICHSTABELLE ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <h2 class="steps-head">Ideen kannst du dir überall zusammensuchen. <span class="gold">Nur passt dann selten was.</span></h2>
+    <p class="bonus-sub">Allgemeine Tipps geben dir irgendeine Idee — aber keine, die zu dir als Networkerin passt und bei der schon ein Beispiel dabei ist. Hier liegt beides fertig da.</p>
+    <div class="vtable rev">
+      <div class="vcol bad">
+        <div class="vhead">Ideen selber zusammensuchen</div>
+        <div class="vrow"><span class="ic">✕</span> Du überlegst jeden Tag neu, was du überhaupt suchst</div>
+        <div class="vrow"><span class="ic">✕</span> Allgemeine Tipps, nichts speziell für Networkerinnen</div>
+        <div class="vrow"><span class="ic">✕</span> Kein Beispiel dabei — du fängst trotzdem bei null an</div>
+        <div class="vrow"><span class="ic">✕</span> Kein roter Faden über die Woche</div>
+        <div class="vrow"><span class="ic">✕</span> Und am Ende postest du doch wieder das Produktbild</div>
+      </div>
+      <div class="vcol good">
+        <div class="vhead">Dieses Workbook</div>
+        <div class="vrow"><span class="ic">✓</span> 90 Ideen liegen fertig da — du ziehst eine raus</div>
+        <div class="vrow"><span class="ic">✓</span> Für Networkerinnen gedacht, mit Beispiel aus der Network-Welt</div>
+        <div class="vrow"><span class="ic">✓</span> Zu jeder Idee ein Beispiel als Vorlage</div>
+        <div class="vrow"><span class="ic">✓</span> Der Story-Kompass gibt dir die Woche vor</div>
+        <div class="vrow"><span class="ic">✓</span> Und der Brücken-Baukasten führt ganz natürlich zur Anfrage</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EINWÄNDE ===== -->
+<section class="sec-dark">
+  <div class="wrap">
+    <div class="eyebrow-c">Noch am Überlegen?</div>
+    <h2 class="obj-head">Was dir gerade <span class="gold">durch den Kopf geht.</span></h2>
+    <div class="obj-grid">
+      <div class="ocard rev"><span class="oq">„19 CHF — wo ist der Haken?"</span><p>Keiner. Einmalzahlung, kein Abo. Der Preis ist bewusst niedrig, damit du heute anfängst statt noch ein halbes Jahr vor dem leeren Feld zu sitzen.</p></div>
+      <div class="ocard rev"><span class="oq">„Ideen finde ich doch auch gratis."</span><p>Stimmt — aber nicht 90 fertige, die für Networkerinnen gemacht sind und bei denen schon ein Beispiel dabei ist. Du sparst dir das tägliche Suchen und Grübeln.</p></div>
+      <div class="ocard rev"><span class="oq">„Ich hab so wenig Zeit."</span><p>Gerade dann. Das Workbook nimmt dir genau den Teil ab, der am meisten Zeit frisst — das Überlegen, was du posten sollst. Eine Idee raussuchen dauert eine Minute.</p></div>
+      <div class="ocard rev"><span class="oq">„Ich hab schon so viele Workbooks, die ich nie nutze."</span><p>Kenn ich. Deshalb ist der Story-Kompass dabei: Statt vor 90 Ideen überfordert zu stehen, weisst du in Sekunden, welche heute dran ist.</p></div>
+      <div class="ocard rev"><span class="oq">„Ich mag niemanden anschreiben."</span><p>Musst du nicht. Die Ideen machen dich sichtbar, sodass interessierte Leute von selbst fragen — statt dass du hinterherschreibst.</p></div>
+      <div class="ocard rev"><span class="oq">„Funktioniert das für mein Network?"</span><p>Ja, denn es geht bewusst nicht um dein Produkt, sondern um dich und dein Thema. Die Ideen funktionieren unabhängig davon, was du vertreibst — ob Öle, Kosmetik, Nahrungsergänzung oder etwas ganz anderes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <h2 class="faq-head">Häufige Fragen</h2>
+    <details class="faq-item"><summary>Wie bekomme ich Zugang?</summary><p>Direkt nach dem Kauf bekommst du das Workbook per E-Mail zum Download — von jedem Gerät aus, sofort startklar.</p></details>
+    <details class="faq-item"><summary>Was genau kriege ich?</summary><p>Ein Workbook zum Ausfüllen mit 90 Storyideen in 8 Anlässen, der Übung „Finde dein Thema", dem Story-Kompass, dem Brücken-Baukasten und deinem Ideen-Speicher.</p></details>
+    <details class="faq-item"><summary>Wie viel Zeit muss ich investieren?</summary><p>Eine Storyidee raussuchen dauert eine Minute — inklusive fertigem Beispiel. Die Übung „Finde dein Thema" machst du einmal in rund einer Viertelstunde.</p></details>
+    <details class="faq-item"><summary>Funktioniert das auch für mein Network / mein Produkt?</summary><p>Ja. Es geht bewusst nicht um dein Produkt, sondern um dich und dein Thema. Die Ideen funktionieren unabhängig davon, was du vertreibst.</p></details>
+    <details class="faq-item"><summary>19 CHF für ein Workbook — lohnt sich das?</summary><p>Es ist kein PDF zum einmal Durchlesen, sondern ein Vorrat, aus dem du monatelang schöpfst. Wenn dir eine einzige Idee daraus eine echte Anfrage bringt, hat es sich schon mehrfach bezahlt gemacht.</p></details>
+    <div class="faq-honest"><p><b>Ganz ehrlich, damit du weisst, worauf du dich einlässt:</b> Das Workbook nimmt dir das Posten nicht ab — du musst dich schon selbst zeigen und die Ideen umsetzen. Und es ist kein Reichweiten-Trick über Nacht. Es ist der ehrliche, machbare Weg, sichtbar zu werden, ohne dich zu verstellen.</p></div>
+  </div>
+</section>
+
+<!-- ===== KIPPPUNKT ===== -->
+<section class="sec-dark final">
+  <div class="wrap">
+    <div class="eyebrow-c">Der Unterschied</div>
+    <h2>Nächste Woche sitzt du wieder vor dem leeren Story-Feld — oder du hast 90 Ideen griffbereit.</h2>
+    <p>Jeder Tag, an dem du weiter nur Produktbilder postest, die niemand speichert, ist ein Tag, an dem dich die richtigen Menschen nicht kennenlernen. Für 19 CHF kannst du das heute ändern.</p>
+    <a href="https://mumlifebalance.thrivecart.com/storyideen/" class="cta">Ja, ich starte jetzt · 19 CHF →</a>
+    <p class="sig">„Funktionieren war gestern." — Patricia</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="fl">Mum Life Balance</div>
+  <div class="fn">
+    <a href="https://mumlifebalance.ch">Home</a>
+    <a href="https://mumlifebalance.ch/impressum/">Impressum</a>
+    <a href="https://mumlifebalance.ch/datenschutzerklaerung/">Datenschutz</a>
+  </div>
+  <p class="cp">© 2026 Patricia Ulmann · Mum Life Balance</p>
+</footer>
+</div>
