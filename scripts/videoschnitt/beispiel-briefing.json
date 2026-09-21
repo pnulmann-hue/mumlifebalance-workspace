@@ -1,0 +1,38 @@
+[
+ {
+  "ab": 0.0,
+  "bis": 5.7,
+  "mitte": 0.42,
+  "markiert": 2,
+  "zeilen": [
+   "Im Büro die Zeit vergessen",
+   "und doch soll ein protein- und",
+   "nährstoffreiches Mittagessen",
+   "auf den Tisch."
+  ]
+ },
+ {
+  "ab": 5.7,
+  "bis": 9.8,
+  "mitte": 0.53,
+  "markiert": 2,
+  "zeilen": [
+   "Hi, ich bin Patricia, 37ig,",
+   "4-fach Mama und ich habe",
+   "endlich wieder die Energie",
+   "und die Figur, wie früher 😅"
+  ]
+ },
+ {
+  "ab": 9.8,
+  "bis": 15.0,
+  "mitte": 0.42,
+  "markiert": 2,
+  "zeilen": [
+   "Verzicht, Diät und Shakes habe",
+   "bei mir nichts genutzt.",
+   "Dafür 3 simple Dinge,",
+   "die ich geändert habe 👇"
+  ]
+ }
+]

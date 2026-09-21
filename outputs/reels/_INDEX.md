@@ -8,6 +8,7 @@ Auto-Index aller Files in `outputs/reels/`. Siehe [[_MOCs/MOC-Content-Engine]] f
 
 ## Dateien
 
+- [[_stil-verlauf]]
 - [[2026-04-23-do-doterra-3-17-uhr-reel]]
 - [[2026-04-23-do-mentoring-posten-angst-reel]]
 - [[2026-05-04-doterra-monatsfokus-3-uhr-symptome-briefing]]
