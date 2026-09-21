@@ -125,12 +125,25 @@ Trending-Audio.
 
 | | |
 |---|---|
-| **Aussehen** | Hook in zwei Teilen, mittig-links im Bild. Erster Teil weiss und fett mit dunkler Kontur („was ist"). Zweiter Teil mit einem **Marker-Balken in der Akzentfarbe dahinter** („der Plan?"), leicht schief wie mit dem Textmarker gezogen. Darunter eine **kleine dünne Zeile** in Weiss, die die Frage konkretisiert. |
+| **Aussehen** | Hook in zwei Teilen, mittig-links im Bild. Erster Teil weiss und fett mit dunkler Kontur („was ist"). Zweiter Teil mit einem **Marker-Balken in der Akzentfarbe dahinter** („der Plan?"). Darunter eine **kleine dünne Zeile** in Weiss, die die Frage konkretisiert. |
 | **Bewegung** | Der Marker-Balken **wischt von links nach rechts auf**, ~0,35 s, danach steht alles still. Sonst keine Bewegung. |
 | **Stelle** | Ab Sekunde 0. Der Hook steht das ganze Reel. |
 | **Sound** | Trending-Audio, in der App gewählt. |
 
 **Für Patricia:** Marker-Balken in Petrol oder Orange, weisse Schrift darauf.
+
+🚨 **Zwei Korrekturen von Patricia (2026-09-21, am fertigen Render entschieden):**
+- **Der Balken liegt gerade, nicht schief.** Jenya zieht ihn schräg, Patricia
+  will ihn waagrecht. Im Renderer ist `NEIGUNG = 0.0`.
+- **Kein Text an den Bildrand.** Links wie rechts bleibt ein Rand von 9 % der
+  Breite frei, und zwar für den **Balken**, nicht nur für die Buchstaben — der
+  ragt beidseitig über den Text hinaus. Die Schriftgrösse passt sich
+  automatisch an, bis die längste Zeile samt Balken und Emoji hineinpasst.
+
+**Gebaut mit** `scripts/videoschnitt/marker_hook.py` (ein stehender Hook) und
+`scripts/videoschnitt/marker_bloecke.py` (mehrere Blöcke nacheinander, Umbruch
+und markierte Zeile kommen aus einem JSON-Briefing). Patricias Wording wird
+dabei nie umgeschrieben — „neu gestalten" heisst Gestaltung, nicht Text.
 
 ---
 

@@ -25,7 +25,7 @@ EMOJI = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
 AKZENT = {"orange": (220, 130, 46), "petrol": (18, 130, 140), "dunkelblau": (41, 85, 109)}
 
 WISCH_S = 0.35
-NEIGUNG = -1.6
+NEIGUNG = 0.0          # Patricia 2026-09-21: Balken gerade, nicht schief
 
 
 def emoji_bild(zeichen, hoehe):
@@ -47,13 +47,23 @@ def trenne_emoji(zeile):
     return zeile[:i].rstrip(), zeile[i:].strip()
 
 
+RAND = 0.09            # Seitenabstand links wie rechts, als Anteil der Breite
+
+
 def schriftgroesse(zeilen, w, platz):
+    """Der Marker-Balken ragt beidseitig ueber den Text hinaus - der Rand muss
+    fuer den Balken reichen, nicht nur fuer die Buchstaben."""
     d = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
+    balken_luft = 2 * int(w * 0.022)
     g = int(w * 0.072)
-    while g > int(w * 0.032):
+    while g > int(w * 0.030):
         f = ImageFont.truetype(f"{FONTS}/Philosopher-Bold.ttf", g)
-        breit = max(d.textlength(trenne_emoji(z)[0], font=f) for z in zeilen)
-        if breit + int(w * 0.05) <= platz:
+        def zeilenbreite(z):
+            text, emo = trenne_emoji(z)
+            b = d.textlength(text, font=f)
+            return b + (d.textlength(" ", font=f) + f.size * 0.9 if emo else 0)
+        breit = max(zeilenbreite(z) for z in zeilen)
+        if breit + balken_luft <= platz:
             return f
         g -= 2
     return ImageFont.truetype(f"{FONTS}/Philosopher-Bold.ttf", g)
@@ -61,9 +71,9 @@ def schriftgroesse(zeilen, w, platz):
 
 def block_ebenen(w, h, zeilen, markiert, akzent, mitte_frac):
     """Liefert (basis_ohne_balken, balkenkasten) - der Balken wird animiert."""
-    f = schriftgroesse(zeilen, w, w - 2 * int(w * 0.075))
+    links = int(w * RAND)
+    f = schriftgroesse(zeilen, w, w - 2 * links)
     zh = int(f.size * 1.2)
-    links = int(w * 0.075)
     oben = int(h * mitte_frac - (len(zeilen) * zh) / 2)
 
     basis = Image.new("RGBA", (w, h), (0, 0, 0, 0))
