@@ -191,6 +191,7 @@
   }
   .tuklapp .tu-zahl.du { background: var(--warn-soft, #fbe7d8); color: #8a4b1c; }
   .tuklapp[open] > summary { margin-bottom: 10px; }
+  .jp-befund { margin-left: 8px; }
   .idee-karte { margin-bottom: 14px; }
   .idee-kopf { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
   .idee-quelle { font-size: 12px; color: var(--ink-soft); }
@@ -2414,6 +2415,38 @@
      das Cockpit nicht, dass Beitrag X und Post Y dasselbe sind. */
   var igZuordnung = { zuordnung: {}, nicht_pruefbar: [] };
   var ideenExtern = { ideen: [] };
+
+  /* Befunde aus dem Workspace-Abgleich. 🚨 Sie liegen NEBEN Jahresplan und
+     Zielen, nicht darin — die beiden gehoeren Patricia. Siehe Kopf von
+     patch-planung-befunde.py. */
+  var planungAbgleich = { jahresplan: {}, ziele: {} };
+  function befundVon(bereich, id) {
+    return ((planungAbgleich[bereich] || {})[id]) || null;
+  }
+  var BEFUND_TEXT = {
+    belegt: "im Workspace belegt",
+    offen: "steht noch aus",
+    keine_spur: "keine Spur im Workspace",
+    termin: "Termin",
+    abgelaufen: "Quartal vorbei, Status noch aktiv",
+    nicht_messbar: "nicht maschinell prüfbar"
+  };
+  var BEFUND_ART = {
+    belegt: "gut", offen: "info", keine_spur: "warn",
+    termin: "info", abgelaufen: "warn", nicht_messbar: "info"
+  };
+  function befundChip(bereich, id) {
+    var b = befundVon(bereich, id);
+    if (!b || !b.befund) return "";
+    var titel = (b.belege || []).map(function (x) { return x.wo; }).join(" · ");
+    return '<span class="tp-stand ' + (BEFUND_ART[b.befund] || "info") + '"' +
+      (titel ? ' title="' + esc(titel) + '"' : "") + '>' +
+      esc(BEFUND_TEXT[b.befund] || b.befund) + '</span>';
+  }
+  var ABGLEICH_HINWEIS =
+    "„Keine Spur“ heisst NICHT „nicht passiert“ — ein Leadmagnet kann in " +
+    "ManyChat leben, ohne je eine Datei zu bekommen. Fahr mit der Maus über " +
+    "einen Befund, dann siehst du, worauf er sich stützt.";
   function igPost(b) {
     return (igZuordnung.zuordnung || {})[(b && b.id) || ""] || null;
   }
@@ -7362,6 +7395,12 @@
     }
     var alle = zieleD.items;
     var aktiv = alle.filter(function (z) { return z.status !== "Erreicht"; });
+    /* 🚨 Q2-Ziele standen Ende September noch auf „Aktiv". Der Abgleich sagt
+       das, ohne den Status anzufassen — der gehoert Patricia. */
+    var abgelaufen = alle.filter(function (z) {
+      var b = befundVon("ziele", z.id);
+      return b && b.befund === "abgelaufen";
+    });
     var mitIst = alle.filter(function (z) { return z.ist_text; });
 
     main.innerHTML =
@@ -7375,7 +7414,21 @@
            "Stand " + esc(zieleD.stand || "")) +
       tile("Gemessen", mitIst.length + " von " + alle.length,
            "mit echtem Ist-Stand") +
-      '</div><div id="zlliste"></div>';
+      (abgelaufen.length
+        ? tile("Quartal vorbei", abgelaufen.length, "steht noch auf „Aktiv“")
+        : "") +
+      '</div>' +
+      (abgelaufen.length
+        ? '<div class="panel warn"><strong>' + abgelaufen.length +
+          ' Ziele tragen ein Quartal, das vorbei ist, und stehen trotzdem auf ' +
+          '„Aktiv“.</strong> Das kam so aus Notion. Ich ändere den Status nicht ' +
+          '— entscheide selbst, ob sie erreicht, verschoben oder hinfällig sind:' +
+          '<ul style="margin:8px 0 0 18px">' +
+          abgelaufen.map(function (z) {
+            return '<li>' + esc(z.quartal || "") + " · " + esc(z.name) + '</li>';
+          }).join("") + '</ul></div>'
+        : "") +
+      '<div id="zlliste"></div>';
 
     var box = main.querySelector("#zlliste");
     alle.forEach(function (z) {
@@ -7857,6 +7910,16 @@
         liste.appendChild(jpZeile(e));
       });
 
+    /* 🚨 Ein Befund, der wie ein Vorwurf aussieht, wird entweder geglaubt und
+       ist dann falsch — oder ignoriert, und dann war die Liste umsonst. */
+    if (Object.keys(planungAbgleich.jahresplan || {}).length) {
+      var hw = document.createElement("p");
+      hw.className = "note";
+      hw.style.marginTop = "14px";
+      hw.textContent = ABGLEICH_HINWEIS;
+      liste.appendChild(hw);
+    }
+
     main.querySelector("#jpneu").onclick = function () {
       jahresplan.eintraege.push({
         id: uid("jp"), name: "Neuer Eintrag", start: heute, ende: heute,
@@ -7900,6 +7963,14 @@
     z.appendChild(feld("text", "name", "100%"));
     z.appendChild(feld(null, "bereich", "150px", JP_BEREICHE));
     z.appendChild(feld(null, "stufe", "96px", JP_STUFEN));
+    // Befund aus dem Workspace-Abgleich — siehe patch-planung-befunde.py.
+    var bf = befundChip("jahresplan", e.id);
+    if (bf) {
+      var bx = document.createElement("span");
+      bx.className = "jp-befund";
+      bx.innerHTML = bf;
+      z.appendChild(bx);
+    }
 
     var weg = document.createElement("button");
     weg.className = "del";
@@ -10801,6 +10872,8 @@
   freigaben = lsGet("freigaben", {}) || {};
   igZuordnung = lsGet("ig-zuordnung", { zuordnung: {} }) || { zuordnung: {} };
   ideenExtern = lsGet("ideen-extern", { ideen: [] }) || { ideen: [] };
+  planungAbgleich = lsGet("planung-abgleich", { jahresplan: {}, ziele: {} })
+    || { jahresplan: {}, ziele: {} };
   Object.assign(settings, lsGet("einstellungen", {}) || {});
   Object.assign(mailings, lsGet("mailings", {}) || {});
   produktdetails = lsGet("produkt-details", {}) || {};
@@ -10912,6 +10985,12 @@
         render();
       }).catch(function () {});
       /* Die Freigabe-Sammlung - bis 24.09.2026 wurde sie nur beschrieben. */
+      db.doc("daten/planung-abgleich").onSnapshot(function (snap) {
+        if (!snap.exists) return;
+        planungAbgleich = snap.data() || { jahresplan: {}, ziele: {} };
+        lsSet("planung-abgleich", planungAbgleich);
+        if (activeTab === "launches" || activeTab === "ziele") render();
+      }, function () {});
       db.doc("daten/ideen-extern").onSnapshot(function (snap) {
         if (!snap.exists) return;
         ideenExtern = snap.data() || { ideen: [] };
