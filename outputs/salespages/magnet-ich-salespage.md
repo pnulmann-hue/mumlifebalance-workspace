@@ -8,8 +8,8 @@ tags: [produkt, salespage, mentoring, magnet-ich]
 https://mumlifebalance.thrivecart.com/magnet-ich/
 **Angebot:** 1:1 zur Positionierung · 3 Wochen · Start-Call 60–75 Min · WhatsApp-Begleitung
 Mo–Fr · Abschluss-Call · **333 CHF** oder **2 × 166.50 CHF**
-**Stand:** 24.09.2026 · Aktion Herbst: 3 Plätze, Start 19.10., dritter Call bei Zusage bis
-27.09. (Blöcke 8 und 12 — nach der Aktion austauschen)
+**Stand:** 24.09.2026 · Aktion Herbst: 3 Plätze, Start 19.10., Anmeldung bis 27.09. → dritter Call
+innerhalb der drei Wochen (Blöcke 8 und 12 — nach der Aktion austauschen)
 
 🚨 Bewusst **nicht** verwendet, weil es 2026 nicht stimmt oder nicht belegt ist:
 „kein Monat ohne Verkauf“ · „vierstellig pro Monat“ · jede Zahl über Mentee-Umsätze.
@@ -134,7 +134,7 @@ Seiten-Tipp: Kasten mit Rahmen · 🔁 der dritte Punkt gilt nur für die Herbst
 
 - **Dein Vorbereitungsbogen** — die neun Fragen als Seite auf dem Handy, deine Antworten schickst du mir mit einem Tipp per WhatsApp.
 - **Dein Wochen- und Monatsplan** — wir legen im Start-Call fest, wann du realistisch an deinem Magnet-Ich arbeitest, passend zu deinem Familienalltag und nicht zu einem Idealbild.
-- 🔁 **Herbst-Aktion: ein dritter Call** — wer bis Sonntag, 27. September, 20 Uhr zusagt, bekommt einen zusätzlichen Call, den wir legen, wann du ihn am meisten brauchst.
+- 🔁 **Herbst-Aktion: ein dritter Call** — wer bis Sonntag, 27. September, 20 Uhr zusagt, bekommt einen zusätzlichen Call. Den legen wir irgendwo in deine drei Wochen ab dem 19. Oktober, dorthin, wo du ihn am meisten brauchst — meistens in die Mitte, wenn die ersten Beiträge stehen.
 
 ---
 
@@ -204,7 +204,7 @@ Seiten-Tipp: dunkler Kasten, Knopf, darunter P.S. · 🔁 Frist gilt für die He
 
 **Ich nehme nach den Herbstferien drei Frauen ins 1:1.**
 
-Weil ich jede Frau persönlich begleite, gibt es nicht mehr Plätze. Die Begleitung startet am 19. Oktober, und wer bis **Sonntag, 27. September, 20 Uhr** zusagt, bekommt einen dritten Call dazu.
+Weil ich jede Frau persönlich begleite, gibt es nicht mehr Plätze. Die Begleitung startet am 19. Oktober. Wer sich bis **Sonntag, 27. September, 20 Uhr** anmeldet, bekommt einen dritten Call dazu, der in die drei Wochen fällt.
 
 🔘 Ich bin eine der drei
 
