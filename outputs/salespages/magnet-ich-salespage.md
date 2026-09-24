@@ -134,7 +134,7 @@ Seiten-Tipp: Kasten mit Rahmen · 🔁 der dritte Punkt gilt nur für die Herbst
 
 - **Dein Vorbereitungsbogen** — die neun Fragen als Seite auf dem Handy, deine Antworten schickst du mir mit einem Tipp per WhatsApp.
 - **Dein Wochen- und Monatsplan** — wir legen im Start-Call fest, wann du realistisch an deinem Magnet-Ich arbeitest, passend zu deinem Familienalltag und nicht zu einem Idealbild.
-- 🔁 **Herbst-Aktion: ein dritter Call** — wer bis Sonntag, 27. September, 20 Uhr zusagt, bekommt einen zusätzlichen Call. Den legen wir irgendwo in deine drei Wochen ab dem 19. Oktober, dorthin, wo du ihn am meisten brauchst — meistens in die Mitte, wenn die ersten Beiträge stehen.
+- 🔁 **Herbst-Aktion: ein dritter Call** — wer bis Sonntag, 27. September, 20 Uhr zusagt, bekommt einen zusätzlichen Call. Den legen wir irgendwo in deine drei Wochen nach dem Start-Call, dorthin, wo du ihn am meisten brauchst — meistens in die Mitte, wenn die ersten Beiträge stehen.
 
 ---
 
@@ -193,7 +193,7 @@ Wenn du auf jemanden wartest, der dir alles abnimmt, oder in drei Wochen ein gro
 Ja, zweimal 166.50 CHF.
 
 **Wie schnell geht es los?**
-Nach deiner Anmeldung bekommst du den Vorbereitungsbogen, und wir machen per WhatsApp den Termin für deinen Start-Call ab. 🔁 In der Herbst-Aktion startet die Begleitung am 19. Oktober, direkt nach den Ferien.
+Nach deiner Anmeldung bekommst du den Vorbereitungsbogen, und wir machen per WhatsApp den Termin für deinen Start-Call ab. Mit diesem Call beginnen deine drei Wochen. 🔁 In der Herbst-Aktion findet der Start-Call ab dem 19. Oktober statt, direkt nach den Ferien — bis dahin hast du in Ruhe Zeit für die Vorbereitung.
 
 ---
 
@@ -204,7 +204,7 @@ Seiten-Tipp: dunkler Kasten, Knopf, darunter P.S. · 🔁 Frist gilt für die He
 
 **Ich nehme nach den Herbstferien drei Frauen ins 1:1.**
 
-Weil ich jede Frau persönlich begleite, gibt es nicht mehr Plätze. Die Begleitung startet am 19. Oktober. Wer sich bis **Sonntag, 27. September, 20 Uhr** anmeldet, bekommt einen dritten Call dazu, der in die drei Wochen fällt.
+Weil ich jede Frau persönlich begleite, gibt es nicht mehr Plätze. Die Start-Calls finden ab dem 19. Oktober statt, und ab da laufen deine drei Wochen. Wer sich bis **Sonntag, 27. September, 20 Uhr** anmeldet, bekommt einen dritten Call dazu, der in die drei Wochen fällt.
 
 🔘 Ich bin eine der drei
 
