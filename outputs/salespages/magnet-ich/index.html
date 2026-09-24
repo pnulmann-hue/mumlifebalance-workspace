@@ -1,0 +1,372 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Magnet-Ich</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>body{margin:0}
+/* === MAGNET-ICH-SALESPAGE (auto) === */
+.mi-sp { --cream: #f1ecdd; --cream2: #e7e0cd; --blush: #dfe9e8; --white: #ffffff; --ink: #0c1c30; --muted: #5c6b75; --orange: #dc822e; --orange-deep: #b4661f; --orange-soft: #f7e2cd; --petrol: #12828c; --petrol2: #9ecdd0; --serif: "Philosopher", Georgia, serif; --sans: "Source Sans 3", Arial, sans-serif; }
+.mi-sp { font-family: var(--sans); background: var(--cream); color: var(--ink); line-height: 1.68; font-size: 17.5px; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+.mi-sp *, .mi-sp *::before, .mi-sp *::after { box-sizing: border-box; }
+.mi-sp img { max-width: 100%; display: block; height: auto; }
+.mi-sp p { margin: 0 0 16px; }
+.mi-sp h1, .mi-sp h2, .mi-sp h3 { font-family: var(--serif); color: var(--ink); margin: 0; line-height: 1.15; font-weight: 400; text-wrap: balance; }
+.mi-sp em { font-style: italic; color: var(--orange-deep); }
+.mi-sp .wrap { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+.mi-sp .schmal { max-width: 760px; margin: 0 auto; }
+.mi-sp .eyebrow { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: var(--orange-deep); margin: 0 0 16px; }
+.mi-sp .eyebrow.petrol { color: var(--petrol); }
+.mi-sp section { padding: 80px 0; }
+.mi-sp .sec-head { text-align: center; max-width: 900px; margin: 0 auto 44px; }
+.mi-sp .sec-head h2 { font-size: clamp(32px, 5.4vw, 60px); margin-bottom: 14px; }
+.mi-sp .sec-head p { font-size: clamp(18px, 2.1vw, 21px); color: var(--muted); margin: 0 auto; max-width: 640px; }
+.mi-sp .bg-white { background: var(--white); }
+.mi-sp .bg-blush { background: linear-gradient(180deg, var(--blush), var(--cream2)); }
+.mi-sp .bg-cream { background: var(--cream); }
+.mi-sp .bg-ink { background: var(--ink); color: #e6eeed; }
+.mi-sp .bg-ink h2, .mi-sp .bg-ink h3 { color: #fff; }
+
+.mi-sp .btn { display: inline-block; text-decoration: none; font-family: var(--sans); font-weight: 700; font-size: 16px; letter-spacing: 0.02em; color: #0c1c30; background: linear-gradient(90deg, var(--orange), var(--orange-deep)); padding: 18px 38px; border-radius: 100px; box-shadow: 0 14px 34px rgba(180, 102, 31, 0.28); transition: transform .16s, box-shadow .16s; }
+.mi-sp .btn:hover { transform: translateY(-2px); box-shadow: 0 20px 46px rgba(180, 102, 31, 0.42); }
+.mi-sp .btn:focus-visible, .mi-sp .btn-outline:focus-visible, .mi-sp summary:focus-visible { outline: 3px solid var(--petrol); outline-offset: 3px; }
+.mi-sp .btn-lg { font-size: 17px; padding: 22px 46px; }
+.mi-sp .btn-outline { display: inline-block; text-decoration: none; font-weight: 700; font-size: 15px; letter-spacing: 0.04em; color: #fff; border: 2px solid var(--orange); border-radius: 100px; padding: 18px 30px; transition: all .16s; }
+.mi-sp .btn-outline:hover { background: var(--orange); color: #0c1c30; }
+.mi-sp .mitte { text-align: center; margin-top: 36px; }
+
+/* Hero */
+.mi-sp .hero { position: relative; min-height: 78vh; display: flex; align-items: center; background-color: #0c1c30; background-size: cover; background-position: 78% 30%; padding: 0; }
+.mi-sp .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, #0c1c30 0%, rgba(12, 28, 48, 0.94) 32%, rgba(12, 28, 48, 0.6) 52%, rgba(12, 28, 48, 0.05) 76%, rgba(12, 28, 48, 0) 100%); }
+.mi-sp .hero .wrap { position: relative; z-index: 2; }
+.mi-sp .hero-text { max-width: 700px; padding: 64px 0; }
+.mi-sp .hero .eyebrow { color: #f2bd8a; }
+.mi-sp .vorzeile { font-family: var(--serif); color: rgba(255, 255, 255, 0.9); font-size: clamp(22px, 2.4vw, 30px); line-height: 1.25; margin: 0 0 10px; }
+.mi-sp .hero h1 { font-size: clamp(32px, 4.2vw, 50px); font-weight: 700; line-height: 1.12; color: #fff; }
+.mi-sp .hero h1 em { color: #eb9c50; }
+.mi-sp .hero-sub { color: rgba(255, 255, 255, 0.88); font-size: clamp(17px, 1.6vw, 20px); line-height: 1.6; margin: 22px 0 30px; max-width: 540px; }
+.mi-sp .hero-offer { color: #fff; font-weight: 700; font-size: 15px; margin: 16px 0 0; }
+.mi-sp .hero-offer b { color: #eb9c50; }
+.mi-sp .hero-bild { display: none; }
+@media (max-width: 820px) {
+  .mi-sp .hero { display: block; min-height: 0; background-image: none !important; }
+  .mi-sp .hero::before { display: none; }
+  .mi-sp .hero-bild { display: block; width: 100%; height: 56vh; max-height: 460px; object-fit: cover; object-position: 88% 30%; }
+  .mi-sp .hero-text { text-align: center; padding: 30px 0 44px; margin: 0 auto; }
+  .mi-sp .hero-sub { margin-left: auto; margin-right: auto; }
+  .mi-sp .hero .btn { display: block; width: 100%; max-width: 420px; margin: 0 auto; font-size: 16px; padding: 20px 18px; }
+}
+
+/* Benefits */
+.mi-sp .drei { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+@media (max-width: 860px) { .mi-sp .drei { grid-template-columns: 1fr; } }
+.mi-sp .karte { background: var(--white); border-radius: 20px; padding: 32px 28px; box-shadow: 0 14px 34px rgba(41, 85, 109, 0.07); }
+.mi-sp .karte h3 { font-size: 25px; margin-bottom: 12px; color: var(--ink); }
+.mi-sp .karte p { margin: 0; color: #33495a; font-size: 16.5px; }
+
+/* Foto-Band */
+.mi-sp .band { position: relative; background-size: cover; background-position: center; background-attachment: fixed; padding: 130px 0; }
+.mi-sp .band::before { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(12, 28, 48, 0.8), rgba(12, 28, 48, 0.7)); }
+.mi-sp .band .wrap { position: relative; z-index: 1; }
+.mi-sp .band h2 { color: #fff; font-size: clamp(32px, 5.2vw, 58px); margin-bottom: 28px; text-align: center; }
+.mi-sp .band .eyebrow { color: #eb9c50; display: block; text-align: center; }
+.mi-sp .band p { color: #e9efee; font-size: clamp(17px, 1.9vw, 19.5px); line-height: 1.75; }
+.mi-sp .band.zitat { padding: 300px 0 70px; text-align: center; background-position: center 18%; }
+.mi-sp .band.zitat::before { background: linear-gradient(rgba(12, 28, 48, 0.15), rgba(12, 28, 48, 0.35) 45%, rgba(12, 28, 48, 0.88) 80%); }
+.mi-sp .band.zitat h2 { margin: 0; }
+@media (max-width: 820px) { .mi-sp .band { background-attachment: scroll; padding: 96px 0; } .mi-sp .band.zitat { padding: 260px 0 56px; } }
+
+/* Zitat gross */
+.mi-sp .stimme { text-align: center; }
+.mi-sp .stimme blockquote { margin: 0 auto; max-width: 900px; font-family: var(--serif); font-style: italic; font-size: clamp(28px, 4.4vw, 50px); line-height: 1.25; color: var(--ink); }
+.mi-sp .stimme blockquote::before { content: "\201E"; color: var(--orange); }
+.mi-sp .stimme blockquote::after { content: "\201C"; color: var(--orange); }
+.mi-sp .stimme .wer { margin-top: 22px; color: var(--muted); font-size: 15px; letter-spacing: 0.04em; }
+.mi-sp .stimme .frei { margin: 34px auto 0; max-width: 520px; border: 2px dashed #aecdcd; border-radius: 16px; padding: 22px; color: #6f8a95; font-size: 14px; }
+
+/* Story */
+.mi-sp .split { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 54px; align-items: center; }
+@media (max-width: 860px) { .mi-sp .split { grid-template-columns: 1fr; gap: 32px; } }
+.mi-sp .split img { border-radius: 22px; box-shadow: 0 30px 60px rgba(41, 85, 109, 0.18); }
+.mi-sp .split h2 { font-size: clamp(28px, 3.3vw, 40px); margin-bottom: 24px; }
+.mi-sp .split p { color: #33495a; font-size: 17.5px; line-height: 1.75; }
+.mi-sp .kern { font-family: var(--serif); font-size: clamp(21px, 2.4vw, 26px); color: var(--ink); line-height: 1.4; border-left: 3px solid var(--orange); padding-left: 18px; margin: 26px 0 0; }
+
+/* SOLL */
+.mi-sp .soll p { font-size: clamp(18px, 2vw, 20.5px); color: #33495a; line-height: 1.75; }
+
+/* Phasen */
+.mi-sp .mods { max-width: 860px; margin: 0 auto; display: grid; gap: 16px; }
+.mi-sp details.mod { background: var(--white); border: 1px solid rgba(0, 0, 0, 0.07); border-radius: 18px; box-shadow: 0 14px 34px rgba(41, 85, 109, 0.07); }
+.mi-sp details.mod[open] { border-color: rgba(180, 102, 31, 0.28); }
+.mi-sp details.mod summary { list-style: none; cursor: pointer; padding: 26px 32px; display: flex; align-items: center; gap: 22px; }
+.mi-sp details.mod summary::-webkit-details-marker { display: none; }
+.mi-sp .mod .k { flex-shrink: 0; font-family: var(--serif); color: var(--orange); font-size: 32px; width: 48px; line-height: 1; }
+.mi-sp .mod summary h3 { font-size: clamp(21px, 2.6vw, 27px); flex: 1; }
+.mi-sp .mod .plus { font-size: 32px; color: var(--orange); font-weight: 300; transition: transform .2s; }
+.mi-sp details.mod[open] .plus { transform: rotate(45deg); }
+.mi-sp .mod .inhalt { padding: 0 32px 26px 102px; color: #33495a; font-size: 17px; }
+.mi-sp .mod .inhalt p { margin: 0; }
+@media (max-width: 600px) { .mi-sp .mod .inhalt { padding: 0 24px 22px; } .mi-sp details.mod summary { padding: 22px 24px; gap: 14px; } }
+
+/* Fuer wen */
+.mi-sp .cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; max-width: 920px; margin: 0 auto; }
+@media (max-width: 760px) { .mi-sp .cols2 { grid-template-columns: 1fr; } }
+.mi-sp .who { border-radius: 20px; padding: 30px 28px; }
+.mi-sp .who.ja { background: #eef4f3; border: 1px solid rgba(18, 130, 140, 0.2); }
+.mi-sp .who.nein { background: var(--white); border: 1px solid rgba(0, 0, 0, 0.07); }
+.mi-sp .who h3 { font-size: 24px; margin-bottom: 16px; }
+.mi-sp .who.ja h3 { color: var(--petrol); }
+.mi-sp .who.nein h3 { color: var(--muted); }
+.mi-sp .who ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.mi-sp .who li { position: relative; padding-left: 32px; color: #33495a; font-size: 16px; line-height: 1.5; }
+.mi-sp .who li::before { position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%; color: #fff; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.mi-sp .who.ja li::before { content: "\2713"; background: var(--petrol); }
+.mi-sp .who.nein li::before { content: "\2715"; background: #263a49; }
+
+/* Bonusse */
+.mi-sp .boni { max-width: 760px; margin: 0 auto; display: grid; gap: 16px; }
+.mi-sp .bonus { background: var(--white); border-radius: 18px; padding: 24px 26px; display: flex; gap: 18px; align-items: flex-start; box-shadow: 0 10px 26px rgba(41, 85, 109, 0.06); }
+.mi-sp .bonus .ic { flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: var(--orange-soft); color: var(--orange-deep); font-family: var(--serif); font-size: 20px; display: flex; align-items: center; justify-content: center; }
+.mi-sp .bonus h3 { font-size: 21px; margin-bottom: 6px; }
+.mi-sp .bonus p { margin: 0; color: #33495a; font-size: 16px; }
+.mi-sp .bonus.aktion { border: 2px solid var(--orange); }
+.mi-sp .bonus .tag { display: inline-block; background: var(--orange); color: #0c1c30; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 10px; border-radius: 100px; margin-bottom: 8px; }
+
+/* Preis */
+.mi-sp .preis { position: relative; background-color: #0c1c30; background-size: cover; background-position: center 30%; background-attachment: fixed; }
+.mi-sp .preis::before { content: ""; position: absolute; inset: 0; background: rgba(8, 20, 34, 0.88); }
+.mi-sp .preis .wrap { position: relative; z-index: 1; }
+.mi-sp .preis .sec-head h2 { color: #fff; }
+.mi-sp .preis .sec-head p { color: rgba(255, 255, 255, 0.72); }
+.mi-sp .preis .eyebrow { color: #f2bd8a; }
+.mi-sp .tiers { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 900px; margin: 0 auto; }
+@media (max-width: 760px) { .mi-sp .tiers { grid-template-columns: 1fr; } .mi-sp .preis { background-attachment: scroll; } }
+.mi-sp .tier { background: #13202f; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 36px 30px; display: flex; flex-direction: column; text-align: center; }
+.mi-sp .tier.hot { border-color: var(--orange); box-shadow: 0 26px 64px rgba(220, 130, 46, 0.2); }
+.mi-sp .tier .tt { font-family: var(--serif); text-transform: uppercase; letter-spacing: 0.03em; font-size: 20px; color: #f2bd8a; margin-bottom: 12px; }
+.mi-sp .tier .pp { font-family: var(--serif); font-size: clamp(46px, 8vw, 62px); color: #fff; line-height: 1; }
+.mi-sp .tier .pm { color: rgba(255, 255, 255, 0.62); font-size: 14px; margin-top: 8px; }
+.mi-sp .tier ul { list-style: none; text-align: left; margin: 26px 0 30px; padding: 0; display: grid; gap: 13px; flex: 1; }
+.mi-sp .tier li { position: relative; padding-left: 26px; color: #d2e0df; font-size: 15.5px; line-height: 1.5; }
+.mi-sp .tier li::before { content: "\2713"; position: absolute; left: 0; top: 0; color: #e8913f; font-weight: 700; }
+.mi-sp .tier .btn, .mi-sp .tier .btn-outline { width: 100%; text-align: center; }
+.mi-sp .tier .note { color: rgba(255, 255, 255, 0.45); font-size: 12px; margin: 14px 0 0; }
+
+/* FAQ */
+.mi-sp .faq { max-width: 780px; margin: 0 auto; display: grid; gap: 12px; }
+.mi-sp details.q { background: var(--white); border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 14px; }
+.mi-sp details.q summary { list-style: none; cursor: pointer; padding: 20px 24px; font-family: var(--serif); font-weight: 700; font-size: 18px; color: var(--ink); display: flex; justify-content: space-between; gap: 14px; align-items: center; }
+.mi-sp details.q summary::-webkit-details-marker { display: none; }
+.mi-sp details.q .plus { color: var(--orange); font-size: 24px; font-weight: 300; transition: transform .2s; }
+.mi-sp details.q[open] .plus { transform: rotate(45deg); }
+.mi-sp details.q .a { padding: 0 24px 22px; color: #3d5260; font-size: 16px; }
+.mi-sp details.q .a p:last-child { margin: 0; }
+
+/* Letzter Aufruf */
+.mi-sp .aufruf { text-align: center; padding: 96px 0; }
+.mi-sp .aufruf h2 { font-size: clamp(32px, 5.4vw, 60px); margin-bottom: 20px; }
+.mi-sp .aufruf h2 em { color: #eb9c50; }
+.mi-sp .aufruf .lead { color: rgba(255, 255, 255, 0.84); font-size: clamp(17px, 2vw, 20px); max-width: 620px; margin: 0 auto 34px; }
+.mi-sp .ps { max-width: 640px; margin: 40px auto 0; text-align: left; color: rgba(255, 255, 255, 0.78); font-size: 16.5px; border-top: 1px solid rgba(255, 255, 255, 0.14); padding-top: 26px; }
+.mi-sp .ps b { color: #f2bd8a; }
+
+/* Ueber mich */
+.mi-sp .about { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: 48px; align-items: center; max-width: 960px; margin: 0 auto; }
+@media (max-width: 820px) { .mi-sp .about { grid-template-columns: 1fr; text-align: center; } }
+.mi-sp .about img { border-radius: 22px; box-shadow: 0 30px 60px rgba(41, 85, 109, 0.18); max-width: 320px; margin: 0 auto; }
+.mi-sp .about h2 { font-size: clamp(30px, 3.8vw, 42px); margin-bottom: 18px; }
+.mi-sp .about p { color: #33495a; font-size: 17px; }
+
+/* Footer */
+.mi-sp .fuss { background: var(--ink); color: rgba(255, 255, 255, 0.6); text-align: center; padding: 42px 24px; font-size: 13px; }
+.mi-sp .fuss a { color: rgba(255, 255, 255, 0.7); text-decoration: none; margin: 0 10px; }
+@media (prefers-reduced-motion: reduce) { .mi-sp .btn, .mi-sp .plus { transition: none; } }
+</style></head><body><div class="mi-sp">
+
+<section class="hero" style="background-image:url('assets/mi-hero.jpg');">
+<img class="hero-bild" src="assets/mi-hero.jpg" alt="Patricia Ulmann, lachend am See">
+<div class="wrap">
+<div class="hero-text">
+<span class="eyebrow">Magnet-Ich · 3 Wochen 1:1 mit Patricia</span>
+<p class="vorzeile">Du bist schon eine Weile im Network dabei —</p>
+<h1>und kannst trotzdem nicht in einem Satz sagen, <em>wofür man dich kennen soll?</em></h1>
+<p class="hero-sub">Dann lass uns das zusammen klären. In drei Wochen findest du mit mir dein Thema, deine echte Zielgruppe und die Botschaft, an der man dich wiedererkennt — und du gehst mit einer Bio und deinen ersten Beiträgen raus, die sich endlich nach dir anfühlen.</p>
+<a href="https://mumlifebalance.thrivecart.com/magnet-ich/" class="btn btn-lg">Ich will mein Magnet-Ich finden →</a>
+<p class="hero-offer">Herbst: <b>3 Plätze</b> · Start-Calls ab 19. Oktober · Anmeldung bis 27. September</p>
+</div>
+</div>
+</section>
+
+<section class="bg-cream">
+<div class="wrap">
+<div class="drei">
+<div class="karte"><h3>Du weisst, worüber du redest.</h3><p>Statt jede Woche neu zu überlegen, was du posten sollst, hast du ein Thema, das trägt — und du merkst beim Schreiben, dass dir die Ideen plötzlich von selbst kommen.</p></div>
+<div class="karte"><h3>Die Richtigen fühlen sich angesprochen.</h3><p>Du schreibst für eine Frau, die du genau vor dir siehst — und genau die bleibt dann auch hängen und schreibt dir.</p></div>
+<div class="karte"><h3>Dein Network bekommt ein Gesicht.</h3><p>Deine Produkte bleiben, was sie sind, und die Menschen kommen jetzt wegen dir und deinem Thema zu dir.</p></div>
+</div>
+</div>
+</section>
+
+<section class="band" style="background-image:url('assets/mi-steine.jpg');">
+<div class="wrap">
+<div class="schmal">
+<span class="eyebrow">Jetzt mal ganz ehrlich</span>
+<h2>Kennst du diesen Moment?</h2>
+<p>Es ist Sonntagabend, die Kinder sind endlich im Bett, und du sitzt mit dem Handy auf dem Sofa, weil du morgen etwas posten willst. Du scrollst durch andere Profile, siehst drei Frauen, die dasselbe Produkt anders verkaufen, und plötzlich weisst du gar nicht mehr, was du eigentlich sagen wolltest. Am Ende postest du ein Produktbild mit einem netten Satz darunter, bekommst ein paar Herzen von deinen Freundinnen — und sonst passiert nichts.</p>
+<p>Dabei liebst du, was du machst. Das Produkt ist gut, dein Team ist gut, und eigentlich hast du so viel Wissen im Kopf. Nur weiss niemand da draussen, wofür er ausgerechnet zu dir kommen soll, und deshalb rechnest du jeden Monat nach, ob sich der ganze Aufwand gelohnt hat, und quälst dich am Montag doch wieder in einen Job, den du eigentlich gar nicht mehr machen willst.</p>
+<p>Und vielleicht hast du sogar schon einen Kurs zum Thema gemacht und ein Workbook ausgefüllt. Allein drehst du dich damit trotzdem im Kreis, weil dir niemand sagt, welche deiner drei, vier Ideen eigentlich trägt.</p>
+</div>
+</div>
+</section>
+
+<section class="bg-white stimme">
+<div class="wrap">
+<span class="eyebrow petrol">Aus der Arbeit mit meinen Mentees</span>
+<blockquote>Seit ich meine Positionierung angepasst habe, geht mein Account ab.</blockquote>
+<p class="wer">— eine Mentee, Network-Mama, nach der Arbeit an ihrem Thema</p>
+</div>
+</section>
+
+<section class="bg-cream">
+<div class="wrap">
+<div class="split">
+<img src="assets/mi-story.jpg" alt="Patricia am See mit ihrer Mappe" loading="lazy">
+<div>
+<span class="eyebrow">Wie Magnet-Ich entstanden ist</span>
+<h2>Mein erstes Network hab ich nach drei Jahren aufgegeben.</h2>
+<p>Von 2018 bis 2021 war ich in einem anderen Network, und ich hab dort genau das gemacht, was man mir gezeigt hat: Produkte zeigen, Produktpartys machen, Produkte erklären. Es hat unglaublich viel Zeit gefressen und kaum etwas zurückgebracht, und irgendwann hab ich aufgehört. Am Produkt lag es nie, ich selbst kam darin einfach gar nicht vor.</p>
+<p>Als ich 2023 mit doTERRA neu gestartet bin, hab ich es anders gemacht. Ich hab mich gefragt, worüber ich eigentlich reden will, und bin bei dem gelandet, was mich als Mama von vier Kindern selbst jeden Tag beschäftigt hat: Mental Load und Stress. Plötzlich kamen Frauen zu mir, weil sie sich in dem wiedererkannt haben, was ich erzählt habe — und die Öle waren dann einfach ein Teil davon.</p>
+<p class="kern">Menschen kaufen bei einem Menschen mit einem Thema, und das Produkt kommt danach. Genau diesen Schritt mache ich im Magnet-Ich mit dir — nur schneller, als ich ihn damals allein gemacht habe.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-blush soll">
+<div class="wrap">
+<div class="schmal">
+<div class="sec-head"><span class="eyebrow petrol">Stell dir vor</span><h2>Es ist drei Wochen später.</h2></div>
+<p>Du öffnest dein Profil und liest deine neue Bio, und zum ersten Mal steht da ein Satz, bei dem du nicht zusammenzuckst, weil er einfach stimmt. Du weisst, für welche Frau du schreibst, und wenn du dich morgens mit dem Kaffee hinsetzt, hast du schon drei Ideen im Kopf, statt eine halbe Stunde leer auf den Bildschirm zu starren.</p>
+<p>Deine Freundinnen fragen dich, was du anders gemacht hast, weil dein Profil plötzlich nach dir aussieht. Und die Frauen, die dich noch gar nicht kennen, schreiben dir eine Nachricht, weil sie sich in dem wiederfinden, was du teilst.</p>
+<p>Und selbst die Skeptikerin in deinem Umfeld, die immer fragt, ob das wirklich jemand kauft, sieht, dass du eine klare Richtung hast — und du musst dich nicht mehr erklären, weil dein Profil das für dich tut.</p>
+<div class="mitte"><a href="https://mumlifebalance.thrivecart.com/magnet-ich/" class="btn">Ja, das will ich auch →</a></div>
+</div>
+</div>
+</section>
+
+<section class="bg-white">
+<div class="wrap">
+<div class="sec-head"><span class="eyebrow">So laufen deine drei Wochen</span><h2>Vier Schritte, und du weisst, wofür du stehst</h2></div>
+<div class="mods">
+<details class="mod" open><summary><span class="k">01</span><h3>Deine Vorbereitung</h3><span class="plus">+</span></summary><div class="inhalt"><p>Du beantwortest neun Fragen zu deinem Business, deinem Umfeld und dem, was dich bremst — in Ruhe, auf dem Handy, und genau so ehrlich, wie es gerade ist. Damit sind wir im ersten Call sofort mittendrin.</p></div></details>
+<details class="mod"><summary><span class="k">02</span><h3>Der Start-Call (60–75 Minuten per Zoom)</h3><span class="plus">+</span></summary><div class="inhalt"><p>Wir schauen uns deine Ausgangslage an und arbeiten dein Magnet-Thema und deine echte Zielgruppe heraus. Am Ende weisst du, welche deiner Ideen trägt, und wir legen gemeinsam deine drei wichtigsten Aufgaben und deine Zeitfenster für die nächsten Wochen fest.</p></div></details>
+<details class="mod"><summary><span class="k">03</span><h3>Drei Wochen Begleitung per WhatsApp</h3><span class="plus">+</span></summary><div class="inhalt"><p>Du formulierst deine Kernbotschaft, deine Bio und deine ersten ein, zwei Beiträge, und ich schaue mit dir drauf, bis es sitzt. Montag bis Freitag hörst du in der Regel am gleichen Tag von mir.</p></div></details>
+<details class="mod"><summary><span class="k">04</span><h3>Der Abschluss-Call</h3><span class="plus">+</span></summary><div class="inhalt"><p>Wir halten fest, was steht, und legen deine nächsten Schritte fest, damit du nach den drei Wochen nicht wieder bei null anfängst.</p></div></details>
+</div>
+</div>
+</section>
+
+<section class="bg-cream">
+<div class="wrap">
+<div class="sec-head"><span class="eyebrow">Ist das für dich?</span><h2>Damit du dir sicher bist</h2></div>
+<div class="cols2">
+<div class="who ja"><h3>Ja, wenn …</h3><ul>
+<li>du schon eine Weile im Network dabei bist und dein Network liebst.</li>
+<li>du drei, vier Ideen im Kopf hast und nicht weisst, welche davon trägt.</li>
+<li>du dich allein im Kreis gedreht hast, auch mit Kurs und Workbook.</li>
+<li>du bereit bist, ehrlich hinzuschauen und dann auch etwas umzusetzen.</li>
+</ul></div>
+<div class="who nein"><h3>Nein, wenn …</h3><ul>
+<li>du auf jemanden wartest, der dir alles abnimmt.</li>
+<li>du in drei Wochen ein grosses Einkommen erwartest.</li>
+<li>du dein Network aufgeben willst, statt ihm ein Gesicht zu geben.</li>
+</ul></div>
+</div>
+</div>
+</section>
+
+<section class="bg-blush">
+<div class="wrap">
+<div class="sec-head"><span class="eyebrow petrol">Das bekommst du zusätzlich</span><h2>Damit du nicht allein losgehst</h2></div>
+<div class="boni">
+<div class="bonus"><span class="ic">1</span><div><h3>Dein Vorbereitungsbogen</h3><p>Die neun Fragen als Seite auf dem Handy, deine Antworten schickst du mir mit einem Tipp per WhatsApp.</p></div></div>
+<div class="bonus"><span class="ic">2</span><div><h3>Dein Wochen- und Monatsplan</h3><p>Wir legen im Start-Call fest, wann du realistisch an deinem Magnet-Ich arbeitest, passend zu deinem Familienalltag und nicht zu einem Idealbild.</p></div></div>
+<div class="bonus aktion"><span class="ic">3</span><div><span class="tag">Herbst-Aktion</span><h3>Ein dritter Call</h3><p>Wer sich bis Sonntag, 27. September, 20 Uhr anmeldet, bekommt einen zusätzlichen Call. Den legen wir irgendwo in deine drei Wochen nach dem Start-Call, dorthin, wo du ihn am meisten brauchst — meistens in die Mitte, wenn die ersten Beiträge stehen.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="preis" id="preis" style="background-image:url('assets/mi-preis.jpg');">
+<div class="wrap">
+<div class="sec-head"><span class="eyebrow">Magnet-Ich — 3 Wochen 1:1 mit mir</span><h2>Wähle deine Zahlungsart</h2><p>Start-Call · drei Wochen WhatsApp-Begleitung · Abschluss-Call · Vorbereitungsbogen · Wochen- und Monatsplan</p></div>
+<div class="tiers">
+<div class="tier hot"><div class="tt">Einmalzahlung</div><div class="pp">333 CHF</div><div class="pm">einmal bezahlt</div>
+<ul><li>Start-Call, 60–75 Minuten per Zoom</li><li>Drei Wochen Begleitung per WhatsApp</li><li>Abschluss-Call mit deinen nächsten Schritten</li><li>Vorbereitungsbogen und Wochenplan</li><li>Herbst-Aktion: dritter Call bei Anmeldung bis 27. September</li></ul>
+<a href="https://mumlifebalance.thrivecart.com/magnet-ich/" class="btn btn-lg">Platz sichern →</a><p class="note">Sichere Zahlung über ThriveCart</p></div>
+<div class="tier"><div class="tt">Ratenzahlung</div><div class="pp">2 × 166.50</div><div class="pm">CHF · insgesamt 333 CHF</div>
+<ul><li>Start-Call, 60–75 Minuten per Zoom</li><li>Drei Wochen Begleitung per WhatsApp</li><li>Abschluss-Call mit deinen nächsten Schritten</li><li>Vorbereitungsbogen und Wochenplan</li><li>Herbst-Aktion: dritter Call bei Anmeldung bis 27. September</li></ul>
+<a href="https://mumlifebalance.thrivecart.com/magnet-ich/" class="btn-outline">In zwei Raten starten →</a><p class="note">Sichere Zahlung über ThriveCart</p></div>
+</div>
+</div>
+</section>
+
+<section class="bg-cream stimme">
+<div class="wrap">
+<span class="eyebrow petrol">Noch eine Stimme</span>
+<blockquote>Innerhalb einer Woche hab ich zwei Startersets verkauft und hatte drei offene Gespräche.</blockquote>
+<p class="wer">— eine Mentee, nachdem sie endlich mit ihrem Thema sichtbar wurde</p>
+<!-- HIER ECHTE STIMME EINSETZEN: erste Magnet-Ich-Kundin nach dem Abschluss-Call -->
+</div>
+</section>
+
+<section class="bg-white">
+<div class="wrap">
+<div class="sec-head"><span class="eyebrow">Häufige Fragen</span><h2>Was du dich vielleicht fragst</h2></div>
+<div class="faq">
+<details class="q"><summary>Ich hab kaum Zeit. Geht das neben Kindern, Job und Network?<span class="plus">+</span></summary><div class="a"><p>Ja, genau dafür ist es gebaut. Wir planen im Start-Call deine Zeitfenster so, wie dein Alltag wirklich aussieht, und die Begleitung läuft über WhatsApp, also dann, wenn du Luft hast. Ich hab selbst vier Kinder und arbeite vor allem am Vormittag, wenn alle aus dem Haus sind — ich weiss, wie wenig Zeit da manchmal übrig bleibt.</p></div></details>
+<details class="q"><summary>Muss ich mein Network dafür aufgeben?<span class="plus">+</span></summary><div class="a"><p>Nein, im Gegenteil. Dein Thema macht dein Network stärker, weil die Frauen wegen dir kommen und deine Produkte dann ein Teil deiner Geschichte werden.</p></div></details>
+<details class="q"><summary>Ich hab schon „Finde dein Thema“ gemacht. Brauch ich das dann noch?<span class="plus">+</span></summary><div class="a"><p>Der Kurs gibt dir die Fragen und die Richtung. Im Magnet-Ich machen wir es zusammen: ich höre dir zu, sage dir ehrlich, welche Idee trägt, und schaue mit dir auf deine Bio und deine Beiträge, bis sie sitzen. Wenn du dich allein im Kreis gedreht hast, ist das genau der Unterschied.</p></div></details>
+<details class="q"><summary>Was ist der Unterschied zur Instagram-Kundenmaschine?<span class="plus">+</span></summary><div class="a"><p>Im Magnet-Ich klären wir, worüber du redest und für wen. Die Kundenmaschine zeigt dir danach, wie du mit diesem Thema auf Instagram Kundinnen gewinnst. Wer ihr Thema noch nicht hat, fängt beim Magnet-Ich an.</p></div></details>
+<details class="q"><summary>Was, wenn ich nach drei Wochen immer noch unsicher bin?<span class="plus">+</span></summary><div class="a"><p>Dann sag ich dir das ehrlich, und wir schauen im Abschluss-Call, was noch fehlt. Was ich dir verspreche: Nach drei Wochen weisst du, wofür du stehst, und hast eine Bio und erste Beiträge, mit denen du losgehen kannst. Ein fertiges Business ist das noch nicht — den Rest machst du, und genau das ist auch gut so.</p></div></details>
+<details class="q"><summary>Kann ich in Raten zahlen?<span class="plus">+</span></summary><div class="a"><p>Ja, zweimal 166.50 CHF.</p></div></details>
+<details class="q"><summary>Wie schnell geht es los?<span class="plus">+</span></summary><div class="a"><p>Nach deiner Anmeldung bekommst du den Vorbereitungsbogen, und wir machen per WhatsApp den Termin für deinen Start-Call ab. Mit diesem Call beginnen deine drei Wochen. In der Herbst-Aktion findet der Start-Call ab dem 19. Oktober statt, direkt nach den Ferien — bis dahin hast du in Ruhe Zeit für die Vorbereitung.</p></div></details>
+</div>
+</div>
+</section>
+
+<section class="bg-ink aufruf">
+<div class="wrap">
+<span class="eyebrow" style="color:#f2bd8a;">Herbst 2026</span>
+<h2>Ich nehme nach den Herbstferien <em>drei Frauen</em> ins 1:1.</h2>
+<p class="lead">Weil ich jede Frau persönlich begleite, gibt es nicht mehr Plätze. Die Start-Calls finden ab dem 19. Oktober statt, und ab da laufen deine drei Wochen. Wer sich bis Sonntag, 27. September, 20 Uhr anmeldet, bekommt einen dritten Call dazu, der in die drei Wochen fällt.</p>
+<a href="https://mumlifebalance.thrivecart.com/magnet-ich/" class="btn btn-lg">Ich bin eine der drei →</a>
+<p class="ps"><b>P.S.</b> Du musst nicht noch einen Kurs machen und noch ein Workbook ausfüllen, um endlich zu wissen, worüber du redest. In drei Wochen weisst du es — und hast eine Bio und erste Beiträge, die nach dir klingen. Wenn du unsicher bist, ob das für dich passt, schreib mir einfach auf Instagram, und ich sag dir ehrlich, ob das Magnet-Ich jetzt der richtige Schritt ist.</p>
+</div>
+</section>
+
+<section class="bg-blush">
+<div class="wrap">
+<div class="about">
+<img src="assets/mi-about.jpg" alt="Patricia Ulmann am See" loading="lazy">
+<div>
+<span class="eyebrow petrol">Mit wem du arbeitest</span>
+<h2>Ich bin Patricia.</h2>
+<p>Ich bin Mama von vier Kindern, wohne im Appenzellerland und bin seit 2023 selbständig mit Mum Life Balance. Davor hab ich lange im Sozialbereich und in der Verwaltung gearbeitet und irgendwann gemerkt, dass ich meine Zeit nicht mehr im Büro absitzen will.</p>
+<p>Mein erstes Network hab ich aufgegeben, weil ich dort nur Produkte gezeigt habe. Im zweiten habe ich mir ein Thema gesucht, und seitdem kommen die Menschen wegen mir und meinem Thema. Genau das zeige ich heute Network-Mamas, die schon eine Weile dabei sind und endlich etwas Eigenes aufbauen wollen, ohne ihr Network aufzugeben.</p>
+<p>Mit einer Mentorin am Strand hab ich wenig gemeinsam: Ich stehe morgens um fünf auf, arbeite am Vormittag, mache nachmittags Fahrdienst — und sage dir ehrlich, was trägt und was nicht.</p>
+<a href="https://mumlifebalance.thrivecart.com/magnet-ich/" class="btn">Magnet-Ich starten →</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="band zitat" style="background-image:url('assets/mi-schluss.jpg');">
+<div class="wrap">
+<h2>Du musst nicht perfekt sein.<br>Du musst nur bereit sein.</h2>
+</div>
+</section>
+
+<div class="fuss">
+<a href="https://mumlifebalance.ch/impressum/">Impressum</a> · <a href="https://mumlifebalance.ch/datenschutzerklaerung/">Datenschutz</a>
+<div style="margin-top:12px;">© 2026 Patricia Ulmann — Mum Life Balance</div>
+</div>
+
+</div>
+</body></html>
