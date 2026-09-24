@@ -1803,17 +1803,53 @@
     }, 800);
   }
 
+  /* 🚨 Der Stand aus der Datenbank darf die eigene Arbeit nur dann
+     ueberschreiben, wenn er NEUER ist. Bis 24.09.2026 gewann er immer, und
+     zusammen mit der verzoegerten lokalen Sicherung hat das Arbeit geloescht.
+     Siehe Kopf von patch-kein-datenverlust.py.
+
+     Fehlt updatedAt, gewinnt der lokale Stand: Arbeit zurueckzubekommen ist
+     unmoeglich, einen veralteten Anzeigestand zu erneuern ein Klick. */
+  function dbUebernehmen(lokal, ausDb) {
+    if (!lokal) return ausDb;
+    var a = lokal.updatedAt || "", b = ausDb.updatedAt || "";
+    if (!b || b <= a) return lokal;          // lokal ist gleich alt oder neuer
+    Object.assign(lokal, ausDb);
+    return lokal;
+  }
+
+  /* Was noch nicht in der Datenbank ist. Wird vor dem Schliessen abgearbeitet. */
+  var ausstehend = {};
+  function sofortSichern() {
+    Object.keys(ausstehend).forEach(function (k) {
+      try { ausstehend[k](); } catch (e) {}
+    });
+    ausstehend = {};
+  }
+  window.addEventListener("pagehide", sofortSichern);
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "hidden") sofortSichern();
+  });
+
   function saveStory(st) {
     if (!st) return;
+    // 🚨 Lokal SOFORT — nur die Datenbank wird gesammelt.
+    st.updatedAt = new Date().toISOString();
+    lsSet("st-" + st.id, st);
+    lsSet("storyliste", state.storys.map(function (x) { return x.id; }));
     clearTimeout(saveTimers["st-" + st.id]);
-    saveTimers["st-" + st.id] = setTimeout(function () {
-      st.updatedAt = new Date().toISOString();
-      lsSet("st-" + st.id, st);
-      lsSet("storyliste", state.storys.map(function (x) { return x.id; }));
+    /* Der Zeitgeber-Inhalt als benannte Funktion: sie liegt im
+       Merkzettel UND laeuft nach 700 ms. Ohne den Eintrag war
+       sofortSichern() wirkungslos. */
+    var tun = function () {
+      delete ausstehend["st-" + st.id];
       if (!db) { setSaveState("lokal gespeichert", "off"); return; }
       db.collection("storys").doc(st.id).set({
         name: st.name, brand: st.brand, phase: st.phase || "", frames: st.frames,
         datum: st.datum || "", profil: st.profil || "",
+        // 🚨 Was hier fehlt, ist nach dem naechsten Speichern WEG. `blotato`
+        // fehlte bis 24.09. als einziges der drei Formate.
+        blotato: st.blotato || null,
         kommentar: st.kommentar || "", kommentarStand: st.kommentarStand || "",
         kommentarErledigt: st.kommentarErledigt || "",
         kommentarAntwort: st.kommentarAntwort || "",
@@ -1822,16 +1858,22 @@
         updatedAt: st.updatedAt
       }).then(function () { setSaveState("gespeichert", "on"); })
         .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
-    }, 700);
+    };
+    ausstehend["st-" + st.id] = tun;
+    saveTimers["st-" + st.id] = setTimeout(tun, 700);
   }
 
   function saveCarousel(car) {
     if (!car) return;
+    car.updatedAt = new Date().toISOString();
+    lsSet("kar-" + car.id, car);
+    lsSet("karliste", state.karussells.map(function (c) { return c.id; }));
     clearTimeout(saveTimers["kar-" + car.id]);
-    saveTimers["kar-" + car.id] = setTimeout(function () {
-      car.updatedAt = new Date().toISOString();
-      lsSet("kar-" + car.id, car);
-      lsSet("karliste", state.karussells.map(function (c) { return c.id; }));
+    /* Der Zeitgeber-Inhalt als benannte Funktion: sie liegt im
+       Merkzettel UND laeuft nach 700 ms. Ohne den Eintrag war
+       sofortSichern() wirkungslos. */
+    var tun = function () {
+      delete ausstehend["kar-" + car.id];
       if (!db) { setSaveState("lokal gespeichert", "off"); return; }
       db.collection("karussells").doc(car.id).set({
         name: car.name, brand: car.brand, handle: car.handle,
@@ -1845,7 +1887,9 @@
         slides: car.slides, caption: car.caption || "", updatedAt: car.updatedAt
       }).then(function () { setSaveState("gespeichert", "on"); })
         .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
-    }, 700);
+    };
+    ausstehend["kar-" + car.id] = tun;
+    saveTimers["kar-" + car.id] = setTimeout(tun, 700);
   }
 
   function saveImage(basePath, slideId, dataUrl) {
@@ -9749,11 +9793,15 @@
 
   function saveReel(r) {
     if (!r) return;
+    r.updatedAt = new Date().toISOString();
+    lsSet("rl-" + r.id, r);
+    lsSet("reelliste", state.reels.map(function (x) { return x.id; }));
     clearTimeout(saveTimers["rl-" + r.id]);
-    saveTimers["rl-" + r.id] = setTimeout(function () {
-      r.updatedAt = new Date().toISOString();
-      lsSet("rl-" + r.id, r);
-      lsSet("reelliste", state.reels.map(function (x) { return x.id; }));
+    /* Der Zeitgeber-Inhalt als benannte Funktion: sie liegt im
+       Merkzettel UND laeuft nach 700 ms. Ohne den Eintrag war
+       sofortSichern() wirkungslos. */
+    var tun = function () {
+      delete ausstehend["rl-" + r.id];
       if (!db) { setSaveState("lokal gespeichert", "off"); return; }
       db.collection("reels").doc(r.id).set({
         // 🚨 Feste Feldliste: was hier fehlt, ist nach dem naechsten
@@ -9783,7 +9831,9 @@
         blotato: r.blotato || null, updatedAt: r.updatedAt
       }).then(function () { setSaveState("gespeichert", "on"); })
         .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
-    }, 700);
+    };
+    ausstehend["rl-" + r.id] = tun;
+    saveTimers["rl-" + r.id] = setTimeout(tun, 700);
   }
 
   function currentReel() {
@@ -10735,8 +10785,11 @@
         qs.docs.forEach(function (doc) {
           var d0 = doc.data() || {};
           if (!d0.frames || !d0.frames.length) return;
-          var st = { id: doc.id, name: d0.name || "Sequenz", brand: d0.brand || "mlb_dark", handle: d0.handle || "", phase: d0.phase || "", frames: d0.frames, datum: d0.datum || "", textfrei: !!d0.textfrei, updatedAt: d0.updatedAt || "" };
-          if (seen[st.id]) Object.assign(seen[st.id], st); else state.storys.push(st);
+          // 🚨 Die Leseliste muss so lang sein wie die Schreibliste, sonst
+          // kommen Felder nie an. profil, kommentar*, abgelehnt* und blotato
+          // fehlten hier bis 24.09.2026.
+          var st = { id: doc.id, name: d0.name || "Sequenz", brand: d0.brand || "mlb_dark", handle: d0.handle || "", phase: d0.phase || "", frames: d0.frames, datum: d0.datum || "", textfrei: !!d0.textfrei, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", blotato: d0.blotato || null, updatedAt: d0.updatedAt || "" };
+          if (seen[st.id]) dbUebernehmen(seen[st.id], st); else state.storys.push(st);
         });
         state.storys.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });
         if (!activeStory && state.storys.length) activeStory = state.storys[0].id;
@@ -10772,7 +10825,7 @@
         qs.docs.forEach(function (doc) {
           var d0 = doc.data() || {};
           var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", coverhook: d0.coverhook || "", coverunter: d0.coverunter || "", videoart: d0.videoart || "sprech", hinweis: d0.hinweis || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", texty: (typeof d0.texty === "number") ? d0.texty : null, textskala: d0.textskala || 100, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", videourl: d0.videourl || "", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, updatedAt: d0.updatedAt || "" };
-          if (seen[rl.id]) Object.assign(seen[rl.id], rl); else state.reels.push(rl);
+          if (seen[rl.id]) dbUebernehmen(seen[rl.id], rl); else state.reels.push(rl);
         });
         state.reels.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });
         if (!activeReel && state.reels.length) activeReel = state.reels[0].id;
