@@ -1,0 +1,56 @@
+[
+ {
+  "id": "10",
+  "perstag": "MI_STAND",
+  "titel": "Magnet-Ich · Wo stehst du?",
+  "frage": "Wo stehst du aktuell in deinem Business? Was läuft gut?"
+ },
+ {
+  "id": "11",
+  "perstag": "MI_UNKLAR",
+  "titel": "Magnet-Ich · Was ist unklar?",
+  "frage": "Was fühlt sich noch unklar oder schwer an?"
+ },
+ {
+  "id": "12",
+  "perstag": "MI_IDEE",
+  "titel": "Magnet-Ich · Idee, die zurückkommt",
+  "frage": "Welche Idee oder welches Thema kommt immer wieder zu dir zurück, auch wenn du es wegschiebst?"
+ },
+ {
+  "id": "13",
+  "perstag": "MI_PERSON",
+  "titel": "Magnet-Ich · Wen unterstützen",
+  "frage": "Welche Art von Person möchtest du am liebsten unterstützen — und warum?"
+ },
+ {
+  "id": "14",
+  "perstag": "MI_UMFELD",
+  "titel": "Magnet-Ich · Fragen aus dem Umfeld",
+  "frage": "Welche Fragen oder Themen tauchen in deinem Umfeld immer wieder auf, bei denen Menschen deine Hilfe suchen?"
+ },
+ {
+  "id": "15",
+  "perstag": "MI_REAKTION",
+  "titel": "Magnet-Ich · Meiste Reaktionen",
+  "frage": "Zu welchen Themen bekommst du die meisten Reaktionen, wenn du etwas teilst oder darüber sprichst?"
+ },
+ {
+  "id": "16",
+  "perstag": "MI_UNSICHER",
+  "titel": "Magnet-Ich · Wo unsicher",
+  "frage": "Wo fühlst du dich in deinem Auftreten oder deiner Kommunikation am unsichersten?"
+ },
+ {
+  "id": "17",
+  "perstag": "MI_LOESEN",
+  "titel": "Magnet-Ich · Wovon lösen",
+  "frage": "Wovon möchtest du dich bewusst lösen? (z.B. Vergleiche, Perfektionismus …)"
+ },
+ {
+  "id": "18",
+  "perstag": "MI_ERFOLG",
+  "titel": "Magnet-Ich · Erfolg nach 3 Wochen",
+  "frage": "Was wäre für dich ein spürbarer Erfolg nach drei Wochen Mentoring?"
+ }
+]

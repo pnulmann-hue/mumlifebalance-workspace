@@ -191,6 +191,15 @@
   }
   .tuklapp .tu-zahl.du { background: var(--warn-soft, #fbe7d8); color: #8a4b1c; }
   .tuklapp[open] > summary { margin-bottom: 10px; }
+  .idee-karte { margin-bottom: 14px; }
+  .idee-kopf { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
+  .idee-quelle { font-size: 12px; color: var(--ink-soft); }
+  .idee-kopf .btn.ghost { margin-left: auto; }
+  .idee-hook { font-family: var(--display); font-size: 17px; line-height: 1.35; margin: 0 0 10px; }
+  .idee-mehr > summary { cursor: pointer; font-size: 13px; color: var(--ink-soft); }
+  .idee-fuss { display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+               margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
+  .idee-stand { color: var(--good); }
   .uehook.klickbar { cursor: pointer; }
   .uehook.klickbar:hover { text-decoration: underline; color: var(--teal); }
   .uezeile .uedat { font-size: 12px; padding: 2px 4px; }
@@ -2238,6 +2247,7 @@
     { id: "fertig", label: "Freigeben" },
     { id: "gepostet", label: "Ausgewertet" },
     { id: "ideenkasten", label: "Ideenkasten" },
+    { id: "ideenextern", label: "Ideen von anderen" },
     { g: "Planung" },
     { id: "launches", label: "Jahresplan" },
     { id: "monatsbogen", label: "Monatsbogen" },
@@ -2403,6 +2413,7 @@
      Gebaut von gepostet-zuordnen.py ueber den Caption-Anfang. Ohne das weiss
      das Cockpit nicht, dass Beitrag X und Post Y dasselbe sind. */
   var igZuordnung = { zuordnung: {}, nicht_pruefbar: [] };
+  var ideenExtern = { ideen: [] };
   function igPost(b) {
     return (igZuordnung.zuordnung || {})[(b && b.id) || ""] || null;
   }
@@ -3790,6 +3801,99 @@
       steuerSchreiben(1);
     };
     return karte;
+  }
+
+  /* Reiter „Ideen von anderen": was bei den beobachteten Profilen deutlich
+     ueber deren eigenem Schnitt lag. Gebaut von ideen-extern-bauen.py.
+     Siehe Kopf von patch-ideen-extern.py, warum der Reiter bewusst nicht
+     „Top-Content" heisst. */
+  function renderIdeenExtern(main) {
+    var alle = (ideenExtern && ideenExtern.ideen) || [];
+    var stand = (ideenExtern && ideenExtern.stand) || "";
+    var alt = stand ? Math.round((Date.now() - new Date(stand + "T00:00:00")) / 86400000) : 99;
+
+    main.innerHTML =
+      '<div class="page-head"><div><h1>Ideen von anderen</h1>' +
+      '<p>Beitr\u00e4ge aus deiner Beobachtungsliste, die deutlich \u00fcber dem ' +
+      '<strong>eigenen Schnitt des jeweiligen Kontos</strong> lagen \u2014 absolute ' +
+      'Likes sagen nichts, wenn ein Konto zwanzigmal so gross ist wie deins. ' +
+      'Das ist eine Anregung, kein Katalog: \u00fcbernommen wird die Machart, ' +
+      'nie der Text.</p></div></div>' +
+      (alt > 2 ? '<div class="panel warn"><strong>Der Stand ist ' + alt +
+        ' Tage alt.</strong> Neu holen mit <code>python ' +
+        'scripts/cockpit/ideen-extern-bauen.py</code>.</div>' : "") +
+      '<div class="tiles">' +
+      tile("Ideen", alle.length, stand ? "Stand " + fmtDate(stand) : "kein Stand") +
+      tile("Eingeschlagen", alle.filter(function (i) {
+             return i.stufe === "eingeschlagen"; }).length, "ab 3\u00d7 eigener Schnitt") +
+      '</div><div id="ideliste"></div>';
+
+    var box = main.querySelector("#ideliste");
+    if (!alle.length) {
+      box.innerHTML = '<div class="panel"><div class="empty">Noch nichts da. ' +
+        'Der Scrape l\u00e4uft t\u00e4glich \u2014 das Dokument wird beim ' +
+        'n\u00e4chsten Abgleich gef\u00fcllt.</div></div>';
+      return;
+    }
+
+    alle.forEach(function (i) {
+      var k = document.createElement("div");
+      k.className = "panel idee-karte";
+      var fmt = i.format === "reel" ? "Reel" : (i.format === "karussell" ? "Karussell" : "Bild");
+      k.innerHTML =
+        '<div class="idee-kopf">' +
+          '<span class="tp-stand ' + (i.stufe === "eingeschlagen" ? "gut" : "info") + '">' +
+            i.faktor + '\u00d7 eigener Schnitt</span>' +
+          '<span class="tp-format">' + esc(fmt) + '</span>' +
+          '<span class="idee-quelle">' + esc(i.label || i.konto) +
+            ' \u00b7 ' + (i.follower || 0).toLocaleString("de-CH") + ' Follower' +
+            ' \u00b7 ' + esc(fmtDate(i.datum)) + '</span>' +
+          (i.link ? '<a class="btn ghost" href="' + esc(i.link) +
+            '" target="_blank" rel="noopener">Ansehen</a>' : "") +
+        '</div>' +
+        '<p class="idee-hook">' + esc(i.hook) + '</p>' +
+        '<details class="idee-mehr"><summary>Ganzer Text</summary>' +
+          '<p class="note" style="white-space:pre-wrap">' + esc(i.caption) + '</p>' +
+        '</details>' +
+        '<div class="idee-fuss">' +
+          '<span class="note">Bau mir daraus:</span>' +
+          '<button class="btn ib" data-f="broll">B-Roll</button>' +
+          '<button class="btn ib" data-f="sprech">Sprechreel</button>' +
+          '<button class="btn ib" data-f="karussell">Karussell</button>' +
+          '<span class="idee-stand note"></span>' +
+        '</div>';
+
+      var stelle = k.querySelector(".idee-stand");
+      [].forEach.call(k.querySelectorAll(".ib"), function (b) {
+        b.onclick = function () {
+          if (!db) { toast("Ohne Datenbank kann ich den Auftrag nicht ablegen."); return; }
+          var was = b.getAttribute("data-f");
+          db.collection("bauauftraege").doc("idee-" + i.id + "-" + was).set({
+            quelle: "ideen-extern",
+            format: was,
+            ideeId: i.id,
+            konto: i.konto,
+            link: i.link || "",
+            hook: i.hook,
+            caption: i.caption,
+            faktor: i.faktor,
+            profil: i.profil || "",
+            /* 🚨 Steht im Auftrag, nicht nur in der Doku: uebernommen wird die
+               Machart, nie der Text. */
+            hinweis: "Nur die Machart übernehmen — Frage, Winkel, Aufbau. " +
+                     "Szene, Zahlen und Sprache kommen aus Patricias Leben. " +
+                     "Durch Blacklisten-Prüfung und den letzten Hook-Check.",
+            stand: new Date().toISOString(),
+            erledigt: ""
+          }).then(function () {
+            // Nie „erledigt" melden — nur „notiert".
+            stelle.textContent = "Notiert \u2014 ich bau es beim nächsten Lauf.";
+            toast("Auftrag notiert. Ich melde mich, wenn es steht.");
+          }).catch(function () { toast("Konnte den Auftrag nicht ablegen."); });
+        };
+      });
+      box.appendChild(k);
+    });
   }
 
   /* Reiter „Fertig zum Posten": nur das, was schon steht. */
@@ -10682,6 +10786,7 @@
     else if (activeTab === "aufgaben") renderAufgaben(main);
     else if (activeTab === "ziele") renderZiele(main);
     else if (activeTab === "woche") renderWoche(main);
+    else if (activeTab === "ideenextern") renderIdeenExtern(main);
     else if (activeTab === "fertig") renderFertig(main);
     else if (activeTab === "gepostet") renderGepostet(main);
     else if (activeTab === "zahlen") renderZahlen(main);
@@ -10695,6 +10800,7 @@
   DOC_KEYS.forEach(function (k) { state[k] = lsGet(k, []); });
   freigaben = lsGet("freigaben", {}) || {};
   igZuordnung = lsGet("ig-zuordnung", { zuordnung: {} }) || { zuordnung: {} };
+  ideenExtern = lsGet("ideen-extern", { ideen: [] }) || { ideen: [] };
   Object.assign(settings, lsGet("einstellungen", {}) || {});
   Object.assign(mailings, lsGet("mailings", {}) || {});
   produktdetails = lsGet("produkt-details", {}) || {};
@@ -10806,6 +10912,12 @@
         render();
       }).catch(function () {});
       /* Die Freigabe-Sammlung - bis 24.09.2026 wurde sie nur beschrieben. */
+      db.doc("daten/ideen-extern").onSnapshot(function (snap) {
+        if (!snap.exists) return;
+        ideenExtern = snap.data() || { ideen: [] };
+        lsSet("ideen-extern", ideenExtern);
+        if (activeTab === "ideenextern") render();
+      }, function () {});
       db.doc("daten/gepostet-zuordnung").onSnapshot(function (snap) {
         if (!snap.exists) return;
         igZuordnung = snap.data() || { zuordnung: {} };
