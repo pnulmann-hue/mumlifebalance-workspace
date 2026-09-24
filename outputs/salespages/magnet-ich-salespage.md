@@ -118,10 +118,12 @@ Du beantwortest neun Fragen zu deinem Business, deinem Umfeld und dem, was dich 
 Wir schauen uns deine Ausgangslage an und arbeiten dein Magnet-Thema und deine echte Zielgruppe heraus. Am Ende weisst du, welche deiner Ideen trägt, und wir legen gemeinsam deine drei wichtigsten Aufgaben und deine Zeitfenster für die nächsten Wochen fest.
 
 **Phase 3 · Drei Wochen Begleitung per WhatsApp**
-Du formulierst deine Kernbotschaft, deine Bio und deine ersten ein, zwei Beiträge, und ich schaue mit dir drauf, bis es sitzt. Montag bis Freitag hörst du in der Regel am gleichen Tag von mir.
+Du formulierst deine Kernbotschaft, deine Bio und deine ersten ein, zwei Beiträge, und ich schaue mit dir drauf, bis es sitzt. Dazwischen bekommst du Impulse, Story- und Themenideen, die zu deiner Botschaft passen, und Feedback auf deine Formulierungen, damit sich Unsicherheiten gar nicht erst festsetzen. Montag bis Freitag hörst du in der Regel am gleichen Tag von mir.
 
-**Phase 4 · Der Abschluss-Call**
-Wir halten fest, was steht, und legen deine nächsten Schritte fest, damit du nach den drei Wochen nicht wieder bei null anfängst.
+**Phase 4 · Der Abschluss-Call (60 Minuten)**
+Wir halten fest, was steht — deine Positionierung, deine Kernbotschaft, deine Zielgruppe — und legen deine ersten Umsetzungsschritte für die nächsten 90 Tage fest, damit du nach den drei Wochen nicht wieder bei null anfängst.
+
+**Damit gehst du raus:** dein Positionierungssatz · dein Thema, das dich trägt · deine Zielgruppe, die dich wirklich braucht · deine Bio und erste, stimmige Botschaften · deine Umsetzungsschritte für die nächsten 90 Tage · mehr Mut, Fokus und Sicherheit in deinem Auftreten
 
 ---
 
