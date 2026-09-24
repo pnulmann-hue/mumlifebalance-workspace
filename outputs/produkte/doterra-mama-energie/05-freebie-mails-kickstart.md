@@ -5,6 +5,7 @@ tags: [produkt, doterra]
 # 📧 Die 3 Kickstart-Mails (copy-paste-ready für AC)
 
 **Automation:** „doTERRA · 3-Tage-Kickstart" · **Liste 18** · Trigger Tag `energie-kickstart` (84)
+**Stand:** 2026-09-22 (Anschluss auf die 30-Tage-Energie-Routine umgestellt)
 **Ton:** Freundin am Küchentisch · Schweizer ss · doTERRA-Compliance (kein Heilversprechen, „bei mir war"-Frame, Öl nur Lifestyle) · keine erfundenen Zahlen ausser Patricias echten.
 **Absender:** Patricia · **Timing:** Mail 1 sofort · Mail 2 +24h 07:30 · Mail 3 +48h 07:30
 
@@ -42,9 +43,15 @@ Protein und Ballaststoffe machen das Gegenteil: Sie bremsen den Anstieg ab, dein
 
 So komm ich locker auf meine mindestens 30 Gramm pro Mahlzeit. Und ganz ehrlich: Seit ich das mache, hab ich kein Energietief mehr — und im Seitenwagen ist sogar noch ein bisschen Gewicht gepurzelt, ganz ohne Diät.
 
+**Und weil drei Rezepte schnell durch sind:** Ich hab dir zwölf von meinen Frühstücken aufgeschrieben, die ich wirklich für meine ganze Bande koche. Mit Familienmengen, mit den Gramm Protein pro Portion, und bei jedem steht dabei, was ich bei meinen vier Kindern anders mache, damit sie es essen.
+
+**→ [Hier sind sie](https://mumlifebalance.ch/fruehstuecke)** — kostet nichts, die gehören jetzt dir.
+
 Probier's heute einfach aus und beobachte, wie sich dein Nachmittag anfühlt.
 
 Morgen geht's weiter — mit dem einen Hebel, den fast alle unterschätzen. 💛
+
+*Und falls du jetzt schon weisst, dass du das nicht allein machen willst: Ab dem 10. jeden Monats begleite ich eine kleine Gruppe dreissig Tage lang durch genau diese vier Sachen. Anmeldung immer bis zum Letzten des Vormonats, weil die Nährstoffe vorher bei dir sein müssen. [Hier steht alles dazu.](https://mumlifebalance.ch/energieroutine)*
 
 Alles Liebe,
 Patricia
@@ -69,7 +76,7 @@ Heute geht's um Bewegung. Aber nicht so, wie du vielleicht denkst.
 Ja, ich mach dreimal die Woche ein intensives Krafttraining — weil Muskeln, wie gestern gesagt, mein Energie-Motor sind. Aber das, was **wirklich jeden Tag** den Unterschied macht, ist viel simpler: **Ich geh jeden Tag 8000 Schritte.**
 
 **Warum das so viel bringt:**
-Bewegung baut Stress ab, bringt deinen Kreislauf in Schwung — und sie sorgt dafür, dass du abends tiefer und schneller in den Schlaf findest. Und da sind wir beim Kern der ganzen Sache: Nicht mehr Schlaf-*Stunden* geben dir Energie, sondern *besserer* Schlaf. Bewegung ist einer der einfachsten Wege dahin.
+Bewegung baut Stress ab, bringt deinen Kreislauf in Schwung — und sie sorgt dafür, dass du abends tiefer und schneller in den Schlaf findest. Und da sind wir beim Kern der ganzen Sache: Was dir Energie gibt, ist die Tiefe deines Schlafs. Acht Stunden bringen wenig, wenn sie unruhig sind. Bewegung ist einer der einfachsten Wege dahin.
 
 **Dein Schritt für die nächsten Tage:** Mach mal konstant 8000 Schritte am Tag. Nicht einmal — jeden Tag. Du wirst merken, dass du besser schläfst. Und wenn du sie an der frischen Luft machst, umso besser: Tageslicht bringt zusätzlich deinen Rhythmus in Gang.
 
@@ -115,21 +122,30 @@ Und dann schau morgen früh, wie du aufwachst.
 
 Es braucht keine Radikal-Kur und kein Kopfstellen deines Lebens. Es sind ein paar einfache Anpassungen — anders frühstücken, sich bewegen, abends runterfahren — und die machen zusammen mega viel aus. Das ist das eigentlich Verrückte: wie viel Wirkung in so kleinen Stellschrauben steckt.
 
-Und genau da setz ich mit Mamas in meiner **21-Tage-Energie-Routine** an: Dein Paket kommt nach Hause, du machst 21 Tage lang das, was du hier angefangen hast — und ich begleite dich Schritt für Schritt, bis es keine „Challenge" mehr ist, sondern einfach dein Alltag.
+Genau das machen wir in meiner **30-Tage-Energie-Routine** — nur eben vier Wochen lang und mit mir daneben.
 
-**Dein Energie-Paket** — genau die Sachen, die ich selbst täglich nehme:
-- ✓ VMG+ — deine Mikronährstoff-Basis
-- ✓ PB Assist+ — für deinen Darm
-- ✓ Omega 3 — für den klaren Kopf
-- ✓ ClaryCalm-Roller — mein Wohlfühl-Roller für die Momente, wo als Frau alles zu viel wird
+Du machst dreissig Tage lang das, was du hier angefangen hast: anders frühstücken, dich bewegen, abends runterfahren. Dazu kommen die Nährstoffe, die bei mir den Unterschied gemacht haben. **Das Paket dafür kommt zu dir nach Hause, darum kümmere ich mich.**
 
-**→ [Hol dir dein Energie-Paket](https://doterra.me/b0yKEX)**
+Was drin ist:
 
-Und du bist damit nicht allein: Sobald deine Bestellung da ist, **meld ich mich persönlich bei dir** — und wir richten deinen Start in die 21 Tage gemeinsam ein. Du wirst nie mit einem Paket und einer Anleitung alleingelassen. 🌿
+- ✓ Dein 30-Tage-Plan — was wann dran ist, ohne dass du etwas ausrechnen musst
+- ✓ Meine 30 Proteinfrühstücke, für vier Kinder erprobt
+- ✓ Dein Nährstoff-Paket für die vollen dreissig Tage
+- ✓ Mein Krafttraining — wie ich angefangen habe, ohne Fitnessstudio
+- ✓ Begleitung in der Gruppe und ein Start-Gespräch mit mir
+
+**→ [Schau dir die 30 Tage an](https://mumlifebalance.ch/energieroutine)**
+
+Jede Runde startet am 10. des Monats, und damit dein Paket rechtzeitig bei dir ist, meldest du dich bis Ende des Vormonats an.
+
+Und falls du jetzt denkst, das sei nichts für dich: Auch gut. Die drei Tage gehören dir trotzdem. 🌿
 
 Und ganz egal, wie du dich entscheidest: Ich bin stolz auf dich, dass du drei Tage drangeblieben bist. Das ist mehr, als die meisten tun.
 
-> ✅ **Paket-Link:** https://doterra.me/b0yKEX (doTERRA Shareable-Cart, Paket vorausgefüllt). Vor Launch einmal testen + PV ≥150 prüfen. Siehe [06-produktpaket-21-tage.md](06-produktpaket-21-tage.md).
+> ✅ **Verkaufsseite:** https://mumlifebalance.ch/energieroutine (WP 4120) — **steht aktuell auf Entwurf**, vor dem Versand publizieren und mit `curl -I` prüfen.
+> ✅ **Rezeptseite:** https://mumlifebalance.ch/fruehstuecke (WP 4126) — **steht auf Entwurf**, und das CSS fehlt noch im Customizer (`outputs/produkte/doterra-mama-energie/rezepte/customizer-css.txt`, 3,6 KB). Vor dem Versand publizieren und mit `curl -I` prüfen.
+> 🚨 **Zwölf Frühstücke im Freebie, dreissig im Programm.** Die Zahl in Mail 1 muss zur Seite passen — sonst zählt jemand nach.
+> 🚨 **Kein doterra.me-Warenkorb mehr.** Sie bewertet keinen Warenkorb mehr, sie bucht ein Programm. Das ist der ganze Punkt des Umbaus.
 
 Alles Liebe,
 Patricia

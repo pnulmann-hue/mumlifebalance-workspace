@@ -67,7 +67,60 @@ Bei Patricia wichtig: Sie pflegt einen **ästhetischen Feed** mit Farb-Rotation.
 
 ---
 
-## Reel-Typen — auf Karussell übertragen
+## 🚨 Die vier Typen sind die Liste — und zwar diese (seit 2026-09-19)
+
+**Jedes Karussell ist genau einer dieser vier Typen.** Sie stehen ausführlich in
+`.claude/skills/karussell/SKILL.md`, und das Cockpit kennt exakt diese vier
+Schlüssel. Wer einen anderen Wert schreibt, erzeugt einen stillen Fehler: das
+Auswahlfeld zeigt dann den **falschen** Typ an, und der Hinweistext darunter
+bleibt leer.
+
+| Schlüssel | Typ | Signatur |
+|---|---|---|
+| `listicle` | Listicle | Zahl im Hook, pro Folie **ein** Punkt, Headline **ist** der Punkt |
+| `story` | Storytelling | echte Geschichte in Etappen, jede Folie zieht zur nächsten |
+| `edukativ` | Edukativ | Problem → Schritte → **Zusammenfassung in einem Satz** → CTA |
+| `kontrovers` | Kontroverser Take | provokante These → Argumente → **Nuancierungsfolie (Pflicht)** → CTA |
+
+🚨 **Der Schlüssel heisst `story`, nicht `storytelling`.** Genau daran sind am
+19.09.2026 zwei Karussells hängengeblieben — die Überschrift aus dem Skill wurde
+als Wert übernommen.
+
+🚨 **`kontrast` ist kein Typ.** Ein Vorher-Nachher-Karussell ist eine **Bauweise**,
+kein eigener Typ — gebaut wird es als `edukativ` (wenn die Erkenntnis am Schluss
+in einem Satz steht) oder als `story` (wenn es die eigene Geschichte ist). Die
+sechs Muster weiter unten sind genau das: Bauweisen innerhalb der vier Typen,
+keine zweite Liste.
+
+## 🚨 Funnel-Stufe ist eine Pflicht-Angabe, keine Vorgabe
+
+Jedes Karussell bekommt **TOF**, **MOF** oder **BOF** — bewusst entschieden, nicht
+durchgereicht.
+
+- **TOF** — Reichweite. Kein Angebot, kein Preis, kein Programmname. Soll geteilt werden.
+- **MOF** — Vertrauen. Zeigt, wie sie denkt und arbeitet. Keyword-Aufruf am Schluss.
+- **BOF** — Verkauf gehört nicht in den Feed, sondern in Story und Mail. Angebot und
+  Preis bleiben trotzdem aus den Folien.
+
+🚨 **Wenn eine ganze Woche auf MOF steht, wurde nicht entschieden.** Am 19.09.2026
+standen **alle 12** Karussells auf MOF — damit gab es unter den Karussells keinen
+einzigen Reichweiten-Beitrag.
+
+## 🚨 Erst die Texte freigeben, dann bauen
+
+**Die wichtigste Regel im ganzen Ablauf.** Nie Texte und Folien in einem Rutsch.
+Erst kommen **nur die Texte** — Folie für Folie, dazu Typ, Funnel-Stufe und
+Cover-Farbe. Dann wird gewartet.
+
+Erst wenn Patricia „passt" sagt, wird gebaut. Sitzen die Texte nicht und die
+Folien stehen schon, muss alles noch einmal gerendert werden.
+
+**Gezielt korrigieren statt alles neu:** Passt nur eine Folie nicht, wird **nur
+die eine** geändert — und ausdrücklich dazugesagt, dass der Rest bleibt.
+
+---
+
+## Bauweisen innerhalb der vier Typen
 
 ### 1. Anleitung / How-To (am besten für Saves)
 Hook: „So machst du X in Y Schritten"

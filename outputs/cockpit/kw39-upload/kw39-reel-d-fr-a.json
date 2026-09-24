@@ -1,0 +1,17 @@
+{
+ "name": "A · Fr · Letzter Bestelltag — Sofa",
+ "datum": "2026-09-25",
+ "profil": "doterra",
+ "hook": "Gestern um neun bin ich auf dem Sofa eingeschlafen, obwohl ich mich den ganzen Tag auf den Abend gefreut hatte.",
+ "unter": "",
+ "skript": "SPRECHREEL — Patricia dreht.\n\nSetup: abends, warmes Licht, Wohnzimmer oder Küche. Ruhige Stimme, kein Verkaufston.\nDauer rund 25 Sekunden.\n\n1 HOOK: „Gestern um neun bin ich auf dem Sofa eingeschlafen. Dabei hatte ich mich den ganzen Tag auf diesen Abend gefreut.“\n2: „Den Abend, an dem endlich alle im Bett sind und mal zwei Stunden mir gehören.“\n3: „Und dann bin ich einfach weg. Das war bei mir jahrelang der Normalzustand.“\n4: „Ab Oktober begleite ich vier Wochen lang eine kleine Runde Frauen, bei denen das genauso läuft.“\n5 CTA: „Wer dabei sein will, sagt mir das heute. Danach wird es knapp mit dem Start am ersten Oktober. Kommentier ENERGIE.“",
+ "caption": "Kommentier **ENERGIE**, wenn du bei der Oktober-Runde dabei sein willst — heute ist der letzte Tag, an dem das geht.\n\nDie Frist hat einen banalen Grund: Was du brauchst, muss vor dem ersten Oktober bei dir liegen, und der Versand braucht seine Tage. Deshalb heute.\n\nGestern bin ich um neun auf dem Sofa eingeschlafen, obwohl ich mich den ganzen Tag auf den Abend gefreut hatte. Genau dieser Abend war bei mir jahrelang der Normalzustand, und ich hab ihn für mein Alter gehalten.\n\nVier Wochen, eine kleine Gruppe, und ich bin die ganze Zeit dabei. Wenn du wissen willst, wie das abläuft, schreib mir **ENERGIE** und wir reden in Ruhe darüber.\n\n**ENERGIE** ⬇️\n\n#mamaalltag #perimenopause #mamaleben #energieimalltag #mamasein",
+ "coverhook": "Gestern um neun auf dem Sofa eingeschlafen. Ich hatte mich den ganzen Tag gefreut.",
+ "coverunter": "",
+ "coverfarbe": "creme",
+ "scrim": true,
+ "videoart": "sprech",
+ "textfrei": false,
+ "hinweis": "🎬 DREH NÖTIG. Typ 3 Reel-CTA · LETZTER BESTELLTAG. Dringlichkeit immer mit dem Lieferweg begründen, nie künstlich. ⚠️ active-funnels.json und Monatsplan schreiben „Do 25.9.“ — der 25.9.2026 ist ein Freitag. War Donnerstag gemeint, gehört dieser Beitrag auf den 24.9.",
+ "updatedAt": "2026-09-18T07:00:00.000Z"
+}

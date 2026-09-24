@@ -56,3 +56,4 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 - [[03-hooks-und-captions]]
 - [[README]]
 - [[_INDEX]]
+- [[2026-09-22-zwei-folien-karussell]]

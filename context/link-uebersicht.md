@@ -64,6 +64,7 @@ Die Landingpage war seit dem 8. Juli als leerer Entwurf in WordPress (nur ein Pl
 | Produkt | Preis | Landingpage | ThriveCart | Auslieferung | Telegram | Status |
 |---|---|---|---|---|---|---|
 | **Storyideen für Networkerinnen** (+ Content-Box-Bump 17) | 19 | https://mumlifebalance.ch/storyideen/ | https://mumlifebalance.thrivecart.com/storyideen/ | /_blob/f4e65f7dcf7d82c94c07ca968a83cac3 (PDF, 47 S.) | — | 🟢 200 · Seite WP 4032 (v2 seit 16.09.) |
+| **Startklar** (Instagram-Grundgerüst, 12 Lektionen) | 39 | https://mumlifebalance.ch/startklar/ | https://mumlifebalance.thrivecart.com/startklar/ | Kurs + Werkstatt https://startklar.mumlifebalance.ch | — | 🟢 200 · TC-Produkt 50, Status **live** (geprüft 18.09.) · Landingpage live seit 18.09. (WP 4101) · 🚨 Checkout-Upsell IKM steht auf **97**, Mail 12 pitcht **333** |
 | **Content-Box** (30 Hook-Vorlagen) | 17 | https://mumlifebalance.ch/content-box/ | https://mumlifebalance.thrivecart.com/content-box/ | PDF-Workbook | — | 🟢 200 · WP 3913 · läuft vor allem als Bump |
 | Finde dein Thema als Network-Mama | 39 | https://mumlifebalance.ch/angebote/#positionierung | https://mumlifebalance.thrivecart.com/thema-finden/ | — | — | 🟢 200 · kein eigener Slug — steht auf der Angebote-Seite |
 | Vom Network-Wissen zum eigenen Produkt | 39 | https://mumlifebalance.ch/angebote/#aufbau | https://mumlifebalance.thrivecart.com/eigene-produkterstellung/ | — | https://t.me/+ukSgKKB5hZdiNTQ0 | 🟢 200 · AC-Automationen 48 + 51 |

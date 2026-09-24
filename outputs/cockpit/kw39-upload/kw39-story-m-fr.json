@@ -1,0 +1,59 @@
+{
+ "name": "Fr · Für wen es ist, für wen nicht",
+ "datum": "2026-09-25",
+ "profil": "mentoring",
+ "brand": "mlb_light",
+ "frames": [
+  {
+   "id": "s1",
+   "layout": "hook",
+   "text": "Ich sag dir kurz, für wen das Werkzeug dieser Woche nichts bringt. Spart uns beiden Zeit.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s2",
+   "layout": "text",
+   "text": "Wenn du dein Thema schon hast und nur nicht weisst, wie du es postest: Dann brauchst du das nicht. Dann brauchst du eine Content-Struktur, und das ist etwas anderes.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s3",
+   "layout": "text",
+   "text": "Wenn du gern liest, aber nichts aufschreibst: Dann bringt es dir auch nichts. Es fragt dich, und wenn du nicht antwortest, passiert nichts.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s4",
+   "layout": "text",
+   "text": "Für wen es was bringt: Du bist im Network, du weisst eine Menge, und du hast das Gefühl, das sei alles nichts Besonderes.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s5",
+   "layout": "frage",
+   "text": "Welche der drei bist du?",
+   "cta": "Umfrage",
+   "optA": "Hab mein Thema",
+   "optB": "Weiss viel, halt es für normal"
+  },
+  {
+   "id": "s6",
+   "layout": "cta",
+   "text": "Wenn du die Dritte bist: Link ist oben, fünf Minuten, kostet nichts.",
+   "cta": "mumlifebalance.ch/produkt-ideen-finder/",
+   "optA": "",
+   "optB": ""
+  }
+ ],
+ "textfrei": false,
+ "hinweis": "🟢 Grün + 🔴 Rot · Säule Inspiration · CTA Produkt-Ideen-Finder",
+ "updatedAt": "2026-09-18T07:00:00.000Z"
+}

@@ -9,6 +9,13 @@ tags: [produkt, salespage, mentoring]
 **Ziel-Plattform:** ThriveCart
 **Erstellt:** 2026-08-24
 
+> 🚨 **18.09.2026:** Das Versprechen „fertige Beispiele für jedes Feld" stimmte
+> zunächst nicht — die Werkstatt hatte 13 kurze Hinweise und **ein** Beispiel.
+> Patricias Entscheid: nachbauen statt abschwächen. Seither liegen an **26 Feldern**
+> ausformulierte Beispiele mit Übernehmen-Knopf, alle von derselben erfundenen
+> Person (Sandra, Energie für Mamas ab 35). Damit stimmt der Satz wieder.
+> Draussen bleibt der **Bonus des Monats** — den gibt es nicht.
+
 > ⚠️ **Zwei Stellen, die du selbst füllen musst:** Block 3 und Block 10 sind Testimonial-Blöcke. Für Startklar gibt es noch keine Käuferinnen, also stehen dort deine eigenen Beweise. Sobald die ersten drei Frauen durch sind, frag sie nach einem Satz und tausch die Blöcke aus — echte Kundinnen-Stimmen schlagen jeden Text, den ich schreiben kann.
 
 ---
@@ -39,7 +46,7 @@ ThriveCart-Tipp: Drei Spalten mit Icon, Titel, zwei Zeilen Text
 Jede Lektion ist eine Bildschirmaufnahme von meinem Handy. Du hältst deins daneben und drückst mit. Am Ende ist es gemacht, nicht verstanden.
 
 **✍️ Du weisst, was du schreiben sollst**
-Bio, erster Satz, Folien, Umfrage: Für jedes Feld liegt ein fertiges Beispiel bereit. Du füllst dein Thema ein und passt es an, bis es nach dir klingt.
+Bio, erster Satz, Folien, Umfrage: An jedem Feld liegt ein fertiges Beispiel. Ein Klick setzt es ins Feld, dann machst du deins daraus.
 
 **🔍 Du kriegst Rückmeldung, bevor du postest**
 In deiner Werkstatt tippst du rein, was du sagen willst, und siehst sofort, ob das für deine Wunschkundin funktioniert. Kein Raten, kein Posten ins Blaue.
@@ -241,13 +248,11 @@ ThriveCart-Tipp: Liste mit Häkchen, jede Zeile fett beginnen. Darunter der Prei
 
 ✅ **Deine Startklar-Werkstatt** — 12 Stationen zum Ausfüllen. Du tippst deine Bio, deinen ersten Satz, deine Folien und deine Umfrage hinein und bekommst sofort zurück, ob das für deine Wunschkundin funktioniert. Nicht nur, ob die Form stimmt, auch ob der Inhalt zu deinem Thema passt.
 
-✅ **Fertige Beispiele für jedes Feld** — bei Bio, Hook, Folien und Umfrage liegt jeweils ein ausformulierter Vorschlag bereit. Du füllst dein Thema ein und passt ihn an, bis er nach dir klingt.
+✅ **Ein fertiges Beispiel an jedem Feld** — bei Bio, Hook, Folien, Umfrage und Caption steht ein ausformulierter Vorschlag. Ein Klick setzt ihn ins Feld, dann machst du deins daraus.
 
 ✅ **Dein Bio-Check** — geht deine fertige Bio Zeile für Zeile mit dir durch.
 
 ✅ **Dein Startplan für die erste Woche** — fünf Beiträge, auf feste Tage verteilt. Du musst dir nichts mehr ausdenken.
-
-✅ **Der Bonus des Monats** — wechselt jeden Monat. Aktuell: [hier eintragen]
 
 ✅ **Alle Aktualisierungen** — Instagram baut regelmässig um. Ich nehme betroffene Lektionen neu auf, du bekommst sie ohne Aufpreis.
 
@@ -264,7 +269,7 @@ ThriveCart-Tipp: Farbiger Abschnitt, Preis gross, Button darunter
 
 **39 CHF. Einmalig.**
 
-12 Lektionen · Werkstatt mit 12 Stationen · Bio-Check · Bonus des Monats
+12 Lektionen · Werkstatt mit 12 Stationen · Bio-Check
 
 Kein Abo. Kein Zeitlimit. Du hast den Zugang, solange es den Kurs gibt.
 
@@ -356,7 +361,7 @@ In der anderen nimmst du dir einen Nachmittag, gehst zwölf kurze Lektionen durc
 
 🔘 **Ich mach's — 39 CHF**
 
-*P.S. Jede Woche, in der dein Profil nicht steht, ist eine Woche, in der dich niemand findet — oder in der du gar nicht erst postest, weil es sich unfertig anfühlt. Das ist der eigentliche Preis. Der Bonus des Monats wechselt Anfang [Monat], wer diesen Monat einsteigt, bekommt [aktueller Bonus].*
+*P.S. Jede Woche, in der dein Profil nicht steht, ist eine Woche, in der dich niemand findet — oder in der du gar nicht erst postest, weil es sich unfertig anfühlt. Das ist der eigentliche Preis.*
 
 ---
 

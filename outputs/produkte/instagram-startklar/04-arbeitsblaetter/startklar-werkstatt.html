@@ -11,6 +11,7 @@
   --ok:#2f7d5c; --ok-bg:#e8f2ec; --warn:#b45e12; --warn-bg:#fbf0e2; --stop:#a8332a; --stop-bg:#f8e8e6;
   --schatten:0 1px 2px rgba(22,50,58,.06), 0 8px 24px rgba(22,50,58,.05);
   --radius:10px;
+  --bsp-bg:#f2f7f7; --bsp-linie:#cfe3e4;
   --display:"Philosopher", Georgia, serif;
   --body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
 }
@@ -182,6 +183,25 @@ textarea{resize:vertical; min-height:78px; line-height:1.5}
   .karte{box-shadow:none; border:0}
 }
 @media (prefers-reduced-motion: reduce){ *{transition:none !important} }
+
+/* Beispiel-Kasten unter jedem Feld */
+.beispiel{
+  margin-top:8px; background:var(--bsp-bg); border:1px solid var(--bsp-linie);
+  border-radius:8px; padding:10px 12px;
+}
+.bsp-kopf{
+  font-size:11px; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--petrol); font-weight:700; margin-bottom:5px;
+}
+.bsp-text{
+  font-size:14px; line-height:1.55; color:var(--ink); white-space:pre-wrap;
+}
+.bsp-knopf{
+  margin-top:9px; background:transparent; border:1px solid var(--petrol);
+  color:var(--petrol); border-radius:999px; padding:5px 13px;
+  font:600 13px/1 inherit; cursor:pointer;
+}
+.bsp-knopf:hover{ background:var(--petrol); color:#fff; }
 </style>
 
 <div class="kopf">
@@ -210,7 +230,7 @@ textarea{resize:vertical; min-height:78px; line-height:1.5}
   <button class="knopf stumm" id="leeren">Von vorn</button>
   <span class="zugang" id="zugang" hidden>
     <label for="codefeld">Zugangscode</label>
-    <input type="text" id="codefeld" placeholder="STARTKLAR-..." autocomplete="off">
+    <input type="text" id="codefeld" placeholder="steht im Kurs" autocomplete="off">
   </span>
   <span id="status"></span>
 </div>
@@ -260,7 +280,7 @@ const STATIONEN = [
       "Ich stelle mein bestehendes Profil um und nehme meine Leute mit.",
       "Ich lege ein neues Konto an, weil mein altes zu privat ist."
     ]},
-    {typ:"lang", key:"archiv", titel:"Wenn du umstellst: welche Beiträge archivierst du?", hinweis:"Stichworte reichen. Archivieren ist kein Löschen — die Bilder liegen in einer Schublade, die nur du siehst."}
+    {typ:"lang", key:"archiv", titel:"Wenn du umstellst: welche Beiträge archivierst du?", hinweis:"Stichworte reichen. Archivieren ist kein Löschen — die Bilder liegen in einer Schublade, die nur du siehst.", beispiel:"Die Ferienbilder von 2019, die Fasnachtsfotos und alles, wo meine Kinder gross im Bild sind. Das bleibt alles da, es sieht nur niemand mehr ausser mir."}
   ],
   pruefen(v){
     const r=[];
@@ -282,8 +302,8 @@ const STATIONEN = [
   titel:"Deine zwei Namensfelder",
   lead:"Der Username ist deine Adresse. Das Name-Feld ist dein Suchbegriff. Nur diese beiden durchsucht Instagram — deine Bio nicht.",
   felder:[
-    {typ:"kurz", key:"user", titel:"Dein @username", hinweis:"Kurz, merkbar, ohne Zahlenwüste."},
-    {typ:"kurz", key:"name", titel:"Dein Name-Feld", hinweis:"Dein Name plus wobei du hilfst. Zum Beispiel: Sandra · Energie für Mamas ab 35"}
+    {typ:"kurz", key:"user", titel:"Dein @username", hinweis:"Kurz, merkbar, ohne Zahlenwüste.", beispiel:"sandra.energie"},
+    {typ:"kurz", key:"name", titel:"Dein Name-Feld", hinweis:"Dein Name plus wobei du hilfst. Zum Beispiel: Sandra · Energie für Mamas ab 35", beispiel:"Sandra · Energie für Mamas ab 35"}
   ],
   pruefen(v){
     const r=[];
@@ -313,10 +333,10 @@ const STATIONEN = [
   titel:"Deine Bio in vier Zeilen",
   lead:"Zwei bis drei Sekunden schaut jemand auf dein Profil, bevor er entscheidet. Schreib erst hier, dann tipp es ab.",
   felder:[
-    {typ:"kurz", key:"z1", titel:"Zeile 1 — Wem hilfst du wobei?"},
-    {typ:"kurz", key:"z2", titel:"Zeile 2 — Warum ausgerechnet du?", hinweis:"Deine Erfahrung, eine Zahl, dein Leben."},
-    {typ:"kurz", key:"z3", titel:"Zeile 3 — Was gibt es hier zu holen?"},
-    {typ:"kurz", key:"z4", titel:"Zeile 4 — Was soll sie jetzt tun?", hinweis:"Ein Pfeil nach unten auf deinen Link gehört hierhin."}
+    {typ:"kurz", key:"z1", titel:"Zeile 1 — Wem hilfst du wobei?", beispiel:"Für Mamas ab 35, die abends nur aufs Sofa fallen."},
+    {typ:"kurz", key:"z2", titel:"Zeile 2 — Warum ausgerechnet du?", hinweis:"Deine Erfahrung, eine Zahl, dein Leben.", beispiel:"3 Kinder, war selbst 2 Jahre dauermüde."},
+    {typ:"kurz", key:"z3", titel:"Zeile 3 — Was gibt es hier zu holen?", beispiel:"Dienstags ein Tipp für den Tag."},
+    {typ:"kurz", key:"z4", titel:"Zeile 4 — Was soll sie jetzt tun?", hinweis:"Ein Pfeil nach unten auf deinen Link gehört hierhin.", beispiel:"Hol dir die 5 Morgen-Ideen ↓"}
   ],
   pruefen(v){
     const r=[];
@@ -345,7 +365,7 @@ const STATIONEN = [
   lead:"Die kleinen Kreise unter deiner Bio sind die Stelle, an der jemand nachschaut, ob du echt bist. Fünf Ordner reichen.",
   felder:[
     {typ:"haken", key:"ordner", titel:"Angelegt", optionen:["Über mich","Mein Thema","Feedback","Gratis für dich","Mein Angebot"]},
-    {typ:"kurz", key:"link", titel:"Welcher Link steht in deiner Bio?"}
+    {typ:"kurz", key:"link", titel:"Welcher Link steht in deiner Bio?", beispiel:"sandra-energie.ch/start"}
   ],
   pruefen(v){
     const r=[];
@@ -396,7 +416,7 @@ const STATIONEN = [
       "Ein Link ist eingetragen und funktioniert",
       "Zwei-Faktor ist an"
     ]},
-    {typ:"lang", key:"eindruck", titel:"Was sieht eine Fremde in zwei bis drei Sekunden auf deinem Profil?"}
+    {typ:"lang", key:"eindruck", titel:"Was sieht eine Fremde in zwei bis drei Sekunden auf deinem Profil?", beispiel:"Eine Frau, die müden Mamas hilft, wieder durch den Tag zu kommen. Man sieht ihr Gesicht, man merkt, dass sie selber Kinder hat, und man kann sofort auf einen Link tippen."}
   ],
   pruefen(v){
     const r=[]; const n=(v.check||[]).length;
@@ -415,7 +435,7 @@ const STATIONEN = [
   titel:"Dein erster Satz im Reel",
   lead:"Sieben Sekunden Video — aber entschieden wird in den ersten zwei bis dreien. Schreib hier rein, was du in dieser Zeit sagst.",
   felder:[
-    {typ:"lang", key:"hook", titel:"Dein erster Satz", hinweis:"Genau der, den du ab Sekunde null sagst — in zwei bis drei Sekunden muss er durch sein."}
+    {typ:"lang", key:"hook", titel:"Dein erster Satz", hinweis:"Genau der, den du ab Sekunde null sagst — in zwei bis drei Sekunden muss er durch sein.", beispiel:"3 Jahre lang dachte ich, ich bin einfach kein Morgenmensch."}
   ],
   pruefen(v){
     const h=v.hook||"";
@@ -443,12 +463,12 @@ const STATIONEN = [
   titel:"Deine sechs Folien",
   lead:"Ein Gedanke pro Folie. Wenn du einen zweiten Satz draufschreiben willst, mach eine neue Folie.",
   felder:[
-    {typ:"kurz", key:"f1", titel:"Folie 1 — die Aussage, die hängen bleibt"},
-    {typ:"kurz", key:"f2", titel:"Folie 2"},
-    {typ:"kurz", key:"f3", titel:"Folie 3"},
-    {typ:"kurz", key:"f4", titel:"Folie 4"},
-    {typ:"kurz", key:"f5", titel:"Folie 5"},
-    {typ:"kurz", key:"f6", titel:"Folie 6 — was soll sie jetzt tun?"}
+    {typ:"kurz", key:"f1", titel:"Folie 1 — die Aussage, die hängen bleibt", beispiel:"4 Sachen, die mich morgens fertiggemacht haben"},
+    {typ:"kurz", key:"f2", titel:"Folie 2", beispiel:"1 · Das Handy als Wecker. Ich war wach und im Kopf schon bei anderen Leuten."},
+    {typ:"kurz", key:"f3", titel:"Folie 3", beispiel:"2 · Kaffee auf leeren Magen. Danach war ich hellwach und um zehn am Boden."},
+    {typ:"kurz", key:"f4", titel:"Folie 4", beispiel:"3 · Frühstück im Stehen, während ich Brote geschmiert habe. Gegessen hab ich meistens nichts."},
+    {typ:"kurz", key:"f5", titel:"Folie 5", beispiel:"4 · Der erste Blick auf die Liste. Ich hab den Tag begonnen mit dem Gefühl, schon hinterher zu sein."},
+    {typ:"kurz", key:"f6", titel:"Folie 6 — was soll sie jetzt tun?", beispiel:"Welche davon kennst du? Schreib mir die Nummer, dann erzähl ich dir, was bei mir geholfen hat."}
   ],
   pruefen(v){
     const r=[]; const F=["f1","f2","f3","f4","f5","f6"].map(k=>v[k]||"");
@@ -478,9 +498,9 @@ const STATIONEN = [
   titel:"Deine erste Umfrage",
   lead:"Jeder Tipp auf einen Sticker sagt Instagram, dass deine Story interessant war. Und jede Antwort ist ein Gespräch, das du sonst nie gehabt hättest.",
   felder:[
-    {typ:"kurz", key:"frage", titel:"Deine Umfrage-Frage"},
-    {typ:"kurz", key:"a", titel:"Antwort A"},
-    {typ:"kurz", key:"b", titel:"Antwort B"}
+    {typ:"kurz", key:"frage", titel:"Deine Umfrage-Frage", beispiel:"Wie wachst du morgens auf?"},
+    {typ:"kurz", key:"a", titel:"Antwort A", beispiel:"Direkt hellwach"},
+    {typ:"kurz", key:"b", titel:"Antwort B", beispiel:"Brauch erst mal zwanzig Minuten"}
   ],
   pruefen(v){
     const r=[];
@@ -502,7 +522,7 @@ const STATIONEN = [
   titel:"Der Text unter deinem Beitrag",
   lead:"Nur die ersten ein bis zwei Zeilen werden angezeigt. Alles danach liest nur, wer auf „mehr“ tippt.",
   felder:[
-    {typ:"lang", key:"text", titel:"Deine Caption", hinweis:"Ruhig komplett — Hashtags ans Ende."}
+    {typ:"lang", key:"text", titel:"Deine Caption", hinweis:"Ruhig komplett — Hashtags ans Ende.", beispiel:"Ich hab drei Jahre lang gedacht, ich bin einfach kein Morgenmensch.\n\nDann hab ich gemerkt, dass es gar nicht am Aufstehen lag, sondern an den ersten zwanzig Minuten danach. Die hab ich nämlich jeden Tag gleich verbracht: Handy, Kaffee, Liste. In dieser Reihenfolge.\n\nSeit ich das umgedreht habe, ist mein Nachmittag ein anderer. Nicht weil ich früher aufstehe, sondern weil ich anders anfange.\n\nWenn du das kennst, schreib mir MORGEN in die Kommentare, dann schick ich dir die fünf Ideen, die bei mir geblieben sind.\n\n#mamaalltag #energieimalltag #mamasab35 #morgenroutine #dreifachmama"}
   ],
   pruefen(v){
     const t=v.text||"";
@@ -538,7 +558,7 @@ const STATIONEN = [
       "Ich schreibe keine Fremden ungefragt an",
       "Ich mache keine Aussagen über Wirkung oder über Verdienst"
     ]},
-    {typ:"kurz", key:"richtlinien", titel:"Wo stehen die Richtlinien deiner Firma?", hinweis:"Link oder Ordner. Einmal lesen dauert zwanzig Minuten und erspart dir viel."}
+    {typ:"kurz", key:"richtlinien", titel:"Wo stehen die Richtlinien deiner Firma?", hinweis:"Link oder Ordner. Einmal lesen dauert zwanzig Minuten und erspart dir viel.", beispiel:"Im Backoffice unter Downloads → Richtlinien Social Media (PDF)"}
   ],
   pruefen(v){
     const r=[]; const n=(v.fallen||[]).length;
@@ -556,11 +576,11 @@ const STATIONEN = [
   titel:"Deine ersten fünf Beiträge",
   lead:"Damit du am Montag nicht vor dem leeren Handy sitzt, planen wir die erste Woche jetzt.",
   felder:[
-    {typ:"kurz", key:"p1", titel:"1. Wer bist du", hinweis:"Reel, sieben Sekunden, dein Gesicht."},
-    {typ:"kurz", key:"p2", titel:"2. Warum dieses Thema", hinweis:"Dein Wendepunkt, ehrlich und kurz."},
-    {typ:"kurz", key:"p3", titel:"3. Ein Tipp, der sofort hilft", hinweis:"Karussell."},
-    {typ:"kurz", key:"p4", titel:"4. Ein Blick in deinen Alltag", hinweis:"Reel, ungeschminkt."},
-    {typ:"kurz", key:"p5", titel:"5. Wobei du hilfst", hinweis:"Karussell mit Einladung zum Schreiben."}
+    {typ:"kurz", key:"p1", titel:"1. Wer bist du", hinweis:"Reel, sieben Sekunden, dein Gesicht.", beispiel:"Ich bin Sandra, 3 Kinder, und ich hab 2 Jahre gebraucht, um wieder durch den Tag zu kommen."},
+    {typ:"kurz", key:"p2", titel:"2. Warum dieses Thema", hinweis:"Dein Wendepunkt, ehrlich und kurz.", beispiel:"Der Nachmittag, an dem ich im Auto sass und einfach nicht mehr aussteigen wollte."},
+    {typ:"kurz", key:"p3", titel:"3. Ein Tipp, der sofort hilft", hinweis:"Karussell.", beispiel:"3 Sachen, die ich morgens geändert hab — die dritte hat am meisten gebracht."},
+    {typ:"kurz", key:"p4", titel:"4. Ein Blick in deinen Alltag", hinweis:"Reel, ungeschminkt.", beispiel:"Dienstag, 7:40 Uhr: Znüni schmieren, Schuhe suchen — und ich hab trotzdem gefrühstückt."},
+    {typ:"kurz", key:"p5", titel:"5. Wobei du hilfst", hinweis:"Karussell mit Einladung zum Schreiben.", beispiel:"Was ich Mamas antworte, die sagen „ich bin einfach nur noch müde\". Schreib mir MORGEN, dann schick ich dir meine 5 Ideen."}
   ],
   pruefen(v){
     const P=["p1","p2","p3","p4","p5"].map(k=>(v[k]||"").trim());
@@ -712,6 +732,30 @@ function feldBauen(st,f,v){
   el.value = v[f.key]||"";
   el.addEventListener("input",()=>{ v[f.key]=el.value; sichern(); railBauen(); });
   l.appendChild(el);
+
+  // Beispiel: zeigt, wie es aussehen kann, und setzt es auf Wunsch ins Feld.
+  // Bewusst NICHT als placeholder — der verschwindet beim Tippen und laesst
+  // sich nicht kopieren, genau dann wenn man ihn braucht.
+  if(f.beispiel){
+    const bx=document.createElement("div"); bx.className="beispiel";
+    const kopf=document.createElement("div"); kopf.className="bsp-kopf";
+    kopf.textContent="So macht es Sandra";
+    const txt=document.createElement("div"); txt.className="bsp-text";
+    txt.textContent=f.beispiel;
+    const knopf=document.createElement("button");
+    knopf.type="button"; knopf.className="bsp-knopf";
+    knopf.textContent="Als Start übernehmen";
+    knopf.addEventListener("click",()=>{
+      // Schon Geschriebenes nie stillschweigend ueberschreiben.
+      if((el.value||"").trim() && !confirm("Du hast hier schon etwas stehen. Soll das Beispiel es ersetzen?")) return;
+      el.value=f.beispiel; v[f.key]=f.beispiel; sichern(); railBauen();
+      el.focus();
+      knopf.textContent="Drin — jetzt deins draus machen";
+      setTimeout(()=>{ knopf.textContent="Als Start übernehmen"; }, 2600);
+    });
+    bx.append(kopf, txt, knopf);
+    l.appendChild(bx);
+  }
   return l;
 }
 

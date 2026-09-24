@@ -8,14 +8,26 @@ Gesichert aus der Cockpit-Datenbank (Sammlung `reels`). **Die Datenbank
 bleibt die Arbeitsfassung** — wer hier etwas aendert, aendert nichts im
 Cockpit. Diese Datei ist die Sicherung und die Lesefassung.
 
-**22 Reels.**
+**36 Reels.**
 
-🎬 **Video vorhanden: 4 von 22.** Bei allen anderen fehlt das Rohmaterial — das ist Drehen, nicht Bauen.
+🎬 **Video vorhanden: 16 von 36.** Bei allen anderen fehlt das Rohmaterial — das ist Drehen, nicht Bauen.
 
-- B · Mo · Mehr arbeiten hätte mein Network nicht gerettet → `reel-kw38-mo.mp4`
+- B · Di · Magnesium und trotzdem wach → `magnesium.mp4`
 - A · Di · Das höfliche Nicken → `reel-di-a.mp4`
 - KW38 Mi · 3 Wege ohne Namensliste (LEAD · STANDBEIN) → `kw38-mi-3-wege-STANDBEIN.mp4`
+- B · Fr · Zwei Arten von müde → `kw38-d-fr-b.mp4`
 - KW38 Fr · POV Montag ins Büro (LEAD · STANDBEIN) → `kw38-fr-pov-buero-STANDBEIN.mp4`
+- B · Mo · Mehr arbeiten hätte mein Network nicht gerettet → `reel-kw38-mo.mp4`
+- A · Mo · Um drei wach → `/_blob/aebcaf7100cf4c9455bc628a35a185e1`
+- B · Mo · Halb vier → `/_blob/125c4e4cce671b48a1bb2ee41f7b0e3f`
+- A · Mo · Drei Teamcalls → `/_blob/b86f90efbf34e67c64e280b08acb273b`
+- B · Mo · Warum der Anfang → `/_blob/0bf2733055a9493f0d41eecc5a10e58e`
+- A · Di · Nachmittagstief → `/_blob/04915444a85b9994869fa9a4ce42aafb`
+- B · Di · Acht Stunden → `/_blob/234fb0baa056862ccd89af86edcf47e1`
+- A · Mi · Das wird schon wieder → `/_blob/aff9b589e34db4600ce8d7c108c9e784`
+- B · Mi · Die dritte Apotheken-Tüte → `/_blob/c227acf35d71c32dbeced5c76d570c1d`
+- A · Mi · Montage zählen → `/_blob/93c05e0c0758d45950b3c8132d35b1a7`
+- B · Mi · Nichts mehr verkaufen → `/_blob/107512800fd810372de270bc18cb7c2e`
 
 ---
 
@@ -45,9 +57,12 @@ SETTING: Flur oder Küche, morgens, Chaos im Bild erwünscht.
 
 **Caption**
 
+Folge mir, wenn du dich als Mama nicht mehr ausgeliefert fühlen willst.
+Speicher dir das für den nächsten Morgen, an dem es wieder kippt.
+
 Sieben Uhr vierzig, und ich hab geschrien. Wegen Schuhen.
 
-Zwei Minuten später stand ich in der leeren Wohnung und hab gedacht: Das war nicht wegen der Schuhe. Das war, weil ich seit halb sieben im roten Bereich unterwegs war und es selber nicht gemerkt hab.
+Zwei Minuten später stand ich in der leeren Wohnung und hab gedacht: Das hatte mit den Schuhen wenig zu tun. Ich war seit halb sieben im roten Bereich unterwegs und hab es selber nicht gemerkt.
 
 Bei mir war der Morgen nie laut, weil die Kinder laut waren. Er war laut, weil in mir nichts mehr Platz hatte.
 
@@ -82,9 +97,12 @@ Kein Schnitt, kein Zoom, keine Untertitel.
 
 **Caption**
 
+Folge mir, wenn du wieder das Gefühl haben willst, dass dein Tag dir gehört.
+Speicher das für den nächsten Moment, in dem du sitzen bleibst.
+
 Gestern bin ich im Auto sitzen geblieben, nachdem ich längst angekommen war.
 
-Nicht weil etwas war. Sondern weil das die einzigen zwei Minuten am Tag waren, in denen niemand etwas von mir wollte.
+Es war nichts passiert. Das waren einfach die einzigen zwei Minuten am Tag, in denen niemand etwas von mir wollte.
 
 Ich hab lange gedacht, das sei Faulheit. Heute weiss ich, dass das mein Körper war, der sich genommen hat, was ich ihm sonst nirgends gebe.
 
@@ -146,7 +164,7 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 hab ich mein Network im Hybrid
 
 ## C · Mo · Finde dein Thema mit mir — in zwanzig Minuten
 
-*2026-09-14 · Look mlb_dark* · `kw38-reel-mo-c`
+*2026-09-14 · Mentoring · Look mlb_dark* · `kw38-reel-mo-c`
 
 **Hook**
 
@@ -204,115 +222,6 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 hab ich mein Network im Hybrid
 #mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #nebenbeigeldverdienen #mamaalltag
 
 
-
----
-
-## B · Mo · Mehr arbeiten hätte mein Network nicht gerettet
-
-*2026-09-14 · Mentoring* · `reel-kw38-mo`
-
-**Hook**
-
-In meinem ersten Network war zwei Jahre lang mein Gedanke: einfach mehr arbeiten, dann kommt es irgendwann.
-
-
-**Unterzeile**
-
-Das Problem war nie die Menge.
-
-
-**Sprechskript**
-
-0-3  Zwei Jahre lang war meine einzige Idee: einfach mehr arbeiten, dann reicht es schon.
-3-9  Mehr Stunden. Mehr Abende, an denen ich noch am Handy war. Und ehrlich gesagt war ich da schon müde.
-9-16  Was mir nie in den Sinn gekommen ist: Das Problem war nicht, wie viel ich mache. Das Problem war, woran mein Einkommen hängt.
-16-24  Ich hab dann nicht mehr gearbeitet. Ich hab etwas danebengestellt, das mir gehört.
-24-30  Wenn du gerade ausrechnest, wie viele Stunden du noch dranhängen müsstest — rechne lieber aus, woran dein Geld hängt.
-
-SETTING: candid, Küche oder Auto, Tageslicht, nicht posiert.
-EINBLENDUNG: klein oben „mehr arbeiten", gross unten REICHT NICHT, startet auf dem Wort „reicht", grosses Wort hinter Patricia, Auftritt links, Sound dumpfer Pop.
-UNTERTITEL wortgenau, aktives Wort orange.
-ZOOM: langsame Fahrt hinein auf „Das Problem war, woran mein Einkommen hängt".
-
-
-**Caption**
-
-Mehr arbeiten hätte mein Network nicht gerettet.
-
-In meinem ersten Network war zwei Jahre lang mein Gedanke: einfach mehr arbeiten, dann kommt es irgendwann. Mehr Stunden, mehr Abende mit Produktpräsentationen oder am Handy. Und ehrlich gesagt war ich da schon ziemlich müde.
-
-Was mir lange nicht in den Sinn gekommen ist: Das Problem war gar nicht, wie viel ich mache. Das Problem war, woran mein Einkommen hängt. Ich war völlig abhängig von Produktpräsentationen, von Einschreibungen, vom Teamaufbau.
-
-2023 bin ich neu gestartet. Und ich hab mein zweites Business nicht so aufgebaut, dass ich mehr arbeite, sondern so, dass mir etwas allein gehört.
-
-Wenn du gerade ausrechnest, wie viele Stunden du noch reinstecken müsstest: Kommentier STANDBEIN, dann schick ich dir das Werkzeug, mit dem ich damals angefangen hab.
-
-Falls du grad denkst: oh, cooler Ansatz — mal was anderes, als die 100-Personen-Liste abzutelefonieren — dann folg mir. Hier gibt's Klartext zum Businessaufbau als Mama im Network.
-
-Hi, ich bin Patricia, Mama von vier Kindern. 2023 hab ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Insta sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst, und wie du das Ganze in deinen Mama-Alltag packst.
-
-#mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #nebenbeigeldverdienen #mamaalltag
-
-
-**Hinweis**
-
-✅ VIDEO FERTIG — 47 s, zwei Positionen, stehender Hook ab Bild null, Bio-Wechsel ab Sek. 26.
-
-⚠️ Das Thema (Mindset übers Business-Aufbauen) steht auf der roten Liste — im Feed getestet, 106 Views. Für kalte Reichweite schwach. Als Keyword-Beitrag an eine warme Zielgruppe in Ordnung. Deshalb liegt es als B, nicht als A. Wenn du Zeit hast, film lieber Variante A.
-
-
-**Video:** `reel-kw38-mo.mp4` · /_blob/32bdfe2332722e2d6348b4af097ac1fa
-
----
-
-## A · Di · Das höfliche Nicken
-
-*2026-09-15 · Mentoring* · `kw38-reel-di-a`
-
-**Hook**
-
-Du erzählst, dass du im Network bist. Und dann kommt dieses höfliche Nicken.
-
-
-**Unterzeile**
-
-Niemand fragt nach.
-
-
-**Sprechskript**
-
-B-ROLL, ein Clip, ungeschnitten, rund 8 Sekunden.
-CLIP: du unterwegs, im Auto, beim Einkaufen — Alltag, Bewegung.
-TEXT: der ganze Hook als EIN Block ab Bild null, helle Schrift, links, ohne Kasten, unten links.
-Kein Schnitt, kein Zoom, keine Untertitel.
-Der ganze Inhalt steht in der Caption.
-
-
-**Caption**
-
-Du erzählst, dass du im Network bist, und dann kommt dieses höfliche Nicken. Niemand fragt nach.
-
-Ich hab das lange als Urteil gelesen. Heute weiss ich, dass die meisten einfach nicht wissen, was sie fragen sollen — weil sie keine Ahnung haben, was man da eigentlich tut.
-
-Was mir geholfen hat: aufhören zu erklären, was ich mache. Stattdessen erzählen, wem ich womit helfe. Seitdem kommen Rückfragen.
-
-Wann hast du zuletzt dieses Nicken bekommen?
-
-Falls du grad denkst: oh, cooler Ansatz — mal was anderes, als die 100-Personen-Liste abzutelefonieren — dann folg mir. Hier gibt's Klartext zum Businessaufbau als Mama im Network.
-
-Hi, ich bin Patricia, Mama von vier Kindern. 2023 hab ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Insta sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst, und wie du das Ganze in deinen Mama-Alltag packst.
-
-#mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #nebenbeigeldverdienen #mamaalltag
-
-
-**Hinweis**
-
-✅ VIDEO FERTIG — 8 s B-Roll: ein Clip, ganzer Hook ab Bild null, Creme, ohne Kasten, weicher Verlauf darunter. Kein Schnitt, kein Zoom, keine Untertitel.
-
-Schriftgrösse 64, Zeilenabstand 4,4 Prozent, rund 10 Prozent Rand links und rechts — bei 78 lief die längste Zeile bis an den Bildrand.
-
-
-**Video:** `reel-di-a.mp4` · /_blob/0e3f7589723cfefb4788744a8be70c15
 
 ---
 
@@ -437,6 +346,9 @@ Drei Dinge, die bei mir wirklich runterfahren.
 
 **Caption**
 
+Folge mir, wenn du abends wieder ankommen willst, statt nur wegzuschalten.
+Speicher dir die drei Punkte, bevor du weiterscrollst.
+
 Ich hab jahrelang gedacht, ich erhol mich abends. Dabei hab ich mich nur abgelenkt.
 
 Ablenkung hört in dem Moment auf zu wirken, in dem der Bildschirm ausgeht. Erholung wirkt noch, wenn du längst im Bett liegst.
@@ -477,6 +389,9 @@ TEXT: ganzer Hook als EIN Block ab Bild null.
 
 **Caption**
 
+Folge mir, wenn du verstehen willst, was mit deinem Körper gerade los ist.
+Schick das einer Freundin, die auch um drei wach liegt.
+
 Magnesium, früher ins Bett, weniger Kaffee. Und trotzdem liegst du um drei wach.
 
 Ich hab alle drei jahrelang gemacht und mich gefragt, was mit mir nicht stimmt. Einschlafen ging ja. Durchschlafen nicht.
@@ -490,8 +405,59 @@ Kommentier ENERGIE, dann schick ich dir, worauf ich seitdem achte.
 
 **Hinweis**
 
-⚠️ VIDEO FEHLT. Typ 2 · Job A · Keyword ENERGIE
+✅ B-ROLL FERTIG (16.09.2026) — 5,4 s, 1080×1920, ohne Ton. Clip aus deinem Material (Diffusor am Abend), Hook als ein Textblock in der Mitte, keine Produktflaschen im Bild. 🔊 Musik legst du in der Instagram-App drauf — deshalb geht dieser Beitrag NICHT über Blotato.
 
+
+**Video:** `magnesium.mp4` · /_blob/b18c63f00dee0a1b8b8108c85923ca6a
+
+---
+
+## A · Di · Das höfliche Nicken
+
+*2026-09-16 · Mentoring · Look mlb_dark* · `kw38-reel-di-a`
+
+**Hook**
+
+Du erzählst, dass du im Network bist. Und dann kommt dieses höfliche Nicken.
+
+
+**Unterzeile**
+
+Niemand fragt nach.
+
+
+**Sprechskript**
+
+B-ROLL, ein Clip, ungeschnitten, rund 8 Sekunden.
+CLIP: du unterwegs, im Auto, beim Einkaufen — Alltag, Bewegung.
+TEXT: der ganze Hook als EIN Block ab Bild null, helle Schrift, links, ohne Kasten, unten links.
+Kein Schnitt, kein Zoom, keine Untertitel.
+Der ganze Inhalt steht in der Caption.
+
+
+**Caption**
+
+Du erzählst, dass du im Network bist, und dann kommt dieses höfliche Nicken. Niemand fragt nach.
+
+Ich hab das lange als Urteil gelesen. Heute weiss ich, dass die meisten einfach nicht wissen, was sie fragen sollen — weil sie keine Ahnung haben, was man da eigentlich tut.
+
+Was mir geholfen hat: aufhören zu erklären, was ich mache. Stattdessen erzählen, wem ich womit helfe. Seitdem kommen Rückfragen.
+
+Wann hast du zuletzt dieses Nicken bekommen?
+
+Falls du grad denkst: oh, cooler Ansatz — mal was anderes, als die 100-Personen-Liste abzutelefonieren — dann folg mir. Hier gibt's Klartext zum Businessaufbau als Mama im Network.
+
+Hi, ich bin Patricia, Mama von vier Kindern. 2023 hab ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Insta sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst, und wie du das Ganze in deinen Mama-Alltag packst.
+
+#mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #nebenbeigeldverdienen #mamaalltag
+
+
+**Hinweis**
+
+✅ Gepostet am 16.09.2026, von Hand über die Instagram-App. Video heruntergeladen, Cover im Cockpit gebaut (Unifarbe Dunkelblau, Text auf 38 %), Caption kopiert. Erster Beitrag, der die ganze Kette durchlaufen hat. Blotato war nicht beteiligt.
+
+
+**Video:** `reel-di-a.mp4` · /_blob/0e3f7589723cfefb4788744a8be70c15
 
 ---
 
@@ -512,6 +478,9 @@ Hook ab Bild null im Bild UND gesprochen.
 
 
 **Caption**
+
+Folge mir, wenn du dich nicht damit abfinden willst, dass es jetzt halt so ist.
+Speicher dir das für das nächste Mal, wenn jemand diesen Satz sagt.
 
 „Das ist halt das Alter.“ Der Satz hat mich Jahre gekostet.
 
@@ -551,9 +520,12 @@ Hook ab Bild null im Bild UND gesprochen.
 
 **Caption**
 
+Folge mir, wenn du dir selber wieder glauben willst, auch wenn ein Blatt Papier etwas anderes sagt.
+Schick das einer Frau, die gerade dasselbe hört.
+
 Mein Arzt sagte, meine Werte seien normal. Ich sass danach im Auto und hab geheult.
 
-Nicht weil ich krank sein wollte. Sondern weil ich gehofft hatte, dass irgendwas rauskommt, das erklärt, warum ich mich seit Monaten fühl wie durch Watte.
+Ich wollte ja nicht krank sein. Ich hatte gehofft, dass irgendwas rauskommt, das erklärt, warum ich mich seit Monaten fühl wie durch Watte.
 
 Normal heisst ja nur: nicht auffällig genug für ein Medikament. Es heisst nicht, dass es dir gut geht.
 
@@ -573,7 +545,7 @@ Kommentier ENERGIE, wenn du das kennst — dann schick ich dir, wo ich angefange
 
 ## KW38 Mi · 3 Wege ohne Namensliste (LEAD · STANDBEIN)
 
-*2026-09-16 · Look mlb_dark* · `reel-kw38-mi`
+*2026-09-16 · Mentoring · Look mlb_dark* · `reel-kw38-mi`
 
 **Hook**
 
@@ -706,7 +678,7 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 hab ich mein Network im Hybrid
 
 ## KW38 Do · Die Phase, über die keiner redet
 
-*2026-09-17 · Look mlb_dark* · `reel-kw38-do`
+*2026-09-17 · Mentoring · Look mlb_dark* · `reel-kw38-do`
 
 **Hook**
 
@@ -735,13 +707,15 @@ Am Anfang bist du die Neue. Da gibt es Willkommensnachrichten, da fragt dich jem
 
 Und dann kommt der Punkt, wo du nicht mehr neu bist. Wo niemand mehr fragt. Wo du deinen Kalender trotzdem vollmachst und am Monatsende trotzdem dieselbe Zahl siehst.
 
-Das ist die Phase, in der die meisten aufhören. Nicht weil sie faul sind, sondern weil sie ehrlich nicht wissen, an welcher Schraube sie noch drehen sollen.
+Das ist die Phase, in der die meisten aufhören. Die wenigsten davon sind faul. Sie wissen einfach nicht mehr, an welcher Schraube sie überhaupt noch drehen sollen.
 
-Ich sag dir, was bei mir die Schraube war, und es war nicht mehr Fleiss: Es war die Frage, ob überhaupt irgendetwas an meinem Einkommen nur an mir hängt. Die Antwort war damals nein.
+Bei mir war die Schraube eine Frage: Hängt überhaupt irgendetwas an meinem Einkommen nur an mir? Die Antwort war damals nein. Mit mehr Fleiss hätte sich daran nichts geändert.
 
 Also hab ich angefangen, ein Stück davon selber in die Hand zu nehmen. Nicht statt Network. Daneben.
 
 Wenn du gerade in genau dieser Phase steckst: Kommentier STANDBEIN, dann schick ich dir den ersten Schritt, mit dem ich damals angefangen hab.
+
+Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Instagram sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst und wie du das ganze Business in deinen Mama-Alltag packst.
 
 #mamabusiness #networkmarketingmama #nebenbeigeldverdienen #onlinebusinessmama #mamaalltag
 
@@ -772,6 +746,9 @@ Drei Minuten, die den Abend drehen.
 
 
 **Caption**
+
+Folge mir, wenn dein Abend nicht mehr ohne dich stattfinden soll.
+Speicher dir den Übergang, bevor du ihn wieder verpasst.
 
 Es gibt drei Momente am Tag, die bei mir entscheiden, ob abends noch was geht. Der wichtigste ist der, den keiner sieht.
 
@@ -809,11 +786,14 @@ Hook ab Bild null als ganzer Satz.
 
 **Caption**
 
-Es gibt zwei Arten von müde. Die eine geht nach einer Nacht weg. Die andere nicht.
+Folge mir, wenn du wissen willst, warum Schlafen allein nichts ändert.
+Schick das einer Mama, die auch nach acht Stunden müde aufsteht.
 
-Die zweite kenn ich gut. Da schläfst du acht Stunden und stehst auf, als hättest du drei gehabt. Und dann sagt dir jemand, du sollst halt mal früher ins Bett.
+Es gibt zwei Arten von müde, und die eine geht nach einer Nacht nicht weg.
 
-Was mir geholfen hat, war nicht mehr Schlaf. Es war zu verstehen, dass mein Körper in einer Phase steckt, in der sich einiges verschiebt — und dass es Sachen gibt, die man da tun kann.
+Die kenn ich gut. Da schläfst du acht Stunden und stehst auf, als hättest du drei gehabt. Und dann sagt dir jemand, du sollst halt mal früher ins Bett.
+
+Geholfen hat mir zu verstehen, dass mein Körper in einer Phase steckt, in der sich einiges verschiebt — und dass es Sachen gibt, die man da tun kann. Mehr Schlaf allein hat es jedenfalls nicht gebracht.
 
 Kommentier ENERGIE, wenn du die zweite Art kennst.
 
@@ -822,8 +802,10 @@ Kommentier ENERGIE, wenn du die zweite Art kennst.
 
 **Hinweis**
 
-⚠️ VIDEO FEHLT. Typ 3 · Job D · Keyword ENERGIE
+B-Roll gebaut 18.09. — Kaffeemaschine am Morgen, 7 Sek, Hook ab Bild null. Datum liegt in der Vergangenheit: neu setzen, bevor du freigibst.
 
+
+**Video:** `kw38-d-fr-b.mp4` · /_blob/4cc5bc58ecf144b20d563a3bbee20816
 
 ---
 
@@ -852,6 +834,9 @@ CANDID TALKING-HEAD, unter 25 Sekunden. Hook ab Bild null.
 
 
 **Caption**
+
+Folge mir, wenn du im Oktober anders in den Winter gehen willst als letztes Jahr.
+Speicher dir das, damit du die Frist nicht verpasst.
 
 Ab Oktober mache ich etwas, das es bei mir noch nie gab.
 
@@ -974,7 +959,7 @@ ihren Beiträgen mit 3 Kommentaren und diesem mit 109.
 
 ## KW38 Fr · POV Montag ins Büro (LEAD · STANDBEIN)
 
-*2026-09-18 · Look mlb_dark* · `reel-kw38-fr`
+*2026-09-18 · Mentoring · Look mlb_dark* · `reel-kw38-fr`
 
 **Hook**
 
@@ -1001,7 +986,7 @@ Und am Montag stehst du trotzdem auf und fährst in einen Job, den du eigentlich
 
 Das ist der Punkt, an dem die meisten anfangen, an sich zu zweifeln. Dabei ist das kein Fleissproblem. Es ist eine Frage der Struktur: dein Einkommen hängt daran, dass andere Leute etwas tun, und das dauert eben.
 
-Was den Unterschied gemacht hat, war nicht mehr Einsatz. Es war ein zweites Bein daneben — etwas Eigenes, das mir gehört und das auch dann verkauft, wenn ich gerade nicht kann.
+Was den Unterschied gemacht hat, war ein zweites Bein daneben — etwas Eigenes, das mir gehört und das auch dann verkauft, wenn ich gerade nicht kann. Mehr Einsatz hätte daran nichts geändert.
 
 Aufgegeben hab ich dafür nichts. Mein Network läuft bis heute.
 
@@ -1014,6 +999,720 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 
 **Video:** `kw38-fr-pov-buero-STANDBEIN.mp4` · /_blob/a8e80b7a290ec41a824009c337c34997
+
+---
+
+## B · Mo · Mehr arbeiten hätte mein Network nicht gerettet
+
+*2026-09-18 · Mentoring · Look mlb_dark* · `reel-kw38-mo`
+
+**Hook**
+
+In meinem ersten Network war zwei Jahre lang mein Gedanke: einfach mehr arbeiten, dann kommt es irgendwann.
+
+
+**Unterzeile**
+
+Das Problem war nie die Menge.
+
+
+**Sprechskript**
+
+0-3  Zwei Jahre lang war meine einzige Idee: einfach mehr arbeiten, dann reicht es schon.
+3-9  Mehr Stunden. Mehr Abende, an denen ich noch am Handy war. Und ehrlich gesagt war ich da schon müde.
+9-16  Was mir nie in den Sinn gekommen ist: Das Problem war nicht, wie viel ich mache. Das Problem war, woran mein Einkommen hängt.
+16-24  Ich hab dann nicht mehr gearbeitet. Ich hab etwas danebengestellt, das mir gehört.
+24-30  Wenn du gerade ausrechnest, wie viele Stunden du noch dranhängen müsstest — rechne lieber aus, woran dein Geld hängt.
+
+SETTING: candid, Küche oder Auto, Tageslicht, nicht posiert.
+EINBLENDUNG: klein oben „mehr arbeiten", gross unten REICHT NICHT, startet auf dem Wort „reicht", grosses Wort hinter Patricia, Auftritt links, Sound dumpfer Pop.
+UNTERTITEL wortgenau, aktives Wort orange.
+ZOOM: langsame Fahrt hinein auf „Das Problem war, woran mein Einkommen hängt".
+
+
+**Caption**
+
+Mehr arbeiten hätte mein Network nicht gerettet.
+
+In meinem ersten Network war zwei Jahre lang mein Gedanke: einfach mehr arbeiten, dann kommt es irgendwann. Mehr Stunden, mehr Abende mit Produktpräsentationen oder am Handy. Und ehrlich gesagt war ich da schon ziemlich müde.
+
+Was mir lange nicht in den Sinn gekommen ist: Das Problem war gar nicht, wie viel ich mache. Das Problem war, woran mein Einkommen hängt. Ich war völlig abhängig von Produktpräsentationen, von Einschreibungen, vom Teamaufbau.
+
+2023 bin ich neu gestartet. Und ich hab mein zweites Business diesmal so aufgebaut, dass mir etwas allein gehört.
+
+Wenn du gerade ausrechnest, wie viele Stunden du noch reinstecken müsstest: Kommentier STANDBEIN, dann schick ich dir das Werkzeug, mit dem ich damals angefangen hab.
+
+Falls du grad denkst: oh, cooler Ansatz — mal was anderes, als die 100-Personen-Liste abzutelefonieren — dann folg mir. Hier gibt's Klartext zum Businessaufbau als Mama im Network.
+
+Hi, ich bin Patricia, Mama von vier Kindern. 2023 hab ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Insta sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst, und wie du das Ganze in deinen Mama-Alltag packst.
+
+#mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #nebenbeigeldverdienen #mamaalltag
+
+
+
+**Video:** `reel-kw38-mo.mp4` · /_blob/32bdfe2332722e2d6348b4af097ac1fa
+
+---
+
+## A · Mo · Um drei wach
+
+*2026-09-21 · doTERRA* · `kw39-reel-d-mo-a`
+
+**Hook**
+
+Vor einem Jahr war ich dreimal die Woche um drei wach. Heute nicht mehr.
+
+
+
+**Sprechskript**
+
+B-ROLL, ein Clip, 7 Sekunden — Patricia mit Kurzhanteln, Kopf im oberen Drittel.
+TEXT: ganzer Hook als EIN Block ab Bild null, helle Schrift, Mitte, ohne Kasten.
+Kein Schnitt, kein Zoom, keine Untertitel, kein Ton — Musik kommt in der App.
+
+
+**Caption**
+
+Wann hast du das letzte Mal eine Nacht durchgeschlafen, ohne dass du dich morgens daran erinnern musstest?
+
+Vor einem Jahr bin ich zwei- bis dreimal pro Woche um eins oder zwei wach geworden und nicht mehr eingeschlafen. Ich hab das für Mama-Müdigkeit gehalten. War es nicht.
+
+Was bei mir dahinter steckte, hab ich erst erfahren, als eine Freundin gesagt hat, ich soll mal die Hormone testen lassen. Beim Arzt waren vorher nur die Leberwerte dran, und die waren in Ordnung.
+
+Ich sag nicht, dass es bei dir dasselbe ist. Ich sag, dass „ich bin halt müde“ bei mir die falsche Erklärung war, und ich ein Jahr damit verloren hab.
+
+Wenn du das kennst, mach eine Woche lang nur eines: Schreib die Uhrzeit auf, zu der du wach wirst. Nichts sonst, keine Bewertung. Ob es immer ungefähr dieselbe ist, sagt schon eine Menge — und es ist das Einzige, was du mitnehmen kannst, wenn du irgendwann jemanden fragst.
+
+Um welche Uhrzeit bist du wach? Schreib sie einfach hin.
+
+Schick das einer Mama, die auch dauernd um drei wach liegt.
+
+#mamaalltag #perimenopause #mamaleben #mamasein #energieimalltag
+
+
+**Hinweis**
+
+✅ Video fertig. Typ 1 · Job C · Reichweite, kein Keyword. Posting-Zeit 21:30. Belegt aus der Wendepunkt-Story, keine Wirkungsaussage, keine Produktflasche im Bild.
+
+
+**Video:** `—` · /_blob/aebcaf7100cf4c9455bc628a35a185e1
+
+---
+
+## B · Mo · Halb vier
+
+*2026-09-21 · doTERRA* · `kw39-reel-d-mo-b`
+
+**Hook**
+
+Halb vier, und der Kaffee war schon gemacht, bevor ich gemerkt hab, dass ich müde bin.
+
+
+
+**Sprechskript**
+
+B-ROLL, ein Clip, 7 Sekunden — Patricia sitzt mit Teller, entspannt.
+TEXT: ganzer Hook als EIN Block ab Bild null, helle Schrift, Mitte, ohne Kasten.
+Kein Schnitt, kein Zoom, keine Untertitel, kein Ton — Musik kommt in der App.
+
+
+**Caption**
+
+Um welche Uhrzeit machst du deinen Nachmittagskaffee?
+
+Bei mir war es jahrelang halb vier, und ich hab ihn gemacht, bevor ich überhaupt gemerkt hab, dass ich müde bin. Der Körper hat das Programm allein gestartet.
+
+Das Verrückte daran ist, dass ich mich für organisiert gehalten hab. Frühstück für sechs, Mittagessen vorbereitet, Wäsche läuft. Nur auf meinem eigenen Teller lag mittags nie etwas Richtiges.
+
+Ich hab nichts dagegen, dass du Kaffee trinkst. Ich hab was dagegen, dass er der einzige Plan ist.
+
+Ein Test für morgen, der nichts kostet: Trink den Nachmittagskaffee erst, nachdem du etwas gegessen hast. Nur einen Tag. Danach weisst du, ob es wirklich der Kaffee war, der dir gefehlt hat.
+
+Um welche Uhrzeit kippt dein Nachmittag? Schreib die Zeit in die Kommentare.
+
+Schick das einer Mama, deren Nachmittag auch immer an derselben Stelle kippt.
+
+#mamaalltag #mamaleben #mamasein #perimenopause #energieimalltag
+
+
+**Hinweis**
+
+✅ Video fertig. Typ 1 · Job C. Gegenüber Hook D-A in hooks.md leicht gekürzt, damit er auf vier Zeilen passt — Inhalt unverändert.
+
+
+**Video:** `—` · /_blob/125c4e4cce671b48a1bb2ee41f7b0e3f
+
+---
+
+## A · Mo · Drei Teamcalls
+
+*2026-09-21 · Mentoring* · `kw39-reel-m-mo-a`
+
+**Hook**
+
+POV: Drei Teamcalls diesen Monat, und die Abrechnung sieht aus wie im Monat davor.
+
+
+
+**Sprechskript**
+
+B-ROLL, ein Clip, 7 Sekunden — Patricia am Schreibtisch, von hinten.
+TEXT: ganzer Hook als EIN Block ab Bild null, helle Schrift, Mitte, ohne Kasten.
+Kein Schnitt, kein Zoom, keine Untertitel, kein Ton — Musik kommt in der App.
+
+
+**Caption**
+
+Wie oft hast du diesen Monat nachgerechnet, ob sich ein Abend gelohnt hat?
+
+Bei mir war das lange jeder Sonntag. Ich war brav bei den Teamcalls, hab gemacht, was man macht — und dann sah die Abrechnung aus wie im Monat davor.
+
+Was ich damals nicht verstanden hab: Ich hab immer an derselben Schraube gedreht. Bewegt hat sich die Zahl erst, als daneben etwas entstanden ist, das mir gehört. 2023 hab ich angefangen, heute vergeht kein Monat ohne Verkauf — bei 18 Stunden Arbeit pro Woche und vier Kindern.
+
+Dein Network bleibt. Es kriegt nur Gesellschaft.
+
+Und wenn du diesen Monat nochmal nachrechnest, nimm ein zweites Blatt dazu: Schreib auf, welche Fragen dir in den letzten vier Wochen gestellt wurden. Nicht die Provision — die Fragen. Die Liste sagt dir mehr über dein nächstes Jahr als die Abrechnung.
+
+Wie viele stehen auf deinem zweiten Blatt? Schreib einfach die Zahl.
+
+Schick das einer Networkerin, die diesen Monat auch schon nachgerechnet hat.
+
+Und wenn du gerade denkst, das klingt mal nach was anderem als die 100-Personen-Liste abzutelefonieren: Hier bin ich, Patricia, Mama von vier Kindern. Seit 2023 baue ich mein Network und mein Onlinebusiness nebeneinander auf, und genau das zeige ich hier.
+
+#mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #selbstständigemama #mumpreneur
+
+
+**Hinweis**
+
+✅ Video fertig gebaut und angehängt. Typ 4 Meinung · Job C · Reichweite, kein Keyword. Posting-Zeit 21:00. B-Roll → Musik in der App, deshalb selber posten.
+
+
+**Video:** `—` · /_blob/b86f90efbf34e67c64e280b08acb273b
+
+---
+
+## B · Mo · Warum der Anfang
+
+*2026-09-21 · Mentoring* · `kw39-reel-m-mo-b`
+
+**Hook**
+
+Kann mir mal jemand erklären, warum im Network alle so tun, als wäre der Anfang das Schwere?
+
+
+
+**Sprechskript**
+
+B-ROLL, ein Clip, 7 Sekunden — Patricia am Laptop.
+TEXT: ganzer Hook als EIN Block ab Bild null, helle Schrift, Mitte, ohne Kasten.
+Kein Schnitt, kein Zoom, keine Untertitel, kein Ton — Musik kommt in der App.
+
+
+**Caption**
+
+Warum redet im Network eigentlich nie jemand über das zweite Jahr?
+
+Der Anfang ist gut begleitet. Da gibt es Starterpakete, Willkommens-Calls und jemanden, der sich meldet. Und dann kommt die Phase, in der du nicht mehr neu bist, dich niemand mehr anruft und die Zahlen trotzdem gleich bleiben.
+
+Über die redet keiner, weil sie sich nach Versagen anfühlt. Dabei ist sie einfach der Punkt, an dem das, was am Anfang getragen hat, nicht mehr reicht.
+
+Bei mir war das der Moment, an dem ich angefangen hab, etwas Eigenes danebenzustellen. Nicht statt dem Network — daneben.
+
+Was in dieser Phase wirklich geholfen hat, war eine Viertelstunde mit einem Blatt Papier: Schreib drei Dinge auf, die du heute kannst und vor zwei Jahren nicht konntest. Nichts Grosses, nichts Spektakuläres. Genau diese drei Sachen sind der Teil, der dir gehört.
+
+Welche wäre deine Nummer eins? Schreib sie in die Kommentare.
+
+Schick das einer, die gerade in genau dieser Phase steckt.
+
+Hi, ich bin Patricia, Mama von vier Kindern aus dem Appenzellerland. Hier geht es um Businessaufbau als Mama im Network, ohne dass du dein Network dafür aufgibst.
+
+#mamabusiness #mamaimnetworkmarketing #networkmarketingmama #businessmama #mumpreneur
+
+
+**Hinweis**
+
+✅ Video fertig. Typ 4 · Job C · Reichweite. Andere Richtung als A: Identität statt Schmerz.
+
+
+**Video:** `—` · /_blob/0bf2733055a9493f0d41eecc5a10e58e
+
+---
+
+## A · Di · Nachmittagstief
+
+*2026-09-22 · doTERRA* · `kw39-reel-d-di-a`
+
+**Hook**
+
+Dein Nachmittagstief kommt nicht vom Schlaf. Es kommt vom Mittagessen, das keins war.
+
+
+
+**Sprechskript**
+
+B-ROLL, ein Clip, 7 Sekunden — Protein-Frühstück auf dem Teller.
+TEXT: ganzer Hook als EIN Block ab Bild null, helle Schrift, Mitte, ohne Kasten.
+Kein Schnitt, kein Zoom, keine Untertitel, kein Ton — Musik kommt in der App.
+Quelle weich abgedunkelt (Verlauf, kein Kasten), damit der Text auf dem hellen Teller trägt.
+
+
+**Caption**
+
+Was hast du heute zu Mittag gegessen, und war es ein eigener Teller?
+
+Das Muster sehe ich bei fast jeder Mama und hatte es jahrelang selbst: Frühstück fällt aus oder ist Brot mit Konfi. Mittags isst man, was vom Kinderteller übrig ist. Um halb vier kommt Kaffee statt Essen. Und abends ist nichts mehr da.
+
+Was ich geändert hab, in dieser Reihenfolge:
+
+1. Morgens etwas mit Eiweiss, bevor irgendwer etwas von mir will. Bei uns ist das Rührei oder Proteinpancakes — wir brauchen über dreissig Eier die Woche.
+2. Mittags einen eigenen Teller, auch wenn es dasselbe ist wie für die Kinder.
+3. Den Nachmittagskaffee erst nach dem Essen, nicht statt dem Essen.
+
+Bei mir war nach drei bis vier Monaten der Heisshunger weg und der Nachmittag nicht mehr das Loch, das er vorher war. Nicht nach einer Woche. Nach Monaten.
+
+An welchem der drei Punkte scheiterst du gerade — 1, 2 oder 3? Schreib die Nummer in einen zweiten Kommentar.
+
+Kommentier **ENERGIE**, dann bekommst du die drei Tage, mit denen ich angefangen hab.
+
+**ENERGIE** ⬇️
+
+#mamaalltag #perimenopause #mamaleben #energieimalltag #mamasein
+
+
+**Hinweis**
+
+✅ Video fertig. Typ 2 als Reel · Job A+D · LEAD, Keyword ENERGIE. Bei sieben Sekunden steckt der ganze Mehrwert in der Caption.
+
+
+**Video:** `—` · /_blob/04915444a85b9994869fa9a4ce42aafb
+
+---
+
+## B · Di · Acht Stunden
+
+*2026-09-22 · doTERRA* · `kw39-reel-d-di-b`
+
+**Hook**
+
+Warum bin ich so müde, obwohl ich acht Stunden geschlafen hab?
+
+
+
+**Sprechskript**
+
+B-ROLL, ein Clip, 7 Sekunden — Patricia in der Küche.
+TEXT: ganzer Hook als EIN Block ab Bild null, helle Schrift, Mitte, ohne Kasten.
+Kein Schnitt, kein Zoom, keine Untertitel, kein Ton — Musik kommt in der App.
+
+
+**Caption**
+
+Warum bist du so müde, obwohl du acht Stunden geschlafen hast?
+
+Die Frage hab ich selbst monatelang gegoogelt. Acht Stunden im Bett, und morgens fühlt es sich an wie vier.
+
+Was ich inzwischen weiss: Schlafdauer und Erholung sind zwei verschiedene Dinge. Ich hab geschlafen und mich trotzdem nicht erholt, weil mein System nachts nicht runtergefahren ist.
+
+Drei Sachen, die bei mir daran etwas geändert haben, alle drei kostenlos:
+
+1. Das Licht eine Stunde vor dem Schlafen runter, auch wenn noch Wäsche liegt.
+2. Abends nichts mehr essen, was den Kreislauf nochmal hochzieht.
+3. Bewegung tagsüber, die anstrengt. Spazieren allein hat bei mir nicht gereicht.
+
+Bei mir hat es Monate gedauert, nicht Tage. Aber der Schlaf war das Erste, was zurückkam.
+
+Welche der drei probierst du zuerst? Schreib die Nummer in einen zweiten Kommentar.
+
+Kommentier **ENERGIE**, dann schick ich dir die drei Tage, die bei mir den Unterschied gemacht haben.
+
+**ENERGIE** ⬇️
+
+#mamaalltag #perimenopause #mamaleben #energieimalltag #mamasein
+
+
+**Hinweis**
+
+✅ Video fertig. Typ 2 als Reel · LEAD, Keyword ENERGIE. Google-Frage als Hook — Instagram indexiert Captions.
+
+
+**Video:** `—` · /_blob/234fb0baa056862ccd89af86edcf47e1
+
+---
+
+## A · Mi · Das wird schon wieder
+
+*2026-09-23 · doTERRA* · `kw39-reel-d-mi-a`
+
+**Hook**
+
+„Das wird schon wieder, du hast halt vier Kinder.“ Hat es nicht.
+
+
+
+**Sprechskript**
+
+B-ROLL, ein Clip, 7 Sekunden — Sonnenuntergang über den Hügeln.
+TEXT: ganzer Hook als EIN Block ab Bild null, helle Schrift, Mitte, ohne Kasten.
+Kein Schnitt, kein Zoom, keine Untertitel, kein Ton — Musik kommt in der App.
+
+
+**Caption**
+
+Welchen Satz hast du am häufigsten gehört, als es dir nicht gut ging?
+
+Bei mir war es dieser: das wird schon wieder, du hast halt vier Kinder. Gut gemeint, jedes Mal. Und jedes Mal hat er mir ein halbes Jahr gekostet, weil ich ihn geglaubt hab.
+
+Es wurde nicht von allein wieder. Es wurde erst anders, als ich angefangen hab, es ernst zu nehmen — und das hat mit vier Kindern genau nichts zu tun.
+
+Ich will niemandem das Wohlwollen absprechen. Ich will nur, dass du es nicht als Diagnose nimmst.
+
+Was mir dabei geholfen hat, ist eine einzige Rückfrage an mich selbst: Seit wann genau ist das so? Wenn du eine Jahreszahl nennen kannst, ist es kein Zustand — dann ist es eine Entwicklung, und eine Entwicklung hat einen Anfang, den man anschauen kann.
+
+Seit wann ist es bei dir so? Schreib das Jahr.
+
+Schick das einer Mama, der auch gerade jemand sagt, das sei halt so.
+
+#mamaalltag #mamaleben #perimenopause #mamasein #energieimalltag
+
+
+**Hinweis**
+
+✅ Video fertig. Typ 4 Meinung · Job C · Reichweite. Kein Arzt-Bashing, keine Diagnose.
+
+
+**Video:** `—` · /_blob/aff9b589e34db4600ce8d7c108c9e784
+
+---
+
+## B · Mi · Die dritte Apotheken-Tüte
+
+*2026-09-23 · doTERRA* · `kw39-reel-d-mi-b`
+
+**Hook**
+
+Die dritte Apotheken-Tüte im Schrank ist kein Beweis dafür, dass dir nichts hilft.
+
+
+
+**Sprechskript**
+
+B-ROLL, ein Clip, 7 Sekunden — Patricia zuhause in Bewegung.
+TEXT: ganzer Hook als EIN Block ab Bild null, helle Schrift, Mitte, ohne Kasten.
+Kein Schnitt, kein Zoom, keine Untertitel, kein Ton — Musik kommt in der App.
+
+
+**Caption**
+
+Wie viele angefangene Packungen stehen bei dir im Schrank?
+
+Bei mir waren es irgendwann so viele, dass ich sie nicht mehr gezählt hab. Und der Gedanke dahinter war immer derselbe: vielleicht bin ich einfach eine, bei der nichts wirkt.
+
+Was ich rückblickend sehe: Ich hab immer nur eine Sache auf einmal geändert, und alles andere ist gleich geblieben. Essen, Bewegung, Schlaf, Stress — alles unverändert, und dann soll eine Packung es richten.
+
+Ich hab dann zum ersten Mal mehrere Sachen gleichzeitig angefasst. Das war unbequemer und hat Monate gedauert.
+
+Wenn du magst, mach die Schrank-Inventur: Leg alles hin, was angefangen ist. Dann streich alles, was du weniger als vier Wochen am Stück genommen hast. Was übrig bleibt, ist die ehrliche Liste — und die ist bei den meisten überraschend kurz.
+
+Wie viele angefangene Packungen hast du? Schreib einfach die Zahl.
+
+Schick das einer Mama, die ihren Schrank auch für ein Urteil über sich selbst hält.
+
+#mamaalltag #mamaleben #perimenopause #mamasein #energieimalltag
+
+
+**Hinweis**
+
+✅ Video fertig. Typ 4 · Job C · Reichweite. Keine Produktflasche im Bild — geprüft.
+
+
+**Video:** `—` · /_blob/c227acf35d71c32dbeced5c76d570c1d
+
+---
+
+## A · Mi · Montage zählen
+
+*2026-09-23 · Mentoring* · `kw39-reel-m-mi-a`
+
+**Hook**
+
+Vor meinem letzten Arbeitstag hab ich gezählt, wie viele Montage noch übrig sind.
+
+
+
+**Sprechskript**
+
+B-ROLL, ein Clip, 6,5 Sekunden — Anstossen, Glas in der Hand.
+TEXT: ganzer Hook als EIN Block ab Bild null, helle Schrift, Mitte, ohne Kasten.
+Kein Schnitt, kein Zoom, keine Untertitel, kein Ton — Musik kommt in der App.
+Die Quelle wurde vorher weich abgedunkelt (Verlauf, kein Kasten), damit heller Text auf hellem Glas trägt.
+
+
+**Caption**
+
+Wie viele Montage wären es bei dir noch bis zum letzten Arbeitstag?
+
+Ich hab das gemacht, kurz bevor es bei mir so weit war. Die Zahl war unangenehm konkret, und genau deshalb hat sie etwas ausgelöst.
+
+Die meisten suchen monatelang nach einem Thema, das längst in ihren eigenen Antworten liegt. Meine Mentees kommen in der Regel mit einer Idee raus, die sie vorher für zu selbstverständlich gehalten haben.
+
+Schick das der Freundin, die auch gerade Montage zählt.
+
+#mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #expertenbusiness #mumpreneur
+
+
+**Hinweis**
+
+Reichweiten-Post: kein Keyword-CTA, Teilen-Aufruf am Schluss. Korrigiert 18.09. — stand vorher mit STANDBEIN drin.
+
+
+**Video:** `—` · /_blob/93c05e0c0758d45950b3c8132d35b1a7
+
+---
+
+## B · Mi · Nichts mehr verkaufen
+
+*2026-09-23 · Mentoring* · `kw39-reel-m-mi-b`
+
+**Hook**
+
+Was hättest du zu erzählen, wenn du morgen nichts mehr verkaufen dürftest?
+
+
+
+**Sprechskript**
+
+B-ROLL, ein Clip, 7 Sekunden — Aletschgletscher, Weite.
+TEXT: ganzer Hook als EIN Block ab Bild null, helle Schrift, Mitte, ohne Kasten.
+Kein Schnitt, kein Zoom, keine Untertitel, kein Ton — Musik kommt in der App.
+
+
+**Caption**
+
+Was hättest du zu erzählen, wenn du morgen nichts mehr verkaufen dürftest?
+
+Ich hab jahrelang gedacht, mein Wissen sei zu selbstverständlich, um dafür Geld zu nehmen. Es war nur zu vertraut, um es von aussen zu sehen.
+
+Das, was dir am meisten wie „das weiss doch jede“ vorkommt, ist meistens genau das, wofür dich Leute sowieso schon fragen.
+
+Schick das einer, die ihr eigenes Wissen auch dauernd kleinredet.
+
+#mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #expertenbusiness #businessmama
+
+
+**Hinweis**
+
+Reichweiten-Post: kein Keyword-CTA, Teilen-Aufruf am Schluss. Korrigiert 18.09. — stand vorher mit STANDBEIN drin.
+
+
+**Video:** `—` · /_blob/107512800fd810372de270bc18cb7c2e
+
+---
+
+## A · Do · Vier Sachen, drei kostenlos
+
+*2026-09-24 · doTERRA* · `kw39-reel-d-do-a`
+
+**Hook**
+
+Vier Sachen hab ich geändert, als mit 36 nichts mehr ging. Drei davon kosten nichts.
+
+
+
+**Sprechskript**
+
+SPRECHREEL — Patricia dreht, ich schneide und setze die Textebene.
+
+Setup: Handy hochkant, Kamera auf Augenhöhe, Gesicht zum Fenster, Küche oder Esstisch, candid.
+Dauer rund 25 Sekunden. Jeden Satz dreimal sprechen: einmal ruhig, einmal etwas
+schneller, einmal mit kleiner Pause davor.
+
+1 HOOK: „Vier Sachen hab ich geändert, als mit sechsunddreissig nichts mehr ging. Drei davon kosten nichts.“
+2: „Das Erste war Essen. Morgens was mit Eiweiss, bevor irgendwer was von mir will.“
+3: „Das Zweite war Bewegung, die auch wirklich anstrengt. Spazieren allein hat bei mir nicht gereicht.“
+4: „Das Dritte war der Abend. Licht runter, Handy weg, auch wenn noch Wäsche liegt.“
+5: „Und das Vierte hab ich gezielt aufgefüllt, nachdem ich wusste, was mir fehlt.“
+6 CTA: „Wenn du wissen willst, wo du anfängst: Kommentier ENERGIE.“
+
+Betonung auf „sechsunddreissig“ und auf „kosten nichts“.
+NICHT sagen: keinen Produktnamen, kein „hilft gegen“, keine Wirkungsdauer.
+
+
+**Caption**
+
+Was hat deine Ärztin gesagt, als du das letzte Mal wegen Müdigkeit dort warst?
+
+Bei mir wurden mit sechsunddreissig die Leberwerte geschaut, die waren gut, und dann war das Gespräch zu Ende. Dabei ging gerade nichts mehr: Haare büschelweise in der Bürste, nachmittags kein Rest Kraft, Schweissausbrüche.
+
+Was ich danach geändert hab, in dieser Reihenfolge:
+
+1. Essen — mehr Eiweiss, weniger Zucker.
+2. Bewegung — regelmässig und so, dass es anstrengt.
+3. Abend — Licht runter, früher Schluss.
+4. Nährstoffe — gezielt, nachdem ich wusste, was fehlt.
+
+Die ersten drei kosten nichts. Der vierte ergibt ohne die ersten drei wenig Sinn, und das ist der Teil, den ich am längsten falsch verstanden hab.
+
+Nach drei bis vier Monaten hab ich gemerkt, dass es mir deutlich besser geht. Nicht nach drei Tagen.
+
+Welcher der vier klingt für dich gerade am machbarsten? Schreib die Nummer in einen zweiten Kommentar.
+
+Kommentier **ENERGIE**, dann bekommst du die drei Tage, mit denen ich angefangen hab.
+
+**ENERGIE** ⬇️
+
+#mamaalltag #perimenopause #mamaleben #energieimalltag #mamasein
+
+
+**Hinweis**
+
+🎬 DREH NÖTIG. Der Sprechtext steht wortwörtlich im Skript. Lad das Video hier hoch, dann schneide ich, setze Kelsie-Textebene, wortgenaue Untertitel und Auto-Zoom und leg es zurück. Typ 5 · Job D · LEAD, Keyword ENERGIE.
+
+
+---
+
+## B · Do · Kein Disziplin-Problem
+
+*2026-09-24 · doTERRA* · `kw39-reel-d-do-b`
+
+**Hook**
+
+Du hast kein Disziplin-Problem. Du hast einen Körper, der seit Monaten auf Reserve läuft.
+
+
+
+**Sprechskript**
+
+SPRECHREEL — Patricia dreht.
+
+Setup: wie A, gern im Sitzen, näher an der Kamera. Dauer rund 20 Sekunden.
+
+1 HOOK: „Du hast kein Disziplin-Problem. Du hast einen Körper, der seit Monaten auf Reserve läuft.“
+2: „Ich hab mir jahrelang gesagt, ich müsste mich halt mehr zusammenreissen.“
+3: „Und dann hab ich gemerkt: Ich reiss mich seit Jahren zusammen. Genau das ist das Problem.“
+4: „Ab vierzig kostet jede Bewegung mehr Energie als vorher. Das ist keine Ausrede, das ist Biologie.“
+5 CTA: „Wenn du wissen willst, wo du anfängst, kommentier ENERGIE.“
+
+Betonung auf „seit Jahren zusammen“.
+
+
+**Caption**
+
+Wie oft hast du dir diese Woche gesagt, du müsstest dich einfach mehr zusammenreissen?
+
+Ich hab das jahrelang geglaubt. Dabei hab ich mich seit Jahren zusammengerissen, und genau davon war ich leer.
+
+Geholfen hat mir am Ende zu verstehen, was in meinem Körper gerade passiert, und dass ab Ende dreissig Dinge anders laufen als mit fünfundzwanzig. Mit Willenskraft hatte das gar nichts zu tun.
+
+Danach hab ich aufgehört zu fragen, wie ich mehr schaffe. Die Frage war ab da, was mir fehlt.
+
+Kommentier **ENERGIE**, dann bekommst du die drei Tage, mit denen ich angefangen hab.
+
+**ENERGIE** ⬇️
+
+#mamaalltag #perimenopause #mamaleben #energieimalltag #mamasein
+
+
+**Hinweis**
+
+🎬 DREH NÖTIG. ⚠️ Im Beitrags-Check die schwächere der beiden Donnerstags-Varianten — es gibt nichts zum Abhaken. Empfehlung: A freigeben, B nur als Ersatz.
+
+
+---
+
+## A · Fr · Letzter Bestelltag — Sofa
+
+*2026-09-25 · doTERRA* · `kw39-reel-d-fr-a`
+
+**Hook**
+
+Gestern um neun bin ich auf dem Sofa eingeschlafen, obwohl ich mich den ganzen Tag auf den Abend gefreut hatte.
+
+
+
+**Sprechskript**
+
+SPRECHREEL — Patricia dreht.
+
+Setup: abends, warmes Licht, Wohnzimmer oder Küche. Ruhige Stimme, kein Verkaufston.
+Dauer rund 25 Sekunden.
+
+1 HOOK: „Gestern um neun bin ich auf dem Sofa eingeschlafen. Dabei hatte ich mich den ganzen Tag auf diesen Abend gefreut.“
+2: „Den Abend, an dem endlich alle im Bett sind und mal zwei Stunden mir gehören.“
+3: „Und dann bin ich einfach weg. Das war bei mir jahrelang der Normalzustand.“
+4: „Ab Oktober begleite ich vier Wochen lang eine kleine Runde Frauen, bei denen das genauso läuft.“
+5 CTA: „Wer dabei sein will, sagt mir das heute. Danach wird es knapp mit dem Start am ersten Oktober. Kommentier ENERGIE.“
+
+
+**Caption**
+
+Gestern um neun bin ich auf dem Sofa eingeschlafen, obwohl ich mich den ganzen Tag auf den Abend gefreut hatte.
+
+Genau dieser Abend war bei mir jahrelang der Normalzustand, und ich hab ihn für mein Alter gehalten.
+
+Heute ist der letzte Tag, an dem du bei der Oktober-Runde dabei sein kannst. Die Frist hat einen banalen Grund: Was du brauchst, muss vor dem ersten Oktober bei dir liegen, und der Versand braucht seine Tage.
+
+Vier Wochen, eine kleine Gruppe, und ich bin die ganze Zeit dabei.
+
+Kommentier **ENERGIE**, wenn du wissen willst, wie das abläuft — dann reden wir in Ruhe darüber.
+
+**ENERGIE** ⬇️
+
+#mamaalltag #perimenopause #mamaleben #energieimalltag #mamasein
+
+
+**Hinweis**
+
+🎬 DREH NÖTIG. Typ 3 Reel-CTA · LETZTER BESTELLTAG. Dringlichkeit immer mit dem Lieferweg begründen, nie künstlich. ⚠️ active-funnels.json und Monatsplan schreiben „Do 25.9.“ — der 25.9.2026 ist ein Freitag. War Donnerstag gemeint, gehört dieser Beitrag auf den 24.9.
+
+
+---
+
+## B · Fr · Letzter Bestelltag — Handy
+
+*2026-09-25 · doTERRA* · `kw39-reel-d-fr-b`
+
+**Hook**
+
+Du hängst abends am Handy, obwohl du hundemüde bist. Das liegt nicht am Handy.
+
+
+
+**Sprechskript**
+
+SPRECHREEL — Patricia dreht.
+
+Setup: abends, gern mit dem Handy in der Hand als Requisit. Dauer rund 22 Sekunden.
+
+1 HOOK: „Du hängst abends zwei Stunden am Handy, obwohl du hundemüde bist. Das liegt nicht am Handy.“
+2: „Das ist der einzige Moment am Tag, in dem niemand was von dir will. Den gibst du nicht freiwillig her.“
+3: „Ich hab lange gedacht, ich bin einfach undiszipliniert. War ich nicht.“
+4: „Ab Oktober gehe ich das vier Wochen lang mit einer kleinen Gruppe durch.“
+5 CTA: „Heute ist der letzte Tag, an dem du dazukommst. Kommentier ENERGIE.“
+
+
+**Caption**
+
+Du hängst abends am Handy, obwohl du hundemüde bist. Das liegt nicht am Handy.
+
+Ich hab das jahrelang für fehlende Disziplin gehalten. Es war der einzige Moment am Tag, in dem niemand etwas von mir wollte, und natürlich hab ich den nicht freiwillig hergegeben.
+
+Bei mir lag die Lösung im Tag davor. Sobald der anders lief, war der Abend von allein kürzer, ohne dass ich mir das Handy hätte verbieten müssen.
+
+Heute ist der letzte Tag für die Oktober-Runde. Der Grund für die Frist ist unspektakulär: Es muss alles vor dem ersten Oktober bei dir sein, und dazwischen liegt der Versand.
+
+Vier Wochen, kleine Gruppe, ich bin durchgehend dabei.
+
+Kommentier **ENERGIE**, dann erzähl ich dir in Ruhe, wie das aussieht.
+
+**ENERGIE** ⬇️
+
+#mamaalltag #perimenopause #mamaleben #energieimalltag #mamasein
+
+
+**Hinweis**
+
+🎬 DREH NÖTIG. Typ 3 · LETZTER BESTELLTAG.
+
 
 ---
 

@@ -1,0 +1,91 @@
+{
+ "_zweck": "Cover-Titel je Reel. Patricia am 16.09.2026: 'wenn das die Hooks sein sollen, die sind kacke. ist ja kein fertiger satz. das wuerde man doch nie so sagen. beim scrollen auf dem feed soll man sehen koennen um was gehts im beitrag.'",
+ "_regel": "GANZER SATZ, der fuer sich allein steht. Wer im Feed daran vorbeiscrollt, muss ohne Vorwissen erkennen, worum es geht. Kein Fragment, kein Stichwort, kein Titel. Ihr eigenes Beispiel: nicht 'Wartet auf deine Bestellung wirklich jemand?', sondern 'Das ist meine Antwort, wenn mich jemand fragt, ob das Produkt ueberhaupt jemand kauft.' Die Loesung bleibt trotzdem draussen — Spannung ja, Antwort nein.",
+ "_unter": "Die zweite, kleinere Zeile ist optional. Sie darf leer bleiben, wenn der Satz oben schon traegt. Lieber nichts als ein Fuellsel.",
+ "hooks": {
+  "kw38-reel-di-a": {
+   "text": "Ich erzähl, dass ich im Network bin — und dann kommt dieses höfliche Nicken.",
+   "unter": "Und niemand fragt nach."
+  },
+  "kw38-reel-di-b": {
+   "text": "Mein Mann fragt nicht mehr, wie das Network läuft, und ich bin froh drum.",
+   "unter": ""
+  },
+  "kw38-reel-di-c": {
+   "text": "Es gibt diesen Punkt, an dem du dich fragst, ob das überhaupt je jemand sieht.",
+   "unter": "Ich kenn den ziemlich gut."
+  },
+  "kw38-reel-do-a": {
+   "text": "Für jede, deren Business von den Mamas auf dem Pausenplatz belächelt wird.",
+   "unter": ""
+  },
+  "kw38-reel-do-b": {
+   "text": "Das ist meine Antwort, wenn mich jemand fragt, ob das Produkt überhaupt jemand kauft.",
+   "unter": "Meine Schwiegermutter hat genau das gefragt."
+  },
+  "kw38-reel-dt-di-a": {
+   "text": "Runterkommen und Netflix sind zwei verschiedene Dinge, und ich hab das jahrelang verwechselt.",
+   "unter": ""
+  },
+  "kw38-reel-dt-di-b": {
+   "text": "Du machst alles richtig und liegst trotzdem um drei Uhr nachts wach.",
+   "unter": "Magnesium, früher ins Bett, weniger Kaffee — und es ändert nichts."
+  },
+  "kw38-reel-dt-fr-a": {
+   "text": "Zwischen Kinder-ins-Bett und Sofa liegt ein Moment, den ich jahrelang verschenkt hab.",
+   "unter": ""
+  },
+  "kw38-reel-dt-fr-b": {
+   "text": "Es gibt zwei Arten von müde, und die eine geht nach einer Nacht nicht weg.",
+   "unter": ""
+  },
+  "kw38-reel-dt-fr-c": {
+   "text": "Ab Oktober mache ich etwas, das es bei mir noch nie gab.",
+   "unter": "Vier Wochen, kleine Gruppe."
+  },
+  "kw38-reel-dt-mi-a": {
+   "text": "Der unbrauchbarste Satz, den man einer müden Mama sagen kann: das ist halt das Alter.",
+   "unter": ""
+  },
+  "kw38-reel-dt-mi-b": {
+   "text": "Mein Arzt sagte, meine Werte seien normal, und ich sass danach im Auto und hab geheult.",
+   "unter": ""
+  },
+  "kw38-reel-dt-mo-a": {
+   "text": "Um sieben Uhr vierzig hab ich meine Kinder angeschrien, und es ging nie um die Schuhe.",
+   "unter": ""
+  },
+  "kw38-reel-dt-mo-b": {
+   "text": "Gestern bin ich im Auto sitzen geblieben, obwohl ich längst angekommen war.",
+   "unter": ""
+  },
+  "kw38-reel-fr-c": {
+   "text": "Ich bin niemand — und hab trotzdem zwei Standbeine aufgebaut.",
+   "unter": ""
+  },
+  "kw38-reel-mo-a": {
+   "text": "Du beantwortest im Teamchat ständig Fragen, für die dich niemand bezahlt.",
+   "unter": "Und genau da drin steckt dein Thema."
+  },
+  "kw38-reel-mo-c": {
+   "text": "Finde dein Thema mit mir — in zwanzig Minuten.",
+   "unter": ""
+  },
+  "reel-kw38-do": {
+   "text": "Über diese Phase redet keiner: du bist nicht mehr die Neue und verdienst trotzdem nichts.",
+   "unter": "Und da hören die meisten auf."
+  },
+  "reel-kw38-fr": {
+   "text": "Dein Network läuft — und du gehst am Montag trotzdem ins Büro.",
+   "unter": ""
+  },
+  "reel-kw38-mi": {
+   "text": "Drei Wege, mit dem Network Geld zu verdienen, ohne eine einzige Namensliste.",
+   "unter": ""
+  },
+  "reel-kw38-mo": {
+   "text": "Zwei Jahre lang dachte ich, ich müsste einfach mehr arbeiten, dann kommt es schon.",
+   "unter": "Das Problem war nie die Menge."
+  }
+ }
+}

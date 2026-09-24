@@ -14,7 +14,7 @@ tags: [produkt, funnel, mentoring]
 |---|---|---|---|
 | **Order Bump 1** | 90 Storyideen für Networkerinnen | **19** | 10–15 % |
 | **Order Bump 2** | Starter-Set: Storyideen + Content-Box + Finde dein Thema | **39 statt 75** | 25–35 % |
-| **Upsell** (1 Klick nach Kauf) | Instagram-Kundenmaschine | **199 statt 333** | 1–3 % |
+| **Upsell** (1 Klick nach Kauf) | Instagram-Kundenmaschine | **333 — voller Preis** | unter 1 % |
 | **Downsell** (wenn Upsell abgelehnt) | Expertin statt Verkäuferin | **97** | 3–5 % |
 
 ---
@@ -59,7 +59,18 @@ Voller Preis, kein Rabatt. Er muss hier gar nicht günstig sein, denn seine Aufg
 
 ---
 
-## Upsell — Instagram-Kundenmaschine für 199
+## Upsell — Instagram-Kundenmaschine für 333 (voller Preis)
+
+🚨 **Patricias Entscheid vom 18.09.2026:** kein Sonderpreis im Upsell, die
+Kundenmaschine kostet auch hier **333**. Das schützt die Preisstufe — ein
+199er-Angebot im Checkout entwertet den Listenpreis für alle anderen Wege.
+Die Annahme sinkt dadurch unter ein Prozent, und das ist eingepreist: Die
+Kundenmaschine wird ohnehin eher über das Abschlussvideo und die Mailstrecke
+verkauft als dreissig Sekunden nach einem 39-Franken-Kauf.
+
+<!-- frühere Fassung (199 als Frühbucher-Preis) bewusst verworfen -->
+
+### Der alte Aufbau — überholt
 
 **Ein Klick, direkt nach dem Kauf.**
 
@@ -108,15 +119,15 @@ Bei 15 Startklar-Verkäufen im Monat:
 | Startklar | 15 × 39 | 585 |
 | Bump 1 · Storyideen einzeln | 12 % × 19 CHF | 34 |
 | Bump 2 · Starter-Set | 30 % × 39 CHF | 176 |
-| Upsell · Kundenmaschine | 2 % × 199 CHF | 60 |
+| Upsell · Kundenmaschine | 2 % × 333 CHF | 100 |
 | Downsell · Expertin | 3 % der Ablehnenden × 97 CHF | 43 |
-| **Summe** | | **898** |
+| **Summe** | | **938** |
 
-→ **rund 10 800 CHF im Jahr, etwa 27 % des 40k-Ziels.**
+→ **rund 11 300 CHF im Jahr, etwa 28 % des 40k-Ziels.**
 
-**Durchschnittsbon: rund 60 CHF pro Käuferin** statt 39. Das ist die eigentliche Wirkung: Bei 39 CHF ist eine Meta-Anzeige knapp, bei 60 wird sie entspannt.
+**Durchschnittsbon: rund 63 CHF pro Käuferin** statt 39. Das ist die eigentliche Wirkung: Bei 39 CHF ist eine Meta-Anzeige knapp, bei 63 wird sie entspannt.
 
-**Was du dabei nicht vergessen darfst:** Bei 30 % Set-Annahme gehen jeden Monat rund fünf Frauen mit vier Produkten statt einem nach Hause. Die kennen deine Arbeit danach viel besser — und das ist die Gruppe, aus der später die 199er und die MBA-Verkäufe kommen.
+**Was du dabei nicht vergessen darfst:** Bei 30 % Set-Annahme gehen jeden Monat rund fünf Frauen mit vier Produkten statt einem nach Hause. Die kennen deine Arbeit danach viel besser — und das ist die Gruppe, aus der später die 333er und die MBA-Verkäufe kommen.
 
 ---
 
@@ -126,14 +137,90 @@ Der Checkout holt die schnellen Ja. Der grosse Sprung passiert später, wenn sie
 
 | Tag | Inhalt | Ziel |
 |---|---|---|
-| 0 | Auslieferung: Zugang, Zugangscode für die Werkstatt, „fang mit Lektion 1.1 an" | Sie startet |
+| 0 | Auslieferung: ThriveCart schickt den Kurszugang, diese Mail führt in die Werkstatt | Sie startet |
 | 2 | „Steht deine Bio?" — Erinnerung plus Bio-Check | Sie bleibt dran |
-| 5 | „Dein erstes Reel" — der Sieben-Sekunden-Satz, plus Testreel-Logik | Sie postet |
-| 8 | Rückmeldung einholen: „Was konntest du danach, was vorher nicht ging?" | Testimonial |
-| 12 | Ihr Ergebnis spiegeln, dann die ehrliche Grenze: Profil steht, Kundinnen fehlen noch → Instagram-Kundenmaschine | Upsell |
-| 20 | Falls kein Kauf: das Starter-Set einzeln nachfassen, falls beim Checkout nicht mitgenommen | Nachfassen |
+| **4** | **Der Tipp, der hängen bleibt** — siehe unten | Sie denkt „das wusste ich nicht" |
+| 6 | „Dein erstes Reel" — der Sieben-Sekunden-Satz, plus Testreel-Logik | Sie postet |
+| 9 | Rückmeldung einholen: „Was konntest du danach, was vorher nicht ging?" | Testimonial |
+| 12 | Ihr Ergebnis spiegeln, dann die ehrliche Grenze: Profil steht, Kundinnen fehlen noch → Instagram-Kundenmaschine, **333** | Verkauf |
+| 15 | Den einen Einwand aufgreifen, der sie hält | Verkauf |
+| **20** | **Tag setzen → Automation 72 („Automation 0€ Produkt", Loop 1)** | Übergabe an die Engine |
 
 **Die Mail an Tag 12 ist der wichtigste Verkaufsmoment im ganzen Funnel** — dort hat sie ein Ergebnis in der Hand und spürt selbst, was als Nächstes fehlt.
+
+### Der Tipp an Tag 4 — warum ausgerechnet dieser
+
+**Inhalt: die Frage in Zeile eins.** Bei Patricias eigenen Beiträgen hat ein Hook,
+der mit einer Frage anfängt, am 17.09.2026 **2,6-mal so viel Reichweite** gebracht
+wie einer ohne. Und der Satz, den alle empfehlen — „Folge mir, wenn du…" — hat
+messbar **nichts** gebracht.
+
+Drei Gründe, warum dieser Tipp und kein anderer:
+- Er ist **gemessen, nicht behauptet**, und die Zahl gehört ihr. Alles andere wäre
+  ein Tipp, den die Frau schon dreimal in einem Reel gehört hat.
+- Er **widerspricht** dem, was ihr sonst überall geraten wird. Genau das erzeugt
+  das „wow, ich mach das falsch" — nicht eine weitere Bestätigung.
+- Er ist **an dem Tag anwendbar**, an dem sie ihn liest. Ihr Profil ist frisch, sie
+  schreibt gerade ihre ersten Beiträge, sie kann ihn sofort ausprobieren.
+
+Kein Verkauf in dieser Mail. Nicht einer. Sie darf ihn geschenkt bekommen, sonst
+wirkt der Pitch acht Tage später wie der eigentliche Zweck des Ganzen.
+
+### Warum es keine Nachfass-Mail mehr gibt (Patricias Entscheid, 18.09.2026)
+
+Geplant war an Tag 20 ein Nachfassen mit den **90 Storyideen für 19**. Das ist
+gestrichen, und zwar aus einem Grund, der vorher übersehen wurde:
+
+🚨 **Im Storyideen-Checkout liegt ein Upsell auf die Instagram-Kundenmaschine
+für 97.** Wer diese Mail anklickt, sieht also acht Tage nach dem 333er-Pitch
+denselben Kurs für 97. Das ist genau die Stelle, an der jemand aufhört zu
+kaufen — nicht nur dieses eine Mal, sondern grundsätzlich, weil sie ab dann auf
+den nächsten Preis wartet.
+
+**Stattdessen geht sie fünf Tage nach der Einwand-Mail direkt in die Engine.**
+Dort bekommt Loop 1 ohnehin einen Minikurs-Pitch, und zwar „Finde dein Thema"
+für 39 — ein Angebot ohne Preis-Kollision, weil es nirgends günstiger auftaucht.
+
+### Die Übergabe an die Engine — und die Fallen dabei
+
+An Tag 20 geht sie in die zentrale Pitch-Automation (Loop 1, Automation **72**).
+
+**Loop 6 bleibt an** (Patricias Entscheid, 18.09.2026). Loop 6 ist der
+IKM-Pitch für 333, den sie an Tag 12 schon bekommen hat. Nachgerechnet an der
+echten Taktung der Engine — je Loop 5 Mails im Zwei-Tage-Takt, also rund zehn
+Tage — startet Loop 6 erst nach den Loops 1 bis 5:
+
+| | |
+|---|---|
+| Tag 20 | Eintritt in die Engine |
+| ~Tag 30 · 40 · 50 · 60 · 70 | Ende Loop 1 · 2 · 3 · 4 · 5 |
+| **~Tag 70** | **Loop 6 beginnt** — gut zwei Monate nach dem Pitch an Tag 12 |
+
+Mit fünf Mehrwert-Mails davor und einem anderen Einstieg ist das kein
+Doppel-Pitch, sondern ein zweiter Anlauf in einer anderen Lebenslage. Wer
+inzwischen gekauft hat, steigt über GoalA („Instagram-Kundenmaschine schon da")
+von selbst aus.
+
+*(Eine frühere Fassung hier verlangte, Loop 6 abzuklemmen — mit der Begründung,
+der Pitch käme „drei Wochen später" nochmal. Diese Zahl war aus einer Notiz zur
+Story-Challenge übernommen und nie nachgerechnet. Sie stimmt nicht.)*
+
+**Zu „Finde dein Thema":** Rund ein Drittel der Startklar-Käuferinnen hat den
+Kurs über das Starter-Set im Checkout schon. Die Engine überspringt einen Loop,
+dessen Produkt jemand besitzt — dafür sind die GoalA-Ziele da.
+
+**Zum Preis-Konflikt bei der Kundenmaschine — auf diesem Weg besteht keiner.**
+Im Storyideen-Checkout liegt zwar ein Upsell auf die Instagram-Kundenmaschine für
+**97**, während sie an Tag 12 für **333** gepitcht wird. Die Startklar-Käuferin
+bekommt die 90 Storyideen aber als **Bump**, also direkt ausgeliefert — sie läuft
+nie durch den Storyideen-Checkout und sieht die 97 dort nicht.
+*(Patricias Klarstellung, 18.09.2026. Eine frühere Fassung dieses Abschnitts hat
+den Konflikt hier behauptet — das war falsch.)*
+
+🚨 **Wo er sehr wohl besteht:** bei jeder, die über die **laufende Meta-Anzeige**
+direkt die Storyideen für 19 kauft. Die sieht die 97 im Checkout und bekommt
+später über die Engine (Loop 6) denselben Kurs für 333 angeboten. Das ist eine
+Sache des Storyideen-Funnels, nicht dieses hier.
 
 ---
 
@@ -141,10 +228,10 @@ Der Checkout holt die schnellen Ja. Der grosse Sprung passiert später, wenn sie
 
 1. Produkt „Startklar" anlegen, 39 CHF, einmalig
 2. Zwei Order Bumps in dieser Reihenfolge: erst „90 Storyideen" für 19, direkt darunter „Starter-Set" für 39. Im Set-Bump alle drei Produkte verknüpfen
-3. Upsell-Seite: Instagram-Kundenmaschine, 199 CHF, Ablehnen-Knopf sichtbar lassen
+3. Upsell-Seite: Instagram-Kundenmaschine, **333 CHF** (voller Preis, kein Sonderpreis an dieser Stelle), Ablehnen-Knopf sichtbar lassen
 4. Downsell-Seite: Expertin statt Verkäuferin, 97 CHF — **erst freischalten, wenn das Bonusmodul umbenannt ist**
-5. Auslieferungsmail mit Kurszugang **und Zugangscode für die Werkstatt**
-6. Zugangscode zusätzlich im Kursbereich hinterlegen, damit sie ihn wiederfindet
+5. Auslieferungsmail: `auslieferungs-mail.html` in diesem Ordner. **Ohne** Kurslink und **ohne** Zugangscode — den Kurszugang schickt ThriveCart selbst, die Mail sagt das nur und führt in die Werkstatt
+6. Zugangscode `STARTKLAR_KUNDE` steht im Kurs in der Lektion „Deine Werkstatt" (erledigt 18.09.)
 7. Preis der Content-Box in `context/active-funnels.json` eintragen
 
 ---

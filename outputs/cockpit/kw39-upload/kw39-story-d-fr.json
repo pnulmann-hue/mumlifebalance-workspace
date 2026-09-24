@@ -1,0 +1,51 @@
+{
+ "name": "Fr · doTERRA · Letzter Tag",
+ "datum": "2026-09-25",
+ "profil": "doterra",
+ "brand": "oele",
+ "frames": [
+  {
+   "id": "s1",
+   "layout": "hook",
+   "text": "Heute ist der letzte Tag, an dem du in die Oktober-Runde kommst.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s2",
+   "layout": "text",
+   "text": "Der Grund ist banal: Alles, was du dafür brauchst, muss vor dem ersten Oktober bei dir liegen, und der Versand braucht seine Tage.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s3",
+   "layout": "text",
+   "text": "So läuft es ab: Du schreibst mir ENERGIE, ich frag dich drei Sachen, und dann sag ich dir ehrlich, ob es für dich passt. Wenn nicht, sag ich das auch.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s4",
+   "layout": "frage",
+   "text": "Bist du dabei?",
+   "cta": "Umfrage",
+   "optA": "Ja, schreib mir",
+   "optB": "Diesmal nicht"
+  },
+  {
+   "id": "s5",
+   "layout": "cta",
+   "text": "Ich bin heute bis am Abend am Handy. Schreib mir einfach ENERGIE, dann melde ich mich.",
+   "cta": "Antwort ENERGIE",
+   "optA": "",
+   "optB": ""
+  }
+ ],
+ "textfrei": false,
+ "hinweis": "🔴 Rot · Bogen-Schritt 5 · 🚨 Frist immer mit dem Lieferweg begründen, nie „nur noch heute“ allein",
+ "updatedAt": "2026-09-18T07:00:00.000Z"
+}

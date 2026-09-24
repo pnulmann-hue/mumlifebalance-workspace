@@ -103,6 +103,13 @@ table.vergleich td { padding:3.8mm 4.2mm; border-bottom:.5pt solid var(--linie);
 table.vergleich tr:last-child td { border-bottom:none; }
 table.vergleich td.mittel { font-weight:600; color:var(--tief); width:31%; }
 
+.quellenblock { background:var(--papier); border:.5pt solid var(--linie); border-left:2.5pt solid var(--tief);
+  border-radius:1mm; padding:5mm 5.5mm; page-break-inside:avoid; display:flex; flex-direction:column; gap:2.4mm; }
+.quellenblock .label { font-family:'IBM Plex Mono',monospace; font-size:8pt; letter-spacing:.12em;
+  text-transform:uppercase; font-weight:600; color:var(--tief); }
+.quellenblock p { font-size:9.2pt; line-height:1.45; color:var(--leise); }
+.quellenblock .gruppe { font-weight:700; color:var(--tief); }
+
 .morgen { border-top:.5pt solid var(--linie); padding-top:4mm; font-size:10.4pt; color:var(--leise);
           page-break-inside:avoid; }
 .morgen span { font-family:Philosopher,Georgia,serif; color:var(--orange); font-size:12pt; margin-right:2mm; }

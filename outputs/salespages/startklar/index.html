@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Startklar &mdash; in einer Woche steht dein Instagram-Profil</title>
+  <meta name="description" content="Der Instagram-Grundkurs für Network-Mamas, die noch nie etwas gepostet haben. 12 Lektionen zum Mitmachen, Klick für Klick auf dem Handy. 39 CHF." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* ============================================================
+       MARKEN-CONFIG — hier stellst du deine Farben ein.
+       Details + Font-Wechsel: siehe BRAND-CONFIG.md
+       --black  = kräftige Hauptfarbe (bold sections)
+       --berry  = zweite kräftige Farbe (Akzent, für Farb-Wechsel)  -> im Code direkt #0d626a
+       --cream  = helle Sektionsfarbe (meist weiss)
+       --gold   = Akzent-/Button-Farbe   --gold-2 = helle Akzentvariante
+       --ink    = Textfarbe auf hellen Sektionen
+       Die Beispielwerte unten sind ein Rosé/Gold-Schema — tausch sie gegen deine Marke.
+       ============================================================ */
+    :root {
+      --black: #12828c;   /* kräftige Hauptfarbe */
+      --cream: #ffffff;   /* helle Sektionen */
+      --gold: #dc822e;    /* Akzent / Buttons */
+      --gold-2: #f2c08a;  /* helle Akzentvariante */
+      --ink: #0c1c30;     /* Text auf hell */
+      --white: #ffffff;
+      --muted: #5c6b75;   /* gedämpfter Text */
+      --muted-light: #c9e2e3;
+    }
+
+    body {
+      font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--black);
+      color: #fff;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    img { max-width: 100%; display: block; }
+    .wrap { max-width: 1160px; margin: 0 auto; padding: 0 22px; }
+    .gold { color: var(--gold); }
+    em.i { font-style: italic; }
+
+    /* ===== CTA ===== */
+    .cta {
+      display: inline-block;
+      background: var(--gold);
+      color: #fff;
+      padding: 22px 46px;
+      font-weight: 800;
+      font-size: clamp(15px, 2vw, 21px);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 14px 34px rgba(41, 85, 109, 0.32);
+      text-align: center;
+    }
+    .cta:hover { background: var(--gold-2); transform: translateY(-2px); }
+    .cta-wide { display: block; max-width: 720px; margin: 0 auto; }
+
+    /* ===== SECTION BASES ===== */
+    .sec-dark { background: var(--black); color: #fff; }
+    .sec-cream { background: var(--cream); color: var(--ink); }
+    .sec-berry { background: #0d626a; color: #fff; }
+    section { padding: 84px 0; }
+
+    h1, h2, h3 { font-weight: 800; line-height: 1.08; letter-spacing: -0.5px; }
+
+    /* ===== HERO ===== */
+    .hero { padding: 46px 0 20px; text-align: center; }
+    .logo-script {
+      font-family: 'Philosopher', cursive;
+      font-size: clamp(46px, 6vw, 72px);
+      color: var(--gold-2);
+      line-height: 1;
+      margin-bottom: 22px;
+    }
+    .hero h1 {
+      font-size: clamp(32px, 5.4vw, 66px);
+      text-transform: uppercase;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .hero .sub {
+      font-size: clamp(16px, 2vw, 22px);
+      font-weight: 500;
+      max-width: 760px;
+      margin: 26px auto 0;
+      color: #e4f0f0;
+    }
+    .hero .sub b { color: #fff; font-weight: 800; }
+
+    /* ===== COLLAGE ===== */
+    .collage {
+      position: relative;
+      max-width: 1000px;
+      margin: 44px auto 0;
+      min-height: 380px;
+    }
+    .collage .carousel-main {
+      position: relative;
+      z-index: 4;
+      width: 270px;
+      margin: 0 auto;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.6);
+      border: 3px solid #ffffff;
+    }
+    .collage .card {
+      background: #fff;
+      color: var(--ink);
+      border-radius: 12px;
+      box-shadow: 0 22px 50px rgba(0,0,0,0.5);
+      padding: 20px 22px;
+      text-align: left;
+    }
+    .collage .stat .n {
+      font-size: 34px;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .collage .stat .l {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 6px;
+    }
+    .collage .ins { padding: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 22px 50px rgba(0,0,0,0.5); }
+    .collage .ins img { width: 100%; }
+    .collage .bubble {
+      background: var(--gold-2);
+      color: #0c1c30;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 12px 18px;
+      border-radius: 16px;
+      position: relative;
+      box-shadow: 0 14px 30px rgba(0,0,0,0.4);
+    }
+    .collage .bubble::after {
+      content: "";
+      position: absolute;
+      bottom: -10px; left: 26px;
+      border: 10px solid transparent;
+      border-top-color: var(--gold-2);
+      border-bottom: 0;
+    }
+    /* Desktop scatter */
+    @media (min-width: 861px) {
+      .collage .el { position: absolute; }
+      .collage .e-tl { top: 8%; left: 0; width: 240px; transform: rotate(-5deg); }
+      .collage .e-tr { top: 2%; right: 0; width: 260px; transform: rotate(4deg); }
+      .collage .e-ml { top: 46%; left: 4%; width: 210px; transform: rotate(-3deg); }
+      .collage .e-mr { top: 40%; right: 3%; width: 250px; transform: rotate(3deg); }
+      .collage .e-bubble { top: 30%; left: 20%; transform: rotate(-4deg); z-index: 6; }
+    }
+    /* Mobile stack */
+    @media (max-width: 860px) {
+      .collage { min-height: 0; display: flex; flex-direction: column; align-items: center; gap: 18px; }
+      .collage .el { width: 100%; max-width: 340px; }
+      .collage .e-bubble { order: -1; }
+    }
+
+    /* ===== STATS STRIP ===== */
+    .strip-head { text-align: center; font-size: clamp(20px, 3vw, 32px); font-weight: 800; color: #fff; margin-bottom: 46px; }
+    .strip-head .gold { color: var(--gold-2); }
+    .stats-strip { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
+    @media (max-width: 760px) { .stats-strip { grid-template-columns: repeat(2,1fr); gap: 34px 20px; } }
+    .sstat { text-align: center; }
+    .sstat .n { font-size: clamp(34px, 5vw, 54px); font-weight: 900; color: #fff; line-height: 1; }
+    .sstat .l { font-size: 12.5px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--gold-2); margin-top: 12px; line-height: 1.45; }
+
+    /* ===== STATEMENT BAND ===== */
+    .band { padding: 66px 0; text-align: center; }
+    .band .stmt {
+      font-size: clamp(21px, 3.4vw, 38px);
+      font-weight: 800;
+      line-height: 1.25;
+      max-width: 960px;
+      margin: 0 auto 34px;
+    }
+    .band.sec-cream .stmt { color: var(--ink); }
+    .band .stmt.no-cta { margin-bottom: 0; }
+
+    /* ===== EYEBROW ===== */
+    .eyebrow-c { text-align: center; font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-2); margin-bottom: 16px; }
+    .sec-cream .eyebrow-c { color: var(--gold); }
+
+    /* ===== STORY (empathy) ===== */
+    .story-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 46px; align-items: start; max-width: 1080px; margin: 0 auto; }
+    @media (max-width: 860px) { .story-grid { grid-template-columns: 1fr; gap: 30px; } }
+    .story-head { font-size: clamp(24px, 3.8vw, 44px); color: var(--ink); text-transform: none; margin-bottom: 24px; }
+    .story-head .gold { color: var(--gold); }
+    .story-narr p { font-size: 17px; line-height: 1.75; color: var(--muted); margin-bottom: 18px; }
+    .story-narr p:last-child { margin-bottom: 0; }
+    .story-narr p b { color: var(--ink); font-weight: 700; }
+    .painlist { background: #fff; border: 1px solid #dfeaea; border-radius: 16px; box-shadow: 0 22px 50px rgba(0,0,0,0.09); padding: 8px 26px; }
+    .pain { display: flex; gap: 14px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e9f1f1; font-size: 15.5px; color: var(--muted); line-height: 1.55; }
+    .pain:last-child { border-bottom: none; }
+    .pain .x { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #ddebeb; color: var(--black); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 13px; margin-top: 1px; }
+
+    /* ===== MECHANISM before/after ===== */
+    .mech-head { text-align: center; font-size: clamp(26px, 4.2vw, 48px); text-transform: none; max-width: 900px; margin: 0 auto 20px; }
+    .mech-head .gold { color: var(--gold-2); }
+    .mech-sub { text-align: center; font-size: 17px; line-height: 1.75; max-width: 740px; margin: 0 auto 14px; color: #e4f0f0; }
+    .ba { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 900px; margin: 44px auto 0; }
+    @media (max-width: 760px) { .ba { grid-template-columns: 1fr; } }
+    .bax { background: #fff; color: var(--ink); border-radius: 16px; padding: 28px 26px; box-shadow: 0 22px 50px rgba(0,0,0,0.16); }
+    .bax.good { border: 3px solid var(--gold); }
+    .bax .bh { font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #8ab8bb; margin-bottom: 16px; }
+    .bax.good .bh { color: var(--gold); }
+    .bax .br { display: flex; gap: 12px; align-items: flex-start; font-size: 15.5px; color: var(--muted); margin-bottom: 13px; line-height: 1.5; }
+    .bax .br:last-child { margin-bottom: 0; }
+    .bax .br .m { flex-shrink: 0; font-weight: 900; }
+    .bax .br .x { color: #9ac4c7; } .bax.good .br .c { color: var(--gold); }
+    .ba-label { text-align: center; font-style: italic; font-size: 15px; color: #e4f0f0; margin-top: 28px; }
+
+    /* ===== STEPS (journey) ===== */
+    .steps-head {
+      text-align: center;
+      font-size: clamp(26px, 4.4vw, 50px);
+      text-transform: none;
+      max-width: 900px;
+      margin: 0 auto 60px;
+      color: var(--ink);
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+      align-items: start;
+      gap: 10px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .step { text-align: center; position: relative; }
+    .step .circle {
+      width: 74px; height: 74px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: #fff;
+      font-weight: 900;
+      font-size: 30px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 22px;
+      box-shadow: 0 14px 30px rgba(220,130,46,0.4);
+    }
+    .step p { font-size: clamp(15px, 1.8vw, 18px); font-weight: 700; color: var(--ink); max-width: 300px; margin: 0 auto 20px; }
+    .step p .gold { color: var(--gold); }
+    .step .visual {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+      border: 1px solid #f1ecdd;
+    }
+    .step .visual img { width: 100%; }
+    .arrow {
+      align-self: center;
+      font-size: 42px;
+      color: var(--black);
+      font-weight: 400;
+      padding-top: 20px;
+    }
+    .steps-note { text-align: center; font-style: italic; color: var(--muted); font-size: 15px; margin-top: 40px; }
+    @media (max-width: 860px) {
+      .steps { grid-template-columns: 1fr; gap: 14px; }
+      .arrow { transform: rotate(90deg); padding: 4px 0; }
+    }
+
+    /* ===== SPLIT ===== */
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; max-width: 1120px; margin: 0 auto; }
+    .split .s-img { border-radius: 16px; overflow: hidden; box-shadow: 0 26px 60px rgba(0,0,0,0.2); }
+    .split .s-img.photo { min-height: 420px; background: #d6e7e7 center/cover no-repeat; }
+    .split h2 { font-size: clamp(26px, 3.6vw, 46px); color: var(--gold); text-transform: uppercase; margin-bottom: 22px; }
+    .split.on-cream p { font-size: 17px; line-height: 1.75; color: var(--muted); margin-bottom: 16px; }
+    .split .cta { margin-top: 12px; }
+    @media (max-width: 820px) { .split { grid-template-columns: 1fr; gap: 28px; } .split .s-img.photo { min-height: 300px; } }
+
+    /* ===== INCLUDED CARD ===== */
+    .inc-wrap { max-width: 1000px; margin: 0 auto; background: var(--cream); color: var(--ink); border-radius: 22px; border: 3px solid var(--gold); padding: 20px 20px 56px; box-shadow: 0 30px 70px rgba(0,0,0,0.5); }
+    .inc-collage { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 8px 0 34px; }
+    .inc-collage img { width: 150px; border-radius: 10px; box-shadow: 0 14px 30px rgba(0,0,0,0.16); }
+    .inc-collage .price-tag { align-self: flex-start; background: var(--gold); color: #fff; font-weight: 800; padding: 8px 16px; border-radius: 6px; transform: rotate(-6deg); box-shadow: 0 10px 22px rgba(0,0,0,0.2); font-size: 15px; }
+    .inc-title { text-align: center; font-size: clamp(24px, 3.6vw, 44px); margin: 0 auto 40px; }
+    .inc-list { list-style: none; max-width: 780px; margin: 0 auto; }
+    .inc-list li { display: flex; gap: 18px; align-items: flex-start; padding: 15px 0; }
+    .inc-list li .ck {
+      flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%;
+      background: var(--black); color: var(--gold);
+      display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900;
+      margin-top: 2px;
+    }
+    .inc-list li span.txt { font-size: clamp(15px, 1.9vw, 18px); line-height: 1.55; color: var(--ink); }
+    .inc-list li span.txt b { color: var(--gold); font-weight: 800; }
+    .inc-list li span.txt em { font-style: italic; color: var(--muted); }
+    .inc-price { text-align: center; margin: 48px auto 0; }
+    .inc-price .old { font-size: clamp(24px, 4vw, 34px); font-weight: 700; color: #8ab8bb; text-decoration: line-through; }
+    .inc-price .now { font-size: clamp(44px, 8vw, 72px); font-weight: 900; color: var(--black); line-height: 1; }
+    .inc-price .save { display: block; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-top: 8px; }
+    .inc-price .cta { margin-top: 28px; }
+
+    /* ===== BONUS ===== */
+    .bonus-head { text-align: center; font-size: clamp(24px, 4vw, 46px); text-transform: none; color: var(--ink); max-width: 820px; margin: 0 auto 14px; }
+    .bonus-head .gold { color: var(--gold); }
+    .bonus-sub { text-align: center; font-size: 16px; color: var(--muted); max-width: 620px; margin: 0 auto 48px; }
+    .bonus-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; max-width: 900px; margin: 0 auto; }
+    @media (max-width: 700px) { .bonus-grid { grid-template-columns: 1fr; } }
+    .bcard { background: #fff; border: 1px solid #eee8d8; border-radius: 16px; padding: 28px; box-shadow: 0 18px 44px rgba(0,0,0,0.09); position: relative; }
+    .bcard .tag { position: absolute; top: 24px; right: 24px; background: var(--gold); color: #fff; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 5px 12px; border-radius: 6px; }
+    .bcard h3 { font-size: 20px; color: var(--ink); margin-bottom: 10px; padding-right: 96px; }
+    .bcard p { font-size: 15px; color: var(--muted); line-height: 1.6; }
+
+    /* ===== FOR WHOM ===== */
+    .fw-head { text-align: center; font-size: clamp(26px, 4.2vw, 48px); text-transform: uppercase; max-width: 900px; margin: 0 auto 40px; }
+    .fw-list { list-style: none; max-width: 760px; margin: 0 auto 48px; }
+    .fw-list li { display: flex; gap: 16px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.12); font-size: clamp(15px, 1.9vw, 19px); }
+    .fw-list li::before { content: "→"; color: var(--gold-2); font-weight: 900; flex-shrink: 0; }
+    .fw-list li:last-child { border-bottom: none; }
+
+    /* ===== GUARANTEE ===== */
+    .guar { max-width: 840px; margin: 0 auto; display: grid; grid-template-columns: auto 1fr; gap: 34px; align-items: center; background: #fff; border: 3px solid var(--gold); border-radius: 20px; padding: 38px 40px; box-shadow: 0 26px 60px rgba(0,0,0,0.12); }
+    @media (max-width: 640px) { .guar { grid-template-columns: 1fr; text-align: center; justify-items: center; } }
+    .guar .seal { width: 120px; height: 120px; flex-shrink: 0; border-radius: 50%; background: var(--black); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 16px 34px rgba(18,130,140,0.35); }
+    .guar .seal b { font-size: 42px; font-weight: 900; line-height: 1; color: var(--gold-2); }
+    .guar .seal span { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
+    .guar .gt b { display: block; font-size: 21px; color: var(--ink); margin-bottom: 10px; }
+    .guar .gt p { font-size: 15.5px; color: var(--muted); line-height: 1.65; }
+    .guar .gt .ph { color: var(--black); font-weight: 700; }
+
+    /* ===== OBJECTIONS ===== */
+    .obj-head { text-align: center; font-size: clamp(26px, 4.2vw, 48px); text-transform: none; margin: 0 auto 44px; max-width: 820px; }
+    .obj-head .gold { color: var(--gold-2); }
+    .obj-grid { display: grid; gap: 14px; max-width: 820px; margin: 0 auto; }
+    .ocard { background: #fff; border-radius: 14px; padding: 24px 28px; box-shadow: 0 14px 34px rgba(0,0,0,0.16); }
+    .ocard .oq { display: block; font-weight: 800; font-size: 17px; color: var(--black); margin-bottom: 9px; }
+    .ocard p { font-size: 15.5px; color: var(--muted); line-height: 1.65; }
+
+    /* ===== FAQ ===== */
+    .faq-head { text-align: center; font-size: clamp(28px, 4.4vw, 50px); text-transform: uppercase; margin-bottom: 44px; color: var(--ink); }
+    .faq-item { background: #fff; border: 1px solid #e9e3d2; border-radius: 10px; margin-bottom: 14px; padding: 22px 26px; cursor: pointer; max-width: 820px; margin-left: auto; margin-right: auto; }
+    .faq-item summary { list-style: none; font-weight: 700; font-size: 17px; color: var(--ink); display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; color: var(--gold); font-size: 28px; line-height: 1; transition: transform 0.2s; }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item p { margin-top: 15px; font-size: 16px; line-height: 1.7; color: var(--muted); }
+
+    /* ===== FINAL ===== */
+    .final { text-align: center; }
+    .final h2 { font-size: clamp(30px, 5.4vw, 62px); text-transform: uppercase; max-width: 900px; margin: 0 auto 22px; }
+    .final p { font-size: 18px; color: #ddd6c6; max-width: 640px; margin: 0 auto 36px; }
+
+    /* ===== FOOTER ===== */
+    footer { background: #0d626a; text-align: center; padding: 50px 20px; border-top: 1px solid #ffffff; }
+    footer .fl { font-family: 'Philosopher', cursive; font-size: 34px; color: var(--gold-2); margin-bottom: 16px; }
+    footer .fn a { color: #c2dedf; margin: 0 12px; font-size: 12px; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; }
+    footer .fn a:hover { color: var(--gold-2); }
+    footer .cp { margin-top: 22px; font-size: 12px; color: #9cc2c5; }
+
+    /* ===== FOUNDER STATS ===== */
+    .fstats { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; max-width: 1120px; margin: 40px auto 0; }
+    @media (max-width: 760px) { .fstats { grid-template-columns: 1fr; } }
+    .fstat { background: #fff; border: 1px solid #f1ecdd; border-radius: 14px; padding: 24px 26px; box-shadow: 0 14px 34px rgba(0,0,0,0.08); }
+    .fstat .n { font-size: clamp(26px, 3.4vw, 40px); font-weight: 900; color: var(--black); line-height: 1; }
+    .fstat .l { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-top: 10px; }
+    .ednote { max-width: 1120px; margin: 20px auto 0; border: 1px dashed var(--gold); border-radius: 12px; padding: 16px 22px; background: #fcf2e6; }
+    .ednote .et { font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+    .ednote p { font-size: 13.5px; color: var(--muted); line-height: 1.6; margin: 0; }
+
+    /* ===== PROZESS-TIMELINE ===== */
+    .timeline { max-width: 780px; margin: 0 auto; position: relative; padding-left: 46px; }
+    .timeline::before { content: ""; position: absolute; left: 14px; top: 10px; bottom: 10px; width: 2px; background: rgba(242,192,138,0.4); }
+    .tstep { position: relative; padding-bottom: 44px; }
+    .tstep:last-child { padding-bottom: 0; }
+    .tstep .dot { position: absolute; left: -46px; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--gold); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 14px; box-shadow: 0 0 0 6px var(--black); }
+    .tstep .lbl { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-2); margin-bottom: 6px; }
+    .tstep h3 { font-size: clamp(20px, 2.6vw, 26px); color: #fff; margin-bottom: 10px; }
+    .tstep > p { font-size: 15.5px; color: #e4f0f0; line-height: 1.6; margin-bottom: 12px; }
+    .tstep ul { list-style: none; padding: 0; margin: 0; }
+    .tstep ul li { display: flex; gap: 10px; font-size: 14px; color: #dcecec; margin-bottom: 8px; }
+    .tstep ul li::before { content: "→"; color: var(--gold-2); flex-shrink: 0; }
+
+    /* ===== VERGLEICHSTABELLE ===== */
+    .vtable { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #f1ecdd; border-radius: 18px; overflow: hidden; box-shadow: 0 22px 50px rgba(0,0,0,0.08); }
+    @media (max-width: 760px) { .vtable { grid-template-columns: 1fr; } }
+    .vcol.bad { background: #f7f3e9; }
+    .vcol.good { background: #fff; }
+    @media (min-width: 761px) { .vcol.good { border-left: 1px solid #f1ecdd; } }
+    .vhead { padding: 22px 26px; font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 1px solid #f1ecdd; }
+    .vcol.bad .vhead { color: #8ab8bb; }
+    .vcol.good .vhead { color: var(--gold); }
+    .vrow { display: flex; gap: 14px; align-items: flex-start; padding: 17px 26px; border-bottom: 1px solid #eee8d8; font-size: 15px; color: var(--ink); line-height: 1.5; }
+    .vrow:last-child { border-bottom: none; }
+    .vrow .ic { flex-shrink: 0; width: 25px; height: 25px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 12px; margin-top: 1px; }
+    .vcol.bad .ic { background: #ddebeb; color: #17949f; }
+    .vcol.good .ic { background: #fae7d3; color: #b4661f; }
+
+    /* ===== VALUE-STACK PRICE ===== */
+    .inc-list li .val { margin-left: auto; flex-shrink: 0; padding-left: 16px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--muted); white-space: nowrap; align-self: flex-start; margin-top: 3px; }
+    .inc-list li .val.core { color: var(--gold); }
+    @media (max-width: 600px) { .inc-list li { flex-wrap: wrap; } .inc-list li .val { margin-left: 48px; padding-left: 0; margin-top: 6px; } }
+    .inc-total { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; max-width: 780px; margin: 40px auto 0; padding-top: 28px; border-top: 1px solid #f1ecdd; }
+    @media (max-width: 640px) { .inc-total { grid-template-columns: 1fr; gap: 22px; text-align: center; justify-items: center; } }
+    .inc-total .pl-lbl, .inc-total .pr-lbl { font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+    .inc-total .pl-price { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+    .inc-total .pl-price .old { font-size: clamp(20px, 3vw, 28px); font-weight: 700; color: #8ab8bb; text-decoration: line-through; }
+    .inc-total .pl-price .now { font-size: clamp(44px, 8vw, 72px); font-weight: 900; color: var(--black); line-height: 1; }
+    .inc-total .pl-price .em { font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+    .inc-total .pr { text-align: right; }
+    @media (max-width: 640px) { .inc-total .pr { text-align: center; } }
+    .inc-total .pr-val { font-size: clamp(22px, 3.4vw, 32px); font-weight: 800; color: #8ab8bb; text-decoration: line-through; }
+    .pfine { text-align: center; font-size: 13px; color: var(--muted); margin-top: 18px; }
+    .phint { text-align: center; font-size: 11.5px; color: #91a8b0; margin-top: 8px; font-style: italic; }
+    .pwarum { display: block; text-align: center; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-top: 18px; }
+    .pwarum:hover { color: #b4661f; }
+
+    /* reveal */
+    .rev { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .rev.in { opacity: 1; transform: none; }
+  
+  /* Marken-Nachtrag: Ueberschriften in Philosopher */
+  h1,h2,h3,.disp,.display{font-family:'Philosopher',Georgia,serif;}
+  /* Knopf orange mit dunkler Schrift — weiss auf Orange traegt nur 2,9:1 */
+  a.cta,.cta{color:#0c1c30;}
+  /* Highlight-Wort auf Petrol-Flaeche aufhellen: volles Orange auf Petrol
+     traegt nur 1,6:1, das helle Orange rund 2,8:1. Auf hellen Sektionen
+     bleibt das volle Orange. */
+  .sec-dark .gold{color:#f7c08f;}
+
+    /* --- Ergänzungen für diese Seite --- */
+    .hero-split {
+      display: grid; grid-template-columns: 1.15fr 0.85fr;
+      gap: 46px; align-items: center; margin-top: 40px;
+    }
+    .hero-split .hs-img {
+      border-radius: 14px; overflow: hidden; aspect-ratio: 4/5;
+      background-size: cover; background-position: center 22%;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.25);
+    }
+    /* In der schmaleren Hero-Spalte bricht die Versal-Headline sonst in fünf
+       Zeilen. Kleiner und gemischt gesetzt passt sie auf zwei bis drei und
+       liest sich zugleich näher an der Marke. */
+    .hero-split h1 {
+      text-align: left;
+      text-transform: none;
+      font-size: clamp(30px, 3.9vw, 50px);
+      line-height: 1.12;
+      max-width: none;
+    }
+    .hero-split .sub { text-align: left; margin-left: 0; }
+    .hero-split .cta { margin-top: 30px; }
+    .hero-fine { font-size: 14px; opacity: 0.8; margin-top: 16px; letter-spacing: 0.3px; }
+    @media (max-width: 860px) {
+      .hero-split { grid-template-columns: 1fr; gap: 30px; }
+      .hero-split .hs-img { aspect-ratio: 3/2; background-position: center 18%; }
+      .hero-split h1, .hero-split .sub { text-align: center; }
+      .hero-split .cta { display: block; text-align: center; }
+    }
+
+    /* Das Portraet ist hochformatig, das Gesicht sitzt im oberen Drittel.
+       Ohne eigene Position schneidet cover genau dort hinein. */
+    .split .s-img.photo { background-position: center 18%; }
+    .szene { border-left: 3px solid var(--gold); padding: 4px 0 4px 22px; margin-bottom: 30px; }
+    .szene h3 { font-family: 'Philosopher', serif; font-size: clamp(19px, 2.4vw, 25px); margin-bottom: 10px; }
+    .szene p { margin-bottom: 10px; }
+    .hinweis-box {
+      background: #fff5e8; border: 1px solid var(--gold);
+      border-radius: 10px; padding: 16px 20px; margin: 0 auto 30px;
+      max-width: 780px; color: var(--ink); font-size: 15px; line-height: 1.6;
+    }
+    .hinweis-box b { color: #b3651f; }
+  </style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<section class="sec-dark hero">
+  <div class="wrap">
+    <div class="hero-split">
+      <div>
+        <h1>In einer Woche steht dein Profil &mdash; <span class="gold">und du weisst, wo du hindrücken musst.</span></h1>
+        <p class="sub">Für Network-Mamas, die bis jetzt nur mitgelesen haben. Kein Vorwissen, kein Fachchinesisch, keine Strategie-Theorie: Ich zeige dir auf meinem Handy jeden einzelnen Klick, und du machst ihn mit.</p>
+        <a href="https://mumlifebalance.thrivecart.com/startklar/" class="cta">Ja, ich fang jetzt an &rarr;</a>
+        <p class="hero-fine">39 CHF einmalig &middot; Sofort-Zugang &middot; kein Abo &middot; Werkstatt inklusive</p>
+      </div>
+      <div class="hs-img" style="background-image:url('assets/patricia-hero.jpg')"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ZAHLEN-BAND (alle Werte sind echte Produktangaben) ===== -->
+<section class="sec-berry" style="padding:56px 0 40px">
+  <div class="wrap">
+    <p class="strip-head">Was dich erwartet, in <span class="gold">Zahlen</span>:</p>
+    <div class="stats-strip">
+      <div class="sstat"><div class="n" data-n="12">12</div><div class="l">Lektionen<br>zum Mitmachen</div></div>
+      <div class="sstat"><div class="n" data-n="75">75</div><div class="l">Minuten Video<br>insgesamt</div></div>
+      <div class="sstat"><div class="n" data-n="12">12</div><div class="l">Stationen in<br>deiner Werkstatt</div></div>
+      <div class="sstat"><div class="n" data-n="5">5</div><div class="l">fertige Beiträge<br>für deine erste Woche</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EMPATHIE ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <div class="eyebrow-c">Kennst du das?</div>
+    <div class="story-grid">
+      <div class="story-narr rev">
+        <h2 class="story-head">Du hast das Gratis-PDF gelesen. <span class="gold">Und sitzt trotzdem da.</span></h2>
+        <p>Du weisst inzwischen, dass deine Bio vier Zeilen haben soll, und dass Highlights wichtig sind. Du hast es sogar aufgeschrieben. Dann nimmst du dein Handy in die Hand und findest den Punkt nicht, wo man das einstellt.</p>
+        <p><b>Das ist kein Kopfproblem.</b> Du hast die Strategie längst verstanden — was fehlt, sind die Handgriffe. Und fragen magst du niemanden, weil es sich anfühlt, als müsstest du das eigentlich können.</p>
+      </div>
+      <div class="painlist rev">
+        <div class="pain"><span class="x">✕</span> Du tippst deine Bio, drückst auf Enter für die zweite Zeile — und es passiert nichts. Nach zwanzig Minuten lässt du alles in einer Zeile.</div>
+        <div class="pain"><span class="x">✕</span> Du willst ein Reel hochladen und weisst nicht, ob das jetzt unter Beitrag geht oder unter Reel.</div>
+        <div class="pain"><span class="x">✕</span> Du hast drei Anläufe für ein Video gemacht, und beim vierten war deine Stimme so steif, dass du alles gelöscht hast.</div>
+        <div class="pain"><span class="x">✕</span> Du siehst bei anderen diese kleinen Kreise unter der Bio und hast keine Ahnung, wie die da reinkommen.</div>
+        <div class="pain"><span class="x">✕</span> Und du schiebst das Anfangen seit Wochen vor dir her, weil sich alles unfertig anfühlt.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MECHANISMUS ===== -->
+<section class="sec-dark">
+  <div class="wrap">
+    <div class="eyebrow-c">Der eigentliche Grund</div>
+    <h2 class="mech-head">Dir fehlt keine Strategie. <span class="gold">Dir fehlen die Handgriffe.</span></h2>
+    <p class="mech-sub">Fast alles, was du über Instagram findest, setzt voraus, dass du die Technik schon kannst. Es geht um Positionierung, um Reichweite, um den richtigen Hook — und niemand erklärt dir, wo auf deinem Handy du eigentlich hindrücken musst, um das umzusetzen.</p>
+    <p class="mech-sub">Genau dort bleiben die meisten hängen, oft monatelang. Und weil es sich nach einer Anfängerfrage anfühlt, fragt keine nach.</p>
+    <div class="ba">
+      <div class="bax rev">
+        <div class="bh">Wie es bisher läuft</div>
+        <div class="br"><span class="m x">✕</span> Du liest, wie eine gute Bio aussehen soll</div>
+        <div class="br"><span class="m x">✕</span> Du nimmst dir vor, es am Wochenende zu machen</div>
+        <div class="br"><span class="m x">✕</span> Du findest die Einstellung nicht und lässt es</div>
+        <div class="br"><span class="m x">✕</span> Nächsten Monat steht dein Profil immer noch nicht</div>
+      </div>
+      <div class="bax good rev">
+        <div class="bh">Wie es hier läuft</div>
+        <div class="br"><span class="m c">✓</span> Du legst dein Handy neben meins</div>
+        <div class="br"><span class="m c">✓</span> Ich drücke, du drückst mit</div>
+        <div class="br"><span class="m c">✓</span> Am Ende der Lektion ist es gemacht</div>
+        <div class="br"><span class="m c">✓</span> Nach einem Nachmittag steht dein Profil</div>
+      </div>
+    </div>
+    <p class="ba-label">Am Ende ist es gemacht, nicht verstanden.</p>
+  </div>
+</section>
+
+<!-- ===== SOLL-SZENEN ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <div class="eyebrow-c">So könnte dein nächster Monat aussehen</div>
+    <h2 class="steps-head" style="margin-bottom:44px">Drei Momente, die <span class="gold">vorher nicht möglich waren.</span></h2>
+    <div class="szene rev">
+      <h3>🌙 Sonntagabend, die Kinder schlafen</h3>
+      <p>Du sitzt auf dem Sofa und machst dein Profil auf, diesmal zum Anschauen, so wie eine Fremde es sehen würde. Oben dein Name, daneben steht, wobei du hilfst. Darunter vier Zeilen, die man in zwei Sekunden versteht, fünf Highlight-Kreise mit Cover und ein Link, der funktioniert.</p>
+      <p>Vor zwei Wochen wusstest du nicht, wo man den Zeilenumbruch einstellt.</p>
+    </div>
+    <div class="szene rev">
+      <h3>☕ Dienstagmorgen, kurz nach acht</h3>
+      <p>Die Kinder sind aus dem Haus, du stehst in der Küche und schmierst dir ein Brot. Dir fällt ein Satz ein, den du deiner Wunschkundin schon lange sagen willst.</p>
+      <p>Du stellst das Handy ans Fenster, drückst auf Aufnahme, sagst deinen Satz und legst Text drüber. Sieben Sekunden, hochgeladen, bevor der Kaffee kalt ist — ohne Anlauf und ohne Löschen.</p>
+    </div>
+    <div class="szene rev">
+      <h3>💬 Donnerstagabend, halb zehn</h3>
+      <p>Du schaust nochmal kurz aufs Handy und siehst zwei Antworten auf deine Story-Umfrage, beide von Frauen, die du nicht persönlich kennst. Eine hat dazugeschrieben: „Genau mein Thema."</p>
+      <p>Das ist noch kein Verkauf und noch keine Kundin. Aber es ist zum ersten Mal jemand, der wegen dir da ist und nicht wegen deiner Produkte.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATEMENT ===== -->
+<section class="sec-dark band">
+  <div class="wrap">
+    <p class="stmt no-cta">Das ist kein fertiges Business. <span class="gold">Das ist der Boden, auf dem eins wachsen kann</span> — und ohne diesen Boden fängt gar nichts an.</p>
+  </div>
+</section>
+
+<!-- ===== WER DAHINTERSTECKT ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <div class="eyebrow-c">Wer dir das zeigt</div>
+    <div class="split on-cream">
+      <div class="s-img photo" style="background-image:url('assets/patricia-portrait.jpg');"></div>
+      <div>
+        <h2>Ich bin nicht die Mentorin am Strand.</h2>
+        <p>Ich bin vierfache Mama aus dem Appenzellerland, arbeite achtzehn Stunden pro Woche und verkaufe seit über einem Jahr jeden einzelnen Monat. Mein Business läuft von einem Schreibtisch aus, während meine Kinder in der Schule sind.</p>
+        <p>Mein erstes Network war ein anderes als heute. Drei Jahre dabei, dann aufgegeben, weil ich Produktbilder gepostet und mich gewundert habe, warum nichts zurückkommt. Als ich später Mentees begleitet habe, kam bei fast jeder dieselbe Frage — keine nach der Strategie, alle wollten wissen: wo genau muss ich hier drücken?</p>
+        <p><b>Genau diese drei Jahre erspare ich dir hier.</b></p>
+        <a href="https://mumlifebalance.thrivecart.com/startklar/" class="cta">Ich bin dabei &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIMELINE ===== -->
+<section class="sec-dark">
+  <div class="wrap">
+    <div class="eyebrow-c">So einfach funktioniert es</div>
+    <h2 class="mech-head" style="color:#fff">In drei Schritten zu <span class="gold">deinem fertigen Profil.</span></h2>
+    <p class="mech-sub" style="margin-bottom:8px">Du brauchst ein Handy, einen ruhigen Nachmittag und die Bereitschaft, den ersten Beitrag rauszulassen, obwohl er noch nicht perfekt ist.</p>
+    <div class="timeline" style="margin-top:54px">
+      <div class="tstep rev"><div class="dot">1</div><div class="lbl">Sofort nach dem Kauf</div><h3>Du klickst und bist drin</h3><p>Kein Startdatum und keine Warteliste. Du bekommst deine Zugangsdaten per Mail, dazu deinen Zugangscode für die Werkstatt — alles direkt am Handy zu öffnen.</p><ul><li>Kein Abo, kein Zeitlimit</li><li>Läuft am Handy und am Computer</li></ul></div>
+      <div class="tstep rev"><div class="dot">2</div><div class="lbl">Ein Nachmittag oder drei Abende</div><h3>Du schaust nicht zu, du machst mit</h3><p>Du legst dein Handy neben meins, ich drücke, du drückst mit. Nach jeder Lektion füllst du die passende Station in deiner Werkstatt aus und bekommst sofort zurück, ob dein Text für deine Wunschkundin funktioniert.</p><ul><li>Lektionen von 5 bis 12 Minuten</li><li>Anhalten und zurückspulen, so oft du willst</li></ul></div>
+      <div class="tstep rev"><div class="dot">3</div><div class="lbl">Am Ende</div><h3>Du postest deine erste Woche</h3><p>Fünf Beiträge auf feste Tage verteilt: Montag, Mittwoch und Freitag je ein Beitrag, Dienstag und Donnerstag eine Story mit Umfrage. Am Wochenende ist frei, und du musst dir nichts mehr ausdenken.</p><ul><li>An jedem Feld ein fertiges Beispiel</li><li>Ein Klick setzt es ins Feld</li></ul></div>
+    </div>
+    <div style="text-align:center;margin-top:52px"><a href="https://mumlifebalance.thrivecart.com/startklar/" class="cta">Ja, ich will das &rarr;</a></div>
+  </div>
+</section>
+
+<!-- ===== VERGLEICH ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <h2 class="steps-head" style="margin-bottom:18px">Ein Gratis-Guide sagt dir, <em class="i">was</em> in ein gutes Profil gehört. <span class="gold">Hier siehst du, wo du hindrückst.</span></h2>
+    <p class="bonus-sub" style="margin-bottom:44px">Du hast wahrscheinlich schon einiges gelesen. Das Wissen fehlt dir nicht — es fehlt der Teil danach.</p>
+    <div class="vtable rev">
+      <div class="vcol bad">
+        <div class="vhead">Ein Guide zum Lesen</div>
+        <div class="vrow"><span class="ic">✕</span> Erklärt, wie eine gute Bio aussehen soll</div>
+        <div class="vrow"><span class="ic">✕</span> Du weisst danach, was hineingehört</div>
+        <div class="vrow"><span class="ic">✕</span> Das Umsetzen bleibt dir überlassen</div>
+        <div class="vrow"><span class="ic">✕</span> Wo du das einstellst, steht nirgends</div>
+        <div class="vrow"><span class="ic">✕</span> Am Ende hast du gelesen und nichts gemacht</div>
+        <div class="vrow"><span class="ic">✕</span> Dein Profil sieht aus wie vorher</div>
+      </div>
+      <div class="vcol good">
+        <div class="vhead">Startklar</div>
+        <div class="vrow"><span class="ic">✓</span> Zeigt dir jeden Klick auf meinem Handybildschirm</div>
+        <div class="vrow"><span class="ic">✓</span> Du machst es mit, während du zuschaust</div>
+        <div class="vrow"><span class="ic">✓</span> An jedem Feld ein ausformuliertes Beispiel zum Übernehmen</div>
+        <div class="vrow"><span class="ic">✓</span> Deine Werkstatt prüft deinen Text, bevor du postest</div>
+        <div class="vrow"><span class="ic">✓</span> Am Ende ist es gemacht, nicht verstanden</div>
+        <div class="vrow"><span class="ic">✓</span> Dein Profil steht, und drei Beiträge sind draussen</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WAS DRIN IST ===== -->
+<section class="sec-dark">
+  <div class="wrap">
+    <div class="inc-wrap">
+      <h2 class="inc-title">Was in Startklar steckt</h2>
+      <ul class="inc-list">
+        <li><span class="ck">✓</span><span class="txt"><b>12 Lektionen zum Mitmachen</b> — Bildschirmaufnahmen von meinem Handy, je 5 bis 12 Minuten. Du siehst jeden Klick und drückst mit.</span><span class="val core">Kernstück</span></li>
+        <li><span class="ck">✓</span><span class="txt"><b>Deine Startklar-Werkstatt</b> mit 12 Stationen — du tippst deine Bio, deinen ersten Satz, deine Folien und deine Umfrage hinein und bekommst sofort zurück, ob das für deine Wunschkundin funktioniert.</span><span class="val">inklusive</span></li>
+        <li><span class="ck">✓</span><span class="txt"><b>Ein fertiges Beispiel an jedem Feld</b> — bei Bio, Hook, Folien, Umfrage und Caption steht ein ausformulierter Vorschlag. Ein Klick setzt ihn ins Feld, dann machst du deins daraus. Und dein Text wird sofort geprüft, bevor du ihn postest.</span><span class="val">inklusive</span></li>
+        <li><span class="ck">✓</span><span class="txt"><b>Dein Bio-Check</b> — geht deine fertige Bio Zeile für Zeile mit dir durch.</span><span class="val">inklusive</span></li>
+        <li><span class="ck">✓</span><span class="txt"><b>Dein Startplan für die erste Woche</b> — fünf Beiträge auf feste Tage verteilt, damit du dir nichts mehr ausdenken musst.</span><span class="val">inklusive</span></li>
+        <li><span class="ck">✓</span><span class="txt"><b>Alle Aktualisierungen</b> — Instagram baut regelmässig um, und ich nehme betroffene Lektionen neu auf. Du bekommst sie ohne Aufpreis.</span><span class="val">inklusive</span></li>
+      </ul>
+      <div class="inc-total">
+        <div class="pl">
+          <div class="pl-lbl gold">Dein Preis</div>
+          <div class="pl-price"><span class="now">39 CHF</span><span class="em">einmalig</span></div>
+        </div>
+        <div class="pr">
+          <div class="pr-lbl gold">Was du dafür bekommst</div>
+          <div class="pr-val" style="font-size:clamp(20px,2.4vw,28px)">12 Lektionen<br>+ Werkstatt</div>
+        </div>
+      </div>
+      <a href="https://mumlifebalance.thrivecart.com/startklar/" class="cta cta-wide" style="margin-top:30px">Jetzt starten &rarr;</a>
+      <p class="pfine">Einmalzahlung &middot; kein Abo &middot; kein Zeitlimit &middot; Sofort-Zugang</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EINWÄNDE ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <div class="eyebrow-c">Was dich vielleicht noch abhält</div>
+    <h2 class="bonus-head" style="margin-bottom:14px">Die Sätze, die ich <span class="gold">am häufigsten höre.</span></h2>
+    <p class="bonus-sub">Und was ich dazu sage.</p>
+    <div class="obj-grid">
+      <div class="ocard rev"><span class="oq">„Was denken die Leute, wenn ich plötzlich anfange zu posten?"</span><p>Sie denken drei Tage lang etwas und dann nichts mehr. Meine Schwiegermutter fragt bei jedem Status, ob das wirklich jemand kauft, und ich habe aufgehört zu antworten. Die Frauen, die dich brauchen, kennen dich noch gar nicht.</p></div>
+      <div class="ocard rev"><span class="oq">„Ich weiss doch gar nicht, was ich erzählen soll."</span><p>Für die erste Woche musst du dir nichts ausdenken. Du bekommst fünf fertige Beiträge vorgegeben und füllst nur dein Thema ein.</p></div>
+      <div class="ocard rev"><span class="oq">„Dafür habe ich keine Zeit."</span><p>Die Lektionen dauern fünf bis zwölf Minuten, zusammen 75. Ich baue mein Business seit über einem Jahr in achtzehn Stunden pro Woche mit vier Kindern — es geht in kleinen Stücken.</p></div>
+      <div class="ocard rev"><span class="oq">„Ich mag mich auf Video nicht anschauen und anhören."</span><p>Ich auch nicht, und ich bin nicht der Typ, der sich gern zeigt. Dein erstes Reel dauert sieben Sekunden, du sagst einen einzigen Satz, und du darfst ihn zweimal aufnehmen. Beim dritten Mal wird es nur steifer.</p></div>
+      <div class="ocard rev"><span class="oq">„Ich will niemanden zuspammen."</span><p>Musst du auch nicht. Du wirst hier niemanden anschreiben und niemandem etwas anbieten — du richtest dein Profil ein und postest, damit Leute dich finden können.</p></div>
+      <div class="ocard rev"><span class="oq">„Ich muss vorher noch ein paar Sachen lernen."</span><p>Das ist der Satz, an dem die meisten hängenbleiben, teilweise über Monate. Du lernst das hier beim Machen.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FÜR WEN ===== -->
+<section class="sec-dark">
+  <div class="wrap">
+    <h2 class="fw-head">Startklar ist <span class="gold">für dich</span>, wenn &hellip;</h2>
+    <ul class="fw-list">
+      <li>du im Network Marketing bist und auf Instagram bisher vor allem mitgelesen hast</li>
+      <li>du die Theorie kennst und trotzdem nicht weisst, wo du auf deinem Handy hindrücken musst</li>
+      <li>du kein Ringlicht, kein Stativ und kein Schnittprogramm kaufen willst, bevor du anfängst</li>
+      <li>du lieber einen Nachmittag mitmachst, als noch drei Monate darüber zu lesen</li>
+      <li>du damit leben kannst, dass dein erster Beitrag noch nicht perfekt ist</li>
+    </ul>
+    <a href="https://mumlifebalance.thrivecart.com/startklar/" class="cta cta-wide">Ja, das bin ich &rarr;</a>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <h2 class="faq-head">Was du vielleicht noch wissen willst</h2>
+    <details class="faq-item"><summary>Bringt mir das Kundinnen?</summary><p>Nein, und das sage ich dir lieber vorher als hinterher. Startklar bringt dich dahin, dass dein Profil steht und du posten kannst. Damit daraus Anfragen und Kundinnen werden, braucht es eine Strategie — das ist die Instagram-Kundenmaschine und ein anderer Preis. Wenn du diesen Schritt hier aber überspringst, nützt dir die beste Strategie nichts.</p></details>
+    <details class="faq-item"><summary>Ich bin technisch wirklich eine Niete. Komme ich da mit?</summary><p>Ja. Du siehst bei jeder Lektion meinen Bildschirm und jeden einzelnen Klick, und wenn es zu schnell geht, hältst du an und spulst zurück. Genau dafür sind die Lektionen kurz.</p></details>
+    <details class="faq-item"><summary>Ich habe schon deinen Gratis-Guide gelesen. Ist das dasselbe nochmal?</summary><p>Nein. Der Guide erklärt, <em>was</em> in ein gutes Profil gehört — Bio-Zeilen, Highlights, gepinnte Beiträge. Hier siehst du, <em>wo</em> du das auf deinem Handy einstellst und wie es aussieht, wenn es fertig ist. Der Guide ist der Bauplan, Startklar sind die Handgriffe.</p></details>
+    <details class="faq-item"><summary>Was ist diese Werkstatt genau?</summary><p>Eine Seite, die du im Browser öffnest, am Handy oder am Computer. Zwölf Stationen, eine pro Lektion. Du tippst rein, was du auf Instagram schreiben willst, drückst auf Prüfen und bekommst sofort zurück, was schon zieht und was noch nicht. Deine Eingaben bleiben gespeichert, du kannst jederzeit weitermachen.</p></details>
+    <details class="faq-item"><summary>Brauche ich dafür ein Konto oder ein Passwort?</summary><p>Nein. Du bekommst mit dem Kauf einen Zugangscode, den tippst du einmal ein. Deine Antworten bleiben in deinem Browser, ich sehe sie nicht. Nur der Text, den du prüfen lässt, geht kurz an den Prüf-Dienst und wird dort nicht gespeichert.</p></details>
+    <details class="faq-item"><summary>Ich habe noch gar kein Instagram-Konto.</summary><p>Dann fangen wir in Lektion 1.1 damit an. Wenn du eins hast, entscheiden wir dort gemeinsam, ob du es umbaust oder ein zweites anlegst.</p></details>
+    <details class="faq-item"><summary>Ich weiss noch nicht, was mein Thema ist.</summary><p>Das ist in Ordnung. In Lektion 1.3 setzen wir einen groben Platzhalter, damit deine Bio gefüllt ist. Wenn du merkst, dass du genau dort feststeckst, habe ich dafür einen eigenen kurzen Kurs — für Startklar brauchst du ihn nicht.</p></details>
+    <details class="faq-item"><summary>Wie lange brauche ich?</summary><p>75 Minuten Video. Mit Mitmachen und Ausfüllen ein ruhiger Nachmittag oder drei Abende. Und wenn du zwischendrin unterbrochen wirst, weil jemand von der Schule anruft: Die Lektionen sind kurz, du findest immer wieder rein.</p></details>
+    <details class="faq-item"><summary>Funktioniert das auch mit meiner Firma?</summary><p>Ja. Hier geht es um Instagram, nicht um ein bestimmtes Unternehmen. Was du über Produkte und über Verdienst sagen darfst, steht in den Richtlinien deiner Firma — wo du die findest und worauf du achten musst, ist eine eigene Lektion.</p></details>
+    <details class="faq-item"><summary>Gibt es eine Geld-zurück-Garantie?</summary><p>Nein. Bei digitalen Inhalten, die du sofort komplett siehst, gebe ich keine. Dafür steht oben genau, was drin ist, und du liest hier schwarz auf weiss, was der Kurs nicht kann.</p></details>
+    <details class="faq-item"><summary>Veraltet das nicht, wenn Instagram sich ändert?</summary><p>Instagram baut regelmässig um, das lässt sich nicht ändern. Ich schaue zweimal im Jahr drüber und nehme betroffene Lektionen neu auf. Du bekommst die Aktualisierungen ohne Aufpreis.</p></details>
+  </div>
+</section>
+
+<!-- ===== KIPPPUNKT ===== -->
+<section class="sec-dark band">
+  <div class="wrap">
+    <div class="eyebrow-c">Der Unterschied</div>
+    <p class="stmt">Es gibt zwei Möglichkeiten, wie dieser Monat ausgeht. <span class="gold">Der Unterschied ist ein Nachmittag.</span></p>
+    <p class="mech-sub" style="margin-bottom:30px">In der einen liest du weiter darüber, wie Instagram funktioniert, und schiebst das Einrichten vor dir her — das kennst du schon, letzter Monat war auch so. In der anderen nimmst du dir einen Nachmittag, gehst zwölf kurze Lektionen durch und hast am Abend ein Profil, das steht.</p>
+    <a href="https://mumlifebalance.thrivecart.com/startklar/" class="cta">Ich mach&rsquo;s &mdash; 39 CHF &rarr;</a>
+    <p class="hero-fine" style="max-width:620px;margin:22px auto 0">Jede Woche, in der dein Profil nicht steht, ist eine Woche, in der dich niemand findet — oder in der du gar nicht erst postest, weil es sich unfertig anfühlt. Das ist der eigentliche Preis.</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="fl">Mum Life Balance</div>
+  <div class="fn">
+    <a href="https://mumlifebalance.ch">Home</a>
+    <a href="https://mumlifebalance.ch/impressum/">Impressum</a>
+    <a href="https://mumlifebalance.ch/datenschutzerklaerung/">Datenschutz</a>
+  </div>
+  <p class="cp">&copy; 2026 Patricia Ulmann &middot; Mum Life Balance</p>
+</footer>
+
+<script>
+  // Einblenden beim Scrollen
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.rev').forEach(function (el) { io.observe(el); });
+
+  // Zahlen hochzaehlen
+  document.querySelectorAll('.sstat .n').forEach(function (el) {
+    var target = +el.getAttribute('data-n');
+    var suf = el.getAttribute('data-suf') || '';
+    var co = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) {
+          var t0 = null;
+          function step(ts) {
+            if (!t0) t0 = ts;
+            var p = Math.min((ts - t0) / 1200, 1);
+            el.textContent = Math.floor(p * target).toLocaleString('de-CH') + (p >= 1 ? suf : '');
+            if (p < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+          co.unobserve(el);
+        }
+      });
+    }, { threshold: 0.6 });
+    co.observe(el);
+  });
+</script>
+
+</body>
+</html>

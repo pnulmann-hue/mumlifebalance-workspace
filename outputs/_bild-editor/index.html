@@ -149,6 +149,9 @@
 
     <div class="panel" id="planPanel" style="display:none">
       <h2>Aus deiner Planung</h2>
+      <label for="entwurfTag">Tag</label>
+      <select id="entwurfTag"></select>
+      <label for="entwurfWahl">Entwurf</label>
       <select id="entwurfWahl"></select>
       <button class="btn" id="entwurfLaden">Entwurf in die Folien laden</button>
       <div class="woche" id="entwurfInfo"></div>
@@ -297,7 +300,12 @@
 </div>
 
 <script>
-  const PHOTOS = ["lounge.jpg","p1.jpg","p2.jpg","p3.jpg","p4.jpg","p5.jpg","p6.jpg","p7.jpg","p8.jpg"];
+  // s01–s12 kamen am 19.09. aus dem Shooting dazu. Vorher waren es neun, davon
+  // vier schwarzweiss — zu wenig, um vierzehn Cover auseinanderzuhalten.
+  const PHOTOS = ["s01.jpg","s02.jpg","s03.jpg","s04.jpg","s05.jpg","s06.jpg",
+                  "s07.jpg","s08.jpg","s09.jpg","s10.jpg","s11.jpg","s12.jpg",
+                  "lounge.jpg","p1.jpg","p2.jpg","p3.jpg","p4.jpg","p5.jpg",
+                  "p6.jpg","p7.jpg","p8.jpg"];
   const COLORS = [
     {name:"Dunkelblau", hex:"#1E3A4C"},
     {name:"Petrol",     hex:"#12828c"},
@@ -743,6 +751,9 @@
     fmt = b.dataset.fmt;
     document.querySelectorAll('#fmtSeg button').forEach(x=>x.classList.toggle('on',x===b));
     g('fmtHint').textContent = FORMATE[fmt].hinweis;
+    // Die Entwurfsliste haengt am Format — sonst stehen nach dem Wechsel
+    // noch die Eintraege der vorigen Art darin.
+    if (typeof entwuerfeFuellen === "function") entwuerfeFuellen();
     stripBauen(); render();
   });
   function seg(id, key){
@@ -1343,29 +1354,73 @@ Jede Sequenz endet mit genau einem CTA: entweder Antwort auf einen Sticker oder 
   /* ---------- Fertige Beiträge aus der Planung übernehmen ----------
      `/content` legt Karussells, Story-Bögen und Reel-Cover als `daten/entwuerfe` ab.
      Hier werden sie zur Auswahlliste und landen mit einem Tipp im Folien-Streifen.   */
+  const ARTEN = {karussell:"Karussell", story:"Story", cover:"Reel-Cover"};
+  const WOTAG = ["So","Mo","Di","Mi","Do","Fr","Sa"];
+  /* Zum Format oben gehoert eine Entwurfsart. Wer auf „Story 9:16" steht,
+     soll keine Reel-Cover in der Liste haben. */
+  const FMT_ART = {story:"story", cover:"cover", slide:"karussell"};
+
+  function tagLabel(iso){
+    const t = new Date(iso + "T12:00:00");
+    if (isNaN(t)) return iso || "ohne Datum";
+    return WOTAG[t.getDay()] + " " + iso.slice(8,10) + "." + iso.slice(5,7) + ".";
+  }
+
+  /* Alle Entwuerfe, die gerade in Frage kommen: richtiges Profil, richtige Art.
+     🚨 Ein einziges Auswahlfeld ueber alle Tage und Formate hatte ueber dreissig
+     Zeilen — darin findet niemand den Dienstag. */
+  function planEntwuerfe(){
+    const art = FMT_ART[fmt] || "";
+    return (entwurfDaten && entwurfDaten.entwuerfe || [])
+      .filter(e => e.profil === profilJetzt() && (!art || (e.art || "") === art));
+  }
+
   function entwuerfeFuellen(){
-    const liste = (entwurfDaten && entwurfDaten.entwuerfe || []).filter(e => e.profil === profilJetzt());
-    const wahl = g('entwurfWahl');
+    const liste = planEntwuerfe();
     g('planPanel').style.display = liste.length ? "block" : "none";
     if (!liste.length) return;
-    const arten = {karussell:"Karussell", story:"Story", cover:"Reel-Cover"};
-    wahl.innerHTML = liste.map((e,i)=>
-      `<option value="${i}">${esc(e.datum || "")} · ${esc(arten[e.art] || e.art || "")} · ${esc(e.name || "")}</option>`).join("");
+    const tage = [...new Set(liste.map(e => e.datum || ""))].sort();
+    const tagFeld = g('entwurfTag');
+    const vorher = tagFeld.value;
+    tagFeld.innerHTML = tage.map(d => {
+      const n = liste.filter(e => (e.datum || "") === d).length;
+      return `<option value="${esc(d)}">${esc(tagLabel(d))}`
+           + (n > 1 ? ` · ${n} Entwürfe` : "") + `</option>`;
+    }).join("");
+    // Denselben Tag behalten, wenn es ihn noch gibt — sonst den naechsten
+    // ab heute, damit sie nicht jedes Mal bei letzter Woche landet.
+    if (tage.indexOf(vorher) >= 0) tagFeld.value = vorher;
+    else {
+      const heute = new Date().toISOString().slice(0,10);
+      tagFeld.value = tage.find(d => d >= heute) || tage[0];
+    }
+    tagFuellen();
+  }
+
+  function tagFuellen(){
+    const tag = g('entwurfTag').value;
+    const drin = planEntwuerfe().filter(e => (e.datum || "") === tag);
+    g('entwurfWahl').innerHTML = drin.map((e,i)=>
+      `<option value="${i}">${esc(ARTEN[e.art] || e.art || "")} · ${esc(e.name || "")}</option>`).join("");
     entwurfInfo();
   }
+
   function aktuellerEntwurf(){
-    const liste = (entwurfDaten && entwurfDaten.entwuerfe || []).filter(e => e.profil === profilJetzt());
-    return liste[+g('entwurfWahl').value] || null;
+    const tag = g('entwurfTag').value;
+    const drin = planEntwuerfe().filter(e => (e.datum || "") === tag);
+    return drin[+g('entwurfWahl').value] || null;
   }
   function entwurfInfo(){
     const e = aktuellerEntwurf(), box = g('entwurfInfo');
     if (!e){ box.classList.remove('on'); return; }
     box.innerHTML = `<b>${e.folien ? e.folien.length : 0} Folien</b>`
+      + (e.fotoText ? `<br>Bildvorschlag: ${esc(e.fotoText)} — im Streifen änderbar` : "")
       + (e.cta ? `<br>CTA: ${esc(e.cta)}` : "")
       + `<span class="quelle">Stand ${esc((entwurfDaten||{}).stand||"")} · ${esc((entwurfDaten||{}).quelle||"")}</span>`;
     box.classList.add('on');
   }
   g('entwurfWahl').onchange = entwurfInfo;
+  g('entwurfTag').onchange = tagFuellen;
   g('entwurfLaden').onclick = () => {
     const e = aktuellerEntwurf();
     if (!e || !e.folien || !e.folien.length) return;
@@ -1377,6 +1432,14 @@ Jede Sequenz endet mit genau einem CTA: entweder Antwort auf einen Sticker oder 
       g('fmtHint').textContent = FORMATE[fmt].hinweis;
     }
     const vorlage = Object.assign({}, state), stil = Object.assign({}, B());
+    // Der Entwurf darf Bild, Farbe und Verlauf mitbringen — das ist der
+    // Vorschlag. 🚨 Nur als Startwert: Foto, Text, Grösse und Höhe bleiben
+    // danach über die Regler änderbar.
+    if (e.foto){ vorlage.photo = e.foto; vorlage.mode = "foto"; }
+    if (e.farbe) vorlage.color = e.farbe;
+    if (typeof e.grad === "number") vorlage.grad = e.grad;
+    if (typeof e.fs === "number") stil.fs = e.fs;
+    if (typeof e.pos === "number") stil.pos = e.pos;
     folien = e.folien.map(f => {
       const bl = [ Object.assign({}, stil, {headline: f.text || "", eyebrow: f.eyebrow || ""}) ];
       // Fliesstext kommt als zweiter, kleinerer Balken darunter

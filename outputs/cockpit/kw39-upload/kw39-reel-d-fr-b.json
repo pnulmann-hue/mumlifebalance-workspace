@@ -1,0 +1,17 @@
+{
+ "name": "B · Fr · Letzter Bestelltag — Handy",
+ "datum": "2026-09-25",
+ "profil": "doterra",
+ "hook": "Du hängst abends am Handy, obwohl du hundemüde bist. Das liegt nicht am Handy.",
+ "unter": "",
+ "skript": "SPRECHREEL — Patricia dreht.\n\nSetup: abends, gern mit dem Handy in der Hand als Requisit. Dauer rund 22 Sekunden.\n\n1 HOOK: „Du hängst abends zwei Stunden am Handy, obwohl du hundemüde bist. Das liegt nicht am Handy.“\n2: „Das ist der einzige Moment am Tag, in dem niemand was von dir will. Den gibst du nicht freiwillig her.“\n3: „Ich hab lange gedacht, ich bin einfach undiszipliniert. War ich nicht.“\n4: „Ab Oktober gehe ich das vier Wochen lang mit einer kleinen Gruppe durch.“\n5 CTA: „Heute ist der letzte Tag, an dem du dazukommst. Kommentier ENERGIE.“",
+ "caption": "Kommentier **ENERGIE**, wenn du bei der Oktober-Runde dabei sein willst — heute ist der letzte Tag dafür.\n\nDer Grund für die Frist ist unspektakulär: Es muss alles vor dem ersten Oktober bei dir sein, und dazwischen liegt der Versand.\n\nZum Abendhandy: Ich hab das jahrelang für fehlende Disziplin gehalten. Es war der einzige Moment am Tag, in dem niemand etwas von mir wollte — natürlich hab ich den nicht freiwillig hergegeben.\n\nBei mir lag die Lösung im Tag davor. Sobald der anders lief, war der Abend von allein kürzer — ohne dass ich mir das Handy hätte verbieten müssen.\n\nVier Wochen, kleine Gruppe, ich bin durchgehend dabei. Schreib mir **ENERGIE**, dann erzähl ich dir in Ruhe, wie das aussieht.\n\n**ENERGIE** ⬇️\n\n#mamaalltag #perimenopause #mamaleben #energieimalltag #mamasein",
+ "coverhook": "Du hängst abends am Handy. Das liegt nicht am Handy.",
+ "coverunter": "",
+ "coverfarbe": "creme",
+ "scrim": true,
+ "videoart": "sprech",
+ "textfrei": false,
+ "hinweis": "🎬 DREH NÖTIG. Typ 3 · LETZTER BESTELLTAG.",
+ "updatedAt": "2026-09-18T07:00:00.000Z"
+}

@@ -1,0 +1,51 @@
+{
+ "name": "Mo · doTERRA · Der Schmerz",
+ "datum": "2026-09-21",
+ "profil": "doterra",
+ "brand": "oele",
+ "frames": [
+  {
+   "id": "s1",
+   "layout": "hook",
+   "text": "Es gibt einen Moment am Tag, an dem du merkst, dass nichts mehr da ist. Bei den meisten ist er zwischen halb vier und fünf.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s2",
+   "layout": "text",
+   "text": "Man erkennt ihn daran, dass man anfängt, Sachen aufzuschieben, die zwei Minuten dauern. Die Znüni-Box. Der Anruf. Das eine Formular.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s3",
+   "layout": "text",
+   "text": "Ich hab das jahrelang für Faulheit gehalten und mich dafür geschämt. Es war keine.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s4",
+   "layout": "frage",
+   "text": "Wann ist dein Moment?",
+   "cta": "Umfrage",
+   "optA": "Nachmittag",
+   "optB": "Abend"
+  },
+  {
+   "id": "s5",
+   "layout": "cta",
+   "text": "Diese Woche erzähl ich dir, was bei mir dahintersteckte und was ich geändert hab. Wenn du vorher schon anfangen willst: drei Tage, kostet nichts, Link oben.",
+   "cta": "mumlifebalance.ch/energie-kickstart",
+   "optA": "",
+   "optB": ""
+  }
+ ],
+ "textfrei": false,
+ "hinweis": "🔴 Rot · Bogen-Schritt 1 von 5 (Ankündigungs-Serie Oktober-Runde) · CTA Freebie ENERGIE",
+ "updatedAt": "2026-09-18T07:00:00.000Z"
+}

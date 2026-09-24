@@ -1,0 +1,501 @@
+<title>Kursaufbau Claude Code</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap">
+<style>
+:root{
+  --petrol:#12828c; --blau:#29556d; --creme:#f1ecdd; --orange:#dc822e;
+  --tinte:#0c1c30;
+  --grund:#f7f4ec; --flaeche:#ffffff; --flaeche2:#fbf9f3;
+  --linie:#ded6c4; --linie-stark:#c9bda6;
+  --gedaempft:#6b7b84;
+  --gut:#12828c; --offen:#b9ac95;
+  --schrift-display:'Philosopher',Georgia,serif;
+  --schrift-text:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --creme:#1d2a31; --tinte:#e8e3d6;
+    --grund:#101a1f; --flaeche:#17242a; --flaeche2:#1c2b32;
+    --linie:#2b3d45; --linie-stark:#3d545e;
+    --gedaempft:#93a5ad; --petrol:#34a7b1; --blau:#7fa9bf; --orange:#e89a4f;
+    --gut:#34a7b1; --offen:#4a5f69;
+  }
+}
+:root[data-theme="dark"]{
+  --creme:#1d2a31; --tinte:#e8e3d6;
+  --grund:#101a1f; --flaeche:#17242a; --flaeche2:#1c2b32;
+  --linie:#2b3d45; --linie-stark:#3d545e;
+  --gedaempft:#93a5ad; --petrol:#34a7b1; --blau:#7fa9bf; --orange:#e89a4f;
+  --gut:#34a7b1; --offen:#4a5f69;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--grund); color:var(--tinte);
+  font-family:var(--schrift-text); font-size:16px; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.huelle{max-width:980px; margin:0 auto; padding-inline:16px; padding-block:0 64px}
+
+/* Kopf */
+.kopf{padding-block:32px 20px}
+.marke{font-family:var(--schrift-text); font-size:12px; font-weight:600;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--petrol); margin:0 0 6px}
+h1{font-family:var(--schrift-display); font-weight:700; font-size:clamp(28px,5vw,40px);
+  line-height:1.15; margin:0 0 8px; color:var(--blau); text-wrap:balance}
+.unterzeile{margin:0; color:var(--gedaempft); max-width:62ch}
+
+/* Fortschritt */
+.bilanz{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px; margin-block:20px}
+.zahl-kachel{background:var(--flaeche); border:1px solid var(--linie);
+  border-radius:10px; padding:14px 16px}
+.zahl-kachel .z{font-family:var(--schrift-display); font-size:30px; font-weight:700;
+  line-height:1; color:var(--petrol); font-variant-numeric:tabular-nums}
+.zahl-kachel .b{font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--gedaempft); margin-top:6px}
+.balken{height:6px; background:var(--creme); border-radius:99px; overflow:hidden; margin-top:10px}
+.balken > i{display:block; height:100%; background:var(--petrol); border-radius:99px;
+  transition:width .35s ease}
+
+/* Reiter */
+.reiter{display:flex; gap:4px; flex-wrap:wrap; border-bottom:1px solid var(--linie);
+  margin-block:8px 0; position:sticky; top:env(safe-area-inset-top,0px);
+  background:var(--grund); padding-top:8px; z-index:5}
+.reiter button{appearance:none; background:none; border:0; border-bottom:2px solid transparent;
+  font:inherit; font-weight:600; color:var(--gedaempft); padding:10px 14px; cursor:pointer;
+  border-radius:6px 6px 0 0}
+.reiter button[aria-selected="true"]{color:var(--blau); border-bottom-color:var(--orange)}
+.reiter button:hover{color:var(--blau)}
+.reiter button:focus-visible{outline:2px solid var(--petrol); outline-offset:-2px}
+
+/* Modul */
+.modul{margin-top:28px}
+.modul-kopf{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;
+  padding-bottom:8px; border-bottom:2px solid var(--petrol)}
+.modul-nr{font-family:var(--schrift-display); font-size:26px; font-weight:700;
+  color:var(--orange); line-height:1; font-variant-numeric:tabular-nums}
+.modul-titel{font-family:var(--schrift-display); font-size:21px; font-weight:700;
+  color:var(--blau); margin:0; flex:1 1 auto}
+.modul-zaehler{font-size:12px; color:var(--gedaempft); letter-spacing:.06em;
+  font-variant-numeric:tabular-nums; white-space:nowrap}
+.modul-text{background:var(--creme); border-left:3px solid var(--petrol);
+  padding:12px 14px; margin-top:12px; font-size:15px; color:var(--tinte)}
+.modul-text p{margin:0 0 8px}
+
+/* Lektion */
+.lektion{border-bottom:1px solid var(--linie); padding:14px 0; display:grid;
+  grid-template-columns:auto 1fr; gap:10px 12px; align-items:start}
+.lektion:last-child{border-bottom:0}
+.lek-nr{font-family:var(--schrift-text); font-weight:700; font-size:13px;
+  color:var(--petrol); font-variant-numeric:tabular-nums; padding-top:3px;
+  min-width:34px}
+.lek-haupt{min-width:0}
+.lek-titel{font-weight:600; font-size:17px; margin:0 0 4px; color:var(--tinte)}
+.lek-text{margin:0; color:var(--gedaempft); font-size:15px; max-width:66ch}
+.lek-beilage{margin-top:6px; font-size:13px; color:var(--blau)}
+.lek-beilage b{font-weight:600}
+
+.haken{display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; grid-column:1/-1}
+@media(min-width:720px){ .haken{grid-column:2/3} }
+.hk{appearance:none; background:var(--flaeche); border:1px solid var(--linie-stark);
+  color:var(--gedaempft); font:inherit; font-size:12px; font-weight:600;
+  letter-spacing:.04em; padding:5px 10px; border-radius:99px; cursor:pointer;
+  display:inline-flex; align-items:center; gap:5px}
+.hk:hover{border-color:var(--petrol); color:var(--blau)}
+.hk:focus-visible{outline:2px solid var(--petrol); outline-offset:2px}
+.hk[aria-pressed="true"]{background:var(--petrol); border-color:var(--petrol); color:#fff}
+.hk .p{width:7px; height:7px; border-radius:99px; background:var(--offen)}
+.hk[aria-pressed="true"] .p{background:#fff}
+
+.kopieren{display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; grid-column:1/-1}
+@media(min-width:720px){ .kopieren{grid-column:2/3} }
+.kp{appearance:none; background:none; border:1px solid var(--orange);
+  color:var(--orange); font:inherit; font-size:12px; font-weight:700;
+  padding:5px 11px; border-radius:6px; cursor:pointer}
+.kp:hover{background:var(--orange); color:#fff}
+.kp:focus-visible{outline:2px solid var(--blau); outline-offset:2px}
+.kp.fertig{background:var(--petrol); border-color:var(--petrol); color:#fff}
+
+/* Beilagen */
+.tabelle-huelle{overflow-x:auto; margin-top:16px}
+table{border-collapse:collapse; width:100%; min-width:560px; font-size:15px}
+th{text-align:left; font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--gedaempft); font-weight:600; padding:0 12px 8px 0;
+  border-bottom:1px solid var(--linie-stark)}
+td{padding:11px 12px 11px 0; border-bottom:1px solid var(--linie); vertical-align:top}
+td.datei{font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:13px; color:var(--blau)}
+.wo{display:inline-block; font-size:12px; font-weight:600; padding:2px 8px;
+  border-radius:99px; background:var(--creme); color:var(--blau); white-space:nowrap}
+
+.hinweis{background:var(--creme); border:1px solid var(--linie-stark);
+  border-radius:10px; padding:14px 16px; margin-top:20px; font-size:15px}
+.hinweis h3{font-family:var(--schrift-display); font-size:17px; margin:0 0 6px; color:var(--blau)}
+.hinweis p{margin:0 0 8px} .hinweis p:last-child{margin-bottom:0}
+
+.block{background:var(--flaeche); border:1px solid var(--linie); border-radius:10px;
+  padding:16px 18px; margin-top:16px}
+.block h3{font-family:var(--schrift-display); font-size:19px; margin:0 0 4px; color:var(--blau)}
+.block .quelle{font-size:12px; color:var(--gedaempft); letter-spacing:.06em;
+  text-transform:uppercase; margin:0 0 10px}
+.block .inhalt p{margin:0 0 10px; max-width:66ch}
+.block .inhalt p:last-child{margin-bottom:0}
+
+.status{font-size:13px; color:var(--gedaempft); margin-top:14px}
+@media (prefers-reduced-motion:reduce){ *{transition:none!important} }
+</style>
+
+<div class="huelle">
+  <header class="kopf">
+    <p class="marke">Mum Life Balance · Produktion</p>
+    <h1>Claude Code für Network-Mamas</h1>
+    <p class="unterzeile">Alles, was in ThriveCart hineingehört, an einem Ort. Titel und Text je Lektion zum Kopieren, die Beilagen mit Ablageort, und ein Haken für jeden Schritt, der erledigt ist.</p>
+
+    <div class="bilanz">
+      <div class="zahl-kachel"><div class="z" id="z-text">0</div><div class="b">Texte eingetragen</div><div class="balken"><i id="b-text" style="width:0%"></i></div></div>
+      <div class="zahl-kachel"><div class="z" id="z-video">0</div><div class="b">Videos drin</div><div class="balken"><i id="b-video" style="width:0%"></i></div></div>
+      <div class="zahl-kachel"><div class="z" id="z-beilage">0</div><div class="b">Beilagen hochgeladen</div><div class="balken"><i id="b-beilage" style="width:0%"></i></div></div>
+    </div>
+  </header>
+
+  <nav class="reiter" role="tablist" aria-label="Bereiche">
+    <button role="tab" id="t-lektionen" aria-selected="true" aria-controls="p-lektionen">Lektionen</button>
+    <button role="tab" id="t-beilagen" aria-selected="false" aria-controls="p-beilagen">Beilagen</button>
+    <button role="tab" id="t-module" aria-selected="false" aria-controls="p-module">Modultexte</button>
+  </nav>
+
+  <section id="p-lektionen" role="tabpanel" aria-labelledby="t-lektionen"></section>
+  <section id="p-beilagen" role="tabpanel" aria-labelledby="t-beilagen" hidden></section>
+  <section id="p-module" role="tabpanel" aria-labelledby="t-module" hidden></section>
+
+  <p class="status" id="speicherstand">Haken werden lokal gehalten, bis die Ablage antwortet.</p>
+</div>
+
+<script>
+const BEGRUESSUNG = {
+  titel: "Schön, dass du da bist",
+  quelle: "Begrüssung · erste Seite im Kurs",
+  absaetze: [
+    "Du hast wahrscheinlich schon ein paarmal ChatGPT aufgemacht, dir eine Caption schreiben lassen und dann jeden zweiten Satz umgebaut, weil er nach niemandem klang. Und irgendwo im Hinterkopf läuft der Gedanke mit, dass alle anderen mit KI angeblich die halbe Woche einsparen, während es dich bisher eher Zeit gekostet hat.",
+    "Genau da fangen wir an. Am Ende hast du drei Sachen, die vorher nicht da waren: einen Arbeitsplatz, an dem dein eigenes Wissen liegt, mindestens einen selbstgebauten Befehl für eine Arbeit, die du jede Woche sowieso machst, und einen Bot, der morgens von selbst schreibt.",
+    "Du musst nichts programmieren. Du schreibst Deutsch. Das ganze schwarze Fenster, das du vielleicht mal auf einem Screenshot gesehen hast, brauchst du hier nicht.",
+    "Wir gehen über drei Stufen, und auf jeder gibt es ein Ergebnis. Erst der ganz normale Chat, dann eine Zwischenstufe, dann der eigene Arbeitsplatz. Wer nach der ersten Stufe aufhört, hat trotzdem etwas, das sie behält.",
+    "Ich habe das neben vier Kindern gelernt, mit achtzehn Stunden Woche und ohne technische Ausbildung. Wenn es bei mir geht, geht es bei dir auch.",
+    "Leg los mit Modul 1. Wir sehen uns dort."
+  ]
+};
+
+const MODULE = [
+{nr:1, titel:"Orientierung",
+ text:"Bevor du irgendetwas installierst, schauen wir uns an, wo die Reise hingeht und was die ganzen Wörter bedeuten, die dir dauernd begegnen. Am Ende dieses Moduls weisst du, welche Stufe für dich gerade dran ist und was dich das im Monat kostet.",
+ lektionen:[
+  {nr:"1.1", titel:"Schön, dass du da bist", text:"Was am Ende dieses Kurses bei dir steht, und warum ich mit dem Bild von einer Mitarbeiterin arbeite statt mit dem von einem Werkzeug. Der Unterschied ist grösser, als er klingt."},
+  {nr:"1.2", titel:"Deine Roadmap — die drei Stufen", text:"Chat, Cowork, Code. Drei Stufen, und auf jeder gibt es ein Ergebnis, das du behältst. Ich zeige dir, woran du merkst, welche gerade dran ist, und warum niemand bis ganz nach oben muss. 📎 Die Roadmap zum Ausdrucken findest du unter diesem Video.", beilage:"Roadmap, eine Seite", datei:"roadmap-drei-stufen.pdf"},
+  {nr:"1.3", titel:"Die Wörter, die dauernd vorkommen", text:"Prompt, Kontext, Projekt, Skill, Agent, Bot, Terminal. Einmal in Ruhe erklärt, so wie ich es einer Freundin am Küchentisch sagen würde. 📎 Das Cheatsheet dazu liegt unter diesem Video, häng es dir neben den Laptop.", beilage:"Begriffe-Cheatsheet", datei:"begriffe-cheatsheet.md"},
+  {nr:"1.4", titel:"Was das kostet", text:"Womit du gratis anfangen kannst, ab wann ein Abo Sinn macht und was ein eigener Bot im Monat wirklich kostet. Ich sage dir die Zahlen offen, damit du selbst rechnen kannst, statt dich später zu ärgern."},
+  {nr:"1.5", titel:"Zusammenfassung und Checkliste", text:"Das Wichtigste aus Modul 1 auf einer Seite. 📎 Die Checkliste liegt unter diesem Video — geh sie durch, bevor du weitermachst.", beilage:"Checkliste Modul 1", datei:"checkliste-modul-1.md"}
+ ]},
+{nr:2, titel:"Claude Chat — die Grundlage",
+ text:"Hier passiert das, was die meisten überspringen und was hinterher alles entscheidet: Du bringst der KI bei, wer du bist. Ohne diesen Schritt bleibt jeder Text austauschbar, egal wie gut dein Auftrag formuliert ist.",
+ lektionen:[
+  {nr:"2.1", titel:"Die Praktikantin", text:"Eine KI ist nur so gut wie der Auftrag, den sie bekommt. Ich zeige dir die drei Zutaten, die jeder gute Auftrag braucht, am selben Beispiel einmal ohne und einmal mit. Der Unterschied ist grösser, als du denkst."},
+  {nr:"2.2", titel:"Warum deine Texte nicht nach dir klingen", text:"Es gibt ein paar Muster, an denen man KI-Text sofort erkennt, und wenn du sie einmal gesehen hast, siehst du sie überall. 📎 Die Liste dieser Muster bekommst du unter diesem Video als Vorlage für deinen eigenen Arbeitsplatz.", beilage:"Floskel-Liste (leere Vorlage)", datei:"floskel-liste-vorlage.md"},
+  {nr:"2.3", titel:"Dein Business-Brief — die sechs Bausteine", text:"Das eine Dokument, das ab jetzt bei jedem Auftrag mitgeht: wer du bist, für wen du da bist, was du anbietest, worüber du sprichst, wie du klingst und was bei dir nie vorkommt. 📎 Die Vorlage liegt unter diesem Video.", beilage:"Business-Brief-Vorlage", datei:"business-brief-vorlage.md"},
+  {nr:"2.4", titel:"Die Buch-Technik", text:"Wie du die sechs Bausteine gefüllt bekommst, ohne stundenlang vor einem leeren Blatt zu sitzen: Du lässt die KI ein Buch über dich schreiben und so lange nachfragen, bis sie wirklich alles hat. 📎 Den Auftrag zum Kopieren findest du unter diesem Video.", beilage:"Buch-Technik-Auftrag", datei:"buch-technik-auftrag.md"},
+  {nr:"2.5", titel:"Deine Stimme einfangen", text:"Zwei, drei eigene Texte reichen, damit die KI deinen Ton trifft. Ich zeige dir am selben Auftrag, wie gross der Unterschied ist, und woran du merkst, dass es sitzt."},
+  {nr:"2.6", titel:"Projekte statt Einzelchats", text:"Damit dein Wissen liegen bleibt, statt dass du es in jedem neuen Chat wieder eintippst. Einmal eingerichtet, und du fängst nie wieder bei null an."},
+  {nr:"2.7", titel:"Zusammenfassung und Checkliste", text:"Das Wichtigste aus Modul 2. 📎 Die Checkliste unter diesem Video sagt dir, was stehen muss, bevor du weitergehst.", beilage:"Checkliste Modul 2", datei:"checkliste-modul-2.md"}
+ ]},
+{nr:3, titel:"Claude Cowork — die Mittelstufe",
+ text:"Eine Stufe weiter arbeitet die KI mit deinen Dateien und hängt an deiner eigenen Planung. Hier baust du deinen ersten Bot, ohne eine einzige Zeile Code zu schreiben.",
+ lektionen:[
+  {nr:"3.1", titel:"Was Cowork kann, was der Chat nicht kann", text:"Mit Dateien arbeiten, über mehrere Schritte hinweg, und sich merken, was beim letzten Mal war. Ich zeige dir eine Aufgabe, die im Chat scheitert und hier durchläuft."},
+  {nr:"3.2", titel:"Deine erste Verbindung: Notion", text:"Einmal einrichten, und ab dann liest die KI deine eigene Planung. Schritt für Schritt mitgefilmt, ohne Sprung."},
+  {nr:"3.3", titel:"Dein erster Bot ohne eine Zeile Code", text:"Wir bauen zusammen einen Helfer fürs Zuhause — etwas, wo nichts kaputtgehen kann und du sofort siehst, dass es funktioniert. 📎 Den Auftrag dazu findest du unter diesem Video.", beilage:"Auftrag Haushalts-Helfer", datei:"auftrag-haushalts-helfer.md"},
+  {nr:"3.4", titel:"Wo Cowork aufhört", text:"Ehrlich gesagt: Er läuft nicht von selbst, du musst ihn jedes Mal anstossen. Das ist der Grund für die nächste Stufe. Und wenn dir das hier reicht, ist das völlig in Ordnung."},
+  {nr:"3.5", titel:"Zusammenfassung und Checkliste", text:"Das Wichtigste aus Modul 3. 📎 Die Checkliste liegt unter diesem Video.", beilage:"Checkliste Modul 3", datei:"checkliste-modul-3.md"}
+ ]},
+{nr:4, titel:"Claude Code einrichten",
+ text:"Jetzt richtest du dir deinen eigenen Arbeitsplatz ein. Das klingt nach mehr, als es ist: Du lädst dir mein Grundgerüst herunter, machst es auf und schreibst weiter Deutsch.",
+ lektionen:[
+  {nr:"4.1", titel:"Keine Angst, es ist kein Programmieren", text:"Was Claude Code eigentlich ist und warum du kein schwarzes Fenster brauchst. Ich zeige dir die Oberfläche — sie sieht aus wie ein Chat, weil sie einer ist."},
+  {nr:"4.2", titel:"Einrichten, Schritt für Schritt", text:"Klick für Klick in Echtzeit mitgefilmt. Hier springe ich nichts, weil genau hier sonst die meisten aussteigen."},
+  {nr:"4.3", titel:"Dein Arbeitsplatz", text:"Die Ordner und wozu jeder da ist. 📎 Unter diesem Video lädst du dir mein leeres Grundgerüst herunter und hast von Anfang an einen aufgeräumten Platz.", beilage:"Arbeitsplatz-Grundgerüst (ZIP)", datei:"arbeitsplatz-grundgeruest.zip"},
+  {nr:"4.4", titel:"CLAUDE.md — das Gedächtnis", text:"Die eine Datei, in der alles steht, was du nie wieder erklären willst. Ich zeige dir zuerst meine eigene und dann die leere Vorlage für dich. 📎 Vorlage unter diesem Video.", beilage:"CLAUDE.md-Vorlage", datei:"claude-md-vorlage.md"},
+  {nr:"4.5", titel:"Wie du mit Claude sprichst", text:"Sag, was rauskommen soll, statt wie er es machen soll. Eine Sache pro Auftrag. Klingt banal und ändert alles."},
+  {nr:"4.6", titel:"Wenn es nicht klappt", text:"Was du machst, wenn Murks rauskommt, und warum neu ansetzen fast immer besser ist als nachbessern. Dazu die drei Fehler, die am Anfang alle machen."},
+  {nr:"4.7", titel:"Zusammenfassung und Checkliste", text:"Das Wichtigste aus Modul 4. 📎 Die Checkliste liegt unter diesem Video.", beilage:"Checkliste Modul 4", datei:"checkliste-modul-4.md"}
+ ]},
+{nr:5, titel:"Skills — das Herzstück",
+ text:"Wenn du aus diesem Kurs nur ein Modul mitnimmst, dann dieses. Ein Skill ist eine Arbeit, die du einmal beschreibst und danach nur noch aufrufst. Alles, was danach kommt, ist Anwendung davon.",
+ lektionen:[
+  {nr:"5.1", titel:"Was ein Skill ist", text:"Ein Rezept, das die KI jedes Mal gleich abarbeitet. Ich rufe einen auf und du siehst, was passiert."},
+  {nr:"5.2", titel:"Ein Skill auseinandergenommen", text:"Wir gehen einen fertigen Skill Zeile für Zeile durch: Kopf, Zweck, Regeln, gewünschtes Ergebnis, Beispiel. 📎 Die Datei bekommst du unter diesem Video.", beilage:"Beispiel-Skill Kochplan", datei:"beispiel-skill-kochplan.md"},
+  {nr:"5.3", titel:"Woran du erkennst, dass etwas ein Skill werden sollte", text:"Alles, was du dreimal ungefähr gleich machst. Ich zeige dir eine ehrliche Liste aus meinem eigenen Alltag, damit du deine eigene aufschreiben kannst."},
+  {nr:"5.4", titel:"Deinen ersten Skill bauen — mit dem Skill Creator", text:"Von der Idee zur fertigen Datei, live mitgefilmt."},
+  {nr:"5.5", titel:"Von Hand nachschärfen", text:"Was ein Baukasten nie wissen kann: deine Regeln und deine Verbote. Hier machst du aus einem brauchbaren Skill deinen eigenen."},
+  {nr:"5.6", titel:"Was dreimal korrigiert wird, wird eine Regel", text:"Der Punkt, an dem ein Skill besser wird als du selbst an einem müden Tag. Ich zeige dir eine Regel, die bei mir aus einem echten Fehler entstanden ist."},
+  {nr:"5.7", titel:"Achtung bei Skills aus dem Internet", text:"Du lädst fremde Anweisungen in deinen Arbeitsplatz. Worauf du vorher schaust."},
+  {nr:"5.8", titel:"Zusammenfassung und Checkliste", text:"Das Wichtigste aus Modul 5. 📎 Unter diesem Video liegen das leere Skill-Gerüst und die Checkliste.", beilage:"Skill-Gerüst + Checkliste Modul 5", datei:"skill-geruest.md · checkliste-modul-5.md"}
+ ]},
+{nr:6, titel:"Bots, die von selbst laufen",
+ text:"Der Unterschied zwischen einem Skill und einem Bot ist klein: Beim Bot ruft ihn niemand mehr auf. Er meldet sich von selbst, auch wenn dein Laptop zu ist.",
+ lektionen:[
+  {nr:"6.1", titel:"Vom Skill zum Bot", text:"Derselbe Auftrag, nur dass er von selbst losgeht. Was dafür dazukommen muss."},
+  {nr:"6.2", titel:"Übersicht: meine Bots", text:"Was bei mir auf dem Handy ankommt und wofür jeder einzelne gut ist. Damit du siehst, was möglich ist, bevor du deinen eigenen baust."},
+  {nr:"6.3", titel:"Dein erster Telegram-Bot", text:"Von null bis zur ersten Nachricht auf deinem Handy, komplett mitgefilmt. 📎 Das Bot-Gerüst findest du unter diesem Video.", beilage:"Bot-Gerüst Telegram", datei:"bot-geruest-telegram.md"},
+  {nr:"6.4", titel:"Dass er morgens von selbst schreibt", text:"Wo der Bot wohnt, damit er läuft, wenn du schläfst — und was das im Monat kostet."},
+  {nr:"6.5", titel:"Wenn der Bot schweigt", text:"Die drei häufigsten Gründe und wo du nachschaust. Spart dir einen halben Abend."},
+  {nr:"6.6", titel:"Zusammenfassung und Checkliste", text:"Das Wichtigste aus Modul 6. 📎 Die Checkliste liegt unter diesem Video.", beilage:"Checkliste Modul 6", datei:"checkliste-modul-6.md"}
+ ]},
+{nr:7, titel:"Social Media mit Claude Code",
+ text:"Ab hier bekommst du Maschinen. Wie du sie einrichtest und laufen lässt, steht in diesem Modul — was inhaltlich hineingehört, damit gute Beiträge herauskommen, lernst du in der Instagram-Kundenmaschine.",
+ lektionen:[
+  {nr:"7.1", titel:"Die Content-Maschinen im Überblick", text:"Für jedes Format ein Befehl, und alle lesen dieselben Wissensdateien. 📎 Unter diesem Video liegen die fünf Skills samt leeren Wissensdateien.", beilage:"5 Content-Skills + leere Wissensdateien", datei:"content-skills-paket.zip"},
+  {nr:"7.2", titel:"Caption und Story — leer gegen gefüllt", text:"Derselbe Befehl zweimal: einmal mit leerer Wissensdatei, einmal mit gefüllter. Der Unterschied im Ergebnis zeigt dir besser als jede Erklärung, worauf es ankommt."},
+  {nr:"7.3", titel:"Karussell — vom Text zum fertigen Bild", text:"Erst die Folientexte, dann die Bilder. Zwei Schritte, die viele in einen packen wollen und sich damit das Ergebnis kaputtmachen."},
+  {nr:"7.4", titel:"Reel — Rohschnitt aus Rohmaterial", text:"Einmal frei in die Kamera sprechen, mit Versprechern und Wiederholungen, und die Maschine schneidet daraus einen Rohschnitt. Aufbaustufe: Du brauchst dafür ein paar Programme mehr."},
+  {nr:"7.5", titel:"Freigabe statt Autopilot", text:"Warum bei mir nichts ungeprüft rausgeht. Dein Konto hängt an deinem Partnerunternehmen, und ein unbedachter Satz kostet dich mehr, als eine automatisierte Woche dir spart. Ich zeige dir, wie ich das gelöst habe."},
+  {nr:"7.6", titel:"Automatisiertes Posten", text:"Abends freigeben, und am nächsten Morgen ist es draussen. Wie die Kette dahinter aussieht."},
+  {nr:"7.7", titel:"Wenn die KI Murks baut", text:"Automatisch erzeugte Beiträge werden schlecht, sobald niemand mehr hinschaut. Woran du das erkennst und wie du es maschinell prüfen lässt."},
+  {nr:"7.8", titel:"Zusammenfassung und Checkliste", text:"Das Wichtigste aus Modul 7. 📎 Die Checkliste liegt unter diesem Video.", beilage:"Checkliste Modul 7", datei:"checkliste-modul-7.md"}
+ ]},
+{nr:8, titel:"Produkte, Seiten und Mails",
+ text:"Dieselbe Logik wie im Modul davor, nur für dein Angebot: Du bekommst die Maschinen für Produkte, Verkaufsseiten und Mails. Was inhaltlich in ein gutes Angebot gehört, steht in „Vom Network-Wissen zur digitalen Produktwelt“.",
+ lektionen:[
+  {nr:"8.1", titel:"Produkt- und Verkaufsseiten-Skills", text:"Was die beiden Befehle können und wo ihre Grenze liegt. 📎 Die Skills samt leeren Wissensdateien findest du unter diesem Video.", beilage:"Produkt-Skills + leere Wissensdateien", datei:"produkt-skills-paket.zip"},
+  {nr:"8.2", titel:"Eine Verkaufsseite bauen lassen", text:"Von der Beschreibung deines Angebots zur fertigen Seite, live mitgefilmt."},
+  {nr:"8.3", titel:"Auf die eigene Website bringen", text:"Wie die Seite online geht und unter deiner eigenen Adresse liegt."},
+  {nr:"8.4", titel:"Mails und Verteiler anbinden", text:"Wie du deinen Mail-Anbieter anhängst. Ehrlich dazu: Hier hängt ein Zugang dran, und den solltest du bewusst setzen."},
+  {nr:"8.5", titel:"Zusammenfassung und Checkliste", text:"Das Wichtigste aus Modul 8. 📎 Die Checkliste liegt unter diesem Video.", beilage:"Checkliste Modul 8", datei:"checkliste-modul-8.md"}
+ ]},
+{nr:9, titel:"Dein Cockpit",
+ text:"Bis hierhin hast du einzelne Maschinen. Jetzt bekommen sie eine Oberfläche, an der du morgens vorbeischaust, freigibst und weitergehst.",
+ lektionen:[
+  {nr:"9.1", titel:"Was ein Artifact ist", text:"Eine eigene kleine Seite mit Datenbank, die deine KI befüllt und die du bedienst. Auch vom Handy aus."},
+  {nr:"9.2", titel:"Dein eigenes Cockpit bauen", text:"Vom leeren Gerüst zur ersten Ansicht. 📎 Die Vorlage bekommst du unter diesem Video.", beilage:"Cockpit-Vorlage", datei:"cockpit-vorlage.html"},
+  {nr:"9.3", titel:"Der Abendlauf", text:"Was abends automatisch passiert, damit du morgens nichts mehr anstossen musst."},
+  {nr:"9.4", titel:"Wenn zwei Sachen dasselbe tun", text:"Ein Beitrag, den ich von Hand gepostet hatte, stand im Cockpit weiter auf wartend — und wäre am Abend ein zweites Mal eingeplant worden. Der Fehler, den man nicht sieht, bevor er passiert, und wie du ihn verhinderst."},
+  {nr:"9.5", titel:"Zusammenfassung und Checkliste", text:"Das Wichtigste aus Modul 9. 📎 Die Checkliste liegt unter diesem Video.", beilage:"Checkliste Modul 9", datei:"checkliste-modul-9.md"}
+ ]},
+{nr:10, titel:"Sicherheit, Grenzen und das Ganze",
+ text:"Zum Schluss die Dinge, über die sonst niemand spricht, und der Blick auf eine echte Woche bei mir — von Freitagmorgen bis zum fertigen Beitrag.",
+ lektionen:[
+  {nr:"10.1", titel:"Was nie in einen Arbeitsplatz gehört", text:"Bei mir lagen Zugangsschlüssel im Klartext und die Daten von zweiunddreissig Kundinnen offen abrufbar. Aufgefallen ist es niemandem — gefunden wurde es nur, weil einmal jemand gezielt nachgesehen hat. Was ich daraus gelernt habe und wie du es von Anfang an richtig machst. 📎 Die Sicherheits-Checkliste liegt unter diesem Video.", beilage:"Sicherheits-Checkliste", datei:"sicherheits-checkliste.md"},
+  {nr:"10.2", titel:"Wenn doch etwas passiert ist", text:"Löschen reicht nicht. Was du wirklich tun musst, wenn ein Zugang einmal offen lag."},
+  {nr:"10.3", titel:"Network-Compliance", text:"Was die KI schreibt, verantwortest du. Keine Heilversprechen, keine Einkommensversprechen, und die Regeln deines Partnerunternehmens gelten auch für einen Text, den du nicht selbst getippt hast."},
+  {nr:"10.4", titel:"Was KI nicht kann", text:"Beziehung, Entscheidung und deine Stimme bleiben bei dir. Und sie hört nichts, sieht nichts und weiss nicht, wie sich dein Dienstagnachmittag anfühlt."},
+  {nr:"10.5", titel:"Wie bei mir alles zusammenhängt", text:"Eine echte Woche, von Freitagmorgen bis zum fertigen Beitrag. Vorschläge kommen rein, ich gebe frei, abends plant es sich ein, die Bilder entstehen nebenher. Zum Mitschauen, nicht zum Nachbauen."},
+  {nr:"10.6", titel:"Wo du weitermachst", text:"Welche Maschine welches Wissen braucht und wo du das findest. Dazu die ehrliche Antwort, was als Nächstes wirklich dran ist bei dir."}
+ ]}
+];
+
+const ALLE = MODULE.flatMap(m => m.lektionen);
+const MIT_BEILAGE = ALLE.filter(l => l.beilage);
+
+let stand = {};
+let db = null;
+const DOC = "kurs/fortschritt";
+
+function hol(nr){ return stand[nr] || {}; }
+
+async function schreibe(){
+  try{ localStorage.setItem("kurs-fortschritt", JSON.stringify(stand)); }catch(e){}
+  if(db){ try{ await db.doc(DOC).set({lektionen: stand}); }catch(e){} }
+}
+
+function zaehle(){
+  const t = ALLE.filter(l => hol(l.nr).text).length;
+  const v = ALLE.filter(l => hol(l.nr).video).length;
+  const b = MIT_BEILAGE.filter(l => hol(l.nr).beilage).length;
+  setz("z-text","b-text", t, ALLE.length);
+  setz("z-video","b-video", v, ALLE.length);
+  setz("z-beilage","b-beilage", b, MIT_BEILAGE.length);
+  document.querySelectorAll("[data-modulzaehler]").forEach(el=>{
+    const m = MODULE.find(x => String(x.nr) === el.dataset.modulzaehler);
+    const fertig = m.lektionen.filter(l => hol(l.nr).text && hol(l.nr).video).length;
+    el.textContent = fertig + " von " + m.lektionen.length + " fertig";
+  });
+}
+function setz(zId, bId, wert, gesamt){
+  document.getElementById(zId).textContent = wert + " / " + gesamt;
+  document.getElementById(bId).style.width = (gesamt ? Math.round(wert/gesamt*100) : 0) + "%";
+}
+
+async function kopiere(txt, btn){
+  let ok = false;
+  try{ await navigator.clipboard.writeText(txt); ok = true; }
+  catch(e){
+    try{
+      const ta = document.createElement("textarea");
+      ta.value = txt; ta.style.position="fixed"; ta.style.opacity="0";
+      document.body.appendChild(ta); ta.select();
+      ok = document.execCommand("copy"); ta.remove();
+    }catch(e2){ ok = false; }
+  }
+  const alt = btn.dataset.label;
+  btn.textContent = ok ? "Kopiert" : "Ging nicht — von Hand markieren";
+  btn.classList.toggle("fertig", ok);
+  setTimeout(()=>{ btn.textContent = alt; btn.classList.remove("fertig"); }, 1600);
+}
+
+function hakenKnopf(nr, feld, beschriftung){
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "hk";
+  b.setAttribute("aria-pressed", hol(nr)[feld] ? "true" : "false");
+  b.innerHTML = '<span class="p"></span>';
+  b.append(beschriftung);
+  b.addEventListener("click", async ()=>{
+    stand[nr] = Object.assign({}, hol(nr));
+    stand[nr][feld] = !stand[nr][feld];
+    b.setAttribute("aria-pressed", stand[nr][feld] ? "true" : "false");
+    zaehle(); await schreibe();
+  });
+  return b;
+}
+
+function kopierKnopf(beschriftung, text){
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "kp"; b.dataset.label = beschriftung;
+  b.textContent = beschriftung;
+  b.addEventListener("click", ()=> kopiere(text, b));
+  return b;
+}
+
+function baueLektionen(){
+  const ziel = document.getElementById("p-lektionen");
+  ziel.textContent = "";
+  MODULE.forEach(m=>{
+    const sec = document.createElement("div");
+    sec.className = "modul";
+    const kopf = document.createElement("div");
+    kopf.className = "modul-kopf";
+    kopf.innerHTML = '<span class="modul-nr">' + m.nr + '</span>'
+      + '<h2 class="modul-titel"></h2>'
+      + '<span class="modul-zaehler" data-modulzaehler="' + m.nr + '"></span>';
+    kopf.querySelector(".modul-titel").textContent = m.titel;
+    sec.appendChild(kopf);
+
+    m.lektionen.forEach(l=>{
+      const row = document.createElement("div");
+      row.className = "lektion";
+      const nr = document.createElement("div");
+      nr.className = "lek-nr"; nr.textContent = l.nr;
+      const haupt = document.createElement("div");
+      haupt.className = "lek-haupt";
+      const t = document.createElement("p");
+      t.className = "lek-titel"; t.textContent = l.titel;
+      const tx = document.createElement("p");
+      tx.className = "lek-text"; tx.textContent = l.text;
+      haupt.append(t, tx);
+      if(l.beilage){
+        const bl = document.createElement("p");
+        bl.className = "lek-beilage";
+        bl.innerHTML = "📎 <b></b>";
+        bl.querySelector("b").textContent = l.beilage;
+        haupt.appendChild(bl);
+      }
+      const haken = document.createElement("div");
+      haken.className = "haken";
+      haken.append(hakenKnopf(l.nr,"text","Text drin"), hakenKnopf(l.nr,"video","Video drin"));
+      if(l.beilage) haken.appendChild(hakenKnopf(l.nr,"beilage","Beilage drin"));
+      const kop = document.createElement("div");
+      kop.className = "kopieren";
+      kop.append(kopierKnopf("Titel kopieren", l.titel), kopierKnopf("Text kopieren", l.text));
+      row.append(nr, haupt, haken, kop);
+      sec.appendChild(row);
+    });
+    ziel.appendChild(sec);
+  });
+}
+
+function baueBeilagen(){
+  const ziel = document.getElementById("p-beilagen");
+  ziel.textContent = "";
+  const hin = document.createElement("div");
+  hin.className = "hinweis";
+  hin.innerHTML = '<h3>Solange eine Datei fehlt, gehört der 📎-Satz aus dem Lektionstext heraus</h3>'
+    + '<p>Sonst verspricht die Lektion etwas, das die Käuferin nicht findet. Alle Wissensdateien in den Paketen sind <b>leer</b> — Überschriften und je zwei Sätze, was hineingehört. Keine fertigen Formeln, keine Painpoints, keine Beispiele. Das ist der Unterschied zwischen diesem Kurs und den drei anderen.</p>';
+  ziel.appendChild(hin);
+
+  const wrap = document.createElement("div");
+  wrap.className = "tabelle-huelle";
+  const tab = document.createElement("table");
+  tab.innerHTML = "<thead><tr><th>Lektion</th><th>Beilage</th><th>Dateiname</th><th>Status</th></tr></thead>";
+  const tb = document.createElement("tbody");
+  MIT_BEILAGE.forEach(l=>{
+    const tr = document.createElement("tr");
+    const td1 = document.createElement("td");
+    td1.innerHTML = '<span class="wo"></span>';
+    td1.querySelector(".wo").textContent = l.nr;
+    const td2 = document.createElement("td"); td2.textContent = l.beilage;
+    const td3 = document.createElement("td"); td3.className = "datei"; td3.textContent = l.datei;
+    const td4 = document.createElement("td");
+    td4.appendChild(hakenKnopf(l.nr, "beilage", "hochgeladen"));
+    tr.append(td1, td2, td3, td4);
+    tb.appendChild(tr);
+  });
+  tab.appendChild(tb); wrap.appendChild(tab); ziel.appendChild(wrap);
+}
+
+function baueModule(){
+  const ziel = document.getElementById("p-module");
+  ziel.textContent = "";
+
+  const b = document.createElement("div");
+  b.className = "block";
+  const h = document.createElement("h3"); h.textContent = BEGRUESSUNG.titel;
+  const q = document.createElement("p"); q.className = "quelle"; q.textContent = BEGRUESSUNG.quelle;
+  const inh = document.createElement("div"); inh.className = "inhalt";
+  BEGRUESSUNG.absaetze.forEach(a=>{ const p=document.createElement("p"); p.textContent=a; inh.appendChild(p); });
+  const kop = document.createElement("div"); kop.className = "kopieren";
+  kop.append(kopierKnopf("Überschrift kopieren", BEGRUESSUNG.titel),
+             kopierKnopf("Text kopieren", BEGRUESSUNG.absaetze.join("\n\n")));
+  b.append(h, q, inh, kop); ziel.appendChild(b);
+
+  MODULE.forEach(m=>{
+    const el = document.createElement("div");
+    el.className = "block";
+    const t = document.createElement("h3"); t.textContent = m.nr + " · " + m.titel;
+    const qq = document.createElement("p"); qq.className = "quelle";
+    qq.textContent = "Modultext · " + m.lektionen.length + " Lektionen";
+    const i = document.createElement("div"); i.className = "inhalt";
+    const p = document.createElement("p"); p.textContent = m.text; i.appendChild(p);
+    const k = document.createElement("div"); k.className = "kopieren";
+    k.append(kopierKnopf("Titel kopieren", m.nr + " · " + m.titel),
+             kopierKnopf("Modultext kopieren", m.text));
+    el.append(t, qq, i, k); ziel.appendChild(el);
+  });
+}
+
+// Reiter
+const reiter = [["t-lektionen","p-lektionen"],["t-beilagen","p-beilagen"],["t-module","p-module"]];
+reiter.forEach(([tid,pid])=>{
+  document.getElementById(tid).addEventListener("click", ()=>{
+    reiter.forEach(([a,b])=>{
+      const auf = a === tid;
+      document.getElementById(a).setAttribute("aria-selected", auf ? "true" : "false");
+      document.getElementById(b).hidden = !auf;
+    });
+  });
+});
+
+// Start
+try{ const roh = localStorage.getItem("kurs-fortschritt"); if(roh) stand = JSON.parse(roh) || {}; }catch(e){}
+baueLektionen(); baueBeilagen(); baueModule(); zaehle();
+
+(async ()=>{
+  const s = document.getElementById("speicherstand");
+  try{
+    db = await claude.use("db");
+    if(!db){ s.textContent = "Ablage nicht erreichbar — die Haken bleiben nur in diesem Browser."; return; }
+    const doc = await db.doc(DOC).get();
+    if(doc && doc.lektionen){
+      stand = doc.lektionen;
+      try{ localStorage.setItem("kurs-fortschritt", JSON.stringify(stand)); }catch(e){}
+      baueLektionen(); baueBeilagen(); zaehle();
+    }
+    s.textContent = "Haken werden gespeichert und sind auf jedem Gerät gleich.";
+  }catch(e){
+    s.textContent = "Ablage nicht erreichbar — die Haken bleiben nur in diesem Browser.";
+  }
+})();
+</script>

@@ -1,0 +1,51 @@
+{
+ "name": "Di · Reaktion auf das Montags-Reel",
+ "datum": "2026-09-22",
+ "profil": "mentoring",
+ "brand": "mlb_light",
+ "frames": [
+  {
+   "id": "s1",
+   "layout": "hook",
+   "text": "Gestern kam unter dem Reel dreimal derselbe Satz: „Genau so ist es bei mir auch.“ Und jedes Mal hat es mich kurz geärgert.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s2",
+   "layout": "text",
+   "text": "Nicht wegen euch. Wegen mir vor drei Jahren, als ich genau dasselbe geschrieben hätte — und dann nichts geändert hab.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s3",
+   "layout": "text",
+   "text": "Wiedererkennen fühlt sich gut an. Es ist aber noch keine Entscheidung. Der Unterschied zwischen den beiden liegt bei ungefähr zwanzig Minuten mit einem Blatt Papier.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s4",
+   "layout": "frage",
+   "text": "Hast du das zweite Blatt gemacht?",
+   "cta": "Umfrage",
+   "optA": "Ja, liegt vor mir",
+   "optB": "Noch nicht"
+  },
+  {
+   "id": "s5",
+   "layout": "cta",
+   "text": "Wenn nicht: Das Werkzeug macht es mit dir, damit du nicht vor einem leeren Blatt sitzt. Fünf Minuten, kostet nichts.",
+   "cta": "mumlifebalance.ch/produkt-ideen-finder/",
+   "optA": "",
+   "optB": ""
+  }
+ ],
+ "textfrei": false,
+ "hinweis": "🔴 Rot (Dominant) · Säule Expertise · ⚠️ Folie 1 nur posten, wenn es diese Kommentare wirklich gibt — sonst: „Gestern kam unter dem Reel ein Satz, den ich selbst mal geschrieben hätte.“",
+ "updatedAt": "2026-09-18T07:00:00.000Z"
+}

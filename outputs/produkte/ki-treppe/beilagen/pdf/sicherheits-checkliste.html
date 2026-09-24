@@ -1,0 +1,65 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet"><style>@page { size: A4; margin: 17mm 16mm 20mm; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: #0c1c30;
+  font-family: 'Source Sans 3', sans-serif; font-size: 11.4pt; line-height: 1.58; }
+.kopf { border-bottom: 3px solid #dc822e; padding-bottom: 9px; margin-bottom: 22px;
+  display: flex; align-items: baseline; gap: 10px; }
+.kopf .marke { font-family: 'Philosopher', serif; font-size: 13pt; color: #12828c; }
+.kopf .reihe { font-size: 8.6pt; letter-spacing: .14em; text-transform: uppercase;
+  color: #29556d; opacity: .75; margin-left: auto; }
+h1 { font-family: 'Philosopher', serif; font-size: 25pt; line-height: 1.16;
+  color: #0c1c30; margin: 0 0 14px; font-weight: 700; }
+h2 { font-family: 'Philosopher', serif; font-size: 16pt; color: #12828c;
+  margin: 26px 0 8px; font-weight: 700; break-after: avoid; }
+h3 { font-family: 'Philosopher', serif; font-size: 13pt; color: #29556d;
+  margin: 18px 0 6px; font-weight: 700; break-after: avoid; }
+h4 { font-size: 11.4pt; color: #29556d; margin: 14px 0 4px; break-after: avoid; }
+p { margin: 0 0 10px; }
+strong { color: #0c1c30; font-weight: 600; }
+code { font-family: 'Source Sans 3', monospace; background: #f1ecdd;
+  border-radius: 4px; padding: 1px 5px; font-size: 10.4pt; }
+pre { background: #f1ecdd; border-left: 3px solid #12828c;
+  border-radius: 0 7px 7px 0; padding: 11px 14px; font-size: 10pt; line-height: 1.5;
+  white-space: pre-wrap; overflow-wrap: anywhere; margin: 0 0 12px; }
+hr { border: 0; border-top: 1px solid rgba(12,28,48,.14); margin: 20px 0; }
+ul { margin: 0 0 12px; padding-left: 0; list-style: none; }
+ul.punkte li { position: relative; padding-left: 19px; margin-bottom: 5px; }
+ul.punkte li::before { content: ""; position: absolute; left: 3px; top: .62em;
+  width: 6px; height: 6px; border-radius: 50%; background: #dc822e; }
+ul.haken li { position: relative; padding-left: 30px; margin-bottom: 9px; break-inside: avoid; }
+ul.haken .kasten { position: absolute; left: 0; top: .18em; width: 15px; height: 15px;
+  border: 1.8px solid #12828c; border-radius: 4px; }
+blockquote { background: #f1ecdd; border-left: 3px solid #dc822e;
+  border-radius: 0 8px 8px 0; padding: 12px 15px; margin: 0 0 14px; break-inside: avoid; }
+blockquote p:last-child { margin-bottom: 0; }
+table { width: 100%; border-collapse: collapse; margin: 0 0 14px; font-size: 10.6pt; }
+th { text-align: left; background: #12828c; color: #fff; font-weight: 600; padding: 7px 10px; }
+td { padding: 7px 10px; border-bottom: 1px solid rgba(12,28,48,.12); vertical-align: top; }
+tr:nth-child(even) td { background: rgba(241,236,221,.5); }
+.fuss { margin-top: 26px; padding-top: 9px; border-top: 1px solid rgba(12,28,48,.14);
+  font-size: 8.8pt; color: #29556d; opacity: .8; }</style></head><body><div class="kopf"><span class="marke">Mum Life Balance</span><span class="reihe">Deine KI-Mitarbeiterin</span></div><h1>Was nie in einen Arbeitsplatz gehört</h1>
+<p>Bei mir lagen Zugangsschlüssel im Klartext und die Daten von zweiunddreissig Kundinnen offen abrufbar. Aufgefallen ist es niemandem. Gefunden wurde es nur, weil einmal jemand gezielt nachgesehen hat.</p>
+<p>Diese Liste ist das, was ich daraus gelernt habe.</p>
+<hr>
+<h2>Die drei Regeln</h2>
+<p><strong>1 · Kein Zugangsschlüssel im Text einer Datei.</strong> Schlüssel kommen aus einer eigenen Datei daneben, die ausdrücklich nicht mitgegeben wird. Fehlt der Schlüssel, soll dein Skript abbrechen und es sagen — nie mit einem eingebauten Ersatzwert weiterlaufen.</p>
+<p><strong>2 · Keine Daten anderer Menschen im Arbeitsplatz.</strong> Namen, Mailadressen, Telefonnummern, Kundennummern gehören in eine eigene Datei, die ebenfalls nicht mitgeht. Auch wenn es nur drei Leute sind.</p>
+<p><strong>3 · Zusagen an Kundinnen gelten auch hier.</strong> Wenn jemand dir ein Feedback mit „nur intern" gegeben hat, dann gilt das auch für die Datei, in der du es sammelst.</p>
+<hr>
+<h2>Die Liste zum Durchgehen</h2>
+<ul class="haken"><li><span class="kasten"></span>Steht irgendwo ein Zugangsschlüssel im Klartext?</li><li><span class="kasten"></span>Steht irgendwo eine fremde Mailadresse oder Telefonnummer?</li><li><span class="kasten"></span>Liegen Kundenlisten oder Bestelldaten im Arbeitsplatz?</li><li><span class="kasten"></span>Gibt es eine Datei mit gespeicherten Anmeldedaten aus dem Browser?</li><li><span class="kasten"></span>Steht in einer Datei etwas, das du einer Kundin über eine andere Kundin</li></ul>
+<p>nicht zeigen würdest?</p>
+<ul class="haken"><li><span class="kasten"></span>Wenn du deinen Arbeitsplatz irgendwohin kopierst, etwa in eine</li></ul>
+<p>Cloud-Ablage: kommen dabei Dateien mit, die du ausgeschlossen hattest?</p>
+<p>Die letzte Frage ist die, die am häufigsten übersehen wird. <strong>Eine Kopie in einer Cloud-Ablage umgeht jede Ausschlussliste.</strong></p>
+<hr>
+<h2>Wenn doch einmal etwas offen lag</h2>
+<p><strong>Löschen reicht nicht.</strong> Wer den Schlüssel in der Zwischenzeit kopiert hat, kann ihn weiter benutzen, auch wenn die Datei weg ist.</p>
+<p>1. <strong>Schlüssel wechseln</strong>, nicht entfernen. Bei den meisten Anbietern steht das unter Einstellungen als „zurücksetzen" oder „widerrufen". 2. <strong>Den neuen Schlüssel überall eintragen</strong>, wo der alte stand. Meistens ist das mehr als eine Stelle. 3. <strong>Programme neu starten</strong>, die den Schlüssel beim Start einlesen. Sonst arbeiten sie weiter mit dem alten und du wunderst dich über Fehlermeldungen.</p>
+<hr>
+<h2>Was die KI schreibt, verantwortest du</h2>
+<p>Wenn du im Network arbeitest, gelten die Regeln deines Partnerunternehmens auch für einen Text, den du nicht selbst getippt hast:</p>
+<ul class="haken"><li><span class="kasten"></span>Keine Aussage darüber, dass etwas eine Krankheit heilt, lindert oder</li></ul>
+<p>verhindert</p>
+<ul class="haken"><li><span class="kasten"></span>Keine Einkommensversprechen, weder für dich noch für andere</li><li><span class="kasten"></span>Keine erfundenen Erfahrungsberichte, auch keine „eine Kundin sagte"</li><li><span class="kasten"></span>Keine Zahl, die du nicht belegen kannst</li></ul>
+<p><strong>Schreib diese Punkte als Verbote in deinen Business-Brief.</strong> Dann prüft die KI selbst mit, statt dass du es jedes Mal nachlesen musst.</p><div class="fuss">Patricia Ulmann · mumlifebalance.ch — für Teilnehmerinnen des Kurses. Bitte nicht weitergeben.</div></body></html>

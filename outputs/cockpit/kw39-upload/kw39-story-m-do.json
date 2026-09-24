@@ -1,0 +1,59 @@
+{
+ "name": "Do · Die drei Vormittagsstunden",
+ "datum": "2026-09-24",
+ "profil": "mentoring",
+ "brand": "mlb_light",
+ "frames": [
+  {
+   "id": "s1",
+   "layout": "hook",
+   "text": "Gestern hab ich von drei Stunden am Vormittag geredet. Heute zeig ich dir, was da wirklich reinpasst.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s2",
+   "layout": "text",
+   "text": "8:00 bis 9:00 — das, was nur ich machen kann. Gespräche, Entscheidungen, Texte, bei denen es auf meine Stimme ankommt.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s3",
+   "layout": "text",
+   "text": "9:00 bis 10:00 — das, was vorbereitet werden muss. Da läuft die KI mit, und ich entscheide, was bleibt.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s4",
+   "layout": "text",
+   "text": "10:00 bis 11:00 — das, was liegen bleiben darf. Genau darum steht es am Schluss.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s5",
+   "layout": "frage",
+   "text": "Was würdest du in dein erstes Fenster legen?",
+   "cta": "Frage-Sticker, offen",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s6",
+   "layout": "cta",
+   "text": "Wenn du bei null anfängst und nicht weisst, womit: Das Workbook geht die Reihenfolge mit dir durch. Kommentier ECHT1, kostet nichts.",
+   "cta": "Keyword ECHT1",
+   "optA": "",
+   "optB": ""
+  }
+ ],
+ "textfrei": false,
+ "hinweis": "🔵 Blau (Gewissenhaft) · Säule Persönlichkeit · CTA Workbook, Keyword ECHT1",
+ "updatedAt": "2026-09-18T07:00:00.000Z"
+}

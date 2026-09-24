@@ -1,0 +1,59 @@
+{
+ "name": "Di · doTERRA · Meine Geschichte",
+ "datum": "2026-09-22",
+ "profil": "doterra",
+ "brand": "oele",
+ "frames": [
+  {
+   "id": "s1",
+   "layout": "hook",
+   "text": "Der Moment, an dem ich es nicht mehr wegschieben konnte, war peinlich.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s2",
+   "layout": "text",
+   "text": "Ich war an einer Convention und hab mir das Zimmer mit anderen Frauen geteilt. Beim Haarebürsten lag jedes Mal ein Büschel auf dem Boden. Zuhause war mir das nie aufgefallen.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s3",
+   "layout": "text",
+   "text": "Beim Arzt kamen die Leberwerte dran. Die waren gut. Danach war das Gespräch zu Ende, und ich bin mit nichts nach Hause.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s4",
+   "layout": "text",
+   "text": "Es war eine Freundin, die gesagt hat: Mach doch mal einen Hormontest. Nicht der Arzt. Eine Freundin, gleich alt wie ich.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s5",
+   "layout": "frage",
+   "text": "Hast du so eine Freundin, die dir sowas sagt?",
+   "cta": "Umfrage",
+   "optA": "Ja",
+   "optB": "Hätte ich gern"
+  },
+  {
+   "id": "s6",
+   "layout": "cta",
+   "text": "Wenn du auf so einen Satz wartest: Schreib mir. Ich bin heute den ganzen Tag hier.",
+   "cta": "Antwort-Sticker, offen",
+   "optA": "",
+   "optB": ""
+  }
+ ],
+ "textfrei": false,
+ "hinweis": "🟡 Gelb · Bogen-Schritt 2 · CTA Antwort-Sticker, bewusst KEIN Link — heute geht es ums Gespräch",
+ "updatedAt": "2026-09-18T07:00:00.000Z"
+}

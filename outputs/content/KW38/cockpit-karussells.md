@@ -7,7 +7,7 @@ tags: [content, karussell]
 Gesichert aus der Cockpit-Datenbank (Sammlung `karussells`), **mit allen
 Folien im Wortlaut**. Die Datenbank bleibt die Arbeitsfassung.
 
-**6 Karussells.**
+**12 Karussells.**
 
 ---
 
@@ -97,15 +97,15 @@ Typ 2 Tutorial · Job A+D · Foto-Cover
 
 ## C · Mi · Diese Produktidee kauft keiner — diese schon
 
-*2026-09-16 · listicle · MOF · Look mlb_light* · `kw38-kar-mi-c`
+*2026-09-16 · listicle · MOF · Look mlb_dark* · `kw38-kar-mi-c`
 
 **Folien (10)**
 
 1. **Aus „ich weiss ja nichts Besonderes" wird eine Idee, für die jemand zahlt.**  ·  _hook_
    [Hier ein Screenshot aus deinem Chatverlauf oder von einer Rückmeldung — nur wenn du einen hast.]
-2. **Die meisten scheitern nicht am Wissen.**  ·  _text_
-   Sie scheitern daran, wie sie es benennen.
-3. **Stell dir zwei Zettel am schwarzen Brett vor.**  ·  _text_
+2. **Dein Wissen reicht längst.**  ·  _text_
+   Woran es hakt, ist die Art, wie du es benennst.
+3. **Am schwarzen Brett hängen zwei Zettel.**  ·  _text_
    Auf dem einen steht „Nachhilfe". Auf dem anderen „Mathe-Prüfung in zwei Wochen und dein Kind blockiert?" Gleiche Person, gleiches Können. Nur einer wird abgerissen.
 4. **Speicher dir das jetzt.**  ·  _text_
    Weil ab hier acht Paare kommen, die du direkt auf dein eigenes Wissen anwenden kannst.
@@ -149,20 +149,12 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 hab ich mein Network im Hybrid
 #mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #nebenbeigeldverdienen #mamaalltag
 
 
-**Hinweis**
-
-Gebaut nach dem Bauplan aus dem Konkurrenz-Scrape (14.09.): Ergebnis-Cover → Behauptung → Bild zum Verstehen → eigene Speicher-Folie mit Begründung → Vorher-Nachher-Paare nach Bereich sortiert → Keyword verspricht MEHR VOM GLEICHEN.
-
-Der entscheidende Unterschied zu A und B: Das Karussell beweist den Wert des Freebies, statt ihn zu behaupten. Acht Paare im Beitrag, zwanzig hinter dem Keyword.
-
-⚠️ Folie 1 braucht einen Beweis. Wenn du keine Zahl hast, die du zeigen willst, nimm Variante A oder B — eine Zahl erfinde ich nicht.
-
 
 ---
 
 ## C · Do · Drei Dinge, warum ich nichts bei dir bestellen würde
 
-*2026-09-17 · kontrovers · TOF · Look mlb_foto* · `kw38-kar-do-c`
+*2026-09-17 · Mentoring · kontrovers · TOF · Look mlb_foto* · `kw38-kar-do-c`
 
 **Folien (9)**
 
@@ -287,6 +279,282 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 hab ich mein Network im Hybrid
 **Hinweis**
 
 Typ 2 Storytelling · Job A+D. Alternativ-Hook mit stärkerem Anker: „Früher hab ich die Namensliste abtelefoniert. Heute fragen mich Frauen von selbst.“
+
+
+---
+
+## A · Di · Drei Fragen, zwanzig Minuten
+
+*2026-09-22 · Mentoring · edukativ · MOF · Look mlb_light* · `kw39-kar-di-a`
+
+**Folien (9)**
+
+1. **Drei Fragen, und du weisst in zwanzig Minuten, worüber du schreiben kannst.**  ·  _hook_
+   Du brauchst dafür Papier, keine neue Idee.
+2. **Du suchst dein Thema da draussen**  ·  _text_
+   Dabei liegt es in dem, was du sowieso schon beantwortest — nur hat es noch nie jemand aufgeschrieben.
+3. **Der Zettel am schwarzen Brett**  ·  _text_
+   Zwei Frauen hängen einen Zettel auf. Auf dem einen steht, was sie verkaufen. Auf dem anderen steht, welches Problem sie lösen. Angerufen wird nur eine.
+4. **🔖 Ab hier kommen die drei Fragen**  ·  _text_
+   Speicher dir das. Du brauchst zwanzig Minuten und einen Stift, und du kommst mit einem Satz raus.
+5. **Frage 1: Welche Frage wurde dir in den letzten vier Wochen mehr als einmal gestellt?**  ·  _text_
+   Schreib sie wörtlich auf, in den Worten der Person. Nicht zusammengefasst. Das ist dein Thema in ihrer Sprache.
+6. **Frage 2: Was kannst du heute, das du vor zwei Jahren nicht konntest?**  ·  _text_
+   Das ist deine Erfahrung, und die gehört dir — im Gegensatz zum Sortiment.
+7. **Frage 3: Was erklärst du jedes Mal, bevor jemand bei dir bestellt?**  ·  _text_
+   Genau dieser Teil ist dein Angebot. Du verschenkst ihn gerade in DMs.
+8. **Drei Antworten auf Papier**  ·  _text_
+   Das ist kein Thema-Problem mehr. Das ist eine Liste, aus der du sechs Wochen Content und ein erstes eigenes Angebot ziehst.
+9. **Kommentier STANDBEIN**  ·  _cta_
+   Dann schick ich dir das Werkzeug, das die drei Fragen mit dir durchgeht und so lange nachfragt, bis eine Produktidee dasteht. Die drei hier sind der Anfang — im Werkzeug sind es mehr.
+
+**Caption**
+
+Kommentier **STANDBEIN**, dann schick ich dir das Werkzeug, das diese drei Fragen mit dir durchgeht, bis eine Produktidee dasteht.
+
+Die meisten suchen monatelang nach einem Thema, das längst in ihren eigenen Antworten liegt. Meine Mentees kommen in der Regel mit einer Idee raus, die sie vorher für zu selbstverständlich gehalten haben.
+
+Bei welcher der drei Fragen hängst du? Schreib mir die Nummer in einen zweiten Kommentar — das Stichwort oben muss allein stehen, sonst springt die Automatik nicht an.
+
+**STANDBEIN** ⬇️
+
+#mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #expertenbusiness #mumpreneur
+
+
+**Hinweis**
+
+Typ 2 Tutorial · Job A+D · LEAD, Keyword STANDBEIN · Cover: Vorlage Creme mit Dunkelblau-Typo. Kein Voll-Petrol auf einem Lead-Post. Posting-Zeit 07:30.
+
+
+---
+
+## B · Di · Kein Ideen-Problem
+
+*2026-09-22 · Mentoring · kontrovers · MOF · Look mlb_light* · `kw39-kar-di-b`
+
+**Folien (9)**
+
+1. **Du hast kein Ideen-Problem**  ·  _hook_
+   Deins kommt dir nur zu normal vor, um Geld dafür zu nehmen.
+2. **„Das weiss doch jede“**  ·  _text_
+   Das ist der Satz, an dem die meisten Ideen sterben. Er stimmt fast nie.
+3. **🔖 Ab hier wird es konkret**  ·  _text_
+   Speicher dir das — es kommen vier Sachen, die dir zu normal vorkommen und die trotzdem jemand kauft.
+4. **Die Reihenfolge**  ·  _text_
+   Du weisst, womit man anfängt und was warten kann. Für jemanden am Tag eins ist das die halbe Miete.
+5. **Die Fehler**  ·  _text_
+   Du kennst die drei Dinge, die am Anfang alle falsch machen, weil du sie selbst falsch gemacht hast.
+6. **Die Übersetzung**  ·  _text_
+   Du kannst erklären, was die Beschreibung auf der Packung im Alltag heisst. Das steht nirgends.
+7. **Das Dranbleiben**  ·  _text_
+   Du weisst, was man macht, wenn nach zwei Wochen nichts passiert. Genau daran hören die meisten auf.
+8. **Und jetzt ehrlich**  ·  _text_
+   Manchmal ist eine Idee wirklich zu dünn. Wenn du nur ein einziges Mal etwas getan hast und es bei dir selbst funktioniert hat, ist das noch kein Angebot. Zwei- oder dreimal bei anderen, das reicht.
+9. **Kommentier STANDBEIN**  ·  _cta_
+   Dann schick ich dir das Werkzeug, das dich aus genau diesen vier Ecken eine Idee bauen lässt. Es fragt so lange nach, bis etwas dasteht, das du auch verkaufen würdest.
+
+**Caption**
+
+Kommentier **STANDBEIN**, dann schick ich dir das Werkzeug, das aus deinem „das weiss doch jede“ eine Produktidee macht.
+
+Ich hab jahrelang gedacht, dass mein Wissen zu selbstverständlich ist, um dafür Geld zu nehmen. Es war nur zu vertraut, um es von aussen zu sehen.
+
+Welche der vier kommt dir am meisten wie „das weiss doch jede“ vor? Schreib die Nummer in einen zweiten Kommentar.
+
+**STANDBEIN** ⬇️
+
+#mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #expertenbusiness #businessmama
+
+
+**Hinweis**
+
+Typ 2 · Karussell-Typ kontroverser Take — die Nuancierungs-Folie (8) ist bei diesem Typ Pflicht und steht drin. Cover: Vorlage Creme.
+
+
+---
+
+## A · Do · Was nicht im Katalog steht
+
+*2026-09-24 · Mentoring · edukativ · MOF · Look mlb_light* · `kw39-kar-do-a`
+
+**Folien (9)**
+
+1. **Was weisst du über dein Produkt, das so im Katalog gar nicht drinsteht?**  ·  _hook_
+   Vier Bereiche, in denen du mehr weisst als jede Broschüre.
+2. **Im Katalog steht, was drin ist**  ·  _text_
+   Bei dir steht, was es bei wem verändert hat, und was man vorher wissen muss.
+3. **Zwei Frauen, dasselbe Produkt**  ·  _text_
+   Die eine liest die Packung vor. Die andere erzählt vom Dienstagabend, an dem es zum ersten Mal anders lief. Gefragt wird die zweite.
+4. **🔖 Ab hier kommen die vier Bereiche**  ·  _text_
+   Speicher dir das und schreib zu jedem einen Satz. Danach hast du vier Beiträge, die niemand sonst schreiben kann.
+5. **Anwendung — Katalog: „zweimal täglich“**  ·  _text_
+   Deins: warum morgens und nicht abends, und was passiert, wenn man es vergisst.
+6. **Auswahl — Katalog: zwölf Varianten**  ·  _text_
+   Deins: welche drei für den Anfang reichen und welche neun warten können.
+7. **Alltag — Katalog: „praktisch für unterwegs“**  ·  _text_
+   Deins: wo es liegen muss, damit sie es an einem Dienstag um halb vier überhaupt findet.
+8. **Zweifel — Katalog schweigt**  ·  _text_
+   Deins: was du sagst, wenn nach zwei Wochen nichts passiert ist. Genau da hören die meisten auf.
+9. **Kommentier ECHT1**  ·  _cta_
+   Dann schick ich dir das Workbook, mit dem du aus diesen vier Sätzen dein Thema machst — inklusive der Schritte, die danach kommen.
+
+**Caption**
+
+Kommentier **ECHT1**, dann schick ich dir das Workbook, mit dem du aus diesen vier Sätzen dein Thema machst.
+
+Die vier Bereiche oben sind der ganze Trick: Du hast zu jedem eine Antwort, die in keiner Broschüre steht. Aufgeschrieben hast du sie noch nie.
+
+Bei mir war genau das der Punkt, an dem mein Profil aufgehört hat, wie eine Bestellliste auszusehen.
+
+Welcher der vier Bereiche fällt dir am leichtesten? Schreib die Nummer in einen zweiten Kommentar.
+
+**ECHT1** ⬇️
+
+#mamabusiness #mamaimnetworkmarketing #expertenbusiness #onlinebusinessmama #businessmama
+
+
+**Hinweis**
+
+Typ 2 · Job A+D · LEAD, Keyword ECHT1 (bewusst ein anderes als am Dienstag). Cover: Vorlage Orange mit Dunkelblau-Typo — rotiert gegen Dienstag.
+
+
+---
+
+## B · Do · Vier Sätze
+
+*2026-09-24 · Mentoring · listicle · MOF · Look mlb_light* · `kw39-kar-do-b`
+
+**Folien (9)**
+
+1. **Vier Sätze, die du ständig sagst**  ·  _hook_
+   Und die alle dein eigenes Angebot beschreiben.
+2. **Du sagst sie mündlich, jede Woche**  ·  _text_
+   Aufgeschrieben hast du sie nie. Deshalb bezahlt dich auch niemand dafür.
+3. **🔖 Lies die vier und häng an jeden ein Datum**  ·  _text_
+   Wann hast du ihn zuletzt gesagt? Speicher dir das, du wirst dich erschrecken, wie oft.
+4. **„Fang erst mal nur damit an“**  ·  _text_
+   Das ist dein Einstiegs-Angebot. Du hast eine Reihenfolge im Kopf, die für andere Gold ist.
+5. **„Das war bei mir am Anfang auch so“**  ·  _text_
+   Das ist deine Story, und sie nimmt jemandem die Angst. Genau dafür zahlen Leute.
+6. **„Warte noch zwei Wochen, dann schauen wir nochmal“**  ·  _text_
+   Das ist Begleitung. Der Teil, den kein Produkt mitliefert.
+7. **„Nein, das brauchst du wirklich nicht“**  ·  _text_
+   Das ist Vertrauen. Wer abrät, wird gefragt.
+8. **Vier Sätze, vier Bausteine**  ·  _text_
+   Einstieg, Story, Begleitung, Ehrlichkeit. Das ist bereits ein Angebot — es hat nur noch keinen Namen.
+9. **Kommentier ECHT1**  ·  _cta_
+   Dann schick ich dir das Workbook, in dem du deinen vier Sätzen einen Namen gibst.
+
+**Caption**
+
+Kommentier **ECHT1**, dann schick ich dir das Workbook, in dem aus deinen vier Sätzen ein Angebot mit Namen wird.
+
+Du sagst sie jede Woche in DMs, in Sprachnachrichten, am Telefon. Und weil sie mündlich bleiben, zahlt niemand dafür.
+
+Welchen der vier hast du diese Woche schon gesagt? Schreib die Nummer in einen zweiten Kommentar.
+
+**ECHT1** ⬇️
+
+#mamabusiness #mamaimnetworkmarketing #expertenbusiness #businessmama #onlinebusinessmama
+
+
+**Hinweis**
+
+Typ 2 · LEAD, Keyword ECHT1. Cover: Vorlage Orange.
+
+
+---
+
+## A · Fr · Früher Produktfotos
+
+*2026-09-25 · Mentoring · kontrast · MOF · Look mlb_light* · `kw39-kar-fr-a`
+
+**Folien (9)**
+
+1. **Früher Produktfotos. Heute fragen sie nach etwas, das nicht im Katalog steht.**  ·  _hook_
+   Was sich dazwischen geändert hat, waren nicht mehr Stunden.
+2. **Vorher**  ·  _text_
+   Ich hab gepostet, was die Firma geschickt hat. Schöne Bilder, korrekte Texte, keine Fragen.
+3. **Nachher**  ·  _text_
+   Ich poste, worüber ich sowieso rede. Und jetzt schreiben mir Frauen, bevor ich irgendwas anbiete.
+4. **🔖 Ab hier kommen die Belege**  ·  _text_
+   Speicher dir das, wenn du wissen willst, wie schnell das gehen kann.
+5. **Eine Mentee, eine Woche**  ·  _text_
+   Zwei Startersets verkauft, drei Gespräche offen. Weil sie endlich mit ihrem Thema sichtbar geworden ist — nicht mit ihrem Sortiment.
+6. **Eine andere, nach einem Post**  ·  _text_
+   „Ich kam mit dem Antworten nicht mehr hinterher.“ Ein Post. Nicht dreissig.
+7. **Und eine dritte**  ·  _text_
+   „Seit ich meine Positionierung angepasst habe, geht mein Account ab.“
+8. **Was alle drei gemacht haben**  ·  _text_
+   Sie haben aufgehört, ihr Produkt zu zeigen, und angefangen, ihre Antwort zu zeigen. Dieselben Follower, dieselbe Woche.
+9. **Kommentier STANDBEIN**  ·  _cta_
+   Dann schick ich dir das Werkzeug, das aus deinem Wissen eine Produktidee macht. Es fragt nach, bis etwas dasteht — kostet nichts und dauert fünf Minuten.
+
+**Caption**
+
+Kommentier **STANDBEIN**, dann geht das Werkzeug in fünf Minuten mit dir durch, was bei dir das Eigene wäre.
+
+Drei Frauen, drei verschiedene Networks, dieselbe Woche. Keine hat mehr gearbeitet als vorher. Alle drei haben aufgehört, ihr Sortiment zu zeigen.
+
+Ich hab für denselben Schritt zwei Jahre gebraucht, weil mir niemand gesagt hat, dass er so klein ist.
+
+Welche der drei ist dir am nächsten? Schreib die Nummer in einen zweiten Kommentar.
+
+**STANDBEIN** ⬇️
+
+#mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #expertenbusiness #mumpreneur
+
+
+**Hinweis**
+
+Typ 5 Social Proof · Job D · LEAD, Keyword STANDBEIN. Cover: FOTO mit Textbalken unten, kein dunkles Vollflächen-Cover. Alle drei Mentee-Aussagen stehen wörtlich in patricia-vollprofil.md. 🚨 Keine Verknappung — das Werkzeug bleibt online.
+
+
+---
+
+## B · Fr · Mein grösster Fehler
+
+*2026-09-25 · Mentoring · storytelling · MOF · Look mlb_light* · `kw39-kar-fr-b`
+
+**Folien (9)**
+
+1. **Mein grösster Fehler im Network**  ·  _hook_
+   Ich hab jahrelang alles, was ich weiss, in DMs verschenkt.
+2. **Es hat sich richtig angefühlt**  ·  _text_
+   Jemand fragt, ich antworte ausführlich. Das ist ja nett, und verdienen kommt von dienen.
+3. **Bis mir auffiel, wie oft dieselbe Frage kam**  ·  _text_
+   Immer dieselben drei Themen, immer von vorn getippt, immer abends nach neun.
+4. **🔖 Ab hier kommt, was ich geändert hab**  ·  _text_
+   Speicher dir das, wenn du auch jeden Abend dieselbe Sprachnachricht schickst.
+5. **Schritt 1: mitschreiben statt wegschicken**  ·  _text_
+   Jede Frage, die zweimal kam, in eine Liste. Vier Wochen lang, sonst nichts.
+6. **Schritt 2: die Liste sortieren**  ·  _text_
+   Aus vierzehn Fragen wurden drei Themen. Eines davon kam doppelt so oft vor wie die anderen.
+7. **Schritt 3: daraus etwas bauen, das bleibt**  ·  _text_
+   Aus dem einen Thema ist mein erster Minikurs geworden. Die Antworten hatte ich längst — sie lagen nur in dreissig Chatverläufen.
+8. **Was das geändert hat**  ·  _text_
+   Ich antworte immer noch gern. Ich fange nur nicht mehr jedes Mal bei null an.
+9. **Kommentier STANDBEIN**  ·  _cta_
+   Dann schick ich dir das Werkzeug, das genau diese Sortierung mit dir macht — ohne dass du vier Wochen mitschreiben musst.
+
+**Caption**
+
+Kommentier **STANDBEIN**, und du überspringst die vier Wochen Mitschreiben.
+
+Ich hab jahrelang abends nach neun dieselben Sprachnachrichten geschickt und es für Kundenservice gehalten. Es war die teuerste Art, Wissen loszuwerden.
+
+Heute liegt dasselbe Wissen an einem Ort, und die Leute finden es, während ich schlafe.
+
+Wie viele Sprachnachrichten hast du diese Woche schon geschickt? Schreib die Zahl in einen zweiten Kommentar.
+
+**STANDBEIN** ⬇️
+
+#mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #expertenbusiness #businessmama
+
+
+**Hinweis**
+
+Typ 5 · Karussell-Typ Storytelling · LEAD, Keyword STANDBEIN. Cover: FOTO mit Textbalken.
 
 
 ---

@@ -2,6 +2,12 @@
 tags: [produkt, claude-kurs, mba]
 ---
 
+> 🗃 **Abgeloest am 22.09.2026.** Das gueltige Konzept steht in
+> [[../ki-treppe/02-kurs-konzept|ki-treppe/02-kurs-konzept]] — dort heisst der Kurs
+> **Deine KI-Mitarbeiterin** und ist in die KI-Produkttreppe eingehaengt.
+> Diese Datei bleibt als Herkunft liegen. Die Entscheide von damals gelten weiter,
+> sie sind drueben zusammengefasst.
+
 # Claude als Networkerin — Kurs-Konzept
 
 **Stand:** 2026-07-20 · erarbeitet aus dem Handy-Chat + Cockpit-Einordnung

@@ -73,6 +73,9 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[06-produktpaket-21-tage]]
 - [[07-reel-opt-in-energie]]
 - [[08-bio-und-beitraege]]
+- [[10-landingpage-30-tage-energieroutine]]
+- [[11-30-tage-plan]]
+- [[12-30-fruehstuecke]]
 - [[_INDEX]]
 
 ### 📁 instagram-startklar
@@ -86,7 +89,37 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[05-ki-assistent-check]]
 - [[bump-upsell-strategie]]
 - [[09-salespage]]
+- [[10-kursplattform-texte]]
+- [[11-verkaufsstorys]]
+- [[_INDEX]]
 - [[notion-eintrag]]
+
+### 📁 ki-treppe
+
+- [[00-markt-research]]
+- [[01-produkttreppe]]
+- [[02-kurs-konzept]]
+- [[03-inhaltsverzeichnis]]
+- [[04-kursplattform-texte]]
+- [[05-praesentationen]]
+- [[06-preis-validierung]]
+- [[07-launch-kalender]]
+- [[begriffe-cheatsheet]]
+- [[buch-technik-auftrag]]
+- [[business-brief-vorlage]]
+- [[checkliste-modul-1]]
+- [[checkliste-modul-2]]
+- [[checkliste-modul-3]]
+- [[checkliste-modul-4]]
+- [[checkliste-modul-5]]
+- [[checkliste-modul-6]]
+- [[checkliste-modul-7]]
+- [[checkliste-modul-8]]
+- [[checkliste-modul-9]]
+- [[floskel-liste-vorlage]]
+- [[roadmap-drei-stufen]]
+- [[sicherheits-checkliste]]
+- [[skill-geruest]]
 
 ### 📁 mama-ceo
 

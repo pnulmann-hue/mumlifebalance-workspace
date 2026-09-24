@@ -1,0 +1,59 @@
+{
+ "name": "Do · doTERRA · Was die Runde ist",
+ "datum": "2026-09-24",
+ "profil": "doterra",
+ "brand": "oele",
+ "frames": [
+  {
+   "id": "s1",
+   "layout": "hook",
+   "text": "Ab dem ersten Oktober begleite ich vier Wochen lang eine kleine Gruppe. Heute sag ich dir genau, was das heisst.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s2",
+   "layout": "text",
+   "text": "Vier Wochen, ein Thema pro Woche, in dieser Reihenfolge: Essen, Bewegung, Abend, Nährstoffe. Immer nur eins auf einmal.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s3",
+   "layout": "text",
+   "text": "Es gibt keine Calls, zu denen du erscheinen musst. Es gibt einen Chat, in dem ich jeden Tag da bin, und eine Aufgabe pro Woche, die in einen Mama-Tag passt.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s4",
+   "layout": "text",
+   "text": "Was es nicht ist: kein Programm, das du allein durcharbeitest, und kein Plan, den ich dir überstülpe. Wir schauen bei dir, was zuerst dran ist.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s5",
+   "layout": "frage",
+   "text": "Welche der vier Wochen wäre bei dir die schwierigste?",
+   "cta": "Umfrage",
+   "optA": "Essen oder Bewegung",
+   "optB": "Abend oder Nährstoffe"
+  },
+  {
+   "id": "s6",
+   "layout": "cta",
+   "text": "Wenn du dabei sein willst, sag mir das bis morgen. Danach wird es knapp, damit alles rechtzeitig bei dir ist.",
+   "cta": "Antwort ENERGIE",
+   "optA": "",
+   "optB": ""
+  }
+ ],
+ "textfrei": false,
+ "hinweis": "🔵 Blau · Bogen-Schritt 4 · ⚠️ Inhalt aus dem Monatsplan abgeleitet. Von Patricia zu bestätigen: ob es wirklich keine Live-Calls gibt und ob es eine Teilnehmerinnen-Obergrenze hat. Wenn ja, gehört sie auf Folie 6.",
+ "updatedAt": "2026-09-18T07:00:00.000Z"
+}

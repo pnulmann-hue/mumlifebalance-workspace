@@ -470,6 +470,28 @@ Aus Erfahrung mit diesem Workspace: Claude tendiert zu folgenden Mustern, die al
 - „Auf das nächste Level" (Buzzword)
 - „Deep Dive" (Buzzword)
 - Dreier-Stakkato („Du lernst. Du wächst. Du gewinnst.")
+- **„…, das trägt" / „bis Mittag tragen"** (Ratgeber-Sprech) — siehe unten
+
+### 🚨 „tragen" im Sinn von sattmachen (aufgenommen 21.09.2026)
+
+Patricia: *„das trägt würde ich NIE so sagen: Ein Frühstück, das trägt."*
+
+Gemeint ist immer **sattmachen oder durchhalten** — und genau dafür hat sie eigene Wörter,
+die auch in ihren eigenen Texten stehen:
+
+| ❌ so nicht | ✅ so sagt sie es |
+|---|---|
+| ein Frühstück, das trägt | ein Frühstück, das **wirklich satt macht** |
+| Frühstücke, die bis Mittag tragen | Frühstücke, nach denen du **um zehn keinen Hunger** hast |
+| Energie, die durch den Tag trägt | das Frühstück, das dich **um 15 Uhr nicht einbrechen lässt** |
+
+**Die Wörter, die sie wirklich benutzt:** satt · hält · einbrechen · Loch · durchkommen.
+Belegt in ihrer eigenen Kickstart-Mail 1 („das dich um 15 Uhr nicht einbrechen lässt")
+und im Coaching-Plan („länger satt").
+
+🚨 **Nicht betroffen ist „trägt sich"** im Sinn von rechnet sich („ab vier Frauen trägt
+sich die Begleitung") — das ist Kaufmannssprache und kein Ratgeber-Sprech. Wer hier pauschal
+nach „trag" sucht, erzeugt Fehlalarme, und nach dem dritten liest niemand mehr hin.
 
 ---
 

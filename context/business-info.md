@@ -54,6 +54,67 @@ Zwei verzahnte Businesses mit **je einer eigenen Positionierung und je einem eig
 4. **Mental Load & Stressmanagement** (20% — Brücken-Säule)
 5. **Rückkehr zu dir — die neue Mama-Identität** (15% — Verbindung + Soft-Integration Botschafterinnen)
 
+---
+
+## 🔄 Neuausrichtung doTERRA — Stand 21.09.2026
+
+🚨 **Was darunter steht (Stand 21.04.2026), ist in Teilen überholt.** Patricia hat
+die Ausrichtung am 21.09.2026 neu aufgesetzt. Auslöser war das Gespräch mit einer
+Businesskollegin über eine Kollegin aus einem anderen Bereich, die zu ihren Kursen ein
+**Produktpaket dazugibt** — verkauft wird sichtbar etwas anderes, die Öle sind Teil des
+Pakets, und die Einschreibung kommt erst im zweiten Schritt. Zweites Vorbild: ein
+Herbalife-Account, der dasselbe unter dem Namen „Morgenroutine" macht.
+
+### Die neue Ausrichtung
+
+| | |
+|---|---|
+| **Richtung** | „Fit und wach ohne Shakes & Diät" — Mamas **35+** |
+| **Im Zentrum** | Wohlfühlen und Energie. **Abnehmen ist nicht der Aufhänger** — es darf im Angebot vorkommen, aber nicht in der Bio |
+| **Ausdrücklich dazu** | **keine Shakes.** Viele haben davor eine Abneigung, deshalb steht es im Namen |
+| **Patricias Beleg** | 8 Kilo — mit regelmässigem Krafttraining, täglich 8'000 Schritten und Ernährungsumstellung. Keine Shakes, keine Diät |
+
+### Das neue Angebot: 30-Tage-Energie-Routine
+
+| | |
+|---|---|
+| **Produktpaket** | VMG+ · Omega 3 · PB Assist — **RevitaZen noch offen** |
+| **Preis** | **270 CHF / €** (Paket 211.29 € inkl. Versand und MwSt., plus Marge und Porto) |
+| **Weg** | über **ThriveCart**, eigene Landingpage |
+| **Rhythmus** | **Start immer am 10. des Monats**, Bestellung bis **Ende des Vormonats** — damit das Paket rechtzeitig da ist |
+| **Bestellweg** | über LRP durch eine Beraterin aus Patricias Beinen — füllt zugleich die Beine auf |
+| **Dazu** | Proteinrezepte, das Wissen aus ihren Ernährungs-Coachings (liegt im Ernährungsbot), Training über App plus Krafttraining mit steigenden Gewichten |
+
+🚨 **Das löst die Kur „Zurück zu deiner Energie" ab** (30 Tage Begleitung, Paket mit
+Zendocrine und Terrazyme). Das alte Produktpaket unten gilt so nicht mehr.
+
+### Die Reihenfolge — Patricias Ansage
+
+**Erst Bio, dann Freebie, dann Content.** Nicht alles auf einmal.
+
+### ⚠️ Offen (Stand 21.09.2026 abends)
+
+- **Der 3-Tage-Energie-Kickstart muss umgebaut werden.** Patricia: *„der energie kickstart
+  freebie ist zu sehr auf doterra produkte getrimmt"*. Ausserdem heisst der Link noch
+  `/hormone` und müsste auf Energie umgestellt werden.
+- **Die Landingpage für die 30-Tage-Energie-Routine** war am Nachmittag in Arbeit.
+- **RevitaZen ja oder nein** im Paket.
+- 🚨 **Der Content ist noch nicht angepasst.** Die doTERRA-Beiträge der KW39 bewerben
+  teils die **alte** Kur mit Deadline 25.09. — siehe die zwei Freitags-Reels „Letzter
+  Bestelltag". Solange das Angebot nicht steht, gehört dort keine Deadline hin.
+
+### Was `ENERGIE` wirklich auslöst
+
+**Den 3-Tage-Energie-Kickstart** (Patricia, 21.09.: *„hä mein freebie ist doch der 3 tage
+energiecheck"*). Nicht „Padlet plus Kur-Info", wie es weiter unten und in
+`manychat-keywords.md` noch steht — das ist der alte Stand.
+
+🚨 **Deshalb ist jeder CTA falsch, der etwas anderes verspricht.** Geprüft am
+21.09.2026 über die KW39-Beiträge: „die drei Tage, mit denen ich angefangen hab" ist
+richtig; „die vier Sachen als Liste" und „Ablauf, Termine und Preis" sind es nicht.
+
+---
+
 **Ziel:** Rang **Gold** erreichen. doTERRA-Produkte werden nicht plakativ beworben, sondern eingebettet in das Regenerations-Thema. **Themenbasiert statt produktbasiert.**
 
 ### Business 2: Online-Mentoring für Mamas im Network Marketing

@@ -1,0 +1,59 @@
+{
+ "name": "Mi · Die drei Fragen live",
+ "datum": "2026-09-23",
+ "profil": "mentoring",
+ "brand": "mlb_light",
+ "frames": [
+  {
+   "id": "s1",
+   "layout": "hook",
+   "text": "Ich mach die drei Fragen von gestern jetzt selbst. Live, ohne Vorbereitung.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s2",
+   "layout": "text",
+   "text": "Frage eins: Welche Frage wurde mir in den letzten vier Wochen mehr als einmal gestellt? — „Wie kommst du auf deine Themen, wenn nichts los ist?“ Dreimal. Wortgleich.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s3",
+   "layout": "text",
+   "text": "Frage zwei: Was kann ich heute, das ich vor zwei Jahren nicht konnte? — Eine Woche Content planen, während die Kinder frühstücken. Vor zwei Jahren hab ich dafür ganze Abende gebraucht.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s4",
+   "layout": "text",
+   "text": "Frage drei: Was erklär ich jedes Mal, bevor jemand bei mir kauft? — Dass du dein Thema nicht suchen musst. Es liegt in dem, was du schon beantwortest.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s5",
+   "layout": "frage",
+   "text": "Welche Frage würdest du als Erste beantworten?",
+   "cta": "Umfrage",
+   "optA": "Eins",
+   "optB": "Zwei oder Drei"
+  },
+  {
+   "id": "s6",
+   "layout": "cta",
+   "text": "Das war meine Viertelstunde. Wenn du deine machen willst, geht das Werkzeug mit dir durch. Link oben.",
+   "cta": "mumlifebalance.ch/produkt-ideen-finder/",
+   "optA": "",
+   "optB": ""
+  }
+ ],
+ "textfrei": false,
+ "hinweis": "🟡 Gelb (Initiativ) · Säule Expertise · CTA Produkt-Ideen-Finder",
+ "updatedAt": "2026-09-18T07:00:00.000Z"
+}

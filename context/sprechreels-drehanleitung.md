@@ -34,6 +34,67 @@ Wenn du trotzdem optische Abwechslung im Feed willst, dreh pro Session **2–3 S
 - **C:** ein Setup weiter weg / anderer Raum-Eck / anderes Oberteil.
 Jedes Setup = ein Schwung Reels, die im Feed unterschiedlich aussehen.
 
+## Deine Szenen — was dein eigenes Material hergibt
+
+Aus 221 Vorschaubildern deiner Clips (Stand 20.09.2026). **Keine erfundenen Orte** —
+das sind Ecken, an denen du schon gefilmt hast.
+
+| | Ort | Woran du ihn erkennst | Taugt fürs Kelsie-Layout? |
+|---|---|---|---|
+| **A** | Grau-grüne Wand, Zimmerpflanze links, sitzend | dein jetziges Standard-Setup, rosa Shirt | ⚠️ **so wie bisher nicht** — zu nah und zu mittig |
+| **B** | Weisse glatte Wand, stehend | heller Pulli, ganze Figur | ✅ viel Platz · ⚠️ helles Oberteil auf weiss = Freistellen schwierig |
+| **C** | Weisse Rauputzwand, sitzend | | ✅ |
+| **D** | Schreibtisch an heller Holzwand, Bildschirm | | ✅ wenn du seitlich sitzt |
+| **E** | Esstisch mit Blick in die Küche, Holzdecke, Hängelampen | Laptop, Tiefe im Raum | ✅✅ **das beste Bild** — wirkt nicht gestellt |
+| **F** | Küche, dunkelgrüne Fronten, Granitfläche | | ✅ dunkler Hintergrund, Kontrast stimmt |
+| **G** | Terrasse an der Holzwand, Sonne | | ✅ · Gegenlicht prüfen |
+| **H** | Garten / Wiese mit Hügelblick | Appenzellerland | ✅ Wiedererkennung · ⚠️ Wind auf dem Mikro |
+| **I** | Trainingsraum, Holzdecke, Hanteln | | ⚠️ nur wenn das Thema Energie ist |
+| **J** | Berg, Wanderung | | ⚠️ Ton im Wind, nur kurze Sätze |
+
+### 🚨 Was an Setup A nicht stimmt
+
+Auf deinen bisherigen Sprechclips sitzt du **mittig und nah** — Brustbild, Kopf fast in
+der Bildmitte. Beim Kelsie-Layout steht das grosse Wort **hinter dir**, links oder
+rechts abwechselnd. Wenn du mittig und gross im Bild bist, gibt es diesen Platz nicht,
+und das Wort landet auf dir. Das ist derselbe Fehler wie bei den B-Rolls, nur eine
+Stufe früher: **im Bild, nicht im Schnitt.**
+
+Zwei Handgriffe lösen es, den Ort musst du nicht wechseln:
+1. **Kamera einen guten Meter weiter weg** — Hüfte aufwärts statt Brust aufwärts.
+2. **Setz dich aus der Mitte**, ein Drittel nach links oder rechts. Die freie Seite ist
+   die Bühne für das Wort.
+
+### 🚨 Freistellen braucht Kontrast
+
+Das grosse Wort liegt hinter dir, dafür wird deine Silhouette ausgeschnitten
+(`npx hyperframes remove-background`). Das misslingt, wenn Person und Hintergrund
+dieselbe Helligkeit oder Farbe haben — dann franst die Kante aus oder es fehlt ein
+Stück Haar.
+
+| geht gut | wird heikel |
+|---|---|
+| rosa/lachs Shirt auf grau-grüner Wand | beiger Pulli auf weisser Wand |
+| dunkles Top auf heller Holzwand | braune Haare vor dunkler Holzwand |
+| helles Oberteil in der dunklen Küche | gemustertes Oberteil vor unruhigem Hintergrund |
+
+**Faustregel: eine Stufe Unterschied zwischen dir und der Wand.** Wenn die Wand hell
+ist, zieh etwas Dunkles an — und umgekehrt.
+
+### Eine Dreh-Session, drei Szenen
+
+Nicht mehr. Drei reichen für einen Feed, der nicht gleich aussieht, und sind an einem
+Nachmittag zu schaffen:
+
+- **Szene 1 — E (Esstisch):** der Wissens-Dump, 10–20 Minuten frei sprechen. Das ist
+  die Hauptquelle, daraus werden die meisten Reels.
+- **Szene 2 — A oder C (Wand, sitzend), anderes Oberteil:** die geplanten Sprechtexte.
+- **Szene 3 — F oder G (Küche oder Terrasse), im Stehen:** die kurzen Sachen, ein
+  Gedanke pro Clip.
+
+Zwischen den Szenen **Oberteil wechseln** — im Feed sieht man dann drei verschiedene
+Tage, obwohl es einer war.
+
 ## Damit der Schnitt sauber wird
 - Vor jedem Gedanken **1–2 Sek Pause** (hilft beim Schneiden, 250-ms-Regel).
 - Versprecher? **Kurz stoppen, ganzen Satz neu** — Claude erkennt den letzten vollständigen Take und nimmt den.

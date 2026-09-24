@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Story-Challenge Mails</title>
+<style>
+  :root{
+    --bg:#f1ecdd; --panel:#ffffff; --ink:#0c1c30; --muted:#5f5748; --line:#e4ddc9;
+    --petrol:#12828c; --blau:#29556d; --orange:#dc822e;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --bg:#12181c; --panel:#1b242a; --ink:#eef1f0; --muted:#9fb0ac; --line:#2a353c;
+  }}
+  :root[data-theme="dark"]{--bg:#12181c; --panel:#1b242a; --ink:#eef1f0; --muted:#9fb0ac; --line:#2a353c;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.5}
+  .wrap{max-width:860px;margin:0 auto;padding:28px 16px 80px}
+  .kick{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange)}
+  h1{font-family:Georgia,serif;font-size:27px;margin:4px 0 6px}
+  .sub{color:var(--muted);font-size:15px;margin:0 0 8px}
+  .hinweis{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--petrol);border-radius:0 12px 12px 0;padding:14px 16px;font-size:14px;margin:18px 0 26px}
+  .karte{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 18px 20px;margin:0 0 22px}
+  .badge{display:inline-block;background:var(--orange);color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 12px;border-radius:20px}
+  h2{font-family:Georgia,serif;font-size:21px;margin:12px 0 2px}
+  .zeile{font-size:14px;color:var(--muted);margin:2px 0}
+  .zeile b{color:var(--ink)}
+  .knoepfe{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
+  button{border:none;border-radius:999px;font-family:inherit;font-weight:700;font-size:14px;padding:11px 18px;cursor:pointer}
+  .b-haupt{background:var(--petrol);color:#fff}
+  .b-zweit{background:transparent;color:var(--petrol);border:2px solid var(--petrol)}
+  .b-ok{background:#1f7a44;color:#fff}
+  details{margin-top:12px}
+  summary{cursor:pointer;font-weight:700;color:var(--petrol);font-size:14px}
+  iframe{width:100%;height:520px;border:1px solid var(--line);border-radius:12px;margin-top:12px;background:#fff}
+  .fuss{font-size:13px;color:var(--muted);margin-top:30px;line-height:1.6}
+  code{background:rgba(18,130,140,.1);padding:1px 6px;border-radius:5px;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kick">Mum Life Balance · Story-Challenge</div>
+  <h1>Nurture-Mails zum Anhängen</h1>
+  <p class="sub">Drei Mails für nach der Story-Challenge — Mehrwert zuerst, dann Instagram-Kundenmaschine (333). Versand-Vorschlag: Mail&nbsp;1 zwei Tage nach dem Challenge-Pitch, dann je drei Tage Abstand.</p>
+
+  <div class="hinweis">
+    <b>So hängst du sie in ActiveCampaign an:</b> Bei „HTML kopieren“ tippen → in AC eine neue Mail anlegen → im Editor auf <b>Quelltext / Code / &lt;/&gt;</b> umschalten → einfügen. Betreff separat mit dem zweiten Knopf kopieren. Die Vorschau unten zeigt genau, wie die Mail ankommt. <code>%FIRSTNAME%</code> setzt AC automatisch ein.
+  </div>
+
+  <div class="karte">
+    <span class="badge">Mail 1</span>
+    <h2>Warum eine Story überhaupt verkauft</h2>
+    <p class="zeile"><b>Betreff:</b> Warum eine Story überhaupt verkauft</p>
+    <p class="zeile"><b>Alternative:</b> Wem deine Storys eigentlich angezeigt werden</p>
+    <div class="knoepfe">
+      <button class="b-haupt" data-html="mail-1-warum-storys-verkaufen.html">HTML kopieren</button>
+      <button class="b-zweit" data-text="Warum eine Story überhaupt verkauft">Betreff kopieren</button>
+    </div>
+    <details><summary>Vorschau anzeigen</summary><iframe loading="lazy" src="mail-1-warum-storys-verkaufen.html" title="Vorschau Mail 1"></iframe></details>
+  </div>
+
+  <div class="karte">
+    <span class="badge">Mail 2</span>
+    <h2>3 Storyideen für diese Woche</h2>
+    <p class="zeile"><b>Betreff:</b> 3 Storyideen, die du diese Woche sofort nehmen kannst</p>
+    <p class="zeile"><b>Alternative:</b> Wenn dir wieder nichts einfällt vor der Kamera</p>
+    <div class="knoepfe">
+      <button class="b-haupt" data-html="mail-2-drei-storyideen.html">HTML kopieren</button>
+      <button class="b-zweit" data-text="3 Storyideen, die du diese Woche sofort nehmen kannst">Betreff kopieren</button>
+    </div>
+    <details><summary>Vorschau anzeigen</summary><iframe loading="lazy" src="mail-2-drei-storyideen.html" title="Vorschau Mail 2"></iframe></details>
+  </div>
+
+  <div class="karte">
+    <span class="badge">Mail 3</span>
+    <h2>Warum eine Story allein nicht reicht</h2>
+    <p class="zeile"><b>Betreff:</b> Warum eine Story allein nicht reicht</p>
+    <p class="zeile"><b>Alternative:</b> Story, Bio, Beiträge — warum es erst zusammen wirkt</p>
+    <div class="knoepfe">
+      <button class="b-haupt" data-html="mail-3-story-allein-reicht-nicht.html">HTML kopieren</button>
+      <button class="b-zweit" data-text="Warum eine Story allein nicht reicht">Betreff kopieren</button>
+    </div>
+    <details><summary>Vorschau anzeigen</summary><iframe loading="lazy" src="mail-3-story-allein-reicht-nicht.html" title="Vorschau Mail 3"></iframe></details>
+  </div>
+
+  <p class="fuss">
+    Pitch-Ziel aller drei Mails: Instagram-Kundenmaschine, 333&nbsp;CHF (<code>…/instagram-kundenmaschine/</code>) — nie die 90&nbsp;Storyideen an Challenge-Teilnehmerinnen verkaufen. Fragen-Service läuft über die Story-Telegram-Gruppe. Quelle im Repo: <code>outputs/funnels/story-challenge-nurture/</code>.
+  </p>
+</div>
+
+<script>
+  async function kopiere(txt, btn){
+    try{ await navigator.clipboard.writeText(txt); }
+    catch(e){ const t=document.createElement('textarea'); t.value=txt; document.body.appendChild(t); t.select(); try{document.execCommand('copy');}catch(_){ } t.remove(); }
+    const alt=btn.textContent, cls=btn.className;
+    btn.textContent="✓ kopiert"; btn.className="b-ok";
+    setTimeout(()=>{ btn.textContent=alt; btn.className=cls; }, 1800);
+  }
+  document.querySelectorAll('button[data-text]').forEach(b=>{
+    b.onclick=()=>kopiere(b.dataset.text, b);
+  });
+  document.querySelectorAll('button[data-html]').forEach(b=>{
+    b.onclick=async()=>{
+      const alt=b.textContent; b.textContent="lädt…";
+      try{
+        const r=await fetch(b.dataset.html);
+        const html=await r.text();
+        await kopiere(html, b);
+      }catch(e){
+        b.textContent="ging nicht — Vorschau öffnen"; b.className="b-zweit";
+        setTimeout(()=>{ b.textContent=alt; b.className="b-haupt"; }, 2500);
+      }
+    };
+  });
+</script>
+</body>
+</html>

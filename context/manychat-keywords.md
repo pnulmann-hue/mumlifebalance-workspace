@@ -37,9 +37,27 @@ Der `/reels`- und `/karussell`-Assistent wählt IMMER aus dieser Liste — niema
 
 | Keyword          | Triggert (ManyChat-Automation) | Ziel-Produkt |
 |------------------|--------------------------------|--------------|
-| `ENERGIE`        | DM mit Padlet-Link + Kur-Info „Zurück zu deiner Energie" | Kur-Einstieg (PV Assist + VMG+) |
+| `ENERGIE`        | 🚨 **NICHTS — in ManyChat nie eingerichtet** (Patricia, 22.09.2026) | 0€ Energie-Kickstart |
 
-**Padlet-Link** (wird via Keyword ENERGIE geschickt): https://padlet.com/pnulmann/wohlf-hlen-leicht-gemacht-hfzk8ccha55mu9ny
+🚨 **`ENERGIE` löst keine Automation aus.** Hier stand bis 22.09.2026 „DM mit
+Padlet-Link + Kur-Info", und das war gleich doppelt falsch: die Kur „Zurück zu deiner
+Energie" ist seit 21.09. **abgelöst**, und eine ManyChat-Automation für `ENERGIE` gab es
+**nie**. Die Zeile hat mich am 21.09. dazu gebracht, eine ganze doTERRA-Woche auf ein
+Stichwort zu bauen, hinter dem nichts steht.
+
+**So wird es eingelöst — von Hand:** Kommentare kommen bei Patricia an, sie schickt den
+Link zum **0€ Energie-Kickstart**: https://mumlifebalance.ch/energie-kickstart/
+(live seit 24.08.2026, 3-Tage-Mail-Challenge, kein PDF). Auf der Bio-Link-Seite
+https://mumlifebalance.ch/hormone/ ist er die grosse orange Karte.
+
+Das ist bei der aktuellen Kontogrösse kein Notbehelf: *„du kannst es auch manuell
+machen, manuell ist natürlich viel persönlicher"* — aus Patricias eigenem Kurs
+(Instagram-Kundenmaschine, „Keywords, die Entscheidungen auslösen").
+
+**Wenn die Automation kommt**, liefert sie den Energie-Kickstart — nicht Padlet und
+nicht die Kur.
+
+🗃 Der alte Padlet-Link gehört zur abgelösten Kur und wird nicht mehr verschickt.
 
 **Weitere potentielle Keywords (bei Bedarf später ergänzen):**
 - `RUHE` → Abend-Routine / Entspannungs-Guide

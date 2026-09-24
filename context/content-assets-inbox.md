@@ -2,9 +2,9 @@
 tags: [content, assets]
 ---
 
-# Content-Inbox — zuletzt geholt am 14.09.2026 um 17:03
+# Content-Inbox — zuletzt geholt am 23.09.2026 um 09:37
 
-Quelle: Handy, Album `DCIM/Reel-Videos`. Auf dem Handy wurde nichts geloescht.
+Quelle: Handy, Album `DCIM/Content-Inbox`. Auf dem Handy wurde nichts geloescht.
 
 Nichts Neues. Alles aus dem Album ist schon auf dem PC.
 

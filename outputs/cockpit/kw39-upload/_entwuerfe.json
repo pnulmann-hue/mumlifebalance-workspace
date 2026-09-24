@@ -1,0 +1,1662 @@
+{
+ "entwuerfe": [
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-14",
+   "folien": [
+    {
+     "text": "Um sieben Uhr vierzig hab ich meine Kinder angeschrien, und es ging nie um die Schuhe.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-dt-mo-a",
+   "name": "A · Mo · Sieben Uhr vierzig",
+   "profil": "doterra"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-14",
+   "folien": [
+    {
+     "text": "Gestern bin ich im Auto sitzen geblieben, obwohl ich längst angekommen war.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-dt-mo-b",
+   "name": "B · Mo · Im Auto sitzen geblieben",
+   "profil": "doterra"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-15",
+   "folien": [
+    {
+     "text": "Runterkommen und Netflix sind zwei verschiedene Dinge, und ich hab das jahrelang verwechselt.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-dt-di-a",
+   "name": "A · Di · Runterkommen und Netflix",
+   "profil": "doterra"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-15",
+   "folien": [
+    {
+     "text": "Du machst alles richtig und liegst trotzdem um drei Uhr nachts wach.",
+     "unter": "Magnesium, früher ins Bett, weniger Kaffee — und es ändert nichts."
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-dt-di-b",
+   "name": "B · Di · Magnesium und trotzdem wach",
+   "profil": "doterra"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-16",
+   "folien": [
+    {
+     "text": "Der unbrauchbarste Satz, den man einer müden Mama sagen kann: das ist halt das Alter.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-dt-mi-a",
+   "name": "A · Mi · Das ist halt das Alter",
+   "profil": "doterra"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-16",
+   "folien": [
+    {
+     "text": "Mein Arzt sagte, meine Werte seien normal, und ich sass danach im Auto und hab geheult.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-dt-mi-b",
+   "name": "B · Mi · Ihre Werte sind normal",
+   "profil": "doterra"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-18",
+   "folien": [
+    {
+     "text": "Zwischen Kinder-ins-Bett und Sofa liegt ein Moment, den ich jahrelang verschenkt hab.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-dt-fr-a",
+   "name": "A · Fr · Der Moment dazwischen",
+   "profil": "doterra"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-18",
+   "folien": [
+    {
+     "text": "Es gibt zwei Arten von müde, und die eine geht nach einer Nacht nicht weg.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-dt-fr-b",
+   "name": "B · Fr · Zwei Arten von müde",
+   "profil": "doterra"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-18",
+   "folien": [
+    {
+     "text": "Ab Oktober mache ich etwas, das es bei mir noch nie gab.",
+     "unter": "Vier Wochen, kleine Gruppe."
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-dt-fr-c",
+   "name": "C · Fr · doTERRA · Ab Oktober mache ich etwas, das es noch nie gab",
+   "profil": "doterra"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-14",
+   "folien": [
+    {
+     "text": "Du beantwortest im Teamchat ständig Fragen, für die dich niemand bezahlt.",
+     "unter": "Und genau da drin steckt dein Thema."
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-mo-a",
+   "name": "A · Mo · Unbezahlte Fragen",
+   "profil": "mentoring"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-14",
+   "folien": [
+    {
+     "text": "Zwei Jahre lang dachte ich, ich müsste einfach mehr arbeiten, dann kommt es schon.",
+     "unter": "Das Problem war nie die Menge."
+    }
+   ],
+   "format": "cover",
+   "id": "cover-reel-kw38-mo",
+   "name": "B · Mo · Mehr arbeiten hätte mein Network nicht gerettet",
+   "profil": "mentoring"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-14",
+   "folien": [
+    {
+     "text": "Finde dein Thema mit mir — in zwanzig Minuten.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-mo-c",
+   "name": "C · Mo · Finde dein Thema mit mir — in zwanzig Minuten",
+   "profil": "mentoring"
+  },
+  {
+   "art": "story",
+   "cta": "Umfrage",
+   "datum": "2026-09-14",
+   "folien": [
+    {
+     "text": "Ich hab in meinen Chats nach zwei Woertern gesucht:",
+     "unter": "„wie machst du“"
+    },
+    {
+     "text": "Sieben Treffer.",
+     "unter": "Aus den letzten vier Wochen."
+    },
+    {
+     "text": "Das ist kein Zufall mehr.",
+     "unter": "Das ist ein Muster."
+    },
+    {
+     "text": "Mach das gleich bei dir.",
+     "unter": "Suchfunktion, dann zaehl."
+    },
+    {
+     "text": "Wie viele Treffer hast du?",
+     "unter": "0–2 oder mehr als 3"
+    }
+   ],
+   "format": "story",
+   "id": "kw38-story-mo",
+   "name": "Mo · Die Liste",
+   "profil": "mentoring"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-15",
+   "folien": [
+    {
+     "text": "Ich erzähl, dass ich im Network bin — und dann kommt dieses höfliche Nicken.",
+     "unter": "Und niemand fragt nach."
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-di-a",
+   "name": "A · Di · Das höfliche Nicken",
+   "profil": "mentoring"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-15",
+   "folien": [
+    {
+     "text": "Mein Mann fragt nicht mehr, wie das Network läuft, und ich bin froh drum.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-di-b",
+   "name": "B · Di · Mein Mann fragt nicht mehr",
+   "profil": "mentoring"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-15",
+   "folien": [
+    {
+     "text": "Es gibt diesen Punkt, an dem du dich fragst, ob das überhaupt je jemand sieht.",
+     "unter": "Ich kenn den ziemlich gut."
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-di-c",
+   "name": "C · Di · Es lohnt sich — auch wenn es gerade niemand sieht",
+   "profil": "mentoring"
+  },
+  {
+   "art": "story",
+   "cta": "Frage-Sticker",
+   "datum": "2026-09-15",
+   "folien": [
+    {
+     "text": "Gestern beim Elternabend.",
+     "unter": "„Und was machst du so?“"
+    },
+    {
+     "text": "Nach zwei Saetzen",
+     "unter": "hab ich das hoefliche Nicken gesehen."
+    },
+    {
+     "text": "Die meisten fragen nicht nach,",
+     "unter": "weil sie nicht wissen, was sie fragen sollen."
+    },
+    {
+     "text": "Seitdem erzaehl ich,",
+     "unter": "wem ich womit helfe. Und es kommen Rueckfragen."
+    },
+    {
+     "text": "Was antwortest du",
+     "unter": "am Elternabend?"
+    }
+   ],
+   "format": "story",
+   "id": "kw38-story-di",
+   "name": "Di · Das hoefliche Nicken",
+   "profil": "mentoring"
+  },
+  {
+   "art": "story",
+   "cta": "Produkt-Ideen-Finder (Link) / STANDBEIN",
+   "datum": "2026-09-16",
+   "folien": [
+    {
+     "text": "„Ein eigenes Produkt? Ich hab doch mein Network-Produkt.“",
+     "unter": ""
+    },
+    {
+     "text": "Dein Firmenprodukt hat jede mit demselben Link.",
+     "unter": "Dein eigenes Ding hat nur eine: dich."
+    },
+    {
+     "text": "Und es muss nicht mal etwas kosten.",
+     "unter": "Ein gratis Mini-Ding ist ein Türöffner — ein Reinschnuppern in deine Welt."
+    },
+    {
+     "text": "So holst du deine Leute genau da ab, wo’s grad zwickt.",
+     "unter": "Bei einem echten Schmerz oder Wunsch — und schlägst die Brücke zu deinem Produkt."
+    },
+    {
+     "text": "Mein Produkt-Ideen-Finder ist für einen Minikurs gebaut.",
+     "unter": "Aber du kannst ihn genauso nutzen, um eine Idee für dein Freebie zu entwickeln."
+    },
+    {
+     "text": "Willst du sehen, was in dir steckt?",
+     "unter": "Link ist hier oben — oder schreib mir STANDBEIN."
+    }
+   ],
+   "format": "story",
+   "id": "story-16-9-tueroeffner",
+   "name": "16.9 · Eigenes Produkt = Türöffner",
+   "profil": "mentoring"
+  },
+  {
+   "art": "karussell",
+   "cta": "STANDBEIN",
+   "datum": "2026-09-16",
+   "folien": [
+    {
+     "text": "In zwanzig Minuten weisst du, worueber du schreiben kannst.",
+     "unter": ""
+    },
+    {
+     "text": "Schritt 1",
+     "unter": "Handy raus, Suchfunktion auf. Tipp „wie machst du“ ein."
+    },
+    {
+     "text": "Schritt 2",
+     "unter": "Schreib jede Frage auf. Nicht sortieren."
+    },
+    {
+     "text": "Schritt 3",
+     "unter": "Streich alles, was mit Produkten zu tun hat."
+    },
+    {
+     "text": "Schritt 4",
+     "unter": "Markier, was dreimal vorkommt."
+    },
+    {
+     "text": "Schritt 5",
+     "unter": "Ich helfe [wem] dabei, [was] hinzukriegen."
+    },
+    {
+     "text": "Zu klein heisst nur:",
+     "unter": "du kannst es ohne Nachdenken."
+    },
+    {
+     "text": "Bei mir kam raus:",
+     "unter": "Mamas, die neben dem Network was Eigenes wollen."
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": "Dann schick ich dir das Werkzeug."
+    }
+   ],
+   "format": "slide",
+   "id": "kw38-kar-mi-a",
+   "name": "A · Mi · In zwanzig Minuten",
+   "profil": "mentoring"
+  },
+  {
+   "art": "karussell",
+   "cta": "",
+   "datum": "2026-09-16",
+   "folien": [
+    {
+     "text": "In zwanzig Minuten weisst du, worüber du schreiben kannst.",
+     "unter": ""
+    },
+    {
+     "text": "Schritt 1 — Handy raus, Suchfunktion auf.",
+     "unter": "Tipp in deinen Chats „wie machst du“ und „kannst du mir“ ein. Lies, was kommt."
+    },
+    {
+     "text": "Schritt 2 — Schreib jede Frage auf.",
+     "unter": "Nicht sortieren, nicht bewerten. Zwanzig Minuten, mehr nicht."
+    },
+    {
+     "text": "Schritt 3 — Streich alles, was mit Produkten zu tun hat.",
+     "unter": "Was übrig bleibt, ist deins."
+    },
+    {
+     "text": "Schritt 4 — Markier, was dreimal vorkommt.",
+     "unter": "Einmal ist Zufall. Dreimal ist ein Thema."
+    },
+    {
+     "text": "Schritt 5 — Schreib einen Satz dazu.",
+     "unter": "„Ich helfe [wem] dabei, [was] hinzukriegen.“"
+    },
+    {
+     "text": "Wenn der Satz sich zu klein anfühlt, ist er meistens richtig.",
+     "unter": "Zu klein heisst nur, dass du es ohne Nachdenken kannst."
+    },
+    {
+     "text": "Bei mir kam raus: Mamas, die neben dem Network was Eigenes wollen.",
+     "unter": "Hat sich damals auch zu klein angefühlt."
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": "Und ich schick dir das Werkzeug, das aus deiner Liste drei Produktideen macht."
+    }
+   ],
+   "format": "slide",
+   "id": "kar-kw38-kar-mi-a",
+   "name": "A · Mi · In zwanzig Minuten weisst du, worüber du schreiben kannst",
+   "profil": "mentoring"
+  },
+  {
+   "art": "karussell",
+   "cta": "",
+   "datum": "2026-09-16",
+   "folien": [
+    {
+     "text": "Du musst keine Expertin sein. Du musst zwei Schritte weiter sein.",
+     "unter": ""
+    },
+    {
+     "text": "„Ich bin doch keine Expertin“",
+     "unter": "ist der Satz, den ich am häufigsten höre."
+    },
+    {
+     "text": "Expertin heisst nicht: alles wissen.",
+     "unter": "Expertin heisst: mehr wissen als die, der du hilfst."
+    },
+    {
+     "text": "Schritt 1",
+     "unter": "Schreib auf, was du vor zwei Jahren nicht konntest und heute ohne Nachdenken machst."
+    },
+    {
+     "text": "Schritt 2",
+     "unter": "Streich alles, wofür du eine Ausbildung gebraucht hast. Der Rest ist erfahrungsbasiert, und genau das zählt."
+    },
+    {
+     "text": "Schritt 3",
+     "unter": "Such dir die Sache, bei der du am ehesten sagen würdest: „Ach, das ist doch nichts.“"
+    },
+    {
+     "text": "Das ist sie.",
+     "unter": "Der Abstand zwischen dir und jemandem, der da noch steht, wo du vor zwei Jahren warst, ist genau der Wert."
+    },
+    {
+     "text": "Und ja, jemand kann es besser als du.",
+     "unter": "Der hilft aber nicht dieser einen Frau, die dir gerade schreibt."
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": "Dann geh ich das mit dir durch."
+    }
+   ],
+   "format": "slide",
+   "id": "kar-kw38-kar-mi-b",
+   "name": "B · Mi · Keine Expertin? Genau deshalb",
+   "profil": "mentoring"
+  },
+  {
+   "art": "karussell",
+   "cta": "",
+   "datum": "2026-09-16",
+   "folien": [
+    {
+     "text": "Aus „ich weiss ja nichts Besonderes\" wird eine Idee, für die jemand zahlt.",
+     "unter": "[Hier ein Screenshot aus deinem Chatverlauf oder von einer Rückmeldung — nur wenn du einen hast.]"
+    },
+    {
+     "text": "Die meisten scheitern nicht am Wissen.",
+     "unter": "Sie scheitern daran, wie sie es benennen."
+    },
+    {
+     "text": "Stell dir zwei Zettel am schwarzen Brett vor.",
+     "unter": "Auf dem einen steht „Nachhilfe\". Auf dem anderen „Mathe-Prüfung in zwei Wochen und dein Kind blockiert?\" Gleiche Person, gleiches Können. Nur einer wird abgerissen."
+    },
+    {
+     "text": "Speicher dir das jetzt.",
+     "unter": "Weil ab hier acht Paare kommen, die du direkt auf dein eigenes Wissen anwenden kannst."
+    },
+    {
+     "text": "ESSEN UND FAMILIE",
+     "unter": "SO NICHT: „Tipps für gesunde Ernährung\"\nSO SCHON: „Der Znüni für vier Kinder, der morgens sieben Minuten dauert\"\n\nSO NICHT: „Meal Prep für Anfänger\"\nSO SCHON: „Sonntags zwei Stunden — und du kochst unter der Woche nie wieder abends um sechs\""
+    },
+    {
+     "text": "HAUSHALT UND ORGANISATION",
+     "unter": "SO NICHT: „Mehr Struktur im Alltag\"\nSO SCHON: „Der Wäschekorb, der seit vier Monaten nicht mehr überläuft\"\n\nSO NICHT: „Zeitmanagement für Mamas\"\nSO SCHON: „Die zwanzig Minuten am Sonntagabend, nach denen die Woche von allein läuft\""
+    },
+    {
+     "text": "GELD UND FAMILIE",
+     "unter": "SO NICHT: „Finanztipps für Familien\"\nSO SCHON: „Wie wir mit einem Einkommen und vier Kindern trotzdem in die Ferien kommen\"\n\nSO NICHT: „Sparen im Alltag\"\nSO SCHON: „Der Einkaufszettel, mit dem ich pro Monat nicht mehr nachdenken muss\""
+    },
+    {
+     "text": "KÖRPER UND KRAFT",
+     "unter": "SO NICHT: „Wieder fit werden nach der Schwangerschaft\"\nSO SCHON: „Wie ich nach dem vierten Kind wieder Kraft hatte, ohne ins Fitnessstudio zu gehen\"\n\nSO NICHT: „Selbstfürsorge für Mamas\"\nSO SCHON: „Die drei Minuten am Abend, nach denen ich nicht mehr leer ins Bett falle\""
+    },
+    {
+     "text": "Siehst du das Muster?",
+     "unter": "Links steht ein Thema. Rechts steht eine Situation, in der jemand gerade steckt. Dein Wissen ist dasselbe — nur die zweite Fassung wird gelesen."
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": "Dann bekommst du zwanzig weitere Paare — und zwar aus deinem eigenen Wissen, nicht aus meinem."
+    }
+   ],
+   "format": "slide",
+   "id": "kar-kw38-kar-mi-c",
+   "name": "C · Mi · Diese Produktidee kauft keiner — diese schon",
+   "profil": "mentoring"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-16",
+   "folien": [
+    {
+     "text": "Drei Wege, mit dem Network Geld zu verdienen, ohne eine einzige Namensliste.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-reel-kw38-mi",
+   "name": "KW38 Mi · 3 Wege ohne Namensliste (LEAD · STANDBEIN)",
+   "profil": "mentoring"
+  },
+  {
+   "art": "story",
+   "cta": "STANDBEIN",
+   "datum": "2026-09-16",
+   "folien": [
+    {
+     "text": "„Und was, wenn bei mir nichts kommt?“",
+     "unter": ""
+    },
+    {
+     "text": "Meistens liegt es daran,",
+     "unter": "dass man nur in einem Chat sucht."
+    },
+    {
+     "text": "Drei Orte",
+     "unter": "Team-Gruppe, Chats mit Freundinnen, eigene Sprachnachrichten."
+    },
+    {
+     "text": "Bei mir lag das meiste",
+     "unter": "in den Sprachnachrichten."
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": "Heute Abend kommt die ganze Anleitung."
+    }
+   ],
+   "format": "story",
+   "id": "kw38-story-mi",
+   "name": "Mi · Die drei Fragen",
+   "profil": "mentoring"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-17",
+   "folien": [
+    {
+     "text": "Für jede, deren Business von den Mamas auf dem Pausenplatz belächelt wird.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-do-a",
+   "name": "A · Do · Die Pausenplatz-Mamas",
+   "profil": "mentoring"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-17",
+   "folien": [
+    {
+     "text": "Das ist meine Antwort, wenn mich jemand fragt, ob das Produkt überhaupt jemand kauft.",
+     "unter": "Meine Schwiegermutter hat genau das gefragt."
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-do-b",
+   "name": "B · Do · Kauft das wirklich jemand",
+   "profil": "mentoring"
+  },
+  {
+   "art": "story",
+   "cta": "Frage-Sticker",
+   "datum": "2026-09-17",
+   "folien": [
+    {
+     "text": "Was gestern reinkam,",
+     "unter": "hat mich umgehauen."
+    },
+    {
+     "text": "Kinder zum Essen bringen.",
+     "unter": "Ein Budget, das aufgeht. Vier Kinder ohne Geschrei."
+    },
+    {
+     "text": "Alle haben geschrieben:",
+     "unter": "„Aber das ist doch nichts Besonderes.“"
+    },
+    {
+     "text": "Doch.",
+     "unter": "Fuer jede, die zwei Schritte dahinter steht."
+    },
+    {
+     "text": "Was ist deins?",
+     "unter": "Ich sag dir ehrlich, ob ich dafuer zahlen wuerde."
+    }
+   ],
+   "format": "story",
+   "id": "kw38-story-do",
+   "name": "Do · Was reinkam",
+   "profil": "mentoring"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-17",
+   "folien": [
+    {
+     "text": "Über diese Phase redet keiner: du bist nicht mehr die Neue und verdienst trotzdem nichts.",
+     "unter": "Und da hören die meisten auf."
+    }
+   ],
+   "format": "cover",
+   "id": "cover-reel-kw38-do",
+   "name": "KW38 Do · Die Phase, über die keiner redet",
+   "profil": "mentoring"
+  },
+  {
+   "art": "karussell",
+   "cta": "STANDBEIN",
+   "datum": "2026-09-18",
+   "folien": [
+    {
+     "text": "Fuenf Beitraege ohne ein einziges Produkt.",
+     "unter": ""
+    },
+    {
+     "text": "1 — Die Frage dieser Woche",
+     "unter": "Frage hinschreiben, Antwort daneben."
+    },
+    {
+     "text": "2 — Was du falsch gemacht hast",
+     "unter": "Mit Aufloesung, sonst ist es Jammern."
+    },
+    {
+     "text": "3 — Dein Satz",
+     "unter": "Meiner: Du faengst nicht bei null an."
+    },
+    {
+     "text": "4 — Was du anders machst",
+     "unter": "Muss nicht revolutionaer sein."
+    },
+    {
+     "text": "5 — Ein Moment aus deinem Tag",
+     "unter": "Kein Hochglanz noetig."
+    },
+    {
+     "text": "Alle fuenf ohne Produktfoto.",
+     "unter": "Und ohne dass du dich verbiegst."
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": "Dann schick ich dir das Werkzeug."
+    }
+   ],
+   "format": "slide",
+   "id": "kw38-kar-fr-a",
+   "name": "A · Fr · Fuenf Beitraege ohne Produkt",
+   "profil": "mentoring"
+  },
+  {
+   "art": "karussell",
+   "cta": "",
+   "datum": "2026-09-18",
+   "folien": [
+    {
+     "text": "Fünf Beiträge, die du posten kannst, ohne ein Produkt zu zeigen.",
+     "unter": ""
+    },
+    {
+     "text": "1 — Die Frage, die dir diese Woche jemand gestellt hat.",
+     "unter": "Frage hinschreiben, Antwort danebenschreiben. Fertig."
+    },
+    {
+     "text": "2 — Was du vor zwei Jahren falsch gemacht hast.",
+     "unter": "Ohne Auflösung wirkt es wie Jammern. Mit Auflösung ist es Mehrwert."
+    },
+    {
+     "text": "3 — Der Satz, den du ständig sagst.",
+     "unter": "Jede von uns hat einen. Meiner ist: „Du fängst nicht bei null an.“"
+    },
+    {
+     "text": "4 — Eine Sache, die du anders machst als alle.",
+     "unter": "Muss nicht revolutionär sein. Nur deins."
+    },
+    {
+     "text": "5 — Ein Moment aus deinem Tag, der zeigt, warum du das machst.",
+     "unter": "Kein Hochglanz. Der Moment reicht."
+    },
+    {
+     "text": "Alle fünf funktionieren ohne Produktfoto und ohne Firmenlogo.",
+     "unter": "Und ohne dass du dich verbiegst."
+    },
+    {
+     "text": "Und alle fünf sagen mehr über dich aus als jedes Katalogbild.",
+     "unter": ""
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": "Und ich schick dir das Werkzeug, das aus deinem Wissen Produktideen macht."
+    }
+   ],
+   "format": "slide",
+   "id": "kar-kw38-kar-fr-a",
+   "name": "A · Fr · Fünf Beiträge ohne ein einziges Produkt",
+   "profil": "mentoring"
+  },
+  {
+   "art": "karussell",
+   "cta": "",
+   "datum": "2026-09-18",
+   "folien": [
+    {
+     "text": "Ich hab mal ausgerechnet, wie viele Bestellungen ich bräuchte, um meinen Teilzeitjob zu ersetzen.",
+     "unter": ""
+    },
+    {
+     "text": "Danach hab ich den Taschenrechner weggelegt",
+     "unter": "und drei Tage nicht mehr drüber geredet."
+    },
+    {
+     "text": "Das Problem war nie, dass ich zu wenig gemacht hab.",
+     "unter": ""
+    },
+    {
+     "text": "Rechne es einmal selbst durch.",
+     "unter": "Dein Monatsziel geteilt durch deine Provision pro Bestellung."
+    },
+    {
+     "text": "Dann schau dir die Zahl an.",
+     "unter": "Und frag dich ehrlich: Wie viele Menschen müsste ich dafür jeden Monat erreichen?"
+    },
+    {
+     "text": "Die Zahl ist nicht da, um dich runterzuziehen.",
+     "unter": "Sie ist da, damit du aufhörst zu glauben, es läge an deinem Fleiss."
+    },
+    {
+     "text": "Was ich gemacht hab:",
+     "unter": "nichts aufgegeben, sondern etwas danebengestellt, das nur an mir hängt."
+    },
+    {
+     "text": "Das Network läuft weiter.",
+     "unter": "Es ist nur nicht mehr das Einzige."
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": "Dann zeig ich dir, womit ich angefangen hab."
+    }
+   ],
+   "format": "slide",
+   "id": "kar-kw38-kar-fr-b",
+   "name": "B · Fr · Die Rechnung",
+   "profil": "mentoring"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-18",
+   "folien": [
+    {
+     "text": "Ich bin niemand — und hab trotzdem zwei Standbeine aufgebaut.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-kw38-reel-fr-c",
+   "name": "C · Fr · Ich bin niemand — und hab trotzdem zwei Standbeine",
+   "profil": "mentoring"
+  },
+  {
+   "art": "story",
+   "cta": "STANDBEIN",
+   "datum": "2026-09-18",
+   "folien": [
+    {
+     "text": "Diese Woche ging es um eine Sache:",
+     "unter": "du hast laengst etwas."
+    },
+    {
+     "text": "Nichts fuer dich,",
+     "unter": "wenn du schon weisst, was du anbietest."
+    },
+    {
+     "text": "Fuer dich,",
+     "unter": "wenn du weisst, dass da was ist, und es nicht in Worte kriegst."
+    },
+    {
+     "text": "Zwanzig Minuten.",
+     "unter": "Kostet nichts."
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": ""
+    }
+   ],
+   "format": "story",
+   "id": "kw38-story-fr",
+   "name": "Fr · Fuer wen es ist",
+   "profil": "mentoring"
+  },
+  {
+   "art": "cover",
+   "cta": "",
+   "datum": "2026-09-18",
+   "folien": [
+    {
+     "text": "Dein Network läuft — und du gehst am Montag trotzdem ins Büro.",
+     "unter": ""
+    }
+   ],
+   "format": "cover",
+   "id": "cover-reel-kw38-fr",
+   "name": "KW38 Fr · POV Montag ins Büro (LEAD · STANDBEIN)",
+   "profil": "mentoring"
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-d-di-a",
+   "name": "A · Di · Nachmittagstief",
+   "datum": "2026-09-22",
+   "profil": "doterra",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Dein Nachmittagstief kommt nicht vom Schlaf.",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-d-di-b",
+   "name": "B · Di · Acht Stunden",
+   "datum": "2026-09-22",
+   "profil": "doterra",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Warum bin ich so müde, obwohl ich acht Stunden geschlafen hab?",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-d-do-a",
+   "name": "A · Do · Vier Sachen, drei kostenlos",
+   "datum": "2026-09-24",
+   "profil": "doterra",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Vier Sachen hab ich geändert. Drei davon kosten nichts.",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-d-do-b",
+   "name": "B · Do · Kein Disziplin-Problem",
+   "datum": "2026-09-24",
+   "profil": "doterra",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Du hast kein Disziplin-Problem.",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-d-fr-a",
+   "name": "A · Fr · Letzter Bestelltag — Sofa",
+   "datum": "2026-09-25",
+   "profil": "doterra",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Gestern um neun auf dem Sofa eingeschlafen. Ich hatte mich den ganzen Tag gefreut.",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-d-fr-b",
+   "name": "B · Fr · Letzter Bestelltag — Handy",
+   "datum": "2026-09-25",
+   "profil": "doterra",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Du hängst abends am Handy. Das liegt nicht am Handy.",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-d-mi-a",
+   "name": "A · Mi · Das wird schon wieder",
+   "datum": "2026-09-23",
+   "profil": "doterra",
+   "cta": "",
+   "folien": [
+    {
+     "text": "„Das wird schon wieder, du hast halt vier Kinder.“ Hat es nicht.",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-d-mi-b",
+   "name": "B · Mi · Die dritte Apotheken-Tüte",
+   "datum": "2026-09-23",
+   "profil": "doterra",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Die dritte Apotheken-Tüte ist kein Beweis, dass dir nichts hilft.",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-d-mo-a",
+   "name": "A · Mo · Um drei wach",
+   "datum": "2026-09-21",
+   "profil": "doterra",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Vor einem Jahr dreimal die Woche um drei wach. Heute nicht mehr.",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-d-mo-b",
+   "name": "B · Mo · Halb vier",
+   "datum": "2026-09-21",
+   "profil": "doterra",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Halb vier, und der Kaffee war schon gemacht, bevor ich müde war.",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-m-mi-a",
+   "name": "A · Mi · Montage zählen",
+   "datum": "2026-09-23",
+   "profil": "mentoring",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Beim Znüni-Boxen-Füllen ausgerechnet, wie viele Montage ich noch ins Büro muss.",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-m-mi-b",
+   "name": "B · Mi · Nichts mehr verkaufen",
+   "datum": "2026-09-23",
+   "profil": "mentoring",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Was hättest du zu erzählen, wenn du morgen nichts mehr verkaufen dürftest?",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-m-mo-a",
+   "name": "A · Mo · Drei Teamcalls",
+   "datum": "2026-09-21",
+   "profil": "mentoring",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Drei Teamcalls diesen Monat. Die Abrechnung sieht aus wie davor.",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "cover",
+   "format": "cover",
+   "id": "cover-kw39-reel-m-mo-b",
+   "name": "B · Mo · Warum der Anfang",
+   "datum": "2026-09-21",
+   "profil": "mentoring",
+   "cta": "",
+   "folien": [
+    {
+     "text": "Warum tun im Network alle so, als wäre der Anfang das Schwere?",
+     "unter": ""
+    }
+   ]
+  },
+  {
+   "art": "karussell",
+   "format": "slide",
+   "id": "kw39-kar-di-a",
+   "name": "A · Di · Drei Fragen, zwanzig Minuten",
+   "datum": "2026-09-22",
+   "profil": "mentoring",
+   "cta": "Keyword",
+   "folien": [
+    {
+     "text": "Drei Fragen, und du weisst in zwanzig Minuten, worüber du schreiben kannst.",
+     "unter": "Du brauchst dafür Papier, keine neue Idee."
+    },
+    {
+     "text": "Du suchst dein Thema da draussen",
+     "unter": "Dabei liegt es in dem, was du sowieso schon beantwortest — nur hat es noch nie jemand aufgeschrieben."
+    },
+    {
+     "text": "Der Zettel am schwarzen Brett",
+     "unter": "Zwei Frauen hängen einen Zettel auf. Auf dem einen steht, was sie verkaufen. Auf dem anderen steht, welches Problem sie lösen. Angerufen wird nur eine."
+    },
+    {
+     "text": "🔖 Ab hier kommen die drei Fragen",
+     "unter": "Speicher dir das. Du brauchst zwanzig Minuten und einen Stift, und du kommst mit einem Satz raus."
+    },
+    {
+     "text": "Frage 1: Welche Frage wurde dir in den letzten vier Wochen mehr als einmal gestellt?",
+     "unter": "Schreib sie wörtlich auf, in den Worten der Person. Nicht zusammengefasst. Das ist dein Thema in ihrer Sprache."
+    },
+    {
+     "text": "Frage 2: Was kannst du heute, das du vor zwei Jahren nicht konntest?",
+     "unter": "Das ist deine Erfahrung, und die gehört dir — im Gegensatz zum Sortiment."
+    },
+    {
+     "text": "Frage 3: Was erklärst du jedes Mal, bevor jemand bei dir bestellt?",
+     "unter": "Genau dieser Teil ist dein Angebot. Du verschenkst ihn gerade in DMs."
+    },
+    {
+     "text": "Drei Antworten auf Papier",
+     "unter": "Das ist kein Thema-Problem mehr. Das ist eine Liste, aus der du sechs Wochen Content und ein erstes eigenes Angebot ziehst."
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": "Dann schick ich dir das Werkzeug, das die drei Fragen mit dir durchgeht und so lange nachfragt, bis eine Produktidee dasteht. Die drei hier sind der Anfang — im Werkzeug sind es mehr."
+    }
+   ]
+  },
+  {
+   "art": "karussell",
+   "format": "slide",
+   "id": "kw39-kar-di-b",
+   "name": "B · Di · Kein Ideen-Problem",
+   "datum": "2026-09-22",
+   "profil": "mentoring",
+   "cta": "Keyword",
+   "folien": [
+    {
+     "text": "Du hast kein Ideen-Problem",
+     "unter": "Deins kommt dir nur zu normal vor, um Geld dafür zu nehmen."
+    },
+    {
+     "text": "„Das weiss doch jede“",
+     "unter": "Das ist der Satz, an dem die meisten Ideen sterben. Er stimmt fast nie."
+    },
+    {
+     "text": "🔖 Ab hier wird es konkret",
+     "unter": "Speicher dir das — es kommen vier Sachen, die dir zu normal vorkommen und die trotzdem jemand kauft."
+    },
+    {
+     "text": "Die Reihenfolge",
+     "unter": "Du weisst, womit man anfängt und was warten kann. Für jemanden am Tag eins ist das die halbe Miete."
+    },
+    {
+     "text": "Die Fehler",
+     "unter": "Du kennst die drei Dinge, die am Anfang alle falsch machen, weil du sie selbst falsch gemacht hast."
+    },
+    {
+     "text": "Die Übersetzung",
+     "unter": "Du kannst erklären, was die Beschreibung auf der Packung im Alltag heisst. Das steht nirgends."
+    },
+    {
+     "text": "Das Dranbleiben",
+     "unter": "Du weisst, was man macht, wenn nach zwei Wochen nichts passiert. Genau daran hören die meisten auf."
+    },
+    {
+     "text": "Und jetzt ehrlich",
+     "unter": "Manchmal ist eine Idee wirklich zu dünn. Wenn du nur ein einziges Mal etwas getan hast und es bei dir selbst funktioniert hat, ist das noch kein Angebot. Zwei- oder dreimal bei anderen, das reicht."
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": "Dann schick ich dir das Werkzeug, das dich aus genau diesen vier Ecken eine Idee bauen lässt. Es fragt so lange nach, bis etwas dasteht, das du auch verkaufen würdest."
+    }
+   ]
+  },
+  {
+   "art": "karussell",
+   "format": "slide",
+   "id": "kw39-kar-do-a",
+   "name": "A · Do · Was nicht im Katalog steht",
+   "datum": "2026-09-24",
+   "profil": "mentoring",
+   "cta": "Keyword",
+   "folien": [
+    {
+     "text": "Was weisst du über dein Produkt, das so im Katalog gar nicht drinsteht?",
+     "unter": "Vier Bereiche, in denen du mehr weisst als jede Broschüre."
+    },
+    {
+     "text": "Im Katalog steht, was drin ist",
+     "unter": "Bei dir steht, was es bei wem verändert hat, und was man vorher wissen muss."
+    },
+    {
+     "text": "Zwei Frauen, dasselbe Produkt",
+     "unter": "Die eine liest die Packung vor. Die andere erzählt vom Dienstagabend, an dem es zum ersten Mal anders lief. Gefragt wird die zweite."
+    },
+    {
+     "text": "🔖 Ab hier kommen die vier Bereiche",
+     "unter": "Speicher dir das und schreib zu jedem einen Satz. Danach hast du vier Beiträge, die niemand sonst schreiben kann."
+    },
+    {
+     "text": "Anwendung — Katalog: „zweimal täglich“",
+     "unter": "Deins: warum morgens und nicht abends, und was passiert, wenn man es vergisst."
+    },
+    {
+     "text": "Auswahl — Katalog: zwölf Varianten",
+     "unter": "Deins: welche drei für den Anfang reichen und welche neun warten können."
+    },
+    {
+     "text": "Alltag — Katalog: „praktisch für unterwegs“",
+     "unter": "Deins: wo es liegen muss, damit sie es an einem Dienstag um halb vier überhaupt findet."
+    },
+    {
+     "text": "Zweifel — Katalog schweigt",
+     "unter": "Deins: was du sagst, wenn nach zwei Wochen nichts passiert ist. Genau da hören die meisten auf."
+    },
+    {
+     "text": "Kommentier ECHT1",
+     "unter": "Dann schick ich dir das Workbook, mit dem du aus diesen vier Sätzen dein Thema machst — inklusive der Schritte, die danach kommen."
+    }
+   ]
+  },
+  {
+   "art": "karussell",
+   "format": "slide",
+   "id": "kw39-kar-do-b",
+   "name": "B · Do · Vier Sätze",
+   "datum": "2026-09-24",
+   "profil": "mentoring",
+   "cta": "Keyword",
+   "folien": [
+    {
+     "text": "Vier Sätze, die du ständig sagst",
+     "unter": "Und die alle dein eigenes Angebot beschreiben."
+    },
+    {
+     "text": "Du sagst sie mündlich, jede Woche",
+     "unter": "Aufgeschrieben hast du sie nie. Deshalb bezahlt dich auch niemand dafür."
+    },
+    {
+     "text": "🔖 Lies die vier und häng an jeden ein Datum",
+     "unter": "Wann hast du ihn zuletzt gesagt? Speicher dir das, du wirst dich erschrecken, wie oft."
+    },
+    {
+     "text": "„Fang erst mal nur damit an“",
+     "unter": "Das ist dein Einstiegs-Angebot. Du hast eine Reihenfolge im Kopf, die für andere Gold ist."
+    },
+    {
+     "text": "„Das war bei mir am Anfang auch so“",
+     "unter": "Das ist deine Story, und sie nimmt jemandem die Angst. Genau dafür zahlen Leute."
+    },
+    {
+     "text": "„Warte noch zwei Wochen, dann schauen wir nochmal“",
+     "unter": "Das ist Begleitung. Der Teil, den kein Produkt mitliefert."
+    },
+    {
+     "text": "„Nein, das brauchst du wirklich nicht“",
+     "unter": "Das ist Vertrauen. Wer abrät, wird gefragt."
+    },
+    {
+     "text": "Vier Sätze, vier Bausteine",
+     "unter": "Einstieg, Story, Begleitung, Ehrlichkeit. Das ist bereits ein Angebot — es hat nur noch keinen Namen."
+    },
+    {
+     "text": "Kommentier ECHT1",
+     "unter": "Dann schick ich dir das Workbook, in dem du deinen vier Sätzen einen Namen gibst."
+    }
+   ]
+  },
+  {
+   "art": "karussell",
+   "format": "slide",
+   "id": "kw39-kar-fr-a",
+   "name": "A · Fr · Früher Produktfotos",
+   "datum": "2026-09-25",
+   "profil": "mentoring",
+   "cta": "Keyword",
+   "folien": [
+    {
+     "text": "Früher Produktfotos. Heute fragen sie nach etwas, das nicht im Katalog steht.",
+     "unter": "Was sich dazwischen geändert hat, waren nicht mehr Stunden."
+    },
+    {
+     "text": "Vorher",
+     "unter": "Ich hab gepostet, was die Firma geschickt hat. Schöne Bilder, korrekte Texte, keine Fragen."
+    },
+    {
+     "text": "Nachher",
+     "unter": "Ich poste, worüber ich sowieso rede. Und jetzt schreiben mir Frauen, bevor ich irgendwas anbiete."
+    },
+    {
+     "text": "🔖 Ab hier kommen die Belege",
+     "unter": "Speicher dir das, wenn du wissen willst, wie schnell das gehen kann."
+    },
+    {
+     "text": "Eine Mentee, eine Woche",
+     "unter": "Zwei Startersets verkauft, drei Gespräche offen. Weil sie endlich mit ihrem Thema sichtbar geworden ist — nicht mit ihrem Sortiment."
+    },
+    {
+     "text": "Eine andere, nach einem Post",
+     "unter": "„Ich kam mit dem Antworten nicht mehr hinterher.“ Ein Post. Nicht dreissig."
+    },
+    {
+     "text": "Und eine dritte",
+     "unter": "„Seit ich meine Positionierung angepasst habe, geht mein Account ab.“"
+    },
+    {
+     "text": "Was alle drei gemacht haben",
+     "unter": "Sie haben aufgehört, ihr Produkt zu zeigen, und angefangen, ihre Antwort zu zeigen. Dieselben Follower, dieselbe Woche."
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": "Dann schick ich dir das Werkzeug, das aus deinem Wissen eine Produktidee macht. Es fragt nach, bis etwas dasteht — kostet nichts und dauert fünf Minuten."
+    }
+   ]
+  },
+  {
+   "art": "karussell",
+   "format": "slide",
+   "id": "kw39-kar-fr-b",
+   "name": "B · Fr · Mein grösster Fehler",
+   "datum": "2026-09-25",
+   "profil": "mentoring",
+   "cta": "Keyword",
+   "folien": [
+    {
+     "text": "Mein grösster Fehler im Network",
+     "unter": "Ich hab jahrelang alles, was ich weiss, in DMs verschenkt."
+    },
+    {
+     "text": "Es hat sich richtig angefühlt",
+     "unter": "Jemand fragt, ich antworte ausführlich. Das ist ja nett, und verdienen kommt von dienen."
+    },
+    {
+     "text": "Bis mir auffiel, wie oft dieselbe Frage kam",
+     "unter": "Immer dieselben drei Themen, immer von vorn getippt, immer abends nach neun."
+    },
+    {
+     "text": "🔖 Ab hier kommt, was ich geändert hab",
+     "unter": "Speicher dir das, wenn du auch jeden Abend dieselbe Sprachnachricht schickst."
+    },
+    {
+     "text": "Schritt 1: mitschreiben statt wegschicken",
+     "unter": "Jede Frage, die zweimal kam, in eine Liste. Vier Wochen lang, sonst nichts."
+    },
+    {
+     "text": "Schritt 2: die Liste sortieren",
+     "unter": "Aus vierzehn Fragen wurden drei Themen. Eines davon kam doppelt so oft vor wie die anderen."
+    },
+    {
+     "text": "Schritt 3: daraus etwas bauen, das bleibt",
+     "unter": "Aus dem einen Thema ist mein erster Minikurs geworden. Die Antworten hatte ich längst — sie lagen nur in dreissig Chatverläufen."
+    },
+    {
+     "text": "Was das geändert hat",
+     "unter": "Ich antworte immer noch gern. Ich fange nur nicht mehr jedes Mal bei null an."
+    },
+    {
+     "text": "Kommentier STANDBEIN",
+     "unter": "Dann schick ich dir das Werkzeug, das genau diese Sortierung mit dir macht — ohne dass du vier Wochen mitschreiben musst."
+    }
+   ]
+  },
+  {
+   "art": "story",
+   "format": "story",
+   "id": "kw39-story-d-di",
+   "name": "Di · doTERRA · Meine Geschichte",
+   "datum": "2026-09-22",
+   "profil": "doterra",
+   "cta": "Umfrage",
+   "folien": [
+    {
+     "text": "Der Moment, an dem ich es nicht mehr wegschieben konnte, war peinlich.",
+     "unter": ""
+    },
+    {
+     "text": "Ich war an einer Convention und hab mir das Zimmer mit anderen Frauen geteilt.",
+     "unter": "Beim Haarebürsten lag jedes Mal ein Büschel auf dem Boden. Zuhause war mir das nie aufgefallen."
+    },
+    {
+     "text": "Beim Arzt kamen die Leberwerte dran.",
+     "unter": "Die waren gut. Danach war das Gespräch zu Ende, und ich bin mit nichts nach Hause."
+    },
+    {
+     "text": "Es war eine Freundin, die gesagt hat: Mach doch mal einen Hormontest.",
+     "unter": "Nicht der Arzt. Eine Freundin, gleich alt wie ich."
+    },
+    {
+     "text": "Hast du so eine Freundin, die dir sowas sagt?",
+     "unter": "Ja / Hätte ich gern"
+    },
+    {
+     "text": "Wenn du auf so einen Satz wartest: Schreib mir. Ich bin heute den ganzen Tag hier.",
+     "unter": "Antwort-Sticker, offen"
+    }
+   ]
+  },
+  {
+   "art": "story",
+   "format": "story",
+   "id": "kw39-story-d-do",
+   "name": "Do · doTERRA · Was die Runde ist",
+   "datum": "2026-09-24",
+   "profil": "doterra",
+   "cta": "Umfrage",
+   "folien": [
+    {
+     "text": "Ab dem ersten Oktober begleite ich vier Wochen lang eine kleine Gruppe.",
+     "unter": "Heute sag ich dir genau, was das heisst."
+    },
+    {
+     "text": "Vier Wochen, ein Thema pro Woche, in dieser Reihenfolge: Essen, Bewegung, Abend, Nährstoffe.",
+     "unter": "Immer nur eins auf einmal."
+    },
+    {
+     "text": "Es gibt keine Calls, zu denen du erscheinen musst.",
+     "unter": "Es gibt einen Chat, in dem ich jeden Tag da bin, und eine Aufgabe pro Woche, die in einen Mama-Tag passt."
+    },
+    {
+     "text": "Was es nicht ist: kein Programm, das du allein durcharbeitest, und kein Plan, den ich dir überstülpe.",
+     "unter": "Wir schauen bei dir, was zuerst dran ist."
+    },
+    {
+     "text": "Welche der vier Wochen wäre bei dir die schwierigste?",
+     "unter": "Essen oder Bewegung / Abend oder Nährstoffe"
+    },
+    {
+     "text": "Wenn du dabei sein willst, sag mir das bis morgen. Danach wird es knapp, damit alles rechtzeitig bei dir ist.",
+     "unter": "Antwort ENERGIE"
+    }
+   ]
+  },
+  {
+   "art": "story",
+   "format": "story",
+   "id": "kw39-story-d-fr",
+   "name": "Fr · doTERRA · Letzter Tag",
+   "datum": "2026-09-25",
+   "profil": "doterra",
+   "cta": "Umfrage",
+   "folien": [
+    {
+     "text": "Heute ist der letzte Tag, an dem du in die Oktober-Runde kommst.",
+     "unter": ""
+    },
+    {
+     "text": "Der Grund ist banal: Alles, was du dafür brauchst, muss vor dem ersten Oktober bei dir liegen, und der Versand braucht seine Tage.",
+     "unter": ""
+    },
+    {
+     "text": "So läuft es ab: Du schreibst mir ENERGIE, ich frag dich drei Sachen, und dann sag ich dir ehrlich, ob es für dich passt. Wenn nicht, sag ich das auch.",
+     "unter": ""
+    },
+    {
+     "text": "Bist du dabei?",
+     "unter": "Ja, schreib mir / Diesmal nicht"
+    },
+    {
+     "text": "Ich bin heute bis am Abend am Handy. Schreib mir einfach ENERGIE, dann melde ich mich.",
+     "unter": "Antwort ENERGIE"
+    }
+   ]
+  },
+  {
+   "art": "story",
+   "format": "story",
+   "id": "kw39-story-d-mi",
+   "name": "Mi · doTERRA · Was ich mir gewünscht hätte",
+   "datum": "2026-09-23",
+   "profil": "doterra",
+   "cta": "Umfrage",
+   "folien": [
+    {
+     "text": "Information hatte ich genug.",
+     "unter": "Die hab ich mir nächtelang zusammengegoogelt."
+    },
+    {
+     "text": "Gefehlt hat jemand, der mir sagt, womit ich anfange.",
+     "unter": "Ich hatte zwölf Baustellen und hab an allen gleichzeitig ein bisschen gemacht."
+    },
+    {
+     "text": "Und jemand, der nach drei Wochen nochmal fragt.",
+     "unter": "Nach drei Wochen ist nämlich noch nichts zu sehen, und genau da hören alle auf."
+    },
+    {
+     "text": "Woran scheiterst du eher?",
+     "unter": "Womit anfangen / Dranbleiben"
+    },
+    {
+     "text": "Falls du gerade bei „womit anfangen“ bist: Die drei Tage nehmen dir genau diese Entscheidung ab. Link oben.",
+     "unter": "mumlifebalance.ch/energie-kickstart"
+    }
+   ]
+  },
+  {
+   "art": "story",
+   "format": "story",
+   "id": "kw39-story-d-mo",
+   "name": "Mo · doTERRA · Der Schmerz",
+   "datum": "2026-09-21",
+   "profil": "doterra",
+   "cta": "Umfrage",
+   "folien": [
+    {
+     "text": "Es gibt einen Moment am Tag, an dem du merkst, dass nichts mehr da ist.",
+     "unter": "Bei den meisten ist er zwischen halb vier und fünf."
+    },
+    {
+     "text": "Man erkennt ihn daran, dass man anfängt, Sachen aufzuschieben, die zwei Minuten dauern.",
+     "unter": "Die Znüni-Box. Der Anruf. Das eine Formular."
+    },
+    {
+     "text": "Ich hab das jahrelang für Faulheit gehalten und mich dafür geschämt.",
+     "unter": "Es war keine."
+    },
+    {
+     "text": "Wann ist dein Moment?",
+     "unter": "Nachmittag / Abend"
+    },
+    {
+     "text": "Diese Woche erzähl ich dir, was bei mir dahintersteckte und was ich geändert hab. Wenn du vorher schon anfangen willst: drei Tage, kostet nichts, Link oben.",
+     "unter": "mumlifebalance.ch/energie-kickstart"
+    }
+   ]
+  },
+  {
+   "art": "story",
+   "format": "story",
+   "id": "kw39-story-m-di",
+   "name": "Di · Reaktion auf das Montags-Reel",
+   "datum": "2026-09-22",
+   "profil": "mentoring",
+   "cta": "Umfrage",
+   "folien": [
+    {
+     "text": "Gestern kam unter dem Reel dreimal derselbe Satz: „Genau so ist es bei mir auch.“ Und jedes Mal hat es mich kurz geärgert.",
+     "unter": ""
+    },
+    {
+     "text": "Nicht wegen euch.",
+     "unter": "Wegen mir vor drei Jahren, als ich genau dasselbe geschrieben hätte — und dann nichts geändert hab."
+    },
+    {
+     "text": "Wiedererkennen fühlt sich gut an.",
+     "unter": "Es ist aber noch keine Entscheidung. Der Unterschied zwischen den beiden liegt bei ungefähr zwanzig Minuten mit einem Blatt Papier."
+    },
+    {
+     "text": "Hast du das zweite Blatt gemacht?",
+     "unter": "Ja, liegt vor mir / Noch nicht"
+    },
+    {
+     "text": "Wenn nicht: Das Werkzeug macht es mit dir, damit du nicht vor einem leeren Blatt sitzt. Fünf Minuten, kostet nichts.",
+     "unter": "mumlifebalance.ch/produkt-ideen-finder/"
+    }
+   ]
+  },
+  {
+   "art": "story",
+   "format": "story",
+   "id": "kw39-story-m-do",
+   "name": "Do · Die drei Vormittagsstunden",
+   "datum": "2026-09-24",
+   "profil": "mentoring",
+   "cta": "Umfrage",
+   "folien": [
+    {
+     "text": "Gestern hab ich von drei Stunden am Vormittag geredet.",
+     "unter": "Heute zeig ich dir, was da wirklich reinpasst."
+    },
+    {
+     "text": "8:00 bis 9:00 — das, was nur ich machen kann.",
+     "unter": "Gespräche, Entscheidungen, Texte, bei denen es auf meine Stimme ankommt."
+    },
+    {
+     "text": "9:00 bis 10:00 — das, was vorbereitet werden muss.",
+     "unter": "Da läuft die KI mit, und ich entscheide, was bleibt."
+    },
+    {
+     "text": "10:00 bis 11:00 — das, was liegen bleiben darf.",
+     "unter": "Genau darum steht es am Schluss."
+    },
+    {
+     "text": "Was würdest du in dein erstes Fenster legen?",
+     "unter": ""
+    },
+    {
+     "text": "Wenn du bei null anfängst und nicht weisst, womit: Das Workbook geht die Reihenfolge mit dir durch. Kommentier ECHT1, kostet nichts.",
+     "unter": "Keyword ECHT1"
+    }
+   ]
+  },
+  {
+   "art": "story",
+   "format": "story",
+   "id": "kw39-story-m-fr",
+   "name": "Fr · Für wen es ist, für wen nicht",
+   "datum": "2026-09-25",
+   "profil": "mentoring",
+   "cta": "Umfrage",
+   "folien": [
+    {
+     "text": "Ich sag dir kurz, für wen das Werkzeug dieser Woche nichts bringt.",
+     "unter": "Spart uns beiden Zeit."
+    },
+    {
+     "text": "Wenn du dein Thema schon hast und nur nicht weisst, wie du es postest: Dann brauchst du das nicht.",
+     "unter": "Dann brauchst du eine Content-Struktur, und das ist etwas anderes."
+    },
+    {
+     "text": "Wenn du gern liest, aber nichts aufschreibst: Dann bringt es dir auch nichts.",
+     "unter": "Es fragt dich, und wenn du nicht antwortest, passiert nichts."
+    },
+    {
+     "text": "Für wen es was bringt: Du bist im Network, du weisst eine Menge, und du hast das Gefühl, das sei alles nichts Besonderes.",
+     "unter": ""
+    },
+    {
+     "text": "Welche der drei bist du?",
+     "unter": "Hab mein Thema / Weiss viel, halt es für normal"
+    },
+    {
+     "text": "Wenn du die Dritte bist: Link ist oben, fünf Minuten, kostet nichts.",
+     "unter": "mumlifebalance.ch/produkt-ideen-finder/"
+    }
+   ]
+  },
+  {
+   "art": "story",
+   "format": "story",
+   "id": "kw39-story-m-mi",
+   "name": "Mi · Die drei Fragen live",
+   "datum": "2026-09-23",
+   "profil": "mentoring",
+   "cta": "Umfrage",
+   "folien": [
+    {
+     "text": "Ich mach die drei Fragen von gestern jetzt selbst.",
+     "unter": "Live, ohne Vorbereitung."
+    },
+    {
+     "text": "Frage eins: Welche Frage wurde mir in den letzten vier Wochen mehr als einmal gestellt?",
+     "unter": "— „Wie kommst du auf deine Themen, wenn nichts los ist?“ Dreimal. Wortgleich."
+    },
+    {
+     "text": "Frage zwei: Was kann ich heute, das ich vor zwei Jahren nicht konnte?",
+     "unter": "— Eine Woche Content planen, während die Kinder frühstücken. Vor zwei Jahren hab ich dafür ganze Abende gebraucht."
+    },
+    {
+     "text": "Frage drei: Was erklär ich jedes Mal, bevor jemand bei mir kauft?",
+     "unter": "— Dass du dein Thema nicht suchen musst. Es liegt in dem, was du schon beantwortest."
+    },
+    {
+     "text": "Welche Frage würdest du als Erste beantworten?",
+     "unter": "Eins / Zwei oder Drei"
+    },
+    {
+     "text": "Das war meine Viertelstunde. Wenn du deine machen willst, geht das Werkzeug mit dir durch. Link oben.",
+     "unter": "mumlifebalance.ch/produkt-ideen-finder/"
+    }
+   ]
+  },
+  {
+   "art": "story",
+   "format": "story",
+   "id": "kw39-story-m-mo",
+   "name": "Mo · Wochenauftakt",
+   "datum": "2026-09-21",
+   "profil": "mentoring",
+   "cta": "Umfrage",
+   "folien": [
+    {
+     "text": "Diese Woche geht es hier um eine Rechnung, die bei vielen nicht aufgeht.",
+     "unter": "Und darum, was man daneben stellt, damit sie irgendwann aufgeht."
+    },
+    {
+     "text": "Ich hab gestern Abend zusammengezählt, was diese Woche ansteht: vier Kinder, zwei Elternabende, ein Zahnarzttermin. Und trotzdem stehen fünf Beiträge. Ich hab sie vorher geplant, das ist der ganze Unterschied.",
+     "unter": ""
+    },
+    {
+     "text": "Was ich diese Woche zeige: die drei Fragen, mit denen du in zwanzig Minuten weisst, worüber du schreiben kannst. Und was du über dein Produkt weisst, das in keinem Katalog steht.",
+     "unter": ""
+    },
+    {
+     "text": "Wo stehst du gerade?",
+     "unter": "Ich weiss, worüber ich rede / Ich such noch"
+    },
+    {
+     "text": "Wenn du bei „ich such noch“ bist: Das Werkzeug dafür ist kostenlos und braucht fünf Minuten. Link ist oben.",
+     "unter": "mumlifebalance.ch/produkt-ideen-finder/"
+    }
+   ]
+  }
+ ],
+ "quelle": "Cockpit-Datenbank, Sammlungen reels + karussells + storys. KW38 blieb stehen, KW39 kam am 18.09. im Automatik-Lauf dazu.",
+ "stand": "2026-09-18"
+}

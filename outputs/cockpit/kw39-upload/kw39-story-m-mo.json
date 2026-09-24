@@ -1,0 +1,51 @@
+{
+ "name": "Mo · Wochenauftakt",
+ "datum": "2026-09-21",
+ "profil": "mentoring",
+ "brand": "mlb_light",
+ "frames": [
+  {
+   "id": "s1",
+   "layout": "hook",
+   "text": "Diese Woche geht es hier um eine Rechnung, die bei vielen nicht aufgeht. Und darum, was man daneben stellt, damit sie irgendwann aufgeht.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s2",
+   "layout": "text",
+   "text": "Ich hab gestern Abend zusammengezählt, was diese Woche ansteht: vier Kinder, zwei Elternabende, ein Zahnarzttermin. Und trotzdem stehen fünf Beiträge. Ich hab sie vorher geplant, das ist der ganze Unterschied.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s3",
+   "layout": "text",
+   "text": "Was ich diese Woche zeige: die drei Fragen, mit denen du in zwanzig Minuten weisst, worüber du schreiben kannst. Und was du über dein Produkt weisst, das in keinem Katalog steht.",
+   "cta": "",
+   "optA": "",
+   "optB": ""
+  },
+  {
+   "id": "s4",
+   "layout": "frage",
+   "text": "Wo stehst du gerade?",
+   "cta": "Umfrage",
+   "optA": "Ich weiss, worüber ich rede",
+   "optB": "Ich such noch"
+  },
+  {
+   "id": "s5",
+   "layout": "cta",
+   "text": "Wenn du bei „ich such noch“ bist: Das Werkzeug dafür ist kostenlos und braucht fünf Minuten. Link ist oben.",
+   "cta": "mumlifebalance.ch/produkt-ideen-finder/",
+   "optA": "",
+   "optB": ""
+  }
+ ],
+ "textfrei": false,
+ "hinweis": "🟢 Grün (Stetig) · Säule Persönlichkeit · CTA Produkt-Ideen-Finder",
+ "updatedAt": "2026-09-18T07:00:00.000Z"
+}

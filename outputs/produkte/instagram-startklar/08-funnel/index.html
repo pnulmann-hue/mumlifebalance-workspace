@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Startklar · Mailstrecke kopieren</title>
+<style>
+  :root{--petrol:#12828c;--dunkel:#29556d;--nacht:#0c1c30;--creme:#f1ecdd;
+        --orange:#dc822e;--linie:#e2dccb}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--creme);color:var(--nacht);
+       font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+       padding:28px 16px 60px}
+  .huelle{max-width:920px;margin:0 auto}
+  h1{font-family:Georgia,serif;font-size:27px;margin:0 0 6px;color:var(--dunkel)}
+  .unter{margin:0 0 24px;color:#6d6455}
+  .karte{background:#fff;border:1px solid var(--linie);border-radius:14px;
+         padding:20px 22px;margin-bottom:16px}
+  .kopf{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;margin-bottom:8px}
+  .tag{background:var(--petrol);color:#fff;font-size:12px;font-weight:700;
+       letter-spacing:1px;text-transform:uppercase;padding:4px 12px;border-radius:14px}
+  .warten{font-size:13px;color:#8a8070}
+  h2{font-family:Georgia,serif;font-size:19px;margin:0;color:var(--dunkel)}
+  .betreff{margin:2px 0 14px;font-size:15px;color:#6d6455}
+  .betreff b{color:var(--nacht)}
+  .knoepfe{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  button,a.knopf{font:inherit;font-size:14px;font-weight:700;border:0;border-radius:22px;
+         padding:9px 18px;cursor:pointer;background:var(--orange);color:#fff;
+         text-decoration:none;display:inline-block}
+  button.still,a.knopf.still{background:#fff;color:var(--petrol);
+         border:2px solid var(--petrol);padding:7px 16px}
+  .meldung{font-size:13px;color:var(--petrol);font-weight:700;min-height:1.3em}
+  .warnung{background:#fdf4e9;border-left:4px solid var(--orange);
+           border-radius:0 10px 10px 0;padding:14px 18px;margin:0 0 22px;font-size:15px}
+  details{margin-top:16px}
+  summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--petrol);
+          letter-spacing:1px;text-transform:uppercase;padding:6px 0;
+          list-style:none;user-select:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"▾  ";font-size:11px}
+  details:not([open]) summary::before{content:"▸  "}
+  iframe{width:100%;height:600px;border:1px solid var(--linie);border-radius:12px;
+         background:#fff;margin-top:8px;display:block}
+  @media (max-width:700px){ iframe{height:460px} }
+</style>
+</head>
+<body>
+<div class="huelle">
+  <h1>Mailstrecke · Startklar</h1>
+  <p class="unter">Sieben Mails vom Kauf bis zur Übergabe an die Engine. Kopieren, in ActiveCampaign einen HTML-Block einfügen, einsetzen. Die Vorschau unter jeder Karte ist genau das, was ankommt &mdash; %FIRSTNAME% füllt dein Mailprogramm beim Versand.</p>
+
+  <div class="warnung">
+    <b>Beim Einrichten:</b> Die Wartezeit steht bei jeder Mail und zählt
+    <b>ab der vorigen Mail</b>, nicht ab Kauf. Wer an Tag 12 oder 15 kauft, soll aussteigen —
+    dafür in ActiveCampaign ein Ziel auf den Kauf-Tag der Kundenmaschine setzen.
+  </div>
+
+  <div class="karte">
+    <div class="kopf">
+      <span class="tag">Tag 0</span>
+      <h2>Dein Zugang steht</h2>
+      <span class="warten">sofort nach dem Kauf</span>
+    </div>
+    <p class="betreff"><b>Betreff:</b> Startklar — dein Zugang steht</p>
+    <div class="knoepfe">
+      <button data-tun="ganz" data-id="mail00auslieferunghtml" data-datei="mail-00-auslieferung.html">Ganzes HTML</button>
+      <button class="still" data-tun="teil" data-id="mail00auslieferunghtml" data-datei="mail-00-auslieferung.html">Nur Inhalt</button>
+      <button class="still" data-tun="betreff" data-id="mail00auslieferunghtml" data-wert="Startklar — dein Zugang steht">Betreff</button>
+      <a class="knopf still" href="mail-00-auslieferung.html" target="_blank" rel="noopener">Gross ansehen</a>
+      <span class="meldung" id="meldung-mail00auslieferunghtml"></span>
+    </div>
+    <details open>
+      <summary>So sieht sie aus</summary>
+      <iframe loading="lazy" src="mail-00-auslieferung.html" title="Vorschau: Startklar — dein Zugang steht"></iframe>
+    </details>
+  </div>
+
+  <div class="karte">
+    <div class="kopf">
+      <span class="tag">Tag 2</span>
+      <h2>Eine Station reicht für heute</h2>
+      <span class="warten">2 Tage warten</span>
+    </div>
+    <p class="betreff"><b>Betreff:</b> Liegt der Kurs noch offen in einem Tab?</p>
+    <div class="knoepfe">
+      <button data-tun="ganz" data-id="mail02biohtml" data-datei="mail-02-bio.html">Ganzes HTML</button>
+      <button class="still" data-tun="teil" data-id="mail02biohtml" data-datei="mail-02-bio.html">Nur Inhalt</button>
+      <button class="still" data-tun="betreff" data-id="mail02biohtml" data-wert="Liegt der Kurs noch offen in einem Tab?">Betreff</button>
+      <a class="knopf still" href="mail-02-bio.html" target="_blank" rel="noopener">Gross ansehen</a>
+      <span class="meldung" id="meldung-mail02biohtml"></span>
+    </div>
+    <details open>
+      <summary>So sieht sie aus</summary>
+      <iframe loading="lazy" src="mail-02-bio.html" title="Vorschau: Liegt der Kurs noch offen in einem Tab?"></iframe>
+    </details>
+  </div>
+
+  <div class="karte">
+    <div class="kopf">
+      <span class="tag">Tag 4</span>
+      <h2>Deine erste Zeile macht fast alles</h2>
+      <span class="warten">2 Tage warten</span>
+    </div>
+    <p class="betreff"><b>Betreff:</b> Ich habs bei mir nachgemessen: 2,6-mal</p>
+    <div class="knoepfe">
+      <button data-tun="ganz" data-id="mail04dertipphtml" data-datei="mail-04-der-tipp.html">Ganzes HTML</button>
+      <button class="still" data-tun="teil" data-id="mail04dertipphtml" data-datei="mail-04-der-tipp.html">Nur Inhalt</button>
+      <button class="still" data-tun="betreff" data-id="mail04dertipphtml" data-wert="Ich habs bei mir nachgemessen: 2,6-mal">Betreff</button>
+      <a class="knopf still" href="mail-04-der-tipp.html" target="_blank" rel="noopener">Gross ansehen</a>
+      <span class="meldung" id="meldung-mail04dertipphtml"></span>
+    </div>
+    <details open>
+      <summary>So sieht sie aus</summary>
+      <iframe loading="lazy" src="mail-04-der-tipp.html" title="Vorschau: Ich habs bei mir nachgemessen: 2,6-mal"></iframe>
+    </details>
+  </div>
+
+  <div class="karte">
+    <div class="kopf">
+      <span class="tag">Tag 6</span>
+      <h2>Sieben Sekunden reichen</h2>
+      <span class="warten">2 Tage warten</span>
+    </div>
+    <p class="betreff"><b>Betreff:</b> Dein erstes Reel wird schlecht. Poste es trotzdem.</p>
+    <div class="knoepfe">
+      <button data-tun="ganz" data-id="mail06erstesreelhtml" data-datei="mail-06-erstes-reel.html">Ganzes HTML</button>
+      <button class="still" data-tun="teil" data-id="mail06erstesreelhtml" data-datei="mail-06-erstes-reel.html">Nur Inhalt</button>
+      <button class="still" data-tun="betreff" data-id="mail06erstesreelhtml" data-wert="Dein erstes Reel wird schlecht. Poste es trotzdem.">Betreff</button>
+      <a class="knopf still" href="mail-06-erstes-reel.html" target="_blank" rel="noopener">Gross ansehen</a>
+      <span class="meldung" id="meldung-mail06erstesreelhtml"></span>
+    </div>
+    <details open>
+      <summary>So sieht sie aus</summary>
+      <iframe loading="lazy" src="mail-06-erstes-reel.html" title="Vorschau: Dein erstes Reel wird schlecht. Poste es trotzdem."></iframe>
+    </details>
+  </div>
+
+  <div class="karte">
+    <div class="kopf">
+      <span class="tag">Tag 9</span>
+      <h2>Was ging nachher, was vorher nicht ging?</h2>
+      <span class="warten">3 Tage warten</span>
+    </div>
+    <p class="betreff"><b>Betreff:</b> Eine Frage an dich (dauert zwei Minuten)</p>
+    <div class="knoepfe">
+      <button data-tun="ganz" data-id="mail09rueckmeldunghtml" data-datei="mail-09-rueckmeldung.html">Ganzes HTML</button>
+      <button class="still" data-tun="teil" data-id="mail09rueckmeldunghtml" data-datei="mail-09-rueckmeldung.html">Nur Inhalt</button>
+      <button class="still" data-tun="betreff" data-id="mail09rueckmeldunghtml" data-wert="Eine Frage an dich (dauert zwei Minuten)">Betreff</button>
+      <a class="knopf still" href="mail-09-rueckmeldung.html" target="_blank" rel="noopener">Gross ansehen</a>
+      <span class="meldung" id="meldung-mail09rueckmeldunghtml"></span>
+    </div>
+    <details open>
+      <summary>So sieht sie aus</summary>
+      <iframe loading="lazy" src="mail-09-rueckmeldung.html" title="Vorschau: Eine Frage an dich (dauert zwei Minuten)"></iframe>
+    </details>
+  </div>
+
+  <div class="karte">
+    <div class="kopf">
+      <span class="tag">Tag 12</span>
+      <h2>Dein Profil steht. Und jetzt?</h2>
+      <span class="warten">3 Tage warten</span>
+    </div>
+    <p class="betreff"><b>Betreff:</b> Dein Profil steht. Und jetzt passiert nichts.</p>
+    <div class="knoepfe">
+      <button data-tun="ganz" data-id="mail12kundenmaschinehtml" data-datei="mail-12-kundenmaschine.html">Ganzes HTML</button>
+      <button class="still" data-tun="teil" data-id="mail12kundenmaschinehtml" data-datei="mail-12-kundenmaschine.html">Nur Inhalt</button>
+      <button class="still" data-tun="betreff" data-id="mail12kundenmaschinehtml" data-wert="Dein Profil steht. Und jetzt passiert nichts.">Betreff</button>
+      <a class="knopf still" href="mail-12-kundenmaschine.html" target="_blank" rel="noopener">Gross ansehen</a>
+      <span class="meldung" id="meldung-mail12kundenmaschinehtml"></span>
+    </div>
+    <details open>
+      <summary>So sieht sie aus</summary>
+      <iframe loading="lazy" src="mail-12-kundenmaschine.html" title="Vorschau: Dein Profil steht. Und jetzt passiert nichts."></iframe>
+    </details>
+  </div>
+
+  <div class="karte">
+    <div class="kopf">
+      <span class="tag">Tag 15</span>
+      <h2>„Ich bin noch nicht so weit"</h2>
+      <span class="warten">3 Tage warten</span>
+    </div>
+    <p class="betreff"><b>Betreff:</b> „Ich bin doch noch gar nicht so weit"</p>
+    <div class="knoepfe">
+      <button data-tun="ganz" data-id="mail15einwandhtml" data-datei="mail-15-einwand.html">Ganzes HTML</button>
+      <button class="still" data-tun="teil" data-id="mail15einwandhtml" data-datei="mail-15-einwand.html">Nur Inhalt</button>
+      <button class="still" data-tun="betreff" data-id="mail15einwandhtml" data-wert="„Ich bin doch noch gar nicht so weit&quot;">Betreff</button>
+      <a class="knopf still" href="mail-15-einwand.html" target="_blank" rel="noopener">Gross ansehen</a>
+      <span class="meldung" id="meldung-mail15einwandhtml"></span>
+    </div>
+    <details open>
+      <summary>So sieht sie aus</summary>
+      <iframe loading="lazy" src="mail-15-einwand.html" title="Vorschau: „Ich bin doch noch gar nicht so weit&quot;"></iframe>
+    </details>
+  </div>
+
+
+  <div class="karte">
+    <h2>Und danach: ab in die Engine</h2>
+    <p class="betreff">Fünf Tage nach der letzten Mail den Tag setzen, der <b>Automation 72</b>
+    („Automation 0€ Produkt", Loop 1) auslöst. Dort bekommt sie „Finde dein Thema" für 39
+    angeboten, und danach läuft die Kaskade weiter.</p>
+    <p class="betreff"><b>Loop 6 bleibt an.</b> Das ist der Kundenmaschinen-Pitch für 333,
+    den sie an Tag 12 schon bekommen hat — er kommt aber erst nach den Loops 1 bis 5, also
+    <b>gut zwei Monate später</b>, mit fünf Mehrwert-Mails davor und einem anderen Einstieg.
+    Das ist kein Doppel-Pitch, sondern ein zweiter Anlauf in einer anderen Lebenslage.
+    Wer inzwischen gekauft hat, steigt über das Ziel „Instagram-Kundenmaschine schon da"
+    von selbst aus.</p>
+  </div>
+</div>
+
+<script>
+"use strict";
+var geladen = {};
+
+function sagen(id, text){
+  var m = document.getElementById("meldung-" + id);
+  m.textContent = text;
+  clearTimeout(m.uhr);
+  m.uhr = setTimeout(function(){ m.textContent = ""; }, 2600);
+}
+
+function ohneKommentar(t){
+  return t.replace(/<!--\s*\n\s*NACHKAUF-STRECKE[\s\S]*?-->\s*/, "");
+}
+function nurInhalt(t){
+  var von = t.indexOf("<body"), bis = t.lastIndexOf("</body>");
+  if (von === -1 || bis === -1) return t;
+  return t.slice(t.indexOf(">", von) + 1, bis).trim();
+}
+
+async function holen(datei){
+  if (!geladen[datei]) geladen[datei] = await (await fetch(datei)).text();
+  return geladen[datei];
+}
+
+async function kopieren(text, id, was){
+  try {
+    await navigator.clipboard.writeText(text);
+    sagen(id, "\u2713 " + was + " kopiert");
+  } catch (e) {
+    var f = document.createElement("textarea");
+    f.value = text; f.style.position = "fixed"; f.style.opacity = "0";
+    document.body.appendChild(f); f.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e2) {}
+    f.remove();
+    sagen(id, ok ? "\u2713 " + was + " kopiert" : "Ging nicht — markier den Text von Hand.");
+  }
+}
+
+document.querySelectorAll("[data-tun]").forEach(function(b){
+  b.addEventListener("click", async function(){
+    var id = b.dataset.id, datei = b.dataset.datei, tun = b.dataset.tun;
+    if (tun === "betreff") return kopieren(b.dataset.wert, id, "Betreff");
+    var roh = ohneKommentar(await holen(datei));
+    kopieren(tun === "ganz" ? roh : nurInhalt(roh), id,
+             tun === "ganz" ? "Ganzes HTML" : "Inhalt");
+  });
+});
+</script>
+</body>
+</html>

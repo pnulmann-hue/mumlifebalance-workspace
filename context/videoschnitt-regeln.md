@@ -65,6 +65,64 @@ entscheide ich.
 
 ---
 
+## 4b · Rhythmus und Ton
+
+Eingearbeitet aus der Analyse von @alinascreatorclub (Sept. 2026) — ihre CapCut-
+Bibliotheksnamen nützen uns nichts, aber die **Logik dahinter** ist übertragbar.
+Unsere Sounds baut `textebene.py` selbst mit ffmpeg, damit keine Lizenzfrage entsteht.
+
+### Der Grundsatz
+**Ein Ton sitzt auf dem Moment, in dem sich im Bild etwas ändert — nie flächig
+darüber.** Wenn ein Ton nicht sagen kann, zu welchem sichtbaren Ereignis er gehört,
+gehört er nicht ins Video.
+
+### Wann welcher Ton
+
+| Was im Bild passiert | Ton | Wie er klingt |
+|---|---|---|
+| ein Wort oder eine Einblendung **poppt auf** | `pop` | kurzer runder Ton, 0.14 s |
+| **Schnitt oder harter Zoom-Sprung** | `klick` | trockener Klick, 0.06 s |
+| **weicher Übergang**, Schiebe-Bewegung | `whoosh` | Rauschbogen, 0.45 s |
+| **Zahl, Punkt, Ergebnis** steht fest | `ding` | heller Ton, 0.60 s |
+| **der Hook** in der ersten Sekunde | `klick` **oder gar nichts** | siehe unten |
+
+**Charakter muss passen:** ein mechanischer Übergang bekommt einen mechanischen Ton,
+ein weicher einen weichen. Pauschal auf alles denselben Whoosh zu legen ist genau der
+Vorlagen-Effekt, den wir bei den Animationen auch vermeiden.
+
+### Rhythmus
+
+- **Untertitel:** ein bis zwei Wörter je Einblendung, also rund alle **0.6–0.8 s** ein
+  Wechsel. Das macht `textebene.py` bereits wortgenau.
+- **Bild- oder Perspektivwechsel alle 3–4 s.** Bei einem Sprechreel heisst das:
+  Zoom-Sprung, eingeschobenes Bild oder ein B-Roll-Ausschnitt. Steht 8 Sekunden lang
+  dasselbe Bild, steigen die Leute aus.
+- **Jeder sichtbare Schnitt trägt einen Ton.** Ein Schnitt ohne Ton wirkt wie ein
+  Fehler, kein Gestaltungsmittel.
+- **Der Schnitt liegt auf der Sprechpause**, nie mitten im Wort — steht schon in
+  Abschnitt 4 und bleibt die härtere Regel.
+
+### 🚨 Die Grenzen — und die sind wichtiger als die Tabelle
+
+**Auf Instagram läuft die Hälfte der Reels stumm oder mit fremder Musik drüber.** Ein
+Sounddesign, das nur mit Ton funktioniert, ist an diesen Zuschauerinnen verlorene
+Arbeit. Deshalb:
+
+1. **Kein Ton auf B-Roll.** Patricia legt dort in der App die Musik drüber und postet
+   selbst — unsere Effekte würden entweder überdeckt oder stören.
+2. **Töne nur bei Sprechreels**, wo ihre Stimme läuft und keine laute Musik.
+3. **Sparsam.** Höchstens ein Ton alle zwei bis drei Sekunden. Ein Reel, in dem es
+   dauernd klickt und ploppt, klingt nach Vorlage — und das ist das Gegenteil von
+   nahbar.
+4. **Das Video muss ohne Ton funktionieren.** Erst prüfen, ob es stumm verständlich
+   ist; der Ton ist die Zugabe, nie der Träger.
+
+### Nicht übernommen
+Ihre Schriftkombinationen (Bebas Neue, Times New Roman, Allura …) bleiben draussen —
+Patricias Marke ist **Philosopher + Source Sans 3**, und daran wird nicht gerüttelt.
+
+---
+
 ## 5 · Was ich zurückbekomme
 
 1. **`rohschnitt.mp4`** — alles hintereinander, zum Anschauen und Prüfen
