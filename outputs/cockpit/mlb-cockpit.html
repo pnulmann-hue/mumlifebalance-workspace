@@ -2545,8 +2545,13 @@
       var d = new Date(start.getTime());
       d.setDate(d.getDate() + i);
       var wt = (d.getDay() + 6) % 7;          // 0 = Montag
-      if (wt > 4) continue;                    // Wochenende: kein Feed-Platz
-      if (b.art !== "storys" && WOCHENRHYTHMUS[wt] !== b.art) continue;
+      /* 🚨 Das Wochenende ist NICHT gesperrt. Patricia am 25.09.2026:
+         „wenn ich am sonntag einplane, soll er am sonntag raus." Der
+         Mo-Fr-Rhythmus ist ihre Planungsgewohnheit, kein Verbot — und ein
+         Vorschlag, der ihr gesetztes Datum wegschiebt, ist eine Bevormundung.
+         Am Wochenende passt jedes Format, weil WOCHENRHYTHMUS nur fuenf
+         Eintraege hat. */
+      if (wt <= 4 && b.art !== "storys" && WOCHENRHYTHMUS[wt] !== b.art) continue;
       var iso = d.getFullYear() + "-" +
         String(d.getMonth() + 1).padStart(2, "0") + "-" +
         String(d.getDate()).padStart(2, "0");
