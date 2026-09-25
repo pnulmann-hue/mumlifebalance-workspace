@@ -22,8 +22,9 @@ Aus `outputs/produkte/ki-treppe/01-produkttreppe.md`, Stufe 1:
   erster Text, den sie so posten würde
 - **Brücke am Schluss:** „Das war einer. Die Arbeit, die du jede Woche wieder machst,
   geht genauso.“ → Warteliste bzw. ab 5.10. Verkaufsseite des KI-Kurses
-- **Stichwort:** `STIMME` (im Plan) — 🚨 im Launch-Kalender ist `MITARBEITERIN` das
-  Launch-Stichwort. Zwei Stichwörter oder eins entscheiden, bevor ManyChat gebaut wird.
+- **Stichwort:** `STIMME` — **das einzige Stichwort des ganzen KI-Launches** (Patricias
+  Entscheid 25.09.). `MITARBEITERIN` aus dem Launch-Kalender fällt weg. Feed-Lead-Posts
+  → `STIMME` → Stimm-Check → Brücke zum KI-Kurs. Storys und Mails verlinken direkt.
 
 ## Vorlage zum Nachbauen
 

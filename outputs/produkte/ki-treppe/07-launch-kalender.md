@@ -12,6 +12,11 @@ tags: [produkt, ki, launch]
 
 ---
 
+> 🔁 **Entscheid 25.09.2026:** Das Feed-Stichwort ist **`STIMME`** statt `MITARBEITERIN`.
+> Es führt zum 0€-Stimm-Check (Bau: `plans/2026-09-25-stimm-check-bauen.md`), der mit der
+> Brücke zum Kurs endet. Storys und Mails verlinken direkt. Überall unten, wo
+> `MITARBEITERIN` steht, gilt `STIMME`. Termine im Cockpit-Jahresplan (`jp-ki-*`).
+
 ## 🟦 Zwei Regeln, die über allem stehen
 
 ### 1 · „In der MBA ist der Kurs gratis dabei“ — immer wieder
