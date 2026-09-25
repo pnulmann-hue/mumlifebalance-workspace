@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magnet-Ich · Mailstrecke kopieren</title>
+<style>
+  :root{--petrol:#12828c;--dunkel:#29556d;--nacht:#0c1c30;--creme:#f1ecdd;
+        --orange:#dc822e;--linie:#e2dccb}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--creme);color:var(--nacht);
+       font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+       padding:28px 16px 60px}
+  .huelle{max-width:920px;margin:0 auto}
+  h1{font-family:Georgia,serif;font-size:27px;margin:0 0 6px;color:var(--dunkel)}
+  .unter{margin:0 0 24px;color:#6d6455}
+  .karte{background:#fff;border:1px solid var(--linie);border-radius:14px;
+         padding:20px 22px;margin-bottom:16px}
+  .kopf{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;margin-bottom:8px}
+  .tag{background:var(--petrol);color:#fff;font-size:12px;font-weight:700;
+       letter-spacing:1px;text-transform:uppercase;padding:4px 12px;border-radius:14px}
+  .warten{font-size:13px;color:#8a8070}
+  h2{font-family:Georgia,serif;font-size:19px;margin:0;color:var(--dunkel)}
+  .betreff{margin:2px 0 14px;font-size:15px;color:#6d6455}
+  .betreff b{color:var(--nacht)}
+  .knoepfe{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  button,a.knopf{font:inherit;font-size:14px;font-weight:700;border:0;border-radius:22px;
+         padding:9px 18px;cursor:pointer;background:var(--orange);color:#fff;
+         text-decoration:none;display:inline-block}
+  button.still,a.knopf.still{background:#fff;color:var(--petrol);
+         border:2px solid var(--petrol);padding:7px 16px}
+  .meldung{font-size:13px;color:var(--petrol);font-weight:700;min-height:1.3em}
+  .warnung{background:#fdf4e9;border-left:4px solid var(--orange);
+           border-radius:0 10px 10px 0;padding:14px 18px;margin:0 0 22px;font-size:15px}
+  details{margin-top:16px}
+  summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--petrol);
+          letter-spacing:1px;text-transform:uppercase;padding:6px 0;
+          list-style:none;user-select:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"▾  ";font-size:11px}
+  details:not([open]) summary::before{content:"▸  "}
+  iframe{width:100%;height:600px;border:1px solid var(--linie);border-radius:12px;
+         background:#fff;margin-top:8px;display:block}
+  @media (max-width:700px){ iframe{height:460px} }
+</style>
+</head>
+<body>
+<div class="huelle">
+  <h1>Mailstrecke · Magnet-Ich</h1>
+  <p class="unter">Sieben Mails vom Kauf bis zur Übergabe an die Engine. Kopieren, in ActiveCampaign einen HTML-Block einfügen, einsetzen. Die Vorschau unter jeder Karte ist genau das, was ankommt &mdash; %FIRSTNAME% füllt dein Mailprogramm beim Versand.</p>
+
+  <div class="warnung">
+    <b>Beim Einrichten:</b> Die Wartezeit steht bei jeder Mail und zählt
+    <b>ab der vorigen Mail</b>, nicht ab Kauf. Wer an Tag 12 oder 15 kauft, soll aussteigen —
+    dafür in ActiveCampaign ein Ziel auf den Kauf-Tag der Kundenmaschine setzen.
+  </div>
+
+  <div class="karte">
+    <div class="kopf">
+      <span class="tag">Tag 0</span>
+      <h2>Schön, dass du dabei bist!</h2>
+      <span class="warten">sofort nach dem Kauf</span>
+    </div>
+    <p class="betreff"><b>Betreff:</b> Willkommen im Magnet-Ich — so geht es jetzt weiter</p>
+    <div class="knoepfe">
+      <button data-tun="ganz" data-id="mail00willkommenhtml" data-datei="mail-00-willkommen.html">Ganzes HTML</button>
+      <button class="still" data-tun="teil" data-id="mail00willkommenhtml" data-datei="mail-00-willkommen.html">Nur Inhalt</button>
+      <button class="still" data-tun="betreff" data-id="mail00willkommenhtml" data-wert="Willkommen im Magnet-Ich — so geht es jetzt weiter">Betreff</button>
+      <a class="knopf still" href="mail-00-willkommen.html" target="_blank" rel="noopener">Gross ansehen</a>
+      <span class="meldung" id="meldung-mail00willkommenhtml"></span>
+    </div>
+    <details open>
+      <summary>So sieht sie aus</summary>
+      <iframe loading="lazy" src="mail-00-willkommen.html" title="Vorschau: Willkommen im Magnet-Ich — so geht es jetzt weiter"></iframe>
+    </details>
+  </div>
+
+  <div class="karte">
+    <div class="kopf">
+      <span class="tag">Tag 3</span>
+      <h2>Eine Viertelstunde für dich</h2>
+      <span class="warten">+3 Tage</span>
+    </div>
+    <p class="betreff"><b>Betreff:</b> Hast du deine neun Fragen schon beantwortet?</p>
+    <div class="knoepfe">
+      <button data-tun="ganz" data-id="mail03vorbereitunghtml" data-datei="mail-03-vorbereitung.html">Ganzes HTML</button>
+      <button class="still" data-tun="teil" data-id="mail03vorbereitunghtml" data-datei="mail-03-vorbereitung.html">Nur Inhalt</button>
+      <button class="still" data-tun="betreff" data-id="mail03vorbereitunghtml" data-wert="Hast du deine neun Fragen schon beantwortet?">Betreff</button>
+      <a class="knopf still" href="mail-03-vorbereitung.html" target="_blank" rel="noopener">Gross ansehen</a>
+      <span class="meldung" id="meldung-mail03vorbereitunghtml"></span>
+    </div>
+    <details open>
+      <summary>So sieht sie aus</summary>
+      <iframe loading="lazy" src="mail-03-vorbereitung.html" title="Vorschau: Hast du deine neun Fragen schon beantwortet?"></iframe>
+    </details>
+  </div>
+
+
+  <div class="karte">
+    <h2>Und danach: ab in die Engine</h2>
+    <p class="betreff">Fünf Tage nach der letzten Mail den Tag setzen, der <b>Automation 72</b>
+    („Automation 0€ Produkt", Loop 1) auslöst. Dort bekommt sie „Finde dein Thema" für 39
+    angeboten, und danach läuft die Kaskade weiter.</p>
+    <p class="betreff"><b>Loop 6 bleibt an.</b> Das ist der Kundenmaschinen-Pitch für 333,
+    den sie an Tag 12 schon bekommen hat — er kommt aber erst nach den Loops 1 bis 5, also
+    <b>gut zwei Monate später</b>, mit fünf Mehrwert-Mails davor und einem anderen Einstieg.
+    Das ist kein Doppel-Pitch, sondern ein zweiter Anlauf in einer anderen Lebenslage.
+    Wer inzwischen gekauft hat, steigt über das Ziel „Instagram-Kundenmaschine schon da"
+    von selbst aus.</p>
+  </div>
+</div>
+
+<script>
+"use strict";
+var geladen = {};
+
+function sagen(id, text){
+  var m = document.getElementById("meldung-" + id);
+  m.textContent = text;
+  clearTimeout(m.uhr);
+  m.uhr = setTimeout(function(){ m.textContent = ""; }, 2600);
+}
+
+function ohneKommentar(t){
+  return t.replace(/<!--\s*\n\s*NACHKAUF-STRECKE[\s\S]*?-->\s*/, "");
+}
+function nurInhalt(t){
+  var von = t.indexOf("<body"), bis = t.lastIndexOf("</body>");
+  if (von === -1 || bis === -1) return t;
+  return t.slice(t.indexOf(">", von) + 1, bis).trim();
+}
+
+async function holen(datei){
+  if (!geladen[datei]) geladen[datei] = await (await fetch(datei)).text();
+  return geladen[datei];
+}
+
+async function kopieren(text, id, was){
+  try {
+    await navigator.clipboard.writeText(text);
+    sagen(id, "\u2713 " + was + " kopiert");
+  } catch (e) {
+    var f = document.createElement("textarea");
+    f.value = text; f.style.position = "fixed"; f.style.opacity = "0";
+    document.body.appendChild(f); f.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e2) {}
+    f.remove();
+    sagen(id, ok ? "\u2713 " + was + " kopiert" : "Ging nicht — markier den Text von Hand.");
+  }
+}
+
+document.querySelectorAll("[data-tun]").forEach(function(b){
+  b.addEventListener("click", async function(){
+    var id = b.dataset.id, datei = b.dataset.datei, tun = b.dataset.tun;
+    if (tun === "betreff") return kopieren(b.dataset.wert, id, "Betreff");
+    var roh = ohneKommentar(await holen(datei));
+    kopieren(tun === "ganz" ? roh : nurInhalt(roh), id,
+             tun === "ganz" ? "Ganzes HTML" : "Inhalt");
+  });
+});
+</script>
+</body>
+</html>
