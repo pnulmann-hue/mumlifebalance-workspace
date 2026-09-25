@@ -374,6 +374,57 @@
   .wissen-grid textarea { width: 100%; min-height: 120px; resize: vertical; background: var(--ground); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 1.5; }
   .wissen-grid textarea:focus { border-color: var(--teal); outline: none; }
 
+  /* ---------- Funnel-Uebersicht je Keyword (25.09.2026) ---------- */
+  .fnkarte { margin-bottom: 10px; padding: 0; }
+  .fnkarte > summary {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    padding: 13px 16px; cursor: pointer; list-style: none;
+  }
+  .fnkarte > summary::-webkit-details-marker { display: none; }
+  .fnkarte > summary::before {
+    content: "\25b6"; font-size: 9px; color: var(--ink-soft);
+    transition: transform 0.15s ease;
+  }
+  .fnkarte[open] > summary::before { transform: rotate(90deg); }
+  .fnkw {
+    font-family: var(--display); font-size: 16px; letter-spacing: 0.04em;
+    background: var(--teal-soft); color: var(--teal);
+    padding: 2px 11px; border-radius: 999px;
+  }
+  .fnfreebie { font-size: 14px; }
+  .fnzahl { font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  .fnangebot { font-size: 12px; color: var(--ink-soft); }
+  .fnposts { margin-left: auto; font-size: 12px; color: var(--ink-soft); }
+  .fnposts.keine { color: var(--crit); font-weight: 600; }
+  .fnreich { font-size: 12px; color: var(--good); font-variant-numeric: tabular-nums; }
+  .fnleer { border-left: 3px solid var(--crit); }
+  .fnkoerper { padding: 0 16px 14px; border-top: 1px solid var(--line); }
+  .fnblock { margin-top: 13px; }
+  .fnblock h4 {
+    margin: 0 0 6px; font-size: 10px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--ink-soft); font-weight: normal;
+  }
+  .fntags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .fntag {
+    font-size: 12px; background: var(--surface-2); border-radius: 999px;
+    padding: 3px 10px;
+  }
+  .fntag b { font-variant-numeric: tabular-nums; }
+  .fntag.null { opacity: 0.5; }
+  .fnpost {
+    display: grid; grid-template-columns: 86px 1fr 110px auto; gap: 10px;
+    align-items: baseline; padding: 5px 0; border-top: 1px solid var(--line);
+    font-size: 13px;
+  }
+  .fnpost:first-child { border-top: 0; }
+  .fnpdat { font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  .fnptext { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .fnpreach { font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  @media (max-width: 760px) {
+    .fnpost { grid-template-columns: 1fr auto; }
+    .fnptext { grid-column: 1 / -1; white-space: normal; }
+  }
+
   /* ---------- Funnel-Ketten ---------- */
   .chain { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; margin-bottom: 12px; }
   .chain-top { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
@@ -5397,7 +5448,153 @@
     return FUNNEL_STEPS.filter(function (st) { return !String(f[st.k] || "").trim(); }).map(function (st) { return st.l; });
   }
 
+  /* Der Funnel-Reiter: je Keyword die ganze Kette vom Instagram-Stichwort bis
+     zu den Beitraegen, die es spielen. Siehe Kopf von
+     patch-funnel-uebersicht.py. */
+  function renderFunnelUebersicht(main) {
+    var items = (state.funnel || []).slice();
+    var stand = funnelStand();
+    var leer = items.filter(function (f) {
+      return !(f.posts_geplant || []).length && !(f.posts_gepostet || []).length;
+    });
+    /* 🚨 Zwei verschiedene Befunde, nicht einer: „Tag angelegt, niemand drin"
+       heisst, die Automation läuft und keine trägt sich ein. „Kein Tag
+       gefunden" heisst, ich konnte keinen zuordnen — das ist eine Frage an
+       mich, kein Befund über den Funnel. In eine Zahl gemischt wäre die Zahl
+       grösser als das Problem. */
+    var tagLeer = items.filter(function (f) { return f.tag_kontakte === 0; });
+    var ohneTag = items.filter(function (f) { return f.tag_kontakte == null; });
+
+    main.innerHTML =
+      '<div class="page-head"><div><h1>Funnel &amp; Keywords</h1>' +
+      '<p>Je Zeile ein Instagram-Stichwort: was sie dafür bekommt, wie viele den ' +
+      'Tag tragen, was danach kommt — und welche Beiträge das Wort überhaupt ' +
+      'spielen.</p></div>' +
+      (stand ? '<div class="head-actions"><span class="note">Stand ' +
+        esc(fmtDate(stand)) + '</span></div>' : "") + '</div>' +
+      '<div class="tiles">' +
+      tile("Stichwörter", items.length, "mit Automation dahinter") +
+      tile("Läuft leer", leer.length,
+           leer.length ? "kein Beitrag nennt das Wort" : "jedes wird gespielt") +
+      tile("Niemand drin", tagLeer.length, "Tag angelegt, 0 Kontakte") +
+      tile("Ohne Tag", ohneTag.length, "keiner zugeordnet — nachsehen") +
+      '</div>' +
+      (leer.length ? '<div class="panel warn"><strong>' + leer.length +
+        ' Stichwörter laufen leer:</strong> ' +
+        esc(leer.map(function (f) { return f.keyword; }).join(" · ")) +
+        '. Die Automation steht, der Tag ist angelegt — aber kein einziger ' +
+        'Beitrag nennt das Wort. Solange das so ist, kommt dort niemand rein.' +
+        '</div>' : "") +
+      '<div id="fnliste"></div>';
+
+    var box = main.querySelector("#fnliste");
+    if (!items.length) {
+      box.innerHTML = '<div class="panel"><div class="empty">Noch nichts da. ' +
+        '<code>python scripts/cockpit/funnel-uebersicht-bauen.py</code></div></div>';
+      return;
+    }
+
+    items.forEach(function (f) {
+      var gpl = f.posts_geplant || [], gps = f.posts_gepostet || [];
+      var k = document.createElement("details");
+      k.className = "panel fnkarte" + (!gpl.length && !gps.length ? " fnleer" : "");
+      var kontakte = f.tag_kontakte;
+
+      k.innerHTML =
+        '<summary class="fnkopf">' +
+          '<span class="fnkw">' + esc(f.keyword || "—") + '</span>' +
+          '<span class="fnfreebie">' + esc(f.freebie || "—") + '</span>' +
+          '<span class="fnzahl" title="Kontakte mit diesem Tag">' +
+            (kontakte == null ? "kein Tag" : kontakte + " im Tag") + '</span>' +
+          (f.angebot ? '<span class="fnangebot">→ ' + esc(f.angebot) +
+            (f.preis ? " · " + f.preis : "") + '</span>' : "") +
+          '<span class="fnposts' + (!gpl.length && !gps.length ? " keine" : "") + '">' +
+            gps.length + ' raus · ' + gpl.length + ' geplant</span>' +
+          (f.reichweite_summe ? '<span class="fnreich">' + f.reichweite_summe +
+            ' erreicht</span>' : "") +
+        '</summary>' +
+        '<div class="fnkoerper"></div>';
+
+      var kb = k.querySelector(".fnkoerper");
+      function block(titel, inhalt) {
+        if (!inhalt) return;
+        var d = document.createElement("div");
+        d.className = "fnblock";
+        d.innerHTML = '<h4>' + esc(titel) + '</h4>' + inhalt;
+        kb.appendChild(d);
+      }
+
+      /* 🚨 Alle Tag-Stufen, nicht nur die groesste — sonst sieht man nicht,
+         wo die Leute haengenbleiben. */
+      if ((f.alle_tags || []).length) {
+        block("Tags in ActiveCampaign", '<div class="fntags">' +
+          f.alle_tags.map(function (t) {
+            return '<span class="fntag' + (t.kontakte ? "" : " null") + '">' +
+              esc(t.tag) + ' <b>' + t.kontakte + '</b></span>';
+          }).join("") + '</div>');
+      }
+      if (f.liste) {
+        block("Liste", '<p class="note">' + esc(f.liste) + ' · ' +
+          (f.liste_kontakte == null ? "?" : f.liste_kontakte) + ' Kontakte</p>');
+      }
+      if (f.automation) {
+        block("Automation", '<p class="note">' + esc(f.automation) +
+          (f.automation_status ? ' · ' + esc(f.automation_status) : "") + '</p>');
+      }
+      if (f.checkout) {
+        block("Checkout", '<p class="note"><a href="' + esc(f.checkout) +
+          '" target="_blank" rel="noopener">' + esc(f.checkout) + '</a></p>');
+      }
+      if (gps.length) {
+        block("Schon draussen (" + gps.length + ")",
+          gps.map(function (p) {
+            return '<div class="fnpost"><span class="fnpdat">' +
+              esc(fmtDate(p.datum)) + '</span>' +
+              '<span class="fnptext">' + esc(p.anfang || "") + '</span>' +
+              '<span class="fnpreach">' + (p.reach == null ? "—" : p.reach) +
+              (p.rate != null ? ' · ' + p.rate + ' %' : "") + '</span>' +
+              (p.link ? '<a class="btn ghost" href="' + esc(p.link) +
+                '" target="_blank" rel="noopener">ansehen</a>' : "") + '</div>';
+          }).join(""));
+      }
+      if (gpl.length) {
+        block("Geplant (" + gpl.length + ")",
+          gpl.map(function (p) {
+            return '<div class="fnpost"><span class="fnpdat">' +
+              (p.datum ? esc(fmtDate(p.datum)) : "ohne Datum") + '</span>' +
+              '<span class="fnptext">' + esc(p.name || p.id) + '</span>' +
+              '<span class="fnpreach">' + esc(p.art || "") + '</span></div>';
+          }).join(""));
+      }
+      if (!gpl.length && !gps.length) {
+        block("Posts", '<p class="note">Kein Beitrag nennt „' +
+          esc(f.keyword) + '". Die Automation läuft leer — hier kommt niemand ' +
+          'rein, egal wie gut sie gebaut ist.</p>');
+      }
+      box.appendChild(k);
+    });
+  }
+
+  function funnelStand() {
+    /* 🚨 Die Ladeschleife nimmt vom Dokument NUR `items` — jedes andere Feld
+       fällt weg. Ein Stand-Datum auf Dokumentebene käme im Cockpit nie an und
+       die Zahlen stünden ohne Datum da, also als wären sie von heute. Deshalb
+       trägt jede Zeile ihren Stand mit. */
+    var e = (state.funnel || [])[0] || {};
+    return e.stand || "";
+  }
+
   function renderFunnel(main) {
+    // 🚨 Neue Ansicht, sobald die Daten aus funnel-uebersicht-bauen.py
+    // kommen (erkennbar am Feld `posts_geplant`). Sonst die alte Ketten-
+    // Ansicht, damit ein alter Datenstand nicht in eine leere Seite laeuft.
+    if ((state.funnel || []).some(function (f) { return f.posts_geplant; })) {
+      return renderFunnelUebersicht(main);
+    }
+    return renderFunnelKetten(main);
+  }
+
+  function renderFunnelKetten(main) {
     main.innerHTML =
       '<div class="page-head"><div><h1>Funnel & Keywords</h1>' +
       '<p>Jede Zeile ist eine Kette vom Einstieg bis zum Angebot. Was fehlt, wird rot markiert, damit du siehst, wo Leute reinkommen und dann versanden.</p></div>' +
