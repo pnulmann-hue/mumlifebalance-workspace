@@ -243,6 +243,8 @@ Ende der Live-Session.
 | Di 6.10. 19:00 | wer nicht gekauft hat | Noch zwölf Stunden | Secret Offer Ende |
 | Mi 7.10. 07:00 | Newsletter + Warteliste | Ab heute für alle | Frühbucherin |
 | Fr 9.10. 07:00 | nicht gekauft | „Ist das nicht viel zu technisch für mich?“ | Einwand |
+| **Mi 7.10. 19:00** | Newsletter + Warteliste | Am Dienstag zeig ich dir live, wie meine KI mitarbeitet | Masterclass-Anmeldung (neu 25.09.) |
+| **Fr 9.10. 19:00** | noch nicht angemeldet | Die Aufzeichnung bekommt nur, wer sich anmeldet | Masterclass-Anmeldung (neu 25.09.) |
 | Mo 12.10. 07:00 | Newsletter + Warteliste | Morgen Abend zeig ich dir alles live | Masterclass |
 | Di 13.10. 16:00 | Angemeldete | Heute um acht | Erinnerung |
 | Mi 14.10. 07:00 | Angemeldete | Die Aufzeichnung — und was nur bis morgen gilt | Replay · Bonus |
