@@ -86,133 +86,7 @@
     display: flex; flex-direction: column; gap: 22px;
     position: sticky; top: 0; height: 100vh; overflow-y: auto;
   }
-  /* ---------- Marke, Kopfbild, Luft (24.09.2026) ---------- */
-  .brandmark { padding: 4px 8px 2px; }
-  .brandmark .bm-logo { display: block; width: 100%; max-width: 176px; height: auto; }
-  .brandmark .bm-sub {
-    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
-    color: var(--ink-soft); margin-top: 8px; padding-left: 2px;
-  }
-  /* Das Kopfbild traegt die Startseite. Patricia sitzt links im Bild,
-     rechts ist Wasser - deshalb steht der Text rechts und das Bild wird
-     linksbuendig beschnitten. */
-  .hero {
-    position: relative; border-radius: 16px; overflow: hidden;
-    min-height: 210px; display: flex; align-items: flex-end;
-    margin-bottom: 26px; box-shadow: var(--shadow);
-    background: var(--surface-2);
-  }
-  .hero-bild {
-    position: absolute; inset: 0;
-    background-image: url("assets/s07.jpg");
-    background-size: cover; background-position: 46% 27%;
-  }
-  .hero-schleier {
-    position: absolute; inset: 0;
-    background: linear-gradient(100deg,
-      rgba(12,28,48,0.00) 0%, rgba(12,28,48,0.10) 34%,
-      rgba(12,28,48,0.62) 62%, rgba(12,28,48,0.80) 100%);
-  }
-  .hero-text { position: relative; padding: 26px 30px; margin-left: auto; max-width: 62%; color: #fff; }
-  .hero-gruss { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.85; margin: 0 0 6px; }
-  .hero-text h1 { font-family: var(--display); font-size: 30px; line-height: 1.12; margin: 0 0 8px; color: #fff; }
-  .hero-sub { margin: 0; font-size: 14px; line-height: 1.5; opacity: 0.92; max-width: 46ch; }
-  @media (max-width: 760px) {
-    /* Auf dem Handy stand das Logo 300 px hoch, bevor irgendein Inhalt kam.
-       Am Geraet gesehen, nicht am Zahlenwert entschieden. */
-    .brandmark .bm-logo { max-width: 104px; }
-    .brandmark .bm-sub { display: none; }
-    .hero { min-height: 260px; }
-    .hero-text { max-width: 100%; padding: 20px; }
-    .hero-schleier { background: linear-gradient(180deg,
-      rgba(12,28,48,0.05) 0%, rgba(12,28,48,0.30) 40%, rgba(12,28,48,0.84) 100%); }
-    .hero-text h1 { font-size: 24px; }
-  }
-  /* Mehr Luft in der Leiste, damit die Gruppen als Gruppen lesbar sind. */
-  /* Aufklappbare Bereiche (24.09.2026). Eine Gruppe offen, Rest zu. */
-  .navgroup {
-    display: flex; align-items: center; gap: 8px; width: 100%;
-    background: none; border: 0; cursor: pointer; text-align: left;
-    font: inherit; font-size: 11px; letter-spacing: 0.12em;
-    text-transform: uppercase; color: var(--ink-soft);
-    padding: 11px 10px; margin-top: 6px; border-radius: 8px;
-  }
-  .navgroup:hover { background: var(--surface-2); color: var(--ink); }
-  .navgroup[aria-expanded="true"] { color: var(--ink); font-weight: bold; }
-  .navgroup .pfeil {
-    margin-left: auto; font-size: 10px; line-height: 1;
-    transition: transform 0.15s ease; opacity: 0.7;
-  }
-  .navgroup[aria-expanded="true"] .pfeil { transform: rotate(90deg); }
-  .navgroup .gcnt {
-    font-size: 10px; font-weight: normal; letter-spacing: 0;
-    color: var(--ink-soft); background: var(--surface-2);
-    border-radius: 999px; padding: 1px 7px;
-  }
-  .navgroup[aria-expanded="true"] .gcnt { background: var(--teal-soft); }
-  .navbtn { padding-top: 9px; padding-bottom: 9px; }
-  .navsub { padding-left: 26px; font-size: 13px; }
-  .navsub::before {
-    content: ""; position: absolute; left: 14px; top: 50%;
-    width: 5px; height: 5px; margin-top: -2px; border-radius: 50%;
-    background: var(--line-strong);
-  }
-  .navbtn { position: relative; }
-  /* Die grossen Zahlen auf der Startseite duerfen atmen. */
-  .hero + .tiles .t-num { font-size: 30px; }
-  .jetzt { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); margin-bottom: 24px; }
-  .jetzt .karte { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 16px 18px; }
-  .jetzt .karte h3 { margin: 0 0 10px; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
-  .jetzt .zeile { display: flex; gap: 10px; align-items: baseline; padding: 5px 0; border-bottom: 1px solid var(--line); }
-  .jetzt .zeile:last-child { border-bottom: 0; }
-  /* Anklickbare Zeilen muessen auch danach aussehen. */
-  .jetzt .zeile.klick { cursor: pointer; margin: 0 -8px; padding-left: 8px; padding-right: 8px; border-radius: 6px; }
-  .jetzt .zeile.klick:hover { background: var(--teal-soft); }
-  .jetzt .zeile.klick:hover span { color: var(--ink); }
-  /* Abgehakt statt ausgeblendet - ein verschwundener Beitrag laesst den
-     Platz leer aussehen, und dann baut man denselben Tag nochmal. */
-  /* Aufgabenliste zugeklappt (24.09.2026). */
-  .tuklapp > summary {
-    display: flex; align-items: center; gap: 10px; cursor: pointer;
-    list-style: none; padding: 2px 0;
-  }
-  .tuklapp > summary::-webkit-details-marker { display: none; }
-  .tuklapp > summary::before {
-    content: "\25b6"; font-size: 10px; color: var(--ink-soft);
-    transition: transform 0.15s ease;
-  }
-  .tuklapp[open] > summary::before { transform: rotate(90deg); }
-  .tuklapp .tu-titel {
-    font-family: var(--display); font-size: 17px; color: var(--ink);
-  }
-  .tuklapp .tu-zahl {
-    font-size: 12px; border-radius: 999px; padding: 2px 9px;
-    background: var(--surface-2); color: var(--ink-soft);
-  }
-  .tuklapp .tu-zahl.du { background: var(--warn-soft, #fbe7d8); color: #8a4b1c; }
-  .tuklapp[open] > summary { margin-bottom: 10px; }
-  .jp-befund { margin-left: 8px; }
-  .idee-karte { margin-bottom: 14px; }
-  .idee-kopf { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
-  .idee-quelle { font-size: 12px; color: var(--ink-soft); }
-  .idee-kopf .btn.ghost { margin-left: auto; }
-  .idee-hook { font-family: var(--display); font-size: 17px; line-height: 1.35; margin: 0 0 10px; }
-  .idee-mehr > summary { cursor: pointer; font-size: 13px; color: var(--ink-soft); }
-  .idee-fuss { display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
-               margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
-  .idee-stand { color: var(--good); }
-  .uehook.klickbar { cursor: pointer; }
-  .uehook.klickbar:hover { text-decoration: underline; color: var(--teal); }
-  .uezeile .uedat { font-size: 12px; padding: 2px 4px; }
-  .wslot.durch { opacity: 0.62; }
-  .wslot.durch .wkarte { border-style: dashed; }
-  .wslot.durch::after {
-    content: "\2713 ist raus";
-    display: block; margin-top: 8px; font-size: 11px;
-    letter-spacing: 0.08em; text-transform: uppercase; color: var(--good);
-  }
-  .jetzt .zeile .wann { font-size: 12px; color: var(--ink-soft); min-width: 52px; font-variant-numeric: tabular-nums; }
-  .jetzt .leer { color: var(--ink-soft); font-size: 13px; }
+  .brandmark { padding: 0 8px; }
   .brandmark .bm-name { font-family: var(--display); font-size: 20px; line-height: 1.15; letter-spacing: -0.01em; }
   .brandmark .bm-sub { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); margin-top: 6px; }
   nav { display: flex; flex-direction: column; gap: 2px; }
@@ -706,29 +580,6 @@
     .tudatum { grid-column: 1 / -1; } }
   .wk-tags { font-size: 12px; color: var(--teal); word-break: break-word; }
   .wk-fuss { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-  /* Die Ausnahme-Aktionen hinter einem Punkt-Knopf (24.09.2026). */
-  .wk-mehr { position: relative; margin-left: auto; }
-  .wk-mehr > summary {
-    list-style: none; cursor: pointer; user-select: none;
-    border: 1px solid var(--line); border-radius: 8px;
-    padding: 6px 12px; line-height: 1; font-size: 15px;
-    color: var(--ink-soft); background: var(--surface);
-  }
-  .wk-mehr > summary::-webkit-details-marker { display: none; }
-  .wk-mehr > summary:hover { background: var(--surface-2); color: var(--ink); }
-  .wk-mehr[open] > summary { background: var(--surface-2); color: var(--ink); }
-  .wk-mehrbox {
-    position: absolute; right: 0; top: calc(100% + 6px); z-index: 30;
-    display: flex; flex-direction: column; gap: 6px; align-items: stretch;
-    min-width: 200px; padding: 8px;
-    background: var(--surface); border: 1px solid var(--line);
-    border-radius: 10px; box-shadow: var(--shadow);
-  }
-  .wk-mehrbox .btn { text-align: left; white-space: nowrap; }
-  .wk-mehrbox .wk-umplanbox { display: flex; gap: 6px; }
-  /* 🚨 Eine Klassenregel schlaegt das eingebaute [hidden] des Browsers.
-     Ohne diese Zeile stand das Datumsfeld dauerhaft offen. */
-  .wk-mehrbox .wk-umplanbox[hidden] { display: none; }
   .wk-fuss input[type="date"] {
     background: var(--ground); border: 1px solid var(--line); border-radius: 7px;
     padding: 6px 8px; font-size: 12px;
@@ -1417,7 +1268,7 @@
 <div class="shell">
   <aside class="side">
     <div class="brandmark">
-      <img class="bm-logo" src="assets/logo.svg" alt="Mum Life Balance">
+      <div class="bm-name">Mum&nbsp;Life&nbsp;Balance</div>
       <div class="bm-sub">Cockpit</div>
     </div>
     <nav id="nav"></nav>
@@ -1703,14 +1554,6 @@
   function kartenProfil(o) {
     return ((o.blotato && o.blotato.profil) || o.profil || "mentoring");
   }
-  /* B-Roll und Story gehen nie ueber Blotato — die Instagram-Musik laesst
-     sich nur in der App waehlen. Patricia plant sie dort selbst ein; ihr Klick
-     im Cockpit ist die Meldung, dass das passiert ist. */
-  function selbstFormat(b) {
-    return b.art === "storys" ||
-           (b.art === "reels" && b.obj.videoart === "broll");
-  }
-
   function vorgabeZeit(art, profil) {
     if (art !== "reels") return "07:30";
     return profil === "doterra" ? "21:30" : "21:00";
@@ -1813,53 +1656,17 @@
     }, 800);
   }
 
-  /* 🚨 Der Stand aus der Datenbank darf die eigene Arbeit nur dann
-     ueberschreiben, wenn er NEUER ist. Bis 24.09.2026 gewann er immer, und
-     zusammen mit der verzoegerten lokalen Sicherung hat das Arbeit geloescht.
-     Siehe Kopf von patch-kein-datenverlust.py.
-
-     Fehlt updatedAt, gewinnt der lokale Stand: Arbeit zurueckzubekommen ist
-     unmoeglich, einen veralteten Anzeigestand zu erneuern ein Klick. */
-  function dbUebernehmen(lokal, ausDb) {
-    if (!lokal) return ausDb;
-    var a = lokal.updatedAt || "", b = ausDb.updatedAt || "";
-    if (!b || b <= a) return lokal;          // lokal ist gleich alt oder neuer
-    Object.assign(lokal, ausDb);
-    return lokal;
-  }
-
-  /* Was noch nicht in der Datenbank ist. Wird vor dem Schliessen abgearbeitet. */
-  var ausstehend = {};
-  function sofortSichern() {
-    Object.keys(ausstehend).forEach(function (k) {
-      try { ausstehend[k](); } catch (e) {}
-    });
-    ausstehend = {};
-  }
-  window.addEventListener("pagehide", sofortSichern);
-  document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "hidden") sofortSichern();
-  });
-
   function saveStory(st) {
     if (!st) return;
-    // 🚨 Lokal SOFORT — nur die Datenbank wird gesammelt.
-    st.updatedAt = new Date().toISOString();
-    lsSet("st-" + st.id, st);
-    lsSet("storyliste", state.storys.map(function (x) { return x.id; }));
     clearTimeout(saveTimers["st-" + st.id]);
-    /* Der Zeitgeber-Inhalt als benannte Funktion: sie liegt im
-       Merkzettel UND laeuft nach 700 ms. Ohne den Eintrag war
-       sofortSichern() wirkungslos. */
-    var tun = function () {
-      delete ausstehend["st-" + st.id];
+    saveTimers["st-" + st.id] = setTimeout(function () {
+      st.updatedAt = new Date().toISOString();
+      lsSet("st-" + st.id, st);
+      lsSet("storyliste", state.storys.map(function (x) { return x.id; }));
       if (!db) { setSaveState("lokal gespeichert", "off"); return; }
       db.collection("storys").doc(st.id).set({
         name: st.name, brand: st.brand, phase: st.phase || "", frames: st.frames,
         datum: st.datum || "", profil: st.profil || "",
-        // 🚨 Was hier fehlt, ist nach dem naechsten Speichern WEG. `blotato`
-        // fehlte bis 24.09. als einziges der drei Formate.
-        blotato: st.blotato || null,
         kommentar: st.kommentar || "", kommentarStand: st.kommentarStand || "",
         kommentarErledigt: st.kommentarErledigt || "",
         kommentarAntwort: st.kommentarAntwort || "",
@@ -1868,22 +1675,16 @@
         updatedAt: st.updatedAt
       }).then(function () { setSaveState("gespeichert", "on"); })
         .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
-    };
-    ausstehend["st-" + st.id] = tun;
-    saveTimers["st-" + st.id] = setTimeout(tun, 700);
+    }, 700);
   }
 
   function saveCarousel(car) {
     if (!car) return;
-    car.updatedAt = new Date().toISOString();
-    lsSet("kar-" + car.id, car);
-    lsSet("karliste", state.karussells.map(function (c) { return c.id; }));
     clearTimeout(saveTimers["kar-" + car.id]);
-    /* Der Zeitgeber-Inhalt als benannte Funktion: sie liegt im
-       Merkzettel UND laeuft nach 700 ms. Ohne den Eintrag war
-       sofortSichern() wirkungslos. */
-    var tun = function () {
-      delete ausstehend["kar-" + car.id];
+    saveTimers["kar-" + car.id] = setTimeout(function () {
+      car.updatedAt = new Date().toISOString();
+      lsSet("kar-" + car.id, car);
+      lsSet("karliste", state.karussells.map(function (c) { return c.id; }));
       if (!db) { setSaveState("lokal gespeichert", "off"); return; }
       db.collection("karussells").doc(car.id).set({
         name: car.name, brand: car.brand, handle: car.handle,
@@ -1897,9 +1698,7 @@
         slides: car.slides, caption: car.caption || "", updatedAt: car.updatedAt
       }).then(function () { setSaveState("gespeichert", "on"); })
         .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
-    };
-    ausstehend["kar-" + car.id] = tun;
-    saveTimers["kar-" + car.id] = setTimeout(tun, 700);
+    }, 700);
   }
 
   function saveImage(basePath, slideId, dataUrl) {
@@ -2232,42 +2031,37 @@
   /* =========================================================
      Navigation
      ========================================================= */
-  /* Nach Arbeitsschritt sortiert, nicht nach Werkzeug (Patricia, 24.09.2026).
-     Planen -> Bauen -> Freigeben -> Ausgewertet ist der Weg, den ein Beitrag
-     nimmt; vorher lagen die drei Studios nebeneinander, obwohl man dort
-     dasselbe tut. Die Reiter "Content-Planung" (state.posts) und
-     "Ideen & Hooks" (state.ideen) sind raus - 5 und 6 Eintraege aus der
-     Anfangszeit. Die Daten bleiben, nur die Leiste wird kuerzer. */
   var TABS = [
-    { id: "uebersicht", label: "Heute" },
-    { g: "Content" },
-    { id: "woche", label: "Planen" },
-    { id: "studio", label: "Bauen" },
-    { id: "storys", label: "Storys", sub: true },
-    { id: "reels", label: "Reels", sub: true },
-    { id: "fertig", label: "Freigeben" },
-    { id: "gepostet", label: "Ausgewertet" },
+    { id: "uebersicht", label: "Übersicht" },
+    { id: "links", label: "Links & Material" },
+    { g: "Erstellen" },
+    { id: "studio", label: "Content-Studio" },
+    { id: "storys", label: "Story-Studio" },
+    { id: "reels", label: "Reel-Studio" },
+    { g: "Planen" },
+    { id: "woche", label: "Wochen-Vorschau" },
+    { id: "fertig", label: "Fertig zum Posten" },
+    { id: "gepostet", label: "Gepostet & Analyse" },
+    { id: "posts", label: "Content-Planung" },
+    { id: "ideen", label: "Ideen & Hooks" },
     { id: "ideenkasten", label: "Ideenkasten" },
-    { id: "ideenextern", label: "Ideen von anderen" },
-    { g: "Planung" },
     { id: "launches", label: "Jahresplan" },
-    { id: "monatsbogen", label: "Monatsbogen" },
-    { id: "wochenbogen", label: "Wochenbogen" },
     { id: "aufgaben", label: "Aufgaben" },
     { id: "ziele", label: "Ziele" },
-    { g: "Geschäft" },
-    { id: "links", label: "Links & Material" },
-    { id: "katalog", label: "Angebots-Katalog" },
-    { id: "produkte", label: "Meine Notizen", sub: true },
+    { id: "wochenbogen", label: "Wochenbogen" },
+    { id: "monatsbogen", label: "Monatsbogen" },
+    { g: "Business" },
     { id: "funnel", label: "Funnel & Keywords" },
     { id: "mailings", label: "Listen & Automationen" },
     { id: "leads", label: "Kundinnen & Leads" },
+    { id: "team", label: "Team" },
+    { id: "produkte", label: "Angebote" },
+    { id: "katalog", label: "Angebots-Katalog" },
+    { id: "kurse", label: "Kurs-Inhalte" },
     { id: "zahlen", label: "Zahlen & Ziele" },
     { g: "doTERRA" },
     { id: "rangtracker", label: "Rang-Tracker" },
-    { id: "team", label: "Team", sub: true },
-    { g: "Nachschlagen" },
-    { id: "kurse", label: "Kurs-Inhalte" },
+    { g: "Grundlagen" },
     { id: "wissen", label: "Mein Wissen" },
     { id: "suche", label: "Suchen" }
   ];
@@ -2398,89 +2192,6 @@
      Das Feld bleibt am Beitrag, und „Zurueckholen" macht es rueckgaengig. */
   function istAbgelehnt(b) { return !!(b.obj || b).abgelehnt; }
 
-  /* 🚨 Ist der Beitrag durch? Bis 24.09.2026 wurde das nirgends gefragt —
-     ein geposteter Beitrag stand weiter als offener Platz in der Woche.
-     „selber-posten" zaehlt dazu: bei einem B-Roll postet Patricia selbst,
-     das Cockpit erfaehrt es nie, und wartend stehenbleiben waere falscher
-     als abgehakt. */
-  var DRAUSSEN = ["geplant", "gepostet-von-hand", "selber-posten"];
-
-  /* 🚨 Die Wahrheit steht in der Sammlung „freigaben", nicht am Beitrag.
-     Dort schreibt der Einplan-Task hinein; `beitrag.blotato` aktualisiert
-     niemand. Siehe Kopf von patch-freigaben-lesen.py. */
-  var freigaben = {};
-
-  /* 🚨 Welcher Beitrag ist als Instagram-Post wiedergefunden worden?
-     Gebaut von gepostet-zuordnen.py ueber den Caption-Anfang. Ohne das weiss
-     das Cockpit nicht, dass Beitrag X und Post Y dasselbe sind. */
-  var igZuordnung = { zuordnung: {}, nicht_pruefbar: [] };
-  var ideenExtern = { ideen: [] };
-
-  /* Befunde aus dem Workspace-Abgleich. 🚨 Sie liegen NEBEN Jahresplan und
-     Zielen, nicht darin — die beiden gehoeren Patricia. Siehe Kopf von
-     patch-planung-befunde.py. */
-  var planungAbgleich = { jahresplan: {}, ziele: {} };
-  function befundVon(bereich, id) {
-    return ((planungAbgleich[bereich] || {})[id]) || null;
-  }
-  var BEFUND_TEXT = {
-    belegt: "im Workspace belegt",
-    offen: "steht noch aus",
-    keine_spur: "keine Spur im Workspace",
-    termin: "Termin",
-    abgelaufen: "Quartal vorbei, Status noch aktiv",
-    nicht_messbar: "nicht maschinell prüfbar"
-  };
-  var BEFUND_ART = {
-    belegt: "gut", offen: "info", keine_spur: "warn",
-    termin: "info", abgelaufen: "warn", nicht_messbar: "info"
-  };
-  function befundChip(bereich, id) {
-    var b = befundVon(bereich, id);
-    if (!b || !b.befund) return "";
-    var titel = (b.belege || []).map(function (x) { return x.wo; }).join(" · ");
-    return '<span class="tp-stand ' + (BEFUND_ART[b.befund] || "info") + '"' +
-      (titel ? ' title="' + esc(titel) + '"' : "") + '>' +
-      esc(BEFUND_TEXT[b.befund] || b.befund) + '</span>';
-  }
-  var ABGLEICH_HINWEIS =
-    "„Keine Spur“ heisst NICHT „nicht passiert“ — ein Leadmagnet kann in " +
-    "ManyChat leben, ohne je eine Datei zu bekommen. Fahr mit der Maus über " +
-    "einen Befund, dann siehst du, worauf er sich stützt.";
-  function igPost(b) {
-    return (igZuordnung.zuordnung || {})[(b && b.id) || ""] || null;
-  }
-  function istGepostet(b) { return !!igPost(b); }
-  function nichtPruefbar(b) {
-    // Das doTERRA-Konto haengt nicht an der Graph API. Fehlende Zuordnung
-    // heisst dort NICHT „nicht gepostet".
-    return (kartenProfil(b.obj) === "doterra") && !igPost(b);
-  }
-
-  function freigabeVon(b) {
-    var id = (b && b.id) || "";
-    return (id && freigaben[id]) || null;
-  }
-  function draussenStatus(b) {
-    var f = freigabeVon(b);
-    if (f && f.status) return f.status;
-    // Rueckfall, solange die Sammlung nicht geladen ist.
-    return (((b.obj || b).blotato) || {}).status || "";
-  }
-  function istDraussen(b) {
-    return DRAUSSEN.indexOf(draussenStatus(b)) >= 0;
-  }
-  function draussenGrund(b) {
-    var ig = (typeof igPost === "function") && igPost(b);
-    if (ig) return ig.reach != null ? "gepostet · " + ig.reach + " erreicht"
-                                    : "gepostet";
-    var s = draussenStatus(b);
-    return s === "geplant" ? "bei Blotato eingeplant"
-      : s === "gepostet-von-hand" ? "von dir gepostet"
-      : s === "selber-posten" ? "B-Roll — postest du selbst"
-      : "";
-  }
-
   /* Ein leerer Entwurf ist kein Beitrag — weder eine Aufgabe noch etwas,
      das man freigeben koennte. */
   function istLeer(b) {
@@ -2499,58 +2210,6 @@
     return !isNaN(wann) && wann.getTime() < Date.now();
   }
 
-  /* 🚨 Ein freigegebener Beitrag rutscht nach, statt liegenzubleiben.
-     Siehe Kopf von patch-nachruecken.py: „Datum ist durch" war eine Sackgasse,
-     die sich jeden Tag neu bildet. Die Freigabe ist die Entscheidung, das
-     Datum nur ein Wunsch. */
-  /* 🚨 Merkzettel fuer EINEN Zeichendurchlauf: was die Vorschau schon an
-     andere Beitraege vergeben hat. Ohne ihn bekommen vier Beitraege denselben
-     Tag angezeigt, und dort ist genau ein Platz. Siehe Kopf von
-     patch-slot-vorschau.py. Zurueckgesetzt in render(). */
-  var slotVorschau = {};
-
-  function naechsterSlot(b, merken2) {
-    var zeit = (b.obj.blotato && b.obj.blotato.zeit) ||
-               vorgabeZeit(b.art, kartenProfil(b.obj));
-    var profil = kartenProfil(b.obj);
-    // Eine Stunde Luft, damit der Zwei-Stunden-Lauf den Zeitpunkt sicher
-    // erwischt - sonst rutscht er auf etwas, das beim naechsten Lauf schon
-    // wieder vorbei ist.
-    var frueheste = Date.now() + 3600000;
-
-    // Welche Tage sind mit diesem Profil schon belegt?
-    var belegt = {};
-    alleBeitraege().forEach(function (x) {
-      if (x.id === b.id || istAbgelehnt(x) || !x.obj.datum) return;
-      if (kartenProfil(x.obj) !== profil) return;
-      belegt[x.obj.datum] = true;
-    });
-    // Dazu, was die Vorschau in diesem Durchlauf schon vergeben hat.
-    Object.keys(slotVorschau).forEach(function (k) {
-      var teil = k.split("|");
-      if (teil[1] === profil && teil[2] !== b.id) belegt[teil[0]] = true;
-    });
-
-    var start = new Date((b.obj.datum || todayISO()) + "T00:00:00");
-    if (isNaN(start)) start = new Date();
-    for (var i = 0; i <= 28; i++) {
-      var d = new Date(start.getTime());
-      d.setDate(d.getDate() + i);
-      var wt = (d.getDay() + 6) % 7;          // 0 = Montag
-      if (wt > 4) continue;                    // Wochenende: kein Feed-Platz
-      if (b.art !== "storys" && WOCHENRHYTHMUS[wt] !== b.art) continue;
-      var iso = d.getFullYear() + "-" +
-        String(d.getMonth() + 1).padStart(2, "0") + "-" +
-        String(d.getDate()).padStart(2, "0");
-      if (belegt[iso]) continue;
-      var wann = new Date(iso + "T" + zeit);
-      if (isNaN(wann) || wann.getTime() < frueheste) continue;
-      if (merken2 !== false) slotVorschau[iso + "|" + profil + "|" + b.id] = true;
-      return { datum: iso, zeit: zeit, verschoben: iso !== b.obj.datum };
-    }
-    return null;   // nichts gefunden - lieber ehrlich als endlos suchen
-  }
-
   /* Fertig heisst: nichts fehlt und noch nicht freigegeben. */
   function istFertig(b) {
     return !istLeer(b) && !b.obj.textfrei && !wasFehlt(b).length;
@@ -2558,8 +2217,7 @@
 
   function fertigAnzahl() {
     return offeneBeitraege().filter(function (b) {
-      return b.art !== "storys" && !istDraussen(b) &&
-             istFertig(b) && !zeitpunktVorbei(b);
+      return b.art !== "storys" && istFertig(b) && !zeitpunktVorbei(b);
     }).length;
   }
 
@@ -2580,8 +2238,10 @@
 
     main.innerHTML =
       '<div class="page-head"><div><h1>Wochen-Vorschau</h1>' +
-      '<p>Pro Tag und Profil ein Platz. \u201eWechseln\u201c legt eine andere ' +
-      'Variante drauf.</p></div>' +
+      '<p>Pro Tag und Profil ein Platz. \u00dcber \u201eWechseln\u201c legst du die ' +
+      'Variante drauf, die rausgehen soll \u2014 die andere f\u00e4llt zur\u00fcck in die ' +
+      'Ideenliste ganz unten. Storys stehen im Bild-Editor unter ' +
+      '\u201eAus deiner Planung\u201c.</p></div>' +
       '<div class="head-actions">' +
         '<button class="btn" id="w-zurueck">\u2190 Woche</button>' +
         '<span class="tp-kw">KW ' + tpKw(tage[0].datum) + ' \u00b7 ' +
@@ -2591,10 +2251,8 @@
         '<span class="chip">' + frei + ' von ' + beitraege.length + ' freigegeben</span>' +
       '</div></div>' +
       bilanzBlock(tage, belegt) +
-      // Erst die Woche, dann die Liste - siehe Kopf von
-      // patch-woche-aufraeumen.py.
-      '<div id="wliste"></div>' +
       aufgabenBlock(beitraege) +
+      '<div id="wliste"></div>' +
       '<div id="wunten"></div>';
 
     main.querySelector("#w-zurueck").onclick = function () {
@@ -2670,8 +2328,7 @@
     var anzahl = weitere.length + vorrat.length;
 
     var box = document.createElement("div");
-    box.className = "wslot" + (drauf ? "" : " leer") +
-      (drauf && istDraussen(drauf) ? " durch" : "");
+    box.className = "wslot" + (drauf ? "" : " leer");
 
     var kopf = document.createElement("div");
     kopf.className = "wslot-kopf";
@@ -2828,20 +2485,8 @@
             (kartenProfil(b.obj) === "doterra" ? "doTERRA" : "Mum Life") + '</span>' +
           '<span class="tp-format">' + esc(b.format) + '</span>' +
           '<span class="tp-job ' + j + '">' + (j === "lead" ? "Lead" : "Reichweite") + '</span>' +
-          '<span class="uehook klickbar" title="Beitrag öffnen">' +
-            esc(b.hook || b.titel) + '</span>' +
-          '<span class="tp-stand ' + s.art + '">' + esc(s.text) + '</span>' +
-          '<input type="date" class="uedat" value="' + esc(b.obj.datum || "") + '" ' +
-            'title="Anderes Datum setzen">';
-        // Patricia, 24.09.2026: „brauche ich auch die verlinkung zum beitrag.
-        // dann könnte ich neue daten setzen." Beides - das Feld fuer den
-        // schnellen Weg, der Klick fuer den ganzen Beitrag.
-        z.querySelector(".uehook").onclick = function () {
-          if (typeof springeZuBeitrag === "function") springeZuBeitrag(b);
-        };
-        z.querySelector(".uedat").onchange = function () {
-          if (this.value) umplanen(b, this.value);
-        };
+          '<span class="uehook">' + esc(b.hook || b.titel) + '</span>' +
+          '<span class="tp-stand ' + s.art + '">' + esc(s.text) + '</span>';
         plan.appendChild(z);
       });
     }
@@ -2917,9 +2562,6 @@
      Ohne diese Trennung wartet jede auf die andere. */
   function wasFehlt(b) {
     var o = b.obj, raus = [];
-    // Was draussen ist, kann nichts mehr fehlen — sonst steht ein geposteter
-    // Beitrag bis in alle Ewigkeit unter „du bist dran".
-    if (istDraussen(b)) return raus;
     if (b.art === "reels" && !b.videourl) {
       if ((o.videoart || "sprech") === "broll") {
         raus.push({ wer: "ich", was: "Video fehlt",
@@ -2952,60 +2594,41 @@
   /* Der Aufgaben-Block ueber der Liste: alles Offene auf einen Blick,
      nach Tag sortiert, getrennt nach „von dir“ und „von mir“. */
   function aufgabenBlock(beitraege) {
-    var offen = [], ohneDatum = 0;
+    var offen = [];
     beitraege.forEach(function (b) {
       if (istLeer(b)) return;   // ein leerer Entwurf ist keine Aufgabe
-      var f = wasFehlt(b);
-      if (!f.length) return;
-      // 🚨 Ohne Datum ist nichts eine Aufgabe. Das sind die A/B-Varianten aus
-      // der Freitagsproduktion, die nie ausgewaehlt wurden - 67 von 85 Zeilen
-      // am 24.09.2026. Sie stehen unten in der Ideenliste, und dort gehoeren
-      // sie hin.
-      if (!b.obj.datum) { ohneDatum++; return; }
-      f.forEach(function (x) { offen.push({ b: b, f: x }); });
+      wasFehlt(b).forEach(function (f) {
+        offen.push({ b: b, f: f });
+      });
     });
-
-    var rest = ohneDatum
-      ? '<p class="note">' + ohneDatum + ' weitere Entwürfe haben noch kein ' +
-        'Datum. Die stehen unten in der Ideenliste — solange dort kein Tag ' +
-        'dransteht, ist es keine Aufgabe.</p>'
-      : "";
-
     if (!offen.length) {
       return '<div class="panel tuliste"><h2>Was zu tun ist</h2>' +
-             '<div class="empty">Nichts offen — jeder eingeplante Beitrag hat ' +
-             'Video, Caption und Datum.</div>' + rest + '</div>';
+             '<div class="empty">Nichts offen \u2014 jeder Beitrag hat Video, ' +
+             'Caption und Datum.</div></div>';
     }
-
     offen.sort(function (x, y) {
-      var a = x.b.obj.datum, c = y.b.obj.datum;
+      var a = x.b.obj.datum || "9999", c = y.b.obj.datum || "9999";
       return a < c ? -1 : (a > c ? 1 : 0);
     });
     var vonDir = offen.filter(function (x) { return x.f.wer === "du"; }).length;
     var vonMir = offen.length - vonDir;
-
-    /* <details> statt eigener Zustand: kein JS, kein localStorage, und beim
-       Neuzeichnen kann nichts auseinanderlaufen. Die Zahl steht im Kopf -
-       ein zugeklappter Block ohne Zahl verschweigt, dass etwas wartet. */
-    var h = '<details class="panel tuliste tuklapp"><summary>' +
-      '<span class="tu-titel">Was zu tun ist</span>' +
-      (vonDir ? '<span class="tu-zahl du">' + vonDir + ' von dir</span>' : "") +
-      (vonMir ? '<span class="tu-zahl ich">' + vonMir + ' von mir</span>' : "") +
-      '</summary>' +
-      '<p class="note">Was bei dir steht, hält den Beitrag auf — alles ' +
-      'andere läuft auch ohne dich weiter.</p>';
+    var h = '<div class="panel tuliste"><h2>Was zu tun ist</h2>' +
+      '<p class="note">' + vonDir + ' von dir \u00b7 ' + vonMir + ' von mir. ' +
+      'Was bei dir steht, h\u00e4lt den Beitrag auf \u2014 alles andere l\u00e4uft ' +
+      'auch ohne dich weiter.</p>';
     offen.forEach(function (x) {
       h += '<div class="tuzeile">' +
         '<span class="tudatum">' +
-          esc(tagName(x.b.obj.datum).slice(0, 2) + " " + fmtDate(x.b.obj.datum)) +
+          (x.b.obj.datum ? esc(tagName(x.b.obj.datum).slice(0, 2) + " " +
+                               fmtDate(x.b.obj.datum)) : "ohne Datum") +
         '</span>' +
-        '<span class="tuwas"><strong>' + esc(x.f.was) + '</strong> — ' +
+        '<span class="tuwas"><strong>' + esc(x.f.was) + '</strong> \u2014 ' +
           esc(x.b.titel) + '</span>' +
         '<span class="tuwer ' + x.f.wer + '">' +
           (x.f.wer === "du" ? "von dir" : "von mir") + '</span>' +
         '</div>';
     });
-    return h + rest + '</details>';
+    return h + '</div>';
   }
 
   function wochenKarte(b) {
@@ -3178,41 +2801,28 @@
             '<option value="doterra"' + (kartenProfil(b.obj) === "doterra" ? " selected" : "") + '>doTERRA</option>' +
           '</select>' +
           '<button class="btn wk-kopieren">Caption kopieren</button>' +
-          /* 🚨 Derselbe Knopf bedeutet je Format etwas anderes: beim Karussell
-             „plan es fuer mich ein", beim B-Roll „hab ich selbst eingeplant".
-             Siehe Kopf von patch-broll-ist-erledigt.py. */
+          '<a class="btn wk-editorlink" href="' + BILDEDITOR +
+            '" target="_blank" rel="noopener">Im Bild-Editor bauen</a>' +
           '<button class="btn wk-frei' + (b.obj.textfrei ? "" : " primary") + '">' +
-            (selbstFormat(b)
-              ? (b.obj.textfrei ? "Doch nicht eingeplant" : "In der App eingeplant")
-              : (b.obj.textfrei ? "Freigabe zur\u00fccknehmen" : "Freigeben")) +
-          '</button>' +
-          /* Alles ab hier ist Ausnahme, nicht Alltag - siehe Kopf von
-             patch-karte-entruempeln.py. Die Knoepfe bleiben im DOM, damit die
-             Anbindung weiter unten sie findet; sie sind nur eingeklappt. */
-          '<details class="wk-mehr"><summary title="Mehr Aktionen">\u22ef</summary>' +
-            '<div class="wk-mehrbox">' +
-              '<a class="btn wk-editorlink" href="' + BILDEDITOR +
-                '" target="_blank" rel="noopener">Im Bild-Editor bauen</a>' +
-              // Nach einem Handy-Post muss der Beitrag aus dem Einplan-Lauf raus,
-              // sonst steht er zweimal im Feed.
-              (b.obj.textfrei && b.art !== "storys"
-                ? '<button class="btn wk-selbst">Hab ich selbst gepostet</button>'
-                : "") +
-              // Anderes Datum: das Feld links setzt den Tag auch, aber wer einen
-              // Beitrag verschiebt, will danach wissen, dass die Freigabe weg ist.
-              // Das sagt nur dieser Weg.
-              '<button class="btn wk-umplan">Anderes Datum</button>' +
-              '<span class="wk-umplanbox" hidden>' +
-                '<input type="date" class="wk-neudatum" value="' + esc(b.obj.datum || "") + '">' +
-                '<button class="btn primary wk-neuok">\u00dcbernehmen</button>' +
-              '</span>' +
-              '<button class="btn wk-ablehnen">Abgelehnt</button>' +
-              // 🚨 Zwei Klicks statt confirm(): ein Artifact-Rahmen darf Modals
-              // blockieren, und ein lautlos wirkungsloser Loeschknopf waere
-              // schlimmer als keiner.
-              '<button class="btn wk-loeschen">L\u00f6schen</button>' +
-            '</div>' +
-          '</details>' +
+            (b.obj.textfrei ? "Freigabe zurücknehmen" : "Freigeben") + '</button>' +
+          // Nach einem Handy-Post muss der Beitrag aus dem Einplan-Lauf raus,
+          // sonst steht er zweimal im Feed.
+          (b.obj.textfrei && b.art !== "storys"
+            ? '<button class="btn wk-selbst">Hab ich selbst gepostet</button>'
+            : "") +
+          '<button class="btn wk-ablehnen">Abgelehnt</button>' +
+          // Anderes Datum: das Feld links setzt den Tag auch, aber wer einen
+          // Beitrag verschiebt, will danach wissen, dass die Freigabe weg ist.
+          // Das sagt nur dieser Weg.
+          '<button class="btn wk-umplan">Anderes Datum</button>' +
+          '<span class="wk-umplanbox" hidden>' +
+            '<input type="date" class="wk-neudatum" value="' + esc(b.obj.datum || "") + '">' +
+            '<button class="btn primary wk-neuok">\u00dcbernehmen</button>' +
+          '</span>' +
+          // 🚨 Zwei Klicks statt confirm(): ein Artifact-Rahmen darf Modals
+          // blockieren, und ein lautlos wirkungsloser Loeschknopf waere
+          // schlimmer als keiner.
+          '<button class="btn wk-loeschen">L\u00f6schen</button>' +
         '</div>' +
       '</div>';
 
@@ -3739,28 +3349,9 @@
       bl.zeit = zeit;
       var wann = new Date(b.obj.datum + "T" + zeit);
 
-      /* 🚨 Nachruecken passiert HIER, beim Freigeben - nicht beim Anzeigen.
-         Was in „freigaben" steht, muss der Zeitpunkt sein, an dem es wirklich
-         rausgeht. Eine Anzeige, die etwas anderes sagt als die Datenbank, ist
-         der Fehler vom 16.09. */
-      var nachgerueckt = "";
-      if (!isNaN(wann) && wann.getTime() < Date.now()) {
-        var slot = naechsterSlot(b, false);
-        if (slot) {
-          b.obj.datum = slot.datum;
-          zeit = bl.zeit = slot.zeit;
-          wann = new Date(slot.datum + "T" + slot.zeit);
-          nachgerueckt = tagName(slot.datum).slice(0, 2) + " " + fmtDate(slot.datum) +
-                         " um " + slot.zeit;
-          merken();
-        }
-      }
-
       // 🚨 Ein Zeitpunkt in der Vergangenheit wird von Blotato abgelehnt. Frueher
       // ist das erst beim naechtlichen Einplanen aufgefallen — also gar nicht, weil
       // die Freigabe trotzdem „geklappt“ gemeldet hat.
-      // Nach dem Nachruecken ist das normalerweise falsch. Bleibt es wahr,
-      // hat naechsterSlot in 28 Tagen nichts gefunden.
       var vorbei = !isNaN(wann) && wann.getTime() < Date.now();
 
       function steuerSchreiben(anzahl) {
@@ -3782,8 +3373,8 @@
                      : (vorbei ? "zeitpunkt-vorbei" : "wartet");
           merken();
           if (selberPosten) {
-            toast("Notiert — du hast ihn in der App eingeplant. " +
-                  "Ich fasse ihn nicht an.");
+            toast("Freigegeben. B-Roll planen wir nicht ein — lad ihn dir " +
+                  "aufs Handy und poste ihn mit deiner Musik.");
             render();
             return;
           }
@@ -3836,99 +3427,6 @@
     return karte;
   }
 
-  /* Reiter „Ideen von anderen": was bei den beobachteten Profilen deutlich
-     ueber deren eigenem Schnitt lag. Gebaut von ideen-extern-bauen.py.
-     Siehe Kopf von patch-ideen-extern.py, warum der Reiter bewusst nicht
-     „Top-Content" heisst. */
-  function renderIdeenExtern(main) {
-    var alle = (ideenExtern && ideenExtern.ideen) || [];
-    var stand = (ideenExtern && ideenExtern.stand) || "";
-    var alt = stand ? Math.round((Date.now() - new Date(stand + "T00:00:00")) / 86400000) : 99;
-
-    main.innerHTML =
-      '<div class="page-head"><div><h1>Ideen von anderen</h1>' +
-      '<p>Beitr\u00e4ge aus deiner Beobachtungsliste, die deutlich \u00fcber dem ' +
-      '<strong>eigenen Schnitt des jeweiligen Kontos</strong> lagen \u2014 absolute ' +
-      'Likes sagen nichts, wenn ein Konto zwanzigmal so gross ist wie deins. ' +
-      'Das ist eine Anregung, kein Katalog: \u00fcbernommen wird die Machart, ' +
-      'nie der Text.</p></div></div>' +
-      (alt > 2 ? '<div class="panel warn"><strong>Der Stand ist ' + alt +
-        ' Tage alt.</strong> Neu holen mit <code>python ' +
-        'scripts/cockpit/ideen-extern-bauen.py</code>.</div>' : "") +
-      '<div class="tiles">' +
-      tile("Ideen", alle.length, stand ? "Stand " + fmtDate(stand) : "kein Stand") +
-      tile("Eingeschlagen", alle.filter(function (i) {
-             return i.stufe === "eingeschlagen"; }).length, "ab 3\u00d7 eigener Schnitt") +
-      '</div><div id="ideliste"></div>';
-
-    var box = main.querySelector("#ideliste");
-    if (!alle.length) {
-      box.innerHTML = '<div class="panel"><div class="empty">Noch nichts da. ' +
-        'Der Scrape l\u00e4uft t\u00e4glich \u2014 das Dokument wird beim ' +
-        'n\u00e4chsten Abgleich gef\u00fcllt.</div></div>';
-      return;
-    }
-
-    alle.forEach(function (i) {
-      var k = document.createElement("div");
-      k.className = "panel idee-karte";
-      var fmt = i.format === "reel" ? "Reel" : (i.format === "karussell" ? "Karussell" : "Bild");
-      k.innerHTML =
-        '<div class="idee-kopf">' +
-          '<span class="tp-stand ' + (i.stufe === "eingeschlagen" ? "gut" : "info") + '">' +
-            i.faktor + '\u00d7 eigener Schnitt</span>' +
-          '<span class="tp-format">' + esc(fmt) + '</span>' +
-          '<span class="idee-quelle">' + esc(i.label || i.konto) +
-            ' \u00b7 ' + (i.follower || 0).toLocaleString("de-CH") + ' Follower' +
-            ' \u00b7 ' + esc(fmtDate(i.datum)) + '</span>' +
-          (i.link ? '<a class="btn ghost" href="' + esc(i.link) +
-            '" target="_blank" rel="noopener">Ansehen</a>' : "") +
-        '</div>' +
-        '<p class="idee-hook">' + esc(i.hook) + '</p>' +
-        '<details class="idee-mehr"><summary>Ganzer Text</summary>' +
-          '<p class="note" style="white-space:pre-wrap">' + esc(i.caption) + '</p>' +
-        '</details>' +
-        '<div class="idee-fuss">' +
-          '<span class="note">Bau mir daraus:</span>' +
-          '<button class="btn ib" data-f="broll">B-Roll</button>' +
-          '<button class="btn ib" data-f="sprech">Sprechreel</button>' +
-          '<button class="btn ib" data-f="karussell">Karussell</button>' +
-          '<span class="idee-stand note"></span>' +
-        '</div>';
-
-      var stelle = k.querySelector(".idee-stand");
-      [].forEach.call(k.querySelectorAll(".ib"), function (b) {
-        b.onclick = function () {
-          if (!db) { toast("Ohne Datenbank kann ich den Auftrag nicht ablegen."); return; }
-          var was = b.getAttribute("data-f");
-          db.collection("bauauftraege").doc("idee-" + i.id + "-" + was).set({
-            quelle: "ideen-extern",
-            format: was,
-            ideeId: i.id,
-            konto: i.konto,
-            link: i.link || "",
-            hook: i.hook,
-            caption: i.caption,
-            faktor: i.faktor,
-            profil: i.profil || "",
-            /* 🚨 Steht im Auftrag, nicht nur in der Doku: uebernommen wird die
-               Machart, nie der Text. */
-            hinweis: "Nur die Machart übernehmen — Frage, Winkel, Aufbau. " +
-                     "Szene, Zahlen und Sprache kommen aus Patricias Leben. " +
-                     "Durch Blacklisten-Prüfung und den letzten Hook-Check.",
-            stand: new Date().toISOString(),
-            erledigt: ""
-          }).then(function () {
-            // Nie „erledigt" melden — nur „notiert".
-            stelle.textContent = "Notiert \u2014 ich bau es beim nächsten Lauf.";
-            toast("Auftrag notiert. Ich melde mich, wenn es steht.");
-          }).catch(function () { toast("Konnte den Auftrag nicht ablegen."); });
-        };
-      });
-      box.appendChild(k);
-    });
-  }
-
   /* Reiter „Fertig zum Posten": nur das, was schon steht. */
   function renderFertig(main) {
     var alle = offeneBeitraege().filter(function (b) { return !istLeer(b); });
@@ -3942,34 +3440,9 @@
     // Feed und Story sind zwei verschiedene Handlungen: den Feed gibst du
     // frei und der 20:00-Lauf plant ihn ein, die Story postest du selbst.
     var feed = fertig.filter(function (b) { return b.art !== "storys"; });
-    // 🚨 Keine eigene Sackgassen-Gruppe mehr - was fertig ist, kann raus,
-    // und der Zeitpunkt rueckt beim Freigeben nach.
-    var kannRaus = feed.slice().sort(nachDatum);
-    var durch = feed.filter(zeitpunktVorbei);
+    var kannRaus = feed.filter(function (b) { return !zeitpunktVorbei(b); }).sort(nachDatum);
+    var durch = feed.filter(zeitpunktVorbei).sort(nachDatum);
     var frei = alle.filter(function (b) { return b.obj.textfrei; }).sort(nachDatum);
-
-    /* 🚨 „Freigegeben" war drei verschiedene Dinge in einem Topf. Siehe Kopf
-       von patch-freigegeben-trennen.py. Der Status kommt aus der Sammlung
-       „freigaben", nicht aus b.obj.blotato — das war der alte Lesefehler. */
-    var heuteISO = todayISO();
-    function selbstSache(b) {
-      return b.art === "storys" || draussenStatus(b) === "selber-posten";
-    }
-    /* 🚨 Was sie selbst in der App eingeplant hat, IST erledigt — dafuer
-       steht ihr Klick. Eine Gruppe „du bist dran" waere eine Behauptung ueber
-       etwas, das das Cockpit gar nicht sehen kann. */
-    var selbst = frei.filter(selbstSache);
-    // Freigegeben, aber der Termin ist durch und nichts rueckt nach: haengt.
-    var haengt = frei.filter(function (b) {
-      return !selbstSache(b) && DRAUSSEN.indexOf(draussenStatus(b)) < 0 &&
-             zeitpunktVorbei(b);
-    });
-    // Was auf Instagram wiedergefunden wurde, ist durch und gehoert in den
-    // Reiter „Gepostet & Analyse" — nicht mehr hierher.
-    var gepostet = frei.filter(istGepostet);
-    var laeuft = frei.filter(function (b) {
-      return haengt.indexOf(b) < 0 && !istGepostet(b);
-    });
     var offen = alle.filter(function (b) {
       return !b.obj.textfrei && wasFehlt(b).length;
     }).length;
@@ -3977,20 +3450,15 @@
     main.innerHTML =
       '<div class="page-head"><div><h1>Fertig zum Posten</h1>' +
       '<p>Nur was schon steht \u2014 Video da, Caption da, Datum da. ' +
-      'Alle zwei Stunden wird eingeplant, was freigegeben ist. ' +
-      '<strong>Ist der Zeitpunkt vorbei, rutscht der Beitrag auf den n\u00e4chsten ' +
-      'passenden Tag</strong> \u2014 du musst nichts neu datieren.</p></div></div>' +
+      'Freigeben geht hier genauso wie in der Wochen-Vorschau: Datum und ' +
+      'Uhrzeit pr\u00fcfen, Profil pr\u00fcfen, freigeben. Um 20:00 wird ' +
+      'eingeplant, was bis dahin freigegeben ist.</p></div></div>' +
       '<div class="tiles">' +
       tile("Kann raus", kannRaus.length,
            kannRaus.length ? "Feed \u2014 wartet auf dein Go" : "gerade nichts") +
-      tile("Rutscht nach", durch.length,
-           durch.length ? "Zeitpunkt vorbei — geht auf den nächsten Tag"
-                        : "alle Zeitpunkte liegen vorn") +
-      tile("Unterwegs", laeuft.length,
-           selbst.length ? selbst.length + " davon in deiner App"
-                         : "eingeplant, noch nicht raus") +
-      tile("Gepostet", gepostet.length,
-           gepostet.length ? "steht unter „Gepostet & Analyse“" : "noch keiner") +
+      tile("Datum ist durch", durch.length,
+           durch.length ? "fertig, aber neu datieren" : "keiner") +
+      tile("Schon freigegeben", frei.length, "wartet auf 20:00") +
       tile("Noch nicht fertig", offen, "steht unter „Was zu tun ist“") +
       '</div>' +
       '<div id="fliste"></div>';
@@ -4014,84 +3482,53 @@
       liste.forEach(function (b) { box.appendChild(wochenKarte(b)); });
     }
 
-    if (!kannRaus.length && !frei.length) {
+    if (!kannRaus.length && !durch.length && !frei.length) {
       box.innerHTML = '<div class="panel"><div class="empty">Noch ist nichts ' +
         'fertig. Was fehlt, steht in der Wochen-Vorschau unter ' +
         '\u201eWas zu tun ist\u201c.</div></div>';
       return;
     }
 
-    gruppe("Kann raus", durch.length
-      ? durch.length + " davon haben einen Zeitpunkt in der Vergangenheit. Die "
-        + "rutschen beim Freigeben auf den nächsten passenden Tag — auf der Karte "
-        + "steht, auf welchen."
-      : "", kannRaus);
+    gruppe("Kann raus", "", kannRaus);
+    gruppe("Fertig, aber das Datum ist durch",
+           "Hier steht alles. Nur der Zeitpunkt ist vorbei, und Instagram nimmt "
+           + "keinen Zeitpunkt in der Vergangenheit. Setz ein neues Datum, dann "
+           + "kannst du freigeben.", durch);
 
-    /* Drei Gruppen statt einer — wer dran ist, steht im Titel. */
-    function liste(titel, unter, eintraege, wer) {
-      if (!eintraege.length) return;
+    // Freigegebenes nur als Liste — die vollen Karten braucht hier niemand mehr.
+    if (frei.length) {
       var kopf = document.createElement("div");
       kopf.className = "wt-kopf";
-      kopf.innerHTML = '<span class="wt-name">' + esc(titel) + '</span>' +
-                       '<span class="wt-datum">' + eintraege.length + '</span>';
+      kopf.innerHTML = '<span class="wt-name">Schon freigegeben</span>' +
+                       '<span class="wt-datum">' + frei.length + '</span>';
       box.appendChild(kopf);
-      if (unter) {
-        var n = document.createElement("p");
-        n.className = "note";
-        n.style.margin = "0 0 10px";
-        n.textContent = unter;
-        box.appendChild(n);
-      }
       var panel = document.createElement("div");
       panel.className = "panel tuliste";
       var h = "";
-      eintraege.forEach(function (b) {
-        var s = draussenStatus(b);
-        var zeit = (freigabeVon(b) || {}).zeit ||
-                   (b.obj.blotato && b.obj.blotato.zeit) || "";
-        var spaet = b.obj.datum && b.obj.datum <= heuteISO;
-        // 🚨 Was gepostet ist, traegt seine Zahl — sonst ist „gepostet"
-        // nur ein Wort.
-        var ig = igPost(b);
-        var stand = ig ? (ig.reach != null ? ig.reach + " erreicht" : "gepostet")
-                  : nichtPruefbar(b) ? "in deiner App · nicht prüfbar"
-                  : s === "gepostet-von-hand" ? "selbst gepostet"
-                  : s === "geplant" ? "eingeplant"
-                  : b.art === "storys" ? "Story"
-                  : s === "selber-posten" ? "in deiner App"
-                  : "wartet";
+      frei.forEach(function (b) {
+        var bl = b.obj.blotato || {};
+        var stand = bl.status === "gepostet-von-hand" ? "selbst gepostet"
+                  : bl.status === "selber-posten" ? "postest du selbst (Musik)"
+                  : bl.status === "geplant" ? "eingeplant"
+                  : bl.status === "zeitpunkt-vorbei" ? "Zeitpunkt vorbei"
+                  : b.art === "storys" ? "Story \u2014 postest du selbst"
+                  : "wartet auf 20:00";
         h += '<div class="tuzeile">' +
           '<span class="tudatum">' +
             (b.obj.datum ? esc(tagName(b.obj.datum).slice(0, 2) + " " +
                                fmtDate(b.obj.datum)) : "ohne Datum") +
-            (zeit ? " " + esc(zeit) : "") + '</span>' +
+            (bl.zeit ? " " + esc(bl.zeit) : "") + '</span>' +
           '<span class="tuwas"><strong>' + esc(b.titel) + '</strong> <span>\u00b7 ' +
             esc(kartenProfil(b.obj) === "doterra" ? "doTERRA" : "Mentoring") +
             '</span></span>' +
-          '<span class="tuwer ' + wer + '">' +
-            esc(wer === "du" && spaet ? stand + " \u2014 \u00fcberf\u00e4llig" : stand) +
-          '</span></div>';
+          '<span class="tuwer ' +
+            (stand === "wartet auf 20:00" || stand === "eingeplant" ? "ich" : "du") +
+            '">' + esc(stand) + '</span>' +
+          '</div>';
       });
       panel.innerHTML = h;
       box.appendChild(panel);
     }
-
-    liste("H\u00e4ngt", "Freigegeben, aber der Zeitpunkt ist vorbei und nichts "
-      + "r\u00fcckt nach. Geht so nie raus \u2014 nimm die Freigabe zur\u00fcck "
-      + "und gib sie neu, dann rutscht der Beitrag auf den n\u00e4chsten Tag.",
-      haengt, "du");
-
-    liste("Unterwegs", selbst.length
-      ? "Eingeplant, aber noch nicht im Feed. " + selbst.length + " davon hast "
-        + "du selbst in der App eingeplant \u2014 B-Roll und Storys gehen nie "
-        + "\u00fcber Blotato, weil die Musik nur dort w\u00e4hlbar ist."
-      : "Eingeplant, aber noch nicht im Feed. Hier musst du nichts mehr tun.",
-      laeuft, "ich");
-
-    liste("Gepostet", "Auf Instagram wiedergefunden. Die Auswertung steht unter "
-      + "\u201eGepostet & Analyse\u201c \u2014 dort liegt auch der Knopf, um "
-      + "einen gut gelaufenen Beitrag nach vier Wochen nochmal zu bringen.",
-      gepostet, "ich");
   }
 
   /* =========================================================
@@ -4262,136 +3699,41 @@
   /* Ein Satz zum Zustand — dasselbe Urteil wie in der Wochen-Vorschau,
      nur auf eine Zeile eingedampft. */
   function tpStand(b) {
-    // Was draussen ist, zuerst - „Freigegeben" sagt nichts darueber, ob es
-    // auch wirklich rausging.
-    if (istDraussen(b)) {
-      var s = draussenStatus(b);
-      return { text: s === "geplant" ? "Eingeplant"
-                   : s === "gepostet-von-hand" ? "Ist raus"
-                   : "Postest du selbst", art: "gut" };
-    }
     if (b.obj.textfrei) return { text: "Freigegeben", art: "gut" };
     var fehlt = wasFehlt(b);
     if (!fehlt.length) {
-      // Statt einer Sackgasse sagen, wohin der Beitrag rutscht.
-      if (zeitpunktVorbei(b)) {
-        var sl = naechsterSlot(b);
-        return sl
-          ? { text: "Geht " + tagName(sl.datum).slice(0, 2) + " " +
-                    fmtDate(sl.datum) + " raus", art: "gut" }
-          : { text: "Kein freier Tag — setz eins", art: "warn" };
-      }
-      return { text: "Fertig — kann raus", art: "gut" };
+      return zeitpunktVorbei(b)
+        ? { text: "Fertig, aber der Zeitpunkt ist durch", art: "warn" }
+        : { text: "Fertig — kann raus", art: "gut" };
     }
     var e = fehlt[0];
     return { text: e.was + (e.wer === "du" ? " (du)" : " (ich)"),
              art: e.wer === "du" ? "warn" : "info" };
   }
 
-  /* Welche Gruppe aufgeklappt ist. Siehe Kopf von patch-nav-aufklappen.py:
-     nur eine, und die des aktiven Reiters immer. */
-  var offeneGruppe = null;
-  try { offeneGruppe = localStorage.getItem("mlb:navgruppe"); } catch (e) {}
-
-  function navBaum() {
-    var baum = [], aktuell = null;
-    TABS.forEach(function (t) {
-      if (t.g) { aktuell = { g: t.g, items: [] }; baum.push(aktuell); return; }
-      if (aktuell) aktuell.items.push(t);
-      else baum.push({ solo: t });
-    });
-    return baum;
-  }
-
-  function gruppeVon(id) {
-    var g = null;
-    navBaum().forEach(function (k) {
-      if (k.items && k.items.some(function (t) { return t.id === id; })) g = k.g;
-    });
-    return g;
-  }
-
-  function navZahl(t) {
-    // 🚨 Eine 0 an einem Reiter mit Daten ist eine Falschaussage — der
-    // Jahresplan zeigte 0, obwohl 54 Einträge drin sind. Deshalb nur
-    // positive Zahlen.
-    var c = t.id === "fertig" ? fertigAnzahl()
-      : t.id === "storys" ? state.storys.length
-      : t.id === "reels" ? state.reels.length
-      : (Array.isArray(state[t.id]) ? state[t.id].length : "");
-    return (c !== "" && c > 0) ? c : "";
-  }
-
-  /* Steht der aktive Reiter unter demselben Elternpunkt? Dann bleiben alle
-     Geschwister sichtbar, damit man zwischen ihnen wechseln kann. */
-  function geschwisterAktiv(items, elter) {
-    var e = null, treffer = false;
-    items.forEach(function (t) {
-      if (!t.sub) { e = t.id; return; }
-      if (t.id === activeTab && e === elter) treffer = true;
-    });
-    return treffer;
-  }
-
   function renderNav() {
     var nav = document.getElementById("nav");
     nav.innerHTML = "";
-    var aktivGruppe = gruppeVon(activeTab);
-    // Die Gruppe des aktiven Reiters ist immer offen — sonst verliert man
-    // beim Klicken die Orientierung.
-    var offen = aktivGruppe || offeneGruppe;
-
-    function knopf(t) {
-      var b = document.createElement("button");
-      b.className = t.sub ? "navbtn navsub" : "navbtn";
-      b.setAttribute("aria-current", activeTab === t.id ? "true" : "false");
-      var c = navZahl(t);
-      b.innerHTML = "<span>" + esc(t.label) + "</span>" +
-        (c !== "" ? '<span class="cnt">' + c + "</span>" : "");
-      b.onclick = function () { activeTab = t.id; render(); };
-      return b;
-    }
-
-    navBaum().forEach(function (k) {
-      if (k.solo) { nav.appendChild(knopf(k.solo)); return; }
-
-      var auf = k.g === offen;
-      var kopf = document.createElement("button");
-      kopf.className = "navgroup";
-      kopf.setAttribute("aria-expanded", auf ? "true" : "false");
-      // Summe der Zahlen in der Gruppe, damit man zugeklappt trotzdem sieht,
-      // dass dort etwas wartet.
-      var summe = k.items.reduce(function (a, t) {
-        var c = navZahl(t); return a + (c === "" ? 0 : c);
-      }, 0);
-      kopf.innerHTML = "<span>" + esc(k.g) + "</span>" +
-        (summe ? '<span class="gcnt">' + summe + "</span>" : "") +
-        '<span class="pfeil">▶</span>';
-      kopf.onclick = function () {
-        offeneGruppe = auf ? null : k.g;
-        try { localStorage.setItem("mlb:navgruppe", offeneGruppe || ""); } catch (e) {}
-        // Beim Zuklappen der aktiven Gruppe zurück auf «Heute», sonst stünde
-        // man auf einer Seite, deren Reiter nicht mehr sichtbar ist.
-        if (auf && k.g === aktivGruppe) activeTab = "uebersicht";
-        render();
-      };
-      nav.appendChild(kopf);
-
-      /* 🚨 Ein Unterpunkt kommt und geht mit seinem Elternpunkt — dem letzten
-         Nicht-Unterpunkt davor. Sonst stehen Storys und Reels auch dann da,
-         wenn man gerade plant oder auswertet. Siehe Kopf von
-         patch-nav-unterpunkte.py. */
-      if (auf) {
-        var elter = null;
-        k.items.forEach(function (t) {
-          if (!t.sub) { elter = t.id; nav.appendChild(knopf(t)); return; }
-          // Ohne diese zweite Bedingung verschwindet die Leiste unter den
-          // Fuessen, sobald man den Unterpunkt selbst anklickt.
-          if (activeTab === elter || activeTab === t.id ||
-              geschwisterAktiv(k.items, elter))
-            nav.appendChild(knopf(t));
-        });
+    TABS.forEach(function (t) {
+      if (t.g) {
+        var g = document.createElement("div");
+        g.className = "navgroup";
+        g.textContent = t.g;
+        nav.appendChild(g);
+        return;
       }
+      var b = document.createElement("button");
+      b.className = "navbtn";
+      b.setAttribute("aria-current", activeTab === t.id ? "true" : "false");
+      // Die Zahl am Reiter ist die eigentliche Antwort auf „was kann raus".
+      var cnt = t.id === "fertig" ? fertigAnzahl()
+        : t.id === "karussell" ? state.karussells.length
+        : t.id === "storys" ? state.storys.length
+        : t.id === "reels" ? state.reels.length
+        : (Array.isArray(state[t.id]) ? state[t.id].length : "");
+      b.innerHTML = '<span>' + esc(t.label) + '</span>' + (cnt !== "" ? '<span class="cnt">' + cnt + '</span>' : "");
+      b.onclick = function () { activeTab = t.id; render(); };
+      nav.appendChild(b);
     });
   }
 
@@ -4400,158 +3742,117 @@
      ========================================================= */
   function renderUebersicht(main) {
     var heute = todayISO();
-    var jetzt = new Date();
-
-    /* Dieselbe Quelle wie die Wochen-Vorschau - siehe Kopf des Patch-Skripts. */
-    var offen = (typeof offeneBeitraege === "function" ? offeneBeitraege() : alleBeitraege())
-      .filter(function (b) { return b.art !== "storys"; });
-
-    var meins = [], deins = [];
-    offen.forEach(function (b) {
-      (wasFehlt(b) || []).forEach(function (f) {
-        var e = { b: b, was: f.was, dazu: f.dazu, datum: (blo(b.obj) || {}).datum || "" };
-        (f.wer === "du" ? deins : meins).push(e);
-      });
-    });
-    function nachDatum(a, c) { return (a.datum || "9999") < (c.datum || "9999") ? -1 : 1; }
-    deins.sort(nachDatum); meins.sort(nachDatum);
-
-    var raus = offen.filter(function (b) {
-      return istFertig(b) && !zeitpunktVorbei(b);
-    }).sort(function (a, c) {
-      return ((blo(a.obj) || {}).datum || "9999") < ((blo(c.obj) || {}).datum || "9999") ? -1 : 1;
-    });
-
-    /* Fehlt ein Dokument, steht ein Strich - nicht eine Null. */
-    var afOffen = aufgaben && aufgaben.items
-      ? aufgaben.items.filter(function (a) { return !a.erledigt; }) : null;
-    var afFaellig = afOffen
-      ? afOffen.filter(function (a) { return a.datum && a.datum < heute; }) : null;
-
-    var jahr = String(jetzt.getFullYear());
-    var st = steuer && steuer.jahre
-      ? steuer.jahre.filter(function (x) { return x.jahr === jahr; })[0] : null;
-    var ziel = 40000;
-    var pct = st ? Math.round(st.einnahmen / ziel * 100) : null;
-    var tagImJahr = Math.floor((jetzt - new Date(jetzt.getFullYear(), 0, 0)) / 86400000);
-    var jahrPct = Math.round(tagImJahr / 365 * 100);
-
-    var stunde = jetzt.getHours();
-    var gruss = stunde < 11 ? "Guten Morgen" : (stunde < 18 ? "Hallo" : "Guten Abend");
-    var datum = jetzt.toLocaleDateString("de-CH",
-      { weekday: "long", day: "numeric", month: "long" });
-
-    var lage = raus.length
-      ? raus.length + (raus.length === 1 ? " Beitrag wartet" : " Beiträge warten") + " auf deine Freigabe."
-      : (deins.length ? "Nichts zum Freigeben — aber " + deins.length + " Sachen warten auf dich."
-                      : "Nichts offen. Guter Moment für etwas Neues.");
+    var offenePosts = state.posts.filter(function (p) { return p.status !== "Gepostet"; });
+    var nächste = state.posts.filter(function (p) { return p.datum >= heute && p.status !== "Gepostet"; })
+      .sort(function (a, b) { return a.datum < b.datum ? -1 : 1; }).slice(0, 6);
+    var heisseLeads = state.leads.filter(function (l) { return l.status === "Im Gespräch" || l.status === "Angebot raus"; });
+    var offeneIdeen = state.ideen.filter(function (i) { return i.status === "Offen"; });
+    var luecken = state.funnel.filter(function (f) { return funnelLuecken(f).length; });
 
     main.innerHTML =
-      '<div class="hero">' +
-        '<div class="hero-bild"></div><div class="hero-schleier"></div>' +
-        '<div class="hero-text">' +
-          '<p class="hero-gruss">' + esc(gruss) + '</p>' +
-          '<h1>' + esc(datum) + '</h1>' +
-          '<p class="hero-sub">' + esc(lage) + '</p>' +
-        '</div>' +
-      '</div>' +
+      '<div class="page-head"><div><h1>Übersicht</h1><p>Der Stand von heute, ' +
+      new Date().toLocaleDateString("de-CH", { weekday: "long", day: "2-digit", month: "long" }) +
+      '.</p></div><div class="head-actions">' +
+      '<button class="btn" id="wochebtn">Woche anlegen</button></div></div>' +
       '<div class="tiles">' +
-        tile("Kann raus", raus.length, raus.length ? "fertig, Zeitpunkt offen" : "nichts freigabebereit") +
-        tile("Du bist dran", deins.length, deins.length ? "drehen, hochladen, entscheiden" : "nichts von dir offen") +
-        tile("Ich bin dran", meins.length, meins.length ? "baue ich" : "nichts von mir offen") +
-        tile("Überfällige Aufgaben", afFaellig ? afFaellig.length : "—",
-             afOffen ? afOffen.length + " offen gesamt" : "keine Aufgaben geladen") +
-        tile("Umsatz " + jahr, st ? "CHF " + Math.round(st.einnahmen).toLocaleString("de-CH") : "—",
-             pct === null ? "keine Zahlen geladen"
-               : pct + " % vom Ziel · Jahr zu " + jahrPct + " % vorbei") +
+        tile("Posts geplant", nächste.length, "in den nächsten Tagen") +
+        tile("Offen im Plan", offenePosts.length, "noch nicht gepostet") +
+        tile("Ideen im Vorrat", offeneIdeen.length, "unverbraucht") +
+        tile("Leads im Gespräch", heisseLeads.length, "warten auf dich") +
+        tile("Lücken im Funnel", luecken.length, luecken.length ? "Ketten unvollständig" : "alles verbunden") +
       '</div>' +
-      '<div class="jetzt">' +
-        '<div class="karte"><h3>Du bist dran</h3><div id="ov-du"></div></div>' +
-        '<div class="karte"><h3>Kann raus</h3><div id="ov-raus"></div></div>' +
-        '<div class="karte"><h3>Als Nächstes</h3><div id="ov-next"></div></div>' +
+      '<div class="cols">' +
+        '<div class="panel"><h2>Als Nächstes</h2><div class="mini" id="ov-next"></div></div>' +
+        '<div class="panel"><h2>Säulen: geplant gegen Soll</h2><div class="bars" id="ov-saeulen"></div>' +
+          '<div class="note" style="margin-top:10px">Der orange Strich ist dein Soll aus dem 40/35/25-Verhältnis.</div></div>' +
+        '<div class="panel"><h2>PIE-Verteilung</h2><div id="ov-pie"></div></div>' +
+        '<div class="panel"><h2>Archetypen-Abdeckung</h2><div class="bars" id="ov-arche"></div></div>' +
+        '<div class="panel"><h2>Nächste Schritte bei Leads</h2><div class="mini" id="ov-leads"></div></div>' +
+        '<div class="panel"><h2>Team Richtung ' + esc(settings.rangZiel || "Silver") + '</h2><div id="ov-rang"></div></div>' +
       '</div>';
 
-    /* Wie viele Wochen liegt ein Datum von der laufenden Woche entfernt?
-       Ueber den Montag beider Wochen gerechnet - siehe Kopf des
-       Patch-Skripts, die Tages-Differenz durch sieben springt daneben. */
-    function wochenAbstand(iso) {
-      function montag(d) {
-        var x = new Date(d + "T00:00:00");
-        if (isNaN(x)) return null;
-        x.setDate(x.getDate() - ((x.getDay() + 6) % 7));
-        x.setHours(0, 0, 0, 0);
-        return x;
-      }
-      var a = montag(todayISO()), b = montag(iso);
-      if (!a || !b) return null;
-      return Math.round((b - a) / 604800000);
-    }
+    main.querySelector("#wochebtn").onclick = wocheAnlegen;
 
-    function springeZuBeitrag(b) {
-      var d = (blo(b.obj) || {}).datum || "";
-      activeTab = "woche";
-      var ab = d ? wochenAbstand(d) : null;
-      if (ab !== null) {
-        wochenOffset = ab;
-        // Ohne Datum kein aufgeklappter Platz - sonst oeffnet sich ein
-        // beliebiger und man haelt den falschen Beitrag fuer den gesuchten.
-        slotOffen = d + "|" + (typeof kartenProfil === "function"
-          ? kartenProfil(b.obj) : "mentoring");
-      }
-      render();
-    }
+    var n = main.querySelector("#ov-next");
+    if (!nächste.length) n.innerHTML = '<div class="empty">Nichts geplant. Klick oben auf „Woche anlegen“, dann steht das Gerüst.</div>';
+    nächste.forEach(function (p) {
+      var d = document.createElement("div");
+      d.className = "mini-row";
+      d.innerHTML = '<span class="m-date">' + esc(fmtDate(p.datum)) + '</span>' +
+        '<span class="m-main">' + esc(p.thema || "ohne Thema") + '<br><span class="note">' + esc(p.format) + " · " + esc(p.saeule) + '</span></span>' +
+        '<span class="chip' + (p.status === "Fertig" ? "" : " orange") + '">' + esc(p.status) + '</span>';
+      n.appendChild(d);
+    });
 
-    function fuelle(id, zeilen, leertext) {
-      var el = main.querySelector(id);
-      if (!zeilen.length) { el.innerHTML = '<div class="leer">' + esc(leertext) + '</div>'; return; }
-      el.innerHTML = "";
-      zeilen.slice(0, 6).forEach(function (z) {
-        var d = document.createElement("div");
-        d.className = "zeile" + (z.gehe ? " klick" : "");
-        var w = (z.wann && z.wann !== "—")
-          ? '<span class="wann">' + esc(z.wann) + '</span>' : "";
-        d.innerHTML = w + "<span>" + esc(z.text) + "</span>";
-        if (z.gehe) {
-          d.title = z.hinweis || "Hinbringen";
-          d.onclick = z.gehe;
-        }
-        el.appendChild(d);
-      });
-      if (zeilen.length > 6) {
-        var r = document.createElement("div");
-        r.className = "leer";
-        r.style.marginTop = "8px";
-        r.textContent = "und " + (zeilen.length - 6) + " weitere";
-        el.appendChild(r);
-      }
-    }
+    // Säulen Ist gegen Soll
+    var relevant = state.posts.filter(function (p) { return p.marke === "Mum Life Balance"; });
+    var sum = relevant.length || 1;
+    var saeulenHtml = Object.keys(SOLL).map(function (k) {
+      var ist = relevant.filter(function (p) { return p.saeule === k; }).length;
+      var pct = Math.round(ist / sum * 100);
+      var soll = SOLL[k];
+      return '<div class="bar-row"><div class="bar-lab"><span>' + esc(k) + '</span><b>' + pct + '% ist · ' + soll + '% soll</b></div>' +
+        '<div class="bar-track"><div class="bar-fill" style="width:' + Math.min(100, pct) + '%"></div>' +
+        (soll ? '<div class="bar-soll" style="left:' + soll + '%"></div>' : '') + '</div></div>';
+    }).join("");
+    main.querySelector("#ov-saeulen").innerHTML = saeulenHtml +
+      '<div class="note">' + relevant.length + ' Posts für Mum Life Balance gezählt.</div>';
 
-    fuelle("#ov-du", deins.map(function (e) {
-      return { wann: fmtDate(e.datum),
-               text: (e.b.titel || e.b.format) + " — " + e.was,
-               hinweis: "Öffnet die Woche und klappt den Platz auf",
-               gehe: function () { springeZuBeitrag(e.b); } };
-    }), "Nichts, das auf dich wartet.");
+    // PIE
+    var pie = { P: 0, I: 0, E: 0 };
+    state.posts.forEach(function (p) { if (pie[p.pie] != null) pie[p.pie]++; });
+    var pieSum = pie.P + pie.I + pie.E || 1;
+    main.querySelector("#ov-pie").innerHTML = '<div class="bars">' + ["P", "I", "E"].map(function (k) {
+      var label = { P: "Persönlichkeit", I: "Inspiration", E: "Expertise" }[k];
+      var pct = Math.round(pie[k] / pieSum * 100);
+      return '<div class="bar-row"><div class="bar-lab"><span>' + label + '</span><b>' + pie[k] + ' · ' + pct + '%</b></div>' +
+        '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div></div>';
+    }).join("") + '</div><div class="note" style="margin-top:10px">Gezählt über alle Zeilen in der Content-Planung.</div>';
 
-    fuelle("#ov-raus", raus.map(function (b) {
-      return { wann: fmtDate((blo(b.obj) || {}).datum), text: b.titel || b.format,
-               hinweis: "Zu „Freigeben“",
-               gehe: function () { activeTab = "fertig"; render(); } };
-    }), "Nichts freigabebereit.");
+    // Archetypen
+    var arche = ARCHETYPEN.filter(function (a) { return a !== "—"; });
+    var maxA = 1;
+    arche.forEach(function (a) { maxA = Math.max(maxA, state.posts.filter(function (p) { return p.archetyp === a; }).length); });
+    var leer = [];
+    main.querySelector("#ov-arche").innerHTML = arche.map(function (a) {
+      var c = state.posts.filter(function (p) { return p.archetyp === a; }).length;
+      if (!c) leer.push(a.split(" ")[a.split(" ").length - 1]);
+      return '<div class="bar-row"><div class="bar-lab"><span>' + esc(a) + '</span><b>' + c + '</b></div>' +
+        '<div class="bar-track"><div class="bar-fill" style="width:' + Math.round(c / maxA * 100) + '%"></div></div></div>';
+    }).join("") + '<div class="note" style="margin-top:10px">' +
+      (leer.length ? "Noch nichts für: " + esc(leer.join(", ")) + "." : "Alle Archetypen kommen vor.") + '</div>';
 
-    var next = [];
-    if (jahresplan && jahresplan.eintraege) {
-      next = jahresplan.eintraege.filter(function (e) {
-        return e.start && e.start >= heute && e.bereich !== "Ferien";
-      }).sort(function (a, c) { return a.start < c.start ? -1 : 1; })
-        .map(function (e) {
-          return { wann: fmtDate(e.start), text: e.name,
-                   hinweis: "Zum Jahresplan",
-                   gehe: function () { activeTab = "launches"; render(); } };
-        });
-    }
-    fuelle("#ov-next", next, jahresplan ? "Nichts mehr geplant dieses Jahr."
-                                        : "Jahresplan nicht geladen.");
+    // Leads
+    var l = main.querySelector("#ov-leads");
+    if (!heisseLeads.length) l.innerHTML = '<div class="empty">Gerade niemand im Gespräch.</div>';
+    heisseLeads.slice(0, 7).forEach(function (x) {
+      var d = document.createElement("div");
+      d.className = "mini-row";
+      d.innerHTML = '<span class="m-main"><b>' + esc(x.name || "ohne Namen") + '</b><br><span class="note">' + esc(x.schritt || "kein nächster Schritt notiert") + '</span></span>' +
+        '<span class="chip orange">' + esc(x.status) + '</span>';
+      l.appendChild(d);
+    });
+
+    // Rangfortschritt
+    var r = main.querySelector("#ov-rang");
+    var ovIst = Number(settings.ovIst) || 0, ovZiel = Number(settings.ovZiel) || 0;
+    var pctR = ovZiel ? Math.min(100, Math.round(ovIst / ovZiel * 100)) : 0;
+    r.innerHTML =
+      '<div class="bar-row"><div class="bar-lab"><span>Organisationsvolumen</span><b>' + ovIst.toLocaleString("de-CH") + " von " + ovZiel.toLocaleString("de-CH") + '</b></div>' +
+      '<div class="bar-track"><div class="bar-fill" style="width:' + pctR + '%"></div></div></div>' +
+      '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">' +
+        '<div class="field" style="flex:1 1 110px"><label>Rang jetzt</label><input id="r-jetzt" value="' + esc(settings.rangJetzt || "") + '"></div>' +
+        '<div class="field" style="flex:1 1 110px"><label>Rang Ziel</label><input id="r-ziel" value="' + esc(settings.rangZiel || "") + '"></div>' +
+        '<div class="field" style="flex:1 1 90px"><label>OV ist</label><input id="r-ist" type="number" value="' + ovIst + '"></div>' +
+        '<div class="field" style="flex:1 1 90px"><label>OV nötig</label><input id="r-zielov" type="number" value="' + ovZiel + '"></div>' +
+      '</div>' +
+      '<div class="note" style="margin-top:10px">Aktiv im Team: ' +
+      state.team.filter(function (t) { return t.aktiv === "Ja"; }).length + " von " + state.team.length + '.</div>';
+    [["#r-jetzt", "rangJetzt"], ["#r-ziel", "rangZiel"], ["#r-ist", "ovIst"], ["#r-zielov", "ovZiel"]].forEach(function (x) {
+      var el = r.querySelector(x[0]);
+      el.oninput = function () { settings[x[1]] = el.type === "number" ? Number(el.value) : el.value; saveSettings(); };
+      el.onchange = function () { render(); };
+    });
   }
 
   function wocheAnlegen() {
@@ -7395,12 +6696,6 @@
     }
     var alle = zieleD.items;
     var aktiv = alle.filter(function (z) { return z.status !== "Erreicht"; });
-    /* 🚨 Q2-Ziele standen Ende September noch auf „Aktiv". Der Abgleich sagt
-       das, ohne den Status anzufassen — der gehoert Patricia. */
-    var abgelaufen = alle.filter(function (z) {
-      var b = befundVon("ziele", z.id);
-      return b && b.befund === "abgelaufen";
-    });
     var mitIst = alle.filter(function (z) { return z.ist_text; });
 
     main.innerHTML =
@@ -7414,21 +6709,7 @@
            "Stand " + esc(zieleD.stand || "")) +
       tile("Gemessen", mitIst.length + " von " + alle.length,
            "mit echtem Ist-Stand") +
-      (abgelaufen.length
-        ? tile("Quartal vorbei", abgelaufen.length, "steht noch auf „Aktiv“")
-        : "") +
-      '</div>' +
-      (abgelaufen.length
-        ? '<div class="panel warn"><strong>' + abgelaufen.length +
-          ' Ziele tragen ein Quartal, das vorbei ist, und stehen trotzdem auf ' +
-          '„Aktiv“.</strong> Das kam so aus Notion. Ich ändere den Status nicht ' +
-          '— entscheide selbst, ob sie erreicht, verschoben oder hinfällig sind:' +
-          '<ul style="margin:8px 0 0 18px">' +
-          abgelaufen.map(function (z) {
-            return '<li>' + esc(z.quartal || "") + " · " + esc(z.name) + '</li>';
-          }).join("") + '</ul></div>'
-        : "") +
-      '<div id="zlliste"></div>';
+      '</div><div id="zlliste"></div>';
 
     var box = main.querySelector("#zlliste");
     alle.forEach(function (z) {
@@ -7910,16 +7191,6 @@
         liste.appendChild(jpZeile(e));
       });
 
-    /* 🚨 Ein Befund, der wie ein Vorwurf aussieht, wird entweder geglaubt und
-       ist dann falsch — oder ignoriert, und dann war die Liste umsonst. */
-    if (Object.keys(planungAbgleich.jahresplan || {}).length) {
-      var hw = document.createElement("p");
-      hw.className = "note";
-      hw.style.marginTop = "14px";
-      hw.textContent = ABGLEICH_HINWEIS;
-      liste.appendChild(hw);
-    }
-
     main.querySelector("#jpneu").onclick = function () {
       jahresplan.eintraege.push({
         id: uid("jp"), name: "Neuer Eintrag", start: heute, ende: heute,
@@ -7963,14 +7234,6 @@
     z.appendChild(feld("text", "name", "100%"));
     z.appendChild(feld(null, "bereich", "150px", JP_BEREICHE));
     z.appendChild(feld(null, "stufe", "96px", JP_STUFEN));
-    // Befund aus dem Workspace-Abgleich — siehe patch-planung-befunde.py.
-    var bf = befundChip("jahresplan", e.id);
-    if (bf) {
-      var bx = document.createElement("span");
-      bx.className = "jp-befund";
-      bx.innerHTML = bf;
-      z.appendChild(bx);
-    }
 
     var weg = document.createElement("button");
     weg.className = "del";
@@ -9968,15 +9231,11 @@
 
   function saveReel(r) {
     if (!r) return;
-    r.updatedAt = new Date().toISOString();
-    lsSet("rl-" + r.id, r);
-    lsSet("reelliste", state.reels.map(function (x) { return x.id; }));
     clearTimeout(saveTimers["rl-" + r.id]);
-    /* Der Zeitgeber-Inhalt als benannte Funktion: sie liegt im
-       Merkzettel UND laeuft nach 700 ms. Ohne den Eintrag war
-       sofortSichern() wirkungslos. */
-    var tun = function () {
-      delete ausstehend["rl-" + r.id];
+    saveTimers["rl-" + r.id] = setTimeout(function () {
+      r.updatedAt = new Date().toISOString();
+      lsSet("rl-" + r.id, r);
+      lsSet("reelliste", state.reels.map(function (x) { return x.id; }));
       if (!db) { setSaveState("lokal gespeichert", "off"); return; }
       db.collection("reels").doc(r.id).set({
         // 🚨 Feste Feldliste: was hier fehlt, ist nach dem naechsten
@@ -10006,9 +9265,7 @@
         blotato: r.blotato || null, updatedAt: r.updatedAt
       }).then(function () { setSaveState("gespeichert", "on"); })
         .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
-    };
-    ausstehend["rl-" + r.id] = tun;
-    saveTimers["rl-" + r.id] = setTimeout(tun, 700);
+    }, 700);
   }
 
   function currentReel() {
@@ -10833,9 +10090,6 @@
      Render-Dispatcher
      ========================================================= */
   function render() {
-    // Jeder Durchlauf rechnet neu — sonst schleppt die Seite eine Belegung
-    // mit, die niemand gesetzt hat.
-    slotVorschau = {};
     renderNav();
     var main = document.getElementById("main");
     if (activeTab === "uebersicht") renderUebersicht(main);
@@ -10857,7 +10111,6 @@
     else if (activeTab === "aufgaben") renderAufgaben(main);
     else if (activeTab === "ziele") renderZiele(main);
     else if (activeTab === "woche") renderWoche(main);
-    else if (activeTab === "ideenextern") renderIdeenExtern(main);
     else if (activeTab === "fertig") renderFertig(main);
     else if (activeTab === "gepostet") renderGepostet(main);
     else if (activeTab === "zahlen") renderZahlen(main);
@@ -10869,11 +10122,6 @@
      Start: lokal laden, dann Datenbank drüberlegen
      ========================================================= */
   DOC_KEYS.forEach(function (k) { state[k] = lsGet(k, []); });
-  freigaben = lsGet("freigaben", {}) || {};
-  igZuordnung = lsGet("ig-zuordnung", { zuordnung: {} }) || { zuordnung: {} };
-  ideenExtern = lsGet("ideen-extern", { ideen: [] }) || { ideen: [] };
-  planungAbgleich = lsGet("planung-abgleich", { jahresplan: {}, ziele: {} })
-    || { jahresplan: {}, ziele: {} };
   Object.assign(settings, lsGet("einstellungen", {}) || {});
   Object.assign(mailings, lsGet("mailings", {}) || {});
   produktdetails = lsGet("produkt-details", {}) || {};
@@ -10964,11 +10212,8 @@
         qs.docs.forEach(function (doc) {
           var d0 = doc.data() || {};
           if (!d0.frames || !d0.frames.length) return;
-          // 🚨 Die Leseliste muss so lang sein wie die Schreibliste, sonst
-          // kommen Felder nie an. profil, kommentar*, abgelehnt* und blotato
-          // fehlten hier bis 24.09.2026.
-          var st = { id: doc.id, name: d0.name || "Sequenz", brand: d0.brand || "mlb_dark", handle: d0.handle || "", phase: d0.phase || "", frames: d0.frames, datum: d0.datum || "", textfrei: !!d0.textfrei, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", blotato: d0.blotato || null, updatedAt: d0.updatedAt || "" };
-          if (seen[st.id]) dbUebernehmen(seen[st.id], st); else state.storys.push(st);
+          var st = { id: doc.id, name: d0.name || "Sequenz", brand: d0.brand || "mlb_dark", handle: d0.handle || "", phase: d0.phase || "", frames: d0.frames, datum: d0.datum || "", textfrei: !!d0.textfrei, updatedAt: d0.updatedAt || "" };
+          if (seen[st.id]) Object.assign(seen[st.id], st); else state.storys.push(st);
         });
         state.storys.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });
         if (!activeStory && state.storys.length) activeStory = state.storys[0].id;
@@ -10984,39 +10229,13 @@
         });
         render();
       }).catch(function () {});
-      /* Die Freigabe-Sammlung - bis 24.09.2026 wurde sie nur beschrieben. */
-      db.doc("daten/planung-abgleich").onSnapshot(function (snap) {
-        if (!snap.exists) return;
-        planungAbgleich = snap.data() || { jahresplan: {}, ziele: {} };
-        lsSet("planung-abgleich", planungAbgleich);
-        if (activeTab === "launches" || activeTab === "ziele") render();
-      }, function () {});
-      db.doc("daten/ideen-extern").onSnapshot(function (snap) {
-        if (!snap.exists) return;
-        ideenExtern = snap.data() || { ideen: [] };
-        lsSet("ideen-extern", ideenExtern);
-        if (activeTab === "ideenextern") render();
-      }, function () {});
-      db.doc("daten/gepostet-zuordnung").onSnapshot(function (snap) {
-        if (!snap.exists) return;
-        igZuordnung = snap.data() || { zuordnung: {} };
-        lsSet("ig-zuordnung", igZuordnung);
-        render();
-      }, function () {});
-      db.collection("freigaben").limit(300).get().then(function (qs) {
-        var m = {};
-        qs.docs.forEach(function (doc) { m[doc.id] = doc.data() || {}; });
-        freigaben = m;
-        lsSet("freigaben", m);
-        render();
-      }).catch(function () {});
       db.collection("reels").limit(60).get().then(function (qs) {
         var seen = {};
         state.reels.forEach(function (x) { seen[x.id] = x; });
         qs.docs.forEach(function (doc) {
           var d0 = doc.data() || {};
           var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", coverhook: d0.coverhook || "", coverunter: d0.coverunter || "", videoart: d0.videoart || "sprech", hinweis: d0.hinweis || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", texty: (typeof d0.texty === "number") ? d0.texty : null, textskala: d0.textskala || 100, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", videourl: d0.videourl || "", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, updatedAt: d0.updatedAt || "" };
-          if (seen[rl.id]) dbUebernehmen(seen[rl.id], rl); else state.reels.push(rl);
+          if (seen[rl.id]) Object.assign(seen[rl.id], rl); else state.reels.push(rl);
         });
         state.reels.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });
         if (!activeReel && state.reels.length) activeReel = state.reels[0].id;
