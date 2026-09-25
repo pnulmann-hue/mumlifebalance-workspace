@@ -430,6 +430,9 @@
     font-size: 13px;
   }
   .fnpost:first-child { border-top: 0; }
+  .fnpost.fnklick { cursor: pointer; }
+  .fnpost.fnklick:hover { background: var(--surface-2); }
+  .fnpost.fnklick .fnptext { color: var(--teal); }
   .fnpdat { font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
   .fnptext { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .fnpreach { font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
@@ -2467,6 +2470,68 @@
     return beitraege;
   }
 
+  /* Wann geht dieser Beitrag raus?
+     🚨 EINE Stelle dafuer. Vorher stand an vier Stellen `blo(b.obj).datum` —
+     das ist das alte Blotato-Feld aus dem Karussell-Editor und bei fast allen
+     Beitraegen leer. Das echte Datum setzt die Wochenkarte in `obj.datum`.
+     Folge: von 16 Zeilen auf der Uebersicht trugen 6 ein Datum. */
+  function datumVon(b) {
+    var o = (b && b.obj) || b || {};
+    return o.datum || ((o.blotato || {}).datum) || "";
+  }
+
+  /* Einen Beitrag ueber seine Kennung finden — die Bruecke fuer jede
+     Verlinkung, egal aus welchem Reiter. */
+  function beitragNach(id) {
+    if (!id) return null;
+    var alle = alleBeitraege();
+    for (var i = 0; i < alle.length; i++) {
+      if (alle[i].id === id) return alle[i];
+    }
+    return null;
+  }
+
+  /* Wie viele Wochen liegt ein Datum von der laufenden Woche entfernt?
+     Ueber den Montag beider Wochen gerechnet — die Tages-Differenz durch
+     sieben springt daneben. */
+  function wochenAbstand(iso) {
+    function montag(d) {
+      var x = new Date(d + "T00:00:00");
+      if (isNaN(x)) return null;
+      x.setDate(x.getDate() - ((x.getDay() + 6) % 7));
+      x.setHours(0, 0, 0, 0);
+      return x;
+    }
+    var a = montag(todayISO()), b = montag(iso);
+    if (!a || !b) return null;
+    return Math.round((b - a) / 604800000);
+  }
+
+  /* 🚨 Stand bis 25.09.2026 INNERHALB von renderUebersicht und war damit fuer
+     `unterBlock` unsichtbar — der Klick auf einen Hook in „Was wann rausgeht"
+     hat nie etwas getan. Gefangen hat das eine `typeof`-Abfrage, und genau
+     deshalb ist es niemandem aufgefallen. */
+  function springeZuBeitrag(b) {
+    if (!b) { toast("Diesen Beitrag gibt es im Cockpit nicht mehr."); return; }
+    var d = datumVon(b);
+    activeTab = "woche";
+    var ab = d ? wochenAbstand(d) : null;
+    if (ab !== null) {
+      wochenOffset = ab;
+      // Ohne Datum kein aufgeklappter Platz — sonst oeffnet sich ein
+      // beliebiger und man haelt den falschen Beitrag fuer den gesuchten.
+      slotOffen = d + "|" + kartenProfil(b.obj);
+    } else {
+      // Liegt ohne Datum im Vorrat: die laufende Woche zeigen und sagen,
+      // wo er steht. Eine stumme Ansicht sieht aus wie ein toter Klick.
+      wochenOffset = 0;
+      slotOffen = null;
+      toast("„" + (b.titel || "Der Beitrag") + "“ hat noch kein Datum — " +
+            "er steht unten in der Ideenliste.");
+    }
+    render();
+  }
+
   /* Was in den Arbeitsansichten auftaucht. Abgelehntes nie. */
   function offeneBeitraege() {
     return alleBeitraege().filter(function (b) { return !istAbgelehnt(b); });
@@ -2919,9 +2984,10 @@
         // Patricia, 24.09.2026: „brauche ich auch die verlinkung zum beitrag.
         // dann könnte ich neue daten setzen." Beides - das Feld fuer den
         // schnellen Weg, der Klick fuer den ganzen Beitrag.
-        z.querySelector(".uehook").onclick = function () {
-          if (typeof springeZuBeitrag === "function") springeZuBeitrag(b);
-        };
+        // 🚨 Ohne typeof-Abfrage. Die hat bis 25.09.2026 verdeckt, dass die
+        // Funktion hier gar nicht sichtbar war — der Klick tat nichts, und
+        // niemand bekam es mit.
+        z.querySelector(".uehook").onclick = function () { springeZuBeitrag(b); };
         z.querySelector(".uedat").onchange = function () {
           if (this.value) umplanen(b, this.value);
         };
@@ -4492,7 +4558,7 @@
     var meins = [], deins = [];
     offen.forEach(function (b) {
       (wasFehlt(b) || []).forEach(function (f) {
-        var e = { b: b, was: f.was, dazu: f.dazu, datum: (blo(b.obj) || {}).datum || "" };
+        var e = { b: b, was: f.was, dazu: f.dazu, datum: datumVon(b) };
         (f.wer === "du" ? deins : meins).push(e);
       });
     });
@@ -4502,7 +4568,7 @@
     var raus = offen.filter(function (b) {
       return istFertig(b) && !zeitpunktVorbei(b);
     }).sort(function (a, c) {
-      return ((blo(a.obj) || {}).datum || "9999") < ((blo(c.obj) || {}).datum || "9999") ? -1 : 1;
+      return (datumVon(a) || "9999") < (datumVon(c) || "9999") ? -1 : 1;
     });
 
     /* Fehlt ein Dokument, steht ein Strich - nicht eine Null. */
@@ -4554,36 +4620,6 @@
         '<div class="karte"><h3>Als Nächstes</h3><div id="ov-next"></div></div>' +
       '</div>';
 
-    /* Wie viele Wochen liegt ein Datum von der laufenden Woche entfernt?
-       Ueber den Montag beider Wochen gerechnet - siehe Kopf des
-       Patch-Skripts, die Tages-Differenz durch sieben springt daneben. */
-    function wochenAbstand(iso) {
-      function montag(d) {
-        var x = new Date(d + "T00:00:00");
-        if (isNaN(x)) return null;
-        x.setDate(x.getDate() - ((x.getDay() + 6) % 7));
-        x.setHours(0, 0, 0, 0);
-        return x;
-      }
-      var a = montag(todayISO()), b = montag(iso);
-      if (!a || !b) return null;
-      return Math.round((b - a) / 604800000);
-    }
-
-    function springeZuBeitrag(b) {
-      var d = (blo(b.obj) || {}).datum || "";
-      activeTab = "woche";
-      var ab = d ? wochenAbstand(d) : null;
-      if (ab !== null) {
-        wochenOffset = ab;
-        // Ohne Datum kein aufgeklappter Platz - sonst oeffnet sich ein
-        // beliebiger und man haelt den falschen Beitrag fuer den gesuchten.
-        slotOffen = d + "|" + (typeof kartenProfil === "function"
-          ? kartenProfil(b.obj) : "mentoring");
-      }
-      render();
-    }
-
     function fuelle(id, zeilen, leertext) {
       var el = main.querySelector(id);
       if (!zeilen.length) { el.innerHTML = '<div class="leer">' + esc(leertext) + '</div>'; return; }
@@ -4617,7 +4653,7 @@
     }), "Nichts, das auf dich wartet.");
 
     fuelle("#ov-raus", raus.map(function (b) {
-      return { wann: fmtDate((blo(b.obj) || {}).datum), text: b.titel || b.format,
+      return { wann: fmtDate(datumVon(b)), text: b.titel || b.format,
                hinweis: "Zu „Freigeben“",
                gehe: function () { activeTab = "fertig"; render(); } };
     }), "Nichts freigabebereit.");
@@ -5607,9 +5643,14 @@
           }).join(""));
       }
       if (gpl.length) {
+        /* Anklickbar: springt in die Woche des Beitrags und klappt den Platz
+           auf. Nicht als Link gebaut, weil das Ziel ein Reiter ist und keine
+           Adresse. */
         block("Geplant (" + gpl.length + ")",
           gpl.map(function (p) {
-            return '<div class="fnpost"><span class="fnpdat">' +
+            return '<div class="fnpost fnklick" data-bid="' + esc(p.id) + '" ' +
+              'title="Beitrag in der Wochen-Vorschau öffnen">' +
+              '<span class="fnpdat">' +
               (p.datum ? esc(fmtDate(p.datum)) : "ohne Datum") + '</span>' +
               '<span class="fnptext">' + esc(p.name || p.id) + '</span>' +
               '<span class="fnpreach">' + esc(p.art || "") + '</span></div>';
@@ -5620,6 +5661,12 @@
           esc(f.keyword) + '“. Die Automation läuft leer — hier kommt niemand ' +
           'rein, egal wie gut sie gebaut ist.</p>');
       }
+      /* Erst anhaengen, dann verdrahten — vorher gibt es die Knoten nicht. */
+      [].forEach.call(k.querySelectorAll(".fnklick"), function (z) {
+        z.onclick = function () {
+          springeZuBeitrag(beitragNach(z.getAttribute("data-bid")));
+        };
+      });
       box.appendChild(k);
     });
   }
