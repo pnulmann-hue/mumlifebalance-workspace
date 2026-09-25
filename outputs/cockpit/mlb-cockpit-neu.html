@@ -1951,11 +1951,37 @@
      ========================================================= */
   var W = 1080, H = 1350;
 
+  /* 🚨 Ein Wort, das allein schon breiter ist als die Flaeche, passt in keine
+     Zeile und laeuft seitlich hinaus — das clip() schneidet es ab, mitten im
+     Wort. Genau das hat Patricia am 25.09.2026 gemeldet. Deshalb die
+     Notbremse: zu breite Woerter zeichenweise trennen. Alles andere bricht
+     weiter an Leerzeichen. */
+  function hartTrennen(ctx, wort, maxW) {
+    if (ctx.measureText(wort).width <= maxW) return [wort];
+    var teile = [], rest = wort;
+    while (rest && ctx.measureText(rest).width > maxW) {
+      var n = 1;
+      while (n < rest.length &&
+             ctx.measureText(rest.slice(0, n + 1)).width <= maxW) n++;
+      if (n < 1) n = 1;             // eine Zeichenbreite ist das Minimum
+      teile.push(rest.slice(0, n));
+      rest = rest.slice(n);
+    }
+    if (rest) teile.push(rest);
+    return teile;
+  }
+
   function wrap(ctx, text, maxW) {
     var out = [];
     String(text || "").split("\n").forEach(function (para) {
-      var words = para.split(/\s+/).filter(Boolean);
-      if (!words.length) { out.push(""); return; }
+      var roh = para.split(/\s+/).filter(Boolean);
+      if (!roh.length) { out.push(""); return; }
+      // Zu breite Woerter vorher aufteilen, damit die Zeilenlogik darunter
+      // nie ein Wort bekommt, das sie nicht unterbringen kann.
+      var words = [];
+      roh.forEach(function (w) {
+        hartTrennen(ctx, w, maxW).forEach(function (t) { words.push(t); });
+      });
       var line = words[0];
       for (var i = 1; i < words.length; i++) {
         var test = line + " " + words[i];
@@ -1975,8 +2001,16 @@
       if (lines.length * size * lh <= maxH) return { size: size, lines: lines };
       size -= 4;
     }
+    /* 🚨 Passt es auch bei der kleinsten Schrift nicht, kamen bisher trotzdem
+       ALLE Zeilen zurueck — gezeichnet wurde bis zum Rand, der Rest verschwand
+       lautlos. Jetzt steht das im Ergebnis, und die Ansicht sagt es.
+       Still kuerzen waere falsch: ein abgeschnittener Text sieht aus wie ein
+       fertiger, und nur Patricia weiss, welcher Satz weg darf. */
     ctx.font = weight + " " + min + "px " + family;
-    return { size: min, lines: wrap(ctx, text, maxW) };
+    var rest = wrap(ctx, text, maxW);
+    return { size: min, lines: rest,
+             zuLang: rest.length * min * lh > maxH,
+             passtNicht: Math.max(0, rest.length - Math.floor(maxH / (min * lh))) };
   }
 
   function drawCover(ctx, img, x, y, w, h, zoom, ox, oy) {
