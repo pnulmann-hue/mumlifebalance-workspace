@@ -18,13 +18,13 @@ Newsletter / Storys ─► /ki-masterclass/ ─► Formular 69 ─► Opt-in-Mai
 
 | Seite | WP | Status | Was fehlt noch |
 |---|---|---|---|
-| `/stimm-check/` Landingpage | 4262 | Entwurf | Adresse des Stimm-Check-Formulars |
+| `/stimm-check/` Landingpage im **Minikurs-Baukasten**, Formular 71 eingebettet | 4262 | Entwurf | 👩 CSS `outputs/salespages/stimm-check/stimm-check.css` in den Customizer |
 | `/stimm-check-los/` nach der Bestätigung, mit Masterclass-Hinweis | 4263 | Entwurf | Adresse des Tools |
 | `/ki-masterclass/` Landingpage | 4266 | Entwurf | nichts — Knöpfe zeigen auf Formular 69 |
 | `/ki-masterclass-danke/` nach der Bestätigung | 4258 | **live** | Stimm-Check-Block erscheint, sobald das Tool läuft |
 
-Deploy: `scripts/wordpress/deploy-stimm-check-seiten.mjs` (die ersten drei) und
-`deploy-ki-masterclass-danke.mjs`. Quellen in `outputs/salespages/*.html`.
+Deploy: `deploy-stimm-check-lp.mjs` (Landingpage, baut über `scripts/salespage-design/stimm-check-bauen.py`) ·
+`deploy-stimm-check-seiten.mjs` (/stimm-check-los/ + /ki-masterclass/) · `deploy-ki-masterclass-danke.mjs`. Quellen in `outputs/salespages/*.html`.
 
 ## ActiveCampaign
 
@@ -36,7 +36,7 @@ Deploy: `scripts/wordpress/deploy-stimm-check-seiten.mjs` (die ersten drei) und
 - Opt-in-Mail: `mails/masterclass-00-optin.html` · nach der Bestätigung weiterleiten auf `https://mumlifebalance.ch/ki-masterclass-danke/`
 - Du statt Sie in den Feldern, Datenschutz-Häkchen **nicht** vorangekreuzt, Untertitel „hinter **die** Kulissen“
 
-### Neues Formular — Stimm-Check (anlegen, 👩: Formular 69 duplizieren)
+### Formular 71 — Stimm-Check (angelegt 25.09. ✓ Tag, Liste, Opt-in, Weiterleitung stimmen)
 - **Name:** 0€ Stimm-Check · **Titel:** Dein Stimm-Check · **Untertitel:** Die sechs Angaben, die deine KI von dir braucht, damit sie klingt wie du
 - **Felder:** Vorname („Dein Vorname“) · E-Mail („Deine E-Mail“) · Datenschutz, nicht vorangekreuzt
 - **Knopf:** Zum Stimm-Check

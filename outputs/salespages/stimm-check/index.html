@@ -1,0 +1,540 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Stimm-Check · Vorschau</title><link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet"><style>body{margin:0}
+/* === STIMM-CHECK-LANDINGPAGE (auto) === */
+.sc-sp, .sc-sp * { margin: 0; padding: 0; box-sizing: border-box; }
+.sc-sp { --black: #12828c;   
+      --cream: #ffffff;   
+      --gold: #dc822e;    
+      --gold-2: #f2c08a;  
+      --ink: #0c1c30;     
+      --white: #ffffff;
+      --muted: #5c6b75;   
+      --muted-light: #c9e2e3; }
+.sc-sp { font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--black);
+      color: #fff;
+      overflow-x: hidden;
+      line-height: 1.5; }
+.sc-sp img { max-width: 100%; display: block; }
+.sc-sp .wrap { max-width: 1160px; margin: 0 auto; padding: 0 22px; }
+.sc-sp .gold { color: var(--gold); }
+.sc-sp em.i { font-style: italic; }
+.sc-sp .cta { display: inline-block;
+      background: var(--gold);
+      color: #fff;
+      padding: 22px 46px;
+      font-weight: 800;
+      font-size: clamp(15px, 2vw, 21px);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 14px 34px rgba(41, 85, 109, 0.32);
+      text-align: center; }
+.sc-sp .cta:hover { background: var(--gold-2); transform: translateY(-2px); }
+.sc-sp .cta-wide { display: block; max-width: 720px; margin: 0 auto; }
+.sc-sp .sec-dark { background: var(--black); color: #fff; }
+.sc-sp .sec-cream { background: var(--cream); color: var(--ink); }
+.sc-sp .sec-berry { background: #0d626a; color: #fff; }
+.sc-sp section { padding: 84px 0; }
+.sc-sp h1, .sc-sp h2, .sc-sp h3 { font-weight: 800; line-height: 1.08; letter-spacing: -0.5px; }
+.sc-sp .hero { padding: 46px 0 20px; text-align: center; }
+.sc-sp .logo-script { font-family: 'Philosopher', cursive;
+      font-size: clamp(46px, 6vw, 72px);
+      color: var(--gold-2);
+      line-height: 1;
+      margin-bottom: 22px; }
+.sc-sp .hero h1 { font-size: clamp(32px, 5.4vw, 66px);
+      text-transform: uppercase;
+      max-width: 1000px;
+      margin: 0 auto; }
+.sc-sp .hero .sub { font-size: clamp(16px, 2vw, 22px);
+      font-weight: 500;
+      max-width: 760px;
+      margin: 26px auto 0;
+      color: #e4f0f0; }
+.sc-sp .hero .sub b { color: #fff; font-weight: 800; }
+.sc-sp .collage { position: relative;
+      max-width: 1000px;
+      margin: 44px auto 0;
+      min-height: 380px; }
+.sc-sp .collage .carousel-main { position: relative;
+      z-index: 4;
+      width: 270px;
+      margin: 0 auto;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.6);
+      border: 3px solid #ffffff; }
+.sc-sp .collage .card { background: #fff;
+      color: var(--ink);
+      border-radius: 12px;
+      box-shadow: 0 22px 50px rgba(0,0,0,0.5);
+      padding: 20px 22px;
+      text-align: left; }
+.sc-sp .collage .stat .n { font-size: 34px;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1; }
+.sc-sp .collage .stat .l { font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 6px; }
+.sc-sp .collage .ins { padding: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 22px 50px rgba(0,0,0,0.5); }
+.sc-sp .collage .ins img { width: 100%; }
+.sc-sp .collage .bubble { background: var(--gold-2);
+      color: #0c1c30;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 12px 18px;
+      border-radius: 16px;
+      position: relative;
+      box-shadow: 0 14px 30px rgba(0,0,0,0.4); }
+.sc-sp .collage .bubble::after { content: "";
+      position: absolute;
+      bottom: -10px; left: 26px;
+      border: 10px solid transparent;
+      border-top-color: var(--gold-2);
+      border-bottom: 0; }
+@media (min-width: 861px){
+.sc-sp .collage .el { position: absolute; }
+.sc-sp .collage .e-tl { top: 8%; left: 0; width: 240px; transform: rotate(-5deg); }
+.sc-sp .collage .e-tr { top: 2%; right: 0; width: 260px; transform: rotate(4deg); }
+.sc-sp .collage .e-ml { top: 46%; left: 4%; width: 210px; transform: rotate(-3deg); }
+.sc-sp .collage .e-mr { top: 40%; right: 3%; width: 250px; transform: rotate(3deg); }
+.sc-sp .collage .e-bubble { top: 30%; left: 20%; transform: rotate(-4deg); z-index: 6; }
+}
+@media (max-width: 860px){
+.sc-sp .collage { min-height: 0; display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.sc-sp .collage .el { width: 100%; max-width: 340px; }
+.sc-sp .collage .e-bubble { order: -1; }
+}
+.sc-sp .strip-head { text-align: center; font-size: clamp(20px, 3vw, 32px); font-weight: 800; color: #fff; margin-bottom: 46px; }
+.sc-sp .strip-head .gold { color: var(--gold-2); }
+.sc-sp .stats-strip { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
+@media (max-width: 760px){
+.sc-sp .stats-strip { grid-template-columns: repeat(2,1fr); gap: 34px 20px; }
+}
+.sc-sp .sstat { text-align: center; }
+.sc-sp .sstat .n { font-size: clamp(34px, 5vw, 54px); font-weight: 900; color: #fff; line-height: 1; }
+.sc-sp .sstat .l { font-size: 12.5px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--gold-2); margin-top: 12px; line-height: 1.45; }
+.sc-sp .band { padding: 66px 0; text-align: center; }
+.sc-sp .band .stmt { font-size: clamp(21px, 3.4vw, 38px);
+      font-weight: 800;
+      line-height: 1.25;
+      max-width: 960px;
+      margin: 0 auto 34px; }
+.sc-sp .band.sec-cream .stmt { color: var(--ink); }
+.sc-sp .band .stmt.no-cta { margin-bottom: 0; }
+.sc-sp .eyebrow-c { text-align: center; font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-2); margin-bottom: 16px; }
+.sc-sp .sec-cream .eyebrow-c { color: var(--gold); }
+.sc-sp .story-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 46px; align-items: start; max-width: 1080px; margin: 0 auto; }
+@media (max-width: 860px){
+.sc-sp .story-grid { grid-template-columns: 1fr; gap: 30px; }
+}
+.sc-sp .story-head { font-size: clamp(24px, 3.8vw, 44px); color: var(--ink); text-transform: none; margin-bottom: 24px; }
+.sc-sp .story-head .gold { color: var(--gold); }
+.sc-sp .story-narr p { font-size: 17px; line-height: 1.75; color: var(--muted); margin-bottom: 18px; }
+.sc-sp .story-narr p:last-child { margin-bottom: 0; }
+.sc-sp .story-narr p b { color: var(--ink); font-weight: 700; }
+.sc-sp .painlist { background: #fff; border: 1px solid #dfeaea; border-radius: 16px; box-shadow: 0 22px 50px rgba(0,0,0,0.09); padding: 8px 26px; }
+.sc-sp .pain { display: flex; gap: 14px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e9f1f1; font-size: 15.5px; color: var(--muted); line-height: 1.55; }
+.sc-sp .pain:last-child { border-bottom: none; }
+.sc-sp .pain .x { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #ddebeb; color: var(--black); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 13px; margin-top: 1px; }
+.sc-sp .mech-head { text-align: center; font-size: clamp(26px, 4.2vw, 48px); text-transform: none; max-width: 900px; margin: 0 auto 20px; }
+.sc-sp .mech-head .gold { color: var(--gold-2); }
+.sc-sp .mech-sub { text-align: center; font-size: 17px; line-height: 1.75; max-width: 740px; margin: 0 auto 14px; color: #e4f0f0; }
+.sc-sp .ba { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 900px; margin: 44px auto 0; }
+@media (max-width: 760px){
+.sc-sp .ba { grid-template-columns: 1fr; }
+}
+.sc-sp .bax { background: #fff; color: var(--ink); border-radius: 16px; padding: 28px 26px; box-shadow: 0 22px 50px rgba(0,0,0,0.16); }
+.sc-sp .bax.good { border: 3px solid var(--gold); }
+.sc-sp .bax .bh { font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #8ab8bb; margin-bottom: 16px; }
+.sc-sp .bax.good .bh { color: var(--gold); }
+.sc-sp .bax .br { display: flex; gap: 12px; align-items: flex-start; font-size: 15.5px; color: var(--muted); margin-bottom: 13px; line-height: 1.5; }
+.sc-sp .bax .br:last-child { margin-bottom: 0; }
+.sc-sp .bax .br .m { flex-shrink: 0; font-weight: 900; }
+.sc-sp .bax .br .x { color: #9ac4c7; }
+.sc-sp .bax.good .br .c { color: var(--gold); }
+.sc-sp .ba-label { text-align: center; font-style: italic; font-size: 15px; color: #e4f0f0; margin-top: 28px; }
+.sc-sp .steps-head { text-align: center;
+      font-size: clamp(26px, 4.4vw, 50px);
+      text-transform: none;
+      max-width: 900px;
+      margin: 0 auto 60px;
+      color: var(--ink); }
+.sc-sp .steps { display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+      align-items: start;
+      gap: 10px;
+      max-width: 1080px;
+      margin: 0 auto; }
+.sc-sp .step { text-align: center; position: relative; }
+.sc-sp .step .circle { width: 74px; height: 74px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: #fff;
+      font-weight: 900;
+      font-size: 30px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 22px;
+      box-shadow: 0 14px 30px rgba(220,130,46,0.4); }
+.sc-sp .step p { font-size: clamp(15px, 1.8vw, 18px); font-weight: 700; color: var(--ink); max-width: 300px; margin: 0 auto 20px; }
+.sc-sp .step p .gold { color: var(--gold); }
+.sc-sp .step .visual { border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+      border: 1px solid #f1ecdd; }
+.sc-sp .step .visual img { width: 100%; }
+.sc-sp .arrow { align-self: center;
+      font-size: 42px;
+      color: var(--black);
+      font-weight: 400;
+      padding-top: 20px; }
+.sc-sp .steps-note { text-align: center; font-style: italic; color: var(--muted); font-size: 15px; margin-top: 40px; }
+@media (max-width: 860px){
+.sc-sp .steps { grid-template-columns: 1fr; gap: 14px; }
+.sc-sp .arrow { transform: rotate(90deg); padding: 4px 0; }
+}
+.sc-sp .split { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; max-width: 1120px; margin: 0 auto; }
+.sc-sp .split .s-img { border-radius: 16px; overflow: hidden; box-shadow: 0 26px 60px rgba(0,0,0,0.2); }
+.sc-sp .split .s-img.photo { min-height: 420px; background: #d6e7e7 center/cover no-repeat; }
+.sc-sp .split h2 { font-size: clamp(26px, 3.6vw, 46px); color: var(--gold); text-transform: uppercase; margin-bottom: 22px; }
+.sc-sp .split.on-cream p { font-size: 17px; line-height: 1.75; color: var(--muted); margin-bottom: 16px; }
+.sc-sp .split .cta { margin-top: 12px; }
+@media (max-width: 820px){
+.sc-sp .split { grid-template-columns: 1fr; gap: 28px; }
+.sc-sp .split .s-img.photo { min-height: 300px; }
+}
+.sc-sp .inc-wrap { max-width: 1000px; margin: 0 auto; background: var(--cream); color: var(--ink); border-radius: 22px; border: 3px solid var(--gold); padding: 20px 20px 56px; box-shadow: 0 30px 70px rgba(0,0,0,0.5); }
+.sc-sp .inc-collage { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 8px 0 34px; }
+.sc-sp .inc-collage img { width: 150px; border-radius: 10px; box-shadow: 0 14px 30px rgba(0,0,0,0.16); }
+.sc-sp .inc-collage .price-tag { align-self: flex-start; background: var(--gold); color: #fff; font-weight: 800; padding: 8px 16px; border-radius: 6px; transform: rotate(-6deg); box-shadow: 0 10px 22px rgba(0,0,0,0.2); font-size: 15px; }
+.sc-sp .inc-title { text-align: center; font-size: clamp(24px, 3.6vw, 44px); margin: 0 auto 40px; }
+.sc-sp .inc-list { list-style: none; max-width: 780px; margin: 0 auto; }
+.sc-sp .inc-list li { display: flex; gap: 18px; align-items: flex-start; padding: 15px 0; }
+.sc-sp .inc-list li .ck { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%;
+      background: var(--black); color: var(--gold);
+      display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900;
+      margin-top: 2px; }
+.sc-sp .inc-list li span.txt { font-size: clamp(15px, 1.9vw, 18px); line-height: 1.55; color: var(--ink); }
+.sc-sp .inc-list li span.txt b { color: var(--gold); font-weight: 800; }
+.sc-sp .inc-list li span.txt em { font-style: italic; color: var(--muted); }
+.sc-sp .inc-price { text-align: center; margin: 48px auto 0; }
+.sc-sp .inc-price .old { font-size: clamp(24px, 4vw, 34px); font-weight: 700; color: #8ab8bb; text-decoration: line-through; }
+.sc-sp .inc-price .now { font-size: clamp(44px, 8vw, 72px); font-weight: 900; color: var(--black); line-height: 1; }
+.sc-sp .inc-price .save { display: block; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-top: 8px; }
+.sc-sp .inc-price .cta { margin-top: 28px; }
+.sc-sp .bonus-head { text-align: center; font-size: clamp(24px, 4vw, 46px); text-transform: none; color: var(--ink); max-width: 820px; margin: 0 auto 14px; }
+.sc-sp .bonus-head .gold { color: var(--gold); }
+.sc-sp .bonus-sub { text-align: center; font-size: 16px; color: var(--muted); max-width: 620px; margin: 0 auto 48px; }
+.sc-sp .bonus-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; max-width: 900px; margin: 0 auto; }
+@media (max-width: 700px){
+.sc-sp .bonus-grid { grid-template-columns: 1fr; }
+}
+.sc-sp .bcard { background: #fff; border: 1px solid #eee8d8; border-radius: 16px; padding: 28px; box-shadow: 0 18px 44px rgba(0,0,0,0.09); position: relative; }
+.sc-sp .bcard .tag { position: absolute; top: 24px; right: 24px; background: var(--gold); color: #fff; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 5px 12px; border-radius: 6px; }
+.sc-sp .bcard h3 { font-size: 20px; color: var(--ink); margin-bottom: 10px; padding-right: 96px; }
+.sc-sp .bcard p { font-size: 15px; color: var(--muted); line-height: 1.6; }
+.sc-sp .fw-head { text-align: center; font-size: clamp(26px, 4.2vw, 48px); text-transform: uppercase; max-width: 900px; margin: 0 auto 40px; }
+.sc-sp .fw-list { list-style: none; max-width: 760px; margin: 0 auto 48px; }
+.sc-sp .fw-list li { display: flex; gap: 16px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.12); font-size: clamp(15px, 1.9vw, 19px); }
+.sc-sp .fw-list li::before { content: "→"; color: var(--gold-2); font-weight: 900; flex-shrink: 0; }
+.sc-sp .fw-list li:last-child { border-bottom: none; }
+.sc-sp .guar { max-width: 840px; margin: 0 auto; display: grid; grid-template-columns: auto 1fr; gap: 34px; align-items: center; background: #fff; border: 3px solid var(--gold); border-radius: 20px; padding: 38px 40px; box-shadow: 0 26px 60px rgba(0,0,0,0.12); }
+@media (max-width: 640px){
+.sc-sp .guar { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+}
+.sc-sp .guar .seal { width: 120px; height: 120px; flex-shrink: 0; border-radius: 50%; background: var(--black); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 16px 34px rgba(18,130,140,0.35); }
+.sc-sp .guar .seal b { font-size: 42px; font-weight: 900; line-height: 1; color: var(--gold-2); }
+.sc-sp .guar .seal span { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
+.sc-sp .guar .gt b { display: block; font-size: 21px; color: var(--ink); margin-bottom: 10px; }
+.sc-sp .guar .gt p { font-size: 15.5px; color: var(--muted); line-height: 1.65; }
+.sc-sp .guar .gt .ph { color: var(--black); font-weight: 700; }
+.sc-sp .obj-head { text-align: center; font-size: clamp(26px, 4.2vw, 48px); text-transform: none; margin: 0 auto 44px; max-width: 820px; }
+.sc-sp .obj-head .gold { color: var(--gold-2); }
+.sc-sp .obj-grid { display: grid; gap: 14px; max-width: 820px; margin: 0 auto; }
+.sc-sp .ocard { background: #fff; border-radius: 14px; padding: 24px 28px; box-shadow: 0 14px 34px rgba(0,0,0,0.16); }
+.sc-sp .ocard .oq { display: block; font-weight: 800; font-size: 17px; color: var(--black); margin-bottom: 9px; }
+.sc-sp .ocard p { font-size: 15.5px; color: var(--muted); line-height: 1.65; }
+.sc-sp .faq-head { text-align: center; font-size: clamp(28px, 4.4vw, 50px); text-transform: uppercase; margin-bottom: 44px; color: var(--ink); }
+.sc-sp .faq-item { background: #fff; border: 1px solid #e9e3d2; border-radius: 10px; margin-bottom: 14px; padding: 22px 26px; cursor: pointer; max-width: 820px; margin-left: auto; margin-right: auto; }
+.sc-sp .faq-item summary { list-style: none; font-weight: 700; font-size: 17px; color: var(--ink); display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+.sc-sp .faq-item summary::-webkit-details-marker { display: none; }
+.sc-sp .faq-item summary::after { content: "+"; color: var(--gold); font-size: 28px; line-height: 1; transition: transform 0.2s; }
+.sc-sp .faq-item[open] summary::after { transform: rotate(45deg); }
+.sc-sp .faq-item p { margin-top: 15px; font-size: 16px; line-height: 1.7; color: var(--muted); }
+.sc-sp .final { text-align: center; }
+.sc-sp .final h2 { font-size: clamp(30px, 5.4vw, 62px); text-transform: uppercase; max-width: 900px; margin: 0 auto 22px; }
+.sc-sp .final p { font-size: 18px; color: #ddd6c6; max-width: 640px; margin: 0 auto 36px; }
+.sc-sp footer { background: #0d626a; text-align: center; padding: 50px 20px; border-top: 1px solid #ffffff; }
+.sc-sp footer .fl { font-family: 'Philosopher', cursive; font-size: 34px; color: var(--gold-2); margin-bottom: 16px; }
+.sc-sp footer .fn a { color: #c2dedf; margin: 0 12px; font-size: 12px; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; }
+.sc-sp footer .fn a:hover { color: var(--gold-2); }
+.sc-sp footer .cp { margin-top: 22px; font-size: 12px; color: #9cc2c5; }
+.sc-sp .fstats { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; max-width: 1120px; margin: 40px auto 0; }
+@media (max-width: 760px){
+.sc-sp .fstats { grid-template-columns: 1fr; }
+}
+.sc-sp .fstat { background: #fff; border: 1px solid #f1ecdd; border-radius: 14px; padding: 24px 26px; box-shadow: 0 14px 34px rgba(0,0,0,0.08); }
+.sc-sp .fstat .n { font-size: clamp(26px, 3.4vw, 40px); font-weight: 900; color: var(--black); line-height: 1; }
+.sc-sp .fstat .l { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-top: 10px; }
+.sc-sp .ednote { max-width: 1120px; margin: 20px auto 0; border: 1px dashed var(--gold); border-radius: 12px; padding: 16px 22px; background: #fcf2e6; }
+.sc-sp .ednote .et { font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.sc-sp .ednote p { font-size: 13.5px; color: var(--muted); line-height: 1.6; margin: 0; }
+.sc-sp .timeline { max-width: 780px; margin: 0 auto; position: relative; padding-left: 46px; }
+.sc-sp .timeline::before { content: ""; position: absolute; left: 14px; top: 10px; bottom: 10px; width: 2px; background: rgba(242,192,138,0.4); }
+.sc-sp .tstep { position: relative; padding-bottom: 44px; }
+.sc-sp .tstep:last-child { padding-bottom: 0; }
+.sc-sp .tstep .dot { position: absolute; left: -46px; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--gold); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 14px; box-shadow: 0 0 0 6px var(--black); }
+.sc-sp .tstep .lbl { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-2); margin-bottom: 6px; }
+.sc-sp .tstep h3 { font-size: clamp(20px, 2.6vw, 26px); color: #fff; margin-bottom: 10px; }
+.sc-sp .tstep > p { font-size: 15.5px; color: #e4f0f0; line-height: 1.6; margin-bottom: 12px; }
+.sc-sp .tstep ul { list-style: none; padding: 0; margin: 0; }
+.sc-sp .tstep ul li { display: flex; gap: 10px; font-size: 14px; color: #dcecec; margin-bottom: 8px; }
+.sc-sp .tstep ul li::before { content: "→"; color: var(--gold-2); flex-shrink: 0; }
+.sc-sp .vtable { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #f1ecdd; border-radius: 18px; overflow: hidden; box-shadow: 0 22px 50px rgba(0,0,0,0.08); }
+@media (max-width: 760px){
+.sc-sp .vtable { grid-template-columns: 1fr; }
+}
+.sc-sp .vcol.bad { background: #f7f3e9; }
+.sc-sp .vcol.good { background: #fff; }
+@media (min-width: 761px){
+.sc-sp .vcol.good { border-left: 1px solid #f1ecdd; }
+}
+.sc-sp .vhead { padding: 22px 26px; font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 1px solid #f1ecdd; }
+.sc-sp .vcol.bad .vhead { color: #8ab8bb; }
+.sc-sp .vcol.good .vhead { color: var(--gold); }
+.sc-sp .vrow { display: flex; gap: 14px; align-items: flex-start; padding: 17px 26px; border-bottom: 1px solid #eee8d8; font-size: 15px; color: var(--ink); line-height: 1.5; }
+.sc-sp .vrow:last-child { border-bottom: none; }
+.sc-sp .vrow .ic { flex-shrink: 0; width: 25px; height: 25px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 12px; margin-top: 1px; }
+.sc-sp .vcol.bad .ic { background: #ddebeb; color: #17949f; }
+.sc-sp .vcol.good .ic { background: #fae7d3; color: #b4661f; }
+.sc-sp .inc-list li .val { margin-left: auto; flex-shrink: 0; padding-left: 16px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--muted); white-space: nowrap; align-self: flex-start; margin-top: 3px; }
+.sc-sp .inc-list li .val.core { color: var(--gold); }
+@media (max-width: 600px){
+.sc-sp .inc-list li { flex-wrap: wrap; }
+.sc-sp .inc-list li .val { margin-left: 48px; padding-left: 0; margin-top: 6px; }
+}
+.sc-sp .inc-total { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; max-width: 780px; margin: 40px auto 0; padding-top: 28px; border-top: 1px solid #f1ecdd; }
+@media (max-width: 640px){
+.sc-sp .inc-total { grid-template-columns: 1fr; gap: 22px; text-align: center; justify-items: center; }
+}
+.sc-sp .inc-total .pl-lbl, .sc-sp .inc-total .pr-lbl { font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+.sc-sp .inc-total .pl-price { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.sc-sp .inc-total .pl-price .old { font-size: clamp(20px, 3vw, 28px); font-weight: 700; color: #8ab8bb; text-decoration: line-through; }
+.sc-sp .inc-total .pl-price .now { font-size: clamp(44px, 8vw, 72px); font-weight: 900; color: var(--black); line-height: 1; }
+.sc-sp .inc-total .pl-price .em { font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+.sc-sp .inc-total .pr { text-align: right; }
+@media (max-width: 640px){
+.sc-sp .inc-total .pr { text-align: center; }
+}
+.sc-sp .inc-total .pr-val { font-size: clamp(22px, 3.4vw, 32px); font-weight: 800; color: #8ab8bb; text-decoration: line-through; }
+.sc-sp .pfine { text-align: center; font-size: 13px; color: var(--muted); margin-top: 18px; }
+.sc-sp .phint { text-align: center; font-size: 11.5px; color: #91a8b0; margin-top: 8px; font-style: italic; }
+.sc-sp .pwarum { display: block; text-align: center; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-top: 18px; }
+.sc-sp .pwarum:hover { color: #b4661f; }
+.sc-sp .rev { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.sc-sp .rev.in { opacity: 1; transform: none; }
+.sc-sp h1, .sc-sp h2, .sc-sp h3, .sc-sp .disp, .sc-sp .display { font-family:'Philosopher',Georgia,serif; }
+.sc-sp a.cta, .sc-sp .cta { color:#0c1c30; }
+.sc-sp .sec-dark .gold { color:#f7c08f; }
+/* === Stimm-Check: Anpassungen gegenueber der Vorlage === */
+/* Einblend-Effekt braucht JavaScript, WordPress blockt <script> -> immer sichtbar */
+.sc-sp .rev{opacity:1 !important;transform:none !important;}
+/* Hero-Bild ist ein hoher Ergebnis-Ausschnitt, kein quadratisches Mockup */
+.sc-sp .carousel-main img{height:auto;max-height:520px;object-fit:contain;background:transparent;}
+/* Preisblock ohne Streichpreis: „kostenlos“ als Wort statt Zahl */
+.sc-sp .pl-price .now{font-size:40px;}
+</style></head><body><div class="sc-sp">
+
+<!-- ===== HERO ===== -->
+<section class="sec-dark hero">
+  <div class="wrap">
+    <h1><span class="gold">DER STIMM-CHECK:</span> Damit deine KI endlich klingt wie&nbsp;du</h1>
+    <p class="sub">Die sechs Angaben, die deine KI von dir braucht, und ein erster Text, den du so posten würdest. <b>Kostenlos, in rund 15 Minuten.</b></p>
+
+    <div class="collage">
+      <div class="el e-tl card stat"><div class="n">15</div><div class="l">Minuten</div></div>
+      <div class="el e-bubble bubble">„Du startest mitten in der Szene …“</div>
+      <div class="carousel-main"><img src="assets/stimm-ergebnis.png" alt="So sieht dein Ergebnis im Stimm-Check aus" loading="lazy"></div>
+      <div class="el e-ml card stat"><div class="n">6</div><div class="l">Angaben</div></div>
+      <div class="el e-mr card stat"><div class="n">1</div><div class="l">erster Text</div></div>
+    </div>
+    <a href="#anmelden" class="cta" style="margin-top:44px">Zum Stimm-Check →</a>
+  </div>
+</section>
+
+<!-- ===== EMPATHIE-STORY ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <div class="eyebrow-c">Kennst du das?</div>
+    <div class="story-grid">
+      <div class="story-narr">
+        <h2 class="story-head">Am Ende schreibst du den Text <span class="gold">doch wieder selbst.</span></h2>
+        <p>Du hast ChatGPT oder Claude schon oft ausprobiert. Du tippst hinein, worum es geht und für wen der Text ist, und zurück kommt etwas, das glatt klingt und nach irgendwem, nur nicht nach dir. Also baust du ihn um, Satz für Satz, und hättest ihn fast schneller selbst geschrieben.</p>
+        <p>Und beim nächsten Text fängst du wieder bei null an, weil deine KI sich an nichts erinnert. <b>Irgendwann fragst du dich, ob das mit der KI für dich überhaupt etwas bringt.</b></p>
+      </div>
+      <div class="painlist">
+        <div class="pain"><span class="x">✕</span> Jeder KI-Text klingt nach Werbeprospekt und nicht nach dir.</div>
+        <div class="pain"><span class="x">✕</span> Du erklärst bei jedem Auftrag wieder, wer du bist und für wen du schreibst.</div>
+        <div class="pain"><span class="x">✕</span> Das Umschreiben dauert länger, als selbst zu schreiben.</div>
+        <div class="pain"><span class="x">✕</span> Du hast gespeicherte Prompt-Listen, die dich keinen Schritt weiterbringen.</div>
+        <div class="pain"><span class="x">✕</span> Und am Ende postest du lieber gar nichts als einen Text, der nicht nach dir klingt.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MECHANISMUS ===== -->
+<section class="sec-dark">
+  <div class="wrap">
+    <div class="eyebrow-c">Der eigentliche Grund</div>
+    <h2 class="mech-head">Dir fehlt kein besserer Prompt. <span class="gold">Deiner KI fehlt, wer du bist.</span></h2>
+    <p class="mech-sub">Eine KI schreibt so, wie alle schreiben, solange sie dich nicht kennt. Sie weiss nicht, für wen du da bist, was du anbietest und wie du redest, also nimmt sie den Durchschnitt aus allem, was sie je gelesen hat.</p>
+    <p class="mech-sub">Sobald sie diese sechs Dinge einmal von dir bekommt, fängt jeder Text dort an, wo du bist. Du kopierst deinen Stimm-Brief vor den Auftrag, und die KI arbeitet ab dem ersten Satz in deinem Ton.</p>
+    <div class="ba">
+      <div class="bax">
+        <div class="bh">Ohne Stimm-Brief</div>
+        <div class="br"><span class="m x">✕</span> Jeder Auftrag fängt bei null an</div>
+        <div class="br"><span class="m x">✕</span> Glatte Sätze, die nach irgendwem klingen</div>
+        <div class="br"><span class="m x">✕</span> Du baust jeden Text von Hand um</div>
+      </div>
+      <div class="bax good">
+        <div class="bh">Mit deinem Stimm-Brief</div>
+        <div class="br"><span class="m c">✓</span> Einmal festgehalten, bei jedem Auftrag dabei</div>
+        <div class="br"><span class="m c">✓</span> Deine Satzlänge, deine Wörter, dein Einstieg</div>
+        <div class="br"><span class="m c">✓</span> Du schaust drüber und gibst frei</div>
+      </div>
+    </div>
+    <p class="ba-label">Dieselbe KI. Derselbe Auftrag. Einmal mit, einmal ohne dich.</p>
+  </div>
+</section>
+
+<!-- ===== VERGLEICH ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <h2 class="steps-head" style="margin-bottom:18px">Eine Prompt-Liste kennt dich nicht. <span class="gold">Dein Stimm-Brief schon.</span></h2>
+    <p class="bonus-sub" style="margin-bottom:44px">Gespeicherte Prompts aus dem Netz sind für alle geschrieben. Der Stimm-Check liest aus deinem eigenen Text, wie du klingst, und schreibt es so auf, dass jede KI damit arbeiten kann.</p>
+    <div class="vtable">
+      <div class="vcol bad">
+        <div class="vhead">Prompt-Liste aus dem Netz</div>
+        <div class="vrow"><span class="ic">✕</span> Für alle geschrieben, also für niemanden</div>
+        <div class="vrow"><span class="ic">✕</span> Weiss nicht, für wen du schreibst</div>
+        <div class="vrow"><span class="ic">✕</span> Kennt deinen Ton nicht</div>
+        <div class="vrow"><span class="ic">✕</span> Kennt deine Tabus nicht</div>
+        <div class="vrow"><span class="ic">✕</span> Jeder Text klingt wie bei allen anderen</div>
+      </div>
+      <div class="vcol good">
+        <div class="vhead">Dein Stimm-Brief</div>
+        <div class="vrow"><span class="ic">✓</span> Aus deinen eigenen Antworten gebaut</div>
+        <div class="vrow"><span class="ic">✓</span> Genau die Leute, für die du schreibst</div>
+        <div class="vrow"><span class="ic">✓</span> Aus einem Text von dir herausgelesen, mit Beispielen</div>
+        <div class="vrow"><span class="ic">✓</span> Mit den Wörtern und Behauptungen, die bei dir nie vorkommen</div>
+        <div class="vrow"><span class="ic">✓</span> Funktioniert mit ChatGPT, Claude und jeder anderen KI</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIMELINE ===== -->
+<section class="sec-dark">
+  <div class="wrap">
+    <div class="eyebrow-c">So gehst du vor</div>
+    <h2 class="mech-head" style="color:#fff">In drei Schritten zu <span class="gold">deinem Stimm-Brief.</span></h2>
+    <p class="mech-sub" style="margin-bottom:8px">Du brauchst keine Technik und kein Vorwissen, nur einen Text, den du selbst geschrieben hast.</p>
+    <div class="timeline" style="margin-top:54px">
+      <div class="tstep"><div class="dot">1</div><div class="lbl">rund 10 Minuten</div><h3>Sechs Fragen beantworten</h3><p>Wer du bist, für wen du schreibst, was du anbietest, deine Themen, dein Ton und deine Tabus. Dazu kopierst du einen Text hinein, den du selbst geschrieben hast.</p><ul><li>Stichworte reichen</li><li>Deine Worte sind wichtiger als schöne Sätze</li></ul></div>
+      <div class="tstep"><div class="dot">2</div><div class="lbl">rund 20 Sekunden</div><h3>Deinen Stimm-Brief bekommen</h3><p>Der Stimm-Check liest heraus, wie du klingst, mit Beispielen aus deinen eigenen Sätzen, und baut daraus deinen Brief zum Kopieren.</p><ul><li>So klingst du, mit Zitaten</li><li>Worauf deine KI achten soll</li></ul></div>
+      <div class="tstep"><div class="dot">3</div><div class="lbl">ein paar Sekunden</div><h3>Deinen ersten Text schreiben lassen</h3><p>Du sagst, worüber du schreiben willst, und bekommst eine Caption, eine Story oder eine Nachricht in deinem Ton.</p><ul><li>Mit Lücke für deinen eigenen Moment</li><li>Und dem Hinweis, woher welcher Satz kommt</li></ul></div>
+    </div>
+    <div style="text-align:center;margin-top:52px"><a href="#anmelden" class="cta">Zum Stimm-Check →</a></div>
+  </div>
+</section>
+
+<!-- ===== FOUNDER ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <div class="eyebrow-c">Wer dahintersteckt</div>
+    <div class="split on-cream">
+      <div class="s-img photo" style="background-image:url('https://mumlifebalance.ch/wp-content/uploads/2026/09/mi-about.jpg');background-position:50% 30%;"></div>
+      <div>
+        <h2>Hi, ich bin Patricia, Mama von vier Kindern.</h2>
+        <p>Für mein ganzes Business bleiben mir rund 18 Stunden in der Woche. Darin stecken jeden Tag Story und Feed auf zwei Kanälen, jeden Monat ein kostenloses und ein bezahltes Produkt, mein Network und die ganze Administration.</p>
+        <p>Das geht nur, weil meine KI-Assistenten mitarbeiten, und jeder davon bekommt zuerst genau das, was du im Stimm-Check sammelst: wer ich bin, für wen ich schreibe und wie ich klinge.</p>
+        <a href="#anmelden" class="cta">Ich will meinen Stimm-Brief →</a>
+      </div>
+    </div>
+    <div class="fstats">
+      <div class="fstat"><div class="n">18</div><div class="l">Stunden Business pro Woche</div></div>
+      <div class="fstat"><div class="n">13</div><div class="l">KI-Assistenten, die mitarbeiten</div></div>
+      <div class="fstat"><div class="n">4</div><div class="l">Kinder</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EINWÄNDE ===== -->
+<section class="sec-dark">
+  <div class="wrap">
+    <div class="eyebrow-c">Noch unsicher?</div>
+    <h2 class="obj-head">Was dir gerade <span class="gold">durch den Kopf geht.</span></h2>
+    <div class="obj-grid">
+      <div class="ocard"><span class="oq">„Kostenlos, wo ist der Haken?“</span><p>Keiner. Du trägst dich ein, bekommst den Stimm-Check und ab und zu eine Mail von mir rund um KI und dein Business. Abmelden geht jederzeit mit einem Klick.</p></div>
+      <div class="ocard"><span class="oq">„Ich kann nicht gut schreiben.“</span><p>Musst du nicht. Eine Caption, eine Mail oder eine abgetippte Sprachnachricht reicht. Gerade die Sätze, die du für unperfekt hältst, klingen nach dir.</p></div>
+      <div class="ocard"><span class="oq">„Ich hab von KI keine Ahnung.“</span><p>Du beantwortest Fragen und kopierst am Ende einen Text. Mehr Technik braucht es nicht.</p></div>
+      <div class="ocard"><span class="oq">„Ich benutze gar kein Claude.“</span><p>Macht nichts. Den Stimm-Brief kopierst du genauso in ChatGPT oder jede andere KI.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec-cream">
+  <div class="wrap">
+    <h2 class="faq-head">Häufige Fragen</h2>
+    <details class="faq-item"><summary>Wie bekomme ich den Stimm-Check?</summary><p>Du trägst unten deinen Vornamen und deine E-Mail ein und bestätigst kurz per Mail. Danach landest du direkt auf der Seite, auf der du loslegen kannst, und den Link bekommst du zusätzlich per Mail.</p></details>
+    <details class="faq-item"><summary>Wie lange dauert das?</summary><p>Rund 15 Minuten, das meiste davon sind deine Antworten. Den Brief und den ersten Text schreibt der Stimm-Check in wenigen Sekunden.</p></details>
+    <details class="faq-item"><summary>Was brauche ich dafür?</summary><p>Einen Text, den du selbst geschrieben hast, und dein Handy oder deinen Computer. Mehr nicht.</p></details>
+    <details class="faq-item"><summary>Was passiert mit meinen Antworten?</summary><p>Sie gehen nur für das Schreiben deines Briefs an die KI und werden nicht gespeichert. Dein Entwurf bleibt auf deinem Gerät, bis du ihn löschst.</p></details>
+    <details class="faq-item"><summary>Funktioniert das auch mit ChatGPT?</summary><p>Ja. Den Stimm-Brief kopierst du vor jeden Auftrag, egal bei welcher KI.</p></details>
+  </div>
+</section>
+
+<!-- ===== ANMELDUNG ===== -->
+<section class="sec-dark" id="anmelden">
+  <div class="wrap">
+    <div class="inc-wrap">
+      <h2 class="inc-title">Das bekommst du im Stimm-Check</h2>
+      <ul class="inc-list">
+        <li><span class="ck">✓</span><span class="txt"><b>So klingst du</b>, aus deinem eigenen Text herausgelesen, mit Beispielen aus deinen Sätzen.</span><span class="val core">Kernstück</span></li>
+        <li><span class="ck">✓</span><span class="txt"><b>Dein Stimm-Brief</b> in sechs Abschnitten, zum Kopieren vor jeden Auftrag an deine KI.</span><span class="val">inklusive</span></li>
+        <li><span class="ck">✓</span><span class="txt"><b>Die Floskeln</b>, auf die deine KI bei deinem Thema achten soll, und wie du es stattdessen sagen würdest.</span><span class="val">inklusive</span></li>
+        <li><span class="ck">✓</span><span class="txt"><b>Dein erster Text</b>, eine Caption, eine Story oder eine Nachricht in deinem Ton.</span><span class="val">inklusive</span></li>
+      </ul>
+      <div class="inc-total">
+        <div class="pl">
+          <div class="pl-lbl gold">Für dich, in rund 15 Minuten</div>
+          <div class="pl-price"><span class="now">kostenlos</span></div>
+        </div>
+      </div>
+      <iframe src="https://mumlifebalance.activehosted.com/f/71" title="Anmeldung zum Stimm-Check" style="width:100%;min-height:720px;border:0;border-radius:14px;margin-top:30px;background:#fff;"></iframe>
+      <p class="pfine">Kostenlos · Bestätigung per Mail · jederzeit abmeldbar</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="fl">Mum Life Balance</div>
+  <div class="fn">
+    <a href="https://mumlifebalance.ch/">Home</a>
+    <a href="https://mumlifebalance.ch/impressum/">Impressum</a>
+    <a href="https://mumlifebalance.ch/datenschutzerklaerung/">Datenschutz</a>
+  </div>
+  <p class="cp">© 2026 Mum Life Balance · Patricia Ulmann</p>
+</footer>
+
+</div>
+</body></html>
