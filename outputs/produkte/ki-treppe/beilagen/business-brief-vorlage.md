@@ -30,7 +30,7 @@ mein Business, das du ab jetzt bei jeder Aufgabe mitliest.
 
 Der Brief hat sechs Bausteine:
 1. Wer ich bin
-2. Meine Kundin
+2. Für wen ich da bin (meine Kundschaft)
 3. Was ich anbiete
 4. Meine Themen — und meine Nicht-Themen
 5. Wie ich klinge
@@ -90,12 +90,13 @@ dich sagen würde, wenn sie dich jemandem vorstellt.*
 
 ---
 
-## 2 · Meine Kundin
+## 2 · Für wen ich da bin
 
-*Nicht „Frauen" und nicht „Mamas". So genau wie möglich: in welcher Lage steckt
-sie, was hat sie schon probiert, was denkt sie nachts um halb elf.*
+*Deine Kundschaft: Frauen, Männer, Familien, Firmen, wer auch immer es bei dir ist.
+So genau wie möglich, auch wenn es sich eng anfühlt: in welcher Lage steckt diese
+Person, was hat sie schon probiert, was denkt sie nachts um halb elf.*
 
-**Bei Sandra:**
+**Bei Sandra** (ihre Kundschaft sind tatsächlich Mamas, das ist ihre Nische):
 
 > Mama zwischen 33 und 45, ein bis drei Kinder, arbeitet 40 bis 80 Prozent.
 > Sie steht morgens auf und ist schon müde. Sie hat Eisen prüfen lassen, sie
@@ -222,5 +223,5 @@ Nie behaupten:
 ---
 
 > **Die Prüffrage, wenn du fertig bist:** Könnte jemand, der dich nicht kennt,
-> mit diesem Dokument einen Text schreiben, den deine Kundin für deinen hält?
+> mit diesem Dokument einen Text schreiben, den deine Kundschaft für deinen hält?
 > Wenn nein, fehlt fast immer Baustein 5.
