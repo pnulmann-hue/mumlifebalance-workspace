@@ -233,10 +233,10 @@ so führen die beiden Seiten ineinander, egal wo sie einsteigt.)*
 
 - **Formular:** In ActiveCampaign Formular **55** duplizieren → Name „Masterclass KI
   Okt 2026“ · Felder Vorname + E-Mail · Aktion: Liste Hauptliste + Tag
-  **`masterclass-ki-2026-10`** · Weiterleitung auf `/ki-masterclass-danke/`.
+  **`0€ KI Webinar`** (100) · Weiterleitung auf `/ki-masterclass-danke/`.
   Die ID des neuen Formulars mir schicken, dann baue ich es als iframe ein (wie auf
   `/ki-webinar/`, Seite 3675).
-- **Automation:** Trigger Tag `masterclass-ki-2026-10` → Bestätigung sofort ·
+- **Automation:** Trigger Tag `0€ KI Webinar` → Bestätigung sofort ·
   Mi 7.10. 19:00 Erinnerung · Do 8.10. 08:55 „Wir sind live“ ·
   Do 8.10. 16:00 Aufzeichnung · dann die Pitch-Mails (Plan im Launch-Kalender).
 - **Zoom-Link:** fehlt noch — kommt in die Bestätigungs- und Erinnerungs-Mails.

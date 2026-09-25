@@ -28,11 +28,10 @@ Deploy: `scripts/wordpress/deploy-stimm-check-seiten.mjs` (die ersten drei) und
 
 ## ActiveCampaign
 
-**Tags (angelegt 25.09. per Schnittstelle):** 101 `stimm-check-lead` · 102 `stimm-check-abgeschlossen` ·
-103 `stimm-check-masterclass-klick` · 104 `masterclass-ki-2026-10`
+**Tags — je Funnel einer (Patricias Entscheid 25.09.):** 100 `0€ KI Webinar` · 105 `0€ Stimmcheck`
 
 ### Formular 69 — Masterclass (umstellen, 👩)
-- Tag **104 `masterclass-ki-2026-10`** statt „0€ Idee“ · Liste 2 bleibt
+- Tag **`0€ KI Webinar`** (100) statt „0€ Idee“ · Liste 2 bleibt
 - Nach dem Absenden: **Danke-Nachricht** — *Fast geschafft! Schau kurz in dein Postfach und klick auf „Ja, ich bin dabei“, erst dann kommt dein Zoom-Link. Keine Mail da? Schau im Spam-Ordner nach.*
 - Opt-in-Mail: `mails/masterclass-00-optin.html` · nach der Bestätigung weiterleiten auf `https://mumlifebalance.ch/ki-masterclass-danke/`
 - Du statt Sie in den Feldern, Datenschutz-Häkchen **nicht** vorangekreuzt, Untertitel „hinter **die** Kulissen“
@@ -41,14 +40,14 @@ Deploy: `scripts/wordpress/deploy-stimm-check-seiten.mjs` (die ersten drei) und
 - **Name:** 0€ Stimm-Check · **Titel:** Dein Stimm-Check · **Untertitel:** Die sechs Angaben, die deine KI von dir braucht, damit sie klingt wie du
 - **Felder:** Vorname („Dein Vorname“) · E-Mail („Deine E-Mail“) · Datenschutz, nicht vorangekreuzt
 - **Knopf:** Zum Stimm-Check
-- **Aktion:** Tag **101 `stimm-check-lead`** · Liste 2
+- **Aktion:** Tag **`0€ Stimmcheck`** (105) · Liste 2
 - **Nach dem Absenden:** Danke-Nachricht — *Fast geschafft! Schau kurz in dein Postfach und klick auf „Ja, ich will meinen Stimm-Check“, dann kannst du sofort loslegen.*
 - **Opt-in-Mail:** `mails/stimm-00-optin.html` · nach der Bestätigung weiterleiten auf `https://mumlifebalance.ch/stimm-check-los/`
 - **Danach mir die Formular-ID schicken** → kommt in `FORMULAR` im Deploy-Skript
 
 ### Automationen (👩, Texte liegen fertig)
-- **„Stimm-Check“**: Auslöser Tag 101 → sofort Mail `stimm-01-auslieferung.html` (persönlicher Tool-Link mit `?e=%EMAIL%&n=%FIRSTNAME%`, Masterclass-Kasten)
-- **„KI-Masterclass Okt 2026“**: Auslöser Tag 104 → Erinnerung Mi 7.10. 19:00 · „Wir sind live“ Do 8.10. 08:55 · Aufzeichnung Do 16:00 · Pitch Fr 9.10. + Sa 10.10. (Texte folgen, Plan im Launch-Kalender)
+- **„Stimm-Check“**: Auslöser Tag `0€ Stimmcheck` → sofort Mail `stimm-01-auslieferung.html` (persönlicher Tool-Link mit `?e=%EMAIL%&n=%FIRSTNAME%`, Masterclass-Kasten)
+- **„KI-Masterclass Okt 2026“**: Auslöser Tag `0€ KI Webinar` → Erinnerung Mi 7.10. 19:00 · „Wir sind live“ Do 8.10. 08:55 · Aufzeichnung Do 16:00 · Pitch Fr 9.10. + Sa 10.10. (Texte folgen, Plan im Launch-Kalender)
 
 Alle Mails zum Kopieren: `preview_start {"name": "ki-masterclass-mail"}` → Knopf „Ganzes HTML“.
 Gebaut von `scripts/ki-kurs/masterclass-mails-bauen.py`.
@@ -59,8 +58,8 @@ Gebaut von `scripts/ki-kurs/masterclass-mails-bauen.py`.
 Blacklisten-Prüfung mit Korrekturrunde, Zielgruppe neutral, Schreibsprache folgt der Textprobe).
 Lokal: `preview_start {"name": "stimm-check"}` → Port 4397. Knopf am Ende → Formular 69.
 
-**Offen:** Deploy auf Vercel + ENV (`ANTHROPIC_API_KEY`, `AC_API_URL`, `AC_API_KEY`,
-`AC_TAG_ABGESCHLOSSEN=102`, `AC_TAG_MASTERCLASS_INTERESSE=103`). Danach die Adresse an drei
+**Offen:** Deploy auf Vercel + ENV `ANTHROPIC_API_KEY` (keine Tag-Variablen — ohne sie setzt
+das Tool keine Tags, und genau das ist gewollt). Danach die Adresse an drei
 Stellen eintragen: `TOOL` in `deploy-stimm-check-seiten.mjs` · `TOOL_URL` in
 `masterclass-mails-bauen.py` · `STIMM_CHECK` in `deploy-ki-masterclass-danke.mjs`.
 
