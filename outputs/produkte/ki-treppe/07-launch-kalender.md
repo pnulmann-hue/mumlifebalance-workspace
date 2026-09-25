@@ -68,11 +68,11 @@ nicht weg, aber die Kinder sind es auch. Deshalb:
 
 | Bis | Was | Wer |
 |---|---|---|
-| **So 27.9.** | ManyChat-Stichwort **`MITARBEITERIN`** (exact) → DM mit Wartelisten-Link, AC-Tag `ki-kurs-warteliste` | Claude baut, du schaltest frei |
+| **So 27.9.** | ManyChat-Stichwort **`STIMME`** (exact) → DM mit Wartelisten-Link, AC-Tag `ki-kurs-warteliste` | Claude baut, du schaltest frei |
 | **Fr 2.10.** | Verkaufsseite (FAQ mit MBA-Anrechnung) über `signature-kurs-salespage` · ThriveCart-Produkt mit drei Preisen (Secret-Link separat) | Claude baut, du gibst frei |
 | **Fr 2.10.** | Masterclass-Anmeldeseite + Zoom-Termin Di 13.10. 20:00 | Claude baut Seite und Mails |
 | **Fr 2.10.** | **Herbstferien-Puffer:** alle Feed-Beiträge KW41+KW42 gebaut und eingeplant, alle Mails bis 23.10. in AC geplant | Claude baut, du gibst frei · Reels drehst du in KW40 |
-| **Mo 5.10.** | Ab hier leitet die DM von `MITARBEITERIN` auf die Verkaufsseite statt auf die Warteliste | Claude stellt um |
+| **Mo 5.10.** | Ab hier leitet die DM von `STIMME` auf die Verkaufsseite statt auf die Warteliste | Claude stellt um |
 | **Ende Oktober** | Kapitel 1–3 gedreht, sonst hält der Auslieferungsplan nicht | du |
 
 🚨 **Nichts davon ist heute da.** Das Stichwort steht nicht in
@@ -86,7 +86,7 @@ in die Secret-Phase.
 ## Feed — 20 Beiträge, fester Rhythmus
 
 Mo · Mi · Fr **Reel 21:00**, Di · Do **Karussell 07:30**. Je Woche 3 Lead-Posts
-mit Stichwort `MITARBEITERIN` und 2 Reichweiten-Posts mit Share-CTA.
+mit Stichwort `STIMME` und 2 Reichweiten-Posts mit Share-CTA.
 
 🚨 **Kein Preis und kein Kursname im Feed.** Das Stichwort führt in die DM, und
 erst dort steht der Link. Das gilt auch für den letzten Tag.

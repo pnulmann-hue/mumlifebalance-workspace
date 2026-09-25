@@ -801,6 +801,53 @@
         "ob die Runde eine Teilnehmerinnen-Obergrenze hat"
       ],
       "quelle": "Patricia im Chat am 14.09.2026"
+    },
+    {
+      "id": "ki-kurs",
+      "name": "Easy KI für Networkerinnen — vom Chat zur Mitarbeiterin (KI-Kurs 333)",
+      "status": "launching",
+      "profile": "mentoring",
+      "typ": "Signature-Kurs 333 CHF (Vorverkauf, Auslieferung 2.–30.11.)",
+      "preis_chf": 333,
+      "zielgruppe": "Network-Mamas, die KI schon benutzen und jeden Text umbauen",
+      "problem": "„Alle sagen, KI spart Zeit. Bei mir kostet sie welche.“",
+      "transformation": "Arbeitsplatz mit eigenem Wissen · erster eigener Skill · ein Bot, der von selbst läuft",
+      "traffic_quellen": {
+        "manychat_keyword": "STIMME (einziges Feed-Stichwort, führt zum Stimm-Check)",
+        "verkaufsseite": "folgt (bis 1.10.)",
+        "kasse": "folgt (ThriveCart, bis 2.10.; Kursbereich 232070)",
+        "masterclass": "Di 13.10. 20:00, Anmeldeseite folgt"
+      },
+      "launch_window": {
+        "aufwaermen": "2026-09-28/2026-10-04",
+        "secret_offer": "2026-10-05/2026-10-07 (199, nur DM)",
+        "fruehbucherin": "2026-10-07/2026-10-15 (277)",
+        "masterclass": "2026-10-13T20:00",
+        "voller_preis": "2026-10-16/2026-10-23 (333)",
+        "cart_close": "2026-10-23T23:59",
+        "auslieferung": "2026-11-02/2026-11-30"
+      },
+      "launch_kalender": "outputs/produkte/ki-treppe/07-launch-kalender.md",
+      "aufgabenplan": "outputs/produkte/ki-treppe/08-aufgabenplan.md",
+      "content_hinweise": "Im Feed kein Preis und kein Kursname — Stichwort STIMME. In Story und Mail immer die MBA-Zeile „In der MBA ist der Kurs gratis dabei“ (nie MBA-Preis, nie MBA-Kasse). Story-Gerüst je Tag liegt im Bild-Editor (kw40–43-story-m-ki-*).",
+      "produkttreppe_anschluss": "Stimm-Check 0 → KI-Auftragsbuch 39 (nach Kassenschluss) → KI-Kurs 333 → MBA (Anrechnung)",
+      "launched_on": null
+    },
+    {
+      "id": "stimm-check",
+      "name": "Stimm-Check (0€-Tool: sechs Angaben, damit deine KI klingt wie du)",
+      "status": "in-aufbau",
+      "profile": "mentoring",
+      "typ": "0€ Leadmagnet · KI-Tool (Bauart Freischaufeln/Bio-Check)",
+      "preis_chf": 0,
+      "traffic_quellen": {
+        "manychat_keyword": "STIMME",
+        "wordpress_landing": "https://mumlifebalance.ch/stimm-check/ (geplant)"
+      },
+      "bauplan": "plans/2026-09-25-stimm-check-bauen.md",
+      "launch_window": "live bis 2026-09-30 geplant",
+      "produkttreppe_anschluss": "→ KI-Kurs 333 (Warteliste bis 4.10., danach Verkaufsseite) · nach dem Launch KI-Auftragsbuch 39",
+      "launched_on": null
     }
   ],
   "produkttreppe_mentoring": [
