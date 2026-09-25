@@ -374,6 +374,50 @@
   .wissen-grid textarea { width: 100%; min-height: 120px; resize: vertical; background: var(--ground); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 1.5; }
   .wissen-grid textarea:focus { border-color: var(--teal); outline: none; }
 
+  /* ---------- Auswertung je Stichwort ---------- */
+  .kabox { margin-bottom: 16px; }
+  .kabox > summary {
+    display: flex; align-items: baseline; gap: 12px; cursor: pointer;
+    list-style: none;
+  }
+  .kabox > summary::-webkit-details-marker { display: none; }
+  .ka-titel { font-family: var(--display); font-size: 17px; }
+  .kakopf, .kazeile {
+    display: grid; grid-template-columns: 1fr 70px 70px 112px 76px 70px 84px;
+    gap: 8px; align-items: baseline;
+  }
+  .kakopf {
+    font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-soft); padding: 12px 0 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  .kakopf span:not(:first-child), .kazeile .kaz, .kazeile .kaalt {
+    text-align: right;
+  }
+  .kazeile {
+    padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 13px;
+  }
+  .kazeile.kaleer { opacity: 0.55; }
+  .kakw {
+    font-family: var(--display); letter-spacing: 0.04em; font-size: 14px;
+  }
+  .kaz { font-variant-numeric: tabular-nums; }
+  .kastark { font-weight: 600; color: var(--teal); }
+  .kaalt { font-size: 12px; color: var(--ink-soft); }
+  .kaalt.kabrach { color: var(--crit); }
+  .kahinweis { margin-top: 12px; }
+  .kawarn {
+    background: var(--orange-soft); border-radius: 8px; padding: 9px 12px;
+    font-size: 13px; line-height: 1.55; margin-top: 10px;
+  }
+  @media (max-width: 760px) {
+    /* 🚨 Über eigene Klassen, nicht über nth-of-type — das zählt den
+       Elementtyp und traf die falsche Spalte. */
+    .kakopf { display: none; }
+    .kazeile { grid-template-columns: 1fr 54px 92px 62px 62px; }
+    .ka90, .kareich { display: none; }
+  }
+
   /* ---------- Funnel-Uebersicht je Keyword (25.09.2026) ---------- */
   .fnkarte { margin-bottom: 10px; padding: 0; }
   .fnkarte > summary {
@@ -5538,6 +5582,7 @@
         return '<div><strong>' + esc(f.keyword) + ':</strong> ' +
           esc(f.tag_befund) + '</div>';
       }).join("") + '</div>' : "") +
+      analyseBlock(items) +
       '<div id="fnliste"></div>';
 
     var box = main.querySelector("#fnliste");
@@ -5669,6 +5714,102 @@
       });
       box.appendChild(k);
     });
+  }
+
+  /* Die Auswertung: wie oft gespielt, wann zuletzt, was es gebracht hat.
+     Siehe Kopf von patch-keyword-analyse.py. */
+  function analyseBlock(items) {
+    /* Je Stichwort EIN Datensatz - die Zahlen haengen am Wort, nicht am
+       Angebot. Zwei Funnels auf demselben Stichwort ergaeben sonst zwei
+       identische Zeilen UND eine zu hohe Zaehlung darueber. */
+    var einmal = {}, eindeutig = [];
+    items.forEach(function (f) {
+      if (einmal[f.keyword]) return;
+      einmal[f.keyword] = true;
+      eindeutig.push(f);
+    });
+    items = eindeutig;
+
+    var mit = items.filter(function (f) { return f.gespielt; });
+    if (!mit.length) return "";
+
+    var brach = mit.filter(function (f) {
+      return f.tage_her != null && f.tage_her > 30;
+    }).sort(function (a, b) { return b.tage_her - a.tage_her; });
+
+    /* 🚨 Kontakte ohne einen einzigen Beitrag: die kommen von woanders. */
+    var fremd = items.filter(function (f) {
+      return !f.gespielt && f.tag_kontakte;
+    });
+
+    var doppelt = items.filter(function (f) {
+      return (f.doppelt_mit || []).length;
+    });
+    var gesehen = {};
+    var dopp = [];
+    doppelt.forEach(function (f) {
+      if (gesehen[f.keyword]) return;
+      gesehen[f.keyword] = true;
+      dopp.push(f);
+    });
+
+    var zeilen = items.slice().sort(function (a, b) {
+      return (b.gespielt || 0) - (a.gespielt || 0);
+    }).map(function (f) {
+      var alt = f.tage_her == null ? "nie"
+        : (f.tage_her === 0 ? "heute" : "vor " + f.tage_her + " Tagen");
+      return '<div class="kazeile' + (f.gespielt ? "" : " kaleer") + '">' +
+        '<span class="kakw">' + esc(f.keyword) + '</span>' +
+        '<span class="kaz">' + (f.gespielt || "—") + '</span>' +
+        '<span class="kaz ka90">' + (f.gespielt_90 || "—") + '</span>' +
+        '<span class="kaalt' + (f.tage_her != null && f.tage_her > 30 ? " kabrach" : "") +
+          '">' + esc(alt) + '</span>' +
+        '<span class="kaz kareich">' + (f.reichweite_median || "—") + '</span>' +
+        '<span class="kaz">' +
+          (f.tag_kontakte == null ? "—" : f.tag_kontakte) + '</span>' +
+        '<span class="kaz kastark">' +
+          (f.kontakte_je_beitrag == null ? "—" : f.kontakte_je_beitrag) + '</span>' +
+        '</div>';
+    }).join("");
+
+    return '<details class="panel kabox" open><summary><span class="ka-titel">' +
+      'Was die Stichwörter bringen</span>' +
+      '<span class="note">' + mit.length + ' von ' + eindeutig.length +
+      ' wurden schon gespielt</span></summary>' +
+      (dopp.length
+        ? '<div class="kawarn"><strong>Dasselbe Stichwort für zwei Angebote:</strong> ' +
+          dopp.map(function (f) {
+            return esc(f.keyword) + ' (' + esc(f.freebie) + ' und ' +
+                   esc((f.doppelt_mit || []).join(", ")) + ')';
+          }).join(" · ") +
+          '. ManyChat löst je Stichwort genau eine Automation aus — der zweite ' +
+          'Funnel läuft ins Leere.</div>'
+        : "") +
+      '<div class="kakopf">' +
+        '<span>Stichwort</span><span>gespielt</span><span class="ka90">90 Tage</span>' +
+        '<span>zuletzt</span><span class="kareich">Reichw.</span><span>im Tag</span>' +
+        '<span>je Beitrag</span>' +
+      '</div>' + zeilen +
+      '<p class="note kahinweis"><strong>„je Beitrag"</strong> sind die Kontakte ' +
+      'im Tag geteilt durch die Beiträge, die das Wort gespielt haben — die Zahl, ' +
+      'mit der du rückwärts rechnest, wie viele Beiträge es für X Eintragungen ' +
+      'braucht. <strong>Sie ist ein Anhaltspunkt, keine gemessene Quote:</strong> ' +
+      'der Tag füllt sich auch über Landingpage, Story und Mail, und er zählt ' +
+      'über die ganze Zeit.</p>' +
+      (fremd.length
+        ? '<p class="note">' + fremd.map(function (f) {
+            return '<strong>' + esc(f.keyword) + '</strong> hat ' + f.tag_kontakte +
+                   ' im Tag und wurde auf Instagram nie gespielt';
+          }).join(" · ") + ' — die Eintragungen kommen von woanders. Dem Content ' +
+          'zuschreiben wäre falsch.</p>'
+        : "") +
+      (brach.length
+        ? '<p class="note kabrachzeile">💤 Über einen Monat nicht gespielt: ' +
+          brach.map(function (f) {
+            return '<strong>' + esc(f.keyword) + '</strong> (vor ' + f.tage_her + ' Tagen)';
+          }).join(" · ") + '</p>'
+        : "") +
+      '</details>';
   }
 
   function funnelStand() {
