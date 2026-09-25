@@ -411,6 +411,19 @@
   }
   .fntag b { font-variant-numeric: tabular-nums; }
   .fntag.null { opacity: 0.5; }
+  .fntag.dekl { background: var(--teal-soft); color: var(--teal); }
+  .fnang { display: grid; gap: 4px; }
+  .fnangz {
+    display: grid; grid-template-columns: 26px 1fr 60px auto; gap: 10px;
+    align-items: baseline; font-size: 13px; padding: 4px 0;
+    border-top: 1px solid var(--line);
+  }
+  .fnangz:first-child { border-top: 0; }
+  .fnstufe {
+    font-family: var(--display); font-size: 12px; color: var(--ink-soft);
+    text-align: center;
+  }
+  .fnpreis { font-variant-numeric: tabular-nums; text-align: right; }
   .fnpost {
     display: grid; grid-template-columns: 86px 1fr 110px auto; gap: 10px;
     align-items: baseline; padding: 5px 0; border-top: 1px solid var(--line);
@@ -5459,32 +5472,36 @@
     });
     /* 🚨 Zwei verschiedene Befunde, nicht einer: „Tag angelegt, niemand drin"
        heisst, die Automation läuft und keine trägt sich ein. „Kein Tag
-       gefunden" heisst, ich konnte keinen zuordnen — das ist eine Frage an
-       mich, kein Befund über den Funnel. In eine Zahl gemischt wäre die Zahl
-       grösser als das Problem. */
+       gefunden" heisst, der Funnel nennt keinen — das ist eine Frage an mich,
+       kein Befund über den Funnel. In eine Zahl gemischt wäre die Zahl grösser
+       als das Problem. */
     var tagLeer = items.filter(function (f) { return f.tag_kontakte === 0; });
     var ohneTag = items.filter(function (f) { return f.tag_kontakte == null; });
+    var befunde = items.filter(function (f) { return f.tag_befund; });
 
     main.innerHTML =
       '<div class="page-head"><div><h1>Funnel &amp; Keywords</h1>' +
       '<p>Je Zeile ein Instagram-Stichwort: was sie dafür bekommt, wie viele den ' +
-      'Tag tragen, was danach kommt — und welche Beiträge das Wort überhaupt ' +
-      'spielen.</p></div>' +
+      'Tag tragen, was danach zu kaufen ist — und welche Beiträge das Wort ' +
+      'überhaupt spielen.</p></div>' +
       (stand ? '<div class="head-actions"><span class="note">Stand ' +
         esc(fmtDate(stand)) + '</span></div>' : "") + '</div>' +
       '<div class="tiles">' +
-      tile("Stichwörter", items.length, "mit Automation dahinter") +
+      tile("Stichwörter", items.length, "in ManyChat hinterlegt") +
       tile("Läuft leer", leer.length,
            leer.length ? "kein Beitrag nennt das Wort" : "jedes wird gespielt") +
       tile("Niemand drin", tagLeer.length, "Tag angelegt, 0 Kontakte") +
-      tile("Ohne Tag", ohneTag.length, "keiner zugeordnet — nachsehen") +
+      tile("Ohne Tag", ohneTag.length, "kein Tag hinterlegt") +
       '</div>' +
       (leer.length ? '<div class="panel warn"><strong>' + leer.length +
         ' Stichwörter laufen leer:</strong> ' +
         esc(leer.map(function (f) { return f.keyword; }).join(" · ")) +
-        '. Die Automation steht, der Tag ist angelegt — aber kein einziger ' +
-        'Beitrag nennt das Wort. Solange das so ist, kommt dort niemand rein.' +
-        '</div>' : "") +
+        '. Die Automation steht — aber kein einziger Beitrag nennt das Wort. ' +
+        'Solange das so ist, kommt dort niemand rein.</div>' : "") +
+      (befunde.length ? '<div class="panel warn">' + befunde.map(function (f) {
+        return '<div><strong>' + esc(f.keyword) + ':</strong> ' +
+          esc(f.tag_befund) + '</div>';
+      }).join("") + '</div>' : "") +
       '<div id="fnliste"></div>';
 
     var box = main.querySelector("#fnliste");
@@ -5498,16 +5515,19 @@
       var gpl = f.posts_geplant || [], gps = f.posts_gepostet || [];
       var k = document.createElement("details");
       k.className = "panel fnkarte" + (!gpl.length && !gps.length ? " fnleer" : "");
-      var kontakte = f.tag_kontakte;
 
       k.innerHTML =
         '<summary class="fnkopf">' +
           '<span class="fnkw">' + esc(f.keyword || "—") + '</span>' +
           '<span class="fnfreebie">' + esc(f.freebie || "—") + '</span>' +
-          '<span class="fnzahl" title="Kontakte mit diesem Tag">' +
-            (kontakte == null ? "kein Tag" : kontakte + " im Tag") + '</span>' +
-          (f.angebot ? '<span class="fnangebot">→ ' + esc(f.angebot) +
-            (f.preis ? " · " + f.preis : "") + '</span>' : "") +
+          '<span class="fnzahl" title="Kontakte mit dem grössten Tag dieses Freebies">' +
+            (f.tag_kontakte == null ? "kein Tag" : f.tag_kontakte + " im Tag") +
+          '</span>' +
+          ((f.angebote || []).length ? '<span class="fnangebot">→ ' +
+            esc(f.angebote[0].produkt) +
+            (f.angebote[0].preis ? " · " + f.angebote[0].preis : "") +
+            (f.angebote.length > 1 ? " +" + (f.angebote.length - 1) : "") +
+            '</span>' : "") +
           '<span class="fnposts' + (!gpl.length && !gps.length ? " keine" : "") + '">' +
             gps.length + ' raus · ' + gpl.length + ' geplant</span>' +
           (f.reichweite_summe ? '<span class="fnreich">' + f.reichweite_summe +
@@ -5524,12 +5544,29 @@
         kb.appendChild(d);
       }
 
-      /* 🚨 Alle Tag-Stufen, nicht nur die groesste — sonst sieht man nicht,
-         wo die Leute haengenbleiben. */
-      if ((f.alle_tags || []).length) {
+      if (f.nur_doku) {
+        block("Woher das kommt", '<p class="note">Dieses Stichwort steht nur in ' +
+          '<code>context/manychat-keywords.md</code>, es hängt an keinem Funnel ' +
+          'in <code>active-funnels.json</code>. Deshalb keine Tag- und ' +
+          'Listenzahlen — die Beiträge unten stimmen trotzdem.' +
+          (f.ziel ? ' Ziel: ' + esc(f.ziel) : "") + '</p>');
+      }
+      if (f.seite) {
+        block("Wo sie landet", '<p class="note"><a href="' + esc(f.seite) +
+          '" target="_blank" rel="noopener">' + esc(f.seite) + '</a></p>');
+      }
+      /* 🚨 Alle Tag-Stufen, nicht nur die grösste — sonst sieht man nicht, wo
+         die Leute hängenbleiben. „erklärt" heisst: der Funnel nennt diesen Tag
+         selbst; „auch da" heisst: er passt namentlich, der Funnel kennt ihn
+         aber nicht. */
+      if ((f.tags || []).length) {
         block("Tags in ActiveCampaign", '<div class="fntags">' +
-          f.alle_tags.map(function (t) {
-            return '<span class="fntag' + (t.kontakte ? "" : " null") + '">' +
+          f.tags.map(function (t) {
+            return '<span class="fntag' + (t.kontakte ? "" : " null") +
+              (t.deklariert ? " dekl" : "") + '" title="' +
+              (t.deklariert ? "Der Funnel nennt diesen Tag" +
+                (t.rolle ? " als „" + esc(t.rolle) + "“" : "")
+                : "Passt namentlich — der Funnel nennt ihn nicht") + '">' +
               esc(t.tag) + ' <b>' + t.kontakte + '</b></span>';
           }).join("") + '</div>');
       }
@@ -5537,13 +5574,25 @@
         block("Liste", '<p class="note">' + esc(f.liste) + ' · ' +
           (f.liste_kontakte == null ? "?" : f.liste_kontakte) + ' Kontakte</p>');
       }
-      if (f.automation) {
-        block("Automation", '<p class="note">' + esc(f.automation) +
-          (f.automation_status ? ' · ' + esc(f.automation_status) : "") + '</p>');
+      if ((f.automationen || []).length || f.mail_status) {
+        block("Mails danach",
+          (f.automationen || []).map(function (a) {
+            return '<p class="note">' + esc(a.rolle) + ': ' + esc(a.name || "—") +
+              (a.status ? ' · ' + esc(a.status) : "") +
+              (a.mails ? ' · ' + a.mails + ' Mails' : "") + '</p>';
+          }).join("") +
+          (f.mail_status ? '<p class="note">' + esc(f.mail_status) + '</p>' : ""));
       }
-      if (f.checkout) {
-        block("Checkout", '<p class="note"><a href="' + esc(f.checkout) +
-          '" target="_blank" rel="noopener">' + esc(f.checkout) + '</a></p>');
+      if ((f.angebote || []).length) {
+        block("Was danach zu kaufen ist", '<div class="fnang">' +
+          f.angebote.map(function (a) {
+            return '<div class="fnangz"><span class="fnstufe">' +
+              esc(a.stufe || "—") + '</span>' +
+              '<span class="fnprod">' + esc(a.produkt || "—") + '</span>' +
+              '<span class="fnpreis">' + (a.preis == null ? "—" : a.preis) + '</span>' +
+              (a.checkout ? '<a class="btn ghost" href="' + esc(a.checkout) +
+                '" target="_blank" rel="noopener">Kasse</a>' : "") + '</div>';
+          }).join("") + '</div>');
       }
       if (gps.length) {
         block("Schon draussen (" + gps.length + ")",
@@ -5568,7 +5617,7 @@
       }
       if (!gpl.length && !gps.length) {
         block("Posts", '<p class="note">Kein Beitrag nennt „' +
-          esc(f.keyword) + '". Die Automation läuft leer — hier kommt niemand ' +
+          esc(f.keyword) + '“. Die Automation läuft leer — hier kommt niemand ' +
           'rein, egal wie gut sie gebaut ist.</p>');
       }
       box.appendChild(k);
@@ -11508,7 +11557,11 @@
           var d0 = doc.data() || {};
           var car = { id: doc.id, datum: d0.datum || "", name: d0.name || "Karussell", brand: d0.brand || "mlb_dark", handle: d0.handle || "", typ: d0.typ || "listicle", funnel: d0.funnel || "TOF", textfrei: !!d0.textfrei, blotato: d0.blotato || null, abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", caption: d0.caption || "", slides: d0.slides || [], updatedAt: d0.updatedAt || "" };
           if (!car.slides.length) return;
-          if (seen[car.id]) { Object.assign(seen[car.id], car); }
+          // 🚨 Bei Storys und Reels wurde am 24.09.2026 auf dbUebernehmen
+          // umgestellt, hier nicht — dadurch hat der Stand aus der
+          // Datenbank bei KARUSSELLS weiter bedingungslos gewonnen. Genau
+          // dort tippt Patricia Caption und Folientexte auf der Wochenkarte.
+          if (seen[car.id]) { dbUebernehmen(seen[car.id], car); }
           else { state.karussells.push(car); }
         });
         state.karussells.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });
