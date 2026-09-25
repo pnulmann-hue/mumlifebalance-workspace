@@ -343,6 +343,98 @@
   let aktiv = 0;
   let state = folien[0];
 
+  /* ---------- Die Arbeit ueberlebt das Schliessen ----------
+     🚨 Bis 25.09.2026 speicherte diese Seite NICHTS. Die Folien lagen nur in
+     der Variablen oben; Seite zu, alles weg. Siehe Kopf von
+     patch-editor-speichert.py. */
+  const SPEICHER = "mlb-editor:stand";
+
+  /* Eingebettete Bilder und Videos sprengen den Speicher (rund 5 MB gesamt,
+     ein Handyfoto als Text schon 2 MB). Nur Verweise auf Dateien werden
+     gesichert — der Text bleibt in jedem Fall erhalten. */
+  function ohneGrossdaten(f) {
+    const k = JSON.parse(JSON.stringify(f));
+    if ((k.photo || "").startsWith("data:")) k.photo = "lounge.jpg";
+    if ((k.videoUrl || "").startsWith("data:") || (k.videoUrl || "").startsWith("blob:")) {
+      k.videoUrl = ""; k.videoName = ""; if (k.mode === "video") k.mode = "foto";
+    }
+    if ((k.poster || "").startsWith("data:")) k.poster = "";
+    return k;
+  }
+
+  let speicherWarnung = false;
+  /* 🚨 Beim ersten Anlauf lief render() VOR standLaden() — und render()
+     speichert. Der frische Startzustand hat damit den gesicherten Stand
+     ueberschrieben, bevor er gelesen wurde: das Sicherheitsnetz hat die
+     Arbeit selbst zerstoert. Ein Schalter ist robuster als eine bestimmte
+     Aufrufreihenfolge, die beim naechsten Umbau wieder kippt. */
+  let sichernFrei = false;
+  function standSichern() {
+    if (!sichernFrei) return;
+    try {
+      localStorage.setItem(SPEICHER, JSON.stringify({
+        fmt: fmt, aktiv: aktiv, stand: new Date().toISOString(),
+        folien: folien.map(ohneGrossdaten)
+      }));
+    } catch (e) {
+      // 🚨 Ein stiller Fehlschlag waere schlimmer als keiner — sie wuerde
+      // weiterarbeiten im Glauben, es sei gesichert.
+      if (!speicherWarnung) {
+        speicherWarnung = true;
+        const w = document.createElement("div");
+        w.style.cssText = "position:fixed;left:50%;bottom:18px;transform:translateX(-50%);"
+          + "background:#8a2b1c;color:#fff;padding:10px 16px;border-radius:999px;"
+          + "font-size:13px;z-index:99;box-shadow:0 4px 18px rgba(0,0,0,.3)";
+        w.textContent = "Speicher voll — dein Stand wird gerade NICHT gesichert. "
+          + "Lad die fertigen Bilder herunter, bevor du die Seite schliesst.";
+        document.body.appendChild(w);
+      }
+    }
+  }
+  window.addEventListener("pagehide", standSichern);
+
+  function standLaden() {
+    let d = null;
+    try { d = JSON.parse(localStorage.getItem(SPEICHER) || "null"); } catch (e) {}
+    if (!d || !Array.isArray(d.folien) || !d.folien.length) return;
+    folien = d.folien;
+    fmt = d.fmt || "story";
+    aktiv = Math.min(d.aktiv || 0, folien.length - 1);
+    state = folien[aktiv];
+
+    /* 🚨 Nicht stillschweigend einsetzen. Wer mit einer neuen Idee aufmacht
+       und die alte Abfolge vorfindet, haelt das fuer einen Fehler. */
+    const wann = d.stand ? new Date(d.stand) : null;
+    const txt = wann
+      ? wann.toLocaleDateString("de-CH", { day: "numeric", month: "long" })
+        + " um " + wann.toLocaleTimeString("de-CH", { hour: "2-digit", minute: "2-digit" })
+      : "zuletzt";
+    const b = document.createElement("div");
+    b.style.cssText = "position:fixed;left:50%;top:10px;transform:translateX(-50%);"
+      + "background:#1E3A4C;color:#f1ecdd;padding:9px 16px;border-radius:999px;"
+      + "font-size:13px;z-index:99;display:flex;gap:12px;align-items:center;"
+      + "box-shadow:0 4px 18px rgba(0,0,0,.28)";
+    b.innerHTML = "<span>Weiter bei deinem Stand von " + txt + " \u00b7 "
+      + folien.length + " Folien</span>";
+    const n = document.createElement("button");
+    n.textContent = "Neu anfangen";
+    n.style.cssText = "background:none;border:1px solid rgba(241,236,221,.5);"
+      + "color:inherit;border-radius:999px;padding:4px 12px;font:inherit;"
+      + "font-size:12px;cursor:pointer";
+    n.onclick = function () {
+      folien = [neueFolie()]; aktiv = 0; state = folien[0];
+      try { localStorage.removeItem(SPEICHER); } catch (e) {}
+      b.remove(); render(); streifen();
+    };
+    b.appendChild(n);
+    const weg = document.createElement("button");
+    weg.textContent = "\u2715";
+    weg.style.cssText = n.style.cssText + ";border:0;padding:4px 6px";
+    weg.onclick = function () { b.remove(); };
+    b.appendChild(weg);
+    document.body.appendChild(b);
+  }
+
   const cover = document.getElementById('cover');
   const g = id => document.getElementById(id);
   const rgb = h => { h=h.replace('#',''); return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)]; };
@@ -407,6 +499,7 @@
     fit();
     miniFuellen(aktiv);
     auftragZeigen();
+    standSichern();          // laeuft nach jeder Aenderung ohnehin
     requestAnimationFrame(pruefeZonen);
   }
 
@@ -1682,6 +1775,18 @@ Drei bis sechs Folien. Nichts ausserhalb des JSON.`;
   g('fmtHint').textContent = FORMATE[fmt].hinweis;
   formularFuellen();
   stripBauen();
+  render();
+  /* 🚨 Nach dem Laden muss der Folien-Streifen neu gebaut werden —
+     sonst steht dort die alte Startfolie, waehrend die Buehne den
+     wiederhergestellten Stand zeigt. */
+  standLaden();
+  sichernFrei = true;      // ab jetzt darf gespeichert werden
+  stripBauen();
+  /* 🚨 Die Buehne allein reicht nicht: formularFuellen() belegt Textfelder,
+     Regler und Farbwahl aus `state`. Ohne den Aufruf zeigt die Vorschau den
+     wiederhergestellten Text, die Eingabefelder aber den Startzustand — und
+     die erste Tastatureingabe macht die Arbeit wieder kaputt. */
+  formularFuellen();
   render();
   setTimeout(fit,60);
   document.fonts.ready.then(render);

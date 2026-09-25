@@ -1,6 +1,6 @@
 {
   "$schema": "competitor-watchlist v2",
-  "updated": "2026-06-07",
+  "updated": "2026-09-25",
   "description": "Aktualisiert nach Discovery-Lauf 2026-05-08. Ersetzt v1 (war auf Web-Such-Phantasie basiert). Enthält 7 echte In-Niche-Stars (entdeckt via Hashtag-Discovery) + 3 Big-Names (Caroline Preuss, Julia Trost, Katharina Lewald) zur Vergleichsobservation. Tägliches Scraping zeigt: Big-Names nutzen die Mum-Business-Hashtags nicht — sie kommen über andere Distribution.",
   "accounts": [
     {
@@ -81,7 +81,9 @@
       "profile": "doterra",
       "category": "real-niche-star-official",
       "added": "2026-05-08",
-      "note": "OFFIZIELL doTERRA DACH. Top-Engagement (201 L/Post). Nicht Konkurrenz, sondern potenzieller Repost-Verstärker"
+      "note": "OFFIZIELL doTERRA DACH. Top-Engagement (201 L/Post). Nicht Konkurrenz, sondern potenzieller Repost-Verstärker",
+      "ideenquelle": false,
+      "ideenquelle_grund": "Offizieller Firmen-Account — Produktwerbung, keine übertragbaren Content-Muster (Patricias Entscheid 25.09.2026)."
     },
     {
       "handle": "flowterra.community",
@@ -121,7 +123,9 @@
       "profile": "mentoring-self",
       "category": "patricia-self-profile",
       "added": "2026-05-08",
-      "note": "Patricias eigenes Mentoring-Profil. Tägliches Scraping für Job-Säulen-Analyse + Wachstumsdiagnose"
+      "note": "Patricias eigenes Mentoring-Profil. Tägliches Scraping für Job-Säulen-Analyse + Wachstumsdiagnose",
+      "ideenquelle": false,
+      "ideenquelle_grund": "Patricias eigenes Profil."
     },
     {
       "handle": "patricia_ulmann",
@@ -129,7 +133,17 @@
       "profile": "doterra-self",
       "category": "patricia-self-profile",
       "added": "2026-05-08",
-      "note": "Patricias eigenes doTERRA-Profil. Im Aufbau seit März 2026, ~61 Followers. Tägliches Tracking für Job-Säulen-Analyse + Wachstumsdiagnose"
+      "note": "Patricias eigenes doTERRA-Profil. Im Aufbau seit März 2026, ~61 Followers. Tägliches Tracking für Job-Säulen-Analyse + Wachstumsdiagnose",
+      "ideenquelle": false,
+      "ideenquelle_grund": "Patricias eigenes Profil."
+    },
+    {
+      "handle": "reichweitenherz",
+      "label": "Reichweitenherz",
+      "profile": "mentoring",
+      "category": "reichweiten-patterns",
+      "added": "2026-09-25",
+      "note": "Patricias wichtigste Referenz für Reichweiten-Mechanik — siehe context/reichweitenherz-voice-layer.md und reference/content-tresor-reichweitenherz.md. Fehlte bis 25.09.2026 in der Watchlist und konnte deshalb nie in den Ideen auftauchen."
     }
   ],
   "settings": {
