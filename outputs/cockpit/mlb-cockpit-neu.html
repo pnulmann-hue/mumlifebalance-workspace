@@ -813,6 +813,14 @@
   .tczeile > span:first-child { color: var(--ink-soft); }
 
   /* ---------- Mailtexte ---------- */
+  .mentwuerfe { margin-bottom: 4px; }
+  .mailkarte.mentwurf { border-color: var(--orange); background: var(--surface); }
+  .mentwurf .mailkopf { background: var(--orange-soft); border-radius: 8px 8px 0 0; }
+  .mentwurfinfo { padding: 8px 12px 0; font-size: 12.5px; color: var(--ink-soft); line-height: 1.55; }
+  .mentwurfknoepfe { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 12px; }
+  .mentwurfvorschau { display: block; width: 100%; height: 560px; border: 0;
+    border-top: 1px solid var(--line); background: #fff; border-radius: 0 0 8px 8px; }
+  .dneu { color: var(--orange); font-weight: 700; }
   .mailkarte { border: 1px solid var(--line); border-radius: 8px; margin-top: 10px; background: var(--ground); }
   .mailkopf { display: flex; gap: 10px; align-items: baseline; padding: 9px 12px; border-bottom: 1px solid var(--line); }
   .mailkopf .note { margin-left: auto; }
@@ -1585,7 +1593,11 @@
   /* =========================================================
      State + Speicherung
      ========================================================= */
-  var DOC_KEYS = ["posts", "ideen", "leads", "team", "produkte", "funnel", "launches", "zahlen", "ideenkasten"];
+  /* 🚨 „posts" und „ideen" sind seit dem Reiter-Umbau vom 24.09.2026
+     unsichtbar und werden nicht mehr geladen. Sie bleiben unten als
+     leere Arrays bestehen, damit ein uebersehener Zugriff die Seite
+     nicht killt. Siehe Kopf von patch-tote-listen-raus.py. */
+  var DOC_KEYS = ["leads", "team", "produkte", "funnel", "launches", "zahlen", "ideenkasten"];
   /* Kommt aus ActiveCampaign und wird nur angezeigt, nie hier bearbeitet. */
   var mailings = { listen: [], automationen: [], stand: "" };
   /* Rang-Tracker: kommt aus dem Schlagdistanz-Bericht im Back Office. */
@@ -1781,6 +1793,8 @@
   }
 
   function saveList(key) {
+    // „ideen" ist seit 25.09.2026 eine Bruecke in den Ideenkasten, kein Array.
+    if (key === "ideen") return;
     clearTimeout(saveTimers[key]);
     saveTimers[key] = setTimeout(function () {
       lsSet(key, state[key]);
@@ -1951,37 +1965,11 @@
      ========================================================= */
   var W = 1080, H = 1350;
 
-  /* 🚨 Ein Wort, das allein schon breiter ist als die Flaeche, passt in keine
-     Zeile und laeuft seitlich hinaus — das clip() schneidet es ab, mitten im
-     Wort. Genau das hat Patricia am 25.09.2026 gemeldet. Deshalb die
-     Notbremse: zu breite Woerter zeichenweise trennen. Alles andere bricht
-     weiter an Leerzeichen. */
-  function hartTrennen(ctx, wort, maxW) {
-    if (ctx.measureText(wort).width <= maxW) return [wort];
-    var teile = [], rest = wort;
-    while (rest && ctx.measureText(rest).width > maxW) {
-      var n = 1;
-      while (n < rest.length &&
-             ctx.measureText(rest.slice(0, n + 1)).width <= maxW) n++;
-      if (n < 1) n = 1;             // eine Zeichenbreite ist das Minimum
-      teile.push(rest.slice(0, n));
-      rest = rest.slice(n);
-    }
-    if (rest) teile.push(rest);
-    return teile;
-  }
-
   function wrap(ctx, text, maxW) {
     var out = [];
     String(text || "").split("\n").forEach(function (para) {
-      var roh = para.split(/\s+/).filter(Boolean);
-      if (!roh.length) { out.push(""); return; }
-      // Zu breite Woerter vorher aufteilen, damit die Zeilenlogik darunter
-      // nie ein Wort bekommt, das sie nicht unterbringen kann.
-      var words = [];
-      roh.forEach(function (w) {
-        hartTrennen(ctx, w, maxW).forEach(function (t) { words.push(t); });
-      });
+      var words = para.split(/\s+/).filter(Boolean);
+      if (!words.length) { out.push(""); return; }
       var line = words[0];
       for (var i = 1; i < words.length; i++) {
         var test = line + " " + words[i];
@@ -2001,16 +1989,8 @@
       if (lines.length * size * lh <= maxH) return { size: size, lines: lines };
       size -= 4;
     }
-    /* 🚨 Passt es auch bei der kleinsten Schrift nicht, kamen bisher trotzdem
-       ALLE Zeilen zurueck — gezeichnet wurde bis zum Rand, der Rest verschwand
-       lautlos. Jetzt steht das im Ergebnis, und die Ansicht sagt es.
-       Still kuerzen waere falsch: ein abgeschnittener Text sieht aus wie ein
-       fertiger, und nur Patricia weiss, welcher Satz weg darf. */
     ctx.font = weight + " " + min + "px " + family;
-    var rest = wrap(ctx, text, maxW);
-    return { size: min, lines: rest,
-             zuLang: rest.length * min * lh > maxH,
-             passtNicht: Math.max(0, rest.length - Math.floor(maxH / (min * lh))) };
+    return { size: min, lines: wrap(ctx, text, maxW) };
   }
 
   function drawCover(ctx, img, x, y, w, h, zoom, ox, oy) {
@@ -5456,7 +5436,13 @@
         grid.appendChild(d);
       });
 
-      var posts = state.posts.filter(function (p) { return f.keyword && p.keyword && p.keyword.toUpperCase() === String(f.keyword).toUpperCase(); });
+      /* 🚨 Zaehlte die 5 alten „posts"-Karteileichen. Eine Zahl aus einer
+         toten Liste sieht genauso echt aus wie eine gemessene. */
+      var posts = (typeof alleBeitraege === "function" ? alleBeitraege() : [])
+        .filter(function (b) {
+          var t = ((b.caption || "") + " " + (b.titel || "")).toUpperCase();
+          return f.keyword && t.indexOf(String(f.keyword).toUpperCase()) >= 0;
+        }).map(function (b) { return { thema: b.titel || b.hook || "", datum: (b.obj && b.obj.datum) || "" }; });
       card.querySelector(".chain-foot").innerHTML =
         '<span class="note">' + posts.length + ' Posts spielen dieses Keyword' + (posts.length ? ": " + esc(posts.slice(0, 3).map(function (p) { return p.thema || "ohne Thema"; }).join(", ")) : "") + '</span>';
 
@@ -6670,7 +6656,61 @@
     }).catch(function () { mailtexte[nummer] = []; });
   }
 
+  /* Neue Mail-Fassungen von Claude, noch nicht in ActiveCampaign.
+     Sammlung `mailentwuerfe` — siehe scripts/cockpit/patch-mailentwuerfe.py. */
+  var mailEntwuerfe = null;
+  function mailEntwuerfeHolen() {
+    if (!db || mailEntwuerfe) return;
+    mailEntwuerfe = [];
+    db.collection("mailentwuerfe").limit(50).get().then(function (qs) {
+      mailEntwuerfe = qs.docs.map(function (d) { var x = d.data() || {}; x.id = d.id; return x; });
+      if (activeTab === "mailings") render();
+    }).catch(function () {});
+  }
+  function entwuerfeFuer(nummer) {
+    return (mailEntwuerfe || []).filter(function (e) {
+      return String(e.automation) === String(nummer);
+    }).sort(function (a, b) { return (a.reihenfolge || 0) - (b.reihenfolge || 0); });
+  }
   function mailListe(nummer) {
+    var neu = entwuerfeFuer(nummer);
+    if (!neu.length) return mailListeAC(nummer);
+    return '<div class="mentwuerfe"><p class="note">Neue Fassung von mir, noch nicht in ' +
+      'ActiveCampaign. Schau dir die Vorschau an, kopier das HTML und setz es in der ' +
+      'Automation ein.</p>' +
+      neu.map(function (e) {
+        return '<div class="mailkarte mentwurf" data-entwurf="' + esc(e.id) + '">' +
+          '<div class="mailkopf"><strong>' + esc(e.betreff || "Ohne Betreff") + '</strong>' +
+          '<span class="note">' + esc(e.warten || "") + '</span></div>' +
+          '<div class="mentwurfinfo">' + esc(e.wann || "") +
+          (e.betreff2 ? '<br>Zweiter Betreff: ' + esc(e.betreff2) : "") +
+          (e.preheader ? '<br>Vorschautext: ' + esc(e.preheader) : "") + '</div>' +
+          '<div class="mentwurfknoepfe">' +
+          '<button class="btn primary" data-kopie="html">HTML kopieren</button>' +
+          '<button class="btn" data-kopie="betreff">Betreff kopieren</button>' +
+          (e.preheader ? '<button class="btn" data-kopie="preheader">Vorschautext kopieren</button>' : "") +
+          '</div><iframe class="mentwurfvorschau" sandbox="" title="Vorschau der Mail"></iframe></div>';
+      }).join("") +
+      '<p class="note" style="margin-top:16px">Und das steckt heute in ActiveCampaign:</p></div>' +
+      mailListeAC(nummer);
+  }
+  function mailEntwuerfeVerdrahten(box) {
+    Array.prototype.forEach.call(box.querySelectorAll("[data-entwurf]"), function (k) {
+      var e = (mailEntwuerfe || []).filter(function (x) {
+        return x.id === k.getAttribute("data-entwurf");
+      })[0];
+      if (!e) return;
+      var f = k.querySelector("iframe");
+      if (f) f.srcdoc = e.html || "";
+      Array.prototype.forEach.call(k.querySelectorAll("[data-kopie]"), function (b) {
+        b.onclick = function (ev) {
+          ev.stopPropagation();
+          inDieZwischenablage(e[b.getAttribute("data-kopie")] || "", b);
+        };
+      });
+    });
+  }
+  function mailListeAC(nummer) {
     var mails = mailtexte[nummer];
     if (!mails) { mailsHolen(nummer); return '<div class="empty">Mails werden geholt …</div>'; }
     if (!mails.length) return '<div class="empty">In dieser Automation stecken keine Mails.</div>';
@@ -6683,6 +6723,7 @@
   }
 
   function renderMailings(main) {
+    mailEntwuerfeHolen();
     var listen = mailings.listen || [];
     var autos = mailings.automationen || [];
     var kontakte = listen.reduce(function (s, l) { return s + (parseInt(l.kontakte, 10) || 0); }, 0);
@@ -6731,7 +6772,9 @@
         '<span class="dname">' + esc(a.name) + '</span>' +
         '<span class="flag ' + (a.status === "aktiv" ? "ok" : "bad") + '">' + esc(a.status) + '</span>' +
         '<span class="note">' + (a.mails ? a.mails + (a.mails === 1 ? " Mail" : " Mails") : "keine Mails") +
-        ' · Nr. ' + esc(String(a.nummer)) + '</span></button>' +
+        ' · Nr. ' + esc(String(a.nummer)) +
+        (entwuerfeFuer(a.nummer).length ? ' · <span class="dneu">neue Fassung</span>' : "") +
+        '</span></button>' +
         '<div class="dkoerper"></div>';
 
       karte.querySelector(".dkopf").onclick = function () {
@@ -6740,6 +6783,7 @@
       };
       if (offeneAutomation === a.nummer) {
         karte.querySelector(".dkoerper").innerHTML = mailListe(a.nummer);
+        mailEntwuerfeVerdrahten(karte.querySelector(".dkoerper"));
       }
       ab.appendChild(karte);
     });
@@ -8084,9 +8128,13 @@
     state.launches.slice().sort(function (x, y) { return (x.start || "") < (y.start || "") ? -1 : 1; }).forEach(function (l) {
       var card = document.createElement("div");
       card.className = "chain";
-      var eingezahlt = state.posts.filter(function (p) {
-        return l.start && l.ende && p.datum >= l.start && p.datum <= l.ende;
-      });
+      // Dieselbe Umstellung wie bei der Funnel-Karte: echte Beitraege statt
+      // der alten „posts"-Liste.
+      var eingezahlt = (typeof alleBeitraege === "function" ? alleBeitraege() : [])
+        .filter(function (b) {
+          var dt = (b.obj && b.obj.datum) || "";
+          return l.start && l.ende && dt >= l.start && dt <= l.ende;
+        });
       card.innerHTML =
         '<div class="chain-top"><span class="c-name">' + esc(l.name || "Neuer Launch") + '</span>' +
         '<span class="chip' + (l.phase === "Verkauf" || l.phase === "Cart Close" ? " orange" : "") + '">' + esc(l.phase || "Vorbereitung") + '</span>' +
@@ -8512,6 +8560,19 @@
   /* Einen gelaufenen Beitrag zurueck in die Planung holen.
      🚨 Nur in den Ideenvorrat — nie direkt auf einen Wochenplatz. Was wann
      rausgeht, bleibt Patricias Entscheidung. */
+  /* 🚨 Bis 25.09.2026 schrieben drei Knoepfe nach `state.ideen` — dem Reiter,
+     den der Umbau vom 24.09. entfernt hat. Sie meldeten „In den Ideenvorrat
+     gelegt", und den Vorrat sah niemand mehr. Jetzt landen sie im
+     Ideenkasten, den es als Reiter gibt. */
+  function inDenIdeenkasten(text, bereich, notiz) {
+    state.ideenkasten = state.ideenkasten || [];
+    state.ideenkasten.unshift({
+      id: uid("ik"), idee: text, bereich: bereich || "Content",
+      aufwand: "klein", status: "Idee", notiz: notiz || ""
+    });
+    saveList("ideenkasten");
+  }
+
   function recycelnAlsIdee(b, knopf) {
     var text = (b.hook || b.anfang || "").slice(0, 200);
     state.ideen.unshift({
@@ -10908,6 +10969,21 @@
      Start: lokal laden, dann Datenbank drüberlegen
      ========================================================= */
   DOC_KEYS.forEach(function (k) { state[k] = lsGet(k, []); });
+  // Nicht mehr geladen, aber vorhanden — siehe oben.
+  state.posts = [];
+  /* 🚨 Kein Array, sondern eine Bruecke in den Ideenkasten. Drei Knoepfe
+     („Nochmal bringen", „Daraus mehr machen", „In den Ideenvorrat legen")
+     schrieben bis 25.09.2026 nach state.ideen — also in den Reiter, den der
+     Umbau vom 24.09. entfernt hat. Sie meldeten Erfolg, und den Vorrat sah
+     niemand mehr. So muss keine der Stellen angefasst werden. */
+  state.ideen = {
+    length: 0,
+    filter: function () { return []; },
+    unshift: function (o) {
+      inDenIdeenkasten(o.text || o.idee || "", "Content",
+        o.quelle || o.typ || "");
+    }
+  };
   freigaben = lsGet("freigaben", {}) || {};
   igZuordnung = lsGet("ig-zuordnung", { zuordnung: {} }) || { zuordnung: {} };
   ideenExtern = lsGet("ideen-extern", { ideen: [] }) || { ideen: [] };

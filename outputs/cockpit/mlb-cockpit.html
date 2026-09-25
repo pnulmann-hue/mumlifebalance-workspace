@@ -1593,7 +1593,11 @@
   /* =========================================================
      State + Speicherung
      ========================================================= */
-  var DOC_KEYS = ["posts", "ideen", "leads", "team", "produkte", "funnel", "launches", "zahlen", "ideenkasten"];
+  /* 🚨 „posts" und „ideen" sind seit dem Reiter-Umbau vom 24.09.2026
+     unsichtbar und werden nicht mehr geladen. Sie bleiben unten als
+     leere Arrays bestehen, damit ein uebersehener Zugriff die Seite
+     nicht killt. Siehe Kopf von patch-tote-listen-raus.py. */
+  var DOC_KEYS = ["leads", "team", "produkte", "funnel", "launches", "zahlen", "ideenkasten"];
   /* Kommt aus ActiveCampaign und wird nur angezeigt, nie hier bearbeitet. */
   var mailings = { listen: [], automationen: [], stand: "" };
   /* Rang-Tracker: kommt aus dem Schlagdistanz-Bericht im Back Office. */
@@ -1789,6 +1793,8 @@
   }
 
   function saveList(key) {
+    // „ideen" ist seit 25.09.2026 eine Bruecke in den Ideenkasten, kein Array.
+    if (key === "ideen") return;
     clearTimeout(saveTimers[key]);
     saveTimers[key] = setTimeout(function () {
       lsSet(key, state[key]);
@@ -5430,7 +5436,13 @@
         grid.appendChild(d);
       });
 
-      var posts = state.posts.filter(function (p) { return f.keyword && p.keyword && p.keyword.toUpperCase() === String(f.keyword).toUpperCase(); });
+      /* 🚨 Zaehlte die 5 alten „posts"-Karteileichen. Eine Zahl aus einer
+         toten Liste sieht genauso echt aus wie eine gemessene. */
+      var posts = (typeof alleBeitraege === "function" ? alleBeitraege() : [])
+        .filter(function (b) {
+          var t = ((b.caption || "") + " " + (b.titel || "")).toUpperCase();
+          return f.keyword && t.indexOf(String(f.keyword).toUpperCase()) >= 0;
+        }).map(function (b) { return { thema: b.titel || b.hook || "", datum: (b.obj && b.obj.datum) || "" }; });
       card.querySelector(".chain-foot").innerHTML =
         '<span class="note">' + posts.length + ' Posts spielen dieses Keyword' + (posts.length ? ": " + esc(posts.slice(0, 3).map(function (p) { return p.thema || "ohne Thema"; }).join(", ")) : "") + '</span>';
 
@@ -8116,9 +8128,13 @@
     state.launches.slice().sort(function (x, y) { return (x.start || "") < (y.start || "") ? -1 : 1; }).forEach(function (l) {
       var card = document.createElement("div");
       card.className = "chain";
-      var eingezahlt = state.posts.filter(function (p) {
-        return l.start && l.ende && p.datum >= l.start && p.datum <= l.ende;
-      });
+      // Dieselbe Umstellung wie bei der Funnel-Karte: echte Beitraege statt
+      // der alten „posts"-Liste.
+      var eingezahlt = (typeof alleBeitraege === "function" ? alleBeitraege() : [])
+        .filter(function (b) {
+          var dt = (b.obj && b.obj.datum) || "";
+          return l.start && l.ende && dt >= l.start && dt <= l.ende;
+        });
       card.innerHTML =
         '<div class="chain-top"><span class="c-name">' + esc(l.name || "Neuer Launch") + '</span>' +
         '<span class="chip' + (l.phase === "Verkauf" || l.phase === "Cart Close" ? " orange" : "") + '">' + esc(l.phase || "Vorbereitung") + '</span>' +
@@ -8544,6 +8560,19 @@
   /* Einen gelaufenen Beitrag zurueck in die Planung holen.
      🚨 Nur in den Ideenvorrat — nie direkt auf einen Wochenplatz. Was wann
      rausgeht, bleibt Patricias Entscheidung. */
+  /* 🚨 Bis 25.09.2026 schrieben drei Knoepfe nach `state.ideen` — dem Reiter,
+     den der Umbau vom 24.09. entfernt hat. Sie meldeten „In den Ideenvorrat
+     gelegt", und den Vorrat sah niemand mehr. Jetzt landen sie im
+     Ideenkasten, den es als Reiter gibt. */
+  function inDenIdeenkasten(text, bereich, notiz) {
+    state.ideenkasten = state.ideenkasten || [];
+    state.ideenkasten.unshift({
+      id: uid("ik"), idee: text, bereich: bereich || "Content",
+      aufwand: "klein", status: "Idee", notiz: notiz || ""
+    });
+    saveList("ideenkasten");
+  }
+
   function recycelnAlsIdee(b, knopf) {
     var text = (b.hook || b.anfang || "").slice(0, 200);
     state.ideen.unshift({
@@ -10940,6 +10969,21 @@
      Start: lokal laden, dann Datenbank drüberlegen
      ========================================================= */
   DOC_KEYS.forEach(function (k) { state[k] = lsGet(k, []); });
+  // Nicht mehr geladen, aber vorhanden — siehe oben.
+  state.posts = [];
+  /* 🚨 Kein Array, sondern eine Bruecke in den Ideenkasten. Drei Knoepfe
+     („Nochmal bringen", „Daraus mehr machen", „In den Ideenvorrat legen")
+     schrieben bis 25.09.2026 nach state.ideen — also in den Reiter, den der
+     Umbau vom 24.09. entfernt hat. Sie meldeten Erfolg, und den Vorrat sah
+     niemand mehr. So muss keine der Stellen angefasst werden. */
+  state.ideen = {
+    length: 0,
+    filter: function () { return []; },
+    unshift: function (o) {
+      inDenIdeenkasten(o.text || o.idee || "", "Content",
+        o.quelle || o.typ || "");
+    }
+  };
   freigaben = lsGet("freigaben", {}) || {};
   igZuordnung = lsGet("ig-zuordnung", { zuordnung: {} }) || { zuordnung: {} };
   ideenExtern = lsGet("ideen-extern", { ideen: [] }) || { ideen: [] };
