@@ -67,7 +67,7 @@ du ihn fast schneller selbst geschrieben.
 Und am nächsten Montag fängst du wieder bei null an, weil sich die KI an nichts erinnert
 und du jedes Mal neu überlegen musst, wie du ihr das eigentlich sagst.
 
-Das liegt nicht an dir und auch nicht an der KI. Es fehlen zwei Dinge, und genau die
+Das liegt weder an dir noch an der KI. Es fehlen zwei Dinge, und genau die
 zeig ich dir am Donnerstag.
 
 ---
@@ -121,7 +121,7 @@ heute schon möglich ist, auch für eine Mama, die keine Technikerin ist.
 📋 BLOCK 5: Für wen
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**Überschrift:** Der Abend ist für dich, wenn du …
+**Überschrift:** Die Masterclass ist für dich, wenn du …
 
 - KI schon benutzt und trotzdem jeden Text umschreibst
 - ein eigenes Business hast oder im Network arbeitest und deine Zeit knapp ist

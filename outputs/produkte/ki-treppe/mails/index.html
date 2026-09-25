@@ -47,9 +47,9 @@
 <body>
 <div class="huelle">
   <h1>Mailstrecke · KI-Masterclass</h1>
-  <p class="unter">Die Mails rund um die Masterclass am Donnerstag, 8. Oktober, 9 Uhr. Knopf „Ganzes HTML“ tippen, in ActiveCampaign einfügen. Die Vorschau unter jeder Karte ist genau das, was ankommt.</p>
+  <p class="unter">Die Mails im KI-Launch: Masterclass (Do 8. Oktober, 9 Uhr) und Stimm-Check. Knopf „Ganzes HTML“ tippen, in ActiveCampaign einfügen. Die Vorschau unter jeder Karte ist genau das, was ankommt.</p>
 
-  <div class="warnung"><b>Opt-in-Mail:</b> Formular 69 → Optionen → Opt-in-Bestätigung → E-Mail bearbeiten → HTML. Der Knopf zeigt auf <code>%CONFIRMLINK%</code>, den Bestätigungslink von ActiveCampaign.</div>
+  <div class="warnung"><b>Opt-in-Mails:</b> im jeweiligen Formular → Optionen → Opt-in-Bestätigung → E-Mail bearbeiten → HTML. Der Knopf zeigt auf <code>%CONFIRMLINK%</code>, den Bestätigungslink von ActiveCampaign. Die Auslieferung des Stimm-Checks kommt in eine Automation mit Auslöser Tag <code>stimm-check-lead</code>.</div>
 
   <div class="karte">
     <div class="kopf">
@@ -68,6 +68,46 @@
     <details open>
       <summary>So sieht sie aus</summary>
       <iframe loading="lazy" src="masterclass-00-optin.html" title="Vorschau: Ein Klick noch, dann bist du am Donnerstag dabei"></iframe>
+    </details>
+  </div>
+
+  <div class="karte">
+    <div class="kopf">
+      <span class="tag">Tag 0</span>
+      <h2>Ein Klick noch</h2>
+      <span class="warten">sofort nach dem Absenden (Double-Opt-in)</span>
+    </div>
+    <p class="betreff"><b>Betreff:</b> Ein Klick noch, dann gehört dein Stimm-Check dir</p>
+    <div class="knoepfe">
+      <button data-tun="ganz" data-id="stimm00optinhtml" data-datei="stimm-00-optin.html">Ganzes HTML</button>
+      <button class="still" data-tun="teil" data-id="stimm00optinhtml" data-datei="stimm-00-optin.html">Nur Inhalt</button>
+      <button class="still" data-tun="betreff" data-id="stimm00optinhtml" data-wert="Ein Klick noch, dann gehört dein Stimm-Check dir">Betreff</button>
+      <a class="knopf still" href="stimm-00-optin.html" target="_blank" rel="noopener">Gross ansehen</a>
+      <span class="meldung" id="meldung-stimm00optinhtml"></span>
+    </div>
+    <details open>
+      <summary>So sieht sie aus</summary>
+      <iframe loading="lazy" src="stimm-00-optin.html" title="Vorschau: Ein Klick noch, dann gehört dein Stimm-Check dir"></iframe>
+    </details>
+  </div>
+
+  <div class="karte">
+    <div class="kopf">
+      <span class="tag">Tag 0</span>
+      <h2>Dein Stimm-Check ist da</h2>
+      <span class="warten">sofort nach der Bestätigung (Automation, Tag stimm-check-lead)</span>
+    </div>
+    <p class="betreff"><b>Betreff:</b> Dein Stimm-Check ist da</p>
+    <div class="knoepfe">
+      <button data-tun="ganz" data-id="stimm01auslieferunghtml" data-datei="stimm-01-auslieferung.html">Ganzes HTML</button>
+      <button class="still" data-tun="teil" data-id="stimm01auslieferunghtml" data-datei="stimm-01-auslieferung.html">Nur Inhalt</button>
+      <button class="still" data-tun="betreff" data-id="stimm01auslieferunghtml" data-wert="Dein Stimm-Check ist da">Betreff</button>
+      <a class="knopf still" href="stimm-01-auslieferung.html" target="_blank" rel="noopener">Gross ansehen</a>
+      <span class="meldung" id="meldung-stimm01auslieferunghtml"></span>
+    </div>
+    <details open>
+      <summary>So sieht sie aus</summary>
+      <iframe loading="lazy" src="stimm-01-auslieferung.html" title="Vorschau: Dein Stimm-Check ist da"></iframe>
     </details>
   </div>
 
