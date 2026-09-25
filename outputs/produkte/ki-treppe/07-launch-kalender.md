@@ -46,7 +46,10 @@ nicht weg, aber die Kinder sind es auch. Deshalb:
   sind zu Hause, und trotzdem ist heute ein Beitrag rausgegangen“ ist genau das
   Versprechen, echt gelebt.
 - **Mails sind alle vorgeschrieben und eingeplant**, bevor die Ferien anfangen.
-- **Die Masterclass bleibt am Di 13.10. um 20:00**, wenn die Kinder im Bett sind.
+- **Die Masterclass ist am Do 8.10. um 09:00** (Patricias Entscheid 25.09., vorher Di 13.10.
+  20:00). ⚠️ Mitten in den Herbstferien und morgens: die Kinder sind zu Hause —
+  Betreuung für die 45 Minuten vorher klären. Direkt nach dem Secret Offer, am 2. Tag
+  Frühbucherin — damit fällt der Live-Schub in die 48 Stunden nach dem Termin.
 - **Der Einrichtungs-Call liegt nach den Ferien** (Mo 2.11.).
 - Auch viele deiner Frauen haben Ferien. Rechne in den zwei Wochen mit weniger
   Reaktion, und nimm eine ruhige erste Woche nicht als Urteil über den Kurs.
@@ -58,8 +61,8 @@ nicht weg, aber die Kinder sind es auch. Deshalb:
 | Woche | Phase | Was sie am Ende der Woche denken soll |
 |---|---|---|
 | **KW40** · 28.9.–2.10. | Aufwärmen, kein Angebot | „Bei mir kostet KI Zeit, und ich weiss langsam, warum.“ |
-| **KW41** · 5.–9.10. | Secret Offer (48 h) → Frühbucherin | „Das gibt es, und die Frühen kommen günstiger rein.“ |
-| **KW42** · 12.–16.10. | Frühbucherin · Masterclass Di 13.10. · Preis steigt Fr | „Ich hab gesehen, wie es bei ihr läuft. Das will ich auch.“ |
+| **KW41** · 5.–9.10. | Secret Offer (48 h) → Frühbucherin · **Masterclass Do 8.10. 09:00** | „Das gibt es, und die Frühen kommen günstiger rein.“ |
+| **KW42** · 12.–16.10. | Frühbucherin · Preis steigt Fr | „Ich hab gesehen, wie es bei ihr läuft. Das will ich auch.“ |
 | **KW43** · 19.–23.10. | Voller Preis · Kasse zu Fr 23.10. 23:59 | „Wenn nicht jetzt, rumsäckle ich wieder ein halbes Jahr.“ |
 
 ---
@@ -70,7 +73,7 @@ nicht weg, aber die Kinder sind es auch. Deshalb:
 |---|---|---|
 | **So 27.9.** | ManyChat-Stichwort **`STIMME`** (exact) → DM mit Wartelisten-Link, AC-Tag `ki-kurs-warteliste` | Claude baut, du schaltest frei |
 | **Fr 2.10.** | Verkaufsseite (FAQ mit MBA-Anrechnung) über `signature-kurs-salespage` · ThriveCart-Produkt mit drei Preisen (Secret-Link separat) | Claude baut, du gibst frei |
-| **Fr 2.10.** | Masterclass-Anmeldeseite + Zoom-Termin Di 13.10. 20:00 | Claude baut Seite und Mails |
+| **Mo 28.9.** | Masterclass-Anmeldeseite (Formular 69) + Zoom-Termin Do 8.10. 09:00 — Einladungen starten Di 29.9. | Claude baut Seite und Mails |
 | **Fr 2.10.** | **Herbstferien-Puffer:** alle Feed-Beiträge KW41+KW42 gebaut und eingeplant, alle Mails bis 23.10. in AC geplant | Claude baut, du gibst frei · Reels drehst du in KW40 |
 | **Mo 5.10.** | Ab hier leitet die DM von `STIMME` auf die Verkaufsseite statt auf die Warteliste | Claude stellt um |
 | **Ende Oktober** | Kapitel 1–3 gedreht, sonst hält der Auslieferungsplan nicht | du |
@@ -186,9 +189,9 @@ den Tagesplan, die stehen hier ausformuliert:
    Frühbucherpreis bis 15.10.
 5. Link-Sticker · kleine Zeile: „Bist du in der MBA? Dann hast du ihn schon gratis.“
 
-### Di 13.10. — Masterclass heute Abend
+### Do 8.10. — Masterclass heute Morgen
 
-1. „Heute Abend um acht zeig ich dir live, wie mein Freitagmorgen läuft.“
+1. „In einer Stunde zeig ich dir live, wie mein Freitagmorgen läuft.“ (Story um 8 Uhr)
 2. Was sie sieht: vom Wochenplan bis zum fertigen Beitrag, ohne geschnitten.
 3. Was sie mitnimmt, auch wenn sie nie kauft — die sechs Angaben für ihre Stimme.
 4. Frage-Sticker: „Was willst du sehen?“
@@ -213,21 +216,26 @@ den Tagesplan, die stehen hier ausformuliert:
 
 ---
 
-## Die Masterclass — Di 13.10., 20:00, 45 Minuten, Zoom
+## Die Masterclass — Do 8.10., 09:00, 45 Minuten, Zoom
 
-**Titel (Vorschlag):** „Vom Chat zur Mitarbeiterin — ich zeig dir live, wie mein
-Freitag läuft“
+**Titel im AC-Formular 69:** „18 Stunden, zwei Kanäle, ein Network und vier Kinder“ ·
+Unterzeile „Ein Blick hinter die Kulissen: wie meine KI-Assistenten mitarbeiten, ohne dass
+ich ihnen jedes Mal alles neu erklären muss“
+
+🚨 **Zeigt WAS möglich ist, nicht WIE** (Patricia 25.09.). Kernbotschaft: die KI muss dich
+kennen (personalisieren) und wissen, was zu tun ist, ohne dass du jedes Mal neu überlegst.
+Das Wie gehört in den Kurs.
 
 | Min | Was |
 |---|---|
 | 0–5 | Wer da ist, was heute passiert |
-| 5–15 | **Mehrwert, der allein trägt:** die sechs Angaben, damit eine KI wie du klingt — live an einem echten Text |
-| 15–30 | **Mitschauen:** dein Freitagmorgen am geteilten Bildschirm, vom Plan bis zum Beitrag (Kapitel 9 als Vorgeschmack) |
-| 30–38 | Wie sie dorthin kommt: die drei Stufen Chat · Cowork · Arbeitsplatz |
-| 38–45 | Angebot · Bonus 24 h (Skill-Rückmeldung) · **„In der MBA ist er gratis dabei“** · Fragen |
+| 5–25 | **Mitschauen:** das Cockpit · die Assistenten · wie ein Skill entsteht · der Kochbot (Menüplanung früher 1–2 Std, heute 3 Fragen und 5–10 Min, alles fertig aufs Handy — er kocht nicht) |
+| 25–35 | Was in den 18 Stunden drin ist: täglich Story + Feed auf 2 Kanälen, jeden Monat ein Gratis- und ein bezahltes Produkt, Network mit Kundinnen- und Teambetreuung, die ganze Administration — und warum das nur mit KI geht |
+| 35–45 | Angebot · Bonus bis Sa 10.10. 21:00 (Skill-Rückmeldung) · **„In der MBA ist er gratis dabei“** · Fragen |
 
-Aufzeichnung geht Mi 14.10. 07:00 per Mail raus, der 24-Stunden-Bonus läuft ab
-Ende der Live-Session.
+Aufzeichnung geht Do 8.10. 16:00 per Mail raus. Der Bonus (Skill-Rückmeldung) gilt
+bis **Sa 10.10. 21:00** — die 48 Stunden nach dem Live-Termin, in denen erfahrungsgemäss
+gekauft wird. Der Frühbucherpreis 277 läuft unabhängig davon bis 15.10.
 
 ---
 
@@ -235,19 +243,20 @@ Ende der Live-Session.
 
 | Wann | An | Betreff-Richtung | Job |
 |---|---|---|---|
-| Di 29.9. 07:00 | Newsletter | Warum deine KI-Texte nach niemandem klingen | Mehrwert · Warteliste |
-| Do 1.10. 07:00 | Newsletter | Mein Montagmorgen, bevor die Bots da waren | Story · Warteliste |
+| Di 29.9. 07:00 | Newsletter | Warum deine KI-Texte nach niemandem klingen | Mehrwert · **Einladung Masterclass 1** |
+| Do 1.10. 07:00 | Newsletter | Mein Montagmorgen, bevor die Bots da waren | Story · **Einladung Masterclass 2** |
 | **Mo 5.10. 06:30** | **22 Kundinnen, persönlich** | Du bist die Erste, die das sieht | Secret Offer |
 | Mo 5.10. 07:00 | Newsletter + Warteliste | 48 Stunden, bevor es alle sehen | Secret Offer |
 | Mo 5.10. 07:00 | MBA-Frauen | Du hast ihn schon | Info, kein Verkauf |
 | Di 6.10. 19:00 | wer nicht gekauft hat | Noch zwölf Stunden | Secret Offer Ende |
 | Mi 7.10. 07:00 | Newsletter + Warteliste | Ab heute für alle | Frühbucherin |
-| Fr 9.10. 07:00 | nicht gekauft | „Ist das nicht viel zu technisch für mich?“ | Einwand |
-| **Mi 7.10. 19:00** | Newsletter + Warteliste | Am Dienstag zeig ich dir live, wie meine KI mitarbeitet | Masterclass-Anmeldung (neu 25.09.) |
-| **Fr 9.10. 19:00** | noch nicht angemeldet | Die Aufzeichnung bekommt nur, wer sich anmeldet | Masterclass-Anmeldung (neu 25.09.) |
-| Mo 12.10. 07:00 | Newsletter + Warteliste | Morgen Abend zeig ich dir alles live | Masterclass |
-| Di 13.10. 16:00 | Angemeldete | Heute um acht | Erinnerung |
-| Mi 14.10. 07:00 | Angemeldete | Die Aufzeichnung — und was nur bis morgen gilt | Replay · Bonus |
+| Mo 12.10. 07:00 | nicht gekauft | „Ist das nicht viel zu technisch für mich?“ | Einwand (verschoben vom 9.10.) |
+| **Di 6.10. 07:00** | Newsletter, noch nicht angemeldet | Übermorgen zeig ich dir live, wie meine KI mitarbeitet | **Einladung Masterclass 3** |
+| **Mi 7.10. 19:00** | Angemeldete | Morgen um neun | Erinnerung + Zoom-Link |
+| **Do 8.10. 08:55** | Angemeldete | Wir sind live | Zoom-Link |
+| **Do 8.10. 16:00** | Angemeldete (auch wer nicht live war) | Die Aufzeichnung — und was nur bis Samstag gilt | Replay · Angebot · Bonus (Pitch 1) |
+| **Fr 9.10. 07:00** | Angemeldete, nicht gekauft | Was am Donnerstag gefragt wurde | Fragen aus dem Live — nur echte (Pitch 2) |
+| **Sa 10.10. 07:00** | Angemeldete, nicht gekauft | Bis heute Abend mit dem Bonus | Bonus endet 21:00 (Pitch 3) |
 | Do 15.10. 07:00 | nicht gekauft | Bis heute Nacht noch mit dem Einrichtungs-Call | Preis steigt (Text in [[06-preis-validierung]]) |
 | Fr 16.10. 07:00 | nicht gekauft | Die fünf Fragen, die mir diese Woche gestellt wurden | FAQ aus echten DMs |
 | Di 20.10. 07:00 | nicht gekauft | Was du am 30. November hast | Ergebnis konkret |

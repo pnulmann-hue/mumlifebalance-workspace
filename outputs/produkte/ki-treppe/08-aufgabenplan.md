@@ -14,7 +14,7 @@ Steht auch im Cockpit unter **Aufgaben** (Kennung `af-ki-*`). Abhaken dort. 👩
 | Mo 28.9. | Hoch | 🤖 Mails Di 29.9. + Do 1.10. schreiben → 👩 in AC planen | Newsletter 07:00: „Warum deine KI-Texte nach niemandem klingen“ (29.9.) · „Mein Montagmorgen, bevor die Bots da waren“ (1.10.). Quelle: outputs/produkte/ki-treppe/07-launch-kalender.md. |
 | Mo 28.9. | Hoch | 🤖 Masterclass ausarbeiten: Ablauf + Folien (45 Min) | Siehe Ideenkasten „Masterclass Vom Chat zur Mitarbeiterin“. Bis Mi 30.9. Entwurf, du gibst frei. |
 | Mo 28.9. | Mittel | 👩 Täglich: Story aus dem Bild-Editor posten | Aus deiner Planung → Tag → Mentoring → „KI-Launch“. ✏️-Stellen mit deinem Alltag füllen. Bis 23.10. |
-| Di 29.9. | Hoch | 👩 Zoom-Termin Masterclass Di 13.10., 20:00 anlegen | Link an Claude geben, der kommt auf die Anmeldeseite und in die Mails. |
+| Di 29.9. | Hoch | 👩 Zoom-Termin Masterclass Do 8.10., 09:00 anlegen | Link an Claude geben, der kommt auf die Anmeldeseite und in die Mails. |
 | Di 29.9. | Hoch | 🤖 Verkaufsseite KI-Kurs bauen (Signature-Design) | Mit FAQ zur MBA-Anrechnung, drei Preisstufen, MBA-Zeile. Freigabe durch dich bis Do 1.10. |
 | Mi 30.9. | Hoch | 👩 Stimm-Check live schalten | Vercel-ENV (Schlüssel nie in den Chat), ManyChat-Stichwort STIMME freischalten, WP-Seite /stimm-check/ veröffentlichen. Danach 1× selbst durchspielen. |
 | Mi 30.9. | Mittel | 👩 KI-Wissens-Dump filmen (15 Min, frei sprechen) | Daraus baut Claude die Reels für die Ferienwochen. Drehregeln: context/sprechreels-drehanleitung.md. |
@@ -27,7 +27,7 @@ Steht auch im Cockpit unter **Aufgaben** (Kennung `af-ki-*`). Abhaken dort. 👩
 | Mo 5.10. | Hoch | 👩 07:00 Secret Offer öffnen (48 h) | Story posten, DMs mit dem Secret-Link beantworten. Kein Link und kein Preis in der Story. |
 | Mi 7.10. | Hoch | 👩 07:00 ThriveCart auf Frühbucherin 277 umstellen | Kurs jetzt öffentlich verlinken. Masterclass-Anmeldung ist offen. |
 | Mo 12.10. | Hoch | 👩 Masterclass proben, Folien final |  |
-| Di 13.10. | Hoch | 👩 20:00 Masterclass live halten | Aufzeichnung danach an Claude, die Mail geht Mi 14.10. 07:00 raus. 24-h-Bonus: Rückmeldung auf den ersten Skill. |
+| Do 8.10. | Hoch | 👩 09:00 Masterclass live halten (Kinderbetreuung — Herbstferien!) | Aufzeichnung bis 15:00 an Claude, die Mail geht 16:00 raus. Bonus bis Sa 10.10. 21:00: Rückmeldung auf den ersten Skill. |
 | Fr 16.10. | Hoch | 👩 ThriveCart auf vollen Preis 333 umstellen | Frühbucherpreis endete Do 15.10. um 23:59. |
 | Mo 19.10. | Hoch | 🤖 Karussell vom 20.10. umbauen | Es gibt den Stimm-Check-Inhalt gratis heraus — Thema tauschen, sobald der Stimm-Check live ist. |
 | Mo 19.10. | Mittel | 👩 Magnet-Ich Start-Calls beginnen (falls verkauft) | Termine per WhatsApp, Vorbereitungsfragen vorher lesen. |

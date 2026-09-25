@@ -29,8 +29,9 @@ tags: [monatsplan, mentoring, content, ki-launch]
 |---|---|
 | 28.9.–4.10. | Aufwärmen, kein Angebot |
 | 5.–7.10. | Secret Offer 199, 48 h, nur per DM |
-| 7.–15.10. | Frühbucherin 277 · Masterclass-Anmeldung offen |
-| Di 13.10. 20:00 | Masterclass live |
+| 29.9.–7.10. | Masterclass-Anmeldung offen (3 Einladungsmails) |
+| 7.–15.10. | Frühbucherin 277 |
+| **Do 8.10. 09:00** | **Masterclass live** · Aufzeichnung 16:00 · Bonus bis Sa 10.10. 21:00 |
 | 16.–23.10. | voller Preis 333 · Kasse zu Fr 23.10. 23:59 |
 | 24.–31.10. | danach · KI-Auftragsbuch 39 als Angebot an Nicht-Käuferinnen (Idee) |
 
@@ -43,7 +44,7 @@ das tägliche Story-Gerüst liegt fertig im Bild-Editor (`kw40–43-story-m-ki-*
 | KW | Lage | Fokus in einem Satz |
 |---|---|---|
 | **KW40** 28.9.–2.10. | anwärmen | „Bei mir kostet KI Zeit, und ich weiss langsam, warum.“ |
-| **KW41** 5.–9.10. | Türen auf | „Das gibt es, und die Frühen kommen günstiger rein.“ |
+| **KW41** 5.–9.10. | Türen auf · Masterclass Do | „Das gibt es, und die Frühen kommen günstiger rein.“ |
 | **KW42** 12.–16.10. | läuft | „Ich hab gesehen, wie es bei ihr läuft. Das will ich auch.“ |
 | **KW43** 19.–23.10. | letzter Tag (Fr) | „Wenn nicht jetzt, rumsäckle ich wieder ein halbes Jahr.“ |
 | **KW44** 26.–30.10. | danach | offen — Nachkauf, Einblicke in die Vorbereitung der Kapitel |

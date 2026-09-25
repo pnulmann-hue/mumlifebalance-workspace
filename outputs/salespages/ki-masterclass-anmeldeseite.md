@@ -6,7 +6,7 @@ tags: [produkt, salespage, ki-launch, masterclass]
 
 **Stand:** 25.09.2026 · **Status:** Entwurf, wartet auf Patricias Freigabe
 **Ziel-Seite:** `mumlifebalance.ch/ki-masterclass/` (WP-Entwurf, noch nicht angelegt)
-**Termin:** Dienstag, 13. Oktober 2026, 20:00, Zoom, rund 45 Minuten
+**Termin:** Donnerstag, 8. Oktober 2026, 09:00, Zoom, rund 45 Minuten (verschoben am 25.09., vorher Di 13.10. 20:00)
 **Formular:** ActiveCampaign, Kopie von Formular 55 (siehe unten „Technik“)
 **Nach der Anmeldung:** Danke-Seite mit dem Stimm-Check als Geschenk
 
@@ -35,21 +35,21 @@ keinen Kurs am Abend. Die zwei Kernbotschaften:
 📋 BLOCK 1: Hero + Anmeldung
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**Eyebrow:** Kostenlose Live-Masterclass · Dienstag, 13. Oktober, 20 Uhr
+**Eyebrow:** Kostenlose Live-Masterclass · Donnerstag, 8. Oktober, 9 Uhr
 
 **Headline:** Wie oft hast du deiner KI dieses Jahr schon erklärt, wer du bist?
 
-**Unterzeile:** Am Dienstagabend zeig ich dir live, wie meine KI mitarbeitet, ohne dass
+**Unterzeile:** Am Donnerstagmorgen zeig ich dir live, wie meine KI mitarbeitet, ohne dass
 ich jedes Mal von vorne erklären muss: mein Cockpit, meine Assistenten und den Bot, der
 mir die Menüplanung für die ganze Woche abnimmt. Du schaust einfach zu, und danach weisst
 du, was bei dir der erste Schritt ist.
 
 **Formular:** Vorname · E-Mail
 
-🔘 **Ich bin am Dienstag dabei**
+🔘 **Ich bin am Donnerstag dabei**
 
 *Unter dem Knopf, klein:* Die Aufzeichnung bekommen alle, die sich anmelden, auch wenn du
-am Abend nicht kannst.
+am Morgen nicht kannst.
 
 ---
 
@@ -68,7 +68,7 @@ Und am nächsten Montag fängst du wieder bei null an, weil sich die KI an nicht
 und du jedes Mal neu überlegen musst, wie du ihr das eigentlich sagst.
 
 Das liegt nicht an dir und auch nicht an der KI. Es fehlen zwei Dinge, und genau die
-zeig ich dir am Dienstag.
+zeig ich dir am Donnerstag.
 
 ---
 
@@ -93,7 +93,7 @@ Mitarbeiterin, die weiss, wie du arbeitest.
 ---
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 BLOCK 4: Was du am Dienstag siehst
+📋 BLOCK 4: Was du am Donnerstag siehst
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 **Überschrift:** Kein Vortrag mit Folien, du schaust mir über die Schulter
@@ -128,7 +128,7 @@ heute schon möglich ist, auch für eine Mama, die keine Technikerin ist.
 - genug Tools ausprobiert hast und dir eines wünschst, das mitdenkt
 - neugierig bist, was andere Mamas mit KI schon machen
 
-**Eher nicht für dich**, wenn du eine Programmier-Schulung suchst. Am Dienstag wird
+**Eher nicht für dich**, wenn du eine Programmier-Schulung suchst. Am Donnerstag wird
 nichts programmiert.
 
 ---
@@ -151,7 +151,7 @@ steckt:
 Das wäre ohne meine KI-Assistenten nie möglich. Heute laufen bei mir 13 davon, und jeder
 nimmt mir eine Arbeit ab, die ich früher jede Woche von Hand gemacht habe.
 
-Ich zeige dir am Dienstag nichts, was ich nicht selbst jeden Tag benutze.
+Ich zeige dir am Donnerstag nichts, was ich nicht selbst jeden Tag benutze.
 
 ---
 
@@ -159,17 +159,17 @@ Ich zeige dir am Dienstag nichts, was ich nicht selbst jeden Tag benutze.
 📋 BLOCK 7: Termin + zweites Formular
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**Überschrift:** Dienstag, 13. Oktober, um 20 Uhr, wenn die Kinder im Bett sind
+**Überschrift:** Donnerstag, 8. Oktober, um 9 Uhr morgens
 
 Rund 45 Minuten über Zoom. Kamera an oder aus, wie es dir passt. Am Ende erzähl ich dir,
 wie du dir das selbst aufbauen kannst, wenn du willst, und du kannst mir deine Fragen
 stellen.
 
-Die Aufzeichnung kommt am Mittwochmorgen per Mail, aber nur an die, die angemeldet sind.
+Die Aufzeichnung kommt noch am selben Tag per Mail, aber nur an die, die angemeldet sind.
 
 **Formular:** Vorname · E-Mail
 
-🔘 **Ich bin am Dienstag dabei**
+🔘 **Ich bin am Donnerstag dabei**
 
 ---
 
@@ -181,8 +181,8 @@ Die Aufzeichnung kommt am Mittwochmorgen per Mail, aber nur an die, die angemeld
 Nein. Die Masterclass ist kostenlos. Am Ende stelle ich meinen Kurs vor, für die, die
 es selbst aufbauen wollen. Wer nur zuschauen will, schaut nur zu.
 
-**Ich kann am Dienstag nicht, lohnt sich die Anmeldung trotzdem?**
-Ja. Die Aufzeichnung geht am Mittwoch um 7 Uhr an alle, die angemeldet sind.
+**Ich kann am Donnerstag nicht, lohnt sich die Anmeldung trotzdem?**
+Ja. Die Aufzeichnung geht am Donnerstagnachmittag an alle, die angemeldet sind.
 
 **Ich hab von KI keine Ahnung. Verstehe ich das überhaupt?**
 Genau dafür zeige ich es, statt es zu erklären. Du musst nichts können, du musst nur
@@ -202,20 +202,22 @@ Komm gern. Den Kurs, den ich am Ende vorstelle, hast du in der MBA schon gratis 
 
 **Überschrift:** Einmal erklärt, und ab dann weiss sie es
 
-Du hast deiner KI schon oft genug gesagt, wer du bist. Am Dienstag siehst du, wie es
+Du hast deiner KI schon oft genug gesagt, wer du bist. Am Donnerstag siehst du, wie es
 aussieht, wenn du es ihr nur einmal sagen musst.
 
-🔘 **Ich bin am Dienstag dabei**
+🔘 **Ich bin am Donnerstag dabei**
 
 ---
 
 ## Danke-Seite (nach der Anmeldung)
 
-**Überschrift:** Du bist dabei, Dienstag um 20 Uhr
+**Überschrift:** Fast geschafft, schau kurz in dein Postfach
 
-Der Zoom-Link kommt gleich per Mail, und am Dienstag um 16 Uhr erinnere ich dich nochmal.
+Ich habe dir gerade eine Mail geschickt. Klick dort auf „Ja, ich bin dabei“, erst dann kommt der
+Zoom-Link für Donnerstag, 8. Oktober, 9 Uhr. Am Mittwochabend erinnere ich dich nochmal.
+Keine Mail da? Dann schau im Spam oder im Werbung-Ordner nach.
 
-**Und damit du nicht bis Dienstag warten musst:** Mach den Stimm-Check. In rund 15
+**Und damit du nicht bis Donnerstag warten musst:** Mach den Stimm-Check. In rund 15
 Minuten hast du die sechs Angaben, die deine KI von dir braucht, damit sie klingt wie du,
 und einen ersten Text, den du so posten würdest. Das ist genau das „Sie muss dich
 kennen“ von oben, schon zum Mitnehmen.
@@ -235,8 +237,8 @@ so führen die beiden Seiten ineinander, egal wo sie einsteigt.)*
   Die ID des neuen Formulars mir schicken, dann baue ich es als iframe ein (wie auf
   `/ki-webinar/`, Seite 3675).
 - **Automation:** Trigger Tag `masterclass-ki-2026-10` → Bestätigung sofort ·
-  Mo 12.10. 07:00 · Di 13.10. 16:00 · Di 13.10. 19:55 „Wir sind live“ ·
-  Mi 14.10. 07:00 Aufzeichnung · dann die Pitch-Mails (Texte folgen).
+  Mi 7.10. 19:00 Erinnerung · Do 8.10. 08:55 „Wir sind live“ ·
+  Do 8.10. 16:00 Aufzeichnung · dann die Pitch-Mails (Plan im Launch-Kalender).
 - **Zoom-Link:** fehlt noch — kommt in die Bestätigungs- und Erinnerungs-Mails.
 
 ## Offen vor der Freigabe
