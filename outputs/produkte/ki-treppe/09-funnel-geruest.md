@@ -49,6 +49,23 @@ Deploy: `deploy-stimm-check-lp.mjs` (Landingpage, baut über `scripts/salespage-
 - **„Stimm-Check“**: Auslöser Tag `0€ Stimmcheck` → sofort Mail `stimm-01-auslieferung.html` (persönlicher Tool-Link mit `?e=%EMAIL%&n=%FIRSTNAME%`, Masterclass-Kasten)
 - **„KI-Masterclass Okt 2026“**: Auslöser Tag `0€ KI Webinar` → Erinnerung Mi 7.10. 19:00 · „Wir sind live“ Do 8.10. 08:55 · Aufzeichnung Do 16:00 · Pitch Fr 9.10. + Sa 10.10. (Texte folgen, Plan im Launch-Kalender)
 
+### Die Mails (15, alle fertig · Stand 25.09.)
+
+| Strecke | Mail | Wann |
+|---|---|---|
+| Newsletter an alle | N1 Einladung „Warum deine KI-Texte nach niemandem klingen“ | Di 29.9. 07:00 (Einladung 2 = 1.10., 3 = 6.10. aus dem Launch-Kalender) |
+| **0€ KI Webinar** | M1 Bestätigung + Zoom · M2 „Morgen um neun“ · M3 „Wir sind gleich live“ | sofort · Mi 7.10. 19:00 · Do 8.10. 08:55 |
+| | M4 Aufzeichnung + Angebot · M5 18 Stunden (Beweis) · M6 FAQ + Bonus endet | Do 16:00 · Fr 9.10. 07:00 · Sa 10.10. 07:00 |
+| **0€ Stimmcheck** | S1 Auslieferung (Tool-Link) | sofort nach Bestätigung |
+| | **Wenn/Dann in AC: Datum vor 8.10.** → S2 Einladung · S3 Kochbot | +1 Tag · +2 Tage |
+| | **ab 8.10.** → S2b Aufzeichnung · S3b Kurs · S4b „zu technisch?“ → danach **Engine** | +1 · +2 · +2 Tage, nur bis 23.10. |
+
+Danach übernehmen die Launch-Mails an die ganze Liste (15.10. Frühbucher endet · 22./23.10. Kasse zu).
+🚨 Offene Adressen in `masterclass-mails-bauen.py`: `KURS_URL` · `ZOOM_URL` · `AUFZEICHNUNG_URL` · `TOOL_URL`.
+Im Cockpit liegen alle 15 in `mailentwuerfe` (Kennung `ki-launch-*`). Sie erscheinen unter „Listen &
+Automationen“, sobald die zwei Automationen angelegt sind und ihre Nummer eingetragen ist:
+`python scripts/ki-kurs/mails-ins-cockpit.py --masterclass <Nr> --stimmcheck <Nr>` + batch set.
+
 Alle Mails zum Kopieren: `preview_start {"name": "ki-masterclass-mail"}` → Knopf „Ganzes HTML“.
 Gebaut von `scripts/ki-kurs/masterclass-mails-bauen.py`.
 

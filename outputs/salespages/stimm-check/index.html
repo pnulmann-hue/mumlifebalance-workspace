@@ -347,6 +347,9 @@
 .sc-sp .rev{opacity:1 !important;transform:none !important;}
 /* Hero-Bild ist ein hoher Ergebnis-Ausschnitt, kein quadratisches Mockup */
 .sc-sp .carousel-main img{height:auto;max-height:520px;object-fit:contain;background:transparent;}
+/* Elementor-Kit faerbt jede Ueberschrift (.elementor-kit-5 h1) -> Farbe wieder von der Sektion erben.
+   :is() haelt die Spezifitaet niedrig, damit die Klassen der Vorlage (.story-head usw.) weiter gewinnen. */
+.sc-sp :is(h1,h2,h3,h4,h5,h6){color:inherit;}
 /* Preisblock ohne Streichpreis: „kostenlos“ als Wort statt Zahl */
 .sc-sp .pl-price .now{font-size:40px;}
 </style></head><body><div class="sc-sp">
