@@ -1,0 +1,8 @@
+/* === KI-KURS-VERKAUFSSEITE: Zusatz zu .km-sp (auto) === */
+.km-sp.kurs .pgrid.zwei .pcard2 h3{margin-top:2px;}
+.km-sp.kurs .persona + .persona{margin-top:22px;}
+.km-sp.kurs .stats + .persona{margin-top:26px;}
+.km-sp.kurs .mba{max-width:900px;margin:30px auto 0;background:var(--card);border:1px solid rgba(18,130,140,0.5);border-radius:18px;padding:22px 26px;}
+.km-sp.kurs .mba p{margin:0 0 10px;color:var(--muted);font-size:15.5px;}
+.km-sp.kurs .mba p:last-child{margin:0;}
+.km-sp.kurs .mba b{color:#f1ecdd;}

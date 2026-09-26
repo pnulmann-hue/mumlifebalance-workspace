@@ -21,6 +21,7 @@ Newsletter / Storys ─► /ki-masterclass/ ─► Formular 69 ─► Opt-in-Mai
 | `/stimm-check/` Landingpage im **Minikurs-Baukasten**, Formular 71 eingebettet | 4262 | Entwurf | 👩 CSS `outputs/salespages/stimm-check/stimm-check.css` in den Customizer |
 | `/stimm-check-los/` nach der Bestätigung, mit Masterclass-Hinweis | 4263 | Entwurf | Adresse des Tools |
 | `/ki-masterclass/` Anmeldeseite im **ki-salespage-Baukasten** (seit 26.09.), Formular 69 eingebettet | 4266 | **live** | 👩 Formular 69: Du-Form, Datenschutz nicht vorangekreuzt |
+| `/ki-kurs/` **Verkaufsseite KI-Kurs** im ki-salespage-Baukasten (seit 26.09.), `scripts/salespage-design/ki-kurs-bauen.py` (PHASE frueh → regulaer ab 16.10.), Deploy `deploy-ki-kurs-lp.mjs` | 4286 | Entwurf | 👩 ThriveCart-Kasse (Name „Easy KI für Networkerinnen“) → `KASSE`, Ratenhöhe → `RATEN` |
 | `/ki-masterclass-danke/` nach der Bestätigung | 4258 | **live** | Stimm-Check-Block erscheint, sobald das Tool läuft |
 
 Deploy: `deploy-stimm-check-lp.mjs` (Landingpage, baut über `scripts/salespage-design/stimm-check-bauen.py`) ·
