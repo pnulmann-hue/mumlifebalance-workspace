@@ -76,10 +76,13 @@ Gebaut von `scripts/ki-kurs/masterclass-mails-bauen.py`.
 Blacklisten-Prüfung mit Korrekturrunde, Zielgruppe neutral, Schreibsprache folgt der Textprobe).
 Lokal: `preview_start {"name": "stimm-check"}` → Port 4397. Knopf am Ende → Formular 69.
 
-**Offen:** Deploy auf Vercel + ENV `ANTHROPIC_API_KEY` (keine Tag-Variablen — ohne sie setzt
-das Tool keine Tags, und genau das ist gewollt). Danach die Adresse an drei
-Stellen eintragen: `TOOL` in `deploy-stimm-check-seiten.mjs` · `TOOL_URL` in
-`masterclass-mails-bauen.py` · `STIMM_CHECK` in `deploy-ki-masterclass-danke.mjs`.
+**Live seit 26.09.2026:** https://stimm-check.vercel.app/ (Vercel-Projekt `patricia-doterra/stimm-check`,
+nur ENV `ANTHROPIC_API_KEY`, keine Tag-Variablen — gewollt). Live-Test Schritt 1: 20 s, HTTP 200.
+Adresse eingetragen in `TOOL` (deploy-stimm-check-seiten.mjs) · `TOOL_URL` (masterclass-mails-bauen.py) ·
+`STIMM_CHECK` (deploy-ki-masterclass-danke.mjs — dort direkt aufs Tool, weil sie schon auf der Liste ist).
+Neu ausspielen: `cd scripts/stimm-check && npx vercel --prod --yes`.
+🚨 Keine Obergrenze im Tool — Monatslimit in der Anthropic-Konsole setzen.
+AC-Automation **83** „0€ Stimmcheck“ (Tag 105).
 
 ## Reihenfolge bis zum Test
 
