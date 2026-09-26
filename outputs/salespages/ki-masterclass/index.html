@@ -1,0 +1,348 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>KI-Masterclass · Vorschau</title><link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet"><style>body{margin:0}
+/* === KI-MASTERCLASS-ANMELDESEITE (auto) === */
+.km-sp, .km-sp * { box-sizing:border-box; }
+.km-sp, .km-sp { margin:0;padding:0;scroll-behavior:smooth; }
+.km-sp { --bg:#0c1c30; --bg2:#122a42; --card:#16324c; --line:rgba(220,130,46,0.16);
+    --gold:#dc822e; --goldgrad:linear-gradient(90deg,#dc822e,#f0a45e,#f7c08f);
+    --neon:#dc822e; --violet:#12828c; --cyan:#4fc9d1;
+    --ink:#f1ecdd; --muted:#9aa8b3;
+    --cta:linear-gradient(100deg,#12828c 0%,#1a9aa5 52%,#dc822e 100%);
+    --sans:'Source Sans 3',Arial,sans-serif; --display:'Philosopher',Impact,sans-serif; --tech:'Source Sans 3',sans-serif; }
+.km-sp { font-family:var(--sans);background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.7;font-weight:400;overflow-x:hidden;position:relative; }
+.km-sp::before { content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(58% 42% at 50% -6%, rgba(220,130,46,0.20), transparent 70%),
+      radial-gradient(48% 42% at 92% 8%, rgba(18,130,140,0.14), transparent 70%),
+      radial-gradient(44% 40% at 6% 60%, rgba(79,201,209,0.06), transparent 70%),
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px) 0 0/46px 46px,
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px) 0 0/46px 46px; }
+.km-sp section, .km-sp .topbar, .km-sp footer { position:relative;z-index:1; }
+.km-sp img { max-width:100%;display:block;height:auto; }
+.km-sp .wrap { width:100%;max-width:1120px;margin:0 auto;padding:0 22px; }
+.km-sp section { padding:74px 0; }
+.km-sp a { color:inherit; }
+.km-sp .gold { background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(220,130,46,0.45)); }
+.km-sp em { font-style:normal;background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent; }
+.km-sp .eyebrow { font-family:var(--tech);font-size:12px;font-weight:700;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);text-align:center;margin:0 0 18px; }
+.km-sp h1, .km-sp h2 { font-family:var(--display);font-weight:400;line-height:1.04;text-transform:uppercase;letter-spacing:0.01em;margin:0;color:#f1ecdd; }
+.km-sp .disp { font-size:clamp(34px,6vw,62px);text-align:center;text-shadow:0 0 34px rgba(220,130,46,0.28); }
+.km-sp h3 { font-family:var(--sans);font-weight:800;margin:0;color:#f1ecdd;letter-spacing:0.01em; }
+.km-sp .kicker { font-family:var(--tech);text-transform:uppercase;letter-spacing:0.22em;font-weight:700;color:var(--cyan);font-size:clamp(12px,1.8vw,15px);text-align:center;display:block;margin:0 0 12px; }
+.km-sp .lead { color:var(--muted);font-size:clamp(16px,1.9vw,19px);text-align:center; }
+.km-sp .btn { display:inline-block;text-align:center;text-decoration:none;font-family:var(--sans);font-weight:800;letter-spacing:0.04em;text-transform:uppercase;
+    color:#f1ecdd;background:var(--cta);padding:19px 34px;border-radius:100px;font-size:clamp(15px,2vw,18px);
+    box-shadow:0 0 44px rgba(220,130,46,0.5),0 14px 30px rgba(0,0,0,0.4);transition:transform .15s,box-shadow .15s; }
+.km-sp .btn:hover { transform:translateY(-2px);box-shadow:0 0 66px rgba(220,130,46,0.75),0 18px 40px rgba(0,0,0,0.5); }
+.km-sp .btn.ghost { background:transparent;border:1px solid rgba(220,130,46,0.5);box-shadow:none;color:#f1ecdd; }
+.km-sp .btn.ghost:hover { background:rgba(220,130,46,0.1);transform:translateY(-2px); }
+.km-sp .btnrow { display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:28px; }
+.km-sp .subnote { text-align:center;color:var(--muted);font-size:13px;margin:14px 0 0; }
+.km-sp .topbar { position:sticky;top:0;z-index:60;background:rgba(12,28,48,0.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line); }
+.km-sp .topbar .in { display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 22px;max-width:1180px;margin:0 auto; }
+.km-sp .logo { font-family:var(--tech);font-weight:800;font-size:19px;letter-spacing:0.14em;color:#f1ecdd; }
+.km-sp .logo b { color:var(--gold); }
+.km-sp .topbar .cta { font-family:var(--sans);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:0.04em;text-decoration:none;color:#f1ecdd;background:var(--cta);padding:11px 22px;border-radius:100px;box-shadow:0 0 24px rgba(220,130,46,0.4); }
+@media(max-width:560px){
+.km-sp .topbar .cta { display:none; }
+}
+.km-sp .highlights { display:flex;gap:10px 26px;flex-wrap:wrap;justify-content:center;color:var(--muted);font-size:14px;margin:22px auto 0; }
+.km-sp .highlights span { display:flex;gap:8px;align-items:center; }
+.km-sp .highlights .st { color:var(--gold); }
+.km-sp .figwrap { position:relative;width:min(330px,74vw);margin:34px auto 6px; }
+.km-sp .figwrap::before { content:"";position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:126%;height:82%;
+    background:radial-gradient(closest-side, rgba(220,130,46,0.55), rgba(18,130,140,0.22), transparent 72%);filter:blur(22px);z-index:0; }
+.km-sp .figwrap::after { content:"";position:absolute;left:50%;bottom:2%;transform:translateX(-50%);width:70%;height:22px;
+    background:radial-gradient(closest-side, rgba(220,130,46,0.5), transparent 75%);filter:blur(6px); }
+.km-sp .figwrap img { position:relative;z-index:1;filter:drop-shadow(0 14px 44px rgba(220,130,46,0.4)); }
+.km-sp .quote { max-width:720px;margin:34px auto 0;text-align:center;font-size:clamp(16px,2vw,19px);color:var(--ink);border-left:2px solid var(--neon);padding:6px 0 6px 22px;text-align:left; }
+.km-sp .quote b { display:block;margin-top:8px;font-family:var(--tech);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold); }
+.km-sp .qgrid { display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1060px;margin:44px auto 0; }
+@media(max-width:820px){
+.km-sp .qgrid { grid-template-columns:1fr; }
+}
+.km-sp .qcard { background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 26px; }
+.km-sp .qcard .x { width:34px;height:34px;border-radius:10px;background:rgba(232,145,63,0.16);border:1px solid rgba(232,145,63,0.4);display:flex;align-items:center;justify-content:center;color:#e8913f;font-weight:800;margin-bottom:16px; }
+.km-sp .qcard h3 { font-size:18px;margin-bottom:10px;line-height:1.2; }
+.km-sp .qcard p { margin:0;color:var(--muted);font-size:15px; }
+.km-sp .pgrid { display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1060px;margin:44px auto 0; }
+@media(max-width:860px){
+.km-sp .pgrid { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:560px){
+.km-sp .pgrid { grid-template-columns:1fr; }
+}
+.km-sp .pcard2 { background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 24px;position:relative;overflow:hidden;transition:transform .15s,box-shadow .15s; }
+.km-sp .pcard2::before { content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:var(--goldgrad);box-shadow:0 0 14px rgba(220,130,46,0.7); }
+.km-sp .pcard2:hover { transform:translateY(-3px);box-shadow:0 0 34px rgba(220,130,46,0.2); }
+.km-sp .pcard2 .ico { font-size:24px;margin-bottom:10px; }
+.km-sp .pcard2 .n { font-family:var(--tech);font-weight:700;font-size:12.5px;letter-spacing:0.06em;color:var(--gold);margin-bottom:6px;display:flex;align-items:center;gap:8px; }
+.km-sp .pcard2 .neu { background:var(--goldgrad);color:#0c1c30;font-size:10px;font-weight:800;letter-spacing:0.08em;padding:2px 8px;border-radius:100px;text-transform:uppercase; }
+.km-sp .pcard2 h3 { font-size:18px;margin-bottom:10px;line-height:1.15; }
+.km-sp .pcard2 p { margin:0;color:var(--muted);font-size:14px; }
+.km-sp .stats { display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1000px;margin:44px auto 0; }
+@media(max-width:720px){
+.km-sp .stats { grid-template-columns:1fr 1fr; }
+}
+.km-sp .stat { background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 20px;text-align:center; }
+.km-sp .stat .v { font-family:var(--display);font-size:clamp(34px,6vw,48px);line-height:1;background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 16px rgba(220,130,46,0.5)); }
+.km-sp .stat .l { color:var(--muted);font-size:13px;margin-top:8px; }
+.km-sp .steps3 { display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1000px;margin:44px auto 0; }
+@media(max-width:820px){
+.km-sp .steps3 { grid-template-columns:1fr; }
+}
+.km-sp .step { background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px 26px; }
+.km-sp .step .num { font-family:var(--tech);font-weight:800;font-size:14px;color:#0c1c30;background:var(--goldgrad);width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;box-shadow:0 0 18px rgba(220,130,46,0.5); }
+.km-sp .step h3 { font-size:19px;margin-bottom:10px; }
+.km-sp .step p { margin:0;color:var(--muted);font-size:15px; }
+.km-sp .persona { max-width:820px;margin:40px auto 0;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:40px 38px; }
+.km-sp .persona p.intro { color:var(--muted);font-size:16px;margin:0 0 22px; }
+.km-sp .persona .b { display:flex;gap:14px;align-items:flex-start;margin-bottom:16px;font-size:16px; }
+.km-sp .persona .b:last-child { margin-bottom:0; }
+.km-sp .persona .b .c { width:26px;height:26px;border-radius:8px;background:var(--goldgrad);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;box-shadow:0 0 12px rgba(220,130,46,0.5); }
+.km-sp .persona .b b { color:#f1ecdd; }
+.km-sp .about { display:grid;grid-template-columns:0.9fr 1.1fr;gap:38px;align-items:center;max-width:1000px;margin:44px auto 0; }
+@media(max-width:780px){
+.km-sp .about { grid-template-columns:1fr; }
+.km-sp .about .aimg { max-width:360px;margin:0 auto; }
+}
+.km-sp .about .aimg { border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 0 40px rgba(220,130,46,0.22),0 24px 60px rgba(0,0,0,0.5); }
+.km-sp .about h2 { text-align:left; }
+.km-sp .about p { color:var(--muted);font-size:16px; }
+.km-sp .about p b { color:#f1ecdd; }
+.km-sp .price2 { display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:900px;margin:44px auto 0; }
+@media(max-width:720px){
+.km-sp .price2 { grid-template-columns:1fr; }
+}
+.km-sp .pcard { background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px 32px;position:relative;display:flex;flex-direction:column; }
+.km-sp .pcard.best { border-color:rgba(220,130,46,0.6);box-shadow:0 0 46px rgba(220,130,46,0.22); }
+.km-sp .pcard .tag { position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--goldgrad);color:#0c1c30;font-weight:800;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;padding:6px 16px;border-radius:100px;white-space:nowrap; }
+.km-sp .pcard .pn { font-family:var(--display);font-size:26px;text-transform:uppercase;color:#f1ecdd;margin-bottom:2px; }
+.km-sp .pcard .ps { color:var(--muted);font-size:14px;margin-bottom:20px; }
+.km-sp .pcard .pv { font-family:var(--display);font-size:clamp(46px,9vw,64px);line-height:1;background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 20px rgba(220,130,46,0.5)); }
+.km-sp .pcard .pvs { color:var(--muted);font-size:13.5px;margin:6px 0 22px; }
+.km-sp .pcard ul { list-style:none;padding:0;margin:0 0 26px;display:flex;flex-direction:column;gap:12px; }
+.km-sp .pcard li { display:flex;gap:11px;align-items:flex-start;font-size:15px; }
+.km-sp .pcard li .c { width:22px;height:22px;border-radius:50%;background:var(--goldgrad);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;box-shadow:0 0 10px rgba(220,130,46,0.5); }
+.km-sp .pcard .btn { margin-top:auto;display:block; }
+.km-sp .faq { max-width:820px;margin:40px auto 0; }
+.km-sp .faq details { background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden; }
+.km-sp .faq summary { list-style:none;cursor:pointer;padding:20px 24px;font-weight:700;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px; }
+.km-sp .faq summary::-webkit-details-marker { display:none; }
+.km-sp .faq summary::after { content:"+";font-family:var(--tech);color:var(--gold);font-size:22px;line-height:1;flex-shrink:0;transition:transform .2s; }
+.km-sp .faq details[open] summary::after { transform:rotate(45deg); }
+.km-sp .faq .a { padding:0 24px 22px;color:var(--muted);font-size:15px; }
+.km-sp .finalcta { text-align:center;max-width:820px;margin:0 auto;background:radial-gradient(120% 100% at 50% 0%, rgba(220,130,46,0.16), transparent 70%),var(--card);border:1px solid rgba(220,130,46,0.4);border-radius:26px;padding:56px 40px;box-shadow:0 0 50px rgba(220,130,46,0.18); }
+.km-sp footer { padding:44px 0 60px;text-align:center;color:#5c6b75;font-size:12px;border-top:1px solid var(--line); }
+.km-sp footer a { color:#9aa8b3;text-decoration:none;margin:0 8px; }
+.km-sp { --cta:linear-gradient(100deg,#b4661f 0%,#dc822e 45%,#f0a45e 100%); }
+.km-sp .btn, .km-sp .topbar .cta { color:#0c1c30; }
+.km-sp .btn.ghost { color:#f1ecdd; }
+/* === KI-Masterclass: Anpassungen gegenueber der Vorlage === */
+/* Container traegt, was in der Vorlage am body hing */
+.km-sp{position:relative;isolation:isolate;}
+/* WordPress laedt „Source Sans Pro“ (nicht „Source Sans 3“) -> sonst faellt der Text auf Arial */
+.km-sp{--sans:'Source Sans 3','Source Sans Pro',Arial,sans-serif;--tech:'Source Sans 3','Source Sans Pro',sans-serif;}
+/* Elementor-Kit faerbt Ueberschriften und Absaetze -> doppelte Klasse gewinnt */
+.km-sp.km-sp :is(h1,h2){color:#f1ecdd;}
+.km-sp.km-sp h3{color:#f1ecdd;}
+.km-sp.km-sp p,.km-sp.km-sp li,.km-sp.km-sp summary{font-family:var(--sans);}
+/* Hero-Visual ist ein Foto, keine freigestellte Figur */
+.km-sp .figwrap img{border-radius:24px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;width:100%;}
+/* Vier Stationen als 2x2 statt 3 Spalten */
+.km-sp .pgrid.zwei{grid-template-columns:1fr 1fr;max-width:900px;}
+@media(max-width:620px){ .km-sp .pgrid.zwei{grid-template-columns:1fr;} }
+/* Stat-Werte mit Einheit etwas kleiner, damit „18 Std.“ in eine Zeile passt */
+.km-sp .stat .v{font-size:clamp(30px,5vw,44px);white-space:nowrap;}
+/* Fuer-wen: Nachsatz */
+.km-sp .persona .nicht{margin:22px 0 0;color:var(--muted);font-size:14.5px;border-top:1px solid var(--line);padding-top:16px;}
+/* Liste im Ueber-mich-Block */
+.km-sp .inliste{margin:0 0 14px;padding-left:20px;color:var(--muted);font-size:16px;}
+.km-sp .inliste li{margin-bottom:6px;}
+.km-sp .inliste b{color:#f1ecdd;}
+/* Anmeldung: Preis-Wort statt Zahl, Formular-Karte mit AC-iframe */
+.km-sp .pcard .pv{font-size:clamp(40px,7vw,56px);}
+.km-sp .pcard .pfine{color:var(--muted);font-size:13.5px;margin:0;}
+.km-sp .formkarte iframe{width:100%;min-height:840px;border:0;border-radius:14px;background:#fff;margin-top:6px;}
+</style></head><body><div class="km-sp">
+
+<div class="topbar">
+  <div class="in">
+    <div class="logo">KI<b>&middot;</b>MASTERCLASS</div>
+    <a href="#anmelden" class="cta">Platz sichern</a>
+  </div>
+</div>
+
+<!-- HERO (bg) -->
+<section>
+  <div class="wrap" style="max-width:1160px;">
+    <span class="kicker">Kostenlose Live-Masterclass &middot; Do 8. Oktober &middot; 9 Uhr</span>
+    <h1 class="disp">Wie oft hast du deiner KI schon erklärt, <span class="gold">wer&nbsp;du&nbsp;bist?</span></h1>
+    <p class="lead" style="margin:22px auto 0;max-width:820px;">Am Donnerstagmorgen zeige ich dir live, wie meine KI mitarbeitet, ohne dass ich ihr jedes Mal von vorne erklären muss, was ich will: mein Cockpit, meine Assistenten und den Bot, der mir die Menüplanung für die ganze Woche abnimmt. Du schaust einfach zu und weisst danach, was bei dir der erste Schritt ist.</p>
+    <div class="highlights"><span><span class="st">&#9733;</span> 45 Minuten über Zoom</span><span><span class="st">&#9733;</span> Aufzeichnung am selben Tag</span><span><span class="st">&#9733;</span> Kostenlos</span></div>
+    <div class="figwrap"><img src="assets/km-hero.jpg" alt="Patricia im orangen Kleid am See"></div>
+    <div class="btnrow"><a href="#anmelden" class="btn">&rarr; Ich bin am Donnerstag dabei</a><a href="#zeigen" class="btn ghost">Was du siehst</a></div>
+    <p class="quote">Ohne meine KI-Assistenten wäre das, was ich in 18 Stunden die Woche schaffe, nie möglich. Am Donnerstag zeige ich dir, wie sie für mich arbeiten.<b>&mdash; Patricia</b></p>
+  </div>
+</section>
+
+<!-- DAS KENNST DU (bg2) -->
+<section style="background:var(--bg2);">
+  <div class="wrap">
+    <p class="eyebrow">Das kennst du vielleicht</p>
+    <h2 class="disp">Alle sagen, KI spart Zeit, <span class="gold">und bei dir kostet sie&nbsp;welche</span></h2>
+    <p class="lead" style="margin:20px auto 0;max-width:720px;">Das liegt weder an dir noch an der KI. Ihr fehlen zwei Dinge, und genau die zeige ich dir am Donnerstag.</p>
+    <div class="qgrid">
+      <div class="qcard"><div class="x">&#10005;</div><h3>Der Text klingt nach irgendwem</h3><p>Du tippst dein Thema ein und bekommst etwas zurück, das glatt klingt, aber nach niemandem, den deine Leute kennen. Also schreibst du es um, und am Ende wärst du selbst fast schneller gewesen.</p></div>
+      <div class="qcard"><div class="x">&#10005;</div><h3>Jeden Montag wieder bei null</h3><p>Die KI erinnert sich an nichts. Jede Woche erklärst du ihr von vorne, wer du bist, für wen du schreibst und was du anbietest.</p></div>
+      <div class="qcard"><div class="x">&#10005;</div><h3>Welcher Prompt war das nochmal?</h3><p>Letzte Woche hat es einmal richtig gut geklappt, und diese Woche suchst du den Auftrag in alten Chats, statt Zeit zu sparen.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WAS DU SIEHST (bg) -->
+<section id="zeigen">
+  <div class="wrap">
+    <p class="eyebrow">Was du am Donnerstag siehst</p>
+    <h2 class="disp">Kein Vortrag mit Folien, <span class="gold">du schaust mir über die&nbsp;Schulter</span></h2>
+    <p class="lead" style="margin:20px auto 0;max-width:740px;">Ich zeige dir an meinem eigenen Business, was heute schon möglich ist, so wie es bei mir jeden Tag läuft. Du musst nichts installieren und nichts mitschreiben.</p>
+    <div class="pgrid zwei">
+      <div class="pcard2"><div class="ico">&#128421;&#65039;</div><div class="n">Station 1</div><h3>Mein Cockpit</h3><p>Die eine Seite, auf der meine ganze Content-Woche vorbereitet liegt. Ich prüfe, gebe frei, und der Rest läuft von selbst weiter.</p></div>
+      <div class="pcard2"><div class="ico">&#129309;</div><div class="n">Station 2</div><h3>Meine Assistenten</h3><p>Was sie jeden Tag für mich erledigen, ohne dass ich daran denken muss, und warum jeder davon mir eine Arbeit abnimmt, die ich früher von Hand gemacht habe.</p></div>
+      <div class="pcard2"><div class="ico">&#129513;</div><div class="n">Station 3</div><h3>Wie ein Skill entsteht</h3><p>An einem echten Beispiel siehst du, wie aus einer Arbeit, die ich immer wieder gemacht habe, ein fester Auftrag wurde, den meine KI seither kennt.</p></div>
+      <div class="pcard2"><div class="ico">&#127858;</div><div class="n">Station 4</div><h3>Der Kochbot</h3><p>Für eine saubere Menüplanung habe ich früher ein, zwei Stunden gebraucht. Heute beantworte ich drei Fragen, und Menü- und Einkaufsliste kommen fix fertig aufs Handy. Kochen muss ich allerdings immer noch selbst.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ZAHLEN (bg2) -->
+<section style="background:var(--bg2);">
+  <div class="wrap">
+    <p class="eyebrow">Was dahintersteckt</p>
+    <h2 class="disp">Echte Zahlen aus <span class="gold">meinem&nbsp;Alltag</span></h2>
+    <div class="stats">
+      <div class="stat"><div class="v">18 Std.</div><div class="l">in der Woche für mein ganzes Business, neben vier Kindern</div></div>
+      <div class="stat"><div class="v">13</div><div class="l">KI-Assistenten, die mir jede Woche Arbeit abnehmen</div></div>
+      <div class="stat"><div class="v">2</div><div class="l">Instagram-Kanäle mit Story und Feed an jedem Tag</div></div>
+      <div class="stat"><div class="v">5&ndash;10</div><div class="l">Minuten Menüplanung für die Woche statt ein, zwei Stunden</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIE ZWEI DINGE (bg) -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Die zwei Dinge</p>
+    <h2 class="disp">Was eine KI braucht, <span class="gold">damit sie wirklich&nbsp;mitarbeitet</span></h2>
+    <div class="steps3">
+      <div class="step"><div class="num">01</div><h3>Sie kennt dich</h3><p>Wer du bist, für wen du schreibst, was du anbietest und wie du klingst. Einmal sauber festgehalten, und jeder Text fängt dort an statt bei null.</p></div>
+      <div class="step"><div class="num">02</div><h3>Sie weiss, was zu tun ist</h3><p>Die Arbeit, die du jede Woche wieder machst, steht einmal als Auftrag da, Schritt für Schritt. Dann musst du nie mehr überlegen, wie du es ihr sagst.</p></div>
+      <div class="step"><div class="num">03</div><h3>Du sagst, was du brauchst</h3><p>„Mach mir die Caption für Mittwoch“ reicht, und sie weiss, was das bei dir heisst. So wird aus einem Chat eine Mitarbeiterin.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FÜR WEN (bg2) -->
+<section style="background:var(--bg2);">
+  <div class="wrap">
+    <p class="eyebrow">Für wen</p>
+    <h2 class="disp">Die Masterclass ist <span class="gold">für dich, wenn&nbsp;du&nbsp;…</span></h2>
+    <div class="persona">
+      <p class="intro">Du musst keine Technikerin sein. Es reicht, wenn du KI schon einmal ausprobiert hast und spürst, dass da mehr gehen müsste.</p>
+      <div class="b"><span class="c"><svg width="13" height="10" viewBox="0 0 14 11"><path d="M1 5.5L5 9.5L13 1" stroke="#0c1c30" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div>KI schon benutzt hast und trotzdem <b>jeden Text umschreibst</b></div></div>
+      <div class="b"><span class="c"><svg width="13" height="10" viewBox="0 0 14 11"><path d="M1 5.5L5 9.5L13 1" stroke="#0c1c30" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div>ein <b>eigenes Business</b> hast oder <b>im Network</b> arbeitest und deine Zeit knapp ist</div></div>
+      <div class="b"><span class="c"><svg width="13" height="10" viewBox="0 0 14 11"><path d="M1 5.5L5 9.5L13 1" stroke="#0c1c30" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div>genug Tools ausprobiert hast und dir eines wünschst, <b>das mitdenkt</b></div></div>
+      <div class="b"><span class="c"><svg width="13" height="10" viewBox="0 0 14 11"><path d="M1 5.5L5 9.5L13 1" stroke="#0c1c30" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div>neugierig bist, was <b>andere Mamas mit KI</b> heute schon machen</div></div>
+      <p class="nicht">Eher nicht für dich, wenn du eine Programmier-Schulung suchst. Am Donnerstag wird nichts programmiert.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ÜBER MICH (bg) -->
+<section>
+  <div class="wrap">
+    <div class="about">
+      <div class="aimg"><img src="assets/km-about.jpg" alt="Patricia lachend am See mit einer Mappe"></div>
+      <div>
+        <p class="eyebrow" style="text-align:left;">Wer dir das zeigt</p>
+        <h2 class="disp" style="text-align:left;font-size:clamp(30px,5vw,48px);">Hey, ich bin <span class="gold">Patricia</span></h2>
+        <p style="margin-top:18px;">Ich bin Mama von vier Kindern und baue mein Business im Appenzellerland neben einem vollen Familienalltag auf. Für alles Geschäftliche bleiben mir rund <b>18 Stunden in der Woche</b>, und darin steckt:</p>
+        <ul class="inliste">
+          <li>jeden Tag <b>Story und Feed</b> auf zwei Instagram-Kanälen</li>
+          <li>jeden Monat <b>ein kostenloses und ein bezahltes Produkt</b></li>
+          <li>mein <b>Network</b> mit der Betreuung meiner Kundschaft und meines Teams</li>
+          <li>die ganze <b>Administration</b></li>
+        </ul>
+        <p><b>Das wäre ohne meine KI-Assistenten nie möglich.</b> Heute laufen bei mir 13 davon, und jeder nimmt mir eine Arbeit ab, die ich früher jede Woche von Hand gemacht habe. Am Donnerstag zeige ich dir nichts, was ich nicht selbst jeden Tag benutze.</p>
+        <a href="#anmelden" class="btn" style="margin-top:8px;">&rarr; Platz sichern</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANMELDUNG (bg2) -->
+<section id="anmelden" style="background:var(--bg2);">
+  <div class="wrap">
+    <p class="eyebrow">Kostenlos &middot; Donnerstag, 8. Oktober</p>
+    <h2 class="disp">Sichere dir <span class="gold">deinen&nbsp;Platz</span></h2>
+    <p class="lead" style="margin:20px auto 0;max-width:720px;">Trag dich ein, bestätige kurz die Mail, und der Zoom-Link ist unterwegs. Am Mittwochabend erinnere ich dich nochmal.</p>
+    <div class="price2">
+      <div class="pcard best">
+        <div class="tag">Live über Zoom</div>
+        <div class="pn">KI-Masterclass</div>
+        <div class="ps">Vom Chat zur Mitarbeiterin</div>
+        <div class="pv">Kostenlos</div>
+        <div class="pvs">Do 8. Oktober &middot; 9 Uhr &middot; rund 45 Minuten</div>
+        <ul>
+          <li><span class="c"><svg width="11" height="9" viewBox="0 0 14 11"><path d="M1 5.5L5 9.5L13 1" stroke="#0c1c30" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Mein Cockpit, meine Assistenten und der Kochbot in Aktion</li>
+          <li><span class="c"><svg width="11" height="9" viewBox="0 0 14 11"><path d="M1 5.5L5 9.5L13 1" stroke="#0c1c30" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Wie ein Skill entsteht, an einem echten Beispiel</li>
+          <li><span class="c"><svg width="11" height="9" viewBox="0 0 14 11"><path d="M1 5.5L5 9.5L13 1" stroke="#0c1c30" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Kamera an oder aus, wie es dir passt</li>
+          <li><span class="c"><svg width="11" height="9" viewBox="0 0 14 11"><path d="M1 5.5L5 9.5L13 1" stroke="#0c1c30" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Am Schluss Zeit für deine Fragen</li>
+          <li><span class="c"><svg width="11" height="9" viewBox="0 0 14 11"><path d="M1 5.5L5 9.5L13 1" stroke="#0c1c30" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Die Aufzeichnung noch am selben Tag per Mail</li>
+        </ul>
+        <p class="pfine">Am Ende erzähle ich dir, wie du dir das selbst aufbauen kannst, wenn du willst. Wer nur zuschauen will, schaut nur zu.</p>
+      </div>
+      <div class="pcard formkarte">
+        <div class="pn">Deine Anmeldung</div>
+        <div class="ps">Vorname und E-Mail genügen</div>
+        <iframe src="https://mumlifebalance.activehosted.com/f/69" title="Anmeldung zur KI-Masterclass"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ (bg) -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Fragen, die du vielleicht hast</p>
+    <h2 class="disp">Bevor du dich anmeldest, <span class="gold">kurz&nbsp;geklärt</span></h2>
+    <div class="faq">
+      <details><summary>Kostet das etwas?</summary><div class="a">Nein, die Masterclass ist kostenlos. Am Ende stelle ich meinen Kurs vor, für alle, die sich das selbst aufbauen wollen. Wer nur zuschauen will, schaut nur zu.</div></details>
+      <details><summary>Ich kann am Donnerstag nicht. Lohnt sich die Anmeldung trotzdem?</summary><div class="a">Ja. Die Aufzeichnung geht am Donnerstagnachmittag an alle, die angemeldet sind.</div></details>
+      <details><summary>Ich habe von KI keine Ahnung. Verstehe ich das überhaupt?</summary><div class="a">Genau deshalb zeige ich es dir, statt es zu erklären. Du musst nichts können und nichts installieren, du schaust einfach zu.</div></details>
+      <details><summary>Welche KI benutzt du?</summary><div class="a">Hauptsächlich Claude. Was ich zeige, gilt aber genauso, wenn du heute mit ChatGPT arbeitest.</div></details>
+      <details><summary>Ich bin in der MBA. Brauche ich das?</summary><div class="a">Komm gern. Den Kurs, den ich am Ende vorstelle, hast du in der MBA schon gratis dabei.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- LETZTER AUFRUF (bg2) -->
+<section style="background:var(--bg2);">
+  <div class="wrap">
+    <div class="finalcta">
+      <h2 class="disp">Einmal erklärt, <span class="gold">und ab dann weiss&nbsp;sie&nbsp;es</span></h2>
+      <p class="lead" style="margin:20px auto 26px;max-width:640px;">Du hast deiner KI schon oft genug gesagt, wer du bist. Am Donnerstag siehst du, wie es aussieht, wenn du es ihr nur ein einziges Mal sagen musst.</p>
+      <a href="#anmelden" class="btn">&rarr; Ich bin am Donnerstag dabei</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="https://mumlifebalance.ch/impressum/">Impressum</a> &middot;
+    <a href="https://mumlifebalance.ch/datenschutzerklaerung/">Datenschutz</a>
+    <div style="margin-top:12px;">&copy; 2026 Mum Life Balance</div>
+  </div>
+</footer>
+
+</div>
+</body></html>

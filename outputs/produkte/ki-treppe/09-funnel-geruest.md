@@ -20,11 +20,11 @@ Newsletter / Storys ─► /ki-masterclass/ ─► Formular 69 ─► Opt-in-Mai
 |---|---|---|---|
 | `/stimm-check/` Landingpage im **Minikurs-Baukasten**, Formular 71 eingebettet | 4262 | Entwurf | 👩 CSS `outputs/salespages/stimm-check/stimm-check.css` in den Customizer |
 | `/stimm-check-los/` nach der Bestätigung, mit Masterclass-Hinweis | 4263 | Entwurf | Adresse des Tools |
-| `/ki-masterclass/` Landingpage | 4266 | Entwurf | nichts — Knöpfe zeigen auf Formular 69 |
+| `/ki-masterclass/` Anmeldeseite im **ki-salespage-Baukasten** (seit 26.09.), Formular 69 eingebettet | 4266 | **live** | 👩 Formular 69: Du-Form, Datenschutz nicht vorangekreuzt |
 | `/ki-masterclass-danke/` nach der Bestätigung | 4258 | **live** | Stimm-Check-Block erscheint, sobald das Tool läuft |
 
 Deploy: `deploy-stimm-check-lp.mjs` (Landingpage, baut über `scripts/salespage-design/stimm-check-bauen.py`) ·
-`deploy-stimm-check-seiten.mjs` (/stimm-check-los/ + /ki-masterclass/) · `deploy-ki-masterclass-danke.mjs`. Quellen in `outputs/salespages/*.html`.
+`deploy-stimm-check-seiten.mjs` (/stimm-check-los/) · `deploy-ki-masterclass-lp.mjs` (/ki-masterclass/, baut über `ki-masterclass-bauen.py`, CSS `outputs/salespages/ki-masterclass/ki-masterclass.css` im Customizer) · `deploy-ki-masterclass-danke.mjs`. Quellen in `outputs/salespages/*.html`.
 
 ## ActiveCampaign
 
