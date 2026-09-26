@@ -26,7 +26,7 @@ tags: [produkt, ki, launch]
 |---|---|
 | Preise | Secret Offer **199** · Frühbucherin **277** (vorher 254) · regulär **333** |
 | Freischaltung | ab 2.11. Kapitel für Kapitel (Plan unten), nicht alles auf einmal, damit niemand ans Ende springt |
-| Fragen | **Telegram-Gruppe**, Patricia beantwortet **dienstags und donnerstags** alles |
+| Fragen | **Telegram-Gruppe**, Patricia beantwortet **dienstags und donnerstags** alles · **bleibt auch nach den Live-Calls** |
 | Calls für alle | **2 Calls**: Do **19.11.** abends (Arbeitsplatz + erster Skill, nach Kapitel 4–5) · Do **10.12.** abends (alle Fragen, Kurs komplett seit 30.11.) |
 | Bonus Secret Offer | **Bonus-Call Do 21.1.2027**, wenn sie alles getestet haben (Datum von Patricia bestätigt) |
 | Alle anderen | können den Bonus-Call zum Sonderpreis dazubuchen, als Verlängerung der Betreuung (Preis offen) |
