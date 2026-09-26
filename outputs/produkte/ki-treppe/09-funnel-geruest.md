@@ -62,7 +62,20 @@ Deploy: `deploy-stimm-check-lp.mjs` (Landingpage, baut über `scripts/salespage-
 | | danach: **warten bis Do 8.10. 16:00** → Wenn/Sonst hat Tag `0€ KI Webinar`? **Ja** → Ende (Masterclass-Strecke M4–M6 übernimmt) · **Nein** → „Gehe zu“ S2b | kein Doppel-Pitch |
 | | **Nein** → S1b Auslieferung (ohne Einladung) · S2b Aufzeichnung · S3b Kurs · S4b „zu technisch?“ → danach **Engine** | sofort · +1 · +2 · +2 Tage, Kurs-Mails nur bis 23.10. |
 
-Danach übernehmen die Launch-Mails an die ganze Liste (15.10. Frühbucher endet · 22./23.10. Kasse zu).
+**Nach M6 geht es weiter** (Plan 26.09., Mails schreibt Claude bis 1.10.):
+
+| Wann | Mail |
+|---|---|
+| Sa 10.10. 18:00 | **M7** „Noch 3 Stunden bis zum Bonus-Call“ (neu, Masterclass-Strecke) |
+| 11.–14.10. | Pause |
+| Do 15.10. 07:00 | Frühbucherpreis endet heute |
+| Fr 16.10. 07:00 | echte Fragen aus den DMs |
+| Di 20.10. 07:00 | was du am 30. November hast |
+| Do 22.10. 07:00 | morgen geht die Kasse zu |
+| Fr 23.10. 07:00 + 19:00 | heute um Mitternacht · noch 5 Stunden |
+
+Als Kampagne an die ganze Liste **ohne Käuferinnen**; Kauf-Tag aus ThriveCart (Produkt 52) ist Voraussetzung.
+AC-Automationen: **84** Masterclass (noch inaktiv) · **83** Stimm-Check.
 🚨 Offene Adressen in `masterclass-mails-bauen.py`: `KURS_URL` · `ZOOM_URL` · `AUFZEICHNUNG_URL` · `TOOL_URL`.
 Im Cockpit liegen alle 16 in `mailentwuerfe` (Kennung `ki-launch-*`). Sie erscheinen unter „Listen &
 Automationen“, sobald die zwei Automationen angelegt sind und ihre Nummer eingetragen ist:
