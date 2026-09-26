@@ -58,6 +58,7 @@ Deploy: `deploy-stimm-check-lp.mjs` (Landingpage, baut über `scripts/salespage-
 | | M4 Aufzeichnung + Angebot · M5 18 Stunden (Beweis) · M6 FAQ + Bonus endet | Do 16:00 · Fr 9.10. 07:00 · Sa 10.10. 07:00 |
 | **0€ Stimmcheck** | **Wenn/Dann gleich nach dem Auslöser: Datum vor 8.10.?** | |
 | | **Ja** → S1 Auslieferung (mit Masterclass-Einladung) · S2 Einladung · S3 Kochbot | sofort · +1 Tag · +2 Tage |
+| | danach: **warten bis Do 8.10. 16:00** → Wenn/Sonst hat Tag `0€ KI Webinar`? **Ja** → Ende (Masterclass-Strecke M4–M6 übernimmt) · **Nein** → „Gehe zu“ S2b | kein Doppel-Pitch |
 | | **Nein** → S1b Auslieferung (ohne Einladung) · S2b Aufzeichnung · S3b Kurs · S4b „zu technisch?“ → danach **Engine** | sofort · +1 · +2 · +2 Tage, Kurs-Mails nur bis 23.10. |
 
 Danach übernehmen die Launch-Mails an die ganze Liste (15.10. Frühbucher endet · 22./23.10. Kasse zu).
