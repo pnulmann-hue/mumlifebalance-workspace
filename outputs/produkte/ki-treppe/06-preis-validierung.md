@@ -20,6 +20,21 @@ tags: [produkt, ki, launch]
 | Herbstferien | liegen im Launch (5.–16.10.), Patricia ist zu Hause, nicht weg |
 | **MBA** | **Alle MBA-Kundinnen haben den Kurs gratis dabei — das wird in der Kommunikation immer wieder gesagt** |
 
+## ✅ Entscheide vom 26.09.2026 (ersetzen den Einrichtungs-Call als Bonus)
+
+| | Entscheid |
+|---|---|
+| Preise | Secret Offer **199** · Frühbucherin **277** (vorher 254) · regulär **333** |
+| Freischaltung | ab 2.11. Kapitel für Kapitel (Plan unten), nicht alles auf einmal, damit niemand ans Ende springt |
+| Fragen | **Telegram-Gruppe**, Patricia beantwortet **dienstags und donnerstags** alles |
+| Calls für alle | **2 Calls**: Do **19.11.** abends (Arbeitsplatz + erster Skill, nach Kapitel 4–5) · Do **10.12.** abends (alle Fragen, Kurs komplett seit 30.11.) |
+| Bonus Secret Offer | **Bonus-Call im neuen Jahr**, wenn sie alles getestet haben (Datum offen, Vorschlag Do 21.1.2027) |
+| Alle anderen | können den Bonus-Call zum Sonderpreis dazubuchen, als Verlängerung der Betreuung (Preis offen) |
+| MBA | sind beim Bonus-Call ohnehin dabei |
+| Ratenzahlung | **nur beim regulären Preis 333**. Frühbucher- und Secret-Offer-Preis nur einmalig (Anzahl/Höhe der Raten offen) |
+| ~~Einrichtungs-Call 2.11.~~ | entfällt, die Calls gehören jetzt allen |
+| ~~Skill-Rückmeldung als Bonus~~ | verworfen (Patricia: „doof“) |
+
 ---
 
 ## 🟦 Pflichtsatz: In der MBA ist der Kurs gratis dabei
