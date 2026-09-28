@@ -568,14 +568,14 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 **Reel · broll** · Lead · Schmerz · Kennung `kw42-reel-m-mi-ki`
 
-**Hook:** Mein KI-Abo kostet 108 Dollar im Monat. Ich hab nachgerechnet, ob sich das lohnt.
+**Hook:** Noch ein Abo, bei dem du nicht weisst, ob es sich lohnt? Ich hab nachgerechnet, was meins mir jede Woche abnimmt.
 
-**Cover:** Mein KI-Abo kostet 108 Dollar. Lohnt sich das?
+**Cover:** Noch ein Abo? Ich hab nachgerechnet, ob es sich lohnt.
 
 ```
 B-ROLL, ein Clip, rund 7 Sekunden, candid beim Tun (Küche, Alltag) — Clip sucht Claude aus.
-TEXT weiss: „Mein KI-Abo kostet 108 Dollar im Monat.“
-TEXT orange: „Ich hab nachgerechnet, ob sich das lohnt.“
+TEXT weiss: „Noch ein Abo, bei dem du nicht weisst, ob es sich lohnt?“
+TEXT orange: „Ich hab nachgerechnet, was meins mir jede Woche abnimmt.“
 Kein Schnitt, keine Untertitel, kein Ton — Musik kommt in der App.
 ```
 
@@ -583,9 +583,9 @@ Kein Schnitt, keine Untertitel, kein Ton — Musik kommt in der App.
 
 „Noch ein Abo, bei dem ich nicht weiss, ob es sich lohnt.“
 
-Das hab ich mir auch überlegt, und deshalb sag ich dir ehrlich, was meines kostet: rund 108 Dollar im Monat. Das ist nicht wenig, und es lohnt sich keinen Rappen, solange man die KI wie eine Suchmaschine benutzt.
+Das hab ich mir auch überlegt, und ich sag dir ehrlich: Ein KI-Abo lohnt sich keinen Rappen, solange du die KI wie eine Suchmaschine benutzt. Dann zahlst du für etwas, das Google gratis kann.
 
-Bei mir läuft das ganze Geschäft in rund 18 Stunden die Woche. Darin stecken jeden Tag Storys und Beiträge auf zwei Kanälen, jeden Monat ein Gratis- und ein bezahltes Produkt, das Network mit Kundschaft und Team und die ganze Administration. Allein der Menüplan hat früher ein bis zwei Stunden pro Woche gefressen und dauert heute fünf Minuten.
+Es lohnt sich erst, wenn die KI dir Arbeit abnimmt, die jede Woche wiederkommt. Bei mir ist das zum Beispiel der Tagesplan, der um halb sieben schon auf dem Handy liegt, und die Beiträge der ganzen Woche, die am Freitag vorbereitet sind und die ich nur noch lese und freigebe. Genau diese Arbeiten würden sonst jede Woche wieder bei mir landen.
 
 So rechnest du es für dich nach: Schreib drei Arbeiten auf, die jede Woche wiederkommen, und daneben, wie lange sie dauern. Wenn eine davon eine Stunde frisst, ist das die, mit der du anfängst. Wenn keine eine Stunde frisst, brauchst du das Abo noch nicht.
 
@@ -597,7 +597,7 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 #mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #kifuermamas #mumpreneur
 
-> Launch KI · KW42 · 🟡 Bitte bestätigen, dass du die Zahl öffentlich nennen willst: 108.10 USD/Monat (Anthropic-Rechnungen Jun–Sep). 18 Std./Woche und Menüplan sind belegt.
+> Launch KI · KW42 · Ohne Preis (Patricia, 28.09.: Abo-Kosten nicht öffentlich).
 
 ## 2026-10-15 · KI · Do · Was von deiner Kundschaft in die KI darf
 
