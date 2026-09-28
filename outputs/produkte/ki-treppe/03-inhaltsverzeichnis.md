@@ -211,15 +211,16 @@ so wie bei Startklar.
 
 ---
 
-## Kapitel 9 · Dein Cockpit
+## Kapitel 9 · Dein Cockpit und eine Plattform für deine Kundschaft
 
 | # | Lektion | Notizen |
 |---|---|---|
 | 9.1 | **Was ein Artifact ist** | **Erzählen:** eine eigene kleine Seite mit Datenbank, die Claude befüllt und du bedienst |
 | 9.2 | **Ihr eigenes bauen** | **Zeigen:** vom leeren Gerüst zur ersten Ansicht. **Mitgeben:** leere Cockpit-Vorlage |
-| 9.3 | **Der Abendlauf** | **Zeigen:** der Zeitplan, der abends alles Freigegebene abholt |
-| 9.4 | **Wenn zwei Sachen dasselbe tun** | **Erzählen:** die Doppelpost-Geschichte vom 16.09. — von Hand gepostet, die Freigabe stand weiter auf wartet, der Abendlauf hätte es ein zweites Mal eingeplant. **Warum das hineingehört:** es ist der einzige Fehler, den man nicht sieht, bevor er passiert |
-| 9.5 | **Zusammenfassung und Checkliste** | |
+| 9.3 | **Eine Plattform für deine Kundschaft** | **Zeigen:** die Begleitung zur 30-Tage-Energie-Routine — Rezepte, Tagesimpuls, Checkliste und Vorrat fürs Handy, gebaut als Artifact. Wie so eine Seite entsteht, was man mit ihr alles machen kann (Willkommensseite, Anwendungstipps, Checkliste für eine Aktion) und wie man sie teilt. **Ehrlich:** eine Seite für die Kundschaft bekommt keine Datenbank, weil sie sonst nur für Konten der eigenen Organisation offen ist — Einträge bleiben auf dem Handy der Kundin. **Mitgeben:** Auftrag zum Nachbauen, mit Platzhaltern (Patricia, 28.09.2026) |
+| 9.4 | **Der Abendlauf** | **Zeigen:** der Zeitplan, der abends alles Freigegebene abholt |
+| 9.5 | **Wenn zwei Sachen dasselbe tun** | **Erzählen:** die Doppelpost-Geschichte vom 16.09. — von Hand gepostet, die Freigabe stand weiter auf wartet, der Abendlauf hätte es ein zweites Mal eingeplant. **Warum das hineingehört:** es ist der einzige Fehler, den man nicht sieht, bevor er passiert |
+| 9.6 | **Zusammenfassung und Checkliste** | |
 
 ---
 
