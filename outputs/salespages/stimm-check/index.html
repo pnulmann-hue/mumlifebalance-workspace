@@ -352,6 +352,21 @@
 .sc-sp :is(h1,h2,h3,h4,h5,h6){color:inherit;}
 /* Preisblock ohne Streichpreis: „kostenlos“ als Wort statt Zahl */
 .sc-sp .pl-price .now{font-size:40px;}
+/* WordPress laedt „Source Sans Pro“ (nicht „Source Sans 3“) -> sonst faellt der Text auf Arial */
+.sc-sp{font-family:'Source Sans 3','Source Sans Pro','Helvetica Neue',Arial,sans-serif;}
+/* Handy: Collage statt Stapel */
+@media (max-width: 860px) {
+  .sc-sp .collage { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; max-width:420px; margin-left:auto; margin-right:auto; }
+  .sc-sp .collage .el { max-width:none; width:auto; }
+  .sc-sp .collage .e-bubble { grid-column:1 / -1; order:-2; justify-self:center; transform:rotate(-3deg); margin-bottom:-22px; z-index:6; font-size:14px; }
+  .sc-sp .collage .carousel-main { grid-column:1 / -1; order:-1; width:80%; }
+  .sc-sp .collage .stat { order:0; margin-top:-38px; z-index:6; padding:12px 10px; text-align:center; }
+  .sc-sp .collage .stat .n { font-size:26px; }
+  .sc-sp .collage .stat .l { font-size:10px; letter-spacing:.5px; }
+  .sc-sp .collage .e-tl { transform:rotate(-4deg); }
+  .sc-sp .collage .e-ml { transform:rotate(2deg); margin-top:-26px; }
+  .sc-sp .collage .e-mr { transform:rotate(-2deg); }
+}
 </style></head><body><div class="sc-sp">
 
 <!-- ===== HERO ===== -->
