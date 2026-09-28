@@ -222,18 +222,18 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 > Launch KI · KW40 · 🟡 Bitte bestätigen: „Ich kann nicht programmieren“ und „dreizehn Helfer“ (13 ist belegt, der erste Satz nicht).
 
-## 2026-10-05 · KI · Mo · Um halb sieben liegt der Tag bereit
+## 2026-10-05 · KI · Mo · Gemütlich frühstücken, der Plan steht schon
 
 **Reel · broll** · Lead · Ergebnis · Kennung `kw41-reel-m-mo-ki`
 
-**Hook:** Um sieben weck ich die Kinder. Zum Planen bleibt keine Minute. Muss ich auch nicht. Um halb sieben liegt mein Tag auf dem Handy.
+**Hook:** Sitzt du um acht schon am Handy und planst den Tag? Ich frühstücke um die Zeit gemütlich. Mein Plan liegt seit halb sieben bereit.
 
-**Cover:** Um halb sieben liegt mein Tag schon auf dem Handy
+**Cover:** Um acht frühstücke ich gemütlich. Der Plan steht schon.
 
 ```
 B-ROLL, ein Clip, rund 7 Sekunden, candid beim Tun (Küche, Alltag) — Clip sucht Claude aus.
-TEXT weiss: „Um sieben weck ich die Kinder. Zum Planen bleibt keine Minute.“
-TEXT orange: „Muss ich auch nicht. Um halb sieben liegt mein Tag auf dem Handy.“
+TEXT weiss: „Sitzt du um acht schon am Handy und planst den Tag?“
+TEXT orange: „Ich frühstücke um die Zeit gemütlich. Mein Plan liegt seit halb sieben bereit.“
 Kein Schnitt, keine Untertitel, kein Ton — Musik kommt in der App.
 ```
 
@@ -241,9 +241,9 @@ Kein Schnitt, keine Untertitel, kein Ton — Musik kommt in der App.
 
 Wann planst du eigentlich deinen Tag?
 
-Bei mir klingelt um sechs der Wecker, dann Krafttraining, um sieben wecke ich die Kinder. Dazwischen bleibt keine ruhige Minute zum Nachdenken, und genau deshalb hab ich das Nachdenken abgegeben.
+An Schultagen frühstücke ich um acht, wenn die Kinder aus dem Haus sind, und zwar ganz gemütlich. Am Montag, Mittwoch und Freitag kommt danach das Krafttraining, dreissig bis vierzig Minuten, und noch zwanzig Minuten Crosstraining. Dann geht es vielleicht noch schnell ins Büro, ich koche das Mittagessen, und am Nachmittag setze ich mich nochmals ran.
 
-Um halb sieben schickt mir mein Cockpit-Bot eine Nachricht aufs Handy: welches Profil heute dran ist, was der grosse Brocken des Tages ist, welche drei Sachen diese Woche Geld bringen und welche Aufgaben noch offen sind. Wenn die Kinder am Tisch sitzen, weiss ich schon, was nach dem Schulweg kommt.
+Um halb sieben schickt mir mein Cockpit-Bot eine Nachricht aufs Handy: welches Profil heute dran ist, was der grosse Brocken des Tages ist, welche drei Sachen diese Woche Geld bringen und welche Aufgaben noch offen sind. Wenn ich mich an den Frühstückstisch setze, ist das Nachdenken über den Tag schon erledigt, und genau deshalb kann ich dort in Ruhe sitzen.
 
 Die Fragen, die der Bot für mich beantwortet, kannst du dir heute Abend selbst auf einen Zettel schreiben. Welches Profil ist morgen dran? Was ist der eine grosse Brocken? Welche drei Sachen bringen diese Woche Geld? Wer das am Vorabend beantwortet, fängt am Morgen nicht bei null an.
 
@@ -255,7 +255,7 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 #mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #kifuermamas #mumpreneur
 
-> Launch KI · KW41 · Morgenablauf aus deinem Reel vom 30.06. (6 Uhr, Krafttraining, 7 Uhr Kinder wecken) — stimmt das noch?
+> Launch KI · KW41 · Morgenablauf von dir am 28.09. bestätigt. Liegt in den Herbstferien, deshalb „an Schultagen“.
 
 ## 2026-10-06 · KI · Di · Fünf Arbeiten, die ich abgegeben habe
 
@@ -277,7 +277,7 @@ Heute drei Fragen, dann liegen Menüliste und Einkaufsliste aus meinen Rezepten 
 
 Um halb sieben kommt eine Nachricht aufs Handy: welches Profil heute dran ist, der grosse Brocken des Tages und drei Sachen, die Geld bringen.
 
-Bevor die Kinder wach sind.
+Bevor ich mich an den Frühstückstisch setze.
 
 **Folie 4 — 3 · Den Entwurf für die Content-Woche**
 
