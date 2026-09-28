@@ -165,11 +165,11 @@ Zum Ausprobieren, um zu sehen, was überhaupt geht, sind sie super.
 
 Nur für die tägliche Arbeit taugen sie nicht, weil sie dich nicht kennen.
 
-**Folie 8 — Fang mit dem Blatt über dich an**
+**Folie 8 — Ich zeig dir live, wie das bei mir aussieht**
 
-Kommentier STIMME.
+Kostenlose Masterclass am Donnerstag, 8. Oktober, um 9 Uhr.
 
-Dann bekommst du den Stimm-Check: sechs Fragen, rund 15 Minuten, und du hast genau dieses Blatt.
+Kommentier STIMME, dann schick ich dir die Einladung und den Stimm-Check gleich dazu.
 
 **Caption:**
 
@@ -179,7 +179,9 @@ Bei den meisten, mit denen ich rede, sind es mehr, als sie je benutzt haben. Und
 
 Im Karussell steht, warum das so ist und was stattdessen hilft: ein Blatt über dich, das die KI jedes Mal zuerst liest, und ein fester Auftrag für jede Arbeit, die jede Woche wiederkommt. Auf Folie sieben steht auch, wofür Listen trotzdem gut sind.
 
-Kommentier STIMME, dann bekommst du von mir den Stimm-Check, der dir in rund 15 Minuten genau dieses Blatt über dich baut.
+Wie das bei mir aussieht, vom Blatt über mich bis zu den Helfern, die jede Woche für mich arbeiten, zeig ich dir live in meiner kostenlosen Masterclass am Donnerstag, 8. Oktober, um 9 Uhr.
+
+Kommentier STIMME, dann schick ich dir die Einladung, und dazu den Stimm-Check, mit dem du in rund 15 Minuten dein eigenes Blatt hast.
 
 STIMME ⬇️
 
