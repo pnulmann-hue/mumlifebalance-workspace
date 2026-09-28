@@ -21,7 +21,7 @@ heisst das: „Ich stimme dir zu“ bekommt den Stimm-Check-Link.
    eine private Nachricht mit dem Link zu `https://mumlifebalance.ch/stimm-check/`.
 4. Jede Entscheidung wird protokolliert (auch die Neins), damit Fehlgriffe sichtbar werden.
 
-**Stand 28.09.:** Entscheider gebaut, 27 Gegenproben grün
+**Stand 28.09. abends:** Dienst live auf `kommentar-antwort.vercel.app`, Meta-App Live, Konto verbunden, Kommentar-Abo aktiv, **`SCHARF=ja` auf Patricias Wunsch** (vor der App-Review). Reihenfolge: erst private Nachricht, nur bei Erfolg die öffentliche Antwort. Patricia antwortet von Hand nur dort, wo noch kein „Schau in deine Nachrichten“ steht. Entscheider: 27 Gegenproben grün
 (`node scripts/kommentar-antwort/test/entscheiden-test.mjs`).
 
 ## Schritte
