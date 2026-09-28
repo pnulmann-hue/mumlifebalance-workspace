@@ -7114,14 +7114,51 @@
       if (activeTab === "mailings") render();
     }).catch(function () {});
   }
+  /* Je Automation gezielt geholt (28.09.2026) — die Sammel-Abfrage oben
+     kam bei Patricia leer an, ohne Fehler. Jetzt sagt die Karte, was los ist. */
+  var entwurfJe = {};
+  function entwuerfeJeHolen(nummer) {
+    var k = String(nummer);
+    if (!db || (entwurfJe[k] && entwurfJe[k].status !== "fehler")) return;
+    entwurfJe[k] = { status: "laedt", liste: [] };
+    function versuch(nochmal) {
+      db.collection("mailentwuerfe").where("automation", "in", [k, Number(k)]).limit(50).get()
+        .then(function (qs) {
+          entwurfJe[k] = { status: "ok", liste: qs.docs.map(function (d) {
+            var x = d.data() || {}; x.id = d.id; return x; }) };
+          if (activeTab === "mailings") render();
+        }).catch(function (e) {
+          if (nochmal) { setTimeout(function () { versuch(false); }, 1200); return; }
+          entwurfJe[k] = { status: "fehler", liste: [],
+            fehler: (e && (e.code || e.message)) || "unbekannt" };
+          if (activeTab === "mailings") render();
+        });
+    }
+    versuch(true);
+  }
+  function entwurfNachId(id) {
+    var alle = (mailEntwuerfe || []).slice();
+    Object.keys(entwurfJe).forEach(function (k) { alle = alle.concat(entwurfJe[k].liste || []); });
+    return alle.filter(function (x) { return x.id === id; })[0];
+  }
   function entwuerfeFuer(nummer) {
-    return (mailEntwuerfe || []).filter(function (e) {
+    var eigen = entwurfJe[String(nummer)];
+    var quelle = (eigen && eigen.liste.length) ? eigen.liste : (mailEntwuerfe || []);
+    return quelle.filter(function (e) {
       return String(e.automation) === String(nummer);
     }).sort(function (a, b) { return (a.reihenfolge || 0) - (b.reihenfolge || 0); });
   }
   function mailListe(nummer) {
+    entwuerfeJeHolen(nummer);
     var neu = entwuerfeFuer(nummer);
-    if (!neu.length) return mailListeAC(nummer);
+    if (!neu.length) {
+      var st = entwurfJe[String(nummer)];
+      var hinweis = !db ? "" :
+        (st && st.status === "laedt") ? '<p class="note">Ich schaue nach, ob es eine neue Fassung von mir gibt …</p>' :
+        (st && st.status === "fehler") ? '<p class="note" style="color:var(--crit)">Die neuen Fassungen liessen sich gerade nicht laden (' +
+          esc(st.fehler) + '). Lade das Cockpit neu und klapp die Automation nochmal auf.</p>' : "";
+      return hinweis + mailListeAC(nummer);
+    }
     return '<div class="mentwuerfe"><p class="note">Neue Fassung von mir, noch nicht in ' +
       'ActiveCampaign. Schau dir die Vorschau an, kopier das HTML und setz es in der ' +
       'Automation ein.</p>' +
@@ -7143,9 +7180,7 @@
   }
   function mailEntwuerfeVerdrahten(box) {
     Array.prototype.forEach.call(box.querySelectorAll("[data-entwurf]"), function (k) {
-      var e = (mailEntwuerfe || []).filter(function (x) {
-        return x.id === k.getAttribute("data-entwurf");
-      })[0];
+      var e = entwurfNachId(k.getAttribute("data-entwurf"));
       if (!e) return;
       var f = k.querySelector("iframe");
       if (f) f.srcdoc = e.html || "";
