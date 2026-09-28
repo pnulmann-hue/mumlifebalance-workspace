@@ -127,8 +127,6 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 Mit dir hat das wenig zu tun.
 
-Die Listen sind für niemanden geschrieben.
-
 **Folie 2 — Sie sind für niemanden geschrieben**
 
 Eine Liste weiss nicht, wer du bist, was du anbietest und wie du redest.
@@ -210,7 +208,9 @@ Wie viele Arbeiten machst du jede Woche genau gleich?
 
 Ich frag das, weil die meisten bei KI an Leute denken, die programmieren können. Ich kann es nicht. Trotzdem arbeiten heute dreizehn Helfer für mich, vom Menüplan bis zur Übersicht über meine Beiträge.
 
-Was ich stattdessen gebraucht hab, kannst du auch: erklären, wie du etwas machst. Das tust du jeden Tag, bei deinen Kindern, bei einer neuen Teampartnerin, bei einer Kundin, die zum ersten Mal bestellt.
+Ich quatsche einfach mit der KI, und sie setzt es um. Wenn ich etwas überhaupt nicht kapiere, sag ich ihr, sie soll es mir erklären, und dann erklärt sie es so lange, bis ich es verstehe.
+
+Was ich dafür gebraucht hab, kannst du auch: erklären, wie du etwas machst. Das tust du jeden Tag, bei deinen Kindern, bei einer neuen Teampartnerin, bei einer Kundin, die zum ersten Mal bestellt.
 
 Probier es heute einmal aus. Nimm eine Sprachnachricht auf, in der du jemandem erklärst, wie du eine Bestellung nachfasst: was du zuerst schreibst, wann du nachfragst, was du nie sagen würdest. Tipp das ab, und du hast den ersten Auftrag für deine KI. So redest du mit ihr, in ganz normalen Sätzen.
 
@@ -220,7 +220,7 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 #mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #kifuermamas #mumpreneur
 
-> Launch KI · KW40 · 🟡 Bitte bestätigen: „Ich kann nicht programmieren“ und „dreizehn Helfer“ (13 ist belegt, der erste Satz nicht).
+> Launch KI · KW40 · „Ich kann nicht programmieren“ und das Quatschen mit der KI von dir bestätigt (28.09.).
 
 ## 2026-10-05 · KI · Mo · Gemütlich frühstücken, der Plan steht schon
 
@@ -394,7 +394,7 @@ Je genauer du das beschreibst, desto weniger musst du nachbessern.
 
 **Folie 6 — Teil 4 · Was nie vorkommen darf**
 
-Bei mir: nichts, was die Kinder nicht essen, und keine Rezepte, die länger dauern als an dem Tag Zeit ist.
+Bei mir: kein Fisch, Fleisch höchstens drei-, viermal die Woche, und am Mittag unter der Woche nichts, was länger als 30 bis 40 Minuten am Herd braucht.
 
 Das sind deine Regeln.
 
@@ -432,7 +432,7 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 #mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #kifuermamas #mumpreneur
 
-> Launch KI · KW41 · Masterclass-Tag (09:00). 🟡 Bitte prüfen: die zwei Regeln auf Folie 6 sind Beispiele — stimmen sie für deinen Kochbot, oder soll ich andere nehmen?
+> Launch KI · KW41 · Masterclass-Tag (09:00). Regeln auf Folie 6 aus context/meal-planning-bot.md (kein Fisch · Fleisch 3–4×/Woche · Mittag max. 30–40 Min.).
 
 ## 2026-10-09 · KI · Fr · Am Anfang war's mehr Arbeit (Sprechreel)
 
