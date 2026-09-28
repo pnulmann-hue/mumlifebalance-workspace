@@ -8,13 +8,11 @@ Erzeugt von `scripts/launch/feed-ki-launch.py` am 2026-09-28. Quelle der Themen:
 
 ## 2026-09-29 · KI · Di · Fünf Sätze, an denen man die KI erkennt
 
-**Karussell · listicle** · Reichweite · Neugier · Kennung `kw40-kar-m-di-ki`
+**Karussell · listicle** · Lead · Neugier · Kennung `kw40-kar-m-di-ki`
 
 **Folie 1 — Fünf Sätze, an denen jede merkt: Das hat die KI geschrieben.**
 
 Und wie du sie in einer Minute rausnimmst.
-
-Speicher dir das für deinen nächsten Text.
 
 **Folie 2 — 1 · „Stell dir vor …“**
 
@@ -58,11 +56,11 @@ Die KI kennt dich nicht. Solange ihr niemand gesagt hat, wie du klingst, schreib
 
 Das lässt sich ändern.
 
-**Folie 9 — Speicher dir das**
+**Folie 9 — Damit deine KI nach dir klingt**
 
-Leg die fünf Sätze neben deinen nächsten KI-Text und streich, was du findest.
+Kommentier STIMME, dann schick ich dir den Stimm-Check.
 
-Und schick es der Freundin, die dir gestern geschrieben hat, dass ihre KI-Texte so fremd klingen.
+Sechs Fragen, rund 15 Minuten, und die KI weiss, wie du schreibst.
 
 **Caption:**
 
@@ -72,13 +70,17 @@ Wenn du das bei deinen KI-Texten denkst, liegst du richtig, und meistens sind es
 
 Im Karussell stehen alle fünf, jeweils mit dem Satz, den du stattdessen nehmen kannst. Der schnellste Test steht auf Folie sieben: laut vorlesen. Überall, wo du stockst, klingt der Text nicht nach dir.
 
-Speicher dir das Karussell und leg es neben deinen nächsten Text.
+Streichen hilft beim einzelnen Text. Damit du es nicht jedes Mal machen musst, braucht deine KI eine Beschreibung davon, wie du klingst.
+
+Kommentier STIMME, dann bekommst du den Stimm-Check, mit dem deine KI in rund 15 Minuten lernt, wie du klingst.
+
+STIMME ⬇️
 
 Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema auf Instagram sichtbar wirst, wie du digitale Produkte passend zum Network entwickelst und wie du das ganze Business in deinen Mama-Alltag packst.
 
 #mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #kifuermamas #mumpreneur
 
-> Launch KI · KW40 · ⚠️ Auf diesem Tag ist schon „Du musst keine Expertin sein“ bei Blotato eingeplant (07:30). Liegt hier als Variante — willst du tauschen, sag es mir, dann nehme ich den alten Plan raus.
+> Launch KI · KW40 · Seit 28.09. Lead mit STIMME (Patricia). Ersetzt „Keine Expertin“ bei Blotato.
 
 ## 2026-09-30 · KI · Mi · Keine Zeit, das auch noch zu lernen
 
@@ -125,7 +127,7 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 **Folie 1 — Dreissig Prompt-Listen gespeichert und keine einzige benutzt?**
 
-Mit dir hat das wenig zu tun.
+
 
 **Folie 2 — Sie sind für niemanden geschrieben**
 
@@ -265,8 +267,6 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 An meine KI-Helfer.
 
-Mit vier Kindern und 18 Stunden die Woche fürs Geschäft.
-
 **Folie 2 — 1 · Den Menüplan**
 
 Früher ein bis zwei Stunden pro Woche.
@@ -364,9 +364,7 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 **Folie 1 — Machst du jede Woche dieselbe Arbeit wieder von vorne?**
 
-Ich zeig dir am Menüplan, wie ein fester Auftrag für die KI aussieht.
-
-Auf Englisch heisst das Skill.
+Am Beispiel Menüplan.
 
 **Folie 2 — Was ein fester Auftrag ist**
 
@@ -506,8 +504,6 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 Ich versteh die Angst.
 
-Und ich sehe jeden Tag, was sie nicht kann.
-
 **Folie 2 — Sie hat deine Geschichte nicht erlebt**
 
 Sie kann sie aufschreiben, wenn du sie erzählst.
@@ -605,9 +601,7 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 **Folie 1 — Darf ich die Daten meiner Kundschaft überhaupt in die KI tippen?**
 
-Die Frage ist gut, und die Antwort ist einfacher, als du denkst.
-
-Speicher dir das.
+Die Antwort ist einfacher, als du denkst.
 
 **Folie 2 — Das bleibt draussen**
 
@@ -749,8 +743,6 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 Die komplette Liste.
 
-Speicher sie dir, bevor du den nächsten Text schreiben lässt.
-
 **Folie 2 — 1 · Wer bist du?**
 
 Was machst du, seit wann, und was würde eine Freundin über dich sagen?
@@ -854,9 +846,7 @@ Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybri
 
 **Folie 1 — Freitag, acht Uhr: Meine Content-Woche fängt an, bevor ich etwas tippe.**
 
-So läuft es bei mir, Schritt für Schritt.
 
-Von der ersten Idee bis zum Beitrag im Feed.
 
 **Folie 2 — 08:00 · Der Helfer startet**
 

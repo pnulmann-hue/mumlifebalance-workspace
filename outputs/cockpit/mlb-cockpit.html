@@ -2182,11 +2182,12 @@
           ctx.fillRect(pad, y + totalH + 24, 140, 8);
         }
         if (slide.body) {
-          ctx.fillStyle = b.muted;
-          ctx.font = "30px " + b.body;
+          ctx.fillStyle = b.text; /* lesbar: volle Farbe, 40 px (28.09.2026) */
+          ctx.font = "40px " + b.body;
           var bl = wrap(ctx, slide.body, maxW);
-          bl.slice(0, 4).forEach(function (ln, i) {
-            ctx.fillText(ln, isZitat ? pad : pad, y + totalH + 78 + i * 42);
+          var bTop = y + totalH + 92, bMax = Math.max(0, Math.floor((H - pad - 70 - bTop) / 54));
+          bl.slice(0, Math.min(3, bMax)).forEach(function (ln, i) {
+            ctx.fillText(ln, isZitat ? pad : pad, bTop + i * 54);
           });
         }
       } else if (slide.layout === "text") {
@@ -2227,7 +2228,7 @@
         var cy = startY + hc.lines.length * hc.size * 1.15 + 60;
         var bc = fitLines(ctx, slide.body, maxW, 260, b.body, "", 38, 26, 1.42);
         ctx.font = bc.size + "px " + b.body;
-        ctx.fillStyle = b.muted;
+        ctx.fillStyle = b.text; /* lesbar: volle Farbe (28.09.2026) */
         bc.lines.forEach(function (ln, i) { ctx.fillText(ln, pad, cy + bc.size + i * bc.size * 1.42); });
         if (slide.keyword) {
           var ky = cy + bc.lines.length * bc.size * 1.42 + 70;
