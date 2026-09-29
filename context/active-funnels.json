@@ -37,7 +37,10 @@
           "leadmagnet_hilfe": 65
         },
         "auslieferung_automation_id": null,
-        "nurture_automation_id": null
+        "nurture_automation_id": null,
+        "eintrag_tag_name": "0€ Bio-Check",
+        "eintrag_tag_id": 66,
+        "eintrag_tag_quelle": "Patricia, 29.09.2026 — in AC gegengeprüft"
       },
       "mail_sequenz": {
         "status": "Mail 1 Auslieferung + Mail 1 Launch-Paukenschlag fertig",
@@ -124,7 +127,10 @@
         "tags": {},
         "auslieferung_automation_id": 47,
         "nurture_automation_id": null,
-        "notes": "Registration via Thrivecart überführt Kontakt zurück in AC"
+        "notes": "Registration via Thrivecart überführt Kontakt zurück in AC",
+        "eintrag_tag_name": "0€ Lead-Challenge",
+        "eintrag_tag_id": 42,
+        "eintrag_tag_quelle": "Patricia, 29.09.2026 — in AC gegengeprüft"
       },
       "mail_sequenz": {
         "status": "AC-Automation existiert, Inhalt noch zu prüfen",
@@ -208,7 +214,10 @@
         "list_name": "Quiz-Kontakte",
         "tags": {},
         "automation_id": 52,
-        "notes": "AC-Liste 24 'Quiz-Kontakte' · AC-Automation 52 '0€ Potenzial-Test'. Auslieferung erfolgt via Jotform+ManyChat, Leads werden nachträglich in AC importiert."
+        "notes": "AC-Liste 24 'Quiz-Kontakte' · AC-Automation 52 '0€ Potenzial-Test'. Auslieferung erfolgt via Jotform+ManyChat, Leads werden nachträglich in AC importiert.",
+        "eintrag_tag_name": "0€ Potenzial Test",
+        "eintrag_tag_id": 45,
+        "eintrag_tag_quelle": "Patricia, 29.09.2026 — in AC gegengeprüft"
       },
       "mail_sequenz": {
         "status": "AC-Automation existiert",
@@ -238,7 +247,10 @@
       "ac_integration": {
         "tags": {},
         "automation_id": null,
-        "notes": "AUSLIEFERUNG ERFOLGT IN MANYCHAT · KEIN AC-FUNNEL · TODO: AC-Automation bauen für Nurture-Sequenz"
+        "notes": "AUSLIEFERUNG ERFOLGT IN MANYCHAT · KEIN AC-FUNNEL · TODO: AC-Automation bauen für Nurture-Sequenz",
+        "eintrag_tag_name": "0€ Starterguide",
+        "eintrag_tag_id": 68,
+        "eintrag_tag_quelle": "Patricia, 29.09.2026 — in AC gegengeprüft"
       },
       "mail_sequenz": {
         "status": "GEPLANT — noch nicht gebaut",
@@ -269,7 +281,10 @@
       "ac_integration": {
         "tags": {},
         "automation_id": null,
-        "notes": "KEIN AC-FUNNEL · TODO: AC-Automation + Mail-Sequenz"
+        "notes": "KEIN AC-FUNNEL · TODO: AC-Automation + Mail-Sequenz",
+        "eintrag_tag_name": "0€ Story-Challenge",
+        "eintrag_tag_id": 69,
+        "eintrag_tag_quelle": "Patricia, 29.09.2026 — in AC gegengeprüft"
       },
       "mail_sequenz": {
         "status": "GEPLANT — noch nicht gebaut",
@@ -757,7 +772,10 @@
         },
         "auslieferung_automation_id": null,
         "nurture_automation_id": null,
-        "uebergabe_an": "Tag 87 → Automation 72 (0€ Engine / Loop 1)"
+        "uebergabe_an": "Tag 87 → Automation 72 (0€ Engine / Loop 1)",
+        "eintrag_tag_name": "0€ Idee",
+        "eintrag_tag_id": 97,
+        "eintrag_tag_quelle": "Patricia, 29.09.2026 — in AC gegengeprüft"
       },
       "mail_sequenz": "Auslieferung sofort · Tag 1 Split 2a/2b · Tag 3 „Idee ist kein Produkt“ · Tag 6 Minikurs 39 · Tag 8 Übergabe. Texte: outputs/funnels/produkt-ideen-finder/",
       "launch_window": "KW38/KW39 2026 (14.9.–25.9.)",
@@ -847,7 +865,12 @@
       "bauplan": "plans/2026-09-25-stimm-check-bauen.md",
       "launch_window": "live bis 2026-09-30 geplant",
       "produkttreppe_anschluss": "→ KI-Kurs 333 (Warteliste bis 4.10., danach Verkaufsseite) · nach dem Launch KI-Auftragsbuch 39",
-      "launched_on": null
+      "launched_on": null,
+      "ac_integration": {
+        "eintrag_tag_name": "0€ Stimmcheck",
+        "eintrag_tag_id": 105,
+        "eintrag_tag_quelle": "Patricia, 29.09.2026 — in AC gegengeprüft"
+      }
     }
   ],
   "produkttreppe_mentoring": [
