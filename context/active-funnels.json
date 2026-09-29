@@ -169,7 +169,10 @@
         "formular_id": null,
         "tags": {},
         "auslieferung_automation_id": 40,
-        "nurture_automation_id": null
+        "nurture_automation_id": null,
+        "eintrag_tag_name": "Workbook von 0 auf echt",
+        "eintrag_tag_id": 36,
+        "eintrag_tag_quelle": "Patricia, 29.09.2026 — kein 0€ im Namen"
       },
       "mail_sequenz": {
         "status": "AC-Automation existiert",
@@ -282,9 +285,9 @@
         "tags": {},
         "automation_id": null,
         "notes": "KEIN AC-FUNNEL · TODO: AC-Automation + Mail-Sequenz",
-        "eintrag_tag_name": "0€ Story-Challenge",
-        "eintrag_tag_id": 69,
-        "eintrag_tag_quelle": "Patricia, 29.09.2026 — in AC gegengeprüft"
+        "eintrag_tag_name": "Story-Challenge",
+        "eintrag_tag_id": 40,
+        "eintrag_tag_quelle": "Patricia, 29.09.2026 — kein 0€ im Namen"
       },
       "mail_sequenz": {
         "status": "GEPLANT — noch nicht gebaut",
