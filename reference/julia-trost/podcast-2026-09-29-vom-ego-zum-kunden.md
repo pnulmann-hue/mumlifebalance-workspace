@@ -56,6 +56,24 @@ Einordnung für Patricias Zielgruppe (Network-Mamas): Viele geben schon heute vi
 
 Das widerspricht nicht der AIDA-Regel in `context/brandastic-kaeufertypen.md` („WAS sie brauchen zeigen, nicht WIE"): Die gilt für die einzelne Verkaufs-Story-Sequenz, das Credo für den Content insgesamt.
 
+## Säule 3: Warum sie es bei dir machen soll
+
+Der letzte Teil: Nach Inspiration (sie will dorthin) und Expertise (sie sieht, wie es geht) muss klar werden, **warum sie diesen Weg mit dir geht** und nicht allein, mit Google oder mit einer anderen Mentorin.
+
+Einordnung, damit das nicht wieder ins Ego kippt: Die Frage wird aus Sicht der Kundin beantwortet, nicht als Selbstdarstellung. Nicht „ich bin toll, weil ...", sondern „das bekommst du bei mir, was du woanders nicht bekommst", gemessen an ihren Bedürfnissen (wenig Zeit, Kinder, schon im Network, will echtes Geld verdienen statt Hobby).
+
+Mögliche Antworten für Patricia liegen bereits in `context/patricia-expertise.md` und `context/business-info.md` (z. B. Hybridmodell statt „nur Network" oder „nur Online", Schaufenster-Strategie, Produkttreppe, selbst Mama mit Network-Hintergrund). Keine neuen USPs erfinden, nur aus diesen Quellen ableiten.
+
+## Die drei Säulen zusammen
+
+| Säule | Frage der Kundin | Wirkung |
+|---|---|---|
+| Inspiration (eigene Geschichte, Kundinnen-Transformation) | „Will ich das?" | Verlangen |
+| Expertise (konkrete Tipps, grosszügig geteilt) | „Geht das auch für mich?" | Vertrauen in den Weg |
+| Warum bei dir | „Warum mit ihr?" | Entscheidung für dich |
+
+Fehlt eine Säule, hakt es: ohne Inspiration kein Wollen, ohne Expertise keine Glaubwürdigkeit, ohne das Warum folgt sie dir begeistert und kauft woanders.
+
 ## Konsequenzen für den Workspace
 
 - **Offene Lücke:** Es gibt aktuell keine dokumentierten Kundinnen-Transformationen. Wegen der Regel „keine erfundenen Zahlen oder Geschichten" können die Content-Skills das stärkste Format dieses Podcasts noch nicht bedienen. Nächster Schritt: echte Fälle von Patricia sammeln (vorher in ihren Worten / was sich verändert hat / wo sie jetzt steht / Nennung mit Namen, anonym oder gar nicht).
