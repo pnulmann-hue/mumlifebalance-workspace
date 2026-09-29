@@ -50,7 +50,7 @@ Die beiden Säulen brauchen einander:
 
 ### Julias Credo: Je mehr man kostenlos rausgibt, desto mehr verkauft man
 
-Das ist Julias Grundhaltung und deckt sich mit Patricias Erfahrung. Die Angst „wenn ich alles verrate, kauft keiner mehr" ist unbegründet, denn Menschen kaufen keine Information, sondern **Umsetzung**: Reihenfolge, Begleitung, Abkürzung, jemanden, der dranbleibt. Wer grosszügig Wissen teilt, beweist Kompetenz und baut Vertrauen auf, und die, die ernsthaft wollen, kaufen genau deshalb.
+Das ist Julias Grundhaltung und deckt sich mit Patricias Erfahrung. Wichtig ist dabei der **Antrieb**: Man teilt nicht, um zu verkaufen, sondern weil man der Kundin wirklich weiterhelfen will. Wer mit dem Hintergedanken „ich geb was, damit ich was bekomme" teilt, ist wieder beim Ego, und das spürt die Leserin. Der Verkauf ist die Folge, nicht das Ziel. Die Angst „wenn ich alles verrate, kauft keiner mehr" ist unbegründet, denn Menschen kaufen keine Information, sondern **Umsetzung**: Reihenfolge, Begleitung, Abkürzung, jemanden, der dranbleibt. Wer grosszügig Wissen teilt, beweist Kompetenz und baut Vertrauen auf, und die, die ernsthaft wollen, kaufen genau deshalb.
 
 Einordnung für Patricias Zielgruppe (Network-Mamas): Viele geben schon heute viel gratis raus (Proben, Beratungen, stundenlange DMs) und verkaufen trotzdem nicht. Der Unterschied liegt nicht in der Menge, sondern darin, ob das Gratis-Material **auf einen nächsten Schritt zeigt**. Grosszügiger Content plus klare Einladung (Keyword-CTA, Freebie, Angebot) verkauft; grosszügiger Content ohne Einladung ist einfach nur nett.
 
