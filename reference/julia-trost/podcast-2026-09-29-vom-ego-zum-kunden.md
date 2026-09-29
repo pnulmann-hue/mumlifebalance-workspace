@@ -48,7 +48,13 @@ Die beiden Säulen brauchen einander:
 - **Expertise ohne Inspiration** ist nützlich, aber niemand hat Lust darauf, weil das Warum fehlt. Dann werden Tipps gespeichert und nie umgesetzt.
 - **Zusammen** entsteht Vertrauen: Sie will dorthin (Verlangen), und sie merkt, dass du den Weg kennst (Kompetenz). Genau da entsteht die Kaufentscheidung.
 
-Einordnung zur Abgrenzung vom Produkt: Im Content gibt man einen konkreten **Schritt** vollständig her (der eine Tipp für heute), nicht den gesamten Weg. Der ganze Weg mit Reihenfolge, Begleitung und Umsetzung ist das Produkt. Der Tipp beweist, dass du es kannst; das Produkt spart ihr die Zeit, alles selbst zusammenzusuchen. Das passt zur AIDA-Regel in `context/brandastic-kaeufertypen.md` („WAS sie brauchen zeigen"), ohne ihr zu widersprechen: Ein einzelner Schritt verrät nicht den ganzen Weg.
+### Julias Credo: Je mehr man kostenlos rausgibt, desto mehr verkauft man
+
+Das ist Julias Grundhaltung und deckt sich mit Patricias Erfahrung. Die Angst „wenn ich alles verrate, kauft keiner mehr" ist unbegründet, denn Menschen kaufen keine Information, sondern **Umsetzung**: Reihenfolge, Begleitung, Abkürzung, jemanden, der dranbleibt. Wer grosszügig Wissen teilt, beweist Kompetenz und baut Vertrauen auf, und die, die ernsthaft wollen, kaufen genau deshalb.
+
+Einordnung für Patricias Zielgruppe (Network-Mamas): Viele geben schon heute viel gratis raus (Proben, Beratungen, stundenlange DMs) und verkaufen trotzdem nicht. Der Unterschied liegt nicht in der Menge, sondern darin, ob das Gratis-Material **auf einen nächsten Schritt zeigt**. Grosszügiger Content plus klare Einladung (Keyword-CTA, Freebie, Angebot) verkauft; grosszügiger Content ohne Einladung ist einfach nur nett.
+
+Das widerspricht nicht der AIDA-Regel in `context/brandastic-kaeufertypen.md` („WAS sie brauchen zeigen, nicht WIE"): Die gilt für die einzelne Verkaufs-Story-Sequenz, das Credo für den Content insgesamt.
 
 ## Konsequenzen für den Workspace
 
