@@ -80,7 +80,7 @@ Fehlt eine Säule, hakt es: ohne Inspiration kein Wollen, ohne Expertise keine G
 
 ## Konsequenzen für den Workspace
 
-- **Offene Lücke:** Es gibt aktuell keine dokumentierten Kundinnen-Transformationen. Wegen der Regel „keine erfundenen Zahlen oder Geschichten" können die Content-Skills das stärkste Format dieses Podcasts noch nicht bedienen. Nächster Schritt: echte Fälle von Patricia sammeln (vorher in ihren Worten / was sich verändert hat / wo sie jetzt steht / Nennung mit Namen, anonym oder gar nicht).
+- **Lücke angegangen (30.09.2026):** Sammelstelle `context/kundinnen-geschichten.md` mit Vorlage und erstem Fall (Kundin A, Claude-Installation). Vorher gab es keine dokumentierten Kundinnen-Transformationen. Wegen der Regel „keine erfundenen Zahlen oder Geschichten" können die Content-Skills das stärkste Format dieses Podcasts noch nicht bedienen. Nächster Schritt: echte Fälle von Patricia sammeln (vorher in ihren Worten / was sich verändert hat / wo sie jetzt steht / Nennung mit Namen, anonym oder gar nicht).
 - **Content-Idee:** Ich-Du-Zähl-Challenge („Zähl in deinen letzten fünf Captions, wie oft ‚ich' und wie oft ‚du' vorkommt").
 - **Mentoring-Idee:** Die tägliche Kundinnen-Frage als 7-Tage-Mini-Challenge für Kundinnen.
 
