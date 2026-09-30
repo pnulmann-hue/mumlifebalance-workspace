@@ -1,5 +1,5 @@
 {
-  "datum": "2026-09-29",
+  "datum": "2026-09-30",
   "profile": {
     "mentoring": {
       "profil": "mentoring",
@@ -14,20 +14,20 @@
         "launch_aktiv": false,
         "phase": null,
         "tag_im_launch": null,
-        "vorlage": "Persönliche Story / Dein Weg",
-        "titel": "Persönliche Story / Dein Weg",
-        "story_ziel": "Identifikation über Patricias eigene Geschichte (Wendepunkt, 4 Kinder, Funktionsmodus).",
-        "kaeufertyp": "Amelie",
-        "cta": "ECHT1 (Von 0 auf echt) oder thematisch passend",
+        "vorlage": "Eigene Meinung / klare Positionierung",
+        "titel": "Eigene Meinung / klare Positionierung",
+        "story_ziel": "Branchen-Mythos im Network-Marketing aufgreifen, klar positionieren (Repel + Anziehung).",
+        "kaeufertyp": "Frank",
+        "cta": "BIO oder thematisch passend",
         "cta_keyword": null
       },
       "kontext_snapshot": {
         "kw": 40,
-        "wochentag": "Dienstag",
-        "datum": "2026-09-29"
+        "wochentag": "Mittwoch",
+        "datum": "2026-09-30"
       },
-      "gesendet_am": "2026-09-29T04:42:01.413Z",
-      "telegram_message_id": 1263,
+      "gesendet_am": "2026-09-30T04:42:01.320Z",
+      "telegram_message_id": 1265,
       "patricia_antworten": [],
       "patricia_fotos": [],
       "status": "warten_auf_antwort"
@@ -45,20 +45,20 @@
         "launch_aktiv": false,
         "phase": null,
         "tag_im_launch": null,
-        "vorlage": "Persönliche Story / Dein Weg",
-        "titel": "Persönliche Story / Dein Weg",
-        "story_ziel": "Identifikation über Patricias eigene Geschichte (Wendepunkt, 4 Kinder, Funktionsmodus).",
-        "kaeufertyp": "Amelie",
-        "cta": "ECHT1 (Von 0 auf echt) oder thematisch passend",
+        "vorlage": "Eigene Meinung / klare Positionierung",
+        "titel": "Eigene Meinung / klare Positionierung",
+        "story_ziel": "Branchen-Mythos im Network-Marketing aufgreifen, klar positionieren (Repel + Anziehung).",
+        "kaeufertyp": "Frank",
+        "cta": "BIO oder thematisch passend",
         "cta_keyword": null
       },
       "kontext_snapshot": {
         "kw": 40,
-        "wochentag": "Dienstag",
-        "datum": "2026-09-29"
+        "wochentag": "Mittwoch",
+        "datum": "2026-09-30"
       },
-      "gesendet_am": "2026-09-29T04:42:02.368Z",
-      "telegram_message_id": 1264,
+      "gesendet_am": "2026-09-30T04:42:02.351Z",
+      "telegram_message_id": 1266,
       "patricia_antworten": [],
       "patricia_fotos": [],
       "status": "warten_auf_antwort"
