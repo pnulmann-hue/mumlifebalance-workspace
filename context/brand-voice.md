@@ -7,6 +7,32 @@ tags: [brand, voice]
 > **PFLICHT vor jedem Text-Output:** [`ki-phrasen-blackliste.md`](ki-phrasen-blackliste.md) — 5-Punkte-Pflicht-Prüfung gegen KI-Floskeln (Nicht/Sondern, Dreier-Stakkato, Worthülsen, Buzzwords, abstrakte Begriffe). Bei Konflikt mit Julia-Trost-Templates: Blackliste gewinnt.
 
 
+## 🎯 Die Tagesfrage — vor jeder Story und jedem Post (seit 2026-09-30)
+
+> **Was gebe ich meiner Kundin heute mit?**
+
+Nicht: Was will ich heute posten, was will ich verkaufen, warum kommentiert niemand.
+Diese Fragen drehen sich um mich, und die Kundin interessiert das nicht. Sie interessiert
+ihr eigenes Problem. Die Frage wird **jeden Tag** neu gestellt, weil man nach einem Flop
+sofort wieder in der Ich-Schleife landet (Podcast-Notiz [[podcast-2026-09-29-vom-ego-zum-kunden]]).
+
+Jede Story und jeder Beitrag gibt ihr **eins von drei Dingen** mit, und zwar benannt,
+bevor ein Wort geschrieben wird:
+
+| Sie bekommt | Ihre Frage dahinter | Woraus es gebaut wird |
+|---|---|---|
+| **Inspiration** | „Will ich das?“ | eigenes Vorher → Nachher · Transformation einer Kundin (`context/kundinnen-geschichten.md`) · wie ihr Leben aussehen könnte |
+| **Einen krassen Tipp** | „Wie geht das?“ | ein Schritt, den sie heute umsetzen kann, grosszügig und ganz hergegeben |
+| **Warum mit mir und dass es auch für sie möglich ist** | „Geht das für mich, und warum mit ihr?“ | Persönlichkeit gezeigt statt behauptet · eine normale Kundin, die es geschafft hat · Patricias echte Rahmenbedingungen (vier Kinder, 18 h) |
+
+**Über die Woche kommen alle drei vor.** Nur Tipps werden gespeichert und nie umgesetzt,
+nur Inspiration erzeugt „schön für dich“, und ohne das Warum folgt sie dir begeistert und
+kauft woanders.
+
+**Der Antrieb ist Helfen, der Verkauf die Folge.** Die Einladung am Schluss (Keyword,
+Freebie, Angebot) gehört trotzdem dazu, weil es aus ihrer Sicht der nächste Schritt ist
+und man ihn ihr nicht vorenthält.
+
 ## Tonalität
 - **Direkt, motivierend, nahbar** — wie eine Freundin, die einen Schritt voraus ist
 - **Mit Humor und Kante** — Selbstironie, trockener Seitenhieb, schwarzer Humor über sich selbst (siehe Block „Persönlichkeit zeigen" unten)
