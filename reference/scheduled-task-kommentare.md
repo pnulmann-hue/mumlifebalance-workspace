@@ -43,7 +43,7 @@ Nachricht „heute nichts" jeden Abend ist Lärm, und Lärm wird weggewischt.
 3. **Arbeite genau das ein, was dasteht** — nicht mehr. Steht „Caption neu", wird die
    Caption neu geschrieben und der Hook bleibt. Sonst ändert sich unter der Hand etwas,
    das sie schon abgenommen hatte.
-4. **Prüfe das Ergebnis** gegen den Beitrags-Check (vier Fragen) und den letzten
+4. **Prüfe das Ergebnis** gegen den Beitrags-Check (fünf Fragen, die fünfte: Name abdecken, wäre das erkennbar von ihr?) und den letzten
    Hook-Check, bevor du es zurückschreibst.
 5. **Schreib zurück** mit `ArtifactData update`, mit `if_version` aus dem Lesen:
    - das geänderte Feld (`caption`, `hook`, `skript`, `slides` …)

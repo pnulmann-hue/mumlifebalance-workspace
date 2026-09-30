@@ -9,10 +9,59 @@ tags: [brand, voice]
 
 ## Tonalität
 - **Direkt, motivierend, nahbar** — wie eine Freundin, die einen Schritt voraus ist
+- **Mit Humor und Kante** — Selbstironie, trockener Seitenhieb, schwarzer Humor über sich selbst (siehe Block „Persönlichkeit zeigen" unten)
 - Ehrlich und authentisch — Patricia teilt echte Erfahrungen, keine Hochglanz-Fassade
 - Empowernd — "Du kannst das, und ich zeige dir wie"
-- Locker aber kompetent — kein Akademiker-Deutsch, aber auch kein Slang
-- Nicht: Aufgeblasen, salesy, distanziert, belehrend, überheblich
+- Locker aber kompetent — kein Akademiker-Deutsch; ihre Alltagswörter sind erwünscht („rumsäckeln", „mega puff", „jetzt mal ganz ehrlich", „wie geil ist das denn")
+- Nicht: Aufgeblasen, salesy, distanziert, belehrend, überheblich — **und nicht weichgespült**
+
+---
+
+## 🟧 Persönlichkeit zeigen, nicht behaupten (seit 2026-09-30)
+
+**Warum dieser Block existiert:** Expertise und Inspiration sind austauschbar, die Person nicht. Sie ist der Grund, warum eine Frau bei Patricia kauft und nicht bei der nächsten Mentorin (Podcast-Notiz [[podcast-2026-09-29-vom-ego-zum-kunden]], Säule 3).
+
+**Der Befund dahinter (30.09.2026):** Die letzten 12 Posts auf dem Mentoring-Konto haben zusammen 1× gespeichert, 0× geteilt und 0 Kommentare. Hinweise hatten sie genug, trotzdem war in **keinem** Humor, Ironie oder eine Kante drin. Ausnahme war „Nicht gut oder schlecht. Einfach Fakt! 🤷‍♀️“, und das war der stärkste Feed-Post. Die Persönlichkeit stand längst in `patricia-vollprofil.md` („Schwarzer Humor + Selbstironie“, „NIE weichgespült“), aber nicht hier. Also kam sie in keinem Text an.
+
+### Wer sie ist (aus ihren eigenen Angaben, nichts dazuerfunden)
+
+| Eigenschaft | Wie sie im Text sichtbar wird |
+|---|---|
+| **Direkt, klar**, „nicht bei Adam und Eva ausholen" | Erster Satz ist die Sache. Kein Anlauf, keine Einleitung über Einleitungen. |
+| **Schwarzer Humor + Selbstironie** | Sie lacht über sich selbst, nicht über die Leserin. Ein Satz pro Caption reicht. |
+| **100 % Selbstverantwortung** („Etwas ändern und es nicht einfach hinnehmen") | Sie rettet niemanden. „Du entscheidest, ich zeig den Weg." |
+| **Anti-Bali-Coachin** — Schweizer Boden, vierstellig, 18 h pro Woche, 4 Kinder | Echte Zahlen statt Traumbilder. Kein Strand, kein Sechsstellig. |
+| **Anti-Drama, Anti-Jammerei** | Ein Problem wird benannt und dann gelöst, nicht ausgewalzt. |
+| **Lebenslust** („das Leben aussaugen", „Leben spüren") | Sinnlich statt streng. Genuss darf vorkommen, Disziplin ist nicht das Ziel. |
+| **Tough mit empathischem Kern** | Die Kante kommt immer aus Sorge, nie aus Überlegenheit. |
+
+### Wen sie bewusst nicht will
+
+Das darf im Text stehen, als Einladung an die Richtigen, mit „geh zu jemand anders, wenn …" oder „ich bin nicht die Richtige für dich, wenn …":
+
+- Frauen, die **Tipps sammeln und nichts umsetzen**
+- Frauen, die auf eine Pille, einen Coach oder ein Wunder hoffen, **ohne selbst etwas zu tun**
+- Frauen, die in einem halben Jahr sechsstellig wollen (*„Geh zu X, wenn du in einem halben Jahr 6-stellig verdienen willst. Komm zu mir, wenn du ehrliche Mama-CEO-Realität willst."*, ihre eigene Linie)
+
+### So klingt es (ihre eigenen Sätze aus Interview und Posts)
+
+- *„Meine Kids sind da arm, weil sie fast nichts bekommen."* (Selbstironie)
+- *„Meine Schwiegermutter fragt bei jedem WhatsApp-Status: ‚Also, kauft das wirklich jemand?' Ich hab aufgehört zu antworten."*
+- *„Niemand wird kommen und dich retten. Auch ich nicht. Aber ich kann dir den Weg zeigen, wenn du den ersten Schritt machst."*
+- *„Ich bin nicht die Mentorin am Strand mit sechsstelligem Einkommen. Ich bin die Mentorin mit 4 Kindern und 18 h Wochenarbeit, die jeden Monat verkauft."*
+- *„Nicht gut oder schlecht. Einfach Fakt! 🤷‍♀️"*
+- *„Heute Morgen am Thermomix, ein Ei nach dem anderen …"* (Post vom 23.09., 435 Reichweite, ihr bester der Woche: Alltag + Tipp + Person)
+
+### Die Regeln
+
+1. **Zeigen, nicht behaupten.** „Folg mir, wenn du Klartext statt Bla willst" behauptet etwas. Eine Caption ohne Bla zeigt es. Eigenschaften nie als Adjektiv über sich selbst schreiben.
+2. **Pro Beitrag mindestens eine Stelle, die nur von ihr sein kann.** Ein echtes Detail aus ihrem Alltag, ein Seitenhieb, ein selbstironischer Satz oder eine Haltung, bei der eine Leserin auch sagen kann „nein, nichts für mich".
+3. **Der Name-abdecken-Test** gehört zum Beitrags-Check: Name abdecken und fragen, ob das auch jede andere freundliche Mentorin geschrieben haben könnte. Wenn ja, fehlt genau das, weswegen man bei ihr kauft.
+4. **Humor geht auf ihre Kosten oder auf die Kosten der Umstände** (Firma, System, Schwiegermutter, der Wäschekorb), **nie auf die der Leserin.**
+5. **Nicht glätten.** Wer einen Entwurf überarbeitet (auch `/hormozi`, der Hook-Check und die Blackliste), darf Kante und Humor nicht als „zu scharf" herausnehmen. Grenze ist nur die Liste „derb oder abwertend" weiter unten.
+6. **Keine Satzbausteine wiederholen.** Derselbe Satz in zwei Captions derselben Woche („Die meisten suchen monatelang nach einem Thema …", 22. und 23.09.) oder derselbe CTA-Wortlaut in vier Posts ist Skill-Handschrift, nicht Patricias.
+
+🚨 **Privat bleibt privat:** Die Geschichte ihrer Mutter und alles aus Abschnitt 10 („INTERN ONLY") des Vollprofils gehört **nie** in einen Text, auch nicht als „Kante". Persönlichkeit zeigen heisst Haltung zeigen, nicht Privates.
 
 ## Schreibregeln
 - Direkte Ansprache: "du" (nicht "Sie")
@@ -123,10 +172,10 @@ Jedes Content-Stück zusätzlich zur Pillar nach **P**ersönlichkeit / **I**nspi
 - „Ich kenne das selber."
 - „I can be both. You can have both."
 
-**NICHT übernehmen (zu scharf für Mum-Life-Balance):**
-- „Fucking", „scheiss", „knallt mich jemand"
-- „Motzgurken" → eigene Vokabel („Stimmen von aussen" / „Kritiker von aussen")
-- „Geh kellnern wenn du Druck hast"
+**NICHT übernehmen — derb, abwertend oder fremd** (seit 30.09.2026 enger gefasst: die Grenze ist Derbheit und Herabsetzung der Leserin, **nicht Schärfe**; Seitenhieb, Ironie und „geh zu jemand anders, wenn …" sind ausdrücklich erlaubt):
+- Derb: „Fucking", „scheiss", „knallt mich jemand"
+- Abwertend gegenüber der Leserin: „Geh kellnern wenn du Druck hast"
+- Fremdes Vokabular: „Motzgurken" → eigene Vokabel („Stimmen von aussen" / „Kritiker von aussen")
 
 ### Tonalitäts-Prinzipien (neu)
 

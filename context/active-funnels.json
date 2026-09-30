@@ -28,13 +28,8 @@
         "liste_id": 2,
         "formular_id": 47,
         "tags": {
-          "lead": 59,
           "abgeschlossen": 60,
-          "pitch_thema": 61,
-          "pitch_expertin": 62,
-          "pitch_kundenmaschine": 63,
-          "insta_dm": 64,
-          "leadmagnet_hilfe": 65
+          "pitch_thema": 61
         },
         "auslieferung_automation_id": null,
         "nurture_automation_id": null,
@@ -285,9 +280,14 @@
         "tags": {},
         "automation_id": null,
         "notes": "KEIN AC-FUNNEL · TODO: AC-Automation + Mail-Sequenz",
-        "eintrag_tag_name": "Story-Challenge",
-        "eintrag_tag_id": 40,
-        "eintrag_tag_quelle": "Patricia, 29.09.2026 — kein 0€ im Namen"
+        "eintrag_tag_name": "0€ Story-Challenge + Story-Challenge",
+        "eintrag_tag_id": 69,
+        "eintrag_tag_quelle": "Patricia, 29.09.2026 — kein 0€ im Namen",
+        "eintrag_tag_ids": [
+          69,
+          40
+        ],
+        "eintrag_tag_notiz": "Zwei Tags für dasselbe Freebie. Beide führen in Automation „0€ Story Challenge“ — die Zahl vereinigt die Personen, damit niemand doppelt zählt. Zusammenlegen in AC ist offen: multientry=1, ein neuer Tag würde die Mails erneut auslösen."
       },
       "mail_sequenz": {
         "status": "GEPLANT — noch nicht gebaut",
@@ -770,9 +770,7 @@
       "ac_integration": {
         "liste_id": 2,
         "formular_id": 66,
-        "tags": {
-          "lead": 98
-        },
+        "tags": {},
         "auslieferung_automation_id": null,
         "nurture_automation_id": null,
         "uebergabe_an": "Tag 87 → Automation 72 (0€ Engine / Loop 1)",
