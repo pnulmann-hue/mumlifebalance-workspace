@@ -7,9 +7,12 @@ name: Haushalt-Vorabend
 # Cron ist UTC. Schweiz = UTC+2 (Sommer) / UTC+1 (Winter).
 # 17:00 UTC = 19:00 CEST (Sommer) bzw. 18:00 CET (Winter). Toleranter Drift.
 
+# ABGESCHALTET seit 30.09.2026 (Patricia: "brauche keine nachrichten mehr").
+# Der Haushalt laeuft jetzt ueber das Artifact "Haushaltsplan"; die Notion-Liste
+# wird nicht mehr gepflegt. Nur noch manuell startbar.
 on:
-  schedule:
-    - cron: '0 17 * * *'   # taeglich 19:00 CEST / 18:00 CET
+  # schedule:
+  #   - cron: '0 17 * * *'   # taeglich 19:00 CEST / 18:00 CET
   workflow_dispatch:        # manueller Test-Trigger ueber die GitHub-UI
 
 permissions:
