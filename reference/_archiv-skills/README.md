@@ -37,7 +37,6 @@ sich dieselbe Artifact-Adresse, es gibt also nur einen Editor.
 
 | Archiviert | Warum |
 |---|---|
-| `salespage` | `/copywriting` schreibt Verkaufsseiten mit Briefing-Check, Bewusstseinsstufe und Anti-KI-Prüfung |
 | `hormozi` | Überarbeiten läuft über die Prüf-Layer von `/copywriting`; die Hormozi-Bibel bleibt in `reference/hormozi/` |
 | `content-master` | zugekauft, überschnitt sich mit `/content` und `/copywriting` — **gitignored** |
 | `werbeanzeigentext-master` | zugekauft, Anzeigentexte macht `/copywriting` — **gitignored** |

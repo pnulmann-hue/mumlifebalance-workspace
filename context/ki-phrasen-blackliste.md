@@ -6,7 +6,7 @@ tags: [brand, voice]
 
 **Quelle:** Patricias eigene kuratierte Blackliste (ursprünglich `KB04 — Floskeln-Blacklist-optimiert` aus Google Drive, synchronisiert 2026-04-22).
 
-**Pflicht-Lesung** für jeden text-generierenden Command: `/reels`, `/karussell`, `/copywriting`, `/produkt`, Montags-Engine, Caption-Erstellung, Hook-Erstellung, Bio-Texte, Newsletter, E-Mails.
+**Pflicht-Lesung** für jeden text-generierenden Command: `/reels`, `/karussell`, `/salespage`, `/produkt`, Montags-Engine, Caption-Erstellung, Hook-Erstellung, Bio-Texte, Newsletter, E-Mails.
 
 **Zweck:** Generische KI-Sprache und Marketing-Floskeln erkennen und vermeiden. Leserinnen erkennen KI-Muster unbewusst als künstlich — selbst wenn der Inhalt stimmt, zerstört die Konstruktion das Vertrauen.
 
@@ -452,7 +452,7 @@ BEVOR du einen Text ausgibst (Caption, Hook, Reel-Skript, Folien-Text, E-Mail, B
 
 ## Integration in Content-Commands
 
-### Für `/reels`, `/karussell`, `/copywriting`, `/produkt`:
+### Für `/reels`, `/karussell`, `/salespage`, `/produkt`:
 
 Am Ende jedes generierten Text-Outputs (Hook, Caption, Folien-Text, CTA):
 1. Pflicht-Prüfung durchlaufen (5 Scans oben)

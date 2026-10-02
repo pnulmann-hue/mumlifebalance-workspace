@@ -738,7 +738,7 @@ Captions werden nach **2026-Best-Practices** gebaut UND nach Patricias Kurs-Spra
 - **Positiv formuliert, maximal spezifisch** (Zahlen, Alltagssituationen)
 - **Kein Salesy-Ton** — wie eine gute Freundin sprechen
 
-_Hinweis: Julia-Trost-Funnel-Architektur, Launch-Phasen, Produkttreppe sind in separaten Skills wie `/produkt`, `/funnel` und `/copywriting` abgedeckt — nicht in Content-Briefings._
+_Hinweis: Julia-Trost-Funnel-Architektur, Launch-Phasen, Produkttreppe sind in separaten Commands wie `/salespage` abgedeckt — nicht in Content-Briefings._
 
 ### 2026-Best-Practices (aus Research — Buffer, TrüFuture, River, OpusClip)
 - **HVC-Formel**: Hook → Value → CTA (3-Zeilen-Caption)
@@ -995,7 +995,7 @@ Die obigen Algorithmus-, Retention- und Längen-Daten stammen aus folgenden 2026
 - `reference/julia-trost/Reels to Cash (1).pdf` — Reels-spezifische Verkaufslogik
 - `reference/julia-trost/Stories die verkaufen.pdf` — Storytelling-Frameworks
 
-_Funnel-, Produkttreppen-, Launch-Content nur in `/produkt`, `/funnel` und `/copywriting` relevant._
+_Funnel-, Produkttreppen-, Launch-Content nur im `/salespage`-Command relevant._
 
 Bei jeder neuen Reel-Session sollte der Assistent **vor dem Briefing** eine frische Trend-Recherche durchführen (WebSearch), da sich Trends in 1-2 Wochen ändern können.
 
