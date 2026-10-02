@@ -225,6 +225,7 @@ Letzte Krisen:
 - **Vierstellig pro Monat** aus Mentoring (regelmäßig — Jan/Feb 2026 ~1'150 CHF/Monat aus Insta-Kundenmaschine)
 - **Vierstellig pro Monat** aus doTERRA (regelmäßig — bis zu 1'000 CHF/Monat in Spitzenmonaten)
 - *„Es gibt keinen Monat mehr, wo ich nicht verkaufe"* ← **definitive Brand-Linie**
+- 🔄 *Stand 02.10.2026 (Interview A6): 3 Frauen in der MBA, mit den laufenden Telegram-Gruppen insgesamt 8 begleitet. Die Zahlen in der nächsten Zeile sind überholt.*
 - 7 Mentees · 3 Mitgliedschaft · 18h Woche · 4 Kinder · Krafttraining · Omega 3 + Präbiotika · Hormontests gemacht
 - Spitzenmonate erreichen ~2'150 CHF (Insta-KuMa + doTERRA addiert) → Patricia ist näher am 40k-Jahres-Ziel als sie selbst manchmal kommuniziert. Stabil bei diesem Niveau = ~25k/Jahr.
 

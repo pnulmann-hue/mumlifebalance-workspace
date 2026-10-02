@@ -36,7 +36,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ A4 Verwaltungsrat: noch dabei oder abgegeben?
 - ✅ A4b Wie viel Zeit kosten Verwaltungsrat und Geschäftsleitung, und darf das in den Content?
 - ✅ A5 Das Coaching für 3'500 — läuft es noch, was hat es gebracht?
-- ⬜ A6 Wie viele Kundinnen begleitest du heute wirklich (Mentees, Mitgliedschaft, 1:1)?
+- ✅ A6 Wie viele Kundinnen begleitest du heute wirklich (Mentees, Mitgliedschaft, 1:1)?
 - ⬜ A7 Wie viele Stunden arbeitest du heute pro Woche — und wann?
 - ⬜ A8 Wie sieht dein Mann das Business heute?
 
@@ -212,3 +212,17 @@ ist."*
   Coaching kommt im Content nicht als Vorbild vor.
 - Passt zu ihrer Haltung „ehrliche Mama-CEO-Realität": Nicht jede Investition zahlt sich aus.
   Ob sie *das* erzählen will, ist offen — nicht ungefragt verwenden.
+
+### A6 · Wen sie heute begleitet · 02.10.2026
+
+**Wortlaut:** *„3 in der mba. die anderen kurse würden ja ohnehin ohne begleitung laufen. rsp.
+die telegramgruppen laufen da immer noch und dann wären es genau genommen 8"*
+
+**Festgehalten:**
+- **3 Frauen in der MBA** (mit Begleitung).
+- Die übrigen Kurse sind ohne Begleitung gebaut; über die **noch laufenden Telegram-Gruppen**
+  sind es insgesamt **8 Frauen**, mit denen sie aktuell in Kontakt ist.
+- 🔄 Die Mai-Zahl „7 Mentees · 3 in der Mitgliedschaft" ist überholt. Ob es die
+  Mitgliedschaft noch gibt, ist offen.
+- **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
+  grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
