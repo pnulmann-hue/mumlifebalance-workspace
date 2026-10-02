@@ -49,7 +49,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ⬜ B6 Wie redest du mit einer Freundin, die gerade jammert?
 - ✅ B7 Wie klingst du, wenn du verkaufst — und wie willst du klingen?
 - ✅ B8 Emojis, Ausrufezeichen, Grossbuchstaben: was ja, was nie?
-- ⬜ B9 Gibt es Creator, deren Ton dir gefällt? Was genau daran?
+- ✅ B9 Gibt es Creator, deren Ton dir gefällt? Was genau daran?
 - ⬜ B10 Schick mir 3 Texte, die du komplett selbst geschrieben hast und gut findest.
 
 ### Block C — Deine Meinungen (Haltung, Hot Takes)
@@ -414,5 +414,15 @@ Grossbuchstaben *„wenn es wirklich zählt"*
 **Festgehalten** (in `brand-voice.md`, Schreibregeln): 😅 ist ihr Emoji · Obergrenze 3–5
 Emojis bleibt (nicht widersprochen) · „!!" bei Nachdruck erlaubt · Grossbuchstaben nur, wenn
 es wirklich zählt.
+
+### B9 · Vorbilder im Ton · 02.10.2026
+
+**Wortlaut:** *„ja. reichweitenherz oder auch julia trost"*
+
+**Festgehalten:** Beide schon im Workspace — Reichweitenherz-Muster in Memory
+`feedback_KRITISCH-reichweitenherz-patterns` (konkrete Szene + Gegenspielerin, POV, Pointe als
+Option D), Julia Trost in `brand-voice.md` (Julia-Sync: „Liebevolle Strenge", „Direkt, aber mit
+Liebe", „Pushy ist gut, wenn ehrlich"). 🚨 Namen bleiben intern, nie in Kundentexten.
+Was genau sie an beiden mag → Rückfrage B9b.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
