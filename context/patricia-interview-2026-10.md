@@ -53,7 +53,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ⏭ B10 Schick mir 3 Texte, die du komplett selbst geschrieben hast und gut findest.
 
 ### Block C — Deine Meinungen (Haltung, Hot Takes)
-- ⬜ C1 Was regt dich in der Network-Branche am meisten auf?
+- ✅ C1 Was regt dich in der Network-Branche am meisten auf?
 - ⬜ C2 Was regt dich in der Online-Coaching-Welt auf?
 - ⬜ C3 Welchen gängigen Rat hältst du für falsch?
 - ⬜ C4 Wo bist du anderer Meinung als deine Upline oder die Firma?
@@ -437,5 +437,33 @@ Sarkasmus, Ironie).
 „Persönlichkeit zeigen" aus `brand-voice.md` (vorher fehlte er — Referenztext,
 Freundinnen-Test, derbe Wörter und Verkaufston kamen nie im Cockpit an). Neu gebaut
 (199 KB) und als `daten/wissen-voll` Version 8 in **Cockpit und Bild-Editor** geschrieben.
+
+### C1 · Was sie in der Network-Branche aufregt · 02.10.2026
+
+**Wortlaut:** *„laute abwerben nervt, konkurrenzkampf nervt, es nervt mich übelst dass mir
+jemand folgt und dann ein paar minuten später schreibt, ob ich mal lust hätte ihr produkt zu
+probieren oder etwas eigenes aufbauen möchte. das traurige daran ist, dass sich diese menschen
+gar nie mit meinem profil beschäftigt haben. denn dann hätten sie gesehen, dass ich logischerweise
+selbständig bin, das abtelefonieren, das den menschen auf den wecker gehen denen man kennt. dass
+man immer wenn ein freund von einem problem erzählt immer um die ecke kommt mit dem produkt das
+man verkauft und dass scheinbar das eigene produkt die lösung für alles ist. das regt mich auch
+so gottsjämmerlich auf"*
+
+**Ihre Aufreger, einzeln:**
+1. **Lautes Abwerben** und **Konkurrenzkampf** unter Networkerinnen
+2. **Die Follow-und-DM-Masche:** folgen, Minuten später „Lust, mein Produkt zu probieren / etwas
+   Eigenes aufzubauen?" — *ohne das Profil je angeschaut zu haben* (sie ist sichtbar selbständig)
+3. **Abtelefonieren** der eigenen Bekannten, **Leuten auf den Wecker gehen**, die man kennt
+4. **Bei jedem Problem eines Freundes mit dem Produkt um die Ecke kommen**
+5. **Das eigene Produkt als Lösung für alles**
+
+**Für Content:**
+- Starkes Material für Konträr- und Identitäts-Hooks — und passt genau zu ihrer Methode
+  (themenbasiert statt produktbasiert, Freebie-Funnel statt Bekannte abtelefonieren).
+- Szene mit Gegenspielerin ist schon da: *„Sie folgt mir. Vier Minuten später: ‚Hast du Lust,
+  mein Produkt zu probieren?'"*
+- ⚠️ **Heikel:** Ihre eigenen Kundinnen haben das oft genau so gelernt. Die Gegenspielerin ist
+  die **Methode** (oder wer sie beibringt), **nie die Leserin**. → Rückfrage C1b.
+- „gottsjämmerlich" ist Mundart → in Texten nicht verwenden (B3b).
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
