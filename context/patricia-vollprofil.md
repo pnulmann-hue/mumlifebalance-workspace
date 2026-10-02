@@ -167,7 +167,7 @@ Letzte Krisen:
 
 ### Highs & Lows
 - ❤️ **Liebt:** Wellness mit Freundin · Schneetreiben vorm Fenster · Liegestuhl · Sonne · Kreuzfahrt-Buffet · Sauna · Eincremen mit Ölen/Düften · Garten/Pflanzen aus Samen ziehen · Hochwertig essen · Action-Filme · Krimi-Romane · Daily Soaps (GZSZ, Alles was zählt) · SRF Bi de Lüt · Shopping als Erlebnis · *„das Leben aussaugen"*
-- 🤬 **Kotzt sie an:** Abspulen von To-Dos · Rumsäckeln · ewiges Genörgel · **Geld-Druck:** *„Wir dürfen jetzt nicht auswärts essen, weil's zu viel kostet"* / *„Oh shit, wie viel hab ich noch auf dem Konto"* (Mai-9)
+- 🤬 **Kotzt sie an:** Abspulen von To-Dos · Rumhetzen · ewiges Genörgel · **Geld-Druck:** *„Wir dürfen jetzt nicht auswärts essen, weil's zu viel kostet"* / *„Oh shit, wie viel hab ich noch auf dem Konto"* (Mai-9)
 
 → Geld-Symbol für finanzielle Freiheit: **„Auswärts essen können wann ich will"** (konkreter als „6-stellig").
 → Verzicht-Realität (Mai-9): kein auswärts essen beim Wandern, keine Kreuzfahrt obwohl 1x getestet (10'000 CHF, würde sie jährlich), keine Bauch-Käufe, kein „mit-Mann-was-trinken-gehen".
@@ -386,10 +386,11 @@ Patricia-Sammelbegriff für 7 Sub-Typen, die **alle** auf sie nicht passen:
 ## 7. BRAND-VOICE
 
 ### Patricia-Wortschatz (verwenden)
-- *„Rumsäckeln"* (Schweizerdeutsch: Herumdrucksen/Aufschieben)
+> 🚨 **Seit 02.10.2026 (Interview B3b): keine schweizerdeutschen Wörter in ihren Texten.** Die Mundart-Einträge hier sind nur noch zum Verstehen, nicht zum Schreiben.
+- *„Rumseckeln"* (Schweizerdeutsch) = **rumspringen, sich abhetzen** — korrigiert 02.10.2026, vorher fälschlich „herumdrucksen/aufschieben". Nicht in Texten verwenden.
 - ~~*„Geheite"*~~ — ⛔ **gestrichen 02.10.2026:** Patricia kennt das Wort nicht (*„weiss nicht was das sein soll"*). Nie verwenden.
 - *„Tunnel-Modus"* / *„im Tunnel"*
-- *„pack Brot"* (statt „backe")
+- ~~*„pack Brot"*~~ — ⛔ gestrichen 02.10.2026, Patricia: *„hää :-D"*. Stammt nicht von ihr.
 - *„dröhnen"* (Musik laut hören)
 - *„mega puff"* = **mega Schweinerei / mega Chaos** (korrigiert 02.10.2026 — vorher fälschlich „überrumpelt"). Passt zu Unordnung, Durcheinander, Chaos im Haus oder im Kopf — **nie** zu einem Erfolgsmoment.
 - *„das Leben aussaugen"* / *„Leben spüren"* (Mai-9-Vertiefung)
@@ -514,7 +515,7 @@ Patricia-Sammelbegriff für 7 Sub-Typen, die **alle** auf sie nicht passen:
 
 1. **Mindestens 1 Pain-/Wunsch-/Ziel-Bezug** zu Mentee-Profil (NWM-Mama Schweiz, 2–3 Kids, Anfang, fehlender Fokus, Geld-Druck, Wunsch nach Freiheit)
 2. **Brand-Voice-Filter:** keine verbotenen Wörter (siehe Section 7), keine Julia-Trost-Erwähnung, keine doTERRA-Heilversprechen, kein Déesse-Affiliate
-3. **Patricia-Wortschatz** wo passend einbauen (Tunnel · Rumsäckeln · pack Brot · dröhnen · mega puff (= Chaos) · *„jetzt mal ganz ehrlich"* · *„wie geil ist das denn"*)
+3. **Patricia-Wortschatz** wo passend einbauen (Tunnel · dröhnen · Rumgefummel · ohne Ende · *„Angenommen …"* · keine Mundart-Wörter · *„jetzt mal ganz ehrlich"* · *„wie geil ist das denn"*)
 4. **Anti-Bali-Frame** wo Differenzierung gefragt: vierstellig statt 6-stellig · Schweiz statt Bali · 18h statt 60h · Solo-mit-KI statt Coaching-Imperium
 5. **Patricia steht im Fokus** — Mann ist Nebendarsteller, nie Held. Kids anonymisiert (*ältester Sohn / mittlere Tochter* etc.).
 6. **Repel-Markt klar:** wer NICHT angesprochen wird (Nichts-Veränderin, 6-stellig-Träumerin)

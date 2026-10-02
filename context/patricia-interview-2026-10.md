@@ -333,5 +333,19 @@ ein mega chaos"*
 - 🚨 **Lehre:** Wörter aus dem Mai-Interview wurden teils mit erratener Bedeutung abgelegt.
   Mundart-Wörter nur mit **ihrer** Erklärung verwenden.
 - Offen: ihre weiteren Alltagswörter (Freude, Ärger, Aufmuntern, Schweizer Ausdrücke).
+
+### B3b · Bedeutungen geprüft · 02.10.2026
+
+**Wortlaut:** „pack Brot" → *„hää :-D"* · „rumsäckeln" → *„Ne rumseckeln ist rumspringen,
+abhetzen usw. aber ich glaube nicht, dass du schweizerdeutsche wörter in meinen texten
+brauchst"* · übrige → *„rest passt"*
+
+**Umgesetzt:**
+- ⛔ **„pack Brot" gestrichen** (stammt nicht von ihr — zweites erfundenes Wort nach „Geheite").
+- **„rumseckeln" = rumspringen, sich abhetzen** (vorher falsch „aufschieben").
+- 🚨 **Neue Regel: keine schweizerdeutschen Mundart-Wörter in ihren Texten.** Eingetragen in
+  `brand-voice.md`, Copywriting-Skill, Vollprofil und Gedächtnis. Schweizer Hochdeutsch, das
+  sie selbst schreibt (*innert*), bleibt.
+- ✅ Bestätigt: dröhnen · Wollmilchsau · Tunnel-Modus · das Leben aussaugen · Holz anlangen.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.

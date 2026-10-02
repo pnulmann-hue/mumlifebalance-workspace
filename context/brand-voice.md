@@ -38,7 +38,8 @@ und man ihn ihr nicht vorenthält.
 - **Mit Humor und Kante** — Selbstironie, trockener Seitenhieb, schwarzer Humor über sich selbst (siehe Block „Persönlichkeit zeigen" unten)
 - Ehrlich und authentisch — Patricia teilt echte Erfahrungen, keine Hochglanz-Fassade
 - Empowernd — "Du kannst das, und ich zeige dir wie"
-- Locker aber kompetent — kein Akademiker-Deutsch; ihre Alltagswörter sind erwünscht („rumsäckeln", „mega puff" — heisst mega Chaos/Schweinerei, nie für Staunen, „jetzt mal ganz ehrlich", „wie geil ist das denn")
+- Locker aber kompetent — kein Akademiker-Deutsch; ihre Alltagswörter sind erwünscht („jetzt mal ganz ehrlich", „wie geil ist das denn", „Rumgefummel", „ohne Ende")
+- 🚨 **Keine schweizerdeutschen Mundart-Wörter in ihren Texten** (Patricia, Interview B3b, 02.10.2026: *„ich glaube nicht, dass du schweizerdeutsche wörter in meinen texten brauchst"*). Also kein „rumseckeln", kein „mega Puff". Geschrieben wird Hochdeutsch mit Schweizer ss; Schweizer Hochdeutsch, das sie selbst schreibt (*innert*, *Menuplan*), ist in Ordnung.
 - Nicht: Aufgeblasen, salesy, distanziert, belehrend, überheblich — **und nicht weichgespült**
 
 ---
