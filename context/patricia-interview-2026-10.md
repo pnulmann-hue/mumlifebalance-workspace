@@ -34,7 +34,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ A2 Was hat sich seit Mai in deinem Alltag und deiner Familie verändert (Morgen, Training, Kinder, Schule)?
 - ✅ A3 Wie geht es deiner Mama, und was davon darf in den Content?
 - ✅ A4 Verwaltungsrat: noch dabei oder abgegeben?
-- ⬜ A4b Wie viel Zeit kosten Verwaltungsrat und Geschäftsleitung, und darf das in den Content?
+- ✅ A4b Wie viel Zeit kosten Verwaltungsrat und Geschäftsleitung, und darf das in den Content?
 - ⬜ A5 Das Coaching für 3'500 — läuft es noch, was hat es gebracht?
 - ⬜ A6 Wie viele Kundinnen begleitest du heute wirklich (Mentees, Mitgliedschaft, 1:1)?
 - ⬜ A7 Wie viele Stunden arbeitest du heute pro Woche — und wann?
@@ -179,3 +179,21 @@ nd ja ich bin noch im verwaltungsrat und der geschäftsleitung"*
   passt" galt den **politischen Aufgaben** (Kommissionen), nicht dem Verwaltungsrat.
 - Sie ist **weiter im Verwaltungsrat und auch in der Geschäftsleitung** des
   Elektrizitätsunternehmens.
+
+### A4b · Zeitaufwand und Content-Freigabe · 02.10.2026
+
+**Wortlaut:** *„wir haben einmal monatlich einen vormittag sitzung und manchmal noch eine
+zusätzliche. würde also sagen einen Tag pro Monat in der Geschäftsleitung und dann alle 2
+monate abendsitzung mit anschliessendem protokollschreiben im verwaltungsrat. ich will nicht
+genau sagen, was ich mache aber dass ich noch in einer externen firma im verwaltungsrat bin
+kann schon miteinfliessen wenn es sinn ergibt"*
+
+**Festgehalten:**
+- **Aufwand:** Geschäftsleitung rund ein Tag pro Monat (monatlich ein Vormittag Sitzung,
+  manchmal eine zusätzliche). Verwaltungsrat alle zwei Monate eine Abendsitzung, danach
+  schreibt sie das Protokoll.
+- **Content-Freigabe:** ✅ *„noch in einer externen Firma im Verwaltungsrat"* darf vorkommen,
+  wenn es passt. ⛔ **Nicht nennen:** welche Firma, welche Branche, was genau sie dort tut.
+  Die Geschäftsleitung gehört nicht in den Content.
+- **Wann es passt:** als Beleg für Struktur und Mama-CEO (*„Vier Kinder, eigenes Business und
+  nebenbei noch in einem Verwaltungsrat"*), nie als Angeberei und nie als Hauptthema.

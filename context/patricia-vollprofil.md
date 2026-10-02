@@ -196,7 +196,7 @@ Letzte Krisen:
 ### Karriere-Vorgeschichte
 - Sachbearbeiterin (meistens), zwischendurch **Leiterin Vormundschaftsbehörde / Sozialamt**
 - Mama-Phase parallel: 10 Klienten als private Mandatsträgerin (Buchhaltung + Administration) · Sozialbegleiterin · 4 Jahre Gemeinderätin · Verwaltungsrätin Elektrizitätsunternehmen (NOCH AKTIV) · Bibliothek
-- 2023 Cut: **alles abgegeben außer Verwaltungsrat** (Stand Okt. 2026: weiter im Verwaltungsrat **und in der Geschäftsleitung**; politische Kommissionsarbeit inzwischen abgegeben)
+- 2023 Cut: **alles abgegeben außer Verwaltungsrat** (Stand Okt. 2026: weiter im Verwaltungsrat **und in der Geschäftsleitung**; politische Kommissionsarbeit inzwischen abgegeben. Aufwand: GL ~1 Tag/Monat, VR alle 2 Monate Abendsitzung + Protokoll. **Content:** nur *„noch in einer externen Firma im Verwaltungsrat"*, ohne Firma, Branche oder Tätigkeit; Geschäftsleitung nicht erwähnen — Interview A4b)
 - Multi-Job-Mama-Frust: **„Ich konnte mit 4 Kindern nicht regulär arbeiten gehen — die Kinderbetreuung kostete mehr als mein Lohn"**
 
 ### Erstes Angebot (Gründung)
