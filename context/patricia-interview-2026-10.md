@@ -47,7 +47,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ B4 Welche Wörter würdest du nie sagen, obwohl sie „normal" klingen?
 - ✅ B5 Wie fluchst, lobst und lachst du in Texten? Wie viel darf rein?
 - ⬜ B6 Wie redest du mit einer Freundin, die gerade jammert?
-- ⬜ B7 Wie klingst du, wenn du verkaufst — und wie willst du klingen?
+- ✅ B7 Wie klingst du, wenn du verkaufst — und wie willst du klingen?
 - ⬜ B8 Emojis, Ausrufezeichen, Grossbuchstaben: was ja, was nie?
 - ⬜ B9 Gibt es Creator, deren Ton dir gefällt? Was genau daran?
 - ⬜ B10 Schick mir 3 Texte, die du komplett selbst geschrieben hast und gut findest.
@@ -393,5 +393,16 @@ mega katalog mässig. oder eben KI mässig :-D"*
 - Hinweis: „sichtbar werden" und „Mindset" stehen in der Blackliste als abstrakter Benefit
   bzw. Buzzword — als Wort sagt sie sie, als leeres Versprechen bleiben sie verdächtig. Nicht
   geändert.
+
+### B7 · Wie sie verkauft · 02.10.2026
+
+**Wortlaut:** 1. *„Wenn du da Hilfe brauchst, kann ich dich gerne unterstützen"* · 2. (was
+unangenehm ist) *„eigentlich nichts. verkauf ist verkauf"* · 3. *„weiss nicht was du meinst"*
+
+**Festgehalten:**
+- Ihre Einladungsformel steht jetzt in `brand-voice.md`.
+- **Keine Verkaufsscham** — Verkaufstexte nicht verdruckst oder entschuldigend. Grenze bleibt
+  die Wahrheit: keine erfundenen Fristen oder Plätze.
+- Teilfrage 3 war unklar gestellt → fallen gelassen.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.

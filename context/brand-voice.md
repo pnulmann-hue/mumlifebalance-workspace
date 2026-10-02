@@ -137,6 +137,10 @@ oder Klientin sagen, die ihr gegenübersitzt?**
 - ~ Statt *„Stell dir vor …"* sagt sie **„Gehen wir mal davon aus …"** oder **„Angenommen …"**
 - ~ Stakkato-Dreier (*„Kein Plan. Kein System. Kein Umsatz."*) — *„hmm weniger"*
 - ❌ *„Lass uns gemeinsam auf diese Reise gehen."* — *„zu geschwollen"*
+**Beim Verkaufen (Interview B7, 02.10.2026):**
+- Ihre Einladung, wörtlich: *„Wenn du da Hilfe brauchst, kann ich dich gerne unterstützen."* — angeboten, nicht gedrängt; gleicher Ton wie der Rest des Textes.
+- *„eigentlich nichts. verkauf ist verkauf"* — **keine Verkaufsscham**. Preis nennen, Frist, begrenzte Plätze, nachfassen sind ihr nicht unangenehm. Verkaufstexte also **nicht** entschuldigend oder verdruckst schreiben. Was gilt: nur echte Fristen und echte Platzzahlen (keine erfundene Knappheit).
+
 - ❌ **„Mädels"** und **„Mamas da draussen"** — sagt sie nie (B4). ✅ „Ladys", „Mama-Unternehmerin", „Business-Mama", „Community", „Mehrwert", „Klartext", „Schritt für Schritt", „Liebe Grüsse" sind in Ordnung.
 - **Nicht geglättet:** kleine Unebenheiten (fehlendes Komma, „Z.B", Singular bei „die … nicht
   tangiert") gehören zum Ton. In ihren eigenen Texten nicht korrigieren, ohne zu fragen.
