@@ -37,6 +37,7 @@ sich dieselbe Artifact-Adresse, es gibt also nur einen Editor.
 
 | Archiviert | Warum |
 |---|---|
+| `salespage` | Inhalt steht als Abschnitt „ThriveCart-Tipps" in `/copywriting` (13 Blöcke, Interviewfragen, Ausgabe) |
 | `hormozi` | Überarbeiten läuft über die Prüf-Layer von `/copywriting`; die Hormozi-Bibel bleibt in `reference/hormozi/` |
 | `content-master` | zugekauft, überschnitt sich mit `/content` und `/copywriting` — **gitignored** |
 | `werbeanzeigentext-master` | zugekauft, Anzeigentexte macht `/copywriting` — **gitignored** |

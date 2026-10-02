@@ -259,7 +259,7 @@ Letzte Krisen:
 ### KI-Mitarbeiter
 
 **Slash-Command-Assistenten** (Claude Code intern):
-`/story` · `/funnel` · `/montag` · `/freitag-hooks` · `/reels` · `/karussell` · `/produkt` · `/salespage` · `/wp` · `/mealplan` · `/garten` · `/freebies-sync` · `/kurse-sync`
+`/story` · `/funnel` · `/montag` · `/freitag-hooks` · `/reels` · `/karussell` · `/produkt` · `/copywriting` · `/wp` · `/mealplan` · `/garten` · `/freebies-sync` · `/kurse-sync`
 
 **Persönliche Telegram-Bots:**
 - Kochassistent
