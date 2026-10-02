@@ -128,7 +128,7 @@ oder Klientin sagen, die ihr gegenübersitzt?**
 **Ihre Wörter je Lage (Interview B3c, 02.10.2026, ihr Wortlaut):**
 - **Freude:** „Oh mein Gott, wie geil ist das denn?" · mega · krass · cool
 - **Aufmuntern:** „Versteh dich total" · „Kenn ich" · „Geht mir auch so" · *„Ich weiss, jetzt ist es schwer, aber irgendwann wirst du zurückblicken und dir dafür danken, dass du drangeblieben bist."*
-- **Ärger:** „Dieser Bullshit" · „Das kotzt mich echt an" · „Was für ein Scheiss" · „wtf" — ⚠️ wie viel davon geschrieben werden darf, klärt Interview B5
+- **Ärger:** „Dieser Bullshit" · „Das kotzt mich echt an" · „Was für ein Scheiss" · „wtf" — **eines pro Text erlaubt**, nie gegen die Leserin (B5)
 - **Gruss:** kein fester, jedes Mal passend zum Text — nie denselben Gruss wiederholen
 
 **Freundinnen-Test (Interview B2, 02.10.2026)** — so redet sie, so nicht:
@@ -261,7 +261,8 @@ Jedes Content-Stück zusätzlich zur Pillar nach **P**ersönlichkeit / **I**nspi
 - „I can be both. You can have both."
 
 **NICHT übernehmen — derb, abwertend oder fremd** (seit 30.09.2026 enger gefasst: die Grenze ist Derbheit und Herabsetzung der Leserin, **nicht Schärfe**; Seitenhieb, Ironie und „geh zu jemand anders, wenn …" sind ausdrücklich erlaubt):
-- Derb: „Fucking", „scheiss", „knallt mich jemand"
+- Derb und **nicht ihre Wörter**: „Fucking", „knallt mich jemand"
+- 🟢 **Ihre eigenen derben Wörter sind erlaubt** (Interview B5, 02.10.2026): *Scheiss · Bullshit · kotzt mich an · Dreck · wtf* — **höchstens eines pro Text**, und **nie gegen die Leserin**, nur gegen Umstände (System, schlechte Ratschläge, Rumgefummel). Patricia: *„du darfst gerne etwas derber schreiben. sonst ist es ja mega katalog mässig. oder eben KI mässig :-D"*
 - Abwertend gegenüber der Leserin: „Geh kellnern wenn du Druck hast"
 - Fremdes Vokabular: „Motzgurken" → eigene Vokabel („Stimmen von aussen" / „Kritiker von aussen")
 

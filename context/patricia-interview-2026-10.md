@@ -45,7 +45,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ B2 Woran merkst du in einer Zeile sofort, dass sie nicht von dir ist?
 - ✅ B3 Welche Wörter und Ausdrücke sagst du ständig (auch Mundart)?
 - ⬜ B4 Welche Wörter würdest du nie sagen, obwohl sie „normal" klingen?
-- ⬜ B5 Wie fluchst, lobst und lachst du in Texten? Wie viel darf rein?
+- ✅ B5 Wie fluchst, lobst und lachst du in Texten? Wie viel darf rein?
 - ⬜ B6 Wie redest du mit einer Freundin, die gerade jammert?
 - ⬜ B7 Wie klingst du, wenn du verkaufst — und wie willst du klingen?
 - ⬜ B8 Emojis, Ausrufezeichen, Grossbuchstaben: was ja, was nie?
@@ -365,5 +365,18 @@ zurückblicken und dir dafür danken, dass du drangeblieben bist, hab keinen fes
 ⚠️ **Konflikt:** `brand-voice.md` (Julia-Sync, 30.09.) führt „scheiss" unter *derb — nicht
 übernehmen*. Patricia sagt Scheisse/Bullshit/kotzt mich an im Alltag. Regel **nicht**
 geändert → Rückfrage B5 (wie viel davon in Texte darf).
+
+### B5 · Derbe Wörter in Texten · 02.10.2026
+
+**Wortlaut:** zu Option C *„genau"* · *„du darfst gerne etwas derber schreiben. sonst ist es ja
+mega katalog mässig. oder eben KI mässig :-D"*
+
+**Umgesetzt:**
+- **Ein derbes Wort pro Text** aus ihrem Wortschatz (Scheiss, Bullshit, kotzt mich an, Dreck,
+  wtf), **nie gegen die Leserin**, nur gegen Umstände. Gilt für alle Formate.
+- **Zu brav ist ebenfalls ein Fehler** („katalogmässig", „KI-mässig").
+- Widerspruch aufgelöst: „scheiss" aus der Derb-Liste in `brand-voice.md` und im
+  Copywriting-Skill gestrichen; Hook-Skill von „ein bis zwei" auf „eines" gesetzt; Gedächtnis
+  nachgezogen. „Fucking" und „knallt mich jemand" bleiben draussen (nicht ihre Wörter).
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
