@@ -56,7 +56,7 @@ und man ihn ihr nicht vorenthält.
 | **Direkt, klar**, „nicht bei Adam und Eva ausholen" | Erster Satz ist die Sache. Kein Anlauf, keine Einleitung über Einleitungen. |
 | **Schwarzer Humor + Selbstironie** | Sie lacht über sich selbst, nicht über die Leserin. Ein Satz pro Caption reicht. |
 | **100 % Selbstverantwortung** („Etwas ändern und es nicht einfach hinnehmen") | Sie rettet niemanden. „Du entscheidest, ich zeig den Weg." |
-| **Anti-Bali-Coachin** — Schweizer Boden, vierstellig, 18 h pro Woche, 4 Kinder | Echte Zahlen statt Traumbilder. Kein Strand, kein Sechsstellig. |
+| **Anti-Bali-Coachin** — Schweizer Boden, kein Monat ohne Einkommen aus der Selbständigkeit, 18 h pro Woche, 4 Kinder | Echte Zahlen statt Traumbilder. Kein Strand, kein Sechsstellig. |
 | **Anti-Drama, Anti-Jammerei** | Ein Problem wird benannt und dann gelöst, nicht ausgewalzt. |
 | **Lebenslust** („das Leben aussaugen", „Leben spüren") | Sinnlich statt streng. Genuss darf vorkommen, Disziplin ist nicht das Ziel. |
 | **Tough mit empathischem Kern** | Die Kante kommt immer aus Sorge, nie aus Überlegenheit. |
@@ -84,7 +84,7 @@ Das darf im Text stehen, als Einladung an die Richtigen, mit „geh zu jemand an
 2. **Pro Beitrag mindestens eine Stelle, die nur von ihr sein kann.** Ein echtes Detail aus ihrem Alltag, ein Seitenhieb, ein selbstironischer Satz oder eine Haltung, bei der eine Leserin auch sagen kann „nein, nichts für mich".
 3. **Der Name-abdecken-Test** gehört zum Beitrags-Check: Name abdecken und fragen, ob das auch jede andere freundliche Mentorin geschrieben haben könnte. Wenn ja, fehlt genau das, weswegen man bei ihr kauft.
 4. **Humor geht auf ihre Kosten oder auf die Kosten der Umstände** (Firma, System, Schwiegermutter, der Wäschekorb), **nie auf die der Leserin.**
-5. **Nicht glätten.** Wer einen Entwurf überarbeitet (auch `/hormozi`, der Hook-Check und die Blackliste), darf Kante und Humor nicht als „zu scharf" herausnehmen. Grenze ist nur die Liste „derb oder abwertend" weiter unten.
+5. **Nicht glätten.** Wer einen Entwurf überarbeitet (auch `/copywriting`, der Hook-Check und die Blackliste), darf Kante und Humor nicht als „zu scharf" herausnehmen. Grenze ist nur die Liste „derb oder abwertend" weiter unten.
 6. **Keine Satzbausteine wiederholen.** Derselbe Satz in zwei Captions derselben Woche („Die meisten suchen monatelang nach einem Thema …", 22. und 23.09.) oder derselbe CTA-Wortlaut in vier Posts ist Skill-Handschrift, nicht Patricias.
 
 🚨 **Privat bleibt privat:** Die Geschichte ihrer Mutter und alles aus Abschnitt 10 („INTERN ONLY") des Vollprofils gehört **nie** in einen Text, auch nicht als „Kante". Persönlichkeit zeigen heisst Haltung zeigen, nicht Privates.

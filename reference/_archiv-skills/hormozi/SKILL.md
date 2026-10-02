@@ -1,4 +1,23 @@
+---
+name: hormozi
+description: "Copywriting-Doktor nach Alex Hormozi — überarbeitet bestehende Texte nach 7 Frameworks, ohne die eigene Markenstimme zu zerstören."
+---
 # /hormozi — Copywriting-Doktor nach Alex Hormozi
+
+> 🎯 **HOOKS — Pflicht-Lese `.claude/skills/hooks/SKILL.md` (seit 2026-09-14)**
+>
+> Jeder Hook, der hier entsteht — Cover, Reel-Einstieg, Folie 1, Caption-Anfang,
+> Story-Slide 1, Anzeigen-Zeile — wird nach diesem Skill gebaut. Dort stehen
+> Kundensprache, Bewusstseinsstufen, Angles, PIE-Mix, alle Formeln, die Verbote
+> und das Prüfskript.
+>
+> **Und am Ende „Der letzte Check" — vier Fragen, die jeder Hook bestehen muss:**
+> trifft es wirklich einen Schmerz · denkt sie „krass, wieso weiss die, was ich
+> denke" · sagt man das so am Küchentisch zu einer Freundin · **ist die Lösung
+> draussen** (die Lösung kommt nie im Hook).
+>
+> Eine Frage mit Nein: **den Hook umschreiben, nie die Caption nachbessern.**
+
 
 > **🚨 ABSOLUTE PFLICHT — Read-First (Schritt 0, vor allem anderen):**
 >
@@ -38,7 +57,7 @@ Lies diese Dateien, bevor du den Text anpackst:
 1. `reference/hormozi/copywriting-bible.md` — alle 7 Frameworks + 12 Persuasion Hacks + Schreibregeln
 2. `context/brand-voice.md` — Patricias Tonalität, Schreibregeln, was zwingend bleibt
 3. `context/business-info.md` — beide Profile (Mentoring + doTERRA), Positionierung
-4. `context/hook-framework.md` — Patricias bisherige Hook-Kategorien (kombinieren mit Hormozi)
+4. `.claude/skills/hooks/SKILL.md` — der Hook-Master (Kundensprache, Stufen, Angles, PIE, Formeln, Verbote, letzter Check)
 5. *Falls Salespage:* `reference/julia-trost/methodik.md`
 6. *Falls Caption/Reel/Karussell:* `context/caption-formeln.md`
 
@@ -255,11 +274,11 @@ Hormozi ist **Bonus-Layer in allen Content-Skills**, nicht nur ein eigener Modus
 
 | Skill | Wo Hormozi greift | Wer entscheidet |
 |---|---|---|
-| `/freitag-hooks` | Hook-Variation, Validity×Utility-Filter, Pain-in-Momenten | autonom (Bonus-Layer in der Skill-Datei) |
+| `/content woche` | Hook-Variation, Validity×Utility-Filter, Pain-in-Momenten | autonom (Bonus-Layer in der Skill-Datei) |
 | `/karussell` | Slide-1-Hook, ++/−−×Self/Friends/Enemies, P.S.-Slide, Container-Wörter | autonom |
 | `/reels` | Hook + Solve-for-Congruence + Container-Wörter | autonom |
 | `/story` | ++/−−×Self/Friends/Enemies-Matrix über Wochen-Slides | autonom |
-| `/montag` | Sanity-Check vor Schedule (12 Hacks) | autonom |
+| `/content woche` | Sanity-Check vor Schedule (12 Hacks) | autonom |
 | `/produkt` | MAGIC-Naming + Strangely Familiar + Value Equation | autonom |
 | `/salespage` | 12-Block-Long-Form-Struktur + alle Persuasion Hacks | autonom |
 | `/funnel` Mode 3 | **delegiert die Ad-Copy explizit an `/hormozi` Modus 7** (Strategie bleibt bei Julia/Funnel) | Hand-Off |

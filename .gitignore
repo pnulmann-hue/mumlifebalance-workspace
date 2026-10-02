@@ -22,6 +22,13 @@ outputs/finanzen/**/*.csv
 outputs/finanzen/**/*.pdf
 outputs/finanzen/**/*-raw.json
 
+# Steuer-Export: ganzer Ordner raus, nicht nur die PDFs. Darin stehen
+# Rechnungsadresse, MwSt-Nummer und Umsatz je Produkt. Das Repo ist oeffentlich.
+# 🚨 Gefunden am 24.09.2026: die PDFs waren ueber **/*.pdf schon draussen, das
+# ZIP und die Uebersicht.md aber nicht — und genau die tragen die Zahlen.
+outputs/finanzen/steuer-*/
+outputs/finanzen/steuer-*.zip
+
 # ============================================================
 # Claude Code Local Settings (User-spezifisch)
 # ============================================================
@@ -348,6 +355,12 @@ context/content-assets-sichtung.md
 
 # Cockpit-Datenabgleich: Listen, Automationen, Umsatz — bleibt lokal
 outputs/cockpit/abgleich/
+# Roher Abzug der Cockpit-Datenbank (scripts/cockpit/inhalte-sichern.py).
+# 🚨 Enthaelt daten/doterra.json mit echten Teamnamen und Umsaetzen,
+# dazu Mail-Inhalte und Telegram-Einladungslinks. Das Repo ist oeffentlich.
+# Die lesbare Fassung der BEITRAEGE liegt in outputs/content/KW38/cockpit-*.md
+# und ist unbedenklich — das ist Content, der ohnehin auf Instagram geht.
+outputs/cockpit/inhalte-roh/
 
 # doTERRA-Backoffice-Berichte: echte Namen und Umsaetze — bleibt lokal
 context/doterra/backoffice/
@@ -370,3 +383,40 @@ outputs/salespage-designs/
 scripts/activecampaign-mcp/doterra-kunden.json
 scripts/**/kunden*.json
 scripts/**/kontakte*.json
+
+# --- TEMPORAER bis das Repo privat ist (14.09.2026) ---
+# Der Hook-Skill enthaelt zugekauftes Kursmaterial (80 Kalender-Formeln,
+# 50 Vorlagen, 10 Reveal-Frameworks). Solange das Repo oeffentlich ist,
+# bleibt er lokal. Sobald privat: diese drei Zeilen wieder entfernen.
+.claude/skills/hooks/SKILL.md
+
+# Der Facebook-Ads-Skill (/facebook-ads) baut auf Kevin Fiedlers gekauftem
+# Kurs "Facebook Ads Lab" auf (4S-Copy-Formel, Entscheidungstabelle,
+# Skalier-System). Fremde Methodik -> bleibt lokal, solange Repo public.
+# Keine Weitergabe-Anleitung (wie bei den 7 zugekauften Skills).
+.claude/skills/facebook-ads/
+
+# ============================================================
+# Nachbau-Workflow (/nachbau) — fremde Reels zum Analysieren
+# Repo ist PUBLIC: heruntergeladene Fremdvideos, Standbilder und Transkripte
+# bleiben strikt lokal. Nur das Briefing fuer Patricias eigenes Material
+# darf spaeter nach outputs/.
+# ============================================================
+nachbau/**
+
+# /strategie — Business-Strategie bleibt lokal (Repo ist public)
+outputs/strategie/
+# Julias Roadmap-Wissen im Strategie-Skill — zugekauftes Material, Repo ist public
+.claude/skills/strategie/wissen/
+
+# Mail-Sortierung: Absender und Betreffzeilen fremder Leute
+outputs/mail-sortieren/
+
+# Copywriting-Skill (zugekauft, 02.10.2026) — Fremdmaterial, Repo ist public.
+# Original liegt in reference/copywriting-original/ (aus dem ZIP).
+reference/copywriting-original/
+.claude/skills/copywriting/
+
+# Archivierte zugekaufte Skills (02.10.2026) — Fremdmaterial, nie ins öffentliche Repo.
+reference/_archiv-skills/content-master/
+reference/_archiv-skills/werbeanzeigentext-master/

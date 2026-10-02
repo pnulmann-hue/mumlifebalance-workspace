@@ -8,6 +8,7 @@ tags: [brand, voice, patricia]
 > Quelle: Coaching-Interview 2026-05-04/05 mit Patricia direkt (35 Fragen über 5 Blöcke + Bonus). Vertieft 2026-05-09 (Tiefen-Interview Block A-I, +30 Fragen).
 > Letzte Aktualisierung: 2026-05-09.
 > 🔄 **Seit 02.10.2026 läuft ein Nach-Interview:** `patricia-interview-2026-10.md`. Wo es diesem Profil widerspricht, gilt das neuere.
+> 🚨 **„Vierstellig" (pro Monat, Mentoring oder doTERRA) gilt NICHT mehr** — steht unten noch an mehreren Stellen (Status quo, Hooks, Beweis-Linien). In keinem Text verwenden. Ausserhalb von Launches kommt das Einkommen derzeit aus doTERRA, aus dem Mentoring nichts (Interview A1b, 02.10.2026).
 
 ---
 
@@ -215,6 +216,7 @@ Letzte Krisen:
 - **Wellness mit Tochter** · E-Mail kommt rein · Zahlungseingang · jemand hatte über Insta-Profil einfach gekauft · *„mega puff"* · heute Realität, manchmal kaum fassbar
 
 ### Status quo (Mai 2026)
+- ⛔ **Überholt (Interview A1b, 02.10.2026):** die zwei Zeilen „vierstellig“ hier drunter stimmen für einen normalen Monat nicht mehr. Mentoring-Umsatz nur bei Launches.
 - **Vierstellig pro Monat** aus Mentoring (regelmäßig — Jan/Feb 2026 ~1'150 CHF/Monat aus Insta-Kundenmaschine)
 - **Vierstellig pro Monat** aus doTERRA (regelmäßig — bis zu 1'000 CHF/Monat in Spitzenmonaten)
 - *„Es gibt keinen Monat mehr, wo ich nicht verkaufe"* ← **definitive Brand-Linie**
@@ -255,7 +257,7 @@ Letzte Krisen:
 ### KI-Mitarbeiter
 
 **Slash-Command-Assistenten** (Claude Code intern):
-`/story` · `/funnel` · `/montag` · `/freitag-hooks` · `/reels` · `/karussell` · `/produkt` · `/salespage` · `/wp` · `/mealplan` · `/garten` · `/freebies-sync` · `/kurse-sync`
+`/story` · `/funnel` · `/montag` · `/freitag-hooks` · `/reels` · `/karussell` · `/produkt` · `/copywriting` · `/wp` · `/mealplan` · `/garten` · `/freebies-sync` · `/kurse-sync`
 
 **Persönliche Telegram-Bots:**
 - Kochassistent

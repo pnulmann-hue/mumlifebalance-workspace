@@ -30,7 +30,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 *Zuerst, weil veraltete Fakten sofort in falschen Texten landen.*
 
 - ✅ A1 „Kein Monat ohne Verkauf" — stimmt die Linie noch, und was zählt dazu?
-- ⬜ A1b „Vierstellig pro Monat" — stimmt das noch, und wie viel bleibt in einem normalen Monat ohne Launch (Mentoring und doTERRA getrennt)?
+- ✅ A1b „Vierstellig pro Monat" — stimmt das noch, und wie viel bleibt in einem normalen Monat ohne Launch (Mentoring und doTERRA getrennt)?
 - ⬜ A2 Was hat sich seit Mai in deinem Alltag und deiner Familie verändert (Morgen, Training, Kinder, Schule)?
 - ⬜ A3 Wie geht es deiner Mama, und was davon darf in den Content?
 - ⬜ A4 Verwaltungsrat: noch dabei oder abgegeben?
@@ -126,3 +126,13 @@ Vielleicht wäre es besser zu sagen ‚Kein Monat mehr ohne Einkommen aus der Se
 
 **Übertragen nach:** `patricia-vollprofil.md` (Wortschatz) · `.claude/skills/copywriting/BRAND-VOICE.md`
 (Sperre aufgehoben) · `CLAUDE.md`.
+
+### A1b · Normaler Monat ohne Launch · 02.10.2026
+
+🔒 Zahlen intern in `context/persoenlich/interview-intern.md`.
+
+**Festgehalten (öffentlich unbedenklich):**
+- Ausserhalb von Launches kommt das laufende Einkommen aus doTERRA, aus dem Mentoring
+  derzeit nichts.
+- 🚨 **„Vierstellig pro Monat" nicht mehr verwenden** — weder für Mentoring noch für doTERRA.
+- Das ist der Sockel, den `/strategie` misst: Mentoring-Umsatz entsteht heute nur im Launch.

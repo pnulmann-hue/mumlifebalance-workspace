@@ -30,3 +30,16 @@ Der Rhythmus ist jetzt ein Parameter: `/content woche` oder `/content monat`.
 ersetzt durch **`outputs/_bild-editor/`**, der dasselbe kann und zusätzlich Story-Format,
 Karussell-Folien, Textbalken mit Brandfarbe und Sticker-Zonen beherrscht. Beide teilen
 sich dieselbe Artifact-Adresse, es gibt also nur einen Editor.
+
+---
+
+## Abgelöst am 02.10.2026 — durch `/copywriting`
+
+| Archiviert | Warum |
+|---|---|
+| `salespage` | `/copywriting` schreibt Verkaufsseiten mit Briefing-Check, Bewusstseinsstufe und Anti-KI-Prüfung |
+| `hormozi` | Überarbeiten läuft über die Prüf-Layer von `/copywriting`; die Hormozi-Bibel bleibt in `reference/hormozi/` |
+| `content-master` | zugekauft, überschnitt sich mit `/content` und `/copywriting` — **gitignored** |
+| `werbeanzeigentext-master` | zugekauft, Anzeigentexte macht `/copywriting` — **gitignored** |
+
+Patricia: *„mir ist es einfach wichtig, dass wir eine saubere skillablage haben.“* Je Auftrag genau ein Skill — die Tabelle dazu steht in CLAUDE.md unter „Welcher Skill für welchen Auftrag“.
