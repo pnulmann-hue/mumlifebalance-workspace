@@ -29,7 +29,8 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 ### Block A — Was seit Mai nicht mehr stimmt
 *Zuerst, weil veraltete Fakten sofort in falschen Texten landen.*
 
-- ⬜ A1 „Kein Monat ohne Verkauf" — stimmt die Linie noch, und was zählt dazu?
+- ✅ A1 „Kein Monat ohne Verkauf" — stimmt die Linie noch, und was zählt dazu?
+- ⬜ A1b „Vierstellig pro Monat" — stimmt das noch, und wie viel bleibt in einem normalen Monat ohne Launch (Mentoring und doTERRA getrennt)?
 - ⬜ A2 Was hat sich seit Mai in deinem Alltag und deiner Familie verändert (Morgen, Training, Kinder, Schule)?
 - ⬜ A3 Wie geht es deiner Mama, und was davon darf in den Content?
 - ⬜ A4 Verwaltungsrat: noch dabei oder abgegeben?
@@ -110,3 +111,18 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 ## Antworten
 
 *(neueste unten)*
+
+### A1 · „Kein Monat ohne Verkauf" · 02.10.2026
+
+**Wortlaut:** *„Ja der Satz stimmt für mich so noch. Weil doTERRA halt auch mit rein spielt.
+Vielleicht wäre es besser zu sagen ‚Kein Monat mehr ohne Einkommen aus der Selbständigkeit‘."*
+
+**Festgehalten:**
+- Die Linie stimmt, weil doTERRA mitzählt. Monate ohne Kursumsatz (Juni 2026: CHF 0 in
+  ThriveCart) widerlegen sie nicht.
+- **Bevorzugte Fassung:** *„Seit Mai 2025 gibt es keinen Monat mehr ohne Einkommen aus meiner
+  Selbständigkeit."*
+- 🚨 Nie so formulieren, als käme das Einkommen allein aus Kursen oder Mentoring.
+
+**Übertragen nach:** `patricia-vollprofil.md` (Wortschatz) · `.claude/skills/copywriting/BRAND-VOICE.md`
+(Sperre aufgehoben) · `CLAUDE.md`.

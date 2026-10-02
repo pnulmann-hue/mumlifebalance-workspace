@@ -385,7 +385,7 @@ Patricia-Sammelbegriff für 7 Sub-Typen, die **alle** auf sie nicht passen:
 - *„mega puff"* (überrumpelt)
 - *„das Leben aussaugen"* / *„Leben spüren"* (Mai-9-Vertiefung)
 - *„Wollmilchsau"* (sich selbst beschreibend)
-- *„kein Monat ohne Verkauf"*
+- *„kein Monat ohne Verkauf"* → **bevorzugt seit 02.10.2026:** *„kein Monat mehr ohne Einkommen aus meiner Selbständigkeit"* (doTERRA zählt mit; nie so tun, als käme alles aus Kursen — Interview A1)
 - *„Ich lass niemals los"*
 - *„Holz anlangen"* (Schweizer Aberglaube)
 - *„Nichts-Veränderin"* (Repel-Begriff)
