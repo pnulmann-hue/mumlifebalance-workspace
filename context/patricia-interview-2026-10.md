@@ -31,7 +31,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 
 - ✅ A1 „Kein Monat ohne Verkauf" — stimmt die Linie noch, und was zählt dazu?
 - ✅ A1b „Vierstellig pro Monat" — stimmt das noch, und wie viel bleibt in einem normalen Monat ohne Launch (Mentoring und doTERRA getrennt)?
-- ⬜ A2 Was hat sich seit Mai in deinem Alltag und deiner Familie verändert (Morgen, Training, Kinder, Schule)?
+- ✅ A2 Was hat sich seit Mai in deinem Alltag und deiner Familie verändert (Morgen, Training, Kinder, Schule)?
 - ⬜ A3 Wie geht es deiner Mama, und was davon darf in den Content?
 - ⬜ A4 Verwaltungsrat: noch dabei oder abgegeben?
 - ⬜ A5 Das Coaching für 3'500 — läuft es noch, was hat es gebracht?
@@ -136,3 +136,18 @@ Vielleicht wäre es besser zu sagen ‚Kein Monat mehr ohne Einkommen aus der Se
   derzeit nichts.
 - 🚨 **„Vierstellig pro Monat" nicht mehr verwenden** — weder für Mentoring noch für doTERRA.
 - Das ist der Sockel, den `/strategie` misst: Mentoring-Umsatz entsteht heute nur im Launch.
+
+### A2 · Was sich im Alltag verändert hat · 02.10.2026
+
+**Wortlaut (Tag):** *„Ich arbeite nach wie vor vorwiegend vormittags ca. 3 stunden. aber ich
+gebe vor und nach. weil neu ist es so, dass die kids montag, dienstag, donnerstag auch am
+nachmittag weg sind. aber am dienstag nehme ich mir nach wie vor frei am nachmittag."*
+
+**Festgehalten:**
+- **Kernzeit** bleibt der Vormittag, rund 3 Stunden.
+- **Neu:** Montag, Dienstag und Donnerstag sind die Kinder auch nachmittags weg. Mo und Do
+  sind damit zusätzliche Arbeitsnachmittage; **Dienstagnachmittag bleibt bewusst frei**.
+  Mittwoch- und Freitagnachmittag sind die Kinder zu Hause.
+- **Abende und Wochenende** unverändert: Samstag Erledigungen, Sonntag Wandern.
+- 🔒 **Kinder:** Ein Kind steht vor der Berufswahl. Patricia will darüber nicht im Detail
+  reden → **kein Content-Thema**, keine Nachfragen im Interview.
