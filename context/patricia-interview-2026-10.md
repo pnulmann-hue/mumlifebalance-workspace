@@ -43,7 +43,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 ### Block B — Deine Stimme im Detail
 - ✅ B1 Welcher Text, den ich dir geschrieben habe, war am meisten „du"? Und welcher am wenigsten?
 - ✅ B2 Woran merkst du in einer Zeile sofort, dass sie nicht von dir ist?
-- ⬜ B3 Welche Wörter und Ausdrücke sagst du ständig (auch Mundart)?
+- ✅ B3 Welche Wörter und Ausdrücke sagst du ständig (auch Mundart)?
 - ⬜ B4 Welche Wörter würdest du nie sagen, obwohl sie „normal" klingen?
 - ⬜ B5 Wie fluchst, lobst und lachst du in Texten? Wie viel darf rein?
 - ⬜ B6 Wie redest du mit einer Freundin, die gerade jammert?
@@ -347,5 +347,23 @@ brauchst"* · übrige → *„rest passt"*
   `brand-voice.md`, Copywriting-Skill, Vollprofil und Gedächtnis. Schweizer Hochdeutsch, das
   sie selbst schreibt (*innert*), bleibt.
 - ✅ Bestätigt: dröhnen · Wollmilchsau · Tunnel-Modus · das Leben aussaugen · Holz anlangen.
+
+### B3c · Ihre Wörter auf Hochdeutsch · 02.10.2026
+
+**Wortlaut:** *„oh mein gott wie geil ist das denn? mega, krass, cool, scheisse...wie geil.
+Dieser Bullshit, was für ein Scheiss, das kotzt mich echt an, dieser Dreck, wtf, versteh dich
+total, kenn ich, geht mir auch so, ich weiss jetzt ist es schwer aber irgendwann wirst du
+zurückblicken und dir dafür danken, dass du drangeblieben bist, hab keinen festen gruss"*
+
+| Lage | Ihre Wörter |
+|---|---|
+| **Freude** | „Oh mein Gott, wie geil ist das denn?" · mega · krass · cool · „scheisse … wie geil" (als Verstärker der Freude) |
+| **Ärger** | „Dieser Bullshit" · „Was für ein Scheiss" · „Das kotzt mich echt an" · „Dieser Dreck" · „wtf" |
+| **Aufmuntern** | „Versteh dich total" · „Kenn ich" · „Geht mir auch so" · *„Ich weiss, jetzt ist es schwer, aber irgendwann wirst du zurückblicken und dir dafür danken, dass du drangeblieben bist."* |
+| **Gruss** | kein fester — jedes Mal anders, passend zum Text (z.B. „Mit ganz viel Persönlichkeit") |
+
+⚠️ **Konflikt:** `brand-voice.md` (Julia-Sync, 30.09.) führt „scheiss" unter *derb — nicht
+übernehmen*. Patricia sagt Scheisse/Bullshit/kotzt mich an im Alltag. Regel **nicht**
+geändert → Rückfrage B5 (wie viel davon in Texte darf).
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.

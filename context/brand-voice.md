@@ -125,6 +125,12 @@ oder Klientin sagen, die ihr gegenübersitzt?**
   (Menuplan mit Einkaufsliste).
 - **Humor, Sarkasmus, Ironie** — *„das bin ich"* (B1b). Nicht nur Selbstironie.
 
+**Ihre Wörter je Lage (Interview B3c, 02.10.2026, ihr Wortlaut):**
+- **Freude:** „Oh mein Gott, wie geil ist das denn?" · mega · krass · cool
+- **Aufmuntern:** „Versteh dich total" · „Kenn ich" · „Geht mir auch so" · *„Ich weiss, jetzt ist es schwer, aber irgendwann wirst du zurückblicken und dir dafür danken, dass du drangeblieben bist."*
+- **Ärger:** „Dieser Bullshit" · „Das kotzt mich echt an" · „Was für ein Scheiss" · „wtf" — ⚠️ wie viel davon geschrieben werden darf, klärt Interview B5
+- **Gruss:** kein fester, jedes Mal passend zum Text — nie denselben Gruss wiederholen
+
 **Freundinnen-Test (Interview B2, 02.10.2026)** — so redet sie, so nicht:
 - ✅ *„Ich sag dir ehrlich, ich hab das zwei Jahre lang auch falsch gemacht …"* — eigene Fehler offen zugeben
 - ✅ *„Weisst du, was mich am meisten nervt? Wenn mir jemand sagt …"* — Ärger über konkrete Ratschläge
