@@ -37,7 +37,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ A4b Wie viel Zeit kosten Verwaltungsrat und Geschäftsleitung, und darf das in den Content?
 - ✅ A5 Das Coaching für 3'500 — läuft es noch, was hat es gebracht?
 - ✅ A6 Wie viele Kundinnen begleitest du heute wirklich (Mentees, Mitgliedschaft, 1:1)?
-- ⬜ A7 Wie viele Stunden arbeitest du heute pro Woche — und wann?
+- ✅ A7 Wie viele Stunden arbeitest du heute pro Woche — und wann?
 - ⬜ A8 Wie sieht dein Mann das Business heute?
 
 ### Block B — Deine Stimme im Detail
@@ -226,5 +226,13 @@ die telegramgruppen laufen da immer noch und dann wären es genau genommen 8"*
 - **Mitgliedschaft:** gibt es noch, aber **nur als Bestandteil der MBA**, nicht als eigenes
   Angebot (Wortlaut: *„ja die mitgliedschaft ist bestandteil bei der mba"*). Die 3
   MBA-Frauen sind damit zugleich die Mitglieder.
+
+### A7 · Wochenstunden · 02.10.2026
+
+**Wortlaut:** *„ja 18 stunden stimmen noch ungefähr."*
+
+**Festgehalten:** *„18 Stunden pro Woche"* bleibt als Linie gültig, auch öffentlich (wird
+seit Mai so verwendet, Patricia hat nicht widersprochen). Dahinter: vormittags rund 3 h,
+dazu Mo- und Do-Nachmittag, bewusst schwankend (A2).
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
