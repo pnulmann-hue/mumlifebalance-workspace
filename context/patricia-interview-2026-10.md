@@ -41,7 +41,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ A8 Wie sieht dein Mann das Business heute?
 
 ### Block B — Deine Stimme im Detail
-- ⬜ B1 Welcher Text, den ich dir geschrieben habe, war am meisten „du"? Und welcher am wenigsten?
+- ✅ B1 Welcher Text, den ich dir geschrieben habe, war am meisten „du"? Und welcher am wenigsten?
 - ⬜ B2 Woran merkst du in einer Zeile sofort, dass sie nicht von dir ist?
 - ⬜ B3 Welche Wörter und Ausdrücke sagst du ständig (auch Mundart)?
 - ⬜ B4 Welche Wörter würdest du nie sagen, obwohl sie „normal" klingen?
@@ -255,5 +255,17 @@ in den content. weil das eigene Business bei vielen belächelt wird"*
 
 **Block A abgeschlossen (02.10.2026).** Übertragen ins Vollprofil, Brand Voice und
 Copywriting-Skill.
+
+### B1 · Ein Text, der ganz „sie" ist · 02.10.2026
+
+**Wortlaut:** *„ich habe den text meines letzten reels selber geschrieben. vielleicht magst du
+es mal anschauen ‚KI auf instagram zerstört die persönlichkeit'"*
+
+**Gefunden:** Mentoring-Reel vom 01.10.2026, https://www.instagram.com/reel/Dd8iZMCorV2/ —
+328 Reichweite (rund 1,9× Median), 2 Likes, 2 Kommentare. Caption im Wortlaut plus Analyse
+liegt jetzt als **Referenztext** in `context/brand-voice.md`.
+
+**Offen:** Welcher von *Claudes* Texten am wenigsten „sie" war — nicht beantwortet, kommt
+bei B2 wieder vor.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.

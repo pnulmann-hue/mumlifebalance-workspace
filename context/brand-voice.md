@@ -78,6 +78,49 @@ Das darf im Text stehen, als Einladung an die Richtigen, mit „geh zu jemand an
 - *„Nicht gut oder schlecht. Einfach Fakt! 🤷‍♀️"*
 - *„Heute Morgen am Thermomix, ein Ei nach dem anderen …"* (Post vom 23.09., 435 Reichweite, ihr bester der Woche: Alltag + Tipp + Person)
 
+### 🎯 Referenztext: komplett von ihr selbst geschrieben (Reel 01.10.2026, 328 Reichweite, ~1,9× Median)
+
+Patricia hat ihn im Interview (B1, 02.10.2026) selbst als Beispiel genannt. **Wer ihre Stimme
+treffen will, liest diesen Text zuerst.** Wortlaut, nichts korrigiert:
+
+> Ich stimme jedem zu der sagt, dass die KI die Persönlichkeit zerstört.
+>
+> Faceless Accounts ohne Ende, KI generierte Videos und Bilder, die man von der Wirklichkeit nicht mehr unterscheiden kann. Ich bin auch ein Gegner davon.
+>
+> Und trotzdem brauche ich KI jeden Tag!
+>
+> Aber für Dinge, die meine Persönlichkeit nicht tangiert. Z.B kann ich mit meinen KI Assistenten folgendes machen:
+>
+> - Landingpages für Freebies und Angebote innert Sekunden. Der Inhalt kommt von mir. Den habe ich per Sprachmemo stundenweise eingesprochen.😅
+> - Visuals für Reelcover, Karussells usw. Das Rumgefummel auf Canva nervt mich und kostet mich Zeit ohne Ende
+> - Meine Sprechreels und B-Rolls schneidet die KI. Wie schon gesagt...das Rumgefummel mag ich nicht😅
+> - Meinen Menuplan jede Woche erstellt mir die KI mit meinen Rezepten inkl. Einkaufsliste. Ja, auch für private Belange solltest du als Mama-Unternehmerin an KI denken.
+>
+> Und DAS Ladys ist nur ein kleiner bescheidener Teil.
+>
+> Die KI ist kein Bösewicht. Die KI sorgt dafür, dass ich Zeit habe, neben meinem Business für die Kids da zu sein, keine Agenturen einstellen muss und mich auf den Inhalt konzentrieren kann. Die PERSÖNLICHKEIT in meinem Unternehmen.
+>
+> Am 8. Oktober zeige ich dir, was ich mit KI alles mache, wie schnell das geht und warum du aufhören sollst, nur die Caption für deine Beiträge zu schreiben. […]
+>
+> Mit ganz viel Persönlichkeit, Patricia😅
+
+**Was daran typisch sie ist** (abgelesen, noch von ihr zu bestätigen — Interview B1):
+- **Einstieg mit Zustimmung statt Widerspruch:** Sie stellt sich zuerst auf die Seite der
+  Skeptikerin („Ich stimme jedem zu …", „Ich bin auch ein Gegner davon") und dreht erst dann.
+  Kein „Viele denken X, aber …"-Schema.
+- **Ehrliche Abneigungen als Begründung:** „Das Rumgefummel … nervt mich", „mag ich nicht" —
+  sie nutzt KI nicht, weil es modern ist, sondern weil sie etwas nicht gern macht.
+- **Callback-Humor:** „Wie schon gesagt … das Rumgefummel" und der Gruss „Mit ganz viel
+  Persönlichkeit" greifen das eigene Thema wieder auf.
+- **Wörter von ihr:** *Rumgefummel · ohne Ende · innert (Sekunden) · tangiert · Ladys ·
+  kleiner bescheidener Teil · Bösewicht*.
+- **Grossbuchstaben für ein einzelnes Wort** als Betonung (DAS, PERSÖNLICHKEIT) — erlaubt, sparsam.
+- **😅 als Selbstironie**, dreimal im Text, immer nach einem Eingeständnis.
+- **Konkrete Liste aus dem eigenen Alltag** statt abstrakter Vorteile, inklusive Privatem
+  (Menuplan mit Einkaufsliste).
+- **Nicht geglättet:** kleine Unebenheiten (fehlendes Komma, „Z.B", Singular bei „die … nicht
+  tangiert") gehören zum Ton. In ihren eigenen Texten nicht korrigieren, ohne zu fragen.
+
 ### Die Regeln
 
 1. **Zeigen, nicht behaupten.** „Folg mir, wenn du Klartext statt Bla willst" behauptet etwas. Eine Caption ohne Bla zeigt es. Eigenschaften nie als Adjektiv über sich selbst schreiben.
