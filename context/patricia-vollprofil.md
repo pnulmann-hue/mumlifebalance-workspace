@@ -7,6 +7,7 @@ tags: [brand, voice, patricia]
 > **Pflicht-Lese vor jedem Customer-Output** (Stories, Karussells, Reels, Captions, Sales-Pages, DMs, Newsletter, Workbooks).
 > Quelle: Coaching-Interview 2026-05-04/05 mit Patricia direkt (35 Fragen über 5 Blöcke + Bonus). Vertieft 2026-05-09 (Tiefen-Interview Block A-I, +30 Fragen).
 > Letzte Aktualisierung: 2026-05-09.
+> 🔄 **Seit 02.10.2026 läuft ein Nach-Interview:** `patricia-interview-2026-10.md`. Wo es diesem Profil widerspricht, gilt das neuere.
 
 ---
 
