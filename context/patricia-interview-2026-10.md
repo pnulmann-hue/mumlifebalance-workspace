@@ -50,7 +50,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ B7 Wie klingst du, wenn du verkaufst — und wie willst du klingen?
 - ✅ B8 Emojis, Ausrufezeichen, Grossbuchstaben: was ja, was nie?
 - ✅ B9 Gibt es Creator, deren Ton dir gefällt? Was genau daran?
-- ⬜ B10 Schick mir 3 Texte, die du komplett selbst geschrieben hast und gut findest.
+- ⏭ B10 Schick mir 3 Texte, die du komplett selbst geschrieben hast und gut findest.
 
 ### Block C — Deine Meinungen (Haltung, Hot Takes)
 - ⬜ C1 Was regt dich in der Network-Branche am meisten auf?
@@ -428,5 +428,14 @@ Was genau sie an beiden mag → Rückfrage B9b.
 **B9b, Wortlaut:** *„humor, direktheit, wie sie verkaufen"* → Das sind die drei Dinge, die sie
 an beiden übernimmt. Passt zu B5 (derber schreiben), B7 (Verkauf ist Verkauf) und B1b (Humor,
 Sarkasmus, Ironie).
+
+### B10 · weitere eigene Texte — übersprungen (*„nein"*)
+
+---
+
+**Block B abgeschlossen (02.10.2026).** `wissen-bauen.py` zieht seitdem auch den Abschnitt
+„Persönlichkeit zeigen" aus `brand-voice.md` (vorher fehlte er — Referenztext,
+Freundinnen-Test, derbe Wörter und Verkaufston kamen nie im Cockpit an). Neu gebaut
+(199 KB) und als `daten/wissen-voll` Version 8 in **Cockpit und Bild-Editor** geschrieben.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
