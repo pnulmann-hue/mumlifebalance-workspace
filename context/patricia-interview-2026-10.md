@@ -222,7 +222,9 @@ die telegramgruppen laufen da immer noch und dann wären es genau genommen 8"*
 - **3 Frauen in der MBA** (mit Begleitung).
 - Die übrigen Kurse sind ohne Begleitung gebaut; über die **noch laufenden Telegram-Gruppen**
   sind es insgesamt **8 Frauen**, mit denen sie aktuell in Kontakt ist.
-- 🔄 Die Mai-Zahl „7 Mentees · 3 in der Mitgliedschaft" ist überholt. Ob es die
-  Mitgliedschaft noch gibt, ist offen.
+- 🔄 Die Mai-Zahl „7 Mentees · 3 in der Mitgliedschaft" ist überholt.
+- **Mitgliedschaft:** gibt es noch, aber **nur als Bestandteil der MBA**, nicht als eigenes
+  Angebot (Wortlaut: *„ja die mitgliedschaft ist bestandteil bei der mba"*). Die 3
+  MBA-Frauen sind damit zugleich die Mitglieder.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
