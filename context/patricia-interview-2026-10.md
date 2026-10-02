@@ -42,7 +42,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 
 ### Block B — Deine Stimme im Detail
 - ✅ B1 Welcher Text, den ich dir geschrieben habe, war am meisten „du"? Und welcher am wenigsten?
-- ⬜ B2 Woran merkst du in einer Zeile sofort, dass sie nicht von dir ist?
+- ✅ B2 Woran merkst du in einer Zeile sofort, dass sie nicht von dir ist?
 - ⬜ B3 Welche Wörter und Ausdrücke sagst du ständig (auch Mundart)?
 - ⬜ B4 Welche Wörter würdest du nie sagen, obwohl sie „normal" klingen?
 - ⬜ B5 Wie fluchst, lobst und lachst du in Texten? Wie viel darf rein?
@@ -279,5 +279,30 @@ oder einem klienten reden würde."*
 - Punkte 2–7 hat sie nicht kommentiert → gelten vorerst (Schweigen = passt).
 - **Ihr Massstab** steht jetzt als Prüffrage über der Analyse in `brand-voice.md`.
 - Offen: ob „Ladys" ein Wort für Claude ist → nicht verwenden, bis sie es freigibt.
+- Zu Punkt 3 (Callback-Humor) nachgeschoben: *„ja. humor, sarkasmus, ironie. das bin ich"*.
+
+### B2 · Der Freundinnen-Test (7 Sätze) · 02.10.2026
+
+| # | Satz | Urteil | Wortlaut |
+|---|---|---|---|
+| 1 | „Stell dir vor, du wachst morgen auf …" | ~ | *„ich würde wahrscheinlich eher sagen im 1:1 Gehen wir mal davon aus oder angenommen"* |
+| 2 | „Kein Plan. Kein System. Kein Umsatz." | ~/❌ | *„hmm weniger"* |
+| 3 | „Hier ist die unbequeme Wahrheit: …" | — | nicht beantwortet |
+| 4 | „Ich sag dir ehrlich, ich hab das zwei Jahre lang auch falsch gemacht …" | ✅ | *„das auf jeden fall"* |
+| 5 | „Die meisten Networkerinnen scheitern nicht am Wissen, sondern an der Umsetzung." | ✅ | *„yepp"* |
+| 6 | „Lass uns gemeinsam auf diese Reise gehen." | ❌ | *„zu geschwollen"* |
+| 7 | „Weisst du, was mich am meisten nervt? Wenn mir jemand sagt …" | ✅ | *„ja"* |
+
+**Festgehalten:**
+- **Humor, Sarkasmus, Ironie** sind ausdrücklich ihr Ton — nicht nur Selbstironie.
+- **Statt „Stell dir vor": „Gehen wir mal davon aus …" / „Angenommen …"** — ihre eigene
+  Formulierung für Gedankenspiele.
+- **Stakkato-Dreier** passen kaum zu ihr (bestätigt die Blackliste).
+- **Geschwollenes** (Reise, gemeinsam aufbrechen) fällt durch.
+- **Was trägt:** eigene Fehler offen zugeben, „Ich sag dir ehrlich", Ärger über konkrete
+  Ratschläge („Weisst du, was mich am meisten nervt?").
+- ⚠️ **Konflikt mit der Blackliste:** Satz 5 ist ein Nicht/Sondern-Konstrukt, das
+  `ki-phrasen-blackliste.md` in jeder Variante verbietet — Patricia würde ihn so sagen.
+  Blackliste **nicht** geändert, Rückfrage B2b.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.

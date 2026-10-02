@@ -122,6 +122,14 @@ oder Klientin sagen, die ihr gegenübersitzt?**
 - **😅 als Selbstironie**, dreimal im Text, immer nach einem Eingeständnis.
 - **Konkrete Liste aus dem eigenen Alltag** statt abstrakter Vorteile, inklusive Privatem
   (Menuplan mit Einkaufsliste).
+- **Humor, Sarkasmus, Ironie** — *„das bin ich"* (B1b). Nicht nur Selbstironie.
+
+**Freundinnen-Test (Interview B2, 02.10.2026)** — so redet sie, so nicht:
+- ✅ *„Ich sag dir ehrlich, ich hab das zwei Jahre lang auch falsch gemacht …"* — eigene Fehler offen zugeben
+- ✅ *„Weisst du, was mich am meisten nervt? Wenn mir jemand sagt …"* — Ärger über konkrete Ratschläge
+- ~ Statt *„Stell dir vor …"* sagt sie **„Gehen wir mal davon aus …"** oder **„Angenommen …"**
+- ~ Stakkato-Dreier (*„Kein Plan. Kein System. Kein Umsatz."*) — *„hmm weniger"*
+- ❌ *„Lass uns gemeinsam auf diese Reise gehen."* — *„zu geschwollen"*
 - **Nicht geglättet:** kleine Unebenheiten (fehlendes Komma, „Z.B", Singular bei „die … nicht
   tangiert") gehören zum Ton. In ihren eigenen Texten nicht korrigieren, ohne zu fragen.
 
