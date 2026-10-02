@@ -55,8 +55,8 @@ Deploy: `deploy-stimm-check-lp.mjs` (Landingpage, baut über `scripts/salespage-
 | Strecke | Mail | Wann |
 |---|---|---|
 | Newsletter an alle | N1 Einladung „Warum deine KI-Texte nach niemandem klingen“ | Di 29.9. 07:00 |
-| Newsletter an alle | N2 „Was passt bei dir in 18 Stunden die Woche?“ (Kochbot, Beweis) | Do 1.10. 07:00 · ohne Tag 100 |
-| Newsletter an alle | N3 „Welcher Prompt war das nochmal?“ (Einwand Technik, letzte Einladung) | Di 6.10. 07:00 · ohne Tag 100 |
+| Newsletter an alle | N2 „Was würdest du als Erstes abgeben?“ (Menüplanung, Haushalt, CEO der Familie) — überarbeitet 02.10. | **Mo 5.10. 07:00** · ohne Tag 100, ohne doTERRA-Listen |
+| Newsletter an alle | N3 „Welcher Prompt war das nochmal?“ (altes ChatGPT-Chaos, Einwand Technik, letzte Einladung) — überarbeitet 02.10. | **Mi 7.10. 07:00** · ohne Tag 100, ohne doTERRA-Listen |
 | **0€ KI Webinar** | M1 Bestätigung + Zoom · M2 „Morgen um neun“ · M3 „Wir sind gleich live“ | sofort · Mi 7.10. 19:00 · Do 8.10. 08:55 |
 | | M4 Aufzeichnung + Angebot · M5 18 Stunden (Beweis) · M6 FAQ + Bonus endet | Do 16:00 · Fr 9.10. 07:00 · Sa 10.10. 07:00 |
 | **0€ Stimmcheck** | **Wenn/Dann gleich nach dem Auslöser: Datum vor 8.10.?** | |
