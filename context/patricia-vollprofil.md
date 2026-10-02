@@ -81,7 +81,7 @@ tags: [brand, voice, patricia]
 
 Letzte Krisen:
 1. **Hormonchaos vor 1 Jahr** (Haarausfall, schlaflose Nächte) → diagnostizieren + Hilfe holen + ändern → Wendepunkt-Story (siehe `context/doterra/patricia-wendepunkt-story.md` + Section 12.1 unten für Convention-Szene)
-2. **Verwaltungsratsmandat aktuell** (zu schnell Ja gesagt wegen Personalmangel) → ändert es, egal wem es nicht passt, wenn's dem Wohlbefinden dient
+2. **Frühere Aufgaben, vor allem politische** — Mitarbeit in diversen Kommissionen (zu schnell Ja gesagt wegen Personalmangel) → abgegeben, egal wem es nicht passte, weil es dem Wohlbefinden dient. 🔄 *Korrigiert 02.10.2026 (Interview A4): Es ging NICHT um das Verwaltungsratsmandat. Das läuft weiter — sie ist im Verwaltungsrat **und in der Geschäftsleitung** des Elektrizitätsunternehmens.*
 
 ### Familienkonstellation Herkunft (Mai-9)
 - **Mama:** versteht Patricias Business ✓ (eine echte Stütze). **77 Jahre alt. Glaube trocken (nach Alkoholismus in Patricias Kindheit, siehe 12.11.4). Gesundheitlich aktuell sehr angeschlagen — geht seit Corona (~2020) nicht mehr aus dem Haus. KW 19/2026: 3× im Spital diese Woche, Krebs-Verdacht. AKUTE Familienlast.** 🔒 INTERN bleibt — nicht in Customer-Outputs.
@@ -196,7 +196,7 @@ Letzte Krisen:
 ### Karriere-Vorgeschichte
 - Sachbearbeiterin (meistens), zwischendurch **Leiterin Vormundschaftsbehörde / Sozialamt**
 - Mama-Phase parallel: 10 Klienten als private Mandatsträgerin (Buchhaltung + Administration) · Sozialbegleiterin · 4 Jahre Gemeinderätin · Verwaltungsrätin Elektrizitätsunternehmen (NOCH AKTIV) · Bibliothek
-- 2023 Cut: **alles abgegeben außer Verwaltungsrat**
+- 2023 Cut: **alles abgegeben außer Verwaltungsrat** (Stand Okt. 2026: weiter im Verwaltungsrat **und in der Geschäftsleitung**; politische Kommissionsarbeit inzwischen abgegeben)
 - Multi-Job-Mama-Frust: **„Ich konnte mit 4 Kindern nicht regulär arbeiten gehen — die Kinderbetreuung kostete mehr als mein Lohn"**
 
 ### Erstes Angebot (Gründung)
