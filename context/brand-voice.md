@@ -160,7 +160,9 @@ oder Klientin sagen, die ihr gegenübersitzt?**
 - Direkte Ansprache: "du" (nicht "Sie")
 - **Echte Umlaute: ä, ö, ü** (NICHT ä/ö/ü). Schweizer Deutsch: meist "ss" statt "ß" (z.B. "grüsse", "Strasse").
 - Kurze Sätze. Klare Aussagen. Kein Geschwafel.
-- Emojis sparsam — max 3-5 pro Caption, nicht in jeder Zeile
+- Emojis sparsam — max 3-5 pro Caption, nicht in jeder Zeile. **Ihr Lieblings-Emoji ist 😅** (nach einem Eingeständnis oder Seitenhieb auf sich selbst) — Interview B8
+- **Ausrufezeichen:** normal eines; wo etwas mit Nachdruck betont werden soll, dürfen es **zwei** sein (B8)
+- **Grossbuchstaben für ein Wort** (DAS, PERSÖNLICHKEIT) nur, **wenn es wirklich zählt** — höchstens ein-, zweimal pro Text (B8)
 - Absätze nutzen für Lesbarkeit (Instagram = Mobile)
 - Zahlen und konkrete Beispiele statt vager Versprechen
 

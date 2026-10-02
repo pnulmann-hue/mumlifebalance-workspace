@@ -48,7 +48,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ B5 Wie fluchst, lobst und lachst du in Texten? Wie viel darf rein?
 - ⬜ B6 Wie redest du mit einer Freundin, die gerade jammert?
 - ✅ B7 Wie klingst du, wenn du verkaufst — und wie willst du klingen?
-- ⬜ B8 Emojis, Ausrufezeichen, Grossbuchstaben: was ja, was nie?
+- ✅ B8 Emojis, Ausrufezeichen, Grossbuchstaben: was ja, was nie?
 - ⬜ B9 Gibt es Creator, deren Ton dir gefällt? Was genau daran?
 - ⬜ B10 Schick mir 3 Texte, die du komplett selbst geschrieben hast und gut findest.
 
@@ -404,5 +404,15 @@ unangenehm ist) *„eigentlich nichts. verkauf ist verkauf"* · 3. *„weiss nic
 - **Keine Verkaufsscham** — Verkaufstexte nicht verdruckst oder entschuldigend. Grenze bleibt
   die Wahrheit: keine erfundenen Fristen oder Plätze.
 - Teilfrage 3 war unklar gestellt → fallen gelassen.
+
+### B8 · Schriftbild · 02.10.2026
+
+**Wortlaut:** Emojis *„besonders oft nehme ich das, was du hier verwendet hast"* (😅) ·
+Ausrufezeichen *„wenn etwas mit nachdruck betont werden soll, dürfen es auch 2 sein"* ·
+Grossbuchstaben *„wenn es wirklich zählt"*
+
+**Festgehalten** (in `brand-voice.md`, Schreibregeln): 😅 ist ihr Emoji · Obergrenze 3–5
+Emojis bleibt (nicht widersprochen) · „!!" bei Nachdruck erlaubt · Grossbuchstaben nur, wenn
+es wirklich zählt.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
