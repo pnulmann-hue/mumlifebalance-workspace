@@ -44,7 +44,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ B1 Welcher Text, den ich dir geschrieben habe, war am meisten „du"? Und welcher am wenigsten?
 - ✅ B2 Woran merkst du in einer Zeile sofort, dass sie nicht von dir ist?
 - ✅ B3 Welche Wörter und Ausdrücke sagst du ständig (auch Mundart)?
-- ⬜ B4 Welche Wörter würdest du nie sagen, obwohl sie „normal" klingen?
+- ✅ B4 Welche Wörter würdest du nie sagen, obwohl sie „normal" klingen?
 - ✅ B5 Wie fluchst, lobst und lachst du in Texten? Wie viel darf rein?
 - ⬜ B6 Wie redest du mit einer Freundin, die gerade jammert?
 - ⬜ B7 Wie klingst du, wenn du verkaufst — und wie willst du klingen?
@@ -378,5 +378,20 @@ mega katalog mässig. oder eben KI mässig :-D"*
 - Widerspruch aufgelöst: „scheiss" aus der Derb-Liste in `brand-voice.md` und im
   Copywriting-Skill gestrichen; Hook-Skill von „ein bis zwei" auf „eines" gesetzt; Gedächtnis
   nachgezogen. „Fucking" und „knallt mich jemand" bleiben draussen (nicht ihre Wörter).
+
+### B4 · Wörter-Test (14 Wörter) · 02.10.2026
+
+**Wortlaut:** *„8. und 9 nein,"*
+
+**Festgehalten:**
+- ❌ **„Mädels"** und **„Mamas da draussen"** — nie. In Blackliste (neuer Abschnitt
+  „Anreden") und als Schwere 1 in `texte-pruefen.py` (getestet: schlägt bei beiden an, nicht
+  bei „Ladys"/„Mama-Unternehmerin").
+- ✅ Die übrigen 12 ohne Einwand (Schweigen = passt): Mehrwert · authentisch · Herzensbusiness ·
+  Mindset · Community · sichtbar werden · **Ladys** · Business-Mama · Mama-Unternehmerin ·
+  Liebe Grüsse · Klartext · Schritt für Schritt. Damit ist „Ladys" freigegeben.
+- Hinweis: „sichtbar werden" und „Mindset" stehen in der Blackliste als abstrakter Benefit
+  bzw. Buzzword — als Wort sagt sie sie, als leeres Versprechen bleiben sie verdächtig. Nicht
+  geändert.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.

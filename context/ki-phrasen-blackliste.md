@@ -257,6 +257,16 @@ Oder Patricia fragen, ob es das gab. **Nie annehmen.**
 
 ---
 
+### Anreden, die sie nie benutzt (Interview B4, 02.10.2026)
+
+- ❌ „Mädels"
+- ❌ „Mamas da draussen" / „liebe Mamas da draussen"
+
+✅ Erlaubt und von ihr bestätigt: „Ladys" (sie schreibt es selbst), „Mama-Unternehmerin",
+„Business-Mama", direkt „du".
+
+---
+
 ## ❌ KATEGORIE 3: ABSTRAKTE BEGRIFFE
 
 ### Leere Versprechen

@@ -137,6 +137,7 @@ oder Klientin sagen, die ihr gegenübersitzt?**
 - ~ Statt *„Stell dir vor …"* sagt sie **„Gehen wir mal davon aus …"** oder **„Angenommen …"**
 - ~ Stakkato-Dreier (*„Kein Plan. Kein System. Kein Umsatz."*) — *„hmm weniger"*
 - ❌ *„Lass uns gemeinsam auf diese Reise gehen."* — *„zu geschwollen"*
+- ❌ **„Mädels"** und **„Mamas da draussen"** — sagt sie nie (B4). ✅ „Ladys", „Mama-Unternehmerin", „Business-Mama", „Community", „Mehrwert", „Klartext", „Schritt für Schritt", „Liebe Grüsse" sind in Ordnung.
 - **Nicht geglättet:** kleine Unebenheiten (fehlendes Komma, „Z.B", Singular bei „die … nicht
   tangiert") gehören zum Ton. In ihren eigenen Texten nicht korrigieren, ohne zu fragen.
 
