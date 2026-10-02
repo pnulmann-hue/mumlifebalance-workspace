@@ -148,6 +148,13 @@ nachmittag weg sind. aber am dienstag nehme ich mir nach wie vor frei am nachmit
 - **Neu:** Montag, Dienstag und Donnerstag sind die Kinder auch nachmittags weg. Mo und Do
   sind damit zusätzliche Arbeitsnachmittage; **Dienstagnachmittag bleibt bewusst frei**.
   Mittwoch- und Freitagnachmittag sind die Kinder zu Hause.
+- **„Ich gebe vor und nach"** = die Arbeitszeit schwankt bewusst. Nachgefragt, Wortlaut:
+  *„ja das ist ja die idee hinter meiner selbständigkeit. ich will ja keine starren muster und
+  trotzdem halt eine regelmässigkeit dass ich genau weiss, wann was zu tun ist und wann ich was
+  machen muss um meine ziele zu erreichen."*
+  → **Haltung, brauchbar für Content:** Freiheit heisst für sie nicht Chaos, sondern
+  *kein starres Muster, aber ein fester Rhythmus*. Passt direkt zu Mama-CEO (Wochenrhythmus
+  als einer der drei Wendepunkt-Hebel vom Mai 2025).
 - **Abende und Wochenende** unverändert: Samstag Erledigungen, Sonntag Wandern.
 - 🔒 **Kinder:** Ein Kind steht vor der Berufswahl. Patricia will darüber nicht im Detail
   reden → **kein Content-Thema**, keine Nachfragen im Interview.

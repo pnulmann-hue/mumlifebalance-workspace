@@ -140,7 +140,7 @@ Letzte Krisen:
 
 **Realistische Wochenstunden: ~18h** (Memory-Quelle).
 
-🔄 **Stand Oktober 2026 (Interview A2):** Die Tabelle oben ist für den Morgen überholt (kein 5:15 mehr: um 8 Frühstück, Mo/Mi/Fr danach Training). Kernzeit weiter vormittags ~3 h. **Neu: Mo, Di, Do sind die Kinder auch nachmittags weg** → Mo- und Do-Nachmittag sind zusätzliche Arbeitszeit, **Di-Nachmittag bleibt bewusst frei**. Mi- und Fr-Nachmittag Kinder zu Hause. Berufswahl eines Kindes ist privat — kein Content-Thema.
+🔄 **Stand Oktober 2026 (Interview A2):** Die Tabelle oben ist für den Morgen überholt (kein 5:15 mehr: um 8 Frühstück, Mo/Mi/Fr danach Training). Kernzeit weiter vormittags ~3 h. **Neu: Mo, Di, Do sind die Kinder auch nachmittags weg** → Mo- und Do-Nachmittag sind zusätzliche Arbeitszeit, **Di-Nachmittag bleibt bewusst frei**. Mi- und Fr-Nachmittag Kinder zu Hause. Berufswahl eines Kindes ist privat — kein Content-Thema. Die Stunden schwanken bewusst (*„keine starren Muster und trotzdem eine Regelmässigkeit, dass ich genau weiss, wann was zu tun ist"*) — Freiheit mit festem Rhythmus, nicht Chaos.
 
 **Implikation für Skills:** Patricia ist abends platt. Best Window für Briefings, Reels-Aufnahme, strategische Arbeit: **8:00-11:00 Uhr morgens.** Kein „komm mal abends in DM"-Pattern.
 
