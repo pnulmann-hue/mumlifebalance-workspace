@@ -32,7 +32,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ A1 „Kein Monat ohne Verkauf" — stimmt die Linie noch, und was zählt dazu?
 - ✅ A1b „Vierstellig pro Monat" — stimmt das noch, und wie viel bleibt in einem normalen Monat ohne Launch (Mentoring und doTERRA getrennt)?
 - ✅ A2 Was hat sich seit Mai in deinem Alltag und deiner Familie verändert (Morgen, Training, Kinder, Schule)?
-- ⬜ A3 Wie geht es deiner Mama, und was davon darf in den Content?
+- ✅ A3 Wie geht es deiner Mama, und was davon darf in den Content?
 - ⬜ A4 Verwaltungsrat: noch dabei oder abgegeben?
 - ⬜ A5 Das Coaching für 3'500 — läuft es noch, was hat es gebracht?
 - ⬜ A6 Wie viele Kundinnen begleitest du heute wirklich (Mentees, Mitgliedschaft, 1:1)?
@@ -158,3 +158,11 @@ nachmittag weg sind. aber am dienstag nehme ich mir nach wie vor frei am nachmit
 - **Abende und Wochenende** unverändert: Samstag Erledigungen, Sonntag Wandern.
 - 🔒 **Kinder:** Ein Kind steht vor der Berufswahl. Patricia will darüber nicht im Detail
   reden → **kein Content-Thema**, keine Nachfragen im Interview.
+
+### A3 · Familie · 02.10.2026
+
+🔒 Antwort intern in `context/persoenlich/interview-intern.md`.
+
+**Festgehalten (öffentlich unbedenklich):** Der Content-Frame „jemanden aus der Familie
+regelmässig ins Spital begleiten" vom Mai ist **nicht mehr aktuell** und wird nicht mehr
+verwendet.

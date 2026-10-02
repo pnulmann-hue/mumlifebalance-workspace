@@ -92,7 +92,9 @@ Letzte Krisen:
 
 **🔒 KW 19-20/2026 — Aktuelle Familienlast (sensibel):** Mama-Krebs-Verdacht, 2-3× Spital pro Woche. Patricia trägt das parallel zu allem anderen.
 
-**Content-Freigabe (Patricia 2026-05-11):** Die Spital-Begleitung darf abstrakt in den Content fließen als **„familiär jemanden regelmäßig ins Spital begleiten"** ODER **„Familien-Notfall"**. NIE: „Mama", „Krebs", „Diagnose", „Spital-Besuche meiner Mutter". Frame: Mama-CEO-System-Beweis („Business läuft trotzdem weiter, weil System"). Sensible Tonalität bleibt — kein Hype, kein „nutzbar als Marketing-Asset". Die Realität trägt sich selbst.
+⛔ **Überholt seit 02.10.2026 (Interview A3):** Die regelmässige Spital-Begleitung ist *„aktuell nicht mehr so"*. Den Spital-/Familien-Notfall-Frame im Content **nicht mehr verwenden** — er wäre heute nicht wahr.
+
+**Content-Freigabe (Patricia 2026-05-11, überholt):** Die Spital-Begleitung darf abstrakt in den Content fließen als **„familiär jemanden regelmäßig ins Spital begleiten"** ODER **„Familien-Notfall"**. NIE: „Mama", „Krebs", „Diagnose", „Spital-Besuche meiner Mutter". Frame: Mama-CEO-System-Beweis („Business läuft trotzdem weiter, weil System"). Sensible Tonalität bleibt — kein Hype, kein „nutzbar als Marketing-Asset". Die Realität trägt sich selbst.
 
 **Verwendbar als Brand-Beweis für Mama-CEO:** Krise + System = Business läuft trotzdem. Das ist der stärkste Walk-the-Talk-Moment für Mama-CEO-Versprechen.
 
