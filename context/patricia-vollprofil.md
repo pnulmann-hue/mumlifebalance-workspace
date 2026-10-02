@@ -119,6 +119,7 @@ Letzte Krisen:
 - Patricia formuliert es ohne Groll: *„passt für uns sehr gut, keine Reibereien"* — hat Frieden mit der Asymmetrie geschlossen
 - Darf erwähnt werden — aber **Patricia steht im Fokus**, nie „Frau von".
 - **Mann zum Business (Mai-9):** *„Schaut es immer noch als Hobby an. Für ihn ist es ein Instagram-Ding, das dazu führt, dass ich ständig am Handy bin, wo nicht wirklich was rüberkommt."* → Patricia trägt das Business gegen unausgesprochene Skepsis. Sie diskutiert nicht — sie liefert Beweise.
+- 🔄 **Stand 02.10.2026 (Interview A8):** Er macht *„keinen Spruch mehr"*. Sie verdient noch nicht so viel wie im früheren Vollzeitjob und sagt das offen. ✅ **Ausdrücklich für Content freigegeben** — *„weil das eigene Business bei vielen belächelt wird"*. Mann bleibt Nebenfigur, ohne Groll.
 - **Kids extrem selbstständig:** 3/4 Instrument, 3/4 Sport (Fußball/Turnverein). *„Ich muss nie mit den Kids lernen — ich bin ziemlich verwöhnt."*
 - Backstory der Selbstständigkeit: 2014 Patricia in Gemeinderat gewählt (1 Jahr nach erstem Kind) → viele Nachmittag-Sitzungen → Tagesmutter + Mann → Kids lernten früh selbstständig zu sein
 

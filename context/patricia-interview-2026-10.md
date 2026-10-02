@@ -38,7 +38,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ A5 Das Coaching für 3'500 — läuft es noch, was hat es gebracht?
 - ✅ A6 Wie viele Kundinnen begleitest du heute wirklich (Mentees, Mitgliedschaft, 1:1)?
 - ✅ A7 Wie viele Stunden arbeitest du heute pro Woche — und wann?
-- ⬜ A8 Wie sieht dein Mann das Business heute?
+- ✅ A8 Wie sieht dein Mann das Business heute?
 
 ### Block B — Deine Stimme im Detail
 - ⬜ B1 Welcher Text, den ich dir geschrieben habe, war am meisten „du"? Und welcher am wenigsten?
@@ -234,5 +234,26 @@ die telegramgruppen laufen da immer noch und dann wären es genau genommen 8"*
 **Festgehalten:** *„18 Stunden pro Woche"* bleibt als Linie gültig, auch öffentlich (wird
 seit Mai so verwendet, Patricia hat nicht widersprochen). Dahinter: vormittags rund 3 h,
 dazu Mo- und Do-Nachmittag, bewusst schwankend (A2).
+
+### A8 · Der Mann und das Business · 02.10.2026
+
+**Wortlaut:** *„ja ich verdiene ja immer noch nicht so wie in meinem vollzeitjob. aber er hat
+mir keinen spruch mehr gedrückt und ja ich würde nicht mehr diskutieren und ja darf unbedingt
+in den content. weil das eigene Business bei vielen belächelt wird"*
+
+**Festgehalten:**
+- Sie verdient **noch nicht so viel wie im früheren Vollzeitjob** — das sagt sie selbst offen.
+- Ihr Mann **macht keine Sprüche mehr**. Sie diskutiert nach wie vor nicht.
+- ✅ **Ausdrücklich freigegeben für Content**, mit ihrer Begründung: *„weil das eigene Business
+  bei vielen belächelt wird."* → Das ist ein **Schmerz ihrer Kundinnen**, nicht nur ihre
+  Geschichte. Brauchbar als Hook-Thema (Identität/Schmerz), auch zusammen mit der
+  Schwiegermutter-Szene aus dem Vollprofil (*„Kauft das wirklich irgendjemand?"*).
+- Ton: ohne Groll gegen den Mann, er bleibt Nebenfigur. Die Pointe ist die Mama, die nicht
+  mehr diskutiert, sondern macht.
+
+---
+
+**Block A abgeschlossen (02.10.2026).** Übertragen ins Vollprofil, Brand Voice und
+Copywriting-Skill.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
