@@ -424,5 +424,9 @@ es wirklich zählt.
 Option D), Julia Trost in `brand-voice.md` (Julia-Sync: „Liebevolle Strenge", „Direkt, aber mit
 Liebe", „Pushy ist gut, wenn ehrlich"). 🚨 Namen bleiben intern, nie in Kundentexten.
 Was genau sie an beiden mag → Rückfrage B9b.
+
+**B9b, Wortlaut:** *„humor, direktheit, wie sie verkaufen"* → Das sind die drei Dinge, die sie
+an beiden übernimmt. Passt zu B5 (derber schreiben), B7 (Verkauf ist Verkauf) und B1b (Humor,
+Sarkasmus, Ironie).
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
