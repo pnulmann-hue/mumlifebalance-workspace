@@ -104,10 +104,14 @@ treffen will, liest diesen Text zuerst.** Wortlaut, nichts korrigiert:
 >
 > Mit ganz viel Persönlichkeit, Patricia😅
 
-**Was daran typisch sie ist** (abgelesen, noch von ihr zu bestätigen — Interview B1):
-- **Einstieg mit Zustimmung statt Widerspruch:** Sie stellt sich zuerst auf die Seite der
-  Skeptikerin („Ich stimme jedem zu …", „Ich bin auch ein Gegner davon") und dreht erst dann.
-  Kein „Viele denken X, aber …"-Schema.
+🎯 **Ihr eigener Massstab (Interview B1b, 02.10.2026):** *„ein text passt dann zu mir, wenn er
+so geschrieben ist, wie wenn man mit einer freundin oder einem klienten reden würde."*
+Das ist die Prüffrage über allen Punkten unten: **Würde sie den Satz so zu einer Freundin
+oder Klientin sagen, die ihr gegenübersitzt?**
+
+**Was daran typisch sie ist** (abgelesen, von ihr gegengelesen — Interview B1b):
+- ~~Einstieg mit Zustimmung statt Widerspruch~~ — *„mach ich nicht generell"*. Kommt in
+  diesem Text vor, ist aber **kein festes Muster**. Nicht als Formel einsetzen.
 - **Ehrliche Abneigungen als Begründung:** „Das Rumgefummel … nervt mich", „mag ich nicht" —
   sie nutzt KI nicht, weil es modern ist, sondern weil sie etwas nicht gern macht.
 - **Callback-Humor:** „Wie schon gesagt … das Rumgefummel" und der Gruss „Mit ganz viel

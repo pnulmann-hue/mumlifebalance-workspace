@@ -267,5 +267,17 @@ liegt jetzt als **Referenztext** in `context/brand-voice.md`.
 
 **Offen:** Welcher von *Claudes* Texten am wenigsten „sie" war — nicht beantwortet, kommt
 bei B2 wieder vor.
+
+### B1b · Gegenlesen der Analyse · 02.10.2026
+
+**Wortlaut:** zu Punkt 1 (Einstieg mit Zustimmung) *„mach ich nicht generell"* — und dazu:
+*„ein text passt dann zu mir, wenn er so geschrieben ist, wie wenn man mit einer freundin
+oder einem klienten reden würde."*
+
+**Festgehalten:**
+- Punkt 1 ist **kein Muster**, nur in diesem Text. In der Brand Voice durchgestrichen.
+- Punkte 2–7 hat sie nicht kommentiert → gelten vorerst (Schweigen = passt).
+- **Ihr Massstab** steht jetzt als Prüffrage über der Analyse in `brand-voice.md`.
+- Offen: ob „Ladys" ein Wort für Claude ist → nicht verwenden, bis sie es freigibt.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
