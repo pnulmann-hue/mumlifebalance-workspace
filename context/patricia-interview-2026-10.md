@@ -35,7 +35,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ A3 Wie geht es deiner Mama, und was davon darf in den Content?
 - ✅ A4 Verwaltungsrat: noch dabei oder abgegeben?
 - ✅ A4b Wie viel Zeit kosten Verwaltungsrat und Geschäftsleitung, und darf das in den Content?
-- ⬜ A5 Das Coaching für 3'500 — läuft es noch, was hat es gebracht?
+- ✅ A5 Das Coaching für 3'500 — läuft es noch, was hat es gebracht?
 - ⬜ A6 Wie viele Kundinnen begleitest du heute wirklich (Mentees, Mitgliedschaft, 1:1)?
 - ⬜ A7 Wie viele Stunden arbeitest du heute pro Woche — und wann?
 - ⬜ A8 Wie sieht dein Mann das Business heute?
@@ -197,3 +197,18 @@ kann schon miteinfliessen wenn es sinn ergibt"*
   Die Geschäftsleitung gehört nicht in den Content.
 - **Wann es passt:** als Beleg für Struktur und Mama-CEO (*„Vier Kinder, eigenes Business und
   nebenbei noch in einem Verwaltungsrat"*), nie als Angeberei und nie als Hauptthema.
+
+### A5 · Das Coaching für 3'500 · 02.10.2026
+
+**Wortlaut:** *„ist abgeschlossen. hmm schwierig. eigentlich nicht wirklich viel. am meisten
+eigentlich dass ich meine launches geplant habe. auch wenn es nicht unbedingt konsequent war.
+ich will nicht unbedingt werbung machen, dass man investieren soll, wenn man knapp bei kasse
+ist."*
+
+**Festgehalten:**
+- Abgeschlossen. Ertrag ehrlich gering; das Brauchbarste war die **Launch-Planung**, auch wenn
+  sie nicht konsequent umgesetzt wurde.
+- 🚨 **Content-Regel:** keine Botschaft „investier in dich, auch wenn es knapp ist". Das
+  Coaching kommt im Content nicht als Vorbild vor.
+- Passt zu ihrer Haltung „ehrliche Mama-CEO-Realität": Nicht jede Investition zahlt sich aus.
+  Ob sie *das* erzählen will, ist offen — nicht ungefragt verwenden.

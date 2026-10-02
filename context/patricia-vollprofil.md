@@ -53,6 +53,7 @@ tags: [brand, voice, patricia]
 ### Werte über Verhaltensspuren (Mai-9)
 **Was unverhandelbar bleibt — auch bei finanziellem Druck:**
 - **Einkauf beim Gemüsemann** (regional, frisch, Familien-Gesundheit) → konsistent mit doTERRA-Lebensstil, brand-authentisch
+- 🔄 *Stand 02.10.2026 (Interview A5): Coaching abgeschlossen, Ertrag laut Patricia „eigentlich nicht wirklich viel" — am meisten, dass sie ihre Launches geplant hat, „auch wenn es nicht unbedingt konsequent war". 🚨 **Content:** nie „investier, auch wenn es knapp ist" — sie will keine Werbung dafür machen, bei knapper Kasse Geld auszugeben.*
 - **Eigene Business-Investitionen** → konkret: 3'500 CHF für 3-Monats-Coaching gebucht, OBWOHL der finanzielle Druck hoch ist (siehe Sektion 10 INTERN: heimlich, Mann weiß nicht). Selbst-Investition > Konsum-Verzicht.
 
 ### Stärken
