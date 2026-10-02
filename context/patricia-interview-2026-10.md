@@ -318,5 +318,20 @@ logisch wenn er hundertmal in einer caption vorkommt ist es doof"* · zu „Stel
   sauberen Gegenprobe (kein Fund), einem Kontrast (ansehen) und drei (zweiter raus).
 - **„Stell dir vor" überall ersetzen** durch „Angenommen …" / „Gehen wir mal davon aus …",
   auch in Webinar und Call — die Ausnahme vom 12.06. ist überholt.
+
+### B3 · Ihre Wörter (Teil 1: Korrekturen) · 02.10.2026
+
+**Wortlaut:** zu „Geheite" *„weiss nicht was das sein soll"* · zu „mega puff" *„sage ich schon
+noch. du verwendest es aber im falschen kontext. ein mega puff ist eine mega schweinerei oder
+ein mega chaos"*
+
+**Korrigiert:**
+- **„Geheite" gestrichen** — stammt nicht von ihr. Aus Vollprofil entfernt.
+- **„mega puff" = mega Chaos / Schweinerei**, nicht „überrumpelt". Falsche Zuordnung im
+  Vollprofil (Wortschatz + Wendepunkt-Szene), in `brand-voice.md` und im Copywriting-Skill
+  korrigiert.
+- 🚨 **Lehre:** Wörter aus dem Mai-Interview wurden teils mit erratener Bedeutung abgelegt.
+  Mundart-Wörter nur mit **ihrer** Erklärung verwenden.
+- Offen: ihre weiteren Alltagswörter (Freude, Ärger, Aufmuntern, Schweizer Ausdrücke).
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.

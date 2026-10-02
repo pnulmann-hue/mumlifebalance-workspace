@@ -167,7 +167,7 @@ Letzte Krisen:
 
 ### Highs & Lows
 - ❤️ **Liebt:** Wellness mit Freundin · Schneetreiben vorm Fenster · Liegestuhl · Sonne · Kreuzfahrt-Buffet · Sauna · Eincremen mit Ölen/Düften · Garten/Pflanzen aus Samen ziehen · Hochwertig essen · Action-Filme · Krimi-Romane · Daily Soaps (GZSZ, Alles was zählt) · SRF Bi de Lüt · Shopping als Erlebnis · *„das Leben aussaugen"*
-- 🤬 **Kotzt sie an:** Abspulen von To-Dos · Rumsäckeln · ewiges Geheite (Genörgel) · **Geld-Druck:** *„Wir dürfen jetzt nicht auswärts essen, weil's zu viel kostet"* / *„Oh shit, wie viel hab ich noch auf dem Konto"* (Mai-9)
+- 🤬 **Kotzt sie an:** Abspulen von To-Dos · Rumsäckeln · ewiges Genörgel · **Geld-Druck:** *„Wir dürfen jetzt nicht auswärts essen, weil's zu viel kostet"* / *„Oh shit, wie viel hab ich noch auf dem Konto"* (Mai-9)
 
 → Geld-Symbol für finanzielle Freiheit: **„Auswärts essen können wann ich will"** (konkreter als „6-stellig").
 → Verzicht-Realität (Mai-9): kein auswärts essen beim Wandern, keine Kreuzfahrt obwohl 1x getestet (10'000 CHF, würde sie jährlich), keine Bauch-Käufe, kein „mit-Mann-was-trinken-gehen".
@@ -219,7 +219,7 @@ Letzte Krisen:
 - **Patricia-Mantra:** *„Ich mach immer vorwärts. Jeden Monat was Neues. Ich lass niemals los."*
 
 ### Wendepunkt-Moment
-- **Wellness mit Tochter** · E-Mail kommt rein · Zahlungseingang · jemand hatte über Insta-Profil einfach gekauft · *„mega puff"* · heute Realität, manchmal kaum fassbar
+- **Wellness mit Tochter** · E-Mail kommt rein · Zahlungseingang · jemand hatte über Insta-Profil einfach gekauft · ~~*„mega puff"*~~ (⛔ falsch zugeordnet — „Puff" heisst Chaos, nicht Staunen; Interview B3) · heute Realität, manchmal kaum fassbar
 
 ### Status quo (Mai 2026)
 - ⛔ **Überholt (Interview A1b, 02.10.2026):** die zwei Zeilen „vierstellig“ hier drunter stimmen für einen normalen Monat nicht mehr. Mentoring-Umsatz nur bei Launches.
@@ -387,11 +387,11 @@ Patricia-Sammelbegriff für 7 Sub-Typen, die **alle** auf sie nicht passen:
 
 ### Patricia-Wortschatz (verwenden)
 - *„Rumsäckeln"* (Schweizerdeutsch: Herumdrucksen/Aufschieben)
-- *„Geheite"* (Schweizerdeutsch: Genörgel/Streit)
+- ~~*„Geheite"*~~ — ⛔ **gestrichen 02.10.2026:** Patricia kennt das Wort nicht (*„weiss nicht was das sein soll"*). Nie verwenden.
 - *„Tunnel-Modus"* / *„im Tunnel"*
 - *„pack Brot"* (statt „backe")
 - *„dröhnen"* (Musik laut hören)
-- *„mega puff"* (überrumpelt)
+- *„mega puff"* = **mega Schweinerei / mega Chaos** (korrigiert 02.10.2026 — vorher fälschlich „überrumpelt"). Passt zu Unordnung, Durcheinander, Chaos im Haus oder im Kopf — **nie** zu einem Erfolgsmoment.
 - *„das Leben aussaugen"* / *„Leben spüren"* (Mai-9-Vertiefung)
 - *„Wollmilchsau"* (sich selbst beschreibend)
 - *„kein Monat ohne Verkauf"* → **bevorzugt seit 02.10.2026:** *„kein Monat mehr ohne Einkommen aus meiner Selbständigkeit"* (doTERRA zählt mit; nie so tun, als käme alles aus Kursen — Interview A1)
@@ -514,7 +514,7 @@ Patricia-Sammelbegriff für 7 Sub-Typen, die **alle** auf sie nicht passen:
 
 1. **Mindestens 1 Pain-/Wunsch-/Ziel-Bezug** zu Mentee-Profil (NWM-Mama Schweiz, 2–3 Kids, Anfang, fehlender Fokus, Geld-Druck, Wunsch nach Freiheit)
 2. **Brand-Voice-Filter:** keine verbotenen Wörter (siehe Section 7), keine Julia-Trost-Erwähnung, keine doTERRA-Heilversprechen, kein Déesse-Affiliate
-3. **Patricia-Wortschatz** wo passend einbauen (Tunnel · Rumsäckeln · pack Brot · dröhnen · mega puff · *„jetzt mal ganz ehrlich"* · *„wie geil ist das denn"*)
+3. **Patricia-Wortschatz** wo passend einbauen (Tunnel · Rumsäckeln · pack Brot · dröhnen · mega puff (= Chaos) · *„jetzt mal ganz ehrlich"* · *„wie geil ist das denn"*)
 4. **Anti-Bali-Frame** wo Differenzierung gefragt: vierstellig statt 6-stellig · Schweiz statt Bali · 18h statt 60h · Solo-mit-KI statt Coaching-Imperium
 5. **Patricia steht im Fokus** — Mann ist Nebendarsteller, nie Held. Kids anonymisiert (*ältester Sohn / mittlere Tochter* etc.).
 6. **Repel-Markt klar:** wer NICHT angesprochen wird (Nichts-Veränderin, 6-stellig-Träumerin)
