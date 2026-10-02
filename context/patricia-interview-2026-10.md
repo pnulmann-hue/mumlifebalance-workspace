@@ -304,5 +304,19 @@ oder einem klienten reden würde."*
 - ⚠️ **Konflikt mit der Blackliste:** Satz 5 ist ein Nicht/Sondern-Konstrukt, das
   `ki-phrasen-blackliste.md` in jeder Variante verbietet — Patricia würde ihn so sagen.
   Blackliste **nicht** geändert, Rückfrage B2b.
+
+### B2b · Nicht/Sondern und „Stell dir vor" · 02.10.2026
+
+**Wortlaut:** *„ich finde es eigentlich keine ki phrase. ist doch ein normaler satz. aber ja
+logisch wenn er hundertmal in einer caption vorkommt ist es doof"* · zu „Stell dir vor":
+*„auch hier. schreib doch einfach angenommen oder gehen wir mal davon aus statt stell dir vor"*
+
+**Umgesetzt:**
+- **Ein Kontrast pro Text erlaubt**, ab dem zweiten verboten → `ki-phrasen-blackliste.md`
+  (Abschnitt 1 + Selbstcheck) und `scripts/cockpit/texte-pruefen.py` (erster Fund =
+  „ansehen", jeder weitere = „raus"; überlappende Muster zählen einmal). Getestet an einer
+  sauberen Gegenprobe (kein Fund), einem Kontrast (ansehen) und drei (zweiter raus).
+- **„Stell dir vor" überall ersetzen** durch „Angenommen …" / „Gehen wir mal davon aus …",
+  auch in Webinar und Call — die Ausnahme vom 12.06. ist überholt.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.

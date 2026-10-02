@@ -20,7 +20,15 @@ Diese Muster sind die häufigsten KI-Erkennungsmerkmale. Oberste Priorität, kei
 
 ### 1. Nicht/Sondern-Konstrukte (in JEDER Variante)
 
-Das häufigste und hartnäckigste KI-Muster überhaupt. Tarnt sich in vielen Formen. Alle verboten:
+> **🟢 Lockerung (Patricia, Interview B2b, 02.10.2026):** *„ich finde es eigentlich keine ki
+> phrase. ist doch ein normaler satz. aber ja logisch wenn er hundertmal in einer caption
+> vorkommt ist es doof."* → **Ein Kontrast pro Text ist erlaubt**, wenn er ein echter Satz
+> ist, den sie so sagen würde (Beispiel, von ihr bestätigt: *„Die meisten Networkerinnen
+> scheitern nicht am Wissen, sondern an der Umsetzung."*). **Ab dem zweiten** im selben
+> Text gilt das Verbot unten wieder voll, ebenso für ganze Absätze aus Nicht/Sondern-Ketten.
+> `texte-pruefen.py` meldet den ersten als „ansehen", jeden weiteren als „raus".
+
+Das häufigste und hartnäckigste KI-Muster überhaupt. Tarnt sich in vielen Formen. Ab dem zweiten im Text verboten:
 
 - ❌ „Nicht weil X, sondern weil Y"
 - ❌ „Nicht X, sondern Y"
@@ -202,7 +210,9 @@ Oder Patricia fragen, ob es das gab. **Nie annehmen.**
 
 > **Hinweis — Widerspruch zu Julia-Trost-Sync:** Agent 3 hatte „Stell dir vor..." als zentralen Visualisierungs-Trigger vorgeschlagen. Patricias Blackliste sagt klar **NEIN**. Konflikt-Regel: **Blackliste gewinnt.** Visualisierung muss ohne diese Phrase auskommen — direkt in die Szene einsteigen ist stärker.
 
-> **🟢 Scope-Update (Patricia, 2026-06-12):** Das „Stell dir vor"-Verbot gilt **nur für Instagram-Content** (Captions, Hooks, Reels, Stories). In **gesprochenen Verkaufs-Kontexten — Webinar, Sales-Call, Pitch, Verkaufs-Video** — ist „Stell dir vor" als Future-Pacing-Trigger **erlaubt** und erwünscht (dort Standard, z.B. Jens-Neubeck-Webinar-Methode). Für geschriebenen Insta-Content bleibt es gesperrt.
+> **🔄 Ersatz in ihren Worten (Patricia, Interview B2/B2b, 02.10.2026):** Statt „Stell dir vor" sagt sie **„Angenommen …"** oder **„Gehen wir mal davon aus …"** — *„schreib doch einfach angenommen oder gehen wir mal davon aus statt stell dir vor"*. Das gilt **überall, auch in Webinar und Sales-Call**; die Ausnahme vom 12.06. darunter ist damit überholt.
+
+> **🗃 Überholt — Scope-Update (Patricia, 2026-06-12):** Das „Stell dir vor"-Verbot gilt **nur für Instagram-Content** (Captions, Hooks, Reels, Stories). In **gesprochenen Verkaufs-Kontexten — Webinar, Sales-Call, Pitch, Verkaufs-Video** — ist „Stell dir vor" als Future-Pacing-Trigger **erlaubt** und erwünscht (dort Standard, z.B. Jens-Neubeck-Webinar-Methode). Für geschriebenen Insta-Content bleibt es gesperrt.
 
 ---
 
@@ -436,7 +446,7 @@ Stelle dir diese Fragen nach jedem generierten Text:
 
 BEVOR du einen Text ausgibst (Caption, Hook, Reel-Skript, Folien-Text, E-Mail, Bio), lies ihn Satz für Satz durch und prüfe auf diese Muster:
 
-1. **Nicht/Sondern-Scan:** Enthält der Text irgendeine Form von Nicht/Sondern-Konstrukt? Auch verkleidet als „Es liegt nicht an... es liegt an...", „Weniger X, mehr Y", „Es braucht kein X, es braucht Y"? **Falls ja:** sofort umschreiben nach einer der vier Korrektur-Strategien aus den Top-Verboten.
+1. **Nicht/Sondern-Scan:** Enthält der Text irgendeine Form von Nicht/Sondern-Konstrukt? Auch verkleidet als „Es liegt nicht an... es liegt an...", „Weniger X, mehr Y", „Es braucht kein X, es braucht Y"? **Einer pro Text darf bleiben, wenn Patricia ihn so sagen würde. Ab dem zweiten:** sofort umschreiben nach einer der vier Korrektur-Strategien aus den Top-Verboten.
 
 2. **Dreier-Stakkato-Scan:** Gibt es drei kurze Sätze oder Satzteile mit gleichem Anfang oder gleicher Struktur hintereinander? **Falls ja:** zu einem fliessenden Satz umbauen oder einen Punkt vertiefen.
 
