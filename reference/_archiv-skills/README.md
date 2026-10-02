@@ -40,6 +40,6 @@ sich dieselbe Artifact-Adresse, es gibt also nur einen Editor.
 | `salespage` | Inhalt steht als Abschnitt „ThriveCart-Tipps" in `/copywriting` (13 Blöcke, Interviewfragen, Ausgabe) |
 | `hormozi` | Überarbeiten läuft über die Prüf-Layer von `/copywriting`; die Hormozi-Bibel bleibt in `reference/hormozi/` |
 | `content-master` | zugekauft, überschnitt sich mit `/content` und `/copywriting` — **gitignored** |
-| `werbeanzeigentext-master` | zugekauft, Anzeigentexte macht `/copywriting` — **gitignored** |
+| `werbeanzeigentext-master` | zugekauft, steht Wort für Wort als Ergänzung in `/facebook-ads` — **gitignored** |
 
 Patricia: *„mir ist es einfach wichtig, dass wir eine saubere skillablage haben.“* Je Auftrag genau ein Skill — die Tabelle dazu steht in CLAUDE.md unter „Welcher Skill für welchen Auftrag“.
