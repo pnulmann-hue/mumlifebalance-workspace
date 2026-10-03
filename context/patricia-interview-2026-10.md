@@ -62,7 +62,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ C7 Wofür würdest du öffentlich Gegenwind in Kauf nehmen?
 
 ### Block D — Deine Kundinnen, heute
-- ⬜ D1 Beschreib die letzte Frau, die bei dir gekauft hat: wer, was, warum gerade jetzt?
+- ✅ D1 Beschreib die letzte Frau, die bei dir gekauft hat: wer, was, warum gerade jetzt?
 - ⬜ D2 Was sagen Frauen wörtlich in DMs und Calls, bevor sie kaufen?
 - ⬜ D3 Und was sagen die, die NICHT kaufen?
 - ⬜ D4 Welche Kundin war die schönste Erfahrung — und welche die schwierigste?
@@ -564,5 +564,25 @@ keine konkrete Upline · C6b: Kinder-Thema als eigene Entscheidung).
 
 **Block C abgeschlossen (03.10.2026).** Haltung steht in `brand-voice.md` unter „Persönlichkeit
 zeigen"; Privates in `context/persoenlich/interview-intern.md`.
+
+### D1 · Die letzte Käuferin · 03.10.2026
+
+**Patricias Beschreibung:** *„mama schon einige jahre im network, nicht so wirklich
+erfolgreich. arbeitet noch teilzeit, möchte aber weg vom job. sie hat zuerst instagram
+kundenmaschine, dann mama-ceo, dann die mba gekauft. für sie war es ein jetzt oder nie entscheid
+und sie hat vertrauen, dass ich ihr helfen kann. weil ich ja selber auch mama bin und mir auch
+was aufgebaut habe."* Dazu die Nachricht der Kundin im Wortlaut.
+
+**Abgelegt** als **Kundin B** in `context/kundinnen-geschichten.md` (Wortlaut = echtes Zitat,
+Freigabe offen → nur anonym).
+
+**Was daraus für Texte folgt:**
+- Sie hat die **Treppe durchlaufen** (IKM → Mama-CEO → MBA) — die Produkttreppe funktioniert
+  bei Bestandskundinnen.
+- **Kaufgrund ist Ähnlichkeit + Gemeinschaft**, nicht Wissen: „weil du aus deinen eigenen
+  Erfahrungen sprichst" · „mehrere Kinder, Network, eigene Selbständigkeit" · „nicht alles
+  alleine". Deckt sich mit C2 (Wissen kann man selbst lernen, man kauft Weg und Begleitung).
+- Kundensprache: *„jetzt oder nie"* · *„ins Tun kommen"* · *„nochmals weitergehen und noch nicht
+  aufgeben"*.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
