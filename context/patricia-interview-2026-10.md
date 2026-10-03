@@ -615,5 +615,19 @@ das von mir selbst ja auch"*
 → Der eigentliche Einwand ist **„es klappt bei mir wieder nicht"**, nicht das Geld.
 Patricia kennt die Angst selbst — das macht ihre eigene Geschichte (erstes Network aufgegeben,
 zwei Jahre ohne Verkäufe) zur stärksten Antwort. Im Copywriting-Skill als Einwand ergänzt.
+
+### D4 (Teil) · Eine Hin-und-hergerissene nach der Story-Challenge · 03.10.2026
+
+**Patricias Nacherzählung** (kein Wortlaut der Kundin): *„eine hat nach der story-challenge
+gesagt, dass sie noch unsicher ist, ob es für sie das richtige sei. einerseits mache ich es so gut
+mit beiträgen, storys usw. und so strukturiert. sie selber sei so chaotisch. und andererseits
+merke sie, dass sie mit der positionierung mühe habe. auch wenn sie ja neben den ölen sonst schon
+auch noch was anbiete aber ehrlichgesagt ihr business gar nicht gut laufe. sie sei hin und
+hergerissen weil sie ja eigentlich schon viel wisse"*
+
+**Drei Einwände in einem:** 1. Vergleich („du so strukturiert, ich so chaotisch") ·
+2. Positionierung fällt schwer, das Business läuft nicht · 3. „ich weiss eigentlich schon viel".
+→ Als Einwände im Copywriting-Skill. Offen: hat sie gekauft? Und D4 (schönste/schwierigste
+Kundin) ist noch nicht beantwortet.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
