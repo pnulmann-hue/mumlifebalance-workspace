@@ -65,7 +65,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ D1 Beschreib die letzte Frau, die bei dir gekauft hat: wer, was, warum gerade jetzt?
 - ✅ D2 Was sagen Frauen wörtlich in DMs und Calls, bevor sie kaufen?
 - ✅ D3 Und was sagen die, die NICHT kaufen?
-- ⬜ D4 Welche Kundin war die schönste Erfahrung — und welche die schwierigste?
+- ✅ D4 Welche Kundin war die schönste Erfahrung — und welche die schwierigste?
 - ⬜ D5 Was verändert sich bei deinen Kundinnen wirklich (nicht was die Salespage sagt)?
 - ⬜ D6 Wer ist deine doTERRA-Kundin heute — gleiche Frau oder eine andere?
 - ⬜ D7 Welche Frau willst du mehr in deinem Business haben?
@@ -627,7 +627,20 @@ hergerissen weil sie ja eigentlich schon viel wisse"*
 
 **Drei Einwände in einem:** 1. Vergleich („du so strukturiert, ich so chaotisch") ·
 2. Positionierung fällt schwer, das Business läuft nicht · 3. „ich weiss eigentlich schon viel".
-→ Als Einwände im Copywriting-Skill. Offen: hat sie gekauft? Und D4 (schönste/schwierigste
-Kundin) ist noch nicht beantwortet.
+→ Als Einwände im Copywriting-Skill. **Sie hat gekauft** (Patricia: *„ja"*) — also ein Beleg,
+dass genau diese Zweifel überwindbar sind.
+
+### D4 · Schwierigste Kundin · 03.10.2026
+
+🔒 Wortlaut intern in `context/persoenlich/interview-intern.md`.
+
+**Festgehalten (allgemein):** Eine Kundin der Instagram-Kundenmaschine hat das Angebot nicht
+verstanden, nie umgesetzt, nach **Teamaufbau-Tipps** gefragt (darauf zielt das Angebot nicht),
+fragt jetzt laufend nach **KI-Tipps** und kauft die MBA nicht.
+- **Lehre für Verkaufstexte:** klar sagen, **was ein Angebot NICHT ist** (Instagram-Kundenmaschine
+  = Thema, Positionierung, Instagram-Strategie, Freebie — **kein Teamaufbau**). Deckt sich mit
+  der Regel „nie Netzwerkaufbau-Tipps".
+- Repel-Typ bestätigt: **Tipps sammeln, nichts umsetzen.**
+- Schönste Kundin: nicht beantwortet.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
