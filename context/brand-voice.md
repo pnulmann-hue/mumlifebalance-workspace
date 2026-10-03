@@ -145,6 +145,12 @@ oder Klientin sagen, die ihr gegenübersitzt?**
 - Das eigene Produkt als Lösung für alles
 Grenze: frech gegen das **Verhalten**, das derbe Wort gegen die Masche — nicht als Beschimpfung einer Person. Nicht behaupten, dass sie das früher selbst so gemacht hat (nicht belegt).
 
+**Ihre Haltung zur Coaching-Welt (Interview C2, 03.10.2026)** — eine ihrer stärksten Linien:
+> *„ich habe mühe damit, dass den menschen eingeredet wird, dass sie investieren müssen. und wenn sie es nicht tun, dass es dann andere möglichkeiten gibt, um an das geld zu kommen. grundsätzlich bin ich der meinung, dass man sich ALLES mit büchern, youtube etc. selber beibringen kann. das benötigt einfach zeit. wenn jemand die zeit nicht hat, dann hat man die gelegenheit, bei mir die strategie zu lernen und zu übernehmen."*
+- **Ihr Angebot ist Zeit, nicht Wissen:** Alles lässt sich selbst lernen — bei ihr spart man den Weg.
+- 🚨 **Nie** „du musst investieren", nie „wenn du das Geld nicht hast, gibt es andere Wege, es aufzutreiben" (Kredit, Mann fragen, Kreditkarte). Ratenzahlung als Option nennen ist in Ordnung, Druck dahinter nicht. Passt zu A5.
+- Konträr-Hook-Stoff: *Du kannst dir das alles selbst beibringen. Ehrlich.* — gefolgt von der Frage nach der Zeit.
+
 **Was sie an ihren Vorbildern mag (B9b):** *„humor, direktheit, wie sie verkaufen"* — genau diese drei Dinge sollen ihre Texte tragen. (Namen der Vorbilder nie in Kundentexten.)
 
 **Beim Verkaufen (Interview B7, 02.10.2026):**

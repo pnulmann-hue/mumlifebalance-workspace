@@ -54,7 +54,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 
 ### Block C — Deine Meinungen (Haltung, Hot Takes)
 - ✅ C1 Was regt dich in der Network-Branche am meisten auf?
-- ⬜ C2 Was regt dich in der Online-Coaching-Welt auf?
+- ✅ C2 Was regt dich in der Online-Coaching-Welt auf?
 - ⬜ C3 Welchen gängigen Rat hältst du für falsch?
 - ⬜ C4 Wo bist du anderer Meinung als deine Upline oder die Firma?
 - ⬜ C5 Was denkst du über KI wirklich — Begeisterung, Grenzen, Sorgen?
@@ -471,5 +471,24 @@ soll sich angesprochen fühlen. Kein Punkt als tabu genannt.
 - Abgrenzung zu B5: Frech und direkt gegen das **Verhalten** ist erlaubt; das eine derbe Wort
   pro Text geht trotzdem gegen die Masche, nicht als Beschimpfung der Person.
 - Ob sie es früher selbst so gemacht hat (Déesse-Zeit), ist nicht beantwortet → nicht behaupten.
+
+### C2 · Was sie in der Coaching-Welt aufregt · 03.10.2026
+
+**Wortlaut:** *„ich habe mühe damit, dass den menschen eingeredet wird, dass sie investieren
+müssen. udn wenn sie es nicht tun, dass es dann andere möglichkeiten gibt, um an das geld zu
+kommen. grundsätzlich bin ich der meinung,d ass man sich ALLES mit büchern, youtube etc. selber
+beibringen kann. das benötigt einfach zeit. wenn jemand die zeit nicht hat, dann hat man die
+gelegenheit, bei mir die strategie zu lernen und zu übernehmen"*
+
+**Festgehalten** (in `brand-voice.md`, Haltung):
+- Aufreger: **Investitionsdruck** und das **Aufzeigen von Wegen, an Geld zu kommen**.
+- Ihre Überzeugung: **Alles ist selbst lernbar, es braucht Zeit.** Ihr Angebot = **Zeit sparen,
+  Strategie übernehmen**. Das ist eine Positionierungs-Linie, kein Nebensatz.
+- 🚨 Verkaufstexte nie mit „du musst investieren" oder Finanzierungstipps. Raten nennen ja,
+  Druck nein. (Bestätigt A5.)
+- Geprüft: in Brand Voice und Skills keine „investier in dich"-Formel; `caption-formeln.md`
+  verbietet „Kredit-Empfehlung" schon.
+- Offen: ob die Copywriting-Pipeline der Mentorin „Investition"-Framing nahelegt → bei
+  nächster Verkaufsseite darauf achten (Julias Text wird nicht verändert).
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
