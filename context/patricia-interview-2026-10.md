@@ -58,7 +58,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ C3 Welchen gängigen Rat hältst du für falsch?
 - ✅ C4 Wo bist du anderer Meinung als deine Upline oder die Firma?
 - ✅ C5 Was denkst du über KI wirklich — Begeisterung, Grenzen, Sorgen?
-- ⬜ C6 Was denkst du über Mama-Sein und Arbeiten, was man nicht laut sagt?
+- ✅ C6 Was denkst du über Mama-Sein und Arbeiten, was man nicht laut sagt?
 - ⬜ C7 Wofür würdest du öffentlich Gegenwind in Kauf nehmen?
 
 ### Block D — Deine Kundinnen, heute
@@ -541,5 +541,12 @@ ohne eigene Gedanken.
 - **Relevant für den KI-Launch** (Masterclass 08.10.): genau diese Abgrenzung trägt die
   Verkaufsseite — KI fürs Backoffice, Persönlichkeit bleibt bei ihr.
 - Deckt sich mit dem Workspace: keine KI-Bilder, echte Fotos, B-Roll aus eigenem Material.
+
+### C6 · Mama-Sein und Arbeiten · 03.10.2026
+
+🔒 Wortlaut intern in `context/persoenlich/interview-intern.md`, bis die Content-Freigabe
+geklärt ist (C6b). Kern: zwei Werte — **finanzielle Unabhängigkeit** (auch fürs Alter, nicht
+abhängig von Mann/Beziehung) und **für die Kinder da sein** — vereint sie über die
+Selbständigkeit. Deckt sich mit ihrer Mission vom 23.04.2026.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
