@@ -63,7 +63,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 
 ### Block D — Deine Kundinnen, heute
 - ✅ D1 Beschreib die letzte Frau, die bei dir gekauft hat: wer, was, warum gerade jetzt?
-- ⏭ D2 Was sagen Frauen wörtlich in DMs und Calls, bevor sie kaufen?
+- ✅ D2 Was sagen Frauen wörtlich in DMs und Calls, bevor sie kaufen?
 - ✅ D3 Und was sagen die, die NICHT kaufen?
 - ⬜ D4 Welche Kundin war die schönste Erfahrung — und welche die schwierigste?
 - ⬜ D5 Was verändert sich bei deinen Kundinnen wirklich (nicht was die Salespage sagt)?
@@ -585,7 +585,15 @@ Freigabe offen → nur anonym).
 - Kundensprache: *„jetzt oder nie"* · *„ins Tun kommen"* · *„nochmals weitergehen und noch nicht
   aufgeben"*.
 
-### D2 · übersprungen (durch D1 beantwortet; Patricia hat nachgefragt, keine weiteren Sätze)
+### D2 · Was Frauen vor dem Kauf schreiben · 03.10.2026 (nachgereicht)
+
+**Wortlaut einer Käuferin der Instagram-Kundenmaschine** (von Patricia wiedergegeben):
+*„ich habe es mir lange überlegt ob es das richtige für mich ist. da meine strategien bisher
+nicht funktioniert hat mit online verkäufen, bin ich jetzt auch dabei"*
+
+**Festgehalten:** Kaufauslöser = **die eigenen Strategien haben nicht funktioniert** — nach
+langem Überlegen. Gleiche Linie wie D3b: Wer kauft, hat schon Erfahrung mit Scheitern.
+Zusammen mit Kundin B (D1) im Copywriting-Skill als Kundensprache.
 
 ### D3 · Die, die nicht kaufen · 03.10.2026
 
