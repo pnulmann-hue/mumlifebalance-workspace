@@ -151,6 +151,12 @@ Grenze: frech gegen das **Verhalten**, das derbe Wort gegen die Masche — nicht
 - 🚨 **Nie** „du musst investieren", nie „wenn du das Geld nicht hast, gibt es andere Wege, es aufzutreiben" (Kredit, Mann fragen, Kreditkarte). Ratenzahlung als Option nennen ist in Ordnung, Druck dahinter nicht. Passt zu A5.
 - Konträr-Hook-Stoff: *Du kannst dir das alles selbst beibringen. Ehrlich.* — gefolgt von der Frage nach der Zeit.
 
+**Ihre Haltung zu KI (Interview C5, 03.10.2026)** — Grundlage für alles rund um KI-Kurs und Masterclass:
+- **Begeistert:** *„dass man so viel abgeben kann, was eigentlich die eigene persönlichkeit eben nicht braucht. wir haben einen so grossen administrativen Tiger."* Sie ist *„ein absoluter fan von speditivität und organisatorischen dingen und struktur und strategie"* — all das geht mit KI.
+- **Grenze:** *„ich will kein ki profil. keine ki generierten videos von mir, die alles vollautomatisch machen. ich will ein SOCIALmedia. Verbindung fördern zu den menschen."*
+- **Sorge:** *„dass viele denken, dass KI einfach alles lösen kann oder zaubern kann. Aber in Wahrheit ist die KI nur so schlau, wie wir ihr an inhalt geben."* Und: Leute, die sich mit KI-Profil, -Bildern, -Videos, -Beiträgen und -Angeboten selbständig machen, *„ohne sich aber auch nur die bohne selber an gedanken zu machen"*.
+- **Daraus folgt für Texte:** KI = Backoffice, Persönlichkeit = Front. Nie KI als Zauberknopf verkaufen; der Inhalt kommt immer von ihr (siehe Referenztext: „Der Inhalt kommt von mir. Den habe ich per Sprachmemo eingesprochen."). Konträr-Hook-Stoff gegen das „KI macht alles"-Versprechen.
+
 **Gängige Ratschläge — ihre Sicht (Interview C3, 03.10.2026):**
 - *„Poste jeden Tag"* → **falsch.** *„statt mist posten, lieber qualität vor quantität. reichweite nutzt nichts wenn sie dann nicht mal sehen, was sie bei dir bekommen und was sie davon haben"*
 - *„Erst 10'000 Follower"* → *„braucht es nicht"*

@@ -57,7 +57,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ C2 Was regt dich in der Online-Coaching-Welt auf?
 - ✅ C3 Welchen gängigen Rat hältst du für falsch?
 - ✅ C4 Wo bist du anderer Meinung als deine Upline oder die Firma?
-- ⬜ C5 Was denkst du über KI wirklich — Begeisterung, Grenzen, Sorgen?
+- ✅ C5 Was denkst du über KI wirklich — Begeisterung, Grenzen, Sorgen?
 - ⬜ C6 Was denkst du über Mama-Sein und Arbeiten, was man nicht laut sagt?
 - ⬜ C7 Wofür würdest du öffentlich Gegenwind in Kauf nehmen?
 
@@ -521,5 +521,25 @@ gelegenheit, bei mir die strategie zu lernen und zu übernehmen"*
   Eigenes auf": *etwas Eigenes passend zum Network-Produkt aufzubauen ist ideal.* Das ist ihr
   Hybridmodell und darf als Haltung in Content.
 - 🔒 Nie mit Bezug auf konkrete Personen, ihre eigene Upline oder die Firma als Schuldige.
+
+### C5 · Was sie über KI denkt · 03.10.2026
+
+**Wortlaut:** *„dass man so viel abgeben kann, was eigentlich die eigene persönlichkeit ebn
+nicht braucht.wir haben einen so grossen administrativen Tiger. ich bin ein absoluter fan von
+speditivität und organisatorischen dingen und struktur und strategie und all die dinge sind
+möglcih mit ki. ich will kein ki profil. keine ki generierten videos von mir, die alles
+vollautomatisch machen. ich will ein SOCIALmedia. Verbindung fördern zu den menschen usw. Mir
+macht sorgen, dass viele denken, dass KI einfach alles lösen kann oder zaubern kann. Aber in
+Wahrheit ist die KI nur so schlau, wie wir ihr an inhalt geben. heute denken menschen: joah
+easy.. mach ich mich selbständig mit einem KI Profil, KI Bildern, KI Videos, KI generierten
+Beiträgen, KI Angeboten usw. ohne sich aber auch nur die bohne selber an gedanken zu machen"*
+
+**Festgehalten** (in `brand-voice.md`, Haltung zu KI): Begeisterung = Admin abgeben, Struktur,
+Tempo · Grenze = kein KI-Profil, keine KI-Videos von ihr, Social Media heisst Verbindung ·
+Sorge = KI als Zauberei, „nur so schlau wie der Inhalt, den wir ihr geben", Selbständigkeit
+ohne eigene Gedanken.
+- **Relevant für den KI-Launch** (Masterclass 08.10.): genau diese Abgrenzung trägt die
+  Verkaufsseite — KI fürs Backoffice, Persönlichkeit bleibt bei ihr.
+- Deckt sich mit dem Workspace: keine KI-Bilder, echte Fotos, B-Roll aus eigenem Material.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
