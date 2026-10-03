@@ -68,7 +68,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ D4 Welche Kundin war die schönste Erfahrung — und welche die schwierigste?
 - ✅ D5 Was verändert sich bei deinen Kundinnen wirklich (nicht was die Salespage sagt)?
 - ✅ D6 Wer ist deine doTERRA-Kundin heute — gleiche Frau oder eine andere?
-- ⬜ D7 Welche Frau willst du mehr in deinem Business haben?
+- ✅ D7 Welche Frau willst du mehr in deinem Business haben?
 
 ### Block E — Angebote und dein Gefühl dazu
 - ⬜ E1 Welches Angebot verkaufst du am liebsten, und welches ungern?
@@ -663,5 +663,23 @@ Business-Interesse. Einwände „keine Zeit für nichts" und „weiss ich doch a
 die Energie-Routine gekauft hat: nicht beantwortet.
 ⚠️ Für Content beachten: Diese Frau ist berufstätig mit Kindern → C6b gilt doppelt (Kinder-
 Thema nie als Urteil).
+
+### D7 · Wunschkundin Mentoring · 03.10.2026
+
+**Wortlaut:** *„sie setzen um, sie versuchen alles. sie kopieren was ich ihnen beibringe. sie
+setzen um! und sie scheuen sich nicht mit rückmeldungen. meine teilnehmer bis jetzt sind ziemlich
+still und zurückhaltend. finde ich schwierig. und es wäre schön, wenn ich erreichen würde, dass
+ich etwas mehr gutes feedback erhalten würde. eine wiederbuchung ist ja im grundsatz gutes
+feedback. aber halt kein ausgesprochenes feedback"*
+
+**Festgehalten:**
+- **Wunschkundin = Umsetzerin**, die kopiert, ausprobiert — und **Rückmeldung gibt**. Deckt sich
+  mit dem Mai-Profil („hört zu, lernt, kopiert alles").
+- **Heute:** Teilnehmerinnen eher **still und zurückhaltend**. Sie wünscht sich **mehr
+  ausgesprochenes Feedback** — Wiederbuchungen sind Feedback, aber unausgesprochen.
+- Zusammenhang: Ohne ausgesprochenes Feedback fehlen Kundenstimmen (Kundinnen-Geschichten,
+  Freigaben, Mail 12 der Startklar-Strecke ohne Stimme). **Möglicher Hebel** (nicht
+  umgesetzt, nur notiert): Feedback fest in den Ablauf einbauen — feste Frage in jedem Call,
+  kurze Rückmelde-Runde in der Gruppe, Sprachnachricht statt Formular.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
