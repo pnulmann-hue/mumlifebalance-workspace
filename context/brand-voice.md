@@ -137,6 +137,14 @@ oder Klientin sagen, die ihr gegenübersitzt?**
 - ~ Statt *„Stell dir vor …"* sagt sie **„Gehen wir mal davon aus …"** oder **„Angenommen …"**
 - ~ Stakkato-Dreier (*„Kein Plan. Kein System. Kein Umsatz."*) — *„hmm weniger"*
 - ❌ *„Lass uns gemeinsam auf diese Reise gehen."* — *„zu geschwollen"*
+**Ihre Haltung zur Network-Branche (Interview C1, 03.10.2026)** — Stoff für Konträr- und Identitäts-Hooks, **direkt und frech, ohne Abfederung** (C1b):
+- Lautes Abwerben und Konkurrenzkampf unter Networkerinnen
+- Folgen und Minuten später die DM „Lust, mein Produkt zu probieren / etwas Eigenes aufzubauen?" — *„das traurige daran ist, dass sich diese menschen gar nie mit meinem profil beschäftigt haben"*
+- Bekannte abtelefonieren, den Leuten auf den Wecker gehen
+- Bei jedem Problem eines Freundes mit dem Produkt um die Ecke kommen
+- Das eigene Produkt als Lösung für alles
+Grenze: frech gegen das **Verhalten**, das derbe Wort gegen die Masche — nicht als Beschimpfung einer Person. Nicht behaupten, dass sie das früher selbst so gemacht hat (nicht belegt).
+
 **Was sie an ihren Vorbildern mag (B9b):** *„humor, direktheit, wie sie verkaufen"* — genau diese drei Dinge sollen ihre Texte tragen. (Namen der Vorbilder nie in Kundentexten.)
 
 **Beim Verkaufen (Interview B7, 02.10.2026):**

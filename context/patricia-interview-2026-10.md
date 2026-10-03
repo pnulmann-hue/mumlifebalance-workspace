@@ -465,5 +465,11 @@ so gottsjämmerlich auf"*
 - ⚠️ **Heikel:** Ihre eigenen Kundinnen haben das oft genau so gelernt. Die Gegenspielerin ist
   die **Methode** (oder wer sie beibringt), **nie die Leserin**. → Rückfrage C1b.
 - „gottsjämmerlich" ist Mundart → in Texten nicht verwenden (B3b).
+
+**C1b, Wortlaut:** *„c"* → **direkt und frech, ohne Abfederung.** Wer sich angesprochen fühlt,
+soll sich angesprochen fühlen. Kein Punkt als tabu genannt.
+- Abgrenzung zu B5: Frech und direkt gegen das **Verhalten** ist erlaubt; das eine derbe Wort
+  pro Text geht trotzdem gegen die Masche, nicht als Beschimpfung der Person.
+- Ob sie es früher selbst so gemacht hat (Déesse-Zeit), ist nicht beantwortet → nicht behaupten.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
