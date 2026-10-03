@@ -61,7 +61,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ C6 Was denkst du über Mama-Sein und Arbeiten, was man nicht laut sagt?
 - ✅ C7 Wofür würdest du öffentlich Gegenwind in Kauf nehmen?
 
-### Block D — Deine Kundinnen, heute
+### Block D — Deine Kundinnen, heute ✅
 - ✅ D1 Beschreib die letzte Frau, die bei dir gekauft hat: wer, was, warum gerade jetzt?
 - ✅ D2 Was sagen Frauen wörtlich in DMs und Calls, bevor sie kaufen?
 - ✅ D3 Und was sagen die, die NICHT kaufen?
@@ -681,5 +681,24 @@ feedback. aber halt kein ausgesprochenes feedback"*
   Freigaben, Mail 12 der Startklar-Strecke ohne Stimme). **Möglicher Hebel** (nicht
   umgesetzt, nur notiert): Feedback fest in den Ablauf einbauen — feste Frage in jedem Call,
   kurze Rückmelde-Runde in der Gruppe, Sprachnachricht statt Formular.
+
+### D7b · Wunschkundin doTERRA · 03.10.2026
+
+**Wortlaut:** *„nein bei doterra will ich kundinnen denen selbstbestimmung, selbstverantwortung
+auch so sehr am herzen liegt wie mir und die sich begeistern lassen für die selbstermächtigung
+die ihnen die öle und die nems geben. ja ich suche neue beraterinnen. auch da hätte ich gerne
+engagierte teammitglieder mit eigenen ideen, eigenem vibe und die nicht nur reden sondern auch
+umsetzen"*
+
+**Festgehalten** (in `business-info.md` und Copywriting-Skill): Kundinnen mit ihrem Wert
+**Selbstverantwortung** (ihr Game-Changer-Mantra), begeistert von **Selbstermächtigung** durch
+Öle und NEMs — nicht die „weiss alles besser"-Frau aus D6. **Beraterinnen werden gesucht:**
+engagiert, eigene Ideen, eigener Vibe, setzen um. Durch alle Antworten zieht sich dasselbe:
+**umsetzen statt reden.**
+
+---
+
+**Block D abgeschlossen (03.10.2026).** Kundinnen-Wissen in `kundinnen-geschichten.md` (Kundin B),
+`business-info.md` und `.claude/skills/copywriting/ZIELGRUPPE.md`.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.

@@ -161,6 +161,8 @@ Wie stark sollen die beiden Welten miteinander verbunden sein? Werden regenerier
 - Nach Wegen suchen, zu sich selbst zurückzufinden
 - Offen für natürliche Unterstützung (Öle, Routinen, Selbstfürsorge) sind
 - 🔄 **Konkret (Interview D6, 03.10.2026):** arbeitet neben den Kindern rund **70 %**, ist mega gestresst, *„keine Zeit für nichts"*, kein Business-Interesse — und weiss *„alles selber besser"*. Eine andere Frau als im Mentoring.
+- 🎯 **Wen sie will (Interview D7b):** *„kundinnen denen selbstbestimmung, selbstverantwortung auch so sehr am herzen liegt wie mir und die sich begeistern lassen für die selbstermächtigung die ihnen die öle und die nems geben."* (NEMs = Nahrungsergänzungsmittel; Compliance: Selbstermächtigung ja, Heilversprechen nie.)
+- 🎯 **Neue Beraterinnen: ja, gesucht.** *„engagierte teammitglieder mit eigenen ideen, eigenem vibe und die nicht nur reden sondern auch umsetzen."*
 
 ---
 
