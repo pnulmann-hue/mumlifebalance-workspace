@@ -600,5 +600,12 @@ sie selbst kommt"*
   C2: kein Druck, selbst lernen ist legitim, die Frage ist die Zeit.
 - „noch mehr" deutet an, dass sie schon viel ausgegeben haben (Network, frühere Kurse) →
   wahrer Grund offen, Rückfrage D3b.
+
+**D3b, Wortlaut:** *„ja ich sehe das auch so. ich denke es ist oft fehlendes vertrauen sich
+selbst oder mir gegenüber und die angst, dass es nicht klappt. trotzdem nicht klappt. ich kenn
+das von mir selbst ja auch"*
+→ Der eigentliche Einwand ist **„es klappt bei mir wieder nicht"**, nicht das Geld.
+Patricia kennt die Angst selbst — das macht ihre eigene Geschichte (erstes Network aufgegeben,
+zwei Jahre ohne Verkäufe) zur stärksten Antwort. Im Copywriting-Skill als Einwand ergänzt.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
