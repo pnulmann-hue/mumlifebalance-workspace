@@ -56,7 +56,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ C1 Was regt dich in der Network-Branche am meisten auf?
 - ✅ C2 Was regt dich in der Online-Coaching-Welt auf?
 - ✅ C3 Welchen gängigen Rat hältst du für falsch?
-- ⬜ C4 Wo bist du anderer Meinung als deine Upline oder die Firma?
+- ✅ C4 Wo bist du anderer Meinung als deine Upline oder die Firma?
 - ⬜ C5 Was denkst du über KI wirklich — Begeisterung, Grenzen, Sorgen?
 - ⬜ C6 Was denkst du über Mama-Sein und Arbeiten, was man nicht laut sagt?
 - ⬜ C7 Wofür würdest du öffentlich Gegenwind in Kauf nehmen?
@@ -509,5 +509,17 @@ gelegenheit, bei mir die strategie zu lernen und zu übernehmen"*
 - **Nebenbei geht** — wenn man es wirklich will, macht man es möglich (Selbstverantwortung).
 - **Leidenschaft plus Blick auf die Kundschaft:** Geld kommt, wenn man sich darauf
   konzentriert, was der Kundschaft wirklich weiterhilft, nicht nur auf das, was man selbst will.
+
+### C4 · Firma und Upline · 03.10.2026
+
+🔒 Wortlaut intern in `context/persoenlich/interview-intern.md`.
+
+**Festgehalten (öffentlich unbedenklich, allgemein formuliert):**
+- Die Firma selbst sieht sie nicht als extrem; die klassische Anleitung (Produkte erzählen,
+  Präsentationen, Namensliste aus dem Bekanntenkreis) gibt es trotzdem.
+- **Ihre Gegenposition** zum verbreiteten Rat „konzentrier dich nur aufs Network, bau nichts
+  Eigenes auf": *etwas Eigenes passend zum Network-Produkt aufzubauen ist ideal.* Das ist ihr
+  Hybridmodell und darf als Haltung in Content.
+- 🔒 Nie mit Bezug auf konkrete Personen, ihre eigene Upline oder die Firma als Schuldige.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
