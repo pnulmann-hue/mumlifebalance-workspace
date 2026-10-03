@@ -151,6 +151,8 @@ Grenze: frech gegen das **Verhalten**, das derbe Wort gegen die Masche — nicht
 - 🚨 **Nie** „du musst investieren", nie „wenn du das Geld nicht hast, gibt es andere Wege, es aufzutreiben" (Kredit, Mann fragen, Kreditkarte). Ratenzahlung als Option nennen ist in Ordnung, Druck dahinter nicht. Passt zu A5.
 - Konträr-Hook-Stoff: *Du kannst dir das alles selbst beibringen. Ehrlich.* — gefolgt von der Frage nach der Zeit.
 
+**Gegenwind (C7):** *„ich nehme bei allem gegenwind in kauf :-D"* — Texte nie aus Vorsicht abschwächen. Grenzen sind nur die, die sie selbst gesetzt hat (Verhalten statt Person · keine konkrete Upline · Kinder-Thema als eigene Entscheidung).
+
 **Ihr Warum — Mama-Sein und Arbeiten (Interview C6/C6b, 03.10.2026):** zwei Werte, die sie über die Selbständigkeit vereint:
 1. **Finanzielle Unabhängigkeit** — nicht abhängig von Mann oder Beziehung, und ans Alter denken: *„Das Leben ist jetzt, ja, aber eben nicht nur."* → frei verwendbar.
 2. **Für die Kinder da sein** — Familie heisst auch Verzicht. → 🚨 **nur als ihre eigene Entscheidung erzählen** (*„Ich wollte für meine Kinder da sein. Deshalb habe ich mir etwas Eigenes aufgebaut."*), **nie als Urteil** über Mütter, deren Kinder fremdbetreut werden — viele ihrer Kundinnen arbeiten noch 80 %.

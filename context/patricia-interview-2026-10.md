@@ -52,14 +52,14 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ B9 Gibt es Creator, deren Ton dir gefällt? Was genau daran?
 - ⏭ B10 Schick mir 3 Texte, die du komplett selbst geschrieben hast und gut findest.
 
-### Block C — Deine Meinungen (Haltung, Hot Takes)
+### Block C — Deine Meinungen (Haltung, Hot Takes) ✅
 - ✅ C1 Was regt dich in der Network-Branche am meisten auf?
 - ✅ C2 Was regt dich in der Online-Coaching-Welt auf?
 - ✅ C3 Welchen gängigen Rat hältst du für falsch?
 - ✅ C4 Wo bist du anderer Meinung als deine Upline oder die Firma?
 - ✅ C5 Was denkst du über KI wirklich — Begeisterung, Grenzen, Sorgen?
 - ✅ C6 Was denkst du über Mama-Sein und Arbeiten, was man nicht laut sagt?
-- ⬜ C7 Wofür würdest du öffentlich Gegenwind in Kauf nehmen?
+- ✅ C7 Wofür würdest du öffentlich Gegenwind in Kauf nehmen?
 
 ### Block D — Deine Kundinnen, heute
 - ⬜ D1 Beschreib die letzte Frau, die bei dir gekauft hat: wer, was, warum gerade jetzt?
@@ -551,5 +551,18 @@ Selbständigkeit. Deckt sich mit ihrer Mission vom 23.04.2026.
 
 **C6b, Wortlaut:** *„b"* → Beides darf öffentlich, **„für die Kinder da sein" nur als ihre
 eigene Entscheidung, nie als Urteil über Mütter mit Fremdbetreuung.** Regel in `brand-voice.md`.
+
+### C7 · Gegenwind · 03.10.2026
+
+**Wortlaut:** *„ich nehme bei allem gegenwind in kauf :-D"*
+
+**Festgehalten:** Keine Angst vor Gegenwind. Texte nicht aus Vorsicht abschwächen — die einzigen
+Grenzen sind die, die sie selbst gesetzt hat (C1b: gegen das Verhalten, nicht die Person · C4:
+keine konkrete Upline · C6b: Kinder-Thema als eigene Entscheidung).
+
+---
+
+**Block C abgeschlossen (03.10.2026).** Haltung steht in `brand-voice.md` unter „Persönlichkeit
+zeigen"; Privates in `context/persoenlich/interview-intern.md`.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
