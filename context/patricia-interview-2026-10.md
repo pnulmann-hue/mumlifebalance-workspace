@@ -63,8 +63,8 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 
 ### Block D — Deine Kundinnen, heute
 - ✅ D1 Beschreib die letzte Frau, die bei dir gekauft hat: wer, was, warum gerade jetzt?
-- ⬜ D2 Was sagen Frauen wörtlich in DMs und Calls, bevor sie kaufen?
-- ⬜ D3 Und was sagen die, die NICHT kaufen?
+- ⏭ D2 Was sagen Frauen wörtlich in DMs und Calls, bevor sie kaufen?
+- ✅ D3 Und was sagen die, die NICHT kaufen?
 - ⬜ D4 Welche Kundin war die schönste Erfahrung — und welche die schwierigste?
 - ⬜ D5 Was verändert sich bei deinen Kundinnen wirklich (nicht was die Salespage sagt)?
 - ⬜ D6 Wer ist deine doTERRA-Kundin heute — gleiche Frau oder eine andere?
@@ -584,5 +584,21 @@ Freigabe offen → nur anonym).
   alleine". Deckt sich mit C2 (Wissen kann man selbst lernen, man kauft Weg und Begleitung).
 - Kundensprache: *„jetzt oder nie"* · *„ins Tun kommen"* · *„nochmals weitergehen und noch nicht
   aufgeben"*.
+
+### D2 · übersprungen (durch D1 beantwortet; Patricia hat nachgefragt, keine weiteren Sätze)
+
+### D3 · Die, die nicht kaufen · 03.10.2026
+
+**Wortlaut:** *„einmal kam ich will eigentlich nicht noch mehr geld ausgeben. und eine hat bei
+instagram kundenmaschine mal geschrieben sie lasse es mal so weiterlaufen und schauen, wie weit
+sie selbst kommt"*
+
+**Festgehalten:**
+- Zwei echte Absagen: **„nicht noch mehr Geld ausgeben"** und **„schauen, wie weit ich selbst
+  komme"** (nach der Kundenmaschine, also bei einer Bestandskundin vor dem nächsten Schritt).
+- Beide als Einwand mit Antwort im Copywriting-Skill (`ZIELGRUPPE.md`) — Antwort im Geist von
+  C2: kein Druck, selbst lernen ist legitim, die Frage ist die Zeit.
+- „noch mehr" deutet an, dass sie schon viel ausgegeben haben (Network, frühere Kurse) →
+  wahrer Grund offen, Rückfrage D3b.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
