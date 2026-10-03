@@ -67,7 +67,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ D3 Und was sagen die, die NICHT kaufen?
 - ✅ D4 Welche Kundin war die schönste Erfahrung — und welche die schwierigste?
 - ✅ D5 Was verändert sich bei deinen Kundinnen wirklich (nicht was die Salespage sagt)?
-- ⬜ D6 Wer ist deine doTERRA-Kundin heute — gleiche Frau oder eine andere?
+- ✅ D6 Wer ist deine doTERRA-Kundin heute — gleiche Frau oder eine andere?
 - ⬜ D7 Welche Frau willst du mehr in deinem Business haben?
 
 ### Block E — Angebote und dein Gefühl dazu
@@ -651,5 +651,17 @@ fragt jetzt laufend nach **KI-Tipps** und kauft die MBA nicht.
 Für Verkaufstexte: das ehrliche Nachher. Umsatzversprechen nur mit belegten Fällen (bisher: zwei
 Startersets in einer Woche, DM-Flut nach einem Post — Vollprofil). Dauer bis zur ersten
 Veränderung: nicht beantwortet.
+
+### D6 · Die doTERRA-Kundin · 03.10.2026
+
+**Wortlaut:** *„eine mama die neben der kinder noch 70% arbeitet. mega gestresst ist, sagt dass
+sie keine zeit für nichts hat und alles selber besser weiss :-D"*
+
+**Festgehalten:** Eine **andere Frau als im Mentoring** — berufstätig (~70 %), gestresst, kein
+Business-Interesse. Einwände „keine Zeit für nichts" und „weiss ich doch alles". Eingetragen in
+`business-info.md` (Avatar doTERRA) und Copywriting-Skill (Segment 2 + Einwand). Ob schon jemand
+die Energie-Routine gekauft hat: nicht beantwortet.
+⚠️ Für Content beachten: Diese Frau ist berufstätig mit Kindern → C6b gilt doppelt (Kinder-
+Thema nie als Urteil).
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.

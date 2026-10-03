@@ -160,6 +160,7 @@ Wie stark sollen die beiden Welten miteinander verbunden sein? Werden regenerier
 - Sich körperlich und emotional regenerieren wollen
 - Nach Wegen suchen, zu sich selbst zurückzufinden
 - Offen für natürliche Unterstützung (Öle, Routinen, Selbstfürsorge) sind
+- 🔄 **Konkret (Interview D6, 03.10.2026):** arbeitet neben den Kindern rund **70 %**, ist mega gestresst, *„keine Zeit für nichts"*, kein Business-Interesse — und weiss *„alles selber besser"*. Eine andere Frau als im Mentoring.
 
 ---
 
