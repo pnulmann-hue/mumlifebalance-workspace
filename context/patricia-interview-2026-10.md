@@ -66,7 +66,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 - ✅ D2 Was sagen Frauen wörtlich in DMs und Calls, bevor sie kaufen?
 - ✅ D3 Und was sagen die, die NICHT kaufen?
 - ✅ D4 Welche Kundin war die schönste Erfahrung — und welche die schwierigste?
-- ⬜ D5 Was verändert sich bei deinen Kundinnen wirklich (nicht was die Salespage sagt)?
+- ✅ D5 Was verändert sich bei deinen Kundinnen wirklich (nicht was die Salespage sagt)?
 - ⬜ D6 Wer ist deine doTERRA-Kundin heute — gleiche Frau oder eine andere?
 - ⬜ D7 Welche Frau willst du mehr in deinem Business haben?
 
@@ -642,5 +642,14 @@ fragt jetzt laufend nach **KI-Tipps** und kauft die MBA nicht.
   der Regel „nie Netzwerkaufbau-Tipps".
 - Repel-Typ bestätigt: **Tipps sammeln, nichts umsetzen.**
 - Schönste Kundin: nicht beantwortet.
+
+### D5 · Was sich bei Kundinnen wirklich verändert · 03.10.2026
+
+**Wortlaut:** *„es gibt vor allem mehr klarheit und sicherheit und eine routine"*
+
+**Festgehalten:** Das echte Ergebnis sind **Klarheit, Sicherheit, Routine** — nicht Zahlen.
+Für Verkaufstexte: das ehrliche Nachher. Umsatzversprechen nur mit belegten Fällen (bisher: zwei
+Startersets in einer Woche, DM-Flut nach einem Post — Vollprofil). Dauer bis zur ersten
+Veränderung: nicht beantwortet.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
