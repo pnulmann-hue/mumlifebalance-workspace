@@ -548,5 +548,8 @@ ohne eigene Gedanken.
 geklärt ist (C6b). Kern: zwei Werte — **finanzielle Unabhängigkeit** (auch fürs Alter, nicht
 abhängig von Mann/Beziehung) und **für die Kinder da sein** — vereint sie über die
 Selbständigkeit. Deckt sich mit ihrer Mission vom 23.04.2026.
+
+**C6b, Wortlaut:** *„b"* → Beides darf öffentlich, **„für die Kinder da sein" nur als ihre
+eigene Entscheidung, nie als Urteil über Mütter mit Fremdbetreuung.** Regel in `brand-voice.md`.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.

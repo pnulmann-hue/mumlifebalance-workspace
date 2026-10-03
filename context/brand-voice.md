@@ -151,6 +151,10 @@ Grenze: frech gegen das **Verhalten**, das derbe Wort gegen die Masche — nicht
 - 🚨 **Nie** „du musst investieren", nie „wenn du das Geld nicht hast, gibt es andere Wege, es aufzutreiben" (Kredit, Mann fragen, Kreditkarte). Ratenzahlung als Option nennen ist in Ordnung, Druck dahinter nicht. Passt zu A5.
 - Konträr-Hook-Stoff: *Du kannst dir das alles selbst beibringen. Ehrlich.* — gefolgt von der Frage nach der Zeit.
 
+**Ihr Warum — Mama-Sein und Arbeiten (Interview C6/C6b, 03.10.2026):** zwei Werte, die sie über die Selbständigkeit vereint:
+1. **Finanzielle Unabhängigkeit** — nicht abhängig von Mann oder Beziehung, und ans Alter denken: *„Das Leben ist jetzt, ja, aber eben nicht nur."* → frei verwendbar.
+2. **Für die Kinder da sein** — Familie heisst auch Verzicht. → 🚨 **nur als ihre eigene Entscheidung erzählen** (*„Ich wollte für meine Kinder da sein. Deshalb habe ich mir etwas Eigenes aufgebaut."*), **nie als Urteil** über Mütter, deren Kinder fremdbetreut werden — viele ihrer Kundinnen arbeiten noch 80 %.
+
 **Ihre Haltung zu KI (Interview C5, 03.10.2026)** — Grundlage für alles rund um KI-Kurs und Masterclass:
 - **Begeistert:** *„dass man so viel abgeben kann, was eigentlich die eigene persönlichkeit eben nicht braucht. wir haben einen so grossen administrativen Tiger."* Sie ist *„ein absoluter fan von speditivität und organisatorischen dingen und struktur und strategie"* — all das geht mit KI.
 - **Grenze:** *„ich will kein ki profil. keine ki generierten videos von mir, die alles vollautomatisch machen. ich will ein SOCIALmedia. Verbindung fördern zu den menschen."*
