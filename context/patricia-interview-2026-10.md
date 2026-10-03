@@ -55,7 +55,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 ### Block C — Deine Meinungen (Haltung, Hot Takes)
 - ✅ C1 Was regt dich in der Network-Branche am meisten auf?
 - ✅ C2 Was regt dich in der Online-Coaching-Welt auf?
-- ⬜ C3 Welchen gängigen Rat hältst du für falsch?
+- ✅ C3 Welchen gängigen Rat hältst du für falsch?
 - ⬜ C4 Wo bist du anderer Meinung als deine Upline oder die Firma?
 - ⬜ C5 Was denkst du über KI wirklich — Begeisterung, Grenzen, Sorgen?
 - ⬜ C6 Was denkst du über Mama-Sein und Arbeiten, was man nicht laut sagt?
@@ -490,5 +490,24 @@ gelegenheit, bei mir die strategie zu lernen und zu übernehmen"*
   verbietet „Kredit-Empfehlung" schon.
 - Offen: ob die Copywriting-Pipeline der Mentorin „Investition"-Framing nahelegt → bei
   nächster Verkaufsseite darauf achten (Julias Text wird nicht verändert).
+
+### C3 · Gängige Ratschläge, die sie anders sieht · 03.10.2026
+
+| Rat | Ihr Wortlaut |
+|---|---|
+| „Poste jeden Tag" | *„falsch. statt mist posten, lieber qualität vor quantität. reichweite nutzt nichts wenn sie dann nicht mal sehen, was sie bei dir bekommen und was sie davon haben"* |
+| „Erst 10'000 Follower" | *„braucht es nicht"* |
+| „Erzähl jedem von deinem Business" | *„ne. aber auch nicht verschweigen. wenn man gefragt wird, was man tut. soll man die selbständigkeit nennen. wem helfe ich wobei und wozu und dann aber schluss. wenn jemand nachfragt und ein gespräch entsteht AUS INTERESSE dann ist alles gut. sonst bitte nicht"* |
+| „Mach es nebenbei" | *„ja, finde ich schon. wenn man es wirklich will dann soll man es sich möglich machen"* — **stimmt ihr zu** |
+| „Folge deiner Leidenschaft" | *„folge deiner leidenschaft und vor allem versetze dich in das was der kunde braucht. was hilft dem kunden wirklich weiter. wenn man sich darauf konzentriert und nicht nur auf sich selbst. was man selber will. dann kommt das geld"* |
+
+**Festgehalten:**
+- **Qualität vor Quantität** — deckt sich mit den eigenen Zahlen (Februar 12 Beiträge,
+  Median 348 · Juni 54 Beiträge, Median 155). Reichweite ohne erkennbaren Nutzen ist wertlos.
+- **Ihre Vorstell-Formel:** *„wem helfe ich, wobei und wozu"* — einmal sagen, dann Schluss;
+  weiter nur, wenn jemand aus Interesse nachfragt. Gegenstück zu ihrem Aufreger C1.
+- **Nebenbei geht** — wenn man es wirklich will, macht man es möglich (Selbstverantwortung).
+- **Leidenschaft plus Blick auf die Kundschaft:** Geld kommt, wenn man sich darauf
+  konzentriert, was der Kundschaft wirklich weiterhilft, nicht nur auf das, was man selbst will.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.

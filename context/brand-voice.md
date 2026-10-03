@@ -151,6 +151,13 @@ Grenze: frech gegen das **Verhalten**, das derbe Wort gegen die Masche — nicht
 - 🚨 **Nie** „du musst investieren", nie „wenn du das Geld nicht hast, gibt es andere Wege, es aufzutreiben" (Kredit, Mann fragen, Kreditkarte). Ratenzahlung als Option nennen ist in Ordnung, Druck dahinter nicht. Passt zu A5.
 - Konträr-Hook-Stoff: *Du kannst dir das alles selbst beibringen. Ehrlich.* — gefolgt von der Frage nach der Zeit.
 
+**Gängige Ratschläge — ihre Sicht (Interview C3, 03.10.2026):**
+- *„Poste jeden Tag"* → **falsch.** *„statt mist posten, lieber qualität vor quantität. reichweite nutzt nichts wenn sie dann nicht mal sehen, was sie bei dir bekommen und was sie davon haben"*
+- *„Erst 10'000 Follower"* → *„braucht es nicht"*
+- *„Erzähl jedem davon"* → nein, aber auch nicht verschweigen: **„wem helfe ich, wobei und wozu" — dann Schluss.** Weiter nur, wenn jemand *aus Interesse* nachfragt.
+- *„Mach es nebenbei"* → **stimmt** — *„wenn man es wirklich will, dann soll man es sich möglich machen"*
+- *„Folge deiner Leidenschaft"* → ja, **und vor allem** fragen, was der Kundschaft wirklich weiterhilft, statt nur, was man selbst will — *„dann kommt das geld"*
+
 **Was sie an ihren Vorbildern mag (B9b):** *„humor, direktheit, wie sie verkaufen"* — genau diese drei Dinge sollen ihre Texte tragen. (Namen der Vorbilder nie in Kundentexten.)
 
 **Beim Verkaufen (Interview B7, 02.10.2026):**
