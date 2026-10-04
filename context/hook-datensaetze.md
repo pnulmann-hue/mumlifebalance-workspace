@@ -38,6 +38,14 @@ sich eine Quelle, wird hier nachgezogen — nicht umgekehrt.
 die ziehen: sich ins Büro quälen · der Wecker am Montag · Ferien beantragen für den Teamevent ·
 Kündigungsfrist ausrechnen · „nur noch zwei Tage die Woche“.
 
+### Welche Gedanken ziehen — gemessen (04.10.2026, 833 Nischen-Beiträge)
+
+**Mit Kraft:** „Mein Umfeld belächelt mich“ · „Ich hasse es, Leute anzuschreiben“ (Namensliste) ·
+„Manche Methoden fühlen sich falsch an“ · „Ich bin so schlecht vor der Kamera“ · „Bei allen anderen
+läuft es“ · Mama-Realität · Geldangst. **Ohne Kraft:** Algorithmus, Hashtags, Leadmagnet,
+KI-Technik, abstrakte Geldziele, „ich poste und nichts passiert“ (häufigster Gedanke, aber Frust
+zieht nicht). Wörtliche Kommentare und alle 15 Gedanken: `outputs/marktrecherche/2026-10-04-nische-gedanken.md`.
+
 ### Käufertypen → welcher Hook sie holt
 
 Julias sechs Launch-Typen (`julia-launch-kaeufertypen.md`) und DISG (`brandastic-kaeufertypen.md`),

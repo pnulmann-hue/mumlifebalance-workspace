@@ -8,8 +8,10 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 
 ## Dateien
 
+- [[2026-10-04-hook-gesamtbericht]]
 - [[2026-10-04-hook-markt-analyse]]
 - [[2026-10-04-hook-verkaufsdaten]]
+- [[2026-10-04-nische-gedanken]]
 - [[2026-10-04-zielgruppe-ausserhalb-instagram]]
 - [[KW18-doterra]]
 - [[KW18-mentoring]]

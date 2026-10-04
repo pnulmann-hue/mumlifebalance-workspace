@@ -13,219 +13,235 @@ tags: [research, hooks]
 | | Beiträge | Konten |
 |---|---:|---:|
 | deine (reif, jetzige Ausrichtung) | 392 | 1 |
-| Markt: Konkurrenz-Scrape | 775 | 14 |
+| Markt: Konkurrenz-Scrape | 1604 | 17 |
 | Markt: Hashtag-Suche | 92 | 11 |
 
-## Deine Nische (von dir benannt: dascha_stories, juliatrost.official, katrinhill.onlinewachsen, reichweitenherz)
+## Deine Nische (von dir benannt: dascha_stories, die_fuehlbarmacherin, juliatrost.official, katrinhill.onlinewachsen, nikoleta.kolokytha, reichweitenherz)
 
-*102 Beiträge. Steht der Hook auf dem Titelbild, zählt der Bildtext (48 Beiträge), sonst die erste Caption-Zeile.*
+*795 Beiträge. Steht der Hook auf dem Titelbild, zählt der Bildtext (761 Beiträge), sonst die erste Caption-Zeile.*
 
 ### Form
 
 | | Nische n | Nische Faktor | ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| aufruf | 11 | **1.44** | 9 % | 22 | 1.02 |
-| ratgeber | 12 | **1.39** | 42 % | 18 | 0.69 |
-| ereignis | 10 | **1.0** | 30 % | 43 | 0.93 |
-| beweis | 12 | **0.96** | 8 % | 18 | 0.59 |
-| meinung | 10 | **0.92** | 10 % | 77 | 0.87 |
-| zitat | 10 | **0.67** | 0 % | – | – |
+| dialog | 31 | **1.27** | 26 % | 23 | 0.98 |
+| ereignis | 45 | **1.21** | 27 % | 43 | 0.93 |
+| liste | 78 | **1.12** | 12 % | 28 | 0.45 |
+| frage | 51 | **1.1** | 8 % | 21 | 0.78 |
+| ratgeber | 123 | **1.04** | 15 % | 18 | 0.69 |
+| bekenntnis | 81 | **1.02** | 16 % | 73 | 1.16 |
+| meinung | 172 | **0.99** | 15 % | 77 | 0.87 |
+| sonstiges | 46 | **0.97** | 22 % | – | – |
+| beweis | 58 | **0.84** | 14 % | 18 | 0.59 |
+| du-szene | 50 | **0.83** | 6 % | 66 | 0.69 |
+| zitat | 36 | **0.83** | 11 % | – | – |
+| aufruf | 24 | **0.78** | 17 % | 22 | 1.02 |
 
 ### Angle
 
 | | Nische n | Nische Faktor | ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| ergebnis | 22 | **1.11** | 27 % | 56 | 0.6 |
-| neugier | 21 | **1.09** | 19 % | 40 | 0.93 |
-| beweis | 11 | **1.01** | 27 % | 19 | 0.56 |
-| kontraer | 15 | **1.0** | 13 % | 88 | 0.76 |
-| identitaet | 20 | **0.97** | 15 % | 57 | 1.16 |
-| schmerz | 9 | **0.82** | 0 % | 113 | 0.72 |
+| ergebnis | 131 | **1.12** | 20 % | 56 | 0.6 |
+| identitaet | 109 | **1.06** | 20 % | 57 | 1.16 |
+| kontraer | 165 | **1.0** | 15 % | 88 | 0.76 |
+| neugier | 141 | **0.97** | 15 % | 40 | 0.93 |
+| beweis | 75 | **0.95** | 20 % | 19 | 0.56 |
+| vergleich | 36 | **0.92** | 11 % | 19 | 0.59 |
+| schmerz | 138 | **0.91** | 4 % | 113 | 0.72 |
 
 ### Bewusstseinsstufe
 
 | | Nische n | Nische Faktor | ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| 1 | 21 | **1.07** | 24 % | 63 | 1.2 |
-| 3 | 42 | **1.0** | 21 % | 106 | 0.67 |
-| 2 | 27 | **0.92** | 15 % | 206 | 0.84 |
-| 4 | 11 | **0.84** | 0 % | 14 | 0.53 |
+| 3 | 297 | **1.04** | 15 % | 106 | 0.67 |
+| 2 | 301 | **1.01** | 14 % | 206 | 0.84 |
+| 1 | 132 | **0.98** | 20 % | 63 | 1.2 |
+| 4 | 60 | **0.72** | 8 % | 14 | 0.53 |
 
 ### Konkret (Gegenstand/Betrag/Ereignis)
 
 | | Nische n | Nische Faktor | ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| False | 61 | **1.01** | 13 % | 229 | 0.89 |
-| True | 41 | **0.98** | 24 % | 163 | 0.69 |
+| True | 270 | **1.11** | 23 % | 163 | 0.69 |
+| False | 525 | **0.95** | 11 % | 229 | 0.89 |
 
 ### Emotion
 
 | | Nische n | Nische Faktor | ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| hoffnung | 22 | **1.02** | 9 % | 70 | 0.63 |
-| humor | 10 | **1.0** | 20 % | 11 | 0.69 |
-| neugier | 38 | **1.0** | 24 % | 113 | 0.87 |
-| stolz | 10 | **0.97** | 10 % | 10 | 0.9 |
+| humor | 78 | **1.11** | 24 % | 11 | 0.69 |
+| hoffnung | 119 | **1.1** | 14 % | 70 | 0.63 |
+| wut | 36 | **1.1** | 11 % | 10 | 1.65 |
+| stolz | 34 | **1.1** | 21 % | 10 | 0.9 |
+| neugier | 346 | **1.0** | 17 % | 113 | 0.87 |
+| angst | 52 | **0.97** | 6 % | 9 | 0.62 |
+| scham | 27 | **0.96** | 4 % | 41 | 1.07 |
+| erleichterung | 43 | **0.9** | 5 % | 30 | 0.69 |
+| keine | 25 | **0.69** | 8 % | – | – |
 
 ### Die stärksten Hooks deiner Nische
 
 | Faktor | Konto | Hook | Quelle | Form · Angle |
 |---:|---|---|---|---|
-| 144.68 | juliatrost.official | POV du machst dich selbstständig und kannst dir endlich deinen größten Traum erfüllen 😍 | bild | du-szene · ergebnis |
-| 20.21 | juliatrost.official | Alter: 27 Einkommen: 2500€ mntl. | bild | beweis · beweis |
-| 9.57 | dascha_stories | Video Regeln👇 In 2026 reicht es nicht mehr aus, nur auf einen guten Hook zu achten. Wir brauchen heute mehrere visuelle Details im Video, um die Aufme | caption | ratgeber · kontraer |
-| 5.27 | dascha_stories | Kommentiere „Anker“ um das Video „Die 4-Follower-Anker: So erstellst du deine Reels, nach denen Menschen dir folgen“ für 0,-€ zu bekommen | caption | aufruf · ergebnis |
-| 4.68 | reichweitenherz | Julia, ist es wirklich nötig bei meiner ZIELGRUPPE zu liken und zu kommentieren? Das rate ich dir | bild | dialog · neugier |
-| 4.19 | juliatrost.official | Verschuldet mit 27 Millionen Unternehmerin mit 31 Was ich meinem jüngeren Ich mitgeben würde, wenn ich keine Angst hätte, deine Gefühle zu verletzen.. | bild | ereignis · beweis |
-| 3.39 | reichweitenherz | FAKT: Niemand unterstützt dich härter als die Mädels, die du online kennengelernt hast und die nicht mal deinen Nachnamen kennen | bild | meinung · identitaet |
-| 3.1 | reichweitenherz | 3 Arten, dich auf deinem Insta Profil vorzustellen ohne dass es klingt wie: Hi, ich bin Julia, 36 und liebe Sonnenuntergänge | bild | liste · ergebnis |
-| 2.86 | dascha_stories | Warum gewinnt einfache Sprache immer? 🧠👇 | caption | frage · neugier |
-| 2.61 | juliatrost.official | ICH HABE GEDACHT, INSTAGRAM SEI TOD. DANN HAB ICHS AN CLAUDE GEGEBEN. 3 MONATE SPÄTER: 30.000€ MEHR UMSATZ. KLAU MEINE 4 PROMPTS | bild | ereignis · beweis |
-| 2.25 | katrinhill.onlinewachsen | Ach ja, es nimmt gefühlt kein Ende 👀😅 | caption | sonstiges · neugier |
-| 2.19 | dascha_stories | So findest Ideen👇 | caption | ratgeber · ergebnis |
-| 2.18 | reichweitenherz | 🚨 Verwende NIEMALS deinen Namen in der „Namenszeile", wenn du willst, dass dich jemand auf Instagram findet! | bild | ratgeber · kontraer |
-| 2.12 | juliatrost.official | Erstelle einen Onlinekurs mit mir mit ChatGPT und Canva 🔥💖✨ | bild | ratgeber · ergebnis |
-| 2.12 | reichweitenherz | Ich will kein Rampenlicht. Ich will Umsatz in Jogginghose. Ehrlicher Content, der verkauft auch wenn ich gerade unter meiner Decke verschwinde. Komm,  | bild | bekenntnis · identitaet |
-| 2.11 | juliatrost.official | WIE ICH AUF 8 PLATTFORMEN GLEICHZEITIG POSTE — IN UNTER 10 MINUTEN AM TAG | bild | ratgeber · ergebnis |
-| 2.06 | katrinhill.onlinewachsen | Einen Moment innehalten... | caption | sonstiges · neugier |
-| 2.04 | juliatrost.official | September Recap so far: Größter Heartbreak meines Lebens 💔 & mehr als dankbar für die besten Freunde die mich täglich auf andere Gedanken bringen ♥️ Z | caption | ereignis · identitaet |
-| 1.76 | juliatrost.official | hinter den ZAHLEN Teil 1 | bild | sonstiges · neugier |
-| 1.75 | juliatrost.official | WENN DU ERST MAL REICH BIST, SIND DAS DIE DINGE, DIE DICH BESCHÄFTIGEN | bild | liste · neugier |
-| 1.71 | dascha_stories | Am 01.10 startet meine brandneue Reels Challenge für 0,-€. | caption | aufruf · ergebnis |
-| 1.65 | juliatrost.official | WARUM ICH MICH SO ANGEZOGEN | bild | bekenntnis · neugier |
-| 1.65 | juliatrost.official | Mit diesen 4 simplen Schritten generiere ich Content der mir monatlich 50000€ macht! | bild | liste · ergebnis |
-| 1.65 | katrinhill.onlinewachsen | Kommentiere „GROW“, wenn du aufhören willst, dich selbst auszubremsen und endlich die Entscheidungen treffen möchtest, die dich und dein Business vora | caption | aufruf · schmerz |
-| 1.56 | katrinhill.onlinewachsen | Es wird Zeit, dass jede & jeder in die volle Power kommt! | caption | aufruf · identitaet |
+| 105.33 | juliatrost.official | POV du machst dich selbstständig und kannst dir endlich deinen größten Traum erfüllen 😍 | bild | du-szene · ergebnis |
+| 23.16 | juliatrost.official | Mit diesen 4 simplen Schritten generiere ich Content der mir monatlich 50000€ macht! | bild | liste · ergebnis |
+| 16.08 | reichweitenherz | Niemand, wirklich NIEMAND spricht darüber, wie es wirklich ist, ein Business aufzubauen mit Kindern. Ich mach's jetzt einfach mal: | bild | bekenntnis · schmerz |
+| 14.71 | juliatrost.official | Alter: 27 Einkommen: 2500€ mntl. | bild | beweis · beweis |
+| 13.26 | nikoleta.kolokytha | Nein Ilona! Ich möchte mich mit dir NICHT austauschen! | bild | dialog · kontraer |
+| 11.22 | die_fuehlbarmacherin | NETWORK URTEILE NACH 15 JAHREN (Ungefragt. Aber leider ziemlich treffsicher.) Lets go..... | bild | meinung · beweis |
+| 10.66 | reichweitenherz | Kurze Erinnerung: Falls deine Freundin gerade ihr eigenes Business aufbaut: | bild | aufruf · identitaet |
+| 10.24 | reichweitenherz | An alle, die wirklich jedes einzelne Mal unter meinen Likes auftauchen: Ich sehe euch. Ich merk mir das. Und ich lieb's. | bild | sonstiges · identitaet |
+| 9.9 | nikoleta.kolokytha | Oh mein Gott Nikoleta! 😍 wir haben uns zwar seit 2 Jahren nicht gehört. ABER ich hab hier was MEGA Geniales für dich!!! | bild | dialog · kontraer |
+| 9.47 | juliatrost.official | Ich eifersüchtig? Ich mach dein monatliches Gehalt an einem Tag! | bild | meinung · beweis |
+| 9.42 | juliatrost.official | Manchmal hab ich das Gefühl, gecheated zu haben. Ich bin 31, hab mehr Geld als alle die ich kenne, hab mir den Traum vom Porsche erfüllt und passe imm | bild | bekenntnis · ergebnis |
+| 7.8 | juliatrost.official | WIE ICH AUF 8 PLATTFORMEN GLEICHZEITIG POSTE — IN UNTER 10 MINUTEN AM TAG | bild | ratgeber · ergebnis |
+| 7.7 | reichweitenherz | Ich habe gestern den HOOK gelesen: „Ich würde mich immer wieder für RINGANA entscheiden" Und meine völlig unzensierte Reaktion war: | bild | ereignis · neugier |
+| 7.65 | juliatrost.official | Manchmal hab ich das Gefühl, gecheated zu haben. Ich bin 31, hab mehr Geld als alle die ich kenne, hab mir den Traum vom Porsche erfüllt und passe imm | bild | bekenntnis · ergebnis |
+| 7.65 | juliatrost.official | Ich hatte dieses Jahr 2 ops bereits und bin für jede einzelne dankbar. | caption | bekenntnis · identitaet |
+| 7.34 | juliatrost.official | Lieber 7 Sekunden unangenehm irgendwelche Videos filmen & dafür 2.000€ täglich machen, als unangenehme 8 Stunden für jemand anderen zu arbeiten für 2k | bild | meinung · vergleich |
+| 7.07 | die_fuehlbarmacherin | Übrigens.... Die Networkerin, die seit Monaten nichts mehr postet, hat vielleicht nicht aufgegeben. Vielleicht versucht sie gerade einfach, ihr Leben  | bild | meinung · identitaet |
+| 6.95 | juliatrost.official | Warum ich nicht mehr mit Leuten rede, die kein Business haben | bild | meinung · kontraer |
+| 6.72 | juliatrost.official | Viele denken, ich sei bereits Millionär. Aber das ist die Wahrheit: | bild | bekenntnis · neugier |
+| 6.38 | juliatrost.official | Geld macht nicht glücklich | bild | meinung · kontraer |
+| 6.13 | reichweitenherz | Brutal ehrliche Insta-Tipps für Frauen, die gerade erst anfangen. Die Sachen, die dir wirklich den Arsch retten können. | bild | ratgeber · identitaet |
+| 5.84 | reichweitenherz | Julia, ist es wirklich nötig bei meiner ZIELGRUPPE zu liken und zu kommentieren? Das rate ich dir | bild | dialog · neugier |
+| 5.67 | die_fuehlbarmacherin | So sagst du höflich F*ck you zu den dümmsten Network Sprüchen... | bild | ratgeber · identitaet |
+| 5.66 | juliatrost.official | So nutze ich Claude und Manychat, um meinen Urlaub zu finanzieren | bild | ratgeber · ergebnis |
+| 5.27 | juliatrost.official | Manchmal hab ich das Gefühl, gecheated zu haben 😵‍💫 Ich bin 31, habe nur 1.5 Jahr gearbeitet und dennoch mehr Geld als 99% der Menschen die ich kenne | bild | bekenntnis · beweis |
 
 ## Mentoring (alle Konten, inkl. Umfeld)
 
-*Markt: 594 Beiträge · deine: 392 Beiträge*
+*Markt: 1423 Beiträge · deine: 392 Beiträge*
 
 ### Form
 
 | | Markt n | Markt Faktor | Markt ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| sonstiges | 33 | **1.35** | 30 % | – | – |
-| liste | 9 | **1.18** | 11 % | 28 | 0.45 |
-| dialog | 16 | **1.09** | 31 % | 23 | 0.98 |
-| ratgeber | 23 | **1.02** | 22 % | 18 | 0.69 |
-| meinung | 107 | **1.01** | 20 % | 77 | 0.87 |
-| zitat | 60 | **1.0** | 27 % | – | – |
-| du-szene | 48 | **1.0** | 21 % | 66 | 0.69 |
-| bekenntnis | 140 | **1.0** | 24 % | 73 | 1.16 |
-| frage | 53 | **0.95** | 19 % | 21 | 0.78 |
-| ereignis | 45 | **0.95** | 16 % | 43 | 0.93 |
-| beweis | 21 | **0.88** | 5 % | 18 | 0.59 |
-| aufruf | 39 | **0.87** | 13 % | 22 | 1.02 |
+| dialog | 42 | **1.23** | 29 % | 23 | 0.98 |
+| liste | 82 | **1.12** | 11 % | 28 | 0.45 |
+| ereignis | 129 | **1.06** | 19 % | 43 | 0.93 |
+| ratgeber | 135 | **1.02** | 14 % | 18 | 0.69 |
+| meinung | 271 | **1.0** | 17 % | 77 | 0.87 |
+| sonstiges | 131 | **1.0** | 16 % | – | – |
+| frage | 101 | **1.0** | 13 % | 21 | 0.78 |
+| bekenntnis | 214 | **1.0** | 21 % | 73 | 1.16 |
+| zitat | 101 | **0.96** | 21 % | – | – |
+| du-szene | 92 | **0.93** | 13 % | 66 | 0.69 |
+| beweis | 67 | **0.84** | 12 % | 18 | 0.59 |
+| aufruf | 58 | **0.76** | 14 % | 22 | 1.02 |
 
 ### Angle
 
 | | Markt n | Markt Faktor | Markt ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| identitaet | 160 | **1.25** | 32 % | 57 | 1.16 |
-| kontraer | 126 | **1.0** | 19 % | 88 | 0.76 |
-| schmerz | 87 | **1.0** | 13 % | 113 | 0.72 |
-| ergebnis | 62 | **0.99** | 16 % | 56 | 0.6 |
-| neugier | 115 | **0.92** | 21 % | 40 | 0.93 |
-| vergleich | 19 | **0.9** | 5 % | 19 | 0.59 |
-| beweis | 25 | **0.89** | 12 % | 19 | 0.56 |
+| identitaet | 279 | **1.18** | 26 % | 57 | 1.16 |
+| ergebnis | 189 | **1.1** | 16 % | 56 | 0.6 |
+| kontraer | 277 | **1.0** | 17 % | 88 | 0.76 |
+| neugier | 319 | **0.97** | 16 % | 40 | 0.93 |
+| schmerz | 216 | **0.94** | 8 % | 113 | 0.72 |
+| vergleich | 52 | **0.91** | 10 % | 19 | 0.59 |
+| beweis | 91 | **0.9** | 18 % | 19 | 0.56 |
 
 ### Bewusstseinsstufe
 
 | | Markt n | Markt Faktor | Markt ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| 1 | 277 | **1.15** | 31 % | 63 | 1.2 |
-| 2 | 180 | **0.96** | 14 % | 206 | 0.84 |
-| 3 | 103 | **0.9** | 12 % | 106 | 0.67 |
-| 4 | 32 | **0.77** | 6 % | 14 | 0.53 |
+| 1 | 410 | **1.06** | 26 % | 63 | 1.2 |
+| 2 | 454 | **1.0** | 14 % | 206 | 0.84 |
+| 3 | 358 | **1.0** | 13 % | 106 | 0.67 |
+| 5 | 114 | **1.0** | 12 % | – | – |
+| 4 | 87 | **0.78** | 8 % | 14 | 0.53 |
 
 ### Konkret (Gegenstand/Betrag/Ereignis)
 
 | | Markt n | Markt Faktor | Markt ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| False | 442 | **1.05** | 24 % | 229 | 0.89 |
-| True | 152 | **0.9** | 12 % | 163 | 0.69 |
+| True | 478 | **1.02** | 17 % | 163 | 0.69 |
+| False | 945 | **1.0** | 17 % | 229 | 0.89 |
 
 ### Emotion
 
 | | Markt n | Markt Faktor | Markt ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| wut | 8 | **1.51** | 25 % | 10 | 1.65 |
-| wehmut | 11 | **1.42** | 45 % | – | – |
 | verstaendnis | 9 | **1.41** | 33 % | – | – |
-| humor | 58 | **1.29** | 36 % | 11 | 0.69 |
-| angst | 19 | **1.24** | 21 % | 9 | 0.62 |
+| mut | 10 | **1.28** | 30 % | – | – |
+| wehmut | 12 | **1.23** | 42 % | – | – |
+| humor | 132 | **1.22** | 29 % | 11 | 0.69 |
+| stolz | 54 | **1.17** | 20 % | 10 | 0.9 |
 | verbundenheit | 12 | **1.15** | 17 % | 11 | 1.57 |
-| stolz | 29 | **1.02** | 17 % | 10 | 0.9 |
-| hoffnung | 78 | **0.97** | 15 % | 70 | 0.63 |
-| neugier | 200 | **0.93** | 19 % | 113 | 0.87 |
-| erleichterung | 46 | **0.93** | 22 % | 30 | 0.69 |
-| sehnsucht | 8 | **0.91** | 0 % | – | – |
-| keine | 8 | **0.88** | 12 % | – | – |
-| scham | 9 | **0.84** | 11 % | 41 | 1.07 |
-| frust | – | – | – | 43 | 0.64 |
+| wut | 43 | **1.1** | 14 % | 10 | 1.65 |
+| angst | 65 | **1.03** | 8 % | 9 | 0.62 |
+| hoffnung | 175 | **1.02** | 15 % | 70 | 0.63 |
+| freude | 76 | **0.98** | 8 % | – | – |
+| scham | 34 | **0.96** | 6 % | 41 | 1.07 |
+| frust | 14 | **0.96** | 7 % | 43 | 0.64 |
+| neugier | 524 | **0.95** | 17 % | 113 | 0.87 |
+| keine | 52 | **0.93** | 13 % | – | – |
+| vorfreude | 16 | **0.92** | 19 % | – | – |
+| erleichterung | 84 | **0.9** | 13 % | 30 | 0.69 |
+| sehnsucht | 9 | **0.88** | 0 % | – | – |
 | neid | – | – | – | 10 | 0.47 |
 
 ### Frage drin
 
 | | Markt n | Markt Faktor | Markt ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| False | 530 | **1.0** | 21 % | 356 | 0.75 |
-| True | 64 | **1.0** | 22 % | 36 | 1.22 |
+| True | 147 | **1.02** | 16 % | 36 | 1.22 |
+| False | 1276 | **1.0** | 17 % | 356 | 0.75 |
 
 ### Zahl drin
 
 | | Markt n | Markt Faktor | Markt ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| False | 505 | **1.01** | 23 % | 282 | 0.87 |
-| True | 89 | **0.92** | 10 % | 110 | 0.61 |
+| False | 1051 | **1.0** | 18 % | 282 | 0.87 |
+| True | 372 | **1.0** | 14 % | 110 | 0.61 |
 
 ### Perspektive
 
 | | Markt n | Markt Faktor | Markt ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| neutral | 204 | **1.06** | 21 % | 57 | 0.89 |
-| du | 134 | **1.0** | 22 % | 116 | 0.66 |
-| ich | 225 | **1.0** | 21 % | 152 | 0.82 |
-| beides | 31 | **0.78** | 19 % | 67 | 1.09 |
+| beides | 110 | **1.06** | 25 % | 67 | 1.09 |
+| neutral | 521 | **1.01** | 16 % | 57 | 0.89 |
+| ich | 401 | **1.0** | 18 % | 152 | 0.82 |
+| du | 391 | **0.96** | 14 % | 116 | 0.66 |
 
 ### Länge
 
 | | Markt n | Markt Faktor | Markt ≥2× | deine n | deine Faktor |
 |---|---:|---:|---:|---:|---:|
-| kurz (≤8 Wörter) | 226 | **1.02** | 24 % | – | – |
-| lang (17+) | 102 | **1.02** | 20 % | 68 | 1.1 |
-| mittel (9–16) | 266 | **0.95** | 19 % | 324 | 0.76 |
+| lang (17+) | 292 | **1.06** | 18 % | 68 | 1.1 |
+| mittel (9–16) | 601 | **1.0** | 16 % | 324 | 0.76 |
+| kurz (≤8 Wörter) | 530 | **0.99** | 17 % | – | – |
 
 ### Die stärksten Hooks im Markt
 
 | Faktor | Konto | Hook | Form · Angle |
 |---:|---|---|---|
-| 144.68 | juliatrost.official | POV du machst dich selbstständig und kannst dir endlich deinen größten Traum erfüllen 😍 | du-szene · ergebnis |
 | 111.53 | powerfrauenfocus | Du musst nicht jeden Tag stark sein. Du musst nur immer wieder zurückkommen. | zitat · identitaet |
+| 105.33 | juliatrost.official | POV du machst dich selbstständig und kannst dir endlich deinen größten Traum erfüllen 😍 | du-szene · ergebnis |
 | 55.59 | annabraun_coaching | Hey, schön das du mich hier gefunden hast. | sonstiges · identitaet |
 | 53.33 | powerfrauenfocus | Früher habe ich viel zu oft darüber nachgedacht, was andere von mir denken könnten. | bekenntnis · identitaet |
 | 51.69 | alleinerziehend.erfolgreich | Ich hatte da früher wirklich ein ganz klares Bild von mir als Mama: | bekenntnis · identitaet |
+| 41.92 | xavermayr1794 | 30.08.2022 Live aus dem Modehaus Xaver Mayr 💃 | ereignis · neugier |
+| 39.37 | xavermayr1794 | 30.08.2022 Live aus dem Modehaus Xaver Mayr 💃 | ereignis · neugier |
 | 33.27 | powerfrauenfocus | Hey, du Powerfrau tu es für dich. | zitat · identitaet |
 | 28.63 | alleinerziehend.erfolgreich | Ich glaube, genau DAS ist die Phase, über die viel zu wenig gesprochen wird. | meinung · neugier |
 | 28.08 | alleinerziehend.erfolgreich | Ich weiß nicht, wer hier eigentlich wen erzieht… 😂 | bekenntnis · identitaet |
 | 23.25 | powerfrauenfocus | Ich habe aufgehört, jeden von mir überzeugen zu wollen. | bekenntnis · identitaet |
-| 20.21 | juliatrost.official | Alter: 27 Einkommen: 2500€ mntl. | beweis · beweis |
+| 23.16 | juliatrost.official | Mit diesen 4 simplen Schritten generiere ich Content der mir monatlich 50000€ macht! | liste · ergebnis |
 | 17.69 | alleinerziehend.erfolgreich | Ich trage schon genug. ❤️ | bekenntnis · schmerz |
 | 17.13 | alleinerziehend.erfolgreich | Lange Zeit dachte ich, stark sein bedeutet, alles auszuhalten. | bekenntnis · kontraer |
 | 16.96 | alleinerziehend.erfolgreich | Alleinerziehend zu sein bedeutet nicht, alles perfekt zu machen. | meinung · identitaet |
+| 16.08 | reichweitenherz | Niemand, wirklich NIEMAND spricht darüber, wie es wirklich ist, ein Business aufzubauen mit Kindern. Ich mach's jetzt einfach mal: | bekenntnis · schmerz |
 | 15.21 | powerfrauenfocus | Wann hörst du endlich auf, dein Leben danach auszurichten, was andere davon halten könnten? | frage · schmerz |
 | 14.76 | powerfrauenfocus | Du musst dich nicht neu erfinden. Vielleicht musst du dich nur wieder daran erinnern, wer du eigentlich bist, bevor du angefangen hast, dich kleiner z | zitat · identitaet |
+| 14.71 | juliatrost.official | Alter: 27 Einkommen: 2500€ mntl. | beweis · beweis |
 | 14.54 | powerfrauenfocus | Ich habe lange gedacht, ich müsste alles alleine schaffen. | bekenntnis · identitaet |
 | 14.34 | alleinerziehend.erfolgreich | Früher dachte ich, Liebe bedeutet auch, jemanden zu brauchen. | bekenntnis · kontraer |
 | 14.02 | annabraun_coaching | Ungebetene und ehrlicherweise sehr seltsame Kommentare kennen wir Mamas alle, oder? | frage · identitaet |
+| 13.26 | nikoleta.kolokytha | Nein Ilona! Ich möchte mich mit dir NICHT austauschen! | dialog · kontraer |
 | 12.91 | powerfrauenfocus | Vielleicht sieht dein Happy End ganz anders aus, als du es dir früher vorgestellt hast. | du-szene · kontraer |
 | 12.88 | alleinerziehend.erfolgreich | An alle Mamas, die das gerade lesen… ❤️ | aufruf · identitaet |
-| 12.01 | katharina.lewald | Meine Gedanken zur #jjyapchallenge #yapchallenge | sonstiges · neugier |
-| 11.87 | alleinerziehend.erfolgreich | Manchmal frage ich mich wirklich, woher wir Mütter diese Kapazität eigentlich immer wieder nehmen. | bekenntnis · identitaet |
-| 11.65 | annabraun_coaching | Gehört doch einfach zum Sommer dazu, oder? | frage · identitaet |
-| 9.63 | powerfrauenfocus | Früher habe ich auf die Meinungen anderer gehört. | bekenntnis · identitaet |
-| 9.57 | dascha_stories | Video Regeln👇 In 2026 reicht es nicht mehr aus, nur auf einen guten Hook zu achten. Wir brauchen heute mehrere visuelle Details im Video, um die Aufme | ratgeber · kontraer |
 
 ### Deine stärksten Hooks
 

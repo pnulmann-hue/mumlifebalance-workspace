@@ -8,18 +8,6 @@ tags: [research, hooks]
 
 ⚠️ Eintragungen gibt es nur **je Stichwort** (ActiveCampaign, Untergrenze). Je Beitrag ist die **Kommentar-Rate** (Kommentare je 100 erreichte Personen) das Beste, was messbar ist. Fremde Umsätze sind nirgends öffentlich.
 
-## Das Wichtigste
-
-1. **101 von 129 deiner Lead-Beiträge haben null Kommentare.** Zusammen 162 Kommentare auf rund 49'000 erreichte
-   Personen (0,3 %). Der Engpass ist nicht die Reichweite, sondern dass niemand das Stichwort schreibt.
-2. **Im Markt bekommen Stichwort-Beiträge mit Identitäts-Bekenntnis die meisten Antworten.** Bei `powerfrauenfocus`
-   holen die Stichwort-Beiträge 0,41 Kommentare je Like, die übrigen 0,13 — und die Hooks sind genau die Gewinner aus der
-   Markt-Analyse („Ich habe aufgehört, jeden von mir überzeugen zu wollen“). Bei `juliatrost.official` laufen die
-   Verkaufsbeiträge sogar besser als die übrigen (1,64 gegen 0,84; 0,75 gegen 0,11 Kommentare je Like).
-3. **Deine Lead-Beiträge stehen fast alle auf Stufe 2** (83 von 129, Reichweite 0,65). Die wenigen auf Stufe 1 liegen bei
-   1,83, die mit Identitäts-Angle bei 1,38. Dieselbe Regel wie bei der Reichweite gilt also auch bei den Lead-Beiträgen.
-4. **BIO bringt am meisten in die Liste** (0,8 je Beitrag), ECHT1 und SICHTBAR am wenigsten (0,1).
-
 ## Deine Stichwörter
 
 | Stichwort | Beiträge | in der Liste | je Beitrag | Median-Reichweite |
@@ -127,7 +115,7 @@ Jeder Beitrag gegen den Median seines Kontos. „Verkaufssignal“ = Stichwort-A
 | oele_zauberland_mit_manuela | 11 | 0.88 | 46 | 1.02 | 0.0 / 0.08 |
 | flowterra.community | 3 | 0.9 | 48 | 1.01 | 0.02 / 0.01 |
 | annabraun_coaching | 5 | 0.84 | 33 | 1.12 | 0.28 / 0.19 |
-| juliatrost.official | 8 | 1.64 | 30 | 0.84 | 0.75 / 0.11 |
+| juliatrost.official | 8 | 1.29 | 29 | 0.6 | 0.75 / 0.1 |
 
 ### Stichwort-Beiträge im Markt (115): die stärksten
 
