@@ -1,0 +1,358 @@
+<title>Pop-up Chancen-Check</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: Entscheidungs-Werkzeug. Oben Fazit + Grafik, darunter Stellschrauben, unten Detailtabelle. */
+:root {
+  --bg: #f7f3e8;
+  --surface: #fffdf7;
+  --ink: #232a30;
+  --ink-2: #4f5a62;
+  --ink-3: #7b847f;
+  --line: #e3dccb;
+  --brand: #29556d;
+  --m-a: #d0731f;
+  --m-b: #7a5bc0;
+  --m-c: #008f94;
+  --good: #2f7d4f;
+  --bad: #b3412f;
+  --note-bg: #fbeedc;
+  --f-display: 'Philosopher', Georgia, serif;
+  --f-body: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #1f2326; --surface: #272c30; --ink: #ece7da; --ink-2: #c3bdb0; --ink-3: #959188; --line: #3a4045;
+  --brand: #8fbcd4; --m-a: #c9742a; --m-b: #9a7ee0; --m-c: #1f9e98; --good: #6cc08d; --bad: #ec8a78; --note-bg: #3a3127; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #1f2326; --surface: #272c30; --ink: #ece7da; --ink-2: #c3bdb0; --ink-3: #959188; --line: #3a4045;
+  --brand: #8fbcd4; --m-a: #c9742a; --m-b: #9a7ee0; --m-c: #1f9e98; --good: #6cc08d; --bad: #ec8a78; --note-bg: #3a3127; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.5; margin: 0; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-inline: 20px; padding-block: 32px 56px; display: grid; gap: 28px; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; line-height: 1.15; }
+h1 { font-size: clamp(28px, 4.4vw, 40px); }
+h2 { font-size: 22px; }
+h3 { font-size: 17px; }
+p { margin: 0; }
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--brand); }
+.lead { color: var(--ink-2); max-width: 68ch; }
+.head { display: grid; gap: 10px; }
+.note { background: var(--note-bg); border-radius: 10px; padding: 12px 14px; font-size: 14px; color: var(--ink); max-width: 80ch; }
+.note b { font-weight: 700; }
+
+.models { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.model { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.model .tag { display: flex; align-items: center; gap: 8px; font-weight: 700; }
+.sw { width: 12px; height: 12px; border-radius: 50%; flex: 0 0 auto; }
+.model p { font-size: 14px; color: var(--ink-2); }
+.model .net { font-family: var(--f-display); font-size: 26px; font-variant-numeric: tabular-nums; }
+.model .sub { font-size: 13px; color: var(--ink-3); }
+.pill { display: inline-block; font-size: 12px; font-weight: 700; padding: 2px 9px; border-radius: 99px; border: 1px solid currentColor; width: fit-content; }
+.pill.ok { color: var(--good); } .pill.warn { color: var(--bad); }
+
+.charts { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 18px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; display: grid; gap: 10px; min-width: 0; position: relative; align-content: start; }
+.panel .hint { font-size: 13px; color: var(--ink-3); }
+svg { display: block; width: 100%; height: auto; overflow: visible; }
+svg text { font-family: var(--f-body); }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+
+.rank { display: grid; gap: 12px; }
+.rank-row { display: grid; grid-template-columns: 150px minmax(0, 1fr) 64px; gap: 10px; align-items: center; font-size: 14px; }
+.bar { height: 12px; background: var(--line); border-radius: 6px; overflow: hidden; }
+.bar > i { display: block; height: 100%; border-radius: 0 4px 4px 0; }
+.num { font-variant-numeric: tabular-nums; text-align: right; color: var(--ink-2); }
+
+.inputs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+fieldset { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px 16px; margin: 0; background: var(--surface); display: grid; gap: 10px; min-width: 0; align-content: start; }
+legend { font-family: var(--f-display); font-weight: 700; font-size: 16px; padding: 0 6px; }
+label { display: grid; gap: 3px; font-size: 13px; color: var(--ink-2); }
+label small { color: var(--ink-3); font-size: 12px; }
+input { font: inherit; font-size: 15px; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; width: 100%; font-variant-numeric: tabular-nums; }
+input:focus-visible, button:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+.row-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+button { font: inherit; font-size: 14px; font-weight: 600; color: var(--brand); background: transparent; border: 1px solid var(--brand); border-radius: 8px; padding: 7px 14px; cursor: pointer; }
+button:hover { background: var(--note-bg); }
+
+.tablewrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 14px; }
+th, td { padding: 9px 14px; text-align: right; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+th:first-child, td:first-child { text-align: left; }
+thead th { font-weight: 700; color: var(--ink-2); font-size: 13px; }
+tr.total td { font-weight: 700; border-bottom: 0; }
+td.neg { color: var(--bad); }
+
+.qual { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; font-size: 14px; }
+.qual ul { margin: 6px 0 0; padding-left: 18px; color: var(--ink-2); display: grid; gap: 4px; }
+
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font-size: 13px; padding: 7px 10px; border-radius: 8px; white-space: nowrap; transform: translate(-50%, -110%); }
+
+@media (max-width: 860px) {
+  .models, .inputs, .qual { grid-template-columns: minmax(0, 1fr); }
+  .charts { grid-template-columns: minmax(0, 1fr); }
+  .rank-row { grid-template-columns: 110px minmax(0, 1fr) 56px; }
+}
+@media (prefers-reduced-motion: no-preference) { .bar > i { transition: width .3s ease; } }
+</style>
+
+<div class="wrap">
+  <header class="head">
+    <div class="eyebrow">doTERRA im Pop-up-Laden · Entscheidungshilfe</div>
+    <h1>Lohnt sich die Kooperation für dich?</h1>
+    <p class="lead">Drei Wege im Vergleich, gerechnet aus deiner Sicht: was dir pro Monat bleibt, wie viel Geld im Laden auf dem Spiel steht und wie viel es zu deinem nächsten Rang beiträgt. Wegzeit, Warenverlust und Diebstahl sind als Kosten eingerechnet.</p>
+    <div class="note"><b>Alle Zahlen sind Platzhalter.</b> Sie zeigen nur, wie die Rechnung funktioniert, und sind keine Prognose. Trag unten eure echten Werte ein. Deine Provisionssätze und das fehlende Volumen bis zum nächsten Rang findest du im Backoffice.</div>
+  </header>
+
+  <section class="models" id="models" aria-label="Die drei Modelle"></section>
+
+  <section class="charts">
+    <div class="panel" id="riskPanel">
+      <h2>Chance gegen Risiko</h2>
+      <p class="hint">Rechts heisst mehr Geld im Laden, das du verlieren kannst. Oben heisst mehr Ertrag pro Monat. Gut liegt also oben links.</p>
+      <div id="scatter"></div>
+      <div class="legend" id="legend1"></div>
+    </div>
+    <div class="panel">
+      <h2>Beitrag zum nächsten Rang</h2>
+      <p class="hint">Anteil des fehlenden Volumens, den das Modell pro Monat abdeckt.</p>
+      <div class="rank" id="rank"></div>
+      <p class="hint">Volumen ist hier vereinfacht in CHF zum Einkaufspreis gerechnet. Im Backoffice zählt PV. Vergleiche deshalb die Grössenordnung, nicht die Kommastelle.</p>
+    </div>
+  </section>
+
+  <section style="display:grid; gap:14px">
+    <h2>Deine Stellschrauben</h2>
+    <form class="inputs" id="form" autocomplete="off">
+      <fieldset>
+        <legend>Laden &amp; Ware</legend>
+        <label for="u">Regal-Umsatz pro Monat (CHF, Verkaufspreis)<input id="u" type="number" min="0" step="10"></label>
+        <label for="w">Warenwert im Laden (CHF, Einkauf)<small>Nur relevant, wenn du die Ware stellst</small><input id="w" type="number" min="0" step="10"></label>
+        <label for="d">Warenverlust &amp; Diebstahl pro Monat (% vom Warenwert)<input id="d" type="number" min="0" step="0.5"></label>
+        <label for="s">Dein Anteil an der Marge, wenn du die Ware stellst (%)<small>Die Marge beträgt 25 % vom Verkaufspreis</small><input id="s" type="number" min="0" max="100" step="5"></label>
+        <label for="t0">Startkosten Tester-Ecke (CHF, einmalig)<input id="t0" type="number" min="0" step="10"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Kundinnen &amp; Vergütung</legend>
+        <label for="n">Aktive Kundinnenkonten aus dem Laden<small>Wächst mit der Zeit: Kommt jeden Monat eine dazu, sind es nach einem Jahr bis zu zwölf.</small><input id="n" type="number" min="0" step="1"></label>
+        <label for="v">Bestellung pro Konto und Monat (CHF)<input id="v" type="number" min="0" step="5"></label>
+        <label for="p">Deine Provision auf Teamvolumen (%)<small>Durchschnitt aus deinem Vergütungsplan</small><input id="p" type="number" min="0" max="100" step="0.5"></label>
+        <label for="r">Fehlendes Volumen bis zum nächsten Rang (pro Monat)<input id="r" type="number" min="0" step="10"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Wegzeit &amp; Einsatz</legend>
+        <label for="fa">Fahrten pro Monat, wenn du die Ware stellst<input id="fa" type="number" min="0" step="1"></label>
+        <label for="fb">Fahrten pro Monat, wenn sie selbst einkauft<input id="fb" type="number" min="0" step="1"></label>
+        <label for="fc">Fahrten pro Monat bei der Tester-Ecke<input id="fc" type="number" min="0" step="1"></label>
+        <label for="tm">Minuten pro Fahrt inkl. Aufenthalt<input id="tm" type="number" min="0" step="5"></label>
+        <label for="km">Kilometer pro Fahrt (hin und zurück)<input id="km" type="number" min="0" step="1"></label>
+        <label for="ck">Kosten pro Kilometer (CHF)<input id="ck" type="number" min="0" step="0.05"></label>
+        <label for="h">Wert deiner Stunde (CHF)<small>Was du in der Zeit sonst verdienen würdest</small><input id="h" type="number" min="0" step="5"></label>
+      </fieldset>
+    </form>
+    <div class="row-actions">
+      <button type="button" id="reset">Platzhalter wiederherstellen</button>
+      <span class="hint" style="font-size:13px;color:var(--ink-3)">Deine Eingaben bleiben in diesem Browser gespeichert.</span>
+    </div>
+  </section>
+
+  <section style="display:grid; gap:14px">
+    <h2>Die Rechnung im Detail (pro Monat)</h2>
+    <div class="tablewrap"><table id="table"></table></div>
+  </section>
+
+  <section style="display:grid; gap:14px">
+    <h2>Was keine Zahl abbildet</h2>
+    <div class="qual">
+      <div class="panel"><h3 style="display:flex;gap:8px;align-items:center"><span class="sw" style="background:var(--m-a)"></span>Du stellst die Ware</h3><ul>
+        <li>Du haftest für Diebstahl und Ware, die nicht läuft.</li>
+        <li>Für den Ladenverkauf braucht es eine schriftliche Genehmigung von doTERRA.</li>
+        <li>Nachfüllen und Abrechnen bleiben an dir hängen.</li></ul></div>
+      <div class="panel"><h3 style="display:flex;gap:8px;align-items:center"><span class="sw" style="background:var(--m-b)"></span>Sie kauft selbst ein</h3><ul>
+        <li>Sauberste Lösung, aber sie will weder Arbeit noch Risiko.</li>
+        <li>Sie braucht ein eigenes Konto und die Genehmigung.</li>
+        <li>Du bist auf ihr Engagement angewiesen.</li></ul></div>
+      <div class="panel"><h3 style="display:flex;gap:8px;align-items:center"><span class="sw" style="background:var(--m-c)"></span>Tester-Ecke &amp; Beratung</h3><ul>
+        <li>Kein Lager, kein Diebstahlrisiko ausser den Testern.</li>
+        <li>Kundinnen landen direkt bei dir.</li>
+        <li>Vorher klären, ob doTERRA eine Duft-Ecke ohne Verkauf erlaubt.</li></ul></div>
+    </div>
+  </section>
+</div>
+
+<script>
+(function () {
+  var DEFAULTS = { u: 300, w: 600, d: 2, s: 50, t0: 150, n: 1, v: 80, p: 5, r: 500, fa: 2, fb: 1, fc: 1, tm: 60, km: 20, ck: 0.7, h: 40 };
+  var KEY = 'popup-chancen-check-v1';
+  var MARGE = 0.25;
+  var MODELS = [
+    { id: 'a', name: 'Du stellst die Ware', short: 'Ware von dir', color: 'var(--m-a)', desc: 'Du kaufst ein und stellst die Öle in ihr Regal. Ihr teilt die Marge.' },
+    { id: 'b', name: 'Sie kauft selbst ein', short: 'Sie kauft ein', color: 'var(--m-b)', desc: 'Sie eröffnet ein Konto in deinem Team und trägt das Regal selbst.' },
+    { id: 'c', name: 'Tester-Ecke & Beratung', short: 'Tester-Ecke', color: 'var(--m-c)', desc: 'Nur Tester, dein Flyer und ein QR-Code. Keine Ware im Laden.' }
+  ];
+  var form = document.getElementById('form');
+  var ids = Object.keys(DEFAULTS);
+
+  function load() {
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
+    ids.forEach(function (k) {
+      var val = saved && saved[k] !== undefined && saved[k] !== '' ? saved[k] : DEFAULTS[k];
+      document.getElementById(k).value = val;
+    });
+  }
+  function save(vals) { try { localStorage.setItem(KEY, JSON.stringify(vals)); } catch (e) {} }
+  function read() {
+    var o = {};
+    ids.forEach(function (k) { var x = parseFloat(document.getElementById(k).value); o[k] = isFinite(x) ? x : 0; });
+    return o;
+  }
+
+  function calc(x) {
+    var accounts = x.n * x.v;
+    var accProv = accounts * x.p / 100;
+    var shopEk = x.u * (1 - MARGE);
+    function travel(f) { return { zeit: f * x.tm / 60 * x.h, km: f * x.km * x.ck }; }
+    var ta = travel(x.fa), tb = travel(x.fb), tc = travel(x.fc);
+    var a = { einMarge: x.u * MARGE * x.s / 100, einProv: accProv, zeit: ta.zeit, km: ta.km, verlust: x.w * x.d / 100, risiko: x.w, vol: shopEk + accounts };
+    var b = { einMarge: 0, einProv: shopEk * x.p / 100 + accProv, zeit: tb.zeit, km: tb.km, verlust: 0, risiko: 0, vol: shopEk + accounts };
+    var c = { einMarge: 0, einProv: accProv, zeit: tc.zeit, km: tc.km, verlust: 0, risiko: x.t0, vol: accounts };
+    [a, b, c].forEach(function (m) {
+      m.ein = m.einMarge + m.einProv;
+      m.kosten = m.zeit + m.km + m.verlust;
+      m.net = m.ein - m.kosten;
+      m.rank = x.r > 0 ? m.vol / x.r : 0;
+    });
+    return { a: a, b: b, c: c };
+  }
+
+  var nf = new Intl.NumberFormat('de-CH', { maximumFractionDigits: 0 });
+  function f(v) { var r = Math.round(v); return (r < 0 ? '−' : '') + 'CHF ' + nf.format(Math.abs(r)); }
+
+  function renderModels(r) {
+    var el = document.getElementById('models');
+    el.innerHTML = MODELS.map(function (m) {
+      var d = r[m.id];
+      var pill = d.net >= 0 ? '<span class="pill ok">✓ Lohnt sich rechnerisch</span>' : '<span class="pill warn">✕ Kostet dich mehr, als es bringt</span>';
+      return '<article class="model"><div class="tag"><span class="sw" style="background:' + m.color + '"></span>' + m.name + '</div>' +
+        '<p>' + m.desc + '</p>' +
+        '<div class="net">' + f(d.net) + '</div><div class="sub">bleibt dir pro Monat nach Wegzeit und Verlust</div>' +
+        '<div class="sub">Im Risiko: ' + f(d.risiko) + '</div>' + pill + '</article>';
+    }).join('');
+  }
+
+  function niceMax(v) {
+    if (v <= 0) return 10;
+    var p = Math.pow(10, Math.floor(Math.log10(v)));
+    var steps = [1, 2, 2.5, 5, 10];
+    for (var i = 0; i < steps.length; i++) if (steps[i] * p >= v) return steps[i] * p;
+    return 10 * p;
+  }
+  function ticks(min, max, n) {
+    var out = [], step = (max - min) / n;
+    for (var i = 0; i <= n; i++) out.push(min + step * i);
+    return out;
+  }
+
+  function renderScatter(r) {
+    var W = 520, H = 330, L = 64, R = 18, T = 14, B = 46;
+    var pts = MODELS.map(function (m) { return { m: m, x: r[m.id].risiko, y: r[m.id].net }; });
+    var xMax = niceMax(Math.max.apply(null, pts.map(function (p) { return p.x; })) * 1.1);
+    var yHi = Math.max(0, Math.max.apply(null, pts.map(function (p) { return p.y; })));
+    var yLo = Math.min(0, Math.min.apply(null, pts.map(function (p) { return p.y; })));
+    var span = niceMax(Math.max(yHi, -yLo) * 1.15);
+    var yMax = yHi > 0 ? span : 0, yMin = yLo < 0 ? -span : 0;
+    if (yMax === 0 && yMin === 0) yMax = 10;
+    function sx(v) { return L + (v / xMax) * (W - L - R); }
+    function sy(v) { return T + (1 - (v - yMin) / (yMax - yMin)) * (H - T - B); }
+    var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Streudiagramm Chance gegen Risiko">';
+    ticks(yMin, yMax, 4).forEach(function (t) {
+      s += '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + sy(t) + '" y2="' + sy(t) + '" stroke="var(--line)" stroke-width="1"/>' +
+        '<text x="' + (L - 8) + '" y="' + (sy(t) + 4) + '" font-size="11" text-anchor="end" fill="var(--ink-3)">' + f(t) + '</text>';
+    });
+    ticks(0, xMax, 4).forEach(function (t) {
+      s += '<text x="' + sx(t) + '" y="' + (H - B + 18) + '" font-size="11" text-anchor="middle" fill="var(--ink-3)">' + f(t) + '</text>';
+    });
+    if (yMin < 0) s += '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + sy(0) + '" y2="' + sy(0) + '" stroke="var(--ink-3)" stroke-width="1.2"/>';
+    s += '<text x="' + ((L + W - R) / 2) + '" y="' + (H - 6) + '" font-size="12" text-anchor="middle" fill="var(--ink-2)">Geld im Laden, das du verlieren kannst</text>';
+    s += '<text x="' + (L + 6) + '" y="' + (T + 12) + '" font-size="11" fill="var(--good)">◤ wenig Risiko, viel Ertrag</text>';
+    pts.forEach(function (p, i) {
+      var cx = sx(p.x), cy = sy(p.y);
+      var overlap = pts.some(function (q, j) { return j < i && Math.abs(sx(q.x) - cx) < 30 && Math.abs(sy(q.y) - cy) < 18; });
+      var ly = overlap ? cy + 22 : cy - 12;
+      var anchor = cx > W - 140 ? 'end' : 'start';
+      var lx = anchor === 'end' ? cx - 10 : cx + 10;
+      s += '<circle cx="' + cx + '" cy="' + cy + '" r="7" fill="' + p.m.color + '" stroke="var(--surface)" stroke-width="2"/>' +
+        '<text x="' + lx + '" y="' + ly + '" font-size="12" font-weight="600" text-anchor="' + anchor + '" fill="var(--ink)">' + p.m.short + '</text>' +
+        '<circle class="hit" data-i="' + i + '" cx="' + cx + '" cy="' + cy + '" r="18" fill="transparent"/>';
+    });
+    s += '</svg>';
+    var host = document.getElementById('scatter');
+    host.innerHTML = s;
+    var panel = document.getElementById('riskPanel');
+    var tip = panel.querySelector('.tip') || panel.appendChild(Object.assign(document.createElement('div'), { className: 'tip', hidden: true }));
+    host.querySelectorAll('.hit').forEach(function (c) {
+      c.addEventListener('mouseenter', function () {
+        var p = pts[+c.dataset.i];
+        tip.textContent = p.m.name + ': ' + f(p.y) + ' pro Monat, ' + f(p.x) + ' im Risiko';
+        var b = c.getBoundingClientRect(), pb = panel.getBoundingClientRect();
+        tip.style.left = (b.left - pb.left + b.width / 2) + 'px';
+        tip.style.top = (b.top - pb.top) + 'px';
+        tip.hidden = false;
+      });
+      c.addEventListener('mouseleave', function () { tip.hidden = true; });
+    });
+    document.getElementById('legend1').innerHTML = MODELS.map(function (m) {
+      return '<span><i class="sw" style="background:' + m.color + '"></i>' + m.name + '</span>';
+    }).join('');
+  }
+
+  function renderRank(r) {
+    document.getElementById('rank').innerHTML = MODELS.map(function (m) {
+      var pct = r[m.id].rank * 100;
+      return '<div class="rank-row" title="' + m.name + ': ' + Math.round(pct) + ' %"><span>' + m.short + '</span>' +
+        '<div class="bar" role="img" aria-label="' + m.name + ' deckt ' + Math.round(pct) + ' Prozent"><i style="width:' + Math.min(100, pct) + '%;background:' + m.color + '"></i></div>' +
+        '<span class="num">' + Math.round(pct) + ' %</span></div>';
+    }).join('');
+  }
+
+  function renderTable(r) {
+    var rows = [
+      ['Anteil an der Ladenmarge', 'einMarge', 1],
+      ['Provision (Laden und Kundinnenkonten)', 'einProv', 1],
+      ['Wegzeit', 'zeit', -1],
+      ['Fahrtkosten', 'km', -1],
+      ['Warenverlust und Diebstahl', 'verlust', -1]
+    ];
+    var h = '<thead><tr><th>Posten</th>' + MODELS.map(function (m) { return '<th>' + m.short + '</th>'; }).join('') + '</tr></thead><tbody>';
+    rows.forEach(function (row) {
+      h += '<tr><td>' + row[0] + '</td>' + MODELS.map(function (m) {
+        var v = r[m.id][row[1]] * row[2];
+        return '<td class="' + (v < 0 ? 'neg' : '') + '">' + (v === 0 ? '–' : f(v)) + '</td>';
+      }).join('') + '</tr>';
+    });
+    h += '<tr><td>Geld im Laden (einmalig gebunden)</td>' + MODELS.map(function (m) { return '<td>' + (r[m.id].risiko ? f(r[m.id].risiko) : '–') + '</td>'; }).join('') + '</tr>';
+    h += '<tr class="total"><td>Bleibt dir pro Monat</td>' + MODELS.map(function (m) {
+      var v = r[m.id].net; return '<td class="' + (v < 0 ? 'neg' : '') + '">' + f(v) + '</td>';
+    }).join('') + '</tr></tbody>';
+    document.getElementById('table').innerHTML = h;
+  }
+
+  function update() {
+    var x = read();
+    save(x);
+    var r = calc(x);
+    renderModels(r); renderScatter(r); renderRank(r); renderTable(r);
+  }
+
+  load();
+  form.addEventListener('input', update);
+  form.addEventListener('submit', function (e) { e.preventDefault(); });
+  document.getElementById('reset').addEventListener('click', function () {
+    ids.forEach(function (k) { document.getElementById(k).value = DEFAULTS[k]; });
+    update();
+  });
+  update();
+})();
+</script>
