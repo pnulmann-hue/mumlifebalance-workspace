@@ -75,6 +75,8 @@ for (const p of posts) je[p.ownerUsername] = (je[p.ownerUsername] || 0) + 1;
 console.log(`Beiträge: ${posts.length}`, je);
 
 const date = new Date().toISOString().slice(0, 10);
-const ziel = path.join(REPO_ROOT, 'outputs', 'apify-runs', `tiefe-${date}.json`);
+// Je Lauf eine eigene Datei: am 04.10.2026 haben sich drei Läufe am selben Tag gegenseitig überschrieben
+const stempel = new Date().toISOString().slice(11, 16).replace(':', '');
+const ziel = path.join(REPO_ROOT, 'outputs', 'apify-runs', `tiefe-${date}-${stempel}.json`);
 fs.writeFileSync(ziel, JSON.stringify({ date, handles, limit, je_konto: je, posts }, null, 1));
 console.log(`→ ${path.relative(REPO_ROOT, ziel)}`);
