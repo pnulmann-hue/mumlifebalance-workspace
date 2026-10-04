@@ -114,7 +114,7 @@ Plattform) und einen **Beschreibungstext**, der unter dem Video steht.
 | **4.1 Keine Angst, es ist kein Programmieren** | Was Claude Code eigentlich ist und warum du kein schwarzes Fenster brauchst. Ich zeige dir die Oberfläche — sie sieht aus wie ein Chat, weil sie einer ist. |
 | **4.2 Einrichten, Schritt für Schritt** | Klick für Klick in Echtzeit mitgefilmt. Hier springe ich nichts, weil genau hier sonst die meisten aussteigen. |
 | **4.3 Dein Arbeitsplatz** | Die Ordner und wozu jeder da ist. Danach lädst du dir das leere Grundgerüst herunter und hast von Anfang an einen aufgeräumten Platz. |
-| **4.4 CLAUDE.md — das Gedächtnis** | Die eine Datei, in der alles steht, was du nie wieder erklären willst. Ich zeige dir zuerst meine eigene und dann die leere Vorlage für dich. |
+| **4.4 CLAUDE.md — das Gedächtnis** | Die eine Datei, in der alles steht, was du nie wieder erklären willst. Ich zeige dir zuerst meine eigene und dann die leere Vorlage für dich. Dazu zwei kleine Befehle für Anfang und Ende, damit nichts verloren geht, wenn du den Laptop zuklappst. |
 | **4.5 Wie du mit Claude sprichst** | Sag, was rauskommen soll, statt wie er es machen soll. Eine Sache pro Auftrag. Klingt banal und ändert alles. |
 | **4.6 Wenn es nicht klappt** | Was du machst, wenn Murks rauskommt, und warum neu ansetzen fast immer besser ist als nachbessern. Dazu die drei Fehler, die am Anfang alle machen. |
 | **4.7 Zusammenfassung und Checkliste** | Das Wichtigste aus Modul 4 und die Checkliste dazu. |

@@ -73,7 +73,7 @@ Prüfskript. Bei Julia ist es eine Lektion, bei Patricia kann es ein halbes Kapi
 | Was bei ihr fehlt | Was Patricia dazu hat |
 |---|---|
 | **Kein Chat, kein Cowork.** Lektion eins heisst „Der Umzug von ChatGPT nach Claude", dann direkt Setup Claude Code | Der Weg über drei Stufen mit „auf jeder Stufe ein Gewinn". Ihre Zielgruppe ist technisch ängstlicher |
-| **Kein Wissensfundament.** Sie hat Prompt-Handwerk („Wie du mit Claude redest", „3 Regeln"), aber nichts darüber, wie das eigene Wissen dauerhaft hineinkommt | Der **Business-Brief** samt Buch-Technik. Das ist Patricias stärkstes eigenes Material |
+| ~~Kein Wissensfundament.~~ **Korrigiert am 04.10. nach Sichtung der Videos:** Sie hat eines — Ordnerstruktur, Interview Frage für Frage, eine Datei je Thema. Das ist ihr stärkster Teil. Was fehlt, ist die kompakte Form | Der **Business-Brief** samt Buch-Technik. Der Unterschied ist die Form, nicht das Vorhandensein ([[10-abgleich-julia-claude-kurse]]) |
 | **Keine Freigabe-Schicht.** Agenten und Auto-Posting, aber nichts dazwischen | Das **Cockpit mit dem Freigabe-Knopf**. Eine Network-Mama kann nicht ungeprüft posten — ihr Konto hängt an einem Partnerunternehmen |
 | **Qualitätssicherung: eine Lektion** | Beitrags-Check, Blackliste, Hook-Check, `texte-pruefen.py`, Visual-QA. Belegt mit echten Fehlern |
 | **Sicherheit nur gegen fremde Skills** | Die Aufräumaktion vom 13.09. — Schlüssel und 32 Kundendatensätze offen im öffentlichen Repo. Eine echte Geschichte, die niemand sonst erzählen kann |
@@ -142,9 +142,9 @@ so wie bei Startklar.
 | # | Lektion | Notizen |
 |---|---|---|
 | 4.1 | **Keine Angst, es ist kein Programmieren** | **Erzählen:** Desktop-App, kein schwarzes Fenster. Du schreibst Deutsch. **Zeigen:** die Oberfläche, wie bei einem Chat |
-| 4.2 | **Einrichten** | **Zeigen:** Schritt für Schritt, Klick für Klick, in Echtzeit. Nichts überspringen — hier steigen die Leute aus |
+| 4.2 | **Einrichten** | **Zeigen:** Schritt für Schritt, Klick für Klick, in Echtzeit. Nichts überspringen — hier steigen die Leute aus. **Windows und Mac getrennt zeigen** (Git unter Windows extra installieren), Windows ist gleichwertig. Die drei Prüfpunkte zuerst: im Bereich Code? Abo aktiv? immer derselbe Ordner, nie iCloud? **Mitgeben:** Setup-FAQ, eine Seite (04.10.) |
 | 4.3 | **Dein Arbeitsplatz** | **Erzählen:** die fünf Ordner und wozu jeder da ist. **Zeigen:** ihren eigenen, dann den leeren zum Herunterladen. **Mitgeben:** das Grundgerüst |
-| 4.4 | **CLAUDE.md — das Gedächtnis** | **Erzählen:** alles, was nicht jedes Mal neu erklärt werden soll. **Zeigen:** ihre eigene, kurz durchscrollen — der Umfang macht Eindruck. Dann die leere Vorlage |
+| 4.4 | **CLAUDE.md — das Gedächtnis** | **Erzählen:** alles, was nicht jedes Mal neu erklärt werden soll. **Zeigen:** ihre eigene, kurz durchscrollen — der Umfang macht Eindruck. Dann die leere Vorlage. **Dazu (04.10.): Damit nichts verloren geht** — beim Schliessen ist das Gespräch weg, der Ordner ist das Gedächtnis. `/start` am Anfang, `/shutdown` am Ende, „merk dir das“ zwischendurch, Online-Sicherung. In allen vier Calls der Konkurrenz die häufigste Frage. **Mitgeben:** Spickzettel + die beiden Befehle als Vorlage |
 | 4.5 | **Wie du mit Claude sprichst** | **Erzählen:** sag was du willst, nicht wie er es machen soll. Ein Ding pro Auftrag |
 | 4.6 | **Wenn es nicht klappt** | **Erzählen:** was zu tun ist, wenn er Murks baut. Neu ansetzen statt nachbessern. Die drei häufigsten Anfängerfehler |
 | 4.7 | **Zusammenfassung und Checkliste** | |
@@ -163,7 +163,7 @@ so wie bei Startklar.
 | 5.4 | **Deinen ersten Skill bauen — mit dem Skill Creator** | **Zeigen:** live, von der Idee zur fertigen Datei |
 | 5.5 | **Von Hand nachschärfen** | **Erzählen:** was der Creator nie weiss — deine Regeln, deine Verbote. **Zeigen:** eine echte Nachschärfung |
 | 5.6 | **Was dreimal korrigiert wird, wird eine Regel** | **Erzählen:** das ist der Punkt, an dem ein Skill besser wird als du. **Zeigen:** eine Regel, die aus einem Fehler entstanden ist |
-| 5.7 | **Achtung bei Skills aus dem Internet** | **Erzählen:** du lädst fremde Anweisungen in deinen Arbeitsplatz. Vorher lesen |
+| 5.7 | **Achtung bei Skills aus dem Internet** | **Erzählen:** du lädst fremde Anweisungen in deinen Arbeitsplatz. Vorher lesen. **Zeigen (04.10.):** so prüfst du einen fremden Skill — SKILL.md lesen, mitgelieferte Skripte ansehen, Claude fragen „was tut das genau, greift es auf Schlüssel oder das Internet zu?“. **Mitgeben:** Checkliste „fremden Skill prüfen“ |
 | 5.8 | **Zusammenfassung und Checkliste** | **Mitgeben:** leeres Skill-Gerüst |
 
 ---
