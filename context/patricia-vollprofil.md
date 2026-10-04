@@ -89,7 +89,8 @@ Letzte Krisen:
 - **Papa:** „alte Schule, nur wer arbeitet, verdient Geld" — Patricia hat aufgehört, mit ihm darüber zu reden (Selbstschutz)
 - **Schwester:** 2019 verstorben mit 44 (siehe 12.11.6). Patricia ist faktisch „Einzelkind" heute. Brand-relevant indirekt: das eigene doTERRA-Team füllt eine Schwester-Lücke (Frauen-Sisterhood als emotionale Heimat). Verwendbar in Outputs falls passend, kein Tabu.
 - **Bruder:** wenig Kontakt, kein aktiver Stütze
-- **Schwiegermutter:** belächelt aktiv. Standardspruch bei jedem WhatsApp-Status: *„Also, läuft das wirklich? Kauft das wirklich irgendjemand?"* — konstantes Mikro-Sabotage-Klima. **Update Mai-9 (12.11/12.12):** triggert Patricia emotional NICHT mehr — sie ist abgeklärt, nervt sie nur noch.
+🚨 **Seit 04.10.2026: Die Schwiegermutter kommt im Content nicht vor.** Patricia: *„ich habe kein problem mit meiner schwiegermama und will es so auch nicht darstellen.“* Gilt für Hooks, Captions, Storys, Folien — auch nicht als Anti-Vorbild oder Skeptikerin. Die Hook-Vorschläge unten (H1, J7) sind damit gestrichen.
+- **Schwiegermutter (nur Hintergrund, nie Content):** belächelt aktiv. Standardspruch bei jedem WhatsApp-Status: *„Also, läuft das wirklich? Kauft das wirklich irgendjemand?"* — konstantes Mikro-Sabotage-Klima. **Update Mai-9 (12.11/12.12):** triggert Patricia emotional NICHT mehr — sie ist abgeklärt, nervt sie nur noch.
 
 **🔒 KW 19-20/2026 — Aktuelle Familienlast (sensibel):** Mama-Krebs-Verdacht, 2-3× Spital pro Woche. Patricia trägt das parallel zu allem anderen.
 

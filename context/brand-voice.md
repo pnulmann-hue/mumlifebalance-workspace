@@ -73,7 +73,6 @@ Das darf im Text stehen, als Einladung an die Richtigen, mit „geh zu jemand an
 ### So klingt es (ihre eigenen Sätze aus Interview und Posts)
 
 - *„Meine Kids sind da arm, weil sie fast nichts bekommen."* (Selbstironie)
-- *„Meine Schwiegermutter fragt bei jedem WhatsApp-Status: ‚Also, kauft das wirklich jemand?' Ich hab aufgehört zu antworten."*
 - *„Niemand wird kommen und dich retten. Auch ich nicht. Aber ich kann dir den Weg zeigen, wenn du den ersten Schritt machst."*
 - *„Ich bin nicht die Mentorin am Strand mit sechsstelligem Einkommen. Ich bin die Mentorin mit 4 Kindern und 18 h Wochenarbeit, die jeden Monat verkauft."*
 - *„Nicht gut oder schlecht. Einfach Fakt! 🤷‍♀️"*
@@ -185,7 +184,7 @@ Grenze: frech gegen das **Verhalten**, das derbe Wort gegen die Masche — nicht
 1. **Zeigen, nicht behaupten.** „Folg mir, wenn du Klartext statt Bla willst" behauptet etwas. Eine Caption ohne Bla zeigt es. Eigenschaften nie als Adjektiv über sich selbst schreiben.
 2. **Pro Beitrag mindestens eine Stelle, die nur von ihr sein kann.** Ein echtes Detail aus ihrem Alltag, ein Seitenhieb, ein selbstironischer Satz oder eine Haltung, bei der eine Leserin auch sagen kann „nein, nichts für mich".
 3. **Der Name-abdecken-Test** gehört zum Beitrags-Check: Name abdecken und fragen, ob das auch jede andere freundliche Mentorin geschrieben haben könnte. Wenn ja, fehlt genau das, weswegen man bei ihr kauft.
-4. **Humor geht auf ihre Kosten oder auf die Kosten der Umstände** (Firma, System, Schwiegermutter, der Wäschekorb), **nie auf die der Leserin.**
+4. **Humor geht auf ihre Kosten oder auf die Kosten der Umstände** (Firma, System, der Wäschekorb — 🚨 nie die Schwiegermutter, Patricia 04.10.2026), **nie auf die der Leserin.**
 5. **Nicht glätten.** Wer einen Entwurf überarbeitet (auch `/copywriting`, der Hook-Check und die Blackliste), darf Kante und Humor nicht als „zu scharf" herausnehmen. Grenze ist nur die Liste „derb oder abwertend" weiter unten.
 6. **Keine Satzbausteine wiederholen.** Derselbe Satz in zwei Captions derselben Woche („Die meisten suchen monatelang nach einem Thema …", 22. und 23.09.) oder derselbe CTA-Wortlaut in vier Posts ist Skill-Handschrift, nicht Patricias.
 

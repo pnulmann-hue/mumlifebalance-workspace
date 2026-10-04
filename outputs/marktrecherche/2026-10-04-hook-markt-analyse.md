@@ -8,6 +8,13 @@ tags: [research, hooks]
 
 ⚠️ Der Hook ist hier die **erste Caption-Zeile**. Der Text im Video kann anders lauten, und Video und Thema wirken mit. Muster über viele Beiträge sind belastbar, ein einzelner Treffer nicht.
 
+🚨 **Der „Markt“ ist bisher nicht deine Nische (Patricias Nachfrage, 04.10.2026).** 305 von 530 Mentoring-Markt-Beiträgen
+und 88 der 114 Markt-Gewinner stammen von `alleinerziehend.erfolgreich` und `powerfrauenfocus` — Mama-Inspirations-Konten,
+keine Network- oder Business-Mentorinnen. Nur auf den sechs Konten aus der Nische gerechnet (digitalmamashift, annabraun,
+juliatrost, theresaehsani, katharina.lewald, diefrau_im_business; 209 Beiträge) bleibt Identität vorne, aber schwach
+(1,18), und die Bewusstseinsstufe macht dort fast keinen Unterschied. **Belastbar sind vor allem deine eigenen Zahlen.**
+Network-Mentorinnen wie du fehlen in der Beobachtungsliste ganz.
+
 ## Das Wichtigste in fünf Punkten (Mentoring)
 
 1. **Identität gewinnt, im Markt wie bei dir.** Hooks, bei denen sie denkt „das bin ich“, liegen im Markt bei
