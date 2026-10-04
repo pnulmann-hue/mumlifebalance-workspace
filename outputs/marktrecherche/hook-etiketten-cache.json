@@ -8158,5 +8158,605 @@
   "konkret": true,
   "thema": "Adaptiv Kapseln",
   "emotion": "ruhe"
+ },
+ "da72805d8791762e": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Frühlingsanfang Neubeginn",
+  "emotion": "hoffnung"
+ },
+ "487d55c50ecec54b": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Entschleunigung im Alltag",
+  "emotion": "erleichterung"
+ },
+ "077ae979665d23b8": {
+  "form": "liste",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Lieblingsöle für Frauen",
+  "emotion": "neugier"
+ },
+ "cc24e547de2b7628": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Flaschenset TERRA",
+  "emotion": "neugier"
+ },
+ "dbe01f2483402a07": {
+  "form": "ereignis",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "neue Roll-Ons",
+  "emotion": "freude"
+ },
+ "83ad1932779898fd": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Adventskalender Gewinnspiel",
+  "emotion": "vorfreude"
+ },
+ "472c9d3a209dab0b": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Adventskalender Funny Pops",
+  "emotion": "humor"
+ },
+ "253ec1ab4353028b": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Buchtipp Gesundheit",
+  "emotion": "neugier"
+ },
+ "54f3fc1a3acd0309": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Serenity Sprayflaschen-Set",
+  "emotion": "neugier"
+ },
+ "59dd73eef6c4ae86": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Winter Diffuser-Mischung",
+  "emotion": "vorfreude"
+ },
+ "fce5e65e9dc156b8": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Weihnachts-Gewinnspiel",
+  "emotion": "vorfreude"
+ },
+ "d3203d2fe5af73c7": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Aromatherapie im Auto",
+  "emotion": "neugier"
+ },
+ "9cbdb4f91252abb6": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "DIY Roll-On Set",
+  "emotion": "vorfreude"
+ },
+ "83c38a73d61687b8": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "neuer Monat April",
+  "emotion": "freude"
+ },
+ "3a37b89605c8fc3b": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "selbstgemachtes Essen",
+  "emotion": "humor"
+ },
+ "67fe15f9d3627369": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "persönliche Begleitung",
+  "emotion": "vertrauen"
+ },
+ "a73332f47e2e5330": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "ehrliches Gespräch",
+  "emotion": "neugier"
+ },
+ "3f54f8003fa8a144": {
+  "form": "frage",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Emotionstypen im Text",
+  "emotion": "neugier"
+ },
+ "acd7a47f73c8eb8d": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Kunden kennen",
+  "emotion": "zweifel"
+ },
+ "7b9cfbdd151c55b2": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Werte und Buchung",
+  "emotion": "neugier"
+ },
+ "0d274fb8f75625b5": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Wunschkunden erreichen",
+  "emotion": "hoffnung"
+ },
+ "9eaa36137a94a22d": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Archetypen-Webinar",
+  "emotion": "neugier"
+ },
+ "934b1dc104382401": {
+  "form": "frage",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Markenberatung Angebot",
+  "emotion": "hoffnung"
+ },
+ "1e99be3f0a8eecdd": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Buchempfehlungen",
+  "emotion": "neugier"
+ },
+ "e90d1c6dc19c9ea4": {
+  "form": "liste",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Preise nicht bezahlt",
+  "emotion": "frust"
+ },
+ "06e48a6d22fb91c2": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "zu teure Preise",
+  "emotion": "zweifel"
+ },
+ "6f1f62c661cf655f": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Kaufentscheidungen verstehen",
+  "emotion": "neugier"
+ },
+ "b97a9901db672c95": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Marke statt Produkt",
+  "emotion": "überraschung"
+ },
+ "86b708f43d7fb564": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Rebranding",
+  "emotion": "neugier"
+ },
+ "b507775056e31a3b": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Rebranding Markenentwicklung",
+  "emotion": "keine"
+ },
+ "6e70861053f0c5ba": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "häufiger Denkfehler",
+  "emotion": "neugier"
+ },
+ "efccf60354c66939": {
+  "form": "du-szene",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "stressfreies Business",
+  "emotion": "hoffnung"
+ },
+ "2d34e3eb01d4d0b3": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "eigene Superpower",
+  "emotion": "neugier"
+ },
+ "826fe79fa3ad180a": {
+  "form": "frage",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Marke arbeitet mit",
+  "emotion": "hoffnung"
+ },
+ "ea0f927d924a3b59": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Emotionen und Umsatz",
+  "emotion": "neugier"
+ },
+ "41e20610f9f916dc": {
+  "form": "meinung",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "starke Marke Erfolg",
+  "emotion": "hoffnung"
+ },
+ "6ac788372a52fda5": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Formen der Angst",
+  "emotion": "angst"
+ },
+ "293751888b421c21": {
+  "form": "frage",
+  "angle": "vergleich",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Scheitern oder Durchstarten",
+  "emotion": "mut"
+ },
+ "c60e2bb7b936497a": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "alles alleine schaffen",
+  "emotion": "erleichterung"
+ },
+ "3218b3081e071259": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Fußballmama größer denken",
+  "emotion": "hoffnung"
+ },
+ "32437abb2c02c8ca": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Alltag Fußballmama",
+  "emotion": "erschöpfung"
+ },
+ "8607e73bd202b168": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Moment am Spielfeldrand",
+  "emotion": "neugier"
+ },
+ "f2bb65073ccba5e0": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "auf Moment warten",
+  "emotion": "ertapptsein"
+ },
+ "0c1474f093b85929": {
+  "form": "bekenntnis",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "persönliche Entwicklung",
+  "emotion": "stolz"
+ },
+ "697a0e63eff8567f": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "immer wieder neu anfangen",
+  "emotion": "mut"
+ },
+ "9b7562be7810e812": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "richtige Entscheidungen",
+  "emotion": "erleichterung"
+ },
+ "deb776b2f9f7584f": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Zurückhaltung und Mut",
+  "emotion": "mut"
+ },
+ "58e6f8dc11c0f983": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Beraterbroschüren Österreich Schweiz",
+  "emotion": "freude"
+ },
+ "8251a59d578ed79f": {
+  "form": "bekenntnis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Stolz auf Erfolg",
+  "emotion": "stolz"
+ },
+ "2975d84538ed5cbe": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "doTERRA Convention",
+  "emotion": "begeisterung"
+ },
+ "1a4667c82c7b91e6": {
+  "form": "bekenntnis",
+  "angle": "vergleich",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Fußballmama Wandel",
+  "emotion": "hoffnung"
+ },
+ "9e291fd7ba9b5dc0": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Zitronenduft",
+  "emotion": "freude"
+ },
+ "f0f0d9024bf00000": {
+  "form": "aufruf",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Produkte ersetzen",
+  "emotion": "neugier"
+ },
+ "e40e23c935bcf0a6": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Inhalte weiterschicken",
+  "emotion": "verbundenheit"
+ },
+ "6ac9708d54563828": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Küchenhilfe",
+  "emotion": "humor"
+ },
+ "195c275a2435c6ee": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Infos für Mamas",
+  "emotion": "fürsorge"
+ },
+ "9e49027188b0bd38": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Änderung Aromazeug",
+  "emotion": "neugier"
+ },
+ "8ba95f9f9d878222": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Öle erklären Material",
+  "emotion": "erleichterung"
+ },
+ "8002894762d6b499": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Buchhaltung im Urlaub",
+  "emotion": "humor"
+ },
+ "f5380420deebb5fd": {
+  "form": "du-szene",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Pflanzenduft Parfum",
+  "emotion": "neugier"
+ },
+ "8aabadcebf18a133": {
+  "form": "dialog",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "ätherische Öle verkaufen",
+  "emotion": "neugier"
+ },
+ "9b0c76c70978bb3b": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Morgengruß Ferienende",
+  "emotion": "keine"
+ },
+ "5e2444b9e70a9f3e": {
+  "form": "ereignis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Schlaflose warme Nächte",
+  "emotion": "mitgefuehl"
+ },
+ "4941c668e8cd58bf": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Sätze übersetzen",
+  "emotion": "humor"
+ },
+ "55e05ca5a3f974a8": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Fußballmama Alltag",
+  "emotion": "stolz"
+ },
+ "62f275676c9a9b40": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Fast nicht gewagt",
+  "emotion": "neugier"
+ },
+ "8337a4c9197a111e": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Perfekte Produktidee",
+  "emotion": "erleichterung"
+ },
+ "aa26f6c7d5838967": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Angst vorm Verkaufen",
+  "emotion": "angst"
+ },
+ "9e45be97a3798a6c": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Instagram Bio formulieren",
+  "emotion": "erleichterung"
+ },
+ "a1d7fc9a7f7d5093": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Warten aufs Bereitsein",
+  "emotion": "ermutigung"
+ },
+ "e82cead703c00ded": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Followerzahl Bedeutung",
+  "emotion": "neugier"
+ },
+ "6f420e71d98f3ae2": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Druck am Anfang",
+  "emotion": "erleichterung"
+ },
+ "c495618ba4bfb783": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Produktbeschreibung Kundensicht",
+  "emotion": "neugier"
+ },
+ "078454b42995d534": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Professionell klingen wollen",
+  "emotion": "erleichterung"
+ },
+ "68d8f7495b27b792": {
+  "form": "du-szene",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Aufschieben statt handeln",
+  "emotion": "ertappt"
  }
 }

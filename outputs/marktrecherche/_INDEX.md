@@ -8,6 +8,7 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 
 ## Dateien
 
+- [[2026-10-04-hook-markt-analyse]]
 - [[KW18-doterra]]
 - [[KW18-mentoring]]
 - [[KW19-doterra]]
