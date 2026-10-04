@@ -7678,5 +7678,485 @@
   "konkret": false,
   "thema": "Gelassen antworten",
   "emotion": "neugier"
+ },
+ "ee6a56d5498ff0de": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Trennung als Mama",
+  "emotion": "verletzlichkeit"
+ },
+ "a9cc2722e97a7db0": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mamasein im Wandel",
+  "emotion": "wehmut"
+ },
+ "f5c1c58882fed209": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Herbstbeginn",
+  "emotion": "vorfreude"
+ },
+ "8d8700b2818b8d16": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Instagram Potenzial",
+  "emotion": "neugier"
+ },
+ "2ebff1bed531c8fb": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Umgang mit Angst",
+  "emotion": "neugier"
+ },
+ "c977675922709623": {
+  "form": "zitat",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Lieblingszitat",
+  "emotion": "begeisterung"
+ },
+ "7916500600d20433": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kinder werden groß",
+  "emotion": "wehmut"
+ },
+ "65d5794906a221ca": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Botschaft an Mamas",
+  "emotion": "waerme"
+ },
+ "9d9c2351e4197d74": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Misstrauische Frage",
+  "emotion": "humor"
+ },
+ "899051dc7b623148": {
+  "form": "bekenntnis",
+  "angle": "vergleich",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Früher Zweifel",
+  "emotion": "neugier"
+ },
+ "b5b9795db180e479": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Vorbild für Kinder",
+  "emotion": "stolz"
+ },
+ "306960acaef214d0": {
+  "form": "liste",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Herbst Öle",
+  "emotion": "vorfreude"
+ },
+ "b6658ad9aab93377": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Angst vor Sichtbarkeit",
+  "emotion": "scham"
+ },
+ "e9e57de46582ec5e": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Verbreitetes Missverständnis",
+  "emotion": "neugier"
+ },
+ "16092423afba7cea": {
+  "form": "frage",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Neubeginn",
+  "emotion": "hoffnung"
+ },
+ "b141decb235e86b6": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Instagram Scheitern",
+  "emotion": "erleichterung"
+ },
+ "374d1f2ed656e869": {
+  "form": "zitat",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Meinung anderer",
+  "emotion": "erleichterung"
+ },
+ "8373182838750aea": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Herzensprojekt Freude",
+  "emotion": "freude"
+ },
+ "d02bb1b5c795ca09": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Blotato Tool",
+  "emotion": "neugier"
+ },
+ "c0791c58a3152400": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "September Rückblick",
+  "emotion": "traurigkeit"
+ },
+ "386c780e36a109e0": {
+  "form": "dialog",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Nebenverdienst Wunsch",
+  "emotion": "neugier"
+ },
+ "fa446612e4b1ba9c": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Nicht angefangen",
+  "emotion": "scham"
+ },
+ "bf67dc1b8f2194d0": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Problemursache lösen",
+  "emotion": "hoffnung"
+ },
+ "df65f71fa765a14a": {
+  "form": "zitat",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unbequemer Satz",
+  "emotion": "neugier"
+ },
+ "c5326d75de9726b9": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Leben anders geplant",
+  "emotion": "trost"
+ },
+ "09fa01c81e316037": {
+  "form": "bekenntnis",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Instagram Perspektivwechsel",
+  "emotion": "neugier"
+ },
+ "fbe7053001d0b47c": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kleine Erfolge feiern",
+  "emotion": "dankbarkeit"
+ },
+ "c038407f19635a01": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Egalitis Gelassenheit",
+  "emotion": "humor"
+ },
+ "66f635b215eaab6f": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Diffusermischungen Regentage",
+  "emotion": "gemuetlichkeit"
+ },
+ "e280164811c46313": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Treffender Spruch",
+  "emotion": "zustimmung"
+ },
+ "bafdfccbe16a2e22": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Wichtigste Lektion",
+  "emotion": "neugier"
+ },
+ "bb2df18f42fe07b6": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Rang Rising Leader",
+  "emotion": "hoffnung"
+ },
+ "65416d547de1e7e8": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mut statt Angst",
+  "emotion": "mut"
+ },
+ "09086af804f24ee4": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Menschen verstehen",
+  "emotion": "neugier"
+ },
+ "18dba5fdd4f24151": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Nur funktionieren",
+  "emotion": "erschoepfung"
+ },
+ "4ca1073efa70fc69": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "DIY Raumspray",
+  "emotion": "freude"
+ },
+ "0100bf4700a0d5ec": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Elternabend",
+  "emotion": "humor"
+ },
+ "1b0dd880f7bbbc46": {
+  "form": "du-szene",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Wendepunkt",
+  "emotion": "neugier"
+ },
+ "9f95704a02eaabcf": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Ideen umsetzen",
+  "emotion": "neugier"
+ },
+ "5d985921e7aae7e1": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Möglichkeiten schaffen",
+  "emotion": "stolz"
+ },
+ "052e0ed2b0b99773": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Weihnachtszeit",
+  "emotion": "vorfreude"
+ },
+ "2cd54f736d2d2aaf": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Aus Rückschlägen lernen",
+  "emotion": "hoffnung"
+ },
+ "ef71dc6aa1e24aee": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Gedanken aussprechen",
+  "emotion": "humor"
+ },
+ "b270f20ca85b7394": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Botschaft an Mama",
+  "emotion": "waerme"
+ },
+ "fa90e012826703b6": {
+  "form": "liste",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Teenager Sätze",
+  "emotion": "humor"
+ },
+ "3b0d6164a6075a81": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Druck durch Muss",
+  "emotion": "erleichterung"
+ },
+ "fd72899329176288": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "doTERRA Convention Kattowitz",
+  "emotion": "vorfreude"
+ },
+ "6e0bcf1431423472": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Frühlings Öl-Duo",
+  "emotion": "neugier"
+ },
+ "39c8d29fd29bf580": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Zitronen aus Sizilien",
+  "emotion": "vertrauen"
+ },
+ "ba92b72295f373d0": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Frühling Neubeginn",
+  "emotion": "hoffnung"
+ },
+ "0636195dc6153bbd": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Gedankenkarussell",
+  "emotion": "stress"
+ },
+ "85dfa1b03c3cb3aa": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "doTERRA Blog",
+  "emotion": "neugier"
+ },
+ "b2c8c0f8c4d8f990": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Vatertag Geschenk",
+  "emotion": "neugier"
+ },
+ "e92cc1c71719c0c3": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Aprilwetter",
+  "emotion": "humor"
+ },
+ "d09068ca5b398972": {
+  "form": "frage",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Feierabend Duftöl",
+  "emotion": "entspannung"
+ },
+ "9faf531d89100fa1": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Bedeutung Montag",
+  "emotion": "neugier"
+ },
+ "cd08db93415a5776": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Ostergruß Team",
+  "emotion": "freude"
+ },
+ "ac47e6c2daa56ada": {
+  "form": "liste",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Oster Brunch Rezepte",
+  "emotion": "vorfreude"
+ },
+ "eb5aab0a3a6f588c": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Morgenroutine Stimmung",
+  "emotion": "ruhe"
+ },
+ "6998f2999985c4cc": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Adaptiv Kapseln",
+  "emotion": "ruhe"
  }
 }
