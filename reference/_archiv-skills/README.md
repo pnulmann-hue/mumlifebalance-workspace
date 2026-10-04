@@ -43,3 +43,12 @@ sich dieselbe Artifact-Adresse, es gibt also nur einen Editor.
 | `werbeanzeigentext-master` | zugekauft, steht Wort für Wort als Ergänzung in `/facebook-ads` — **gitignored** |
 
 Patricia: *„mir ist es einfach wichtig, dass wir eine saubere skillablage haben.“* Je Auftrag genau ein Skill — die Tabelle dazu steht in CLAUDE.md unter „Welcher Skill für welchen Auftrag“.
+
+
+---
+
+## Abgelöst am 04.10.2026 — durch `/start`
+
+| Archiviert | Warum |
+|---|---|
+| `prime-alt` | `/start` liest zusätzlich Repo-Stand, letzte Änderungen und Termine; `/prime` las noch die Kontextdateien vom Mai. Gegenstück am Ende ist neu `/shutdown`. |

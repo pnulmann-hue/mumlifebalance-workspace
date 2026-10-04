@@ -1,3 +1,7 @@
+---
+name: prime
+description: "Session-Initialisierung — liest CLAUDE.md und die Kontext-Dateien und fasst zusammen, wer der User ist und woran gerade gearbeitet wird."
+---
 Lies und verstehe den aktuellen Workspace-Kontext:
 
 1. Lies CLAUDE.md für die Workspace-Struktur und Anweisungen
