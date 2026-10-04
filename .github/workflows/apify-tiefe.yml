@@ -40,7 +40,7 @@ jobs:
         working-directory: scripts/apify
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
-          HANDLES: ${{ inputs.handles || 'anni.hoffmann,dascha_stories' }}
+          HANDLES: ${{ inputs.handles || 'anni.hoffmann,dascha_stories,katrinhill.onlinewachsen' }}
           LIMIT: ${{ inputs.limit || '200' }}
         run: node scrape-tiefe.js
       - name: Ergebnis committen
