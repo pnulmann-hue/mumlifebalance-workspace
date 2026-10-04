@@ -1,0 +1,962 @@
+{
+ "6ffb9ea1267ce9b8": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Geschichte statt Verkauf",
+  "emotion": "neugier"
+ },
+ "7c50412be0e0820e": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Liste vor Geburt",
+  "emotion": "neugier"
+ },
+ "8e3288340b6b233e": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Business Fakten",
+  "emotion": "neugier"
+ },
+ "c606223d323234ff": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Letzter Arbeitstag",
+  "emotion": "hoffnung"
+ },
+ "a5768d39c61afefc": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zeitaufwand Instagram",
+  "emotion": "erleichterung"
+ },
+ "7a1da30d8507aefb": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Zweites Standbein Werkzeug",
+  "emotion": "hoffnung"
+ },
+ "86752ed781207056": {
+  "form": "frage",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Zweites Network-Jahr",
+  "emotion": "neugier"
+ },
+ "a1f876025963c5b7": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Network Scham",
+  "emotion": "scham"
+ },
+ "8b701b6d0710213c": {
+  "form": "bekenntnis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Network nicht erklären",
+  "emotion": "neugier"
+ },
+ "108566ff08a3613b": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Sichtbarkeit ohne Produktkatalog",
+  "emotion": "hoffnung"
+ },
+ "bfabd1f1283ef634": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Eigenes Thema aufbauen",
+  "emotion": "hoffnung"
+ },
+ "08e1f3ecacc83c4d": {
+  "form": "aufruf",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Stolz auf Beruf",
+  "emotion": "scham"
+ },
+ "d21d6f648df4be27": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Eigenes zweites Standbein",
+  "emotion": "hoffnung"
+ },
+ "c24eb96987e9db1e": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Verkaufen ohne Anschreiben",
+  "emotion": "erleichterung"
+ },
+ "f9ef7b7e96a08915": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Minikurs eigenes Thema",
+  "emotion": "hoffnung"
+ },
+ "09cacf9f5dd169ef": {
+  "form": "aufruf",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Nächtliche Zweifel",
+  "emotion": "hoffnung"
+ },
+ "226600449a152d76": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Personal Brand",
+  "emotion": "stolz"
+ },
+ "09af3b27ea38dc62": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Traum des Kindes",
+  "emotion": "neugier"
+ },
+ "4b6625cb28e513b3": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Storys ohne Tanzen",
+  "emotion": "erleichterung"
+ },
+ "828afc3ab9029e11": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Erfolgsunterschied",
+  "emotion": "neugier"
+ },
+ "714d21c0f500c422": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Echte Geschichte Story",
+  "emotion": "hoffnung"
+ },
+ "b14fc8f7a2fc2166": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Schreibblockade",
+  "emotion": "frust"
+ },
+ "cc1481368ac9265e": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Leeres Story-Feld",
+  "emotion": "humor"
+ },
+ "1d73a6e853688205": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Geschichte schreiben Angst",
+  "emotion": "angst"
+ },
+ "848969ca26c724d4": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Erstes Network beendet",
+  "emotion": "neugier"
+ },
+ "c93e931a84de9121": {
+  "form": "ereignis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Abendlicher Zweifel",
+  "emotion": "neugier"
+ },
+ "6f87476275653c68": {
+  "form": "bekenntnis",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Nichts zu verkaufen",
+  "emotion": "hoffnung"
+ },
+ "ba6f25a26b019479": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Bio-Fehler",
+  "emotion": "scham"
+ },
+ "b68ef270adc1c32a": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Mama Alltag Putzen",
+  "emotion": "humor"
+ },
+ "ef2fce5efe22da20": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Profil-Check Mentee",
+  "emotion": "neugier"
+ },
+ "e166708b94929799": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Posten ohne Anfragen",
+  "emotion": "frust"
+ },
+ "60e997d0d71896b0": {
+  "form": "ereignis",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Rangaufstieg Crossline",
+  "emotion": "neid"
+ },
+ "340c6560ba5dd97b": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Freundin zögert",
+  "emotion": "scham"
+ },
+ "c38a998cff1e7fc9": {
+  "form": "bekenntnis",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Nichts zu verkaufen",
+  "emotion": "hoffnung"
+ },
+ "539be1d16e1c24a4": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Profil-Check Mentee",
+  "emotion": "neugier"
+ },
+ "bb91f26b8b929798": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Mehr posten Irrtum",
+  "emotion": "neugier"
+ },
+ "abc5beefbf70bb02": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Verkauf trotz Krankheit",
+  "emotion": "hoffnung"
+ },
+ "08a2ffa5e05c7eef": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Verständnis Frust",
+  "emotion": "erleichterung"
+ },
+ "942ea538fd7143bf": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Firma statt Person",
+  "emotion": "scham"
+ },
+ "3ce3f5528562f0ec": {
+  "form": "du-szene",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Profile vergleichen",
+  "emotion": "scham"
+ },
+ "2167db9b0dbb89bc": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Konsum statt Umsetzung",
+  "emotion": "scham"
+ },
+ "693dd78b1b7f69ec": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Engster Kreis",
+  "emotion": "neugier"
+ },
+ "c656478ad7476527": {
+  "form": "sonstiges",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zwei Networkerinnen",
+  "emotion": "neugier"
+ },
+ "9ac4343d1acfb5de": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Instagram Scrollfalle",
+  "emotion": "humor"
+ },
+ "03af79e447557960": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Network Kritik",
+  "emotion": "neugier"
+ },
+ "5310d911865ba13c": {
+  "form": "bekenntnis",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Produktposts früher",
+  "emotion": "scham"
+ },
+ "c50cbf18d77f6bb2": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Freie Zeit verschwendet",
+  "emotion": "frust"
+ },
+ "165629913d05bec0": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Reichweite geben",
+  "emotion": "neugier"
+ },
+ "ffdae949e8317219": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Thema statt Anschreiben",
+  "emotion": "erleichterung"
+ },
+ "f3a779990d5426a6": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Nicht Instagram schuld",
+  "emotion": "wut"
+ },
+ "e4c97011c0abbf31": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Freier Nachmittag",
+  "emotion": "frust"
+ },
+ "913605256f1a2850": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Postideen finden",
+  "emotion": "erleichterung"
+ },
+ "11148d958cca528b": {
+  "form": "du-szene",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Floppende Reels",
+  "emotion": "neugier"
+ },
+ "7c01d4c4b1a5b311": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama Sehnsucht",
+  "emotion": "scham"
+ },
+ "b9a76dbf8a857ae8": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Einsam am Familientisch",
+  "emotion": "scham"
+ },
+ "c6456b6d98106e7b": {
+  "form": "ereignis",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Instagram früher",
+  "emotion": "neugier"
+ },
+ "f17ae52aefa9e59e": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Stories ungesehen",
+  "emotion": "erleichterung"
+ },
+ "76cf90368d3f160a": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Familie zweifelt",
+  "emotion": "scham"
+ },
+ "6fd0f274da88a7d7": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Follower ohne Geld",
+  "emotion": "neugier"
+ },
+ "034ccade1a0e7bb2": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Reel Perfektionismus",
+  "emotion": "humor"
+ },
+ "1ed8e99434c11c8a": {
+  "form": "meinung",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "roter Faden Business",
+  "emotion": "neugier"
+ },
+ "aee6b202dc8db968": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "richtige Mentorin wählen",
+  "emotion": "wut"
+ },
+ "33ec8ce9a49c887c": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Follower überbewertet",
+  "emotion": "neugier"
+ },
+ "cbd5781f9859317d": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Reels ohne Anfragen",
+  "emotion": "frust"
+ },
+ "8322c02224341b4a": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "keine Anfragen Grund",
+  "emotion": "neugier"
+ },
+ "7b48c9eec0a28587": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "zwei Arten Networkerinnen",
+  "emotion": "neugier"
+ },
+ "ed747dc1d436c20c": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Positionierung statt Produkt",
+  "emotion": "neugier"
+ },
+ "ebd6e5ef4f5923f9": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Kontaktliste abtelefonieren",
+  "emotion": "scham"
+ },
+ "8bf6ebbf34287712": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Einzelansprache ineffizient",
+  "emotion": "neugier"
+ },
+ "7a8e6d651f3e50d3": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Network-Provision reicht nicht",
+  "emotion": "angst"
+ },
+ "0c1bc9dce471b57d": {
+  "form": "bekenntnis",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Produktbilder Zeitaufwand",
+  "emotion": "erleichterung"
+ },
+ "6e4fb6d362d12b15": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Produkt in Kamera",
+  "emotion": "neugier"
+ },
+ "b9ace6a61366ae60": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Business-Zeit als Rest",
+  "emotion": "erleichterung"
+ },
+ "2e2bf0690aeec8f3": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zeit fürs Business",
+  "emotion": "wut"
+ },
+ "0824eafbea6545f0": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "tägliches Content-Stress",
+  "emotion": "frust"
+ },
+ "631232d4615eff09": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Wunschkundschaft scrollt vorbei",
+  "emotion": "neugier"
+ },
+ "e4cedcd891c45bc8": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Reichweiten-Tipps unnötig",
+  "emotion": "erleichterung"
+ },
+ "f6bf87cd0e5918d5": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Bio-Fehler",
+  "emotion": "neugier"
+ },
+ "a7195ea934817221": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Einladungen ohne Resonanz",
+  "emotion": "frust"
+ },
+ "fa3c5153946fb109": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "nicht als Expertin wahrgenommen",
+  "emotion": "neugier"
+ },
+ "ab43e15c324f320d": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Bootcamp Ergebnisse",
+  "emotion": "stolz"
+ },
+ "b2199ec76fe4b2cf": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Gruppe statt allein",
+  "emotion": "hoffnung"
+ },
+ "ccb9ed6aa52c249f": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "eigenes Standbein aufbauen",
+  "emotion": "hoffnung"
+ },
+ "272050a45f2ba5b4": {
+  "form": "du-szene",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Mach einfach Reels",
+  "emotion": "frust"
+ },
+ "773d1d281f93443d": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Mama-Alltag Routine",
+  "emotion": "neugier"
+ },
+ "b115e0e85bf72f2e": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Anfragen mit wenig Followern",
+  "emotion": "hoffnung"
+ },
+ "a6c959d31a800b87": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Content-Planung",
+  "emotion": "erleichterung"
+ },
+ "85ff4133fcf936ad": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Business neben Familie",
+  "emotion": "scham"
+ },
+ "361d7787e0f801e5": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Sonntagabend am Handy",
+  "emotion": "scham"
+ },
+ "3adaa6f730103c7c": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Mama-Alltag Business",
+  "emotion": "stolz"
+ },
+ "363508863af2fc09": {
+  "form": "liste",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Schritte zur Anfrage",
+  "emotion": "neugier"
+ },
+ "5aa8b7871cbe8fe7": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Bootcamp Ablauf",
+  "emotion": "neugier"
+ },
+ "ce6c79642b119456": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "ehrlicher Business-Weg",
+  "emotion": "neugier"
+ },
+ "2ee4f4e539607b59": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Webinar abgesagt",
+  "emotion": "neugier"
+ },
+ "39f4fd2be44a3db5": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Stories nebenbei erstellen",
+  "emotion": "erleichterung"
+ },
+ "a5681c601ad9d044": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Vergleich mit anderen",
+  "emotion": "neid"
+ },
+ "bca527ceb6c00983": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Posten ohne Ergebnis",
+  "emotion": "erleichterung"
+ },
+ "47919609f2f08353": {
+  "form": "beweis",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "fehlender Lead-Magnet",
+  "emotion": "angst"
+ },
+ "191f7bad8df5586b": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "innere Glaubenssätze",
+  "emotion": "scham"
+ },
+ "bbe361a2b75827fc": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Posten ohne Anfragen",
+  "emotion": "frust"
+ },
+ "637d5f9e59ce907d": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Business-Jahr planen",
+  "emotion": "hoffnung"
+ },
+ "7b7905aafbc18bc7": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Systeme statt Disziplin",
+  "emotion": "hoffnung"
+ },
+ "a017299f79bb9c99": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbständigkeit verheimlicht",
+  "emotion": "scham"
+ },
+ "735c25029bc38349": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Neuanfang öffentlich",
+  "emotion": "neugier"
+ },
+ "c056b76d34ea3ed8": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Inhalte konsumieren statt umsetzen",
+  "emotion": "scham"
+ },
+ "86dc1dd697685078": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Produktbild ohne Reaktion",
+  "emotion": "frust"
+ },
+ "87e9dee8f91089e8": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Produktbilder ohne Wirkung",
+  "emotion": "frust"
+ },
+ "6340b51144912e26": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zeitmangel als Ausrede",
+  "emotion": "erleichterung"
+ },
+ "b29813bf7fc72dfe": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Story-Ideen im Alltag",
+  "emotion": "neugier"
+ },
+ "2dfc0deb2bd61de3": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Link in Bio",
+  "emotion": "neugier"
+ },
+ "49fbabafa5a21cd5": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Weiterbildung investieren",
+  "emotion": "humor"
+ },
+ "0a541ba416582711": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kritik vom Umfeld",
+  "emotion": "wut"
+ },
+ "2158b39fe5d88ddf": {
+  "form": "beweis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "KI-Mitarbeiter Planung",
+  "emotion": "neugier"
+ },
+ "6141c4dfce071226": {
+  "form": "beweis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Monatsplan mit KI",
+  "emotion": "neugier"
+ },
+ "8af05ced49ac9387": {
+  "form": "beweis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Monatsplan in 30 Minuten",
+  "emotion": "neugier"
+ },
+ "5523df37f3c04293": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Convention Katowice",
+  "emotion": "neugier"
+ },
+ "73f1277109bbf0b8": {
+  "form": "liste",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Mama-CEO Eignung",
+  "emotion": "neugier"
+ },
+ "e928928b1d054abf": {
+  "form": "beweis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Business läuft offline",
+  "emotion": "hoffnung"
+ },
+ "f8bb569634ed01e6": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "delegieren statt Zeit",
+  "emotion": "erleichterung"
+ },
+ "e9159137f1b5935a": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Handyzeit statt Menschen",
+  "emotion": "frust"
+ }
+}
