@@ -9526,5 +9526,1445 @@
   "konkret": false,
   "thema": "Preise berechnen",
   "emotion": "hoffnung"
+ },
+ "4ab66a2d275d870d": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Reichweite nur Networker",
+  "emotion": "neugier"
+ },
+ "cef9de5dcec87dab": {
+  "form": "frage",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Elternabend Schule Vergleich",
+  "emotion": "neugier"
+ },
+ "ecbe5cd8d3d7204e": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Networker kaputt",
+  "emotion": "humor"
+ },
+ "8b6b9f5ffc18b168": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Millionen online verdient",
+  "emotion": "neugier"
+ },
+ "8dc70bd0af65fa40": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "austauschbarer Content",
+  "emotion": "angst"
+ },
+ "22057bf71e431c52": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Monatsende Druck",
+  "emotion": "angst"
+ },
+ "888dd732ea75559b": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Namensliste Network",
+  "emotion": "humor"
+ },
+ "1d45fdba8c38e83d": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Blutwerte Vitamin D",
+  "emotion": "neugier"
+ },
+ "8ebf4ee4dd73594d": {
+  "form": "liste",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "drei Zielgruppen",
+  "emotion": "neugier"
+ },
+ "698568126e3a5ef3": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "spontane Videos",
+  "emotion": "humor"
+ },
+ "f5ead1f54ac9130c": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "ohne Skript sprechen",
+  "emotion": "erleichterung"
+ },
+ "e3fa260d9a12ee2f": {
+  "form": "sonstiges",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "leere Hülle",
+  "emotion": "keine"
+ },
+ "977deef246449532": {
+  "form": "dialog",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Mama dreht Videos",
+  "emotion": "humor"
+ },
+ "344bfa7cbce0f6d6": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "teurer Branchenratschlag",
+  "emotion": "neugier"
+ },
+ "9878e38481ded030": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Upline Vorwurf",
+  "emotion": "wut"
+ },
+ "139b72a75d61cdfb": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Urlaub ohne Content",
+  "emotion": "erleichterung"
+ },
+ "0ab201d008444272": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "natürlich sprechen",
+  "emotion": "erleichterung"
+ },
+ "613cfeb530598d3a": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Perfektionismus loslassen",
+  "emotion": "erleichterung"
+ },
+ "222e99b3337bc47a": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Pläne verschweigen",
+  "emotion": "neugier"
+ },
+ "ff0e34bfeba6b877": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Network Ausstieg",
+  "emotion": "neugier"
+ },
+ "af0de93dd893b786": {
+  "form": "frage",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Dranbleiben als Strategie",
+  "emotion": "humor"
+ },
+ "b036b0224a546679": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "später Team-Call",
+  "emotion": "humor"
+ },
+ "53d9f617535055c3": {
+  "form": "meinung",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Verkauf statt Reichweite",
+  "emotion": "neugier"
+ },
+ "5e8e3c62f2f1adfa": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Eigenverantwortung Business",
+  "emotion": "keine"
+ },
+ "931ef27846a5cf6f": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Langfristig aufbauen",
+  "emotion": "angst"
+ },
+ "830eb9a6d3835c9e": {
+  "form": "dialog",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Nischen Ausrede",
+  "emotion": "humor"
+ },
+ "95b5a11233f7ab3b": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Erfolgszutat Networker",
+  "emotion": "neugier"
+ },
+ "73619cbe8b18516d": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "neuer Account",
+  "emotion": "neugier"
+ },
+ "696debda1beddd60": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Stillstand Business",
+  "emotion": "neugier"
+ },
+ "103dbaf9e804cddd": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Tabus im Network",
+  "emotion": "erleichterung"
+ },
+ "8d1fb8f024f3624b": {
+  "form": "beweis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Team Fluktuation",
+  "emotion": "wut"
+ },
+ "532f207e60285914": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Social Media Lust",
+  "emotion": "keine"
+ },
+ "44d675ff1df6fd23": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Shake suchen",
+  "emotion": "humor"
+ },
+ "5ae6d4929d6b04fe": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Upline Monatsende Druck",
+  "emotion": "wut"
+ },
+ "043b0062602c4e5c": {
+  "form": "ereignis",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Bruder Internet-Ding",
+  "emotion": "stolz"
+ },
+ "16a891193eb1052a": {
+  "form": "ratgeber",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Offline online kombinieren",
+  "emotion": "erleichterung"
+ },
+ "1f261f77d64c873e": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "KI Content",
+  "emotion": "keine"
+ },
+ "c8e6d0b738e9f6c9": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Scham über Zahlen",
+  "emotion": "scham"
+ },
+ "c5104df1bcab5254": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Urlaub ohne Schuld",
+  "emotion": "erleichterung"
+ },
+ "78900e4e0a1875c0": {
+  "form": "beweis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Dorfmädel Million",
+  "emotion": "hoffnung"
+ },
+ "d0f68e5828aa8c2d": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Fragment",
+  "emotion": "keine"
+ },
+ "4af58a44ba0d5a0f": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "mehr Follower",
+  "emotion": "neugier"
+ },
+ "d97813eaa8a407b5": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Start bei null",
+  "emotion": "hoffnung"
+ },
+ "dfaeded9fd9b6ec8": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Freundin unterstützen",
+  "emotion": "keine"
+ },
+ "11914bbdce49664c": {
+  "form": "bekenntnis",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Porsche mit 31",
+  "emotion": "neugier"
+ },
+ "e721851146b726ba": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "103.756€ in 31 Tagen",
+  "emotion": "neugier"
+ },
+ "58a233637fe6d839": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Online Business Start",
+  "emotion": "neugier"
+ },
+ "5a9bfa8b48c9b457": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Thema finden",
+  "emotion": "erleichterung"
+ },
+ "3dded1c87fc2e50d": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Online Einkommen",
+  "emotion": "hoffnung"
+ },
+ "85550e96048fdb90": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Selbstbewusstsein 2026",
+  "emotion": "stolz"
+ },
+ "95609a4c16e2cfd4": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mitnehmen Zeigen",
+  "emotion": "neugier"
+ },
+ "819dd0b210dabdd7": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "neue Follower",
+  "emotion": "neugier"
+ },
+ "a23db9fd58f76ca7": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Geld und Glück",
+  "emotion": "keine"
+ },
+ "0c713853c4ccd093": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "nutzlose Tipps",
+  "emotion": "wut"
+ },
+ "77d69730d9fcbe5c": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Fragment",
+  "emotion": "neugier"
+ },
+ "085724fd0c6dda81": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Fremde Meinungen",
+  "emotion": "keine"
+ },
+ "fc0b85e07a46f10a": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "typische Networker Sätze",
+  "emotion": "humor"
+ },
+ "c44a84753e25bb18": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "eigener ChatGPT",
+  "emotion": "neugier"
+ },
+ "f39cb322b2369a36": {
+  "form": "frage",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "5k Monate",
+  "emotion": "neugier"
+ },
+ "d35fea0e9261870a": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "automatisierte Tools Einkommen",
+  "emotion": "hoffnung"
+ },
+ "e253be31ecea5be8": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Familienfest Networkerin",
+  "emotion": "humor"
+ },
+ "f4032e9535b2c19f": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Websites schnell bauen",
+  "emotion": "neugier"
+ },
+ "7b5e63fbaaddd91c": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Kurs für 1 Euro",
+  "emotion": "neugier"
+ },
+ "08e5d68de0f7ebd2": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Ziele setzen Motivation",
+  "emotion": "hoffnung"
+ },
+ "65d24e22ae7acaae": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Selbstständigkeit narzisstische Mutter",
+  "emotion": "neugier"
+ },
+ "5bb3ab6e2c41fcd8": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Selbstständig auf Instagram",
+  "emotion": "humor"
+ },
+ "cd166d1c4a493577": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Reels mehr Familienzeit",
+  "emotion": "hoffnung"
+ },
+ "4b18d50e6df4ce73": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "ChatGPT Account Analyse",
+  "emotion": "neugier"
+ },
+ "d2f5adfc1f0ffc1f": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Networker online scheitern",
+  "emotion": "neugier"
+ },
+ "4dcd50e7385d4e8e": {
+  "form": "sonstiges",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Alte Taktiken Mehrwert",
+  "emotion": "keine"
+ },
+ "c6e463e46a6fe58d": {
+  "form": "ereignis",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Freiheit statt Kassenjob",
+  "emotion": "erleichterung"
+ },
+ "3248e71de34cc7fd": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Vor Posten verstehen",
+  "emotion": "neugier"
+ },
+ "9dbece316cda3bc2": {
+  "form": "meinung",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Videos statt Angestellt",
+  "emotion": "hoffnung"
+ },
+ "d3a9a8b2f8c94dea": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unklar",
+  "emotion": "keine"
+ },
+ "6cb8a1f26299d4ab": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Autokauf Wirbel",
+  "emotion": "neugier"
+ },
+ "4a0c0667216795c8": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Gedanken Selbstständige",
+  "emotion": "humor"
+ },
+ "bf3f3e64a4528088": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Operationen Dankbarkeit",
+  "emotion": "hoffnung"
+ },
+ "72e4a8a889454887": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "KI Training gratis",
+  "emotion": "hoffnung"
+ },
+ "00b75bf9c3e1a38b": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Money Mindset Erfolg",
+  "emotion": "neugier"
+ },
+ "529e3c768850ceba": {
+  "form": "zitat",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Lebenszeit verschwenden",
+  "emotion": "angst"
+ },
+ "811a3e07318e3cd0": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Umsatz wenige Follower",
+  "emotion": "neugier"
+ },
+ "5537233ab4cda45f": {
+  "form": "bekenntnis",
+  "angle": "beweis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Früher Reichtum",
+  "emotion": "neugier"
+ },
+ "02f7eac63055fa7d": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Verkaufen über Storys",
+  "emotion": "hoffnung"
+ },
+ "cf1ba402f4933bd6": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Teamcall Rauswurf",
+  "emotion": "neugier"
+ },
+ "657d28381817b7e0": {
+  "form": "meinung",
+  "angle": "beweis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Tagesumsatz Neider",
+  "emotion": "stolz"
+ },
+ "17510ef61dd47e80": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Passives Einkommen Wahrheit",
+  "emotion": "neugier"
+ },
+ "06340d5601277c6c": {
+  "form": "du-szene",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Spam DMs ghosten",
+  "emotion": "humor"
+ },
+ "19cf172a89e1e08d": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Tools statt PDFs",
+  "emotion": "neugier"
+ },
+ "c1dd2dd76af781e2": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Kaltakquise Problem",
+  "emotion": "neugier"
+ },
+ "c89d541d3f6b3674": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unklar",
+  "emotion": "keine"
+ },
+ "54d00c7e921da7df": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zurück in Job",
+  "emotion": "angst"
+ },
+ "4a2d39153af1ee37": {
+  "form": "du-szene",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "PDFs veraltet",
+  "emotion": "neugier"
+ },
+ "0e32ffff74032985": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unklar",
+  "emotion": "keine"
+ },
+ "3b52648a1b42230b": {
+  "form": "ratgeber",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Klares Profilthema",
+  "emotion": "keine"
+ },
+ "32679e4f72721148": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Veraltete Network Methoden",
+  "emotion": "humor"
+ },
+ "07f777b12b8ef037": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Geld ohne Ads",
+  "emotion": "hoffnung"
+ },
+ "809e4812eed03580": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Blockade Networker",
+  "emotion": "neugier"
+ },
+ "57ad37ab5f467ded": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Zwei Slides Trick",
+  "emotion": "neugier"
+ },
+ "1ebb11fa00e11465": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Instagram Täuschung",
+  "emotion": "wut"
+ },
+ "8b8c051e6e5e7c5b": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "KI Content Follower",
+  "emotion": "neugier"
+ },
+ "3ac2295749c77e6a": {
+  "form": "ratgeber",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Eigenständiger Content",
+  "emotion": "keine"
+ },
+ "156086896eaa3308": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unklar",
+  "emotion": "neugier"
+ },
+ "9c6f5e6ef8bb6a99": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Kurse Bundle Preis",
+  "emotion": "neugier"
+ },
+ "2f1324216459a9df": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Täglich posten Ergebnis",
+  "emotion": "neugier"
+ },
+ "7a3cda94189eca51": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Follower Flaute",
+  "emotion": "neugier"
+ },
+ "580e9f1cef532ed0": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Tägliche Routine",
+  "emotion": "neugier"
+ },
+ "971d84136f998a1c": {
+  "form": "du-szene",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Unklar",
+  "emotion": "neugier"
+ },
+ "e4cff41352082261": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Teamwachstum Network",
+  "emotion": "neugier"
+ },
+ "be975df7e6f58283": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Content Wettbewerb",
+  "emotion": "humor"
+ },
+ "2b915220c911404c": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Eine Änderung Kunden",
+  "emotion": "hoffnung"
+ },
+ "05af69a3d30d2d3d": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unklar",
+  "emotion": "keine"
+ },
+ "881c768b93ee0703": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unklar",
+  "emotion": "keine"
+ },
+ "2dfdf7364591cd1d": {
+  "form": "ereignis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Instagram gelöscht",
+  "emotion": "neugier"
+ },
+ "9cb4771c212747c3": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Realität Aufbauphase",
+  "emotion": "erleichterung"
+ },
+ "818fee378cf9de29": {
+  "form": "dialog",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Privatleben Story Vertrauen",
+  "emotion": "neugier"
+ },
+ "ef6b7a4376230ebb": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Tagesumsatz online",
+  "emotion": "neugier"
+ },
+ "dc9506be0bab75df": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Weniger posten",
+  "emotion": "erleichterung"
+ },
+ "13ff14f584e89b3a": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Follower zu Kunden",
+  "emotion": "hoffnung"
+ },
+ "52941ba75e0df837": {
+  "form": "dialog",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Julias Kompetenz",
+  "emotion": "humor"
+ },
+ "61f7177d8542e5b1": {
+  "form": "dialog",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Team-Events Story",
+  "emotion": "humor"
+ },
+ "5df119ea84454275": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Networker Instagram Fehler",
+  "emotion": "neugier"
+ },
+ "db286a5334a2e8c2": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Story Formel",
+  "emotion": "neugier"
+ },
+ "6c41235928ed85ec": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Geld und Glück",
+  "emotion": "neugier"
+ },
+ "9afb2bcaa8e8c89d": {
+  "form": "dialog",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "ChatGPT Account Analyse",
+  "emotion": "neugier"
+ },
+ "128c403a01b500e3": {
+  "form": "dialog",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Leasing Auto Neid",
+  "emotion": "humor"
+ },
+ "cd0bfb514b4f776f": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Online Business Start",
+  "emotion": "hoffnung"
+ },
+ "5b47e3309b946631": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Falscher Verkaufssatz",
+  "emotion": "angst"
+ },
+ "94f0987ec1ea900e": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Kritik an Hooks",
+  "emotion": "neugier"
+ },
+ "0155d700e8102013": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Produkt in Kamera",
+  "emotion": "scham"
+ },
+ "a0df088b3ead1e0e": {
+  "form": "liste",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Reel Absprung",
+  "emotion": "neugier"
+ },
+ "c819f06d8994c237": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Kundenentscheidungen",
+  "emotion": "neugier"
+ },
+ "46364e480f070083": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Tagesumsatz Julia",
+  "emotion": "neugier"
+ },
+ "6251391de44c8993": {
+  "form": "ereignis",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Porsche abholen",
+  "emotion": "stolz"
+ },
+ "bebdf3cff260cbbf": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Posting Frequenz",
+  "emotion": "erleichterung"
+ },
+ "c1463cacb744c941": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Kurspaket Angebot",
+  "emotion": "hoffnung"
+ },
+ "fd813db63e92b639": {
+  "form": "bekenntnis",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Vorher nachher Leben",
+  "emotion": "hoffnung"
+ },
+ "881c70c1eb0fbb10": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Erste 5000 Euro",
+  "emotion": "hoffnung"
+ },
+ "229f115747ec9563": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Magnetisch für Kunden",
+  "emotion": "humor"
+ },
+ "29c4e69e4fa45295": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Motivation ohne Scham",
+  "emotion": "stolz"
+ },
+ "8c41c48bf00b78fd": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Tagesvlog",
+  "emotion": "neugier"
+ },
+ "8c9cc54a88c018f2": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Über Geld sprechen",
+  "emotion": "neugier"
+ },
+ "2adc183a7494aa81": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Tagesvlog",
+  "emotion": "neugier"
+ },
+ "ce4f7d3fd99a9753": {
+  "form": "meinung",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Algorithmus Vergleich",
+  "emotion": "humor"
+ },
+ "ea699b03ba818b81": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Kritik Content",
+  "emotion": "wut"
+ },
+ "f59574de33609df0": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Umgang Hater",
+  "emotion": "stolz"
+ },
+ "b8c257414d443fe5": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Empörung",
+  "emotion": "wut"
+ },
+ "1529b1862f59291f": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Mama mit Business",
+  "emotion": "humor"
+ },
+ "c1baf9daecd8b747": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Content Regel",
+  "emotion": "neugier"
+ },
+ "a4721b03213b9be1": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Persönliche Geschichte",
+  "emotion": "neugier"
+ },
+ "55c3c8f1a4fa86b0": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Hook Beispiele",
+  "emotion": "neugier"
+ },
+ "e59a8fc57162024f": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "KI Risiken",
+  "emotion": "angst"
+ },
+ "fe0ed51ca1330e98": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Reichweite Wachstum",
+  "emotion": "neugier"
+ },
+ "7f40c7302c15500f": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Content Trick",
+  "emotion": "neugier"
+ },
+ "27a7942621f963b4": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Abneigung",
+  "emotion": "neugier"
+ },
+ "1211488b0af2fa6a": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Social Media Geheimnis",
+  "emotion": "neugier"
+ },
+ "90ed9e6f61331052": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Schlechter Hook",
+  "emotion": "humor"
+ },
+ "75356fc028f9425d": {
+  "form": "ereignis",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Neustart Account",
+  "emotion": "hoffnung"
+ },
+ "3b439a457d6d0a84": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Produktwissen Network",
+  "emotion": "neugier"
+ },
+ "6d69f270b84e17a8": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Posting Frequenz",
+  "emotion": "neugier"
+ },
+ "fb6c8d8633fd4160": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Algorithmus Ausrede",
+  "emotion": "humor"
+ },
+ "cf234da639cb30a0": {
+  "form": "dialog",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Alleinstellungsmerkmal",
+  "emotion": "angst"
+ },
+ "5012e46d879d5480": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Magnetische Ausstrahlung",
+  "emotion": "neugier"
+ },
+ "932d50a12e9d467f": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zu viel Wissen",
+  "emotion": "erleichterung"
+ },
+ "ba922e9368a50493": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Hook Reaktion",
+  "emotion": "humor"
+ },
+ "ffcbcd4237c5d7ca": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Schnell Geld Network",
+  "emotion": "hoffnung"
+ },
+ "4edc468e6f31c941": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Umfeld Business",
+  "emotion": "neugier"
+ },
+ "89209d76afb70632": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Durchbruch Anzeichen",
+  "emotion": "hoffnung"
+ },
+ "fe46fda5e0238ea8": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "3000 Euro Tag",
+  "emotion": "neugier"
+ },
+ "6878427d49c66db8": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Reels ohne Follower",
+  "emotion": "neugier"
+ },
+ "d20fe80f200f9fed": {
+  "form": "bekenntnis",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Visionboard leben",
+  "emotion": "stolz"
+ },
+ "1f3fe1c1284b4afa": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Dorf Bekannte",
+  "emotion": "humor"
+ },
+ "6f6dd0fa3c892fa9": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Flop Angst",
+  "emotion": "erleichterung"
+ },
+ "c8917f08060c3b7e": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Follower Wachstum",
+  "emotion": "hoffnung"
+ },
+ "ae1672ff01141aa2": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Networker ohne Umsatz",
+  "emotion": "scham"
+ },
+ "3327c1557a62cabf": {
+  "form": "dialog",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Umsatz Kritik",
+  "emotion": "humor"
+ },
+ "77cf758d0fd88758": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Grenzen Mehrarbeit",
+  "emotion": "neugier"
+ },
+ "63da8efa418a9141": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unvollständiger Hook",
+  "emotion": "neugier"
+ },
+ "983c0fb3a4419e8c": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Botschaft Hater",
+  "emotion": "stolz"
+ },
+ "b9a32984fc5a5fb9": {
+  "form": "frage",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Mini Kurse",
+  "emotion": "hoffnung"
+ },
+ "352867ebf1cba2a3": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Monatsende Routine",
+  "emotion": "neugier"
  }
 }
