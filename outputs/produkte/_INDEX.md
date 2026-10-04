@@ -104,6 +104,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[05-praesentationen]]
 - [[06-preis-validierung]]
 - [[07-launch-kalender]]
+- [[10-abgleich-julia-claude-kurse]]
 - [[begriffe-cheatsheet]]
 - [[buch-technik-auftrag]]
 - [[business-brief-vorlage]]
