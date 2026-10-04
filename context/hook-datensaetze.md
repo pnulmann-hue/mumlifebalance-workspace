@@ -66,6 +66,21 @@ Monat bangen, nicht mehr ins Büro) für Blau/Grün. Über eine Woche beide bedi
 | „Ich lasse es mal weiterlaufen und schaue, wie weit ich komme.“ | wie lange willst du noch allein dranbleiben? |
 | „Dann muss ich mein Network aufgeben.“ | nein — daneben etwas Eigenes |
 
+### Der Glaubenssatz aus dem eigenen Team (Patricia, 04.10.2026)
+
+Ausserhalb von Instagram spricht fast niemand über „etwas Eigenes neben dem Network“ (Recherche
+04.10., 87 Zitate, kein Podcast-Titel dazu). Patricia: *„im grundsatz dürfte es beides sein. weil ja
+die meisten networkleaderinnen empfehlen — aus eigeninteresse!! — dass man nichts weiter aufbauen
+soll, und die bewusstseinsstufe dürfte da aber auch noch nicht da sein“*. Also zwei Gründe zugleich:
+
+1. **Sie kennt die Lösung nicht** → Hooks auf Stufe 1–2, „Produkt“ nie vorne.
+2. **Sie hat gelernt, dass sie es nicht darf** → *„Ich soll mich aufs Network konzentrieren, alles
+   andere lenkt ab.“* Das ist ihr Gedanke, nicht ihre Überzeugung — sie hat ihn übernommen.
+
+🚨 **Der Hook greift den Satz auf, nie die Leaderin an.** Nicht „deine Upline will nur ihr Geld“,
+sondern ihr eigener Zweifel: *„Darf ich überhaupt etwas neben meinem Network aufbauen?“* — die
+Erlaubnis geben, ohne das Team schlechtzumachen (Hook-Skill Verbot 4).
+
 **Der wahre Grund hinter Absagen** (Patricia): fehlendes Vertrauen in sich und die Angst, dass
 es wieder nicht klappt. Hooks dürfen diese Angst aussprechen, nie den Preis verteidigen.
 
