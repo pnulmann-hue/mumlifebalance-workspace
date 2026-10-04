@@ -8982,5 +8982,549 @@
   "konkret": false,
   "thema": "Erfolg und Misserfolg",
   "emotion": "hoffnung"
+ },
+ "d5852c9c5e86ffdb": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "eigener Kleidungsstil",
+  "emotion": "neugier"
+ },
+ "8b5b44591d8ec01d": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "alles haben können",
+  "emotion": "hoffnung"
+ },
+ "afe9c0fb11ce7f5e": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zweifel Selbstständigkeit",
+  "emotion": "humor"
+ },
+ "c16112784da3d62e": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Durchbruch Tipps",
+  "emotion": "neugier"
+ },
+ "e24b3068a5c3e7a3": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Jobs gekündigt",
+  "emotion": "neugier"
+ },
+ "17f19932b7b987c8": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Kundenumgang",
+  "emotion": "wut"
+ },
+ "6c42edba43baa945": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Content Strategie",
+  "emotion": "hoffnung"
+ },
+ "edc327b6e013fd18": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Umgang mit Hatern",
+  "emotion": "stolz"
+ },
+ "0831a50b9031ae2f": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Reichweite durch Hooks",
+  "emotion": "hoffnung"
+ },
+ "37df5d2894613988": {
+  "form": "beweis",
+  "angle": "kontraer",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "seriöses Business",
+  "emotion": "stolz"
+ },
+ "14cc58e8191ac0f3": {
+  "form": "beweis",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Gewichtsabnahme",
+  "emotion": "stolz"
+ },
+ "b76463b4e950f142": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Onlinekurs verkaufen",
+  "emotion": "scham"
+ },
+ "bb9150665eafcfc0": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Angst vor Veränderung",
+  "emotion": "angst"
+ },
+ "f7bbbbe20d90c61a": {
+  "form": "beweis",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Weg zum Millionenbusiness",
+  "emotion": "hoffnung"
+ },
+ "10897dfa6eadef0b": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Stärken und KI",
+  "emotion": "neugier"
+ },
+ "4768f23f8b19eb0d": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "eigene Power",
+  "emotion": "hoffnung"
+ },
+ "b211d63bc177cd06": {
+  "form": "beweis",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Weg zum Millionenbusiness",
+  "emotion": "hoffnung"
+ },
+ "f072c8afaf3294e4": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Kundin erster Launch",
+  "emotion": "hoffnung"
+ },
+ "887546756cfb33a3": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Erfolg braucht Zeit",
+  "emotion": "erleichterung"
+ },
+ "b1431cb868716595": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "fehlende Umsetzung",
+  "emotion": "angst"
+ },
+ "983e88d8cff472c2": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Weg in Selbstständigkeit",
+  "emotion": "neugier"
+ },
+ "a723f5baaad0093b": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "75-Tage-Challenge Business",
+  "emotion": "humor"
+ },
+ "ab19c8a547752511": {
+  "form": "dialog",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "provokante Aussage",
+  "emotion": "neugier"
+ },
+ "6cdc6249e13ef436": {
+  "form": "aufruf",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "gespeicherte Tipps umsetzen",
+  "emotion": "scham"
+ },
+ "bcde01773324e9e0": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Lizenz-Jäger",
+  "emotion": "neugier"
+ },
+ "e9270a59d045ee55": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Wirkung hinterlassen",
+  "emotion": "hoffnung"
+ },
+ "11a42d3005c25c64": {
+  "form": "dialog",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Kursverkauf Irrtum",
+  "emotion": "humor"
+ },
+ "bc6850b4b81766d9": {
+  "form": "sonstiges",
+  "angle": "vergleich",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kinder und Business",
+  "emotion": "humor"
+ },
+ "ec4ef2c041e5a8ee": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Test-Reels Strategie",
+  "emotion": "neugier"
+ },
+ "66204f13692f7a23": {
+  "form": "dialog",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Glaubenssätze Geld",
+  "emotion": "humor"
+ },
+ "ef60c8f300a47e32": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Content Ideen finden",
+  "emotion": "neugier"
+ },
+ "3ebc6fb2052e1dde": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Hooks für Reels",
+  "emotion": "humor"
+ },
+ "adca3a7d96129278": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "erstes Event",
+  "emotion": "stolz"
+ },
+ "c47df5c2b6f203db": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Content Tipps",
+  "emotion": "keine"
+ },
+ "909228dae9443199": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "einfache Sprache",
+  "emotion": "neugier"
+ },
+ "fc1190b00156e80d": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Aufmerksamkeitsökonomie",
+  "emotion": "neugier"
+ },
+ "f102ac4184a48648": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "visuelle Video-Regeln",
+  "emotion": "angst"
+ },
+ "41fdc49bcfe990cb": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "endlose Aufgaben",
+  "emotion": "humor"
+ },
+ "7ef8ecb9c7efecbb": {
+  "form": "beweis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Claude Prompts Umsatz",
+  "emotion": "neugier"
+ },
+ "4be694f2186d7c37": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Kundinnen-Feedback",
+  "emotion": "stolz"
+ },
+ "1c51efb468546bc3": {
+  "form": "zitat",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Scheitern als Erfolg",
+  "emotion": "hoffnung"
+ },
+ "b1df2b4d96ac7bad": {
+  "form": "liste",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Leben als Reiche",
+  "emotion": "neugier"
+ },
+ "c58b097c849a3b4d": {
+  "form": "beweis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "digitale Produkte Claude",
+  "emotion": "neugier"
+ },
+ "954eb62feafbe802": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "keine Abkürzungen",
+  "emotion": "hoffnung"
+ },
+ "44bb9dea2e2db33c": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Leben genießen",
+  "emotion": "hoffnung"
+ },
+ "e5c90bc2b6c23bfd": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Geben und Sein",
+  "emotion": "keine"
+ },
+ "b1d11f2b4a1936ea": {
+  "form": "meinung",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Umsatzgarantie",
+  "emotion": "neugier"
+ },
+ "c6e30efbe54bb3ec": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Account wiederbeleben",
+  "emotion": "hoffnung"
+ },
+ "cdefa55039c22d7a": {
+  "form": "bekenntnis",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Vergleich auf Instagram",
+  "emotion": "erleichterung"
+ },
+ "a3d17ae0c11e6404": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Profil-Vorstellung",
+  "emotion": "humor"
+ },
+ "748888a8275e7f47": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Christian-Wolf-Marketing",
+  "emotion": "neugier"
+ },
+ "c03ba2a30f94bfa1": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "eigener Traum",
+  "emotion": "hoffnung"
+ },
+ "d4937e64e69b5dd7": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Luxus und Natur",
+  "emotion": "freude"
+ },
+ "0bc1495f7e2bc8c4": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Umsetzung",
+  "emotion": "stolz"
+ },
+ "f0bf235102a1cf8f": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Mastermind Montenegro",
+  "emotion": "stolz"
+ },
+ "61771b1d81661fb1": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Link anfordern",
+  "emotion": "neugier"
+ },
+ "ba830ba2acb8e90d": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Reels Challenge",
+  "emotion": "neugier"
+ },
+ "ffdbc3fdf15ba49d": {
+  "form": "aufruf",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Selbstsabotage stoppen",
+  "emotion": "hoffnung"
+ },
+ "1a683a8984cafa71": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "zuckerfreie Challenge",
+  "emotion": "stolz"
+ },
+ "feed8640730f08f5": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Follower-Reels Video",
+  "emotion": "neugier"
+ },
+ "3865333f8aa61806": {
+  "form": "ratgeber",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Test-Reels Strategie",
+  "emotion": "neugier"
+ },
+ "d27b43187738e8ce": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Innehalten",
+  "emotion": "neugier"
+ },
+ "b6814826aa48c833": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Launchen erklärt",
+  "emotion": "neugier"
+ },
+ "7c74dec3e075b1c7": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Reel Challenge Live-Call",
+  "emotion": "hoffnung"
+ },
+ "7bf1f56db12701b5": {
+  "form": "bekenntnis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Bester Monat September",
+  "emotion": "stolz"
+ },
+ "f01b8aa7d9a137b3": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Reels Challenge Start",
+  "emotion": "hoffnung"
+ },
+ "552586469f6b067c": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Offline Event",
+  "emotion": "neugier"
+ },
+ "329d7c6a6f820b62": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Preise berechnen",
+  "emotion": "hoffnung"
  }
 }
