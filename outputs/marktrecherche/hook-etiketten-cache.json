@@ -2878,5 +2878,4805 @@
   "konkret": false,
   "thema": "Toxische Positivität",
   "emotion": "wut"
+ },
+ "fe436688acd96203": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama Selbstkritik",
+  "emotion": "scham"
+ },
+ "7d7e7f604003fcfa": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Glück neu definieren",
+  "emotion": "neugier"
+ },
+ "9c021f528be46746": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "eigene Wünsche",
+  "emotion": "hoffnung"
+ },
+ "947ff856153ad39f": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "typische Sätze",
+  "emotion": "neugier"
+ },
+ "b5d4aa3220323d36": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Geld als Ziel",
+  "emotion": "neugier"
+ },
+ "5b6c1e0b9063dfa0": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstzweifel Mama",
+  "emotion": "erleichterung"
+ },
+ "e57e6dd4c4454dd4": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Online-Einkommen Modelle",
+  "emotion": "neugier"
+ },
+ "65b5951cac511836": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Mut und Selbstzweifel",
+  "emotion": "hoffnung"
+ },
+ "ebb8c9787da37af3": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Erziehung neu denken",
+  "emotion": "neugier"
+ },
+ "ca5798f0f07cd05e": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Lebensveränderung",
+  "emotion": "neugier"
+ },
+ "4da8e570088405cc": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "doTERRA Convention Kattowitz",
+  "emotion": "stolz"
+ },
+ "b7a112249ba4bea1": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Online-Business Skepsis",
+  "emotion": "neugier"
+ },
+ "c385e0f5188c124e": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Aufgeben wollen",
+  "emotion": "hoffnung"
+ },
+ "6e344ada87ab8b4f": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Online-Business Tagebuch",
+  "emotion": "neugier"
+ },
+ "45183397ceca026c": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Summer Reset Woche",
+  "emotion": "keine"
+ },
+ "ee29543d8a653e85": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Persönlicher Wendepunkt",
+  "emotion": "neugier"
+ },
+ "2ef80877c255bc31": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Instagram Nebeneinkommen",
+  "emotion": "hoffnung"
+ },
+ "e7b5e31d89378972": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Alleinerziehend Belastung",
+  "emotion": "verständnis"
+ },
+ "09e932a827baf645": {
+  "form": "dialog",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama Alltag",
+  "emotion": "humor"
+ },
+ "ebd196d17758be26": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kernaussage",
+  "emotion": "neugier"
+ },
+ "864e03c31d1859c5": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Schreien Erziehung",
+  "emotion": "scham"
+ },
+ "248b5aee8874b0e4": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Alleinerziehende Veränderung",
+  "emotion": "verständnis"
+ },
+ "9680fe6e8d4559fb": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Instagram Nebeneinkommen",
+  "emotion": "hoffnung"
+ },
+ "ccc0906c719e0d74": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Instagram Nebeneinkommen",
+  "emotion": "hoffnung"
+ },
+ "1a46e7a24bec6557": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Beobachtung",
+  "emotion": "neugier"
+ },
+ "bf83877f28bf0ea0": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Sommer Fahrradtour",
+  "emotion": "freude"
+ },
+ "1100b3e32230adcf": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Alleinerziehend Wunsch",
+  "emotion": "verständnis"
+ },
+ "c42f65130f717d66": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Angst positiv",
+  "emotion": "erleichterung"
+ },
+ "e08d079d227f2c3e": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "doTERRA Summer Essentials",
+  "emotion": "freude"
+ },
+ "31c76df5a002e931": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Glaubenssätze hinterfragen",
+  "emotion": "neugier"
+ },
+ "7ca8ac1a9262cdea": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kind Elternpräferenz",
+  "emotion": "erleichterung"
+ },
+ "9c39d04a3a551fa6": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "unnötige Sorgen",
+  "emotion": "erleichterung"
+ },
+ "fdc952b99fe7529d": {
+  "form": "sonstiges",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Meinung anderer",
+  "emotion": "humor"
+ },
+ "51571847f1ea9379": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Alleinerziehend werden",
+  "emotion": "traurigkeit"
+ },
+ "9e0aadd4b40a8ba7": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Familie Erwartungen",
+  "emotion": "enttäuschung"
+ },
+ "4c74eb3fbc0baa10": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Freiheit morgens",
+  "emotion": "hoffnung"
+ },
+ "826f41a077abae20": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Online-Business Tagebuch",
+  "emotion": "neugier"
+ },
+ "11ca2a740c070d05": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Live-Workshop Ticket",
+  "emotion": "neugier"
+ },
+ "c47cce920eb116e0": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "doTERRA Summer Academy",
+  "emotion": "vorfreude"
+ },
+ "c223b20f1f6c7bd2": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Live-Workshop Ticket",
+  "emotion": "dringlichkeit"
+ },
+ "2824b0212095110b": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Impact selbstständige Mama",
+  "emotion": "motivation"
+ },
+ "124d9fa646e38046": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Live-Workshop Platz",
+  "emotion": "neugier"
+ },
+ "4ec1a001866d349a": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Geben und Charakter",
+  "emotion": "rührung"
+ },
+ "91bebc82e665a91a": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Yap Challenge",
+  "emotion": "neugier"
+ },
+ "18f179e1b073df0c": {
+  "form": "bekenntnis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Nebeneinkommen neben Job",
+  "emotion": "hoffnung"
+ },
+ "af8ab9b33752f88b": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Live-Workshop Ticket",
+  "emotion": "dringlichkeit"
+ },
+ "f9fce1948f10e38e": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Follower gewinnen",
+  "emotion": "neugier"
+ },
+ "5bb50763e962bd08": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "starke Frauen",
+  "emotion": "verständnis"
+ },
+ "f006fe1275e4ed1a": {
+  "form": "zitat",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Zeichen im Leben",
+  "emotion": "hoffnung"
+ },
+ "55f6e928cbba94e8": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Erfolg möglich",
+  "emotion": "hoffnung"
+ },
+ "d30153001b1a7d25": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "früheres Ich",
+  "emotion": "neugier"
+ },
+ "512e5bc2db95532f": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Produkt-Highlights Juli",
+  "emotion": "freude"
+ },
+ "e2c426f012021649": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Luxus neu definieren",
+  "emotion": "neugier"
+ },
+ "77f4a1e33f1ba334": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Launch heute",
+  "emotion": "vorfreude"
+ },
+ "63bb8578047be4e2": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Wiedererkennung",
+  "emotion": "neugier"
+ },
+ "b23faa5c18f63314": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Reset Programm",
+  "emotion": "motivation"
+ },
+ "0df68125291f709d": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Produktbeschreibung",
+  "emotion": "keine"
+ },
+ "82233b7e73b5b362": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Angst vor Scheitern",
+  "emotion": "angst"
+ },
+ "f0bf89dfd7df7915": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Mikro Missgeschick",
+  "emotion": "humor"
+ },
+ "e6db763d906ac62f": {
+  "form": "dialog",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "häufige Fragen",
+  "emotion": "neugier"
+ },
+ "b1badd26ff3e7f3b": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Sparen falsche Stelle",
+  "emotion": "humor"
+ },
+ "0f23e7ed224abd9c": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Glück und Minimalismus",
+  "emotion": "neugier"
+ },
+ "f32577290bef1dd9": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Alltag Überforderung",
+  "emotion": "angst"
+ },
+ "a1b7c3ac7c117385": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Geld ausgeben",
+  "emotion": "neugier"
+ },
+ "2b3af91f02606ffc": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Overthinking",
+  "emotion": "erleichterung"
+ },
+ "1a87e01a48ce6144": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Stress Wahrnehmung",
+  "emotion": "neugier"
+ },
+ "3e1dc8862ec2302f": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Themenseite starten",
+  "emotion": "hoffnung"
+ },
+ "22f4ec896c3540e8": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Komischer Gedanke",
+  "emotion": "neugier"
+ },
+ "eb61c1a812ea87d1": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Arbeiten mit Kind",
+  "emotion": "verbundenheit"
+ },
+ "e54e216071a8fa41": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Alleinerziehende Mütter Vorurteile",
+  "emotion": "wut"
+ },
+ "c5e7740c48e1d4aa": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Folgen bitte",
+  "emotion": "humor"
+ },
+ "d7211bcc2acfc05f": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Leben mit 40",
+  "emotion": "erleichterung"
+ },
+ "26f1e14233dcfaac": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "DIY Bodyscrub Öle",
+  "emotion": "freude"
+ },
+ "4a1f6617dcc7cb6f": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mutige Entscheidung",
+  "emotion": "hoffnung"
+ },
+ "447d70905d0b306f": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Zeit mit Tochter",
+  "emotion": "sehnsucht"
+ },
+ "3bc97cd15d18b526": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Warten auf Urlaub",
+  "emotion": "sehnsucht"
+ },
+ "a651ec848bdfa207": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "doTERRA Spendenaktion",
+  "emotion": "mitgefuehl"
+ },
+ "77725a4c3d70b733": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Shaved Ice Öle",
+  "emotion": "freude"
+ },
+ "0fa251f1083ca61e": {
+  "form": "zitat",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Comeback Bedeutung",
+  "emotion": "neugier"
+ },
+ "4ec4dd867f165ea2": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Pinguin Diffuser Highlights",
+  "emotion": "humor"
+ },
+ "dde428ba799a75fd": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Umpositionierung",
+  "emotion": "neugier"
+ },
+ "5f376cb081a245ab": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Online Business Alltag",
+  "emotion": "verbundenheit"
+ },
+ "074b66fdfd061702": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Erfolg statt Glück",
+  "emotion": "neugier"
+ },
+ "c831f5ab9cee1693": {
+  "form": "du-szene",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Urlaub ohne Abschalten",
+  "emotion": "neid"
+ },
+ "d4711d22336eeb4f": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Scheitern",
+  "emotion": "hoffnung"
+ },
+ "9dbfbc95a9754b1c": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Normalisieren",
+  "emotion": "neugier"
+ },
+ "d24dc662e33fb36f": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Anfängerin Fortschritt",
+  "emotion": "hoffnung"
+ },
+ "b67f0eaa1199ed14": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Großeinkauf Familie",
+  "emotion": "humor"
+ },
+ "65e34928417511a3": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Liebe uns",
+  "emotion": "humor"
+ },
+ "f0e20e2bddfe4957": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Erster Schritt",
+  "emotion": "hoffnung"
+ },
+ "352a63edaee7d75d": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kontrolle loslassen",
+  "emotion": "erleichterung"
+ },
+ "4e892d263bbb84e8": {
+  "form": "zitat",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Aufschieben",
+  "emotion": "angst"
+ },
+ "efef12b8e413adb2": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Miniprodukt Strategie",
+  "emotion": "neugier"
+ },
+ "654795627aa58feb": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Digitale Produkte Geld",
+  "emotion": "hoffnung"
+ },
+ "1ad46d65c0f96df8": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Insider Moment",
+  "emotion": "humor"
+ },
+ "88df5df1b8c53b59": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Warten auf Bereitschaft",
+  "emotion": "ertappt"
+ },
+ "6f8e148fbfba9f2e": {
+  "form": "meinung",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Tool-Freebies Claude Code",
+  "emotion": "neugier"
+ },
+ "3733e35d50df2527": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Wichtiger Unterschied",
+  "emotion": "neugier"
+ },
+ "7ff53de58966eb59": {
+  "form": "ratgeber",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Bessere Methode",
+  "emotion": "neugier"
+ },
+ "ecd6cb929a73cbb8": {
+  "form": "aufruf",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Digitale Produkte Challenge",
+  "emotion": "neugier"
+ },
+ "ce45fe570d65b9e9": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Ferien große Kids",
+  "emotion": "humor"
+ },
+ "391706fa1b0bf485": {
+  "form": "du-szene",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Anderes Happy End",
+  "emotion": "hoffnung"
+ },
+ "4e66ee910d6fb33e": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "doTERRA Spendenaktion",
+  "emotion": "mitgefuehl"
+ },
+ "b2367e960ae98896": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Selbst erlebt",
+  "emotion": "verbundenheit"
+ },
+ "e21f47202b33d8f7": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Sortierung",
+  "emotion": "neugier"
+ },
+ "5c18570786b515f7": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Account Rückblick",
+  "emotion": "neugier"
+ },
+ "acb3efcb226fe456": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Gemeinsames Gefühl",
+  "emotion": "verbundenheit"
+ },
+ "168622daa08728e4": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Einfache Lösung",
+  "emotion": "neugier"
+ },
+ "28650f1baa8019a3": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Durchhalten",
+  "emotion": "trost"
+ },
+ "93b8e63be7b28704": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Erwachsensein Rechenschaft",
+  "emotion": "humor"
+ },
+ "e09490d09177dc9b": {
+  "form": "zitat",
+  "angle": "vergleich",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Weniger vergleichen",
+  "emotion": "erleichterung"
+ },
+ "035a11d3c3f9c961": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Mama nach Feierabend",
+  "emotion": "humor"
+ },
+ "a32a8e8827aac176": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zögern",
+  "emotion": "ertappt"
+ },
+ "beba255f2255b821": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Stupser Richtung",
+  "emotion": "hoffnung"
+ },
+ "cc06d420eb0ef9af": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Paar Minuten",
+  "emotion": "neugier"
+ },
+ "8ad051657326f83b": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Begrüßung",
+  "emotion": "keine"
+ },
+ "37380571b02cdfe4": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Veränderung erlauben",
+  "emotion": "ermutigung"
+ },
+ "7dfcbe84348ffbdf": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Schlechter Traum",
+  "emotion": "erleichterung"
+ },
+ "bd281a44757a21ee": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Einfluss Umfeld",
+  "emotion": "neugier"
+ },
+ "ee5d956cf4d7d2c2": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mut zum Versuch",
+  "emotion": "stolz"
+ },
+ "c7b535d6188b41f7": {
+  "form": "zitat",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mut zum Versuchen",
+  "emotion": "hoffnung"
+ },
+ "bc9f98b25f85c595": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "erster Schritt",
+  "emotion": "neugier"
+ },
+ "ec0a1ddea34d8e09": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Bekannte blockiert",
+  "emotion": "humor"
+ },
+ "95ad9767a0668973": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Herbst Routine",
+  "emotion": "gemütlichkeit"
+ },
+ "02a98609c45a806a": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Austria Day Event",
+  "emotion": "vorfreude"
+ },
+ "14f254f7469dcc30": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "gutes Leben",
+  "emotion": "nachdenklichkeit"
+ },
+ "307d64b14b7e05cf": {
+  "form": "zitat",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Ermutigung",
+  "emotion": "trost"
+ },
+ "2e6c5c17b1424c38": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Schulstart Mamaalltag",
+  "emotion": "humor"
+ },
+ "3e7a9468e4632863": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mut nächster Schritt",
+  "emotion": "hoffnung"
+ },
+ "34850983178cfd3f": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Kundengewinnung Energie",
+  "emotion": "erleichterung"
+ },
+ "45565edb62a49020": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Glück vs Arbeit",
+  "emotion": "humor"
+ },
+ "281ab1d98fe32aab": {
+  "form": "meinung",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Personal Brand Authentizität",
+  "emotion": "begeisterung"
+ },
+ "417197f71031f0ec": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstvertrauen",
+  "emotion": "stolz"
+ },
+ "d44d907bd4179e0a": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "ohne Plan starten",
+  "emotion": "erleichterung"
+ },
+ "b7892029f5679878": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Herbst Gemütlichkeit",
+  "emotion": "gemütlichkeit"
+ },
+ "159a898d55a4ad75": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Angst richtiger Weg",
+  "emotion": "trost"
+ },
+ "6d9386817049360c": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Kameraangst überwinden",
+  "emotion": "hoffnung"
+ },
+ "a52ede20ae99cdcc": {
+  "form": "meinung",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Geld und Freiheit",
+  "emotion": "begeisterung"
+ },
+ "e5afd400dd667d52": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Videotraining Zielgruppe",
+  "emotion": "neugier"
+ },
+ "85259300bed594f9": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "neues Gesicht",
+  "emotion": "freude"
+ },
+ "fd3d18adb2942331": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mut",
+  "emotion": "hoffnung"
+ },
+ "dc83178133887b01": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Stillstand trotz Einsatz",
+  "emotion": "frust"
+ },
+ "cc83810b813f0704": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "passives Einkommen",
+  "emotion": "neid"
+ },
+ "5d95cf00f21f3f37": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "falsches Umfeld",
+  "emotion": "mut"
+ },
+ "8f918d829d52dc8e": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Event Party",
+  "emotion": "vorfreude"
+ },
+ "f5960f1bf2aa556a": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Buch mit KI",
+  "emotion": "neugier"
+ },
+ "1438116216f8bf1b": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Webinar Einladung",
+  "emotion": "neugier"
+ },
+ "5dbc61a195de18ee": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Herbstspaziergang",
+  "emotion": "freude"
+ },
+ "55bdef614bb0a880": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Charakterentwicklung",
+  "emotion": "humor"
+ },
+ "9b97499ce6f2d906": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Umgebung und Verkauf",
+  "emotion": "provokation"
+ },
+ "4cbbfd3cf661c46e": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama Selbstbild",
+  "emotion": "neugier"
+ },
+ "f79eecc65b1dc5b8": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kritik aushalten",
+  "emotion": "trotz"
+ },
+ "15896f263bb16fc2": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Kritiker ignorieren",
+  "emotion": "erleichterung"
+ },
+ "924f14a7da8358fa": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "kostenloses Training",
+  "emotion": "neugier"
+ },
+ "529b818a5cb1f59c": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Instagram Start",
+  "emotion": "humor"
+ },
+ "4c3ee68378df4305": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Lebensveränderung",
+  "emotion": "hoffnung"
+ },
+ "82c58399c8bdb3cd": {
+  "form": "beweis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Durchhalten lohnt",
+  "emotion": "stolz"
+ },
+ "bc17f4079c0d0596": {
+  "form": "meinung",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Millionärsziel",
+  "emotion": "stolz"
+ },
+ "85bb32a73792ef4e": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "GPT Anleitung",
+  "emotion": "neugier"
+ },
+ "8e1e8449109b3491": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Produkt Highlights Oktober",
+  "emotion": "vorfreude"
+ },
+ "39aaf30319b9af8f": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama Zuspruch",
+  "emotion": "trost"
+ },
+ "4d046c7bbbe6e065": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Folgen Kommentieren",
+  "emotion": "keine"
+ },
+ "c5d4f17608acef42": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Erfolgsmoment",
+  "emotion": "stolz"
+ },
+ "9ff3e19a094fbb93": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Monatseinkommen Antrieb",
+  "emotion": "neid"
+ },
+ "f9f7f0e1d7e422c0": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Fragen Kommentare",
+  "emotion": "keine"
+ },
+ "2dc15233255f3213": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Challenge Teilnahme",
+  "emotion": "neugier"
+ },
+ "d4446d29e867549b": {
+  "form": "ereignis",
+  "angle": "vergleich",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Früher feiern",
+  "emotion": "humor"
+ },
+ "e44a4fa5f1c2d9ea": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "minimalistische Hautpflege",
+  "emotion": "erleichterung"
+ },
+ "043cac74ee321fda": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Öle anwenden",
+  "emotion": "neugier"
+ },
+ "431a6131bf9fca8e": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Raumduft natürlich",
+  "emotion": "neugier"
+ },
+ "355c04dcf41f6e0d": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Monatsbeginn Mai",
+  "emotion": "freude"
+ },
+ "d89390a03b653cf3": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Sonnenschutz Sommer",
+  "emotion": "freude"
+ },
+ "f6425cc92d2dc8c0": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Begrüßung",
+  "emotion": "wärme"
+ },
+ "09148b96ce7a9a6c": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "DIY Team Telegram",
+  "emotion": "zugehörigkeit"
+ },
+ "eff2185ec2e280f0": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Frühling Unterstützung",
+  "emotion": "ruhe"
+ },
+ "a02fbe8dbfbc37e6": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Gesundheit Neuanfang",
+  "emotion": "hoffnung"
+ },
+ "47b9b06fa9a453e2": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Outdoor Lifestyle",
+  "emotion": "freude"
+ },
+ "6bccf4ec36fb6cbc": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Urlaub ätherische Öle",
+  "emotion": "vorfreude"
+ },
+ "b94dd3beb82d4b67": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Helichrysum Anwendung",
+  "emotion": "neugier"
+ },
+ "665f95b8fffb174e": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Öle bei Hunden",
+  "emotion": "neugier"
+ },
+ "a5c617a04caa3fb3": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Roll-on für Kinder",
+  "emotion": "neugier"
+ },
+ "973ecba39edccb93": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Diffuser Kinderzimmer",
+  "emotion": "erleichterung"
+ },
+ "e5cd83f8a39ecbb0": {
+  "form": "liste",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Öle für Kinder",
+  "emotion": "neugier"
+ },
+ "f53f2acd81b33c6d": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Öle bei Kindern",
+  "emotion": "angst"
+ },
+ "b20559337d45ee44": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Photosensitive Öle",
+  "emotion": "neugier"
+ },
+ "8e34816726745f8b": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Sonnenschutz unterwegs",
+  "emotion": "angst"
+ },
+ "d54d2f9c136305e8": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Frühlingsgruss",
+  "emotion": "freude"
+ },
+ "8a89ec6a310a5b37": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Anmeldung Event",
+  "emotion": "neugier"
+ },
+ "8e9ea4ebc9be4857": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Quartalsrückblick",
+  "emotion": "neugier"
+ },
+ "645aa88657f8b96a": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Fehler Selbständige",
+  "emotion": "neugier"
+ },
+ "82183161e6aaab91": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Erfolgswoche Event",
+  "emotion": "hoffnung"
+ },
+ "9e7b33d5dd41c452": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Schlüsseljahr 2016",
+  "emotion": "neugier"
+ },
+ "72ae61c5bf57a232": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "10 Jahre Selbständigkeit",
+  "emotion": "stolz"
+ },
+ "c39008c50316fdb2": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Marketing Fokus",
+  "emotion": "neugier"
+ },
+ "c543d3cb3c960886": {
+  "form": "frage",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Mehr verkaufen",
+  "emotion": "hoffnung"
+ },
+ "688f8ff7a7c22d02": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Dank an Mamas",
+  "emotion": "dankbarkeit"
+ },
+ "82f15bf67fc88874": {
+  "form": "ratgeber",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Vatertag Geschenke",
+  "emotion": "freude"
+ },
+ "60800f6c9ab30d1b": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Mai Energie",
+  "emotion": "hoffnung"
+ },
+ "f7f183d138053c34": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Montag Ruf",
+  "emotion": "humor"
+ },
+ "0b3e7e4c5bf6cf7f": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Snacks mit Ölen",
+  "emotion": "neugier"
+ },
+ "cbe90c7c34ea96ba": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Muttertag",
+  "emotion": "dankbarkeit"
+ },
+ "66b945a22a6c6bc4": {
+  "form": "zitat",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Achtsame Momente",
+  "emotion": "sehnsucht"
+ },
+ "4b6f09a68a48ef22": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Spargelrezepte",
+  "emotion": "neugier"
+ },
+ "f2b16080cc0148e3": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "April Rückblick",
+  "emotion": "neugier"
+ },
+ "a96711dd195d0c0e": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Erfolglose Versuche",
+  "emotion": "frust"
+ },
+ "a63905d4804d6d79": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Überlastete Mamas",
+  "emotion": "erschöpfung"
+ },
+ "fc59e596c159b1e0": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Perfektionismus loslassen",
+  "emotion": "erleichterung"
+ },
+ "ab3dc0bcdbd7dbdd": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Wechseljahre und Öle",
+  "emotion": "neugier"
+ },
+ "d156f827fde11ea8": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Gewinnspiel Follower",
+  "emotion": "freude"
+ },
+ "5b36020c11f44903": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Jahr des Wachstums",
+  "emotion": "dankbarkeit"
+ },
+ "1ab5c236808282ea": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Spargelrezepte Öle",
+  "emotion": "neugier"
+ },
+ "ca3981a126949957": {
+  "form": "frage",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Rückschläge als Chance",
+  "emotion": "hoffnung"
+ },
+ "7a3daa7e5a540f40": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Frau mit Herzensweg",
+  "emotion": "bewunderung"
+ },
+ "754d47e40c699e6b": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Vatertag",
+  "emotion": "dankbarkeit"
+ },
+ "4f9f45d132af28f7": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "dōTERRA Blog",
+  "emotion": "neugier"
+ },
+ "ab00d70c142b33fb": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Hydration mit Ölen",
+  "emotion": "frische"
+ },
+ "8a7c88d5f44db5f3": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Pfingsten Kurztrip",
+  "emotion": "vorfreude"
+ },
+ "c7aef3e523ced491": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Lemongrass Anwendung",
+  "emotion": "neugier"
+ },
+ "0937729e7dd6fa97": {
+  "form": "zitat",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kraft der Worte",
+  "emotion": "neugier"
+ },
+ "4430d25a222985a8": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Überraschung",
+  "emotion": "neugier"
+ },
+ "e8e56a65b2b91130": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "To-do-Listen",
+  "emotion": "freude"
+ },
+ "c2edacf4604354d4": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Einfaches DIY",
+  "emotion": "erleichterung"
+ },
+ "b1059546422d56c2": {
+  "form": "ratgeber",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Bart DIY",
+  "emotion": "humor"
+ },
+ "cb85e7409df6d1a2": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Minzöle Portrait",
+  "emotion": "neugier"
+ },
+ "721b71d97f3946ec": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Folgen für DIY",
+  "emotion": "keine"
+ },
+ "2b5d7f3d50a6245c": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Convention Kit",
+  "emotion": "dringlichkeit"
+ },
+ "77078a6986c6c707": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Sommerbereitschaft",
+  "emotion": "vorfreude"
+ },
+ "fc8a37895e8d6987": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Neuer Monat Juni",
+  "emotion": "freude"
+ },
+ "2933d2f05f3e2c32": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstwert",
+  "emotion": "stolz"
+ },
+ "278c49303b810462": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Convention Highlights",
+  "emotion": "begeisterung"
+ },
+ "341bd1aef8e356aa": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Citronella Sommer",
+  "emotion": "vorfreude"
+ },
+ "d0b85481b49f3a4d": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Neues Detox-Produkt",
+  "emotion": "neugier"
+ },
+ "305292ab81316eca": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Spendenaktion Lesbos",
+  "emotion": "stolz"
+ },
+ "f1eea21f0b371da2": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Rizinusöl DIY",
+  "emotion": "neugier"
+ },
+ "a33c705a86e354b2": {
+  "form": "frage",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Summer Reset Challenge",
+  "emotion": "motivation"
+ },
+ "d93f7ee7fdbcf1ce": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Sun Care Set",
+  "emotion": "vorfreude"
+ },
+ "217ab78bad12934d": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Toilettengeruch",
+  "emotion": "humor"
+ },
+ "71cb2550422957c3": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama Auszeit",
+  "emotion": "wut"
+ },
+ "bc3d141b4055f0bd": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama Sorgen",
+  "emotion": "verbundenheit"
+ },
+ "4473bc2b24c867d4": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Angst und Chancen",
+  "emotion": "angst"
+ },
+ "310c4e0fcedd7fa6": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Alleinerziehende Erschöpfung",
+  "emotion": "verbundenheit"
+ },
+ "faa32e700f33e5db": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Mamas warten",
+  "emotion": "neugier"
+ },
+ "7681d12dea315606": {
+  "form": "du-szene",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Zeit mit Kindern",
+  "emotion": "hoffnung"
+ },
+ "649cfbdc3ca6d968": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Aufhören",
+  "emotion": "neugier"
+ },
+ "f10f118e4be71de8": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Kurse ohne Verkäufe",
+  "emotion": "frust"
+ },
+ "6050f29083b07771": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Körper sagt Stopp",
+  "emotion": "neugier"
+ },
+ "417d7d39312fc045": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Veränderung und Ablehnung",
+  "emotion": "traurigkeit"
+ },
+ "427f332be88cf02c": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Für alle da",
+  "emotion": "erschöpfung"
+ },
+ "9e8425305b772e51": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Meinung anderer",
+  "emotion": "befreiung"
+ },
+ "6a1b924e286bf250": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Powerfrau Motivation",
+  "emotion": "stolz"
+ },
+ "6fb8d5152a112edd": {
+  "form": "zitat",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Erster Schritt",
+  "emotion": "erleichterung"
+ },
+ "c9cd04dbb6eac058": {
+  "form": "bekenntnis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Online Business aufbauen",
+  "emotion": "hoffnung"
+ },
+ "d95e81377d640562": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Überforderung Alltag",
+  "emotion": "verbundenheit"
+ },
+ "4a237d88463da572": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Obst richtig waschen",
+  "emotion": "ekel"
+ },
+ "638bb8f402cc4f28": {
+  "form": "ratgeber",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Zweitjob Alternative",
+  "emotion": "hoffnung"
+ },
+ "513ab8e8eca216ff": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Bedeutung Freiheit",
+  "emotion": "neugier"
+ },
+ "60bf843e04006501": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zeit für Familie",
+  "emotion": "sehnsucht"
+ },
+ "7368762e259f7ed1": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Castor Oil Anwendung",
+  "emotion": "neugier"
+ },
+ "c89d4049c189fd55": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Juni Rhythmus",
+  "emotion": "vorfreude"
+ },
+ "c2e5df555fb791b6": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Allen recht machen",
+  "emotion": "verbundenheit"
+ },
+ "818f69cad35f1c75": {
+  "form": "zitat",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Nicht warten",
+  "emotion": "entschlossenheit"
+ },
+ "770408472b43a467": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zweifel anderer",
+  "emotion": "wut"
+ },
+ "fc6a2726fcb621c2": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Stärke neu definiert",
+  "emotion": "erleichterung"
+ },
+ "87e8f255bdf8eb51": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Wellness Box Abo",
+  "emotion": "keine"
+ },
+ "6b5e91ea1f2a2d1d": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Fußball WM",
+  "emotion": "vorfreude"
+ },
+ "b3ed235a895839da": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Anerkennung Event",
+  "emotion": "stolz"
+ },
+ "c0656ccdc6b28889": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Meinung anderer",
+  "emotion": "entschlossenheit"
+ },
+ "f50a1b90143d7010": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Diffuser Lemon",
+  "emotion": "keine"
+ },
+ "15c6dfce49b51c3c": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Schwerste am Alleinerziehen",
+  "emotion": "neugier"
+ },
+ "6047b203b6275794": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Brave Mädchen Prägung",
+  "emotion": "betroffenheit"
+ },
+ "e319806b5670bdb6": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Fremdes Leben",
+  "emotion": "sehnsucht"
+ },
+ "d1e52d3bfdc2d555": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zukunftsversion leben",
+  "emotion": "hoffnung"
+ },
+ "32cb3ae466f25424": {
+  "form": "zitat",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Natur nutzen",
+  "emotion": "vertrauen"
+ },
+ "b70b641a6d7ecfe7": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Motivation unnötig",
+  "emotion": "neugier"
+ },
+ "3f544fa456ebd6c0": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Persönliche Entwicklung",
+  "emotion": "neugier"
+ },
+ "8a4f2203a72e18b2": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Gefühl erkennen",
+  "emotion": "neugier"
+ },
+ "0b207a147e2642e9": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Ja sagen",
+  "emotion": "neugier"
+ },
+ "1da13462c4ddd47f": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Vorbild sein",
+  "emotion": "inspiration"
+ },
+ "4446eb32594c2681": {
+  "form": "zitat",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Sinn im Rückblick",
+  "emotion": "trost"
+ },
+ "75a5d98627f3ea63": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kein perfekter Start",
+  "emotion": "verbundenheit"
+ },
+ "6cfbd8429ce8e989": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Abendliches Scrollen",
+  "emotion": "ertapptsein"
+ },
+ "13b635b6bcfd7676": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Nicht warten",
+  "emotion": "stolz"
+ },
+ "84dba7c608e06305": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "RevitaZen Anwendung",
+  "emotion": "keine"
+ },
+ "fe1ae60abb274f93": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Oregano Sourcing Türkei",
+  "emotion": "neugier"
+ },
+ "c24c20f5ea22d27d": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Schwere Entscheidungen",
+  "emotion": "erleichterung"
+ },
+ "a3af7346fd644ece": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama Fehler",
+  "emotion": "erleichterung"
+ },
+ "671b4344b65c08dc": {
+  "form": "liste",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zweifelnde Gedanken",
+  "emotion": "verbundenheit"
+ },
+ "5917c6be919cb58a": {
+  "form": "ereignis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Abends aufschieben",
+  "emotion": "sehnsucht"
+ },
+ "90cdc61f4577e69f": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Sichtbarkeit Angst",
+  "emotion": "angst"
+ },
+ "515c047ef2350f0f": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Mehr als Geld",
+  "emotion": "neugier"
+ },
+ "151e5453170b5857": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Rat von damals",
+  "emotion": "neugier"
+ },
+ "27b2d8c428eacd8c": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Team Neuigkeit",
+  "emotion": "freude"
+ },
+ "4a1b3f2e03fb02f2": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Leber Detox Sommer",
+  "emotion": "hoffnung"
+ },
+ "9943badafed5dcf7": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Schlaf Regeneration",
+  "emotion": "neugier"
+ },
+ "bd8b5de36e8f0b29": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Persönliche Überzeugung",
+  "emotion": "neugier"
+ },
+ "02e701efbbbe7981": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Summer Reset Aufgabe",
+  "emotion": "keine"
+ },
+ "cc5128d918150fc2": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Durchhalten Ermutigung",
+  "emotion": "stolz"
+ },
+ "6311ab95dc04117e": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Online Business Einstieg",
+  "emotion": "hoffnung"
+ },
+ "9515b47664d7a9da": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Nur funktionieren",
+  "emotion": "erschöpfung"
+ },
+ "d21658fb7a922fd9": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Angst vorm Scheitern",
+  "emotion": "angst"
+ },
+ "ea091c1c3fabb37e": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "früher am Anfang",
+  "emotion": "hoffnung"
+ },
+ "f89718a76d4a9ec6": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "kostenloser Workshop",
+  "emotion": "neugier"
+ },
+ "412112d329ad8b3e": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Expertin sein",
+  "emotion": "erleichterung"
+ },
+ "9384f28175b1a1bf": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "ohne perfekten Plan",
+  "emotion": "erleichterung"
+ },
+ "086e98e3feb9e66b": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "eigene Angst",
+  "emotion": "angst"
+ },
+ "5812ea08389342c2": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Vergleich mit anderen",
+  "emotion": "erleichterung"
+ },
+ "e05f199f07def735": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Live-Workshop Anmeldung",
+  "emotion": "hoffnung"
+ },
+ "d8c26bff5843f913": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Hautpflege nach Sonne",
+  "emotion": "keine"
+ },
+ "3f65328aa19023ae": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Öle gegen Insekten",
+  "emotion": "neugier"
+ },
+ "2d0787d164efb94a": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Erschöpfung bei Frauen",
+  "emotion": "neugier"
+ },
+ "5f56ee779eba2aad": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Neuanfang im Alter",
+  "emotion": "hoffnung"
+ },
+ "412847d725059d0e": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Ansprache an Mamas",
+  "emotion": "neugier"
+ },
+ "e3cc32c3f5c497f5": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Team Sommerfavoriten",
+  "emotion": "neugier"
+ },
+ "3bb6bd28f750beab": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "erster Schritt",
+  "emotion": "neugier"
+ },
+ "7b0b772c696fae24": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Hawaiian Sandalwood Herkunft",
+  "emotion": "neugier"
+ },
+ "6d32ba097df8ac9e": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "RevitaZen Getränkideen",
+  "emotion": "keine"
+ },
+ "1cd8afdc143d0970": {
+  "form": "zitat",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Stärke loslassen",
+  "emotion": "erleichterung"
+ },
+ "865a60bb61ed7f62": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama Selbstzweifel",
+  "emotion": "scham"
+ },
+ "2f39e91113a4bfed": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "langes Warten",
+  "emotion": "neugier"
+ },
+ "20d5a5ad897a88be": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama Alltag Kontrolle",
+  "emotion": "erleichterung"
+ },
+ "92e2d1521a56f777": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "anders sein",
+  "emotion": "neugier"
+ },
+ "73bcda3b61804bb8": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "früh aufgeben",
+  "emotion": "angst"
+ },
+ "4d661252636da4f6": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "nicht wissen womit",
+  "emotion": "erleichterung"
+ },
+ "85d8f9e86fb9e9f2": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Trennung",
+  "emotion": "trauer"
+ },
+ "61e2aa1cd661cf42": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Übelkeit auf Reisen",
+  "emotion": "erleichterung"
+ },
+ "83ca61d18b33d160": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Worst-Case-Gedanken",
+  "emotion": "angst"
+ },
+ "d5f2991e59ddaf6a": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Summer Academy Online",
+  "emotion": "vorfreude"
+ },
+ "94354042f2f8f132": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "unpopuläre Meinung",
+  "emotion": "neugier"
+ },
+ "3f42b6662757e716": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "wichtige Person",
+  "emotion": "neugier"
+ },
+ "c3f87db1f4ff6731": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Überforderung als Mama",
+  "emotion": "erleichterung"
+ },
+ "dfb5002921c71a91": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Ehrlichkeit",
+  "emotion": "neugier"
+ },
+ "30b55ecd3598c602": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Meinung einholen",
+  "emotion": "keine"
+ },
+ "c0a0370866640e04": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Funktionieren statt leben",
+  "emotion": "schmerz"
+ },
+ "db299be256b6cdb8": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Geduld als Mama",
+  "emotion": "erleichterung"
+ },
+ "af0f7a0908ba8bbd": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Sommerstimmung",
+  "emotion": "vorfreude"
+ },
+ "77beb526c3445b5f": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "neuer Monat Juli",
+  "emotion": "freude"
+ },
+ "f76c62675976ffb3": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Zitrusöle Portrait",
+  "emotion": "neugier"
+ },
+ "762d7e3c2dddd424": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "passender Weg",
+  "emotion": "hoffnung"
+ },
+ "9ac9bfc28bf7031f": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Ruhe genießen",
+  "emotion": "erleichterung"
+ },
+ "dac6d92b73f90f11": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "weniger Menschen",
+  "emotion": "neugier"
+ },
+ "dee88f9b222b15b5": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Nachfrage Erfahrung",
+  "emotion": "keine"
+ },
+ "c53532a603ea9267": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "neu auf Profil",
+  "emotion": "neugier"
+ },
+ "673a4850ff1f2d31": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "DIY Zahnpflege",
+  "emotion": "neugier"
+ },
+ "033ffd9557303d4f": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "jeder Schritt zählt",
+  "emotion": "hoffnung"
+ },
+ "aa8e3b46a1a09c33": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "eigenes Leben",
+  "emotion": "mut"
+ },
+ "005d11021bedea6f": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Kindergeburtstag",
+  "emotion": "neugier"
+ },
+ "44aff054e5cfb22e": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Achtsamkeit Bäume",
+  "emotion": "ruhe"
+ },
+ "e7ce1c4bddd089db": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "allein gescheitert",
+  "emotion": "frust"
+ },
+ "54a2b04c7cdb96f3": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "DIY Roll-on",
+  "emotion": "vorfreude"
+ },
+ "54876899ef49f81c": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "allein schaffen müssen",
+  "emotion": "erleichterung"
+ },
+ "a48393d77a4c6cb0": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Leben genießen",
+  "emotion": "freude"
+ },
+ "e022428185945046": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Challenge Versuch",
+  "emotion": "humor"
+ },
+ "11c3bf82bddebbbb": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "kein leichtes Leben",
+  "emotion": "neugier"
+ },
+ "98e9de267eb6c886": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Gründe fürs Scheitern",
+  "emotion": "neugier"
+ },
+ "b88974a67d89c937": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unaufhaltsamkeit",
+  "emotion": "stolz"
+ },
+ "501b72c153b91b5d": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Summer Reset Punkte",
+  "emotion": "neugier"
+ },
+ "d7dcc63ad948cb7d": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Wissen gefragt",
+  "emotion": "neugier"
+ },
+ "a8547cd828c9edc0": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "selbständige Freundin",
+  "emotion": "verbundenheit"
+ },
+ "458a4f428e8e940e": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Warten ist unsicher",
+  "emotion": "angst"
+ },
+ "ba96c26fde6d89d2": {
+  "form": "ereignis",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Neuanfang vor Jahren",
+  "emotion": "hoffnung"
+ },
+ "b3fe5f168775a054": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama Erfolg Sicht",
+  "emotion": "neugier"
+ },
+ "f5363a3871780a54": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "DIY Sommersprays",
+  "emotion": "freude"
+ },
+ "065a5950a20fe537": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Entscheidung Neuanfang",
+  "emotion": "hoffnung"
+ },
+ "f67d606772effecd": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Sommer Achtsamkeit",
+  "emotion": "ruhe"
+ },
+ "9b6ab901d52eb714": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Teilen Folgen",
+  "emotion": "verbundenheit"
+ },
+ "1ebe08df5a7d4ad1": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Finanzielle Unabhängigkeit",
+  "emotion": "neugier"
+ },
+ "69df5856e27c9643": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Sommerrezepte Team",
+  "emotion": "freude"
+ },
+ "a2eb107fada57bcf": {
+  "form": "du-szene",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Zukunftsvision",
+  "emotion": "hoffnung"
+ },
+ "352d606f0b89da01": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstgespräche",
+  "emotion": "neugier"
+ },
+ "18b2a9cb60790380": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Fotos Pflanzen Tiere",
+  "emotion": "humor"
+ },
+ "2ce862490a17b201": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Lieblings-Hack",
+  "emotion": "neugier"
+ },
+ "0995dbe0edfe4410": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "System statt Motivation",
+  "emotion": "erleichterung"
+ },
+ "5173d09056a58dea": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Millionärinnen Mamas",
+  "emotion": "stolz"
+ },
+ "9bdbdbcfa8b0d5ef": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Countdown",
+  "emotion": "neugier"
+ },
+ "5bd80be6149502bf": {
+  "form": "zitat",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Lebenskapitel enden",
+  "emotion": "wehmut"
+ },
+ "0544eead85e29a48": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Mundhygiene Öle",
+  "emotion": "humor"
+ },
+ "b43a6888bf4e22f2": {
+  "form": "dialog",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Zeit mit Kind",
+  "emotion": "rührung"
+ },
+ "ed22093eeee5bd3d": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Montagmorgen Mut",
+  "emotion": "humor"
+ },
+ "fd8076562bcfc6cb": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Sommer Selbständigkeit",
+  "emotion": "neugier"
+ },
+ "ab102329cd18e8af": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Geendete Freundschaft",
+  "emotion": "traurigkeit"
+ },
+ "4c074e4d70e34349": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Müdigkeit Ursache",
+  "emotion": "neugier"
+ },
+ "f7d0f3ecb5adbda9": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Madagascar Vanilla",
+  "emotion": "freude"
+ },
+ "b655eaa1b993b4e0": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Erziehung Kinder",
+  "emotion": "humor"
+ },
+ "252f4fa8ed31ae4e": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Nicht überzeugen",
+  "emotion": "erleichterung"
+ },
+ "1681873c7879a17e": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Summer Reset Aufgabe",
+  "emotion": "neugier"
+ },
+ "6b3dc8d817fc8057": {
+  "form": "ereignis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Abendgedanke Veränderung",
+  "emotion": "sehnsucht"
+ },
+ "d495571563eb12b4": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Besondere Momente",
+  "emotion": "neugier"
+ },
+ "e2f64b391aad6081": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Bestätigung loslassen",
+  "emotion": "erleichterung"
+ },
+ "8dcbb5bf786fb7f2": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kritik Kommentare",
+  "emotion": "wut"
+ },
+ "7542ca724cebf734": {
+  "form": "bekenntnis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Mama und Business",
+  "emotion": "hoffnung"
+ },
+ "9284b711603276d4": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Summer Reset Bonus",
+  "emotion": "freude"
+ },
+ "2394df3c973c612e": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Morgenroutine Energie",
+  "emotion": "motivation"
+ },
+ "86658ebcd7e6d1a4": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "30-Tage-Challenge",
+  "emotion": "neugier"
+ },
+ "5a4b01df1acab456": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Ritual Achtsamkeit",
+  "emotion": "ruhe"
+ },
+ "58bebfea3c92f4ef": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Entscheiden müssen",
+  "emotion": "neugier"
+ },
+ "95fb5ef21da6360d": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Mama von fünf",
+  "emotion": "bewunderung"
+ },
+ "af5a0d85f89c4e8c": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Reue Nichtanfangen",
+  "emotion": "reue"
+ },
+ "b4f7a9b39578266d": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Event Nacht",
+  "emotion": "vorfreude"
+ },
+ "b9631256c0820574": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Es allen recht",
+  "emotion": "erleichterung"
+ },
+ "6e7dd7fc278f29b6": {
+  "form": "zitat",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kleine Momente",
+  "emotion": "ruhe"
+ },
+ "dc7d7bbbfaaad7f6": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Elternzeit Spielregeln",
+  "emotion": "angst"
+ },
+ "b6572897615f2283": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Nachdenklicher Satz",
+  "emotion": "neugier"
+ },
+ "b56a3e45abd71ac8": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Voller Alltag",
+  "emotion": "überforderung"
+ },
+ "22b9fac007fac503": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Werte für Kinder",
+  "emotion": "nachdenklichkeit"
+ },
+ "03e38573d68f7a1a": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Grund hinter Ergebnis",
+  "emotion": "neugier"
+ },
+ "a1b10fd01adfa8ea": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Bekannte Frage",
+  "emotion": "neugier"
+ },
+ "752b1994ed6b096c": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Urlaub Erschöpfung",
+  "emotion": "erkenntnis"
+ },
+ "6760cd6176fb0f97": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Liebe gebraucht werden",
+  "emotion": "nachdenklichkeit"
+ },
+ "4d00007142b60d36": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Sommer BOGO Aktion",
+  "emotion": "vorfreude"
+ },
+ "8ebd7523f1264dd8": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Öle Morgenstart",
+  "emotion": "motivation"
+ },
+ "43bd2732a8f9c16d": {
+  "form": "du-szene",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Richtiger Moment",
+  "emotion": "hoffnung"
+ },
+ "e4916c8187cce082": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Entscheidung statt Wissen",
+  "emotion": "motivation"
+ },
+ "25fdd7e4cf045c99": {
+  "form": "bekenntnis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "System statt Raten",
+  "emotion": "erleichterung"
+ },
+ "1aba41c9e9bf69bd": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "BOGO Aktion",
+  "emotion": "aufregung"
+ },
+ "8d0af6968ba2f9c9": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Green Mandarin Öl",
+  "emotion": "frische"
+ },
+ "1fd21ff8eb5796d9": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Abgebrochene Systeme",
+  "emotion": "scham"
+ },
+ "4870c80ed69b85ad": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Verlorene Hobbys",
+  "emotion": "wehmut"
+ },
+ "49cd3ebbd86e8b85": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mütter Kraft",
+  "emotion": "rührung"
+ },
+ "041016380dfe4ab6": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Nicht bereit Ausrede",
+  "emotion": "scham"
+ },
+ "706cf3df8ed6a2f4": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Balance Ölmischung",
+  "emotion": "neugier"
+ },
+ "62fb28b648b9bb87": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Achtsamkeit Ruhe",
+  "emotion": "ruhe"
+ },
+ "2f2a237ee7af0237": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Neustart nach Scheitern",
+  "emotion": "verstaendnis"
+ },
+ "1e7674e3f988c18a": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "unsichtbare Fortschritte",
+  "emotion": "neugier"
+ },
+ "adaee7a7db80090f": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Erfolg neu definieren",
+  "emotion": "trotz"
+ },
+ "b82ded6c215e3a54": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Teenager Kommunikation",
+  "emotion": "humor"
+ },
+ "6cf81e06a0a3b186": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Online-Business Hürden",
+  "emotion": "neugier"
+ },
+ "03af337e290b129d": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Sonnenschutz richtig eincremen",
+  "emotion": "neugier"
+ },
+ "61a0e2d441db7056": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Sommer geniessen",
+  "emotion": "freude"
+ },
+ "6cd54ea7ae9f0d7a": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Job ohne Erfüllung",
+  "emotion": "unzufriedenheit"
+ },
+ "05a98323ffeadca3": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstkritik",
+  "emotion": "verstaendnis"
+ },
+ "87ea52e277d8b546": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Roll-On selber mischen",
+  "emotion": "neugier"
+ },
+ "b77e625ad47c30dd": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Resignation im Alltag",
+  "emotion": "verstaendnis"
+ },
+ "03ad5d9af9d2ecf1": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Öle des Tages",
+  "emotion": "freude"
+ },
+ "439ec98f09b43b7e": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Duftmischung Stimmung",
+  "emotion": "freude"
+ },
+ "4b3b2440db610bf0": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Tabus von Mamas",
+  "emotion": "neugier"
+ },
+ "adfbdfb8d979817c": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Perfektionismus beim Start",
+  "emotion": "erleichterung"
+ },
+ "ada08b6712602a82": {
+  "form": "bekenntnis",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Systeme ausprobieren",
+  "emotion": "verstaendnis"
+ },
+ "17f55deb08cfb2b9": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "entspannende Aromen",
+  "emotion": "ruhe"
+ },
+ "e23f6162651fa203": {
+  "form": "frage",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "gesunde Ernährung",
+  "emotion": "neugier"
+ },
+ "80fba43469edd145": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mut für Träume",
+  "emotion": "hoffnung"
+ },
+ "2a9d6a60268a4a8d": {
+  "form": "sonstiges",
+  "angle": "beweis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Magnolia Touch",
+  "emotion": "begeisterung"
+ },
+ "f376be6abd52ce2d": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Schönheit innen außen",
+  "emotion": "freude"
+ },
+ "3349c4ca06ee7c5c": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstzweifel Mamas",
+  "emotion": "verstaendnis"
+ },
+ "e8944339b5a99076": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "keine Kompromisse",
+  "emotion": "mut"
+ },
+ "c3f768b5ce0a97f5": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Business-Typ Zweifel",
+  "emotion": "hoffnung"
+ },
+ "7a984479e09b9541": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Abends Leere Mama",
+  "emotion": "sehnsucht"
+ },
+ "fe651dd9bfd083b9": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Ölqualität CPTG",
+  "emotion": "vertrauen"
+ },
+ "2eb1c89422e49ada": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "kleine Schritte",
+  "emotion": "neugier"
+ },
+ "8a3d179ec040661e": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "People Pleasing",
+  "emotion": "verstaendnis"
+ },
+ "5db676ce44d4f79f": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "besseres Leben",
+  "emotion": "hoffnung"
+ },
+ "8d8969916ae215e8": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Funktionieren Erschöpfung",
+  "emotion": "verstaendnis"
+ },
+ "558f721dea85b479": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Bedürfnisse Frauen",
+  "emotion": "neugier"
+ },
+ "588fffdc65e3290e": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unsicherheit zulassen",
+  "emotion": "neugier"
+ },
+ "5eb20624b133196b": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "zweites Einkommen",
+  "emotion": "hoffnung"
+ },
+ "62c312c25d30fa5d": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "kleine Alltagslasten",
+  "emotion": "verstaendnis"
+ },
+ "5ffd8c420382a502": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Alleinerziehend sein",
+  "emotion": "erleichterung"
+ },
+ "1abf024e6f425629": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Diffusermischungen Sommer",
+  "emotion": "freude"
+ },
+ "0b960996d5583601": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Verantwortung Mutterschaft",
+  "emotion": "dankbarkeit"
+ },
+ "dc02aa0d338a2406": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Schweizer Nationalfeiertag",
+  "emotion": "stolz"
+ },
+ "72f19d95b8081842": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zeitmangel Ausrede",
+  "emotion": "neugier"
+ },
+ "5e193c0ba3d6e0dc": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Neuer Monat",
+  "emotion": "freude"
+ },
+ "f1731d7e7da15edd": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstlügen",
+  "emotion": "neugier"
+ },
+ "b6801fa4e280c4de": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Entwicklung nicht linear",
+  "emotion": "erleichterung"
+ },
+ "ae40748a1b550183": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama Gefühlschaos",
+  "emotion": "dankbarkeit"
+ },
+ "cddb289d53b2abab": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Urlaub mit Kindern",
+  "emotion": "humor"
+ },
+ "f188d54d9012791f": {
+  "form": "bekenntnis",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "High Ticket Affiliate",
+  "emotion": "neugier"
+ },
+ "e3458ea5f08cfc01": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Pinguin Diffuser",
+  "emotion": "freude"
+ },
+ "72f6074ad069340e": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kinder groß denken",
+  "emotion": "hoffnung"
+ },
+ "872a00406f37cc68": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Schulanfang mit Ölen",
+  "emotion": "erleichterung"
+ },
+ "eeadfbf5d4b391ab": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Puzzle Quiz",
+  "emotion": "humor"
+ },
+ "b745f8a5cd317dcf": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kinder werden größer",
+  "emotion": "humor"
+ },
+ "47b1b6e365ffd048": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Öle für Kinder",
+  "emotion": "vertrauen"
+ },
+ "fa8f974b1ff93680": {
+  "form": "ereignis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Abends nach Kinderschlaf",
+  "emotion": "sehnsucht"
+ },
+ "88751bac667722d8": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Sommerabende",
+  "emotion": "freude"
+ },
+ "4ae834941a93b2c8": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Roll-On DIY Schule",
+  "emotion": "neugier"
+ },
+ "11c05f0789405a5f": {
+  "form": "sonstiges",
+  "angle": "beweis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Rosenöl kostbar",
+  "emotion": "bewunderung"
+ },
+ "0deaacecd90352af": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kindern nicht alles",
+  "emotion": "neugier"
+ },
+ "ae4e5957db82fe6d": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "eigene Wahrheit",
+  "emotion": "mut"
+ },
+ "13321d7bbb2f5458": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Routinen hinterfragen",
+  "emotion": "neugier"
+ },
+ "f50f829a7f3afb9e": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Selbstverlust im Job",
+  "emotion": "verstaendnis"
+ },
+ "c00ace9b300f21c3": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Natur ätherische Öle",
+  "emotion": "geborgenheit"
+ },
+ "dc8f1c87e0a47dc8": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Online-Business Wahrheit",
+  "emotion": "neugier"
+ },
+ "005fc6c2ec290e32": {
+  "form": "ereignis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Abstand von Freunden",
+  "emotion": "zweifel"
+ },
+ "58d36cff0893046b": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbst wiederfinden",
+  "emotion": "hoffnung"
+ },
+ "db628c08fc6e5884": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mental Load Mamas",
+  "emotion": "verstanden"
+ },
+ "efcb1a0f53891a68": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Natürliche Sommerpflege",
+  "emotion": "freude"
+ },
+ "942db45a7e6444c7": {
+  "form": "ereignis",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Neuanfang nach Misserfolg",
+  "emotion": "hoffnung"
+ },
+ "a71b8fd65e53d53f": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Sommerduft Öle",
+  "emotion": "genuss"
+ },
+ "f3d5dfac7eb8a22c": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zweifel Online-Business",
+  "emotion": "verstanden"
+ },
+ "0663b2226c645e5e": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Risiko Stillstand",
+  "emotion": "neugier"
+ },
+ "916cf60747c57738": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Palmarosa Anwendung",
+  "emotion": "neugier"
+ },
+ "5d6d9703a0c34ca4": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unausgesprochene Mama-Gedanken",
+  "emotion": "verstanden"
+ },
+ "d963579260f431dc": {
+  "form": "meinung",
+  "angle": "vergleich",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Urlaub mit Teenagern",
+  "emotion": "humor"
+ },
+ "f6673249341ca527": {
+  "form": "ereignis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Geldsorgen Mama",
+  "emotion": "frust"
+ },
+ "267a0788bb204f3d": {
+  "form": "frage",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Lieblingsöl wählen",
+  "emotion": "humor"
+ },
+ "01a2e5a76e95b471": {
+  "form": "du-szene",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zeitmangel Business",
+  "emotion": "erleichterung"
+ },
+ "0af76876ead7a448": {
+  "form": "beweis",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Realistischer Business-Aufbau",
+  "emotion": "ehrlichkeit"
+ },
+ "875998dffbb31238": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Körperliche Veränderung",
+  "emotion": "neugier"
+ },
+ "229943b16ccc7b9c": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Grenzen setzen",
+  "emotion": "stolz"
+ },
+ "b3b925111f125c6b": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Veränderung möglich",
+  "emotion": "hoffnung"
+ },
+ "2735ba28f9fa704e": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Spätsommer Duft",
+  "emotion": "genuss"
+ },
+ "44b8aa4f49e55fed": {
+  "form": "frage",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Größere Kinder",
+  "emotion": "humor"
+ },
+ "daa577f33ad4418a": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Risiko alter Weg",
+  "emotion": "unruhe"
+ },
+ "735563ff475ede99": {
+  "form": "zitat",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Neue Möglichkeiten",
+  "emotion": "hoffnung"
+ },
+ "d85d69d9602225af": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Meinung anderer",
+  "emotion": "befreiung"
+ },
+ "8382d69ce32fab83": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Deep Blue Produkt",
+  "emotion": "energie"
+ },
+ "07035428474062d0": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstfürsorge Mamas",
+  "emotion": "wärme"
+ },
+ "46388c0a6ca53c1e": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Größere Kinder",
+  "emotion": "humor"
+ },
+ "b33ee75c1e59be65": {
+  "form": "beweis",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Erfolglose Systeme",
+  "emotion": "neugier"
+ },
+ "2c5d2aac7670df29": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Innere Ausreden",
+  "emotion": "neugier"
+ },
+ "9d59ea8234bf8605": {
+  "form": "dialog",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Größere Kinder",
+  "emotion": "humor"
+ },
+ "043703ac4c408d55": {
+  "form": "beweis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Community Resonanz",
+  "emotion": "verbundenheit"
+ },
+ "282bcc4f093ea995": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "doTERRA Lifestyle",
+  "emotion": "stolz"
+ },
+ "75c27517b34bf4b5": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstbehauptung Frauen",
+  "emotion": "stolz"
+ },
+ "70609263fdabdb12": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Öle für Sport",
+  "emotion": "energie"
+ },
+ "5984baf7889723bd": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama-Alltag Erziehung",
+  "emotion": "humor"
+ },
+ "bd41ef105f7fe17a": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Ballaststoffe Darm",
+  "emotion": "neugier"
+ },
+ "f3f355ced71f3b6a": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Chaos im Auto",
+  "emotion": "humor"
+ },
+ "4ca0f4a76fb138ca": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Ballaststoffe erklärt",
+  "emotion": "neugier"
+ },
+ "3b3437584b1da4f2": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Misstrauen Frage",
+  "emotion": "neugier"
+ },
+ "4e43e18e520dfe85": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Nettsein Selbstverrat",
+  "emotion": "wut"
+ },
+ "f435b4f2248cfd5b": {
+  "form": "du-szene",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Zweitjob Alternative",
+  "emotion": "hoffnung"
+ },
+ "4f865517cad23b3a": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Sonntagabend Gedanken",
+  "emotion": "verstanden"
+ },
+ "d4a5edc0a59b9242": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Kinder beim Papa",
+  "emotion": "wehmut"
+ },
+ "b82c48033da51172": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unbesprochene Lebensphase",
+  "emotion": "neugier"
+ },
+ "7e19a9fb72efd2af": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Content Strategie",
+  "emotion": "erleichterung"
+ },
+ "454ca21816fc982d": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Gründe fürs Scheitern",
+  "emotion": "neugier"
+ },
+ "fad23af558cde029": {
+  "form": "aufruf",
+  "angle": "beweis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Gewinnspiel Ende",
+  "emotion": "spannung"
+ },
+ "fd837bd511eb7803": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Freie Zeit allein",
+  "emotion": "humor"
+ },
+ "f00310da95272e48": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Ruhe allein",
+  "emotion": "wehmut"
+ },
+ "e805b8c0b3013970": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Urlaubsblues Öle",
+  "emotion": "erleichterung"
+ },
+ "569c8f767723e009": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Sich nicht verbiegen",
+  "emotion": "stolz"
+ },
+ "581d6a5e39d38d77": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Sommer-Sale Start",
+  "emotion": "vorfreude"
+ },
+ "3278cec208e128dd": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Bewegender Gedanke",
+  "emotion": "neugier"
+ },
+ "408366bdb84ec362": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Klarheit statt Motivation",
+  "emotion": "erleichterung"
+ },
+ "cf7bf52f7e4d5eb2": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Business Ergebnisse",
+  "emotion": "hoffnung"
+ },
+ "9bcaf18cf3b9080d": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Risiko Nichtstun",
+  "emotion": "neugier"
+ },
+ "64202c55dfaaceda": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Persönliche Gedanken",
+  "emotion": "neugier"
+ },
+ "ee4fc74c80457e3d": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Ehrlichkeit Business",
+  "emotion": "vertrauen"
+ },
+ "3b0bbf56d5e5bb42": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Erinnerung Unterstützung",
+  "emotion": "wärme"
+ },
+ "c46bd3c13cd355ce": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Loslassen",
+  "emotion": "wehmut"
+ },
+ "37adab15d9613f11": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Online Business Live",
+  "emotion": "neugier"
+ },
+ "a0f5eb9cd5306318": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Mama-Sorgen",
+  "emotion": "angst"
+ },
+ "f90c868e0d5e83a6": {
+  "form": "bekenntnis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Einkommen Glaubenssätze",
+  "emotion": "hoffnung"
+ },
+ "e953c6047126d76b": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Neuer Monat",
+  "emotion": "freude"
+ },
+ "0e894fb29ab3dd0e": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Sport Supplements",
+  "emotion": "keine"
+ },
+ "4d434ba3adaf6da6": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Familienfinanzen",
+  "emotion": "humor"
+ },
+ "6032433990003a93": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Meinung anderer",
+  "emotion": "wut"
+ },
+ "fd31813be67ab708": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Loslassen",
+  "emotion": "wehmut"
+ },
+ "a960779c05aebc28": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mütter Belastung",
+  "emotion": "stolz"
+ },
+ "86ce76aee30c0fce": {
+  "form": "bekenntnis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Nebeneinkommen Start",
+  "emotion": "hoffnung"
+ },
+ "b6cddf14f7943c7d": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Atemwegs-Ölmischung",
+  "emotion": "keine"
+ },
+ "ffc6e6239f46a2fe": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Ätherisches Blütenöl",
+  "emotion": "neugier"
+ },
+ "b351cd21afde1621": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Öle anwenden",
+  "emotion": "erleichterung"
+ },
+ "f49c5a491f85862c": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Motivation",
+  "emotion": "neugier"
+ },
+ "b95b0f076c51ef0a": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Geburtstag",
+  "emotion": "freude"
+ },
+ "ab46f4dfff423ec1": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Schlechtes Gewissen",
+  "emotion": "erleichterung"
+ },
+ "8ac363d3257e9833": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Programm Vorstellung",
+  "emotion": "neugier"
+ },
+ "f51cc7df1b816648": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Geburtstag",
+  "emotion": "freude"
+ },
+ "34de440d796860b6": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Instagram Reichweite",
+  "emotion": "neugier"
+ },
+ "c5c56a0f37a556c7": {
+  "form": "zitat",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Ins Handeln kommen",
+  "emotion": "motivation"
+ },
+ "483f7e008a4901c7": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Gute Mama",
+  "emotion": "neugier"
+ },
+ "eae50ca16bfe4e7f": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Zeit ohne Kinder",
+  "emotion": "wehmut"
+ },
+ "3f09efb6c2d86e9c": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Business Wachstum",
+  "emotion": "hoffnung"
+ },
+ "06b6558b12448502": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Neues Produkt",
+  "emotion": "neugier"
+ },
+ "9e0accfbef0a37f4": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Online Business Überforderung",
+  "emotion": "frust"
+ },
+ "1f97de4b8e2ffecf": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Lebenslektion",
+  "emotion": "neugier"
+ },
+ "5acb4ca7961d05e9": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Baumöle",
+  "emotion": "keine"
+ },
+ "fcc2652f29cbe5c5": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Caption Schreiben",
+  "emotion": "keine"
+ },
+ "82aa8efc7fad0b5d": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kinder vermissen",
+  "emotion": "wehmut"
+ },
+ "b677319b42ffae18": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kindergefühle",
+  "emotion": "humor"
+ },
+ "8c49887fbc5e45de": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Schwangerschaften",
+  "emotion": "rührung"
+ },
+ "d18e11d87406dc12": {
+  "form": "du-szene",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Kritik gelassen",
+  "emotion": "erleichterung"
+ },
+ "4c8c1f402407095b": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Spendenlauf",
+  "emotion": "motivation"
+ },
+ "403e80b44d6c63b1": {
+  "form": "bekenntnis",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mentale Last",
+  "emotion": "erschöpfung"
+ },
+ "5e8c908f42fee06f": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Vereinbarkeit",
+  "emotion": "neugier"
+ },
+ "de0a13607ffd3a07": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Geld Motivation",
+  "emotion": "neugier"
+ },
+ "f5458c2b3212a479": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Schulstart",
+  "emotion": "wehmut"
+ },
+ "86a7df3dc0e3a83d": {
+  "form": "ereignis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Ein Jahr Business",
+  "emotion": "stolz"
+ },
+ "8d4b73b0f5c92785": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Manifestieren",
+  "emotion": "neugier"
+ },
+ "205dc94b4ff66047": {
+  "form": "zitat",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Überblick verlieren",
+  "emotion": "neugier"
+ },
+ "5dcde2fd2ba3787f": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Gewinnspiel",
+  "emotion": "neugier"
+ },
+ "308c60a9322d7b1c": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Sichtbarkeit Expertin",
+  "emotion": "motivation"
+ },
+ "006b780a2fd589ae": {
+  "form": "zitat",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Scheitern",
+  "emotion": "motivation"
+ },
+ "1b85f1ae49250384": {
+  "form": "zitat",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Durchhalten",
+  "emotion": "stolz"
+ },
+ "c87491482ea034fc": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Zypressenöl Anwendung",
+  "emotion": "keine"
+ },
+ "6e05fc69e1a7246a": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Authentizität",
+  "emotion": "motivation"
+ },
+ "9e244c7865846aef": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "KI Tools",
+  "emotion": "neugier"
+ },
+ "89dae125a114ee6a": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Erfolg braucht Arbeit",
+  "emotion": "humor"
+ },
+ "7b8b11f4502ce77e": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Finanzielle Freiheit",
+  "emotion": "neugier"
+ },
+ "f24a4626e4710b0e": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Liebe Unabhängigkeit",
+  "emotion": "neugier"
+ },
+ "209657e1c94c8cc5": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Alleinerziehend",
+  "emotion": "stolz"
+ },
+ "eebfc0ef950b40cb": {
+  "form": "meinung",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Instagram Potenzial",
+  "emotion": "hoffnung"
+ },
+ "a4e5ced1dc7dedd4": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Rezepte Öle",
+  "emotion": "vorfreude"
+ },
+ "cec3e097404e4e2c": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Grenzen setzen",
+  "emotion": "trotz"
+ },
+ "308f1ff8d727cf02": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Selbstsabotage Familienmuster",
+  "emotion": "neugier"
+ },
+ "9b68d9f3e27c564c": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Gelassenheit",
+  "emotion": "humor"
+ },
+ "873f16d369d94657": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Podcast Launch",
+  "emotion": "vorfreude"
+ },
+ "8910d225a1bbad36": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unnötige Ausgaben",
+  "emotion": "scham"
+ },
+ "e0eec2a16c3e8ff4": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Gelassen antworten",
+  "emotion": "neugier"
  }
 }
