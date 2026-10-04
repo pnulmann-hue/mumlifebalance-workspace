@@ -1,6 +1,6 @@
 {
   "$schema": "competitor-watchlist v2",
-  "updated": "2026-09-25",
+  "updated": "2026-10-04",
   "description": "Aktualisiert nach Discovery-Lauf 2026-05-08. Ersetzt v1 (war auf Web-Such-Phantasie basiert). Enthält 7 echte In-Niche-Stars (entdeckt via Hashtag-Discovery) + 3 Big-Names (Caroline Preuss, Julia Trost, Katharina Lewald) zur Vergleichsobservation. Tägliches Scraping zeigt: Big-Names nutzen die Mum-Business-Hashtags nicht — sie kommen über andere Distribution.",
   "accounts": [
     {
@@ -17,7 +17,8 @@
       "profile": "mentoring",
       "category": "big-name-mentoring-fuer-muetter",
       "added": "2026-05-07",
-      "note": "Big-name Reference. Patricias Hauptframework-Quelle"
+      "note": "Big-name Reference. Patricias Hauptframework-Quelle",
+      "nische": "kern"
     },
     {
       "handle": "katharina.lewald",
@@ -115,7 +116,8 @@
       "profile": "mentoring",
       "category": "patricia-flagged-not-in-discovery",
       "added": "2026-05-08",
-      "note": "Von Patricia ergänzt. Nicht in Discovery aufgetaucht — nutzt vermutlich Karriere/Berufsentwicklung-Hashtags statt Mum-Business-Hashtags. Daily-Scrape klärt"
+      "note": "Von Patricia ergänzt. Nicht in Discovery aufgetaucht — nutzt vermutlich Karriere/Berufsentwicklung-Hashtags statt Mum-Business-Hashtags. Daily-Scrape klärt",
+      "nische": "kern"
     },
     {
       "handle": "mumlifebalance_patricia_ulmann",
@@ -143,7 +145,17 @@
       "profile": "mentoring",
       "category": "reichweiten-patterns",
       "added": "2026-09-25",
-      "note": "Patricias wichtigste Referenz für Reichweiten-Mechanik — siehe context/reichweitenherz-voice-layer.md und reference/content-tresor-reichweitenherz.md. Fehlte bis 25.09.2026 in der Watchlist und konnte deshalb nie in den Ideen auftauchen."
+      "note": "Patricias wichtigste Referenz für Reichweiten-Mechanik — siehe context/reichweitenherz-voice-layer.md und reference/content-tresor-reichweitenherz.md. Fehlte bis 25.09.2026 in der Watchlist und konnte deshalb nie in den Ideen auftauchen.",
+      "nische": "kern"
+    },
+    {
+      "handle": "nikoleta.kolokytha",
+      "label": "Nikoleta Kolokytha",
+      "profile": "mentoring",
+      "nische": "kern",
+      "category": "patricia-nische",
+      "added": "2026-10-04",
+      "note": "Von Patricia am 04.10.2026 als ihre Nische benannt (Hook-Maschine)."
     }
   ],
   "settings": {
@@ -159,5 +171,6 @@
     "v1_2026-05-07": "Initial 6 accounts: 3 Mentoring (Preuss, Trost, Lewald) + 3 doTERRA (Heilkunstwerk, Aroma Mama, AROMA 1x1). Web-Such-basiert.",
     "v2_2026-05-08": "Discovery-validiert: doTERRA-3 entfernt (kein Vorkommen unter Hashtags), Mentoring-3 als 'big-name reference' behalten, 7 echte Stars aus Discovery hinzugefügt.",
     "v3_2026-06-07": "3 Reichweiten-Stars aus Juni-Discovery ergänzt: powerfrauenfocus (15'100), alleinerziehend.erfolgreich (29'400), digitalmamashift (Verzettel-Bullseye)."
-  }
+  },
+  "nische_hinweis": "nische=kern: von Patricia am 04.10.2026 als ihre Nische benannt (reichweitenherz, karriere.mum, juliatrost, nikoleta.kolokytha). Die Hook-Markt-Analyse wertet diese Konten getrennt aus; alle anderen gelten als Umfeld."
 }

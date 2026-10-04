@@ -8758,5 +8758,229 @@
   "konkret": true,
   "thema": "Aufschieben statt handeln",
   "emotion": "ertappt"
+ },
+ "58fdf3abda9d8868": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Verkaufen über Story",
+  "emotion": "neugier"
+ },
+ "042427b55f44e328": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "gefloppte Reels",
+  "emotion": "humor"
+ },
+ "99d057cae8f422c9": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Content für Zielgruppe",
+  "emotion": "neugier"
+ },
+ "1515f19e34556ca3": {
+  "form": "dialog",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Leichtigkeit hinter Erfolg",
+  "emotion": "neugier"
+ },
+ "b3af9c20fe7960ed": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Landingpages mit KI",
+  "emotion": "neugier"
+ },
+ "ee48db6239d33601": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Follower durch Reel",
+  "emotion": "hoffnung"
+ },
+ "ba816029422d4695": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Affiliate Kurs verkaufen",
+  "emotion": "neugier"
+ },
+ "449a5c8e52e3826c": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Einkommen mit 27",
+  "emotion": "neugier"
+ },
+ "825cf63e4816e28c": {
+  "form": "du-szene",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Traum durch Selbstständigkeit",
+  "emotion": "hoffnung"
+ },
+ "507f70573b83e5b6": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Schulden zu Millionen",
+  "emotion": "neugier"
+ },
+ "4b13135c71b4832d": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Onlinekurs mit KI",
+  "emotion": "hoffnung"
+ },
+ "a259782ac736be63": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zahlen hinter Business",
+  "emotion": "neugier"
+ },
+ "cc92482d49504003": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zahlen hinter Business",
+  "emotion": "neugier"
+ },
+ "0bef0354dcb832fa": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Instagram Namenszeile",
+  "emotion": "angst"
+ },
+ "771fda071c9d8bf9": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zahlen hinter Business",
+  "emotion": "neugier"
+ },
+ "68fdb0734344f820": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Instagram mit Claude",
+  "emotion": "neugier"
+ },
+ "f0dbca0bd3a1c115": {
+  "form": "dialog",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Mentoring bis Umsatzziel",
+  "emotion": "hoffnung"
+ },
+ "ff8a0e188bc3a985": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Klarstellung",
+  "emotion": "neugier"
+ },
+ "4de1657c5a06dd21": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Multiplattform Posting",
+  "emotion": "neugier"
+ },
+ "34aceb3b69b91103": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Instagram Bio Checkliste",
+  "emotion": "neugier"
+ },
+ "10a1bee0e8925acf": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Network Produktwahl",
+  "emotion": "neugier"
+ },
+ "e748019c3c474409": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Reichweite durch Posts",
+  "emotion": "angst"
+ },
+ "b6f5efdc93c02fe4": {
+  "form": "zitat",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Risiko eingehen",
+  "emotion": "keine"
+ },
+ "1c902fe5475913bf": {
+  "form": "dialog",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Interaktion mit Zielgruppe",
+  "emotion": "neugier"
+ },
+ "8d11165bb1ca9a6c": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Umsatz ohne Rampenlicht",
+  "emotion": "erleichterung"
+ },
+ "a565c54710ec4769": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Onlineshop Affiliate",
+  "emotion": "angst"
+ },
+ "c0d299ccd8f4dd7a": {
+  "form": "meinung",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Online Freundinnen Support",
+  "emotion": "stolz"
+ },
+ "cf473e0a12d5208c": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Erfolg und Misserfolg",
+  "emotion": "hoffnung"
  }
 }
