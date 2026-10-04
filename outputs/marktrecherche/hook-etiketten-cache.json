@@ -10966,5 +10966,1925 @@
   "konkret": true,
   "thema": "Monatsende Routine",
   "emotion": "neugier"
+ },
+ "9a8605e665e6faf9": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "KI Präsentationen erstellen",
+  "emotion": "neugier"
+ },
+ "ceefef1c39776baf": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Fragen beantworten Serie",
+  "emotion": "neugier"
+ },
+ "31c1fb69236d42b6": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Mama mit Business",
+  "emotion": "stolz"
+ },
+ "67a63ea878bbfa7c": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Followerwachstum kleiner Account",
+  "emotion": "hoffnung"
+ },
+ "923d3148d699a7ab": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "fehlende Follower",
+  "emotion": "neugier"
+ },
+ "6dd211bdd1edd57e": {
+  "form": "meinung",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Vorsprung Kunden",
+  "emotion": "neugier"
+ },
+ "2c29a5176761ab88": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Umsatz kleiner Account",
+  "emotion": "neugier"
+ },
+ "9dac3fff5b4695ec": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Content kopieren",
+  "emotion": "wut"
+ },
+ "4913ca28afacceac": {
+  "form": "aufruf",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Begeisterung im Network",
+  "emotion": "mut"
+ },
+ "3a9ec2588f6d7144": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Story Produkthäufigkeit",
+  "emotion": "neugier"
+ },
+ "820ee02b943852d5": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Pausen einlegen",
+  "emotion": "erleichterung"
+ },
+ "7ae902233143dbce": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Instagram Bio Name",
+  "emotion": "angst"
+ },
+ "fc19945836740b7c": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Frauen und Geld",
+  "emotion": "wut"
+ },
+ "3eab35a548e84550": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Partner aktivieren",
+  "emotion": "hoffnung"
+ },
+ "d46fdccb93c26070": {
+  "form": "aufruf",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Account Fehler",
+  "emotion": "angst"
+ },
+ "432684a373b9935c": {
+  "form": "frage",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Kommentar Info Trend",
+  "emotion": "humor"
+ },
+ "44a9462aa0cdc66e": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Bereitschaft anfangen",
+  "emotion": "mut"
+ },
+ "978479dda48d3e1c": {
+  "form": "du-szene",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Kundengewinnung Network",
+  "emotion": "neid"
+ },
+ "8ed4cfa2b65db230": {
+  "form": "frage",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Anfänger im Network",
+  "emotion": "scham"
+ },
+ "1e2c24586b9db115": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Audio Reichweite",
+  "emotion": "angst"
+ },
+ "c74a62009787029f": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "niedrige Reel Views",
+  "emotion": "neugier"
+ },
+ "baca5b83a28a91a5": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "vom Business leben",
+  "emotion": "hoffnung"
+ },
+ "c5832596afd96c82": {
+  "form": "bekenntnis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Profil Kompliment",
+  "emotion": "humor"
+ },
+ "18c25c971c00004f": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Instagram Wachstum Post",
+  "emotion": "neugier"
+ },
+ "083ddc6b9028cbff": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Angst vorm Scheitern",
+  "emotion": "angst"
+ },
+ "ebfc8b89431b0d55": {
+  "form": "meinung",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Online vs Offline",
+  "emotion": "neugier"
+ },
+ "d521ece9104d616b": {
+  "form": "frage",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Wege Networkaufbau",
+  "emotion": "neugier"
+ },
+ "9a9a618877d22f51": {
+  "form": "liste",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Instagram Eigenheiten",
+  "emotion": "neugier"
+ },
+ "139eb1e8d791b57b": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Partner einschreiben",
+  "emotion": "druck"
+ },
+ "acb40a50d098557c": {
+  "form": "bekenntnis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "KI Content Automatisierung",
+  "emotion": "neugier"
+ },
+ "c73db25ddb1c5577": {
+  "form": "ereignis",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Followerverlust Analyse",
+  "emotion": "neugier"
+ },
+ "86b6f58042e99adf": {
+  "form": "meinung",
+  "angle": "ergebnis",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Luxusurlaub Lebensstil",
+  "emotion": "neid"
+ },
+ "50146145ef79cdc8": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Claude Code nutzen",
+  "emotion": "neugier"
+ },
+ "4610aa68567012aa": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Elevate Ankündigung",
+  "emotion": "neugier"
+ },
+ "d92b5f7f5d18ebb0": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Preis digitales Produkt",
+  "emotion": "neugier"
+ },
+ "04531e3687b74461": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "erster 5000€ Monat",
+  "emotion": "stolz"
+ },
+ "9f25c39700830590": {
+  "form": "frage",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Lebensstil zeigen",
+  "emotion": "wut"
+ },
+ "17bde0a5d2fd9b88": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "ungewollter Weg",
+  "emotion": "neugier"
+ },
+ "79c30e4dbd33ef15": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Reel Fehlersatz",
+  "emotion": "angst"
+ },
+ "e77f329f12ef4694": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Überraschung",
+  "emotion": "neugier"
+ },
+ "4db4f85518a6daca": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Umsatz durch Content",
+  "emotion": "neid"
+ },
+ "2b24c294371be36f": {
+  "form": "liste",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Instagram Mythen",
+  "emotion": "neugier"
+ },
+ "04d395d4d338d963": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Fragen einsenden",
+  "emotion": "keine"
+ },
+ "19ad39381f386ce2": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Hashtags Nutzen",
+  "emotion": "neugier"
+ },
+ "a185f55d05bf361d": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Social Media Überforderung",
+  "emotion": "erleichterung"
+ },
+ "2dfef56cb00588d5": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Reichweite Einbruch",
+  "emotion": "angst"
+ },
+ "62f6eef780e91c1a": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "öffentliches Scheitern",
+  "emotion": "scham"
+ },
+ "1d9c545ce3300d2c": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "große Accounts blenden",
+  "emotion": "scham"
+ },
+ "c34189fa17483afd": {
+  "form": "dialog",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Grund zum Folgen",
+  "emotion": "neugier"
+ },
+ "580111f3e535fae0": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Reichweite ohne Verkäufe",
+  "emotion": "frust"
+ },
+ "fb8aea0ac2fc821f": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Modehaus Ingolstadt",
+  "emotion": "freude"
+ },
+ "b725b02b542773e5": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Nachtaktiv Ingolstadt",
+  "emotion": "freude"
+ },
+ "e0c4a7171e80d35c": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Modehaus Ingolstadt",
+  "emotion": "freude"
+ },
+ "c305840a208cf88e": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Abschied Kakao",
+  "emotion": "neugier"
+ },
+ "273220d8d2eca654": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstbestimmung",
+  "emotion": "stolz"
+ },
+ "7d060054f6e627a2": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Business sichtbar machen",
+  "emotion": "neugier"
+ },
+ "d6f885d8fcd23d2a": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Network empfehlen",
+  "emotion": "neugier"
+ },
+ "7dc1ac6cbe40615c": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Frust",
+  "emotion": "wut"
+ },
+ "42138e0962d4026f": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Network Produktpräsentation",
+  "emotion": "neugier"
+ },
+ "ac75c42593a83670": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Jahresendmotivation",
+  "emotion": "hoffnung"
+ },
+ "c23f43ace5c96c47": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "offizielle Ankündigung",
+  "emotion": "neugier"
+ },
+ "6bfbe77605f8744e": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "keine"
+ },
+ "723998a99af16cb0": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Kaufentscheidung",
+  "emotion": "neugier"
+ },
+ "64232c7a560dfe23": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Personal Brand",
+  "emotion": "neugier"
+ },
+ "4385a2df9e68a338": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "keine"
+ },
+ "5033c513cff4796f": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Päckchen Dankbarkeit",
+  "emotion": "freude"
+ },
+ "a079d0a2fdaab7e9": {
+  "form": "sonstiges",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Weniger mehr Vergleich",
+  "emotion": "neugier"
+ },
+ "1298eb36f06ab3f3": {
+  "form": "zitat",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Abschied Ende",
+  "emotion": "wehmut"
+ },
+ "f1c8bdd11ea2e3a4": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "ce7ca1311471877e": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Handysucht",
+  "emotion": "scham"
+ },
+ "927d3adc38559f60": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "keine"
+ },
+ "2b390b10e9559959": {
+  "form": "liste",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Network Red Flags",
+  "emotion": "angst"
+ },
+ "52bd19d01e2860a5": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Frühlingsmode",
+  "emotion": "vorfreude"
+ },
+ "6bc3541aaf858906": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Pink Mode",
+  "emotion": "freude"
+ },
+ "f77d91c66b28eb34": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "aaca7b964484821a": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "adf6f12ca1defb9a": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "53c853219acd3db1": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "neue Schals Tücher",
+  "emotion": "vorfreude"
+ },
+ "66c58a6f2aaeadcd": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "6fa3dd8a6bcb93ac": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping",
+  "emotion": "keine"
+ },
+ "32bd484094c5092e": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "30aa897df144a9c7": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "6674c77f499e6570": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "4653d8abda0aaab8": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "8a247ab8618f9dab": {
+  "form": "ereignis",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "neue Sommerkleider",
+  "emotion": "vorfreude"
+ },
+ "6ead15ee6fb785ac": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "d2de36453bede8e8": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "db45609ed21720d5": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "29077988c450cfb9": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "keine"
+ },
+ "067b7be1e063f6e1": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Sommer Stadtbummel",
+  "emotion": "freude"
+ },
+ "45f9aa8079d3df54": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "keine"
+ },
+ "8b41dff98488f4eb": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "keine"
+ },
+ "32b86ce1ce4720fa": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "keine"
+ },
+ "67bb95e9559e994c": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "keine"
+ },
+ "37627fa0f3e7f16c": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "keine"
+ },
+ "959632676035e23d": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "freude"
+ },
+ "e87ecb831b8f8f77": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping Modehaus",
+  "emotion": "keine"
+ },
+ "40f9a2c1f8825ad4": {
+  "form": "liste",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Frühlingstrends 2022",
+  "emotion": "neugier"
+ },
+ "d6222b962c274596": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Frühlingsmode",
+  "emotion": "vorfreude"
+ },
+ "ed79cef39217ed2a": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Frühling Live Shopping",
+  "emotion": "vorfreude"
+ },
+ "1520a66f63415263": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Sommermode 2022",
+  "emotion": "vorfreude"
+ },
+ "8f1ab078771ec2b9": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Frühling Live Shopping",
+  "emotion": "vorfreude"
+ },
+ "8372fd795be3798d": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Expertenstory schnell",
+  "emotion": "neugier"
+ },
+ "18d711830e24bdcd": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "unbequeme Wahrheiten",
+  "emotion": "trotz"
+ },
+ "520b9e3fea12fc0f": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Umsetzung ohne Erfolg",
+  "emotion": "frust"
+ },
+ "c657b09bb577b702": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Preiseinwand",
+  "emotion": "wut"
+ },
+ "0f07e20f66496c97": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Wunsch nach mehr",
+  "emotion": "sehnsucht"
+ },
+ "b89ab09560a53af0": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Muster im Network",
+  "emotion": "neugier"
+ },
+ "e2159af7975be32d": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Personal Brand Irrtum",
+  "emotion": "neugier"
+ },
+ "0751e8978fdfde79": {
+  "form": "ereignis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Morgenroutine Networkerin",
+  "emotion": "neugier"
+ },
+ "d2b22460274e94d0": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Verkaufen statt Erklären",
+  "emotion": "neugier"
+ },
+ "79fa52ceca6adae3": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Einstieg Angebot",
+  "emotion": "neugier"
+ },
+ "2c4a5066826271fd": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "innerer Feind",
+  "emotion": "neugier"
+ },
+ "7f4b46670355ac18": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Traum selbst bauen",
+  "emotion": "hoffnung"
+ },
+ "fc56de0a4f62bf97": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Content Plan",
+  "emotion": "hoffnung"
+ },
+ "5c569c3a6202eb93": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Angst vorm Verkaufen",
+  "emotion": "scham"
+ },
+ "7248c6e9012ba419": {
+  "form": "ratgeber",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Kontaktliste Network",
+  "emotion": "neugier"
+ },
+ "2eaff0c9fd7657e6": {
+  "form": "aufruf",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "wichtige Botschaft",
+  "emotion": "neugier"
+ },
+ "a49b6cede163d3f9": {
+  "form": "ereignis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "einfacher Abschluss",
+  "emotion": "humor"
+ },
+ "7a00d8be7d2225a5": {
+  "form": "ratgeber",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Kunde oder Partner",
+  "emotion": "neugier"
+ },
+ "52e1c086dd2f1330": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Network Verkaufstipp",
+  "emotion": "neugier"
+ },
+ "d517b7f54d92524b": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Network Content Expertise",
+  "emotion": "hoffnung"
+ },
+ "95b56fa810c42bcb": {
+  "form": "frage",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Sommerflaute Business",
+  "emotion": "angst"
+ },
+ "b3bac8441779404d": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Vorstellung Networkerin",
+  "emotion": "humor"
+ },
+ "8634c766bf96df97": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Grenzen im Network",
+  "emotion": "neugier"
+ },
+ "c3124a11b23ba41d": {
+  "form": "bekenntnis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Herkunft persönliche Geschichte",
+  "emotion": "neugier"
+ },
+ "26baab46d74a3d3e": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Network Red Flags",
+  "emotion": "wut"
+ },
+ "603b73b4d14f0517": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstvertrauen aufbauen",
+  "emotion": "hoffnung"
+ },
+ "eb4e30597f2e800f": {
+  "form": "dialog",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Ungläubige Reaktion",
+  "emotion": "humor"
+ },
+ "faa8aae4b0c6d9c0": {
+  "form": "frage",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Abnehmerfolg",
+  "emotion": "neugier"
+ },
+ "48796a39fbb6a0a7": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstständigkeit Erkenntnis",
+  "emotion": "humor"
+ },
+ "a010288cc28eeffe": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Durchhalten im Business",
+  "emotion": "hoffnung"
+ },
+ "3a011c67af65280a": {
+  "form": "bekenntnis",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unternehmer Kämpfe",
+  "emotion": "neugier"
+ },
+ "ab45ceb596537318": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Network Red Flags",
+  "emotion": "wut"
+ },
+ "b72664a096a86bf3": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Tipp bei Flaute",
+  "emotion": "hoffnung"
+ },
+ "0c3655c3788bc912": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Business als Spiegel",
+  "emotion": "scham"
+ },
+ "e10b6027efb40bdf": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Network Eignung",
+  "emotion": "neugier"
+ },
+ "524e7dfc8f5abb0e": {
+  "form": "dialog",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Kundenansprache",
+  "emotion": "humor"
+ },
+ "eaf25ee9fe2c8c56": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Halbherziges Business",
+  "emotion": "scham"
+ },
+ "badce09b01ede53a": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Verkaufen und Sponsern",
+  "emotion": "neugier"
+ },
+ "d55e7f6c8e7b12cb": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Schwankende Umsätze",
+  "emotion": "angst"
+ },
+ "93b50fc37883ac69": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Einwand Network ablehnen",
+  "emotion": "neugier"
+ },
+ "035c9a5159319d8e": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Potenzial verschwenden",
+  "emotion": "scham"
+ },
+ "8aa5a765d231bd24": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Talking Head Content",
+  "emotion": "neugier"
+ },
+ "db8e3caba1d88019": {
+  "form": "liste",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Tabus im Network",
+  "emotion": "neugier"
+ },
+ "05d094dd951787e0": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Business Analyse Humor",
+  "emotion": "humor"
+ },
+ "023edde33fda8298": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Fehler im Business",
+  "emotion": "neugier"
+ },
+ "654d1423ae28b657": {
+  "form": "meinung",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Teamaufbau Sichtbarkeit",
+  "emotion": "scham"
+ },
+ "6ee74fa44aa620c3": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Network Contentplan",
+  "emotion": "erleichterung"
+ },
+ "ceb8b767fbfa2e6d": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Zielkunde Ansprache",
+  "emotion": "neugier"
+ },
+ "70fce3e3b835fd81": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Eigener Erfolg Awards",
+  "emotion": "stolz"
+ },
+ "c07e795c715e2a8d": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Produktvielfalt Angebote",
+  "emotion": "humor"
+ },
+ "6ba83bf43f404d8b": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Network Weisheit",
+  "emotion": "neugier"
+ },
+ "84f90295783912f3": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Aussehen und Wert",
+  "emotion": "erleichterung"
+ },
+ "72031c1b4274d71e": {
+  "form": "aufruf",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Coaching Plätze",
+  "emotion": "angst"
+ },
+ "073708d9e0e96729": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Content Ideenmangel",
+  "emotion": "frust"
+ },
+ "31441199b523e257": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Persönliches Wachstum",
+  "emotion": "stolz"
+ },
+ "96a6bfaa4a66700b": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Bühnenpanne",
+  "emotion": "humor"
+ },
+ "0bbab48ae2b9ba3c": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Originalität als Networker",
+  "emotion": "hoffnung"
+ },
+ "5ddda768d87036cd": {
+  "form": "ratgeber",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Zweifel nutzen",
+  "emotion": "hoffnung"
+ },
+ "65d7a2b83a39b953": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Empörung",
+  "emotion": "wut"
+ },
+ "83f7f882e2633f05": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Authentizität Strategie",
+  "emotion": "neugier"
+ },
+ "e9876f1adaf879a9": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Passender Content",
+  "emotion": "neugier"
+ },
+ "1d8df8d94c2a66a1": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Network Alltag",
+  "emotion": "humor"
+ },
+ "090103fbadb51a46": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Content Serie",
+  "emotion": "neugier"
+ },
+ "c9a765b762078d1b": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Network Red Flags",
+  "emotion": "wut"
+ },
+ "2a9c3578b1e87a7e": {
+  "form": "du-szene",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Blinder Fleck",
+  "emotion": "neugier"
+ },
+ "aca5582bd4c07c92": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Unklar",
+  "emotion": "keine"
+ },
+ "62e45518547adb5a": {
+  "form": "ratgeber",
+  "angle": "schmerz",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Einwand Überlegen",
+  "emotion": "neugier"
+ },
+ "d61f061e27c144aa": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Ankündigung",
+  "emotion": "neugier"
+ },
+ "0b28e580fc551964": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Teamaufbau Fehler",
+  "emotion": "neugier"
+ },
+ "c07b92f2cf239f79": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Gewichtsverlust",
+  "emotion": "hoffnung"
+ },
+ "60cd7955af98aef4": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Network offen zeigen",
+  "emotion": "neugier"
+ },
+ "bfac067b7bdf81ad": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Network Red Flags",
+  "emotion": "wut"
+ },
+ "105ca789d1b87840": {
+  "form": "bekenntnis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Erfolg durch Arbeit",
+  "emotion": "stolz"
+ },
+ "bbeef5fb48b4aaa5": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Verkaufen lernen",
+  "emotion": "neugier"
+ },
+ "e3bbd7c47b66423c": {
+  "form": "dialog",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Wichtigstes im Network",
+  "emotion": "neugier"
+ },
+ "6520cd3de3c0111e": {
+  "form": "liste",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Network Postideen",
+  "emotion": "erleichterung"
+ },
+ "18456403062e3084": {
+  "form": "sonstiges",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Hamsterrad Selbstständigkeit",
+  "emotion": "frust"
+ },
+ "6f6496763c552aad": {
+  "form": "zitat",
+  "angle": "kontraer",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Schwere Entscheidungen",
+  "emotion": "hoffnung"
+ },
+ "bf5c645045a2820a": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Content Partnergewinnung",
+  "emotion": "neugier"
+ },
+ "259f74213853f053": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Algorithmus Authentizität",
+  "emotion": "erleichterung"
+ },
+ "06dbee86d550f34c": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Network Aufgaben",
+  "emotion": "neugier"
+ },
+ "4dbb4c5b92ea0c29": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Erfolg Definition",
+  "emotion": "stolz"
+ },
+ "9d2e79e38963ba41": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Gespräche starten",
+  "emotion": "hoffnung"
+ },
+ "4740798abd9ff85a": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "KI Networker",
+  "emotion": "neugier"
+ },
+ "79cf1cc3b71243d6": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Network Family",
+  "emotion": "wut"
+ },
+ "dedafeeac126ac5a": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Network Humor",
+  "emotion": "humor"
+ },
+ "68ad9510fb8abca9": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Network Content Karussell",
+  "emotion": "neugier"
+ },
+ "1472bda1ebdf2150": {
+  "form": "frage",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Ablehnung Network",
+  "emotion": "neugier"
+ },
+ "6579e8c968847854": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Produktfokus",
+  "emotion": "neugier"
+ },
+ "c2f95a10ebc18e16": {
+  "form": "liste",
+  "angle": "neugier",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Geld lohnt sich",
+  "emotion": "neugier"
+ },
+ "3bd298c336fd0330": {
+  "form": "meinung",
+  "angle": "ergebnis",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Zeitaufwand",
+  "emotion": "hoffnung"
+ },
+ "e7c4f9728f3311e8": {
+  "form": "ratgeber",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Team motivieren",
+  "emotion": "hoffnung"
+ },
+ "7b538801858ff56e": {
+  "form": "dialog",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Contentsäulen Nische",
+  "emotion": "ueberforderung"
+ },
+ "7d76ae646812d6fe": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Network Fehler",
+  "emotion": "neugier"
+ },
+ "0c7460e18632ebd3": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Angst überwinden",
+  "emotion": "angst"
+ },
+ "ac426f18c0d03805": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Authentizität",
+  "emotion": "keine"
+ },
+ "4fe273d37bcdfb1b": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Networker Kritik",
+  "emotion": "wut"
+ },
+ "ce62927970b574b3": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Teamaufbau Fehler",
+  "emotion": "angst"
+ },
+ "b0602630a35ca566": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Produkt vs Person",
+  "emotion": "neugier"
+ },
+ "8a4a673b52107781": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Modehaus Live",
+  "emotion": "neugier"
+ },
+ "19483794ab0fcc8e": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Plumping Balm",
+  "emotion": "neugier"
+ },
+ "e693fae259f0da52": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Röcke 60er",
+  "emotion": "freude"
+ },
+ "0920943ce71112e7": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Bunte Mode",
+  "emotion": "freude"
+ },
+ "ba84255bcce716fb": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Schönheit",
+  "emotion": "freude"
+ },
+ "104f5372145e5a4e": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Impressionen",
+  "emotion": "keine"
+ },
+ "96fbba6c33f279b7": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Mitarbeiterin Mode",
+  "emotion": "freude"
+ },
+ "405545ada760c54e": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Impressionen",
+  "emotion": "keine"
+ },
+ "3144d3a1437df856": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Puma BH",
+  "emotion": "keine"
+ },
+ "8cf8e4f5889cc10e": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Impressionen",
+  "emotion": "keine"
+ },
+ "7da7137a9435067e": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Sommermode",
+  "emotion": "freude"
+ },
+ "c9fda382dc7c6e1b": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Live Shopping",
+  "emotion": "keine"
+ },
+ "5924087548a7d304": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Comma Fliederfarben",
+  "emotion": "freude"
+ },
+ "36734a7be11c841e": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Modetrends Ingolstadt",
+  "emotion": "neugier"
+ },
+ "874a65fb82e8535f": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Weiberfasching Gruß",
+  "emotion": "humor"
+ },
+ "baa17ca728329297": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Sommerkleider",
+  "emotion": "freude"
+ },
+ "d87071e76a4506d3": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Spaß",
+  "emotion": "humor"
+ },
+ "0f4cfd1df608dede": {
+  "form": "sonstiges",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Winteraccessoires",
+  "emotion": "freude"
+ },
+ "87285a0ca68e857f": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Steppwesten",
+  "emotion": "freude"
+ },
+ "88d4380b3d1cbefb": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Modehaus Sortiment",
+  "emotion": "freude"
+ },
+ "1f58f7f0c6558085": {
+  "form": "sonstiges",
+  "angle": "ergebnis",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Wintermode",
+  "emotion": "freude"
+ },
+ "db1fe5f1149ec133": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Selbstfindung Stil",
+  "emotion": "keine"
+ },
+ "d4f9a16ca1523e6f": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 5,
+  "konkret": true,
+  "thema": "Modehaus",
+  "emotion": "keine"
+ },
+ "774c28f046af991d": {
+  "form": "ereignis",
+  "angle": "neugier",
+  "stufe": 5,
+  "konkret": false,
+  "thema": "Sommer Live",
+  "emotion": "freude"
+ },
+ "41deb3cd460a138e": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Launch Learnings",
+  "emotion": "neugier"
+ },
+ "def3cd6cb5f850cb": {
+  "form": "beweis",
+  "angle": "ergebnis",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Abnehmen",
+  "emotion": "hoffnung"
+ },
+ "a60cce011c415977": {
+  "form": "meinung",
+  "angle": "neugier",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Onlinekurse scheitern",
+  "emotion": "neugier"
+ },
+ "3f53fb6f26f96fb4": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 1,
+  "konkret": true,
+  "thema": "Mut Veränderung",
+  "emotion": "angst"
+ },
+ "e3347a3742735e7a": {
+  "form": "beweis",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Stundensatz Millionen",
+  "emotion": "hoffnung"
+ },
+ "2d01b6da29f6b2d4": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Angebot Stärken",
+  "emotion": "neugier"
+ },
+ "3d4296c3a46770c4": {
+  "form": "sonstiges",
+  "angle": "identitaet",
+  "stufe": 4,
+  "konkret": false,
+  "thema": "Frauen empowern",
+  "emotion": "stolz"
+ },
+ "ac5c615b6d39c65b": {
+  "form": "beweis",
+  "angle": "vergleich",
+  "stufe": 3,
+  "konkret": true,
+  "thema": "Stundensatz Millionen",
+  "emotion": "hoffnung"
+ },
+ "4e013f9f22ec1ae5": {
+  "form": "beweis",
+  "angle": "beweis",
+  "stufe": 4,
+  "konkret": true,
+  "thema": "Erster Launch",
+  "emotion": "hoffnung"
+ },
+ "224165f5526f1b0a": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 2,
+  "konkret": false,
+  "thema": "Ausreden Glück",
+  "emotion": "scham"
+ },
+ "42727ace674bf202": {
+  "form": "du-szene",
+  "angle": "schmerz",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Posting Disziplin",
+  "emotion": "scham"
+ },
+ "6e8912f2781d6a63": {
+  "form": "zitat",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Anfangen",
+  "emotion": "hoffnung"
+ },
+ "4f4fd892094ac5b7": {
+  "form": "meinung",
+  "angle": "vergleich",
+  "stufe": 2,
+  "konkret": true,
+  "thema": "Ziele Neujahrsvorsätze",
+  "emotion": "neugier"
+ },
+ "91c63daffaf5bad9": {
+  "form": "bekenntnis",
+  "angle": "identitaet",
+  "stufe": 1,
+  "konkret": false,
+  "thema": "Geld verdienen",
+  "emotion": "stolz"
+ },
+ "bbf23c991a564d56": {
+  "form": "meinung",
+  "angle": "kontraer",
+  "stufe": 3,
+  "konkret": false,
+  "thema": "Weiterbildung Lizenz",
+  "emotion": "neugier"
  }
 }
