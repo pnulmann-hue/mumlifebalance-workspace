@@ -1,0 +1,57 @@
+name: Apify Tiefen-Abruf (Nischen-Analyse)
+
+# Einmaliger Abruf der letzten ~200 Beiträge je Konto für die Hook-Maschine.
+# Startet beim Push dieser Datei (so lässt er sich ohne GitHub-UI auslösen) und
+# per Hand über "Run workflow". Freigegeben von Patricia am 04.10.2026 (~2–3 Franken).
+# Für einen neuen Abruf: HANDLES unten ändern und pushen, oder in der UI eingeben.
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/apify-tiefe.yml']
+  workflow_dispatch:
+    inputs:
+      handles:
+        description: 'Komma-separierte IG-Handles'
+        required: false
+        type: string
+      limit:
+        description: 'Beiträge je Konto'
+        required: false
+        default: '200'
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apify-tiefe
+  cancel-in-progress: false
+
+jobs:
+  tiefe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Tiefen-Abruf
+        working-directory: scripts/apify
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          HANDLES: ${{ inputs.handles || 'juliatrost.official,reichweitenherz,nikoleta.kolokytha' }}
+          LIMIT: ${{ inputs.limit || '200' }}
+        run: node scrape-tiefe.js
+      - name: Ergebnis committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outputs/apify-runs/
+          if git diff --staged --quiet; then
+            echo "Nichts Neues."
+          else
+            git commit -m "apify: Tiefen-Abruf $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi
