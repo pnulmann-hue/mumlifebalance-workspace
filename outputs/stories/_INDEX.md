@@ -9,6 +9,7 @@ Auto-Index aller Files in `outputs/stories/`. Siehe [[_MOCs/MOC-Content-Engine]]
 ## Dateien
 
 - [[2026-04-26-wandern-beide-profile]]
+- [[2026-10-05-secret-offer-mentoring-ki-kurs/briefing|2026-10-05-secret-offer-mentoring-ki-kurs]]
 - [[manus-prompt-mama-ceo-webinar]]
 - 📘 [[README]]
 
