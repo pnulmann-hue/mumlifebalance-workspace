@@ -40,10 +40,11 @@ wird ab der zweiten Stelle geschnitten und der Anfang verworfen.
 - Der Vorlauf am Anfang, bis zum **ersten Wort des Hooks** (Kamera richten, Luft holen, „so, okay")
 - Versprecher und abgebrochene Satzanfänge
 - Alle Anläufe eines Satzes ausser dem letzten vollständigen (siehe oben)
-- Pausen, die länger als **1,5 Sekunden** sind
+- Pausen über **0,3 Sekunden** werden auf 0,3 s gekürzt (Jenyas Regel, seit 06.10.2026 — vorher flogen erst Löcher über 1,5 s raus)
 - Räuspern, Husten, „ähm", „also ähm"
 - Alles nach meinem Schlusssatz (der CTA ist das Ende, danach kommt nichts mehr)
-- [Meine typischen Füllwörter — ergänze ich nach dem ersten Durchgang]
+- Füllwörter: „ähm“, „also ähm“, **„genau“ als Einzelwort**, **„okay“ am Satzanfang** (Jenyas Vorlage — ich ergänze meine eigenen)
+- 🚨 Whisper lässt „ähm“ oft ganz weg. Dann steht es nicht im Transkript, ist aber hörbar — es sitzt in einer Lücke zwischen zwei Wörtern, und die Pausen-Regel oben kürzt es mit.
 
 ---
 
@@ -53,8 +54,8 @@ wird ab der zweiten Stelle geschnitten und der Anfang verworfen.
   Der ist vorher geschrieben und geübt. Nie glattziehen, nie kürzen, nie „verbessern".
 - Der **Keyword-CTA am Schluss** („Kommentier mir …") — vollständig, inklusive
   des Keywords. Keywords stehen in `context/patricia-freebies.md`.
-- **Kurze Denkpausen mitten im Satz** — die gehören zu meiner Art zu reden.
-  Nur echte Löcher (> 1,5 s) fliegen raus.
+- **„also“, „eigentlich“, „nämlich“ mitten im Satz** — das gehört zu meiner Art zu reden.
+- Kurze Denkpausen mitten im Satz bis 0,3 s.
 - Meine Umgangssprache und der Schweizer Einschlag. Nichts hochdeutsch machen.
 - [Fester Satz, der die Reihe benennt — falls ich sowas einführe]
 
@@ -62,19 +63,17 @@ wird ab der zweiten Stelle geschnitten und der Anfang verworfen.
 
 ## 4 · Wie eng geschnitten wird
 
-- **250 ms** Luft vor jedem Satzanfang
-- **150 ms** Luft nach jedem Satzende
+- **120 ms** Luft vor dem ersten Wort einer Passage
+- **350 ms** Luft nach dem letzten Wort
+  (Jenyas Werte, seit 06.10.2026. Vorher 250 / 150 ms — hinten zu knapp, das schnitt Endsilben ab.)
 - **Nie mitten in ein Wort schneiden.** Immer an der Wortgrenze aus `words.json`.
 - Lieber ein Atemzug zu viel als ein Video, das gehetzt klingt. Gehetzt ist der
   häufigste Anfängerfehler.
 - **Fehlt am Satzende eine Endsilbe, lieber 0,5 s Luft nach** statt 150 ms
   (Jenyas Regel — eine verschluckte Silbe klingt schlimmer als eine halbe Sekunde Ruhe).
 
-> 📎 **Zum Vergleich, nicht übernommen:** Jenya arbeitet mit 0,12 s vor und
-> 0,35 s nach dem Satz und kürzt **jede** Pause über 0,3 s auf 0,3 s — deutlich
-> enger als hier (250 / 150 ms, Pausen erst ab 1,5 s raus). Ob das für mich
-> passt, entscheiden meine CapCut-Korrekturen (`capcut-projekt.py vergleichen`),
-> nicht ihre Zahl.
+> Ob die Werte für meine Stimme stimmen, zeigen meine CapCut-Korrekturen
+> (`capcut-projekt.py vergleichen`) — dann wird hier nachgezogen.
 
 ---
 
@@ -166,7 +165,7 @@ Patricias Marke ist **Philosopher + Source Sans 3**, und daran wird nicht gerüt
 - [ ] Kommt jeder Satz **genau einmal** vor?
 - [ ] Ergibt der Text von oben nach unten gelesen einen Ablauf **ohne Sprung**?
 - [ ] Ist der CTA am Schluss vollständig, inklusive Keyword?
-- [ ] Klingt kein Übergang gehetzt (250 ms Luft überall eingehalten)?
+- [ ] Klingt kein Übergang gehetzt, und ist keine Endsilbe abgeschnitten?
 - [ ] Ist der Rohschnitt kürzer als das Rohmaterial, aber nicht kürzer als der Inhalt hergibt?
 
 Fällt einer dieser Punkte durch, wird nachgebessert **bevor** ich es sehe —
