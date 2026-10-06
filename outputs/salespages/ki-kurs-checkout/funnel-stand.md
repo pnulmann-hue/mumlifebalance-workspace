@@ -145,6 +145,59 @@ steht bei Upsell und Downsell als Kurs `None`.
 
 ---
 
+## Die Nachkauf-Strecke — und warum keine neue Maschine gebaut wird
+
+**Automation 85 „KI Kurs"** ist eine Kopie der Startklar-Automation: sie enthält
+noch deren sieben Mails (Kampagnen 821–827), steht auf **inaktiv** und hat
+`entered=0`. Deshalb ist nie eine Startklar-Mail an eine KI-Käuferin gegangen.
+
+**Mail 0 ist geschrieben:** `scripts/ki-kurs/mails-bauen.py` → Willkommen, der
+1. November, die beiden Call-Termine, die Telegram-Gruppe. Das Gerüst wird aus
+`scripts/startklar/mails-bauen.py` **importiert**, nicht kopiert.
+
+🚨 **Kein Zugangslink und kein Preis in Mail 0.** Die Rechnung schickt
+ThriveCart selbst, den Kursbereich gibt es erst am 1. November. Der einzige
+Klick ist die Gruppe — sie überbrückt die bis zu vier Wochen bis zum Start.
+
+🚨 **Der Einladungslink steht in `scripts/ki-kurs/.env`,** und die Ausgabe unter
+`outputs/produkte/ki-kurs/mails/` ist gitignored. Ein Einladungslink zu einer
+**bezahlten** Gruppe ist funktional ein Zugangsschlüssel; das Repo ist public.
+
+### Die Engine gibt es schon — falsch ist nur der Einstieg
+
+Die Frage war, ob eine neue Serie gebaut werden soll, in der alle
+Signature-Käuferinnen laufen, bis sie die MBA oder einen anderen Kurs kaufen.
+**Genau das ist Automation 72 → Loop 2…7**, alle aktiv:
+
+| Loop | Automation | pitcht | Ausstiegs-Goals |
+|---|---|---|---|
+| 1 | 72 „Automation 0€ Produkt" | Finde dein Thema **39** | MBA gekauft · Thema gekauft |
+| 2 | 75 | Webinar → **MBA** | MBA gekauft |
+| 3 | 73 | Expertin **97** | hat sie schon · MBA gekauft |
+| 4 | 76 | Digitale Produktwelt **333** | hat sie schon · MBA gekauft |
+| 5 | 77 | Mama-CEO **333** | hat sie schon · MBA gekauft |
+| 6 | 78 | Instagram-Kundenmaschine **333** | hat sie schon · MBA gekauft |
+| 7 | 79 | MBA Re-Pitch **997** | MBA gekauft |
+
+Jeder Loop überspringt sich selbst, wenn das Produkt schon da ist, und endet
+beim MBA. Eine zweite Serie daneben wäre dieselbe Maschine doppelt — und zwei
+Serien, die beide pitchen, laufen beim nächsten Umbau auseinander.
+
+🚨 **Tag 87 „Automation 0€ Produkt" führt in Loop 1 — und Loop 1 verkauft
+„Finde dein Thema" für 39 an jemanden, der gerade 277 bezahlt hat.** Das ist
+derselbe Abstiegs-Fehler, der bei der Startklar-Strecke schon einmal vermieden
+wurde. Für Signature-Käuferinnen ist der richtige Einstieg **Loop 2** (der
+MBA-Pitch über das Webinar), mit Abstand nach dem zweiten Call.
+
+⚠️ **Ungeprüft:** worauf die Goals „MBA gekauft" genau schauen. Die v3-API gibt
+Segment-Bedingungen nicht heraus (404 auf `segments/<id>/conditions`). Es gibt
+den Tag **79 `mba-kauf`**, und genau den setzen der neue Upsell und Downsell —
+das muss aber **im Browser** gegengeprüft werden, bevor die Strecke scharf
+geht. Sonst bekommt eine Kundin, die den MBA gerade im Upsell gekauft hat,
+Wochen später die MBA-Pitch-Serie.
+
+---
+
 ## 🔗 Verwandte Notizen
 
 - [[ki-kurs-checkout-texte]]
