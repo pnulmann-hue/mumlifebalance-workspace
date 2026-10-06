@@ -21,7 +21,9 @@ kann, steht beim Stil dabei — dann ist es ein Bau-Auftrag und keine Vorgabe.
 Diese Datei ist Jenyas **`stil.md`**: jeder Baustein mit Namen und Zweck, damit ein
 Briefing nur noch den Namen braucht. Bauen, prüfen, rendern:
 `python scripts/grafik/vorschau.py <projekt> [--stellen | --pruefen | --rendern]`.
-Vor dem Bau **immer** die Varianten als Standbild zeigen und wählen lassen.
+**Vorgabe: Stil B** — Hook B + Untertitel B (Patricia, 06.10.2026: „klar Stil B“).
+Text-Oberkante bei 56 % der Bildhöhe, also unter dem Kinn. Varianten nur noch zeigen,
+wenn sie einen anderen Look will. Gesicht und Bildrand prüft das Werkzeug vor jedem Render selbst.
 
 | Name | Variante | Aussehen | Bewegung | Ton |
 |---|---|---|---|---|
