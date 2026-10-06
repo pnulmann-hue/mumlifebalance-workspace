@@ -40,6 +40,7 @@ Auto-Index aller Files in `outputs/reels/`. Siehe [[_MOCs/MOC-Content-Engine]] f
 - [[2026-08-28-story-challenge-reels]]
 - [[2026-09-doterra-drehliste-kw38-40]]
 - [[2026-09-drehkarte-doterra]]
+- [[2026-10-06-ki-launch-mikroebene]]
 - [[2026-KW17-doterra-hot-take-salat-reicht-nicht]]
 - [[2026-KW17-doterra-koerper-schreit]]
 - [[2026-KW17-doterra-pov-7-min-abendroutine]]
