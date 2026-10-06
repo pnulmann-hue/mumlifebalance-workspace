@@ -16,6 +16,33 @@ kann, steht beim Stil dabei — dann ist es ein Bau-Auftrag und keine Vorgabe.
 
 ---
 
+## 0 · Die Remotion-Bausteine in `scripts/grafik/` (seit 06.10.2026)
+
+Diese Datei ist Jenyas **`stil.md`**: jeder Baustein mit Namen und Zweck, damit ein
+Briefing nur noch den Namen braucht. Bauen, prüfen, rendern:
+`python scripts/grafik/vorschau.py <projekt> [--stellen | --pruefen | --rendern]`.
+Vor dem Bau **immer** die Varianten als Standbild zeigen und wählen lassen.
+
+| Name | Variante | Aussehen | Bewegung | Ton |
+|---|---|---|---|---|
+| **Hook** | A · Zwei Schriften | Philosopher kursiv fein, darunter Source Sans Black gross, creme mit Schatten | fein gleitet hoch, kräftig federt 6 Bilder später nach | keiner (oder `klick`) |
+| | B · Kelsie, Wort für Wort | fein kursiv, darunter jedes Wort einzeln, Verlauf creme → orange im Buchstaben | Wörter kommen im 5-Bilder-Takt | keiner |
+| | C · Balken | fein auf dunklem Balken, Aussage auf Creme-Balken mit dunkelblauer Schrift (Story-Stil) | beide Balken poppen auf | keiner |
+| **Untertitel** | A · Zwei Schriften | Seiten bis zwei Zeilen, betonte Wörter Source Sans Black orange | kurzer Pop je Seite | — |
+| | B · Aktives Wort | 2–3 Wörter Source Sans Bold, das gerade gesprochene leuchtet orange | Leuchten wandert mit | — |
+| | C · Balken | 3–4 Wörter auf dunklem, halbdurchsichtigem Balken | kurzer Pop | — |
+| **Knallwort** | — | ein Wort Source Sans Black orange, darunter kleine Zeile oder bis 3 Schilder | federt auf, atmet leicht | `pop` |
+| **Karte** | — | freigegebene Kundenstimme auf Creme-Karte, Petrol-Kante, leicht gekippt | fährt von der Seite herein | `whoosh` |
+| **Clipfolge** | — | Material, jeder zweite Abschnitt mit Zoom-Fahrt 1 → 1.06 | harter Schnitt | — |
+| **Look** | — | Farbkorrektur, Korn 5 %, Vignette | Korn flimmert | — |
+
+Gemeinsam: Text mittig (Gesicht oben frei), Schweizer ss automatisch, ein langes Wort
+macht die Schrift kleiner statt zu zerbrechen, Untertitel pausieren bei Einblendungen.
+**Noch nicht in Remotion:** Kelsie-Wort *hinter* Patricia (Freistellung), Marker-Hook und
+Serif-Mix für B-Roll — die laufen weiter über `textebene.py`.
+
+---
+
 ## 1 · Kelsie-Textebene ✅ gebaut
 
 Der Stil, den Patricias Mentorin vorgegeben hat. Für Talking Heads mit einem
