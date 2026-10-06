@@ -109,12 +109,13 @@ umbenennen nicht nötig. Gesetzt werden sie automatisch von `scripts/grafik/` (`
 | Wann | Ton | Datei-Wort |
 |---|---|---|
 | etwas **Neues** erscheint: Wort, Einblendung, Animation | **Pop** | `pop` |
-| **Anfang** des Videos, wenn es Sinn ergibt | **Dramatic YouTube Intro** | `intro` |
-| **Überschriften** — während der Hook sich aufbaut | **Typing** | `typing` / `keyboard` |
+| **Anfang** — wenn der Hook erscheint | **Dramatic YouTube Intro** | `intro` |
+| Text, der **sichtbar Buchstabe für Buchstabe geschrieben** wird | **Typing** | `typing` / `keyboard` |
 | **Übergänge** zwischen Clips, Wörtern, Animationen | **Short Whoosh** | `woosh` / `whoosh` |
 
-- **Intro „wenn es Sinn ergibt"** heisst gemessen: nur wenn ich in der **ersten Sekunde
-  noch nicht spreche**. Sonst übertönt es meine ersten Worte (erster Test: 9 dB über der Stimme).
+- **Das Intro kommt zum Hook** (Patricia: *„tiping passt ja nur, wenn was neu geschrieben
+  wird“*), leise unter der Stimme (erster Test: 9 dB darüber, jetzt gedämpft).
+  Typing nur bei echter Schreibmaschinen-Animation.
 - **Untertitel bekommen keinen Pop** — ein Ton alle 0,3 s wäre Dauerrauschen.
 - **Whoosh sparsam** (Patricia: *„etwas zu viele whooshs“*): höchstens **einer alle 8 s**, und
   keiner, wenn in 2 s Abstand schon ein anderer Ton liegt. Im Test-Reel: 7 → 3.
