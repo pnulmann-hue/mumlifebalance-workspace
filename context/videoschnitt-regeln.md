@@ -28,6 +28,11 @@ Sonderfall: Wenn *keiner* der Anläufe vollständig ist, kommt der letzte in die
 Schnittliste und wird dort als `⚠ kein vollständiger Take` markiert — dann
 entscheide ich.
 
+**Neuanlauf nach einer Pause** (aus Jenyas Kurs, Okt. 2026): Setze ich einen Satz
+nach einer kurzen Pause neu an, ist das ein **neuer Anlauf, kein Satz mit Pause**.
+Kehren dieselben ersten Wörter innerhalb einer Passage ein zweites Mal wieder,
+wird ab der zweiten Stelle geschnitten und der Anfang verworfen.
+
 ---
 
 ## 2 · Was immer rausfliegt
@@ -62,6 +67,27 @@ entscheide ich.
 - **Nie mitten in ein Wort schneiden.** Immer an der Wortgrenze aus `words.json`.
 - Lieber ein Atemzug zu viel als ein Video, das gehetzt klingt. Gehetzt ist der
   häufigste Anfängerfehler.
+- **Fehlt am Satzende eine Endsilbe, lieber 0,5 s Luft nach** statt 150 ms
+  (Jenyas Regel — eine verschluckte Silbe klingt schlimmer als eine halbe Sekunde Ruhe).
+
+> 📎 **Zum Vergleich, nicht übernommen:** Jenya arbeitet mit 0,12 s vor und
+> 0,35 s nach dem Satz und kürzt **jede** Pause über 0,3 s auf 0,3 s — deutlich
+> enger als hier (250 / 150 ms, Pausen erst ab 1,5 s raus). Ob das für mich
+> passt, entscheiden meine CapCut-Korrekturen (`capcut-projekt.py vergleichen`),
+> nicht ihre Zahl.
+
+---
+
+## 4a · Wörter, die Whisper falsch hört
+
+Steht im Transkript eines dieser Wörter, ist das rechte gemeint — im Untertitel
+und in der Schnittliste wird es korrigiert:
+
+| Whisper schreibt | gemeint ist |
+|---|---|
+| Cloud | Claude |
+| ß | ss (Schweizer Schreibweise) |
+| [ergänze ich, sobald mir ein Wort zweimal auffällt — z.B. doTERRA, Produktnamen, Keywords] | |
 
 ---
 
@@ -164,6 +190,14 @@ nicht danach.
 **In den Chat sage ich nur, was ich mir beim nächsten Video sparen will** —
 also alles, was ich zum dritten Mal von Hand korrigiere. Das wandert dann als
 Regel hier hinein.
+
+**Seit Okt. 2026 muss ich es gar nicht mehr sagen** (Jenyas Lern-Schleife):
+Claude legt den Rohschnitt als CapCut-Projekt an, ich ziehe die Kanten, beende
+CapCut, und Claude liest meine Änderungen aus der Projektdatei
+(`scripts/videoschnitt/capcut-projekt.py vergleichen`). **Eine Regel entsteht
+erst, wenn dieselbe Art Änderung mindestens zweimal vorkommt** — einmal ist
+Geschmack bei diesem einen Video. Und **eingetragen wird erst, wenn ich den
+Vorschlag bestätigt habe.** Nach rund zehn Videos sitzt es.
 
 Einmalige Kleinigkeiten korrigiere ich selbst in CapCut. Das geht schneller,
 als sie zu erklären. Genau deshalb lasse ich mir die Einzelclips geben und kein
