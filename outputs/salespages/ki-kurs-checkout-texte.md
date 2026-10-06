@@ -47,7 +47,7 @@ ThriveCart-Tipp: Product description / Subtitle
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Der Kurs, in dem du deiner KI einmal beibringst, wer du bist — und sie es behält.
-Zehn Module, Start am 1. November, zwei Monate mit mir.
+Zehn Module, Start am 1. November. Zwei Live-Calls, und eine Gruppe, die bleibt.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 BLOCK 3: Überschrift der Kassenseite
@@ -77,10 +77,12 @@ Fertige Aufträge zum Einsetzen, mit einem ausgeschriebenen Beispiel an jedem Fe
 Gerüst für deinen Arbeitsplatz, deine Helfer und deine eigene Übersicht.
 Aufgebaut, nur ohne deine Sachen.
 
-Zwei Monate in einer Gruppe, in der du jede Frage stellen kannst. Ich bin die,
-die antwortet.
+Eine Telegram-Gruppe, in der du jede Frage stellen kannst. Dienstags und
+donnerstags beantworte ich dort alles — ich selbst. Die Gruppe bleibt auch,
+wenn die Calls vorbei sind.
 
-Zweimal treffen wir uns in diesen zwei Monaten live.
+Zwei Live-Calls: Donnerstag, 19. November und Donnerstag, 10. Dezember, jeweils
+abends. Beide werden aufgezeichnet.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 BLOCK 5: Statt einer Garantie
@@ -93,8 +95,9 @@ Ich gebe keine Geld-zurück-Garantie, und ich sage dir auch warum: Was du hier
 baust, nimmst du mit, sobald du es einmal gebaut hast. Das kann ich nicht
 zurückholen.
 
-Dafür bin ich zwei Monate erreichbar. Wenn du hängst, schreibst du in die Gruppe,
-und du bekommst eine Antwort von mir — nicht von einem Team.
+Dafür bin ich in der Gruppe erreichbar, dienstags und donnerstags. Wenn du hängst,
+schreibst du dort, und du bekommst eine Antwort von mir — und nicht von einem Team.
+Die Gruppe bleibt auch, wenn die zwei Calls vorbei sind.
 
 Und wenn du später die Mum Business Academy buchst, rechne ich dir an, was du
 heute bezahlst. Voll, nicht anteilig. Du zahlst nichts zweimal.
@@ -111,12 +114,17 @@ mitmachen.
 
 **Wann muss ich Zeit haben?**
 Die Module schaust du, wann es dir passt — sie laufen nicht weg. Nach Modul 2 hast
-du schon etwas, das bleibt. Die zwei Live-Treffen liegen in den zwei Monaten nach
-dem Start, die Termine bekommst du in der Gruppe.
+du schon etwas, das bleibt. Die zwei Live-Calls sind am 19. November und am
+10. Dezember, jeweils abends.
+
+**An den Call-Abenden kann ich nicht.**
+Beide Calls werden aufgezeichnet. Schick deine Frage vorher in die Gruppe, dann
+beantworte ich sie im Call — auch wenn du nicht dabei bist.
 
 **Was, wenn ich allein nicht weiterkomme?**
-Genau dafür sind die zwei Monate da. Du schreibst in die Gruppe, und ich antworte
-selbst. Das ist der Teil, den es bei meinen anderen Kursen so nicht gibt.
+Genau dafür ist die Gruppe da. Du schreibst dort, und ich antworte selbst —
+dienstags und donnerstags. Das ist der Teil, den es bei meinen anderen Kursen
+so nicht gibt.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 BLOCK 7: Der Knopf
@@ -182,8 +190,8 @@ Wenn du vorher schon eine Frage hast, schreib mir. Ich antworte selbst.
 ## Was Patricia noch ergänzen oder entscheiden muss
 
 1. **Der Produktname** — siehe oben. Eine Entscheidung, fünf Minuten.
-2. **Die zwei Live-Termine.** Überall steht „zweimal in den zwei Monaten" ohne Datum.
-   Mit Datum ist es ein Versprechen, ohne eine Absicht.
+2. ~~Die zwei Live-Termine~~ — **erledigt am 06.10.** Do 19. November und
+   Do 10. Dezember, beide aufgezeichnet. Standen schon auf der Verkaufsseite.
 3. **Der Preiswechsel am 16. Oktober.** In ThriveCart hängt an Produkt 52 genau EIN
    Preis: 277. Am 16. Oktober muss dort 333 stehen, sonst verkauft die Kasse weiter
    zum Früh-Preis. Das passiert nicht von selbst.
