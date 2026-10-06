@@ -15,3 +15,5 @@ Auto-Index aller Files in `outputs/salespages/`. Siehe [[_MOCs/MOC-Produkte-Funn
 - [[produkt-ideen-finder-landingpage]]
 - [[startklar-salespage]]
 - [[von-nebenbei-zu-business-salespage]]
+- [[ki-kurs-checkout/funnel-stand]]
+- [[ki-kurs-checkout/textbloecke]]
