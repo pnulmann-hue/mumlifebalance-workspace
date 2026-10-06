@@ -33,10 +33,14 @@ wenn sie einen anderen Look will. Gesicht und Bildrand prüft das Werkzeug vor j
 | **Untertitel** | A · Zwei Schriften | Seiten bis zwei Zeilen, betonte Wörter Source Sans Black orange | kurzer Pop je Seite | — |
 | | B · Aktives Wort | 2–3 Wörter Source Sans Bold, das gerade gesprochene leuchtet orange | Leuchten wandert mit | — |
 | | C · Balken | 3–4 Wörter auf dunklem, halbdurchsichtigem Balken | kurzer Pop | — |
-| **Knallwort** | — | ein Wort Source Sans Black orange, darunter kleine Zeile oder bis 3 Schilder | federt auf, atmet leicht | `pop` |
-| **Karte** | — | freigegebene Kundenstimme auf Creme-Karte, Petrol-Kante, leicht gekippt | fährt von der Seite herein | `whoosh` |
+| **Knallwort** | — | ein Wort Source Sans Black orange, darunter kleine Zeile oder bis 3 Schilder | federt auf, atmet leicht | Pop |
+| **Karte** | — | freigegebene Kundenstimme auf Creme-Karte, Petrol-Kante, leicht gekippt | fährt von der Seite herein | Pop |
 | **Clipfolge** | — | Material, jeder zweite Abschnitt mit Zoom-Fahrt 1 → 1.06 | harter Schnitt | — |
 | **Look** | — | Farbkorrektur, Korn 5 %, Vignette | Korn flimmert | — |
+
+**Töne** (Patricia 06.10.2026): Pop bei allem Neuen · Typing während der Hook sich aufbaut ·
+Whoosh an jedem Clip-Wechsel · Intro nur, wenn die erste Sekunde ohne Sprache ist.
+Die Regeln stehen in `context/videoschnitt-regeln.md`, Abschnitt „Meine Töne“.
 
 Gemeinsam: Text mittig (Gesicht oben frei), Schweizer ss automatisch, ein langes Wort
 macht die Schrift kleiner statt zu zerbrechen, Untertitel pausieren bei Einblendungen.

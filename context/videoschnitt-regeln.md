@@ -101,7 +101,27 @@ Unsere Sounds baut `textebene.py` selbst mit ffmpeg, damit keine Lizenzfrage ent
 darüber.** Wenn ein Ton nicht sagen kann, zu welchem sichtbaren Ereignis er gehört,
 gehört er nicht ins Video.
 
-### Wann welcher Ton
+### 🎧 Meine Töne (Patricia, 06.10.2026) — gilt vor der Tabelle darunter
+
+Die Klänge liegen in `video/sounds/` (meine Downloads, Pixabay). Erkannt am Dateinamen,
+umbenennen nicht nötig. Gesetzt werden sie automatisch von `scripts/grafik/` (`toeneBauen`).
+
+| Wann | Ton | Datei-Wort |
+|---|---|---|
+| etwas **Neues** erscheint: Wort, Einblendung, Animation | **Pop** | `pop` |
+| **Anfang** des Videos, wenn es Sinn ergibt | **Dramatic YouTube Intro** | `intro` |
+| **Überschriften** — während der Hook sich aufbaut | **Typing** | `typing` / `keyboard` |
+| **Übergänge** zwischen Clips, Wörtern, Animationen | **Short Whoosh** | `woosh` / `whoosh` |
+
+- **Intro „wenn es Sinn ergibt"** heisst gemessen: nur wenn ich in der **ersten Sekunde
+  noch nicht spreche**. Sonst übertönt es meine ersten Worte (erster Test: 9 dB über der Stimme).
+- **Untertitel bekommen keinen Pop** — ein Ton alle 0,3 s wäre Dauerrauschen.
+- **Ein Whoosh fällt weg**, wenn innerhalb 1,2 s schon ein anderer Ton liegt.
+- **Lautstärke:** Effekte sitzen 2–6 dB **unter** meiner Stimme (Spitze −13 dB).
+  Ist mir etwas zu laut oder leise, ändert Claude die Tabelle `LAUT` in
+  `scripts/grafik/src/bausteine/Ton.tsx`, nicht das einzelne Reel.
+
+### Wann welcher Ton (Ursprungs-Tabelle, für textebene.py / B-Roll-Altbestand)
 
 | Was im Bild passiert | Ton | Wie er klingt |
 |---|---|---|
