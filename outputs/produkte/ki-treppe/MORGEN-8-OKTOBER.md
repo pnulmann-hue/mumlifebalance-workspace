@@ -32,8 +32,20 @@ Geprüft am 07.10.: die übrigen 13 Launch-Mails (798–809, 784–796) sind sau
 
 ## Danach — die Werbeanzeige fertig bauen
 
-Entschieden am 07.10.: Beworben wird die **Aufzeichnung**, nicht der Stimm-Check.
-Das war der Plan von Anfang an.
+**Plattform: Meta** (Entscheid 07.10.) — Patricia: *„damit habe ich eigentlich etwas
+mehr erfahrung"*. Das wiegt schwerer als der bessere Kontext-Fit von ChatGPT-Ads: auf
+einer bekannten Plattform sieht sie selbst, wenn etwas schiefläuft, und das
+OpenAI-Konto hatte noch nie eine Kampagne (Setup- und Prüfrisiko).
+
+**Ziel: die Aufzeichnung**, sobald sie da ist. Der Stimm-Check kann als zweites
+Ad-Set daneben laufen — seine b-Strecke (Automation 83) ist auf Wartezeiten gebaut
+und damit anzeigentauglich.
+
+⚠️ **Stand Stimm-Check, damit die Erwartung stimmt:** Tag 105 hat nach elf Tagen
+**1 Kontakt**. Zum Vergleich: Bio-Check 9, KI-Webinar 6, Story-Challenge 4. Er war
+allerdings nur in zwei Beiträgen überhaupt erwähnt — die Zahl sagt also wenig über
+das Angebot und viel über die Bewerbung. Und: KI ist bei Meta ein **schwaches
+Hook-Thema (0,91)**, darum darf der Einstieg nicht bei der Technik liegen.
 
 | Schritt | Aufwand | Stand |
 |---|---|---|
