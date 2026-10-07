@@ -71,7 +71,7 @@ Patricia bekommt das meiste als **Sprachnachricht**. Der einfachste Weg:
 | **Quelle** | Sprachnachrichten, 29.09.2026 |
 | **Freigabe** | offen |
 | **Passt zu** | **KI-Launch Oktober** (Masterclass Do 8.10., KI-Kurs Claude Code): Beweis, dass eine Networkerin ohne Technik-Hintergrund es mit einer Anleitung selbst einrichtet. Dazu das Motiv „Da geht so viel mehr“ und der Wechsel von „KI wie Google“ zu „KI, die mitarbeitet“ |
-| **Schon verwendet** | — |
+| **Schon verwendet** | 07.10.2026: KI-Launch-Story Do 8.10. (anonym, als Zusammenfassung ohne Anführungszeichen) |
 
 **Für einen Beitrag fehlt noch:** was sie „fertig“ gemacht hat (Captions? Freebie? Salespage?) · wie lange es vorher gedauert hat · ob sie technisch eher unsicher ist · Freigabe.
 
@@ -87,7 +87,7 @@ Patricia bekommt das meiste als **Sprachnachricht**. Der einfachste Weg:
 | **Quelle** | schriftliche Nachricht der Kundin, von Patricia im Interview D1 (03.10.2026) hineinkopiert. Wortlaut, keine Nacherzählung |
 | **Freigabe** | offen → bis dahin **nur anonym**, ohne erkennbare Details |
 | **Passt zu** | **MBA** (Kaufgrund: Gemeinschaft + Calls + „nicht allein"), **Säule 2** („Geht das für mich?"), Einwand „ich hab schon so viel probiert" (*„nochmals weiterzugehen und noch nicht aufzugeben"*) |
-| **Schon verwendet** | — |
+| **Schon verwendet** | 07.10.2026: KI-Launch-Story Di 20.10. (anonym, nur der Vertrauens-Satz) |
 
 **Die drei Kaufgründe in ihren Worten:** 1. *„jetzt oder nie"* · 2. *Vertrauen, weil Patricia „aus eigenen Erfahrungen spricht"* und in derselben Lage ist (mehrere Kinder, Network, Selbständigkeit) · 3. *„ins Tun kommen"* mit Gruppe und Calls, *„nicht alles alleine"*.
 **Für einen Beitrag fehlt noch:** Freigabe · ein erstes Ergebnis aus der MBA.

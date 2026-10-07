@@ -4,7 +4,7 @@ tags: [content, story, mentoring, launch, ki-kurs]
 
 # KI-Launch-Storys Oktober 2026 — komplett ausgeschrieben
 
-Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/entwuerfe`). Patricia postet einen Tag versetzt: Mi 7.10. = Secret Offer endet, Do 8.10. = Masterclass + Verkaufsstart.
+Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/entwuerfe`). Patricia postet einen Tag versetzt: Mi 7.10. = Secret Offer endet, Do 8.10. = Masterclass + Verkaufsstart. Kundenstimmen aus `context/kundinnen-geschichten.md` (Kundin A/B anonym) und `outputs/produkte/mba-launch/testimonials/zitate-uebersicht.md` (freigegeben).
 
 ## 2026-10-05 · Mo · KI-Launch · Secret Offer geht auf
 
@@ -85,18 +85,20 @@ Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/
    *Ehrlich, das ist keine Hilfe, das ist eine zweite Baustelle neben Kindern, Haushalt und Business.*
 10. Bei mir läuft das seit Monaten anders. Meine KI kennt mein Business, meine Stimme und meine Kundinnen.
    *Weil all das an einem Ort liegt, den sie jedes Mal selbst liest, bevor sie für mich arbeitet. Ich schau drüber und gebe frei, fertig.*
-11. **Das richtest du dir im Kurs ein** · ✨ deinen eigenen KI-Arbeitsplatz mit deinem Wissen drin  
+11. **Aus meinen DMs** · Vor ein paar Tagen hat mir eine Kundin eine Sprachnachricht geschickt, und ich hab mich so gefreut.
+   *Sie hat sich Claude mit meiner Anleitung selbst eingerichtet, war danach so schnell mit ihrer Arbeit fertig wie noch nie und hat jetzt tausend Ideen, was sie noch alles umsetzen will 🥹*
+12. **Das richtest du dir im Kurs ein** · ✨ deinen eigenen KI-Arbeitsplatz mit deinem Wissen drin  
    ✨ deinen ersten eigenen Skill für eine Arbeit, die du jede Woche machst  
    ✨ einen Bot, der von selbst für dich läuft
    *Ohne Programmieren und ohne schwarzes Fenster, alles Schritt für Schritt gezeigt.*
-12. Und das Beste kommt am Schluss: Du schaust mir über die Schulter, wie bei mir alles zusammenhängt.
+13. Und das Beste kommt am Schluss: Du schaust mir über die Schulter, wie bei mir alles zusammenhängt.
    *Vom Wochenplan am Freitagmorgen bis zum fertigen Post, mit vier Kindern und 18 Stunden pro Woche. Also ganz bestimmt kein Labor-Setup 😅*
-13. Du fragst dich, ob das auch was für dich ist, obwohl du keine Technikerin bist?
+14. Du fragst dich, ob das auch was für dich ist, obwohl du keine Technikerin bist?
    *Ich bin auch keine. Genau deshalb gibt es die Telegram-Gruppe, in der ich dienstags und donnerstags jede Frage beantworte, und zwei Live-Calls, in denen wir alles zusammen anschauen.*
-14. **Die wichtigsten Infos** · Frühbucherpreis: 277 statt 333 CHF, bis 15. Oktober.
+15. **Die wichtigsten Infos** · Frühbucherpreis: 277 statt 333 CHF, bis 15. Oktober.
    *Ab 2. November kommen die Kapitel Schritt für Schritt. Und wer bis Samstagabend um neun dabei ist, sitzt im Januar zusätzlich beim Bonus-Call mit mir 👇  
    Bist du in der MBA? Dann hast du den Kurs schon gratis 💛*
-15. Du hast das Live verpasst?
+16. Du hast das Live verpasst?
    *Die Aufzeichnung kommt heute um 16 Uhr per Mail. Noch nicht angemeldet? Hier geht's lang 👇*
 
 ## 2026-10-09 · Fr · KI-Launch · Was gestern passiert ist
@@ -111,13 +113,15 @@ Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/
    *Dafür sind Skills da: Du sagst ihr einmal, wie eine Arbeit geht, und ab dann macht sie es jede Woche gleich gut.*
 4. 3. Du bleibst die Chefin.
    *Die KI bereitet vor, du schaust drüber, entscheidest und gibst den letzten Schliff. Beziehung, Stimme und Entscheidungen bleiben bei dir.*
-5. Wenn du jetzt denkst „Das will ich auch, aber wie richte ich das bei mir ein?“, dann ist genau das der Kurs.
+5. **Eure Worte, nicht meine 😄** · „Wow, ich habe jetzt die Produkttreppe mit Claude Code erarbeitet und ich bin echt sprachlos, aber positiv.“
+   *„Wenn ich das jetzt wirklich alles umsetze, dann wird das sowas von mega genial.“ — Kundin*
+6. Wenn du jetzt denkst „Das will ich auch, aber wie richte ich das bei mir ein?“, dann ist genau das der Kurs.
    *Easy KI für Networkerinnen: dein Arbeitsplatz, dein erster eigener Skill und ein Bot, der von selbst läuft. Schritt für Schritt, ab 2. November.*
-6. Die Aufzeichnung hast du gestern per Mail bekommen.
+7. Die Aufzeichnung hast du gestern per Mail bekommen.
    *Nicht angemeldet? Schreib mir „KI“, dann schick ich dir den Link.*
-7. Und jetzt das, was nur noch bis morgen gilt:
+8. Und jetzt das, was nur noch bis morgen gilt:
    *Wer bis Samstagabend um neun einsteigt, ist zusätzlich beim Bonus-Call im Januar dabei, wenn du alles in Ruhe ausprobiert hast.*
-8. Frühbucherpreis 277 statt 333 CHF
+9. Frühbucherpreis 277 statt 333 CHF
    *Alle Infos hinter dem Link 👇  
    Bist du in der MBA? Dann hast du den Kurs schon gratis 💛*
 
@@ -231,9 +235,11 @@ Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/
    *Du startest im Chat, den du kennst. Installiert wird erst in Modul 4, über die Desktop-App, ohne schwarzes Fenster. Und wenn du hängst, frag in der Telegram-Gruppe, ich antworte dienstags und donnerstags.*
 4. **„Ich hab keine Zeit“** · Genau deshalb gibt's den Kurs.
    *Die Lektionen dauern 8 bis 15 Minuten, und alles, was du einrichtest, nimmt dir danach jede Woche Arbeit ab. Das ist Zeit, die du einmal investierst und dann immer wieder zurückbekommst.*
-5. Und falls dein Gedanke ein ganz anderer ist:
+5. **Eure Worte, nicht meine** · „Deine Erklärungen sind wertvoll, leicht verständlich und gut umsetzbar.“ — Miriam
+   *Genau so bau ich auch diesen Kurs: Schritt für Schritt, am Bildschirm gezeigt, ohne Fachchinesisch.*
+6. Und falls dein Gedanke ein ganz anderer ist:
    *Schreib ihn mir in die DMs. Ich sag dir ehrlich, ob der Kurs zu dir passt oder nicht.*
-6. Nur noch heute 277 statt 333 CHF
+7. Nur noch heute 277 statt 333 CHF
    *Alle Infos 👇  
    Bist du in der MBA? Dann hast du den Kurs schon gratis 💛*
 
@@ -303,9 +309,11 @@ Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/
    *Wenn du jeden Text umbaust, jede Woche wieder erklärst, wer du bist, und denkst „Irgendwie müsste das doch einfacher gehen“.*
 5. Dann bekommst du einen Arbeitsplatz mit deinem Wissen, deinen ersten eigenen Skill und einen Bot, der von selbst läuft.
    *Und ab der ersten Woche weniger Abende am Handy.*
-6. Unsicher, ob er zu dir passt?
+6. **Eure Worte, nicht meine** · „Den Kurs von Patricia kann ich wärmstens empfehlen. Ich habe viel über mich gelernt und meine Strategie komplett überarbeitet.“
+   *„Und ich bin nach dem Kurs weiter dran, das neue Wissen umzusetzen.“ — Susanne*
+7. Unsicher, ob er zu dir passt?
    *Schreib mir, ich sag's dir ehrlich.*
-7. Noch bis Freitag um Mitternacht
+8. Noch bis Freitag um Mitternacht
    *Alle Infos 👇  
    Bist du in der MBA? Dann hast du den Kurs schon gratis 💛*
 
@@ -323,7 +331,11 @@ Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/
    *Schule, Termine, Ämtli der Kinder. Damit der Mental Load nicht nur in meinem Kopf liegt.*
 5. Über 13 solche Helfer hab ich mir selbst gebaut, ohne Programmiererin zu sein.
    *Und im Kurs zeig ich dir, wie du deinen ersten eigenen baust, passend zu deinem Alltag.*
-6. Noch drei Tage bis Kassenschluss
+6. **Warum Frauen bei mir buchen** · „Das Vertrauen in dich, weil du aus deinen eigenen Erfahrungen sprichst und in einer ähnlichen Situation bist wie ich: mehrere Kinder, Network, eigene Selbständigkeit.“
+   *Das hat mir eine Kundin geschrieben, als sie die MBA gebucht hat. Und genau so ist es: Ich zeig dir nichts, was ich nicht selbst jeden Tag lebe 💛*
+7. **Eure Worte, nicht meine 😄** · „Wow, ich habe jetzt die Produkttreppe mit Claude Code erarbeitet und ich bin echt sprachlos, aber positiv.“
+   *„Wenn ich das jetzt wirklich alles umsetze, dann wird das sowas von mega genial.“ — Kundin*
+8. Noch drei Tage bis Kassenschluss
    *Alle Infos 👇  
    Bist du in der MBA? Dann hast du den Kurs schon gratis 💛*
 
@@ -362,9 +374,11 @@ Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/
    *Und zwei Live-Calls für alle, am 19. November und am 10. Dezember.*
 4. **Was am Ende steht** · Ein Arbeitsplatz mit deinem Wissen, dein erster eigener Skill und ein Bot, der von selbst läuft.
    *Und du kaufst später die MBA? Dann wird dir angerechnet, was du jetzt zahlst.*
-5. Was hält dich noch zurück?
+5. **Eure Worte, nicht meine** · „Es war nicht immer einfach. Trotzdem habe ich weitergemacht.“
+   *„Meine Storyviews sind gestiegen und der Austausch mit meiner Community wurde spürbar intensiver, weil ich mich mehr gezeigt habe.“ — Andrea, über meine Story-Challenge*
+6. Was hält dich noch zurück?
    *Schreib's mir, ich beantworte heute jede Frage.*
-6. 333 CHF, nur noch bis morgen Nacht
+7. 333 CHF, nur noch bis morgen Nacht
    *Alle Infos 👇  
    Bist du in der MBA? Dann hast du den Kurs schon gratis 💛*
 
