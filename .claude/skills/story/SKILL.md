@@ -51,6 +51,22 @@ Ausserhalb des Launch-Fensters (oder wenn kein JSON-Eintrag für heute): normale
 
 ---
 
+## 🚨 Ablage in Cockpit + Bild-Editor: NUR fertig ausgeschriebene Storys (Patricia, 07.10.2026)
+
+Patricia: „Ich will, dass der Workflow die Storys fix fertig mit Storytelling, Brücke zum Angebot und allem komplett ausschreibt.“ Am 07.10. lagen alle 26 KI-Launch-Storys nur als 3–5-Satz-Gerüste im Cockpit („✏️ Ferienalltag …“) — das darf nie wieder passieren.
+
+**Regeln für jede Story, die in Cockpit oder Bild-Editor landet:**
+1. **Komplett ausgeschrieben** nach dem passenden Julia-Baustein (`context/julia-launch-story-bausteine.md` + Original `reference/julia-trost/Transkripte Videocalls/Vorlagen Story LML.txt`). Julias Aufbau und Formulierungen **so nah wie möglich übernehmen** (Julia sagt selbst: exakt kopieren) — nur Produkt, Zahlen und Alltag sind Patricias. Typisch 6–9 Folien, Sales-/Masterclass-Tag bis 15.
+2. **Keine ✏️-Platzhalter als Folie.** Wenn ein echter Moment fehlt, trotzdem einen fertigen, wahren Satz schreiben und im Regie-Feld vermerken, dass ein eigenes Foto/Video darunter passt.
+3. **Sticker-/Link-Anweisungen NIE in Folientext, `unter` oder Cockpit-`cta`** — das Cockpit malt `cta` als Pille AUF die Folie, der Bild-Editor macht aus `unter` einen Balken. Anweisungen gehören ins Cockpit-Feld `kommentarAntwort` („Regie — …“) und ins Bild-Editor-Feld `cta` (Info-Box).
+4. **Beide Ablagen schreiben:** Cockpit (`storys/<id>`: `frames[{id,layout,text,cta:"",optA,optB}]`, `updatedAt` = jetzt, sonst gewinnt eine alte Browser-Kopie) UND Bild-Editor (`daten/entwuerfe` → Eintrag mit `folien[{eyebrow?,text,unter}]`, `cta` = Regie). Die beiden Datenbanken sind NICHT verbunden.
+5. **Fakten nur aus Plan/Preis-Dateien** (z.B. `outputs/produkte/<slug>/06-preis-validierung.md`, `07-launch-kalender.md`) — Boni/Preise vor dem Schreiben gegen den neuesten Entscheid prüfen. Keine erfundenen DMs, Käuferinnen-Zahlen oder Kundenstimmen.
+6. **Patricias tatsächlicher Takt zählt:** Wenn sie einen Tag versetzt postet, Storys nach ihrem echten Ablauf umbauen (fixe Termine wie Masterclass bleiben fix).
+
+Volle Launch-Texte KI-Kurs Okt 2026 als Referenz: `outputs/stories/2026-10-ki-launch-storys.md`.
+
+---
+
 ## Story-Pflicht-Aufbau (Julia-Style, nicht verhandelbar)
 
 Jede Sequenz hat:
