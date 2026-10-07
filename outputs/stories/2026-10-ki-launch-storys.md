@@ -119,9 +119,11 @@ Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/
    *Easy KI für Networkerinnen: dein Arbeitsplatz, dein erster eigener Skill und ein Bot, der von selbst läuft. Schritt für Schritt, ab 2. November.*
 7. Die Aufzeichnung hast du gestern per Mail bekommen.
    *Nicht angemeldet? Schreib mir „KI“, dann schick ich dir den Link.*
-8. Und jetzt das, was nur noch bis morgen gilt:
+8. **Eure Worte, nicht meine 💜** · „Ich habe die Aufzeichnungen immer nachgeschaut, weil ich nicht live dabei sein konnte.“
+   *„Aber der Kurs zusammen mit den Aufzeichnungen und den Tipps und Prompts haben mir schon so, so viel weitergeholfen. Danke tausend!“ — eine Kundin aus Mama-CEO*
+9. Und jetzt das, was nur noch bis morgen gilt:
    *Wer bis Samstagabend um neun einsteigt, ist zusätzlich beim Bonus-Call im Januar dabei, wenn du alles in Ruhe ausprobiert hast.*
-9. Frühbucherpreis 277 statt 333 CHF
+10. Frühbucherpreis 277 statt 333 CHF
    *Alle Infos hinter dem Link 👇  
    Bist du in der MBA? Dann hast du den Kurs schon gratis 💛*
 
@@ -133,11 +135,14 @@ Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/
    *Trotzdem sind heute Morgen meine Storys vorbereitet gewesen, und der Wochenplan für Montag steht auch schon.*
 2. Das ist für mich der grösste Unterschied zu früher:
    *Ich muss nicht mehr wählen zwischen „Business läuft“ und „ich bin wirklich bei den Kindern“. Beides geht, weil die Vorarbeit nicht mehr an mir hängt.*
-3. Genau das richtest du dir im Kurs ein, und zwar so, dass es zu deinem Business und deiner Stimme passt.
+3. **Eure Worte, nicht meine 💜** · „3 Wochen Ferien-Content vorproduziert.“ — eine Kundin  
+   „Die Contentarbeit entspannt mich, nimmt mega viel Kopfarbeit weg.“ — eine Kundin
+   *Genau das wünsch ich dir auch: Ferien, in denen das Business weiterläuft, ohne dass du abends noch am Handy sitzt.*
+4. Genau das richtest du dir im Kurs ein, und zwar so, dass es zu deinem Business und deiner Stimme passt.
    *Dein Arbeitsplatz mit deinem Wissen drin, dein erster eigener Skill und ein Bot, der von selbst läuft.*
-4. Heute Abend um neun endet der Bonus.
+5. Heute Abend um neun endet der Bonus.
    *Wer bis dann dabei ist, sitzt im Januar zusätzlich beim Bonus-Call mit mir, wenn du alles in Ruhe ausprobiert hast. Danach gibt's ihn nicht mehr.*
-5. Frühbucherpreis 277 CHF, Bonus nur bis 21 Uhr
+6. Frühbucherpreis 277 CHF, Bonus nur bis 21 Uhr
    *Hier geht's zum Kurs 👇  
    Bist du in der MBA? Dann hast du den Kurs schon gratis 💛*
 
