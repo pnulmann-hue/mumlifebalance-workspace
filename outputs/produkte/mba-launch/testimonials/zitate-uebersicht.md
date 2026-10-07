@@ -4,6 +4,8 @@ tags: [produkt, mba, testimonials, zitate, intern]
 
 # MBA — Zitat-Übersicht nach Sparten (zum Rauspicken)
 
+> ✅ **07.10.2026: Patricia — alle Feedbacks sind freigegeben** (inkl. Irene, Kundin A/B aus `context/kundinnen-geschichten.md`). Ausnahme bleibt Nadja (keine Angabe im Formular), bis Patricia es anders sagt. **In Storys/Posts KEINE Namen einsetzen** (Patricia: „die braucht es nicht“) — immer „eine Kundin“.
+>
 > Zusammengestellt 2026-07-03 aus deinen echten Testimonials (IKM-Feedbackformulare + WhatsApp/Instagram/Telegram-Screenshots + Insights).
 > **„Zitieren reicht"** — hier nur Text, keine Bilder. Nachnamen weggelassen (nur Vorname). Erlaubnis: Susanne + Miriam schriftlich freigegeben; Rest von dir am 1.7.2026 freigegeben; **Nadja = KEINE Freigabe → nur intern**.
 > Leicht getrimmt für die Verwendung (Füllwörter/… raus), Aussage unverändert.

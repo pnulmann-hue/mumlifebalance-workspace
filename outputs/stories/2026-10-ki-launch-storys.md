@@ -240,7 +240,7 @@ Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/
    *Du startest im Chat, den du kennst. Installiert wird erst in Modul 4, über die Desktop-App, ohne schwarzes Fenster. Und wenn du hängst, frag in der Telegram-Gruppe, ich antworte dienstags und donnerstags.*
 4. **„Ich hab keine Zeit“** · Genau deshalb gibt's den Kurs.
    *Die Lektionen dauern 8 bis 15 Minuten, und alles, was du einrichtest, nimmt dir danach jede Woche Arbeit ab. Das ist Zeit, die du einmal investierst und dann immer wieder zurückbekommst.*
-5. **Eure Worte, nicht meine** · „Deine Erklärungen sind wertvoll, leicht verständlich und gut umsetzbar.“ — Miriam
+5. **Eure Worte, nicht meine** · „Deine Erklärungen sind wertvoll, leicht verständlich und gut umsetzbar.“ — eine Kundin
    *Genau so bau ich auch diesen Kurs: Schritt für Schritt, am Bildschirm gezeigt, ohne Fachchinesisch.*
 6. Und falls dein Gedanke ein ganz anderer ist:
    *Schreib ihn mir in die DMs. Ich sag dir ehrlich, ob der Kurs zu dir passt oder nicht.*
@@ -315,7 +315,7 @@ Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/
 5. Dann bekommst du einen Arbeitsplatz mit deinem Wissen, deinen ersten eigenen Skill und einen Bot, der von selbst läuft.
    *Und ab der ersten Woche weniger Abende am Handy.*
 6. **Eure Worte, nicht meine** · „Den Kurs von Patricia kann ich wärmstens empfehlen. Ich habe viel über mich gelernt und meine Strategie komplett überarbeitet.“
-   *„Und ich bin nach dem Kurs weiter dran, das neue Wissen umzusetzen.“ — Susanne*
+   *„Und ich bin nach dem Kurs weiter dran, das neue Wissen umzusetzen.“ — eine Kundin*
 7. Unsicher, ob er zu dir passt?
    *Schreib mir, ich sag's dir ehrlich.*
 8. Noch bis Freitag um Mitternacht
@@ -380,7 +380,7 @@ Stand 07.10.2026. Identisch mit Cockpit (`storys/<id>`) und Bild-Editor (`daten/
 4. **Was am Ende steht** · Ein Arbeitsplatz mit deinem Wissen, dein erster eigener Skill und ein Bot, der von selbst läuft.
    *Und du kaufst später die MBA? Dann wird dir angerechnet, was du jetzt zahlst.*
 5. **Eure Worte, nicht meine** · „Es war nicht immer einfach. Trotzdem habe ich weitergemacht.“
-   *„Meine Storyviews sind gestiegen und der Austausch mit meiner Community wurde spürbar intensiver, weil ich mich mehr gezeigt habe.“ — Andrea, über meine Story-Challenge*
+   *„Meine Storyviews sind gestiegen und der Austausch mit meiner Community wurde spürbar intensiver, weil ich mich mehr gezeigt habe.“ — eine Kundin über meine Story-Challenge*
 6. Was hält dich noch zurück?
    *Schreib's mir, ich beantworte heute jede Frage.*
 7. 333 CHF, nur noch bis morgen Nacht
