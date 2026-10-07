@@ -14,3 +14,4 @@ Auto-Index aller Files in `outputs/ads/`. Siehe [[_MOCs/MOC-Produkte-Funnels]] f
 - [[2026-09-04-chatgpt-ads-storyideen]]
 - [[2026-09-04-kontext-finder-storyideen]]
 - [[chatgpt-ads-storyideen-state]]
+- [[facebook-ads-stimm-check-2026-10-07]]
