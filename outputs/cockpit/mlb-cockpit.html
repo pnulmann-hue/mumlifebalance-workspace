@@ -4834,12 +4834,12 @@
     { id: "produkte", label: "Produkte", saeule: "Produkte",
       tabs: ["katalog", "produkte", "links", "funnel", "mailings", "leads", "kurse"] },
     { id: "mamaceo", label: "Mama-CEO", saeule: "Mama-CEO",
-      tabs: ["aufgaben", "launches", "monatsbogen", "wochenbogen", "ziele", "zahlen", "rangtracker", "team"] },
+      tabs: ["aufgaben", "erledigt", "launches", "monatsbogen", "wochenbogen", "ziele", "zahlen", "rangtracker", "team"] },
     { id: "ki", label: "KI", saeule: "KI", tabs: ["pia", "wissen", "suche"] }
   ];
   /* Kuerzere Namen fuer die Unterleiste — die Bereichs-Pille sagt schon,
      wo man ist. */
-  var UNTERNAME = { pia: "PIA & Team", produkte: "Meine Notizen", rangtracker: "doTERRA-Rang", team: "doTERRA-Team",
+  var UNTERNAME = { erledigt: "Erledigt", pia: "PIA & Team", produkte: "Meine Notizen", rangtracker: "doTERRA-Rang", team: "doTERRA-Team",
                     launches: "Jahresplan", mailings: "Listen & Automationen" };
   var bereichLetzter = {};
   try { bereichLetzter = JSON.parse(localStorage.getItem("mlb:bereich-letzter") || "{}") || {}; } catch (e) {}
@@ -5467,8 +5467,15 @@
     gruppe("Überfällig", ueber, true, 5);
     gruppe("Heute", heuteL, false);
     gruppe("Später oder ohne Datum", spaeter, false, 6);
-    gruppe("Zuletzt erledigt", fertig, false);
-    if (!offen.length && !fertig.length) box.innerHTML = '<div class="ti-leer">Nichts offen.</div>';
+    if (!offen.length) box.innerHTML = '<div class="ti-leer">Nichts offen.</div>';
+    var nErl = hier.filter(function (a) { return a.erledigt; }).length;
+    if (nErl) {
+      var zuErl = document.createElement("button");
+      zuErl.className = "ti-btn"; zuErl.style.marginTop = "10px";
+      zuErl.textContent = nErl + " erledigt — ansehen";
+      zuErl.onclick = function () { activeTab = "erledigt"; erlFilter = tiAfBereich; render(); };
+      box.appendChild(zuErl);
+    }
 
     var f = document.createElement("form");
     f.className = "ti-form";
@@ -9352,6 +9359,83 @@
     else main.appendChild(box);
   }
 
+  /* =========================================================
+     Reiter „Erledigt" (08.10.2026) — siehe Kopf von patch-erledigt.py.
+     ========================================================= */
+  var erlFilter = "alle";
+
+  function renderErledigt(main) {
+    var alle = ((aufgaben && aufgaben.items) || []).filter(function (a) { return a.erledigt; });
+    var zahl = { alle: alle.length, Business: 0, Privat: 0 };
+    alle.forEach(function (a) { zahl[tiBereich(a)]++; });
+    var liste = alle.filter(function (a) {
+      return erlFilter === "alle" || tiBereich(a) === erlFilter;
+    }).sort(function (a, b) {
+      return (a.erledigt_am || "") > (b.erledigt_am || "") ? -1 : 1;
+    });
+
+    var heute = tiIso(new Date());
+    var gestern = new Date(); gestern.setDate(gestern.getDate() - 1);
+    var gestIso = tiIso(gestern);
+    function wann(iso) {
+      if (!iso) return "ohne Datum";
+      if (iso === heute) return "Heute";
+      if (iso === gestIso) return "Gestern";
+      return tiTagLang(iso);
+    }
+
+    main.innerHTML =
+      '<div class="page-head"><div><h1>Erledigt</h1>' +
+      '<p>Was du abgehakt hast, nach Tag. Haken wieder weg nehmen schiebt die ' +
+      'Aufgabe zurück zu den offenen.</p></div></div>' +
+      '<div class="ti-seg">' + [["alle", "Alle"], ["Business", "Business"], ["Privat", "Privat"]]
+        .map(function (k) {
+          return '<button data-e="' + k[0] + '" aria-pressed="' + (k[0] === erlFilter) + '">' +
+            k[1] + '<span class="n">' + zahl[k[0]] + '</span></button>';
+        }).join("") + '</div>' +
+      '<div class="panel" id="erl-liste"></div>';
+    Array.prototype.forEach.call(main.querySelectorAll("[data-e]"), function (b) {
+      b.onclick = function () { erlFilter = b.getAttribute("data-e"); render(); };
+    });
+
+    var box = main.querySelector("#erl-liste");
+    if (!liste.length) {
+      box.innerHTML = '<div class="ti-leer">Hier ist noch nichts. Hak auf dem Tisch oder unter ' +
+        'Aufgaben etwas ab, dann landet es hier.</div>';
+      return;
+    }
+    var letzte = null;
+    liste.forEach(function (a) {
+      var tag = a.erledigt_am || "";
+      if (tag !== letzte) {
+        letzte = tag;
+        var g = document.createElement("div");
+        g.className = "ti-gruppe";
+        g.innerHTML = "<span>" + esc(wann(tag)) + "</span>";
+        box.appendChild(g);
+      }
+      var z = document.createElement("div");
+      z.className = "ti-af fertig";
+      var cb = document.createElement("input");
+      cb.type = "checkbox"; cb.checked = true; cb.title = "zurück zu den offenen";
+      cb.onchange = function () {
+        a.erledigt = false; a.erledigt_am = ""; a.erledigt_grund = "";
+        tiAfSpeichern();
+        toast("Zurück bei den offenen Aufgaben.");
+        render();
+      };
+      var r = document.createElement("div");
+      var meta = '<span class="ti-mini">' + esc(tiBereich(a)) + '</span>';
+      if (a.fuerClaude) meta += '<span class="ti-mini hoch">für Claude</span>';
+      else if (a.quelle === "PIA") meta += '<span class="ti-mini">von PIA</span>';
+      if (a.erledigt_grund === "hinfaellig") meta += '<span class="ti-mini">hinfällig</span>';
+      r.innerHTML = '<div class="txt">' + esc(a.aufgabe || "(ohne Text)") + '</div>' +
+        '<div class="meta">' + meta + '</div>';
+      z.appendChild(cb); z.appendChild(r);
+      box.appendChild(z);
+    });
+  }
+
   function renderAufgaben(main) {
     if (!aufgaben || !(aufgaben.items || []).length) {
       main.innerHTML =
@@ -9376,7 +9460,6 @@
       '<div class="head-actions"><select class="btn" id="affilter">' +
         '<option value="offen">Nur offene</option>' +
         '<option value="faellig">Nur überfällige</option>' +
-        '<option value="alle">Alle</option>' +
       '</select><button class="btn primary" id="afneu">Aufgabe anlegen</button>' +
       '</div></div>' +
       '<div class="tiles">' +
@@ -9391,7 +9474,7 @@
              return a.befund === "erledigt" || a.befund === "hinfaellig";
            }).length,
            "mit Beleg — bestätigen") +
-      tile("Erledigt", fertig.length, "bleiben stehen") +
+      tile("Erledigt", fertig.length, "stehen im Reiter Erledigt") +
       '</div>' +
       '<div class="panel"><div class="afkopf">' +
         '<span></span><span>Aufgabe</span><span>Priorität</span>' +
@@ -9403,8 +9486,7 @@
     f.value = afFilter;
     f.onchange = function () { afFilter = f.value; render(); };
 
-    var zeigen = afFilter === "alle" ? alle
-      : (afFilter === "faellig" ? faellig : offen);
+    var zeigen = afFilter === "faellig" ? faellig : offen;
     // Überfällig zuerst, dann nach Datum. Erledigte ganz unten.
     zeigen = zeigen.slice().sort(function (x, y) {
       if (!!x.erledigt !== !!y.erledigt) return x.erledigt ? 1 : -1;
@@ -12730,6 +12812,7 @@
       catch (e) { console.error(e); main.classList.remove("ti-main"); renderUebersicht(main); }
     }
     else if (activeTab === "pia") renderPiaSeite(main);
+    else if (activeTab === "erledigt") renderErledigt(main);
     else if (activeTab === "studio") renderStudio(main);
     else if (activeTab === "storys") renderStorys(main);
     else if (activeTab === "reels") renderReels(main);
