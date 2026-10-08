@@ -1808,6 +1808,26 @@
   }
   /* Breite Tabellen (Projekte, Steuer) wischen statt die Seite zu sprengen. */
   .card { overflow-x: auto; }
+
+  /* ---------- Offene Chats (08.10.2026) ---------- */
+  .oc-box { margin: 0 0 22px; }
+  .oc-kopf { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 6px; }
+  .oc-kopf h2 { margin: 0; }
+  .oc-kopf .ti-seg { margin: 0 0 0 auto; }
+  .oc-karte { border-top: 1px solid var(--line); padding: 12px 0; display: grid; gap: 4px; }
+  .oc-karte:first-of-type { border-top: 0; }
+  .oc-titel { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+  .oc-titel b { font-family: var(--display); font-weight: 400; font-size: 16px; }
+  .oc-text { font-size: 13px; color: var(--ink-soft); margin: 0; }
+  .oc-text strong { color: var(--ink); font-weight: 600; }
+  .oc-schritt { font-size: 13.5px; margin: 2px 0 0; }
+  .oc-schritt::before { content: "\2192  "; color: var(--orange); font-weight: 700; }
+  .ti-hinweis {
+    display: block; width: 100%; text-align: left; margin: 0 0 10px; cursor: pointer;
+    background: var(--orange-soft); color: var(--ink); border: 0; border-radius: 10px;
+    padding: 8px 11px; font: inherit; font-size: 12.5px;
+  }
+  .ti-hinweis b { color: var(--orange); }
 </style>
 
 <div class="shell">
@@ -5196,8 +5216,6 @@
     });
     var afOffen = ((aufgaben && aufgaben.items) || []).filter(function (a) { return !a.erledigt; });
     var faellig = afOffen.filter(function (a) { return a.datum && a.datum < heute; }).length;
-    var jahr = String(jetzt.getFullYear());
-    var st = steuer && steuer.jahre ? steuer.jahre.filter(function (x) { return x.jahr === jahr; })[0] : null;
 
     var stunde = jetzt.getHours();
     var gruss = stunde < 11 ? "Guten Morgen" : (stunde < 18 ? "Hallo" : "Guten Abend");
@@ -5212,8 +5230,8 @@
           '<button class="ti-zahl" data-gehe="fertig"><b>' + raus.length + '</b>kann raus</button>' +
           '<button class="ti-zahl du" data-gehe="woche"><b>' + deins + '</b>wartet auf dich</button>' +
           '<button class="ti-zahl" data-gehe="aufgaben"><b>' + faellig + '</b>überfällig</button>' +
-          (st ? '<button class="ti-zahl" data-gehe="zahlen"><b>' +
-                Math.round(st.einnahmen / 400) + ' %</b>von 40\'000</button>' : '') +
+          // 🚨 Kein Umsatz auf der Startseite (Patricia, 08.10.2026): sie zeigt
+          // das Cockpit Kundinnen. Umsatz steht unter Mama-CEO → Zahlen.
         '</div></header>' +
         '<div class="ti-grid">' +
           '<section class="ti-spalte"><div class="ti-karte" id="ti-pia"></div></section>' +
@@ -5386,6 +5404,10 @@
         return '<button data-b="' + k + '" aria-pressed="' + (k === tiAfBereich) + '">' + k +
                '<span class="n">' + zahl[k] + '</span></button>';
       }).join("") + '</div></div><div id="ti-afl"></div>';
+    el.querySelector(".ti-kartekopf").insertAdjacentHTML("afterend", ocHinweis());
+    Array.prototype.forEach.call(el.querySelectorAll("[data-gehe]"), function (b) {
+      b.onclick = function () { activeTab = b.getAttribute("data-gehe"); render(); };
+    });
     Array.prototype.forEach.call(el.querySelectorAll("[data-b]"), function (b) {
       b.onclick = function () { tiAfBereich = b.getAttribute("data-b"); render(); };
     });
@@ -9171,6 +9193,129 @@
     main.appendChild(f);
   }
 
+  /* =========================================================
+     Offene Chats (08.10.2026) — siehe Kopf von patch-offene-chats.py.
+     ========================================================= */
+  var offeneChats = null;        // daten/offene-chats — Status gehoert PATRICIA
+  var ocFilter = "offen";
+  var OC_GRUPPEN = [
+    { k: "offen", l: "Offen", st: ["offen"] },
+    { k: "idee", l: "Nur Idee", st: ["idee"] },
+    { k: "aufgabe", l: "Übernommen", st: ["aufgabe"] },
+    { k: "weg", l: "Erledigt & verworfen", st: ["erledigt", "verworfen"] }
+  ];
+
+  function ocSpeichern() {
+    offeneChats.updatedAt = new Date().toISOString();
+    lsSet("offene-chats", offeneChats);
+    clearTimeout(saveTimers.offeneChats);
+    saveTimers.offeneChats = setTimeout(function () {
+      if (!db) { setSaveState("lokal gespeichert", "off"); return; }
+      db.doc("daten/offene-chats").set(offeneChats)
+        .then(function () { setSaveState("gespeichert", "on"); })
+        .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
+    }, 500);
+  }
+
+  function ocOffenZahl() {
+    return ((offeneChats && offeneChats.items) || []).filter(function (c) {
+      return c.status === "offen";
+    }).length;
+  }
+
+  /* Die Zeile auf dem Tisch — ein Hinweis, kein zweiter Ort zum Abarbeiten. */
+  function ocHinweis() {
+    var n = ocOffenZahl();
+    return n ? '<button class="ti-hinweis" data-gehe="aufgaben"><b>' + n +
+      ' Chats</b> mit offenen Punkten — unter Aufgaben ansehen</button>' : "";
+  }
+
+  function ocBlock(main) {
+    var alle = (offeneChats && offeneChats.items) || [];
+    if (!alle.length) return;
+    var gruppe = OC_GRUPPEN.filter(function (g) { return g.k === ocFilter; })[0] || OC_GRUPPEN[0];
+    var RANG = { hoch: 0, mittel: 1, tief: 2 };
+    var liste = alle.filter(function (c) { return gruppe.st.indexOf(c.status) >= 0; })
+      .sort(function (a, b) {
+        var r = (RANG[a.wichtig] || 1) - (RANG[b.wichtig] || 1);
+        return r || ((a.zuletzt || "") < (b.zuletzt || "") ? 1 : -1);
+      });
+
+    var box = document.createElement("div");
+    box.className = "panel oc-box";
+    box.innerHTML = '<div class="oc-kopf"><h2>Angefangen, nicht fertig</h2>' +
+      '<span class="note">aus deinen Chats · Stand ' + esc(fmtDate(offeneChats.stand || "")) + '</span>' +
+      '<div class="ti-seg">' + OC_GRUPPEN.map(function (g) {
+        var n = alle.filter(function (c) { return g.st.indexOf(c.status) >= 0; }).length;
+        return '<button data-oc="' + g.k + '" aria-pressed="' + (g.k === gruppe.k) + '">' +
+          esc(g.l) + '<span class="n">' + n + '</span></button>';
+      }).join("") + '</div></div>' +
+      '<p class="note" style="margin:0 0 6px">Wichtiges zuerst. „Als Aufgabe übernehmen“ legt den ' +
+      'nächsten Schritt in deine Aufgaben — der Chat bleibt hier als „übernommen“ stehen.</p>' +
+      '<div class="oc-liste"></div>';
+    Array.prototype.forEach.call(box.querySelectorAll("[data-oc]"), function (b) {
+      b.onclick = function () { ocFilter = b.getAttribute("data-oc"); render(); };
+    });
+
+    var l = box.querySelector(".oc-liste");
+    if (!liste.length) l.innerHTML = '<div class="ti-leer">Nichts in dieser Gruppe.</div>';
+    liste.forEach(function (c) {
+      var k = document.createElement("div");
+      k.className = "oc-karte";
+      k.innerHTML =
+        '<div class="oc-titel"><b>' + esc(c.titel) + '</b>' +
+          '<span class="ti-mini">' + esc(c.bereich || "") + '</span>' +
+          (c.wichtig === "hoch" ? '<span class="ti-mini hoch">wichtig</span>' : "") +
+          '<span class="ti-klein">zuletzt ' + esc(fmtDate(c.zuletzt)) + '</span></div>' +
+        (c.worum ? '<p class="oc-text">' + esc(c.worum) + '</p>' : "") +
+        (c.stand ? '<p class="oc-text"><strong>Fertig:</strong> ' + esc(c.stand) + '</p>' : "") +
+        (c.offen ? '<p class="oc-text"><strong>Offen:</strong> ' + esc(c.offen) + '</p>' : "") +
+        (c.naechster ? '<p class="oc-schritt">' + esc(c.naechster) + '</p>' : "") +
+        '<div class="ti-knoepfe"></div>';
+      var kn = k.querySelector(".ti-knoepfe");
+      function knopf(text, art, tun) {
+        var b = document.createElement("button");
+        b.className = "ti-btn" + (art ? " " + art : "");
+        b.textContent = text;
+        b.onclick = tun;
+        kn.appendChild(b);
+      }
+      if (c.status === "offen" || c.status === "idee") {
+        knopf("Als Aufgabe übernehmen", "voll", function () {
+          tiAufgabeNeu({ text: c.naechster || c.titel,
+                         bereich: c.bereich === "Privat" ? "Privat" : "Business",
+                         notiz: "Aus dem Chat „" + c.titel + "“" + (c.offen ? ": " + c.offen : ""),
+                         quelle: "Chat" });
+          c.status = "aufgabe"; c.entschieden = todayISO();
+          ocSpeichern(); toast("Liegt jetzt in deinen Aufgaben."); render();
+        });
+        knopf("Ist erledigt", "", function () {
+          c.status = "erledigt"; c.entschieden = todayISO(); ocSpeichern(); render();
+        });
+        knopf("Verwerfen", "orange", function () {
+          c.status = "verworfen"; c.entschieden = todayISO(); ocSpeichern(); render();
+        });
+      } else {
+        knopf("Zurückholen", "", function () {
+          c.status = "offen"; c.entschieden = ""; ocSpeichern(); render();
+        });
+      }
+      // Zurueck in den Chat. Ein echter Link — window.open() ist im
+      // Artifact-Rahmen lautlos blockiert.
+      if (c.link) {
+        var a = document.createElement("a");
+        a.className = "ti-btn"; a.href = c.link; a.target = "_blank"; a.rel = "noopener";
+        a.textContent = "Im Chat weitermachen";
+        kn.appendChild(a);
+      }
+      l.appendChild(k);
+    });
+
+    var tiles = main.querySelector(".tiles");
+    if (tiles && tiles.parentNode) tiles.parentNode.insertBefore(box, tiles.nextSibling);
+    else main.appendChild(box);
+  }
+
   function renderAufgaben(main) {
     if (!aufgaben || !(aufgaben.items || []).length) {
       main.innerHTML =
@@ -9247,6 +9392,7 @@
     };
 
     projekteBlock(main);
+    ocBlock(main);
   }
 
   /* =========================================================
@@ -12616,6 +12762,7 @@
   stimmen = lsGet("stimmen", null);
   aufgaben = lsGet("aufgaben", null);
   termine = lsGet("termine", null);
+  offeneChats = lsGet("offene-chats", null);
   zieleD = lsGet("ziele", null);
   reichweite = lsGet("reichweite", null);
   wochenbogenNotizen = lsGet("wochenbogen-notizen", {}) || {};
@@ -12794,6 +12941,14 @@
         zieleD = snap.data() || null;
         lsSet("ziele", zieleD);
         if (activeTab === "ziele") render();
+      }, function () {});
+      db.doc("daten/offene-chats").onSnapshot(function (snap) {
+        if (!snap.exists) return;
+        var d0 = snap.data() || {};
+        if (offeneChats && offeneChats.updatedAt && (!d0.updatedAt || d0.updatedAt < offeneChats.updatedAt)) return;
+        offeneChats = d0;
+        lsSet("offene-chats", offeneChats);
+        if (activeTab === "aufgaben" || activeTab === "uebersicht") render();
       }, function () {});
       db.doc("daten/termine").onSnapshot(function (snap) {
         if (!snap.exists) return;
