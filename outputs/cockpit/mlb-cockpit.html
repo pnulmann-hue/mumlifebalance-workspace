@@ -2420,6 +2420,7 @@
         name: car.name, brand: car.brand, handle: car.handle,
         typ: car.typ || "listicle", funnel: car.funnel || "TOF",
         datum: car.datum || "", profil: car.profil || "",
+        hinweis: car.hinweis || "",
         kommentar: car.kommentar || "", kommentarStand: car.kommentarStand || "",
         kommentarErledigt: car.kommentarErledigt || "",
         kommentarAntwort: car.kommentarAntwort || "",
@@ -14207,7 +14208,7 @@
         state.karussells.forEach(function (c) { seen[c.id] = c; });
         qs.docs.forEach(function (doc) {
           var d0 = tief(doc.data()) || {};
-          var car = { id: doc.id, datum: d0.datum || "", name: d0.name || "Karussell", brand: d0.brand || "mlb_dark", handle: d0.handle || "", typ: d0.typ || "listicle", funnel: d0.funnel || "TOF", textfrei: !!d0.textfrei, blotato: d0.blotato || null, abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", caption: d0.caption || "", slides: d0.slides || [], updatedAt: d0.updatedAt || "" };
+          var car = { id: doc.id, datum: d0.datum || "", name: d0.name || "Karussell", brand: d0.brand || "mlb_dark", handle: d0.handle || "", typ: d0.typ || "listicle", funnel: d0.funnel || "TOF", textfrei: !!d0.textfrei, blotato: d0.blotato || null, abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", caption: d0.caption || "", slides: d0.slides || [], profil: d0.profil || "", hinweis: d0.hinweis || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", updatedAt: d0.updatedAt || "" };
           if (!car.slides.length) return;
           // 🚨 Bei Storys und Reels wurde am 24.09.2026 auf dbUebernehmen
           // umgestellt, hier nicht — dadurch hat der Stand aus der
