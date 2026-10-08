@@ -376,6 +376,13 @@
                   border: 2px solid transparent; }
   .sc-fotos img.sel { border-color: #dc822e; }
   .sc-fotos .filebtn { width: 100%; margin-top: 4px; }
+  .sc-extra { border: 1px dashed var(--line-strong); border-radius: 8px; padding: 6px 8px;
+              display: flex; flex-direction: column; gap: 6px; }
+  .sc-extrakopf { display: flex; align-items: center; font-size: 11px; letter-spacing: .06em;
+                  text-transform: uppercase; color: var(--ink-soft); }
+  .sc-extrakopf .btn { margin-left: auto; }
+  .sc-plus { display: flex; flex-wrap: wrap; gap: 4px; }
+  .sc-plus .btn { font-size: 12px; padding: 4px 8px; border: 1px dashed var(--line-strong); }
   .storystrip { display: flex; gap: 14px; overflow-x: auto; padding-bottom: 12px; align-items: flex-start; }
   .storycard { flex: 0 0 210px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); }
   .storycard canvas { display: block; width: 100%; height: auto; background: #0c1c30; cursor: grab; }
@@ -11815,6 +11822,40 @@
         y += t.zeilen.length * t.px * t.lh;
       });
 
+      // ---- Freie Textblöcke („+ Textblock“): je eigene Höhe, Grösse, Schrift, Balken.
+      // Ausrichtung folgt der Folie, damit alles auf einer Linie steht.
+      (Array.isArray(fr.extra) ? fr.extra : []).forEach(function (e) {
+        var txt = String((e && e.text) || "").trim();
+        if (!txt) return;
+        var ex = SCHRIFTEN[e.schrift] || SCHRIFTEN["sans-b"];
+        var epx = Math.round(54 * Math.max(0.5, Math.min(1.6, +e.groesse || 1)));
+        ctx.font = ex.f(epx);
+        var ez = storyZeilen(ctx, txt, maxW);
+        var elh = 1.22, eh = ez.length * epx * elh;
+        var ey = SH * (Math.max(8, Math.min(92, e.pos != null ? +e.pos : 78)) / 100) - eh / 2;
+        ey = Math.max(200, Math.min(SH - 220 - eh, ey));
+        var ealX = al === "center" ? SW / 2 : al === "right" ? SW - pad : pad;
+        var eBalken = (e.balken || "zeilen") === "zeilen";
+        var hellerGrund = !(fotoHg || s.hg === "dunkel" || s.hg === "petrol");
+        ez.forEach(function (z, i) {
+          var by = ey + i * epx * elh;
+          ctx.font = ex.f(epx);
+          if (eBalken && z) {
+            var w = ctx.measureText(z).width, padX = 24, hh = epx * elh + 4;
+            var bx = al === "center" ? SW / 2 - w / 2 - padX : al === "right" ? ealX - w - padX : ealX - padX;
+            ctx.fillStyle = hellerGrund ? "rgba(12,28,48,.92)" : "rgba(241,236,221,.96)";
+            roundRect(ctx, bx, by - 2, w + padX * 2, hh, 14); ctx.fill();
+            ctx.fillStyle = hellerGrund ? "#f1ecdd" : "#0c1c30";
+          } else {
+            ctx.fillStyle = hellerGrund ? (s.hg === "orange" ? "#0c1c30" : "#29556d") : "#f1ecdd";
+            if (fotoHg) { ctx.shadowColor = "rgba(0,0,0,.45)"; ctx.shadowBlur = 22; ctx.shadowOffsetY = 3; }
+          }
+          ctx.textAlign = al;
+          ctx.fillText(z, ealX, by + epx * 0.98);
+          ctx.shadowColor = "transparent"; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
+        });
+      });
+
       // ---- Sticker-Fläche nur in der Vorschau
       if (sticker && !opts.export) {
         ctx.save();
@@ -12020,11 +12061,84 @@
     };
     body.appendChild(lay);
 
-    if (fr.layout === "kurs" || fr.layout === "bonus" || fr.eyebrow) feld("Kleine Zeile oben (z.B. DER KURS)", "eyebrow");
-    if (fr.layout === "bonus" || fr.pille) feld("Pille (z.B. Bonus bis Samstag, 21 Uhr)", "pille");
+    /* Ein Feld steht da, sobald es am Beitrag existiert (auch leer) — so
+       bleibt ein über „+ Text“ angelegtes Feld sichtbar, bis es weg soll. */
+    function da(k) { return fr[k] !== undefined && fr[k] !== null; }
+    if (fr.layout === "kurs" || fr.layout === "bonus" || da("eyebrow")) feld("Kleine Zeile oben (z.B. DER KURS)", "eyebrow");
+    if (fr.layout === "bonus" || da("pille")) feld("Pille (z.B. Bonus bis Samstag, 21 Uhr)", "pille");
     feld("Text auf der Folie", "text", 3);
-    if (fr.layout === "kurs" || (fr.punkte && fr.punkte.length)) feld("Haken-Liste, ein Punkt pro Zeile", "punkte", 4);
+    if (fr.layout === "kurs" || da("punkte")) feld("Haken-Liste, ein Punkt pro Zeile", "punkte", 4);
     feld("Kleine Zeile unten (optional)", "klein");
+
+    // ---- Freie Textblöcke: eigene Höhe, Grösse, Balken (wie „+ Balken“ im Bild-Editor)
+    if (!Array.isArray(fr.extra)) fr.extra = fr.extra ? [].concat(fr.extra) : [];
+    fr.extra.forEach(function (e, n) {
+      var box = document.createElement("div");
+      box.className = "sc-extra";
+      var kopf = document.createElement("div");
+      kopf.className = "sc-extrakopf";
+      kopf.innerHTML = "<span>Textblock " + (n + 2) + "</span>";
+      var weg = document.createElement("button");
+      weg.type = "button"; weg.className = "btn ghost"; weg.textContent = "×"; weg.title = "Textblock entfernen";
+      weg.onclick = function () { fr.extra.splice(n, 1); saveStory(st); renderStoryStrip(card.parentNode, st); };
+      kopf.appendChild(weg);
+      box.appendChild(kopf);
+      var ta = document.createElement("textarea");
+      ta.rows = 2; ta.placeholder = "Weiterer Text"; ta.value = e.text || "";
+      ta.oninput = function () { e.text = ta.value; saveStory(st); draw(); };
+      box.appendChild(ta);
+      [["Höhe", "pos", 10, 90, 1, e.pos != null ? e.pos : 78], ["Grösse", "groesse", 0.5, 1.6, 0.05, e.groesse || 1]]
+        .forEach(function (r) {
+          var row = document.createElement("div");
+          row.className = "sliderow";
+          var lb = document.createElement("span"); lb.textContent = r[0];
+          var rg = document.createElement("input");
+          rg.type = "range"; rg.min = r[2]; rg.max = r[3]; rg.step = r[4]; rg.value = r[5];
+          rg.oninput = function () { e[r[1]] = parseFloat(rg.value); draw(); };
+          rg.onchange = function () { saveStory(st); };
+          row.appendChild(lb); row.appendChild(rg);
+          box.appendChild(row);
+        });
+      var reihe = document.createElement("div");
+      reihe.className = "sc-seg";
+      var r2 = document.createElement("div");
+      [["schrift", "philo", "Aa", "font-family:Philosopher;font-weight:700"],
+       ["schrift", "philo-k", "Aa", "font-family:Philosopher;font-style:italic"],
+       ["schrift", "sans-b", "Aa", "font-family:'Source Sans 3';font-weight:700"],
+       ["balken", "aus", "ohne"], ["balken", "zeilen", "Balken"]].forEach(function (v) {
+        var b = document.createElement("button");
+        b.type = "button"; b.textContent = v[2];
+        if (v[3]) b.style.cssText = v[3];
+        var jetzt = e[v[0]] || (v[0] === "schrift" ? "sans-b" : "zeilen");
+        b.setAttribute("aria-pressed", String(jetzt === v[1]));
+        b.onclick = function () { e[v[0]] = v[1]; saveStory(st); renderStoryStrip(card.parentNode, st); };
+        r2.appendChild(b);
+      });
+      reihe.appendChild(r2);
+      box.appendChild(reihe);
+      body.appendChild(box);
+    });
+
+    // ---- „+ Text“: was noch fehlt, dazulegen
+    var plus = document.createElement("div");
+    plus.className = "sc-plus";
+    [["eyebrow", "+ Zeile oben", ""], ["pille", "+ Pille", ""], ["punkte", "+ Haken-Liste", ""],
+     ["extra", "+ Textblock", null]].forEach(function (v) {
+      if (v[0] !== "extra" && (da(v[0]) || (v[0] === "punkte" && fr.layout === "kurs") ||
+          (v[0] === "eyebrow" && (fr.layout === "kurs" || fr.layout === "bonus")) ||
+          (v[0] === "pille" && fr.layout === "bonus"))) return;
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "btn ghost"; b.textContent = v[1];
+      b.onclick = function () {
+        if (v[0] === "extra") {
+          var letzte = fr.extra[fr.extra.length - 1];
+          fr.extra.push({ text: "", pos: letzte ? Math.min(88, (letzte.pos || 78) + 8) : 78, groesse: 1 });
+        } else fr[v[0]] = v[2];
+        saveStory(st); renderStoryStrip(card.parentNode, st);
+      };
+      plus.appendChild(b);
+    });
+    body.appendChild(plus);
 
     var gest = document.createElement("details");
     gest.className = "sc-gestalten";
