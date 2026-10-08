@@ -5265,7 +5265,7 @@
   function tiPia(el, heute, beitraege) {
     el.innerHTML =
       '<div class="ti-pia-kopf"><span class="ti-ava o">P</span><div><b>PIA</b>' +
-      '<span class="ti-klein">' + (sampler ? "deine Assistentin · am Handy einfach aufs Mikrofon tippen"
+      '<span class="ti-klein">' + (sampler ? "deine Assistentin · am Handy: ins Feld tippen, dann das 🎤 auf der Tastatur"
                                           : "gerade nicht verbunden") + '</span></div>' +
       (piaVerlauf.length ? '<button class="ti-btn" id="pia-neu" style="margin-left:auto">Neu</button>' : '') +
       '</div><div class="ti-verlauf" id="pia-verlauf"></div>' +
@@ -5358,10 +5358,35 @@
       '{"art": "termin", "titel": "...", "datum": "JJJJ-MM-TT", "zeit": "HH:MM oder leer", "bereich": "Privat"}, ' +
       '{"art": "claude", "text": "der Auftrag in einem klaren Satz", "datum": ""}], "antwort": "was du ihr sagst"}. ' +
       "prio ist Hoch, Mittel, Tief oder Quick Win. Keine Aktion nötig: leere Liste.";
-    sampler.json(p).then(function (r) {
-      r = r || {};
-      var gemacht = [];
+    // 🚨 Erst die Antwort holen, dann getrennt eintragen. Bis 08.10.2026 lief
+    // beides in einem Block, und jeder Fehler hiess „(Fehler)" — ob Claude
+    // nicht antwortete oder das Eintragen umfiel, war nicht zu unterscheiden.
+    var antwort = null;
+    sampler.json(p, { cache: false }).then(function (r) {
+      antwort = (r && typeof r === "object" && !Array.isArray(r)) ? r : { antwort: String(r || "") };
+    }, function (e) {
+      console.error("PIA: Claude hat nicht geantwortet", e);
+      var grund = (e && (e.code || e.name || e.message)) || "unbekannt";
+      var klartext = {
+        not_granted: "Du hast PIA die Erlaubnis nicht gegeben. Lade das Cockpit neu und tippe beim Nachfragen auf Erlauben.",
+        rate_limited: "Gerade zu viele Anfragen. Versuch es in ein paar Minuten nochmal.",
+        session_expired: "Du bist bei Claude abgemeldet. Melde dich neu an und lade das Cockpit neu.",
+        sampling_disabled: "In diesem Konto ist das Fragen aus dem Cockpit ausgeschaltet.",
+        invalid_json: "Die Antwort kam in der falschen Form zurück. Schick die Nachricht einfach nochmal."
+      }[grund];
+      piaMerken("pia", (klartext || "Claude hat nicht geantwortet (" + grund + ").") +
+        " Eingetragen habe ich nichts.");
+    }).then(function () {
+      if (!antwort) return;
+      var r = antwort;
+      var gemacht = [], schief = 0;
       (Array.isArray(r.aktionen) ? r.aktionen : []).forEach(function (a) {
+       try {
+        if (!a || typeof a !== "object") return;
+        a.text = a.text == null ? "" : String(a.text);
+        a.titel = a.titel == null ? "" : String(a.titel);
+        a.datum = a.datum == null ? "" : String(a.datum);
+        a.zeit = a.zeit == null ? "" : String(a.zeit);
         if (a.art === "aufgabe" && (a.text || "").trim()) {
           tiAufgabeNeu({ text: a.text.trim(), datum: /^\d{4}-\d{2}-\d{2}$/.test(a.datum || "") ? a.datum : "",
                          bereich: a.bereich, prio: AF_PRIO.indexOf(a.prio) >= 0 ? a.prio : "Mittel", quelle: "PIA" });
@@ -5375,11 +5400,16 @@
                         zeit: /^\d{1,2}:\d{2}$/.test(a.zeit || "") ? a.zeit : "", bereich: a.bereich, quelle: "PIA" });
           gemacht.push("✓ Termin " + fmtDate(a.datum) + (a.zeit ? " " + a.zeit : "") + ": " + a.titel.trim());
         }
+       } catch (e) { console.error("PIA: Eintrag fiel um", a, e); schief++; }
       });
       // Was eingetragen wurde, steht wörtlich da — nicht nur PIAs Satz dazu.
-      piaMerken("pia", (r.antwort || "Erledigt.") + (gemacht.length ? "\n\n" + gemacht.join("\n") : ""));
+      piaMerken("pia", String(r.antwort || "Erledigt.") +
+        (gemacht.length ? "\n\n" + gemacht.join("\n") : "") +
+        (schief ? "\n\n" + schief + " Eintrag liess sich nicht anlegen — sag es mir bitte nochmal anders." : ""));
     }).catch(function (e) {
-      piaMerken("pia", "Das hat nicht geklappt (" + ((e && e.code) || "Fehler") + "). Eingetragen habe ich nichts.");
+      console.error("PIA:", e);
+      piaMerken("pia", "Beim Eintragen ist etwas schiefgegangen (" +
+        ((e && (e.message || e.code)) || "unbekannt") + "). Schau unter Aufgaben nach, was schon drin ist.");
     }).then(function () { piaLaeuft = false; render(); });
   }
 
@@ -8302,17 +8332,9 @@
           esc(st.fehler) + '). Lade das Cockpit neu und klapp die Automation nochmal auf.</p>' : "";
       return hinweis + mailListeAC(nummer);
     }
-    /* Entwurf oder Live-Stand? Das Feld `quelle` entscheidet, was dasteht —
-       die Launch-Mails kommen AUS ActiveCampaign, die Magnet-Ich-Mails gehen
-       erst hinein. Derselbe Satz für beide wäre für eine der beiden falsch. */
-    var ausAC = neu.every(function (e) { return e.quelle === "activecampaign"; });
-    return '<div class="mentwuerfe"><p class="note">' +
-      (ausAC
-        ? 'So stehen diese Mails heute in ActiveCampaign. Vorschau anschauen, '
-          + 'HTML kopieren, wenn du sie woanders brauchst.'
-        : 'Neue Fassung von mir, noch nicht in ActiveCampaign. Schau dir die '
-          + 'Vorschau an, kopier das HTML und setz es in der Automation ein.') +
-      '</p>' +
+    return '<div class="mentwuerfe"><p class="note">Neue Fassung von mir, noch nicht in ' +
+      'ActiveCampaign. Schau dir die Vorschau an, kopier das HTML und setz es in der ' +
+      'Automation ein.</p>' +
       neu.map(function (e) {
         return '<div class="mailkarte mentwurf" data-entwurf="' + esc(e.id) + '">' +
           '<div class="mailkopf"><strong>' + esc(e.betreff || "Ohne Betreff") + '</strong>' +
@@ -8326,8 +8348,7 @@
           (e.preheader ? '<button class="btn" data-kopie="preheader">Vorschautext kopieren</button>' : "") +
           '</div><iframe class="mentwurfvorschau" sandbox="" title="Vorschau der Mail"></iframe></div>';
       }).join("") +
-      (ausAC ? '</div>'
-             : '<p class="note" style="margin-top:16px">Und das steckt heute in ActiveCampaign:</p></div>') +
+      '<p class="note" style="margin-top:16px">Und das steckt heute in ActiveCampaign:</p></div>' +
       mailListeAC(nummer);
   }
   function mailEntwuerfeVerdrahten(box) {
