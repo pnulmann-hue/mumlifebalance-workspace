@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pin · 0€ Stimm-Check — 9 Folien</title>
+<!--
+  Vorlage fuer scripts/karussell-render/render.js
+
+  🚨 GESTALTET WIRD IN DER 340er-BASIS, nicht in 1080.
+     Das Render-Skript zwingt jede .slide auf 340x425 und setzt dann
+     `zoom: 3.1765`, damit Chromium proportional auf 1080x1350 hochrechnet.
+     Wer hier in 1080 gestaltet, bekommt alles dreifach zu gross — genau das
+     ist am 08.10.2026 im ersten Anlauf passiert: auf dem Cover stand nur
+     noch „CHECK" quer ueber die Folie.
+     Faustregel: gewuenschte Groesse in 1080 geteilt durch 3.18.
+
+  🚨 Linie der drei angepinnten Beitraege: Creme-Grund, Philosopher dunkel,
+     Orange als EINZIGER Akzent. Kein Petrol als Flaeche (Lead-Post).
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --creme: #f1ecdd;
+    --ink: #0c1c30;
+    --navy: #29556d;
+    --orange: #dc822e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #2b3a4a; padding: 20px; display: flex; flex-wrap: wrap;
+         gap: 16px; justify-content: center; }
+
+  .slide {
+    width: 340px; height: 425px; background: var(--creme);
+    font-family: 'Source Sans 3', sans-serif; color: var(--ink);
+    padding: 35px 32px; display: flex; flex-direction: column;
+    /* Mittig statt oben klebend - sonst klafft unten die halbe Folie leer. */
+    justify-content: center;
+    position: relative; overflow: hidden;
+  }
+
+  /* --- Folie 1: Angebots-Cover ------------------------------------- */
+  .cover { align-items: center; text-align: center; justify-content: center;
+           padding: 26px 28px; }
+  .euro { position: absolute; top: 22px; left: 22px; width: 53px; height: 53px;
+          border-radius: 50%; background: var(--orange); color: #fff;
+          font-family: 'Philosopher', serif; font-weight: 700; font-size: 20px;
+          display: flex; align-items: center; justify-content: center; }
+  .phone { width: 113px; height: 164px; border-radius: 11px; overflow: hidden;
+           border: 2px solid var(--navy); background: #fff; margin-bottom: 18px;
+           box-shadow: 0 6px 14px rgba(12,28,48,.16); }
+  .phone img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+  .titel { font-family: 'Philosopher', serif; font-weight: 700; font-size: 33px;
+           letter-spacing: .07em; line-height: 1; margin-bottom: 10px; }
+  .unter { font-size: 13px; line-height: 1.4; color: rgba(12,28,48,.78);
+           margin-bottom: 17px; }
+  .knopf { background: var(--orange); color: #fff; font-weight: 600; font-size: 9px;
+           letter-spacing: .12em; padding: 8px 15px; border-radius: 3px; }
+
+  /* --- Innenfolien --------------------------------------------------- */
+  /* Mittig, damit die Innenfolien zum zentrierten Cover passen (Patricia 08.10.) */
+  .slide:not(.cover) { text-align: center; align-items: center; }
+  .strich { width: 33px; height: 3px; background: var(--orange);
+            border-radius: 2px; margin: 0 auto 17px; }
+  .kopf { font-family: 'Philosopher', serif; font-weight: 700; font-size: 26px;
+          line-height: 1.16; margin-bottom: 14px; }
+  .text { font-size: 14px; line-height: 1.52; color: rgba(12,28,48,.8); }
+  .nr { position: absolute; bottom: 22px; right: 28px; font-size: 8px;
+        letter-spacing: .18em; color: rgba(12,28,48,.3); font-weight: 600; }
+
+  /* --- Folie 9: CTA --------------------------------------------------- */
+  .cta { align-items: center; text-align: center; justify-content: center; }
+  .keyword { font-family: 'Philosopher', serif; font-weight: 700; font-size: 35px;
+             color: var(--orange); letter-spacing: .05em; line-height: 1.08;
+             margin-bottom: 14px; }
+</style>
+</head>
+<body>
+
+<div class="slide cover">
+  <div class="euro">0€</div>
+  <div class="phone"><img src="stimm-check-screen.jpg" alt=""></div>
+  <div class="titel">STIMM-CHECK</div>
+  <p class="unter">Damit deine KI schreibt,<br>wie du redest</p>
+  <span class="knopf">KOSTENLOS SICHERN</span>
+</div>
+
+<div class="slide">
+  <div class="strich"></div>
+  <h2 class="kopf">Ich hab meine eigenen Texte nicht mehr erkannt</h2>
+  <p class="text">Die KI hat geschrieben, was ich wollte, und trotzdem hab ich jeden Satz umgebaut, bis er wieder nach mir klang.</p>
+  <span class="nr">02</span>
+</div>
+
+<div class="slide">
+  <div class="strich"></div>
+  <h2 class="kopf">Und am Montag fängst du wieder vorne an</h2>
+  <p class="text">Du erklärst ihr nochmal, wer du bist und für wen du schreibst, und nächste Woche machst du es wieder.</p>
+  <span class="nr">03</span>
+</div>
+
+<div class="slide">
+  <div class="strich"></div>
+  <h2 class="kopf">Das liegt nicht an der KI</h2>
+  <p class="text">Sie kennt Millionen Texte und klingt deshalb wie der Durchschnitt von allen. Dich kennt sie nicht, weil ihr das noch nie jemand aufgeschrieben hat.</p>
+  <span class="nr">04</span>
+</div>
+
+<div class="slide">
+  <div class="strich"></div>
+  <h2 class="kopf">Mehr Prompts helfen hier nicht</h2>
+  <p class="text">Eine gespeicherte Liste weiss nichts über dich, über deine Sätze und über die Wörter, die bei dir nie vorkommen.</p>
+  <span class="nr">05</span>
+</div>
+
+<div class="slide">
+  <div class="strich"></div>
+  <h2 class="kopf">Was hilft, ist ein Stimm-Brief</h2>
+  <p class="text">Einmal festgehalten, wie du klingst, worauf sie achten soll und was tabu ist. Danach liest sie das jedes Mal selbst, bevor sie für dich schreibt.</p>
+  <span class="nr">06</span>
+</div>
+
+<div class="slide">
+  <div class="strich"></div>
+  <h2 class="kopf">Dafür brauchst du keine Technik</h2>
+  <p class="text">Sechs Angaben und ein Text, den du selbst geschrieben hast — eine alte Caption reicht. Daran erkennt sie deine Sprache besser als an jeder Selbstbeschreibung.</p>
+  <span class="nr">07</span>
+</div>
+
+<div class="slide">
+  <div class="strich"></div>
+  <h2 class="kopf">Was danach bei dir liegt</h2>
+  <p class="text">Dein Stimm-Brief, dein Stimm-Prompt zum Kopieren und ein erster Text, den du so posten würdest. In rund 15 Minuten.</p>
+  <span class="nr">08</span>
+</div>
+
+<div class="slide cta">
+  <div class="keyword">Kommentier<br>STIMME</div>
+  <p class="text">Dann schick ich dir den Stimm-Check.<br>Kostenlos, und du machst es am Handy.</p>
+</div>
+
+</body>
+</html>
