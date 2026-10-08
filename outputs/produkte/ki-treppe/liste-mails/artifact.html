@@ -1,0 +1,670 @@
+<title>Launch-Strecke Easy KI</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"><style>
+/* Zeitstrahl in einer Spalte: das Datum links, die Mail rechts. Die Abfolge
+   IST die Information — deshalb ein Strahl und keine Kachelwand. */
+:root {
+  --grund: #f3efe4;  --blatt: #fbf8f1;  --blatt-2: #ebe4d3;
+  --tinte: #0c1c30;  --tinte-weich: #5f6f80;
+  --linie: rgba(12,28,48,.14);
+  --petrol: #12828c; --petrol-weich: rgba(18,130,140,.12);
+  --orange: #dc822e; --orange-weich: rgba(220,130,46,.15);
+  --warn: #b56a24;
+  --display: "Philosopher", Georgia, "Times New Roman", serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --grund: #0c1c30; --blatt: #12283f; --blatt-2: #1a3450;
+    --tinte: #f1ecdd; --tinte-weich: #a8bccb;
+    --linie: rgba(241,236,221,.16);
+    --petrol: #35a8b2; --petrol-weich: rgba(53,168,178,.16);
+    --orange: #eb9a4f; --orange-weich: rgba(235,154,79,.18);
+    --warn: #d9a84b;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --grund: #0c1c30; --blatt: #12283f; --blatt-2: #1a3450;
+  --tinte: #f1ecdd; --tinte-weich: #a8bccb;
+  --linie: rgba(241,236,221,.16);
+  --petrol: #35a8b2; --petrol-weich: rgba(53,168,178,.16);
+  --orange: #eb9a4f; --orange-weich: rgba(235,154,79,.18);
+  --warn: #d9a84b;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--grund); color: var(--tinte);
+  font-family: var(--body); font-size: 16px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.huelle { max-width: 860px; margin: 0 auto; padding-block: 28px 80px; padding-left: 16px; padding-right: 16px; }
+
+header h1 {
+  font-family: var(--display); font-weight: 400; font-size: clamp(28px, 6vw, 40px);
+  line-height: 1.12; margin: 0 0 8px; text-wrap: balance;
+}
+header .unter { margin: 0; color: var(--tinte-weich); font-size: 15px; max-width: 60ch; }
+.zahlen { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0 0; }
+.zahl {
+  background: var(--blatt); border: 1px solid var(--linie); border-radius: 999px;
+  padding: 6px 14px; font-size: 13px; color: var(--tinte-weich);
+}
+.zahl b { color: var(--tinte); font-family: var(--display); font-size: 16px; margin-right: 5px; }
+
+.hinweis {
+  background: var(--orange-weich); border-radius: 12px; padding: 14px 18px;
+  margin: 24px 0 0; font-size: 14.5px; line-height: 1.7;
+}
+.hinweis b { color: var(--warn); }
+
+.strahl { margin: 34px 0 0; display: flex; flex-direction: column; gap: 18px; }
+
+.mail {
+  background: var(--blatt); border: 1px solid var(--linie); border-radius: 16px;
+  overflow: hidden; display: grid; grid-template-columns: 92px minmax(0, 1fr);
+}
+@media (max-width: 560px) { .mail { grid-template-columns: 1fr; } }
+.wann {
+  background: var(--blatt-2); padding: 18px 12px; text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+  border-right: 1px solid var(--linie);
+}
+@media (max-width: 560px) {
+  .wann { flex-direction: row; justify-content: flex-start; gap: 10px;
+          border-right: 0; border-bottom: 1px solid var(--linie); text-align: left;
+          padding: 10px 16px; }
+}
+.wann .nr {
+  font-family: var(--display); font-size: 22px; line-height: 1; color: var(--petrol);
+}
+.wann .tag { font-size: 12px; color: var(--tinte-weich); font-variant-numeric: tabular-nums; }
+.wann .uhr { font-size: 11px; color: var(--tinte-weich); opacity: .8; }
+
+.koerper { padding: 18px 20px 20px; min-width: 0; }
+.betreff {
+  font-family: var(--display); font-size: 20px; line-height: 1.3; margin: 0 0 6px;
+  text-wrap: balance;
+}
+.vorschautext { margin: 0 0 12px; font-size: 14px; color: var(--tinte-weich); font-style: italic; }
+.warum {
+  border-left: 3px solid var(--petrol); background: var(--petrol-weich);
+  border-radius: 0 10px 10px 0; padding: 10px 14px; margin: 0 0 14px;
+  font-size: 14px; line-height: 1.65;
+}
+.knoepfe { display: flex; gap: 8px; flex-wrap: wrap; }
+button {
+  font: inherit; font-size: 13.5px; cursor: pointer; border-radius: 999px;
+  border: 1px solid var(--linie); background: var(--blatt-2); color: var(--tinte);
+  padding: 8px 16px;
+}
+button:hover { border-color: var(--petrol); color: var(--petrol); }
+button.haupt { background: var(--petrol); border-color: var(--petrol); color: #fff; }
+button.haupt:hover { filter: brightness(1.08); color: #fff; }
+button.fertig { background: #2f7d5b; border-color: #2f7d5b; color: #fff; }
+button:focus-visible { outline: 2px solid var(--petrol); outline-offset: 2px; }
+
+details { margin: 14px 0 0; }
+summary { cursor: pointer; font-size: 13.5px; color: var(--petrol); }
+summary::marker { color: var(--petrol); }
+iframe {
+  display: block; width: 100%; height: 520px; border: 1px solid var(--linie);
+  border-radius: 10px; background: #fff; margin: 12px 0 0;
+}
+pre.roh {
+  margin: 12px 0 0; padding: 12px 14px; background: var(--blatt-2);
+  border-radius: 10px; overflow-x: auto; font-size: 12px; line-height: 1.5;
+  max-height: 260px; white-space: pre-wrap; word-break: break-all;
+}
+footer { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--linie);
+         font-size: 13.5px; color: var(--tinte-weich); line-height: 1.7; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style><div class="huelle"><header><h1>Acht Mails an die &uuml;brige Liste</h1><p class="unter">F&uuml;r alle, die <strong>nicht</strong> in der Masterclass waren und keinen Stimm-Check gemacht haben. Jede Mail hat ein Angebot und einen Link, so wie es sein soll &mdash; kein reiner Newsletter.</p><div class="zahlen"><span class="zahl"><b>8</b>Mails</span><span class="zahl"><b>10.&ndash;23.</b>Oktober</span><span class="zahl"><b>277</b>bis 15.10., danach 333</span><span class="zahl"><b>2</b>am Schlusstag</span></div><p class="hinweis"><b>Vor dem Versand:</b> In Mail&nbsp;5 steht ein leerer Beweis-Kasten mit der Aufschrift &bdquo;Hier geh&ouml;rt ein Screenshot hin&ldquo;. Setz dort einen abfotografierten Chat ein &mdash; oder l&ouml;sch den Kasten. Erfunden habe ich keinen, und ohne das Ja der Kundin geh&ouml;rt auch keiner rein.</p></header><main class="strahl"><article class="mail"><div class="wann"><span class="nr">1</span><span class="tag">Fr 10.10.</span></div><div class="koerper"><h2 class="betreff">Falls du die Masterclass verpasst hast</h2><p class="vorschautext">Vorschautext: Der eine Satz, der erklärt, warum KI dich bisher Zeit gekostet hat</p><p class="warum">Mehrwert-Mail, kein harter Pitch. Diese Leute waren nicht dabei und wissen</p><div class="knoepfe"><button class="haupt" data-feld="html">HTML kopieren</button><button data-feld="betreff">Betreff</button><button data-feld="vorschautext">Vorschautext</button></div><details><summary>Vorschau anzeigen</summary><iframe loading="lazy" title="Vorschau: Falls du die Masterclass verpasst hast"></iframe></details><script type="text/plain" data-html><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Falls du die Masterclass verpasst hast</title>
+  <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+</head>
+<!--
+  NACHKAUF-STRECKE STARTKLAR · mumlifebalance
+  ERZEUGT von scripts/startklar/mails-bauen.py — Änderungen dort, nicht hier.
+
+  Betreff     : Falls du die Masterclass verpasst hast
+  Alternative : Die Aufzeichnung — 45 Minuten, und der eine Satz daraus
+  Versand     : Freitag, 10. Oktober, 08:00
+
+  Mehrwert-Mail, kein harter Pitch. Diese Leute waren nicht dabei und wissen
+  vielleicht nicht einmal, dass es eine Masterclass gab — also kein Vorwurf,
+  kein „du hast verpasst", sondern einfach aufmachen.
+  Der Kurs kommt am Schluss als Angebot, nicht als Hauptsache.
+-->
+<body style="margin:0;padding:0;background-color:#f1ecdd;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Der eine Satz, der erklärt, warum KI dich bisher Zeit gekostet hat &nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f1ecdd;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+          <tr>
+            <td bgcolor="#12828c" style="background-color:#12828c;background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);border-radius:16px 16px 0 0;padding:42px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding-bottom:16px;"><span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance</span></td></tr>
+                <tr><td><h1 style="margin:0;font-family:Georgia,serif;font-size:30px;font-weight:bold;color:#f1ecdd;line-height:1.28;">Die Aufzeichnung für dich</h1></td></tr>
+                <tr><td style="padding-top:14px;"><p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:#dcd5c0;line-height:1.5;">45 Minuten. Und ein Satz, der reicht, falls du sie nicht schaust.</p></td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#ffffff;padding:38px 40px 34px 40px;">
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Hallo %FIRSTNAME%,</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">am Donnerstag habe ich eine Masterclass gehalten und dabei gezeigt, wie ich mit KI arbeite. Sie nimmt mir tats&auml;chlich Arbeit ab, statt dass ich hinterher die H&auml;lfte umschreibe.</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Falls du nicht dabei warst: hier ist die Aufzeichnung.</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 30px 0;"><tr><td align="center"><a href="https://vimeo.com/1233995735/e14aa6e93c" style="display:inline-block;background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:17px;font-weight:bold;text-decoration:none;padding:16px 38px;border-radius:30px;">Zur Aufzeichnung</a></td></tr></table>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Und falls du die 45 Minuten gerade nicht hast, nimm diesen einen Satz mit, weil er das Wichtigste ist:</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#0c1c30;border-radius:12px;padding:22px 26px;"><p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#dc822e;text-transform:uppercase;letter-spacing:2px;">Der Kern</p><p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:21px;color:#f1ecdd;line-height:1.45;">Deine KI muss dich kennen. Und sie muss wissen, was zu tun ist.</p><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#a9bcc8;line-height:1.7;">Solange eins von beidem fehlt, f&auml;ngst du jede Woche wieder bei null an &mdash; und genau das kostet dich die Zeit, die sie dir eigentlich sparen sollte.</p></td></tr></table>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Das klingt banal, ist es aber nicht. Die meisten arbeiten mit KI wie mit einer Suchmaschine: Frage rein, Antwort raus, n&auml;chste Woche dasselbe nochmal. Dabei k&ouml;nnte dort dein ganzes Wissen liegen &mdash; deine Sprache, deine Angebote, deine Kundin &mdash; und jeder Auftrag w&uuml;rde darauf aufbauen.</p>
+              <h2 style="margin:0 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#0c1c30;line-height:1.35;">Wenn du das bei dir einrichten willst</h2>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Daf&uuml;r habe ich einen Kurs gebaut: <strong>Easy KI f&uuml;r Networkerinnen &mdash; vom Chat zur Mitarbeiterin</strong>. Du f&auml;ngst im Chat an, den du schon kennst, und installierst erst sp&auml;ter etwas. Die Kapitel kommen ab dem 1. November Woche f&uuml;r Woche, am 30. November ist er komplett.</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#e4f3f4;border-left:4px solid #12828c;border-radius:0 12px 12px 0;padding:22px 26px;"><p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#12828c;text-transform:uppercase;letter-spacing:2px;">Was du am Ende hast</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">Einen <strong>Arbeitsplatz mit deinem Wissen drin</strong>, den deine KI bei jedem Auftrag liest</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">Deinen <strong>ersten eigenen Skill</strong> f&uuml;r eine Arbeit, die jede Woche wiederkommt</p><p style="margin:0 0 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">Einen <strong>Bot, der von selbst l&auml;uft</strong> &mdash; so wie mein Kochbot, der mir die Men&uuml;planung abnimmt</p></td></tr></table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 30px 0;"><tr><td align="center"><a href="https://mumlifebalance.ch/ki-kurs/" style="display:inline-block;background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:17px;font-weight:bold;text-decoration:none;padding:16px 38px;border-radius:30px;">Alles zum Kurs</a></td></tr></table>
+              <p style="margin:26px 0 0 0;font-family:Georgia,serif;font-style:italic;font-size:17px;color:#12828c;line-height:1.6;">Bis bald,<br>Patricia</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:22px 0 0 0;"><tr><td style="border-top:1px solid #e8e2d2;padding-top:18px;"><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#5f5748;line-height:1.75;">P.S. Der Fr&uuml;hbucherpreis von 277 gilt bis Donnerstag, 15. Oktober, 21 Uhr, danach kostet der Kurs 333.</p></td></tr></table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#29556d" style="background-color:#29556d;border-radius:0 0 16px 16px;padding:26px 40px;">
+              <p style="margin:0 0 6px 0;font-family:Georgia,serif;font-size:15px;color:#f1ecdd;line-height:1.5;">Funktionieren war gestern.</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#a9bcc8;line-height:1.6;">Patricia Ulmann &middot; mumlifebalance.ch</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+</script><script type="text/plain" data-betreff>Falls du die Masterclass verpasst hast</script><script type="text/plain" data-vorschautext>Der eine Satz, der erklärt, warum KI dich bisher Zeit gekostet hat</script></div></article><article class="mail"><div class="wann"><span class="nr">2</span><span class="tag">So 12.10.</span></div><div class="koerper"><h2 class="betreff">Warum deine KI jede Woche wieder bei null anfängt</h2><p class="vorschautext">Vorschautext: Und was du heute in zwanzig Minuten dagegen tun kannst</p><p class="warum">Mehrwert-Mail mit echtem Tipp (Hormozi: erst liefern, dann fragen).</p><div class="knoepfe"><button class="haupt" data-feld="html">HTML kopieren</button><button data-feld="betreff">Betreff</button><button data-feld="vorschautext">Vorschautext</button></div><details><summary>Vorschau anzeigen</summary><iframe loading="lazy" title="Vorschau: Warum deine KI jede Woche wieder bei null anfängt"></iframe></details><script type="text/plain" data-html><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warum deine KI jede Woche wieder bei null anfängt</title>
+  <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+</head>
+<!--
+  NACHKAUF-STRECKE STARTKLAR · mumlifebalance
+  ERZEUGT von scripts/startklar/mails-bauen.py — Änderungen dort, nicht hier.
+
+  Betreff     : Warum deine KI jede Woche wieder bei null anfängt
+  Alternative : Das Problem ist nicht der Prompt
+  Versand     : Sonntag, 12. Oktober, 08:00
+
+  Mehrwert-Mail mit echtem Tipp (Hormozi: erst liefern, dann fragen).
+  Der Tipp funktioniert OHNE den Kurs — das ist Absicht. Wer ihn umsetzt, merkt
+  selbst, dass es mit einem festen Arbeitsplatz besser ginge.
+  🚨 Der Betreff enthält bewusst KEIN „nicht X, sondern Y" im Fliesstext.
+-->
+<body style="margin:0;padding:0;background-color:#f1ecdd;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Und was du heute in zwanzig Minuten dagegen tun kannst &nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f1ecdd;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+          <tr>
+            <td bgcolor="#12828c" style="background-color:#12828c;background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);border-radius:16px 16px 0 0;padding:42px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding-bottom:16px;"><span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance</span></td></tr>
+                <tr><td><h1 style="margin:0;font-family:Georgia,serif;font-size:30px;font-weight:bold;color:#f1ecdd;line-height:1.28;">Das Problem ist nicht dein Prompt</h1></td></tr>
+                <tr><td style="padding-top:14px;"><p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:#dcd5c0;line-height:1.5;">Sondern dass die KI nach jedem Chat wieder alles vergessen hat.</p></td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#ffffff;padding:38px 40px 34px 40px;">
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Hallo %FIRSTNAME%,</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">kennst du das: Du l&auml;sst dir eine Caption schreiben, baust jeden zweiten Satz um, weil er nach niemandem klingt, und machst n&auml;chste Woche genau dasselbe nochmal?</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Das liegt nicht daran, dass du den falschen Prompt benutzt. Es liegt daran, dass die KI dich nach jedem Chat wieder vergessen hat.</p>
+              <h2 style="margin:0 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#0c1c30;line-height:1.35;">Was bei mir anders l&auml;uft</h2>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Bei mir liegt mein Wissen an einem festen Ort: wie ich schreibe, welche W&ouml;rter nie vorkommen d&uuml;rfen, wer meine Kundin ist, was ich verkaufe. Jeder Auftrag liest das zuerst. Ich erkl&auml;re es kein zweites Mal.</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Deshalb klingt, was herauskommt, nach mir &mdash; und nicht nach einer KI, die h&ouml;flich alles bejaht.</p>
+              <h2 style="margin:0 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#0c1c30;line-height:1.35;">Was du heute tun kannst, ohne irgendetwas zu installieren</h2>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#e4f3f4;border-left:4px solid #12828c;border-radius:0 12px 12px 0;padding:22px 26px;"><p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#12828c;text-transform:uppercase;letter-spacing:2px;">Zwanzig Minuten, und es wirkt sofort</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">&Ouml;ffne ein leeres Dokument und schreib auf, <strong>wie du klingst</strong>: drei S&auml;tze, die typisch f&uuml;r dich sind, und f&uuml;nf W&ouml;rter, die du nie benutzen w&uuml;rdest.</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">Schreib darunter, <strong>wer deine Kundin ist</strong> &mdash; in einem Satz, und zwar so, wie du es einer Freundin erz&auml;hlen w&uuml;rdest.</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">Schreib darunter, <strong>was du verkaufst</strong>, mit Preis.</p><p style="margin:0 0 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">Kopier das k&uuml;nftig <strong>vor jeden Auftrag</strong> in den Chat.</p></td></tr></table>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Das ist die einfachste Fassung von dem, was ich meinen Arbeitsplatz nenne. Es ist umst&auml;ndlich, weil du es jedes Mal einf&uuml;gen musst &mdash; aber du wirst am Ergebnis sofort merken, was der Unterschied ist.</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#0c1c30;border-radius:12px;padding:22px 26px;"><p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#dc822e;text-transform:uppercase;letter-spacing:2px;">Und genau da f&auml;ngt der Kurs an</p><p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:21px;color:#f1ecdd;line-height:1.45;">Im Kurs liegt diese Datei fest an ihrem Platz, und jeder Auftrag liest sie von allein.</p><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#a9bcc8;line-height:1.7;">Dazu kommen die Bausteine, die darauf aufbauen: dein erster eigener Skill und ein Bot, der morgens von selbst schreibt.</p></td></tr></table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 30px 0;"><tr><td align="center"><a href="https://mumlifebalance.ch/ki-kurs/" style="display:inline-block;background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:17px;font-weight:bold;text-decoration:none;padding:16px 38px;border-radius:30px;">Alles zum Kurs</a></td></tr></table>
+              <p style="margin:26px 0 0 0;font-family:Georgia,serif;font-style:italic;font-size:17px;color:#12828c;line-height:1.6;">Bis bald,<br>Patricia</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:22px 0 0 0;"><tr><td style="border-top:1px solid #e8e2d2;padding-top:18px;"><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#5f5748;line-height:1.75;">P.S. Wenn du den Zettel wirklich machst, schreib mir, was sich ver&auml;ndert hat. Ich lese jede Antwort selbst.</p></td></tr></table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#29556d" style="background-color:#29556d;border-radius:0 0 16px 16px;padding:26px 40px;">
+              <p style="margin:0 0 6px 0;font-family:Georgia,serif;font-size:15px;color:#f1ecdd;line-height:1.5;">Funktionieren war gestern.</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#a9bcc8;line-height:1.6;">Patricia Ulmann &middot; mumlifebalance.ch</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+</script><script type="text/plain" data-betreff>Warum deine KI jede Woche wieder bei null anfängt</script><script type="text/plain" data-vorschautext>Und was du heute in zwanzig Minuten dagegen tun kannst</script></div></article><article class="mail"><div class="wann"><span class="nr">3</span><span class="tag">Di 14.10.</span></div><div class="koerper"><h2 class="betreff">„Ich bin da echt nicht die Technische“</h2><p class="vorschautext">Vorschautext: Vier Kinder, achtzehn Stunden Woche, keine technische Ausbildung</p><p class="warum">Einwand-Mail. Der stärkste Beweis ist nicht Patricia selbst, sondern eine</p><div class="knoepfe"><button class="haupt" data-feld="html">HTML kopieren</button><button data-feld="betreff">Betreff</button><button data-feld="vorschautext">Vorschautext</button></div><details><summary>Vorschau anzeigen</summary><iframe loading="lazy" title="Vorschau: „Ich bin da echt nicht die Technische“"></iframe></details><script type="text/plain" data-html><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>„Ich bin da echt nicht die Technische“</title>
+  <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+</head>
+<!--
+  NACHKAUF-STRECKE STARTKLAR · mumlifebalance
+  ERZEUGT von scripts/startklar/mails-bauen.py — Änderungen dort, nicht hier.
+
+  Betreff     : „Ich bin da echt nicht die Technische“
+  Alternative : Der Satz, den ich am häufigsten höre
+  Versand     : Dienstag, 14. Oktober, 08:00
+
+  Einwand-Mail. Der stärkste Beweis ist nicht Patricia selbst, sondern eine
+  normale Kundin (Podcast-Notiz: „die ist wie ich, und die hat es geschafft").
+  🚨 Die Kundin steht ANONYM und als ZUSAMMENFASSUNG drin — ihre Freigabe ist
+     offen, ihr Wortlaut liegt unabgetippt auf dem Handy. Keine Anführungszeichen.
+-->
+<body style="margin:0;padding:0;background-color:#f1ecdd;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Vier Kinder, achtzehn Stunden Woche, keine technische Ausbildung &nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f1ecdd;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+          <tr>
+            <td bgcolor="#12828c" style="background-color:#12828c;background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);border-radius:16px 16px 0 0;padding:42px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding-bottom:16px;"><span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance</span></td></tr>
+                <tr><td><h1 style="margin:0;font-family:Georgia,serif;font-size:30px;font-weight:bold;color:#f1ecdd;line-height:1.28;">„Ich bin da echt nicht die Technische“</h1></td></tr>
+                <tr><td style="padding-top:14px;"><p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:#dcd5c0;line-height:1.5;">Den Satz höre ich öfter als jeden anderen. Also reden wir darüber.</p></td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#ffffff;padding:38px 40px 34px 40px;">
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Hallo %FIRSTNAME%,</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">wenn ich erz&auml;hle, dass ich mir Bots baue, die mir morgens aufs Handy schreiben, kommt fast immer derselbe Satz zur&uuml;ck. Ich bin da echt nicht die Technische.</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Verstehe ich. Ich war es auch nicht.</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#e4f3f4;border-left:4px solid #12828c;border-radius:0 12px 12px 0;padding:22px 26px;"><p style="margin:0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.8;">Ich habe das <strong>neben vier Kindern</strong> gelernt, mit einer <strong>Achtzehn-Stunden-Woche</strong> und <strong>ohne technische Ausbildung</strong>. Programmiert habe ich dabei nichts. Ich schreibe Deutsch, so wie hier.</p></td></tr></table>
+              <h2 style="margin:0 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#0c1c30;line-height:1.35;">Und eine Kundin war schneller als ich</h2>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Ende September habe ich einer Kundin per Sprachnachricht erz&auml;hlt, was ich alles mit Claude mache. Sie hat es sich daraufhin mit meiner Anleitung <strong>selbst eingerichtet</strong> &mdash; ohne Kurs, ohne dass ich danebensass.</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Was sie mir danach zur&uuml;ckgeschrieben hat, lief darauf hinaus: Sie war krass schnell mit ihrem Zeug fertig und hatte danach tausend Ideen, was sie damit noch machen k&ouml;nnte. <em>(Das ist meine Zusammenfassung ihrer Sprachnachricht, nicht ihr Wortlaut.)</em></p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Sie ist keine Entwicklerin. Sie ist Networkerin, so wie du.</p>
+              <h2 style="margin:0 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#0c1c30;line-height:1.35;">Warum das geht</h2>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#e4f3f4;border-left:4px solid #12828c;border-radius:0 12px 12px 0;padding:22px 26px;"><p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#12828c;text-transform:uppercase;letter-spacing:2px;">Der Kurs ist daf&uuml;r gebaut</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>Du musst nichts programmieren.</strong> Du schreibst Deutsch.</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>Drei Stufen, auf jeder ein Ergebnis.</strong> Erst der normale Chat, dann eine Zwischenstufe, dann der eigene Arbeitsplatz. Wer nach Stufe eins aufh&ouml;rt, hat trotzdem etwas, das sie beh&auml;lt.</p><p style="margin:0 0 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>Alles mitgefilmt.</strong> Vom ersten Klick bis zur ersten Nachricht auf deinem Handy &mdash; und wenn der Bot schweigt, zeige ich dir die drei Stellen, an denen es normalerweise liegt.</p></td></tr></table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 30px 0;"><tr><td align="center"><a href="https://mumlifebalance.ch/ki-kurs/" style="display:inline-block;background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:17px;font-weight:bold;text-decoration:none;padding:16px 38px;border-radius:30px;">Alles zum Kurs</a></td></tr></table>
+              <p style="margin:26px 0 0 0;font-family:Georgia,serif;font-style:italic;font-size:17px;color:#12828c;line-height:1.6;">Bis bald,<br>Patricia</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:22px 0 0 0;"><tr><td style="border-top:1px solid #e8e2d2;padding-top:18px;"><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#5f5748;line-height:1.75;">P.S. Morgen Abend um 21 Uhr endet der Fr&uuml;hbucherpreis von 277. Danach kostet der Kurs 333.</p></td></tr></table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#29556d" style="background-color:#29556d;border-radius:0 0 16px 16px;padding:26px 40px;">
+              <p style="margin:0 0 6px 0;font-family:Georgia,serif;font-size:15px;color:#f1ecdd;line-height:1.5;">Funktionieren war gestern.</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#a9bcc8;line-height:1.6;">Patricia Ulmann &middot; mumlifebalance.ch</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+</script><script type="text/plain" data-betreff>„Ich bin da echt nicht die Technische“</script><script type="text/plain" data-vorschautext>Vier Kinder, achtzehn Stunden Woche, keine technische Ausbildung</script></div></article><article class="mail"><div class="wann"><span class="nr">4</span><span class="tag">Mi 15.10.</span></div><div class="koerper"><h2 class="betreff">Heute Abend um 21 Uhr steigt der Preis</h2><p class="vorschautext">Vorschautext: 277 bis heute Abend, danach 333</p><p class="warum">Kurze Frist-Mail. Ein Gedanke, ein Knopf, kein neuer Inhalt.</p><div class="knoepfe"><button class="haupt" data-feld="html">HTML kopieren</button><button data-feld="betreff">Betreff</button><button data-feld="vorschautext">Vorschautext</button></div><details><summary>Vorschau anzeigen</summary><iframe loading="lazy" title="Vorschau: Heute Abend um 21 Uhr steigt der Preis"></iframe></details><script type="text/plain" data-html><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heute Abend um 21 Uhr steigt der Preis</title>
+  <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+</head>
+<!--
+  NACHKAUF-STRECKE STARTKLAR · mumlifebalance
+  ERZEUGT von scripts/startklar/mails-bauen.py — Änderungen dort, nicht hier.
+
+  Betreff     : Heute Abend um 21 Uhr steigt der Preis
+  Alternative : Letzter Tag zum Frühbucherpreis
+  Versand     : Mittwoch, 15. Oktober, 08:00
+
+  Kurze Frist-Mail. Ein Gedanke, ein Knopf, kein neuer Inhalt.
+  🚨 Nichts aufbauschen: der Kurs ist danach weiter da, nur teurer. Genau das
+     steht auch so drin — eine Frist, die mehr behauptet, als sie ist, zerstört
+     die nächste.
+-->
+<body style="margin:0;padding:0;background-color:#f1ecdd;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">277 bis heute Abend, danach 333 &nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f1ecdd;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+          <tr>
+            <td bgcolor="#12828c" style="background-color:#12828c;background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);border-radius:16px 16px 0 0;padding:42px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding-bottom:16px;"><span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance</span></td></tr>
+                <tr><td><h1 style="margin:0;font-family:Georgia,serif;font-size:30px;font-weight:bold;color:#f1ecdd;line-height:1.28;">Heute Abend um 21 Uhr</h1></td></tr>
+                <tr><td style="padding-top:14px;"><p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:#dcd5c0;line-height:1.5;">Danach kostet der Kurs 333 statt 277.</p></td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#ffffff;padding:38px 40px 34px 40px;">
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Hallo %FIRSTNAME%,</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">nur kurz, weil heute der letzte Tag ist: Der Fr&uuml;hbucherpreis f&uuml;r <strong>Easy KI f&uuml;r Networkerinnen</strong> gilt bis heute Abend um 21 Uhr. Danach kostet der Kurs 333 statt 277.</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#0c1c30;border-radius:12px;padding:22px 26px;"><p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#dc822e;text-transform:uppercase;letter-spacing:2px;">Worum es geht</p><p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:21px;color:#f1ecdd;line-height:1.45;">Am Ende hast du einen Arbeitsplatz mit deinem Wissen, deinen ersten eigenen Skill und einen Bot, der von selbst l&auml;uft.</p><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#a9bcc8;line-height:1.7;">Start ist der 1. November, die Kapitel kommen Woche f&uuml;r Woche, am 30. November ist der Kurs komplett.</p></td></tr></table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 30px 0;"><tr><td align="center"><a href="https://mumlifebalance.ch/ki-kurs/" style="display:inline-block;background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:17px;font-weight:bold;text-decoration:none;padding:16px 38px;border-radius:30px;">Jetzt zu 277 sichern</a></td></tr></table>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Falls du noch &uuml;berlegst: Der Kurs ist auch danach da. Es wird nur teurer, und das f&auml;nde ich schade, wenn du ohnehin einsteigen wolltest.</p>
+              <p style="margin:26px 0 0 0;font-family:Georgia,serif;font-style:italic;font-size:17px;color:#12828c;line-height:1.6;">Bis bald,<br>Patricia</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:22px 0 0 0;"><tr><td style="border-top:1px solid #e8e2d2;padding-top:18px;"><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#5f5748;line-height:1.75;">P.S. Die Anmeldung bleibt bis zum Donnerstag, 23. Oktober, 21 Uhr offen, danach schliesst sie ganz &mdash; weil ich die Gruppe w&auml;hrend der vier Wochen begleite.</p></td></tr></table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#29556d" style="background-color:#29556d;border-radius:0 0 16px 16px;padding:26px 40px;">
+              <p style="margin:0 0 6px 0;font-family:Georgia,serif;font-size:15px;color:#f1ecdd;line-height:1.5;">Funktionieren war gestern.</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#a9bcc8;line-height:1.6;">Patricia Ulmann &middot; mumlifebalance.ch</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+</script><script type="text/plain" data-betreff>Heute Abend um 21 Uhr steigt der Preis</script><script type="text/plain" data-vorschautext>277 bis heute Abend, danach 333</script></div></article><article class="mail"><div class="wann"><span class="nr">5</span><span class="tag">So 19.10.</span></div><div class="koerper"><h2 class="betreff">Was bei mir am Freitagmorgen passiert, während ich noch schlafe</h2><p class="vorschautext">Vorschautext: Kein Hochglanz, nur was tatsächlich läuft — inklusive dem, was schiefging</p><p class="warum">Beweis-Mail. Konkreter Alltag statt Versprechen — und bewusst MIT Panne,</p><div class="knoepfe"><button class="haupt" data-feld="html">HTML kopieren</button><button data-feld="betreff">Betreff</button><button data-feld="vorschautext">Vorschautext</button></div><details><summary>Vorschau anzeigen</summary><iframe loading="lazy" title="Vorschau: Was bei mir am Freitagmorgen passiert, während ich noch schlafe"></iframe></details><script type="text/plain" data-html><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Was bei mir am Freitagmorgen passiert, während ich noch schlafe</title>
+  <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+</head>
+<!--
+  NACHKAUF-STRECKE STARTKLAR · mumlifebalance
+  ERZEUGT von scripts/startklar/mails-bauen.py — Änderungen dort, nicht hier.
+
+  Betreff     : Was bei mir am Freitagmorgen passiert, während ich noch schlafe
+  Alternative : Ein ganz normaler Freitag
+  Versand     : Sonntag, 19. Oktober, 08:00
+
+  Beweis-Mail. Konkreter Alltag statt Versprechen — und bewusst MIT Panne,
+  weil eine Geschichte ohne Reibung wie Werbung klingt.
+  🚨 Alle Beispiele sind belegt: Kochbot (Modul 6.2), Freitags-Content (Modul 7),
+     Freigabe statt Autopilot (7.5), Doppelpost (9.4), Sicherheitsvorfall (10.1).
+  🚨 Der leere Beweis-Kasten steht bewusst drin. Vor dem Versand füllen oder raus.
+-->
+<body style="margin:0;padding:0;background-color:#f1ecdd;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Kein Hochglanz, nur was tatsächlich läuft — inklusive dem, was schiefging &nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f1ecdd;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+          <tr>
+            <td bgcolor="#12828c" style="background-color:#12828c;background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);border-radius:16px 16px 0 0;padding:42px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding-bottom:16px;"><span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance</span></td></tr>
+                <tr><td><h1 style="margin:0;font-family:Georgia,serif;font-size:30px;font-weight:bold;color:#f1ecdd;line-height:1.28;">Ein ganz normaler Freitag bei mir</h1></td></tr>
+                <tr><td style="padding-top:14px;"><p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:#dcd5c0;line-height:1.5;">Ohne Hochglanz. Mit dem Fehler, der mich fast einen Doppelpost gekostet hat.</p></td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#ffffff;padding:38px 40px 34px 40px;">
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Hallo %FIRSTNAME%,</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">ich erz&auml;hle dir heute keinen Nutzen, sondern einen Freitag.</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#e4f3f4;border-left:4px solid #12828c;border-radius:0 12px 12px 0;padding:22px 26px;"><p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#12828c;text-transform:uppercase;letter-spacing:2px;">Was l&auml;uft, bevor ich am Rechner sitze</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>Morgens</strong> liegt der Content f&uuml;r die ganze Woche fertig da &mdash; Reels, Karussells, Captions, je zwei Varianten zum Aussuchen.</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>Der Kochbot</strong> hat den Men&uuml;plan und die Einkaufsliste geschickt, sortiert nach dem Laden, in dem ich einkaufe.</p><p style="margin:0 0 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>Im Cockpit</strong> steht, was heute ansteht, was noch fehlt und wer daf&uuml;r dran ist.</p></td></tr></table>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Meine Arbeit daran ist: durchlesen, aussuchen, freigeben. Das dauert keine Stunde.</p>
+              <h2 style="margin:0 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#0c1c30;line-height:1.35;">Und jetzt der Teil, den sonst niemand erz&auml;hlt</h2>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Bei mir geht nichts ungepr&uuml;ft raus. Das ist eine bewusste Entscheidung, weil mein Konto an meinem Partnerunternehmen h&auml;ngt und ein unbedachter Satz mich mehr kostet, als eine automatisierte Woche mir spart.</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Trotzdem ist mir genau das passiert: Ich hatte ein Reel von Hand &uuml;ber die App gepostet, im Cockpit stand es aber weiter auf <em>wartet</em> &mdash; abends w&auml;re es ein zweites Mal eingeplant worden. Den Fehler sieht man nicht, bevor er passiert.</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Und einmal lagen bei mir Zugangsschl&uuml;ssel im Klartext und die Daten von zweiunddreissig Kundinnen offen abrufbar. Aufgefallen ist es niemandem &mdash; gefunden wurde es nur, weil einmal jemand gezielt nachgesehen hat.</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#0c1c30;border-radius:12px;padding:22px 26px;"><p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#dc822e;text-transform:uppercase;letter-spacing:2px;">Warum ich dir das erz&auml;hle</p><p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:21px;color:#f1ecdd;line-height:1.45;">Beides steht als eigene Lektion im Kurs.</p><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#a9bcc8;line-height:1.7;">Sch&ouml;n sieht es nicht aus. Es steht drin, weil du es sonst selbst herausfindest &mdash; und zwar in dem Moment, in dem es schon passiert ist.</p></td></tr></table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#f6f3ea;border-left:4px solid #d8d0bd;border-radius:0 12px 12px 0;padding:22px 26px;"><p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:15px;color:#9a8f7c;line-height:1.7;"><strong>&#9888;&#65039; Hier geh&ouml;rt ein Screenshot hin &mdash; vor dem Versand einsetzen oder diesen Kasten l&ouml;schen.</strong></p><p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#9a8f7c;line-height:1.7;">Ein abfotografierter Chat oder eine abgetippte Sprachnachricht wirkt st&auml;rker als jeder Satz von mir. Frag die Kundin vorher, ob du es zeigen darfst. Ohne ihr Ja bleibt der Kasten leer.</p></td></tr></table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 30px 0;"><tr><td align="center"><a href="https://mumlifebalance.ch/ki-kurs/" style="display:inline-block;background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:17px;font-weight:bold;text-decoration:none;padding:16px 38px;border-radius:30px;">Alles zum Kurs</a></td></tr></table>
+              <p style="margin:26px 0 0 0;font-family:Georgia,serif;font-style:italic;font-size:17px;color:#12828c;line-height:1.6;">Bis bald,<br>Patricia</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:22px 0 0 0;"><tr><td style="border-top:1px solid #e8e2d2;padding-top:18px;"><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#5f5748;line-height:1.75;">P.S. Die Anmeldung ist noch bis Donnerstag, 23. Oktober, 21 Uhr offen.</p></td></tr></table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#29556d" style="background-color:#29556d;border-radius:0 0 16px 16px;padding:26px 40px;">
+              <p style="margin:0 0 6px 0;font-family:Georgia,serif;font-size:15px;color:#f1ecdd;line-height:1.5;">Funktionieren war gestern.</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#a9bcc8;line-height:1.6;">Patricia Ulmann &middot; mumlifebalance.ch</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+</script><script type="text/plain" data-betreff>Was bei mir am Freitagmorgen passiert, während ich noch schlafe</script><script type="text/plain" data-vorschautext>Kein Hochglanz, nur was tatsächlich läuft — inklusive dem, was schiefging</script></div></article><article class="mail"><div class="wann"><span class="nr">6</span><span class="tag">Di 21.10.</span></div><div class="koerper"><h2 class="betreff">Für wen der Kurs nichts ist</h2><p class="vorschautext">Vorschautext: Drei Gründe, es sein zu lassen — und einer, es zu tun</p><p class="warum">Disqualifikations-Mail (Hormozi: wer aussortiert, erhöht den Wert für die</p><div class="knoepfe"><button class="haupt" data-feld="html">HTML kopieren</button><button data-feld="betreff">Betreff</button><button data-feld="vorschautext">Vorschautext</button></div><details><summary>Vorschau anzeigen</summary><iframe loading="lazy" title="Vorschau: Für wen der Kurs nichts ist"></iframe></details><script type="text/plain" data-html><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Für wen der Kurs nichts ist</title>
+  <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+</head>
+<!--
+  NACHKAUF-STRECKE STARTKLAR · mumlifebalance
+  ERZEUGT von scripts/startklar/mails-bauen.py — Änderungen dort, nicht hier.
+
+  Betreff     : Für wen der Kurs nichts ist
+  Alternative : Lies das, bevor du buchst
+  Versand     : Dienstag, 21. Oktober, 08:00
+
+  Disqualifikations-Mail (Hormozi: wer aussortiert, erhöht den Wert für die
+  Richtigen). Patricias eigene Haltung steht in brand-voice.md: sie will keine
+  Frauen, die Tipps sammeln und nichts umsetzen, und niemanden, der auf ein
+  Wunder hofft.
+-->
+<body style="margin:0;padding:0;background-color:#f1ecdd;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Drei Gründe, es sein zu lassen — und einer, es zu tun &nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f1ecdd;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+          <tr>
+            <td bgcolor="#12828c" style="background-color:#12828c;background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);border-radius:16px 16px 0 0;padding:42px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding-bottom:16px;"><span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance</span></td></tr>
+                <tr><td><h1 style="margin:0;font-family:Georgia,serif;font-size:30px;font-weight:bold;color:#f1ecdd;line-height:1.28;">Für wen der Kurs nichts ist</h1></td></tr>
+                <tr><td style="padding-top:14px;"><p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:#dcd5c0;line-height:1.5;">Mir ist lieber, du steigst nicht ein, als dass er bei dir liegen bleibt.</p></td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#ffffff;padding:38px 40px 34px 40px;">
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Hallo %FIRSTNAME%,</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">am Donnerstag schliesst die Anmeldung. Bevor du dich entscheidest, schreibe ich dir lieber auf, wann du es <strong>sein lassen</strong> solltest.</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#faf2ea;border-left:4px solid #dc822e;border-radius:0 12px 12px 0;padding:22px 26px;"><p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#b56a24;text-transform:uppercase;letter-spacing:2px;">Lass es, wenn</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">du <strong>Kurse sammelst und nichts umsetzt</strong>. Dieser hier verlangt, dass du zwischendurch etwas anklickst. Sonst hast du am 30. November zehn Module gesehen und nichts gebaut.</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">du dir davon erhoffst, dass <strong>dein Business von allein l&auml;uft</strong>. Es nimmt dir Arbeit ab, die sich wiederholt. Es nimmt dir nicht ab, zu entscheiden, was du eigentlich willst.</p><p style="margin:0 0 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;">du <strong>im November keine zwei Stunden pro Woche</strong> hast. Dann warte auf den n&auml;chsten Durchgang, das ist ehrlicher zu dir selbst.</p></td></tr></table>
+              <h2 style="margin:0 0 14px 0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#0c1c30;line-height:1.35;">Und jetzt die andere Seite</h2>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Steig ein, wenn du jede Woche dieselben Arbeiten machst und merkst, dass sie dich auffressen. Content, Mails, Planung, Antworten &mdash; genau das ist der Teil, den du abgeben kannst.</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Du f&auml;ngst im Chat an, den du schon kennst. Die erste Stufe ist nach einem Abend erledigt, und schon die tr&auml;gt.</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 30px 0;"><tr><td align="center"><a href="https://mumlifebalance.ch/ki-kurs/" style="display:inline-block;background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:17px;font-weight:bold;text-decoration:none;padding:16px 38px;border-radius:30px;">Alles zum Kurs</a></td></tr></table>
+              <p style="margin:26px 0 0 0;font-family:Georgia,serif;font-style:italic;font-size:17px;color:#12828c;line-height:1.6;">Bis bald,<br>Patricia</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:22px 0 0 0;"><tr><td style="border-top:1px solid #e8e2d2;padding-top:18px;"><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#5f5748;line-height:1.75;">P.S. Noch bis Donnerstag, 23. Oktober, 21 Uhr, danach schliesst die Anmeldung.</p></td></tr></table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#29556d" style="background-color:#29556d;border-radius:0 0 16px 16px;padding:26px 40px;">
+              <p style="margin:0 0 6px 0;font-family:Georgia,serif;font-size:15px;color:#f1ecdd;line-height:1.5;">Funktionieren war gestern.</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#a9bcc8;line-height:1.6;">Patricia Ulmann &middot; mumlifebalance.ch</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+</script><script type="text/plain" data-betreff>Für wen der Kurs nichts ist</script><script type="text/plain" data-vorschautext>Drei Gründe, es sein zu lassen — und einer, es zu tun</script></div></article><article class="mail"><div class="wann"><span class="nr">7</span><span class="tag">Do 23.10.</span><span class="uhr">08:00</span></div><div class="koerper"><h2 class="betreff">Heute Abend schliesst die Anmeldung</h2><p class="vorschautext">Vorschautext: Alles auf einen Blick, damit du in zwei Minuten entscheiden kannst</p><p class="warum">Zusammenfassungs-Mail. Alles, was sie zum Entscheiden braucht, auf einem Blick.</p><div class="knoepfe"><button class="haupt" data-feld="html">HTML kopieren</button><button data-feld="betreff">Betreff</button><button data-feld="vorschautext">Vorschautext</button></div><details><summary>Vorschau anzeigen</summary><iframe loading="lazy" title="Vorschau: Heute Abend schliesst die Anmeldung"></iframe></details><script type="text/plain" data-html><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heute Abend schliesst die Anmeldung</title>
+  <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+</head>
+<!--
+  NACHKAUF-STRECKE STARTKLAR · mumlifebalance
+  ERZEUGT von scripts/startklar/mails-bauen.py — Änderungen dort, nicht hier.
+
+  Betreff     : Heute Abend schliesst die Anmeldung
+  Alternative : Letzter Tag für Easy KI
+  Versand     : Donnerstag, 23. Oktober, 08:00
+
+  Zusammenfassungs-Mail. Alles, was sie zum Entscheiden braucht, auf einem Blick.
+  Kein neues Argument — wer bis hier gelesen hat, kennt sie alle.
+-->
+<body style="margin:0;padding:0;background-color:#f1ecdd;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Alles auf einen Blick, damit du in zwei Minuten entscheiden kannst &nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f1ecdd;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+          <tr>
+            <td bgcolor="#12828c" style="background-color:#12828c;background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);border-radius:16px 16px 0 0;padding:42px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding-bottom:16px;"><span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance</span></td></tr>
+                <tr><td><h1 style="margin:0;font-family:Georgia,serif;font-size:30px;font-weight:bold;color:#f1ecdd;line-height:1.28;">Heute ist der letzte Tag</h1></td></tr>
+                <tr><td style="padding-top:14px;"><p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:#dcd5c0;line-height:1.5;">Um 21 Uhr schliesst die Anmeldung, und ich begleite die Gruppe ab dem 1. November.</p></td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#ffffff;padding:38px 40px 34px 40px;">
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Hallo %FIRSTNAME%,</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">heute Abend um 21 Uhr schliesst die Anmeldung f&uuml;r <strong>Easy KI f&uuml;r Networkerinnen</strong>. Damit du nicht nochmal suchen musst, hier alles auf einmal:</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#e4f3f4;border-left:4px solid #12828c;border-radius:0 12px 12px 0;padding:22px 26px;"><p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#12828c;text-transform:uppercase;letter-spacing:2px;">Was du bekommst</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>Zehn Module</strong>, ab 1. November Woche f&uuml;r Woche, komplett am 30. November</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>Drei Stufen</strong> &mdash; Chat, Zwischenstufe, eigener Arbeitsplatz. Auf jeder ein Ergebnis, das du beh&auml;ltst</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>Dein Arbeitsplatz</strong> mit deinem Wissen, deiner Sprache, deiner Kundin &mdash; den jeder Auftrag liest</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>Dein erster eigener Skill</strong> f&uuml;r eine Arbeit, die jede Woche wiederkommt</p><p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>Ein Bot</strong>, der morgens von selbst schreibt, auch wenn dein Laptop zu ist</p><p style="margin:0 0 0;font-family:Arial,sans-serif;font-size:15px;color:#0c1c30;line-height:1.7;"><strong>Zwei Live-Calls</strong> w&auml;hrend des Kurses</p></td></tr></table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px 0;"><tr><td style="background-color:#0c1c30;border-radius:12px;padding:22px 26px;"><p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;color:#dc822e;text-transform:uppercase;letter-spacing:2px;">Preis</p><p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:21px;color:#f1ecdd;line-height:1.45;">333 &mdash; oder in Raten</p><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#a9bcc8;line-height:1.7;">Die Anmeldung schliesst heute um 21 Uhr. Danach gibt es den Kurs erst wieder im n&auml;chsten Durchgang.</p></td></tr></table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 30px 0;"><tr><td align="center"><a href="https://mumlifebalance.ch/ki-kurs/" style="display:inline-block;background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:17px;font-weight:bold;text-decoration:none;padding:16px 38px;border-radius:30px;">Jetzt einsteigen</a></td></tr></table>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Wenn du Fragen hast, antworte einfach auf diese Mail. Ich lese sie selbst, und heute bin ich den ganzen Tag erreichbar.</p>
+              <p style="margin:26px 0 0 0;font-family:Georgia,serif;font-style:italic;font-size:17px;color:#12828c;line-height:1.6;">Bis bald,<br>Patricia</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:22px 0 0 0;"><tr><td style="border-top:1px solid #e8e2d2;padding-top:18px;"><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#5f5748;line-height:1.75;">P.S. Falls du gleich alles willst: In der <a href="https://mumlifebalance.thrivecart.com/mba-webinar/" style="color:#12828c;">Mum Business Academy</a> sind alle vier Kurse drin, der KI-Kurs ab dem 1. November inklusive, dazu ein Jahr Begleitung und zweimal im Monat ein Call.</p></td></tr></table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#29556d" style="background-color:#29556d;border-radius:0 0 16px 16px;padding:26px 40px;">
+              <p style="margin:0 0 6px 0;font-family:Georgia,serif;font-size:15px;color:#f1ecdd;line-height:1.5;">Funktionieren war gestern.</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#a9bcc8;line-height:1.6;">Patricia Ulmann &middot; mumlifebalance.ch</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+</script><script type="text/plain" data-betreff>Heute Abend schliesst die Anmeldung</script><script type="text/plain" data-vorschautext>Alles auf einen Blick, damit du in zwei Minuten entscheiden kannst</script></div></article><article class="mail"><div class="wann"><span class="nr">8</span><span class="tag">Do 23.10.</span><span class="uhr">19:00</span></div><div class="koerper"><h2 class="betreff">Noch zwei Stunden</h2><p class="vorschautext">Vorschautext: Kurz und ehrlich: das ist die letzte Mail dazu</p><p class="warum">Die kürzeste Mail der Strecke. Ein Gedanke, ein Knopf.</p><div class="knoepfe"><button class="haupt" data-feld="html">HTML kopieren</button><button data-feld="betreff">Betreff</button><button data-feld="vorschautext">Vorschautext</button></div><details><summary>Vorschau anzeigen</summary><iframe loading="lazy" title="Vorschau: Noch zwei Stunden"></iframe></details><script type="text/plain" data-html><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noch zwei Stunden</title>
+  <!--[if mso]><xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument></xml><![endif]-->
+</head>
+<!--
+  NACHKAUF-STRECKE STARTKLAR · mumlifebalance
+  ERZEUGT von scripts/startklar/mails-bauen.py — Änderungen dort, nicht hier.
+
+  Betreff     : Noch zwei Stunden
+  Alternative : Dann schliesst die Anmeldung
+  Versand     : Donnerstag, 23. Oktober, 19:00
+
+  Die kürzeste Mail der Strecke. Ein Gedanke, ein Knopf.
+  🚨 Julias Muster: am letzten Tag zwei Mails, morgens und abends. Diese ist
+     bewusst knapp — wer jetzt noch liest, braucht kein Argument mehr, sondern
+     einen Link.
+-->
+<body style="margin:0;padding:0;background-color:#f1ecdd;font-family:Arial,sans-serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Kurz und ehrlich: das ist die letzte Mail dazu &nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;</div>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f1ecdd;">
+    <tr>
+      <td align="center" style="padding:30px 16px;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
+          <tr>
+            <td bgcolor="#12828c" style="background-color:#12828c;background:linear-gradient(135deg,#0c1c30 0%,#29556d 60%,#12828c 100%);border-radius:16px 16px 0 0;padding:42px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="padding-bottom:16px;"><span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance</span></td></tr>
+                <tr><td><h1 style="margin:0;font-family:Georgia,serif;font-size:30px;font-weight:bold;color:#f1ecdd;line-height:1.28;">Noch zwei Stunden</h1></td></tr>
+                <tr><td style="padding-top:14px;"><p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:#dcd5c0;line-height:1.5;">Das ist die letzte Mail zum Kurs.</p></td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#ffffff;padding:38px 40px 34px 40px;">
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Hallo %FIRSTNAME%,</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">um 21 Uhr schliesst die Anmeldung f&uuml;r <strong>Easy KI f&uuml;r Networkerinnen</strong>. Das ist die letzte Mail dazu, danach habe ich Ruhe und du auch.</p>
+              <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;line-height:1.85;">Falls du die ganze Woche &uuml;berlegt hast: Der Kurs f&auml;ngt bei dem Chat an, den du schon kennst. Du musst heute nichts k&ouml;nnen, du musst nur anfangen wollen.</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 30px 0;"><tr><td align="center"><a href="https://mumlifebalance.ch/ki-kurs/" style="display:inline-block;background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:17px;font-weight:bold;text-decoration:none;padding:16px 38px;border-radius:30px;">Jetzt noch einsteigen</a></td></tr></table>
+              <p style="margin:26px 0 0 0;font-family:Georgia,serif;font-style:italic;font-size:17px;color:#12828c;line-height:1.6;">Bis bald,<br>Patricia</p>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:22px 0 0 0;"><tr><td style="border-top:1px solid #e8e2d2;padding-top:18px;"><p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#5f5748;line-height:1.75;">P.S. Wenn es dieses Mal nicht passt, ist das v&ouml;llig in Ordnung. Dann sehen wir uns beim n&auml;chsten Durchgang.</p></td></tr></table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#29556d" style="background-color:#29556d;border-radius:0 0 16px 16px;padding:26px 40px;">
+              <p style="margin:0 0 6px 0;font-family:Georgia,serif;font-size:15px;color:#f1ecdd;line-height:1.5;">Funktionieren war gestern.</p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#a9bcc8;line-height:1.6;">Patricia Ulmann &middot; mumlifebalance.ch</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+</script><script type="text/plain" data-betreff>Noch zwei Stunden</script><script type="text/plain" data-vorschautext>Kurz und ehrlich: das ist die letzte Mail dazu</script></div></article></main><footer><p><strong>Was in diesen Mails steht, ist belegt.</strong> Vier Kinder, achtzehn Stunden Woche, keine technische Ausbildung, der Kochbot, das Cockpit, der Doppelpost-Fehler und die offenen Zugangsschl&uuml;ssel &mdash; alles aus den Kursunterlagen. Die Kundin in Mail&nbsp;3 steht anonym und als Zusammenfassung drin, weil ihre Freigabe noch aussteht und ihr Wortlaut unabgetippt auf dem Handy liegt.</p><p>&bdquo;HTML kopieren&ldquo; legt den Quelltext <strong>und</strong> die gesetzte Mail ab: in den Code-Editor von ActiveCampaign kommt der Quelltext, in ein Textfeld die fertige Mail.</p></footer></div><script>
+function ablegen(knopf, text, nurText) {
+  var alt = knopf.textContent;
+  function gut() {
+    knopf.textContent = "kopiert ✓"; knopf.classList.add("fertig");
+    setTimeout(function () { knopf.textContent = alt; knopf.classList.remove("fertig"); }, 1800);
+  }
+  function auswaehlen() {
+    // Rückweg, wenn die Zwischenablage abgelehnt wird: Text markieren,
+    // damit sie ihn selbst kopieren kann.
+    var f = document.createElement("textarea");
+    f.value = text; f.setAttribute("readonly", "");
+    f.style.position = "fixed"; f.style.top = "-1000px";
+    document.body.appendChild(f); f.select();
+    try { document.execCommand("copy"); gut(); }
+    catch (e) { knopf.textContent = "ging nicht — Vorschau öffnen"; }
+    f.remove();
+  }
+  if (!navigator.clipboard) { auswaehlen(); return; }
+  if (nurText || !window.ClipboardItem || !navigator.clipboard.write) {
+    navigator.clipboard.writeText(text).then(gut, auswaehlen);
+    return;
+  }
+  // Zwei Formen: Quelltext für den Code-Editor, gesetzte Mail für ein Textfeld.
+  try {
+    navigator.clipboard.write([new ClipboardItem({
+      "text/plain": new Blob([text], { type: "text/plain" }),
+      "text/html": new Blob([text], { type: "text/html" })
+    })]).then(gut, function () { navigator.clipboard.writeText(text).then(gut, auswaehlen); });
+  } catch (e) { auswaehlen(); }
+}
+
+document.addEventListener("click", function (e) {
+  var k = e.target.closest("button[data-feld]");
+  if (!k) return;
+  var karte = k.closest(".mail");
+  var quelle = karte.querySelector('script[type="text/plain"][data-' + k.dataset.feld + ']');
+  if (!quelle) return;
+  ablegen(k, quelle.textContent, k.dataset.feld !== "html");
+});
+
+// Die Vorschau erst beim Aufklappen befüllen — acht Mails gleichzeitig zu
+// rendern macht die Seite auf dem Handy träge.
+document.addEventListener("toggle", function (e) {
+  var d = e.target;
+  if (d.tagName !== "DETAILS" || !d.open) return;
+  var rahmen = d.querySelector("iframe");
+  if (!rahmen || rahmen.dataset.gefuellt) return;
+  var q = d.closest(".mail").querySelector('script[data-html]');
+  rahmen.setAttribute("srcdoc", q.textContent);
+  rahmen.dataset.gefuellt = "1";
+}, true);
+</script>
