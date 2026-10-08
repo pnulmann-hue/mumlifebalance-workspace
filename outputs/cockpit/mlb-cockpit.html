@@ -1875,6 +1875,16 @@
   }
   .ti-hinweis b { color: var(--orange); }
   /* --- Reiter Launch (08.10.2026) --------------------------------------- */
+  /* „Was wann rausgeht" als aufklappbarer Block (08.10.2026) */
+  .uetermine > summary { cursor: pointer; display: flex; align-items: center;
+                         gap: 10px; list-style: none; }
+  .uetermine > summary::-webkit-details-marker { display: none; }
+  .uetermine > summary h2 { margin: 0; }
+  .uetermine > summary::after { content: "\25be"; margin-left: auto;
+                                color: var(--ink-soft); font-size: 18px; }
+  .uetermine[open] > summary::after { content: "\25b4"; }
+  .uezahl { background: var(--surface-2); color: var(--ink-soft);
+            border-radius: 99px; padding: 2px 10px; font-size: 13px; }
   .la-hint { color: var(--ink-soft); font-size: 13px; margin: 4px 0 0; }
   .la-hint b { color: var(--ink); }
   .la-del { margin-left: auto; }
@@ -3408,9 +3418,12 @@
     var ohneDatum = echte.filter(function (b) { return !b.obj.datum; });
 
     // --- Was wann rausgeht ---------------------------------------------
-    var plan = document.createElement("div");
-    plan.className = "panel uebersicht";
-    plan.innerHTML = '<h2>Was wann rausgeht</h2>' +
+    // 🚨 Aufklappbar und ZUGEKLAPPT, seit 08.10.2026. Ueber hundert Zeilen
+    //    standen vor der Ideenliste, und am Handy kam dort niemand mehr an.
+    var plan = document.createElement("details");
+    plan.className = "panel uebersicht uetermine";
+    plan.innerHTML = '<summary><h2>Was wann rausgeht</h2>' +
+      '<span class="uezahl">' + mitDatum.length + '</span></summary>' +
       '<p class="note">Alle ' + mitDatum.length + ' Beitr\u00e4ge mit Datum, ' +
       '\u00fcber alle Wochen \u2014 auch die, die oben gerade nicht im Bild sind.</p>';
     if (!mitDatum.length) {
