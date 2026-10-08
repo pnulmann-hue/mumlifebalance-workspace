@@ -1,0 +1,168 @@
+<title>Funnel-Checkliste</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"><style>
+/* Eine Spalte, Phase für Phase. Die Reihenfolge IST die Information:
+   so läuft ein Funnel von der Idee bis zur Auswertung. */
+:root{
+  --grund:#f3efe4; --blatt:#fbf8f1; --blatt2:#ebe4d3;
+  --tinte:#0c1c30; --weich:#5f6f80; --linie:rgba(12,28,48,.14);
+  --petrol:#12828c; --petrol-w:rgba(18,130,140,.12);
+  --orange:#dc822e; --orange-w:rgba(220,130,46,.15);
+  --gut:#2f7d5b;
+  --display:"Philosopher",Georgia,serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --grund:#0c1c30; --blatt:#12283f; --blatt2:#1a3450;
+  --tinte:#f1ecdd; --weich:#a8bccb; --linie:rgba(241,236,221,.16);
+  --petrol:#35a8b2; --petrol-w:rgba(53,168,178,.16);
+  --orange:#eb9a4f; --orange-w:rgba(235,154,79,.18);
+  --gut:#5fb98d; color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --grund:#0c1c30; --blatt:#12283f; --blatt2:#1a3450;
+  --tinte:#f1ecdd; --weich:#a8bccb; --linie:rgba(241,236,221,.16);
+  --petrol:#35a8b2; --petrol-w:rgba(53,168,178,.16);
+  --orange:#eb9a4f; --orange-w:rgba(235,154,79,.18);
+  --gut:#5fb98d; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--grund);color:var(--tinte);font-family:var(--body);
+     font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.huelle{max-width:840px;margin:0 auto;padding-block:26px 80px;padding-left:16px;padding-right:16px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(26px,6vw,36px);
+   line-height:1.14;margin:0 0 8px;text-wrap:balance}
+.unter{margin:0;color:var(--weich);font-size:15px;max-width:62ch}
+
+.leiste{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--grund);
+        padding:14px 0 12px;margin:22px 0 0;border-bottom:1px solid var(--linie);
+        display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+select{font:inherit;font-size:15px;background:var(--blatt);color:var(--tinte);
+       border:1px solid var(--linie);border-radius:10px;padding:9px 12px;max-width:100%}
+select:focus-visible{outline:2px solid var(--petrol);outline-offset:1px}
+.stand{margin-left:auto;font-size:14px;color:var(--weich);font-variant-numeric:tabular-nums}
+.stand b{font-family:var(--display);font-size:19px;color:var(--tinte)}
+.balken{height:6px;border-radius:99px;background:var(--blatt2);overflow:hidden;
+        flex:1 1 140px;min-width:120px}
+.balken i{display:block;height:100%;background:var(--petrol);width:0;
+          transition:width .25s ease}
+@media (prefers-reduced-motion:reduce){.balken i{transition:none}}
+
+.phase{margin:26px 0 0;background:var(--blatt);border:1px solid var(--linie);
+       border-radius:16px;overflow:hidden}
+.phase>summary{cursor:pointer;list-style:none;padding:16px 20px;display:flex;
+               gap:12px;align-items:baseline;flex-wrap:wrap}
+.phase>summary::-webkit-details-marker{display:none}
+.phase>summary::before{content:"\25b6";font-size:10px;color:var(--weich);
+                       transition:transform .15s ease}
+.phase[open]>summary::before{transform:rotate(90deg)}
+.phase h2{font-family:var(--display);font-weight:400;font-size:21px;margin:0;
+          line-height:1.25}
+.phase .zahl{margin-left:auto;font-size:13px;color:var(--weich);
+             font-variant-numeric:tabular-nums;white-space:nowrap}
+.phase .zahl.voll{color:var(--gut);font-weight:600}
+.phase .was{flex:1 1 100%;margin:2px 0 0;font-size:14px;color:var(--weich)}
+.punkte{padding:0 20px 18px;display:flex;flex-direction:column;gap:2px}
+
+.punkt{display:grid;grid-template-columns:26px minmax(0,1fr);gap:10px;
+       padding:12px 0;border-top:1px solid var(--linie)}
+.punkt:first-child{border-top:0}
+.punkt input{width:19px;height:19px;margin-top:3px;accent-color:var(--petrol);cursor:pointer}
+.punkt label{cursor:pointer;font-size:15.5px;line-height:1.55}
+.punkt.ab label{color:var(--weich);text-decoration:line-through}
+.warum{margin:6px 0 0;font-size:13.5px;line-height:1.65;color:var(--weich);
+       border-left:2px solid var(--orange);padding-left:11px}
+.warum code{background:var(--orange-w);border-radius:4px;padding:1px 5px;
+            font-size:12.5px;word-break:break-word}
+
+.fuss{margin:34px 0 0;padding-top:18px;border-top:1px solid var(--linie);
+      font-size:13.5px;color:var(--weich);line-height:1.7}
+.hinweis{background:var(--petrol-w);border-radius:12px;padding:12px 16px;
+         font-size:14px;margin:18px 0 0}
+</style><div class="huelle"><h1>Funnel-Checkliste</h1><p class="unter">26 Punkte in sechs Phasen. Neben jedem steht, was beim letzten Mal schiefging &mdash; deshalb ist die Liste so lang und deshalb lohnt sie sich.</p><div class="leiste"><select id="wahl" aria-label="Funnel ausw&auml;hlen"></select><div class="balken"><i id="fuell"></i></div><span class="stand" id="stand"><b>0</b> von 26</span></div><details class="phase" open><summary><h2>Bevor du baust</h2><span class="zahl">0 von 4</span><p class="was">Vier Fragen, die später teuer werden, wenn sie offenbleiben.</p></summary><div class="punkte"><div class="punkt"><input type="checkbox" id="plan-1" data-k="plan-1"><div><label for="plan-1">Ein Problem, eine Verwandlung — in einem Satz</label><p class="warum">Wenn du es nicht in einem Satz sagen kannst, steht es auch auf der Seite nicht klar da. Gehört in <code>active-funnels.json</code> unter <code>problem</code> und <code>transformation</code>.</p></div></div><div class="punkt"><input type="checkbox" id="plan-2" data-k="plan-2"><div><label for="plan-2">Das Anschluss-Angebot steht fest</label><p class="warum">Was kauft sie nach dem Freebie? Wenn das erst danach überlegt wird, endet der Funnel in einer Sackgasse. Von 16 Funnels hatten 6 kein <code>produkttreppe_anschluss</code>.</p></div></div><div class="punkt"><input type="checkbox" id="plan-3" data-k="plan-3"><div><label for="plan-3">Im Ziel-Checkout nachgesehen, was dort als Upsell hängt</label><p class="warum">Bei den 90 Storyideen lag ein Upsell auf die Instagram-Kundenmaschine für 97 — acht Tage nach einem 333er-Pitch hätte die Kundin denselben Kurs billiger gesehen und ab dann auf den nächsten Preis gewartet.</p></div></div><div class="punkt"><input type="checkbox" id="plan-4" data-k="plan-4"><div><label for="plan-4">Der Funnel steht in <code>active-funnels.json</code></label><p class="warum">Was dort fehlt, kennen die Content-Skills nicht. Dann schreibt niemand Beiträge darauf.</p></div></div></div></details><details class="phase" open><summary><h2>ActiveCampaign</h2><span class="zahl">0 von 5</span><p class="was">Hier entstehen die Fehler, die man erst Wochen später an einer Null sieht.</p></summary><div class="punkte"><div class="punkt"><input type="checkbox" id="ac-1" data-k="ac-1"><div><label for="ac-1">Genau EIN Eintrags-Tag, benannt „0€ &lt;Name&gt;“</label><p class="warum">Beim Bio-Check sind im April acht Tags auf einen Schlag entstanden, fünf davon blieben für immer leer. Ein Funnel, ein Tag.</p></div></div><div class="punkt"><input type="checkbox" id="ac-2" data-k="ac-2"><div><label for="ac-2">Der Tag ist über die ID eingetragen, nicht über den Namen</label><p class="warum">Ein Tag lässt sich umbenennen. Die Funnel-Definition nannte einmal „Bio-Check Lead“ (0 Kontakte), während der echte Eintrags-Tag längst anders hiess — in der Auswertung stand überall eine Null.</p></div></div><div class="punkt"><input type="checkbox" id="ac-3" data-k="ac-3"><div><label for="ac-3"><code>multientry</code> geprüft, bevor ein Tag nachträglich gesetzt wird</label><p class="warum">Alle geprüften Automationen haben <code>multientry=1</code>: dieselbe Person darf mehrfach durchlaufen. Bei der Story-Challenge ist das passiert — <code>entered=10</code> bei 8 Kontakten. Wer fünf Leuten einen Tag nachträglich gibt, schickt ihnen die ganze Strecke ein zweites Mal.</p></div></div><div class="punkt"><input type="checkbox" id="ac-4" data-k="ac-4"><div><label for="ac-4">Ein Ziel „hat gekauft“ in der Automation</label><p class="warum">Ohne das wird jemand weiter beworben, der schon gekauft hat. Das ist die ärgerlichste Mail, die ein Funnel verschicken kann.</p></div></div><div class="punkt"><input type="checkbox" id="ac-5" data-k="ac-5"><div><label for="ac-5">Auslieferung selbst getestet — mit einer echten Adresse eingetragen</label><p class="warum">Nicht die Automation ansehen, sondern sich eintragen und warten, ob die Mail kommt. Alles andere ist eine Vermutung.</p></div></div></div></details><details class="phase" open><summary><h2>Die Seiten</h2><span class="zahl">0 von 4</span><p class="was">Drei Adressen, und jede kann still kaputt sein.</p></summary><div class="punkte"><div class="punkt"><input type="checkbox" id="seiten-1" data-k="seiten-1"><div><label for="seiten-1">Landingpage ist erreichbar</label><p class="warum">Kein eigener Slug heisst nicht: keine Seite. Die Einzelkurse liegen alle auf <code>/angebote/</code> mit Sprungmarken. Vor „hat keine Landingpage“ immer die Sammelseite durchsehen.</p></div></div><div class="punkt"><input type="checkbox" id="seiten-2" data-k="seiten-2"><div><label for="seiten-2">Checkout-Status geprüft: live, nicht <code>test</code> oder <code>disabled</code></label><p class="warum">„Dein starkes Mama-Business“ stand auf <code>test</code> und war trotzdem von <code>/angebote/</code> verlinkt. Wer dort kaufte, bezahlte nichts — und die Seite sah dabei völlig normal aus. Ein 200er sagt nichts darüber, ob die Kasse Geld nimmt.</p></div></div><div class="punkt"><input type="checkbox" id="seiten-3" data-k="seiten-3"><div><label for="seiten-3">Danke-Seite steht und führt weiter</label><p class="warum">Die Danke-Seite ist der Platz für den Tripwire. Leer gelassen ist sie eine Sackgasse direkt nach dem Ja.</p></div></div><div class="punkt"><input type="checkbox" id="seiten-4" data-k="seiten-4"><div><label for="seiten-4">Jede Adresse einmal wirklich aufgerufen</label><p class="warum"><code>bio-check.mumlifebalance.ch</code> löst gar nicht auf — der lebende Bot liegt woanders. Gemerkt hat das niemand, weil niemand draufgeklickt hat.</p></div></div></div></details><details class="phase" open><summary><h2>Die Mails</h2><span class="zahl">0 von 5</span><p class="was">Was hier steht, liest sie als Erstes — oder nie wieder.</p></summary><div class="punkte"><div class="punkt"><input type="checkbox" id="mails-1" data-k="mails-1"><div><label for="mails-1">Jeder Knopf führt irgendwohin</label><p class="warum">In „1 Mail Stimcheck nach Masterclass“ zeigte der einzige Knopf auf <code>#aufzeichnung-folgt</code>, einen Platzhalter. Wer klickte, blieb stehen. Die Mail war damit funktionslos.</p></div></div><div class="punkt"><input type="checkbox" id="mails-2" data-k="mails-2"><div><label for="mails-2">Keine festen Datumsangaben in einer Dauer-Automation</label><p class="warum">„Bis Donnerstag, 23. Oktober“ stimmt drei Wochen später nicht mehr. In einer Automation, die evergreen läuft, gehört eine relative Frist hin — oder der Block kommt nach dem Launch wieder raus.</p></div></div><div class="punkt"><input type="checkbox" id="mails-3" data-k="mails-3"><div><label for="mails-3">Blacklisten-Prüfung gelaufen</label><p class="warum"><code>python scripts/cockpit/texte-pruefen.py</code>. Eine Prüfung aus dem Gedächtnis fand 1 von 4 Treffern — „Nicht weil etwas war. Sondern weil …“ steht über zwei Sätze.</p></div></div><div class="punkt"><input type="checkbox" id="mails-4" data-k="mails-4"><div><label for="mails-4">Umlaute und Schweizer ss geprüft</label><p class="warum">„so haettest du es geschrieben“ stand dreimal in einer fertigen Mail. Gefunden hat es Patricia, nicht die Selbstprüfung.</p></div></div><div class="punkt"><input type="checkbox" id="mails-5" data-k="mails-5"><div><label for="mails-5">Zwei Zielgruppen-Ebenen beachtet</label><p class="warum">„Deine Kundin“ ist fast immer die zweite Ebene — die Kundschaft deiner Kundin, und die ist nicht weiblich. Richtig: Kundschaft, Leute, Interessenten.</p></div></div></div></details><details class="phase" open><summary><h2>Der Zulauf</h2><span class="zahl">0 von 4</span><p class="was">Der häufigste Grund, warum ein fertiger Funnel bei null bleibt.</p></summary><div class="punkte"><div class="punkt"><input type="checkbox" id="zulauf-1" data-k="zulauf-1"><div><label for="zulauf-1">Mindestens ein geplanter Beitrag nennt das Stichwort</label><p class="warum">Vier Stichwörter liefen völlig leer: Automation gebaut, Tag angelegt, und kein einziger Beitrag nannte das Wort. Das ist kein Funnel-Problem, das ist ein Content-Problem — und es sieht von aussen gleich aus.</p></div></div><div class="punkt"><input type="checkbox" id="zulauf-2" data-k="zulauf-2"><div><label for="zulauf-2">ManyChat-Flow eingerichtet</label><p class="warum">ManyChat hat eigene Tags, und sie heissen anders als in ActiveCampaign. Für sechs Freebies gibt es dort gar keinen. Prüfen statt annehmen.</p></div></div><div class="punkt"><input type="checkbox" id="zulauf-3" data-k="zulauf-3"><div><label for="zulauf-3">Das Stichwort löst nur beim gemeinten Wort aus</label><p class="warum">ManyChat löst bei jedem Kommentar aus, in dem das Wort vorkommt — auch bei „ich STIMME dir zu“. Bei kurzen Alltagswörtern vorher überlegen.</p></div></div><div class="punkt"><input type="checkbox" id="zulauf-4" data-k="zulauf-4"><div><label for="zulauf-4">Telegram-Gruppe verlinkt, falls es eine gibt</label><p class="warum">Neun Angebote haben eine eigene Gruppe. Die Einladungslinks standen nirgends in der Doku, nur in den AC-Mails.</p></div></div></div></details><details class="phase" open><summary><h2>Nach dem Start</h2><span class="zahl">0 von 4</span><p class="was">Zwei Wochen später, mit Zahlen statt Gefühl.</p></summary><div class="punkte"><div class="punkt"><input type="checkbox" id="messen-1" data-k="messen-1"><div><label for="messen-1">Eintragungen je Beitrag ausgerechnet</label><p class="warum">BIO brachte 0,8 Eintragungen je Beitrag, ECHT1 bei dreimal so vielen Beiträgen nur 0,1. Ohne diese Zahl hält man den fleissigeren für den besseren.</p></div></div><div class="punkt"><input type="checkbox" id="messen-2" data-k="messen-2"><div><label for="messen-2">Verstanden, was die Zahl misst</label><p class="warum">Sie misst Eintragungen in die Mailliste, nicht Reaktionen im Messenger. Wer im DM antwortet und keine Adresse hinterlässt, fehlt. Die Zahl ist eine Untergrenze.</p></div></div><div class="punkt"><input type="checkbox" id="messen-3" data-k="messen-3"><div><label for="messen-3">Geteilte Tags nicht doppelt gezählt</label><p class="warum">SICHTBAR und ANLEITUNG zeigen beide auf den Starterguide, FAHRPLAN und SYSTEM beide auf den Fahrplan. Die Zahl gehört dem Freebie, nicht dem Stichwort.</p></div></div><div class="punkt"><input type="checkbox" id="messen-4" data-k="messen-4"><div><label for="messen-4">Entschieden: weiterlaufen lassen, nachschärfen oder abstellen</label><p class="warum">Ein Funnel, der nach vier Wochen null bringt und trotzdem stehenbleibt, kostet jede Woche Aufmerksamkeit und bringt nichts zurück.</p></div></div></div></details><p class="hinweis" id="speicherhinweis">Haken werden geladen &hellip;</p><div class="fuss"><p>Jeder Punkt steht f&uuml;r einen Fehler, der hier schon passiert ist: der tote Knopf, der nirgendwohin f&uuml;hrte &middot; die acht Tags, von denen f&uuml;nf leer blieben &middot; der Checkout auf <code>test</code>, der kein Geld nahm &middot; die vier Stichw&ouml;rter, die kein einziger Beitrag nannte.</p><p>Neuer Funnel in <code>active-funnels.json</code>? Dann l&auml;uft <code>scripts/cockpit/funnel-checkliste-bauen.py</code> noch einmal, sonst fehlt er in der Auswahl.</p></div></div><script>
+var FUNNELS = [{"id": "doterra-energie", "name": "doTERRA 3-Tage-Energie-Kickstart", "profil": "doterra", "status": "live"}, {"id": "doterra-energiekur", "name": "Energiekur — 4 Wochen Begleitung plus Produkte", "profil": "doterra", "status": "launching"}, {"id": "0-euro-potenzial-test", "name": "0€ Potenzial-Test (Quiz)", "profil": "mentoring", "status": "live"}, {"id": "0-euro-starterguide", "name": "0€ Starterguide", "profil": "mentoring", "status": "live-ohne-ac-funnel"}, {"id": "bio-check", "name": "Bio-Check für Network-Mamas", "profil": "mentoring", "status": "live"}, {"id": "content-box", "name": "Content-Box (30 Hook-Vorlagen)", "profil": "mentoring", "status": "live-als-bump"}, {"id": "ki-kurs", "name": "Easy KI für Networkerinnen — vom Chat zur Mitarbeiterin (KI-Kurs 333)", "profil": "mentoring", "status": "launching"}, {"id": "todo-halbieren", "name": "Freischaufeln (0€-Tool: To-Do halbieren → Business-Zeitfenster)", "profil": "mentoring", "status": "live"}, {"id": "lead-challenge", "name": "Lead-Challenge", "profil": "mentoring", "status": "live"}, {"id": "mama-business-bootcamp", "name": "Mama-Business-Bootcamp (Arbeitstitel)", "profil": "mentoring", "status": "in-aufbau"}, {"id": "mama-ceo", "name": "Mama-CEO — Möglichkeit schaffen, Business neben Familie aufzubauen", "profil": "mentoring", "status": "pilot-laeuft-und-solo-verkauf"}, {"id": "mba", "name": "Mum Business Academy (MBA)", "profil": "mentoring", "status": "warteliste-vor-launch"}, {"id": "produkt-ideen-finder", "name": "Produkt-Ideen-Finder", "profil": "mentoring", "status": "live"}, {"id": "stimm-check", "name": "Stimm-Check (0€-Tool: sechs Angaben, damit deine KI klingt wie du)", "profil": "mentoring", "status": "in-aufbau"}, {"id": "story-challenge", "name": "Story-Challenge (7-Tage-Workbook)", "profil": "mentoring", "status": "live-ohne-ac-funnel"}, {"id": "workbook-von-0-auf-echt", "name": "Workbook: Von 0 auf echt", "profil": "mentoring", "status": "live"}];
+var gewaehlt = null, haken = {}, db = null, doc = null, schreibt = false;
+
+function alleFelder(){ return Array.prototype.slice.call(document.querySelectorAll(".punkt input")); }
+
+function zeichnen(){
+  var f = alleFelder(), fertig = 0;
+  f.forEach(function(e){
+    var an = !!haken[e.dataset.k];
+    e.checked = an;
+    e.closest(".punkt").classList.toggle("ab", an);
+    if (an) fertig++;
+  });
+  document.querySelectorAll(".phase").forEach(function(p){
+    var ein = Array.prototype.slice.call(p.querySelectorAll(".punkt input"));
+    var n = ein.filter(function(e){ return haken[e.dataset.k]; }).length;
+    var z = p.querySelector(".zahl");
+    z.textContent = n + " von " + ein.length;
+    z.classList.toggle("voll", n === ein.length && ein.length > 0);
+  });
+  var s = document.getElementById("stand");
+  s.innerHTML = "<b>" + fertig + "</b> von " + f.length;
+  document.getElementById("fuell").style.width =
+    (f.length ? Math.round(fertig / f.length * 100) : 0) + "%";
+}
+
+function sichern(){
+  if (!doc || schreibt) return;
+  schreibt = true;
+  doc.set({ funnel: gewaehlt, haken: haken, stand: new Date().toISOString() })
+     .catch(function(){ /* beim nächsten Haken erneut */ })
+     .then(function(){ schreibt = false; });
+}
+
+function laden(id){
+  gewaehlt = id; haken = {}; zeichnen();
+  if (!db) return;
+  doc = db.doc("funnelcheck/" + id);
+  doc.get().then(function(s){
+    if (gewaehlt !== id) return;            // inzwischen umgeschaltet
+    haken = (s.exists && s.data().haken) || {};
+    zeichnen();
+  }).catch(function(){});
+}
+
+document.addEventListener("change", function(e){
+  var i = e.target.closest(".punkt input");
+  if (!i) return;
+  if (i.checked) haken[i.dataset.k] = true; else delete haken[i.dataset.k];
+  zeichnen(); sichern();
+});
+
+var wahl = document.getElementById("wahl");
+FUNNELS.forEach(function(f){
+  var o = document.createElement("option");
+  o.value = f.id;
+  o.textContent = f.name + (f.status && f.status !== "live" ? "  \u00b7 " + f.status : "");
+  wahl.appendChild(o);
+});
+wahl.addEventListener("change", function(){ laden(this.value); });
+
+zeichnen();
+if (FUNNELS.length) laden(FUNNELS[0].id);
+
+// 🚨 Über window.claude, nicht über das nackte `claude`: in der lokalen
+//    Vorschau gibt es den Viewer nicht, und ein ReferenceError würde das
+//    Skript an dieser Stelle abbrechen. Die Liste muss auch ohne Datenbank
+//    durchgehbar sein.
+// 🚨 Kein Umlaut in einem Bezeichner. Mit `brücke` war die Seite beim ersten
+//    Test tot: ohne charset las der Browser UTF-8 als Latin-1, der Name wurde
+//    unlesbar und das ganze Skript brach mit einem SyntaxError ab — Auswahl
+//    leer, Haken ohne Wirkung. `node --check` sieht das nicht, weil es die
+//    Datei korrekt als UTF-8 liest.
+var bruecke = (window.claude && window.claude.use)
+  ? window.claude.use("db")
+  : Promise.resolve(null);
+bruecke.then(function(d){
+  db = d;
+  var hin = document.getElementById("speicherhinweis");
+  if (!d) {
+    hin.textContent = "Die Haken lassen sich hier gerade nicht speichern \u2014 "
+      + "die Liste funktioniert trotzdem zum Durchgehen.";
+    return;
+  }
+  hin.textContent = "Die Haken werden gespeichert, je Funnel getrennt.";
+  if (gewaehlt) laden(gewaehlt);
+}).catch(function(){});
+</script>
