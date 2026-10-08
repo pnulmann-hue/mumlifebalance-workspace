@@ -8302,9 +8302,17 @@
           esc(st.fehler) + '). Lade das Cockpit neu und klapp die Automation nochmal auf.</p>' : "";
       return hinweis + mailListeAC(nummer);
     }
-    return '<div class="mentwuerfe"><p class="note">Neue Fassung von mir, noch nicht in ' +
-      'ActiveCampaign. Schau dir die Vorschau an, kopier das HTML und setz es in der ' +
-      'Automation ein.</p>' +
+    /* Entwurf oder Live-Stand? Das Feld `quelle` entscheidet, was dasteht —
+       die Launch-Mails kommen AUS ActiveCampaign, die Magnet-Ich-Mails gehen
+       erst hinein. Derselbe Satz für beide wäre für eine der beiden falsch. */
+    var ausAC = neu.every(function (e) { return e.quelle === "activecampaign"; });
+    return '<div class="mentwuerfe"><p class="note">' +
+      (ausAC
+        ? 'So stehen diese Mails heute in ActiveCampaign. Vorschau anschauen, '
+          + 'HTML kopieren, wenn du sie woanders brauchst.'
+        : 'Neue Fassung von mir, noch nicht in ActiveCampaign. Schau dir die '
+          + 'Vorschau an, kopier das HTML und setz es in der Automation ein.') +
+      '</p>' +
       neu.map(function (e) {
         return '<div class="mailkarte mentwurf" data-entwurf="' + esc(e.id) + '">' +
           '<div class="mailkopf"><strong>' + esc(e.betreff || "Ohne Betreff") + '</strong>' +
@@ -8318,7 +8326,8 @@
           (e.preheader ? '<button class="btn" data-kopie="preheader">Vorschautext kopieren</button>' : "") +
           '</div><iframe class="mentwurfvorschau" sandbox="" title="Vorschau der Mail"></iframe></div>';
       }).join("") +
-      '<p class="note" style="margin-top:16px">Und das steckt heute in ActiveCampaign:</p></div>' +
+      (ausAC ? '</div>'
+             : '<p class="note" style="margin-top:16px">Und das steckt heute in ActiveCampaign:</p></div>') +
       mailListeAC(nummer);
   }
   function mailEntwuerfeVerdrahten(box) {
