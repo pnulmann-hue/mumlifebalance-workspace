@@ -11527,7 +11527,7 @@
     text:     { hg: "dunkel", schrift: "philo",   align: "left",   balken: "aus",    pos: 46, groesse: 1 },
     bild:     { hg: "foto",   schrift: "sans-b",  align: "center", balken: "zeilen", pos: 66, groesse: 0.9 },
     learning: { hg: "creme",  schrift: "philo",   align: "center", balken: "aus",    pos: 46, groesse: 1.1 },
-    kurs:     { hg: "dunkel", schrift: "philo",   align: "left",   balken: "karte",  pos: 47, groesse: 0.95 },
+    kurs:     { hg: "dunkel", schrift: "philo",   align: "left",   balken: "karte",  pos: 47, groesse: 1.12 },
     bonus:    { hg: "petrol", schrift: "philo",   align: "center", balken: "aus",    pos: 44, groesse: 1 },
     frage:    { hg: "creme",  schrift: "philo",   align: "center", balken: "aus",    pos: 30, groesse: 1, sticker: "frage" },
     umfrage:  { hg: "creme",  schrift: "philo",   align: "center", balken: "aus",    pos: 30, groesse: 1, sticker: "umfrage" },
@@ -11571,6 +11571,19 @@
       s.stickerText = (fr.optA || "Ja") + " / " + (fr.optB || "Nein");
     s.verlauf = fr.verlauf !== undefined ? fr.verlauf : (s.balken === "aus" ? 58 : 26);
     return s;
+  }
+
+  function roundRect(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    if (ctx.roundRect) { ctx.roundRect(x, y, w, h, r); }
+    else {
+      ctx.moveTo(x + r, y);
+      ctx.arcTo(x + w, y, x + w, y + h, r);
+      ctx.arcTo(x + w, y + h, x, y + h, r);
+      ctx.arcTo(x, y + h, x, y, r);
+      ctx.arcTo(x, y, x + w, y, r);
+      ctx.closePath();
+    }
   }
 
   var storyFotoCache = {};
@@ -11622,7 +11635,7 @@
     return new Promise(function (fertig) {
       storySchriften().then(function () {
         storyFoto(fr, function (img) {
-          zeichne(img);
+          try { zeichne(img); } catch (e) { console.error("Story-Folie:", e); }
           fertig();
         });
       });
@@ -11671,19 +11684,19 @@
         hpx -= 6;
       }
       var akzent = fotoHg ? "#dc822e" : F.akzent;
-      if (fr.eyebrow) dazu("eyebrow", String(fr.eyebrow).toUpperCase(), "700 30px 'Source Sans 3', sans-serif", 30, 1.3, akzent, 26);
+      if (fr.eyebrow) dazu("eyebrow", String(fr.eyebrow).toUpperCase(), "700 32px 'Source Sans 3', sans-serif", 32, 1.3, akzent, 30);
       if (fr.pille) dazu("pille", fr.pille, "700 36px 'Source Sans 3', sans-serif", 36, 1.25, "#f1ecdd", 34);
       if (fr.text) teile.push({ art: "kopf", zeilen: hz, font: schrift.f(hpx), px: hpx, lh: 1.18, farbe: F.text, abstand: 0 });
       var punkte = Array.isArray(fr.punkte) ? fr.punkte : String(fr.punkte || "").split("\n");
       punkte = punkte.map(function (x) { return String(x).trim(); }).filter(Boolean);
       if (punkte.length) {
-        var ppx = Math.round(40 * Math.min(1.15, gr));
+        var ppx = Math.round(44 * Math.min(1.15, gr));
         ctx.font = "400 " + ppx + "px 'Source Sans 3', sans-serif";
         var pz = punkte.map(function (p) { return storyZeilen(ctx, p, breite - 70); });
         teile.push({ art: "punkte", zeilen: pz, font: ctx.font, px: ppx, lh: 1.3, farbe: F.text, abstand: 44 });
       }
-      if (s.klein) dazu("klein", s.klein, "400 " + Math.round(36 * Math.min(1.1, gr)) + "px 'Source Sans 3', sans-serif",
-                       Math.round(36 * Math.min(1.1, gr)), 1.32, fotoHg ? "rgba(241,236,221,.9)" : F.soft, 40);
+      if (s.klein) dazu("klein", s.klein, "400 " + Math.round(42 * Math.min(1.1, gr)) + "px 'Source Sans 3', sans-serif",
+                       Math.round(42 * Math.min(1.1, gr)), 1.32, fotoHg ? "rgba(241,236,221,.9)" : F.soft, 40);
 
       function hoeheVon(t) {
         if (t.art === "punkte") return t.zeilen.reduce(function (a, z) { return a + z.length * t.px * t.lh + 22; }, 0);
@@ -13682,7 +13695,7 @@
         lsSet("wissen", wissen);
         if (activeTab === "wissen") render();
       }, function () {});
-      db.collection("storys").limit(60).get().then(function (qs) {
+      db.collection("storys").limit(200).get().then(function (qs) {
         var seen = {};
         state.storys.forEach(function (x) { seen[x.id] = x; });
         qs.docs.forEach(function (doc) {
