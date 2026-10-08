@@ -2,81 +2,46 @@
 tags: [tools, cockpit]
 ---
 
-# Offen: ein Patch liegt lokal, ist aber nicht veröffentlicht
+# Erledigt: beide Patches sind veroeffentlicht
 
-**Stand 08.10.2026.** `outputs/cockpit/mlb-cockpit.html` trägt eine Änderung,
-die im Live-Artifact **noch nicht** drin ist. Das ist bewusst dokumentiert und
-nicht still — ein unbemerktes Auseinanderlaufen war schon einmal das Problem
-(CLAUDE.md: „war bis dahin ab Zeile 3126 auseinandergelaufen").
+**08.10.2026, Version 90** (`1791469052-0493`). Die Datei
+`outputs/cockpit/mlb-cockpit.html` und das Live-Artifact
+https://claude.ai/artifact/WWF7EWhCiAf2cVi1vytGFM sind wieder gleich.
 
-| | |
+Drin sind:
+
+| Patch | Was |
 |---|---|
-| **Artifact** | https://claude.ai/artifact/WWF7EWhCiAf2cVi1vytGFM |
-| **Live-Version** | `1791451533-b9f6` (635'436 Bytes, 13'120 Zeilen) |
-| **Was fehlt dort** | der Patch aus `scripts/cockpit/patch-entwurf-quelle.py` |
+| `scripts/cockpit/patch-entwurf-quelle.py` | Die Beschriftung ueber einer Mail-Karte haengt am Feld `quelle`. Bei den 130 Live-Mails aus ActiveCampaign stand vorher „noch nicht in ActiveCampaign" — eine Falschaussage. |
+| `scripts/cockpit/patch-launch-reiter.py` | Der Reiter **Produkte → Launch**: wo stehe ich · Kaeufertypen diese Woche · der Fahrplan ueber die fuenf Phasen · Launches anlegen. Code daneben in `launch-reiter.js` und `launch-reiter.css`. |
 
-## Was der Patch tut
+## 🚨 Was dabei passiert ist, und was daraus folgt
 
-Über jeder Mail-Karte in „Listen & Automationen" stand bis jetzt immer derselbe Satz:
+Zwischen dem Bauen und dem Veroeffentlichen wurde
+`outputs/cockpit/mlb-cockpit.html` **auf den Live-Stand zurueckgesetzt** — beide
+Patches waren danach weg, obwohl beide Skripte Erfolg gemeldet hatten und der
+Launch-Reiter in der lokalen Testfassung lief. Gemerkt habe ich es nur, weil ich
+die Live-Fassung vor dem Publish Zeile fuer Zeile gegen die lokale gehalten habe.
 
-> „Neue Fassung von mir, noch nicht in ActiveCampaign. Schau dir die Vorschau an,
-> kopier das HTML und setz es in der Automation ein."
-
-Seit dem 08.10. liegen dort **130 Live-Mails aus ActiveCampaign** (Feld
-`quelle: "activecampaign"`). Für die ist der Satz eine **Falschaussage** — sie
-stehen dort längst, und wer ihn befolgt, baut etwas ein, was schon drin ist.
-Der Patch macht die Beschriftung vom Feld `quelle` abhängig.
-
-## Gegenprobe ist gemacht
-
-Lokal und live sind **sonst Zeile für Zeile identisch** — maschinell geprüft
-(Rahmen abgezogen, Zeilenenden normiert): 21 Diff-Zeilen, alle aus diesem einen
-Patch. Die 13 KB Grössenunterschied waren CRLF in der gespeicherten Kopie, kein
-Inhalt. „Mein Tisch" (Version 84) ist in beiden Fassungen vorhanden.
-
-## Warum es liegengeblieben ist
-
-Ein Publish verlangt, dass die Live-Fassung in derselben Session **Zeile für
-Zeile gelesen** wurde. Das sind 13'120 Zeilen und rund 340'000 Token — in einer
-schon gefüllten Session ein schlechter Tausch für einen Satz.
-
-## So wird es nachgezogen
-
-In einer **frischen** Session, als erste Handlung:
+**Die Lehre: vor jedem Publish diffen, nicht auf die Erfolgsmeldung des
+Patch-Skripts vertrauen.** Ein Skript sagt, was es getan hat — nicht, ob es
+danach noch dasteht. Beide Skripte sind wiederholbar; das Zurueckholen war
+zweimal ein Befehl.
 
 ```bash
-python scripts/cockpit/patch-entwurf-quelle.py   # falls lokal zurückgesetzt wurde
+python scripts/cockpit/patch-entwurf-quelle.py
+python scripts/cockpit/patch-launch-reiter.py
 ```
 
-Dann `Artifact read` auf die URL oben, die gespeicherte Datei vollständig lesen,
-und mit `Artifact publish` + `url` aus `outputs/cockpit/mlb-cockpit.html`
-veröffentlichen. Das Skript ist wiederholbar und prüft selbst mit `node --check`.
+## 🚨 Zwei Befunde nebenbei
 
-🚨 **Nicht ohne den Read publishen** und nicht mit `force` — das verwirft die
-Live-Version, und darin steckt „Mein Tisch".
+**Das Cockpit steht auf „Anyone with the link".** Seit dem 24.09.2026 liegen
+darin 32 Klarnamen und 3 Mailadressen von Kundinnen (CLAUDE.md,
+„Personendaten im Cockpit"). Ein oeffentlicher Link passt nicht dazu. Aendern
+kann das nur Patricia selbst ueber das Share-Menue der Seite.
 
----
-
-## Zweiter Patch, ebenfalls offen (08.10.2026)
-
-`scripts/cockpit/patch-launch-reiter.py` baut den **Reiter „Launch" unter
-Produkte** ein (Code daneben in `launch-reiter.js` und `launch-reiter.css`).
-Vier Blöcke: wo stehe ich · Käufertypen diese Woche · der Fahrplan über die
-fünf Phasen · Launches anlegen. Neues Dokument **`daten/launch` — gehört
-Patricia**, der Abgleich schreibt dort nie hinein.
-
-**Geprüft ist er**: `node --check` über das JS einzeln und über die ganze
-Seite, dann lokal in der Testfassung (`scripts/cockpit/testfassung-bauen.py`,
-Port 4381) am Desktop und am Handy, mit einem echten Testlauf — Phase, Zähler,
-Preis-Gegenprobe, Käufertyp-Haken, keine Konsolenfehler.
-
-🚨 **Beide Patches hängen an einem einzigen Publish.** Dafür muss die
-Live-Fassung einmal ganz gelesen werden (rund 640 KB), sonst lehnt der Server
-die Veröffentlichung ab. Das ist eine Ansage wert, keine Nebenbei-Aktion —
-deshalb steht es hier und nicht still im Code.
-
-**Befund aus dem eigenen Testlauf:** bei den Preisen des KI-Launches
-(199 · 277 · 333) schlägt die Gegenprobe an. Der Schritt vom Secret Offer zum
-Frühbucher ist **78**, der zum regulären Preis nur **56** — nach der Methodik
-gehört es umgekehrt: vorne klein, hinten gross. Wer früh vertraut, soll den
-grössten Abstand zum Normalpreis haben.
+**Die Preisstufen des KI-Launches sind verkehrt herum.** Bei 199 · 277 · 333
+ist der Schritt vom Secret Offer zum Fruehbucher **78**, der zum regulaeren
+Preis nur **56**. Nach der Methodik gehoert es umgekehrt: vorne klein, hinten
+gross — wer frueh vertraut, soll den groessten Abstand zum Normalpreis haben.
+Der neue Reiter zeigt diese Gegenprobe von selbst an.

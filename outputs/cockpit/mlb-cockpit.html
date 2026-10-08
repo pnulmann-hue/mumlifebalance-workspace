@@ -2,7 +2,7 @@
 <title>Mum Life Balance Cockpit</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --ground: #f3efe4;
@@ -358,6 +358,24 @@
   .sp b { display: block; font-family: var(--display); font-size: 14px; margin-bottom: 3px; }
   .sp .sp-lay { float: right; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
   .thinking { display: inline-block; color: var(--ink-soft); font-size: 13px; }
+  /* Story-Bibliothek (08.10.2026) */
+  .storystrip .storycard { flex: 0 0 280px; }
+  .sc-notiz { font-size: 12.5px; background: var(--orange-soft, #fbeadb); border-left: 3px solid #dc822e;
+              padding: 6px 8px; border-radius: 6px; }
+  .sc-gestalten summary { cursor: pointer; font-weight: 600; font-size: 13px; padding: 4px 0; }
+  .sc-gestalten[open] { display: flex; flex-direction: column; gap: 8px; }
+  .sc-seg span { display: block; font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+                 color: var(--ink-soft); margin-bottom: 3px; }
+  .sc-seg > div { display: flex; gap: 4px; flex-wrap: wrap; }
+  .sc-seg button { flex: 1 1 0; min-width: 34px; min-height: 30px; border: 1px solid var(--line);
+                   background: var(--surface); border-radius: 8px; cursor: pointer; font-size: 13px; }
+  .sc-seg button[aria-pressed="true"] { outline: 2px solid #dc822e; outline-offset: 1px; }
+  .sc-seg select, .sc-seg input { width: 100%; margin-top: 4px; }
+  .sc-fotos { display: flex; flex-wrap: wrap; gap: 4px; }
+  .sc-fotos img { width: 38px; height: 52px; object-fit: cover; border-radius: 6px; cursor: pointer;
+                  border: 2px solid transparent; }
+  .sc-fotos img.sel { border-color: #dc822e; }
+  .sc-fotos .filebtn { width: 100%; margin-top: 4px; }
   .storystrip { display: flex; gap: 14px; overflow-x: auto; padding-bottom: 12px; align-items: flex-start; }
   .storycard { flex: 0 0 210px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); }
   .storycard canvas { display: block; width: 100%; height: auto; background: #0c1c30; cursor: grab; }
@@ -1828,6 +1846,67 @@
     padding: 8px 11px; font: inherit; font-size: 12.5px;
   }
   .ti-hinweis b { color: var(--orange); }
+  /* --- Reiter Launch (08.10.2026) --------------------------------------- */
+  .la-hint { color: var(--ink-soft); font-size: 13px; margin: 4px 0 0; }
+  .la-hint b { color: var(--ink); }
+  .la-del { margin-left: auto; }
+  #la-typen .panel, #la-plan .panel, #la-liste .panel { margin-top: 16px; }
+  .la-jetzt { border-left: 6px solid var(--teal); }
+  .la-jetzt.la-orange { border-left-color: var(--orange); }
+  .la-jetzt.la-navy   { border-left-color: var(--navy); }
+  .la-jetzt.la-grau   { border-left-color: var(--ink-soft); }
+  .la-kopf { display: flex; gap: 16px; align-items: flex-start;
+             justify-content: space-between; flex-wrap: wrap; }
+  .la-chip { display: inline-block; font-size: 11px; letter-spacing: .08em;
+             text-transform: uppercase; background: var(--teal); color: #fff;
+             padding: 3px 9px; border-radius: 99px; }
+  .la-jetzt.la-orange .la-chip { background: var(--orange); }
+  .la-jetzt.la-navy   .la-chip { background: var(--navy); }
+  .la-jetzt.la-grau   .la-chip { background: var(--ink-soft); }
+  .la-kopf h2 { margin: 8px 0 2px; }
+  .la-rechts { text-align: right; min-width: 92px; }
+  .la-zahl { font-family: var(--display); font-size: 38px; line-height: 1; }
+  .la-was { margin: 14px 0 6px; font-style: italic; color: var(--ink-soft); }
+  .la-todo { margin: 0; padding-left: 20px; }
+  .la-todo li { margin: 5px 0; }
+  .la-preise { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; font-size: 14px; }
+  .la-preise span { background: var(--surface-2); padding: 5px 11px; border-radius: 8px; }
+  .la-warn { margin-top: 10px; padding: 10px 12px; border-radius: 8px;
+             background: var(--orange-soft); border-left: 4px solid var(--orange); font-size: 14px; }
+  .la-typen { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+              gap: 10px; margin: 12px 0; }
+  .la-typ { text-align: left; background: var(--surface-2); border: 2px solid transparent;
+            border-radius: 12px; padding: 11px 13px; cursor: pointer; font: inherit;
+            color: inherit; }
+  .la-typ.an { border-color: var(--teal); background: var(--teal-soft); }
+  .la-ico { display: block; font-size: 16px; color: var(--teal); }
+  .la-tl { display: block; font-weight: 600; margin: 2px 0 3px; }
+  .la-tw { display: block; font-size: 13px; color: var(--ink-soft); }
+  .la-fehlt { padding: 10px 12px; border-radius: 8px; background: var(--orange-soft);
+              border-left: 4px solid var(--orange); font-size: 14px; }
+  .la-voll { padding: 10px 12px; border-radius: 8px; background: var(--teal-soft);
+             border-left: 4px solid var(--teal); font-size: 14px; }
+  .la-ph { margin: 8px 0; padding: 10px 12px; border-radius: 10px;
+           background: var(--surface-2); border-left: 5px solid var(--ink-soft); }
+  .la-ph.la-teal   { border-left-color: var(--teal); }
+  .la-ph.la-orange { border-left-color: var(--orange); }
+  .la-ph.la-navy   { border-left-color: var(--navy); }
+  .la-ph summary { cursor: pointer; font-weight: 600; }
+  .la-ph summary .la-hint { font-weight: 400; display: block; margin-top: 2px; }
+  .la-ph ul { margin: 8px 0 2px; padding-left: 20px; }
+  .la-ph li { margin: 4px 0; }
+  .la-zeile { display: flex; gap: 8px; flex-wrap: wrap; align-items: flex-end;
+              padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .la-i { padding: 6px 8px; border: 1px solid var(--line-strong); border-radius: 7px;
+          font: inherit; background: var(--surface); color: var(--ink); }
+  .la-breit { min-width: 190px; flex: 1 1 190px; }
+  .la-eng { width: 82px; }
+  .la-dl { display: block; font-size: 11px; color: var(--ink-soft); }
+  @media (max-width: 640px) {
+    .la-breit { flex: 1 1 100%; }
+    .la-zahl { font-size: 30px; }
+    .la-del { margin-left: 0; }
+  }
 </style>
 
 <div class="shell">
@@ -2036,6 +2115,8 @@
   var mbOffen = null;            // welcher Monat aufgeklappt ist
   var jpBereich = "";         // Filter
   var gepostetNotizen = {};   // daten/gepostet-notizen — gehoert PATRICIA
+  /* daten/launch — gehoert PATRICIA. Der Abgleich schreibt hier NIE hinein. */
+  var launchD = { launches: [], typen: {} };
   var gepostetProfil = "";    // Filter in der Ansicht
   var gepostetOffen = null;   // welcher Beitrag aufgeklappt ist
   var linkFilter = "";
@@ -2682,6 +2763,7 @@
     { id: "links", label: "Links & Material" },
     { id: "katalog", label: "Angebots-Katalog" },
     { id: "produkte", label: "Meine Notizen", sub: true },
+    { id: "launch", label: "Launch" },
     { id: "funnel", label: "Funnel & Keywords" },
     { id: "mailings", label: "Listen & Automationen" },
     { id: "leads", label: "Kundinnen & Leads" },
@@ -4832,7 +4914,7 @@
     { id: "instagram", label: "Instagram", saeule: "Instagram",
       tabs: ["woche", "studio", "storys", "reels", "fertig", "gepostet", "ideenkasten", "ideenextern"] },
     { id: "produkte", label: "Produkte", saeule: "Produkte",
-      tabs: ["katalog", "produkte", "links", "funnel", "mailings", "leads", "kurse"] },
+      tabs: ["katalog", "produkte", "links", "launch", "funnel", "mailings", "leads", "kurse"] },
     { id: "mamaceo", label: "Mama-CEO", saeule: "Mama-CEO",
       tabs: ["aufgaben", "erledigt", "launches", "monatsbogen", "wochenbogen", "ziele", "zahlen", "rangtracker", "team"] },
     { id: "ki", label: "KI", saeule: "KI", tabs: ["pia", "wissen", "suche"] }
@@ -4854,6 +4936,327 @@
     if (UNTERNAME[id]) return UNTERNAME[id];
     var t = TABS.filter(function (x) { return x.id === id; })[0];
     return t ? t.label : id;
+  }
+
+  /* ======================================================================
+     Reiter "Launch" — Produkte -> Launch   (seit 08.10.2026)
+
+     Ein Funnel laeuft von selbst. Ein Launch ist der Start davor, und er hat
+     eine feste Form: fuenf Phasen, zwei Tage Secret Offer, rund eine Woche
+     aufwaermen. Die Aufgaben je Phase stehen hier fest verdrahtet, weil sie
+     sich nicht je Launch aendern — was sich aendert, sind die Daten.
+
+     Herkunft: die Methodik-Durchsicht vom 08.10.2026
+     (outputs/marktrecherche/2026-10-08-julia-funnel-durchsicht.md, Befunde
+     27-45, 68-76, 110-115). Nur die Mechanik, nie der Wortlaut, keine Namen.
+     ====================================================================== */
+
+  var LA_PHASEN = [
+    { k: "vorbereitung", l: "Vorbereitung", farbe: "grau",
+      was: "Alles bauen, was während des Launches fertig sein muss.",
+      todo: [
+        "Verkaufsseite oder Kasse steht, Kaufknopf ohne Scrollen sichtbar",
+        "Order Bump, Upsell und Downsell hängen dran, jedes mit Streichpreis",
+        "Die drei Preisstufen festgelegt: kleiner Schritt vom Secret zum Frühbucher, grosser zum regulären Preis",
+        "Mail-Strecke geschrieben: Aufwärmen, Secret Offer, Verkauf",
+        "Beiträge vorproduziert, einer davon zum Anpinnen",
+        "Storys vorbereitet — je Käufertyp mindestens eine",
+        "Highlight angelegt, farbig von den anderen unterscheidbar",
+        "Ausgerechnet, wie viele Verkäufe das Ziel braucht"
+      ] },
+    { k: "aufwaermen", l: "Aufwärmen", farbe: "teal",
+      was: "Rund eine Woche. Hier entsteht die Nachfrage — nicht in der Verkaufsphase.",
+      todo: [
+        "Jeden Tag eine Story zum Thema, aber nicht zum Produkt",
+        "Noch nicht sagen, WAS kommt — nur, dass etwas kommt",
+        "Making-of zeigen: über Unterlagen schwenken, unscharf",
+        "Die Community mitentscheiden lassen: Titel, Gestaltung, Inhalte",
+        "Zwei bis vier Aufwärm-Mails",
+        "Frühwarnzeichen beobachten: kommen Fragen und „das kenne ich“-Antworten?"
+      ] },
+    { k: "secret", l: "Secret Offer", farbe: "orange",
+      was: "Zwei Tage. Verdecktes Angebot zum tiefsten Preis — keine Preisstufe.",
+      todo: [
+        "Story: „es gibt etwas, tipp auf den Sticker“ — und NICHT sagen, um was es geht",
+        "Wer tippt, bekommt den Link per Nachricht. Sonst nichts",
+        "Mail: wer antwortet, bekommt den Link",
+        "Der Preis ist hier am tiefsten — belohnt wird das Vertrauen",
+        "Nach zwei Tagen ist Schluss, auch wenn es läuft"
+      ] },
+    { k: "verkauf", l: "Verkaufsphase", farbe: "navy",
+      was: "Jetzt wird jeden Tag verkauft. Alles zeigt in dieselbe Richtung.",
+      todo: [
+        "In der Bio steht nur EIN Link — der zum Produkt",
+        "Das Highlight ist vollgepackt: Inhalte, für wen, Stimmen, Link",
+        "Jeden Tag teilen, wer schon dabei ist — echte Vornamen",
+        "Der Launch-Beitrag ist angepinnt",
+        "Jeden Tag Story plus die Mails der Strecke",
+        "Einwände einzeln aufgreifen: Zeit, Geld, „schaffe ich das“",
+        "Den Preisanstieg ankündigen, bevor er kommt",
+        "Ein zweites Angebot höchstens als zweite Story am Abend"
+      ] },
+    { k: "nach", l: "Nachbereitung", farbe: "grau",
+      was: "Der Teil, der immer liegenbleibt — und den nächsten Launch leichter macht.",
+      todo: [
+        "Preis erhöht oder die Kasse geschlossen",
+        "Kundenstimmen eingeholt: jede anschreiben, mit Gegenleistung",
+        "Eine eigene Mail an alle, die schon einmal gekauft haben",
+        "Zahlen notiert: Eintragungen, Verkäufe je Stufe, was gezogen hat",
+        "Entschieden, was als Nächstes beworben wird — keine Lücke"
+      ] }
+  ];
+
+  /* Sechs Käufertypen, benannt nach dem, was sie brauchen. Keine fremden
+     Vornamen auf der Seite — das Cockpit zeigt Patricia auch Kundinnen. */
+  var LA_TYPEN = [
+    { k: "inspiriert", l: "Die Inspirierte", ico: "✦",
+      was: "Kauft, wenn sie mitgerissen wird. Braucht Bilder vom Leben danach, Energie, Vision — keine Zahlen." },
+    { k: "beweis", l: "Die Beweis-Sucherin", ico: "✔",
+      was: "Kauft, wenn sie sieht, dass es bei anderen funktioniert hat. Braucht Stimmen, Vorher-Nachher, Screenshots." },
+    { k: "zahlen", l: "Die Zahlen-Person", ico: "#",
+      was: "Kauft, wenn alles dasteht: Preis, Dauer, Inhalt, Raten. Springt ab, wenn der Preis fehlt." },
+    { k: "gruppe", l: "Die Mitmacherin", ico: "••",
+      was: "Kauft, wenn andere dabei sind. Braucht „wer ist schon drin“ und das Gefühl, nicht allein anzufangen." },
+    { k: "zoegernd", l: "Die Zögernde", ico: "…",
+      was: "Kauft am letzten Tag. Braucht Einwandbehandlung, eine echte Frist und die Erlaubnis, klein anzufangen." },
+    { k: "schnell", l: "Die Entschlossene", ico: "→",
+      was: "Kauft sofort, wenn der Weg klar ist. Braucht einen Link ohne Umwege — und keine zweite Erklärung." }
+  ];
+
+  /* Kalenderwoche nach ISO (Donnerstag-Regel) — dieselbe Zaehlung wie im
+     Rest des Cockpits, damit die Haken zur Wochen-Vorschau passen. */
+  function laKw(d) {
+    var dt = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+    var tag = (dt.getDay() + 6) % 7;
+    dt.setDate(dt.getDate() - tag + 3);
+    var ersterDo = new Date(dt.getFullYear(), 0, 4);
+    var t2 = (ersterDo.getDay() + 6) % 7;
+    ersterDo.setDate(ersterDo.getDate() - t2 + 3);
+    return "kw" + (1 + Math.round((dt - ersterDo) / 604800000));
+  }
+
+  function laSpeichern() {
+    launchD.updatedAt = new Date().toISOString();
+    lsSet("launch", launchD);
+    clearTimeout(saveTimers.launchD);
+    saveTimers.launchD = setTimeout(function () {
+      if (!db) return;
+      db.doc("daten/launch").set({
+        launches: launchD.launches, typen: launchD.typen,
+        updatedAt: launchD.updatedAt
+      }).catch(function () {});
+    }, 700);
+  }
+
+  /* Welche Phase laeuft heute? */
+  function laPhaseHeute(l, heute) {
+    var p = l.phasen || {};
+    var folge = [];
+    LA_PHASEN.forEach(function (ph) { if (p[ph.k]) folge.push({ ph: ph, ab: p[ph.k] }); });
+    folge.sort(function (a, b) { return a.ab < b.ab ? -1 : 1; });
+    if (!folge.length) return null;
+    if (p.ende && p.ende < heute) return { vorbei: true };
+    var akt = null;
+    for (var i = 0; i < folge.length; i++) { if (folge[i].ab <= heute) akt = folge[i]; }
+    if (!akt) return { kuenftig: folge[0] };
+    var naechste = null;
+    for (var j = 0; j < folge.length; j++) { if (folge[j].ab > heute) { naechste = folge[j]; break; } }
+    return { akt: akt, naechste: naechste };
+  }
+
+  function laTage(von, bis) {
+    var a = new Date(von + "T00:00:00"), b = new Date(bis + "T00:00:00");
+    return Math.round((b - a) / 86400000);
+  }
+
+  function renderLaunch(main) {
+    var heute = todayISO();
+    main.innerHTML =
+      '<div class="page-head"><div><h1>Launch</h1>' +
+      '<p>Ein Funnel l&auml;uft von selbst. Ein Launch ist der Start davor &mdash; ' +
+      'f&uuml;nf Phasen, zwei Tage Secret Offer, rund eine Woche aufw&auml;rmen. ' +
+      'Die Aufgaben je Phase stehen fest; was sich &auml;ndert, sind die Daten.</p></div>' +
+      '<a class="btn" href="https://claude.ai/artifact/YViQzGgPqr3AiufeA35Ev3" ' +
+      'target="_blank" rel="noopener">Funnel-Checkliste &rarr;</a></div>' +
+      '<div id="la-jetzt"></div><div id="la-typen"></div>' +
+      '<div id="la-plan"></div><div id="la-liste"></div>';
+    laJetzt(main.querySelector("#la-jetzt"), heute);
+    laTypen(main.querySelector("#la-typen"), heute);
+    laPlan(main.querySelector("#la-plan"));
+    laListe(main.querySelector("#la-liste"));
+  }
+
+  /* --- Block 1: Wo stehe ich ------------------------------------------- */
+  function laJetzt(el, heute) {
+    var laufend = null, kuenftig = null;
+    launchD.launches.forEach(function (l) {
+      var st = laPhaseHeute(l, heute);
+      if (!st) return;
+      if (st.akt && !laufend) { laufend = { l: l, st: st }; return; }
+      if (st.kuenftig && !kuenftig) kuenftig = { l: l, st: st };
+    });
+
+    if (!laufend && !kuenftig) {
+      el.innerHTML = '<div class="panel"><p class="la-hint">Noch kein Launch angelegt. ' +
+        'Unten eintragen, dann steht hier, welche Phase heute l&auml;uft und was dran ist.</p></div>';
+      return;
+    }
+
+    if (!laufend) {
+      var tg = laTage(heute, kuenftig.st.kuenftig.ab);
+      el.innerHTML = '<div class="panel"><h2>' + esc(kuenftig.l.name || "Ohne Namen") +
+        '</h2><p class="la-hint">Startet in ' + tg + ' Tag' + (tg === 1 ? "" : "en") +
+        ' mit der Phase <b>' + esc(kuenftig.st.kuenftig.ph.l) + '</b> (' +
+        esc(kuenftig.st.kuenftig.ab) + ').</p></div>';
+      return;
+    }
+
+    var l = laufend.l, st = laufend.st, ph = st.akt.ph;
+    var h = '<div class="panel la-jetzt la-' + ph.farbe + '">' +
+      '<div class="la-kopf"><div><span class="la-chip">' + esc(ph.l) + '</span>' +
+      '<h2>' + esc(l.name || "Ohne Namen") + '</h2>' +
+      (l.produkt ? '<p class="la-hint">' + esc(l.produkt) + '</p>' : "") +
+      '</div><div class="la-rechts">';
+    if (st.naechste) {
+      var t = laTage(heute, st.naechste.ab);
+      h += '<div class="la-zahl">' + t + '</div><div class="la-hint">Tag' +
+        (t === 1 ? "" : "e") + ' bis <b>' + esc(st.naechste.ph.l) + '</b></div>';
+    } else if ((l.phasen || {}).ende) {
+      var te = laTage(heute, l.phasen.ende);
+      h += '<div class="la-zahl">' + te + '</div><div class="la-hint">Tag' +
+        (te === 1 ? "" : "e") + ' bis Schluss</div>';
+    }
+    h += '</div></div><p class="la-was">' + esc(ph.was) + '</p><ul class="la-todo">';
+    ph.todo.forEach(function (x) { h += '<li>' + esc(x) + '</li>'; });
+    h += '</ul>';
+
+    /* Die Preisstufen mit der Gegenprobe auf die Abstaende: vom Secret Offer
+       zum Fruehbucher klein, vom Fruehbucher zum regulaeren Preis gross. */
+    var p = l.preise || {};
+    if (p.secret && p.frueh && p.regulaer) {
+      var s = +p.secret, f = +p.frueh, r = +p.regulaer;
+      h += '<div class="la-preise"><span>Secret <b>' + s + '</b></span>' +
+        '<span>Fr&uuml;hbucher <b>' + f + '</b></span>' +
+        '<span>regul&auml;r <b>' + r + '</b></span></div>';
+      if (isFinite(s) && isFinite(f) && isFinite(r) && (f - s) >= (r - f)) {
+        h += '<div class="la-warn">Der Schritt vom Secret Offer zum Fr&uuml;hbucher ist ' +
+          'gr&ouml;sser als der zum regul&auml;ren Preis. Dann lohnt sich das Vertrauen ' +
+          'nicht &mdash; vorne klein, hinten gross.</div>';
+      }
+    }
+    h += '</div>';
+    el.innerHTML = h;
+  }
+
+  /* --- Block 2: Kaeufertypen diese Woche ------------------------------- */
+  function laTypen(el, heute) {
+    var kw = laKw(new Date(heute + "T12:00:00"));
+    var hat = launchD.typen[kw] || [];
+    var fehlt = LA_TYPEN.filter(function (t) { return hat.indexOf(t.k) < 0; });
+    el.innerHTML = '<div class="panel"><h2>Wen hast du diese Woche angesprochen?</h2>' +
+      '<p class="la-hint">Sechs Arten zu kaufen. &Uuml;ber eine Woche sollten alle sechs ' +
+      'vorkommen &mdash; wer immer nur inspiriert, verkauft nie an die, die Zahlen brauchen. ' +
+      'Antippen, wenn eine Story oder eine Mail diesen Typ bedient hat. (' + kw.toUpperCase() + ')</p>' +
+      '<div class="la-typen" id="la-tg"></div>' +
+      (fehlt.length
+        ? '<div class="la-fehlt">Diese Woche fehlen noch: <b>' +
+          fehlt.map(function (t) { return esc(t.l); }).join(", ") + '</b></div>'
+        : '<div class="la-voll">Alle sechs bedient. Genau so.</div>') +
+      '</div>';
+    var g = el.querySelector("#la-tg");
+    LA_TYPEN.forEach(function (t) {
+      var an = hat.indexOf(t.k) >= 0;
+      var k = document.createElement("button");
+      k.className = "la-typ" + (an ? " an" : "");
+      k.innerHTML = '<span class="la-ico">' + esc(t.ico) + '</span>' +
+        '<span class="la-tl">' + esc(t.l) + '</span>' +
+        '<span class="la-tw">' + esc(t.was) + '</span>';
+      k.onclick = function () {
+        var liste = (launchD.typen[kw] || []).slice();
+        var i = liste.indexOf(t.k);
+        if (i >= 0) liste.splice(i, 1); else liste.push(t.k);
+        launchD.typen[kw] = liste;
+        laSpeichern();
+        laTypen(el, heute);
+      };
+      g.appendChild(k);
+    });
+  }
+
+  /* --- Block 3: der Fahrplan ------------------------------------------- */
+  function laPlan(el) {
+    var h = '<div class="panel"><h2>Der Fahrplan</h2>' +
+      '<p class="la-hint">Gilt f&uuml;r Produkte ab rund 99. Darunter wird nicht gelauncht, ' +
+      'sondern gedroppt: drei bis f&uuml;nf Tage dar&uuml;ber sprechen, fertig. Eine ' +
+      'Begleitung oder ein 1:1 wird gar nicht gelauncht, sondern immer wieder einmal ' +
+      'erw&auml;hnt, bis die Pl&auml;tze voll sind.</p>';
+    LA_PHASEN.forEach(function (ph) {
+      h += '<details class="la-ph la-' + ph.farbe + '"><summary>' + esc(ph.l) +
+        '<span class="la-hint">' + esc(ph.was) + '</span></summary><ul>';
+      ph.todo.forEach(function (x) { h += '<li>' + esc(x) + '</li>'; });
+      h += '</ul></details>';
+    });
+    el.innerHTML = h + '</div>';
+  }
+
+  /* --- Block 4: anlegen und bearbeiten -------------------------------- */
+  function laListe(el) {
+    el.innerHTML = '<div class="panel"><h2>Deine Launches</h2>' +
+      '<p class="la-hint">Je Phase ein Startdatum, dazu der Schluss. Was leer bleibt, ' +
+      '&uuml;berspringt die Anzeige.</p><div id="la-ll"></div>' +
+      '<button class="btn" id="la-neu">+ Launch anlegen</button></div>';
+    var box = el.querySelector("#la-ll");
+    launchD.launches.forEach(function (l, idx) {
+      var k = document.createElement("div");
+      k.className = "la-zeile";
+      var f = '<input class="la-i la-breit" data-f="name" value="' +
+        esc(l.name || "") + '" placeholder="Name des Launches">' +
+        '<input class="la-i la-breit" data-f="produkt" value="' +
+        esc(l.produkt || "") + '" placeholder="Produkt">';
+      LA_PHASEN.forEach(function (ph) {
+        f += '<label class="la-dl">' + esc(ph.l) +
+          '<input class="la-i" type="date" data-p="' + ph.k + '" value="' +
+          esc((l.phasen || {})[ph.k] || "") + '"></label>';
+      });
+      f += '<label class="la-dl">Schluss<input class="la-i" type="date" data-p="ende" value="' +
+        esc((l.phasen || {}).ende || "") + '"></label>';
+      [["secret", "Secret"], ["frueh", "Fr&uuml;hbucher"], ["regulaer", "regul&auml;r"]]
+        .forEach(function (pp) {
+          f += '<label class="la-dl">' + pp[1] +
+            '<input class="la-i la-eng" inputmode="numeric" data-pr="' + pp[0] + '" value="' +
+            esc((l.preise || {})[pp[0]] || "") + '"></label>';
+        });
+      k.innerHTML = f + '<button class="btn la-del" data-del="1">l&ouml;schen</button>';
+      Array.prototype.forEach.call(k.querySelectorAll("input"), function (inp) {
+        inp.oninput = function () {
+          if (inp.dataset.f) l[inp.dataset.f] = inp.value;
+          else if (inp.dataset.p) { l.phasen = l.phasen || {}; l.phasen[inp.dataset.p] = inp.value; }
+          else if (inp.dataset.pr) { l.preise = l.preise || {}; l.preise[inp.dataset.pr] = inp.value; }
+          laSpeichern();
+        };
+        inp.onchange = function () { render(); };
+      });
+      /* Loeschen in zwei Klicks — kein confirm(), das kann im Artifact-Rahmen
+         lautlos blockiert sein (Lehre vom 19.09.2026). */
+      var dk = k.querySelector("[data-del]");
+      dk.onclick = function () {
+        if (dk.dataset.scharf) {
+          launchD.launches.splice(idx, 1); laSpeichern(); render(); return;
+        }
+        dk.dataset.scharf = "1";
+        dk.textContent = "wirklich?";
+        setTimeout(function () {
+          if (!dk.dataset.scharf) return;
+          delete dk.dataset.scharf;
+          dk.innerHTML = "l&ouml;schen";
+        }, 8000);
+      };
+      box.appendChild(k);
+    });
+    el.querySelector("#la-neu").onclick = function () {
+      launchD.launches.push({ id: uid("la"), name: "", produkt: "", phasen: {}, preise: {} });
+      laSpeichern(); render();
+    };
   }
 
   function renderBereiche() {
@@ -8345,9 +8748,17 @@
           esc(st.fehler) + '). Lade das Cockpit neu und klapp die Automation nochmal auf.</p>' : "";
       return hinweis + mailListeAC(nummer);
     }
-    return '<div class="mentwuerfe"><p class="note">Neue Fassung von mir, noch nicht in ' +
-      'ActiveCampaign. Schau dir die Vorschau an, kopier das HTML und setz es in der ' +
-      'Automation ein.</p>' +
+    /* Entwurf oder Live-Stand? Das Feld `quelle` entscheidet, was dasteht —
+       die Launch-Mails kommen AUS ActiveCampaign, die Magnet-Ich-Mails gehen
+       erst hinein. Derselbe Satz für beide wäre für eine der beiden falsch. */
+    var ausAC = neu.every(function (e) { return e.quelle === "activecampaign"; });
+    return '<div class="mentwuerfe"><p class="note">' +
+      (ausAC
+        ? 'So stehen diese Mails heute in ActiveCampaign. Vorschau anschauen, '
+          + 'HTML kopieren, wenn du sie woanders brauchst.'
+        : 'Neue Fassung von mir, noch nicht in ActiveCampaign. Schau dir die '
+          + 'Vorschau an, kopier das HTML und setz es in der Automation ein.') +
+      '</p>' +
       neu.map(function (e) {
         return '<div class="mailkarte mentwurf" data-entwurf="' + esc(e.id) + '">' +
           '<div class="mailkopf"><strong>' + esc(e.betreff || "Ohne Betreff") + '</strong>' +
@@ -8361,7 +8772,8 @@
           (e.preheader ? '<button class="btn" data-kopie="preheader">Vorschautext kopieren</button>' : "") +
           '</div><iframe class="mentwurfvorschau" sandbox="" title="Vorschau der Mail"></iframe></div>';
       }).join("") +
-      '<p class="note" style="margin-top:16px">Und das steckt heute in ActiveCampaign:</p></div>' +
+      (ausAC ? '</div>'
+             : '<p class="note" style="margin-top:16px">Und das steckt heute in ActiveCampaign:</p></div>') +
       mailListeAC(nummer);
   }
   function mailEntwuerfeVerdrahten(box) {
@@ -11075,122 +11487,340 @@
   }
 
   /* =========================================================
-     Story-Rendering (1080 x 1920)
+     Story-Rendering (1080 x 1920) — Story-Bibliothek (08.10.2026)
+     Gebaut mit scripts/cockpit/patch-story-bibliothek.py.
+
+     Patricia: *„ich hätte gerne, dass der erste vorschlag noch etwas schöner
+     daherkommt, gerade auch die slides, wo es effektiv um den kurs geht …
+     schriften nach meinem branding … texte zentriert, rechts oder links …
+     mit textbalken oder ohne … sticker, umfragen etc."*
+
+     - Jede Folie trägt ihre Gestaltung selbst: schrift, align, balken, hg,
+       foto, pos, groesse, verlauf. Fehlt ein Feld, gilt die Vorgabe des
+       Layouts (STORY_STIL) — ältere Folien sehen damit sofort besser aus.
+     - 🚨 Sticker werden NICHT gezeichnet. Instagram-Sticker legt sie in der
+       App drauf; ein gemalter Umfrage-Knopf ist nicht klickbar und sieht
+       nach Vorlage aus. Die Vorschau zeigt eine gestrichelte Fläche „hier
+       kommt der Sticker hin“, der Export lässt sie leer und hält den Text
+       davon weg.
+     - Kein gemalter Fortschrittsbalken und kein Handle mehr — beides setzt
+       Instagram selbst, doppelt sieht es nach Fälschung aus.
      ========================================================= */
   var SW = 1080, SH = 1920;
   var STORY_LAYOUTS = {
     text: "Text",
-    bild: "Bild mit Text",
-    frage: "Fragebox",
-    umfrage: "Umfrage",
-    cta: "Aufruf"
+    bild: "Foto mit Text",
+    learning: "Learning zum Screenshotten",
+    kurs: "Kurs-Karte (Liste mit Haken)",
+    bonus: "Bonus / Frist",
+    frage: "Frage-Sticker",
+    umfrage: "Umfrage-Sticker",
+    cta: "Aufruf mit Link"
   };
+  var STORY_FARBEN = {
+    dunkel: { bg: "#0c1c30", text: "#f1ecdd", soft: "rgba(241,236,221,.72)", akzent: "#dc822e" },
+    creme:  { bg: "#f1ecdd", text: "#0c1c30", soft: "rgba(12,28,48,.68)",   akzent: "#12828c" },
+    petrol: { bg: "#12828c", text: "#f1ecdd", soft: "rgba(241,236,221,.8)",  akzent: "#0c1c30" },
+    orange: { bg: "#dc822e", text: "#0c1c30", soft: "rgba(12,28,48,.75)",    akzent: "#f1ecdd" }
+  };
+  var STORY_STIL = {
+    text:     { hg: "dunkel", schrift: "philo",   align: "left",   balken: "aus",    pos: 46, groesse: 1 },
+    bild:     { hg: "foto",   schrift: "sans-b",  align: "center", balken: "zeilen", pos: 66, groesse: 0.9 },
+    learning: { hg: "creme",  schrift: "philo",   align: "center", balken: "aus",    pos: 46, groesse: 1.1 },
+    kurs:     { hg: "dunkel", schrift: "philo",   align: "left",   balken: "karte",  pos: 47, groesse: 0.95 },
+    bonus:    { hg: "petrol", schrift: "philo",   align: "center", balken: "aus",    pos: 44, groesse: 1 },
+    frage:    { hg: "creme",  schrift: "philo",   align: "center", balken: "aus",    pos: 30, groesse: 1, sticker: "frage" },
+    umfrage:  { hg: "creme",  schrift: "philo",   align: "center", balken: "aus",    pos: 30, groesse: 1, sticker: "umfrage" },
+    cta:      { hg: "dunkel", schrift: "philo",   align: "center", balken: "aus",    pos: 36, groesse: 1, sticker: "link" }
+  };
+  var SCHRIFTEN = {
+    "philo":   { l: "Philosopher", f: function (px) { return "700 " + px + "px Philosopher, Georgia, serif"; } },
+    "philo-k": { l: "Kursiv",      f: function (px) { return "italic 400 " + px + "px Philosopher, Georgia, serif"; } },
+    "sans":    { l: "Leicht",      f: function (px) { return "300 " + px + "px 'Source Sans 3', sans-serif"; } },
+    "sans-b":  { l: "Fett",        f: function (px) { return "700 " + px + "px 'Source Sans 3', sans-serif"; } }
+  };
+  var STICKER = {
+    "": "kein Sticker", frage: "Frage-Sticker", umfrage: "Umfrage", quiz: "Quiz",
+    slider: "Emoji-Slider", link: "Link-Sticker", countdown: "Countdown", dm: "„Schreib mir“-Sticker"
+  };
+  var STICKER_H = { frage: 300, umfrage: 260, quiz: 420, slider: 200, link: 130, countdown: 230, dm: 130 };
 
-  function roundRect(ctx, x, y, w, h, r) {
-    ctx.beginPath();
-    if (ctx.roundRect) { ctx.roundRect(x, y, w, h, r); }
-    else {
-      ctx.moveTo(x + r, y);
-      ctx.arcTo(x + w, y, x + w, y + h, r);
-      ctx.arcTo(x + w, y + h, x, y + h, r);
-      ctx.arcTo(x, y + h, x, y, r);
-      ctx.arcTo(x, y, x + w, y, r);
-      ctx.closePath();
+  /* Ältere Folien hatten den Sticker als Text im Feld `cta` — der wurde als
+     orange Pille INS BILD gemalt („Link-Sticker: Verkaufsseite …"). Hier wird
+     daraus die Sticker-Fläche, und nur echter Text bleibt Text. */
+  function stilVon(fr) {
+    var lay = STORY_STIL[fr.layout] ? fr.layout : "text";
+    var d = STORY_STIL[lay], s = {};
+    ["hg", "schrift", "align", "balken", "pos", "groesse"].forEach(function (k) {
+      s[k] = (fr[k] !== undefined && fr[k] !== "" && fr[k] !== null) ? fr[k] : d[k];
+    });
+    // Ein hochgeladenes Bild oder ein gewähltes Shootingbild heisst: Foto als Hintergrund
+    if ((fr.hg === undefined || fr.hg === "") && (images[fr.id] || fr.foto)) s.hg = "foto";
+    s.sticker = fr.sticker !== undefined ? fr.sticker : (d.sticker || "");
+    s.stickerText = fr.stickerText || "";
+    s.klein = fr.klein || "";
+    var c = String(fr.cta || "").trim();
+    if (fr.sticker === undefined && c) {
+      if (/sticker|link|dm\b|→/i.test(c) || lay === "cta" || lay === "frage" || lay === "umfrage") {
+        if (!s.sticker) s.sticker = /countdown/i.test(c) ? "countdown" : /umfrage/i.test(c) ? "umfrage"
+          : /frage/i.test(c) ? "frage" : /dm|tipp/i.test(c) ? "dm" : "link";
+        if (!s.stickerText) s.stickerText = c;
+      } else if (!s.klein) s.klein = c;
     }
+    if (s.sticker === "umfrage" && !s.stickerText && (fr.optA || fr.optB))
+      s.stickerText = (fr.optA || "Ja") + " / " + (fr.optB || "Nein");
+    s.verlauf = fr.verlauf !== undefined ? fr.verlauf : (s.balken === "aus" ? 58 : 26);
+    return s;
   }
 
-  function renderStoryFrame(canvas, fr, st, index, total) {
-    var b = BRANDS[st.brand] || BRANDS.mlb_dark;
+  var storyFotoCache = {};
+  function storyFoto(fr, cb) {
+    if (images[fr.id] && fr.eigenesFoto !== false) { getImageObj(fr.id, cb); return; }
+    if (!fr.foto) { cb(null); return; }
+    var src = /^(data:|https?:|assets\/)/.test(fr.foto) ? fr.foto : "assets/" + fr.foto;
+    var c = storyFotoCache[src];
+    if (c && c.ok) { cb(c.img); return; }
+    var im = new Image();
+    im.onload = function () { storyFotoCache[src] = { ok: true, img: im }; cb(im); };
+    im.onerror = function () { cb(null); };
+    im.src = src;
+  }
+
+  var storySchriftBereit = null;
+  function storySchriften() {
+    if (storySchriftBereit) return storySchriftBereit;
+    if (!document.fonts || !document.fonts.load) return (storySchriftBereit = Promise.resolve());
+    storySchriftBereit = Promise.all(Object.keys(SCHRIFTEN).map(function (k) {
+      return document.fonts.load(SCHRIFTEN[k].f(60), "ÄäÖöÜü„“").catch(function () {});
+    })).then(function () {}, function () {});
+    return storySchriftBereit;
+  }
+
+  function storyZeilen(ctx, text, maxW) {
+    var out = [];
+    String(text || "").split("\n").forEach(function (para) {
+      var w = para.split(/\s+/).filter(Boolean);
+      if (!w.length) { out.push(""); return; }
+      var line = w[0];
+      for (var i = 1; i < w.length; i++) {
+        var t = line + " " + w[i];
+        if (ctx.measureText(t).width > maxW) { out.push(line); line = w[i]; } else line = t;
+      }
+      out.push(line);
+    });
+    return out;
+  }
+
+  /* Zeichnet eine Folie. Gibt ein Promise zurück, das erfüllt ist, wenn Foto
+     und Schriften geladen sind — der Export wartet darauf, statt wie früher
+     280 ms zu raten. opts.export = true lässt die Sticker-Hilfsfläche weg. */
+  function renderStoryFrame(canvas, fr, st, index, total, opts) {
+    opts = opts || {};
     var ctx = canvas.getContext("2d");
     canvas.width = SW; canvas.height = SH;
-    var pad = 96;
-
-    ctx.fillStyle = b.bg;
-    ctx.fillRect(0, 0, SW, SH);
-
-    getImageObj(fr.id, function (img) {
-      if (img) {
-        drawCover(ctx, img, 0, 0, SW, SH, fr.zoom, fr.ox, fr.oy);
-        var g = ctx.createLinearGradient(0, 0, 0, SH);
-        g.addColorStop(0, "rgba(0,0,0,0.45)");
-        g.addColorStop(0.42, "rgba(0,0,0,0.12)");
-        g.addColorStop(1, b.bg);
-        ctx.fillStyle = g; ctx.fillRect(0, 0, SW, SH);
-      } else if (fr.layout === "bild") {
-        ctx.fillStyle = b.bg2; ctx.fillRect(0, 0, SW, SH);
-        ctx.fillStyle = b.muted; ctx.font = "36px " + b.body; ctx.textAlign = "center";
-        ctx.fillText("Bild hier hochladen", SW / 2, SH / 2);
-        ctx.textAlign = "left";
-      }
-
-      // Fortschrittsbalken oben
-      var segW = (SW - pad * 2 - (total - 1) * 8) / total;
-      for (var i = 0; i < total; i++) {
-        ctx.fillStyle = i <= index ? b.text : b.muted;
-        ctx.globalAlpha = i <= index ? 0.9 : 0.3;
-        roundRect(ctx, pad + i * (segW + 8), 62, segW, 7, 4);
-        ctx.fill();
-      }
-      ctx.globalAlpha = 1;
-
-      // Handle
-      var hd = st.handle || b.handle;
-      if (hd) {
-        ctx.fillStyle = b.accent2;
-        ctx.beginPath(); ctx.arc(pad + 26, 132, 26, 0, Math.PI * 2); ctx.fill();
-        ctx.fillStyle = b.text; ctx.font = "26px " + b.body;
-        ctx.textBaseline = "middle"; ctx.fillText(hd, pad + 68, 134); ctx.textBaseline = "alphabetic";
-      }
-
-      var maxW = SW - pad * 2;
-
-      if (fr.layout === "frage" || fr.layout === "umfrage") {
-        var box = fitLines(ctx, fr.text, maxW - 80, 420, b.display, "bold", 62, 34, 1.2);
-        var boxH = box.lines.length * box.size * 1.2 + 200;
-        var by = SH * 0.36;
-        ctx.fillStyle = b.bg2;
-        ctx.globalAlpha = img ? 0.92 : 1;
-        roundRect(ctx, pad, by, maxW, boxH, 36); ctx.fill();
-        ctx.globalAlpha = 1;
-        ctx.font = "bold " + box.size + "px " + b.display;
-        ctx.fillStyle = b.text;
-        ctx.textAlign = "center";
-        box.lines.forEach(function (ln, i) { ctx.fillText(ln, SW / 2, by + 78 + box.size + i * box.size * 1.2); });
-        var innerY = by + 88 + box.lines.length * box.size * 1.2;
-        if (fr.layout === "frage") {
-          ctx.fillStyle = b.bg;
-          roundRect(ctx, pad + 48, innerY, maxW - 96, 88, 44); ctx.fill();
-          ctx.fillStyle = b.muted; ctx.font = "32px " + b.body;
-          ctx.fillText(fr.cta || "Antworten …", SW / 2, innerY + 56);
-        } else {
-          var bw = (maxW - 96 - 24) / 2;
-          [[fr.optA || "Ja", pad + 48], [fr.optB || "Nein", pad + 48 + bw + 24]].forEach(function (o) {
-            ctx.fillStyle = b.accent;
-            roundRect(ctx, o[1], innerY, bw, 88, 44); ctx.fill();
-            ctx.fillStyle = b.bg; ctx.font = "bold 34px " + b.body;
-            ctx.fillText(o[0], o[1] + bw / 2, innerY + 56);
-          });
-        }
-        ctx.textAlign = "left";
-      } else {
-        var isCta = fr.layout === "cta";
-        var t = fitLines(ctx, fr.text, maxW, SH * 0.42, b.display, "bold", isCta ? 76 : 68, 36, 1.2);
-        var blockH = t.lines.length * t.size * 1.2;
-        var ty = fr.layout === "bild" ? SH - pad - 260 - blockH : (SH - blockH) / 2;
-        ctx.font = "bold " + t.size + "px " + b.display;
-        ctx.fillStyle = b.text;
-        t.lines.forEach(function (ln, i) { ctx.fillText(ln, pad, ty + t.size + i * t.size * 1.2); });
-        if (fr.cta) {
-          ctx.font = "bold 38px " + b.body;
-          var cw = ctx.measureText(fr.cta).width;
-          var cy = ty + blockH + 70;
-          ctx.fillStyle = b.accent;
-          roundRect(ctx, pad, cy, cw + 74, 96, 48); ctx.fill();
-          ctx.fillStyle = b.bg;
-          ctx.fillText(fr.cta, pad + 37, cy + 60);
-        }
-      }
+    var s = stilVon(fr);
+    return new Promise(function (fertig) {
+      storySchriften().then(function () {
+        storyFoto(fr, function (img) {
+          zeichne(img);
+          fertig();
+        });
+      });
     });
+
+    function zeichne(img) {
+      var fotoHg = s.hg === "foto";
+      var F = STORY_FARBEN[fotoHg ? "dunkel" : s.hg] || STORY_FARBEN.dunkel;
+      var pad = 92, maxW = SW - pad * 2;
+
+      // ---- Hintergrund
+      ctx.fillStyle = F.bg; ctx.fillRect(0, 0, SW, SH);
+      if (fotoHg && img) {
+        drawCover(ctx, img, 0, 0, SW, SH, fr.zoom, fr.ox, fr.oy);
+      } else if (fotoHg) {
+        ctx.fillStyle = "#12283f"; ctx.fillRect(0, 0, SW, SH);
+        ctx.fillStyle = "rgba(241,236,221,.55)"; ctx.font = "400 40px 'Source Sans 3', sans-serif";
+        ctx.textAlign = "center"; ctx.fillText("Foto wählen ↓", SW / 2, SH / 2); ctx.textAlign = "left";
+      } else {
+        // feine Tiefe statt flacher Fläche
+        var rg = ctx.createRadialGradient(SW * 0.2, SH * 0.1, 40, SW * 0.5, SH * 0.5, SH * 0.9);
+        rg.addColorStop(0, "rgba(255,255,255,.07)"); rg.addColorStop(1, "rgba(0,0,0,.06)");
+        ctx.fillStyle = rg; ctx.fillRect(0, 0, SW, SH);
+      }
+
+      // ---- Textblock vermessen
+      var gr = Math.max(0.6, Math.min(1.5, +s.groesse || 1));
+      var schrift = SCHRIFTEN[s.schrift] || SCHRIFTEN.philo;
+      var karte = s.balken === "karte";
+      var innen = karte ? 64 : 0;
+      var breite = maxW - innen * 2;
+      var teile = [];          // {art, zeilen, font, px, lh, farbe}
+      function dazu(art, text, font, px, lh, farbe, abstand) {
+        if (!String(text || "").trim()) return;
+        ctx.font = font;
+        var z = art === "punkte" ? text : storyZeilen(ctx, text, art === "pille" ? breite - 80 : breite);
+        teile.push({ art: art, zeilen: z, font: font, px: px, lh: lh, farbe: farbe, abstand: abstand || 0 });
+      }
+      var hpx = Math.round((fr.layout === "learning" ? 80 : fr.layout === "kurs" ? 72 : 76) * gr);
+      // Überschrift so lange verkleinern, bis sie in rund 45 % der Höhe passt
+      var hz;
+      for (var tries = 0; tries < 12; tries++) {
+        ctx.font = schrift.f(hpx);
+        hz = storyZeilen(ctx, fr.text || "", breite);
+        if (hz.length * hpx * 1.18 <= SH * 0.45 || hpx <= 40) break;
+        hpx -= 6;
+      }
+      var akzent = fotoHg ? "#dc822e" : F.akzent;
+      if (fr.eyebrow) dazu("eyebrow", String(fr.eyebrow).toUpperCase(), "700 30px 'Source Sans 3', sans-serif", 30, 1.3, akzent, 26);
+      if (fr.pille) dazu("pille", fr.pille, "700 36px 'Source Sans 3', sans-serif", 36, 1.25, "#f1ecdd", 34);
+      if (fr.text) teile.push({ art: "kopf", zeilen: hz, font: schrift.f(hpx), px: hpx, lh: 1.18, farbe: F.text, abstand: 0 });
+      var punkte = Array.isArray(fr.punkte) ? fr.punkte : String(fr.punkte || "").split("\n");
+      punkte = punkte.map(function (x) { return String(x).trim(); }).filter(Boolean);
+      if (punkte.length) {
+        var ppx = Math.round(40 * Math.min(1.15, gr));
+        ctx.font = "400 " + ppx + "px 'Source Sans 3', sans-serif";
+        var pz = punkte.map(function (p) { return storyZeilen(ctx, p, breite - 70); });
+        teile.push({ art: "punkte", zeilen: pz, font: ctx.font, px: ppx, lh: 1.3, farbe: F.text, abstand: 44 });
+      }
+      if (s.klein) dazu("klein", s.klein, "400 " + Math.round(36 * Math.min(1.1, gr)) + "px 'Source Sans 3', sans-serif",
+                       Math.round(36 * Math.min(1.1, gr)), 1.32, fotoHg ? "rgba(241,236,221,.9)" : F.soft, 40);
+
+      function hoeheVon(t) {
+        if (t.art === "punkte") return t.zeilen.reduce(function (a, z) { return a + z.length * t.px * t.lh + 22; }, 0);
+        if (t.art === "pille") return t.zeilen.length * t.px * t.lh + 44;
+        return t.zeilen.length * t.px * t.lh;
+      }
+      var blockH = 0;
+      teile.forEach(function (t, i) { blockH += hoeheVon(t) + (i ? t.abstand : 0); });
+      var gesamtH = blockH + innen * 2;
+
+      // ---- Sticker-Fläche und Lage des Textes
+      var oben = 250, unten = SH - 300;        // Instagram-Kopf und -Fuss frei
+      var sticker = s.sticker && STICKER[s.sticker] ? s.sticker : "";
+      var sH = sticker ? STICKER_H[sticker] || 220 : 0;
+      var mitte = SH * (Math.max(10, Math.min(90, +s.pos || 50)) / 100);
+      var y0 = Math.max(oben, Math.min(unten - gesamtH, mitte - gesamtH / 2));
+      var sY = null;
+      if (sticker) {
+        var luecke = 70;
+        if (fr.stickerPos !== undefined && fr.stickerPos !== "") {
+          sY = SH * (+fr.stickerPos / 100) - sH / 2;
+        } else {
+          sY = y0 + gesamtH + luecke;                 // unter dem Text
+          if (sY + sH > unten) sY = y0 - luecke - sH;  // sonst darüber
+        }
+        sY = Math.max(oben - 60, Math.min(SH - 240 - sH, sY));
+        // Text weicht dem Sticker aus
+        if (y0 < sY + sH + luecke && y0 + gesamtH > sY - luecke) {
+          if (sY > mitte) y0 = Math.max(oben - 80, sY - luecke - gesamtH);
+          else y0 = Math.min(SH - 200 - gesamtH, sY + sH + luecke);
+        }
+      }
+
+      // ---- Lesbarkeit auf Foto: weicher Schleier rund um den Text
+      if (fotoHg && img && s.verlauf > 0) {
+        var a = Math.min(0.88, s.verlauf / 100);
+        var cy = y0 + gesamtH / 2;
+        var g = ctx.createLinearGradient(0, Math.max(0, cy - SH * 0.42), 0, Math.min(SH, cy + SH * 0.42));
+        g.addColorStop(0, "rgba(12,28,48,0)");
+        g.addColorStop(0.5, "rgba(12,28,48," + a + ")");
+        g.addColorStop(1, "rgba(12,28,48,0)");
+        ctx.fillStyle = g; ctx.fillRect(0, 0, SW, SH);
+      }
+
+      // ---- Karte hinter dem ganzen Block
+      if (karte) {
+        ctx.fillStyle = fotoHg ? "rgba(241,236,221,.95)" : (s.hg === "creme" ? "#ffffff" : "rgba(241,236,221,.97)");
+        roundRect(ctx, pad, y0, maxW, gesamtH, 34); ctx.fill();
+        ctx.fillStyle = "#dc822e";
+        roundRect(ctx, pad, y0, 14, gesamtH, 7); ctx.fill();
+      }
+      var textFarbeKarte = "#0c1c30";
+
+      // ---- Text setzen
+      var al = s.align === "center" ? "center" : s.align === "right" ? "right" : "left";
+      var xA = al === "center" ? SW / 2 : al === "right" ? SW - pad - innen : pad + innen;
+      var y = y0 + innen;
+      ctx.textBaseline = "alphabetic";
+      teile.forEach(function (t, ti) {
+        if (ti) y += t.abstand;
+        var farbe = karte ? (t.art === "eyebrow" ? "#12828c" : t.art === "klein" ? "rgba(12,28,48,.7)" : textFarbeKarte) : t.farbe;
+        ctx.font = t.font;
+        if (t.art === "pille") {
+          var pw = Math.min(breite, Math.max.apply(null, t.zeilen.map(function (z) { return ctx.measureText(z).width; })) + 80);
+          var ph = t.zeilen.length * t.px * t.lh + 44;
+          var px0 = al === "center" ? SW / 2 - pw / 2 : al === "right" ? xA - pw : xA;
+          ctx.fillStyle = "#dc822e"; roundRect(ctx, px0, y, pw, ph, ph / 2 > 60 ? 36 : ph / 2); ctx.fill();
+          ctx.fillStyle = "#f1ecdd"; ctx.textAlign = "center";
+          t.zeilen.forEach(function (z, i) { ctx.fillText(z, px0 + pw / 2, y + 22 + t.px * 0.95 + i * t.px * t.lh); });
+          y += ph; return;
+        }
+        if (t.art === "punkte") {
+          t.zeilen.forEach(function (pz) {
+            var punktX = al === "right" ? xA - 26 : (al === "center" ? null : xA + 26);
+            var h = pz.length * t.px * t.lh;
+            if (punktX !== null) {
+              ctx.fillStyle = karte ? "#12828c" : akzent;
+              ctx.beginPath(); ctx.arc(punktX, y + t.px * 0.62, 24, 0, Math.PI * 2); ctx.fill();
+              ctx.strokeStyle = karte || !fotoHg ? "#f1ecdd" : "#0c1c30"; ctx.lineWidth = 5; ctx.lineCap = "round";
+              ctx.beginPath(); ctx.moveTo(punktX - 11, y + t.px * 0.64); ctx.lineTo(punktX - 3, y + t.px * 0.64 + 8);
+              ctx.lineTo(punktX + 12, y + t.px * 0.64 - 9); ctx.stroke();
+            }
+            ctx.fillStyle = farbe; ctx.textAlign = al;
+            var tx = al === "left" ? xA + 70 : al === "right" ? xA - 70 : xA;
+            pz.forEach(function (z, i) {
+              if (al === "center" && i === 0) z = "✓ " + z;
+              ctx.fillText(z, tx, y + t.px + i * t.px * t.lh);
+            });
+            y += h + 22;
+          });
+          return;
+        }
+        var zeilenBalken = s.balken === "zeilen" && t.art !== "eyebrow";
+        t.zeilen.forEach(function (z, i) {
+          var by = y + i * t.px * t.lh;
+          if (zeilenBalken && z) {
+            var w = ctx.measureText(z).width, padX = 26, hh = t.px * t.lh + 4;
+            var bx = al === "center" ? SW / 2 - w / 2 - padX : al === "right" ? xA - w - padX : xA - padX;
+            ctx.fillStyle = fotoHg || s.hg === "dunkel" || s.hg === "petrol" ? "rgba(241,236,221,.96)" : "rgba(12,28,48,.94)";
+            roundRect(ctx, bx, by - 2, w + padX * 2, hh, 14); ctx.fill();
+          }
+          ctx.textAlign = al;
+          var fz = zeilenBalken ? (fotoHg || s.hg === "dunkel" || s.hg === "petrol" ? "#0c1c30" : "#f1ecdd") : farbe;
+          if (!zeilenBalken && fotoHg && !karte) {
+            ctx.shadowColor = "rgba(0,0,0,.45)"; ctx.shadowBlur = 22; ctx.shadowOffsetY = 3;
+          }
+          ctx.fillStyle = fz;
+          ctx.fillText(z, xA, by + t.px * (t.art === "eyebrow" ? 1 : 0.98));
+          ctx.shadowColor = "transparent"; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
+          if (t.art === "eyebrow" && i === t.zeilen.length - 1 && !karte) {
+            // kleiner Strich unter der Kopfzeile
+            var lw = 70, lx = al === "center" ? SW / 2 - lw / 2 : al === "right" ? xA - lw : xA;
+            ctx.fillStyle = farbe; ctx.fillRect(lx, by + t.px * 1.35, lw, 4);
+          }
+        });
+        y += t.zeilen.length * t.px * t.lh;
+      });
+
+      // ---- Sticker-Fläche nur in der Vorschau
+      if (sticker && !opts.export) {
+        ctx.save();
+        ctx.setLineDash([22, 16]); ctx.lineWidth = 5;
+        ctx.strokeStyle = fotoHg || s.hg === "dunkel" || s.hg === "petrol" ? "rgba(241,236,221,.85)" : "rgba(12,28,48,.55)";
+        var sw = sticker === "link" || sticker === "dm" ? 620 : 760;
+        roundRect(ctx, SW / 2 - sw / 2, sY, sw, sH, 40); ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle = ctx.strokeStyle; ctx.textAlign = "center";
+        ctx.font = "700 34px 'Source Sans 3', sans-serif";
+        ctx.fillText("hier: " + STICKER[sticker], SW / 2, sY + sH / 2 + (s.stickerText ? -6 : 12));
+        if (s.stickerText) {
+          ctx.font = "400 28px 'Source Sans 3', sans-serif";
+          ctx.fillText(s.stickerText.length > 46 ? s.stickerText.slice(0, 44) + "…" : s.stickerText, SW / 2, sY + sH / 2 + 40);
+        }
+        ctx.restore();
+      }
+      ctx.textAlign = "left";
+    }
   }
 
   /* =========================================================
@@ -11210,7 +11840,8 @@
       handle: BRANDS.mlb_dark.handle,
       phase: phase || "",
       frames: (frames && frames.length ? frames : [{ layout: "text", text: "Dein Einstieg", cta: "" }]).map(function (f) {
-        return { id: uid("fr"), layout: f.layout || "text", text: f.text || "", cta: f.cta || "", optA: f.optA || "", optB: f.optB || "", zoom: 1, ox: 0, oy: 0 };
+        return Object.assign({ layout: "text", text: "", cta: "", optA: "", optB: "", zoom: 1, ox: 0, oy: 0 },
+          tief(f), { id: uid("fr") });
       }),
       updatedAt: new Date().toISOString()
     };
@@ -11223,8 +11854,8 @@
   function renderStorys(main) {
     var st = currentStory();
     main.innerHTML =
-      '<div class="page-head"><div><h1>Story-Studio</h1>' +
-      '<p>Story-Sequenzen im Hochformat, mit Fragebox und Umfrage als echtem Bildelement. Exportiert als PNG, die Sticker legst du in Instagram nur noch drüber, wenn du sie klickbar willst.</p></div>' +
+      '<div class="page-head"><div><h1>Story-Bibliothek</h1>' +
+      '<p>Jede Folie lässt sich unter „Gestalten“ anpassen: Schrift, links/Mitte/rechts, mit oder ohne Textbalken, Foto aus deinem Shooting. Die gestrichelte Fläche ist der Platz für deinen Sticker — im Bild bleibt sie leer, den echten Sticker setzt du in Instagram drauf.</p></div>' +
       '<div class="head-actions"><select class="btn" id="stpick"></select>' +
       '<button class="btn primary" id="newst">Neue Sequenz</button></div></div><div id="steditor"></div>';
 
@@ -11250,7 +11881,7 @@
         '<div class="field"><label>Marken-Look</label><select id="stbrand"></select></div>' +
         '<div class="field"><label>Phase</label><select id="stphase"></select></div>' +
         '<button class="btn" id="stdel">Löschen</button>' +
-        '<button class="btn primary" id="stexport">Alle Frames exportieren</button>' +
+        '<button class="btn primary" id="stexport">Alle Folien als Bilder</button>' +
       '</div><div class="storystrip" id="ststrip"></div>';
 
     var bp = ed.querySelector("#stbrand");
@@ -11289,20 +11920,23 @@
     st.frames.forEach(function (fr, i) { strip.appendChild(storyCard(st, fr, i)); });
     var add = document.createElement("button");
     add.className = "addslide";
-    add.textContent = "+ Frame";
+    add.textContent = "+ Folie";
     add.onclick = function () {
-      st.frames.push({ id: uid("fr"), layout: "text", text: "", cta: "", optA: "", optB: "", zoom: 1, ox: 0, oy: 0 });
+      st.frames.push({ id: uid("fr"), layout: "text", text: "", zoom: 1, ox: 0, oy: 0 });
       saveStory(st); renderStoryStrip(strip, st);
     };
     strip.appendChild(add);
   }
 
+  /* Eine Folie in der Story-Bibliothek: Vorschau oben, darunter Text und
+     „Gestalten“ (Schrift · Ausrichtung · Balken · Hintergrund · Foto ·
+     Höhe · Grösse · Sticker). Alles wird an der Folie gespeichert. */
   function storyCard(st, fr, i) {
     var card = document.createElement("div");
     card.className = "storycard";
     var head = document.createElement("div");
     head.className = "sc-head";
-    head.innerHTML = '<span class="sc-num">Frame ' + (i + 1) + '</span>';
+    head.innerHTML = '<span class="sc-num">Folie ' + (i + 1) + '</span>';
     var tools = document.createElement("div");
     tools.className = "sc-tools";
     [["‹", -1], ["›", 1]].forEach(function (t) {
@@ -11316,10 +11950,18 @@
       };
       tools.appendChild(b);
     });
+    var kp = document.createElement("button");
+    kp.className = "btn ghost"; kp.textContent = "⧉"; kp.title = "Folie kopieren";
+    kp.onclick = function () {
+      var neu = tief(Object.assign({}, fr)); delete neu.__draw;
+      neu.id = uid("fr");
+      st.frames.splice(i + 1, 0, neu); saveStory(st); renderStoryStrip(card.parentNode, st);
+    };
+    tools.appendChild(kp);
     var rm = document.createElement("button");
     rm.className = "btn ghost"; rm.textContent = "×";
     rm.onclick = function () {
-      if (st.frames.length === 1) { toast("Eine Sequenz braucht mindestens einen Frame."); return; }
+      if (st.frames.length === 1) { toast("Eine Sequenz braucht mindestens eine Folie."); return; }
       st.frames.splice(i, 1); saveStory(st); renderStoryStrip(card.parentNode, st);
     };
     tools.appendChild(rm);
@@ -11331,74 +11973,161 @@
 
     var body = document.createElement("div");
     body.className = "sc-body";
+    card.appendChild(body);
+
+    if (fr.notiz) {
+      var nz = document.createElement("div");
+      nz.className = "sc-notiz";
+      nz.textContent = "✏️ " + fr.notiz;
+      body.appendChild(nz);
+    }
+
+    function feld(ph, key, zeilen) {
+      var el = document.createElement(zeilen ? "textarea" : "input");
+      if (zeilen) el.rows = zeilen;
+      el.placeholder = ph;
+      el.value = Array.isArray(fr[key]) ? fr[key].join("\n") : (fr[key] || "");
+      el.oninput = function () { fr[key] = el.value; saveStory(st); draw(); };
+      body.appendChild(el);
+      return el;
+    }
 
     var lay = document.createElement("select");
     Object.keys(STORY_LAYOUTS).forEach(function (k) {
       var o = document.createElement("option");
       o.value = k; o.textContent = STORY_LAYOUTS[k];
-      if (fr.layout === k) o.selected = true;
+      if ((fr.layout || "text") === k) o.selected = true;
       lay.appendChild(o);
     });
-    lay.onchange = function () { fr.layout = lay.value; saveStory(st); draw(); extrasBauen(); };
+    lay.onchange = function () {
+      fr.layout = lay.value;
+      // Gestaltung auf die Vorgabe des neuen Layouts zurücksetzen
+      ["hg", "schrift", "align", "balken", "pos", "groesse", "sticker"].forEach(function (k) { delete fr[k]; });
+      saveStory(st); renderStoryStrip(card.parentNode, st);
+    };
     body.appendChild(lay);
 
-    var ta = document.createElement("textarea");
-    ta.rows = 3; ta.placeholder = "Text auf dem Frame"; ta.value = fr.text || "";
-    ta.oninput = function () { fr.text = ta.value; saveStory(st); draw(); };
-    body.appendChild(ta);
+    if (fr.layout === "kurs" || fr.layout === "bonus" || fr.eyebrow) feld("Kleine Zeile oben (z.B. DER KURS)", "eyebrow");
+    if (fr.layout === "bonus" || fr.pille) feld("Pille (z.B. Bonus bis Samstag, 21 Uhr)", "pille");
+    feld("Text auf der Folie", "text", 3);
+    if (fr.layout === "kurs" || (fr.punkte && fr.punkte.length)) feld("Haken-Liste, ein Punkt pro Zeile", "punkte", 4);
+    feld("Kleine Zeile unten (optional)", "klein");
 
-    var extras = document.createElement("div");
-    extras.style.cssText = "display:flex;flex-direction:column;gap:8px";
-    body.appendChild(extras);
+    var gest = document.createElement("details");
+    gest.className = "sc-gestalten";
+    gest.innerHTML = "<summary>Gestalten</summary>";
+    body.appendChild(gest);
+    var s0 = stilVon(fr);
 
-    function extrasBauen() {
-      extras.innerHTML = "";
-      if (fr.layout === "umfrage") {
-        [["optA", "Antwort links"], ["optB", "Antwort rechts"]].forEach(function (o) {
-          var inp = document.createElement("input");
-          inp.placeholder = o[1]; inp.value = fr[o[0]] || "";
-          inp.oninput = function () { fr[o[0]] = inp.value; saveStory(st); draw(); };
-          extras.appendChild(inp);
-        });
-      } else {
-        var c = document.createElement("input");
-        c.placeholder = fr.layout === "frage" ? "Text im Antwortfeld" : "Aufruf, z.B. Schreib mir FAHRPLAN";
-        c.value = fr.cta || "";
-        c.oninput = function () { fr.cta = c.value; saveStory(st); draw(); };
-        extras.appendChild(c);
-      }
-      var fb = document.createElement("label");
-      fb.className = "btn filebtn";
-      fb.innerHTML = "<span>" + (images[fr.id] ? "Bild ersetzen" : "Bild wählen") + "</span>";
-      var fi = document.createElement("input");
-      fi.type = "file"; fi.accept = "image/*";
-      fi.onchange = function () {
-        if (!fi.files || !fi.files[0]) return;
-        compressImage(fi.files[0], function (u) { saveImage("storys/" + st.id, fr.id, u); draw(); extrasBauen(); });
-      };
-      fb.appendChild(fi);
-      extras.appendChild(fb);
-      if (images[fr.id]) {
-        [["Zoom", "zoom", 1, 3, 0.02], ["Links/Rechts", "ox", -50, 50, 1], ["Hoch/Runter", "oy", -50, 50, 1]].forEach(function (sl) {
-          var row = document.createElement("div");
-          row.className = "sliderow";
-          var lb = document.createElement("span"); lb.textContent = sl[0];
-          var rg = document.createElement("input");
-          rg.type = "range"; rg.min = sl[2]; rg.max = sl[3]; rg.step = sl[4];
-          rg.value = fr[sl[1]] != null ? fr[sl[1]] : (sl[1] === "zoom" ? 1 : 0);
-          rg.oninput = function () { fr[sl[1]] = parseFloat(rg.value); draw(); };
-          rg.onchange = function () { saveStory(st); };
-          row.appendChild(lb); row.appendChild(rg);
-          extras.appendChild(row);
-        });
-      }
-      var one = document.createElement("button");
-      one.className = "btn ghost"; one.textContent = "Frame als PNG";
-      one.onclick = function () { exportStoryFrame(st, fr, i, one); };
-      extras.appendChild(one);
+    function seg(titel, key, werte, jetzt) {
+      var w = document.createElement("div");
+      w.className = "sc-seg";
+      w.innerHTML = "<span>" + titel + "</span>";
+      var reihe = document.createElement("div");
+      werte.forEach(function (v) {
+        var b = document.createElement("button");
+        b.type = "button"; b.textContent = v[1];
+        if (v[2]) b.style.cssText = v[2];
+        b.setAttribute("aria-pressed", String(jetzt === v[0]));
+        b.onclick = function () {
+          fr[key] = v[0];
+          Array.prototype.forEach.call(reihe.children, function (x) { x.setAttribute("aria-pressed", "false"); });
+          b.setAttribute("aria-pressed", "true");
+          saveStory(st); draw();
+          if (key === "hg") fotoZeile.style.display = v[0] === "foto" ? "" : "none";
+        };
+        reihe.appendChild(b);
+      });
+      w.appendChild(reihe);
+      gest.appendChild(w);
     }
-    extrasBauen();
-    card.appendChild(body);
+    seg("Schrift", "schrift", [
+      ["philo", "Aa", "font-family:Philosopher;font-weight:700"],
+      ["philo-k", "Aa", "font-family:Philosopher;font-style:italic"],
+      ["sans", "Aa", "font-family:'Source Sans 3';font-weight:300"],
+      ["sans-b", "Aa", "font-family:'Source Sans 3';font-weight:700"]], s0.schrift);
+    seg("Ausrichtung", "align", [["left", "links"], ["center", "Mitte"], ["right", "rechts"]], s0.align);
+    seg("Textbalken", "balken", [["aus", "ohne"], ["zeilen", "Balken"], ["karte", "Karte"]], s0.balken);
+    seg("Hintergrund", "hg", [
+      ["foto", "Foto"], ["dunkel", "", "background:#0c1c30"], ["creme", "", "background:#f1ecdd"],
+      ["petrol", "", "background:#12828c"], ["orange", "", "background:#dc822e"]], s0.hg);
+
+    // Shootingbilder + eigenes Foto
+    var fotoZeile = document.createElement("div");
+    fotoZeile.className = "sc-fotos";
+    fotoZeile.style.display = s0.hg === "foto" ? "" : "none";
+    (typeof COVERFOTOS !== "undefined" ? COVERFOTOS : []).forEach(function (name) {
+      var t = document.createElement("img");
+      t.src = "assets/" + name; t.loading = "lazy"; t.title = name;
+      if (fr.foto === name && (fr.eigenesFoto === false || !images[fr.id])) t.className = "sel";
+      t.onerror = function () { t.remove(); };
+      t.onclick = function () {
+        fr.foto = name; fr.hg = "foto";
+        fr.eigenesFoto = false;
+        Array.prototype.forEach.call(fotoZeile.querySelectorAll("img"), function (x) { x.className = ""; });
+        t.className = "sel";
+        saveStory(st); draw();
+      };
+      fotoZeile.appendChild(t);
+    });
+    var fb = document.createElement("label");
+    fb.className = "btn filebtn";
+    fb.innerHTML = "<span>" + (images[fr.id] ? "Eigenes Foto ersetzen" : "Eigenes Foto") + "</span>";
+    var fi = document.createElement("input");
+    fi.type = "file"; fi.accept = "image/*";
+    fi.onchange = function () {
+      if (!fi.files || !fi.files[0]) return;
+      compressImage(fi.files[0], function (u) {
+        fr.hg = "foto"; fr.eigenesFoto = true; saveImage("storys/" + st.id, fr.id, u); saveStory(st); draw();
+      });
+    };
+    fb.appendChild(fi);
+    fotoZeile.appendChild(fb);
+    gest.appendChild(fotoZeile);
+
+    function regler(titel, key, min, max, step, wert) {
+      var row = document.createElement("div");
+      row.className = "sliderow";
+      var lb = document.createElement("span"); lb.textContent = titel;
+      var rg = document.createElement("input");
+      rg.type = "range"; rg.min = min; rg.max = max; rg.step = step; rg.value = wert;
+      rg.oninput = function () { fr[key] = parseFloat(rg.value); draw(); };
+      rg.onchange = function () { saveStory(st); };
+      row.appendChild(lb); row.appendChild(rg);
+      gest.appendChild(row);
+    }
+    regler("Höhe", "pos", 12, 88, 1, s0.pos);
+    regler("Grösse", "groesse", 0.6, 1.5, 0.05, s0.groesse);
+    regler("Schleier", "verlauf", 0, 85, 1, s0.verlauf);
+    regler("Foto-Zoom", "zoom", 1, 3, 0.02, fr.zoom || 1);
+    regler("Foto ↔", "ox", -50, 50, 1, fr.ox || 0);
+    regler("Foto ↕", "oy", -50, 50, 1, fr.oy || 0);
+
+    // Sticker: nur Platzhalter in der Vorschau, im Export leer
+    var sk = document.createElement("div");
+    sk.className = "sc-seg";
+    sk.innerHTML = "<span>Platz für Sticker</span>";
+    var sel = document.createElement("select");
+    Object.keys(STICKER).forEach(function (k) {
+      var o = document.createElement("option");
+      o.value = k; o.textContent = STICKER[k];
+      if (s0.sticker === k) o.selected = true;
+      sel.appendChild(o);
+    });
+    sel.onchange = function () { fr.sticker = sel.value; saveStory(st); draw(); };
+    sk.appendChild(sel);
+    var stx = document.createElement("input");
+    stx.placeholder = "Was in den Sticker kommt (nur für dich)";
+    stx.value = s0.stickerText;
+    stx.oninput = function () { fr.stickerText = stx.value; if (fr.sticker === undefined) fr.sticker = s0.sticker; saveStory(st); draw(); };
+    sk.appendChild(stx);
+    gest.appendChild(sk);
+    regler("Sticker-Höhe", "stickerPos", 15, 85, 1, fr.stickerPos !== undefined && fr.stickerPos !== "" ? fr.stickerPos : 70);
+
+    var one = document.createElement("button");
+    one.className = "btn ghost"; one.textContent = "Folie als PNG";
+    one.onclick = function () { exportStoryFrame(st, fr, i, one); };
+    body.appendChild(one);
 
     function draw() { renderStoryFrame(cv, fr, st, i, st.frames.length); }
     fr.__draw = draw;
@@ -11409,10 +12138,9 @@
   function redrawStory(st) { st.frames.forEach(function (f) { if (f.__draw) f.__draw(); }); }
 
   function storyBlob(st, fr, i) {
-    return new Promise(function (res) {
-      var cv = document.createElement("canvas");
-      renderStoryFrame(cv, fr, st, i, st.frames.length);
-      setTimeout(function () { cv.toBlob(function (b) { res(b); }, "image/png"); }, 280);
+    var cv = document.createElement("canvas");
+    return renderStoryFrame(cv, fr, st, i, st.frames.length, { export: true }).then(function () {
+      return new Promise(function (res) { cv.toBlob(function (b) { res(b); }, "image/png"); });
     });
   }
 
@@ -11421,7 +12149,7 @@
     btn.disabled = true;
     storyBlob(st, fr, i).then(function (b) {
       return downloads.save({ filename: safeName(st.name) + "-story-" + (i + 1) + ".png", data: b });
-    }).then(function () { toast("Frame " + (i + 1) + " gespeichert."); })
+    }).then(function () { toast("Folie " + (i + 1) + " gespeichert."); })
       .catch(function (e) { if (e && e.code !== "declined") toast("Hat nicht geklappt."); })
       .then(function () { btn.disabled = false; });
   }
@@ -11431,13 +12159,13 @@
     btn.disabled = true;
     var i = 0;
     function next() {
-      if (i >= st.frames.length) { btn.disabled = false; btn.textContent = "Alle Frames exportieren"; toast("Fertig."); return; }
+      if (i >= st.frames.length) { btn.disabled = false; btn.textContent = "Alle Folien als Bilder"; toast("Fertig."); return; }
       var idx = i++;
       storyBlob(st, st.frames[idx], idx).then(function (b) {
-        btn.textContent = "Frame " + (idx + 1) + " von " + st.frames.length + " …";
+        btn.textContent = "Folie " + (idx + 1) + " von " + st.frames.length + " …";
         return downloads.save({ filename: safeName(st.name) + "-story-" + (idx + 1) + ".png", data: b });
       }).then(next).catch(function () {
-        btn.disabled = false; btn.textContent = "Alle Frames exportieren";
+        btn.disabled = false; btn.textContent = "Alle Folien als Bilder";
       });
     }
     next();
@@ -12817,6 +13545,7 @@
     else if (activeTab === "storys") renderStorys(main);
     else if (activeTab === "reels") renderReels(main);
     else if (activeTab === "wissen") renderWissen(main);
+    else if (activeTab === "launch") renderLaunch(main);
     else if (activeTab === "funnel") renderFunnel(main);
     else if (activeTab === "mailings") renderMailings(main);
     else if (activeTab === "produkte") renderProdukte(main);
@@ -12890,6 +13619,9 @@
   ketten = lsGet("ketten", {}) || {};
   umsatzplan = lsGet("umsatzplan", { zeilen: [], weitere: 0 }) ||
                { zeilen: [], weitere: 0 };
+  launchD = lsGet("launch", { launches: [], typen: {} }) || { launches: [], typen: {} };
+  if (!launchD.launches) launchD.launches = [];
+  if (!launchD.typen) launchD.typen = {};
   verknuepfung = lsGet("verknuepfung", null);
   WISSEN_FELDER.forEach(function (f) { wissen[f.k] = f.d; });
   Object.assign(wissen, lsGet("wissen", {}) || {});
@@ -13042,6 +13774,16 @@
         umsatzplan = { zeilen: d0.zeilen || [], weitere: d0.weitere || 0 };
         lsSet("umsatzplan", umsatzplan);
         if (activeTab === "zahlen") render();
+      }, function () {});
+      db.doc("daten/launch").onSnapshot(function (snap) {
+        if (!snap.exists) return;
+        var d0 = snap.data() || {};
+        /* Lokal neuer gewinnt — die Lehre vom 24.09.2026: Arbeit zurueckholen
+           ist unmoeglich, einen alten Anzeigestand erneuern ein Klick. */
+        if (launchD && launchD.updatedAt && (!d0.updatedAt || d0.updatedAt < launchD.updatedAt)) return;
+        launchD = { launches: d0.launches || [], typen: d0.typen || {}, updatedAt: d0.updatedAt };
+        lsSet("launch", launchD);
+        if (activeTab === "launch") render();
       }, function () {});
       db.doc("daten/ketten").onSnapshot(function (snap) {
         if (!snap.exists) return;
