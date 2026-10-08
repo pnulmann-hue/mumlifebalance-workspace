@@ -76,6 +76,14 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[10-landingpage-30-tage-energieroutine]]
 - [[11-30-tage-plan]]
 - [[12-30-fruehstuecke]]
+- [[13-story-launch-september]]
+- [[14-launch-mails-september]]
+- [[15-wissens-dump-fragen]]
+- [[16-belegte-fakten]]
+- [[17-mittagessen]]
+- [[18-abendessen]]
+- [[19-zwischenmahlzeiten]]
+- [[20-begleitung-artifact]]
 - [[_INDEX]]
 
 ### 📁 instagram-startklar
@@ -104,7 +112,11 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[05-praesentationen]]
 - [[06-preis-validierung]]
 - [[07-launch-kalender]]
+- [[08-aufgabenplan]]
+- [[09-funnel-geruest]]
 - [[10-abgleich-julia-claude-kurse]]
+- [[10-webinar-aufbau-vorbild]]
+- [[MORGEN-8-OKTOBER]]
 - [[begriffe-cheatsheet]]
 - [[buch-technik-auftrag]]
 - [[business-brief-vorlage]]
@@ -117,6 +129,8 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[checkliste-modul-7]]
 - [[checkliste-modul-8]]
 - [[checkliste-modul-9]]
+- [[claude-md-vorlage]]
+- [[cowork-erster-bot]]
 - [[floskel-liste-vorlage]]
 - [[roadmap-drei-stufen]]
 - [[sicherheits-checkliste]]
@@ -197,6 +211,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[bootcamp-tagesimpulse-SKRIPTE]]
 - [[challenge-launch-plan]]
 - [[challenge-vs-webinar-entscheidung]]
+- [[easy-ki-ergaenzung-mba-seite]]
 - [[evergreen-webinar-konzept]]
 - [[feed-content-plan]]
 - [[launch-kalender-juli-2026]]
@@ -223,6 +238,8 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 ### 📁 pia
 
 - [[00-pia-architektur]]
+- [[01-rollen-hierarchie-idee]]
+- [[_INDEX]]
 
 ### 📁 produkt-ideen-finder
 

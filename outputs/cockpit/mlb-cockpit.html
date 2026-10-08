@@ -2101,7 +2101,7 @@
     if (!db) return;
     db.doc("daten/clips").get().then(function (snap) {
       if (snap.exists) {
-        clips = clipListe(snap.data());
+        clips = clipListe(tief(snap.data()));
         lsSet("clips", clips);
         if (activeTab === "reels") render();
       }
@@ -2186,6 +2186,12 @@
     toastTimer = setTimeout(function () { t.remove(); }, 2600);
   }
 
+  /* 🚨 Die Datenbank liefert eingefrorene Objekte — unter "use strict" wirft
+     jede Zuweisung daran. Siehe Kopf von patch-auftauen.py. */
+  function tief(x) {
+    if (x === null || x === undefined || typeof x !== "object") return x;
+    try { return JSON.parse(JSON.stringify(x)); } catch (e) { return x; }
+  }
   function lsGet(key, fallback) {
     try { var v = localStorage.getItem("mlb:" + key); return v ? JSON.parse(v) : fallback; }
     catch (e) { return fallback; }
@@ -2704,7 +2710,7 @@
       .then(function (qs) {
         var neu = false;
         qs.docs.forEach(function (d) {
-          var u = (d.data() || {}).dataUrl;
+          var u = (tief(d.data()) || {}).dataUrl;
           if (!u || d.id.indexOf("cover") !== 0) return;
           wochenbilder[id + "/" + d.id] = u;
           neu = true;
@@ -6404,7 +6410,7 @@
       .then(function (snap) {
         var gefunden = {};
         snap.forEach(function (d) {
-          var w = d.data && d.data();
+          var w = d.data && tief(d.data());
           if (/^slide-[0-9]{2}$/.test(d.id) && w && w.dataUrl) gefunden[d.id] = w.dataUrl;
         });
         weiter(gefunden);
@@ -8145,7 +8151,7 @@
     db.collection("suche").limit(80).get().then(function (qs) {
       var alles = [];
       qs.docs.forEach(function (doc) {
-        (doc.data() || {}).items && (alles = alles.concat(doc.data().items));
+        (tief(doc.data()) || {}).items && (alles = alles.concat(tief(doc.data()).items));
       });
       suchIndex = alles;
       suchLaeuft = false;
@@ -8271,7 +8277,7 @@
     mailsGeholt[nummer] = true;
     db.doc("mails/" + nummer).get().then(function (snap) {
       if (!snap.exists) { mailtexte[nummer] = []; }
-      else { mailtexte[nummer] = (snap.data() || {}).items || []; }
+      else { mailtexte[nummer] = (tief(snap.data()) || {}).items || []; }
       if (activeTab === "mailings") render();
     }).catch(function () { mailtexte[nummer] = []; });
   }
@@ -8283,7 +8289,7 @@
     if (!db || mailEntwuerfe) return;
     mailEntwuerfe = [];
     db.collection("mailentwuerfe").limit(50).get().then(function (qs) {
-      mailEntwuerfe = qs.docs.map(function (d) { var x = d.data() || {}; x.id = d.id; return x; });
+      mailEntwuerfe = qs.docs.map(function (d) { var x = tief(d.data()) || {}; x.id = d.id; return x; });
       if (activeTab === "mailings") render();
     }).catch(function () {});
   }
@@ -8298,7 +8304,7 @@
       db.collection("mailentwuerfe").where("automation", "in", [k, Number(k)]).limit(50).get()
         .then(function (qs) {
           entwurfJe[k] = { status: "ok", liste: qs.docs.map(function (d) {
-            var x = d.data() || {}; x.id = d.id; return x; }) };
+            var x = tief(d.data()) || {}; x.id = d.id; return x; }) };
           if (activeTab === "mailings") render();
         }).catch(function (e) {
           if (nochmal) { setTimeout(function () { versuch(false); }, 1200); return; }
@@ -12853,11 +12859,11 @@
       db = d;
       setSaveState("gespeichert", "on");
       db.doc("daten/wissen-voll").get().then(function (snap) {
-        if (snap.exists) { wissenVoll = snap.data(); lsSet("wissen-voll", wissenVoll); }
+        if (snap.exists) { wissenVoll = tief(snap.data()); lsSet("wissen-voll", wissenVoll); }
       }).catch(function () {});
       db.doc("daten/wissen").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        Object.assign(wissen, snap.data() || {});
+        Object.assign(wissen, tief(snap.data()) || {});
         lsSet("wissen", wissen);
         if (activeTab === "wissen") render();
       }, function () {});
@@ -12865,7 +12871,7 @@
         var seen = {};
         state.storys.forEach(function (x) { seen[x.id] = x; });
         qs.docs.forEach(function (doc) {
-          var d0 = doc.data() || {};
+          var d0 = tief(doc.data()) || {};
           if (!d0.frames || !d0.frames.length) return;
           // 🚨 Die Leseliste muss so lang sein wie die Schreibliste, sonst
           // kommen Felder nie an. profil, kommentar*, abgelehnt* und blotato
@@ -12879,7 +12885,7 @@
           db.doc("storys/" + st.id).collection("bilder").limit(30).get().then(function (bs) {
             var neu = false;
             bs.docs.forEach(function (b) {
-              var u = (b.data() || {}).dataUrl;
+              var u = (tief(b.data()) || {}).dataUrl;
               if (u && images[b.id] !== u) { images[b.id] = u; lsSet("img-" + b.id, u); neu = true; }
             });
             if (neu && activeTab === "storys") render();
@@ -12890,25 +12896,25 @@
       /* Die Freigabe-Sammlung - bis 24.09.2026 wurde sie nur beschrieben. */
       db.doc("daten/planung-abgleich").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        planungAbgleich = snap.data() || { jahresplan: {}, ziele: {} };
+        planungAbgleich = tief(snap.data()) || { jahresplan: {}, ziele: {} };
         lsSet("planung-abgleich", planungAbgleich);
         if (activeTab === "launches" || activeTab === "ziele") render();
       }, function () {});
       db.doc("daten/ideen-extern").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        ideenExtern = snap.data() || { ideen: [] };
+        ideenExtern = tief(snap.data()) || { ideen: [] };
         lsSet("ideen-extern", ideenExtern);
         if (activeTab === "ideenextern") render();
       }, function () {});
       db.doc("daten/gepostet-zuordnung").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        igZuordnung = snap.data() || { zuordnung: {} };
+        igZuordnung = tief(snap.data()) || { zuordnung: {} };
         lsSet("ig-zuordnung", igZuordnung);
         render();
       }, function () {});
       db.collection("freigaben").limit(300).get().then(function (qs) {
         var m = {};
-        qs.docs.forEach(function (doc) { m[doc.id] = doc.data() || {}; });
+        qs.docs.forEach(function (doc) { m[doc.id] = tief(doc.data()) || {}; });
         freigaben = m;
         lsSet("freigaben", m);
         render();
@@ -12917,7 +12923,7 @@
         var seen = {};
         state.reels.forEach(function (x) { seen[x.id] = x; });
         qs.docs.forEach(function (doc) {
-          var d0 = doc.data() || {};
+          var d0 = tief(doc.data()) || {};
           var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", coverhook: d0.coverhook || "", coverunter: d0.coverunter || "", videoart: d0.videoart || "sprech", hinweis: d0.hinweis || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", texty: (typeof d0.texty === "number") ? d0.texty : null, textskala: d0.textskala || 100, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", videourl: d0.videourl || "", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, updatedAt: d0.updatedAt || "" };
           if (seen[rl.id]) dbUebernehmen(seen[rl.id], rl); else state.reels.push(rl);
         });
@@ -12927,7 +12933,7 @@
           db.doc("reels/" + rl.id).collection("bilder").limit(4).get().then(function (bs) {
             var neu2 = false;
             bs.docs.forEach(function (b) {
-              var u = (b.data() || {}).dataUrl;
+              var u = (tief(b.data()) || {}).dataUrl;
               if (u && images[b.id] !== u) { images[b.id] = u; lsSet("img-" + b.id, u); neu2 = true; }
             });
             if (neu2 && activeTab === "reels") render();
@@ -12937,44 +12943,44 @@
       }).catch(function () {});
       db.doc("daten/produkt-details").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        produktdetails = (snap.data() || {}).werte || {};
+        produktdetails = (tief(snap.data()) || {}).werte || {};
         lsSet("produkt-details", produktdetails);
         if (activeTab === "produkte") render();
       }, function () {});
       db.doc("daten/verknuepfung").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        verknuepfung = snap.data() || null;
+        verknuepfung = tief(snap.data()) || null;
         lsSet("verknuepfung", verknuepfung);
         if (activeTab === "produkte") render();
       }, function () {});
       db.doc("daten/umsatzplan").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        var d0 = snap.data() || {};
+        var d0 = tief(snap.data()) || {};
         umsatzplan = { zeilen: d0.zeilen || [], weitere: d0.weitere || 0 };
         lsSet("umsatzplan", umsatzplan);
         if (activeTab === "zahlen") render();
       }, function () {});
       db.doc("daten/ketten").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        ketten = (snap.data() || {}).werte || {};
+        ketten = (tief(snap.data()) || {}).werte || {};
         lsSet("ketten", ketten);
         if (activeTab === "katalog") render();
       }, function () {});
       db.doc("daten/reichweite").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        reichweite = snap.data() || null;
+        reichweite = tief(snap.data()) || null;
         lsSet("reichweite", reichweite);
         if (activeTab === "zahlen") render();
       }, function () {});
       db.doc("daten/ziele").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        zieleD = snap.data() || null;
+        zieleD = tief(snap.data()) || null;
         lsSet("ziele", zieleD);
         if (activeTab === "ziele") render();
       }, function () {});
       db.doc("daten/offene-chats").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        var d0 = snap.data() || {};
+        var d0 = tief(snap.data()) || {};
         if (offeneChats && offeneChats.updatedAt && (!d0.updatedAt || d0.updatedAt < offeneChats.updatedAt)) return;
         offeneChats = d0;
         lsSet("offene-chats", offeneChats);
@@ -12982,7 +12988,7 @@
       }, function () {});
       db.doc("daten/termine").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        var d0 = snap.data() || {};
+        var d0 = tief(snap.data()) || {};
         // Lokal neuer? Dann nicht ueberschreiben (Lehre vom 24.09.2026).
         if (termine && termine.updatedAt && (!d0.updatedAt || d0.updatedAt < termine.updatedAt)) return;
         termine = d0;
@@ -12991,103 +12997,103 @@
       }, function () {});
       db.doc("daten/aufgaben").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        aufgaben = snap.data() || null;
+        aufgaben = tief(snap.data()) || null;
         lsSet("aufgaben", aufgaben);
         if (activeTab === "aufgaben" || activeTab === "uebersicht") render();
       }, function () {});
       db.doc("daten/stimmen").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        stimmen = snap.data() || null;
+        stimmen = tief(snap.data()) || null;
         lsSet("stimmen", stimmen);
         if (activeTab === "leads") render();
       }, function () {});
       db.doc("daten/wochenbogen").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        wochenbogen = snap.data() || null;
+        wochenbogen = tief(snap.data()) || null;
         lsSet("wochenbogen", wochenbogen);
         if (activeTab === "wochenbogen") render();
       }, function () {});
       db.doc("daten/wochenbogen-notizen").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        wochenbogenNotizen = (snap.data() || {}).werte || {};
+        wochenbogenNotizen = (tief(snap.data()) || {}).werte || {};
         lsSet("wochenbogen-notizen", wochenbogenNotizen);
         if (activeTab === "wochenbogen") render();
       }, function () {});
       db.doc("daten/monatsbogen").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        monatsbogen = snap.data() || null;
+        monatsbogen = tief(snap.data()) || null;
         lsSet("monatsbogen", monatsbogen);
         if (activeTab === "monatsbogen") render();
       }, function () {});
       db.doc("daten/steuer").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        steuer = snap.data() || null;
+        steuer = tief(snap.data()) || null;
         lsSet("steuer", steuer);
         if (activeTab === "zahlen") render();
       }, function () {});
       db.doc("daten/projekte").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        projekte = snap.data() || null;
+        projekte = tief(snap.data()) || null;
         lsSet("projekte", projekte);
         if (activeTab === "aufgaben") render();
       }, function () {});
       db.doc("daten/monatsbogen-notizen").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        monatsbogenNotizen = (snap.data() || {}).werte || {};
+        monatsbogenNotizen = (tief(snap.data()) || {}).werte || {};
         lsSet("monatsbogen-notizen", monatsbogenNotizen);
         if (activeTab === "monatsbogen") render();
       }, function () {});
       db.doc("daten/jahresplan").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        jahresplan = snap.data() || null;
+        jahresplan = tief(snap.data()) || null;
         lsSet("jahresplan", jahresplan);
         if (activeTab === "launches") render();
       }, function () {});
       db.doc("daten/gepostet").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        gepostet = snap.data() || null;
+        gepostet = tief(snap.data()) || null;
         lsSet("gepostet", gepostet);
         if (activeTab === "gepostet") render();
       }, function () {});
       db.doc("daten/gepostet-notizen").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        gepostetNotizen = (snap.data() || {}).werte || {};
+        gepostetNotizen = (tief(snap.data()) || {}).werte || {};
         lsSet("gepostet-notizen", gepostetNotizen);
         if (activeTab === "gepostet") render();
       }, function () {});
       db.doc("daten/instagram").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        igzahlen = snap.data() || null;
+        igzahlen = tief(snap.data()) || null;
         lsSet("ig-zahlen", igzahlen);
         if (activeTab === "zahlen") render();
       }, function () {});
       db.doc("daten/links").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        links = snap.data() || null;
+        links = tief(snap.data()) || null;
         lsSet("links", links);
         if (activeTab === "links") render();
       }, function () {});
       db.doc("daten/katalog").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        katalog = snap.data() || null;
+        katalog = tief(snap.data()) || null;
         lsSet("katalog", katalog);
         if (activeTab === "katalog") render();
       }, function () {});
       db.doc("daten/kurse").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        kurse = snap.data() || null;
+        kurse = tief(snap.data()) || null;
         lsSet("kurse", kurse);
         if (activeTab === "kurse") render();
       }, function () {});
       db.doc("daten/doterra").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        doterra = snap.data() || null;
+        doterra = tief(snap.data()) || null;
         lsSet("doterra", doterra);
         if (activeTab === "rangtracker") render();
       }, function () {});
       db.doc("daten/mailings").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        var d0 = snap.data() || {};
+        var d0 = tief(snap.data()) || {};
         mailings = { listen: d0.listen || [], automationen: d0.automationen || [],
                      stand: d0.stand || "" };
         lsSet("mailings", mailings);
@@ -13095,14 +13101,14 @@
       }, function () {});
       db.doc("daten/einstellungen").onSnapshot(function (snap) {
         if (!snap.exists) return;
-        Object.assign(settings, snap.data() || {});
+        Object.assign(settings, tief(snap.data()) || {});
         lsSet("einstellungen", settings);
         if (activeTab === "uebersicht" || activeTab === "zahlen") render();
       }, function () {});
       DOC_KEYS.forEach(function (k) {
         db.doc("daten/" + k).onSnapshot(function (snap) {
           if (!snap.exists) return;
-          var items = (snap.data() || {}).items;
+          var items = (tief(snap.data()) || {}).items;
           if (!Array.isArray(items)) return;
           state[k] = items.map(function (x) { return Object.assign({}, x); });
           lsSet(k, state[k]);
@@ -13113,7 +13119,7 @@
         var seen = {};
         state.karussells.forEach(function (c) { seen[c.id] = c; });
         qs.docs.forEach(function (doc) {
-          var d0 = doc.data() || {};
+          var d0 = tief(doc.data()) || {};
           var car = { id: doc.id, datum: d0.datum || "", name: d0.name || "Karussell", brand: d0.brand || "mlb_dark", handle: d0.handle || "", typ: d0.typ || "listicle", funnel: d0.funnel || "TOF", textfrei: !!d0.textfrei, blotato: d0.blotato || null, abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", caption: d0.caption || "", slides: d0.slides || [], updatedAt: d0.updatedAt || "" };
           if (!car.slides.length) return;
           // 🚨 Bei Storys und Reels wurde am 24.09.2026 auf dbUebernehmen
@@ -13130,7 +13136,7 @@
           db.doc("karussells/" + car.id).collection("bilder").limit(30).get().then(function (bs) {
             var neu = false;
             bs.docs.forEach(function (b) {
-              var u = (b.data() || {}).dataUrl;
+              var u = (tief(b.data()) || {}).dataUrl;
               if (u && images[b.id] !== u) { images[b.id] = u; lsSet("img-" + b.id, u); neu = true; }
             });
             if (neu && activeTab === "woche") render();

@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Was nie in einen Arbeitsplatz gehört
 
 Bei mir lagen Zugangsschlüssel im Klartext und die Daten von zweiunddreissig

@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Checkliste Modul 8 · Produkte, Seiten und Mails
 
 Geh das hier durch, bevor du weitermachst. Was noch offen ist, holst du jetzt

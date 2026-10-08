@@ -8,11 +8,13 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 
 ## Dateien
 
+- [[2026-09-22-zwei-folien-karussell]]
 - [[2026-10-04-hook-gesamtbericht]]
 - [[2026-10-04-hook-markt-analyse]]
 - [[2026-10-04-hook-verkaufsdaten]]
 - [[2026-10-04-nische-gedanken]]
 - [[2026-10-04-zielgruppe-ausserhalb-instagram]]
+- [[2026-10-08-julia-funnel-durchsicht]]
 - [[2026-10-08-juliamueller-analyse]]
 - [[KW18-doterra]]
 - [[KW18-mentoring]]
@@ -54,6 +56,12 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 - [[KW36-mentoring]]
 - [[KW37-doterra]]
 - [[KW37-mentoring]]
+- [[KW38-doterra]]
+- [[KW38-mentoring]]
+- [[KW39-doterra]]
+- [[KW39-mentoring]]
+- [[KW40-doterra]]
+- [[KW40-mentoring]]
 
 ### 📁 2026-07-doterra-hormonwechsel
 
@@ -62,4 +70,3 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 - [[03-hooks-und-captions]]
 - [[README]]
 - [[_INDEX]]
-- [[2026-09-22-zwei-folien-karussell]]

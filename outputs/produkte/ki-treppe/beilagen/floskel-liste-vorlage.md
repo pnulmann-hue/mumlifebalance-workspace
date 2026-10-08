@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Woran man KI-Text erkennt
 
 Leere Vorlage für deinen Arbeitsplatz. Die Muster unten sind der Anfang — die

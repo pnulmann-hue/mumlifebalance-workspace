@@ -54,3 +54,29 @@ veröffentlichen. Das Skript ist wiederholbar und prüft selbst mit `node --chec
 
 🚨 **Nicht ohne den Read publishen** und nicht mit `force` — das verwirft die
 Live-Version, und darin steckt „Mein Tisch".
+
+---
+
+## Zweiter Patch, ebenfalls offen (08.10.2026)
+
+`scripts/cockpit/patch-launch-reiter.py` baut den **Reiter „Launch" unter
+Produkte** ein (Code daneben in `launch-reiter.js` und `launch-reiter.css`).
+Vier Blöcke: wo stehe ich · Käufertypen diese Woche · der Fahrplan über die
+fünf Phasen · Launches anlegen. Neues Dokument **`daten/launch` — gehört
+Patricia**, der Abgleich schreibt dort nie hinein.
+
+**Geprüft ist er**: `node --check` über das JS einzeln und über die ganze
+Seite, dann lokal in der Testfassung (`scripts/cockpit/testfassung-bauen.py`,
+Port 4381) am Desktop und am Handy, mit einem echten Testlauf — Phase, Zähler,
+Preis-Gegenprobe, Käufertyp-Haken, keine Konsolenfehler.
+
+🚨 **Beide Patches hängen an einem einzigen Publish.** Dafür muss die
+Live-Fassung einmal ganz gelesen werden (rund 640 KB), sonst lehnt der Server
+die Veröffentlichung ab. Das ist eine Ansage wert, keine Nebenbei-Aktion —
+deshalb steht es hier und nicht still im Code.
+
+**Befund aus dem eigenen Testlauf:** bei den Preisen des KI-Launches
+(199 · 277 · 333) schlägt die Gegenprobe an. Der Schritt vom Secret Offer zum
+Frühbucher ist **78**, der zum regulären Preis nur **56** — nach der Methodik
+gehört es umgekehrt: vorne klein, hinten gross. Wer früh vertraut, soll den
+grössten Abstand zum Normalpreis haben.

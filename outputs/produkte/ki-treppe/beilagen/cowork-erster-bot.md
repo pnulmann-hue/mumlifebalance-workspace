@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Dein erster Helfer in Cowork
 
 Noch kein Bot, der von selbst läuft — aber schon einer, der dir eine Arbeit

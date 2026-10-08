@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Alte Fassungen vom 7. Juli 2026 — NICHT verwenden
 
 Diese drei Dateien sind die Vorgänger von `kickstart-mail-1/2/3.html`.

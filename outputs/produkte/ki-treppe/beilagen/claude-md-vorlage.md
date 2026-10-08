@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Deine CLAUDE.md — das Gedächtnis deines Arbeitsplatzes
 
 Diese Datei liegt ganz oben in deinem Arbeitsplatz und wird bei **jedem**
