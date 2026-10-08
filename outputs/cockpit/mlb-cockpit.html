@@ -1730,20 +1730,92 @@
   .ti-antwort { white-space: pre-wrap; background: var(--surface); border: 1px solid var(--line);
                 border-radius: 10px; padding: 11px 12px; font-size: 13.5px; line-height: 1.55;
                 margin-top: 10px; max-height: 420px; overflow-y: auto; }
+
+  /* ---------- Bereiche oben (08.10.2026) ----------
+     Kopfleiste auf dem Verlauf, Inhalte auf einem hellen Blatt. */
+  body {
+    background: linear-gradient(140deg, #0c1c30 0%, #173a52 50%, #12828c 100%) fixed;
+    background-color: #0c1c30;
+  }
+  .shell { display: block; min-height: 100vh; }
+  .kopfleiste {
+    position: sticky; top: 0; z-index: 40;
+    display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+    padding: 12px 24px;
+    background: rgba(12, 28, 48, 0.6);
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(251, 248, 241, 0.12);
+  }
+  .kl-marke { display: flex; align-items: baseline; gap: 10px; color: #fbf8f1; }
+  .kl-name { font-family: var(--display); font-size: 19px; }
+  .kl-sub { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.7; }
+  .kl-nav { display: flex; flex-direction: row; gap: 6px; overflow-x: auto; }
+  .kl-pill {
+    border: 1px solid rgba(251, 248, 241, 0.3); background: rgba(251, 248, 241, 0.08);
+    color: #fbf8f1; border-radius: 999px; padding: 7px 16px; font: inherit;
+    font-size: 14px; cursor: pointer; white-space: nowrap;
+  }
+  .kl-pill:hover { background: rgba(251, 248, 241, 0.18); }
+  .kl-pill[aria-current="true"] {
+    background: #fbf8f1; color: #0c1c30; border-color: #fbf8f1; font-weight: 600;
+  }
+  .kl-zahl {
+    margin-left: 6px; font-size: 11px; background: #dc822e; color: #fff;
+    border-radius: 999px; padding: 1px 7px; font-weight: 600;
+  }
+  .kl-stand { margin-left: auto; color: rgba(251, 248, 241, 0.8); font-size: 12px; }
+  main.ti-main { background: none; }
+  main.blatt {
+    background: var(--ground); border-radius: 22px;
+    margin: 18px 20px 28px; padding: 22px 26px 50px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
+  }
+  .unterleiste { margin: 0 0 22px; display: flex; flex-direction: column; gap: 12px; }
+  .ul-tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+  .ul-tab {
+    border: 0; background: var(--surface-2); color: var(--ink-soft);
+    border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 13px; cursor: pointer;
+  }
+  .ul-tab:hover { color: var(--ink); }
+  .ul-tab[aria-current="true"] { background: var(--ink); color: var(--surface); font-weight: 600; }
+  .ul-tab .n { margin-left: 5px; font-size: 11px; color: var(--orange); font-weight: 700; }
+  .hilfeleiste { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .hl-titel {
+    font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--ink-soft); margin-right: 4px;
+  }
+  .hl-chip {
+    display: inline-flex; gap: 6px; align-items: center;
+    border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+    border-radius: 999px; padding: 3px 11px 3px 3px; font: inherit; font-size: 12.5px; cursor: pointer;
+  }
+  .hl-chip .ti-ava { flex: 0 0 22px; width: 22px; height: 22px; font-size: 11px; }
+  .hl-chip:hover { border-color: var(--teal); }
+  .hl-chip[aria-pressed="true"] { border-color: var(--teal); box-shadow: inset 0 0 0 1px var(--teal); }
+  .panel, .tile, .tablewrap, .wkarte, .dkarte { border-radius: 14px; }
+  .pia-grid { display: grid; gap: 16px; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: start; }
+  @media (max-width: 900px) { .pia-grid { grid-template-columns: 1fr; } }
+  main.blatt .ti-karte { box-shadow: 0 4px 18px rgba(12, 28, 48, 0.10); border: 1px solid var(--line); }
+  main.blatt .ti-verlauf { max-height: 460px; }
+  @media (max-width: 760px) {
+    .kopfleiste { padding: 10px 12px; gap: 8px; }
+    .kl-stand { display: none; }
+    .kl-nav { width: 100%; }
+    main.blatt { margin: 10px 8px 20px; padding: 16px 14px 40px; border-radius: 16px; }
+    /* Am Handy eine Zeile zum Wischen statt drei Zeilen Pillen. */
+    .ul-tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 2px; }
+    .ul-tab { white-space: nowrap; }
+  }
+  /* Breite Tabellen (Projekte, Steuer) wischen statt die Seite zu sprengen. */
+  .card { overflow-x: auto; }
 </style>
 
 <div class="shell">
-  <aside class="side">
-    <div class="brandmark">
-      <img class="bm-logo" src="assets/logo.svg" alt="Mum Life Balance">
-      <div class="bm-sub">Cockpit</div>
-    </div>
-    <nav id="nav"></nav>
-    <div class="side-foot">
-      <div id="savestate"><span class="dot"></span>verbinde…</div>
-      <div style="margin-top:8px">Alles, was du hier eintippst, bleibt gespeichert und ist beim nächsten Öffnen wieder da.</div>
-    </div>
-  </aside>
+  <header class="kopfleiste">
+    <div class="kl-marke"><span class="kl-name">Mum Life Balance</span><span class="kl-sub">Cockpit</span></div>
+    <nav id="nav" class="kl-nav" aria-label="Bereiche"></nav>
+    <div class="kl-stand" id="savestate" title="Alles, was du hier eintippst, bleibt gespeichert."><span class="dot"></span>verbinde…</div>
+  </header>
   <main id="main"></main>
 </div>
 
@@ -4726,7 +4798,156 @@
     return treffer;
   }
 
-  function renderNav() {
+  /* =========================================================
+     Bereiche oben (08.10.2026) — siehe Kopf von patch-bereiche.py.
+     ========================================================= */
+  var BEREICHE = [
+    { id: "tisch", label: "Mein Tisch", tabs: ["uebersicht"] },
+    { id: "instagram", label: "Instagram", saeule: "Instagram",
+      tabs: ["woche", "studio", "storys", "reels", "fertig", "gepostet", "ideenkasten", "ideenextern"] },
+    { id: "produkte", label: "Produkte", saeule: "Produkte",
+      tabs: ["katalog", "produkte", "links", "funnel", "mailings", "leads", "kurse"] },
+    { id: "mamaceo", label: "Mama-CEO", saeule: "Mama-CEO",
+      tabs: ["aufgaben", "launches", "monatsbogen", "wochenbogen", "ziele", "zahlen", "rangtracker", "team"] },
+    { id: "ki", label: "KI", saeule: "KI", tabs: ["pia", "wissen", "suche"] }
+  ];
+  /* Kuerzere Namen fuer die Unterleiste — die Bereichs-Pille sagt schon,
+     wo man ist. */
+  var UNTERNAME = { pia: "PIA & Team", produkte: "Meine Notizen", rangtracker: "doTERRA-Rang", team: "doTERRA-Team",
+                    launches: "Jahresplan", mailings: "Listen & Automationen" };
+  var bereichLetzter = {};
+  try { bereichLetzter = JSON.parse(localStorage.getItem("mlb:bereich-letzter") || "{}") || {}; } catch (e) {}
+
+  function bereichVon(id) {
+    for (var i = 0; i < BEREICHE.length; i++) {
+      if (BEREICHE[i].tabs.indexOf(id) >= 0) return BEREICHE[i];
+    }
+    return null;
+  }
+  function tabName(id) {
+    if (UNTERNAME[id]) return UNTERNAME[id];
+    var t = TABS.filter(function (x) { return x.id === id; })[0];
+    return t ? t.label : id;
+  }
+
+  function renderBereiche() {
+    var nav = document.getElementById("nav");
+    if (!nav) return;
+    nav.innerHTML = "";
+    var akt = bereichVon(activeTab);
+    BEREICHE.forEach(function (b) {
+      var k = document.createElement("button");
+      k.className = "kl-pill";
+      k.setAttribute("aria-current", akt && akt.id === b.id ? "true" : "false");
+      // 🚨 Nur EINE Zahl an der Pille: was zum Freigeben bereitliegt. Die
+      // Laengen der Listen (38 Reels) sind keine Arbeit und gehoeren nicht hin.
+      var n = b.id === "instagram" ? fertigAnzahl() : 0;
+      k.innerHTML = esc(b.label) + (n ? '<span class="kl-zahl" title="kann raus">' + n + '</span>' : "");
+      k.onclick = function () {
+        var ziel = bereichLetzter[b.id];
+        activeTab = (ziel && b.tabs.indexOf(ziel) >= 0) ? ziel : b.tabs[0];
+        tiHelfer = null;
+        render();
+        try { window.scrollTo(0, 0); } catch (e) {}
+      };
+      nav.appendChild(k);
+    });
+  }
+
+  /* KI → „PIA & Team“: oben mit PIA sprechen, daneben was am Tisch liegt,
+     unten alle Helferinnen (Patricia, 08.10.2026). */
+  function renderPiaSeite(main) {
+    var heute = tiIso(new Date());
+    var beitraege = offeneBeitraege();
+    main.innerHTML =
+      '<div class="page-head"><div><h1>PIA &amp; dein Team</h1>' +
+      '<p>Du sprichst nur mit PIA. Sie trägt ein, was ansteht, und gibt Aufträge an Claude weiter — ' +
+      'die siehst du rechts und Claude beim nächsten Start in Claude Code.</p></div></div>' +
+      '<div class="pia-grid"><div class="ti-karte" id="ps-pia"></div><div class="ti-karte" id="ps-auf"></div></div>' +
+      '<div class="ti-karte ti-voll" id="ps-helfer"></div>';
+    tiPia(main.querySelector("#ps-pia"), heute, beitraege);
+    piaAuftraege(main.querySelector("#ps-auf"));
+    tiHelferinnen(main.querySelector("#ps-helfer"));
+  }
+
+  /* „Am Tisch – Aufträge“: was PIA an Claude weitergegeben hat. */
+  function piaAuftraege(el) {
+    var alle = ((aufgaben && aufgaben.items) || []).filter(function (a) { return a.fuerClaude; });
+    var offen = alle.filter(function (a) { return !a.erledigt; });
+    var fertig = alle.filter(function (a) { return a.erledigt; }).sort(function (a, b) {
+      return (a.erledigt_am || "") > (b.erledigt_am || "") ? -1 : 1; }).slice(0, 5);
+    el.innerHTML = '<span class="ti-chip o">Am Tisch – Aufträge</span><div id="pa-l"></div>';
+    var box = el.querySelector("#pa-l");
+    if (!alle.length) {
+      box.innerHTML = '<div class="ti-leer">Noch nichts. Sag PIA zum Beispiel: ' +
+        '„Claude soll mir ein Karussell zum Stimm-Check bauen.“</div>';
+      return;
+    }
+    function zeile(a, stand, art) {
+      var z = document.createElement("div");
+      z.className = "ti-zeile";
+      z.innerHTML = '<span class="ti-zeit">' + esc(a.datum ? fmtDate(a.datum) : "") + '</span>' +
+        '<span class="ti-was">' + esc(a.aufgabe) + '</span>' +
+        '<span class="ti-mini' + art + '">' + esc(stand) + '</span>';
+      box.appendChild(z);
+    }
+    offen.forEach(function (a) { zeile(a, "wartet auf Claude", " hoch"); });
+    fertig.forEach(function (a) { zeile(a, "fertig", ""); });
+  }
+
+  /* Unterreiter plus die Helferinnen der Saeule, oben auf jedes Blatt. */
+  function unterleisteEinfuegen(main) {
+    main.classList.toggle("blatt", activeTab !== "uebersicht");
+    var b = bereichVon(activeTab);
+    if (!b || b.id === "tisch") return;
+    bereichLetzter[b.id] = activeTab;
+    try { localStorage.setItem("mlb:bereich-letzter", JSON.stringify(bereichLetzter)); } catch (e) {}
+
+    var leiste = document.createElement("div");
+    leiste.className = "unterleiste";
+    var tabs = document.createElement("div");
+    tabs.className = "ul-tabs";
+    b.tabs.forEach(function (id) {
+      var t = document.createElement("button");
+      t.className = "ul-tab";
+      t.setAttribute("aria-current", id === activeTab ? "true" : "false");
+      var n = id === "fertig" ? fertigAnzahl() : 0;
+      t.innerHTML = esc(tabName(id)) + (n ? '<span class="n">' + n + '</span>' : "");
+      t.onclick = function () { activeTab = id; render(); };
+      tabs.appendChild(t);
+    });
+    leiste.appendChild(tabs);
+
+    // Auf „PIA & Team“ stehen alle Helferinnen ohnehin unten - nicht doppelt.
+    var hs = activeTab === "pia" ? [] : HELFERINNEN.filter(function (h) { return h.s === b.saeule; });
+    if (hs.length) {
+      var hz = document.createElement("div");
+      hz.className = "hilfeleiste";
+      hz.innerHTML = '<span class="hl-titel">Deine Helferinnen hier</span>';
+      hs.forEach(function (h, i) {
+        var c = document.createElement("button");
+        c.className = "hl-chip";
+        c.setAttribute("aria-pressed", tiHelfer === h.id ? "true" : "false");
+        c.innerHTML = '<span class="ti-ava' + (h.link ? " n" : (i % 2 ? " o" : "")) + '">' +
+          esc(h.name.charAt(0)) + '</span>' + esc(h.name);
+        c.onclick = function () { tiHelfer = tiHelfer === h.id ? null : h.id; render(); };
+        hz.appendChild(c);
+      });
+      leiste.appendChild(hz);
+      var offen = activeTab === "pia" ? null
+        : hs.filter(function (x) { return x.id === tiHelfer; })[0];
+      if (offen) {
+        var box = document.createElement("div");
+        tiHelferDetail(box, offen);
+        leiste.appendChild(box);
+      }
+    }
+    main.insertBefore(leiste, main.firstChild);
+  }
+
+  function renderNav() { return renderBereiche(); }
+  /* 🗃 Die Seitenleiste bis 08.10.2026 - laeuft nicht mehr. */
+  function renderNavAlt() {
     var nav = document.getElementById("nav");
     nav.innerHTML = "";
     var aktivGruppe = gruppeVon(activeTab);
@@ -4903,7 +5124,8 @@
     if (!aufgaben.items) aufgaben.items = [];
     aufgaben.items.unshift({ id: uid("af"), aufgabe: a.text, datum: a.datum || "",
       prio: a.prio || "Mittel", status: "Geplant", notiz: a.notiz || "", erledigt: false,
-      bereich: a.bereich === "Privat" ? "Privat" : "Business", quelle: a.quelle || "Cockpit" });
+      bereich: a.bereich === "Privat" ? "Privat" : "Business", quelle: a.quelle || "Cockpit",
+      fuerClaude: !!a.fuerClaude });
     tiAfSpeichern();
   }
 
@@ -5104,7 +5326,9 @@
       "Du bist PIA, die Assistentin von Patricia Ulmann (Mum Life Balance, Mentorin für Network-Mamas, vierfache Mama, Appenzellerland). " +
       "Du sprichst sie mit du an, warm, kurz und klar, Schweizer Rechtschreibung mit ss, keine Emojis.\n\n" +
       "Heute ist " + WOCHENTAGE[tag.getDay()] + ", " + heute + ".\n\n" + piaLage(heute, beitraege) + "\n\n" +
-      "Was du tun darfst: Aufgaben und Termine anlegen. Sonst nichts — du gibst nichts frei, planst nichts ein, löschst nichts. " +
+      "Will sie, dass etwas gebaut, geschrieben, geprüft oder geändert wird (Karussell, Mail, Seite, Auswertung), " +
+      "leg es als Auftrag an Claude an — Claude sieht offene Aufträge beim nächsten Start in Claude Code. Sag ihr das so.\n" +
+      "Was du tun darfst: Aufgaben, Termine und Aufträge an Claude anlegen. Sonst nichts — du gibst nichts frei, planst nichts ein, löschst nichts. " +
       "Wenn sie etwas anderes will, sag ihr in einem Satz, wo sie das im Cockpit macht oder welchen Befehl sie in Claude Code gibt.\n" +
       "Termin = etwas mit Datum, an dem sie irgendwo sein muss oder das zu einer Uhrzeit stattfindet. Aufgabe = etwas, das sie erledigen muss. " +
       "Rechne Angaben wie morgen, Freitag, nächste Woche in ein Datum JJJJ-MM-TT um. Ohne Angabe bleibt das Datum leer. " +
@@ -5113,7 +5337,8 @@
       "Erfinde nichts dazu. Fragt sie etwas, antworte aus der Lage oben; was dort nicht steht, weisst du nicht.\n\n" +
       "IHRE NACHRICHT\n" + text + "\n\n" +
       'Antworte als JSON: {"aktionen": [{"art": "aufgabe", "text": "...", "datum": "", "bereich": "Business", "prio": "Mittel"}, ' +
-      '{"art": "termin", "titel": "...", "datum": "JJJJ-MM-TT", "zeit": "HH:MM oder leer", "bereich": "Privat"}], "antwort": "was du ihr sagst"}. ' +
+      '{"art": "termin", "titel": "...", "datum": "JJJJ-MM-TT", "zeit": "HH:MM oder leer", "bereich": "Privat"}, ' +
+      '{"art": "claude", "text": "der Auftrag in einem klaren Satz", "datum": ""}], "antwort": "was du ihr sagst"}. ' +
       "prio ist Hoch, Mittel, Tief oder Quick Win. Keine Aktion nötig: leere Liste.";
     sampler.json(p).then(function (r) {
       r = r || {};
@@ -5123,6 +5348,10 @@
           tiAufgabeNeu({ text: a.text.trim(), datum: /^\d{4}-\d{2}-\d{2}$/.test(a.datum || "") ? a.datum : "",
                          bereich: a.bereich, prio: AF_PRIO.indexOf(a.prio) >= 0 ? a.prio : "Mittel", quelle: "PIA" });
           gemacht.push("✓ Aufgabe: " + a.text.trim());
+        } else if (a.art === "claude" && (a.text || "").trim()) {
+          tiAufgabeNeu({ text: a.text.trim(), datum: /^\d{4}-\d{2}-\d{2}$/.test(a.datum || "") ? a.datum : "",
+                         bereich: "Business", prio: "Mittel", quelle: "PIA", fuerClaude: true });
+          gemacht.push("✓ Auftrag an Claude: " + a.text.trim());
         } else if (a.art === "termin" && (a.titel || "").trim() && /^\d{4}-\d{2}-\d{2}$/.test(a.datum || "")) {
           tiTerminNeu({ titel: a.titel.trim(), datum: a.datum,
                         zeit: /^\d{1,2}:\d{2}$/.test(a.zeit || "") ? a.zeit : "", bereich: a.bereich, quelle: "PIA" });
@@ -5218,7 +5447,8 @@
         (ueber ? "seit " + tage + (tage === 1 ? " Tag" : " Tagen") : fmtDate(a.datum)) + '</span>';
     }
     if (a.prio === "Hoch" || a.prio === "Quick Win") meta += '<span class="ti-mini hoch">' + esc(a.prio) + '</span>';
-    if (a.quelle === "PIA") meta += '<span class="ti-mini">von PIA</span>';
+    if (a.fuerClaude) meta += '<span class="ti-mini hoch">für Claude</span>';
+    else if (a.quelle === "PIA") meta += '<span class="ti-mini">von PIA</span>';
     r.innerHTML = '<div class="txt">' + esc(a.aufgabe || "(ohne Text)") + '</div>' +
       (meta ? '<div class="meta">' + meta + '</div>' : "");
     z.appendChild(cb); z.appendChild(r);
@@ -12317,6 +12547,7 @@
       try { renderTisch(main); }
       catch (e) { console.error(e); main.classList.remove("ti-main"); renderUebersicht(main); }
     }
+    else if (activeTab === "pia") renderPiaSeite(main);
     else if (activeTab === "studio") renderStudio(main);
     else if (activeTab === "storys") renderStorys(main);
     else if (activeTab === "reels") renderReels(main);
@@ -12341,6 +12572,7 @@
     else if (activeTab === "zahlen") renderZahlen(main);
     else if (activeTab === "leads") { renderTable(main, "leads"); stimmenBlock(main); }
     else renderTable(main, activeTab);
+    unterleisteEinfuegen(main);
   }
 
   /* =========================================================
