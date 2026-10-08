@@ -13,6 +13,7 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 - [[2026-10-04-hook-verkaufsdaten]]
 - [[2026-10-04-nische-gedanken]]
 - [[2026-10-04-zielgruppe-ausserhalb-instagram]]
+- [[2026-10-08-juliamueller-analyse]]
 - [[KW18-doterra]]
 - [[KW18-mentoring]]
 - [[KW19-doterra]]
