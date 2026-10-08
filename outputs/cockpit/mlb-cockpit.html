@@ -11776,7 +11776,7 @@
       }
 
       // ---- Neigung (V94, „lockerer“): der ganze Block dreht um seine Mitte
-      var dreh1 = Math.max(-8, Math.min(8, +fr.dreh || 0)) * Math.PI / 180;
+      var dreh1 = 0; // Neigung entfernt (Patricia 08.10.: „muss ich nicht einstellen“)
       ctx.save();
       if (dreh1) {
         ctx.translate(SW / 2, y0 + gesamtH / 2); ctx.rotate(dreh1); ctx.translate(-SW / 2, -(y0 + gesamtH / 2));
@@ -11881,7 +11881,7 @@
         var ef = BLOCKFARBEN[e.farbe] ? e.farbe : "";
         var eBalken = (e.balken || "zeilen") === "zeilen";
         var hellerGrund = !(fotoHg || s.hg === "dunkel" || s.hg === "petrol");
-        var edreh = Math.max(-8, Math.min(8, +e.dreh || 0)) * Math.PI / 180;
+        var edreh = 0;
         ctx.save();
         if (edreh) {
           var emx = eal === "center" ? SW / 2 : eal === "right" ? SW - pad - 200 : pad + 200;
@@ -12222,7 +12222,6 @@
     knopfReihe(block1, "Farbe (mit Balken: Fläche · ohne: Schrift)", fr, "farbe", FARB_WERTE, fr.farbe || "");
     schieber(block1, "Höhe", fr, "pos", 12, 88, 1, sB.pos);
     schieber(block1, "Grösse", fr, "groesse", 0.6, 1.5, 0.05, sB.groesse);
-    schieber(block1, "Neigung", fr, "dreh", -8, 8, 0.5, fr.dreh || 0);
     feldZiel = null;
 
     // ---- Freie Textblöcke: eigene Höhe, Grösse, Balken (wie „+ Balken“ im Bild-Editor)
@@ -12242,8 +12241,7 @@
       ta.rows = 2; ta.placeholder = "Weiterer Text"; ta.value = e.text || "";
       ta.oninput = function () { e.text = ta.value; saveStory(st); draw(); };
       box.appendChild(ta);
-      [["Höhe", "pos", 10, 90, 1, e.pos != null ? e.pos : 78], ["Grösse", "groesse", 0.5, 1.6, 0.05, e.groesse || 1],
-       ["Neigung", "dreh", -8, 8, 0.5, e.dreh || 0]]
+      [["Höhe", "pos", 10, 90, 1, e.pos != null ? e.pos : 78], ["Grösse", "groesse", 0.5, 1.6, 0.05, e.groesse || 1]]
         .forEach(function (r) {
           var row = document.createElement("div");
           row.className = "sliderow";
