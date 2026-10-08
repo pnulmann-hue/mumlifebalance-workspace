@@ -383,6 +383,27 @@
   .sc-extrakopf .btn { margin-left: auto; }
   .sc-plus { display: flex; flex-wrap: wrap; gap: 4px; }
   .sc-plus .btn { font-size: 12px; padding: 4px 8px; border: 1px dashed var(--line-strong); }
+  /* Fokus-Ansicht (V94): Miniaturen oben, eine Folie gross, Vorschau bleibt stehen */
+  .storystrip.st-neu { display: block; overflow: visible; }
+  .st-leiste { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 14px; }
+  .st-mini { flex: 0 0 64px; position: relative; padding: 0; border: 2px solid transparent;
+             border-radius: 9px; background: none; cursor: pointer; }
+  .st-mini canvas { display: block; width: 60px; height: auto; border-radius: 7px; background: #29556d; }
+  .st-mini span { position: absolute; left: 4px; top: 4px; font-size: 10px; line-height: 1.5;
+                  background: rgba(12,28,48,.72); color: #fff; border-radius: 99px; padding: 0 6px; }
+  .st-mini.an { border-color: #dc822e; }
+  .st-neue { border: 1px dashed var(--line-strong); color: var(--ink-soft); font-size: 12px;
+             min-height: 106px; }
+  .storystrip.st-neu .storycard { width: 100%; flex: none; display: grid; overflow: visible;
+                       grid-template-columns: minmax(240px, 360px) minmax(0, 1fr); }
+  .st-neu .storycard > .sc-head { grid-column: 1 / -1; }
+  .st-neu .storycard canvas.sc-gross { position: sticky; top: 76px; align-self: start;
+                                       width: 100%; height: auto; }
+  @media (max-width: 760px) {
+    .storystrip.st-neu .storycard { grid-template-columns: 1fr; }
+    .st-neu .storycard canvas.sc-gross { top: 118px; z-index: 5; width: auto; height: 46vh;
+      margin: 0 auto; box-shadow: 0 6px 18px rgba(0,0,0,.25); border-radius: 10px; }
+  }
   .storystrip { display: flex; gap: 14px; overflow-x: auto; padding-bottom: 12px; align-items: flex-start; }
   .storycard { flex: 0 0 210px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); }
   .storycard canvas { display: block; width: 100%; height: auto; background: #0c1c30; cursor: grab; }
@@ -2365,7 +2386,7 @@
       delete ausstehend["st-" + st.id];
       if (!db) { setSaveState("lokal gespeichert", "off"); return; }
       db.collection("storys").doc(st.id).set({
-        name: st.name, brand: st.brand, phase: st.phase || "", frames: st.frames,
+        name: st.name, brand: st.brand, phase: st.phase || "", frames: framesSauber(st.frames),
         datum: st.datum || "", profil: st.profil || "",
         // 🚨 Was hier fehlt, ist nach dem naechsten Speichern WEG. `blotato`
         // fehlte bis 24.09. als einziges der drei Formate.
@@ -11546,6 +11567,12 @@
     "sans":    { l: "Leicht",      f: function (px) { return "300 " + px + "px 'Source Sans 3', sans-serif"; } },
     "sans-b":  { l: "Fett",        f: function (px) { return "700 " + px + "px 'Source Sans 3', sans-serif"; } }
   };
+  /* Farbe je Textblock (V94). Mit Balken/Karte ist es die Fläche, ohne Balken die
+     Schrift. Die Schrift auf einer Fläche folgt KONTRAST. Keine Fremdfarben. */
+  var BLOCKFARBEN = { creme: "#f1ecdd", weiss: "#ffffff", dunkel: "#29556d",
+                      petrol: "#12828c", orange: "#dc822e" };
+  var KONTRAST = { creme: "#0c1c30", weiss: "#0c1c30", dunkel: "#f1ecdd",
+                   petrol: "#f1ecdd", orange: "#0c1c30" };
   var STICKER = {
     "": "kein Sticker", frage: "Frage-Sticker", umfrage: "Umfrage", quiz: "Quiz",
     slider: "Emoji-Slider", link: "Link-Sticker", countdown: "Countdown", dm: "„Schreib mir“-Sticker"
@@ -11748,14 +11775,22 @@
         ctx.fillStyle = g; ctx.fillRect(0, 0, SW, SH);
       }
 
+      // ---- Neigung (V94, „lockerer“): der ganze Block dreht um seine Mitte
+      var dreh1 = Math.max(-8, Math.min(8, +fr.dreh || 0)) * Math.PI / 180;
+      ctx.save();
+      if (dreh1) {
+        ctx.translate(SW / 2, y0 + gesamtH / 2); ctx.rotate(dreh1); ctx.translate(-SW / 2, -(y0 + gesamtH / 2));
+      }
       // ---- Karte hinter dem ganzen Block
       if (karte) {
-        ctx.fillStyle = fotoHg ? "rgba(241,236,221,.95)" : (s.hg === "creme" ? "#ffffff" : "rgba(241,236,221,.97)");
+        ctx.fillStyle = BLOCKFARBEN[fr.farbe] ||
+          (fotoHg ? "rgba(241,236,221,.95)" : (s.hg === "creme" ? "#ffffff" : "rgba(241,236,221,.97)"));
         roundRect(ctx, pad, y0, maxW, gesamtH, 34); ctx.fill();
         ctx.fillStyle = "#dc822e";
         roundRect(ctx, pad, y0, 14, gesamtH, 7); ctx.fill();
       }
-      var textFarbeKarte = "#0c1c30";
+      var eigene = BLOCKFARBEN[fr.farbe] ? fr.farbe : "";
+      var textFarbeKarte = eigene ? KONTRAST[eigene] : "#0c1c30";
 
       // ---- Text setzen
       var al = s.align === "center" ? "center" : s.align === "right" ? "right" : "left";
@@ -11764,7 +11799,10 @@
       ctx.textBaseline = "alphabetic";
       teile.forEach(function (t, ti) {
         if (ti) y += t.abstand;
-        var farbe = karte ? (t.art === "eyebrow" ? "#12828c" : t.art === "klein" ? "rgba(12,28,48,.7)" : textFarbeKarte) : t.farbe;
+        var farbe = karte
+          ? (eigene ? textFarbeKarte
+             : (t.art === "eyebrow" ? "#12828c" : t.art === "klein" ? "rgba(12,28,48,.7)" : textFarbeKarte))
+          : (eigene && s.balken === "aus" ? BLOCKFARBEN[eigene] : t.farbe);
         ctx.font = t.font;
         if (t.art === "pille") {
           var pw = Math.min(breite, Math.max.apply(null, t.zeilen.map(function (z) { return ctx.measureText(z).width; })) + 80);
@@ -11802,11 +11840,14 @@
           if (zeilenBalken && z) {
             var w = ctx.measureText(z).width, padX = 26, hh = t.px * t.lh + 4;
             var bx = al === "center" ? SW / 2 - w / 2 - padX : al === "right" ? xA - w - padX : xA - padX;
-            ctx.fillStyle = fotoHg || s.hg === "dunkel" || s.hg === "petrol" ? "rgba(241,236,221,.96)" : "rgba(12,28,48,.94)";
+            ctx.fillStyle = eigene ? BLOCKFARBEN[eigene]
+              : (fotoHg || s.hg === "dunkel" || s.hg === "petrol" ? "rgba(241,236,221,.96)" : "rgba(12,28,48,.94)");
             roundRect(ctx, bx, by - 2, w + padX * 2, hh, 14); ctx.fill();
           }
           ctx.textAlign = al;
-          var fz = zeilenBalken ? (fotoHg || s.hg === "dunkel" || s.hg === "petrol" ? "#0c1c30" : "#f1ecdd") : farbe;
+          var fz = zeilenBalken
+            ? (eigene ? KONTRAST[eigene] : (fotoHg || s.hg === "dunkel" || s.hg === "petrol" ? "#0c1c30" : "#f1ecdd"))
+            : farbe;
           if (!zeilenBalken && fotoHg && !karte) {
             ctx.shadowColor = "rgba(0,0,0,.45)"; ctx.shadowBlur = 22; ctx.shadowOffsetY = 3;
           }
@@ -11821,6 +11862,7 @@
         });
         y += t.zeilen.length * t.px * t.lh;
       });
+      ctx.restore();
 
       // ---- Freie Textblöcke („+ Textblock“): je eigene Höhe, Grösse, Schrift, Balken.
       // Ausrichtung folgt der Folie, damit alles auf einer Linie steht.
@@ -11834,26 +11876,35 @@
         var elh = 1.22, eh = ez.length * epx * elh;
         var ey = SH * (Math.max(8, Math.min(92, e.pos != null ? +e.pos : 78)) / 100) - eh / 2;
         ey = Math.max(200, Math.min(SH - 220 - eh, ey));
-        var ealX = al === "center" ? SW / 2 : al === "right" ? SW - pad : pad;
+        var eal = e.align === "center" || e.align === "left" || e.align === "right" ? e.align : al;
+        var ealX = eal === "center" ? SW / 2 : eal === "right" ? SW - pad : pad;
+        var ef = BLOCKFARBEN[e.farbe] ? e.farbe : "";
         var eBalken = (e.balken || "zeilen") === "zeilen";
         var hellerGrund = !(fotoHg || s.hg === "dunkel" || s.hg === "petrol");
+        var edreh = Math.max(-8, Math.min(8, +e.dreh || 0)) * Math.PI / 180;
+        ctx.save();
+        if (edreh) {
+          var emx = eal === "center" ? SW / 2 : eal === "right" ? SW - pad - 200 : pad + 200;
+          ctx.translate(emx, ey + eh / 2); ctx.rotate(edreh); ctx.translate(-emx, -(ey + eh / 2));
+        }
         ez.forEach(function (z, i) {
           var by = ey + i * epx * elh;
           ctx.font = ex.f(epx);
           if (eBalken && z) {
             var w = ctx.measureText(z).width, padX = 24, hh = epx * elh + 4;
-            var bx = al === "center" ? SW / 2 - w / 2 - padX : al === "right" ? ealX - w - padX : ealX - padX;
-            ctx.fillStyle = hellerGrund ? "rgba(12,28,48,.92)" : "rgba(241,236,221,.96)";
+            var bx = eal === "center" ? SW / 2 - w / 2 - padX : eal === "right" ? ealX - w - padX : ealX - padX;
+            ctx.fillStyle = ef ? BLOCKFARBEN[ef] : (hellerGrund ? "rgba(12,28,48,.92)" : "rgba(241,236,221,.96)");
             roundRect(ctx, bx, by - 2, w + padX * 2, hh, 14); ctx.fill();
-            ctx.fillStyle = hellerGrund ? "#f1ecdd" : "#0c1c30";
+            ctx.fillStyle = ef ? KONTRAST[ef] : (hellerGrund ? "#f1ecdd" : "#0c1c30");
           } else {
-            ctx.fillStyle = hellerGrund ? (s.hg === "orange" ? "#0c1c30" : "#29556d") : "#f1ecdd";
+            ctx.fillStyle = ef ? BLOCKFARBEN[ef] : (hellerGrund ? (s.hg === "orange" ? "#0c1c30" : "#29556d") : "#f1ecdd");
             if (fotoHg) { ctx.shadowColor = "rgba(0,0,0,.45)"; ctx.shadowBlur = 22; ctx.shadowOffsetY = 3; }
           }
-          ctx.textAlign = al;
+          ctx.textAlign = eal;
           ctx.fillText(z, ealX, by + epx * 0.98);
           ctx.shadowColor = "transparent"; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
         });
+        ctx.restore();
       });
 
       // ---- Sticker-Fläche nur in der Vorschau
@@ -11969,17 +12020,60 @@
     renderStoryStrip(ed.querySelector("#ststrip"), st);
   }
 
+  /* Fokus-Ansicht (08.10.2026, Version 94). Patricia am Handy: „das ganze ist etwas
+     fummelig“ — zehn schmale Karten nebeneinander, die Vorschau scrollte weg, während
+     sie unten an den Reglern zog. Jetzt: oben Miniaturen zum Antippen, darunter EINE
+     Folie gross, die Vorschau bleibt beim Scrollen stehen. */
+  var aktiveFolie = {};
+
+  /* 🚨 An jeder Folie hängen zur Laufzeit __draw (Funktion) und __mini (Canvas).
+     Die Datenbank nimmt nur reines JSON — vorher gingen sie mit und die Seite
+     meldete „nur lokal gespeichert“. Alles mit __ bleibt draussen. */
+  function framesSauber(frames) {
+    return JSON.parse(JSON.stringify(frames || [], function (k, v) {
+      return k.indexOf("__") === 0 ? undefined : v;
+    }));
+  }
+
   function renderStoryStrip(strip, st) {
     strip.innerHTML = "";
-    st.frames.forEach(function (fr, i) { strip.appendChild(storyCard(st, fr, i)); });
+    strip.className = "storystrip st-neu";
+    var n = st.frames.length;
+    var i0 = Math.max(0, Math.min(aktiveFolie[st.id] || 0, n - 1));
+    aktiveFolie[st.id] = i0;
+    var leiste = document.createElement("div");
+    leiste.className = "st-leiste";
+    st.frames.forEach(function (fr, i) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "st-mini" + (i === i0 ? " an" : "");
+      b.title = "Folie " + (i + 1);
+      var c = document.createElement("canvas");
+      b.appendChild(c);
+      var nr = document.createElement("span");
+      nr.textContent = i + 1;
+      b.appendChild(nr);
+      fr.__mini = c;
+      renderStoryFrame(c, fr, st, i, n);
+      b.onclick = function () { aktiveFolie[st.id] = i; renderStoryStrip(strip, st); };
+      leiste.appendChild(b);
+    });
     var add = document.createElement("button");
-    add.className = "addslide";
+    add.type = "button";
+    add.className = "st-mini st-neue";
     add.textContent = "+ Folie";
     add.onclick = function () {
       st.frames.push({ id: uid("fr"), layout: "text", text: "", zoom: 1, ox: 0, oy: 0 });
+      aktiveFolie[st.id] = st.frames.length - 1;
       saveStory(st); renderStoryStrip(strip, st);
     };
-    strip.appendChild(add);
+    leiste.appendChild(add);
+    strip.appendChild(leiste);
+    strip.appendChild(storyCard(st, st.frames[i0], i0));
+    setTimeout(function () {
+      var an = leiste.querySelector(".an");
+      if (an && an.scrollIntoView) an.scrollIntoView({ block: "nearest", inline: "center" });
+    }, 0);
   }
 
   /* Eine Folie in der Story-Bibliothek: Vorschau oben, darunter Text und
@@ -12000,6 +12094,7 @@
         var j = i + t[1];
         if (j < 0 || j >= st.frames.length) return;
         var tmp = st.frames[i]; st.frames[i] = st.frames[j]; st.frames[j] = tmp;
+        aktiveFolie[st.id] = j;
         saveStory(st); renderStoryStrip(card.parentNode, st);
       };
       tools.appendChild(b);
@@ -12009,7 +12104,8 @@
     kp.onclick = function () {
       var neu = tief(Object.assign({}, fr)); delete neu.__draw;
       neu.id = uid("fr");
-      st.frames.splice(i + 1, 0, neu); saveStory(st); renderStoryStrip(card.parentNode, st);
+      st.frames.splice(i + 1, 0, neu); aktiveFolie[st.id] = i + 1;
+      saveStory(st); renderStoryStrip(card.parentNode, st);
     };
     tools.appendChild(kp);
     var rm = document.createElement("button");
@@ -12023,6 +12119,7 @@
     card.appendChild(head);
 
     var cv = document.createElement("canvas");
+    cv.className = "sc-gross";
     card.appendChild(cv);
 
     var body = document.createElement("div");
@@ -12042,7 +12139,7 @@
       el.placeholder = ph;
       el.value = Array.isArray(fr[key]) ? fr[key].join("\n") : (fr[key] || "");
       el.oninput = function () { fr[key] = el.value; saveStory(st); draw(); };
-      body.appendChild(el);
+      (feldZiel || body).appendChild(el);
       return el;
     }
 
@@ -12064,11 +12161,69 @@
     /* Ein Feld steht da, sobald es am Beitrag existiert (auch leer) — so
        bleibt ein über „+ Text“ angelegtes Feld sichtbar, bis es weg soll. */
     function da(k) { return fr[k] !== undefined && fr[k] !== null; }
+
+    /* Je Textblock dieselben Knöpfe (V94, Patricia: „ich will jeden einzelnen
+       textblock einzeln bearbeiten“). Schreibt in `obj` — die Folie selbst für
+       Textblock 1, den Eintrag in fr.extra für alle weiteren. */
+    var SCHRIFT_WERTE = [["philo", "Aa", "font-family:Philosopher;font-weight:700"],
+      ["philo-k", "Aa", "font-family:Philosopher;font-style:italic"],
+      ["sans", "Aa", "font-family:'Source Sans 3';font-weight:300"],
+      ["sans-b", "Aa", "font-family:'Source Sans 3';font-weight:700"]];
+    var ALIGN_WERTE = [["left", "links"], ["center", "Mitte"], ["right", "rechts"]];
+    var FARB_WERTE = [["", "Auto"], ["creme", "", "background:#f1ecdd"], ["weiss", "", "background:#ffffff"],
+      ["dunkel", "", "background:#29556d"], ["petrol", "", "background:#12828c"], ["orange", "", "background:#dc822e"]];
+    function knopfReihe(ziel, titel, obj, key, werte, jetzt) {
+      var w = document.createElement("div");
+      w.className = "sc-seg";
+      w.innerHTML = "<span>" + titel + "</span>";
+      var reihe = document.createElement("div");
+      werte.forEach(function (v) {
+        var b = document.createElement("button");
+        b.type = "button"; b.textContent = v[1];
+        if (v[2]) b.style.cssText = v[2];
+        b.title = v[0] || "automatisch";
+        b.setAttribute("aria-pressed", String((jetzt || "") === v[0]));
+        b.onclick = function () {
+          obj[key] = v[0];
+          Array.prototype.forEach.call(reihe.children, function (x) { x.setAttribute("aria-pressed", "false"); });
+          b.setAttribute("aria-pressed", "true");
+          saveStory(st); draw();
+        };
+        reihe.appendChild(b);
+      });
+      w.appendChild(reihe);
+      ziel.appendChild(w);
+    }
+    function schieber(ziel, titel, obj, key, min, max, step, wert) {
+      var row = document.createElement("div");
+      row.className = "sliderow";
+      var lb = document.createElement("span"); lb.textContent = titel;
+      var rg = document.createElement("input");
+      rg.type = "range"; rg.min = min; rg.max = max; rg.step = step; rg.value = wert;
+      rg.oninput = function () { obj[key] = parseFloat(rg.value); draw(); };
+      rg.onchange = function () { saveStory(st); };
+      row.appendChild(lb); row.appendChild(rg);
+      ziel.appendChild(row);
+    }
+    var sB = stilVon(fr);
+    var block1 = document.createElement("div");
+    block1.className = "sc-extra sc-block";
+    block1.innerHTML = '<div class="sc-extrakopf"><span>Textblock 1</span></div>';
+    body.appendChild(block1);
+    var feldZiel = block1;
     if (fr.layout === "kurs" || fr.layout === "bonus" || da("eyebrow")) feld("Kleine Zeile oben (z.B. DER KURS)", "eyebrow");
     if (fr.layout === "bonus" || da("pille")) feld("Pille (z.B. Bonus bis Samstag, 21 Uhr)", "pille");
     feld("Text auf der Folie", "text", 3);
     if (fr.layout === "kurs" || da("punkte")) feld("Haken-Liste, ein Punkt pro Zeile", "punkte", 4);
     feld("Kleine Zeile unten (optional)", "klein");
+    knopfReihe(block1, "Schrift", fr, "schrift", SCHRIFT_WERTE, sB.schrift);
+    knopfReihe(block1, "Ausrichtung", fr, "align", ALIGN_WERTE, sB.align);
+    knopfReihe(block1, "Balken", fr, "balken", [["aus", "ohne"], ["zeilen", "Balken"], ["karte", "Karte"]], sB.balken);
+    knopfReihe(block1, "Farbe (mit Balken: Fläche · ohne: Schrift)", fr, "farbe", FARB_WERTE, fr.farbe || "");
+    schieber(block1, "Höhe", fr, "pos", 12, 88, 1, sB.pos);
+    schieber(block1, "Grösse", fr, "groesse", 0.6, 1.5, 0.05, sB.groesse);
+    schieber(block1, "Neigung", fr, "dreh", -8, 8, 0.5, fr.dreh || 0);
+    feldZiel = null;
 
     // ---- Freie Textblöcke: eigene Höhe, Grösse, Balken (wie „+ Balken“ im Bild-Editor)
     if (!Array.isArray(fr.extra)) fr.extra = fr.extra ? [].concat(fr.extra) : [];
@@ -12087,7 +12242,8 @@
       ta.rows = 2; ta.placeholder = "Weiterer Text"; ta.value = e.text || "";
       ta.oninput = function () { e.text = ta.value; saveStory(st); draw(); };
       box.appendChild(ta);
-      [["Höhe", "pos", 10, 90, 1, e.pos != null ? e.pos : 78], ["Grösse", "groesse", 0.5, 1.6, 0.05, e.groesse || 1]]
+      [["Höhe", "pos", 10, 90, 1, e.pos != null ? e.pos : 78], ["Grösse", "groesse", 0.5, 1.6, 0.05, e.groesse || 1],
+       ["Neigung", "dreh", -8, 8, 0.5, e.dreh || 0]]
         .forEach(function (r) {
           var row = document.createElement("div");
           row.className = "sliderow";
@@ -12099,23 +12255,10 @@
           row.appendChild(lb); row.appendChild(rg);
           box.appendChild(row);
         });
-      var reihe = document.createElement("div");
-      reihe.className = "sc-seg";
-      var r2 = document.createElement("div");
-      [["schrift", "philo", "Aa", "font-family:Philosopher;font-weight:700"],
-       ["schrift", "philo-k", "Aa", "font-family:Philosopher;font-style:italic"],
-       ["schrift", "sans-b", "Aa", "font-family:'Source Sans 3';font-weight:700"],
-       ["balken", "aus", "ohne"], ["balken", "zeilen", "Balken"]].forEach(function (v) {
-        var b = document.createElement("button");
-        b.type = "button"; b.textContent = v[2];
-        if (v[3]) b.style.cssText = v[3];
-        var jetzt = e[v[0]] || (v[0] === "schrift" ? "sans-b" : "zeilen");
-        b.setAttribute("aria-pressed", String(jetzt === v[1]));
-        b.onclick = function () { e[v[0]] = v[1]; saveStory(st); renderStoryStrip(card.parentNode, st); };
-        r2.appendChild(b);
-      });
-      reihe.appendChild(r2);
-      box.appendChild(reihe);
+      knopfReihe(box, "Schrift", e, "schrift", SCHRIFT_WERTE, e.schrift || "sans-b");
+      knopfReihe(box, "Ausrichtung", e, "align", ALIGN_WERTE, e.align || sB.align);
+      knopfReihe(box, "Balken", e, "balken", [["aus", "ohne"], ["zeilen", "Balken"]], e.balken || "zeilen");
+      knopfReihe(box, "Farbe (mit Balken: Fläche · ohne: Schrift)", e, "farbe", FARB_WERTE, e.farbe || "");
       body.appendChild(box);
     });
 
@@ -12142,7 +12285,7 @@
 
     var gest = document.createElement("details");
     gest.className = "sc-gestalten";
-    gest.innerHTML = "<summary>Gestalten</summary>";
+    gest.innerHTML = "<summary>Hintergrund, Foto & Sticker</summary>";
     body.appendChild(gest);
     var s0 = stilVon(fr);
 
@@ -12168,15 +12311,8 @@
       w.appendChild(reihe);
       gest.appendChild(w);
     }
-    seg("Schrift", "schrift", [
-      ["philo", "Aa", "font-family:Philosopher;font-weight:700"],
-      ["philo-k", "Aa", "font-family:Philosopher;font-style:italic"],
-      ["sans", "Aa", "font-family:'Source Sans 3';font-weight:300"],
-      ["sans-b", "Aa", "font-family:'Source Sans 3';font-weight:700"]], s0.schrift);
-    seg("Ausrichtung", "align", [["left", "links"], ["center", "Mitte"], ["right", "rechts"]], s0.align);
-    seg("Textbalken", "balken", [["aus", "ohne"], ["zeilen", "Balken"], ["karte", "Karte"]], s0.balken);
     seg("Hintergrund", "hg", [
-      ["foto", "Foto"], ["dunkel", "", "background:#0c1c30"], ["creme", "", "background:#f1ecdd"],
+      ["foto", "Foto"], ["dunkel", "", "background:#29556d"], ["creme", "", "background:#f1ecdd"],
       ["petrol", "", "background:#12828c"], ["orange", "", "background:#dc822e"]], s0.hg);
 
     // Shootingbilder + eigenes Foto
@@ -12223,8 +12359,6 @@
       row.appendChild(lb); row.appendChild(rg);
       gest.appendChild(row);
     }
-    regler("Höhe", "pos", 12, 88, 1, s0.pos);
-    regler("Grösse", "groesse", 0.6, 1.5, 0.05, s0.groesse);
     regler("Schleier", "verlauf", 0, 85, 1, s0.verlauf);
     regler("Foto-Zoom", "zoom", 1, 3, 0.02, fr.zoom || 1);
     regler("Foto ↔", "ox", -50, 50, 1, fr.ox || 0);
@@ -12256,7 +12390,10 @@
     one.onclick = function () { exportStoryFrame(st, fr, i, one); };
     body.appendChild(one);
 
-    function draw() { renderStoryFrame(cv, fr, st, i, st.frames.length); }
+    function draw() {
+      renderStoryFrame(cv, fr, st, i, st.frames.length);
+      if (fr.__mini) renderStoryFrame(fr.__mini, fr, st, i, st.frames.length);
+    }
     fr.__draw = draw;
     setTimeout(draw, 0);
     return card;
