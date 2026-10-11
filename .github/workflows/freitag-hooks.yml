@@ -3,13 +3,13 @@ name: Freitag-Hooks-Engine
 # Läuft jeden Freitag 06:00 UTC (= 08:00 Sommerzeit / 07:00 Winterzeit Schweiz)
 # Wenn du im Winter exakt 08:00 Schweiz willst, ändere zu "0 7 * * 5"
 # GitHub Actions Cron hat oft 5-15 Min Verzögerung — das ist OK für diesen Workflow
+# 🛑 DEAKTIVIERT 2026-09-14 auf Patricias Wunsch.
+# Der Wochen-Content laeuft ueber den Scheduled Task `content-woche-freitag`
+# (Freitag 08:00, in der Claude-App). Nur der kommt an die Artifact-Datenbanken.
+# Kein Cron, kein Handstart — diese Action laeuft gar nicht mehr.
+# Wer sie je wieder braucht: `workflow_dispatch:` unter `on:` wieder einsetzen.
 on:
-  # PAUSIERT 2026-07-13 (Hand-Planung KW29/30, Kollisions-Vermeidung). Cron aus — nur noch manuell.
-  # Wieder aktivieren: die 2 folgenden Zeilen einkommentieren.
-  # schedule:
-  #   - cron: '0 6 * * 5'
-  workflow_dispatch:  # Manuell triggerbar via GitHub-UI
-
+  # kein Ausloeser — bewusst leer
 permissions:
   contents: write
 
@@ -40,7 +40,7 @@ jobs:
           claude --print --dangerously-skip-permissions \
             "/freitag-hooks
 
-            Du läufst autonom als GitHub Action Cron. Folge der vollständigen Skill-Anleitung in .claude/commands/freitag-hooks.md.
+            Du läufst autonom als GitHub Action Cron. Folge der vollständigen Skill-Anleitung in .claude/skills/content/SKILL.md (Zeitraum: woche).
 
             Bei doTERRA-Hooks: PFLICHT vorher context/doterra/patricia-wendepunkt-story.md + lifestyle-pyramide-offiziell.md + Compliance-Memorys lesen.
 

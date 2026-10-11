@@ -1,4 +1,23 @@
+---
+name: produkt
+description: "All-in-One Produkterstellung, Funnel und Launch — Produkttreppe, Validierung, Module, Preis-Staffel, Launch-Kalender."
+---
 # /produkt — All-in-One Produkterstellung, Funnel & Launch
+
+> 🎯 **HOOKS — Pflicht-Lese `.claude/skills/hooks/SKILL.md` (seit 2026-09-14)**
+>
+> Jeder Hook, der hier entsteht — Cover, Reel-Einstieg, Folie 1, Caption-Anfang,
+> Story-Slide 1, Anzeigen-Zeile — wird nach diesem Skill gebaut. Dort stehen
+> Kundensprache, Bewusstseinsstufen, Angles, PIE-Mix, alle Formeln, die Verbote
+> und das Prüfskript.
+>
+> **Und am Ende „Der letzte Check" — vier Fragen, die jeder Hook bestehen muss:**
+> trifft es wirklich einen Schmerz · denkt sie „krass, wieso weiss die, was ich
+> denke" · sagt man das so am Küchentisch zu einer Freundin · **ist die Lösung
+> draussen** (die Lösung kommt nie im Hook).
+>
+> Eine Frage mit Nein: **den Hook umschreiben, nie die Caption nachbessern.**
+
 
 > **🚨 ABSOLUTE PFLICHT — Read-First (Schritt 0, vor allem anderen):**
 >
@@ -183,7 +202,7 @@ Frage Patricia (nutze `AskUserQuestion` mit Mehrfachauswahl):
 4. **Preis-Validierungs-Zyklus** — 3-Stufen-Staffel (Secret/Early-Bird/Final) + Timeline + Ankündigungs-Messaging
 5. **Launch-Content-Kalender** — 7-Tage-Rhythmus über 2–4 Wochen, 6 Content-Typen × Käufertypen, mit Mid-Launch-0€-Masterclass
 6. **Funnel bauen** — Checkout + Offer Bumps + Bundle + Upsell/Downsell + 5-Mail-Sequenz
-7. **Sales-Page erstellen (ThriveCart)** — lädt Produkt-Briefing, ruft dann `/salespage` mit Vorbefüllung auf
+7. **Sales-Page erstellen (ThriveCart)** — lädt Produkt-Briefing, ruft dann `/copywriting` (Format Landingpage) mit Vorbefüllung auf
 8. **Angebotsseite Homepage** — Textblöcke + Struktur für Patricias Website
 9. **KI-Assistent für Kurs** — GPT/Bot als Bonus/Upsell konzipieren (System-Prompt + Welcome-Flow + Gütekriterien)
 
@@ -473,13 +492,13 @@ Zeit: Mentoring 07:30 oder 21:00
 
 ## MODUS 7: Sales-Page (ThriveCart)
 
-Dieser Modus **ruft den bestehenden `/salespage`-Command auf**, aber mit einem Vorteil: Du hast bereits das komplette Produkt-Briefing aus Modus 1–3 vorliegen.
+Dieser Modus **ruft `/copywriting` auf (Format Landingpage)** — `/salespage` ist seit 02.10.2026 archiviert, aber mit einem Vorteil: Du hast bereits das komplette Produkt-Briefing aus Modus 1–3 vorliegen.
 
 ### Ablauf:
 1. Sammle aus den vorherigen Outputs alle Infos (Produktname, Preise, Module, Transformation, Zielgruppe, Patricias Story, Testimonials, Boni, Einwände).
-2. Prüfe mit Patricia: „Sind die Infos aus `outputs/produkte/[slug]/` aktuell? Soll ich die 13 Sales-Page-Blöcke damit generieren?"
-3. Dann: Folge der Struktur aus `.claude/commands/salespage.md` mit **vorbefüllten Antworten**.
-4. Speichere unter `outputs/produkte/[slug]/09-salespage.md` **UND** spiegle eine Kopie nach `outputs/salespages/` (Konvention von /salespage).
+2. Prüfe mit Patricia: „Sind die Infos aus `outputs/produkte/[slug]/` aktuell? Soll ich die Verkaufsseite damit schreiben?"
+3. Dann: Folge der Pipeline aus `.claude/skills/copywriting/SKILL.md` mit **vorbefülltem Briefing** (Layer 1) und den 13 Blöcken aus dem Abschnitt „ThriveCart-Tipps" am Ende des Skills. Für die gestaltete Seite danach einer der vier Design-Skills.
+4. Speichere unter `outputs/produkte/[slug]/09-salespage.md` **UND** spiegle eine Kopie nach `outputs/salespages/` (bisherige Ablage für Verkaufsseiten).
 
 ---
 
@@ -538,7 +557,7 @@ Ziel: Eine strukturierte Textvorlage für Patricias Website-Angebotsseite (WordP
 
 **Diese musst du in jedem Output spürbar machen — nicht nur drüber reden, sondern umsetzen:**
 
-1. **Verkaufe die Transformation, nie die Inhalte.** „5 Module" ist tabu. Immer: „Stell dir vor, in 3 Wochen..."
+1. **Verkaufe die Transformation, nie die Inhalte.** „5 Module" ist tabu. Immer: „Angenommen, in 3 Wochen..." oder „Gehen wir mal davon aus, in 3 Wochen..." (nie „Stell dir vor", Interview B2b)
 2. **Ziel kommunizieren, nie das Problem.** Problem nur kurz anreissen, Lösung sofort versprechen.
 3. **Maximal spezifisch.** Zahlen, Alltagssituationen, konkrete Gefühle.
 4. **Kaufpsychologische Trigger nur ethisch** — nie Fake-Countdown oder erfundene Teilnehmerzahlen.

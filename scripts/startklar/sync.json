@@ -1,0 +1,69 @@
+{
+  "_hinweis": "versatz = ab welcher Sekunde im Zoom-Teil die Handyaufnahme eingeblendet wird. Groesser = Handy kommt spaeter. Im Sync-Editor schieben, Wert hier eintragen, dann bauen.py laufen lassen.",
+  "layout": {
+    "breite": 1920,
+    "hoehe": 1080,
+    "hintergrund": "#0c1c30",
+    "handy_x": 330,
+    "handy_hoehe": 1080,
+    "handy_crop_oben": 96,
+    "kamera_x": 1030,
+    "kamera_y": 360,
+    "kamera_breite": 640,
+    "kamera_quelle": "224:126:1280:0",
+    "kamera_schaerfen": true,
+    "_kamera_hinweis": "Die Webcam ist im Zoom-Video nur 224x126 Pixel gross (Zoom zeichnet den geteilten Bildschirm in 1504x720 auf, die Kamera ist ein kleines Overlay darin). Beim Vergroessern kommt keine Schaerfe dazu - Lanczos plus leichtes Nachschaerfen holt heraus, was da ist. Kleiner darstellen wirkt schaerfer."
+  },
+  "teile": [
+    {
+      "teil": 1,
+      "zoom": "teil1.mp4",
+      "handy": null,
+      "versatz": 0,
+      "thema": "Konto-Entscheid: privat umstellen oder neu anlegen",
+      "notiz": "Praesentation laeuft durch, kein Handybild noetig. Wird nicht neu gebaut."
+    },
+    {
+      "teil": 2,
+      "zoom": "teil2.mp4",
+      "handy": "Screen_Recording_20260917_110812_Instagram.mp4",
+      "versatz": 162,
+      "thema": "Name, Benutzername, Profilbild, Suchfeld",
+      "notiz": "Von Patricia am 17.09. auf 2:42 korrigiert. Tonanker: bei 2:36 'und ich zeige dir das jetzt auch wieder hier am Handy', bei 2:44 'auf das Profil'. Der fruehere Wert 55 s war falsch - bei 58 s beschreibt sie noch das Beispiel auf der Folie, nicht das Handy."
+    },
+    {
+      "teil": 3,
+      "zoom": "teil3.mp4",
+      "handy": "Screen_Recording_20260917_110914_Instagram.mp4",
+      "versatz": 188,
+      "thema": "Die Bio (Schaufenster-Metapher, 150 Zeichen)",
+      "notiz": "Tonanker: bei 186.6 s sagt sie woertlich 'Wir starten wieder die Bildschirmaufnahme'."
+    },
+    {
+      "teil": 4,
+      "zoom": "teil4.mp4",
+      "handy": "Screen_Recording_20260917_112245_Instagram.mp4",
+      "versatz": 300,
+      "thema": "Highlights und Links im Profil",
+      "notiz": "Tonanker: bei 300.0 s 'Also wir schauen jetzt wieder auf mein Handy'. Laenge passt: 300 + 441 = 741 s bei 751 s Teillaenge."
+    },
+    {
+      "teil": 5,
+      "zoom": "teil5.mp4",
+      "handy": "Screen_Recording_20260917_112548_Instagram.mp4",
+      "versatz": 33,
+      "thema": "Zwei-Faktor-Authentifizierung und Privatsphaere",
+      "notiz": "Tonanker: bei 27.6 s 'ich zeige dir das auch direkt am Handy', bei 38.6 s ist das Einstellungsmenue schon offen."
+    }
+  ],
+  "unbenutzt": [
+    {
+      "datei": "Screen_Recording_20260917_105851_Instagram.mp4",
+      "grund": "laeuft 10:57:32-10:58:51, also waehrend Teil 1. Dort laeuft die Praesentation durch - sieht nach Probelauf aus."
+    },
+    {
+      "datei": "Screen_Recording_20260917_110226_Instagram.mp4",
+      "grund": "nur 3.9 Sekunden lang, Fehlstart."
+    }
+  ]
+}

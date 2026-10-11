@@ -1,3 +1,7 @@
+---
+name: mealplan
+description: "Kochassistent und Meal-Planner — Wochenpläne, Spontan-Kochen, Einkaufslisten, Ernährungs-Coaching."
+---
 # Kochassistent / Meal Planning Bot — v3 (PRODUKTIONS-WORKFLOW)
 
 Du bist Patricias persönlicher Kochassistent. **ABWECHSLUNG = oberste Regel.** Patricia hasst Wiederholungen.
@@ -324,7 +328,7 @@ Script macht: Markdown → HTML → A4-PDF (klickbare Hyperlinks) → Telegram-B
 | 6577 Rezept-Chunks (durchsuchbar) | koch-bot Supabase DB |
 | MyBodyAdvice-Coaching-PDFs | `kochwissen/` |
 | Wochenpläne-Archiv | `outputs/mealplans/` |
-| Telegram-Bot @patricia_kochbot | Token in `scripts/telegram-news-bot/.env` |
+| Telegram-Bot | 🚨 OFFEN — in `scripts/telegram-news-bot/.env` liegt **@businessnews2_bot** (Chat „Newsbot“), nicht @patricia_kochbot. Dorthin gingen bisher alle Wochenplan-PDFs. Der Kochbot-Token liegt nirgends im Workspace — geprüft am 05.10.2026 über `getMe` an allen sechs vorhandenen Tokens. |
 | Google Drive Ordner Kochbot-Wochenplaene | ID `1N-SDWMK9XI2Gq_Waawn8bWa5-U8qWrlh` |
 
 ## 🎯 PATRICIA-MAKROS (MyBodyAdvice)

@@ -1,0 +1,157 @@
+{
+  "stand": "2026-09-24T13:42:25",
+  "gesamt": 74,
+  "offen_du": [],
+  "offen_claude": [
+    {
+      "id": "reel-kw38-do",
+      "name": "KW38 Do · Die Phase, über die keiner redet",
+      "art": "Reel",
+      "tag": "2026-09-30",
+      "profil": "mentoring",
+      "was": "B-Roll bauen"
+    },
+    {
+      "id": "kw38-reel-dt-mo-a",
+      "name": "A · Mo · Sieben Uhr vierzig",
+      "art": "Reel",
+      "tag": "2026-10-02",
+      "profil": "doterra",
+      "was": "B-Roll bauen"
+    }
+  ],
+  "fertig": [
+    {
+      "id": "kw40-kar-fallen",
+      "name": "Fünf Sachen, die du als Networkerin bleiben lässt",
+      "art": "Karussell",
+      "tag": "2026-09-24",
+      "profil": "",
+      "was": ""
+    },
+    {
+      "id": "kw40-kar-konto",
+      "name": "Brauchst du ein zweites Instagram-Konto?",
+      "art": "Karussell",
+      "tag": "2026-09-25",
+      "profil": "",
+      "was": ""
+    },
+    {
+      "id": "kw38-reel-dt-di-b",
+      "name": "B · Di · Magnesium und trotzdem wach",
+      "art": "Reel",
+      "tag": "2026-09-28",
+      "profil": "doterra",
+      "was": ""
+    },
+    {
+      "id": "kw38-reel-dt-fr-b",
+      "name": "B · Fr · Zwei Arten von müde",
+      "art": "Reel",
+      "tag": "2026-09-30",
+      "profil": "doterra",
+      "was": ""
+    },
+    {
+      "id": "kw38-kar-fr-b",
+      "name": "B · Fr · Die Rechnung",
+      "art": "Karussell",
+      "tag": "2026-10-02",
+      "profil": "mentoring",
+      "was": ""
+    },
+    {
+      "id": "reel-kw38-fr",
+      "name": "KW38 Fr · POV Montag ins Büro (LEAD · STANDBEIN)",
+      "art": "Reel",
+      "tag": "2026-10-07",
+      "profil": "mentoring",
+      "was": ""
+    }
+  ],
+  "datum_durch": [
+    {
+      "id": "reel-kw38-mi",
+      "name": "KW38 Mi · 3 Wege ohne Namensliste (LEAD · STANDBEIN)",
+      "art": "Reel",
+      "tag": "2026-09-19",
+      "profil": "mentoring",
+      "was": "Datum ist durch — neu einplanen"
+    },
+    {
+      "id": "kw39-reel-d-mo-a",
+      "name": "A · Mo · Um drei wach",
+      "art": "Reel",
+      "tag": "2026-09-21",
+      "profil": "doterra",
+      "was": "Datum ist durch — neu einplanen"
+    },
+    {
+      "id": "kw39-reel-d-mo-b",
+      "name": "B · Mo · Halb vier",
+      "art": "Reel",
+      "tag": "2026-09-21",
+      "profil": "doterra",
+      "was": "Datum ist durch — neu einplanen"
+    },
+    {
+      "id": "kw39-kar-d-di-b",
+      "name": "B · Di · Fünf Sätze, die man dauernd hört",
+      "art": "Karussell",
+      "tag": "2026-09-22",
+      "profil": "doterra",
+      "was": "Datum ist durch — neu einplanen"
+    },
+    {
+      "id": "kw39-kar-di-b",
+      "name": "B · Di · Kein Ideen-Problem",
+      "art": "Karussell",
+      "tag": "2026-09-22",
+      "profil": "mentoring",
+      "was": "Datum ist durch — neu einplanen"
+    },
+    {
+      "id": "kw39-kar-fr-a",
+      "name": "C · Di · Früher Produktfotos",
+      "art": "Karussell",
+      "tag": "2026-09-22",
+      "profil": "mentoring",
+      "was": "Datum ist durch — neu einplanen"
+    },
+    {
+      "id": "kw39-reel-d-mi-a",
+      "name": "A · Mi · Das wird schon wieder",
+      "art": "Reel",
+      "tag": "2026-09-23",
+      "profil": "doterra",
+      "was": "Datum ist durch — neu einplanen"
+    },
+    {
+      "id": "kw39-reel-d-mi-b",
+      "name": "B · Mi · Die dritte Apotheken-Tüte",
+      "art": "Reel",
+      "tag": "2026-09-23",
+      "profil": "doterra",
+      "was": "Datum ist durch — neu einplanen"
+    },
+    {
+      "id": "kw39-reel-m-mi-b",
+      "name": "B · Mi · Nichts mehr verkaufen",
+      "art": "Reel",
+      "tag": "2026-09-23",
+      "profil": "mentoring",
+      "was": "Datum ist durch — neu einplanen"
+    },
+    {
+      "id": "kw40-kar-network",
+      "name": "Warum dir nur Leute aus deinem Network folgen",
+      "art": "Karussell",
+      "tag": "2026-09-23",
+      "profil": "",
+      "was": "Datum ist durch — neu einplanen"
+    }
+  ],
+  "vorrat": 40,
+  "quelle": "outputs/cockpit/inhalte-roh (ArtifactData list)"
+}

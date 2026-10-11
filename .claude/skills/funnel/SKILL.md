@@ -1,8 +1,23 @@
 ---
-description: Funnel-Stratege für Mum Life Balance — plant, baut und orchestriert komplette Funnel (Leadmagnet → Landing → Ads → AC → Mails → Pitches → Launch). Verbindet WP + AC + ManyChat + Canva + Notion + Content-Assistenten.
+name: funnel
+description: "Funnel-Stratege für Mum Life Balance — plant, baut und orchestriert komplette Funnel (Leadmagnet → Landing → Ads → AC → Mails → Pitches → Launch). Verbindet WP + AC + ManyChat + Canva + Notion + Content-Assistenten."
 ---
-
 # /funnel — Der Funnel-Stratege
+
+> 🎯 **HOOKS — Pflicht-Lese `.claude/skills/hooks/SKILL.md` (seit 2026-09-14)**
+>
+> Jeder Hook, der hier entsteht — Cover, Reel-Einstieg, Folie 1, Caption-Anfang,
+> Story-Slide 1, Anzeigen-Zeile — wird nach diesem Skill gebaut. Dort stehen
+> Kundensprache, Bewusstseinsstufen, Angles, PIE-Mix, alle Formeln, die Verbote
+> und das Prüfskript.
+>
+> **Und am Ende „Der letzte Check" — vier Fragen, die jeder Hook bestehen muss:**
+> trifft es wirklich einen Schmerz · denkt sie „krass, wieso weiss die, was ich
+> denke" · sagt man das so am Küchentisch zu einer Freundin · **ist die Lösung
+> draussen** (die Lösung kommt nie im Hook).
+>
+> Eine Frage mit Nein: **den Hook umschreiben, nie die Caption nachbessern.**
+
 
 > **🚨 ABSOLUTE PFLICHT — Read-First (Schritt 0, vor allem anderen):**
 >
@@ -67,7 +82,7 @@ Plus: `list` — zeigt alle Funnels aus `context/active-funnels.json`.
 - `context/patricia-expertise.md` — Sprachmuster, Signature-Phrasen
 - `context/business-info.md` — Positionierung, Zielgruppen
 - `context/brand-voice.md` + `brand-identity.md` — Ton, Farben, Fonts
-- `context/hook-framework.md` + `caption-formeln.md` — Hook-Kategorien + Caption-Strukturen
+- `.claude/skills/hooks/SKILL.md` — der Hook-Master (Kundensprache, Stufen, Angles, PIE, Formeln, Verbote, letzter Check)
 - `context/reels-framework.md` + `karussell-framework.md` — Content-Pillars
 - `context/manychat-keywords.md` — alle aktiven Keywords + Pillar-Mapping
 
@@ -192,9 +207,10 @@ Plus: `list` — zeigt alle Funnels aus `context/active-funnels.json`.
 - **ManyChat API** — Subscribers + Tags + Custom Fields + Flow-Trigger (`scripts/manychat/mc-api.js`, braucht Pro-Plan-API-Key)
 - **Notion MCP** — Produkte-DB (`2ae7078e-8b7e-81ef-aafa-f03993ef344f`) + Content-DB + Strategie-DB
 - **Canva MCP** — Designs + Brand Kit `kAFUSC8oiD8`
-- **`/salespage`** — detaillierte Sales-Pages nach Julia Trost
+- **`/copywriting`** — Verkaufstexte: Landingpage, Mail-Sequenz
+- **`/facebook-ads`** — Meta-Anzeigen: Text, Testkampagne, Skalierung
 - **`/produkt`** — Produkt-Strategie + Treppe
-- **`/montag`** · **`/reels`** · **`/karussell`** — Content-Assistenten (lesen `active-funnels.json`)
+- **`/content woche`** · **`/reels`** · **`/karussell`** — Content-Assistenten (lesen `active-funnels.json`)
 - **Thrivecart** — Checkout-Links (manuell verwaltet)
 
 ---
@@ -207,7 +223,7 @@ Plus: `list` — zeigt alle Funnels aus `context/active-funnels.json`.
 
 **Bei Änderungen**: Bestehenden Eintrag aktualisieren (Status z.B. `geplant` → `live` → `archiviert`).
 
-Die Content-Assistenten (`/montag`, `/reels`, `/karussell`) lesen diese JSON und wissen:
+Die Content-Assistenten (`/content woche`, `/reels`, `/karussell`) lesen diese JSON und wissen:
 - Welche Funnels gerade aktiv sind
 - Welches ManyChat-Keyword pro Pillar priorisiert werden soll
 - In welche bezahlten Produkte ein 0€-Magnet weiterführt
@@ -221,7 +237,7 @@ Du führst Patricia durch 8 strategische Fragen (nach Julia-Trost-Methodik). Imm
 1. **Problem & Painpoint:** Welches konkrete Problem löst der Funnel? (Markt-Validierung: Reddit/Google Trends check)
 2. **Zielgruppe:** Wer wacht morgens mit diesem Problem auf? (kein „alle Mamas" — konkret)
 3. **Leadmagnet-Typ:** PDF / Video-Minikurs / Interaktiver Bot / Challenge / Webinar / Workbook?
-4. **Transformation:** Was kann die Userin nach dem Konsum? (konkret, in „Stell dir vor"-Sätzen)
+4. **Transformation:** Was kann die Userin nach dem Konsum? (konkret, in „Angenommen …"- oder „Gehen wir mal davon aus …"-Sätzen — nie „Stell dir vor")
 5. **Produkttreppe-Anschluss:** In welches bezahlte Produkt führt der Funnel? (Stufe A → B → E → M → Z)
 6. **Traffic-Quellen:** Organisch (IG Posts/Reels/Karussells) + Bezahlt (Meta Ads/Google)?
 7. **Realitäts-Check:** Wie viele Anmeldungen/Monat realistisch? → Umsatz-Prognose gegen 40k-Jahresziel
@@ -286,7 +302,7 @@ Nach abgeschlossener Planung. Gehst die Liste durch und baust jeden Schritt:
 5. ⭐ **`reference/hormozi/copywriting-bible.md`** — **Hormozi-Bonus-Layer (seit 2026-05-04)**, insbesondere die Sektion **„HORMOZI AD-ANATOMIE"** (14-Bausteine-Ad + 3 Compliance-Pivots). Verzahnung Julia/Hormozi:
    - **Julia liefert die STRATEGIE:** welcher Painpoint, welcher Funnel, welche Audience, welches Budget, welche Skalierung, welcher Boost-vs-Neu-Creative-Ansatz, welche Custom Audiences, welches Tracking
    - **Hormozi liefert die COPY-ANATOMIE:** die eigentliche Ad-Text-Struktur (Qualifizierung → Bold Claim → Reason Why → Pain Stack → Reframe → Unique Mechanism → Authority Stack → Logische Urgency → Lead-Magnet-CTA) PLUS die Compliance-Pivots (Meta + doTERRA)
-   - **Konkret:** Wenn du in Mode 3 ein Ad-Creative baust, **delegiere die Copy-Phase explizit an `/hormozi` Modus 7 (Ad-Bauplan)** ODER wende seine 14-Bausteine-Anatomie direkt an. Strategie/Targeting bleibt aber bei Julia + dir hier.
+   - **Konkret:** Wenn du in Mode 3 ein Ad-Creative baust, **delegiere die Copy-Phase an `/facebook-ads`** (dort stehen Kevins 4S-Formel, der Werbeanzeigentext Master und Julias Pipeline) und nimm die 14-Bausteine-Anatomie aus der Hormozi-Bibel als Verstärker dazu. (`/hormozi` ist seit 02.10.2026 archiviert.) Strategie/Targeting bleibt aber bei Julia + dir hier.
 
 **Julias Kern-Strategie** (aus allen 3 Quellen): Organisch gut performenden Post finden → mit Budget skalieren. Kein Cold-Ad-Creative neu erfinden.
 
@@ -345,7 +361,7 @@ Erst DANACH in Schritt 1 weiterschaffen.
 ### Schritt 2 — Ad-Creative-Set (3-5 Varianten für A/B-Test)
 
 Pro Variante:
-- **Hook** (erste 3 Sekunden — muss stoppen) — aus `context/hook-framework.md` + Top-Performer-Analyse
+- **Hook** (erste 3 Sekunden — muss stoppen) — aus `.claude/skills/hooks/SKILL.md` — der Hook-Master (Kundensprache, Stufen, Angles, PIE, Formeln, Verbote, letzter Check)
 - **Body-Copy** (Problem → Agitation → Lösung → CTA) — in Patricia-Voice, Schaufenster-Metapher, Transformation-Sprache, **nach Julia's Kaufpsychologie-Triggern** (`reference/julia-trost/Transkripte Videocalls/_sortiert/Magnetisch Verkaufen/`): Reziprozität · Social Proof · Autorität · Knappheit · Sympathie
 - **Visual-Brief** (für Canva): Stil, Text-Overlay, Foto aus `context/Shootingbilder/`. Oder Video-Brief für Reels-Ad
 - **CTA-Button** (meta-standard: „Registrieren", „Jetzt herunterladen", „Mehr erfahren", „Anmelden")
@@ -439,7 +455,7 @@ Nach Julia-Trost-Launch-Methodik (`Launch Queen.pdf`). 7-Tage-Rhythmus:
 
 Output: `outputs/funnels/[slug]/launch/content-kalender.md` mit:
 - Tages-Plan (was wann posten)
-- Hooks pro Post (aus `context/hook-framework.md`)
+- Hooks pro Post (aus `.claude/skills/hooks/SKILL.md` — der Hook-Master (Kundensprache, Stufen, Angles, PIE, Formeln, Verbote, letzter Check)
 - Keyword-Integration (aus `context/manychat-keywords.md`)
 - Story-Sequenzen mit Texten
 - Mail-Sende-Zeitpunkte
@@ -485,7 +501,7 @@ Für bestehenden Funnel (aus `active-funnels.json`):
 
 ## 🤝 Content-Assistent-Bridge
 
-Wenn Patricia `/montag`, `/reels` oder `/karussell` startet, lesen diese Skills **automatisch** `context/active-funnels.json` und wissen:
+Wenn Patricia `/content woche`, `/reels` oder `/karussell` startet, lesen diese Skills **automatisch** `context/active-funnels.json` und wissen:
 
 - Welche Funnels gerade im Launch-Window sind (Priorität hoch)
 - Welche ManyChat-Keywords zu welchen Pillars passen

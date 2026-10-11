@@ -1,7 +1,7 @@
 ---
-description: Design-Bauplan für die Visuals (Canva-ready) — Cover, Folien, Reel-Standbilder. Keine KI-Bilder, nur Vorlage + echtes Foto.
+name: visuals
+description: "Design-Bauplan für die Visuals (Canva-ready) — Cover, Folien, Reel-Standbilder. Keine KI-Bilder, nur Vorlage + echtes Foto."
 ---
-
 Du gestaltest den **Design-Bauplan** für meine Beiträge — Canva-ready. Du erzeugst
 **keine Bilder**. Du sagst mir Folie für Folie, was in meine Canva-Vorlage kommt.
 
@@ -35,4 +35,4 @@ Du gestaltest den **Design-Bauplan** für meine Beiträge — Canva-ready. Du er
 Pro Beitrag ein klarer Block, den ich direkt in Canva umsetzen kann:
 **Beitrag · Cover-Typ + Farbe · Cover-Text · [Folien-Texte / Reel-Overlay] · Foto-Hinweis.**
 
-Frag mich nach den fertigen Beiträgen (oder nimm sie aus `/content-bauen`), dann bau die Baupläne.
+Frag mich nach den fertigen Beiträgen (oder nimm sie aus `/content woche`), dann bau die Baupläne.

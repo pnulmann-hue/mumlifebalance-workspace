@@ -4,32 +4,318 @@
     {
       "name": "bio-check-bot",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["-y", "serve", "scripts/bio-check-bot/public", "-l", "4321"],
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "scripts/bio-check-bot/public",
+        "-l",
+        "4321"
+      ],
       "port": 4321
     },
     {
       "name": "salespage-mba",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["-y", "serve", "outputs/salespages/umsetzerinnen-pioneer", "-l", "4330"],
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/salespages/umsetzerinnen-pioneer",
+        "-l",
+        "4330"
+      ],
       "port": 4330
     },
     {
       "name": "freischaufeln",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["-y", "serve", "scripts/freischaufeln/public", "-l", "4340"],
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "scripts/freischaufeln/public",
+        "-l",
+        "4340"
+      ],
       "port": 4340
     },
     {
       "name": "mba-anrechnung-mails",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["-y", "serve", "outputs/funnels/mba-anrechnung-bestandskunden/mails-kombi", "-l", "4350"],
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/funnels/mba-anrechnung-bestandskunden/mails-kombi",
+        "-l",
+        "4350"
+      ],
       "port": 4350
     },
     {
       "name": "mama-ceo-mail",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["-y", "serve", "outputs/produkte/mama-ceo", "-l", "4360"],
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/produkte/mama-ceo",
+        "-l",
+        "4360"
+      ],
       "port": 4360
+    },
+    {
+      "name": "bild-editor",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/_bild-editor",
+        "-l",
+        "4370"
+      ],
+      "port": 4370
+    },
+    {
+      "name": "cockpit",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/cockpit",
+        "-l",
+        "4380"
+      ],
+      "port": 4380
+    },
+    {
+      "name": "ideen-finder",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "scripts/produkt-ideen-finder-service/lokal.mjs"
+      ],
+      "port": 4390
+    },
+    {
+      "name": "cockpit-test",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/cockpit/abgleich",
+        "-l",
+        "4381"
+      ],
+      "port": 4381
+    },
+    {
+      "name": "startklar-sync",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "video/startklar/sync-editor",
+        "-l",
+        "4382"
+      ],
+      "port": 4382
+    },
+    {
+      "name": "startklar-texte",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/produkte/instagram-startklar/kurstexte",
+        "-l",
+        "4383"
+      ],
+      "port": 4383
+    },
+    {
+      "name": "startklar-salespage",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/salespages/startklar",
+        "-l",
+        "4384"
+      ],
+      "port": 4384
+    },
+    {
+      "name": "startklar-werkstatt",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/produkte/instagram-startklar/04-arbeitsblaetter",
+        "-l",
+        "4385"
+      ],
+      "port": 4385
+    },
+    {
+      "name": "startklar-mail",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/produkte/instagram-startklar/08-funnel",
+        "-l",
+        "4386"
+      ],
+      "port": 4386
+    },
+    {
+      "name": "ki-masterclass-mail",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/produkte/ki-treppe/mails",
+        "-l",
+        "4396"
+      ],
+      "port": 4396
+    },
+    {
+      "name": "stimm-check-lp",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/salespages/stimm-check",
+        "-l",
+        "4398"
+      ],
+      "port": 4398
+    },
+    {
+      "name": "ki-masterclass-lp",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/salespages/ki-masterclass",
+        "-l",
+        "4399"
+      ],
+      "port": 4399
+    },
+    {
+      "name": "stimm-check",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "scripts/stimm-check/dev-server.mjs"
+      ],
+      "port": 4397
+    },
+    {
+      "name": "energie-lp",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4390",
+        "--directory",
+        "outputs/produkte/doterra-mama-energie/landingpage"
+      ],
+      "port": 4390
+    },
+    {
+      "name": "rezepte",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4391",
+        "--directory",
+        "outputs/produkte/doterra-mama-energie/rezepte"
+      ],
+      "port": 4391
+    },
+    {
+      "name": "energie-mail",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4392",
+        "--directory",
+        "outputs/produkte/doterra-mama-energie/mails"
+      ],
+      "port": 4392
+    },
+    {
+      "name": "energie-begleitung",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4394",
+        "--directory",
+        "outputs/produkte/doterra-mama-energie/begleitung"
+      ],
+      "port": 4394
+    },
+    {
+      "name": "ki-kurs-texte",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4387",
+        "--directory",
+        "outputs/produkte/ki-treppe/kurstexte"
+      ],
+      "port": 4387
+    },
+    {
+      "name": "ki-kurs-lp",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/salespages/ki-kurs",
+        "-l",
+        "4400"
+      ],
+      "port": 4400
+    },
+    {
+      "name": "ki-kurs-mail",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/produkte/ki-kurs/mails",
+        "-l",
+        "4401"
+      ],
+      "port": 4401
+    },
+    {
+      "name": "launch-mails",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4402",
+        "--directory",
+        "outputs/produkte/ki-treppe/launch-mails"
+      ],
+      "port": 4402
+    },
+    {
+      "name": "doterra-angebote",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4404",
+        "--directory",
+        "outputs/produkte/doterra-angebote-seite"
+      ],
+      "port": 4404
     }
   ]
 }

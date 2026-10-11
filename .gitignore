@@ -420,3 +420,20 @@ reference/copywriting-original/
 # Archivierte zugekaufte Skills (02.10.2026) — Fremdmaterial, nie ins öffentliche Repo.
 reference/_archiv-skills/content-master/
 reference/_archiv-skills/werbeanzeigentext-master/
+
+# Ebenfalls zugekauft (Miriam-Sofortstart) — nie ins öffentliche Repo.
+.claude/skills/chatgpt-ads/
+
+# Julias Claude-Kurse (Claude Code Mastery, Skill Bibliothek) — gekauftes Fremdmaterial, Repo ist public
+reference/julia-trost/claude-kurse/
+
+# Abgleich mit gekauftem Kursmaterial (Zitate, Minutenmarken) — nicht ins public Repo
+outputs/produkte/ki-treppe/10-abgleich-julia-claude-kurse.md
+
+# Essensplan-Dialog: ihre Antworten und der Merkzettel (Repo ist public)
+scripts/mealplan-dialog/.env
+scripts/mealplan-dialog/offene-frage.json
+scripts/mealplan-dialog/antwort-kw*.md
+
+# Mails mit dem Einladungslink zur bezahlten KI-Kurs-Gruppe (Repo ist public)
+outputs/produkte/ki-kurs/mails/

@@ -1,18 +1,33 @@
 ---
-description: /monatsplan — Strategie-Layer für den nächsten Monat (1× pro Monat, ~30 Min)
+name: monatsplan
+description: "Strategie-Layer für den nächsten Monat (1× pro Monat, ~30 Min)"
 ---
-
 # /monatsplan
 
-**Zweck:** Den **Strategie-Layer** für einen kompletten Monat festschnüren. Damit `/freitag-hooks` jede Woche frisch und reaktiv arbeitet — aber innerhalb einer klaren Monats-Storyline.
+> 🎯 **HOOKS — Pflicht-Lese `.claude/skills/hooks/SKILL.md` (seit 2026-09-14)**
+>
+> Jeder Hook, der hier entsteht — Cover, Reel-Einstieg, Folie 1, Caption-Anfang,
+> Story-Slide 1, Anzeigen-Zeile — wird nach diesem Skill gebaut. Dort stehen
+> Kundensprache, Bewusstseinsstufen, Angles, PIE-Mix, alle Formeln, die Verbote
+> und das Prüfskript.
+>
+> **Und am Ende „Der letzte Check" — vier Fragen, die jeder Hook bestehen muss:**
+> trifft es wirklich einen Schmerz · denkt sie „krass, wieso weiss die, was ich
+> denke" · sagt man das so am Küchentisch zu einer Freundin · **ist die Lösung
+> draussen** (die Lösung kommt nie im Hook).
+>
+> Eine Frage mit Nein: **den Hook umschreiben, nie die Caption nachbessern.**
 
-**Wann ausführen:** Letzter Sonntag des Vor-Monats (z.B. 28.4. für Mai). Idealerweise vor dem ersten `/freitag-hooks` des Monats.
+
+**Zweck:** Den **Strategie-Layer** für einen kompletten Monat festschnüren. Damit `/content woche` jede Woche frisch und reaktiv arbeitet — aber innerhalb einer klaren Monats-Storyline.
+
+**Wann ausführen:** Letzter Sonntag des Vor-Monats (z.B. 28.4. für Mai). Idealerweise vor dem ersten `/content woche` des Monats.
 
 **Output:** Notion-Monatsplan-Page (Updates / Neu) + `outputs/monatsplaene/YYYY-MM.md` + Briefing für die 4 Wochen-Freitage.
 
 > **Neu (seit 2026-06): Monats-Content-Vorplanung.** Patricia will EINMAL pro Monat alles vorplanen, damit sie in **1-2 Tagen alle Reels für den ganzen Monat abdrehen** kann. Deshalb erzeugt dieser Skill jetzt zusätzlich (Phase 4.5): **Marktanalyse + Content-Ideen pro Woche** (thema-matched zum Launch) + eine **Reel-Dreh-Liste zum Batch-Filmen** + die **Rückblick-Analyse** des Vormonats.
 >
-> **Stories bleiben täglich** (Frische) — sie kommen über den Story-Bot + `/story`: **im Launch** nach dem Julia-Launch-Drehbuch (`story-plan.json` + `julia-launch-story-bausteine.md`), **sonst** nach den Julia-Story-Vorlagen (`julia-insta-stories-anleitung.md` etc.). Die wöchentlichen Posts/Reels stehen als Monats-Skelett; `/freitag-hooks` verfeinert sie nur noch mit Live-Trends.
+> **Stories bleiben täglich** (Frische) — sie kommen über den Story-Bot + `/story`: **im Launch** nach dem Julia-Launch-Drehbuch (`story-plan.json` + `julia-launch-story-bausteine.md`), **sonst** nach den Julia-Story-Vorlagen (`julia-insta-stories-anleitung.md` etc.). Die wöchentlichen Posts/Reels stehen als Monats-Skelett; `/content woche` verfeinert sie nur noch mit Live-Trends.
 
 ---
 
@@ -45,7 +60,7 @@ Lies in dieser Reihenfolge:
 8. **Vormonats-Notion-Plan** (falls vorhanden): Welche Ziele wurden erreicht, welche nicht
 
 **Zusätzlich für die Content-Vorplanung (Phase 4.5) — Pflicht:**
-9. `context/hook-framework.md` — Hook-Regeln + Olga-Pattern-Mix + 8/10-Standard
+9. `.claude/skills/hooks/SKILL.md` — der Hook-Master (Kundensprache, Stufen, Angles, PIE, Formeln, Verbote, letzter Check)
 10. `context/content-formel-5-typen.md` — die 5 Content-Typen pro Woche
 11. `context/reichweiten-posts-pattern.md` — Reichweiten-/Verbindungs-Posts (**mind. 2 von 5**)
 12. jüngster **Content-Radar** (`context/content-radar-*.md`) — Format-Mix (Mentoring max 1 Karussell + Reels, doTERRA Reels-only), Zeitanker-Hook
@@ -60,7 +75,44 @@ Lies in dieser Reihenfolge:
 
 Vor neuem Monat: was hat im vergangenen Monat gewirkt?
 
-### 2a) Notion-Monatsplan vom Vormonat lesen
+### 2a) 🛑 PFLICHT — den Planungs-Abgleich lesen, BEVOR neu geplant wird
+
+Patricia am 24.09.2026, nach dem ersten Abgleich: *„bei der nächsten planung
+müssen wir das sicher beachten"*.
+
+```bash
+python scripts/cockpit/planung-abgleichen.py --zeigen
+```
+
+Das Skript hängt an jeden Jahresplan-Eintrag und jedes Ziel einen **Beleg aus
+dem Workspace** — Produktordner, aktiver Funnel, ThriveCart-Status, Plan-Datei.
+Im Cockpit stehen die Befunde unter **Planung → Jahresplan** und **→ Ziele**.
+
+| Befund | was er für die neue Planung heisst |
+|---|---|
+| **belegt** | ist passiert — als Ausgangspunkt nehmen, nicht nochmal planen |
+| **offen** | Termin liegt vorn — im neuen Monat einplanen oder streichen |
+| **keine Spur** | **nachfragen.** Nie stillschweigend nochmal ansetzen und nie als gescheitert abbuchen |
+| **Termin** | Ferien, Convention — Energie-Lage für Frage 8 |
+| **abgelaufen** (Ziele) | Quartal vorbei, Status noch „Aktiv" — mit Patricia klären |
+
+🚨 **Befund vom ersten Lauf (24.09.2026):** von 54 Jahresplan-Einträgen hatten
+**22 keine Spur**, und **4 von 11 Zielen** trugen ein abgelaufenes Quartal bei
+Status „Aktiv". Das ist keine Nachlässigkeit — es stand so in Notion und wurde
+nie zurückgelesen. Wer ohne diesen Schritt plant, plant auf einem Stand, der
+Monate alt sein kann.
+
+🚨 **„Keine Spur" heisst NICHT „nicht passiert".** Ein Leadmagnet kann in
+ManyChat leben, ohne je eine Datei zu bekommen. Der Befund ist eine **Frage an
+Patricia**, kein Urteil — und bei der Planung wird sie gestellt, nicht
+übergangen.
+
+🚨 **Nichts automatisch abhaken.** Der Abgleich setzt keinen Status und darf
+`daten/jahresplan` und `daten/ziele` nie überschreiben; die Befunde liegen
+daneben in `daten/planung-abgleich`. Ein Haken, den eine Maschine gesetzt hat,
+ist derselbe Fehler wie ein fehlender.
+
+### 2b) Notion-Monatsplan vom Vormonat lesen
 
 Notion-DB: `collection://2ae7078e-8b7e-81fc-acf7-000be291c92c`
 
@@ -70,7 +122,7 @@ Aus Vormonats-Page abfragen:
 - `Erkenntnisse Content-Analyse` — welche Posts performten?
 - `Learnings aus dem letzten Monat` — was ändern wir?
 
-### 2b) Job-Mix-Compliance-Check Vormonat
+### 2c) Job-Mix-Compliance-Check Vormonat
 
 In Content-Management-DB (`collection://2ae7078e-8b7e-811a-ad14-000ba5820c09`) filtern: `Veröffentlichung` im Vormonat + Profil. Dann:
 
@@ -79,7 +131,7 @@ In Content-Management-DB (`collection://2ae7078e-8b7e-811a-ad14-000ba5820c09`) f
 - **Wenn D unter 15%:** Sales-Lücke — sollte diesen Monat höher gewichtet werden
 - **Wenn C unter 17%:** Reichweite-Lücke — Pain-Hooks/Reels diesen Monat verstärken
 
-### 2c) Output Phase 2 (intern)
+### 2d) Output Phase 2 (intern)
 
 ```
 Vormonat-Diagnose [Monat YYYY]:
@@ -201,9 +253,9 @@ Die Hauptbotschaft wird als roter Faden über die 4 Wochen gespannt:
 
 ### 4c) Hooks-Vorschau (3 pro Woche, optional)
 
-**Optional — nur wenn Patricia es will:** Skill schlägt 3 Hook-Richtungen pro Woche vor (nicht ausformuliert — nur Konzept). Damit hat `/freitag-hooks` jede Woche schon einen Anker.
+**Optional — nur wenn Patricia es will:** Skill schlägt 3 Hook-Richtungen pro Woche vor (nicht ausformuliert — nur Konzept). Damit hat `/content woche` jede Woche schon einen Anker.
 
-→ **Default: NICHT machen.** /freitag-hooks soll wöchentlich frisch arbeiten. Nur auf explizite Patricia-Bitte.
+→ **Default: NICHT machen.** `/content woche` soll wöchentlich frisch arbeiten. Nur auf explizite Patricia-Bitte.
 
 ---
 
@@ -241,7 +293,7 @@ ALLE Reels des Monats in EINER Tabelle, gruppiert nach **Setting/Outfit**, damit
 | # | Woche | Produkt | Hook (Slide 1) | Dreh-Anweisung / Sprechtext (wort-für-wort bei Talking-Head, sonst Shotlist) | Format/Setting | B-Roll |
 |---|---|---|---|---|---|---|
 
-→ So weiss Patricia vorab **genau, was sie aufnehmen muss**. Sprechtexte sind Dreh-Anweisung; die finale Caption feilt `/freitag-hooks` / `/reels`.
+→ So weiss Patricia vorab **genau, was sie aufnehmen muss**. Sprechtexte sind Dreh-Anweisung; die finale Caption feilt `/content woche` / `/reels`.
 
 ### 4.5e) Story-Logik (täglich — NICHT vorab ausformulieren)
 
@@ -269,7 +321,7 @@ In Monatsplanung-DB (`collection://2ae7078e-8b7e-81fc-acf7-000be291c92c`):
 
 **Properties füllen:**
 - `3 Monatsziele` ← KPI-Ziel ausgeschrieben
-- `Erkenntnis Kennzahlen-Analyse` ← aus Phase 2b (Job-Mix-Compliance)
+- `Erkenntnis Kennzahlen-Analyse` ← aus Phase 2c (Job-Mix-Compliance)
 - `Erkenntnisse Content-Analyse` ← Top/Bottom-Posts Vormonat
 - `Learnings aus dem letzten Monat` ← Korrekturen für neuen Monat
 
@@ -350,7 +402,7 @@ Pfad: `outputs/monatsplaene/YYYY-MM.md`
 
 ---
 
-## Briefing für /freitag-hooks (4 Wochen)
+## Briefing für `/content woche` (4 Wochen)
 
 ### KW [X] (dd.mm.-dd.mm.) — Block [A/B/C]
 - **Wochenfokus:** [...]
@@ -364,8 +416,8 @@ Pfad: `outputs/monatsplaene/YYYY-MM.md`
 
 ## CTA für nächste Schritte
 
-1. Sonntag dieser Woche: ersten `/freitag-hooks` mit diesem Monatsbriefing laufen lassen
-2. Patricia pickt 5 Hooks pro Profil → /montag baut
+1. Sonntag dieser Woche: ersten `/content woche` mit diesem Monatsbriefing laufen lassen
+2. Patricia pickt 5 Hooks pro Profil → `/content woche` baut
 3. Mid-Month-Check (Mi der KW X+1): Live-Performance vs. KPI-Ziel — ggf. Block-Verteilung in KW X+2/3 anpassen
 4. Ende Monat: nächster `/monatsplan`-Lauf nutzt diesen als Vormonats-Referenz
 ```
@@ -380,7 +432,7 @@ Falls Patricia es will: Kurz-Zusammenfassung (Säule + Hauptbotschaft + KPI-Ziel
 
 - ✅ Monats-Content vorplanen ist JETZT erwünscht: Ideen + Hooks pro Woche (5 Beiträge, ≥2 Reichweiten) + **Reel-Dreh-Liste** zum Batch-Filmen.
 - ❌ ABER: **Stories NIE vorab ausformulieren** — die kommen täglich frisch über `/story` (Launch = Drehbuch, sonst = Story-Vorlagen).
-- ❌ Reel-Sprechtexte sind **Dreh-Anweisung**, nicht die endgültige Caption (die feilt /freitag-hooks/​/reels).
+- ❌ Reel-Sprechtexte sind **Dreh-Anweisung**, nicht die endgültige Caption (die feilt `/content woche`/​/reels).
 - ❌ Hauptbotschaft erfinden ohne Patricia zu fragen
 - ❌ Block-Verteilung Variante B empfehlen ohne Erklärung
 - ❌ KPI-Zahlen erfinden (immer Patricia fragen oder Vormonat als Anker)
@@ -403,8 +455,8 @@ Falls Patricia es will: Kurz-Zusammenfassung (Säule + Hauptbotschaft + KPI-Ziel
 
 | Skill | Was nutzt es vom Monatsplan |
 |---|---|
-| `/freitag-hooks` | Wochenfokus + Produkt + Job-Mix-Soll aus Monats-Briefing |
-| `/montag` | Block-Verteilung um zu wissen was beworben wird |
+| `/content woche` | Wochenfokus + Produkt + Job-Mix-Soll aus Monats-Briefing |
+| `/content woche` | Block-Verteilung um zu wissen was beworben wird |
 | `/karussell` + `/reels` | Hauptbotschaft als roten Faden |
 | `/story` | Säule des Monats für Story-Sequenzen |
 | `/funnel` | Welche Funnels diesen Monat aktiviert sind |

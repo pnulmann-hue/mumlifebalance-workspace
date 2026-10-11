@@ -1,0 +1,8 @@
+{
+  "name": "kommentar-antwort",
+  "version": "0.1.0",
+  "description": "ManyChat-Ersatz: beantwortet Instagram-Kommentare mit Stichwort (zuerst STIMME)",
+  "type": "module",
+  "scripts": { "test": "node test/entscheiden-test.mjs" },
+  "engines": { "node": ">=18" }
+}

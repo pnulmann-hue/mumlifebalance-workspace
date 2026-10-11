@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Der Stimm-Check — damit deine KI klingt wie du</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--petrol:#12828c;--dunkelblau:#29556d;--creme:#f1ecdd;--text:#0c1c30;--orange:#dc822e;--weich:#e4f3f4;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:var(--creme);font-family:"Source Sans 3",sans-serif;color:var(--text);line-height:1.55;}
+    .wrap{max-width:680px;margin:0 auto;padding:28px 16px 80px;}
+    header{text-align:center;margin-bottom:22px;}
+    header .eyebrow{font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--petrol);font-size:14px;}
+    header h1{font-family:"Philosopher";font-weight:700;font-size:38px;color:var(--dunkelblau);line-height:1.1;margin-top:6px;}
+    header p{opacity:.85;margin-top:10px;font-size:17px;}
+    .steps{display:flex;gap:8px;justify-content:center;margin:18px 0 24px;}
+    .steps .dot{width:34px;height:6px;border-radius:3px;background:rgba(41,85,109,.2);}
+    .steps .dot.on{background:var(--petrol);}
+    .card{background:#fff;border-radius:20px;padding:26px 20px;box-shadow:0 10px 30px rgba(12,28,48,.08);margin-bottom:18px;}
+    h2{font-family:"Philosopher";font-weight:700;font-size:26px;color:var(--dunkelblau);margin-bottom:6px;line-height:1.2;}
+    h3{font-family:"Philosopher";font-weight:700;font-size:20px;color:var(--dunkelblau);margin:22px 0 8px;}
+    .lead{opacity:.9;margin-bottom:10px;}
+    label{display:block;font-weight:700;margin:20px 0 4px;font-size:16px;}
+    .hilfe{font-size:14px;color:#5a6b76;margin-bottom:8px;}
+    textarea,input[type=text],select{width:100%;padding:12px 14px;border:1.5px solid rgba(41,85,109,.25);border-radius:12px;font-size:16px;font-family:inherit;background:#fff;color:var(--text);}
+    textarea{resize:vertical;min-height:84px;line-height:1.5;}
+    textarea.gross{min-height:180px;}
+    textarea:focus,input:focus,select:focus{outline:none;border-color:var(--petrol);}
+    .btn{display:inline-block;width:100%;padding:15px 20px;border:none;border-radius:14px;background:var(--orange);color:#fff;font-size:17px;font-weight:700;font-family:inherit;cursor:pointer;margin-top:22px;text-align:center;text-decoration:none;}
+    .btn:disabled{opacity:.5;cursor:default;}
+    .btn.ghost{background:transparent;color:var(--petrol);border:1.5px solid var(--petrol);margin-top:12px;}
+    .klang li{list-style:none;padding:12px 0;border-bottom:1px solid rgba(41,85,109,.1);}
+    .klang .zitat{display:block;margin-top:4px;font-style:italic;color:var(--petrol);}
+    .brief{background:var(--weich);border-radius:14px;padding:18px;white-space:pre-wrap;font-size:15.5px;line-height:1.6;}
+    .floskel{padding:10px 0;border-bottom:1px solid rgba(41,85,109,.1);font-size:15.5px;}
+    .floskel .nicht{color:#9a4b2b;text-decoration:line-through;}
+    .floskel .ja{color:var(--dunkelblau);font-weight:600;}
+    .schaerfen li{margin:6px 0 6px 20px;}
+    .text{background:#fff8ef;border-left:4px solid var(--orange);border-radius:0 14px 14px 0;padding:18px;white-space:pre-wrap;font-size:16.5px;line-height:1.65;}
+    .woher li{margin:6px 0 6px 20px;font-size:15px;color:#3d4b55;}
+    .hinweis{background:#fdf1e6;border-radius:12px;padding:12px 14px;font-size:14.5px;margin-top:12px;}
+    .bruecke{background:var(--dunkelblau);color:#fff;border-radius:18px;padding:24px 20px;margin-top:22px;}
+    .bruecke h2{color:#fff;}
+    .bruecke p{opacity:.95;margin-top:8px;}
+    .gemeldet{font-size:14px;color:var(--petrol);font-weight:700;margin-top:8px;min-height:18px;}
+    .loading{text-align:center;padding:34px 0;color:var(--petrol);font-weight:600;}
+    .spinner{width:38px;height:38px;border:4px solid rgba(18,130,140,.2);border-top-color:var(--petrol);border-radius:50%;margin:0 auto 14px;animation:spin 1s linear infinite;}
+    @keyframes spin{to{transform:rotate(360deg);}}
+    .err{background:#f6e2da;color:#9a4b2b;border-radius:12px;padding:14px;margin-top:14px;font-weight:600;text-align:center;}
+    .hide{display:none;}
+    footer{text-align:center;margin-top:28px;font-size:13px;color:rgba(12,28,48,.5);}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Der Stimm-Check</div>
+      <h1>Damit deine KI klingt wie du</h1>
+      <p id="hallo">Sechs Angaben und ein Text, den du selbst geschrieben hast. In rund 15 Minuten hast du deinen Stimm-Brief und einen ersten Text, den du so posten würdest.</p>
+    </header>
+
+    <div class="steps"><div class="dot on" id="d1"></div><div class="dot" id="d2"></div><div class="dot" id="d3"></div></div>
+
+    <!-- SCHRITT 0 — DIE SECHS ANGABEN -->
+    <section id="fragen" class="card">
+      <h2>Erzähl mir von dir</h2>
+      <p class="lead">Schreib, wie du redest. Stichworte reichen, deine Worte sind wichtiger als schöne Sätze. Was du tippst, wird auf deinem Gerät gespeichert, auch wenn du den Browser schliesst. Deinen fertigen Stimm-Prompt findest du hier ebenfalls wieder, solange du dasselbe Gerät und denselben Browser benutzt.</p>
+      <div class="hinweis hide" id="altBox"><b>Dein letzter Stimm-Prompt ist noch da</b> <span id="altDatum"></span><br><button class="btn ghost" id="altBtn" type="button" style="margin-top:10px">Wieder anzeigen</button></div>
+
+      <label for="wer">1 · Wer bist du?</label>
+      <div class="hilfe">Was machst du, seit wann, und was würde eine Freundin über dich sagen?</div>
+      <textarea id="wer"></textarea>
+
+      <label for="kundin">2 · Für wen schreibst du?</label>
+      <div class="hilfe">Möglichst genau: in welcher Lage steckt diese Person, was hat sie schon probiert?</div>
+      <textarea id="kundin"></textarea>
+
+      <label for="kundin_satz">… und was würde diese Person selbst sagen?</label>
+      <div class="hilfe">Ein Satz in ihren Worten, so wie sie es einer Freundin erzählen würde.</div>
+      <input type="text" id="kundin_satz" />
+
+      <label for="angebot">3 · Was bietest du an?</label>
+      <div class="hilfe">Name und was sich danach verändert. Keine Modul-Listen.</div>
+      <textarea id="angebot"></textarea>
+
+      <label for="themen">4 · Worüber sprichst du?</label>
+      <textarea id="themen"></textarea>
+      <label for="nicht_themen">… und worüber ausdrücklich nicht?</label>
+      <textarea id="nicht_themen"></textarea>
+
+      <label for="klang">5 · Wie klingst du?</label>
+      <div class="hilfe">Lange oder kurze Sätze, Emojis, Mundart, was du oft sagst. Darf auch leer bleiben.</div>
+      <textarea id="klang"></textarea>
+
+      <label for="probe">Deine Textprobe — das Wichtigste</label>
+      <div class="hilfe">Kopier hier ein bis drei Texte hinein, die du selbst geschrieben hast: eine Caption, eine Mail, eine Sprachnachricht abgetippt. Daraus lese ich, wie du wirklich klingst.</div>
+      <textarea id="probe" class="gross"></textarea>
+
+      <label for="tabus">6 · Was kommt bei dir nie vor?</label>
+      <div class="hilfe">Wörter, die du nicht magst, und Dinge, die du nie behaupten würdest. Im Network gehören die Regeln deines Partnerunternehmens hierher.</div>
+      <textarea id="tabus"></textarea>
+
+      <button class="btn" id="startBtn">Meinen Stimm-Brief bauen</button>
+      <div id="err0"></div>
+    </section>
+
+    <!-- SCHRITT 1 — DER BRIEF -->
+    <section id="schritt1" class="card hide">
+      <div class="loading" id="load1"><div class="spinner"></div>Ich lese deine Texte …</div>
+      <div id="body1" class="hide">
+        <h2>So klingst du</h2>
+        <p class="lead" id="intro1"></p>
+        <p class="hinweis hide" id="probeHinweis"></p>
+        <ul class="klang" id="klangListe"></ul>
+
+        <h3>Dein Stimm-Prompt</h3>
+        <p class="hilfe">Das ist alles in einem Prompt, was deine KI von dir wissen muss: wer du bist, für wen du schreibst, wie du klingst und welche Sätze nicht nach dir klingen. Kopier ihn und gib ihn deiner KI, egal ob ChatGPT, Claude oder eine andere. Am einfachsten legst du ihn dort einmal fest ab: in ChatGPT unter <b>Einstellungen → Personalisierung → Individuelle Hinweise</b> oder in einem <b>Projekt</b>, in Claude als <b>Projekt-Anweisung</b>. Dann kennt sie dich bei jedem Auftrag.</p>
+        <div class="brief" id="brief"></div>
+        <button class="btn ghost" id="kopierBrief">Prompt kopieren</button>
+        <div class="gemeldet" id="meldungBrief"></div>
+
+        <div class="bruecke">
+          <h2>Das ist die Kurzfassung.</h2>
+          <p>Mit diesem Prompt weiss deine KI, wer du bist und wie du klingst. Meine eigenen KI-Assistenten wissen noch viel mehr über mich: Mein KI-Brief hat über 30 Seiten, mit allen Angeboten und Links, meinen Geschichten und Erlebnissen, den Sätzen meiner Kundinnen und dem, was bei mir nachweislich funktioniert. Dazu wissen sie, was bei welcher Arbeit zu tun ist, ohne dass ich es jedes Mal neu erkläre.</p>
+          <p id="mehrText"></p>
+          <a class="btn hide" id="mehrBtn" href="#" target="_blank" rel="noopener">Platz für die Masterclass sichern</a>
+        </div>
+
+        <h3>Darauf soll deine KI achten</h3>
+        <div id="floskeln"></div>
+
+        <div id="schaerfenBox" class="hide">
+          <h3>Wenn du ihn noch schärfer machen willst</h3>
+          <ul class="schaerfen" id="schaerfen"></ul>
+        </div>
+
+        <h3>Jetzt der erste Text</h3>
+        <label for="format">Was soll es werden?</label>
+        <select id="format">
+          <option value="caption">Eine Caption für Instagram</option>
+          <option value="story">Eine kurze Story (3–5 Slides)</option>
+          <option value="dm">Eine persönliche Nachricht</option>
+        </select>
+        <label for="thema">Worum soll es gehen?</label>
+        <input type="text" id="thema" />
+        <button class="btn" id="textBtn">Ersten Text schreiben</button>
+      </div>
+      <div id="err1"></div>
+    </section>
+
+    <!-- SCHRITT 2 — DER TEXT -->
+    <section id="schritt2" class="card hide">
+      <div class="loading" id="load2"><div class="spinner"></div>Ich schreibe in deinem Ton …</div>
+      <div id="body2" class="hide">
+        <h2>Dein erster Text</h2>
+        <div class="text" id="text"></div>
+        <button class="btn ghost" id="kopierText">Text kopieren</button>
+        <div class="gemeldet" id="meldungText"></div>
+        <p class="hinweis hide" id="luecken"></p>
+
+        <h3>Woher das kommt</h3>
+        <ul class="woher" id="woher"></ul>
+        <button class="btn ghost" id="nochEiner">Noch einen Text mit meinem Brief</button>
+
+        <div class="bruecke">
+          <h2>Das war einer.</h2>
+          <p>Die Arbeit, die du jede Woche wieder machst, geht genauso: einmal festgehalten, und ab dann weiss deine KI, was zu tun ist.</p>
+          <p id="brueckeText">Wie das bei mir aussieht, mit Cockpit, Assistenten und allem, zeig ich dir live und kostenlos.</p>
+          <a class="btn" id="ctaBtn" href="#" target="_blank" rel="noopener">Zeig mir, wie das bei dir läuft</a>
+        </div>
+      </div>
+      <div id="err2"></div>
+    </section>
+
+    <footer>Der Stimm-Check · Mum Life Balance</footer>
+  </div>
+
+  <script>
+    "use strict";
+    const params = new URLSearchParams(location.search);
+    const EMAIL = params.get('e') || '';
+    const NAME = params.get('n') || '';
+    // Brücke ans Ende: während des Launches die Masterclass, danach die Kurs-Seite.
+    // Leer = der Knopf wird ausgeblendet (nie einen Knopf ins Leere).
+    const CTA_URL = 'https://mumlifebalance.ch/ki-masterclass/';
+    const CTA_TAG = 'masterclass';
+    // Vor dem Start der Masterclass: Einladung zum Live-Termin. Danach: Aufzeichnung kommt per Mail
+    // (Automation 83, Mail S2b) — kein Anmeldeknopf mehr für einen vergangenen Termin.
+    const MASTERCLASS_START = new Date('2026-10-08T09:00:00+02:00');
+    const VOR_MASTERCLASS = Date.now() < MASTERCLASS_START.getTime();
+    const TEXT_VORHER = 'Wie das bei mir aussieht, zeige ich dir live in meiner kostenlosen Masterclass am Donnerstag, 8. Oktober, um 9 Uhr: mein Cockpit, meine Assistenten, wie ein Skill entsteht und was meine KI jeden Tag für mich erledigt. Die Aufzeichnung bekommst du am selben Tag, auch wenn du nicht live dabei sein kannst.';
+    const TEXT_NACHHER = 'Wie das bei mir aussieht, habe ich in einer Masterclass gezeigt: mein Cockpit, meine Assistenten, wie ein Skill entsteht und was meine KI jeden Tag für mich erledigt. Die Aufzeichnung schicke ich dir in den nächsten Tagen per Mail, halt also die Augen offen.';
+    const FELDER = ['wer','kundin','kundin_satz','angebot','themen','nicht_themen','klang','probe','tabus'];
+    const SPEICHER = 'stimm-check-entwurf';
+    const ERGEBNIS = 'stimm-check-ergebnis';
+    const $ = (id) => document.getElementById(id);
+    const zeige = (id) => $(id).classList.remove('hide');
+    const weg = (id) => $(id).classList.add('hide');
+    const stand = { brief: null, briefText: '' };
+
+    if (NAME) $('hallo').textContent = 'Schön, dass du da bist, ' + NAME + '! Sechs Angaben und ein Text, den du selbst geschrieben hast, und in rund 15 Minuten hast du deinen Stimm-Brief.';
+
+    // Entwurf auf dem Gerät behalten (nur Bequemlichkeit, darf fehlen)
+    try {
+      const alt = JSON.parse(localStorage.getItem(SPEICHER) || '{}');
+      FELDER.forEach(f => { if (alt[f]) $(f).value = alt[f]; });
+    } catch (e) {}
+    function sichern() {
+      try { const o = {}; FELDER.forEach(f => o[f] = $(f).value); localStorage.setItem(SPEICHER, JSON.stringify(o)); } catch (e) {}
+    }
+    FELDER.forEach(f => $(f).addEventListener('input', sichern));
+
+    function punkte(n) { ['d1','d2','d3'].forEach((d, i) => $(d).classList.toggle('on', i < n)); }
+
+    async function api(body) {
+      for (let versuch = 1; versuch <= 2; versuch++) {
+        const res = await fetch('/api/generate', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+        if (res.ok) return res.json();
+        if (res.status === 503 || res.status === 502) { await new Promise(r => setTimeout(r, 1500)); continue; }
+        throw new Error('Fehler ' + res.status);
+      }
+      throw new Error('Fehler');
+    }
+    async function tag(t) {
+      try { if (!EMAIL) return; await fetch('/api/tag', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: EMAIL, tag: t }) }); } catch (e) {}
+    }
+    function fehler(ziel, text) {
+      const d = document.createElement('div'); d.className = 'err'; d.textContent = text;
+      $(ziel).innerHTML = ''; $(ziel).appendChild(d);
+    }
+    async function kopieren(text, meldung) {
+      try { await navigator.clipboard.writeText(text); $(meldung).textContent = '✓ Kopiert'; }
+      catch (e) { $(meldung).textContent = 'Kopieren ging nicht, markier den Text von Hand.'; }
+      setTimeout(() => { $(meldung).textContent = ''; }, 4000);
+    }
+
+    const TITEL = [['wer','1 · Wer ich bin'],['kundin','2 · Für wen ich schreibe'],['angebot','3 · Was ich anbiete'],
+                   ['themen','4 · Meine Themen'],['klang','5 · Wie ich klinge'],['tabus','6 · Meine Tabus']];
+
+    // Der kopierbare Prompt: Rolle + die sechs Teile + Klang-Belege + Floskeln + Arbeitsregeln
+    function promptBauen(brief, klang, floskeln) {
+      const teile = [
+        'Du schreibst ab jetzt Texte für mich, Captions, Storys, Mails und Nachrichten, und zwar so, dass meine Leute denken, ich hätte sie selbst geschrieben. Hier steht alles, was du dafür über mich wissen musst. Halte dich bei jedem Auftrag daran.',
+      ];
+      TITEL.forEach(([k, t]) => {
+        let block = '## ' + t.replace(/^\d+ · /, '') + '\n' + (brief[k] || '—');
+        if (k === 'klang' && klang.length) {
+          block += '\n\nSo schreibe ich, und genau so sollst du für mich schreiben (die Beispiele sind aus meinen eigenen Texten):\n' +
+            klang.map(x => '- ' + (x.beobachtung || '') + (x.zitat ? ' Beispiel: „' + x.zitat + '“' : '')).join('\n');
+        }
+        teile.push(block);
+      });
+      if (floskeln.length) {
+        teile.push('## Diese Sätze klingen nicht nach mir\n' +
+          floskeln.map(f => '- Nie: „' + (f.so_nicht || '') + '“\n  Eher so: „' + (f.so_sie || '') + '“').join('\n'));
+      }
+      teile.push('## So arbeitest du für mich\n' +
+        '- Schreib in meiner Sprache und mit meiner Satzlänge, meinen Wörtern, meinem Anfang und meinem Schluss, so wie oben beschrieben.\n' +
+        '- Die erste Zeile muss allein funktionieren: ein konkreter Moment oder eine Frage, die meine Zielgruppe wirklich denkt. Keine Begrüssung am Anfang.\n' +
+        '- Erfinde keine Erlebnisse, Personen, Gespräche, Zitate oder Zahlen. Wo ein eigenes Erlebnis von mir hingehört, schreib [hier dein Moment], dann setze ich es ein.\n' +
+        '- Fehlt dir für einen Auftrag etwas Wichtiges, frag mich zuerst, bevor du rätst.\n' +
+        '- Bevor du mir einen Text gibst, prüf ihn gegen meine Tabus und die Sätze, die nicht nach mir klingen.\n\n' +
+        'Wenn du das gelesen hast, sag mir in einem Satz, wie du mich verstanden hast, und warte dann auf meinen ersten Auftrag.');
+      return teile.join('\n\n');
+    }
+
+    // ---- Schritt 0 → 1 ----
+    $('startBtn').onclick = async () => {
+      const angaben = {}; FELDER.forEach(f => angaben[f] = $(f).value.trim());
+      if (!angaben.wer || !angaben.kundin) { fehler('err0', 'Füll mindestens 1 und 2 aus, dann kann ich loslegen.'); return; }
+      if (angaben.probe.length < 150) { fehler('err0', 'Deine Textprobe ist noch sehr kurz. Ein, zwei ganze Captions machen den grössten Unterschied.'); return; }
+      $('err0').innerHTML = '';
+      weg('fragen'); zeige('schritt1'); punkte(2); window.scrollTo(0, 0);
+      try {
+        const d = await api({ step: 1, angaben });
+        try { localStorage.setItem(ERGEBNIS, JSON.stringify({ d, zeit: new Date().toISOString() })); } catch (e) {}
+        ergebnisZeigen(d);
+        tag('abgeschlossen');
+      } catch (e) { weg('load1'); fehler('err1', 'Hat nicht geklappt. Lad die Seite neu, deine Antworten sind noch da.'); }
+    };
+    function ergebnisZeigen(d) {
+        stand.brief = d.brief || {};
+        $('intro1').textContent = d.intro || '';
+        if (d.probe_hinweis) { $('probeHinweis').textContent = d.probe_hinweis; zeige('probeHinweis'); }
+        const kl = $('klangListe'); kl.innerHTML = '';
+        (d.klang || []).forEach(k => {
+          const li = document.createElement('li'); li.textContent = k.beobachtung || '';
+          if (k.zitat) { const z = document.createElement('span'); z.className = 'zitat'; z.textContent = '„' + k.zitat + '“'; li.appendChild(z); }
+          kl.appendChild(li);
+        });
+        stand.briefText = promptBauen(stand.brief, d.klang || [], d.floskeln || []);
+        $('mehrText').textContent = VOR_MASTERCLASS ? TEXT_VORHER : TEXT_NACHHER;
+        if (VOR_MASTERCLASS && CTA_URL) { $('mehrBtn').href = CTA_URL; $('mehrBtn').onclick = () => tag(CTA_TAG); zeige('mehrBtn'); }
+        $('brief').textContent = stand.briefText;
+        const fl = $('floskeln'); fl.innerHTML = '';
+        (d.floskeln || []).forEach(f => {
+          const div = document.createElement('div'); div.className = 'floskel';
+          const a = document.createElement('div'); a.className = 'nicht'; a.textContent = f.so_nicht || '';
+          const b = document.createElement('div'); b.className = 'ja'; b.textContent = '→ ' + (f.so_sie || '');
+          div.append(a, b); fl.appendChild(div);
+        });
+        const sc = $('schaerfen'); sc.innerHTML = '';
+        (d.nachschaerfen || []).forEach(q => { const li = document.createElement('li'); li.textContent = q; sc.appendChild(li); });
+        if ((d.nachschaerfen || []).length) zeige('schaerfenBox');
+        weg('load1'); zeige('body1');
+    }
+    // Gespeichertes Ergebnis wieder anzeigen — kostet keinen neuen Aufruf
+    try {
+      const alt = JSON.parse(localStorage.getItem(ERGEBNIS) || 'null');
+      if (alt && alt.d && alt.d.brief) {
+        $('altDatum').textContent = '(vom ' + new Date(alt.zeit).toLocaleDateString('de-CH') + ')';
+        zeige('altBox');
+        $('altBtn').onclick = () => { weg('fragen'); zeige('schritt1'); punkte(2); window.scrollTo(0, 0); ergebnisZeigen(alt.d); };
+      }
+    } catch (e) {}
+    $('kopierBrief').onclick = () => kopieren(stand.briefText, 'meldungBrief');
+
+    // ---- Schritt 1 → 2 ----
+    async function textSchreiben() {
+      const thema = $('thema').value.trim();
+      if (!thema) { $('thema').focus(); return; }
+      weg('schritt1'); zeige('schritt2'); weg('body2'); zeige('load2'); punkte(3); window.scrollTo(0, 0);
+      try {
+        const d = await api({ step: 2, brief: stand.brief, auftrag: { format: $('format').value, thema } });
+        $('text').textContent = d.text || '';
+        const wo = $('woher'); wo.innerHTML = '';
+        (d.woher || []).forEach(x => { const li = document.createElement('li'); li.textContent = x; wo.appendChild(li); });
+        if ((d.luecken || []).length) { $('luecken').textContent = '✏️ Hier fehlt noch dein eigener Moment: ' + d.luecken.join(' · '); zeige('luecken'); }
+        else weg('luecken');
+        if (CTA_URL && VOR_MASTERCLASS) { $('ctaBtn').href = CTA_URL; $('ctaBtn').onclick = () => tag(CTA_TAG); }
+        else {
+          weg('ctaBtn');
+          $('brueckeText').textContent = 'Wie das bei mir aussieht, mit Cockpit, Assistenten und allem, siehst du in der Aufzeichnung meiner Masterclass. Die kommt in den nächsten Tagen per Mail.';
+        }
+        weg('load2'); zeige('body2');
+      } catch (e) { weg('load2'); fehler('err2', 'Hat nicht geklappt. Tipp nochmal auf „Noch einen Text“.'); zeige('body2'); }
+    }
+    $('textBtn').onclick = textSchreiben;
+    $('kopierText').onclick = () => kopieren($('text').textContent, 'meldungText');
+    $('nochEiner').onclick = () => { weg('schritt2'); zeige('schritt1'); punkte(2); $('thema').value = ''; $('thema').focus(); window.scrollTo(0, document.body.scrollHeight); };
+  </script>
+</body>
+</html>

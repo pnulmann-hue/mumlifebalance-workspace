@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Deine Produktidee · Patricia Ulmann</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="kopf">
+  <p class="kopf__marke">Produkt-Ideen-Finder von Patricia Ulmann</p>
+  <h1 class="kopf__titel">Deine Produktidee</h1>
+  <p class="kopf__satz">
+    Sag, worüber du mehr weisst als andere — du bekommst drei Ideen für dein eigenes
+    Produkt und zu jeder das komplette Inhaltsverzeichnis.
+  </p>
+
+  <ol class="schritte" id="schritte">
+    <li class="schritt is-aktiv" data-schritt="1"><span>1.</span> Dein Thema</li>
+    <li class="schritt" data-schritt="2"><span>2.</span> Deine Ideen</li>
+    <li class="schritt" data-schritt="3"><span>3.</span> Inhaltsverzeichnis</li>
+  </ol>
+</header>
+
+<main class="buehne">
+
+  <div id="fehler" class="fehler-platz" aria-live="assertive"></div>
+
+  <!-- ===== Schritt 1 ===== -->
+  <section class="tafel" id="tafel-eingabe">
+    <p class="tafel__marke">Dein Thema</p>
+
+    <label class="feld">
+      <span class="feld__name">Dein Wissen, deine Erfahrung, dein Thema</span>
+      <textarea id="thema" rows="4" autocomplete="off"
+        placeholder="z. B. „Ich helfe Mamas dabei, abends runterzukommen, ohne sich abends noch eine Stunde vor den Fernseher zu setzen“ oder „Ich kenn mich mit Meal Prep für grosse Familien aus“ …"></textarea>
+    </label>
+
+    <label class="feld">
+      <span class="feld__name">
+        In welchem Network bist du?
+        <em>optional — dann bau ich dein Produkt als Baustein mit ein</em>
+      </span>
+      <input id="network" type="text" autocomplete="off"
+        placeholder="z. B. „doTERRA, vor allem die ätherischen Öle“ oder „Ringana, Hautpflege“" />
+    </label>
+
+    <label class="feld">
+      <span class="feld__name">
+        Die drei grössten Hürden deiner Leute
+        <em>optional — macht die Ideen schärfer</em>
+      </span>
+      <textarea id="huerden" rows="3" autocomplete="off"
+        placeholder="z. B. „keine Zeit“, „weiss nicht, wo anfangen“, „hat schon dreimal aufgehört“ — einfach untereinander schreiben, falls du sie kennst"></textarea>
+    </label>
+
+    <p class="hinweis-tasten">↵ Enter schickt ab · Shift + Enter macht eine neue Zeile</p>
+
+    <button class="knopf knopf--voll" id="los">Drei Ideen zeigen 💡</button>
+  </section>
+
+  <!-- ===== Warten ===== -->
+  <section class="tafel tafel--warten" id="tafel-warten" hidden>
+    <div class="punkte"><span></span><span></span><span></span></div>
+    <p class="warten__text" id="warten-text">Ich schau mir dein Thema an …</p>
+  </section>
+
+  <!-- ===== Schritt 2 ===== -->
+  <section id="tafel-ideen" hidden>
+    <p class="spiegel" id="spiegel"></p>
+    <h2 class="ueberschrift">Welche fühlt sich am stärksten an?</h2>
+    <div class="karten" id="karten"></div>
+    <button class="knopf knopf--leise" id="zurueck-thema">← Neues Thema eingeben</button>
+  </section>
+
+  <!-- ===== Schritt 3 ===== -->
+  <section id="tafel-gliederung" hidden>
+    <p class="tafel__marke">Dein Inhaltsverzeichnis</p>
+    <h2 class="ueberschrift" id="gliederung-titel"></h2>
+    <p class="versprechen" id="gliederung-versprechen"></p>
+    <p class="ergebnis" id="gliederung-ergebnis"></p>
+    <div id="module"></div>
+    <p class="abschluss" id="gliederung-abschluss"></p>
+
+    <div class="knopf-reihe">
+      <button class="knopf" id="kopieren">Inhaltsverzeichnis kopieren</button>
+      <button class="knopf knopf--leise" id="zurueck-ideen">← Zurück zu den Ideen</button>
+    </div>
+
+    <!-- Die Karte zum 39er-Kurs. Steht bewusst erst hier: wer bis zum
+         Inhaltsverzeichnis gekommen ist, hat einen Plan und keine Frage mehr. -->
+    <aside class="angebot">
+      <p class="angebot__marke">Und jetzt?</p>
+      <h3 class="angebot__titel">Vom Network-Wissen zum eigenen Produkt</h3>
+      <p class="angebot__text">
+        Du hast jetzt den Bauplan. Was noch fehlt, ist das Drumherum: wie du die Module
+        tatsächlich aufnimmst, wo der Kurs liegt, damit Leute reinkommen, und wie du ihn
+        verkaufst, ohne jemandem hinterherzutelefonieren. Genau das zeig ich dir Schritt
+        für Schritt.
+      </p>
+      <a class="knopf knopf--voll" id="angebot-link" href="#" target="_blank" rel="noopener">
+        Kurs ansehen · 39 CHF →
+      </a>
+      <p class="angebot__ps">
+        Und wenn du magst, schick mir deine Idee als Antwort auf meine Story oder per
+        Nachricht — ich sag dir ehrlich, was ich davon halte.
+      </p>
+    </aside>
+  </section>
+
+</main>
+
+<footer class="fuss">
+  Gebaut mit Claude · alle Ideen sind Vorschläge, keine Zusage — was daraus wird,
+  entscheidest du.
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

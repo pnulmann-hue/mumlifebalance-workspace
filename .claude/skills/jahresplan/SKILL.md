@@ -1,7 +1,7 @@
 ---
-description: Master-Jahresplanung — alle Produkte/Launches/Aktivitäten in einer Sicht. Liest und schreibt context/jahresplan-2026.md, syncs mit Notion-Jahresplanung-DB. Wird von /montag, /reels, /karussell gelesen für Wochen-Kontext.
+name: jahresplan
+description: "Master-Jahresplanung — alle Produkte/Launches/Aktivitäten in einer Sicht. Liest und schreibt context/jahresplan-2026.md, syncs mit Notion-Jahresplanung-DB. Wird von `/content woche`, /reels, /karussell gelesen für Wochen-Kontext."
 ---
-
 # /jahresplan — Master-Jahresplanung für Mum Life Balance
 
 **Skill-Status:** SPEC (zu bauen ab nächster Session)
@@ -24,7 +24,7 @@ Der `/jahresplan`-Skill ist die **EINE Wahrheit** für „Wann passiert was im J
         ↓
 context/jahresplan-2026.md  ←→  Notion-Jahresplanung-DB
         ↓
-/montag · /reels · /karussell lesen Master + active-funnels.json
+`/content woche` · /reels · /karussell lesen Master + active-funnels.json
         ↓
 Content-Skills wissen Tagesgenau, wo wir stehen
 ```
@@ -33,11 +33,36 @@ Content-Skills wissen Tagesgenau, wo wir stehen
 
 ## 5 Modi
 
+### 🛑 Vor jedem Modus: den Workspace-Abgleich lesen
+
+Patricia am 24.09.2026: *„bei der nächsten planung müssen wir das sicher
+beachten"*.
+
+```bash
+python scripts/cockpit/planung-abgleichen.py --zeigen
+```
+
+Der Jahresplan kam einmalig aus Notion und sagt, was **geplant** war — nicht,
+was daraus geworden ist. Der Abgleich hängt an jeden Eintrag einen Beleg aus
+dem Workspace und schreibt die Befunde nach `daten/planung-abgleich`; im
+Cockpit stehen sie als Fähnchen an jeder Zeile.
+
+🚨 **Erster Lauf: 22 von 54 Einträgen ohne Spur.** Wer ohne diesen Schritt
+plant, baut auf einem Stand auf, der Monate alt sein kann.
+
+🚨 **„Keine Spur" ist eine Frage, kein Urteil** — ein Leadmagnet kann in
+ManyChat leben, ohne je eine Datei zu bekommen. Vor dem Umplanen nachfragen,
+nie stillschweigend nochmal ansetzen.
+
+🚨 **`daten/jahresplan` und `daten/ziele` gehören Patricia.** Der Abgleich
+schreibt nie hinein und setzt keinen Status.
+
 ### Modus 1 — `/jahresplan status`
 
 **Zweck:** „Wo stehe ich heute?"
 
 Liest:
+- **`daten/planung-abgleich`** — was belegt ist und was keine Spur hat
 - `context/jahresplan-2026.md` für Wochen-Kontext
 - `context/active-funnels.json` für aktuelle Phasen
 - Datums-Logik aus aktuellem System-Datum
@@ -166,7 +191,7 @@ Schreibt:
 
 ## Wie andere Skills den Jahresplan nutzen
 
-### `/montag` (Wochen-Content)
+### `/content woche` (Wochen-Content)
 
 Liest beim Start:
 1. `context/jahresplan-2026.md` für Wochen-Kontext

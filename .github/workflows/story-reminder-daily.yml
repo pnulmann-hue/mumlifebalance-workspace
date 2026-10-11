@@ -2,13 +2,13 @@ name: Story-Reminder-Daily
 
 # Mo-So 04:30 UTC = 06:30 Schweiz Sommer / 05:30 Schweiz Winter
 # (Im Winter wenn du exakt 06:30 willst: cron auf '30 5 * * *' anpassen)
+# 🛑 DEAKTIVIERT 2026-09-14 auf Patricias Wunsch.
+# Die taeglichen Story-Vorschlaege kommen nicht mehr per Telegram. Storys werden
+# freitags mitgeplant und liegen in der Wochen-Vorschau und im Bild-Editor.
+# Kein Cron, kein Handstart.
+# Wer sie je wieder braucht: `workflow_dispatch:` unter `on:` wieder einsetzen.
 on:
-  # PAUSIERT 2026-09-07 (Patricia plant Content jetzt manuell in Notion). Cron aus — nur noch manuell.
-  # Wieder aktivieren: die 2 folgenden Zeilen einkommentieren.
-  # schedule:
-  #   - cron: '30 4 * * *'
-  workflow_dispatch:  # Manuell triggerbar
-
+  # kein Ausloeser — bewusst leer
 permissions:
   contents: write
 

@@ -1,3 +1,7 @@
+---
+name: freebies-sync
+description: "Freebies und 0-Euro-Produkte aus context/freebies/ in die zentrale Wissensdatei patricia-freebies.md synchronisieren."
+---
 # /freebies-sync — Patricias Freebies analysieren
 
 Patricia hat 0€-Produkte, Workbooks, Minikurse und Challenges, die via ManyChat-Keywords ausgeliefert werden. Damit der Content-Assistent in Reels/Karussells/Captions sinnvoll auf Freebies Bezug nehmen kann (nicht nur den Titel erwähnen, sondern Inhalte referenzieren), brauchen wir Zugriff + Analyse.

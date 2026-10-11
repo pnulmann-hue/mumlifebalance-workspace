@@ -26,6 +26,8 @@ from telegram.ext import (
     Application,
     CommandHandler,
     ContextTypes,
+    MessageHandler,
+    filters,
 )
 
 import config
@@ -35,6 +37,7 @@ import briefing_builder
 import news_fetcher
 import ads_fetcher
 import posting_checker
+import rueckkanal
 
 logging.basicConfig(
     level=logging.INFO,
@@ -378,6 +381,85 @@ def _extract_tagesfokus(volltext: str) -> str:
 
 
 # ========================================
+# RUECKKANAL — sie schreibt oder spricht, der Bot antwortet
+# ========================================
+async def _beantworten(update: Update, nachricht: str, aus_sprache: bool = False):
+    """Ein Weg fuer Text und Sprache — was danach passiert, ist dasselbe."""
+    if aus_sprache:
+        await update.message.reply_text("🎤 Verstanden: „%s“" % nachricht[:280])
+
+    gedeutet = rueckkanal.absicht(nachricht)
+    art = gedeutet.get("art")
+
+    if art == "frage":
+        await update.message.reply_chat_action("typing")
+        try:
+            tasks = notion_reader.get_offene_tasks_heute()
+        except Exception as e:
+            logger.warning("Notion-Tasks nicht erreichbar: %s", e)
+            tasks = []
+        text = rueckkanal.antwort_auf_frage(
+            nachricht, tasks, rueckkanal.cockpit_stand())
+        await update.message.reply_text(text, parse_mode="Markdown")
+        return
+
+    if art == "auftrag":
+        ergebnis = rueckkanal.auftrag_ablegen(nachricht, gedeutet)
+        if ergebnis.get("ok"):
+            # 🚨 NIE „erledigt" melden. Der Bot fuehrt nichts aus — er nimmt
+            # entgegen. Eine Bestaetigung, die nach Erledigung klingt, ist
+            # genau der Fehler, an dem am 16.09. die Freigabe gescheitert ist.
+            await update.message.reply_text(
+                "📥 Aufgenommen: %s\n\n"
+                "Ich arbeite es heute Abend um 19:30 ein und melde mich, "
+                "wenn es zur Freigabe steht." % (gedeutet.get("thema") or "dein Auftrag"))
+        else:
+            await update.message.reply_text(
+                "Ich konnte es nicht ablegen (%s). Sag es mir nachher nochmal."
+                % ergebnis.get("fehler", "unbekannt"))
+        return
+
+    await update.message.reply_text(
+        "Das habe ich nicht sicher verstanden. Meinst du\n"
+        "• eine *Frage* („was steht heute an?“) oder\n"
+        "• einen *Auftrag* („bei Mittwoch die Caption neu“)?",
+        parse_mode="Markdown")
+
+
+async def nachricht_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not _is_authorized(update):
+        return
+    text = (update.message.text or "").strip()
+    if not text:
+        return
+    await _beantworten(update, text)
+
+
+async def nachricht_sprache(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not _is_authorized(update):
+        return
+    await update.message.reply_chat_action("typing")
+    try:
+        ton = update.message.voice or update.message.audio
+        datei = await context.bot.get_file(ton.file_id)
+        roh = bytes(await datei.download_as_bytearray())
+    except Exception as e:
+        logger.exception("Sprachnotiz nicht ladbar")
+        await update.message.reply_text("Die Sprachnotiz kam nicht an (%s)." % e)
+        return
+
+    ergebnis = await rueckkanal.sprachnotiz_zu_text(roh)
+    if not ergebnis.get("ok"):
+        await update.message.reply_text(ergebnis.get("hinweis", "Hat nicht geklappt."))
+        return
+    text = ergebnis.get("text", "").strip()
+    if not text:
+        await update.message.reply_text("Ich habe nichts verstanden. Nochmal?")
+        return
+    await _beantworten(update, text, aus_sprache=True)
+
+
+# ========================================
 # MAIN
 # ========================================
 async def main():
@@ -388,6 +470,13 @@ async def main():
     app.add_handler(CommandHandler("status", cmd_status))
     app.add_handler(CommandHandler("posting_ja", cmd_posting_ja))
     app.add_handler(CommandHandler("posting_nein", cmd_posting_nein))
+
+    # 🚨 Der Rueckkanal kommt ZULETZT und schliesst Befehle aus. Sonst
+    # verschluckt er `/cockpit` und die festen Befehle antworten nie mehr.
+    app.add_handler(MessageHandler(
+        filters.TEXT & ~filters.COMMAND, nachricht_text))
+    app.add_handler(MessageHandler(
+        filters.VOICE | filters.AUDIO, nachricht_sprache))
 
     # Scheduler
     tz = pytz.timezone(config.TIMEZONE)

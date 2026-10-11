@@ -1,8 +1,39 @@
+---
+name: reels
+description: "Reel-Videos planen, bauen und fixen — sekundengenaue Briefings, Hooks nach Framework, Dreh-Anweisungen."
+---
 # /reels — Reel-Video-Assistent für Patricia
 
 > **🚨 ABSOLUTE PFLICHT — Read-First (Schritt 0, vor allem anderen):**
 >
 > **Lies ZUERST komplett:** `context/patricia-vollprofil.md` — Patricias Stimme, Werte (Freiheit + Selbstverantwortung + Genuss + Vorbild für Kinder), Wurzel-Geschichte (Mama-Alkohol-Wurzel, Schwester †2019, Convention-Wendepunkt Mai 2025, Theta-Healing), 60+ Hooks, Brand-Voice-Verbote, Mentee-Profil, Repel-Markt, 4-Säulen-doTERRA-Methodik, INTERN-Schutz. **Single Source of Truth.** Ohne diese Lese: NICHT generieren. Output muss in Patricias echter Stimme klingen — generische Coach-Sprache ist verboten.
+
+---
+
+## 🎯 PFLICHT: Hooks entstehen nach dem Hook-Skill (seit 2026-09-13)
+
+> **Jeder Hook in diesem Skill wird nach `.claude/skills/hooks/SKILL.md` gebaut.**
+> Lies die Datei, bevor du den ersten Hook schreibst. Sie enthält den Prozess:
+> Briefing-Check → Bewusstseinsstufe → Angle → Familie → Zuschnitt.
+> Am Ende steht eine Kurz-Checkliste — das ist der schnelle Weg.
+
+**Die zwei Dinge, die hier am meisten ändern:**
+
+1. **Bewusstseinsstufe zuerst klären.** Ein Reichweiten-Reel spricht Stufe 1–2 an:
+   der Hook stellt **ihre Frage** und gibt nicht meine Antwort. Ein Lead-Reel mit
+   Keyword-CTA liegt bei 2–3, Story und Launch bei 4–5. Der gleiche Hook wirkt je
+   nach Stufe völlig anders.
+2. **Angle ist nicht Familie.** Die Familie sagt, wie ein Hook *klingt* (Bekenntnis,
+   Zeitanker, Hot Take). Der Angle sagt, aus welcher *Richtung* du schaust (Schmerz,
+   Ergebnis, Beweis, Konträr, Identität). Zehn Hooks können sieben Familien haben
+   und trotzdem alle dasselbe sagen. **Bei mehreren Hooks mindestens 3 Angles mischen.**
+
+Hinter jedem Hook in Klammern **(Angle · Familie)** ausweisen.
+
+`.claude/skills/hooks/SKILL.md` ist die **eine** Quelle für Hooks — Kundensprache,
+Stufen, Angles, PIE, alle Formeln, Verbote und der letzte Check.
+`context/hook-formel-testlog.md` bleibt daneben bestehen, dort werden Testergebnisse
+eingetragen. Bei Widerspruch gewinnt die Blackliste, dann der Hook-Skill.
 
 ---
 
@@ -39,10 +70,10 @@ Lies in dieser Reihenfolge:
 3. **`context/patricia-expertise.md` — PFLICHT! Patricias Kurs-Inhalte + Brand-Voice-Muster.**
 4. **`context/patricia-freebies.md` — PFLICHT! Alle Freebies mit Inhalten + Cross-Referenz zu Themen → Keywords.**
 5. `context/brand-voice.md` — Ton & Schreibregeln
-6. `context/hook-framework.md` — Hook-Kategorien + Templates (Pflicht-Grundlage für JEDEN Hook)
+6. `.claude/skills/hooks/SKILL.md` — der Hook-Master (Kundensprache, Stufen, Angles, PIE, Formeln, Verbote, letzter Check)
 6a. ⭐ **`context/content-formel-5-typen.md` — PFLICHT (seit 2026-06-01)**: 5-Typen-Content-Formel aus der Mentorin-Profil-Analyse. Das Reel ist meist der **Typ „Reel-CTA"** (Reichweite über den Algorithmus) oder „Lifestyle/Freiheit". **Besonders für doTERRA gilt:** der Account ist in der Reels-only-Phase (unter ~300-500 Followern) — Reels sind dort das Haupt-Format, weil Karussells bei kleiner Basis floppen. 4 Leitplanken: keine Stakkato (Patricia-Voice), Reel-Hook = Spannung/Schmerz nicht Aussage, EIN bestehendes ManyChat-Keyword als CTA, keine erfundenen Zahlen.
-6b. ⭐ **`context/reichweiten-formel-mama-identity.md` — PFLICHT (seit 2026-06-01)**: Reichweiten-Motor. Reels sind das Haupt-Format für Reichweite. Die 3 Reichweiten-Typen (Gesellschaftsspiegel · Mama-Alltag-Moment · Ehrlichkeits-Story) laufen mit **Share-CTA** („Teile das mit einer Mama…"), NICHT mit Produkt-Keyword — Teilen ist der stärkste Reichweiten-Hebel. Keyword-CTA gehört nur auf den wöchentlichen Lead-Post. „Stell dir vor" gesperrt → szenen-malen / „Was wäre wenn".
-6c. ⭐ **`context/hook-formeln-katalog.md` — PFLICHT (seit 2026-06-26)**: 22 benannte Hook-Formeln + Patricias A/B/C-Test-Ergebnisse. **Reichweiten-Hierarchie: candid Video > emotionales Thema > Hook.** Bekenntnis/Hot Take = Gewinner, „lies die Caption"-Cliffhanger meiden, kurz + candid + Share-CTA. Themen aus **`context/mama-schmerz-themen-pool.md`** (grüne Liste = reichweiten-stark; business-intern nur Stories/Mails). Aktueller Test-Stand: **`context/hook-formel-testlog.md`**.
+6b. ⭐ **`context/reichweiten-formel-mama-identity.md` — PFLICHT (seit 2026-06-01)**: Reichweiten-Motor. Reels sind das Haupt-Format für Reichweite. Die 3 Reichweiten-Typen (Gesellschaftsspiegel · Mama-Alltag-Moment · Ehrlichkeits-Story) laufen mit **Share-CTA** („Teile das mit einer Mama…"), NICHT mit Produkt-Keyword — Teilen ist der stärkste Reichweiten-Hebel. Keyword-CTA gehört auf die drei wöchentlichen Lead-Posts (3+2-Regel seit 15.09.2026), nie auf die zwei Reichweiten-Posts. „Stell dir vor" gesperrt → szenen-malen / „Was wäre wenn".
+6c. ⭐ **`.claude/skills/hooks/SKILL.md` — dort stehen alle Formeln mit Testdaten
 7. `context/caption-formeln.md` — Caption-Strukturen
 8. `context/manychat-keywords.md` — Keywords pro Pillar
 9. `context/notion-content-db.md` — Notion-DB-Mapping
@@ -135,6 +166,102 @@ Patricia will an einem Tag 10-20 Clips auf Vorrat drehen, aus denen dann über W
 4. **Gesamtaufwand** schätzen: z.B. „ca. 2-2.5 Stunden für komplette Batch"
 5. **Packliste**: Handy + Stativ, 2 Outfits in Brand-Farben, Requisiten (Kaffeetasse, Laptop, Buch, Öl-Flasche für doTERRA), Wasser, Notizzettel
 6. **Nach dem Dreh**: Hinweis — Clips direkt in Canva hochladen in Ordner `Reel-Rohmaterial-YYYY-KW##`, damit `/reels` sie bei nächsten Briefings vorschlägt
+
+### 7. Fremdes Reel nachbauen (seit 2026-09-15)
+
+Patricia schickt einen Link und sagt **„bau mir das nach"**. War bis 15.09. ein
+eigener Skill `/nachbau`, ist hier aufgegangen — das Briefing war ohnehin dasselbe.
+
+🚨 **„Bau mir das nach" heisst bauen.** Direkt zum Briefing. Keine Diagnose vorweg,
+keine Einordnung hinterher, keine ungefragten Befunde. Eine Zerlegung gibt es nur,
+wenn sie danach fragt („warum laeuft das", „analysier das").
+
+**Dein Ablauf:**
+
+1. **Zerlegen lassen:**
+   ```bash
+   python scripts/nachbau/zerlegen.py <URL oder Datei> --slug <name>
+   ```
+   Laeuft lokal, kostet nichts. Instagram braucht `scripts/nachbau/cookies.txt`
+   (liegt). YouTube und TikTok laden direkt. Doku: `scripts/nachbau/README.md`.
+
+2. **🛑 Standbilder in `nachbau/<slug>/bilder/` wirklich anschauen.** Mit dem
+   Read-Tool oeffnen. Nie aus Dateinamen oder Transkript schliessen, wie es aussieht.
+
+3. **Mechanismus erkennen — im Kopf, nicht im Output:** Hook-Familie · Angle ·
+   Bewusstseinsstufe · visueller Einstieg · wo sitzt die Pointe · warum reagiert
+   jemand · wohin fuehrt es.
+   **Und die Frage, die entscheidet: verkauft das oder unterhaelt das nur?**
+   Ein Reel mit 80 Kommentaren unter „Team A oder Team B?" hat null Kasse.
+   Patricias Ziel sind Verkaeufe. Unterhaltungs-Mechanik nicht als Vorbild anbieten.
+
+4. **Briefing** wie in Modus 1 — Hook, Sprechtext, Shotlist, Titelbild, Caption,
+   CTA aus `active-funnels.json`. **Plus: Herkunft vermerken** (URL des Vorbilds).
+
+**🔀 Vorher klaeren: Bauweise oder Look?** (Patricias Frage, 15.09.)
+
+Bei einem Nachbau **muss gefragt werden**, wie weit er geht — sonst laeuft der
+Kelsie-Standard drueber und es ist gar kein Nachbau mehr:
+
+| | **A · Nur die Bauweise** | **B · Auch der Look** |
+|---|---|---|
+| Was uebernommen wird | Hook-Art, Tempo, Spannungsbogen, Kommentar-Ausloeser | zusaetzlich Textstil, Schnittrhythmus, Farben, Bewegung |
+| Gestaltung | **Patricias Haus-Stil** (Kelsie, Untertitel, Auto-Zoom) | **Der Stil des Vorbilds**, in Remotion nachgebaut |
+| Wann sinnvoll | Standardfall — Feed bleibt aus einem Guss | wenn der Look selbst das ist, was zieht |
+| Frage an Patricia | „Soll es aussehen wie deins oder wie das Vorbild?" | |
+
+**Was in BEIDEN Faellen gilt — nicht verhandelbar:**
+
+1. **Der Schnitt bleibt ihrer.** Transkript, „letzter vollstaendiger Take gewinnt",
+   Hook wortwoertlich, 250 ms Luft vor Satzanfaengen, nie mitten ins Wort.
+   Das ist unabhaengig vom Aussehen — jedes Video muss geschnitten werden.
+   Laeuft ueber `/videoschnitt`.
+2. **Die Marken-Leitplanken bleiben ihre.** Petrol/Dunkelblau/Creme/Orange, kein
+   Gelb. 1080x1920 mit toten Zonen oben und unten. Gesicht und Hauptmotiv frei.
+   Keine erfundenen Zahlen. Keine KI-Szenen.
+   → Auch bei B wird **nicht** die Farbwelt des Vorbilds uebernommen. Sonst baust
+   du fremde Marke.
+3. **Der Text ist immer ihrer.** Szene, Zahlen, Stimme aus ihrem Leben.
+
+Also: **Look kann wechseln. Schnitt und Marke nie.**
+
+**🎬 Die Methode fuer Animationen** (aus Jenya Korks Reel vom 15.09.2026, woertlich):
+
+> „Fuer die Animationen habe ich ein paar Videos von [der Referenz] runtergeladen,
+> **in einen Ordner gelegt, damit Claude sie sich anschauen kann.**
+> Bevor ich die Animationen rendern lasse, **frage ich ihn immer, mir eine Vorschau
+> zu erstellen.**
+> Beim ersten Versuch hat er den Stil ueberhaupt nicht verstanden. Was mir geholfen
+> hat: **ich habe ihm konkrete Sekunden vorgegeben.** Zum Beispiel: Sekunde 2 bis 5,
+> hier springt der Text rein. Oder: Sekunde 10 kommt eine Animation, die ich
+> nachbauen will."
+
+Drei Schritte, alle im Werkzeug abgebildet:
+
+1. **Referenz in den Ordner legen** → `zerlegen.py` macht das und zieht Standbilder
+2. **Konkrete Sekunden benennen** → dafuer gibt es **`--raster`**:
+   ```bash
+   python scripts/nachbau/zerlegen.py <url> --slug name --raster 1
+   ```
+   Legt alle `n` Sekunden ein Standbild in `raster/`, benannt nach der Sekunde
+   (`s008.00.jpg`). **Ohne das geht es bei einem Reel in einer Einstellung nicht** —
+   die Szenenerkennung findet dort nur ein einziges Bild, obwohl die ganze Bewegung
+   im Text steckt.
+3. **Immer erst Vorschau** — Standbilder rendern, anschauen, korrigieren, dann erst
+   das Video. Das ist auch Regel 10 des Remotion-Skills.
+
+⚠️ **Ihr Sonderfall:** Sie nimmt denselben Text **zweimal aus verschiedenen
+Blickwinkeln** auf und schneidet zwischen den Winkeln. Das ist eine Dreh-Entscheidung,
+keine Schnitt-Entscheidung — steht in `context/sprechreels-drehanleitung.md`, wenn
+Patricia es will.
+
+**Harte Regeln:**
+- Nie den fremden Text uebernehmen. Durch Blackliste und letzten Check, Szene und
+  Zahlen aus Patricias Leben. Siehe *Hooks = Inspiration, nicht Copy-Paste*.
+- `nachbau/` ist gitignored — fremdes Material, Repo ist oeffentlich. Nur das
+  fertige Briefing darf nach `outputs/reels/`.
+- Bei Vorbild-Suche nach **Verkaufssignalen** sortieren (Keyword-CTA, Bio-Link auf
+  einen Checkout, Launch-Sprache), nie nach Likes und Kommentaren.
 
 ---
 

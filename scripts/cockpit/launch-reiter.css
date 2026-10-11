@@ -1,0 +1,61 @@
+  /* --- Reiter Launch (08.10.2026) --------------------------------------- */
+  .la-hint { color: var(--ink-soft); font-size: 13px; margin: 4px 0 0; }
+  .la-hint b { color: var(--ink); }
+  .la-del { margin-left: auto; }
+  #la-typen .panel, #la-plan .panel, #la-liste .panel { margin-top: 16px; }
+  .la-jetzt { border-left: 6px solid var(--teal); }
+  .la-jetzt.la-orange { border-left-color: var(--orange); }
+  .la-jetzt.la-navy   { border-left-color: var(--navy); }
+  .la-jetzt.la-grau   { border-left-color: var(--ink-soft); }
+  .la-kopf { display: flex; gap: 16px; align-items: flex-start;
+             justify-content: space-between; flex-wrap: wrap; }
+  .la-chip { display: inline-block; font-size: 11px; letter-spacing: .08em;
+             text-transform: uppercase; background: var(--teal); color: #fff;
+             padding: 3px 9px; border-radius: 99px; }
+  .la-jetzt.la-orange .la-chip { background: var(--orange); }
+  .la-jetzt.la-navy   .la-chip { background: var(--navy); }
+  .la-jetzt.la-grau   .la-chip { background: var(--ink-soft); }
+  .la-kopf h2 { margin: 8px 0 2px; }
+  .la-rechts { text-align: right; min-width: 92px; }
+  .la-zahl { font-family: var(--display); font-size: 38px; line-height: 1; }
+  .la-was { margin: 14px 0 6px; font-style: italic; color: var(--ink-soft); }
+  .la-todo { margin: 0; padding-left: 20px; }
+  .la-todo li { margin: 5px 0; }
+  .la-preise { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; font-size: 14px; }
+  .la-preise span { background: var(--surface-2); padding: 5px 11px; border-radius: 8px; }
+  .la-warn { margin-top: 10px; padding: 10px 12px; border-radius: 8px;
+             background: var(--orange-soft); border-left: 4px solid var(--orange); font-size: 14px; }
+  .la-typen { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+              gap: 10px; margin: 12px 0; }
+  .la-typ { text-align: left; background: var(--surface-2); border: 2px solid transparent;
+            border-radius: 12px; padding: 11px 13px; cursor: pointer; font: inherit;
+            color: inherit; }
+  .la-typ.an { border-color: var(--teal); background: var(--teal-soft); }
+  .la-ico { display: block; font-size: 16px; color: var(--teal); }
+  .la-tl { display: block; font-weight: 600; margin: 2px 0 3px; }
+  .la-tw { display: block; font-size: 13px; color: var(--ink-soft); }
+  .la-fehlt { padding: 10px 12px; border-radius: 8px; background: var(--orange-soft);
+              border-left: 4px solid var(--orange); font-size: 14px; }
+  .la-voll { padding: 10px 12px; border-radius: 8px; background: var(--teal-soft);
+             border-left: 4px solid var(--teal); font-size: 14px; }
+  .la-ph { margin: 8px 0; padding: 10px 12px; border-radius: 10px;
+           background: var(--surface-2); border-left: 5px solid var(--ink-soft); }
+  .la-ph.la-teal   { border-left-color: var(--teal); }
+  .la-ph.la-orange { border-left-color: var(--orange); }
+  .la-ph.la-navy   { border-left-color: var(--navy); }
+  .la-ph summary { cursor: pointer; font-weight: 600; }
+  .la-ph summary .la-hint { font-weight: 400; display: block; margin-top: 2px; }
+  .la-ph ul { margin: 8px 0 2px; padding-left: 20px; }
+  .la-ph li { margin: 4px 0; }
+  .la-zeile { display: flex; gap: 8px; flex-wrap: wrap; align-items: flex-end;
+              padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .la-i { padding: 6px 8px; border: 1px solid var(--line-strong); border-radius: 7px;
+          font: inherit; background: var(--surface); color: var(--ink); }
+  .la-breit { min-width: 190px; flex: 1 1 190px; }
+  .la-eng { width: 82px; }
+  .la-dl { display: block; font-size: 11px; color: var(--ink-soft); }
+  @media (max-width: 640px) {
+    .la-breit { flex: 1 1 100%; }
+    .la-zahl { font-size: 30px; }
+    .la-del { margin-left: 0; }
+  }

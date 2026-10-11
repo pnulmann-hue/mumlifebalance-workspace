@@ -1,4 +1,31 @@
+---
+name: story
+description: "Daily Story Sales Companion — täglicher Story-Begleiter mit fertigen Slides, CTA-Pflicht und Käufertyp-Rotation."
+---
 # /story — Daily Story Sales Companion für Patricia
+
+> 🎯 **HOOKS — Pflicht-Lese `.claude/skills/hooks/SKILL.md` (seit 2026-09-14)**
+>
+> Jeder Hook, der hier entsteht — Cover, Reel-Einstieg, Folie 1, Caption-Anfang,
+> Story-Slide 1, Anzeigen-Zeile — wird nach diesem Skill gebaut. Dort stehen
+> Kundensprache, Bewusstseinsstufen, Angles, PIE-Mix, alle Formeln, die Verbote
+> und das Prüfskript.
+>
+> **Und am Ende „Der letzte Check" — vier Fragen, die jeder Hook bestehen muss:**
+> trifft es wirklich einen Schmerz · denkt sie „krass, wieso weiss die, was ich
+> denke" · sagt man das so am Küchentisch zu einer Freundin · **ist die Lösung
+> draussen** (die Lösung kommt nie im Hook).
+>
+> Eine Frage mit Nein: **den Hook umschreiben, nie die Caption nachbessern.**
+
+
+> 🎯 **DIE TAGESFRAGE — vor jeder Story-Sequenz (seit 2026-09-30)**
+>
+> **Was gebe ich meiner Kundin heute mit?** Inspiration · einen krassen Tipp · oder
+> warum mit mir und dass es auch für sie möglich ist. Im Briefing steht es als erste
+> Zeile (`Gibt ihr heute mit: …`), bevor ein Slide geschrieben wird. Eine Sequenz, die
+> nur erzählt, was *ich* heute gemacht habe, ohne dass sie etwas davon hat, ist Ego.
+> Über die Woche kommen alle drei vor. Definition: `context/brand-voice.md`.
 
 > **🚨 ABSOLUTE PFLICHT — Read-First (Schritt 0, vor allem anderen):**
 >
@@ -217,7 +244,7 @@ Lies in dieser Reihenfolge — IMMER vor jedem Story-Briefing:
 8. **`context/patricia-expertise.md`** — Patricias Kurs-Inhalte, Methoden, Beispiele, Zahlen, Brand-Voice-Muster
 9. **`context/patricia-freebies.md`** — Alle Freebies + Cross-Referenz zu Themen
 10. `context/brand-voice.md`
-11. `context/hook-framework.md`
+11. `.claude/skills/hooks/SKILL.md` — der Hook-Master (Kundensprache, Stufen, Angles, PIE, Formeln, Verbote, letzter Check)
 11a. ⭐ **`context/content-formel-5-typen.md` — PFLICHT (seit 2026-06-01)**: 5-Typen-Content-Formel aus der Mentorin-Profil-Analyse. Stories sind der tägliche Träger für Lifestyle/Freiheit + Social-Proof — nutze die Typ-Logik, um die Wochen-Story-Sequenz abwechslungsreich zu halten. 4 Leitplanken: keine Stakkato (Patricia-Voice), für doTERRA Lifestyle-Frame in der Reels-only-Phase, EIN bestehendes ManyChat-Keyword als CTA pro Sequenz, keine erfundenen Zahlen.
 11b. ⭐ **`context/reichweiten-formel-mama-identity.md` — PFLICHT (seit 2026-06-01)**: Reichweiten-Motor. Stories sind primär Beziehungs-/Vertrauens-Träger — nutze die Mama-Identity-Frames (Gesellschaftsspiegel · Mama-Alltag-Moment · Ehrlichkeits-Story), um zwischen den Verkaufs-Sequenzen Reichweite und Nähe aufzubauen. Story-Sequenz behält ihren CTA-Link (Story-Kernregel), aber die reinen Reichweiten-Frames pitchen kein Produkt. „Stell dir vor" gesperrt → szenen-malen / „Was wäre wenn".
 11c. 🚀 **`outputs/produkte/mba-launch/story-plan.json` + `context/julia-launch-story-bausteine.md` — PFLICHT IM LAUNCH-FENSTER (12.6.–6.7.2026)**: Wenn heute ein Tag im `story-plan.json` ist, hat der Launch-Modus (oben) Vorrang. Der JSON-Eintrag gibt Story-Typ + Käufertyp + Inhalt + CTA + Julia-Beleg; die Bausteine-Datei gibt Julias Struktur zum 1:1-Nachbauen. Voller Kontext: `story-plan-tag-fuer-tag.md`.

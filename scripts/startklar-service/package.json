@@ -1,0 +1,10 @@
+{
+  "name": "startklar-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pruef-Dienst fuer die Startklar-Werkstatt (Minikurs Instagram-Basics)",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.0"
+  }
+}

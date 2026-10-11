@@ -120,6 +120,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[09-funnel-geruest]]
 - [[10-abgleich-julia-claude-kurse]]
 - [[10-webinar-aufbau-vorbild]]
+- [[11-kaeufertypen-in-den-storys]]
 - [[MORGEN-8-OKTOBER]]
 - [[begriffe-cheatsheet]]
 - [[buch-technik-auftrag]]

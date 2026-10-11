@@ -1,8 +1,7 @@
 ---
-description: Tägliches Morgenbriefing + Wochen/Monats/Quartals-Strategie-Sicht. Orchestriert /blog, /story, /karussell, /reels, /produkt, /funnel.
-argument-hint: [heute|woche|monat|quartal]
+name: cockpit
+description: "Tägliches Morgenbriefing + Wochen/Monats/Quartals-Strategie-Sicht. Orchestriert /blog, /story, /karussell, /reels, /produkt, /funnel."
 ---
-
 # /cockpit — Patricias Planungs-Orchester
 
 **Patricia-Zitat:** „Grobe Planung mit einem Bot — Detailplanung mit den Spezial-Skills."
@@ -27,7 +26,7 @@ Patricia hat MEHRFACH angemahnt — gilt für JEDEN Cockpit-Output (Morgenbriefi
 - Schweizer ss durchgängig
 
 ---
-- Schickt Patricia bei Bedarf zu den Spezial-Skills (`/blog`, `/story`, `/karussell`, `/reels`, `/produkt`, `/funnel`, `/salespage`, `/wp`)
+- Schickt Patricia bei Bedarf zu den Spezial-Skills (`/blog`, `/story`, `/karussell`, `/reels`, `/produkt`, `/funnel`, `/copywriting`, `/wp`)
 
 ---
 
@@ -116,7 +115,7 @@ HEUTE
 
 🎭 Profil:        [Mentoring / doTERRA]
 🟦 Hauptbrocken:  [aus Hauptbrocken-Rotation]
-                  Mo: Wochen-Content (/montag) ODER Blog-Day (1. Mo)
+                  Mo: Wochen-Content (`/content woche`) ODER Blog-Day (1. Mo)
                   Di: doTERRA (Reaktivierung + Lifestyle)
                   Mi: Business-Struktur (Bot/System)
                   Do: Produktentwicklung
@@ -256,7 +255,7 @@ Aus den Daten zieht Cockpit aktiv 3 Hypothesen:
 ```
 A) Wochenplanung NÄCHSTE Woche (KW+1)
    → Falls existiert: lesen
-   → Falls nicht: BUILD vorschlagen via /montag-Skill
+   → Falls nicht: BUILD vorschlagen via `/content woche`-Skill
 B) Wochen-Hauptprodukt (aus KW+1-Plan oder Monatsplan-Logik abgeleitet)
 C) Vorlagen-Aufgaben aus Aufgaben-DB
    → kopiere in nächste Woche pro Tag verteilt
@@ -326,7 +325,7 @@ NÄCHSTE SCHRITTE
 ═══════════════════════════════════════
 
 Optional weitere Skills nutzen:
-  → /montag — Wochen-Content-Session
+  → `/content woche` — Wochen-Content-Session
   → [andere Skills basierend auf Hauptbrocken-Rotation]
 ```
 
@@ -551,10 +550,10 @@ NÄCHSTE SCHRITTE
 📱 /story       — täglicher Story-Workflow
 🎨 /karussell   — Karussell-Erstellung
 🎬 /reels       — Reel-Briefing
-📋 /montag      — Wochen-Content-Session
+📋 `/content woche`      — Wochen-Content-Session
 🛠️ /produkt    — Produktentwicklung (Hauptbrocken Do)
 📊 /funnel      — Funnel-Strategie
-💰 /salespage   — Sales-Pages
+💰 /copywriting — Verkaufstexte (Seiten, Mails, Anzeigen)
 🌐 /wp          — WordPress-Push
 ```
 
@@ -592,7 +591,7 @@ Wenn `/fokus`-Override gesetzt ist (siehe story-render-bot state.py):
 
 **Sonntag-Abend:**
 1. `/cockpit woche` → Vorschau nächste Woche
-2. Falls Wochenplan leer: füllen oder /montag-Skill triggern
+2. Falls Wochenplan leer: füllen oder `/content woche`-Skill triggern
 
 **1. d. Monats:**
 1. `/cockpit monat` → strategische Sicht

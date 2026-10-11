@@ -1,0 +1,150 @@
+# -*- coding: utf-8 -*-
+"""Der HTML-Block fuer die ThriveCart-Kasse des KI-Kurses.
+
+    python scripts/salespage-design/ki-kurs-checkout-bauen.py
+    -> outputs/salespages/ki-kurs-checkout/checkout-block.html   (zum Kopieren)
+       outputs/salespages/ki-kurs-checkout/vorschau.html         (zum Anschauen)
+
+🚨 KEIN <style>, KEIN @import, KEINE @media, KEINE Klassen.
+ThriveCarts Editor wirft Style-Bloecke und externe Schrift-Importe raus — dann
+steht der Text nackt da. Deshalb haengt jede Regel inline am Element. Was dabei
+ersetzt werden muss:
+
+    @media   ->  flex-wrap plus min-width; das bricht am Handy von selbst um
+    @import  ->  Schriftstapel mit Georgia als Ersatz fuer Philosopher
+    Klassen  ->  entfallen, damit nichts mit ThriveCarts eigenem CSS kollidiert
+
+Philosopher laesst sich in ThriveCart global unter Design einstellen; bis dahin
+faellt die Ueberschrift auf Georgia zurueck, was nah genug ist.
+
+Zwei weitere Dinge, die diesen Block von der Landingpage unterscheiden:
+
+* **Keine Wiederholung.** Patricia teilt immer die Landingpage, nie die Kasse
+  allein. Wer hier ankommt, hat Problem, Story und Modulliste schon gelesen.
+  Hier steht nur, was dort NICHT steht: die Termine am Stueck, was nach dem
+  Klick passiert, und der Satz gegen den Termin-Einwand.
+* **Das Bild braucht eine oeffentliche Adresse.** ThriveCart laedt es vom
+  Server, ein lokaler Pfad bleibt leer. Die WordPress-Uploads taugen dafuer.
+"""
+import io, os, re, sys
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+OUT = "outputs/salespages/ki-kurs-checkout"
+
+# 🔁 Hier das Bild eintragen. Muss oeffentlich erreichbar sein (https).
+BILD = "https://mumlifebalance.ch/wp-content/uploads/2026/09/kk-about.jpg"
+BILD_ALT = "Patricia Ulmann"
+
+TINTE, CREME, ORANGE, PETROL, KARTE = "#0c1c30", "#f1ecdd", "#dc822e", "#12828c", "#16324c"
+GRAU = "#9aa8b3"
+SERIF = "Georgia,'Times New Roman',serif"
+SANS = "'Source Sans 3','Source Sans Pro',Helvetica,Arial,sans-serif"
+
+TERMINE = [
+    ("So 1. November", "Die ersten Kapitel sind in deinem Bereich."),
+    ("Do 19. November", "Erster Live-Call, abends &mdash; wird aufgezeichnet."),
+    ("Do 10. Dezember", "Zweiter Live-Call, abends &mdash; wird aufgezeichnet."),
+    ("Und danach", "Die Telegram-Gruppe bleibt. Dienstags und donnerstags "
+                   "antworte ich dort."),
+]
+
+
+def zeile(tag, was):
+    return ('<div style="display:flex;flex-wrap:wrap;gap:4px 14px;'
+            'align-items:baseline;margin:0 0 11px">'
+            '<div style="flex:0 0 auto;min-width:128px;font-weight:600;color:%s">%s</div>'
+            '<div style="flex:1 1 220px;min-width:200px">%s</div></div>'
+            % (PETROL, tag, was))
+
+
+def kasten(inhalt):
+    return ('<div style="background:%s;border-left:4px solid %s;border-radius:10px;'
+            'padding:16px 18px;margin:20px 0 0">'
+            '<p style="margin:0;line-height:1.55">%s</p></div>'
+            % (KARTE, ORANGE, inhalt))
+
+
+def linie():
+    return ('<hr style="border:0;border-top:1px solid rgba(241,236,221,.18);'
+            'margin:24px 0">')
+
+
+def ueberschrift(text):
+    return ('<h3 style="font-family:%s;font-size:20px;margin:0 0 13px;color:%s;'
+            'font-weight:700">%s</h3>' % (SERIF, ORANGE, text))
+
+
+BLOCK = """<div style="background:{tinte};color:{creme};font-family:{sans};font-size:17px;line-height:1.55;border-radius:18px;padding:32px 28px;margin:0 0 24px">
+  <div style="display:flex;flex-wrap:wrap;gap:22px;align-items:center">
+    <img src="{bild}" alt="{alt}" width="126" height="126" style="width:126px;height:126px;border-radius:63px;object-fit:cover;object-position:center 25%;flex:0 0 auto;display:block">
+    <div style="flex:1 1 280px;min-width:240px">
+      <h2 style="font-family:{serif};font-size:29px;line-height:1.2;margin:0 0 9px;color:{creme};font-weight:700">Du bist richtig hier</h2>
+      <p style="margin:0 0 10px">Die Seite vorher hat dir gesagt, was drin ist. Hier steht nur noch, wie es weitergeht, sobald du dich eingetragen hast.</p>
+      <p style="margin:0;color:{grau};font-size:15px">Patricia Ulmann &middot; Mum Life Balance</p>
+    </div>
+  </div>
+  {linie}
+  {h_termine}
+  {plan}
+  {linie}
+  {h_gleich}
+  <p style="margin:0">Du tr&auml;gst dich ein und bekommst sofort die Rechnung per Mail. Am 1. November kommt die Mail mit deinem Zugang und dem Link zur Gruppe. Bis dahin musst du nichts tun.</p>
+  {kasten1}
+  {kasten2}
+  {linie}
+  <p style="margin:0;color:{grau};font-size:15px">Wenn du vorher noch eine Frage hast, schreib mir. Ich antworte selbst.</p>
+</div>"""
+
+plan = "\n  ".join(zeile(tag, was) for tag, was in TERMINE)
+
+html = BLOCK.format(
+    tinte=TINTE, creme=CREME, orange=ORANGE, grau=GRAU,
+    bild=BILD, alt=BILD_ALT, serif=SERIF, sans=SANS, plan=plan,
+    linie=linie(),
+    h_termine=ueberschrift("Die Termine"),
+    h_gleich=ueberschrift("Was gleich passiert"),
+    kasten1=kasten("<b>An den Call-Abenden kannst du nicht?</b> Beide Calls werden "
+                   "aufgezeichnet. Schick deine Frage vorher in die Gruppe, dann "
+                   "beantworte ich sie im Call &mdash; auch wenn du nicht dabei bist."),
+    kasten2=kasten("<b>Und wenn du sp&auml;ter die Academy buchst:</b> Ich rechne dir "
+                   "an, was du heute bezahlst. Voll, nicht anteilig. Du zahlst nichts "
+                   "zweimal."))
+
+os.makedirs(OUT, exist_ok=True)
+io.open(os.path.join(OUT, "checkout-block.html"), "w",
+        encoding="utf-8", newline="\n").write(html)
+
+VOR = ('<!doctype html><html lang="de"><head><meta charset="utf-8">'
+       '<meta name="viewport" content="width=device-width, initial-scale=1">'
+       '<title>Vorschau Kassen-Block</title>'
+       '<link rel="preconnect" href="https://fonts.googleapis.com">'
+       '<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">'
+       '<style>body{background:#e9e4d6;margin:0;padding:28px 16px;'
+       'font-family:Arial,sans-serif}.rahmen{max-width:700px;margin:0 auto}'
+       'h1{font:600 14px Arial;color:#555;margin:0 0 12px}</style></head><body>'
+       '<div class="rahmen"><h1>So sieht der Block auf der Kasse aus</h1>'
+       + html + '</div></body></html>')
+io.open(os.path.join(OUT, "vorschau.html"), "w",
+        encoding="utf-8", newline="\n").write(VOR)
+
+# --- Waechter -------------------------------------------------------------
+fehler = []
+for verboten, warum in [("<style", "Style-Block"), ("@import", "Schrift-Import"),
+                        ("@media", "Media-Query"), ('class="', "CSS-Klasse"),
+                        ("<script", "Skript")]:
+    if verboten in html:
+        fehler.append("%s drin (%s) - das filtert ThriveCart" % (verboten, warum))
+
+sicht = re.sub(r"<[^>]+>", " ", html)
+AUS = ("Frauen", "bauen", "dauert", "heute", "zuerst", "auch", "auf", "aus",
+       "genau", "neue", "schauen", "brauchst", "laut")
+uml = {m.group(0) for m in re.finditer(r"\b\w*(ae|oe|ue)\w*\b", sicht)
+       if not any(m.group(0).lower().startswith(a.lower()) for a in AUS)}
+
+print("%d Zeichen -> %s/checkout-block.html" % (len(html), OUT))
+print("Bild:", BILD)
+print("Waechter:", "sauber - kein style, kein import, keine Klassen."
+      if not fehler else " | ".join(fehler))
+print("Umlaute:", "als Entities, sauber." if not uml else "PRUEFEN: %s" % uml)

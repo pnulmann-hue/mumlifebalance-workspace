@@ -1,0 +1,84 @@
+{
+ "v": 4,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-09-22T09:00:00Z"
+ },
+ "title": "KI-Masterclass — 8. Oktober",
+ "order": [
+  "cover",
+  "ziele",
+  "chat",
+  "elefant",
+  "szene",
+  "nicht-du",
+  "bisher",
+  "warum-durchschnitt",
+  "kein-technikmensch",
+  "raetsel",
+  "aufloesung",
+  "was-passiert",
+  "paar-drei",
+  "muster",
+  "eins-zeigen",
+  "stufen",
+  "stufe-zwei",
+  "zwei-zeigen",
+  "stufe-drei",
+  "drei-zeigen",
+  "assistenten",
+  "ersparnis",
+  "freigabe",
+  "zukunft",
+  "fuer-wen",
+  "wer-ich-bin",
+  "uebergang",
+  "anderer-weg",
+  "warum-nicht-allein",
+  "kurs",
+  "start",
+  "begleitung",
+  "module",
+  "mitbekommst",
+  "anker",
+  "preis",
+  "grund",
+  "maschine",
+  "mba-inhalt",
+  "mba-preis",
+  "mba",
+  "einwaende",
+  "schritt",
+  "fragen",
+  "schluss"
+ ],
+ "sections": {
+  "rahmen": {
+   "description": "Ziele, Chat-Aktivierung, der Elefant im Raum.",
+   "start": "cover"
+  },
+  "raetsel": {
+   "description": "Zwei erste Zeilen, eine ist echt — und was dabei passiert.",
+   "start": "raetsel"
+  },
+  "stufen": {
+   "description": "Drei Stufen, jede mit einem live gezeigten Beweis.",
+   "start": "stufen"
+  },
+  "bruecke": {
+   "description": "Anerkennung, dann die Frage, dann das Angebot.",
+   "start": "uebergang"
+  }
+ },
+ "faces": {
+  "philosopher": {
+   "family": "Philosopher",
+   "href": "https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap"
+  },
+  "source-sans-3": {
+   "family": "Source Sans 3",
+   "href": "https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap"
+  }
+ },
+ "designSystems": []
+}

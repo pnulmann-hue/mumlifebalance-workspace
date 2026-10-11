@@ -1,3 +1,7 @@
+---
+name: kurse-sync
+description: "Neues Kurs-Wissen aus context/Kurse/ in die zentrale Expertise-Datei synchronisieren."
+---
 # /kurse-sync — Patricias Kurs-Wissen aktualisieren
 
 Wenn Patricia einen neuen Kurs in `context/Kurse/aktuelle kurse/` ablegt (oder bestehende Kurse um neue Lektionen erweitert), ruft sie diesen Command auf. Claude synct die neue Expertise in `context/patricia-expertise.md`.

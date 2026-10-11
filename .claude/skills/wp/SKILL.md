@@ -1,7 +1,7 @@
 ---
-description: WordPress-Helfer für mumlifebalance.ch — Seiten erstellen, aktualisieren, Medien hochladen, Menüs pflegen
+name: wp
+description: "WordPress-Helfer für mumlifebalance.ch — Seiten erstellen, aktualisieren, Medien hochladen, Menüs pflegen"
 ---
-
 # /wp — WordPress-Helfer
 
 Du hast über die WordPress REST API vollen Admin-Zugriff auf **mumlifebalance.ch**. Credentials stehen in `scripts/wordpress/.env` (wird nie committed).

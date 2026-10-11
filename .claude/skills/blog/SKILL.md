@@ -1,10 +1,24 @@
 ---
-description: SEO-optimierter Blog-Post zum Monatsthema, mit Cascade-Output für Stories/Karussell/Reel/Newsletter
-argument-hint: [konzept|komplett|aktualisieren] [optionale Thema-Spezifizierung]
+name: blog
+description: "SEO-optimierter Blog-Post zum Monatsthema, mit Cascade-Output für Stories/Karussell/Reel/Newsletter"
 allowed-tools: Read, Write, Edit, Grep, Glob, WebSearch, mcp__4800d39a-57ef-4b8c-ac59-912964e81676__notion-fetch, mcp__4800d39a-57ef-4b8c-ac59-912964e81676__notion-search
 ---
-
 # /blog — Patricia's Blog-Skill (SEO + GEO + Cascade)
+
+> 🎯 **HOOKS — Pflicht-Lese `.claude/skills/hooks/SKILL.md` (seit 2026-09-14)**
+>
+> Jeder Hook, der hier entsteht — Cover, Reel-Einstieg, Folie 1, Caption-Anfang,
+> Story-Slide 1, Anzeigen-Zeile — wird nach diesem Skill gebaut. Dort stehen
+> Kundensprache, Bewusstseinsstufen, Angles, PIE-Mix, alle Formeln, die Verbote
+> und das Prüfskript.
+>
+> **Und am Ende „Der letzte Check" — vier Fragen, die jeder Hook bestehen muss:**
+> trifft es wirklich einen Schmerz · denkt sie „krass, wieso weiss die, was ich
+> denke" · sagt man das so am Küchentisch zu einer Freundin · **ist die Lösung
+> draussen** (die Lösung kommt nie im Hook).
+>
+> Eine Frage mit Nein: **den Hook umschreiben, nie die Caption nachbessern.**
+
 
 Generiert SEO-optimierte Blog-Posts zum Monatsfokus. Output ist NICHT nur ein Blog —
 sondern eine **Content-Cascade** die die ganze Woche füttert (Stories, Karussell, Reel, Newsletter).
@@ -39,7 +53,7 @@ Stakkato erlaubt NUR bei expliziten H2-/H3-Listen oder Aufzählungen — nicht i
 ```
 1. reference/seo-blog/seo-blog-bible.md           (SEO 2026 + Hormozi-Hooks + Julia-Voice)
 2. context/brand-voice.md                          (Patricia's Tonalität)
-3. context/hook-framework.md                       (Hook-Kategorien)
+3. .claude/skills/hooks/SKILL.md                       (Hook-Kategorien)
 4. context/ki-phrasen-blackliste.md                (was NIE schreiben)
 5. context/active-funnels.json                     (welche CTAs/Funnels aktiv)
 6. context/patricia-vollprofil.md                  (Brand-Voice, Wortschatz, Verbote)
@@ -565,5 +579,5 @@ outputs/blogs/2026-05-04-mama-business-2-stunden-tag/
 - **`/story`** — Story-Hooks aus Cascade nutzen
 - **`/karussell`** — Karussell-Konzept aus Cascade
 - **`/reels`** — Reel-Briefing aus Cascade
-- **`/montag`** — Wochen-Content-Session nutzt Blog-Cascade als Quelle (KW1 nach Blog-Day)
+- **`/content woche`** — Wochen-Content-Session nutzt Blog-Cascade als Quelle (KW1 nach Blog-Day)
 - **`/funnel`** — wenn Blog auf Funnel verweist, Funnel-Daten ergänzen

@@ -1,8 +1,43 @@
+---
+name: karussell
+description: "Instagram-Karussells planen, bauen und fixen — Folien-Plan, Hooks nach Framework, Feed-Aesthetic-Check."
+---
 # /karussell — Karussell-Assistent für Patricia
 
 > **🚨 ABSOLUTE PFLICHT — Read-First (Schritt 0, vor allem anderen):**
 >
 > **Lies ZUERST komplett:** `context/patricia-vollprofil.md` — Patricias Stimme, Werte (Freiheit + Selbstverantwortung + Genuss + Vorbild für Kinder), Wurzel-Geschichte (Mama-Alkohol-Wurzel, Schwester †2019, Convention-Wendepunkt Mai 2025, Theta-Healing), 60+ Hooks, Brand-Voice-Verbote, Mentee-Profil, Repel-Markt, 4-Säulen-doTERRA-Methodik, INTERN-Schutz. **Single Source of Truth.** Ohne diese Lese: NICHT generieren. Output muss in Patricias echter Stimme klingen — generische Coach-Sprache ist verboten.
+
+---
+
+## 🎯 PFLICHT: Hooks entstehen nach dem Hook-Skill (seit 2026-09-13)
+
+> **Jeder Hook in diesem Skill wird nach `.claude/skills/hooks/SKILL.md` gebaut** —
+> die Cover-Zeile genauso wie die zehn Varianten im Hook-Brainstorm.
+> Lies die Datei, bevor du den ersten Hook schreibst. Sie enthält den Prozess:
+> Briefing-Check → Bewusstseinsstufe → Angle → Familie → Zuschnitt.
+> Am Ende steht eine Kurz-Checkliste — das ist der schnelle Weg.
+
+**Die zwei Dinge, die hier am meisten ändern:**
+
+1. **Bewusstseinsstufe zuerst klären.** Ein Reichweiten-Karussell spricht Stufe 1–2 an:
+   Folie 1 stellt **ihre Frage** und gibt nicht meine Antwort. Ein Lead-Karussell mit
+   Keyword-CTA liegt bei 2–3. Das entscheidet, wie Folie 1 gebaut wird.
+2. **Angle ist nicht Familie.** Die Familie sagt, wie ein Hook *klingt* (Bekenntnis,
+   Zeitanker, Hot Take). Der Angle sagt, aus welcher *Richtung* du schaust (Schmerz,
+   Ergebnis, Beweis, Konträr, Identität). Zehn Hooks können sieben Familien haben
+   und trotzdem alle dasselbe sagen. **Im Hook-Brainstorm mindestens 3 Angles mischen.**
+
+Hinter jedem Hook in Klammern **(Angle · Familie)** ausweisen.
+
+Bei einem **Wochen-Plan** zusätzlich: die Karussells der Woche sollen aus
+**verschiedenen Angles** kommen, nicht nur aus verschiedenen Pillars. Zwei Posts aus
+demselben Angle erreichen weitgehend dieselben Frauen.
+
+`.claude/skills/hooks/SKILL.md` ist die **eine** Quelle für Hooks — Kundensprache,
+Stufen, Angles, PIE, alle Formeln, Verbote und der letzte Check.
+`context/hook-formel-testlog.md` bleibt daneben bestehen, dort werden Testergebnisse
+eingetragen. Bei Widerspruch gewinnt die Blackliste, dann der Hook-Skill.
 
 ---
 
@@ -49,7 +84,7 @@ Lies in dieser Reihenfolge:
 4. **`context/patricia-expertise.md` — PFLICHT! Patricias Kurs-Inhalte (Methoden, Beispiele, Zahlen) + Brand-Voice-Muster.**
 5. **`context/patricia-freebies.md` — PFLICHT! Alle Freebies mit Inhalten + Cross-Referenz zu Themen → Keywords.**
 6. `context/brand-voice.md`
-7. `context/hook-framework.md` — Pflicht-Grundlage für Hooks
+7. `.claude/skills/hooks/SKILL.md` — der Hook-Master (Kundensprache, Stufen, Angles, PIE, Formeln, Verbote, letzter Check)
 7a. ⭐ **`context/content-formel-5-typen.md` — PFLICHT (seit 2026-06-01)**: 5-Typen-Content-Formel aus der Mentorin-Profil-Analyse. Das Karussell ist der **Typ „Tutorial-Karussell"** — bau es als echten Mehrwert-Schritt-für-Schritt mit Stop-Scrolling-Cover (Slide 1) und EINEM ManyChat-Keyword als CTA. 4 Leitplanken: keine Stakkato (Patricia-Voice), für doTERRA NUR wenn Account schon >300-500 Follower hat (sonst Reel statt Karussell), Keyword-CTA bestehend, keine erfundenen Zahlen.
 7b. ⭐ **`context/reichweiten-formel-mama-identity.md` — PFLICHT (seit 2026-06-01)**: Reichweiten-Motor. Als Karussell eignen sich der Gesellschaftsspiegel und die Ehrlichkeits-Story (Reichweiten-Typen mit **Share-CTA**, kein Produkt-Keyword) sowie der wöchentliche Lead-Post (mit Keyword). Reichweiten-Karussell nie mit Verkaufs-CTA überladen — „Schick das einer Mama…" drauf. „Stell dir vor" gesperrt → szenen-malen / „Was wäre wenn".
 8. `context/caption-formeln.md`
@@ -84,7 +119,9 @@ Dann biete diese Modi an:
 Patricia sagt ein Thema. Du lieferst ein komplettes Folien-Briefing.
 
 **Ablauf:**
-1. Frag: Thema? Profil (falls nicht schon klar)? Ziel (Saves/Shares/DMs)? Folien-Anzahl (Default 9)?
+1. Frag: Thema? Profil (falls nicht schon klar)? **Karussell-Typ** (siehe unten)?
+   **Funnel-Stufe** (TOF Reichweite / MOF Vertrauen / BOF Verkauf)? Ziel
+   (Saves/Shares/DMs)? Folien-Anzahl (Default 9, max 10 — Blotato-Grenze)?
 2. **Trend-Research** (WebSearch) — Pflicht vor jedem Briefing
 3. **Hook-Pflicht-Prozess** (4 Schritte aus `hook-framework.md`)
 4. **Feed-Aesthetic-Check** via Canva MCP (`list-folder-items` auf „Gepostete Beiträge", Farben der letzten 6-9 Designs)
@@ -97,7 +134,12 @@ Patricia sagt ein Thema. Du lieferst ein komplettes Folien-Briefing.
 Patricia hat Fotos/Zitate die sie nutzen will.
 
 **Ablauf:**
-1. Frag: Welche Assets? (Canva-Ordner / eigene Shootings aus `context/Shootingbilder/`)
+1. Frag: Welche Assets? Quellen in dieser Reihenfolge:
+   - **Frisch vom Handy** — `python scripts/handy/hol-content.py` holt, was Patricia
+     ins Album `DCIM/Content-Inbox` gelegt hat. Danach liegen die Fotos in
+     `context/content-assets/inbox/` und der Bericht in `context/content-assets-inbox.md`.
+   - Bestehender Pool: `context/Shootingbilder/`, Handy-Alben laut `context/content-assets-index.md`
+   - Canva-Ordner
 2. Schlag ein passendes Karussell-Konzept vor, das diese Assets nutzt
 3. Folien-Plan mit Asset-Zuordnung pro Folie
 4. Design-Hinweise für Canva
@@ -232,6 +274,113 @@ Vor Render: letzte 3-5 Posts im Feed checken (oder Promo-Plan). Slide-1-Dominanz
 
 ---
 
+## Der Cockpit-Weg (seit 2026-09-10) — Vorschlag → Patricia → Blotato
+
+Für geplanten Content ist das der Hauptweg. Das Cockpit-Artifact
+(`https://claude.ai/code/artifact/eeee48d5-3e50-4cff-8047-1ec5eccbb074`,
+Quelle im Repo: `outputs/cockpit/mlb-cockpit.html`) hat eine Datenbank, in die
+du **direkt schreiben** kannst.
+
+**1 · Du legst den Vorschlag ab**
+
+```
+Artifact  write_db  collection: karussells  doc_id: kar-<slug>
+```
+Felder: `name`, `brand` (`mlb_dark` / `mlb_light` / `mlb_teal` / `oele`),
+`handle`, `typ`, `funnel`, `textfrei: false`, `caption`, `updatedAt`,
+`slides: [{id, layout, headline, body, keyword, zoom, ox, oy}]`.
+Layouts: `hook` · `text` · `bild` · `split` · `zitat` · `cta`.
+
+**Foto als Hintergrund** (nur bei `bild` und `split`): eigenes Dokument unter
+`karussells/<carId>/bilder` mit `doc_id = <slideId>` und `{ "dataUrl": "data:image/jpeg;base64,…" }`.
+Bild vorher auf ~1200 px verkleinern, JPEG, unter 180 KB —
+`python scripts/cockpit/foto-ins-cockpit.py` macht das.
+Ohne Foto nimmt die Folie den Marken-Look (uni in Patricias Farben).
+
+**2 · Patricia macht es sich zurecht** — Text verschieben, Layout wechseln,
+Hook und Caption anpassen. Auf dem Handy genauso, das Cockpit ist dafür getestet.
+
+**3 · Sie gibt frei** — erst die Texte („Schritt 1"), dann Datum, Uhrzeit,
+Profil und „Für Blotato freigeben" („Schritt 2"). Dabei legt das Cockpit die
+**fertigen Folien so ab, wie sie aussehen** — nicht die Rohdaten. Was sie sieht,
+geht raus.
+
+**4 · Du planst ein** — sie sagt es dir im Chat (die Freigabe im Cockpit meldet
+sich nicht von selbst bei dir):
+
+```
+Artifact  read_db  collection: freigaben                      → was wartet
+Artifact  read_db  collection: freigaben/<carId>/bilder  --out_dir <ordner>
+node scripts/cockpit/freigabe-zu-blotato.mjs --ordner <ordner> --trocken
+node scripts/cockpit/freigabe-zu-blotato.mjs --ordner <ordner>
+```
+
+Das Skript entpackt die Folien, lädt sie zu **WordPress** (nicht ins öffentliche
+Repo), schiebt sie zu Blotato und plant den Beitrag zum gewünschten Zeitpunkt.
+Danach `status` in `freigaben/<carId>` auf `geplant` setzen und `blotato.status`
+im Karussell ebenfalls.
+
+**Immer zuerst `--trocken`.** Der Lauf zeigt Zeitpunkt, Konto, Folienzahl und
+Caption-Anfang, ohne etwas hochzuladen. Erst danach der echte Lauf.
+
+**Harte Regeln für diesen Weg:**
+- **Nie ohne Patricias ausdrückliches Go einplanen.** Ein gesetztes Datum im
+  Cockpit ist noch kein Go.
+- Das Skript weigert sich bei Zeitpunkten in der Vergangenheit, fehlender
+  Caption und mehr als 10 Folien.
+- Freigaben mit Status ≠ `wartet` werden nicht verarbeitet.
+
+---
+
+## Die vier Karussell-Typen
+
+Jedes Karussell ist einer dieser Typen. Frag am Anfang, welcher — und wenn
+Patricia keinen nennt, schlag einen vor und sag warum.
+
+### A · Listicle — „X Dinge, die Y"
+- **Folie 1:** starke Headline mit der Zahl, die neugierig macht
+- **Folien 2 bis n:** pro Folie **ein** Punkt. Headline = der Punkt selbst,
+  Body erklärt ihn in 1–2 Sätzen
+- **Letzte Folie:** CTA, kurz und klar
+
+Der einfachste Typ und der verlässlichste, weil die Struktur schon steht.
+Guter Default, wenn Patricia unsicher ist.
+
+### B · Storytelling — persönliche Geschichte
+- **Folie 1:** Hook, der neugierig macht — man muss weiterwischen wollen
+- **Folien 2–5:** die Geschichte in Etappen, wie eine Mini-Serie. Jede Folie
+  endet so, dass man die nächste lesen will
+- **Vorletzte Folie:** was sie daraus mitgenommen hat, was sie heute anders macht
+- **Letzte Folie:** CTA
+
+Höchste Bindung, weil die Leute bis zum Ende wischen. Braucht eine **echte**
+Geschichte — nie eine erfundene, und keine erfundenen Details drumherum.
+Ton: als würde sie es einer Freundin erzählen.
+
+### C · Edukativ — etwas erklären
+- **Folie 1:** Frage oder Problem als Hook
+- **Folien 2–6:** Schritt für Schritt, klar, ohne Fachbegriffe (oder Fachbegriff
+  sofort erklären)
+- **Letzte Folie:** Zusammenfassung in einem Satz + CTA
+
+Der Typ, der am meisten **gespeichert** wird — und Speicherungen sind das
+Signal, das am längsten Reichweite bringt.
+
+### D · Kontroverser Take — für Reichweite
+- **Folie 1:** provokante Headline, die zum Widerspruch einlädt
+- **Folien 2–5:** ihre Argumentation, Schritt für Schritt, mit konkreten Beispielen
+- **Vorletzte Folie: die Nuancierung** — wo sie die Gegenposition versteht
+- **Letzte Folie:** CTA, der zur Diskussion einlädt
+
+Grösste Reichweite, grösstes Risiko. **Die Nuancierungs-Folie ist Pflicht** —
+sie ist der Grund, warum Diskussion entsteht statt Streit. Nie weglassen.
+
+**Funnel-Stufe dazu:** TOF (Reichweite) passt zu Listicle und Kontrovers ·
+MOF (Vertrauen) zu Storytelling und Edukativ · BOF (Verkauf) nur in Stories und
+Mails, **nicht im Feed** (siehe `feedback_keine-programme-im-feed`).
+
+---
+
 ## Pflicht-Schritte VOR jedem Briefing
 
 ### Schritt A: Trend-Research (WebSearch)
@@ -252,7 +401,50 @@ VOR Design-Arbeit:
 - Farben der letzten 6-9 Posts erfassen
 - Cover-Farbe für dieses Karussell so wählen, dass Grid abwechselt (Petrol → Creme → Orange → Dunkelblau rotieren)
 
+### 🚨 Schritt C2: Texte freigeben lassen — VOR jedem Bau
+
+**Die wichtigste Regel im ganzen Ablauf.** Nie Texte und Folien in einem Rutsch
+bauen. Erst legst du Patricia **nur die Texte** vor:
+
+```
+Folie 1 (Hook):   [Headline]
+Folie 2:          [Headline] — [Body, 1-2 Sätze]
+...
+Folie n (CTA):    [Headline] — [Body] — Keyword: [KEYWORD]
+```
+
+Dazu: Typ, Funnel-Stufe, geplante Cover-Farbe (aus dem Aesthetic-Check) und die
+Caption-Idee in einem Satz. **Dann wartest du.**
+
+Erst wenn Patricia „passt" sagt, geht es an Schritt D. Wenn die Texte nicht
+sitzen und die Folien schon gebaut sind, muss alles noch einmal gerendert
+werden — das kostet Zeit und Nerven für nichts.
+
+**Gezielt korrigieren statt alles neu:** Wenn nur eine Folie nicht passt, ändere
+**nur die eine** und sag ausdrücklich, dass der Rest bleibt. Die
+Formulierungen, mit denen Patricia korrigiert, und was sie bedeuten:
+
+| Sie sagt | Du machst |
+|---|---|
+| „Folie 3 Headline nach oben links" | nur diese Folie, Layout-Klasse tauschen |
+| „mehr Luft oben und unten, wirkt gequetscht" | Padding in der HTML-Vorlage global |
+| „Folie 4 Headline zu: NEUER TEXT, Rest bleibt" | eine Zeile ändern, neu rendern |
+| „Body überall zu lang, max 2 Zeilen" | alle Bodies kürzen, Texte neu vorlegen |
+| „Folie 1 und letzte in Primärfarbe, weisse Schrift" | Cover-Variante, Aesthetic-Check erneut |
+
+**Was zweimal vorkam, wird Regel.** Jede Korrektur, die Patricia zum zweiten Mal
+gibt, trägst du in `context/karussell-framework.md` ein. Dann gibt sie sie nie
+wieder.
+
 ### Schritt D: HTML-Vorschau + PNG-Render (Pfad B)
+
+> **Abweichung vom Guide, bewusst:** Jenya lässt die Folien als KI-Bilder
+> erzeugen. Bei Patricia gilt **zero AI-generated Visuals** — die Folien
+> entstehen aus der HTML-Vorlage mit echten Fotos. Der Guide-Prozess (Typen,
+> Text-Freigabe, gezielte Korrekturen) wird übernommen, die Bilderzeugung nicht.
+> Vorteil davon: der Text auf den Folien ist **gesetzt statt gezeichnet** — also
+> keine verrutschten Buchstaben und keine Tippfehler im Bild, das häufigste
+> Problem im Guide.
 
 **NEU seit 2026-04-22:** Finales Karussell wird aus einer HTML-Vorlage zu 11 Instagram-tauglichen PNGs (1080×1350) gerendert. Die HTML ist die Single-Source-of-Truth — kein Canva-AI-Generate mehr.
 

@@ -3,8 +3,9 @@ name: Montag-Build-und-Schedule
 # Läuft jeden Montag 10:00 UTC (= 12:00 Sommerzeit / 11:00 Winterzeit Schweiz)
 # Wenn du im Winter exakt 12:00 Schweiz willst, ändere zu "0 11 * * 1"
 on:
-  # PAUSIERT 2026-07-13 (Hand-Planung KW29/30, Kollisions-Vermeidung). Cron aus — nur noch manuell.
-  # Wieder aktivieren: die 2 folgenden Zeilen einkommentieren.
+  # 🚨 ABGELOEST — der Skill `/montag` ist seit 2026-09-14 archiviert
+  # (reference/_archiv-skills/). Was er konnte, steckt in `/content`.
+  # Cron bleibt aus. Nicht wieder einschalten.
   # schedule:
   #   - cron: '0 10 * * 1'
   workflow_dispatch:  # Manuell triggerbar via GitHub-UI
@@ -44,7 +45,7 @@ jobs:
           claude --print --dangerously-skip-permissions \
             "/montag
 
-            Du läufst autonom als GitHub Action Cron. Folge der vollständigen Skill-Anleitung in .claude/commands/montag.md:
+            Du läufst autonom als GitHub Action Cron. Folge der vollständigen Skill-Anleitung in .claude/skills/content/SKILL.md (Zeitraum: woche):
 
             1. Lese letzte Freitag-Hooks-Datei (outputs/freitag/YYYY-MM-DD-hooks.md) + Markt-Analyse + Wochen-Kontext
             2. Lese Patricia's Pick aus outputs/montag/YYYY-MM-DD-pick.md (Patricia speichert es dort manuell zwischen Fr und Mo).
