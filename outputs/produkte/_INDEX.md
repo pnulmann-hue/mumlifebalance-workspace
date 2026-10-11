@@ -61,6 +61,10 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[09-notion-eintrag]]
 - [[README]]
 
+### 📁 doterra-angebote-seite
+
+- [[00-angebotsseite-doterra]]
+
 ### 📁 doterra-mama-energie
 
 - [[00-briefing]]
