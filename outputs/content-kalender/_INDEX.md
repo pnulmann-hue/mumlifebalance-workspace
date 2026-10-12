@@ -21,5 +21,6 @@ Auto-Index aller Files in `outputs/content-kalender/`. Siehe [[_MOCs/MOC-Content
 - [[2026-08-KW33]]
 - [[2026-08-KW34]]
 - [[2026-08-KW35]]
+- [[2026-10-12-content-fahrplan-oktober]]
 - [[2026-kw38-mentoring-launch]]
 - [[doterra-jahresrhythmus]]
