@@ -9,11 +9,14 @@ Auto-Index aller Files in `outputs/zielgruppen-research/`. Siehe [[_MOCs/MOC-Mar
 ## Dateien
 
 - [[2026-09-01-recherche-hybridmodell-digitale-produktwelt]]
+- [[doterra-2026-04-22]]
+- [[mentoring-2026-04-21]]
+- [[mentoring-2026-08-27]]
+
+### 📁 2026-10-12-content-shortcut
+
 - [[2026-10-12-instagram-wettbewerbsanalyse]]
 - [[2026-10-12-nischen-trendanalyse]]
 - [[2026-10-12-saeulen-abgleich]]
 - [[2026-10-12-zielgruppen-fragen-analyse]]
 - [[2026-10-12-zielgruppenanalyse-network-mamas]]
-- [[doterra-2026-04-22]]
-- [[mentoring-2026-04-21]]
-- [[mentoring-2026-08-27]]

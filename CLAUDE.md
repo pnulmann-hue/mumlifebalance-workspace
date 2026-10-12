@@ -2863,6 +2863,29 @@ Bei den ersten zehn war er das nicht, und weil der Text eingebrannt ist, musste
 der Quellclip per Bildvergleich zurueckgesucht werden. Eine Korrektur ist jetzt
 eine geaenderte Zahl statt einer Rekonstruktion.
 
+### Animiertes B-Roll und fertige Karussell-Bilder (seit 2026-10-12)
+
+**Oktober-Plan 13.–30.10.:** `outputs/content/KW42/markt.md` (Ziel 3'000 Follower, Hebel, Entscheide:
+Trial Reels täglich, keine Werbung, BIO 1×/Woche, Verlosung als Trial Reel) · `hooks.md` (Fassung 3:
+Tresor-Formeln aus `reference/content-tresor-reichweitenherz.md`, **kein Set 1**, Mikro statt Makro,
+Drei-Sekunden-Test, Du-Form erlaubt) · `beitraege-13-16.md`.
+**B-Roll animiert** (Patricia 11.10.): `scripts/content/kw42-brolls.py` baut je Reel über
+`broll-bauen.py` + `textebene.py` — Stil Marker/Serif im Wechsel (Serif nur Orange, Petrol/Dunkelblau
+fallen im Kontrast durch), Marker-Balken wischt unter dem schon lesbaren Hook auf, Aufruf als Chip
+mit Pop in den letzten 2,5 s (der `zusatz` wird beim Marker gar nicht gezeichnet), Verlosungs-Schritte
+nacheinander. Neu in `textebene.py`: Element-Feld `umbruch` (langer Chip bricht um statt abzuschneiden).
+Für den Upload mit crf 25 verkleinern (`video/output/broll/kw42-ig/`), Assets ≤ 15 MB.
+**Karussells „richtig gebaut“:** `scripts/karussell-render/folien.mjs` (Philosopher + Source Sans,
+`gross: true` für lesbare Fliesstexte) → JPEG-dataUrl je Folie nach `karussells/<id>/bilder/slide-NN`.
+Die Freigabe nimmt diese Bilder statt neu zu zeichnen (`fertigeFolien`). Folienzahl muss zur Zahl der
+`slides` passen. 🚨 Der Cockpit-Zeichner selbst kennt nur Georgia/Trebuchet und verkleinert den
+Versalien-Hook nur nach Höhe, nicht nach Breite — ein langes Wort („NETWORK-EINKOMMEN“) läuft in
+der Vorschau über den Rand; Leerzeichen nach dem Bindestrich lässt ihn umbrechen.
+🚨 **Bis Version 97 nahm die Freigabe die fertigen Bilder NIE** — `fertigeFolien()` rief
+`snap.forEach` auf, die Datenbank liefert `snap.docs`; der Fehler ging still im `.catch` unter.
+Behoben in Version 98 (`patch-fertige-folien-docs.py`, setzt `patch-fertige-folien.py` vom 22.09. voraus). Gegenprobe nach jeder Freigabe:
+`freigaben/<id>/bilder/slide-01` lesen und ansehen.
+
 ### Quellclip zurueckfinden (`scripts/content/quelle-finden.py`, seit 2026-09-19)
 
 Fuer fertige B-Rolls **ohne** Bauplan: findet Quellclip und Startzeit ueber
@@ -4054,6 +4077,17 @@ Tisch:** `patch-mein-tisch` → `patch-bereiche` → `patch-offene-chats` → `p
 `patch-erledigt` (Version 89: Unterreiter **Mama-CEO → Erledigt**, nach Tag gruppiert, Haken weg =
 zurück zu den offenen; Aufgaben und Tisch zeigen nur noch Offenes). ⚠️ Offen: Telegram-Sprachnachricht → Tisch (Bot schreibt heute nach Notion),
 Reiter im Academy-Aufbau mit Kursinhalt plus Helferinnen.
+
+### Reiter „Instagram → Zielgruppe & Markt“ (seit 2026-10-12, Version 96)
+
+Die Analysen aus Annas Kurs „Content Shortcut“ (Zielgruppe · Fragen · Wettbewerb · Trends,
+dazu „Auf einen Blick“ mit dem Abgleich zu Patricias Themen T1–T3) liegen als Markdown in
+`outputs/zielgruppen-research/2026-10-12-content-shortcut/` (**gitignored**, nennt fremde Coaches)
+und als `daten/zielgruppe` im Cockpit. `python scripts/cockpit/zielgruppe-bauen.py` →
+`ArtifactData set` → Reiter über `patch-zielgruppe.py` (Code in `zielgruppe-reiter.js/.css`,
+kleiner Markdown-Leser). Browser-Schlüssel `mlb:zg-markt`. **Quelle ist das Markdown.**
+⚠️ Offen: ob Säule 2 der Analyse (gegen Firma/Upline) provokativ sein darf — Patricia unschlüssig.
+Kursprompts zum Nachschlagen: `context/Kurse/aktuelle kurse/Content-Shortcut/`.
 
 ### Funnel-Checkliste und der Launch-Reiter (seit 2026-10-08)
 

@@ -33,7 +33,7 @@ eigene Insights vom 10.10. (60 Beiträge), Funnel-Abgleich vom 11.10.
 | # | Pain | Zitat | Fundort | Art |
 |---|---|---|---|---|
 | P1 | Sie steckt Herz und Zeit rein, und niemand reagiert | «Trotz allem Schade, wenn man so viel Arbeit und auch Herzblut reinsteckt und am Ende scheints niemanden zu interessieren...😢» | Kommentar Nischen-Scrape 04.10. | chronisch |
-| P2 | Das Umfeld nimmt sie nicht ernst | «Man wird belächelt und es wird quasi drauf gewartet, dass man scheitert.» | Kommentar Nischen-Scrape 04.10. · dazu Jennys Reel „Mein Mann hält nichts von meinem Business“ **933 Likes / 185 Kommentare** | chronisch |
+| P2 | Das Umfeld nimmt sie nicht ernst | «Man wird belächelt und es wird quasi drauf gewartet, dass man scheitert.» | Kommentar Nischen-Scrape 04.10. · dazu das Reel einer Network-Mentorin „Mein Mann hält nichts von meinem Business“ **933 Likes / 185 Kommentare** | chronisch |
 | P3 | Die Upline verlangt, was sich falsch anfühlt | «Hab gerade erst angefangen und genauso hat die Upline das gefordert.» | Kommentar Nischen-Scrape 04.10. | chronisch |
 | P4 | KI-Texte klingen nicht nach ihr | «Mich langweilt es so, dass alles gleich aussieht, gleich klingt» · «Mich hat Claude irgendwie nur noch gestresst.» | Kommentare Nischen-Scrape 04.10. | akut (passt zu Easy KI) |
 | P5 | „Lohnt sich das überhaupt?“ | Google-Vorschläge «network marketing lohnt sich das» · «network marketing aufhören» | Google-Autovervollständigung CH, 12.10. | chronisch |
@@ -74,7 +74,7 @@ nie als Werkzeug, sondern als **„die Zeit, die ich nicht mehr am Handy hänge�
 |---|---|---|
 | **Geständnis oder Gegner** im Hook | höchste Likes bei allen vier Konten | jeder Hook hat einen Gegner (Abhängigkeit, Ausrede, Methode), ein Geständnis oder ein wörtliches Kundinnen-Zitat |
 | **Polarisierung + Liste** im Karussell | „5 Dinge … bei denen Insta-Gurus Schnappatmung kriegen“ **1'020 Likes / 110 Kommentare** | Karussell-Cover trägt den ganzen Hook, Liste dahinter |
-| **Partner-Thema** | Jennys zweitbester Post aller Zeiten, seither **kaum wiederholt** | frei für dich, aus Sicht „führen statt rechtfertigen“ |
+| **Partner-Thema** | bei einer Network-Mentorin der zweitbeste Post aller Zeiten, seither **kaum wiederholt** | frei für dich, aus Sicht „führen statt rechtfertigen“ |
 | **Ein-Satz-Statement** als Bild | bei zwei Konten unter den besten aktuellen Beiträgen | Share-Format, wird an die Freundin geschickt |
 | Keyword-Reels | viele Kommentare, **kaum Likes und keine neue Reichweite** | Stichwort gezielt, nicht auf jedem Beitrag |
 | Einkommens-Belege, KI-Werkzeug-Erklärungen | schwächste Beiträge im Datensatz | weglassen |

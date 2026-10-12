@@ -378,6 +378,9 @@ def elemente_aufloesen(spec, woerter, video_dauer):
             # Prozent der Videobreite.
             "datei": e.get("datei", ""),
             "breite": float(e.get("breite", 72)),
+            # Langer Text darf umbrechen statt am Bildrand abzuschneiden
+            # (Verlosungs-Reel 12.10.: drei Schritte liefen ueber den Rand).
+            "umbruch": bool(e.get("umbruch")),
         })
     return fertig
 
@@ -501,6 +504,13 @@ def hook_anims(hook):
     s = hook["start"]
     if hook.get("sofort"):
         # Nur der CTA darf spaeter kommen, der Hook selbst steht ab Bild null.
+        # Beim Marker wischt der Balken trotzdem unter dem schon lesbaren Wort
+        # auf (Patricia 11.10.: „B-Roll will ich animiert haben") — der Text
+        # steht ab Bild null, nur die Farbflaeche kommt in 0,35 s dazu.
+        if hook["stil"] == "marker" and hook["betont"]:
+            z.append('      tl.fromTo(".hk-balken", {scaleX:0, rotate:-1.2}, '
+                     '{scaleX:1, rotate:-1.2, duration:0.35, ease:"power2.out", '
+                     'immediateRender:false}, %.3f);' % (s + 0.1))
         if hook["zusatz"]:
             ab, _ = zusatz_zeit(hook)
             z.append('      tl.from(".sf-zusatz", {opacity:0, y:12, duration:0.4, '
@@ -623,11 +633,12 @@ def element_html(e):
     return (
         '      <div id="%s-feld" class="clip" data-start="%.3f" data-duration="%.3f" '
         'style="z-index:6">\n'
-        '        <div id="%s" class="element" style="left:%.2f%%; top:%.2f%%; '
+        '        <div id="%s" class="element%s" style="left:%.2f%%; top:%.2f%%; '
         'padding:%s; border-radius:%s; %s">%s</div>\n'
         '      </div>'
-        % (e["id"], e["start"], e["dauer"], e["id"], e["x"], e["y"],
-           polster, radius, flaeche, inhalt))
+        % (e["id"], e["start"], e["dauer"], e["id"],
+           " umbruch" if e.get("umbruch") else "", e["x"], e["y"],
+           polster, "34px" if e.get("umbruch") else radius, flaeche, inhalt))
 
 
 def element_anims(e):
@@ -839,6 +850,14 @@ def baue_html(spec, video_name, person_name, video_dauer,
         white-space: nowrap;
         will-change: transform, opacity;
       }
+      .element.umbruch {
+        white-space: normal;
+        width: max-content;
+        max-width: 84%%;
+        text-align: center;
+        justify-content: center;
+      }
+      .element.umbruch .beschriftung { line-height: 1.18; }
       .element .punkt {
         display: block;
         width: 22px;

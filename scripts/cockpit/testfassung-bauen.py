@@ -73,6 +73,8 @@ SEEDS = {
     # 🚨 Ohne diesen Eintrag prueft die lokale Fassung den Funnel-Reiter
     # gegen einen alten Stand und zeigt andere Zahlen als das Cockpit.
     "funnel.json": "funnel",
+    # Instagram -> Zielgruppe & Markt (12.10.2026, zielgruppe-bauen.py)
+    "zielgruppe.json": "zg-markt",
 }
 
 
