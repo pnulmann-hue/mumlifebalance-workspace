@@ -7054,7 +7054,8 @@
     db.doc("karussells/" + id).collection("bilder").limit(30).get()
       .then(function (snap) {
         var gefunden = {};
-        snap.forEach(function (d) {
+        // 🚨 snap.docs, nicht snap.forEach — das gibt es hier nicht (12.10.2026).
+        (snap.docs || []).forEach(function (d) {
           var w = d.data && tief(d.data());
           if (/^slide-[0-9]{2}$/.test(d.id) && w && w.dataUrl) gefunden[d.id] = w.dataUrl;
         });
