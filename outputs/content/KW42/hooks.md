@@ -2,95 +2,115 @@
 tags: [content, hooks, mentoring]
 ---
 
-# Hooks Mentoring · 13.–30.10.2026
+# Hooks Mentoring · 13.–30.10.2026 (Fassung 2 · Mikro)
 
 **Grundlage:** [[markt]] · Hook-Maschine (`beispiele.py`, Stand 04.10.) · Zielgruppenanalyse
 Content-Shortcut 12.10. · Entscheide 12.10.: Trial Reels täglich, keine Werbung, BIO 1× pro
-Woche, Verlosung offen.
+Woche, **Verlosung als Trial Reel ab Mi 14.10.** (Ziehung Do 22.10.).
 
-**Was trägt (Zahlen 04.10.):** Frage in Zeile 1 **1,22** · Bekenntnis **1,16** · Identität
-**1,16** · Stufe 1 **1,20** · Gefühl Wut **1,65**, Verbundenheit **1,57** · im Markt Dialog
-**1,23**. **Was nicht trägt:** Du-Szene, Liste im Reel (0,45), Beweis (0,56), Stufe 4 (0,53).
+## Warum Fassung 2
 
-**Regel für jeden Hook (Analyse Abschnitt 12):** ein Gegner (Abhängigkeit, Ausrede, Methode —
-nie Firma, nie Upline, nie doTERRA), ein Geständnis oder ein wörtliches Zitat. Keine Du-Szene.
+Patricia, 12.10.: *„ich frage mich gerade, ob die hooks in der mikroebene sind oder noch zu
+fest in der makroebene“* — berechtigt. In Fassung 1 waren **17 von 28 Feed-Hooks und 12 von
+14 Trial Reels Makro**: Begriffe und Lehrsätze („Was bleibt von deinem Business, wenn …“,
+„Hobby oder Business? 7 Fragen“, „Niemand sucht nach Beraterin“). Viele stammten aus der
+Content-Shortcut-Analyse, die selbst in Slogans formuliert.
 
-Rhythmus: Mo · Mi · Fr Reel 21:00 · Di · Do Karussell 07:30 · je Woche 3 Lead (2× STIMME,
-1× BIO) + 2 Reichweite. Dazu Mo–Fr ein **Trial Reel** (nur Nicht-Followerinnen).
+**Mikro statt Makro** (Checkliste A2): der Schmerz so, wie er in *ihrem* Alltag aussieht —
+als Satz, den sie denkt oder hört, als Moment. **Prüffrage:** *Könnte sie diese Zeile so in
+ihr Tagebuch geschrieben oder so von jemandem gehört haben?*
 
----
+**Die Form:** ein Satz in Anführungszeichen, den sie denkt oder hört (Dialog trägt im Markt
+**1,23**, bei dir „Willst du nicht lieber was Richtiges machen?“ **2,2**) — **nicht** die
+Du-Diagnose „Du sitzt da und …“ (0,72, die Reels vom 7. und 8.10.). Danach eine Zeile, die
+dreht. Die Lösung bleibt draussen.
 
-## Feed — je Platz A und B (verschiedene Angles)
-
-| # | Tag | Format · Job | PIE | Hook | Form | Angle | Stufe | Vorbild (Faktor) | Marktbezug |
-|---|---|---|---|---|---|---|---|---|---|
-| 1A | Di 13.10. | Karussell · Reichweite | E | **Was bleibt von deinem Business, wenn morgen jemand anders die Regeln ändert?** | Frage | Neugier | 1 | nikoleta „70 % deines Teams…“ 1,79 · Frage Z1 1,22 | Analyse 4.5: diese Frage beantwortet im Feld niemand |
-| 1B | Di 13.10. | Karussell · Reichweite | E | **4 Sätze, an denen ich sehe, dass dein Profil von der Vorlage stammt und nicht von dir.** | Liste | Identität | 2 | reichweitenherz „Wenn ich diese 4 Dinge auf deinem Profil sehe…“ (163 L / 31 K) | Analyse 6.2: «Irgendwie sieht mein Profil aus wie alle anderen.» |
-| 2A | Mi 14.10. | Reel · Lead STIMME | P | **Alle haben gesagt, KI spart Zeit. Bei mir hat sie monatelang Zeit gekostet.** | Bekenntnis | Schmerz | 1 | „Ich hab mich lange geschämt…“ 6,42 | Kommentar: «Mich hat Claude irgendwie nur noch gestresst.» |
-| 2B | Mi 14.10. | Reel · Lead STIMME | E | **Wie oft hast du den KI-Text heute schon umgeschrieben, bevor du ihn gepostet hast?** | Frage | Neugier | 2 | „Willst du nicht lieber was Richtiges machen?“ 2,2 | Kommentar: «Mich langweilt es so, dass alles gleich … klingt» |
-| 3A | Do 15.10. | Karussell · Lead BIO | E | **4 Zeilen in deiner Bio, bei denen Fremde sofort weiterwischen.** | Liste | Neugier | 2 | fuehlbarmacherin „5 unsexy Dinge…“ 1,85 | Google «instagram bio vorlage» · Analyse 4.3 |
-| 3B | Do 15.10. | Karussell · Lead BIO | I | **Niemand sucht auf Instagram nach «Beraterin». Gesucht wird, was du löst.** | Meinung | Konträr | 1 | „Wenn du keine Kunden findest, ist nicht dein Produkt das Problem…“ 1,99 | Analyse 6.5: Bio-Vorlage gesucht, eigene Marke gebraucht |
-| 4A | Fr 16.10. | Reel · Reichweite | P | **Mein Mann hat lange gesagt, das sei ein Instagram-Ding. Heute macht er keinen Spruch mehr, obwohl ich noch weniger verdiene als im alten Job.** | Bekenntnis | Identität | 1 | „Als ich mich selbständig gemacht hab, hab ich es zuerst nicht mal meinem eigenen Mann erzählt.“ 5,02 | Jenny „Mein Mann hält nichts von meinem Business“ 933 L / 185 K, seither kaum besetzt |
-| 4B | Fr 16.10. | Reel · Reichweite | I | **«Ist das nicht einfach ein teures Hobby?» Den Satz kennt jede, die neben den Kindern etwas Eigenes aufbaut.** | Dialog | Identität | 1 | „Mama, warum lachst du eigentlich nie?“ 5,03 · Dialog Markt 1,23 | Kommentar: «Man wird belächelt und es wird quasi drauf gewartet, dass man scheitert.» |
-| 5A | Mo 19.10. | Reel · Lead BIO | P | **Was bei mir funktioniert hat? Ich hab aufgehört, mein Network zu erklären.** ♻️ | Frage + Bekenntnis | Identität | 1 | eigener Beitrag 14.9. — einziger mit 6 Speicherungen, 28 Tage vorbei | Analyse Säule 1: wiedererkennbar statt austauschbar |
-| 5B | Mo 19.10. | Reel · Lead BIO | E | **Würdest du dir folgen, wenn du nur deine Bio liest?** | Frage | Identität | 1 | Frage Z1 1,22 | Kommentar: «Könntest du mal über meine BIO schauen ❤️» |
-| 6A | Di 20.10. | Karussell · Reichweite | E | **Hobby oder Business? 7 Fragen, bei denen du dich ertappt fühlst.** | Liste · Selbsttest | Identität | 1 | fuehlbarmacherin „DEIN NETWORK SIEHT LEIDER AUS WIE HOBBY!“ 1,74 | Kommentar: «bei der vorletzten Slide hab ich mich ertappt gefühlt 🤣» |
-| 6B | Di 20.10. | Karussell · Reichweite | I | **«Ich mach das nur nebenbei» ist eine Zeitangabe. Keine Strategie.** | Meinung | Konträr | 1 | juliatrost „Geld macht nicht glücklich“ 6,38 | Analyse 6.3: die Weichmacher «nur nebenbei», «mal schauen» |
-| 7A | Mi 21.10. | Reel · Reichweite | P | **Ich konnte mit vier Kindern nicht regulär arbeiten gehen. Die Kinderbetreuung hätte mehr gekostet als mein Lohn.** | Bekenntnis | Identität | 1 | „Ich hab mich lange geschämt…“ 6,42 · Gefühl Verbundenheit 1,57 | Google «als mama nebenbei geld verdienen» · Analyse 2.3 Teilzeit |
-| 7B | Mi 21.10. | Reel · Reichweite | E | **Was bleibt dir, wenn dein Instagram morgen weg ist?** | Frage | Neugier | 1 | Frage Z1 1,22 | Analyse 4.5 · dein Satz: „Ich verlasse mich nicht auf Insta, ich habe eine Mailliste.“ |
-| 8A | Do 22.10. | Karussell · Lead STIMME | E | **Woran Fremde in zwei Sekunden merken, dass dein Text von der KI ist.** | Neugier | Neugier | 2 | „Achtung! Wenn du DAS verstanden hast…“ (88 L / 66 K) | Kommentar: «Ich schreibe meinen Content wieder komplett selbst seit einer Weile.» |
-| 8B | Do 22.10. | Karussell · Lead STIMME | P | **Die KI ist nur so schlau, wie du sie fütterst. Das hier hat ihr bei mir gefehlt.** | Bekenntnis | Neugier | 2 | „Nach 6 Jahren Network-Erfahrung würde ich NIE wieder…“ 1,63 | dein Satz (Interview): „die KI ist nur so schlau, wie wir ihr Inhalt geben“ |
-| 9A | Fr 23.10. | Reel · Lead STIMME | I | **Ich bin keine Technikerin. Ich hab vier Kinder und rund 18 Stunden die Woche, und trotzdem nimmt mir die KI jeden Morgen Arbeit ab.** | Bekenntnis | Identität | 1 | „Mein Weg war alles andere als Instalike…“ 9,45 | Gedanke: „Das ist was für Technikerinnen, nicht für eine Mama mit vier Kindern.“ |
-| 9B | Fr 23.10. | Reel · Lead STIMME | I | **Wofür würdest du die Zeit brauchen, wenn dir jemand jede Woche die Content-Planung abnimmt?** | Frage | Ergebnis | 1 | Frage Z1 1,22 · Ergebnis im Markt 1,10 | Analyse 7: «Ich will da sein, wenn die Kinder mich brauchen.» |
-| 10A | Mo 26.10. | Reel · Reichweite | P | **Mein erstes Network hab ich nach drei Jahren aufgegeben. Beim zweiten hab ich eine Sache anders gemacht.** | Bekenntnis | Neugier | 1 | „Nach 6 Jahren Network-Erfahrung…“ 1,63 · Bekenntnis 1,16 | Google «network marketing aufhören» |
-| 10B | Mo 26.10. | Reel · Reichweite | I | **Bei uns redet man nicht über Geld. Vielleicht haben Frauen darum so wenig davon.** | Meinung | Konträr | 1 | „Geld macht nicht glücklich“ 6,38 | Analyse 6.6 Swiss Angle · Vorsorgelücke Mütter CH |
-| 11A | Di 27.10. | Karussell · Lead BIO | E | **Fremde entscheiden über dein Profil, bevor sie einen einzigen Beitrag lesen. Das sehen sie zuerst.** | Neugier | Neugier | 2 | „Achtung! Wenn du DAS verstanden hast…“ | Kommentar: «Das "lohnt" sich wahrscheinlich erst, wenn ich mehr Follower habe - oder?» |
-| 11B | Di 27.10. | Karussell · Lead BIO | I | **Dein Profil ist dein Schaufenster. Was hängt bei dir gerade drin?** | Frage | Identität | 1 | Frage Z1 1,22 · deine Schaufenster-Metapher | Analyse 6.2: «Irgendwie sieht mein Profil aus wie alle anderen.» |
-| 12A | Mi 28.10. | Reel · Lead STIMME | E | **«Mich hat die KI irgendwie nur noch gestresst.» Wenn du das kennst, liegt es nicht an dir.** | Dialog | Schmerz | 2 | Dialog Markt 1,23 · Verständnis 1,41 | wörtlicher Kommentar aus der Nische (Scrape 04.10.) |
-| 12B | Mi 28.10. | Reel · Lead STIMME | P | **Ich hab der KI zuerst beigebracht, wie ich klinge. Erst danach durfte sie schreiben.** | Bekenntnis | Ergebnis | 2 | Bekenntnis 1,16 | Analyse Säule 1: «eigene Stimme trotz KI» |
-| 13A | Do 29.10. | Karussell · Reichweite | E | **Mehr als die Hälfte der Frauen in der Schweiz arbeitet Teilzeit. Darum darf dein Business kein Hobby bleiben.** ⚠️ Zahl vor dem Bau mit BFS-Quelle prüfen | Zahl + Meinung | Konträr | 1 | „70 % deines Teams ist nach einem Jahr weg…“ 1,79 | Analyse 2.3 · Lohncheck.ch April 2026 |
-| 13B | Do 29.10. | Karussell · Reichweite | I | **Aufhören ist manchmal richtig. Aber selten aus den Gründen, die wir uns erzählen.** | Meinung | Konträr | 1 | reichweitenherz „Wenn du gerade dein Business hinschmeissen willst…“ 1,6 | Google «network marketing aufhören» |
-| 14A | Fr 30.10. | Reel · Lead STIMME | P | **Mein Morgen-Briefing ist um halb sieben auf dem Handy. Da hab ich noch keinen Finger gerührt.** | Ereignis | Ergebnis | 1 | „Ich hab mein Auto nicht abgestellt…“ 11,07 (Ereignis) | Analyse 3.1: «Ich war heute wieder die ganze Zeit am Handy statt bei den Kindern.» |
-| 14B | Fr 30.10. | Reel · Lead STIMME | I | **Was würdest du mit der Zeit machen, die du heute mit Umschreiben verloren hast?** | Frage | Ergebnis | 1 | Frage Z1 1,22 | Kommentar: «Mich hat Claude irgendwie nur noch gestresst.» |
-
-**Falls die Verlosung kommt:** Fr 16.10. wird der Verlosungs-Beitrag, 4A rückt auf Mo 26.10.
-(10A dann als Trial Reel).
+**Woher die Sätze kommen:** wörtliche Kommentare aus der Nische (Scrape 04.10.) · deine echten
+Mentee-Fragen (Vollprofil: „Wie finde ich Kunden?“, „Was poste ich jetzt?“) · deine eigenen
+belegten Sätze · die typischen Sätze aus der Analyse (6.2), die als *ihre* Gedanken stehen.
+Erfunden wird nichts über **dich**.
 
 ---
 
-## Trial Reels — Mo–Fr, nur Nicht-Followerinnen (B-Roll, ein Block, ab Bild null)
+## Feed — je Platz A und B
 
-Polarisierender als im Feed, weil sie deine Community nicht sieht. Gegner sind immer
-Abhängigkeiten und Ausreden, nie eine Firma. CTA: „Schick das der Freundin, die gerade
-aufhören will“ + letzte Zeile „Folg mir, wenn du dir etwas Eigenes aufbauen willst.“
-Der Hook mit der besten Reichweite nach 48 h kommt in den Feed.
+| # | Tag | Format · Job | Hook | Mikro-Beleg | Angle |
+|---|---|---|---|---|---|
+| 1A | Di 13.10. | Karussell · Reichweite | **«Das Produkt wird aus dem Sortiment genommen.» Und auf einmal merkst du, wie viel von deinem Business an diesem einen Produkt hing.** | dein Kurs-Beispiel „Produkt aus dem Sortiment genommen“ (Expertise) | Neugier |
+| 1B | Di 13.10. | Karussell · Reichweite | **«Ich poste einfach, was in die Teamgruppe kommt.» Genau deshalb sieht dein Profil aus wie das von allen anderen im Team.** | Analyse 6.2 «Irgendwie sieht mein Profil aus wie alle anderen» | Identität |
+| 2A | Mi 14.10. | Reel · Lead STIMME | **«Alle sagen, KI spart Zeit. Bei mir kostet sie welche.»** | Monatsplan Oktober, ihr Satz | Schmerz |
+| 2B | Mi 14.10. | Reel · Lead STIMME | **Dritter Versuch, und die KI schreibt immer noch «Ich freue mich, dir heute zu zeigen …».** | Kommentar «Mich langweilt es so, dass alles gleich … klingt» | Schmerz |
+| 3A | Do 15.10. | Karussell · Lead BIO | **«Könntest du mal über meine Bio schauen?» Das sehe ich als Erstes, wenn ich draufschaue.** | wörtlicher Kommentar aus der Nische | Neugier |
+| 3B | Do 15.10. | Karussell · Lead BIO | **«Wie finde ich Kunden?» Die Frage höre ich am häufigsten. Meine Antwort fängt bei deiner Bio an.** | deine Top-Mentee-Frage (Vollprofil) | Neugier |
+| 4A | Fr 16.10. | Reel · Reichweite | **Mein Mann hat lange gesagt, das sei ein Instagram-Ding. Heute macht er keinen Spruch mehr, obwohl ich noch weniger verdiene als im alten Job.** | dein Interview A8, freigegeben | Identität |
+| 4B | Fr 16.10. | Reel · Reichweite | **«Ist das nicht einfach ein teures Hobby?» Den Satz kennt jede, die neben den Kindern etwas Eigenes aufbaut.** | Kommentar «Man wird belächelt …» | Identität |
+| 5A | Mo 19.10. | Reel · Lead BIO | **Was bei mir funktioniert hat? Ich hab aufgehört, mein Network zu erklären.** ♻️ | dein Beitrag 14.9., 6 Speicherungen | Identität |
+| 5B | Mo 19.10. | Reel · Lead BIO | **«Irgendwie sieht mein Profil aus wie alle anderen.» Wenn du das schon mal gedacht hast, fang bei deiner Bio an.** | Analyse 6.2 | Identität |
+| 6A | Di 20.10. | Karussell · Reichweite | **«Und, verdienst du damit eigentlich was?» Wenn du bei der Frage das Thema wechselst, ist dieser Test für dich.** | Analyse 3.2: «sage ich gut und wechsle das Thema» | Identität |
+| 6B | Di 20.10. | Karussell · Reichweite | **«Ich mach das nur nebenbei.» Das ist eine Zeitangabe. Keine Strategie.** | Analyse 6.3, ihr Weichmacher | Konträr |
+| 7A | Mi 21.10. | Reel · Reichweite | **Ich konnte mit vier Kindern nicht regulär arbeiten gehen. Die Kinderbetreuung hätte mehr gekostet als mein Lohn.** | dein Vollprofil | Identität |
+| 7B | Mi 21.10. | Reel · Reichweite | **«Was, wenn mein Konto morgen gesperrt ist?» Bei mir wäre dann nicht alles weg.** | dein Satz: „Ich verlasse mich nicht auf Insta, ich habe eine Mailliste.“ | Neugier |
+| 8A | Do 22.10. | Karussell · Lead STIMME | **«Das klingt irgendwie gar nicht nach mir.» Und dann schreibst du den KI-Text halt doch wieder selbst.** | Kommentar «Ich schreibe meinen Content wieder komplett selbst» | Schmerz |
+| 8B | Do 22.10. | Karussell · Lead STIMME | **«Ich hab ihr doch gesagt, sie soll locker schreiben.» Und trotzdem klingt es wie ein Prospekt.** | Kommentar «Mich hat Claude irgendwie nur noch gestresst» | Schmerz |
+| 9A | Fr 23.10. | Reel · Lead STIMME | **Ich bin keine Technikerin. Ich hab vier Kinder und rund 18 Stunden die Woche, und trotzdem nimmt mir die KI jeden Morgen Arbeit ab.** | deine Fakten | Identität |
+| 9B | Fr 23.10. | Reel · Lead STIMME | **«Was poste ich heute bloss?» Die Frage höre ich von Networkerinnen am häufigsten.** | deine Top-Mentee-Frage | Neugier |
+| 10A | Mo 26.10. | Reel · Reichweite | **Mein erstes Network hab ich nach drei Jahren aufgegeben. Beim zweiten hab ich eine Sache anders gemacht.** | dein Vollprofil | Neugier |
+| 10B | Mo 26.10. | Reel · Reichweite | **«Wir können diesen Monat nicht auswärts essen.» Den Satz kenne ich. Ich hab ihn selbst gesagt.** | dein Vollprofil | Identität |
+| 11A | Di 27.10. | Karussell · Lead BIO | **«Ich weiss gar nicht, was ich in meine Bio schreiben soll.» Und deshalb steht da seit Monaten dasselbe.** | Google «instagram bio vorlage» | Schmerz |
+| 11B | Di 27.10. | Karussell · Lead BIO | **«Was machst du eigentlich genau?» Wenn deine Bio darauf keine Antwort gibt, fragt bald niemand mehr.** | Satz, den sie im Umfeld hört | Neugier |
+| 12A | Mi 28.10. | Reel · Lead STIMME | **«Mich hat die KI irgendwie nur noch gestresst.» Wenn du das kennst, liegt es nicht an dir.** | wörtlicher Kommentar | Schmerz |
+| 12B | Mi 28.10. | Reel · Lead STIMME | **Ich hab der KI zuerst beigebracht, wie ich klinge. Erst danach durfte sie schreiben.** | dein Vorgehen | Ergebnis |
+| 13A | Do 29.10. | Karussell · Reichweite | **Der Vorsorgeausweis liegt auf dem Küchentisch, und bei deinem Teilzeitpensum steht da eine Zahl, die du lieber nicht gesehen hättest.** | Analyse 2.3 · Swiss Angle | Schmerz |
+| 13B | Do 29.10. | Karussell · Reichweite | **«Vielleicht sollte ich einfach aufhören.» Bevor du das tust, beantworte diese sechs Fragen.** | Analyse 3.2 · Google «network marketing aufhören» | Identität |
+| 14A | Fr 30.10. | Reel · Lead STIMME | **Mein Morgen-Briefing ist um halb sieben auf dem Handy. Da hab ich noch keinen Finger gerührt.** | dein Cockpit-Bot | Ergebnis |
+| 14B | Fr 30.10. | Reel · Lead STIMME | **«Noch ein Abo, noch ein Tool, noch mehr Kosten.» Hier ist meine ehrliche Rechnung.** | Launch-Kalender, ihr Gedanke · echte Abo-Zahlen aus dem Kurs | Schmerz |
 
-| # | Tag | Hook | Säule | Quelle |
-|---|---|---|---|---|
-| T1 | Di 13.10. | Dein Business gehört dir erst, wenn es eine Änderung der Spielregeln überlebt. | Plan B | Analyse Säule 2 |
-| T2 | Mi 14.10. | Wenn du mit deinem Business nur deine eigene Bestellung bezahlst, hast du ein Abo. Kein Business. | Plan B | Analyse Säule 2 |
-| T3 | Do 15.10. | Niemand kommt und rettet dein Business. Auch nicht die nächste Firma. | Eigenverantwortung | Analyse Säule 4 · dein Satz „Niemand wird kommen und dich retten.“ |
-| T4 | Fr 16.10. | Deine Freundinnen sind nicht deine Zielgruppe. Und das ist eine gute Nachricht. | Mama-Alltag | Analyse Säule 3 |
-| T5 | Mo 19.10. | Hör auf, dein Business zu rechtfertigen. Fang an, es zu führen. | Mama-Alltag | Analyse Säule 3 |
-| T6 | Di 20.10. | Alle liken, niemand kauft? Dann unterhältst du, statt zu helfen. | Personal Brand | Analyse Säule 1 |
-| T7 | Mi 21.10. | Wenn du nur Geld verdienst, solange du online bist, hast du keinen Job von zu Hause. Du hast einen Nachtdienst. | Plan B | Analyse Säule 2 |
-| T8 | Do 22.10. | Die neue Firma löst dein Problem nicht. Du nimmst es mit. | Eigenverantwortung | Analyse 6.5 |
-| T9 | Fr 23.10. | «Mit 45 will ich nicht immer noch hier stehen.» Dann darf sich ab heute etwas ändern. | Eigenverantwortung | Analyse 3.1 |
-| T10 | Mo 26.10. | Du musst nicht mehr machen. Du musst es ernster machen. | Eigenverantwortung | Analyse Säule 4 |
-| T11 | Di 27.10. | Vielleicht bist du nicht gemacht dafür. Oder du hast es nie wie ein Business geführt. | Eigenverantwortung | Analyse 3.1 |
-| T12 | Mi 28.10. | Was bleibt von deinem Business, wenn die Firma morgen den Plan ändert? | Plan B | Analyse 4.5 — bewusst der Gegentest zu 1A |
-| T13 | Do 29.10. | Dein Mann sagt, es ist ein Hobby? Dann rechtfertige dich nicht. Zeig ihm, was du aufbaust. | Mama-Alltag | Analyse 8.1 |
-| T14 | Fr 30.10. | Du postest jeden Tag Produkte, und das Einzige, was wächst, ist dein schlechtes Gewissen. | Mama-Alltag | Analyse Säule 3 |
+---
+
+## Trial Reels — Mo–Fr, nur Nicht-Followerinnen (B-Roll, animiert, Hook ab Bild null)
+
+CTA: „Schick das der Freundin, die gerade aufhören will“ + letzte Zeile „Folg mir, wenn du
+dir etwas Eigenes aufbauen willst.“ Der Hook mit der besten Reichweite nach 48 h kommt in den Feed.
+
+| # | Tag | Hook |
+|---|---|---|
+| T1 | Di 13.10. | «Ab nächstem Monat gilt ein neuer Bonusplan.» Und dein ganzes Business hängt an dieser einen Mail. |
+| **T2** | **Mi 14.10.** | **🎁 Verlosung: ein Platz in meinem KI-Kurs** — siehe unten |
+| T3 | Do 15.10. | «Ich bestell halt jeden Monat selber.» Dann ist es kein Business. Dann ist es ein Abo. |
+| T4 | Fr 16.10. | «Meine Freundinnen reagieren komisch, seit ich das mache.» Dann sind sie nicht deine Zielgruppe. Und das ist gut so. |
+| T5 | Mo 19.10. | «Ich hab schon allen geschrieben, die ich kenne.» Und jetzt? |
+| T6 | Di 20.10. | «Alle liken, niemand kauft.» Dann unterhältst du, statt zu helfen. |
+| T7 | Mi 21.10. | «Ich arbeite halt abends, wenn die Kinder schlafen.» Dann hast du keinen Job von zu Hause. Du hast einen Nachtdienst. |
+| T8 | Do 22.10. | «Bei der neuen Firma wird alles anders.» Nicht, wenn du dasselbe machst. |
+| T9 | Fr 23.10. | «Mit 45 will ich nicht immer noch hier stehen.» Dann darf sich ab heute etwas ändern. |
+| T10 | Mo 26.10. | «Ich probier's noch ein paar Monate.» Den Satz hast du letztes Jahr auch gesagt. |
+| T11 | Di 27.10. | «Vielleicht bin ich einfach nicht gemacht dafür.» Oder du hast es nie wie ein Business geführt. |
+| T12 | Mi 28.10. | «Was mach ich, wenn die Firma den Plan ändert?» — Gegentest zu 1A |
+| T13 | Do 29.10. | «Mein Mann nennt es mein Hobby.» Dann rechtfertige dich nicht. Zeig ihm, was du aufbaust. |
+| T14 | Fr 30.10. | «Ich war heute wieder die ganze Zeit am Handy statt bei den Kindern.» Und verkauft hast du trotzdem nichts. |
+
+### T2 · Die Verlosung (Patricias Go, 12.10.)
+
+| | |
+|---|---|
+| **Start** | Mi 14.10., als Trial Reel (nur Nicht-Followerinnen) |
+| **Teilnahme** | folgen + kommentieren, welche Arbeit dir die KI als Erstes abnehmen soll (filtert Gewinnspieljägerinnen, liefert Kundensprache) |
+| **Teilen** | **Bedingung** (Patricias Entscheid 12.10.): „Teile das Reel mit einer Freundin, die auch im Network ist.“ Nicht nachprüfbar, darum wird niemand deswegen ausgeschlossen |
+| **Ziehung** | Do 22.10. abends in der Story, Gewinnerin per Nachricht |
+| **Kleingedrucktes** | Teilnahme gratis, ohne Kauf · steht in keiner Verbindung zu Instagram · ⚠️ gewinnt eine Käuferin: Vorschlag, sie verschenkt den Platz an eine Freundin (Patricias Antwort offen) |
+| **Kursname** | im Trial Reel erlaubt, weil es deine Followerinnen nicht sehen |
 
 ---
 
 ## Letzter Check (fünf Fragen) — Befund
 
-- **Schmerz getroffen:** ja bei allen, Reichweiten-Hooks über Identität und Umfeld.
-- **„Wieso weiss die, was ich denke“:** gestützt auf wörtliche Kommentare und Google-Suchen, je Zeile belegt.
-- **Küchentisch:** keine Fachwörter in Zeile 1 (kein Funnel, Lead, Positionierung).
-- **Bindewörter gegengelesen:** 4A *obwohl* = er macht keine Sprüche mehr **trotz** weniger Geld — stimmt so. 9A *trotzdem* = keine Technikerin, vier Kinder, **und doch** nimmt die KI Arbeit ab — stimmt so. 13B *aber* = echter Gegensatz.
-- **Lösung draussen:** kein Hook nennt Stimm-Check, Kurs, Bio-Check oder KI-Arbeitsplatz.
-
-**Bewusst weggelassen:** „Mein Mann hat irgendwann die Zahlen gesehen“ (nicht wahr) · Firmen- und
-Upline-Kritik · Schwiegermutter · erfundene Kinderszenen („drei Kinder mit Fieber“) · „vierstellig“.
+- **Mikro-Prüffrage:** jede Zeile ist ein Satz, den sie denkt oder hört, oder ein belegter
+  Moment aus deinem Leben. Keine Du-Diagnose als Einstieg.
+- **Bindewörter:** 4A *obwohl* = trotz weniger Geld keine Sprüche mehr — stimmt. 8B *trotzdem* =
+  sie hat es gesagt, und doch klingt es steif — stimmt. 9A *trotzdem* = keine Technikerin und
+  doch — stimmt. T14 *trotzdem* = den ganzen Tag dran und doch nichts verkauft — stimmt.
+- **Lösung draussen:** kein Hook nennt Stimm-Check, Kurs, Bio-Check oder KI-Arbeitsplatz
+  (ausser T2, der Verlosung, mit Absicht).
+- **Zielgruppen-Ebene:** „Kunden“ nur im Zitat ihrer eigenen Frage (3B).
+- **Bewusst weggelassen:** „Mein Mann hat irgendwann die Zahlen gesehen“ (nicht wahr) ·
+  Firmen- und Upline-Kritik · Schwiegermutter · erfundene Szenen aus deinem Leben · „vierstellig“.
