@@ -1945,6 +1945,42 @@
     .la-zahl { font-size: 30px; }
     .la-del { margin-left: 0; }
   }
+  /* ---------- Zielgruppe & Markt (12.10.2026) ---------- */
+  .zg-hinweis { margin-bottom: 16px; font-size: 13px; line-height: 1.55;
+                border-left: 3px solid var(--orange); }
+  .zg-teil { margin-bottom: 12px; padding: 0; }
+  .zg-teil > summary { display: flex; flex-direction: column; gap: 3px; cursor: pointer;
+                       list-style: none; padding: 14px 18px 14px 36px; position: relative; }
+  .zg-teil > summary::-webkit-details-marker { display: none; }
+  .zg-teil > summary::before { content: "\25b6"; position: absolute; left: 16px; top: 18px;
+                               font-size: 10px; color: var(--ink-soft);
+                               transition: transform 0.15s ease; }
+  .zg-teil[open] > summary::before { transform: rotate(90deg); }
+  .zg-titel { font-family: var(--display); font-size: 18px; }
+  .zg-kurz { font-size: 13px; color: var(--ink-soft); }
+  .zg-inhalt { padding: 4px 18px 18px; border-top: 1px solid var(--line);
+               font-size: 14px; line-height: 1.6; max-width: 980px; }
+  .zg-inhalt h3 { font-family: var(--display); font-weight: normal; font-size: 19px;
+                  margin: 22px 0 8px; }
+  .zg-inhalt h4 { font-size: 15px; margin: 18px 0 6px; }
+  .zg-inhalt h5 { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+                  color: var(--ink-soft); margin: 14px 0 6px; }
+  .zg-inhalt p { margin: 8px 0; }
+  .zg-inhalt ul, .zg-inhalt ol { margin: 8px 0; padding-left: 22px; }
+  .zg-inhalt li { margin: 3px 0; }
+  .zg-inhalt hr { border: 0; border-top: 1px solid var(--line); margin: 18px 0; }
+  .zg-inhalt blockquote { margin: 10px 0; padding: 8px 14px; background: var(--surface-2);
+                          border-left: 3px solid var(--teal); border-radius: 0 8px 8px 0; }
+  .zg-inhalt code { font-size: 12px; background: var(--surface-2); padding: 1px 5px; border-radius: 4px; }
+  .zg-tab { overflow-x: auto; margin: 10px 0 14px; border: 1px solid var(--line); border-radius: 8px; }
+  .zg-tab table { border-collapse: collapse; width: 100%; font-size: 13px; min-width: 520px; }
+  .zg-tab th { text-align: left; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+               color: var(--ink-soft); background: var(--surface-2); padding: 7px 10px; }
+  .zg-tab td { padding: 7px 10px; border-top: 1px solid var(--line); vertical-align: top; }
+  @media (max-width: 760px) {
+    .zg-inhalt { padding: 4px 12px 14px; }
+    .zg-teil > summary { padding: 12px 12px 12px 32px; }
+  }
 </style>
 
 <div class="shell">
@@ -2792,6 +2828,7 @@
     { id: "gepostet", label: "Ausgewertet" },
     { id: "ideenkasten", label: "Ideenkasten" },
     { id: "ideenextern", label: "Ideen von anderen" },
+    { id: "markt", label: "Zielgruppe & Markt" },
     { g: "Planung" },
     { id: "launches", label: "Jahresplan" },
     { id: "monatsbogen", label: "Monatsbogen" },
@@ -3021,6 +3058,7 @@
      das Cockpit nicht, dass Beitrag X und Post Y dasselbe sind. */
   var igZuordnung = { zuordnung: {}, nicht_pruefbar: [] };
   var ideenExtern = { ideen: [] };
+  var zgDaten = null;
 
   /* Befunde aus dem Workspace-Abgleich. 🚨 Sie liegen NEBEN Jahresplan und
      Zielen, nicht darin — die beiden gehoeren Patricia. Siehe Kopf von
@@ -4451,6 +4489,161 @@
     return karte;
   }
 
+  /* ======================================================================
+     Reiter "Zielgruppe & Markt" — Instagram -> Zielgruppe & Markt
+     (seit 12.10.2026, patch-zielgruppe.py)
+
+     Zeigt das Dokument daten/zielgruppe: fuenf Teile aus den
+     Content-Shortcut-Analysen, je als aufklappbare Karte. Der Inhalt ist
+     Markdown und wird hier mit einem kleinen Leser in HTML verwandelt —
+     Ueberschriften, Tabellen, Listen, Zitate, fett und kursiv. Mehr braucht
+     es nicht, und alles wird vorher maskiert.
+
+     Die Quelle sind die Markdown-Dateien im Workspace, nicht das Cockpit.
+     Erzeugt von zielgruppe-bauen.py.
+     ====================================================================== */
+  function zgInline(s) {
+    var t = esc(s);
+    t = t.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    t = t.replace(/(^|[^*\w])\*([^*\n]+)\*(?!\w)/g, "$1<em>$2</em>");
+    t = t.replace(/`([^`]+)`/g, "<code>$1</code>");
+    return t;
+  }
+
+  function zgZellen(zeile) {
+    var z = zeile.trim();
+    if (z.charAt(0) === "|") z = z.slice(1);
+    if (z.charAt(z.length - 1) === "|") z = z.slice(0, -1);
+    return z.split("|").map(function (c) { return c.trim(); });
+  }
+
+  function zgMarkdown(md) {
+    var zeilen = String(md || "").replace(/\r/g, "").split("\n");
+    var aus = [];
+    var absatz = [];
+    var i = 0;
+
+    function absatzZu() {
+      if (absatz.length) {
+        aus.push("<p>" + zgInline(absatz.join(" ")) + "</p>");
+        absatz = [];
+      }
+    }
+
+    while (i < zeilen.length) {
+      var z = zeilen[i];
+      var leer = !z.trim();
+
+      if (leer) { absatzZu(); i++; continue; }
+
+      if (/^---+\s*$/.test(z)) { absatzZu(); aus.push("<hr>"); i++; continue; }
+
+      var h = z.match(/^(#{2,4})\s+(.*)$/);
+      if (h) {
+        absatzZu();
+        var stufe = h[1].length + 1;
+        aus.push("<h" + stufe + ">" + zgInline(h[2]) + "</h" + stufe + ">");
+        i++; continue;
+      }
+
+      if (/^\s*\|/.test(z) && i + 1 < zeilen.length && /^\s*\|[\s:|-]+\|?\s*$/.test(zeilen[i + 1])) {
+        absatzZu();
+        var kopf = zgZellen(z);
+        i += 2;
+        var html = '<div class="zg-tab"><table><thead><tr>' +
+          kopf.map(function (c) { return "<th>" + zgInline(c) + "</th>"; }).join("") +
+          "</tr></thead><tbody>";
+        while (i < zeilen.length && /^\s*\|/.test(zeilen[i])) {
+          html += "<tr>" + zgZellen(zeilen[i]).map(function (c) {
+            return "<td>" + zgInline(c) + "</td>";
+          }).join("") + "</tr>";
+          i++;
+        }
+        aus.push(html + "</tbody></table></div>");
+        continue;
+      }
+
+      if (/^>\s?/.test(z)) {
+        absatzZu();
+        var zitat = [];
+        while (i < zeilen.length && /^>\s?/.test(zeilen[i])) {
+          zitat.push(zeilen[i].replace(/^>\s?/, ""));
+          i++;
+        }
+        aus.push("<blockquote>" + zgMarkdown(zitat.join("\n")) + "</blockquote>");
+        continue;
+      }
+
+      if (/^\s*[-*]\s+/.test(z) || /^\s*\d+\.\s+/.test(z)) {
+        absatzZu();
+        var nummer = /^\s*\d+\.\s+/.test(z);
+        var punkte = [];
+        while (i < zeilen.length && (nummer ? /^\s*\d+\.\s+/ : /^\s*[-*]\s+/).test(zeilen[i])) {
+          punkte.push(zeilen[i].replace(/^\s*([-*]|\d+\.)\s+/, ""));
+          i++;
+        }
+        var tag = nummer ? "ol" : "ul";
+        aus.push("<" + tag + ">" + punkte.map(function (p) {
+          return "<li>" + zgInline(p) + "</li>";
+        }).join("") + "</" + tag + ">");
+        continue;
+      }
+
+      absatz.push(z.trim());
+      i++;
+    }
+    absatzZu();
+    return aus.join("\n");
+  }
+
+  function renderZielgruppe(main) {
+    var doc = zgDaten || {};
+    var teile = doc.teile || [];
+
+    main.innerHTML =
+      '<div class="page-head"><div><h1>Zielgruppe &amp; Markt</h1>' +
+      '<p>Was deine Zielgruppe denkt, fragt und sucht, was die anderen in deiner ' +
+      'Nische machen und wohin der Markt geht. Zum Nachschlagen beim Schreiben ' +
+      'von Hooks, Captions und Kurslektionen.</p></div></div>' +
+      '<div class="tiles">' +
+        tile("Stand", doc.stand ? fmtDate(doc.stand) : "—", "Content-Shortcut-Analyse") +
+        tile("Nächste Prüfung", esc(doc.naechste_pruefung || "—"), "mit eigenen Insights") +
+      '</div>' +
+      '<div class="panel zg-hinweis"><strong>Abgeleitet, nicht erfragt.</strong> ' +
+      'Fragen und Begriffe kommen aus Google-Suchvorschlägen, Erfahrungsberichten ' +
+      'und den Beiträgen von vier Konten. Persona, Gedanken und Sehnsüchte sind ' +
+      'daraus abgeleitet und keine Zitate. Vor einem Hook gegen deine Regeln lesen ' +
+      '(siehe „Auf einen Blick“).</div>' +
+      '<div id="zgliste"></div>';
+
+    var box = main.querySelector("#zgliste");
+    if (!teile.length) {
+      box.innerHTML = '<div class="panel"><div class="empty">Noch nichts da. ' +
+        'Bauen mit <code>python scripts/cockpit/zielgruppe-bauen.py</code>, ' +
+        'dann in die Datenbank unter daten/zielgruppe.</div></div>';
+      return;
+    }
+
+    teile.forEach(function (t, n) {
+      var d = document.createElement("details");
+      d.className = "panel zg-teil";
+      if (n === 0) d.open = true;
+      d.innerHTML =
+        '<summary><span class="zg-titel">' + esc(t.titel) + '</span>' +
+        '<span class="zg-kurz">' + esc(t.kurz || "") + '</span></summary>' +
+        '<div class="zg-inhalt"></div>';
+      var gemalt = false;
+      function malen() {
+        if (gemalt || !d.open) return;
+        d.querySelector(".zg-inhalt").innerHTML = zgMarkdown(t.md);
+        gemalt = true;
+      }
+      d.addEventListener("toggle", malen);
+      malen();
+      box.appendChild(d);
+    });
+  }
+
   /* Reiter „Ideen von anderen": was bei den beobachteten Profilen deutlich
      ueber deren eigenem Schnitt lag. Gebaut von ideen-extern-bauen.py.
      Siehe Kopf von patch-ideen-extern.py, warum der Reiter bewusst nicht
@@ -4954,7 +5147,7 @@
   var BEREICHE = [
     { id: "tisch", label: "Mein Tisch", tabs: ["uebersicht"] },
     { id: "instagram", label: "Instagram", saeule: "Instagram",
-      tabs: ["woche", "studio", "storys", "reels", "fertig", "gepostet", "ideenkasten", "ideenextern"] },
+      tabs: ["woche", "studio", "storys", "reels", "fertig", "gepostet", "ideenkasten", "ideenextern", "markt"] },
     { id: "produkte", label: "Produkte", saeule: "Produkte",
       tabs: ["katalog", "produkte", "links", "launch", "funnel", "mailings", "leads", "kurse"] },
     { id: "mamaceo", label: "Mama-CEO", saeule: "Mama-CEO",
@@ -13837,6 +14030,7 @@
     else if (activeTab === "ziele") renderZiele(main);
     else if (activeTab === "woche") renderWoche(main);
     else if (activeTab === "ideenextern") renderIdeenExtern(main);
+    else if (activeTab === "markt") renderZielgruppe(main);
     else if (activeTab === "fertig") renderFertig(main);
     else if (activeTab === "gepostet") renderGepostet(main);
     else if (activeTab === "zahlen") renderZahlen(main);
@@ -13867,6 +14061,7 @@
   freigaben = lsGet("freigaben", {}) || {};
   igZuordnung = lsGet("ig-zuordnung", { zuordnung: {} }) || { zuordnung: {} };
   ideenExtern = lsGet("ideen-extern", { ideen: [] }) || { ideen: [] };
+  zgDaten = lsGet("zg-markt", null);
   planungAbgleich = lsGet("planung-abgleich", { jahresplan: {}, ziele: {} })
     || { jahresplan: {}, ziele: {} };
   Object.assign(settings, lsGet("einstellungen", {}) || {});
@@ -13990,6 +14185,12 @@
         planungAbgleich = tief(snap.data()) || { jahresplan: {}, ziele: {} };
         lsSet("planung-abgleich", planungAbgleich);
         if (activeTab === "launches" || activeTab === "ziele") render();
+      }, function () {});
+      db.doc("daten/zielgruppe").onSnapshot(function (snap) {
+        if (!snap.exists) return;
+        zgDaten = tief(snap.data()) || null;
+        lsSet("zg-markt", zgDaten);
+        if (activeTab === "markt") render();
       }, function () {});
       db.doc("daten/ideen-extern").onSnapshot(function (snap) {
         if (!snap.exists) return;
