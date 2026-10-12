@@ -15,6 +15,10 @@ Auto-Index aller Files in `outputs/telegram-posts/`. Siehe [[_MOCs/MOC-Content-E
 - [[fruehling-2026-alle-beitraege]]
 - [[fruehling-2026-zusatz-enjoils]]
 
+### 📁 herbst-2026
+
+- [[herbst-2026-alle-beitraege]]
+
 ### 📁 sommer-2026
 
 - [[sommer-2026-alle-beitraege]]
