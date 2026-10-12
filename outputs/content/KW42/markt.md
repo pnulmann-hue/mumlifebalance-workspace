@@ -19,7 +19,7 @@ eigene Insights vom 10.10. (60 Beiträge), Funnel-Abgleich vom 11.10.
 | Reichweite kommt, Reaktion nicht | Top-Reel 3.10.: **1'867 erreicht, 9 Likes, 0 geteilt** · 7.10.: 1'349 / 4 / 0 · 28.8.: 1'339 / 6 / 0 | Instagram zeigt die Reels Fremden. Die wischen weiter, weil nichts sie meint |
 | Geteilt wird fast nie | **3 von 60 Beiträgen** wurden je **ein Mal** geteilt | Ohne Teilen keine neuen Leute. Das ist der eigentliche Engpass auf dem Weg zu 3'000 |
 | Gespeichert wird fast nie | bester Wert **6** (14.9. „Ich hab aufgehört, mein Network zu erklären…“) | Der einzige Beitrag mit Speicherungen ist ein **Geständnis mit Haltung**, keine Du-Szene |
-| Die Hooks waren Du-Szenen | „Die Kinder schlafen endlich, und du sitzt da…“ · „Gestern Abend um 21:40 … und du sitzt auf dem Sofa…“ | Hook-Bericht 04.10.: **Du-Szene trägt nirgends**, Schmerz-Angle 0,72 |
+| Die Hooks waren Du-Szenen | „Die Kinder schlafen endlich, und du sitzt da…“ · „Gestern Abend um 21:40 … und du sitzt auf dem Sofa…“ | Hook-Bericht 04.10.: Du-Szene 0,72 · **Patricia (12.10.): „ich glaube nicht dass es am du lag“** — Du-Form bleibt erlaubt; Ursache eher fehlendes konkretes Thema in Zeile 1 und KI-Werkzeug als Thema |
 | Thema war fast nur KI-Werkzeug | KI als Hook-Thema **0,91** · Wettbewerb: „KI ist das neue Ölfläschchen“, gesättigt | KI nur im Winkel *Zeit für die Familie zurückholen*, nie als Werkzeug-Erklärung |
 | Stichwort STIMME | **1 Eintragung** insgesamt (Abgleich 11.10.) | Mit 3 Lead-Posts allein kommen nie 10 pro Woche |
 | Wachstum | 2'009 (14.9.) → **2'093 (10.10.)** = rund 3 pro Tag | Bis 31.10. fehlen **907**, das sind rund **48 pro Tag** |
@@ -92,7 +92,7 @@ anderen rund 850 kommen über fünf Hebel, alle in diesem Plan eingebaut:
 
 | Hebel | Was genau | Warum er Follower bringt |
 |---|---|---|
-| **1 · Share-Beiträge statt Du-Szenen** | die 2 Reichweiten-Plätze je Woche werden Säule-2-/Partner-/Hobbymodus-Statements mit Gegner, Ende: Share-CTA **plus** „Folg mir, wenn …“ als **letzte** Zeile (nie Zeile 1 — gemessen gefloppt) | Teilen per DM ist 2026 das stärkste Signal, und geteilte Beiträge landen bei Freundinnen, die dir noch nicht folgen |
+| **1 · Share-Beiträge** | die 2 Reichweiten-Plätze je Woche werden Säule-2-/Partner-/Hobbymodus-Statements mit Gegner, Ende: Share-CTA **plus** „Folg mir, wenn …“ als **letzte** Zeile (nie Zeile 1 — gemessen gefloppt) | Teilen per DM ist 2026 das stärkste Signal, und geteilte Beiträge landen bei Freundinnen, die dir noch nicht folgen |
 | **2 · Täglich ein Trial Reel** | Mo–Fr zusätzlich ein B-Roll, das Instagram **nur Nicht-Followerinnen** zeigt. Baue ich aus deinem Material, du gibst frei. Polarisierende Plan-B-Hooks, die wir im Hauptfeed nicht riskieren | das ist der Ort, wo die 1'800er-Reichweiten passieren — jetzt mit Hooks, die Fremde meinen; der Gewinner kommt danach in den Feed |
 | **3 · Karussells mit Listen-Cover** | Di/Do im Stil „4 Sätze, an denen ich sehe, dass dein Profil der Firma gehört“ | Wettbewerb: stabilste Werte, Network-Feld hat fast keine Karussells |
 | **4 · Verlosung (dein Entscheid)** | 1 Platz Easy KI, Teilnahme: folgen + Beitrag einer Freundin schicken, 16.–22.10., Ziehung vor Kassenschluss | bringt Follower **und** macht den Kurs sichtbar, ohne Preis im Feed |
