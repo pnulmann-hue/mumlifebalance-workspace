@@ -234,6 +234,42 @@
   .dot.off { background: var(--warn); }
 
   main { padding: 26px 28px 70px; min-width: 0; }
+  /* @@auswertung-css-anfang */
+  /* „Was die Zahlen sagen“ (patch-auswertung.py) */
+  .aw { margin-bottom: 18px; }
+  .aw h2 { font-family: var(--display); font-weight: normal; font-size: 21px; margin: 0; }
+  .aw h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); margin: 16px 0 6px; }
+  .aw-kopf { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; justify-content: space-between; }
+  .aw-kacheln { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin: 14px 0; }
+  .aw-k { background: var(--surface-2); border-radius: 8px; padding: 10px 12px; }
+  .aw-k b { display: block; font-family: var(--display); font-size: 22px; font-weight: normal; color: var(--navy); }
+  .aw-k span { font-size: 12px; color: var(--ink-soft); }
+  .aw-erk { border-left: 3px solid var(--orange); padding: 2px 0 2px 12px; }
+  .aw-erk p { margin: 6px 0; }
+  .aw-empf { margin: 0; padding-left: 20px; }
+  .aw-empf li { margin: 6px 0; }
+  .aw-empf small, .aw-top small, .aw-tab small { color: var(--ink-soft); }
+  .aw-mehr { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 10px; }
+  .aw-mehr summary { cursor: pointer; font-weight: 600; color: var(--teal); }
+  .aw-drei { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+  .aw-balken { display: grid; gap: 5px; margin-bottom: 8px; }
+  .aw-zeile { display: grid; grid-template-columns: minmax(90px, 1.3fr) 2fr auto; gap: 8px; align-items: center; font-size: 13px; }
+  .aw-name small { color: var(--ink-soft); }
+  .aw-spur { background: var(--surface-2); border-radius: 4px; height: 9px; overflow: hidden; }
+  .aw-fuell { display: block; height: 100%; background: var(--teal); border-radius: 4px; }
+  .aw-wert { font-variant-numeric: tabular-nums; }
+  .aw-tab { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; display: block; overflow-x: auto; }
+  .aw-tab th { text-align: left; font-weight: 600; color: var(--ink-soft); border-bottom: 1px solid var(--line-strong); padding: 5px 8px 5px 0; white-space: nowrap; }
+  .aw-tab td { border-bottom: 1px solid var(--line); padding: 6px 8px 6px 0; vertical-align: top; }
+  .aw-tab tr.aw-leer td { color: var(--ink-soft); }
+  .aw-d { display: inline-block; border-radius: 999px; padding: 1px 9px; font-size: 12px; white-space: nowrap; }
+  .aw-gut { background: rgba(47, 125, 91, 0.15); color: var(--good); }
+  .aw-warn { background: var(--orange-soft); color: var(--warn); }
+  .aw-teal { background: var(--teal-soft); color: var(--teal); }
+  .aw-grau { background: var(--surface-2); color: var(--ink-soft); }
+  .aw-top { margin: 0; padding-left: 20px; font-size: 13px; }
+  .aw-top li { margin: 5px 0; }
+  /* @@auswertung-css-ende */
   .page-head { display: flex; align-items: flex-end; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
   .page-head h1 { font-family: var(--display); font-size: 26px; margin: 0; font-weight: normal; letter-spacing: -0.01em; text-wrap: balance; }
   .page-head p { margin: 4px 0 0; color: var(--ink-soft); font-size: 13px; max-width: 62ch; }
@@ -3141,6 +3177,7 @@
      das Cockpit nicht, dass Beitrag X und Post Y dasselbe sind. */
   var igZuordnung = { zuordnung: {}, nicht_pruefbar: [] };
   var ideenExtern = { ideen: [] };
+  var zahlenAuswertung = null;   // daten/auswertung
   var zgDaten = null;
 
   /* Befunde aus dem Workspace-Abgleich. 🚨 Sie liegen NEBEN Jahresplan und
@@ -11793,6 +11830,105 @@
     return box;
   }
 
+  /* @@auswertung-js-anfang */
+  /* ---------- „Was die Zahlen sagen“ (seit 13.10.2026, patch-auswertung.py) ----------
+     Oben im Reiter „Gepostet & Analyse“. Liest daten/auswertung (zahlen-auswerten.py):
+     Umsatz-Kacheln, Erkenntnis, drei Empfehlungen, Wochentage, Formate, Säulen,
+     Stichwörter mit Umsatz, Diagnose je Beitrag, Bestenlisten.
+     Patricia: „kein neues dashboard. sondern in meinem bestehenden schlau integrieren“. */
+  function awChf(x) {
+    if (x == null) return "–";
+    return "CHF " + Math.round(x).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+  }
+  function awZahl(x) {
+    if (x == null) return "–";
+    return Math.round(x).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+  }
+  function awBalken(zeilen, feld, einheit) {
+    var max = Math.max.apply(null, zeilen.map(function (z) { return z[feld] || 0; }).concat([1]));
+    return '<div class="aw-balken">' + zeilen.map(function (z) {
+      var w = Math.max(2, Math.round(100 * (z[feld] || 0) / max));
+      return '<div class="aw-zeile"><span class="aw-name">' + esc(z.name) +
+        ' <small>(' + z.beitraege + ')</small></span>' +
+        '<span class="aw-spur"><span class="aw-fuell" style="width:' + w + '%"></span></span>' +
+        '<span class="aw-wert">' + (feld === "rate" ? (z[feld] || 0).toFixed(1).replace(".", ",") + " %"
+                                                   : awZahl(z[feld])) + (einheit || "") + '</span></div>';
+    }).join("") + '</div>';
+  }
+  function awLink(z) {
+    var t = esc((z.anfang || "").slice(0, 70)) + ((z.anfang || "").length > 70 ? " …" : "");
+    return z.link ? '<a href="' + esc(z.link) + '" target="_blank" rel="noopener">' + t + '</a>' : t;
+  }
+  function auswertungBlock() {
+    var a = zahlenAuswertung;
+    if (!a) return '<div class="panel aw"><h2>Was die Zahlen sagen</h2><div class="empty">' +
+      'Noch keine Auswertung. Sie entsteht mit <code>python scripts/cockpit/zahlen-auswerten.py</code> ' +
+      'und liegt danach in daten/auswertung.</div></div>';
+    var u = a.umsatz || {};
+    var kacheln = '<div class="aw-kacheln">' +
+      '<div class="aw-k"><b>' + awChf(u.umsatz) + '</b><span>Umsatz seit ' + esc(a.umsatz_ab || "") + '</span></div>' +
+      '<div class="aw-k"><b>' + awZahl(u.kaeufe) + '</b><span>Käufe</span></div>' +
+      '<div class="aw-k"><b>' + awChf(u.bestellwert) + '</b><span>Ø Bestellwert</span></div>' +
+      '<div class="aw-k"><b>' + (u.anteil_ohne_stichwort == null ? "–" : Math.round(u.anteil_ohne_stichwort) + " %") +
+        '</b><span>ohne Stichwort</span></div></div>';
+    var erk = (a.erkenntnis || []).map(function (s) { return '<p>' + esc(s) + '</p>'; }).join("");
+    var empf = '<ol class="aw-empf">' + (a.empfehlungen || []).map(function (e) {
+      return '<li>' + esc(e.was) + '<br><small>' + esc(e.zahl) + '</small></li>';
+    }).join("") + '</ol>';
+    var kw = '<table class="aw-tab"><tr><th>Stichwort</th><th>Beiträge</th><th>Reichweite</th>' +
+      '<th>Kommentare</th><th>Eingetragen</th><th>Käuferinnen</th><th>Umsatz</th><th>je 1’000</th></tr>' +
+      (a.stichwoerter || []).map(function (k) {
+        return '<tr' + (k.nie_benutzt ? ' class="aw-leer"' : '') + '><td><b>' + esc(k.stichwort) + '</b>' +
+          (k.nie_benutzt ? ' <small>nie gespielt</small>' : '') +
+          (k.geteilt_mit && k.geteilt_mit.length ? '<br><small>Käuferin auch bei ' + esc(k.geteilt_mit.join(", ")) + '</small>' : '') +
+          '</td><td>' + k.beitraege + '</td><td>' + awZahl(k.reichweite) + '</td><td>' + k.kommentare +
+          '</td><td>' + (k.eintragungen == null ? "–" : k.eintragungen) + '</td><td>' +
+          (k.kaeuferinnen == null ? "–" : k.kaeuferinnen) + '</td><td>' + (k.umsatz ? awChf(k.umsatz) : "–") +
+          '</td><td>' + (k.umsatz_je_1000 ? awChf(k.umsatz_je_1000) : "–") + '</td></tr>';
+      }).join("") + '</table><p class="note">' + esc(a.umsatz_misst || "") +
+      ' Die Spalte Umsatz darf nicht aufsummiert werden.</p>';
+    var farbe = { "läuft": "gut", "Reichweite ohne Reaktion": "warn",
+                  "Reaktion ohne Reichweite": "teal", "leise": "grau" };
+    var diag = '<table class="aw-tab"><tr><th>Datum</th><th>Beitrag</th><th>Format</th><th>Reichweite</th>' +
+      '<th>Rate</th><th>Diagnose</th></tr>' + (a.diagnose || []).slice(0, 20).map(function (d) {
+        return '<tr><td>' + esc(d.datum) + '</td><td>' + awLink(d) + '</td><td>' + esc(d.format) +
+          '</td><td>' + awZahl(d.reichweite) + '</td><td>' + String(d.rate).replace(".", ",") +
+          ' %</td><td><span class="aw-d aw-' + (farbe[d.diagnose] || "grau") + '">' + esc(d.diagnose) +
+          '</span></td></tr>';
+      }).join("") + '</table>';
+    function liste(titel, zs) {
+      return '<div><h3>' + titel + '</h3><ol class="aw-top">' + (zs || []).map(function (z) {
+        return '<li>' + awLink(z) + ' <small>' + esc(z.datum) + ' · ' + awZahl(z.reichweite) +
+          ' erreicht · ' + String(z.rate).replace(".", ",") + ' %</small></li>';
+      }).join("") + '</ol></div>';
+    }
+    var b = a.basis || {};
+    return '<div class="panel aw"><div class="aw-kopf"><h2>Was die Zahlen sagen</h2>' +
+      '<span class="note">Stand ' + esc(a.stand) + ' · ' + b.beitraege + ' ausgereifte Beiträge seit ' +
+      esc(b.ab) + ' · Median ' + awZahl(b.reichweite_median) + ' erreicht · Rate ' +
+      String(b.rate_schnitt).replace(".", ",") + ' %</span></div>' + kacheln +
+      '<div class="aw-erk">' + erk + '</div><h3>Was du diese Woche tun kannst</h3>' + empf +
+      '<details class="aw-mehr"><summary>Wochentage · Formate · Säulen</summary><div class="aw-drei">' +
+      '<div><h3>Wochentag (Median erreicht)</h3>' + awBalken(a.wochentage || [], "reichweite_median") + '</div>' +
+      '<div><h3>Format (Median erreicht · Rate)</h3>' + awBalken(a.formate || [], "reichweite_median") +
+      awBalken(a.formate || [], "rate") + '</div>' +
+      '<div><h3>Säule (Median erreicht)</h3>' + awBalken(a.saeulen || [], "reichweite_median") + '</div>' +
+      '</div></details>' +
+      '<details class="aw-mehr"><summary>Stichwörter: Kommentare, Eintragungen, Umsatz</summary>' + kw + '</details>' +
+      '<details class="aw-mehr"><summary>Wo springen die Leute ab — Diagnose je Beitrag</summary>' + diag + '</details>' +
+      '<details class="aw-mehr"><summary>Bestenlisten</summary><div class="aw-drei">' +
+      liste("Beste Rate (über dem Median)", a.top_rate) + liste("Reels mit der grössten Reichweite", a.top_reels) +
+      liste("Karussells mit der grössten Reichweite", a.top_karussells) + '</div></details></div>';
+  }
+  function auswertungEinsetzen(main) {
+    var kopf = main.querySelector(".page-head");
+    var div = document.createElement("div");
+    div.innerHTML = auswertungBlock();
+    var el = div.firstChild;
+    if (kopf && kopf.parentNode) kopf.parentNode.insertBefore(el, kopf.nextSibling);
+    else main.insertBefore(el, main.firstChild);
+  }
+  /* @@auswertung-js-ende */
   function renderGepostet(main) {
     if (!gepostet || !(gepostet.beitraege || []).length) {
       main.innerHTML =
@@ -14522,7 +14658,7 @@
     else if (activeTab === "bizwege") renderBizwege(main);
     else if (activeTab === "rising") renderRising(main);
     else if (activeTab === "fertig") renderFertig(main);
-    else if (activeTab === "gepostet") renderGepostet(main);
+    else if (activeTab === "gepostet") { renderGepostet(main); auswertungEinsetzen(main); }
     else if (activeTab === "zahlen") renderZahlen(main);
     else if (activeTab === "leads") { renderTable(main, "leads"); stimmenBlock(main); }
     else renderTable(main, activeTab);
@@ -14551,6 +14687,7 @@
   freigaben = lsGet("freigaben", {}) || {};
   igZuordnung = lsGet("ig-zuordnung", { zuordnung: {} }) || { zuordnung: {} };
   ideenExtern = lsGet("ideen-extern", { ideen: [] }) || { ideen: [] };
+  zahlenAuswertung = lsGet("zahlen-auswertung", null);
   zgDaten = lsGet("zg-markt", null);
   dtProdukte = lsGet("dt-produkte", null);
   dtWege = lsGet("dt-wege", null);
@@ -14694,6 +14831,12 @@
                      eingang: r.eingang || {}, updatedAt: r.updatedAt || "" };
         lsSet("dt-rising", dtRising);
         if (activeTab === "rising" || activeTab === "bizwege") render();
+      }, function () {});
+      db.doc("daten/auswertung").onSnapshot(function (snap) {
+        if (!snap.exists) return;
+        zahlenAuswertung = tief(snap.data()) || null;
+        lsSet("zahlen-auswertung", zahlenAuswertung);
+        if (activeTab === "gepostet") render();
       }, function () {});
       db.doc("daten/ideen-extern").onSnapshot(function (snap) {
         if (!snap.exists) return;
