@@ -269,6 +269,7 @@
   .aw-grau { background: var(--surface-2); color: var(--ink-soft); }
   .aw-top { margin: 0; padding-left: 20px; font-size: 13px; }
   .aw-top li { margin: 5px 0; }
+  .aw-formel { font-family: var(--display); font-size: 18px; color: var(--navy); background: var(--orange-soft); border-radius: 8px; padding: 10px 14px; margin: 10px 0; }
   /* @@auswertung-css-ende */
   .page-head { display: flex; align-items: flex-end; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
   .page-head h1 { font-family: var(--display); font-size: 26px; margin: 0; font-weight: normal; letter-spacing: -0.01em; text-wrap: balance; }
@@ -11902,12 +11903,48 @@
           ' erreicht · ' + String(z.rate).replace(".", ",") + ' %</small></li>';
       }).join("") + '</ol></div>';
     }
+    var bp = a.bestperformer || null, bpHtml = "";
+    if (bp) {
+      var namen = { format: "Format", hooktyp: "Hook-Typ", thema: "Thema", laenge: "Caption-Länge", cta: "Aufruf" };
+      bpHtml = '<details class="aw-mehr" open><summary>Deine Bestperformer-Formel</summary>' +
+        '<p class="aw-formel">' + esc(bp.formel) + '</p>' +
+        '<table class="aw-tab"><tr><th></th><th>in den Top 10</th><th>bei allen Beiträgen</th><th>Verteilung Top 10</th></tr>' +
+        Object.keys(namen).filter(function (f) { return bp.muster && bp.muster[f]; }).map(function (f) {
+          var m = bp.muster[f];
+          return '<tr><td><b>' + namen[f] + '</b><br>' + esc(m.wert) + '</td><td>' + m.in_top + ' von ' + m.von +
+            '</td><td>' + (m.anteil_gesamt == null ? "–" : m.anteil_gesamt + " %") + '</td><td><small>' +
+            esc((m.verteilung || []).map(function (v) { return v[0] + " " + v[1]; }).join(" · ")) + '</small></td></tr>';
+        }).join("") + '</table>' +
+        '<table class="aw-tab"><tr><th>#</th><th>Beitrag</th><th>Format</th><th>Hook</th><th>Thema</th>' +
+        '<th>Länge</th><th>Aufruf</th><th>Erreicht</th><th>Rate</th></tr>' +
+        (bp.top || []).map(function (z, i) {
+          return '<tr><td>' + (i + 1) + '</td><td>' + awLink(z) + '<br><small>' + esc(z.datum) + '</small></td><td>' +
+            esc(z.format) + '</td><td>' + esc(z.hooktyp) + '</td><td>' + esc(z.thema) + '</td><td>' + esc(z.laenge) +
+            '</td><td>' + esc(z.cta) + '</td><td>' + awZahl(z.reichweite) + '</td><td>' +
+            String(z.rate).replace(".", ",") + ' %</td></tr>';
+        }).join("") + '</table><p class="note">' + esc(bp.basis || "") +
+        '. Der Gesamtanteil daneben zeigt, ob ein Merkmal in den Top 10 wirklich häufiger ist oder einfach überall.</p></details>';
+    }
+    var nf = a.nachfrage || [], nfHtml = "";
+    if (nf.length) {
+      nfHtml = '<details class="aw-mehr"><summary>Wo die Nachfrage liegt — Speichern, Teilen, Kommentieren je Thema</summary>' +
+        '<table class="aw-tab"><tr><th>Thema</th><th>Beiträge</th><th>Erreicht</th><th>Gespeichert</th><th>Geteilt</th>' +
+        '<th>Kommentare</th><th>je 1’000 erreicht</th></tr>' + nf.map(function (n) {
+          return '<tr><td><b>' + esc(n.name) + '</b>' + (n.top || []).slice(0, 2).map(function (t) {
+              return '<br><small>' + awLink(t) + ' · ' + t.saves + ' gesp. · ' + t.kommentare + ' Komm.</small>';
+            }).join("") + '</td><td>' + n.beitraege + '</td><td>' + awZahl(n.reichweite) + '</td><td>' + n.saves +
+            '</td><td>' + n.shares + '</td><td>' + n.kommentare + '</td><td>' +
+            String(n.saves_je_1000 + n.shares_je_1000 + n.kommentare_je_1000).replace(".", ",").slice(0, 4) + '</td></tr>';
+        }).join("") + '</table><p class="note">Wer speichert oder kommentiert, will das Thema weiterverwenden — das ' +
+        'ist näher an „würde dafür zahlen“ als Reichweite. DMs liefert die Schnittstelle nicht, sie fehlen hier.</p></details>';
+    }
     var b = a.basis || {};
     return '<div class="panel aw"><div class="aw-kopf"><h2>Was die Zahlen sagen</h2>' +
       '<span class="note">Stand ' + esc(a.stand) + ' · ' + b.beitraege + ' ausgereifte Beiträge seit ' +
       esc(b.ab) + ' · Median ' + awZahl(b.reichweite_median) + ' erreicht · Rate ' +
       String(b.rate_schnitt).replace(".", ",") + ' %</span></div>' + kacheln +
       '<div class="aw-erk">' + erk + '</div><h3>Was du diese Woche tun kannst</h3>' + empf +
+      bpHtml + nfHtml +
       '<details class="aw-mehr"><summary>Wochentage · Formate · Säulen</summary><div class="aw-drei">' +
       '<div><h3>Wochentag (Median erreicht)</h3>' + awBalken(a.wochentage || [], "reichweite_median") + '</div>' +
       '<div><h3>Format (Median erreicht · Rate)</h3>' + awBalken(a.formate || [], "reichweite_median") +
