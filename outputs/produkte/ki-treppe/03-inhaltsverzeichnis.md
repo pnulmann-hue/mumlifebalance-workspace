@@ -121,6 +121,7 @@ so wie bei Startklar.
 | 2.4 | **Dein Business-Brief — Teil 2: die Buch-Technik** | **Erzählen:** der KI sagen, sie soll ein Buch über dich schreiben, und so lange fragen lassen, bis sie wirklich alles hat. **Zeigen:** live einen Durchgang, mindestens zwei Nachfragerunden. **Mitgeben:** Vorlage + der Auftrag zum Kopieren |
 | 2.5 | **Deine Stimme einfangen** | **Erzählen:** zwei, drei eigene Texte anhängen reicht. **Zeigen:** vorher/nachher am selben Auftrag |
 | 2.6 | **Projekte statt Einzelchats** | **Erzählen:** dein Wissen bleibt liegen statt jedes Mal neu getippt. **Zeigen:** ein Projekt anlegen, Business-Brief hineinlegen |
+| 2.6b | **Dein Content-Projekt** *(Vorschlag 13.10.)* | **Erzählen:** einmal füttern, was deine Leute denken, und jede Woche darauf aufbauen. **Zeigen:** Projekt „Mein Instagram“, Projektanweisung, Wettbewerb · Trends · Fragen · Zielgruppenbild als Projektdateien. **Mitgeben:** Prompt-Sammlung aus [[12-content-kreislauf-kursmaterial]] |
 | 2.7 | **Zusammenfassung und Checkliste** | |
 
 ---
@@ -188,6 +189,7 @@ so wie bei Startklar.
 
 | # | Lektion | Notizen |
 |---|---|---|
+| 7.0 | **Der Kreislauf** *(Vorschlag 13.10.)* | **Erzählen:** sechs Stationen von Verstehen bis Auswerten, und welche Maschine wo arbeitet. **Zeigen:** die Tabelle aus [[12-content-kreislauf-kursmaterial]] |
 | 7.1 | **Die Content-Maschinen im Überblick** | **Erzählen:** ein Skill je Format, alle lesen dieselben Wissensdateien. **Zeigen:** den Ordner mit den Skills und den leeren Wissensdateien daneben |
 | 7.2 | **Caption und Story** | **Zeigen:** Skill laufen lassen mit leerer Wissensdatei → mittelmässiges Ergebnis. Dann mit gefüllter → gutes Ergebnis. **Das ist die wichtigste Demonstration im ganzen Kurs**, weil sie den Unterschied zwischen Maschine und Treibstoff sichtbar macht |
 | 7.3 | **Karussell — vom Text zum fertigen Bild** | **Zeigen:** Folientexte erzeugen, dann der Bild-Editor |
@@ -195,6 +197,7 @@ so wie bei Startklar.
 | 7.5 | **🚨 Freigabe statt Autopilot** | **Erzählen:** warum bei ihr nie etwas ungeprüft rausgeht. Ihr Instagram-Konto hängt an einem Partnerunternehmen, ein unbedachter Satz kostet mehr als eine Woche Arbeit spart. **Zeigen:** das Cockpit mit dem Freigabe-Knopf. **Das hat sonst niemand** |
 | 7.6 | **Automatisiertes Posten** | **Zeigen:** freigegeben am Abend, eingeplant um 20:00, draussen am nächsten Morgen |
 | 7.7 | **Wenn die KI Murks baut** | **Erzählen:** automatisch erzeugter Content wird schlecht, wenn niemand prüft. Die Muster, an denen man KI-Text erkennt. **Zeigen:** das Prüfskript und einen echten Fund. **Mitgeben:** die Prüf-Mechanik als Vorlage |
+| 7.7b | **Die Zahlen lesen** *(Vorschlag 13.10.)* | **Erzählen:** Mindestbasis, Vergleich mit allen Beiträgen, Reichweite ist nicht Nachfrage. **Zeigen:** Bestperformer-Formel und Nachfrage je Thema im Cockpit, dann dieselbe Auswertung mit Prompt 10–12 an einer Handtabelle. **Mitgeben:** Tabellenvorlage + Prompts |
 | 7.8 | **Zusammenfassung und Checkliste** | |
 
 ---
