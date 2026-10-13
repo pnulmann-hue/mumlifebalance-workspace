@@ -28,7 +28,7 @@ Hallo [Vorname]
 
 kennst du diesen Moment am Nachmittag, in dem du dastehst und nicht mehr weisst, warum du eigentlich in die Küche gegangen bist? Im Kopf sind gefühlt zwanzig Tabs offen: der Elternabend, das Zvieri, die Mail, die du noch schreiben wolltest, und die Frage, wer morgen Turnen hat.
 
-Genau zu diesem Gefühl hat doTERRA im Oktober ein eigenes Kit herausgebracht. Hier kriegst du alles auf einen Blick, und ganz unten steht, wann wir uns bei mir zuhause sehen können. Das komplette Aktions-Booklet kannst du dir [hier in Ruhe anschauen]([AKTIONSFLYER-LINK EINSETZEN]).
+Genau zu diesem Gefühl hat doTERRA im Oktober ein eigenes Kit herausgebracht. Hier kriegst du alles auf einen Blick, und ganz unten steht, wann wir uns bei mir zuhause sehen können. Das komplette Aktions-Booklet kannst du dir [hier in Ruhe anschauen](https://mumlifebalance.ch/wp-content/uploads/2026/10/Aktionen-Oktober-2026.pdf).
 
 ### Neu und nur kurz da: das Autumn Exclusives Kit
 
@@ -54,7 +54,7 @@ Lesen ist das eine. Riechen, ausprobieren und gemeinsam darüber reden ist etwas
 - Donnerstag, **12. November**
 - Montag, **7. Dezember**
 
-Jeder Abend hat einen anderen Herbst- oder Winter-Schwerpunkt. Du kannst also auch mehrmals kommen, und eine Freundin mitbringen darfst du sowieso. Anmelden kannst du dich mit einer Antwort auf diese Mail oder einer WhatsApp, die Adresse schicke ich dir dann. → [Flyer zu den Öl-Abenden](https://drive.google.com/file/d/1nXfy0fbvsms8TshVuC8ILXpmbGKmvfHf/view?usp=sharing)
+Jeder Abend hat einen anderen Herbst- oder Winter-Schwerpunkt. Du kannst also auch mehrmals kommen, und eine Freundin mitbringen darfst du sowieso. Anmelden kannst du dich mit einer Antwort auf diese Mail oder einer WhatsApp, die Adresse schicke ich dir dann. → [Flyer zu den Öl-Abenden](https://mumlifebalance.ch/wp-content/uploads/2026/10/Oel-Workshop-Herbst-Winter-2026.jpg)
 
 ### Die Herbst- und Wintergeschenke
 
@@ -97,7 +97,7 @@ P.S. Der nächste Öl-Abend ist schon am **Mittwoch, 21. Oktober**. Wenn du dabe
 - **Was im Booklet fehlt:** Preise und Enddatum des Kits. Deshalb keins genannt.
 - ⚠️ **Öl-Abende 21.10. · 12.11. · 7.12.:** aus der September-Mail übernommen. Bitte bestätigen, dass alle drei stehen.
 - ⚠️ **Detox-Programm mit Céline Gantner** (Booklet S. 23–25) ist nicht drin: kein Datum, kein Anmeldeweg im Booklet.
-- **Vor dem Versand einsetzen:** `[AKTIONSFLYER-LINK EINSETZEN]`. WhatsApp-Knopf zeigt auf `wa.me/41793591937`.
+- **Vor dem Versand einsetzen:** `https://mumlifebalance.ch/wp-content/uploads/2026/10/Aktionen-Oktober-2026.pdf`. WhatsApp-Knopf zeigt auf `wa.me/41793591937`.
 - **Grafiken nicht verwenden:** Die Produkt-Grafiken tragen das Logo eines fremden Kontos. Produktfotos aus dem Booklet nehmen oder ohne Bild.
 
 ---
