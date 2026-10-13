@@ -1,9 +1,9 @@
 ---
 name: content
-description: "Schreibt den kompletten Instagram-Content für eine Woche oder einen Monat — Marktcheck, Hooks, Karussells, Reels, Captions, Story-Bogen — und legt alles fertig ins Cockpit."
+description: "Der eine Instagram-Skill: schreibt Hooks, ein einzelnes Karussell, ein Reel-Skript oder den kompletten Content für eine Woche oder einen Monat — für Sandra, die Network-Mama um 23 Uhr — und legt alles fertig ins Cockpit."
 ---
 
-# content v2.0
+# content v2.1
 
 > **Eine Datei, der Reihe nach.** Schritt 1 bis 12, kein Schritt wird übersprungen.
 >
@@ -19,9 +19,18 @@ Er schreibt Patricias kompletten Instagram-Content für einen Zeitraum und legt 
 fertig ins Cockpit, damit sie nur noch auswählt und freigibt. Eine Woche sind fünf
 Beiträge pro Profil plus ein Story-Bogen; ein Monat vier Wochen plus eine Dreh-Liste.
 
-**Wofür er nicht da ist:** ein einzelnes Karussell (→ `karussell`), ein einzelnes Reel
-(→ `reels`), eine einzelne Caption (→ `caption`), ein Blogartikel (→ `blog`). Dieser
-Skill ist die Wochenproduktion, die anderen sind die Werkstatt.
+**Und er ist die eine Stelle für jeden einzelnen Feedbeitrag** (seit 13.10.2026,
+Patricia: *„ich stelle mir das halt schon so vor, dass ich einen skill habe für alles und
+dann der inhalt der dazu gehört da drin ist“*). Drei Einzelaufträge, ohne die Woche:
+
+| Sie sagt | Dann | Ausgabe |
+|---|---|---|
+| „Hooks zu X“ | TEIL 0 + TEIL 3 | 8–10 Hooks, Tabelle mit Stil · Säule · Format, zwei Test-Empfehlungen |
+| „Karussell zu X“ | TEIL 0 + TEIL 3 + Schritt 6 Karussell | drei Cover-Varianten, Folien, Caption, Platzhalter |
+| „Reel zu X“ | TEIL 0 + TEIL 3 + Schritt 6 Reel | drei Hook-Varianten, Clip-Idee, Ablauf in Sekunden, Caption |
+
+Dabei gelten Beitrags-Check (Schritt 7) und Regeln (TEIL 6) genauso. Nicht dafür: ein
+Blogartikel (→ `blog`).
 
 ---
 
@@ -42,6 +51,103 @@ nicht** — dann wird überarbeitet, nicht ausgeliefert.
    pro Beitrag.
 5. **Der Beitrags-Check.** Fünf Fragen, eine mit Nein und der Beitrag geht nicht raus —
    auch im Automatik-Lauf nicht.
+
+---
+
+## DER CONTENT-KREISLAUF — wann welche Info woher (seit 13.10.2026)
+
+Patricia: *„nicht einfach als einmal erstellt und abgehakt ablegen, sondern daraus einen
+sauberen Ablauf kreieren. von wo nimmst du wann welche infos.“* Sechs Stationen, die sich
+im Kreis drehen. **Keine neue Routine:** jede Station hängt an etwas, das schon läuft.
+
+| # | Station | Wann | Wer startet | liest | schreibt |
+|---|---|---|---|---|---|
+| 1 | **Verstehen** — Wettbewerb · Trends · Fragen der Zielgruppe · Zielgruppenbild mit Säulen | vierteljährlich (Jan · Apr · Jul · Okt), im `/monatsplan` dieses Monats | Patricia ruft `/monatsplan` | `context/competitor-watchlist.json` (Nische `kern`) · jüngstes `outputs/apify-runs/competitors-*.json` · `outputs/marktrecherche/2026-10-04-hook-gesamtbericht.md` · WebSearch (Google Trends, Reddit, Foren) · Kommentare und DMs · `context/kundinnen-geschichten.md` | `outputs/zielgruppen-research/<datum>-*/` (vier Analysen) → verdichtet in `wissen/zielgruppe-kurz.md` + `wissen/hook-muster-markt.md` → Cockpit `daten/zielgruppe` (`scripts/cockpit/zielgruppe-bauen.py`) |
+| 2 | **Monat planen** | letzter Sonntag im Vormonat | Patricia ruft `/monatsplan` | Station 1 · `outputs/cockpit/abgleich/auswertung.json` (Station 6) · `/strategie` · `active-funnels.json` | `outputs/monatsplaene/JJJJ-MM.md` |
+| 3 | **Woche bauen** | Fr 08:00 | Task `content-woche-freitag` (oder `/content woche`) | Monatsplan · `wissen/*.md` · Hook-Paket (`scripts/hooks/beispiele.py`) · frischer Marktcheck · `wissen/hooks-schon-verwendet.md` · Bestperformer-Formel | Cockpit `karussells` / `reels` / `storys`, Varianten A/B |
+| 4 | **Freigeben und posten** | täglich | Patricia: Freigabe-Knopf · 19:30 Task `kommentare-einarbeiten` · 20:00 Task `freigaben-einplanen-2000` | Cockpit `freigaben` | Blotato, Instagram |
+| 5 | **Messen** | täglich 06:15 | Task `cockpit-daten-abgleich` | Meta Graph API (`holen.py`) · ThriveCart · ActiveCampaign | `auswertung.json` → Cockpit `daten/auswertung` (Bestperformer · Nachfrage je Thema · Diagnose · Stichwörter mit Umsatz) |
+| 6 | **Auswerten und zurückführen** | monatlich in `/monatsplan` 4.5b, ein Beitrag zählt erst ab 7 Tagen | `/monatsplan` | `auswertung.json` | siehe Rückfluss unten |
+
+**Der Rückfluss — was aus den Zahlen wohin geht:**
+
+| Befund | geht nach | damit |
+|---|---|---|
+| Bestperformer-Formel (nur Merkmale, die in den Top 10 häufiger sind als überall) | Station 3, Hook- und Formatwahl | die nächste Woche baut auf dem, was nachweislich trägt |
+| gepostete Hooks | `wissen/hooks-schon-verwendet.md` | kein Hook kommt zweimal |
+| Thema mit viel Reichweite, aber ohne Speichern und Kommentare | Reichweiten-Beitrag, kein Produkt | Reichweite nicht mit Nachfrage verwechseln |
+| Thema, das zwei Monate oben in der Nachfrage steht und kein Angebot hat | `/strategie hebel <Idee>` | Produktidee aus echten Daten, erst testen, dann bauen |
+| Stichwort mit Eintragungen und Kauf | Lead-Beiträge der nächsten Woche | das Stichwort, das verkauft, kommt öfter |
+| gut gelaufen und ≥28 Tage alt | Cockpit „Kann wieder raus“ | recyceln statt neu bauen |
+| neuer Wortlaut aus Kommentaren und DMs | `wissen/zielgruppe-kurz.md` (ihre Wörter) | die Sprache bleibt die ihre |
+
+**Die Projektdatenbank** — was in einem Claude-Projekt die Projektdateien wären, ist hier:
+`wissen/*.md` (Zielgruppe, Hook-Muster, schon verwendete Hooks, Beispiel) ·
+`context/brand-voice.md` · `context/kern-painpoint.md` · `context/ki-phrasen-blackliste.md` ·
+`context/active-funnels.json` · `context/patricia-expertise.md` (Zahlen) ·
+`auswertung.json` (was wirkt). **Ändert sich eine davon, gilt das ab dem nächsten Lauf.**
+
+🚨 **Drei Lehren aus der ersten Auswertung**, die in jedem Durchgang gelten:
+- **Jede Quote braucht eine Mindestbasis** (über dem eigenen Median und mindestens 3 Reaktionen).
+- **Ein Merkmal der Top 10 zählt nur, wenn es dort häufiger ist als bei allen Beiträgen.**
+  Lange Captions stehen in 7 der Top 10, aber auch bei 68 % aller Beiträge. Das ist kein Befund.
+- **DMs liefert keine Schnittstelle.** Eintragungen über Stichwörter sind der beste Ersatz.
+
+**Für die eigenen Kurse** steht derselbe Ablauf in Kundinnen-Sprache mit eigenen Prompts in
+`outputs/produkte/ki-treppe/12-content-kreislauf-kursmaterial.md`.
+
+---
+
+## TEIL 0: FÜR WEN — Sandra um 23 Uhr (seit 13.10.2026)
+
+Aus den drei Kurs-Skills, die Patricia im Kurs „Content Shortcut“ auf ihre Zielgruppenanalyse
+gebaut hat (Hook-Generator, Karussell-Texter, Reels-Skript; Originale in
+`context/Kurse/aktuelle kurse/Content-Shortcut/skills/`).
+
+**Wissen, das vor jedem Beitrag gelesen wird** (beide Ordner gitignored, sie nennen fremde Konten):
+
+| Datei | Wofür |
+|---|---|
+| `.claude/skills/content/wissen/zielgruppe-kurz.md` | Phasen, Pain auf drei Ebenen, Gedanken um 23 Uhr, ihre Wörter, Einwände, die fünf Säulen, Formate, unbesetzte Themen |
+| `.claude/skills/content/wissen/hook-muster-markt.md` | was bei der Konkurrenz trägt, was abgenutzt ist, Patricias Abgrenzung |
+| `.claude/skills/content/wissen/hooks-schon-verwendet.md` | Hooks, die es schon gibt — **nicht wiederholen, nicht leicht umbauen** |
+| `.claude/skills/content/wissen/beispiel-karussell.md` | Ton und Rhythmus auf Folien (mit Warnhinweis) |
+| `outputs/zielgruppen-research/2026-10-12-content-shortcut/` | die vier Analysen im Volltext, für Zahlen und Zitate |
+
+**Die Leserin heisst Sandra:** 36, zwei Kinder, 40 % Pensum, seit zwei Jahren bei einer
+Wellness-Firma, verdient ein paar hundert Franken, ein guter Teil geht in die Eigenbestellung.
+Ihr Mann nennt es „dein Ölhobby“. Sie ist weder naiv noch faul, ihr Einsatz folgt nur keinem
+Plan. **Kern-Pain:** Sie steckt Zeit, Herz und Geld in etwas, das sie Business nennt, das aber
+wie ein teures Hobby aussieht. Darunter die doppelte Abhängigkeit, vom Partner und von Firma,
+Kompensationsplan und Upline.
+
+**Drei Phasen:** die Frustrierte (will aufhören, bringt Reichweite) · die Suchende (will anders
+weitermachen, wichtigste Followerin) · die Entschlossene (will es ernst meinen, die Kundin).
+
+**Fünf Säulen:** 1 Personal Brand statt Copy-Paste (ca. 30 %) · 2 Plan B und eigenes Geld (25 %,
+Patricias Revier) · 3 Business im echten Mama-Alltag (20 %) · 4 Eigenverantwortung statt
+Hobbymodus (15 %, direkt ja, abwertend nie, ein Satz Hoffnung gehört dazu) · 5 Beweis und
+Angebot (10 %). Roter Faden: vom Network-Business zur eigenen Marke, später zum eigenen Angebot.
+
+**Der 23-Uhr-Test** gilt für jeden Hook, jede Folie, jede Caption: Sandra liegt müde im Bett,
+Daumen auf dem Bildschirm. Hält sie an? Liest sie bis zum Schluss? Speichert sie es oder
+schickt sie es einer Freundin? Ein Nein und die Stelle wird überarbeitet.
+
+**Mikro statt Makro** (Patricia, 13.10.): Der Hook nimmt das kleine, konkrete Problem, nicht das
+grosse Thema. Nicht „5 Hinweise, dass deine Bio nicht passt“, sondern „5 Ideen, woran es liegen
+könnte, dass dir auf Insta keine potenziellen Kunden schreiben“. Das erste ist ein Thema, das
+zweite ist ihr Abend.
+
+**Patricias Eckdaten — nur diese sind belegt:** vier Kinder · Appenzellerland · 2018 mit Network
+Marketing angefangen · 2021 aufgehört · 2023 neu gestartet mit doTERRA und Mum Life Balance,
+diesmal mit eigenem Plan. Alles darüber hinaus (Szenen, Sätze des Mannes, Kundinnen-Nachrichten)
+steht als **Platzhalter** da, zum Beispiel `[echte Situation einsetzen]`, oder der Hook trägt den
+Vermerk **„(nur wenn's stimmt)“**. Ihr Mann macht keinen Spruch mehr; dass er „die Zahlen gesehen“
+hat, stimmt **nicht**.
+
+🚨 **Zwei Zielgruppen-Ebenen gelten auch hier.** Sandra ist Patricias Kundin. Wer bei Sandra
+kauft, ist **Kundschaft, Leute, Interessenten** — nie „Kundinnen“. „Likes sind keine Käufe“,
+nicht „keine Kundinnen“.
 
 ---
 
@@ -150,6 +256,50 @@ Caption nachgebessert.
 > Sekunde eins ein Satzfragment. Untertitel allein sind **kein** Hook — die zeigen immer
 > nur die letzten drei Wörter.
 
+### Gegner, Geständnis oder Zitat (seit 13.10.2026)
+
+Jeder Hook hat **mindestens eins** davon. Das ist das Muster aller Allzeit-Hits in der
+Wettbewerbsanalyse; reine Ergebnisversprechen („So verdienst du mehr“) sind dort die
+schwächsten Hooks, Einkommens-Belege die allerschwächsten.
+
+- **Gegner:** eine Abhängigkeit, eine Methode, eine Ausrede, ein Denkfehler. **Nie** eine Firma,
+  nie doTERRA, nie eine Person beim Namen, nie Sandra selbst. Feindbilder wechseln — eins, das
+  jede Woche kommt, verliert die Überraschung.
+- **Geständnis:** Ich-Form, ein konkreter Moment, ein Detail, das man sieht. Nur aus den
+  belegten Eckdaten (TEIL 0), sonst „(nur wenn's stimmt)“.
+- **Zitat:** wörtlicher Satz von ihr, ihrem Mann, der Upline, ihrem inneren Monolog.
+  Fragen wirken **nur als Zitat**, abstrakte Fragen nicht.
+
+| Stil | Mechanik |
+|---|---|
+| Geständnis / Story | Ich-Form, ein Moment, ein sichtbares Detail |
+| Polarisierung | klare Haltung gegen eine verbreitete Methode oder Annahme |
+| Pain mit Ironie | ihr Problem so konkret, dass es weh tut, mit Augenzwinkern |
+| Zitat | ihr Satz, der des Mannes oder der Upline, dann eine Wendung |
+| Erwartung drehen | was sie glaubt oder googelt, aufgreifen und kippen — **die Antwort kommt erst auf Folie 2 oder in der Caption** |
+| Weichmacher aufspiessen | „nur nebenbei“, „mal schauen“, „eigentlich“ wörtlich nehmen |
+| Frage mit Stachel | eine Frage, die sie sich nicht zu stellen traut — keine Quizfrage |
+| Liste mit Gegner | Zahl plus Wertung, nie neutral |
+| Zahl mit Haltung | eine nüchterne Zahl, die eine unbequeme Folgerung erzwingt (nur belegte Zahlen) |
+| Swiss Angle | Franken, Pensum, AHV, Krankenkasse, Schweizer Zurückhaltung beim Reden über Geld |
+
+**Länge:** 8 bis 18 Wörter, höchstens zwei Sätze, harte Grenze 22. Was länger werden will,
+gehört in die Caption — aufs Cover kommt nur der Moment, der neugierig macht.
+
+**Ihre Wörter im ersten Satz:** Eigenbestellung, Upline, nebenbei, mein Mann, posten,
+Reichweite, Pensum, die Kinder, eigenes Geld, Plan B. **Nie:** Funnel, Conversion,
+Positionierung, Skalierung, Lead-Magnet, Content-Säulen, Monetarisierung.
+
+**Ausgabe beim Einzelauftrag „Hooks zu X“:** ein Satz Einordnung (welcher Pain, welcher Dreh),
+dann 8–10 Hooks über mindestens fünf Stile und mindestens drei Säulen, keine Säule mehr als
+vier:
+
+| # | Hook | Stil | Säule | Format |
+|---|---|---|---|---|
+
+Danach in zwei, drei Sätzen: welche zwei zuerst testen und welcher als Trial Reel taugt.
+Neue Hooks statt Varianten der alten, ausser sie will einen bestimmten umgebaut haben.
+
 ### Mischung
 
 Bei 14 Hooks pro Profil: mindestens 3× P, 3× I, 3× E · mindestens vier Formel-Familien ·
@@ -223,6 +373,7 @@ sagen. **Drei bis fünf Angles mischen.** Bei A und B eines Slots immer verschie
 | `context/story-framework.md` | Story-Wissen, Visual-Pipeline |
 | `context/content-radar-juni-2026.md` | was messbar funktioniert hat |
 | `context/reichweiten-formel-mama-identity.md` | Reichweite über Mama-Identität |
+| `.claude/skills/content/wissen/*.md` | **Sandra, ihre Gedanken und Wörter, die fünf Säulen, Hook-Muster, schon verwendete Hooks** (TEIL 0) |
 
 **Sobald Video im Spiel ist, zusätzlich:** `context/sprechreels-drehanleitung.md` ·
 `context/videoschnitt-regeln.md` · `context/videoschnitt-animationen.md` ·
@@ -380,7 +531,37 @@ Vier Typen: Listicle · Storytelling · Edukativ · Kontroverser Take. **Beim ko
 Take ist die Nuancierungs-Folie Pflicht.** Funnel-Stufe TOF/MOF/BOF festlegen.
 
 **Das Cover stoppt oder nicht:** wenig Text, grosse fette Schrift, Schlüsselbegriff in
-Grossbuchstaben, lesbar im Mini-Format, Marken-Look.
+Grossbuchstaben, lesbar im Mini-Format, Marken-Look. Das Cover trägt den **ganzen Hook**,
+nicht nur ein Schlagwort. **Drei Cover-Varianten** in verschiedenen Stilen, eine markiert als
+verwendet, mit einem Satz warum.
+
+#### Sieben Baupläne (seit 13.10.2026, aus dem Karussell-Texter)
+
+6 bis 10 Folien, so lang, wie der Gedanke trägt. Eine Folie, die nur da ist, um eine Zahl zu
+erreichen, kostet Wischer.
+
+| Bauplan | Passt für | Aufbau |
+|---|---|---|
+| **Gedankengang mit Reibung** | Plan B, Eigenverantwortung, Partner | Cover mit Gegner → Folie 2 holt sie in einer Szene ab → ihre Fehlannahme → **in der Mitte die Wendung** → 2–3 Folien, was das konkret heisst → Hoffnungssatz → Aufruf |
+| **Selbsttest** | Hobby oder Business, Profil-Check, Aufhören | Cover verspricht ehrliche Standortbestimmung → warum es unbequem ist → je Folie eine Frage mit einem Satz dahinter → Auswertung als Spiegel, ohne Punkte → nächster Schritt |
+| **Liste mit Haltung** | Profil, Bio, „Dinge, die ich nicht mehr mache“ | je Folie ein Punkt **mit Begründung und Gegenmittel**, der unbequemste zuletzt |
+| **Vorher/Nachher** | Bio, Namenszeile, Caption-Einstieg | typischer Fehler, ironisch → Vorher (erfunden, typisch, nie eine echte Person) → warum es nicht wirkt → Nachher mit Erklärung → Formel zum Selbermachen |
+| **Geständnis** | Mama-Alltag, Plan B | Ich-Satz, der etwas zugibt → Szene → Wendepunkt → Lehre → erst am Ende die Übertragung auf sie. Nur Eckdaten, sonst Platzhalter |
+| **Zahlen mit Haltung** | Rentenlücke, Teilzeit, Branchenrealität | stärkste Zahl mit Haltung → je Folie höchstens eine Zahl mit „Und was heisst das für dich?“ → Haltung statt Beratung, Hinweis auf Fachstelle, Quelle in der Caption |
+| **Kundinnen-Frage** | Verkaufen, Likes ohne Käufe | Cover = die Frage als Zitat → ehrliche, etwas unbequeme Antwort über mehrere Folien. Als typische Frage kennzeichnen, ausser Patricia liefert ein echtes Zitat |
+
+Dazu der **Mehrwert-Bauplan** unten (Beweis → Speichern-Folie → Vorher-Nachher-Paare → Keyword).
+
+**Spannung über die Folien:** Folie 2 bestätigt das Cover **sofort** — kommt dort eine
+Einleitung, ist sie weg. Nicht jede Folie mit „Aber …“ beenden, sonst merkt man die Masche:
+mal eine Frage, mal eine Behauptung, mal ein halber Gedanke, der auf der nächsten aufgeht.
+**Die vorletzte Folie ist der Satz, den sie einer Freundin schickt**, er muss allein stehen.
+Pro Folie höchstens rund 35 Wörter, ganze Sätze statt Fragmente, kein Fazit, das alles
+wiederholt. Jedes Karussell hat mindestens einen Satz, der Hoffnung macht.
+
+**Caption-Länge: was Sinn ergibt** (Patricia, 13.10.). Gedankengang und Geständnis dürfen
+lang werden, weil die Caption dort vertieft, was die Folien nur andeuten. Anleitung und
+Liste bleiben kurz, weil der Wert auf den Folien steht.
 
 #### Der Bauplan, der nachweislich Mehrwert liefert
 
@@ -413,34 +594,45 @@ Unterschied. Und sortiert nach Bereich erkennt jede sofort ihre eigene Situation
 **Talking-Head:** sekundengenauer Sprechtext · unter 30 Sekunden · Setting candid, im
 Alltag, nie posiert.
 
-**B-Roll — und zwar genau so, nicht anders:**
+**B-Roll (Standard, seit 11.10.2026 animiert):** ein Clip aus Patricias Alltag, der Hook
+steht **ganz und ab Bild null** im Bild, 6 bis 10 Sekunden. Optik wie das Reel „3 Wege“:
+Serifenschrift, weicher Schleier, orange Wendung, langsame Zoomfahrt, nie in der Bildmitte
+(Gesicht). Darauf Animation: bei langen Hooks Serif, Marker-Balken nur bei kurzer Wendung, der
+Aufruf als Chip mit Pop in den letzten 2,5 Sekunden, bei Verlosungen Schritte nacheinander.
+Gebaut über `broll-bauen.py` + `textebene.py`, Vorlage `scripts/content/kw42-brolls.py`.
+🚨 **Das Video muss den Text nicht illustrieren** — nicht stundenlang nach passendem
+Material suchen. Eine Clip-Idee, die zum Text zwinkert (Wäscheberg, Auto vor der Schule,
+Laptop am Esstisch), ist schön, aber kein Muss.
 
-> **Ein hundsnormales Video von Patricia. Ein Textblock drauf. Fertig.**
-> (Patricias Definition vom 14.09.2026, mit Beispiel aus ihrem eigenen Feed.)
-
-| | |
-|---|---|
-| **Video** | **ein** Clip, ungeschnitten. Alltag oder Ferien, sie läuft, sitzt, ist unterwegs. Kein Schnitt, kein Zoom, keine Untertitel, kein Sound-Effekt. |
-| **Text** | **ein** Block, der **ganze Hook** am Stück, ab Bild null. Nicht gestaffelt, nicht auf zwei Einblendungen verteilt. |
-| **Optik** | helle Schrift, **gross und eng**, mehrzeilig, **ohne Kasten und ohne Pille**, im unteren Drittel. |
-| **Konkret** | `typ: notiz` · `flaeche: "keine"` · **`groesse: 64`** (Standard 44 ist zu klein, 78 läuft aus dem Bild) · Zeilenabstand **4,4 % in y** — die Zeilen müssen als ein Block lesen. |
-| **Rand** | 🚨 Die längste Zeile darf **höchstens 80 % der Breite** belegen, also rund 10 % Rand links und rechts. Die Prüfung im Skript meldet nur die Leinwandkante — Instagram schneidet aber schon vorher an und legt Bedienelemente darüber. **Konzeptbild anschauen und den Rand mit dem Auge prüfen**, nicht auf „Check passed“ verlassen. |
-| **Kontrast** | Ohne Kasten braucht helle Schrift einen dunklen Grund. Bei hellem Material einen **weichen Verlauf ins untere Drittel rendern** (ffmpeg `geq` auf den Alphakanal), nicht einen Kasten bauen. Genau das macht bei Patricias eigenem Reel der dunkle Sand. |
-| **Rest** | steht in der Caption. |
-
-🚨 **Das Video muss den Text nicht illustrieren.** In ihrem Beispiel läuft sie am Meer,
-und der Text handelt von Produkt-Posts. Das Video ist der Grund, kurz hängenzubleiben —
-ein Mensch in einem schönen Moment. Die Botschaft trägt der Text.
-
-**Such also nicht stundenlang nach inhaltlich passendem Material.** Genau das war der
-Fehler vom 14.09.: Küchenszene für den Abend, Buch fürs Runterkommen, drei Clips
-aneinandergeschnitten, Text in dunklen Kästchen auf zwei Tafeln verteilt. Das Ergebnis
-hat Patricia „himmeltraurig" genannt, und sie hatte recht.
-
-**Talking-Head dagegen bekommt mindestens zwei gestaltete Elemente:** Kelsie-Textebene
+**Talking-Head bekommt mindestens zwei gestaltete Elemente:** Kelsie-Textebene
 (zwei Zeilen auf Stoss, klein oben, gross unten, grosses Wort hinter Patricia) ·
 wortgenaue Untertitel mit orangem aktivem Wort · Auto-Zoom · eingefügte Bilder ·
-Visualisierungen. **Bei B-Roll nicht** — dort ist weniger richtig.
+Visualisierungen. Gesprochenes Hochdeutsch, so geschrieben, wie man spricht, 25 bis 45
+Sekunden: Hook in den ersten zwei Sekunden → Problem → Wendung → ein konkreter Schritt →
+ein Satz, der Mut macht → Abschluss.
+
+**Reel-Skript (Ausgabe, auch beim Einzelauftrag „Reel zu X“):**
+
+```
+## Reel: [Arbeitstitel]
+Säule: … | Leserin: Frustrierte / Suchende / Entschlossene | Format: B-Roll / Sprechreel | Länge: ca. … Sek.
+
+Hook-Varianten
+1. [Hook] (Mechanik: Gegner / Geständnis / Zitat / Erwartung drehen)
+2. …
+3. …
+Empfehlung: Variante X, weil … (ein Satz)
+
+Clip-Idee: was gefilmt wird, Winkel, Stimmung, Ton (zwei bis vier Sätze, keine Kindergesichter)
+
+Ablauf
+0–2 s | Bild: … | Text: [Hook]
+2–6 s | Bild: … | Text: …
+(bei Sprechreels zusätzlich: Gesprochen: …)
+
+Caption … · Aufruf: …
+Prüfen: Stimmt das so für dich? (nur wenn eine Ich-Szene drin ist)
+```
 
 **Animationen immer mit vier Angaben:** Aussehen · Bewegung · **Stelle (den Satz nennen,
 nie die Sekunde)** · Sound.
@@ -481,6 +673,16 @@ Typ 4: so lang wie die Haltung braucht.
 |---|---|---|
 | **Vertrauen** | bezieht Stellung, erzählt eine echte Szene, gibt etwas mit | Teilen · Speichern · eine Frage, auf die man antworten will |
 | **aktiv** | benennt den nächsten Schritt und macht ihn leicht | ein bestehendes Keyword |
+
+**Vertrauens-CTA so schreiben, dass er null Denkarbeit kostet** (aus den Kursunterlagen
+„Content Shortcut“, 13.10.2026):
+- **Teilen an eine bestimmte Person:** „Schick das der Freundin, die auch jeden Abend um
+  elf noch Firmenposts kopiert.“ Nicht „Teil den Beitrag“.
+- **Kommentar als Wahl statt als Aufsatz:** „Eher Team Firmenvorlage oder Team eigene
+  Worte?“ · „1 oder 2?“. Eine offene Frage wie „Was denkst du darüber?“ verlangt einen
+  Text, und den schreibt öffentlich niemand.
+- **Speichern mit Grund:** „Speicher dir das für den Abend, an dem du wieder vor dem leeren
+  Feld sitzt.“
 
 **Keyword-Regeln:** Grossbuchstaben, fett · **genau eins pro Beitrag** · eingebettet
 („Kommentier **STANDBEIN** und ich schick dir …") · nie eins erfinden · rotieren.
@@ -574,6 +776,11 @@ schon gar nichts dazuerfunden. Dann lieber ein Beitragstyp weniger.
 > 🚨 **Als Tabelle ausgeben, ein Beitrag pro Zeile. Nicht im Kopf prüfen.**
 > Ein Nein und der Beitrag geht nicht raus.
 
+**Vorher einmal als Sandra durchgehen** (TEIL 0): 23 Uhr, müde, Daumen auf dem Bildschirm.
+Gibt es eine Folie oder eine Sekunde, bei der sie weiterwischt, ohne zu lesen? Und ein Satz
+zurück: Klingt irgendetwas nach Werbebroschüre statt nach einer Sprachnachricht an eine
+Freundin? Dann zuerst das umschreiben, dann die Tabelle.
+
 | Beitrag | gibt ihr mit | berührt es | konkret mitnehmen | Grund zu speichern | Grund zu kommentieren | nur von ihr |
 |---|---|---|---|---|---|---|
 
@@ -633,6 +840,25 @@ Wahl** — eine Umfrage mit zwei Möglichkeiten oder eine Frage, auf die man tip
 
 **Pflicht über die Woche:** alle vier Käufertypen (Rot/Gelb/Grün/Blau) kommen vor, jede
 Sequenz hat einen CTA-Link aus `active-funnels.json`.
+
+**Wenn eine Sequenz ein Angebot direkt vorstellt** (aus den Kursunterlagen „Content
+Shortcut“, 13.10.2026), dann in dieser Reihenfolge:
+1. **Einstieg:** eine echte Kundenstimme (`context/kundinnen-geschichten.md`, nur mit
+   Freigabe) **oder** ein Blick in die Werkstatt, also woran du gerade baust.
+2. **Für wen:** zwei, drei ganz konkrete Situationen, in denen sie sich erkennt.
+3. **Wie es danach ist:** der Zustand nach dem Angebot, in ihrem Alltag erzählt.
+4. **Was drin ist:** darf beim gefühlsorientierten Käufertyp wegfallen.
+5. **Aufruf:** „Reagier mit ❤️, dann schick ich dir alles“ oder Frage-Sticker.
+6. *(optional)* Beweis von jemandem, der schon dabei ist. Gibt es keinen echten, fällt die
+   Folie weg.
+
+**Mini-Sprechstunde als Beziehungs- und Testinstrument:** „Ich schau mir diese Woche
+**drei** Bios an, tipp auf den Sticker.“ Daraus kommen Gespräche, echte Sätze der
+Zielgruppe und der Beleg, ob ein Thema als Angebot trägt, bevor es gebaut wird.
+
+**Story-Einstiege, wenn nichts passiert ist:** ein Rat, den sie immer wieder hört · etwas,
+bei dem du deine Meinung geändert hast · etwas, das nicht funktioniert hat · was du diese
+Woche geschafft hast. Immer nur Echtes, nie eine Szene erfinden.
 
 ---
 
@@ -761,6 +987,19 @@ trocken und plant über `scripts/cockpit/freigabe-zu-blotato.mjs` ein.
 - **Kein „Stell dir vor"** — direkt in die Szene einsteigen.
 - **Keine abstrakten Verben ohne Handelnden** („es trägt noch nicht").
 - **Kein Rätsel statt Aussage.** In drei Sekunden braucht es Klarheit.
+- **Frage und Antwort direkt hintereinander** bringen Tempo: „Bringt mir das was? Ja. Aber
+  nur, wenn …“ (aus den Kursunterlagen „Content Shortcut“).
+- **Eigene Meinung gegen das Übliche:** „Alle sagen X. Ich sehe das anders, weil …“ —
+  mit einem echten Grund aus ihrem Weg.
+- **Offene Schleife nur mit echtem Erlebnis:** am Anfang andeuten, was gleich kommt, und
+  es dann auch auflösen.
+
+**Aus den Kursunterlagen bewusst NICHT übernommen** (13.10.2026, widerspricht den Regeln
+hier): Powerwörter-Listen (ultimativ, magisch, Geheimnis, unglaublich — Blackliste) ·
+Nutzen-Hooks mit der Lösung drin („Wie du X ohne Y …“) · Hooks mit „Studien zeigen“ oder
+„Experten sind sich einig“ · gespielte Füllwörter, Satzabbrüche und englische Floskeln
+(„ähm“, „Been there“) · Kundengeschichten mit Name und Umsatz als Muster, wenn es keine
+echte gibt · Formulierungen wie „Investition“ statt Preis.
 
 **Wahrheit**
 

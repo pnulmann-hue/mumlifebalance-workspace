@@ -162,6 +162,10 @@ def beitraege(konto, anzahl):
             "id": x["id"],
             "datum": x["timestamp"][:10],
             "typ": x.get("media_product_type") or x.get("media_type"),
+            # media_type trennt Karussell (CAROUSEL_ALBUM) von Einzelbild (IMAGE);
+            # media_product_type sagt bei beiden nur "FEED".
+            "medientyp": x.get("media_type"),
+            "zeitpunkt": x.get("timestamp"),
             "link": x.get("permalink"),
             "likes": x.get("like_count"),
             "kommentare": x.get("comments_count"),

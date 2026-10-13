@@ -420,6 +420,19 @@ gehen in `/content` auf; was gilt, steht nur noch dort. ⚠️ Offen: B5, B9, we
 **Mikro/Makro** stammt aus einer Profil-Analyse von **Laura Hersche** (Bildschirmaufnahme 07.10.,
 Transkript `nachbau/2026-10-07-mentorin-mikro-makro/`). **B-Roll wird seit 11.10. animiert.**
 Anna (@die.erfolgstexterei, Kurs „Content Shortcut") steht seit 11.10. in der Kern-Nische.
+**13.10.: `/content` v2.1 ist der eine Instagram-Skill** — auch für Einzelaufträge („Hooks / Karussell /
+Reel zu X“). Eingebaut aus Patricias drei Kurs-Skills (Originale in `context/Kurse/aktuelle kurse/Content-Shortcut/skills/`):
+TEIL 0 mit Leserin **Sandra** und 23-Uhr-Test, fünf Säulen, Mikro statt Makro, belegte Eckdaten (4 Kinder,
+2018/2021/2023) · Hook-Regel **Gegner, Geständnis oder Zitat** mit zehn Stilen · **sieben Karussell-Baupläne**
+· Reel-Skript-Format. Wissen in `.claude/skills/content/wissen/` (gitignored, fremde Konten). Entscheide: 3+2-Regel
+mit Stichwort bleibt · Lösung erst ab Folie 2 · Caption-Länge nach Sinn. ⚠️ Offen: `hooks`, `karussell`, `reels`,
+`caption` archivieren, damit nicht zwei Stellen Hooks schreiben.
+Dazu am 13.10. die drei Begleit-PDFs (Copyformeln · Sales Guide · KI-Brandvoice) geprüft: übernommen sind
+CTA ohne Denkarbeit, Verkaufs-Story in 6 Folien, Mini-Sprechstunde, Frage-Antwort/Meinung/Open Loop; bewusst
+nicht Powerwörter, Nutzen-Hooks, Studien-Hooks, gespielte Füllwörter. Liste: `context/Kurse/aktuelle kurse/Content-Shortcut/unterlagen/`.
+**Der Content-Kreislauf** (13.10.): sechs Stationen Verstehen → Monat → Woche → Posten → Messen → Auswerten, mit Quellen
+und Rückfluss, steht oben in `/content`; Station 1 vierteljährlich und Station 6 laufen in `/monatsplan` (4.5a/4.5b,
+liest `auswertung.json`). Kursfassung mit eigenen Prompts: `outputs/produkte/ki-treppe/12-content-kreislauf-kursmaterial.md`.
 
 ### Die Hook-Maschine — erst die Zahlen, dann schreiben (seit 2026-10-04)
 
@@ -3558,6 +3571,44 @@ des Teams, und das Repo ist public.
 **Enroller**, der Teamqualifikationsbericht nach **Sponsor/Platzierung**. Für
 die Rang-Qualifikation zählt die Platzierung. Mirella Castellazzi und Michelle
 Berger erscheinen deshalb je nach Bericht an verschiedenen Stellen.
+
+### Bereich doTERRA im Cockpit (seit 2026-10-13, Version 99)
+
+Patricia: *„das ölwissen würde ich gerne vorerst in mein cockpit integrieren"* · Symptomcheck *„in ALLEN
+Unterlagen. büchern, zeitschriften usw."* · *„gleiches auch fürs business. mit steps"* · Rising-Leaders-Gruppe
+*„mit vielen aufträgen unter anderem neue berater anzuziehen"*. Eigener Bereich oben (Rang + Team sind
+von Mama-CEO umgezogen), gebaut mit `scripts/cockpit/patch-doterra-bereich.py` (+ `doterra-bereich.js/.css`).
+
+| Reiter | Inhalt | Quelle → Datenbank |
+|---|---|---|
+| **Öl-Wissen** | Produkte, Duft, Anwendung, Satz für Kundinnen, „So nicht sagen“, Öl-Abende | `context/doTERRA/Produktwissen/produkt-wissensbasis.json` → `wissensbasis-bauen.py` → `doterra-wissen/produkte` |
+| **Anliegen** | Symptom-Suche über **alle** Unterlagen: 38 Anliegen, je bis 24 Stellen mit Quelle/Seite, welche Öle wie viele Quellen nennen, Block Ernährung/Hormone, Kundinnen-Satz | `anliegen.json` + `scripts/doterra/anliegen-bauen.py` → `doterra-wissen/anliegen-NN` |
+| **Business-Wege** | 8 Abläufe, 67 Schritte zum Abhaken, 26 Vorlagen (einschreiben, LRP, betreuen, reaktivieren, Öl-Abend, Beraterin gewinnen, Onboarding 30 Tage, Rang bis Gold) | `context/doTERRA/business-wege.json` → `doterra-wissen/wege` |
+| **Rising Leaders** | Aufträge mit Frist · Beraterinnen-Liste (Idee → Gespräch → Infos → eingeschrieben → eingearbeitet) · Eingang „Neu aus Telegram“ | `daten/rising-leaders` — 🚨 **gehört Patricia, Abgleich schreibt nie** |
+
+**Anliegen-Bibliothek:** liest Bücher (`context/doTERRA/wissen/*.md`), E-Books, Enjoils-Hefte,
+Produktwissen, `context/persoenlich/ernaehrungswissen/`, `kochwissen/*.md|pdf`. **Scans** liest die in
+Windows eingebaute Texterkennung (`scripts/doterra/ocr-windows.ps1`, über `anliegen-bauen.py --ocr`,
+Zwischenspeicher `outputs/cockpit/abgleich/ocr/`, 2213 Seiten am 13.10.). 🚨 Die Auszüge sind
+Buchtext mit Heilaussagen → nur im privaten Cockpit, Ausgabe gitignored. Nach aussen geht nur
+`kundinnen` aus `anliegen.json`. 🚨 Bücher ohne Absätze werden an Satzgrenzen geteilt, sonst gewinnt ein
+ganzes Kapitel jedes Anliegen; dasselbe Buch unter zwei Dateinamen wird über den Textanfang erkannt.
+
+**Telegram-Abgleich** (`scripts/telegram-userbot/src/abgleich.ts`, nur lesend, alle **Gruppen und
+Kanäle**, keine Einzelchats): eigene Anmeldung `TELEGRAM_SESSION_ABGLEICH` (einmalig
+`npm run abgleich-anmelden`, Patricia tippt selbst) — 🚨 nie die Session des alten Userbots
+mitbenutzen, gleichzeitige Nutzung kann Telegram sperren. Läuft als **Schritt 4 im Task
+`cockpit-daten-abgleich`**: Claude sortiert in auftrag/tipp/training → `doterra-wissen/eingang`;
+Patricia übernimmt oder verwirft im Cockpit; übernommene Tipps/Trainings arbeitet der Task in die
+JSON-Quellen ein (`telegram/eingearbeitet.json`).
+
+**Öffentliche Fassung Öl-Wissen** (zum Teilen mit Kundinnen, ohne `compliance`/`patricia`):
+https://claude.ai/artifact/XfZKXY3kd7qRg71B9ZEzvM — gleiche Quelle, `wissensbasis-bauen.py`, dann
+`outputs/doterra-wissen/oel-wissen.html` neu veröffentlichen. Teilen nur über Patricias Share-Menü.
+🚨 Texte aus Team-Grafiken nie wörtlich (fremdes Konto), Gesundheitsaussagen raus, keine erfundene
+Ich-Erfahrung — was Patricia selbst nutzt, steht im Feld `patricia`.
+Monats-Newsletter: `outputs/newsletter/2026-MM-aktionen-doterra.md`; Booklet und Flyer liegen in der
+WP-Mediathek (Drive-Upload geht nicht über 25 MB, Booklet vorher mit pypdf verkleinern).
 
 ### ThriveCart-Anbindung (`scripts/cockpit/thrivecart-holen.py`, seit 2026-09-11)
 

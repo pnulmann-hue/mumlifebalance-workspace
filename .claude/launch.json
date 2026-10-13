@@ -316,6 +316,18 @@
         "outputs/produkte/doterra-angebote-seite"
       ],
       "port": 4404
+    },
+    {
+      "name": "cockpit-test-2",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/cockpit/abgleich",
+        "-l",
+        "4405"
+      ],
+      "port": 4405
     }
   ]
 }

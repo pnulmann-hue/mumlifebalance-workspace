@@ -1,0 +1,79 @@
+  /* ---------- doTERRA-Bereich (13.10.2026) ---------- */
+  .dt-lab { display: block; font-size: 10px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 5px; }
+  .dt-werkzeug { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 3; background: var(--ground); padding: 10px 0; display: grid; gap: 8px; }
+  .dt-werkzeug input, .dt-anlsuche { width: 100%; background: var(--surface); border: 1px solid var(--line); border-radius: 9px; padding: 10px 13px; font-size: 14px; }
+  .dt-anlsuche { margin: 6px 0 14px; }
+  .dt-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .dt-chip { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 5px 12px; font-size: 13px; cursor: pointer; }
+  .dt-chip:hover { border-color: var(--teal); }
+  .dt-chip[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: var(--surface); }
+  .dt-karten { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 14px; }
+  .dt-karte { display: grid; gap: 8px; align-content: start; min-width: 0; }
+  .dt-karte h3 { font-family: var(--display); font-size: 20px; margin: 0; font-weight: normal; }
+  .dt-kopf { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .dt-kat { font-size: 10px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--teal); font-weight: 700; }
+  .dt-aktion { font-size: 13px; background: var(--orange-soft); border-radius: 8px; padding: 6px 10px; }
+  .dt-kurz { margin: 0; }
+  .dt-karte .note { margin: 0; }
+  .dt-anw { margin: 0; padding-left: 1.1em; display: grid; gap: 3px; font-size: 14px; }
+  .dt-hinweis { margin: 0; font-size: 13px; border-left: 3px solid var(--teal); padding-left: 9px; }
+  .dt-verbot { margin: 0; font-size: 13px; color: var(--crit); }
+  .dt-satz { background: var(--ground); border: 1px solid var(--line); border-radius: 9px; padding: 9px 11px; display: grid; gap: 6px; justify-items: start; }
+  .dt-satz p { margin: 0; font-size: 14px; }
+  .dt-abende { margin-bottom: 8px; display: grid; gap: 8px; }
+  .dt-abende h2 { margin: 0; color: var(--orange); }
+  .dt-abende .note { margin: 0; }
+  .dt-termine, .dt-knoepfe { display: flex; flex-wrap: wrap; gap: 8px; }
+  .dt-termin { border: 1px solid var(--line); border-radius: 8px; padding: 4px 11px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .dt-termin.naechster { border-color: var(--orange); color: var(--orange); }
+  .dt-termin.vorbei { opacity: 0.45; text-decoration: line-through; font-weight: normal; }
+  .dt-warn { background: var(--orange-soft); border-radius: 9px; padding: 9px 12px; font-size: 13px; }
+  .dt-gruppe { margin-bottom: 10px; }
+  .dt-anlkopf { margin: 6px 0 14px; display: grid; gap: 10px; }
+  .dt-anlkopf h2 { margin: 0; font-size: 22px; }
+  .dt-anlkopf .note { margin: 0; }
+  .dt-oelrang { display: flex; flex-wrap: wrap; gap: 6px; }
+  .dt-oel { font-size: 13px; background: var(--teal-soft); border-radius: 999px; padding: 4px 11px; cursor: help; font-variant-numeric: tabular-nums; }
+  .dt-h3 { font-family: var(--display); font-size: 18px; font-weight: normal; margin: 20px 0 8px; }
+  .dt-stelle { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 11px 14px; margin-bottom: 8px; font-size: 14px; }
+  .dt-stelle p { margin: 6px 0 0; line-height: 1.55; }
+  .dt-stelle summary { cursor: pointer; margin-top: 6px; line-height: 1.55; }
+  .dt-stelle details[open] summary { display: none; }
+  .dt-quelle { font-size: 13px; display: flex; gap: 6px; flex-wrap: wrap; align-items: baseline; }
+  .dt-qkat { margin-left: auto; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+  .dt-oelzeile { margin-top: 7px; display: flex; flex-wrap: wrap; gap: 4px; }
+  .dt-weg { margin-bottom: 10px; }
+  .dt-weg > summary { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; cursor: pointer; list-style: none; }
+  .dt-weg > summary::-webkit-details-marker { display: none; }
+  .dt-wegtitel { font-family: var(--display); font-size: 18px; }
+  .dt-fort { font-variant-numeric: tabular-nums; color: var(--teal); font-weight: 600; }
+  .dt-wozu { grid-column: 1 / -1; margin: 0; }
+  .dt-schritte { margin: 12px 0 10px; padding-left: 1.3em; display: grid; gap: 12px; }
+  .dt-schritte li p { margin: 4px 0 0; font-size: 14px; }
+  .dt-schritte li.fertig > .dt-check span { text-decoration: line-through; color: var(--ink-soft); }
+  .dt-schritte .dt-satz { margin-top: 6px; }
+  .dt-check { display: flex; gap: 8px; align-items: baseline; font-weight: 600; cursor: pointer; }
+  .dt-check input { accent-color: var(--teal); }
+  .dt-q { font-size: 11px; color: var(--ink-soft); }
+  .dt-neu { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+  .dt-neu input { flex: 1 1 160px; min-width: 0; background: var(--ground); border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; font-size: 13px; }
+  .dt-neu input[type="date"] { flex: 0 0 auto; }
+  .dt-auftrag { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: start; padding: 8px 0; border-top: 1px solid var(--line); }
+  .dt-auftrag input { margin-top: 4px; accent-color: var(--teal); }
+  .dt-auftrag.fertig .dt-atext > div:first-child { text-decoration: line-through; color: var(--ink-soft); }
+  .dt-auftrag.spaet .note { color: var(--crit); }
+  .dt-atext { min-width: 0; }
+  .dt-erledigt summary { cursor: pointer; font-size: 13px; color: var(--ink-soft); padding: 8px 0; }
+  .dt-stufe { margin-top: 12px; }
+  .dt-person { border: 1px solid var(--line); border-radius: 9px; padding: 8px 10px; margin-bottom: 6px; background: var(--ground); }
+  .dt-person .note { margin: 4px 0 0; }
+  .dt-pkopf { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .dt-pkopf select { margin-left: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 7px; padding: 4px 6px; font-size: 12px; }
+  .dt-naechst { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+  .dt-naechst input { flex: 1 1 150px; min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 7px; padding: 5px 8px; font-size: 13px; }
+  .dt-naechst input[type="date"] { flex: 0 0 auto; }
+  .dt-eingang { margin-bottom: 18px; border-left: 3px solid var(--orange); }
+  .dt-eingang h2 { margin-top: 0; }
+  .dt-vorschlag { border-top: 1px solid var(--line); padding: 10px 0; display: grid; gap: 4px; }
+  .dt-vorschlag .note { margin: 0; }
+  .dt-vorschlag details p { font-size: 13px; white-space: pre-wrap; }

@@ -270,12 +270,24 @@ Pro Profil (Mentoring + doTERRA), ausgerichtet aufs **Monats-/Launch-Thema**:
 - Quellen: jüngstes `outputs/apify-runs/competitors-*.json` + `discovery-*.json`, bei Bedarf WebSearch (IG/Reddit/Google Trends), `context/patricia-vollprofil.md` + Zielgruppen-Research
 - → 1 verdichteter Absatz pro Profil, der die Hooks speist (jeder Beitrag adressiert mind. 1 davon)
 
+**Vierteljährlich (Januar · April · Juli · Oktober) zusätzlich:** die vier Grundanalysen
+neu machen (Wettbewerb · Trends · Fragen der Zielgruppe · Zielgruppenbild mit Säulen), siehe
+**Station 1 im Content-Kreislauf** oben in `.claude/skills/content/SKILL.md`. Danach die
+Dateien in `.claude/skills/content/wissen/` nachziehen.
+
 ### 4.5b) Vormonats-Content-Analyse (Pflicht)
 
-Aus Content-Management-DB (`collection://2ae7078e-8b7e-811a-ad14-000ba5820c09`) + `outputs/reels/` + `outputs/karussells/`:
-- **Top 3** (Saves/Shares/Reach) — was wiederholen?
-- **Flop 2** — was lassen?
-- Welche **Typen / Themen / Hook-Muster** liefen? → fliesst in die Ideen für den neuen Monat
+🔄 **Seit 13.10.2026 aus `outputs/cockpit/abgleich/auswertung.json`** (der tägliche Abgleich
+rechnet sie, Cockpit → Instagram → Ausgewertet). Die Notion-Content-DB ist abgelöst.
+- **Bestperformer-Formel** (`bestperformer`): Top 10 mit Mindestbasis, und welche Merkmale
+  in den Top 10 häufiger sind als bei allen Beiträgen. Nur die übernehmen.
+- **Nachfrage je Thema** (`nachfrage`): Speichern · Teilen · Kommentare je 1'000 Erreichte.
+  Ein Thema mit viel Reichweite und null Speicherungen ist Reichweite, keine Nachfrage.
+- **Diagnose** (`diagnose`): wo Reichweite ohne Reaktion war → dort fehlt der Grund zu antworten.
+- **Stichwörter mit Umsatz** (`stichwoerter`): welches Stichwort Eintragungen und Käufe bringt.
+  🚨 Die Umsatz-Spalte nie aufsummieren, eine Käuferin kann bei drei Stichwörtern stehen.
+- **Produktideen-Check:** Gibt es ein Thema, das zwei Monate hintereinander oben in der
+  Nachfrage steht und kein Angebot hat? → an `/strategie hebel <Idee>` weitergeben.
 
 ### 4.5c) Pro Woche: 5 Beiträge (thema-matched)
 

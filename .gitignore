@@ -408,6 +408,7 @@ nachbau/**
 outputs/strategie/
 # Julias Roadmap-Wissen im Strategie-Skill — zugekauftes Material, Repo ist public
 .claude/skills/strategie/wissen/
+.claude/skills/content/wissen/
 
 # Mail-Sortierung: Absender und Betreffzeilen fremder Leute
 outputs/mail-sortieren/

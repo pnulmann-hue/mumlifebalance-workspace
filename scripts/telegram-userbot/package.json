@@ -7,7 +7,9 @@
     "login": "tsx src/login.ts",
     "start": "tsx src/index.ts",
     "build": "tsc",
-    "start:prod": "node dist/index.js"
+    "start:prod": "node dist/index.js",
+    "abgleich": "tsx src/abgleich.ts",
+    "abgleich-anmelden": "tsx src/abgleich-anmelden.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.88.0",

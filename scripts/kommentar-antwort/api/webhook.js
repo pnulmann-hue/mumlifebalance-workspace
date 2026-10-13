@@ -29,10 +29,38 @@ const GRAPH = "https://graph.instagram.com/v21.0";
 /* Bis zum Start der Masterclass (Do 8.10.2026, 09:00 Zürich = 07:00 UTC) kommt die
    Einladung in dieselbe Nachricht (Patricia, 28.09.2026). Danach fällt sie von selbst weg. */
 const MASTERCLASS_BIS = Date.parse("2026-10-08T07:00:00Z");
-const STIMM_CHECK_TEXT =
-  "Hier ist dein Stimm-Check 💛 In rund 15 Minuten sammelst du die sechs Angaben, " +
-  "die deine KI von dir braucht, damit sie nach dir klingt:\n" +
-  "https://mumlifebalance.ch/stimm-check/";
+/* 🚨 Nie Wort für Wort dieselbe Nachricht (13.10.2026): Meta hat das Konto für Links in
+   DMs gesperrt, vermutlich weil immer derselbe Text mit demselben Link rausging. Deshalb
+   wechseln Begrüssung, Mittelteil und Schluss zufällig — der Link bleibt gleich. */
+const STIMM_LINK = "https://mumlifebalance.ch/stimm-check/";
+const ANFANG = [
+  "Hier ist dein Stimm-Check 💛",
+  "Schön, dass du dabei bist! Hier kommt dein Stimm-Check 💛",
+  "Da ist er, dein Stimm-Check ✨",
+  "Gern! Hier ist der Stimm-Check für dich 💛",
+  "Hallo du 😊 Hier kommt dein Stimm-Check.",
+];
+const MITTE = [
+  "In rund 15 Minuten sammelst du die sechs Angaben, die deine KI von dir braucht, damit sie nach dir klingt:",
+  "Er fragt dich sechs Dinge ab, und danach weiss deine KI, wie du klingst. Nimm dir etwa eine Viertelstunde dafür:",
+  "Eine Viertelstunde, sechs Angaben, und deine KI schreibt endlich so, wie du redest:",
+  "Damit deine Texte nach dir klingen, sammelst du hier in etwa 15 Minuten die sechs wichtigsten Angaben:",
+];
+const SCHLUSS = [
+  "",
+  "\n\nSag mir gern, wie es dir damit gegangen ist.",
+  "\n\nViel Freude beim Ausprobieren!",
+  "\n\nWenn etwas hakt, schreib mir einfach hier.",
+];
+const zufall = (liste) => liste[Math.floor(Math.random() * liste.length)];
+const stimmCheckText = () =>
+  `${zufall(ANFANG)} ${zufall(MITTE)}\n${STIMM_LINK}${zufall(SCHLUSS)}`;
+const OEFFENTLICH = [
+  "Schau in deine Nachrichten, ich hab dir den Stimm-Check geschickt 💌",
+  "Ist unterwegs, schau mal in deine Nachrichten 💛",
+  "Hab ihn dir gerade geschickt, schau in deine DMs ✨",
+  "Liegt in deinen Nachrichten für dich bereit 💌",
+];
 const MASTERCLASS_TEXT =
   "\n\nUnd am Donnerstag, 8. Oktober, um 9 Uhr zeig ich dir in meiner kostenlosen " +
   "Masterclass live, was sonst noch alles mit KI geht. Hier meldest du dich an:\n" +
@@ -40,9 +68,11 @@ const MASTERCLASS_TEXT =
 
 const STICHWOERTER = {
   stimme: {
-    oeffentlich: "Schau in deine Nachrichten, ich hab dir den Stimm-Check geschickt 💌",
+    get oeffentlich() {
+      return zufall(OEFFENTLICH);
+    },
     get privat() {
-      return STIMM_CHECK_TEXT + (Date.now() < MASTERCLASS_BIS ? MASTERCLASS_TEXT : "");
+      return stimmCheckText() + (Date.now() < MASTERCLASS_BIS ? MASTERCLASS_TEXT : "");
     },
   },
 };

@@ -67,6 +67,7 @@ SEEDS = {
     "doterra-produkte.json": "doterra-produkte",
     "ideen-extern.json": "ideen-extern",
     "planung-abgleich.json": "planung-abgleich",
+    "auswertung.json": "zahlen-auswertung",
     # 🚨 Neue Datendatei gehoert hier nachgetragen, sonst ist der Reiter
     #    in der lokalen Pruefung leer (Lehre vom 24.09.2026).
     "launch.json": "launch",
@@ -75,6 +76,9 @@ SEEDS = {
     "funnel.json": "funnel",
     # Instagram -> Zielgruppe & Markt (12.10.2026, zielgruppe-bauen.py)
     "zielgruppe.json": "zg-markt",
+    # doTERRA-Bereich (13.10.2026, scripts/doterra/wissensbasis-bauen.py)
+    "oelwissen/produkte.json": "dt-produkte",
+    "oelwissen/wege.json": "dt-wege",
 }
 
 
@@ -181,6 +185,16 @@ def main():
         geladen.append("%s (%.0f KB)" % (schluessel, len(roh) / 1024))
 
     beitraege_einlegen(zeilen, geladen)
+
+    # Anliegen liegen in der Datenbank auf mehrere Dokumente verteilt. Lokal gibt es keine
+    # Datenbank — das Cockpit liest sie dann zusammengefasst aus „dt-anliegen".
+    anl = []
+    for f in sorted((ABGLEICH / "oelwissen").glob("anliegen-*.json")):
+        anl += json.loads(f.read_text(encoding="utf-8")).get("items", [])
+    if anl:
+        roh = json.dumps(anl, ensure_ascii=False)
+        zeilen.append('localStorage.setItem(%s,%s);' % (json.dumps("mlb:dt-anliegen"), json.dumps(roh)))
+        geladen.append("dt-anliegen (%.0f KB)" % (len(roh) / 1024))
 
     kopf = ('<!doctype html><html lang="de"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width, initial-scale=1">'
