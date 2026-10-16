@@ -271,6 +271,11 @@
   .aw-top li { margin: 5px 0; }
   .aw-formel { font-family: var(--display); font-size: 18px; color: var(--navy); background: var(--orange-soft); border-radius: 8px; padding: 10px 14px; margin: 10px 0; }
   /* @@auswertung-css-ende */
+  /* @@kalender-css */
+  .ti-post.ka-vorbei { opacity: .88; }
+  .ti-post.ka-heute { border-left: 3px solid var(--orange); padding-left: 8px; }
+  .fb-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 8px; }
+  .fb-spalte { min-width: 0; }
   .page-head { display: flex; align-items: flex-end; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
   .page-head h1 { font-family: var(--display); font-size: 26px; margin: 0; font-weight: normal; letter-spacing: -0.01em; text-wrap: balance; }
   .page-head p { margin: 4px 0 0; color: var(--ink-soft); font-size: 13px; max-width: 62ch; }
@@ -2939,11 +2944,8 @@
     { id: "woche", label: "Planen" },
     { id: "studio", label: "Bauen" },
     { id: "storys", label: "Storys", sub: true },
-    { id: "reels", label: "Reels", sub: true },
     { id: "fertig", label: "Freigeben" },
     { id: "gepostet", label: "Ausgewertet" },
-    { id: "ideenkasten", label: "Ideenkasten" },
-    { id: "ideenextern", label: "Ideen von anderen" },
     { id: "markt", label: "Zielgruppe & Markt" },
     { g: "Planung" },
     { id: "launches", label: "Jahresplan" },
@@ -3159,7 +3161,17 @@
 
   /* Abgelehnt heisst: aus allen Arbeitsansichten raus, aber nicht geloescht.
      Das Feld bleibt am Beitrag, und „Zurueckholen" macht es rueckgaengig. */
-  function istAbgelehnt(b) { return !!(b.obj || b).abgelehnt; }
+  function istAbgelehnt(b) { return !!(b.obj || b).abgelehnt || istVerfallen(b); }
+  /* Archivregel (16.10.2026): mehr als 14 Tage über dem Datum und nie
+     freigegeben. Gelöscht wird nichts; „Zurückholen“ setzt ausArchiv. */
+  function istVerfallen(b) {
+    var o = b.obj || b;
+    if (o.ausArchiv || o.textfrei || !o.datum || freigabeVon(b)) return false;
+    var g = new Date(); g.setDate(g.getDate() - 14);
+    var iso = g.getFullYear() + "-" + String(g.getMonth() + 1).padStart(2, "0") + "-" +
+              String(g.getDate()).padStart(2, "0");
+    return o.datum < iso;
+  }
 
   /* 🚨 Ist der Beitrag durch? Bis 24.09.2026 wurde das nirgends gefragt —
      ein geposteter Beitrag stand weiter als offener Platz in der Woche.
@@ -3656,8 +3668,9 @@
     if (abgelehnt.length) {
       var ab = document.createElement("div");
       ab.className = "panel abliste";
-      ab.innerHTML = '<h2>Abgelehnt (' + abgelehnt.length + ')</h2>' +
-        '<p class="note">Aus allen Arbeitsansichten raus, aber nicht gel\u00f6scht.</p>';
+      ab.innerHTML = '<h2>Archiv (' + abgelehnt.length + ')</h2>' +
+        '<p class="note">Abgelehnt oder mehr als 14 Tage über dem Datum und nie freigegeben. ' +
+        'Aus allen Arbeitsansichten raus, aber nicht gel\u00f6scht.</p>';
       abgelehnt.sort(function (x, y) {
         return (y.obj.abgelehntStand || "") < (x.obj.abgelehntStand || "") ? -1 : 1;
       }).forEach(function (b) {
@@ -3670,6 +3683,7 @@
         zurueck.textContent = "Zur\u00fcckholen";
         zurueck.onclick = function () {
           b.obj.abgelehnt = false;
+          b.obj.ausArchiv = true;
           if (b.art === "reels") saveReel(b.obj);
           else if (b.art === "storys") saveStory(b.obj);
           else saveCarousel(b.obj);
@@ -5410,17 +5424,24 @@
       + "und gib sie neu, dann rutscht der Beitrag auf den n\u00e4chsten Tag.",
       haengt, "du");
 
-    liste("Unterwegs", selbst.length
-      ? "Eingeplant, aber noch nicht im Feed. " + selbst.length + " davon hast "
-        + "du selbst in der App eingeplant \u2014 B-Roll und Storys gehen nie "
-        + "\u00fcber Blotato, weil die Musik nur dort w\u00e4hlbar ist."
-      : "Eingeplant, aber noch nicht im Feed. Hier musst du nichts mehr tun.",
-      laeuft, "ich");
-
-    liste("Gepostet", "Auf Instagram wiedergefunden. Die Auswertung steht unter "
-      + "\u201eGepostet & Analyse\u201c \u2014 dort liegt auch der Knopf, um "
-      + "einen gut gelaufenen Beitrag nach vier Wochen nochmal zu bringen.",
-      gepostet, "ich");
+    /* @@fb-board — drei Spalten, wer dran ist steht im Titel (16.10.2026). */
+    var board = document.createElement("div");
+    board.className = "fb-board";
+    box.appendChild(board);
+    var warten = laeuft.filter(function (b) { return DRAUSSEN.indexOf(draussenStatus(b)) < 0 && b.art !== "storys"; });
+    var eingeplant = laeuft.filter(function (b) { return warten.indexOf(b) < 0; });
+    [["1 · Von dir freigegeben", "Du hast auf Freigeben gedrückt. Mein nächster Lauf (alle zwei Stunden) plant es bei Blotato ein.", warten],
+     ["2 · Von mir eingeplant", "Bei Blotato eingeplant — oder in deiner App, wenn es ein B-Roll oder eine Story ist. Du musst nichts mehr tun.", eingeplant],
+     ["3 · Draussen", "Auf Instagram wiedergefunden, mit Zahlen. Die Auswertung steht unter „Ausgewertet“ und im Content-Kalender.", gepostet]
+    ].forEach(function (sp) {
+      var c = document.createElement("div");
+      c.className = "fb-spalte";
+      board.appendChild(c);
+      box = c;
+      if (sp[2].length) liste(sp[0], sp[1], sp[2], "ich");
+      else c.innerHTML = '<div class="wt-kopf"><span class="wt-name">' + esc(sp[0]) + '</span><span class="wt-datum">0</span></div>' +
+        '<p class="note">' + esc(sp[1]) + '</p>';
+    });
   }
 
   /* =========================================================
@@ -5668,7 +5689,7 @@
   var BEREICHE = [
     { id: "tisch", label: "Mein Tisch", tabs: ["uebersicht"] },
     { id: "instagram", label: "Instagram", saeule: "Instagram",
-      tabs: ["woche", "studio", "storys", "reels", "fertig", "gepostet", "ideenkasten", "ideenextern", "markt"] },
+      tabs: ["woche", "studio", "storys", "fertig", "gepostet", "markt"] },
     { id: "produkte", label: "Produkte", saeule: "Produkte",
       tabs: ["katalog", "produkte", "links", "launch", "funnel", "mailings", "leads", "kurse"] },
     { id: "mamaceo", label: "Mama-CEO", saeule: "Mama-CEO",
@@ -6782,49 +6803,75 @@
     el.appendChild(f);
   }
 
-  /* ---------- Content-Kalender ---------- */
+  /* @@kalender-anfang */
+  /* ---------- Content-Kalender mit Instagram-Abgleich (16.10.2026) ----------
+     Patricia: „ich will im contentkalender, dass das abgeglichen wird.“
+     7 Tage zurück, 14 voraus. Je Tag: was geplant war, ob es auf Instagram
+     wiedergefunden wurde (mit Zahlen), und was direkt in der App rausging.
+     Quelle: daten/gepostet-zuordnung (gepostet-zuordnen.py, täglicher Abgleich). */
+  function kaPostVon(igId) {
+    var l = (igZuordnung && igZuordnung.letzte_posts) || [];
+    for (var i = 0; i < l.length; i++) if (l[i].igId === igId) return l[i];
+    return null;
+  }
+  function kaZahlen(p, z) {
+    var reach = (p && p.reach != null) ? p.reach : (z && z.reach);
+    if (reach == null) return "gepostet";
+    var t = reach + " erreicht";
+    if (p && p.rate) t += " · " + String(p.rate).replace(".", ",") + " %";
+    else if (p && p.rate === 0) t += " · keine Reaktion";
+    if (p && p.saved) t += " · " + p.saved + "× gespeichert";
+    if (p && !p.reif) t += " · noch nicht ausgereift";
+    return t;
+  }
   function tiContent(el, heute, beitraege) {
+    var von = new Date(heute + "T12:00:00"); von.setDate(von.getDate() - 7);
     var bis = new Date(heute + "T12:00:00"); bis.setDate(bis.getDate() + 14);
-    var bisIso = tiIso(bis);
-    var liste = beitraege.filter(function (b) {
-      var d = datumVon(b); return d && d >= heute && d <= bisIso;
-    }).sort(function (a, b) {
-      return datumVon(a) < datumVon(b) ? -1 : (datumVon(a) > datumVon(b) ? 1 : 0);
+    var vonIso = tiIso(von), bisIso = tiIso(bis);
+    var alle = alleBeitraege().filter(function (b) { return !(b.obj || b).abgelehnt; });
+    var tage = {};
+    function tag(d) { return tage[d] || (tage[d] = { geplant: [], spontan: [] }); }
+    alle.forEach(function (b) {
+      // Was gepostet ist, steht an dem Tag, an dem es wirklich rausging —
+      // nicht am alten Plandatum.
+      var ig = igPost(b);
+      var d = (ig && ig.datum) || datumVon(b);
+      if (d && d >= vonIso && d <= bisIso && b.art !== "storys") tag(d).geplant.push(b);
+    });
+    ((igZuordnung && igZuordnung.letzte_posts) || []).forEach(function (p) {
+      if (!p.beitrag && p.datum >= vonIso && p.datum <= bisIso) tag(p.datum).spontan.push(p);
     });
     var ohne = beitraege.filter(function (b) { return !datumVon(b); }).length;
-
-    el.innerHTML = '<span class="ti-chip">Content-Kalender · 14 Tage</span><div id="ti-cl"></div>';
+    var stand = igZuordnung && igZuordnung.stand;
+    el.innerHTML = '<span class="ti-chip">Content-Kalender · 7 Tage zurück, 14 voraus</span>' +
+      '<div class="ti-klein">Abgleich mit Instagram: ' + (stand ? "Stand " + esc(fmtDate(stand)) : "noch keiner") +
+      ' · doTERRA hängt nicht an der Schnittstelle</div><div id="ti-cl"></div>';
     var box = el.querySelector("#ti-cl");
-    if (!liste.length) box.innerHTML = '<div class="ti-leer">In den nächsten zwei Wochen ist nichts geplant.</div>';
-    liste.forEach(function (b) {
-      var d = datumVon(b), dt = new Date(d + "T12:00:00");
-      var s = tpStand(b), o = b.obj;
-      var p = document.createElement("div");
-      p.className = "ti-post";
-      p.innerHTML = '<div class="ti-datum">' + WOCHENTAGE[dt.getDay()].slice(0, 2) + '<b>' + dt.getDate() + '</b>' +
-        dt.toLocaleDateString("de-CH", { month: "short" }) + '</div><div>' +
-        '<span class="ti-mini">' + esc(b.format) + '</span> ' +
-        '<span class="ti-mini">' + (kartenProfil(o) === "doterra" ? "doTERRA" : "Mentoring") + '</span> ' +
-        '<span class="ti-stand ' + s.art + '">' + esc(s.text) + '</span>' +
-        '<h4>' + esc(b.titel || b.format) + '</h4>' +
-        (b.hook && b.hook !== b.titel ? '<div class="hook">' + esc(b.hook) + '</div>' : "") +
-        '<div class="ti-knoepfe"></div></div>';
-      var k = p.querySelector(".ti-knoepfe");
-      var an = document.createElement("button");
-      an.className = "ti-btn voll"; an.textContent = "In der Woche ansehen";
-      an.onclick = function () { springeZuBeitrag(b); };
-      k.appendChild(an);
-      if (!istDraussen(b) && istFertig(b) && !zeitpunktVorbei(b)) {
-        var fr = document.createElement("button");
-        fr.className = "ti-btn orange"; fr.textContent = "Freigeben";
-        fr.onclick = function () { activeTab = "fertig"; render(); };
-        k.appendChild(fr);
-      }
-      var be = document.createElement("a");
-      be.className = "ti-btn"; be.href = BILDEDITOR; be.target = "_blank"; be.rel = "noopener";
-      be.textContent = "Im Bild-Editor bauen";
-      k.appendChild(be);
-      box.appendChild(p);
+    var keys = Object.keys(tage).sort();
+    if (!keys.length) box.innerHTML = '<div class="ti-leer">In diesem Zeitraum ist nichts geplant.</div>';
+    keys.forEach(function (d) {
+      var dt = new Date(d + "T12:00:00"), vorbei = d < heute;
+      var t = tage[d];
+      t.geplant.sort(function (a, b) { return a.format < b.format ? -1 : 1; });
+      t.geplant.forEach(function (b) {
+        var o = b.obj, ig = igPost(b), s;
+        if (ig) {
+          s = { art: "gut", text: "✅ gepostet · " + kaZahlen(kaPostVon(ig.igId), ig), link: ig.link };
+        } else if (vorbei && nichtPruefbar(b)) {
+          s = { art: "info", text: "doTERRA · nicht prüfbar" };
+        } else if (vorbei) {
+          s = { art: "warn", text: istDraussen(b) ? "⚠️ eingeplant, aber auf Instagram nicht gefunden"
+                                                  : "⚠️ nicht rausgegangen" };
+        } else {
+          s = tpStand(b);
+        }
+        box.appendChild(kaZeile(d, dt, b.format, kartenProfil(o) === "doterra" ? "doTERRA" : "Mentoring",
+          b.titel || b.format, b.hook && b.hook !== b.titel ? b.hook : "", s, b, vorbei));
+      });
+      t.spontan.forEach(function (p) {
+        box.appendChild(kaZeile(d, dt, p.typ === "REELS" ? "Reel" : "Beitrag", "Mentoring",
+          p.anfang, "", { art: "info", text: "📌 direkt auf Instagram · " + kaZahlen(p), link: p.link }, null, vorbei));
+      });
     });
     if (ohne) {
       var v = document.createElement("div");
@@ -6833,6 +6880,37 @@
       el.appendChild(v);
     }
   }
+  function kaZeile(d, dt, format, profil, titel, hook, s, b, vorbei) {
+    var p = document.createElement("div");
+    p.className = "ti-post" + (vorbei ? " ka-vorbei" : "") + (d === tiIso(new Date()) ? " ka-heute" : "");
+    p.innerHTML = '<div class="ti-datum">' + WOCHENTAGE[dt.getDay()].slice(0, 2) + '<b>' + dt.getDate() + '</b>' +
+      dt.toLocaleDateString("de-CH", { month: "short" }) + '</div><div>' +
+      '<span class="ti-mini">' + esc(format) + '</span> <span class="ti-mini">' + esc(profil) + '</span> ' +
+      '<span class="ti-stand ' + s.art + '">' + esc(s.text) + '</span>' +
+      '<h4>' + esc(titel) + '</h4>' + (hook ? '<div class="hook">' + esc(hook) + '</div>' : "") +
+      '<div class="ti-knoepfe"></div></div>';
+    var k = p.querySelector(".ti-knoepfe");
+    if (s.link) {
+      var a = document.createElement("a");
+      a.className = "ti-btn"; a.href = s.link; a.target = "_blank"; a.rel = "noopener";
+      a.textContent = "Auf Instagram ansehen";
+      k.appendChild(a);
+    }
+    if (b) {
+      var an = document.createElement("button");
+      an.className = "ti-btn" + (vorbei ? "" : " voll"); an.textContent = "In der Woche ansehen";
+      an.onclick = function () { springeZuBeitrag(b); };
+      k.appendChild(an);
+      if (!vorbei && !istDraussen(b) && istFertig(b) && !zeitpunktVorbei(b)) {
+        var fr = document.createElement("button");
+        fr.className = "ti-btn orange"; fr.textContent = "Freigeben";
+        fr.onclick = function () { activeTab = "fertig"; render(); };
+        k.appendChild(fr);
+      }
+    }
+    return p;
+  }
+  /* @@kalender-ende */
 
   /* ---------- Helferinnen ---------- */
   function tiHelferinnen(el) {
