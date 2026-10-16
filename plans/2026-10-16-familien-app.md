@@ -50,7 +50,13 @@ Vor dem Bau im Supabase-Konto nachsehen, wie viele es schon gibt.
 
 FamilyWall läuft weiter, bis Etappe 4 steht und sich zwei Wochen bewährt hat.
 
-### Etappe 1 · Kalender
+### Etappe 1 · Kalender — ✅ live seit 16.10.2026
+
+https://unsere-familie.vercel.app · Code in `C:\Users\pnulm\familie` (README dort). Speicher im
+bestehenden Supabase-Projekt (PIA), eigene private Buckets `familie` + `familie-dateien`.
+Kinder dürfen Termine eintragen und ändern, löschen auch; nur Personen und Ämtli-Zuordnung sind
+den Eltern vorbehalten. Kinder-Namen stehen erst als Initialen da — umbenennen unter „Mehr“.
+Offen: wer „Instrument üben“ und „Spange“ hat (unter „Mehr“ zuordnen).
 - Monats-, Wochen- und Tagesansicht, Start auf „Heute & Morgen“
 - Termin: Titel · Datum/Zeit oder ganztägig · **Personen** (eine oder mehrere, Farbe je Person) ·
   **Adresse** (antippen → Google Maps) · Notiz · **Anhänge** (Foto, PDF)
