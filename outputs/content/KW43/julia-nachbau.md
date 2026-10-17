@@ -175,7 +175,7 @@ Schick das einer Network-Freundin, die noch fleissig Kaltnachrichten tippt.
 
 ## Fr 23.10. · Upline am Meer · STANDBEIN
 
-**Clip:** `20260725_124343` (du vor dem Stausee, Berge dahinter) · 4–11,5 s
+**Clip:** `20260426_120447` (du klein am Bach unter den Bäumen) · 0–9,4 s
 
 **Hook im Bild:**
 > Deine Upline zeigt das neue Auto und die Woche am Meer,
