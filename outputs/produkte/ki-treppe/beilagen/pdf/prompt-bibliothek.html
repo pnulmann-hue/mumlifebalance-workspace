@@ -1,0 +1,373 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet"><style>@page { size: A4; margin: 17mm 16mm 20mm; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: #0c1c30;
+  font-family: 'Source Sans 3', sans-serif; font-size: 11.4pt; line-height: 1.58; }
+.kopf { border-bottom: 3px solid #dc822e; padding-bottom: 9px; margin-bottom: 22px;
+  display: flex; align-items: baseline; gap: 10px; }
+.kopf .marke { font-family: 'Philosopher', serif; font-size: 13pt; color: #12828c; }
+.kopf .reihe { font-size: 8.6pt; letter-spacing: .14em; text-transform: uppercase;
+  color: #29556d; opacity: .75; margin-left: auto; }
+h1 { font-family: 'Philosopher', serif; font-size: 25pt; line-height: 1.16;
+  color: #0c1c30; margin: 0 0 14px; font-weight: 700; }
+h2 { font-family: 'Philosopher', serif; font-size: 16pt; color: #12828c;
+  margin: 26px 0 8px; font-weight: 700; break-after: avoid; }
+h3 { font-family: 'Philosopher', serif; font-size: 13pt; color: #29556d;
+  margin: 18px 0 6px; font-weight: 700; break-after: avoid; }
+h4 { font-size: 11.4pt; color: #29556d; margin: 14px 0 4px; break-after: avoid; }
+p { margin: 0 0 10px; }
+strong { color: #0c1c30; font-weight: 600; }
+code { font-family: 'Source Sans 3', monospace; background: #f1ecdd;
+  border-radius: 4px; padding: 1px 5px; font-size: 10.4pt; }
+pre { background: #f1ecdd; border-left: 3px solid #12828c;
+  border-radius: 0 7px 7px 0; padding: 11px 14px; font-size: 10pt; line-height: 1.5;
+  white-space: pre-wrap; overflow-wrap: anywhere; margin: 0 0 12px; }
+hr { border: 0; border-top: 1px solid rgba(12,28,48,.14); margin: 20px 0; }
+ul { margin: 0 0 12px; padding-left: 0; list-style: none; }
+ul.punkte li { position: relative; padding-left: 19px; margin-bottom: 5px; }
+ul.punkte li::before { content: ""; position: absolute; left: 3px; top: .62em;
+  width: 6px; height: 6px; border-radius: 50%; background: #dc822e; }
+ul.haken li { position: relative; padding-left: 30px; margin-bottom: 9px; break-inside: avoid; }
+ul.haken .kasten { position: absolute; left: 0; top: .18em; width: 15px; height: 15px;
+  border: 1.8px solid #12828c; border-radius: 4px; }
+blockquote { background: #f1ecdd; border-left: 3px solid #dc822e;
+  border-radius: 0 8px 8px 0; padding: 12px 15px; margin: 0 0 14px; break-inside: avoid; }
+blockquote p:last-child { margin-bottom: 0; }
+table { width: 100%; border-collapse: collapse; margin: 0 0 14px; font-size: 10.6pt; }
+th { text-align: left; background: #12828c; color: #fff; font-weight: 600; padding: 7px 10px; }
+td { padding: 7px 10px; border-bottom: 1px solid rgba(12,28,48,.12); vertical-align: top; }
+tr:nth-child(even) td { background: rgba(241,236,221,.5); }
+.fuss { margin-top: 26px; padding-top: 9px; border-top: 1px solid rgba(12,28,48,.14);
+  font-size: 8.8pt; color: #29556d; opacity: .8; }</style></head><body><div class="kopf"><span class="marke">Mum Life Balance</span><span class="reihe">Deine KI-Mitarbeiterin</span></div><h1>Deine Prompt-Bibliothek</h1>
+<p>Alle Aufträge aus dem Kurs an einem Ort, sortiert nach den drei Stufen. Du musst hier nichts verstehen, solange du noch nicht beim passenden Modul bist. Speichere die Datei ab, leg sie zur Seite, und komm zurück, wenn eine Lektion dich hierher schickt.</p>
+<p><strong>Wie du damit arbeitest:</strong> Alles zwischen den Linien kopieren, die eckigen Klammern durch deine Angaben ersetzen, die Klammern selbst wegnehmen. Was in runden Klammern steht, ist meine Erklärung an dich und gehört nicht in den Auftrag.</p>
+<p><strong>Die Nummern sind dein Lesezeichen.</strong> In den Lektionen sage ich „nimm Prompt 14“ — dann suchst du hier die 14 und musst nicht raten.</p>
+<hr>
+<h2>Was auf allen drei Stufen gilt</h2>
+<p>Drei Zutaten machen aus einer Frage einen Auftrag: <strong>wer du bist</strong>, <strong>was herauskommen soll</strong>, <strong>woran du siehst, dass es gut ist</strong>. Fehlt eine davon, bekommst du Durchschnitt — und zwar jedes Mal, egal auf welcher Stufe.</p>
+<p>Die vierte Zutat ist eine Angewohnheit: <strong>lass nachfragen, bevor gearbeitet wird.</strong> Der Satz dafür steht in fast jedem Auftrag hier drin.</p>
+<hr>
+<h1>Stufe 1 · Claude Chat</h1>
+<p>Du arbeitest im Browser oder am Handy. Alles hier funktioniert mit einem Gratis-Konto.</p>
+<h2>1 · Dein erster richtiger Auftrag</h2>
+<p><em>(Lektion 2.1 — der Unterschied zum nackten „schreib mir einen Post“)</em></p>
+<pre>Ich bin [was du tust, in einem Satz].
+Ich arbeite mit [für wen du arbeitest, so genau wie möglich].
+
+Deine Aufgabe: [was du haben willst, ein Ding, nicht drei]
+
+So sieht gut aus:
+- [Form, Länge, Anzahl]
+- [was unbedingt drin sein muss]
+- [was nie vorkommen darf]
+
+Sag mir in zwei Sätzen, was du verstanden hast, bevor du anfängst.
+Wenn dir etwas fehlt, frag danach, statt es dir auszudenken.</pre>
+<h2>2 · Woran du KI-Sprache erkennst</h2>
+<p><em>(Lektion 2.2 — am eigenen Text ausprobieren, nicht an einem fremden)</em></p>
+<pre>Hier ist ein Text, den eine KI geschrieben hat.
+
+Markier mir jede Stelle, an der man merkt, dass kein Mensch das getippt hat.
+Nenn mir zu jeder Stelle den Grund in einem halben Satz.
+
+Erfinde keine Fundstellen. Wenn der Text an einer Stelle in Ordnung ist,
+sag das.
+
+[Text einfügen]</pre>
+<h2>3 · Die Buch-Technik — kurz</h2>
+<p><em>(Lektion 2.4 — die ausführliche Fassung liegt als eigene Beilage bei)</em></p>
+<pre>Du schreibst ein Buch über mich und mein Business. Bevor du eine Zeile
+schreibst, willst du mich richtig kennen.
+
+Stell mir Fragen. Eine nach der anderen. Frag nach, wenn meine Antwort zu
+allgemein ist. Frag nach Beispielen und nach Sätzen, die ich wirklich
+gesagt habe.
+
+Hör nicht auf zu fragen, solange du irgendwo raten müsstest.</pre>
+<h2>4 · Deine Stimme einfangen</h2>
+<p><em>(Lektion 2.5 — zwei, drei eigene Texte bringen mehr als jede Beschreibung)</em></p>
+<pre>Unten stehen drei Texte, die ich selbst geschrieben habe.
+
+Schreib mir daraus auf, wie ich klinge: Satzlänge, Wörter die ich oft
+benutze, Wörter die bei mir nie vorkommen, wie ich anfange, wie ich
+aufhöre.
+
+Beschreib nur, was wirklich dasteht. Keine Vermutungen darüber, wie ich
+gern klingen würde.
+
+[Text 1]
+[Text 2]
+[Text 3]</pre>
+<p><strong>Danach</strong>, im selben Gespräch:</p>
+<pre>Schreib [was du brauchst] in genau dieser Sprache. Nimm die Satzlänge und
+die Wörter von oben.</pre>
+<h2>5 · Dein Projekt einrichten</h2>
+<p><em>(Lektion 2.6 — die Anweisung, die in jedem Chat des Projekts mitgeht)</em></p>
+<pre>Du arbeitest für [deinen Namen].
+
+In den Projektdateien liegt mein Wissen. Lies es, bevor du antwortest, und
+richte dich danach — besonders nach dem Abschnitt zu meiner Sprache.
+
+Was ich nie will:
+- [Verbot 1]
+- [Verbot 2]
+
+Wenn dir für eine Aufgabe eine Angabe fehlt, frag mich. Erfinde nichts über
+mich, mein Angebot oder meine Zahlen.</pre>
+<h2>6 · Erklär es mir einfacher</h2>
+<p><em>(Lektion 4.5, geht aber ab Stufe 1 — zwei Sätze, die mehr helfen als jede Suchmaschine)</em></p>
+<pre>Erklär mir das nochmal, als wäre ich in der vierten Klasse.</pre>
+<pre>Erklär mir das mit einem Bild aus dem Alltag.</pre>
+<h2>7 · Ein Thema aus dem sammeln, was deine Leute wirklich fragen</h2>
+<p><em>(Lektion 2.6b — füttern statt erfinden lassen)</em></p>
+<pre>Unten stehen Fragen und Nachrichten, die ich in den letzten Wochen bekommen
+habe.
+
+Sortier sie nach dem Problem dahinter, nicht nach dem Wortlaut. Nenn mir je
+Problem, wie oft es vorkommt und einen Satz daraus im Original.
+
+Nimm nur, was dasteht. Erfinde keine Probleme dazu.
+
+[Nachrichten einfügen]</pre>
+<hr>
+<h1>Stufe 2 · Claude Cowork</h1>
+<p>Dieselbe Oberfläche, nur arbeitet sie jetzt mit deinen Dateien. Was auf Stufe 1 funktioniert hat, funktioniert hier weiter.</p>
+<h2>8 · Erst anschauen, dann arbeiten</h2>
+<p><em>(Lektion 3.1 — der Satz, der die meisten Fehlgriffe verhindert)</em></p>
+<pre>Schau dir zuerst an, was in diesem Ordner schon liegt.
+
+Sag mir dann in fünf Zeilen, was du gefunden hast und was davon für
+[dein Vorhaben] brauchbar ist. Fang noch nicht an zu arbeiten.</pre>
+<h2>9 · Dein erster Helfer</h2>
+<p><em>(Lektion 3.3 — die ausführliche Fassung mit Beispiel liegt als eigene Beilage bei)</em></p>
+<pre>Lies zuerst meinen Business-Brief im Ordner.
+
+Deine Aufgabe: [was er für dich tun soll, in einem Satz]
+
+So soll das Ergebnis aussehen:
+- [Form, Länge, Anzahl]
+- [was immer dabei sein muss]
+- [was nie vorkommen darf]
+
+Bevor du anfängst, sag mir in zwei Sätzen, was du verstanden hast.</pre>
+<h2>10 · Deine eigene Planung lesen lassen</h2>
+<p><em>(Lektion 3.2 — sobald die Verbindung steht)</em></p>
+<pre>Lies [Name deiner Planungsseite oder Tabelle].
+
+Sag mir: Was steht diese Woche an, was ist überfällig, und was davon
+hängt an mir selbst.
+
+Nimm nur, was dort wirklich steht. Was kein Datum hat, ist keine Aufgabe —
+nenn es getrennt.</pre>
+<h2>11 · Meckern, bis es passt</h2>
+<p><em>(Lektion 3.3, Schritt 3 — das erste Ergebnis ist selten gut)</em></p>
+<pre>Das passt noch nicht. Was mich stört:
+- [Punkt 1, so konkret wie möglich]
+- [Punkt 2]
+
+Mach es nochmal. Alles andere bleibt, wie es war.</pre>
+<blockquote><strong>Die Regel dahinter:</strong> Was du zweimal bemängelt hast, schreibst du in den Auftrag hinein. Ab dann musst du es nicht mehr sagen — und genau daraus wird auf Stufe 3 dein erster Skill.</blockquote>
+<hr>
+<h1>Stufe 3 · Claude Code</h1>
+<p>Jetzt hat deine KI einen eigenen Arbeitsplatz. Alles, was du hier aufschreibst, bleibt liegen.</p>
+<h2>Einrichten und sprechen</h2>
+<h3>12 · Wenn eine Fehlermeldung kommt</h3>
+<p><em>(Lektion 4.6 — bevor du irgendwo suchst)</em></p>
+<pre>Ich arbeite an [Gerät: Windows oder Mac].
+Ich wollte [was du vorhattest].
+Ich habe gemacht: [der letzte Schritt]
+Da steht jetzt: [Fehlermeldung wörtlich, oder Screenshot anhängen]
+
+Was ist da los, und was soll ich als Nächstes tippen?
+Erklär es in einfachen Worten.</pre>
+<h3>13 · Dein Gedächtnis anlegen lassen</h3>
+<p><em>(Lektion 4.4 — statt vor einer leeren Datei zu sitzen)</em></p>
+<pre>Schau dir zuerst alle Dateien in meinem Arbeitsplatz an.
+
+Schreib mir daraus einen Vorschlag für meine CLAUDE.md: wer ich bin, womit
+ich arbeite, welche Ordner wofür da sind, und welche Regeln du aus dem
+ableiten kannst, was schon dasteht.
+
+Wo du etwas nicht weisst, schreib „offen“ hin, statt zu raten.
+Frag mich danach nur zu den offenen Punkten.</pre>
+<h3>14 · Merk dir das</h3>
+<p><em>(Lektion 4.4 — der kürzeste nützliche Auftrag im ganzen Kurs)</em></p>
+<pre>Merk dir das: [die Regel, in einem Satz]
+Schreib es in die CLAUDE.md, an die passende Stelle.</pre>
+<h3>15 · Sag mir, was du vorhast</h3>
+<p><em>(Lektion 4.5 — vor allem, was mehr als eine Datei anfasst)</em></p>
+<pre>Bevor du etwas änderst: Sag mir in Stichworten, welche Dateien du anfassen
+willst und was in jeder passiert.
+
+Ich sage dann los oder stopp.</pre>
+<h3>16 · Neu ansetzen statt nachbessern</h3>
+<p><em>(Lektion 4.6 — wenn der dritte Versuch auch nicht sitzt)</em></p>
+<pre>Lass das so, wir fangen anders an.
+
+Vergiss den Weg von vorhin. Erklär mir zuerst in drei Sätzen, wie du es
+diesmal machen würdest.</pre>
+<h2>Skills</h2>
+<h3>17 · Was bei dir ein Skill werden sollte</h3>
+<p><em>(Lektion 5.3)</em></p>
+<pre>Schau dir an, was in meinem Arbeitsplatz liegt und was ich dich in den
+letzten Gesprächen gefragt habe.
+
+Nenn mir die Arbeiten, die ich offenbar immer wieder gleich mache. Je Zeile:
+was es ist und woran du das erkennst.
+
+Keine Vorschläge für Dinge, die du bei anderen gesehen hast — nur das, was
+du bei mir findest.</pre>
+<h3>18 · Deinen ersten Skill bauen lassen</h3>
+<p><em>(Lektion 5.4 — das leere Gerüst liegt als eigene Beilage bei)</em></p>
+<pre>Bau mir einen Skill für [die Arbeit, in einem Satz].
+
+Lies vorher meine CLAUDE.md und [die Datei mit deinem Wissen dazu].
+
+Der Skill braucht: Zweck · woher das Wissen kommt · meine Regeln · wie das
+Ergebnis aussehen soll · ein Beispiel.
+
+Frag mich zu allem, was du nicht aus meinen Dateien weisst. Erfinde keine
+Regeln, die ich nie gesagt habe.</pre>
+<h3>19 · Von Hand nachschärfen</h3>
+<p><em>(Lektion 5.5 — das, was ein Baukasten nie weiss)</em></p>
+<pre>Nimm in den Skill [Name] dazu:
+
+Immer: [was jedes Mal passieren soll]
+Nie: [was nie passieren darf]
+Wenn [Fall], dann [was dann gilt]
+
+Ändere nur diese Stellen. Alles andere bleibt Wort für Wort stehen.</pre>
+<h3>20 · Aus einer Korrektur eine Regel machen</h3>
+<p><em>(Lektion 5.6 — der Punkt, an dem ein Skill besser wird als du)</em></p>
+<pre>Ich habe dasselbe jetzt dreimal korrigiert: [was du jedes Mal ändern musstest]
+
+Schreib das als Regel in den Skill [Name], in meinen Worten.
+Zeig mir die Zeile, bevor du sie einfügst.</pre>
+<h3>21 · Einen fremden Skill prüfen</h3>
+<p><em>(Lektion 5.7 — bevor du fremde Anweisungen in deinen Arbeitsplatz legst)</em></p>
+<pre>Hier ist ein Skill, den ich heruntergeladen habe.
+
+Sag mir in einfachen Worten:
+- Was tut er genau, Schritt für Schritt?
+- Greift er auf meine Zugangsdaten zu, lädt er etwas aus dem Internet,
+  löscht oder verschickt er etwas?
+- Was davon würdest du an meiner Stelle nicht laufen lassen?
+
+Lies dazu auch die Skripte, die dabei liegen, nicht nur die Beschreibung.</pre>
+<h2>Bots</h2>
+<h3>22 · Vom Skill zum Bot</h3>
+<p><em>(Lektion 6.3 — das Bot-Gerüst liegt als eigene Beilage bei)</em></p>
+<pre>Aus dem Skill [Name] soll ein Bot werden, der mir morgens um [Uhrzeit]
+auf Telegram schreibt.
+
+Bevor du anfängst: Sag mir, was du dafür brauchst und was es im Monat
+kostet.
+
+Baue ihn so, dass ich ihn zuerst selbst einmal auslösen kann. Der Zeitplan
+kommt erst dazu, wenn der Testlauf gepasst hat.</pre>
+<h3>23 · Wenn der Bot schweigt</h3>
+<p><em>(Lektion 6.5)</em></p>
+<pre>Mein Bot [Name] hat heute morgen nichts geschickt.
+
+Geh die möglichen Gründe der Reihe nach durch und sag mir zu jedem, wie ich
+ihn prüfe. Fang mit dem an, der am häufigsten vorkommt.
+
+Ändere noch nichts.</pre>
+<h2>Deine Inhalte</h2>
+<h3>24 · Eine Wissensdatei füllen</h3>
+<p><em>(Lektion 7.2 — der wichtigste Auftrag in Kapitel 7, weil er den Unterschied zwischen Maschine und Treibstoff macht)</em></p>
+<pre>Die Datei [Name] ist noch leer. Sie gehört zum Skill [Name] und soll mein
+Wissen zu [Thema] enthalten.
+
+Frag mich Frage für Frage danach. Eine nach der anderen. Frag nach, wenn
+meine Antwort nach Werbesprache klingt, und bitte um ein echtes Beispiel.
+
+Schreib erst, wenn du zu keinem Punkt mehr raten musst.</pre>
+<h3>25 · Der Prüf-Durchgang vor dem Posten</h3>
+<p><em>(Lektion 7.7 — und das ist die Stelle, an der du dir Ärger ersparst)</em></p>
+<pre>Lies [die Datei mit meinen Regeln].
+
+Geh den Beitrag unten durch und nenn mir jede Stelle, die gegen eine
+dieser Regeln verstösst. Je Fund: die Stelle wörtlich, die Regel, und ein
+Vorschlag.
+
+Melde nichts, was du nicht wörtlich belegen kannst. Ändere nichts selbst.
+
+[Beitrag einfügen]</pre>
+<h3>26 · Die Zahlen lesen</h3>
+<p><em>(Lektion 7.7b — Vorsicht, hier lügen Prozente am leichtesten)</em></p>
+<pre>Unten steht meine Tabelle mit allen Beiträgen der letzten Wochen.
+
+Rechne je Beitrag die Reaktionen auf die erreichten Leute und vergleiche
+jeden mit dem Mittelwert aller.
+
+Zwei Regeln beim Rechnen:
+- Beiträge unter [Zahl] erreichten Leuten lass aussen vor, dort misst die
+  Quote nur den Zufall.
+- Ein Beitrag zählt erst ab sieben Tagen als fertig.
+
+Nenn mir am Schluss die drei stärksten und sag zu jedem, woran es
+nachweislich lag. Wo du es nicht sagen kannst, schreib das hin.
+
+[Tabelle einfügen]</pre>
+<h2>Seiten, Produkte, Mails</h2>
+<h3>27 · Eine Verkaufsseite bauen lassen</h3>
+<p><em>(Lektion 8.2)</em></p>
+<pre>Bau mir eine Verkaufsseite für [Angebot].
+
+Lies vorher [deine Wissensdatei zum Angebot] und meine CLAUDE.md.
+
+Nimm nur Angaben, die dort stehen — keine erfundenen Zahlen, keine
+erfundenen Kundenstimmen, kein Versprechen, das ich nicht gegeben habe.
+Wo eine Angabe fehlt, setz einen Platzhalter und sag mir, welche.</pre>
+<h3>28 · Nicht am Original arbeiten</h3>
+<p><em>(Lektion 8.2 — ein Satz, der eine bestehende Seite rettet)</em></p>
+<pre>Fass meine bestehende Seite nicht an. Arbeite in einer Kopie und zeig mir
+das Ergebnis, bevor irgendetwas live geht.</pre>
+<h3>29 · Entwurf statt senden</h3>
+<p><em>(Lektion 8.4 — gilt für jede Mail und jeden Beitrag)</em></p>
+<pre>Leg das als Entwurf ab. Verschicken tue ich selbst.</pre>
+<h2>Cockpit und Kundschaft</h2>
+<h3>30 · Deine eigene Übersicht</h3>
+<p><em>(Lektion 9.2 — die leere Vorlage liegt als eigene Beilage bei)</em></p>
+<pre>Bau mir eine eigene kleine Seite, auf der ich [was du sehen willst] sehe.
+
+Oben die Zahlen, darunter die Liste, und bei jeder Zahl soll dastehen, von
+wann sie ist.
+
+Fang mit einer einzigen Ansicht an. Alles Weitere kommt später dazu.</pre>
+<h3>31 · Eine Seite für deine Kundschaft</h3>
+<p><em>(Lektion 9.3 — mit Platzhaltern, damit nichts Echtes nach draussen gerät)</em></p>
+<pre>Bau eine Seite, die [wen du begleitest] durch [Zeitraum oder Ablauf]
+führt.
+
+Je Tag: ein kurzer Impuls, das was an diesem Tag zu tun ist, und was
+freigeschaltet wird.
+
+Drei Dinge sind Pflicht:
+- Was jemand dort eingibt, bleibt auf dem eigenen Gerät.
+- Keine Versprechen zu Gesundheit, keine Diagnosen.
+- Inhalte nur aus [deine Datei]. Setz Platzhalter, wo etwas fehlt.</pre>
+<h2>Sicherheit</h2>
+<h3>32 · Was liegt bei mir offen?</h3>
+<p><em>(Lektion 10.1 — die Sicherheits-Checkliste liegt als eigene Beilage bei)</em></p>
+<pre>Durchsuch meinen Arbeitsplatz nach Dingen, die nicht offen herumliegen
+sollten: Zugangsdaten, Passwörter, Namen und Adressen von anderen Menschen,
+Rechnungen.
+
+Sag mir je Fund die Datei und was drinsteht. Lösch nichts.</pre>
+<h3>33 · Bevor etwas nach draussen geht</h3>
+<p><em>(Lektion 10.1)</em></p>
+<pre>Das hier geht an [wen]. Lies es durch und sag mir:
+- Steht irgendwo ein Name, eine Adresse oder eine Zahl von jemand anderem?
+- Steht irgendwo etwas, das ich so nicht belegen kann?
+- Gibt es ein Versprechen, das ich nicht halten kann?
+
+Nur melden, nichts ändern.</pre>
+<hr>
+<h2>Die drei Sätze, die du dir merken kannst</h2>
+<p>Wenn du die ganze Bibliothek vergisst, bleiben diese drei:</p>
+<p><strong>„Sag mir in zwei Sätzen, was du verstanden hast, bevor du anfängst.“</strong> Fängt neunzig Prozent der Missverständnisse ab, bevor Arbeit entsteht.</p>
+<p><strong>„Wo du etwas nicht weisst, schreib <em>offen</em> hin, statt zu raten.“</strong> Daraus wird deine To-do-Liste — und du erkennst sofort, was du noch entscheiden musst.</p>
+<p><strong>„Merk dir das.“</strong> Der Unterschied zwischen einer KI, die jede Woche neu eingearbeitet wird, und einer, die dich kennt.</p>
+<hr>
+<blockquote><strong>Und das Wichtigste zum Schluss:</strong> Kein Prompt hier ersetzt deine Entscheidung. Die KI bereitet vor, du gibst den letzten Schliff und du sagst, was rausgeht. Das ändert sich auf keiner Stufe.</blockquote><div class="fuss">Patricia Ulmann · mumlifebalance.ch — für Teilnehmerinnen des Kurses. Bitte nicht weitergeben.</div></body></html>

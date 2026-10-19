@@ -250,6 +250,7 @@ heraus.
 
 | Lektion | Datei |
 |---|---|
+| **1.2 · und hinter jedem Modul wieder** | **Prompt-Bibliothek** — alle 33 Aufträge des Kurses, nach den drei Stufen sortiert (PDF, 11 Seiten) |
 | 1.2 | Roadmap, eine Seite zum Ausdrucken (PDF) |
 | 1.3 | Begriffe-Cheatsheet (PDF) |
 | 1.5 · 2.7 · 3.5 · 4.7 · 5.8 · 6.6 · 7.8 · 8.5 · 9.5 | Checkliste je Modul (PDF) |
@@ -283,7 +284,7 @@ Beispiele. Das ist der Unterschied zwischen diesem Kurs und den drei anderen.
 | Markenfarben | ✅ Knopf und Navi-Knopf Orange `#dc822e` · Fortschritt und aktive Lektion Petrol `#12828c` · Fortschritts-Balken Creme `#f1ecdd` · Titel Dunkelblau `#29556d` · Fliesstext `#0c1c30` |
 | Lektionstexte | ⏳ 1.1 bis 2.3 eingetragen, 54 offen — Kopierseite steht (siehe unten) |
 | Videos | ⏳ alle offen |
-| Downloads | ✅ 16 Beilagen als Brand-PDF gebaut, in Drive-Ordner bereitgestellt |
+| Downloads | ✅ 17 Beilagen als Brand-PDF gebaut, in Drive-Ordner bereitgestellt |
 
 ---
 
@@ -303,7 +304,7 @@ Menge `ERLEDIGT` im Skript und gehört dort nachgeführt.
 
 ## Die Beilagen
 
-16 Dokumente als A4-PDF in der Marke, gebaut aus `beilagen/*.md`:
+17 Dokumente als A4-PDF in der Marke, gebaut aus `beilagen/*.md`:
 
 ```bash
 cd scripts/karussell-render
