@@ -32,8 +32,8 @@ Bezug „Und dann“ = Folge, kein Gegensatz ✓ · Lösung draussen ✓.
 
 ```bash
 python scripts/content/broll-bauen.py --clip <DATEINAME> --ab 0.0 --dauer 7.5 --hoehe 46 \
-  --text "Mein Kind verschwindet ins Kinderzimmer, und ich schnapp mir sofort das Handy, um endlich was fürs Network zu posten." \
-  --betont "Und dann wundere ich mich, warum keiner kommentiert." --name kw43-m-kinderzimmer
+  --text "Früher ist mein Kind ins Kinderzimmer verschwunden, und ich hab mir sofort das Handy geschnappt, um endlich was fürs Network zu posten." \
+  --betont "Und dann hab ich mich gewundert, warum keiner kommentiert." --name kw43-m-kinderzimmer
 # Standbilder ansehen, dann dasselbe mit --rendern
 ```
 
