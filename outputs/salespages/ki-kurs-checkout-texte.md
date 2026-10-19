@@ -81,7 +81,7 @@ Eine Telegram-Gruppe, in der du jede Frage stellen kannst. Dienstags und
 donnerstags beantworte ich dort alles — ich selbst. Die Gruppe bleibt auch,
 wenn die Calls vorbei sind.
 
-Zwei Live-Calls: Donnerstag, 19. November und Donnerstag, 10. Dezember, jeweils
+Zwei Live-Calls: Mittwoch, 18. November und Donnerstag, 10. Dezember, jeweils
 abends. Beide werden aufgezeichnet.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -114,7 +114,7 @@ mitmachen.
 
 **Wann muss ich Zeit haben?**
 Die Module schaust du, wann es dir passt — sie laufen nicht weg. Nach Modul 2 hast
-du schon etwas, das bleibt. Die zwei Live-Calls sind am 19. November und am
+du schon etwas, das bleibt. Die zwei Live-Calls sind am 18. November und am
 10. Dezember, jeweils abends.
 
 **An den Call-Abenden kann ich nicht.**
@@ -190,7 +190,8 @@ Wenn du vorher schon eine Frage hast, schreib mir. Ich antworte selbst.
 ## Was Patricia noch ergänzen oder entscheiden muss
 
 1. **Der Produktname** — siehe oben. Eine Entscheidung, fünf Minuten.
-2. ~~Die zwei Live-Termine~~ — **erledigt am 06.10.** Do 19. November und
+2. ~~Die zwei Live-Termine~~ — **erledigt am 06.10., erster Call am 16.10. verschoben:**
+   Mi 18. November und
    Do 10. Dezember, beide aufgezeichnet. Standen schon auf der Verkaufsseite.
 3. **Der Preiswechsel am 16. Oktober.** In ThriveCart hängt an Produkt 52 genau EIN
    Preis: 277. Am 16. Oktober muss dort 333 stehen, sonst verkauft die Kasse weiter

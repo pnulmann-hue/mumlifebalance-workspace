@@ -304,8 +304,24 @@ node send-mealplan.js "../../outputs/mealplans/YYYY-KW##-wochenplan.md" "KW##"
 ```
 Script macht: Markdown → HTML → A4-PDF (klickbare Hyperlinks) → Telegram-Bot sendet PDF an Patricia.
 
+### Schritt 7b — In die Familien-App (seit 16.10.2026, Pflicht)
+Der Plan erscheint in der Familien-App (https://unsere-familie.vercel.app): „Was gibt's heute?“ auf der
+Startseite für alle, die Wochenansicht unter **Essen**, die **Einkaufsliste zum Abhaken** (Chläus hakt
+beim Einkaufen ab, alle können dazuschreiben), und in der Abend-Nachricht um 19 Uhr steht das Essen von morgen.
+```bash
+cd C:/Users/pnulm/familie
+node essen-uebernehmen.mjs "C:/Users/pnulm/Desktop/Mein Business/outputs/mealplans/YYYY-KW##-wochenplan.md"        # Probelauf
+node essen-uebernehmen.mjs "C:/Users/pnulm/Desktop/Mein Business/outputs/mealplans/YYYY-KW##-wochenplan.md" --los  # schreiben
+```
+🚨 **Der Übernehmer liest die Überschriften** — damit er alles findet, im Markdown so lassen:
+`## 🍝 MITTAGESSEN …` (Tabelle: Tag mit Datum „Di 22.9.“ · Gericht · Methode · Beilage · Zeit · Link) ·
+`## 🌅 DEIN FRÜHSTÜCK …` und `## 🌙 DEIN ABENDESSEN …` (Tag · Gericht · Quelle · Aufschlag · Summe · Zeit — nur für Patricia sichtbar) ·
+`## 🌙 FAMILIEN-ABENDESSEN …` oder `## 🌙 FAMILIEN-ZNACHT …` (Tag · Thema · Aufbau · Tipp). Die Spalten werden an ihrer Überschrift erkannt (Portion, kcal, Zeit/Aufwand, Quelle), die Reihenfolge darf sich also ändern · `## 🛒 EINKAUFSLISTE` mit `### Abteilung` und `- [ ] Posten`.
+Der Probelauf zeigt, was erkannt wurde — fehlt ein Tag oder eine Abteilung, zuerst das Markdown korrigieren.
+Abgehakte Posten alter Wochen räumt der Übernehmer auf, Dazugeschriebenes bleibt stehen.
+
 ### Schritt 8 — Bestätigung
-> "📲 KW## ist in deinem Telegram. Tipp: PDF in Adobe Acrobat / Files-App öffnen für klickbare Rezept-Links (Telegram-Inline-Viewer ignoriert die)."
+> "📲 KW## ist in deinem Telegram und in der Familien-App. Tipp: PDF in Adobe Acrobat / Files-App öffnen für klickbare Rezept-Links (Telegram-Inline-Viewer ignoriert die)."
 
 ---
 

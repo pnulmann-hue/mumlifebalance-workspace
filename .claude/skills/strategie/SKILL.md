@@ -218,7 +218,7 @@ Kurz, je ein bis drei Sätze, dann die Entscheidung, welcher der Engpass ist.
 | 1 | **Ziel-Lücke** | Wie weit ist das Ziel weg, und welche Monatsrate braucht der Rest des Jahres? | `ziele`, `umsatz` |
 | 2 | **Zulauf** | Kommen genug neue Menschen rein? Reichweite, Follower, neue Kontakte | `gepostet`, `reichweite`, `mailings` |
 | 3 | **Umwandlung** | Wird aus Zulauf Umsatz? Keyword → Freebie → Liste → Kauf | `funnel`, `mailings`, `umsatz` |
-| 4 | **Angebot & Warenkorb** | Stimmt die Treppe, hängen Bumps/Upsells, laufen die richtigen Kassen? | `katalog` |
+| 4 | **Angebot & Warenkorb** | Stimmt die Treppe, hängen Bumps/Upsells, laufen die richtigen Kassen? Liegt im Ideen-Vorrat etwas, das genau diese Lücke schliesst? | `katalog`, `context/ideen-vorrat.md` |
 | 5 | **Zeit & Fokus** | Wofür geht die Zeit drauf, und was davon zahlt nicht ein? | `monatsbogen`, Aufgaben, Cockpit |
 | 6 | **Sockel / Launch-Abhängigkeit** | Wie viel Umsatz kam **ausserhalb** der Launch-Fenster, und wie viel stand am 1. des Monats schon fest? | `umsatz.tage` gegen die Launch-Zeiträume aus `jahresplan`/`monatsplaene`, `raten` |
 

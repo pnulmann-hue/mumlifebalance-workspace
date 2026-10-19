@@ -86,7 +86,7 @@ Dein Mockup oder Foto. **Hier steht der Kursname drin** — und nur hier.
 >
 > Telegram-Gruppe mit Antworten jeden Dienstag und Donnerstag — sie bleibt auch nach den Calls
 >
-> Zwei Live-Calls am 19. November und am 10. Dezember, beide werden aufgezeichnet
+> Zwei Live-Calls am 18. November und am 10. Dezember, beide werden aufgezeichnet
 
 ---
 
@@ -100,7 +100,7 @@ Dein Mockup oder Foto. **Hier steht der Kursname drin** — und nur hier.
 
 > **So 1. November** — die ersten Kapitel sind in deinem Bereich
 >
-> **Do 19. November, abends** — erster Live-Call, zu Arbeitsplatz und erstem festen Auftrag
+> **Mi 18. November, abends** — erster Live-Call, zu Arbeitsplatz und erstem festen Auftrag
 >
 > **Do 10. Dezember, abends** — zweiter Live-Call, für alle Fragen zum ganzen Kurs
 >

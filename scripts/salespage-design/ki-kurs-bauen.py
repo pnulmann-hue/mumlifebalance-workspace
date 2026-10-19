@@ -17,7 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 OUT = ROOT / "outputs/salespages/ki-kurs"
 MC = ROOT / "outputs/salespages/ki-masterclass"
 
-PHASE = "frueh"
+PHASE = "regulaer"          # 🔁 seit 16.10.2026, Fruehbucher war bis Do 15.10.
 KASSE = "https://mumlifebalance.thrivecart.com/ki-network/"   # ThriveCart-Kasse (seit 26.09.)
 RATEN = ""               # 🚨 z. B. "3 × 119" — nur eintragen, was in ThriveCart genau so eingerichtet ist
 
@@ -32,7 +32,7 @@ LEISTUNGEN = [
     "Vorlagen zum Mitnehmen: deine Roadmap, eine Vorlage für alles, was deine KI über dich wissen muss, und fertige Gerüste für Arbeitsplatz, Helfer und Übersichtsseite",
     "Feste Aufträge für Caption, Story, Karussell und Reel, die du mit deinem eigenen Wissen füllst",
     "Telegram-Gruppe mit Antworten jeden Dienstag und Donnerstag, sie bleibt auch nach den Calls",
-    "2 Live-Calls am 19. November und am 10. Dezember, beide werden aufgezeichnet",
+    "2 Live-Calls am 18. November und am 10. Dezember, beide werden aufgezeichnet",
 ]
 def liste():
     return "\n".join(f'          <li><span class="c">{HAKEN_KLEIN}</span>{x}</li>' for x in LEISTUNGEN)
@@ -60,7 +60,7 @@ if PHASE == "frueh":
 elif PHASE == "regulaer":
     PREISBLOCK = '    <div class="price2">\n' + "\n".join([
         karte(True, "Einmal zahlen", "Einmalzahlung", "Einmal zahlen, und alles gehört dir", "333 CHF", "einmalig", "Platz sichern"),
-        karte(False, "", "Ratenzahlung", "Den Betrag aufteilen", RATEN or "333 CHF",
+        karte(False, "", "Ratenzahlung", "Den Betrag aufteilen", RATEN or "in Raten",
               "gleicher Kurs, gleiche Begleitung" if RATEN else "aufgeteilt in Raten, die Aufteilung siehst du an der Kasse",
               "Mit Raten starten", ghost=True),
     ]) + "\n    </div>"

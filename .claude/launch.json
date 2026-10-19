@@ -328,6 +328,14 @@
         "4405"
       ],
       "port": 4405
+    },
+    {
+      "name": "familie",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/Users/pnulm/familie/lokal.mjs"
+      ],
+      "port": 4410
     }
   ]
 }

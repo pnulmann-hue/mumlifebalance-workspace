@@ -62,7 +62,7 @@ im Kreis drehen. **Keine neue Routine:** jede Station hängt an etwas, das schon
 
 | # | Station | Wann | Wer startet | liest | schreibt |
 |---|---|---|---|---|---|
-| 1 | **Verstehen** — Wettbewerb · Trends · Fragen der Zielgruppe · Zielgruppenbild mit Säulen | vierteljährlich (Jan · Apr · Jul · Okt), im `/monatsplan` dieses Monats | Patricia ruft `/monatsplan` | `context/competitor-watchlist.json` (Nische `kern`) · jüngstes `outputs/apify-runs/competitors-*.json` · `outputs/marktrecherche/2026-10-04-hook-gesamtbericht.md` · WebSearch (Google Trends, Reddit, Foren) · Kommentare und DMs · `context/kundinnen-geschichten.md` | `outputs/zielgruppen-research/<datum>-*/` (vier Analysen) → verdichtet in `wissen/zielgruppe-kurz.md` + `wissen/hook-muster-markt.md` → Cockpit `daten/zielgruppe` (`scripts/cockpit/zielgruppe-bauen.py`) |
+| 1 | **Verstehen** — Wettbewerb · Trends · Fragen der Zielgruppe · Zielgruppenbild mit Säulen | vierteljährlich (Jan · Apr · Jul · Okt), im `/monatsplan` dieses Monats | Patricia ruft `/monatsplan` | `context/competitor-watchlist.json` (Nische `kern`, **zuerst Julia Müller, `referenz: haupt`**) · jüngstes `outputs/apify-runs/competitors-*.json` · `outputs/marktrecherche/2026-10-04-hook-gesamtbericht.md` · WebSearch (Google Trends, Reddit, Foren) · Kommentare und DMs · `context/kundinnen-geschichten.md` | `outputs/zielgruppen-research/<datum>-*/` (vier Analysen) → verdichtet in `wissen/zielgruppe-kurz.md` + `wissen/hook-muster-markt.md` → Cockpit `daten/zielgruppe` (`scripts/cockpit/zielgruppe-bauen.py`) |
 | 2 | **Monat planen** | letzter Sonntag im Vormonat | Patricia ruft `/monatsplan` | Station 1 · `outputs/cockpit/abgleich/auswertung.json` (Station 6) · `/strategie` · `active-funnels.json` | `outputs/monatsplaene/JJJJ-MM.md` |
 | 3 | **Woche bauen** | Fr 08:00 | Task `content-woche-freitag` (oder `/content woche`) | Monatsplan · `wissen/*.md` · Hook-Paket (`scripts/hooks/beispiele.py`) · frischer Marktcheck · `wissen/hooks-schon-verwendet.md` · Bestperformer-Formel | Cockpit `karussells` / `reels` / `storys`, Varianten A/B |
 | 4 | **Freigeben und posten** | täglich | Patricia: Freigabe-Knopf · 19:30 Task `kommentare-einarbeiten` · 20:00 Task `freigaben-einplanen-2000` | Cockpit `freigaben` | Blotato, Instagram |
@@ -440,6 +440,17 @@ Je Profil: 3–5 Pains · 3 Wünsche · 3 Ziele · 3 Herausforderungen. Pains ma
 
 Frische Konkurrenz-Daten (`outputs/apify-runs/competitors-*.json`, jünger als 36 h)
 dazunehmen, sonst Websuche.
+
+🎯 **Hauptreferenz ist Julia Müller (@juliamueller._, `referenz: "haupt"` in der Watchlist).**
+Patricia, 17.10.2026: *„unbedingt als referenz für zielgruppenrecherche und marktrecherche
+… finde das fast am stärksten“*. Gleiche Zielgruppe (Networkerinnen), gleiche Gegner
+(Namensliste, Upline-Methoden, Tagebuch-Storys). **Zuerst ihre Beiträge** der letzten Wochen
+nach Aufrufen und Kommentaren gegen ihren eigenen Median sortieren (Titelbild-Hook über
+`https://www.instagram.com/p/<code>/media/?size=l`, die Scrape-Bildlinks verfallen), dann
+die anderen Nischen-Konten. Wird ein Beitrag von ihr nachgebaut: **Inhalt übernehmen, Wortlaut
+nie** (Patricia, 17.10.), Firmenliste immer mit doTERRA, Kundschaft der Networkerinnen nie
+„Kundinnen“, ihre Zahlen nicht übernehmen. Vorlage: `outputs/content/KW43/julia-nachbau.md`
++ `scripts/content/kw43-brolls.py`.
 
 🚨 **Die wöchentlichen `outputs/marktrecherche/KW*-*.md` sind kein Beleg.** Alle 46 Läufe
 bis KW40 melden „Reddit-Posts gescannt: 0“ — die Painpoints darin hat die KI aus

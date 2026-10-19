@@ -65,7 +65,7 @@ ABLAUF = [
   "Ruhig bleiben, kein Tempowechsel.", False),
  ("38", "Der Kurs · Start 1. November · Du bist damit nicht allein",
   "Name sagen, Folie wirken lassen. Dann die drei Punkte: 1. November die ersten Module, "
-  "die Gruppe mit Antworten dienstags und donnerstags, und die zwei Calls am 19. November "
+  "die Gruppe mit Antworten dienstags und donnerstags, und die zwei Calls am 18. November "
   "und 10. Dezember. Dass beide aufgezeichnet werden, laut sagen — das räumt den "
   "Termin-Einwand weg, bevor er kommt.", False),
  ("40", "Module · Das kommt mit · Die ehrliche Rechnung · 277",

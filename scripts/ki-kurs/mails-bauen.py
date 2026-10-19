@@ -112,7 +112,7 @@ MAILS = [
    h2("Die Termine auf einen Blick"),
    liste("Merk dir schon mal", [
        "<strong>So, 1. November</strong> &mdash; die ersten Kapitel liegen in deinem Bereich",
-       "<strong>Do, 19. November, abends</strong> &mdash; erster Live-Call, zu deinem "
+       "<strong>Mi, 18. November, abends</strong> &mdash; erster Live-Call, zu deinem "
        "Arbeitsplatz und deinem ersten festen Auftrag",
        "<strong>Do, 10. Dezember, abends</strong> &mdash; zweiter Live-Call, für alles, "
        "was bis dahin aufgetaucht ist",

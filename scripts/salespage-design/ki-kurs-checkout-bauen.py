@@ -44,7 +44,7 @@ SANS = "'Source Sans 3','Source Sans Pro',Helvetica,Arial,sans-serif"
 
 TERMINE = [
     ("So 1. November", "Die ersten Kapitel sind in deinem Bereich."),
-    ("Do 19. November", "Erster Live-Call, abends &mdash; wird aufgezeichnet."),
+    ("Mi 18. November", "Erster Live-Call, abends &mdash; wird aufgezeichnet."),
     ("Do 10. Dezember", "Zweiter Live-Call, abends &mdash; wird aufgezeichnet."),
     ("Und danach", "Die Telegram-Gruppe bleibt. Dienstags und donnerstags "
                    "antworte ich dort."),

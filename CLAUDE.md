@@ -624,6 +624,61 @@ Im Stimm-Check `thinking: disabled` + 10'000 Token — halbiert die Wartezeit.
 🚨 **Die Schreibsprache folgt der Textprobe**, nicht der Selbstbeschreibung: „Mundart-Wörter“
 ergab sonst eine ganze Caption auf Schweizerdeutsch.
 
+#### Der Launch läuft — Termine, Pin-Beitrag, MBA-Upsell (Stand 2026-10-19)
+
+**Kursstart 1.11.2026, Kasse schliesst 23.10.** Die beiden Live-Calls: **Mi 18. November**
+(vorher Do 19.11., verschoben am 16.10. — Patricia: *„KI Kurs verschieben vom November!!“*) und
+**10. Dezember**, beide werden aufgezeichnet.
+Deploy der Seite: `node --env-file=.env deploy-ki-kurs-lp.mjs` in `scripts/wordpress`.
+
+🚨 **Ein verschobener Termin steht an SIEBEN Stellen, nicht an einer.** Am 16.10. habe ich nur
+die Verkaufsseite geändert; beim Aufräumen am 19.10. lag der alte 19.11. noch in sechs weiteren
+Dateien — darunter die **Willkommens-Mail in AC-Automation „KI Kurs" (85)**, die jede neue
+Käuferin bekommt. Die Liste zum Abarbeiten bei jeder Terminänderung:
+`scripts/salespage-design/ki-kurs-bauen.py` (Verkaufsseite) · `ki-kurs-checkout-bauen.py`
+(Zeitplan am Checkout) · `outputs/salespages/ki-kurs-checkout-texte.md` und
+`ki-kurs-checkout/textbloecke.md` (handgeschriebene Textquellen, kein Generator) ·
+`scripts/ki-kurs/mails-bauen.py` (Willkommens-Mail) · `folien-masterclass.py` ·
+`regiezettel-bauen.py`. Danach die Generatoren **laufen lassen** und mit `grep` gegenprüfen,
+dass das alte Datum nirgends mehr steht.
+🚨 **Der Mailtext in ActiveCampaign ist kein Generator-Ausgang** — er muss dort von Hand
+ersetzt werden (`outputs/produkte/ki-kurs/mails/mail-00-willkommen.html`, Kopierseite
+`preview_start ki-masterclass-mail`). Eine Datei im Workspace zu korrigieren ändert nichts an
+dem, was verschickt wird.
+🚨 **Die Raten-Karte nennt bewusst keine Aufteilung** („in Raten, die Aufteilung siehst du an der
+Kasse“). `RATEN` in `ki-kurs-bauen.py` wird nur gefüllt, was in ThriveCart genau so eingerichtet
+ist — und `/products/52/pricing_options` antwortet mit **403** (dreimal geprüft, beim Upsell geht
+dieselbe Abfrage). Eine erfundene Staffel sieht auf einer Verkaufsseite aus wie eine echte.
+
+**Der angepinnte Beitrag zum 0€-Stimm-Check:** `scripts/launch/pin-karussell-stimme.py` baut
+Folien und Caption für Cockpit und Bild-Editor, die Bilder kommen aus
+`outputs/karussells/pin-stimme/karussell-pin-stimme.html` über `scripts/karussell-render/render.js`.
+Titelbild macht Patricia selbst (Manus). Linie der drei Pins: **Creme-Grund, Philosopher dunkel,
+Orange als einziger Akzent, kein Petrol** — Details im Gedächtnis
+[[feedback_pin-beitraege-titel-cover]].
+
+**Aufs Handy schicken:** `python scripts/telegram/senden.py --bilder <png …> --text-datei
+<caption.txt> --titel "<Zeile>"` (seit 08.10.2026). Als **Foto**, nicht als Datei — nur dann
+landet es in der Galerie, von wo Instagram hochlädt. Caption als eigene Nachricht (im Album sind
+nur 1024 Zeichen erlaubt), höchstens 10 Bilder je Album. Zugang aus der `.env` im Wurzelverzeichnis.
+
+**Das MBA-Upsell am KI-Kurs-Checkout** (ThriveCart-Produkt **52**, Upsell **11**): Wer den KI-Kurs
+für 277 kauft, bekommt die Mum Business Academy direkt danach — **zusammen 997 statt 1347**, also
+**720 als Upsell-Preis**. Texte und Gestaltung liegen in `outputs/salespages/mba-upsell/`
+(`mba-upsell.html` zum Ansehen, `mba-upsell-block.html` für das HTML-Feld in ThriveCart; die
+einzeilige Fassung daneben lässt sich über die Zwischenablage einfügen). Dass die 277 bei späterem
+Nachbuchen angerechnet werden, steht **nicht** auf der Seite (Patricias Entscheid, 16.10.).
+
+🚨 **Offen und falsch im System:** Das Upsell steht in ThriveCart auf **997 statt 720** — mein
+Fehler vom 16.10. Ich hatte „die MBA ist noch falsch drin“ als veralteten Preis gelesen und
+720 für 997 − 277 gehalten; gemeint war das Gegenteil: **277 + 720 = 997 ist die Rechnung**, und
+die 720 waren richtig. Solange das so steht, bucht die Kasse 277 zu viel ab. Patricia hat
+ThriveCart danach selbst übernommen (*„weisst du was, ich mach es selbst“*).
+**Die Lehre:** bei einer Preiszahl, die nicht aufgeht, erst die Rechnung aufschreiben und
+nachfragen — nie aus einer Differenz schliessen, welcher von zwei Werten gemeint ist.
+⚠️ Ebenfalls offen: der Tag in ActiveCampaign aufs Upsell (sonst bekommen Käuferinnen weiter
+Werbung für etwas, das sie schon haben) und `/mba/` nennt noch „drei Kurse“ gegen CHF 999.
+
 ### Kommentar-Antwort — der ManyChat-Ersatz (seit 2026-09-28, im Aufbau)
 
 **Patricia:** *„ja bitte manychatersatz starten. und erstmal nur für stimme.“* ManyChat löst bei jedem Kommentar aus, in dem das Wort vorkommt („ich **stimme** dir zu“). Der Dienst entscheidet erst über Regeln (`lib/entscheiden.mjs`, 27 Gegenproben in `test/`), nur unklare Fälle gehen an Claude Haiku. Live unter `https://kommentar-antwort.vercel.app/api/webhook` (Vercel-Projekt `kommentar-antwort`), Meta-App „Mum Life Balance Bot“ (984115153982698) mit Produkt Instagram. 🚨 Antwortet erst mit `SCHARF=ja`; vorher nur Protokoll in den Vercel-Logs. 🚨 Ohne Meta-App-Review nur für Konten mit App-Rolle. ManyChat läuft parallel weiter, STIMME dort nie einrichten. Plan: `plans/2026-09-28-manychat-ersatz-stimme.md`.
@@ -4128,6 +4183,29 @@ Tisch:** `patch-mein-tisch` → `patch-bereiche` → `patch-offene-chats` → `p
 `patch-erledigt` (Version 89: Unterreiter **Mama-CEO → Erledigt**, nach Tag gruppiert, Haken weg =
 zurück zu den offenen; Aufgaben und Tisch zeigen nur noch Offenes). ⚠️ Offen: Telegram-Sprachnachricht → Tisch (Bot schreibt heute nach Notion),
 Reiter im Academy-Aufbau mit Kursinhalt plus Helferinnen.
+
+### Version 102 — Kalender gegen Instagram, Archiv, schlankere Leiste (seit 2026-10-16)
+
+Patricia ging Reiter für Reiter durch. **Content-Kalender auf Mein Tisch** zeigt 7 Tage zurück und
+14 voraus: je Beitrag ✅ gepostet (mit Erreicht · Rate · Gespeichert, „noch nicht ausgereift“ unter
+7 Tagen) · ⚠️ nicht rausgegangen · 📌 direkt auf Instagram (spontan, nicht im Cockpit geplant).
+Gepostetes steht am **echten** Postdatum. Quelle `daten/gepostet-zuordnung` aus
+`gepostet-zuordnen.py` (jetzt auch ohne Freigabe, plus unscharfer Zweitvergleich, plus
+`letzte_posts` der letzten 21 Tage) — läuft im täglichen Abgleich, vorher `inhalte-roh` frisch holen.
+Code `scripts/cockpit/kalender-abgleich.js`, eingesetzt mit `patch-kalender-archiv.py`.
+**Archivregel:** mehr als 14 Tage über dem Datum und nie freigegeben = archiviert (über
+`istAbgelehnt`, nichts gelöscht, „Zurückholen“ setzt `ausArchiv`). **Leiste Instagram:** Reels,
+Ideenkasten und Ideen von anderen raus. Der Ideenkasten lebt als `context/ideen-vorrat.md` weiter
+(gelesen von `/strategie` und `/monatsplan` Frage 7). **Freigeben:** drei Spalten
+„1 · Von dir freigegeben → 2 · Von mir eingeplant → 3 · Draussen“.
+🚨 **Die Automatik war vom 10. bis 16.10. tot:** Die Scheduled Tasks durften nur fünf wörtlich
+erlaubte Befehle; alles Neuere und jedes `cd … &&` blieb an einer Rückfrage hängen, die unbeaufsichtigt
+niemand beantwortet — und der Lauf meldete trotzdem „erfolgreich“. Folge: Daten sechs Tage alt, das
+Karussell vom 15.10. nicht gepostet. Jetzt Platzhalter-Erlaubnisse in `.claude/settings.local.json`
+(`python scripts/cockpit/*`, `scripts/instagram-insights/*`, `scripts/doterra/*`, `scripts/telegram/senden.py`,
+`node scripts/cockpit/freigabe-zu-blotato.mjs`, `ArtifactData`) und in den Task-Dateien die Regel
+**„jeder Befehl einzeln, kein cd, kein &&“** plus Telegram-Meldung bei jedem gescheiterten Schritt.
+⚠️ `daten/kurse` steht bei 253 von 256 KB — vor dem nächsten Kurs aufteilen.
 
 ### Reiter „Instagram → Zielgruppe & Markt“ (seit 2026-10-12, Version 96)
 

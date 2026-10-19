@@ -215,6 +215,10 @@ Die 8 Fragen — Patricia antwortet (Sprachnotiz Wispr Flow oder direkt). Skill 
 
 ### Frage 7: Was läuft NICHT diesen Monat?
 
+Vorher `context/ideen-vorrat.md` lesen (seit 16.10.2026, der frühere Ideenkasten): Was dort
+unter „Als nächstes“ steht, als Vorschlag nennen — sie entscheidet, ob es diesen Monat
+drankommt oder bewusst wartet.
+
 Bewusste Entscheidungen was ausgeklammert wird:
 - Welche Säule pausiert?
 - Welches Produkt wird nicht erwähnt?

@@ -134,14 +134,113 @@ def main():
         else:
             offen.append((bid, f.get("datum", ""), f.get("name", "")))
 
+    # 🚨 Seit 16.10.2026 auch Beiträge OHNE Freigabe (Patricia postet B-Roll und
+    # manchmal ganze Beiträge selbst in der App). Sonst fehlt im Content-Kalender
+    # genau das, was sie von Hand rausgeschickt hat.
+    belegt = {z["igId"] for z in zuordnung.values()}
+    for sammlung in ("reels", "karussells"):
+        for datei in sorted(ROH.glob(sammlung + "/*.json")):
+            bid = datei.stem
+            if bid in zuordnung:
+                continue
+            o = json.load(open(datei, encoding="utf-8"))
+            s = schluessel(o.get("caption", ""))
+            treffer = [b for b in nach_schluessel.get(s, []) if b["id"] not in belegt] if s else []
+            if not treffer:
+                continue
+            b = treffer[0]
+            belegt.add(b["id"])
+            zuordnung[bid] = {
+                "igId": b["id"], "link": b.get("link", ""),
+                "datum": b.get("datum", ""), "typ": b.get("typ", ""),
+                "reach": b.get("reach"), "likes": b.get("likes"),
+                "kommentare": b.get("kommentare"), "saved": b.get("saved"),
+                "shares": b.get("shares"),
+                "interaktionen": b.get("total_interactions"),
+                "stand": b.get("stand", ""), "ohne_freigabe": True,
+            }
+            if o.get("datum") and b.get("datum") and abs(_tage(o["datum"]) - _tage(b["datum"])) > 3:
+                zuordnung[bid]["unsicher"] = "Datum weicht ab"
+
+    # Zweiter Durchgang, unschärfer: Patricia passt Captions vor dem Posten oft
+    # noch an, dann stimmt der Anfang nicht mehr wörtlich. Gleiches Datum (±1 Tag),
+    # gleiches Format und mindestens 40 % gemeinsame Wörter im Anfang reichen dann.
+    def woerter(t):
+        return set(w for w in re.findall(r"[a-zäöüß]{4,}", (t or "").lower()))
+    kandidaten = []
+    for sammlung, fmt in (("reels", "REELS"), ("karussells", "FEED")):
+        for datei in sorted(ROH.glob(sammlung + "/*.json")):
+            bid = datei.stem
+            if bid in zuordnung:
+                continue
+            o = json.load(open(datei, encoding="utf-8"))
+            f = {}
+            fp = ROH / "freigaben" / (bid + ".json")
+            if fp.exists():
+                f = json.load(open(fp, encoding="utf-8"))
+            datum = f.get("datum") or o.get("datum")
+            if not datum or (o.get("profil") or f.get("profil")) == "doterra":
+                continue
+            text = " ".join([o.get("hook") or "", o.get("caption") or "", f.get("caption") or ""])
+            kandidaten.append((bid, datum, fmt, woerter(text[:400])))
+    for b in posts.values():
+        if b["id"] in belegt or not b.get("datum") or _tage(b["datum"]) < _tage(_heute()) - 60:
+            continue
+        wb = woerter(b.get("caption") or b.get("anfang") or "")
+        best, wert = None, 0.0
+        for bid, datum, fmt, w in kandidaten:
+            if bid in zuordnung or fmt != b.get("typ") or abs(_tage(datum) - _tage(b["datum"])) > 1 or not w or not wb:
+                continue
+            j = len(w & wb) / max(1, min(len(w), len(wb)))
+            if j > wert:
+                best, wert = bid, j
+        if best and wert >= 0.4:
+            belegt.add(b["id"])
+            zuordnung[best] = {
+                "igId": b["id"], "link": b.get("link", ""),
+                "datum": b.get("datum", ""), "typ": b.get("typ", ""),
+                "reach": b.get("reach"), "likes": b.get("likes"),
+                "kommentare": b.get("kommentare"), "saved": b.get("saved"),
+                "shares": b.get("shares"),
+                "interaktionen": b.get("total_interactions"),
+                "stand": b.get("stand", ""), "unscharf": round(wert, 2),
+            }
+
+    # Die Instagram-Posts der letzten 21 Tage — für den Rückblick im
+    # Content-Kalender: was ist wirklich rausgegangen, auch Spontanes.
+    rueck = {}
+    for bid, z in zuordnung.items():
+        rueck[z["igId"]] = bid
+    grenze = _tage(_heute()) - 21
+    letzte = []
+    for b in posts.values():
+        if not b.get("datum") or _tage(b["datum"]) < grenze:
+            continue
+        reach = b.get("reach") or 0
+        inter = b.get("total_interactions")
+        if not isinstance(inter, (int, float)):
+            inter = sum(b.get(k) or 0 for k in ("likes", "kommentare", "saved", "shares"))
+        letzte.append({
+            "igId": b["id"], "link": b.get("link", ""), "datum": b["datum"],
+            "zeitpunkt": b.get("zeitpunkt", ""), "typ": b.get("typ", ""),
+            "medientyp": b.get("medientyp", ""), "anfang": (b.get("anfang") or "")[:90],
+            "reach": b.get("reach"), "saved": b.get("saved"), "shares": b.get("shares"),
+            "kommentare": b.get("kommentare"),
+            "rate": round(100 * inter / reach, 2) if reach else None,
+            "reif": _tage(_heute()) - _tage(b["datum"]) >= 7,
+            "beitrag": rueck.get(b["id"]), "stand": b.get("stand", ""),
+        })
+    letzte.sort(key=lambda x: x.get("zeitpunkt") or x["datum"])
+
     ergebnis = {
         "stand": _heute(),
         "konten_mit_api": konten,
         "zuordnung": zuordnung,
+        "letzte_posts": letzte,
         "nicht_pruefbar": [{"id": a, "datum": b, "name": c}
                            for a, b, c in nicht_pruefbar],
         "ohne_treffer": [{"id": a, "datum": b, "name": c}
-                         for a, b, c in offen],
+                         for a, b, c in offen if a not in zuordnung],
     }
     ZIEL.parent.mkdir(parents=True, exist_ok=True)
     ZIEL.write_text(json.dumps(ergebnis, ensure_ascii=False, indent=1),
