@@ -250,7 +250,7 @@ heraus.
 
 | Lektion | Datei |
 |---|---|
-| **1.2 · und hinter jedem Modul wieder** | **Prompt-Bibliothek** — alle 33 Aufträge des Kurses, nach den drei Stufen sortiert (PDF, 11 Seiten) |
+| **1.2 · und hinter jedem Modul wieder** | **Prompt-Bibliothek** — alle 35 Aufträge des Kurses plus Marken-Steckbrief, nach den drei Stufen sortiert (PDF) |
 | 1.2 | Roadmap, eine Seite zum Ausdrucken (PDF) |
 | 1.3 | Begriffe-Cheatsheet (PDF) |
 | 1.5 · 2.7 · 3.5 · 4.7 · 5.8 · 6.6 · 7.8 · 8.5 · 9.5 | Checkliste je Modul (PDF) |

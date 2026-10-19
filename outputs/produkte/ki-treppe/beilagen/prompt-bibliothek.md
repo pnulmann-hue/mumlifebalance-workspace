@@ -30,6 +30,38 @@ wird.** Der Satz dafür steht in fast jedem Auftrag hier drin.
 
 ---
 
+## Dein Steckbrief — einmal ausfüllen, immer dabei
+
+Sobald die KI etwas für dich **baut** — eine Seite, ein Cover, ein kleines
+Werkzeug — fragt sie nach deinen Farben und Schriften. Schreib sie einmal hier
+auf und häng den Block an jeden Bau-Auftrag an. Dann sieht alles nach dir aus,
+ohne dass du es jedes Mal erklärst.
+
+```
+Meine Farben:
+- Hintergrund hell: [Farbwert]
+- Hintergrund dunkel: [Farbwert]
+- Akzent: [Farbwert]
+- Knopf: [Farbwert]
+- Schriftfarbe: [Farbwert]
+
+Meine Schriften:
+- Überschriften: [Name der Schrift]
+- Fliesstext: [Name der Schrift]
+
+Meine Adresse im Netz: [deine Domain]
+Meine Kasse: [Link zu deinem Checkout]
+```
+
+**Woher du die Werte nimmst:** Aus deinem Logo-Dokument, deiner Website oder
+deiner Vorlage. Wenn du nur ein Bild hast, häng es an und frag: *„Welche Farben
+kommen hier vor? Gib sie mir als Farbwerte mit Raute davor.“*
+
+> **Ein Wort zur Schreibweise:** Ein Farbwert sieht aus wie `#f1ecdd` — Raute
+> und sechs Zeichen. Die KI versteht nur diese Form zuverlässig, nicht „cremeweiss“.
+
+---
+
 # Stufe 1 · Claude Chat
 
 Du arbeitest im Browser oder am Handy. Alles hier funktioniert mit einem
@@ -247,7 +279,24 @@ Was ist da los, und was soll ich als Nächstes tippen?
 Erklär es in einfachen Worten.
 ```
 
-### 13 · Dein Gedächtnis anlegen lassen
+### 13 · Wenn das Grundgerüst nicht ankommt
+
+*(Lektion 4.3 — nur als Rettungsanker. Normalerweise lädst du den fertigen
+Arbeitsplatz herunter, und dann brauchst du das hier nicht.)*
+
+```
+Leg mir einen Arbeitsplatz für mein Business an.
+
+Ich mache: [dein Business in einem Satz]
+Ich arbeite regelmässig an: [zwei, drei Dinge]
+
+Mach dazu passende Ordner und sag mir bei jedem in einem Satz, was
+hineingehört. Leg noch nichts hinein.
+
+Frag mich, wenn dir etwas fehlt.
+```
+
+### 14 · Dein Gedächtnis anlegen lassen
 
 *(Lektion 4.4 — statt vor einer leeren Datei zu sitzen)*
 
@@ -262,7 +311,7 @@ Wo du etwas nicht weisst, schreib „offen“ hin, statt zu raten.
 Frag mich danach nur zu den offenen Punkten.
 ```
 
-### 14 · Merk dir das
+### 15 · Merk dir das
 
 *(Lektion 4.4 — der kürzeste nützliche Auftrag im ganzen Kurs)*
 
@@ -271,7 +320,7 @@ Merk dir das: [die Regel, in einem Satz]
 Schreib es in die CLAUDE.md, an die passende Stelle.
 ```
 
-### 15 · Sag mir, was du vorhast
+### 16 · Sag mir, was du vorhast
 
 *(Lektion 4.5 — vor allem, was mehr als eine Datei anfasst)*
 
@@ -282,7 +331,7 @@ willst und was in jeder passiert.
 Ich sage dann los oder stopp.
 ```
 
-### 16 · Neu ansetzen statt nachbessern
+### 17 · Neu ansetzen statt nachbessern
 
 *(Lektion 4.6 — wenn der dritte Versuch auch nicht sitzt)*
 
@@ -295,7 +344,7 @@ diesmal machen würdest.
 
 ## Skills
 
-### 17 · Was bei dir ein Skill werden sollte
+### 18 · Was bei dir ein Skill werden sollte
 
 *(Lektion 5.3)*
 
@@ -310,7 +359,7 @@ Keine Vorschläge für Dinge, die du bei anderen gesehen hast — nur das, was
 du bei mir findest.
 ```
 
-### 18 · Deinen ersten Skill bauen lassen
+### 19 · Deinen ersten Skill bauen lassen
 
 *(Lektion 5.4 — das leere Gerüst liegt als eigene Beilage bei)*
 
@@ -326,7 +375,7 @@ Frag mich zu allem, was du nicht aus meinen Dateien weisst. Erfinde keine
 Regeln, die ich nie gesagt habe.
 ```
 
-### 19 · Von Hand nachschärfen
+### 20 · Von Hand nachschärfen
 
 *(Lektion 5.5 — das, was ein Baukasten nie weiss)*
 
@@ -340,7 +389,7 @@ Wenn [Fall], dann [was dann gilt]
 Ändere nur diese Stellen. Alles andere bleibt Wort für Wort stehen.
 ```
 
-### 20 · Aus einer Korrektur eine Regel machen
+### 21 · Aus einer Korrektur eine Regel machen
 
 *(Lektion 5.6 — der Punkt, an dem ein Skill besser wird als du)*
 
@@ -351,7 +400,7 @@ Schreib das als Regel in den Skill [Name], in meinen Worten.
 Zeig mir die Zeile, bevor du sie einfügst.
 ```
 
-### 21 · Einen fremden Skill prüfen
+### 22 · Einen fremden Skill prüfen
 
 *(Lektion 5.7 — bevor du fremde Anweisungen in deinen Arbeitsplatz legst)*
 
@@ -369,7 +418,7 @@ Lies dazu auch die Skripte, die dabei liegen, nicht nur die Beschreibung.
 
 ## Bots
 
-### 22 · Vom Skill zum Bot
+### 23 · Vom Skill zum Bot
 
 *(Lektion 6.3 — das Bot-Gerüst liegt als eigene Beilage bei)*
 
@@ -384,7 +433,7 @@ Baue ihn so, dass ich ihn zuerst selbst einmal auslösen kann. Der Zeitplan
 kommt erst dazu, wenn der Testlauf gepasst hat.
 ```
 
-### 23 · Wenn der Bot schweigt
+### 24 · Wenn der Bot schweigt
 
 *(Lektion 6.5)*
 
@@ -399,7 +448,7 @@ ihn prüfe. Fang mit dem an, der am häufigsten vorkommt.
 
 ## Deine Inhalte
 
-### 24 · Eine Wissensdatei füllen
+### 25 · Eine Wissensdatei füllen
 
 *(Lektion 7.2 — der wichtigste Auftrag in Kapitel 7, weil er den Unterschied
 zwischen Maschine und Treibstoff macht)*
@@ -414,7 +463,7 @@ meine Antwort nach Werbesprache klingt, und bitte um ein echtes Beispiel.
 Schreib erst, wenn du zu keinem Punkt mehr raten musst.
 ```
 
-### 25 · Der Prüf-Durchgang vor dem Posten
+### 26 · Der Prüf-Durchgang vor dem Posten
 
 *(Lektion 7.7 — und das ist die Stelle, an der du dir Ärger ersparst)*
 
@@ -430,7 +479,7 @@ Melde nichts, was du nicht wörtlich belegen kannst. Ändere nichts selbst.
 [Beitrag einfügen]
 ```
 
-### 26 · Die Zahlen lesen
+### 27 · Die Zahlen lesen
 
 *(Lektion 7.7b — Vorsicht, hier lügen Prozente am leichtesten)*
 
@@ -451,9 +500,30 @@ nachweislich lag. Wo du es nicht sagen kannst, schreib das hin.
 [Tabelle einfügen]
 ```
 
+### 28 · Einen Gedanken nochmal bringen
+
+*(Lektion 7.7b — ein Beitrag, der gut lief, ist nicht verbraucht)*
+
+```
+Dieser Beitrag ist vor längerem gut gelaufen:
+
+[Beitrag einfügen]
+
+Zieh den einen Gedanken heraus, um den es wirklich geht, und bau ihn in
+einem anderen Format neu: [Format, das du brauchst].
+
+Zwei Regeln:
+- Derselbe Gedanke, andere Worte. Kein Abschreiben von oben.
+- Nimm keine Zahl und kein Beispiel dazu, das nicht schon im Beitrag stand.
+```
+
+> **Wann du das machst:** frühestens vier Wochen danach, und nie zweimal im
+> selben Format. Sonst merken es deine Leute — und die, die es gesehen haben,
+> sind genau die, die dir am treusten folgen.
+
 ## Seiten, Produkte, Mails
 
-### 27 · Eine Verkaufsseite bauen lassen
+### 29 · Eine Verkaufsseite bauen lassen
 
 *(Lektion 8.2)*
 
@@ -467,7 +537,7 @@ erfundenen Kundenstimmen, kein Versprechen, das ich nicht gegeben habe.
 Wo eine Angabe fehlt, setz einen Platzhalter und sag mir, welche.
 ```
 
-### 28 · Nicht am Original arbeiten
+### 30 · Nicht am Original arbeiten
 
 *(Lektion 8.2 — ein Satz, der eine bestehende Seite rettet)*
 
@@ -476,7 +546,7 @@ Fass meine bestehende Seite nicht an. Arbeite in einer Kopie und zeig mir
 das Ergebnis, bevor irgendetwas live geht.
 ```
 
-### 29 · Entwurf statt senden
+### 31 · Entwurf statt senden
 
 *(Lektion 8.4 — gilt für jede Mail und jeden Beitrag)*
 
@@ -486,7 +556,7 @@ Leg das als Entwurf ab. Verschicken tue ich selbst.
 
 ## Cockpit und Kundschaft
 
-### 30 · Deine eigene Übersicht
+### 32 · Deine eigene Übersicht
 
 *(Lektion 9.2 — die leere Vorlage liegt als eigene Beilage bei)*
 
@@ -499,7 +569,7 @@ wann sie ist.
 Fang mit einer einzigen Ansicht an. Alles Weitere kommt später dazu.
 ```
 
-### 31 · Eine Seite für deine Kundschaft
+### 33 · Eine Seite für deine Kundschaft
 
 *(Lektion 9.3 — mit Platzhaltern, damit nichts Echtes nach draussen gerät)*
 
@@ -518,7 +588,7 @@ Drei Dinge sind Pflicht:
 
 ## Sicherheit
 
-### 32 · Was liegt bei mir offen?
+### 34 · Was liegt bei mir offen?
 
 *(Lektion 10.1 — die Sicherheits-Checkliste liegt als eigene Beilage bei)*
 
@@ -530,7 +600,7 @@ Rechnungen.
 Sag mir je Fund die Datei und was drinsteht. Lösch nichts.
 ```
 
-### 33 · Bevor etwas nach draussen geht
+### 35 · Bevor etwas nach draussen geht
 
 *(Lektion 10.1)*
 
