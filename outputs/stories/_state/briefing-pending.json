@@ -1,5 +1,5 @@
 {
-  "datum": "2026-10-18",
+  "datum": "2026-10-19",
   "profile": {
     "mentoring": {
       "profil": "mentoring",
@@ -14,20 +14,20 @@
         "launch_aktiv": false,
         "phase": null,
         "tag_im_launch": null,
-        "vorlage": "Lifestyle / Sonntags-Reflexion / Lifehack",
-        "titel": "Lifestyle / Sonntags-Reflexion / Lifehack",
-        "story_ziel": "Nahbarer Produktivitäts-/Motivations-Hack oder ruhige Reflexion — Beziehung stärken.",
-        "kaeufertyp": "Ina",
-        "cta": "optional, niederschwellig",
+        "vorlage": "Lehrreich / Mini-Training",
+        "titel": "Lehrreich / Mini-Training",
+        "story_ziel": "Ein konkretes, sofort umsetzbares Learning aus Patricias Wissen — screenshotbar.",
+        "kaeufertyp": "Willi",
+        "cta": "passend zum Thema (BIO / STORY / ECHT1)",
         "cta_keyword": null
       },
       "kontext_snapshot": {
-        "kw": 42,
-        "wochentag": "Sonntag",
-        "datum": "2026-10-18"
+        "kw": 43,
+        "wochentag": "Montag",
+        "datum": "2026-10-19"
       },
-      "gesendet_am": "2026-10-18T04:42:01.739Z",
-      "telegram_message_id": 1322,
+      "gesendet_am": "2026-10-19T04:42:01.526Z",
+      "telegram_message_id": 1324,
       "patricia_antworten": [],
       "patricia_fotos": [],
       "status": "warten_auf_antwort"
@@ -45,20 +45,20 @@
         "launch_aktiv": false,
         "phase": null,
         "tag_im_launch": null,
-        "vorlage": "Lifestyle / Sonntags-Reflexion / Lifehack",
-        "titel": "Lifestyle / Sonntags-Reflexion / Lifehack",
-        "story_ziel": "Nahbarer Produktivitäts-/Motivations-Hack oder ruhige Reflexion — Beziehung stärken.",
-        "kaeufertyp": "Ina",
-        "cta": "optional, niederschwellig",
+        "vorlage": "Lehrreich / Mini-Training",
+        "titel": "Lehrreich / Mini-Training",
+        "story_ziel": "Ein konkretes, sofort umsetzbares Learning aus Patricias Wissen — screenshotbar.",
+        "kaeufertyp": "Willi",
+        "cta": "passend zum Thema (BIO / STORY / ECHT1)",
         "cta_keyword": null
       },
       "kontext_snapshot": {
-        "kw": 42,
-        "wochentag": "Sonntag",
-        "datum": "2026-10-18"
+        "kw": 43,
+        "wochentag": "Montag",
+        "datum": "2026-10-19"
       },
-      "gesendet_am": "2026-10-18T04:42:02.589Z",
-      "telegram_message_id": 1323,
+      "gesendet_am": "2026-10-19T04:42:02.757Z",
+      "telegram_message_id": 1325,
       "patricia_antworten": [],
       "patricia_fotos": [],
       "status": "warten_auf_antwort"
