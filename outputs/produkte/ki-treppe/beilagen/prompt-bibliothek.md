@@ -110,7 +110,24 @@ sag das.
 Du hast dort vielleicht monatelang erzählt, wer du bist und was du machst. Das
 ist Arbeit, die du schon gemacht hast — hol sie dir, statt sie nochmal zu machen.
 
-**Schritt 1 — diesen Auftrag in ChatGPT eingeben:**
+**Der kurze Weg geht ohne diesen Prompt.** Claude hat dafür eine eingebaute
+Funktion: unten links aufs Profil, **Einstellungen**, dann **Fähigkeiten**, dort
+**Speicher von anderen KI-Anbietern importieren** und auf **Import starten**.
+Du bekommst einen fertigen Text, gibst ihn in ChatGPT ein, kopierst die Antwort
+und fügst sie in Claude wieder ein.
+
+> **Zwei Dinge vorher**, sonst kommt nur die Hälfte an:
+> In **ChatGPT** unter *Personalisierung* beim Gedächtnis alle Häkchen setzen —
+> ohne die greift er nicht auf alles zu, was er über dich gespeichert hat.
+> Und wenn du dort mit **Projekten** arbeitest: den Text noch einmal **im
+> Projekt-Chat** eingeben, sonst bleibt genau das Wissen zurück, das am
+> meisten wert ist.
+>
+> Die Anbieter bauen ihre Oberflächen ständig um. Findest du den Punkt nicht,
+> frag Claude: *„Ich will mein Wissen aus ChatGPT importieren — wo finde ich
+> das gerade?“* Oder nimm einfach den Weg hier drunter, der geht immer.
+
+**Schritt 1 — wenn du es von Hand machst, diesen Auftrag in ChatGPT eingeben:**
 
 ```
 Fass alles zusammen, was du über mich und mein Business weisst.
@@ -126,7 +143,7 @@ Nimm nur, was ich dir wirklich erzählt habe. Wo du nichts hast, schreib
 „nichts bekannt“ hin, statt etwas Passendes zu erfinden.
 ```
 
-**Schritt 2 — die Antwort kopieren und in Claude einfügen:**
+**Schritt 2 — durchsieben, egal welchen Weg du genommen hast:**
 
 ```
 Unten steht, was ein anderes KI-Programm über mich gesammelt hat.
@@ -142,7 +159,7 @@ Wissensdokument wird. Eine Frage nach der anderen.
 [Text einfügen]
 ```
 
-> **Warum nicht einfach kopieren und fertig?** Weil so eine Zusammenfassung
+> **Warum du nach dem Import trotzdem Schritt 2 machst:** Weil so eine Zusammenfassung
 > gern höflich wird und dir Eigenschaften andichtet, die nie jemand gesagt hat.
 > Das klingt schmeichelhaft und ist als Fundament unbrauchbar. Der zweite
 > Schritt siebt das aus, und was übrig bleibt, hat echten Wert.

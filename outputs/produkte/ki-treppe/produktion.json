@@ -1,0 +1,1043 @@
+{
+ "stand": "2026-10-19",
+ "kurs": "Easy KI für Networkerinnen — vom Chat zur Mitarbeiterin",
+ "preis": 333,
+ "kapitel": [
+  {
+   "nr": 1,
+   "titel": "Orientierung",
+   "lektionen": [
+    {
+     "nr": "1.1",
+     "titel": "Schön, dass du da bist",
+     "notiz": "**Erzählen:** was sie am Ende hat — ein Arbeitsplatz mit ihrem Wissen, ein selbstgebauter Skill, ein Bot der läuft. Und der Satz, der alles trägt: du stellst dir keine Software hin, du stellst jemanden ein. **Zeigen:** nichts. Gesicht in die Kamera.",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": true,
+     "beilagen": []
+    },
+    {
+     "nr": "1.2",
+     "titel": "Deine Roadmap",
+     "notiz": "**Erzählen:** die drei Stufen. Auf jeder Stufe ein Gewinn, niemand muss bis nach oben. Wer nach Stufe 1 aufhört, hat trotzdem etwas. **Zeigen:** eine Folie mit den drei Stufen. **Mitgeben:** die Roadmap als PDF",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": true,
+     "beilagen": []
+    },
+    {
+     "nr": "1.3",
+     "titel": "Die Wörter, die dauernd vorkommen",
+     "notiz": "**Erzählen:** Prompt, Kontext, Projekt, Skill, Agent, Bot, Repository, Terminal, Token — in Küchentisch-Sprache. **Mitgeben:** Cheatsheet, eine Seite",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": true,
+     "beilagen": []
+    },
+    {
+     "nr": "1.4",
+     "titel": "Was das kostet",
+     "notiz": "**Erzählen:** Gratis-Konto zum Anfangen, Pro rund 20–23 für Cowork, dazu rund 5 im Monat fürs Hosting eines Bots. Offen sagen, nicht verstecken. Rechnung dazu: weniger als eine einzige bezahlte Stunde Hilfe. **Zeigen:** die Preisseite",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": true,
+     "beilagen": []
+    },
+    {
+     "nr": "1.5",
+     "titel": "Zusammenfassung und Checkliste",
+     "notiz": "**Mitgeben:** Checkliste Kapitel 1",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": true,
+     "beilagen": []
+    }
+   ],
+   "folien": 25,
+   "folien_lektionen": 5,
+   "link": "https://claude.ai/artifact/LnABWRgZEU2Fhhm2FCzBH7",
+   "etappe": "So 1.11.2026",
+   "frei_ab": "2026-11-01"
+  },
+  {
+   "nr": 2,
+   "titel": "Claude Chat — die Grundlage",
+   "lektionen": [
+    {
+     "nr": "2.1",
+     "titel": "Die Praktikantin",
+     "notiz": "**Erzählen:** KI ist nur so gut wie der Auftrag. Drei Zutaten — wer bin ich, was soll rauskommen, wie sieht gut aus. Es liegt fast nie an der KI. **Zeigen:** derselbe Auftrag zweimal, einmal nackt, einmal mit den drei Zutaten. Der Unterschied trägt die ganze Lektion.",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": true,
+     "beilagen": []
+    },
+    {
+     "nr": "2.2",
+     "titel": "Warum deine Texte nicht nach dir klingen",
+     "notiz": "**Erzählen:** Sprachmodelle bauen aus Mustern, und die sind überall gleich. Die typischen Verräter zeigen. **Zeigen:** ein KI-Text mit den Mustern markiert. **Mitgeben:** die Blackliste als leere Vorlage mit den Regeln, ohne Patricias eigene Beispiele",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": true,
+     "beilagen": []
+    },
+    {
+     "nr": "2.3",
+     "titel": "Dein Business-Brief — Teil 1",
+     "notiz": "**Erzählen:** das eine Dokument, das ab jetzt überall mitgeht. Sechs Bausteine: wer bin ich · meine Kundin · mein Angebot · meine Themen · meine Stimme · meine Tabus. **Zeigen:** ihren eigenen, aufgeklappt, echt",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": true,
+     "beilagen": []
+    },
+    {
+     "nr": "2.4",
+     "titel": "Dein Business-Brief — Teil 2: die Buch-Technik",
+     "notiz": "**Erzählen:** der KI sagen, sie soll ein Buch über dich schreiben, und so lange fragen lassen, bis sie wirklich alles hat. **Zeigen:** live einen Durchgang, mindestens zwei Nachfragerunden. **Mitgeben:** Vorlage + der Auftrag zum Kopieren",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "2.5",
+     "titel": "Deine Stimme einfangen",
+     "notiz": "**Erzählen:** zwei, drei eigene Texte anhängen reicht. **Zeigen:** vorher/nachher am selben Auftrag",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "2.6",
+     "titel": "Projekte statt Einzelchats",
+     "notiz": "**Erzählen:** dein Wissen bleibt liegen statt jedes Mal neu getippt. **Zeigen:** ein Projekt anlegen, Business-Brief hineinlegen",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "2.7",
+     "titel": "Zusammenfassung und Checkliste",
+     "notiz": "",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    }
+   ],
+   "folien": 31,
+   "folien_lektionen": 7,
+   "link": "https://claude.ai/artifact/Sv1PQ8sHjL81UUt7mVjdQu",
+   "etappe": "So 1.11.2026",
+   "frei_ab": "2026-11-01"
+  },
+  {
+   "nr": 3,
+   "titel": "Claude Cowork — die Mittelstufe",
+   "lektionen": [
+    {
+     "nr": "3.1",
+     "titel": "Was Cowork kann, was der Chat nicht kann",
+     "notiz": "**Erzählen:** mit Dateien arbeiten, über mehrere Schritte, sich etwas merken. **Zeigen:** eine Aufgabe, die im Chat scheitert und in Cowork durchläuft",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "3.2",
+     "titel": "Deine erste Verbindung: Notion",
+     "notiz": "**Zeigen:** den Stecker einmal einrichten, dann die KI die eigene Planung lesen lassen",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "3.3",
+     "titel": "Dein erster Bot ohne eine Zeile Code",
+     "notiz": "**Erzählen:** derselbe Auftrag, den Stufe 3 später als echten Bot baut. **Zeigen:** Haushalts-Helfer oder Kochplan, live",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "3.4",
+     "titel": "Wo Cowork aufhört",
+     "notiz": "**Erzählen:** ehrlich — er läuft nicht von selbst, du musst ihn anstossen. Das ist der Grund für Stufe 3. Wer damit zufrieden ist, darf hier aufhören",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "3.5",
+     "titel": "Zusammenfassung und Checkliste",
+     "notiz": "",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    }
+   ],
+   "folien": 22,
+   "folien_lektionen": 5,
+   "link": "https://claude.ai/artifact/PkXYLdh86SBsKspgmfoJdV",
+   "etappe": "So 1.11.2026",
+   "frei_ab": "2026-11-01"
+  },
+  {
+   "nr": 4,
+   "titel": "Claude Code einrichten",
+   "lektionen": [
+    {
+     "nr": "4.1",
+     "titel": "Keine Angst, es ist kein Programmieren",
+     "notiz": "**Erzählen:** Desktop-App, kein schwarzes Fenster. Du schreibst Deutsch. **Zeigen:** die Oberfläche, wie bei einem Chat",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "4.2",
+     "titel": "Einrichten",
+     "notiz": "**Zeigen:** Schritt für Schritt, Klick für Klick, in Echtzeit. Nichts überspringen — hier steigen die Leute aus. **Windows und Mac getrennt zeigen** (Git unter Windows extra installieren), Windows ist gleichwertig. Die drei Prüfpunkte zuerst: im Bereich Code? Abo aktiv? immer derselbe Ordner, nie iCloud? **Mitgeben:** Setup-FAQ, eine Seite (04.10.)",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "4.3",
+     "titel": "Dein Arbeitsplatz",
+     "notiz": "**Erzählen:** die fünf Ordner und wozu jeder da ist. **Zeigen:** ihren eigenen, dann den leeren zum Herunterladen. **Mitgeben:** das Grundgerüst",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "4.4",
+     "titel": "CLAUDE.md — das Gedächtnis",
+     "notiz": "**Erzählen:** alles, was nicht jedes Mal neu erklärt werden soll. **Zeigen:** ihre eigene, kurz durchscrollen — der Umfang macht Eindruck. Dann die leere Vorlage. **Dazu (04.10.): Damit nichts verloren geht** — beim Schliessen ist das Gespräch weg, der Ordner ist das Gedächtnis. `/start` am Anfang, `/shutdown` am Ende, „merk dir das“ zwischendurch, Online-Sicherung. In allen vier Calls der Konkurrenz die häufigste Frage. **Mitgeben:** Spickzettel + die beiden Befehle als Vorlage",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "4.5",
+     "titel": "Wie du mit Claude sprichst",
+     "notiz": "**Erzählen:** sag was du willst, nicht wie er es machen soll. Ein Ding pro Auftrag",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "4.6",
+     "titel": "Wenn es nicht klappt",
+     "notiz": "**Erzählen:** was zu tun ist, wenn er Murks baut. Neu ansetzen statt nachbessern. Die drei häufigsten Anfängerfehler",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "4.7",
+     "titel": "Zusammenfassung und Checkliste",
+     "notiz": "",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    }
+   ],
+   "folien": 29,
+   "folien_lektionen": 7,
+   "link": "https://claude.ai/artifact/H2t9veSbsVwRvrBnwNRRC8",
+   "etappe": "Mo 9.11.2026",
+   "frei_ab": "2026-11-09"
+  },
+  {
+   "nr": 5,
+   "titel": "Skills — das Herzstück",
+   "lektionen": [
+    {
+     "nr": "5.1",
+     "titel": "Was ein Skill ist",
+     "notiz": "**Erzählen:** ein Rezept, das die KI jedes Mal gleich abarbeitet. **Zeigen:** einen Aufruf mit Schrägstrich und was danach passiert",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "5.2",
+     "titel": "Ein Skill auseinandergenommen",
+     "notiz": "**Zeigen:** den Kochplan-Skill Zeile für Zeile — Kopf, Zweck, Regeln, gewünschtes Ergebnis, Beispiel. **Mitgeben:** genau diese Datei",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "5.3",
+     "titel": "Woran du erkennst, dass etwas ein Skill werden sollte",
+     "notiz": "**Erzählen:** was du dreimal gleich machst. **Zeigen:** eine ehrliche Liste aus ihrem eigenen Alltag",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "5.4",
+     "titel": "Deinen ersten Skill bauen — mit dem Skill Creator",
+     "notiz": "**Zeigen:** live, von der Idee zur fertigen Datei",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "5.5",
+     "titel": "Von Hand nachschärfen",
+     "notiz": "**Erzählen:** was der Creator nie weiss — deine Regeln, deine Verbote. **Zeigen:** eine echte Nachschärfung",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "5.6",
+     "titel": "Was dreimal korrigiert wird, wird eine Regel",
+     "notiz": "**Erzählen:** das ist der Punkt, an dem ein Skill besser wird als du. **Zeigen:** eine Regel, die aus einem Fehler entstanden ist",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "5.7",
+     "titel": "Achtung bei Skills aus dem Internet",
+     "notiz": "**Erzählen:** du lädst fremde Anweisungen in deinen Arbeitsplatz. Vorher lesen. **Zeigen (04.10.):** so prüfst du einen fremden Skill — SKILL.md lesen, mitgelieferte Skripte ansehen, Claude fragen „was tut das genau, greift es auf Schlüssel oder das Internet zu?“. **Mitgeben:** Checkliste „fremden Skill prüfen“",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "5.8",
+     "titel": "Zusammenfassung und Checkliste",
+     "notiz": "**Mitgeben:** leeres Skill-Gerüst",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    }
+   ],
+   "folien": 33,
+   "folien_lektionen": 8,
+   "link": "https://claude.ai/artifact/9HBSNPBHNKe5tCiQxstF8U",
+   "etappe": "Mo 9.11.2026",
+   "frei_ab": "2026-11-09"
+  },
+  {
+   "nr": 6,
+   "titel": "Bots, die von selbst laufen",
+   "lektionen": [
+    {
+     "nr": "6.1",
+     "titel": "Vom Skill zum Bot",
+     "notiz": "**Erzählen:** derselbe Auftrag, nur ruft ihn niemand mehr auf",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "6.2",
+     "titel": "Übersicht: meine Bots",
+     "notiz": "**Zeigen:** Garten, Kochassistent, Cockpit, Haushalt — auf dem Handy. Das ist der Moment, in dem es klick macht",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "6.3",
+     "titel": "Dein erster Telegram-Bot",
+     "notiz": "**Zeigen:** komplett, von null bis zur ersten Nachricht. **Mitgeben:** Bot-Gerüst",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "6.4",
+     "titel": "Dass er morgens von selbst schreibt",
+     "notiz": "**Zeigen:** Hosting und Zeitplan. Ehrlich zu den rund 5 im Monat",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "6.5",
+     "titel": "Wenn der Bot schweigt",
+     "notiz": "**Erzählen:** die drei häufigsten Gründe und wo man nachschaut",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "6.6",
+     "titel": "Zusammenfassung und Checkliste",
+     "notiz": "",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    }
+   ],
+   "folien": 23,
+   "folien_lektionen": 6,
+   "link": "https://claude.ai/artifact/1XTWypDWxRjnYaJcKRWYtG",
+   "etappe": "Mo 16.11.2026",
+   "frei_ab": "2026-11-16"
+  },
+  {
+   "nr": 7,
+   "titel": "Social Media mit Claude Code",
+   "lektionen": [
+    {
+     "nr": "7.1",
+     "titel": "Die Content-Maschinen im Überblick",
+     "notiz": "**Erzählen:** ein Skill je Format, alle lesen dieselben Wissensdateien. **Zeigen:** den Ordner mit den Skills und den leeren Wissensdateien daneben",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "7.2",
+     "titel": "Caption und Story",
+     "notiz": "**Zeigen:** Skill laufen lassen mit leerer Wissensdatei → mittelmässiges Ergebnis. Dann mit gefüllter → gutes Ergebnis. **Das ist die wichtigste Demonstration im ganzen Kurs**, weil sie den Unterschied zwischen Maschine und Treibstoff sichtbar macht",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "7.3",
+     "titel": "Karussell — vom Text zum fertigen Bild",
+     "notiz": "**Zeigen:** Folientexte erzeugen, dann der Bild-Editor",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "7.4",
+     "titel": "Reel — Rohschnitt aus Rohmaterial",
+     "notiz": "**Erzählen:** einmal frei sprechen mit Versprechern, die Maschine schneidet. Markieren als Aufbaustufe, drei Programme nötig. **Zeigen:** ein echtes Vorher/Nachher",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "7.5",
+     "titel": "🚨 Freigabe statt Autopilot",
+     "notiz": "**Erzählen:** warum bei ihr nie etwas ungeprüft rausgeht. Ihr Instagram-Konto hängt an einem Partnerunternehmen, ein unbedachter Satz kostet mehr als eine Woche Arbeit spart. **Zeigen:** das Cockpit mit dem Freigabe-Knopf. **Das hat sonst niemand**",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "7.6",
+     "titel": "Automatisiertes Posten",
+     "notiz": "**Zeigen:** freigegeben am Abend, eingeplant um 20:00, draussen am nächsten Morgen",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "7.7",
+     "titel": "Wenn die KI Murks baut",
+     "notiz": "**Erzählen:** automatisch erzeugter Content wird schlecht, wenn niemand prüft. Die Muster, an denen man KI-Text erkennt. **Zeigen:** das Prüfskript und einen echten Fund. **Mitgeben:** die Prüf-Mechanik als Vorlage",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "7.8",
+     "titel": "Zusammenfassung und Checkliste",
+     "notiz": "",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    }
+   ],
+   "folien": 36,
+   "folien_lektionen": 8,
+   "link": "https://claude.ai/artifact/L8ZwiQpusSWVEwD2tab8bR",
+   "etappe": "Mo 16.11.2026",
+   "frei_ab": "2026-11-16"
+  },
+  {
+   "nr": 8,
+   "titel": "Produkte, Seiten und Mails",
+   "lektionen": [
+    {
+     "nr": "8.1",
+     "titel": "Produkt- und Verkaufsseiten-Skills",
+     "notiz": "**Zeigen:** die Maschinen. Verweis: die Inhalte stehen in der digitalen Produktwelt",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "8.2",
+     "titel": "Eine Verkaufsseite bauen lassen",
+     "notiz": "**Zeigen:** von der Beschreibung zur fertigen Seite",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "8.3",
+     "titel": "Auf die eigene Website bringen",
+     "notiz": "**Zeigen:** hochladen, Adresse einrichten",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "8.4",
+     "titel": "Mails und Verteiler anbinden",
+     "notiz": "**Zeigen:** die Verbindung zum Mail-Anbieter. Ehrlich: hier hängt ein Zugang dran",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "8.5",
+     "titel": "Zusammenfassung und Checkliste",
+     "notiz": "",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    }
+   ],
+   "folien": 21,
+   "folien_lektionen": 5,
+   "link": "https://claude.ai/artifact/R42yY89PC29d4rpEsdSyL5",
+   "etappe": "Mo 23.11.2026",
+   "frei_ab": "2026-11-23"
+  },
+  {
+   "nr": 9,
+   "titel": "Dein Cockpit und eine Plattform für deine Kundschaft",
+   "lektionen": [
+    {
+     "nr": "9.1",
+     "titel": "Was ein Artifact ist",
+     "notiz": "**Erzählen:** eine eigene kleine Seite mit Datenbank, die Claude befüllt und du bedienst",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "9.2",
+     "titel": "Ihr eigenes bauen",
+     "notiz": "**Zeigen:** vom leeren Gerüst zur ersten Ansicht. **Mitgeben:** leere Cockpit-Vorlage",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "9.3",
+     "titel": "Eine Plattform für deine Kundschaft",
+     "notiz": "**Zeigen:** die Begleitung zur 30-Tage-Energie-Routine — Rezepte, Tagesimpuls, Checkliste und Vorrat fürs Handy, gebaut als Artifact. Wie so eine Seite entsteht, was man mit ihr alles machen kann (Willkommensseite, Anwendungstipps, Checkliste für eine Aktion) und wie man sie teilt. **Ehrlich:** eine Seite für die Kundschaft bekommt keine Datenbank, weil sie sonst nur für Konten der eigenen Organisation offen ist — Einträge bleiben auf dem Handy der Kundin. **Mitgeben:** Auftrag zum Nachbauen, mit Platzhaltern (Patricia, 28.09.2026)",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "9.4",
+     "titel": "Der Abendlauf",
+     "notiz": "**Zeigen:** der Zeitplan, der abends alles Freigegebene abholt",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "9.5",
+     "titel": "Wenn zwei Sachen dasselbe tun",
+     "notiz": "**Erzählen:** die Doppelpost-Geschichte vom 16.09. — von Hand gepostet, die Freigabe stand weiter auf wartet, der Abendlauf hätte es ein zweites Mal eingeplant. **Warum das hineingehört:** es ist der einzige Fehler, den man nicht sieht, bevor er passiert",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "9.6",
+     "titel": "Zusammenfassung und Checkliste",
+     "notiz": "",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    }
+   ],
+   "folien": 22,
+   "folien_lektionen": 5,
+   "link": "https://claude.ai/artifact/6m2o6CmrksWiRF8Bg2Woma",
+   "etappe": "Mo 23.11.2026",
+   "frei_ab": "2026-11-23"
+  },
+  {
+   "nr": 10,
+   "titel": "Sicherheit, Grenzen und das Ganze",
+   "lektionen": [
+    {
+     "nr": "10.1",
+     "titel": "🚨 Was nie in einen Arbeitsplatz gehört",
+     "notiz": "**Erzählen:** die Geschichte vom 13.09. — Zugangsschlüssel im Klartext und 32 Kundinnen mit Namen, Mailadressen und Telefonnummern, offen abrufbar. Gefunden nur, weil einmal jemand gezielt nachgesehen hat. **Die drei Regeln**, die daraus folgen. **Zeigen:** wie ein Schlüssel richtig liegt. **Das ist die Lektion, die sonst niemand hat**",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "10.2",
+     "titel": "Wenn doch etwas passiert ist",
+     "notiz": "**Erzählen:** Löschen reicht nicht, der Schlüssel muss gewechselt werden",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "10.3",
+     "titel": "Network-Compliance",
+     "notiz": "**Erzählen:** was die KI schreibt, verantwortest du. Keine Heilversprechen, keine Einkommensversprechen, die Regeln deines Partnerunternehmens",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "10.4",
+     "titel": "Was KI nicht kann",
+     "notiz": "**Erzählen:** Beziehung, Entscheidung, Stimme. Und: sie hört nichts, sieht nichts und weiss nicht, wie es sich anfühlt",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "10.5",
+     "titel": "Wie bei mir alles zusammenhängt",
+     "notiz": "**Zeigen:** eine echte Woche von Freitagmorgen bis zum fertigen Post — Vorschläge rein, Freigabe im Cockpit, Abendlauf, Bild-Editor, Videoschnitt. Mitschauen, nicht nachbauen. **Das ist das Verkaufsargument des ganzen Kurses**",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    },
+    {
+     "nr": "10.6",
+     "titel": "Wo du weitermachst",
+     "notiz": "**Erzählen:** welche Maschine welchen Treibstoff braucht, und wo der steht",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "beilagen": []
+    }
+   ],
+   "folien": 27,
+   "folien_lektionen": 6,
+   "link": "https://claude.ai/artifact/36HjwKA4qvrppPn7pChu9T",
+   "etappe": "Mo 30.11.2026",
+   "frei_ab": "2026-11-30"
+  }
+ ],
+ "beilagen": [
+  {
+   "name": "begriffe-cheatsheet",
+   "titel": "Die Wörter, die dauernd vorkommen",
+   "pdf": true,
+   "link": "/_blob/80845869d99e13efbc1b4d3f17996724",
+   "kb": 125
+  },
+  {
+   "name": "buch-technik-auftrag",
+   "titel": "Die Buch-Technik — der Auftrag zum Kopieren",
+   "pdf": true,
+   "link": "/_blob/9021d087388f8dce2b54e8b069549501",
+   "kb": 90
+  },
+  {
+   "name": "business-brief-vorlage",
+   "titel": "Dein Business-Brief",
+   "pdf": true,
+   "link": "/_blob/cc49c486f2e76acdb18bca51be039c79",
+   "kb": 200
+  },
+  {
+   "name": "checkliste-modul-1",
+   "titel": "Checkliste Modul 1 · Orientierung",
+   "pdf": true,
+   "link": "/_blob/90388997d19f31f040c7efa8b98699cd",
+   "kb": 66
+  },
+  {
+   "name": "checkliste-modul-2",
+   "titel": "Checkliste Modul 2 · Claude Chat",
+   "pdf": true,
+   "link": "/_blob/3fd1d93ff1850eb00b3cf6d5ec6abae7",
+   "kb": 68
+  },
+  {
+   "name": "checkliste-modul-3",
+   "titel": "Checkliste Modul 3 · Claude Cowork",
+   "pdf": true,
+   "link": "/_blob/79009fb2a793cf3ce8107b95d8953aab",
+   "kb": 66
+  },
+  {
+   "name": "checkliste-modul-4",
+   "titel": "Checkliste Modul 4 · Claude Code einrichten",
+   "pdf": true,
+   "link": "/_blob/4890f84d870e62e2b7f6305220ceeabb",
+   "kb": 68
+  },
+  {
+   "name": "checkliste-modul-5",
+   "titel": "Checkliste Modul 5 · Skills",
+   "pdf": true,
+   "link": "/_blob/4a0f3877654d9fb4a77d82b7f8bc0fc0",
+   "kb": 66
+  },
+  {
+   "name": "checkliste-modul-6",
+   "titel": "Checkliste Modul 6 · Bots",
+   "pdf": true,
+   "link": "/_blob/8663353cb8231bf081d811a1d32c3f09",
+   "kb": 66
+  },
+  {
+   "name": "checkliste-modul-7",
+   "titel": "Checkliste Modul 7 · Social Media",
+   "pdf": true,
+   "link": "/_blob/717f5eb77766b3638f519c7861583eae",
+   "kb": 68
+  },
+  {
+   "name": "checkliste-modul-8",
+   "titel": "Checkliste Modul 8 · Produkte, Seiten und Mails",
+   "pdf": true,
+   "link": "/_blob/d7f1982059195bcebfe07daab853fca0",
+   "kb": 66
+  },
+  {
+   "name": "checkliste-modul-9",
+   "titel": "Checkliste Modul 9 · Dein Cockpit",
+   "pdf": true,
+   "link": "/_blob/4eb47965270199f153d00f40095d41be",
+   "kb": 65
+  },
+  {
+   "name": "claude-md-vorlage",
+   "titel": "Deine CLAUDE.md — das Gedächtnis deines Arbeitsplatzes",
+   "pdf": false,
+   "link": "",
+   "kb": 0
+  },
+  {
+   "name": "cowork-erster-bot",
+   "titel": "Dein erster Helfer in Cowork",
+   "pdf": false,
+   "link": "",
+   "kb": 0
+  },
+  {
+   "name": "floskel-liste-vorlage",
+   "titel": "Woran man KI-Text erkennt",
+   "pdf": true,
+   "link": "/_blob/bfc5b8c09defb1372809b3320cdc2f41",
+   "kb": 126
+  },
+  {
+   "name": "prompt-bibliothek",
+   "titel": "Deine Prompt-Bibliothek",
+   "pdf": true,
+   "link": "/_blob/5599d39d453da768a836ca10c509bcab",
+   "kb": 309
+  },
+  {
+   "name": "roadmap-drei-stufen",
+   "titel": "Deine Roadmap — die drei Stufen",
+   "pdf": true,
+   "link": "/_blob/44079c6a3b734acc6845bf059f323da9",
+   "kb": 84
+  },
+  {
+   "name": "sicherheits-checkliste",
+   "titel": "Was nie in einen Arbeitsplatz gehört",
+   "pdf": true,
+   "link": "/_blob/a7191db7a7d4fd4f48618c035bc92d4b",
+   "kb": 101
+  },
+  {
+   "name": "skill-geruest",
+   "titel": "[Name des Skills]",
+   "pdf": true,
+   "link": "/_blob/8bfab6d2856258565d31a5af47a685ed",
+   "kb": 103
+  }
+ ],
+ "links": [
+  {
+   "was": "Verkaufsseite",
+   "url": "https://mumlifebalance.ch/ki-kurs/",
+   "notiz": "WP-Seite 4286"
+  },
+  {
+   "was": "Kasse",
+   "url": "https://mumlifebalance.thrivecart.com/ki-network/",
+   "notiz": "ThriveCart-Produkt 52"
+  },
+  {
+   "was": "Kursbereich",
+   "url": "https://thrivecart.com/mumlifebalance/",
+   "notiz": "Projekt Online-Kurse, Kurs 232070"
+  },
+  {
+   "was": "Beilagen in Drive",
+   "url": "https://drive.google.com/drive/folders/1FzEiDo-R-qi9KXuN4tYRqydd9SkpZQXq",
+   "notiz": "unter Produkte"
+  },
+  {
+   "was": "Masterclass",
+   "url": "https://mumlifebalance.ch/ki-masterclass/",
+   "notiz": "gelaufen am 8.10."
+  },
+  {
+   "was": "Stimm-Check (0€)",
+   "url": "https://stimm-check.vercel.app/",
+   "notiz": "Einstieg in den Funnel"
+  }
+ ],
+ "termine": [
+  {
+   "wann": "Fr 23.10.2026",
+   "was": "Kasse schliesst",
+   "notiz": "ab dann niemand mehr neu dazu"
+  },
+  {
+   "wann": "So 1.11.2026",
+   "was": "Kursstart",
+   "notiz": "die ersten Kapitel liegen im Bereich"
+  },
+  {
+   "wann": "Mi 18.11.2026",
+   "was": "Erster Live-Call",
+   "notiz": "Arbeitsplatz und erster fester Auftrag"
+  },
+  {
+   "wann": "Do 10.12.2026",
+   "was": "Zweiter Live-Call",
+   "notiz": "alles, was bis dahin aufgetaucht ist"
+  }
+ ],
+ "etappen": [
+  {
+   "wann": "So 1.11.2026",
+   "iso": "2026-11-01",
+   "kapitel": [
+    1,
+    2,
+    3
+   ],
+   "notiz": "alles ohne Installation, damit der erste Gewinn sofort da ist"
+  },
+  {
+   "wann": "Mo 9.11.2026",
+   "iso": "2026-11-09",
+   "kapitel": [
+    4,
+    5
+   ],
+   "notiz": "dein Arbeitsplatz und deine festen Aufträge"
+  },
+  {
+   "wann": "Mo 16.11.2026",
+   "iso": "2026-11-16",
+   "kapitel": [
+    6,
+    7
+   ],
+   "notiz": "deine Helfer und Social Media"
+  },
+  {
+   "wann": "Mo 23.11.2026",
+   "iso": "2026-11-23",
+   "kapitel": [
+    8,
+    9
+   ],
+   "notiz": "Seiten, Mails, deine Übersicht und deine Plattform für die Kundschaft"
+  },
+  {
+   "wann": "Mo 30.11.2026",
+   "iso": "2026-11-30",
+   "kapitel": [
+    10
+   ],
+   "notiz": "und der Kurs ist komplett"
+  }
+ ],
+ "ablaeufe": [
+  {
+   "was": "Folien eines Moduls neu bauen",
+   "befehle": [
+    "python scripts/ki-kurs/folien-modul-N.py <ordner>",
+    "python scripts/ki-kurs/folien-pruefen.py <ordner>   # muss SAUBER melden"
+   ],
+   "notiz": "Danach den Foliensatz neu veröffentlichen — der Link bleibt gleich."
+  },
+  {
+   "was": "Eine Beilage ändern",
+   "befehle": [
+    "# Text in outputs/produkte/ki-treppe/beilagen/<name>.md ändern",
+    "cd scripts/karussell-render",
+    "cp ../ki-treppe/beilagen-bauen.mjs ./_t.mjs && node ./_t.mjs <name> ; rm -f ./_t.mjs"
+   ],
+   "notiz": "Das PDF landet in beilagen/pdf/. Danach in den Drive-Ordner ziehen."
+  },
+  {
+   "was": "Lektionstexte in ThriveCart eintragen",
+   "befehle": [
+    "python scripts/ki-treppe/kopierseite-bauen.py",
+    "# dann: preview_start ki-kurs-texte   ->  http://localhost:4387"
+   ],
+   "notiz": "Je Karte ein Knopf für Titel und einen für die Beschreibung. Was eingetragen ist, gehört in ERLEDIGT im Skript nachgeführt."
+  },
+  {
+   "was": "Verkaufsseite neu ausspielen",
+   "befehle": [
+    "cd scripts/wordpress",
+    "node --env-file=.env deploy-ki-kurs-lp.mjs"
+   ],
+   "notiz": "🔁 Preisstufe steht als PHASE in scripts/salespage-design/ki-kurs-bauen.py."
+  },
+  {
+   "was": "Die Willkommens-Mail bauen",
+   "befehle": [
+    "python scripts/ki-kurs/mails-bauen.py"
+   ],
+   "notiz": "🚨 Der Text muss danach in ActiveCampaign von Hand ersetzt werden — eine Datei im Workspace ändert nichts an dem, was verschickt wird."
+  }
+ ],
+ "offen": [
+  {
+   "was": "Die Setup-FAQ aus Lektion 4.2",
+   "stand": "fehlt",
+   "warum": "Am 04.10. geplant, nie gebaut. 4.2 ist laut eigener Notiz die Lektion, an der die Leute aussteigen."
+  },
+  {
+   "was": "Lektion 2.3b — Umzug von ChatGPT",
+   "stand": "zu entscheiden",
+   "warum": "Prompt 3 der Bibliothek ist fertig, die Lektion noch nicht beschlossen."
+  },
+  {
+   "was": "Verkaufsseite: 1.11. oder 2.11.?",
+   "stand": "widerspricht sich",
+   "warum": "Der Zeitplan sagt „So 1. November: Kapitel 1 bis 3“, die Kapitel-Liste darunter sagt bei 1 bis 3 „ab 2.11.“. Die Käuferinnen haben beides gelesen."
+  },
+  {
+   "was": "MBA-Upsell am Checkout",
+   "stand": "falscher Preis",
+   "warum": "Steht auf 997 statt 720. Zusammen mit dem Kurs sollen es 997 sein."
+  }
+ ],
+ "dokumente": [
+  {
+   "was": "Inhaltsverzeichnis",
+   "pfad": "outputs/produkte/ki-treppe/03-inhaltsverzeichnis.md",
+   "notiz": "Alle Kapitel und Lektionen mit den Dreh-Notizen — die Quelle dieser Seite"
+  },
+  {
+   "was": "Lektionstexte für die Plattform",
+   "pfad": "outputs/produkte/ki-treppe/04-kursplattform-texte.md",
+   "notiz": "Begrüssung, zehn Modultexte, 63 Lektionen · Kopierseite mit Knopf je Feld"
+  },
+  {
+   "was": "Kurs-Konzept",
+   "pfad": "outputs/produkte/ki-treppe/02-kurs-konzept.md",
+   "notiz": "Maschine gegen Treibstoff — warum dieser Kurs die Skills leer ausliefert"
+  },
+  {
+   "was": "Preis-Validierung",
+   "pfad": "outputs/produkte/ki-treppe/06-preis-validierung.md",
+   "notiz": "Die Staffel 199 / 277 / 333 und warum"
+  },
+  {
+   "was": "Launch-Kalender",
+   "pfad": "outputs/produkte/ki-treppe/07-launch-kalender.md",
+   "notiz": "Phasen, Mails, Storys, Feed"
+  },
+  {
+   "was": "Funnel-Gerüst",
+   "pfad": "outputs/produkte/ki-treppe/09-funnel-geruest.md",
+   "notiz": "Stimm-Check → Masterclass → Kurs, mit allem Offenen"
+  },
+  {
+   "was": "Texte für den Checkout",
+   "pfad": "outputs/salespages/ki-kurs-checkout-texte.md",
+   "notiz": "Die 13 Blöcke · gebaut mit ki-kurs-checkout-bauen.py"
+  },
+  {
+   "was": "Willkommens-Mail",
+   "pfad": "outputs/produkte/ki-kurs/mails/mail-00-willkommen.html",
+   "notiz": "🚨 Muss in ActiveCampaign von Hand ersetzt werden"
+  },
+  {
+   "was": "Käufertypen in den Storys",
+   "pfad": "outputs/produkte/ki-treppe/11-kaeufertypen-in-den-storys.md",
+   "notiz": "Welcher Typ an welchem Launch-Tag vorkommt"
+  },
+  {
+   "was": "Der Content-Kreislauf",
+   "pfad": "outputs/produkte/ki-treppe/12-content-kreislauf-kursmaterial.md",
+   "notiz": "Kursfassung mit eigenen Prompts — gehört zu Lektion 7.0"
+  }
+ ],
+ "zahlen": {
+  "kapitel": 10,
+  "lektionen": 63,
+  "texte_drin": 8,
+  "folien": 269,
+  "beilagen": 19
+ }
+}
