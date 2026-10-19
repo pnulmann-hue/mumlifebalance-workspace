@@ -18,13 +18,13 @@ Schluss erklärte die Szene statt einen Stich zu setzen.
 
 | Feld | Wert |
 |---|---|
-| Profil | Mentoring · Reichweite (Share-CTA, kein Stichwort) |
+| Profil | Mentoring · Verkauf KI-Kurs (Kasse schliesst Fr 23.10.) |
 | Clip | Patricia am Laptop vor der Holzwand — **Dateiname offen** |
 | Stil | serif, Akzent orange (kein Petrol) |
 | Höhe | ab Standbild entscheiden — Gesicht sitzt oben rechts, Block um 44–48 % |
-| `text` (weiss) | Mein Kind verschwindet ins Kinderzimmer, und ich schnapp mir sofort das Handy, um endlich was fürs Network zu posten. |
-| `betont` (orange) | Und dann wundere ich mich, warum keiner kommentiert. |
-| `zusatz` (Chip) | Schick das einer Network-Freundin |
+| `text` (weiss) | Früher ist mein Kind ins Kinderzimmer verschwunden, und ich hab mir sofort das Handy geschnappt, um endlich was fürs Network zu posten. |
+| `betont` (orange) | Und dann hab ich mich gewundert, warum keiner kommentiert. |
+| `zusatz` (Chip) | KI-Kurs · Link in Bio |
 
 Hook-Check: Schmerz ✓ (gepostet, nichts kommt zurück) · „woher weiss die das“ ✓ · Küchentisch ✓ ·
 Bezug „Und dann“ = Folge, kein Gegensatz ✓ · Lösung draussen ✓.
@@ -37,16 +37,18 @@ python scripts/content/broll-bauen.py --clip <DATEINAME> --ab 0.0 --dauer 7.5 --
 # Standbilder ansehen, dann dasselbe mit --rendern
 ```
 
-## Caption
+## Caption (Fassung 3, 19.10. — Strategie statt Bauch, Hintergrund KI-Kurs)
 
-Ich hab nachgezählt, und das war kein schöner Moment: Von 84 Beiträgen seit August hatten 77 keinen einzigen Kommentar. Und fast alle sind genau so entstanden, in den paar Minuten, in denen eines meiner Kinder gerade mit etwas anderem beschäftigt war.
+So lief das bei mir lange: Sobald die Kinder kurz beschäftigt waren, hab ich das Handy gezückt und gepostet, was mir gerade durch den Kopf ging. Und jedes Mal hatte ich das Gefühl, wenigstens etwas fürs Business gemacht zu haben.
 
-Fünf Minuten reichen eigentlich locker für einen Beitrag, auf den jemand antwortet. Was in der Hektik aber jedes Mal rausgefallen ist, war die eine Frage, auf die man überhaupt antworten kann. Ich hab Gedanken rausgehauen, bei denen man nicken konnte, mehr nicht.
+Gebracht hat es wenig, weil keiner dieser Beiträge eine Aufgabe hatte. Ich wusste beim Posten selbst nicht, ob er neue Leute erreichen, Vertrauen aufbauen oder jemanden zu meinem Angebot führen soll.
 
-Darum mein Tipp, wenn du auch zwischen Legosteinen und Znacht postest: Schreib zuerst den letzten Satz. Eine Frage, die nur eine Networkerin beantworten kann, die genau da steht, wo du gerade stehst. Erst dann kommt der Rest. Das kostet dich keine Minute mehr, aber plötzlich gibt es einen Grund, dir zu schreiben.
+Heute plane ich einmal pro Woche die Beiträge für meine zwei Accounts durch, in ein bis zwei Stunden. Das geht, weil meine KI längst mehr macht, als Fragen zu beantworten. Sie kennt meine Strategie, meine Zielgruppe und meine Art zu schreiben, bekommt jede Woche denselben festen Auftrag und legt mir die Beiträge fertig hin. Ich lese, ändere, was nicht nach mir klingt, und gebe frei.
 
-Wann postest du meistens, und wie viele Minuten hast du dafür wirklich?
+Die meisten Networkerinnen benutzen KI noch wie Google: eine Frage rein, eine Antwort raus, und am nächsten Tag fängt alles wieder bei null an. Da geht so viel mehr.
 
-#networkmarketing #mamabusiness #instagramtipps #contentfürmamas #mumlifebalance
+Wie du dir so einen festen Auftrag für deinen eigenen Content baust, zeige ich dir in meinem KI-Kurs, Schritt für Schritt, auch wenn du KI bisher nur wie Google benutzt hast. Start ist am 1. November, die Kasse schliesst am Freitag, 23. Oktober. Den Link findest du in meiner Bio.
 
-⚠️ Die 77 von 84 sind Patricias echte Zahl (Inventur 11.10.2026) — vor dem Posten freigeben, ob sie öffentlich sein soll.
+#networkmarketing #mamabusiness #kifürmamas #contentplanung #mumlifebalance
+
+⚠️ Nur bis 23.10. posten. Vorher prüfen, ob der Bio-Link auf /ki-kurs/ zeigt.
