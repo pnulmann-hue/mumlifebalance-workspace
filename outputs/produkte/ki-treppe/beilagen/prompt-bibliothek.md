@@ -104,7 +104,7 @@ sag das.
 
 ## 3 · Dein Wissen aus ChatGPT mitnehmen
 
-*(Lektion 2.3 — nur für dich, wenn du bisher mit ChatGPT gearbeitet hast.
+*(Lektion 2.3b — nur für dich, wenn du bisher mit ChatGPT gearbeitet hast.
 Überspring es, wenn du neu anfängst.)*
 
 Du hast dort vielleicht monatelang erzählt, wer du bist und was du machst. Das

@@ -76,6 +76,7 @@ Plattform) und einen **Beschreibungstext**, der unter dem Video steht.
 | **2.1 Die Praktikantin** | Eine KI ist nur so gut wie der Auftrag, den sie bekommt. Ich zeige dir die drei Zutaten, die jeder gute Auftrag braucht, am selben Beispiel einmal ohne und einmal mit. |
 | **2.2 Warum deine Texte nicht nach dir klingen** | Es gibt ein paar Muster, an denen man KI-Text sofort erkennt, und wenn du sie einmal gesehen hast, siehst du sie überall. Danach weisst du, wonach du in deinen eigenen Texten suchen musst. |
 | **2.3 Dein Business-Brief — die sechs Bausteine** | Das eine Dokument, das ab jetzt bei jedem Auftrag mitgeht. Wer du bist, für wen du da bist, was du anbietest, worüber du sprichst, wie du klingst und was bei dir nie vorkommt. |
+| **2.3b Dein Wissen aus ChatGPT mitnehmen** | Du hast bisher mit ChatGPT gearbeitet und ihm monatelang erzählt, wer du bist? Dann fängst du nicht bei null an. Ich zeige dir, wie du dieses Wissen in drei Klicks mitnimmst — und warum du es danach einmal durchsiehst, bevor du es behältst. Wenn du neu anfängst, überspring diese Lektion einfach. Den Auftrag zum Durchsieben findest du als Nummer 3 in deiner Prompt-Bibliothek. |
 | **2.4 Die Buch-Technik** | Wie du die sechs Bausteine gefüllt bekommst, ohne stundenlang vor einem leeren Blatt zu sitzen: Du lässt die KI ein Buch über dich schreiben und so lange nachfragen, bis sie wirklich alles hat. |
 | **2.5 Deine Stimme einfangen** | Zwei, drei eigene Texte reichen, damit die KI deinen Ton trifft. Ich zeige dir am selben Auftrag, wie gross der Unterschied ist. |
 | **2.6 Projekte statt Einzelchats** | Damit dein Wissen liegen bleibt, statt dass du es in jedem neuen Chat wieder eintippst. |
@@ -256,6 +257,7 @@ heraus.
 | 1.5 · 2.7 · 3.5 · 4.7 · 5.8 · 6.6 · 7.8 · 8.5 · 9.5 | Checkliste je Modul (PDF) |
 | 2.2 | Floskel-Liste als leere Vorlage für den eigenen Arbeitsplatz |
 | 2.3 | Business-Brief-Vorlage |
+| 2.3b | Prompt-Bibliothek, Nummer 3 — liegt schon bei 1.2 bei |
 | 2.4 | Der Buch-Technik-Auftrag zum Kopieren |
 | 3.3 | Auftrag für den ersten Cowork-Bot |
 | 4.3 | **Arbeitsplatz-Grundgerüst** (ZIP mit Ordnern, `CLAUDE.md`, `prime`, `kurse-sync`, `freebies-sync`, `handy`) |

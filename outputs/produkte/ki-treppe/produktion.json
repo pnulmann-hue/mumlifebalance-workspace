@@ -137,6 +137,22 @@
      "beilage_im_text": false
     },
     {
+     "nr": "2.3b",
+     "titel": "Dein Wissen aus ChatGPT mitnehmen",
+     "notiz": "*(neu seit 20.10.)* **Erzählen:** nur für die, die dort schon gearbeitet haben — der Rest springt zu 2.4. **Zeigen:** Claudes eingebaute Einfuhr (Profil, Einstellungen, Fähigkeiten), live Klick für Klick. Dazu die zwei Haken in ChatGPT beim Gedächtnis und der zweite Durchgang im Projekt-Chat. **Und dann der Teil, den die meisten auslassen:** durchsieben, was davon wirklich von ihr kommt. **Mitgeben:** Prompt 3 der Prompt-Bibliothek",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "plattformtext": "Du hast bisher mit ChatGPT gearbeitet und ihm monatelang erzählt, wer du bist? Dann fängst du nicht bei null an. Ich zeige dir, wie du dieses Wissen in drei Klicks mitnimmst — und warum du es danach einmal durchsiehst, bevor du es behältst. Wenn du neu anfängst, überspring diese Lektion einfach. Den Auftrag zum Durchsieben findest du als Nummer 3 in deiner Prompt-Bibliothek.",
+     "beilagen": [
+      {
+       "was": "Prompt-Bibliothek, Nummer 3 — liegt schon bei 1.2 bei",
+       "link": "/_blob/5599d39d453da768a836ca10c509bcab"
+      }
+     ],
+     "beilage_im_text": true
+    },
+    {
      "nr": "2.4",
      "titel": "Dein Business-Brief — Teil 2: die Buch-Technik",
      "notiz": "**Erzählen:** der KI sagen, sie soll ein Buch über dich schreiben, und so lange fragen lassen, bis sie wirklich alles hat. **Zeigen:** live einen Durchgang, mindestens zwei Nachfragerunden. **Mitgeben:** Vorlage + der Auftrag zum Kopieren",
@@ -191,8 +207,8 @@
      "beilage_im_text": true
     }
    ],
-   "folien": 31,
-   "folien_lektionen": 7,
+   "folien": 34,
+   "folien_lektionen": 8,
    "link": "https://claude.ai/artifact/Sv1PQ8sHjL81UUt7mVjdQu",
    "modultext": "Hier passiert das, was die meisten überspringen und was hinterher alles entscheidet: Du bringst der KI bei, wer du bist. Ohne diesen Schritt bleibt jeder Text austauschbar, egal wie gut dein Auftrag formuliert ist.",
    "etappe": "So 1.11.2026",
@@ -1294,9 +1310,9 @@
  ],
  "zahlen": {
   "kapitel": 10,
-  "lektionen": 63,
+  "lektionen": 64,
   "texte_drin": 8,
-  "folien": 269,
+  "folien": 272,
   "beilagen": 19
  }
 }

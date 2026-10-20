@@ -14,7 +14,7 @@ Bildschirm gezeigt wird und worauf zu achten ist.
 | Modul | Folien | Lektionen | Link |
 |---|---:|---:|---|
 | 1 · Orientierung | 25 | 5 | https://claude.ai/artifact/LnABWRgZEU2Fhhm2FCzBH7 |
-| 2 · Claude Chat | 31 | 7 | https://claude.ai/artifact/Sv1PQ8sHjL81UUt7mVjdQu |
+| 2 · Claude Chat | 34 | 8 | https://claude.ai/artifact/Sv1PQ8sHjL81UUt7mVjdQu |
 | 3 · Claude Cowork | 22 | 5 | https://claude.ai/artifact/PkXYLdh86SBsKspgmfoJdV |
 | 4 · Dein Arbeitsplatz | 29 | 7 | https://claude.ai/artifact/H2t9veSbsVwRvrBnwNRRC8 |
 | 5 · Skills | 33 | 8 | https://claude.ai/artifact/9HBSNPBHNKe5tCiQxstF8U |
@@ -23,7 +23,7 @@ Bildschirm gezeigt wird und worauf zu achten ist.
 | 8 · Produkte, Seiten, Mails | 21 | 5 | https://claude.ai/artifact/R42yY89PC29d4rpEsdSyL5 |
 | 9 · Dein Cockpit | 22 | 5 | https://claude.ai/artifact/6m2o6CmrksWiRF8Bg2Woma |
 | 10 · Sicherheit und das Ganze | 27 | 6 | https://claude.ai/artifact/36HjwKA4qvrppPn7pChu9T |
-| **Summe** | **269** | **62** | |
+| **Summe** | **272** | **63** | |
 
 Alle zehn sind **privat** — niemand sonst kann sie öffnen, solange sie nicht
 über das Teilen-Menü der Seite freigegeben werden. Für die Aufnahme reicht das:
