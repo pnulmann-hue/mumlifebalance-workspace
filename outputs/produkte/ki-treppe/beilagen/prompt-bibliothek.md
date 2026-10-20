@@ -111,10 +111,15 @@ Du hast dort vielleicht monatelang erzählt, wer du bist und was du machst. Das
 ist Arbeit, die du schon gemacht hast — hol sie dir, statt sie nochmal zu machen.
 
 **Der kurze Weg geht ohne diesen Prompt.** Claude hat dafür eine eingebaute
-Funktion: unten links aufs Profil, **Einstellungen**, dann **Fähigkeiten**, dort
-**Speicher von anderen KI-Anbietern importieren** und auf **Import starten**.
-Du bekommst einen fertigen Text, gibst ihn in ChatGPT ein, kopierst die Antwort
-und fügst sie in Claude wieder ein.
+Funktion: unten links aufs **Profilbild**, **Einstellungen**, dann
+**Gedächtnis**, dort **Speicher von anderen KI-Anbietern importieren** und auf
+**Import starten**. Du bekommst einen fertigen Text, gibst ihn in ChatGPT ein,
+kopierst die Antwort und fügst sie in Claude wieder ein.
+
+Zwei Gründe, warum du den Bereich nicht findest: Das **Gedächtnis ist
+ausgeschaltet** — dann gibt es ihn gar nicht. Oder du suchst in **Claude Code**,
+und das geht nur im Browser und in der App. Bei manchen Konten stand der Punkt
+früher unter *Fähigkeiten*.
 
 > **Zwei Dinge vorher**, sonst kommt nur die Hälfte an:
 > In **ChatGPT** unter *Personalisierung* beim Gedächtnis alle Häkchen setzen —

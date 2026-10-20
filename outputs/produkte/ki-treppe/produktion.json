@@ -29,7 +29,7 @@
      "beilagen": [
       {
        "was": "**Prompt-Bibliothek** — 39 Aufträge plus Marken-Steckbrief, nach den drei Stufen sortiert (PDF, 15 Seiten)",
-       "link": "/_blob/5599d39d453da768a836ca10c509bcab"
+       "link": "/_blob/f8c00b70de45ceb83d301ac492bb0e72"
       },
       {
        "was": "Roadmap, eine Seite zum Ausdrucken (PDF)",
@@ -147,7 +147,7 @@
      "beilagen": [
       {
        "was": "Prompt-Bibliothek, Nummer 3 — liegt schon bei 1.2 bei",
-       "link": "/_blob/5599d39d453da768a836ca10c509bcab"
+       "link": "/_blob/f8c00b70de45ceb83d301ac492bb0e72"
       }
      ],
      "beilage_im_text": true
@@ -1066,8 +1066,8 @@
    "name": "prompt-bibliothek",
    "titel": "Deine Prompt-Bibliothek",
    "pdf": true,
-   "link": "/_blob/5599d39d453da768a836ca10c509bcab",
-   "kb": 309
+   "link": "/_blob/f8c00b70de45ceb83d301ac492bb0e72",
+   "kb": 320
   },
   {
    "name": "roadmap-drei-stufen",
