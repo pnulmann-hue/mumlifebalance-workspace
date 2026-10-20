@@ -33,6 +33,8 @@ Bis 16.10.2026 als Reiter „Ideenkasten“ im Cockpit. Patricia: *„ich muss d
 
 ## Idee
 
+- **[Produkt · Aufwand mittel]** Minikurs „Dein eigenes Werkzeug" — bauen und verkaufen
+  Patricias Idee vom 19.10.2026, nachdem der KI-Tool-Workshop der Mentorin abgeglichen war. Passt genau zwischen KI-Kurs (333) und Academy: Wer Arbeitsplatz, Skill und Bot hat, kann als Nächstes etwas bauen, das er selbst verkauft. Zwei Arten unterscheiden — eines, das im Browser rechnet (Quiz, Planer, Rechner, **keine laufenden Kosten**) und eines, das die KI anruft (Rappen je Benutzung). Der Unterbau liegt schon: Prompt 33 der Prompt-Bibliothek (Werkzeug mit sicherem Schlüssel), die Netlify-Prompts 31 und 32, und der Abgleich in `outputs/produkte/ki-treppe/10-abgleich-julia-claude-kurse.md` („KI Tool Workshop"). 🚨 **Nicht vor Dezember** — bis dahin sind 61 Videos des KI-Kurses aufzunehmen, und ein neues Produkt zu planen, während ein verkaufter Kurs noch nicht ausgeliefert ist, ist genau das Muster, das den Umsatz an Launches kettet. 🚨 Nie den Trick übernehmen, mit dem fremde Seiten trotz Urheberrechts-Warnung nachgebaut werden.
 - **[Content · Aufwand klein]** Keyword-Karten (2 Folien) für die drei Werkzeuge mit laufender Automation
   Produkt-Ideen-Finder (STANDBEIN), Bio-Check (BIO), Freischaufeln (ZEITFENSTER). Nur diese drei, weil dort die Automation wirklich läuft. Bauweise B1 im Karussell-Arsenal. Höchstens ein bis zwei pro Woche.
 - **[Content · Aufwand klein]** Gewinner nach zwei Wochen wiederholen
