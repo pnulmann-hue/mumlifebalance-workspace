@@ -14,3 +14,4 @@ Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
 - [[sprechreel-pool-sichtung]]
 - [[karussell-arsenal]]
 - [[karussell-vorrat]]
+- [[ki-monat-hook-befund]]
