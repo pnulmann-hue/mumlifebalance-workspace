@@ -7,9 +7,14 @@ tags: [produkt]
 Die Projektanweisung zum Einfügen — für Lektion 3.2, wenn du ein Projekt
 einrichtest und zeigst, dass es ab dann bei jeder Aufgabe mitdenkt.
 
-**So richtest du es ein:** In Claude ein neues Projekt anlegen, Ordner
-`kochwissen` vom Rechner anhängen, den Text unten in die Projektanweisungen
-kopieren. Dann einmal fragen: *„Plan mir die nächste Woche."*
+**So richtest du es ein:** In Claude ein neues Projekt anlegen, den Text unten
+in die Projektanweisungen kopieren, und **zwei bis drei Ernährungsplan-PDFs
+ins Projekt hochladen**. Dann einmal fragen: *„Plan mir die nächste Woche."*
+
+🚨 **Einen ganzen Ordner vom Rechner anzuhängen geht im Browser nicht** — das
+gibt es nur in der Desktop-App. Fürs Vorführen reichen ein paar hochgeladene
+PDFs völlig; das Prinzip ist dasselbe. Und es ist ehrlicher, weil deine
+Teilnehmerinnen am Anfang ohnehin keine 1'800 Dateien haben.
 
 🚨 **Was im Video zu sehen sein wird:** deine Kalorien, dein Protein-Ziel und
 dass fünf beziehungsweise sechs Leute mitessen. Wenn dir das zu persönlich ist,
@@ -80,8 +85,8 @@ Du erfindest keine Rezepte. Niemals.
 Jedes Gericht, das du vorschlägst, stammt aus einer dieser drei Quellen, und
 du schreibst bei jedem dazu, woher es kommt:
 
-1. Aus meinem Ordner, den ich an dieses Projekt gehängt habe. Da liegen meine
-   eigenen Rezepte und meine Ernährungspläne. Die schaust du zuerst an.
+1. Aus den Dateien, die in diesem Projekt liegen. Das sind meine eigenen
+   Rezepte und meine Ernährungspläne. Die schaust du zuerst an.
 
 2. Von einer dieser Webseiten, und nur von diesen:
    cookidoo.ch, marcelpaa.com, streusel.ch, migusto.migros.ch,
