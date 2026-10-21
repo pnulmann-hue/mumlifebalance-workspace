@@ -17,10 +17,8 @@ E-Mails am Spielplatz, Calls zwischen Brot backen und Wäsche. Alles mit **(prü
   hier deshalb nur als ein ruhiger Satz am Schluss der Caption, nie im Hook.
 - Kursname und Preis bleiben weg, im Text steht nur „mein KI-Kurs“.
 
-**Aufruf:** In beiden Beiträgen der Link in der Bio (ein Aufruf, kein Stichwort).
-⚠️ **Vorher prüfen, ob der Bio-Link auf die Kasse des KI-Kurses zeigt.** Wenn nicht, ist das
-Feed-Stichwort STIMME die Ausweichlösung. Das führt aber erst zum Stimm-Check und kommt zwei Tage vor
-Schluss vermutlich zu spät an der Kasse an.
+**Aufruf:** In beiden Beiträgen das Stichwort **STIMME** (Stimm-Check). Patricia, 21.10.: Der Bio-Link
+zeigt nicht auf die Kasse. Der Kassenschluss steht nur noch als Hinweis im letzten Absatz.
 
 ---
 
@@ -54,7 +52,9 @@ oder mit dem Handy in der Hand. Er muss den Text nicht bebildern. Keine Kinderge
 >
 > Probier es heute aus: Nimm die eine Nachricht, die du jede Woche mehrmals schreibst, und schreib sie einmal so auf, wie du sie am liebsten hättest. Das ist kein Technik-Thema, das ist eine Viertelstunde mit dir selbst.
 >
-> In meinem KI-Kurs bauen wir genau solche Aufträge zusammen auf, bis die KI dir die Arbeit wirklich abnimmt. Die Kasse ist noch bis Freitag um 23:59 offen, der Link steht in meiner Bio.
+> Damit die KI solche Vorlagen auch in deinem Ton schreibt, muss sie wissen, wie du klingst. Kommentier STIMME, dann schick ich dir den Stimm-Check, und in rund 15 Minuten hat deine KI genau das. Im KI-Kurs, der noch bis Freitag um 23:59 offen ist, bauen wir darauf die festen Aufträge auf.
+>
+> STIMME ⬇️
 >
 > #mamabusiness #mamaimnetworkmarketing #kifuermamas #onlinebusinessmama #mumpreneur
 
@@ -88,7 +88,9 @@ nach draussen. Ohne Kindergesichter.
 >
 > Genau da setzt du an: Schreib heute Abend in einem Satz auf, was du morgen in deinen zwanzig Minuten erledigen willst, und gib der KI schon jetzt den Auftrag für den Entwurf. Morgen musst du dann nur noch auswählen und anpassen, statt bei null anzufangen. Fünf Minuten am Abend schenken dir zwanzig Minuten am nächsten Tag.
 >
-> Wie du der KI so einen Auftrag gibst, dass sie nach dir klingt und nicht nach irgendwem, bauen wir in meinem KI-Kurs zusammen auf. Heute um 23:59 schliesst die Kasse, der Link steht in meiner Bio.
+> Damit der Entwurf nach dir klingt und nicht nach irgendwem, braucht deine KI einmal deinen Ton. Kommentier STIMME, dann schick ich dir den Stimm-Check. Und falls du danach gleich weiterbauen willst: Mein KI-Kurs ist nur noch heute bis 23:59 offen.
+>
+> STIMME ⬇️
 >
 > #mamabusiness #mamaimnetworkmarketing #kifuermamas #onlinebusinessmama #mumpreneur
 
