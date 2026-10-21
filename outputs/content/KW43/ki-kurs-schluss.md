@@ -9,7 +9,7 @@ Grundlage: [[ki-monat-hook-befund]]. Die zwei stärksten Beiträge des Monats be
 Ich-Erlebnis mit Zeitpunkt, keiner von beiden mit der KI.
 
 **Nur belegte Fakten** (aus Patricias eigenen Captions und `patricia-expertise.md`): vier Kinder ·
-rund 18 Stunden pro Woche · drei Stunden Fokuszeit am Morgen · früher Reels im Auto vor dem Sportverein,
+rund 18 Stunden pro Woche · drei Stunden Fokuszeit am Morgen · früher Reels im Auto vor der Musikschule,
 E-Mails am Spielplatz, Calls zwischen Brot backen und Wäsche. Alles mit **(prüfen)** bitte gegenlesen.
 
 **Zwei bewusste Abweichungen, beide von dir gewünscht:**
@@ -22,14 +22,14 @@ zeigt nicht auf die Kasse. Der Kassenschluss steht nur noch als Hinweis im letzt
 
 ---
 
-## Reel: Do 22.10. · „Im Auto vor dem Sportverein“
+## Reel: Do 22.10. · „Im Auto vor der Musikschule“
 
 Säule 3 (Mama-Alltag) · Leserin: die Suchende · Format: B-Roll, animiert · Länge ca. 7 Sek.
 Gibt ihr mit: **einen Tipp** · Stufe 2 · Job B Story + D Verkauf
 
 **Hook-Varianten**
-1. Vor zwei Jahren hab ich meine Reels im Auto vor dem Sportverein gedreht und E-Mails am Spielplatz beantwortet. *(Geständnis)*
-2. Mein Büro war vor zwei Jahren der Parkplatz vor dem Sportverein. *(Geständnis, kürzer)*
+1. Vor zwei Jahren hab ich meine Reels im Auto vor der Musikschule gedreht und E-Mails am Spielplatz beantwortet. *(Geständnis)*
+2. Mein Büro war vor zwei Jahren der Parkplatz vor der Musikschule. *(Geständnis, kürzer)*
 3. Business als Mama hiess bei mir lange: Reels im Auto, E-Mails am Spielplatz, Calls zwischen Brot und Wäsche. *(Pain mit Ironie)*
 
 **Empfehlung:** Variante 2. Mit 11 Wörtern ist sie in sieben Sekunden ganz lesbar, und das Bild
@@ -39,12 +39,12 @@ vom Parkplatz als Büro bleibt hängen. Variante 1 passt gut als erste Caption-Z
 oder mit dem Handy in der Hand. Er muss den Text nicht bebildern. Keine Kindergesichter.
 
 **Ablauf**
-0–7 s | Bild: Clip | Text ab Bild null: „Mein Büro war vor zwei Jahren der Parkplatz vor dem Sportverein.“ (orange: „der Parkplatz vor dem Sportverein“)
+0–7 s | Bild: Clip | Text ab Bild null: „Mein Büro war vor zwei Jahren der Parkplatz vor der Musikschule.“ (orange: „der Parkplatz vor der Musikschule“)
 5–7 s | Chip mit Pop: „Was heute anders ist ⬇️“
 
 **Caption**
 
-> Vor zwei Jahren hab ich meine Reels im Auto vor dem Sportverein gedreht und E-Mails am Spielplatz beantwortet. Heute schreibt meine KI die Vorarbeit, und ich habe am Morgen drei Stunden, in denen nur Business passiert. 😅
+> Vor zwei Jahren hab ich meine Reels im Auto vor der Musikschule gedreht und E-Mails am Spielplatz beantwortet. Heute schreibt meine KI die Vorarbeit, und ich habe am Morgen drei Stunden, in denen nur Business passiert. 😅
 >
 > Wenn du gerade deine Business-Zeit aus den Ritzen zwischen Znüni, Mittagstisch und Abendessen kratzt, dann weisst du, wie sich das anfühlt: Du bist immer ein bisschen am Arbeiten und nie richtig fertig.
 >
@@ -100,7 +100,7 @@ nach draussen. Ohne Kindergesichter.
 
 | Beitrag | gibt ihr mit | berührt es | konkret mitnehmen | Grund zu speichern | Grund zu kommentieren | nur von ihr |
 |---|---|---|---|---|---|---|
-| Do 22.10. | Tipp | ja, Wiedererkennen: Arbeit in den Ritzen, nie fertig | die eine Wochen-Nachricht einmal als Vorlage aufschreiben | die Übung für den Abend, an dem sie wieder am Spielplatz tippt | ⚠️ schwach: der Aufruf geht auf die Bio, nicht auf einen Kommentar | Parkplatz vor dem Sportverein als Büro, mit Selbstironie 😅 |
+| Do 22.10. | Tipp | ja, Wiedererkennen: Arbeit in den Ritzen, nie fertig | die eine Wochen-Nachricht einmal als Vorlage aufschreiben | die Übung für den Abend, an dem sie wieder am Spielplatz tippt | ⚠️ schwach: der Aufruf geht auf die Bio, nicht auf einen Kommentar | Parkplatz vor der Musikschule als Büro, mit Selbstironie 😅 |
 | Fr 23.10. | warum mit mir / möglich | ja, Erleichterung: es braucht keine drei Stunden | am Abend der KI den Auftrag für morgen geben (5 Min. → 20 Min.) | die Abend-Routine | ⚠️ schwach, gleicher Grund | Laptop zu um halb zwölf, vier Kinder, drei Stunden |
 
 **Ehrlich zur Kommentar-Spalte:** Beide Beiträge haben einen Link als einzigen Aufruf. Kommentare
@@ -112,5 +112,6 @@ Küchentisch ✓ · Bezug zwischen den Zeilen ✓ (kein *trotzdem/aber* im Hook)
 (die KI steht in keinem Hook).
 **Kontrast-Regel:** In jeder Caption höchstens einer („nach dir … und nicht nach irgendwem“ am Fr).
 
-**Wiederholung:** Keine der Hooks steht in `hooks-schon-verwendet.md`. Die Szenen Spielplatz und
-Sportverein standen schon am 05.10. in einer Caption, aber nicht im Hook.
+**Wiederholung:** Keine der Hooks steht in `hooks-schon-verwendet.md`. Die Szene Spielplatz stand
+schon am 05.10. in einer Caption, aber nicht im Hook. Patricia, 21.10.: Der Parkplatz gehört zur
+**Musikschule** im Dorf, nicht zum Sportverein (die Kinder spielen nur Fussball).
