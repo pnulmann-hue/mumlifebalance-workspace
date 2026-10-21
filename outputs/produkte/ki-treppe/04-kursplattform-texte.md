@@ -109,16 +109,190 @@ Plattform) und einen **Beschreibungstext**, der unter dem Video steht.
 > Jetzt richtest du dir deinen eigenen Arbeitsplatz ein. Das klingt nach mehr,
 > als es ist: Du lädst dir mein Grundgerüst herunter, machst es auf und
 > schreibst weiter Deutsch.
+>
+> Am Ende dieses Moduls läuft Claude Code bei dir, dein Wissen aus Kapitel 2
+> liegt darin, und du hast eine Gedächtnis-Datei, die ab jetzt mitwächst.
 
-| Lektion | Text |
-|---|---|
-| **4.1 Keine Angst, es ist kein Programmieren** | Was Claude Code eigentlich ist und warum du kein schwarzes Fenster brauchst. Ich zeige dir die Oberfläche — sie sieht aus wie ein Chat, weil sie einer ist. |
-| **4.2 Einrichten, Schritt für Schritt** | Klick für Klick in Echtzeit mitgefilmt. Hier springe ich nichts, weil genau hier sonst die meisten aussteigen. |
-| **4.3 Dein Arbeitsplatz** | Die Ordner und wozu jeder da ist. Danach lädst du dir das leere Grundgerüst herunter und hast von Anfang an einen aufgeräumten Platz. |
-| **4.4 CLAUDE.md — das Gedächtnis** | Die eine Datei, in der alles steht, was du nie wieder erklären willst. Ich zeige dir zuerst meine eigene und dann die leere Vorlage für dich. Dazu zwei kleine Befehle für Anfang und Ende, damit nichts verloren geht, wenn du den Laptop zuklappst. |
-| **4.5 Wie du mit Claude sprichst** | Sag, was rauskommen soll, statt wie er es machen soll. Eine Sache pro Auftrag. Klingt banal und ändert alles. |
-| **4.6 Wenn es nicht klappt** | Was du machst, wenn Murks rauskommt, und warum neu ansetzen fast immer besser ist als nachbessern. Dazu die drei Fehler, die am Anfang alle machen. |
-| **4.7 Zusammenfassung und Checkliste** | Das Wichtigste aus Modul 4 und die Checkliste dazu. |
+---
+
+### 4.1 · Keine Angst, es ist kein Programmieren
+
+**In dieser Lektion:** Was Claude Code eigentlich ist — und was du dafür können
+musst.
+
+**Das Wichtigste in Kürze:**
+
+- Du schreibst weiter Deutsch, in ganzen Sätzen. Das ändert sich nicht.
+- Das schwarze Fenster, das du auf Screenshots gesehen hast, brauchst du hier
+  nicht. Wir arbeiten in einer App, die aussieht wie ein Chat.
+- Neu ist nicht, *was* sie kann, sondern **wo** sie arbeitet: an einem Platz,
+  der dir gehört und der bleibt.
+- Du brauchst einen Rechner, ein Abo und zwanzig Minuten. Kein Vorwissen — wenn
+  du weisst, was ein Ordner ist, reicht das.
+
+---
+
+### 4.2 · Einrichten, Schritt für Schritt
+
+**In dieser Lektion:** Die Installation, Klick für Klick in Echtzeit.
+
+**Das Wichtigste in Kürze:**
+
+- Vier Schritte: herunterladen, anmelden, Ordner wählen, erste Frage stellen.
+- **Leg den Ordner nicht in OneDrive, iCloud oder Dropbox.** Was dort liegt,
+  wird überallhin kopiert — auch das, was du später nicht kopiert haben willst.
+  Kapitel 10 kommt darauf zurück.
+- Such dir den Platz vorher aus, damit du während der Installation nicht
+  suchen musst.
+- Plan zwanzig Minuten ohne Unterbrechung ein.
+
+**Wenn etwas klemmt:** Unter dem Video liegt eine Liste mit den Fragen, die
+beim Einrichten am häufigsten kommen — und was ich dazu sage.
+
+---
+
+### 4.3 · Dein Arbeitsplatz
+
+**In dieser Lektion:** Die fünf Ordner, das Grundgerüst, und was du aus
+Kapitel 2 mitbringst.
+
+**Das Wichtigste in Kürze:**
+
+- Fünf Ordner, jeder mit einer Aufgabe: `context` (dein Wissen) · `outputs`
+  (was rauskommt) · `reference` (Material von anderen) · `scripts` (kleine
+  Helfer) · `plans` (was du vorhast).
+- **Der wichtigste Unterschied: `context` ist deins, `reference` ist von
+  anderen.** Sag ihr in deiner Gedächtnis-Datei, dass sie aus `reference` nie
+  wörtlich abschreibt — sonst landet fremder Text in deiner Caption.
+- Du legst nichts selbst an. Das Grundgerüst liegt unter diesem Video, fertig
+  mit allen Ordnern und einer Gedächtnis-Datei zum Ausfüllen.
+- **Vier Dateien aus Kapitel 2 kommen in `context`:** dein Business-Brief
+  (2.3), was bei der Buch-Technik herauskam (2.4), deine Textproben (2.5) und
+  deine Floskel-Liste (2.2). Je eine eigene Datei, nicht alles in eine.
+- Liegt etwas als Word oder PDF vor, sag einfach: *„Mach daraus eine
+  Markdown-Datei."*
+
+**Der erste Auftrag — zum Kopieren:**
+
+> Schau dir alles an, was in context liegt. Sag mir zuerst, was du daraus schon
+> über mich weisst.
+>
+> Dann stell mir eine Frage nach der anderen zu dem, was dir noch fehlt — und
+> schreib meine Antworten selbst in die passende Datei.
+
+Erst anschauen, dann fragen. Sonst fragt sie dich nach Dingen, die längst in
+deinem Brief stehen.
+
+---
+
+### 4.4 · CLAUDE.md — das Gedächtnis
+
+**In dieser Lektion:** Die eine Datei, in der steht, was du nie wieder erklären
+willst.
+
+**Das Wichtigste in Kürze:**
+
+- Drei Dinge gehören hinein: wer du bist (ein Verweis auf deinen Business-Brief
+  reicht), wie du arbeitest (deine Regeln, deine Verbote, dein Ton) und was wo
+  liegt.
+- **Fang mit fünf Zeilen an.** Du schreibst nicht alles auf einmal hinein — sie
+  wächst von selbst.
+- Die Regel, nach der sie wächst: **Was dich dreimal geärgert hat, gehört als
+  Regel hinein.** Sonst ärgert es dich ein viertes Mal.
+- Meine eigene ist über Monate gewachsen, nicht an einem Nachmittag entstanden.
+  Jede Regel darin kommt aus einem echten Fehler.
+
+**Die leere Vorlage liegt unter diesem Video.**
+
+---
+
+### 4.4b · Damit nichts verloren geht
+
+**In dieser Lektion:** Wie du deinen Arbeitsplatz sicherst — und was GitHub
+eigentlich ist.
+
+**Das Wichtigste in Kürze:**
+
+- Es gibt drei Arten, etwas zu verlieren: das **Gespräch** (Fenster zu, weg —
+  dagegen hilft der Arbeitsplatz), die **Datei** (einmal überschrieben) und den
+  **Rechner** (Festplatte kaputt, Laptop weg).
+- Gegen die letzten beiden hilft **GitHub**: ein Ort im Netz, an dem dein
+  Arbeitsplatz zusätzlich liegt — und der sich merkt, was sich wann geändert
+  hat. Wie eine Cloud für Ordner, die ein Gedächtnis hat.
+- **Git und GitHub sind zwei verschiedene Dinge.** Git ist ein kleines Programm
+  auf deinem Rechner, das mitschreibt. GitHub ist der Ort im Netz. Wenn später
+  die Meldung kommt „Git ist erforderlich", weisst du jetzt, was gemeint ist.
+- Du richtest es nicht selbst ein. Du beschreibst, was du willst — sie macht
+  den Rest.
+- 🚨 **Beim Anlegen fragt GitHub: öffentlich oder privat.** Öffentlich heisst
+  wirklich öffentlich, jeder kann hineinschauen. **Du nimmst privat.** Frag
+  ausdrücklich danach.
+
+**Zum Kopieren:**
+
+> Ich will meinen Arbeitsplatz bei GitHub sichern. Ich habe noch nie damit
+> gearbeitet.
+>
+> Führ mich Schritt für Schritt durch, und sag mir bei jedem Schritt, was ich
+> anklicken muss. Das Verzeichnis soll privat sein, nicht öffentlich.
+
+---
+
+### 4.5 · Wie du mit Claude sprichst
+
+**In dieser Lektion:** Drei Gewohnheiten, die dir viel Nachbessern ersparen.
+
+**Das Wichtigste in Kürze:**
+
+- **Sag, was rauskommen soll — nicht, wie sie es machen soll.** Sie kennt den
+  Weg meistens besser als du.
+- **Ein Ding pro Auftrag.** Zwei Aufgaben in einem Satz werden beide halb
+  erledigt.
+- **Lass sie fragen.** Wenn etwas unklar ist, soll sie nachhaken statt zu
+  raten. Schreib das in deine Gedächtnis-Datei, dann macht sie es von selbst.
+
+**Der Unterschied an einem Beispiel:** *„Mach eine Tabelle mit drei Spalten"*
+bekommt genau das — auch wenn es für deine Frage nicht passt. *„Ich will auf
+einen Blick sehen, was diese Woche offen ist"* bekommt einen Vorschlag, zu dem
+du Ja oder Nein sagst.
+
+---
+
+### 4.6 · Wenn es nicht klappt
+
+**In dieser Lektion:** Was du machst, wenn Murks rauskommt.
+
+**Das Wichtigste in Kürze:**
+
+- **Neu ansetzen schlägt nachbessern.** Wenn das Ergebnis danebenliegt, ist die
+  Versuchung gross, es mit drei Nachfragen geradezubiegen. Meistens wird es
+  dabei schlechter.
+- Mach ein neues Gespräch auf, schreib den Auftrag **um** statt ihn zu
+  ergänzen, und leg ein Beispiel dazu, wie gut aussieht.
+- Die drei Fehler am Anfang: **zu viel auf einmal** (drei Aufgaben, alle drei
+  halb) · **zu wenig Kontext** (sie weiss nicht, für wen der Text ist) ·
+  **endloses Gespräch** (nach dreissig Runden widerspricht sie sich).
+- Und der Satz, der hier am meisten zählt: **Es liegt am Auftrag, nicht an
+  dir.** Einen Auftrag kannst du ändern.
+
+---
+
+### 4.7 · Zusammenfassung und Checkliste
+
+**In dieser Lektion:** Was jetzt bei dir steht, bevor wir an die Skills gehen.
+
+**Das nimmst du mit:**
+
+- **Einen Arbeitsplatz** — Claude Code läuft, die Ordner stehen, dein Wissen
+  liegt darin.
+- **Ein Gedächtnis** — deine erste Fassung der CLAUDE.md.
+- **Drei Gewohnheiten** — am Ergebnis entlang, ein Ding pro Auftrag, fragen
+  lassen.
+
+🚨 **Wenn Claude Code bei dir noch nicht läuft, mach hier nicht weiter.** Alles
+ab Modul 5 setzt einen laufenden Arbeitsplatz voraus.
+
+**Die Checkliste zum Abhaken liegt unter diesem Video.**
 
 ---
 
@@ -260,7 +434,8 @@ heraus.
 | 2.3b | Prompt-Bibliothek, Nummer 3 — liegt schon bei 1.2 bei |
 | 2.4 | Der Buch-Technik-Auftrag zum Kopieren |
 | 3.3 | Auftrag für den ersten Cowork-Bot |
-| 4.3 | **Arbeitsplatz-Grundgerüst** (ZIP mit Ordnern, `CLAUDE.md`, `prime`, `kurse-sync`, `freebies-sync`, `handy`) |
+| 4.2 | **Setup-FAQ** — „Wenn beim Einrichten etwas klemmt" (PDF) ✅ gebaut |
+| 4.3 | **Arbeitsplatz-Grundgerüst** — ZIP mit den fünf Ordnern (je eine Liesmich), `CLAUDE.md` zum Ausfüllen, `/start` und `/shutdown` in entschlackter Fassung ✅ gebaut, liegt in `Downloads/Mein-Business-Grundgeruest.zip` · Quelle: `scripts/ki-kurs/grundgeruest-bauen.py` |
 | 4.4 | `CLAUDE.md`-Vorlage einzeln |
 | 5.2 | Beispiel-Skill Kochplan (die auseinandergenommene Datei) |
 | 5.8 | Leeres Skill-Gerüst |

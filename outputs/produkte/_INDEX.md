@@ -141,6 +141,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[floskel-liste-vorlage]]
 - [[prompt-bibliothek]]
 - [[roadmap-drei-stufen]]
+- [[setup-faq]]
 - [[sicherheits-checkliste]]
 - [[skill-geruest]]
 
