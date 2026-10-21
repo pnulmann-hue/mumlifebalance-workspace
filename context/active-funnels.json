@@ -278,7 +278,7 @@
       },
       "ac_integration": {
         "tags": {},
-        "automation_id": null,
+        "automation_id": 45,
         "notes": "KEIN AC-FUNNEL · TODO: AC-Automation + Mail-Sequenz",
         "eintrag_tag_name": "0€ Story-Challenge + Story-Challenge",
         "eintrag_tag_id": 69,
@@ -290,9 +290,12 @@
         "eintrag_tag_notiz": "Zwei Tags für dasselbe Freebie. Beide führen in Automation „0€ Story Challenge“ — die Zahl vereinigt die Personen, damit niemand doppelt zählt. Zusammenlegen in AC ist offen: multientry=1, ein neuer Tag würde die Mails erneut auslösen."
       },
       "mail_sequenz": {
-        "status": "GEPLANT — noch nicht gebaut",
-        "design_template": "context/mail-design-onlinebusiness.html",
-        "geplant": 6
+        "status": "ENTWORFEN 21.10.2026 — noch nicht in AC eingebaut",
+        "mails": 8,
+        "quelle": "scripts/story-challenge/mails-bauen.py",
+        "ausgabe": "outputs/funnels/story-challenge-nurture/",
+        "pitch": "Instagram-Kundenmaschine 333 (Tag 10/12/15), danach Engine Loop 1 (Automation 72)",
+        "ausstieg": "Ziel: Tag 39 Instagram-Kundenmaschine gekauft"
       },
       "content_hinweise": {
         "pillar": "Instagram-Strategie für NM",
