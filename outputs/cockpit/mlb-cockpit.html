@@ -1022,6 +1022,9 @@
   .mentwurf .mailkopf { background: var(--orange-soft); border-radius: 8px 8px 0 0; }
   .mentwurfinfo { padding: 8px 12px 0; font-size: 12.5px; color: var(--ink-soft); line-height: 1.55; }
   .mentwurfknoepfe { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 12px; }
+  /* @@mentwurfnotiz-css */
+  .mentwurfnotiz { padding: 0 12px 10px; }
+  .mentwurfnotiz summary { cursor: pointer; font-size: 13px; font-weight: 600; color: var(--teal); }
   .mentwurfvorschau { display: block; width: 100%; height: 560px; border: 0;
     border-top: 1px solid var(--line); background: #fff; border-radius: 0 0 8px 8px; }
   .dneu { color: var(--orange); font-weight: 700; }
@@ -9579,6 +9582,9 @@
   function mailListe(nummer) {
     entwuerfeJeHolen(nummer);
     var neu = entwuerfeFuer(nummer);
+    /* @@eigene-zuerst: neue Fassungen verdrängen den AC-Abzug oben */
+    var eigene = neu.filter(function (e) { return e.quelle !== "activecampaign"; });
+    if (eigene.length) neu = eigene;
     if (!neu.length) {
       var st = entwurfJe[String(nummer)];
       var hinweis = !db ? "" :
@@ -9609,7 +9615,16 @@
           '<button class="btn primary" data-kopie="html">HTML kopieren</button>' +
           '<button class="btn" data-kopie="betreff">Betreff kopieren</button>' +
           (e.preheader ? '<button class="btn" data-kopie="preheader">Vorschautext kopieren</button>' : "") +
-          '</div><iframe class="mentwurfvorschau" sandbox="" title="Vorschau der Mail"></iframe></div>';
+          /* @@text-kopieren */
+          (e.text ? '<button class="btn" data-kopie="text">Text kopieren</button>' : "") +
+          (e.betreff2 ? '<button class="btn" data-kopie="betreff2">Zweiten Betreff kopieren</button>' : "") +
+          '</div>' +
+          /* @@notiz-aufklappen */
+          (e.notiz ? '<details class="mentwurfnotiz"><summary>Notiz für dich</summary><pre class="mailtext">' +
+            esc(e.notiz) + '</pre></details>' : "") +
+          (e.text ? '<details class="mentwurfnotiz"><summary>Als Text lesen</summary><pre class="mailtext">' +
+            esc(e.text) + '</pre></details>' : "") +
+          '<iframe class="mentwurfvorschau" sandbox="" title="Vorschau der Mail"></iframe></div>';
       }).join("") +
       (ausAC ? '</div>'
              : '<p class="note" style="margin-top:16px">Und das steckt heute in ActiveCampaign:</p></div>') +
