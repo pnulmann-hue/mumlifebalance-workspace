@@ -1,0 +1,103 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet"><style>@page { size: A4; margin: 17mm 16mm 20mm; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: #0c1c30;
+  font-family: 'Source Sans 3', sans-serif; font-size: 11.4pt; line-height: 1.58; }
+.kopf { border-bottom: 3px solid #dc822e; padding-bottom: 9px; margin-bottom: 22px;
+  display: flex; align-items: baseline; gap: 10px; }
+.kopf .marke { font-family: 'Philosopher', serif; font-size: 13pt; color: #12828c; }
+.kopf .reihe { font-size: 8.6pt; letter-spacing: .14em; text-transform: uppercase;
+  color: #29556d; opacity: .75; margin-left: auto; }
+h1 { font-family: 'Philosopher', serif; font-size: 25pt; line-height: 1.16;
+  color: #0c1c30; margin: 0 0 14px; font-weight: 700; }
+h2 { font-family: 'Philosopher', serif; font-size: 16pt; color: #12828c;
+  margin: 26px 0 8px; font-weight: 700; break-after: avoid; }
+h3 { font-family: 'Philosopher', serif; font-size: 13pt; color: #29556d;
+  margin: 18px 0 6px; font-weight: 700; break-after: avoid; }
+h4 { font-size: 11.4pt; color: #29556d; margin: 14px 0 4px; break-after: avoid; }
+p { margin: 0 0 10px; }
+strong { color: #0c1c30; font-weight: 600; }
+code { font-family: 'Source Sans 3', monospace; background: #f1ecdd;
+  border-radius: 4px; padding: 1px 5px; font-size: 10.4pt; }
+pre { background: #f1ecdd; border-left: 3px solid #12828c;
+  border-radius: 0 7px 7px 0; padding: 11px 14px; font-size: 10pt; line-height: 1.5;
+  white-space: pre-wrap; overflow-wrap: anywhere; margin: 0 0 12px; }
+hr { border: 0; border-top: 1px solid rgba(12,28,48,.14); margin: 20px 0; }
+ul { margin: 0 0 12px; padding-left: 0; list-style: none; }
+ul.punkte li { position: relative; padding-left: 19px; margin-bottom: 5px; }
+ul.punkte li::before { content: ""; position: absolute; left: 3px; top: .62em;
+  width: 6px; height: 6px; border-radius: 50%; background: #dc822e; }
+ul.haken li { position: relative; padding-left: 30px; margin-bottom: 9px; break-inside: avoid; }
+ul.haken .kasten { position: absolute; left: 0; top: .18em; width: 15px; height: 15px;
+  border: 1.8px solid #12828c; border-radius: 4px; }
+blockquote { background: #f1ecdd; border-left: 3px solid #dc822e;
+  border-radius: 0 8px 8px 0; padding: 12px 15px; margin: 0 0 14px; break-inside: avoid; }
+blockquote p:last-child { margin-bottom: 0; }
+table { width: 100%; border-collapse: collapse; margin: 0 0 14px; font-size: 10.6pt; }
+th { text-align: left; background: #12828c; color: #fff; font-weight: 600; padding: 7px 10px; }
+td { padding: 7px 10px; border-bottom: 1px solid rgba(12,28,48,.12); vertical-align: top; }
+tr:nth-child(even) td { background: rgba(241,236,221,.5); }
+.fuss { margin-top: 26px; padding-top: 9px; border-top: 1px solid rgba(12,28,48,.14);
+  font-size: 8.8pt; color: #29556d; opacity: .8; }</style></head><body><div class="kopf"><span class="marke">Mum Life Balance</span><span class="reihe">Deine KI-Mitarbeiterin</span></div><h1>Wenn beim Einrichten etwas klemmt</h1>
+<p>Die Fragen, die beim Einrichten am häufigsten kommen — und was ich dazu sage. Beilage zu Kapitel 4.</p>
+<p>Wenn deine Frage nicht dabei ist: <strong>stell sie Claude selbst.</strong> Das ist keine Ausrede, sondern der wichtigste Handgriff in diesem Kurs. Schreib einfach hinein, was du siehst — auch die Fehlermeldung im Wortlaut — und frag, was das heisst.</p>
+<hr>
+<h2>Bevor du anfängst</h2>
+<p><strong>Was brauche ich überhaupt?</strong></p>
+<p>Einen Rechner, ein Abo und zwanzig Minuten. Welches Abo und was es kostet, steht in Lektion 1.4 — ich rechne dort vor, was ich selbst zahle und wofür.</p>
+<p><strong>Was ist der Unterschied zwischen Claude, Cowork und Claude Code?</strong></p>
+<p>Es sind drei Stufen derselben Sache, und du hast sie in den Kapiteln 2, 3 und 4 der Reihe nach kennengelernt:</p>
+<p>Im <strong>Chat</strong> schreibst du, sie antwortet. Alles, was sie wissen soll, tippst du hinein. In <strong>Cowork</strong> arbeitet sie mit deinen Dateien und hängt an deiner Planung. In <strong>Claude Code</strong> hast du einen eigenen Arbeitsplatz auf deinem Rechner, der bleibt und wächst — und sie darf dort deine Programme benutzen.</p>
+<p><strong>Ich selbst arbeite nur mit Claude Code.</strong> Die beiden Stufen davor zeige ich dir trotzdem, und zwar aus zwei Gründen: Du verstehst damit, was ein guter Auftrag ist, bevor es technisch wird. Und wenn dir eine der beiden reicht, hast du trotzdem etwas gewonnen — das habe ich in Lektion 3.4 so gemeint, wie ich es gesagt habe.</p>
+<p><strong>Brauche ich das schwarze Fenster, von dem alle reden?</strong></p>
+<p>Nein. Wir arbeiten die ganze Zeit in der normalen App. Das Terminal gibt es, aber du brauchst es für nichts, was in diesem Kurs vorkommt.</p>
+<hr>
+<h2>Einrichten</h2>
+<p><strong>Macht es einen Unterschied, wo der Ordner liegt?</strong></p>
+<p>Für die Technik nicht. Für dich schon: Nimm einen Platz, den du wiederfindest, und leg ihn <strong>nicht</strong> in einen Ordner, der automatisch in die Cloud kopiert wird — also nicht in OneDrive, iCloud oder Dropbox.</p>
+<p>Der Grund dafür kommt in Kapitel 10 ausführlich: In deinem Arbeitsplatz landen mit der Zeit Dinge, die nirgendwohin kopiert werden sollen. Wenn der ganze Ordner in der Cloud liegt, hebelt das jede spätere Ausschlussliste aus.</p>
+<p><strong>Muss ich die Ordnerstruktur genau so übernehmen?</strong></p>
+<p>Nein, aber ich empfehle es dir für den Anfang. Die fünf Ordner — <code>context</code>, <code>outputs</code>, <code>reference</code>, <code>scripts</code>, <code>plans</code> — haben je eine Aufgabe, und ab Kapitel 5 gehe ich davon aus, dass sie so heissen. Wenn du später merkst, dass du etwas anders brauchst, änderst du es.</p>
+<p><strong>Ich habe zwei Geschäfte. Zwei Ordner oder einer?</strong></p>
+<p>Zwei. Und in jeder Gedächtnis-Datei steht dann, worum es in diesem Ordner geht. Sonst mischt sie dir die beiden Welten, und du merkst es erst am fertigen Text.</p>
+<p><strong>Es kommt eine Meldung, dass Git fehlt.</strong></p>
+<p>Git ist ein kleines Hilfsprogramm, das deine Änderungen mitschreibt. Auf einem Mac ist es meistens schon da, unter Windows musst du es einmal installieren. Die Meldung sagt dir in der Regel selbst, woher — und wenn nicht, zeig sie Claude und frag.</p>
+<p><strong>Brauche ich GitHub?</strong></p>
+<p>Nicht für diesen Kurs. GitHub ist ein Ort im Netz, an dem dein Arbeitsplatz zusätzlich liegt — praktisch, wenn der Laptop kaputtgeht oder du an zwei Rechnern arbeitest. Du kannst das jederzeit später einrichten.</p>
+<p>🚨 Wenn du es tust: <strong>Ein öffentliches Repository ist wirklich öffentlich.</strong> Jeder kann hineinschauen. Was dort nicht hingehört, steht in Kapitel 10.</p>
+<hr>
+<h2>Wenn es klemmt</h2>
+<p><strong>Ein Befehl wird nicht erkannt.</strong></p>
+<p>Prüf zuerst, ob du im richtigen Ordner bist — die Befehle aus dem Grundgerüst gibt es nur dort. Steht oben in der App ein anderer Ordnername, wähl den richtigen aus.</p>
+<p><strong>Sie findet meinen Business-Brief nicht.</strong></p>
+<p>Dann liegt er nicht dort, wo sie sucht, oder die Gedächtnis-Datei sagt ihr nicht, dass es ihn gibt. Beides prüfst du am schnellsten, indem du fragst: <em>„Welche Dateien liegen in context, und was steht in meiner Gedächtnis-Datei über meinen Business-Brief?"</em></p>
+<p><strong>Das Ergebnis ist Murks.</strong></p>
+<p>Fang ein neues Gespräch an und schreib den Auftrag neu, statt ihn mit Nachfragen geradezubiegen. Warum das besser ist, steht in Lektion 4.6.</p>
+<p><strong>Mitten in der Arbeit kommt eine Rückfrage, ob sie etwas darf.</strong></p>
+<p>Das ist Absicht. Sie fragt, bevor sie etwas auf deinem Rechner ändert. Lies nach, was sie vorhat, und sag ja oder nein. Wenn dich dieselbe Frage zum dritten Mal nervt, erlaubst du sie dauerhaft — dann kommt sie nicht wieder.</p>
+<hr>
+<h2>Deine Dateien</h2>
+<p><strong>Kann ich an zwei Rechnern arbeiten?</strong></p>
+<p>Ja, aber dein Arbeitsplatz liegt auf einem davon. Für den zweiten brauchst du GitHub oder du kopierst den Ordner. Fang mit einem an.</p>
+<p><strong>Soll ich meine Videos in den Arbeitsplatz legen?</strong></p>
+<p>Nur, wenn du wirklich damit arbeiten willst — Videos sind gross und füllen dir die Festplatte. Wenn es dir um das gesprochene Wort geht, lass sie transkribieren und behalte nur den Text. Der ist ein Tausendstel so gross und durchsuchbar.</p>
+<p><strong>Was passiert mit meinen Daten?</strong></p>
+<p>Dein Arbeitsplatz liegt auf deinem Rechner. Was sie liest, um deine Frage zu beantworten, geht zur Beantwortung an Anthropic — wie bei jeder Frage im Chat auch. Was dort nichts zu suchen hat, gehört gar nicht erst in den Arbeitsplatz. Kapitel 10 geht das in Ruhe durch.</p>
+<p><strong>Kann ich einschränken, worauf sie zugreifen darf?</strong></p>
+<p>Ja. Sie sieht nur den Ordner, den du ausgewählt hast — nicht deinen ganzen Rechner. Und innerhalb davon kannst du einzelne Ordner ausschliessen. Auch das steht in Kapitel 10.</p>
+<hr>
+<h2>Was ich oft gefragt werde</h2>
+<p><strong>Muss ich etwas vom Programmieren verstehen?</strong></p>
+<p>Nein. Du schreibst weiter Deutsch, in ganzen Sätzen. Wenn du weisst, was ein Ordner ist, reicht das — das meine ich genau so, wie es dasteht.</p>
+<p><strong>Ich habe Angst, etwas kaputtzumachen.</strong></p>
+<p>Kannst du, deshalb fängst du mit etwas an, bei dem nichts kaputtgehen kann. Genau darum ist der erste Helfer in Kapitel 3 ein Haushalts-Bot und kein Werkzeug für deine Kundinnen.</p>
+<p><strong>Wie lange dauert das alles?</strong></p>
+<p>Das Einrichten zwanzig Minuten. Bis es sich wirklich lohnt, ein paar Wochen — weil dein Arbeitsplatz erst dann genug über dich weiss. Meine Gedächtnis-Datei ist über Monate gewachsen, nicht an einem Nachmittag entstanden.</p>
+<p><strong>Ich komme nicht weiter und finde die Antwort nirgends.</strong></p>
+<p>Dann schreib mir. Du hast den Kurs gekauft, nicht ein Video-Paket.</p>
+<hr>
+<h2>Die wichtigste Gewohnheit</h2>
+<p>Wenn du eine Fehlermeldung siehst, lies sie nicht nur — <strong>zeig sie ihr.</strong> Kopier den Wortlaut hinein und frag, was er bedeutet und was du tun sollst.</p>
+<p>Das klingt zu einfach, um die Antwort auf alles zu sein. Ist es aber bei den meisten Fragen, die hier oben stehen.</p>
+<hr>
+<h2>🔗 Verwandte Notizen</h2>
+<ul class="punkte"><li>[[03-inhaltsverzeichnis]]</li><li>[[claude-md-vorlage]]</li><li>[[checkliste-modul-4]]</li></ul><div class="fuss">Patricia Ulmann · mumlifebalance.ch — für Teilnehmerinnen des Kurses. Bitte nicht weitergeben.</div></body></html>
