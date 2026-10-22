@@ -33,9 +33,10 @@ wird.** Der Satz dafür steht in fast jedem Auftrag hier drin.
 ## Dein Steckbrief — einmal ausfüllen, immer dabei
 
 Sobald die KI etwas für dich **baut** — eine Seite, ein Cover, ein kleines
-Werkzeug — fragt sie nach deinen Farben und Schriften. Schreib sie einmal hier
-auf und häng den Block an jeden Bau-Auftrag an. Dann sieht alles nach dir aus,
-ohne dass du es jedes Mal erklärst.
+Werkzeug — braucht sie Farben und Schriften. **Sie fragt dich nicht danach.**
+Sie nimmt, was ihr passend vorkommt, und das ist dann irgendein Blau. Schreib
+deine Werte einmal hier auf und häng den Block an jeden Bau-Auftrag an. Dann
+sieht alles nach dir aus, ohne dass du es jedes Mal erklärst.
 
 ```
 Meine Farben:

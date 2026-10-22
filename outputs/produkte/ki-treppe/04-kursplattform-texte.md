@@ -1622,7 +1622,8 @@ heraus.
 | 1.2 | Roadmap, eine Seite zum Ausdrucken (PDF) |
 | 1.3 | Begriffe-Cheatsheet (PDF) |
 | 1.5 · 2.7 · 3.5 · 4.7 · 5.8 · 6.6 · 7.8 · 8.5 · 9.7 | Checkliste je Modul (PDF) |
-| 2.2 | Floskel-Liste als leere Vorlage für den eigenen Arbeitsplatz |
+| **2.2 · 2.7** | **Meine KI-Blackliste** — die gefüllte Liste aus Drive, die sie im Video verspricht („prüfe zuerst mit diesem Dokument“). Google Doc im Kursordner ✅ |
+| 2.2 | Floskel-Liste als leere Vorlage für den eigenen Arbeitsplatz — zum Weiterführen mit eigenen Funden |
 | 2.3 | Business-Brief-Vorlage |
 | 2.3b | Prompt-Bibliothek, Nummer 3 — liegt schon bei 1.2 bei |
 | 2.4 | Der Buch-Technik-Auftrag zum Kopieren |

@@ -1,7 +1,3 @@
----
-tags: [produkt]
----
-
 # Checkliste Modul 6 · Bots
 
 Geh das hier durch, bevor du weitermachst. Was noch offen ist, holst du jetzt

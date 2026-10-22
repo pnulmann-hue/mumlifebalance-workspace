@@ -1,7 +1,3 @@
----
-tags: [produkt]
----
-
 # Die Wörter, die dauernd vorkommen
 
 Zum Ausdrucken und neben den Laptop hängen. Keine Fachsprache, nur das, was du

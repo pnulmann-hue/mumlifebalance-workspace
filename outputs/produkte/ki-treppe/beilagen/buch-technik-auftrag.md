@@ -1,7 +1,3 @@
----
-tags: [produkt]
----
-
 # Die Buch-Technik — der Auftrag zum Kopieren
 
 Wenn du vor dem leeren Business-Brief sitzt und nicht weisst, wo anfangen:
