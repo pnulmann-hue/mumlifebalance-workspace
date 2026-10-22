@@ -3,6 +3,9 @@ name: dein-skill-name
 description: "Ein Satz, woran die KI erkennt, wann dieser Skill dran ist."
 ---
 
+<!-- Ausgeliefert wird die Google-Doc-Fassung im Drive-Kursordner (Kennung in context/Kurse/aktuelle kurse/Easy-KI/beilagen-drive.json). Diese Datei ist die Inhalts-Quelle — eine Aenderung hier aendert nichts an dem, was die Teilnehmerin oeffnet. Doc nachziehen. -->
+
+
 # [Name des Skills]
 
 > Leeres Gerüst. Ersetze alles in eckigen Klammern.

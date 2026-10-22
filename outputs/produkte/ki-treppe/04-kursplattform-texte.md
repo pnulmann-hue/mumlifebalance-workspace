@@ -115,6 +115,10 @@ begleiten:** die Roadmap auf einer Seite zum Ausdrucken, und die
 **Prompt-Bibliothek** mit allen Aufträgen aus diesem Kurs, nach den drei Stufen
 sortiert. Die Bibliothek findest du ab hier hinter jedem Modul wieder.
 
+Die Bibliothek ist ein Google-Dokument, kein PDF — du sollst deine eigenen
+Farben und Schriften hineinschreiben und später eigene Aufträge ergänzen.
+Mach dir davon zuerst eine eigene **Kopie** — oben links *Datei → Kopie erstellen*. Dann kannst du hineinschreiben, und die Vorlage bleibt stehen. Das gilt für jede Beilage in diesem Kurs, die ein Dokument ist.
+
 **Lad sie dir jetzt herunter und leg sie dann zur Seite.** Ohne das Video
 dazu sagt dir ein Auftrag wenig — er sieht aus wie ein Satz, den man auch
 selbst hätte tippen können. Erst das Video, dann der passende Auftrag. In
@@ -206,7 +210,9 @@ fragst du sie. Nicht mich, nicht Google, nicht die Suchmaschine — sie. Sie
 kennt sich mit sich selbst am besten aus, und sie erklärt es dir so oft, bis du
 es verstanden hast. Das ist der Handgriff, der dich durch jedes Modul trägt.
 
-**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
+**📎 Die Checkliste liegt unter diesem Video — ein Dokument für alle
+Module.** Mach dir einmal eine Kopie (*Datei → Kopie erstellen*), dann
+hakst du darin durch den ganzen Kurs ab.
 
 ---
 
@@ -260,7 +266,7 @@ es verstanden hast. Das ist der Handgriff, der dich durch jedes Modul trägt.
   weniger — er kostet dich Nähe.
 
 **📎 Die Floskel-Liste als leere Vorlage liegt unter diesem Video.** Sie wächst
-mit und zieht in Modul 4 in deinen Arbeitsplatz.
+mit und zieht in Modul 4 in deinen Arbeitsplatz. Mach dir davon zuerst eine eigene **Kopie** — oben links *Datei → Kopie erstellen*. Dann kannst du hineinschreiben, und die Vorlage bleibt stehen.
 
 ---
 
@@ -280,7 +286,7 @@ mitgeht.
 - **Du schreibst ihn nicht aus dem Kopf.** Die nächste Lektion zeigt, wie du
   ihn gefüllt bekommst, ohne vor einem leeren Blatt zu sitzen.
 
-**📎 Die Business-Brief-Vorlage liegt unter diesem Video.**
+**📎 Die Business-Brief-Vorlage liegt unter diesem Video.** Mach dir davon zuerst eine eigene **Kopie** — oben links *Datei → Kopie erstellen*. Dann kannst du hineinschreiben, und die Vorlage bleibt stehen.
 
 ---
 
@@ -333,7 +339,8 @@ stundenlang zu tippen.
   dort stehen die Dinge, die du für selbstverständlich hältst — und die kein
   Mensch von aussen wissen kann.
 
-**📎 Der Auftrag zum Kopieren liegt unter diesem Video.**
+**📎 Der Auftrag zum Kopieren liegt unter diesem Video.** Du kannst ihn direkt
+aus dem Dokument herauskopieren.
 
 ---
 
@@ -386,7 +393,8 @@ Mal wieder eintippst.
 diese Dateien in deinen eigenen Arbeitsplatz. Wenn hier etwas fehlt, fehlt es
 dort auch.
 
-**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
+**📎 Die Checkliste liegt unter diesem Video.** Es ist dieselbe Datei
+wie nach Modul 1 — du hakst einfach weiter ab.
 
 ---
 
@@ -453,7 +461,8 @@ kaputtgehen kann.
   deinem Rechner, muss der aber an sein.
 
 **📎 Der Auftrag für den ersten Bot liegt unter diesem Video — zum Kopieren und
-Anpassen.**
+Anpassen.** Willst du deine Fassung behalten, mach dir eine Kopie
+(*Datei → Kopie erstellen*).
 
 ---
 
@@ -486,7 +495,8 @@ warum das für dich in Ordnung sein darf.
 - **Einen Bot** — gebaut, ohne eine Zeile Code.
 - **Eine Entscheidung** — du weisst, ob du die nächste Stufe willst.
 
-**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
+**📎 Die Checkliste liegt unter diesem Video.** Es ist dieselbe Datei
+wie nach Modul 1 — du hakst einfach weiter ab.
 
 ---
 
@@ -645,7 +655,8 @@ willst.
 - Meine eigene ist über Monate gewachsen, nicht an einem Nachmittag entstanden.
   Jede Regel darin kommt aus einem echten Fehler.
 
-**Die leere Vorlage liegt unter diesem Video.**
+**📎 Die Anleitung mit der leeren Vorlage liegt unter diesem Video.** Mach dir
+davon zuerst eine eigene **Kopie** — oben links *Datei → Kopie erstellen*.
 
 ---
 
@@ -952,7 +963,8 @@ müden Tag.
 - **Eine Gewohnheit** — dreimal korrigiert, dann eine Regel.
 
 **📎 Unter diesem Video liegen die Checkliste und ein leeres Skill-Gerüst mit
-allen sechs Teilen.**
+allen sechs Teilen.** Die Checkliste ist dieselbe Datei wie bisher. Vom
+Gerüst machst du dir eine Kopie (*Datei → Kopie erstellen*) und füllst sie aus.
 
 ---
 
@@ -1067,7 +1079,8 @@ möglich ist.
 - **Einen Ort**, an dem er wohnt — und du weisst, warum du den gewählt hast.
 - **Drei Stellen**, an denen du nachschaust, wenn er schweigt.
 
-**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
+**📎 Die Checkliste liegt unter diesem Video.** Es ist dieselbe Datei
+wie nach Modul 1 — du hakst einfach weiter ab.
 
 ---
 
@@ -1228,7 +1241,8 @@ du es prüfen lässt.
 - **Einen Prüfweg** — maschinell, was maschinell geht, und der Rest von Hand.
 - **Eine Regel** — Freigabe statt Autopilot.
 
-**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
+**📎 Die Checkliste liegt unter diesem Video.** Es ist dieselbe Datei
+wie nach Modul 1 — du hakst einfach weiter ab.
 
 ---
 
@@ -1329,7 +1343,8 @@ liegt.
 - **Eine Seite im Netz** — unter deiner eigenen Adresse.
 - **Eine Regel** — nichts geht raus, ohne dass du es gesehen hast.
 
-**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
+**📎 Die Checkliste liegt unter diesem Video.** Es ist dieselbe Datei
+wie nach Modul 1 — du hakst einfach weiter ab.
 
 ---
 
@@ -1471,7 +1486,8 @@ ich dabei falsch gemacht habe.
 - **Ein Gedächtnis** — deine Seite merkt sich, was du tust.
 - **Einen Abendlauf** — du stösst nichts mehr selbst an.
 
-**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
+**📎 Die Checkliste liegt unter diesem Video.** Es ist dieselbe Datei
+wie nach Modul 1 — du hakst einfach weiter ab.
 
 ---
 
@@ -1618,27 +1634,27 @@ heraus.
 
 | Lektion | Datei |
 |---|---|
-| **1.2 · und hinter jedem Modul wieder** | **Prompt-Bibliothek** — 40 Aufträge plus Marken-Steckbrief, nach den drei Stufen sortiert (PDF) |
-| 1.2 | Roadmap, eine Seite zum Ausdrucken (PDF) |
-| 1.3 | Begriffe-Cheatsheet (PDF) |
-| 1.5 · 2.7 · 3.5 · 4.7 · 5.8 · 6.6 · 7.8 · 8.5 · 9.7 | Checkliste je Modul (PDF) |
+| **1.2 · und hinter jedem Modul wieder** | **Prompt-Bibliothek** — 40 Aufträge plus Marken-Steckbrief, nach den drei Stufen sortiert (Google Doc, zum Kopieren und Ausfüllen) ✅ |
+| 1.2 | Roadmap, eine Seite zum Ausdrucken (PDF) ✅ |
+| 1.3 | Begriffe-Cheatsheet (PDF) ✅ |
+| 1.5 · 2.7 · 3.5 · 4.7 · 5.8 · 6.6 · 7.8 · 8.5 · 9.7 | Checkliste je Modul — **ein** Google Doc für alle neun, zum Abhaken ✅ |
 | **2.2 · 2.7** | **Meine KI-Blackliste** — die gefüllte Liste aus Drive, die sie im Video verspricht („prüfe zuerst mit diesem Dokument“). Google Doc im Kursordner ✅ |
-| 2.2 | Floskel-Liste als leere Vorlage für den eigenen Arbeitsplatz — zum Weiterführen mit eigenen Funden |
-| 2.3 | Business-Brief-Vorlage |
+| 2.2 | Floskel-Liste als leere Vorlage für den eigenen Arbeitsplatz — zum Weiterführen mit eigenen Funden (Google Doc, zum Ausfüllen) ✅ |
+| 2.3 | Business-Brief-Vorlage (Google Doc, zum Ausfüllen) ✅ |
 | 2.3b | Prompt-Bibliothek, Nummer 3 — liegt schon bei 1.2 bei |
-| 2.4 | Der Buch-Technik-Auftrag zum Kopieren |
-| 3.3 | Auftrag für den ersten Cowork-Bot |
+| 2.4 | Der Buch-Technik-Auftrag zum Kopieren (Google Doc) ✅ |
+| 3.3 | Auftrag für den ersten Cowork-Bot (Google Doc, zum Kopieren) ✅ |
 | 4.2 | **Setup-FAQ** — „Wenn beim Einrichten etwas klemmt" (PDF) ✅ gebaut |
 | 4.3 | **Arbeitsplatz-Grundgerüst** — ZIP mit den fünf Ordnern (je eine Liesmich), `CLAUDE.md` zum Ausfüllen und **vier Befehlen** (`/start` · `/shutdown` · `/create-plan` · `/implement`) in entschlackter Fassung ✅ gebaut, liegt in `Downloads/Mein-Business-Grundgeruest.zip` · Quelle: `scripts/ki-kurs/grundgeruest-bauen.py --zip` |
-| 4.4 | **`CLAUDE.md`-Anleitung** — fünf Teile, je mit ausgefülltem Beispiel, plus leeres Gerüst zum Kopieren ✅ gebaut (`beilagen/claude-md-vorlage.md`) |
+| 4.4 | **`CLAUDE.md`-Anleitung** — fünf Teile, je mit Beispiel von Sandra und einem Feld zum Ausfüllen (Google Doc) ✅ |
 | 4.4b | Kein eigener Download. Der Auftrag und die privat-Warnung stehen in der Liesmich im Grundgerüst. ⏳ Eine Klick-für-Klick-Anleitung mit Bildern wäre die nächste sinnvolle Beilage |
 | 5.2 | Beispiel-Skill Kochplan (die auseinandergenommene Datei) |
-| 5.8 | Leeres Skill-Gerüst |
+| 5.8 | Leeres Skill-Gerüst (Google Doc, zum Ausfüllen) ✅ |
 | 6.3 | Bot-Gerüst Telegram |
 | 7.1 | Die vier Befehle `caption` · `story` · `karussell` · `reels` + leere Wissensdateien ⏳ offen |
 | 8.1 | `produkt` · `salespage` + leere Wissensdateien |
 | 9.2 | Cockpit-Vorlage (leeres Artifact) |
-| 10.1 | Sicherheits-Checkliste |
+| 10.1 | Sicherheits-Checkliste (PDF) ✅ |
 
 ### 🚨 Modul 9 hat jetzt sieben Lektionen, nicht fünf
 
@@ -1676,7 +1692,7 @@ zwischen diesem Kurs und den drei anderen.
 | Markenfarben | ✅ Knopf und Navi-Knopf Orange `#dc822e` · Fortschritt und aktive Lektion Petrol `#12828c` · Fortschritts-Balken Creme `#f1ecdd` · Titel Dunkelblau `#29556d` · Fliesstext `#0c1c30` |
 | Lektionstexte | ⏳ 1.1 bis 2.3 eingetragen, 54 offen — Kopierseite steht (siehe unten) |
 | Videos | ⏳ alle offen |
-| Downloads | ✅ 17 Beilagen als Brand-PDF gebaut, in Drive-Ordner bereitgestellt |
+| Downloads | ✅ 14 Beilagen in Drive: 4 als PDF zum Nachschlagen, 10 als Google Doc zum Ausfüllen, Abhaken und Kopieren |
 
 ---
 

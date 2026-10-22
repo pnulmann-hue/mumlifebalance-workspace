@@ -1,3 +1,5 @@
+<!-- Ausgeliefert wird die Google-Doc-Fassung im Drive-Kursordner (Kennung in context/Kurse/aktuelle kurse/Easy-KI/beilagen-drive.json). Diese Datei ist die Inhalts-Quelle — eine Aenderung hier aendert nichts an dem, was die Teilnehmerin oeffnet. Doc nachziehen. -->
+
 # Dein erster Helfer in Cowork
 
 Noch kein Bot, der von selbst läuft — aber schon einer, der dir eine Arbeit

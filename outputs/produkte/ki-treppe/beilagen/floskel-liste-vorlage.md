@@ -1,3 +1,5 @@
+<!-- Ausgeliefert wird die Google-Doc-Fassung im Drive-Kursordner (Kennung in context/Kurse/aktuelle kurse/Easy-KI/beilagen-drive.json). Diese Datei ist die Inhalts-Quelle — eine Aenderung hier aendert nichts an dem, was die Teilnehmerin oeffnet. Doc nachziehen. -->
+
 # Woran man KI-Text erkennt
 
 Leere Vorlage für deinen Arbeitsplatz. Die Muster unten sind der Anfang — die

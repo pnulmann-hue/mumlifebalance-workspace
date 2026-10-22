@@ -1,3 +1,5 @@
+<!-- Ausgeliefert wird die Google-Doc-Fassung im Drive-Kursordner (Kennung in context/Kurse/aktuelle kurse/Easy-KI/beilagen-drive.json). Diese Datei ist die Inhalts-Quelle — eine Aenderung hier aendert nichts an dem, was die Teilnehmerin oeffnet. Doc nachziehen. -->
+
 # Deine CLAUDE.md — das Gedächtnis deines Arbeitsplatzes
 
 Diese Datei liegt ganz oben in deinem Arbeitsplatz und wird bei **jedem**
