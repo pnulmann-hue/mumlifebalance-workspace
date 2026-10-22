@@ -1,0 +1,244 @@
+<title>Mein Oktober mit Claude</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Aufbau: eine Spalte, Bereiche als Blöcke, je Zeile eine Arbeit mit ihrer
+   Stundenannahme. Die Summe steht einmal gross, nicht an jedem Block. */
+:root {
+  --grund: #f7f4ec;
+  --blatt: #ffffff;
+  --kante: #e2dccb;
+  --tinte: #0c1c30;
+  --leise: #5c6b7a;
+  --petrol: #12828c;
+  --blau: #29556d;
+  --orange: #dc822e;
+  --display: Philosopher, Georgia, serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --grund: #0b1722; --blatt: #132231; --kante: #24394d;
+  --tinte: #eee8d9; --leise: #9fb3c4;
+  --petrol: #3fb0ba; --blau: #7fa8c0; --orange: #f0a259;
+  color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --grund: #0b1722; --blatt: #132231; --kante: #24394d;
+  --tinte: #eee8d9; --leise: #9fb3c4;
+  --petrol: #3fb0ba; --blau: #7fa8c0; --orange: #f0a259;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--grund); color: var(--tinte); font-family: var(--body);
+       font-size: 17px; line-height: 1.6; margin: 0; }
+.wrap { max-width: 720px; margin: 0 auto;
+        padding-left: max(16px, env(safe-area-inset-left, 0px));
+        padding-right: max(16px, env(safe-area-inset-right, 0px));
+        padding-block: 40px 72px; }
+h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(32px, 7vw, 46px); line-height: 1.08; }
+h2 { font-size: clamp(23px, 4.5vw, 28px); margin-block: 48px 6px; color: var(--blau); }
+h3 { font-size: 19px; }
+p { margin: 0 0 14px; }
+.vor { font-size: 13px; letter-spacing: .16em; text-transform: uppercase;
+       color: var(--petrol); font-weight: 600; margin-bottom: 10px; }
+.lead { font-size: 19px; color: var(--leise); }
+.bereich-unter { color: var(--leise); font-size: 15.5px; margin-bottom: 18px; }
+
+/* Die Zeilen je Arbeit */
+.liste { display: flex; flex-direction: column; gap: 10px; }
+.zeile { background: var(--blatt); border: 1px solid var(--kante);
+         border-radius: 12px; padding: 16px 18px;
+         display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: baseline; }
+.zeile .was { flex: 1 1 320px; min-width: 0; }
+.zeile .was b { font-family: var(--display); font-size: 19px; font-weight: 700;
+                display: block; margin-bottom: 3px; }
+.zeile .was span { font-size: 15.5px; color: var(--leise); }
+.std { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--orange);
+       white-space: nowrap; font-size: 17px; }
+.std small { display: block; font-weight: 400; font-size: 12.5px; color: var(--leise);
+             letter-spacing: .04em; }
+
+/* Der offene Rechnungs-Kasten */
+.offen { background: var(--blatt); border: 1px solid var(--kante);
+         border-left: 5px solid var(--petrol); border-radius: 12px;
+         padding: 20px 22px; margin-block: 28px; }
+.offen h3 { color: var(--petrol); margin-bottom: 8px; }
+.offen p:last-child { margin-bottom: 0; }
+.offen ul { margin: 10px 0 0; padding-left: 20px; }
+.offen li { margin-bottom: 7px; }
+
+/* Die Summe */
+.summe { background: var(--blau); color: #f1ecdd; border-radius: 16px;
+         padding: 28px 24px; margin-block: 40px 0; }
+.summe .vor { color: #8fd0d6; }
+.summe .zahlen { display: flex; flex-wrap: wrap; gap: 22px 40px; margin-top: 14px; }
+.summe .zahl b { font-family: var(--display); font-size: 40px; font-weight: 700;
+                 display: block; line-height: 1.05; font-variant-numeric: tabular-nums; }
+.summe .zahl span { font-size: 14.5px; color: #c8d9e0; }
+.summe p { color: #dfe8ec; margin-top: 18px; margin-bottom: 0; font-size: 16.5px; }
+
+.satz { font-family: var(--display); font-size: clamp(21px, 4.2vw, 26px);
+        line-height: 1.3; color: var(--blau); margin-block: 40px 8px;
+        text-wrap: balance; }
+.klein { font-size: 15px; color: var(--leise); }
+.schluss { border-top: 1px solid var(--kante); margin-top: 48px; padding-top: 24px; }
+a { color: var(--petrol); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+
+  <p class="vor">Oktober 2026</p>
+  <h1>Was in einem Monat entstanden ist</h1>
+  <p class="lead">Ich arbeite rund 18 Stunden pro Woche, neben vier Kindern.
+  Das hier ist in diesem einen Monat entstanden — alles mit einer KI, der ich
+  beigebracht habe, wie ich arbeite.</p>
+
+  <div class="offen">
+    <h3>Vorher zu den Zahlen</h3>
+    <p>Die Stunden rechts sind <b>Annahmen, keine Rechnungen.</b> Ich habe je
+    Arbeit geschätzt, wie lange sie gedauert hätte, wenn ich sie von Hand
+    gemacht oder vergeben hätte. Du darfst jede Zahl anzweifeln.</p>
+    <p class="klein" style="margin-bottom:0">Gerechnet mit 110 Franken pro
+    Stunde — das ist, was eine Fachperson in der Schweiz für Gestaltung,
+    Texten oder Programmieren üblicherweise nimmt.</p>
+  </div>
+
+  <h2>Mein Kurs</h2>
+  <p class="bereich-unter">Ein kompletter Onlinekurs, von der ersten Folie bis
+  zur Kasse.</p>
+  <div class="liste">
+    <div class="zeile"><div class="was"><b>10 Kapitel, 67 Lektionen</b>
+      <span>307 Präsentationsfolien mit Sprechnotizen, in meinen Farben und
+      Schriften. Dazu die Texte, die unter jedem Video stehen.</span></div>
+      <div class="std">90 Std<small>von Hand</small></div></div>
+    <div class="zeile"><div class="was"><b>21 Arbeitsblätter als PDF</b>
+      <span>Checklisten, Vorlagen, eine Prompt-Sammlung mit 40 Aufträgen —
+      gesetzt, gestaltet, druckfertig.</span></div>
+      <div class="std">30 Std<small>von Hand</small></div></div>
+    <div class="zeile"><div class="was"><b>Verkaufsseite, Kasse und Mails</b>
+      <span>Die Seite im Netz, die Texte an der Kasse und rund 25 Mails für
+      drei Strecken.</span></div>
+      <div class="std">25 Std<small>von Hand</small></div></div>
+    <div class="zeile"><div class="was"><b>Ein kostenloses Werkzeug</b>
+      <span>Eine kleine Seite, die den eigenen Schreibstil analysiert. Läuft
+      im Netz, jede kann sie benutzen.</span></div>
+      <div class="std">20 Std<small>Programmierung</small></div></div>
+    <div class="zeile"><div class="was"><b>Eine Checkliste mit 131 Punkten</b>
+      <span>Alles, was beim Aufbau eines Verkaufswegs schiefgehen kann — zum
+      Abhaken, je Angebot einzeln.</span></div>
+      <div class="std">10 Std<small>von Hand</small></div></div>
+  </div>
+
+  <h2>Mein Arbeitsplatz</h2>
+  <p class="bereich-unter">Die Übersicht, an der ich morgens vorbeischaue —
+  und das Wissen, das darin liegt.</p>
+  <div class="liste">
+    <div class="zeile"><div class="was"><b>20 Ausbaustufen an meiner Übersicht</b>
+      <span>Startseite mit Aufgaben und Terminen, ein Kalender, der meine
+      geplanten Beiträge gegen die echten Instagram-Zahlen stellt, und ein
+      Archiv, das von selbst aufräumt.</span></div>
+      <div class="std">50 Std<small>Programmierung</small></div></div>
+    <div class="zeile"><div class="was"><b>Mein Produktwissen durchsuchbar</b>
+      <span>100 Anliegen, zusammengetragen aus allen meinen Büchern und
+      Heften — 2'213 Seiten eingelesen, auch die eingescannten. Dazu acht
+      Arbeitsabläufe mit 67 Schritten zum Abhaken.</span></div>
+      <div class="std">40 Std<small>von Hand</small></div></div>
+    <div class="zeile"><div class="was"><b>Eine eigene Nachschlage-App</b>
+      <span>295 Produkte, 3'714 Tipps und 2'000 Rezepte aus 360 Quellen, dazu
+      die Frage „was kann ich mit dem mischen, was ich dahabe?“.</span></div>
+      <div class="std">60 Std<small>von Hand nicht machbar</small></div></div>
+  </div>
+
+  <h2>Mein Content</h2>
+  <p class="bereich-unter">Nicht mehr Beiträge — bessere, und mit weniger
+  Handarbeit.</p>
+  <div class="liste">
+    <div class="zeile"><div class="was"><b>795 Beiträge ausgewertet</b>
+      <span>Meine eigenen und die aus meiner Nische, gemessen gegen den
+      jeweiligen Durchschnitt. Seitdem weiss ich, welche erste Zeile bei
+      meinen Leuten wirklich zieht — statt es zu glauben.</span></div>
+      <div class="std">20 Std<small>von Hand</small></div></div>
+    <div class="zeile"><div class="was"><b>Animierte Reels und fertige Folien</b>
+      <span>Der Text läuft im Video von selbst auf, die Karussell-Bilder
+      kommen fertig in meinen Schriften heraus.</span></div>
+      <div class="std">20 Std<small>Gestaltung</small></div></div>
+    <div class="zeile"><div class="was"><b>Meine Content-Regeln aufgeräumt</b>
+      <span>238 Regeln, die über Jahre entstanden sind, nebeneinandergelegt:
+      56 widersprachen sich. Jetzt steht alles an einer Stelle.</span></div>
+      <div class="std">15 Std<small>von Hand</small></div></div>
+  </div>
+
+  <h2>Und das Private</h2>
+  <p class="bereich-unter">Das ist der Teil, den ich am wenigsten erwartet
+  hätte — und der zu Hause am meisten verändert hat.</p>
+  <div class="liste">
+    <div class="zeile"><div class="was"><b>Eine Familien-App</b>
+      <span>Kalender, Ämtli und Schulzeiten für alle. Hat ein bezahltes Abo
+      ersetzt.</span></div>
+      <div class="std">25 Std<small>Programmierung</small></div></div>
+    <div class="zeile"><div class="was"><b>Eine Stellensuche für meinen Mann</b>
+      <span>Schaut täglich nach, prüft jede Anzeige gegen das, was für uns
+      als Familie überhaupt geht, und legt nur das Passende vor.</span></div>
+      <div class="std">15 Std<small>Programmierung</small></div></div>
+    <div class="zeile"><div class="was"><b>Eine Noten-App für die Musik</b>
+      <span>Das Repertoire meines Mannes und seines Spielpartners, auf dem
+      Handy, auch ohne Internet.</span></div>
+      <div class="std">12 Std<small>Programmierung</small></div></div>
+    <div class="zeile"><div class="was"><b>Drei Postfächer sortieren sich selbst</b>
+      <span>Jede Woche automatisch. Im Posteingang bleibt nur, was ich
+      wirklich selbst anschauen muss.</span></div>
+      <div class="std">8 Std<small>von Hand</small></div></div>
+    <div class="zeile"><div class="was"><b>63 Gigabyte verschlüsselt gesichert</b>
+      <span>Alles, was nicht in die Cloud darf. Läuft jeden Sonntag von
+      selbst.</span></div>
+      <div class="std">6 Std<small>Einrichtung</small></div></div>
+  </div>
+
+  <div class="summe">
+    <p class="vor">Zusammengerechnet</p>
+    <div class="zahlen">
+      <div class="zahl"><b>446</b><span>Stunden, die es von Hand<br>gebraucht hätte</span></div>
+      <div class="zahl"><b>49'000</b><span>Franken bei 110 pro Stunde<br>(angenommen)</span></div>
+      <div class="zahl"><b>1</b><span>Monat, nebenbei,<br>18 Stunden die Woche</span></div>
+    </div>
+    <p>Die 446 Stunden sind rund elf Arbeitswochen einer Vollzeitstelle.
+    Ich habe dafür einen Monat Teilzeit gebraucht.</p>
+  </div>
+
+  <p class="satz">Und jetzt der ehrliche Teil.</p>
+  <p><b>Ich hätte diese 49'000 Franken nie ausgegeben.</b> Ich hätte das
+  einfach nicht gemacht. Keine Familien-App, keine durchsuchbare
+  Produktsammlung, keine 307 Folien. Die Wahrheit ist also nicht, dass ich
+  49'000 Franken gespart habe — sondern dass es diese Sachen sonst gar nicht
+  gäbe.</p>
+  <p>Genau das ist der Unterschied, um den es mir geht. Nicht „ich spare Zeit
+  bei dem, was ich sowieso tue“. Sondern: <b>Dinge, die vorher zu teuer oder
+  zu gross waren, sind jetzt eine Frage von einem Nachmittag.</b></p>
+
+  <p class="satz">Was ich dafür gebraucht habe</p>
+  <p>Keine Ausbildung und keine Programmierkenntnisse. Ich schreibe Deutsch,
+  in ganzen Sätzen, so wie ich es dir hier schreibe.</p>
+  <p>Was es wirklich braucht, ist etwas anderes: Die KI muss wissen, wer du
+  bist. Mein Business, meine Kundin, mein Ton, meine Tabus — das liegt bei
+  mir in Dateien, die sie bei jedem Auftrag mitliest. Ohne das kommt Text
+  heraus, der von irgendwem sein könnte. Mit dem kommt Text heraus, bei dem
+  ich nichts mehr umbaue.</p>
+  <p class="klein">Das ist der eine Schritt, den fast alle überspringen — und
+  der hinterher alles entscheidet.</p>
+
+  <div class="schluss">
+    <h3>Wenn dich interessiert, wie das geht</h3>
+    <p>Ich habe genau diesen Weg aufgeschrieben, in drei Stufen: der normale
+    Chat, eine Zwischenstufe, und dann der eigene Arbeitsplatz. Auf jeder
+    Stufe gibt es ein Ergebnis, das du behältst — niemand muss bis ganz nach
+    oben.</p>
+    <p class="klein">Schreib mir einfach, dann sage ich dir, welche Stufe bei
+    dir gerade dran ist.</p>
+  </div>
+
+</div>
