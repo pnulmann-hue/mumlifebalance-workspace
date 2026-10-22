@@ -1,0 +1,107 @@
+{
+ "v": 4,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-09-22T09:00:00Z"
+ },
+ "title": "Modul 4 — Dein Arbeitsplatz",
+ "order": [
+  "cover",
+  "l41-titel",
+  "l41-was",
+  "l41-angst",
+  "l41-weiter",
+  "l42-titel",
+  "l42-vorher",
+  "l42-schritte",
+  "l42-weiter",
+  "l43-titel",
+  "l43-ordner",
+  "l43-geruest",
+  "l43-dateien",
+  "l43-fragen",
+  "l43-weiter",
+  "l44-titel",
+  "l44-was",
+  "l44-regel",
+  "l44-satz",
+  "l44b-titel",
+  "l44b-weg",
+  "l44b-was",
+  "l44b-zwei",
+  "l44b-schritte",
+  "l44b-privat",
+  "l44b-weiter",
+  "l44c-titel",
+  "l44c-was",
+  "l44c-paar",
+  "l44c-mehr",
+  "l44c-weiter",
+  "l45-titel",
+  "l45-regeln",
+  "l45-beispiel",
+  "l45-weiter",
+  "l46-titel",
+  "l46-fehler",
+  "l46-neu",
+  "l46-satz",
+  "l47-titel",
+  "l47-bilanz",
+  "l47-downloads",
+  "l47-checkliste",
+  "l47-weiter"
+ ],
+ "sections": {
+  "auftakt": {
+   "description": "Worum es in Modul 4 geht.",
+   "start": "cover"
+  },
+  "l41": {
+   "description": "Lektion 4.1 — warum das kein Programmieren ist.",
+   "start": "l41-titel"
+  },
+  "l42": {
+   "description": "Lektion 4.2 — einrichten, Schritt für Schritt.",
+   "start": "l42-titel"
+  },
+  "l43": {
+   "description": "Lektion 4.3 — die Ordner und das Grundgerüst.",
+   "start": "l43-titel"
+  },
+  "l44": {
+   "description": "Lektion 4.4 — die Gedächtnis-Datei.",
+   "start": "l44-titel"
+  },
+  "l44b": {
+   "description": "Lektion 4.4b — Sicherung mit GitHub.",
+   "start": "l44b-titel"
+  },
+  "l44c": {
+   "description": "Lektion 4.4c — die Befehle aus dem Grundgerüst.",
+   "start": "l44c-titel"
+  },
+  "l45": {
+   "description": "Lektion 4.5 — wie man mit ihr spricht.",
+   "start": "l45-titel"
+  },
+  "l46": {
+   "description": "Lektion 4.6 — was tun, wenn es nicht klappt.",
+   "start": "l46-titel"
+  },
+  "l47": {
+   "description": "Lektion 4.7 — Bilanz und Checkliste vor Modul 5.",
+   "start": "l47-titel"
+  }
+ },
+ "faces": {
+  "philosopher": {
+   "family": "Philosopher",
+   "href": "https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap"
+  },
+  "source-sans-3": {
+   "family": "Source Sans 3",
+   "href": "https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap"
+  }
+ },
+ "designSystems": []
+}
