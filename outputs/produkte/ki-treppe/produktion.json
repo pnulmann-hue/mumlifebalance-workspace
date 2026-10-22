@@ -14,7 +14,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": true,
-     "plattformtext": "Was am Ende dieses Kurses bei dir steht, und warum ich mit dem Bild von einer Mitarbeiterin arbeite statt mit dem von einem Werkzeug. Der Unterschied ist grösser, als er klingt.",
+     "plattformtext": "**In dieser Lektion:** Was am Ende dieses Kurses bei dir steht — und das Bild,\nmit dem ich arbeite.\n\n**Das Wichtigste in Kürze:**\n\n- **Drei Sachen hast du am Ende, die vorher nicht da waren:** einen\n  Arbeitsplatz, an dem dein eigenes Wissen liegt · mindestens einen\n  selbstgebauten Befehl für eine Arbeit, die du jede Woche sowieso machst · und\n  einen Bot, der morgens von selbst schreibt.\n- **Ich arbeite mit dem Bild einer Mitarbeiterin, nicht mit dem eines\n  Werkzeugs.** Ein Werkzeug nimmst du in die Hand und legst es weg. Eine\n  Mitarbeiterin wird besser, je mehr sie über dein Business weiss — und genau\n  das ist der ganze Kurs.\n- **Du musst nichts programmieren.** Du schreibst Deutsch, in ganzen Sätzen.\n- **Wer nach Stufe 1 aufhört, hat trotzdem etwas.** Die drei Stufen sind kein\n  Weg, den man zu Ende gehen muss.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -25,18 +25,18 @@
      "zeigen": true,
      "neu": false,
      "text_drin": true,
-     "plattformtext": "Chat, Cowork, Code. Drei Stufen, und auf jeder gibt es ein Ergebnis, das du behältst. Ich zeige dir, woran du merkst, welche gerade dran ist — und warum niemand bis ganz nach oben muss.",
+     "plattformtext": "**In dieser Lektion:** Chat, Cowork, Code — und woran du merkst, welche Stufe\ngerade dran ist.\n\n**Das Wichtigste in Kürze:**\n\n- **Stufe 1 · Chat:** Deine KI klingt nach dir. Hier bringst du ihr bei, wer du\n  bist. Das ist die Stufe, die über alles danach entscheidet.\n- **Stufe 2 · Cowork:** Sie arbeitet mit deinen Sachen — Dateien, Tabellen,\n  deine eigene Planung.\n- **Stufe 3 · Code:** Du hast einen eigenen Arbeitsplatz, an dem dein Wissen\n  liegt und bleibt. Dort baust du Befehle und Bots.\n- **Die Reihenfolge ist nicht verhandelbar.** Wer auf Stufe 3 anfängt, ohne\n  Stufe 1 gemacht zu haben, bekommt gut gebaute Texte, die nach niemandem\n  klingen.\n- Woran du deine Stufe erkennst: Wenn dich die Texte stören, bist du auf\n  Stufe 1. Wenn dich das Kopieren stört, auf Stufe 2. Wenn dich das\n  Wiederholen stört, auf Stufe 3.\n\n**📎 Unter diesem Video liegen zwei Dateien, die dich durch den ganzen Kurs\nbegleiten:** die Roadmap auf einer Seite zum Ausdrucken, und die\n**Prompt-Bibliothek** mit allen Aufträgen aus diesem Kurs, nach den drei Stufen\nsortiert. Die Bibliothek findest du ab hier hinter jedem Modul wieder.",
      "beilagen": [
       {
-       "was": "**Prompt-Bibliothek** — 39 Aufträge plus Marken-Steckbrief, nach den drei Stufen sortiert (PDF, 15 Seiten)",
-       "link": "/_blob/f8c00b70de45ceb83d301ac492bb0e72"
+       "was": "**Prompt-Bibliothek** — 40 Aufträge plus Marken-Steckbrief, nach den drei Stufen sortiert (PDF)",
+       "link": "/_blob/eed3635961c4f4be2b050b498fdd76fc"
       },
       {
        "was": "Roadmap, eine Seite zum Ausdrucken (PDF)",
        "link": "/_blob/44079c6a3b734acc6845bf059f323da9"
       }
      ],
-     "beilage_im_text": false
+     "beilage_im_text": true
     },
     {
      "nr": "1.3",
@@ -45,7 +45,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": true,
-     "plattformtext": "Prompt, Kontext, Projekt, Skill, Agent, Bot, Terminal. Einmal in Ruhe erklärt, so wie ich es einer Freundin am Küchentisch sagen würde. Das Cheatsheet dazu kannst du dir ausdrucken.",
+     "plattformtext": "**In dieser Lektion:** Zehn Begriffe, einmal in Ruhe erklärt.\n\n**Das Wichtigste in Kürze:**\n\n- **Auftrag** (oder Prompt) ist das, was du hineinschreibst. **Kontext** ist\n  alles, was sie zusätzlich weiss. **Halluzination** heisst: Sie erfindet etwas\n  und sagt es im selben Ton wie eine Tatsache.\n- **Projekt · Arbeitsplatz · Business-Brief** — drei Orte, an denen dein Wissen\n  liegen kann, von einfach bis dauerhaft.\n- **Skill · Agent · Bot** — drei Wörter für ungefähr dasselbe: eine Arbeit, die\n  einmal beschrieben ist und danach nur noch aufgerufen wird.\n- Du musst keinen dieser Begriffe können, um loszulegen. Du sollst sie nur\n  wiedererkennen, wenn sie in einem Video oder in einer Meldung auftauchen.\n\n**📎 Das Cheatsheet mit allen Begriffen liegt unter diesem Video — eine Seite,\nzum Ausdrucken und neben den Laptop legen.**",
      "beilagen": [
       {
        "was": "Begriffe-Cheatsheet (PDF)",
@@ -61,7 +61,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": true,
-     "plattformtext": "Womit du gratis anfangen kannst, ab wann ein Abo Sinn macht und was ein eigener Bot im Monat wirklich kostet. Ich sage dir die Zahlen offen, damit du selbst rechnen kannst.",
+     "plattformtext": "**In dieser Lektion:** Die Zahlen offen auf dem Tisch.\n\n**Das Wichtigste in Kürze:**\n\n- **Stufe 1 · Chat:** ein Konto, gratis zum Anfangen.\n- **Stufe 2 · Cowork:** ein Abo, rund 20 bis 23 im Monat.\n- **Stufe 3 · Code:** dasselbe Abo, plus rund 5 im Monat, wenn ein Bot\n  rund um die Uhr laufen soll.\n- Alles in Franken, Stand heute. Bei den Anbietern ändert sich das\n  gelegentlich — schau kurz nach, bevor du dich entscheidest.\n- **Meine Rechnung:** Ein Abo kostet weniger als eine einzige Stunde bezahlte\n  Hilfe. Die Frage ist also nicht, ob du es dir leisten kannst. Die Frage ist,\n  ob du in dem Monat wirklich etwas damit machst.\n- Wenn du gerade weisst, dass du keine Zeit hast: fang mit Stufe 1 an und lass\n  das Abo, bis du dranbleibst.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -72,7 +72,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": true,
-     "plattformtext": "Das Wichtigste aus Modul 1 auf einer Seite, dazu die Checkliste, bevor du weitergehst.",
+     "plattformtext": "**In dieser Lektion:** Was jetzt stehen sollte, bevor wir an deinen\nBusiness-Brief gehen.\n\n**Das nimmst du mit:**\n\n- **Deine Stufe** — du weisst, welche gerade dran ist und warum.\n- **Die Wörter** — du erkennst sie wieder, wenn sie vorkommen.\n- **Die Kosten** — du kannst selbst rechnen, ohne nachzufragen.\n\n**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Checkliste je Modul (PDF)",
@@ -100,7 +100,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": true,
-     "plattformtext": "Eine KI ist nur so gut wie der Auftrag, den sie bekommt. Ich zeige dir die drei Zutaten, die jeder gute Auftrag braucht, am selben Beispiel einmal ohne und einmal mit.",
+     "plattformtext": "**In dieser Lektion:** Warum eine KI nur so gut ist wie ihr Auftrag.\n\n**Das Wichtigste in Kürze:**\n\n- **Drei Zutaten hat jeder gute Auftrag, immer dieselben:** wer du bist · was\n  rauskommen soll · ein Beispiel für gut.\n- Fehlt die erste, schreibt sie für irgendwen. Fehlt die zweite, bekommst du\n  etwas Beliebiges. Fehlt die dritte, bekommst du Durchschnitt.\n- Das Bild der Praktikantin hilft bei jeder Enttäuschung: Du würdest einer\n  neuen Mitarbeiterin auch nicht zurufen „mach mal was für Instagram\" und dich\n  dann über das Ergebnis wundern.\n- **Du siehst in dieser Lektion denselben Auftrag zweimal** — einmal ohne die\n  drei Zutaten, einmal mit. Der Unterschied erklärt mehr als jede Regel.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -111,14 +111,14 @@
      "zeigen": true,
      "neu": false,
      "text_drin": true,
-     "plattformtext": "Es gibt ein paar Muster, an denen man KI-Text sofort erkennt, und wenn du sie einmal gesehen hast, siehst du sie überall. Danach weisst du, wonach du in deinen eigenen Texten suchen musst.",
+     "plattformtext": "**In dieser Lektion:** Die Muster, an denen man KI-Text sofort erkennt.\n\n**Das Wichtigste in Kürze:**\n\n- Es sind immer dieselben paar Muster. Wenn du sie einmal gesehen hast, siehst\n  du sie überall — auch bei anderen.\n- Dazu gehören: der aufgeblasene Gegensatz, die Dreier-Aufzählung an jeder\n  Stelle, und Wörter, die niemand am Küchentisch sagt.\n- **Was du stattdessen machst:** Du sammelst deine eigene Liste. Was dich in\n  einem Text stört, kommt hinein — und ab dann weiss sie, was bei dir nie\n  vorkommen darf.\n- Warum das zählt: Deine Leute merken den Unterschied, auch wenn sie ihn nicht\n  benennen können. Ein Text, der nach Maschine klingt, kostet dich kein Like\n  weniger — er kostet dich Nähe.\n\n**📎 Die Floskel-Liste als leere Vorlage liegt unter diesem Video.** Sie wächst\nmit und zieht in Modul 4 in deinen Arbeitsplatz.",
      "beilagen": [
       {
        "was": "Floskel-Liste als leere Vorlage für den eigenen Arbeitsplatz",
        "link": "/_blob/bfc5b8c09defb1372809b3320cdc2f41"
       }
      ],
-     "beilage_im_text": false
+     "beilage_im_text": true
     },
     {
      "nr": "2.3",
@@ -127,14 +127,14 @@
      "zeigen": true,
      "neu": false,
      "text_drin": true,
-     "plattformtext": "Das eine Dokument, das ab jetzt bei jedem Auftrag mitgeht. Wer du bist, für wen du da bist, was du anbietest, worüber du sprichst, wie du klingst und was bei dir nie vorkommt.",
+     "plattformtext": "**In dieser Lektion:** Das eine Dokument, das ab jetzt bei jedem Auftrag\nmitgeht.\n\n**Das Wichtigste in Kürze:**\n\n- **Sechs Bausteine, nicht mehr:** wer ich bin · für wen ich da bin · was ich\n  anbiete · meine Themen · wie ich klinge · meine Tabus.\n- Bei Baustein 2 ist der häufigste Fehler eine Beschreibung, die auf jede\n  passt. Je enger, je besser.\n- Bei Baustein 6 wird es konkret: was bei dir nie vorkommt — als Wort, als\n  Behauptung, als Versprechen.\n- **Du schreibst ihn nicht aus dem Kopf.** Die nächste Lektion zeigt, wie du\n  ihn gefüllt bekommst, ohne vor einem leeren Blatt zu sitzen.\n\n**📎 Die Business-Brief-Vorlage liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Business-Brief-Vorlage",
        "link": "/_blob/cc49c486f2e76acdb18bca51be039c79"
       }
      ],
-     "beilage_im_text": false
+     "beilage_im_text": true
     },
     {
      "nr": "2.3b",
@@ -143,11 +143,11 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Du hast bisher mit ChatGPT gearbeitet und ihm monatelang erzählt, wer du bist? Dann fängst du nicht bei null an. Ich zeige dir, wie du dieses Wissen in drei Klicks mitnimmst — und warum du es danach einmal durchsiehst, bevor du es behältst. Wenn du neu anfängst, überspring diese Lektion einfach. Den Auftrag zum Durchsieben findest du als Nummer 3 in deiner Prompt-Bibliothek.",
+     "plattformtext": "**In dieser Lektion:** Wenn du bisher mit ChatGPT gearbeitet hast, fängst du\nnicht bei null an.\n\n**Das Wichtigste in Kürze:**\n\n- Du gehst dreimal hin und her: in Claude fragen, was gebraucht wird · in\n  ChatGPT das Gedächtnis ausgeben lassen · zurück in Claude damit.\n- **Und dann kommt der Teil, den die meisten auslassen:** einmal durchsehen.\n  In so einem Gedächtnis steht viel Veraltetes, manches Falsche und einiges,\n  das du nie wieder sehen willst.\n- Was nicht mehr stimmt, kommt raus. Was stimmt, wandert in den Baustein, zu\n  dem es gehört.\n- Wenn du neu anfängst, überspring diese Lektion einfach.\n\n**Den Auftrag zum Durchsehen findest du als Nummer 3 in deiner\nPrompt-Bibliothek** (liegt bei Lektion 1.2).",
      "beilagen": [
       {
        "was": "Prompt-Bibliothek, Nummer 3 — liegt schon bei 1.2 bei",
-       "link": "/_blob/f8c00b70de45ceb83d301ac492bb0e72"
+       "link": "/_blob/eed3635961c4f4be2b050b498fdd76fc"
       }
      ],
      "beilage_im_text": true
@@ -159,7 +159,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Wie du die sechs Bausteine gefüllt bekommst, ohne stundenlang vor einem leeren Blatt zu sitzen: Du lässt die KI ein Buch über dich schreiben und so lange nachfragen, bis sie wirklich alles hat.",
+     "plattformtext": "**In dieser Lektion:** Wie du die sechs Bausteine gefüllt bekommst, ohne\nstundenlang zu tippen.\n\n**Das Wichtigste in Kürze:**\n\n- Du lässt die KI ein Buch über dich und dein Business schreiben — und sie\n  fragt dich dafür aus.\n- **Eine Frage nach der anderen.** Nicht zehn auf einmal, sonst beantwortest du\n  die Hälfte nicht.\n- Antworte in ganzen Sätzen, so wie du reden würdest. Wenn dir das Tippen zu\n  lange dauert, sprich es ein und lass es umwandeln.\n- **Der Kniff am Schluss:** Du lässt sie sagen, was ihr immer noch fehlt. Genau\n  dort stehen die Dinge, die du für selbstverständlich hältst — und die kein\n  Mensch von aussen wissen kann.\n\n**📎 Der Auftrag zum Kopieren liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Der Buch-Technik-Auftrag zum Kopieren",
@@ -175,7 +175,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Zwei, drei eigene Texte reichen, damit die KI deinen Ton trifft. Ich zeige dir am selben Auftrag, wie gross der Unterschied ist.",
+     "plattformtext": "**In dieser Lektion:** Zwei, drei eigene Texte reichen, damit sie deinen Ton\ntrifft.\n\n**Das Wichtigste in Kürze:**\n\n- **Was du anhängst:** Texte, die wirklich von dir sind und die dir gefallen.\n  Eine Sprachnachricht, abgetippt, ist mehr wert als ein geschliffener Beitrag.\n- Keine Texte, die schon durch eine KI gelaufen sind. Die bringen ihr ihren\n  eigenen Ton bei, nicht deinen.\n- **Woran du merkst, dass es sitzt:** Du liest einen Vorschlag und baust nichts\n  mehr um. Nicht das Gefühl „gut genug\" — das Gefühl „so hätte ich es\n  geschrieben\".\n- Sitzt es nicht, fehlen meistens Beispiele — nicht Erklärungen über deinen Ton.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -186,7 +186,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Damit dein Wissen liegen bleibt, statt dass du es in jedem neuen Chat wieder eintippst.",
+     "plattformtext": "**In dieser Lektion:** Damit dein Wissen liegen bleibt, statt dass du es jedes\nMal wieder eintippst.\n\n**Das Wichtigste in Kürze:**\n\n- Ein Projekt ist ein Ort, an dem deine Dateien liegen und bei jedem Gespräch\n  mitgelesen werden.\n- **Hinein gehört:** dein Business-Brief, deine Textproben, deine Floskel-Liste\n  — und die Anweisung, wie sie damit umgehen soll.\n- Ab jetzt fängst du kein Gespräch mehr bei null an.\n- Das ist die kleine Schwester des Arbeitsplatzes aus Modul 4. Wer hier\n  aufhört, hat trotzdem etwas, das jeden Tag Zeit spart.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -197,7 +197,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Das Wichtigste aus Modul 2, dazu die Checkliste: Was muss stehen, bevor du weitergehst.",
+     "plattformtext": "**In dieser Lektion:** Was stehen muss, bevor du weitergehst.\n\n**Das nimmst du mit:**\n\n- **Deinen Business-Brief** — sechs Bausteine, ausgefüllt.\n- **Dein Projekt** — mit allem darin, was sie über dich wissen soll.\n- **Deinen Blick** — du erkennst KI-Text jetzt, auch deinen eigenen.\n\n🚨 **Ohne Business-Brief macht Modul 4 keinen Sinn.** Dort kopierst du genau\ndiese Dateien in deinen eigenen Arbeitsplatz. Wenn hier etwas fehlt, fehlt es\ndort auch.\n\n**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Checkliste je Modul (PDF)",
@@ -225,7 +225,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Mit Dateien arbeiten, über mehrere Schritte hinweg, und sich merken, was beim letzten Mal war. Ich zeige dir eine Aufgabe, die im Chat scheitert und hier durchläuft.",
+     "plattformtext": "**In dieser Lektion:** Eine Aufgabe, die im Chat scheitert und hier durchläuft.\n\n**Das Wichtigste in Kürze:**\n\n- Drei Dinge kommen dazu: **mit Dateien arbeiten** · **über mehrere Schritte\n  hinweg** · und **sich merken, was beim letzten Mal war**.\n- **Was du ihr geben kannst:** Dokumente, Tabellen — und Verbindungen zu\n  Programmen, die du sowieso benutzt.\n- Du siehst in dieser Lektion denselben Auftrag auf zwei Stufen. Im Chat\n  bekommst du eine Antwort, hier bekommst du ein Ergebnis.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -236,7 +236,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Einmal einrichten, und ab dann liest die KI deine eigene Planung. Schritt für Schritt mitgefilmt.",
+     "plattformtext": "**In dieser Lektion:** Einmal einrichten, und ab dann liest sie deine eigene\nPlanung.\n\n**Das Wichtigste in Kürze:**\n\n- Eine Verbindung heisst: Sie darf in ein Programm hineinschauen, das du\n  sowieso benutzt — und zwar mit deinen Augen, nicht mit fremden.\n- **Warum das mehr bringt, als es klingt:** Was dort steht, musst du nie mehr\n  erzählen. Sie liest es.\n- Eingerichtet wird es einmal, Schritt für Schritt mitgefilmt.\n- 🚨 **Eine Verbindung ist ein Zugang.** Richte sie bewusst ein und schau nach,\n  was sie darf. Modul 10 geht darauf ein.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -247,14 +247,14 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Wir bauen zusammen einen Helfer fürs Zuhause — etwas, wo nichts kaputtgehen kann und du sofort siehst, dass es funktioniert.",
+     "plattformtext": "**In dieser Lektion:** Wir bauen zusammen einen Helfer, bei dem nichts\nkaputtgehen kann.\n\n**Das Wichtigste in Kürze:**\n\n- Der Bot macht drei Dinge: **er liest** · **er sortiert** · **er sagt es dir**.\n- Wir nehmen bewusst etwas fürs Zuhause. Bei einem Helfer für die Familie\n  siehst du sofort, ob er taugt, und nichts davon geht an die Öffentlichkeit.\n- **Der Auftrag dahinter ist das Eigentliche.** Du beschreibst, was er tun\n  soll, woraus er liest und wie er sich melden soll — und siehst dabei zum\n  ersten Mal, dass sich eine Arbeit beschreiben lässt.\n- **Und dann macht er es von allein:** Du kannst eine Routine anlegen, damit er\n  von selbst losgeht, ohne dass du ihn anstösst. Braucht er dafür Dateien von\n  deinem Rechner, muss der aber an sein.\n\n**📎 Der Auftrag für den ersten Bot liegt unter diesem Video — zum Kopieren und\nAnpassen.**",
      "beilagen": [
       {
        "was": "Auftrag für den ersten Cowork-Bot",
-       "link": ""
+       "link": "/_blob/4baa489eb26bb74e2e6ee5ec3010901a"
       }
      ],
-     "beilage_im_text": false
+     "beilage_im_text": true
     },
     {
      "nr": "3.4",
@@ -263,7 +263,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Ehrlich gesagt: Er läuft nicht von selbst, du musst ihn jedes Mal anstossen. Das ist der Grund für die nächste Stufe — und wenn dir das hier reicht, ist das völlig in Ordnung.",
+     "plattformtext": "**In dieser Lektion:** Drei Sachen, die auf dieser Stufe nicht gehen — und\nwarum das für dich in Ordnung sein darf.\n\n**Das Wichtigste in Kürze:**\n\n- **Dein Rechner:** An Dateien, die bei dir lokal liegen, kommt sie hier nicht\n  heran.\n- **Kein Stecker:** An eine eigene Datenbank oder ein eigenes Werkzeug kann man\n  sie nicht anhängen.\n- **Eigene Befehle:** Das, was in Modul 5 das Herzstück wird, gibt es hier nur\n  in Ansätzen.\n- 🚨 **Wenn dir diese Stufe reicht, ist das völlig in Ordnung.** Sag es dir\n  bewusst, statt ein halbes Jahr ein schlechtes Gewissen zu haben. Modul 4 ist\n  für die, die mehr wollen — nicht für alle.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -274,7 +274,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Das Wichtigste aus Modul 3 und die Checkliste dazu.",
+     "plattformtext": "**In dieser Lektion:** Was jetzt bei dir läuft.\n\n**Das nimmst du mit:**\n\n- **Eine Verbindung** — sie liest deine eigene Planung.\n- **Einen Bot** — gebaut, ohne eine Zeile Code.\n- **Eine Entscheidung** — du weisst, ob du die nächste Stufe willst.\n\n**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Checkliste je Modul (PDF)",
@@ -284,7 +284,7 @@
      "beilage_im_text": true
     }
    ],
-   "folien": 22,
+   "folien": 23,
    "folien_lektionen": 5,
    "link": "https://claude.ai/artifact/PkXYLdh86SBsKspgmfoJdV",
    "modultext": "Eine Stufe weiter arbeitet die KI mit deinen Dateien und hängt an deiner eigenen Planung. Hier baust du deinen ersten Bot, ohne eine einzige Zeile Code zu schreiben.",
@@ -302,32 +302,37 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Was Claude Code eigentlich ist und warum du kein schwarzes Fenster brauchst. Ich zeige dir die Oberfläche — sie sieht aus wie ein Chat, weil sie einer ist.",
+     "plattformtext": "**In dieser Lektion:** Was Claude Code eigentlich ist — und was du dafür können\nmusst.\n\n**Das Wichtigste in Kürze:**\n\n- Du schreibst weiter Deutsch, in ganzen Sätzen. Das ändert sich nicht.\n- Das schwarze Fenster, das du auf Screenshots gesehen hast, brauchst du hier\n  nicht. Wir arbeiten in einer App, die aussieht wie ein Chat.\n- Neu ist nicht, *was* sie kann. Neu ist, **wo** sie arbeitet: an einem Platz,\n  der dir gehört und der bleibt.\n- Du brauchst einen Rechner, ein Abo und zwanzig Minuten. Kein Vorwissen — wenn\n  du weisst, was ein Ordner ist, reicht das.",
      "beilagen": [],
      "beilage_im_text": false
     },
     {
      "nr": "4.2",
      "titel": "Einrichten",
-     "notiz": "**Zeigen:** Schritt für Schritt, Klick für Klick, in Echtzeit. Nichts überspringen — hier steigen die Leute aus. **Windows und Mac getrennt zeigen** (Git unter Windows extra installieren), Windows ist gleichwertig. Die drei Prüfpunkte zuerst: im Bereich Code? Abo aktiv? immer derselbe Ordner, nie iCloud? **Mitgeben:** Setup-FAQ, eine Seite (04.10.)",
-     "zeigen": true,
+     "notiz": "🚨 **Die Erstanmeldung ist nicht vorführbar** — mein Konto läuft seit Monaten, und den Upgrade-Hinweis sieht nur, wer keines hat. Offen sagen und auf die Folien zeigen. **Erzählen:** herunterladen, anmelden, Reiter Code — links Chat, daneben Cowork, daneben Code (die drei Stufen aus Modul 1 in einer App). Dann die drei Meldungen, die beim ersten Mal kommen können. **Zeigen (geht mit bestehendem Konto):** einen neuen leeren Ordner wählen, erste Frage, und den Freigabe-Knopf einmal umstellen. **Mitgeben:** Setup-FAQ",
+     "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Klick für Klick in Echtzeit mitgefilmt. Hier springe ich nichts, weil genau hier sonst die meisten aussteigen.",
-     "beilagen": [],
-     "beilage_im_text": false
+     "plattformtext": "**In dieser Lektion:** Jeder Klick in der Reihenfolge, in der er kommt — und\nwas du tust, wenn beim ersten Mal eine Meldung dazwischenkommt.\n\n**Das Wichtigste in Kürze:**\n\n- **Installieren und anmelden:** Datei herunterladen, durchklicken, App\n  starten, mit deinem Konto anmelden. Dann oben auf den Reiter **Code**. Links\n  ist der Chat, daneben Cowork, daneben Code — das sind die drei Stufen aus\n  Modul 1 in einer App.\n- Die App bringt alles mit. Du installierst nichts weiter, keine\n  Kommandozeile, kein Programm mit fremdem Namen.\n- **Wenn beim ersten Mal eine Meldung kommt:** „Upgrade nötig\" heisst, der\n  Reiter Code braucht ein bezahltes Abo (welches, steht in 1.4). „Melde dich\n  online an\" heisst, im Browser fertig anmelden und die App einmal neu öffnen.\n  Bei einer Fehlernummer zeigst du ihr die Meldung im Wortlaut und fragst, was\n  sie bedeutet.\n- **Deine erste Sitzung:** In der Zeile unter dem Eingabefeld wählst du zuerst,\n  dass auf deinem eigenen Rechner gearbeitet wird, dann den Ordner, dann stellst\n  du eine einfache Frage.\n- **Leg den Ordner nicht in OneDrive, iCloud oder Dropbox.** Was dort liegt,\n  wird überallhin kopiert — auch das, was du später nicht kopiert haben willst.\n  Kapitel 10 kommt darauf zurück.\n- **Ein Knopf, den kaum jemand erklärt:** In derselben Zeile steht, wie viel sie\n  ohne dich tun darf. Stell ihn am Anfang so ein, dass sie fragt, bevor sie eine\n  Datei ändert. Später lässt du sie mehr selbst machen.\n- Plan zwanzig Minuten ohne Unterbrechung ein.\n\n**Wenn etwas klemmt:** Unter dem Video liegt eine Liste mit den Fragen, die\nbeim Einrichten am häufigsten kommen — und was ich dazu sage.",
+     "beilagen": [
+      {
+       "was": "**Setup-FAQ** — „Wenn beim Einrichten etwas klemmt\" (PDF) ✅ gebaut",
+       "link": "/_blob/1dd331eb5c5e2d2dc60907c80c3f0679"
+      }
+     ],
+     "beilage_im_text": true
     },
     {
      "nr": "4.3",
      "titel": "Dein Arbeitsplatz",
-     "notiz": "**Erzählen:** die fünf Ordner und wozu jeder da ist. **Zeigen:** ihren eigenen, dann den leeren zum Herunterladen. **Mitgeben:** das Grundgerüst",
+     "notiz": "**Zwei Hälften:** erst die Folien (welcher Ordner wofür, je eine Faustregel), dann der Bildschirm. **Erzählen:** context gegen reference ist die wichtigste Trennung. Und: zwei Ordner füllt sie selbst, drei füllt die KI — die Frage „was soll ich da reinschreiben?“ kommt garantiert. **Zeigen:** meinen eigenen Arbeitsplatz, dann das leere Gerüst, eine Liesmich aufmachen, die vier Dateien aus Kapitel 2 hineinkopieren, und den ersten Auftrag live laufen lassen. **Mitgeben:** das Grundgerüst, Prompt 15",
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Die Ordner und wozu jeder da ist. Danach lädst du dir das leere Grundgerüst herunter und hast von Anfang an einen aufgeräumten Platz.",
+     "plattformtext": "**In dieser Lektion:** Die fünf Ordner, das Grundgerüst, und was du aus\nKapitel 2 mitbringst.\n\n**Das Wichtigste in Kürze:**\n\n- Fünf Ordner, jeder mit einer Aufgabe: `context` (dein Wissen) · `outputs`\n  (was rauskommt) · `reference` (Material von anderen) · `scripts` (kleine\n  Helfer) · `plans` (was du vorhast).\n- **Der wichtigste Unterschied: `context` ist deins, `reference` ist von\n  anderen.** Sag ihr in deiner Gedächtnis-Datei, dass sie aus `reference` nie\n  wörtlich abschreibt — sonst landet fremder Text in deiner Caption.\n- **Je Ordner eine Faustregel:** `outputs` kann weg, ohne dass etwas\n  kaputtgeht — es lässt sich neu herstellen. `scripts` ist am Anfang leer und\n  füllt sich, wenn dich etwas zum dritten Mal nervt. `plans` klingt nach Umweg\n  und spart den halben Nachmittag.\n- Du legst nichts selbst an. Das Grundgerüst liegt unter diesem Video, fertig\n  mit allen Ordnern und einer Gedächtnis-Datei zum Ausfüllen. **In jedem Ordner\n  liegt eine Liesmich-Datei** — du musst dir nichts merken, du machst den Ordner\n  auf und es steht drin.\n- **In drei Schritten startklar:** Ordner an einen Platz legen, den du\n  wiederfindest (nicht in die Cloud) · Gedächtnis-Datei ausfüllen, fünf Zeilen\n  reichen · dein Wissen aus Kapitel 2 in `context` kopieren.\n- **Vier Dateien aus Kapitel 2 kommen in `context`:** dein Business-Brief\n  (2.3), was bei der Buch-Technik herauskam (2.4), deine Textproben (2.5) und\n  deine Floskel-Liste (2.2). Je eine eigene Datei, nicht alles in eine.\n- Liegt etwas als Word oder PDF vor, sag einfach: *„Mach daraus eine\n  Markdown-Datei.\"*\n\n**Der erste Auftrag — zum Kopieren:**\n\n> Schau dir alles an, was in context liegt. Sag mir zuerst, was du daraus schon\n> über mich weisst.\n>\n> Dann stell mir eine Frage nach der anderen zu dem, was dir noch fehlt — und\n> schreib meine Antworten selbst in die passende Datei.\n\nErst anschauen, dann fragen. Sonst fragt sie dich nach Dingen, die längst in\ndeinem Brief stehen.",
      "beilagen": [
       {
-       "was": "**Arbeitsplatz-Grundgerüst** (ZIP mit Ordnern, `CLAUDE.md`, `prime`, `kurse-sync`, `freebies-sync`, `handy`)",
+       "was": "**Arbeitsplatz-Grundgerüst** — ZIP mit den fünf Ordnern (je eine Liesmich), `CLAUDE.md` zum Ausfüllen und **vier Befehlen** (`/start` · `/shutdown` · `/create-plan` · `/implement`) in entschlackter Fassung ✅ gebaut, liegt in `Downloads/Mein-Business-Grundgeruest.zip` · Quelle: `scripts/ki-kurs/grundgeruest-bauen.py --zip`",
        "link": ""
       }
      ],
@@ -336,18 +341,45 @@
     {
      "nr": "4.4",
      "titel": "CLAUDE.md — das Gedächtnis",
-     "notiz": "**Erzählen:** alles, was nicht jedes Mal neu erklärt werden soll. **Zeigen:** ihre eigene, kurz durchscrollen — der Umfang macht Eindruck. Dann die leere Vorlage. **Dazu (04.10.): Damit nichts verloren geht** — beim Schliessen ist das Gespräch weg, der Ordner ist das Gedächtnis. `/start` am Anfang, `/shutdown` am Ende, „merk dir das“ zwischendurch, Online-Sicherung. In allen vier Calls der Konkurrenz die häufigste Frage. **Mitgeben:** Spickzettel + die beiden Befehle als Vorlage",
+     "notiz": "**Erzählen:** die fünf Teile, und der Unterschied zum Business-Brief. 🚨 **Was wird wann gelesen** — die Gedächtnis-Datei immer, context wenn gebraucht, `/start` zusätzlich. Deshalb gehören die Antworten aus der Buch-Technik NICHT hinein (Zettel am Kühlschrank gegen Aktenschrank). **Zeigen:** meine eigene, kurz durchscrollen — der Umfang macht Eindruck. Dann die leere Vorlage. **Mitgeben:** die CLAUDE.md-Anleitung, Prompt 16",
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Die eine Datei, in der alles steht, was du nie wieder erklären willst. Ich zeige dir zuerst meine eigene und dann die leere Vorlage für dich. Dazu zwei kleine Befehle für Anfang und Ende, damit nichts verloren geht, wenn du den Laptop zuklappst.",
+     "plattformtext": "**In dieser Lektion:** Die eine Datei, in der steht, was du nie wieder erklären\nwillst.\n\n**Das Wichtigste in Kürze:**\n\n- **Der Unterschied zum Business-Brief:** Der Brief sagt, wer du bist und wie du\n  klingst. Diese Datei sagt, wie in deinem Arbeitsplatz gearbeitet wird.\n- **Fünf Teile:** was das hier ist · wo was liegt · was immer mitgelesen wird ·\n  meine Regeln · was ich gerade vorhabe. Die Vorlage unter diesem Video hat zu\n  jedem Teil ein ausgefülltes Beispiel.\n- **Was wird wann gelesen?** Die Gedächtnis-Datei **immer**, bei jedem Gespräch,\n  automatisch. Die Dateien in `context`, **wenn sie gebraucht werden**. Und\n  `/start` schaut **zusätzlich**, was zuletzt passiert ist.\n- 🚨 **Deine Antworten aus der Buch-Technik gehören nicht in die\n  Gedächtnis-Datei.** Dort steht nur der Verweis: „lies\n  `context/business-brief.md`\". Alles, was immer mitgelesen wird, kostet bei\n  jedem einzelnen Auftrag Zeit. Das Bild dazu: Die Gedächtnis-Datei ist der\n  Zettel am Kühlschrank, `context` ist der Aktenschrank. Auf dem Zettel steht,\n  in welcher Schublade was liegt.\n- **Fang mit fünf Zeilen an.** Du schreibst nicht alles auf einmal hinein — sie\n  wächst von selbst.\n- Die Regel, nach der sie wächst: **Was dich dreimal geärgert hat, gehört als\n  Regel hinein.** Sonst ärgert es dich ein viertes Mal.\n- Meine eigene ist über Monate gewachsen, nicht an einem Nachmittag entstanden.\n  Jede Regel darin kommt aus einem echten Fehler.\n\n**Die leere Vorlage liegt unter diesem Video.**",
      "beilagen": [
       {
-       "was": "`CLAUDE.md`-Vorlage einzeln",
+       "was": "**`CLAUDE.md`-Anleitung** — fünf Teile, je mit ausgefülltem Beispiel, plus leeres Gerüst zum Kopieren ✅ gebaut (`beilagen/claude-md-vorlage.md`)",
+       "link": "/_blob/cc9c44aaa39cae393a8d0bda8cf806b5"
+      }
+     ],
+     "beilage_im_text": true
+    },
+    {
+     "nr": "4.4b",
+     "titel": "Damit nichts verloren geht",
+     "notiz": "**Erzählen:** drei Arten, etwas zu verlieren (Gespräch · Datei · Rechner). Was GitHub ist — eine Cloud für Ordner, die ein Gedächtnis hat. Git gegen GitHub, einmal langsam. 🚨 **Öffentlich oder privat** ist die wichtigste Minute: öffentlich heisst wirklich öffentlich. **Zeigen:** den Auftrag live, Schritt für Schritt durchführen lassen.",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "plattformtext": "**In dieser Lektion:** Wie du deinen Arbeitsplatz sicherst — und was GitHub\neigentlich ist.\n\n**Das Wichtigste in Kürze:**\n\n- Es gibt drei Arten, etwas zu verlieren: das **Gespräch** (Fenster zu, weg —\n  dagegen hilft der Arbeitsplatz), die **Datei** (einmal überschrieben) und den\n  **Rechner** (Festplatte kaputt, Laptop weg).\n- Gegen die letzten beiden hilft **GitHub**: ein Ort im Netz, an dem dein\n  Arbeitsplatz zusätzlich liegt — und der sich merkt, was sich wann geändert\n  hat. Wie eine Cloud für Ordner, die ein Gedächtnis hat.\n- **Git und GitHub sind zwei verschiedene Dinge.** Git ist ein kleines Programm\n  auf deinem Rechner, das mitschreibt. GitHub ist der Ort im Netz. Wenn später\n  die Meldung kommt „Git ist erforderlich\", weisst du jetzt, was gemeint ist.\n- Du richtest es nicht selbst ein. Du beschreibst, was du willst — sie macht\n  den Rest.\n- 🚨 **Beim Anlegen fragt GitHub: öffentlich oder privat.** Öffentlich heisst\n  wirklich öffentlich, jeder kann hineinschauen. **Du nimmst privat.** Frag\n  ausdrücklich danach.\n\n**Zum Kopieren:**\n\n> Ich will meinen Arbeitsplatz bei GitHub sichern. Ich habe noch nie damit\n> gearbeitet.\n>\n> Führ mich Schritt für Schritt durch, und sag mir bei jedem Schritt, was ich\n> anklicken muss. Das Verzeichnis soll privat sein, nicht öffentlich.",
+     "beilagen": [
+      {
+       "was": "Kein eigener Download. Der Auftrag und die privat-Warnung stehen in der Liesmich im Grundgerüst. ⏳ Eine Klick-für-Klick-Anleitung mit Bildern wäre die nächste sinnvolle Beilage",
        "link": ""
       }
      ],
      "beilage_im_text": true
+    },
+    {
+     "nr": "4.4c",
+     "titel": "Die Befehle",
+     "notiz": "**Erzählen:** ein Befehl ist ein Ablauf, den du einmal beschreibst. `/start` am Morgen, `/shutdown` am Abend — ohne den wächst die Gedächtnis-Datei nicht. Dazu `/create-plan` und `/implement` für alles Grössere. **Zeigen:** beide live aufrufen. Dann die Folie „Deine erste halbe Stunde“ als Drehbuch für den Bildschirmteil. **Mitgeben:** alle vier liegen im Grundgerüst",
+     "zeigen": true,
+     "neu": false,
+     "text_drin": false,
+     "plattformtext": "**In dieser Lektion:** Vier Abläufe, die du nur noch aufrufst — darunter der,\nder dein Gedächtnis pflegt.\n\n**Das Wichtigste in Kürze:**\n\n- Ein Befehl ist ein **Ablauf, den du einmal beschreibst und danach nur noch\n  aufrufst.** Statt jeden Morgen fünf Sätze zu tippen, tippst du `/start`.\n- **`/start`** am Anfang jeder Sitzung: Sie schaut, was im Arbeitsplatz liegt\n  und was zuletzt offen war, und fragt dann, woran du heute arbeitest.\n- **`/shutdown`** am Ende: Sie räumt auf, schreibt in die Gedächtnis-Datei, was\n  dazugelernt wurde, und sichert alles.\n- 🚨 **Ohne `/shutdown` wächst deine Gedächtnis-Datei nicht.** Dann erklärst du\n  ihr in vier Wochen wieder dasselbe wie heute. Sie wächst nicht von selbst —\n  sie wächst, weil abends jemand hineinschreibt.\n- Zwei weitere für alles, was grösser ist als ein Auftrag: **`/create-plan`**\n  schreibt auf, was sie vorhat, in Schritten — du liest es und sagst, was nicht\n  stimmt. **`/implement`** arbeitet den Plan danach ab und hakt ihn dabei ab.\n  Der Plan bleibt in `plans` liegen, du kannst in drei Wochen nachlesen, warum\n  etwas so gebaut wurde.\n- Ein Befehl und ein Skill sind dasselbe Prinzip, nur an verschiedenen Stellen\n  abgelegt. Mehr dazu in Modul 5.\n\n**Alle vier liegen im Grundgerüst aus 4.3 — du musst keinen davon schreiben.**",
+     "beilagen": [],
+     "beilage_im_text": false
     },
     {
      "nr": "4.5",
@@ -356,7 +388,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Sag, was rauskommen soll, statt wie er es machen soll. Eine Sache pro Auftrag. Klingt banal und ändert alles.",
+     "plattformtext": "**In dieser Lektion:** Drei Gewohnheiten, die dir viel Nachbessern ersparen.\n\n**Das Wichtigste in Kürze:**\n\n- **Sag, was rauskommen soll — nicht, wie sie es machen soll.** Sie kennt den\n  Weg meistens besser als du.\n- **Ein Ding pro Auftrag.** Zwei Aufgaben in einem Satz werden beide halb\n  erledigt.\n- **Lass sie fragen.** Wenn etwas unklar ist, soll sie nachhaken statt zu\n  raten. Schreib das in deine Gedächtnis-Datei, dann macht sie es von selbst.\n\n**Der Unterschied an einem Beispiel:** *„Mach eine Tabelle mit drei Spalten\"*\nbekommt genau das — auch wenn es für deine Frage nicht passt. *„Ich will auf\neinen Blick sehen, was diese Woche offen ist\"* bekommt einen Vorschlag, zu dem\ndu Ja oder Nein sagst.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -367,7 +399,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Was du machst, wenn Murks rauskommt, und warum neu ansetzen fast immer besser ist als nachbessern. Dazu die drei Fehler, die am Anfang alle machen.",
+     "plattformtext": "**In dieser Lektion:** Was du machst, wenn Murks rauskommt.\n\n**Das Wichtigste in Kürze:**\n\n- **Neu ansetzen schlägt nachbessern.** Wenn das Ergebnis danebenliegt, ist die\n  Versuchung gross, es mit drei Nachfragen geradezubiegen. Meistens wird es\n  dabei schlechter.\n- Mach ein neues Gespräch auf, schreib den Auftrag **um** statt ihn zu\n  ergänzen, und leg ein Beispiel dazu, wie gut aussieht.\n- Die drei Fehler am Anfang: **zu viel auf einmal** (drei Aufgaben, alle drei\n  halb) · **zu wenig Kontext** (sie weiss nicht, für wen der Text ist) ·\n  **endloses Gespräch** (nach dreissig Runden widerspricht sie sich).\n- Und der Satz, der hier am meisten zählt: **Es liegt am Auftrag, nicht an\n  dir.** Einen Auftrag kannst du ändern.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -378,7 +410,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Das Wichtigste aus Modul 4 und die Checkliste dazu.",
+     "plattformtext": "**In dieser Lektion:** Was jetzt bei dir steht, bevor wir an die Skills gehen.\n\n**Das nimmst du mit:**\n\n- **Einen Arbeitsplatz** — Claude Code läuft, die Ordner stehen, dein Wissen\n  liegt darin.\n- **Ein Gedächtnis** — deine erste Fassung der CLAUDE.md.\n- **Drei Gewohnheiten** — am Ergebnis entlang, ein Ding pro Auftrag, fragen\n  lassen.\n\n🚨 **Wenn Claude Code bei dir noch nicht läuft, mach hier nicht weiter.** Alles\nab Modul 5 setzt einen laufenden Arbeitsplatz voraus.\n\n**Die Checkliste zum Abhaken liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Checkliste je Modul (PDF)",
@@ -388,8 +420,8 @@
      "beilage_im_text": true
     }
    ],
-   "folien": 29,
-   "folien_lektionen": 7,
+   "folien": 51,
+   "folien_lektionen": 9,
    "link": "https://claude.ai/artifact/H2t9veSbsVwRvrBnwNRRC8",
    "modultext": "Jetzt richtest du dir deinen eigenen Arbeitsplatz ein. Das klingt nach mehr, als es ist: Du lädst dir mein Grundgerüst herunter, machst es auf und schreibst weiter Deutsch.",
    "etappe": "Mo 9.11.2026",
@@ -406,7 +438,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Ein Rezept, das die KI jedes Mal gleich abarbeitet. Ich rufe einen auf und du siehst, was passiert.",
+     "plattformtext": "**In dieser Lektion:** Ich rufe einen auf, und du siehst, was passiert.\n\n**Das Wichtigste in Kürze:**\n\n- **Das Bild dahinter:** ein Rezept. Darin steht, was gebraucht wird, in\n  welcher Reihenfolge es gemacht wird und woran du merkst, dass es gelungen ist.\n- Ein Skill ist nichts Technisches. Es ist eine Textdatei, in der eine Arbeit\n  beschrieben steht — auf Deutsch, in ganzen Sätzen.\n- **Was sich dadurch ändert:** Du erklärst eine Arbeit einmal statt jedes Mal.\n  Und sie wird jedes Mal gleich gut, auch an einem müden Dienstag.\n- Die vier Befehle aus Modul 4 waren schon Skills. Du hast das Prinzip also\n  längst benutzt — jetzt baust du einen eigenen.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -417,7 +449,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Wir gehen einen fertigen Skill Zeile für Zeile durch: Kopf, Zweck, Regeln, gewünschtes Ergebnis, Beispiel. Die Datei bekommst du mit.",
+     "plattformtext": "**In dieser Lektion:** Wir gehen einen fertigen Skill Zeile für Zeile durch.\n\n**Das Wichtigste in Kürze:**\n\n- **Sechs Teile, immer dieselben:** der Kopf (Name und wann er dran ist) · der\n  Zweck · wo das Wissen liegt · die Regeln · was herauskommen soll · ein\n  Beispiel.\n- Der Kopf ist das, woran sie erkennt, dass dieser Skill gemeint ist. Ohne ihn\n  findet sie ihn nicht.\n- **Der Teil, an dem es meistens scheitert:** „was herauskommen soll\". Wer das\n  offen lässt, bekommt jedes Mal etwas anderes. Je genauer du das Ergebnis\n  beschreibst, desto weniger musst du nachbessern.\n- Ein Beispiel im Skill ist mehr wert als drei zusätzliche Regeln.\n\n**📎 Die Datei, die wir hier auseinandernehmen, liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Beispiel-Skill Kochplan (die auseinandergenommene Datei)",
@@ -433,7 +465,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Alles, was du dreimal ungefähr gleich machst. Ich zeige dir eine ehrliche Liste aus meinem eigenen Alltag, damit du deine eigene aufschreiben kannst.",
+     "plattformtext": "**In dieser Lektion:** Deine eigene Liste, statt meiner Beispiele.\n\n**Das Wichtigste in Kürze:**\n\n- **Drei Merkmale, und alle drei müssen stimmen:** Du machst die Arbeit wieder ·\n  sie hat eine Form, die jedes Mal ähnlich ist · und sie nervt dich.\n- Das dritte ist das wichtigste. Was dich nicht nervt, beschreibst du nie\n  sorgfältig genug.\n- **Deine Liste:** Schreib auf, was du in der letzten Woche mehr als einmal\n  gemacht hast. Nicht die grossen Vorhaben — die kleinen Handgriffe.\n- Mein eigenes Beispiel ist ehrlich und unspektakulär. Genau darum geht es:\n  Skills sind keine Grossprojekte.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -444,7 +476,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Von der Idee zur fertigen Datei, live mitgefilmt.",
+     "plattformtext": "**In dieser Lektion:** Von der Idee zur fertigen Datei, live mitgefilmt.\n\n**Das Wichtigste in Kürze:**\n\n- **Vier Schritte:** beschreiben · bauen lassen · ausprobieren · nachschärfen.\n- **Zwei Wege zum selben Ziel:** Du kannst den Skill von ihr bauen lassen —\n  dafür gibt es einen fertigen Helfer — oder ihn selbst schreiben. Der erste Weg\n  ist schneller, der zweite verstehst du besser.\n- Ich zeige beide am selben Beispiel, damit du siehst, wo sie sich\n  unterscheiden.\n- **Der erste Entwurf ist nie fertig.** Das ist kein Fehler, das ist der\n  Vorgang: Du probierst ihn aus und schärfst nach, was danebenlag.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -455,7 +487,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Was ein Baukasten nie wissen kann: deine Regeln und deine Verbote. Hier machst du aus einem brauchbaren Skill deinen eigenen.",
+     "plattformtext": "**In dieser Lektion:** Was ein Baukasten nie wissen kann.\n\n**Das Wichtigste in Kürze:**\n\n- **Wo du ansetzt:** bei dem, was du im Ergebnis umgebaut hast. Jede Korrektur,\n  die du von Hand machst, ist eine fehlende Regel.\n- **Verbote sind wichtiger als Vorgaben.** Eine Vorgabe sagt, was sie tun soll\n  — und sie macht es irgendwie. Ein Verbot verhindert genau das, was dich\n  gestört hat.\n- Schreib die Verbote so, wie du sie denkst. „Bitte achte auf einen natürlichen\n  Ton\" hilft ihr nicht — das konkrete Wort, das nicht vorkommen darf, schon.\n- Deine Floskel-Liste aus Lektion 2.2 gehört hier hinein — oder der Skill\n  verweist darauf.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -466,7 +498,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Der Punkt, an dem ein Skill besser wird als du selbst an einem müden Tag. Ich zeige dir eine Regel, die bei mir aus einem echten Fehler entstanden ist.",
+     "plattformtext": "**In dieser Lektion:** Der Punkt, an dem ein Skill besser wird als du an einem\nmüden Tag.\n\n**Das Wichtigste in Kürze:**\n\n- **Wie das im Alltag aussieht:** Du gibst denselben Auftrag, du korrigierst\n  dasselbe, und beim dritten Mal schreibst du es in den Skill.\n- Ab dann macht sie diesen Fehler nicht mehr — und du musst dich nie wieder\n  erinnern, dass er dir wichtig war.\n- Ich zeige dir eine Regel aus meinem eigenen Skill, die aus einem echten\n  Fehler entstanden ist. Die meisten meiner Regeln sind so entstanden.\n- Dasselbe Prinzip wie bei der Gedächtnis-Datei in Modul 4. Es ist die eine\n  Gewohnheit, die alles andere trägt.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -477,7 +509,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Du lädst fremde Anweisungen in deinen Arbeitsplatz. Worauf du vorher schaust.",
+     "plattformtext": "**In dieser Lektion:** Du lädst fremde Anweisungen in deinen Arbeitsplatz.\n\n**Das Wichtigste in Kürze:**\n\n- **Worauf du schaust, bevor du einen fremden Skill benutzt:** Was darf er\n  anfassen? Schickt er etwas nach draussen? Steht darin etwas, das du nicht\n  verstehst?\n- Ein Skill ist Text — du kannst ihn aufmachen und lesen. Mach das. Es dauert\n  zwei Minuten.\n- 🚨 **Lass ihn dir im Zweifel erklären.** „Lies diesen Skill und sag mir in\n  einfachen Worten, was er tut und was er anfassen darf\" ist ein völlig\n  legitimer Auftrag.\n- Fremde Skills sind nichts Schlechtes. Sie sind nur nichts, was man\n  unbesehen hineinkopiert.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -488,7 +520,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Das Wichtigste aus Modul 5, dazu das leere Skill-Gerüst zum Herunterladen.",
+     "plattformtext": "**In dieser Lektion:** Was jetzt bei dir steht.\n\n**Das nimmst du mit:**\n\n- **Einen eigenen Skill** — für eine Arbeit, die du sowieso machst.\n- **Eine Liste** — die nächsten drei, die sich lohnen.\n- **Eine Gewohnheit** — dreimal korrigiert, dann eine Regel.\n\n**📎 Unter diesem Video liegen die Checkliste und ein leeres Skill-Gerüst mit\nallen sechs Teilen.**",
      "beilagen": [
       {
        "was": "Checkliste je Modul (PDF)",
@@ -520,7 +552,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Derselbe Auftrag, nur dass er von selbst losgeht. Was dafür dazukommen muss.",
+     "plattformtext": "**In dieser Lektion:** Derselbe Auftrag, nur dass er von selbst losgeht.\n\n**Das Wichtigste in Kürze:**\n\n- **Drei Teile, mehr braucht es nicht:** der **Auftrag** (das ist dein Skill) ·\n  der **Wecker** (wann er losgeht) · der **Briefkasten** (wo das Ergebnis\n  ankommt).\n- Der Auftrag ist der Teil, den du schon kannst. Die anderen zwei sind\n  Einstellungen, keine Arbeit.\n- Als Briefkasten nehmen wir Telegram. Das ist kostenlos, läuft auf jedem Handy\n  und lässt sich in zehn Minuten einrichten.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -531,7 +563,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Was bei mir auf dem Handy ankommt und wofür jeder einzelne gut ist. Damit du siehst, was überhaupt möglich ist, bevor du deinen eigenen baust.",
+     "plattformtext": "**In dieser Lektion:** Was bei mir auf dem Handy ankommt — damit du siehst, was\nmöglich ist.\n\n**Das Wichtigste in Kürze:**\n\n- **Vier Beispiele aus vier Ecken meines Lebens:** Garten · Küche · Business ·\n  Haushalt. Zwei davon haben mit Arbeit gar nichts zu tun.\n- **Was alle vier gemeinsam haben:** Sie nehmen mir keine Entscheidung ab. Sie\n  legen mir etwas hin, und ich schaue drauf.\n- Der häufigste Anfängerfehler ist ein Bot, der etwas selbst erledigt. Ein Bot,\n  der etwas vorbereitet, ist mehr wert und macht weniger Ärger.\n- Fang mit etwas Privatem an. Dort merkst du sofort, ob es taugt, und es ist\n  nichts kaputt, wenn es danebengeht.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -542,7 +574,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Von null bis zur ersten Nachricht auf deinem Handy, komplett mitgefilmt. Das Gerüst dazu bekommst du mit.",
+     "plattformtext": "**In dieser Lektion:** Von null bis zur ersten Nachricht auf deinem Handy.\n\n**Das Wichtigste in Kürze:**\n\n- **Vier Schritte**, komplett mitgefilmt. Du brauchst dafür nichts weiter als\n  Telegram auf dem Handy.\n- **Du musst nicht bei null anfangen:** Das Gerüst liegt unter diesem Video. Du\n  beschreibst, was er tun soll, und sie baut den Rest.\n- 🚨 Beim Einrichten entsteht ein **Zugangsschlüssel**. Der gehört nicht in\n  deinen Text, nicht in ein Dokument und nicht in eine Nachricht — er gehört in\n  die Datei, die dafür da ist. Wie das geht, sagt sie dir beim Einrichten;\n  warum es zählt, steht in Modul 10.\n\n**📎 Das Bot-Gerüst liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Bot-Gerüst Telegram",
@@ -558,7 +590,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Wo der Bot wohnt, damit er läuft, wenn du schläfst — und was das im Monat kostet.",
+     "plattformtext": "**In dieser Lektion:** Wo der Bot wohnt, damit er läuft, wenn du schläfst.\n\n**Das Wichtigste in Kürze:**\n\n- **Zwei Wege:** Er läuft auf deinem Rechner — dann muss der an sein. Oder er\n  läuft bei einem Anbieter im Netz — dann läuft er immer, und das kostet rund 5\n  im Monat.\n- **Beim Zeitpunkt aufpassen:** Ein Bot, der um sieben läuft, bringt dir nichts,\n  wenn du um sechs schon am Handy warst. Überleg vorher, wann du die Nachricht\n  wirklich lesen willst.\n- Ein Bot, der etwas von deinem Rechner braucht — eine Datei, ein Programm —\n  kann nicht im Netz wohnen. Das ist die Grenze, nach der du die Entscheidung\n  triffst.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -569,7 +601,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Die drei häufigsten Gründe und wo du nachschaust. Spart dir einen halben Abend.",
+     "plattformtext": "**In dieser Lektion:** Die drei häufigsten Gründe und wo du nachschaust.\n\n**Das Wichtigste in Kürze:**\n\n- **1 · Der Wecker:** Er ist gar nicht losgegangen. Steht die Zeit richtig,\n  stimmt die Zeitzone?\n- **2 · Der Schlüssel:** Zugänge laufen ab. Das ist der Grund, bei dem alle\n  zuletzt nachschauen und der es am häufigsten ist.\n- **3 · Der Auftrag:** Er ist losgegangen und mitten drin gestolpert. Dann steht\n  es im Protokoll.\n- **Und wenn du im Protokoll nichts verstehst:** kopier es hinein und frag, was\n  es bedeutet. Das ist derselbe Handgriff wie bei jeder Fehlermeldung — und er\n  spart dir einen halben Abend.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -580,7 +612,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Das Wichtigste aus Modul 6 und die Checkliste dazu.",
+     "plattformtext": "**In dieser Lektion:** Was jetzt bei dir läuft.\n\n**Das nimmst du mit:**\n\n- **Einen Bot**, der sich von selbst meldet.\n- **Einen Ort**, an dem er wohnt — und du weisst, warum du den gewählt hast.\n- **Drei Stellen**, an denen du nachschaust, wenn er schweigt.\n\n**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Checkliste je Modul (PDF)",
@@ -593,7 +625,7 @@
    "folien": 23,
    "folien_lektionen": 6,
    "link": "https://claude.ai/artifact/1XTWypDWxRjnYaJcKRWYtG",
-   "modultext": "Der Unterschied zwischen einem Skill und einem Bot ist klein: Beim Bot ruft ihn niemand mehr auf. Er meldet sich von selbst, auch wenn dein Laptop zu ist.",
+   "modultext": "Der Unterschied zwischen einem Skill und einem Bot ist klein: Beim Bot ruft ihn niemand mehr auf. Er meldet sich von selbst.",
    "etappe": "Mo 16.11.2026",
    "frei_ab": "2026-11-16"
   },
@@ -608,10 +640,10 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Für jedes Format ein Befehl, und alle lesen dieselben Wissensdateien. Ich zeige dir, wie das zusammenhängt.",
+     "plattformtext": "**In dieser Lektion:** Für jedes Format ein Befehl, und alle lesen dieselben\nWissensdateien.\n\n**Das Wichtigste in Kürze:**\n\n- **Wie das zusammenhängt:** Vier Befehle — Caption, Story, Karussell, Reel —\n  und darunter liegen Dateien mit deinem Wissen. Änderst du eine Datei, ändert\n  sich das Ergebnis bei allen vier.\n- Das ist der ganze Trick: Du pflegst ein Wissen und nicht vier Maschinen.\n- 🚨 **Deine Wissensdateien sind am Anfang leer.** Darin stehen Überschriften\n  und je zwei Sätze, was hineingehört — keine meiner Formeln, keine meiner\n  Beispiele. Was da hineingehört, ist deine Arbeit, und genau die macht den\n  Unterschied.\n- Was in diesen Dateien stehen muss, damit wirklich gute Beiträge herauskommen,\n  ist ein eigenes Thema. Hier lernst du die Technik, dort den Inhalt.\n\n**📎 Unter diesem Video liegen die vier Befehle plus die leeren\nWissensdateien.**",
      "beilagen": [
       {
-       "was": "`caption` · `karussell` · `reels` · `story` · `visuals` + leere Wissensdateien",
+       "was": "Die vier Befehle `caption` · `story` · `karussell` · `reels` + leere Wissensdateien ⏳ offen",
        "link": ""
       }
      ],
@@ -624,7 +656,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Derselbe Befehl zweimal: einmal mit leerer Wissensdatei, einmal mit gefüllter. Der Unterschied im Ergebnis zeigt dir besser als jede Erklärung, worauf es ankommt.",
+     "plattformtext": "**In dieser Lektion:** Derselbe Befehl zweimal, und der Unterschied erklärt\nalles.\n\n**Das Wichtigste in Kürze:**\n\n- **Durchgang 1** läuft mit leerer Wissensdatei. **Durchgang 2** mit gefüllter.\n  Beide Ergebnisse siehst du nebeneinander.\n- Das Ergebnis aus Durchgang 1 ist nicht falsch. Es ist nur beliebig — es\n  könnte von jeder sein.\n- **Die Lehre daraus ist die wichtigste des Moduls:** Die Maschine macht nicht\n  den Unterschied. Das Wissen darin macht ihn.\n- Story funktioniert genauso. Derselbe Aufbau, dasselbe Wissen, anderes Format.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -635,7 +667,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Erst die Folientexte, dann die Bilder. Zwei Schritte, die viele in einen packen wollen und sich damit das Ergebnis kaputtmachen.",
+     "plattformtext": "**In dieser Lektion:** Erst die Folientexte, dann die Bilder.\n\n**Das Wichtigste in Kürze:**\n\n- **Zwei Schritte, und sie gehören getrennt:** erst die Texte freigeben, dann\n  die Bilder bauen.\n- Wer beides in einen Schritt packt, baut zehn Bilder mit einem Text, der nicht\n  stimmt — und muss alles neu machen. Zehn Minuten Lesen sparen eine Stunde\n  Nachbauen.\n- **Warum ein eigener Editor:** Damit du einzelne Folien ändern kannst, ohne\n  den ganzen Satz neu zu bauen. Ich zeige dir, wie ich das gelöst habe.\n- Ein Bild ändern heisst hier: eine Zeile ändern. Nichts wird neu gezeichnet.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -646,7 +678,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Einmal frei in die Kamera sprechen, mit Versprechern und Wiederholungen, und die Maschine schneidet daraus einen Rohschnitt. Aufbaustufe: Du brauchst dafür ein paar Programme mehr.",
+     "plattformtext": "**In dieser Lektion:** Einmal frei in die Kamera sprechen, und die Maschine\nschneidet.\n\n**Das Wichtigste in Kürze:**\n\n- **Was passiert:** Du sprichst mit Versprechern und Wiederholungen, sie\n  schreibt mit, erkennt die Wiederholungen und schneidet daraus einen\n  Rohschnitt.\n- **Die Regel dahinter:** Der letzte vollständige Versuch gewinnt. Du musst dir\n  also nichts merken und nichts notieren — einfach nochmal sagen.\n- 🚨 **Ehrlich zur Einrichtung:** Das ist die Aufbaustufe. Dafür braucht es ein\n  paar Programme mehr, und das Einrichten dauert länger als bei allem anderen\n  in diesem Kurs. Wenn du gerade keine Lust darauf hast, überspring die Lektion\n  und komm später zurück.\n- Den Feinschnitt macht am Ende ein Mensch. Eine Maschine hört nicht, ob ein\n  Satz klingt.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -657,7 +689,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Warum bei mir nichts ungeprüft rausgeht. Dein Konto hängt an deinem Partnerunternehmen, und ein unbedachter Satz kostet dich mehr, als eine automatisierte Woche dir spart. Ich zeige dir, wie ich das gelöst habe.",
+     "plattformtext": "**In dieser Lektion:** Warum bei mir nichts ungeprüft rausgeht.\n\n**Das Wichtigste in Kürze:**\n\n- **Warum das bei uns anders ist als bei anderen:** Dein Konto hängt an deinem\n  Partnerunternehmen. Ein unbedachter Satz kostet dich mehr, als eine\n  automatisierte Woche dir spart.\n- **Wie das praktisch aussieht:** Vorschlag · Freigabe · Abendlauf. Die Maschine\n  legt vor, du entscheidest, und erst danach geht etwas raus.\n- Der Knopf, mit dem du freigibst, ist die Entscheidung. Nicht die Planung,\n  nicht das Datum — der Klick.\n- 🚨 **Was die KI schreibt, verantwortest du.** Dieser Satz gilt für jeden\n  Beitrag in diesem Modul, und Modul 10 geht darauf ein.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -668,7 +700,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Abends freigeben, und am nächsten Morgen ist es draussen. Wie die Kette dahinter aussieht.",
+     "plattformtext": "**In dieser Lektion:** Abends freigeben, am nächsten Morgen ist es draussen.\n\n**Das Wichtigste in Kürze:**\n\n- **Der Abendlauf** holt alles ab, was du freigegeben hast, und plant es ein.\n  Einmal am Tag, zur festen Zeit.\n- **Zwei Stolpersteine, die ich selbst hatte:** Ein Beitrag, dessen Zeitpunkt\n  schon vorbei ist, wird nie eingeplant — und meldet trotzdem „freigegeben\".\n  Und wenn du etwas von Hand postest, muss die Maschine das wissen, sonst\n  postet sie es ein zweites Mal.\n- Beides sind Fehler, die man nicht sieht, bevor sie passieren. Ich zeige dir,\n  wie ich sie abgefangen habe.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -679,7 +711,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Automatisch erzeugte Beiträge werden schlecht, sobald niemand mehr hinschaut. Woran du das erkennst und wie du es maschinell prüfen lässt.",
+     "plattformtext": "**In dieser Lektion:** Woran du erkennst, dass die Qualität rutscht — und wie\ndu es prüfen lässt.\n\n**Das Wichtigste in Kürze:**\n\n- **Woran man es erkennt:** Die Beiträge werden gleichförmig. Dieselben Muster,\n  dieselben Übergänge, dieselbe Länge.\n- **Deshalb prüft ein Skript mit:** Es sucht nach den Mustern aus deiner\n  Floskel-Liste und meldet jeden Fund mit Fundstelle. Das ist Fleissarbeit, und\n  dafür ist eine Maschine besser als ein Mensch um elf Uhr abends.\n- 🚨 **Was ein Skript nicht kann:** beurteilen, ob der Beitrag etwas taugt. Ob\n  er berührt, ob jemand etwas mitnimmt, ob er nach dir klingt — das bleibt\n  Lesearbeit. Das Skript sagt das am Ende jedes Laufs selbst.\n- Jede neue Prüfregel wird an einem bekannt schlechten Satz getestet **und** an\n  einem guten, der nicht anschlagen darf. Nach dem dritten Fehlalarm liest\n  niemand mehr hin.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -690,7 +722,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Das Wichtigste aus Modul 7 und die Checkliste dazu.",
+     "plattformtext": "**In dieser Lektion:** Was jetzt bei dir läuft.\n\n**Das nimmst du mit:**\n\n- **Vier Maschinen** — Caption, Story, Karussell, Reel.\n- **Einen Prüfweg** — maschinell, was maschinell geht, und der Rest von Hand.\n- **Eine Regel** — Freigabe statt Autopilot.\n\n**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Checkliste je Modul (PDF)",
@@ -718,7 +750,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Was die beiden Befehle können und wo ihre Grenze liegt.",
+     "plattformtext": "**In dieser Lektion:** Drei Maschinen und wo ihre Grenze liegt.\n\n**Das Wichtigste in Kürze:**\n\n- **Produkt** — baut aus einer Idee eine Struktur: Module, Lektionen, was\n  hineingehört.\n- **Verkaufsseite** — macht aus deinem Angebot eine fertige Seite, Abschnitt\n  für Abschnitt.\n- **Mails** — schreibt die Strecke, die nach dem Kauf losgeht.\n- 🚨 **Und der Treibstoff?** Genau wie in Modul 7: Die Maschinen bauen die Form.\n  Was hineingehört — welches Problem dein Angebot löst, warum jemand jetzt\n  kauft, was dein Preis rechtfertigt — kommt von dir. Ohne das baut sie eine\n  schöne Seite für ein beliebiges Angebot.\n\n**📎 Unter diesem Video liegen die beiden Befehle plus die leeren\nWissensdateien.**",
      "beilagen": [
       {
        "was": "`produkt` · `salespage` + leere Wissensdateien",
@@ -734,7 +766,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Von der Beschreibung deines Angebots zur fertigen Seite, live mitgefilmt.",
+     "plattformtext": "**In dieser Lektion:** Von der Beschreibung deines Angebots zur fertigen Seite.\n\n**Das Wichtigste in Kürze:**\n\n- **Was der Skill von dir will**, bevor er anfängt: für wen das Angebot ist,\n  welches Problem es löst, was drin ist, was es kostet, und warum man dir das\n  abnimmt.\n- Je dünner deine Antworten, desto allgemeiner die Seite. Das ist keine Schwäche\n  der Maschine — eine Seite kann nur so konkret sein wie das, was du ihr sagst.\n- **Und das Aussehen?** Das steht fest, bevor der erste Satz geschrieben ist:\n  deine Farben, deine Schriften, dein Aufbau. Du entscheidest nicht bei jeder\n  Seite neu, wie sie aussieht.\n- 🚨 **Keine erfundenen Zahlen und keine erfundenen Kundenstimmen.** Wenn du\n  keine hast, bleibt der Platz leer — eine erfundene Stimme auf einer\n  Verkaufsseite ist das Einzige, was dich wirklich teuer werden kann.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -745,7 +777,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Wie die Seite online geht und unter deiner eigenen Adresse liegt.",
+     "plattformtext": "**In dieser Lektion:** Wie die Seite online geht und unter deiner Adresse\nliegt.\n\n**Das Wichtigste in Kürze:**\n\n- **Drei Schritte:** Seite anlegen · Inhalt hineingeben · Adresse setzen.\n- Eine neue Seite geht zuerst als **Entwurf** online. Du schaust sie an, und\n  erst dann stellst du sie öffentlich.\n- 🚨 **Am Handy anschauen, immer.** Mehr als die Hälfte deiner Leute kommt vom\n  Handy, und genau dort verschiebt sich das, was am Rechner gut aussah.\n- Was dir nicht passt, sagst du in einem Satz. Du änderst keine Zeile selbst.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -756,7 +788,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Wie du deinen Mail-Anbieter anhängst. Ehrlich dazu: Hier hängt ein Zugang dran, und den solltest du bewusst setzen.",
+     "plattformtext": "**In dieser Lektion:** Wie du deinen Mail-Anbieter anhängst.\n\n**Das Wichtigste in Kürze:**\n\n- **Was du dafür brauchst:** einen Zugang zu deinem Mail-Programm. Ehrlich dazu:\n  Hier hängt ein echter Schlüssel dran, und den solltest du bewusst setzen.\n- 🚨 **Ein Zugang zum Mail-Verteiler kann verschicken.** Richte ihn ein, und leg\n  dir die Regel fest, dass nichts rausgeht, ohne dass du es vorher gesehen hast.\n  Bei mir ist das die eine Stelle, an der ich nie etwas automatisch laufen lasse.\n- **Was eine Strecke ausmacht:** ausliefern · dranbleiben · weitergehen. Drei\n  Jobs, und jede Mail hat genau einen davon.\n- Eine Mail, die alle drei gleichzeitig will, erledigt keinen davon.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -767,7 +799,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Das Wichtigste aus Modul 8 und die Checkliste dazu.",
+     "plattformtext": "**In dieser Lektion:** Was jetzt bei dir steht.\n\n**Das nimmst du mit:**\n\n- **Drei Maschinen** — Produkt, Verkaufsseite, Mails.\n- **Eine Seite im Netz** — unter deiner eigenen Adresse.\n- **Eine Regel** — nichts geht raus, ohne dass du es gesehen hast.\n\n**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Checkliste je Modul (PDF)",
@@ -795,7 +827,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Eine eigene kleine Seite mit Datenbank, die deine KI befüllt und die du bedienst. Auch vom Handy aus.",
+     "plattformtext": "**In dieser Lektion:** Eine eigene kleine Seite mit Gedächtnis, die du bedienst.\n\n**Das Wichtigste in Kürze:**\n\n- **Was daran anders ist:** Es ist keine Datei und keine Website. Es ist eine\n  Seite, die deine KI gebaut hat, die eine eigene kleine Datenbank hat und die\n  du vom Handy aus bedienen kannst.\n- Du brauchst dafür keinen Webspace, keine Adresse und keine Technik.\n- **Wofür sich das lohnt:** alles, wo du etwas anschauen, abhaken oder freigeben\n  willst. Für alles, wo du nur etwas lesen willst, reicht eine Nachricht aufs\n  Handy.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -806,7 +838,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Vom leeren Gerüst zur ersten Ansicht. Die Vorlage bekommst du mit.",
+     "plattformtext": "**In dieser Lektion:** Vom leeren Gerüst zur ersten Ansicht.\n\n**Das Wichtigste in Kürze:**\n\n- **Drei Schritte:** beschreiben · bauen lassen · benutzen. Wie beim Skill in\n  Modul 5.\n- **Du musst nicht bei null anfangen:** Die Vorlage unter diesem Video hat die\n  Ansicht und den Aufbau schon drin. Du sagst, was hineingehört.\n- 🚨 **Das Gedächtnis ist der Unterschied.** Eine Seite ohne Datenbank vergisst\n  alles, sobald du sie zumachst. Erst mit Gedächtnis wird daraus etwas, an dem\n  du morgens vorbeischauen kannst.\n\n**📎 Die Cockpit-Vorlage liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Cockpit-Vorlage (leeres Artifact)",
@@ -817,12 +849,12 @@
     },
     {
      "nr": "9.3",
-     "titel": "Eine Plattform für deine Kundschaft",
-     "notiz": "**Zeigen:** die Begleitung zur 30-Tage-Energie-Routine — Rezepte, Tagesimpuls, Checkliste und Vorrat fürs Handy, gebaut als Artifact. Wie so eine Seite entsteht, was man mit ihr alles machen kann (Willkommensseite, Anwendungstipps, Checkliste für eine Aktion) und wie man sie teilt. **Ehrlich:** eine Seite für die Kundschaft bekommt keine Datenbank, weil sie sonst nur für Konten der eigenen Organisation offen ist — Einträge bleiben auf dem Handy der Kundin. **Mitgeben:** Auftrag zum Nachbauen, mit Platzhaltern (Patricia, 28.09.2026)",
+     "titel": "Dein Wissen hineinbringen — und eine Plattform für deine Kundschaft",
+     "notiz": "**Erzählen:** so eine Seite kommt nicht an deine Dateien. Wie dein Wissen trotzdem hineinkommt: sammeln · ablegen · mitgeben. Es ist eine Kopie, keine Verbindung. **Zeigen:** die Begleitung zur 30-Tage-Energie-Routine — Rezepte, Tagesimpuls, Checkliste und Vorrat fürs Handy, gebaut als Artifact. Wie so eine Seite entsteht, was man mit ihr alles machen kann (Willkommensseite, Anwendungstipps, Checkliste für eine Aktion) und wie man sie teilt. **Ehrlich:** eine Seite für die Kundschaft bekommt keine Datenbank, weil sie sonst nur für Konten der eigenen Organisation offen ist — Einträge bleiben auf dem Handy der Kundin. **Mitgeben:** Auftrag zum Nachbauen, mit Platzhaltern (Patricia, 28.09.2026)",
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Was abends automatisch passiert, damit du morgens nichts mehr anstossen musst.",
+     "plattformtext": "**In dieser Lektion:** Warum die Seite dein Wissen nicht von selbst kennt — und\nwie es trotzdem hineinkommt.\n\n**Das Wichtigste in Kürze:**\n\n- 🚨 **Das Problem:** So eine Seite kommt nicht an deine Dateien. Sie kennt\n  deinen Arbeitsplatz nicht, und das ist Absicht — sonst könnte jede Seite in\n  jeden Ordner schauen.\n- **Wie es trotzdem geht, in drei Schritten:** sammeln · ablegen · mitgeben. Dein\n  Wissen wird einmal zusammengetragen und als Brief in die Seite gelegt.\n- **Drei Dinge, die du dabei wissen musst:** Es ist eine Kopie, keine\n  Verbindung — änderst du die Quelle, musst du den Brief neu legen. Jede\n  Anfrage schleppt ihn mit, das kostet etwas. Und was darin steht, bestimmt die\n  Qualität, nicht die Seite.\n- 🚨 **Und eine Grenze, die zählt:** Sobald so eine Seite deine Dateien oder\n  eine Datenbank anfassen darf, ist sie nichts mehr, was du weitergeben kannst.\n  Eine Seite für deine Kundschaft baut man bewusst ohne diese Fähigkeiten.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -833,18 +865,40 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Ein Beitrag, den ich von Hand gepostet hatte, stand im Cockpit weiter auf „wartet\" — und wäre am Abend ein zweites Mal eingeplant worden. Der Fehler, den man nicht sieht, bevor er passiert, und wie du ihn verhinderst.",
+     "plattformtext": "**In dieser Lektion:** Was abends automatisch passiert, damit du morgens nichts\nanstossen musst.\n\n**Das Wichtigste in Kürze:**\n\n- **Was er tut:** Er holt ab, was du freigegeben hast, plant es ein und schickt\n  dir eine Nachricht, was passiert ist.\n- **Warum er zuerst trocken prüft:** Er geht einmal alles durch, ohne etwas zu\n  tun, und meldet, was nicht stimmt. Erst wenn das sauber ist, wird es scharf.\n  Ein Lauf, der mitten drin abbricht, lässt die Hälfte erledigt und die andere\n  nicht — und niemand weiss hinterher, welche Hälfte.\n- **Er meldet sich auch, wenn er nichts getan hat** — aber nur dann, wenn es\n  etwas zu melden gibt. Eine tägliche Nachricht „heute nichts\" wird\n  weggewischt, und mit ihr die eine, die zählt.",
      "beilagen": [],
      "beilage_im_text": false
     },
     {
      "nr": "9.5",
+     "titel": "Mehr als eine Seite",
+     "notiz": "**Erzählen:** warum bei mir zwei Seiten laufen — eine zum Prüfen und Freigeben, eine zum Bauen. 🚨 **Jedes Feld hat genau einen Ort**, sonst laufen zwei Ansichten beim nächsten Umbau auseinander. Und: zwei solche Seiten sind nie verbunden, die Brücke ist immer die KI. **Erzählen:** die drei Fallen, die mich Zeit gekostet haben",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "plattformtext": "**In dieser Lektion:** Warum bei mir zwei Seiten statt einer laufen — und was\nich dabei falsch gemacht habe.\n\n**Das Wichtigste in Kürze:**\n\n- **Warum zwei:** Eine zum Prüfen und Freigeben, eine zum Bauen. Zwei Arbeiten,\n  zwei Orte.\n- 🚨 **Was ich dabei falsch gemacht habe:** Ich hatte dasselbe an zwei Stellen\n  gepflegt. Zwei Ansichten auf dieselben Daten laufen beim nächsten Umbau\n  auseinander, und dann sucht man jedes Mal, in welcher man gerade steht.\n  **Jedes Feld hat genau einen Ort.**\n- 🚨 **Die Brücke bist du.** Zwei solche Seiten sind nie verbunden — keine kann\n  in die andere schauen. Alles, was von einer zur anderen kommt, läuft über\n  deine KI: dort lesen, hier hineinschreiben.\n- **Drei Fallen, die mich Zeit gekostet haben**, erzähle ich dir in dieser\n  Lektion — damit sie dich keine kostet.",
+     "beilagen": [],
+     "beilage_im_text": false
+    },
+    {
+     "nr": "9.6",
      "titel": "Wenn zwei Sachen dasselbe tun",
      "notiz": "**Erzählen:** die Doppelpost-Geschichte vom 16.09. — von Hand gepostet, die Freigabe stand weiter auf wartet, der Abendlauf hätte es ein zweites Mal eingeplant. **Warum das hineingehört:** es ist der einzige Fehler, den man nicht sieht, bevor er passiert",
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Das Wichtigste aus Modul 9 und die Checkliste dazu.",
+     "plattformtext": "**In dieser Lektion:** Der Fehler, den man nicht sieht, bevor er passiert.\n\n**Das Wichtigste in Kürze:**\n\n- **Was passiert ist:** Ich hatte einen Beitrag von Hand gepostet. Im Cockpit\n  stand er weiter auf „wartet\" — und wäre am Abend ein zweites Mal eingeplant\n  worden.\n- Der Fehler war nicht die Automatik. Der Fehler war, dass zwei Wege dasselbe\n  tun konnten, ohne voneinander zu wissen.\n- **Was du daraus mitnimmst:** Wenn du etwas von Hand machst, muss die Maschine\n  das erfahren. Ein Knopf dafür ist keine Bequemlichkeit — er ist die\n  Absicherung.\n- Und: Eine Erfolgsmeldung, die nur sagt „abgelegt\", sagt nicht, dass etwas\n  passieren wird. Wer nur auf die Meldung schaut, merkt es erst, wenn der\n  Beitrag nicht draussen ist.",
+     "beilagen": [],
+     "beilage_im_text": false
+    },
+    {
+     "nr": "9.7",
+     "titel": "Zusammenfassung und Checkliste",
+     "notiz": "",
+     "zeigen": false,
+     "neu": false,
+     "text_drin": false,
+     "plattformtext": "**In dieser Lektion:** Was jetzt bei dir läuft.\n\n**Das nimmst du mit:**\n\n- **Ein Cockpit** — du schaust morgens vorbei und gibst frei.\n- **Ein Gedächtnis** — deine Seite merkt sich, was du tust.\n- **Einen Abendlauf** — du stösst nichts mehr selbst an.\n\n**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Checkliste je Modul (PDF)",
@@ -852,21 +906,10 @@
       }
      ],
      "beilage_im_text": true
-    },
-    {
-     "nr": "9.6",
-     "titel": "Zusammenfassung und Checkliste",
-     "notiz": "",
-     "zeigen": false,
-     "neu": false,
-     "text_drin": false,
-     "plattformtext": "",
-     "beilagen": [],
-     "beilage_im_text": false
     }
    ],
-   "folien": 22,
-   "folien_lektionen": 5,
+   "folien": 34,
+   "folien_lektionen": 7,
    "link": "https://claude.ai/artifact/6m2o6CmrksWiRF8Bg2Woma",
    "modultext": "Bis hierhin hast du einzelne Maschinen. Jetzt bekommen sie eine Oberfläche, an der du morgens vorbeischaust, freigibst und weitergehst.",
    "etappe": "Mo 23.11.2026",
@@ -883,14 +926,14 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Bei mir lagen Zugangsschlüssel im Klartext und die Daten von zweiunddreissig Kundinnen mit Namen, Mailadressen und Telefonnummern offen abrufbar. Aufgefallen ist es niemandem — gefunden wurde es nur, weil einmal jemand gezielt nachgesehen hat. Was ich daraus gelernt habe und wie du es von Anfang an richtig machst.",
+     "plattformtext": "**In dieser Lektion:** Was bei mir passiert ist, und die drei Regeln daraus.\n\n**Das Wichtigste in Kürze:**\n\n- **Was bei mir passiert ist:** Zugangsschlüssel lagen im Klartext in meinen\n  Dateien, und die Daten von zweiunddreissig Kundinnen — Namen, Mailadressen,\n  Telefonnummern — waren offen abrufbar. Aufgefallen ist es niemandem. Gefunden\n  wurde es nur, weil einmal jemand gezielt nachgesehen hat.\n- **Regel 1 · Kein Schlüssel im Text.** Zugänge gehören in die Datei, die dafür\n  da ist, und die wird von der Sicherung ausgeschlossen.\n- **Regel 2 · Keine fremden Daten.** Namen, Mailadressen und Telefonnummern von\n  anderen Menschen gehören nicht in Dateien, die irgendwohin kopiert werden.\n- **Regel 3 · Zusagen gelten auch hier.** Wenn eine Kundin dir etwas unter vier\n  Augen erzählt hat, gehört es nicht in eine Datei, die deine KI mitliest und\n  zitieren kann.\n- 🚨 **Und noch eine Falle:** Ein Arbeitsplatz in einer Cloud-Ablage hebelt\n  jede Ausschlussliste aus. Was dort nicht gesichert werden soll, wird trotzdem\n  überallhin kopiert. Darum die Regel aus Lektion 4.2.\n\n**📎 Die Sicherheits-Checkliste liegt unter diesem Video.**",
      "beilagen": [
       {
        "was": "Sicherheits-Checkliste",
        "link": "/_blob/a7191db7a7d4fd4f48618c035bc92d4b"
       }
      ],
-     "beilage_im_text": false
+     "beilage_im_text": true
     },
     {
      "nr": "10.2",
@@ -899,7 +942,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Löschen reicht nicht. Was du wirklich tun musst, wenn ein Zugang einmal offen lag.",
+     "plattformtext": "**In dieser Lektion:** Löschen reicht nicht.\n\n**Das Wichtigste in Kürze:**\n\n- **Warum Löschen nicht reicht:** Eine Sicherung behält jede frühere Fassung.\n  Und wer den Schlüssel in der Zwischenzeit kopiert hat, kann ihn weiter\n  benutzen.\n- **Was du tust:** den Zugang wechseln, nicht nur entfernen. Beim Anbieter neu\n  erzeugen, den alten ungültig machen, den neuen überall nachtragen.\n- „Überall\" ist der Teil, den man vergisst. Schreib dir auf, an welchen Stellen\n  ein Zugang hinterlegt ist, solange du es noch weisst.\n- Das ist kein schöner Nachmittag. Aber es ist ein Nachmittag — und nicht ein\n  Schaden.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -910,7 +953,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Was die KI schreibt, verantwortest du. Keine Heilversprechen, keine Einkommensversprechen, und die Regeln deines Partnerunternehmens gelten auch für einen Text, den du nicht selbst getippt hast.",
+     "plattformtext": "**In dieser Lektion:** Was die KI schreibt, verantwortest du.\n\n**Das Wichtigste in Kürze:**\n\n- **Was nie herausgehen darf:** Aussagen darüber, was ein Produkt bewirkt.\n  Aussagen darüber, was jemand verdienen kann. Und alles, was die Regeln deines\n  Partnerunternehmens verbietet.\n- 🚨 Diese Regeln gelten auch für einen Text, den du nicht selbst getippt hast.\n  Dein Name steht darunter, nicht ihr.\n- **Wie du es stattdessen sagst:** Du erzählst von dir. Was du machst, wie es\n  dir damit geht, was sich bei dir verändert hat. Eine eigene Erfahrung ist\n  keine Behauptung über eine Wirkung.\n- Schreib die Verbote in deine Wissensdateien, dann hält sie sich von selbst\n  daran. Sich auf das eigene Nachlesen zu verlassen, geht an einem müden Abend\n  schief.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -921,7 +964,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Beziehung, Entscheidung und deine Stimme bleiben bei dir. Und sie hört nichts, sieht nichts und weiss nicht, wie sich dein Dienstagnachmittag anfühlt.",
+     "plattformtext": "**In dieser Lektion:** Drei Dinge, die bei dir bleiben.\n\n**Das Wichtigste in Kürze:**\n\n- **Beziehung.** Niemand kauft bei einer Maschine, weil sie sich verstanden\n  gefühlt hat.\n- **Entscheidung.** Was du anbietest, zu welchem Preis, für wen — das kann sie\n  dir vorbereiten, aber nicht abnehmen.\n- **Deine Stimme.** Sie kann sie treffen, wenn du sie ihr beibringst. Sie kann\n  sie nicht erfinden.\n- **Und ganz praktisch:** Sie hört nichts, sie sieht nichts, und sie weiss\n  nicht, wie sich dein Dienstagnachmittag angefühlt hat. Alles, was ein Text\n  davon braucht, kommt von dir.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -932,7 +975,7 @@
      "zeigen": true,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Eine echte Woche, von Freitagmorgen bis zum fertigen Beitrag. Vorschläge kommen rein, ich gebe frei, abends plant es sich ein, die Bilder entstehen nebenher. Zum Mitschauen, nicht zum Nachbauen.",
+     "plattformtext": "**In dieser Lektion:** Eine echte Woche, zum Mitschauen.\n\n**Das Wichtigste in Kürze:**\n\n- **Der Ablauf:** Freitagmorgen kommen die Vorschläge herein. Ich gebe frei.\n  Abends plant es sich ein. Die Bilder entstehen nebenher.\n- **Was davon aus welchem Modul kommt**, sage ich dir an jeder Station. Dann\n  siehst du, dass hier nichts Neues dazukommt — es ist alles aus diesem Kurs,\n  nur zusammengesteckt.\n- Das ist zum Mitschauen, nicht zum Nachbauen. Bei mir ist das über Monate\n  gewachsen, Stück für Stück, und jedes Stück hat einmal einzeln angefangen.",
      "beilagen": [],
      "beilage_im_text": false
     },
@@ -943,7 +986,7 @@
      "zeigen": false,
      "neu": false,
      "text_drin": false,
-     "plattformtext": "Welche Maschine welches Wissen braucht und wo du das findest. Dazu die ehrliche Antwort, was als Nächstes wirklich dran ist bei dir.",
+     "plattformtext": "**In dieser Lektion:** Welche Maschine welches Wissen braucht — und was bei dir\nwirklich dran ist.\n\n**Das Wichtigste in Kürze:**\n\n- **Drei Richtungen:** Content · Produkte · Struktur. Du musst nicht alle drei.\n- Die Maschinen hast du. Was ihnen fehlt, ist der Inhalt — und der ist je\n  Richtung ein eigenes Thema.\n- **Und jetzt?** Die ehrliche Antwort ist meistens die Wissensdatei zu der\n  Maschine, die du schon hast — und nicht die nächste Maschine. Eine gefüllte\n  bringt mehr als drei leere.\n- Fang mit dem an, was dich diese Woche am meisten genervt hat. Das ist immer\n  die richtige Antwort.",
      "beilagen": [],
      "beilage_im_text": false
     }
@@ -1044,16 +1087,23 @@
   {
    "name": "claude-md-vorlage",
    "titel": "Deine CLAUDE.md — das Gedächtnis deines Arbeitsplatzes",
-   "pdf": false,
-   "link": "",
-   "kb": 0
+   "pdf": true,
+   "link": "/_blob/cc9c44aaa39cae393a8d0bda8cf806b5",
+   "kb": 155
   },
   {
    "name": "cowork-erster-bot",
    "titel": "Dein erster Helfer in Cowork",
-   "pdf": false,
-   "link": "",
-   "kb": 0
+   "pdf": true,
+   "link": "/_blob/4baa489eb26bb74e2e6ee5ec3010901a",
+   "kb": 101
+  },
+  {
+   "name": "cowork-projekt-kochassistent",
+   "titel": "Cowork-Projekt: Kochassistent",
+   "pdf": true,
+   "link": "/_blob/523d8be7e2aecaf7043db029ff08b393",
+   "kb": 187
   },
   {
    "name": "floskel-liste-vorlage",
@@ -1066,8 +1116,8 @@
    "name": "prompt-bibliothek",
    "titel": "Deine Prompt-Bibliothek",
    "pdf": true,
-   "link": "/_blob/f8c00b70de45ceb83d301ac492bb0e72",
-   "kb": 320
+   "link": "/_blob/eed3635961c4f4be2b050b498fdd76fc",
+   "kb": 330
   },
   {
    "name": "roadmap-drei-stufen",
@@ -1075,6 +1125,13 @@
    "pdf": true,
    "link": "/_blob/44079c6a3b734acc6845bf059f323da9",
    "kb": 84
+  },
+  {
+   "name": "setup-faq",
+   "titel": "Wenn beim Einrichten etwas klemmt",
+   "pdf": true,
+   "link": "/_blob/1dd331eb5c5e2d2dc60907c80c3f0679",
+   "kb": 158
   },
   {
    "name": "sicherheits-checkliste",
@@ -1258,6 +1315,11 @@
  ],
  "dokumente": [
   {
+   "was": "Arbeitsplatz-Grundgerüst (ZIP für Lektion 4.3)",
+   "pfad": "Downloads/Mein-Business-Grundgeruest.zip",
+   "notiz": "Fünf Ordner mit je einer Liesmich, CLAUDE.md, vier Befehle. Neu bauen: python scripts/ki-kurs/grundgeruest-bauen.py --zip"
+  },
+  {
    "was": "Inhaltsverzeichnis",
    "pfad": "outputs/produkte/ki-treppe/03-inhaltsverzeichnis.md",
    "notiz": "Alle Kapitel und Lektionen mit den Dreh-Notizen — die Quelle dieser Seite"
@@ -1310,9 +1372,9 @@
  ],
  "zahlen": {
   "kapitel": 10,
-  "lektionen": 64,
+  "lektionen": 67,
   "texte_drin": 8,
-  "folien": 272,
-  "beilagen": 19
+  "folien": 307,
+  "beilagen": 21
  }
 }

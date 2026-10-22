@@ -1501,7 +1501,7 @@ heraus.
 
 | Lektion | Datei |
 |---|---|
-| **1.2 · und hinter jedem Modul wieder** | **Prompt-Bibliothek** — 39 Aufträge plus Marken-Steckbrief, nach den drei Stufen sortiert (PDF, 15 Seiten) |
+| **1.2 · und hinter jedem Modul wieder** | **Prompt-Bibliothek** — 40 Aufträge plus Marken-Steckbrief, nach den drei Stufen sortiert (PDF) |
 | 1.2 | Roadmap, eine Seite zum Ausdrucken (PDF) |
 | 1.3 | Begriffe-Cheatsheet (PDF) |
 | 1.5 · 2.7 · 3.5 · 4.7 · 5.8 · 6.6 · 7.8 · 8.5 · 9.7 | Checkliste je Modul (PDF) |
@@ -1517,7 +1517,7 @@ heraus.
 | 5.2 | Beispiel-Skill Kochplan (die auseinandergenommene Datei) |
 | 5.8 | Leeres Skill-Gerüst |
 | 6.3 | Bot-Gerüst Telegram |
-| 7.1 | `caption` · `karussell` · `reels` · `story` · `visuals` + leere Wissensdateien |
+| 7.1 | Die vier Befehle `caption` · `story` · `karussell` · `reels` + leere Wissensdateien ⏳ offen |
 | 8.1 | `produkt` · `salespage` + leere Wissensdateien |
 | 9.2 | Cockpit-Vorlage (leeres Artifact) |
 | 10.1 | Sicherheits-Checkliste |
@@ -1528,14 +1528,17 @@ Die Folien zu Modul 9 kennen **9.1 bis 9.7** — dazugekommen sind „Dein Wisse
 hineinbringen" (9.3) und „Mehr als eine Seite" (9.5). Dadurch verschieben sich
 die alten Nummern:
 
-| vorher | jetzt |
-|---|---|
-| 9.3 Der Abendlauf | **9.4** |
-| 9.4 Wenn zwei Sachen dasselbe tun | **9.6** |
-| 9.5 Zusammenfassung | **9.7** |
+* „Der Abendlauf" war **9.3** und ist jetzt **9.4**
+* „Wenn zwei Sachen dasselbe tun" war **9.4** und ist jetzt **9.6**
+* „Zusammenfassung" war **9.5** und ist jetzt **9.7**
 
 In ThriveCart stehen noch die alten fünf. Dort müssen zwei Lektionen dazu und
 drei umbenannt werden, sonst zeigt die Plattform andere Nummern als die Videos.
+
+🚨 **Hier steht bewusst keine Tabelle.** Eine zweispaltige Tabelle in diesem
+Abschnitt liest `produktion-daten.py` als Download-Zuordnung — beim ersten
+Versuch hing danach an Lektion 9.3 die „Beilage **9.4**". Wer hier etwas
+ergänzt, nimmt eine Liste.
 
 ### 🚨 Alle Wissensdateien sind leer
 

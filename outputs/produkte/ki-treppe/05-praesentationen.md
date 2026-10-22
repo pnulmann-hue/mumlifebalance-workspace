@@ -15,15 +15,15 @@ Bildschirm gezeigt wird und worauf zu achten ist.
 |---|---:|---:|---|
 | 1 · Orientierung | 25 | 5 | https://claude.ai/artifact/LnABWRgZEU2Fhhm2FCzBH7 |
 | 2 · Claude Chat | 34 | 8 | https://claude.ai/artifact/Sv1PQ8sHjL81UUt7mVjdQu |
-| 3 · Claude Cowork | 22 | 5 | https://claude.ai/artifact/PkXYLdh86SBsKspgmfoJdV |
-| 4 · Dein Arbeitsplatz | 29 | 7 | https://claude.ai/artifact/H2t9veSbsVwRvrBnwNRRC8 |
+| 3 · Claude Cowork | 23 | 5 | https://claude.ai/artifact/PkXYLdh86SBsKspgmfoJdV |
+| 4 · Dein Arbeitsplatz | 51 | 9 | https://claude.ai/artifact/H2t9veSbsVwRvrBnwNRRC8 |
 | 5 · Skills | 33 | 8 | https://claude.ai/artifact/9HBSNPBHNKe5tCiQxstF8U |
 | 6 · Bots | 23 | 6 | https://claude.ai/artifact/1XTWypDWxRjnYaJcKRWYtG |
 | 7 · Social Media | 36 | 8 | https://claude.ai/artifact/L8ZwiQpusSWVEwD2tab8bR |
 | 8 · Produkte, Seiten, Mails | 21 | 5 | https://claude.ai/artifact/R42yY89PC29d4rpEsdSyL5 |
-| 9 · Dein Cockpit | 22 | 5 | https://claude.ai/artifact/6m2o6CmrksWiRF8Bg2Woma |
+| 9 · Dein Cockpit | 34 | 7 | https://claude.ai/artifact/6m2o6CmrksWiRF8Bg2Woma |
 | 10 · Sicherheit und das Ganze | 27 | 6 | https://claude.ai/artifact/36HjwKA4qvrppPn7pChu9T |
-| **Summe** | **272** | **63** | |
+| **Summe** | **307** | **67** | |
 
 Alle zehn sind **privat** — niemand sonst kann sie öffnen, solange sie nicht
 über das Teilen-Menü der Seite freigegeben werden. Für die Aufnahme reicht das:

@@ -367,7 +367,42 @@ hineingehört. Leg noch nichts hinein.
 Frag mich, wenn dir etwas fehlt.
 ```
 
-### 15 · Dein Gedächtnis anlegen lassen
+### 15 · Deine erste Sitzung — dein Wissen hineinholen
+
+*(Lektion 4.3 — der erste Auftrag, nachdem der Ordner steht. Dafür darfst du
+eine halbe Stunde einrechnen, und sie ist gut angelegt.)*
+
+```
+Lies alles, was in context liegt.
+
+Sag mir zuerst in drei Sätzen, was du daraus über mich und mein Business
+weisst.
+
+Dann stell mir eine Frage nach der anderen zu dem, was dir noch fehlt — so
+lange, bis du keine Lücke mehr siehst. Schreib meine Antworten selbst in die
+passende Datei in context, nicht in die CLAUDE.md.
+
+Am Schluss sag mir, welche Dateien du geändert hast.
+```
+
+**Warum das in dieser Reihenfolge steht:**
+
+* *Zuerst zusammenfassen* — daran siehst du in zehn Sekunden, ob dein
+  Business-Brief taugt. Ohne das fragt sie dich nach Dingen, die längst dort
+  stehen.
+* *Eine Frage nach der anderen* — bei zehn Fragen auf einmal beantwortest du
+  die Hälfte nicht.
+* *In die passende Datei, nicht in die CLAUDE.md* — die wird bei jedem
+  Gespräch mitgelesen. Was dort steht, kostet dich jedes Mal Zeit.
+
+Antworte in ganzen Sätzen, so wie du reden würdest. Wenn dir das Tippen zu
+lange dauert, sprich es ein und lass es umwandeln.
+
+Hast du Kapitel 2 übersprungen und ist `context` noch leer? Derselbe Auftrag
+funktioniert — dann fragt sie dich alles von vorne ab und legt die Dateien
+selbst an.
+
+### 16 · Dein Gedächtnis anlegen lassen
 
 *(Lektion 4.4 — statt vor einer leeren Datei zu sitzen)*
 
@@ -382,7 +417,7 @@ Wo du etwas nicht weisst, schreib „offen“ hin, statt zu raten.
 Frag mich danach nur zu den offenen Punkten.
 ```
 
-### 16 · Merk dir das
+### 17 · Merk dir das
 
 *(Lektion 4.4 — der kürzeste nützliche Auftrag im ganzen Kurs)*
 
@@ -391,7 +426,7 @@ Merk dir das: [die Regel, in einem Satz]
 Schreib es in die CLAUDE.md, an die passende Stelle.
 ```
 
-### 17 · Sag mir, was du vorhast
+### 18 · Sag mir, was du vorhast
 
 *(Lektion 4.5 — vor allem, was mehr als eine Datei anfasst)*
 
@@ -402,7 +437,7 @@ willst und was in jeder passiert.
 Ich sage dann los oder stopp.
 ```
 
-### 18 · Neu ansetzen statt nachbessern
+### 19 · Neu ansetzen statt nachbessern
 
 *(Lektion 4.6 — wenn der dritte Versuch auch nicht sitzt)*
 
@@ -415,7 +450,7 @@ diesmal machen würdest.
 
 ## Skills
 
-### 19 · Was bei dir ein Skill werden sollte
+### 20 · Was bei dir ein Skill werden sollte
 
 *(Lektion 5.3)*
 
@@ -430,7 +465,7 @@ Keine Vorschläge für Dinge, die du bei anderen gesehen hast — nur das, was
 du bei mir findest.
 ```
 
-### 20 · Deinen ersten Skill bauen lassen
+### 21 · Deinen ersten Skill bauen lassen
 
 *(Lektion 5.4 — das leere Gerüst liegt als eigene Beilage bei)*
 
@@ -446,7 +481,7 @@ Frag mich zu allem, was du nicht aus meinen Dateien weisst. Erfinde keine
 Regeln, die ich nie gesagt habe.
 ```
 
-### 21 · Von Hand nachschärfen
+### 22 · Von Hand nachschärfen
 
 *(Lektion 5.5 — das, was ein Baukasten nie weiss)*
 
@@ -460,7 +495,7 @@ Wenn [Fall], dann [was dann gilt]
 Ändere nur diese Stellen. Alles andere bleibt Wort für Wort stehen.
 ```
 
-### 22 · Aus einer Korrektur eine Regel machen
+### 23 · Aus einer Korrektur eine Regel machen
 
 *(Lektion 5.6 — der Punkt, an dem ein Skill besser wird als du)*
 
@@ -471,7 +506,7 @@ Schreib das als Regel in den Skill [Name], in meinen Worten.
 Zeig mir die Zeile, bevor du sie einfügst.
 ```
 
-### 23 · Einen fremden Skill prüfen
+### 24 · Einen fremden Skill prüfen
 
 *(Lektion 5.7 — bevor du fremde Anweisungen in deinen Arbeitsplatz legst)*
 
@@ -489,7 +524,7 @@ Lies dazu auch die Skripte, die dabei liegen, nicht nur die Beschreibung.
 
 ## Bots
 
-### 24 · Vom Skill zum Bot
+### 25 · Vom Skill zum Bot
 
 *(Lektion 6.3 — das Bot-Gerüst liegt als eigene Beilage bei)*
 
@@ -504,7 +539,7 @@ Baue ihn so, dass ich ihn zuerst selbst einmal auslösen kann. Der Zeitplan
 kommt erst dazu, wenn der Testlauf gepasst hat.
 ```
 
-### 25 · Wenn der Bot schweigt
+### 26 · Wenn der Bot schweigt
 
 *(Lektion 6.5)*
 
@@ -519,7 +554,7 @@ ihn prüfe. Fang mit dem an, der am häufigsten vorkommt.
 
 ## Deine Inhalte
 
-### 26 · Eine Wissensdatei füllen
+### 27 · Eine Wissensdatei füllen
 
 *(Lektion 7.2 — der wichtigste Auftrag in Kapitel 7, weil er den Unterschied
 zwischen Maschine und Treibstoff macht)*
@@ -534,7 +569,7 @@ meine Antwort nach Werbesprache klingt, und bitte um ein echtes Beispiel.
 Schreib erst, wenn du zu keinem Punkt mehr raten musst.
 ```
 
-### 27 · Der Prüf-Durchgang vor dem Posten
+### 28 · Der Prüf-Durchgang vor dem Posten
 
 *(Lektion 7.7 — und das ist die Stelle, an der du dir Ärger ersparst)*
 
@@ -550,7 +585,7 @@ Melde nichts, was du nicht wörtlich belegen kannst. Ändere nichts selbst.
 [Beitrag einfügen]
 ```
 
-### 28 · Die Zahlen lesen
+### 29 · Die Zahlen lesen
 
 *(Lektion 7.7b — Vorsicht, hier lügen Prozente am leichtesten)*
 
@@ -571,7 +606,7 @@ nachweislich lag. Wo du es nicht sagen kannst, schreib das hin.
 [Tabelle einfügen]
 ```
 
-### 29 · Einen Gedanken nochmal bringen
+### 30 · Einen Gedanken nochmal bringen
 
 *(Lektion 7.7b — ein Beitrag, der gut lief, ist nicht verbraucht)*
 
@@ -594,7 +629,7 @@ Zwei Regeln:
 
 ## Seiten, Produkte, Mails
 
-### 30 · Eine Verkaufsseite bauen lassen
+### 31 · Eine Verkaufsseite bauen lassen
 
 *(Lektion 8.2)*
 
@@ -608,7 +643,7 @@ erfundenen Kundenstimmen, kein Versprechen, das ich nicht gegeben habe.
 Wo eine Angabe fehlt, setz einen Platzhalter und sag mir, welche.
 ```
 
-### 31 · Nicht am Original arbeiten
+### 32 · Nicht am Original arbeiten
 
 *(Lektion 8.2 — ein Satz, der eine bestehende Seite rettet)*
 
@@ -621,7 +656,7 @@ das Ergebnis, bevor irgendetwas live geht.
 > läuft, ist schneller kaputt als neu gebaut. Lass eine Kopie anlegen,
 > schau sie dir an, und schalte erst danach um.
 
-### 32 · Online stellen, wenn du gar keine Website hast
+### 33 · Online stellen, wenn du gar keine Website hast
 
 *(Lektion 8.3 — der Weg für alle, die kein WordPress haben und auch keins
 wollen. Kostet nichts und dauert zehn Minuten.)*
@@ -646,7 +681,7 @@ Wenn etwas anders aussieht als beschrieben, sag es mir — die Anbieter
 > Und du bekommst zuerst eine Adresse wie `irgendwas-123.netlify.app`. Die
 > funktioniert, sie sieht nur nicht nach dir aus. Dafür ist der nächste Prompt da.
 
-### 33 · Deine eigene Adresse davorsetzen
+### 34 · Deine eigene Adresse davorsetzen
 
 *(Lektion 8.3 — erst wenn die Seite schon läuft)*
 
@@ -665,7 +700,7 @@ funktioniert, damit ich nicht denke, ich hätte etwas falsch gemacht.
 > Unteradresse davor — zum Beispiel `kurs.deinename.ch`. Deine bestehende
 > Seite bleibt unberührt.
 
-### 34 · Ein kleines Werkzeug mit sicherem Schlüssel
+### 35 · Ein kleines Werkzeug mit sicherem Schlüssel
 
 *(Lektion 8.3 — sobald dein Werkzeug die KI selbst anruft. Hier geht es um
 deinen Zugangsschlüssel, und der ist bares Geld wert.)*
@@ -701,7 +736,7 @@ schreib mir dazu, was ich wo hochlade.
 > kopieren. Die Namen wechseln, und ein alter Name wirft einen Fehler, der
 > aussieht, als wäre alles kaputt.
 
-### 35 · Entwurf statt senden
+### 36 · Entwurf statt senden
 
 *(Lektion 8.4 — gilt für jede Mail und jeden Beitrag)*
 
@@ -711,7 +746,7 @@ Leg das als Entwurf ab. Verschicken tue ich selbst.
 
 ## Cockpit und Kundschaft
 
-### 36 · Deine eigene Übersicht
+### 37 · Deine eigene Übersicht
 
 *(Lektion 9.2 — die leere Vorlage liegt als eigene Beilage bei)*
 
@@ -724,7 +759,7 @@ wann sie ist.
 Fang mit einer einzigen Ansicht an. Alles Weitere kommt später dazu.
 ```
 
-### 37 · Eine Seite für deine Kundschaft
+### 38 · Eine Seite für deine Kundschaft
 
 *(Lektion 9.3 — mit Platzhaltern, damit nichts Echtes nach draussen gerät)*
 
@@ -743,7 +778,7 @@ Drei Dinge sind Pflicht:
 
 ## Sicherheit
 
-### 38 · Was liegt bei mir offen?
+### 39 · Was liegt bei mir offen?
 
 *(Lektion 10.1 — die Sicherheits-Checkliste liegt als eigene Beilage bei)*
 
@@ -755,7 +790,7 @@ Rechnungen.
 Sag mir je Fund die Datei und was drinsteht. Lösch nichts.
 ```
 
-### 39 · Bevor etwas nach draussen geht
+### 40 · Bevor etwas nach draussen geht
 
 *(Lektion 10.1)*
 
