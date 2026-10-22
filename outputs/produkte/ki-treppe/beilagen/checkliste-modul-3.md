@@ -1,7 +1,3 @@
----
-tags: [produkt]
----
-
 # Checkliste Modul 3 · Claude Cowork
 
 Geh das hier durch, bevor du weitermachst. Was noch offen ist, holst du jetzt

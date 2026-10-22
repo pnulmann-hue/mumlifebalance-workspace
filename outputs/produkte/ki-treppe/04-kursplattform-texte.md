@@ -53,13 +53,109 @@ Plattform) und einen **Beschreibungstext**, der unter dem Video steht.
 > Moduls weisst du, welche Stufe für dich gerade dran ist und was dich das im
 > Monat kostet.
 
-| Lektion | Text |
-|---|---|
-| **1.1 Schön, dass du da bist** | Was am Ende dieses Kurses bei dir steht, und warum ich mit dem Bild von einer Mitarbeiterin arbeite statt mit dem von einem Werkzeug. Der Unterschied ist grösser, als er klingt. |
-| **1.2 Deine Roadmap — die drei Stufen** | Chat, Cowork, Code. Drei Stufen, und auf jeder gibt es ein Ergebnis, das du behältst. Ich zeige dir, woran du merkst, welche gerade dran ist — und warum niemand bis ganz nach oben muss. |
-| **1.3 Die Wörter, die dauernd vorkommen** | Prompt, Kontext, Projekt, Skill, Agent, Bot, Terminal. Einmal in Ruhe erklärt, so wie ich es einer Freundin am Küchentisch sagen würde. Das Cheatsheet dazu kannst du dir ausdrucken. |
-| **1.4 Was das kostet** | Womit du gratis anfangen kannst, ab wann ein Abo Sinn macht und was ein eigener Bot im Monat wirklich kostet. Ich sage dir die Zahlen offen, damit du selbst rechnen kannst. |
-| **1.5 Zusammenfassung und Checkliste** | Das Wichtigste aus Modul 1 auf einer Seite, dazu die Checkliste, bevor du weitergehst. |
+---
+
+### 1.1 · Schön, dass du da bist
+
+**In dieser Lektion:** Was am Ende dieses Kurses bei dir steht — und das Bild,
+mit dem ich arbeite.
+
+**Das Wichtigste in Kürze:**
+
+- **Drei Sachen hast du am Ende, die vorher nicht da waren:** einen
+  Arbeitsplatz, an dem dein eigenes Wissen liegt · mindestens einen
+  selbstgebauten Befehl für eine Arbeit, die du jede Woche sowieso machst · und
+  einen Bot, der morgens von selbst schreibt.
+- **Ich arbeite mit dem Bild einer Mitarbeiterin, nicht mit dem eines
+  Werkzeugs.** Ein Werkzeug nimmst du in die Hand und legst es weg. Eine
+  Mitarbeiterin wird besser, je mehr sie über dein Business weiss — und genau
+  das ist der ganze Kurs.
+- **Du musst nichts programmieren.** Du schreibst Deutsch, in ganzen Sätzen.
+- **Wer nach Stufe 1 aufhört, hat trotzdem etwas.** Die drei Stufen sind kein
+  Weg, den man zu Ende gehen muss.
+
+---
+
+### 1.2 · Deine Roadmap — die drei Stufen
+
+**In dieser Lektion:** Chat, Cowork, Code — und woran du merkst, welche Stufe
+gerade dran ist.
+
+**Das Wichtigste in Kürze:**
+
+- **Stufe 1 · Chat:** Deine KI klingt nach dir. Hier bringst du ihr bei, wer du
+  bist. Das ist die Stufe, die über alles danach entscheidet.
+- **Stufe 2 · Cowork:** Sie arbeitet mit deinen Sachen — Dateien, Tabellen,
+  deine eigene Planung.
+- **Stufe 3 · Code:** Du hast einen eigenen Arbeitsplatz, an dem dein Wissen
+  liegt und bleibt. Dort baust du Befehle und Bots.
+- **Die Reihenfolge ist nicht verhandelbar.** Wer auf Stufe 3 anfängt, ohne
+  Stufe 1 gemacht zu haben, bekommt gut gebaute Texte, die nach niemandem
+  klingen.
+- Woran du deine Stufe erkennst: Wenn dich die Texte stören, bist du auf
+  Stufe 1. Wenn dich das Kopieren stört, auf Stufe 2. Wenn dich das
+  Wiederholen stört, auf Stufe 3.
+
+**📎 Unter diesem Video liegen zwei Dateien, die dich durch den ganzen Kurs
+begleiten:** die Roadmap auf einer Seite zum Ausdrucken, und die
+**Prompt-Bibliothek** mit allen Aufträgen aus diesem Kurs, nach den drei Stufen
+sortiert. Die Bibliothek findest du ab hier hinter jedem Modul wieder.
+
+---
+
+### 1.3 · Die Wörter, die dauernd vorkommen
+
+**In dieser Lektion:** Zehn Begriffe, einmal in Ruhe erklärt.
+
+**Das Wichtigste in Kürze:**
+
+- **Auftrag** (oder Prompt) ist das, was du hineinschreibst. **Kontext** ist
+  alles, was sie zusätzlich weiss. **Halluzination** heisst: Sie erfindet etwas
+  und sagt es im selben Ton wie eine Tatsache.
+- **Projekt · Arbeitsplatz · Business-Brief** — drei Orte, an denen dein Wissen
+  liegen kann, von einfach bis dauerhaft.
+- **Skill · Agent · Bot** — drei Wörter für ungefähr dasselbe: eine Arbeit, die
+  einmal beschrieben ist und danach nur noch aufgerufen wird.
+- Du musst keinen dieser Begriffe können, um loszulegen. Du sollst sie nur
+  wiedererkennen, wenn sie in einem Video oder in einer Meldung auftauchen.
+
+**📎 Das Cheatsheet mit allen Begriffen liegt unter diesem Video — eine Seite,
+zum Ausdrucken und neben den Laptop legen.**
+
+---
+
+### 1.4 · Was das kostet
+
+**In dieser Lektion:** Die Zahlen offen auf dem Tisch.
+
+**Das Wichtigste in Kürze:**
+
+- **Stufe 1 · Chat:** ein Konto, gratis zum Anfangen.
+- **Stufe 2 · Cowork:** ein Abo, rund 20 bis 23 im Monat.
+- **Stufe 3 · Code:** dasselbe Abo, plus rund 5 im Monat, wenn ein Bot
+  rund um die Uhr laufen soll.
+- Alles in Franken, Stand heute. Bei den Anbietern ändert sich das
+  gelegentlich — schau kurz nach, bevor du dich entscheidest.
+- **Meine Rechnung:** Ein Abo kostet weniger als eine einzige Stunde bezahlte
+  Hilfe. Die Frage ist also nicht, ob du es dir leisten kannst. Die Frage ist,
+  ob du in dem Monat wirklich etwas damit machst.
+- Wenn du gerade weisst, dass du keine Zeit hast: fang mit Stufe 1 an und lass
+  das Abo, bis du dranbleibst.
+
+---
+
+### 1.5 · Zusammenfassung und Checkliste
+
+**In dieser Lektion:** Was jetzt stehen sollte, bevor wir an deinen
+Business-Brief gehen.
+
+**Das nimmst du mit:**
+
+- **Deine Stufe** — du weisst, welche gerade dran ist und warum.
+- **Die Wörter** — du erkennst sie wieder, wenn sie vorkommen.
+- **Die Kosten** — du kannst selbst rechnen, ohne nachzufragen.
+
+**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
 
 ---
 
@@ -70,17 +166,165 @@ Plattform) und einen **Beschreibungstext**, der unter dem Video steht.
 > Hier passiert das, was die meisten überspringen und was hinterher alles
 > entscheidet: Du bringst der KI bei, wer du bist. Ohne diesen Schritt bleibt
 > jeder Text austauschbar, egal wie gut dein Auftrag formuliert ist.
+>
+> Am Ende dieses Moduls hast du vier Dateien über dich und dein Business. Die
+> gehen ab dann bei jedem Auftrag mit — und in Modul 4 ziehen sie in deinen
+> eigenen Arbeitsplatz.
 
-| Lektion | Text |
-|---|---|
-| **2.1 Die Praktikantin** | Eine KI ist nur so gut wie der Auftrag, den sie bekommt. Ich zeige dir die drei Zutaten, die jeder gute Auftrag braucht, am selben Beispiel einmal ohne und einmal mit. |
-| **2.2 Warum deine Texte nicht nach dir klingen** | Es gibt ein paar Muster, an denen man KI-Text sofort erkennt, und wenn du sie einmal gesehen hast, siehst du sie überall. Danach weisst du, wonach du in deinen eigenen Texten suchen musst. |
-| **2.3 Dein Business-Brief — die sechs Bausteine** | Das eine Dokument, das ab jetzt bei jedem Auftrag mitgeht. Wer du bist, für wen du da bist, was du anbietest, worüber du sprichst, wie du klingst und was bei dir nie vorkommt. |
-| **2.3b Dein Wissen aus ChatGPT mitnehmen** | Du hast bisher mit ChatGPT gearbeitet und ihm monatelang erzählt, wer du bist? Dann fängst du nicht bei null an. Ich zeige dir, wie du dieses Wissen in drei Klicks mitnimmst — und warum du es danach einmal durchsiehst, bevor du es behältst. Wenn du neu anfängst, überspring diese Lektion einfach. Den Auftrag zum Durchsieben findest du als Nummer 3 in deiner Prompt-Bibliothek. |
-| **2.4 Die Buch-Technik** | Wie du die sechs Bausteine gefüllt bekommst, ohne stundenlang vor einem leeren Blatt zu sitzen: Du lässt die KI ein Buch über dich schreiben und so lange nachfragen, bis sie wirklich alles hat. |
-| **2.5 Deine Stimme einfangen** | Zwei, drei eigene Texte reichen, damit die KI deinen Ton trifft. Ich zeige dir am selben Auftrag, wie gross der Unterschied ist. |
-| **2.6 Projekte statt Einzelchats** | Damit dein Wissen liegen bleibt, statt dass du es in jedem neuen Chat wieder eintippst. |
-| **2.7 Zusammenfassung und Checkliste** | Das Wichtigste aus Modul 2, dazu die Checkliste: Was muss stehen, bevor du weitergehst. |
+---
+
+### 2.1 · Die Praktikantin
+
+**In dieser Lektion:** Warum eine KI nur so gut ist wie ihr Auftrag.
+
+**Das Wichtigste in Kürze:**
+
+- **Drei Zutaten hat jeder gute Auftrag, immer dieselben:** wer du bist · was
+  rauskommen soll · ein Beispiel für gut.
+- Fehlt die erste, schreibt sie für irgendwen. Fehlt die zweite, bekommst du
+  etwas Beliebiges. Fehlt die dritte, bekommst du Durchschnitt.
+- Das Bild der Praktikantin hilft bei jeder Enttäuschung: Du würdest einer
+  neuen Mitarbeiterin auch nicht zurufen „mach mal was für Instagram" und dich
+  dann über das Ergebnis wundern.
+- **Du siehst in dieser Lektion denselben Auftrag zweimal** — einmal ohne die
+  drei Zutaten, einmal mit. Der Unterschied erklärt mehr als jede Regel.
+
+---
+
+### 2.2 · Warum deine Texte nicht nach dir klingen
+
+**In dieser Lektion:** Die Muster, an denen man KI-Text sofort erkennt.
+
+**Das Wichtigste in Kürze:**
+
+- Es sind immer dieselben paar Muster. Wenn du sie einmal gesehen hast, siehst
+  du sie überall — auch bei anderen.
+- Dazu gehören: der aufgeblasene Gegensatz, die Dreier-Aufzählung an jeder
+  Stelle, und Wörter, die niemand am Küchentisch sagt.
+- **Was du stattdessen machst:** Du sammelst deine eigene Liste. Was dich in
+  einem Text stört, kommt hinein — und ab dann weiss sie, was bei dir nie
+  vorkommen darf.
+- Warum das zählt: Deine Leute merken den Unterschied, auch wenn sie ihn nicht
+  benennen können. Ein Text, der nach Maschine klingt, kostet dich kein Like
+  weniger — er kostet dich Nähe.
+
+**📎 Die Floskel-Liste als leere Vorlage liegt unter diesem Video.** Sie wächst
+mit und zieht in Modul 4 in deinen Arbeitsplatz.
+
+---
+
+### 2.3 · Dein Business-Brief — die sechs Bausteine
+
+**In dieser Lektion:** Das eine Dokument, das ab jetzt bei jedem Auftrag
+mitgeht.
+
+**Das Wichtigste in Kürze:**
+
+- **Sechs Bausteine, nicht mehr:** wer ich bin · für wen ich da bin · was ich
+  anbiete · meine Themen · wie ich klinge · meine Tabus.
+- Bei Baustein 2 ist der häufigste Fehler eine Beschreibung, die auf jede
+  passt. Je enger, je besser.
+- Bei Baustein 6 wird es konkret: was bei dir nie vorkommt — als Wort, als
+  Behauptung, als Versprechen.
+- **Du schreibst ihn nicht aus dem Kopf.** Die nächste Lektion zeigt, wie du
+  ihn gefüllt bekommst, ohne vor einem leeren Blatt zu sitzen.
+
+**📎 Die Business-Brief-Vorlage liegt unter diesem Video.**
+
+---
+
+### 2.3b · Dein Wissen aus ChatGPT mitnehmen
+
+**In dieser Lektion:** Wenn du bisher mit ChatGPT gearbeitet hast, fängst du
+nicht bei null an.
+
+**Das Wichtigste in Kürze:**
+
+- Du gehst dreimal hin und her: in Claude fragen, was gebraucht wird · in
+  ChatGPT das Gedächtnis ausgeben lassen · zurück in Claude damit.
+- **Und dann kommt der Teil, den die meisten auslassen:** einmal durchsehen.
+  In so einem Gedächtnis steht viel Veraltetes, manches Falsche und einiges,
+  das du nie wieder sehen willst.
+- Was nicht mehr stimmt, kommt raus. Was stimmt, wandert in den Baustein, zu
+  dem es gehört.
+- Wenn du neu anfängst, überspring diese Lektion einfach.
+
+**Den Auftrag zum Durchsehen findest du als Nummer 3 in deiner
+Prompt-Bibliothek** (liegt bei Lektion 1.2).
+
+---
+
+### 2.4 · Die Buch-Technik
+
+**In dieser Lektion:** Wie du die sechs Bausteine gefüllt bekommst, ohne
+stundenlang zu tippen.
+
+**Das Wichtigste in Kürze:**
+
+- Du lässt die KI ein Buch über dich und dein Business schreiben — und sie
+  fragt dich dafür aus.
+- **Eine Frage nach der anderen.** Nicht zehn auf einmal, sonst beantwortest du
+  die Hälfte nicht.
+- Antworte in ganzen Sätzen, so wie du reden würdest. Wenn dir das Tippen zu
+  lange dauert, sprich es ein und lass es umwandeln.
+- **Der Kniff am Schluss:** Du lässt sie sagen, was ihr immer noch fehlt. Genau
+  dort stehen die Dinge, die du für selbstverständlich hältst — und die kein
+  Mensch von aussen wissen kann.
+
+**📎 Der Auftrag zum Kopieren liegt unter diesem Video.**
+
+---
+
+### 2.5 · Deine Stimme einfangen
+
+**In dieser Lektion:** Zwei, drei eigene Texte reichen, damit sie deinen Ton
+trifft.
+
+**Das Wichtigste in Kürze:**
+
+- **Was du anhängst:** Texte, die wirklich von dir sind und die dir gefallen.
+  Eine Sprachnachricht, abgetippt, ist mehr wert als ein geschliffener Beitrag.
+- Keine Texte, die schon durch eine KI gelaufen sind. Die bringen ihr ihren
+  eigenen Ton bei, nicht deinen.
+- **Woran du merkst, dass es sitzt:** Du liest einen Vorschlag und baust nichts
+  mehr um. Nicht das Gefühl „gut genug" — das Gefühl „so hätte ich es
+  geschrieben".
+- Sitzt es nicht, fehlen meistens Beispiele — nicht Erklärungen über deinen Ton.
+
+---
+
+### 2.6 · Projekte statt Einzelchats
+
+**In dieser Lektion:** Damit dein Wissen liegen bleibt, statt dass du es jedes
+Mal wieder eintippst.
+
+**Das Wichtigste in Kürze:**
+
+- Ein Projekt ist ein Ort, an dem deine Dateien liegen und bei jedem Gespräch
+  mitgelesen werden.
+- **Hinein gehört:** dein Business-Brief, deine Textproben, deine Floskel-Liste
+  — und die Anweisung, wie sie damit umgehen soll.
+- Ab jetzt fängst du kein Gespräch mehr bei null an.
+- Das ist die kleine Schwester des Arbeitsplatzes aus Modul 4. Wer hier
+  aufhört, hat trotzdem etwas, das jeden Tag Zeit spart.
+
+---
+
+### 2.7 · Zusammenfassung und Checkliste
+
+**In dieser Lektion:** Was stehen muss, bevor du weitergehst.
+
+**Das nimmst du mit:**
+
+- **Deinen Business-Brief** — sechs Bausteine, ausgefüllt.
+- **Dein Projekt** — mit allem darin, was sie über dich wissen soll.
+- **Deinen Blick** — du erkennst KI-Text jetzt, auch deinen eigenen.
+
+🚨 **Ohne Business-Brief macht Modul 4 keinen Sinn.** Dort kopierst du genau
+diese Dateien in deinen eigenen Arbeitsplatz. Wenn hier etwas fehlt, fehlt es
+dort auch.
+
+**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
 
 ---
 
@@ -91,14 +335,96 @@ Plattform) und einen **Beschreibungstext**, der unter dem Video steht.
 > Eine Stufe weiter arbeitet die KI mit deinen Dateien und hängt an deiner
 > eigenen Planung. Hier baust du deinen ersten Bot, ohne eine einzige Zeile Code
 > zu schreiben.
+>
+> Und du lernst die Grenze kennen: was auf dieser Stufe geht, was nicht, und
+> woran du merkst, dass sie dir reicht.
 
-| Lektion | Text |
-|---|---|
-| **3.1 Was Cowork kann, was der Chat nicht kann** | Mit Dateien arbeiten, über mehrere Schritte hinweg, und sich merken, was beim letzten Mal war. Ich zeige dir eine Aufgabe, die im Chat scheitert und hier durchläuft. |
-| **3.2 Deine erste Verbindung: Notion** | Einmal einrichten, und ab dann liest die KI deine eigene Planung. Schritt für Schritt mitgefilmt. |
-| **3.3 Dein erster Bot ohne eine Zeile Code** | Wir bauen zusammen einen Helfer fürs Zuhause — etwas, wo nichts kaputtgehen kann und du sofort siehst, dass es funktioniert. |
-| **3.4 Wo Cowork aufhört** | Ehrlich gesagt: Er läuft nicht von selbst, du musst ihn jedes Mal anstossen. Das ist der Grund für die nächste Stufe — und wenn dir das hier reicht, ist das völlig in Ordnung. |
-| **3.5 Zusammenfassung und Checkliste** | Das Wichtigste aus Modul 3 und die Checkliste dazu. |
+---
+
+### 3.1 · Was Cowork kann, was der Chat nicht kann
+
+**In dieser Lektion:** Eine Aufgabe, die im Chat scheitert und hier durchläuft.
+
+**Das Wichtigste in Kürze:**
+
+- Drei Dinge kommen dazu: **mit Dateien arbeiten** · **über mehrere Schritte
+  hinweg** · und **sich merken, was beim letzten Mal war**.
+- **Was du ihr geben kannst:** Dokumente, Tabellen — und Verbindungen zu
+  Programmen, die du sowieso benutzt.
+- Du siehst in dieser Lektion denselben Auftrag auf zwei Stufen. Im Chat
+  bekommst du eine Antwort, hier bekommst du ein Ergebnis.
+
+---
+
+### 3.2 · Deine erste Verbindung
+
+**In dieser Lektion:** Einmal einrichten, und ab dann liest sie deine eigene
+Planung.
+
+**Das Wichtigste in Kürze:**
+
+- Eine Verbindung heisst: Sie darf in ein Programm hineinschauen, das du
+  sowieso benutzt — und zwar mit deinen Augen, nicht mit fremden.
+- **Warum das mehr bringt, als es klingt:** Was dort steht, musst du nie mehr
+  erzählen. Sie liest es.
+- Eingerichtet wird es einmal, Schritt für Schritt mitgefilmt.
+- 🚨 **Eine Verbindung ist ein Zugang.** Richte sie bewusst ein und schau nach,
+  was sie darf. Modul 10 geht darauf ein.
+
+---
+
+### 3.3 · Dein erster Bot ohne eine Zeile Code
+
+**In dieser Lektion:** Wir bauen zusammen einen Helfer, bei dem nichts
+kaputtgehen kann.
+
+**Das Wichtigste in Kürze:**
+
+- Der Bot macht drei Dinge: **er liest** · **er sortiert** · **er sagt es dir**.
+- Wir nehmen bewusst etwas fürs Zuhause. Bei einem Helfer für die Familie
+  siehst du sofort, ob er taugt, und nichts davon geht an die Öffentlichkeit.
+- **Der Auftrag dahinter ist das Eigentliche.** Du beschreibst, was er tun
+  soll, woraus er liest und wie er sich melden soll — und siehst dabei zum
+  ersten Mal, dass sich eine Arbeit beschreiben lässt.
+- **Und dann macht er es von allein:** Du kannst eine Routine anlegen, damit er
+  von selbst losgeht, ohne dass du ihn anstösst. Braucht er dafür Dateien von
+  deinem Rechner, muss der aber an sein.
+
+**📎 Der Auftrag für den ersten Bot liegt unter diesem Video — zum Kopieren und
+Anpassen.**
+
+---
+
+### 3.4 · Wo Cowork aufhört
+
+**In dieser Lektion:** Drei Sachen, die auf dieser Stufe nicht gehen — und
+warum das für dich in Ordnung sein darf.
+
+**Das Wichtigste in Kürze:**
+
+- **Dein Rechner:** An Dateien, die bei dir lokal liegen, kommt sie hier nicht
+  heran.
+- **Kein Stecker:** An eine eigene Datenbank oder ein eigenes Werkzeug kann man
+  sie nicht anhängen.
+- **Eigene Befehle:** Das, was in Modul 5 das Herzstück wird, gibt es hier nur
+  in Ansätzen.
+- 🚨 **Wenn dir diese Stufe reicht, ist das völlig in Ordnung.** Sag es dir
+  bewusst, statt ein halbes Jahr ein schlechtes Gewissen zu haben. Modul 4 ist
+  für die, die mehr wollen — nicht für alle.
+
+---
+
+### 3.5 · Zusammenfassung und Checkliste
+
+**In dieser Lektion:** Was jetzt bei dir läuft.
+
+**Das nimmst du mit:**
+
+- **Eine Verbindung** — sie liest deine eigene Planung.
+- **Einen Bot** — gebaut, ohne eine Zeile Code.
+- **Eine Entscheidung** — du weisst, ob du die nächste Stufe willst.
+
+**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
 
 ---
 
@@ -125,7 +451,7 @@ musst.
 - Du schreibst weiter Deutsch, in ganzen Sätzen. Das ändert sich nicht.
 - Das schwarze Fenster, das du auf Screenshots gesehen hast, brauchst du hier
   nicht. Wir arbeiten in einer App, die aussieht wie ein Chat.
-- Neu ist nicht, *was* sie kann, sondern **wo** sie arbeitet: an einem Platz,
+- Neu ist nicht, *was* sie kann. Neu ist, **wo** sie arbeitet: an einem Platz,
   der dir gehört und der bleibt.
 - Du brauchst einen Rechner, ein Abo und zwanzig Minuten. Kein Vorwissen — wenn
   du weisst, was ein Ordner ist, reicht das.
@@ -134,16 +460,31 @@ musst.
 
 ### 4.2 · Einrichten, Schritt für Schritt
 
-**In dieser Lektion:** Die Installation, Klick für Klick in Echtzeit.
+**In dieser Lektion:** Jeder Klick in der Reihenfolge, in der er kommt — und
+was du tust, wenn beim ersten Mal eine Meldung dazwischenkommt.
 
 **Das Wichtigste in Kürze:**
 
-- Vier Schritte: herunterladen, anmelden, Ordner wählen, erste Frage stellen.
+- **Installieren und anmelden:** Datei herunterladen, durchklicken, App
+  starten, mit deinem Konto anmelden. Dann oben auf den Reiter **Code**. Links
+  ist der Chat, daneben Cowork, daneben Code — das sind die drei Stufen aus
+  Modul 1 in einer App.
+- Die App bringt alles mit. Du installierst nichts weiter, keine
+  Kommandozeile, kein Programm mit fremdem Namen.
+- **Wenn beim ersten Mal eine Meldung kommt:** „Upgrade nötig" heisst, der
+  Reiter Code braucht ein bezahltes Abo (welches, steht in 1.4). „Melde dich
+  online an" heisst, im Browser fertig anmelden und die App einmal neu öffnen.
+  Bei einer Fehlernummer zeigst du ihr die Meldung im Wortlaut und fragst, was
+  sie bedeutet.
+- **Deine erste Sitzung:** In der Zeile unter dem Eingabefeld wählst du zuerst,
+  dass auf deinem eigenen Rechner gearbeitet wird, dann den Ordner, dann stellst
+  du eine einfache Frage.
 - **Leg den Ordner nicht in OneDrive, iCloud oder Dropbox.** Was dort liegt,
   wird überallhin kopiert — auch das, was du später nicht kopiert haben willst.
   Kapitel 10 kommt darauf zurück.
-- Such dir den Platz vorher aus, damit du während der Installation nicht
-  suchen musst.
+- **Ein Knopf, den kaum jemand erklärt:** In derselben Zeile steht, wie viel sie
+  ohne dich tun darf. Stell ihn am Anfang so ein, dass sie fragt, bevor sie eine
+  Datei ändert. Später lässt du sie mehr selbst machen.
 - Plan zwanzig Minuten ohne Unterbrechung ein.
 
 **Wenn etwas klemmt:** Unter dem Video liegt eine Liste mit den Fragen, die
@@ -164,8 +505,17 @@ Kapitel 2 mitbringst.
 - **Der wichtigste Unterschied: `context` ist deins, `reference` ist von
   anderen.** Sag ihr in deiner Gedächtnis-Datei, dass sie aus `reference` nie
   wörtlich abschreibt — sonst landet fremder Text in deiner Caption.
+- **Je Ordner eine Faustregel:** `outputs` kann weg, ohne dass etwas
+  kaputtgeht — es lässt sich neu herstellen. `scripts` ist am Anfang leer und
+  füllt sich, wenn dich etwas zum dritten Mal nervt. `plans` klingt nach Umweg
+  und spart den halben Nachmittag.
 - Du legst nichts selbst an. Das Grundgerüst liegt unter diesem Video, fertig
-  mit allen Ordnern und einer Gedächtnis-Datei zum Ausfüllen.
+  mit allen Ordnern und einer Gedächtnis-Datei zum Ausfüllen. **In jedem Ordner
+  liegt eine Liesmich-Datei** — du musst dir nichts merken, du machst den Ordner
+  auf und es steht drin.
+- **In drei Schritten startklar:** Ordner an einen Platz legen, den du
+  wiederfindest (nicht in die Cloud) · Gedächtnis-Datei ausfüllen, fünf Zeilen
+  reichen · dein Wissen aus Kapitel 2 in `context` kopieren.
 - **Vier Dateien aus Kapitel 2 kommen in `context`:** dein Business-Brief
   (2.3), was bei der Buch-Technik herauskam (2.4), deine Textproben (2.5) und
   deine Floskel-Liste (2.2). Je eine eigene Datei, nicht alles in eine.
@@ -192,9 +542,11 @@ willst.
 
 **Das Wichtigste in Kürze:**
 
-- Drei Dinge gehören hinein: wer du bist (ein Verweis auf deinen Business-Brief
-  reicht), wie du arbeitest (deine Regeln, deine Verbote, dein Ton) und was wo
-  liegt.
+- **Der Unterschied zum Business-Brief:** Der Brief sagt, wer du bist und wie du
+  klingst. Diese Datei sagt, wie in deinem Arbeitsplatz gearbeitet wird.
+- **Fünf Teile:** was das hier ist · wo was liegt · was immer mitgelesen wird ·
+  meine Regeln · was ich gerade vorhabe. Die Vorlage unter diesem Video hat zu
+  jedem Teil ein ausgefülltes Beispiel.
 - **Fang mit fünf Zeilen an.** Du schreibst nicht alles auf einmal hinein — sie
   wächst von selbst.
 - Die Regel, nach der sie wächst: **Was dich dreimal geärgert hat, gehört als
@@ -235,6 +587,34 @@ eigentlich ist.
 >
 > Führ mich Schritt für Schritt durch, und sag mir bei jedem Schritt, was ich
 > anklicken muss. Das Verzeichnis soll privat sein, nicht öffentlich.
+
+---
+
+### 4.4c · Die Befehle, die schon drin liegen
+
+**In dieser Lektion:** Vier Abläufe, die du nur noch aufrufst — darunter der,
+der dein Gedächtnis pflegt.
+
+**Das Wichtigste in Kürze:**
+
+- Ein Befehl ist ein **Ablauf, den du einmal beschreibst und danach nur noch
+  aufrufst.** Statt jeden Morgen fünf Sätze zu tippen, tippst du `/start`.
+- **`/start`** am Anfang jeder Sitzung: Sie schaut, was im Arbeitsplatz liegt
+  und was zuletzt offen war, und fragt dann, woran du heute arbeitest.
+- **`/shutdown`** am Ende: Sie räumt auf, schreibt in die Gedächtnis-Datei, was
+  dazugelernt wurde, und sichert alles.
+- 🚨 **Ohne `/shutdown` wächst deine Gedächtnis-Datei nicht.** Dann erklärst du
+  ihr in vier Wochen wieder dasselbe wie heute. Sie wächst nicht von selbst —
+  sie wächst, weil abends jemand hineinschreibt.
+- Zwei weitere für alles, was grösser ist als ein Auftrag: **`/create-plan`**
+  schreibt auf, was sie vorhat, in Schritten — du liest es und sagst, was nicht
+  stimmt. **`/implement`** arbeitet den Plan danach ab und hakt ihn dabei ab.
+  Der Plan bleibt in `plans` liegen, du kannst in drei Wochen nachlesen, warum
+  etwas so gebaut wurde.
+- Ein Befehl und ein Skill sind dasselbe Prinzip, nur an verschiedenen Stellen
+  abgelegt. Mehr dazu in Modul 5.
+
+**Alle vier liegen im Grundgerüst aus 4.3 — du musst keinen davon schreiben.**
 
 ---
 
@@ -303,17 +683,150 @@ ab Modul 5 setzt einen laufenden Arbeitsplatz voraus.
 > Wenn du aus diesem Kurs nur ein Modul mitnimmst, dann dieses. Ein Skill ist
 > eine Arbeit, die du einmal beschreibst und danach nur noch aufrufst. Alles,
 > was danach kommt, ist Anwendung davon.
+>
+> Am Ende dieses Moduls hast du einen eigenen Skill für eine Arbeit, die du
+> sowieso jede Woche machst — und eine Liste mit den nächsten drei.
 
-| Lektion | Text |
-|---|---|
-| **5.1 Was ein Skill ist** | Ein Rezept, das die KI jedes Mal gleich abarbeitet. Ich rufe einen auf und du siehst, was passiert. |
-| **5.2 Ein Skill auseinandergenommen** | Wir gehen einen fertigen Skill Zeile für Zeile durch: Kopf, Zweck, Regeln, gewünschtes Ergebnis, Beispiel. Die Datei bekommst du mit. |
-| **5.3 Woran du erkennst, dass etwas ein Skill werden sollte** | Alles, was du dreimal ungefähr gleich machst. Ich zeige dir eine ehrliche Liste aus meinem eigenen Alltag, damit du deine eigene aufschreiben kannst. |
-| **5.4 Deinen ersten Skill bauen — mit dem Skill Creator** | Von der Idee zur fertigen Datei, live mitgefilmt. |
-| **5.5 Von Hand nachschärfen** | Was ein Baukasten nie wissen kann: deine Regeln und deine Verbote. Hier machst du aus einem brauchbaren Skill deinen eigenen. |
-| **5.6 Was dreimal korrigiert wird, wird eine Regel** | Der Punkt, an dem ein Skill besser wird als du selbst an einem müden Tag. Ich zeige dir eine Regel, die bei mir aus einem echten Fehler entstanden ist. |
-| **5.7 Achtung bei Skills aus dem Internet** | Du lädst fremde Anweisungen in deinen Arbeitsplatz. Worauf du vorher schaust. |
-| **5.8 Zusammenfassung und Checkliste** | Das Wichtigste aus Modul 5, dazu das leere Skill-Gerüst zum Herunterladen. |
+---
+
+### 5.1 · Was ein Skill ist
+
+**In dieser Lektion:** Ich rufe einen auf, und du siehst, was passiert.
+
+**Das Wichtigste in Kürze:**
+
+- **Das Bild dahinter:** ein Rezept. Darin steht, was gebraucht wird, in
+  welcher Reihenfolge es gemacht wird und woran du merkst, dass es gelungen ist.
+- Ein Skill ist nichts Technisches. Es ist eine Textdatei, in der eine Arbeit
+  beschrieben steht — auf Deutsch, in ganzen Sätzen.
+- **Was sich dadurch ändert:** Du erklärst eine Arbeit einmal statt jedes Mal.
+  Und sie wird jedes Mal gleich gut, auch an einem müden Dienstag.
+- Die vier Befehle aus Modul 4 waren schon Skills. Du hast das Prinzip also
+  längst benutzt — jetzt baust du einen eigenen.
+
+---
+
+### 5.2 · Ein Skill auseinandergenommen
+
+**In dieser Lektion:** Wir gehen einen fertigen Skill Zeile für Zeile durch.
+
+**Das Wichtigste in Kürze:**
+
+- **Sechs Teile, immer dieselben:** der Kopf (Name und wann er dran ist) · der
+  Zweck · wo das Wissen liegt · die Regeln · was herauskommen soll · ein
+  Beispiel.
+- Der Kopf ist das, woran sie erkennt, dass dieser Skill gemeint ist. Ohne ihn
+  findet sie ihn nicht.
+- **Der Teil, an dem es meistens scheitert:** „was herauskommen soll". Wer das
+  offen lässt, bekommt jedes Mal etwas anderes. Je genauer du das Ergebnis
+  beschreibst, desto weniger musst du nachbessern.
+- Ein Beispiel im Skill ist mehr wert als drei zusätzliche Regeln.
+
+**📎 Die Datei, die wir hier auseinandernehmen, liegt unter diesem Video.**
+
+---
+
+### 5.3 · Woran du erkennst, dass etwas ein Skill werden sollte
+
+**In dieser Lektion:** Deine eigene Liste, statt meiner Beispiele.
+
+**Das Wichtigste in Kürze:**
+
+- **Drei Merkmale, und alle drei müssen stimmen:** Du machst die Arbeit wieder ·
+  sie hat eine Form, die jedes Mal ähnlich ist · und sie nervt dich.
+- Das dritte ist das wichtigste. Was dich nicht nervt, beschreibst du nie
+  sorgfältig genug.
+- **Deine Liste:** Schreib auf, was du in der letzten Woche mehr als einmal
+  gemacht hast. Nicht die grossen Vorhaben — die kleinen Handgriffe.
+- Mein eigenes Beispiel ist ehrlich und unspektakulär. Genau darum geht es:
+  Skills sind keine Grossprojekte.
+
+---
+
+### 5.4 · Deinen ersten Skill bauen
+
+**In dieser Lektion:** Von der Idee zur fertigen Datei, live mitgefilmt.
+
+**Das Wichtigste in Kürze:**
+
+- **Vier Schritte:** beschreiben · bauen lassen · ausprobieren · nachschärfen.
+- **Zwei Wege zum selben Ziel:** Du kannst den Skill von ihr bauen lassen —
+  dafür gibt es einen fertigen Helfer — oder ihn selbst schreiben. Der erste Weg
+  ist schneller, der zweite verstehst du besser.
+- Ich zeige beide am selben Beispiel, damit du siehst, wo sie sich
+  unterscheiden.
+- **Der erste Entwurf ist nie fertig.** Das ist kein Fehler, das ist der
+  Vorgang: Du probierst ihn aus und schärfst nach, was danebenlag.
+
+---
+
+### 5.5 · Von Hand nachschärfen
+
+**In dieser Lektion:** Was ein Baukasten nie wissen kann.
+
+**Das Wichtigste in Kürze:**
+
+- **Wo du ansetzt:** bei dem, was du im Ergebnis umgebaut hast. Jede Korrektur,
+  die du von Hand machst, ist eine fehlende Regel.
+- **Verbote sind wichtiger als Vorgaben.** Eine Vorgabe sagt, was sie tun soll
+  — und sie macht es irgendwie. Ein Verbot verhindert genau das, was dich
+  gestört hat.
+- Schreib die Verbote so, wie du sie denkst. „Bitte achte auf einen natürlichen
+  Ton" hilft ihr nicht — das konkrete Wort, das nicht vorkommen darf, schon.
+- Deine Floskel-Liste aus Lektion 2.2 gehört hier hinein — oder der Skill
+  verweist darauf.
+
+---
+
+### 5.6 · Was dreimal korrigiert wird, wird eine Regel
+
+**In dieser Lektion:** Der Punkt, an dem ein Skill besser wird als du an einem
+müden Tag.
+
+**Das Wichtigste in Kürze:**
+
+- **Wie das im Alltag aussieht:** Du gibst denselben Auftrag, du korrigierst
+  dasselbe, und beim dritten Mal schreibst du es in den Skill.
+- Ab dann macht sie diesen Fehler nicht mehr — und du musst dich nie wieder
+  erinnern, dass er dir wichtig war.
+- Ich zeige dir eine Regel aus meinem eigenen Skill, die aus einem echten
+  Fehler entstanden ist. Die meisten meiner Regeln sind so entstanden.
+- Dasselbe Prinzip wie bei der Gedächtnis-Datei in Modul 4. Es ist die eine
+  Gewohnheit, die alles andere trägt.
+
+---
+
+### 5.7 · Achtung bei Skills aus dem Internet
+
+**In dieser Lektion:** Du lädst fremde Anweisungen in deinen Arbeitsplatz.
+
+**Das Wichtigste in Kürze:**
+
+- **Worauf du schaust, bevor du einen fremden Skill benutzt:** Was darf er
+  anfassen? Schickt er etwas nach draussen? Steht darin etwas, das du nicht
+  verstehst?
+- Ein Skill ist Text — du kannst ihn aufmachen und lesen. Mach das. Es dauert
+  zwei Minuten.
+- 🚨 **Lass ihn dir im Zweifel erklären.** „Lies diesen Skill und sag mir in
+  einfachen Worten, was er tut und was er anfassen darf" ist ein völlig
+  legitimer Auftrag.
+- Fremde Skills sind nichts Schlechtes. Sie sind nur nichts, was man
+  unbesehen hineinkopiert.
+
+---
+
+### 5.8 · Zusammenfassung und Checkliste
+
+**In dieser Lektion:** Was jetzt bei dir steht.
+
+**Das nimmst du mit:**
+
+- **Einen eigenen Skill** — für eine Arbeit, die du sowieso machst.
+- **Eine Liste** — die nächsten drei, die sich lohnen.
+- **Eine Gewohnheit** — dreimal korrigiert, dann eine Regel.
+
+**📎 Unter diesem Video liegen die Checkliste und ein leeres Skill-Gerüst mit
+allen sechs Teilen.**
 
 ---
 
@@ -322,16 +835,113 @@ ab Modul 5 setzt einen laufenden Arbeitsplatz voraus.
 **Modultext:**
 
 > Der Unterschied zwischen einem Skill und einem Bot ist klein: Beim Bot ruft
-> ihn niemand mehr auf. Er meldet sich von selbst, auch wenn dein Laptop zu ist.
+> ihn niemand mehr auf. Er meldet sich von selbst.
+>
+> Am Ende dieses Moduls kommt bei dir eine Nachricht aufs Handy an, die niemand
+> angestossen hat.
 
-| Lektion | Text |
-|---|---|
-| **6.1 Vom Skill zum Bot** | Derselbe Auftrag, nur dass er von selbst losgeht. Was dafür dazukommen muss. |
-| **6.2 Übersicht: meine Bots** | Was bei mir auf dem Handy ankommt und wofür jeder einzelne gut ist. Damit du siehst, was überhaupt möglich ist, bevor du deinen eigenen baust. |
-| **6.3 Dein erster Telegram-Bot** | Von null bis zur ersten Nachricht auf deinem Handy, komplett mitgefilmt. Das Gerüst dazu bekommst du mit. |
-| **6.4 Dass er morgens von selbst schreibt** | Wo der Bot wohnt, damit er läuft, wenn du schläfst — und was das im Monat kostet. |
-| **6.5 Wenn der Bot schweigt** | Die drei häufigsten Gründe und wo du nachschaust. Spart dir einen halben Abend. |
-| **6.6 Zusammenfassung und Checkliste** | Das Wichtigste aus Modul 6 und die Checkliste dazu. |
+---
+
+### 6.1 · Vom Skill zum Bot
+
+**In dieser Lektion:** Derselbe Auftrag, nur dass er von selbst losgeht.
+
+**Das Wichtigste in Kürze:**
+
+- **Drei Teile, mehr braucht es nicht:** der **Auftrag** (das ist dein Skill) ·
+  der **Wecker** (wann er losgeht) · der **Briefkasten** (wo das Ergebnis
+  ankommt).
+- Der Auftrag ist der Teil, den du schon kannst. Die anderen zwei sind
+  Einstellungen, keine Arbeit.
+- Als Briefkasten nehmen wir Telegram. Das ist kostenlos, läuft auf jedem Handy
+  und lässt sich in zehn Minuten einrichten.
+
+---
+
+### 6.2 · Übersicht: meine Bots
+
+**In dieser Lektion:** Was bei mir auf dem Handy ankommt — damit du siehst, was
+möglich ist.
+
+**Das Wichtigste in Kürze:**
+
+- **Vier Beispiele aus vier Ecken meines Lebens:** Garten · Küche · Business ·
+  Haushalt. Zwei davon haben mit Arbeit gar nichts zu tun.
+- **Was alle vier gemeinsam haben:** Sie nehmen mir keine Entscheidung ab. Sie
+  legen mir etwas hin, und ich schaue drauf.
+- Der häufigste Anfängerfehler ist ein Bot, der etwas selbst erledigt. Ein Bot,
+  der etwas vorbereitet, ist mehr wert und macht weniger Ärger.
+- Fang mit etwas Privatem an. Dort merkst du sofort, ob es taugt, und es ist
+  nichts kaputt, wenn es danebengeht.
+
+---
+
+### 6.3 · Dein erster Telegram-Bot
+
+**In dieser Lektion:** Von null bis zur ersten Nachricht auf deinem Handy.
+
+**Das Wichtigste in Kürze:**
+
+- **Vier Schritte**, komplett mitgefilmt. Du brauchst dafür nichts weiter als
+  Telegram auf dem Handy.
+- **Du musst nicht bei null anfangen:** Das Gerüst liegt unter diesem Video. Du
+  beschreibst, was er tun soll, und sie baut den Rest.
+- 🚨 Beim Einrichten entsteht ein **Zugangsschlüssel**. Der gehört nicht in
+  deinen Text, nicht in ein Dokument und nicht in eine Nachricht — er gehört in
+  die Datei, die dafür da ist. Wie das geht, sagt sie dir beim Einrichten;
+  warum es zählt, steht in Modul 10.
+
+**📎 Das Bot-Gerüst liegt unter diesem Video.**
+
+---
+
+### 6.4 · Dass er morgens von selbst schreibt
+
+**In dieser Lektion:** Wo der Bot wohnt, damit er läuft, wenn du schläfst.
+
+**Das Wichtigste in Kürze:**
+
+- **Zwei Wege:** Er läuft auf deinem Rechner — dann muss der an sein. Oder er
+  läuft bei einem Anbieter im Netz — dann läuft er immer, und das kostet rund 5
+  im Monat.
+- **Beim Zeitpunkt aufpassen:** Ein Bot, der um sieben läuft, bringt dir nichts,
+  wenn du um sechs schon am Handy warst. Überleg vorher, wann du die Nachricht
+  wirklich lesen willst.
+- Ein Bot, der etwas von deinem Rechner braucht — eine Datei, ein Programm —
+  kann nicht im Netz wohnen. Das ist die Grenze, nach der du die Entscheidung
+  triffst.
+
+---
+
+### 6.5 · Wenn der Bot schweigt
+
+**In dieser Lektion:** Die drei häufigsten Gründe und wo du nachschaust.
+
+**Das Wichtigste in Kürze:**
+
+- **1 · Der Wecker:** Er ist gar nicht losgegangen. Steht die Zeit richtig,
+  stimmt die Zeitzone?
+- **2 · Der Schlüssel:** Zugänge laufen ab. Das ist der Grund, bei dem alle
+  zuletzt nachschauen und der es am häufigsten ist.
+- **3 · Der Auftrag:** Er ist losgegangen und mitten drin gestolpert. Dann steht
+  es im Protokoll.
+- **Und wenn du im Protokoll nichts verstehst:** kopier es hinein und frag, was
+  es bedeutet. Das ist derselbe Handgriff wie bei jeder Fehlermeldung — und er
+  spart dir einen halben Abend.
+
+---
+
+### 6.6 · Zusammenfassung und Checkliste
+
+**In dieser Lektion:** Was jetzt bei dir läuft.
+
+**Das nimmst du mit:**
+
+- **Einen Bot**, der sich von selbst meldet.
+- **Einen Ort**, an dem er wohnt — und du weisst, warum du den gewählt hast.
+- **Drei Stellen**, an denen du nachschaust, wenn er schweigt.
+
+**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
 
 ---
 
@@ -342,17 +952,157 @@ ab Modul 5 setzt einen laufenden Arbeitsplatz voraus.
 > Ab hier bekommst du Maschinen. Wie du sie einrichtest und laufen lässt, steht
 > in diesem Modul — was inhaltlich hineingehört, damit gute Beiträge
 > herauskommen, lernst du in der Instagram-Kundenmaschine.
+>
+> 🚨 Und eine Ansage vorweg: Die Maschinen schlagen vor, du gibst frei. Nichts
+> geht hier ungeprüft raus.
 
-| Lektion | Text |
-|---|---|
-| **7.1 Die Content-Maschinen im Überblick** | Für jedes Format ein Befehl, und alle lesen dieselben Wissensdateien. Ich zeige dir, wie das zusammenhängt. |
-| **7.2 Caption und Story — leer gegen gefüllt** | Derselbe Befehl zweimal: einmal mit leerer Wissensdatei, einmal mit gefüllter. Der Unterschied im Ergebnis zeigt dir besser als jede Erklärung, worauf es ankommt. |
-| **7.3 Karussell — vom Text zum fertigen Bild** | Erst die Folientexte, dann die Bilder. Zwei Schritte, die viele in einen packen wollen und sich damit das Ergebnis kaputtmachen. |
-| **7.4 Reel — Rohschnitt aus Rohmaterial** | Einmal frei in die Kamera sprechen, mit Versprechern und Wiederholungen, und die Maschine schneidet daraus einen Rohschnitt. Aufbaustufe: Du brauchst dafür ein paar Programme mehr. |
-| **7.5 Freigabe statt Autopilot** | Warum bei mir nichts ungeprüft rausgeht. Dein Konto hängt an deinem Partnerunternehmen, und ein unbedachter Satz kostet dich mehr, als eine automatisierte Woche dir spart. Ich zeige dir, wie ich das gelöst habe. |
-| **7.6 Automatisiertes Posten** | Abends freigeben, und am nächsten Morgen ist es draussen. Wie die Kette dahinter aussieht. |
-| **7.7 Wenn die KI Murks baut** | Automatisch erzeugte Beiträge werden schlecht, sobald niemand mehr hinschaut. Woran du das erkennst und wie du es maschinell prüfen lässt. |
-| **7.8 Zusammenfassung und Checkliste** | Das Wichtigste aus Modul 7 und die Checkliste dazu. |
+---
+
+### 7.1 · Die Content-Maschinen im Überblick
+
+**In dieser Lektion:** Für jedes Format ein Befehl, und alle lesen dieselben
+Wissensdateien.
+
+**Das Wichtigste in Kürze:**
+
+- **Wie das zusammenhängt:** Vier Befehle — Caption, Story, Karussell, Reel —
+  und darunter liegen Dateien mit deinem Wissen. Änderst du eine Datei, ändert
+  sich das Ergebnis bei allen vier.
+- Das ist der ganze Trick: Du pflegst ein Wissen und nicht vier Maschinen.
+- 🚨 **Deine Wissensdateien sind am Anfang leer.** Darin stehen Überschriften
+  und je zwei Sätze, was hineingehört — keine meiner Formeln, keine meiner
+  Beispiele. Was da hineingehört, ist deine Arbeit, und genau die macht den
+  Unterschied.
+- Was in diesen Dateien stehen muss, damit wirklich gute Beiträge herauskommen,
+  ist ein eigenes Thema. Hier lernst du die Technik, dort den Inhalt.
+
+**📎 Unter diesem Video liegen die vier Befehle plus die leeren
+Wissensdateien.**
+
+---
+
+### 7.2 · Caption und Story — leer gegen gefüllt
+
+**In dieser Lektion:** Derselbe Befehl zweimal, und der Unterschied erklärt
+alles.
+
+**Das Wichtigste in Kürze:**
+
+- **Durchgang 1** läuft mit leerer Wissensdatei. **Durchgang 2** mit gefüllter.
+  Beide Ergebnisse siehst du nebeneinander.
+- Das Ergebnis aus Durchgang 1 ist nicht falsch. Es ist nur beliebig — es
+  könnte von jeder sein.
+- **Die Lehre daraus ist die wichtigste des Moduls:** Die Maschine macht nicht
+  den Unterschied. Das Wissen darin macht ihn.
+- Story funktioniert genauso. Derselbe Aufbau, dasselbe Wissen, anderes Format.
+
+---
+
+### 7.3 · Karussell — vom Text zum fertigen Bild
+
+**In dieser Lektion:** Erst die Folientexte, dann die Bilder.
+
+**Das Wichtigste in Kürze:**
+
+- **Zwei Schritte, und sie gehören getrennt:** erst die Texte freigeben, dann
+  die Bilder bauen.
+- Wer beides in einen Schritt packt, baut zehn Bilder mit einem Text, der nicht
+  stimmt — und muss alles neu machen. Zehn Minuten Lesen sparen eine Stunde
+  Nachbauen.
+- **Warum ein eigener Editor:** Damit du einzelne Folien ändern kannst, ohne
+  den ganzen Satz neu zu bauen. Ich zeige dir, wie ich das gelöst habe.
+- Ein Bild ändern heisst hier: eine Zeile ändern. Nichts wird neu gezeichnet.
+
+---
+
+### 7.4 · Reel — Rohschnitt aus Rohmaterial
+
+**In dieser Lektion:** Einmal frei in die Kamera sprechen, und die Maschine
+schneidet.
+
+**Das Wichtigste in Kürze:**
+
+- **Was passiert:** Du sprichst mit Versprechern und Wiederholungen, sie
+  schreibt mit, erkennt die Wiederholungen und schneidet daraus einen
+  Rohschnitt.
+- **Die Regel dahinter:** Der letzte vollständige Versuch gewinnt. Du musst dir
+  also nichts merken und nichts notieren — einfach nochmal sagen.
+- 🚨 **Ehrlich zur Einrichtung:** Das ist die Aufbaustufe. Dafür braucht es ein
+  paar Programme mehr, und das Einrichten dauert länger als bei allem anderen
+  in diesem Kurs. Wenn du gerade keine Lust darauf hast, überspring die Lektion
+  und komm später zurück.
+- Den Feinschnitt macht am Ende ein Mensch. Eine Maschine hört nicht, ob ein
+  Satz klingt.
+
+---
+
+### 7.5 · Freigabe statt Autopilot
+
+**In dieser Lektion:** Warum bei mir nichts ungeprüft rausgeht.
+
+**Das Wichtigste in Kürze:**
+
+- **Warum das bei uns anders ist als bei anderen:** Dein Konto hängt an deinem
+  Partnerunternehmen. Ein unbedachter Satz kostet dich mehr, als eine
+  automatisierte Woche dir spart.
+- **Wie das praktisch aussieht:** Vorschlag · Freigabe · Abendlauf. Die Maschine
+  legt vor, du entscheidest, und erst danach geht etwas raus.
+- Der Knopf, mit dem du freigibst, ist die Entscheidung. Nicht die Planung,
+  nicht das Datum — der Klick.
+- 🚨 **Was die KI schreibt, verantwortest du.** Dieser Satz gilt für jeden
+  Beitrag in diesem Modul, und Modul 10 geht darauf ein.
+
+---
+
+### 7.6 · Automatisiertes Posten
+
+**In dieser Lektion:** Abends freigeben, am nächsten Morgen ist es draussen.
+
+**Das Wichtigste in Kürze:**
+
+- **Der Abendlauf** holt alles ab, was du freigegeben hast, und plant es ein.
+  Einmal am Tag, zur festen Zeit.
+- **Zwei Stolpersteine, die ich selbst hatte:** Ein Beitrag, dessen Zeitpunkt
+  schon vorbei ist, wird nie eingeplant — und meldet trotzdem „freigegeben".
+  Und wenn du etwas von Hand postest, muss die Maschine das wissen, sonst
+  postet sie es ein zweites Mal.
+- Beides sind Fehler, die man nicht sieht, bevor sie passieren. Ich zeige dir,
+  wie ich sie abgefangen habe.
+
+---
+
+### 7.7 · Wenn die KI Murks baut
+
+**In dieser Lektion:** Woran du erkennst, dass die Qualität rutscht — und wie
+du es prüfen lässt.
+
+**Das Wichtigste in Kürze:**
+
+- **Woran man es erkennt:** Die Beiträge werden gleichförmig. Dieselben Muster,
+  dieselben Übergänge, dieselbe Länge.
+- **Deshalb prüft ein Skript mit:** Es sucht nach den Mustern aus deiner
+  Floskel-Liste und meldet jeden Fund mit Fundstelle. Das ist Fleissarbeit, und
+  dafür ist eine Maschine besser als ein Mensch um elf Uhr abends.
+- 🚨 **Was ein Skript nicht kann:** beurteilen, ob der Beitrag etwas taugt. Ob
+  er berührt, ob jemand etwas mitnimmt, ob er nach dir klingt — das bleibt
+  Lesearbeit. Das Skript sagt das am Ende jedes Laufs selbst.
+- Jede neue Prüfregel wird an einem bekannt schlechten Satz getestet **und** an
+  einem guten, der nicht anschlagen darf. Nach dem dritten Fehlalarm liest
+  niemand mehr hin.
+
+---
+
+### 7.8 · Zusammenfassung und Checkliste
+
+**In dieser Lektion:** Was jetzt bei dir läuft.
+
+**Das nimmst du mit:**
+
+- **Vier Maschinen** — Caption, Story, Karussell, Reel.
+- **Einen Prüfweg** — maschinell, was maschinell geht, und der Rest von Hand.
+- **Eine Regel** — Freigabe statt Autopilot.
+
+**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
 
 ---
 
@@ -363,14 +1113,97 @@ ab Modul 5 setzt einen laufenden Arbeitsplatz voraus.
 > Dieselbe Logik wie im Modul davor, nur für dein Angebot: Du bekommst die
 > Maschinen für Produkte, Verkaufsseiten und Mails. Was inhaltlich in ein gutes
 > Angebot gehört, steht in „Vom Network-Wissen zur digitalen Produktwelt".
+>
+> Am Ende dieses Moduls liegt eine Verkaufsseite unter deiner eigenen Adresse im
+> Netz.
 
-| Lektion | Text |
-|---|---|
-| **8.1 Produkt- und Verkaufsseiten-Skills** | Was die beiden Befehle können und wo ihre Grenze liegt. |
-| **8.2 Eine Verkaufsseite bauen lassen** | Von der Beschreibung deines Angebots zur fertigen Seite, live mitgefilmt. |
-| **8.3 Auf die eigene Website bringen** | Wie die Seite online geht und unter deiner eigenen Adresse liegt. |
-| **8.4 Mails und Verteiler anbinden** | Wie du deinen Mail-Anbieter anhängst. Ehrlich dazu: Hier hängt ein Zugang dran, und den solltest du bewusst setzen. |
-| **8.5 Zusammenfassung und Checkliste** | Das Wichtigste aus Modul 8 und die Checkliste dazu. |
+---
+
+### 8.1 · Produkt- und Verkaufsseiten-Skills
+
+**In dieser Lektion:** Drei Maschinen und wo ihre Grenze liegt.
+
+**Das Wichtigste in Kürze:**
+
+- **Produkt** — baut aus einer Idee eine Struktur: Module, Lektionen, was
+  hineingehört.
+- **Verkaufsseite** — macht aus deinem Angebot eine fertige Seite, Abschnitt
+  für Abschnitt.
+- **Mails** — schreibt die Strecke, die nach dem Kauf losgeht.
+- 🚨 **Und der Treibstoff?** Genau wie in Modul 7: Die Maschinen bauen die Form.
+  Was hineingehört — welches Problem dein Angebot löst, warum jemand jetzt
+  kauft, was dein Preis rechtfertigt — kommt von dir. Ohne das baut sie eine
+  schöne Seite für ein beliebiges Angebot.
+
+**📎 Unter diesem Video liegen die beiden Befehle plus die leeren
+Wissensdateien.**
+
+---
+
+### 8.2 · Eine Verkaufsseite bauen lassen
+
+**In dieser Lektion:** Von der Beschreibung deines Angebots zur fertigen Seite.
+
+**Das Wichtigste in Kürze:**
+
+- **Was der Skill von dir will**, bevor er anfängt: für wen das Angebot ist,
+  welches Problem es löst, was drin ist, was es kostet, und warum man dir das
+  abnimmt.
+- Je dünner deine Antworten, desto allgemeiner die Seite. Das ist keine Schwäche
+  der Maschine — eine Seite kann nur so konkret sein wie das, was du ihr sagst.
+- **Und das Aussehen?** Das steht fest, bevor der erste Satz geschrieben ist:
+  deine Farben, deine Schriften, dein Aufbau. Du entscheidest nicht bei jeder
+  Seite neu, wie sie aussieht.
+- 🚨 **Keine erfundenen Zahlen und keine erfundenen Kundenstimmen.** Wenn du
+  keine hast, bleibt der Platz leer — eine erfundene Stimme auf einer
+  Verkaufsseite ist das Einzige, was dich wirklich teuer werden kann.
+
+---
+
+### 8.3 · Auf die eigene Website bringen
+
+**In dieser Lektion:** Wie die Seite online geht und unter deiner Adresse
+liegt.
+
+**Das Wichtigste in Kürze:**
+
+- **Drei Schritte:** Seite anlegen · Inhalt hineingeben · Adresse setzen.
+- Eine neue Seite geht zuerst als **Entwurf** online. Du schaust sie an, und
+  erst dann stellst du sie öffentlich.
+- 🚨 **Am Handy anschauen, immer.** Mehr als die Hälfte deiner Leute kommt vom
+  Handy, und genau dort verschiebt sich das, was am Rechner gut aussah.
+- Was dir nicht passt, sagst du in einem Satz. Du änderst keine Zeile selbst.
+
+---
+
+### 8.4 · Mails und Verteiler anbinden
+
+**In dieser Lektion:** Wie du deinen Mail-Anbieter anhängst.
+
+**Das Wichtigste in Kürze:**
+
+- **Was du dafür brauchst:** einen Zugang zu deinem Mail-Programm. Ehrlich dazu:
+  Hier hängt ein echter Schlüssel dran, und den solltest du bewusst setzen.
+- 🚨 **Ein Zugang zum Mail-Verteiler kann verschicken.** Richte ihn ein, und leg
+  dir die Regel fest, dass nichts rausgeht, ohne dass du es vorher gesehen hast.
+  Bei mir ist das die eine Stelle, an der ich nie etwas automatisch laufen lasse.
+- **Was eine Strecke ausmacht:** ausliefern · dranbleiben · weitergehen. Drei
+  Jobs, und jede Mail hat genau einen davon.
+- Eine Mail, die alle drei gleichzeitig will, erledigt keinen davon.
+
+---
+
+### 8.5 · Zusammenfassung und Checkliste
+
+**In dieser Lektion:** Was jetzt bei dir steht.
+
+**Das nimmst du mit:**
+
+- **Drei Maschinen** — Produkt, Verkaufsseite, Mails.
+- **Eine Seite im Netz** — unter deiner eigenen Adresse.
+- **Eine Regel** — nichts geht raus, ohne dass du es gesehen hast.
+
+**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
 
 ---
 
@@ -380,14 +1213,139 @@ ab Modul 5 setzt einen laufenden Arbeitsplatz voraus.
 
 > Bis hierhin hast du einzelne Maschinen. Jetzt bekommen sie eine Oberfläche, an
 > der du morgens vorbeischaust, freigibst und weitergehst.
+>
+> Und zum ersten Mal baust du etwas, das auch für deine Kundschaft gedacht sein
+> kann — nicht nur für dich.
 
-| Lektion | Text |
-|---|---|
-| **9.1 Was ein Artifact ist** | Eine eigene kleine Seite mit Datenbank, die deine KI befüllt und die du bedienst. Auch vom Handy aus. |
-| **9.2 Dein eigenes Cockpit bauen** | Vom leeren Gerüst zur ersten Ansicht. Die Vorlage bekommst du mit. |
-| **9.3 Der Abendlauf** | Was abends automatisch passiert, damit du morgens nichts mehr anstossen musst. |
-| **9.4 Wenn zwei Sachen dasselbe tun** | Ein Beitrag, den ich von Hand gepostet hatte, stand im Cockpit weiter auf „wartet" — und wäre am Abend ein zweites Mal eingeplant worden. Der Fehler, den man nicht sieht, bevor er passiert, und wie du ihn verhinderst. |
-| **9.5 Zusammenfassung und Checkliste** | Das Wichtigste aus Modul 9 und die Checkliste dazu. |
+---
+
+### 9.1 · Was ein Artifact ist
+
+**In dieser Lektion:** Eine eigene kleine Seite mit Gedächtnis, die du bedienst.
+
+**Das Wichtigste in Kürze:**
+
+- **Was daran anders ist:** Es ist keine Datei und keine Website. Es ist eine
+  Seite, die deine KI gebaut hat, die eine eigene kleine Datenbank hat und die
+  du vom Handy aus bedienen kannst.
+- Du brauchst dafür keinen Webspace, keine Adresse und keine Technik.
+- **Wofür sich das lohnt:** alles, wo du etwas anschauen, abhaken oder freigeben
+  willst. Für alles, wo du nur etwas lesen willst, reicht eine Nachricht aufs
+  Handy.
+
+---
+
+### 9.2 · Dein eigenes Cockpit bauen
+
+**In dieser Lektion:** Vom leeren Gerüst zur ersten Ansicht.
+
+**Das Wichtigste in Kürze:**
+
+- **Drei Schritte:** beschreiben · bauen lassen · benutzen. Wie beim Skill in
+  Modul 5.
+- **Du musst nicht bei null anfangen:** Die Vorlage unter diesem Video hat die
+  Ansicht und den Aufbau schon drin. Du sagst, was hineingehört.
+- 🚨 **Das Gedächtnis ist der Unterschied.** Eine Seite ohne Datenbank vergisst
+  alles, sobald du sie zumachst. Erst mit Gedächtnis wird daraus etwas, an dem
+  du morgens vorbeischauen kannst.
+
+**📎 Die Cockpit-Vorlage liegt unter diesem Video.**
+
+---
+
+### 9.3 · Dein Wissen hineinbringen
+
+**In dieser Lektion:** Warum die Seite dein Wissen nicht von selbst kennt — und
+wie es trotzdem hineinkommt.
+
+**Das Wichtigste in Kürze:**
+
+- 🚨 **Das Problem:** So eine Seite kommt nicht an deine Dateien. Sie kennt
+  deinen Arbeitsplatz nicht, und das ist Absicht — sonst könnte jede Seite in
+  jeden Ordner schauen.
+- **Wie es trotzdem geht, in drei Schritten:** sammeln · ablegen · mitgeben. Dein
+  Wissen wird einmal zusammengetragen und als Brief in die Seite gelegt.
+- **Drei Dinge, die du dabei wissen musst:** Es ist eine Kopie, keine
+  Verbindung — änderst du die Quelle, musst du den Brief neu legen. Jede
+  Anfrage schleppt ihn mit, das kostet etwas. Und was darin steht, bestimmt die
+  Qualität, nicht die Seite.
+- 🚨 **Und eine Grenze, die zählt:** Sobald so eine Seite deine Dateien oder
+  eine Datenbank anfassen darf, ist sie nichts mehr, was du weitergeben kannst.
+  Eine Seite für deine Kundschaft baut man bewusst ohne diese Fähigkeiten.
+
+---
+
+### 9.4 · Der Abendlauf
+
+**In dieser Lektion:** Was abends automatisch passiert, damit du morgens nichts
+anstossen musst.
+
+**Das Wichtigste in Kürze:**
+
+- **Was er tut:** Er holt ab, was du freigegeben hast, plant es ein und schickt
+  dir eine Nachricht, was passiert ist.
+- **Warum er zuerst trocken prüft:** Er geht einmal alles durch, ohne etwas zu
+  tun, und meldet, was nicht stimmt. Erst wenn das sauber ist, wird es scharf.
+  Ein Lauf, der mitten drin abbricht, lässt die Hälfte erledigt und die andere
+  nicht — und niemand weiss hinterher, welche Hälfte.
+- **Er meldet sich auch, wenn er nichts getan hat** — aber nur dann, wenn es
+  etwas zu melden gibt. Eine tägliche Nachricht „heute nichts" wird
+  weggewischt, und mit ihr die eine, die zählt.
+
+---
+
+### 9.5 · Mehr als eine Seite
+
+**In dieser Lektion:** Warum bei mir zwei Seiten statt einer laufen — und was
+ich dabei falsch gemacht habe.
+
+**Das Wichtigste in Kürze:**
+
+- **Warum zwei:** Eine zum Prüfen und Freigeben, eine zum Bauen. Zwei Arbeiten,
+  zwei Orte.
+- 🚨 **Was ich dabei falsch gemacht habe:** Ich hatte dasselbe an zwei Stellen
+  gepflegt. Zwei Ansichten auf dieselben Daten laufen beim nächsten Umbau
+  auseinander, und dann sucht man jedes Mal, in welcher man gerade steht.
+  **Jedes Feld hat genau einen Ort.**
+- 🚨 **Die Brücke bist du.** Zwei solche Seiten sind nie verbunden — keine kann
+  in die andere schauen. Alles, was von einer zur anderen kommt, läuft über
+  deine KI: dort lesen, hier hineinschreiben.
+- **Drei Fallen, die mich Zeit gekostet haben**, erzähle ich dir in dieser
+  Lektion — damit sie dich keine kostet.
+
+---
+
+### 9.6 · Wenn zwei Sachen dasselbe tun
+
+**In dieser Lektion:** Der Fehler, den man nicht sieht, bevor er passiert.
+
+**Das Wichtigste in Kürze:**
+
+- **Was passiert ist:** Ich hatte einen Beitrag von Hand gepostet. Im Cockpit
+  stand er weiter auf „wartet" — und wäre am Abend ein zweites Mal eingeplant
+  worden.
+- Der Fehler war nicht die Automatik. Der Fehler war, dass zwei Wege dasselbe
+  tun konnten, ohne voneinander zu wissen.
+- **Was du daraus mitnimmst:** Wenn du etwas von Hand machst, muss die Maschine
+  das erfahren. Ein Knopf dafür ist keine Bequemlichkeit — er ist die
+  Absicherung.
+- Und: Eine Erfolgsmeldung, die nur sagt „abgelegt", sagt nicht, dass etwas
+  passieren wird. Wer nur auf die Meldung schaut, merkt es erst, wenn der
+  Beitrag nicht draussen ist.
+
+---
+
+### 9.7 · Zusammenfassung und Checkliste
+
+**In dieser Lektion:** Was jetzt bei dir läuft.
+
+**Das nimmst du mit:**
+
+- **Ein Cockpit** — du schaust morgens vorbei und gibst frei.
+- **Ein Gedächtnis** — deine Seite merkt sich, was du tust.
+- **Einen Abendlauf** — du stösst nichts mehr selbst an.
+
+**📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
 
 ---
 
@@ -397,15 +1355,124 @@ ab Modul 5 setzt einen laufenden Arbeitsplatz voraus.
 
 > Zum Schluss die Dinge, über die sonst niemand spricht, und der Blick auf eine
 > echte Woche bei mir — von Freitagmorgen bis zum fertigen Beitrag.
+>
+> Dieses Modul ist kurz und das wichtigste von allen. Wer es überspringt, baut
+> sich etwas auf, das irgendwann teuer wird.
 
-| Lektion | Text |
-|---|---|
-| **10.1 Was nie in einen Arbeitsplatz gehört** | Bei mir lagen Zugangsschlüssel im Klartext und die Daten von zweiunddreissig Kundinnen mit Namen, Mailadressen und Telefonnummern offen abrufbar. Aufgefallen ist es niemandem — gefunden wurde es nur, weil einmal jemand gezielt nachgesehen hat. Was ich daraus gelernt habe und wie du es von Anfang an richtig machst. |
-| **10.2 Wenn doch etwas passiert ist** | Löschen reicht nicht. Was du wirklich tun musst, wenn ein Zugang einmal offen lag. |
-| **10.3 Network-Compliance** | Was die KI schreibt, verantwortest du. Keine Heilversprechen, keine Einkommensversprechen, und die Regeln deines Partnerunternehmens gelten auch für einen Text, den du nicht selbst getippt hast. |
-| **10.4 Was KI nicht kann** | Beziehung, Entscheidung und deine Stimme bleiben bei dir. Und sie hört nichts, sieht nichts und weiss nicht, wie sich dein Dienstagnachmittag anfühlt. |
-| **10.5 Wie bei mir alles zusammenhängt** | Eine echte Woche, von Freitagmorgen bis zum fertigen Beitrag. Vorschläge kommen rein, ich gebe frei, abends plant es sich ein, die Bilder entstehen nebenher. Zum Mitschauen, nicht zum Nachbauen. |
-| **10.6 Wo du weitermachst** | Welche Maschine welches Wissen braucht und wo du das findest. Dazu die ehrliche Antwort, was als Nächstes wirklich dran ist bei dir. |
+---
+
+### 10.1 · Was nie in einen Arbeitsplatz gehört
+
+**In dieser Lektion:** Was bei mir passiert ist, und die drei Regeln daraus.
+
+**Das Wichtigste in Kürze:**
+
+- **Was bei mir passiert ist:** Zugangsschlüssel lagen im Klartext in meinen
+  Dateien, und die Daten von zweiunddreissig Kundinnen — Namen, Mailadressen,
+  Telefonnummern — waren offen abrufbar. Aufgefallen ist es niemandem. Gefunden
+  wurde es nur, weil einmal jemand gezielt nachgesehen hat.
+- **Regel 1 · Kein Schlüssel im Text.** Zugänge gehören in die Datei, die dafür
+  da ist, und die wird von der Sicherung ausgeschlossen.
+- **Regel 2 · Keine fremden Daten.** Namen, Mailadressen und Telefonnummern von
+  anderen Menschen gehören nicht in Dateien, die irgendwohin kopiert werden.
+- **Regel 3 · Zusagen gelten auch hier.** Wenn eine Kundin dir etwas unter vier
+  Augen erzählt hat, gehört es nicht in eine Datei, die deine KI mitliest und
+  zitieren kann.
+- 🚨 **Und noch eine Falle:** Ein Arbeitsplatz in einer Cloud-Ablage hebelt
+  jede Ausschlussliste aus. Was dort nicht gesichert werden soll, wird trotzdem
+  überallhin kopiert. Darum die Regel aus Lektion 4.2.
+
+**📎 Die Sicherheits-Checkliste liegt unter diesem Video.**
+
+---
+
+### 10.2 · Wenn doch etwas passiert ist
+
+**In dieser Lektion:** Löschen reicht nicht.
+
+**Das Wichtigste in Kürze:**
+
+- **Warum Löschen nicht reicht:** Eine Sicherung behält jede frühere Fassung.
+  Und wer den Schlüssel in der Zwischenzeit kopiert hat, kann ihn weiter
+  benutzen.
+- **Was du tust:** den Zugang wechseln, nicht nur entfernen. Beim Anbieter neu
+  erzeugen, den alten ungültig machen, den neuen überall nachtragen.
+- „Überall" ist der Teil, den man vergisst. Schreib dir auf, an welchen Stellen
+  ein Zugang hinterlegt ist, solange du es noch weisst.
+- Das ist kein schöner Nachmittag. Aber es ist ein Nachmittag — und nicht ein
+  Schaden.
+
+---
+
+### 10.3 · Network-Compliance
+
+**In dieser Lektion:** Was die KI schreibt, verantwortest du.
+
+**Das Wichtigste in Kürze:**
+
+- **Was nie herausgehen darf:** Aussagen darüber, was ein Produkt bewirkt.
+  Aussagen darüber, was jemand verdienen kann. Und alles, was die Regeln deines
+  Partnerunternehmens verbietet.
+- 🚨 Diese Regeln gelten auch für einen Text, den du nicht selbst getippt hast.
+  Dein Name steht darunter, nicht ihr.
+- **Wie du es stattdessen sagst:** Du erzählst von dir. Was du machst, wie es
+  dir damit geht, was sich bei dir verändert hat. Eine eigene Erfahrung ist
+  keine Behauptung über eine Wirkung.
+- Schreib die Verbote in deine Wissensdateien, dann hält sie sich von selbst
+  daran. Sich auf das eigene Nachlesen zu verlassen, geht an einem müden Abend
+  schief.
+
+---
+
+### 10.4 · Was KI nicht kann
+
+**In dieser Lektion:** Drei Dinge, die bei dir bleiben.
+
+**Das Wichtigste in Kürze:**
+
+- **Beziehung.** Niemand kauft bei einer Maschine, weil sie sich verstanden
+  gefühlt hat.
+- **Entscheidung.** Was du anbietest, zu welchem Preis, für wen — das kann sie
+  dir vorbereiten, aber nicht abnehmen.
+- **Deine Stimme.** Sie kann sie treffen, wenn du sie ihr beibringst. Sie kann
+  sie nicht erfinden.
+- **Und ganz praktisch:** Sie hört nichts, sie sieht nichts, und sie weiss
+  nicht, wie sich dein Dienstagnachmittag angefühlt hat. Alles, was ein Text
+  davon braucht, kommt von dir.
+
+---
+
+### 10.5 · Wie bei mir alles zusammenhängt
+
+**In dieser Lektion:** Eine echte Woche, zum Mitschauen.
+
+**Das Wichtigste in Kürze:**
+
+- **Der Ablauf:** Freitagmorgen kommen die Vorschläge herein. Ich gebe frei.
+  Abends plant es sich ein. Die Bilder entstehen nebenher.
+- **Was davon aus welchem Modul kommt**, sage ich dir an jeder Station. Dann
+  siehst du, dass hier nichts Neues dazukommt — es ist alles aus diesem Kurs,
+  nur zusammengesteckt.
+- Das ist zum Mitschauen, nicht zum Nachbauen. Bei mir ist das über Monate
+  gewachsen, Stück für Stück, und jedes Stück hat einmal einzeln angefangen.
+
+---
+
+### 10.6 · Wo du weitermachst
+
+**In dieser Lektion:** Welche Maschine welches Wissen braucht — und was bei dir
+wirklich dran ist.
+
+**Das Wichtigste in Kürze:**
+
+- **Drei Richtungen:** Content · Produkte · Struktur. Du musst nicht alle drei.
+- Die Maschinen hast du. Was ihnen fehlt, ist der Inhalt — und der ist je
+  Richtung ein eigenes Thema.
+- **Und jetzt?** Die ehrliche Antwort ist meistens die Wissensdatei zu der
+  Maschine, die du schon hast — und nicht die nächste Maschine. Eine gefüllte
+  bringt mehr als drei leere.
+- Fang mit dem an, was dich diese Woche am meisten genervt hat. Das ist immer
+  die richtige Antwort.
 
 ---
 
@@ -428,15 +1495,16 @@ heraus.
 | **1.2 · und hinter jedem Modul wieder** | **Prompt-Bibliothek** — 39 Aufträge plus Marken-Steckbrief, nach den drei Stufen sortiert (PDF, 15 Seiten) |
 | 1.2 | Roadmap, eine Seite zum Ausdrucken (PDF) |
 | 1.3 | Begriffe-Cheatsheet (PDF) |
-| 1.5 · 2.7 · 3.5 · 4.7 · 5.8 · 6.6 · 7.8 · 8.5 · 9.5 | Checkliste je Modul (PDF) |
+| 1.5 · 2.7 · 3.5 · 4.7 · 5.8 · 6.6 · 7.8 · 8.5 · 9.7 | Checkliste je Modul (PDF) |
 | 2.2 | Floskel-Liste als leere Vorlage für den eigenen Arbeitsplatz |
 | 2.3 | Business-Brief-Vorlage |
 | 2.3b | Prompt-Bibliothek, Nummer 3 — liegt schon bei 1.2 bei |
 | 2.4 | Der Buch-Technik-Auftrag zum Kopieren |
 | 3.3 | Auftrag für den ersten Cowork-Bot |
 | 4.2 | **Setup-FAQ** — „Wenn beim Einrichten etwas klemmt" (PDF) ✅ gebaut |
-| 4.3 | **Arbeitsplatz-Grundgerüst** — ZIP mit den fünf Ordnern (je eine Liesmich), `CLAUDE.md` zum Ausfüllen, `/start` und `/shutdown` in entschlackter Fassung ✅ gebaut, liegt in `Downloads/Mein-Business-Grundgeruest.zip` · Quelle: `scripts/ki-kurs/grundgeruest-bauen.py` |
-| 4.4 | `CLAUDE.md`-Vorlage einzeln |
+| 4.3 | **Arbeitsplatz-Grundgerüst** — ZIP mit den fünf Ordnern (je eine Liesmich), `CLAUDE.md` zum Ausfüllen und **vier Befehlen** (`/start` · `/shutdown` · `/create-plan` · `/implement`) in entschlackter Fassung ✅ gebaut, liegt in `Downloads/Mein-Business-Grundgeruest.zip` · Quelle: `scripts/ki-kurs/grundgeruest-bauen.py --zip` |
+| 4.4 | **`CLAUDE.md`-Anleitung** — fünf Teile, je mit ausgefülltem Beispiel, plus leeres Gerüst zum Kopieren ✅ gebaut (`beilagen/claude-md-vorlage.md`) |
+| 4.4b | **GitHub-Anleitung** — Klick für Klick ⏳ offen |
 | 5.2 | Beispiel-Skill Kochplan (die auseinandergenommene Datei) |
 | 5.8 | Leeres Skill-Gerüst |
 | 6.3 | Bot-Gerüst Telegram |
@@ -445,9 +1513,26 @@ heraus.
 | 9.2 | Cockpit-Vorlage (leeres Artifact) |
 | 10.1 | Sicherheits-Checkliste |
 
-🚨 **Alle Wissensdateien sind leer.** Überschriften und je zwei Sätze, was
-hineingehört — keine von Patricias Formeln, keine ihrer Painpoints, keine ihrer
-Beispiele. Das ist der Unterschied zwischen diesem Kurs und den drei anderen.
+### 🚨 Modul 9 hat jetzt sieben Lektionen, nicht fünf
+
+Die Folien zu Modul 9 kennen **9.1 bis 9.7** — dazugekommen sind „Dein Wissen
+hineinbringen" (9.3) und „Mehr als eine Seite" (9.5). Dadurch verschieben sich
+die alten Nummern:
+
+| vorher | jetzt |
+|---|---|
+| 9.3 Der Abendlauf | **9.4** |
+| 9.4 Wenn zwei Sachen dasselbe tun | **9.6** |
+| 9.5 Zusammenfassung | **9.7** |
+
+In ThriveCart stehen noch die alten fünf. Dort müssen zwei Lektionen dazu und
+drei umbenannt werden, sonst zeigt die Plattform andere Nummern als die Videos.
+
+### 🚨 Alle Wissensdateien sind leer
+
+Überschriften und je zwei Sätze, was hineingehört — keine von Patricias
+Formeln, keine ihrer Painpoints, keine ihrer Beispiele. Das ist der Unterschied
+zwischen diesem Kurs und den drei anderen.
 
 ---
 

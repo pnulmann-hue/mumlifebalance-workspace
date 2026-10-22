@@ -1,7 +1,3 @@
----
-tags: [produkt]
----
-
 # Die Wörter, die dauernd vorkommen
 
 Zum Ausdrucken und neben den Laptop hängen. Keine Fachsprache, nur das, was du
@@ -61,10 +57,7 @@ bist, wie du klingst. Geht bei jedem Auftrag mit.
 aufrufst. Wie ein Rezept, das jedes Mal gleich abgearbeitet wird.
 
 **Slash-Befehl** — wie du einen Skill aufrufst: ein Schrägstrich und der Name,
-zum Beispiel `/caption`. Drei sind schon eingebaut und du musst sie nicht lernen:
-`/help` zeigt, was es gibt, `/clear` fängt ein frisches Gespräch an (gut, wenn
-das Kontextfenster voll ist), `/start` und `/shutdown` öffnen und sichern einen
-Arbeitstag.
+zum Beispiel `/caption`.
 
 **Agent** — eine KI, die selbst arbeitet statt nur zu antworten:
 nachschauen, ändern, prüfen, weitermachen.
@@ -96,18 +89,6 @@ Gehört nie in eine Datei, die du weitergibst.
 
 **Abo-Stufen** — die KI gibt es gratis, in einer mittleren Stufe und in einer
 grossen. Was du wann brauchst, steht in Lektion 1.4.
-
----
-
-## Was du nicht auswendig können musst
-
-Welchen Satz du in welcher Lage tippst, steht in der **Prompt-Bibliothek** —
-nach den drei Stufen sortiert, mit Nummern zum Nachschlagen. Du musst dir also
-keinen einzigen Auftrag merken, nur wissen, dass es sie gibt.
-
-Und der wichtigste Satz, wenn du nicht weiterkommst, steht nicht dort, weil du
-ihn sowieso behalten wirst: **„Was bedeutet das, und was soll ich jetzt tun?“**
-Das darfst du jederzeit fragen. Es gibt keine dumme Frage an eine Maschine.
 
 ---
 

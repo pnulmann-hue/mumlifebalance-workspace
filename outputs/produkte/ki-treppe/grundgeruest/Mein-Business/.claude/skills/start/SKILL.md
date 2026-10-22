@@ -5,7 +5,7 @@ description: "Beginnt die Sitzung: schaut, was im Arbeitsplatz liegt und was zul
 
 # /start — die Sitzung beginnt
 
-**Ziel:** In zwei Minuten weisst du, wo wir stehen — ohne dass ich es erklaeren
+**Ziel:** In zwei Minuten weisst du, wo wir stehen — ohne dass ich es erklären
 muss. Lesen, nicht nachfragen. Erst am Schluss eine einzige Frage.
 
 ## Schritt 1 · Was liegt hier?
@@ -14,25 +14,25 @@ Schau in `CLAUDE.md` und in `context/`. Das ist das Fundament: wer ich bin, wie
 ich arbeite, was wo liegt.
 
 Gibt es keine `CLAUDE.md` oder ist sie leer, sag das — und biete an, sie
-gemeinsam auszufuellen. Alles andere baut darauf auf.
+gemeinsam auszufüllen. Alles andere baut darauf auf.
 
 ## Schritt 2 · Was war zuletzt?
 
-Schau, welche Dateien in den letzten Tagen geaendert wurden, vor allem in
+Schau, welche Dateien in den letzten Tagen geändert wurden, vor allem in
 `outputs/` und `plans/`. Daraus liest du ab, woran ich zuletzt gearbeitet habe.
 
-Liegt in `plans/` etwas Angefangenes, nenn es — unfertige Plaene sind der
-haeufigste Grund, warum jemand den Faden verliert.
+Liegt in `plans/` etwas Angefangenes, nenn es — unfertige Pläne sind der
+häufigste Grund, warum jemand den Faden verliert.
 
 ## Schritt 3 · Fass zusammen
 
 Rund zehn Zeilen, nicht mehr:
 
-* was gerade laeuft
+* was gerade läuft
 * was offen aussieht
-* was du mir als Naechstes empfehlen wuerdest, und warum
+* was du mir als Nächstes empfehlen würdest, und warum
 
-🚨 **Keine Aufzaehlung von Dateinamen.** Ich will wissen, woran ich war, nicht
+🚨 **Keine Aufzählung von Dateinamen.** Ich will wissen, woran ich war, nicht
 welche Dateien du gefunden hast.
 
 ## Schritt 4 · Frag

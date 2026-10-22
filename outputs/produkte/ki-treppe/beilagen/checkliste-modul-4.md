@@ -1,7 +1,3 @@
----
-tags: [produkt]
----
-
 # Checkliste Modul 4 · Claude Code einrichten
 
 Geh das hier durch, bevor du weitermachst. Was noch offen ist, holst du jetzt

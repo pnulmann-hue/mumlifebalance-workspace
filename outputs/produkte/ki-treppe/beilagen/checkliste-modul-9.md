@@ -1,7 +1,3 @@
----
-tags: [produkt]
----
-
 # Checkliste Modul 9 · Dein Cockpit
 
 Geh das hier durch, bevor du weitermachst. Was noch offen ist, holst du jetzt

@@ -1,7 +1,3 @@
----
-tags: [produkt]
----
-
 # Deine Roadmap — die drei Stufen
 
 Du musst nicht bis nach oben. Auf jeder Stufe hast du am Ende etwas, das du
