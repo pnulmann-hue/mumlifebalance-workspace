@@ -1504,7 +1504,7 @@ heraus.
 | 4.2 | **Setup-FAQ** — „Wenn beim Einrichten etwas klemmt" (PDF) ✅ gebaut |
 | 4.3 | **Arbeitsplatz-Grundgerüst** — ZIP mit den fünf Ordnern (je eine Liesmich), `CLAUDE.md` zum Ausfüllen und **vier Befehlen** (`/start` · `/shutdown` · `/create-plan` · `/implement`) in entschlackter Fassung ✅ gebaut, liegt in `Downloads/Mein-Business-Grundgeruest.zip` · Quelle: `scripts/ki-kurs/grundgeruest-bauen.py --zip` |
 | 4.4 | **`CLAUDE.md`-Anleitung** — fünf Teile, je mit ausgefülltem Beispiel, plus leeres Gerüst zum Kopieren ✅ gebaut (`beilagen/claude-md-vorlage.md`) |
-| 4.4b | **GitHub-Anleitung** — Klick für Klick ⏳ offen |
+| 4.4b | Kein eigener Download. Der Auftrag und die privat-Warnung stehen in der Liesmich im Grundgerüst. ⏳ Eine Klick-für-Klick-Anleitung mit Bildern wäre die nächste sinnvolle Beilage |
 | 5.2 | Beispiel-Skill Kochplan (die auseinandergenommene Datei) |
 | 5.8 | Leeres Skill-Gerüst |
 | 6.3 | Bot-Gerüst Telegram |
