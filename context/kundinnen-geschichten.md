@@ -69,7 +69,7 @@ Patricia bekommt das meiste als **Sprachnachricht**. Der einfachste Weg:
 | **Nachher** | Laut ihrer Sprachnachricht war sie „krass schnell“ mit ihrem Zeug fertig und hat jetzt „tausend Ideen“, die sie noch umsetzen könnte. **Absolut begeistert.** *(Patricias Zusammenfassung, nicht der Wortlaut)* |
 | **Wortlaut** | offen. Die Sprachnachricht liegt auf dem Handy; abgetippt wäre sie ein echtes Zitat |
 | **Quelle** | Sprachnachrichten, 29.09.2026 |
-| **Freigabe** | offen |
+| **Freigabe** | ✅ freigegeben (Patricia, 22.10.2026: „die kundinnen geschichten sind alle freigegeben") |
 | **Passt zu** | **KI-Launch Oktober** (Masterclass Do 8.10., KI-Kurs Claude Code): Beweis, dass eine Networkerin ohne Technik-Hintergrund es mit einer Anleitung selbst einrichtet. Dazu das Motiv „Da geht so viel mehr“ und der Wechsel von „KI wie Google“ zu „KI, die mitarbeitet“ |
 | **Schon verwendet** | — |
 
@@ -85,9 +85,9 @@ Patricia bekommt das meiste als **Sprachnachricht**. Der einfachste Weg:
 | **Nachher** | offen — sie ist mitten drin. Was sie bisher erlebt: Austausch in der Gruppe, regelmässige Calls, gemeinsam Ideen finden, nicht alles allein erarbeiten |
 | **Wortlaut** | *„Für mich war es ein jetzt oder nie Entscheid. Gleichzeitig auch das Vertrauen in dich, weil du aus deinen eigenen Erfahrungen sprichst und in einer ähnlichen Situation bist, wie ich auch. Mehrere Kinder, Network, eigene Selbständigkeit usw. Und ganz klar das ins Tun kommen, zusammen mit dir, mit der Gruppe und den regelmässigen Calls. Der Austausch in der Gruppe und die Calls sind für mich so wertvoll, gemeinsam Ideen finden, auch ein gemeinsames weitergehen und nicht alles alleine erschaffen oder selber erarbeiten müssen. All das hat mich dazu bewogen zu buchen, nochmals weiterzugehen und noch nicht aufzugeben. 💜"* |
 | **Quelle** | schriftliche Nachricht der Kundin, von Patricia im Interview D1 (03.10.2026) hineinkopiert. Wortlaut, keine Nacherzählung |
-| **Freigabe** | offen → bis dahin **nur anonym**, ohne erkennbare Details |
+| **Freigabe** | ✅ freigegeben (Patricia, 22.10.2026) |
 | **Passt zu** | **MBA** (Kaufgrund: Gemeinschaft + Calls + „nicht allein"), **Säule 2** („Geht das für mich?"), Einwand „ich hab schon so viel probiert" (*„nochmals weiterzugehen und noch nicht aufzugeben"*) |
-| **Schon verwendet** | — |
+| **Schon verwendet** | 22.10.2026 · Kundenstimme auf mumlifebalance.ch/angebote/ („Teilnehmerin der Mum Business Academy") |
 
 **Die drei Kaufgründe in ihren Worten:** 1. *„jetzt oder nie"* · 2. *Vertrauen, weil Patricia „aus eigenen Erfahrungen spricht"* und in derselben Lage ist (mehrere Kinder, Network, Selbständigkeit) · 3. *„ins Tun kommen"* mit Gruppe und Calls, *„nicht alles alleine"*.
 **Für einen Beitrag fehlt noch:** Freigabe · ein erstes Ergebnis aus der MBA.
