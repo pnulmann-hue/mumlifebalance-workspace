@@ -547,6 +547,15 @@ willst.
 - **Fünf Teile:** was das hier ist · wo was liegt · was immer mitgelesen wird ·
   meine Regeln · was ich gerade vorhabe. Die Vorlage unter diesem Video hat zu
   jedem Teil ein ausgefülltes Beispiel.
+- **Was wird wann gelesen?** Die Gedächtnis-Datei **immer**, bei jedem Gespräch,
+  automatisch. Die Dateien in `context`, **wenn sie gebraucht werden**. Und
+  `/start` schaut **zusätzlich**, was zuletzt passiert ist.
+- 🚨 **Deine Antworten aus der Buch-Technik gehören nicht in die
+  Gedächtnis-Datei.** Dort steht nur der Verweis: „lies
+  `context/business-brief.md`". Alles, was immer mitgelesen wird, kostet bei
+  jedem einzelnen Auftrag Zeit. Das Bild dazu: Die Gedächtnis-Datei ist der
+  Zettel am Kühlschrank, `context` ist der Aktenschrank. Auf dem Zettel steht,
+  in welcher Schublade was liegt.
 - **Fang mit fünf Zeilen an.** Du schreibst nicht alles auf einmal hinein — sie
   wächst von selbst.
 - Die Regel, nach der sie wächst: **Was dich dreimal geärgert hat, gehört als
