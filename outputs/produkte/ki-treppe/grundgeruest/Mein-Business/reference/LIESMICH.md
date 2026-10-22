@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # reference — Material zum Nachschlagen
 
 Unterlagen, die du **nicht selbst geschrieben** hast und die du trotzdem

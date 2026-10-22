@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Dein Arbeitsplatz
 
 Willkommen. Das hier ist ein leeres Gerüst — fünf Ordner, eine

@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # scripts — kleine Helfer
 
 **Auch diesen Ordner füllst du nicht selbst.** Hier legt die KI kleine

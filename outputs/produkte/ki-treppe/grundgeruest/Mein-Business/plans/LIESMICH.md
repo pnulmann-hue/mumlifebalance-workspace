@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # plans — was du vorhast
 
 **Diesen Ordner füllst du nicht selbst.** Hier legt die KI ab, was sie vorhat —

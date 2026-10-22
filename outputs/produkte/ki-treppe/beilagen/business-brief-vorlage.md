@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Dein Business-Brief
 
 Das eine Dokument, das ab jetzt bei jedem Auftrag mitgeht. Jeder Skill liest es,

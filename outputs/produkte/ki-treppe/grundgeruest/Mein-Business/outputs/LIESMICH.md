@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # outputs — was herauskommt
 
 Alles, was die KI für dich herstellt: Texte, Pläne, Listen, fertige Dateien.

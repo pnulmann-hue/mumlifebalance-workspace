@@ -735,8 +735,8 @@ du Ja oder Nein sagst.
   dich nicht weiter — davon fängt sie an zu raten, und beim Raten kommt
   Erfundenes heraus. „Das dritte Wort im Hook passt nicht, nimm ein
   alltäglicheres" bekommst du beim ersten Versuch richtig zurück.
-- **Was du zum dritten Mal gleich korrigierst, gehört nicht ins Gespräch,
-  sondern in eine Regel.** Genau dafür sind Modul 4 und Modul 5 da: die
+- **Was du zum dritten Mal gleich korrigierst, gehört in eine Regel** und
+  nicht noch einmal ins Gespräch. Genau dafür sind Modul 4 und Modul 5 da: die
   Gedächtnis-Datei für alles, was immer gilt, der Skill für eine bestimmte
   Arbeit.
 - Die drei Fehler am Anfang: **zu viel auf einmal** (drei Aufgaben, alle drei

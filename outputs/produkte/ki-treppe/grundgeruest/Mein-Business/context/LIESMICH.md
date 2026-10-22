@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # context — dein Wissen
 
 Hier liegt alles, was die KI über dich wissen soll.
