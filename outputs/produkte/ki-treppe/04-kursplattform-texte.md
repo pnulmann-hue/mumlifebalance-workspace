@@ -71,6 +71,11 @@ mit dem ich arbeite.
   Mitarbeiterin wird besser, je mehr sie über dein Business weiss — und genau
   das ist der ganze Kurs.
 - **Du musst nichts programmieren.** Du schreibst Deutsch, in ganzen Sätzen.
+- **Und du musst auch keine Aufträge mehr formulieren können.** Falls du schon
+  mal eine Anleitung für den perfekten Prompt gelesen und wieder weggeklickt
+  hast: Das brauchst du hier nicht. **Dein erster Gedanke reicht.** Was ihr
+  dann noch fehlt, fragt sie dich selbst — und genau daraus wird der gute
+  Auftrag.
 - **Du brauchst genau zwei Dinge:** die App auf deinem Rechner und einen
   Ordner, in dem dein Wissen liegt. Mehr nicht.
 - **Du musst nicht verstehen, wie es funktioniert.** Du weisst auch nicht, wie
@@ -133,6 +138,11 @@ dieser Reihenfolge wirst du keinen davon übersehen.
 - Du musst keinen dieser Begriffe können, um loszulegen. Du sollst sie nur
   wiedererkennen, wenn sie in einem Video oder in einer Meldung auftauchen.
 
+🚨 **Und falls du jetzt denkst, du müsstest erst wissen, was du damit
+überhaupt willst:** musst du nicht. Es ist schöner, mit einem Vorhaben
+herzukommen — aber die meisten guten Ideen kommen erst beim Zuschauen. Wenn
+dir nichts einfällt, geh einfach weiter und lass dich unterwegs anstecken.
+
 **📎 Das Cheatsheet mit allen Begriffen liegt unter diesem Video — eine Seite,
 zum Ausdrucken und neben den Laptop legen.**
 
@@ -153,6 +163,9 @@ zum Ausdrucken und neben den Laptop legen.**
 - **Meine Rechnung:** Ein Abo kostet weniger als eine einzige Stunde bezahlte
   Hilfe. Die Frage ist also nicht, ob du es dir leisten kannst. Die Frage ist,
   ob du in dem Monat wirklich etwas damit machst.
+- **Es gibt noch ein grösseres Abo** für alle, die täglich stundenlang damit
+  arbeiten. Fang damit nicht an. Nimm das kleine, und wechsle erst, wenn du
+  wirklich regelmässig an die Grenze kommst — nicht vorher.
 - 🚨 **Lass das automatische Aufladen aus.** Wenn du ein Abo abschliesst, gibt
   es irgendwo eine Einstellung, die bei aufgebrauchtem Guthaben von selbst
   nachkauft. Die lässt du aus, sonst kommt am Monatsende eine Rechnung, mit der
@@ -181,7 +194,14 @@ Business-Brief gehen.
 - **Die Wörter** — du erkennst sie wieder, wenn sie vorkommen.
 - **Die Kosten** — du kannst selbst rechnen, ohne nachzufragen.
 
-🚨 **Und der Satz, der ab hier für den ganzen Kurs gilt:** Was du nicht weisst,
+🚨 **Zwei Sätze, die ab hier für den ganzen Kurs gelten.**
+
+**Der erste: Kopf aus und einfach nachmachen.** Nicht erst verstehen wollen,
+warum etwas so geht. Mach es nach, schau, dass es läuft, und verstehen tust du
+es irgendwann nebenbei. Wer bei jedem Schritt erst das Warum braucht, kommt
+nicht bis Modul 4.
+
+**Der zweite:** Was du nicht weisst,
 fragst du sie. Nicht mich, nicht Google, nicht die Suchmaschine — sie. Sie
 kennt sich mit sich selbst am besten aus, und sie erklärt es dir so oft, bis du
 es verstanden hast. Das ist der Handgriff, der dich durch jedes Modul trägt.
@@ -701,6 +721,12 @@ der dein Gedächtnis pflegt.
   erledigt.
 - **Lass sie fragen.** Wenn etwas unklar ist, soll sie nachhaken statt zu
   raten. Schreib das in deine Gedächtnis-Datei, dann macht sie es von selbst.
+- **Lass sie mitdenken.** Sie wartet nicht nur auf Anweisungen — erzähl ihr
+  dein Vorhaben, und sie bringt Punkte, nach denen du gar nicht gefragt hast:
+  woran du noch nicht gedacht hast, wo es haken wird, was zuerst drankommt. Du
+  sagst dann, was davon zu dir passt und was nicht. Das ist der Unterschied
+  zwischen einem Werkzeug und einer Mitarbeiterin — und er zeigt sich erst,
+  wenn du ihr mehr erzählst als den reinen Auftrag.
 - **Leg immer ein Beispiel dazu.** Ein Text, der dir gefällt, ein Beitrag von
   jemandem, dessen Art du magst, eine alte Seite von dir. Ein Beispiel ersetzt
   drei Absätze Erklärung — und sie trifft damit auf Anhieb, was du meinst.
@@ -742,6 +768,10 @@ du Ja oder Nein sagst.
 - Die drei Fehler am Anfang: **zu viel auf einmal** (drei Aufgaben, alle drei
   halb) · **zu wenig Kontext** (sie weiss nicht, für wen der Text ist) ·
   **endloses Gespräch** (nach dreissig Runden widerspricht sie sich).
+- **Dass du mehrmals ansetzt, ist normal und kein schlechtes Zeichen.** Nichts
+  davon ist in Stein gemeisselt. Den groben Wurf macht sie, den letzten
+  Schliff machst du — und wer das von Anfang an so erwartet, ärgert sich nicht
+  über etwas, das gar kein Fehler ist.
 - Und der Satz, der hier am meisten zählt: **Es liegt am Auftrag, nicht an
   dir.** Einen Auftrag kannst du ändern.
 
