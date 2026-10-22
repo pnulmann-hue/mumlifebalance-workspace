@@ -71,6 +71,15 @@ mit dem ich arbeite.
   Mitarbeiterin wird besser, je mehr sie über dein Business weiss — und genau
   das ist der ganze Kurs.
 - **Du musst nichts programmieren.** Du schreibst Deutsch, in ganzen Sätzen.
+- **Du brauchst genau zwei Dinge:** die App auf deinem Rechner und einen
+  Ordner, in dem dein Wissen liegt. Mehr nicht.
+- **Du musst nicht verstehen, wie es funktioniert.** Du weisst auch nicht, wie
+  dein Backofen die Hitze regelt — du stellst ihn auf 180 Grad und schiebst den
+  Kuchen rein. Genau so hier.
+- **Ich arbeite auf Windows.** Falls du irgendwo gelesen hast, das gehe nur auf
+  dem Mac: Dieser ganze Kurs ist auf einem Windows-Rechner entstanden.
+- **Geh von oben nach unten.** Jedes Modul baut auf dem davor auf, und das
+  Überspringen rächt sich genau einmal — in Modul 4.
 - **Wer nach Stufe 1 aufhört, hat trotzdem etwas.** Die drei Stufen sind kein
   Weg, den man zu Ende gehen muss.
 
@@ -100,6 +109,11 @@ gerade dran ist.
 begleiten:** die Roadmap auf einer Seite zum Ausdrucken, und die
 **Prompt-Bibliothek** mit allen Aufträgen aus diesem Kurs, nach den drei Stufen
 sortiert. Die Bibliothek findest du ab hier hinter jedem Modul wieder.
+
+**Lad sie dir jetzt herunter und leg sie dann zur Seite.** Ohne das Video
+dazu sagt dir ein Auftrag wenig — er sieht aus wie ein Satz, den man auch
+selbst hätte tippen können. Erst das Video, dann der passende Auftrag. In
+dieser Reihenfolge wirst du keinen davon übersehen.
 
 ---
 
@@ -139,6 +153,18 @@ zum Ausdrucken und neben den Laptop legen.**
 - **Meine Rechnung:** Ein Abo kostet weniger als eine einzige Stunde bezahlte
   Hilfe. Die Frage ist also nicht, ob du es dir leisten kannst. Die Frage ist,
   ob du in dem Monat wirklich etwas damit machst.
+- 🚨 **Lass das automatische Aufladen aus.** Wenn du ein Abo abschliesst, gibt
+  es irgendwo eine Einstellung, die bei aufgebrauchtem Guthaben von selbst
+  nachkauft. Die lässt du aus, sonst kommt am Monatsende eine Rechnung, mit der
+  du nicht gerechnet hast. Lieber einmal warten, bis sich das Kontingent
+  zurücksetzt.
+- **Wie viel du verbraucht hast, siehst du in den Einstellungen** unter deiner
+  Nutzung — für die laufende Sitzung und für die Woche. Schau in der ersten
+  Woche zweimal hinein, dann hast du ein Gefühl dafür.
+- **Was da eigentlich verbraucht wird**, nennt sich Token: jede Frage und jede
+  Antwort kostet welche, und dein Abo gibt dir ein Kontingent. Mehr musst du
+  darüber nicht wissen — ausser: lange Dateien, die bei jedem Auftrag mitgehen,
+  kosten jedes Mal. Deshalb bleibt die Gedächtnis-Datei in Modul 4 kurz.
 - Wenn du gerade weisst, dass du keine Zeit hast: fang mit Stufe 1 an und lass
   das Abo, bis du dranbleibst.
 
@@ -154,6 +180,11 @@ Business-Brief gehen.
 - **Deine Stufe** — du weisst, welche gerade dran ist und warum.
 - **Die Wörter** — du erkennst sie wieder, wenn sie vorkommen.
 - **Die Kosten** — du kannst selbst rechnen, ohne nachzufragen.
+
+🚨 **Und der Satz, der ab hier für den ganzen Kurs gilt:** Was du nicht weisst,
+fragst du sie. Nicht mich, nicht Google, nicht die Suchmaschine — sie. Sie
+kennt sich mit sich selbst am besten aus, und sie erklärt es dir so oft, bis du
+es verstanden hast. Das ist der Handgriff, der dich durch jedes Modul trägt.
 
 **📎 Die Checkliste zum Abhaken liegt unter diesem Video.**
 
@@ -242,6 +273,17 @@ nicht bei null an.
 
 - Du gehst dreimal hin und her: in Claude fragen, was gebraucht wird · in
   ChatGPT das Gedächtnis ausgeben lassen · zurück in Claude damit.
+- **Den Weg in Claude zeige ich dir Klick für Klick:** unten links auf dein
+  Profil, dann in die Einstellungen, dort zum **Gedächtnis** — und dort steht
+  der Punkt, mit dem du den Speicher eines anderen Anbieters holst. Sie gibt
+  dir dafür einen fertigen Auftrag zum Kopieren.
+- 🚨 **Setz vorher in ChatGPT die Haken.** Unter Personalisierung gibt es
+  mehrere Schalter fürs Erinnern. Stehen die nicht alle an, kommt nur die
+  Hälfte mit — und du merkst es erst Wochen später, wenn etwas fehlt, von dem
+  du sicher warst, es erzählt zu haben.
+- Das geht auch für **einzelne Projekte**, nicht nur für das allgemeine
+  Gedächtnis. Wenn du dort ein Projekt mit deinem Business hast, hol es
+  getrennt.
 - **Und dann kommt der Teil, den die meisten auslassen:** einmal durchsehen.
   In so einem Gedächtnis steht viel Veraltetes, manches Falsche und einiges,
   das du nie wieder sehen willst.
@@ -465,6 +507,13 @@ was du tust, wenn beim ersten Mal eine Meldung dazwischenkommt.
 
 **Das Wichtigste in Kürze:**
 
+- 🚨 **Vorher eine Zwei-Minuten-Entscheidung, die später Stunden spart:**
+  Melde dich mit deiner **Google-Adresse** an, wenn du eine hast. In Modul 8
+  und 9 hängst du Mail, Kalender und deine Dateiablage an — und das ist
+  deutlich einfacher, wenn das Konto schon dort liegt. Nachträglich wechseln
+  heisst: alles noch einmal.
+- **Nimm Chrome als Browser**, wenn du die Wahl hast. Die Anmeldung läuft über
+  den Browser, und dort gibt es am wenigsten Überraschungen.
 - **Installieren und anmelden:** Datei herunterladen, durchklicken, App
   starten, mit deinem Konto anmelden. Dann oben auf den Reiter **Code**. Links
   ist der Chat, daneben Cowork, daneben Code — das sind die drei Stufen aus
@@ -521,6 +570,19 @@ Kapitel 2 mitbringst.
   deine Floskel-Liste (2.2). Je eine eigene Datei, nicht alles in eine.
 - Liegt etwas als Word oder PDF vor, sag einfach: *„Mach daraus eine
   Markdown-Datei."*
+- **Was ist eigentlich eine Markdown-Datei?** Ein Dateiformat, so wie PDF bei
+  Dokumenten oder JPG bei Fotos. Du erkennst sie an der Endung `.md`. Sie
+  enthält reinen Text mit ein paar einfachen Zeichen für Überschriften und
+  Listen — mehr nicht.
+- **Warum nicht Word oder PDF?** Weil sie `.md` am saubersten liest. Bei einer
+  Word-Datei steckt rund um deinen Text noch jede Menge Technik, die sie
+  mitlesen muss. Verstehen musst du davon nichts. Merk dir nur: **`.md` ist das
+  Format, mit dem wir hier arbeiten** — und du legst so eine Datei nie selbst
+  an, das macht sie.
+- **Das Grundgerüst ist ein Angebot, kein Muss.** Du kannst sie auch bitten,
+  dir selbst eine Ordnerstruktur anzulegen und dir bei jedem Ordner in einem
+  Satz zu sagen, was hineingehört. Ich gebe dir meins mit, weil es schneller
+  geht — nicht, weil es der einzige Weg ist.
 
 **Der erste Auftrag — zum Kopieren:**
 
@@ -639,6 +701,17 @@ der dein Gedächtnis pflegt.
   erledigt.
 - **Lass sie fragen.** Wenn etwas unklar ist, soll sie nachhaken statt zu
   raten. Schreib das in deine Gedächtnis-Datei, dann macht sie es von selbst.
+- **Leg immer ein Beispiel dazu.** Ein Text, der dir gefällt, ein Beitrag von
+  jemandem, dessen Art du magst, eine alte Seite von dir. Ein Beispiel ersetzt
+  drei Absätze Erklärung — und sie trifft damit auf Anhieb, was du meinst.
+- **Korrigier sofort, nicht am Schluss.** Wenn sie etwas falsch verstanden hat,
+  sag es im nächsten Satz. Wer zehn Runden lang nickt und am Ende alles
+  umbaut, hat zehn Runden umsonst gemacht.
+- 🚨 **Und wenn sie an eine Grenze kommt:** Mach genau diesen einen Schritt
+  selbst und gib ihr das Ergebnis zurück. Bei mir war das zum Beispiel der
+  letzte Schliff an einem Bild. Du machst ihn einmal von Hand, legst ihn ihr
+  als Vorlage hin — und ab dann kann sie es. Das ist kein Scheitern, das ist
+  die Abkürzung.
 
 **Der Unterschied an einem Beispiel:** *„Mach eine Tabelle mit drei Spalten"*
 bekommt genau das — auch wenn es für deine Frage nicht passt. *„Ich will auf
@@ -658,6 +731,14 @@ du Ja oder Nein sagst.
   dabei schlechter.
 - Mach ein neues Gespräch auf, schreib den Auftrag **um** statt ihn zu
   ergänzen, und leg ein Beispiel dazu, wie gut aussieht.
+- 🚨 **Beim Korrigieren so genau wie möglich sein.** „Gefällt mir nicht" bringt
+  dich nicht weiter — davon fängt sie an zu raten, und beim Raten kommt
+  Erfundenes heraus. „Das dritte Wort im Hook passt nicht, nimm ein
+  alltäglicheres" bekommst du beim ersten Versuch richtig zurück.
+- **Was du zum dritten Mal gleich korrigierst, gehört nicht ins Gespräch,
+  sondern in eine Regel.** Genau dafür sind Modul 4 und Modul 5 da: die
+  Gedächtnis-Datei für alles, was immer gilt, der Skill für eine bestimmte
+  Arbeit.
 - Die drei Fehler am Anfang: **zu viel auf einmal** (drei Aufgaben, alle drei
   halb) · **zu wenig Kontext** (sie weiss nicht, für wen der Text ist) ·
   **endloses Gespräch** (nach dreissig Runden widerspricht sie sich).
@@ -677,6 +758,12 @@ du Ja oder Nein sagst.
 - **Ein Gedächtnis** — deine erste Fassung der CLAUDE.md.
 - **Drei Gewohnheiten** — am Ergebnis entlang, ein Ding pro Auftrag, fragen
   lassen.
+
+**Ein freiwilliger Zusatz, der mir viel bringt:** Es gibt ein kostenloses
+Programm namens Obsidian, mit dem du deinen Arbeitsplatz-Ordner öffnen kannst.
+Dann siehst du alle Dateien in einer schönen, durchsuchbaren Oberfläche — auch
+vom Handy aus. Du brauchst es nicht, und es kommt im Kurs nicht wieder vor.
+Aber wenn du gern Ordnung siehst, wirst du es mögen.
 
 🚨 **Wenn Claude Code bei dir noch nicht läuft, mach hier nicht weiter.** Alles
 ab Modul 5 setzt einen laufenden Arbeitsplatz voraus.
