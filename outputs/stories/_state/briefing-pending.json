@@ -1,5 +1,5 @@
 {
-  "datum": "2026-10-21",
+  "datum": "2026-10-22",
   "profile": {
     "mentoring": {
       "profil": "mentoring",
@@ -14,20 +14,20 @@
         "launch_aktiv": false,
         "phase": null,
         "tag_im_launch": null,
-        "vorlage": "Eigene Meinung / klare Positionierung",
-        "titel": "Eigene Meinung / klare Positionierung",
-        "story_ziel": "Branchen-Mythos im Network-Marketing aufgreifen, klar positionieren (Repel + Anziehung).",
-        "kaeufertyp": "Frank",
-        "cta": "BIO oder thematisch passend",
+        "vorlage": "Quick Win",
+        "titel": "Quick Win",
+        "story_ziel": "Eine Formel/Methode die SOFORT funktioniert — Vertrauen + Expertise.",
+        "kaeufertyp": "Willi",
+        "cta": "thematisch passend (STORY / BIO)",
         "cta_keyword": null
       },
       "kontext_snapshot": {
         "kw": 43,
-        "wochentag": "Mittwoch",
-        "datum": "2026-10-21"
+        "wochentag": "Donnerstag",
+        "datum": "2026-10-22"
       },
-      "gesendet_am": "2026-10-21T04:42:01.913Z",
-      "telegram_message_id": 1328,
+      "gesendet_am": "2026-10-22T04:42:01.400Z",
+      "telegram_message_id": 1330,
       "patricia_antworten": [],
       "patricia_fotos": [],
       "status": "warten_auf_antwort"
@@ -45,20 +45,20 @@
         "launch_aktiv": false,
         "phase": null,
         "tag_im_launch": null,
-        "vorlage": "Eigene Meinung / klare Positionierung",
-        "titel": "Eigene Meinung / klare Positionierung",
-        "story_ziel": "Branchen-Mythos im Network-Marketing aufgreifen, klar positionieren (Repel + Anziehung).",
-        "kaeufertyp": "Frank",
-        "cta": "BIO oder thematisch passend",
+        "vorlage": "Quick Win",
+        "titel": "Quick Win",
+        "story_ziel": "Eine Formel/Methode die SOFORT funktioniert — Vertrauen + Expertise.",
+        "kaeufertyp": "Willi",
+        "cta": "thematisch passend (STORY / BIO)",
         "cta_keyword": null
       },
       "kontext_snapshot": {
         "kw": 43,
-        "wochentag": "Mittwoch",
-        "datum": "2026-10-21"
+        "wochentag": "Donnerstag",
+        "datum": "2026-10-22"
       },
-      "gesendet_am": "2026-10-21T04:42:02.842Z",
-      "telegram_message_id": 1329,
+      "gesendet_am": "2026-10-22T04:42:02.332Z",
+      "telegram_message_id": 1331,
       "patricia_antworten": [],
       "patricia_fotos": [],
       "status": "warten_auf_antwort"
