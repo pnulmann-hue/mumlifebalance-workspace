@@ -73,6 +73,13 @@ gelegentlich ausverkauft — aber nur, wenn sie es wirklich ist.
 
 → Dafür braucht jeder Funnel eine **eigene** Danke-Seite (heute teilen sich alle zwei).
 
+**Patricias Entscheid (23.10.):** Auf der Danke-Seite der **grosse Kurs für 199 statt 333**, Satz
+*„diesen Preis gibt es nur hier, direkt nach deiner Anmeldung“*, ohne Uhr. Der Upsell nach
+Storyideen und Startklar bleibt bei **97** (Käuferinnen-Preis). Minikurse bleiben 39.
+ThriveCart heute: Kundenmaschine 333 · Upsell 7 = 97 · Bump an der Digitalen Produktwelt = 199 ·
+ungenutzte Upsell-Kopie 8 = 199. Für die Danke-Seiten fehlt noch ein **Kassenlink zu 199**, der
+nur dort steht (eigene Preisoption oder eigene Kasse).
+
 ## Reihenfolge zum Abarbeiten (Vorschlag)
 
 1. Bestätigungsmails der laufenden Funnels in eigener Stimme (wie Kickstart, Muster
