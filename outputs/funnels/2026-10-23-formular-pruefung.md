@@ -86,8 +86,11 @@ eine Produkt, nur Einmalzahlung, ohne Ablauf und ohne Begrenzung.
 - Kundenmaschine: `https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/?coupon=DANKE199IKM`
 - Mama-CEO: `https://mumlifebalance.thrivecart.com/mama-ceo/?coupon=DANKE199CEO`
 
-🚨 Auf der Kasse der Kundenmaschine steht in der FAQ noch „Das Programm startet am 1. Februar
-2026“ und Live-Calls im Februar/März 2026. Vor dem Verlinken korrigieren.
+✅ Kasse der Kundenmaschine am 23.10. auf **Selbstlernkurs** umgestellt (Patricia: alle Module
+sofort offen, Telegram-Antworten Di/Do, Call-Aufzeichnungen der ersten Runde in der Gruppe):
+Unterzeile, Einleitung, „Begleitung & Support in der Telegram-Gruppe“, drei Listenpunkte und
+die FAQ 2–6. Live geprüft: kein Datum, kein „Gruppenprogramm“ mehr. Die Hero-Zeile „Baue dir in
+8 Wochen …“ bleibt (Ergebniszeit, kein Programmablauf).
 
 ## Reihenfolge zum Abarbeiten (Vorschlag)
 
