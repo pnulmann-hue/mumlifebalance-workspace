@@ -93,7 +93,7 @@ Die Landingpage war seit dem 8. Juli als leerer Entwurf in WordPress (nur ein Pl
 |---|---|---|
 | Impressum | https://mumlifebalance.ch/impressum/ | 🟢 200 (geprüft 13.09.2026) |
 | Datenschutzerklärung | https://mumlifebalance.ch/datenschutzerklaerung/ | 🟢 200 (geprüft 13.09.2026) |
-| AGB | — | 🔴 **existiert nicht** — `/agb/`, `/widerruf/`, `/nutzungsbedingungen/` liefern 404 |
+| AGB | `/agb/` (WP 4413) | 🟡 **Entwurf seit 23.10.2026**, noch nicht veröffentlicht — Quelle `outputs/sonstige/2026-10-23-agb-entwurf.md`, Bau `scripts/wordpress/deploy-agb.mjs`. Nach der Prüfung veröffentlicht Patricia, danach kommt der Link in alle ThriveCart-Kassen (AGB-Feld) |
 
 ⚠️ **Keinen AGB-Link in einen Footer setzen**, solange die Seite nicht existiert — ein toter Rechtslink ist schlimmer als keiner. Beim Verkauf greifen bis dahin die Bedingungen, die ThriveCart im Checkout anzeigt.
 

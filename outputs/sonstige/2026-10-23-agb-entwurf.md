@@ -51,7 +51,7 @@ ich dir in diesem Fall vollständig.
 
 ### 4 · Preise und Bezahlung
 
-Alle Preise stehen in Schweizer Franken (CHF). ⚠️ Sobald es Euro-Kassen gibt: „oder in Euro“.
+Alle Preise stehen in Schweizer Franken (CHF).
 
 Ich bin in der Schweiz nicht mehrwertsteuerpflichtig. Auf meinen Rechnungen wird deshalb
 keine Mehrwertsteuer ausgewiesen. ⚠️ Die Mehrwertsteuer für Kundinnen in der EU ist noch
