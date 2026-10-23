@@ -359,7 +359,9 @@
       "traffic_quellen": {
         "wordpress_landing": "https://mumlifebalance.ch/energie-kickstart",
         "manychat_keyword": "ENERGIE",
-        "ac_form_id": 64
+        "ac_form_id": 64,
+        "danke_seite": "https://mumlifebalance.ch/fast-geschafft/",
+        "bestaetigt_seite": "https://mumlifebalance.ch/energie-kickstart-bestaetigt/ (WP 4382, Entwurf seit 23.10.2026, Pitch 30-Tage-Energie-Routine)"
       },
       "ac_integration": {
         "liste_id": 18,
