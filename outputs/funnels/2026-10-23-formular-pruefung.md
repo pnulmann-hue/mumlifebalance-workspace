@@ -85,6 +85,8 @@ eine Produkt, nur Einmalzahlung, ohne Ablauf und ohne Begrenzung.
 
 - Kundenmaschine: `https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/?coupon=DANKE199IKM`
 - Mama-CEO: `https://mumlifebalance.thrivecart.com/mama-ceo/?coupon=DANKE199CEO`
+- Digitale Produktwelt: `https://mumlifebalance.thrivecart.com/digitale-produktwelt/?coupon=DANKE199DPW`
+  (für Ideen-Finder und Businessfahrplan, Patricias Entscheid 23.10.)
 
 ✅ Kasse der Kundenmaschine am 23.10. auf **Selbstlernkurs** umgestellt (Patricia: alle Module
 sofort offen, Telegram-Antworten Di/Do, Call-Aufzeichnungen der ersten Runde in der Gruppe):
