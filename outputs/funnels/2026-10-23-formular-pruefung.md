@@ -92,6 +92,28 @@ Unterzeile, Einleitung, „Begleitung & Support in der Telegram-Gruppe“, drei 
 die FAQ 2–6. Live geprüft: kein Datum, kein „Gruppenprogramm“ mehr. Die Hero-Zeile „Baue dir in
 8 Wochen …“ bleibt (Ergebniszeit, kein Programmablauf).
 
+## Danke-Seiten mit 199er-Angebot (gebaut 23.10., Entwürfe)
+
+`scripts/wordpress/deploy-danke-seiten.mjs` (lokal ansehen mit `--vorschau` →
+`outputs/funnels/danke-seiten/`). Aufbau: Postfach-Schritte mit dem Betreff der
+Bestätigungsmail → „Halt, eins noch“ mit Brückensatz und Produktbild → Preisblock 199 statt
+333 „nur hier, direkt nach deiner Anmeldung“ → ruhiger Ausweg. Gestaltung: `.enr`-CSS.
+
+| Seite | WP | Formular | Kurs |
+|---|---|---|---|
+| /danke-story-challenge/ | 4386 | 45 | Kundenmaschine |
+| /danke-starterguide/ | 4388 | 53 | Kundenmaschine |
+| /danke-bio-check/ | 4390 | 47 | Kundenmaschine |
+| /danke-lead-challenge/ | 4392 | 51 | Kundenmaschine |
+| /danke-businessfahrplan/ | 4394 | 49 | Kundenmaschine |
+| /danke-ideen-finder/ | 4396 | 66 | Kundenmaschine |
+| /danke-von-0-auf-echt/ | 4398 | 41 | Kundenmaschine |
+| /danke-freischaufeln/ | 4400 | 62 | Mama-CEO (ohne Bestätigungsmail) |
+
+Nach dem Veröffentlichen: je Formular „Bei Absendung → URL öffnen“ auf die eigene Seite.
+⚠️ Mama-CEO-Kasse hat noch Vorlagen-Reste („Enter your bullet points here..“, „Ut Repellat
+Officiis“, „4 Live-Termine direkt mit mi“) — vor dem Verlinken von /danke-freischaufeln/ prüfen.
+
 ## Reihenfolge zum Abarbeiten (Vorschlag)
 
 1. Bestätigungsmails der laufenden Funnels in eigener Stimme (wie Kickstart, Muster
