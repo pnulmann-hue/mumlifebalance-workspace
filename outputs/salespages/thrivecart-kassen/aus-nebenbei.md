@@ -128,13 +128,14 @@ Knopf: **Ja, ich sichere mir meinen Platz**
 
 | Datum | Was | Wer |
 |---|---|---|
+| 23.10.2026 | AGB: fremden AGB-Text entfernt, danach Link `https://mumlifebalance.ch/agb/` eingetragen (live geprüft) | Claude, von Patricia beauftragt |
 | 23.10.2026 | Beta-Aktion raus, acht Stellen: Kopfzeile „Beta-Plätze April 2026“ → „1:1 Mentoring · 12 Wochen“ · „Nur 3 Beta-Plätze für CHF 777 statt CHF 1500“ → „Dein Platz im VIP-Mentoring für CHF 777“ · „Dein Beta-Preis.“ → „Dein Preis.“ · Feedback-Bitte → Satz „Zwölf Wochen lang …“ · „Beta-Platz · April 2026“ → „VIP-Mentoring · 12 Wochen“ · Streichpreis CHF 1500 entfernt · Knopf „… meinen Beta-Platz“ → „… meinen Platz“ · Zeile „Noch 3 Plätze verfügbar · Preis gilt nur für April-Start“ gelöscht | Claude, von Patricia freigegeben, live geprüft |
 
 ---
 
 ## ⚠️ Befunde beim Ablesen — offen, NICHT geändert
 
-🚨 **1 · An der Kasse hängen fremde AGB.** Im Kästchen „Ich stimme den AGB zu“ öffnen sich die
+✅ **1 · Erledigt am 23.10.2026 — eigene AGB verlinkt.** Vorher: **An der Kasse hingen fremde AGB.** Im Kästchen „Ich stimme den AGB zu“ öffnen sich die
 AGB einer anderen Firma (Verkäuferin „Julia Trost LLC“, Adresse in Florida, Kontakt-Mail
 `@juliatrost.de`, deutsches Recht, Mahngebühren in EUR, Stand 24.09.2024). Eine Käuferin
 stimmt damit einem Vertrag mit der falschen Firma zu, und die Widerrufs- und Kontaktangaben
