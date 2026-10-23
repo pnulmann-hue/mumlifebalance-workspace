@@ -18,8 +18,7 @@ tags: [misc, rechtliches]
 ### 1 · Wer hier verkauft und wofür diese AGB gelten
 
 Anbieterin ist Patricia Ulmann, Mum Life Balance, Scheidweghalde 19, 9107 Urnäsch, Schweiz,
-info@mumlifebalance.ch (nachfolgend „ich“). ⚠️ Rechtsform bestätigen (Einzelunternehmen?) und,
-falls vorhanden, UID-Nummer ergänzen.
+info@mumlifebalance.ch, Einzelunternehmen, UID CHE-331.610.199 (nachfolgend „ich“).
 
 Diese AGB gelten für alle Verträge zwischen mir und meinen Kundinnen und Kunden (nachfolgend
 „du“), egal ob du als Privatperson oder für dein Unternehmen kaufst. Abweichende Bedingungen
@@ -43,9 +42,9 @@ versprechen.
 
 Du kaufst über die Bestellseite meines Zahlungsanbieters ThriveCart. Mit dem Klick auf
 „Jetzt kaufen“ gibst du eine verbindliche Bestellung ab. Der Vertrag kommt zustande, sobald
-du die Bestellbestätigung per E-Mail erhältst. ⚠️ Werden 1:1-Angebote auch per Rechnung oder
-mündlich vereinbart? Dann ergänze ich: „1:1-Begleitungen können wir auch per Rechnung
-vereinbaren; der Vertrag gilt dann mit der Rechnung.“
+du die Bestellbestätigung per E-Mail erhältst. 1:1-Begleitungen kannst du über ThriveCart
+kaufen oder mit mir per Rechnung vereinbaren; dann kommt der Vertrag mit der Rechnung
+zustande.
 
 Ich darf eine Bestellung ohne Angabe von Gründen ablehnen. Bereits bezahlte Beträge erstatte
 ich dir in diesem Fall vollständig.
@@ -54,13 +53,12 @@ ich dir in diesem Fall vollständig.
 
 Alle Preise stehen in Schweizer Franken (CHF). ⚠️ Sobald es Euro-Kassen gibt: „oder in Euro“.
 
-⚠️ **Mehrwertsteuer — bitte bestätigen:** „Ich bin in der Schweiz nicht mehrwertsteuerpflichtig.
-Auf meinen Rechnungen wird deshalb keine Mehrwertsteuer ausgewiesen.“ Die Frage zur
-Mehrwertsteuer für Kundinnen in der EU ist noch offen (Pendenz) und gehört vor dem
-Veröffentlichen geklärt.
+Ich bin in der Schweiz nicht mehrwertsteuerpflichtig. Auf meinen Rechnungen wird deshalb
+keine Mehrwertsteuer ausgewiesen. ⚠️ Die Mehrwertsteuer für Kundinnen in der EU ist noch
+offen (Pendenz) — vor dem Veröffentlichen klären.
 
-Du bezahlst über ThriveCart per Kreditkarte oder PayPal. ⚠️ An der Kasse stehen auch
-Afterpay, Affirm und Klarna — sind die gewollt? Dann nehme ich sie auf.
+Welche Zahlungsarten dir zur Verfügung stehen, siehst du an der Kasse, zum Beispiel
+Kreditkarte oder PayPal. Bei einer Rechnung bezahlst du per Überweisung.
 
 Bei manchen Angeboten kannst du in Raten bezahlen. Die Anzahl, die Höhe und die Termine der
 Raten siehst du an der Kasse, bevor du kaufst. Mit dem Kauf in Raten verpflichtest du dich,
@@ -81,17 +79,17 @@ Calls sperren, bis alles beglichen ist.
 - **1:1-Begleitung:** Die Termine vereinbaren wir persönlich. Nach dem Kauf bekommst du einen
   Link zur Terminbuchung.
 
-⚠️ **Wie lange gilt der Zugang?** Bitte je Angebot bestätigen, z.B. „Online-Kurse: so lange
-der Kurs angeboten wird“ / „MBA: ein Jahr Begleitung, Kursinhalte dauerhaft“.
+Der Zugang zu den Kursinhalten ist zeitlich unbeschränkt. Begleitung, Live-Calls und
+1:1-Termine laufen während der Dauer, die beim Angebot steht.
 
 ### 7 · Termine bei der 1:1-Begleitung
 
-Kannst du einen vereinbarten Termin nicht wahrnehmen, sag mir bitte mindestens ⚠️ 24 Stunden
+Kannst du einen vereinbarten Termin nicht wahrnehmen, sag mir bitte mindestens 24 Stunden
 vorher Bescheid. Dann verschieben wir ihn. Sagst du später ab oder kommst du nicht, gilt der
 Termin als gehalten. Muss ich einen Termin absagen, bekommst du einen Ersatztermin.
 
-Die Begleitung läuft während der beim Angebot genannten Dauer (z.B. 12 Wochen). Nicht
-genutzte Termine verfallen danach ⚠️ (bestätigen).
+Die Begleitung läuft während der beim Angebot genannten Dauer (z.B. 12 Wochen). Termine,
+die du in dieser Zeit nicht nutzt, verfallen danach.
 
 ### 8 · Rückgabe und Widerruf
 
@@ -100,11 +98,14 @@ genutzte Termine verfallen danach ⚠️ (bestätigen).
 - **Digitale Produkte und Online-Kurse:** Du erhältst den Zugang sofort. Mit dem Kauf
   stimmst du zu, dass ich sofort liefere, und dir ist bewusst, dass du damit dein
   Widerrufsrecht verlierst, soweit dir eines zusteht.
-- **1:1-Begleitung:** Bis zur ersten Session kannst du zurücktreten. ⚠️ Erstattung ganz oder
-  mit Abzug? Nach der ersten Session gibt es keine Rückerstattung, weil wir ab dann persönlich
-  an deinem Business arbeiten. Offene Raten bleiben geschuldet.
+- **1:1-Begleitung:** Trittst du bis 14 Tage vor der ersten Session zurück, erstatte ich dir
+  den bezahlten Betrag abzüglich 30 % Bearbeitungsgebühr. Danach gibt es keine
+  Rückerstattung, weil ich den Platz für dich freihalte und wir ab der ersten Session
+  persönlich an deinem Business arbeiten. Offene Raten bleiben geschuldet.
 - **Programme mit Begleitung:** Brichst du ab, gibt es keine Rückerstattung. Offene Raten
   bleiben geschuldet.
+- **Wenn ich ausfalle:** Kann ich eine Leistung wegen Krankheit oder höherer Gewalt nicht
+  wie geplant erbringen, holen wir sie nach. Eine Rückerstattung gibt es dafür nicht.
 
 ⚠️ **Für die Fachperson:** Kauft eine Privatperson aus der EU, gelten dort zum Teil
 zwingende Verbraucherrechte (z.B. 14 Tage Widerruf bei Dienstleistungen), die sich auch mit
@@ -135,8 +136,12 @@ Was andere Teilnehmerinnen in den Gruppen und Calls teilen, bleibt in der Gruppe
 ### 11 · Datenschutz
 
 Wie ich deine Daten bearbeite, steht in meiner Datenschutzerklärung:
-https://mumlifebalance.ch/datenschutzerklaerung/ ⚠️ Prüfen, ob dort ThriveCart, Stripe,
-PayPal, ActiveCampaign, Vimeo, Zoom und Telegram genannt sind.
+https://mumlifebalance.ch/datenschutzerklaerung/
+
+⚠️ **Die Datenschutzerklärung ist vom Juli 2024 und nennt die heutigen Dienste nicht**
+(geprüft 23.10.2026): ActiveCampaign und Calendly stehen drin; ThriveCart, Stripe, PayPal,
+Vimeo, Zoom, Telegram, ManyChat und der Meta-Pixel fehlen. Gehört zusammen mit den AGB
+nachgeführt.
 
 ### 12 · Anwendbares Recht und Gerichtsstand
 
