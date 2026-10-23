@@ -16,6 +16,10 @@ Auto-Index aller Files in `outputs/salespages/`. Siehe [[_MOCs/MOC-Produkte-Funn
 - [[startklar-salespage]]
 - [[von-nebenbei-zu-business-salespage]]
 
+### 📁 thrivecart-kassen
+
+- [[aus-nebenbei]]
+
 ### 📁 ki-kurs-checkout
 
 - [[funnel-stand]]
