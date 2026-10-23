@@ -11,6 +11,33 @@ tags: [produkt, doterra]
 
 ---
 
+## 📧 MAIL 0 — Bestätigung der Adresse (sofort nach dem Formular)
+
+> Ersetzt seit 23.10.2026 die englisch-deutsche Standardvorlage von ActiveCampaign („Bitte bestätigen Sie Ihr Abonnement für %LISTNAME%“). Eingefügt wird sie im Formular „0€ doTERRA Energie-Kickstart“ unter den Bestätigungs-Optionen. Bewusst **ohne Angebot**: Diese Mail hat nur einen Job, den Klick. Der Verkauf gehört auf die Seite, die sich nach dem Klick öffnet. `%CONFIRMLINK%` ist der Platzhalter von AC für den Bestätigungslink und muss genau so stehen bleiben.
+
+**Betreff:** Ein Klick noch, dann startet dein Energie-Kickstart 🌿
+**Preheader:** Bestätig kurz deine Adresse, danach kommt Tag 1 direkt zu dir.
+
+---
+
+Hey, schön, dass du dich eingetragen hast. 🌿
+
+Bevor ich dir die erste Mail schicken darf, brauche ich noch einen Klick von dir. Damit bestätigst du, dass wirklich du dich angemeldet hast und nicht jemand anderes mit deiner Adresse.
+
+**→ [Ja, ich bin dabei](%CONFIRMLINK%)**
+
+Sobald du geklickt hast, kommt Tag 1 in dein Postfach. Da geht es ums Frühstück, genauer um das, was ich morgens geändert habe, als mich das Nachmittagstief jeden Tag erwischt hat. An den zwei Tagen danach bekommst du je eine weitere Mail mit dem nächsten Schritt.
+
+Falls du dich gar nicht selbst eingetragen hast, ignorierst du diese Mail einfach. Dann hörst du auch nichts weiter von mir.
+
+Alles Liebe
+
+Patricia
+
+*P.S. Damit die drei Mails nicht im Spam oder unter „Werbung“ landen, zieh diese hier am besten gleich in deinen Posteingang.*
+
+---
+
 ## 📧 MAIL 1 — Tag 1 · Protein (sofort)
 
 **Betreff:** Tag 1: Das Frühstück, das dich um 15 Uhr nicht einbrechen lässt 🍳
