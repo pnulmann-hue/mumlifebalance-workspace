@@ -126,6 +126,13 @@ Seit 23.10. abends führen **Businessfahrplan und Ideen-Finder auf die Digitale 
 - Die „Enter your bullet points here..“ und „Ut Repellat Officiis“ stehen in **ausgeblendeten
   Spalten** — nicht sichtbar, deshalb nicht gelöscht (ein Löschversuch hätte den Modul-Titel mitgenommen).
 
+🚨 **Die DPW-Kasse ist danach auf den alten Stand zurückgesprungen** (abends geprüft: „Was passiert
+nach der ersten Runde“, „ab 4. April“, Call-Zeile wieder da) — gleichzeitig steht im Zusatzangebot eine
+neue Rechnung „666 · 532“. Vermutlich zweiter Editor offen (Patricia?), dessen Speichern den älteren
+Stand drübergeschrieben hat. **Lehre: Vor dem Bearbeiten einer Kasse fragen, ob sie gerade noch
+woanders offen ist — ThriveCart warnt nicht, der letzte Speichernde gewinnt.** Mama-CEO und
+Kundenmaschine sind unverändert richtig.
+
 ⚠️ Offen: Zusatzangebot an der DPW-Kasse rechnet falsch (249 + 333 = 582 → 448), Preisentscheid
 zum Bundle (DPW 199 + Kundenmaschine 199 = 398) steht bei Patricia.
 
