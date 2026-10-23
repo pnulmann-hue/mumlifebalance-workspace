@@ -48,6 +48,7 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 
 ### 📁 story-challenge-nurture
 
+- [[manychat-flow-STORY]]
 - [[story-challenge-mails]]
 
 ### 📁 zentrale-pitch-automation
