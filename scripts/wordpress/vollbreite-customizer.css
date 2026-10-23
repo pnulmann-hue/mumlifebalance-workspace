@@ -1,0 +1,33 @@
+/* === VOLLBREITE GESTALTETE SEITEN (Claude, 22.10.2026) ===
+   Diese Seiten tragen ihre ganze Gestaltung in einem Elementor-Container „boxed“ (max. 1140 px,
+   10 px Rand) bzw. in der 1140-px-Inhaltsbreite des Themes. Am Computer hörten Farbflächen und
+   Hero-Bilder deshalb bei 1140 px auf. Gesetzt im Customizer, weil die Firewall das Speichern
+   der Elementor-Daten mit dem eingebetteten HTML blockt. Quelle: scripts/wordpress/vollbreite-customizer.css */
+.page-id-3346 .elementor-3346 > .e-con,
+.page-id-3913 .elementor-3913 > .e-con,
+.page-id-3335 .elementor-3335 > .e-con,
+.page-id-3842 .elementor-3842 > .e-con,
+.page-id-3815 .elementor-3815 > .e-con,
+.page-id-3820 .elementor-3820 > .e-con,
+.page-id-3444 .elementor-3444 > .e-con,
+.page-id-3857 .elementor-3857 > .e-con,
+.page-id-3756 .elementor-3756 > .e-con,
+.page-id-3848 .elementor-3848 > .e-con,
+.page-id-3287 .elementor-3287 > .e-con,
+.page-id-3836 .elementor-3836 > .e-con,
+.page-id-3360 .elementor-3360 > .e-con,
+.page-id-3918 .elementor-3918 > .e-con {
+  --content-width: 100%;
+  --padding-top: 0px;
+  --padding-right: 0px;
+  --padding-bottom: 0px;
+  --padding-left: 0px;
+  --gap: 0px;
+  --row-gap: 0px;
+  --column-gap: 0px;
+}
+.page-id-4078 .site-main,
+.page-id-3911 .site-main {
+  max-width: 100%;
+}
+/* === ENDE VOLLBREITE === */

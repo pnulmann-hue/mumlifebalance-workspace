@@ -293,12 +293,35 @@ rechnet sie, Cockpit → Instagram → Ausgewertet). Die Notion-Content-DB ist a
 - **Produktideen-Check:** Gibt es ein Thema, das zwei Monate hintereinander oben in der
   Nachfrage steht und kein Angebot hat? → an `/strategie hebel <Idee>` weitergeben.
 
+### 4.5b+) Der Monat als Garten — Pflicht seit 22.10.2026
+
+Die Regeln stehen **einmal** in `.claude/skills/content/SKILL.md`, Abschnitt **„Der Garten“**.
+Hier nur, was der Monatsplan daraus festlegt:
+
+1. **Der Stadtteil:** das Monats-/Launch-Thema als Ort in der immer gleichen Stadt
+   („Network-Mama baut sich etwas Eigenes daneben auf“). **Alle Stichwörter des Monats führen
+   dorthin.**
+2. **Zwei bis drei Painpoints in die Mitte** — Gedanken um 23 Uhr aus
+   `content/wissen/zielgruppe-kurz.md`, im Wortlaut. 🚨 **Nie das Werkzeug** (KI, Instagram,
+   Öle, Kurs): niemand wacht auf und denkt „ich sollte KI nutzen“.
+3. **Je Painpoint drei Striche** — Geschichte · neue Perspektive · Meinung — und jeder Strich
+   als **Mikrogeschichte** (ein Moment, ein Ort, eine Uhrzeit, nur Belegtes).
+4. **Die vier Wochen als Kreislauf:** W1 Inspiration · W2 Entdecken · W3 Community ·
+   W4 Schubs (Kundinnen-Fall, echte Einwände, Kasse). Danach Loyalität: Käuferinnen hören
+   vom nächsten Monat zuerst.
+5. **Daraus die Dreh-Liste (4.5d)** für drei Tage: planen · aufnehmen · schneiden.
+6. **Platz für Treffer freihalten:** Schlägt ein Beitrag ein (≥ 2× Median), gehen die nächsten
+   zwei bis drei Plätze an Folge-Beiträge, bevor das Wochenthema weiterläuft (`/content` Schritt 2b).
+   Der Monatsplan ist darum ein Gerüst, kein Fahrplan.
+
 ### 4.5c) Pro Woche: 5 Beiträge (thema-matched)
 
-Für **jede Woche** des Monats (Fokus + Produkt + CTA aus dem Notion-Wochenplan):
+Für **jede Woche** des Monats (Fokus + Produkt + CTA aus dem Notion-Wochenplan), je Beitrag mit
+**Rolle** (1× Aufmerksamkeit · 2× Vertrauen · 2× Beziehung, siehe 4.5b+) und dem Painpoint aus der Mitte:
 - **5 Beiträge** nach den **5 Content-Typen** (`content-formel-5-typen.md`)
 - davon **mind. 2 = reine Reichweiten-/Verbindungs-Posts** (kein Verkauf, Share-Trigger, Mama-Identity — `reichweiten-posts-pattern.md`). CTA „Teile das in deiner Story", **kein** Keyword.
-- die übrigen 3 = Mehrwert / Story / Sales passend zum **Wochen-Produkt**, mit **Keyword-CTA**
+- die übrigen 3 = Mehrwert / Story / Sales passend zum **Wochen-Produkt**, mit **Keyword-CTA** —
+  das Stichwort **nur am Schluss**, nie in Zeile 1 (seit 22.10.2026)
 - **Format-Mix** (Content-Radar): Mentoring max 1 Karussell + Rest Reels · **doTERRA Reels-only**
 - pro Beitrag festhalten: **Hook** (nach `hook-framework.md` + Olga-Pattern-Mix + Zeitanker + 8/10 + **keine Stakkato**) · Typ · Format · Ziel (Reichweite/Lead/Sales) · adressierter Painpoint (aus 4.5a)
 

@@ -36,7 +36,7 @@ function buildEmail(preheader, title, subtitle, body) {
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                   <td style="padding-bottom:20px;">
-                    <span style="background-color:#dc822e;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance · Newsletter</span>
+                    <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;"><tr><td bgcolor="#dc822e" style="background-color:#dc822e;border-radius:20px;padding:6px 14px;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;line-height:1.5;text-transform:uppercase;">mumlifebalance · Newsletter</td></tr></table>
                   </td>
                 </tr>
                 <tr>

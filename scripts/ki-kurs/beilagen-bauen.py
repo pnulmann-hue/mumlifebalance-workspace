@@ -924,6 +924,8 @@ reference/  Vorlagen und Beispiele, die ich wiederverwende
 > - Keine erfundenen Zahlen. Wenn du eine brauchst und keine hast, frag.
 > - Keine Aussagen darüber, was ein Produkt bewirkt.
 > - Nichts veröffentlichen, ohne dass ich es vorher gesehen habe.
+> - Aus `reference` nie wörtlich abschreiben. Das ist Material von anderen —
+>   zum Nachschlagen, nicht für meine Texte.
 
 ### 5 · Was ich gerade vorhabe
 

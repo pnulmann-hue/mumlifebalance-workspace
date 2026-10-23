@@ -204,6 +204,22 @@ PHASEN = [
    ("0€ läuft über ein Formular im Mailtool, nicht über die Kasse", "methodik",
     "Für 0 € lässt sich über die Verkaufsplattform nichts verkaufen. Formular → "
     "Liste „Interessenten“ → eigener Tag → Automation."),
+   ("Kopiertes Formular ganz durchgegangen: Liste, Tag, Bestätigung, Weiterleitung", "erfahrung",
+    "Wer ein Formular kopiert, kopiert alle vier Einstellungen mit. Das Formular "
+    "„0€ doTERRA Energie-Kickstart“ war eine Kopie von Freischaufeln: es setzte den "
+    "Tag „Freischaufeln Lead“ und trug in die Mentoring-Liste ein. Die erste "
+    "Anmeldung bekam die Freischaufeln-Mail statt Tag 1 und dazu den "
+    "Business-Newsletter. Gefunden am 23.10.2026, drei Wochen später."),
+   ("Die Liste passt zum Profil", "erfahrung",
+    "doTERRA-Anmeldungen gehören in „doTERRA Interessenten“, Mentoring-Anmeldungen "
+    "in „Regulärer Newsletter/Interessenten“. Sonst bekommt eine erschöpfte Mama "
+    "deinen Business-Newsletter — und in der Standard-Bestätigungsmail steht der "
+    "Listenname sogar im Betreff."),
+   ("Kette Formular → Tag → Automation von vorn nachgeprüft", "erfahrung",
+    "Der Tag, den das Formular setzt, muss genau der Auslöser der Automation sein. "
+    "Verglichen über die Schnittstelle (Formular-Aktion gegen Automation-Auslöser), "
+    "nicht nach Namen geraten. Und der Eintrag in <code>active-funnels.json</code> "
+    "nennt dieselbe Formular-Nummer, dieselbe Liste und denselben Tag."),
    ("Genau EIN Eintrags-Tag, benannt „0€ &lt;Name&gt;“", "erfahrung",
     "Beim Bio-Check sind im April acht Tags auf einen Schlag entstanden, fünf "
     "davon blieben für immer leer. Ein Funnel, ein Tag."),
@@ -229,6 +245,13 @@ PHASEN = [
    ("Einwilligung, eigene Bestätigungsmail, Ränder am Handy", "methodik",
     "Das Häkchen ist Pflicht, und der Standardtext der Bestätigungsmail ist "
     "die erste Mail, die sie von dir sieht."),
+   ("Bestätigungsmail in deiner Stimme und ohne Angebot", "erfahrung",
+    "Die AC-Vorlage siezt und nennt den internen Listennamen im Betreff („Bitte "
+    "bestätigen Sie Ihr Abonnement für Regulärer Newsletter/Interessenten“). Die "
+    "eigene Fassung nennt das Freebie, hat einen Knopf auf <code>%CONFIRMLINK%</code> "
+    "und die Absenderadresse im Fuss. Kein Angebot: ihr einziger Job ist der Klick, "
+    "erst danach setzt AC Tag und Liste. Muster: "
+    "<code>outputs/produkte/doterra-mama-energie/mails/kickstart-mail-0.html</code>."),
    ("Zwischen Kauf und Pitch liegt eine Wartezeit", "methodik",
     "Wer gerade gekauft hat, soll erst einmal hineinschauen. Direkt "
     "hinterherzupitchen wirkt, als wäre das Gekaufte nur der Köder gewesen. "
@@ -278,6 +301,16 @@ PHASEN = [
    ("Danke-Seite steht und führt weiter", "methodik",
     "Die Danke-Seite ist der Platz für den Tripwire. Leer gelassen ist sie eine "
     "Sackgasse direkt nach dem Ja."),
+   ("Die Danke-Seite passt zur Bestätigung", "erfahrung",
+    "„Fast geschafft — klick den Link in der Mail“ stimmt nur, wenn das Formular "
+    "eine Bestätigungsmail verschickt. Beim Freischaufeln-Formular ist sie "
+    "ausgeschaltet; die Seite schickt sie auf die Suche nach einer Mail, die nie "
+    "kommt."),
+   ("Seite nach dem Bestätigungsklick hinterlegt", "erfahrung",
+    "Ohne eigene Adresse zeigt AC seine Standardseite, und die zweite "
+    "Verkaufsstelle bleibt leer. Dort steht „bestätigt, Tag 1 ist unterwegs“ und "
+    "darunter das grosse Angebot. Beim Energie-Kickstart: "
+    "<code>/energie-kickstart-bestaetigt/</code> mit der 30-Tage-Energie-Routine."),
    ("Bei einer Frist: eigene Angebotsseite und eine „abgelaufen“-Seite", "methodik",
     "Eine Frist, die nur im Text behauptet wird, ist keine. Wer nach Ablauf "
     "klickt, landet sonst auf demselben Preis und merkt, dass die Frist nichts "
@@ -323,6 +356,12 @@ PHASEN = [
 
  ("Die Mails", "mails",
   "Was hier steht, liest sie als Erstes — oder nie wieder.", [
+   ("Jede Mail einmal am Handy geöffnet", "erfahrung",
+    "Der orange Balken im Mailkopf war ein Inline-Span. Bricht er am Handy um, "
+    "zeichnet die Mail-App zwei lose Hälften — so in der KI-Kurs-Mail vom "
+    "23.10.2026. Seitdem ist er eine Tabellenzelle in allen Mail-Generatoren. "
+    "Die Outlook-App vergrössert die Schrift, also im echten Postfach schauen, "
+    "nicht nur in der Vorschau."),
    ("Die Betreffzeile ist ein Hook", "methodik",
     "Keine Ankündigung („Newsletter Oktober“), sondern derselbe Anspruch wie "
     "bei einer ersten Reelzeile. Und der Einstieg geht direkt in die Geschichte "

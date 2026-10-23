@@ -44,6 +44,17 @@ REELS = [
          text="Deine Upline zeigt das neue Auto und die Woche am Meer,",
          betont="während du heimlich rechnest, wie die nächste Mindestbestellung noch auf die Kreditkarte passt.",
          zusatz="Kommentier STANDBEIN"),
+    # Kassenschluss KI-Kurs, Texte: outputs/content/KW43/ki-kurs-schluss.md
+    dict(name="kw43-m-do-parkplatz", clip="20260623_091315", ab=0.0, dauer=5.8, hoehe=40,  # ab 6 s laufen Kinder ins Bild
+         stil="serif", akzent="orange",
+         text="Mein Büro war vor zwei Jahren",
+         betont="der Parkplatz vor der Musikschule.",
+         zusatz="Kommentier STIMME"),
+    dict(name="kw43-m-fr-halbzwoelf", clip="VID_145730108_004600_892-ton", ab=1.0, dauer=8.0, hoehe=48,
+         stil="serif", akzent="orange",
+         text="Um halb zwölf ist bei mir Feierabend fürs Business.",
+         betont="Danach gehört der Tag den vier Kindern.",
+         zusatz="Kommentier STIMME"),
 ]
 
 

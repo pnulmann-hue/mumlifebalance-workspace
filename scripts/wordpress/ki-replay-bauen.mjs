@@ -23,7 +23,10 @@ import fs from "node:fs";
 // Privacy-Hash dazu: https://vimeo.com/<ID>/<HASH> → VIMEO_ID + VIMEO_HASH.
 const VIMEO_ID = process.env.VIMEO_ID || "";
 const VIMEO_HASH = process.env.VIMEO_HASH || "";   // der Teil nach dem /, bei unlisted
-const SLUG = "ki-masterclass-replay";
+// Seit 23.10.2026 liegt die Aufzeichnung unter /ki-masterclass/ — dort landen die Links aus
+// Instagram und Mails. Die alte Anmeldeseite (4266) ist privat und heisst ki-masterclass-anmeldung-alt.
+const SEITE_ID = 4350;
+const SLUG = "ki-masterclass";
 const TITEL = "KI-Masterclass — Aufzeichnung";
 
 // Preis-Phase: bis Do 15.10. gilt 277, ab Fr 16.10. dann 333.
@@ -44,13 +47,10 @@ if (!VIMEO_ID) {
 const src = `https://player.vimeo.com/video/${VIMEO_ID}`
   + `?${VIMEO_HASH ? "h=" + VIMEO_HASH + "&" : ""}title=0&byline=0&portrait=0`;
 
-const fristZeile = frueh
-  ? `<p style="font-size:14px;color:#b56a24;font-weight:bold;text-transform:uppercase;letter-spacing:1px;margin:0 0 22px;">Zum Frühbucherpreis noch bis Donnerstag, 15. Oktober</p>`
-  : `<p style="font-size:14px;color:#b56a24;font-weight:bold;text-transform:uppercase;letter-spacing:1px;margin:0 0 22px;">Die Kasse schliesst am 23. Oktober</p>`;
-
-const preisZeile = frueh
-  ? `<p style="font-size:17px;line-height:1.6;color:#0c1c30;font-weight:bold;margin:0 0 8px;">Easy KI für Networkerinnen: ${PREIS} statt 333 Franken. Start ist der 1. November.</p>`
-  : `<p style="font-size:17px;line-height:1.6;color:#0c1c30;font-weight:bold;margin:0 0 8px;">Easy KI für Networkerinnen: ${PREIS} Franken. Start ist der 1. November.</p>`;
+// Seit 23.10.2026 ohne Preis und ohne Datum (Patricia: „ob bei keiner seite noch irgend ein datum
+// steht“). Die Seite bleibt stehen, auch wenn die Kasse zu ist — wann sie aufgeht, sagt die Kursseite.
+const fristZeile = "";
+const preisZeile = `<p style="font-size:17px;line-height:1.6;color:#0c1c30;font-weight:bold;margin:0 0 22px;">Wann die Kasse wieder offen ist, steht auf der Kursseite. In der Mum Business Academy hast du den Kurs schon dabei.</p>`;
 
 const INHALT = `<!-- wp:html -->
 <div class="mlb-replay" style="max-width:820px;margin:0 auto;padding:40px 20px;font-family:'Source Sans 3',Arial,sans-serif;color:#0c1c30;">
@@ -84,9 +84,8 @@ console.log(`Preis-Phase : ${frueh ? "früh" : "regulär"} → ${PREIS}`);
 console.log(`Video       : ${src}`);
 console.log(`Inhalt      : ${INHALT.length} Zeichen → outputs/produkte/ki-treppe/ki-replay-inhalt.html`);
 
-const such = await fetch(`${basis}/pages?slug=${SLUG}&status=any&context=edit`, { headers: { Authorization: auth } });
-const treffer = await such.json();
-const da = Array.isArray(treffer) && treffer[0];
+const such = await fetch(`${basis}/pages/${SEITE_ID}?context=edit`, { headers: { Authorization: auth } });
+const da = such.ok ? await such.json() : null;
 console.log(`Seite       : ${da ? `${da.id} (${da.status}) — wird aktualisiert` : "gibt es noch nicht — wird angelegt"}`);
 
 if (!process.argv.includes("--los")) {

@@ -41,7 +41,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 SICHERUNG = os.path.join(ROOT, "outputs/produkte/mba-launch/_sicherung")
 ZIEL = os.path.join(SICHERUNG, "mba-widget-neu.html")
 
-HINWEIS = "Neu ab 1.11.26"
+# 23.10.2026: kein Datum mehr auf der Seite (Patricia) — Easy KI ist in der MBA gratis dabei
+HINWEIS = "gratis dabei"
 KASSE = "https://mumlifebalance.ch/ki-kurs/"
 
 aenderungen = []
@@ -113,24 +114,33 @@ def main():
     assert "Easy KI" in block04 and "04</div>" in block04, "Block 04 nicht sauber gebaut"
     h = ersetze(h, block03, block03 + "\n      " + block04, "2 Kursblock 04")
 
-    # --- 3 · Einzelpreis-Zeile --------------------------------------------
-    dpw_vrow = ('<div class="vrow"><span>Digitale Produktwelt — einzeln, ohne '
-                'Begleitung</span><span>CHF 333</span></div>')
-    easy_vrow = ('\n      <div class="vrow"><span>Easy KI — einzeln, ohne Begleitung'
-                 '</span><span>CHF 333</span></div>')
-    h = ersetze(h, dpw_vrow, dpw_vrow + easy_vrow, "3 Einzelpreis-Zeile")
+    # --- 3 · Wert-Tabelle: Easy KI als Geschenk, NICHT in die Summe ------------
+    # 23.10.2026: Vier Kurse einzeln wären 1332 — gleich neben dem MBA-Preis 1347 sähe
+    # das Jahr Begleitung plus PIA aus wie 15 Franken wert. Deshalb bleibt die Summe bei
+    # den drei Kursen (999), und Easy KI steht als eigene Zeile „gratis dabei“ darunter.
+    summe = '<span>Nur die 3 Kurse, ganz ohne Begleitung</span><span>CHF 999</span></div>'
+    easy_vrow = ('\n      <div class="vrow"><span>Dazu Easy KI für Networkerinnen — in der MBA '
+                 'gratis dabei</span><span>Wert CHF 333</span></div>')
+    h = ersetze(h, summe, summe + easy_vrow, "3 Easy KI als Geschenk unter der Summe")
 
-    # --- 4 · Summe ---------------------------------------------------------
-    h = ersetze(h,
-                '<span>Nur die 3 Kurse, ganz ohne Begleitung</span><span>CHF 999</span>',
-                '<span>Nur die 4 Kurse, ganz ohne Begleitung</span><span>CHF 1332</span>',
-                "4 Summe 999 → 1332")
-
-    # --- 5 · „drei Kurse" → „vier Kurse" -----------------------------------
+    # --- 4 · „drei Kurse" → „drei Kurse plus Easy KI" ----------------------------
     n = h.count("drei Kurse")
     assert n == 4, "„drei Kurse“ kommt %dx vor (erwartet 4)" % n
-    h = h.replace("drei Kurse", "vier Kurse")
-    aenderungen.append("5 „drei Kurse“ → „vier Kurse“ (4x)")
+    h = h.replace("drei Kurse", "drei Kurse plus Easy KI")
+    aenderungen.append("4 „drei Kurse“ → „drei Kurse plus Easy KI“ (4x)")
+
+    # --- 5 · Termine raus (Programm läuft seit dem Sommer) -------------------
+    h = ersetze(h, "Los mit PIA und den Kursen, in deinem Tempo, schon über den Sommer.",
+                "Du startest sofort mit PIA und den Kursen, in deinem Tempo.", "5a Schritt 2 ohne Sommer")
+    h = ersetze(h, "Nach den Sommerferien starten wir live — du bleibst nie allein.",
+                "Die Live-Calls laufen schon, du steigst einfach beim nächsten ein und bist nie allein damit.",
+                "5b Schritt 3 ohne Sommerferien")
+    h = ersetze(h, "<li>Programmstart Mitte August — Zugang sofort</li>",
+                "<li>Zugang sofort, die Live-Calls laufen schon</li>", "5c Preisblock ohne Programmstart")
+    h = ersetze(h, "Zweimal im Monat, live (und aufgezeichnet). Wir starten nach den Sommerferien und legen die "
+                   "festen Zeiten gemeinsam mit der Gruppe fest.",
+                "Zweimal im Monat, live und aufgezeichnet. Die Termine findest du in der Telegram-Gruppe.",
+                "5d FAQ Calls ohne Sommerferien")
 
     # --- Gegenproben -------------------------------------------------------
     print("Geändert:")
@@ -139,12 +149,10 @@ def main():
 
     print("\nGegenproben:")
     proben = [
-        ("Easy KI kommt vor", h.count("Easy KI") == 3, "3x erwartet (Liste, Block 04, Preiszeile)"),
-        ("kein „drei Kurse“ mehr", "drei Kurse" not in h, ""),
-        ("kein „3 Kurse“ mehr", "3 Kurse" not in h, ""),
-        ("CHF 999 ist weg", "CHF 999" not in h, ""),
-        ("CHF 1332 steht da", "CHF 1332" in h, ""),
-        ("Hinweis 3x", h.count(HINWEIS) == 2, "Liste + Block 04"),
+        ("Easy KI kommt vor", h.count("Easy KI") == 7, "7x erwartet (Liste, Block 04, Wertzeile, 4× „plus Easy KI“)"),
+        ("Summe bleibt CHF 999", "CHF 999" in h and "CHF 1332" not in h, ""),
+        ("kein Sommer, kein August", not re.search(r"Sommer|August", h), ""),
+        ("Hinweis „gratis dabei“", h.count(HINWEIS) >= 2, "Liste + Block 04"),
         ("keine Umschrift", not re.search(r"\b(Auftraege|Beitraege|fuer)\b", h), ""),
         ("Kurslink gesetzt", KASSE in h, ""),
     ]

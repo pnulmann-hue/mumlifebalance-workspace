@@ -441,3 +441,15 @@ outputs/produkte/ki-kurs/mails/
 
 # Zielgruppenanalyse Content Shortcut (12.10.2026) — nennt fremde Coaches namentlich, Repo ist public
 outputs/zielgruppen-research/2026-10-12-content-shortcut/
+
+# Private Öl-App: Buchauszüge und Telegram-Nachrichten anderer — bleibt lokal
+outputs/oel-app/
+
+# KI-Kurs-Produktionsseite (seit 22.10.2026)
+# 🚨 Beide Dateien tragen die Vimeo-Links der Kursvideos, und darin steckt der
+#    Unlisted-Hash: wer den Link hat, sieht den bezahlten Kurs ohne zu zahlen.
+#    Das Repo ist oeffentlich. Die Quelle der Links liegt unter
+#    context/Kurse/aktuelle kurse/Easy-KI/videos-roh.json (ebenfalls draussen),
+#    beide Dateien baut man mit produktion-daten.py + produktion-seite.py neu.
+outputs/produkte/ki-treppe/produktion.json
+outputs/produkte/ki-treppe/produktion.html

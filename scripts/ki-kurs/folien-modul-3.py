@@ -13,10 +13,10 @@ ZIEL = sys.argv[1] if len(sys.argv) > 1 else "folien-modul-3"
 F = {}
 
 F["cover"] = modulcover(3, "Claude Cowork",
-    "Die KI arbeitet mit deinen Dateien und hängt an deiner eigenen Planung. "
-    "Und du baust deinen ersten Bot.",
-    "Sag gleich, dass hier nichts installiert wird. Es ist dieselbe Oberfläche wie im Chat, "
-    "nur mit zwei Sachen mehr. Das nimmt die Hürde vor dem Wort Stufe.")
+    "Die KI arbeitet mit deinen Dateien. Und du baust deinen ersten Helfer.",
+    "Sag gleich, dass hier nichts installiert wird. Es ist dieselbe Oberfläche wie im Chat — "
+    "seit dem Umbau gibt es die Umschaltung gar nicht mehr, Claude entscheidet selbst, ob er "
+    "nur antwortet oder loslegt. Das nimmt die Hürde vor dem Wort Stufe.")
 
 # ── 3.1 Was Cowork kann ──────────────────────────────────────────────
 F["l31-titel"] = lektionstitel("l31-titel", "3.1", "Was Cowork kann,<br>was der Chat nicht kann",
@@ -126,15 +126,41 @@ F["l33-auftrag"] = folie("l33-auftrag",
     "Der letzte Punkt ist der wichtigste und wird immer vergessen. Ein Bot ohne Verbote "
     "macht irgendwann etwas, das du nicht wolltest.")
 
+F["l33-routine"] = folie("l33-routine",
+    eyebrow("Lektion 3.3")
+    + h2("Und jetzt macht er es von allein")
+    + reihe([
+        karte("Wo das steht", ["In der Leiste links: " + zit("Geplant") + ".",
+                               "Dort " + zit("Neue Aufgabe") + "."]),
+        karte("Was du einstellst", ["Wann er laufen soll.",
+                                    "Täglich, wöchentlich, werktags."], ORANGE),
+        karte("Was dann passiert", ["Er läuft, ohne dass du",
+                                    "ihn anstösst. Braucht er",
+                                    "Dateien von deinem Rechner,",
+                                    "muss der aber an sein."]),
+      ])
+    + p("Dasselbe geht im Gespräch: sag einfach „mach mir das jeden Montag um neun“.",
+        30, PETROL),
+    "Das ist der Moment, auf den das ganze Modul zuläuft — zeig es live und lass die Aufgabe "
+    "wirklich stehen. Zwei Dinge musst du dabei sagen, sonst wird es teuer. Erstens steht die "
+    "Freigabe beim Anlegen auf „automatisch genehmigen“: er fragt dich nachts nicht mehr. "
+    "Genau deshalb gehören die Verbote von der letzten Folie jetzt wirklich hinein. Und "
+    "zweitens die rechte Karte: hängt ein Ordner von deinem Rechner dran — wie beim "
+    "Kochassistenten mit den Rezepten —, dann läuft die Aufgabe bei dir und dein Rechner "
+    "muss an sein. Braucht sie nichts von dir, macht Claude es auf seinen Servern, auch "
+    "wenn du den Laptop zugeklappt hast. Sag das offen, sonst wartet jemand am Montagmorgen "
+    "auf eine Nachricht, die nicht kommt.")
+
 F["l33-satz"] = statement("l33-satz",
     ["Du hast gerade", "etwas gebaut,", "das für dich arbeitet."],
-    "Ohne eine Zeile Code, in einer Viertelstunde.",
+    "Ohne eine Zeile Code, in einer Viertelstunde. Und ab morgen früh ohne dich.",
     "Lass den Moment stehen. Für viele ist das der erste Punkt im ganzen Kurs, an dem sie "
     "sich selbst etwas zutrauen.")
 
 F["l33-weiter"] = weiter("l33-weiter", "Als Nächstes",
     "Wo Cowork aufhört",
-    "Eine Sache kann dein Bot noch nicht — und das ist der ehrliche Grund für die nächste Stufe.",
+    "Ein paar Sachen kann dein Helfer trotzdem nicht — und die sind der ehrliche Grund für "
+    "die nächste Stufe.",
     "Kündige an, dass jetzt eine Grenze kommt. Dass du sie selbst benennst, macht den Rest "
     "des Kurses glaubwürdiger.")
 
@@ -145,25 +171,35 @@ F["l34-titel"] = lektionstitel("l34-titel", "3.4", "Wo Cowork aufhört",
 
 F["l34-grenze"] = folie("l34-grenze",
     eyebrow("Lektion 3.4")
-    + h2("Die eine Sache, die fehlt")
-    + p("Dein Bot läuft, wenn du ihn anstösst. Am Montagmorgen musst du die Oberfläche öffnen "
-        "und ihn losschicken.", 40)
-    + p("Was du eigentlich willst, ist eine Nachricht auf dem Handy, bevor du überhaupt "
-        "aufgestanden bist. Dafür braucht er einen Ort, an dem er wohnt, und den bekommt er "
-        "auf der nächsten Stufe.", 34, GEDAEMPFT),
-    "Sag das ohne Druck. Wer den Bot morgens selbst anstösst, hat trotzdem etwas gewonnen.")
+    + h2("Drei Sachen, die hier nicht gehen")
+    + reihe([
+        karte("Dein Rechner", ["Anschauen ja, benutzen nein.",
+                               "Ein Video schneiden oder Bilder",
+                               "herstellen macht deine Maschine."]),
+        karte("Was keinen Stecker hat", ["Für Instagram gibt es keinen.",
+                                         "Gestalten ja, posten nein."], ORANGE),
+        karte("Deine eigenen Befehle", ["Hier beschreibst du jedes Mal",
+                                        "von vorne, was sie tun soll."]),
+      ]),
+    "Ruhig vortragen, das ist kein Verkaufsgespräch. Links dein Kochassistent: er darf deine "
+    "Rezepte lesen, aber die Suche durch alle achtzehnhundert läuft bei dir. Im Browser kommt "
+    "er übrigens gar nicht an deine Ordner — das geht nur in der App, und auch dort nur "
+    "lesen und schreiben, nicht rechnen. In der Mitte dein eigenes Beispiel: gestalten geht "
+    "über den Canva-Stecker, aber zum Posten brauche ich einen Dienst dazwischen. Und rechts "
+    "vorwegnehmen, was auf der nächsten Stufe daraus wird — dort sagst du ein Wort statt "
+    "eines Absatzes.")
 
 F["l34-entscheidung"] = folie("l34-entscheidung",
     eyebrow("Lektion 3.4")
     + h2("Woran du merkst, welche Stufe dran ist")
     + gegenueber(
         "Bleib bei Cowork, wenn",
-        ["Du ein, zwei Sachen hast, die du regelmässig machst.",
-         "Es dir nichts ausmacht, sie selbst anzustossen.",
+        ["Du ein, zwei Sachen regelmässig machst.",
+         "Alles, was sie dafür braucht, liegt online.",
          "Du gerade keine Zeit für Neues hast."],
         "Geh weiter, wenn",
         ["Du dieselbe Arbeit zum dritten Mal machst.",
-         "Du willst, dass etwas läuft, während du schläfst.",
+         "Sie an Dateien soll, die auf deinem Rechner liegen.",
          "Du eigene Befehle für deine Wochenarbeit willst."]),
     "Lies beide Spalten vor und lass ihr einen Moment. Wer sich hier ehrlich einordnet, "
     "bricht später nicht ab.")
@@ -212,7 +248,7 @@ F["l35-weiter"] = folie("l35-weiter",
 ORDER = ["cover",
  "l31-titel","l31-unterschied","l31-dateien","l31-weiter",
  "l32-titel","l32-warum","l32-schritte","l32-weiter",
- "l33-titel","l33-was","l33-auftrag","l33-satz","l33-weiter",
+ "l33-titel","l33-was","l33-auftrag","l33-routine","l33-satz","l33-weiter",
  "l34-titel","l34-grenze","l34-entscheidung","l34-satz",
  "l35-titel","l35-bilanz","l35-checkliste","l35-weiter"]
 

@@ -1,0 +1,699 @@
+<title>Öl-Kompass</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap">
+<style>
+/* Handy-Nachschlagewerk wie eine Apothekenschublade: farbige Köpfe je Produktart, darunter Karten.
+   Anwendungen in Reitern nach Art, Rezepte als wischbare Karten. Petrol = Navigation, Orange = Herz. */
+:root {
+  --grund: #f1ecdd; --blatt: #fbf8f0; --linie: #e2dac6; --text: #0c1c30; --leise: #5b6672;
+  --petrol: #12828c; --petrol-hell: #d6ebe9; --dunkel: #29556d; --orange: #dc822e; --orange-hell: #f6e1cb;
+  --schatten: 0 1px 2px rgba(12,28,48,.06), 0 6px 18px rgba(12,28,48,.07);
+  --anzeige: "Philosopher", Georgia, serif; --lese: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --nav-h: 64px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --grund: #0f1d27; --blatt: #172a3b; --linie: #26405a; --text: #ece6d6; --leise: #a1adb8;
+  --petrol: #3fb4bd; --petrol-hell: #173d47; --dunkel: #8cb6cc; --orange: #ec9a4c; --orange-hell: #3b2b1c;
+  --schatten: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25); color-scheme: dark } }
+:root[data-theme="dark"] {
+  --grund: #0f1d27; --blatt: #172a3b; --linie: #26405a; --text: #ece6d6; --leise: #a1adb8;
+  --petrol: #3fb4bd; --petrol-hell: #173d47; --dunkel: #8cb6cc; --orange: #ec9a4c; --orange-hell: #3b2b1c;
+  --schatten: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25); color-scheme: dark }
+html, body { height: 100%; }
+body { background: var(--grund); color: var(--text); font: 16px/1.5 var(--lese); }
+* { box-sizing: border-box; }
+button, input, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: #29556d; }
+
+.kopf { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: #29556d; color: #f1ecdd;
+  padding-block: 10px 12px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.kopf-zeile { display: flex; align-items: center; gap: 10px; max-width: 760px; margin: 0 auto; }
+.kopf h1 { font: 700 1.2rem/1.2 var(--anzeige); margin: 0; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.zurueck { background: rgba(241,236,221,.14); border: 0; color: inherit; width: 34px; height: 34px; border-radius: 50%; font-size: 1.3rem; line-height: 1; }
+.suche { display: block; width: 100%; max-width: 760px; margin: 10px auto 0; border: 0; border-radius: 999px; padding: 10px 18px;
+  background: #f1ecdd; color: #0c1c30; }
+.suche::placeholder { color: #6a7480; }
+
+main { max-width: 760px; margin: 0 auto; padding-block: 16px calc(var(--nav-h) + 28px + env(safe-area-inset-bottom, 0px));
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* Grundbausteine */
+.chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; margin-bottom: 12px; scrollbar-width: none; }
+.chip { flex: none; border: 1px solid var(--linie); background: var(--blatt); border-radius: 999px; padding: 5px 13px; font-size: .88rem; white-space: nowrap; }
+.chip[aria-pressed="true"] { background: var(--petrol); border-color: var(--petrol); color: #fff; }
+.zaehler { color: var(--leise); font-size: .85rem; margin: 0 0 8px; }
+.titel2 { font: 700 1.15rem var(--anzeige); color: var(--dunkel); margin: 24px 0 10px; display: flex; align-items: baseline; gap: 8px; }
+.titel2 small { font: 400 .85rem var(--lese); color: var(--leise); }
+.leer-zustand { text-align: center; color: var(--leise); padding: 40px 10px; }
+.hinweis { color: var(--leise); font-size: .9rem; }
+.quelle { color: var(--leise); font-size: .8rem; }
+.flasche { flex: none; width: 40px; height: 48px; }
+.flasche svg { width: 100%; height: 100%; display: block; }
+
+/* Listen */
+.liste { display: flex; flex-direction: column; gap: 8px; }
+.zeile { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 1px solid var(--linie); border-radius: 14px; background: var(--blatt); text-align: left; width: 100%; box-shadow: var(--schatten); }
+.zeile:hover { border-color: var(--petrol); }
+.zeile-text { flex: 1; min-width: 0; }
+.zeile-titel { font-weight: 700; display: block; }
+.zeile-unter { color: var(--leise); font-size: .86rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.marke { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; font-size: .75rem; color: var(--leise); }
+.herz { color: var(--orange); font-size: 1rem; }
+.pille { display: inline-block; border-radius: 999px; padding: 1px 9px; font-size: .74rem; font-weight: 700; background: var(--petrol-hell); color: var(--petrol); }
+
+/* Startseite */
+.begruessung { background: linear-gradient(135deg, #29556d, #12828c); color: #f1ecdd; border-radius: 20px; padding: 18px; box-shadow: var(--schatten); }
+.begruessung h2 { font: 700 1.5rem/1.2 var(--anzeige); margin: 0 0 4px; }
+.begruessung p { margin: 0; opacity: .9; }
+.zahlen { display: flex; gap: 18px; margin-top: 12px; font-size: .85rem; }
+.zahlen b { display: block; font: 700 1.35rem var(--anzeige); }
+.kacheln { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.kachel { border: 0; border-radius: 16px; padding: 14px; text-align: left; color: #fff; min-height: 96px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--schatten); }
+.kachel b { font: 700 1.05rem/1.2 var(--anzeige); }
+.kachel span { font-size: .8rem; opacity: .9; }
+.kachel .zeichen { font-size: 1.5rem; line-height: 1; }
+.karussell { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 2px 2px 10px; scrollbar-width: none; }
+.karussell > * { scroll-snap-align: start; flex: none; }
+.oelkarte { width: 128px; border: 1px solid var(--linie); border-radius: 16px; background: var(--blatt); padding: 12px 10px; text-align: center; box-shadow: var(--schatten); }
+.oelkarte .flasche { margin: 0 auto 6px; width: 46px; height: 56px; }
+.oelkarte b { display: block; font-size: .92rem; line-height: 1.2; }
+.oelkarte.mit-foto { padding: 0 0 10px; overflow: hidden; width: 140px; }
+.oelkarte.mit-foto b, .oelkarte.mit-foto span { padding: 0 8px; }
+.karten-foto { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; margin-bottom: 8px; }
+.mini-foto { flex: none; width: 44px; height: 44px; border-radius: 12px; object-fit: cover; }
+/* Kopf mit Foto: das Bild oben, der farbige Teil mit Name darunter */
+.held.mit-foto { padding-top: 0; }
+.held.mit-foto::after { display: none; }
+.held-foto { display: block; width: calc(100% + 36px); max-width: none; margin: 0 -18px 14px; aspect-ratio: 16 / 10; object-fit: cover; }
+.oelkarte span { font-size: .78rem; color: var(--leise); }
+
+/* Produkt- und Themenseite */
+.held { border-radius: 22px; padding: 18px 18px 16px; color: #fff; position: relative; overflow: hidden; box-shadow: var(--schatten); }
+.held::after { content: ""; position: absolute; right: -40px; top: -40px; width: 170px; height: 170px; border-radius: 50%; background: rgba(255,255,255,.1); }
+.held-oben { display: flex; gap: 14px; align-items: center; position: relative; z-index: 1; }
+.held .flasche { width: 58px; height: 70px; }
+.held .art-zeile { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; opacity: .9; }
+.held h2 { font: 700 1.75rem/1.1 var(--anzeige); margin: 2px 0; text-wrap: balance; }
+.held .deutsch { margin: 0; opacity: .9; font-size: .92rem; }
+.held-knoepfe { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; position: relative; z-index: 1; }
+.hk { border: 0; background: rgba(255,255,255,.2); color: #fff; border-radius: 999px; padding: 6px 14px; font-size: .9rem; }
+.hk.an { background: #fff; color: var(--orange); font-weight: 700; }
+.vorrat { display: inline-flex; align-items: center; background: rgba(255,255,255,.2); border-radius: 999px; }
+.vorrat button { border: 0; background: none; color: #fff; padding: 6px 12px; font-size: 1.05rem; }
+.vorrat span { min-width: 64px; text-align: center; font-size: .86rem; font-variant-numeric: tabular-nums; }
+.kurz { font-size: 1.08rem; margin: 16px 2px 10px; }
+.kurz.zu { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 4px; }
+.empf p { display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+.verweise { display: flex; flex-wrap: wrap; gap: 6px; }
+.verweis { border: 1px solid var(--linie); background: var(--blatt); color: var(--text); border-radius: 999px; padding: 4px 12px; font-size: .86rem; }
+.verweis.leer { border-style: dashed; color: var(--leise); }
+.verweis.da::after { content: " ✓"; color: var(--petrol); font-weight: 700; }
+
+.karte { background: var(--blatt); border: 1px solid var(--linie); border-radius: 16px; padding: 14px; margin-top: 12px; box-shadow: var(--schatten); }
+.karte h3 { font: 700 1.05rem var(--anzeige); color: var(--dunkel); margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }
+.karte h3 small { font: 400 .8rem var(--lese); color: var(--leise); margin-left: auto; }
+.karte p { margin: 0 0 6px; }
+.karte ul { margin: 0; padding-left: 1.1em; }
+.karte li { margin-bottom: 5px; }
+
+.reiter { display: flex; gap: 6px; overflow-x: auto; margin: 0 -2px 12px; padding: 0 2px 2px; scrollbar-width: none; }
+.reiter button { flex: none; display: flex; align-items: center; gap: 6px; border: 1px solid var(--linie); background: var(--grund); border-radius: 12px; padding: 7px 11px; font-size: .88rem; }
+.reiter button[aria-selected="true"] { color: #fff; border-color: transparent; }
+.reiter button small { opacity: .75; font-size: .75rem; }
+.anwendungen { display: grid; gap: 8px; }
+.anw { border-left: 4px solid var(--petrol); background: var(--grund); border-radius: 10px; padding: 9px 12px; }
+
+.steckbrief { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+.fakt { background: var(--grund); border-radius: 12px; padding: 10px 12px; }
+.fakt span { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; color: var(--leise); }
+.fakt b { font-weight: 600; font-size: .95rem; }
+.sicher { background: var(--orange-hell); border-radius: 12px; padding: 10px 12px 10px 14px; }
+.emotion { background: linear-gradient(135deg, #f3dde3, #e9e2f1); color: #3a2440; border-radius: 16px; padding: 14px; margin-top: 12px; }
+.emotion h3 { font: 700 1.05rem var(--anzeige); margin: 0 0 6px; color: #6a3d63; }
+
+.rezepte { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 2px 2px 8px; scrollbar-width: thin; }
+.rezept { flex: none; width: min(260px, 78vw); scroll-snap-align: start; background: var(--grund); border-radius: 14px; padding: 12px; display: flex; flex-direction: column; gap: 6px; }
+.rezept b { font-family: var(--anzeige); font-size: 1rem; line-height: 1.2; }
+.rezept ul { margin: 0; padding-left: 1em; font-size: .9rem; }
+.rezept p { font-size: .9rem; margin: 0; }
+.rezept .quelle { margin-top: auto; }
+
+.empfehlungen { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+.empf { background: var(--grund); border-radius: 14px; padding: 12px; display: flex; flex-direction: column; gap: 6px; }
+.empf-kopf { display: flex; align-items: center; gap: 8px; }
+.empf-kopf .flasche { width: 28px; height: 34px; }
+.empf-kopf button { border: 0; background: none; padding: 0; font-weight: 700; text-align: left; }
+.empf p { font-size: .9rem; margin: 0; }
+.mehr { border: 0; background: none; color: var(--petrol); padding: 0; font-size: .85rem; font-weight: 600; align-self: flex-start; }
+
+details.karte summary { font: 700 1.05rem var(--anzeige); color: var(--dunkel); cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px; }
+details.karte summary::-webkit-details-marker { display: none; }
+details.karte summary::after { content: "▾"; margin-left: auto; color: var(--leise); transition: transform .2s; }
+details.karte[open] summary::after { transform: rotate(180deg); }
+details.karte[open] summary { margin-bottom: 10px; }
+.buchstelle { border-left: 3px solid var(--linie); padding: 2px 0 2px 10px; margin-bottom: 10px; }
+
+.tipp { background: var(--blatt); border: 1px solid var(--linie); border-radius: 16px; padding: 14px; margin-bottom: 10px; box-shadow: var(--schatten); break-inside: avoid; }
+.tipp h4 { margin: 6px 0 4px; font: 700 1.02rem/1.25 var(--anzeige); }
+.tipp p { margin: 0 0 6px; white-space: pre-line; font-size: .94rem; }
+.tipp ul { margin: 0 0 6px; padding-left: 1.1em; font-size: .92rem; }
+.tipp-kopf { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.tipps-raster { columns: 2 300px; column-gap: 10px; }
+.tipp-des-tages { border: 0; background: var(--orange-hell); box-shadow: none; }
+.hinweis-karte { background: var(--orange-hell); border-color: transparent; }
+.hinweis-karte p, .karte p { font-size: .92rem; }
+.hinweis-fuss { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--linie); }
+
+/* Was mische ich heute? */
+.mischen-knopf { display: flex; align-items: center; gap: 14px; width: 100%; margin-top: 12px; border: 0; border-radius: 18px; padding: 14px 16px;
+  background: var(--orange-hell); color: var(--text); text-align: left; box-shadow: var(--schatten); }
+.mischen-knopf .zeichen { font-size: 1.8rem; line-height: 1; color: var(--orange); }
+.mischen-knopf b { font: 700 1.1rem var(--anzeige); }
+.mischen-knopf span:nth-child(2) { flex: 1; min-width: 0; font-size: .9rem; }
+.mischen-knopf span:last-child { font-size: 1.4rem; color: var(--orange); }
+.mischkarte { background: var(--blatt); border: 1px solid var(--linie); border-radius: 16px; padding: 14px; margin-bottom: 10px; box-shadow: var(--schatten); break-inside: avoid; }
+.mischkarte.ok { border-color: var(--petrol); }
+.mischkarte h4 { margin: 6px 0 8px; font: 700 1.02rem/1.25 var(--anzeige); }
+.mischkarte p { margin: 8px 0 4px; font-size: .92rem; white-space: pre-line; }
+.geklemmt { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.zutaten { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; font-size: .92rem; }
+.zutaten li { display: flex; gap: 8px; align-items: baseline; }
+.zutaten li.z-link { cursor: pointer; }
+.zutaten li.z-fehlt span:last-child { color: var(--leise); }
+.z-zeichen { flex: none; width: 18px; height: 18px; border-radius: 50%; display: inline-grid; place-items: center; font-size: .7rem; font-weight: 700; }
+.z-zeichen.da { background: var(--petrol); color: #fff; }
+.z-zeichen.fehlt { background: var(--orange-hell); color: var(--orange); }
+.z-zeichen.frage { background: var(--linie); color: var(--leise); }
+
+textarea, .feld { width: 100%; border: 1px solid var(--linie); border-radius: 12px; background: var(--grund); padding: 9px 11px; }
+textarea { min-height: 90px; resize: vertical; }
+.gespeichert { font-size: .78rem; color: var(--leise); }
+
+nav.unten { position: fixed; left: 0; right: 0; bottom: 0; z-index: 5; background: var(--blatt); border-top: 1px solid var(--linie);
+  padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+nav.unten div { display: grid; grid-template-columns: repeat(5, 1fr); max-width: 760px; margin: 0 auto; height: var(--nav-h); }
+nav.unten button { border: 0; background: none; font-size: .76rem; color: var(--leise); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; }
+nav.unten button svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+nav.unten button[aria-current="page"] { color: var(--petrol); font-weight: 700; }
+nav.unten button[aria-current="page"] svg { background: var(--petrol-hell); border-radius: 999px; padding: 3px 12px; width: 46px; height: 28px; }
+@media (prefers-reduced-motion: no-preference) { .zeile, .chip, .kachel { transition: transform .15s, border-color .15s; } .kachel:active, .zeile:active { transform: scale(.98); } }
+</style>
+
+<header class="kopf">
+  <div class="kopf-zeile">
+    <button class="zurueck" id="zurueck" hidden aria-label="Zurück">‹</button>
+    <h1 id="titel">Öl-Kompass</h1>
+  </div>
+  <input class="suche" id="suche" type="search" placeholder="Öl, Thema oder Stichwort suchen …" autocomplete="off">
+</header>
+<main id="inhalt"><p class="leer-zustand">Dein Öl-Wissen wird geladen …</p></main>
+<nav class="unten" aria-label="Bereiche"><div>
+  <button data-reiter="start" aria-current="page"><svg viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z"/></svg>Start</button>
+  <button data-reiter="produkte"><svg viewBox="0 0 24 24"><path d="M9 3h6v4l2 2v11a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V9l2-2z"/></svg>Produkte</button>
+  <button data-reiter="themen"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Themen</button>
+  <button data-reiter="tipps"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5V16h8v-2.5A6 6 0 0 0 12 3z"/></svg>Tipps</button>
+  <button data-reiter="meins"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Meins</button>
+</div></nav>
+
+<script>
+"use strict";
+const D = { produkte: [], themen: [], gruppen: [], tipps: [] };
+const P = {}, T = {};
+const MEIN = { favoriten: [], vorrat: {}, alias: {}, notizen: {} };
+let db = null;
+const zustand = { reiter: "start", stapel: [], kat: "alle", tippArt: "alle", nurVorrat: false, anw: {}, offen: {} };
+// Farben je Produktart (Kopf, Fläschchen) — feste Werte, sie stehen auf weisser Schrift in beiden Themen
+const FARBE = { "Einzelöl": "#12828c", "Mischung": "#29556d", "Touch / Roll-on": "#3f8f97", "Nahrungsergänzung": "#c96f22",
+  "Körperpflege": "#a86450", "Kinder": "#b98a2c", "Kit / Kollektion": "#5f6f80", "Zubehör / Diffuser": "#6d7d62", "Haushalt": "#557a52", "Sonstiges": "#777" };
+// Anwendungsarten mit Zeichen und Farbe — die Reiter auf der Produktseite
+const ART = { "aromatisch": ["Duft", "≋", "#12828c"], "äusserlich": ["Haut", "✋", "#c96f22"], "innerlich": ["Einnahme", "◉", "#29556d"],
+  "Emotion": ["Emotion", "♡", "#8a4f7d"], "Kinder": ["Kinder", "☺", "#b98a2c"], "Haushalt": ["Haushalt", "⌂", "#557a52"] };
+const GRUPPE = { "Erkältungszeit": ["❄", "#29556d"], "Körper": ["◍", "#12828c"], "Haut": ["✿", "#a86450"], "Gemüt": ["☾", "#6a4f86"],
+  "Frau & Hormone": ["♀", "#9a4f6d"], "Kinder": ["☺", "#b98a2c"], "Ernährung": ["❦", "#557a52"], "Zuhause": ["⌂", "#5f6f80"] };
+
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const norm = (s) => String(s ?? "").toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").replace(/ō/g, "o");
+const anzeigeName = (p) => MEIN.alias[p.id] || p.name;
+const farbe = (p) => FARBE[p?.kategorie] || "#777";
+
+// Ein Fläschchen in der Farbe der Produktart — Kapseln und Pflege bekommen eine eigene Form
+function flasche(p, gross, hell) {
+  // hell: auf dem farbigen Kopf — sonst verschwindet das Fläschchen in seiner eigenen Farbe
+  const f = hell ? "#fbf8f0" : farbe(p), k = p?.kategorie || "";
+  const form = k === "Nahrungsergänzung"
+    ? `<rect x="11" y="16" width="26" height="36" rx="5" fill="${f}"/><rect x="13" y="8" width="22" height="9" rx="2" fill="#f1ecdd" stroke="${f}" stroke-width="2"/>`
+    : k === "Körperpflege"
+    ? `<rect x="12" y="18" width="24" height="34" rx="10" fill="${f}"/><rect x="19" y="6" width="10" height="13" rx="2" fill="#f1ecdd" stroke="${f}" stroke-width="2"/>`
+    : k === "Touch / Roll-on"
+    ? `<rect x="16" y="20" width="16" height="32" rx="4" fill="${f}"/><circle cx="24" cy="15" r="6" fill="#f1ecdd" stroke="${f}" stroke-width="2"/>`
+    : `<path d="M17 16h14v5c4 2 6 5 6 9v19a3 3 0 0 1-3 3H14a3 3 0 0 1-3-3V30c0-4 2-7 6-9z" fill="${f}"/><rect x="17" y="5" width="14" height="12" rx="2" fill="#f1ecdd" stroke="${f}" stroke-width="2"/>`;
+  const etikett = hell ? farbe(p) : "#fff";
+  return `<span class="flasche" aria-hidden="true"><svg viewBox="0 0 48 56">${form.replace(/fill="#f1ecdd"/g, `fill="${hell ? farbe(p) : "#f1ecdd"}"`)}<rect x="15" y="33" width="18" height="10" rx="2" fill="${etikett}" opacity="${gross ? .95 : .85}"/></svg></span>`;
+}
+
+// ---------- Speichern: Datenbank, sonst nur dieses Gerät ----------
+function lokalLesen() { try { const x = JSON.parse(localStorage.getItem("oel-mein") || "null"); if (x) Object.assign(MEIN, x); } catch {} }
+function lokalSchreiben() { try { localStorage.setItem("oel-mein", JSON.stringify(MEIN)); } catch {} }
+const warte = {};
+function speichern(feld, schluessel) {
+  lokalSchreiben();
+  if (!db) return;
+  const k = feld + (schluessel ? ":" + schluessel : "");
+  clearTimeout(warte[k]);
+  warte[k] = setTimeout(async () => {
+    try {
+      if (feld === "notizen") {
+        const ref = db.doc("notiz--" + schluessel.replace(":", "--"));
+        const text = MEIN.notizen[schluessel] || "";
+        if (text) await ref.set({ text, stand: new Date().toISOString() }); else await ref.delete();
+      } else {
+        await db.doc("mein--" + feld).set({ wert: JSON.parse(JSON.stringify(MEIN[feld])) });
+      }
+    } catch (e) { console.warn("Nicht gespeichert:", e); }
+  }, 600);
+}
+async function datenbankLaden() {
+  try {
+    // Jede Person bekommt ihren eigenen, privaten Bereich — Kundinnen sehen nie Patricias Notizen und umgekehrt.
+    const [datenbank, user] = await Promise.all([claude.use("db"), claude.use("user")]);
+    if (!datenbank || !user) return;
+    db = datenbank.collection("data/users/" + await user.id());
+    const alle = await db.get();
+    alle.docs.forEach((d) => {
+      const x = JSON.parse(JSON.stringify(d.data() || {}));
+      if (d.id.startsWith("mein--")) { const f = d.id.slice(6); if (f in MEIN && x.wert) MEIN[f] = x.wert; }
+      else if (d.id.startsWith("notiz--") && x.text) MEIN.notizen[d.id.slice(7).replace("--", ":")] = x.text;
+    });
+    lokalSchreiben();
+    zeichnen();
+  } catch (e) { console.warn("Datenbank nicht erreichbar, es bleibt auf diesem Gerät:", e); db = null; }
+}
+
+// ---------- Laden ----------
+async function laden() {
+  lokalLesen();
+  try {
+    const [pr, th, ti, re] = await Promise.all(["produkte", "themen", "tipps", "rezepte"].map((n) => fetch("daten/" + n + ".json").then((r) => r.json())));
+    D.produkte = pr; D.themen = th.themen; D.gruppen = th.gruppen; D.tipps = ti;
+    D.rezepte = re.map((r, i) => Object.assign(r, { nr: i, art: rezeptArt(r) }));
+  } catch (e) { $("#inhalt").innerHTML = '<p class="leer-zustand">Die Daten liessen sich nicht laden. Seite neu öffnen.</p>'; return; }
+  D.produkte.forEach((p) => P[p.id] = p);
+  D.themen.forEach((t) => T[t.id] = t);
+  D.tippsJe = {};
+  D.tipps.forEach((t) => {
+    t.produkte.forEach((x) => { if (x.id) (D.tippsJe["p:" + x.id] ||= []).push(t); });
+    t.themen.forEach((i) => (D.tippsJe["t:" + i] ||= []).push(t));
+  });
+  D.kategorien = [...new Set(D.produkte.map((p) => p.kategorie))];
+  D.tippArten = [...new Set(D.tipps.map((t) => t.art))];
+  zeichnen();
+  datenbankLaden();
+}
+
+// ---------- Navigation ----------
+function oeffne(art, id) { zustand.stapel.push({ art, id, y: scrollY }); zeichnen(); scrollTo(0, 0); }
+function zurueck() { const s = zustand.stapel.pop(); zeichnen(); if (s) scrollTo(0, s.y || 0); }
+function reiterWechseln(r) {
+  zustand.reiter = r; zustand.stapel = []; $("#suche").value = "";
+  document.querySelectorAll("nav.unten button").forEach((x) => x.dataset.reiter === r ? x.setAttribute("aria-current", "page") : x.removeAttribute("aria-current"));
+  zeichnen(); scrollTo(0, 0);
+}
+document.querySelectorAll("nav.unten button").forEach((b) => b.addEventListener("click", () => reiterWechseln(b.dataset.reiter)));
+$("#zurueck").addEventListener("click", zurueck);
+$("#suche").addEventListener("input", () => { zustand.stapel = []; zeichnen(); });
+document.addEventListener("click", (e) => {
+  const z = e.target.closest("[data-oeffne]");
+  if (z) { const [art, id] = z.dataset.oeffne.split("|"); oeffne(art, id); return; }
+  const s = e.target.closest("[data-suche]");
+  if (s) { $("#suche").value = s.dataset.suche; zustand.stapel = []; zeichnen(); scrollTo(0, 0); return; }
+  const g = e.target.closest("[data-gruppe]");
+  if (g) { reiterWechseln("themen"); requestAnimationFrame(() => document.getElementById("g-" + g.dataset.gruppe)?.scrollIntoView({ block: "start" })); return; }
+  const a = e.target.closest("[data-anw]");
+  if (a) { zustand.anw[a.dataset.id] = a.dataset.anw; zeichnen(); return; }
+  const m = e.target.closest("[data-mehr]");
+  if (m) { zustand.offen[m.dataset.mehr] = true; zeichnen(); }
+});
+
+function zeichnen() {
+  const oben = zustand.stapel[zustand.stapel.length - 1];
+  $("#zurueck").hidden = !oben;
+  const q = $("#suche").value.trim();
+  let html;
+  if (oben) html = oben.art === "p" ? produktSeite(P[oben.id]) : oben.art === "t" ? themaSeite(T[oben.id]) : oben.art === "m" ? mischSeite() : oben.art === "b" ? businessSeite() : tippSeite(oben.id);
+  else if (q) html = suchSeite(q);
+  else html = { start: startSeite, produkte: produktListe, themen: themenListe, tipps: tippListe, meins: meinsSeite }[zustand.reiter]();
+  $("#titel").textContent = oben ? (oben.art === "p" ? anzeigeName(P[oben.id] || {}) : oben.art === "t" ? (T[oben.id] || {}).name : oben.art === "m" ? "Was mische ich heute?" : oben.art === "b" ? "Mehr aus deinen Ölen" : "Tipp") : "Öl-Kompass";
+  $("#inhalt").innerHTML = html;
+  verdrahten();
+}
+
+// ---------- Bausteine ----------
+// Echtes Produktfoto, wo eines da ist (fotos-bauen.py) — sonst das gezeichnete Fläschchen
+const bild = (p, klasse) => p.foto ? `<img class="${klasse}" src="${esc(p.foto)}" alt="" loading="lazy">` : "";
+function produktZeile(p) {
+  const n = MEIN.vorrat[p.id] || 0, fav = MEIN.favoriten.includes(p.id);
+  return `<button class="zeile" data-oeffne="p|${esc(p.id)}">${bild(p, "mini-foto") || flasche(p)}
+    <span class="zeile-text"><span class="zeile-titel">${esc(anzeigeName(p))}</span>
+    <span class="zeile-unter">${esc(p.kurz || [p.deutsch, p.kategorie].filter(Boolean).join(" · "))}</span></span>
+    <span class="marke">${fav ? `<span class="herz">♥</span>` : ""}${n ? `<span class="pille">${n}× da</span>` : ""}</span></button>`;
+}
+function oelKarte(p) {
+  return `<button class="oelkarte${p.foto ? " mit-foto" : ""}" data-oeffne="p|${esc(p.id)}">${bild(p, "karten-foto") || flasche(p, true)}<b>${esc(anzeigeName(p))}</b><span>${esc(p.deutsch || "")}</span></button>`;
+}
+function themaZeile(t) {
+  const [z, f] = GRUPPE[t.gruppe] || ["•", "#12828c"];
+  const da = (t.empfehlungen || []).filter((e) => e.id && MEIN.vorrat[e.id]).length;
+  return `<button class="zeile" data-oeffne="t|${esc(t.id)}"><span class="flasche" style="display:grid;place-items:center;border-radius:12px;background:${f};color:#fff;font-size:1.3rem;width:40px;height:40px">${z}</span>
+    <span class="zeile-text"><span class="zeile-titel">${esc(t.name)}</span>
+    <span class="zeile-unter">${esc((t.empfehlungen || []).slice(0, 5).map((e) => e.produkt).join(" · "))}</span></span>
+    <span class="marke">${da ? `<span class="pille">${da} im Vorrat</span>` : ""}</span></button>`;
+}
+function tippKarte(t, kurz, extra) {
+  const lang = kurz && t.text.length > 280;
+  const text = lang ? t.text.slice(0, 260).replace(/\s\S*$/, "") + " …" : t.text;
+  return `<article class="tipp ${extra || ""}"><div class="tipp-kopf"><span class="pille">${esc(t.art)}</span><span class="quelle">${esc(t.chat || "")}</span></div>
+    <h4>${esc(t.titel)}</h4>
+    ${t.zutaten?.length ? `<ul>${t.zutaten.map((z) => `<li>${esc(z)}</li>`).join("")}</ul>` : ""}
+    <p>${esc(text)}</p>
+    ${lang ? `<button class="mehr" data-oeffne="x|${esc(t.id)}">Ganzer Tipp ›</button>` : ""}
+    ${t.produkte.length ? `<div class="verweise" style="margin-top:6px">${t.produkte.map(verweisP).join("")}</div>` : ""}</article>`;
+}
+function verweisP(x) {
+  return x.id && P[x.id] ? `<button class="verweis${MEIN.vorrat[x.id] ? " da" : ""}" data-oeffne="p|${esc(x.id)}">${esc(anzeigeName(P[x.id]))}</button>`
+    : `<button class="verweis leer" data-suche="${esc(x.n)}">${esc(x.n)}</button>`;
+}
+function verweisT(x) {
+  return x.id && T[x.id] ? `<button class="verweis" data-oeffne="t|${esc(x.id)}">${esc(x.n || T[x.id].name)}</button>`
+    : `<button class="verweis leer" data-suche="${esc(x.n)}">${esc(x.n)}</button>`;
+}
+const liste = (a) => a?.length ? `<ul>${a.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "";
+function rezepte(r, titel) {
+  return r.length ? `<section class="karte"><h3>${esc(titel || "Rezepte & Mischungen")}<small>${r.length} · wischen ›</small></h3><div class="rezepte">${r.map((x) =>
+    `<div class="rezept"><b>${esc(x.titel)}</b>${liste(x.zutaten)}<p>${esc(x.anleitung)}</p><span class="quelle">${esc(x.quelle)}</span></div>`).join("")}</div></section>` : "";
+}
+function buecher(b) {
+  return b.length ? `<details class="karte"><summary>📖 Was die Bücher sagen<small style="font:400 .8rem var(--lese);color:var(--leise)">${b.length}</small></summary>${b.map((x) =>
+    `<div class="buchstelle"><p>${esc(x.kern)}</p><span class="quelle">${esc(x.quelle)}${x.wo ? ", " + esc(x.wo) : ""}</span></div>`).join("")}</details>` : "";
+}
+function gruppenTipps(ts) {
+  return ts.length ? `<details class="karte"><summary>💬 Aus den Gruppen<small style="font:400 .8rem var(--lese);color:var(--leise)">${ts.length}</small></summary>${ts.slice(0, 60).map((t) => tippKarte(t, true)).join("")}</details>` : "";
+}
+function notizFeld(schluessel) {
+  return `<section class="karte"><h3>✎ Meine Notiz</h3>
+    <textarea id="notiz-${esc(schluessel)}" data-notiz="${esc(schluessel)}" placeholder="Was du selbst erlebt hast, wie du es anwendest …">${esc(MEIN.notizen[schluessel] || "")}</textarea>
+    <span class="gespeichert">${db ? "Wird gespeichert, auf all deinen Geräten." : "Wird auf diesem Gerät gespeichert."}</span></section>`;
+}
+function verdrahten() {
+  document.querySelectorAll("[data-notiz]").forEach((f) => f.addEventListener("input", () => { MEIN.notizen[f.dataset.notiz] = f.value; speichern("notizen", f.dataset.notiz); }));
+  document.querySelectorAll("[data-kat]").forEach((b) => b.addEventListener("click", () => { zustand.kat = b.dataset.kat; zeichnen(); }));
+  document.querySelectorAll("[data-tippart]").forEach((b) => b.addEventListener("click", () => { zustand.tippArt = b.dataset.tippart; zeichnen(); }));
+  const fav = $("#fav"); if (fav) fav.addEventListener("click", () => {
+    const id = fav.dataset.id, i = MEIN.favoriten.indexOf(id);
+    i < 0 ? MEIN.favoriten.push(id) : MEIN.favoriten.splice(i, 1); speichern("favoriten"); zeichnen(); });
+  document.querySelectorAll("[data-vorrat]").forEach((b) => b.addEventListener("click", () => {
+    const id = b.dataset.id; MEIN.vorrat[id] = Math.max(0, (MEIN.vorrat[id] || 0) + Number(b.dataset.vorrat));
+    if (!MEIN.vorrat[id]) delete MEIN.vorrat[id]; speichern("vorrat"); zeichnen(); }));
+  const al = $("#alias"); if (al) al.addEventListener("change", () => {
+    const v = al.value.trim(); if (v) MEIN.alias[al.dataset.id] = v; else delete MEIN.alias[al.dataset.id]; speichern("alias"); zeichnen(); });
+  const nv = $("#nurvorrat"); if (nv) nv.addEventListener("click", () => { zustand.nurVorrat = !zustand.nurVorrat; zeichnen(); });
+  // Vollständiges Wissen je Produkt (wissen-ausziehen.py) — erst beim Aufklappen geladen
+  const al2 = $("#alles"); if (al2) al2.addEventListener("toggle", async () => {
+    if (!al2.open || al2.dataset.geladen) return;
+    al2.dataset.geladen = "1";
+    try {
+      const liste = await fetch("daten/wissen/" + al2.dataset.id + ".json").then((r) => r.json());
+      const je = {}; liste.forEach((x) => (je[x.art] ||= []).push(x));
+      const reihe = ["aromatisch", "äusserlich", "innerlich", "Kinder", "Emotion", "Haushalt", "Sicherheit", "Hintergrund"];
+      al2.querySelector(".hinweis").outerHTML = reihe.filter((a) => je[a]).map((a) => {
+        const [n, z] = ART[a] || [a === "Sicherheit" ? "Sicherheit" : "Hintergrund", a === "Sicherheit" ? "⚠" : "◇"];
+        return `<h4 style="margin:12px 0 6px">${z} ${esc(n)} <small class="quelle">${je[a].length}</small></h4>` +
+          je[a].map((x) => `<div class="buchstelle"><p>${esc(x.text)}</p><span class="quelle">${esc(x.quelle)}${x.wo ? ", " + esc(x.wo) : ""}</span></div>`).join("");
+      }).join("");
+    } catch { al2.querySelector(".hinweis").textContent = "Konnte nicht geladen werden. Seite neu öffnen."; }
+  });
+  const kk = $("#kaffee-kopieren"); if (kk) kk.addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText("Kaffee ☕ – ich bin neugierig, wie du das mit deinen Ölen machst."); $("#kaffee-ok").textContent = "Kopiert, jetzt einfach in den Chat einfügen."; }
+    catch { $("#kaffee-ok").textContent = "Kopieren ging nicht. Schreib mir einfach „Kaffee“."; } });
+  const ok = $("#hinweis-ok"); if (ok) ok.addEventListener("click", () => { try { localStorage.setItem("oel-hinweis", "1"); } catch {} zeichnen(); });
+  document.querySelectorAll("[data-misch]").forEach((b) => b.addEventListener("click", () => { zustand.misch = b.dataset.misch; zeichnen(); }));
+  document.querySelectorAll("[data-mischart]").forEach((b) => b.addEventListener("click", () => { zustand.mischArt = b.dataset.mischart; zeichnen(); }));
+}
+
+// ---------- Was mische ich heute? ----------
+// Wofür ein Rezept ist, wird aus Titel und Anleitung gelesen — die Unterlagen haben dafür kein Feld
+const MISCHARTEN = [["Diffuser", /diffus|vernebel|raumduft|duftlampe/i], ["Roller", /roll|10 ?ml/i],
+  ["Küche & Trinken", /trink|wasser|tee\b|smoothie|essen|kochen|backen|salat|suppe|dessert|kuchen|sirup|honig|glas|getränk/i],
+  ["Haut & Bad", /haut|creme|balsam|salbe|lotion|massage|bad\b|badesalz|peeling|gesicht|lippen|haar|deo|körperöl|butter/i],
+  ["Haushalt", /putz|reinig|wäsche|waesche|spül|oberfläch|boden|fenster|küchenspray|desinfiz/i]];
+function rezeptArt(r) { const s = r.titel + " " + r.anleitung; return (MISCHARTEN.find(([, rx]) => rx.test(s)) || ["Sonstiges"])[0]; }
+function rezeptStand(r) {
+  const fehlt = r.oele.filter((i) => !MEIN.vorrat[i]);
+  return { fehlt, offen: r.unbekannt.length, alles: !fehlt.length && !r.unbekannt.length, eins: fehlt.length + r.unbekannt.length === 1 };
+}
+function mischZahlen() {
+  let alles = 0, eins = 0;
+  D.rezepte.forEach((r) => { const s = rezeptStand(r); if (s.alles) alles++; else if (s.eins) eins++; });
+  return { alles, eins };
+}
+function rezeptKarte(r) {
+  const s = rezeptStand(r), offen = zustand.offen["r" + r.nr];
+  const zeile = ([t, ids, unbek]) => {
+    const fehlt = ids.filter((i) => !MEIN.vorrat[i]);
+    const zeichen = unbek ? `<span class="z-zeichen frage" title="Nicht zugeordnet">?</span>`
+      : !ids.length ? `<span class="z-zeichen"></span>`
+      : fehlt.length ? `<span class="z-zeichen fehlt" title="Nicht im Vorrat">✕</span>` : `<span class="z-zeichen da" title="Im Vorrat">✓</span>`;
+    const link = ids.length === 1 && P[ids[0]] ? ` data-oeffne="p|${esc(ids[0])}"` : "";
+    return `<li${link} class="${fehlt.length || unbek ? "z-fehlt" : ""}${link ? " z-link" : ""}">${zeichen}<span>${esc(t)}</span></li>`;
+  };
+  const [vart, vid] = r.von.split("|");
+  const lang = r.anleitung.length > 220;
+  return `<article class="mischkarte ${s.alles ? "ok" : ""}">
+    <div class="tipp-kopf"><span class="pille">${esc(r.art)}</span>${s.alles ? `<span class="pille" style="background:var(--petrol);color:#fff">alles da</span>`
+      : s.eins ? `<span class="pille" style="background:var(--orange-hell);color:var(--orange)">fehlt: ${esc(s.fehlt.length ? anzeigeName(P[s.fehlt[0]] || { name: s.fehlt[0] }) : "1 Zutat")}</span>` : ""}</div>
+    <h4>${esc(r.titel)}</h4>
+    <ul class="zutaten">${r.zeilen.map(zeile).join("")}</ul>
+    ${r.anleitung ? `<p class="${lang && !offen ? "geklemmt" : ""}">${esc(r.anleitung)}</p>${lang && !offen ? `<button class="mehr" data-mehr="r${r.nr}">Ganze Anleitung ›</button>` : ""}` : ""}
+    <span class="quelle">${esc(r.quelle)}${vart !== "x" && (P[vid] || T[vid]) ? ` · <button class="mehr" data-oeffne="${esc(r.von)}">${esc(vart === "p" ? anzeigeName(P[vid]) : T[vid].name)} ›</button>` : vart === "x" ? ` · <button class="mehr" data-oeffne="x|${esc(vid)}">Ganzer Tipp ›</button>` : ""}</span>
+  </article>`;
+}
+function mischSeite() {
+  const vorrat = Object.keys(MEIN.vorrat).length;
+  if (!vorrat) return `<section class="begruessung"><h2>Erst den Vorrat eintragen</h2><p>Öffne ein Produkt und tippe auf +, für jede Flasche, die du zuhause hast. Dann zeige ich dir hier alle Rezepte, für die du alles da hast.</p></section>
+    <div style="margin-top:12px"><button class="chip" aria-pressed="true" onclick="document.querySelector('[data-reiter=produkte]').click()">Zu den Produkten ›</button></div>`;
+  const modus = zustand.misch || "alles", art = zustand.mischArt || "alle";
+  const passend = D.rezepte.filter((r) => { const s = rezeptStand(r); return modus === "alles" ? s.alles : s.eins; });
+  const arten = [...new Set(passend.map((r) => r.art))];
+  const zeigen = passend.filter((r) => art === "alle" || r.art === art);
+  // „fehlt nur eins“: welche Flasche würde am meisten Rezepte freischalten?
+  let tipp = "";
+  if (modus === "eins") {
+    const z = {}; passend.forEach((r) => rezeptStand(r).fehlt.forEach((i) => z[i] = (z[i] || 0) + 1));
+    const top = Object.entries(z).sort((a, b) => b[1] - a[1]).slice(0, 5).filter(([i]) => P[i]);
+    if (top.length) tipp = `<section class="karte" style="margin-top:0"><h3>Diese Flaschen würden am meisten freischalten</h3><div class="verweise">${top.map(([i, n]) =>
+      `<button class="verweis" data-oeffne="p|${esc(i)}">${esc(anzeigeName(P[i]))} · ${n} Rezepte</button>`).join("")}</div></section>`;
+  }
+  const { alles, eins } = mischZahlen();
+  return `<div class="chips"><button class="chip" data-misch="alles" aria-pressed="${modus === "alles"}">✓ Alles da · ${alles}</button>
+    <button class="chip" data-misch="eins" aria-pressed="${modus === "eins"}">Fehlt nur eins · ${eins}</button></div>
+    ${arten.length > 1 ? `<div class="chips"><button class="chip" data-mischart="alle" aria-pressed="${art === "alle"}">Alle</button>${arten.map((a) =>
+      `<button class="chip" data-mischart="${esc(a)}" aria-pressed="${art === a}">${esc(a)}</button>`).join("")}</div>` : ""}
+    ${tipp}
+    <p class="zaehler">${zeigen.length} Rezepte mit deinen ${vorrat} Produkten im Vorrat${zeigen.length > 120 ? " · die ersten 120" : ""}</p>
+    ${zeigen.length ? `<div class="tipps-raster">${zeigen.slice(0, 120).map(rezeptKarte).join("")}</div>`
+      : `<p class="leer-zustand">${modus === "alles" ? "Mit deinem Vorrat geht noch kein ganzes Rezept. Schau bei „Fehlt nur eins“." : "Nichts gefunden."}</p>`}`;
+}
+
+// ---------- Hinweis: ein Nachschlagewerk, gelesen wie ein Buch ----------
+const HINWEIS_KURZ = "Ein Nachschlagewerk wie ein Buch: Es gibt wieder, was in Büchern, Kursunterlagen und Austauschgruppen steht. Kein ärztlicher Rat, Anwendung auf eigene Verantwortung.";
+const HINWEIS_LANG = `<p>Der Öl-Kompass ist eine Sammlung zum Nachlesen, so wie du zuhause ein Buch über ätherische Öle aufschlägst.
+  Er gibt wieder, was in Fachbüchern, Kursunterlagen, Heften und Erfahrungsberichten aus Austauschgruppen steht. Die Aussagen gehören den genannten Quellen, nicht doTERRA und nicht mir.</p>
+  <p>Er ersetzt keine ärztliche Beratung, Diagnose oder Behandlung. Bei Beschwerden, in der Schwangerschaft und Stillzeit, bei Babys und Kindern, bei Vorerkrankungen oder wenn du Medikamente nimmst, frag zuerst deine Ärztin oder deinen Arzt.</p>
+  <p>Ätherische Öle sind stark konzentriert: verdünnt anwenden, nicht in Augen und Ohren, ausser Reichweite von Kindern aufbewahren, und innerlich nur, was ausdrücklich dafür gekennzeichnet ist. Die Anwendung geschieht auf eigene Verantwortung; ich übernehme keine Haftung.</p>`;
+function hinweisErstmals() {
+  let gesehen = false;
+  try { gesehen = localStorage.getItem("oel-hinweis") === "1"; } catch {}
+  return gesehen ? "" : `<section class="karte hinweis-karte" style="margin-top:0"><h3>Bevor du liest</h3>${HINWEIS_LANG}
+    <button class="chip" aria-pressed="true" id="hinweis-ok">Verstanden</button></section>`;
+}
+const hinweisFuss = () => `<p class="quelle hinweis-fuss">${esc(HINWEIS_KURZ)}</p>`;
+
+// ---------- Mehr aus deinen Ölen machen — der leise Business-Bereich für Treuekundinnen ----------
+// Gerüst aus context/doTERRA/business-wege.json (die drei Pfade). Bewusst wenig: Neugier wecken, nichts versprechen,
+// keine Zahlen zu Einkommen. Der nächste Schritt ist immer ein Gespräch mit Patricia, kein Formular.
+const PFADE = [
+  { zeichen: "♡", titel: "Einfach geniessen", text: "Du nutzt deine Öle, bestellst über das Treueprogramm und erzählst Freundinnen davon, wenn sie fragen. Mehr braucht es nicht, und genau so machen es die meisten." },
+  { zeichen: "↻", titel: "Deine Öle bezahlt bekommen", text: "Wenn Freundinnen über dich bestellen, kann sich das in Produkte für dich verwandeln. Manche Frauen decken so ihre eigene Monatsbestellung. Wie das genau geht, zeige ich dir gern." },
+  { zeichen: "✦", titel: "Etwas Eigenes daraus machen", text: "Ein paar Stunden pro Woche, von zuhause aus, mit Menschen, die dir wichtig sind. Ob das zu dir passt, finden wir am besten in einem Gespräch heraus." },
+];
+function businessSeite() {
+  return `<section class="begruessung" style="background:linear-gradient(135deg,#c96f22,#dc822e)"><h2>Mehr aus deinen Ölen machen</h2>
+      <p>Du nutzt deine Öle schon. Vielleicht fragst du dich manchmal, wie andere das machen, die Öle-Abende geben oder ihre Bestellung nicht mehr selbst bezahlen. Hier ist der Überblick, ganz ohne Verpflichtung.</p></section>
+    <h2 class="titel2">Drei Wege, wie Frauen mit ihren Ölen leben</h2>
+    <div class="liste">${PFADE.map((p) => `<div class="zeile" style="cursor:default;align-items:flex-start"><span class="flasche" style="display:grid;place-items:center;border-radius:12px;background:var(--orange-hell);color:var(--orange);font-size:1.3rem;width:40px;height:40px">${p.zeichen}</span>
+      <span class="zeile-text"><span class="zeile-titel">${esc(p.titel)}</span><span style="display:block;font-size:.92rem;color:var(--leise)">${esc(p.text)}</span></span></div>`).join("")}</div>
+    <section class="karte"><h3>Das Treueprogramm, kurz erklärt</h3>
+      <ul><li>Eine monatliche Bestellung, die du jederzeit anpassen oder verschieben kannst.</li>
+      <li>Ab 50 Punkten sammelst du Treuepunkte, die du gegen Produkte eintauschen kannst.</li>
+      <li>Ab 125 Punkten bekommst du jeden Monat das Produkt des Monats geschenkt.</li></ul>
+      <p class="quelle">Laut doTERRA-Produktkatalog Europa. Was das für dich konkret heisst, rechne ich dir gern vor.</p></section>
+    <section class="karte"><h3>Ein Öle-Abend bei dir zuhause</h3>
+      <p>Ein paar Freundinnen, ein Tee, und ich bringe die Öle mit. Wir riechen, mischen einen Roller zum Mitnehmen und reden darüber, wie die Öle in den Familienalltag passen. Kein Vorwissen nötig.</p></section>
+    <section class="karte" style="background:var(--petrol-hell);border-color:transparent"><h3>Neugierig?</h3>
+      <p>Schreib mir einfach <b>„Kaffee“</b>, per WhatsApp oder Telegram. Dann trinken wir einen, live oder am Telefon, 15 Minuten, und du stellst alle Fragen, die du hast. Danach entscheidest du, ob und wie es weitergeht, und auch „nein, danke“ ist eine gute Antwort.</p>
+      <button class="chip" aria-pressed="true" id="kaffee-kopieren">Text „Kaffee“ kopieren</button> <span class="quelle" id="kaffee-ok"></span></section>`;
+}
+
+// ---------- Seiten ----------
+function startSeite() {
+  const zufall = D.tipps.length ? D.tipps[(new Date().getDate() * 37 + new Date().getMonth() * 11) % D.tipps.length] : null;
+  const vorrat = Object.keys(MEIN.vorrat).length;
+  const basis = ["lavender", "lemon", "peppermint", "tea-tree", "oregano", "frankincense", "deep-blue", "zengest", "on-guard", "air"].filter((i) => P[i]);
+  const favs = MEIN.favoriten.map((i) => P[i]).filter(Boolean);
+  const mz = vorrat ? mischZahlen() : null;
+  return `${hinweisErstmals()}<section class="begruessung"><h2>Was brauchst du heute?</h2><p>Such oben nach einem Öl, einem Anliegen oder einer Zutat.</p>
+    <div class="zahlen"><span><b>${D.produkte.length}</b>Produkte</span><span><b>${D.themen.length}</b>Themen</span><span><b>${D.tipps.length.toLocaleString("de-CH")}</b>Tipps</span>${vorrat ? `<span><b>${vorrat}</b>im Vorrat</span>` : ""}</div></section>
+    <button class="mischen-knopf" data-oeffne="m|">
+      <span class="zeichen">⚗</span><span><b>Was mische ich heute?</b><br>${mz ? `${mz.alles} Rezepte gehen mit deinem Vorrat, bei ${mz.eins} fehlt nur eine Flasche` : `${D.rezepte.length.toLocaleString("de-CH")} Rezepte — trag deinen Vorrat ein, dann zeige ich dir, was geht`}</span><span>›</span></button>
+    <h2 class="titel2">Nach Anliegen</h2>
+    <div class="kacheln">${D.gruppen.map((g) => { const [z, f] = GRUPPE[g] || ["•", "#12828c"]; const n = D.themen.filter((t) => t.gruppe === g).length;
+      return n ? `<button class="kachel" data-gruppe="${esc(g)}" style="background:${f}"><span class="zeichen">${z}</span><span><b>${esc(g)}</b><br>${n} Themen</span></button>` : ""; }).join("")}</div>
+    ${favs.length ? `<h2 class="titel2">Deine Favoriten</h2><div class="karussell">${favs.map(oelKarte).join("")}</div>` : ""}
+    <h2 class="titel2">Die zehn Basisöle</h2><div class="karussell">${basis.map((i) => oelKarte(P[i])).join("")}</div>
+    ${zufall ? `<h2 class="titel2">Tipp des Tages</h2>${tippKarte(zufall, true, "tipp-des-tages")}` : ""}
+    <button class="mischen-knopf" data-oeffne="b|" style="margin-top:22px;background:var(--petrol-hell)">
+      <span class="zeichen" style="color:var(--petrol)">✦</span><span><b>Mehr aus deinen Ölen machen</b><br>Treueprogramm, Öle-Abend und wie andere Frauen ihre Bestellung bezahlt bekommen</span><span style="color:var(--petrol)">›</span></button>`;
+}
+function produktListe() {
+  let ps = D.produkte.filter((p) => zustand.kat === "alle" || p.kategorie === zustand.kat);
+  if (zustand.nurVorrat) ps = ps.filter((p) => MEIN.vorrat[p.id]);
+  ps.sort((a, b) => anzeigeName(a).localeCompare(anzeigeName(b), "de"));
+  return `<div class="chips"><button class="chip" id="nurvorrat" aria-pressed="${zustand.nurVorrat}">♥ Mein Vorrat</button>
+    <button class="chip" data-kat="alle" aria-pressed="${zustand.kat === "alle"}">Alle</button>
+    ${D.kategorien.map((k) => `<button class="chip" data-kat="${esc(k)}" aria-pressed="${zustand.kat === k}">${esc(k)}</button>`).join("")}</div>
+    <p class="zaehler">${ps.length} Produkte</p>
+    ${ps.length ? `<div class="liste">${ps.map(produktZeile).join("")}</div>` : `<p class="leer-zustand">Hier ist noch nichts. Im Produkt mit + eintragen, was du zuhause hast.</p>`}`;
+}
+function themenListe() {
+  return D.gruppen.map((g) => { const ts = D.themen.filter((t) => t.gruppe === g).sort((a, b) => a.name.localeCompare(b.name, "de"));
+    return ts.length ? `<h2 class="titel2" id="g-${esc(g)}" style="scroll-margin-top:130px">${esc(g)}<small>${ts.length}</small></h2><div class="liste">${ts.map(themaZeile).join("")}</div>` : ""; }).join("");
+}
+function tippListe() {
+  const ts = D.tipps.filter((t) => zustand.tippArt === "alle" || t.art === zustand.tippArt);
+  return `<div class="chips"><button class="chip" data-tippart="alle" aria-pressed="${zustand.tippArt === "alle"}">Alle</button>
+    ${D.tippArten.map((a) => `<button class="chip" data-tippart="${esc(a)}" aria-pressed="${zustand.tippArt === a}">${esc(a)}</button>`).join("")}</div>
+    <p class="zaehler">${ts.length.toLocaleString("de-CH")} Tipps${ts.length > 150 ? " · die ersten 150, den Rest findest du über die Suche" : ""}</p>
+    ${ts.length ? `<div class="tipps-raster">${ts.slice().reverse().slice(0, 150).map((t) => tippKarte(t, true)).join("")}</div>` : `<p class="leer-zustand">Noch keine Tipps aus den Gruppen.</p>`}`;
+}
+function meinsSeite() {
+  const fav = MEIN.favoriten.map((i) => P[i] || T[i]).filter(Boolean);
+  const vorrat = Object.keys(MEIN.vorrat).map((i) => P[i]).filter(Boolean).sort((a, b) => anzeigeName(a).localeCompare(anzeigeName(b), "de"));
+  const notizen = Object.entries(MEIN.notizen).filter(([, v]) => v);
+  return `<h2 class="titel2" style="margin-top:4px">♥ Favoriten<small>${fav.length}</small></h2>
+    ${fav.length ? `<div class="liste">${fav.map((x) => x.kategorie ? produktZeile(x) : themaZeile(x)).join("")}</div>` : `<p class="hinweis">Mit ♡ bei einem Produkt oder Thema merkst du es dir hier.</p>`}
+    <h2 class="titel2">Mein Vorrat<small>${vorrat.reduce((s, p) => s + MEIN.vorrat[p.id], 0)} Flaschen</small></h2>
+    ${vorrat.length ? `<button class="mischen-knopf" data-oeffne="m|" style="margin:0 0 10px"><span class="zeichen">⚗</span><span><b>Was mische ich heute?</b><br>${mischZahlen().alles} Rezepte gehen mit deinem Vorrat</span><span>›</span></button>` : ""}
+    ${vorrat.length ? `<div class="liste">${vorrat.map(produktZeile).join("")}</div>` : `<p class="hinweis">Im Produkt mit + eintragen, wie viele Flaschen du hast. Dann zeigt dir jedes Thema, was davon schon im Schrank steht.</p>`}
+    <h2 class="titel2">✎ Meine Notizen<small>${notizen.length}</small></h2>
+    ${notizen.length ? `<div class="liste">${notizen.map(([k, v]) => { const [art, id] = k.split(":"); const z = art === "p" ? P[id] : T[id];
+      return z ? `<button class="zeile" data-oeffne="${art}|${esc(id)}"><span class="zeile-text"><span class="zeile-titel">${esc(art === "p" ? anzeigeName(z) : z.name)}</span><span class="zeile-unter">${esc(v)}</span></span></button>` : ""; }).join("")}</div>` : `<p class="hinweis">Notizen schreibst du direkt beim Produkt oder Thema.</p>`}
+    <section class="karte"><h3>Wichtiger Hinweis</h3>${HINWEIS_LANG}</section>`;
+}
+
+function anwendungsReiter(p) {
+  const arten = {};
+  (p.anwendungen || []).forEach((a) => (arten[a.art] ||= []).push(a.text));
+  const keys = Object.keys(ART).filter((k) => arten[k]).concat(Object.keys(arten).filter((k) => !ART[k]));
+  if (!keys.length) return "";
+  const akt = keys.includes(zustand.anw[p.id]) ? zustand.anw[p.id] : keys[0];
+  const [, , f] = ART[akt] || ["", "", "#12828c"];
+  return `<section class="karte"><h3>So wendest du es an</h3>
+    <div class="reiter" role="tablist">${keys.map((k) => { const [n, z, c] = ART[k] || [k, "•", "#12828c"];
+      return `<button role="tab" data-anw="${esc(k)}" data-id="${esc(p.id)}" aria-selected="${k === akt}" style="${k === akt ? `background:${c}` : ""}">${z} ${esc(n)} <small>${arten[k].length}</small></button>`; }).join("")}</div>
+    <div class="anwendungen">${arten[akt].map((x) => `<div class="anw" style="border-left-color:${f}">${esc(x)}</div>`).join("")}</div></section>`;
+}
+
+function produktSeite(p) {
+  if (!p) return `<p class="leer-zustand">Dieses Produkt gibt es nicht mehr.</p>`;
+  const n = MEIN.vorrat[p.id] || 0, fav = MEIN.favoriten.includes(p.id);
+  const fakten = [["Pflanze", p.pflanze], ["Duft", p.duft], ["Grösse", p.groesse], ["Hauptbestandteile", (p.hauptbestandteile || []).join(", ")],
+    ["Enthält", (p.inhaltsstoffe || []).join(", ")], ["Verdünnung", p.verduennung]].filter(([, v]) => v);
+  return `<article>
+    <header class="held${p.foto ? " mit-foto" : ""}" style="background:linear-gradient(135deg, ${farbe(p)}, ${farbe(p)}cc)">
+      ${bild(p, "held-foto")}
+      <div class="held-oben">${p.foto ? "" : flasche(p, true, true)}<div style="min-width:0"><span class="art-zeile">${esc(p.kategorie)}</span>
+        <h2>${esc(anzeigeName(p))}</h2><p class="deutsch">${esc([MEIN.alias[p.id] ? p.name : "", p.deutsch].filter(Boolean).join(" · "))}</p></div></div>
+      <div class="held-knoepfe">
+        <button class="hk ${fav ? "an" : ""}" id="fav" data-id="${esc(p.id)}">${fav ? "♥ Favorit" : "♡ Merken"}</button>
+        <span class="vorrat"><button data-vorrat="-1" data-id="${esc(p.id)}" aria-label="Eine Flasche weniger">−</button><span>${n ? n + "× im Vorrat" : "Vorrat"}</span><button data-vorrat="1" data-id="${esc(p.id)}" aria-label="Eine Flasche mehr">+</button></span>
+      </div>
+    </header>
+    ${p.kurz ? `<p class="kurz">${esc(p.kurz)}</p>` : ""}
+    ${p.themen?.length ? `<div class="verweise">${p.themen.map(verweisT).join("")}</div>` : ""}
+    ${anwendungsReiter(p)}
+    ${p.emotion ? `<section class="emotion"><h3>♡ Emotion</h3><p style="margin:0">${esc(p.emotion)}</p></section>` : ""}
+    ${fakten.length ? `<section class="karte"><h3>Steckbrief</h3><div class="steckbrief">${fakten.map(([k, v]) => `<div class="fakt"><span>${k}</span><b>${esc(v)}</b></div>`).join("")}</div></section>` : ""}
+    ${p.sicherheit?.length ? `<section class="karte"><h3>⚠ Sicherheit</h3><div class="sicher">${liste(p.sicherheit)}</div></section>` : ""}
+    ${p.passt_zu?.length ? `<section class="karte"><h3>Passt gut zu</h3><div class="verweise">${p.passt_zu.map(verweisP).join("")}</div></section>` : ""}
+    ${rezepte(p.rezepte || [])}
+    ${gruppenTipps(D.tippsJe["p:" + p.id] || [])}
+    ${buecher(p.aus_den_buechern || [])}
+    ${p.alles_n ? `<details class="karte" id="alles" data-id="${esc(p.id)}"><summary>📚 Alles aus deinen Quellen<small style="font:400 .8rem var(--lese);color:var(--leise)">${p.alles_n}</small></summary><p class="hinweis">Wird geladen …</p></details>` : ""}
+    ${p.katalogtext ? `<details class="karte"><summary>Katalog</summary><p>${esc(p.katalogtext)}</p>${liste(p.punkte)}</details>` : ""}
+    ${notizFeld("p:" + p.id)}
+    <section class="karte"><h3>Mein Name dafür</h3><input class="feld" id="alias" data-id="${esc(p.id)}" value="${esc(MEIN.alias[p.id] || "")}" placeholder="z.B. „Schlafroller“ — so erscheint es dann überall"></section>
+    ${p.quellen?.length ? `<p class="quelle" style="margin-top:14px">Aus ${p.anzahl_stellen} Stellen in: ${esc(p.quellen.join(" · "))}</p>` : ""}
+    ${hinweisFuss()}
+  </article>`;
+}
+function themaSeite(t) {
+  if (!t) return `<p class="leer-zustand">Dieses Thema gibt es nicht mehr.</p>`;
+  const fav = MEIN.favoriten.includes(t.id);
+  const [z, f] = GRUPPE[t.gruppe] || ["•", "#12828c"];
+  const e = t.empfehlungen.slice().sort((a, b) => (MEIN.vorrat[b.id] ? 1 : 0) - (MEIN.vorrat[a.id] ? 1 : 0));
+  const zeigeAlle = zustand.offen["e:" + t.id];
+  return `<article>
+    <header class="held" style="background:linear-gradient(135deg, ${f}, ${f}cc)">
+      <div class="held-oben"><span style="font-size:2.4rem;line-height:1">${z}</span><div style="min-width:0"><span class="art-zeile">${esc(t.gruppe)}</span><h2>${esc(t.name)}</h2>
+      <p class="deutsch">${t.empfehlungen.length} Öle und Produkte · ${t.rezepte.length} Rezepte</p></div></div>
+      <div class="held-knoepfe"><button class="hk ${fav ? "an" : ""}" id="fav" data-id="${esc(t.id)}">${fav ? "♥ Favorit" : "♡ Merken"}</button></div>
+    </header>
+    <p class="kurz${zustand.offen["u:" + t.id] ? "" : " zu"}">${esc(t.ueberblick)}</p>
+    ${!zustand.offen["u:" + t.id] && t.ueberblick.length > 260 ? `<button class="mehr" data-mehr="u:${esc(t.id)}">Weiterlesen ›</button>` : ""}
+    ${e.length ? `<section class="karte"><h3>Was hilft<small>${Object.keys(MEIN.vorrat).length ? "dein Vorrat zuerst" : e.length}</small></h3><div class="empfehlungen">${(zeigeAlle ? e : e.slice(0, 8)).map((x) => {
+      const p = x.id && P[x.id], [an, az, ac] = ART[x.art] || [x.art, "•", "#12828c"];
+      return `<div class="empf"><div class="empf-kopf">${p ? flasche(p) : ""}${p ? `<button data-oeffne="p|${esc(x.id)}">${esc(anzeigeName(p))}</button>` : `<b>${esc(x.produkt)}</b>`}
+        ${x.id && MEIN.vorrat[x.id] ? `<span class="pille">im Vorrat</span>` : ""}</div>
+        <span class="pille" style="background:${ac}22;color:${ac};align-self:flex-start">${az} ${esc(an)}</span>
+        <p>${esc(x.wie)}</p><span class="quelle">${esc(x.quellen.slice(0, 3).join(" · "))}</span></div>`; }).join("")}</div>
+      ${!zeigeAlle && e.length > 8 ? `<button class="mehr" style="margin-top:10px" data-mehr="e:${esc(t.id)}">Alle ${e.length} zeigen ›</button>` : ""}</section>` : ""}
+    ${rezepte(t.rezepte)}
+    ${t.alltag.length ? `<section class="karte"><h3>❦ Ernährung & Alltag</h3>${liste(t.alltag)}</section>` : ""}
+    ${t.emotion ? `<section class="emotion"><h3>♡ Emotion</h3><p style="margin:0">${esc(t.emotion)}</p></section>` : ""}
+    ${t.sicherheit.length ? `<section class="karte"><h3>⚠ Sicherheit</h3><div class="sicher">${liste(t.sicherheit)}</div></section>` : ""}
+    ${gruppenTipps(D.tippsJe["t:" + t.id] || [])}
+    ${buecher(t.aus_den_buechern)}
+    ${notizFeld("t:" + t.id)}
+    <p class="quelle" style="margin-top:14px">Aus ${t.anzahl_stellen} Stellen in: ${esc(t.quellen.join(" · "))}</p>${hinweisFuss()}</article>`;
+}
+function tippSeite(id) { const t = D.tipps.find((x) => x.id === id); return t ? tippKarte(t, false) : ""; }
+
+function suchSeite(q) {
+  const w = norm(q).split(/\s+/).filter(Boolean);
+  const trifft = (s) => { const n = norm(s); return w.every((x) => n.includes(x)); };
+  const ps = D.produkte.filter((p) => trifft([p.name, p.deutsch, MEIN.alias[p.id], p.id, p.kategorie].join(" ")));
+  const ps2 = D.produkte.filter((p) => !ps.includes(p) && trifft([p.kurz, (p.themen || []).map((x) => x.n).join(" "), p.emotion].join(" ")));
+  const ts = D.themen.filter((t) => trifft([t.name, t.gruppe, t.ueberblick].join(" ")));
+  const tips = D.tipps.filter((t) => trifft([t.titel, t.text, t.zutaten.join(" ")].join(" ")));
+  if (!ps.length && !ps2.length && !ts.length && !tips.length) return `<p class="leer-zustand">Nichts gefunden zu „${esc(q)}“. Versuch es mit einem einzelnen Wort.</p>`;
+  return `${ps.length ? `<h2 class="titel2" style="margin-top:4px">Produkte<small>${ps.length}</small></h2><div class="liste">${ps.slice(0, 40).map(produktZeile).join("")}</div>` : ""}
+    ${ts.length ? `<h2 class="titel2">Themen<small>${ts.length}</small></h2><div class="liste">${ts.map(themaZeile).join("")}</div>` : ""}
+    ${ps2.length ? `<h2 class="titel2">Passt auch<small>${ps2.length}</small></h2><div class="liste">${ps2.slice(0, 30).map(produktZeile).join("")}</div>` : ""}
+    ${tips.length ? `<h2 class="titel2">Tipps<small>${tips.length}</small></h2><div class="tipps-raster">${tips.slice(0, 40).map((t) => tippKarte(t, true)).join("")}</div>` : ""}`;
+}
+
+laden();
+</script>

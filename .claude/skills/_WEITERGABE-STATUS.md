@@ -52,6 +52,23 @@ Die Einstufung sagt, wie viel Bereinigung ein Skill braucht, bevor er das Haus v
 Die sieben Skills `chatgpt-ads`, `copywriting`, `facebook-ads`,
 `ki-salespage`, `minikurs-salespage`, `signature-kurs-salespage` und `skill-salespage`
 sind **zugekauftes Fremdmaterial**.
-Ebenso ohne Anleitung: `start` und `shutdown` — sie stammen aus der Ordner-Vorlage
-eines gekauften Claude-Kurses (04.10.2026). Sie bekommen keine Weitergabe-Anleitung — eine
-Weitergabe wäre eine Weiterverteilung fremder Arbeit.
+## 🚨 Die vier Befehle dürfen raus (Klarstellung 21./22.10.2026)
+
+`start` · `shutdown` · `create-plan` · `implement` haben hier bis zum 21.10.2026
+als „keine Weitergabe (Herkunft Kursmaterial)" gestanden. **Das war zu streng
+gelesen** und hat beim Bauen des KI-Kurs-Grundgerüsts gebremst.
+
+Patricias Einwand: *„das ist kein fremdes kursmaterial. ich nutze es ja selbst."*
+Nachgeprüft: Der Text ist in allen vier Fällen auf diesen Workspace geschrieben —
+ihre Dateien, ihre Regeln, ihre eigenen Vorfälle als Warnung. Aus der
+Ordner-Vorlage eines gekauften Kurses stammt die **Idee** eines festen Paars aus
+Start- und Abschlussbefehl, und **eine Idee gehört niemandem**.
+
+Sie liegen deshalb in **entschlackter Fassung** im Kurs-Grundgerüst
+(`scripts/ki-kurs/grundgeruest-bauen.py`): ohne Patricias Dateinamen, ohne Git,
+ohne ihre eigenen Vorfälle. Eine Weitergabe-Anleitung brauchen sie nicht — sie
+sind Teil des Grundgerüsts, das der Kurs sowieso ausliefert.
+
+🚨 **Zwei Fassungen, eine Aussage.** Ändert sich einer der vier Skills hier,
+gehört die Kursfassung nachgezogen — sonst zeigt der Kurs etwas anderes, als
+Patricia selbst benutzt.

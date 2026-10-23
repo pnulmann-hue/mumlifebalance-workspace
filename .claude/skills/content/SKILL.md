@@ -36,7 +36,7 @@ Blogartikel (→ `blog`).
 
 ## Die Säulen
 
-Der Output steht und fällt an fünf Punkten. **Eine Säule schwach = das Ergebnis trägt
+Der Output steht und fällt an diesen Punkten. **Eine Säule schwach = das Ergebnis trägt
 nicht** — dann wird überarbeitet, nicht ausgeliefert.
 
 0. **Die Tagesfrage: Was gebe ich ihr heute mit?** Inspiration · einen krassen Tipp ·
@@ -48,8 +48,11 @@ nicht** — dann wird überarbeitet, nicht ausgeliefert.
 2. **Typ-Mix über die Woche.** Nie zwei Tage hintereinander derselbe Beitragstyp.
 3. **Klarheit in drei Sekunden** — Thema und Welt, nicht nur ein ganzer Satz.
 4. **Keyword als Haupt-CTA.** Mindestens drei Keyword-Beiträge pro Woche, genau eins
-   pro Beitrag.
-5. **Der Beitrags-Check.** Fünf Fragen, eine mit Nein und der Beitrag geht nicht raus —
+   pro Beitrag — **nur am Schluss, nie in Zeile 1**, und im Launch-Monat zum Monatsthema
+   (seit 22.10.2026, siehe „Der Garten“).
+5. **Jeder Beitrag hat eine Rolle** — Aufmerksamkeit, Vertrauen oder Beziehung. Passt er in
+   keine, wird er nicht gebaut.
+6. **Der Beitrags-Check.** Fünf Fragen, eine mit Nein und der Beitrag geht nicht raus —
    auch im Automatik-Lauf nicht.
 
 ---
@@ -95,6 +98,118 @@ im Kreis drehen. **Keine neue Routine:** jede Station hängt an etwas, das schon
 
 **Für die eigenen Kurse** steht derselbe Ablauf in Kundinnen-Sprache mit eigenen Prompts in
 `outputs/produkte/ki-treppe/12-content-kreislauf-kursmaterial.md`.
+
+---
+
+## DER GARTEN — Monatskreislauf, drei Rollen, Mindmap (seit 22.10.2026)
+
+Patricias Entscheid vom 22.10.: *„ich finde das wirklich einen wichtigen teil mit diesem ding und
+das mikrogeschichte muss da auch mitrein.“* Herkunft: Masterclass und Schmetterlingsmethode einer
+Social-Media-Mentorin (gekauft, Zusammenfassung in `context/Kurse/aktuelle kurse/Schmetterlingsmethode/methode.md`,
+Strategie in `outputs/strategie/2026-10-22-content-gesamtstrategie-garten.md`, beides gitignored).
+**Mechanik übernommen, Wortlaut nie.**
+
+**Das Bild:** Wir jagen keine Kundinnen mit dem Netz, wir legen einen Garten an, zu dem sie von selbst
+kommen und am Ende fragen, wie sie mit Patricia arbeiten können. Die **Stadt** bleibt immer gleich
+(*Network-Mama baut sich etwas Eigenes daneben auf, ohne ihr Network aufzugeben*), jeder Launch-Monat
+ist ein **Stadtteil** darin. Social Media ist **Vorqualifizierung**: die Beiträge erledigen Erklären,
+Überzeugen und Einwände, bevor jemand schreibt.
+
+### 0 · Niemand wacht auf und denkt: „Ich sollte KI nutzen.“
+
+Patricia, 22.10.2026: *„ich ertappe mich selber immer wieder dabei, dass ich selbst in die muster
+falle, obwohl ich es ja meinen kunden teache mit dem networkprodukt: niemand liegt nachts wach im bett
+und denkt, ich sollte ätherische öle nutzen. sondern man muss in den beiträgen darüber reden, dass sie
+nachts wach im bett liegt.“*
+
+🚨 **Im Hook und in der Mitte der Mindmap steht nie das Werkzeug** (KI, Instagram, Freebie, Kurs,
+Öle), **sondern der Moment, in dem sie es braucht** — ohne es zu wissen. Nicht „So nutzt du KI für
+deinen Content“, sondern der Abend, an dem sie um elf noch vor dem leeren Feld sitzt. Das Werkzeug
+taucht frühestens in der Mitte des Beitrags auf, das Produkt nur im Aufruf.
+**Prüffrage:** Würde sie diesen Satz um 23 Uhr selbst denken? Wenn darin ein Werkzeug vorkommt: nein.
+
+### 1 · Der Monat als Kreislauf
+
+| Woche | Stufe | Sie soll denken | Was dafür kommt |
+|---|---|---|---|
+| 1 | **Inspiration** | „Da gibt es einen anderen Weg.“ | eigene Geschichte statt Problem vorhalten |
+| 2 | **Entdecken** | „Wenn das gratis ist, was bekomme ich erst bei ihr?“ | viel Mehrwert, Profil zum Durchklicken |
+| 3 | **Community** | „Ich bin nicht die Einzige.“ | Kundinnen-Geschichten (nur belegt), ihre Fragen beantworten, Meinung sagen |
+| 4 | **Schubs** | „Das könnte auch für mich sein.“ | Kundinnen-Fall, die echten Einwände, Kasse offen |
+| danach | **Loyalität** | „Bei ihr frag ich zuerst.“ | Käuferinnen hören vom nächsten Angebot zuerst |
+
+Die echten Einwände für Woche 4 stehen in `context/patricia-interview-2026-10.md` (D3):
+*„nicht noch mehr Geld ausgeben“* · *„schauen, wie weit ich selbst komme“*, dahinter *„es klappt bei mir
+wieder nicht“*. **Im Beitrag geht es nie ums Produkt, sondern ums Thema** (Patricia, 20.10.) —
+das Produkt kommt nur über den Aufruf am Schluss.
+
+**Im Launch-Monat führt jedes Stichwort in den Stadtteil des Monats**, also zum Freebie oder Angebot,
+das zum Monatsthema gehört (Patricia, 22.10.). Ein anderes Stichwort nur, wenn es dorthin führt.
+
+### 2 · Jeder Beitrag hat eine Rolle
+
+| Rolle | je Woche | Was | Schluss |
+|---|---|---|---|
+| **Aufmerksamkeit** | 1 | Meinung, Hot Take, etwas Witziges, „das hab ich auch erlebt“ — holt neue Augen, darf auch mal ausserhalb der Nische sein | **Einordnung**: „Wenn du dich hier wiedererkennst, bleib hier.“ |
+| **Vertrauen** | 2 | Patricias Geschichte, ehrlich, auch die schweren Phasen. Menschen folgen Menschen | Stichwort zum Monat |
+| **Beziehung** | 2 | eine neue Sicht: sie soll die Welt durch Patricias Augen sehen. **Sie ist die Heldin, Patricia die Begleiterin** (Ich als Spiegel trägt, Ich als Beweis 0,56) | Stichwort zum Monat oder offene Frage |
+
+Die 3+2-Regel bleibt: die drei Stichwort-Beiträge sind Vertrauen und Beziehung, die zwei ohne
+Stichwort Aufmerksamkeit plus ein Frage-Beitrag. **Einmal pro Woche** ein Beitrag, der fragt:
+*„Womit kämpfst du gerade? Ich mache ein Video dazu.“*
+🚨 **Passt ein Beitrag in keine Rolle, wird er nicht gebaut.** Mehr posten bringt nicht mehr
+(Juni: 54 Beiträge, Median 155 · Februar: 12, Median 348).
+
+### 3 · Ideen finden: Painpoint in die Mitte, drei Striche — als Mikrogeschichte
+
+1. **In die Mitte** kommt ein Gedanke um 23 Uhr aus `wissen/zielgruppe-kurz.md` (Abschnitt 3), im Wortlaut.
+2. **Drei Striche:** ① eine **Geschichte** von Patricia dazu (→ Vertrauen) · ② eine **neue Perspektive**
+   (→ Beziehung) · ③ ihre **Meinung** (→ Aufmerksamkeit). Je Strich ein Video.
+3. 🚨 **Jeder Strich wird eine Mikrogeschichte:** ein Moment, ein Ort, eine Uhrzeit — nicht das grosse
+   Thema. Nicht „wie ich Business und Kinder vereinbare“, sondern **ein** Nachmittag. Die Geschichte
+   kommt **nur aus Belegtem** (`patricia-interview-2026-10.md`, `patricia-vollprofil.md`,
+   Hybridmodell-Geschichte im Gedächtnis), sonst Platzhalter `[echte Situation einsetzen]`.
+4. **Ein Thema, vier Einstiege**, damit es über den Monat nie gleich klingt: ertappen · entweder-oder ·
+   mitten in einer Szene · die Floskel, die alle satt haben.
+
+**Das belegte Beispiel** (gepostet 21.10.2026, Reel Mentoring): *„Mein Büro war vor zwei Jahren der
+Parkplatz bei der Musikschule meiner Tochter.“* — ein Ort, ein Zeitpunkt, kein Thema. **Rund 1'100
+Aufrufe nach einem Tag, etwa dreimal so viel wie sonst** — aber 2 Likes und 1 Speichern. Das ist
+Reichweite ohne Reaktion: die Mikrogeschichte holt die Augen, der Grund zu antworten fehlte noch.
+
+**Aus einem Treffer weitere Beiträge machen — BEVOR das Thema gewechselt wird** (Methode der
+Mentorin, Beitrag vom 17./18.10.; geprüft wird das in **Schritt 2b**). Ihre fünf Wege:
+1. die häufigste Frage aus den Kommentaren
+2. eine ruhige Antwort auf den fiesesten Kommentar
+3. ein einzelner Handgriff aus der Arbeit, ganz nah gefilmt
+4. der häufigste Fehler zum Thema
+5. der Moment, in dem alles anfing
+
+Weitermachen, bis die Kommentare leiser werden. **Punkt 1 und 2 gehen nur mit Kommentaren** —
+fehlen sie, die Punkte 3 bis 5 nehmen. **Patricias Ergänzung:** jedes Folge-Reel endet mit einer
+Frage, die man mit **einem Wort** beantwortet („Wo ist dein Büro gerade: Auto, Küchentisch oder
+Spielplatz?“) — damit beim nächsten Mal Punkt 1 und 2 möglich werden.
+
+### 4 · Wie die Caption gebaut ist
+
+1. **Zeile 1: Behauptung mit offenem Ende** („… ich zeig dir, welchen“). Nie der Aufruf, nie „Hallo ihr Lieben“.
+2. **Ein Wir-Satz zum Fehler**, in den Patricia sich einschliesst. Kein Lehrerton („drei Dinge, auf die du achten musst“).
+3. **Punkte mit einem Bild als Titel**, darunter ein wörtlicher Beispielsatz.
+4. **Der eingebaute Einwand:** „Und wenn …?“ mit zwei Sätzen Antwort.
+5. **Ein Schlussbild:** ein Satz, den man sich abfotografiert.
+6. **Erst dann der Aufruf** — Stichwort oder Einordnung, nie beides.
+
+Hook-Muster dazu: **eigene Erfahrung + überraschende Ursache + offene Fortsetzung**
+(„Eine Liste für meinen Mann ist schuld, dass ich heute ein Business habe.“ — belegt).
+
+### 5 · Produktion: drei Tage statt drei Stunden je Video
+
+Tag 1 Mindmaps und Sprechtexte · Tag 2 alles am Stück aufnehmen · Tag 3 alles schneiden.
+Das ist die Dreh-Liste aus `/content monat` und `/monatsplan` 4.5d. Im Video: Satz für Satz aus
+leicht anderem Winkel, Atempausen raus, Untertitel Wort für Wort (macht `/videoschnitt`).
+
+**Bewusst nicht übernommen:** drei Videos am Tag · „Hashtags und Uhrzeit sind egal“ · die
+Erfolgszahlen aus dem Verkaufsteil.
 
 ---
 
@@ -422,6 +537,27 @@ Quelle: Monatsplan September, weil die Notion-Wochenplanung leer ist."
 
 **Steht nirgends ein Fokus, erfindest du keinen.**
 
+#### 2b · 🛑 ZUERST: Gibt es einen Treffer? (seit 22.10.2026)
+
+**Bevor ein neues Thema geplant wird**, wird geprüft, ob in den letzten 14 Tagen ein Beitrag
+eingeschlagen hat. Patricia: *„dann sollte das eigentlich kommen, BEVOR wir ein neues thema
+anschneiden?“* — ja.
+
+- **Quelle:** `outputs/cockpit/abgleich/gepostet.json` → `beitraege` (Feld `reach`) gegen
+  `median_je_konto`. Vorher frisch holen (`holen.py --anzahl 15`, `gepostet-bauen.py`).
+- **Treffer** = Reichweite mindestens **2× eigener Median**, nicht älter als 14 Tage. Er muss
+  **nicht** ausgereift sein — Folge-Beiträge wirken, solange er noch läuft. (Das Feld
+  `einschlag` im Cockpit zählt erst ab 7 Tagen und ist dafür zu spät.)
+- **Gibt es einen:** die **ersten zwei bis drei Plätze der Woche** gehören den Folge-Beiträgen,
+  erst danach kommt das Wochenthema. Gebaut nach „Aus einem Treffer weitere Beiträge machen“
+  im Abschnitt **Der Garten** (3). Die Rolle bleibt Pflicht, das Stichwort führt zum Monatsthema.
+- **Ausgabe:** eine Zeile je Treffer — Datum · Hook · Reichweite · Faktor zum Median ·
+  Kommentare · welche Folge-Punkte möglich sind (Punkt 1 und 2 nur, wenn Kommentare da sind).
+- **Kein Treffer:** eine Zeile „Kein Treffer in den letzten 14 Tagen“, dann normal weiter.
+
+Belegter erster Fall: Parkplatz-Reel vom 21.10.2026, 996 Erreichte bei Median 259 (3,8×),
+0 Kommentare → Folge-Punkte 3 bis 5, jedes Folge-Reel mit einer Ein-Wort-Frage am Schluss.
+
 ---
 
 ### SCHRITT 3 · 🛑 Marktcheck
@@ -523,12 +659,15 @@ ein Thema × ein Job:
 - Über die Woche **mindestens ein** Reichweiten-Typ (1 oder 4) neben den Mehrwert-Typen.
 - **Mindestens drei Keyword-Beiträge** pro Woche und Profil (Patricia, 14.09.2026).
 - PIE im Fünfer-Pick: mindestens 1× P, 1× I, 1× E — geprüft an den **A-Varianten**.
+- **Rollen** (siehe „Der Garten“): 1× Aufmerksamkeit · 2× Vertrauen · 2× Beziehung, dazu
+  die **Stufe der Monatswoche** (Inspiration · Entdecken · Community · Schubs) und einmal der
+  Frage-Beitrag „Womit kämpfst du gerade?“.
 - Job-Mix schief: **sagen, nicht still überschreiben.**
 
 **Ausgabe:**
 
-| Tag | Typ | Job | Hook A | Hook B | Angle A / B | CTA | Keyword |
-|---|---|---|---|---|---|---|---|
+| Tag | Typ | Rolle | Job | Painpoint (Mitte) | Hook A | Hook B | Angle A / B | CTA | Keyword |
+|---|---|---|---|---|---|---|---|---|---|
 
 ---
 
@@ -614,6 +753,16 @@ Gebaut über `broll-bauen.py` + `textebene.py`, Vorlage `scripts/content/kw42-br
 🚨 **Das Video muss den Text nicht illustrieren** — nicht stundenlang nach passendem
 Material suchen. Eine Clip-Idee, die zum Text zwinkert (Wäscheberg, Auto vor der Schule,
 Laptop am Esstisch), ist schön, aber kein Muss.
+🚨 **Aber der Clip entscheidet mit, WEM Instagram das Reel zeigt** (22.10.2026). Das
+Parkplatz-Reel („Mein Büro war vor zwei Jahren der Parkplatz vor der Musikschule“, Clip:
+Parkplatz, Autos, Helikopter, keine Person) ging zu **90,6 % an Nicht-Follower und zu
+72,3 % an Männer**. Bei Nicht-Followern ordnet Instagram das Video nach dem ein, was es
+sieht, und Fahrzeuge, Technik oder Landschaft ohne Menschen laufen männlich. Deshalb:
+**im Clip ist Patricia oder eine Mama-Alltagsszene zu sehen** (Hände am Laptop, Küche,
+Wäsche, Kinder von hinten). Kein Clip ohne Person, keine Fahrzeuge, keine Technik als
+Hauptmotiv. **Und das Wort Mama oder Kinder steht im Hook oder in der ersten
+Caption-Zeile** (siehe Memory `feedback_KRITISCH-reichweiten-posts-pflicht`, Abschnitt
+Mama-forward: 28.08. sank der Männer-Anteil so von 40 % auf 19 %).
 
 **Talking-Head bekommt mindestens zwei gestaltete Elemente:** Kelsie-Textebene
 (zwei Zeilen auf Stoss, klein oben, gross unten, grosses Wort hinter Patricia) ·
@@ -698,23 +847,21 @@ Typ 4: so lang wie die Haltung braucht.
 **Keyword-Regeln:** Grossbuchstaben, fett · **genau eins pro Beitrag** · eingebettet
 („Kommentier **STANDBEIN** und ich schick dir …") · nie eins erfinden · rotieren.
 
-> 🚨 **Das Keyword steht in der ERSTEN Zeile der Caption, nicht am Schluss.**
+> 🚨 **Das Keyword steht NUR AM SCHLUSS, nie in Zeile 1** (Patricias Entscheid 22.10.2026,
+> ersetzt „Zeile 1 + Schluss“ vom 14.09. und Entscheid B vom 11.10.).
 >
-> Instagram zeigt zwei Zeilen, dann „mehr anzeigen". Wer das Keyword in Absatz fünf
-> setzt, erreicht nur die, die aufklappen.
+> **Warum:** In der ersten Zeile merkt sie die Verkaufsabsicht, bevor sie etwas bekommen
+> hat. Von sechs Mentoring-Beiträgen bis 19.10. begannen vier mit „Kommentier …“ — und
+> 77 von 84 Beiträgen seit August blieben ohne Kommentar. Die Mentorin, deren
+> Masterclass das ausgelöst hat, macht es in ihren eigenen Beiträgen genauso: Tipp zuerst,
+> Stichwort im letzten Absatz.
 >
-> **Beleg aus dem Konkurrenz-Scrape vom 14.09.2026:** Der stärkste Beitrag der Mentorin
-> hat **32 Likes und 128 Kommentare** — viermal so viele Kommentare wie Likes. Das
-> Keyword steht dort in Zeile eins, direkt gefolgt von dem, was man dafür bekommt.
-> Am Schluss steht es nochmal.
+> **Was vom alten Befund bleibt:** die Methode ruhig ganz verschenken — das Verschenken
+> frisst den Funnel nicht auf, es **beweist** ihn.
 >
-> **Und der Wert kommt trotzdem:** Sie verschenkt die komplette Methode in der Caption,
-> fünf Schritte, nichts zurückgehalten. Das Verschenken frisst den Funnel nicht auf,
-> es **beweist** ihn — 128 Leute fragen trotzdem nach dem Guide.
->
-> **Aufbau also:** Zeile 1 Keyword plus Versprechen · dann die Methode in nummerierten
-> Schritten · dann ein Satz, der zeigt, dass es bei dir funktioniert hat · dann das
-> Keyword nochmal mit ⬇️.
+> **Aufbau also:** Zeile 1 Behauptung mit offenem Ende · die Methode in Punkten · ein
+> Satz, der zeigt, dass es bei dir funktioniert hat · **dann** das Keyword mit ⬇️.
+> Im Launch-Monat führt es zum Monatsthema.
 
 
 | Mentoring | führt zu |
@@ -792,8 +939,12 @@ Gibt es eine Folie oder eine Sekunde, bei der sie weiterwischt, ohne zu lesen? U
 zurück: Klingt irgendetwas nach Werbebroschüre statt nach einer Sprachnachricht an eine
 Freundin? Dann zuerst das umschreiben, dann die Tabelle.
 
-| Beitrag | gibt ihr mit | berührt es | konkret mitnehmen | Grund zu speichern | Grund zu kommentieren | nur von ihr |
-|---|---|---|---|---|---|---|
+| Beitrag | Rolle | Mikro? | gibt ihr mit | berührt es | konkret mitnehmen | Grund zu speichern | Grund zu kommentieren | nur von ihr |
+|---|---|---|---|---|---|---|---|---|
+
+**Spalte „Rolle“** = Aufmerksamkeit · Vertrauen · Beziehung. Leer heisst: nicht bauen.
+**Spalte „Mikro?“** = ein Moment, ein Ort, eine Uhrzeit statt des grossen Themas — und **kein
+Werkzeug im Hook** (KI, Instagram, Kurs, Öle). Nein heisst: Hook neu.
 
 **Spalte „gibt ihr mit“** = die Tagesfrage: *Inspiration*, *Tipp* oder *Warum mit mir / möglich*. Steht dort nichts Benennbares, fängt der Beitrag bei mir an statt bei ihr, und er wird neu gedacht. Fehlt eins der drei in der ganzen Woche, wird ein Platz getauscht.
 

@@ -286,10 +286,19 @@ und fragt *„Woran arbeiten wir heute?“*. Ändert nichts.
 Schlüssel und Personendaten, **committet und pusht** (der Aufruf ist der Auftrag dazu),
 berichtet und verabschiedet sich.
 
-Herkunft: Ordner-Vorlage aus Julias Claude-Kurs (dort `/start` + `/shutdown`; dieser
-Workspace stammt aus derselben Vorlage). **`/prime` ist darin aufgegangen** und liegt in
-`reference/_archiv-skills/prime-alt/` — es las noch die Kontextdateien vom Mai.
-Keine Weitergabe-Anleitung (Herkunft Kursmaterial).
+Herkunft: Die **Idee** eines festen Paars aus Start- und Abschluss-Befehl stammt aus der
+Ordner-Vorlage von Julias Claude-Kurs; dieser Workspace stammt aus derselben Vorlage.
+**`/prime` ist darin aufgegangen** und liegt in `reference/_archiv-skills/prime-alt/` —
+es las noch die Kontextdateien vom Mai.
+
+🚨 **Der Text beider Skills ist Patricias eigener** (Klarstellung 21.10.2026, auf ihren
+Einwand *„das ist kein fremdes kursmaterial. ich nutze es ja selbst"*). Die 82 bzw. 92
+Zeilen sind auf diesen Workspace geschrieben: ihre Git-Befehle, ihre Kontextdateien, ihre
+eigenen Vorfälle als Warnung (die Lock-Datei vom 16.09.). Übernommen ist die Idee, nicht
+der Wortlaut — **und eine Idee gehört niemandem.** Die beiden dürfen also im KI-Kurs
+weitergegeben werden; vorher nur entschlacken, weil die Fassung hier auf Patricias eigene
+Dateien zeigt. Vorher stand hier „Keine Weitergabe-Anleitung (Herkunft Kursmaterial)" —
+das war zu streng gelesen und hat beim Bauen des Kurs-Grundgerüsts gebremst.
 
 🚨 **Das auto-sync sichert nur `outputs/`, `context/`, `plans/`, `reference/`.** Skills,
 `scripts/`, `.github/` und CLAUDE.md kommen nur über `/shutdown` auf GitHub — am
@@ -317,7 +326,22 @@ gesetzt, nie im Chat. Vergessen = Sicherung verloren. Wiederherstellen: siehe
 `scripts/sicherung/README.md`. Nie gesichert: `.claude/worktrees/` (25 GB temporär),
 `node_modules`, Render-Zwischenstände.
 
-### /create-plan [anforderung]
+### /create-plan und /implement
+
+🚨 **Beide standen bis zum 22.10.2026 hier beschrieben, ohne zu existieren.**
+Patricias Frage beim Bauen des KI-Kurses: *„haben wir die skills create plan und
+implement wirklich auch als befehle??"* — nein, hatten wir nicht. In
+`.claude/skills/` lagen 32 Skills, diese zwei nicht, und einen
+`.claude/commands/`-Ordner gibt es in diesem Workspace überhaupt nicht (auch
+global nicht). Die 24 Dateien in `plans/` sind im Chat entstanden, nicht über
+einen Befehl. **Eine Beschreibung in dieser Datei ist kein Beleg, dass etwas
+existiert** — bei der Frage „haben wir X?" immer `ls` statt CLAUDE.md lesen.
+
+Jetzt liegen sie als `.claude/skills/create-plan/` und `.claude/skills/implement/`.
+🚨 **Die Kursfassung muss dasselbe sagen:** Im KI-Kurs-Grundgerüst stehen beide
+entschlackt in `scripts/ki-kurs/grundgeruest-bauen.py` (`PLAN`, `IMPLEMENT`), und
+Lektion 4.4c verspricht alle vier Befehle. Wird einer hier geändert, gehört die
+andere Fassung nachgezogen.
 
 **Zweck:** Detaillierten Implementierungsplan erstellen, bevor Änderungen gemacht werden.
 
@@ -414,7 +438,7 @@ Kommentar** — Engpass ist Reaktion, nicht Reichweite.
 **Checkliste mit Patricias Entscheiden:** `outputs/strategie/2026-10-11-feed-regeln-checkliste.md`
 (gitignored, Coach-Namen; Rohlisten in `feed-inventur/`). Teil A = 21 Regeln nach Gewicht mit
 Prüffrage (Mehrwert zuerst · **Mikro statt Makro** · Punkt A → Weg → Punkt B …), Teil B = 15
-Entscheide (5 Beiträge je Profil, 3 Lead + 2 Reichweite, Listen ja, Stichwort Anfang + Schluss,
+Entscheide (5 Beiträge je Profil, 3 Lead + 2 Reichweite, Listen ja, Stichwort ~~Anfang +~~ nur am Schluss (seit 22.10.),
 letzter Check = ganze Checkliste …). **Nächster Schritt:** hooks/caption/reels/karussell/visuals
 gehen in `/content` auf; was gilt, steht nur noch dort. ⚠️ Offen: B5, B9, welche Karussell-Typen.
 **Mikro/Makro** stammt aus einer Profil-Analyse von **Laura Hersche** (Bildschirmaufnahme 07.10.,
@@ -430,6 +454,15 @@ mit Stichwort bleibt · Lösung erst ab Folie 2 · Caption-Länge nach Sinn. ⚠
 Dazu am 13.10. die drei Begleit-PDFs (Copyformeln · Sales Guide · KI-Brandvoice) geprüft: übernommen sind
 CTA ohne Denkarbeit, Verkaufs-Story in 6 Folien, Mini-Sprechstunde, Frage-Antwort/Meinung/Open Loop; bewusst
 nicht Powerwörter, Nutzen-Hooks, Studien-Hooks, gespielte Füllwörter. Liste: `context/Kurse/aktuelle kurse/Content-Shortcut/unterlagen/`.
+**Der Garten** (22.10., Patricias Entscheid nach Mia Pejics Masterclass + gekaufter Schmetterlingsmethode):
+eigener Abschnitt oben in `/content`, Kurzfassung in `/monatsplan` 4.5b+. Monat = Stadtteil mit Kreislauf
+Inspiration → Entdecken → Community → Schubs → Loyalität · je Beitrag eine **Rolle** (1 Aufmerksamkeit ·
+2 Vertrauen · 2 Beziehung, keine Rolle = nicht bauen) · Painpoint in die Mitte, drei Striche als
+**Mikrogeschichte** · 🚨 **nie das Werkzeug im Hook** („niemand wacht auf und denkt: ich sollte KI nutzen“) ·
+**Stichwort nur am Schluss**, im Launch-Monat zum Monatsthema · **Treffer vor neuem Thema**: `/content`
+Schritt 2b prüft zuerst, ob in 14 Tagen ein Beitrag ≥ 2× Median erreicht hat — dann gehören die ersten
+2–3 Plätze der Woche Folge-Beiträgen (Mias fünf Wege, auch im Freitags-Task). Strategie: `outputs/strategie/2026-10-22-content-gesamtstrategie-garten.md`
+(gitignored), Mitschrift `…/2026-10-20-meeting-mia-pejic.md`, Methode `context/Kurse/aktuelle kurse/Schmetterlingsmethode/`.
 **Der Content-Kreislauf** (13.10.): sechs Stationen Verstehen → Monat → Woche → Posten → Messen → Auswerten, mit Quellen
 und Rückfluss, steht oben in `/content`; Station 1 vierteljährlich und Station 6 laufen in `/monatsplan` (4.5a/4.5b,
 liest `auswertung.json`). Kursfassung mit eigenen Prompts: `outputs/produkte/ki-treppe/12-content-kreislauf-kursmaterial.md`.
@@ -535,6 +568,52 @@ plus Knöpfe HTML/Betreff/Vorschautext. `python scripts/magnet-ich/mails-ins-coc
 JSON je Mail in `outputs/cockpit/abgleich/mailentwuerfe/` → `ArtifactData batch set`,
 Sammlung **`mailentwuerfe`** (gehört nicht dem Abgleich). Anzeige gesetzt mit
 `scripts/cockpit/patch-mailentwuerfe.py` — taugt für jede Automation, Feld `automation`.
+
+### AC-Formulare: Bestätigungsmail und Seiten (seit 2026-10-23)
+
+Prüfung aller 21 Formulare: `outputs/funnels/2026-10-23-formular-pruefung.md`. Anlass: Das Formular
+„0€ doTERRA Energie-Kickstart“ (64) war eine **Kopie von Freischaufeln** — falscher Tag, Mentoring-Liste,
+AC-Standardmail. Jetzt: Tag `energie-kickstart`, Liste „doTERRA Interessenten“, eigene Bestätigungsmail,
+nach dem Klick `/energie-kickstart-bestaetigt/` (WP 4382, `scripts/wordpress/deploy-energie-bestaetigt.mjs`,
+zieht Bausteine und Preis aus `/energieroutine/`). 🚨 Zehn Formulare schickten als erste Mail noch
+*„Toll, dass du lernen willst, erfolgreich Grenzen zu setzen!“*. Die neun laufenden Mentoring-Formulare
+haben seit 23.10. eigene Bestätigungsmails: `python scripts/mails/bestaetigung-bauen.py [--hochladen]`
+(schreibt in die Opt-in-Nachricht am Formular, sichert die alte nach `bestaetigungsmails/_alt/`).
+Regel nach Julia: Die Bestätigungsmail hat **einen** Job, den Klick — kein Angebot. Verkauft wird auf der
+**Danke-Seite nach dem Absenden** („nur hier“-Angebot) und auf der **Seite nach dem Bestätigungsklick**.
+🚨 Der Platzhalter heisst `%CONFIRMLINK%`; die Absenderadresse (`%SENDER-INFO-SINGLELINE%`) gehört in
+den Fuss, und im Formular muss unter „Adresse“ eine gewählt sein. 🚨 Ein **reCAPTCHA** im Formular
+heisst: den Durchlauf testet Patricia selbst. **Danke-Seiten mit Angebot** (23.10., Entwürfe WP 4386–4400):
+`node --env-file=.env deploy-danke-seiten.mjs [--vorschau]` in `scripts/wordpress` — je Funnel eine Seite,
+grosser Kurs **199 statt 333 „nur hier, direkt nach deiner Anmeldung“** (ohne Uhr), Preis über
+ThriveCart-Gutscheine `DANKE199IKM` / `DANKE199CEO` (ThriveCart kann keine Preisoption verstecken).
+Der 97er-Upsell nach Storyideen/Startklar bleibt (Käuferinnen-Preis). Seit 23.10. abends leiten 6 Formulare
+auf ihre Danke-Seite (Ideen-Finder + Businessfahrplan → Digitale Produktwelt `DANKE199DPW`). 🚨 **Vor dem
+Bearbeiten einer ThriveCart-Kasse fragen, ob sie gerade woanders offen ist** — am 23.10. hat ein zweiter
+Editor meine DPW-Korrekturen überschrieben, ThriveCart warnt nicht. **MBA-Modul** als letztes Modul der
+Signature-Kurse: `python scripts/mba-modul/bauen.py` → `outputs/produkte/mba-modul/` (HTML-Element in
+ThriveCart Learn, WhatsApp statt Kasse, 997 minus Kurspreis in den ersten 2 Monaten). **Eingesetzt am 23.10.** in
+der Lektion „So geht's weiter“ von Kundenmaschine (alle drei Fassungen: Original 203547, evergreen 211901, 1.3 208012),
+Mama-CEO (220338) und Digitaler Produktwelt (211529), dazu in Easy KI 10.6 (232070, bleibt Entwurf wie der ganze Kurs).
+Video und Kreuzangebote sind dort raus. 🚨 Kurskarten als Flex-Raster, nicht als Tabelle — die 2×2-Tabelle ragte am
+Handy über den Rand. 🚨 Ein HTML-Baustein lässt sich im Lektions-Editor nur über Zeiger-Ereignisse
+(`pointerdown/move/up`) aus der Elementliste ziehen; `left_click_drag` markiert nur Text. Der Editor zeigt ihn als
+„CUSTOM HTML“, das Aussehen sieht man nur in der Vorschau. Gelöschte Bausteine bleiben als ungenutzte Einstellung im
+Seitencode stehen, sichtbar sind sie nicht. Alle 8 Mentoring-Formulare
+leiten auf ihre Danke-Seite, nur der Energie-Kickstart bewusst nicht. ⚠️ Offen: `/anmeldung-erfolgreich/` (alte Positionierung, 11 Formulare),
+`/ki-masterclass-danke/` privat (Formulare 69/73), Altformulare 37 · 39 · 43 · 55 · 57.
+Der orange Kopfbalken in allen Mail-Generatoren ist seit 23.10. eine Tabellenzelle (zerfiel am Handy).
+
+### Story-Challenge-Mailreise (seit 2026-10-21, noch nicht in AC)
+
+Acht Mails in „0€ Story Challenge“ (45): Bestätigung (Tag 0) → Begleitung Tag 2/4/7 → neues
+Problem Tag 8 → Pitch **Instagram-Kundenmaschine 333** an Tag 10/12/15 → danach Tag für die
+Engine (Loop 1, Automation 72). `python scripts/story-challenge/mails-bauen.py` → HTML + Text in
+`outputs/funnels/story-challenge-nurture/`, Cockpit-Dokumente `mailentwuerfe/story-challenge-NN`.
+🚨 **Nicht Startklar pitchen:** das Workbook verspricht dreimal die Kundenmaschine, und an der
+Startklar-Kasse hängt sie als Upsell für 97. ⚠️ Offen: Workbook-Link (`WORKBOOK` im Skript), alte
+Daten „1.9“ (Mail) und „1.3.“ (Workbook S. 18). Cockpit V103 (`patch-mailentwurf-text.py`): Knöpfe
+„Text kopieren“ und „Zweiten Betreff kopieren“, Notiz aufklappbar, eigene Fassungen stehen vor dem AC-Abzug.
 
 ### Launch-Storys als Gerüst (seit 2026-09-25)
 
@@ -678,6 +757,234 @@ ThriveCart danach selbst übernommen (*„weisst du was, ich mach es selbst“*)
 nachfragen — nie aus einer Differenz schliessen, welcher von zwei Werten gemeint ist.
 ⚠️ Ebenfalls offen: der Tag in ActiveCampaign aufs Upsell (sonst bekommen Käuferinnen weiter
 Werbung für etwas, das sie schon haben) und `/mba/` nennt noch „drei Kurse“ gegen CHF 999.
+
+### Die Kurs-Produktionsseite — die eine Stelle fuer ThriveCart (seit 2026-10-22)
+
+**Patricia:** *„ich will im artefact alle texte, alle beilagen, alle praesentationen und
+eigentlich auch die links zu allen videos. es soll der komplette inhalt des kurses
+abgebildet sein. ich stell mir das so vor, dass ich nur noch in thrivecart kopieren muss"*.
+
+https://claude.ai/artifact/JYSuhqEdSCja4Gn8V2Xj88 — **privat.**
+
+```bash
+python scripts/ki-kurs/vimeo-transkripte.py    # Untertitel holen -> Transkripte
+python scripts/ki-kurs/produktion-daten.py     # alles einsammeln -> produktion.json
+python scripts/ki-kurs/produktion-seite.py     # Seite bauen     -> produktion.html
+```
+
+Je Lektion: **Titel** · **Text unter dem Video** · **Einbettungs-Code** · Beilagen ·
+Dreh-Notiz · Platz fuer eine Notiz. Dazu die **Begruessung** (erste Seite im Kurs), die
+zehn **Foliensaetze**, die 21 **Beilagen** als PDF und die **14 Textbloecke der Kasse**
+aus `outputs/salespages/ki-kurs-checkout/textbloecke.md`.
+
+🚨 **Der Kopier-Knopf legt text/html UND text/plain ab** (`ClipboardItem`, dasselbe
+Verfahren wie auf der Startklar-Kopierseite). Bis zum 22.10. ging nur reiner Text raus —
+Patricia: *„Formatierung wird nicht uebernommen beim ruebercopieren und die sterne
+stoeren mich auch"*. Beide Beschwerden kamen vom selben Fehler: der Text stand als rohes
+Markdown da. Jetzt zeigt die **Vorschau** die Formatierung, und in der Ablage liegen
+beide Fassungen. **Nur fuer Prosa** — Einbettungs-Code und Befehle gehen als reiner Text,
+ein iframe als text/html wuerde vom Zielfeld umgebaut.
+
+🚨 **Und seit dem 23.10. gibt es den besseren Weg: der zweite Knopf „als HTML".**
+Patricia: *„ich muss jede formatierung wieder anpassen in thrivecart. gibt es da
+eine möglichkeit, dass ich das nicht mehr tun muss?"* — Ja. Der Lektions-Editor
+in ThriveCart Learn ist ein **Baukasten**, und unter den Elementen steht neben
+Button · Download · Heading · Text · Image · Video · Bullets · Divider · FAQs ·
+Content box · Columns auch **`</> HTML`**. Dort gehört Markup als Zeichen
+hinein: Element einfügen, „als HTML" auf der Produktionsseite drücken,
+hineinkleben — fertig, nichts nachzuformatieren.
+
+**Der Unterschied der beiden Knöpfe:** „Text kopieren" legt `text/html` **plus**
+`text/plain` ab (für den **Text**-Baustein), „als HTML" legt dasselbe Markup als
+**reinen Text** ab (für den **HTML**-Baustein). Als `text/html` würde das
+HTML-Feld es sofort wieder rendern — und man hätte denselben Ärger.
+
+Gesehen habe ich den Baustein im echten Editor (Kurs „Easy KI", Lektion 2.3);
+**eingefügt und gespeichert habe ich dort nichts** — eine Lektion in ihrem
+Live-Kurs ist nichts, woran man testet.
+
+🚨 **Beim ersten Einfügen fehlten Punkte und Abstände** (Patricia: *„hab den
+html code eingefügt aber jetzt sind hier die aufzählungspunkte nicht drin und
+die abstände auch nicht"*). Das Markup war vollständig angekommen — die
+Lektionsseite stellt es nur zurück. **Am fertigen Kurs gemessen**, nicht geraten:
+
+| | ThriveCart setzt |
+|---|---|
+| `ul` · `li` | `list-style-type: none` · `padding-left: 0` · `margin: 0` |
+| `p` | `margin-top: 0` · `margin-bottom: 0` |
+
+Deshalb schreibt `fuer_thrivecart()` in `produktion-seite.py` die Angaben
+**direkt ans Element** (`style="…"`). Gegenprobe vorher: eine Probe mit
+Inline-Angaben in die laufende Seite gehängt und nachgemessen — `disc`,
+22.4 px Einzug, 16 px Abstand kamen an. Der Reset arbeitet also **ohne
+`!important`**; mit `!important` wäre der ganze Weg hinfällig gewesen.
+
+🚨 **Nur die HTML-Fassung bekommt die Inline-Angaben.** Die reiche Fassung geht
+in den **Text**-Baustein, wo ThriveCarts eigener Editor formatiert — dort wären
+sie wirkungslos. Gegenprobe im Bau: `data-reich` darf **null** Treffer auf
+`list-style` haben.
+
+🚨 **`produktion.json` und `produktion.html` sind seit dem 22.10. gitignored.** Sie tragen
+die Vimeo-Links, und darin steckt der **Unlisted-Hash**: wer den Link hat, sieht den
+bezahlten Kurs ohne zu zahlen. Das Repo ist oeffentlich. Die Quelle der Links liegt in
+`context/Kurse/aktuelle kurse/Easy-KI/videos-roh.json` (ebenfalls draussen). Beide
+Dateien baut man aus den Skripten neu — nichts geht verloren.
+
+#### 🚨 Die Beilagen — warum `/_blob/` nicht reicht (22.10.2026)
+
+Patricia: *„die beilagen sind nicht aufrufbar“.* Zwei Ursachen, beide waren
+unsichtbar:
+
+**1 · Die Adressen zeigten ins Leere.** Die `/_blob/`-Kennungen in `ANHAENGE`
+gehörten dem **Cockpit**, nicht der Produktionsseite. Eine `/_blob/`-Adresse gilt nur
+innerhalb des Artifacts, an dem die Datei hängt — kopiert in ein anderes sieht der
+Link völlig normal aus und lädt nichts. Behoben: alle 21 PDFs hängen jetzt an der
+Produktionsseite. **Hochladen über den Pfad, nie über den Chat:**
+`Artifact` + `url` + `asset: true` + `file_paths` nimmt bis zu 25 Dateien in einem
+Aufruf, ohne dass ein Byte durch den Kontext läuft. Vorher muss die Seite die
+Fähigkeit erklären (`capabilities: {assets: {}}`), sonst kommt `capability_disabled`.
+
+**2 · Und trotzdem sieht man sie nicht.** Der Anhang-Speicher liefert PDFs als
+**`text/plain`** aus (gemessen am geöffneten Blob: `document.contentType` =
+`text/plain`, die Seite zeigt die rohen PDF-Bytes). Die Datei kommt also an, der
+Browser stellt sie aber nicht dar. **Für etwas zum Anschauen taugt der
+Artifact-Anhang nur bei Bildern und Video, nicht bei PDF.**
+
+#### 🚨 Und PDF war ohnehin das falsche Format (22.10.2026)
+
+Patricia: *„wichtig. es hat anhänge wo sie was reinschreiben sollten. da können
+wir keine pdfs machen"*. Nach Durchsicht aller 21 danach, **was eine
+Teilnehmerin damit tut**: 4 ausfüllen · 9 abhaken · 4 kopieren · 4 nachschlagen.
+**17 von 21 lagen im falschen Format.**
+
+Jetzt: **10 Google Docs** im selben Drive-Ordner, **4 PDF** (Begriffe-Cheatsheet ·
+Roadmap · Setup-FAQ · Sicherheits-Checkliste) — die vier, die man wirklich nur
+liest. Jedes Doc trägt oben **„Datei → Kopie erstellen"**, und derselbe Hinweis
+steht jetzt auch im ThriveCart-Lektionstext (Patricias Einwand beim Bauen).
+
+🚨 **Die neun Modul-Checklisten sind EIN Dokument.** Jede Modul-Lektion
+verlinkt dasselbe — einmal kopieren, durch den ganzen Kurs abhaken. Quelle
+`beilagen/checklisten-alle.md`, die neun Einzeldateien liegen in
+`beilagen/_abgeloest/`.
+
+🚨 **Was beim Umwandeln Markdown → Google Doc überlebt und was nicht** (am
+fertigen Dokument im Browser nachgesehen, nicht am Export geraten):
+
+| überlebt | geht verloren |
+|---|---|
+| Überschriften · fett · kursiv · Listen · **Tabellen** · Trennlinien | **Code-Block** (```) wird Fliesstext |
+| **Blockquote** (`>`) wird eingerückter Text — taugt als Prompt-Kasten | `- [ ]` wird ein normaler Strich, **kein Haken** |
+
+Darum: Aufträge zum Kopieren als **Blockquote**, Ausfüllfelder und Checklisten
+als **Tabelle**. Ein Markdown-Export der Datei zeigt Fett in Tabellenzellen als
+`\*\*…\*\*` — das ist nur die Export-Maskierung, im Dokument steht es richtig.
+**Bei so einem Verdacht das Dokument anschauen, nicht den Export lesen.**
+
+🚨 **Und die Falle, die kein Export zeigt: aufeinanderfolgende Zeilen EINES
+Absatzes laufen zu einer Zeile zusammen.** Markdown macht aus einem weichen
+Zeilenumbruch ein Leerzeichen — im Dokument steht dann
+*„context/ — meine Tabus outputs/ — alles Fertige reference/ — Vorlagen"* in
+einer Wurst. Jede Zeile, die allein stehen soll, braucht eine **Leerzeile**
+davor; im Blockquote eine Zeile mit nur `>`. Betroffen waren am 22.10. die
+CLAUDE.md-Vorlage (Sandras drei Ordner) und fünf Stellen der Prompt-Bibliothek
+(Prompt 5 · 13 · 14 · 17 · 22) — überall dort, wo ein Auftrag mehrere
+beschriftete Zeilen hat (*Immer: … Nie: … Wenn …*).
+
+🚨 **Gefunden hat die Fehler Patricia, nicht ich** — und ihre Frage darauf war
+*„also muss ich selber auch nochmals alles prüfen?"*. Nein. Seitdem gilt: **jede
+Beilage nach dem Anlegen einmal zurücklesen** (`read_file_content`), und bei
+Zweifeln am Aussehen im Browser anschauen. Ein Dokument, das ich nicht
+gegengelesen habe, ist nicht fertig.
+
+🚨 **Was Patricia selbst liefert, wird VOR dem Ablegen gelesen.** Ihre
+KI-Blackliste habe ich in den Kursordner kopiert, ohne sie aufzumachen — darin
+standen acht kaputte Emoji-Kästchen, der interne Titel „KB04 (Optimiert)", zwei
+Beispiele aus einer fremden Nische (ADHS-Beziehungen, Affirmationen) und drei
+erfundene Zahlen in Euro. Eine Datei weiterzugeben ist dasselbe wie sie zu
+veröffentlichen.
+
+🚨 **`update_file` ändert nur die Angaben zur Datei, nie den Inhalt.** Ein Doc
+umzuschreiben heisst: neu anlegen und das alte in den Papierkorb — dabei ändert
+sich die Kennung, und `beilagen-drive.json` muss nach. Für eine Kleinigkeit ist
+der Weg über den Browser schneller (so ist am 22.10. die fehlende
+Spaltenüberschrift in der Prompt-Bibliothek entstanden).
+
+🚨 **Die Markdown-Dateien in `beilagen/` sind die Inhalts-Quelle, nicht das
+Ausgelieferte.** Wer eine ändert, muss das Doc in Drive nachziehen — eine
+geänderte `.md` ändert nichts an dem, was die Teilnehmerin öffnet. Jede
+betroffene Datei trägt dazu oben eine Marke.
+
+⚠️ **Offen:** Die 17 abgelösten PDFs liegen noch im Drive-Kursordner neben den
+neuen Docs. Solange der Ordner nicht geteilt ist, stört das niemanden — vor dem
+Teilen gehören sie weg, sonst sieht die Teilnehmerin jede Beilage zweimal.
+
+**Deshalb gehören die Beilagen nach Google Drive** — und das geht nur von Hand:
+
+| Weg | Ergebnis |
+|---|---|
+| Drive-Connector `create_file` | nimmt nur `base64Content`; 2,3 MB werden 3,1 MB Base64 und müssten **zweimal** durch den Kontext (lesen und schreiben) — rund zwei Millionen Token für 21 kleine PDFs |
+| Ablegen im Browser (`drop`) | Drive liest `webkitGetAsEntry()`; auch mit nachgelegtem Datei-Eintrag passiert nichts |
+| Menü „Neu → Dateien hochladen“ | Drive benutzt **kein** `<input type=file>` mehr, auch `showOpenFilePicker` zu ersetzen greift nicht |
+
+→ **Dieselbe Lösung wie beim Download-Aufräumen:** die Dateien liegen fertig in
+`outputs/produkte/ki-treppe/beilagen/fuer-drive/` (gitignored über `**/*.pdf`),
+Patricia zieht sie einmal in den Drive-Ordner **„KI-Kurs — Deine KI-Mitarbeiterin“**
+(`1FzEiDo-R-qi9KXuN4tYRqydd9SkpZQXq`, lag bis dahin **leer** da). Danach liest Claude
+die Datei-Kennungen über `search_files` mit `parentId` und trägt die echten
+Drive-Adressen in `ANHAENGE` ein.
+
+### Die Kursvideos und ihre Transkripte (seit 2026-10-22)
+
+**25 Videos im Vimeo-Ordner „Easy KI"** (30964145), zusammen 125 Minuten. Transkripte in
+`context/Kurse/aktuelle kurse/Easy-KI/Transkripte/` als `.txt` und `.vtt`, im selben
+Format wie die Startklar-Transkripte.
+
+🚨 **Die Untertitel sind von VIMEO automatisch erzeugt, nicht von Whisper.** Sie sitzen
+bei normalem Deutsch gut und verhoeren sich bei Fachwoertern — aus „Begriffe-Cheatsheet"
+wurde „Begriffs-ChatGPT". Jedes Transkript sagt das im Kopf. **Nie eine Schreibweise
+daraus abschreiben.** Lokal transkribieren geht nicht: die Videodateien liegen nur bei
+Vimeo, und die Download-Adressen sind unterschrieben.
+
+🚨 **Der Weg geht ueber die Einbettungsseite, nicht ueber die Konfiguration.**
+`player.vimeo.com/video/<nr>/config?h=<hash>` antwortet mit **403** — mit Hash, mit
+Browser-Kennung und mit jedem Referer. `player.vimeo.com/video/<nr>?h=<hash>` antwortet
+mit 200 und traegt dieselbe Konfiguration als `window.playerConfig` im Quelltext. Daraus
+wird mit `raw_decode` genau ein Objekt gelesen — ein Muster bis zum naechsten `};` endet
+mitten in den verschachtelten Objekten.
+
+🚨 **Die Zuordnung Video → Lektion ist belegt, nicht geraten.** Modul 1 und 3 heissen nur
+„Modul 1 (3)", Modul 4 gar nichts („video1615913723"). Der Beleg ist der **Schlusssatz**:
+jedes Video kuendigt das naechste an. Die Tabelle steht in `vimeo-transkripte.py` unter
+`LEKTION`, mit dem Beleg je Zeile. `produktion-daten.py` liest sie von dort, statt eine
+zweite Kopie zu halten.
+
+🚨 **4.4b und 4.4c brauchten nie ein eigenes Video — es war längst da.** Am 22.10.
+stand hier „fuer 4.4b und 4.4c gibt es kein Video“, und das stimmte wörtlich: kein
+*eigenes*. Die Schlussfolgerung „muss noch gedreht werden“ war falsch. Patricias Frage
+am 23.10. (*„kannst du mal im transkript schauen, ob … befehle unter 4.4 mitaufgenommen“*)
+hat es aufgedeckt — **das 4.4-Video ist 11:41 lang und enthält alle drei Lektionen:**
+
+| ab | Inhalt | war geplant als |
+|---|---|---|
+| 0:00 | Gedächtnis-Datei, fünf Teile, Müll ausmisten | 4.4 |
+| 3:20 | drei Arten etwas zu verlieren, Git gegen GitHub, öffentlich oder privat | 4.4b |
+| 5:35 | was ein Befehl ist, `/start` + `/shutdown` (6:12), `/create-plan` + `/implement` (9:26) | 4.4c |
+| 10:15 | „Deine erste halbe Stunde in dieser Reihenfolge“ | — |
+
+**Patricias Entscheid: alles in EINER Lektion 4.4** („Das Gedächtnis, die Sicherung und
+die Befehle“), die drei Texte sind zu einem verschmolzen, 4.4b und 4.4c sind aus
+Inhaltsverzeichnis und Bauliste raus. Damit sind **Kapitel 1 bis 4 vollständig
+aufgenommen**, offen sind Kapitel 5–10.
+
+🚨 **Ein Trennstrich mitten in einer Lektion schneidet sie ab.** `produktion-daten.py`
+beendet den Abschnitt am nächsten `---`. Beim Zusammenlegen hatte 4.4 danach **213 statt
+4'997 Zeichen** Plattformtext — und die Seite sah trotzdem normal aus. Gliederung in einer
+langen Lektion deshalb über **fette Teil-Überschriften**, nie über Striche. Gegenprobe:
+die Zeichenzahl je Lektion aus `produktion.json` lesen, nicht die Seite anschauen.
+
+🚨 **Zeitmarken holt man aus der `.vtt`, nicht aus der `.txt`.** Die Transkripte liegen in
+beiden Formaten; nur die `.vtt` trägt die Zeiten. Ein Stichwort darin suchen und die
+Marke des Blocks nehmen — so sind die vier Zeiten oben entstanden.
 
 ### Kommentar-Antwort — der ManyChat-Ersatz (seit 2026-09-28, im Aufbau)
 
@@ -2646,6 +2953,37 @@ als Ordner `Sortiert/…`. Zugang in `scripts/mail-sortieren/.env`, Bericht nach
 **Läuft wöchentlich** als Scheduled Task `mails-sortieren-donnerstag` (Do 07:00, nur bei offener App).
 🚨 **Fähigkeiten erst nach dem Login lesen** — info@ nennt MOVE/UIDPLUS vorher nicht, sonst wird nur kopiert.
 
+### AGB und ThriveCart-Kassen (seit 2026-10-23)
+
+🚨 **Sechs Live-Kassen zeigten die AGB einer fremden Firma** (aus einer Vorlage mitgekommen):
+`aus-nebenbei` · `instagram-kundenmaschine` · `thema-finden` · `expertin` ·
+`eigene-produkterstellung` · `mama-zeit-2`. Die übrigen 13 haben ein AGB-Kästchen ohne Text.
+Seit 23.10. abends tragen **alle 17 erreichbaren Live-Kassen** `https://mumlifebalance.ch/agb/` im
+AGB-Feld (Kästchen eingeschaltet, live geprüft). 🚨 Bei `thema-finden` (35) startete der Editor nicht,
+weil beim Bump **Content-Box kein Kurs hinterlegt** war (Fulfillment → „Course to apply for a bump
+purchase“ leer, Meldung „You must enter a valid fulfillment level for your bump offer“ — nur als
+kleines Hinweisfeld, das Claude nicht sieht). Den Bump hatte dort niemand gekauft (Patricia).
+Kurs 225729 „Content-Box“ eingetragen ; `story-challenge` (36) ist in ThriveCart **archiviert** (Status-Feld sagt trotzdem „live“,
+die Kasse antwortet 404) — die Challenge läuft über das AC-Formular. 🚨 Die API meldet archivierte
+Produkte als `status 2`; „live“ aus der Schnittstelle heisst nicht, dass die Kasse erreichbar ist.
+**Eigene AGB:** Entwurf `outputs/sonstige/2026-10-23-agb-entwurf.md` (Aufbau sinngemäss nach
+einer Schweizer Unternehmerin mit demselben Geschäft, Wortlaut neu, Patricias Fakten),
+WP-Seite `/agb/` **4413, seit 23.10.2026 veröffentlicht** (Patricia hat sie danach direkt in WordPress
+angepasst; der Entwurf in `outputs/sonstige/` ist auf ihren Stand gezogen) über `node --env-file=.env deploy-agb.mjs` in
+`scripts/wordpress` (`--vorschau` baut nur). Veröffentlicht wird nach der Prüfung durch
+eine Fachperson, von Patricia. Danach gehört `https://mumlifebalance.ch/agb/` in das
+AGB-Feld **aller** Kassen. 🚨 Die Datenschutzerklärung (WP 3) ist vom Juli 2024 und nennt
+ThriveCart, Stripe, PayPal, Vimeo, Zoom, Telegram, ManyChat und den Meta-Pixel nicht.
+**Wo das Feld in ThriveCart liegt:** im Kassen-Editor das Kundenformular anklicken (erst den
+Block, dann ein Eingabefeld), links „Show terms & conditions checkbox“ → Textfeld
+`field_tandc_terms` (nimmt Text oder Link). Leeren mit Strg+A und Entf, dann Done und
+Save changes. Den Editor startet zuverlässig ein JS-Klick auf das **sichtbare** `.ui-builder-launch`
+(oft erst beim zweiten Mal); der Knopf „Launch Editor (Beta)“ daneben öffnet den neuen Editor mit
+Vorlagenauswahl — dort nichts wählen. Ist das Kästchen aus, erscheint das Textfeld erst nach dem
+Einschalten. Strg+A in einem leeren Feld tippt ein „a“ — vorher den Wert prüfen. 🚨 Offene „Seite verlassen?“-Fragen in alten Editor-Tabs blockieren den
+Editor in neuen Tabs; schliessen kann sie nur Patricia. Stand je Kasse:
+`outputs/salespages/thrivecart-kassen/`.
+
 ### Belege und Steuer-Export (`scripts/finanzen/`, seit 2026-09-24)
 
 **Patricia:** *„belege müssen aber mitabgelegt werden oder verknüpft werden.
@@ -3627,6 +3965,86 @@ des Teams, und das Repo ist public.
 die Rang-Qualifikation zählt die Platzierung. Mirella Castellazzi und Michelle
 Berger erscheinen deshalb je nach Bericht an verschiedenen Stellen.
 
+### Öl-Kompass — private Öl-App nach Vorbild „EO Guide“ (seit 2026-10-22)
+
+Patricia: *„ich will diese app mit meinem ölwissen nachbauen“* (EO Guide, Play Store) · **„Nur für mich“** ·
+*„ein umfassendes Sammelsurium auch mit den Tipps und Rezepten aus den Telegramgruppen“* · *„alle meine
+ölbücher und das aus enjoils soll auch rein“*. Artifact mit Reitern Suchen · Produkte · Themen · Tipps ·
+Meins (Favoriten, Vorrat, Notizen, eigene Namen — über `db`, sonst `localStorage`).
+
+```bash
+python scripts/oel-app/katalog-bauen.py        # 1 · Produktkatalog Europa → 247 Produkte (katalog.json)
+python scripts/oel-app/quellen.py              # 2 · alle Unterlagen als Abschnitte (24'410 aus 360 Quellen)
+python scripts/oel-app/produkte-bauen.py       # 3 · je Produkt ein Eintrag (nur fehlende; --nur a,b · --neu)
+python scripts/oel-app/themen-bauen.py         # 4 · je Anliegen aus anliegen.json ein Thema
+cd scripts/telegram-userbot && npx tsx src/oel-gruppen-holen.ts   # 5a · 40 Öl-Gruppen, ganze Geschichte + Fotos
+powershell -ExecutionPolicy Bypass -File scripts/doterra/ocr-windows.ps1 outputs/oel-app/roh/telegram/bilder -Filter *.jpg
+python scripts/oel-app/tipps-bauen.py          # 5b · Tipps und Rezepte aus den Gruppen
+python scripts/oel-app/app-bauen.py            # 6 · verknüpfen → outputs/oel-app/app/, dann Artifact publish
+```
+Lokal ansehen: `preview_start oel-kompass` (Port 4410). Seite: `scripts/oel-app/index.html` (Quelle).
+Quellen: Bücher (auch epub), **alle Enjoils-Hefte** (am 22.10. 47 fehlende aus OneDrive nachkopiert und
+per OCR gelesen), Ölschule, Academy-Öl-Schule, Emotions-Handbücher, Produktwissen, Ernährungsnotizen.
+`anliegen.json` ist seit 22.10. von 38 auf **100 Anliegen** erweitert — dieselbe Liste speist das Cockpit.
+Alles unter `outputs/oel-app/` ist gitignored. Ursprünglich „nur für mich“; seit Version 5 für
+Treuekundinnen gedacht (siehe unten) — nie auf der Homepage oder öffentlich verlinken.
+🚨 Claude über die Schnittstelle: ab `max_tokens` 32'000 verlangt das SDK Streaming (`messages.stream`
+mit `output_format`, dann selbst validieren) — `messages.parse` bricht sonst bei jedem Produkt ab.
+**Live:** https://claude.ai/artifact/5E8TREVhzeC8yJXo2KSRSq (privat, Version 1 vom 22.10.: 295 Produkte,
+100 Themen, 3'714 Tipps). Im Europa-Katalog fehlende Öle (Manuka, Wintergrün, Saisonmischungen, die
+2026-Neuheiten …) und deutsche Buchnamen (Zedernholz → cedarwood) stehen in
+`context/doTERRA/Produktwissen/oel-app-zusatzprodukte.json`.
+**Version 2 (22.10.):** Anwendungen in Reitern nach Art, farbiger Kopf mit Fläschchen, Rezepte als
+Wischkarten, Anliegen-Kacheln (Patricia: *„noch ziemlich steif und alle anwendungsideen sind
+untereinander aufgelistet“*). **Version 3: „Was mische ich heute?“** — `app-bauen.py` sammelt alle
+Rezepte aus Produkten, Themen und Gruppen-Tipps nach `rezepte.json` (2'000 mit Öl-Zutaten) und ordnet
+jede Zutatenzeile einem Produkt zu; die App zeigt „alles da“ / „fehlt nur eins“ samt den Flaschen, die
+am meisten freischalten würden. 🚨 Zutaten ohne Tropfenangabe mit Küchenwort („frische Kräuter wie
+Rosmarin“) sind kein Öl; Trägeröle, Wasser, Sprühflasche fehlen nie; eine Öl-Zeile ohne bekanntes
+Produkt (Kiefer, Benzoe) heisst „nicht zugeordnet“ und verhindert „alles da“ — lieber ehrlich als ein
+Rezept, für das in Wahrheit ein Öl fehlt.
+**Version 4: echte Produktfotos** der zehn Basisöle aus `context/doTERRA/Produktwissen/` (gestylte Bilder,
+quadratisch um die Flasche zugeschnitten) — `python scripts/oel-app/fotos-bauen.py`, Lage der Flasche je
+Foto in `FOTOS`, Kontrolle am Kontaktbogen `outputs/oel-app/fotos-kontaktbogen.jpg`. Neues Foto: Datei ablegen,
+Zeile ergänzen, Skript + `app-bauen.py`, beim Veröffentlichen `bilder/<id>.jpg` in `files` mitgeben.
+**Version 5 (22.10.):** **199 offizielle Produktfotos** aus dem doTERRA Europe Digital Marketing Kit
+(share.doterra.com, Canto, ohne Anmeldung lesbar) — `python scripts/oel-app/fotos-holen.py` (nur die
+freigestellte Flasche aus „Product Information“, `--zeigen` = Probelauf) → `fotos-bauen.py` (auf Weiss,
+480 px) → beim Veröffentlichen alle `bilder/*.jpg` in `files`. Dort liegen auch die deutschen
+Produktinfo-Blätter (PIP) und der Product Guide 2026 — noch nicht eingelesen.
+**Für Treuekundinnen** (Patricias Entscheid 22.10.: *„ich will DAS den kunden schicken … sie sollen das
+wissen genau so ansehen, wie wenn sie zu hause selber ein buch öffnen“* · Gruppen sind *„öffentlich
+zugängliche doterra gruppen“*). Deshalb ein **Hinweis** (Nachschlagewerk wie ein Buch, Aussagen gehören
+den Quellen, kein ärztlicher Rat, keine Haftung): beim ersten Öffnen, unter jeder Produkt-/Themenseite,
+unter „Meins“. Dazu **„Mehr aus deinen Ölen machen“** (die drei Pfade aus `business-wege.json`,
+Treueprogramm, Öle-Abend, „Kaffee“ als nächster Schritt — keine Einkommensversprechen). Teilen macht
+Patricia über das Share-Menü; Kundinnen haben kein `db`, Vorrat und Notizen bleiben dann auf ihrem Gerät.
+Seit Version 6 (23.10.) speichert die Seite unter `data/users/<id>/` (Fähigkeiten `db` + `user`) — vorher lagen
+`mein`/`notizen` als geteilte Sammlungen da, die jede angemeldete Leserin hätte sehen können.
+Empfängerinnen-Liste (15 Treuekundinnen, gitignored): `context/doterra/backoffice/kompass-kontakte-2026-10-23.md`.
+🚨 **Telegram bricht in grossen Gruppen an einzelnen unlesbaren Nachrichten ab** („Request was
+unsuccessful 5 time(s)“, immer an derselben Nummer). Das Skript liest seitenweise und fragt nach zwei
+Fehlern die nächsten 100 Nummern einzeln ab. In „Mama & Kind“ kamen so 27'000 statt 2'422 Nachrichten.
+Erst falsch als „kein Zugriff“ gemeldet — Patricia ist Mitglied.
+**Vollständiger Durchgang** (Patricia: *„die tipps und texte zu den ölen und die rezepte. das hätte ich
+schon gerne vollständig“*): `python scripts/oel-app/wissen-ausziehen.py` liest JEDEN Abschnitt (16'914 ohne
+Dubletten, Coaching und Business, Ernährungsbücher nur mit Öl-Bezug → 249 Pakete, ~47 USD) und zieht jede
+Aussage zu einem Öl und jedes Rezept mit Öl heraus. `app-bauen.py` legt die Aussagen je Produkt nach
+`daten/wissen/<id>.json` (App lädt sie erst beim Aufklappen „📚 Alles aus deinen Quellen“) und die Rezepte
+zu den übrigen. `--trocken` zählt nur. 🚨 Ganze Bücher kommen bewusst nicht hinein — nur Öl-Texte und Rezepte.
+🚨 **Je Quelle eigene Pakete** (488, ~60 USD beim ersten Mal): Im ersten Entwurf lief alles in einem Strom —
+ein neues Heft hätte alle Paketgrenzen dahinter verschoben und fast alles neu bezahlt. Paketname = Inhalt.
+**Quercheck 22.10. am Enjoils-Heft „Melisse“ (Herbst 25):** vor dem vollständigen Durchgang war höchstens die
+Hälfte abgebildet — Steckbrief und Atemwege ja, Herz-Kreislauf und Verdauung nein, **1 von 8 Rezepten**.
+**Neues nachführen:** `python scripts/oel-app/nachfuehren.py [--trocken]` — holt neue Dateien aus OneDrive
+(`Patricia/Arbeit&Politik/Business/doTERRA`, z.B. ein neues Enjoils-Heft) nach `context/doTERRA/`, OCR,
+`quellen.py`, vollständiger Durchgang nur für neue Pakete, `app-bauen.py`. Veröffentlichen danach im Chat.
+⚠️ **Offen (API-Limit erreicht am 22.10., wieder frei ab 01.11.):** Task `oel-kompass-fertigstellen` macht
+alles Folgende plus den vollständigen Durchgang: `tipps-bauen.py` für die 24'586
+nachgeholten „Mama & Kind“-Nachrichten und das abgerissene Kosmetik-Paket · `produkte-bauen.py --nur …`
+für die Öle mit unter 8 Stellen (Air, Amavi u.a. — die Suche nach Alias und Quellentitel ist schon
+eingebaut, Air findet jetzt 64 statt 0 Stellen) · danach `app-bauen.py` und neu veröffentlichen.
+
 ### Bereich doTERRA im Cockpit (seit 2026-10-13, Version 99)
 
 Patricia: *„das ölwissen würde ich gerne vorerst in mein cockpit integrieren"* · Symptomcheck *„in ALLEN
@@ -3656,6 +4074,18 @@ mitbenutzen, gleichzeitige Nutzung kann Telegram sperren. Läuft als **Schritt 4
 `cockpit-daten-abgleich`**: Claude sortiert in auftrag/tipp/training → `doterra-wissen/eingang`;
 Patricia übernimmt oder verwirft im Cockpit; übernommene Tipps/Trainings arbeitet der Task in die
 JSON-Quellen ein (`telegram/eingearbeitet.json`).
+
+**Rise to Lead → direkt in die Aufgaben** (seit 23.10.2026, Patricia: *„routine einrichten, die die gruppe scrappt
+und mir täglich in meinen todos das reingibt“*): Schritt **4b** im Task `cockpit-daten-abgleich` holt die zwei
+Mentoring-Gruppen („💛 RISE TO LEAD: SILVER TO GOLD🌈“, „Rise to lead: EXCHANGE“) mit
+`npm --prefix scripts/telegram-userbot run rise-to-lead` nach `outputs/cockpit/abgleich/business-telegram/`
+(gitignored, Feld `von` seit 23.10.) und hängt **nur Aufträge der Mentorinnen** (Danny Hülsen, Claudia Brunner)
+als kleine Schritte an `daten/aufgaben` an — Titel „Rise to Lead · Termin/Lernen/Kundinnen/Team gewinnen/Überblick: …“,
+Kennung `rtl-…`, nur anhängen mit `if_version`. Stand je Gruppe in `eingetragen.json`. Übersicht vom 23.10.:
+`context/doterra/backoffice/rise-to-lead-2026-10.md`. 🚨 Sprachnachrichten und Videos liest die Routine nicht — sie
+legt nur „anhören“ als Aufgabe an. 🚨 Der allgemeine Telegram-Abgleich (Schritt 4) hatte bis 23.10. nie etwas
+abgelegt (`outputs/cockpit/abgleich/telegram/` leer) — ungeklärt.
+`oel-gruppen-holen.ts` nimmt dafür `--muster` und `--ziel`; ohne Angaben holt es wie bisher die Öl-Gruppen.
 
 **Öffentliche Fassung Öl-Wissen** (zum Teilen mit Kundinnen, ohne `compliance`/`patricia`):
 https://claude.ai/artifact/XfZKXY3kd7qRg71B9ZEzvM — gleiche Quelle, `wissensbasis-bauen.py`, dann

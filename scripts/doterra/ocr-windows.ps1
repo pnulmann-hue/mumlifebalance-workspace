@@ -1,7 +1,7 @@
-# Texterkennung mit der in Windows eingebauten OCR (Windows.Media.Ocr), Sprache Deutsch.
+﻿# Texterkennung mit der in Windows eingebauten OCR (Windows.Media.Ocr), Sprache Deutsch.
 #   powershell -ExecutionPolicy Bypass -File scripts/doterra/ocr-windows.ps1 <ordner-mit-png>
 # Schreibt neben jedes Bild eine .txt mit dem erkannten Text. Bereits erkannte Bilder werden übersprungen.
-param([Parameter(Mandatory = $true)][string]$Ordner)
+param([Parameter(Mandatory = $true)][string]$Ordner, [string]$Filter = '*.png')   # Öl-App: '*.jpg' für Telegram-Bilder
 Add-Type -AssemblyName System.Runtime.WindowsRuntime
 $null = [Windows.Storage.StorageFile, Windows.Storage, ContentType = WindowsRuntime]
 $null = [Windows.Media.Ocr.OcrEngine, Windows.Foundation, ContentType = WindowsRuntime]
@@ -14,7 +14,7 @@ function Warte($op, [Type]$typ) { $t = $asTask.MakeGenericMethod($typ).Invoke($n
 $engine = [Windows.Media.Ocr.OcrEngine]::TryCreateFromUserProfileLanguages()
 if (-not $engine) { Write-Error 'Keine OCR-Sprache installiert'; exit 1 }
 
-Get-ChildItem -Path $Ordner -Filter *.png -Recurse | ForEach-Object {
+Get-ChildItem -Path $Ordner -Filter $Filter -Recurse | ForEach-Object {
     $txt = [IO.Path]::ChangeExtension($_.FullName, '.txt')
     if (Test-Path $txt) { return }
     $file = Warte ([Windows.Storage.StorageFile]::GetFileFromPathAsync($_.FullName)) ([Windows.Storage.StorageFile])

@@ -117,7 +117,12 @@ FOLIEN["l11-abgrenzung"] = folie("l11-abgrenzung",
         "ohne technische Ausbildung.",
       ], 34),
     "Die drei Punkte nehmen die drei häufigsten Ausreden vorweg. Sag den dritten ohne Pathos — "
-    "als Tatsache, nicht als Motivationsspruch.")
+    "als Tatsache, nicht als Motivationsspruch. "
+    "Zum Schluss der Lektion die eine Vorbereitung ansagen: "
+    "„Wenn du mitmachen willst, leg dir jetzt gleich ein Konto bei Claude an. "
+    "Das Gratis-Konto reicht für die ersten Kapitel völlig.“ "
+    "Das ist die einzige Handlung, die vor Modul 2 wirklich nötig ist — "
+    "und wer sie jetzt macht, steigt später nicht aus.")
 
 FOLIEN["l11-weiter"] = folie("l11-weiter",
     eyebrow("Als Nächstes", ORANGE)
@@ -181,9 +186,12 @@ FOLIEN["l12-stufe3"] = folie("l12-stufe3",
 FOLIEN["l12-satz"] = folie("l12-satz",
     ('<h2 style="font-family:%s; font-size:92px; font-weight:700; line-height:1.15; color:%s">'
      'Auf jeder Stufe<br>ein Gewinn.<br>Niemand muss bis nach oben.</h2>' % (DISPLAY, CREME))
-    + p("📎 Die Roadmap zum Ausdrucken liegt unter diesem Video.", 32, PETROL),
+    + p("📎 Roadmap und Prompt-Bibliothek liegen unter diesem Video.", 32, PETROL),
     "Das ist der Satz, der die Angst nimmt. Lass ihn zwei Sekunden stehen, bevor du weitersprichst. "
-    "Verweis am Schluss auf die Beilage.",
+    "Dann die zwei Beilagen nennen: die Roadmap zum Ausdrucken — und die Prompt-Bibliothek, "
+    "die genau nach diesen drei Stufen sortiert ist. Ein Satz dazu reicht: "
+    "„Da steht jeder Auftrag drin, den du im Kurs brauchst. Du musst sie jetzt nicht lesen, "
+    "nur abspeichern — ich sage dir in jeder Lektion, welche Nummer dran ist.“",
     stil=SEK_DUNKEL, uebergang="push")
 
 # ── Lektion 1.3 ──────────────────────────────────────────────────────
@@ -312,6 +320,11 @@ FOLIEN["l15-checkliste"] = folie("l15-checkliste",
         "Ich habe ein Konto und komme hinein",
       ], 34)
     + p("📎 Die Checkliste zum Abhaken liegt unter diesem Video.", 30, PETROL),
+    "Die ersten drei Haken nicht vorlesen — die hat sie gerade gehört. "
+    "Stattdessen auf den vierten zeigen: „Drei davon hast du eben gehört. "
+    "Beim vierten wird es ernst — leg dir jetzt das Konto an, bevor du Modul 2 startest. "
+    "Ohne Konto kannst du da nicht mitmachen.“ "
+    "Das ist die einzige echte Handlung in diesem ganzen Modul. "
     "Bitte sie ausdrücklich, das jetzt zu machen und nicht später. Später heisst nie.")
 
 FOLIEN["l15-weiter"] = folie("l15-weiter",

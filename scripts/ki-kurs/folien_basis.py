@@ -30,6 +30,24 @@ HELL      = "#fdfcf8"
 DISPLAY = "'Philosopher', Georgia, serif"
 TEXT    = "'Source Sans 3', Verdana, sans-serif"
 
+# 🚨 Diese beiden Schriften muessen auf dem Rechner INSTALLIERT sein, sobald
+#    jemand die Praesentation als PowerPoint oeffnet (Patricias Befund vom
+#    20.10.2026). Im Browser holt die Folie sie von hier; PowerPoint kann das
+#    nicht und ersetzt sie durch eine breitere. Dann braucht ein Satz, der mit
+#    Philosopher in eine Zeile passt, zwei — der Textrahmen behaelt aber seine
+#    Hoehe, und der Rest legt sich ueber den naechsten Block:
+#
+#        Dein Business, deine Kundin, dein Ton.
+#        Ton.
+#        Ohne das schreibt sie fuer irgendwen.   <- halb verdeckt
+#
+#    Dieselbe Ursache zerreisst die Buchstabenabstaende in den Ueberschriften
+#    („D rei Z utaten“). Im Browser ist nichts davon zu sehen — wer den Fehler
+#    dort sucht, sucht am falschen Ort.
+#
+#    Welche Stellen das trifft, misst scripts/ki-kurs/folien-platz-pruefen.mjs:
+#    es rendert jede Folie einmal mit und einmal ohne die Schriften und meldet
+#    jeden Block, dessen Zeilenzahl dabei kippt.
 HREF = ("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700"
         "&family=Source+Sans+3:wght@300;400;600;700&display=swap")
 
@@ -125,7 +143,7 @@ def checkliste(sid, nr, punkte, modulnr, notiz):
         eyebrow("Lektion " + nr)
         + h2("Bevor du weitermachst")
         + liste(punkte, 34)
-        + p("📎 Die Checkliste zum Abhaken liegt unter diesem Video.", 30, PETROL),
+        + beilage("Die Checkliste zum Abhaken liegt unter diesem Video."),
         notiz)
 
 
@@ -181,3 +199,39 @@ def schreibe(ziel, titel, folien, order, sections, stand="2026-09-22T09:00:00Z")
     for k, v in sections.items():
         print("    %-10s ab %s" % (k, v["start"]))
     return len(order)
+
+
+# ── Download-Vermerke ────────────────────────────────────────────────
+# 🚨 Patricia am 22.10.2026: „ich will dass in der praesentation jeweils der
+#    vermerk auf die downloads steht, damit ich es nicht vergesse zu sagen."
+#    Deshalb zwei Dinge, nicht eins:
+#      1 · beilage() setzt die Zeile auf die Lektionsfolie selbst
+#      2 · downloads() baut am Modulende eine Uebersichtsfolie
+#    Die Zeile allein reicht nicht — beim Aufnehmen scrollt sie durch und die
+#    kleine Petrol-Zeile unten geht unter. Die Uebersichtsfolie ist der Halt.
+def beilage(text, farbe=ORANGE):
+    """Die Download-Zeile auf einer Lektionsfolie — orange, damit sie auffaellt."""
+    return ('<div style="display:flex; gap:14px; align-items:center; background:%s; '
+            'padding:20px 28px; border-radius:14px; border-left:6px solid %s">'
+            '<span style="font-size:30px">📎</span>'
+            '<p style="font-size:28px; font-weight:600; line-height:1.4; color:%s">%s</p></div>'
+            % (HELL, farbe, TINTE, text))
+
+def downloads(sid, modulnr, posten, notiz):
+    """Uebersichtsfolie: alles, was in diesem Modul unter einem Video liegt.
+
+    posten = Liste von (lektion, name) — in der Reihenfolge des Moduls.
+    """
+    zeilen = "".join(
+        '<div style="display:flex; gap:28px; align-items:baseline; background:%s; '
+        'padding:22px 28px; border-radius:14px">'
+        '<span style="font-size:28px; font-weight:700; color:%s; min-width:110px">%s</span>'
+        '<span style="font-size:28px; line-height:1.4; color:%s">%s</span></div>'
+        % (HELL, PETROL, lek, TINTE, name) for lek, name in posten)
+    return folie(sid,
+        eyebrow("Modul %d · zum Mitnehmen" % modulnr, ORANGE)
+        + h2("Das liegt unter den Videos")
+        + ('<div style="display:flex; flex-direction:column; gap:14px">%s</div>' % zeilen)
+        + p("Sag bei jeder Lektion laut, dass die Datei darunter liegt. Wer sie nicht "
+            "herunterlädt, macht die Übung nicht.", 28, GEDAEMPFT),
+        notiz)

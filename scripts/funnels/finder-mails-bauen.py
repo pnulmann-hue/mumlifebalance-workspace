@@ -85,7 +85,7 @@ def seite(titel, preheader, headline, subline, koerper, ps):
           <tr>
             <td style="background-color:{petrol};background:linear-gradient(135deg,{dunkelblau} 0%,{mittelblau} 60%,{petrol} 100%);border-radius:16px 16px 0 0;padding:48px 40px;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr><td style="padding-bottom:20px;"><span style="background-color:{orange};color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">mumlifebalance &middot; deine Idee</span></td></tr>
+                <tr><td style="padding-bottom:20px;"><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;"><tr><td bgcolor="{orange}" style="background-color:{orange};border-radius:20px;padding:6px 14px;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;line-height:1.5;text-transform:uppercase;">mumlifebalance &middot; deine Idee</td></tr></table></td></tr>
                 <tr><td><h1 style="margin:0 0 16px 0;font-family:Georgia,serif;font-size:32px;font-weight:bold;color:{creme};line-height:1.25;">{headline}</h1></td></tr>
                 <tr><td><p style="margin:0;font-family:Georgia,serif;font-style:italic;font-size:16px;color:rgba(241,236,221,0.72);line-height:1.5;">{subline}</p></td></tr>
               </table>

@@ -12,7 +12,7 @@ import { createPage, updatePage, findPageBySlug } from './wp-api.js';
 
 // 🚨 Offene Adressen — solange sie mit '#' beginnen, zeigen die Knöpfe ins Leere.
 const TOOL = 'https://stimm-check.vercel.app/';                    // Stimm-Check-Tool auf Vercel
-const MASTERCLASS = 'https://mumlifebalance.activehosted.com/f/69';
+const MASTERCLASS = 'https://mumlifebalance.ch/ki-masterclass/';   // seit 23.10.2026 die Aufzeichnung (vorher Anmeldeformular 69)
 
 const SEITEN = [
   { quelle: '../../outputs/salespages/stimm-check-los.html', slug: 'stimm-check-los', titel: 'Stimm-Check — los geht’s' },

@@ -432,6 +432,11 @@ def hook_aufloesen(spec, video_dauer):
         # Fade) stand der ganze Text erst nach knapp einer Sekunde da — Patricia,
         # 29.09.2026: „mich stoert, dass der text erst spaeter eingeblendet wird".
         "sofort": bool(h.get("sofort", False)),
+        # Die orange Zeile leicht versetzt und nicht groesser als die erste
+        # (Patricia, 21.10.2026: „den orangen 2. teil leicht zeitversetzt … nicht
+        # grösser als der erste teil"). Sekunden nach Hook-Start bzw. Pixel.
+        "betont_ab": h.get("betont_ab"),
+        "betont_px": h.get("betont_px"),
         "position": float(h.get("position", 52 if stil == "marker" else 12)),
         "start": round(start, 3),
         "dauer": round(dauer, 3),
@@ -481,8 +486,11 @@ def hook_html(hook):
     if hook["oben"]:
         teile.append('        <span class="sf-normal">%s</span>' % html_escape(hook["oben"]))
     if hook["betont"]:
-        teile.append('        <span class="sf-akzent" style="color:%s">%s</span>'
-                     % (hook["akzent"], html_escape(hook["betont"])))
+        groesse = ""
+        if hook.get("betont_px"):
+            groesse = "; font-size:%.0fpx; line-height:1.22" % float(hook["betont_px"])
+        teile.append('        <span class="sf-akzent" style="color:%s%s">%s</span>'
+                     % (hook["akzent"], groesse, html_escape(hook["betont"])))
     if hook["klein"]:
         teile.append('        <span class="sf-normal">%s</span>' % html_escape(hook["klein"]))
     teile.append("      </div>")
@@ -511,6 +519,9 @@ def hook_anims(hook):
             z.append('      tl.fromTo(".hk-balken", {scaleX:0, rotate:-1.2}, '
                      '{scaleX:1, rotate:-1.2, duration:0.35, ease:"power2.out", '
                      'immediateRender:false}, %.3f);' % (s + 0.1))
+        if hook["stil"] == "serif" and hook["betont"] and hook.get("betont_ab") is not None:
+            z.append('      tl.from(".sf-akzent", {opacity:0, y:14, duration:0.4, '
+                     'ease:"power2.out"}, %.3f);' % (s + float(hook["betont_ab"])))
         if hook["zusatz"]:
             ab, _ = zusatz_zeit(hook)
             z.append('      tl.from(".sf-zusatz", {opacity:0, y:12, duration:0.4, '

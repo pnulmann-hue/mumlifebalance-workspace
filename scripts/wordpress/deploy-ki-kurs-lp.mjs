@@ -28,7 +28,14 @@ for (const [datei, info] of Object.entries(BILDER)) {
 }
 writeFileSync(MEDIEN, JSON.stringify(medien, null, 1));
 
-execSync('python scripts/salespage-design/ki-kurs-bauen.py', { cwd: fileURLToPath(new URL('../../', import.meta.url)), stdio: 'inherit' });
+// --phase frueh|regulaer|zu|offen (ohne Angabe: Vorgabe im Generator). Ab Sa 24.10.2026: zu · ab Mo 30.11.2026: offen.
+const pi = process.argv.indexOf('--phase');
+const phase = pi > 0 ? process.argv[pi + 1] : '';
+if (phase && !['frueh', 'regulaer', 'zu', 'offen'].includes(phase)) throw new Error('--phase muss frueh, regulaer, zu oder offen sein');
+execSync('python scripts/salespage-design/ki-kurs-bauen.py', {
+  cwd: fileURLToPath(new URL('../../', import.meta.url)), stdio: 'inherit',
+  env: { ...process.env, ...(phase ? { KI_PHASE: phase } : {}) },
+});
 
 const html = readFileSync(new URL('ki-kurs-wp.html', ORDNER), 'utf8');
 if (/<style|<script/i.test(html)) throw new Error('<style>/<script> blockt die Firewall');

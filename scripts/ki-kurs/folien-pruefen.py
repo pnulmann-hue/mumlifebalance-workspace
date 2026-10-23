@@ -90,17 +90,26 @@ for d in dateien:
 # Encoding-Aerger zu vermeiden. Die Blacklisten-Pruefung sieht das nicht.
 # Geprueft wird nur der SICHTBARE Text; Sprechnotizen duerfen alles.
 AUSNAHMEN_UML = ("bauen","dauert","gedauert","dauern","dauernd","Frauen","heute","zuerst","Abenteuer","neues","neue",
+                 # 22.10.2026: „Vertrauen" war der einzige Fund in Modul 4 — und er war falsch.
+                 "Vertrauen","vertrauen","traue","traut","zutrauen","Trauer",
                  "auch","auf","aus","laut","Haus","raus","draussen","brauchst","Frau",
                  "schauen","genau","genauso","blau","grau","Pause","Pausen","baue",
                  "baut","gebaut","glaube","glaubt","kaufe","kauft","gekauft","laufen",
-                 "Verlauf","zuhause","Hause","teuer","neuer","neuen","aktuell","Statue")
+                 "Verlauf","zuhause","Hause","teuer","neuer","neuen","aktuell","Statue",
+                 "individuell","individuelle","individuellen","visuell","visuelle",
+                 "manuell","manuelle","aktuelle","aktuellen","eventuell")
 uml = re.compile(r"\b\w*(ae|oe|ue)\w*\b")
 for d in dateien:
     sid = os.path.basename(d)[:-5]
     txt = sichtbar(io.open(d, encoding="utf-8").read())
     for m in uml.finditer(txt):
         w = m.group(0)
-        if any(w.lower().startswith(a.lower()) for a in AUSNAHMEN_UML):
+        # Eine Ausnahme zaehlt auch am Wortende ("nachschauen" zu "schauen"),
+        # aber nur ab 5 Zeichen. Sonst wuerde "auf" jedes Wort decken, das
+        # darauf endet, und ein echter umschriebener Umlaut rutschte durch.
+        if any(w.lower().startswith(a.lower()) or
+               (len(a) >= 5 and w.lower().endswith(a.lower()))
+               for a in AUSNAHMEN_UML):
             continue
         funde += 1
         print("  [%-18s] Umschriebener Umlaut: %s" % (sid, w))

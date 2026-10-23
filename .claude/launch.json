@@ -336,6 +336,18 @@
         "C:/Users/pnulm/familie/lokal.mjs"
       ],
       "port": 4410
+    },
+    {
+      "name": "oel-kompass",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/oel-app/app",
+        "-l",
+        "4410"
+      ],
+      "port": 4410
     }
   ]
 }

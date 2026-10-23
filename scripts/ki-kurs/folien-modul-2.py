@@ -138,10 +138,58 @@ F["l23-satz"] = statement("l23-satz",
     zusatz="📎 Die Vorlage mit allen sechs Bausteinen liegt unter diesem Video.")
 
 F["l23-weiter"] = weiter("l23-weiter", "Als Nächstes",
-    "Die Buch-Technik",
-    "Falls du jetzt vor einem leeren Dokument sitzt: In der nächsten Lektion lässt du die KI fragen, "
-    "statt selbst zu formulieren.",
-    "Nimm den Einwand vorweg, den sie gerade hat.")
+    "Zwei Wege zum selben Dokument",
+    "Hast du bisher mit ChatGPT gearbeitet? Dann holen wir dein Wissen von dort. "
+    "Fängst du neu an, lässt du die KI fragen.",
+    "Sag deutlich, dass es zwei Wege gibt und jede nur einen davon braucht. "
+    "Wer neu anfängt, darf die nächste Lektion überspringen.")
+
+# ── 2.3b ChatGPT-Umzug ───────────────────────────────────────────────
+F["l23b-titel"] = lektionstitel("l23b-titel", "2.3b", "Dein Wissen aus ChatGPT",
+    "Nur für dich, wenn du dort schon gearbeitet hast. Sonst gleich weiter zu 2.4.",
+    "Gleich im ersten Satz sagen, dass diese Lektion übersprungen werden darf. "
+    "Das nimmt den Druck bei allen, die neu anfangen.")
+
+F["l23b-weg"] = folie("l23b-weg",
+    eyebrow("Lektion 2.3b")
+    + h2("Du gehst hin und her — dreimal")
+    + reihe([
+        karte("1 · In Claude", ["Profilbild, Einstellungen, " + zit("Gedächtnis") + ".",
+                                "Dort der Knopf zum Import.",
+                                "Du bekommst einen fertigen Text."]),
+        karte("2 · In ChatGPT", ["Text einfügen und abwarten.",
+                                 "Vorher unter Personalisierung alle Häkchen setzen — "
+                                 "sonst kommt nur die Hälfte."], ORANGE),
+        karte("3 · Zurück in Claude", ["Antwort einfügen.",
+                                       zit("Zum Gedächtnis hinzufügen") + "."]),
+      ])
+    + p("📎 Findest du den Knopf nicht, nimm den Weg von Hand — Nummer 3 in deiner "
+        "Prompt-Bibliothek. Der geht immer.", 30, PETROL),
+    "Das live zeigen, Klick für Klick. Und gleich dazusagen, dass der Menüpunkt bei ihr "
+    "woanders stehen kann: die Anbieter bauen ständig um, bei mir lag er erst unter "
+    "Fähigkeiten und steht jetzt unter Gedächtnis. Wichtig ist nur, dass das Gedächtnis "
+    "überhaupt eingeschaltet ist — sonst ist der ganze Bereich gar nicht da. Und das geht "
+    "nur im Browser oder in der App, nicht in Claude Code. Zwei Dinge ausdrücklich sagen: "
+    "die Häkchen bei der Personalisierung in ChatGPT, sonst greift er nicht auf alles zu. "
+    "Und wer dort mit Projekten arbeitet, macht dasselbe nochmal im Projekt-Chat — da liegt "
+    "meistens das Wissen, auf das es ankommt.")
+
+F["l23b-sieben"] = folie("l23b-sieben",
+    eyebrow("Lektion 2.3b")
+    + h2("Und jetzt der Teil, den die meisten auslassen")
+    + liste([
+        "<b>Lies es durch, bevor du es behältst.</b> So eine Zusammenfassung wird gern "
+        "höflich und schreibt dir Eigenschaften zu, die du nie gesagt hast.",
+        "<b>Frag nach, was davon wirklich von dir kommt.</b> Was zu allgemein ist, "
+        "nützt dir nichts — und was erfunden wurde, steht sonst jahrelang in deinem Brief.",
+        "<b>Deine alten Chats bleiben, wo sie sind.</b> Du ziehst nichts um ausser "
+        "deinem Wissen, und das liegt danach in einem Dokument, das dir jedes "
+        "Programm lesen kann.",
+      ], 32)
+    + p("📎 Der Auftrag zum Durchsieben steht als Nummer 3 in deiner Prompt-Bibliothek.",
+        30, PETROL),
+    "Das ist der Unterschied zwischen umziehen und übernehmen. Zeig an deinem eigenen "
+    "Ergebnis einen Satz, der nicht stimmt — das überzeugt mehr als die Erklärung.")
 
 # ── 2.4 Buch-Technik ─────────────────────────────────────────────────
 F["l24-titel"] = lektionstitel("l24-titel", "2.4", "Die Buch-Technik",
@@ -273,6 +321,7 @@ ORDER = ["cover",
  "l21-titel","l21-zutaten","l21-vergleich","l21-satz","l21-weiter",
  "l22-titel","l22-muster","l22-korrektur","l22-warum","l22-weiter",
  "l23-titel","l23-bausteine-a","l23-bausteine-b","l23-satz","l23-weiter",
+ "l23b-titel","l23b-weg","l23b-sieben",
  "l24-titel","l24-wie","l24-offen","l24-weiter",
  "l25-titel","l25-proben","l25-merken","l25-weiter",
  "l26-titel","l26-was","l26-satz",
@@ -283,6 +332,7 @@ SECTIONS = {
  "l21": {"description": "Lektion 2.1 — die drei Zutaten eines guten Auftrags.", "start": "l21-titel"},
  "l22": {"description": "Lektion 2.2 — woran man KI-Text erkennt.", "start": "l22-titel"},
  "l23": {"description": "Lektion 2.3 — der Business-Brief in sechs Bausteinen.", "start": "l23-titel"},
+ "l23b": {"description": "Lektion 2.3b — Wissen aus ChatGPT mitnehmen.", "start": "l23b-titel"},
  "l24": {"description": "Lektion 2.4 — die Buch-Technik zum Ausfüllen.", "start": "l24-titel"},
  "l25": {"description": "Lektion 2.5 — die eigene Stimme einfangen.", "start": "l25-titel"},
  "l26": {"description": "Lektion 2.6 — Projekte statt Einzelchats.", "start": "l26-titel"},

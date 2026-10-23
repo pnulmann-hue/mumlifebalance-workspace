@@ -9,6 +9,7 @@
     "build": "tsc",
     "start:prod": "node dist/index.js",
     "abgleich": "tsx src/abgleich.ts",
+    "rise-to-lead": "tsx src/oel-gruppen-holen.ts --muster \"rise to lead\" --ziel outputs/cockpit/abgleich/business-telegram",
     "abgleich-anmelden": "tsx src/abgleich-anmelden.ts"
   },
   "dependencies": {

@@ -98,7 +98,9 @@ def rumpf_bauen(rumpf):
         if not z or z.startswith(("|", "#", ">")):
             continue
         # Ein Absatz, der NUR aus einem Link-Pfeil besteht, wird ein Knopf
-        m = re.fullmatch(r"\*\*→\s*\[([^\]]+)\]\((https?://[^)]+)\)\*\*", z)
+        # %CONFIRMLINK% ist der Bestaetigungslink, den ActiveCampaign in der
+        # Opt-in-Mail selbst einsetzt
+        m = re.fullmatch(r"\*\*→\s*\[([^\]]+)\]\((https?://[^)]+|%CONFIRMLINK%)\)\*\*", z)
         if m:
             aus.append(knopf(m.group(1), m.group(2)))
             continue
@@ -135,7 +137,12 @@ def rumpf_bauen(rumpf):
     return "\n              ".join(aus)
 
 
-def seite(m, badge):
+def seite(m, badge, absender=False):
+    # Die Opt-in-Mail geht ausserhalb jeder Kampagne raus — dort setzt AC die
+    # Absenderadresse nicht von selbst darunter, also steht sie im Fuss.
+    fuss_extra = (f'\n          <p style="margin:12px 0 0 0;font-family:Arial,sans-serif;font-size:11px;'
+                  f'color:{C["petrol2"]};line-height:1.6;">Gesendet an %EMAIL% &middot; '
+                  f'%SENDER-INFO-SINGLELINE%</p>') if absender else ""
     return f"""<!DOCTYPE html>
 <html lang="de">
 <head>
@@ -151,7 +158,7 @@ def seite(m, badge):
       <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;">
 
         <tr><td style="background-color:{C['tinte']};background:linear-gradient(135deg,{C['tinte']} 0%,{C['tinte2']} 60%,{C['petrol']} 100%);border-radius:16px 16px 0 0;padding:44px 40px;">
-          <span style="background-color:{C['orange']};color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">{html.escape(badge)}</span>
+          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;"><tr><td bgcolor="{C['orange']}" style="background-color:{C['orange']};border-radius:20px;padding:6px 14px;color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:2px;line-height:1.5;text-transform:uppercase;">{html.escape(badge)}</td></tr></table>
           <h1 style="margin:18px 0 0 0;font-family:Georgia,serif;font-size:29px;font-weight:bold;color:{C['creme']};line-height:1.3;">{inline(m["betreff"])}</h1>
         </td></tr>
 
@@ -161,7 +168,7 @@ def seite(m, badge):
 
         <tr><td style="background-color:{C['tinte']};border-radius:0 0 16px 16px;padding:26px 40px;text-align:center;">
           <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:{C['creme']};text-transform:uppercase;letter-spacing:1px;">Patricia Ulmann &middot; Mum Life Balance</p>
-          <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:{C['petrol2']};">Natürlich mehr Energie im Mama-Alltag</p>
+          <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:{C['petrol2']};">Natürlich mehr Energie im Mama-Alltag</p>{fuss_extra}
         </td></tr>
 
       </table>
@@ -182,14 +189,18 @@ def main():
         print(f"\n{os.path.basename(pfad)} — {len(mails)} Mails")
         for m in mails:
             tag = re.search(r"Tag (\d)", m["titel"])
-            badge = f"{badge_basis} · {'Tag ' + tag.group(1) if tag else 'Mail ' + m['nr']}"
+            if art == "kickstart" and m["nr"] == "0":
+                badge = f"{badge_basis} · Bestätigung"
+            else:
+                badge = f"{badge_basis} · {'Tag ' + tag.group(1) if tag else 'Mail ' + m['nr']}"
             datei = f"{art}-mail-{m['nr']}.html"
             # Mail 1 des Kickstarts ist von Hand gebaut und bleibt, wie sie ist
             # Mail 1 und 2 des Kickstarts sind aus Patricias AC-Fassung von Hand
             # gebaut (sie weicht von der Markdown ab) — nicht ueberschreiben.
             if datei in ("kickstart-mail-1.html", "kickstart-mail-2.html", "kickstart-mail-3.html"):
                 print(f"  {datei:26s} übersprungen (von Hand gebaut)"); continue
-            open(os.path.join(ZIEL, datei), "w", encoding="utf-8").write(seite(m, badge))
+            opt_in = art == "kickstart" and m["nr"] == "0"
+            open(os.path.join(ZIEL, datei), "w", encoding="utf-8").write(seite(m, badge, absender=opt_in))
             print(f"  {datei:26s} {len(m['rumpf']):5d} Zeichen | {m['betreff'][:46]}")
             gesamt += 1
     print(f"\n{gesamt} Mails gebaut in {ZIEL}")
