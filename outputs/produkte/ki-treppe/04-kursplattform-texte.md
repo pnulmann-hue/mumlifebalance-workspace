@@ -428,24 +428,33 @@ wie nach Modul 1 — du hakst einfach weiter ab.
 
 ### 3.2 · Deine erste Verbindung
 
-**In dieser Lektion:** Was eine Verbindung ist, was sie dir abnimmt — und
-worauf du achtest, wenn du eine einrichtest.
+**In dieser Lektion:** Einmal einrichten, und ab dann schaut sie selbst nach,
+statt dass du es ihr jedes Mal erzählst.
 
 **Das Wichtigste in Kürze:**
 
-- Eine Verbindung heisst: Sie darf in ein Programm hineinschauen, das du
-  sowieso benutzt — deine Planung, deinen Kalender, deine Ablage. Mit deinen
-  Augen, nicht mit fremden.
-- **Warum das mehr bringt, als es klingt:** Was dort steht, musst du nie mehr
-  erzählen. Sie liest es. Beim ersten Mal wirkt das wie ein netter Zusatz, beim
-  dritten Mal willst du es nicht mehr hergeben.
-- **Ich zeige hier bewusst kein bestimmtes Programm.** Jede arbeitet mit
-  anderen Werkzeugen, und der Weg ist überall derselbe: in den Einstellungen
-  die Verbindung suchen, anmelden, bestätigen was sie sehen darf.
-- 🚨 **Eine Verbindung ist ein Zugang.** Gib nur die Bereiche frei, die sie
-  wirklich braucht — alles andere bleibt zu. Modul 10 geht darauf ein.
-- Danach einmal ausprobieren: Stell eine Frage, deren Antwort nur in deiner
-  eigenen Planung steht. Daran merkst du, ob es angekommen ist.
+- **Ohne Verbindung tippst du jedes Mal ab, was ansteht.** Wenn sie dir eine
+  Checkliste über deine Termine machen soll, muss sie die Termine kennen — und
+  die kennt sie nur, wenn du sie ihr aufzählst. Mit Verbindung schaut sie selbst.
+- **Wie es geht:** in den Einstellungen die Verbindungen suchen, auswählen,
+  anmelden, bestätigen worauf sie zugreifen darf. Ich mache es im Video Klick
+  für Klick mit — am Beispiel von Google Sheets und Gmail.
+- **Welches Programm du anhängst, ist deine Sache.** Ich zeige das Prinzip, nicht
+  ein bestimmtes Werkzeug — jede arbeitet mit anderen. Der Weg ist überall gleich.
+- 🚨 **Gib nur die Bereiche frei, die du wirklich brauchst.** Nicht Kraut und
+  Rüben und alles. Modul 10 geht darauf ein.
+- **Und dann wird eine Routine daraus:** Du sagst einfach „mach das jeden Morgen
+  um acht" — oder legst die Aufgabe unter *Geplant* selbst an, mit Anweisung und
+  Zeitplan.
+- 🚨 **Wann der Computer laufen muss:** Hängt sie an etwas Online — Gmail,
+  deiner Planung —, läuft die Routine von allein, auch bei zugeklapptem Laptop.
+  Braucht sie Dateien von deinem Rechner, muss der an sein.
+- **Sie fragt, bevor sie etwas tut.** Am Anfang ist das gut so, du siehst jeden
+  Schritt. Später kannst du das umstellen, damit sie durchläuft, ohne dass du
+  danebensitzt.
+
+**Probier eines aus:** Hängst du etwas an, das du sowieso jeden Tag benutzt, und
+stell eine Frage, deren Antwort nur dort drinsteht.
 
 ---
 
