@@ -13,4 +13,5 @@ Auto-Index aller Files in `outputs/sonstige/`. Siehe [[_MOCs/MOC-Brand-Voice]] f
 - [[2026-09-15-florian-huebner-mr-tech-recherche]]
 - [[2026-09-15-webinar-florian-huebner-notizen]]
 - [[2026-10-22-website-pruefung]]
+- [[2026-10-23-agb-entwurf]]
 - [[webinar-demo-content-assistent]]
