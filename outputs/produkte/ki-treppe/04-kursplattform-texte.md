@@ -642,12 +642,13 @@ deinem Brief stehen.
 
 ---
 
-### 4.4 · CLAUDE.md — das Gedächtnis
+### 4.4 · Das Gedächtnis, die Sicherung und die Befehle
 
 **In dieser Lektion:** Die eine Datei, in der steht, was du nie wieder erklären
-willst.
+willst — und zwei Dinge, die danach sofort drankommen: deine Sicherung und die
+vier Befehle, die schon in deinem Arbeitsplatz liegen.
 
-**Das Wichtigste in Kürze:**
+**Teil 1 · Die Gedächtnis-Datei**
 
 - **Der Unterschied zum Business-Brief:** Der Brief sagt, wer du bist und wie du
   klingst. Diese Datei sagt, wie in deinem Arbeitsplatz gearbeitet wird.
@@ -667,32 +668,24 @@ willst.
   wächst von selbst.
 - Die Regel, nach der sie wächst: **Was dich dreimal geärgert hat, gehört als
   Regel hinein.** Sonst ärgert es dich ein viertes Mal.
-- Meine eigene ist über Monate gewachsen, nicht an einem Nachmittag entstanden.
-  Jede Regel darin kommt aus einem echten Fehler.
+- 🚨 **Schau von Zeit zu Zeit hinein, ob Müll drinsteht.** Sie merkt sich auch
+  Dinge, die sie falsch verstanden hat — und hält sich dann monatelang daran.
+  Meine eigene ist über Monate gewachsen, nicht an einem Nachmittag entstanden.
 
-**📎 Die Anleitung mit der leeren Vorlage liegt unter diesem Video.** Mach dir
-davon zuerst eine eigene **Kopie** — oben links *Datei → Kopie erstellen*.
-
----
-
-### 4.4b · Damit nichts verloren geht
-
-**In dieser Lektion:** Wie du deinen Arbeitsplatz sicherst — und was GitHub
-eigentlich ist.
-
-**Das Wichtigste in Kürze:**
+**Teil 2 · Damit nichts verloren geht**
 
 - Es gibt drei Arten, etwas zu verlieren: das **Gespräch** (Fenster zu, weg —
   dagegen hilft der Arbeitsplatz), die **Datei** (einmal überschrieben) und den
   **Rechner** (Festplatte kaputt, Laptop weg).
 - Gegen die letzten beiden hilft **GitHub**: ein Ort im Netz, an dem dein
   Arbeitsplatz zusätzlich liegt — und der sich merkt, was sich wann geändert
-  hat. Wie eine Cloud für Ordner, die ein Gedächtnis hat.
+  hat. Wie eine Cloud für Ordner, die ein Gedächtnis hat. Kostenlos, und du
+  musst nichts davon verstehen.
 - **Git und GitHub sind zwei verschiedene Dinge.** Git ist ein kleines Programm
   auf deinem Rechner, das mitschreibt. GitHub ist der Ort im Netz. Wenn später
   die Meldung kommt „Git ist erforderlich", weisst du jetzt, was gemeint ist.
 - Du richtest es nicht selbst ein. Du beschreibst, was du willst — sie macht
-  den Rest.
+  den Rest und führt dich Schritt für Schritt durch.
 - 🚨 **Beim Anlegen fragt GitHub: öffentlich oder privat.** Öffentlich heisst
   wirklich öffentlich, jeder kann hineinschauen. **Du nimmst privat.** Frag
   ausdrücklich danach.
@@ -705,19 +698,13 @@ eigentlich ist.
 > Führ mich Schritt für Schritt durch, und sag mir bei jedem Schritt, was ich
 > anklicken muss. Das Verzeichnis soll privat sein, nicht öffentlich.
 
----
-
-### 4.4c · Die Befehle, die schon drin liegen
-
-**In dieser Lektion:** Vier Abläufe, die du nur noch aufrufst — darunter der,
-der dein Gedächtnis pflegt.
-
-**Das Wichtigste in Kürze:**
+**Teil 3 · Die vier Befehle, die schon drin liegen**
 
 - Ein Befehl ist ein **Ablauf, den du einmal beschreibst und danach nur noch
   aufrufst.** Statt jeden Morgen fünf Sätze zu tippen, tippst du `/start`.
-- **`/start`** am Anfang jeder Sitzung: Sie schaut, was im Arbeitsplatz liegt
-  und was zuletzt offen war, und fragt dann, woran du heute arbeitest.
+- **`/start`** am Anfang jeder Sitzung: Sie liest die Gedächtnis-Datei und den
+  Kontext, schaut, was zuletzt offen war, fasst zusammen — und fragt dann,
+  woran du heute arbeitest.
 - **`/shutdown`** am Ende: Sie räumt auf, schreibt in die Gedächtnis-Datei, was
   dazugelernt wurde, und sichert alles.
 - 🚨 **Ohne `/shutdown` wächst deine Gedächtnis-Datei nicht.** Dann erklärst du
@@ -726,12 +713,26 @@ der dein Gedächtnis pflegt.
 - Zwei weitere für alles, was grösser ist als ein Auftrag: **`/create-plan`**
   schreibt auf, was sie vorhat, in Schritten — du liest es und sagst, was nicht
   stimmt. **`/implement`** arbeitet den Plan danach ab und hakt ihn dabei ab.
-  Der Plan bleibt in `plans` liegen, du kannst in drei Wochen nachlesen, warum
-  etwas so gebaut wurde.
+  Du siehst nach jedem Schritt, wo sie steht, statt immer fragen zu müssen.
 - Ein Befehl und ein Skill sind dasselbe Prinzip, nur an verschiedenen Stellen
   abgelegt. Mehr dazu in Modul 5.
 
 **Alle vier liegen im Grundgerüst aus 4.3 — du musst keinen davon schreiben.**
+
+**Deine erste halbe Stunde, in dieser Reihenfolge**
+
+1. Ordner anlegen — auf dem Desktop, **nicht** in einer Cloud
+2. Claude Code öffnen und den Ordner angeben
+3. Deine vier Dateien aus Kapitel 2 nach `context` kopieren — **bevor** du
+   etwas fragst
+4. Der grosse Auftrag: lesen, zusammenfassen, dich ausfragen, die Antworten
+   selbst ablegen (**Nummer 15** in der Prompt-Bibliothek)
+5. Die Gedächtnis-Datei schreiben lassen (**Nummer 16**)
+6. Mit `/shutdown` schliessen, damit alles gespeichert ist
+7. Und danach GitHub einrichten — vorher gibt es noch nichts zu sichern
+
+**📎 Die Anleitung mit der leeren Vorlage liegt unter diesem Video.** Mach dir
+davon zuerst eine eigene **Kopie** — oben links *Datei → Kopie erstellen*.
 
 ---
 
@@ -1662,7 +1663,6 @@ heraus.
 | 4.2 | **Setup-FAQ** — „Wenn beim Einrichten etwas klemmt" (PDF) ✅ gebaut |
 | 4.3 | **Arbeitsplatz-Grundgerüst** — ZIP mit den fünf Ordnern (je eine Liesmich), `CLAUDE.md` zum Ausfüllen und **vier Befehlen** (`/start` · `/shutdown` · `/create-plan` · `/implement`) in entschlackter Fassung ✅ gebaut, liegt in `Downloads/Mein-Business-Grundgeruest.zip` · Quelle: `scripts/ki-kurs/grundgeruest-bauen.py --zip` |
 | 4.4 | **`CLAUDE.md`-Anleitung** — fünf Teile, je mit Beispiel von Sandra und einem Feld zum Ausfüllen (Google Doc) ✅ |
-| 4.4b | Kein eigener Download. Der Auftrag und die privat-Warnung stehen in der Liesmich im Grundgerüst. ⏳ Eine Klick-für-Klick-Anleitung mit Bildern wäre die nächste sinnvolle Beilage |
 | 5.2 | Beispiel-Skill Kochplan (die auseinandergenommene Datei) |
 | 5.8 | Leeres Skill-Gerüst (Google Doc, zum Ausfüllen) ✅ |
 | 6.3 | Bot-Gerüst Telegram |
