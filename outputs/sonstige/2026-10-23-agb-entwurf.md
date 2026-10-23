@@ -35,7 +35,7 @@ gelten nur, wenn wir sie schriftlich vereinbart haben.
 - **Kostenlose Angebote** — Workbooks, Challenges, Tests und Werkzeuge.
 
 Ich zeige dir Wege, Werkzeuge und Erfahrungen. Wie du sie umsetzt, liegt bei dir. Einen
-bestimmten Erfolg, Umsatz oder eine bestimmte Zahl an Kundinnen kann ich deshalb nicht
+bestimmten Erfolg, Umsatz oder eine bestimmte Zahl an Kunden kann ich deshalb nicht
 versprechen.
 
 ### 3 · Wie der Vertrag zustande kommt
@@ -54,8 +54,7 @@ ich dir in diesem Fall vollständig.
 Alle Preise stehen in Schweizer Franken (CHF).
 
 Ich bin in der Schweiz nicht mehrwertsteuerpflichtig. Auf meinen Rechnungen wird deshalb
-keine Mehrwertsteuer ausgewiesen. ⚠️ Die Mehrwertsteuer für Kundinnen in der EU ist noch
-offen (Pendenz) — vor dem Veröffentlichen klären.
+keine Mehrwertsteuer ausgewiesen.
 
 Welche Zahlungsarten dir zur Verfügung stehen, siehst du an der Kasse, zum Beispiel
 Kreditkarte oder PayPal. Bei einer Rechnung bezahlst du per Überweisung.
@@ -159,7 +158,7 @@ Bestellung auf dieser Seite stand.
 Ist eine Bestimmung dieser AGB unwirksam, bleiben die übrigen gültig. An die Stelle der
 unwirksamen tritt eine Regelung, die ihrem Zweck am nächsten kommt.
 
-*Stand: ⚠️ Datum der Veröffentlichung*
+*Stand: 23.10.2026*
 
 ---
 
