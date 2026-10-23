@@ -8,6 +8,7 @@ Auto-Index aller Files in `outputs/funnels/`. Siehe [[_MOCs/MOC-Produkte-Funnels
 
 ## Dateien
 
+- [[2026-10-23-formular-pruefung]]
 - [[funnel-landkarte]]
 - [[instagram-lead-nurture-mails]]
 
