@@ -113,8 +113,8 @@ Bestätigungsmail → „Halt, eins noch“ mit Brückensatz und Produktbild →
 | /danke-freischaufeln/ | 4400 | 62 | Mama-CEO (ohne Bestätigungsmail) |
 
 ✅ **Umgeleitet am 23.10. abends** (per API geprüft, Tags und Listen unverändert): 53 · 47 · 51 · 49 · 66 · 62
-öffnen nach dem Absenden ihre eigene Danke-Seite. Noch auf `/fast-geschafft(-2)/`: 45 Story-Challenge und
-41 Von 0 auf echt (Seiten noch Entwurf) sowie 64 Energie-Kickstart (keine eigene Danke-Seite mit Angebot).
+öffnen nach dem Absenden ihre eigene Danke-Seite; kurz danach auch 45 Story-Challenge und 41 Von 0 auf echt.
+Nur noch 64 Energie-Kickstart auf `/fast-geschafft/` (bewusst: kein kleines Angebot, Pitch nach dem Bestätigungsklick).
 Seit 23.10. abends führen **Businessfahrplan und Ideen-Finder auf die Digitale Produktwelt**
 (`DANKE199DPW`), die übrigen sechs Mentoring-Seiten auf die Kundenmaschine, Freischaufeln auf Mama-CEO.
 
