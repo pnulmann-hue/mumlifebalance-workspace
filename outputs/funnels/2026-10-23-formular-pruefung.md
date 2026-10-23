@@ -77,8 +77,17 @@ gelegentlich ausverkauft — aber nur, wenn sie es wirklich ist.
 *„diesen Preis gibt es nur hier, direkt nach deiner Anmeldung“*, ohne Uhr. Der Upsell nach
 Storyideen und Startklar bleibt bei **97** (Käuferinnen-Preis). Minikurse bleiben 39.
 ThriveCart heute: Kundenmaschine 333 · Upsell 7 = 97 · Bump an der Digitalen Produktwelt = 199 ·
-ungenutzte Upsell-Kopie 8 = 199. Für die Danke-Seiten fehlt noch ein **Kassenlink zu 199**, der
-nur dort steht (eigene Preisoption oder eigene Kasse).
+ungenutzte Upsell-Kopie 8 = 199.
+
+**Kassenlinks zu 199 (angelegt 23.10., getestet: Kasse zeigt 333 − 134 = 199):**
+ThriveCart kann keine Preisoption verstecken, deshalb Gutscheine — fester Betrag 134, nur das
+eine Produkt, nur Einmalzahlung, ohne Ablauf und ohne Begrenzung.
+
+- Kundenmaschine: `https://mumlifebalance.thrivecart.com/instagram-kundenmaschine/?coupon=DANKE199IKM`
+- Mama-CEO: `https://mumlifebalance.thrivecart.com/mama-ceo/?coupon=DANKE199CEO`
+
+🚨 Auf der Kasse der Kundenmaschine steht in der FAQ noch „Das Programm startet am 1. Februar
+2026“ und Live-Calls im Februar/März 2026. Vor dem Verlinken korrigieren.
 
 ## Reihenfolge zum Abarbeiten (Vorschlag)
 
