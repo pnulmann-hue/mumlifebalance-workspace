@@ -18,7 +18,7 @@ Hey %FIRSTNAME%,
 
 wie schön, dass du dir die nächsten sieben Tage für deine Storys nimmst. Ich weiss, wie es sich anfühlt, wenn man jeden Tag etwas hochlädt und es bleibt einfach still: keine Antwort, keine Nachricht, höchstens ein paar Herzchen von Leuten, die man sowieso kennt.
 
-Daran sind fast nie zu wenig schöne Storys schuld. Menschen antworten, wenn sie sich verstanden fühlen, und genau das übst du jetzt eine Woche lang, jeden Tag mit einer kleinen Aufgabe aus deinem Workbook.
+Ich sag dir ehrlich, woran es meistens liegt: Leute antworten, wenn sie sich in deiner Story wiederfinden und merken, dass du ihren Alltag kennst. Genau das übst du jetzt eine Woche lang, jeden Tag mit einer kleinen Aufgabe aus deinem Workbook.
 
 Drei Dinge für deinen Start
 
@@ -53,7 +53,7 @@ Hey %FIRSTNAME%,
 
 heute ist in deinem Workbook Tag 2 dran, und genau hier höre ich jedes Mal denselben Satz: „Aber ich hab doch nichts Besonderes zu erzählen.“ Bei mir war das am Anfang auch so. Mit vier Kindern fühlt sich der eigene Tag oft an wie eine Liste, die man abarbeitet, und wer will sich schon eine Liste anschauen?
 
-Was ich erst später verstanden habe: Leute bleiben bei deinen Storys, wenn sie sich darin wiederfinden. Dafür braucht es keine grosse Wendung und kein besonderes Erlebnis, ein ganz normaler Moment, den sie selbst auch kennen, reicht vollkommen.
+Was ich erst später verstanden habe: Leute bleiben bei deinen Storys, wenn sie sich darin wiederfinden. Dafür reicht ein ganz normaler Moment, den sie selbst auch kennen, und davon hattest du heute wahrscheinlich schon ein paar.
 
 Fünf Momente, die du heute wahrscheinlich schon hattest
 
@@ -96,7 +96,7 @@ mehr als die Hälfte ist geschafft, und jetzt kommen die zwei Tage, vor denen di
 
 Ich fang gleich bei mir an, damit du siehst, wie das aussehen kann. Mein erstes Network war ein anderes als heute. Ich war drei Jahre dabei, hab Produktbilder gepostet, eins nach dem anderen, und mich jedes Mal gewundert, warum nichts zurückkommt. Irgendwann hab ich aufgegeben.
 
-Heute bin ich dankbar für diese drei Jahre, weil ich dort gelernt habe, dass Leute keinem Katalog folgen. Sie folgen einem Menschen, bei dem sie merken, dass er ihren Alltag kennt.
+Ganz ehrlich, ich war damals ein wandelnder Katalog, und einem Katalog schreibt niemand zurück. Heute bin ich dankbar für diese drei Jahre, weil ich dort gelernt habe, dass Leute einem Menschen folgen, bei dem sie merken, dass er ihren Alltag kennt.
 
 So baust du deine Story an Tag 3
 
@@ -141,7 +141,7 @@ Welche Story hat dir diese Woche eine Antwort, eine Nachricht oder eine Reaktion
 
 Antworte einfach auf diese Mail. Ein Satz reicht, und ich lese jede Antwort selbst.
 
-Ich frag nicht aus Neugier. Wenn ich weiss, was bei dir funktioniert hat, kann ich dir viel genauer sagen, wo du als Nächstes ansetzt, als es jede Vorlage könnte.
+Mit deiner Antwort kann ich dir viel genauer sagen, wo du als Nächstes ansetzt, als es jede Vorlage könnte, weil ich dann weiss, was bei dir schon funktioniert.
 
 Und falls noch nichts zurückgekommen ist, ist das nach einer Woche völlig normal. Viele schauen deine Storys zum ersten Mal bewusst an und brauchen ein paar Tage, bis sie sich trauen zu schreiben. Mach einfach mit den Fragen von Tag 6 weiter, also mit Fragen, die nichts mit deinem Angebot zu tun haben. Die sind am leichtesten zu beantworten.
 
@@ -166,7 +166,7 @@ Und was sehen sie, wenn sie draufklicken? Bei vielen Network-Mamas ein Profil vo
 
 Das zweite Problem kommt in Woche zwei
 
-Solange dir das Workbook jeden Tag eine Aufgabe gibt, läuft es. In der zweiten Woche sitzt du dann wieder vor dem Handy und überlegst, was du heute erzählen sollst.
+Solange dir das Workbook jeden Tag eine Aufgabe gibt, läuft es. In der zweiten Woche sitzt du dann wieder vor dem Handy und überlegst, was du heute erzählen sollst. „Was poste ich jetzt?“ ist die Frage, die ich von Network-Mamas am häufigsten höre.
 
 Ich hab am Anfang über 600 Seiten in Canva mit Story-Ideen gefüllt und trotzdem jeden Morgen gesucht. Erst als mein Thema, meine Zielgruppe und meine Rolle klar waren, kamen die Ideen fast von allein, weil ich wusste, worüber ich rede und für wen.
 
@@ -174,7 +174,7 @@ Drei Fragen zu deinem Profil
 
 Weiss eine Fremde nach zehn Sekunden auf deinem Profil, wobei du hilfst?
 
-Findet sie dort einen nächsten Schritt, wenn sie nach deiner Story vorbeischaut, also einen Link, ein Freebie oder ein Highlight, das sie weiterführt?
+Findet sie dort einen nächsten Schritt, wenn sie nach deiner Story vorbeischaut, also einen Link, ein kleines Geschenk oder ein Highlight, das sie weiterführt?
 
 Weisst du heute schon, worüber du nächste Woche erzählst, ohne suchen zu müssen?
 
@@ -199,13 +199,19 @@ Die Story-Challenge hat dir gezeigt, wie Storys Gespräche eröffnen. In der Ins
 
 Was du in der Instagram-Kundenmaschine aufbaust
 
-deine Content-Säulen, die zu dir passen, damit du jede Woche weisst, worüber du erzählst
+deine Themen, über die du immer wieder erzählen kannst, damit du jede Woche weisst, was dran ist
 
 Beiträge und Storys, die so aufgebaut sind, dass Menschen dir vertrauen
 
-ein Profil, das vom Produktkatalog zum Schaufenster deiner Expertise wird
+ein Profil, das vom Produktkatalog zum Schaufenster für dein Wissen wird
 
-einen kostenlosen Leadmagneten, der Interessierte einsammelt, und ein Angebot, das im Hintergrund weiterverkauft
+ein kostenloses Geschenk, mit dem Interessierte auf deine Liste kommen, und ein Angebot, das im Hintergrund weiterverkauft, auch wenn du gerade bei den Kindern bist
+
+Was mir eine Teilnehmerin vor dem Kauf geschrieben hat
+
+„Ich habe es mir lange überlegt, ob es das Richtige für mich ist. Da meine Strategien bisher nicht funktioniert haben mit Online-Verkäufen, bin ich jetzt auch dabei.“
+
+Wenn du dich darin wiederfindest, bist du hier richtig.
 
 So läuft es
 
@@ -214,6 +220,8 @@ Alle Module sind ab dem Kauf freigeschaltet, und du gehst in deinem eigenen Temp
 Für wen sie ist
 
 Sie ist für dich, wenn du im Network bist, Instagram ernsthaft für dein Business nutzen willst und bereit bist, ein paar Wochen an deinem Fundament zu arbeiten. Wenn du auf den einen Beitrag hoffst, der über Nacht durch die Decke geht, ist sie ehrlich nicht das Richtige für dich.
+
+Und damit es keine Missverständnisse gibt: Teamaufbau und Tipps, wie du neue Leute für dein Network gewinnst, sind nicht dabei. Dafür hast du in deinem Network ja schon deine Upline und dein Team.
 
 Preis
 
@@ -227,22 +235,24 @@ Patricia
 P.S. Wenn du unsicher bist, ob sie zu dir passt, antworte mir einfach mit zwei Sätzen, wo du gerade stehst. Ich sag dir ehrlich, ob sie jetzt der richtige Schritt für dich ist.
 ```
 
-## Tag 12 · „Für so ein System hab ich doch zu wenig Follower“
+## Tag 12 · „Du bist so strukturiert, ich bin so chaotisch“
 
 - **Wann:** 2 Tage nach dem Pitch
-- **Zweiter Betreff:** Sie hat verkauft, während sie krank im Bett lag
-- **Vorschautext:** Warum du keine grosse Reichweite brauchst, um über Instagram zu verkaufen.
+- **Zweiter Betreff:** Ich bin die, die hundert Sachen gleichzeitig anfängt
+- **Vorschautext:** Was ich einer Teilnehmerin nach der Story-Challenge geantwortet hätte.
 
 ```text
 Hey %FIRSTNAME%,
 
-wenn dich bei der Instagram-Kundenmaschine noch etwas zurückhält, ist es meistens einer von zwei Gedanken: „Dafür hab ich zu wenig Follower“ oder „Dafür hab ich keine Zeit“. Beide höre ich oft, deshalb nehme ich sie mir heute vor.
+nach einer Story-Challenge hat mir eine Teilnehmerin sinngemäss geschrieben: „Du bist so strukturiert, ich bin so chaotisch.“ Und ich musste lachen, weil ich die bin, die hundert Sachen gleichzeitig anfängt und die Hälfte davon irgendwo liegen lässt.
 
-Eine Frau aus meiner Begleitung
+Gerade weil ich so bin, hab ich mir meine Struktur Schritt für Schritt als System gebaut. Genau dieses System übernimmst du in der Instagram-Kundenmaschine und füllst es mit deinem Thema und deinem Alltag, und das Ausdenken hab ich dir damit schon abgenommen.
 
-Als sie angefangen hat, war ihr Profil noch geschlossen, und sie hat sich kaum getraut, öffentlich etwas zu posten. Im Programm hat sie ihr Profil geöffnet und ihre Storys und Beiträge auf ein einfaches System gestellt. Dann lag sie krank im Bett, ganz raus, und genau in diesen Tagen hat sie über ihre Storys und Beiträge Produktpakete verkauft.
+Warum eine Frau mit mir weitergegangen ist
 
-Eine riesige Followerzahl hatte sie dafür nicht. Was sie hatte, war ein klarer Weg von der Story über das Profil zum Angebot, und dieser Weg hat für sie gearbeitet, während sie selbst nicht konnte.
+„weil du aus deinen eigenen Erfahrungen sprichst und in einer ähnlichen Situation bist, wie ich auch. Mehrere Kinder, Network, eigene Selbständigkeit“
+
+Das hat sie mir nach der Kundenmaschine geschrieben.
 
 Und die Zeit?
 
@@ -269,13 +279,13 @@ vor gut zwei Wochen hast du mit der Story-Challenge angefangen. Das ist heute me
 
 Aufschwatzen möchte ich dir nichts. Die Instagram-Kundenmaschine ist für die Frauen, die gemerkt haben, dass ihre Storys etwas auslösen, und die das jetzt nicht wieder einschlafen lassen wollen.
 
-Drei ehrliche Fragen an dich
+Vielleicht denkst du gerade, was mir eine Frau einmal geschrieben hat: „Ich lasse es mal so weiterlaufen und schaue, wie weit ich selbst komme.“ Das ist ein ehrlicher Weg, und du kannst dir wirklich alles selbst beibringen. Es braucht dann einfach mehr Zeit. Die Frage ist nur, wie lange du noch allein dranbleiben willst.
+
+Zwei ehrliche Fragen an dich
 
 Willst du in drei Monaten immer noch jeden Morgen überlegen, was du postest?
 
-Passt dein Profil heute zu den Storys, die du in der Challenge gemacht hast?
-
-Hat dir jemand nach einer deiner Storys geschrieben, und du weisst gerade nicht, wie es mit ihr weitergeht?
+Hat dir jemand nach einer deiner Storys geschrieben, und du weisst gerade nicht, wie es mit dieser Person weitergeht?
 
 Wenn du bei einer davon merkst, dass du etwas ändern willst, ist jetzt ein guter Moment dafür.
 

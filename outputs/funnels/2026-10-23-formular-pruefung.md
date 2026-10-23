@@ -113,8 +113,21 @@ Bestätigungsmail → „Halt, eins noch“ mit Brückensatz und Produktbild →
 | /danke-freischaufeln/ | 4400 | 62 | Mama-CEO (ohne Bestätigungsmail) |
 
 Nach dem Veröffentlichen: je Formular „Bei Absendung → URL öffnen“ auf die eigene Seite.
-⚠️ Mama-CEO-Kasse hat noch Vorlagen-Reste („Enter your bullet points here..“, „Ut Repellat
-Officiis“, „4 Live-Termine direkt mit mi“) — vor dem Verlinken von /danke-freischaufeln/ prüfen.
+Seit 23.10. abends führen **Businessfahrplan und Ideen-Finder auf die Digitale Produktwelt**
+(`DANKE199DPW`), die übrigen sechs Mentoring-Seiten auf die Kundenmaschine, Freischaufeln auf Mama-CEO.
+
+**Kassen aufgeräumt (23.10., live geprüft):**
+- Digitale Produktwelt: „Jemand kauft deinen Kurs“ statt „Eine Frau …“, „Sofort verfügbar.“ statt
+  „ab 4. April“, Tippfehler Modul 3, Call-Zeile gelöscht (Kurs lief nie live, keine Aufzeichnungen),
+  Telegram „ich antworte dienstags und donnerstags“, FAQ „Gibt es Live-Calls? Nein …“.
+- Mama-CEO: Selbstlernkurs mit Telegram-Gruppe; „4 Live-Termine“ + Beschreibung gelöscht, „8 Wochen“
+  bei Programm/Telegram/Zugang raus, FAQ ohne Live-Termine (Calls geschlossen, keine Aufzeichnungen),
+  „über 13“, „mit der Selbständigkeit“, „Mein erstes.“ entfernt.
+- Die „Enter your bullet points here..“ und „Ut Repellat Officiis“ stehen in **ausgeblendeten
+  Spalten** — nicht sichtbar, deshalb nicht gelöscht (ein Löschversuch hätte den Modul-Titel mitgenommen).
+
+⚠️ Offen: Zusatzangebot an der DPW-Kasse rechnet falsch (249 + 333 = 582 → 448), Preisentscheid
+zum Bundle (DPW 199 + Kundenmaschine 199 = 398) steht bei Patricia.
 
 ## Reihenfolge zum Abarbeiten (Vorschlag)
 
