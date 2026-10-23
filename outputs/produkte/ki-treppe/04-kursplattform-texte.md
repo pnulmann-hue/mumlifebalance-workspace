@@ -428,18 +428,24 @@ wie nach Modul 1 — du hakst einfach weiter ab.
 
 ### 3.2 · Deine erste Verbindung
 
-**In dieser Lektion:** Einmal einrichten, und ab dann liest sie deine eigene
-Planung.
+**In dieser Lektion:** Was eine Verbindung ist, was sie dir abnimmt — und
+worauf du achtest, wenn du eine einrichtest.
 
 **Das Wichtigste in Kürze:**
 
 - Eine Verbindung heisst: Sie darf in ein Programm hineinschauen, das du
-  sowieso benutzt — und zwar mit deinen Augen, nicht mit fremden.
+  sowieso benutzt — deine Planung, deinen Kalender, deine Ablage. Mit deinen
+  Augen, nicht mit fremden.
 - **Warum das mehr bringt, als es klingt:** Was dort steht, musst du nie mehr
-  erzählen. Sie liest es.
-- Eingerichtet wird es einmal, Schritt für Schritt mitgefilmt.
-- 🚨 **Eine Verbindung ist ein Zugang.** Richte sie bewusst ein und schau nach,
-  was sie darf. Modul 10 geht darauf ein.
+  erzählen. Sie liest es. Beim ersten Mal wirkt das wie ein netter Zusatz, beim
+  dritten Mal willst du es nicht mehr hergeben.
+- **Ich zeige hier bewusst kein bestimmtes Programm.** Jede arbeitet mit
+  anderen Werkzeugen, und der Weg ist überall derselbe: in den Einstellungen
+  die Verbindung suchen, anmelden, bestätigen was sie sehen darf.
+- 🚨 **Eine Verbindung ist ein Zugang.** Gib nur die Bereiche frei, die sie
+  wirklich braucht — alles andere bleibt zu. Modul 10 geht darauf ein.
+- Danach einmal ausprobieren: Stell eine Frage, deren Antwort nur in deiner
+  eigenen Planung steht. Daran merkst du, ob es angekommen ist.
 
 ---
 

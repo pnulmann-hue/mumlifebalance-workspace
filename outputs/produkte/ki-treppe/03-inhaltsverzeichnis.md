@@ -132,7 +132,7 @@ so wie bei Startklar.
 | # | Lektion | Notizen |
 |---|---|---|
 | 3.1 | **Was Cowork kann, was der Chat nicht kann** | **Erzählen:** mit Dateien arbeiten, über mehrere Schritte, sich etwas merken. **Zeigen:** eine Aufgabe, die im Chat scheitert und in Cowork durchläuft |
-| 3.2 | **Deine erste Verbindung: Notion** | **Zeigen:** den Stecker einmal einrichten, dann die KI die eigene Planung lesen lassen |
+| 3.2 | **Deine erste Verbindung** | **Erzählt, nicht gezeigt:** was eine Verbindung ist und worauf man achtet — bewusst ohne ein bestimmtes Programm, weil nicht jede Notion hat (Patricias Entscheid beim Dreh) |
 | 3.3 | **Dein erster Bot ohne eine Zeile Code** | **Erzählen:** derselbe Auftrag, den Stufe 3 später als echten Bot baut. **Zeigen:** Haushalts-Helfer oder Kochplan, live |
 | 3.4 | **Wo Cowork aufhört** | **Erzählen:** ehrlich — er läuft nicht von selbst, du musst ihn anstossen. Das ist der Grund für Stufe 3. Wer damit zufrieden ist, darf hier aufhören |
 | 3.5 | **Zusammenfassung und Checkliste** | |
