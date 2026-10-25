@@ -9,19 +9,10 @@ name: Cockpit-Daily
 # Im Sommer treffen die Pushes die genannte lokale Zeit. Im Winter sind sie 1h
 # spaeter (z.B. 07:30 statt 06:30). Toleranter Drift, kein Auto-Switch noetig.
 
+# 🛑 DEAKTIVIERT 2026-10-25 auf Patricias Wunsch („den cockpit bot bitte auch“).
+# Keine Zeitplaene mehr, der Bot schickt nichts von selbst. Nur noch Handstart moeglich.
+# Wieder an: die schedule-Liste aus der Git-Historie zurueckholen.
 on:
-  schedule:
-    # Mo-Fr 04:30 UTC = 06:30 CEST -- Tagesbriefing (1x/Tag; Mittag-Check entfernt zur Kostenoptimierung 2026-06-05)
-    - cron: '30 4 * * 1-5'
-    # Sa+So 04:30 UTC = 06:30 CEST -- Auszeit-Push (intern erkannt)
-    - cron: '30 4 * * 6,0'
-    # So 17:00 UTC = 19:00 CEST -- Wochenblick-Reminder
-    - cron: '0 17 * * 0'
-    # 1. d. Monats 06:00 UTC = 08:00 CEST -- Monatsblick-Reminder
-    - cron: '0 6 1 * *'
-    # 1.1./1.4./1.7./1.10. 06:05 UTC = 08:05 CEST -- Quartalsblick-Reminder
-    # (5 Min nach Monats-Reminder, damit beide ankommen)
-    - cron: '5 6 1 1,4,7,10 *'
   workflow_dispatch:
     inputs:
       modus:
