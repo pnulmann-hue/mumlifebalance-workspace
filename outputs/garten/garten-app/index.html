@@ -109,14 +109,18 @@ input.suche { width: 100%; border: 1px solid var(--linie); background: var(--fla
 .beet.hoch span { -webkit-line-clamp: 4; }
 
 /* Gartenplan */
-.gp { position: relative; width: 100%; max-width: 100%; border: 1px solid var(--linie); border-radius: 8px; overflow: hidden;
+.gp { position: relative; border: 1px solid var(--linie); border-radius: 8px; overflow: hidden;
   background-color: var(--flaeche); background-image: linear-gradient(to right, var(--linie) 1px, transparent 1px), linear-gradient(to bottom, var(--linie) 1px, transparent 1px); }
-.gp.an { touch-action: none; outline: 2px dashed var(--orange); outline-offset: 2px; }
+.gp-rahmen { overflow: auto; max-width: 100%; border-radius: 8px; padding: 3px; }
+.gp.an { outline: 2px dashed var(--orange); outline-offset: 2px; }
+.gp-r { position: absolute; font-family: var(--f-titel); font-weight: 700; font-size: 13px; color: var(--leise); pointer-events: none; }
+.gp-r.n { top: 4px; left: 50%; transform: translateX(-50%); } .gp-r.s { bottom: 4px; left: 50%; transform: translateX(-50%); }
+.gp-r.w { left: 6px; top: 50%; transform: translateY(-50%); } .gp-r.o { right: 6px; top: 50%; transform: translateY(-50%); }
 .gp-stueck, .gp-haus { position: absolute; display: flex; align-items: center; justify-content: center; padding: 0; border: 1px solid var(--dunkel); border-radius: 3px; background: var(--petrol-hell); color: var(--text); font-size: 10px; font-weight: 700; line-height: 1; overflow: hidden; user-select: none; -webkit-user-select: none; }
 .gp-stueck span, .gp-haus span { pointer-events: none; white-space: nowrap; }
 .gp-tomate { background: var(--orange-hell); }
 .gp-baum { border-radius: 50%; background: var(--gut); color: var(--bg); border-color: var(--gut); font-size: 9px; }
-.gp-haus { background: var(--dunkel); color: var(--bg); border-radius: 2px; font-family: var(--f-titel); font-size: 12px; }
+.gp-haus { background: var(--dunkel); color: var(--bg); border-radius: 2px; font-family: var(--f-titel); font-size: 16px; }
 .gp.an .gp-stueck, .gp.an .gp-haus { cursor: grab; touch-action: none; }
 .gewaehlt { outline: 3px solid var(--orange); outline-offset: 1px; z-index: 2; }
 .knopf[disabled] { opacity: .45; cursor: default; }
@@ -400,31 +404,41 @@ function zGarten() {
 const PFLANZ_IM_PLAN = d => !["Wildkraut", "Nachbar"].includes(d.typ) && d.status !== "Nachbar";
 function layout() {
   const L = S.plan.layout || {};
-  return { breite: L.breite || 1200, tiefe: L.tiefe || 900, haus: L.haus || { x: 0, y: 0, w: 1200, h: 60 }, notiz: L.notiz || "" };
+  return { breite: L.breite || 2500, tiefe: L.tiefe || 2000, haus: L.haus || { x: 700, y: 330, w: 1000, h: 1150 }, notiz: L.notiz || "" };
 }
 function masseVon(x) { const m = String(x.masse || "").match(/(\d+)\D+(\d+)/); return m ? [Number(m[1]), Number(m[2])] : [100, 100]; }
-// Startplatz, solange noch nichts angeordnet ist: Tomatenbeete am Haus, Längs- und Hochbeete darunter, Gehölze am Rand
+// Startplatz, solange noch nichts angeordnet ist (Norden oben): Tomatenbeete längs der Ostfassade,
+// Längs- und Hochbeete im Südwesten, Gehölze vorerst am Nordrand zum Hinziehen
 function startplatz(x, art) {
   const b = S.beete.slice().sort((a, c) => (a.reihe || 0) - (c.reihe || 0));
+  const H = layout().haus;
   if (art === "beete") {
     const tom = b.filter(y => y.typ === "Tomatenbeet"), lang = b.filter(y => /Längs/.test(y.name)), hoch = b.filter(y => /Hoch/.test(y.name));
-    let i = tom.indexOf(x); if (i >= 0) return { x: 30 + i * 120, y: 90 };
-    i = lang.indexOf(x); if (i >= 0) return { x: 40 + i * 130, y: 260 };
-    i = hoch.indexOf(x); if (i >= 0) return { x: 330 + i * 170, y: 260 };
-    i = b.indexOf(x); return { x: 30 + (i % 8) * 140, y: 560 };
+    let i = tom.indexOf(x); if (i >= 0) return { x: H.x + H.w + 20, y: H.y + 100 + i * 110, dreh: true };
+    i = lang.indexOf(x); if (i >= 0) return { x: 150 + i * 150, y: 1450 };
+    i = hoch.indexOf(x); if (i >= 0) return { x: 450 + i * 150, y: 1550 };
+    i = b.indexOf(x); return { x: 150 + (i % 8) * 150, y: 1000 };
   }
   const t = S.dauer.filter(PFLANZ_IM_PLAN); const i = t.indexOf(x);
-  return { x: 40 + (i % 12) * 95, y: 760 - Math.floor(i / 12) * 100 };
+  return { x: 100 + (i % 12) * 150, y: 130 + Math.floor(i / 12) * 120 };
 }
+const istGedreht = x => x.x == null ? !!startplatz(x, "beete").dreh : !!x.dreh;
 function stueck(x, art) {
   const L = layout();
   const p = x.x == null ? startplatz(x, art) : { x: x.x, y: x.y };
   let w, h;
-  if (art === "beete") { [w, h] = masseVon(x); if (x.dreh) [w, h] = [h, w]; } else { w = h = 70; }
+  if (art === "beete") { [w, h] = masseVon(x); if (istGedreht(x)) [w, h] = [h, w]; } else { w = h = 80; }
   const st = `left:${p.x / L.breite * 100}%;top:${p.y / L.tiefe * 100}%;width:${w / L.breite * 100}%;height:${h / L.tiefe * 100}%`;
-  const kurz = art === "beete" ? x.name.replace("Tomatenbeet ", "T").replace("Längsbeet ", "L").replace("Hochbeet ", "H") : x.name.split(/[ (]/)[0].slice(0, 2);
+  const kurz = art === "beete" ? x.name.replace("Tomatenbeet ", "T").replace("Längsbeet ", "L").replace("Hochbeet ", "H") : kuerzel(x);
   const gew = ui.gewaehlt === art + ":" + x.id ? " gewaehlt" : "";
   return `<button class="gp-stueck gp-${art === "beete" ? (x.typ === "Tomatenbeet" ? "tomate" : "beet") : "baum"}${gew}" style="${st}" data-stueck="${art}:${x.id}" ${ui.anordnen ? "" : `data-oeffne="${art}:${x.id}"`} title="${esc(x.name)}" aria-label="${esc(x.name)}"><span>${esc(kurz)}</span></button>`;
+}
+// Eigenes Kürzel je Gehölz, damit drei Säulenbäume nicht alle „Sä“ heissen
+const KUERZEL = [[/säulenapfel/i, "Ap"], [/säulenkirsche/i, "Ki"], [/säulenbirne/i, "Bi"], [/mirabelle/i, "Mi"], [/holder|holunder/i, "Ho"],
+  [/hasel/i, "Ha"], [/johannisbeer\D*(\d)/i, "J"], [/himbeer/i, "Hi"], [/rosen \(/i, "R4"], [/rose/i, "Ro"]];
+function kuerzel(x) {
+  for (const [re, k] of KUERZEL) { const m = x.name.match(re); if (m) return k === "J" ? "J" + m[1] : k; }
+  return x.name.slice(0, 2);
 }
 function gartenplan() {
   const L = layout(), H = L.haus;
@@ -433,7 +447,7 @@ function gartenplan() {
   const werkzeug = ui.anordnen ? `
     <div class="knopfzeile">
       <button class="knopf leise" data-plan="drehen" ${ui.gewaehlt && !ui.gewaehlt.startsWith("dauer") ? "" : "disabled"}>Ausgewähltes drehen</button>
-      ${ui.gewaehlt === "haus:haus" ? '<button class="knopf leise" data-plan="haus-gross">Haus länger</button><button class="knopf leise" data-plan="haus-klein">Haus kürzer</button>' : ""}
+      ${ui.gewaehlt === "haus:haus" ? '<button class="knopf leise" data-plan="haus-w+">Haus breiter</button><button class="knopf leise" data-plan="haus-w-">schmaler</button><button class="knopf leise" data-plan="haus-h+">länger</button><button class="knopf leise" data-plan="haus-h-">kürzer</button>' : ""}
       <button class="knopf" data-plan="fertig">Fertig</button>
     </div>
     <div class="zwei">
@@ -441,8 +455,9 @@ function gartenplan() {
       <div class="feld"><label for="gp-tiefe">Garten tief (m)</label><input id="gp-tiefe" type="number" inputmode="decimal" step="0.5" value="${L.tiefe / 100}"></div>
     </div>` : (S.schreiben ? '<div class="knopfzeile"><button class="knopf leise" data-plan="anordnen">Beete anordnen</button></div>' : "");
   return `<div class="karte" style="display:flex;flex-direction:column;gap:12px">
-    <div class="gp ${ui.anordnen ? "an" : ""}" id="gp" style="aspect-ratio:${L.breite} / ${L.tiefe};background-size:${10000 / L.breite}% ${10000 / L.tiefe}%">${haus}${teile}</div>
-    <div class="legende"><span><i style="background:var(--orange-hell)"></i>Tomatenbeet</span><span><i style="background:var(--petrol-hell)"></i>Beet</span><span><i style="background:var(--gut);border-radius:50%"></i>Baum, Strauch</span><span>Raster 1 m</span></div>
+    <div class="gp-rahmen"><div class="gp ${ui.anordnen ? "an" : ""}" id="gp" style="width:${ui.gross ? `max(100%, ${L.breite / 100 * 36}px)` : "100%"};aspect-ratio:${L.breite} / ${L.tiefe};background-size:${10000 / L.breite}% ${10000 / L.tiefe}%">${haus}${teile}<span class="gp-r n">N</span><span class="gp-r s">S</span><span class="gp-r w">W</span><span class="gp-r o">O</span></div></div>
+    <div class="legende"><span><i style="background:var(--orange-hell)"></i>Tomatenbeet</span><span><i style="background:var(--petrol-hell)"></i>Beet</span><span><i style="background:var(--gut);border-radius:50%"></i>Baum, Strauch</span><span>Raster 1 m · Norden oben</span><button class="knopf leise" style="padding:4px 10px;font-size:.8rem" data-plan="zoom">${ui.gross ? "Ganzer Garten" : "Vergrössern"}</button></div>
+    <div class="klein">${S.dauer.filter(PFLANZ_IM_PLAN).map(d => `<b>${esc(kuerzel(d))}</b> ${esc(d.name.replace(/\s*\(.*\)/, ""))}`).join(" · ")}</div>
     ${werkzeug}</div>`;
 }
 async function stueckSpeichern(schluessel, pos) {
@@ -660,18 +675,18 @@ document.addEventListener("click", async e => {
   if (t.dataset.reiter) { ui.reiter = t.dataset.reiter; try { localStorage.setItem("garten:reiter", ui.reiter); } catch (_) {} history.replaceState(null, "", "#" + ui.reiter); zeichnen(); window.scrollTo(0, 0); return; }
   if (t.dataset.plan) {
     const a = t.dataset.plan;
+    if (a === "zoom") { ui.gross = !ui.gross; zeichnen(); return; }
     if (a === "anordnen") { ui.anordnen = true; ui.gewaehlt = null; zeichnen(); return; }
     if (a === "fertig") { ui.anordnen = false; ui.gewaehlt = null; zeichnen(); hinweis("Plan gespeichert"); return; }
     if (a === "drehen" && ui.gewaehlt) {
       const [art, id] = ui.gewaehlt.split(":");
       if (art === "haus") { const H = layout().haus; await stueckSpeichern("haus:haus", { w: H.h, h: H.w }); }
-      else if (art === "beete") { const x = S.beete.find(y => y.id === id); if (x) { const p = x.x == null ? startplatz(x, "beete") : { x: x.x, y: x.y }; await stueckSpeichern(ui.gewaehlt, { x: p.x, y: p.y, dreh: !x.dreh }); } }
+      else if (art === "beete") { const x = S.beete.find(y => y.id === id); if (x) { const p = x.x == null ? startplatz(x, "beete") : { x: x.x, y: x.y }; await stueckSpeichern(ui.gewaehlt, { x: p.x, y: p.y, dreh: !istGedreht(x) }); } }
       zeichnen(); return;
     }
-    if (a === "haus-gross" || a === "haus-klein") {
-      const H = layout().haus, f = a === "haus-gross" ? 100 : -100;
-      const neu = H.w >= H.h ? { w: Math.max(100, H.w + f) } : { h: Math.max(100, H.h + f) };
-      await stueckSpeichern("haus:haus", neu); zeichnen(); return;
+    if (a.startsWith("haus-")) {
+      const H = layout().haus, k = a[5], f = a[6] === "+" ? 100 : -100;
+      await stueckSpeichern("haus:haus", { [k]: Math.max(100, H[k] + f) }); zeichnen(); return;
     }
   }
   if (t.dataset.samenfilter) { ui.samenFilter = t.dataset.samenfilter; zeichnen(); return; }
