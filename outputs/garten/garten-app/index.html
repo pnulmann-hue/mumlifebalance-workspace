@@ -108,6 +108,19 @@ input.suche { width: 100%; border: 1px solid var(--linie); background: var(--fla
 .beet.hoch { flex: 1 1 0; min-width: 0; min-height: 120px; justify-content: flex-start; gap: 6px; }
 .beet.hoch span { -webkit-line-clamp: 4; }
 
+/* Gartenplan */
+.gp { position: relative; width: 100%; max-width: 100%; border: 1px solid var(--linie); border-radius: 8px; overflow: hidden;
+  background-color: var(--flaeche); background-image: linear-gradient(to right, var(--linie) 1px, transparent 1px), linear-gradient(to bottom, var(--linie) 1px, transparent 1px); }
+.gp.an { touch-action: none; outline: 2px dashed var(--orange); outline-offset: 2px; }
+.gp-stueck, .gp-haus { position: absolute; display: flex; align-items: center; justify-content: center; padding: 0; border: 1px solid var(--dunkel); border-radius: 3px; background: var(--petrol-hell); color: var(--text); font-size: 10px; font-weight: 700; line-height: 1; overflow: hidden; user-select: none; -webkit-user-select: none; }
+.gp-stueck span, .gp-haus span { pointer-events: none; white-space: nowrap; }
+.gp-tomate { background: var(--orange-hell); }
+.gp-baum { border-radius: 50%; background: var(--gut); color: var(--bg); border-color: var(--gut); font-size: 9px; }
+.gp-haus { background: var(--dunkel); color: var(--bg); border-radius: 2px; font-family: var(--f-titel); font-size: 12px; }
+.gp.an .gp-stueck, .gp.an .gp-haus { cursor: grab; touch-action: none; }
+.gewaehlt { outline: 3px solid var(--orange); outline-offset: 1px; z-index: 2; }
+.knopf[disabled] { opacity: .45; cursor: default; }
+
 /* Knöpfe */
 .knopf { border: 0; border-radius: 10px; padding: 11px 16px; background: var(--dunkel); color: var(--bg); font-weight: 600; }
 .knopf.orange { background: var(--orange); color: #0c1c30; }
@@ -224,7 +237,7 @@ async function starten() {
       ["samen","beete","dauer","wissen","tagebuch"].forEach(n => S[n] = t[n] || []);
       S.plan = t.plan || {}; S.quelle = "test"; S.geladen = true;
       store = {
-        async speichern(n, id, daten) { const l = S[n]; const i = l.findIndex(x => x.id === id); const d = Object.assign({}, daten, { id }); if (i >= 0) l[i] = d; else l.push(d); zeichnen(); },
+        async speichern(n, id, daten) { if (n === "plan") { S.plan[id] = Object.assign({}, daten, { id }); zeichnen(); return; } const l = S[n]; const i = l.findIndex(x => x.id === id); const d = Object.assign({}, daten, { id }); if (i >= 0) l[i] = d; else l.push(d); zeichnen(); },
         async loeschen(n, id) { S[n] = S[n].filter(x => x.id !== id); zeichnen(); },
         neueId() { return "t" + Date.now().toString(36); },
       };
@@ -366,19 +379,15 @@ function zJetzt() {
 
 function zGarten() {
   const b = S.beete.slice().sort((x, y) => (x.reihe || 0) - (y.reihe || 0));
-  const kachel = (x, cls) => `<button class="beet ${cls}" data-oeffne="beete:${x.id}" aria-label="${esc(x.name)}"><b>${esc(x.name.replace("Tomatenbeet ", "T").replace("Längsbeet", "Längsbeet").replace("Hochbeet", "Hochbeet"))}</b><span>${esc((x.jetzt || "").replace(/^\d{4}\s*[—·-]\s*/, ""))}</span></button>`;
-  const tom = b.filter(x => x.typ === "Tomatenbeet"), lang = b.filter(x => /Längs/.test(x.name)), hoch = b.filter(x => /Hoch/.test(x.name));
-  const rest = b.filter(x => !tom.includes(x) && !lang.includes(x) && !hoch.includes(x));
   const gruppen = {};
   S.dauer.forEach(d => (gruppen[d.typ || "Sonstiges"] = gruppen[d.typ || "Sonstiges"] || []).push(d));
   return `
-  <section class="block"><h2>Beete</h2><div class="unter">Massstäblich gezeichnet. Antippen zeigt, was drin ist und was danach kommt.</div>
-    <div class="karte plan">
-      ${tom.length ? `<div class="lage"><h3>Ost, unter dem Vordach</h3><div class="klein">${tom.length} Tomatenbeete à ${esc(tom[0].masse || "")} cm, regengeschützt</div><div class="beetreihe">${tom.map(x => kachel(x, "tomate")).join("")}</div></div>` : ""}
-      ${lang.length || hoch.length ? `<div class="lage"><h3>Südwest, volle Sonne</h3><div class="klein">Längsbeete ${esc(lang[0] ? lang[0].masse : "")} cm · Hochbeete ${esc(hoch[0] ? hoch[0].masse : "")} cm</div><div class="beetreihe">${lang.map(x => kachel(x, "lang")).join("")}</div><div class="beetreihe" style="margin-top:8px">${hoch.map(x => kachel(x, "hoch")).join("")}</div></div>` : ""}
-      ${rest.length ? `<div class="lage"><h3>Weitere</h3><div class="beetreihe">${rest.map(x => kachel(x, "hoch")).join("")}</div></div>` : ""}
-      ${!b.length ? '<p class="leer">Noch keine Beete eingetragen.</p>' : ""}
-    </div>
+  <section class="block"><h2>Gartenplan</h2>
+    <div class="unter">${ui.anordnen ? "Zieh Beete, Bäume und das Haus an ihren Platz. Antippen wählt aus, dann kannst du drehen. Gespeichert wird beim Loslassen." : "So stehen die Beete im Garten. Antippen zeigt, was drin ist."}</div>
+    ${gartenplan()}
+  </section>
+  <section class="block"><h2>Beete</h2>
+    <div class="karte"><ul class="liste">${b.map(x => `<li><button class="eintrag" data-oeffne="beete:${x.id}"><span class="haupt"><span class="name">${esc(x.name)}</span> <span class="klein">${esc(x.masse || "")} cm · ${esc(x.ausrichtung || "")}</span><br><span class="zusatz">${esc((x.jetzt || "").replace(/^\d{4}\s*[—·-]\s*/, "").slice(0, 140))}</span></span></button></li>`).join("") || '<li class="leer" style="padding:10px 0">Noch keine Beete eingetragen.</li>'}</ul></div>
   </section>
   <section class="block"><h2>Bäume, Sträucher, Wildkräuter</h2>
     <div class="karte">${Object.keys(gruppen).sort().map(g => `<div style="margin-bottom:10px"><div class="klein" style="font-weight:700;letter-spacing:.05em;text-transform:uppercase">${esc(g)}</div><ul class="liste">${gruppen[g].map(d => `<li><button class="eintrag" data-oeffne="dauer:${d.id}"><span class="haupt"><span class="name">${esc(d.name)}</span><br><span class="zusatz">${esc(d.standort || "")}${d.letzterSchnitt ? " · Schnitt " + datumKurz(d.letzterSchnitt) : ""}</span></span>${monatsband([], d.bluete, d.ernte)}</button></li>`).join("")}</ul></div>`).join("") || '<p class="leer">Noch nichts eingetragen.</p>'}
@@ -386,6 +395,93 @@ function zGarten() {
     </div>
   </section>`;
 }
+
+/* ---------- Gartenplan: alles in Zentimetern, gespeichert an Beet bzw. Baum ---------- */
+const PFLANZ_IM_PLAN = d => !["Wildkraut", "Nachbar"].includes(d.typ) && d.status !== "Nachbar";
+function layout() {
+  const L = S.plan.layout || {};
+  return { breite: L.breite || 1200, tiefe: L.tiefe || 900, haus: L.haus || { x: 0, y: 0, w: 1200, h: 60 }, notiz: L.notiz || "" };
+}
+function masseVon(x) { const m = String(x.masse || "").match(/(\d+)\D+(\d+)/); return m ? [Number(m[1]), Number(m[2])] : [100, 100]; }
+// Startplatz, solange noch nichts angeordnet ist: Tomatenbeete am Haus, Längs- und Hochbeete darunter, Gehölze am Rand
+function startplatz(x, art) {
+  const b = S.beete.slice().sort((a, c) => (a.reihe || 0) - (c.reihe || 0));
+  if (art === "beete") {
+    const tom = b.filter(y => y.typ === "Tomatenbeet"), lang = b.filter(y => /Längs/.test(y.name)), hoch = b.filter(y => /Hoch/.test(y.name));
+    let i = tom.indexOf(x); if (i >= 0) return { x: 30 + i * 120, y: 90 };
+    i = lang.indexOf(x); if (i >= 0) return { x: 40 + i * 130, y: 260 };
+    i = hoch.indexOf(x); if (i >= 0) return { x: 330 + i * 170, y: 260 };
+    i = b.indexOf(x); return { x: 30 + (i % 8) * 140, y: 560 };
+  }
+  const t = S.dauer.filter(PFLANZ_IM_PLAN); const i = t.indexOf(x);
+  return { x: 40 + (i % 12) * 95, y: 760 - Math.floor(i / 12) * 100 };
+}
+function stueck(x, art) {
+  const L = layout();
+  const p = x.x == null ? startplatz(x, art) : { x: x.x, y: x.y };
+  let w, h;
+  if (art === "beete") { [w, h] = masseVon(x); if (x.dreh) [w, h] = [h, w]; } else { w = h = 70; }
+  const st = `left:${p.x / L.breite * 100}%;top:${p.y / L.tiefe * 100}%;width:${w / L.breite * 100}%;height:${h / L.tiefe * 100}%`;
+  const kurz = art === "beete" ? x.name.replace("Tomatenbeet ", "T").replace("Längsbeet ", "L").replace("Hochbeet ", "H") : x.name.split(/[ (]/)[0].slice(0, 2);
+  const gew = ui.gewaehlt === art + ":" + x.id ? " gewaehlt" : "";
+  return `<button class="gp-stueck gp-${art === "beete" ? (x.typ === "Tomatenbeet" ? "tomate" : "beet") : "baum"}${gew}" style="${st}" data-stueck="${art}:${x.id}" ${ui.anordnen ? "" : `data-oeffne="${art}:${x.id}"`} title="${esc(x.name)}" aria-label="${esc(x.name)}"><span>${esc(kurz)}</span></button>`;
+}
+function gartenplan() {
+  const L = layout(), H = L.haus;
+  const haus = `<div class="gp-haus${ui.gewaehlt === "haus:haus" ? " gewaehlt" : ""}" data-stueck="haus:haus" style="left:${H.x / L.breite * 100}%;top:${H.y / L.tiefe * 100}%;width:${H.w / L.breite * 100}%;height:${H.h / L.tiefe * 100}%"><span>Haus</span></div>`;
+  const teile = S.beete.map(x => stueck(x, "beete")).join("") + S.dauer.filter(PFLANZ_IM_PLAN).map(x => stueck(x, "dauer")).join("");
+  const werkzeug = ui.anordnen ? `
+    <div class="knopfzeile">
+      <button class="knopf leise" data-plan="drehen" ${ui.gewaehlt && !ui.gewaehlt.startsWith("dauer") ? "" : "disabled"}>Ausgewähltes drehen</button>
+      ${ui.gewaehlt === "haus:haus" ? '<button class="knopf leise" data-plan="haus-gross">Haus länger</button><button class="knopf leise" data-plan="haus-klein">Haus kürzer</button>' : ""}
+      <button class="knopf" data-plan="fertig">Fertig</button>
+    </div>
+    <div class="zwei">
+      <div class="feld"><label for="gp-breite">Garten breit (m)</label><input id="gp-breite" type="number" inputmode="decimal" step="0.5" value="${L.breite / 100}"></div>
+      <div class="feld"><label for="gp-tiefe">Garten tief (m)</label><input id="gp-tiefe" type="number" inputmode="decimal" step="0.5" value="${L.tiefe / 100}"></div>
+    </div>` : (S.schreiben ? '<div class="knopfzeile"><button class="knopf leise" data-plan="anordnen">Beete anordnen</button></div>' : "");
+  return `<div class="karte" style="display:flex;flex-direction:column;gap:12px">
+    <div class="gp ${ui.anordnen ? "an" : ""}" id="gp" style="aspect-ratio:${L.breite} / ${L.tiefe};background-size:${10000 / L.breite}% ${10000 / L.tiefe}%">${haus}${teile}</div>
+    <div class="legende"><span><i style="background:var(--orange-hell)"></i>Tomatenbeet</span><span><i style="background:var(--petrol-hell)"></i>Beet</span><span><i style="background:var(--gut);border-radius:50%"></i>Baum, Strauch</span><span>Raster 1 m</span></div>
+    ${werkzeug}</div>`;
+}
+async function stueckSpeichern(schluessel, pos) {
+  const [art, id] = schluessel.split(":");
+  if (art === "haus") { const L = layout(); return speichern("plan", "layout", { breite: L.breite, tiefe: L.tiefe, haus: Object.assign({}, L.haus, pos) }); }
+  const x = S[art].find(y => y.id === id); if (!x) return;
+  return speichern(art, id, Object.assign(kopie(x), pos));
+}
+let zug = null;
+document.addEventListener("pointerdown", e => {
+  if (!ui.anordnen) return;
+  const el = e.target.closest("[data-stueck]"); if (!el) return;
+  const gp = document.getElementById("gp"); const r = gp.getBoundingClientRect(); const L = layout();
+  e.preventDefault(); el.setPointerCapture(e.pointerId);
+  zug = { el, id: el.dataset.stueck, sx: e.clientX, sy: e.clientY, l: parseFloat(el.style.left), t: parseFloat(el.style.top), r, L, bewegt: false };
+});
+document.addEventListener("pointermove", e => {
+  if (!zug) return;
+  const dx = (e.clientX - zug.sx) / zug.r.width * 100, dy = (e.clientY - zug.sy) / zug.r.height * 100;
+  if (Math.abs(e.clientX - zug.sx) + Math.abs(e.clientY - zug.sy) > 4) zug.bewegt = true;
+  zug.el.style.left = Math.max(0, Math.min(100 - parseFloat(zug.el.style.width), zug.l + dx)) + "%";
+  zug.el.style.top = Math.max(0, Math.min(100 - parseFloat(zug.el.style.height), zug.t + dy)) + "%";
+});
+document.addEventListener("pointerup", async () => {
+  if (!zug) return; const z = zug; zug = null;
+  ui.gewaehlt = z.id;
+  if (!z.bewegt) { zeichnen(); return; }
+  // auf 10 cm runden
+  const x = Math.round(parseFloat(z.el.style.left) / 100 * z.L.breite / 10) * 10, y = Math.round(parseFloat(z.el.style.top) / 100 * z.L.tiefe / 10) * 10;
+  await stueckSpeichern(z.id, { x, y });
+  zeichnen();
+});
+document.addEventListener("change", async e => {
+  if (e.target.id !== "gp-breite" && e.target.id !== "gp-tiefe") return;
+  const L = layout(); const v = Math.round(Number(e.target.value) * 100);
+  if (!(v >= 200 && v <= 10000)) { hinweis("Bitte eine Grösse zwischen 2 und 100 m eintragen."); return; }
+  const neu = { breite: L.breite, tiefe: L.tiefe, haus: L.haus }; neu[e.target.id === "gp-breite" ? "breite" : "tiefe"] = v;
+  await speichern("plan", "layout", neu);
+});
 
 function monatsband(haus, beet, ernte) {
   const mi = heute().getMonth();
@@ -562,6 +658,22 @@ function formLesen() {
 document.addEventListener("click", async e => {
   const t = e.target.closest("button, a"); if (!t) return;
   if (t.dataset.reiter) { ui.reiter = t.dataset.reiter; try { localStorage.setItem("garten:reiter", ui.reiter); } catch (_) {} history.replaceState(null, "", "#" + ui.reiter); zeichnen(); window.scrollTo(0, 0); return; }
+  if (t.dataset.plan) {
+    const a = t.dataset.plan;
+    if (a === "anordnen") { ui.anordnen = true; ui.gewaehlt = null; zeichnen(); return; }
+    if (a === "fertig") { ui.anordnen = false; ui.gewaehlt = null; zeichnen(); hinweis("Plan gespeichert"); return; }
+    if (a === "drehen" && ui.gewaehlt) {
+      const [art, id] = ui.gewaehlt.split(":");
+      if (art === "haus") { const H = layout().haus; await stueckSpeichern("haus:haus", { w: H.h, h: H.w }); }
+      else if (art === "beete") { const x = S.beete.find(y => y.id === id); if (x) { const p = x.x == null ? startplatz(x, "beete") : { x: x.x, y: x.y }; await stueckSpeichern(ui.gewaehlt, { x: p.x, y: p.y, dreh: !x.dreh }); } }
+      zeichnen(); return;
+    }
+    if (a === "haus-gross" || a === "haus-klein") {
+      const H = layout().haus, f = a === "haus-gross" ? 100 : -100;
+      const neu = H.w >= H.h ? { w: Math.max(100, H.w + f) } : { h: Math.max(100, H.h + f) };
+      await stueckSpeichern("haus:haus", neu); zeichnen(); return;
+    }
+  }
   if (t.dataset.samenfilter) { ui.samenFilter = t.dataset.samenfilter; zeichnen(); return; }
   if (t.dataset.wissensaison) { ui.wissenSaison = t.dataset.wissensaison; zeichnen(); return; }
   if (t.dataset.oeffne) { const [n, id] = t.dataset.oeffne.split(":"); oeffne(n, id); return; }
