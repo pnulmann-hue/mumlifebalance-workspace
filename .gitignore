@@ -453,3 +453,7 @@ outputs/oel-app/
 #    beide Dateien baut man mit produktion-daten.py + produktion-seite.py neu.
 outputs/produkte/ki-treppe/produktion.json
 outputs/produkte/ki-treppe/produktion.html
+
+# Garten-App: lokale Testdaten (Abzug aus der Artifact-Datenbank)
+outputs/garten/garten-app/testdaten.json
+outputs/garten/garten-app/test.html

@@ -631,6 +631,22 @@ Stand 25.09.: 54. Vor dem nächsten Launch das Limit erhöhen oder alte Storys a
 🚨 Herbstferien: **28.09.–16.10.** laut Cockpit-Jahresplan (Patricias „letzter Tag vor
 den Herbstferien“ war Fr 25.09.) — der Launch-Kalender nannte fälschlich 5.–16.10.
 
+### November 2026: Story-Challenge → Kundenmaschine (geplant am 25.10.2026)
+
+**Patricias Entscheide:** Kundenmaschine **333 durchgehend**, **ohne Calls und ohne Masterclass**
+(*„bei mir laufen masterclasses nicht so gut … bessere erfahrung hab ich mit der storychallenge“*).
+Einstieg ist die **0€ Story-Challenge 9.–15.11. in einer WhatsApp-Gruppe**, Kasse **23.–30.11.**
+doTERRA parallel: Energie-Routine (Bestellschluss 31.10. bzw. 30.11.), Kickstart, Business, ab 16.11. Geschenke.
+**Monatsplan** (liest der Freitags-Lauf für die Beiträge): `outputs/monatsplaene/2026-11-mentoring.md` +
+`2026-11-doterra.md`. **Storys 26.10.–30.11. für beide Profile** (72 Sequenzen) liegen im Cockpit
+(`kw44`–`kw49-story-m|d-nov-*`), gebaut von `python scripts/launch/storys-november.py` → `ArtifactData batch set`
+aus `outputs/cockpit/abgleich/storys-november/`. Das Skript nimmt die Bausteine aus `storys-ki-launch.py`,
+die Gestaltung aus `storys-gestalten.py` und prüft mit `texte-pruefen.py`; Foto-Anweisungen (✏️) wandern in die
+Notiz, nur echte Schreib-Lücken bleiben im Bild. Bei einem Neulauf `if_version` mitgeben.
+⚠️ Offen: WhatsApp-Link → Bestätigungsmail (`scripts/story-challenge/mails-bauen.py`, `WORKBOOK` leer, alter
+Telegram-Link, „1.9“), ManyChat-Text `STORY` und Danke-Seite auf WhatsApp umstellen · Workbook S. 18 „am 1.3.“ ·
+8 Mails in AC · an der IKM-Kasse stehen auch „199“ und „134 gespart“ — vor dem 23.11. prüfen.
+
 ### Story-Bibliothek im Cockpit — Gestaltung je Folie (seit 2026-10-08, Version 91/92)
 
 **Patricia:** *„ich hätte das im übrigen immer noch gerne in der storybibliothek unter dem
@@ -2455,7 +2471,17 @@ archiviert unter `reference/_archiv-skills/_titelbild-editor-alt/`.
 
 **Zweck:** Persönlicher Gartenassistent und Permakultur-Berater starten.
 
-Lädt den Garten-Kontext (Standort Appenzellerland, 920 m, Permakultur-Philosophie) und greift auf die Notion-Datenbanken (Samen, Beetplan, Gartentagebuch, Wissensarchiv) zu. Gibt einen aktuellen Status, zeigt was ansteht und fragt, was heute im Garten geplant ist. Berücksichtigt Mondkalender, Mischkultur, Fruchtfolge und die kurze alpine Vegetationsperiode.
+Lädt den Garten-Kontext (Standort Appenzellerland, 920 m, Permakultur-Philosophie) und liest die Daten aus der **Garten-Seite**. Gibt einen aktuellen Status, zeigt was ansteht und fragt, was heute im Garten geplant ist. Berücksichtigt Mondkalender, Mischkultur, Fruchtfolge und die kurze alpine Vegetationsperiode. Beraten bleibt im Chat — die Seite berät nicht.
+
+**Die Garten-Seite (seit 25.10.2026, ersetzt Notion und den Garten-Telegram-Bot):**
+https://claude.ai/artifact/7CoXjumFQqypJMA1wDipeT — **privat**, Quelle `outputs/garten/garten-app/index.html`.
+Patricia: *„ja die benachrichtigung brauche ich nicht. wenn das was per telegram gekommen ist, dann sehe ich es ja im artefact“*.
+Fünf Reiter: **Jetzt** (Mondtag heute + 7 Tage, Saisonrahmen 920 m, Erinnerungen aus dem Tagebuch, Wochenplan, was diesen Monat vorgezogen/ins Beet/geerntet wird) · **Beete** (Gartenplan im Massstab, Raster 1 m: Patricia zieht Beete, Gehölze und das Haus über „Beete anordnen“ selbst an ihren Platz, Drehen per Knopf; gespeichert als `x`/`y`/`dreh` in cm am Beet- bzw. `dauer`-Dokument, Gartengrösse und Haus in `plan/layout`; darunter Beetliste und Bäume/Sträucher) · **Samen** (Filter Jetzt säen/Vorrat/Bestellen/Im Garten, Status antippen, Monatsband) · **Tagebuch** (Eintrag am Handy, Erinnerung mit „Erledigt“) · **Wissen** (Suche, Jahreszeit-Filter).
+Daten in der Artifact-Datenbank (`db`): Sammlungen `samen` · `beete` · `dauer` · `wissen` · `tagebuch` · `plan` (`woche`, `heute`). Felder stehen in `.claude/skills/garten/SKILL.md`. Einmalig aus Notion umgezogen am 25.10.: **83 · 11 · 18 · 39 · 7 = 158 Einträge**. 🚨 **Die Daten gehören jetzt der Seite** — kein Abgleich zurück nach Notion. Die Notion-Datenbanken unter „Gartenassistent“ tragen einen Umzugshinweis und sind nur noch Archiv.
+🚨 Der **Mondtag** wird in der Seite aus dem Mondstand berechnet (siderisch, gleich grosse Zeichen) und kann an den Grenzen einen Tag vom gedruckten Kalender abweichen — der Wochenplan-Task nimmt die Mondtage aus dem Netz.
+**Geplante Aufgaben, die hineinschreiben** (`ArtifactData`, kein Telegram mehr): `garten-wochenplan-sonntag` (So 18:00 → `plan/woche` + `outputs/garten/wochenplan-*.md`) · `garten-tagesplan-hauptsaison` (März–Juni 07:00 → `plan/heute`) · `marie-newsletter-sonntag` (So 18:00 → `wissen`). Abgeschaltet: `garten-health-check`, `garten-auto-ingest` (die Supabase-Vektor-DB brauchte nur der Bot).
+Lokal prüfen: `preview_start garten-app` → `http://localhost:4411/test.html` (mit Viewport-Kopf, liest `testdaten.json`; beide gitignored). `test.html` nach jeder Änderung an `index.html` neu zusammensetzen.
+⚠️ **Offen:** Der Garten-Telegram-Bot (`scripts/garten-telegram-bot`, eigenes privates Repo, Railway-Projekt `d5ab929b…`) läuft eventuell noch — der Railway-Schlüssel in `deploy_to_railway.py` ist abgelaufen, Patricia stoppt den Dienst im Railway-Dashboard. In `deploy_to_railway.py` stehen Telegram-, Notion- und Railway-Schlüssel im Klartext.
 
 ### /basteln (Hobby, seit 2026-08-18)
 
@@ -2519,6 +2545,8 @@ Lädt das vollständige Briefing (`context/meal-planning-bot.md`) und startet de
 - To-Go/Wandertag-Planung
 
 Output wird in `outputs/mealplans/` gespeichert.
+
+**Automatik (seit 25.10.2026):** Sa 18:00 vier Fragen per Telegram (Task `mealplan-fragen-donnerstag`, Name historisch) → **So 07:00 Plan für Dienstag bis Montag danach** (Task `freitag-mealplan`, Name historisch) → direkt in die Familien-App (Essen + Einkaufsliste, `essen-uebernehmen.mjs`). Kein PDF mehr per Telegram.
 
 ### /produkt
 

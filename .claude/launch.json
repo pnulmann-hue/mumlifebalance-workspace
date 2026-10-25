@@ -335,7 +335,8 @@
       "runtimeArgs": [
         "C:/Users/pnulm/familie/lokal.mjs"
       ],
-      "port": 4410
+      "port": 4415,
+      "env": { "PORT": "4415" }
     },
     {
       "name": "oel-kompass",
@@ -348,6 +349,18 @@
         "4410"
       ],
       "port": 4410
+    },
+    {
+      "name": "garten-app",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/garten/garten-app",
+        "-l",
+        "4411"
+      ],
+      "port": 4411
     }
   ]
 }
