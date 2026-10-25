@@ -1,0 +1,603 @@
+<title>Unser Garten 920 m</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: ein Garten-Notizbuch fürs Handy — Kopf mit Mondtag, fünf Reiter unten, Beete massstäblich als Kacheln */
+:root {
+  --bg: #f1ecdd;          /* Creme */
+  --flaeche: #fbf8f0;
+  --linie: #ddd4bf;
+  --text: #0c1c30;
+  --leise: #5a6672;
+  --petrol: #12828c;
+  --petrol-hell: #cfe5e3;
+  --dunkel: #29556d;
+  --orange: #dc822e;
+  --orange-hell: #f5dcc2;
+  --gut: #3f7d4f;
+  --warn: #b5541c;
+  --kopf: #29556d;
+  --kopf-text: #f1ecdd;
+  --f-titel: "Philosopher", Georgia, serif;
+  --f-text: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1c25; --flaeche: #172a36; --linie: #2b4252; --text: #efe9db; --leise: #a3b0b8;
+  --petrol: #4cb5bd; --petrol-hell: #1d4247; --dunkel: #8fbad0; --orange: #eb9a4f; --orange-hell: #4a321d;
+  --gut: #7cc08d; --warn: #f0a070; --kopf: #132634; --kopf-text: #efe9db; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f1c25; --flaeche: #172a36; --linie: #2b4252; --text: #efe9db; --leise: #a3b0b8;
+  --petrol: #4cb5bd; --petrol-hell: #1d4247; --dunkel: #8fbad0; --orange: #eb9a4f; --orange-hell: #4a321d;
+  --gut: #7cc08d; --warn: #f0a070; --kopf: #132634; --kopf-text: #efe9db; color-scheme: dark }
+
+* { box-sizing: border-box; }
+html, body { background: var(--bg); color: var(--text); }
+body { font-family: var(--f-text); font-size: 16px; line-height: 1.45; margin: 0; padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--kopf); }
+h1, h2, h3 { font-family: var(--f-titel); font-weight: 700; text-wrap: balance; margin: 0; }
+button { font: inherit; color: inherit; cursor: pointer; }
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+a { color: var(--petrol); }
+.wrap { max-width: 760px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* Kopf */
+header.kopf { background: var(--kopf); color: var(--kopf-text); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; }
+header.kopf .wrap { padding-block: 12px 10px; display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+header.kopf h1 { font-size: 1.35rem; }
+header.kopf .ort { font-size: .8rem; opacity: .8; letter-spacing: .04em; }
+.mondpill { display: inline-flex; gap: 6px; align-items: center; background: rgba(241,236,221,.14); border-radius: 999px; padding: 4px 12px; font-size: .9rem; white-space: nowrap; }
+
+main .wrap { padding-block: 18px 24px; display: flex; flex-direction: column; gap: 22px; }
+section.block { display: flex; flex-direction: column; gap: 10px; }
+.block > h2 { font-size: 1.3rem; color: var(--dunkel); }
+.block > .unter { color: var(--leise); font-size: .92rem; margin-top: -6px; }
+.karte { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 12px; padding: 14px 16px; min-width: 0; }
+.leer { color: var(--leise); font-style: italic; }
+.zeile { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.klein { font-size: .85rem; color: var(--leise); }
+.pill { display: inline-block; border-radius: 999px; padding: 2px 10px; font-size: .8rem; font-weight: 600; background: var(--petrol-hell); color: var(--text); white-space: nowrap; }
+.pill.orange { background: var(--orange-hell); }
+.pill.leise { background: transparent; border: 1px solid var(--linie); color: var(--leise); font-weight: 400; }
+
+/* Mondstreifen */
+.mondstreifen { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+.mtag { text-align: center; border-radius: 10px; padding: 8px 2px; background: var(--flaeche); border: 1px solid var(--linie); font-size: .8rem; }
+.mtag b { display: block; font-size: 1.15rem; line-height: 1.2; }
+.mtag.heute { border-color: var(--orange); box-shadow: inset 0 0 0 1px var(--orange); }
+.mtag .typ { display: block; font-weight: 600; color: var(--dunkel); }
+
+/* Listen */
+ul.liste { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+ul.liste > li { border-top: 1px solid var(--linie); }
+ul.liste > li:first-child { border-top: 0; }
+.eintrag { display: flex; gap: 10px; align-items: center; justify-content: space-between; width: 100%; padding: 11px 0; background: none; border: 0; text-align: left; min-width: 0; }
+.eintrag .haupt { min-width: 0; flex: 1; }
+.eintrag .name { font-weight: 600; overflow-wrap: anywhere; }
+.eintrag .zusatz { font-size: .85rem; color: var(--leise); overflow-wrap: anywhere; }
+
+/* Monatsband */
+.monate { display: grid; grid-template-columns: repeat(12, 1fr); gap: 2px; width: 120px; flex: none; }
+.monate span { height: 10px; border-radius: 2px; background: var(--linie); opacity: .55; }
+.monate span.h { background: var(--petrol-hell); opacity: 1; }
+.monate span.b { background: var(--petrol); opacity: 1; }
+.monate span.e { background: var(--orange); opacity: 1; }
+.monate span.jetzt { box-shadow: 0 3px 0 -1px var(--text); }
+.legende { display: flex; gap: 14px; flex-wrap: wrap; font-size: .8rem; color: var(--leise); }
+.legende i { display: inline-block; width: 12px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+
+/* Filter */
+.filter { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+.filter button { flex: none; border: 1px solid var(--linie); background: var(--flaeche); border-radius: 999px; padding: 6px 14px; font-size: .9rem; }
+.filter button[aria-pressed="true"] { background: var(--dunkel); border-color: var(--dunkel); color: var(--bg); }
+.filter button[aria-pressed="true"] .klein { color: inherit; opacity: .75; }
+input.suche { width: 100%; border: 1px solid var(--linie); background: var(--flaeche); border-radius: 10px; padding: 10px 12px; font: inherit; color: var(--text); }
+
+/* Garten-Plan */
+.plan { display: flex; flex-direction: column; gap: 16px; }
+.lage h3 { font-size: 1.05rem; color: var(--dunkel); margin-bottom: 8px; }
+.lage .klein { margin: -4px 0 8px; }
+.beetreihe { display: flex; gap: 8px; flex-wrap: wrap; align-items: flex-end; }
+.beet { border: 1px solid var(--linie); background: var(--petrol-hell); border-radius: 6px; padding: 8px; text-align: left; display: flex; flex-direction: column; justify-content: space-between; min-width: 0; overflow: hidden; }
+.beet b { font-size: .9rem; font-family: var(--f-titel); }
+.beet span { font-size: .75rem; color: var(--leise); overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+.beet.tomate { flex: 1 1 0; min-width: 0; height: 92px; padding: 8px 4px; align-items: center; background: var(--orange-hell); }
+.beet.tomate span { display: none; }
+.beet.lang { width: 100%; min-height: 64px; gap: 4px; }
+.beet.lang span { -webkit-line-clamp: 2; }
+.beet.hoch { flex: 1 1 0; min-width: 0; min-height: 120px; justify-content: flex-start; gap: 6px; }
+.beet.hoch span { -webkit-line-clamp: 4; }
+
+/* Knöpfe */
+.knopf { border: 0; border-radius: 10px; padding: 11px 16px; background: var(--dunkel); color: var(--bg); font-weight: 600; }
+.knopf.orange { background: var(--orange); color: #0c1c30; }
+.knopf.leise { background: transparent; border: 1px solid var(--linie); color: var(--text); }
+.knopf.gefahr { background: transparent; border: 1px solid var(--warn); color: var(--warn); }
+.knopfzeile { display: flex; gap: 8px; flex-wrap: wrap; }
+.plus { position: fixed; right: max(16px, calc(env(safe-area-inset-right, 0px) + 16px)); bottom: calc(86px + env(safe-area-inset-bottom, 0px)); z-index: 6; border: 0; border-radius: 999px; padding: 14px 20px; background: var(--orange); color: #0c1c30; font-weight: 700; box-shadow: 0 6px 18px rgba(12,28,48,.25); }
+
+/* Erinnerungen */
+.erinnerung { display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; }
+.erinnerung .datum { font-weight: 700; color: var(--warn); font-size: .85rem; }
+.erinnerung .datum.bald { color: var(--dunkel); }
+
+/* Fliesstext aus Notion */
+.text { max-width: 65ch; overflow-wrap: anywhere; }
+.text h4 { font-family: var(--f-titel); font-size: 1.05rem; margin: 14px 0 4px; color: var(--dunkel); }
+.text p { margin: 6px 0; }
+.text ul { margin: 6px 0; padding-left: 20px; }
+.text pre { white-space: pre-wrap; font: inherit; margin: 0; }
+
+/* Reiter unten */
+nav.reiter { position: fixed; left: 0; right: 0; bottom: 0; z-index: 8; background: var(--flaeche); border-top: 1px solid var(--linie); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+nav.reiter .innen { max-width: 760px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); }
+nav.reiter button { background: none; border: 0; padding: 8px 2px 10px; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: .75rem; color: var(--leise); }
+nav.reiter button svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+nav.reiter button[aria-current="page"] { color: var(--petrol); font-weight: 700; }
+
+/* Blatt (Bearbeiten) */
+.schleier { position: fixed; inset: 0; background: rgba(12,28,48,.45); z-index: 20; display: flex; align-items: flex-end; justify-content: center; }
+.blatt { background: var(--bg); width: 100%; max-width: 640px; max-height: 92vh; overflow-y: auto; border-radius: 16px 16px 0 0; padding: 18px max(16px, env(safe-area-inset-right, 0px)) calc(18px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); display: flex; flex-direction: column; gap: 14px; }
+.blatt h2 { font-size: 1.35rem; color: var(--dunkel); }
+.feld { display: flex; flex-direction: column; gap: 4px; }
+.feld label, .feld .lbl { font-size: .8rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--leise); }
+.feld input, .feld textarea, .feld select { font: inherit; color: var(--text); background: var(--flaeche); border: 1px solid var(--linie); border-radius: 8px; padding: 9px 10px; width: 100%; }
+.feld textarea { min-height: 90px; resize: vertical; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips button { border: 1px solid var(--linie); background: var(--flaeche); border-radius: 999px; padding: 5px 11px; font-size: .85rem; }
+.chips button[aria-pressed="true"] { background: var(--petrol); border-color: var(--petrol); color: var(--bg); }
+.zwei { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.zwei > * { min-width: 0; }
+.hinweis { position: fixed; left: 50%; transform: translateX(-50%); top: calc(14px + env(safe-area-inset-top, 0px)); background: var(--dunkel); color: var(--bg); padding: 10px 16px; border-radius: 10px; z-index: 30; font-size: .9rem; max-width: calc(100% - 32px); }
+.status-menue { display: flex; flex-wrap: wrap; gap: 6px; }
+@media (max-width: 420px) { .zwei { grid-template-columns: 1fr; } .monate { width: 84px; } }
+@media (prefers-reduced-motion: no-preference) { .blatt { animation: hoch .18s ease-out; } @keyframes hoch { from { transform: translateY(24px); opacity: .6; } } }
+</style>
+
+<header class="kopf">
+  <div class="wrap">
+    <div>
+      <h1>Unser Garten</h1>
+      <div class="ort">APPENZELLERLAND · 920 M Ü. M.</div>
+    </div>
+    <span class="mondpill" id="mondpill">Mondtag wird berechnet</span>
+  </div>
+</header>
+
+<main><div class="wrap" id="inhalt"><p class="leer">Garten wird geladen …</p></div></main>
+
+<button class="plus" id="plus" hidden></button>
+
+<nav class="reiter" aria-label="Bereiche"><div class="innen" id="reiter"></div></nav>
+
+<script>
+"use strict";
+const MONATE = ["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"];
+const STATUS = ["Bestellen","Vorrat da","Ausgesät","Umgetopft","Ausgepflanzt","Ernte"];
+const IM_GARTEN = ["Ausgesät","Umgetopft","Ausgepflanzt","Ernte"];
+const AKTIVITAETEN = ["Aussaat","Pikieren","Umtopfen","Auspflanzen","Ernte","Giessen","Düngen","Mulchen","Schnitt","Beetvorbereitung","Beobachtung","Schädlinge"];
+const SAISON = ["Frühling","Sommer","Herbst","Winter"];
+const REITER = [
+  { id: "jetzt", name: "Jetzt", icon: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>' },
+  { id: "garten", name: "Beete", icon: '<rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="8" height="6" rx="1"/><rect x="13" y="14" width="8" height="6" rx="1"/>' },
+  { id: "samen", name: "Samen", icon: '<path d="M12 21c-4-3-6-7-6-11a6 6 0 0 1 12 0c0 4-2 8-6 11z"/><path d="M12 8v6"/>' },
+  { id: "tagebuch", name: "Tagebuch", icon: '<path d="M5 3h11l3 3v15H5z"/><path d="M9 9h6M9 13h6M9 17h4"/>' },
+  { id: "wissen", name: "Wissen", icon: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/>' },
+];
+
+/* ---------- Zustand ---------- */
+const S = { samen: [], beete: [], dauer: [], wissen: [], tagebuch: [], plan: {}, geladen: false, schreiben: true, quelle: "" };
+const ui = { reiter: "jetzt", samenFilter: "alle", samenSuche: "", wissenSuche: "", wissenSaison: "alle" };
+try { const r = localStorage.getItem("garten:reiter"); if (r) ui.reiter = r; } catch (e) {}
+const h0 = (location.hash || "").slice(1); if (REITER.some(r => r.id === h0)) ui.reiter = h0;
+
+/* ---------- Speicher: Artifact-Datenbank, lokal Testdaten ---------- */
+let store = null;
+const kopie = x => JSON.parse(JSON.stringify(x));
+async function starten() {
+  let db = null;
+  try { db = window.claude && window.claude.use ? await window.claude.use("db") : null; } catch (e) { db = null; }
+  if (db) {
+    S.quelle = "db";
+    try { const u = await window.claude.use("user"); if (u) { const c = await u.can("data.write"); if (c === false) S.schreiben = false; } } catch (e) {}
+    const offen = new Set(["samen","beete","dauer","wissen","tagebuch","plan"]);
+    for (const n of offen) {
+      db.collection(n).onSnapshot(snap => {
+        const liste = snap.docs.map(d => Object.assign(kopie(d.data() || {}), { id: d.id }));
+        if (n === "plan") { S.plan = {}; liste.forEach(x => S.plan[x.id] = x); } else S[n] = liste;
+        offen.delete(n); if (!offen.size) S.geladen = true;
+        zeichnen();
+      }, e => hinweis("Verbindung unterbrochen. Lade die Seite neu."));
+    }
+    store = {
+      async speichern(n, id, daten) { await db.collection(n).doc(id).set(daten); },
+      async loeschen(n, id) { await db.collection(n).doc(id).delete(); },
+      neueId(n) { return db.collection(n).doc().id; },
+    };
+    setTimeout(() => { if (!S.geladen) { S.geladen = true; zeichnen(); } }, 6000);
+    return;
+  }
+  // Lokale Vorschau: Testdaten neben der Datei, nur auf dem eigenen Rechner
+  if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+    try {
+      const t = await (await fetch("testdaten.json")).json();
+      ["samen","beete","dauer","wissen","tagebuch"].forEach(n => S[n] = t[n] || []);
+      S.plan = t.plan || {}; S.quelle = "test"; S.geladen = true;
+      store = {
+        async speichern(n, id, daten) { const l = S[n]; const i = l.findIndex(x => x.id === id); const d = Object.assign({}, daten, { id }); if (i >= 0) l[i] = d; else l.push(d); zeichnen(); },
+        async loeschen(n, id) { S[n] = S[n].filter(x => x.id !== id); zeichnen(); },
+        neueId() { return "t" + Date.now().toString(36); },
+      };
+      zeichnen(); return;
+    } catch (e) {}
+  }
+  S.quelle = "keine"; S.geladen = true; zeichnen();
+}
+
+async function speichern(n, id, daten) {
+  const sauber = {};
+  Object.entries(daten).forEach(([k, v]) => { if (k !== "id" && v !== undefined && v !== null && v !== "" && !(Array.isArray(v) && !v.length)) sauber[k] = v; });
+  sauber.geaendert = new Date().toISOString();
+  try { await store.speichern(n, id, sauber); hinweis("Gespeichert"); return true; }
+  catch (e) { hinweis(e && e.code === "quota_exceeded" ? "Der Speicher ist voll. Lösche alte Einträge." : "Speichern hat nicht geklappt. Versuch es nochmal."); return false; }
+}
+
+/* ---------- Hilfen ---------- */
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const heute = () => { const d = new Date(); return new Date(d.getFullYear(), d.getMonth(), d.getDate()); };
+const iso = d => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+const ausIso = s => { if (!s) return null; const [y, m, d] = s.slice(0, 10).split("-").map(Number); return new Date(y, m - 1, d); };
+const datumKurz = s => { const d = ausIso(s); return d ? d.toLocaleDateString("de-CH", { day: "numeric", month: "short", year: d.getFullYear() !== heute().getFullYear() ? "numeric" : undefined }) : ""; };
+const tageBis = s => Math.round((ausIso(s) - heute()) / 864e5);
+const monatJetzt = () => MONATE[heute().getMonth()];
+const jahreszeit = m => [3,3,0,0,0,1,1,1,2,2,2,3][m];
+function hinweis(t) {
+  const el = document.createElement("div"); el.className = "hinweis"; el.setAttribute("role", "status"); el.textContent = t;
+  document.body.appendChild(el); setTimeout(() => el.remove(), 2400);
+}
+function textBlock(t) {
+  if (!t) return "";
+  const z = t.split("\n"); let html = "", liste = false;
+  z.forEach(l => {
+    const s = l.trim();
+    if (/^- /.test(s) || /^- \[ \] /.test(s)) { if (!liste) { html += "<ul>"; liste = true; } html += "<li>" + esc(s.replace(/^- (\[ \] )?/, "")) + "</li>"; return; }
+    if (liste) { html += "</ul>"; liste = false; }
+    if (/^#{1,3} /.test(s)) html += "<h4>" + esc(s.replace(/^#+ /, "")) + "</h4>";
+    else if (s) html += "<p>" + esc(s.replace(/^> /, "")) + "</p>";
+  });
+  if (liste) html += "</ul>";
+  return '<div class="text">' + html + "</div>";
+}
+
+/* ---------- Mondtag (siderischer Mondstand, gleich grosse Zeichen) ---------- */
+const ZEICHEN = ["Widder","Stier","Zwillinge","Krebs","Löwe","Jungfrau","Waage","Skorpion","Schütze","Steinbock","Wassermann","Fische"];
+const TYP = ["Fruchttag","Wurzeltag","Blütentag","Blatttag"];
+const TYP_KURZ = { Fruchttag: "Frucht", Wurzeltag: "Wurzel", "Blütentag": "Blüte", Blatttag: "Blatt" };
+function mond(datum) {
+  const t = new Date(datum.getFullYear(), datum.getMonth(), datum.getDate(), 12);
+  const d = (t.getTime() - Date.UTC(2000, 0, 1, 12)) / 864e5, r = Math.PI / 180, s = x => Math.sin(x * r);
+  const L = 218.316 + 13.176396 * d, M = 134.963 + 13.064993 * d, F = 93.272 + 13.22935 * d;
+  const D = 297.85 + 12.190749 * d, Ms = 357.529 + 0.98560028 * d;
+  const lon = L + 6.289 * s(M) + 1.274 * s(2 * D - M) + 0.658 * s(2 * D) + 0.214 * s(2 * M) - 0.186 * s(Ms) - 0.114 * s(2 * F);
+  const ayan = 23.85 + 0.01397 * (d / 365.25);
+  const sid = ((lon - ayan) % 360 + 360) % 360;
+  const i = Math.floor(sid / 30);
+  return { zeichen: ZEICHEN[i], typ: TYP[i % 4] };
+}
+
+/* ---------- Saisonrahmen 920 m ---------- */
+const RAHMEN = [
+  "Winterruhe. Samen sichten, bestellen, Beete planen.",
+  "Erste Sorten unter der Lampe vorziehen. Draussen ist noch Winter.",
+  "Vorziehen unter der Lampe. Frost ist jederzeit möglich.",
+  "Vorziehen und abhärten. Unter Vlies geht schon etwas ins Hochbeet.",
+  "Frostempfindliches erst nach den Eisheiligen raus (auf 920 m etwa 19.–25. Mai).",
+  "Hauptsaison: auspflanzen, nachsäen, mulchen.",
+  "Hauptsaison: ernten, nachsäen, Tomaten ausgeizen.",
+  "Ernte und Nachsaat für den Herbst.",
+  "Ende September ist der erste Frost möglich. Empfindliches vorbereiten.",
+  "Frostnächte: letzte Ernte, Beete mulchen, Empfindliches einwintern.",
+  "Garten ruht. Laub als Mulch, Werkzeug versorgen.",
+  "Winterruhe. Rückblick ins Tagebuch, Pläne fürs neue Jahr.",
+];
+
+/* ---------- Zeichnen ---------- */
+function zeichnen() {
+  const m = mond(heute());
+  document.getElementById("mondpill").textContent = "🌙 " + TYP_KURZ[m.typ] + "tag · " + m.zeichen;
+  document.getElementById("reiter").innerHTML = REITER.map(r =>
+    `<button data-reiter="${r.id}" ${r.id === ui.reiter ? 'aria-current="page"' : ""}><svg viewBox="0 0 24 24" aria-hidden="true">${r.icon}</svg>${r.name}</button>`).join("");
+  const el = document.getElementById("inhalt");
+  if (!S.geladen) { el.innerHTML = '<p class="leer">Garten wird geladen …</p>'; return; }
+  if (S.quelle === "keine") { el.innerHTML = '<section class="karte"><h2>Hier fehlt die Verbindung</h2><p>Die Gartendaten liegen in der Datenbank dieser Seite. Öffne die Seite angemeldet in Claude, dann ist alles da.</p></section>'; return; }
+  const f = { jetzt: zJetzt, garten: zGarten, samen: zSamen, tagebuch: zTagebuch, wissen: zWissen }[ui.reiter] || zJetzt;
+  el.innerHTML = f();
+  const plus = document.getElementById("plus");
+  const plusText = { samen: "+ Neue Sorte", tagebuch: "+ Eintrag", wissen: "+ Notiz" }[ui.reiter];
+  plus.hidden = !plusText || !S.schreiben; plus.textContent = plusText || "";
+}
+
+function zJetzt() {
+  const h = heute(), mi = h.getMonth(), mon = MONATE[mi];
+  const tage = [...Array(7)].map((_, i) => { const d = new Date(h); d.setDate(d.getDate() + i); return { d, m: mond(d) }; });
+  const streifen = tage.map((t, i) => `<div class="mtag ${i ? "" : "heute"}"><span class="klein">${t.d.toLocaleDateString("de-CH", { weekday: "short" })}</span><b>${t.d.getDate()}</b><span class="typ">${TYP_KURZ[t.m.typ]}</span></div>`).join("");
+  const passend = S.samen.filter(s => s.mond === tage[0].m.typ && ((s.haussaat || []).includes(mon) || (s.insBeet || []).includes(mon)));
+
+  // Erinnerungen
+  const er = S.tagebuch.filter(t => t.erinnerung && !t.erledigt && t.datum && tageBis(t.datum) <= 30).sort((a, b) => a.datum.localeCompare(b.datum));
+  const erHtml = er.length ? `<ul class="liste">${er.map(t => { const n = tageBis(t.datum); return `<li class="erinnerung" style="padding:10px 0"><button class="eintrag" data-oeffne="tagebuch:${t.id}" style="padding:0"><span class="haupt"><span class="datum ${n >= 0 ? "bald" : ""}">${n < 0 ? "fällig seit " + datumKurz(t.datum) : n === 0 ? "heute" : "am " + datumKurz(t.datum)}</span><br><span class="name">${esc(t.titel.replace(/^\W*ERINNERUNG:\s*/i, ""))}</span><br><span class="zusatz">${esc((t.beobachtung || "").slice(0, 140))}</span></span></button>${S.schreiben ? `<button class="knopf leise" data-erledigt="${t.id}">Erledigt</button>` : ""}</li>`; }).join("")}</ul>` : '<p class="leer">Gerade ist nichts fällig.</p>';
+
+  // Wochenplan
+  const wp = S.plan.woche;
+  const wpHtml = wp && wp.text ? `<div class="klein">${esc(wp.titel || "Wochenplan")} · erstellt ${datumKurz(wp.erstellt)}</div>${textBlock(wp.text)}` : '<p class="leer">Der Wochenplan kommt jeden Sonntag um 18 Uhr hierher.</p>';
+  const hp = S.plan.heute && S.plan.heute.datum === iso(h) ? `<section class="block"><h2>Heute</h2><div class="karte">${textBlock(S.plan.heute.text)}</div></section>` : "";
+
+  // Monat
+  const vorziehen = S.samen.filter(s => (s.haussaat || []).includes(mon) && !["Ausgepflanzt","Ernte"].includes(s.status));
+  const insBeet = S.samen.filter(s => (s.insBeet || []).includes(mon) && !["Ausgepflanzt","Ernte"].includes(s.status));
+  const ernten = S.samen.filter(s => (s.ernte || []).includes(mon) && ["Ausgepflanzt","Ernte"].includes(s.status));
+  const dauerJetzt = S.dauer.filter(d => (d.ernte || []).includes(mon) || (d.bluete || []).includes(mon));
+  let naechster = "";
+  if (!vorziehen.length && !insBeet.length) {
+    for (let k = 1; k < 12; k++) { const nm = MONATE[(mi + k) % 12]; const n = S.samen.filter(s => (s.haussaat || []).includes(nm) || (s.insBeet || []).includes(nm)).length; if (n) { naechster = `Im ${mon} wird nichts gesät. Im ${nm} geht es wieder los, mit ${n} Sorten.`; break; } }
+  }
+  const namen = l => l.map(s => `<button class="pill leise" data-oeffne="samen:${s.id}">${esc(s.name)}</button>`).join(" ");
+  const gruppe = (titel, l) => l.length ? `<div><div class="zeile"><b>${titel}</b><span class="klein">${l.length}</span></div><div class="chips" style="margin-top:6px">${namen(l)}</div></div>` : "";
+  const wiss = S.wissen.filter(w => (w.saison || []).includes(SAISON[jahreszeit(mi)]) || (w.saison || []).includes(mon)).sort((a, b) => (b.datum || "").localeCompare(a.datum || "")).slice(0, 3);
+
+  return `
+  <section class="block"><h2>${h.toLocaleDateString("de-CH", { weekday: "long", day: "numeric", month: "long" })}</h2>
+    <div class="unter">${esc(RAHMEN[mi])}</div>
+    <div class="mondstreifen" aria-label="Mondtage der nächsten 7 Tage">${streifen}</div>
+    <div class="klein">Mondtag aus dem Mondstand berechnet. An den Grenzen kann er einen Tag vom gedruckten Kalender abweichen.${passend.length ? " Heute passt: " + passend.map(s => esc(s.name)).slice(0, 5).join(", ") + "." : ""}</div>
+  </section>
+  ${hp}
+  <section class="block"><h2>Erinnerungen</h2><div class="karte">${erHtml}</div></section>
+  <section class="block"><h2>Wochenplan</h2><div class="karte">${wpHtml}</div></section>
+  <section class="block"><h2>Im ${mon}</h2>
+    <div class="karte" style="display:flex;flex-direction:column;gap:14px">
+      ${gruppe("Vorziehen unter der Lampe", vorziehen)}${gruppe("Ins Beet", insBeet)}${gruppe("Ernten", ernten)}
+      ${dauerJetzt.length ? `<div><b>Bäume, Sträucher, Wildkräuter</b><ul class="liste" style="margin-top:4px">${dauerJetzt.map(d => `<li><button class="eintrag" data-oeffne="dauer:${d.id}"><span class="haupt"><span class="name">${esc(d.name)}</span><br><span class="zusatz">${(d.ernte || []).includes(mon) ? "Ernte" : "Blüte"}${d.verarbeitung && (d.ernte || []).includes(mon) ? " · " + esc(d.verarbeitung) : ""}</span></span></button></li>`).join("")}</ul></div>` : ""}
+      ${naechster ? `<p class="leer" style="margin:0">${naechster}</p>` : ""}
+    </div>
+  </section>
+  ${wiss.length ? `<section class="block"><h2>Passt zur Jahreszeit</h2><div class="karte"><ul class="liste">${wiss.map(wissenZeile).join("")}</ul></div></section>` : ""}`;
+}
+
+function zGarten() {
+  const b = S.beete.slice().sort((x, y) => (x.reihe || 0) - (y.reihe || 0));
+  const kachel = (x, cls) => `<button class="beet ${cls}" data-oeffne="beete:${x.id}" aria-label="${esc(x.name)}"><b>${esc(x.name.replace("Tomatenbeet ", "T").replace("Längsbeet", "Längsbeet").replace("Hochbeet", "Hochbeet"))}</b><span>${esc((x.jetzt || "").replace(/^\d{4}\s*[—·-]\s*/, ""))}</span></button>`;
+  const tom = b.filter(x => x.typ === "Tomatenbeet"), lang = b.filter(x => /Längs/.test(x.name)), hoch = b.filter(x => /Hoch/.test(x.name));
+  const rest = b.filter(x => !tom.includes(x) && !lang.includes(x) && !hoch.includes(x));
+  const gruppen = {};
+  S.dauer.forEach(d => (gruppen[d.typ || "Sonstiges"] = gruppen[d.typ || "Sonstiges"] || []).push(d));
+  return `
+  <section class="block"><h2>Beete</h2><div class="unter">Massstäblich gezeichnet. Antippen zeigt, was drin ist und was danach kommt.</div>
+    <div class="karte plan">
+      ${tom.length ? `<div class="lage"><h3>Ost, unter dem Vordach</h3><div class="klein">${tom.length} Tomatenbeete à ${esc(tom[0].masse || "")} cm, regengeschützt</div><div class="beetreihe">${tom.map(x => kachel(x, "tomate")).join("")}</div></div>` : ""}
+      ${lang.length || hoch.length ? `<div class="lage"><h3>Südwest, volle Sonne</h3><div class="klein">Längsbeete ${esc(lang[0] ? lang[0].masse : "")} cm · Hochbeete ${esc(hoch[0] ? hoch[0].masse : "")} cm</div><div class="beetreihe">${lang.map(x => kachel(x, "lang")).join("")}</div><div class="beetreihe" style="margin-top:8px">${hoch.map(x => kachel(x, "hoch")).join("")}</div></div>` : ""}
+      ${rest.length ? `<div class="lage"><h3>Weitere</h3><div class="beetreihe">${rest.map(x => kachel(x, "hoch")).join("")}</div></div>` : ""}
+      ${!b.length ? '<p class="leer">Noch keine Beete eingetragen.</p>' : ""}
+    </div>
+  </section>
+  <section class="block"><h2>Bäume, Sträucher, Wildkräuter</h2>
+    <div class="karte">${Object.keys(gruppen).sort().map(g => `<div style="margin-bottom:10px"><div class="klein" style="font-weight:700;letter-spacing:.05em;text-transform:uppercase">${esc(g)}</div><ul class="liste">${gruppen[g].map(d => `<li><button class="eintrag" data-oeffne="dauer:${d.id}"><span class="haupt"><span class="name">${esc(d.name)}</span><br><span class="zusatz">${esc(d.standort || "")}${d.letzterSchnitt ? " · Schnitt " + datumKurz(d.letzterSchnitt) : ""}</span></span>${monatsband([], d.bluete, d.ernte)}</button></li>`).join("")}</ul></div>`).join("") || '<p class="leer">Noch nichts eingetragen.</p>'}
+      <div class="legende"><span><i style="background:var(--petrol)"></i>Blüte</span><span><i style="background:var(--orange)"></i>Ernte</span></div>
+    </div>
+  </section>`;
+}
+
+function monatsband(haus, beet, ernte) {
+  const mi = heute().getMonth();
+  return `<span class="monate" aria-hidden="true">${MONATE.map((m, i) => { const c = (ernte || []).includes(m) ? "e" : (beet || []).includes(m) ? "b" : (haus || []).includes(m) ? "h" : ""; return `<span class="${c} ${i === mi ? "jetzt" : ""}"></span>`; }).join("")}</span>`;
+}
+
+function zSamen() {
+  const mon = monatJetzt(), q = ui.samenSuche.toLowerCase();
+  const F = {
+    alle: () => true,
+    jetzt: s => ((s.haussaat || []).includes(mon) || (s.insBeet || []).includes(mon)) && !["Ausgepflanzt","Ernte"].includes(s.status),
+    vorrat: s => s.status === "Vorrat da",
+    bestellen: s => s.status === "Bestellen",
+    garten: s => IM_GARTEN.includes(s.status),
+  };
+  const l = S.samen.filter(F[ui.samenFilter] || F.alle).filter(s => !q || (s.name + " " + (s.beet || "") + " " + (s.notiz || "")).toLowerCase().includes(q)).sort((a, b) => a.name.localeCompare(b.name, "de"));
+  const zahl = k => S.samen.filter(F[k]).length;
+  const knopf = (k, t) => `<button data-samenfilter="${k}" aria-pressed="${ui.samenFilter === k}">${t} <span class="klein">${zahl(k)}</span></button>`;
+  return `
+  <section class="block"><h2>Samen</h2>
+    <input class="suche" id="samensuche" type="search" placeholder="Sorte suchen" value="${esc(ui.samenSuche)}" aria-label="Sorte suchen">
+    <div class="filter">${knopf("alle", "Alle")}${knopf("jetzt", "Jetzt säen")}${knopf("vorrat", "Vorrat da")}${knopf("bestellen", "Bestellen")}${knopf("garten", "Im Garten")}</div>
+    <div class="legende"><span><i style="background:var(--petrol-hell)"></i>Vorziehen</span><span><i style="background:var(--petrol)"></i>Ins Beet</span><span><i style="background:var(--orange)"></i>Ernte</span></div>
+    <div class="karte"><ul class="liste">${l.map(s => `<li><button class="eintrag" data-oeffne="samen:${s.id}"><span class="haupt"><span class="name">${esc(s.name)}</span><br><span class="zusatz"><span class="pill ${s.status === "Bestellen" ? "orange" : IM_GARTEN.includes(s.status) ? "" : "leise"}">${esc(s.status || "ohne Status")}</span> ${s.mond ? esc(TYP_KURZ[s.mond] || s.mond) : ""}${s.keimtopf ? " · Topf " + s.keimtopf : ""}</span></span>${monatsband(s.haussaat, s.insBeet, s.ernte)}</button></li>`).join("") || '<li class="leer" style="padding:10px 0">Keine Sorte passt zu diesem Filter.</li>'}</ul></div>
+  </section>`;
+}
+
+function zTagebuch() {
+  const l = S.tagebuch.slice().sort((a, b) => (b.datum || "").localeCompare(a.datum || ""));
+  const gruppen = []; let akt = null;
+  l.forEach(t => { const d = ausIso(t.datum); const k = d ? MONATE[d.getMonth()] + " " + d.getFullYear() : "Ohne Datum"; if (!akt || akt.k !== k) { akt = { k, l: [] }; gruppen.push(akt); } akt.l.push(t); });
+  return `
+  <section class="block"><h2>Tagebuch</h2><div class="unter">Was du gemacht und gesehen hast. Erinnerungen tauchen rechtzeitig unter „Jetzt“ auf.</div>
+    ${gruppen.map(g => `<div class="karte"><div class="klein" style="font-weight:700;letter-spacing:.05em;text-transform:uppercase">${esc(g.k)}</div><ul class="liste">${g.l.map(t => `<li><button class="eintrag" data-oeffne="tagebuch:${t.id}"><span class="haupt"><span class="klein">${datumKurz(t.datum)}${t.beet ? " · " + esc(t.beet) : ""}</span><br><span class="name">${t.erinnerung ? (t.erledigt ? "✓ " : "⏰ ") : ""}${esc(t.titel)}</span><br><span class="zusatz">${esc((t.aktivitaet || []).join(", "))}${t.ernte ? " · Ernte: " + esc(t.ernte) : ""}</span></span></button></li>`).join("")}</ul></div>`).join("") || '<p class="leer">Noch keine Einträge. Tipp unten auf „+ Eintrag“.</p>'}
+  </section>`;
+}
+
+function wissenZeile(w) {
+  return `<li><button class="eintrag" data-oeffne="wissen:${w.id}"><span class="haupt"><span class="klein">${esc(w.quelle || "")}${w.datum ? " · " + datumKurz(w.datum) : ""}</span><br><span class="name">${esc(w.titel)}</span><br><span class="zusatz">${esc((w.zusammenfassung || "").slice(0, 150))}${(w.zusammenfassung || "").length > 150 ? " …" : ""}</span></span></button></li>`;
+}
+function zWissen() {
+  const q = ui.wissenSuche.toLowerCase();
+  const l = S.wissen.filter(w => ui.wissenSaison === "alle" || (w.saison || []).includes(ui.wissenSaison))
+    .filter(w => !q || [w.titel, w.zusammenfassung, w.text, (w.thema || []).join(" "), w.quelle].join(" ").toLowerCase().includes(q))
+    .sort((a, b) => (b.datum || "").localeCompare(a.datum || ""));
+  const knopf = k => `<button data-wissensaison="${k}" aria-pressed="${ui.wissenSaison === k}">${k === "alle" ? "Alle" : k}</button>`;
+  return `
+  <section class="block"><h2>Wissen</h2><div class="unter">Newsletter, Kursnotizen und eigene Erfahrung. Neue Wurzelwerk-Mails kommen jeden Sonntag dazu.</div>
+    <input class="suche" id="wissensuche" type="search" placeholder="Suchen, z.B. Tomaten oder Vlies" value="${esc(ui.wissenSuche)}" aria-label="Wissen durchsuchen">
+    <div class="filter">${["alle", ...SAISON].map(knopf).join("")}</div>
+    <div class="karte"><ul class="liste">${l.map(wissenZeile).join("") || '<li class="leer" style="padding:10px 0">Nichts gefunden.</li>'}</ul></div>
+  </section>`;
+}
+
+/* ---------- Blatt: Ansehen und Bearbeiten ---------- */
+const FELDER = {
+  samen: [
+    { k: "name", l: "Sorte", t: "text" }, { k: "status", l: "Status", t: "status" },
+    { k: "mond", l: "Mondtag", t: "select", o: TYP }, { k: "naehrstoff", l: "Nährstoffbedarf", t: "select", o: ["Starkzehrer","Mittel","Schwachzehrer"] },
+    { k: "aussaat1", l: "Ausgesät am", t: "date", halb: 1 }, { k: "aussaat2", l: "Zweite Aussaat", t: "date", halb: 1 },
+    { k: "keimtopf", l: "Keimtopf Nr.", t: "number", halb: 1 }, { k: "anzahl", l: "Anzahl Pflanzen", t: "number", halb: 1 },
+    { k: "abstand", l: "Pflanzabstand cm", t: "number", halb: 1 }, { k: "kulturzeit", l: "Kulturzeit Tage", t: "number", halb: 1 },
+    { k: "haussaat", l: "Vorziehen (Monate)", t: "monate" }, { k: "insBeet", l: "Ins Beet (Monate)", t: "monate" }, { k: "ernte", l: "Ernte (Monate)", t: "monate" },
+    { k: "beet", l: "Beet", t: "text" }, { k: "gut", l: "Gute Nachbarn", t: "text" }, { k: "schlecht", l: "Schlechte Nachbarn", t: "text" },
+    { k: "nachsaat", l: "Nachsaat möglich", t: "check" }, { k: "notiz", l: "Notiz", t: "area" },
+  ],
+  beete: [
+    { k: "jetzt", l: "Aktuelle Bepflanzung", t: "area" }, { k: "naechste", l: "Nächste Kultur", t: "area" },
+    { k: "vorkultur2025", l: "Vorkultur 2025", t: "area" }, { k: "letzteDuengung", l: "Letzte Düngung", t: "date", halb: 1 },
+    { k: "mulch", l: "Gemulcht", t: "check", halb: 1 }, { k: "notizen", l: "Notizen", t: "area" },
+  ],
+  dauer: [
+    { k: "status", l: "Status", t: "select", o: ["Jung","Ertragreif","Nachbar"] }, { k: "standort", l: "Standort", t: "text" },
+    { k: "letzterSchnitt", l: "Letzter Schnitt", t: "date", halb: 1 }, { k: "pflanzjahr", l: "Pflanzjahr", t: "number", halb: 1 },
+    { k: "bluete", l: "Blüte (Monate)", t: "monate" }, { k: "ernte", l: "Ernte (Monate)", t: "monate" },
+    { k: "verarbeitung", l: "Verarbeitung", t: "area" }, { k: "pflege", l: "Pflege", t: "area" },
+  ],
+  tagebuch: [
+    { k: "titel", l: "Was war?", t: "text" },
+    { k: "datum", l: "Datum", t: "date", halb: 1 }, { k: "beet", l: "Beet", t: "beet", halb: 1 }, { k: "aktivitaet", l: "Tätigkeit", t: "chips", o: AKTIVITAETEN },
+    { k: "beobachtung", l: "Beobachtung", t: "area" }, { k: "ernte", l: "Ernte-Menge", t: "text", halb: 1 }, { k: "wetter", l: "Wetter", t: "text", halb: 1 },
+    { k: "erinnerung", l: "Als Erinnerung (taucht zum Datum unter „Jetzt“ auf)", t: "check" },
+  ],
+  wissen: [
+    { k: "titel", l: "Titel", t: "text" }, { k: "quelle", l: "Quelle", t: "text", halb: 1 }, { k: "datum", l: "Datum", t: "date", halb: 1 },
+    { k: "saison", l: "Jahreszeit", t: "chips", o: SAISON }, { k: "zusammenfassung", l: "Zusammenfassung", t: "area" }, { k: "link", l: "Link", t: "text" },
+  ],
+};
+const TITEL = { samen: "name", beete: "name", dauer: "name", tagebuch: "titel", wissen: "titel" };
+let blatt = null; // {n, id, daten, bearbeiten, loeschBereit}
+
+function oeffne(n, id, bearbeiten) {
+  const x = S[n].find(y => y.id === id);
+  if (!x) return;
+  blatt = { n, id, daten: kopie(x), bearbeiten: !!bearbeiten, neu: false };
+  blattZeichnen();
+}
+function neu(n) {
+  const d = n === "tagebuch" ? { datum: iso(heute()), titel: "" } : n === "wissen" ? { datum: iso(heute()), quelle: "Eigene Erfahrung" } : { status: "Vorrat da" };
+  blatt = { n, id: store.neueId(n), daten: d, bearbeiten: true, neu: true };
+  blattZeichnen();
+}
+function zu() { blatt = null; const s = document.querySelector(".schleier"); if (s) s.remove(); }
+
+function anzeige(n, x) {
+  const zeile = (l, v) => v ? `<div class="feld"><span class="lbl">${l}</span><div>${v}</div></div>` : "";
+  const mon = a => (a || []).join(", ");
+  if (n === "samen") return `<div class="zeile"><span class="pill">${esc(x.status || "ohne Status")}</span>${x.mond ? `<span class="pill leise">${esc(x.mond)}</span>` : ""}${x.naehrstoff ? `<span class="pill leise">${esc(x.naehrstoff)}</span>` : ""}</div>
+    ${monatsband(x.haussaat, x.insBeet, x.ernte).replace('class="monate"', 'class="monate" style="width:100%"')}
+    <div class="zwei">${zeile("Vorziehen", esc(mon(x.haussaat)))}${zeile("Ins Beet", esc(mon(x.insBeet)))}${zeile("Ernte", esc(mon(x.ernte)))}${zeile("Ausgesät", datumKurz(x.aussaat1) + (x.aussaat2 ? " und " + datumKurz(x.aussaat2) : ""))}${zeile("Keimtopf", x.keimtopf)}${zeile("Pflanzen", x.anzahl)}${zeile("Abstand", x.abstand ? x.abstand + " cm" : "")}${zeile("Kulturzeit", x.kulturzeit ? x.kulturzeit + " Tage" : "")}</div>
+    ${zeile("Beet", esc(x.beet))}${zeile("Gute Nachbarn", esc(x.gut))}${zeile("Schlechte Nachbarn", esc(x.schlecht))}${x.nachsaat ? zeile("Nachsaat", "möglich") : ""}${zeile("Notiz", esc(x.notiz))}${x.text ? textBlock(x.text) : ""}`;
+  if (n === "beete") return `<div class="zeile"><span class="pill">${esc(x.ausrichtung || "")}</span><span class="pill leise">${esc(x.masse || "")} cm</span>${x.mulch ? '<span class="pill leise">gemulcht</span>' : ""}</div>
+    ${zeile("Jetzt drin", esc(x.jetzt))}${zeile("Danach", esc(x.naechste))}${zeile("Vorkultur 2025", esc(x.vorkultur2025))}${zeile("Letzte Düngung", datumKurz(x.letzteDuengung))}${zeile("Besonderheit", esc(x.besonderheit))}${zeile("Notizen", esc(x.notizen))}`;
+  if (n === "dauer") return `<div class="zeile"><span class="pill">${esc(x.typ || "")}</span><span class="pill leise">${esc(x.status || "")}</span></div>
+    ${monatsband([], x.bluete, x.ernte).replace('class="monate"', 'class="monate" style="width:100%"')}
+    <div class="zwei">${zeile("Blüte", esc(mon(x.bluete)))}${zeile("Ernte", esc(mon(x.ernte)))}${zeile("Standort", esc(x.standort))}${zeile("Letzter Schnitt", datumKurz(x.letzterSchnitt))}</div>${zeile("Verarbeitung", esc(x.verarbeitung))}${zeile("Pflege", esc(x.pflege))}`;
+  if (n === "tagebuch") return `<div class="klein">${datumKurz(x.datum)}${x.beet ? " · " + esc(x.beet) : ""}${(x.aktivitaet || []).length ? " · " + esc(x.aktivitaet.join(", ")) : ""}</div>
+    ${x.erinnerung ? `<div class="zeile"><span class="pill ${x.erledigt ? "" : "orange"}">${x.erledigt ? "Erinnerung erledigt" : "Erinnerung offen"}</span></div>` : ""}
+    ${zeile("Beobachtung", esc(x.beobachtung))}${zeile("Ernte", esc(x.ernte))}${zeile("Wetter", esc(x.wetter))}${x.text ? textBlock(x.text) : ""}`;
+  if (n === "wissen") return `<div class="klein">${esc(x.quelle || "")}${x.datum ? " · " + datumKurz(x.datum) : ""}</div>
+    <div class="chips">${(x.thema || []).concat(x.saison || []).map(t => `<span class="pill leise">${esc(t)}</span>`).join("")}</div>
+    ${x.zusammenfassung ? `<p class="text" style="margin:0">${esc(x.zusammenfassung)}</p>` : ""}${x.text ? textBlock(x.text) : ""}
+    ${x.link ? `<a href="${esc(x.link)}" target="_blank" rel="noopener">Original öffnen</a>` : ""}`;
+  return "";
+}
+
+function feldHtml(f, x) {
+  const v = x[f.k], id = "f-" + f.k;
+  const wrap = inner => `<div class="feld" ${f.halb ? "" : ""}>${f.t === "check" ? "" : `<label for="${id}">${f.l}</label>`}${inner}</div>`;
+  if (f.t === "text") return wrap(`<input id="${id}" data-k="${f.k}" value="${esc(v || "")}">`);
+  if (f.t === "area") return wrap(`<textarea id="${id}" data-k="${f.k}">${esc(v || "")}</textarea>`);
+  if (f.t === "date") return wrap(`<input id="${id}" type="date" data-k="${f.k}" value="${esc((v || "").slice(0, 10))}">`);
+  if (f.t === "number") return wrap(`<input id="${id}" type="number" inputmode="numeric" data-k="${f.k}" data-num="1" value="${v == null ? "" : esc(v)}">`);
+  if (f.t === "select") return wrap(`<select id="${id}" data-k="${f.k}"><option value=""></option>${f.o.map(o => `<option ${o === v ? "selected" : ""}>${esc(o)}</option>`).join("")}</select>`);
+  if (f.t === "status") return wrap(`<select id="${id}" data-k="${f.k}">${STATUS.map(o => `<option ${o === v ? "selected" : ""}>${esc(o)}</option>`).join("")}</select>`);
+  if (f.t === "beet") { const o = S.beete.slice().sort((a, b) => (a.reihe || 0) - (b.reihe || 0)).map(b => b.name).concat(["Blumenrabatte","Ganzer Garten","Fensterbank"]); return wrap(`<input id="${id}" data-k="${f.k}" list="beetliste" value="${esc(v || "")}"><datalist id="beetliste">${o.map(b => `<option value="${esc(b)}">`).join("")}</datalist>`); }
+  if (f.t === "check") return `<label class="zeile" style="align-items:center;gap:8px"><input type="checkbox" id="${id}" data-k="${f.k}" data-check="1" ${v ? "checked" : ""} style="width:20px;height:20px"> ${f.l}</label>`;
+  if (f.t === "monate" || f.t === "chips") { const o = f.t === "monate" ? MONATE : Array.from(new Set(f.o.concat(v || []))); return `<div class="feld"><span class="lbl">${f.l}</span><div class="chips" data-multi="${f.k}">${o.map(m => `<button type="button" data-wert="${esc(m)}" aria-pressed="${(v || []).includes(m)}">${esc(f.t === "monate" ? m.slice(0, 3) : m)}</button>`).join("")}</div></div>`; }
+  return "";
+}
+
+function blattZeichnen() {
+  let s = document.querySelector(".schleier");
+  if (!s) { s = document.createElement("div"); s.className = "schleier"; document.body.appendChild(s); s.addEventListener("click", e => { if (e.target === s) zu(); }); }
+  const { n, daten: x } = blatt;
+  const titel = x[TITEL[n]] || (blatt.neu ? { samen: "Neue Sorte", tagebuch: "Neuer Eintrag", wissen: "Neue Notiz" }[n] : "");
+  let html = `<div class="zeile" style="justify-content:space-between;align-items:flex-start;flex-wrap:nowrap"><h2>${esc(titel)}</h2><button class="knopf leise" data-zu aria-label="Schliessen">✕</button></div>`;
+  if (!blatt.bearbeiten) {
+    html += anzeige(n, x);
+    if (S.schreiben) html += `<div class="knopfzeile">${n === "samen" ? `<div class="feld" style="width:100%"><span class="lbl">Status antippen</span><div class="status-menue">${STATUS.map(st => `<button class="pill ${st === x.status ? "" : "leise"}" data-setstatus="${esc(st)}">${esc(st)}</button>`).join("")}</div></div>` : ""}${n === "tagebuch" && x.erinnerung ? `<button class="knopf" data-erledigt="${x.id}">${x.erledigt ? "Wieder offen" : "Erledigt"}</button>` : ""}<button class="knopf leise" data-bearbeiten>Bearbeiten</button></div>`;
+  } else {
+    const felder = FELDER[n].slice();
+    if (n === "beete") felder.unshift({ k: "name", l: "Name", t: "text" });
+    let teile = "", halb = [];
+    felder.forEach(f => { if (f.halb) { halb.push(feldHtml(f, x)); if (halb.length === 2) { teile += `<div class="zwei">${halb.join("")}</div>`; halb = []; } } else { if (halb.length) { teile += `<div class="zwei">${halb.join("")}</div>`; halb = []; } teile += feldHtml(f, x); } });
+    if (halb.length) teile += `<div class="zwei">${halb.join("")}</div>`;
+    html += `<form id="blattform" style="display:flex;flex-direction:column;gap:12px">${teile}
+      <div class="knopfzeile"><button class="knopf orange" type="submit">Speichern</button><button class="knopf leise" type="button" data-zu>Abbrechen</button>
+      ${!blatt.neu && n !== "beete" ? `<button class="knopf gefahr" type="button" data-loeschen>${blatt.loeschBereit ? "Wirklich löschen?" : "Löschen"}</button>` : ""}</div></form>`;
+  }
+  s.innerHTML = `<div class="blatt" role="dialog" aria-modal="true" aria-label="${esc(titel)}">${html}</div>`;
+  const erstes = s.querySelector("input, textarea"); if (blatt.neu && erstes && n !== "tagebuch") erstes.focus();
+  if (blatt.neu && n === "tagebuch") { const t = s.querySelector("#f-titel"); if (t) t.focus(); }
+}
+
+function formLesen() {
+  const f = document.getElementById("blattform"); const d = Object.assign({}, blatt.daten);
+  f.querySelectorAll("[data-k]").forEach(el => { const k = el.dataset.k; d[k] = el.dataset.check ? el.checked : el.dataset.num ? (el.value === "" ? null : Number(el.value)) : el.value.trim(); });
+  f.querySelectorAll("[data-multi]").forEach(el => { d[el.dataset.multi] = [...el.querySelectorAll('[aria-pressed="true"]')].map(b => b.dataset.wert); });
+  return d;
+}
+
+/* ---------- Ereignisse ---------- */
+document.addEventListener("click", async e => {
+  const t = e.target.closest("button, a"); if (!t) return;
+  if (t.dataset.reiter) { ui.reiter = t.dataset.reiter; try { localStorage.setItem("garten:reiter", ui.reiter); } catch (_) {} history.replaceState(null, "", "#" + ui.reiter); zeichnen(); window.scrollTo(0, 0); return; }
+  if (t.dataset.samenfilter) { ui.samenFilter = t.dataset.samenfilter; zeichnen(); return; }
+  if (t.dataset.wissensaison) { ui.wissenSaison = t.dataset.wissensaison; zeichnen(); return; }
+  if (t.dataset.oeffne) { const [n, id] = t.dataset.oeffne.split(":"); oeffne(n, id); return; }
+  if (t.dataset.neu) { neu(t.dataset.neu); return; }
+  if (t.id === "plus") { neu(ui.reiter); return; }
+  if (t.hasAttribute("data-zu")) { zu(); return; }
+  if (t.hasAttribute("data-bearbeiten")) { blatt.bearbeiten = true; blattZeichnen(); return; }
+  if (t.dataset.wert && t.closest("[data-multi]")) { t.setAttribute("aria-pressed", t.getAttribute("aria-pressed") === "true" ? "false" : "true"); return; }
+  if (t.dataset.setstatus) {
+    const d = Object.assign({}, blatt.daten, { status: t.dataset.setstatus });
+    if (await speichern("samen", blatt.id, d)) { blatt.daten = d; blattZeichnen(); }
+    return;
+  }
+  if (t.dataset.erledigt) {
+    const x = S.tagebuch.find(y => y.id === t.dataset.erledigt); if (!x) return;
+    const d = Object.assign(kopie(x), { erledigt: !x.erledigt });
+    if (await speichern("tagebuch", x.id, d) && blatt) { blatt.daten = d; blattZeichnen(); }
+    return;
+  }
+  if (t.hasAttribute("data-loeschen")) {
+    if (!blatt.loeschBereit) { blatt.daten = formLesen(); blatt.loeschBereit = true; blattZeichnen(); setTimeout(() => { if (blatt && blatt.loeschBereit) { blatt.loeschBereit = false; blattZeichnen(); } }, 8000); return; }
+    try { await store.loeschen(blatt.n, blatt.id); hinweis("Gelöscht"); zu(); } catch (_) { hinweis("Löschen hat nicht geklappt."); }
+  }
+});
+document.addEventListener("submit", async e => {
+  if (e.target.id !== "blattform") return; e.preventDefault();
+  const d = formLesen(); const tf = TITEL[blatt.n];
+  if (!d[tf]) { hinweis("Bitte noch einen Titel eintragen."); return; }
+  if (await speichern(blatt.n, blatt.id, d)) { blatt.daten = d; blatt.bearbeiten = false; blatt.neu = false; blatt.loeschBereit = false; blattZeichnen(); }
+});
+document.addEventListener("input", e => {
+  if (e.target.id === "samensuche") { ui.samenSuche = e.target.value; const pos = e.target.selectionStart; zeichnen(); const n = document.getElementById("samensuche"); n.focus(); n.setSelectionRange(pos, pos); }
+  if (e.target.id === "wissensuche") { ui.wissenSuche = e.target.value; const pos = e.target.selectionStart; zeichnen(); const n = document.getElementById("wissensuche"); n.focus(); n.setSelectionRange(pos, pos); }
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape" && blatt) zu(); });
+
+zeichnen();
+starten();
+</script>
