@@ -187,6 +187,11 @@ so wie bei Startklar.
 
 > Ab hier sind es **Maschinen mit leeren Tanks**. Bei jeder Lektion der Satz: was
 > inhaltlich hineingehört, steht in der Instagram-Kundenmaschine.
+>
+> 🚨 **Der Hinweis läuft in beide Richtungen** (Patricia, 26.10.2026): hier der Verweis auf den
+> Fachkurs, im Fachkurs der Verweis zurück auf diesen Kurs („wie du das in einen Assistenten
+> bringst, der dir das auf Knopfdruck erstellt"). Zuordnung, Wortlaut der beiden Hinweise und
+> was vorher bereinigt sein muss: [[13-skills-weitergeben]].
 
 | # | Lektion | Notizen |
 |---|---|---|
