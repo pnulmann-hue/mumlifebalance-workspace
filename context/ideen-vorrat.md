@@ -35,10 +35,12 @@ Bis 16.10.2026 als Reiter „Ideenkasten“ im Cockpit. Patricia: *„ich muss d
 
 Gehört in die Jahresplanung 2027, nicht in den Jahresplan 2026 im Cockpit (Patricia: *„ich habe doch das 2027 noch gar nicht geplant“*). Beim Planen von 2027 zuerst nennen.
 
-- **[Produkt · Anfang Jahr]** Jahresplanungsworkshop: *„wo ich zeige, wie ich plane und worauf ich schaue und weshalb das wichtig ist“* · *„dass wir da genügend vorlauf haben mit dem launch“*.
-  Offen: niederschwellig bezahlt oder gratis · Pitch danach auf Mama-CEO oder direkt auf die MBA.
+- **[Produkt · Anfang Jahr]** **Jahresplanungs-Challenge in WhatsApp** (statt Workshop, Patricia 26.10.: *„jahresplanungsworkshop läuft nicht gut. machen wir eine challenge in whatsapp draus“*). Inhalt: *„wo ich zeige, wie ich plane und worauf ich schaue und weshalb das wichtig ist“* · *„dass wir da genügend vorlauf haben mit dem launch“*.
+  Idee dazu: Patricia filmt vorab ihre eigene Jahresplanung 2027, zeigt die Fragen aus dem Skill (die Teilnehmerinnen beantworten sie für sich) und wie daraus mit KI die Planung entsteht · Vergleich Notion-Vorlage aus Mama-CEO gegen ihr Artifact · Storys und Beiträge folgen genau diesem Plan.
+  Voraussetzung: `/jahresplan` ist heute ein Kalender-Skill (Termine eintragen, Konflikte), **kein geführtes Planen mit Fragen** — das gehört in denselben Skill, keinen neuen. Offen: Preis (eher gratis als Challenge?) · Pitch Mama-CEO oder MBA.
 - **[Produkt · 1:1]** Postingplan-1:1: Anlass sind Profile mit *„inhaltslose[m] posting … SO viel generischen Müll … storys, die einfach 0 zielführend sind“*. In der Session mit ihr zusammen einen Postingplan mit Launch-Storys und Beiträgen bauen (mit dem `/content`-Skill), danach Begleitung per WhatsApp mit Rückmeldung auf Beiträge und Storys. Anschluss: das automatische Posten lernt man im KI-Kurs, alles zusammen in der MBA, Sonderpreis für 1:1-Kundinnen. Überlegt: im Dezember verkaufen, Start im Januar.
-  Offen: Verhältnis zum bestehenden 1:1 Magnet-Ich (333, 3 Wochen, im Herbst kein Verkauf) · Preis · wie lange die WhatsApp-Begleitung dauert.
+  Patricia 26.10.: **intensiv**, ein Monat, *„dafür soll das angebot auch deutlich mehr kosten“* · *„ich finde 333 zu wenig“* · bei Wechsel in die MBA **50 %** angerechnet, nicht alles. Pitch: Kundenmaschine für Hooks und Captions, KI-Kurs fürs automatische Posten, beides in der MBA.
+  Offen: Verhältnis zum bestehenden 1:1 Magnet-Ich (333, 3 Wochen, im Herbst kein Verkauf) · Preis.
 
 ## Idee
 
