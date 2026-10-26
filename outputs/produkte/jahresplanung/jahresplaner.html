@@ -1,0 +1,379 @@
+<title>Mein Jahresplan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: ein Blatt pro Schritt, oben der Jahresstreifen mit zwölf Monaten, unten vor/zurück. Markenfarben von Mum Life Balance. */
+:root {
+  --bg: #f1ecdd;
+  --blatt: #fbf8f0;
+  --tinte: #0c1c30;
+  --leise: #5b6676;
+  --linie: #ddd5bf;
+  --petrol: #12828c;
+  --blau: #29556d;
+  --orange: #dc822e;
+  --orange-weich: #f6e2cb;
+  --petrol-weich: #d6ebea;
+  --blau-weich: #dbe4ea;
+  --frei: #ece7da;
+  --auf-farbe: #ffffff;
+  --schrift-titel: "Philosopher", Georgia, "Times New Roman", serif;
+  --schrift-text: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1d29; --blatt: #16283a; --tinte: #f1ecdd; --leise: #a9b4bf; --linie: #2a4256;
+    --petrol: #3fb3bb; --blau: #8fb6cc; --orange: #ef9c4f; --orange-weich: #3b2b1a;
+    --petrol-weich: #173d42; --blau-weich: #1f3546; --frei: #1b2e3f; --auf-farbe: #0f1d29; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1d29; --blatt: #16283a; --tinte: #f1ecdd; --leise: #a9b4bf; --linie: #2a4256;
+  --petrol: #3fb3bb; --blau: #8fb6cc; --orange: #ef9c4f; --orange-weich: #3b2b1a;
+  --petrol-weich: #173d42; --blau-weich: #1f3546; --frei: #1b2e3f; --auf-farbe: #0f1d29; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--tinte); font-family: var(--schrift-text);
+  font-size: 17px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 48px;
+}
+.rahmen { max-width: 760px; margin: 0 auto; display: grid; gap: 18px; }
+h1, h2, h3 { font-family: var(--schrift-titel); font-weight: 700; line-height: 1.15; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(30px, 6vw, 42px); }
+h2 { font-size: 26px; }
+h3 { font-size: 19px; }
+p { margin: 0; }
+.kopf { display: grid; gap: 6px; }
+.kopf .absender { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--leise); }
+.kopf .unter { color: var(--leise); max-width: 60ch; }
+
+.hinweis { background: var(--orange-weich); border-radius: 10px; padding: 12px 14px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; font-size: 15px; }
+.hinweis p { flex: 1 1 260px; min-width: 0; }
+
+.streifen { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 4px; }
+.streifen button { all: unset; cursor: pointer; display: grid; gap: 3px; justify-items: center; font-size: 11px; color: var(--leise); }
+.streifen .feld { width: 100%; height: 34px; border-radius: 6px; background: transparent; border: 1.5px dashed var(--linie); display: grid; place-items: center; font-weight: 700; color: var(--tinte); font-size: 12px; }
+.streifen [class^="s-"] .feld { border: 0; }
+.streifen .s-kostenlos .feld { background: var(--petrol-weich); }
+.streifen .s-klein .feld { background: var(--orange); color: var(--auf-farbe); }
+.streifen .s-mittel .feld { background: var(--blau-weich); }
+.streifen .s-gross .feld { background: var(--petrol); color: var(--auf-farbe); }
+.streifen button:focus-visible .feld { outline: 2px solid var(--orange); outline-offset: 2px; }
+.legende { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--leise); }
+.legende span.leer::before { background: transparent; border: 1.5px dashed var(--linie); width: 7px; height: 7px; }
+.legende span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; background: var(--c); }
+
+.schritte { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
+.schritte button {
+  all: unset; cursor: pointer; white-space: nowrap; padding: 7px 12px; border-radius: 999px;
+  border: 1px solid var(--linie); font-size: 14px; font-weight: 600; color: var(--leise); background: var(--blatt);
+}
+.schritte button[aria-current="step"] { background: var(--blau); border-color: var(--blau); color: var(--auf-farbe); }
+.schritte button.fertig:not([aria-current="step"]) { color: var(--petrol); border-color: var(--petrol); }
+.schritte button:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+
+.blatt { background: var(--blatt); border: 1px solid var(--linie); border-radius: 14px; padding: 22px 20px; display: grid; gap: 20px; min-width: 0; }
+.blatt .einleitung { color: var(--leise); max-width: 62ch; }
+.frage { display: grid; gap: 6px; min-width: 0; }
+.frage label, .frage legend { font-weight: 700; font-size: 16px; }
+.frage .hilfe { font-size: 14px; color: var(--leise); }
+fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+textarea, input[type="text"], input[type="number"], select {
+  width: 100%; font: inherit; font-size: 16px; color: var(--tinte); background: var(--bg);
+  border: 1px solid var(--linie); border-radius: 8px; padding: 10px 12px;
+}
+textarea { min-height: 92px; resize: vertical; }
+textarea:focus, input:focus, select:focus { outline: 2px solid var(--petrol); outline-offset: 1px; border-color: var(--petrol); }
+.zahl-zeile { display: flex; align-items: center; gap: 8px; }
+.zahl-zeile input { max-width: 160px; font-variant-numeric: tabular-nums; }
+.zahl-zeile span { color: var(--leise); font-size: 15px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips label { font-weight: 400; display: inline-flex; gap: 8px; align-items: center; padding: 8px 12px; border: 1px solid var(--linie); border-radius: 999px; cursor: pointer; background: var(--bg); font-size: 15px; }
+.chips input { accent-color: var(--petrol); margin: 0; }
+.chips label:has(input:checked) { border-color: var(--petrol); background: var(--petrol-weich); }
+
+.angebot { border: 1px solid var(--linie); border-radius: 12px; padding: 16px; display: grid; gap: 12px; background: var(--bg); }
+.angebot-kopf { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.zweier { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.monat { border-top: 1px solid var(--linie); padding-top: 16px; display: grid; gap: 10px; }
+.monat:first-of-type { border-top: 0; padding-top: 0; }
+
+.knopf { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border-radius: 999px; font-weight: 700; font-size: 15px; background: var(--blau); color: var(--auf-farbe); }
+.knopf.zweit { background: transparent; color: var(--blau); border: 1px solid var(--blau); }
+.knopf.klein { padding: 6px 12px; font-size: 14px; }
+.knopf.warn { background: transparent; color: var(--orange); border: 1px solid var(--orange); }
+.knopf:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+.leiste { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+
+.tabelle-huelle { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 520px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--linie); vertical-align: top; }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--leise); }
+td.zahl, th.zahl { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.summe td { font-weight: 700; border-bottom: 0; }
+.balken { height: 12px; border-radius: 999px; background: var(--frei); overflow: hidden; }
+.balken div { height: 100%; background: var(--petrol); }
+.befund { padding: 12px 14px; border-radius: 10px; background: var(--petrol-weich); font-size: 15px; }
+.befund.luecke { background: var(--orange-weich); }
+#auftrag { min-height: 260px; font-size: 14px; line-height: 1.5; }
+.leise { color: var(--leise); font-size: 14px; }
+.fuss { text-align: center; color: var(--leise); font-size: 13px; }
+@media (prefers-reduced-motion: no-preference) { .blatt { animation: rein .25s ease-out; } }
+@keyframes rein { from { transform: translateY(4px); } to { transform: none; } }
+</style>
+
+<div class="rahmen">
+  <header class="kopf">
+    <span class="absender">Mum Life Balance · Patricia Ulmann</span>
+    <h1>Mein Jahresplan</h1>
+    <p class="unter">In sechs Schritten vom Rückblick zum Plan für dein ganzes Jahr. Am Ende bekommst du deine Übersicht und einen fertigen Auftrag für deine KI.</p>
+  </header>
+
+  <div class="hinweis" id="beispiel-hinweis" hidden>
+    <p><strong>Das ist ein Beispiel von Sandra</strong> (Energie für Mamas ab 35), damit du siehst, wie ein fertiger Plan aussieht.</p>
+    <button class="knopf klein" id="leer-starten" type="button">Meinen Plan leer starten</button>
+  </div>
+
+  <section aria-label="Dein Jahr auf einen Blick" class="kopf">
+    <div class="streifen" id="streifen"></div>
+    <div class="legende">
+      <span style="--c: var(--petrol-weich)">kostenlos</span>
+      <span style="--c: var(--orange)">klein</span>
+      <span style="--c: var(--blau-weich)">mittel</span>
+      <span style="--c: var(--petrol)">gross</span>
+      <span class="leer">kein Fokus</span>
+    </div>
+  </section>
+
+  <nav class="schritte" id="schritte" aria-label="Schritte"></nav>
+  <main class="blatt" id="blatt"></main>
+  <p class="fuss">Deine Antworten bleiben auf diesem Gerät. Niemand sonst sieht sie.</p>
+</div>
+
+<script>
+const FRAGEN = {"schritte": [{"id": "rueckblick", "titel": "Rückblick", "kurz": "Wo stehst du?", "einleitung": "Bevor du nach vorne planst, schau ehrlich zurück. Was gut lief, darf bleiben. Was schwer war, darf sich ändern.", "fragen": [{"id": "r_gut", "typ": "text", "frage": "Was ist dieses Jahr richtig gut gelaufen?", "hilfe": "Denk an Beiträge, Gespräche, Verkäufe und an Momente, in denen es sich leicht angefühlt hat.", "beispiel": "Meine Storys mit Frühstücks-Tipps haben die meisten Antworten bekommen. Zwei Frauen bestellen seit dem Sommer jeden Monat bei mir."}, {"id": "r_schwer", "typ": "text", "frage": "Was hat sich schwer angefühlt oder nicht funktioniert?", "hilfe": "Ehrlich, nur für dich. Das ist der wichtigste Teil.", "beispiel": "Ich habe drei Wochen über meinen Kurs gesprochen und niemand hat gekauft. Danach hatte ich keine Lust mehr zu posten."}, {"id": "r_posten", "typ": "wahl", "frage": "Wie hat sich Posten für dich angefühlt?", "optionen": ["Leicht, ich hatte immer etwas zu sagen", "Geht so, an manchen Tagen ein Krampf", "Meistens eine Pflicht"], "beispiel": "Geht so, an manchen Tagen ein Krampf"}, {"id": "r_community", "typ": "wahl", "frage": "Wie lebendig ist deine Community?", "optionen": ["Ich bekomme jeden Tag Nachrichten", "Ab und zu schreibt jemand", "Es ist ziemlich still"], "beispiel": "Ab und zu schreibt jemand"}, {"id": "r_angebote", "typ": "text", "frage": "Welches Angebot fühlt sich nicht mehr stimmig an, und was würdest du daran ändern?", "hilfe": "Du musst nichts streichen. Oft reicht es, etwas umzubauen.", "beispiel": "Meine Einzelberatung fühlt sich zu lang an. Ich würde sie auf ein Gespräch plus zwei Wochen Begleitung kürzen."}, {"id": "r_phase", "typ": "wahl", "frage": "Wo steht dein Business gerade?", "optionen": ["Im Aufbau: Angebote und Abläufe entstehen noch", "Im Verbessern: es steht, jetzt wird es leichter und besser", "Ein bisschen von beidem"], "beispiel": "Im Aufbau: Angebote und Abläufe entstehen noch"}, {"id": "r_stunden", "typ": "zahl", "frage": "Wie viele Stunden pro Woche hast du wirklich fürs Business?", "hilfe": "Nicht die Wunschzahl. Die Zahl, die mit Kindern, Job und Haushalt übrig bleibt.", "einheit": "Stunden", "beispiel": "10"}]}, {"id": "vision", "titel": "Vision", "kurz": "Wofür willst du bekannt sein?", "einleitung": "Jetzt darfst du gross denken. Logisch muss hier noch nichts sein.", "fragen": [{"id": "v_frage", "typ": "text", "frage": "Welche Frage soll jemand stellen, damit die Antwort dein Name ist?", "hilfe": "Zwei Menschen unterhalten sich. Die eine fragt: Kennst du jemanden, der mir bei … helfen kann? Die andere sagt deinen Namen. Wie lautet die Frage?", "beispiel": "Kennst du jemanden, der mir hilft, nach Jahren im Funktionsmodus wieder Energie zu haben?"}, {"id": "v_wunsch", "typ": "text", "frage": "Was willst du nächstes Jahr unbedingt machen?", "hilfe": "Ein neuer Kanal, ein Event, ein eigenes Produkt, eine Reise. Schreib alles auf.", "beispiel": "Einen Workshop vor Ort mit 10 Frauen. Mein erstes eigenes kleines Produkt. Im Juli zwei Wochen ganz offline."}, {"id": "v_wort", "typ": "kurz", "frage": "Dein Wort fürs neue Jahr", "hilfe": "Ein Wort, das du dir an den Kühlschrank hängen würdest.", "beispiel": "Leichtigkeit"}, {"id": "v_ziel", "typ": "zahl", "frage": "Wie viel Umsatz wünschst du dir im ganzen Jahr?", "hilfe": "Freiwillig. Die Zahl hilft später beim Umsatz-Check.", "einheit": "CHF", "beispiel": "12000"}]}, {"id": "leben", "titel": "Leben zuerst", "kurz": "Was steht schon fest?", "einleitung": "Dein Business passt sich deinem Leben an, nicht umgekehrt. Trag zuerst ein, was nicht verhandelbar ist.", "fragen": [{"id": "l_ferien", "typ": "text", "frage": "Ferien und Wochen, in denen wenig geht", "hilfe": "Schulferien, Urlaub, Feiertage, Zeiten mit Besuch.", "beispiel": "Sportferien im Februar, Frühlingsferien im April, 5 Wochen Sommerferien ab Anfang Juli, Herbstferien im Oktober, Weihnachten bis Neujahr frei."}, {"id": "l_fix", "typ": "text", "frage": "Feste Familien- und Herzenstermine", "hilfe": "Geburtstage, Feste, Ausflüge, der Hochzeitstag.", "beispiel": "Geburtstage der Kinder im März und September, Hochzeitstag im Mai, Familienfest im August."}, {"id": "l_zeit", "typ": "text", "frage": "Wann ist deine Zeit für dich?", "hilfe": "Eine feste Zeit pro Woche, die dir gehört. Auch eine Stunde zählt.", "beispiel": "Freitagvormittag, wenn alle Kinder in der Schule sind."}]}, {"id": "angebote", "titel": "Angebote", "kurz": "Was bietest du an?", "einleitung": "Schreib alle deine Angebote auf, vom kostenlosen bis zum grössten. Das Angebot ist das Werkzeug. Die Veränderung bei den Leuten, für die du da bist, ist das Ziel.", "liste": {"felder": [{"id": "name", "frage": "Name", "typ": "kurz"}, {"id": "stufe", "frage": "Art", "typ": "wahl", "optionen": ["kostenlos", "klein", "mittel", "gross"]}, {"id": "preis", "frage": "Preis", "typ": "zahl", "einheit": "CHF"}, {"id": "heute", "frage": "Wo steht die Person heute?", "typ": "text"}, {"id": "danach", "frage": "Wie sieht ihr Alltag danach aus?", "typ": "text"}, {"id": "satz", "frage": "Ein Satz, der das Angebot erklärt", "typ": "kurz"}], "beispiel": [{"name": "Energie-Check", "stufe": "kostenlos", "preis": "0", "heute": "Müde trotz Schlaf, weiss nicht, wo sie anfangen soll.", "danach": "Kennt ihre drei grössten Energieräuber und den ersten Schritt.", "satz": "In 5 Minuten weisst du, was dir am meisten Energie raubt."}, {"name": "7 Tage Frühstück", "stufe": "klein", "preis": "39", "heute": "Isst morgens nichts oder nur Kaffee und Gipfeli.", "danach": "Hat sieben Frühstücke ohne Kochen und kein Tief mehr um halb zehn.", "satz": "Sieben Frühstücke, die dich bis zum Mittag tragen."}, {"name": "30 Tage Energie-Begleitung", "stufe": "gross", "preis": "270", "heute": "Funktioniert seit Jahren, hat sich selbst vergessen.", "danach": "Hat eine Routine, die in den Familienalltag passt, und spürt den Unterschied.", "satz": "30 Tage, in denen du wieder zu deiner Energie zurückfindest."}]}}, {"id": "jahr", "titel": "Jahr", "kurz": "Was kommt wann?", "einleitung": "Ein Fokus pro Monat. Dazu ein kostenloses Angebot, das zum Thema passt. In Ferienmonaten darf der Fokus klein sein oder ganz fehlen.", "monate": {"felder": [{"id": "fokus", "frage": "Fokus-Angebot", "typ": "angebot"}, {"id": "thema", "frage": "Thema oder Veränderung, über die du sprichst", "typ": "kurz"}, {"id": "gratis", "frage": "Kostenloses Angebot dazu", "typ": "angebot-gratis"}, {"id": "anzahl", "frage": "Wie viele Verkäufe planst du?", "typ": "zahl"}], "beispiel": {"1": {"fokus": "30 Tage Energie-Begleitung", "thema": "Neues Jahr, neue Energie", "gratis": "Energie-Check", "anzahl": "4"}, "2": {"fokus": "7 Tage Frühstück", "thema": "Kein Tief mehr um halb zehn", "gratis": "Energie-Check", "anzahl": "10"}, "3": {"fokus": "30 Tage Energie-Begleitung", "thema": "Frühling: raus aus dem Funktionsmodus", "gratis": "Energie-Check", "anzahl": "4"}, "4": {"fokus": "", "thema": "Ferien: Beziehung statt Verkauf", "gratis": "", "anzahl": ""}, "5": {"fokus": "7 Tage Frühstück", "thema": "Frühstück ohne Kochen", "gratis": "Energie-Check", "anzahl": "8"}, "6": {"fokus": "30 Tage Energie-Begleitung", "thema": "Mit Energie in den Sommer", "gratis": "Energie-Check", "anzahl": "4"}, "7": {"fokus": "", "thema": "Sommerferien", "gratis": "", "anzahl": ""}, "8": {"fokus": "7 Tage Frühstück", "thema": "Zurück in den Alltag", "gratis": "Energie-Check", "anzahl": "10"}, "9": {"fokus": "30 Tage Energie-Begleitung", "thema": "Herbst ohne Erschöpfung", "gratis": "Energie-Check", "anzahl": "5"}, "10": {"fokus": "", "thema": "Herbstferien", "gratis": "", "anzahl": ""}, "11": {"fokus": "30 Tage Energie-Begleitung", "thema": "Gut durch die dunkle Zeit", "gratis": "Energie-Check", "anzahl": "5"}, "12": {"fokus": "7 Tage Frühstück", "thema": "Schenk dir selbst etwas", "gratis": "", "anzahl": "6"}}}}, {"id": "woche", "titel": "Woche", "kurz": "Wie sieht deine Woche aus?", "einleitung": "Der Monatsfokus wird erst in der Woche lebendig. Ein fester Rhythmus nimmt dir jeden Morgen die Frage ab, was du heute erzählst.", "fragen": [{"id": "w_beitraege", "typ": "zahl", "frage": "Wie viele Beiträge willst du pro Woche posten?", "hilfe": "Lieber wenige gute als viele schnelle.", "einheit": "pro Woche", "beispiel": "3"}, {"id": "w_tage", "typ": "tage", "frage": "An welchen Tagen postest du?", "beispiel": ["Mo", "Mi", "Fr"]}, {"id": "w_storys", "typ": "wahl", "frage": "Wie oft machst du Storys?", "optionen": ["Jeden Tag", "An Arbeitstagen", "Zwei- bis dreimal pro Woche"], "beispiel": "An Arbeitstagen"}, {"id": "w_mix", "typ": "text", "frage": "Was soll in einer normalen Woche vorkommen?", "hilfe": "Zum Beispiel: etwas Persönliches, ein Tipp, eine Geschichte von jemandem, dem du geholfen hast, eine Einladung.", "beispiel": "Montag ein Tipp, Mittwoch etwas aus meinem Alltag, Freitag eine Frage an die Community. Einmal pro Woche eine Einladung zum Energie-Check."}]}]};
+const MONATE = ["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"];
+const KURZ = ["Jan","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"];
+const SPEICHER = "mlb-jahresplan-v1";
+const SCHRITTE = [...FRAGEN.schritte, { id: "ergebnis", titel: "Ergebnis", kurz: "Dein Plan" }];
+
+function leererPlan() { return { jahr: String(new Date().getFullYear() + 1), antworten: {}, angebote: [], monate: {}, beispiel: false, schritt: 0 }; }
+function beispielPlan() {
+  const p = leererPlan(); p.beispiel = true;
+  for (const s of FRAGEN.schritte) for (const f of (s.fragen || [])) p.antworten[f.id] = f.beispiel;
+  const a = FRAGEN.schritte.find(s => s.id === "angebote");
+  p.angebote = a.liste.beispiel.map(x => ({ ...x }));
+  const j = FRAGEN.schritte.find(s => s.id === "jahr");
+  p.monate = JSON.parse(JSON.stringify(j.monate.beispiel));
+  return p;
+}
+let plan;
+try { plan = JSON.parse(localStorage.getItem(SPEICHER) || "null"); } catch (e) { plan = null; }
+if (!plan || typeof plan !== "object") plan = beispielPlan();
+plan.monate = plan.monate || {}; plan.angebote = plan.angebote || []; plan.antworten = plan.antworten || {};
+
+let speicherUhr;
+function speichern() {
+  clearTimeout(speicherUhr);
+  speicherUhr = setTimeout(() => { try { localStorage.setItem(SPEICHER, JSON.stringify(plan)); } catch (e) {} }, 250);
+}
+function esc(s) { return String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+function zahl(x) { const n = parseFloat(String(x ?? "").replace(/[’' ]/g, "").replace(",", ".")); return isFinite(n) ? n : 0; }
+function chf(n) { return "CHF " + Math.round(n).toLocaleString("de-CH"); }
+function angebotNach(name) { return plan.angebote.find(a => a.name && a.name === name); }
+
+function streifenZeichnen() {
+  const el = document.getElementById("streifen");
+  el.innerHTML = KURZ.map((k, i) => {
+    const m = plan.monate[i + 1] || {};
+    const a = angebotNach(m.fokus);
+    const stufe = a ? a.stufe : (m.gratis ? "kostenlos" : "");
+    const titel = MONATE[i] + (m.fokus ? ": " + m.fokus : "") + (m.thema ? " · " + m.thema : "");
+    return `<button type="button" class="${stufe ? "s-" + stufe : ""}" data-monat="${i + 1}" title="${esc(titel)}" aria-label="${esc(titel)}"><span class="feld">${i + 1}</span>${k}</button>`;
+  }).join("");
+  el.querySelectorAll("button").forEach(b => b.onclick = () => {
+    plan.schritt = SCHRITTE.findIndex(s => s.id === "jahr"); speichern(); zeichnen();
+    setTimeout(() => document.getElementById("m-" + b.dataset.monat)?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
+  });
+}
+
+function schrittFertig(s) {
+  if (s.id === "angebote") return plan.angebote.some(a => a.name);
+  if (s.id === "jahr") return Object.values(plan.monate).some(m => m && (m.fokus || m.thema));
+  if (s.id === "ergebnis") return false;
+  return (s.fragen || []).some(f => { const v = plan.antworten[f.id]; return Array.isArray(v) ? v.length : (v ?? "") !== ""; });
+}
+function schritteZeichnen() {
+  const el = document.getElementById("schritte");
+  el.innerHTML = SCHRITTE.map((s, i) => `<button type="button" data-i="${i}" ${i === plan.schritt ? 'aria-current="step"' : ""} class="${schrittFertig(s) ? "fertig" : ""}">${i < SCHRITTE.length - 1 ? i + 1 + " · " : ""}${esc(s.titel)}</button>`).join("");
+  el.querySelector('[aria-current="step"]')?.scrollIntoView({ block: "nearest", inline: "center" });
+  el.querySelectorAll("button").forEach(b => b.onclick = () => { plan.schritt = +b.dataset.i; speichern(); zeichnen(); window.scrollTo({ top: 0 }); });
+}
+
+function feldHtml(id, f, wert) {
+  const v = wert ?? "";
+  if (f.typ === "text") return `<textarea id="${id}">${esc(v)}</textarea>`;
+  if (f.typ === "kurz") return `<input type="text" id="${id}" value="${esc(v)}">`;
+  if (f.typ === "zahl") return `<div class="zahl-zeile"><input type="number" inputmode="decimal" min="0" id="${id}" value="${esc(v)}">${f.einheit ? `<span>${esc(f.einheit)}</span>` : ""}</div>`;
+  if (f.typ === "wahl") return `<div class="chips" role="radiogroup">${f.optionen.map((o, k) => `<label><input type="radio" name="${id}" id="${id}-${k}" value="${esc(o)}" ${o === v ? "checked" : ""}>${esc(o)}</label>`).join("")}</div>`;
+  if (f.typ === "tage") { const t = Array.isArray(v) ? v : []; return `<div class="chips">${["Mo","Di","Mi","Do","Fr","Sa","So"].map(d => `<label><input type="checkbox" name="${id}" id="${id}-${d}" value="${d}" ${t.includes(d) ? "checked" : ""}>${d}</label>`).join("")}</div>`; }
+  if (f.typ === "angebot" || f.typ === "angebot-gratis") {
+    const liste = plan.angebote.filter(a => a.name && (f.typ === "angebot" ? a.stufe !== "kostenlos" : a.stufe === "kostenlos"));
+    return `<select id="${id}"><option value="">${f.typ === "angebot" ? "kein Fokus" : "keins"}</option>${liste.map(a => `<option ${a.name === v ? "selected" : ""}>${esc(a.name)}</option>`).join("")}</select>`;
+  }
+  return "";
+}
+function frageHtml(f, idPrefix, wert) {
+  const id = idPrefix + f.id;
+  const gruppe = f.typ === "wahl" || f.typ === "tage";
+  const titel = gruppe ? `<legend>${esc(f.frage)}</legend>` : `<label for="${id}">${esc(f.frage)}</label>`;
+  return `<${gruppe ? "fieldset" : "div"} class="frage">${titel}${f.hilfe ? `<p class="hilfe">${esc(f.hilfe)}</p>` : ""}${feldHtml(id, f, wert)}</${gruppe ? "fieldset" : "div"}>`;
+}
+
+function blattZeichnen() {
+  const s = SCHRITTE[plan.schritt];
+  const el = document.getElementById("blatt");
+  let inhalt = `<div class="kopf"><h2>${esc(s.titel)}</h2>${s.einleitung ? `<p class="einleitung">${esc(s.einleitung)}</p>` : ""}</div>`;
+  if (s.fragen) inhalt += s.fragen.map(f => frageHtml(f, "q-", plan.antworten[f.id])).join("");
+  if (s.liste) {
+    inhalt += plan.angebote.map((a, i) => `<div class="angebot"><div class="angebot-kopf"><h3>${esc(a.name || "Neues Angebot")}</h3><button type="button" class="knopf klein warn" data-weg="${i}">Entfernen</button></div><div class="zweier">${s.liste.felder.slice(0, 3).map(f => frageHtml(f, `a${i}-`, a[f.id])).join("")}</div>${s.liste.felder.slice(3).map(f => frageHtml(f, `a${i}-`, a[f.id])).join("")}</div>`).join("");
+    inhalt += `<div><button type="button" class="knopf zweit" id="angebot-neu">+ Angebot hinzufügen</button></div>`;
+  }
+  if (s.monate) {
+    inhalt += `<div class="frage"><label for="q-jahr">Für welches Jahr planst du?</label><div class="zahl-zeile"><input type="number" id="q-jahr" value="${esc(plan.jahr)}" min="2025" max="2035"></div></div>`;
+    if (!plan.angebote.some(a => a.name)) inhalt += `<p class="befund luecke">Trag zuerst im Schritt „Angebote“ ein, was du anbietest. Dann kannst du es hier den Monaten zuordnen.</p>`;
+    inhalt += MONATE.map((n, i) => { const m = plan.monate[i + 1] || {}; return `<div class="monat" id="m-${i + 1}"><h3>${n}</h3><div class="zweier">${s.monate.felder.map(f => frageHtml(f, `m${i + 1}-`, m[f.id])).join("")}</div></div>`; }).join("");
+  }
+  if (s.id === "ergebnis") inhalt += ergebnisHtml();
+  const zurueck = plan.schritt > 0 ? `<button type="button" class="knopf zweit" id="zurueck">Zurück</button>` : "<span></span>";
+  const weiter = plan.schritt < SCHRITTE.length - 1 ? `<button type="button" class="knopf" id="weiter">Weiter: ${esc(SCHRITTE[plan.schritt + 1].titel)}</button>` : "";
+  inhalt += `<div class="leiste">${zurueck}${weiter}</div>`;
+  el.innerHTML = inhalt;
+  verdrahten(s);
+}
+
+function verdrahten(s) {
+  const el = document.getElementById("blatt");
+  el.querySelectorAll("textarea, input, select").forEach(inp => {
+    inp.addEventListener(inp.type === "radio" || inp.type === "checkbox" || inp.tagName === "SELECT" ? "change" : "input", () => {
+      const id = inp.id;
+      if (id === "q-jahr") plan.jahr = inp.value;
+      else if (id.startsWith("q-")) {
+        const fid = (inp.name || id).slice(2).replace(/-(\d+|Mo|Di|Mi|Do|Fr|Sa|So)$/, "");
+        if (inp.type === "checkbox") plan.antworten[fid] = [...el.querySelectorAll(`input[name="${inp.name}"]:checked`)].map(x => x.value);
+        else plan.antworten[fid] = inp.value;
+      } else if (/^a\d+-/.test(id)) {
+        const [, i, fid] = (inp.name || id).match(/^a(\d+)-([a-z]+)/);
+        const alt = plan.angebote[i].name;
+        plan.angebote[i][fid] = inp.value;
+        if (fid === "name") { for (const m of Object.values(plan.monate)) { if (m && m.fokus === alt) m.fokus = inp.value; if (m && m.gratis === alt) m.gratis = inp.value; } el.querySelectorAll(".angebot h3")[i].textContent = inp.value || "Neues Angebot"; }
+      } else if (/^m\d+-/.test(id)) {
+        const [, mon, fid] = id.match(/^m(\d+)-([a-z]+)/);
+        plan.monate[mon] = plan.monate[mon] || {}; plan.monate[mon][fid] = inp.value;
+      }
+      if (plan.beispiel) { plan.beispiel = false; document.getElementById("beispiel-hinweis").hidden = true; }
+      speichern(); streifenZeichnen(); schritteZeichnen();
+    });
+  });
+  el.querySelectorAll("[data-weg]").forEach(b => b.onclick = () => {
+    if (b.dataset.sicher !== "1") { b.dataset.sicher = "1"; b.textContent = "Wirklich entfernen?"; setTimeout(() => { b.dataset.sicher = ""; b.textContent = "Entfernen"; }, 6000); return; }
+    plan.angebote.splice(+b.dataset.weg, 1); speichern(); zeichnen();
+  });
+  const neu = document.getElementById("angebot-neu");
+  if (neu) neu.onclick = () => { plan.angebote.push({ name: "", stufe: "klein", preis: "", heute: "", danach: "", satz: "" }); speichern(); zeichnen(); };
+  const z = document.getElementById("zurueck"); if (z) z.onclick = () => { plan.schritt--; speichern(); zeichnen(); window.scrollTo({ top: 0 }); };
+  const w = document.getElementById("weiter"); if (w) w.onclick = () => { plan.schritt++; speichern(); zeichnen(); window.scrollTo({ top: 0 }); };
+  const k = document.getElementById("kopieren");
+  if (k) k.onclick = async () => {
+    const ta = document.getElementById("auftrag");
+    try { await navigator.clipboard.writeText(ta.value); k.textContent = "Kopiert"; }
+    catch (e) { ta.focus(); ta.select(); k.textContent = "Markiert, jetzt kopieren"; }
+    setTimeout(() => k.textContent = "Auftrag kopieren", 2500);
+  };
+}
+
+function umsatz() {
+  const zeilen = MONATE.map((n, i) => {
+    const m = plan.monate[i + 1] || {}; const a = angebotNach(m.fokus);
+    const betrag = a ? zahl(a.preis) * zahl(m.anzahl) : 0;
+    return { n, m, a, betrag };
+  });
+  return { zeilen, summe: zeilen.reduce((s, z) => s + z.betrag, 0) };
+}
+
+function ergebnisHtml() {
+  const { zeilen, summe } = umsatz();
+  const ziel = zahl(plan.antworten.v_ziel);
+  const anteil = ziel ? Math.min(100, Math.round(summe / ziel * 100)) : 0;
+  let befund = "";
+  if (ziel) befund = summe >= ziel
+    ? `<p class="befund">Dein Plan kommt auf ${chf(summe)} und erreicht dein Ziel von ${chf(ziel)}.</p>`
+    : `<p class="befund luecke">Dein Plan kommt auf ${chf(summe)}, dein Ziel sind ${chf(ziel)}. Es fehlen ${chf(ziel - summe)}. Du kannst mehr Verkäufe einplanen, einen Monat mehr verkaufen oder dein Ziel anpassen. Alles davon ist in Ordnung. Hauptsache, du weisst es jetzt.</p>`;
+  const tabelle = `<div class="tabelle-huelle"><table><thead><tr><th>Monat</th><th>Fokus</th><th>Thema</th><th>Kostenlos</th><th class="zahl">Plan</th></tr></thead><tbody>${zeilen.map(z => `<tr><td>${z.n}</td><td>${esc(z.m.fokus || "–")}</td><td>${esc(z.m.thema || "")}</td><td>${esc(z.m.gratis || "–")}</td><td class="zahl">${z.betrag ? chf(z.betrag) : "–"}</td></tr>`).join("")}<tr class="summe"><td colspan="4">Ganzes Jahr</td><td class="zahl">${chf(summe)}</td></tr></tbody></table></div>`;
+  return `<div class="frage"><h3>Dein Jahr ${esc(plan.jahr)}</h3>${tabelle}</div>
+    ${ziel ? `<div class="frage"><h3>Umsatz-Check</h3><div class="balken" role="img" aria-label="${anteil} Prozent vom Ziel"><div style="width:${anteil}%"></div></div>${befund}</div>` : `<p class="leise">Trag im Schritt „Vision“ ein Jahresziel ein, dann zeigt dir der Plan, ob es aufgeht.</p>`}
+    <div class="frage"><h3>Dein Auftrag für die KI</h3><p class="hilfe">Kopiere den Auftrag und füge ihn in ChatGPT, Claude oder deine KI ein. Sie macht daraus Monatsthemen, Wochenthemen und Story-Ideen für dein ganzes Jahr.</p><textarea id="auftrag" readonly>${esc(auftrag())}</textarea><div><button type="button" class="knopf" id="kopieren">Auftrag kopieren</button></div></div>`;
+}
+
+function auftrag() {
+  const a = plan.antworten; const t = x => (Array.isArray(x) ? x.join(", ") : (x ?? "")).toString().trim() || "(offen)";
+  const { zeilen, summe } = umsatz();
+  const angebote = plan.angebote.filter(x => x.name).map(x => `- ${x.name} (${x.stufe}${zahl(x.preis) ? ", CHF " + x.preis : ""}): ${x.satz || ""}\n  Heute: ${x.heute || "(offen)"}\n  Danach: ${x.danach || "(offen)"}`).join("\n") || "(noch keine)";
+  const monate = zeilen.map(z => `- ${z.n}: Fokus ${z.m.fokus || "keiner"} · Thema ${z.m.thema || "(offen)"} · kostenlos ${z.m.gratis || "keins"}${z.betrag ? " · geplant " + chf(z.betrag) : ""}`).join("\n");
+  return `Du bist meine Business-Planerin. Ich bin Mama, im Network Marketing tätig und baue mir daneben etwas Eigenes auf. Erstelle mir aus meinen Angaben einen Jahresplan für ${plan.jahr}, den ich mit meiner Familie wirklich umsetzen kann.
+
+MEIN RÜCKBLICK
+Gut gelaufen: ${t(a.r_gut)}
+Schwer: ${t(a.r_schwer)}
+Posten fühlt sich an: ${t(a.r_posten)}
+Meine Community: ${t(a.r_community)}
+Angebot, das ich umbauen will: ${t(a.r_angebote)}
+Phase: ${t(a.r_phase)}
+Zeit fürs Business: ${t(a.r_stunden)} Stunden pro Woche
+
+MEINE VISION
+Die Frage, auf die mein Name die Antwort sein soll: ${t(a.v_frage)}
+Was ich unbedingt machen will: ${t(a.v_wunsch)}
+Mein Wort fürs Jahr: ${t(a.v_wort)}
+Umsatzziel: ${zahl(a.v_ziel) ? chf(zahl(a.v_ziel)) : "(offen)"}
+
+MEIN LEBEN (zuerst einplanen, hier wird nicht verkauft)
+Ferien und ruhige Wochen: ${t(a.l_ferien)}
+Feste Termine: ${t(a.l_fix)}
+Meine Zeit für mich: ${t(a.l_zeit)}
+
+MEINE ANGEBOTE
+${angebote}
+
+MEIN JAHR
+${monate}
+Geplanter Umsatz: ${chf(summe)}
+
+MEINE WOCHE
+Beiträge: ${t(a.w_beitraege)} pro Woche, an diesen Tagen: ${t(a.w_tage)}
+Storys: ${t(a.w_storys)}
+Was in einer Woche vorkommen soll: ${t(a.w_mix)}
+
+SO SOLL DER PLAN AUSSEHEN
+1. Eine Übersicht über alle zwölf Monate: Fokus, Thema, kostenloses Angebot, und was ich bis wann vorbereiten muss (rückwärts gerechnet: Seite, Kasse, Mails, Inhalte).
+2. Für jeden Monat vier Wochenthemen. Jedes Wochenthema ist ein Teil der Veränderung, die die Leute durch mein Angebot erleben. Das Angebot ist das Werkzeug, die Veränderung ist das Ziel.
+3. Für eine Beispielwoche: was ich an jedem Posting-Tag poste und was ich in den Storys erzähle, mit Persönlichem, Tipps, Geschichten und einer Einladung.
+4. Prüfe, ob mein Umsatzziel mit meinen Zahlen realistisch ist, und sag mir ehrlich, was fehlt.
+5. Ferien und Familientermine bleiben frei von Verkauf. Plane nicht mehr ein, als in meine Stunden pro Woche passt.
+Schreib in einfacher, warmer Sprache und frag nach, wenn etwas fehlt.`;
+}
+
+function zeichnen() {
+  document.getElementById("beispiel-hinweis").hidden = !plan.beispiel;
+  streifenZeichnen(); schritteZeichnen(); blattZeichnen();
+}
+document.getElementById("leer-starten").onclick = function () {
+  if (this.dataset.sicher !== "1") { this.dataset.sicher = "1"; this.textContent = "Ja, Beispiel löschen und leer starten"; return; }
+  plan = leererPlan(); speichern(); this.dataset.sicher = ""; this.textContent = "Meinen Plan leer starten"; zeichnen();
+};
+zeichnen();
+</script>
