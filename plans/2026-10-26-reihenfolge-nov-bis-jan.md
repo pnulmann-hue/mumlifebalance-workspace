@@ -48,7 +48,7 @@ tags: [plan, planung, mentoring, doterra]
 | Wer | Was | bis |
 |---|---|---|
 | Claude + Patricia | Planungs-Skill: `/jahresplan` um geführtes Planen erweitern (Fragen, Notion-Vorlage mit Jahresthemen-, Tages- und Wochengeschichten, Julias Jahresplanungsworkshop vorher durchgehen) | 30.11. |
-| Patricia + Claude | 1:1 Postingplan ausarbeiten: 1149 CHF · Zoom mit Jahresplan, dann 4 Wochen WhatsApp Mo–Fr · Start Monatsanfang · max. 5 Plätze · MBA −500 · Magnet-Ich klären · Seite + Kasse | 1.12. |
+| Patricia + Claude | 1:1 Postingplan ausarbeiten: 1149 CHF · Zoom, in dem ihr Postingplan entsteht (Posts + Launch-Storys), dann 4 Wochen WhatsApp Mo–Fr · Start Monatsanfang · max. 5 Plätze · MBA −500 · Magnet-Ich klären · Seite + Kasse | 1.12. |
 | Patricia + Claude | Jahresplanungs-Challenge planen: Datum, Preis, Pitch | 1.12. |
 | Patricia | Jahresplanungs-Workshop als MBA-Call halten und filmen (Teilnehmerinnen im Bild nur mit Okay) | Dezember |
 

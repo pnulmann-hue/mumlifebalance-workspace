@@ -88,16 +88,112 @@ ist dasselbe Problem wie zwei Termine.
 
 ---
 
-## 🚨 Was vorher geklärt sein muss
+## Schritt 0 · Erst müssen die Skills sauber sein (Patricia, 26.10.2026)
 
-1. **Die vollen Skills enthalten zugekauftes Fremdmaterial und dürfen so nicht raus.**
-   Der Hook-Skill trägt die 27 Formeln, die Kalender-Formeln und die Beispiele aus fremden
-   Kursen; `caption`, `story` und `karussell` lesen Frameworks, in denen fremde Methodik steckt.
-   Vor der Weitergabe braucht jeder Skill einen **Bereinigungs-Lauf**, der Fremdwissen und
-   fremde Namen herausnimmt — steht als offener Punkt in [[project_ki-kurs-launch-oktober]].
-   Muster dafür: `scripts/cockpit/wissen-bauen.py` bricht ab, sobald ein fremder Name
-   durchrutscht. Dasselbe Prinzip gehört vor jede Skill-Weitergabe.
-2. **Was weitergegeben werden darf, steht in `.claude/skills/_WEITERGABE-STATUS.md`.**
+> *„für diesen schritt müssen wir aber schauen, dass meine skills alle richtig sauber erstellt
+> sind. und zwar so wie es julia empfohlen hat mit den anleitungen und dann dem skill."*
+
+Das ist dieselbe Aufgabe, die seit dem **17.09.2026** offen in der Liste steht:
+*„SKILL.md-Inhalte auf die Pflicht-Abschnitte aus dem Kurs bringen."* Maßstab ist
+`.claude/skills/_VORLAGE-SKILL.md`.
+
+### Stand am 26.10.2026 — nachgezählt, nicht geschätzt
+
+**Die Form stimmt überall.** Alle 35 Skills liegen als Ordner mit `SKILL.md`, in allen 35
+stimmt der Frontmatter (`name` gleich Ordnername, `description` vorhanden). Von den 11
+fehlenden `Anleitung.md` ist **keine** ein Versehen: 7 zugekaufte Skills, das
+Remotion-Nachschlagewerk und die vier Befehle (`start`, `shutdown`, `create-plan`,
+`implement`), die im Grundgerüst mitgehen.
+
+**Der Inhalt stimmt bei zwei.** Nur `content` und `hooks` haben alle Pflicht-Teile der
+Vorlage. Bei den übrigen zwölf Schreib-Skills fehlt:
+
+| Pflicht-Teil | fehlt in | welche |
+|---|---|---|
+| **Testen und nachschärfen** | 11 von 14 | caption · reels · story · blog · produkt · monatsplan · funnel · strategie · visuals · cockpit · jahresplan |
+| **feste Ausgabe-Menge** | 9 von 14 | karussell · reels · story · blog · produkt · monatsplan · funnel · strategie · jahresplan |
+| **ein Beispiel** | 9 von 14 | caption · karussell · reels · produkt · monatsplan · funnel · visuals · cockpit · jahresplan |
+| **Briefing-Check** | 8 von 14 | caption · story · blog · monatsplan · funnel · strategie · visuals · jahresplan |
+| **Bewusstseinsstufe** | 4 von 14 | strategie · visuals · cockpit · jahresplan |
+
+🚨 **Der Briefing-Check ist für eine Weitergabe der wichtigste von allen.** Patricias Skills
+laden `patricia-vollprofil.md` und schreiben immer für dieselbe Person. Ein weitergebbarer
+Skill muss den Kontext **abfragen** und mit dem arbeiten, was die Nutzerin einträgt — sonst
+schreibt er bei ihr weiter in Patricias Stimme über Patricias Kinder. Steht so schon als
+Punkt 1 in `_VORLAGE-SKILL.md`.
+
+🚨 **„Testen und nachschärfen" ist der Teil, der den Skill mit der Zeit besser macht als die
+Nutzerin** — die Regel „was du dreimal korrigierst, wird eine Regel". Ohne ihn bleibt jeder
+weitergegebene Skill auf dem Stand vom Tag der Übergabe. Im Kurs ist das Lektion 5.6.
+
+Am meisten Arbeit haben `jahresplan`, `monatsplan`, `funnel`, `strategie` und `visuals`
+(4–5 Lücken). `karussell` und `caption` sind nah dran.
+
+**Reihenfolge, die daraus folgt:** auf die Vorlage bringen → bereinigen → `Anleitung.md`
+erzeugen → weitergeben. Nicht umgekehrt.
+
+---
+
+## Die Freigabe-Linie: was sie im Kurs lernt, darf im Skill stehen
+
+> Patricia am 26.10.2026: *„da müssen wir eine lösung finden. ich arbeite selber ja auch damit.
+> es muss sicher nicht alles raus. aber mindestens das was sie an inhalt ja lernen in
+> instagram-kundenmaschine."*
+
+**Die Regel, die daraus folgt — drei Töpfe je Skill-Abschnitt:**
+
+| | Was | Geht raus? |
+|---|---|---|
+| 🟢 **Eigen** | Von Patricia erarbeitet: ihre Regeln, ihre Blackliste, ihre Checks, ihre Testzahlen, ihre Beispiele, ihre Kundensprache, ihr Standard-Output | **ja, vollständig** |
+| 🟢 **Gelehrt** | Das Prinzip, das sie **in dem Kurs selbst unterrichtet** — in ihren Worten: Bewusstseinsstufen, Angles, PIE, Briefing, „mindestens drei Angles mischen" | **ja** — wenn sie es lehrt, ist es ihre eigene Formulierung |
+| 🔴 **Zugekaufter Katalog** | Die fremde **Sammlung als Liste mit ihrem Wortlaut**: die 27 Formeln, die rund 80 Kalender-Formeln, die 10 Reveal-Frameworks, die 50 Vorlagen, fremde Beispieltexte | **nein** — bleibt in Patricias Arbeitsfassung |
+
+🚨 **Der Unterschied ist Prinzip gegen Wortlaut, nicht Thema gegen Thema.** Eine Methode gehört
+niemandem — eine Liste von 27 fertig formulierten Formeln schon. „Ein Hook braucht einen Angle"
+darf sie weitergeben. Die fremde Formelsammlung Zeile für Zeile nicht.
+
+🚨 **Und der Kurs ist die Freigabe.** Was in der Instagram-Kundenmaschine als Lektion
+vorkommt, hat Patricia selbst geschrieben — das darf im Skill stehen, auch wenn sie es
+ursprünglich woanders gelernt hat. Ihr Kursmaterial liegt in
+`context/Kurse/aktuelle kurse/Instagram Kundenmaschine/` (Transkripte ihrer eigenen Calls und
+Lektionen) und ist damit nachprüfbar.
+
+### Der Mechanismus: bauen statt löschen
+
+Patricias Arbeitsfassung behält **alles**. Ausgeliefert wird eine **gebaute** Fassung — genau wie
+beim Cockpit-Wissen. Zwei Teile, beide gibt es schon:
+
+1. **`abschnitte(text, titel_liste)`** in `scripts/cockpit/wissen-bauen.py` — eine
+   **Positivliste** der Abschnitte, die mitgehen. Nicht „was muss weg", sondern „was darf mit".
+2. **Der Namensfilter** daneben: fremde Namen werden zu „meiner Mentorin", und das Skript
+   **bricht ab**, wenn einer durchrutscht (`ABBRUCH — fremde Namen noch im Text`). Dort steckt
+   auch die Lehre, dass „Julias Framework" ohne `\w*` durch die Wortgrenze schlüpft.
+
+🚨 **Im Cockpit geht der Hook-Skill heute VOLLSTÄNDIG mit**, inklusive aller Kataloge — Patricia
+am 14.09.: *„ich will alle ideen drin haben."* Das ist richtig so, weil das Cockpit **privat** ist
+und nur ihr gehört. ⚠️ Der Kommentar oben in `wissen-bauen.py` behauptet das Gegenteil
+(„Keine zugekauften Kataloge") und widerspricht dem Code ab Zeile 145 — **der Kommentar ist
+veraltet und gehört korrigiert**, bevor sich jemand darauf verlässt.
+
+### Was das für den Hook-Skill konkret heisst
+
+Von den 16 Teilen gehen nach dieser Regel **zwölf** mit:
+
+| Geht mit | Bleibt |
+|---|---|
+| TEIL 0 Hook-Maschine (ihre eigene Marktanalyse) · die vier Säulen · TEIL 1 Reichweiten-Hierarchie · TEIL 2 Briefing · TEIL 3 Kundensprache (als **Briefing-Feld**, nicht als ihre Antworten) · TEIL 3b Haltung · TEIL 4 Bewusstseinsstufen · TEIL 5 Angles · TEIL 6 das PIE-**Prinzip** · TEIL 10 Voice-Layer · TEIL 11 Verbote (ihre Blackliste) · TEIL 12 Hook-Check · TEIL 13 CTA-Regel · TEIL 14 Standard-Output · TEIL 15 Beispiel · TEIL 16 Testen · Kurz-Checkliste · letzter Check | die rund 80 **Kalender-Formeln** in TEIL 6 · TEIL 7 die **27 Formeln** · TEIL 8 die **10 Reveal-Frameworks** · TEIL 9 die **50 Vorlagen** · die Quellen-Liste |
+
+Das ist kein Rumpf, das ist der Skill. Was fehlt, sind vier Nachschlage-Kataloge — und **deren
+Platz füllt ihr eigener Kursinhalt**: was sie in der Kundenmaschine über Hooks lehrt, kommt an
+diese Stelle. Der nächste Schritt ist deshalb, ihre eigenen Lektionen durchzugehen und daraus
+ihren Formel-Teil zu schreiben. Dann ist der Skill nicht nur sauber, sondern besser — weil er
+dasselbe sagt wie ihr Kurs.
+
+---
+
+## 🚨 Was sonst noch geklärt sein muss
+
+1. **Was weitergegeben werden darf, steht in `.claude/skills/_WEITERGABE-STATUS.md`.**
    Die sieben zugekauften Skills (`chatgpt-ads`, `facebook-ads`, `copywriting`, die vier
    Salespage-Designs) gehen **nie** raus, auch nicht leer.
 3. **Je weitergegebener Skill eine `Anleitung.md`** — Generator:
@@ -110,13 +206,18 @@ ist dasselbe Problem wie zwei Termine.
 
 ## To-do
 
+In dieser Reihenfolge, sonst baut man auf einem unfertigen Skill auf.
+
 | | Was | Wo |
 |---|---|---|
-| 1 | Hinweis **A** in die Lektionstexte von Kapitel 7 und 8 (und 9.2) einbauen — vor der Aufnahme dieser Kapitel | `04-kursplattform-texte.md`, dann Produktionsseite neu bauen |
-| 2 | Bereinigungs-Lauf für die Content-Skills schreiben und über jeden Skill laufen lassen | `scripts/skills/` |
-| 3 | Je Fachkurs das vollständige Skill-Paket zusammenstellen (Skill + `Anleitung.md` + gefüllte Wissensdateien) | IKM · DPW · Mama-CEO |
-| 4 | Hinweis **B** in das letzte Modul jedes Fachkurses — dort, wo schon das MBA-Upgrade steht | ThriveCart Learn |
-| 5 | Namen des KI-Kurses für den Hinweis festlegen | hier oben |
+| **0** | **Die zwölf Schreib-Skills auf die Vorlage bringen** — Briefing-Check, feste Ausgabe-Menge, Beispiel, Testen-Teil. `content` und `hooks` sind das Muster | `.claude/skills/*/SKILL.md` |
+| **0b** | **Patricias eigenen Formel-Teil schreiben** aus ihren Kundenmaschine-Lektionen — er ersetzt die vier zugekauften Kataloge | `context/Kurse/aktuelle kurse/Instagram Kundenmaschine/` |
+| 1 | **Bau-Skript** mit Positivliste je Skill plus Namensfilter und Abbruch, Muster `wissen-bauen.py` | `scripts/skills/` |
+| 2 | Veralteten Kommentar in `wissen-bauen.py` korrigieren (behauptet „keine Kataloge", liefert aber alle) | `scripts/cockpit/wissen-bauen.py` |
+| 3 | Hinweis **A** in die Lektionstexte von Kapitel 7, 8 und 9.2 — vor der Aufnahme dieser Kapitel | `04-kursplattform-texte.md`, dann Produktionsseite neu bauen |
+| 4 | Je Fachkurs das Skill-Paket zusammenstellen (gebauter Skill + `Anleitung.md` + gefüllte Wissensdateien) | IKM · DPW · Mama-CEO |
+| 5 | Hinweis **B** in das letzte Modul jedes Fachkurses — dort, wo schon das MBA-Upgrade steht | ThriveCart Learn |
+| 6 | Namen des KI-Kurses für den Hinweis festlegen | hier oben |
 
 ---
 
