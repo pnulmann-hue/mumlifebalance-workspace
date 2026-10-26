@@ -68,7 +68,7 @@ Einstieg über die **0€ Lead-Challenge** (3 Tage, WhatsApp-Gruppe) und den
 | Patricia | WhatsApp-Gruppe für die Lead-Challenge anlegen, Link an Claude | 1.11. |
 | Patricia | **Workbook Lead-Challenge, letzte Seite:** „Produktwelt neu ab 6. April, 249 statt 333, Zoom-Call alle 2 Wochen“ ersetzen | 8.11. |
 | Patricia | Entscheiden: hat die Produktwelt diesmal Live-Calls? Die Storys versprechen keine | 16.11. |
-| Claude | Danke-Seite `/danke-lead-challenge/` von Kundenmaschine (`DANKE199IKM`) auf Produktwelt (`DANKE199DPW`) | vor 2.11. |
+| ✅ Claude | Danke-Seite `/danke-lead-challenge/` zeigt seit 26.10. die Produktwelt (`DANKE199DPW`, WP 4392) | erledigt |
 | Claude | Bestätigungsmail und Begleit-Mails der Lead-Challenge mit WhatsApp-Link und Datum; Mail-Anschluss heute „Finde dein Thema“ → auf Produktwelt prüfen | sobald der Link da ist |
 | Claude | Preis an der DPW-Kasse prüfen (333, kein alter Frühbucher) | vor 23.11. |
 
