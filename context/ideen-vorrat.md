@@ -31,6 +31,15 @@ Bis 16.10.2026 als Reiter „Ideenkasten“ im Cockpit. Patricia: *„ich muss d
 - **[doTERRA · Aufwand gross]** 30-Tage-Energie-Routine fertig aufsetzen
   Offen: Landingpage, ThriveCart-Checkout, Entscheid RevitaZen ja oder nein. Solange das nicht steht, darf in keinem Beitrag ein Preis, ein Starttermin oder eine Frist stehen — die KW39-Beiträge bewarben noch die alte Kur mit Deadline 25.09.
 
+## Für die Planung 2027 (von Patricia am 26.10.2026)
+
+Gehört in die Jahresplanung 2027, nicht in den Jahresplan 2026 im Cockpit (Patricia: *„ich habe doch das 2027 noch gar nicht geplant“*). Beim Planen von 2027 zuerst nennen.
+
+- **[Produkt · Anfang Jahr]** Jahresplanungsworkshop: *„wo ich zeige, wie ich plane und worauf ich schaue und weshalb das wichtig ist“* · *„dass wir da genügend vorlauf haben mit dem launch“*.
+  Offen: niederschwellig bezahlt oder gratis · Pitch danach auf Mama-CEO oder direkt auf die MBA.
+- **[Produkt · 1:1]** Postingplan-1:1: Anlass sind Profile mit *„inhaltslose[m] posting … SO viel generischen Müll … storys, die einfach 0 zielführend sind“*. In der Session mit ihr zusammen einen Postingplan mit Launch-Storys und Beiträgen bauen (mit dem `/content`-Skill), danach Begleitung per WhatsApp mit Rückmeldung auf Beiträge und Storys. Anschluss: das automatische Posten lernt man im KI-Kurs, alles zusammen in der MBA, Sonderpreis für 1:1-Kundinnen. Überlegt: im Dezember verkaufen, Start im Januar.
+  Offen: Verhältnis zum bestehenden 1:1 Magnet-Ich (333, 3 Wochen, im Herbst kein Verkauf) · Preis · wie lange die WhatsApp-Begleitung dauert.
+
 ## Idee
 
 - **[Produkt · Aufwand mittel]** Minikurs „Dein eigenes Werkzeug" — bauen und verkaufen
