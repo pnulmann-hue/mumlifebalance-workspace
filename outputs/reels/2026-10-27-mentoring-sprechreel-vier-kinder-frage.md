@@ -78,7 +78,7 @@ Vor der Geburt meiner dritten Tochter hab ich aufgeschrieben, was ich als Mama n
 «Krass, wie machst du das mit vier Kindern, alles unter einen Hut?»
 
 📦 Das Angebot daraus
-Drei Schritte, um die To-do-Liste zu halbieren. 30 Bestellungen in zwei Tagen, von Mamas, die ich vorher nicht kannte. Die Öle kamen erst danach zur Sprache.
+Drei Schritte, um die To-do-Liste zu halbieren, als Freebie. 30 Anmeldungen in zwei Tagen, von Mamas, die ich vorher nicht kannte. Die Öle kamen erst danach zur Sprache.
 
 Und wenn dich niemand so etwas fragt? Dann schreib die Liste trotzdem. Was dir selbstverständlich vorkommt, ist für eine andere Mama oft genau das, wonach sie sucht.
 
