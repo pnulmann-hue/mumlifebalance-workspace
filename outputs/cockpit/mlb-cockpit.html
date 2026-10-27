@@ -12917,6 +12917,31 @@
     return st;
   }
 
+  /* @@story-reihenfolge */
+  var storyGewaehlt = false;
+  function heuteIso() {
+    var d = new Date();
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  }
+  function storyGruppe(st, heute) {
+    var d = st.datum || "";
+    if (!d) return 2;
+    if (d === heute) return 0;
+    return d > heute ? 1 : 3;
+  }
+  function storyReihe() {
+    var heute = heuteIso();
+    var prof = function (st) { return st.profil === "doterra" ? 1 : 0; };
+    state.storys.sort(function (a, b) {
+      var ga = storyGruppe(a, heute), gb = storyGruppe(b, heute);
+      if (ga !== gb) return ga - gb;
+      if (ga === 1 && a.datum !== b.datum) return a.datum < b.datum ? -1 : 1;
+      if (ga === 3 && a.datum !== b.datum) return a.datum > b.datum ? -1 : 1;
+      if (ga === 2) return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1;
+      return prof(a) - prof(b) || ((a.name || "") < (b.name || "") ? -1 : 1);
+    });
+  }
+
   function renderStorys(main) {
     var st = currentStory();
     main.innerHTML =
@@ -12928,13 +12953,17 @@
     var pick = main.querySelector("#stpick");
     if (!state.storys.length) { pick.innerHTML = "<option>noch keine</option>"; pick.disabled = true; }
     else {
+      storyReihe();
+      var heute = heuteIso(), titel = ["Heute", "Nächste Tage", "Ohne Datum", "Vorbei"], gruppen = {};
       state.storys.forEach(function (x) {
+        var g = storyGruppe(x, heute);
+        if (!gruppen[g]) { gruppen[g] = document.createElement("optgroup"); gruppen[g].label = titel[g]; pick.appendChild(gruppen[g]); }
         var o = document.createElement("option");
         o.value = x.id; o.textContent = x.name + " (" + x.frames.length + ")";
         if (st && x.id === st.id) o.selected = true;
-        pick.appendChild(o);
+        gruppen[g].appendChild(o);
       });
-      pick.onchange = function () { activeStory = pick.value; render(); };
+      pick.onchange = function () { activeStory = pick.value; storyGewaehlt = true; render(); };
     }
     main.querySelector("#newst").onclick = function () { neueStory(); render(); };
 
@@ -14894,6 +14923,7 @@
     if (x) { state.reels.push(x); var d = lsGet("img-" + x.id, null); if (d) images[x.id] = d; }
   });
   if (state.karussells.length) activeCarousel = state.karussells[0].id;
+  storyReihe();
   if (state.storys.length) activeStory = state.storys[0].id;
   if (state.reels.length) activeReel = state.reels[0].id;
   render();
@@ -14927,8 +14957,8 @@
           var st = { id: doc.id, name: d0.name || "Sequenz", brand: d0.brand || "mlb_dark", handle: d0.handle || "", phase: d0.phase || "", frames: d0.frames, datum: d0.datum || "", textfrei: !!d0.textfrei, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", blotato: d0.blotato || null, updatedAt: d0.updatedAt || "" };
           if (seen[st.id]) dbUebernehmen(seen[st.id], st); else state.storys.push(st);
         });
-        state.storys.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });
-        if (!activeStory && state.storys.length) activeStory = state.storys[0].id;
+        storyReihe();
+        if ((!activeStory || !storyGewaehlt) && state.storys.length) activeStory = state.storys[0].id;
         state.storys.forEach(function (st) {
           db.doc("storys/" + st.id).collection("bilder").limit(30).get().then(function (bs) {
             var neu = false;
