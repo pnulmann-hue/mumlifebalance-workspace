@@ -10,3 +10,4 @@ selbst wird im ThriveCart-Editor geändert; diese Dateien sind die Quelle zum Na
 ## Dateien
 
 - [[aus-nebenbei]]
+- [[digitale-produktwelt]]

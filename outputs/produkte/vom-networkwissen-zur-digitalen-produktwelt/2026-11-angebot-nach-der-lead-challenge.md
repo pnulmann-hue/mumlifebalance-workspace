@@ -63,8 +63,8 @@ Zusatz mehr, sondern ein zweiter grosser Kauf im selben Moment. Zwei Wege:
 - **Einen kleinen Zusatz nehmen** und die Kundenmaschine später anbieten, zum Beispiel über das
   Upgrade in die MBA.
 
-**Noch einzurichten:** die Option mit zwei Raten an der Kasse der Produktwelt (ThriveCart,
-Produkt 41). Vor dem Bearbeiten frage ich, ob die Kasse gerade woanders offen ist.
+**Raten an der Kasse:** waren schon eingerichtet (live geprüft 27.10.: heute 166.50, in einem
+Monat 166.50). Stand der Kasse: [[digitale-produktwelt]].
 
 ## Ablauf in der WhatsApp-Gruppe
 
