@@ -2,7 +2,7 @@
 tags: [plan, julia-trost]
 ---
 
-# Julias Kurse als Fazit — und je Business-Schritt ein Skill
+# Julias Kurse als vollständige Learnings — und je Business-Schritt ein Skill
 
 **Stand:** 27.10.2026 · **Status:** Phase 0 läuft
 
@@ -23,7 +23,7 @@ Skill-Standard, die Anleitung bleibt aber liegen.
 - Heute zeigen die Skills fast alle auf `reference/julia-trost/methodik.md`, eine alte
   Zusammenfassung, die Funnel und Liste zu früh ansetzt. Aufbereitetes Wissen haben nur
   `/strategie` (drei Dateien) und `/jahresplan` (ein Transkript).
-- Ein Fazit je Kurs wird **einmal** gelesen und danach von beliebig vielen Skills genutzt.
+- Die Learnings-Datei je Kurs wird **einmal** gelesen und danach von beliebig vielen Skills genutzt.
 
 🗃 Vorgänger: `_sortiert/_SKILL_transkript-zu-wissensbasis/` (April 2026) hat Transkripte nur
 **aufgeräumt**, nicht verdichtet, und ist bei zwei Kursen stehengeblieben
@@ -39,9 +39,9 @@ Skill-Standard, die Anleitung bleibt aber liegen.
 - [ ] `transkripte-bericht-2026-10-27.md` mit den Zahlen nachziehen,
       „Verkaufen mit Liebe" in `was-neu-2026-10-27.md` ergänzen
 
-## Phase 1 · Ein Fazit je Kurs
+## Phase 1 · Die Learnings je Kurs, vollständig
 
-**Ablage:** `reference/julia-trost/fazit/<kurs>.md` — gitignored über `reference/julia-trost/**`.
+**Ablage:** `reference/julia-trost/learnings/<kurs>.md` — gitignored über `reference/julia-trost/**`.
 
 **Aufbau jeder Datei:**
 
@@ -50,13 +50,13 @@ Skill-Standard, die Anleitung bleibt aber liegen.
 tags: [externe-wissen, julia-trost]
 ---
 
-# <Kurs> — Fazit
+# <Kurs> — Learnings
 
 Umfang: N Lektionen, N Transkripte · Lücken: <Wortsalat, fehlende Videos>
 Gehört zu den Schritten: <Positionierung · Angebot · Freebie · Funnel · …>
 Vorlagen dazu: `Vorlagen/<Kurs>/…`
 
-## Das Wichtigste in zehn Sätzen
+## Überblick (nur zur Orientierung, ersetzt nichts darunter)
 
 ## Lektion für Lektion
 ### <Modul / Lektion>
@@ -68,11 +68,14 @@ Vorlagen dazu: `Vorlagen/<Kurs>/…`
 
 **Regeln fürs Schreiben**
 
-1. **Nichts auslassen, aber verdichten.** Jede Regel, Zahl, Liste, jedes Beispiel und jeder
-   Ablauf kommt hinein; Füllwörter, Begrüssungen, Werbung und Technikprobleme nicht.
+1. **Vollständig, keine Zusammenfassung.** Patricia, 27.10.: *„nicht nur EIN Fazit. Sondern die
+   Learnings aus dem Kurs festgehalten. Vollständig."* Jede Regel, Zahl, Liste, jedes Beispiel,
+   jeder Ablauf und jede Begründung kommt hinein — wer die Datei liest, muss das Video nicht mehr
+   schauen. Raus fällt nur das Drumherum: Füllwörter, Wiederholungen, Begrüssungen, Werbung für
+   andere Kurse, Technikprobleme, „seht ihr das?".
 2. **Je Aussage eine Fundstelle** (Datei, Zeitmarke aus der `.vtt`, wo vorhanden).
 3. **Zahlen und Preise wörtlich**, mit Währung — nie runden, nie umrechnen.
-4. **Keine eigene Meinung im Fazit.** Was Julia sagt, steht da; Patricias Abweichungen
+4. **Keine eigene Meinung in den Learnings.** Was Julia sagt, steht da; Patricias Abweichungen
    gehören in die Skills, nicht hierher.
 5. **Lücken benennen** — Wortsalat-Videos und fehlende Transkripte stehen oben im Umfang.
 6. **Widersprüche festhalten**, nicht auflösen (Beispiel: 1k-Stufe „1:1 plus 0€-E-Book" in
@@ -94,13 +97,16 @@ Vorlagen dazu: `Vorlagen/<Kurs>/…`
 
 ## Phase 2 · Gegenlesen
 
-- [ ] Je Fazit: Zahl der behandelten Lektionen = Zahl der Transkripte (minus benannte Lücken)
-- [ ] Je Fazit fünf Stichproben: Zahl oder Regel gegen das Transkript prüfen
+- [ ] Je Datei zwei Lektionen ganz gegen das Transkript lesen: fehlt eine Regel, ein
+      Beispiel oder ein Schritt, ist die Datei nicht fertig (Vollständigkeit vor Kürze)
+
+- [ ] Je Datei: Zahl der behandelten Lektionen = Zahl der Transkripte (minus benannte Lücken)
+- [ ] Je Datei fünf Stichproben: Zahl oder Regel gegen das Transkript prüfen
 - [ ] Prüfung auf erfundene Inhalte: jede Aussage ohne Fundstelle fliegt raus
 
 ## Phase 3 · Themen-Register
 
-`reference/julia-trost/fazit/_register.md` — Thema → welche Kurse, welche Abschnitte.
+`reference/julia-trost/learnings/_register.md` — Thema → welche Kurse, welche Abschnitte.
 Viele Themen kommen mehrfach vor (Launch in fünf Kursen); das Register zeigt, wo.
 
 ## Phase 4 · Landkarte Business-Schritte → Skills
@@ -116,9 +122,9 @@ Je Schritt genau ein Skill. Die Landkarte zeigt, welche es schon gibt
 
 ## Phase 5 · Skills anbinden
 
-- [ ] Jeder Skill bekommt einen Pflicht-Block: „Vor dem Bauen die Fazits zu Schritt X lesen
+- [ ] Jeder Skill bekommt einen Pflicht-Block: „Vor dem Bauen die Learnings zu Schritt X lesen
       und im Ergebnis nennen, welche Regel angewendet wurde."
-- [ ] Reihenfolge bei Widerspruch bleibt: Patricias eigene Regeln → Fazits → `methodik.md`
+- [ ] Reihenfolge bei Widerspruch bleibt: Patricias eigene Regeln → Learnings → `methodik.md`
       (nur noch Herkunft).
 - [ ] Für Einzelfragen darf der Skill die Transkripte gezielt nach Stichwort durchsuchen und
       nennt die Fundstelle.
@@ -130,4 +136,4 @@ Je Schritt genau ein Skill. Die Landkarte zeigt, welche es schon gibt
 ## Offen
 
 - Kosten: das Lesen der rund 17 MB ist der grosse Posten — kursweise, über mehrere Sitzungen.
-- Neue Kurse später: ein Fazit dazuschreiben, Register und betroffene Skills nachziehen.
+- Neue Kurse später: eine Learnings-Datei dazuschreiben, Register und betroffene Skills nachziehen.
