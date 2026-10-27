@@ -2104,6 +2104,39 @@
   .dt-vorschlag { border-top: 1px solid var(--line); padding: 10px 0; display: grid; gap: 4px; }
   .dt-vorschlag .note { margin: 0; }
   .dt-vorschlag details p { font-size: 13px; white-space: pre-wrap; }
+  /* ---------- Wissensbibliothek (27.10.2026) ---------- */
+  .bib-hinweis { margin-bottom: 16px; font-size: 13px; line-height: 1.55;
+                 border-left: 3px solid var(--orange); }
+  .bib-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+              gap: 12px; margin-top: 16px; }
+  .bib-karte { display: flex; flex-direction: column; gap: 6px; text-align: left; cursor: pointer;
+               background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+               padding: 16px; font: inherit; color: inherit; min-width: 0; }
+  .bib-karte:hover { border-color: var(--teal); }
+  .bib-karte.leer { opacity: 0.6; }
+  .bib-ktitel { font-family: var(--display); font-size: 18px; }
+  .bib-kkurz { font-size: 13px; color: var(--ink-soft); line-height: 1.45; }
+  .bib-kzahl { font-size: 12px; color: var(--teal); margin-top: auto; }
+  .bib-zurueck { margin-bottom: 12px; }
+  .bib-ttitel { font-family: var(--display); font-weight: normal; font-size: 26px; margin: 4px 0; }
+  .bib-tkurz { color: var(--ink-soft); margin: 0 0 16px; }
+  .bib-zwischen { font-family: var(--display); font-weight: normal; font-size: 20px; margin: 22px 0 10px; }
+  .bib-uzeile { display: flex; align-items: center; gap: 12px; padding: 9px 0;
+                border-top: 1px solid var(--line); }
+  .bib-uzeile:first-child { border-top: 0; }
+  .bib-art { flex: none; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+             background: var(--surface-2); color: var(--ink-soft); padding: 3px 7px; border-radius: 6px;
+             min-width: 52px; text-align: center; }
+  .bib-uname { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+  .bib-ukurs { font-size: 12px; color: var(--ink-soft); }
+  .bib-unotiz { font-size: 12px; color: var(--ink-soft); font-style: italic; }
+  .bib-ohne { font-size: 12px; color: var(--ink-soft); flex: none; }
+  .bib-uzeile a.btn { flex: none; display: inline-block; text-decoration: none; }
+  .bib-fund { display: inline-block; font-size: 11px; color: var(--ink-soft); margin-left: 4px; }
+  @media (max-width: 760px) {
+    .bib-uzeile { flex-wrap: wrap; }
+    .bib-uname { flex-basis: calc(100% - 70px); }
+  }
 </style>
 
 <div class="shell">
@@ -2973,6 +3006,7 @@
     { id: "rising", label: "Rising Leaders" },
     { g: "Nachschlagen" },
     { id: "kurse", label: "Kurs-Inhalte" },
+    { id: "bibliothek", label: "Wissensbibliothek" },
     { id: "wissen", label: "Mein Wissen" },
     { id: "suche", label: "Suchen" }
   ];
@@ -5181,6 +5215,200 @@
     });
   }
 
+  /* ======================================================================
+     Reiter "Wissensbibliothek" — Produkte -> Wissensbibliothek
+     (seit 27.10.2026, patch-bibliothek.py)
+
+     Je Business-Schritt ein Thema: oben die Unterlagen als Link (Drive oeffnet
+     PDFs, ein Artifact-Anhang nicht), darunter die Learnings aller Kurse, die
+     zum Thema gehoeren. Die Texte sind gross, deshalb holt der Reiter erst das
+     Verzeichnis bibliothek/_index und einen Kurs erst beim Aufklappen
+     (bibliothek/k-<kurs>-<n>). Gemalt wird mit zgMarkdown aus dem Reiter
+     "Zielgruppe & Markt".
+
+     Erzeugt von bibliothek-bauen.py. Gekauftes Kursmaterial — das Cockpit
+     muss privat sein.
+     ====================================================================== */
+  var bibIndex = null;
+  var bibTexte = {};
+  var bibThema = null;
+
+  function bibIndexLaden(fertig) {
+    if (bibIndex) { fertig(); return; }
+    var lokal = lsGet("bib-index", null);
+    if (lokal) { bibIndex = lokal; fertig(); }
+    if (!db) {
+      if (!lokal) setTimeout(function () { if (db) bibIndexLaden(fertig); }, 1500);
+      return;
+    }
+    db.doc("bibliothek/_index").get().then(function (snap) {
+      if (!snap.exists) { if (!lokal) { bibIndex = { themen: [], kurse: {} }; fertig(); } return; }
+      bibIndex = tief(snap.data());
+      lsSet("bib-index", bibIndex);
+      fertig();
+    }).catch(function () {
+      if (!lokal) { bibIndex = { themen: [], kurse: {}, fehler: true }; fertig(); }
+    });
+  }
+
+  function bibKursLaden(slug, fertig) {
+    if (bibTexte[slug] != null) { fertig(bibTexte[slug]); return; }
+    var k = (bibIndex.kurse || {})[slug] || {};
+    var n = k.teile || 1;
+    var lokal = [];
+    for (var i = 1; i <= n; i++) lokal.push(lsGet("bib-k-" + slug + "-" + i, null));
+    if (lokal.every(function (x) { return x != null; })) {
+      bibTexte[slug] = lokal.join("");
+      fertig(bibTexte[slug]);
+      return;
+    }
+    if (!db) { fertig(null); return; }
+    var holen = [];
+    for (var j = 1; j <= n; j++) holen.push(db.doc("bibliothek/k-" + slug + "-" + j).get());
+    Promise.all(holen).then(function (snaps) {
+      var md = snaps.map(function (s) { return s.exists ? (s.data().md || "") : ""; }).join("");
+      bibTexte[slug] = md;
+      fertig(md);
+    }).catch(function () { fertig(null); });
+  }
+
+  function bibMalen(md) {
+    var html = zgMarkdown(md);
+    return html.replace(/\s*[—–-]\s*Fundstelle:\s*([^<]*)/g,
+      ' <span class="bib-fund">$1</span>');
+  }
+
+  function renderBibliothek(main) {
+    main.innerHTML =
+      '<div class="page-head"><div><h1>Wissensbibliothek</h1>' +
+      '<p>Was du in den Kursen gelernt hast, nach Thema. Je Thema die Unterlagen ' +
+      'zum Öffnen und die Learnings aus allen Kursen, die dazu gehören, vollständig ' +
+      'und ohne das Drumherum.</p></div></div>' +
+      '<div class="panel bib-hinweis"><strong>Gekauftes Kursmaterial.</strong> ' +
+      'Nur für dich: nichts davon wörtlich in Kundentexte, und das Cockpit bleibt privat.</div>' +
+      '<div id="bibinhalt"><div class="panel"><div class="empty">Lädt …</div></div></div>';
+
+    bibIndexLaden(function () {
+      var box = main.querySelector("#bibinhalt");
+      if (!box) return;
+      if (bibThema) bibThemaZeigen(box, bibThema);
+      else bibUebersicht(box);
+    });
+  }
+
+  function bibUebersicht(box) {
+    var themen = (bibIndex && bibIndex.themen) || [];
+    if (!themen.length) {
+      box.innerHTML = '<div class="panel"><div class="empty">' +
+        (bibIndex && bibIndex.fehler ? "Die Bibliothek liess sich nicht laden." : "Noch nichts da.") +
+        ' Bauen mit <code>python scripts/cockpit/bibliothek-bauen.py</code>, ' +
+        'dann in die Datenbank unter bibliothek/.</div></div>';
+      return;
+    }
+    var gesamt = Object.keys(bibIndex.kurse || {}).length;
+    box.innerHTML =
+      '<div class="tiles">' +
+        tile("Kurse ausgewertet", String(gesamt), "von 38") +
+        tile("Stand", bibIndex.stand ? fmtDate(bibIndex.stand) : "—", "") +
+      '</div><div class="bib-grid"></div>';
+    var grid = box.querySelector(".bib-grid");
+    themen.forEach(function (t) {
+      var nk = (t.kurse || []).length + (t.auch || []).length, nu = (t.unterlagen || []).length;
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "bib-karte" + (nk || nu ? "" : " leer");
+      b.innerHTML =
+        '<span class="bib-ktitel">' + esc(t.titel) + '</span>' +
+        '<span class="bib-kkurz">' + esc(t.kurz || "") + '</span>' +
+        '<span class="bib-kzahl">' +
+          (nk ? nk + (nk === 1 ? " Kurs" : " Kurse") : "noch keine Learnings") +
+          (nu ? " · " + nu + (nu === 1 ? " Unterlage" : " Unterlagen") : "") +
+        '</span>';
+      b.addEventListener("click", function () {
+        bibThema = t.id;
+        bibThemaZeigen(box, t.id);
+        window.scrollTo(0, 0);
+      });
+      grid.appendChild(b);
+    });
+  }
+
+  function bibThemaZeigen(box, tid) {
+    var t = ((bibIndex && bibIndex.themen) || []).filter(function (x) { return x.id === tid; })[0];
+    if (!t) { bibThema = null; bibUebersicht(box); return; }
+    var unterlagen = t.unterlagen || [];
+    var kurse = t.kurse || [];
+    box.innerHTML =
+      '<button type="button" class="btn bib-zurueck">&larr; Alle Themen</button>' +
+      '<h2 class="bib-ttitel">' + esc(t.titel) + '</h2>' +
+      '<p class="bib-tkurz">' + esc(t.kurz || "") + '</p>' +
+      '<div class="panel"><h2>Unterlagen</h2><div class="bib-unter"></div></div>' +
+      '<h3 class="bib-zwischen">Learnings</h3><div class="bib-kurse"></div>';
+    box.querySelector(".bib-zurueck").addEventListener("click", function () {
+      bibThema = null;
+      bibUebersicht(box);
+    });
+
+    var ul = box.querySelector(".bib-unter");
+    if (!unterlagen.length) ul.innerHTML = '<div class="empty">Noch keine Unterlagen verknüpft.</div>';
+    unterlagen.forEach(function (u) {
+      var z = document.createElement("div");
+      z.className = "bib-uzeile";
+      z.innerHTML =
+        '<span class="bib-art">' + esc(u.art || "") + '</span>' +
+        '<span class="bib-uname">' + esc(u.name) +
+          (u.kurs ? ' <span class="bib-ukurs">' + esc(u.kurs) + '</span>' : '') +
+          (u.notiz ? '<span class="bib-unotiz">' + esc(u.notiz) + '</span>' : '') +
+        '</span>' +
+        (u.link ? '<a class="btn" href="' + esc(u.link) + '" target="_blank" rel="noopener">Öffnen &rarr;</a>'
+                : '<span class="bib-ohne">kein Link</span>');
+      ul.appendChild(z);
+    });
+
+    var kb = box.querySelector(".bib-kurse");
+    var auch = t.auch || [];
+    if (!kurse.length && !auch.length) {
+      kb.innerHTML = '<div class="panel"><div class="empty">Zu diesem Thema ist noch kein Kurs ausgewertet.</div></div>';
+      return;
+    }
+    if (!kurse.length) {
+      kb.innerHTML = '<div class="panel"><div class="empty">Noch kein Kurs, der hauptsächlich dieses Thema hat.</div></div>';
+    }
+    bibKursListe(kb, kurse, kurse.length === 1);
+    if (auch.length) {
+      var h = document.createElement("h3");
+      h.className = "bib-zwischen";
+      h.textContent = "Streift das Thema auch";
+      kb.appendChild(h);
+      bibKursListe(kb, auch, false);
+    }
+  }
+
+  function bibKursListe(kb, kurse, erstenOeffnen) {
+    kurse.forEach(function (slug, n) {
+      var k = (bibIndex.kurse || {})[slug] || {};
+      var d = document.createElement("details");
+      d.className = "panel zg-teil";
+      d.innerHTML =
+        '<summary><span class="zg-titel">' + esc(k.titel || slug) + '</span>' +
+        '<span class="zg-kurz">' + Math.round((k.zeichen || 0) / 1000) + "'000 Zeichen</span></summary>" +
+        '<div class="zg-inhalt bib-inhalt"><div class="empty">Lädt …</div></div>';
+      var gemalt = false;
+      d.addEventListener("toggle", function () {
+        if (gemalt || !d.open) return;
+        gemalt = true;
+        bibKursLaden(slug, function (md) {
+          d.querySelector(".bib-inhalt").innerHTML = md == null
+            ? '<div class="empty">Der Text liess sich nicht laden.</div>'
+            : bibMalen(md);
+        });
+      });
+      if (n === 0 && erstenOeffnen) d.open = true;
+      kb.appendChild(d);
+      if (d.open) d.dispatchEvent(new Event("toggle"));
+    });
+  }
+
   /* Reiter „Ideen von anderen": was bei den beobachteten Profilen deutlich
      ueber deren eigenem Schnitt lag. Gebaut von ideen-extern-bauen.py.
      Siehe Kopf von patch-ideen-extern.py, warum der Reiter bewusst nicht
@@ -5693,7 +5921,7 @@
     { id: "instagram", label: "Instagram", saeule: "Instagram",
       tabs: ["woche", "studio", "storys", "fertig", "gepostet", "markt"] },
     { id: "produkte", label: "Produkte", saeule: "Produkte",
-      tabs: ["katalog", "produkte", "links", "launch", "funnel", "mailings", "leads", "kurse"] },
+      tabs: ["katalog", "produkte", "links", "launch", "funnel", "mailings", "leads", "kurse", "bibliothek"] },
     { id: "mamaceo", label: "Mama-CEO", saeule: "Mama-CEO",
       tabs: ["aufgaben", "erledigt", "launches", "monatsbogen", "wochenbogen", "ziele", "zahlen"] },
     { id: "doterra", label: "doTERRA", saeule: "doTERRA",
@@ -14813,6 +15041,7 @@
     else if (activeTab === "woche") renderWoche(main);
     else if (activeTab === "ideenextern") renderIdeenExtern(main);
     else if (activeTab === "markt") renderZielgruppe(main);
+    else if (activeTab === "bibliothek") renderBibliothek(main);
     else if (activeTab === "oelwissen") renderOelwissen(main);
     else if (activeTab === "anliegen") renderAnliegen(main);
     else if (activeTab === "bizwege") renderBizwege(main);
