@@ -268,6 +268,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[MODUL-4-ROHDATEI-FUER-CANVA-CHAT]]
 - [[MODUL-5-ROHDATEI-FUER-CANVA-CHAT]]
 - [[MODUL-6-ROHDATEI-FUER-CANVA-CHAT]]
+- [[00-befund]]
 - [[00-canva-uebertragungs-anleitung]]
 - [[lektion-3-3-minikurse-und-grosse-kurse]]
 - [[lektion-3-4-diese-programme-nutze-ich]]

@@ -25,3 +25,4 @@ Auto-Index aller Files in `outputs/salespages/`. Siehe [[_MOCs/MOC-Produkte-Funn
 
 - [[_INDEX]]
 - [[aus-nebenbei]]
+- [[digitale-produktwelt]]
