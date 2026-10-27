@@ -52,7 +52,7 @@ Monaten nach dem Kauf zahlt sie nur die Differenz (997 minus die 333), per Whats
 | 1 | Live-Calls? | **Nein.** Die Produktwelt ist ein Selbstlernkurs, nirgends Calls versprechen. |
 | 2 | Telegram-Gruppe der Produktwelt? | **Bleibt.** Nach dem Kauf geht es dort weiter; die WhatsApp-Gruppe ist nur für die Challenge. |
 | 3 | Bonus für Challenge-Teilnehmerinnen? | **Eher nein** („weiss nicht. glaube nicht“). Die Texte kommen ohne Bonus aus. |
-| 4 | Ratenzahlung? | **Ja, zwei Raten.** Die Höhe zeigt die Kasse; in den Texten steht nur „auch in zwei Raten“. |
+| 4 | Ratenzahlung? | **Ja, zwei Raten zu 166.50** (zusammen genau 333, Entscheid 27.10.). In den Texten steht nur „auch in zwei Raten“. |
 | 5 | Kundenmaschine als Zusatz an der Kasse | **Bleibt bei 199** (Entscheid 27.10.). Gleicher Preis wie auf den Danke-Seiten. |
 
 **Zu Punkt 5 (zur Herkunft des Entscheids):** 199 ist derselbe Preis wie auf den Danke-Seiten („nur hier, direkt nach deiner
