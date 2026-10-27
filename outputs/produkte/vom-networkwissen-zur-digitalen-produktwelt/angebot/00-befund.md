@@ -51,7 +51,7 @@ Zum Einordnen der Zahlen:
 | Verkaufsseite | **bleibt die Kasse**, ein eigener Seitenbau lohnt im November nicht | Die Danke-Seiten und `/angebote/` führen direkt auf die Kasse |
 | Lead-Challenge-Landingpage + Bestätigungsmail + AC 47 | **flicken** | Telegram → WhatsApp, Termin rein. Die Struktur trägt |
 | Workbook S. 13 | **flicken** (Patricia) | eine Seite |
-| Mails nach der Challenge | **neu bauen** | Es gibt sie nicht. Nötig sind: 3 Begleitmails (9.–11.11.) · Brücke 12.–22.11. · Kasse auf 23.11. · Mitte 26.11. · letzter Tag 30.11. |
+| Mails nach der Challenge | **neu bauen** | Es gibt sie nicht. Nötig sind: drei Begleitmails vom 9. bis 11.11., eine Brücke bis zum 22.11. und drei Kassenmails am 23., 26. und 30.11. |
 | AC 48 / 51 | **erst prüfen, dann flicken** | Auslöser unbekannt |
 | Register | **flicken** | Anschluss → DPW 333, Landing eintragen, DPW-Eintrag anlegen |
 | Neuer Trichter | **nein** | Lead-Challenge und Ideen-Finder passen genau zum Monatsfokus. Es fehlt der Weg dazwischen, kein Einstieg |
