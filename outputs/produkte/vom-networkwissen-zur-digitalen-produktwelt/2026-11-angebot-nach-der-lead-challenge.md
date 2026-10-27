@@ -53,9 +53,9 @@ Monaten nach dem Kauf zahlt sie nur die Differenz (997 minus die 333), per Whats
 | 2 | Telegram-Gruppe der Produktwelt? | **Bleibt.** Nach dem Kauf geht es dort weiter; die WhatsApp-Gruppe ist nur für die Challenge. |
 | 3 | Bonus für Challenge-Teilnehmerinnen? | **Eher nein** („weiss nicht. glaube nicht“). Die Texte kommen ohne Bonus aus. |
 | 4 | Ratenzahlung? | **Ja, zwei Raten.** Die Höhe zeigt die Kasse; in den Texten steht nur „auch in zwei Raten“. |
-| 5 | Kundenmaschine als Zusatz an der Kasse | **Offen.** Steht in ThriveCart seit dem 23.10. auf 199, entschieden wurde das nie ausdrücklich. |
+| 5 | Kundenmaschine als Zusatz an der Kasse | **Bleibt bei 199** (Entscheid 27.10.). Gleicher Preis wie auf den Danke-Seiten. |
 
-**Zu Punkt 5:** 199 ist derselbe Preis wie auf den Danke-Seiten („nur hier, direkt nach deiner
+**Zu Punkt 5 (zur Herkunft des Entscheids):** 199 ist derselbe Preis wie auf den Danke-Seiten („nur hier, direkt nach deiner
 Anmeldung“), passt also zum Rest. Nach Julias Regel soll ein Zusatz an der Kasse aber deutlich
 günstiger sein als das Hauptangebot (ihr Beispiel: 17 zu 333). 199 zu 333 ist kein kleiner
 Zusatz mehr, sondern ein zweiter grosser Kauf im selben Moment. Zwei Wege:
@@ -153,7 +153,7 @@ statt 333“*. Vorschlag für den Ersatz, ohne Datum und ohne Preis, damit sie n
 
 ## Was ich vor dem 23.11. noch erledige
 
-- Kasse der Produktwelt prüfen: 333, keine alte Frühbucher-Angabe, zwei Raten eingerichtet, Zusatz nach deinem Entscheid (Punkt 5).
+- Kasse der Produktwelt prüfen: 333, keine alte Frühbucher-Angabe, zwei Raten eingerichtet, Kundenmaschine als Zusatz bei 199.
 - Mail-Anschluss der Lead-Challenge von „Finde dein Thema“ auf die Produktwelt umstellen.
 - Bestätigungs- und Begleitmails mit dem WhatsApp-Link, sobald du ihn mir gibst.
 
