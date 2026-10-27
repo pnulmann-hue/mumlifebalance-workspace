@@ -45,20 +45,26 @@ Beschrieben als Veränderung, ohne Lektions- oder Modulzahlen (Patricias Regel v
 Am Ende des Kurses steht schon das Upgrade in die Mum Business Academy: in den ersten zwei
 Monaten nach dem Kauf zahlt sie nur die Differenz (997 minus die 333), per WhatsApp an dich.
 
-## 🛑 Was du noch entscheiden musst
+## Entscheide (Patricia, 27.10.2026)
 
-| # | Frage | Warum es wichtig ist |
+| # | Frage | Entscheid |
 |---|---|---|
-| 1 | **Gibt es Live-Calls?** | Das Workbook versprach „alle 2 Wochen Zoom“. Die Storys versprechen nichts. Was du hier sagst, muss überall gleich stehen. |
-| 2 | **Bleibt die Telegram-Gruppe der Produktwelt?** | Die Challenge läuft in WhatsApp. Zwei Plattformen gleichzeitig verwirren. |
-| 3 | **Gibt es einen Bonus für die Challenge-Teilnehmerinnen?** | Ohne Rabatt (333 bleibt), aber als Dankeschön für die, die mitgemacht haben. Vorschläge unten. |
-| 4 | **Ratenzahlung an der Kasse?** | Senkt die Hürde beim Einwand *„nicht noch mehr Geld ausgeben“*. Steht heute nirgends. |
-| 5 | **Was kostet die Kundenmaschine als Zusatz an der Kasse?** | Sie hängt als Bump an der Produktwelt-Kasse. Ein Bump soll deutlich günstiger sein als das Hauptangebot, sonst nimmt ihn niemand. Den Preis prüfe ich vor dem 23.11. |
+| 1 | Live-Calls? | **Nein.** Die Produktwelt ist ein Selbstlernkurs, nirgends Calls versprechen. |
+| 2 | Telegram-Gruppe der Produktwelt? | **Bleibt.** Nach dem Kauf geht es dort weiter; die WhatsApp-Gruppe ist nur für die Challenge. |
+| 3 | Bonus für Challenge-Teilnehmerinnen? | **Eher nein** („weiss nicht. glaube nicht“). Die Texte kommen ohne Bonus aus. |
+| 4 | Ratenzahlung? | **Ja, zwei Raten.** Die Höhe zeigt die Kasse; in den Texten steht nur „auch in zwei Raten“. |
+| 5 | Kundenmaschine als Zusatz an der Kasse | **Offen.** Steht in ThriveCart seit dem 23.10. auf 199, entschieden wurde das nie ausdrücklich. |
 
-**Bonus-Ideen für Punkt 3** (nur Vorschläge, nichts davon ist zugesagt):
-- Du schaust dir in der Gruppe ihren fertigen Leadmagneten an und gibst ihr Rückmeldung.
-- Eine Fragestunde in der Gruppe in der Kassenwoche, zum Beispiel per Sprachnachricht.
-- Der KI-Helfer aus der Produktwelt (`04-produktwelt-companion-MASTER.md`), falls er bis dahin steht.
+**Zu Punkt 5:** 199 ist derselbe Preis wie auf den Danke-Seiten („nur hier, direkt nach deiner
+Anmeldung“), passt also zum Rest. Nach Julias Regel soll ein Zusatz an der Kasse aber deutlich
+günstiger sein als das Hauptangebot (ihr Beispiel: 17 zu 333). 199 zu 333 ist kein kleiner
+Zusatz mehr, sondern ein zweiter grosser Kauf im selben Moment. Zwei Wege:
+- **So lassen (199):** wer beides will, spart 134 gegenüber dem Einzelkauf der Kundenmaschine.
+- **Einen kleinen Zusatz nehmen** und die Kundenmaschine später anbieten, zum Beispiel über das
+  Upgrade in die MBA.
+
+**Noch einzurichten:** die Option mit zwei Raten an der Kasse der Produktwelt (ThriveCart,
+Produkt 41). Vor dem Bearbeiten frage ich, ob die Kasse gerade woanders offen ist.
 
 ## Ablauf in der WhatsApp-Gruppe
 
@@ -99,7 +105,8 @@ der Gruppe nicht vor; dort gilt 333.
 > Dort baust du hinter deinem Leadmagneten dein erstes eigenes Produkt, das du verkaufst, neben
 > deinem Network. Ich zeige dir, welche Art Produkt zu dir passt, wie du es mit KI und Canva baust,
 > wie du einen Preis findest, zu dem du stehen kannst, und wie es sich verkauft, ohne dass du
-> jemandem etwas aufdrängen musst.
+> jemandem etwas aufdrängen musst. Du lernst in deinem Tempo, und in der Telegram-Gruppe der
+> Produktwelt bist du mit den anderen Teilnehmerinnen verbunden.
 >
 > Ich habe es selbst so gemacht: Aus einer Liste, die ich für meinen Mann geschrieben habe, wurde
 > mein erstes eigenes Angebot. Und erst über dieses Angebot kamen Gespräche über meine Öle zustande.
@@ -114,7 +121,8 @@ der Gruppe nicht vor; dort gilt 333.
 > mit deinen eigenen Bestellungen verdienst. Aus deinem Wissen wird ein eigenes Produkt,
 > und deine Treppe dahinter sorgt dafür, dass ein Kauf den nächsten nach sich zieht.
 >
-> 333 Franken, die Kasse ist bis Montag, 30. November, um Mitternacht offen.
+> 333 Franken, auf Wunsch in zwei Raten. Die Kasse ist bis Montag, 30. November, um
+> Mitternacht offen.
 > Hast du eine Frage dazu? Schreib sie hier rein oder mir direkt.
 
 ### D · Montag, 30.11. (letzter Tag)
@@ -127,8 +135,8 @@ der Gruppe nicht vor; dort gilt 333.
 >
 > Hier ist der Link, bis heute um 23:59: 👉 [Link]
 
-**Vor dem Versenden ergänzen:** was du bei Punkt 1 (Calls), 3 (Bonus) und 4 (Raten) entscheidest.
-Steht davon etwas fest, gehört es in Text B und C.
+**Eingearbeitet am 27.10.:** keine Calls, Telegram-Gruppe, zwei Raten, kein Bonus. Den Link setzt
+du beim Versenden ein; die Raten müssen bis dahin an der Kasse eingerichtet sein.
 
 ## Workbook, letzte Seite (Seite 13) — Ersatz
 
@@ -145,7 +153,7 @@ statt 333“*. Vorschlag für den Ersatz, ohne Datum und ohne Preis, damit sie n
 
 ## Was ich vor dem 23.11. noch erledige
 
-- Kasse der Produktwelt prüfen: 333, keine alte Frühbucher-Angabe, Preis des Bumps (Punkt 5).
+- Kasse der Produktwelt prüfen: 333, keine alte Frühbucher-Angabe, zwei Raten eingerichtet, Zusatz nach deinem Entscheid (Punkt 5).
 - Mail-Anschluss der Lead-Challenge von „Finde dein Thema“ auf die Produktwelt umstellen.
 - Bestätigungs- und Begleitmails mit dem WhatsApp-Link, sobald du ihn mir gibst.
 
