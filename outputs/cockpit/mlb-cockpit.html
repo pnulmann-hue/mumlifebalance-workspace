@@ -5291,6 +5291,8 @@
       'und ohne das Drumherum.</p></div></div>' +
       '<div class="panel bib-hinweis"><strong>Gekauftes Kursmaterial.</strong> ' +
       'Nur für dich: nichts davon wörtlich in Kundentexte, und das Cockpit bleibt privat.</div>' +
+      '<div class="panel bib-links"><a class="btn" href="https://kurse.juliatrost.de/" target="_blank" rel="noopener">Zu den Kursen &rarr;</a>' +
+      ' <a class="btn" href="https://app.juliatrost.de/" target="_blank" rel="noopener">Claude-Kurse &rarr;</a></div>' +
       '<div id="bibinhalt"><div class="panel"><div class="empty">Lädt …</div></div></div>';
 
     bibIndexLaden(function () {
@@ -5313,7 +5315,7 @@
     var gesamt = Object.keys(bibIndex.kurse || {}).length;
     box.innerHTML =
       '<div class="tiles">' +
-        tile("Kurse ausgewertet", String(gesamt), "von 38") +
+        tile("Kursdateien", String(gesamt), "alle ausgewertet") +
         tile("Stand", bibIndex.stand ? fmtDate(bibIndex.stand) : "—", "") +
       '</div><div class="bib-grid"></div>';
     var grid = box.querySelector(".bib-grid");
