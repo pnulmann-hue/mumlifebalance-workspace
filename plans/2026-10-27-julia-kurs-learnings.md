@@ -118,6 +118,10 @@ ChatGPT · Manychat Automation Vorlagen
 
 **Block 5:** Bonus-Lektionen · _Sonstiges · Erfolgreich ins neue Jahr · Launch Queen · Story Bibliothek ·
 Content Kalender · Prompt Bibliothek · Das ultimative Verkaufs-Workbook (klein, zusammen)
+plus **lose PDFs ohne Kurs** in `reference/julia-trost/` und `Vorlagen/`, die noch keine Kursdatei
+gelesen hat — u. a. `Checkout Vorlagen.pdf`, `Checkout Vorlagen Neu.pdf`, `Salespages die verkaufen.pdf`,
+`Vorlagen/100k Blueprint/Up- und Downsell Vorlagen.txt`, `Vorlagen/Online Business Academy (OBA)/Offerbump Vorlage.pdf`
+(laut Themenbuch Verkaufsseite ungelesen). Vorher Liste aller PDFs gegen die Fundstellen aller Kursdateien abgleichen.
 
 **Danach:** jede neue Kursdatei in die Themenbücher einarbeiten (nur Neues), Bibliothek neu bauen
 und hochladen, Patricia Bescheid geben.
