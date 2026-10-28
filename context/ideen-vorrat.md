@@ -44,6 +44,9 @@ Gehört in die Jahresplanung 2027, nicht in den Jahresplan 2026 im Cockpit (Patr
 
 ## Idee
 
+- **[Produkt · Aufwand mittel]** Nischen-Generator für Network-Kundinnen
+  Patricias Idee vom 28.10.2026, Vorbild ist der Nischengenerator der Mentorin (https://nischengenerator.netlify.app/). Der Unterschied: ihre Kundinnen finden damit ihre Nische **innerhalb ihres Networks** — also nicht ein neues Business, sondern wofür sie mit ihren Network-Produkten stehen und für wen. Passt zum Hybridmodell und als Freebie oder Werkzeug vor Thema-/Positionierungs-Angeboten. 🚨 Aufbau und Mechanik dürfen inspirieren, Wortlaut und Aussehen nicht übernehmen. 🚨 Zwei Zielgruppen-Ebenen beachten: die Kundschaft ihrer Kundinnen ist nicht automatisch weiblich. Möglicher Unterbau: die Werkzeug-Prompts aus dem Minikurs-Eintrag darunter.
+
 - **[Produkt · Aufwand mittel]** Minikurs „Dein eigenes Werkzeug" — bauen und verkaufen
   Patricias Idee vom 19.10.2026, nachdem der KI-Tool-Workshop der Mentorin abgeglichen war. Passt genau zwischen KI-Kurs (333) und Academy: Wer Arbeitsplatz, Skill und Bot hat, kann als Nächstes etwas bauen, das er selbst verkauft. Zwei Arten unterscheiden — eines, das im Browser rechnet (Quiz, Planer, Rechner, **keine laufenden Kosten**) und eines, das die KI anruft (Rappen je Benutzung). Der Unterbau liegt schon: Prompt 33 der Prompt-Bibliothek (Werkzeug mit sicherem Schlüssel), die Netlify-Prompts 31 und 32, und der Abgleich in `outputs/produkte/ki-treppe/10-abgleich-julia-claude-kurse.md` („KI Tool Workshop"). 🚨 **Nicht vor Dezember** — bis dahin sind 61 Videos des KI-Kurses aufzunehmen, und ein neues Produkt zu planen, während ein verkaufter Kurs noch nicht ausgeliefert ist, ist genau das Muster, das den Umsatz an Launches kettet. 🚨 Nie den Trick übernehmen, mit dem fremde Seiten trotz Urheberrechts-Warnung nachgebaut werden.
 - **[Content · Aufwand klein]** Keyword-Karten (2 Folien) für die drei Werkzeuge mit laufender Automation
