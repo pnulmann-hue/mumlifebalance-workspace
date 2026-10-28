@@ -108,6 +108,11 @@ Gehört in die Jahresplanung 2027, nicht in den Jahresplan 2026 im Cockpit (Patr
   **Rechnung (nachgerechnet, ergibt ihre 57 €):** Hauptpreis + Bump-Preis × Bump-Quote + Upsell-Preis × Upsell-Quote + Downsell-Preis × Downsell-Quote × (1 − Upsell-Quote). Mit Bump 17 € bei 30 % kommt genau 56.73 € / +53 % heraus; den Bump-Preis nennt sie nicht, er stand nur auf dem Bildschirm.
   **Für Patricia dazu:** Startwerte aus ThriveCart (echte Preise je Kasse; echte Bump-/Upsell-Quoten aus `/transactions`, sobald angebunden — nie eine Quote erfinden) · Zeile „Käuferinnen pro Monat“ → Monatsumsatz gegen das Ziel · Vergleich zweier Varianten nebeneinander. Gehört zum bestehenden Block „Weg zum Monatsziel“ (`daten/umsatzplan`, Reiter Zahlen & Ziele) — dort ergänzen statt einen zweiten Rechner bauen. Ein Screenshot von Julias Rechner (ab 12:52 im Video) zeigt die genauen Felder.
 
+- **[Funnel · Aufwand mittel]** Nischen-Tool für Network-Mamas als Leadmagnet (Patricia 28.10.2026: *„wir könnten den nischengenerator an meine networkladys ja auch als leadmagneten verkaufen“*)
+  Anlass: Julias Nischengenerator im KI Tool Workshop (Learnings `reference/julia-trost/learnings/ki-tool-workshop.md`, `claude-mastery.md` Z. 187: wer die Zielgruppe nicht kennt, kann kein Business aufbauen; das Tool berücksichtigt Marktpotenzial). **Nicht Julias Tool übernehmen — eigenes bauen.**
+  Vorschlag: den bestehenden **Produkt-Ideen-Finder (STANDBEIN)** zum echten Tool ausbauen statt ein drittes Angebot danebenzustellen. Eingaben: was sie kann · was sie gern macht · wen sie erreicht · welche Network-Produkte sie hat → Ergebnis: 2–3 Nischen mit Marktpotenzial + ein erstes eigenes Produkt = Hybridmodell im Kleinen. Kette bleibt: Stichwort → Tool gegen Mailadresse → Danke-Seite (Digitale Produktwelt 199 statt 333) → Kasse 23.–30.11.
+  Regeln aus den Learnings: Leadmagnet gratis, nie 1 € (Julia: „Sobald eine Zahl dransteht … crashen die Anmeldungen“, Jahresworkshop 00:06:09) · Tool mit API kostet wenige Rappen pro Nutzung (Julias Nischenfinder total 0.64) · Tool-Typ: Generator (braucht API-Schlüssel) oder als Quiz ohne laufende Kosten. Zielgruppen-Ebene beachten: die Nutzerin ist die Network-Mama, ihre Kundschaft nicht.
+
 ## Erledigt
 
 - **[Technik · Aufwand mittel]** ThriveCart anbinden
