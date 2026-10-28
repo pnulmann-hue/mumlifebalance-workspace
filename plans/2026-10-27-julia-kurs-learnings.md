@@ -95,6 +95,33 @@ Vorlagen dazu: `Vorlagen/<Kurs>/…`
   4. Werbeanzeigen · Erfolgreiche Werbeanzeigen · ARIA · ChatGPT · Manychat-Vorlagen
   5. Rest (Bonus-Lektionen, Sonstiges, Erfolgreich ins neue Jahr, Einzeldateien)
 
+### Stand und Warteschlange (28.10.2026, Patricia: *„am schluss will ich alle drin haben"*)
+
+**Fertig (Stufe 1):** Launchen · Verkaufen mit Liebe · Magnetisch Verkaufen · Automationen ·
+Leadgewinnung · Digitale Produktwelt · Minikurse als Umsatzbooster · Die Minikurs Strategie ·
+Instagram Story Strategie 2.0. **Läuft:** Automatisiere deine Angebote (wartet auf 2 Abschriften),
+MAU-Wortsalat (5 Videos neu abschreiben, dann nachtragen), 100k Blueprint, 10k + 20k, Road to 50K,
+Forever Fans.
+
+**Block 2 — in Teilen** (Teil-Dateien nach `learnings/_teile/<slug>-N.md`, danach zusammenführen):
+- Online Business Academy (1,8 MB, 72 Dateien) in 4 Teilen, alphabetisch nach Dateiname:
+  1 „Ausblick“ bis „Dein Mindest“ · 2 „Deine Salespage“ bis „Hooks und CTAs“ ·
+  3 „Insights“ bis „Mein Newsletter“ · 4 „NEU ChatGPT“ bis Ende
+- Mentoring Gruppe (1,4 MB, 17 Calls) in 3 Teilen: Calls 2024 + „Eure Fragen“ · Jan–Jul 2025 ·
+  Aug 2025–Jan 2026
+
+**Block 3:** Content (der verkauft) (755k, 2 Teile) · Content Recycling · Reels to Cash ·
+IG Reichweiten Booster · Glasklare Produktkommunikation · 16 Kurse für 15€
+
+**Block 4:** Werbeanzeigen (524k, 2 Teile) · 04 - Erfolgreiche Werbeanzeigen (563k, 2 Teile) · ARIA ·
+ChatGPT · Manychat Automation Vorlagen
+
+**Block 5:** Bonus-Lektionen · _Sonstiges · Erfolgreich ins neue Jahr · Launch Queen · Story Bibliothek ·
+Content Kalender · Prompt Bibliothek · Das ultimative Verkaufs-Workbook (klein, zusammen)
+
+**Danach:** jede neue Kursdatei in die Themenbücher einarbeiten (nur Neues), Bibliothek neu bauen
+und hochladen, Patricia Bescheid geben.
+
 ## Phase 1b · Themenbücher statt Kursbücher (Patricia, 27.10.)
 
 *„schau welche themen in den kursen vorkommen und pack den inhalt in das entsprechende thema.
