@@ -158,6 +158,11 @@ ein Podcast-Link, „Interaktions-Booster-Challenge“ ein Gruppen-Link (Transkr
 ARIA 2.0, Werde Partner. ⚠️ Patricia ist in Elevate (28.10.: *„die haben mich da wohl rausgeschmissen. hab dem support geschrieben“*) — sobald der Zugang wieder geht: LIVE Calls (49), Experten Calls (43), ARIA 2.0 und übriges Elevate abschreiben (Crawler: Lektion öffnen, „Weiter“ klicken, Vimeo-ID aus dem iframe; Untertitel mit `claude-kurse/transkripte/_holen.sh`), Learnings je Kurs, in die Themenbücher nachtragen. Danach „Nur per Email verkauft“ in die Themenbücher funnel · verkaufsseite · launch ·
 angebotstreppe · strategie nachtragen (die anderen Nachträge laufen ohne sie).
 
+**Aufräum-Durchgang (nach allen Nachträgen):** content (~500k, kaum zusammengelegt) · strategie (443k: gekürzte Fassung
+steht neben der vollen Quellzeile — gekürzte löschen, wenn alle ihre Quellen als Volltext drin sind) · storys · angebotstreppe ·
+launch · funnel (Webinar-Mailserien teils doppelt). Regel: Doppeltes zu EINEM Punkt mit allen Fundstellen verschmelzen,
+dabei kein Detail verlieren; vorher Sicherung im Scratchpad, nachher Zahlen-/Zitat-Abgleich (scratchpad/abdeckung.py).
+
 **Danach:** jede neue Kursdatei in die Themenbücher einarbeiten (nur Neues), Bibliothek neu bauen
 und hochladen, Patricia Bescheid geben.
 
