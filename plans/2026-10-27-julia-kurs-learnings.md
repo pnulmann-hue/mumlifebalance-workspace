@@ -138,6 +138,14 @@ gefunden am 28.10. beim Abgleich der losen Dateien): Claude Mastery Module 1–8
 Mastery-Calls 9.1–9.4 (~295k) → `claude-mastery-calls.md` · KI Tool Workshop + Skill Bibliothek → `ki-tool-workshop.md`.
 Dazu lose: `Kopie von Schritt für Schritt Anleitung.pdf` (64 MB, Launch) — prüfen, ob sie in launchen.md schon steckt.
 
+**Stufe 2, Nachtrag (läuft ab 28.10. abends):** Auftrag `learnings/_AUFTRAG-NACHTRAG.md`, je Thema ein Helfer, höchstens 3
+gleichzeitig, Sonnet. Neue markierte Punkte je Thema: content 1891 · zeit 1066 · angebotstreppe 701 · strategie 664 ·
+verkaufsseite 663 · storys 629 · funnel 615 · werbung 593 · launch 535 · positionierung 418 · freebie 212 · jahresplan 75.
+content und zeit in zwei Durchgängen nacheinander (erst die Business-Kurse, dann der Rest).
+Neues 13. Buch **`themen/ki.md` — KI & Automatisierung** aus aria · chatgpt · claude-mastery · claude-mastery-calls ·
+ki-tool-workshop · skill-bibliothek · bonus-lektionen (ganz lesen, keine Marke vorhanden); in bibliothek-bauen.py als Thema eintragen.
+Schritt-für-Schritt-Anleitung (64 MB) = die 10 Verkaufs-Storyvorlagen, steckt schon in story-strategie.md.
+
 **Danach:** jede neue Kursdatei in die Themenbücher einarbeiten (nur Neues), Bibliothek neu bauen
 und hochladen, Patricia Bescheid geben.
 
