@@ -33,9 +33,9 @@ wenn sie einen anderen Look will. Gesicht und Bildrand prüft das Werkzeug vor j
 | **Untertitel** | A · Zwei Schriften | Seiten bis zwei Zeilen, betonte Wörter Source Sans Black orange | kurzer Pop je Seite | — |
 | | B · Aktives Wort | 2–3 Wörter Source Sans Bold, das gerade gesprochene leuchtet orange | Leuchten wandert mit | — |
 | | C · Balken | 3–4 Wörter auf dunklem, halbdurchsichtigem Balken | kurzer Pop | — |
-| **Knallwort** | — | ein Wort Source Sans Black orange, darunter kleine Zeile oder bis 3 Schilder | federt auf, atmet leicht | Pop |
+| **Knallwort** | — | ein Wort Source Sans Black orange, darunter Zeile (64 px) oder bis 3 Schilder (60 px); steht auf derselben Höhe wie Hook und Untertitel, unter dem Kinn (bis 27.10. Bildmitte = auf dem Kinn) | federt auf, atmet leicht | Pop |
 | **Karte** | — | freigegebene Kundenstimme auf Creme-Karte, Petrol-Kante, leicht gekippt | fährt von der Seite herein | Pop |
-| **Clipfolge** | — | Material, jeder zweite Abschnitt mit Zoom-Fahrt 1 → 1.06 | harter Schnitt | — |
+| **Clipfolge** | — | Material, **jeder** Abschnitt mit Zoom-Fahrt 1 → 1.15 aufs Gesicht (oberes Drittel), seit 28.10.2026; je Reel änderbar über `stil.zoom` (`bis`, `alle`, `zentrumY`) | harter Schnitt | — |
 | **Look** | — | Farbkorrektur, Korn 5 %, Vignette | Korn flimmert | — |
 
 **Töne** (Patricia 06.10.2026): Pop bei allem Neuen · Typing während der Hook sich aufbaut ·
