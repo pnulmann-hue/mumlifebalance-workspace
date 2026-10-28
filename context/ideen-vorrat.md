@@ -44,6 +44,9 @@ Gehört in die Jahresplanung 2027, nicht in den Jahresplan 2026 im Cockpit (Patr
 
 ## Idee
 
+- **[Produkt · Aufwand mittel]** Jahresplaner: was die Fassung der Mentorin kann und unsere nicht
+  Gesehen am 28.10.2026 (Screenshots von „Dein Verkaufsjahr an einem Nachmittag"). Drei Dinge, die unsere Seite „Mein Jahresplan" nicht hat: **Termine einlesen** (Kalender-Datei oder iCal-Adresse) als Sperrzonen, in die nie ein Secret Offer oder Live-Termin fällt · **vier Ebenen je Monat** als Raster (0-Euro-Produkt · Minikurs · Signature · grosses Angebot) · **Rhythmen in Tagen** (Aufwärmen, Secret Offer, Verkauf, Pause), aus denen der Plan die Phasen tagesgenau ins Jahr legt. Unsere hat dafür Rückblick, Vision, Leben zuerst, Lücken-Check und Network-Rechnung. Ablauf darf inspirieren, Wortlaut und Aussehen nicht.
+
 - **[Produkt · Aufwand mittel]** Nischen-Generator für Network-Kundinnen
   Patricias Idee vom 28.10.2026, Vorbild ist der Nischengenerator der Mentorin (https://nischengenerator.netlify.app/). Der Unterschied: ihre Kundinnen finden damit ihre Nische **innerhalb ihres Networks** — also nicht ein neues Business, sondern wofür sie mit ihren Network-Produkten stehen und für wen. Passt zum Hybridmodell und als Freebie oder Werkzeug vor Thema-/Positionierungs-Angeboten. 🚨 Aufbau und Mechanik dürfen inspirieren, Wortlaut und Aussehen nicht übernehmen. 🚨 Zwei Zielgruppen-Ebenen beachten: die Kundschaft ihrer Kundinnen ist nicht automatisch weiblich. Möglicher Unterbau: die Werkzeug-Prompts aus dem Minikurs-Eintrag darunter.
 
