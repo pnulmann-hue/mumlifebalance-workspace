@@ -5252,11 +5252,16 @@
   }
 
   function bibKursLaden(slug, fertig) {
-    if (bibTexte[slug] != null) { fertig(bibTexte[slug]); return; }
     var k = (bibIndex.kurse || {})[slug] || {};
-    var n = k.teile || 1;
+    bibTextLaden("k-" + slug, k.teile || 1, fertig);
+  }
+
+  /* schluessel: "k-<kurs>" (Kursdatei) oder "t-<thema>" (Themenbuch) */
+  function bibTextLaden(schluessel, n, fertig) {
+    var slug = schluessel;
+    if (bibTexte[slug] != null) { fertig(bibTexte[slug]); return; }
     var lokal = [];
-    for (var i = 1; i <= n; i++) lokal.push(lsGet("bib-k-" + slug + "-" + i, null));
+    for (var i = 1; i <= n; i++) lokal.push(lsGet("bib-" + slug + "-" + i, null));
     if (lokal.every(function (x) { return x != null; })) {
       bibTexte[slug] = lokal.join("");
       fertig(bibTexte[slug]);
@@ -5264,7 +5269,7 @@
     }
     if (!db) { fertig(null); return; }
     var holen = [];
-    for (var j = 1; j <= n; j++) holen.push(db.doc("bibliothek/k-" + slug + "-" + j).get());
+    for (var j = 1; j <= n; j++) holen.push(db.doc("bibliothek/" + slug + "-" + j).get());
     Promise.all(holen).then(function (snaps) {
       var md = snaps.map(function (s) { return s.exists ? (s.data().md || "") : ""; }).join("");
       bibTexte[slug] = md;
@@ -5321,6 +5326,7 @@
         '<span class="bib-ktitel">' + esc(t.titel) + '</span>' +
         '<span class="bib-kkurz">' + esc(t.kurz || "") + '</span>' +
         '<span class="bib-kzahl">' +
+          (t.buch ? "Themenbuch · " : "") +
           (nk ? nk + (nk === 1 ? " Kurs" : " Kurse") : "noch keine Learnings") +
           (nu ? " · " + nu + (nu === 1 ? " Unterlage" : " Unterlagen") : "") +
         '</span>';
@@ -5343,7 +5349,9 @@
       '<h2 class="bib-ttitel">' + esc(t.titel) + '</h2>' +
       '<p class="bib-tkurz">' + esc(t.kurz || "") + '</p>' +
       '<div class="panel"><h2>Unterlagen</h2><div class="bib-unter"></div></div>' +
-      '<h3 class="bib-zwischen">Learnings</h3><div class="bib-kurse"></div>';
+      '<div class="bib-buch"></div>' +
+      '<h3 class="bib-zwischen">' + (t.buch ? "Nach Kurs, zum Nachschlagen" : "Learnings") + '</h3>' +
+      '<div class="bib-kurse"></div>';
     box.querySelector(".bib-zurueck").addEventListener("click", function () {
       bibThema = null;
       bibUebersicht(box);
@@ -5365,6 +5373,22 @@
       ul.appendChild(z);
     });
 
+    if (t.buch) {
+      var bd = document.createElement("details");
+      bd.className = "panel zg-teil";
+      bd.open = true;
+      bd.innerHTML =
+        '<summary><span class="zg-titel">Alles zum Thema, jeder Punkt einmal</span>' +
+        '<span class="zg-kurz">' + Math.round((t.buch.zeichen || 0) / 1000) + "'000 Zeichen</span></summary>" +
+        '<div class="zg-inhalt bib-inhalt"><div class="empty">Lädt …</div></div>';
+      box.querySelector(".bib-buch").appendChild(bd);
+      bibTextLaden("t-" + t.id, t.buch.teile || 1, function (md) {
+        bd.querySelector(".bib-inhalt").innerHTML = md == null
+          ? '<div class="empty">Der Text liess sich nicht laden.</div>'
+          : bibMalen(md);
+      });
+    }
+
     var kb = box.querySelector(".bib-kurse");
     var auch = t.auch || [];
     if (!kurse.length && !auch.length) {
@@ -5374,7 +5398,7 @@
     if (!kurse.length) {
       kb.innerHTML = '<div class="panel"><div class="empty">Noch kein Kurs, der hauptsächlich dieses Thema hat.</div></div>';
     }
-    bibKursListe(kb, kurse, kurse.length === 1);
+    bibKursListe(kb, kurse, kurse.length === 1 && !t.buch);
     if (auch.length) {
       var h = document.createElement("h3");
       h.className = "bib-zwischen";

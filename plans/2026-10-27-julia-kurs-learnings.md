@@ -108,6 +108,11 @@ content · zeit · funnel · verkaufsseite · strategie · werbung · jahresplan
 Neue Helfer ab jetzt mit **Sonnet** (Patricia 28.10.: *„wechsle gern auf sonnet wenn da das ergebnis auch gut ist“*) — erste Sonnet-Datei gegen eine Opus-Datei vergleichen. Weiter mit höchstens 3 Helfern gleichzeitig: Launch · Storys · 100k (fortgesetzt) → 10k+20k · Road to 50K ·
 Forever Fans → OBA 1–4 → Mentoring 1–3 → Block 3–5.
 
+⚠️ **MAU-Wortsalat (5 Videos) neu abschreiben scheiterte am 28.10.:** Vimeo antwortet ohne Freigabe-Schlüssel `h`
+mit 403. Schlüssel aus der Einbettung der Lektion auf kurse.juliatrost.de lesen (eingeloggt in Chrome), dann
+`python scripts/julia-transkripte/abschreiben.py --nur <vimeo>` je Video — `konfig()` nimmt den Schlüssel als 2. Wert.
+Die 5 Einträge stehen in `transkripte-abgleich.json` auf `keine-untertitel`.
+
 **Block 2 — in Teilen** (Teil-Dateien nach `learnings/_teile/<slug>-N.md`, danach zusammenführen):
 - Online Business Academy (1,8 MB, 72 Dateien) in 4 Teilen, alphabetisch nach Dateiname:
   1 „Ausblick“ bis „Dein Mindest“ · 2 „Deine Salespage“ bis „Hooks und CTAs“ ·
