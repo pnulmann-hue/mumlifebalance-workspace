@@ -114,6 +114,11 @@ Gehört in die Jahresplanung 2027, nicht in den Jahresplan 2026 im Cockpit (Patr
   Regeln aus den Learnings: Leadmagnet gratis, nie 1 € (Julia: „Sobald eine Zahl dransteht … crashen die Anmeldungen“, Jahresworkshop 00:06:09) · Tool mit API kostet wenige Rappen pro Nutzung (Julias Nischenfinder total 0.64) · Tool-Typ: Generator (braucht API-Schlüssel) oder als Quiz ohne laufende Kosten. Zielgruppen-Ebene beachten: die Nutzerin ist die Network-Mama, ihre Kundschaft nicht.
   **28.10.:** Patricia will es bauen (*„ja voll“*), aber **nicht jetzt** — ihr Claude-Guthaben war aufgebraucht. Vor der Lead-Challenge 9.11. fertig. Ob Generator (API) oder Quiz ohne API: beim Bauen entscheiden.
 
+- **[Produkt · Aufwand mittel · längerfristig]** Tools aus den eigenen Produkten (Patricia 28.10.2026: *„ich habe da ja noch das PDF 90 Storyideen. Und das mit den hooks. da würde ich längerfristig auch gerne ein tool erstellen“*)
+  **Story-Ideen-Finder** aus dem Workbook „90 Storyideen“ (`outputs/produkte/storyideen-networkerinnen/workbook-print.html`, 8 Kapitel, Mix Nähe · Mehrwert · Einladung): sie wählt Lage/Ziel des Tages → bekommt passende Ideen mit Beispiel und Sticker-Vorschlag. Als Einfach-Tool (Finder/Planer, ohne API) machbar.
+  **Hook-Tool:** 🚨 nur aus Patricias **eigenem** Material bauen — der Hook-Skill enthält zugekaufte Formeln/Kataloge (gitignored, nicht weitergeben). Julia hat selbst einen Hook-Generator (Kosten 1.38 € total, `learnings/ki-tool-workshop.md`) — nicht nachbauen, Idee ja.
+  Einsatz laut Julias Learnings: als Leadmagnet, Bump oder Upsell (z. B. Bump an der Storyideen-Kasse) oder als Bonus im Kurs. Vorlage für den Bau: KI Tool Workshop (Themenbuch KI, „Eigene Tools bauen und verkaufen“).
+
 ## Erledigt
 
 - **[Technik · Aufwand mittel]** ThriveCart anbinden
