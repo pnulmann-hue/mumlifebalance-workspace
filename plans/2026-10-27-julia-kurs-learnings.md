@@ -155,7 +155,7 @@ nur **„Nur per Email verkauft“** (15 Lektionen, Transkripte `claude-kurse/tr
 und **„Instagram Test Reels“** (nur ein Drive-Dokument) → `learnings/nur-per-email-verkauft.md`. „Mindset Infusion“ ist
 ein Podcast-Link, „Interaktions-Booster-Challenge“ ein Gruppen-Link (Transkript steckt in content-der-verkauft).
 **Ohne Zugang** („Jetzt beitreten/kaufen“): Elevate, LIVE Calls mit Julia (49 Calls 2025/26), Experten Calls (43),
-ARIA 2.0, Werde Partner. Danach „Nur per Email verkauft“ in die Themenbücher funnel · verkaufsseite · launch ·
+ARIA 2.0, Werde Partner. ⚠️ Patricia ist in Elevate (28.10.: *„die haben mich da wohl rausgeschmissen. hab dem support geschrieben“*) — sobald der Zugang wieder geht: LIVE Calls (49), Experten Calls (43), ARIA 2.0 und übriges Elevate abschreiben (Crawler: Lektion öffnen, „Weiter“ klicken, Vimeo-ID aus dem iframe; Untertitel mit `claude-kurse/transkripte/_holen.sh`), Learnings je Kurs, in die Themenbücher nachtragen. Danach „Nur per Email verkauft“ in die Themenbücher funnel · verkaufsseite · launch ·
 angebotstreppe · strategie nachtragen (die anderen Nachträge laufen ohne sie).
 
 **Danach:** jede neue Kursdatei in die Themenbücher einarbeiten (nur Neues), Bibliothek neu bauen
