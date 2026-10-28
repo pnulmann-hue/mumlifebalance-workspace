@@ -150,6 +150,14 @@ Schritt-für-Schritt-Anleitung (64 MB) = die 10 Verkaufs-Storyvorlagen, steckt s
 steht als Knopf oben in der Wissensbibliothek (bibliothek-reiter.js). Am Schluss, wenn kein Helfer mehr an den Büchern
 schreibt, auch als Zeile „Kursbereich: …“ unter die Kopfzeile jedes Themenbuchs setzen.
 
+**Abgleich app.juliatrost.de (28.10.):** Zugang hat Patricia zu 22 Kursen. Neu und noch nicht ausgewertet waren
+nur **„Nur per Email verkauft“** (15 Lektionen, Transkripte `claude-kurse/transkripte/email-*.md`, Unterlagen in Drive)
+und **„Instagram Test Reels“** (nur ein Drive-Dokument) → `learnings/nur-per-email-verkauft.md`. „Mindset Infusion“ ist
+ein Podcast-Link, „Interaktions-Booster-Challenge“ ein Gruppen-Link (Transkript steckt in content-der-verkauft).
+**Ohne Zugang** („Jetzt beitreten/kaufen“): Elevate, LIVE Calls mit Julia (49 Calls 2025/26), Experten Calls (43),
+ARIA 2.0, Werde Partner. Danach „Nur per Email verkauft“ in die Themenbücher funnel · verkaufsseite · launch ·
+angebotstreppe · strategie nachtragen (die anderen Nachträge laufen ohne sie).
+
 **Danach:** jede neue Kursdatei in die Themenbücher einarbeiten (nur Neues), Bibliothek neu bauen
 und hochladen, Patricia Bescheid geben.
 
