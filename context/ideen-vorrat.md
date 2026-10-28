@@ -116,7 +116,7 @@ Gehört in die Jahresplanung 2027, nicht in den Jahresplan 2026 im Cockpit (Patr
 
 - **[Produkt · Aufwand mittel · längerfristig]** Tools aus den eigenen Produkten (Patricia 28.10.2026: *„ich habe da ja noch das PDF 90 Storyideen. Und das mit den hooks. da würde ich längerfristig auch gerne ein tool erstellen“*)
   **Story-Ideen-Finder** aus dem Workbook „90 Storyideen“ (`outputs/produkte/storyideen-networkerinnen/workbook-print.html`, 8 Kapitel, Mix Nähe · Mehrwert · Einladung): sie wählt Lage/Ziel des Tages → bekommt passende Ideen mit Beispiel und Sticker-Vorschlag. Als Einfach-Tool (Finder/Planer, ohne API) machbar.
-  **Hook-Tool:** 🚨 nur aus Patricias **eigenem** Material bauen — der Hook-Skill enthält zugekaufte Formeln/Kataloge (gitignored, nicht weitergeben). Julia hat selbst einen Hook-Generator (Kosten 1.38 € total, `learnings/ki-tool-workshop.md`) — nicht nachbauen, Idee ja.
+  **Hook-Tool aus der Content-Box** (ihr eigenes Produkt: 30 Hook-Vorlagen, 17 €, läuft vor allem als Bump; Seite /content-box/, Hook-Bibliothek-PDF `outputs/hook-bibliothek.pdf`): sie gibt Thema/Produkt ein bzw. wählt es → bekommt die passenden Vorlagen aus den 30, ausgefüllt mit ihren Begriffen. Eigenes Material, darf also raus. Nicht den Hook-Skill verwenden (enthält zugekauftes Material) und nicht Julias Hook-Generator nachbauen.
   Einsatz laut Julias Learnings: als Leadmagnet, Bump oder Upsell (z. B. Bump an der Storyideen-Kasse) oder als Bonus im Kurs. Vorlage für den Bau: KI Tool Workshop (Themenbuch KI, „Eigene Tools bauen und verkaufen“).
 
 ## Erledigt
