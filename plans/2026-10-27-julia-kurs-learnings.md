@@ -146,6 +146,10 @@ Neues 13. Buch **`themen/ki.md` — KI & Automatisierung** aus aria · chatgpt �
 ki-tool-workshop · skill-bibliothek · bonus-lektionen (ganz lesen, keine Marke vorhanden); in bibliothek-bauen.py als Thema eintragen.
 Schritt-für-Schritt-Anleitung (64 MB) = die 10 Verkaufs-Storyvorlagen, steckt schon in story-strategie.md.
 
+**Kursbereich verlinken** (Patricia 28.10.): `https://kurse.juliatrost.de/` (Claude-Kurse: `https://app.juliatrost.de/`)
+steht als Knopf oben in der Wissensbibliothek (bibliothek-reiter.js). Am Schluss, wenn kein Helfer mehr an den Büchern
+schreibt, auch als Zeile „Kursbereich: …“ unter die Kopfzeile jedes Themenbuchs setzen.
+
 **Danach:** jede neue Kursdatei in die Themenbücher einarbeiten (nur Neues), Bibliothek neu bauen
 und hochladen, Patricia Bescheid geben.
 
