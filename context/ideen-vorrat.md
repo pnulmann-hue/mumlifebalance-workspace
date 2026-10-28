@@ -102,6 +102,12 @@ Gehört in die Jahresplanung 2027, nicht in den Jahresplan 2026 im Cockpit (Patr
 - **[doTERRA · Aufwand mittel]** Mini-Notfallapotheke als doTERRA-Freebie reaktivieren — Landingpage + Kommentar-Stichwort, CTA weg vom veralteten „Mama wird Hausapothekerin“
   Fertiges 10-Seiten-PDF liegt in OneDrive, war nirgends erfasst. Inhalt und offene Punkte: context/doterra/mini-notfallapotheke.md
 
+- **[Cockpit · Aufwand klein]** Umsatzrechner „Wert pro Kundin“ nach Julias Vorbild (Patricia 28.10.2026: *„kannst du das auch mal so speichern, dass wir das für mich ins cockpit auch mal nachbauen?“*)
+  Vorbild: KI Tool Workshop, Tag 1, ab 12:02 (app.juliatrost.de, Lektion „Tag 1“), Learnings in `reference/julia-trost/learnings/ki-tool-workshop.md`.
+  **Was der Rechner kann (aus Julias Erklärung):** Hauptprodukt-Preis eingeben (ihr Beispiel 37 €) · Order Bump mit Preis und Mitnahme-Quote (ihr Beispiel 30 % oder 16 %) · Upsell mit Preis und Quote (99 €, 6 %) · Downsell mit Preis und Quote (37 €, 25 %) → zeigt den **Umsatz pro Kundin** (bei ihr 57 €) und **wie viel mehr Umsatz ohne Werbung** (bei ihr +54 %). Ihr Punkt: schon wenige Euro mehr Preis oder Quote heben den Umsatz pro Kundin stark — „ob man die magische 10k-Grenze erreicht oder bei 6k herum eiert“.
+  **Rechnung (nachgerechnet, ergibt ihre 57 €):** Hauptpreis + Bump-Preis × Bump-Quote + Upsell-Preis × Upsell-Quote + Downsell-Preis × Downsell-Quote × (1 − Upsell-Quote). Mit Bump 17 € bei 30 % kommt genau 56.73 € / +53 % heraus; den Bump-Preis nennt sie nicht, er stand nur auf dem Bildschirm.
+  **Für Patricia dazu:** Startwerte aus ThriveCart (echte Preise je Kasse; echte Bump-/Upsell-Quoten aus `/transactions`, sobald angebunden — nie eine Quote erfinden) · Zeile „Käuferinnen pro Monat“ → Monatsumsatz gegen das Ziel · Vergleich zweier Varianten nebeneinander. Gehört zum bestehenden Block „Weg zum Monatsziel“ (`daten/umsatzplan`, Reiter Zahlen & Ziele) — dort ergänzen statt einen zweiten Rechner bauen. Ein Screenshot von Julias Rechner (ab 12:52 im Video) zeigt die genauen Felder.
+
 ## Erledigt
 
 - **[Technik · Aufwand mittel]** ThriveCart anbinden
