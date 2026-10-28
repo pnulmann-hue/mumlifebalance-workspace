@@ -258,6 +258,7 @@ gepflegt.
 | **Meta-Anzeige**: Text, aufsetzen, testen, skalieren | **`/facebook-ads`** (Kevin + Werbeanzeigentext Master + Julias Pipeline) |
 | ChatGPT-Anzeigen | `/chatgpt-ads` |
 | Produkt, Treppe, Launch · Funnel-Technik | `/produkt` · `/funnel` |
+| **ganzes Angebotspaket auf einen Knopf** (Minikurs · Kurs · Freebie) | **`/angebot`** — Klammer um die Skills oben, keine eigenen Regeln |
 | Engpass, Entscheidung, nächster Schritt | `/strategie` |
 | Blog | `/blog` |
 
@@ -503,6 +504,39 @@ die Painpoints darin sind erfunden („generisches Pattern“), nie als Beleg zi
 nicht im Repo gefunden worden (läuft vermutlich remote).
 🚨 Fremde Verkaufsdaten gibt es nicht; „Verkaufsdaten“ heisst hier: ihre eigenen plus Verkaufssignale im Markt.
 
+### /angebot — das ganze Paket auf einen Knopf (seit 2026-10-27)
+
+**Anlass:** eine Story einer Mentorin mit einem Werkzeug „Business auf Knopfdruck“
+(Angebotsart wählen → ein Knopf → Kursaufbau, Verkaufsseite, Bumps, Mails, Storys,
+Chat-Automation, Anzeigentexte). Patricia: *„bau es für mich“*. Übernommen ist der Ablauf, nicht Wortlaut oder Aussehen.
+
+`/angebot minikurs|kurs|freebie [Thema]` → liest Katalog, Funnels, Expertise und Kundinnen-Geschichten
+→ fragt höchstens zwei Runden → zeigt **einen** Bauplan (`00-bauplan.md`, die eine Quelle für Name,
+Preise, Kette, Stichwort) → nach „passt“ ohne Stopp neun Bausteine nach `/produkt`, `/copywriting`,
+`/story`, `/content`+`/hooks`, `/funnel`, `/facebook-ads` → `outputs/produkte/<slug>/angebot/`.
+Endet mit Text-Prüfung, Werte-Gegenprobe per `grep` und `09-einrichten.md` (was sie von Hand anlegt).
+`/angebot nochmal <slug> [baustein]` baut neu. 🚨 **Keine eigenen Bau-Regeln im Skill** — sonst
+hätten wir zwei Stellen. 🚨 Legt nichts live an (WP, ThriveCart, AC, ManyChat, Blotato). Nur Eigengebrauch, keine Anleitung.md.
+Dazu neu: `python scripts/cockpit/texte-pruefen.py --datei <md …>` prüft beliebige Dateien gegen die
+Blackliste (ohne die Instagram-Prüfungen Hashtags/Hook).
+**Teil B — Trichter prüfen** (`/angebot trichter <produkt>` · `/angebot monat`, Patricia: *„oder schon ein
+bestehendes genommen und dann wird nach den punkten alles geprüft“* · *„es müsste aber auch möglich sein was
+neues zu bauen wenn zb die analyse ergibt, dass es nötig ist“*): Fokus aus dem Monatsplan, ganzer Weg rückwärts
+von der Kasse, je Punkt der Funnel-Checkliste ✅ ⚠️ ❌ ➖ ❓ mit Fundstelle (`00-befund.md`), dann je Baustein
+**flicken · neu bauen · neuer Trichter**, ein Stopp, bauen. Die Prüfliste kommt aus
+`python scripts/cockpit/funnel-checkliste-bauen.py --punkte` (138 Punkte, dieselben wie auf der Seite).
+🚨 ❓ ist kein ✅ — was nur in AC/ManyChat/ThriveCart steht, wird Prüfauftrag in `09-einrichten.md`.
+**Als Seite (seit 27.10., Patricia: *„ne nicht als skill sondern als seite. so wie es julia gemacht hat“*):**
+„Angebot auf Knopfdruck“ https://claude.ai/artifact/3gVUYKTiqFr8tSwvqehYvc — **privat, nie teilen** (trägt den
+zugekauften Hook-Werkzeugkasten). Drei Stationen: Idee (Freebie · Minikurs 39 · **grosses Angebot mit freiem Preis** und
+Form Online-Kurs / Kurs mit Live-Calls / 1:1 / Gruppe — Patricia: *„vielleicht will ich mal ein 1:1 oder ein gruppending
+und will den preis neu definieren“*; bei 1:1 und Gruppe heisst Baustein 01 „Ablauf“ und die Mails folgen der Buchung) → Bauplan mit Preis-Ketten-Prüfung
+und „Lücken vorschlagen lassen“ → runder Knopf baut die neun Bausteine nacheinander über `sample`, je Karte Kopieren
+und Nochmal bauen, Pakete bleiben im Browser, „Alles als Datei speichern“ (`downloads`). Quelle `scripts/angebot-seite/vorlage.html`,
+`python scripts/angebot-seite/bauen.py` legt das Markenwissen aus `wissen-voll.json` hinein (vorher `wissen-bauen.py`) →
+`outputs/angebot-knopfdruck/angebot.html` (gitignored), mit demselben Pfad neu veröffentlichen. Lokal: `preview_start angebot-knopfdruck`
+→ `/test.html` (dort ohne Claude). Die Prüfung bestehender Trichter (Teil B) gibt es nur im Chat.
+
 ### /strategie — der Business-Stratege (seit 2026-09-24)
 
 **Zweck:** Die eine Stelle über allen Bau- und Planungs-Skills. Beantwortet: *Was ist
@@ -588,7 +622,9 @@ heisst: den Durchlauf testet Patricia selbst. **Danke-Seiten mit Angebot** (23.1
 grosser Kurs **199 statt 333 „nur hier, direkt nach deiner Anmeldung“** (ohne Uhr), Preis über
 ThriveCart-Gutscheine `DANKE199IKM` / `DANKE199CEO` (ThriveCart kann keine Preisoption verstecken).
 Der 97er-Upsell nach Storyideen/Startklar bleibt (Käuferinnen-Preis). Seit 23.10. abends leiten 6 Formulare
-auf ihre Danke-Seite (Ideen-Finder + Businessfahrplan → Digitale Produktwelt `DANKE199DPW`). 🚨 **Vor dem
+auf ihre Danke-Seite (Ideen-Finder + Businessfahrplan → Digitale Produktwelt `DANKE199DPW`; seit 26.10. auch die
+Lead-Challenge, WP 4392). Einzelne Seiten neu bauen mit `--nur <slug>[,…]`, damit Änderungen in WordPress an den
+anderen bleiben. 🚨 **Vor dem
 Bearbeiten einer ThriveCart-Kasse fragen, ob sie gerade woanders offen ist** — am 23.10. hat ein zweiter
 Editor meine DPW-Korrekturen überschrieben, ThriveCart warnt nicht. **MBA-Modul** als letztes Modul der
 Signature-Kurse: `python scripts/mba-modul/bauen.py` → `outputs/produkte/mba-modul/` (HTML-Element in
@@ -631,21 +667,35 @@ Stand 25.09.: 54. Vor dem nächsten Launch das Limit erhöhen oder alte Storys a
 🚨 Herbstferien: **28.09.–16.10.** laut Cockpit-Jahresplan (Patricias „letzter Tag vor
 den Herbstferien“ war Fr 25.09.) — der Launch-Kalender nannte fälschlich 5.–16.10.
 
-### November 2026: Story-Challenge → Kundenmaschine (geplant am 25.10.2026)
+### November 2026: Hybridmodell → Digitale Produktwelt (neu geplant am 26.10.2026)
 
-**Patricias Entscheide:** Kundenmaschine **333 durchgehend**, **ohne Calls und ohne Masterclass**
-(*„bei mir laufen masterclasses nicht so gut … bessere erfahrung hab ich mit der storychallenge“*).
-Einstieg ist die **0€ Story-Challenge 9.–15.11. in einer WhatsApp-Gruppe**, Kasse **23.–30.11.**
-doTERRA parallel: Energie-Routine (Bestellschluss 31.10. bzw. 30.11.), Kickstart, Business, ab 16.11. Geschenke.
+📋 **Die Reihenfolge bis Januar steht in `plans/2026-10-26-reihenfolge-nov-bis-jan.md`** (Patricia: *„bitte halte
+alles to dos unbedingt fest … sonst verliere ich mich wieder selbst vor lauter ideen"*), jede Zeile auch als Aufgabe
+im Cockpit. Neue Ideen gehören in `context/ideen-vorrat.md`, nicht in diese Liste.
+🚨 **Kurse über die Veränderung verkaufen, nie über Modul-, Kapitel-, Lektions- oder Call-Zahlen** (26.10., gilt für
+alle Kurse: *„es verkauft ja die transformation und nicht wie viele kapitel der kurs hat"*).
+
+🔄 **Die Fassung vom 25.10. (Story-Challenge → Instagram-Kundenmaschine) ist verworfen.** Patricia am
+26.10.: *„ich habe schon so lange immer über instagram geredet … mein hybridmodell (was mich ja von der
+konkurrenz abhebt, kommt kaum zum tragen)“* und für doTERRA: *„ich will da nicht direkt wieder mit dem
+launch um die ecke kommen … erst die menschen aktivieren, vertrauen aufbauen, eine community aufbauen“*.
+
+**Mentoring:** Einstieg **0€ Lead-Challenge 9.–11.11. in einer WhatsApp-Gruppe** (eigenes Freebie =
+Hybridmodell im Kleinen) plus **Produkt-Ideen-Finder** (`STANDBEIN`), **Kasse Digitale Produktwelt
+23.–30.11. für 333**, ohne Webinar und ohne Staffel. Masterclasses laufen bei ihr schlecht (25.10.).
+**doTERRA:** kein Verkauf, nur samstags der Gratis-Kickstart, sonst Fragen, Umfragen, Tipps.
 **Monatsplan** (liest der Freitags-Lauf für die Beiträge): `outputs/monatsplaene/2026-11-mentoring.md` +
 `2026-11-doterra.md`. **Storys 26.10.–30.11. für beide Profile** (72 Sequenzen) liegen im Cockpit
 (`kw44`–`kw49-story-m|d-nov-*`), gebaut von `python scripts/launch/storys-november.py` → `ArtifactData batch set`
 aus `outputs/cockpit/abgleich/storys-november/`. Das Skript nimmt die Bausteine aus `storys-ki-launch.py`,
 die Gestaltung aus `storys-gestalten.py` und prüft mit `texte-pruefen.py`; Foto-Anweisungen (✏️) wandern in die
-Notiz, nur echte Schreib-Lücken bleiben im Bild. Bei einem Neulauf `if_version` mitgeben.
-⚠️ Offen: WhatsApp-Link → Bestätigungsmail (`scripts/story-challenge/mails-bauen.py`, `WORKBOOK` leer, alter
-Telegram-Link, „1.9“), ManyChat-Text `STORY` und Danke-Seite auf WhatsApp umstellen · Workbook S. 18 „am 1.3.“ ·
-8 Mails in AC · an der IKM-Kasse stehen auch „199“ und „134 gespart“ — vor dem 23.11. prüfen.
+Notiz, nur echte Schreib-Lücken bleiben im Bild. Bei einem Neulauf `if_version` mitgeben (Stand 26.10.: Version 3).
+⚠️ Offen: WhatsApp-Gruppe + Link · **Workbook Lead-Challenge letzte Seite** nennt noch „Produktwelt ab 6. April,
+249, Zoom-Call alle 2 Wochen“ · Mail-Anschluss der Lead-Challenge zeigt auf „Finde dein Thema“ ·
+Danke-Seiten Businessfahrplan und Ideen-Finder nennen noch „6 Kapitel, 20 Lektionen“ (Lead-Challenge und
+Storys nennen seit 26.10. die Veränderung statt Zahlen, Patricia: *„es verkauft ja die transformation und nicht
+wie viele kapitel der kurs hat“*) ·
+hat die Produktwelt diesmal Live-Calls? · DPW-Kassenpreis vor dem 23.11. prüfen.
 
 ### Story-Bibliothek im Cockpit — Gestaltung je Folie (seit 2026-10-08, Version 91/92)
 
@@ -695,6 +745,8 @@ Social Proof nicht vorschreiben lässt. Die Folie ist ein **Platz**, kein Inhalt
 🚨 **`layout` muss zum `hg` passen** — `bild` nur mit `hg: "foto"`, sonst `text`. Sichtbar ist der Fehler nicht
 (der Hintergrund kommt aus `hg`), aber `storys-gestalten.py` stuft nach `layout` ein und legt sonst später ein
 Foto unter. Gültige Werte: `hg` = foto · creme · dunkel · petrol · orange, `balken` = aus · zeilen · karte.
+
+**Version 104 (27.10.2026): Auswahl nach Tagen** (Patricia: *„dass immer direkt die story vom tag kommt und dann der reihe nach“*) — Gruppen Heute (Mentoring vor doTERRA) · Nächste Tage · Ohne Datum · Vorbei, beim Öffnen steht die heutige Story; vorher nach `updatedAt`. `scripts/cockpit/patch-story-reihenfolge.py` (wiederholbar). ⚠️ Lokal liegt zusätzlich der unveröffentlichte Link „Kursproduktion KI-Kurs“ im Mein-Tisch-Kopf.
 
 🗃 Erster Anlauf über WordPress + AC-Formular verworfen (Patricia: „das geht doch
 einfacher“): WP-Entwurf 4243 und AC-Felder `MI_*` (IDs 10–18) liegen noch.
@@ -2546,7 +2598,7 @@ Lädt das vollständige Briefing (`context/meal-planning-bot.md`) und startet de
 
 Output wird in `outputs/mealplans/` gespeichert.
 
-**Automatik (seit 25.10.2026):** Sa 18:00 vier Fragen per Telegram (Task `mealplan-fragen-donnerstag`, Name historisch) → **So 07:00 Plan für Dienstag bis Montag danach** (Task `freitag-mealplan`, Name historisch) → direkt in die Familien-App (Essen + Einkaufsliste, `essen-uebernehmen.mjs`). Kein PDF mehr per Telegram.
+**Automatik (seit 25.10.2026):** Sa 18:00 vier Fragen **über den Kochassistenten** (Telegram-Bot von `koch-bot`, Endpunkt `/api/essensfragen`; Task `mealplan-fragen-donnerstag`, Name historisch). Seit 27.10.: Antworten liest `antworten-lesen.py` aus dessen Supabase-Verlauf (`scripts/mealplan-dialog/kochbot.py`), der Bot bestätigt sie nur und plant nicht selbst. 🚨 Nicht über den Gartenbot — der läuft auf Railway noch und verschluckt Antworten. → **So 07:00 Plan für Dienstag bis Montag danach** (Task `freitag-mealplan`, Name historisch) → direkt in die Familien-App (Essen + Einkaufsliste, `essen-uebernehmen.mjs`). Kein PDF mehr per Telegram.
 
 ### /produkt
 
@@ -2742,6 +2794,28 @@ Bio-Check · Lead-Challenge · Workbook „Von 0 auf echt" · 0€ Potenzial-Tes
 **Datenfluss:** `/produkt` → `outputs/produkte/[slug]/07-launch-kalender.md` → `/jahresplan launch` → `context/jahresplan-2026.md` ←→ Notion. Phase-Marker maschinenlesbar in `context/active-funnels.json`.
 
 **Volle Doku:** `.claude/skills/jahresplan/SKILL.md`.
+
+**Planen (seit 26.10.2026): gleiche Fragen, zwei Wege.** Patricia: *„es soll einfach für alle umsetzbar
+sein … von denen die wie ich so stark mit Claude arbeiten und die, die es noch nicht tun"*.
+Die **Seite ohne Anmeldung** „Mein Jahresplan" (https://claude.ai/artifact/72vifh23HRaBDoVjqcgx4t,
+**privat**, teilen über das Share-Menü, bleibt kostenlos) führt durch Rückblick · Vision · Leben zuerst ·
+Angebote · Jahr · Woche und endet mit 12-Monats-Übersicht, Umsatz-Check (Preis × Verkäufe gegen Ziel)
+und einem kopierbaren Auftrag für die eigene KI. Startet mit Sandras Beispiel, speichert nur im Browser
+(keine Fähigkeiten). Für Claude-Nutzerinnen dasselbe als **`/jahresplan planen`** (Modus 0).
+Die Fragen stehen **nur** in `scripts/jahresplan/fragen.json`; `python scripts/jahresplan/tool-bauen.py`
+baut daraus die Seite (`outputs/produkte/jahresplanung/jahresplaner.html`, Vorlage `tool-vorlage.html`)
+und den Fragenblock im Skill zwischen den `FRAGEN`-Marken. Danach die Seite mit demselben Pfad neu
+veröffentlichen. Lokal: `preview_start jahresplaner` (Port 4412) braucht eine Testfassung mit Viewport-Kopf.
+Struktur sinngemäss aus Julias Jahresplanungs-Masterclass (Transkript in `.claude/skills/jahresplan/wissen/`,
+gitignored) plus Mama-CEO 3.3/3.4. **Lücken-Check** (26.10., Patricia: *„wo hat der funnel eine lücke … anhand
+des einkommensziels muss man so oder soviel umsetzen"*): Stufe aus dem Monatsziel nach Julias Stufen (`strategie/wissen/julia-stufen.md`,
+ein eigener 5k-Kurs fehlt im Material), Monate ohne Verkauf, Treppen-Lücken, Klumpen, Zusatz an der Kasse, Interessierte aus der
+**eigenen** Kaufquote (nie geraten). **Schritt „Network“** rechnet mit den Zahlen aus der eigenen Abrechnung (pro Person mit
+Monatsbestellung, pro Teampartnerin), weil jeder Vergütungsplan anders ist. Angebote tragen „Herkunft“ (eigen/Network) — wer nichts
+Eigenes hat, plant mit Testwoche · Starterset · Einschreibung; der Check empfiehlt trotzdem ein kleines eigenes Angebot als Türöffner.
+**Patricias Testfassung** mit ihren 17 Angeboten und den Schulferien 2027: https://claude.ai/artifact/5d3MW587EUAKQ1JZhuxhmz
+(`python scripts/jahresplan/tool-bauen.py --patricia`, Daten `scripts/jahresplan/patricia.json`).
+⚠️ Offen: Weitergabe-Fassung (Anleitung.md) für MBA und Mama-CEO — vorher Julias Namen aus der SKILL.md nehmen.
 
 ### /wp
 
@@ -4675,6 +4749,31 @@ und als `daten/zielgruppe` im Cockpit. `python scripts/cockpit/zielgruppe-bauen.
 kleiner Markdown-Leser). Browser-Schlüssel `mlb:zg-markt`. **Quelle ist das Markdown.**
 ⚠️ Offen: ob Säule 2 der Analyse (gegen Firma/Upline) provokativ sein darf — Patricia unschlüssig.
 Kursprompts zum Nachschlagen: `context/Kurse/aktuelle kurse/Content-Shortcut/`.
+
+### Julias Kurse als Learnings + Reiter „Produkte → Wissensbibliothek“ (seit 2026-10-27)
+
+Patricia: *„ich möchte ja möglichst viel vom wissen, das ich mir hier von julia erworben habe, über meine skills
+abrufen"* · *„nicht nur EIN Fazit. Sondern die Learnings aus dem Kurs festgehalten. Vollständig"*. Plan:
+`plans/2026-10-27-julia-kurs-learnings.md`. Je Kurs eine Datei `reference/julia-trost/learnings/<kurs>.md`
+(gitignored): jede Regel, Zahl, Liste mit Fundstelle, ohne Füllwörter, dazu „Aus den Unterlagen“ (PDFs/Docs) und
+Widersprüche. Erste Datei: **Launchen** (16 Lektionen + 8 Unterlagen, 119'000 Zeichen). Die Zeile „Gehört zu den
+Business-Schritten:“ ordnet zu — das **erste** Wort ist das Hauptthema, die übrigen landen unter „Streift das Thema auch“.
+**Im Cockpit** (Patricias Entscheid, Cockpit seit 27.10. **privat**): Produkte → **Wissensbibliothek**, je
+Business-Schritt eine Karte mit Unterlagen als **Drive-Link** (PDF-Anhänge am Artifact zeigen nur Rohtext) und den
+Learnings, geladen erst beim Aufklappen. `python scripts/cockpit/bibliothek-bauen.py` → `outputs/cockpit/abgleich/bibliothek/`
+→ `ArtifactData batch set` in Sammlung `bibliothek` (`_index` + `k-<kurs>-<n>`, Stücke unter 200 KB). Unterlagen je Thema
+in `reference/julia-trost/learnings/_unterlagen.json` (Julias Dateien sind in Patricias Drive „für mich freigegeben“,
+Suche `owner = 'kontakt%juliatrost.de@gtempaccount.com'`). Reiter: `patch-bibliothek.py` (+ `bibliothek-reiter.js/.css`,
+setzt `zgMarkdown` aus dem Zielgruppe-Reiter voraus). 🚨 Gekauftes Material — Cockpit muss privat bleiben.
+**Stand 28.10. abends:** alle **41 Kurse** ausgewertet (38 von kurse.juliatrost.de + Claude Mastery, KI Tool Workshop,
+Skill Bibliothek, dazu neu „Nur per Email verkauft“ + „Instagram Test Reels“ von app.juliatrost.de) und in **13 Themenbücher**
+`reference/julia-trost/learnings/themen/<thema>.md` eingearbeitet (jeder Punkt einmal, alle Fundstellen, Widersprüche eigener
+Abschnitt; 13. Buch `ki` = KI & Automatisierung). Aufträge für Helfer: `learnings/_AUFTRAG.md` (Kurs), `_AUFTRAG-THEMEN.md`
+(Buch), `_AUFTRAG-NACHTRAG.md` (neue Kurse ins Buch), `_AUFTRAG-AUFRAEUMEN.md` (Doppeltes zusammenführen). Cockpit V108:
+Buch zuerst, Kurse zum Nachschlagen, Knöpfe zu kurse.juliatrost.de und app.juliatrost.de. 🚨 Helfer teilen sich das Scratchpad —
+jeder braucht einen eigenen Unterordner (am 28.10. hat einer ein fremdes Skript ausgeführt und Punkte verdoppelt).
+⚠️ Offen: Elevate-Zugang fehlt (Support angefragt) → LIVE Calls (49), Experten Calls (43), ARIA 2.0 nachholen · 11 VML- und 5 MAU-Videos
+nur Wortsalat (MAU brauchen Vimeo-Schlüssel aus der Lektion) · Phase 4/5 (Landkarte Business-Schritte → Skills, Skills anbinden).
 
 ### Funnel-Checkliste und der Launch-Reiter (seit 2026-10-08)
 
