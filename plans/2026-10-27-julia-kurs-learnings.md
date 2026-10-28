@@ -95,6 +95,20 @@ Vorlagen dazu: `Vorlagen/<Kurs>/…`
   4. Werbeanzeigen · Erfolgreiche Werbeanzeigen · ARIA · ChatGPT · Manychat-Vorlagen
   5. Rest (Bonus-Lektionen, Sonstiges, Erfolgreich ins neue Jahr, Einzeldateien)
 
+## Phase 1b · Themenbücher statt Kursbücher (Patricia, 27.10.)
+
+*„schau welche themen in den kursen vorkommen und pack den inhalt in das entsprechende thema.
+wenn etwas ja schon drin steht, musst du es nicht doppelt aufführen"*
+
+- **Stufe 1** bleibt je Kurs (Auftrag für die Helfer: `reference/julia-trost/learnings/_AUFTRAG.md`),
+  aber jeder Punkt trägt Themen-Marken (`#launch #funnel …`). Die Kursdatei ist Zwischenstufe und
+  Fundstellen-Quelle.
+- **Stufe 2:** je Thema ein Buch `reference/julia-trost/learnings/themen/<thema>.md`. Darin jeder
+  Punkt **einmal**, nach Unterthemen geordnet; sagen zwei Kurse dasselbe, steht es einmal mit beiden
+  Fundstellen. Widersprüche zwischen Kursen eigener Abschnitt.
+- Die Wissensbibliothek im Cockpit zeigt die Themenbücher; die Kursdateien nur noch zum Nachschlagen.
+- Neuer Kurs später: Stufe 1 für ihn, dann in Stufe 2 nur Neues ergänzen.
+
 ## Phase 2 · Gegenlesen
 
 - [ ] Je Datei zwei Lektionen ganz gegen das Transkript lesen: fehlt eine Regel, ein
