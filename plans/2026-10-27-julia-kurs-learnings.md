@@ -133,6 +133,11 @@ gelesen hat — u. a. `Checkout Vorlagen.pdf`, `Checkout Vorlagen Neu.pdf`, `Sal
 `Vorlagen/100k Blueprint/Up- und Downsell Vorlagen.txt`, `Vorlagen/Online Business Academy (OBA)/Offerbump Vorlage.pdf`
 (laut Themenbuch Verkaufsseite ungelesen). Vorher Liste aller PDFs gegen die Fundstellen aller Kursdateien abgleichen.
 
+**Block 6 — Julias Claude-Kurse** (`reference/julia-trost/claude-kurse/transkripte/`, nicht unter den 38 gezählt,
+gefunden am 28.10. beim Abgleich der losen Dateien): Claude Mastery Module 1–8 + 10 → `claude-mastery.md` ·
+Mastery-Calls 9.1–9.4 (~295k) → `claude-mastery-calls.md` · KI Tool Workshop + Skill Bibliothek → `ki-tool-workshop.md`.
+Dazu lose: `Kopie von Schritt für Schritt Anleitung.pdf` (64 MB, Launch) — prüfen, ob sie in launchen.md schon steckt.
+
 **Danach:** jede neue Kursdatei in die Themenbücher einarbeiten (nur Neues), Bibliothek neu bauen
 und hochladen, Patricia Bescheid geben.
 
