@@ -11,6 +11,7 @@ Siehe [[_MOCs/MOC-Content-Engine]] für den thematischen Überblick.
 
 - **KW38** — siehe [[outputs/content/KW38/_INDEX|KW38]]
 - **KW39** — siehe [[outputs/content/KW39/_INDEX|KW39]]
+- [[2026-10-29-nachbau-ki-tool-beitraege]]
 - [[sprechreel-pool-sichtung]]
 - [[karussell-arsenal]]
 - [[karussell-vorrat]]
