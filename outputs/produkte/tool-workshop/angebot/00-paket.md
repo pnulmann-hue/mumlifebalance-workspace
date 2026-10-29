@@ -5,7 +5,8 @@ tags: [produkt]
 # Paket · Tool-Workshop (Stand 29.10.2026)
 
 ```
-✓ Freebie              Nischengenerator · https://claude.ai/artifact/WCqvp1gDFmW7RNy6tVUBvX (privat, teilen!)
+✓ Freebie              Nischengenerator · https://mlb-nischengenerator.netlify.app
+✓ Tool-Ideen            https://mlb-tool-ideen.vercel.app (KI, Mail → Tag 0€ Tool-Ideen)
 ✓ Bauplan              00-bauplan.md
 ✓ Kursaufbau           01-aufbau.md (Vorbereitung, Tag 1, Tag 2, Begleitung, Claude-Vorlage)
 ✓ Anmeldeseite         02-salespage.md · gestaltet: outputs/salespages/tool-workshop/index.html

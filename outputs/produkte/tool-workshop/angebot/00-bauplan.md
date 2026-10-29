@@ -24,7 +24,7 @@ tags: [produkt]
 | **Aufzeichnung** | beide Calls, abgelegt in ThriveCart Learn (Patricia 29.10.) |
 | **Vorbereitung Teilnehmerinnen** | Claude-Konto (gratis reicht für den Start) · Netlify-Konto (gratis) |
 | **Kasse** | offen **ab sofort** bis **Mo 9.11.2026, 23:59** (Patricia 29.10.: „die kasse müssen wir vorher schon öffnen. also jetzt?“) |
-| **Einstieg (Freebie)** | Nischengenerator, https://claude.ai/artifact/WCqvp1gDFmW7RNy6tVUBvX (privat bis Patricia ihn über das Teilen-Menü freigibt) |
+| **Einstieg (Freebie)** | Nischengenerator, https://mlb-nischengenerator.netlify.app (Netlify, öffentlich; das Artifact bleibt privat als Arbeitsfassung) |
 | **Stichwort** | **NISCHE** (🟠 ENTSCHEID, frei, Match-Typ exakt) → DM mit Link zum Nischengenerator, danach Workshop |
 
 ## Kette an der Kasse
