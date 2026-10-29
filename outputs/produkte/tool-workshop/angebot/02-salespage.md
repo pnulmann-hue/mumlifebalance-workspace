@@ -74,7 +74,7 @@ Dein Tool öffnet den Kontakt zu deiner Zielgruppe, und danach kannst du ganz na
 📋 BLOCK 7: So läuft es
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**Vorher:** Du legst ein Gratis-Konto bei Claude und bei Netlify an und findest mit dem Nischengenerator deine Nische.
+**Vorher:** Du legst ein Gratis-Konto bei Claude und bei Netlify an und findest mit dem Nischengenerator deine Nische. Hast du schon ein Workbook oder PDF, bring es mit: Wir machen daraus das Wissen in deinem Tool.
 
 **Tag 1, Dienstag, 10. November:** Aus deiner Nische wird eine Tool-Idee, und wir bauen sie zusammen im Claude-Chat, bis der Link funktioniert.
 

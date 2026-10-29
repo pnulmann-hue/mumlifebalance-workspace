@@ -80,7 +80,7 @@ P.S. Ein PDF wird heruntergeladen, ein Tool wird benutzt. In zwei Tagen hast du 
 ### B0 · sofort · Willkommen
 
 **Betreff:** Du bist dabei. So bereitest du dich vor
-**Vorschautext:** Zwei Gratis-Konten und eine Frage, mehr braucht es nicht.
+**Vorschautext:** Zwei Gratis-Konten, eine Frage und dein Wissen, mehr braucht es nicht.
 
 Hallo [Vorname]
 
@@ -97,6 +97,7 @@ Danach drei Tage Begleitung in der Gruppe: ✏️ Link
 2. Ein Gratis-Konto auf netlify.com
 3. Den Nischengenerator ausfüllen und den Satz deiner ersten Nische notieren: [Link]
 4. Eine Frage aufschreiben, die dir die Leute in deinem Network immer wieder stellen
+5. **Dein Wissen fürs Tool:** Hast du ein Workbook, E-Book oder PDF, bring es mit. Wenn nicht, schreib in ein paar Sätzen auf, was dein Tool können soll. Das reicht.
 
 Bis bald
 Patricia

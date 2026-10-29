@@ -12,6 +12,9 @@ Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung,
 - [ ] Netlify-Konto anlegen auf netlify.com (gratis), nur nötig, wenn die Seite ein AC-Formular tragen soll
 - [ ] Nischengenerator ausfüllen und den Satz der ersten Nische notieren
 - [ ] Eine Frage aufschreiben, die dir die Leute in deinem Network immer wieder stellen
+- [ ] Dein Wissen fürs Tool: Hast du ein Workbook, E-Book oder PDF, bring es mit. Wenn nicht, schreib in ein paar Sätzen auf, was dein Tool können soll. Das reicht.
+
+**Warum das Wissen beim Bauen hinein muss:** Ein einfaches Tool fragt später keine KI mehr. Alles, was es sagt, schreibt Claude beim Bauen in die Datei. Wer ein Workbook mitbringt, lädt es per Büroklammer in den Chat („Bau die Ergebnisse aus dem Wissen in diesem Dokument“). Wer nichts hat, beschreibt, was das Tool können soll, und Claude füllt den Rest mit allgemeinem Wissen. Dann gilt: jedes Ergebnis selbst ausfüllen, lesen und im Chat nachschärfen, bis es klingt wie sie und stimmt. Das Wissen ist danach eingefroren: Änderung im Chat, neue Datei auf Netlify. Keine Heilversprechen in Ergebnistexten, auch wenn sie im Firmenmaterial stehen.
 
 ## Tag 1 · Di 10.11. · Dein Tool (live, 19:00 Uhr, rund 90 Minuten)
 
@@ -62,5 +65,7 @@ Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung,
 > Die Frage, die das Tool beantwortet: [Frage]
 >
 > Ablauf: [Anzahl] Fragen mit Antworten zum Antippen, danach ein Ergebnis mit drei konkreten Tipps und am Schluss ein Knopf „[Knopftext]“, der zu [Link] führt.
+>
+> Mein Wissen dazu: [Workbook oder PDF per Büroklammer anhängen und schreiben: Bau die Ergebnisse aus dem Wissen in diesem Dokument. Ohne Unterlagen: in ein paar Sätzen, was die Leute bei welcher Antwort wissen sollen.]
 >
 > Es soll ohne API und ohne Anmeldung laufen. Farben: [Farben]. Schreib die Texte in Du-Form, freundlich, wie ich mit einer Freundin rede.

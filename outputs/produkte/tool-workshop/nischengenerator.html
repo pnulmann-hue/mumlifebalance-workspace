@@ -111,6 +111,7 @@ footer { font-size: 14px; color: var(--muted); }
 <script>
 // Hier eintragen, sobald die Anmeldeseite steht:
 const WORKSHOP_URL = "https://mumlifebalance.ch/tool-workshop/";
+const IDEEN_URL = "https://mlb-tool-ideen.vercel.app";
 const DM_URL = "https://ig.me/m/mumlifebalance_patricia_ulmann";
 
 const FRAGEN = [
@@ -297,7 +298,7 @@ function zeigeErgebnis() {
       <div class="teile">
         <div class="teil"><b>Warum das zu dir passt</b><p>${esc(n.warum.join(" ") || "Es passt zu deiner Mischung aus Alltag und Produkt.")}</p></div>
         <div class="teil"><b>So kommt dein Produkt ins Spiel</b><p>${esc(BRUECKE[stand.a.produkt])}</p></div>
-        <div class="teil"><b>Dein Gratis-Tool dazu</b><p>${esc(n.t.tool)}</p></div>
+        <div class="teil"><b>Dein Gratis-Tool dazu</b><p>${esc(n.t.tool)} <a class="link" href="${IDEEN_URL}" target="_blank" rel="noopener">Mehr Ideen für deine Nische holen</a></p></div>
         <div class="teil"><b>Deine erste Story</b><p>${esc(n.t.story)}</p></div>
       </div>
       <button type="button" class="kopieren" id="kopie-${n.id}" data-satz="${esc(klar)}">Satz kopieren</button>`;

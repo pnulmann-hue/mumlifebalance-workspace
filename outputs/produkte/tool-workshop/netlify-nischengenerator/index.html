@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Fünf Fragen, dann siehst du drei Nischen, die zu dir passen. Gratis von Patricia Ulmann, Mum Life Balance.">
+<title>Nischengenerator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap">
+<style>
+/* Ein Fragebogen pro Bildschirm, darunter das Ergebnis als Karte. Creme-Grund, Dunkelblau trägt, Orange nur am Ergebnis. */
+:root {
+  --bg: #f1ecdd;
+  --surface: #fbf8f0;
+  --ink: #0c1c30;
+  --muted: #4f5d68;
+  --line: #dcd3bd;
+  --blue: #29556d;
+  --petrol: #12828c;
+  --orange: #dc822e;
+  --on-strong: #f1ecdd;
+  --chip: #e9e2cf;
+  --display: "Philosopher", Georgia, serif;
+  --body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1d2a; --surface: #172938; --ink: #f1ecdd; --muted: #b3bcc2; --line: #2c4152;
+    --blue: #7fb3c9; --petrol: #4fb7bf; --orange: #e9964a; --on-strong: #0f1d2a; --chip: #1f3546;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1d2a; --surface: #172938; --ink: #f1ecdd; --muted: #b3bcc2; --line: #2c4152;
+  --blue: #7fb3c9; --petrol: #4fb7bf; --orange: #e9964a; --on-strong: #0f1d2a; --chip: #1f3546;
+  color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 56px;
+}
+.wrap { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+header { display: flex; flex-direction: column; gap: 8px; }
+.eyebrow { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--petrol); font-weight: 700; }
+h1 { font-family: var(--display); font-size: clamp(34px, 8vw, 48px); line-height: 1.05; margin: 0; text-wrap: balance; color: var(--blue); }
+.lead { margin: 0; color: var(--muted); max-width: 34em; }
+.steps { display: flex; gap: 6px; }
+.steps span { flex: 1; height: 5px; border-radius: 3px; background: var(--line); transition: background .3s; }
+.steps span.on { background: var(--blue); }
+.frage { display: flex; flex-direction: column; gap: 16px; }
+.frage h2 { font-family: var(--display); font-size: 27px; line-height: 1.2; margin: 0; text-wrap: balance; }
+.hinweis { margin: -8px 0 0; font-size: 15px; color: var(--muted); }
+.optionen { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.opt {
+  font: inherit; text-align: left; cursor: pointer; padding: 14px 16px; border-radius: 12px;
+  background: var(--surface); color: var(--ink); border: 1.5px solid var(--line); min-height: 56px;
+  display: flex; align-items: center; gap: 10px; transition: border-color .15s, background .15s;
+}
+.opt:hover { border-color: var(--blue); }
+.opt:focus-visible, .btn:focus-visible, .link:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+.opt[aria-pressed="true"] { background: var(--blue); color: var(--on-strong); border-color: var(--blue); }
+.opt .mark { width: 20px; height: 20px; flex: none; border-radius: 50%; border: 1.5px solid currentColor; display: grid; place-items: center; font-size: 13px; }
+.opt[aria-pressed="true"] .mark::after { content: "✓"; }
+.nav { display: flex; gap: 10px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.btn {
+  font: inherit; font-weight: 700; cursor: pointer; border-radius: 999px; padding: 13px 26px; border: 0;
+  background: var(--blue); color: var(--on-strong);
+}
+.btn[disabled] { opacity: .4; cursor: not-allowed; }
+.btn.leise { background: transparent; color: var(--blue); padding-inline: 4px; }
+.btn.orange { background: var(--orange); color: #0c1c30; }
+.zaehler { font-size: 14px; color: var(--muted); }
+
+/* Ergebnis */
+.ergebnis { display: flex; flex-direction: column; gap: 22px; }
+.ergebnis > h2 { font-family: var(--display); font-size: 30px; margin: 0; color: var(--blue); }
+.nische { background: var(--surface); border: 1.5px solid var(--line); border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 14px; }
+.nische.erste { border-color: var(--orange); border-width: 2px; }
+.rang { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+.nische.erste .rang { color: var(--orange); }
+.satz { font-family: var(--display); font-size: 24px; line-height: 1.3; margin: 0; }
+.satz em { font-style: italic; color: var(--petrol); }
+.teile { display: grid; gap: 12px; }
+.teil b { display: block; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); margin-bottom: 2px; }
+.teil p { margin: 0; }
+.kopieren { align-self: flex-start; font: inherit; font-size: 15px; cursor: pointer; background: var(--chip); color: var(--ink); border: 0; border-radius: 999px; padding: 8px 16px; }
+.mehr summary { cursor: pointer; color: var(--blue); font-weight: 600; }
+.mehr[open] summary { margin-bottom: 10px; }
+
+.workshop { background: var(--blue); color: var(--on-strong); border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 12px; }
+.workshop h3 { font-family: var(--display); font-size: 26px; margin: 0; line-height: 1.2; }
+.workshop p { margin: 0; }
+.workshop ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.workshop .preis { font-weight: 700; }
+.links { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.link { color: inherit; font-weight: 600; }
+.workshop .btn.orange { text-decoration: none; display: inline-block; }
+footer { font-size: 14px; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Für Frauen im Network Marketing</div>
+    <h1>Nischengenerator</h1>
+    <p class="lead">Fünf Fragen zu deinem Alltag, deinem Produkt und dem, wofür die Leute dich schon heute fragen. Danach siehst du drei Nischen, die zu dir passen, mit einem Satz zum Verwenden und einer Idee für dein erstes Gratis-Tool.</p>
+  </header>
+
+  <div class="steps" id="steps" aria-hidden="true"></div>
+  <main id="buehne"></main>
+  <footer>Deine Antworten bleiben auf deinem Gerät. Nichts wird gespeichert oder verschickt.</footer>
+</div>
+
+<script>
+// Hier eintragen, sobald die Anmeldeseite steht:
+const WORKSHOP_URL = "https://mumlifebalance.ch/tool-workshop/";
+const IDEEN_URL = "https://mlb-tool-ideen.vercel.app";
+const DM_URL = "https://ig.me/m/mumlifebalance_patricia_ulmann";
+
+const FRAGEN = [
+  { id: "produkt", titel: "Was verkaufst du in deinem Network?", art: "eins", optionen: [
+    ["oele", "Öle und Wohlbefinden"], ["ernaehrung", "Ernährung und Nahrungsergänzung"],
+    ["haut", "Hautpflege und Kosmetik"], ["haushalt", "Haushalt und Reinigung"],
+    ["kueche", "Küche und Kochen"], ["mode", "Mode und Schmuck"], ["andere", "Etwas anderes"] ] },
+  { id: "alltag", titel: "Wie sieht dein Alltag gerade aus?", art: "mehr", max: 3, optionen: [
+    ["klein", "Kleine Kinder zu Hause"], ["schule", "Schulkinder"], ["teens", "Teenager"],
+    ["job", "Berufstätig neben der Familie"], ["ab40", "Ab 40, die Zeit danach im Blick"],
+    ["sport", "Bewegung ist mir wichtig"], ["natur", "Haus, Garten, viel draussen"], ["unterwegs", "Viel unterwegs"] ] },
+  { id: "rat", titel: "Wofür fragen dich die Leute um Rat?", hinweis: "Auch wenn es gar nichts mit deinem Produkt zu tun hat.", art: "mehr", max: 3, optionen: [
+    ["zeit", "Wie ich alles unter einen Hut bringe"], ["essen", "Was ich koche, Rezepte"],
+    ["energie", "Woher ich meine Energie nehme"], ["schlaf", "Abende und Schlaf mit Kindern"],
+    ["haut", "Pflege und meine Haut"], ["haushalt", "Haushalt und Putzen"],
+    ["gelassenheit", "Wie ich ruhig bleibe"], ["bewegung", "Sport und Bewegung"],
+    ["look", "Kleidung und Auftreten"], ["kinder", "Erziehung und Familienrituale"],
+    ["business", "Selbständigkeit und Social Media"], ["garten", "Garten und Selbstgemachtes"] ] },
+  { id: "gern", titel: "Was machst du richtig gern?", art: "mehr", max: 3, optionen: [
+    ["kochen", "Kochen und Backen"], ["planen", "Planen und Ordnung schaffen"], ["draussen", "Draussen sein"],
+    ["bewegen", "Mich bewegen"], ["kreativ", "Basteln und Gestalten"], ["schoen", "Schönes aussuchen und kombinieren"],
+    ["lernen", "Lesen und Neues lernen"], ["menschen", "Menschen zusammenbringen"], ["ruhe", "Zur Ruhe kommen"] ] },
+  { id: "wem", titel: "Wem würdest du am liebsten helfen?", art: "eins", optionen: [
+    ["eltern", "Eltern mit kleinen Kindern"], ["familien", "Familien mit Schulkindern"],
+    ["berufstaetige", "Berufstätigen mit wenig Zeit"], ["ab40", "Menschen ab 40"],
+    ["sportliche", "Menschen, die gern aktiv sind"], ["natuerlich", "Leuten, die es natürlicher wollen"] ] },
+];
+
+const ZIELGRUPPE = {
+  eltern: "Eltern mit kleinen Kindern", familien: "Familien mit Schulkindern",
+  berufstaetige: "Berufstätigen mit wenig Zeit", ab40: "Menschen ab 40",
+  sportliche: "Menschen, die gern aktiv sind", natuerlich: "Leuten, die es natürlicher wollen",
+};
+
+// Jede Nische: Ergebnis für die Leute, Weg dahin, Gratis-Tool und erste Story.
+// gern/alltag/produkt geben Punkte, rat zählt am meisten.
+const THEMEN = {
+  zeit: { name: "Alltag und Zeit", ergebnis: "mehr Luft im Alltag zu haben", weg: "Plänen, die in eine volle Woche passen",
+    gern: ["planen"], alltag: ["job", "klein", "schule", "unterwegs"], produkt: ["haushalt", "kueche", "ernaehrung"],
+    tool: "Zeitfresser-Check: acht kurze Fragen, danach sieht man, wohin die Stunden in der Woche verschwinden.",
+    story: "Zeig, wie dein Wochenplan am Sonntagabend entsteht, und frag, wer auch so plant." },
+  essen: { name: "Einfach gut essen", ergebnis: "unter der Woche einfach und gut zu essen", weg: "Rezepten, die in 20 Minuten auf dem Tisch stehen",
+    gern: ["kochen"], alltag: ["klein", "schule", "teens", "job"], produkt: ["kueche", "ernaehrung"],
+    tool: "Wochenmenü-Generator: Personen und Zeit eingeben, fünf passende Gerichte bekommen.",
+    story: "Zeig dein schnellstes Abendessen dieser Woche und frag, was bei den anderen auf den Tisch kommt." },
+  energie: { name: "Energie im Alltag", ergebnis: "mehr Energie für den Alltag zu haben", weg: "kleinen Gewohnheiten, die man wirklich durchhält",
+    gern: ["bewegen", "lernen"], alltag: ["ab40", "job", "klein", "sport"], produkt: ["ernaehrung", "oele"],
+    tool: "Energie-Check: Wo geht dir im Tagesverlauf die Energie verloren, und was ist der erste kleine Schritt?",
+    story: "Erzähl von einem Nachmittag, an dem du früher keine Kraft mehr hattest, und was heute anders ist." },
+  schlaf: { name: "Ruhige Abende", ergebnis: "ruhigere Abende mit der Familie zu haben", weg: "Abendritualen für Gross und Klein",
+    gern: ["ruhe"], alltag: ["klein", "schule"], produkt: ["oele", "haut"],
+    tool: "Abendroutine-Planer: Alter der Kinder und Zubettgehzeit eingeben, einen Ablauf bekommen.",
+    story: "Zeig ein Stück eurer Abendroutine und frag, was bei den anderen das Einschlafen leichter macht." },
+  haut: { name: "Pflege, die zu einem passt", ergebnis: "eine Pflegeroutine zu finden, die zu ihnen passt", weg: "einfachen Routinen statt vollen Badezimmerschränken",
+    gern: ["schoen", "ruhe"], alltag: ["ab40"], produkt: ["haut", "oele"],
+    tool: "Pflegetyp-Test: zehn Fragen, danach eine Routine für morgens und abends.",
+    story: "Zeig deine eigene Morgenroutine in drei Schritten und wie lange sie wirklich dauert." },
+  haushalt: { name: "Haushalt mit weniger Aufwand", ergebnis: "ein sauberes Zuhause mit weniger Aufwand zu haben", weg: "einem Putzplan, der die ganze Familie einbezieht",
+    gern: ["planen"], alltag: ["klein", "schule", "teens", "job"], produkt: ["haushalt", "oele"],
+    tool: "Putzplan-Generator: Wohnung und Familienmitglieder eingeben, einen Wochenplan mit Ämtli bekommen.",
+    story: "Zeig, wer bei euch welches Ämtli hat, und frag, wie es die anderen regeln." },
+  gelassenheit: { name: "Ruhiger durch volle Tage", ergebnis: "ruhiger durch volle Tage zu kommen", weg: "kurzen Pausen, die in jeden Tag passen",
+    gern: ["ruhe", "lernen"], alltag: ["job", "klein", "teens", "ab40"], produkt: ["oele", "haut"],
+    tool: "Stress-Check: Woran merkst du, dass es zu viel wird, und welche kurze Pause passt zu dir?",
+    story: "Erzähl von einem Moment, in dem es dir zu viel wurde, und was dir damals geholfen hat." },
+  bewegung: { name: "Bewegung im Alltag", ergebnis: "Bewegung in einen vollen Alltag einzubauen", weg: "kurzen Einheiten, die man ohne Studio schafft",
+    gern: ["bewegen", "draussen"], alltag: ["sport", "ab40", "job"], produkt: ["ernaehrung", "mode"],
+    tool: "Bewegungsplan: verfügbare Minuten eingeben, einen Plan für die Woche bekommen.",
+    story: "Zeig, wann und wo du dich heute bewegt hast, auch wenn es nur zehn Minuten waren." },
+  look: { name: "Stil und Auftreten", ergebnis: "sich jeden Tag wohl zu fühlen in dem, was sie tragen", weg: "einer kleinen Garderobe, die sich gut kombinieren lässt",
+    gern: ["schoen", "kreativ"], alltag: ["job", "ab40"], produkt: ["mode", "haut"],
+    tool: "Stiltyp-Test: Welche Farben und Schnitte passen zu dir? Mit drei Kombinationen zum Nachmachen.",
+    story: "Zeig drei Kombinationen aus denselben zwei Teilen und lass abstimmen." },
+  kinder: { name: "Familienalltag mit Kindern", ergebnis: "einen entspannteren Familienalltag zu haben", weg: "Ritualen, die Kinder mittragen",
+    gern: ["menschen", "kreativ"], alltag: ["klein", "schule", "teens"], produkt: ["haushalt", "kueche", "oele"],
+    tool: "Familienrituale-Finder: Alter der Kinder eingeben, drei Rituale für Morgen, Abend und Wochenende bekommen.",
+    story: "Erzähl von einem Ritual bei euch, das mit einem kleinen Missgeschick angefangen hat." },
+  business: { name: "Sichtbar mit dem eigenen Angebot", ergebnis: "mit dem eigenen Angebot sichtbar zu werden", weg: "einfachen Abläufen für Social Media",
+    gern: ["menschen", "lernen", "planen"], alltag: ["job", "unterwegs"], produkt: ["mode", "andere"],
+    tool: "Bio-Check: Sagt die Profilbeschreibung in drei Sekunden, für wen man da ist?",
+    story: "Zeig deine Profilbeschreibung von früher und von heute nebeneinander." },
+  garten: { name: "Natur und Selbstgemachtes", ergebnis: "mehr Natur und Selbstgemachtes in den Alltag zu holen", weg: "saisonalen Ideen für Garten, Balkon und Küche",
+    gern: ["draussen", "kreativ", "kochen"], alltag: ["natur"], produkt: ["oele", "kueche", "haushalt"],
+    tool: "Saisonkalender: Monat eingeben, sehen, was jetzt geerntet, gesät oder selbst gemacht wird.",
+    story: "Zeig, was du diese Woche selbst gemacht oder geerntet hast." },
+};
+
+const BRUECKE = {
+  oele: "Düfte und Pflegerituale werden ein Teil der Lösung, zum Beispiel am Abend oder in der Pause.",
+  ernaehrung: "Deine Produkte ergänzen den Alltag, den du zeigst, und kommen ins Gespräch, wenn jemand fragt, wie du das machst.",
+  haut: "Deine Pflegeprodukte gehören zur Routine, die du zeigst.",
+  haushalt: "Deine Produkte gehören zu den Abläufen, die du zeigst, und machen sie einfacher.",
+  kueche: "Deine Küchenprodukte sind das Werkzeug für die Rezepte und Pläne, die du teilst.",
+  mode: "Deine Teile sind die Beispiele, an denen du zeigst, wie es geht.",
+  andere: "Dein Produkt kommt ins Gespräch, wenn jemand wissen will, was dir dabei hilft.",
+};
+
+const ANTWORTEN = Object.fromEntries(FRAGEN.flatMap(f => f.optionen.map(([k, l]) => [f.id + ":" + k, l])));
+let stand = { schritt: 0, a: { produkt: null, alltag: [], rat: [], gern: [], wem: null } };
+
+const buehne = document.getElementById("buehne");
+const steps = document.getElementById("steps");
+steps.innerHTML = FRAGEN.map(() => "<span></span>").join("") + "<span></span>";
+
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]); }
+
+function zeichneSchritte() {
+  [...steps.children].forEach((s, i) => s.classList.toggle("on", i <= stand.schritt));
+}
+
+function gewaehlt(f) {
+  const w = stand.a[f.id];
+  return f.art === "eins" ? (w ? 1 : 0) : w.length;
+}
+
+function zeigeFrage() {
+  const f = FRAGEN[stand.schritt];
+  const w = stand.a[f.id];
+  const opts = f.optionen.map(([k, l]) => {
+    const an = f.art === "eins" ? w === k : w.includes(k);
+    return `<button type="button" class="opt" id="opt-${f.id}-${k}" data-k="${k}" aria-pressed="${an}"><span class="mark"></span><span>${esc(l)}</span></button>`;
+  }).join("");
+  const zaehler = f.art === "mehr" ? `<span class="zaehler">${w.length} von höchstens ${f.max} gewählt</span>` : "<span></span>";
+  buehne.innerHTML = `
+    <section class="frage" aria-labelledby="fr">
+      <div class="eyebrow">Frage ${stand.schritt + 1} von ${FRAGEN.length}</div>
+      <h2 id="fr">${esc(f.titel)}</h2>
+      ${f.hinweis ? `<p class="hinweis">${esc(f.hinweis)}</p>` : ""}
+      <div class="optionen">${opts}</div>
+      <div class="nav">
+        ${stand.schritt > 0 ? '<button type="button" class="btn leise" id="zurueck">Zurück</button>' : zaehler}
+        ${stand.schritt > 0 ? zaehler : ""}
+        <button type="button" class="btn" id="weiter" ${gewaehlt(f) ? "" : "disabled"}>${stand.schritt === FRAGEN.length - 1 ? "Meine Nischen zeigen" : "Weiter"}</button>
+      </div>
+    </section>`;
+  buehne.querySelectorAll(".opt").forEach(b => b.addEventListener("click", () => waehle(f, b.dataset.k)));
+  document.getElementById("weiter").addEventListener("click", weiter);
+  const z = document.getElementById("zurueck");
+  if (z) z.addEventListener("click", () => { stand.schritt--; render(); });
+}
+
+function waehle(f, k) {
+  if (f.art === "eins") stand.a[f.id] = k;
+  else {
+    const w = stand.a[f.id];
+    if (w.includes(k)) w.splice(w.indexOf(k), 1);
+    else { if (w.length >= f.max) w.shift(); w.push(k); }
+  }
+  zeigeFrage();
+  const knopf = document.getElementById("opt-" + f.id + "-" + k);
+  if (knopf) knopf.focus();
+}
+
+function weiter() {
+  stand.schritt++;
+  render();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function bewerte() {
+  const a = stand.a;
+  return Object.entries(THEMEN).map(([id, t]) => {
+    let p = 0; const warum = [];
+    if (a.rat.includes(id)) { p += 6; warum.push("Die Leute fragen dich schon dafür: " + ANTWORTEN["rat:" + id] + "."); }
+    const g = a.gern.filter(x => t.gern.includes(x));
+    if (g.length) { p += 3 * g.length; warum.push("Du machst es gern: " + g.map(x => ANTWORTEN["gern:" + x]).join(", ") + "."); }
+    const al = a.alltag.filter(x => t.alltag.includes(x));
+    if (al.length) { p += 2 * al.length; warum.push("Es ist dein Alltag: " + al.map(x => ANTWORTEN["alltag:" + x]).join(", ") + "."); }
+    if (t.produkt.includes(a.produkt)) { p += 3; warum.push("Dein Produkt passt dazu."); }
+    return { id, t, p, warum };
+  }).sort((x, y) => y.p - x.p).slice(0, 3);
+}
+
+function satz(t) {
+  return `Ich helfe <em>${esc(ZIELGRUPPE[stand.a.wem])}</em>, ${esc(t.ergebnis)}, mit ${esc(t.weg)}.`;
+}
+
+function zeigeErgebnis() {
+  const top = bewerte();
+  const karten = top.map((n, i) => {
+    const klar = `Ich helfe ${ZIELGRUPPE[stand.a.wem]}, ${n.t.ergebnis}, mit ${n.t.weg}.`;
+    const inhalt = `
+      <p class="satz">${satz(n.t)}</p>
+      <div class="teile">
+        <div class="teil"><b>Warum das zu dir passt</b><p>${esc(n.warum.join(" ") || "Es passt zu deiner Mischung aus Alltag und Produkt.")}</p></div>
+        <div class="teil"><b>So kommt dein Produkt ins Spiel</b><p>${esc(BRUECKE[stand.a.produkt])}</p></div>
+        <div class="teil"><b>Dein Gratis-Tool dazu</b><p>${esc(n.t.tool)} <a class="link" href="${IDEEN_URL}" target="_blank" rel="noopener">Mehr Ideen für deine Nische holen</a></p></div>
+        <div class="teil"><b>Deine erste Story</b><p>${esc(n.t.story)}</p></div>
+      </div>
+      <button type="button" class="kopieren" id="kopie-${n.id}" data-satz="${esc(klar)}">Satz kopieren</button>`;
+    return i === 0
+      ? `<article class="nische erste"><div class="rang">Passt am besten · ${esc(n.t.name)}</div>${inhalt}</article>`
+      : `<article class="nische"><details class="mehr"><summary>Nische ${i + 1} · ${esc(n.t.name)}</summary>${inhalt}</details></article>`;
+  }).join("");
+
+  buehne.innerHTML = `
+    <section class="ergebnis" aria-labelledby="erg">
+      <h2 id="erg">Deine Nischen</h2>
+      ${karten}
+      <aside class="workshop" aria-labelledby="ws">
+        <h3 id="ws">Und jetzt bauen wir dein Gratis-Tool</h3>
+        <p>Im Tool-Workshop machst du aus deiner Nische ein kleines Tool wie dieses hier, mit Claude und ohne Programmieren.</p>
+        <ul>
+          <li>10. November, live: dein Gratis-Tool</li>
+          <li>11. November, live: die Seite, auf der man sich dafür einträgt</li>
+          <li>Drei Tage Begleitung danach, die Aufzeichnung bleibt dir</li>
+        </ul>
+        <p class="preis">39 Franken</p>
+        <div class="links">
+          <a class="btn orange" href="${WORKSHOP_URL}" target="_blank" rel="noopener">Zum Tool-Workshop</a>
+          <a class="link" href="${DM_URL}" target="_blank" rel="noopener">Oder schick mir dein Ergebnis auf Instagram</a>
+        </div>
+      </aside>
+      <div class="nav"><button type="button" class="btn leise" id="neu">Nochmal von vorn</button></div>
+    </section>`;
+  buehne.querySelectorAll(".kopieren").forEach(b => b.addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(b.dataset.satz); b.textContent = "Kopiert"; }
+    catch (e) {
+      const r = document.createRange(); r.selectNodeContents(b.parentElement.querySelector(".satz"));
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Markiert, jetzt kopieren";
+    }
+  }));
+  document.getElementById("neu").addEventListener("click", () => {
+    stand = { schritt: 0, a: { produkt: null, alltag: [], rat: [], gern: [], wem: null } }; render();
+  });
+}
+
+function render() {
+  zeichneSchritte();
+  if (stand.schritt < FRAGEN.length) zeigeFrage(); else zeigeErgebnis();
+}
+render();
+</script>
+
+</body>
+</html>

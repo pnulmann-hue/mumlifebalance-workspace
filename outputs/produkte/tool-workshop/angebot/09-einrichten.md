@@ -39,3 +39,10 @@ Was von Hand angelegt wird. Reihenfolge = Dringlichkeit, weil die Kasse sofort o
 
 - [ ] Story-Generator-Kasse existiert noch nicht → ohne sie keinen Bump einrichten
 - [ ] Hat die Digitale Produktwelt im November/Dezember einen Termin? Mail B3 braucht Link und Zeitraum
+
+## Tool-Ideen-Generator (seit 29.10.)
+
+- [x] Live: https://mlb-tool-ideen.vercel.app (Tag 0€ Tool-Ideen 108, 10 Durchgänge je Mail)
+- [ ] Automation in AC am Tag **0€ Tool-Ideen**: Willkommensmail mit Hinweis auf den Tool-Workshop
+- [ ] Link in Storys und in der gespeicherten Instagram-Antwort zu NISCHE ergänzen
+- [ ] Nischengenerator auf Netlify übernehmen (bei Netlify anmelden, dann macht Claude den Rest)
