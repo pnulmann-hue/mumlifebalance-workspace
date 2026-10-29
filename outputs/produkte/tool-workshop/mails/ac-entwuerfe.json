@@ -38,5 +38,45 @@
   "kampagne": 859,
   "nachricht": "717",
   "name": "Tool-Ideen C0 · Willkommen (sofort, Tag 0€ Tool-Ideen)"
+ },
+ "C1-pdf-oder-tool.html": {
+  "kampagne": 875,
+  "nachricht": "732",
+  "name": "Nischengenerator C1 · PDF oder Tool (+1 Tag)"
+ },
+ "C2-so-entsteht-es.html": {
+  "kampagne": 876,
+  "nachricht": "733",
+  "name": "Nischengenerator C2 · So entsteht dein Tool (+3 Tage)"
+ },
+ "C3-tueroeffner.html": {
+  "kampagne": 877,
+  "nachricht": "734",
+  "name": "Nischengenerator C3 · Der Türöffner (+5 Tage)"
+ },
+ "C4-schon-so-viel.html": {
+  "kampagne": 878,
+  "nachricht": "735",
+  "name": "Nischengenerator C4 · Schon so viel probiert (+7 Tage)"
+ },
+ "B4-das-erste-eigene.html": {
+  "kampagne": 879,
+  "nachricht": "736",
+  "name": "Tool-Workshop B4 · Dein erstes eigenes Angebot (Mo 16.11.)"
+ },
+ "B5-produktwelt.html": {
+  "kampagne": 880,
+  "nachricht": "737",
+  "name": "Tool-Workshop B5 · Die Digitale Produktwelt (Mi 18.11.)"
+ },
+ "B6-network-produkt.html": {
+  "kampagne": 881,
+  "nachricht": "738",
+  "name": "Tool-Workshop B6 · Ich hab doch mein Network-Produkt (Fr 20.11.)"
+ },
+ "B7-letzte.html": {
+  "kampagne": 882,
+  "nachricht": "739",
+  "name": "Tool-Workshop B7 · Zum Abschluss (So 22.11.)"
  }
 }
