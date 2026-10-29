@@ -40,8 +40,10 @@ Das ist der Anfang einer starken Geschichte, nur kommt danach gleich das Ergebni
 | Folie 1 nur Foto, ohne Text | 13 von 36 | **23 von 36** |
 | Folie 1 mit Anlauf („Heute erzähl ich dir …“, „Tag 1 der …“, „Ich bin noch ganz …“) | 13 | 4 |
 
-Beides verletzt Julias Regel „Starte mit Bäm“. *„Wie bei mir alles angefangen hat, erzähl ich dir heute mal von
-vorn.“* ist fast wörtlich ihr Negativbeispiel.
+Beides verletzt Julias Regel „Starte mit Bäm“.
+**Korrektur 29.10. (Patricia):** Ein Einstieg, der eine Geschichte ankündigt, ist ein Hook und bleibt erlaubt —
+*„Wie bei mir alles angefangen hat, erzähl ich dir heute mal von vorn.“* weckt Neugier. Gemeint sind nur Anläufe
+ohne Spannung: Begrüssung, Tagesablauf, „Guten Morgen“.
 
 ### 3 · Es gibt keinen Ausklang
 
@@ -91,7 +93,7 @@ wo ein Detail fehlt, steht eine ✏️-Frage.
 
 | | heute im Cockpit | so mit Storytelling |
 |---|---|---|
-| 1 Einstieg | *Wie bei mir alles angefangen hat, erzähl ich dir heute mal von vorn.* | Kurz vor der Geburt meiner dritten Tochter hab ich meinem Mann aufgeschrieben, was ich als Mama nebenbei alles erledige. |
+| 1 Einstieg | *Wie bei mir alles angefangen hat, erzähl ich dir heute mal von vorn.* (darf bleiben, ist ein Hook) | oder direkt in die Szene: Kurz vor der Geburt meiner dritten Tochter hab ich meinem Mann aufgeschrieben, was ich als Mama nebenbei alles erledige. |
 | 2 Geschichte | *Vor der Geburt … eine Liste geschrieben …* | Damit er weiss, was läuft, wenn ich im Spital bin. ✏️ Ein Punkt von der Liste, der dich selbst überrascht hat. · Umfrage: *Wie lang wäre deine Liste? Eine Seite / Lieber nicht wissen* |
 | 3 Wendung | *Aus dieser Liste ist mein erstes eigenes Angebot entstanden …* | Mit dieser Liste hab ich meinen Alltag umgebaut, bis alles aufging und Zeit für mich blieb. Daraus wurde mein erstes Angebot: drei Schritte, um die To-do-Liste zu halbieren. |
 | 4 Learning | – | **Zum Screenshotten:** Dein erstes eigenes Angebot steckt oft in etwas, das du für dich selbst schon gelöst hast. |
