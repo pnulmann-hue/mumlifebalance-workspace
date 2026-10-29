@@ -38,6 +38,25 @@ Werte aus `00-bauplan.md`.
 
 **FAQ:** die sechs Fragen aus `02-salespage.md`, Block 11.
 
+## Stand 29.10.2026 spät abends — Kette eingebaut (Patricias Entscheide)
+
+| | Franken-Kasse (Produkt 53) | Euro-Kasse (Produkt 54, `/tool-workshop-eu/`) |
+|---|---|---|
+| Kassen-Block | HTML-Feld unter der Überschrift: Mockup, Text, „Das bekommst du“ (Quelle `outputs/salespages/tool-workshop-checkout/kasse-block.html`) | von 53 übernommen |
+| Auslieferung | ThriveCart Learn, Kurs **„Tool-Workshop: Dein Gratis-Angebot als Tool“ (235282)** | gleich |
+| **Bump** | „Finde dein Thema dazu, für 25 statt 39 CHF“, Kurs „Finde dein Thema“ (204392) | 25 €, Text mit € |
+| **Upsell** | Instagram-Kundenmaschine **199** (Upsell 8, Kurs „Instagram-Kundenmaschine evergreen“), Seite von der Startklar-Kasse übernommen, Kopf auf den Workshop umgeschrieben | gleich, Preiszeile „333 € … 199 €“ |
+| **Downsell** | Startklar **39** (Downsell 5, neu), Kurs Startklar | gleich, „39 €“ |
+| Cross-Sell | KI-Kurs in Mail B3 (Patricia 29.10.) | — |
+
+Rechnung: Bump 25 < Workshop 39 · Upsell 199 liegt bewusst über dem Workshop (Patricias Entscheid, Käuferinnen-Preis
+wie auf den Danke-Seiten) · Downsell 39 < 199 ✓.
+🚨 **Eine Änderung an der Franken-Kasse wandert nicht in die Euro-Kasse** (ThriveCart: „Checkout design changes stay
+on this product only“). Bump, Funnel und Gestaltung sind in 54 von Hand nachgezogen — bei jeder Änderung beide prüfen.
+⚠️ Offen: AC-Tags für Upsell- und Downsell-Käuferinnen (sonst Werbung für die Kundenmaschine/Startklar an Käuferinnen) ·
+Downsell-Seite noch in der ThriveCart-Vorlagenschrift (lila Überschrift) · Upsell Nr. 7 an Startklar/Storyideen bucht 97,
+die Seite dort schreibt „nur für CHF 199“.
+
 ## Bump (auf der Kasse)
 
 **Story-Generator dazu, 17 Franken statt einzeln**  🟠 ENTSCHEID (Kasse des Story-Generators steht noch nicht)
