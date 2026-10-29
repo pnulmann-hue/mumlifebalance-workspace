@@ -20,7 +20,7 @@ Hallo [Vorname]
 
 wann hast du das letzte PDF geöffnet, das du dir irgendwo geholt hast?
 
-Bei vielen liegen sie im Download-Ordner, und die Person, die es verschenkt hat, hört nie wieder etwas. Darum baue ich meine Gratis-Angebote seit einiger Zeit als kleine Tools: einen Bio-Check, einen Stimm-Check, einen Produkt-Ideen-Finder. Wer sie ausfüllt, bekommt sofort ein Ergebnis, und ich sehe, wofür sich die Person interessiert.
+Bei vielen liegen sie im Download-Ordner, und die Person, die es verschenkt hat, hört nie wieder etwas. Darum baue ich meine Gratis-Angebote seit einiger Zeit als kleine Tools: einen Bio-Check, einen Stimm-Check, einen Produkt-Ideen-Finder. Wer sie ausfüllt, erlebt etwas und hat am Schluss ein Ergebnis in der Hand. In deinem Network verschenken fast alle E-Books und PDFs. Mit einem Tool fällst du auf, und es öffnet den Kontakt: Wer ein Ergebnis bekommen hat, hört dir zu, wenn du danach von deinem Produkt erzählst.
 
 Gebaut habe ich sie mit Claude, ohne programmieren zu können. Und genau das machen wir jetzt zusammen.
 

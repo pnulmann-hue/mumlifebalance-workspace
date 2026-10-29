@@ -18,7 +18,7 @@ Wenn das Sprechreel, das du schon hast, ein anderes Stichwort trägt: im Schluss
 **Caption:**
 Du hast dir Mühe gegeben, ein paar Leute haben es geholt, und dann kam nichts mehr. Kein Kommentar, keine Nachricht, keine Frage.
 
-Ein PDF wird heruntergeladen und landet im Download-Ordner. Darum baue ich meine Gratis-Angebote als kleine Tools: Wer sie ausfüllt, bekommt sofort ein Ergebnis und hat einen Grund, mir zu schreiben. Und ich sehe, wofür sich die Person interessiert.
+Ein PDF wird heruntergeladen und landet im Download-Ordner. Darum baue ich meine Gratis-Angebote als kleine Tools: Wer sie ausfüllt, erlebt etwas und bekommt sofort ein Ergebnis zu seinem Problem. Das haben in deinem Network die wenigsten.
 
 Der erste Schritt ist deine Nische. Kommentier **NISCHE**, dann schick ich dir meinen Nischengenerator, gratis.
 

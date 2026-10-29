@@ -26,11 +26,11 @@ Live am 10. und 11. November · mit Aufzeichnung · 39 Franken
 📋 BLOCK 2: Was du davon hast
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**Ein Gratis-Angebot, das benutzt wird.** Wer dein Tool ausfüllt, bekommt sofort ein Ergebnis und hat einen Grund, dir zu schreiben.
+**Ein Erlebnis statt einer Datei.** Deine Leute tippen sich durch ein paar Fragen, statt ein PDF herunterzuladen, das sie nie öffnen.
 
-**Du siehst, wer sich wofür interessiert.** Jede Antwort zeigt dir, welches Thema die Person gerade beschäftigt, und du weisst, worüber du mit ihr reden kannst.
+**Ein Ergebnis zu ihrem Problem.** Am Schluss steht sofort eine Antwort auf genau das, was deine Zielgruppe gerade beschäftigt.
 
-**Etwas, das dir gehört.** Dein Tool und deine Seite hängen an keiner Firma und an keinem Algorithmus.
+**Etwas, das kaum jemand hat.** In deinem Network verschenken fast alle E-Books und PDFs. Mit einem Tool, das man benutzt, fällst du auf.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 BLOCK 3: Stimme
@@ -44,7 +44,7 @@ Live am 10. und 11. November · mit Aufzeichnung · 39 Franken
 
 Du postest, du schreibst Leute an, du erzählst von deinem Produkt, und am Ende des Monats ist kaum etwas dabei herausgekommen.
 
-Ein eigenes Gratis-Angebot steht schon lange auf deiner Liste. Vielleicht hast du sogar ein PDF gebaut, ein paar Leute haben es geholt, und dann hast du nie wieder von ihnen gehört.
+Ein eigenes Gratis-Angebot steht schon lange auf deiner Liste. Vielleicht hast du sogar ein PDF gebaut, wie fast alle in deinem Network, ein paar Leute haben es geholt, und gelesen hat es kaum jemand.
 
 Und sobald es um Seiten, Formulare oder Technik geht, schiebst du es wieder auf, weil der Abend nach den Kindern dafür einfach zu kurz ist.
 
@@ -54,7 +54,7 @@ Und sobald es um Seiten, Formulare oder Technik geht, schiebst du es wieder auf,
 
 Mein erstes eigenes Angebot ist aus einer Liste entstanden, die ich vor der Geburt meiner dritten Tochter für meinen Mann geschrieben habe. Daraus wurden drei Schritte, um die To-do-Liste zu halbieren, und 30 Bestellungen in zwei Tagen, von Mamas, die mich vorher nicht kannten.
 
-Heute baue ich meine Gratis-Angebote als kleine Tools: einen Bio-Check, einen Stimm-Check, einen Produkt-Ideen-Finder. Die Leute bekommen sofort ein Ergebnis, und ich sehe, wofür sie sich interessieren.
+Heute baue ich meine Gratis-Angebote als kleine Tools: einen Bio-Check, einen Stimm-Check, einen Produkt-Ideen-Finder. Wer sie ausfüllt, erlebt etwas und hat am Schluss ein Ergebnis in der Hand.
 
 Gebaut habe ich sie mit Claude, ohne programmieren zu können. Genau das zeige ich dir im Workshop.
 
@@ -62,11 +62,11 @@ Gebaut habe ich sie mit Claude, ohne programmieren zu können. Genau das zeige i
 📋 BLOCK 6: Nach dem Workshop
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Am Freitag nach dem Workshop ist dein Tool online. Du schickst den Link in deine Story, und die ersten Ergebnisse kommen zurück, mit Fragen, auf die du antworten kannst.
+Am Freitag nach dem Workshop ist dein Tool online. Du schickst den Link in deine Story, und deine Leute bekommen ein Ergebnis zu ihrem Problem, statt einer Datei, die im Download-Ordner liegen bleibt.
 
 Deine Seite steht, und wer sich einträgt, landet auf deiner Liste oder schreibt dir direkt auf WhatsApp.
 
-Und wenn dich jemand fragt, was du eigentlich anbietest, hast du einen Link, der es zeigt.
+Dein Tool öffnet den Kontakt zu deiner Zielgruppe, und danach kannst du ganz natürlich von deinem Produkt erzählen, weil es der logische nächste Schritt ist. Wer ein Ergebnis zu seinem Problem bekommen hat, will oft auch den nächsten Schritt.
 
 🔘 Ich bin dabei
 

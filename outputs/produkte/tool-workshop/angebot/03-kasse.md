@@ -22,9 +22,11 @@ Werte aus `00-bauplan.md`.
 
 ### Kassentext zum Einsetzen
 
-**Überschrift:** Tool-Workshop: Dein Gratis-Angebot als Tool
+**Überschrift** (seit 29.10. abends, Patricias Wahl, nach Julias Pitch-Regel Zahl · Befehlsform · Wozu): Bau in zwei Abenden das Gratis-Angebot, das in deinem Network kaum jemand hat, damit der Kauf deines Produkts die logische Konsequenz ist, ohne dass du jemandem etwas verkaufen musst.
 
-**Unterzeile:** Live am 10. und 11. November, mit Aufzeichnung und drei Tagen Begleitung.
+**Unterzeile** (kleiner): Tool-Workshop · live am 10. und 11. November, 19:00 Uhr, mit Aufzeichnung und drei Tagen Begleitung.
+
+**Text darunter** (von Patricia selbst angepasst): Du baust live dein eigenes Gratis-Tool passend zu deinem Network in deiner Nische, mit Claude und ohne Programmieren, und die Seite, auf der man sich dafür einträgt.
 
 **Das bekommst du:**
 - Tag 1, Dienstag 10.11.: Du baust live dein eigenes Gratis-Tool zu deiner Nische, mit Claude, ohne Programmieren

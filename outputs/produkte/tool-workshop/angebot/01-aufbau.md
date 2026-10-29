@@ -17,7 +17,7 @@ Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung,
 
 | Teil | Inhalt | Ergebnis |
 |---|---|---|
-| 1 | Warum ein Tool statt PDF: Es liefert sofort ein Ergebnis und zeigt dir, wer sich wofür interessiert | Klarheit, was gebaut wird |
+| 1 | Warum ein Tool statt PDF: Fast alle im Network verschenken PDFs. Ein Tool gibt der Zielgruppe ein Erlebnis und ein Ergebnis zu ihrem Problem, öffnet den Kontakt und macht das eigene Produkt zum natürlichen nächsten Schritt | Klarheit, was gebaut wird |
 | 2 | Von der Nische zur Tool-Idee: Welche Frage beantwortet dein Tool? Formate: Test · Check · Rechner · Planer · Generator | eine Tool-Idee in einem Satz |
 | 3 | Live bauen im Claude-Chat: Auftrag schreiben, Fragen festlegen, Auswertung nach Regeln, Ergebnis mit nächstem Schritt | ein laufendes Artifact |
 | 4 | Feinschliff: Farben, Texte in deiner Stimme, Knopf am Schluss | fertiges Tool |
