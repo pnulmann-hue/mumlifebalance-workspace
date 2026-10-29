@@ -254,6 +254,20 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[willkommensmail]]
 - [[workbook]]
 
+### 📁 tool-workshop
+
+- [[00-bauplan]]
+- [[00-paket]]
+- [[01-aufbau]]
+- [[02-salespage]]
+- [[03-kasse]]
+- [[04-mails]]
+- [[05-storys]]
+- [[06-feed]]
+- [[07-automation]]
+- [[08-anzeigen]]
+- [[09-einrichten]]
+
 ### 📁 vom-networkwissen-zur-digitalen-produktwelt
 
 - [[00-UEBERSICHT-UND-NAECHSTE-SCHRITTE]]
