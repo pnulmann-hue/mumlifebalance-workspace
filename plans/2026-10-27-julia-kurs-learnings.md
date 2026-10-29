@@ -222,3 +222,6 @@ Je Schritt genau ein Skill. Die Landkarte zeigt, welche es schon gibt
 
 - Kosten: das Lesen der rund 17 MB ist der grosse Posten — kursweise, über mehrere Sitzungen.
 - Neue Kurse später: eine Learnings-Datei dazuschreiben, Register und betroffene Skills nachziehen.
+
+
+✅ **29.10.: die 5 MAU-Videos** mit den `h`-Schlüsseln aus den Lektionen (Feld `schluessel` in `transkripte-abgleich.json`) lokal abgeschrieben, 71 Punkte in `minikurse-umsatzbooster.md` (26 Lektionen), in 12 Themenbücher nachgetragen, Bibliothek neu hochgeladen (`_index` V4).
