@@ -70,6 +70,24 @@ Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung,
 >
 > Es soll ohne API und ohne Anmeldung laufen. Farben: [Farben]. Schreib die Texte in Du-Form, freundlich, wie ich mit einer Freundin rede.
 
+## Seitenvorlage für Claude (Beilage Tag 2)
+
+> Bau mir eine Eintrageseite für mein Gratis-Tool als eine einzige HTML-Datei, die ich auf Netlify hochladen kann.
+>
+> Mein Tool: [Name] · Link: [Link zum Tool]
+>
+> Überschrift: das Ergebnis, das man mit dem Tool bekommt, in einem Satz.
+>
+> Darunter drei kurze Sätze: was man ausfüllt, was man danach weiss, wie lange es dauert.
+>
+> Ein Foto von mir: [Foto per Büroklammer anhängen] mit zwei Sätzen, wer ich bin.
+>
+> Weg A: ein Knopf „[Knopftext]“ zu meinem WhatsApp: https://wa.me/[Nummer ohne +]?text=[Text]
+>
+> Weg B: ein Eintrage-Formular. Setz dafür an diese Stelle genau diesen Code ein und verändere ihn nicht: [Formular-Code aus deinem Mailprogramm]
+>
+> Farben: [Farben]. Am Handy gut lesbar, Texte in Du-Form, freundlich, wie ich mit einer Freundin rede. Unten Impressum und Datenschutz als Links: [Links].
+
 ## Nach den Live-Tagen (Patricias Entscheid 29.10.)
 
 Der Workshop wird nach dem 11.11. als **Aufzeichnung** weiterverkauft, wie es Julia macht. Im Workshop und danach wird auf die **Digitale Produktwelt** gepitcht, KI-Kurs und Mum Business Academy werden erwähnt. Der Kasten im Nischengenerator stellt sich am 12.11. von selbst auf „Aufzeichnung“ um. ⚠️ Offen: Preis der Aufzeichnung, ob die Begleitung wegfällt, Texte von Kasse und Anmeldeseite auf Aufzeichnung umstellen.
