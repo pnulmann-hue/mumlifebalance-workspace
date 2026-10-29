@@ -22,7 +22,7 @@ Live am 10. und 11. November · mit Aufzeichnung · 39 Franken
 
 🔘 Ich bin dabei
 
-**Seit 29.10. abends steht oben:** Für Mamas im Network, die sich daneben etwas Eigenes aufbauen. Zuerst findest du dein eigenes Thema, dann baust du das Tool dazu. (Das unterscheidet den Workshop von gleich gebauten Angeboten in der Nische: Zielgruppe Network-Mamas und der Schritt mit dem eigenen Thema davor.)
+**Seit 29.10. abends (Aufbau nach dem Vorbild einer Mentorinnen-Seite, Patricia: nicht als „etwas Eigenes aufbauen“ definieren):** Überschrift „Bau dir ein Gratis-Tool, das dir neue Kontakte bringt“, für dein Network oder dein eigenes Angebot. Quelle der Seite ist `scripts/salespage-design/tool-workshop-body.html`; dieser Text hier ist der ältere Stand. (Das unterscheidet den Workshop von gleich gebauten Angeboten in der Nische: Zielgruppe Network-Mamas und der Schritt mit dem eigenen Thema davor.)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 BLOCK 2: Was du davon hast

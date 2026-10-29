@@ -15,7 +15,7 @@ tags: [produkt]
 | **Profil** | Mentoring |
 | **Art** | Minikurs (Live-Workshop) |
 | **Preis** | **39 CHF** (Minikurs-Preis, Patricia 29.10.) |
-| **Für wen** | Frauen im Network Marketing, meist Mamas, die sich neben dem Network etwas Eigenes aufbauen wollen und kein Gratis-Angebot haben, oder eines, das niemand benutzt |
+| **Für wen** | Frauen im Network Marketing, meist Mamas, ob sie nur ihr Network haben oder daneben ein eigenes Angebot (Patricia 29.10.: Workshop soll auch Leadmagnet für reine Network-Kundinnen sein), die kein Gratis-Angebot haben, oder eines, das niemand benutzt |
 | **Schmerz davor** | Sie arbeitet viel für das Network und es kommt wenig zurück. Ein eigenes Gratis-Angebot fehlt oder liegt als PDF in Download-Ordnern, und niemand meldet sich. Technik schreckt ab. |
 | **Veränderung** | Sie hat ein eigenes kleines Tool zu ihrer Nische online und eine Seite, auf der man sich dafür einträgt. Statt eines PDFs, wie es fast alle in ihrem Network verschenken, gibt sie ihrer Zielgruppe ein Erlebnis und sofort ein Ergebnis zu einem Problem, das diese hat. Das Tool öffnet den Kontakt, und ihr Produkt wird danach ganz natürlich zum nächsten Schritt (Patricia 29.10.). |
 | **Der Weg** | 1 · Nische klären (Nischengenerator) · 2 · Tool bauen mit Claude, als Artifact ohne API · 3 · Seite bauen mit AC-Formular oder WhatsApp-Link (Netlify) · 4 · online stellen und zeigen |
