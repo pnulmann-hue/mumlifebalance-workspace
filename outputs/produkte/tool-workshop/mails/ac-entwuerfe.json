@@ -1,0 +1,37 @@
+{
+ "A1-anmeldung-offen.html": {
+  "kampagne": 852,
+  "nachricht": "710",
+  "name": "Tool-Workshop A1 · Anmeldung offen (Fr 30.10.)"
+ },
+ "A2-nicht-technisch.html": {
+  "kampagne": 853,
+  "nachricht": "711",
+  "name": "Tool-Workshop A2 · Nicht technisch (Fr 6.11.)"
+ },
+ "A3-letzter-tag.html": {
+  "kampagne": 854,
+  "nachricht": "712",
+  "name": "Tool-Workshop A3 · Letzter Tag (Mo 9.11.)"
+ },
+ "B0-willkommen.html": {
+  "kampagne": 855,
+  "nachricht": "713",
+  "name": "Tool-Workshop B0 · Willkommen (sofort nach Kauf)"
+ },
+ "B1-morgen.html": {
+  "kampagne": 856,
+  "nachricht": "714",
+  "name": "Tool-Workshop B1 · Morgen geht's los (Mo 9.11., 18:00)"
+ },
+ "B2-tag-2.html": {
+  "kampagne": 857,
+  "nachricht": "715",
+  "name": "Tool-Workshop B2 · Heute die Seite (Mi 11.11. morgens)"
+ },
+ "B3-und-jetzt.html": {
+  "kampagne": 858,
+  "nachricht": "716",
+  "name": "Tool-Workshop B3 · Und jetzt? (Sa 14.11.)"
+ }
+}
