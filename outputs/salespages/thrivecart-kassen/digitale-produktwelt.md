@@ -41,3 +41,13 @@ Instagram-Kundenmaschine **199 statt 333**, „Diesen Preis gibt es nur hier an 
 - 🚨 **Bleibt:** die Kopfzeile „täglich CHF 200 +“ und der Satz zum Angestelltenjob. Ergebnis-Zahlen
   in ihren Headlines werden nicht weggestrichen (Patricia 22.10., nach Julia).
 - FAQ „Live-Calls?“ sagt schon richtig „Nein“; Telegram-Gruppe steht drin.
+
+## Platzhalter-Prüfung (29.10.2026, abends)
+
+Auf der Live-Kasse gegengeprüft, nichts geändert:
+
+- **8 × „Enter your bullet points here..“** stehen in einer Spalte mit der Klasse `display-none`. Die
+  Regel dazu gilt ohne Media-Query, also auf jedem Gerät. Kundinnen sehen sie nie. Bleibt liegen.
+- **„ine riesige Reichweite“** ist kein Tippfehler. Das „E“ steht in einem eigenen Element, und auf der
+  Seite liest man „Eine riesige Reichweite“.
+- **„Lorem“** steht nicht mehr auf der Seite (0 Treffer).
