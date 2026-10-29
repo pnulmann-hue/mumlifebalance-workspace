@@ -267,6 +267,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[07-automation]]
 - [[08-anzeigen]]
 - [[09-einrichten]]
+- [[gruppenbeschreibung]]
 
 ### 📁 vom-networkwissen-zur-digitalen-produktwelt
 
