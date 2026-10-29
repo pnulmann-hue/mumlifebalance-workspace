@@ -9,7 +9,7 @@ Was von Hand angelegt wird. Reihenfolge = Dringlichkeit, weil die Kasse sofort o
 ## Heute
 
 - [ ] **Entscheide bestätigen** aus `00-bauplan.md` (🟠): Bump Story-Generator 17 · Upsell Begleitung 27 · Stichwort NISCHE · Gruppe (Telegram?)
-- [x] **Nischengenerator öffentlich:** https://mlb-nischengenerator.netlify.app (Netlify, 29.10.). Bei Änderungen: nischengenerator.html ändern, netlify-nischengenerator/index.html nachziehen, auf Netlify neu hochladen.
+- [x] **Nischengenerator öffentlich:** https://mlb-nischengenerator.vercel.app (KI, nach dem Kurs „Finde dein Thema“, Quelle `scripts/tool-ideen/`). Die alte regelbasierte Fassung liegt als Workshop-Beispiel auf Netlify.
 - [ ] **ThriveCart-Produkt** „Tool-Workshop“, 39 CHF, AGB-Link `https://mumlifebalance.ch/agb/`, Kasse live (Claude kann es in deinem Chrome anlegen, sobald du Ja sagst)
 - [ ] Kassentext aus `03-kasse.md` (Zeitplan, Bump, Upsell)
 - [ ] **ThriveCart Learn:** Kurs „Tool-Workshop“ mit den Lektionen aus `01-aufbau.md` (Aufzeichnungen kommen nach dem 10./11.)
@@ -40,9 +40,9 @@ Was von Hand angelegt wird. Reihenfolge = Dringlichkeit, weil die Kasse sofort o
 - [ ] Story-Generator-Kasse existiert noch nicht → ohne sie keinen Bump einrichten
 - [ ] Hat die Digitale Produktwelt im November/Dezember einen Termin? Mail B3 braucht Link und Zeitraum
 
-## Tool-Ideen-Generator (seit 29.10.)
+## Nischengenerator mit Tool-Ideen (seit 29.10.)
 
-- [x] Live: https://mlb-tool-ideen.vercel.app (Tag 0€ Tool-Ideen 108, 10 Durchgänge je Mail)
-- [ ] Automation in AC am Tag **0€ Tool-Ideen** anlegen: Auslöser Tag hinzugefügt, eine Mail = Entwurf „Tool-Ideen C0 · Willkommen“ (Kampagne 859) als Vorlage. Nach dem 9.11. den Workshop-Absatz austauschen.
+- [x] Tool-Ideen sind im Nischengenerator aufgegangen (zweiter Schritt je Thema), Tag 0€ Nischengenerator 108, 10 Durchgänge je Mail
+- [ ] Automation in AC am Tag **0€ Nischengenerator** anlegen: Auslöser Tag hinzugefügt, eine Mail = Entwurf „Tool-Ideen C0 · Willkommen“ (Betreff „Dein Thema, und was du jetzt damit machst“) (Kampagne 859) als Vorlage. Nach dem 9.11. den Workshop-Absatz austauschen.
 - [ ] Link in Storys und in der gespeicherten Instagram-Antwort zu NISCHE ergänzen
 - [x] Nischengenerator auf Netlify übernommen

@@ -5,8 +5,8 @@ tags: [produkt]
 # Paket · Tool-Workshop (Stand 29.10.2026)
 
 ```
-✓ Freebie              Nischengenerator · https://mlb-nischengenerator.netlify.app
-✓ Tool-Ideen            https://mlb-tool-ideen.vercel.app (KI, Mail → Tag 0€ Tool-Ideen)
+✓ Freebie              Nischengenerator · https://mlb-nischengenerator.vercel.app
+✓ (Nischengenerator ist seit 29.10. abends die KI-Fassung nach dem Kurs „Finde dein Thema“, mit Tool-Ideen, Mail → Tag 0€ Nischengenerator 108)
 ✓ Bauplan              00-bauplan.md
 ✓ Kursaufbau           01-aufbau.md (Vorbereitung, Tag 1, Tag 2, Begleitung, Claude-Vorlage)
 ✓ Anmeldeseite         02-salespage.md · gestaltet: outputs/salespages/tool-workshop/index.html
