@@ -4,6 +4,11 @@ tags: [content, framework, captions]
 
 # Caption-Formeln — Instagram Karussells
 
+> 🧭 **Seit 29.10.2026 gelten die Pflichtregeln aus `.claude/skills/content/SKILL.md`, Abschnitt „Die Pflichtregeln“.**
+> Diese Datei ist ein Baukasten mit Strukturen und Beispielen. Wo sie etwas anderes sagt — mehrere Aufrufe,
+> 5 bis 10 Hashtags, „Folg mir“, „Stell dir vor“, „Kennst du das?“ —, gilt `/content`: **genau ein Aufruf, das
+> Stichwort nur am Schluss, höchstens 5 Hashtags mit `#mamabusiness`.** Die betroffenen Stellen sind unten markiert.
+
 > **PFLICHT vor jedem Text-Output:** [`ki-phrasen-blackliste.md`](ki-phrasen-blackliste.md) — 5-Punkte-Pflicht-Prüfung gegen KI-Floskeln. Bei Konflikt mit Julia-Trost-Templates: **Blackliste gewinnt.** Beispiel: „Stell dir vor..." steht auf der Blackliste und darf NICHT verwendet werden — auch nicht als Visualisierungs-Trigger aus dem Julia-Trost-Sync. Stattdessen: direkt in die Szene einsteigen („Du sitzt um 23 Uhr am Laptop…").
 
 Fünf bewährte Caption-Strukturen für Mum Life Balance.
@@ -117,13 +122,13 @@ Abwechselnd einsetzen — nicht immer denselben CTA:
 - **DM:** "Schreib mir STARTER und ich schick dir den ersten Schritt."
 - **Link in Bio:** "Den Link findest du in meiner Bio."
 - **Shares:** "Schick das einer Mama, die das hören muss."
-- **Folgen:** "Folg mir für mehr Business-Tipps, die in den Mama-Alltag passen."
+- ~~**Folgen:** "Folg mir …"~~ — gestrichen: „Folge mir“ floppt bei Patricia und bei der Nische (gemessen 24.09. und 29.10.)
 
 ---
 
 ## Hashtag-Strategie
 
-Pro Post 5-10 Hashtags, Mix aus:
+**Höchstens 5 Hashtags, `#mamabusiness` als Anker** (Pflichtregel in `/content`). Aus diesem Vorrat wählen:
 - 2-3 Nischen-Hashtags (z.B. #mamaimnetworkmarketing #nmstrategie)
 - 2-3 Themen-Hashtags (z.B. #onlinebusinessmama #expertenbusiness)
 - 2-3 Reichweiten-Hashtags (z.B. #selbstständigemama #businessmom)
@@ -200,7 +205,9 @@ Julia: „Das sind die Beiträge die oft nicht gerne gepostet werden, weil man m
 7. Stichwörter (OHNE #) + Hashtags (separat)
 ```
 
-**Neu: Stichwörter ≠ Hashtags.** 4-5 themenrelevante Stichwörter OHNE #-Zeichen UNTER die Caption, plus Hashtags separat. **Mehrfach-CTAs erlaubt** solange aufs gleiche Produkt.
+**Neu: Stichwörter ≠ Hashtags.** 4-5 themenrelevante Stichwörter OHNE #-Zeichen UNTER die Caption, plus Hashtags separat.
+
+🚫 **Diese Formel gilt bei Patricia nur abgewandelt:** genau **ein** Aufruf und das Stichwort nur am Schluss. Punkt 2, 3 und 6 werden zu einem einzigen Aufruf am Ende zusammengezogen. Mehrfach-CTAs sind nicht erlaubt (Pflichtregel in `/content`, seit 19.09. bzw. 22.10.2026).
 
 ### Einwandbehandlung in Captions (proaktiv, nicht erst im Sales-Call)
 
@@ -265,9 +272,9 @@ Julia: „Einwände VOR dem Sales Call auflösen — in Story, Caption, Salespag
 
 ### NEUE CTA-Varianten (über bestehende hinaus)
 
-- **Visualisierungs-CTA:** „Schliess kurz die Augen — stell dir vor, [Transformation]. Wenn du das willst: [Keyword]."
+- ~~**Visualisierungs-CTA:** „… stell dir vor …“~~ — gestrichen, „Stell dir vor“ steht auf der Blackliste
 - **Einwand-CTA:** „Noch unsicher? Die 3 häufigsten Fragen findest du als Link in Bio."
-- **Kennst-du-das-CTA:** „Kennst du den Gedanken? Dann schreib mir ‚ECHT1' — ich zeig dir den ersten Schritt."
+- ~~**Kennst-du-das-CTA**~~ — gestrichen, „Kennst du das?“ ist gesperrt
 - **Aufzeichnung-CTA** (gegen Zeit-Einwand): „Keine Zeit heute Abend? Gibt's als Aufzeichnung — lebenslang Zugriff."
 - **IKEA-CTA:** „Ich arbeite gerade daran — sag mir: Titel A oder B?"
 - **Mini-Mehrwert-CTA:** „Schreib mir [Keyword] und ich schick dir die Vorlage, bevor der Kurs überhaupt live ist."
