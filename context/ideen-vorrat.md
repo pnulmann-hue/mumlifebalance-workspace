@@ -122,7 +122,22 @@ Gehört in die Jahresplanung 2027, nicht in den Jahresplan 2026 im Cockpit (Patr
   **Hook-Tool aus der Content-Box** (ihr eigenes Produkt: 30 Hook-Vorlagen, 17 €, läuft vor allem als Bump; Seite /content-box/, Hook-Bibliothek-PDF `outputs/hook-bibliothek.pdf`): sie gibt Thema/Produkt ein bzw. wählt es → bekommt die passenden Vorlagen aus den 30, ausgefüllt mit ihren Begriffen. Eigenes Material, darf also raus. Nicht den Hook-Skill verwenden (enthält zugekauftes Material) und nicht Julias Hook-Generator nachbauen.
   Einsatz laut Julias Learnings: als Leadmagnet, Bump oder Upsell (z. B. Bump an der Storyideen-Kasse) oder als Bonus im Kurs. Vorlage für den Bau: KI Tool Workshop (Themenbuch KI, „Eigene Tools bauen und verkaufen“).
 
+- **[Funnel · Aufwand klein]** Rubbellos auf der Homepage (Patricia 29.10.2026: *„das lassen wir jetzt mal. aber idee für später speichern?“*)
+  Vorbild: Homepage einer Mentorin (Befund `outputs/marktrecherche/2026-10-29-julia-ki-tool-funnel.md`). Fenster nach 2 Sekunden, einmal je Gerät (im Browser gemerkt), Feld freirubbeln (Canvas), ab 45 % erscheint das Geschenk mit Knopf zur Eintragungsseite.
+  Für Patricia: Geschenk = Nischengenerator, Knopf auf `/nischengenerator/`. Skript nicht in den Seiteninhalt (Firewall blockt), sondern als Datei auf Vercel (Projekt `tool-ideen`) und mit einer Zeile auf der Homepage einbinden; wo die Zeile in Elementor hingehört, beim Bauen prüfen.
+
+- **[Funnel · Aufwand mittel, braucht ein Video von ihr]** Danke-Seite mit Training-Video (Patricia 29.10.2026: *„voll. auch das lassen wir mal“*)
+  Vorbild: Danke-Seite nach dem Freebie ist ein Video (dort 35 Minuten) mit „Du bist drin, schau das Training, bevor du den Guide liest“, darunter der Knopf zum Workshop. Aufbau übertragbar, Wortlaut nicht, Lebensstil-Teil (Porsche, Yacht, Dubai) passt nicht zur Marke.
+  Für Patricia: 10–15 Minuten Training auf `/nischengenerator-danke/`, eigener Aufbau mit ihrer Geschichte (Hybridmodell, eigenes Thema neben dem Network), Tool-Ideen live vorführen, am Schluss der Tool-Workshop. Skript schreibt Claude, Patricia nimmt auf.
+
+- **[Produkt · Aufwand mittel · später]** Bezahl-Durchgänge für KI-Tools (Tokens) (Patricia 29.10.2026 zu einem Nischengenerator, bei dem man 10 Durchgänge für 1 € nachkaufen kann)
+  Mechanik laut Video der Mentorin: Registrierung mit Mail, wenige Durchgänge gratis, danach Pakete für rund 1 €. Ihre Umsatzangabe dazu ist eine Behauptung im Video.
+  Für Patricia: nicht beim Nischengenerator (Freebie, Job = Kontakte), eher bei einem Tool, das sie selbst verkauft (Story-Generator). Technik: ThriveCart-Produkt „10 Durchgänge“ + Webhook auf den Vercel-Dienst, der das AC-Feld „Nischengenerator Durchgänge“ bzw. ein eigenes Guthaben-Feld erhöht.
+
 ## Erledigt
+
+- **[Funnel · Aufwand klein]** Freebie-Übersicht auf der Website (29.10.2026)
+  WP 4443 `/angebote/gratis/` (Entwurf), gebaut von `scripts/wordpress/deploy-gratis.mjs`: Tools, Challenges, Guides mit je einem Satz und Knopf. Nach dem Veröffentlichen ins Menü unter „Angebote“ hängen.
 
 - **[Technik · Aufwand mittel]** ThriveCart anbinden
   Am 11.09.2026 angebunden: Produkte, Bumps, Upsells und Downsells kommen jetzt automatisch.

@@ -22,6 +22,8 @@ Live am 10. und 11. November · mit Aufzeichnung · 39 Franken
 
 🔘 Ich bin dabei
 
+**Seit 29.10. abends steht oben:** Für Mamas im Network, die sich daneben etwas Eigenes aufbauen. Zuerst findest du dein eigenes Thema, dann baust du das Tool dazu. (Das unterscheidet den Workshop von gleich gebauten Angeboten in der Nische: Zielgruppe Network-Mamas und der Schritt mit dem eigenen Thema davor.)
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 BLOCK 2: Was du davon hast
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
