@@ -12,7 +12,7 @@ Genau das ist der Unterschied zu einem Chat: ein Chat muesste alles fragen.
 """
 import io, os, sys, json, datetime
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import telegram
+import kochbot
 
 # Windows-Konsole ist cp1252 und kann weder Emoji noch Umlaute ausgeben.
 if hasattr(sys.stdout, "reconfigure"):
@@ -44,19 +44,22 @@ def naechste_woche(heute=None):
 
 def nachricht(heute=None):
     mo, so = naechste_woche(heute)
-    kopf = "Essensplan f\u00fcr KW %d (%s. bis %s. %s)" % (
+    # Der Anfang muss kochbot.KOPF + " vier Fragen" sein: daran erkennt der
+    # Kochassistent die Antworten und antworten-lesen.py den Zeitpunkt der Frage.
+    kopf = "vier Fragen f\u00fcr KW %d (Di %s. bis Mo %s. %s)" % (
         kw_von(mo), mo.day, so.day,
         ["Januar","Februar","M\u00e4rz","April","Mai","Juni","Juli","August",
          "September","Oktober","November","Dezember"][so.month - 1])
     return (
-        "\U0001f37d  %s\n\n"
-        "Vier Fragen, dann baue ich ihn. Antworte einfach in einer Nachricht \u2014 "
+        "%s %s\n\n"
+        "Antworte einfach hier, gern auch als Sprachnachricht \u2014 "
         "in Stichworten reicht.\n\n%s\n\n"
         "Den Rest weiss ich: sechs Portionen, deine Makros, kein Spinat, kein Feta, "
         "Fisch nur kalt als Thunfisch, die Aktionen bei der Migros und was in den "
         "letzten vier Wochen schon dran war.\n\n"
+        "Morgen fr\u00fch baue ich den Plan, er steht dann in der Familien-App. "
         "Wenn du nicht antwortest, plane ich einfach eine normale Woche."
-        % (kopf, "\n".join(FRAGEN)))
+        % (kochbot.KOPF, kopf, "\n".join(FRAGEN)))
 
 
 def main():
@@ -67,16 +70,16 @@ def main():
         print(text)
         print("\n(Probelauf \u2014 nichts geschickt.)")
         return
-    mid = telegram.senden(text)
+    gefragt = kochbot.senden(text)
     io.open(MERKZETTEL, "w", encoding="utf-8").write(json.dumps({
-        "gefragt_am": datetime.datetime.now().isoformat(timespec="seconds"),
-        "message_id": mid,
+        "gefragt_am": gefragt,
+        "weg": "kochassistent",
         "kw": kw_von(mo),
         "von": mo.isoformat(),
         "bis": so.isoformat(),
         "beantwortet": False,
     }, ensure_ascii=False, indent=2))
-    print("Fragen f\u00fcr KW %d geschickt (Nachricht %d)." % (kw_von(mo), mid))
+    print("Fragen f\u00fcr KW %d \u00fcber den Kochassistenten geschickt." % kw_von(mo))
     print("Merkzettel:", MERKZETTEL)
 
 

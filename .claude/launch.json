@@ -306,6 +306,18 @@
       "port": 4402
     },
     {
+      "name": "angebot-knopfdruck",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4416",
+        "--directory",
+        "outputs/angebot-knopfdruck"
+      ],
+      "port": 4416
+    },
+    {
       "name": "doterra-angebote",
       "runtimeExecutable": "python",
       "runtimeArgs": [
@@ -336,7 +348,9 @@
         "C:/Users/pnulm/familie/lokal.mjs"
       ],
       "port": 4415,
-      "env": { "PORT": "4415" }
+      "env": {
+        "PORT": "4415"
+      }
     },
     {
       "name": "oel-kompass",
@@ -361,6 +375,58 @@
         "4411"
       ],
       "port": 4411
+    },
+    {
+      "name": "jahresplaner",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/produkte/jahresplanung",
+        "-l",
+        "4412"
+      ],
+      "port": 4412
+    },
+    {
+      "name": "story-generator",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "scripts/story-generator/dev-server.mjs"
+      ],
+      "port": 4415
+    },
+    {
+      "name": "story-generator-lp",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/salespages/story-generator",
+        "-l",
+        "4416"
+      ],
+      "port": 4416
+    },
+    {
+      "name": "tool-ideen",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "scripts/tool-ideen/dev-server.mjs"
+      ],
+      "port": 4413
+    },
+    {
+      "name": "nischengenerator-lp",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/salespages/nischengenerator",
+        "-l",
+        "4417"
+      ],
+      "port": 4417
     }
   ]
 }

@@ -5,8 +5,15 @@ description: "Instagram-Caption nach Patricias exakten Vorgaben schreiben (Zeita
 Du schreibst mir eine Instagram-Caption — nach **meinen exakten Vorgaben**, in
 **meiner Stimme**. Nichts Generisches, nichts Erfundenes.
 
+> 🧭 **Seit 29.10.2026 stehen die Pflichtregeln für Hook und Caption nur noch an einer
+> Stelle:** Abschnitt „Die Pflichtregeln“ in `.claude/skills/content/SKILL.md` (fünf
+> Fragen, Länge, Fragen, Stichwort nur am Schluss, ein Aufruf, höchstens 5 Hashtags,
+> „Nicht X, sondern Y“ überall verboten). Dieser Skill liefert die Caption-Technik.
+> **Sagt hier oder in einer der Dateien unten etwas anderes, gilt `/content`.**
+
 ## Zuerst lesen (Pflicht — meine gespeicherten Infos)
 
+- `.claude/skills/content/SKILL.md`, Abschnitt **„Die Pflichtregeln“** — zuerst
 - `context/caption-formeln.md` — meine 7 Caption-Formeln + Kaufpsychologie-Trigger + „Ziel hinter dem Ziel" + Einwandbehandlung + Power-Phrasen
 - `context/content-radar-juni-2026.md` — die Caption-Pflichtregeln (Performance-getestet)
 - `context/ki-phrasen-blackliste.md` — Floskel-Verbote (gewinnt bei Konflikt IMMER)

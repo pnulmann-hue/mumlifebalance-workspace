@@ -184,15 +184,18 @@ Remotion gebaut, nicht in textebene.py.**
 
 ### Was in Remotion noch nachgebaut werden muss
 
-- [ ] **Kelsie-Textebene** — zwei Zeilen auf Stoss, Poppins Light klein oben /
-      Bold gross unten, durchscheinend mit Farbverlauf, Einblendung startet auf dem
-      gesprochenen Wort, grosses Wort **hinter** Patricia (Freistellung noetig)
-- [ ] **Wortgenaue Untertitel** — aktives Wort orange, weichen Einblendungen aus
-- [ ] **Auto-Zoom** — jeder zweite Clip Fahrt hinein, dazwischen harter Sprung
+- [x] **Kelsie-Hook** (Stil B, Wort fuer Wort mit Verlauf) — freigegeben 28.10.2026
+- [x] **Wortgenaue Untertitel** — aktives Wort orange, weichen Einblendungen aus — freigegeben 28.10.2026
+- [x] **Auto-Zoom** — jeder Clip faehrt hinein, bis 115 %, Ziel oberes Drittel (Gesicht) — freigegeben 28.10.2026
+- [x] **Knallwort-Einblendungen** mit Pop, unter dem Kinn — freigegeben 28.10.2026
+- [ ] **Grosses Wort HINTER Patricia** — braucht die Freistellung
 - [ ] **Freistellung der Person** (bisher `npx hyperframes remove-background`)
 
-Solange ein Punkt offen ist, laeuft dieser Teil weiter ueber `textebene.py`.
 Abgehakt wird erst, wenn Patricia das Ergebnis gesehen und freigegeben hat.
+**Erstes Reel komplett ueber Remotion:** `video/output/2026-10-27-vier-kinder-frage-final/`
+(Sprechreel „Wie machst du das mit vier Kindern?“, 80 s) — freigegeben am 28.10.2026.
+Neue Sprechreels laufen ab jetzt ueber `scripts/grafik/`. `textebene.py` bleibt nur noch
+fuer das Wort hinter Patricia und fuer die B-Rolls, bis die Freistellung nachgebaut ist.
 
 🚨 **Und der Grund fuer die Umstellung — Regel 10 des Remotion-Skills:**
 *rendern, Standbilder ziehen, hinschauen, korrigieren, neu rendern. Nie einen

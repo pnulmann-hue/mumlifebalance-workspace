@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nischengenerator · Mum Life Balance</title>
+<meta name="description" content="Finde dein eigenes Thema im Network, deinen Experten-Satz und die Idee für dein Gratis-Tool. Nach der Methode von Patricia Ulmann, Mum Life Balance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap">
+<style>
+/* Creme-Grund, Dunkelblau trägt, Orange nur am Ziel. */
+:root {
+  --bg: #f1ecdd; --surface: #fbf8f0; --ink: #0c1c30; --muted: #4f5d68; --line: #dcd3bd;
+  --blue: #29556d; --petrol: #12828c; --orange: #dc822e; --on-strong: #f1ecdd; --chip: #e9e2cf;
+  --warn: #9a3412;
+  --display: "Philosopher", Georgia, serif;
+  --body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1d2a; --surface: #172938; --ink: #f1ecdd; --muted: #b3bcc2; --line: #2c4152;
+    --blue: #7fb3c9; --petrol: #4fb7bf; --orange: #e9964a; --on-strong: #0f1d2a; --chip: #1f3546; --warn: #f0a37a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1d2a; --surface: #172938; --ink: #f1ecdd; --muted: #b3bcc2; --line: #2c4152;
+  --blue: #7fb3c9; --petrol: #4fb7bf; --orange: #e9964a; --on-strong: #0f1d2a; --chip: #1f3546; --warn: #f0a37a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.55;
+  padding: 28px max(16px, env(safe-area-inset-right, 0px)) 56px max(16px, env(safe-area-inset-left, 0px));
+}
+.wrap { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 26px; }
+header { display: flex; flex-direction: column; gap: 8px; }
+.eyebrow { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--petrol); font-weight: 700; }
+h1 { font-family: var(--display); font-size: clamp(34px, 8vw, 50px); line-height: 1.05; margin: 0; text-wrap: balance; color: var(--blue); }
+.lead { margin: 0; color: var(--muted); max-width: 34em; }
+.steps { display: flex; gap: 6px; }
+.steps span { flex: 1; height: 5px; border-radius: 3px; background: var(--line); }
+.steps span.on { background: var(--blue); }
+
+.karte { display: flex; flex-direction: column; gap: 16px; background: var(--surface); border: 1.5px solid var(--line); border-radius: 18px; padding: 22px; }
+.karte h2 { font-family: var(--display); font-size: 27px; line-height: 1.2; margin: 0; text-wrap: balance; }
+.quelle { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: var(--petrol); }
+.hilfe { margin: -6px 0 0; font-size: 15px; color: var(--muted); }
+.hilfe ul { margin: 6px 0 0; padding-left: 20px; }
+label.feld { display: flex; flex-direction: column; gap: 6px; font-weight: 600; }
+textarea, input[type="text"], input[type="email"] {
+  font: inherit; color: var(--ink); background: var(--bg); border: 1.5px solid var(--line); border-radius: 12px;
+  padding: 12px 14px; width: 100%;
+}
+textarea { min-height: 120px; resize: vertical; }
+textarea:focus, input:focus { outline: 3px solid var(--orange); outline-offset: 1px; border-color: var(--blue); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: inherit; font-size: 15px; cursor: pointer; border-radius: 999px; padding: 8px 14px; background: var(--bg); color: var(--ink); border: 1.5px solid var(--line); }
+.chip[aria-pressed="true"] { background: var(--blue); color: var(--on-strong); border-color: var(--blue); }
+.ja { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; color: var(--muted); font-weight: 400; }
+.ja input { width: 20px; height: 20px; margin-top: 2px; flex: none; accent-color: var(--blue); }
+.topf { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.nav { display: flex; gap: 10px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.btn {
+  font: inherit; font-weight: 700; cursor: pointer; border-radius: 999px; padding: 14px 28px; border: 0;
+  background: var(--blue); color: var(--on-strong); text-decoration: none; display: inline-block; text-align: center;
+}
+.btn:focus-visible, .klein:focus-visible, .chip:focus-visible, a:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+.btn.orange { background: var(--orange); color: #0c1c30; }
+.btn.leise { background: transparent; color: var(--blue); padding-inline: 4px; }
+.fehler { margin: 0; color: var(--warn); font-weight: 600; }
+.zart { margin: 0; font-size: 15px; color: var(--muted); }
+a { color: var(--blue); }
+
+.laden { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 30px 0; text-align: center; color: var(--muted); }
+.kreis { width: 42px; height: 42px; border-radius: 50%; border: 4px solid var(--line); border-top-color: var(--blue); animation: dreh 1s linear infinite; }
+@keyframes dreh { to { transform: rotate(360deg); } }
+
+.ergebnis { display: flex; flex-direction: column; gap: 20px; }
+.ergebnis > h2 { font-family: var(--display); font-size: 30px; margin: 0; color: var(--blue); }
+.spiegel { margin: 0; font-size: 18px; }
+.idee { background: var(--surface); border: 1.5px solid var(--line); border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 12px; }
+.idee.erste { border: 2px solid var(--orange); }
+.kopf { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.nr { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+.idee.erste .nr { color: var(--orange); }
+.idee h3 { font-family: var(--display); font-size: 25px; line-height: 1.2; margin: 0; }
+.satz { font-family: var(--display); font-size: 22px; line-height: 1.35; margin: 0; padding: 14px 16px; border-left: 4px solid var(--petrol); background: var(--bg); border-radius: 0 12px 12px 0; }
+.marke { font-size: 13px; font-weight: 600; border-radius: 999px; padding: 3px 11px; background: var(--chip); color: var(--ink); }
+.marke.ki { background: var(--blue); color: var(--on-strong); }
+.teil b { display: block; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); margin-bottom: 2px; }
+.teil p { margin: 0; }
+.teil ul { margin: 0; padding-left: 20px; }
+.knoepfe { display: flex; flex-wrap: wrap; gap: 10px; }
+.klein { font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; background: var(--chip); color: var(--ink); border: 0; border-radius: 999px; padding: 9px 18px; }
+.klein.stark { background: var(--blue); color: var(--on-strong); }
+.mehr summary { cursor: pointer; color: var(--blue); font-weight: 700; }
+.mehr[open] summary { margin-bottom: 12px; }
+
+.workshop { background: var(--blue); color: var(--on-strong); border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 12px; }
+.workshop h3 { font-family: var(--display); font-size: 26px; margin: 0; line-height: 1.2; }
+.workshop p { margin: 0; }
+.workshop ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.workshop a.link { color: inherit; font-weight: 600; }
+.links { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+footer { font-size: 14px; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .kreis { animation-duration: 3s; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Nischengenerator · für Frauen im Network Marketing</div>
+    <h1>Finde dein eigenes Thema</h1>
+    <p class="lead">Ein paar Fragen zu dir, zu deiner Erfahrung und zu dem, was man dich immer wieder fragt. Danach hast du drei Themen, die zu dir passen, deinen Experten-Satz und auf Wunsch die Ideen für dein erstes Gratis-Tool.</p>
+  </header>
+  <div class="steps" id="steps" aria-hidden="true"></div>
+  <main id="buehne"></main>
+  <footer>Ein Angebot von Patricia Ulmann · <a href="https://mumlifebalance.ch" target="_blank" rel="noopener">mumlifebalance.ch</a>. Deine Antworten werden nur für deine Auswertung verwendet. Deine Mailadresse kommt in meinen Newsletter, abmelden geht jederzeit mit einem Klick.</footer>
+</div>
+
+<script>
+const API = "/api/ideen";
+const WORKSHOP_URL = "https://mumlifebalance.ch/tool-workshop/";
+const DM_URL = "https://ig.me/m/mumlifebalance_patricia_ulmann";
+
+// Die Schritte folgen dem Kurs „Finde dein Thema“: Produkt · die vier Quellen der Expertise · Zielgruppe
+const SCHRITTE = [
+  { id: "produkt", quelle: "Kurz vorweg", titel: "Was bietest du in deinem Network an?",
+    hilfe: "Dein Thema hat auf den ersten Blick nichts mit deinem Network zu tun. Dein Produkt wird ein Zimmer im Haus, nicht das Fundament. Trotzdem hilft es, wenn ich weiss, womit du arbeitest.",
+    chips: ["Ätherische Öle", "Nahrungsergänzung", "Abnehmen und Shakes", "Hautpflege und Kosmetik", "Haushalt und Reinigung", "Küche und Kochen", "Mode und Schmuck"],
+    platz: "Oder in deinen Worten …", zeilen: 2 },
+  { id: "erfahrung", quelle: "Quelle 1 · deine Erfahrung", titel: "Was hast du schon erlebt, das andere noch vor sich haben?",
+    hilfe: "Alles, was du selbst durchgemacht hast, ist Wissen, das anderen fehlt. Du musst nicht am Ziel sein, um über den Weg zu sprechen.",
+    tipps: ["dein Beruf, früher oder heute", "dein Weg als Mama: Schlaf, Essen, Kinder, Partnerschaft", "eine Veränderung an deinem Körper oder deiner Gesundheit", "dein Einstieg ins Network, Zweifel und Rückschläge"] },
+  { id: "ergebnisse", quelle: "Quelle 2 · deine Ergebnisse", titel: "Was funktioniert heute bei dir?",
+    hilfe: "Ergebnisse müssen nicht spektakulär sein. Eine Struktur im Alltag, eine Routine, die hält, eine Entscheidung, die dir Klarheit gebracht hat, ein kleiner Erfolg, der geblieben ist.",
+    tipps: ["eine Routine, die bei euch klappt", "wie du deinen Alltag organisierst", "was sich bei dir verändert hat, seit …"] },
+  { id: "fragen", quelle: "Quelle 4 · die Fragen der anderen", titel: "Was fragen dich die Leute immer wieder?",
+    hilfe: "Schreib alles auf, ohne zu bewerten. Was du heute im Schlaf kannst, ist für andere der nächste Schritt.",
+    tipps: ["Wobei bitten dich andere um Rat?", "Wofür wirst du gelobt? „Cool, wie du das drauf hast“", "Was erklärst du anderen immer wieder?", "Wo sagst du: „Ach, das ist doch nichts“?"] },
+  { id: "perspektive", quelle: "Quelle 3 · deine Perspektive", titel: "Wie siehst du die Dinge, und was machst du einfach gern?",
+    hilfe: "Zwei Menschen erleben dasselbe und erzählen es ganz verschieden. Deine Haltung und deine Werte machen deine Expertise einzigartig. Diese Frage darfst du auch leer lassen.",
+    tipps: ["ein Satz, den du oft sagst", "was dir wichtig ist", "was du in deiner freien Zeit am liebsten machst"], frei: true },
+  { id: "wem", quelle: "Zum Schluss", titel: "Wem würdest du am liebsten helfen?",
+    hilfe: "Oft ist es die Person, die du selbst vor ein paar Jahren warst.",
+    chips: ["Mamas mit kleinen Kindern", "Familien mit Schulkindern", "berufstätigen Mamas", "Frauen ab 40", "Frauen, die sich wieder wohl im Körper fühlen wollen", "Frauen, die neben dem Job etwas Eigenes wollen"],
+    platz: "Oder in deinen Worten …", zeilen: 2 },
+];
+
+const buehne = document.getElementById("buehne");
+const steps = document.getElementById("steps");
+let stand = { schritt: 0, a: {}, email: "", ja: false };
+try { Object.assign(stand, JSON.parse(localStorage.getItem("nischengenerator") || "{}"), { schritt: 0 }); } catch (e) { /* ohne Speicher */ }
+let themenErgebnis = null;
+
+function merken() { try { localStorage.setItem("nischengenerator", JSON.stringify({ a: stand.a, email: stand.email })); } catch (e) { /* egal */ } }
+function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]); }
+function oben() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+function balken(n) {
+  steps.innerHTML = Array.from({ length: SCHRITTE.length + 1 }, (_, i) => `<span class="${i <= n ? "on" : ""}"></span>`).join("");
+}
+
+function zeigeSchritt(fehler) {
+  const i = stand.schritt;
+  if (i >= SCHRITTE.length) return zeigeMail(fehler);
+  balken(i);
+  const s = SCHRITTE[i];
+  const wert = stand.a[s.id] || "";
+  const chips = s.chips ? `<div class="chips">${s.chips.map(c => `<button type="button" class="chip" aria-pressed="${wert.split(", ").includes(c)}">${esc(c)}</button>`).join("")}</div>` : "";
+  const tipps = s.tipps ? `<div class="hilfe">Zum Beispiel:<ul>${s.tipps.map(t => `<li>${esc(t)}</li>`).join("")}</ul></div>` : "";
+  buehne.innerHTML = `
+    <section class="karte" aria-labelledby="fr">
+      <div class="quelle">${esc(s.quelle)} · ${i + 1} von ${SCHRITTE.length}</div>
+      <h2 id="fr">${esc(s.titel)}</h2>
+      <p class="hilfe">${esc(s.hilfe)}</p>
+      ${chips}${tipps}
+      <label class="feld"><span class="topf">${esc(s.titel)}</span>
+        <textarea id="eingabe" rows="${s.zeilen || 5}" maxlength="1200" placeholder="${esc(s.platz || "Schreib einfach drauflos, Stichworte reichen.")}" ${s.zeilen ? 'style="min-height:72px"' : ""}>${esc(wert)}</textarea>
+      </label>
+      ${fehler ? `<p class="fehler" role="alert">${esc(fehler)}</p>` : ""}
+      <div class="nav">
+        ${i > 0 ? '<button type="button" class="btn leise" id="zurueck">Zurück</button>' : "<span></span>"}
+        <button type="button" class="btn" id="weiter">Weiter</button>
+      </div>
+    </section>`;
+  const feld = document.getElementById("eingabe");
+  buehne.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
+    const teile = feld.value.split(",").map(x => x.trim()).filter(Boolean);
+    const k = b.textContent;
+    const pos = teile.indexOf(k);
+    if (pos >= 0) teile.splice(pos, 1); else teile.push(k);
+    feld.value = teile.join(", ");
+    b.setAttribute("aria-pressed", pos < 0);
+  }));
+  document.getElementById("weiter").addEventListener("click", () => {
+    stand.a[s.id] = feld.value.trim(); merken();
+    if (!s.frei && !stand.a[s.id]) return zeigeSchritt("Schreib hier kurz etwas hin, Stichworte reichen.");
+    stand.schritt++; zeigeSchritt(); oben();
+  });
+  const z = document.getElementById("zurueck");
+  if (z) z.addEventListener("click", () => { stand.a[s.id] = feld.value.trim(); merken(); stand.schritt--; zeigeSchritt(); });
+}
+
+function zeigeMail(fehler) {
+  balken(SCHRITTE.length);
+  buehne.innerHTML = `
+    <form class="karte" id="f" novalidate>
+      <div class="quelle">Fast geschafft</div>
+      <h2>Wohin darf ich dir dein Ergebnis schicken?</h2>
+      <p class="hilfe">Mit deiner Mailadresse kannst du den Nischengenerator bis zu zehn Mal benutzen, für neue Themen und für die Tool-Ideen dazu.</p>
+      <label class="feld">Deine Mailadresse
+        <input type="email" id="email" maxlength="120" autocomplete="email" required value="${esc(stand.email)}">
+      </label>
+      <label class="ja"><input type="checkbox" id="ja" ${stand.ja ? "checked" : ""}> <span>Ja, ich möchte Mails von Patricia bekommen, mit Tipps und Angeboten rund um mein eigenes Business. Abmelden geht jederzeit mit einem Klick.</span></label>
+      <label class="topf" aria-hidden="true">Website <input type="text" id="website" tabindex="-1" autocomplete="off"></label>
+      ${fehler ? `<p class="fehler" role="alert">${esc(fehler)}</p>` : ""}
+      <div class="nav"><button type="button" class="btn leise" id="zurueck">Zurück</button><button class="btn" type="submit">Meine Themen zeigen</button></div>
+    </form>`;
+  document.getElementById("zurueck").addEventListener("click", () => { stand.schritt--; zeigeSchritt(); });
+  document.getElementById("f").addEventListener("submit", e => {
+    e.preventDefault();
+    stand.email = document.getElementById("email").value.trim();
+    stand.ja = document.getElementById("ja").checked;
+    merken();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(stand.email)) return zeigeMail("Bitte gib eine gültige Mailadresse ein.");
+    if (!stand.ja) return zeigeMail("Bitte setz das Häkchen, damit ich dir dein Ergebnis zeigen darf.");
+    themenHolen(document.getElementById("website").value);
+  });
+}
+
+async function anfrage(daten, wartetext, zurueck) {
+  buehne.innerHTML = `<div class="laden" role="status"><div class="kreis"></div><p>${wartetext}<br>Das dauert rund eine halbe Minute.</p></div>`;
+  oben();
+  try {
+    const r = await fetch(API, { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(Object.assign({ email: stand.email, einverstanden: stand.ja }, daten)) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) { zurueck(j.error || "Das hat nicht geklappt, bitte nochmal."); return null; }
+    return j;
+  } catch (err) { zurueck("Keine Verbindung. Bitte prüf dein Internet und versuch es nochmal."); return null; }
+}
+
+async function themenHolen(website) {
+  const j = await anfrage({ art: "thema", angaben: stand.a, website }, "Ich lese deine Antworten und suche dein Thema.", zeigeMail);
+  if (j) { themenErgebnis = j; zeigeThemen(j); }
+}
+
+function kopierKnopf(knopf, text, fertig) {
+  knopf.addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(text()); knopf.textContent = fertig; }
+    catch (e) { const ta = document.createElement("textarea"); ta.value = text(); knopf.after(ta); ta.select(); knopf.textContent = "Markiert, jetzt kopieren"; }
+  });
+}
+
+function themaKarte(t, n) {
+  const inhalt = `
+      <p class="satz">${esc(t.satz)}</p>
+      <div class="teil"><b>Warum das zu dir passt</b><p>${esc(t.warum)}</p></div>
+      <div class="teil"><b>Damit hebst du dich ab</b><p>${esc(t.abhebung)}</p></div>
+      <div class="teil"><b>Dein Produkt als Zimmer im Haus</b><p>${esc(t.produkt)}</p></div>
+      <div class="teil"><b>Darüber kannst du sprechen</b><ul>${(t.beitraege || []).map(b => `<li>${esc(b)}</li>`).join("")}</ul></div>
+      <div class="teil"><b>Dein Gratis-Tool dazu</b><p>${esc(t.tool)}</p></div>
+      <div class="knoepfe">
+        <button type="button" class="klein" data-satz="${n}">Satz kopieren</button>
+        <button type="button" class="klein stark" data-tools="${n}">Tool-Ideen zu diesem Thema</button>
+      </div>`;
+  const kopf = `<div class="kopf"><span class="nr">${n === 0 ? "Passt am besten" : "Thema " + (n + 1)}</span><span class="marke">${esc(t.themenfeld)}</span></div>`;
+  return n === 0
+    ? `<article class="idee erste">${kopf}<h3>${esc(t.titel)}</h3>${inhalt}</article>`
+    : `<article class="idee">${kopf}<details class="mehr"><summary>${esc(t.titel)}</summary>${inhalt}</details></article>`;
+}
+
+// Bis und mit 11.11.2026 die Live-Termine, danach der Workshop als Aufzeichnung (Patricias Entscheid 29.10.)
+const LIVE_BIS = new Date("2026-11-12T00:00:00+01:00");
+function workshopKasten() {
+  const live = new Date() < LIVE_BIS;
+  const punkte = live
+    ? `<li>10. November, 19:00 Uhr, live: dein Tool</li>
+          <li>11. November, 19:00 Uhr, live: die Seite, auf der man sich dafür einträgt</li>
+          <li>Drei Tage Begleitung danach, die Aufzeichnung bleibt dir</li>`
+    : `<li>Teil 1: dein Tool, Schritt für Schritt zum Mitbauen</li>
+          <li>Teil 2: die Seite, auf der man sich dafür einträgt</li>
+          <li>Du startest sofort, mit den Aufzeichnungen und meinen Vorlagen</li>`;
+  return `
+      <aside class="workshop" aria-labelledby="ws">
+        <h3 id="ws">${live ? "Und jetzt bauen wir dein Gratis-Tool, zusammen" : "Und jetzt baust du dein Gratis-Tool"}</h3>
+        <p>Fast alle im Network verschenken ein PDF, das kaum jemand liest. Im Tool-Workshop baust du zu deinem Thema ein kleines Tool, das deinen Leuten ein Erlebnis und ein Ergebnis zu ihrem Problem gibt, mit Claude und ohne Programmieren.</p>
+        <ul>
+          ${punkte}
+        </ul>
+        <p><b>39 Franken</b></p>
+        <div class="links">
+          <a class="btn orange" href="${WORKSHOP_URL}" target="_blank" rel="noopener">Zum Tool-Workshop</a>
+          <a class="link" href="${DM_URL}" target="_blank" rel="noopener">Oder schick mir deinen Experten-Satz auf Instagram</a>
+        </div>
+      </aside>`;
+}
+
+function zeigeThemen(j) {
+  balken(SCHRITTE.length);
+  buehne.innerHTML = `
+    <section class="ergebnis" aria-labelledby="erg">
+      <h2 id="erg">Deine Themen</h2>
+      <p class="spiegel">${esc(j.spiegel)}</p>
+      ${(j.themen || []).map(themaKarte).join("")}
+      ${j.tipp ? `<p class="zart"><b>Tipp:</b> ${esc(j.tipp)}</p>` : ""}
+      <p class="zart">Dein Thema ist Klarheit für heute, keine Schublade fürs Leben. Du darfst es später ändern. Noch ${esc(j.rest)} von ${esc(j.max)} Durchgängen.</p>
+      <div class="links"><button type="button" class="btn leise" id="anpassen">Antworten anpassen</button></div>
+      ${workshopKasten()}
+    </section>`;
+  buehne.querySelectorAll("[data-satz]").forEach(b => kopierKnopf(b, () => j.themen[Number(b.dataset.satz)].satz, "Kopiert"));
+  buehne.querySelectorAll("[data-tools]").forEach(b => b.addEventListener("click", () => toolsHolen(j.themen[Number(b.dataset.tools)])));
+  document.getElementById("anpassen").addEventListener("click", () => { stand.schritt = 0; zeigeSchritt(); oben(); });
+}
+
+async function toolsHolen(thema) {
+  const zurueck = (fehler) => { zeigeThemen(themenErgebnis); if (fehler) buehne.insertAdjacentHTML("afterbegin", `<p class="fehler" role="alert">${esc(fehler)}</p>`); };
+  const j = await anfrage({ art: "tools", nische: thema.satz, produkt: stand.a.produkt || "" }, "Ich suche Gratis-Tool-Ideen zu deinem Thema.", zurueck);
+  if (j) zeigeTools(j, thema);
+}
+
+function auftragFuer(i, thema) {
+  const schluss = i.sorte === "ki"
+    ? "Das Tool soll bei jeder Nutzung neuen Text schreiben. Erklär mir bitte zuerst in einfachen Worten, was ich dafür brauche, bevor du baust."
+    : "Es soll ohne API und ohne Anmeldung laufen.";
+  return [
+    "Bau mir ein kleines Tool als Artifact. Es ist ein Gratis-Angebot für meine Leute auf Instagram.",
+    "Mein Thema: " + thema.satz,
+    "Das Tool heisst „" + i.name + "“. " + i.auftrag,
+    "Ablauf: " + (i.ablauf || ""),
+    "Am Schluss: " + i.ergebnis + " Darunter ein Knopf „[Knopftext]“, der zu [Link] führt.",
+    "Mein Wissen dazu: [Workbook oder PDF per Büroklammer anhängen und schreiben: Bau die Ergebnisse aus dem Wissen in diesem Dokument. Ohne Unterlagen: in ein paar Sätzen, was die Leute bei welcher Antwort wissen sollen.]",
+    schluss + " Farben: [deine Farben]. Schreib die Texte in Du-Form, freundlich, wie ich mit einer Freundin rede.",
+  ].join("\n\n");
+}
+
+function zeigeTools(j, thema) {
+  const karten = (j.ideen || []).map((i, n) => `
+    <article class="idee${n === 0 ? " erste" : ""}">
+      <div class="kopf"><span class="nr">${n === 0 ? "Meine Empfehlung" : "Idee " + (n + 1)}</span>
+        <span class="marke">${esc(i.form || "Tool")}</span>
+        <span class="marke${i.sorte === "ki" ? " ki" : ""}">${i.sorte === "ki" ? "KI-Tool, braucht API-Schlüssel" : "Geht im Claude-Chat"}</span></div>
+      <h3>${esc(i.name)}</h3>
+      <div class="teil"><b>Das Problem deiner Leute</b><p>${esc(i.problem)}</p></div>
+      <div class="teil"><b>So läuft es</b><p>${esc(i.ablauf)}</p></div>
+      <div class="teil"><b>Am Schluss bekommen sie</b><p>${esc(i.ergebnis)}</p></div>
+      <div class="teil"><b>So kommt dein Produkt ins Gespräch</b><p>${esc(i.bruecke)}</p></div>
+      <div class="knoepfe"><button type="button" class="klein" data-n="${n}">Auftrag für Claude kopieren</button></div>
+    </article>`).join("");
+  buehne.innerHTML = `
+    <section class="ergebnis" aria-labelledby="erg">
+      <h2 id="erg">Gratis-Tools zu deinem Thema</h2>
+      <p class="satz">${esc(thema.satz)}</p>
+      ${karten}
+      <p class="zart">Noch ${esc(j.rest)} von ${esc(j.max)} Durchgängen.</p>
+      <div class="links">
+        ${j.rest > 0 ? '<button type="button" class="btn" id="nochmal">Fünf neue Ideen</button>' : ""}
+        <button type="button" class="btn leise" id="zurThemen">Zurück zu meinen Themen</button>
+      </div>
+      ${workshopKasten()}
+    </section>`;
+  oben();
+  buehne.querySelectorAll("[data-n]").forEach(b => kopierKnopf(b, () => auftragFuer(j.ideen[Number(b.dataset.n)], thema), "Kopiert, jetzt in Claude einfügen"));
+  const n = document.getElementById("nochmal");
+  if (n) n.addEventListener("click", () => toolsHolen(thema));
+  document.getElementById("zurThemen").addEventListener("click", () => { zeigeThemen(themenErgebnis); oben(); });
+}
+
+zeigeSchritt();
+</script>
+</body>
+</html>

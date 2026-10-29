@@ -34,6 +34,10 @@ except Exception:
 
 ROOT = Path(__file__).resolve().parents[2]
 QUELLE = ROOT / "reference/julia-trost/learnings"
+# Learnings anderer Mentorinnen (seit 29.10.2026: Laura Hersche, Mia Pejic). Sie
+# landen als Kurse in den Themen, aber nicht in Julias Themenbüchern. Der Name der
+# Mentorin steht im Titel („Laura Hersche · …“). Ebenfalls gitignored.
+WEITERE = ROOT / "reference/mentorinnen/learnings"
 ZIEL = ROOT / "outputs/cockpit/abgleich/bibliothek"
 STUECK = 200_000  # Zeichen je Dokument; die Datenbank nimmt höchstens 256 KB
 
@@ -114,7 +118,10 @@ def main():
         unterlagen = json.loads(u.read_text(encoding="utf-8"))
 
     kurse = {}
-    for p in sorted(QUELLE.glob("*.md")):
+    dateien = sorted(QUELLE.glob("*.md"))
+    if WEITERE.exists():
+        dateien += sorted(WEITERE.glob("*.md"))
+    for p in dateien:
         if p.name.startswith("_"):
             continue
         titel, md = kopf(p.read_text(encoding="utf-8"))

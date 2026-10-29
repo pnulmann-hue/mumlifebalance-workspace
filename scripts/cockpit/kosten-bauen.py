@@ -60,12 +60,16 @@ KLARTEXT = {
     "supabase": "Supabase (Datenbank)",
     "manychat": "ManyChat",
     "openai": "OpenAI",
+    "openai-ads": "OpenAI (ChatGPT-Werbung)",
     "canva": "Canva",
     "vercel": "Vercel",
     "apify": "Apify",
     "meta": "Meta (Werbung)",
 }
-ART = {"meta": "Werbung"}          # alles andere sind Tools
+# 🚨 ChatGPT-Werbung bucht die Karte als „OPENAI · Computersoftware" — wie die
+# API. Getrennt halten, sonst landet Werbung unter Tools. Beleg ist die
+# Kreditkartenabrechnung, OpenAI schickt keine Quittung per Mail (28.10.2026).
+ART = {"meta": "Werbung", "openai-ads": "Werbung"}   # alles andere sind Tools
 
 # Aus Notion «Kostenpositionen» uebernommen (9 Zeilen, Stand 24.09.2026).
 # Monate dort als Spalten — hier als Zeilen aufgeloest.

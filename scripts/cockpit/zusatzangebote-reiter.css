@@ -1,0 +1,25 @@
+  /* ---------- Upsell-Ersteller (patch-zusatzangebote.py, 29.10.2026) ---------- */
+  .za-regel { margin-bottom: 14px; font-size: 13px; border-left: 3px solid var(--orange); }
+  .za-form { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; margin-bottom: 14px; }
+  .za-form .field { flex: 1 1 260px; }
+  .za-form .za-klein { flex: 0 0 120px; }
+  .za-form .za-breit { flex: 2 1 320px; }
+  .za-form input, .za-form select { width: 100%; }
+  .za-ist { margin-bottom: 14px; font-size: 13px; }
+  .za-stand { margin: 6px 0 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .za-hinweis { margin-bottom: 14px; background: var(--teal-soft); border-color: transparent; }
+  .za-rolle { font-family: var(--display); font-weight: normal; font-size: 19px; margin: 22px 0 10px; }
+  .za-rolle span { font-family: var(--body); font-size: 12px; color: var(--ink-soft); margin-left: 8px; }
+  .za-raster { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+  .za-karte { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; font-size: 13px; }
+  .za-karte p { margin: 8px 0 0; }
+  .za-karte a { color: var(--teal); word-break: break-all; }
+  .za-karte.za-bruch { border-color: var(--crit); }
+  .za-kopf { display: flex; gap: 10px; align-items: baseline; justify-content: space-between; }
+  .za-kopf b { font-family: var(--display); font-size: 16px; font-weight: normal; }
+  .za-preis { font-family: var(--display); font-size: 18px; color: var(--navy); white-space: nowrap; }
+  .za-chips { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .za-rech { background: var(--surface-2); border-radius: 6px; padding: 6px 9px; font-variant-numeric: tabular-nums; }
+  .za-lab { display: block; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+  .za-kasse { font-style: italic; border-left: 3px solid var(--orange); padding-left: 9px; }
+  .za-warn { color: var(--crit); }

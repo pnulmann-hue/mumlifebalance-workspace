@@ -47,6 +47,12 @@ def env():
             werte[k.strip()] = v.strip().strip('"').strip("'")
     token = werte.get("TELEGRAM_COCKPIT_BOT_TOKEN")
     chat = werte.get("TELEGRAM_CHAT_ID")
+    # --news: über den News-Bot (businessnews2_bot), seit Patricia Cockpit- und Content-Bot blockiert hat (29.10.2026)
+    if "--news" in sys.argv:
+        news = ROOT / "scripts/telegram-news-bot/.env"
+        for zeile in news.read_text(encoding="utf-8").splitlines():
+            if zeile.startswith("TELEGRAM_BOT_TOKEN="):
+                token = zeile.partition("=")[2].strip().strip('"').strip("'")
     if not token or not chat:
         sys.exit("\U0001f6a8 TELEGRAM_COCKPIT_BOT_TOKEN oder "
                  "TELEGRAM_CHAT_ID fehlt in der .env")
@@ -92,6 +98,7 @@ def main():
     p.add_argument("--text")
     p.add_argument("--text-datei")
     p.add_argument("--titel", help="kurze Zeile vor den Bildern")
+    p.add_argument("--news", action="store_true", help="über den News-Bot senden")
     a = p.parse_args()
 
     token, chat = env()

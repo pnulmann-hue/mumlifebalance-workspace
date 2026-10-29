@@ -9,6 +9,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 ## Dateien
 
 - [[_nischen-tabelle-2026-08]]
+- [[affiliate-links]]
 - [[network-bts-telegram-konzept]]
 - 📘 [[README]]
 

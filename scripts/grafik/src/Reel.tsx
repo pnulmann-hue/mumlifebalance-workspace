@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Sequence, useVideoConfig } from "remotion";
 import { theme } from "./theme";
-import { Clip, Clipfolge } from "./bausteine/Clipfolge";
+import { Clip, Clipfolge, Zoom } from "./bausteine/Clipfolge";
 import { Hook, HookVariante } from "./bausteine/Hook";
 import { Untertitel, UntertitelVariante, Wort } from "./bausteine/Untertitel";
 import { Karte, Knallwort, Look } from "./bausteine/Einblendungen";
@@ -22,7 +22,7 @@ export type ReelProps = {
   betont: string[];
   einblendungen: Einblendung[];
   /** Varianten je Reel. Vorgabe B/B = Patricias Entscheid 06.10.2026 („klar Stil B“). */
-  stil?: { hook?: HookVariante; untertitel?: UntertitelVariante; look?: boolean; hoehe?: number };
+  stil?: { hook?: HookVariante; untertitel?: UntertitelVariante; look?: boolean; hoehe?: number; zoom?: Zoom };
   /** welche Toene es gibt (setzt vorschau.py aus video/sounds/) */
   toene?: string[];
   /** nur fuer rand-pruefen.py: Video ausblenden, damit nur Text sichtbar ist */
@@ -39,7 +39,7 @@ export const Reel: React.FC<ReelProps> = ({
   const hoehe = stil.hoehe ?? 0.56;
   return (
     <AbsoluteFill style={{ backgroundColor: nurText ? "black" : theme.colors.bg }}>
-      {nurText ? null : <Clipfolge clips={clips} stumm={nurEffekte} />}
+      {nurText ? null : <Clipfolge clips={clips} stumm={nurEffekte} zoom={stil.zoom} />}
 
       {nurText ? null : <Tonspur ereignisse={toeneBauen({ hook, hookDauer, einblendungen, clips, stil, toene, fps })} />}
 
@@ -53,7 +53,7 @@ export const Reel: React.FC<ReelProps> = ({
       {einblendungen.map((e, i) => (
         <Sequence key={i} from={Math.round(e.abSek * fps)} durationInFrames={Math.round(e.dauer * fps)}>
           {e.art === "knallwort"
-            ? <Knallwort text={e.text || ""} unter={e.unter} schilder={e.schilder} sound={e.sound} />
+            ? <Knallwort text={e.text || ""} unter={e.unter} schilder={e.schilder} sound={e.sound} hoehe={hoehe} />
             : <Karte zitat={e.zitat || ""} seite={e.seite} sound={e.sound} />}
         </Sequence>
       ))}

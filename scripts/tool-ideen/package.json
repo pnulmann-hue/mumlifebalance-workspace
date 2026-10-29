@@ -1,0 +1,13 @@
+{
+  "name": "tool-ideen",
+  "version": "1.0.0",
+  "description": "Nischengenerator nach dem Kurs Finde dein Thema, mit Tool-Ideen (KI) — 0€-Freebie",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": { "@anthropic-ai/sdk": "^0.32.0" },
+  "devDependencies": { "vercel": "^52.0.0" }
+}

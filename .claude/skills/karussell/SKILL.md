@@ -10,62 +10,21 @@ description: "Instagram-Karussells planen, bauen und fixen — Folien-Plan, Hook
 
 ---
 
-## 🎯 PFLICHT: Hooks entstehen nach dem Hook-Skill (seit 2026-09-13)
+## 🧭 Die Pflichtregeln stehen in `/content` (seit 2026-10-29)
 
-> **Jeder Hook in diesem Skill wird nach `.claude/skills/hooks/SKILL.md` gebaut** —
-> die Cover-Zeile genauso wie die zehn Varianten im Hook-Brainstorm.
-> Lies die Datei, bevor du den ersten Hook schreibst. Sie enthält den Prozess:
-> Briefing-Check → Bewusstseinsstufe → Angle → Familie → Zuschnitt.
-> Am Ende steht eine Kurz-Checkliste — das ist der schnelle Weg.
+> **Hook, Caption, Aufruf und Hashtags folgen dem Abschnitt „Die Pflichtregeln“ in
+> `.claude/skills/content/SKILL.md`** — letzter Check mit fünf Fragen, 10 bis 14 Wörter
+> auf Bild und Cover, Fragen nur als ihre eigene Frage oder als Zitat, nie das Werkzeug
+> im Hook, „Nicht X, sondern Y“ überall verboten, genau ein Aufruf, das Stichwort nur am
+> Schluss, höchstens 5 Hashtags mit `#mamabusiness`, Beitrags-Check.
+> Die Formeln, Stufen und Vorlagen dazu stehen in `.claude/skills/hooks/SKILL.md`.
+> **Dieser Skill enthält nur noch die Karussell-Technik.** Sagt hier etwas anderes als
+> `/content`, gilt `/content`. Ganze Sätze statt Stakkato (Brand-Voice), Schweizer ss.
 
-**Die zwei Dinge, die hier am meisten ändern:**
-
-1. **Bewusstseinsstufe zuerst klären.** Ein Reichweiten-Karussell spricht Stufe 1–2 an:
-   Folie 1 stellt **ihre Frage** und gibt nicht meine Antwort. Ein Lead-Karussell mit
-   Keyword-CTA liegt bei 2–3. Das entscheidet, wie Folie 1 gebaut wird.
-2. **Angle ist nicht Familie.** Die Familie sagt, wie ein Hook *klingt* (Bekenntnis,
-   Zeitanker, Hot Take). Der Angle sagt, aus welcher *Richtung* du schaust (Schmerz,
-   Ergebnis, Beweis, Konträr, Identität). Zehn Hooks können sieben Familien haben
-   und trotzdem alle dasselbe sagen. **Im Hook-Brainstorm mindestens 3 Angles mischen.**
-
-Hinter jedem Hook in Klammern **(Angle · Familie)** ausweisen.
-
-Bei einem **Wochen-Plan** zusätzlich: die Karussells der Woche sollen aus
-**verschiedenen Angles** kommen, nicht nur aus verschiedenen Pillars. Zwei Posts aus
-demselben Angle erreichen weitgehend dieselben Frauen.
-
-`.claude/skills/hooks/SKILL.md` ist die **eine** Quelle für Hooks — Kundensprache,
-Stufen, Angles, PIE, alle Formeln, Verbote und der letzte Check.
-`context/hook-formel-testlog.md` bleibt daneben bestehen, dort werden Testergebnisse
-eingetragen. Bei Widerspruch gewinnt die Blackliste, dann der Hook-Skill.
-
----
-
-## 🚀 PFLICHT: Launch-Modus-Awareness
-
-Bevor du baust: Läuft gerade ein Launch? Prüfe `context/active-funnels.json` (ein `launch_window` umschliesst das heutige Datum). **Wenn ja → lies `context/launch-modus-content.md` und richte dich danach aus.** Kernregeln:
-- **Feed bleibt programm-frei** — Reichweite + Emotion + Mehrwert + Pull zum kostenlosen Webinar/Replay + „mehr in meinen Stories". NIE Programme/Kursnamen/Preise/Cart im Karussell (Memory `feedback_keine-programme-im-feed`).
-- **Verkauf läuft über Story + Mail.** Story-Verweis-CTAs gegen `outputs/produkte/[slug]/story-plan.json` gegenchecken (Feed↔Story-Interlock).
-- Die **Launch-Phase aus dem Launch-Kalender** (Julia-Trost-Plan) gibt die emotionale Tonalität der Woche.
-
----
-
-## 🚨 PFLICHT: Keine Stakkato-Sätze (Brand-Voice-Override)
-
-Patricia hat MEHRFACH angemahnt — gilt für JEDEN Output (Hooks, Captions, Slide-Texte). Siehe `feedback_KRITISCH-keine-stakkato-saetze.md`.
-
-❌ FALSCH: „Ich checke die DM zum 4. Mal. Mein Kind ruft. Ich atme."
-✅ RICHTIG: „Du sitzt zum vierten Mal an deinem Reel und da ruft dich schon wieder dein Kind..."
-
-**Regeln:**
-- NIE drei abgehackte Subject-Verb-Punkt-Sätze hintereinander
-- Konjunktionen verbinden Sätze („und da", „weil", „aber", „bis", „dann")
-- DU-Anrede für Pain (nicht „Ich" — Zielgruppe soll sich erkennen)
-- Wie am Küchentisch mit einer Freundin geschrieben
-- Schweizer ss durchgängig, kein deutsches ß
-- **Diese Regel übersteuert Hormozi-Pattern.** Hormozi ist Struktur-Layer, nicht Sprach-Form.
-
-Stakkato erlaubt NUR bei expliziten Symptom-Listen (z.B. „Spülmaschine. Schulanmeldung. Steuern.") — nicht bei normalen Statements.
+Hinter jedem Hook in Klammern **(Angle · Familie)** ausweisen, bei mehreren Hooks
+mindestens 3 Angles mischen. Läuft ein Launch (`launch_window` in
+`context/active-funnels.json`), gilt `context/launch-modus-content.md`: der Feed bleibt
+frei von Programmnamen und Preisen, verkauft wird in Story und Mail.
 
 ---
 
@@ -92,7 +51,7 @@ Lies in dieser Reihenfolge:
 10. `context/notion-content-db.md` — Notion-Mapping
 11. Falls vorhanden: `outputs/karussells/` — früher erstellte Briefings
 12. Julia-Trost-Sync-Extracts in `outputs/julia-trost-sync/` (Kontext für Kaufpsychologie + Hook-Varianten)
-13. ⭐ **`reference/hormozi/copywriting-bible.md`** — **Hormozi-Bonus-Layer (seit 2026-05-04)**. Wende auf jedes Karussell an: **(a)** Slide 1 = Hook nach 8 Hormozi-Hook-Kategorien (Schock-Statistik, Konträre Meinung, Spez. Versprechen, Curiosity Gap, Pain-Frage, Identifikation, Bevor-Nachher, „Wie X ohne Y"), **(b)** mind. 1 Slide nach ++/−− × Self/Friends/Enemies-Matrix (Status-Trigger), **(c)** Authority Stack (3 Zahlen) statt vager Superlative, **(d)** vorletzte Slide = P.S.-Slide (Hack #10 — Wiederholung der stärksten Promise), **(e)** Container-Wörter (System/Blueprint/Methode statt „Tipp/Anleitung"), **(f)** PAS-UM-Logik wenn Storytelling-Karussell (Problem-Agitation-Unique-Mechanism mit NAMEN). **Brand-Voice + doTERRA-Compliance bleiben Pflicht.**
+13. `reference/hormozi/copywriting-bible.md` — nur als Nachschlagewerk. Die früheren Hormozi-Pflichten (P.S.-Folie, Container-Wörter, Hook-Kategorien) gelten nicht mehr; Hooks kommen aus `/content` + `/hooks`.
 
 ### Wenn doTERRA-Content (Profil @patricia_ulmann) — ZUSÄTZLICHE PFLICHT-LESEN
 
@@ -184,7 +143,7 @@ Mehrere Karussell-Vorlagen auf Vorrat designen.
 **Ablauf — 4-Prompt-Workflow:**
 
 **Prompt 1 — Hook-Generierung (10 Varianten):**
-- Max 8 Wörter pro Hook
+- 10 bis 14 Wörter pro Hook (Pflichtregel in `/content`)
 - **Kein Punkt am Ende**
 - Verschiedene Formate: provokante These / überraschende Zahl / Direktfrage / Kontra-Intuition / Versprechen
 - Muss Cliffhanger erzeugen (Leser fragt sich „Wie/Warum?")
@@ -194,7 +153,7 @@ Mehrere Karussell-Vorlagen auf Vorrat designen.
 **Prompt 2 — Swipe-Sequenz (7 Slides):**
 | # | Slide | Inhalt | Wort-Limit |
 |---|---|---|---|
-| 1 | Hook | gewählter Hook aus Prompt 1 | 8 W |
+| 1 | Hook | gewählter Hook aus Prompt 1 | 10–14 W |
 | 2 | Spannung | Pain vertiefen, Identifikation | 30 W |
 | 3 | Value 1 | Headline + Body | H:5 W + B:40 W |
 | 4 | Value 2 | Headline + Body | H:5 W + B:40 W |
@@ -388,12 +347,8 @@ Identisch zu /reels. Mindestens 2 Suchen pro Session:
 - Mentoring: „viral instagram carousel mom entrepreneurs [monat] 2026", „carousel format [thema] tiktok"
 - doTERRA: „viral instagram carousel wellness perimenopause 2026", „nutrition carousel format 2026"
 
-### Schritt B: Hook-Pflicht-Prozess (4 Schritte)
-Aus `reels-framework.md` → Abschnitt „Hook-Bauen":
-1. Kategorie wählen (Zahlen/Anleitung/Provokant/Neugier/Identifikation)
-2. Template aus der Kategorie füllen
-3. 5-Regeln-Check (kurz/konkret/spannung/relevant/kein clickbait)
-4. Viral-Mechanik-Check (Spannung/Shortcut/Beweis/Identität)
+### Schritt B: Hook
+Nach `/content` TEIL 3 und den Pflichtregeln bauen, Formeln aus `.claude/skills/hooks/SKILL.md`. Der alte 4-Schritt-Prozess aus `reels-framework.md` gilt nicht mehr.
 
 ### Schritt C: Feed-Aesthetic-Check (Canva MCP)
 VOR Design-Arbeit:
@@ -481,11 +436,11 @@ Nach Briefing-Erstellung: Eintrag in Content-Management-DB (`collection://2ae707
 
 ### Hook & Struktur
 - [ ] **Blackliste-Pflicht-Prüfung bestanden** (5 Scans: Nicht/Sondern, Dreier-Stakkato, Worthülsen, Kontrast-Absatz, Gesamteindruck)
-- [ ] Hook nach 4-Schritt-Pflicht-Prozess gebaut
+- [ ] Hook hat den letzten Check (fünf Fragen) aus `/content` bestanden
 - [ ] Cover-Text max. 10-14 Wörter, lesbar im Feed-Thumbnail
 - [ ] Jede Folie hat EINE klare Aussage
 - [ ] Swipe-Anreiz auf jeder Folie (Cliffhanger)
-- [ ] CTA-Folie mit Save/Share-CTA + ManyChat-Keyword
+- [ ] CTA-Folie mit **genau einem** Aufruf: Stichwort (Lead) **oder** Teilen/Speichern/Wahlfrage (Reichweite)
 
 ### Feed-Aesthetic
 - [ ] Cover-Farbe passt zur Rotation (letzte 6-9 Posts gepruuft)
@@ -496,9 +451,9 @@ Nach Briefing-Erstellung: Eintrag in Content-Management-DB (`collection://2ae707
 - [ ] Profil klar (Mentoring ODER doTERRA — nie mischen!)
 - [ ] Pillar (Themen-Säule) aus Notion Content-Strategie-DB gewählt
 - [ ] **Job-Säule (A/B/C/D) explizit zugewiesen** — siehe `context/job-saeulen.md` (jedes Karussell hat genau einen Job)
-- [ ] Brand Voice eingehalten (ä/ö/ü/ss, kurze Sätze, „du")
-- [ ] Caption nach HVC-Formel, erste 125 Zeichen catchen
-- [ ] 5 Hashtags aus `reels-framework.md`
+- [ ] Brand Voice eingehalten (ä/ö/ü/ss, ganze Sätze statt Stakkato, „du")
+- [ ] Caption nach `/content` (einer der drei Einstiege, Stichwort nur am Schluss)
+- [ ] Höchstens 5 Hashtags, `#mamabusiness` als Anker
 - [ ] ManyChat-Keyword aus `manychat-keywords.md` (D-Säule = Pflicht-Keyword, A-Säule = optional)
 
 ### Notion

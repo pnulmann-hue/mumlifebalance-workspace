@@ -11,13 +11,13 @@ Zwei Dinge, die hier schiefgehen koennen und deshalb geprueft werden:
 
 * Es kommt NICHTS. Dann sagt das Skript das und nennt den Grund. Eine leere
   Antwort darf nie wie eine gegebene aussehen.
-* Es kommen aeltere Nachrichten mit. getUpdates liefert alles seit dem
-  letzten Abholen, auch von vorletzter Woche. Gezaehlt wird nur, was NACH
-  dem Zeitpunkt der Frage kam.
+* Es kommen aeltere Nachrichten mit. Gezaehlt wird nur, was im Chat des
+  Kochassistenten NACH seinen letzten Essensfragen kam (seit 27.10.2026,
+  siehe kochbot.py). Sprachnachrichten stehen dort schon als Text.
 """
-import io, os, sys, json, time, datetime
+import io, os, sys, json, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import telegram
+import kochbot
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -33,37 +33,15 @@ def merkzettel():
     return json.loads(io.open(MERKZETTEL, encoding="utf-8").read())
 
 
-def hole(seit_ts, nach_mid):
-    """Alle eigenen Textnachrichten, die nach der Frage kamen."""
-    antwort = telegram.ruf("getUpdates?timeout=0&limit=100")
-    if not antwort.get("ok"):
-        raise SystemExit("Telegram: %s" % antwort.get("description"))
-    raus = []
-    for u in antwort.get("result", []):
-        n = u.get("message") or u.get("edited_message") or {}
-        text = (n.get("text") or "").strip()
-        if not text or n.get("from", {}).get("is_bot"):
-            continue
-        if n.get("message_id", 0) <= nach_mid:      # vor der Frage
-            continue
-        if n.get("date", 0) < seit_ts:
-            continue
-        raus.append((n["date"], n["message_id"], text))
-    raus.sort()
-    return raus
-
-
 def main():
     m = merkzettel()
-    gefragt = datetime.datetime.fromisoformat(m["gefragt_am"])
-    seit_ts = int(gefragt.timestamp())
     warten = 0
     if "--warten" in sys.argv:
         warten = int(sys.argv[sys.argv.index("--warten") + 1])
 
     ende = time.time() + warten
     while True:
-        treffer = hole(seit_ts, m["message_id"])
+        _, treffer = kochbot.antworten()
         if treffer or time.time() >= ende:
             break
         time.sleep(5)
@@ -73,7 +51,7 @@ def main():
         print("Der Plan wird als normale Woche gebaut.")
         return 1
 
-    text = "\n".join(t for _, _, t in treffer)
+    text = "\n".join(t for _, t in treffer)
     ziel = os.path.join(HIER, "antwort-kw%02d.md" % m["kw"])
     io.open(ziel, "w", encoding="utf-8", newline="\n").write(
         "---\ntags: [mealplan]\n---\n\n"

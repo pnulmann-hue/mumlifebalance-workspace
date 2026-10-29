@@ -10,49 +10,21 @@ description: "Reel-Videos planen, bauen und fixen — sekundengenaue Briefings, 
 
 ---
 
-## 🎯 PFLICHT: Hooks entstehen nach dem Hook-Skill (seit 2026-09-13)
+## 🧭 Die Pflichtregeln stehen in `/content` (seit 2026-10-29)
 
-> **Jeder Hook in diesem Skill wird nach `.claude/skills/hooks/SKILL.md` gebaut.**
-> Lies die Datei, bevor du den ersten Hook schreibst. Sie enthält den Prozess:
-> Briefing-Check → Bewusstseinsstufe → Angle → Familie → Zuschnitt.
-> Am Ende steht eine Kurz-Checkliste — das ist der schnelle Weg.
+> **Hook, Caption, Aufruf und Hashtags folgen dem Abschnitt „Die Pflichtregeln“ in
+> `.claude/skills/content/SKILL.md`** — letzter Check mit fünf Fragen, 10 bis 14 Wörter
+> auf Bild und Cover, Fragen nur als ihre eigene Frage oder als Zitat, nie das Werkzeug
+> im Hook, „Nicht X, sondern Y“ überall verboten, genau ein Aufruf, das Stichwort nur am
+> Schluss, höchstens 5 Hashtags mit `#mamabusiness`, Beitrags-Check.
+> Die Formeln, Stufen und Vorlagen dazu stehen in `.claude/skills/hooks/SKILL.md`.
+> **Dieser Skill enthält nur noch die Reel-Technik.** Sagt hier etwas anderes als
+> `/content`, gilt `/content`. Ganze Sätze statt Stakkato (Brand-Voice), Schweizer ss.
 
-**Die zwei Dinge, die hier am meisten ändern:**
-
-1. **Bewusstseinsstufe zuerst klären.** Ein Reichweiten-Reel spricht Stufe 1–2 an:
-   der Hook stellt **ihre Frage** und gibt nicht meine Antwort. Ein Lead-Reel mit
-   Keyword-CTA liegt bei 2–3, Story und Launch bei 4–5. Der gleiche Hook wirkt je
-   nach Stufe völlig anders.
-2. **Angle ist nicht Familie.** Die Familie sagt, wie ein Hook *klingt* (Bekenntnis,
-   Zeitanker, Hot Take). Der Angle sagt, aus welcher *Richtung* du schaust (Schmerz,
-   Ergebnis, Beweis, Konträr, Identität). Zehn Hooks können sieben Familien haben
-   und trotzdem alle dasselbe sagen. **Bei mehreren Hooks mindestens 3 Angles mischen.**
-
-Hinter jedem Hook in Klammern **(Angle · Familie)** ausweisen.
-
-`.claude/skills/hooks/SKILL.md` ist die **eine** Quelle für Hooks — Kundensprache,
-Stufen, Angles, PIE, alle Formeln, Verbote und der letzte Check.
-`context/hook-formel-testlog.md` bleibt daneben bestehen, dort werden Testergebnisse
-eingetragen. Bei Widerspruch gewinnt die Blackliste, dann der Hook-Skill.
-
----
-
-## 🚨 PFLICHT: Keine Stakkato-Sätze (Brand-Voice-Override)
-
-Patricia hat MEHRFACH angemahnt — gilt für JEDEN Output (Hooks, Voiceover-Texte, Captions, Drehbuch-Sprechtexte). Siehe `feedback_KRITISCH-keine-stakkato-saetze.md`.
-
-❌ FALSCH: „Ich checke die DM zum 4. Mal. Mein Kind ruft. Ich atme."
-✅ RICHTIG: „Du sitzt zum vierten Mal an deinem Reel und da ruft dich schon wieder dein Kind..."
-
-**Regeln:**
-- NIE drei abgehackte Subject-Verb-Punkt-Sätze hintereinander
-- Konjunktionen verbinden Sätze („und da", „weil", „aber", „bis", „dann")
-- DU-Anrede für Pain (nicht „Ich" — Zielgruppe soll sich erkennen)
-- Wie am Küchentisch mit einer Freundin geschrieben — auch wenn der Reel-Text gesprochen wird
-- Schweizer ss durchgängig, kein deutsches ß
-- **Diese Regel übersteuert Hormozi-Pattern.** Hormozi ist Struktur-Layer, nicht Sprach-Form.
-
-Stakkato erlaubt NUR bei expliziten Symptom-Listen (z.B. „Spülmaschine. Schulanmeldung. Steuern.") — nicht bei normalen Statements.
+Hinter jedem Hook in Klammern **(Angle · Familie)** ausweisen, bei mehreren Hooks
+mindestens 3 Angles mischen. Läuft ein Launch (`launch_window` in
+`context/active-funnels.json`), gilt `context/launch-modus-content.md`: der Feed bleibt
+frei von Programmnamen und Preisen, verkauft wird in Story und Mail.
 
 ---
 
@@ -79,7 +51,7 @@ Lies in dieser Reihenfolge:
 9. `context/notion-content-db.md` — Notion-DB-Mapping
 10. Falls vorhanden: `outputs/reels/` — Früher erstellte Briefings
 11. Julia-Trost-Sync-Extracts in `outputs/julia-trost-sync/` (Kontext für Kaufpsychologie + Hook-Varianten — durch Blackliste gefiltert)
-12. ⭐ **`reference/hormozi/copywriting-bible.md`** — **Hormozi-Bonus-Layer (seit 2026-05-04)**. Wende auf jeden Reel-Hook + jede Caption an: **(a)** Pain-is-the-Pitch (Schmerz in MOMENTEN, nicht abstrakt — „Du stehst um 5:30 in der Küche" statt „Du bist erschöpft"), **(b)** Hook-Retain-Reward (Sek. 1–3 muss interrupten, Mitte muss halten, Ende muss liefern was Hook versprach = „Solve for Congruence"), **(c)** Container-Wörter (sag „mein System / Methode / Blueprint" statt „mein Tipp / Video"), **(d)** ++/−− × Self/Friends/Enemies-Matrix (mind. 1 Self + 1 Friends/Enemies-Frame pro Caption). **Brand-Voice (Patricia warm/empowernd) + doTERRA-Compliance bleiben Pflicht — Hormozi ist Verstärker, nicht Ersatz.**
+12. `reference/hormozi/copywriting-bible.md` — nur als Nachschlagewerk. Die früheren Hormozi-Pflichten (Container-Wörter, Matrix je Caption) gelten nicht mehr.
 
 ### Wenn doTERRA-Content (Profil @patricia_ulmann) — ZUSÄTZLICHE PFLICHT-LESEN
 
@@ -127,8 +99,8 @@ Sie hat ein Thema, aber keine Idee für einen packenden Einstieg.
 
 **Dein Ablauf:**
 1. Frag: Thema, Zielgruppe, gewünschte Wirkung (Neugier / Provokation / Identifikation / Anleitung)?
-2. Liefere **10 Hook-Varianten** aus verschiedenen Kategorien (aus `hook-framework.md`).
-3. Für jeden Hook: On-Screen-Text (max. 10 Wörter) + gesprochener Satz + kurze Shot-Idee (1 Satz).
+2. Liefere **10 Hook-Varianten** nach `/content` TEIL 3 (Formeln aus `.claude/skills/hooks/SKILL.md`).
+3. Für jeden Hook: On-Screen-Text (10 bis 14 Wörter) + gesprochener Satz + kurze Shot-Idee (1 Satz).
 4. Markiere deine Top-3-Empfehlung mit Begründung.
 
 ### 4. Reel-Kritik / Reel-Doktor
@@ -281,15 +253,8 @@ Identifiziere daraus:
 - **Warum es funktioniert** bei Mama-Zielgruppen
 - **Wie wir's adaptieren** mit Patricias Botschaft
 
-### Schritt B: Hook-Pflicht-Prozess (aus `reels-framework.md` + `hook-framework.md`)
-Jeder Hook durchläuft 4 Schritte — NIE frei erfinden:
-
-1. **Kategorie** wählen (Zahlen / Anleitung / Provokant / Neugier / Identifikation)
-2. **Template** aus der Kategorie in `hook-framework.md` nehmen und füllen
-3. **5-Regeln-Check**: kurz / konkret / spannung / relevant / kein clickbait
-4. **Viral-Mechanik-Check**: welches Gefühl triggert er? (Spannung / Shortcut / Beweis / Identität) — MUSS eines sein
-
-Dokumentiere Kategorie, Template und Viral-Mechanik im Briefing.
+### Schritt B: Hook
+Nach `/content` TEIL 3 und den Pflichtregeln bauen, Formeln aus `.claude/skills/hooks/SKILL.md`. Der alte 4-Schritt-Prozess aus `reels-framework.md` gilt nicht mehr.
 
 ### Schritt C: Asset-Check (Canva MCP)
 Vor dem Shotlist-Bauen: **Canva durchsuchen** nach Patricias vorhandenen Videos mit Gesicht.
@@ -305,16 +270,11 @@ Falls kein passendes Canva-Video existiert UND der Hook mit Gesicht höchste Wir
 - Setup (Licht, Hintergrund, Outfit), Mimik-Hinweise, Anzahl Takes (3-5x pro Satz für Auswahl)
 - Brand Voice streng einhalten
 
-### Schritt E: Caption + Hashtags (Julia Trost + 2026-Research)
-- Caption nach **HVC-Formel** (Hook → Value → CTA) bauen
-- **Erste 125 Zeichen** müssen sofort catchen (davor wird abgeschnitten)
-- Julia-Trost-Prinzipien anwenden: Transformation statt Features, Ziel statt Problem, "Stell dir vor..." wo passend
-- **Caption-Formel wählen** aus `context/caption-formeln.md` (1-5) — Formel-Nummer im Briefing dokumentieren
-- **Nur 1 CTA** — Share- oder Save-CTA bevorzugen (2026-Algo-Signale)
-- **5 Hashtags** nach Profil aus `reels-framework.md`, Abschnitt "Top-5-Hashtags pro Profil"
-  - Mix: 1-2 Nische + 2 Themen + 1 Community
-  - Bei saisonalem Thema: 1 Hashtag anpassen (z.B. #muttertag, #ostern)
-- **Bei Bedarf Julia Trosts Material heranziehen**: `reference/julia-trost/methodik.md`, `Reels to Cash.pdf`, `Stories die verkaufen.pdf`
+### Schritt E: Caption + Hashtags
+- Caption nach `/content` (Pflichtregeln + Caption-Strukturen), Technik aus `/caption`
+- **Genau ein Aufruf:** Stichwort am Schluss (Lead) **oder** Teilen/Speichern/Wahlfrage (Reichweite)
+- Höchstens **5 Hashtags**, `#mamabusiness` als Anker, bei saisonalem Thema einen austauschen
+- Kein „Stell dir vor …“ (Blackliste)
 
 ---
 
@@ -323,7 +283,7 @@ Falls kein passendes Canva-Video existiert UND der Hook mit Gesicht höchste Wir
 **Alles was du lieferst muss diese Tests bestehen:**
 
 ### Hook & Viral-Mechanik
-- [ ] **Hook nach 4-Schritt-Pflicht-Prozess** gebaut (Kategorie + Template + 5-Regeln + Viral-Mechanik dokumentiert)
+- [ ] **Hook hat den letzten Check (fünf Fragen) aus `/content` bestanden**
 - [ ] **Sek. 0 ist ein Pattern-Interrupt** — nicht "Hallo ihr Lieben"
 - [ ] **On-Screen-Text ist ab Sek. 0 sichtbar** (80% schauen ohne Ton)
 - [ ] **3-Sek.-Drop-Off-Risiko** aktiv bedacht (hoher Knall in 0-2)
@@ -346,12 +306,10 @@ Falls kein passendes Canva-Video existiert UND der Hook mit Gesicht höchste Wir
 ### Caption, CTA, Hashtags, Profil
 - [ ] **Profil zu Beginn abgefragt** — Mentoring oder doTERRA (Pflicht-Erstfrage!)
 - [ ] **Job-Säule explizit zugewiesen** — A/B/C/D nach `context/job-saeulen.md` (im Briefing-Output dokumentieren)
-- [ ] **Caption HVC-Formel** (Hook → Value → CTA, erste 125 Zeichen catchen)
-- [ ] **Julia-Trost-Prinzipien** in Caption: Transformation statt Features, Ziel statt Problem
-- [ ] **Caption-Formel** aus `caption-formeln.md` — Nummer im Briefing nennen
-- [ ] **Nur 1 CTA** — Share oder Save bevorzugt (stark gewichtete Algo-Signale)
-- [ ] **5 Hashtags nach Profil** aus `reels-framework.md` (Mix aus Nische/Themen/Community)
-- [ ] **Brand Voice eingehalten** — "du", Umlaute als ä/ö/ü, kurze Sätze
+- [ ] **Caption nach `/content`** — einer der drei Einstiege, Transformation statt Features
+- [ ] **Genau ein Aufruf**, Stichwort nur am Schluss
+- [ ] **Höchstens 5 Hashtags**, `#mamabusiness` als Anker
+- [ ] **Brand Voice eingehalten** — "du", Umlaute als ä/ö/ü, ganze Sätze statt Stakkato
 - [ ] **Profil nicht gemischt** (siehe Memory-Feedback)
 - [ ] **Shotlist konkret** — Sekunde, Szene, Text, Audio, Asset-Quelle in jeder Zeile
 - [ ] **Dreh-Anweisung mit exaktem Text** falls Talking-Head nötig

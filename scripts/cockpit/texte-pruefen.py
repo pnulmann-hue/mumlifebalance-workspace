@@ -253,7 +253,24 @@ def pruefe(d, doc_id, art="reels"):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--nur", help="nur diese eine ID pruefen")
+    ap.add_argument("--datei", nargs="+", help="Markdown-Dateien statt Cockpit-Beitraegen pruefen (z.B. ein /angebot-Paket)")
     args = ap.parse_args()
+
+    if args.datei:
+        # Eine Datei zaehlt wie eine Caption: dieselben Muster, kein Hook-Feld.
+        gesamt = {1: 0, 2: 0}
+        for pfad in args.datei:
+            text = Path(pfad).read_text(encoding="utf-8")
+            # Hashtag- und Hook-Pruefungen gelten nur fuer Instagram-Beitraege.
+            befunde = [b for b in pruefe({"caption": text}, Path(pfad).name)
+                       if not b[1].startswith(("Hashtag", "Kein #", "Kein Hook",
+                                               "Caption bricht ab", "Zu viele Emojis"))]
+            print(f"\n{pfad}" + ("  —  sauber" if not befunde else ""))
+            for schwere, name, stelle in sorted(befunde):
+                gesamt[schwere] += 1
+                print(f"   {'🔴' if schwere == 1 else '🟠'} {name}: {stelle}")
+        print(f"\n{len(args.datei)} Dateien geprueft · 🔴 {gesamt[1]} muss weg · 🟠 {gesamt[2]} ansehen")
+        return
 
     gesamt = {1: 0, 2: 0}
     geprueft = 0

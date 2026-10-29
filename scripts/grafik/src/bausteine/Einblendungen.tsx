@@ -10,8 +10,8 @@ import { Sound } from "./Ton";
  * Eine Einblendung muss SAGEN, nicht schmuecken: nur das Wort, das gerade gesprochen wird.
  */
 export const Knallwort: React.FC<{
-  text: string; unter?: string; schilder?: { emoji?: string; wort: string }[]; sound?: Sound;
-}> = ({ text, unter, schilder }) => {
+  text: string; unter?: string; schilder?: { emoji?: string; wort: string }[]; sound?: Sound; hoehe?: number;
+}> = ({ text, unter, schilder, hoehe = 0.56 }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const s = spring({ frame, fps, config: theme.spring.snappy });
@@ -20,8 +20,10 @@ export const Knallwort: React.FC<{
   });
   const atem = 1 + Math.sin(frame / 22) * 0.006;
   return (
-    <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", opacity: raus }}>
-      <div style={{ textAlign: "center", transform: `scale(${atem})`, width: "88%" }}>
+    // Oberkante auf derselben Hoehe wie Hook und Untertitel (unter dem Kinn). Vorher mittig —
+    // bei nahen Aufnahmen lag die Zahl damit auf dem Kinn (27.10.2026, Gesichtspruefung: 6 Funde).
+    <AbsoluteFill style={{ alignItems: "center", opacity: raus }}>
+      <div style={{ position: "absolute", top: `${hoehe * 100}%`, textAlign: "center", transform: `scale(${atem})`, width: "88%" }}>
         <div style={{
           opacity: s, transform: `scale(${interpolate(s, [0, 1], [0.86, 1])})`,
           fontFamily: sourceSans.fontFamily, fontWeight: 900, fontSize: 150, letterSpacing: "-0.04em",
@@ -39,8 +41,9 @@ export const Knallwort: React.FC<{
                   display: "flex", alignItems: "center", gap: 10, background: "rgba(241,236,221,0.94)",
                   borderRadius: 999, padding: "12px 24px", boxShadow: "0 10px 30px rgba(12,28,48,0.4)",
                 }}>
-                  {sch.emoji ? <span style={{ fontSize: 40, lineHeight: 1 }}>{sch.emoji}</span> : null}
-                  <span style={{ fontFamily: sourceSans.fontFamily, fontWeight: 700, fontSize: 38, color: theme.colors.bg }}>{ss(sch.wort)}</span>
+                  {/* laufender Text ab 60 px (Visual-QA); vorher 38/40, am 28.10. zu klein */}
+                  {sch.emoji ? <span style={{ fontSize: 56, lineHeight: 1 }}>{sch.emoji}</span> : null}
+                  <span style={{ fontFamily: sourceSans.fontFamily, fontWeight: 700, fontSize: 60, color: theme.colors.bg }}>{ss(sch.wort)}</span>
                 </div>
               );
             })}
@@ -48,7 +51,7 @@ export const Knallwort: React.FC<{
         ) : unter ? (
           <div style={{
             opacity: spring({ frame: frame - 7, fps, config: theme.spring.smooth }) * 0.95,
-            fontFamily: philosopher.fontFamily, fontStyle: "italic", fontSize: 44, marginTop: 10,
+            fontFamily: philosopher.fontFamily, fontStyle: "italic", fontSize: 64, marginTop: 10,  // laufender Text ab 60 px (Visual-QA); vorher 44, am 27.10. nicht lesbar
             color: theme.colors.text, textShadow: "0 2px 14px rgba(12,28,48,0.8)",
           }}>{ss(unter)}</div>
         ) : null}

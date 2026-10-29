@@ -355,6 +355,8 @@ context/content-assets-sichtung.md
 
 # Cockpit-Datenabgleich: Listen, Automationen, Umsatz — bleibt lokal
 outputs/cockpit/abgleich/
+# Belegung je Einplan-Lauf (freigabe-nachruecken.py), wird jedes Mal neu geholt
+outputs/cockpit/freigaben/_belegt/
 # Roher Abzug der Cockpit-Datenbank (scripts/cockpit/inhalte-sichern.py).
 # 🚨 Enthaelt daten/doterra.json mit echten Teamnamen und Umsaetzen,
 # dazu Mail-Inhalte und Telegram-Einladungslinks. Das Repo ist oeffentlich.
@@ -408,6 +410,7 @@ nachbau/**
 outputs/strategie/
 # Julias Roadmap-Wissen im Strategie-Skill — zugekauftes Material, Repo ist public
 .claude/skills/strategie/wissen/
+.claude/skills/jahresplan/wissen/
 .claude/skills/content/wissen/
 
 # Mail-Sortierung: Absender und Betreffzeilen fremder Leute
@@ -457,3 +460,18 @@ outputs/produkte/ki-treppe/produktion.html
 # Garten-App: lokale Testdaten (Abzug aus der Artifact-Datenbank)
 outputs/garten/garten-app/testdaten.json
 outputs/garten/garten-app/test.html
+
+# Julia-Trost-Material ist gekauftes Fremdmaterial, das Repo ist oeffentlich (27.10.2026).
+# Steht bewusst ganz unten, damit es die Ausnahme !reference/**/*.txt weiter oben schlaegt.
+# Schon getrackte Dateien bleiben getrackt, bis sie mit git rm --cached herausgenommen werden.
+reference/julia-trost/**
+reference/mentorinnen/
+
+# Angebot auf Knopfdruck: enthält den Hook-Werkzeugkasten (zugekauft)
+outputs/angebot-knopfdruck/
+
+# Tool-Workshop-Mails tragen Zoom-Passwort und Gruppenlink (seit 29.10.2026)
+outputs/produkte/tool-workshop/mails/*.html
+
+# Sicherung der Hook-/Content-Skills vor dem Umbau 29.10. (enthält zugekauftes Material)
+.claude/skills/hooks/_sicherung-*/

@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Story-Generator · Mum Life Balance</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --nacht: #0c1c30; --blau: #29556d; --petrol: #12828c; --creme: #f1ecdd;
+    --orange: #dc822e; --orange-hell: #f3c38f; --text: #f1ecdd; --gedaempft: #b9cbd3;
+    --karte: rgba(241,236,221,.06); --linie: rgba(241,236,221,.16);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; color: var(--text); font: 17px/1.55 'Source Sans 3', Arial, sans-serif;
+    background: radial-gradient(1200px 600px at 80% -10%, rgba(220,130,46,.22), transparent 60%),
+                radial-gradient(900px 500px at 0% 30%, rgba(18,130,140,.25), transparent 60%),
+                linear-gradient(180deg, var(--nacht), #142c45 60%, var(--nacht));
+    min-height: 100vh;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 16px 80px; }
+  .eyebrow { font-weight: 700; letter-spacing: .22em; text-transform: uppercase; font-size: 13px; color: var(--orange-hell); text-align: center; }
+  h1 { font-family: 'Philosopher', Georgia, serif; font-size: clamp(38px, 8vw, 68px); line-height: 1.05; text-align: center; margin: 12px 0 16px; }
+  h1 em { color: var(--orange); font-style: italic; }
+  .lead { text-align: center; color: var(--gedaempft); font-size: 19px; max-width: 640px; margin: 0 auto 36px; }
+  .panel { background: var(--karte); border: 1px solid var(--linie); border-radius: 22px; padding: 28px; backdrop-filter: blur(6px); }
+  label { display: block; font-weight: 700; margin: 22px 0 8px; }
+  label:first-child { margin-top: 0; }
+  label small { font-weight: 400; color: var(--gedaempft); }
+  textarea, input[type=text], select {
+    width: 100%; font: inherit; color: var(--text); background: rgba(12,28,48,.55);
+    border: 1px solid var(--linie); border-radius: 14px; padding: 14px 16px;
+  }
+  textarea { min-height: 96px; resize: vertical; }
+  textarea:focus, input:focus, select:focus { outline: 2px solid var(--orange); outline-offset: 1px; }
+  ::placeholder { color: #8ea6b2; }
+  .wahl { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+  .wahl button {
+    font: inherit; font-weight: 600; color: var(--text); background: rgba(12,28,48,.45);
+    border: 1px solid var(--linie); border-radius: 14px; padding: 12px 14px; cursor: pointer; text-align: left;
+  }
+  .wahl button small { display: block; font-weight: 400; color: var(--gedaempft); font-size: 14px; }
+  .wahl button[aria-pressed=true] { border-color: var(--orange); background: rgba(220,130,46,.18); }
+  .zeile { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 600px) { .zeile { grid-template-columns: 1fr; } .panel { padding: 20px; } }
+  .hilfe { background: none; border: none; color: var(--orange-hell); font: inherit; font-size: 15px; text-decoration: underline; cursor: pointer; padding: 6px 0 0; }
+  .fragen { display: none; margin-top: 10px; padding: 14px 18px; border-radius: 14px; background: rgba(18,130,140,.16); border: 1px solid rgba(18,130,140,.4); }
+  .fragen.offen { display: block; }
+  .fragen ul { margin: 6px 0 0; padding-left: 20px; }
+  .los { display: flex; justify-content: flex-end; align-items: center; gap: 16px; margin-top: 28px; flex-wrap: wrap; }
+  .knopf {
+    font: inherit; font-weight: 700; font-size: 18px; color: var(--nacht); background: var(--orange);
+    border: none; border-radius: 999px; padding: 15px 30px; cursor: pointer; box-shadow: 0 10px 30px rgba(220,130,46,.35);
+  }
+  .knopf:disabled { opacity: .6; cursor: wait; }
+  .klein { font: inherit; font-size: 15px; font-weight: 600; color: var(--text); background: transparent; border: 1px solid var(--linie); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+  .fehler { color: #ffb4a0; margin-top: 14px; }
+  .versteckt { display: none !important; }
+  #ergebnis { margin-top: 44px; }
+  .kopf { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+  .kopf h2 { font-family: 'Philosopher', Georgia, serif; font-size: 34px; margin: 0; }
+  .bogen { color: var(--gedaempft); margin: 6px 0 22px; }
+  .slide { display: grid; grid-template-columns: 150px 1fr; gap: 20px; padding: 20px; margin-bottom: 14px; border-radius: 20px; background: var(--karte); border: 1px solid var(--linie); }
+  @media (max-width: 600px) { .slide { grid-template-columns: 1fr; } }
+  .handy {
+    aspect-ratio: 9/16; border-radius: 14px; padding: 14px 10px; display: flex; flex-direction: column; justify-content: center;
+    background: linear-gradient(160deg, var(--blau), var(--nacht)); border: 1px solid var(--linie); position: relative; overflow: hidden;
+  }
+  @media (max-width: 600px) { .handy { width: 150px; } }
+  .handy .nr { position: absolute; top: 8px; left: 10px; font-size: 12px; color: var(--orange-hell); font-weight: 700; }
+  .handy p { margin: 0; background: rgba(241,236,221,.92); color: var(--nacht); border-radius: 6px; padding: 6px 7px; font-size: 12.5px; line-height: 1.3; font-weight: 600; }
+  .marke { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--orange-hell); margin-right: 10px; }
+  .feld { margin-top: 10px; }
+  .feld b { display: block; font-size: 13px; color: var(--gedaempft); text-transform: uppercase; letter-spacing: .08em; }
+  .feld div { white-space: pre-wrap; }
+  .tipp { padding: 18px 22px; border-radius: 18px; background: rgba(220,130,46,.14); border: 1px solid rgba(220,130,46,.45); margin-top: 20px; }
+  .zugang { display: flex; gap: 10px; align-items: center; margin-bottom: 22px; flex-wrap: wrap; }
+  .zugang input { max-width: 240px; }
+  footer { text-align: center; color: #7f97a4; font-size: 14px; margin-top: 48px; }
+  .lade { display: inline-block; width: 18px; height: 18px; border: 3px solid rgba(12,28,48,.3); border-top-color: var(--nacht); border-radius: 50%; animation: dreh 0.8s linear infinite; vertical-align: -3px; margin-right: 8px; }
+  @keyframes dreh { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Mum Life Balance · Story-Generator</p>
+  <h1>Vom Alltag <em>zur Story</em></h1>
+  <p class="lead">Du gibst eine Situation aus deinem Tag und dein Produkt ein. Du bekommst eine fertige Story-Abfolge: Einstieg, Geschichte, Learning, die Brücke zum Angebot und den Aufruf. Slide für Slide, mit Text und Sprechtext.</p>
+
+  <div class="panel">
+    <div class="zugang">
+      <label for="code" style="margin:0">Dein Zugangscode</label>
+      <input type="text" id="code" autocomplete="off" placeholder="steht in deiner Kaufbestätigung">
+    </div>
+
+    <label>Was ist heute los?</label>
+    <div class="wahl" data-gruppe="modus">
+      <button type="button" data-wert="alltag" aria-pressed="true">Ein ganz normaler Tag<small>Story mit Brücke zum Freebie oder Angebot</small></button>
+      <button type="button" data-wert="pitch" aria-pressed="false">Ich bin gerade im Pitch<small>ein Angebot ist offen oder öffnet bald</small></button>
+    </div>
+
+    <label for="situation">Deine Alltagssituation <small>— was ist passiert?</small></label>
+    <textarea id="situation" placeholder="Je genauer, desto besser. Zum Beispiel: „Heute Morgen um halb acht stand mein Sohn im Gang und hat seinen Turnsack gesucht, der Bus fuhr in acht Minuten. Ich hab gemerkt, dass ich seit Wochen jeden Morgen dasselbe Theater habe.“"></textarea>
+    <button type="button" class="hilfe" id="hilfeKnopf">Mir fällt gerade nichts ein</button>
+    <div class="fragen" id="fragen"><b>Frag dich:</b><ul id="fragenListe"></ul><button type="button" class="hilfe" id="andereFragen">andere Fragen</button></div>
+
+    <label for="produkt">Dein Produkt oder Angebot <small>— Name und was es im Alltag verändert</small></label>
+    <textarea id="produkt" style="min-height:72px" placeholder="Zum Beispiel: „Mein kostenloser Wochenplan für den Familienalltag. Damit ist am Sonntag in 20 Minuten klar, wer wann was braucht.“"></textarea>
+
+    <label for="zielgruppe">Für wen erzählst du? <small>(freiwillig)</small></label>
+    <input type="text" id="zielgruppe" placeholder="Zum Beispiel: „Eltern mit Schulkindern, die morgens immer zu spät dran sind“">
+
+    <div id="nurAlltag">
+      <label>Wohin soll die Story führen?</label>
+      <div class="wahl" data-gruppe="ziel">
+        <button type="button" data-wert="freebie" aria-pressed="true">Zu etwas Kostenlosem<small>Freebie, Gespräch, Gratis-Probe</small></button>
+        <button type="button" data-wert="angebot" aria-pressed="false">Zum bezahlten Angebot<small>wenn die Geschichte warm genug ist</small></button>
+      </div>
+      <label>Welcher Anlass? <small>(freiwillig)</small></label>
+      <div class="wahl" data-gruppe="anlass">
+        <button type="button" data-wert="" aria-pressed="true">Such du aus<small>passend zur Situation</small></button>
+        <button type="button" data-wert="Nähe" aria-pressed="false">Nähe<small>ich zeige mich als Mensch</small></button>
+        <button type="button" data-wert="Mehrwert" aria-pressed="false">Mehrwert<small>ich gebe einen Tipp mit</small></button>
+        <button type="button" data-wert="Haltung" aria-pressed="false">Haltung<small>meine Meinung dazu</small></button>
+      </div>
+    </div>
+
+    <div id="nurPitch" class="versteckt">
+      <label for="phase">Wo stehst du im Pitch?</label>
+      <select id="phase">
+        <option value="aufwaermen">Aufwärmen — die Türen öffnen bald</option>
+        <option value="offen">Türen offen — erster Verkaufstag</option>
+        <option value="mitte" selected>Mittendrin — Verkauf läuft</option>
+        <option value="letzter">Letzter Tag</option>
+        <option value="danach">Danach — Verkauf ist vorbei</option>
+      </select>
+      <label for="details">Preis, Frist, was drinsteckt <small>— nur, was stimmt</small></label>
+      <input type="text" id="details" placeholder="Zum Beispiel: „39 Franken bis Sonntag 23 Uhr, danach 59. Drei Videos und eine Vorlage.“">
+    </div>
+
+    <div class="zeile">
+      <div>
+        <label>Wie sollen die Leute reagieren?</label>
+        <div class="wahl" data-gruppe="reaktion">
+          <button type="button" data-wert="link" aria-pressed="true">Link-Sticker</button>
+          <button type="button" data-wert="stichwort" aria-pressed="false">Stichwort schreiben</button>
+        </div>
+        <input type="text" id="stichwort" class="versteckt" placeholder="Stichwort, z. B. PLAN" style="margin-top:10px">
+      </div>
+      <div>
+        <label for="schreibweise">Schreibweise</label>
+        <select id="schreibweise">
+          <option value="ch">Schweiz (ss)</option>
+          <option value="de">Deutschland/Österreich (ß)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="los">
+      <button type="button" class="knopf" id="bauen">Story bauen →</button>
+    </div>
+    <p class="fehler versteckt" id="fehler" role="alert"></p>
+  </div>
+
+  <section id="ergebnis" class="versteckt" aria-live="polite">
+    <div class="kopf">
+      <div><h2 id="titel"></h2><p class="bogen" id="bogen"></p></div>
+      <button type="button" class="klein" id="allesKopieren">Alles kopieren</button>
+    </div>
+    <div id="slides"></div>
+    <div class="tipp" id="tipp"></div>
+    <div class="tipp versteckt" id="luecken" style="background:rgba(18,130,140,.16);border-color:rgba(18,130,140,.5)"></div>
+    <div class="los"><button type="button" class="klein" id="nochmal">Andere Fassung bauen</button></div>
+  </section>
+
+  <footer>Die KI schreibt den Entwurf, du gibst ihm deine Stimme. Lies jede Slide laut, bevor du sie postest, und lass weg, was nicht stimmt. Deine Eingaben werden nicht gespeichert.</footer>
+</div>
+
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const zustand = { modus: 'alltag', ziel: 'freebie', anlass: '', reaktion: 'link' };
+  const FRAGEN = [
+    'Was ist heute schiefgegangen, und wie hast du es gelöst?',
+    'Welche Frage hat dir diese Woche jemand gestellt?',
+    'Was hat dich heute aufgeregt?',
+    'Wann hast du dein Produkt heute benutzt, ohne darüber nachzudenken?',
+    'Welcher Moment hat dich heute zum Lachen gebracht?',
+    'Was machst du heute anders als vor einem Jahr?',
+    'Welcher Satz von deinem Kind oder Partner ist dir hängen geblieben?',
+    'Wo warst du heute, und wie sah es dort aus?',
+    'Was hast du heute zum ersten Mal gemacht?',
+    'Was ist dir heute leichtgefallen, das früher schwer war?',
+    'Worauf hast du heute bewusst verzichtet?',
+    'Welcher kleine Fehler ist dir passiert, über den du heute lachen kannst?',
+  ];
+  const sicher = (fn) => { try { return fn(); } catch (e) { return null; } };
+
+  $('code').value = sicher(() => localStorage.getItem('sg-code')) || '';
+
+  document.querySelectorAll('.wahl').forEach((gruppe) => {
+    gruppe.addEventListener('click', (ev) => {
+      const b = ev.target.closest('button'); if (!b) return;
+      gruppe.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      zustand[gruppe.dataset.gruppe] = b.dataset.wert;
+      $('nurAlltag').classList.toggle('versteckt', zustand.modus !== 'alltag');
+      $('nurPitch').classList.toggle('versteckt', zustand.modus !== 'pitch');
+      $('stichwort').classList.toggle('versteckt', zustand.reaktion !== 'stichwort');
+    });
+  });
+
+  function fragenZeigen() {
+    const gemischt = FRAGEN.slice().sort(() => Math.random() - 0.5).slice(0, 4);
+    $('fragenListe').innerHTML = gemischt.map((f) => '<li>' + f + '</li>').join('');
+    $('fragen').classList.add('offen');
+  }
+  $('hilfeKnopf').addEventListener('click', fragenZeigen);
+  $('andereFragen').addEventListener('click', fragenZeigen);
+
+  const esc = (s) => String(s || '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  let letzte = null;
+
+  function fehler(t) { $('fehler').textContent = t; $('fehler').classList.toggle('versteckt', !t); }
+
+  async function bauen() {
+    fehler('');
+    const code = $('code').value.trim();
+    if (!code) return fehler('Bitte gib zuerst deinen Zugangscode ein.');
+    sicher(() => localStorage.setItem('sg-code', code));
+    const daten = {
+      code, modus: zustand.modus, situation: $('situation').value, produkt: $('produkt').value,
+      zielgruppe: $('zielgruppe').value, ziel: zustand.ziel, anlass: zustand.anlass,
+      phase: $('phase').value, details: $('details').value, reaktion: zustand.reaktion,
+      stichwort: $('stichwort').value, schreibweise: $('schreibweise').value,
+    };
+    const knopf = $('bauen');
+    knopf.disabled = true; knopf.innerHTML = '<span class="lade"></span>Ich schreibe deine Story …';
+    try {
+      const r = await fetch('/api/story', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(daten) });
+      const d = await r.json().catch(() => ({}));
+      if (!r.ok) return fehler(d.error || 'Hat nicht geklappt — bitte nochmal.');
+      letzte = d; zeigen(d);
+    } catch (e) {
+      fehler('Keine Verbindung. Prüf dein Internet und versuch es nochmal.');
+    } finally {
+      knopf.disabled = false; knopf.textContent = 'Story bauen →';
+    }
+  }
+
+  function zeigen(d) {
+    $('titel').textContent = d.titel || 'Deine Story';
+    $('bogen').textContent = (d.anlass ? d.anlass + ' · ' : '') + (d.bogen || '');
+    $('slides').innerHTML = (d.slides || []).map((s, i) => `
+      <article class="slide">
+        <div class="handy"><span class="nr">${i + 1}</span><p>${esc(s.overlay)}</p></div>
+        <div>
+          <span class="marke">${esc(s.rolle)}</span><span class="marke" style="color:var(--gedaempft)">${esc(s.format)}</span>
+          <div class="feld"><b>Text auf der Slide</b><div>${esc(s.overlay)}</div></div>
+          ${s.sprechtext ? `<div class="feld"><b>Das sagst du</b><div>${esc(s.sprechtext)}</div></div>` : ''}
+          ${s.sticker ? `<div class="feld"><b>Sticker</b><div>${esc(s.sticker)}</div></div>` : ''}
+          <div class="los" style="margin-top:12px;justify-content:flex-start"><button type="button" class="klein" data-kopie="${i}">Slide kopieren</button></div>
+        </div>
+      </article>`).join('');
+    $('tipp').innerHTML = '<b>So zeigst du die Szene:</b> ' + esc(d.regie_tipp || '');
+    const l = (d.luecken || []).filter(Boolean);
+    $('luecken').classList.toggle('versteckt', !l.length);
+    $('luecken').innerHTML = l.length ? '<b>Bitte noch ausfüllen:</b> ' + l.map(esc).join(' · ') : '';
+    $('ergebnis').classList.remove('versteckt');
+    $('ergebnis').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function slideText(s, i) {
+    return [`Slide ${i + 1} · ${s.rolle} · ${s.format}`, 'Text: ' + (s.overlay || ''),
+      s.sprechtext ? 'Sprechtext: ' + s.sprechtext : '', s.sticker ? 'Sticker: ' + s.sticker : ''].filter(Boolean).join('\n');
+  }
+  async function kopieren(text, knopf) {
+    try { await navigator.clipboard.writeText(text); }
+    catch (e) { const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); }
+    const alt = knopf.textContent; knopf.textContent = 'Kopiert ✓'; setTimeout(() => { knopf.textContent = alt; }, 1500);
+  }
+  $('slides').addEventListener('click', (ev) => {
+    const b = ev.target.closest('[data-kopie]'); if (!b || !letzte) return;
+    const i = Number(b.dataset.kopie); kopieren(slideText(letzte.slides[i], i), b);
+  });
+  $('allesKopieren').addEventListener('click', (ev) => {
+    if (!letzte) return;
+    kopieren([letzte.titel, ...letzte.slides.map(slideText), 'Tipp: ' + (letzte.regie_tipp || '')].join('\n\n'), ev.currentTarget);
+  });
+  $('bauen').addEventListener('click', bauen);
+  $('nochmal').addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); bauen(); });
+})();
+</script>
+</body>
+</html>

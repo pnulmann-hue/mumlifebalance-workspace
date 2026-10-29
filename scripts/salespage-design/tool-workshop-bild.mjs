@@ -1,0 +1,131 @@
+// Hero-Bild für die Tool-Workshop-Seite: Geräte-Collage (Laptop, zwei Tablets, Handy) mit gestalteten
+// Bildschirmen, Aufklebern und Preisschild in Patricias Farben. Idee einer Geräte-Collage von einer
+// Mentorinnen-Seite übernommen, Inhalt und Gestaltung eigen. Keine KI-Bilder: alles ist HTML/CSS.
+//
+//   node scripts/salespage-design/tool-workshop-bild.mjs
+// -> outputs/salespages/tool-workshop/bild/hero.png (1500x900, durchsichtiger Hintergrund)
+// Danach als webp nach WordPress (Medium 4449 ersetzen oder neu hochladen) und in tool-workshop-body.html eintragen.
+import { createRequire } from 'node:module';
+import { mkdirSync, writeFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
+const require = createRequire(new URL('../karussell-render/package.json', import.meta.url));
+const puppeteer = require('puppeteer');
+const ZIEL = fileURLToPath(new URL('../../outputs/salespages/tool-workshop/bild/', import.meta.url));
+mkdirSync(ZIEL, { recursive: true });
+
+const F = { tinte: '#0c1c30', blau: '#29556d', petrol: '#12828c', orange: '#dc822e', creme: '#f1ecdd', weiss: '#fffdf8', linie: '#e3dac4' };
+
+const html = `<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Source+Sans+3:wght@400;600;700;800&display=swap">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:transparent}
+.b{position:relative;width:1500px;height:900px;font-family:'Source Sans 3',sans-serif;color:${F.tinte}}
+.ser{font-family:'Philosopher',serif}
+.schatten{box-shadow:0 30px 70px rgba(12,28,48,.45),0 8px 20px rgba(12,28,48,.25)}
+/* Laptop */
+.lap{position:absolute;left:410px;top:95px;width:690px;z-index:2}
+.lap .deckel{background:${F.tinte};border-radius:26px 26px 10px 10px;padding:20px 20px 26px}
+.lap .bs{background:${F.weiss};border-radius:8px;height:410px;padding:24px 30px;overflow:hidden}
+.lap .fuss{height:26px;margin:0 -54px;background:linear-gradient(#d9d2c0,#a59e90);border-radius:0 0 28px 28px}
+.kopf{display:flex;justify-content:space-between;align-items:center}
+.marke{font-size:20px;font-weight:800;color:${F.blau};letter-spacing:.02em}
+.pill{background:${F.creme};border:1.5px solid ${F.linie};border-radius:999px;padding:6px 14px;font-size:15px;font-weight:700;color:${F.petrol}}
+.titel{font-size:33px;line-height:1.1;margin:18px 0 6px;color:${F.blau}}
+.frage{font-size:19px;font-weight:700;margin:14px 0 12px}
+.opt{display:flex;align-items:center;gap:12px;border:2px solid ${F.linie};border-radius:14px;padding:10px 14px;margin-bottom:9px;font-size:17px;font-weight:600;background:#fff}
+.opt .n{width:28px;height:28px;border-radius:50%;background:${F.creme};display:grid;place-items:center;font-weight:800;font-size:15px;color:${F.blau}}
+.opt.an{border-color:${F.orange};background:#fdf1e6}
+.opt.an .n{background:${F.orange};color:#fff}
+.unten{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
+.balken{width:300px;height:10px;border-radius:9px;background:${F.creme};overflow:hidden}
+.balken i{display:block;width:50%;height:100%;background:${F.petrol}}
+.klein{font-size:14px;font-weight:700;color:#6b7680;margin-top:6px}
+.knopf{background:${F.orange};color:#fff;font-weight:800;border-radius:999px;padding:11px 26px;font-size:17px}
+/* Tablets */
+.tab{position:absolute;background:${F.tinte};border-radius:30px;padding:16px;z-index:3}
+.tab .bs{background:${F.weiss};border-radius:18px;height:100%;padding:24px 22px;overflow:hidden}
+.links{left:70px;top:300px;width:370px;height:500px;transform:rotate(-6deg)}
+.rechts{left:1040px;top:400px;width:420px;height:330px;transform:rotate(5deg)}
+.th{font-size:29px;line-height:1.08;color:${F.blau};margin-bottom:16px}
+.th em{font-style:normal;color:${F.orange}}
+.schritt{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.5px solid ${F.linie};border-radius:16px;padding:12px;margin-bottom:11px}
+.schritt .z{flex:none;width:40px;height:40px;border-radius:50%;background:${F.petrol};color:#fff;font-weight:800;font-size:20px;display:grid;place-items:center}
+.schritt b{display:block;font-size:19px;color:${F.tinte}}
+.schritt span{font-size:15px;color:#4f5d68;line-height:1.3}
+.raster{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.kachel{background:#fff;border:1.5px solid ${F.linie};border-radius:16px;padding:12px;display:flex;gap:10px;align-items:center}
+.kachel .i{flex:none;width:40px;height:40px;border-radius:12px;background:${F.creme};display:grid;place-items:center;font-size:22px}
+.kachel b{font-size:17px;line-height:1.15}
+/* Handy */
+.handy{position:absolute;left:660px;top:478px;width:200px;height:390px;background:${F.tinte};border-radius:36px;padding:11px;transform:rotate(3deg);z-index:4}
+.handy .bs{background:${F.creme};border-radius:27px;height:100%;padding:34px 16px 16px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.handy .gross{font-size:56px;margin:6px 0 10px}
+.handy .t{font-size:29px;line-height:1.05;color:${F.blau}}
+.handy .t em{font-style:normal;color:${F.orange}}
+.handy .ok{margin:14px 0;font-size:13px;white-space:nowrap;font-weight:700;color:${F.petrol};display:flex;gap:6px;align-items:center}
+.handy .ok i{width:10px;height:10px;border-radius:50%;background:#3aa76d;display:inline-block}
+.handy .knopf{font-size:15px;padding:10px 20px}
+/* Aufkleber */
+.kl{position:absolute;display:grid;place-items:center;text-align:center;border-radius:50%;z-index:5;font-weight:800}
+.k1{left:300px;top:60px;width:150px;height:150px;background:${F.orange};color:#fff;transform:rotate(-10deg)}
+.k2{left:1080px;top:150px;width:150px;height:150px;background:${F.petrol};color:#fff;transform:rotate(9deg)}
+.kl .g{font-family:'Philosopher',serif;font-size:62px;line-height:.9}
+.kl .s{font-size:17px;letter-spacing:.06em;text-transform:uppercase;line-height:1.1}
+.preis{position:absolute;left:1180px;top:770px;z-index:6;background:${F.orange};color:#fff;border-radius:18px;padding:14px 26px;transform:rotate(-4deg);font-family:'Philosopher',serif;font-size:40px;font-weight:700;white-space:nowrap}
+.preis small{font-family:'Source Sans 3';font-size:18px;font-weight:800;display:block;letter-spacing:.06em;text-transform:uppercase;opacity:.9}
+.deko{position:absolute;font-size:40px;z-index:5}
+</style></head><body><div class="b">
+
+<div class="lap"><div class="deckel schatten"><div class="bs">
+  <div class="kopf"><span class="marke">DEIN GRATIS-TOOL</span><span class="pill">Ergebnis in einer Minute</span></div>
+  <div class="titel ser">Energie-Check für den Familienalltag</div>
+  <div class="frage">Wie startest du meistens in den Tag?</div>
+  <div class="opt"><span class="n">A</span>Schon müde, bevor alle aus dem Haus sind</div>
+  <div class="opt an"><span class="n">B</span>Ganz okay, bis am Nachmittag das Tief kommt</div>
+  <div class="opt"><span class="n">C</span>Ausgeruht und mit Plan</div>
+  <div class="unten"><div><div class="balken"><i></i></div><div class="klein">Frage 3 von 6</div></div><span class="knopf">Weiter</span></div>
+</div></div><div class="fuss"></div></div>
+
+<div class="tab links schatten"><div class="bs">
+  <div class="th ser">Dein Weg zum <em>eigenen Tool</em></div>
+  <div class="schritt"><span class="z">1</span><div><b>Thema finden</b><span>mit dem Nischengenerator, vor dem Workshop</span></div></div>
+  <div class="schritt"><span class="z">2</span><div><b>Tool bauen</b><span>Dienstag, live mit Claude, ohne Code</span></div></div>
+  <div class="schritt"><span class="z">3</span><div><b>Seite online</b><span>Mittwoch, mit Formular oder WhatsApp-Knopf</span></div></div>
+</div></div>
+
+<div class="tab rechts schatten"><div class="bs">
+  <div class="th ser" style="font-size:27px">Alles, was du <em>bekommst</em></div>
+  <div class="raster">
+    <div class="kachel"><span class="i">🎥</span><b>Aufzeichnung beider Abende</b></div>
+    <div class="kachel"><span class="i">📋</span><b>Vorlagen für Claude</b></div>
+    <div class="kachel"><span class="i">📄</span><b>Deine Eintrageseite</b></div>
+    <div class="kachel"><span class="i">🤝</span><b>3 Tage Begleitung</b></div>
+  </div>
+</div></div>
+
+<div class="handy schatten"><div class="bs">
+  <div class="gross">🎉</div>
+  <div class="t ser">Dein Tool ist <em>online</em></div>
+  <div class="ok"><i></i>Link bereit zum Teilen</div>
+  <span class="knopf">Tool öffnen</span>
+</div></div>
+
+<div class="kl k1 schatten"><div><div class="g">2</div><div class="s">Abende<br>live</div></div></div>
+<div class="kl k2 schatten"><div><div class="g">0</div><div class="s">Zeilen<br>Code</div></div></div>
+<div class="preis schatten"><small>einmalig</small>39 CHF · 39 €</div>
+<div class="deko" style="left:250px;top:250px">✨</div>
+<div class="deko" style="left:1250px;top:330px">🚀</div>
+<div class="deko" style="left:940px;top:40px;font-size:32px">✨</div>
+</div></body></html>`;
+
+writeFileSync(ZIEL + 'hero.html', html);
+const browser = await puppeteer.launch({ headless: 'new' });
+const seite = await browser.newPage();
+await seite.setViewport({ width: 1500, height: 900, deviceScaleFactor: 1 });
+await seite.goto('file:///' + ZIEL.replace(/\\/g, '/') + 'hero.html', { waitUntil: 'networkidle0' });
+await seite.evaluate(() => document.fonts.ready);
+await seite.screenshot({ path: ZIEL + 'hero.png', omitBackground: true, clip: { x: 0, y: 0, width: 1500, height: 900 } });
+await browser.close();
+console.log('→', ZIEL + 'hero.png');

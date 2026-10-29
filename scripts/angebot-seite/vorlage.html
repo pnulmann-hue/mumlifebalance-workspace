@@ -1,0 +1,946 @@
+<title>Angebot auf Knopfdruck</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap">
+<style>
+/* Werkstatt-Blatt: ein dunkelblauer Kopf wie ein Buchumschlag, darunter drei Stationen
+   mit grosser kursiver Ziffer am Rand. Der orange Knopf ist der eine laute Moment. */
+:root{
+  --grund:#efe9da; --blatt:#fbf8f1; --creme:#f1ecdd; --feld:#f6f1e4; --linie:#ddd3bb;
+  --tinte:#0c1c30; --weich:#5d6a74; --blau:#29556d; --nacht:#1d3f52; --petrol:#12828c;
+  --orange:#dc822e; --orange-tief:#a9581a; --gut:#2f7d4f; --warn:#b4472b; --auf-blau:#f6efe0;
+  --display:"Philosopher",Georgia,serif; --text:"Source Sans 3","Source Sans Pro",system-ui,sans-serif;
+  --mono:ui-monospace,"SFMono-Regular",Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --grund:#0d1720; --blatt:#132230; --creme:#1a2c3a; --feld:#0f1c27; --linie:#2a3e4e;
+  --tinte:#eef0ea; --weich:#a1afba; --blau:#9cc7dc; --nacht:#0a1d29; --petrol:#52b9c1;
+  --orange:#e8964a; --orange-tief:#9c5418; --gut:#6cc28f; --warn:#e7866c; --auf-blau:#f6efe0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --grund:#0d1720; --blatt:#132230; --creme:#1a2c3a; --feld:#0f1c27; --linie:#2a3e4e;
+  --tinte:#eef0ea; --weich:#a1afba; --blau:#9cc7dc; --nacht:#0a1d29; --petrol:#52b9c1;
+  --orange:#e8964a; --orange-tief:#9c5418; --gut:#6cc28f; --warn:#e7866c; --auf-blau:#f6efe0; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--grund);color:var(--tinte);font:17px/1.6 var(--text);margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 90px}
+.wrap{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:30px}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+
+.umschlag{position:relative;overflow:hidden;border-radius:26px;background:var(--nacht);color:var(--auf-blau);
+  padding:clamp(28px,6vw,56px) clamp(22px,5vw,56px) clamp(26px,5vw,44px)}
+.umschlag::before{content:"";position:absolute;right:-90px;top:-90px;width:340px;height:340px;border-radius:50%;
+  border:1px solid color-mix(in srgb,var(--auf-blau) 18%,transparent);box-shadow:0 0 0 46px color-mix(in srgb,var(--auf-blau) 4%,transparent),0 0 0 92px color-mix(in srgb,var(--auf-blau) 3%,transparent)}
+.umschlag::after{content:"";position:absolute;right:56px;top:58px;width:62px;height:62px;border-radius:50%;background:var(--orange);
+  box-shadow:0 7px 0 var(--orange-tief)}
+.eyebrow{font:600 12px/1 var(--text);letter-spacing:.2em;text-transform:uppercase;color:color-mix(in srgb,var(--auf-blau) 70%,transparent);position:relative}
+h1{font-size:clamp(40px,8vw,72px);line-height:.98;margin-top:16px;color:var(--auf-blau);max-width:12ch;position:relative}
+h1 em{display:block;color:var(--orange);font-style:italic}
+.unter{max-width:56ch;margin:18px 0 0;color:color-mix(in srgb,var(--auf-blau) 82%,transparent);font-size:17px;position:relative}
+.weg{list-style:none;margin:28px 0 0;padding:20px 0 0;border-top:1px solid color-mix(in srgb,var(--auf-blau) 18%,transparent);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;position:relative}
+.weg li{display:flex;gap:10px;align-items:baseline;font-size:15px;color:color-mix(in srgb,var(--auf-blau) 75%,transparent)}
+.weg b{font:italic 26px/1 var(--display);color:var(--orange)}
+
+.station{display:grid;grid-template-columns:84px 1fr;gap:0 18px}
+.ziffer{font:italic 400 76px/.9 var(--display);color:var(--orange);text-align:right;padding-top:14px}
+.karte{background:var(--blatt);border:1px solid var(--linie);border-radius:22px;padding:26px clamp(18px,4vw,34px) 28px;
+  display:flex;flex-direction:column;gap:20px;min-width:0;box-shadow:0 1px 0 color-mix(in srgb,var(--tinte) 4%,transparent),0 18px 40px -28px color-mix(in srgb,var(--nacht) 45%,transparent)}
+.kopf{display:flex;flex-direction:column;gap:4px}
+.nr{font:600 11px/1 var(--text);letter-spacing:.2em;text-transform:uppercase;color:var(--petrol)}
+.station h2{font-size:clamp(28px,4vw,36px);color:var(--blau);line-height:1.1}
+.kopf p{margin:4px 0 0;color:var(--weich);font-size:15px;max-width:60ch}
+
+.arten{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.art{all:unset;box-sizing:border-box;cursor:pointer;border:1px solid var(--linie);border-radius:18px;padding:18px 18px 16px;background:var(--feld);
+  display:flex;flex-direction:column;gap:8px;transition:transform .15s,background .15s,border-color .15s}
+.art:hover{transform:translateY(-2px);border-color:var(--blau)}
+.art .p{font:400 34px/1 var(--display);color:var(--blau)}
+.art .p small{font:600 12px var(--text);letter-spacing:.08em;margin-left:4px;color:var(--weich)}
+.art b{font:700 17px/1.2 var(--text);color:var(--tinte)}
+.art .w{font-size:14px;color:var(--weich);line-height:1.4}
+.art[aria-pressed="true"]{background:var(--nacht);border-color:var(--nacht)}
+.art[aria-pressed="true"] .p{color:var(--orange)}
+.art[aria-pressed="true"] b{color:var(--auf-blau)}
+.art[aria-pressed="true"] .w,.art[aria-pressed="true"] .p small{color:color-mix(in srgb,var(--auf-blau) 70%,transparent)}
+.art:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+
+.felder{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px}
+.feld{display:flex;flex-direction:column;gap:6px;min-width:0}
+.feld.breit{grid-column:1/-1}
+label{font-weight:600;font-size:14px;color:var(--blau)}
+label small{font-weight:400;color:var(--weich)}
+input,textarea,select{font:inherit;font-size:16px;color:var(--tinte);background:var(--feld);border:1px solid transparent;
+  border-bottom:1.5px solid var(--linie);border-radius:10px 10px 4px 4px;padding:10px 12px;width:100%;transition:border-color .15s,background .15s}
+input:focus,textarea:focus,select:focus{border-bottom-color:var(--petrol);background:var(--blatt)}
+input:disabled{color:var(--weich)}
+textarea{min-height:80px;resize:vertical}
+.vorschlag{border-bottom-color:var(--petrol);background:color-mix(in srgb,var(--petrol) 9%,var(--feld))}
+.kette{display:grid;grid-template-columns:110px 1fr 96px;gap:8px 10px;align-items:center}
+.kette .kopfz{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--weich)}
+.reihe{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.knopf{font:600 15px/1 var(--text);border-radius:999px;padding:12px 20px;cursor:pointer;border:1.5px solid var(--blau);background:transparent;color:var(--blau);transition:background .15s,color .15s}
+.knopf:hover:not(:disabled){background:var(--blau);color:var(--blatt)}
+.knopf.voll{background:var(--blau);color:var(--blatt)}
+.knopf.zart{border-color:var(--petrol);color:var(--petrol)}
+.knopf.zart:hover:not(:disabled){background:var(--petrol);color:var(--blatt)}
+.knopf:disabled{opacity:.5;cursor:default}
+.hinweis{font-size:14px;color:var(--weich)}
+.pruef{list-style:none;margin:0;padding:14px 16px;display:flex;flex-direction:column;gap:6px;font-size:15px;background:var(--feld);border-radius:14px}
+.pruef:empty{display:none}
+.pruef li{padding-left:26px;position:relative}
+.pruef li::before{position:absolute;left:0;top:0}
+.pruef .ok::before{content:"✓";color:var(--gut);font-weight:700}
+.pruef .nein{color:var(--warn)} .pruef .nein::before{content:"✕";font-weight:700}
+
+.plan{margin:0;background:var(--nacht);color:var(--auf-blau);border-radius:18px;padding:22px 24px;display:grid;grid-template-columns:auto 1fr;gap:10px 22px;font-size:15px;position:relative}
+.plan::before{content:"Bauplan";position:absolute;right:20px;top:16px;font:italic 15px var(--display);color:var(--orange)}
+.plan dt{color:color-mix(in srgb,var(--auf-blau) 60%,transparent);font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding-top:3px}
+.plan dd{margin:0;font-weight:600;min-width:0}
+.start{display:flex;flex-direction:column;align-items:center;gap:20px;padding:22px 0 6px}
+.rund{position:relative;width:184px;height:184px;border-radius:50%;border:0;cursor:pointer;background:var(--orange);color:#fff;
+  font:700 23px/1.1 var(--display);box-shadow:0 10px 0 var(--orange-tief),0 26px 40px -10px color-mix(in srgb,var(--orange) 55%,transparent);
+  transition:transform .12s,box-shadow .12s;padding:0 22px}
+.rund::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:1.5px dashed color-mix(in srgb,var(--orange) 55%,transparent)}
+.rund:not(:disabled)::after{animation:dreh 24s linear infinite}
+.rund:hover:not(:disabled){transform:translateY(-2px)}
+.rund:active:not(:disabled){transform:translateY(8px);box-shadow:0 2px 0 var(--orange-tief)}
+.rund:disabled{filter:grayscale(.65);opacity:.55;cursor:default}
+.fortschritt{display:flex;flex-direction:column;gap:8px}
+.balken{height:6px;border-radius:99px;background:var(--feld);overflow:hidden}
+.balken i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--petrol),var(--orange));border-radius:99px;transition:width .4s}
+.liste{display:flex;flex-direction:column;gap:10px}
+.baustein{border:1px solid var(--linie);border-radius:16px;background:var(--feld);overflow:hidden;transition:border-color .15s}
+.baustein[open]{background:var(--blatt);border-color:var(--blau)}
+.baustein>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:14px 18px}
+.baustein>summary::-webkit-details-marker{display:none}
+.num{font:italic 22px/1 var(--display);color:var(--orange);width:28px;flex:0 0 28px}
+.st{width:26px;height:26px;border-radius:50%;flex:0 0 26px;display:grid;place-items:center;font-size:13px;font-weight:700;border:1.5px solid var(--linie);color:var(--weich)}
+.st.laeuft{border-color:var(--orange);border-top-color:transparent;animation:dreh 1s linear infinite}
+.st.fertig{background:var(--gut);border-color:var(--gut);color:#fff}
+.st.fehler{background:var(--warn);border-color:var(--warn);color:#fff}
+@keyframes dreh{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.st.laeuft,.rund::after{animation:none}.rund,.art,.balken i{transition:none}}
+.baustein .t{font-weight:600;flex:1;min-width:0}
+.baustein .d{font:12px var(--mono);color:var(--weich)}
+.inhalt{padding:6px 22px 18px;border-top:1px solid var(--linie);display:flex;flex-direction:column;gap:14px}
+.md{font-size:16px;min-width:0;overflow-wrap:anywhere;max-width:70ch}
+.md h1,.md h2,.md h3{font-size:24px;margin:18px 0 4px;color:var(--blau)}
+.md h3{font-size:19px}
+.md blockquote{margin:6px 0;padding:8px 16px;border-left:3px solid var(--orange);background:var(--creme);border-radius:0 10px 10px 0}
+.md .tab{overflow-x:auto}
+.md table{border-collapse:collapse;font-size:14px}
+.md td,.md th{border:1px solid var(--linie);padding:6px 9px;vertical-align:top;text-align:left}
+.md .platz{background:color-mix(in srgb,var(--orange) 20%,transparent);border-radius:4px;padding:0 4px}
+.md hr{border:0;border-top:1px solid var(--linie);margin:14px 0}
+.leer{color:var(--weich);font-size:15px}
+.archiv{display:flex;flex-direction:column}
+.archiv button{all:unset;cursor:pointer;padding:12px 2px;border-bottom:1px solid var(--linie);display:flex;flex-direction:column;gap:2px}
+.archiv button:last-child{border-bottom:0}
+.archiv button b{font:400 19px/1.25 var(--display);color:var(--blau)}
+.archiv button span{font-size:13px;color:var(--weich)}
+.archiv button:hover b{color:var(--orange)}
+.projekt{display:flex;flex-direction:column;gap:6px;padding:14px 16px;border-radius:16px;background:var(--feld)}
+.projekt select{flex:1 1 180px;width:auto}.projekt input{flex:2 1 200px;width:auto}
+.unterlagen{min-height:120px;font-size:15px}
+.datei{display:inline-block}
+.quelle{font-size:13px;color:var(--weich);border-left:3px solid var(--petrol);padding:2px 0 2px 10px}
+.zusatz{border-top:1px dashed var(--linie);padding-top:14px;display:flex;flex-direction:column;gap:12px}
+.zusatz h3{font-size:21px;color:var(--blau)}
+.zusatz .felder{gap:12px 16px}
+.einheit{border:1px solid var(--linie);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:10px;background:var(--feld)}
+.einheit>b{font-weight:600}
+.einheit .reihe .knopf{padding:9px 14px;font-size:14px}
+.ergebnis{border-top:1px solid var(--linie);padding-top:10px;display:flex;flex-direction:column;gap:10px}
+.vorschau{width:100%;height:560px;border:1px solid var(--linie);border-radius:14px;background:#fff}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(22px + env(safe-area-inset-bottom,0px));background:var(--nacht);color:var(--auf-blau);padding:11px 18px;border-radius:999px;font-size:15px;box-shadow:0 10px 30px -10px rgba(0,0,0,.4)}
+@media (max-width:720px){
+  .station{grid-template-columns:1fr}
+  .ziffer{text-align:left;font-size:54px;padding:0 0 6px 6px}
+  .arten{grid-template-columns:1fr}
+  .felder{grid-template-columns:1fr}
+  .plan{grid-template-columns:1fr;gap:2px}.plan dt{margin-top:10px}
+  .weg{grid-template-columns:1fr;gap:8px}
+  .umschlag::after{width:40px;height:40px;right:26px;top:28px}
+  .kette{grid-template-columns:1fr 84px}.kette .zeile-l{grid-column:1/-1;margin-top:6px}
+}
+</style>
+
+<div class="wrap">
+  <header class="umschlag">
+    <span class="eyebrow">Mum Life Balance · Werkstatt</span>
+    <h1>Angebot auf <em>Knopfdruck</em></h1>
+    <p class="unter">Idee eintippen, ein paar Fragen beantworten, einmal drücken. Danach steht das ganze Paket da: Kursaufbau, Verkaufsseite, Kasse, Mails, Storys, Beiträge, Stichwort-Automation, Anzeigentexte und die Liste, was du von Hand einrichtest. Live geht nichts, das bleibt dein Klick.</p>
+    <ol class="weg">
+      <li><b>1</b>Deine Idee</li>
+      <li><b>2</b>Der Bauplan</li>
+      <li><b>3</b>Die Umsetzung</li>
+    </ol>
+  </header>
+
+  <section class="station" aria-labelledby="s1">
+    <div class="ziffer" aria-hidden="true">1</div>
+    <div class="karte">
+      <div class="kopf"><span class="nr">Station 1</span><h2 id="s1">Deine Idee</h2><p>Was möchtest du bauen? Wähl die Art und sag in zwei Sätzen, worum es geht.</p></div>
+      <div class="projekt">
+        <label for="projektWahl">Projekt <small>· jedes Angebot hat seinen eigenen Stand, seine Unterlagen und seine Pakete</small></label>
+        <div class="reihe">
+          <select id="projektWahl"></select>
+          <input id="projektName" aria-label="Name des Projekts">
+          <button class="knopf zart" id="projektNeu">+ Neues Projekt</button>
+          <button class="knopf" id="projektWeg">Löschen</button>
+        </div>
+      </div>
+      <div class="arten" role="group" aria-label="Was möchtest du bauen?">
+        <button class="art" data-art="freebie" aria-pressed="false"><span class="p">0<small>CHF</small></span><b>Freebie-Funnel</b><span class="w">Landingpage, Danke-Seite mit Angebot, Begleitmails</span></button>
+        <button class="art" data-art="minikurs" aria-pressed="true"><span class="p">39<small>CHF</small></span><b>Minikurs</b><span class="w">Ein Problem, ein Schritt, ein schneller Gewinn</span></button>
+        <button class="art" data-art="kurs" aria-pressed="false"><span class="p">frei</span><b>Grosses Angebot</b><span class="w">Kurs, 1:1-Begleitung oder Gruppe. Den Preis bestimmst du</span></button>
+      </div>
+      <div class="felder">
+        <div class="feld breit"><label for="thema">Worum geht es? <small>· in deinen Worten, ein, zwei Sätze</small></label>
+          <textarea id="thema"></textarea></div>
+        <div class="feld"><label for="profil">Profil</label>
+          <select id="profil"><option value="mentoring">Mentoring (@mumlifebalance)</option><option value="doterra">doTERRA</option></select></div>
+        <div class="feld" id="formatFeld"><label for="format">Form</label>
+          <select id="format"><option value="Online-Kurs">Online-Kurs zum Selberlernen</option><option value="Kurs mit Live-Calls">Kurs mit Live-Calls</option><option value="1:1-Begleitung">1:1-Begleitung</option><option value="Gruppenprogramm">Gruppenprogramm</option></select></div>
+        <div class="feld"><label for="name">Name des Angebots <small>· darf leer bleiben</small></label>
+          <input id="name"></div>
+        <div class="feld breit"><label for="unterlagen">Deine Unterlagen <small>· Workbook, Kursnotizen, Fragen deiner Kundinnen. Claude liest sie bei jedem Baustein mit und hält sich zuerst daran</small></label>
+          <textarea id="unterlagen" class="unterlagen" placeholder="Text hier hineinkopieren oder eine Datei hinzufügen (PDF, Word, Text)"></textarea>
+          <div class="reihe"><label class="knopf zart datei" tabindex="0">Datei hinzufügen<input type="file" id="unterlagenDatei" accept=".pdf,.docx,.txt,.md,.csv,.html,.htm" multiple hidden></label><span class="hinweis" id="unterlagenStand"></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="station" aria-labelledby="s2">
+    <div class="ziffer" aria-hidden="true">2</div>
+    <div class="karte">
+      <div class="kopf"><span class="nr">Station 2</span><h2 id="s2">Der Bauplan</h2><p>Was du leer lässt, schlägt Claude vor. Vorschläge sind petrol markiert, überschreib sie, wo sie nicht stimmen. Eine Kundinnen-Stimme wird nie erfunden.</p></div>
+      <div class="reihe"><button class="knopf zart" id="luecken">Lücken vorschlagen lassen</button><span class="hinweis" id="lueckenStand"></span></div>
+      <div class="felder">
+        <div class="feld"><label for="fuerWen">Für wen genau?</label><textarea id="fuerWen"></textarea></div>
+        <div class="feld"><label for="veraenderung">Was ist nachher in ihrem Alltag anders?</label><textarea id="veraenderung"></textarea></div>
+        <div class="feld breit"><label for="schmerz">Der Moment davor <small>· ein konkreter Satz, den sie denkt</small></label><textarea id="schmerz"></textarea></div>
+        <div class="feld breit"><label for="weg">Der Weg <small>· 3 bis 5 Schritte, je eine Zeile</small></label><textarea id="weg"></textarea></div>
+        <div class="feld"><label for="preis">Preis in CHF</label><input id="preis" inputmode="decimal"></div>
+        <div class="feld"><label for="stichwort">Stichwort fürs Kommentar-Freebie</label><input id="stichwort" autocapitalize="characters"></div>
+        <div class="feld breit" id="ketteFeld"><label>An der Kasse <small>· Name und Preis, leer = gibt es nicht</small></label>
+          <div class="kette">
+            <span class="kopfz zeile-l">Order Bump</span><input id="bumpName" aria-label="Order Bump Name"><input id="bumpPreis" aria-label="Order Bump Preis in CHF" placeholder="CHF" inputmode="decimal">
+            <span class="kopfz zeile-l">Upsell</span><input id="upsellName" aria-label="Upsell Name"><input id="upsellPreis" aria-label="Upsell Preis in CHF" placeholder="CHF" inputmode="decimal">
+            <span class="kopfz zeile-l">Downsell</span><input id="downsellName" aria-label="Downsell Name"><input id="downsellPreis" aria-label="Downsell Preis in CHF" placeholder="CHF" inputmode="decimal">
+          </div></div>
+        <div class="feld"><label for="naechste">Nächste Stufe, die die Mails anbieten</label><input id="naechste"></div>
+        <div class="feld"><label for="stimme">Echte Kundinnen-Stimme <small>· nur wörtlich, sonst leer</small></label><textarea id="stimme"></textarea></div>
+      </div>
+      <ul class="pruef" id="pruef" aria-live="polite"></ul>
+    </div>
+  </section>
+
+  <section class="station" aria-labelledby="s3">
+    <div class="ziffer" aria-hidden="true">3</div>
+    <div class="karte">
+      <div class="kopf"><span class="nr">Station 3</span><h2 id="s3">Die Umsetzung</h2></div>
+      <dl class="plan" id="plan"></dl>
+      <div class="start">
+        <button class="rund" id="los">Bau mein Paket</button>
+        <span class="hinweis" id="losStand">Rund zehn Minuten. Die Seite muss dafür offen bleiben.</span>
+      </div>
+      <div class="fortschritt"><div class="balken"><i id="balken"></i></div><span class="hinweis" id="zaehler"></span></div>
+      <div class="liste" id="liste"></div>
+      <div class="reihe">
+        <button class="knopf voll" id="laden" hidden>Alles als Datei speichern</button>
+        <button class="knopf" id="kopierAlles">Alles kopieren</button>
+        <button class="knopf" id="abbrechen" hidden>Anhalten</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="station" aria-labelledby="s4">
+    <div class="ziffer" aria-hidden="true">✓</div>
+    <div class="karte">
+      <div class="kopf"><span class="nr">Gebaut</span><h2 id="s4">Deine Pakete</h2></div>
+      <div class="archiv" id="archiv"></div>
+    </div>
+  </section>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script type="application/json" id="wissen">/*WISSEN*/</script>
+<script>
+(function(){
+"use strict";
+var W = JSON.parse(document.getElementById("wissen").textContent);
+var FELDER = ["thema","profil","format","name","fuerWen","veraenderung","schmerz","weg","preis","stichwort",
+  "bumpName","bumpPreis","upsellName","upsellPreis","downsellName","downsellPreis","naechste","stimme"];
+var $ = function(id){ return document.getElementById(id); };
+
+// Beispiel beim ersten Öffnen — klar als Beispiel markiert, nie als ihre Angaben.
+var BEISPIEL = {art:"minikurs", thema:"Beispiel: Storys, die verkaufen, ohne dass man sich vor der Kamera zeigt.",
+  profil:"mentoring", name:"", fuerWen:"", veraenderung:"", schmerz:"", weg:"", preis:"39", stichwort:"",
+  bumpName:"Content-Box", bumpPreis:"17", upsellName:"Finde dein Thema", upsellPreis:"25",
+  downsellName:"", downsellPreis:"", naechste:"Instagram-Kundenmaschine", stimme:""};
+
+var ART = {
+  freebie:{wort:"Freebie-Funnel", preis:"0"},
+  minikurs:{wort:"Minikurs", preis:"39"},
+  kurs:{wort:"grosses Angebot", preis:""}
+};
+
+function artWort(s){ return s.art==="kurs" ? "grosses Angebot · "+(s.format||"Online-Kurs") : ART[s.art].wort; }
+function roh(k, rueck){ try{ var v = localStorage.getItem("aok:"+k); return v ? JSON.parse(v) : rueck; }catch(e){ return rueck; } }
+function rohSchreib(k, v){ try{ localStorage.setItem("aok:"+k, JSON.stringify(v)); return true; }catch(e){ return false; } }
+
+// Projekte: entwurf, vorschlaege, aktuell und unterlagen gehören je einem Projekt.
+// Der Stand von vor den Projekten zieht beim ersten Öffnen als „Projekt 1“ um.
+var JE_PROJEKT = {entwurf:1, vorschlaege:1, aktuell:1, unterlagen:1};
+var projekte = roh("projekte", null);
+if(!projekte){
+  projekte = [{id:"p1", name:"Projekt 1"}];
+  ["entwurf","vorschlaege","aktuell"].forEach(function(k){ var v=roh(k,null); if(v!==null) rohSchreib("p:p1:"+k, v); });
+  rohSchreib("projekte", projekte); rohSchreib("projekt", "p1");
+}
+var projekt = roh("projekt", projekte[0].id);
+if(!projekte.some(function(p){ return p.id===projekt; })) projekt = projekte[0].id;
+function lies(k, rueck){ return roh(JE_PROJEKT[k] ? "p:"+projekt+":"+k : k, rueck); }
+function schreib(k, v){ return rohSchreib(JE_PROJEKT[k] ? "p:"+projekt+":"+k : k, v); }
+
+var stand, vorschlaege, paket, unterlagen;
+function projektLaden(){
+  stand = lies("entwurf", null) || JSON.parse(JSON.stringify(BEISPIEL));
+  vorschlaege = lies("vorschlaege", {});
+  paket = lies("aktuell", null);   // {id, datum, projekt, plan, teile:{key:text}, extra:{key:text}, seite:{…}}
+  unterlagen = lies("unterlagen", "");
+}
+projektLaden();
+
+function toast(t){ var e=$("toast"); e.textContent=t; e.hidden=false; clearTimeout(toast.z); toast.z=setTimeout(function(){e.hidden=true;},2600); }
+
+// ---------- Station 1 + 2: Felder ----------
+function fuellen(){
+  document.querySelectorAll(".art").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.art===stand.art)); });
+  FELDER.forEach(function(f){ var e=$(f); if(!e) return; e.value = stand[f]||""; e.classList.toggle("vorschlag", !!vorschlaege[f]); });
+  artAnpassen(); pruefen(); planZeigen();
+  if(!laeuft && document.getElementById("liste")) listeZeigen();
+}
+function artAnpassen(){
+  var fb = stand.art==="freebie";
+  $("ketteFeld").hidden = fb;
+  $("preis").disabled = stand.art!=="kurs";
+  $("formatFeld").hidden = stand.art!=="kurs";
+  if(!stand.format) stand.format = "Online-Kurs";
+  if(stand.art!=="kurs"){ stand.preis = ART[stand.art].preis; $("preis").value = stand.preis; }
+}
+document.querySelectorAll(".art").forEach(function(b){
+  b.addEventListener("click", function(){ stand.art=b.dataset.art; if(stand.art==="kurs" && (stand.preis==="39"||stand.preis==="0")) stand.preis=""; schreib("entwurf",stand); fuellen(); });
+});
+FELDER.forEach(function(f){ var e=$(f); if(!e) return;
+  e.addEventListener("input", function(){ stand[f]=e.value; if(vorschlaege[f]){ delete vorschlaege[f]; e.classList.remove("vorschlag"); schreib("vorschlaege",vorschlaege);} schreib("entwurf",stand); pruefen(); planZeigen(); if(f==="format" && !laeuft) listeZeigen(); });
+});
+
+// ---------- Projekte ----------
+function projekteZeigen(){
+  var s=$("projektWahl"); s.innerHTML="";
+  projekte.forEach(function(p){ var o=document.createElement("option"); o.value=p.id; o.textContent=p.name; s.appendChild(o); });
+  s.value=projekt;
+  var akt = projekte.filter(function(p){ return p.id===projekt; })[0];
+  $("projektName").value = akt ? akt.name : "";
+  $("projektWeg").disabled = projekte.length<2;
+  $("unterlagen").value = unterlagen || "";
+  unterlagenStand();
+}
+function projektWechseln(id){
+  if(laeuft){ toast("Erst warten, bis der Bau fertig ist."); projekteZeigen(); return; }
+  projekt=id; rohSchreib("projekt", id); projektLaden(); projekteZeigen(); fuellen(); listeZeigen(); archivZeigen();
+}
+$("projektWahl").addEventListener("change", function(){ projektWechseln(this.value); });
+$("projektName").addEventListener("input", function(){
+  var akt = projekte.filter(function(p){ return p.id===projekt; })[0]; if(!akt) return;
+  akt.name = this.value.trim() || "Ohne Namen"; rohSchreib("projekte", projekte);
+  var o=$("projektWahl").querySelector('option[value="'+projekt+'"]'); if(o) o.textContent=akt.name;
+});
+$("projektNeu").addEventListener("click", function(){
+  var id="p"+Date.now(); projekte.push({id:id, name:"Projekt "+(projekte.length+1)}); rohSchreib("projekte", projekte);
+  projektWechseln(id); $("projektName").focus(); $("projektName").select();
+});
+// Löschen in zwei Klicks — ein confirm() kann im Artifact-Rahmen lautlos blockiert sein.
+$("projektWeg").addEventListener("click", function(){
+  var k=this;
+  if(!k.dataset.sicher){ k.dataset.sicher="1"; k.textContent="Wirklich löschen?"; setTimeout(function(){ delete k.dataset.sicher; k.textContent="Löschen"; }, 8000); return; }
+  delete k.dataset.sicher; k.textContent="Löschen";
+  ["entwurf","vorschlaege","aktuell","unterlagen"].forEach(function(x){ try{ localStorage.removeItem("aok:p:"+projekt+":"+x); }catch(e){} });
+  rohSchreib("archiv", roh("archiv",[]).filter(function(a){ return a.projekt!==projekt; }));
+  projekte = projekte.filter(function(p){ return p.id!==projekt; }); rohSchreib("projekte", projekte);
+  projektWechseln(projekte[0].id); toast("Projekt gelöscht.");
+});
+
+// ---------- Eigene Unterlagen ----------
+var MAX_UNTERLAGEN = 120000;   // im Browser; in einen Auftrag gehen die ersten 30'000 Zeichen
+function unterlagenStand(){
+  var n=(unterlagen||"").length;
+  $("unterlagenStand").textContent = n ? n.toLocaleString("de-CH")+" Zeichen"+(n>30000?" · in jeden Baustein gehen die ersten 30'000":"") : "";
+}
+$("unterlagen").addEventListener("input", function(){
+  unterlagen = this.value.slice(0, MAX_UNTERLAGEN);
+  if(!schreib("unterlagen", unterlagen)) toast("Zu gross für den Browserspeicher. Kürze die Unterlagen.");
+  unterlagenStand();
+});
+function skript(url){ return new Promise(function(ok, nein){ var s=document.createElement("script"); s.src=url; s.onload=ok; s.onerror=function(){ nein(new Error("Laden fehlgeschlagen")); }; document.head.appendChild(s); }); }
+async function pdfText(datei){
+  if(!window.pdfjsLib){
+    await skript("https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js");
+    window.pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+  }
+  var doc = await window.pdfjsLib.getDocument({data: await datei.arrayBuffer()}).promise, t=[];
+  for(var i=1;i<=doc.numPages;i++){ var c=await (await doc.getPage(i)).getTextContent(); t.push(c.items.map(function(x){ return x.str + (x.hasEOL?"\n":" "); }).join("")); }
+  return t.join("\n\n");
+}
+async function wordText(datei){
+  if(!window.JSZip) await skript("https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js");
+  var zip = await window.JSZip.loadAsync(await datei.arrayBuffer());
+  var xml = await zip.file("word/document.xml").async("string");
+  return xml.replace(/<\/w:p>/g,"\n").replace(/<w:tab\/>/g,"\t").replace(/<[^>]+>/g,"")
+    .replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&apos;/g,"'");
+}
+$("unterlagenDatei").addEventListener("change", async function(){
+  var dateien=[].slice.call(this.files||[]); this.value="";
+  for(var i=0;i<dateien.length;i++){
+    var d=dateien[i]; $("unterlagenStand").textContent="Lese "+d.name+" …";
+    try{
+      var t = /\.pdf$/i.test(d.name) ? await pdfText(d) : /\.docx$/i.test(d.name) ? await wordText(d) : await d.text();
+      if(/\.html?$/i.test(d.name)) t = new DOMParser().parseFromString(t,"text/html").body.innerText;
+      t = t.replace(/[ \t]+\n/g,"\n").replace(/\n{3,}/g,"\n\n").trim();
+      if(!t){ toast(d.name+": kein Text gefunden (ein Scan?)."); continue; }
+      unterlagen = ((unterlagen ? unterlagen+"\n\n" : "") + "### "+d.name+"\n\n"+t).slice(0, MAX_UNTERLAGEN);
+      $("unterlagen").value = unterlagen;
+      if(!schreib("unterlagen", unterlagen)) toast("Zu gross für den Browserspeicher.");
+      toast(d.name+" hinzugefügt.");
+    }catch(e){ toast(d.name+" liess sich nicht lesen."); }
+  }
+  unterlagenStand();
+});
+
+function zahl(v){ var n = parseFloat(String(v||"").replace(",",".").replace(/[^0-9.]/g,"")); return isNaN(n)?null:n; }
+
+// Die Preis-Kette nach der Regel aus der Funnel-Checkliste.
+function pruefen(){
+  var p=[], h=zahl(stand.preis), b=zahl(stand.bumpPreis), u=zahl(stand.upsellPreis), d=zahl(stand.downsellPreis);
+  if(!stand.thema.trim() || /^Beispiel:/.test(stand.thema)) p.push(["nein","Station 1: Thema in deinen Worten eintragen (das Beispiel ersetzen)."]);
+  if(stand.art==="minikurs" && h!==39) p.push(["nein","Minikurse kosten fix 39 CHF."]);
+  if(stand.art==="kurs" && h===null) p.push(["nein","Preis eintragen. Beim grossen Angebot bestimmst du ihn selbst."]);
+  if(stand.art!=="freebie"){
+    if(b!==null && h!==null) p.push(b<h ? ["ok","Bump "+b+" < Hauptprodukt "+h] : ["nein","Bump "+b+" muss günstiger sein als das Hauptprodukt ("+h+")."]);
+    if(u!==null && h!==null){ p.push(u<h ? ["ok","Upsell "+u+" < Hauptprodukt "+h] : ["nein","Upsell "+u+" muss günstiger sein als das Hauptprodukt ("+h+")."]); }
+    if(u!==null && b!==null) p.push(u>b ? ["ok","Upsell "+u+" > Bump "+b] : ["nein","Upsell "+u+" sollte teurer sein als der Bump ("+b+")."]);
+    if(d!==null && u===null) p.push(["nein","Ein Downsell braucht ein Upsell davor."]);
+    if(d!==null && u!==null) p.push(d<u ? ["ok","Downsell "+d+" < Upsell "+u] : ["nein","Downsell "+d+" muss günstiger sein als das Upsell ("+u+")."]);
+    ["bump","upsell","downsell"].forEach(function(k){ if(stand[k+"Name"].trim() && zahl(stand[k+"Preis"])===null) p.push(["nein", k.charAt(0).toUpperCase()+k.slice(1)+": Preis fehlt."]); });
+  }
+  if(stand.stichwort && !/^[A-ZÄÖÜ0-9]+$/.test(stand.stichwort.trim())) p.push(["nein","Stichwort in Grossbuchstaben, ein Wort."]);
+  $("pruef").innerHTML = p.map(function(x){ return '<li class="'+x[0]+'">'+esc(x[1])+'</li>'; }).join("");
+  var fehler = p.some(function(x){ return x[0]==="nein"; });
+  $("los").disabled = fehler || laeuft || !sample;
+  $("losStand").textContent = fehler ? "Erst die rot markierten Punkte im Bauplan klären." : "Rund zehn Minuten. Die Seite muss dafür offen bleiben.";
+  return !fehler;
+}
+
+function planZeigen(){
+  var z = [["Art", artWort(stand)], ["Name", stand.name||"— schlägt Claude vor"], ["Preis", stand.art==="freebie"?"0 CHF":(stand.preis||"?")+" CHF"]];
+  if(stand.art!=="freebie"){
+    var k=[]; ["bump","upsell","downsell"].forEach(function(x){ if(stand[x+"Name"]) k.push({bump:"Bump",upsell:"Upsell",downsell:"Downsell"}[x]+" "+stand[x+"Name"]+" "+(stand[x+"Preis"]||"?")); });
+    z.push(["Kasse", k.join(" · ")||"nur das Hauptprodukt"]);
+  }
+  z.push(["Danach", stand.naechste||"— schlägt Claude vor"]);
+  z.push(["Stichwort", stand.stichwort||"— schlägt Claude vor"]);
+  $("plan").innerHTML = z.map(function(x){ return "<dt>"+esc(x[0])+"</dt><dd>"+esc(x[1])+"</dd>"; }).join("");
+}
+
+// ---------- Claude ----------
+var nutze = (window.claude && window.claude.use) ? function(n){ return window.claude.use(n); } : function(){ return Promise.resolve(null); };
+var sample = null;
+nutze("sample").then(function(s){ sample=s; pruefen(); if(!s){ $("los").disabled=true; $("luecken").disabled=true; $("losStand").textContent="Claude ist in dieser Ansicht nicht erreichbar. Öffne die Seite auf claude.ai."; } }).catch(function(){});
+var downloads = null;
+nutze("downloads").then(function(d){ downloads=d; $("laden").hidden = !d; }).catch(function(){});
+
+function planText(){
+  var p = {art:artWort(stand), profil:stand.profil};
+  FELDER.forEach(function(f){ if(f!=="profil" && stand[f]) p[f]=stand[f]; });
+  return JSON.stringify(p, null, 1);
+}
+// ---------- Das Gehirn: Fachwissen aus den ausgewerteten Kursen ----------
+// Je Baustein die Themenbücher, in denen gesucht wird — das erste ist das Hauptbuch,
+// dessen Kurzfassung immer mitgeht.
+var FACH = {
+  luecken:["positionierung","angebotstreppe"], aufbau:["angebotstreppe","positionierung"],
+  salespage:["verkaufsseite"], danke:["freebie","verkaufsseite","funnel"], kasse:["verkaufsseite","angebotstreppe"],
+  mails:["funnel","launch"], storys:["storys","launch"], feed:["content"], automation:["funnel","freebie"],
+  anzeigen:["werbung"], einrichten:["funnel","verkaufsseite"], seite:["verkaufsseite"],
+  folien:["angebotstreppe","ki"], blatt:["angebotstreppe","freebie"]
+};
+var FACH_ZEICHEN = 22000;
+var G = W.gehirn || {buecher:[], abschnitte:[], punkte:[]}, BUCH = {};
+G.buecher.forEach(function(b, i){ BUCH[b.id]=i; });
+var STOPP = {};
+("aber alle also auch dass dein deine deinem deinen deiner dann damit dazu diese dieser dieses durch eine einem einen einer eines einmal etwas fuer gibt haben hast hier ihre ihren immer jetzt kann kein keine mehr nach nicht noch oder ohne schon sein seine sich sind soll sollte ueber unter viel waere wenn werden wird wurde will zum zur zwei drei bauplan schreibe jede jeder jedes text texte titel").split(" ").forEach(function(w){ STOPP[w]=1; });
+function norm(s){ return String(s).toLowerCase().replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss"); }
+function woerter(s){ return (norm(s).match(/[a-z0-9]{4,}/g)||[]).filter(function(w){ return !STOPP[w]; }).map(function(w){ return w.slice(0,9); }); }
+var punktWoerter = [];
+function fachBuecher(key){
+  var ids = (FACH[key]||[]).slice();
+  if(stand.art==="freebie" && (key==="aufbau"||key==="salespage")) ids = ["freebie"].concat(ids);
+  return ids.filter(function(id){ return id in BUCH; });
+}
+// Sucht die Punkte, die am meisten mit Bauplan und Auftrag gemeinsam haben (seltene Wörter zählen mehr).
+function fachwissen(key, auftrag){
+  var ids = fachBuecher(key); if(!ids.length) return {text:"", n:0, titel:[]};
+  var nr = ids.map(function(id){ return BUCH[id]; });
+  var kandidaten = [];
+  G.punkte.forEach(function(p, i){ if(nr.indexOf(p[0])>=0){ if(!punktWoerter[i]) punktWoerter[i]=woerter(p[2]+" "+G.abschnitte[p[1]]); kandidaten.push(i); } });
+  var df = {};
+  kandidaten.forEach(function(i){ var seen={}; punktWoerter[i].forEach(function(w){ if(!seen[w]){ seen[w]=1; df[w]=(df[w]||0)+1; } }); });
+  var frage = {}; woerter(planText()+" "+auftrag+" "+(unterlagen||"").slice(0,3000)).forEach(function(w){ frage[w]=1; });
+  var N = kandidaten.length || 1;
+  var wertung = kandidaten.map(function(i){
+    var p=G.punkte[i], s=0, seen={};
+    punktWoerter[i].forEach(function(w){ if(frage[w] && !seen[w]){ seen[w]=1; s += Math.log(N/df[w]); } });
+    s = s / Math.sqrt(1 + p[2].length/250) * (p[0]===nr[0] ? 1.3 : 1);
+    return {i:i, s:s};
+  }).filter(function(x){ return x.s>0; }).sort(function(a,b){ return b.s-a.s; });
+  var platz = FACH_ZEICHEN, gewaehlt = [];
+  for(var k=0;k<wertung.length && platz>0;k++){ var t=G.punkte[wertung[k].i][2]; if(t.length<=platz){ gewaehlt.push(wertung[k].i); platz -= t.length+4; } }
+  gewaehlt.sort(function(a,b){ return a-b; });   // in der Reihenfolge der Bücher, damit Zusammenhängendes beisammen steht
+  var out = [], letzter = -1, haupt = G.buecher[nr[0]];
+  out.push("## Kurzfassung „"+haupt.titel+"“\n"+haupt.kern);
+  gewaehlt.forEach(function(i){ var p=G.punkte[i]; if(p[1]!==letzter){ out.push("\n## "+G.buecher[p[0]].titel+" · "+G.abschnitte[p[1]]); letzter=p[1]; } out.push("- "+p[2]); });
+  return {text: out.join("\n"), n: gewaehlt.length, titel: ids.map(function(id){ return G.buecher[BUCH[id]].titel; })};
+}
+var FACH_REGEL = "Das folgende Fachwissen stammt aus Kursen, die Patricia gekauft und für sich ausgewertet hat. Nutze die Regeln, Abläufe, Reihenfolgen und Formulierungshilfen daraus für diesen Baustein — es ist die Methode, nach der gebaut wird. "
+  + "Wo es Patricias Markenwissen oder ihren Regeln widerspricht, gelten ihre Regeln (keine Geld-zurück-Garantie, CHF, ihre Preis-Kette, Schweizer ss). "
+  + "Nenne nie die Quelle, keine Kursnamen und keine Namen von Personen daraus. Beispiele, Zahlen und Erlebnisse darin gehören jemand anderem und werden nie als Patricias ausgegeben.";
+
+function grundlage(b, auftrag){
+  var key = typeof b==="string" ? b : b.k, mitHooks = typeof b==="object" && b.h;
+  var f = fachwissen(key, auftrag||"");
+  grundlage.letzte = f;
+  var u = (unterlagen||"").trim();
+  return "Du arbeitest für Patricia Ulmann (Mum Life Balance, Schweiz). Unten stehen ihr Markenwissen und ihre Regeln. "
+   + "Halte dich daran, auch wo der Auftrag etwas anderes nahelegt.\n\n=== MARKENWISSEN ===\n" + W.allgemein
+   + (mitHooks ? "\n\n=== HOOKS ===\n" + W.hooks : "")
+   + (f.text ? "\n\n=== FACHWISSEN ===\n" + FACH_REGEL + "\n\n" + f.text : "")
+   + (u ? "\n\n=== PATRICIAS UNTERLAGEN ZU DIESEM ANGEBOT ===\nDas hat Patricia selbst zu diesem Angebot hineingegeben. Inhalt, Begriffe und Schritte daraus haben Vorrang vor allem allgemeinen Wissen. Nichts dazuerfinden, was dort nicht steht.\n\n" + u.slice(0,30000) + (u.length>30000?"\n[… gekürzt]":"") : "")
+   + "\n\n=== BAUPLAN ===\n" + planText() + "\n";
+}
+
+$("luecken").addEventListener("click", function(){
+  if(!sample) return;
+  var leer = FELDER.filter(function(f){ return f!=="stimme" && f!=="profil" && !String(stand[f]||"").trim(); });
+  if(stand.art==="freebie") leer = leer.filter(function(f){ return !/^(bump|upsell|downsell)/.test(f); });
+  if(stand.art!=="kurs") leer = leer.filter(function(f){ return f!=="preis"; });
+  if(!leer.length){ toast("Alles ausgefüllt."); return; }
+  $("luecken").disabled=true; $("lueckenStand").textContent="Claude denkt nach …";
+  sample.json(grundlage("luecken", leer.join(" ")) + "\n=== AUFTRAG ===\nSchlage für diese leeren Felder Werte vor: " + leer.join(", ")
+    + ". Bedeutung: fuerWen = für wen genau; veraenderung = was nachher in ihrem Alltag anders ist; schmerz = ein Satz, den sie vor dem Kauf denkt; weg = 3 bis 5 Schritte, je eine Zeile; name = Name des Angebots; stichwort = ein Wort in Grossbuchstaben, das noch nicht in den KOMMENTAR-STICHWÖRTERN vergeben ist; "
+    + "bumpName/upsellName/downsellName nur aus den laufenden Angeboten, mit Preis nach der Preis-Kette; naechste = das nächste Angebot der Treppe. "
+    + "Erfinde keine Zahlen und keine Ergebnisse. Antworte nur mit einem JSON-Objekt, Schlüssel = Feldname, Wert = Text.", {modelTier:"default"})
+  .then(function(v){
+    var n=0; leer.forEach(function(f){ if(v && typeof v[f]==="string" && v[f].trim()){ stand[f]=v[f].trim(); vorschlaege[f]=1; n++; } });
+    schreib("entwurf",stand); schreib("vorschlaege",vorschlaege); fuellen();
+    $("lueckenStand").textContent = n+" Vorschläge eingetragen.";
+  }).catch(function(e){ $("lueckenStand").textContent = fehlerText(e); })
+  .then(function(){ $("luecken").disabled=false; });
+});
+
+function fehlerText(e){
+  var c = e && e.code;
+  if(c==="rate_limited") return "Claude braucht eine kurze Pause. In ein, zwei Minuten nochmal.";
+  if(c==="not_granted") return "Die Seite darf Claude nicht fragen. Erlaube es im Menü der Seite unter Berechtigungen.";
+  return "Das hat nicht geklappt" + (e && e.message ? ": " + e.message : ".");
+}
+
+// ---------- Die Bausteine ----------
+function bausteine(){
+  var fb = stand.art==="freebie", gross = stand.art==="kurs", fm = stand.format||"Online-Kurs";
+  var begleitung = gross && /1:1|Gruppe/.test(fm);
+  var B = [
+    {k:"aufbau", t: fb ? "Freebie-Inhalt" : (begleitung ? "Ablauf" : "Kursaufbau"), d:"01-aufbau.md", h:false,
+     a: fb ? "Schreibe den kompletten Inhalt des Freebies: Titel, Untertitel, eine kurze Einleitung in ihrer Stimme, dann die Schritte mit je einer Übung zum Ausfüllen (als Tabelle mit leerer Spalte), am Schluss die Brücke zum nächsten Angebot ohne Preis."
+          : begleitung ? "Schreibe den Ablauf der "+fm+": Titel und Untertitel, die Veränderung in einem Satz, Dauer und Rhythmus (nur was im Bauplan steht, sonst ✏️ PLATZ), was vor dem Start passiert, Treffen für Treffen was dort geschieht und was sie danach konkret hat, was zwischen den Treffen läuft"+(/Gruppe/.test(fm)?", was sie allein und was sie in der Gruppe macht":"")+", und wie die Begleitung endet."
+          : "Schreibe den Kursaufbau: Titel und Untertitel, die Veränderung in einem Satz, dann "+(gross?(fm==="Kurs mit Live-Calls" ? "Module mit je 2 bis 4 Lektionen und den Live-Calls dazwischen (Termine nur aus dem Bauplan, sonst ✏️ PLATZ)" : "Module mit je 2 bis 4 Lektionen"):"3 bis 5 Lektionen")+" mit Titel, Ziel der Lektion in einem Satz, was sie danach konkret kann und je einer Arbeitsblatt-Aufgabe. Dazu eine Bonus-Idee, die zum Weg passt."},
+    {k:"salespage", t: fb ? "Landingpage" : "Verkaufsseite", d:"02-salespage.md", h:true,
+     a: fb ? "Schreibe die Landingpage fürs Freebie: Hook-Überschrift, Unterzeile, drei Stellen, an denen sie sich wiedererkennt, was sie bekommt (Nutzen, keine Seitenzahl), wer Patricia ist (aus dem Markenwissen, nichts erfinden), Anmelde-Aufruf. Kurz, Handy zuerst."
+          : "Schreibe die Verkaufsseite in 13 Blöcken mit Überschrift je Block: 1 Hook, 2 Problem in ihren Worten, 3 Kundinnen-Stimme (nur wenn eine angegeben ist, sonst ✏️ PLATZ), 4 warum bisherige Wege nicht klappten, 5 die neue Möglichkeit, 6 für wen es ist und für wen nicht, 7 was sich verändert, 8 der Weg (ohne Modul- oder Lektionszahlen), 9 wer Patricia ist, 10 Boni, 11 Preis mit Gegenwert, 12 Fragen und Antworten (6), 13 letzter Aufruf. Keine Geld-zurück-Garantie."},
+    fb ? {k:"danke", t:"Danke-Seite mit Angebot", d:"03-danke-seite.md", h:false,
+          a:"Schreibe die Danke-Seite, die direkt nach der Anmeldung kommt: kurz bestätigen, sagen was jetzt passiert (Mail bestätigen), dann ein Angebot „nur hier, direkt nach deiner Anmeldung“ für das nächste Angebot aus dem Bauplan, mit Preis, ohne Uhr und ohne Druck. Ein Knopf."}
+       : {k:"kasse", t:"Bump · Upsell · Downsell", d:"03-kasse.md", h:false,
+          a:"Schreibe die Texte an der Kasse: Kassen-Überschrift und drei Sätze unter dem Produkt (Veränderung, keine Zahlen), Order-Bump-Text (Kästchen-Zeile + zwei Sätze), Upsell-Seite (Überschrift, warum genau jetzt, was es löst, Ja- und Nein-Knopf-Text), Downsell-Seite falls im Bauplan. Rechne die Preis-Kette einmal hin."},
+    {k:"mails", t:"Mails", d:"04-mails.md", h:true,
+     a: fb ? "Schreibe die Mail-Strecke: 1 Bestätigungsmail (einziger Job: der Klick, kein Angebot), 2 Auslieferung, dann 4 Begleit- und Verkaufsmails (Tag 2, 4, 6, 8): Gewinn benennen, neues Problem, Pitch auf das nächste Angebot, letzter Aufruf. Je Mail: Tag, Betreff, zweiter Betreff, Vorschautext, Text, ein Aufruf."
+          : begleitung ? "Schreibe die Mails nach der Buchung: Willkommen (Tag 0) mit Vorbereitung und wie der erste Termin abläuft, Erinnerung vor dem ersten Treffen, eine Mail in der Mitte (Gewinn benennen), eine Mail kurz vor dem Ende, die zur nächsten Stufe führt (erst wenn ein neues Problem entstanden ist), eine Mail nach dem Ende mit Bitte um ihre Rückmeldung. Je Mail: Zeitpunkt, Betreff, zweiter Betreff, Vorschautext, Text, ein Aufruf."
+          : "Schreibe die Mails nach dem Kauf: Willkommen (Tag 0, kein Kurslink, der kommt von der Kasse), Tag 2 dranbleiben, Tag 4 ein Tipp, Tag 7 Gewinn einholen, Tag 10 der Pitch auf die nächste Stufe (erst wenn ein neues Problem entstanden ist), Tag 13 der Einwand. Je Mail: Tag, Betreff, zweiter Betreff, Vorschautext, Text, ein Aufruf."},
+    {k:"storys", t:"Storys", d:"05-storys.md", h:true,
+     a:"Schreibe einen Story-Bogen über 5 Tage zum Verkaufen, je Tag 4 bis 6 Folien. Je Folie: Text auf der Folie, was zu sehen ist (✏️ für ihr eigenes Foto oder Video), Sticker (Umfrage, Frage, Link) falls passend. Über die Woche verschiedene Käufertypen. Jeder Tag endet mit einem Link oder einer Frage."},
+    {k:"feed", t:"Feed-Beiträge", d:"06-feed.md", h:true,
+     a:"Schreibe 3 Feed-Beiträge: 2 Reels und 1 Karussell. Je Beitrag: Rolle (Aufmerksamkeit, Vertrauen oder Beziehung), Hook nach dem Hook-Werkzeugkasten mit dem letzten Check, beim Reel das Sprechskript oder B-Roll-Text, beim Karussell jede Folie, dann die Caption. Kein Preis und kein Kursname im Feed. Das Stichwort steht nur am Schluss der Caption."},
+    {k:"automation", t:"Stichwort-Automation", d:"07-automation.md", h:false,
+     a:"Schreibe die Kommentar-Automation für das Stichwort: öffentliche Antwort auf den Kommentar (3 Varianten), erste Direktnachricht mit Frage nach der Mailadresse, Nachricht mit dem Link, Erinnerung nach 24 Stunden, Nachricht für jemanden, der schon eingetragen ist. Dazu: welcher Tag in ActiveCampaign gesetzt wird (genau einer)."},
+    {k:"anzeigen", t:"Anzeigentexte", d:"08-anzeigen.md", h:true,
+     a:"Schreibe Meta-Anzeigen: 5 Haupttexte (je ein anderer Angle: Schmerz, Ergebnis, Identität, Konträr, Neugier), 5 Überschriften (höchstens 40 Zeichen), 5 Beschreibungen (höchstens 30 Zeichen). Ziel-Link ist eine Seite auf mumlifebalance.ch, nie die Kasse."},
+    {k:"einrichten", t:"Einrichte-Liste", d:"09-einrichten.md", h:false,
+     a:"Schreibe die Liste, was Patricia von Hand einrichtet, je Zeile ein Kästchen „- [ ]“ mit Ort: ThriveCart (Produkt, Preis, Bumps/Upsells, AGB-Link mumlifebalance.ch/agb/), WordPress (Seite als Entwurf), ActiveCampaign (Liste, genau ein Tag, Formular, Automation, Mails einsetzen), ManyChat (Flow anlegen und testen), Drive/Canva (Workbook, Folien), Cockpit (Beiträge, Storys). Am Schluss: was sie vor dem Livegang selbst testet."}
+  ];
+  return B;
+}
+
+var laeuft = false, stopp = null;
+
+function karte(b, i){
+  var t = paket && paket.teile[b.k];
+  var d = document.createElement("details"); d.className="baustein"; d.id="b-"+b.k;
+  d.innerHTML = '<summary><span class="num">'+String(i+1).padStart(2,"0")+'</span><span class="st '+(t?"fertig":"")+'">'+(t?"✓":"")+'</span><span class="t"></span><span class="d"></span></summary>'
+    + '<div class="inhalt"><p class="quelle" hidden></p><div class="md"></div><div class="reihe"><button class="knopf kopier">Kopieren</button><button class="knopf neu">Nochmal bauen</button></div><div class="extra"></div></div>';
+  d.querySelector(".t").textContent=b.t; d.querySelector(".d").textContent=b.d;
+  d.querySelector(".md").innerHTML = t ? md(t) : '<p class="leer">Noch nicht gebaut.</p>';
+  quelleZeigen(d, b.k);
+  d.querySelector(".kopier").addEventListener("click", function(){ kopieren(paket && paket.teile[b.k] || ""); });
+  d.querySelector(".neu").addEventListener("click", function(){ if(!laeuft) bauen([b]); });
+  extraZeigen(d, b);
+  return d;
+}
+function quelleZeigen(d, k){
+  var q = d.querySelector(".quelle"), s = paket && paket.quellen && paket.quellen[k];
+  q.hidden = !s; q.textContent = s ? "Gebaut mit Fachwissen: "+s : "";
+}
+function extraZeigen(d, b){
+  var x = d.querySelector(".extra"); x.innerHTML="";
+  if(!paket || !paket.teile[b.k]) return;
+  if(b.k==="aufbau") x.appendChild(einheitenBlock());
+  if(b.k==="salespage") x.appendChild(seitenBlock());
+}
+
+// ---------- Je Modul: Folien und Übungsblatt ----------
+// Einheiten sind die Überschriften im Kursaufbau, die nach Modul, Lektion, Treffen, Schritt oder Teil klingen.
+function einheiten(){
+  var t = paket && paket.teile.aufbau || "", e=[];
+  t.split("\n").forEach(function(z){ var m=z.match(/^#{2,4}\s+(.+)/); if(m && /modul|lektion|treffen|schritt|teil|woche|tag\s*\d/i.test(m[1])) e.push(m[1].replace(/\*\*/g,"").trim()); });
+  return e;
+}
+function einheitText(titel){
+  var L = (paket.teile.aufbau||"").split("\n"), an=-1, tiefe=0, o=[];
+  for(var i=0;i<L.length;i++){
+    var m=L[i].match(/^(#{2,4})\s+(.+)/);
+    if(an<0){ if(m && m[2].replace(/\*\*/g,"").trim()===titel){ an=i; tiefe=m[1].length; o.push(L[i]); } continue; }
+    if(m && m[1].length<=tiefe) break;
+    o.push(L[i]);
+  }
+  return o.join("\n");
+}
+var EINHEIT = {
+  folien:{t:"Folien", a:"Formuliere für diesen Teil die Präsentation aus: 8 bis 14 Folien. Je Folie eine Überschrift „## Folie N · Titel“, darunter höchstens vier kurze Stichpunkte, dann eine Zeile „Sprechnotiz:“ mit zwei bis vier ganzen Sätzen, was Patricia dazu sagt. Erste Folie: Titel und was sie danach kann. Letzte Folie: die Aufgabe bis zum nächsten Teil. Die Folien tragen die Struktur, die Stimme kommt beim Sprechen: keine Metaphern und keine Signature-Sätze auf den Folien selbst."},
+  blatt:{t:"Übungsblatt", a:"Erstelle das Übungsblatt zu diesem Teil, zum Ausfüllen und nicht zum Lesen: Titel, ein Satz wozu, dann 3 bis 6 Aufgaben. Ausfüllfelder als Tabelle mit einer leeren Spalte, Checklisten als Tabelle mit ☐. Jede Aufgabe mit einem kurzen Beispiel, damit sie weiss, was gemeint ist (Beispiel klar als Beispiel markiert). Am Schluss „Dein nächster Schritt“ in einem Satz."}
+};
+function einheitenBlock(){
+  var box=document.createElement("div"); box.className="zusatz";
+  var e = einheiten();
+  box.innerHTML = '<h3>Je Teil: Folien und Übungsblatt</h3>' + (e.length ? "" : '<p class="leer">Im Kursaufbau stehen keine Überschriften mit Modul, Lektion oder Treffen. Bau den Kursaufbau nochmal, dann erscheinen sie hier.</p>');
+  paket.extra = paket.extra || {};
+  e.forEach(function(titel){
+    var w=document.createElement("div"); w.className="einheit";
+    var kopf=document.createElement("b"); kopf.textContent=titel; w.appendChild(kopf);
+    var r=document.createElement("div"); r.className="reihe"; w.appendChild(r);
+    var erg=document.createElement("div"); w.appendChild(erg);
+    Object.keys(EINHEIT).forEach(function(art){
+      var k=art+":"+titel, knopf=document.createElement("button"); knopf.className="knopf zart";
+      knopf.textContent = (paket.extra[k]?"✓ ":"")+EINHEIT[art].t; r.appendChild(knopf);
+      knopf.addEventListener("click", function(){ einheitBauen(art, titel, knopf, erg); });
+    });
+    box.appendChild(w);
+  });
+  return box;
+}
+function ergebnisZeigen(ziel, titel, text, dateiname, html){
+  ziel.innerHTML=""; ziel.className="ergebnis";
+  var m=document.createElement("div"); m.className="md"; m.innerHTML=md(text); ziel.appendChild(m);
+  var r=document.createElement("div"); r.className="reihe";
+  var k=document.createElement("button"); k.className="knopf"; k.textContent="Kopieren"; k.addEventListener("click", function(){ kopieren(text); }); r.appendChild(k);
+  if(downloads){ var s=document.createElement("button"); s.className="knopf voll"; s.textContent="Als Datei speichern";
+    s.addEventListener("click", function(){ speichereDatei(dateiname, html()); }); r.appendChild(s); }
+  ziel.appendChild(r);
+}
+async function einheitBauen(art, titel, knopf, ziel){
+  if(!sample){ toast("Claude ist in dieser Ansicht nicht erreichbar."); return; }
+  var k=art+":"+titel;
+  if(paket.extra[k] && !knopf.dataset.neu){ knopf.dataset.neu="1"; zeigeEinheit(art, titel, ziel); knopf.textContent="Nochmal: "+EINHEIT[art].t; return; }
+  knopf.disabled=true; ziel.className="ergebnis"; ziel.innerHTML='<p class="leer">Claude schreibt …</p>';
+  try{
+    var r = await sample(grundlage(art, titel) + "\n=== KURSAUFBAU (ganz) ===\n" + (paket.teile.aufbau||"").slice(0,12000)
+      + "\n\n=== DIESER TEIL ===\n" + einheitText(titel) + "\n\n=== AUFTRAG ===\n" + EINHEIT[art].a
+      + "\n\nSchreibe auf Deutsch in Patricias Stimme, Schweizer ss. Nur das Ergebnis als Markdown, ohne Vorrede.",
+      {modelTier:"complex", cache:false, onText:function(x){ ziel.innerHTML='<div class="md">'+md(x.text)+'</div>'; }});
+    paket.extra[k] = r.text; speichern();
+    zeigeEinheit(art, titel, ziel); knopf.textContent="✓ "+EINHEIT[art].t; delete knopf.dataset.neu;
+  }catch(e){ ziel.innerHTML='<p class="leer">'+esc(fehlerText(e))+'</p>'; }
+  knopf.disabled=false;
+}
+function zeigeEinheit(art, titel, ziel){
+  var text = paket.extra[art+":"+titel];
+  ergebnisZeigen(ziel, titel, text, dateiName(titel+"-"+EINHEIT[art].t)+".html",
+    function(){ return art==="folien" ? folienHtml(titel, text) : blattHtml(titel, text); });
+}
+function dateiName(s){ return String(s).toLowerCase().replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,60) || "datei"; }
+function speichereDatei(name, inhalt){
+  if(!downloads){ kopieren(inhalt); return; }
+  downloads.save({filename:name, data:inhalt}).then(function(){ toast("Gespeichert."); }).catch(function(){ toast("Nicht gespeichert."); });
+}
+var DOK_KOPF = '<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+  + '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap">';
+// Folien als 16:9-Blätter in Patricias Farben; beim Drucken eine Folie je Seite, die Sprechnotiz bleibt am Bildschirm sichtbar.
+function folienHtml(titel, text){
+  var teile = String(text).split(/\n(?=##\s)/), html=[];
+  teile.forEach(function(t){
+    var m=t.match(/^##\s+(.+)/); if(!m) return;
+    var rest=t.replace(/^##.+\n?/,""), notiz="";
+    var n=rest.search(/\n?\*{0,2}Sprechnotiz:?\*{0,2}/i);
+    if(n>=0){ notiz=rest.slice(n).replace(/^\n?\*{0,2}Sprechnotiz:?\*{0,2}\s*/i,""); rest=rest.slice(0,n); }
+    html.push('<section class="folie"><div class="blatt"><h2>'+zeile(m[1].replace(/^Folie\s*\d+\s*[·:.-]\s*/i,""))+'</h2>'+md(rest)+'</div>'+(notiz?'<p class="notiz"><b>Sprechnotiz:</b> '+zeile(notiz.trim())+'</p>':'')+'</section>');
+  });
+  return DOK_KOPF + '<title>'+esc(titel)+' · Folien</title><style>'
+    + 'body{margin:0;background:#e9e3d3;font:20px/1.5 "Source Sans 3",system-ui,sans-serif;color:#0c1c30;padding:24px}'
+    + '.folie{max-width:1100px;margin:0 auto 28px}.blatt{aspect-ratio:16/9;background:#f1ecdd;border-radius:18px;padding:5% 6%;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;border-top:10px solid #29556d;overflow:hidden}'
+    + '.folie:first-child .blatt{background:#1d3f52;color:#f6efe0;border-top-color:#dc822e}.folie:first-child h2{color:#f6efe0}'
+    + 'h2{font:400 2.1em/1.1 Philosopher,Georgia,serif;color:#29556d;margin:0 0 .6em}ul,ol{margin:0;padding-left:1.1em}li{margin:.25em 0}li::marker{color:#dc822e}p{margin:.3em 0}'
+    + '.notiz{font-size:15px;color:#5d6a74;margin:10px 6px 0}@media print{body{background:#fff;padding:0}.folie{page-break-after:always;margin:0}.notiz{display:none}@page{size:landscape;margin:10mm}}'
+    + '</style></head><body>' + html.join("") + '</body></html>';
+}
+// ---------- Die fertige Verkaufsseite ----------
+// Claude zerlegt den Text der Verkaufsseite in Abschnitte (JSON), die Seite setzt sie in Patricias
+// Gestaltung. Claude schreibt also kein CSS — Farben und Schriften bleiben immer die ihren.
+var LOOKS = {
+  creme:{n:"Creme · Dunkelblau · Orange", grund:"#f1ecdd", tinte:"#0c1c30", kopf:"#f1ecdd", kopfTinte:"#0c1c30", band:"#29556d", bandTinte:"#f6efe0", akzent:"#dc822e", titel:"#29556d", karte:"#fbf8f1"},
+  nacht:{n:"Dunkelblau · Creme · Orange", grund:"#fbf8f1", tinte:"#0c1c30", kopf:"#1d3f52", kopfTinte:"#f6efe0", band:"#f1ecdd", bandTinte:"#0c1c30", akzent:"#dc822e", titel:"#29556d", karte:"#ffffff"},
+  petrol:{n:"Petrol · Creme · Orange", grund:"#fbf8f1", tinte:"#0c1c30", kopf:"#12828c", kopfTinte:"#ffffff", band:"#e6f1ef", bandTinte:"#0c1c30", akzent:"#dc822e", titel:"#0f6d75", karte:"#ffffff"}
+};
+var SEITE_AUFTRAG = "Setze die Verkaufsseite unten in Abschnitte für eine gestaltete Webseite um. Der Wortlaut bleibt so nah wie möglich am Text, nichts dazuerfinden, ✏️ PLATZ-Stellen bleiben stehen. "
+  + "Antworte nur mit JSON in dieser Form: {\"hero\":{\"oben\":\"kurze Zeile über dem Titel\",\"titel\":\"Hook-Überschrift\",\"unter\":\"ein bis zwei Sätze\",\"knopf\":\"Text des Kaufknopfs\"},"
+  + "\"abschnitte\":[{\"art\":\"text|liste|zitat|karten|preis|faq|band\",\"titel\":\"…\",\"text\":\"Absätze, getrennt mit Leerzeile\",\"punkte\":[\"…\"],\"wer\":\"nur bei zitat\",\"preis\":\"nur bei preis, z.B. 39 CHF\",\"gegenwert\":\"nur bei preis, falls im Text\",\"fragen\":[{\"f\":\"…\",\"a\":\"…\"}],\"knopf\":\"nur bei preis und band\"}],"
+  + "\"schluss\":{\"titel\":\"…\",\"text\":\"…\",\"knopf\":\"…\"}}. art: text = Fliesstext · liste = Aufzählung · zitat = Kundinnen-Stimme (nur wenn im Text) · karten = 3 bis 6 kurze Punkte nebeneinander (Weg, Boni, was sich verändert) · preis = der Preisblock · faq = Fragen und Antworten · band = ein kurzer Satz mit Knopf als farbiges Band zwischendurch. "
+  + "Wechsle die Arten ab, damit die Seite Rhythmus hat, und setze nach dem Problem- und nach dem Weg-Teil je ein band. **fett** darf im Text stehen.";
+function seitenBlock(){
+  var box=document.createElement("div"); box.className="zusatz";
+  var s = paket.seite = paket.seite || {farbe:"creme", link:""};
+  box.innerHTML = '<h3>Seite gestalten</h3><p class="hinweis">Aus dem Text oben wird eine fertige Webseite in deinen Farben. Herunterladen und in WordPress (HTML-Block) oder auf Netlify hochladen.</p>'
+    + '<div class="felder"><div class="feld"><label>Farbe</label><select class="s-farbe">'+Object.keys(LOOKS).map(function(k){ return '<option value="'+k+'">'+esc(LOOKS[k].n)+'</option>'; }).join("")+'</select></div>'
+    + '<div class="feld"><label>Kauf-Link <small>· ThriveCart, sonst bleibt der Knopf ein Platzhalter</small></label><input class="s-link" placeholder="https://mumlifebalance.thrivecart.com/…"></div>'
+    + '<div class="feld breit"><label>Bild im Kopf <small>· Shootingfoto oder Mockup aus Canva</small></label><div class="reihe"><label class="knopf zart" tabindex="0">Bild hochladen<input type="file" class="s-bild" accept="image/*" hidden></label><button class="knopf s-bildweg" hidden>Bild entfernen</button><span class="hinweis s-bildstand"></span></div></div></div>'
+    + '<div class="reihe"><button class="knopf voll s-bauen">Seite bauen</button><button class="knopf s-laden" hidden>HTML herunterladen</button><button class="knopf s-kopie" hidden>HTML kopieren</button><span class="hinweis s-stand"></span></div>'
+    + '<iframe class="vorschau" title="Vorschau der Verkaufsseite" sandbox="allow-same-origin" hidden></iframe>';
+  var q=function(c){ return box.querySelector(c); };
+  q(".s-farbe").value=s.farbe; q(".s-link").value=s.link||"";
+  var bild = roh("bild:"+paket.id, "");
+  function bildStand(){ q(".s-bildweg").hidden=!bild; q(".s-bildstand").textContent = bild ? "Bild gesetzt." : "Ohne Bild steht der Titel allein im Kopf."; }
+  function zeigen(){
+    var fertig = !!s.daten;
+    q(".s-laden").hidden = !fertig || !downloads; q(".s-kopie").hidden=!fertig; q(".vorschau").hidden=!fertig;
+    q(".s-bauen").textContent = fertig ? "Nochmal bauen" : "Seite bauen";
+    if(fertig) q(".vorschau").srcdoc = seiteHtml(s.daten, s.farbe, s.link, bild);
+  }
+  q(".s-farbe").addEventListener("change", function(){ s.farbe=this.value; speichern(); zeigen(); });
+  q(".s-link").addEventListener("change", function(){ s.link=this.value.trim(); speichern(); zeigen(); });
+  q(".s-bild").addEventListener("change", function(){
+    var f=this.files&&this.files[0]; this.value=""; if(!f) return;
+    verkleinern(f, 1400).then(function(url){ bild=url; if(!rohSchreib("bild:"+paket.id, url)) toast("Bild zu gross für den Browserspeicher — es gilt nur bis zum Neuladen."); bildStand(); zeigen(); })
+      .catch(function(){ toast("Das Bild liess sich nicht lesen."); });
+  });
+  q(".s-bildweg").addEventListener("click", function(){ bild=""; try{ localStorage.removeItem("aok:bild:"+paket.id); }catch(e){} bildStand(); zeigen(); });
+  q(".s-bauen").addEventListener("click", async function(){
+    if(!sample){ toast("Claude ist in dieser Ansicht nicht erreichbar."); return; }
+    var k=this; k.disabled=true; q(".s-stand").textContent="Claude setzt die Seite …";
+    try{
+      var v = await sample.json(grundlage("seite", "Verkaufsseite Hero Preis Fragen") + "\n=== TEXT DER VERKAUFSSEITE ===\n" + paket.teile.salespage + "\n\n=== AUFTRAG ===\n" + SEITE_AUFTRAG, {modelTier:"complex"});
+      if(!v || !v.hero || !Array.isArray(v.abschnitte)) throw {message:"Die Antwort hatte nicht die erwartete Form. Nochmal versuchen."};
+      s.daten=v; speichern(); zeigen(); q(".s-stand").textContent = v.abschnitte.length+" Abschnitte gesetzt.";
+    }catch(e){ q(".s-stand").textContent=fehlerText(e); }
+    k.disabled=false;
+  });
+  var name = function(){ return dateiName("verkaufsseite-"+(stand.name||stand.thema))+".html"; };
+  q(".s-laden").addEventListener("click", function(){ speichereDatei(name(), seiteHtml(s.daten, s.farbe, s.link, bild)); });
+  q(".s-kopie").addEventListener("click", function(){ kopieren(seiteHtml(s.daten, s.farbe, s.link, bild)); });
+  bildStand(); zeigen();
+  return box;
+}
+function verkleinern(datei, max){
+  return new Promise(function(ok, nein){
+    var r=new FileReader(); r.onerror=nein;
+    r.onload=function(){ var img=new Image(); img.onerror=nein; img.onload=function(){
+      var f=Math.min(1, max/Math.max(img.width,img.height)), c=document.createElement("canvas");
+      c.width=Math.round(img.width*f); c.height=Math.round(img.height*f); c.getContext("2d").drawImage(img,0,0,c.width,c.height);
+      ok(c.toDataURL("image/jpeg",0.82)); }; img.src=r.result; };
+    r.readAsDataURL(datei);
+  });
+}
+function absaetze(t){ return String(t||"").split(/\n\s*\n/).filter(function(x){ return x.trim(); }).map(function(x){ return "<p>"+zeile(x.trim()).replace(/\n/g,"<br>")+"</p>"; }).join(""); }
+function seiteHtml(d, farbe, link, bild){
+  var L = LOOKS[farbe] || LOOKS.creme, href = link ? esc(link) : "#kaufen";
+  var knopf = function(t){ return t ? '<a class="kn" href="'+href+'">'+esc(t)+'</a>' : ""; };
+  var teile = (d.abschnitte||[]).map(function(a, i){
+    var t = a.titel ? "<h2>"+zeile(a.titel)+"</h2>" : "", art=a.art||"text";
+    if(art==="band") return '<section class="band"><div class="in">'+(a.titel?"<h2>"+zeile(a.titel)+"</h2>":"")+absaetze(a.text)+knopf(a.knopf)+'</div></section>';
+    if(art==="zitat") return '<section><div class="in schmal"><blockquote>'+absaetze(a.text)+(a.wer?"<cite>— "+esc(a.wer)+"</cite>":"")+'</blockquote></div></section>';
+    if(art==="liste") return '<section><div class="in schmal">'+t+absaetze(a.text)+'<ul class="haken">'+(a.punkte||[]).map(function(p){ return "<li>"+zeile(p)+"</li>"; }).join("")+'</ul></div></section>';
+    if(art==="karten") return '<section class="hell"><div class="in">'+t+absaetze(a.text)+'<div class="karten">'+(a.punkte||[]).map(function(p, n){ return '<div class="k"><span>'+(n+1)+'</span><p>'+zeile(p)+'</p></div>'; }).join("")+'</div></div></section>';
+    if(art==="preis") return '<section id="kaufen" class="hell"><div class="in schmal"><div class="preis">'+t+(a.gegenwert?'<p class="gw">'+zeile(a.gegenwert)+'</p>':"")+'<p class="betrag">'+esc(a.preis||"")+'</p>'+absaetze(a.text)+((a.punkte||[]).length?'<ul class="haken">'+a.punkte.map(function(p){ return "<li>"+zeile(p)+"</li>"; }).join("")+'</ul>':"")+knopf(a.knopf||d.hero.knopf)+'</div></div></section>';
+    if(art==="faq") return '<section><div class="in schmal">'+t+(a.fragen||[]).map(function(f){ return "<details><summary>"+zeile(f.f)+"</summary>"+absaetze(f.a)+"</details>"; }).join("")+'</div></section>';
+    return '<section><div class="in schmal">'+t+absaetze(a.text)+'</div></section>';
+  }).join("");
+  var h = d.hero||{}, sc = d.schluss||{};
+  return DOK_KOPF + '<title>'+esc((h.titel||"Verkaufsseite").replace(/\*\*/g,""))+'</title><style>'
+    + ':root{--grund:'+L.grund+';--tinte:'+L.tinte+';--kopf:'+L.kopf+';--kopfT:'+L.kopfTinte+';--band:'+L.band+';--bandT:'+L.bandTinte+';--akzent:'+L.akzent+';--titel:'+L.titel+';--karte:'+L.karte+'}'
+    + '*{box-sizing:border-box}body{margin:0;background:var(--grund);color:var(--tinte);font:18px/1.65 "Source Sans 3",system-ui,sans-serif}'
+    + 'h1,h2{font-family:Philosopher,Georgia,serif;font-weight:400;line-height:1.12;text-wrap:balance;margin:0 0 .5em}h2{font-size:clamp(28px,4.4vw,40px);color:var(--titel)}'
+    + 'p{margin:0 0 1em}.in{max-width:1080px;margin:0 auto;padding:0 20px}.schmal{max-width:720px}section{padding:clamp(48px,8vw,88px) 0}'
+    + '.hero{background:var(--kopf);color:var(--kopfT);padding:clamp(44px,7vw,90px) 0}.hero .in{display:grid;grid-template-columns:'+(bild?'1.15fr .85fr':'1fr')+';gap:44px;align-items:center}'
+    + '.hero h1{font-size:clamp(36px,6vw,62px);color:var(--kopfT)}.hero .oben{font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:13px;color:var(--akzent)}.hero .unter{font-size:20px;opacity:.9;max-width:36ch}'
+    + '.hero img{width:100%;border-radius:22px;display:block;box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}'
+    + '.kn{display:inline-block;background:var(--akzent);color:#fff;text-decoration:none;font-weight:700;padding:16px 30px;border-radius:999px;margin-top:8px;box-shadow:0 6px 0 rgba(0,0,0,.18)}.kn:hover{filter:brightness(1.06)}'
+    + '.band{background:var(--band);color:var(--bandT);text-align:center}.band h2{color:var(--bandT)}.band .in{max-width:760px}'
+    + '.hell{background:color-mix(in srgb,var(--titel) 6%,var(--grund))}'
+    + 'blockquote{margin:0;font:italic 24px/1.5 Philosopher,Georgia,serif;border-left:4px solid var(--akzent);padding:6px 0 6px 26px}cite{display:block;font:600 15px "Source Sans 3",sans-serif;margin-top:8px;font-style:normal}'
+    + '.haken{list-style:none;padding:0;margin:0 0 1em}.haken li{padding:8px 0 8px 34px;position:relative;border-bottom:1px solid color-mix(in srgb,var(--tinte) 10%,transparent)}.haken li::before{content:"✓";position:absolute;left:0;top:7px;color:var(--akzent);font-weight:700}'
+    + '.karten{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.k{background:var(--karte);border-radius:18px;padding:22px;box-shadow:0 14px 30px -24px rgba(0,0,0,.35)}.k span{font:italic 34px/1 Philosopher,serif;color:var(--akzent)}.k p{margin:10px 0 0}'
+    + '.preis{background:var(--karte);border-radius:26px;padding:clamp(26px,5vw,48px);text-align:center;border-top:8px solid var(--akzent);box-shadow:0 24px 50px -30px rgba(0,0,0,.35)}.preis .haken{text-align:left}.gw{text-decoration:line-through;opacity:.6;margin:0}.betrag{font:400 clamp(44px,7vw,64px)/1 Philosopher,serif;color:var(--titel);margin:.2em 0 .4em}'
+    + 'details{border-bottom:1px solid color-mix(in srgb,var(--tinte) 14%,transparent);padding:14px 0}summary{cursor:pointer;font-weight:600;font-size:19px}details p{margin:.6em 0 0}'
+    + '.schluss{background:var(--kopf);color:var(--kopfT);text-align:center}.schluss h2{color:var(--kopfT)}'
+    + '.platz{background:#ffe2b8;color:#0c1c30;padding:0 4px;border-radius:4px}'
+    + '@media(max-width:760px){.hero .in{grid-template-columns:1fr}.hero img{order:-1;max-height:52vh;object-fit:cover}}'
+    + '</style></head><body>'
+    + '<header class="hero"><div class="in"><div>'+(h.oben?'<p class="oben">'+esc(h.oben)+'</p>':"")+'<h1>'+zeile(h.titel||"")+'</h1><p class="unter">'+zeile(h.unter||"")+'</p>'+knopf(h.knopf)+'</div>'+(bild?'<img src="'+bild+'" alt="">':"")+'</div></header>'
+    + teile
+    + '<section class="schluss"><div class="in schmal"><h2>'+zeile(sc.titel||"")+'</h2>'+absaetze(sc.text)+knopf(sc.knopf||h.knopf)+'</div></section>'
+    + '</body></html>';
+}
+function blattHtml(titel, text){
+  return DOK_KOPF + '<title>'+esc(titel)+' · Übungsblatt</title><style>'
+    + 'body{margin:0 auto;max-width:760px;padding:40px 28px;font:17px/1.6 "Source Sans 3",system-ui,sans-serif;color:#0c1c30;background:#fff}'
+    + 'h1,h2,h3{font-family:Philosopher,Georgia,serif;font-weight:400;color:#29556d;margin:1.2em 0 .3em}h1{font-size:34px;border-bottom:3px solid #dc822e;padding-bottom:6px}'
+    + 'table{border-collapse:collapse;width:100%;margin:8px 0}td,th{border:1px solid #cfc5ad;padding:10px;vertical-align:top;min-height:48px;height:48px}'
+    + 'blockquote{margin:8px 0;padding:8px 14px;border-left:3px solid #dc822e;background:#f6f1e4}.tab{overflow-x:auto}'
+    + '@media print{body{padding:0}@page{margin:16mm}}</style></head><body>' + md(text) + '</body></html>';
+}
+function listeZeigen(){
+  var L=$("liste"); L.innerHTML="";
+  bausteine().forEach(function(b, i){ L.appendChild(karte(b, i)); });
+  fortschritt();
+}
+function fortschritt(){
+  var n=bausteine().length, f=paket?Object.keys(paket.teile).length:0;
+  $("balken").style.width=(f/n*100)+"%";
+  $("zaehler").textContent = f ? f+" von "+n+" Bausteinen fertig" : n+" Bausteine warten auf den Knopf";
+}
+function status(k, s){ var e=document.querySelector("#b-"+k+" .st"); if(!e) return; e.className="st "+s; e.textContent = s==="fertig"?"✓":(s==="fehler"?"!":""); }
+
+async function bauen(liste){
+  if(!sample || laeuft) return;
+  laeuft=true; pruefen(); $("abbrechen").hidden=false;
+  if(!paket || liste.length>1){ paket = {id:String(Date.now()), datum:new Date().toLocaleString("de-CH"), projekt:projekt, plan:JSON.parse(JSON.stringify(stand)), teile:{}, extra:{}, quellen:{}}; listeZeigen(); }
+  for(var i=0;i<liste.length;i++){
+    var b=liste[i]; if(stopp===true) break;
+    var el=$("b-"+b.k); status(b.k,"laeuft"); el.open=true; el.querySelector(".md").innerHTML='<p class="leer">Claude schreibt …</p>';
+    $("losStand").textContent = "Baue "+b.t+" ("+(i+1)+" von "+liste.length+") …";
+    var ctrl = new AbortController(); stopp = ctrl;
+    try{
+      var g = grundlage(b, b.a);
+      paket.quellen = paket.quellen || {};
+      paket.quellen[b.k] = grundlage.letzte.n ? grundlage.letzte.n+" Punkte aus „"+grundlage.letzte.titel.join("“, „")+"“" : "";
+      var r = await sample(g + "\n=== AUFTRAG ===\n" + b.a
+        + "\n\nSchreibe auf Deutsch in Patricias Stimme, Schweizer ss. Nur das Ergebnis als Markdown, ohne Vorrede, ohne Schlusswort.",
+        {modelTier:"complex", signal:ctrl.signal, cache:false,
+         onText:function(x){ el.querySelector(".md").innerHTML = md(x.text); }});
+      paket.teile[b.k] = r.text + (r.truncated ? "\n\n✏️ PLATZ: Hier wurde abgeschnitten — diesen Baustein nochmal bauen." : "");
+      el.querySelector(".md").innerHTML = md(paket.teile[b.k]); status(b.k,"fertig"); el.open=false; fortschritt();
+      quelleZeigen(el, b.k); extraZeigen(el, b);
+      speichern();
+    }catch(e){
+      status(b.k,"fehler"); el.querySelector(".md").innerHTML='<p class="leer">'+esc(e && e.code==="aborted"?"Angehalten.":fehlerText(e))+'</p>';
+      if(e && (e.code==="rate_limited"||e.code==="not_granted"||e.code==="aborted")) break;
+    }
+  }
+  laeuft=false; stopp=null; $("abbrechen").hidden=true; pruefen();
+  var fertig = Object.keys(paket.teile).length;
+  $("losStand").textContent = fertig+" von "+bausteine().length+" Bausteinen fertig.";
+  if(fertig) toast("Paket gespeichert.");
+}
+$("abbrechen").addEventListener("click", function(){ if(stopp && stopp.abort) stopp.abort(); stopp=true; });
+$("los").addEventListener("click", function(){ if(pruefen()) bauen(bausteine()); });
+
+function speichern(){
+  schreib("aktuell", paket);
+  var a = lies("archiv", []).filter(function(x){ return x.id!==paket.id; });
+  a.unshift(paket);
+  // Je Projekt die letzten 8; wird der Speicher knapp, fallen die ältesten weg.
+  var anzahl={}; a = a.filter(function(x){ var p=x.projekt||"p1"; anzahl[p]=(anzahl[p]||0)+1; return anzahl[p]<=8; });
+  while(!schreib("archiv", a) && a.length>1) a.pop();
+  archivZeigen();
+}
+function archivZeigen(){
+  var a = lies("archiv", []).filter(function(x){ return (x.projekt||"p1")===projekt; }), A=$("archiv"); A.innerHTML="";
+  if(!a.length){ A.innerHTML='<p class="leer">Hier landen deine gebauten Pakete. Sie bleiben in diesem Browser gespeichert. Für den Workspace: „Alles als Datei speichern“ und die Datei Claude geben.</p>'; return; }
+  a.forEach(function(p){
+    var b=document.createElement("button");
+    var z1=document.createElement("b"); z1.textContent=(p.plan.name||p.plan.thema||"Ohne Namen").slice(0,80);
+    var z2=document.createElement("span"); z2.textContent=artWort(p.plan)+" · "+p.datum+" · "+Object.keys(p.teile).length+" Bausteine";
+    b.appendChild(z1); b.appendChild(z2);
+    b.addEventListener("click", function(){ paket=p; stand=JSON.parse(JSON.stringify(p.plan)); vorschlaege={}; schreib("entwurf",stand); schreib("aktuell",p); fuellen(); listeZeigen(); toast("Paket geladen."); });
+    A.appendChild(b);
+  });
+}
+
+function allesText(){
+  if(!paket) return "";
+  var s = "---\ntags: [produkt]\n---\n\n# "+(stand.name||stand.thema)+"\n\nGebaut mit „Angebot auf Knopfdruck“ am "+paket.datum+".\n\n## Bauplan\n\n```json\n"+planText()+"\n```\n";
+  bausteine().forEach(function(b){ if(paket.teile[b.k]) s += "\n\n---\n\n## "+b.t+" ("+b.d+")\n\n"+paket.teile[b.k]; });
+  Object.keys(paket.extra||{}).forEach(function(k){ var i=k.indexOf(":"); s += "\n\n---\n\n## "+EINHEIT[k.slice(0,i)].t+": "+k.slice(i+1)+"\n\n"+paket.extra[k]; });
+  return s;
+}
+$("kopierAlles").addEventListener("click", function(){ var t=allesText(); if(!t){ toast("Noch nichts gebaut."); return; } kopieren(t); });
+$("laden").addEventListener("click", function(){
+  var t=allesText(); if(!t || !downloads){ toast("Noch nichts gebaut."); return; }
+  var name = "angebot-"+(stand.name||stand.thema||"paket").toLowerCase().replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40)+".md";
+  downloads.save({filename:name, data:t}).then(function(){ toast("Gespeichert."); }).catch(function(){ toast("Nicht gespeichert."); });
+});
+
+function kopieren(t){
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(t).then(function(){ toast("Kopiert."); }, function(){ ausweich(t); });
+  } else ausweich(t);
+}
+function ausweich(t){ var a=document.createElement("textarea"); a.value=t; document.body.appendChild(a); a.select(); try{ document.execCommand("copy"); toast("Kopiert."); }catch(e){ toast("Markiere den Text und kopiere ihn selbst."); } a.remove(); }
+
+// ---------- Markdown, nur was die Bausteine brauchen ----------
+function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function zeile(s){
+  return esc(s).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*([^*\s][^*]*?)\*/g,"$1<em>$2</em>")
+    .replace(/`([^`]+)`/g,"<code>$1</code>").replace(/(✏️ ?PLATZ:?[^<]*)/g,'<span class="platz">$1</span>');
+}
+function md(t){
+  var L=String(t||"").replace(/\r/g,"").split("\n"), o=[], i=0;
+  while(i<L.length){
+    var z=L[i];
+    if(/^```/.test(z)){ var c=[]; i++; while(i<L.length && !/^```/.test(L[i])){ c.push(L[i]); i++; } i++; o.push("<pre>"+esc(c.join("\n"))+"</pre>"); continue; }
+    if(/^\s*\|/.test(z)){ var r=[]; while(i<L.length && /^\s*\|/.test(L[i])){ if(!/^\s*\|?\s*:?-{2,}/.test(L[i])) r.push(L[i]); i++; }
+      o.push('<div class="tab"><table>'+r.map(function(x){ return "<tr>"+x.replace(/^\s*\||\|\s*$/g,"").split("|").map(function(c){ return "<td>"+zeile(c.trim())+"</td>"; }).join("")+"</tr>"; }).join("")+"</table></div>"); continue; }
+    var h=z.match(/^(#{1,4})\s+(.*)/); if(h){ var n=Math.min(3,h[1].length); o.push("<h"+n+">"+zeile(h[2])+"</h"+n+">"); i++; continue; }
+    if(/^\s*>/.test(z)){ var q=[]; while(i<L.length && /^\s*>/.test(L[i])){ q.push(L[i].replace(/^\s*>\s?/,"")); i++; } o.push("<blockquote>"+q.map(zeile).join("<br>")+"</blockquote>"); continue; }
+    if(/^\s*([-*]|\d+[.)])\s+/.test(z)){ var nr=/^\s*\d/.test(z), li=[]; while(i<L.length && /^\s*([-*]|\d+[.)])\s+/.test(L[i])){ li.push(L[i].replace(/^\s*([-*]|\d+[.)])\s+/,"")); i++; }
+      o.push((nr?"<ol>":"<ul>")+li.map(function(x){ return "<li>"+zeile(x.replace(/^\[ \]\s*/,"☐ ").replace(/^\[x\]\s*/i,"☑ "))+"</li>"; }).join("")+(nr?"</ol>":"</ul>")); continue; }
+    if(/^\s*-{3,}\s*$/.test(z)){ o.push("<hr>"); i++; continue; }
+    if(!z.trim()){ i++; continue; }
+    var p=[]; while(i<L.length && L[i].trim() && !/^(#|```|\s*\||\s*>|\s*([-*]|\d+[.)])\s|\s*-{3,}\s*$)/.test(L[i])){ p.push(L[i]); i++; }
+    o.push("<p>"+p.map(zeile).join("<br>")+"</p>");
+  }
+  return o.join("");
+}
+
+// Nur in der lokalen Prüffassung: die neuen Teile ohne Claude prüfbar machen.
+if(/test\.html$/.test(location.pathname)) window.__aok = {fachwissen:fachwissen, seiteHtml:seiteHtml, folienHtml:folienHtml, blattHtml:blattHtml, grundlage:grundlage};
+projekteZeigen(); fuellen(); listeZeigen(); archivZeigen();
+if(paket) $("losStand").textContent = Object.keys(paket.teile).length+" Bausteine vom letzten Bau geladen.";
+})();
+</script>

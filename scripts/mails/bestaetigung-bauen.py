@@ -160,6 +160,18 @@ MAILS = [
          "Sobald du geklickt hast, landest du direkt beim Stimm-Check. Hol dir schon mal "
          "einen Text, den du selbst geschrieben hast, eine Caption oder eine Mail reicht."),
 
+    mail(75, "nischengenerator.html", "Nischengenerator",
+         "Ein Klick noch, dann findest du dein eigenes Thema",
+         "Bestätig kurz deine Adresse, danach kannst du sofort loslegen.",
+         "Ein Klick noch, dann kannst du loslegen",
+         "Ein paar Fragen zu dir, dann hast du dein Thema und deinen Experten-Satz.",
+         "Hey, schön, dass du dein eigenes Thema im Network finden willst. Der Nischengenerator "
+         "fragt dich nach deiner Erfahrung und nach dem, was man dich immer wieder fragt, und macht "
+         "daraus drei Themen mit deinem Experten-Satz und Ideen für dein erstes Gratis-Tool.",
+         "Ja, ich will mein Thema finden",
+         "Sobald du geklickt hast, landest du direkt beim Nischengenerator. Nimm dir zehn Minuten "
+         "Zeit, Stichworte reichen bei jeder Frage."),
+
     mail(1, "newsletter.html", "Newsletter",
          "Ein Klick noch, dann bist du auf meiner Liste",
          "Bestätig kurz deine Adresse, danach bekommst du meine Mails.",
@@ -240,7 +252,8 @@ def main():
         h = bauen(m)
         (ZIEL / m["datei"]).write_text(h, encoding="utf-8")
         print("%-28s %s" % (m["datei"], m["betreff"]))
-        if "--hochladen" in sys.argv:
+        nur = sys.argv[sys.argv.index("--nur") + 1].split(",") if "--nur" in sys.argv else None
+        if "--hochladen" in sys.argv and (nur is None or str(m["formular"]) in nur):
             hochladen(m, h)
     # Umlaut-Wächter aus dem Gerüst über den sichtbaren Text
     for m in MAILS:

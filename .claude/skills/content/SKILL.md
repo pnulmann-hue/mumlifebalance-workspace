@@ -342,20 +342,49 @@ enthalten. „Sichtbarkeit", „Positionierung", „eigenes Thema", „digitale 
 
 ---
 
+## DIE PFLICHTREGELN — die eine Stelle für Hook und Caption (seit 29.10.2026)
+
+Patricia, 29.10.: *„ob da jetzt alles klar ist oder ob es noch verwirrungen gibt beim
+schreiben weil zu viele regeln“*. Die Prüfung fand neun Widersprüche in fünf Dateien
+und rund 30 Prüfpunkte je Beitrag. **Seitdem stehen die Pflichtregeln nur hier.**
+`/hooks` ist der Werkzeugkasten (Formeln, Stufen, Vorlagen), `/caption`, `/karussell`
+und `/reels` enthalten nur noch ihre Format-Technik. **Sagt eine andere Datei etwas
+anderes, gilt diese Liste.**
+
+| # | Regel |
+|---|---|
+| 1 | **Letzter Check, fünf Fragen** (TEIL 3 unten). Ein Nein und der Hook wird neu geschrieben, nie die Caption nachgebessert |
+| 2 | **Länge:** auf Bild, Cover, Folie 1 und als Text im Reel **10 bis 14 Wörter**. Als erste Caption-Zeile **bis 22 Wörter**. Höchstens zwei Sätze |
+| 3 | **Fragen:** ja, wenn es **ihre eigene Frage** ist oder ein Zitat (von ihr, dem Mann, der Upline). Keine Quizfrage, keine abstrakte Frage |
+| 4 | **Gegner, Geständnis oder Zitat:** mindestens eins davon in jedem Hook |
+| 5 | **Nie das Werkzeug im Hook** (KI, Instagram, Kurs, Öle, Freebie). Der Moment steht vorne, das Werkzeug frühestens ab Folie 2 |
+| 6 | **Listen und Zahlen** nur mit Haltung oder Gegner, Zahlen nur belegt |
+| 7 | **„Nicht X, sondern Y“ ist überall verboten**, auch im Hook. Dazu die ganze Blackliste (`context/ki-phrasen-blackliste.md`, geprüft mit `texte-pruefen.py`) |
+| 8 | **Genau ein Aufruf je Beitrag:** Stichwort **oder** Teilen/Speichern/Wahlfrage, nie beides. Das Stichwort steht **nur am Schluss** |
+| 9 | **Caption-Einstieg:** eine von drei Formen (ihr Satz · ihre Frage · meine Szene mit Zeitanker), nie zweimal hintereinander dieselbe. Den Hook nicht wiederholen |
+| 10 | **Höchstens 5 Hashtags**, `#mamabusiness` als Anker |
+| 11 | **Beitrags-Check** (SCHRITT 7) für jeden Beitrag, auch im Automatik-Lauf |
+
+---
+
 ## TEIL 3: HOOKS
 
-Der volle Katalog steht in `.claude/skills/hooks/SKILL.md` und wird in Schritt 1
-**vollständig gelesen**. Was hier steht, gilt immer.
+Der Werkzeugkasten steht in `.claude/skills/hooks/SKILL.md` und wird in Schritt 1
+gelesen. Die Regeln hier und in der Pflichtregel-Tabelle oben gelten immer.
 
-### Die vier Fragen — der letzte Check
+### Die fünf Fragen — der letzte Check
 
 Jeder Hook läuft durch. Eine mit Nein und der **Hook** wird umgeschrieben, nie die
 Caption nachgebessert.
 
-1. Trifft es wirklich einen Schmerz?
+1. Trifft es wirklich einen Schmerz? (Der Schmerz darf als Geständnis, Zitat oder
+   Szene dastehen, nicht als Diagnose „Du kennst das: …“.)
 2. Denkt sie „krass, wieso weiss die, was ich denke"?
 3. Sagt man das so am Küchentisch zu einer Freundin?
-4. **Ist die Lösung draussen?** Die Lösung kommt nie im Hook.
+4. **Stimmt der Bezug zwischen den beiden Zeilen?** Jedes *trotzdem · obwohl · aber ·
+   dabei* laut lesen: steht dort wirklich ein Gegensatz? (Der „trotzdem“-Fehler vom
+   20.09.: ein Bindewort hat den Sinn gedreht.)
+5. **Ist die Lösung draussen?** Die Lösung kommt nie im Hook.
 
 ### Klarheit in drei Sekunden
 
@@ -383,7 +412,8 @@ schwächsten Hooks, Einkommens-Belege die allerschwächsten.
 - **Geständnis:** Ich-Form, ein konkreter Moment, ein Detail, das man sieht. Nur aus den
   belegten Eckdaten (TEIL 0), sonst „(nur wenn's stimmt)“.
 - **Zitat:** wörtlicher Satz von ihr, ihrem Mann, der Upline, ihrem inneren Monolog.
-  Fragen wirken **nur als Zitat**, abstrakte Fragen nicht.
+  Fragen wirken als Zitat oder als **ihre eigene Frage** (Frage in Zeile 1 lag bei 2,6×),
+  abstrakte Fragen nicht.
 
 | Stil | Mechanik |
 |---|---|
@@ -396,10 +426,12 @@ schwächsten Hooks, Einkommens-Belege die allerschwächsten.
 | Frage mit Stachel | eine Frage, die sie sich nicht zu stellen traut — keine Quizfrage |
 | Liste mit Gegner | Zahl plus Wertung, nie neutral |
 | Zahl mit Haltung | eine nüchterne Zahl, die eine unbequeme Folgerung erzwingt (nur belegte Zahlen) |
+| Was du nicht brauchst | „Was du nicht brauchst, damit [ihr Wunsch] wahr wird“ — streicht eine Hürde, die sie für Pflicht hält (grössere Liste, mehr Follower, mehr Zeit). Die Hürde ist der Gegner. Was sie stattdessen braucht, kommt erst ab Folie 2 (seit 29.10.2026) |
 | Swiss Angle | Franken, Pensum, AHV, Krankenkasse, Schweizer Zurückhaltung beim Reden über Geld |
 
-**Länge:** 8 bis 18 Wörter, höchstens zwei Sätze, harte Grenze 22. Was länger werden will,
-gehört in die Caption — aufs Cover kommt nur der Moment, der neugierig macht.
+**Länge:** auf Bild und Cover 10 bis 14 Wörter, als erste Caption-Zeile bis 22, höchstens
+zwei Sätze. Was länger werden will, gehört in die Caption — aufs Cover kommt nur der
+Moment, der neugierig macht.
 
 **Ihre Wörter im ersten Satz:** Eigenbestellung, Upline, nebenbei, mein Mann, posten,
 Reichweite, Pensum, die Kinder, eigenes Geld, Plan B. **Nie:** Funnel, Conversion,
@@ -816,7 +848,8 @@ Die Caption **ergänzt** den Beitrag. Den Hook nicht wiederholen.
 | **4 Storytelling kurz** | Szene (max. 2 Sätze) → Wendepunkt → Erkenntnis → Überleitung → CTA |
 | **5 Listicle** | „[Zahl] Dinge, die ich früher gerne gewusst hätte" → 1–5 mit kurzer Erklärung → „Nummer X hat am meisten verändert" → CTA |
 
-**Immer dabei:** Zeitanker als Einstieg · eine konkrete Zahl in den ersten zwei Sätzen,
+**Immer dabei:** einer der drei Einstiege (ihr Satz · ihre Frage · meine Szene mit
+Zeitanker) · eine konkrete Zahl in den ersten zwei Sätzen,
 **nur aus `patricia-expertise.md`** · ganze Sätze · echte Umlaute · Schweizer ss ·
 höchstens fünf Hashtags mit `#mamabusiness` als Anker · **jede Caption ein anderer
 Einstieg als die letzte**.
@@ -928,6 +961,21 @@ Zielgruppe überhaupt erst kopierbar.
 🚨 **Ohne Beleg kein Beweisbeitrag.** Ein Zitat allein („Super Kurs!") ist keiner.
 Fehlt Ausgangslage, Zeitraum oder Zahl, wird der Beitrag **nicht gebaut** — und
 schon gar nichts dazuerfunden. Dann lieber ein Beitragstyp weniger.
+
+### Einmal pro Woche ein Wandel-Beitrag (seit 29.10.2026)
+
+Je Profil und Woche ein Beitrag über **Patricias eigenen Weg**: wie ein Tag, ein Gedanke oder
+eine Gewohnheit früher aussah und wie heute. Er schafft beides zugleich: *sie war auch dort*
+(Verbindung) und *sie ist, wo ich hin will* (Anziehung).
+
+- **Spiegel, nicht Beweis.** Ein Bild aus dem Alltag (der Morgen, die Liste, der Abend am
+  Küchentisch), keine Umsatzzahl. „Ich als Beweis“ lag in der Hook-Analyse bei 0,56,
+  „Ich als Spiegel“ trägt.
+- **Nur aus belegten Eckdaten** (TEIL 0, `context/patricia-vollprofil.md`,
+  `context/patricia-interview-2026-10.md`). Fehlt das Vorher-Detail, steht „(nur wenn's stimmt)“
+  und Patricia füllt es. Nie eine Szene erfinden.
+- Zählt als einer der fünf Plätze, nicht als sechster. Meist ein Reichweiten-Platz (Share-CTA).
+- Hook über Geständnis oder Zeitanker („Vor zwei Jahren …“).
 
 ### SCHRITT 7 · 🛑 Der Beitrags-Check
 

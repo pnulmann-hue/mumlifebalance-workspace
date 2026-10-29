@@ -52,7 +52,7 @@ def main():
     m = WhisperModel(modell, device="cpu", compute_type="int8", cpu_threads=os.cpu_count())
     for v in offen:
         e = bericht[v]
-        cfg = holen.konfig(v)
+        cfg = holen.konfig(v, e.get("schluessel", ""))  # Freigabe-Schlüssel aus der Lektion, falls Vimeo sonst 403
         with tempfile.TemporaryDirectory() as tmp:
             wav = os.path.join(tmp, "ton.wav")
             ton_holen(cfg, wav)

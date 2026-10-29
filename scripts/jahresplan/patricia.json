@@ -1,0 +1,166 @@
+{
+  "_hinweis": "Patricias eigene Fassung des Jahresplaners zum Testen. Preise aus context/link-uebersicht.md (Stand 26.10.2026). tool-bauen.py --patricia baut daraus jahresplaner-patricia.html. Sandras Beispiel in fragen.json bleibt unberührt.",
+  "titel": "Mein Jahresplan · Patricia",
+  "hinweis": "<strong>Deine Angebote und die Schulferien 2027 sind schon eingetragen.</strong> Ergänze Rückblick, Vision und Woche und verteile deine Angebote auf die Monate.",
+  "jahr": "2027",
+  "antworten": {
+    "v_ziel": "40000",
+    "l_ferien": "Weihnachtsferien bis 3.1. · Sportferien 1.–7.2. · Ostern 26.–29.3. · Frühlingsferien 12.–25.4. · Auffahrt 6.–7.5. · Sommerferien 12.7.–15.8. · Herbstferien 4.–24.10. · Weihnachtsferien ab 20.12.",
+    "l_fix": "Schulfrei: 13.1. Alter Silvester · 17.5. Pfingstmontag · 27.5. Fronleichnam · 16.8. Chilbi · 30.9. Viehschau · 1.11. Stufenkonferenz · 19.11. Weiterbildung"
+  },
+  "angebote": [
+    {
+      "name": "Lead-Challenge",
+      "stufe": "kostenlos",
+      "preis": "0",
+      "heute": "Postet viel, aber niemand meldet sich.",
+      "danach": "Hat einen eigenen kostenlosen Leadmagneten, über den sich Interessierte melden.",
+      "satz": "In drei Tagen zu deinem eigenen Leadmagneten.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "Produkt-Ideen-Finder",
+      "stufe": "kostenlos",
+      "preis": "0",
+      "heute": "Weiss nicht, welches eigene Produkt neben dem Network passt.",
+      "danach": "Hat eine Produktidee, die zu ihrem Wissen passt.",
+      "satz": "Finde die Produktidee, die schon in deinem Network-Wissen steckt.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "Story-Challenge",
+      "stufe": "kostenlos",
+      "preis": "0",
+      "heute": "Weiss nicht, was sie in den Storys erzählen soll.",
+      "danach": "Zeigt sich in den Storys und bekommt Antworten.",
+      "satz": "Sieben Tage Storys, die Gespräche anstossen.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "Energie-Kickstart (doTERRA)",
+      "stufe": "kostenlos",
+      "herkunft": "Network",
+      "preis": "0",
+      "heute": "Ist müde und weiss nicht, ob Öle ihr etwas bringen.",
+      "danach": "Hat ihren Einstieg in die Energie-Routine ausprobiert.",
+      "satz": "Dein kostenloser Start in mehr Energie."
+    },
+    {
+      "name": "Content-Box",
+      "stufe": "klein",
+      "preis": "17",
+      "heute": "Sitzt vor dem leeren Feld und sucht die erste Zeile.",
+      "danach": "Hat Hook-Vorlagen, mit denen ein Beitrag schnell steht.",
+      "satz": "Vorlagen für die erste Zeile, die gelesen wird.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "Storyideen für Networkerinnen",
+      "stufe": "klein",
+      "preis": "19",
+      "heute": "Weiss jeden Morgen nicht, was sie in die Storys stellen soll.",
+      "danach": "Hat für jeden Tag eine Idee zum Nachmachen.",
+      "satz": "Nie mehr ohne Story-Idee.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "Startklar",
+      "stufe": "klein",
+      "preis": "39",
+      "heute": "Ihr Profil sagt nicht, wofür sie steht.",
+      "danach": "Hat ein Instagram-Profil, das zeigt, wofür sie steht und wohin man klickt.",
+      "satz": "Dein Instagram-Grundgerüst als Networkerin.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "Finde dein Thema",
+      "stufe": "klein",
+      "preis": "39",
+      "heute": "Spricht über alles ein bisschen und bleibt nicht hängen.",
+      "danach": "Weiss, mit welchem Thema sie bekannt werden will.",
+      "satz": "Dein Thema als Network-Mama in 60 Minuten.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "Expertin statt Verkäuferin",
+      "stufe": "mittel",
+      "preis": "97",
+      "heute": "Fühlt sich beim Verkaufen wie eine Vertreterin.",
+      "danach": "Wird als Expertin gefragt statt als Verkäuferin gemieden.",
+      "satz": "Vom Verkaufen zum Gefragtwerden.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "Instagram-Kundenmaschine",
+      "stufe": "gross",
+      "preis": "333",
+      "heute": "Postet regelmässig, aber daraus werden keine Kundinnen.",
+      "danach": "Hat ein Profil, bei dem die Leute von sich aus fragen.",
+      "satz": "Ein Instagram, das Kundinnen bringt.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "30-Tage-Energie-Routine",
+      "stufe": "gross",
+      "herkunft": "Network",
+      "preis": "270",
+      "heute": "Funktioniert seit Jahren und hat sich selbst vergessen.",
+      "danach": "Hat eine Routine, die in den Familienalltag passt, mit den Produkten dazu.",
+      "satz": "30 Tage zurück zu deiner Energie."
+    },
+    {
+      "name": "Digitale Produktwelt",
+      "stufe": "gross",
+      "preis": "333",
+      "heute": "Verdient nur, wenn die Bestellungen im Network laufen.",
+      "danach": "Hat ein eigenes digitales Produkt neben dem Network.",
+      "satz": "Dein eigenes Produkt neben dem Network.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "Mama-CEO",
+      "stufe": "gross",
+      "preis": "333",
+      "heute": "Das Business läuft zwischen Kindern und Haushalt irgendwie nebenher.",
+      "danach": "Hat Zeit für ihr Business, ohne dass die Familie zu kurz kommt.",
+      "satz": "Zeit fürs Business mit einem System, das zur Familie passt.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "Easy KI (KI-Kurs)",
+      "stufe": "gross",
+      "preis": "333",
+      "heute": "Benutzt KI wie Google.",
+      "danach": "Hat eine KI-Mitarbeiterin, die ihr Arbeit abnimmt.",
+      "satz": "Deine KI-Mitarbeiterin fürs Business.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "Dein Magnet-Ich (1:1)",
+      "stufe": "gross",
+      "preis": "333",
+      "heute": "Weiss nicht, wie sie sich positionieren soll.",
+      "danach": "Hat in drei Wochen Positionierung und Thema, das verkauft.",
+      "satz": "Drei Wochen 1:1 zu deiner Positionierung.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "1:1 Postingplan",
+      "stufe": "gross",
+      "preis": "1149",
+      "heute": "Plant ihre Beiträge von Woche zu Woche und verliert den Faden.",
+      "danach": "Hat ihren Postingplan und vier Wochen Begleitung beim Umsetzen.",
+      "satz": "Dein Postingplan in einem Zoom, dann vier Wochen Begleitung.",
+      "herkunft": "eigenes Angebot"
+    },
+    {
+      "name": "Mum Business Academy",
+      "stufe": "gross",
+      "preis": "997",
+      "heute": "Baut ihr Business allein und Stück für Stück.",
+      "danach": "Hat Instagram, eigene Produkte und ein System, alles begleitet.",
+      "satz": "Alles für dein Business neben dem Network, begleitet.",
+      "herkunft": "eigenes Angebot"
+    }
+  ]
+}

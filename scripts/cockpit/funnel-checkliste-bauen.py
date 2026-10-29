@@ -938,5 +938,21 @@ def main():
     print('Danach: Artifact publish, capabilities {"db": {}}')
 
 
+def punkte_als_markdown():
+    """Alle Punkte als Prüfliste für `/angebot trichter` — dieselbe Liste wie
+    auf der Seite, damit Prüfung und Abhaken nie auseinanderlaufen."""
+    zeilen = []
+    for titel, _, was, punkte in PHASEN:
+        zeilen.append("\n## %s\n\n_%s_\n" % (titel, re.sub(r"<[^>]+>", "", was)))
+        for text, quelle, warum in punkte:
+            warum = re.sub(r"<[^>]+>", "", warum).replace("&lt;", "<").replace("&gt;", ">")
+            zeilen.append("- [ ] **%s** `%s` · %s  \n  %s"
+                          % (re.sub(r"<[^>]+>", "", text), schluessel(text), quelle, warum))
+    return "\n".join(zeilen)
+
+
 if __name__ == "__main__":
-    main()
+    if "--punkte" in sys.argv:
+        print(punkte_als_markdown())
+    else:
+        main()

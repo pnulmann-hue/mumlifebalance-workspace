@@ -1,0 +1,9 @@
+{
+  "name": "story-generator",
+  "version": "1.0.0",
+  "description": "Story-Generator — Alltagssituation + Produkt rein, fertige Instagram-Story-Abfolge raus",
+  "type": "module",
+  "scripts": { "lokal": "node dev-server.mjs" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "@anthropic-ai/sdk": "^0.32.0" }
+}

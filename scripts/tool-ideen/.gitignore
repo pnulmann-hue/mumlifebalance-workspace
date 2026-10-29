@@ -1,0 +1,6 @@
+.vercel
+node_modules
+test-ergebnis*.json
+
+.vercel
+.env*

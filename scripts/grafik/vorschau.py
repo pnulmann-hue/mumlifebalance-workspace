@@ -166,7 +166,8 @@ def rendern(projekt, p):
     (projekt / "renders").mkdir(exist_ok=True)
     ziel = projekt / "renders" / "reel.mp4"
     tmp = Path(tempfile.mkdtemp()) / "reel.mp4"
-    remotion(["render", "src/index.ts", "Reel", str(tmp), "--codec=h264", "--crf=17"], projekt, p)
+    # Ein Arbeitsstrang: am 27.10. stuerzte Chrome bei 80 s Material und knappem Speicher ab („Page crashed“).
+    remotion(["render", "src/index.ts", "Reel", str(tmp), "--codec=h264", "--crf=17", "--concurrency=1"], projekt, p)
     shutil.move(str(tmp), ziel)
     print("✓ %s" % ziel)
     print("→ jetzt: python scripts/video-pruefung/kante-suchen.py %s  und Standbilder anschauen" % ziel)

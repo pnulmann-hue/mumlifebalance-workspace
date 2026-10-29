@@ -33,10 +33,12 @@ const KURSE = {
     bild: "https://mumlifebalance.ch/wp-content/uploads/2026/10/instagram-kundenmaschine-mockup.jpg",
     bildAlt: "Die Instagram-Kundenmaschine auf Bildschirm, Tablet und Handy",
     punkte: [
-      ["4 Module", "Fundament & Klarheit · Ideenmaschine & Content-Logik · Stories & Beiträge · Routine, Beziehung & Entscheidung"],
-      ["Alle Module ab dem ersten Tag offen", "du arbeitest in deinem Tempo"],
+      ["Ein Profil, bei dem die Leute fragen", "vom Produktkatalog zum Schaufenster deiner Expertise"],
+      ["Hooks und Captions, die gelesen werden", "und Storys, auf die jemand antwortet"],
+      ["Gespräche statt Funkstille", "aus Reaktionen werden Anfragen, Kundschaft und Teampartner"],
+      ["Eine Routine, die ohne Motivation läuft", "alles ab dem ersten Tag offen, in deinem Tempo"],
       ["Telegram-Gruppe", "ich beantworte deine Fragen dienstags und donnerstags"],
-      ["Aufzeichnungen der vier Live-Calls", "aus der ersten Runde, in der Gruppe"],
+      ["Aufzeichnungen der Live-Calls", "aus der ersten Runde, in der Gruppe"],
       ["Dauerhafter Zugriff", "auf alle Module"],
     ],
   },
@@ -46,7 +48,7 @@ const KURSE = {
     bild: "https://mumlifebalance.ch/wp-content/uploads/2026/10/digitale-produktwelt-mockup.jpg",
     bildAlt: "Kurs „Vom Network-Wissen zur digitalen Produktwelt“",
     punkte: [
-      ["6 Kapitel, 20 Lektionen", "vom Hybridmodell-Fundament bis zu Money Mindset & magnetischem Verkaufen"],
+      ["Dein eigenes Produkt neben dem Network", "vom Hybridmodell-Fundament bis zum Verkaufen ohne Druck"],
       ["Dein Produkt entwickeln und bauen", "Kurs, Workbook oder 0€-Produkt, Schritt für Schritt mit KI und Canva"],
       ["Verkaufen & automatisieren", "Storytelling, Preise, Checkout, E-Mail und Produkttreppe"],
       ["Worksheets und Vorlagen", "damit du nie vor einer leeren Seite sitzt"],
@@ -58,10 +60,10 @@ const KURSE = {
     name: "Mama-CEO",
     link: "https://mumlifebalance.thrivecart.com/mama-ceo/?coupon=DANKE199CEO",
     bild: "https://mumlifebalance.ch/wp-content/uploads/2026/10/mama-ceo-mockup.jpg",
-    bildAlt: "Mama-CEO: die fünf Säulen vom Zeit-Erschaffen bis zum Skalieren",
+    bildAlt: "Mama-CEO: vom Zeit-Erschaffen bis zum Skalieren",
     punkte: [
-      ["5 Säulen", "vom Wochenrhythmus bis zum 90-Tage-Plan"],
-      ["23 Lektionen und 6 Erweiterungen", "je 8 bis 15 Minuten, hörbar beim Spazieren"],
+      ["Zeit für dein Business, ohne dass die Familie zu kurz kommt", "vom Wochenrhythmus bis zum Plan fürs ganze Quartal"],
+      ["Kurze Lektionen", "hörbar beim Spazieren"],
       ["Vorlagen für Cockpit-Bot und Familien-Bot", "mein eigener Auftrag, einfach nachgebaut"],
       ["Notion-Vorlage", "eine abgespeckte Kopie meines echten Workspaces"],
       ["Telegram-Gruppe", "ich beantworte deine Fragen dienstags und donnerstags"],
@@ -83,9 +85,10 @@ const SEITEN = [
   { slug: "danke-bio-check", titel: "Danke – Bio-Check", formular: 47, kurs: "ikm",
     mail: "Ein Klick noch, dann ist dein Bio-Check startklar 🌿",
     bruecke: "Deine Bio entscheidet, ob jemand auf deinem Profil bleibt. Was danach kommt, baust du in der Kundenmaschine: Inhalte, die Vertrauen aufbauen, und Gespräche, aus denen Kundschaft und neue Teampartner werden." },
-  { slug: "danke-lead-challenge", titel: "Danke – Lead-Challenge", formular: 51, kurs: "ikm",
+  // Lead-Challenge führt seit 26.10.2026 auf die Produktwelt (November-Fokus Hybridmodell, Patricias Entscheid)
+  { slug: "danke-lead-challenge", titel: "Danke – Lead-Challenge", formular: 51, kurs: "dpw",
     mail: "Ein Klick noch, dann bist du bei der Lead-Challenge dabei",
-    bruecke: "Ein Leadmagnet wirkt erst, wenn die richtigen Leute ihn sehen. In der Kundenmaschine baust du dir die Instagram-Routine dafür, mit Inhalten, die Gespräche eröffnen, ohne dass du jeden Tag posten musst." },
+    bruecke: "Mit deinem Leadmagneten baust du dein erstes eigenes Produkt, gratis. In der Digitalen Produktwelt baust du die Treppe dahinter: ein Produkt, das du verkaufst, neben deinem Network, Schritt für Schritt mit KI und Canva." },
   // Businessfahrplan und Ideen-Finder führen aufs eigene Produkt (Patricias Entscheid 23.10.2026)
   { slug: "danke-businessfahrplan", titel: "Danke – Businessfahrplan", formular: 49, kurs: "dpw",
     mail: "Ein Klick noch, dann kommt dein Businessfahrplan",
@@ -169,7 +172,12 @@ const vorschau = process.argv.includes("--vorschau");
 if (vorschau) fs.mkdirSync(VORSCHAU, { recursive: true });
 const css = vorschau ? fs.readFileSync(path.join(HIER, "../../outputs/produkte/doterra-mama-energie/landingpage/customizer-css.txt"), "utf8") : "";
 
-for (const s of SEITEN) {
+// --nur danke-lead-challenge[,…]: nur diese Seiten bauen, damit Änderungen in WordPress an den anderen bleiben
+const nurIdx = process.argv.indexOf("--nur");
+const nur = nurIdx > -1 ? process.argv[nurIdx + 1].split(",") : null;
+if (nur) for (const n of nur) if (!SEITEN.some((s) => s.slug === n)) throw new Error(`Unbekannte Seite: ${n}`);
+
+for (const s of SEITEN.filter((x) => !nur || nur.includes(x.slug))) {
   const inhalt = seite(s);
   for (const verboten of ["<style", "<script", '<link rel="stylesheet"', "@import"]) {
     if (inhalt.includes(verboten)) throw new Error(`ABBRUCH: "${verboten}" im Markup — das blockt die WAF.`);
