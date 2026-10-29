@@ -60,7 +60,7 @@ Keiner.
 
 ## Text am Zeitplan der Kasse
 
-- Di 10.11. Tag 1: dein Tool, live ✏️ Uhrzeit
-- Mi 11.11. Tag 2: deine Seite, live ✏️ Uhrzeit
+- Di 10.11. Tag 1: dein Tool, live um 19:00 Uhr
+- Mi 11.11. Tag 2: deine Seite, live um 19:00 Uhr
 - 12.–14.11. Begleitung in der Gruppe
 - Aufzeichnungen bleiben dir

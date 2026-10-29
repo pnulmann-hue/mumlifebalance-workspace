@@ -13,7 +13,7 @@ Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung,
 - [ ] Nischengenerator ausfüllen und den Satz der ersten Nische notieren
 - [ ] Eine Frage aufschreiben, die dir die Leute in deinem Network immer wieder stellen
 
-## Tag 1 · Di 10.11. · Dein Tool (live, ✏️ Uhrzeit, rund 90 Minuten)
+## Tag 1 · Di 10.11. · Dein Tool (live, 19:00 Uhr, rund 90 Minuten)
 
 | Teil | Inhalt | Ergebnis |
 |---|---|---|
@@ -27,7 +27,7 @@ Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung,
 
 **Hausaufgabe bis Tag 2:** Tool drei Personen schicken und fragen, ob das Ergebnis stimmt.
 
-## Tag 2 · Mi 11.11. · Deine Seite (live, ✏️ Uhrzeit, rund 90 Minuten)
+## Tag 2 · Mi 11.11. · Deine Seite (live, 19:00 Uhr, rund 90 Minuten)
 
 | Teil | Inhalt | Ergebnis |
 |---|---|---|

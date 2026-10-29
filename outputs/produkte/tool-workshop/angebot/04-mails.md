@@ -87,8 +87,8 @@ Hallo [Vorname]
 schön, dass du dabei bist. Den Zugang zum Kursbereich schickt dir ThriveCart in einer eigenen Mail.
 
 **Die Termine**
-Dienstag, 10. November, ✏️ Uhrzeit: dein Tool
-Mittwoch, 11. November, ✏️ Uhrzeit: deine Seite
+Dienstag, 10. November, 19:00 Uhr: dein Tool
+Mittwoch, 11. November, 19:00 Uhr: deine Seite
 Zoom-Link: ✏️ PLATZ
 Danach drei Tage Begleitung in der Gruppe: ✏️ Link
 
@@ -108,7 +108,7 @@ Patricia
 
 Hallo [Vorname]
 
-morgen um ✏️ Uhrzeit sehen wir uns. Zoom-Link: ✏️ PLATZ
+morgen um 19:00 Uhr sehen wir uns. Zoom-Link: ✏️ PLATZ
 
 Bring deinen Nischen-Satz und deine Frage mit, und halte Claude in einem zweiten Fenster offen. Mehr braucht es nicht.
 
@@ -122,7 +122,7 @@ Patricia
 
 Hallo [Vorname]
 
-die Aufzeichnung von gestern liegt im Kursbereich. Heute um ✏️ Uhrzeit bauen wir die Seite dazu. Zoom-Link: ✏️ PLATZ
+die Aufzeichnung von gestern liegt im Kursbereich. Heute um 19:00 Uhr bauen wir die Seite dazu. Zoom-Link: ✏️ PLATZ
 
 Hast du dein Tool schon drei Personen geschickt? Ihre Rückmeldung hilft uns heute beim Text für die Seite.
 

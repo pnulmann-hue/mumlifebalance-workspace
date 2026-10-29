@@ -18,4 +18,4 @@ tags: [produkt]
 ✓ Einrichte-Liste      09-einrichten.md
 ```
 
-⚠️ Offen: 🟠 Entscheide im Bauplan · ✏️ Uhrzeit der Calls · Zoom- und Gruppen-Links · Stimmen (Block 3 und 10) · Link der Digitalen Produktwelt (Mail B3) · Story-Generator-Kasse für den Bump.
+⚠️ Offen: 🟠 Entscheide im Bauplan · Zoom- und Gruppen-Links · Stimmen (Block 3 und 10) · Link der Digitalen Produktwelt (Mail B3) · Story-Generator-Kasse für den Bump.
