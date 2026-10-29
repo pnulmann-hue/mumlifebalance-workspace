@@ -85,3 +85,18 @@ Keiner.
 - Mi 11.11. Tag 2: deine Seite, live um 19:00 Uhr
 - 12.–14.11. Begleitung in der Gruppe
 - Aufzeichnungen bleiben dir
+
+## Stand 29.10.2026 nachts: Upsell- und Downsell-Seiten gestaltet
+
+Beide Seiten tragen jetzt oben einen HTML-Block in der Marke. Quelle ist `scripts/salespage-design/tool-workshop-funnel-bloecke.py`,
+die Ausgabe liegt in `outputs/salespages/tool-workshop-checkout/upsell-block-{chf,eur}.html` und `downsell-block-{chf,eur}.html`.
+Eingesetzt in Produkt 53 (CHF) und 54 (EUR), jeweils mit „Save to this product only“. Danach frisch geladen und nachgeprüft.
+
+- **Aufbau nach Julias Upsell-Vorlage:** Kauf feiern, warum jetzt, Mockup, Pitch in einem Satz, Preisvergleich 333 → 199,
+  Inhalt, nochmals Preis. Darunter bleiben die drei echten Kundinnen-Stimmen (Bilder) und die Knöpfe stehen.
+- **Kein „nur auf dieser Seite“:** Die Danke-Seiten bieten die Kundenmaschine mit dem Gutschein DANKE199IKM ebenfalls für 199 an.
+- **Downsell ohne neues Feiern**, kürzer, mit einem kleinen Handy aus HTML als Mockup (für Startklar gibt es kein Produktbild).
+  Die Deko-Bögen sind auf beiden Downsell-Seiten aus.
+- **Ablehnungs-Text** auf allen vier Seiten in Du-Form: „Nein danke, ich bleibe beim Tool-Workshop“.
+- Im Editor zeigt ThriveCart den Block nur als „CUSTOM HTML“. Wie er aussieht, sieht man erst nach einem Kauf oder in der
+  Vorschau `outputs/salespages/tool-workshop-checkout/*.html`.
