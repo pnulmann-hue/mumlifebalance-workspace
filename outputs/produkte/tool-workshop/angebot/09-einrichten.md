@@ -46,3 +46,12 @@ Was von Hand angelegt wird. Reihenfolge = Dringlichkeit, weil die Kasse sofort o
 - [ ] Automation in AC am Tag **0€ Nischengenerator** anlegen: Auslöser Tag hinzugefügt, eine Mail = Entwurf „Tool-Ideen C0 · Willkommen“ (Betreff „Dein Thema, und was du jetzt damit machst“) (Kampagne 859) als Vorlage. Nach dem 9.11. den Workshop-Absatz austauschen.
 - [ ] Link in Storys und in der gespeicherten Instagram-Antwort zu NISCHE ergänzen
 - [x] Nischengenerator auf Netlify übernommen
+
+## Anmeldeseite Nischengenerator (seit 29.10. abends)
+
+- [x] AC-Formular **75 „0€ Nischengenerator“**: Tag 0€ Nischengenerator, Liste 2, Bestätigungsmail (Nachricht 718, aus `scripts/mails/bestaetigung-bauen.py`), nach dem Klick weiter zum Tool, nach dem Absenden auf die Danke-Seite
+- [ ] **WP 4441 `/nischengenerator/` veröffentlichen** (Entwurf)
+- [ ] **WP 4442 `/nischengenerator-danke/` veröffentlichen** (Entwurf; ohne sie landet das Formular nach dem Absenden auf einer 404)
+- [ ] Formular einmal selbst durchspielen (reCAPTCHA, Bestätigungsmail, Weiterleitung zum Tool)
+- [ ] Gespeicherte Instagram-Antwort zu NISCHE auf https://mumlifebalance.ch/nischengenerator/ stellen
+- [ ] Nach dem 11.11.: Workshop-Kasten der Danke-Seite auf Aufzeichnung umstellen (`scripts/salespage-design/nischengenerator-danke-body.html`, dann `deploy-nischengenerator-lp.mjs`)

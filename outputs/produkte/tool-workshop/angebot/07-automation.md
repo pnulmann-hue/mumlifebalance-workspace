@@ -29,3 +29,5 @@ Kommentar **NISCHE** unter Reel oder Beitrag → Antwort im Kommentar → DM mit
 | **3 · ManyChat** | läuft | Patricia will weg davon. Bliebe die schnellste Brücke, falls es mehr als ein paar Dutzend Kommentare werden. |
 
 **Empfehlung 🟠 ENTSCHEID:** Für diesen Launch Weg 1 (von Hand, mit gespeicherter Antwort). Parallel den App-Review für Weg 2 beantragen, damit der eigene Dienst beim nächsten Launch übernimmt.
+
+**Seit 29.10. abends:** Der Link in der Antwort auf NISCHE ist die Anmeldeseite https://mumlifebalance.ch/nischengenerator/ (nicht das Tool direkt), damit sich jede über das Formular mit Bestätigung einträgt.

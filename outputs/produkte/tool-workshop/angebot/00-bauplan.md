@@ -24,7 +24,7 @@ tags: [produkt]
 | **Aufzeichnung** | beide Calls, abgelegt in ThriveCart Learn (Patricia 29.10.) |
 | **Vorbereitung Teilnehmerinnen** | Claude-Konto (gratis reicht für den Start) · Netlify-Konto (gratis) |
 | **Kasse** | offen **ab sofort** bis **Mo 9.11.2026, 23:59** (Patricia 29.10.: „die kasse müssen wir vorher schon öffnen. also jetzt?“) |
-| **Einstieg (Freebie)** | Nischengenerator, https://mlb-nischengenerator.vercel.app (Netlify, öffentlich; das Artifact bleibt privat als Arbeitsfassung) |
+| **Einstieg (Freebie)** | Nischengenerator: Anmeldeseite https://mumlifebalance.ch/nischengenerator/ (WP 4441, Entwurf) → AC-Formular 75 mit Bestätigungsmail → Danke-Seite /nischengenerator-danke/ (WP 4442, Entwurf, mit Workshop-Angebot) → Klick in der Mail führt zum Tool https://mlb-nischengenerator.vercel.app |
 | **Stichwort** | **NISCHE** (🟠 ENTSCHEID, frei, Match-Typ exakt) → DM mit Link zum Nischengenerator, danach Workshop |
 
 ## Kette an der Kasse

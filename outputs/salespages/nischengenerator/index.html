@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nischengenerator</title>
+<!-- Tracking (Pixel o.ä.) hier in den <head> einfügen — falls gewünscht, siehe BRAND-CONFIG.md -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;scroll-behavior:smooth;}
+  :root{
+    --bg:#0c1c30; --bg2:#122a42; --card:#16324c; --line:rgba(220,130,46,0.16);
+    --gold:#dc822e; --goldgrad:linear-gradient(90deg,#dc822e,#f0a45e,#f7c08f);
+    --neon:#dc822e; --violet:#12828c; --cyan:#4fc9d1;
+    --ink:#f1ecdd; --muted:#9aa8b3;
+    --cta:linear-gradient(100deg,#12828c 0%,#1a9aa5 52%,#dc822e 100%);
+    --sans:'Source Sans 3',Arial,sans-serif; --display:'Philosopher',Impact,sans-serif; --tech:'Source Sans 3',sans-serif;
+  }
+  body{font-family:var(--sans);background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.7;font-weight:400;overflow-x:hidden;position:relative;}
+  body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(58% 42% at 50% -6%, rgba(220,130,46,0.20), transparent 70%),
+      radial-gradient(48% 42% at 92% 8%, rgba(18,130,140,0.14), transparent 70%),
+      radial-gradient(44% 40% at 6% 60%, rgba(79,201,209,0.06), transparent 70%),
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px) 0 0/46px 46px,
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px) 0 0/46px 46px;}
+  section,.topbar,footer{position:relative;z-index:1;}
+  img{max-width:100%;display:block;height:auto;}
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 22px;}
+  section{padding:74px 0;}
+  a{color:inherit;}
+  .gold{background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(220,130,46,0.45));}
+  em{font-style:normal;background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .eyebrow{font-family:var(--tech);font-size:12px;font-weight:700;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);text-align:center;margin:0 0 18px;}
+  h1,h2{font-family:var(--display);font-weight:400;line-height:1.04;text-transform:uppercase;letter-spacing:0.01em;margin:0;color:#f1ecdd;}
+  .disp{font-size:clamp(34px,6vw,62px);text-align:center;text-shadow:0 0 34px rgba(220,130,46,0.28);}
+  h3{font-family:var(--sans);font-weight:800;margin:0;color:#f1ecdd;letter-spacing:0.01em;}
+  .kicker{font-family:var(--tech);text-transform:uppercase;letter-spacing:0.22em;font-weight:700;color:var(--cyan);font-size:clamp(12px,1.8vw,15px);text-align:center;display:block;margin:0 0 12px;}
+  .lead{color:var(--muted);font-size:clamp(16px,1.9vw,19px);text-align:center;}
+
+  .btn{display:inline-block;text-align:center;text-decoration:none;font-family:var(--sans);font-weight:800;letter-spacing:0.04em;text-transform:uppercase;
+    color:#f1ecdd;background:var(--cta);padding:19px 34px;border-radius:100px;font-size:clamp(15px,2vw,18px);
+    box-shadow:0 0 44px rgba(220,130,46,0.5),0 14px 30px rgba(0,0,0,0.4);transition:transform .15s,box-shadow .15s;}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 0 66px rgba(220,130,46,0.75),0 18px 40px rgba(0,0,0,0.5);}
+  .btn.ghost{background:transparent;border:1px solid rgba(220,130,46,0.5);box-shadow:none;color:#f1ecdd;}
+  .btn.ghost:hover{background:rgba(220,130,46,0.1);transform:translateY(-2px);}
+  .btnrow{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:28px;}
+  .subnote{text-align:center;color:var(--muted);font-size:13px;margin:14px 0 0;}
+
+  /* TOP BAR */
+  .topbar{position:sticky;top:0;z-index:60;background:rgba(12,28,48,0.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .topbar .in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 22px;max-width:1180px;margin:0 auto;}
+  .logo{font-family:var(--tech);font-weight:800;font-size:19px;letter-spacing:0.14em;color:#f1ecdd;}.logo b{color:var(--gold);}
+  .topbar .cta{font-family:var(--sans);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:0.04em;text-decoration:none;color:#f1ecdd;background:var(--cta);padding:11px 22px;border-radius:100px;box-shadow:0 0 24px rgba(220,130,46,0.4);}
+  @media(max-width:560px){.topbar .cta{display:none;}}
+
+  /* HERO */
+  .highlights{display:flex;gap:10px 26px;flex-wrap:wrap;justify-content:center;color:var(--muted);font-size:14px;margin:22px auto 0;}
+  .highlights span{display:flex;gap:8px;align-items:center;}
+  .highlights .st{color:var(--gold);}
+  .figwrap{position:relative;width:min(330px,74vw);margin:34px auto 6px;}
+  .figwrap::before{content:"";position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:126%;height:82%;
+    background:radial-gradient(closest-side, rgba(220,130,46,0.55), rgba(18,130,140,0.22), transparent 72%);filter:blur(22px);z-index:0;}
+  .figwrap::after{content:"";position:absolute;left:50%;bottom:2%;transform:translateX(-50%);width:70%;height:22px;
+    background:radial-gradient(closest-side, rgba(220,130,46,0.5), transparent 75%);filter:blur(6px);}
+  .figwrap img{position:relative;z-index:1;filter:drop-shadow(0 14px 44px rgba(220,130,46,0.4));}
+  .quote{max-width:720px;margin:34px auto 0;text-align:center;font-size:clamp(16px,2vw,19px);color:var(--ink);border-left:2px solid var(--neon);padding:6px 0 6px 22px;text-align:left;}
+  .quote b{display:block;margin-top:8px;font-family:var(--tech);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);}
+
+  /* PROBLEM CARDS */
+  .qgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1060px;margin:44px auto 0;}
+  @media(max-width:820px){.qgrid{grid-template-columns:1fr;}}
+  .qcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 26px;}
+  .qcard .x{width:34px;height:34px;border-radius:10px;background:rgba(232,145,63,0.16);border:1px solid rgba(232,145,63,0.4);display:flex;align-items:center;justify-content:center;color:#e8913f;font-weight:800;margin-bottom:16px;}
+  .qcard h3{font-size:18px;margin-bottom:10px;line-height:1.2;}
+  .qcard p{margin:0;color:var(--muted);font-size:15px;}
+
+  /* TOOL GRID */
+  .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1060px;margin:44px auto 0;}
+  @media(max-width:860px){.pgrid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.pgrid{grid-template-columns:1fr;}}
+  .pcard2{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 24px;position:relative;overflow:hidden;transition:transform .15s,box-shadow .15s;}
+  .pcard2::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:var(--goldgrad);box-shadow:0 0 14px rgba(220,130,46,0.7);}
+  .pcard2:hover{transform:translateY(-3px);box-shadow:0 0 34px rgba(220,130,46,0.2);}
+  .pcard2 .ico{font-size:24px;margin-bottom:10px;}
+  .pcard2 .n{font-family:var(--tech);font-weight:700;font-size:12.5px;letter-spacing:0.06em;color:var(--gold);margin-bottom:6px;display:flex;align-items:center;gap:8px;}
+  .pcard2 .neu{background:var(--goldgrad);color:#0c1c30;font-size:10px;font-weight:800;letter-spacing:0.08em;padding:2px 8px;border-radius:100px;text-transform:uppercase;}
+  .pcard2 h3{font-size:18px;margin-bottom:10px;line-height:1.15;}
+  .pcard2 p{margin:0;color:var(--muted);font-size:14px;}
+
+  /* STATS */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1000px;margin:44px auto 0;}
+  @media(max-width:720px){.stats{grid-template-columns:1fr 1fr;}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 20px;text-align:center;}
+  .stat .v{font-family:var(--display);font-size:clamp(34px,6vw,48px);line-height:1;background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 16px rgba(220,130,46,0.5));}
+  .stat .l{color:var(--muted);font-size:13px;margin-top:8px;}
+
+  /* STEPS */
+  .steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1000px;margin:44px auto 0;}
+  @media(max-width:820px){.steps3{grid-template-columns:1fr;}}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px 26px;}
+  .step .num{font-family:var(--tech);font-weight:800;font-size:14px;color:#0c1c30;background:var(--goldgrad);width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;box-shadow:0 0 18px rgba(220,130,46,0.5);}
+  .step h3{font-size:19px;margin-bottom:10px;}
+  .step p{margin:0;color:var(--muted);font-size:15px;}
+
+  /* PERSONA */
+  .persona{max-width:820px;margin:40px auto 0;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:40px 38px;}
+  .persona p.intro{color:var(--muted);font-size:16px;margin:0 0 22px;}
+  .persona .b{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px;font-size:16px;}
+  .persona .b:last-child{margin-bottom:0;}
+  .persona .b .c{width:26px;height:26px;border-radius:8px;background:var(--goldgrad);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;box-shadow:0 0 12px rgba(220,130,46,0.5);}
+  .persona .b b{color:#f1ecdd;}
+
+  /* ABOUT */
+  .about{display:grid;grid-template-columns:0.9fr 1.1fr;gap:38px;align-items:center;max-width:1000px;margin:44px auto 0;}
+  @media(max-width:780px){.about{grid-template-columns:1fr;}.about .aimg{max-width:360px;margin:0 auto;}}
+  .about .aimg{border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 0 40px rgba(220,130,46,0.22),0 24px 60px rgba(0,0,0,0.5);}
+  .about h2{text-align:left;}
+  .about p{color:var(--muted);font-size:16px;}
+  .about p b{color:#f1ecdd;}
+
+  /* PRICING */
+  .price2{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:900px;margin:44px auto 0;}
+  @media(max-width:720px){.price2{grid-template-columns:1fr;}}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px 32px;position:relative;display:flex;flex-direction:column;}
+  .pcard.best{border-color:rgba(220,130,46,0.6);box-shadow:0 0 46px rgba(220,130,46,0.22);}
+  .pcard .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--goldgrad);color:#0c1c30;font-weight:800;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;padding:6px 16px;border-radius:100px;white-space:nowrap;}
+  .pcard .pn{font-family:var(--display);font-size:26px;text-transform:uppercase;color:#f1ecdd;margin-bottom:2px;}
+  .pcard .ps{color:var(--muted);font-size:14px;margin-bottom:20px;}
+  .pcard .pv{font-family:var(--display);font-size:clamp(46px,9vw,64px);line-height:1;background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 20px rgba(220,130,46,0.5));}
+  .pcard .pvs{color:var(--muted);font-size:13.5px;margin:6px 0 22px;}
+  .pcard ul{list-style:none;padding:0;margin:0 0 26px;display:flex;flex-direction:column;gap:12px;}
+  .pcard li{display:flex;gap:11px;align-items:flex-start;font-size:15px;}
+  .pcard li .c{width:22px;height:22px;border-radius:50%;background:var(--goldgrad);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;box-shadow:0 0 10px rgba(220,130,46,0.5);}
+  .pcard .btn{margin-top:auto;display:block;}
+
+  /* FAQ */
+  .faq{max-width:820px;margin:40px auto 0;}
+  .faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;}
+  .faq summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:700;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"+";font-family:var(--tech);color:var(--gold);font-size:22px;line-height:1;flex-shrink:0;transition:transform .2s;}
+  .faq details[open] summary::after{transform:rotate(45deg);}
+  .faq .a{padding:0 24px 22px;color:var(--muted);font-size:15px;}
+
+  /* FINAL */
+  .finalcta{text-align:center;max-width:820px;margin:0 auto;background:radial-gradient(120% 100% at 50% 0%, rgba(220,130,46,0.16), transparent 70%),var(--card);border:1px solid rgba(220,130,46,0.4);border-radius:26px;padding:56px 40px;box-shadow:0 0 50px rgba(220,130,46,0.18);}
+
+  footer{padding:44px 0 60px;text-align:center;color:#5c6b75;font-size:12px;border-top:1px solid var(--line);}
+  footer a{color:#9aa8b3;text-decoration:none;margin:0 8px;}
+
+  /* Marken-Nachtrag: Knopf orange mit dunkler Schrift */
+  :root{--cta:linear-gradient(100deg,#b4661f 0%,#dc822e 45%,#f0a45e 100%);}
+  .btn,.topbar .cta{color:#0c1c30;}
+  .btn.ghost{color:#f1ecdd;}
+  /* Story-Generator: Handy-Vorschau im Hero, eine Preiskarte, Vorher/Nachher */
+  .phone{position:relative;z-index:1;width:min(270px,70vw);aspect-ratio:9/16;margin:0 auto;border-radius:34px;padding:12px;background:#0a1626;border:1px solid rgba(220,130,46,0.45);box-shadow:0 0 50px rgba(220,130,46,0.35),0 30px 60px rgba(0,0,0,0.5);}
+  .phone .scr{height:100%;border-radius:24px;overflow:hidden;position:relative;background:linear-gradient(170deg,#29556d 0%,#16324c 55%,#0c1c30 100%);display:flex;flex-direction:column;justify-content:center;padding:22px 16px;gap:12px;}
+  .phone .bars{position:absolute;top:12px;left:14px;right:14px;display:flex;gap:4px;}
+  .phone .bars i{flex:1;height:3px;border-radius:3px;background:rgba(241,236,221,0.3);}
+  .phone .bars i.on{background:#f1ecdd;}
+  .phone .t{background:rgba(241,236,221,0.94);color:#0c1c30;border-radius:8px;padding:9px 11px;font-size:14.5px;line-height:1.35;font-weight:700;}
+  .phone .stk{align-self:center;background:#f1ecdd;color:#0c1c30;border-radius:12px;padding:8px 12px;font-size:12.5px;font-weight:700;text-align:center;width:86%;}
+  .phone .stk span{display:flex;gap:6px;margin-top:6px;}
+  .phone .stk span b{flex:1;background:#e9e1cb;border-radius:8px;padding:5px 0;font-weight:600;}
+  .phone .lbl{position:absolute;bottom:12px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#f3c38f;}
+  .price1{max-width:520px;margin:44px auto 0;}
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:960px;margin:44px auto 0;}
+  @media(max-width:760px){.vs{grid-template-columns:1fr;}}
+  .vs .col{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 26px;}
+  .vs .col.gut{border-color:rgba(220,130,46,0.55);box-shadow:0 0 34px rgba(220,130,46,0.16);}
+  .vs h3{font-size:14px;font-family:var(--tech);letter-spacing:0.18em;text-transform:uppercase;margin-bottom:14px;color:var(--muted);}
+  .vs .col.gut h3{color:var(--gold);}
+  .vs p{margin:0 0 10px;font-size:16px;}
+  .vs p:last-child{margin-bottom:0;}
+  .vs .klein{color:var(--muted);font-size:14px;}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="in">
+    <div class="logo">NISCHEN<b>&middot;</b>GENERATOR</div>
+    <a href="#anmelden" class="cta">Gratis loslegen</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section>
+  <div class="wrap" style="max-width:1160px;">
+    <span class="kicker">Gratis · für Frauen im Network Marketing</span>
+    <h1 class="disp">Finde dein eigenes Thema, <span class="gold">das zu dir passt</span></h1>
+    <p class="lead" style="margin:22px auto 0;max-width:820px;">Ein paar Fragen zu deiner Erfahrung, zu dem, was bei dir heute funktioniert, und zu dem, was man dich immer wieder fragt. Danach hast du drei Themen, deinen Experten-Satz und Ideen für dein erstes Gratis-Tool.</p>
+    <div class="highlights"><span><span class="st">★</span> Kostenlos</span><span><span class="st">★</span> Mit deinem Experten-Satz</span><span><span class="st">★</span> Mit Tool-Ideen</span></div>
+    <div class="figwrap" style="width:min(300px,74vw);">
+      <div class="phone"><div class="scr">
+        <div class="bars"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+        <div class="t">Was fragen dich die Leute immer wieder?</div>
+        <div class="stk">Quelle 4 · die Fragen der anderen<span><b>Wie schaffst du das?</b><b>Was kochst du?</b></span></div>
+        <div class="lbl">So sieht der Nischengenerator aus</div>
+      </div></div>
+    </div>
+    <div class="btnrow"><a href="#anmelden" class="btn">→ Gratis loslegen</a><a href="#so" class="btn ghost">So läuft es</a></div>
+  </div>
+</section>
+
+<!-- IST -->
+<section style="background:var(--bg2);">
+  <div class="wrap">
+    <p class="eyebrow">Wo du gerade stehst</p>
+    <h2 class="disp">Du bist mehr <span class="gold">als dein Produkt</span></h2>
+    <div class="qgrid">
+      <div class="qcard"><div class="x">✕</div><h3>Du postest Produkte, wie alle in deinem Network</h3><p>Dasselbe Öl, denselben Shake, dieselbe Creme verkaufen Tausende andere. So wirkst du austauschbar, auch wenn du es gar nicht bist.</p></div>
+      <div class="qcard"><div class="x">✕</div><h3>Du denkst, du hast nichts Besonderes</h3><p>Was dir leicht fällt, hältst du für normal. Genau dort liegt deine Expertise, weil du es längst lebst.</p></div>
+      <div class="qcard"><div class="x">✕</div><h3>Ein eigenes Thema fühlt sich wie Verrat an</h3><p>Dein Thema stärkt dein Network. Es ist der Grund, warum Menschen zu dir kommen und nicht zu irgendwem.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABLAUF -->
+<section id="so">
+  <div class="wrap">
+    <p class="eyebrow">So läuft es</p>
+    <h2 class="disp">Ein paar Fragen, <span class="gold">dein Thema</span></h2>
+    <div class="pgrid">
+      <div class="pcard2"><div class="ico">🌱</div><div class="n">Schritt 1</div><h3>Deine Erfahrung</h3><p>Was du schon erlebt hast und was heute bei dir funktioniert, auch wenn es dir klein vorkommt.</p></div>
+      <div class="pcard2"><div class="ico">💬</div><div class="n">Schritt 2</div><h3>Die Fragen der anderen</h3><p>Wofür man dich um Rat fragt, wofür du gelobt wirst und wo du sagst: „Ach, das ist doch nichts.“</p></div>
+      <div class="pcard2"><div class="ico">🧭</div><div class="n">Schritt 3</div><h3>Drei Themen</h3><p>Mit deinem Experten-Satz „Ich helfe … dabei, …, damit …“ und mit dem Platz, an dem dein Produkt ganz natürlich vorkommt.</p></div>
+      <div class="pcard2"><div class="ico">🛠️</div><div class="n">Schritt 4</div><h3>Dein Gratis-Tool</h3><p>Zu deinem Thema bekommst du Ideen für ein kleines Tool, das deinen Leuten ein Ergebnis zu ihrem Problem gibt.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ANMELDEN -->
+<section id="anmelden" style="background:var(--bg2);">
+  <div class="wrap" style="max-width:760px;">
+    <p class="eyebrow">Kostenlos</p>
+    <h2 class="disp">Hol dir den <span class="gold">Nischengenerator</span></h2>
+    <p class="lead" style="margin:18px auto 0;max-width:640px;">Nach dem Eintragen kommt eine Mail mit einem Bestätigungslink. Ein Klick, und du bist im Nischengenerator.</p>
+    <iframe src="https://mumlifebalance.activehosted.com/f/75" title="Anmeldung zum Nischengenerator" style="width:100%;min-height:760px;border:0;border-radius:14px;margin-top:30px;background:#fff;"></iframe>
+  </div>
+</section>
+
+<!-- ÜBER MICH -->
+<section>
+  <div class="wrap">
+    <div class="about">
+      <div class="aimg"><img src="https://mumlifebalance.ch/wp-content/uploads/2026/05/patricia-scaled.jpg" alt="Patricia Ulmann" loading="lazy"></div>
+      <div>
+        <p class="eyebrow" style="text-align:left;">Wer dahintersteht</p>
+        <h2 class="disp" style="text-align:left;font-size:clamp(30px,5vw,48px);">Ich bin Patricia, <span class="gold">Mama von vier Kindern</span></h2>
+        <p style="margin-top:18px;">Ich bin seit Jahren im Network und baue daneben mein eigenes Business auf, mit einem eigenen Thema. Der Nischengenerator stellt dir die Fragen, mit denen ich Network-Mamas zu ihrem Thema begleite.</p>
+        <p>Er ersetzt kein Gespräch, aber er bringt dich in ein paar Minuten zu einem Satz, mit dem du sagen kannst, wofür du stehst.</p>
+        <a href="#anmelden" class="btn" style="margin-top:8px;">→ Gratis loslegen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--bg2);">
+  <div class="wrap">
+    <p class="eyebrow">Häufige Fragen</p>
+    <h2 class="disp">Bevor du loslegst, <span class="gold">kurz geklärt</span></h2>
+    <div class="faq">
+      <details><summary>Kostet der Nischengenerator etwas?</summary><div class="a">Nein. Du trägst dich ein, bestätigst deine Mailadresse und kannst ihn bis zu zehn Mal benutzen.</div></details>
+      <details><summary>Muss ich dafür mein Network verlassen?</summary><div class="a">Nein. Du darfst dein eigenes Thema haben und im Network bleiben. Dein Produkt wird ein Teil deiner Lösung.</div></details>
+      <details><summary>Lege ich mich damit für immer fest?</summary><div class="a">Nein. Dein Thema ist Klarheit für heute, keine Schublade fürs Leben. Du darfst es später ändern.</div></details>
+      <details><summary>Ich habe keine Ausbildung in dem Bereich. Geht das trotzdem?</summary><div class="a">Ja. Expertin bist du, wenn du ein paar Schritte weiter bist als die Menschen, denen du hilfst. Deine Erfahrung reicht.</div></details>
+      <details><summary>Brauche ich ein Konto bei Claude oder einer anderen KI?</summary><div class="a">Nein. Der Nischengenerator läuft im Browser, am Handy wie am Computer.</div></details>
+      <details><summary>Was passiert mit meiner Mailadresse?</summary><div class="a">Du bekommst meine Mails mit Tipps und Angeboten rund um dein eigenes Business. Abmelden geht jederzeit mit einem Klick.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section>
+  <div class="wrap">
+    <div class="finalcta">
+      <h2 class="disp">Was für dich Alltag ist, <span class="gold">ist für andere der nächste Schritt</span></h2>
+      <p class="lead" style="margin:20px auto 26px;max-width:640px;">Finde heraus, wofür du stehst, und sag es ab heute in deiner Bio und in deinen Storys.</p>
+      <a href="#anmelden" class="btn">→ Gratis loslegen</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="https://mumlifebalance.ch/impressum/">Impressum</a> ·
+    <a href="https://mumlifebalance.ch/datenschutzerklaerung/">Datenschutz</a> ·
+    <a href="https://mumlifebalance.ch/agb/">AGB</a>
+    <div style="margin-top:12px;">Copyright © 2026 Patricia Ulmann · Mum Life Balance</div>
+  </div>
+</footer>
+
+
+</body>
+</html>
