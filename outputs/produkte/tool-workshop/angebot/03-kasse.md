@@ -10,7 +10,7 @@ Werte aus `00-bauplan.md`.
 |---|---|
 | Produktname | Tool-Workshop |
 | Preis | 39 CHF, einmalig (🟠 Euro-Kasse dazu wie beim Story-Generator? Patricia entscheidet) |
-| Kasse offen | ab sofort bis Mo 9.11.2026, 23:59 (danach Kasse auf „disabled“) |
+| Kasse offen | ab sofort; live dabei bis Mo 9.11.2026, 23:59. **Danach bleibt die Kasse offen** und verkauft die Aufzeichnung (Patricia 29.10., wie Julia). Text dann umstellen, ✏️ Preis offen |
 | AGB | https://mumlifebalance.ch/agb/ |
 | Nach dem Kauf | ThriveCart Learn: Kurs „Tool-Workshop“ · Tag in AC: **Tool-Workshop** |
 

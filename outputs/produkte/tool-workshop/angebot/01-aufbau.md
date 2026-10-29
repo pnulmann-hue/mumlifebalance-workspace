@@ -54,7 +54,7 @@ Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung,
 | Bevor es losgeht | Vorbereitungs-Liste oben |
 | Tag 1 · Dein Tool | Aufzeichnung + Auftrags-Vorlage für Claude |
 | Tag 2 · Deine Seite | Aufzeichnung + Seitenvorlage + Anleitung Netlify |
-| Und jetzt? | Wie es weitergeht, Digitale Produktwelt |
+| Und jetzt? | Wie es weitergeht: Pitch Digitale Produktwelt, dazu Hinweis auf KI-Kurs und Mum Business Academy |
 
 ## Auftrags-Vorlage für Claude (Beilage Tag 1)
 
@@ -69,3 +69,7 @@ Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung,
 > Mein Wissen dazu: [Workbook oder PDF per Büroklammer anhängen und schreiben: Bau die Ergebnisse aus dem Wissen in diesem Dokument. Ohne Unterlagen: in ein paar Sätzen, was die Leute bei welcher Antwort wissen sollen.]
 >
 > Es soll ohne API und ohne Anmeldung laufen. Farben: [Farben]. Schreib die Texte in Du-Form, freundlich, wie ich mit einer Freundin rede.
+
+## Nach den Live-Tagen (Patricias Entscheid 29.10.)
+
+Der Workshop wird nach dem 11.11. als **Aufzeichnung** weiterverkauft, wie es Julia macht. Im Workshop und danach wird auf die **Digitale Produktwelt** gepitcht, KI-Kurs und Mum Business Academy werden erwähnt. Der Kasten im Nischengenerator stellt sich am 12.11. von selbst auf „Aufzeichnung“ um. ⚠️ Offen: Preis der Aufzeichnung, ob die Begleitung wegfällt, Texte von Kasse und Anmeldeseite auf Aufzeichnung umstellen.
