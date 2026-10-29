@@ -16,6 +16,7 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 - [[2026-10-04-zielgruppe-ausserhalb-instagram]]
 - [[2026-10-08-julia-funnel-durchsicht]]
 - [[2026-10-08-juliamueller-analyse]]
+- [[2026-10-29-julia-ki-tool-funnel]]
 - [[2026-10-29-julia-trost-instagram-verkaufsmuster]]
 - [[KW18-doterra]]
 - [[KW18-mentoring]]
