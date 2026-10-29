@@ -14,11 +14,11 @@ Kommentar **NISCHE** unter Reel oder Beitrag → Antwort im Kommentar → DM mit
 > Schau in deine Nachrichten 💛
 
 **Direktnachricht:**
-> Hallo du! Hier ist dein Nischengenerator: [Link]
+> Hallo du! Hier ist dein Nischengenerator: https://mumlifebalance.ch/nischengenerator/
 >
-> Fünf Fragen, dann siehst du drei Nischen, die zu dir passen, mit einem Satz zum Verwenden und einer Idee für dein erstes Gratis-Tool.
+> Ein paar Fragen zu deiner Erfahrung und zu dem, was man dich immer wieder fragt. Danach hast du drei Themen mit deinem Experten-Satz und Ideen für dein erstes Gratis-Tool.
 >
-> Und wenn du das Tool gleich mit mir bauen willst: Am 10. und 11. November mache ich den Tool-Workshop, live, für 39 Franken. [Link Anmeldeseite]
+> Und wenn du das Tool gleich mit mir bauen willst: Am 10. und 11. November, jeweils um 19:00 Uhr, mache ich den Tool-Workshop, live, für 39 Franken oder 39 Euro: https://mumlifebalance.ch/tool-workshop/
 
 ## Wer die Nachricht schickt — drei Wege
 
