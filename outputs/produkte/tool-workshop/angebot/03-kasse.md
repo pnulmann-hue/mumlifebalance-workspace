@@ -18,7 +18,7 @@ Werte aus `00-bauplan.md`.
 
 - **ThriveCart-Produkt 53** angelegt (Klon von „90 Storyideen“, leerer Funnel), Kasse **live**: https://mumlifebalance.thrivecart.com/tool-workshop/
 - Preis 39.00 CHF ✓ · Automation: Liste „Kunden“ + Tag **Tool-Workshop (AC 107)** ✓ · Auslieferung vorerst „Bestätigung anzeigen“ (kein Learn-Kurs, damit niemand die Storyideen bekommt)
-- 🚨 **Der Kassentext ist noch der von den Storyideen** (Überschrift, Cover, „Das bekommst du alles“, FAQ). Im Editor ersetzen durch den Block unten, bevor der Link irgendwo steht.
+- ✅ **Kassentext ersetzt (29.10. abends):** Überschrift, Unterzeile, Porträt statt Storyideen-Cover, Leistungsliste Tag 1 · Tag 2 · Begleitung, Knöpfe „Ja, ich bin dabei!“ / „Ja, ich baue mein Tool!“, Satz unter dem Knopf. FAQ entfernt (steht auf der Anmeldeseite). Live geprüft.
 
 ### Kassentext zum Einsetzen
 
