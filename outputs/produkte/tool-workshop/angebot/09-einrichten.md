@@ -43,6 +43,6 @@ Was von Hand angelegt wird. Reihenfolge = Dringlichkeit, weil die Kasse sofort o
 ## Tool-Ideen-Generator (seit 29.10.)
 
 - [x] Live: https://mlb-tool-ideen.vercel.app (Tag 0€ Tool-Ideen 108, 10 Durchgänge je Mail)
-- [ ] Automation in AC am Tag **0€ Tool-Ideen**: Willkommensmail mit Hinweis auf den Tool-Workshop
+- [ ] Automation in AC am Tag **0€ Tool-Ideen** anlegen: Auslöser Tag hinzugefügt, eine Mail = Entwurf „Tool-Ideen C0 · Willkommen“ (Kampagne 859) als Vorlage. Nach dem 9.11. den Workshop-Absatz austauschen.
 - [ ] Link in Storys und in der gespeicherten Instagram-Antwort zu NISCHE ergänzen
 - [ ] Nischengenerator auf Netlify übernehmen (bei Netlify anmelden, dann macht Claude den Rest)
