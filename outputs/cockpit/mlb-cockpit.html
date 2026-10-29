@@ -5551,17 +5551,20 @@
     return a.preis > 0 ? a.preis : null;
   }
 
+  /* Die Notizen haengen an Schluesseln aus dem alten Namen ("a-" + Name,
+     Umlaut wird "-", auf 30 Zeichen gekuerzt) oder am Kassen-Slug. Nur exakte
+     Treffer: ein Praefix-Vergleich hat der Produktwelt am 29.10. die Notiz
+     von „Vom Network-Wissen zum eigenen Produkt“ untergeschoben. */
   function zaNotiz(a) {
     var pd = produktdetails || {};
-    var schl = "a-" + String(a.name || "").toLowerCase()
-      .replace(/ä/g, "a").replace(/ö/g, "o").replace(/ü/g, "u")
-      .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-    var treffer = "";
-    Object.keys(pd).forEach(function (k) {
-      if (!treffer && (k === schl || schl.indexOf(k) === 0 || k.indexOf(schl.slice(0, 22)) === 0))
-        treffer = (pd[k] && pd[k].inhalt) || "";
-    });
-    return treffer;
+    var ausName = ("a-" + String(a.name || "").toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")).slice(0, 30).replace(/-$/, "");
+    var kandidaten = [ausName, "a-" + (a.slug || "")];
+    for (var i = 0; i < kandidaten.length; i++) {
+      var e = pd[kandidaten[i]];
+      if (e && e.inhalt) return e.inhalt;
+    }
+    return "";
   }
 
   function zaKetteText(a) {
@@ -5589,8 +5592,14 @@
         if (!(x.preis < haupt)) x.fehler.push("Upsell muss günstiger sein als das Hauptprodukt (" + haupt + ")");
         if (maxBump >= 0 && !(x.preis > maxBump)) x.fehler.push("Upsell muss teurer sein als der Bump (" + maxBump + ")");
       }
-      if (x.rolle === "downsell" && minUp < Infinity && !(x.preis < minUp))
-        x.fehler.push("Downsell muss günstiger sein als das Upsell (" + minUp + ")");
+      if (x.rolle === "downsell") {
+        /* Ein Downsell gehoert zu EINEM Upsell — gegen dessen Preis pruefen,
+           sonst gegen das guenstigste. */
+        var zu = ups.filter(function (u) { return x.zu && u.name === x.zu; })[0];
+        var grenze = zu ? zu.preis : minUp;
+        if (grenze < Infinity && !(x.preis < grenze))
+          x.fehler.push("Downsell muss günstiger sein als das Upsell" + (zu ? " „" + zu.name + "“" : "") + " (" + grenze + ")");
+      }
     });
     return v;
   }
@@ -5619,12 +5628,13 @@
       "(Rechner, Check, Planer, Generator — so wie Nischengenerator und Story-Generator), dazu Begleitung oder 1:1 wo es passt. " +
       "Ein neues Tool muss ein Problem lösen, das die Käuferin direkt NACH diesem Kauf hat. " +
       "Nenne bei bestehenden Produkten den Link genau so, wie er oben steht, und erfinde keine Links. " +
+      "Jeder Downsell nennt im Feld zu den Namen des Upsells, dem er folgt (genau wie dort geschrieben). " +
       "Rechne jeden Preis offen vor (z. B. 'normal 39, als Bump 56 % günstiger = 17'). Halte die Preis-Kette strikt ein." +
       '\n\nAntworte nur als JSON: {"vorschlaege": [{"rolle": "bump|upsell|downsell|crosssell", "name": "...", ' +
       '"art": "bestehend|neu", "tooltyp": "Rechner|Check|Planer|Generator|Begleitung|1:1|Kurs|Bundle|anderes", ' +
       '"preis": Zahl in CHF, "normalpreis": Zahl oder null, "rechnung": "die Rechnung ausgeschrieben", ' +
       '"problem": "welches Problem es nach dem Kauf löst, ein Satz", "kasse": "ein Satz für die Kasse, in ihrer Stimme", ' +
-      '"link": "Link oder leer", "bauen": "bei neu: was gebaut werden muss, ein bis zwei Sätze; bei bestehend leer"}], ' +
+      '"link": "Link oder leer", "zu": "nur beim Downsell: Name des Upsells", "bauen": "bei neu: was gebaut werden muss, ein bis zwei Sätze; bei bestehend leer"}], ' +
       '"hinweis": "ein Satz, worauf sie bei diesem Produkt achten soll"}';
     zaLaeuft = true;
     render();
@@ -5670,6 +5680,7 @@
       '<span class="za-preis">' + (x.preis != null ? esc(x.preis) + " CHF" : "–") + '</span></div>' +
       '<div class="za-chips"><span class="chip' + (neu ? " orange" : "") + '">' +
       (neu ? "neu bauen" : "gibt es schon") + '</span>' +
+      (x.rolle === "downsell" && x.zu ? ' <span class="chip">nach: ' + esc(x.zu) + '</span>' : "") +
       (x.tooltyp ? ' <span class="chip">' + esc(x.tooltyp) + '</span>' : "") + '</div>' +
       (x.rechnung ? '<p class="za-rech">' + esc(x.rechnung) + '</p>' : "") +
       (x.problem ? '<p><span class="za-lab">Löst nach dem Kauf</span>' + esc(x.problem) + '</p>' : "") +
@@ -5735,6 +5746,7 @@
         (a.link ? ' · <a href="' + esc(a.link) + '" target="_blank" rel="noopener">Kasse öffnen</a>' : "") + '</div>';
       if (erg && erg.fehler) h += '<div class="panel za-warn">Das hat nicht geklappt (' + esc(erg.fehler) + '). Nochmal versuchen.</div>';
       if (erg && erg.vorschlaege) {
+        zaPruefen(erg.vorschlaege, erg.preis);
         var brueche = erg.vorschlaege.filter(function (x) { return x.fehler && x.fehler.length; }).length;
         h += '<div class="za-stand note">Stand ' + esc(String(erg.stand || "").slice(0, 16).replace("T", " ")) +
           (erg.wunsch ? ' · Wunsch: ' + esc(erg.wunsch) : "") +

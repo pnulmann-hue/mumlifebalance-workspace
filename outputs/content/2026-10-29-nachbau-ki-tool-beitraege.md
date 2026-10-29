@@ -4,13 +4,12 @@ tags: [content, nachbau]
 
 # Nachbau: KI-Tool-Beiträge für den November · 29.10.2026
 
-Sechs Beiträge fürs Mentoring-Profil, gebaut nach der Bauweise der KI-Tool-Beiträge einer Mentorin aus der
+Fünf Beiträge fürs Mentoring-Profil, gebaut nach der Bauweise der KI-Tool-Beiträge einer Mentorin aus der
 Kern-Nische. Übernommen ist die **Mechanik** (Format, Folienfolge, wo das Stichwort steht, was dahinter liegt),
 kein Wortlaut, keine Beweise, keine Zahlen von ihr. Analyse dazu: [[2026-10-29-julia-trost-instagram-verkaufsmuster]].
 
 **Monat:** Tool-Workshop 10./11.11. · Freebie Nischengenerator · Stichwort **NISCHE**.
-**Mischung:** 3 Karussells, 3 Reels · 4 mit NISCHE, 2 mit Speichern- bzw. Wahl-Aufruf (3+2-Regel, eins mehr Lead
-wegen der Kasse bis 9.11.).
+**Mischung:** 3 Karussells, 2 Reels · 3 mit NISCHE, 2 mit Speichern- bzw. Wahl-Aufruf (3+2-Regel).
 
 ---
 
@@ -99,30 +98,35 @@ Speicher dir die vier für den nächsten Abend, an dem nach dem Zähneputzen nic
 
 ---
 
-## 3 · Karussell · Wandel-Beitrag (früher/heute) · Lead NISCHE
+## 3 · Karussell · ein Tool für die eigenen Kundinnen · Lead NISCHE
 
-**Vorbild:** 28.7. Workflow-Karussell (546) · **Rolle:** Vertrauen · **Bauplan:** Geständnis · **Gibt ihr mit:** warum mit mir / möglich
+**Vorbild:** 3.9. Anleitung (379) und 31.8. Helfer-Karussell (96): ein echtes eigenes Tool auf Bildschirmfotos gezeigt
+**Rolle:** Vertrauen · **Bauplan:** Geständnis mit Beweis aus der eigenen Arbeit · **Gibt ihr mit:** warum mit mir / möglich
+**Beispiel:** die Begleitung zur 30-Tage-Energie-Routine, die deine Kundinnen aufs Handy bekommen
 
-**Cover-Hook (Stil Geständnis, Zeitanker):**
-Früher sass ich am Sonntagabend am Küchentisch und hatte für die Woche noch keinen einzigen Beitrag. *(nur wenn's stimmt)*
+**Cover-Hook (Stil Erwartung drehen, 17 Wörter):**
+Meine Kundinnen sehen am ersten Tag nur drei Haken auf ihrer Liste. Das ist Absicht.
 
-| Folie | Text |
-|---|---|
-| 1 | Hook |
-| 2 | Heute liegt am Freitagmorgen die ganze Woche als Entwurf bereit, geschrieben nach meinen Regeln, in meiner Sprache. |
-| 3 | Ich lese, nehme von zwei Varianten die bessere und ändere, was nicht nach mir klingt. |
-| 4 | Ein Klick, und die Beiträge sind eingeplant. Die Storys mach ich weiter selber, die sollen nach meinem Tag klingen. |
-| 5 | Was ich mit der gewonnenen Zeit mache: ✏️ [deine echte Antwort, zum Beispiel die Nachmittage mit den Kindern] |
-| 6 | Ehrlich: Bis das lief, hat es ✏️ [Dauer] gebraucht, und am Anfang hab ich mehr korrigiert als geschrieben. |
-| 7 | Du musst nicht alles auf einmal bauen. Mein erster Helfer konnte genau eine Sache. |
-| 8 | Welche eine Sache bei dir zuerst dran ist, hängt an deinem Thema. Kommentier **NISCHE**, dann schick ich dir meinen Nischengenerator, gratis. |
+| Folie | Text | Bild |
+|---|---|---|
+| 1 | Hook | Bildschirmfoto: Tag 1 mit den drei Haken, gross |
+| 2 | Die drei Haken gehören zu meiner 30-Tage-Energie-Routine. Dazu bekommen sie kein dickes Dokument, sie bekommen eine kleine Seite aufs Handy, gebaut mit Claude. | Bildschirmfoto: Startseite der Begleitung |
+| 3 | Jeden Tag geht ein neuer kurzer Text auf. Was erst an Tag 18 dran ist, sieht man schon, öffnen lässt es sich aber erst dann. | Bildschirmfoto: Bibliothek mit „ab Tag 18“ |
+| 4 | Die Liste wächst mit: drei Haken in der ersten Woche, mehr erst, wenn die ersten sitzen. | Bildschirmfoto: Checkliste Woche 2 |
+| 5 | Die 120 Rezepte sind ab Tag 1 alle da, und ein Knopf rechnet die Mengen auf die eigene Familie um. | Bildschirmfoto: Rezept mit Portionsrechner |
+| 6 | Alles bleibt auf ihrem Handy, ohne Anmeldung und ohne App aus dem Store. | Bildschirmfoto: Seite im Handy-Browser |
+| 7 | Warum so? Wer an Tag 1 alles auf einmal sieht, fühlt sich an Tag 4 schon hinterher. ✏️ | Creme, Typo |
+| 8 | Das geht mit deinem Wissen genauso: in Portionen, die deine Leute Tag für Tag schaffen. | Dunkelblau, Satz zum Weiterschicken |
+| 9 | Kommentier **NISCHE**: Mein Nischengenerator findet mit dir dein Thema und schlägt dir fünf Tools dazu vor, jedes mit dem fertigen Auftrag für Claude zum Kopieren. | Foto von dir, Orange als Akzent |
 
 **Caption:**
-Seit ich nicht mehr jeden Sonntag bei null anfange, poste ich weniger aus Pflicht und mehr, weil ich etwas zu sagen habe. *(nur wenn's stimmt)*
+Früher hätte ich für so eine Begleitung jemanden bezahlen müssen, heute hab ich sie an ✏️ [Dauer] gebaut. *(nur wenn's stimmt)*
 
-Den Anfang macht immer dasselbe: wissen, worüber du überhaupt reden willst. Kommentier **NISCHE** ⬇️
+Das Schönste daran ist für mich, dass meine Kundinnen nicht alles auf einmal stemmen müssen. Wenn du für dein Thema auch so etwas willst, fang bei der Frage an, worüber du Bescheid weisst. Kommentier **NISCHE** ⬇️
 
-✏️ Folie 1, 5 und 6 füllst du mit deiner echten Geschichte, sonst wird der Beitrag nicht gebaut.
+✏️ **Bildschirmfotos** machst du in der Begleitung selbst (Tag 1, Bibliothek, Woche 2, ein Rezept), ohne Namen und Daten von Kundinnen.
+✏️ **Folie 7** ist dein Grund, warum du es so gebaut hast. Passt er nicht, schreib deinen eigenen hinein.
+🚨 **Kein Gesundheitsversprechen:** Es geht um den Ablauf, nie darum, was die Routine im Körper bewirkt.
 
 ---
 
@@ -186,36 +190,15 @@ Welchen der drei hättest du am liebsten? Schreib mir nur die Zahl, 1, 2 oder 3 
 
 ---
 
-## 6 · Reel (B-Roll) · Lead NISCHE
-
-**Vorbild:** Mechanik der Anleitungs-Posts, gegen ihre gefloppten Workshop-Pitches gebaut · **Rolle:** Vertrauen
-**Gibt ihr mit:** Inspiration
-
-**Hook im Bild (Stil Was du nicht brauchst, 16 Wörter):**
-Du musst nicht jede Nachricht sofort beantworten, während die Kinder am Tisch sitzen, um nahbar zu sein.
-**Orange Zeile:** Ein kleiner Fragebogen kann das Gespräch anfangen.
-
-**Clip-Idee:** Familientisch beim Znacht von der Seite, dein Handy liegt umgedreht daneben. Keine Kindergesichter.
-
-**Caption:**
-Lange hab ich gedacht, nahbar heisst, auf jede Nachricht sofort zu antworten. Bei mir hiess das: Handy am Esstisch. *(nur wenn's stimmt)*
-
-Heute schicke ich bei der häufigsten Frage einen Link. Wer ihn ausfüllt, bekommt ein Ergebnis zu seiner Frage, und wenn ich später zurückschreibe, wissen wir beide schon, worum es geht.
-
-Welche Frage dein erstes Tool beantworten sollte, hängt an deinem Thema. Kommentier **NISCHE**, dann schick ich dir meinen Nischengenerator, gratis ⬇️
-
----
-
 ## Hook-Check (fünf Fragen)
 
 | # | Schmerz | „woher weiss sie das“ | Küchentisch | Bezug der Zeilen | Lösung draussen |
 |---|---|---|---|---|---|
 | 1 | ✓ dieselbe Antwort immer wieder | ✓ | ✓ | – (ein Satz) | ✓ |
 | 2 | ✓ keine Zeit für Content | ✓ | ✓ | „Ich kopier abends“ folgt aus dem Hook ✓ | ✓ (Aufträge erst in der Caption) |
-| 3 | ✓ Sonntag ohne Beitrag | ✓ | ✓ | – | ✓ |
+| 3 | ✓ zu viel auf einmal, nicht dranbleiben | ✓ | ✓ | „Das ist Absicht“ dreht die Erwartung, kein Gegensatz ✓ | ✓ (wie es gebaut ist, erst ab Folie 2) |
 | 4 | ✓ „nicht technisch“ | ✓ ihr Satz | ✓ | Wendung ohne kippendes Bindewort ✓ | ✓ |
 | 5 | ✓ voller Kopf am Samstag | ✓ | ✓ | – | ✓ |
-| 6 | ✓ Mama-Schuld am Esstisch | ✓ | ✓ | zweite Zeile ergänzt, kein Gegensatz ✓ | ✓ (Fragebogen ist Andeutung, Tool erst in der Caption) |
 
 ## Beitrags-Check
 
@@ -223,10 +206,9 @@ Welche Frage dein erstes Tool beantworten sollte, hängt an deinem Thema. Kommen
 |---|---|---|---|---|---|---|---|---|
 | 1 Anleitung | Beziehung | ✓ Abend, Nachricht | Tipp | Wiedererkennen | fünf Schritte + Auftrag | Anleitung zum Nachbauen | NISCHE mit Tool-Ideen | ✏️ Satz 1 der Caption |
 | 2 Aufträge | Aufmerksamkeit | ✓ nach dem Zähneputzen | krasser Tipp | Erleichterung | vier Aufträge | ja, zum Kopieren | – (Speichern) | Ton mit Augenzwinkern |
-| 3 Wandel | Vertrauen | ✓ Sonntagabend | möglich | Sehnsucht | „ein Helfer, eine Sache“ | – | NISCHE | ✏️ nur mit deiner Geschichte |
+| 3 Energie-Routine | Vertrauen | ✓ drei Haken an Tag 1 | möglich | „so will ich das auch“ | Bauweise: Wissen in Tagesportionen | ja, als Vorbild | NISCHE | dein echtes Tool, deine Kundinnen |
 | 4 Bau mit mir | Beziehung | ✓ ihr Satz | Tipp | Mut | fünf Schritte | ja | NISCHE | deine Bildschirmaufnahme |
 | 5 Drei Helfer | Aufmerksamkeit | ✓ Samstag 18 Uhr | Inspiration | „will ich auch“ | drei Ideen | – | Zahl 1–3 tippen | deine echten Helfer |
-| 6 Esstisch | Vertrauen | ✓ Znacht | Inspiration | Mama-Schuld | Link statt Nachricht | – | NISCHE | ✏️ nur wenn's stimmt |
 
 **Zielgruppen-Ebenen geprüft:** wer bei deiner Kundin nachfragt, heisst hier „Leute“, „jemand“, „wer ihn ausfüllt“.
 
