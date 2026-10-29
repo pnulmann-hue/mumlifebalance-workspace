@@ -14,6 +14,28 @@ Werte aus `00-bauplan.md`.
 | AGB | https://mumlifebalance.ch/agb/ |
 | Nach dem Kauf | ThriveCart Learn: Kurs „Tool-Workshop“ · Tag in AC: **Tool-Workshop** |
 
+## Stand 29.10.2026 abends
+
+- **ThriveCart-Produkt 53** angelegt (Klon von „90 Storyideen“, leerer Funnel), Kasse **live**: https://mumlifebalance.thrivecart.com/tool-workshop/
+- Preis 39.00 CHF ✓ · Automation: Liste „Kunden“ + Tag **Tool-Workshop (AC 107)** ✓ · Auslieferung vorerst „Bestätigung anzeigen“ (kein Learn-Kurs, damit niemand die Storyideen bekommt)
+- 🚨 **Der Kassentext ist noch der von den Storyideen** (Überschrift, Cover, „Das bekommst du alles“, FAQ). Im Editor ersetzen durch den Block unten, bevor der Link irgendwo steht.
+
+### Kassentext zum Einsetzen
+
+**Überschrift:** Tool-Workshop: Dein Gratis-Angebot als Tool
+
+**Unterzeile:** Live am 10. und 11. November, mit Aufzeichnung und drei Tagen Begleitung.
+
+**Das bekommst du:**
+- Tag 1, Dienstag 10.11.: Du baust live dein eigenes Gratis-Tool zu deiner Nische, mit Claude, ohne Programmieren
+- Tag 2, Mittwoch 11.11.: Du baust die Seite, auf der man sich dafür einträgt
+- 12. bis 14.11.: Drei Tage Begleitung in der Gruppe, bis beides online ist
+- Aufzeichnungen beider Calls, Auftrags-Vorlage für Claude und Seitenvorlage
+
+**Unter dem Knopf:** Nach dem Kauf bekommst du eine Mail mit Zoom-Link und deiner kleinen Vorbereitung.
+
+**FAQ:** die sechs Fragen aus `02-salespage.md`, Block 11.
+
 ## Bump (auf der Kasse)
 
 **Story-Generator dazu, 17 Franken statt einzeln**  🟠 ENTSCHEID (Kasse des Story-Generators steht noch nicht)
