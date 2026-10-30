@@ -1,6 +1,7 @@
 name: Apify Tiefen-Abruf (Nischen-Analyse)
 
-# Einmaliger Abruf der letzten ~200 Beiträge je Konto für die Hook-Maschine.
+# Einmaliger Abruf der letzten Beiträge je Konto für die Hook-Maschine und den Markt-Radar.
+# 30.10.2026: sieben Kern-Konten, je 100 Beiträge (~3 Franken), für frische Video-Adressen (Markt-Radar).
 # Startet beim Push dieser Datei (so lässt er sich ohne GitHub-UI auslösen) und
 # per Hand über "Run workflow". Freigegeben von Patricia am 04.10.2026 (~2–3 Franken).
 # Für einen neuen Abruf: HANDLES unten ändern und pushen, oder in der UI eingeben.
@@ -40,8 +41,8 @@ jobs:
         working-directory: scripts/apify
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
-          HANDLES: ${{ inputs.handles || 'juliamueller._' }}
-          LIMIT: ${{ inputs.limit || '200' }}
+          HANDLES: ${{ inputs.handles || 'juliamueller._,reichweitenherz,nikoleta.kolokytha,die_fuehlbarmacherin,katrinhill.onlinewachsen,dascha_stories,die.erfolgstexterei' }}
+          LIMIT: ${{ inputs.limit || '100' }}
         run: node scrape-tiefe.js
       - name: Ergebnis committen
         run: |
