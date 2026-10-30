@@ -68,6 +68,7 @@ SEEDS = {
     "ideen-extern.json": "ideen-extern",
     "planung-abgleich.json": "planung-abgleich",
     "auswertung.json": "zahlen-auswertung",
+    "gekaufte-kurse.json": "gekauft",
     # 🚨 Neue Datendatei gehoert hier nachgetragen, sonst ist der Reiter
     #    in der lokalen Pruefung leer (Lehre vom 24.09.2026).
     "launch.json": "launch",
