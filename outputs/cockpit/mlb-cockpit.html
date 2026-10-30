@@ -2162,6 +2162,22 @@
   .za-lab { display: block; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
   .za-kasse { font-style: italic; border-left: 3px solid var(--orange); padding-left: 9px; }
   .za-warn { color: var(--crit); }
+  /* ---------- Gekaufte Kurse (30.10.2026) ---------- */
+  .gk-suche input { width: 100%; background: var(--ground); border: 1px solid var(--line);
+                    border-radius: 8px; padding: 9px 12px; }
+  .gk-suche input:focus { border-color: var(--teal); outline: none; }
+  .gk-bereich { font-family: var(--display); font-weight: normal; font-size: 20px; margin: 22px 0 10px; }
+  .gk-bereich span { font-family: var(--body); font-size: 12px; color: var(--ink-soft); }
+  .gk-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+  .gk-karte { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+  .gk-karte.gk-aus { opacity: 0.6; }
+  .gk-kopf { display: flex; align-items: center; gap: 8px; }
+  .gk-von { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+  .gk-kopf .chip { margin-left: auto; }
+  .gk-titel { font-family: var(--display); font-size: 17px; line-height: 1.3; }
+  .gk-meta { font-size: 12.5px; color: var(--ink-soft); overflow-wrap: anywhere; }
+  .gk-notiz { font-size: 13px; line-height: 1.45; border-left: 3px solid var(--orange); padding-left: 8px; }
+  .gk-fuss { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; padding-top: 8px; }
 </style>
 
 <div class="shell">
@@ -3033,6 +3049,7 @@
     { g: "Nachschlagen" },
     { id: "kurse", label: "Kurs-Inhalte" },
     { id: "bibliothek", label: "Wissensbibliothek" },
+    { id: "gekauft", label: "Gekaufte Kurse" },
     { id: "wissen", label: "Mein Wissen" },
     { id: "suche", label: "Suchen" }
   ];
@@ -5780,6 +5797,104 @@
     };
   }
 
+  /* ======================================================================
+     Reiter "Gekaufte Kurse" — Produkte -> Gekaufte Kurse
+     (seit 30.10.2026, patch-gekauft.py)
+
+     Alle Kurse, die Patricia selbst gekauft hat, mit Link zum Login, dem
+     Postfach, in dem die Zugangsmail liegt, und der Mail zum Wiederfinden.
+     Daten: daten/gekauft (Quelle outputs/cockpit/abgleich/gekaufte-kurse.json,
+     zusammengestellt aus Gmail, GMX und info@). Passwoerter stehen bewusst
+     nicht drin, nur der Hinweis, in welcher Mail sie liegen.
+     ====================================================================== */
+  var gekauft = null;
+  var gekauftSuche = "";
+
+  function gekauftLaden(fertig) {
+    if (gekauft) { fertig(); return; }
+    var lokal = lsGet("gekauft", null);
+    if (lokal) { gekauft = lokal; fertig(); }
+    if (!db) {
+      if (!lokal) setTimeout(function () { if (db) gekauftLaden(fertig); }, 1500);
+      return;
+    }
+    db.doc("daten/gekauft").get().then(function (snap) {
+      if (!snap.exists) { if (!lokal) { gekauft = { items: [] }; fertig(); } return; }
+      gekauft = tief(snap.data());
+      lsSet("gekauft", gekauft);
+      fertig();
+    }).catch(function () {
+      if (!lokal) { gekauft = { items: [], fehler: true }; fertig(); }
+    });
+  }
+
+  function renderGekauft(main) {
+    main.innerHTML =
+      '<div class="page-head"><div><h1>Gekaufte Kurse</h1>' +
+      '<p>Alles, was du dir selbst gekauft hast, mit dem Weg hinein: Login, Postfach ' +
+      'und die Mail, in der der Zugang steht.</p></div></div>' +
+      '<div class="panel gk-suche"><input type="search" placeholder="Suchen: Name, Mentorin, Thema …" ' +
+      'value="' + esc(gekauftSuche) + '"></div>' +
+      '<div id="gkinhalt"><div class="panel"><div class="empty">Lädt …</div></div></div>';
+    var feld = main.querySelector(".gk-suche input");
+    feld.addEventListener("input", function () {
+      gekauftSuche = feld.value;
+      gekauftListe(main.querySelector("#gkinhalt"));
+    });
+    gekauftLaden(function () { gekauftListe(main.querySelector("#gkinhalt")); });
+  }
+
+  function gekauftListe(box) {
+    if (!box) return;
+    var alle = (gekauft && gekauft.items) || [];
+    if (!alle.length) {
+      box.innerHTML = '<div class="panel"><div class="empty">' +
+        (gekauft && gekauft.fehler ? "Die Liste liess sich nicht laden." : "Noch nichts da.") +
+        '</div></div>';
+      return;
+    }
+    var s = gekauftSuche.trim().toLowerCase();
+    var liste = alle.filter(function (k) {
+      if (!s) return true;
+      return [k.titel, k.von, k.bereich, k.plattform, k.notiz].join(" ").toLowerCase().indexOf(s) >= 0;
+    });
+    var abos = alle.filter(function (k) { return k.abo && !k.beendet; }).length;
+    var html = '<div class="tiles">' +
+      tile("Kurse", String(alle.length), "aus deinen Postfächern") +
+      tile("Laufende Abos", String(abos), abos ? "kosten weiter" : "") +
+      tile("Stand", gekauft.stand ? fmtDate(gekauft.stand) : "—", "") +
+      '</div>';
+    var bereiche = [];
+    liste.forEach(function (k) { if (bereiche.indexOf(k.bereich) < 0) bereiche.push(k.bereich); });
+    if (!liste.length) html += '<div class="panel"><div class="empty">Nichts gefunden.</div></div>';
+    bereiche.forEach(function (b) {
+      var teil = liste.filter(function (k) { return k.bereich === b; })
+        .sort(function (x, y) { return String(y.datum).localeCompare(String(x.datum)); });
+      html += '<h2 class="gk-bereich">' + esc(b) + ' <span>' + teil.length + '</span></h2><div class="gk-grid">';
+      teil.forEach(function (k) {
+        var mailLink = /^https?:/.test(k.mail || "");
+        html += '<div class="panel gk-karte' + (k.beendet ? " gk-aus" : "") + '">' +
+          '<div class="gk-kopf"><span class="gk-von">' + esc(k.von) + '</span>' +
+          (k.abo ? '<span class="chip' + (k.beendet ? "" : " orange") + '">' + (k.beendet ? "Abo beendet" : "Abo") + '</span>' : "") +
+          '</div>' +
+          '<div class="gk-titel">' + esc(k.titel) + '</div>' +
+          '<div class="gk-meta">' + esc(fmtDate(k.datum)) +
+            (k.preis ? ' · ' + esc(k.preis) : "") + ' · ' + esc(k.plattform || "") + '</div>' +
+          '<div class="gk-meta">Konto: ' + esc(k.konto || "—") + '</div>' +
+          (mailLink ? "" : '<div class="gk-meta">Mail: ' + esc(k.mail || "—") + '</div>') +
+          (k.notiz ? '<div class="gk-notiz">' + esc(k.notiz) + '</div>' : "") +
+          '<div class="gk-fuss">' +
+            (k.link && !/mail\.google\.com/.test(k.link)
+              ? '<a class="btn primary" href="' + esc(k.link) + '" target="_blank" rel="noopener">Zum Kurs &rarr;</a>' : "") +
+            (mailLink || /mail\.google\.com/.test(k.link || "")
+              ? '<a class="btn" href="' + esc(mailLink ? k.mail : k.link) + '" target="_blank" rel="noopener">Zugangsmail &rarr;</a>' : "") +
+          '</div></div>';
+      });
+      html += '</div>';
+    });
+    box.innerHTML = html;
+  }
+
   /* Reiter „Ideen von anderen": was bei den beobachteten Profilen deutlich
      ueber deren eigenem Schnitt lag. Gebaut von ideen-extern-bauen.py.
      Siehe Kopf von patch-ideen-extern.py, warum der Reiter bewusst nicht
@@ -6292,7 +6407,7 @@
     { id: "instagram", label: "Instagram", saeule: "Instagram",
       tabs: ["woche", "studio", "storys", "fertig", "gepostet", "markt"] },
     { id: "produkte", label: "Produkte", saeule: "Produkte",
-      tabs: ["katalog", "zusatzangebote", "produkte", "links", "launch", "funnel", "mailings", "leads", "kurse", "bibliothek"] },
+      tabs: ["katalog", "zusatzangebote", "produkte", "links", "launch", "funnel", "mailings", "leads", "kurse", "bibliothek", "gekauft"] },
     { id: "mamaceo", label: "Mama-CEO", saeule: "Mama-CEO",
       tabs: ["aufgaben", "erledigt", "launches", "monatsbogen", "wochenbogen", "ziele", "zahlen"] },
     { id: "doterra", label: "doTERRA", saeule: "doTERRA",
@@ -15414,6 +15529,7 @@
     else if (activeTab === "ideenextern") renderIdeenExtern(main);
     else if (activeTab === "markt") renderZielgruppe(main);
     else if (activeTab === "bibliothek") renderBibliothek(main);
+    else if (activeTab === "gekauft") renderGekauft(main);
     else if (activeTab === "oelwissen") renderOelwissen(main);
     else if (activeTab === "anliegen") renderAnliegen(main);
     else if (activeTab === "bizwege") renderBizwege(main);
