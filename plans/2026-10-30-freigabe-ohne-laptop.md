@@ -41,6 +41,13 @@ belegt**. Schritt 1 ist darum ein Test. Fällt er negativ aus, wird der Plan neu
 > - ❌ **Das Netz nach aussen ist gesperrt.** Blotato, mumlifebalance.ch und Telegram brachen alle ab mit `CONNECT tunnel failed, response 403`. Die Standard-Umgebung lässt nur freigegebene Adressen durch.
 > - ➜ **Nächster Schritt:** In den Einstellungen der Cloud-Umgebung (claude.ai/code → Umgebung) den Netzzugang für `backend.blotato.com`, `mumlifebalance.ch` und `api.telegram.org` freigeben. Am besten in einer eigenen Umgebung, nicht in „Default“. Danach den Netztest wiederholen.
 > - Das Klonen des Repos dauert rund 90 Sekunden je Lauf.
+>
+> **Zweiter Test 30.10.2026, 11:31 (Umgebung „Cockpit-Einplanen“, `env_01XF6xEatiwrgLEgsQNCPFJX`):**
+> - ✅ Freigaben wieder lesbar (42).
+> - ✅ Netz offen: Blotato 404 · Telegram 302 · ActiveCampaign 302 · Instagram/Graph 400. Das sind normale Antworten auf die blosse Adresse ohne Pfad und ohne Schlüssel.
+> - ⚠️ **mumlifebalance.ch 403.** Vermutlich sperrt die Firewall der Webseite die Cloud aus, wie schon bei Puppeteer. Das ist wichtig, weil `freigabe-zu-blotato.mjs` die Folienbilder über WordPress hochlädt. Muss mit einem echten Aufruf der Schnittstelle (`/wp-json/`) geprüft werden. Ausweg falls gesperrt: Bilder direkt bei Blotato hochladen statt über WordPress.
+> - ❌ **Keine Zugangsvariablen angekommen.** Weder Blotato, Telegram, ActiveCampaign, Meta noch WordPress. Die Umgebungsvariablen müssen in der Umgebung gespeichert werden.
+> - Hinweis aus der Session-Ansicht: „Wöchentliches Nutzungslimit fast erreicht“. Cloud-Läufe zählen auf Patricias Abo. Ein Lauf alle zwei Stunden kostet also mit.
 
 1. [x] Eine Test-Routine in der Cloud anlegen. Sie liest nur `freigaben` aus dem Cockpit und meldet die Anzahl per Telegram. Schreiben und Einplanen gibt es dabei nicht.
 2. [~] Prüfen, was die Cloud-Umgebung kann (Repo ✅, Netz ❌, Geheimwerte offen): Repo aus GitHub (`main`), geheime Werte als Umgebungsvariablen, Netz zu Blotato, WordPress und Telegram.
