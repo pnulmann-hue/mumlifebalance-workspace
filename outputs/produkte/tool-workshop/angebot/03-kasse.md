@@ -57,6 +57,30 @@ on this product only“). Bump, Funnel und Gestaltung sind in 54 von Hand nachge
 Downsell-Seite noch in der ThriveCart-Vorlagenschrift (lila Überschrift) · Upsell Nr. 7 an Startklar/Storyideen bucht 97,
 die Seite dort schreibt „nur für CHF 199“.
 
+## Stand 30.10.2026 — Bump neu getextet, Danke-Seite nach dem Kauf
+
+**Bump in 53 und 54** (Patricias Stimme, Aufbau nach Julias Bump-Vorlage für kleine Programme: Überschrift mit Preis,
+drei ✅-Punkte, Preiszeile; ihr Profi-Tipp Mockup). Bild: Mockup „Finde dein Thema“ über dem Text, 70 % Breite
+(ThriveCart-Bibliothek `finde-dein-thema-mockup-…jpg`, dazu WP-Medium **4466**). Text-Element im Bump-Block, Anordnung „Bild oben“.
+
+> **Ja, ich nehm mein Thema gleich mit! 25 statt 39 CHF** (Euro-Kasse: €)
+>
+> Ganz ehrlich: Das Tool baust du mit Claude an einem Abend. Woran es meistens hängt, ist die Frage davor: Für wen ist es eigentlich, und welches Problem löst es? 😅
+>
+> Genau dafür gibt's meinen Minikurs „Finde dein Thema“. In einer Stunde hast du:
+> ✅ deinen Experten-Satz, mit dem du in der Bio, in den Storys und in deinem Tool sofort klar bist
+> ✅ die Themenlandkarte, damit du dich nicht in eine Mini-Nische quetschen musst
+> ✅ die vier Quellen, aus denen dein Thema kommt. Spoiler: Es ist längst da, du siehst es nur noch nicht.
+>
+> Schau ihn vor dem 10. November an, dann kommst du mit deinem Thema in den Workshop. Hier an der Kasse für 25 statt 39 CHF.
+
+Bewusst ohne „nur hier“ — „Finde dein Thema“ läuft an einer anderen Kasse als Upsell für 25.
+
+**Nach dem Kauf** (53 und 54, Fulfillment → „Send students to a custom success page before accessing their course“):
+`https://mumlifebalance.ch/tool-workshop-danke/` (WP 4460). Learn-Zugang bleibt. Live gegengelesen 30.10.: 39 CHF / 39 €, Bump 25.
+🚨 Beim Speichern im Produkt-Reiter zeigte ThriveCart „Pricing updated · Bump added · Bump removed“, obwohl nur der
+Bump-Dialog geöffnet und abgebrochen war — **nicht** gespeichert, Seite neu geladen. Solche Sitzungs-Meldungen nie blind bestätigen.
+
 ## Bump (auf der Kasse)
 
 **Story-Generator dazu, 17 Franken statt einzeln**  🟠 ENTSCHEID (Kasse des Story-Generators steht noch nicht)
