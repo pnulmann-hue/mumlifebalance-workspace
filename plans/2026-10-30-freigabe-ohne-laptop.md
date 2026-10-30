@@ -35,8 +35,15 @@ belegt**. Schritt 1 ist darum ein Test. Fällt er negativ aus, wird der Plan neu
 ## 4 · Die Schritte
 
 **Teil A — geht es überhaupt?**
-1. [ ] Eine Test-Routine in der Cloud anlegen. Sie liest nur `freigaben` aus dem Cockpit und meldet die Anzahl per Telegram. Schreiben und Einplanen gibt es dabei nicht.
-2. [ ] Prüfen, was die Cloud-Umgebung kann: Repo aus GitHub (`main`), geheime Werte als Umgebungsvariablen, Netz zu Blotato, WordPress und Telegram.
+
+> **Ergebnis Test 30.10.2026** (Routine `trig_0165cW7BmvhXXUiFqJDCtKUV`, Umgebung „Default“, Sonnet 5.5, 38 s):
+> - ✅ **Die Cockpit-Datenbank ist aus der Cloud lesbar.** `ArtifactData list freigaben` lieferte 42 Dokumente: geplant 12 · selber-posten 17 · zurückgezogen 7 · fehlgeschlagen 3 · wartet 2 · gepostet-von-hand 1.
+> - ❌ **Das Netz nach aussen ist gesperrt.** Blotato, mumlifebalance.ch und Telegram brachen alle ab mit `CONNECT tunnel failed, response 403`. Die Standard-Umgebung lässt nur freigegebene Adressen durch.
+> - ➜ **Nächster Schritt:** In den Einstellungen der Cloud-Umgebung (claude.ai/code → Umgebung) den Netzzugang für `backend.blotato.com`, `mumlifebalance.ch` und `api.telegram.org` freigeben. Am besten in einer eigenen Umgebung, nicht in „Default“. Danach den Netztest wiederholen.
+> - Das Klonen des Repos dauert rund 90 Sekunden je Lauf.
+
+1. [x] Eine Test-Routine in der Cloud anlegen. Sie liest nur `freigaben` aus dem Cockpit und meldet die Anzahl per Telegram. Schreiben und Einplanen gibt es dabei nicht.
+2. [~] Prüfen, was die Cloud-Umgebung kann (Repo ✅, Netz ❌, Geheimwerte offen): Repo aus GitHub (`main`), geheime Werte als Umgebungsvariablen, Netz zu Blotato, WordPress und Telegram.
 3. [ ] **Entscheidungspunkt.** Patricia bekommt das Ergebnis. Bei einem Nein geht es mit dem Rückfallweg weiter.
 
 **Teil B — Einplanen in der Cloud**
