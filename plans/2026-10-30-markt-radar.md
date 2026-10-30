@@ -4,7 +4,8 @@ tags: [plan, content, research]
 
 # Markt-Radar: die Auswertung von Content Radar, nachgebaut
 
-Stand 30.10.2026 · Status: **Entwurf, wartet auf Patricias Ja**
+Stand 30.10.2026 · Status: **gebaut für das eigene Konto (Cockpit V112)**. Offen ist der frische Scrape für
+die fremden Konten. Entschieden ohne Rückfrage: nur Reels, Konten wie vorgeschlagen, Credits bleiben liegen.
 
 ## 1 · Worum es geht
 

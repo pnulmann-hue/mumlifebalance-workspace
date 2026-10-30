@@ -2178,6 +2178,29 @@
   .gk-meta { font-size: 12.5px; color: var(--ink-soft); overflow-wrap: anywhere; }
   .gk-notiz { font-size: 13px; line-height: 1.45; border-left: 3px solid var(--orange); padding-left: 8px; }
   .gk-fuss { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; padding-top: 8px; }
+  /* ---------- Markt-Radar (30.10.2026) ---------- */
+  .mr-meta, .mr-klein { font-size: 12.5px; color: var(--ink-soft); }
+  .mr-warn { border-left: 3px solid var(--orange); padding: 6px 10px; margin: 8px 0 14px; font-size: 13px; }
+  .mr-warn ul { margin: 4px 0 0 18px; }
+  .mr-inhalt ul, .mr-inhalt ol { padding-left: 20px; }
+  .mr-inhalt li { margin-bottom: 8px; }
+  .mr-nein li { color: var(--ink-soft); }
+  .mr-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .mr-post { display: flex; gap: 10px; border: 1px solid var(--line); border-radius: 10px; padding: 10px; min-width: 0; }
+  .mr-post.mr-top { border-left: 3px solid var(--teal); }
+  .mr-post.mr-flop { border-left: 3px solid var(--orange); }
+  .mr-post img, .mr-ohnebild { width: 72px; height: 128px; object-fit: cover; border-radius: 6px; flex: none;
+                               background: var(--ground); }
+  .mr-ohnebild { display: flex; align-items: center; justify-content: center; font-size: 11px; color: var(--ink-soft); }
+  .mr-text { display: flex; flex-direction: column; gap: 4px; min-width: 0; font-size: 13px; line-height: 1.45; }
+  .mr-zahlen { font-size: 12px; font-weight: 600; }
+  .mr-hook { font-family: var(--display); font-size: 15px; overflow-wrap: break-word; }
+  .mr-warum { overflow-wrap: break-word; }
+  .mr-balken { display: flex; align-items: flex-end; gap: 3px; height: 92px; margin: 6px 0; overflow-x: auto; }
+  .mr-b { display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 18px; }
+  .mr-b span { display: block; width: 14px; background: var(--teal); border-radius: 3px 3px 0 0; }
+  .mr-b.mr-duenn span { opacity: 0.3; }
+  .mr-b em { font-style: normal; font-size: 10px; color: var(--ink-soft); }
 </style>
 
 <div class="shell">
@@ -3023,6 +3046,7 @@
     { id: "fertig", label: "Freigeben" },
     { id: "gepostet", label: "Ausgewertet" },
     { id: "markt", label: "Zielgruppe & Markt" },
+    { id: "radar", label: "Markt-Radar" },
     { g: "Planung" },
     { id: "launches", label: "Jahresplan" },
     { id: "monatsbogen", label: "Monatsbogen" },
@@ -5895,6 +5919,164 @@
     box.innerHTML = html;
   }
 
+  /* ======================================================================
+     Reiter "Markt-Radar" — Instagram -> Markt-Radar
+     (seit 30.10.2026, patch-markt-radar.py)
+
+     Warum ein Reel gelaufen ist, je Konto: die 10 staerksten und 5
+     schwaechsten gegen den Median des eigenen Kontos, mit Standbild,
+     Bericht (Hebel, sofort, vermeiden, Muster) und beim eigenen Konto die
+     Uhrzeit. Gebaut von scripts/hooks/radar.py, Sammlung "markt-radar"
+     (_index + je Konto ein Dokument). Nur Anzeige — die Seite schreibt nichts.
+     ====================================================================== */
+  var radarIndex = null;
+  var radarKonten = {};
+
+  function radarIndexLaden(fertig) {
+    if (radarIndex) { fertig(); return; }
+    var lokal = lsGet("markt-radar", null);
+    if (lokal) { radarIndex = lokal; fertig(); }
+    if (!db) {
+      if (!lokal) setTimeout(function () { if (db) radarIndexLaden(fertig); }, 1500);
+      return;
+    }
+    db.doc("markt-radar/_index").get().then(function (snap) {
+      if (!snap.exists) { if (!lokal) { radarIndex = { konten: [] }; fertig(); } return; }
+      radarIndex = tief(snap.data());
+      lsSet("markt-radar", radarIndex);
+      fertig();
+    }).catch(function () {
+      if (!lokal) { radarIndex = { konten: [], fehler: true }; fertig(); }
+    });
+  }
+
+  function radarKontoLaden(konto, fertig) {
+    if (radarKonten[konto]) { fertig(radarKonten[konto]); return; }
+    var lokal = lsGet("mr-" + konto, null);
+    if (lokal) { radarKonten[konto] = lokal; fertig(lokal); }
+    if (!db) return;
+    db.doc("markt-radar/" + konto).get().then(function (snap) {
+      if (!snap.exists) { if (!lokal) fertig(null); return; }
+      var d = tief(snap.data());
+      radarKonten[konto] = d;
+      try { lsSet("mr-" + konto, d); } catch (e) { /* Speicher voll: nur ohne Zwischenspeicher */ }
+      fertig(d);
+    }).catch(function () { if (!lokal) fertig(null); });
+  }
+
+  function renderMarktRadar(main) {
+    main.innerHTML =
+      '<div class="page-head"><div><h1>Markt-Radar</h1>' +
+      '<p>Warum ein Reel gelaufen ist: je Konto die zehn stärksten und die fünf schwächsten, gemessen am ' +
+      'Median des eigenen Kontos, mit Blick ins Video. Vorschläge, die deine Regeln brechen, stehen unter ' +
+      '„Passt nicht zu dir“.</p></div></div>' +
+      '<div id="mrinhalt"><div class="panel"><div class="empty">Lädt …</div></div></div>';
+    radarIndexLaden(function () { radarListe(main.querySelector("#mrinhalt")); });
+  }
+
+  function radarListe(box) {
+    if (!box) return;
+    var konten = (radarIndex && radarIndex.konten) || [];
+    if (!konten.length) {
+      box.innerHTML = '<div class="panel"><div class="empty">Noch kein Lauf. Bauen mit ' +
+        '<code>python scripts/hooks/radar.py</code>, dann in die Sammlung „markt-radar“.</div></div>';
+      return;
+    }
+    var html = '<div class="tiles">' +
+      tile("Konten", String(konten.length), "") +
+      tile("Stand", radarIndex.stand ? fmtDate(radarIndex.stand) : "—", "") +
+      '</div>';
+    konten.forEach(function (k) {
+      html += '<details class="panel zg-teil mr-konto" data-konto="' + esc(k.konto) + '">' +
+        '<summary><span class="zg-titel">@' + esc(k.konto) + (k.eigen ? ' <span class="chip orange">dein Konto</span>' : '') + '</span>' +
+        '<span class="zg-kurz">' + esc(k.anzahl + " Reels · Median " + k.masz + " " + k.median +
+          " · Daten vom " + fmtDate(k.stand)) + '</span>' +
+        (k.zusammenfassung ? '<span class="zg-kurz">' + esc(k.zusammenfassung) + '</span>' : '') +
+        '</summary><div class="zg-inhalt mr-inhalt"><div class="empty">Lädt …</div></div></details>';
+    });
+    box.innerHTML = html;
+    Array.prototype.forEach.call(box.querySelectorAll(".mr-konto"), function (el) {
+      el.addEventListener("toggle", function () {
+        if (!el.open || el.dataset.geladen) return;
+        el.dataset.geladen = "1";
+        radarKontoLaden(el.dataset.konto, function (d) {
+          el.querySelector(".mr-inhalt").innerHTML = d ? radarKonto(d) :
+            '<div class="empty">Der Bericht liess sich nicht laden.</div>';
+        });
+      });
+    });
+  }
+
+  function radarKonto(d) {
+    var b = d.bericht;
+    var h = '<p class="mr-meta">' + esc(d.bilder || "") + (d.erstellt ? " · erstellt " + esc(fmtDate(d.erstellt)) : "") + '</p>';
+    if (d.funde && d.funde.length) {
+      h += '<div class="mr-warn">Noch offene Regelverstösse:<ul>' +
+        d.funde.map(function (f) { return '<li>' + esc(f) + '</li>'; }).join("") + '</ul></div>';
+    }
+    if (b) {
+      h += '<h3>Zusammenfassung</h3><p>' + esc(b.zusammenfassung) + '</p>';
+      h += '<h3>Die wichtigsten Hebel</h3><ul>' + (b.hebel || []).map(function (x) {
+        return '<li><strong>' + esc(x.titel) + '</strong> <span class="mr-klein">Aufwand ' + esc(x.aufwand) +
+          ' · Wirkung ' + esc(x.wirkung) + '/10</span><br>' + esc(x.beleg) + '</li>';
+      }).join("") + '</ul>';
+      h += '<h3>Sofort umsetzbar</h3><ol>' + (b.sofort || []).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join("") + '</ol>';
+      h += '<h3>Das vermeiden</h3><ul>' + (b.vermeiden || []).map(function (x) {
+        return '<li>' + esc(x.text) + ' <span class="mr-klein">' + esc(x.beleg) + '</span></li>';
+      }).join("") + '</ul>';
+      h += '<h3>Muster mit Zahlen</h3><ul>' + (b.muster || []).map(function (x) {
+        return '<li><strong>' + esc(x.text) + '</strong><br><span class="mr-klein">' + esc(x.beleg) + '</span></li>';
+      }).join("") + '</ul>';
+      if (b.passt_nicht && b.passt_nicht.length) {
+        h += '<h3>Passt nicht zu dir</h3><ul class="mr-nein">' + b.passt_nicht.map(function (x) {
+          return '<li>' + esc(x.text) + ' <span class="mr-klein">' + esc(x.beleg) + '</span></li>';
+        }).join("") + '</ul>';
+      }
+    } else {
+      h += '<p class="mr-klein">Für dieses Konto gibt es nur die Auswahl, noch keinen Bericht.</p>';
+    }
+    if (d.uhrzeit) h += radarUhrzeit(d.uhrzeit);
+    h += '<h3>Die Beiträge</h3><div class="mr-grid">';
+    (d.beitraege || []).forEach(function (p) {
+      h += '<div class="mr-post ' + (p.gruppe === "top" ? "mr-top" : "mr-flop") + '">' +
+        (p.bild ? '<img src="' + p.bild + '" alt="" loading="lazy">' : '<div class="mr-ohnebild">kein Bild</div>') +
+        '<div class="mr-text"><div class="mr-zahlen">' + (p.gruppe === "top" ? "▲" : "▼") + ' Faktor ' + esc(p.faktor) +
+        ' · ' + esc(p.masz) + ' ' + esc(p.wert) + ' · Rate ' + esc(p.rate) + ' %' +
+        (p.wiederholt ? ' · ' + esc(p.wiederholt) + '× gepostet' : '') + '</div>' +
+        '<div class="mr-hook">' + esc(p.hook || "") + '</div>' +
+        (p.warum ? '<div class="mr-warum">' + esc(p.warum) + '</div>' : '') +
+        ((p.muster || []).length ? '<div class="mr-klein">' + esc(p.muster.join(" · ")) + '</div>' : '') +
+        '<div class="mr-klein">' + esc(fmtDate(p.datum)) + (p.hook_note ? ' · Hook ' + esc(p.hook_note) + '/10 · Bild ' + esc(p.bild_note) + '/10' : '') +
+        (p.link ? ' · <a href="' + esc(p.link) + '" target="_blank" rel="noopener">Zum Beitrag</a>' : '') + '</div>' +
+        '</div></div>';
+    });
+    return h + '</div>';
+  }
+
+  function radarUhrzeit(u) {
+    var h = '<h3>Uhrzeit (aus deinen eigenen Zahlen)</h3><p class="mr-klein">Ein Feld zählt erst ab 5 Beiträgen. ' +
+      'Massstab ist der Median der Reichweite. Die Posting-Zeiten im Cockpit ändern sich dadurch nicht von selbst.</p>';
+    Object.keys(u).forEach(function (typ) {
+      var w = u[typ];
+      var max = Math.max.apply(null, w.stunden.map(function (z) { return z.median; }).concat([1]));
+      h += '<h4>' + esc(typ) + ' · ' + esc(w.beitraege) + ' Beiträge · Median ' + esc(w.median) + '</h4><div class="mr-balken">';
+      w.stunden.forEach(function (z) {
+        h += '<div class="mr-b' + (z.genug ? "" : " mr-duenn") + '" title="' + esc(z.feld + ":00 · Median " + z.median + " · " + z.anzahl + " Beiträge") + '">' +
+          '<span style="height:' + Math.max(4, Math.round(70 * z.median / max)) + 'px"></span><em>' + esc(z.feld) + '</em></div>';
+      });
+      h += '</div>';
+      if (w.beste_stunde) {
+        h += '<p class="mr-klein">Stärkste Stunde ' + esc(w.beste_stunde.feld) + ':00 (Median ' + esc(w.beste_stunde.median) +
+          ', ' + esc(w.beste_stunde.anzahl) + ' Beiträge) · schwächste ' + esc(w.schwaechste_stunde.feld) + ':00 (Median ' +
+          esc(w.schwaechste_stunde.median) + ', ' + esc(w.schwaechste_stunde.anzahl) + ' Beiträge). Blasse Balken haben zu wenig Beiträge.</p>';
+      }
+      h += '<p class="mr-klein">' + w.tage.map(function (z) {
+        return esc(z.feld) + ' ' + esc(z.median) + (z.genug ? '' : ' (' + esc(z.anzahl) + ')');
+      }).join(" · ") + '</p>';
+    });
+    return h;
+  }
+
   /* Reiter „Ideen von anderen": was bei den beobachteten Profilen deutlich
      ueber deren eigenem Schnitt lag. Gebaut von ideen-extern-bauen.py.
      Siehe Kopf von patch-ideen-extern.py, warum der Reiter bewusst nicht
@@ -6405,7 +6587,7 @@
   var BEREICHE = [
     { id: "tisch", label: "Mein Tisch", tabs: ["uebersicht"] },
     { id: "instagram", label: "Instagram", saeule: "Instagram",
-      tabs: ["woche", "studio", "storys", "fertig", "gepostet", "markt"] },
+      tabs: ["woche", "studio", "storys", "fertig", "gepostet", "markt", "radar"] },
     { id: "produkte", label: "Produkte", saeule: "Produkte",
       tabs: ["katalog", "zusatzangebote", "produkte", "links", "launch", "funnel", "mailings", "leads", "kurse", "bibliothek", "gekauft"] },
     { id: "mamaceo", label: "Mama-CEO", saeule: "Mama-CEO",
@@ -15528,6 +15710,7 @@
     else if (activeTab === "woche") renderWoche(main);
     else if (activeTab === "ideenextern") renderIdeenExtern(main);
     else if (activeTab === "markt") renderZielgruppe(main);
+    else if (activeTab === "radar") renderMarktRadar(main);
     else if (activeTab === "bibliothek") renderBibliothek(main);
     else if (activeTab === "gekauft") renderGekauft(main);
     else if (activeTab === "oelwissen") renderOelwissen(main);
