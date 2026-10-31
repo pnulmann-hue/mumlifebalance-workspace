@@ -65,7 +65,15 @@ belegt**. Schritt 1 ist darum ein Test. Fällt er negativ aus, wird der Plan neu
 3. [ ] **Entscheidungspunkt.** Patricia bekommt das Ergebnis. Bei einem Nein geht es mit dem Rückfallweg weiter.
 
 **Teil B — Einplanen in der Cloud**
-4. [ ] `freigabe-zu-blotato.mjs` und `freigabe-nachruecken.py` sollen die Zugangsdaten zusätzlich aus Umgebungsvariablen lesen. Heute lesen sie sie nur aus `.env`-Dateien, die es in der Cloud nicht gibt. Im Code steht dabei kein Schlüssel.
+> **Stand 31.10.2026 abends:** Schritt 4 gebaut und lokal trocken geprüft. Blotato nimmt die Folien direkt als data:-URL an
+> (getestet, HTTP 201), WordPress fällt für Karussells weg. Neu `--proxy` (kein eigener Schlüssel), Zugänge auch aus der Umgebung,
+> fehlende Account-IDs holt das Skript über `/v2/users/me/accounts` (mentoring = `mumlifebalance_patricia_ulmann`, doterra = `patricia_ulmann`).
+> Auftrag der Routine: `reference/scheduled-task-einplanen-cloud.md` (Modus `probe` | `scharf`). Routine **„Cockpit: Freigaben einplanen (Cloud)“**
+> `trig_01JUA3VDVFqeD9Hm62uPbEyg`, Cron `0 7-21/2 * * *` (UTC, also 08–22 Uhr Winterzeit), **ausgeschaltet, Modus probe**.
+> 🚨 Die Cloud klont GitHub — das geänderte Skript wirkt dort erst nach einem Push. Sprechreels bleiben vorerst beim Laptop (Videos liegen nur lokal).
+> Offen: Push · ein Probelauf · dann Laptop-Task aus, Routine auf `scharf` und einschalten.
+
+4. [x] `freigabe-zu-blotato.mjs` und `freigabe-nachruecken.py` sollen die Zugangsdaten zusätzlich aus Umgebungsvariablen lesen. Heute lesen sie sie nur aus `.env`-Dateien, die es in der Cloud nicht gibt. Im Code steht dabei kein Schlüssel.
 5. [ ] Die Werte für Blotato, das WordPress-App-Passwort und Telegram als Geheimwerte der Cloud-Umgebung hinterlegen. Das macht Patricia selbst, nie im Chat.
    🚨 **Zwei Orte, nicht einer** (gesehen am 31.10. in den Einstellungen der Umgebung): **„Umgebungsvariablen“** sind für jede Person sichtbar, die die Umgebung nutzt, und laut Hinweis „keine Secrets“. **„Netzwerk-Secrets“** setzt ein Proxy je Adresse als Header ein, und Claude sieht den Wert nie. Deshalb:
    - Netzwerk-Secret: Blotato `blotato-api-key` (ohne Präfix) · ActiveCampaign `Api-Token` (ohne Präfix) · Instagram `Authorization` mit Präfix `Bearer` · WordPress `Authorization` mit Präfix `Basic` (Wert = base64 von `Benutzer:App-Passwort`)
