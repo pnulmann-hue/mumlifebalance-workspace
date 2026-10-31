@@ -48,6 +48,11 @@ belegt**. Schritt 1 ist darum ein Test. Fällt er negativ aus, wird der Plan neu
 > - ⚠️ **mumlifebalance.ch 403.** Vermutlich sperrt die Firewall der Webseite die Cloud aus, wie schon bei Puppeteer. Das ist wichtig, weil `freigabe-zu-blotato.mjs` die Folienbilder über WordPress hochlädt. Muss mit einem echten Aufruf der Schnittstelle (`/wp-json/`) geprüft werden. Ausweg falls gesperrt: Bilder direkt bei Blotato hochladen statt über WordPress.
 > - ❌ **Keine Zugangsvariablen angekommen.** Weder Blotato, Telegram, ActiveCampaign, Meta noch WordPress. Die Umgebungsvariablen müssen in der Umgebung gespeichert werden.
 > - Hinweis aus der Session-Ansicht: „Wöchentliches Nutzungslimit fast erreicht“. Cloud-Läufe zählen auf Patricias Abo. Ein Lauf alle zwei Stunden kostet also mit.
+>
+> **Dritter Test 31.10.2026, 17:2x (Lesetest mit Schlüsseln, Umgebung „Cockpit-Einplanen“):**
+> `WORDPRESS=403 BLOTATO=401 ACTIVECAMPAIGN=403 INSTAGRAM=400 TELEGRAM=kein Token CHAT_ID=nein`
+> - Ursache steht in den Einstellungen der Umgebung: **nur 1 Netzwerk-Secret gespeichert (mumlifebalance.ch)**, Umgebungsvariablen „Keine“. Blotato, ActiveCampaign, Instagram und Telegram fehlen also noch.
+> - ⚠️ **WordPress antwortet trotz Secret mit 403.** Ohne Anmeldung gäbe `/users/me` 401. Ein 403 passt zur Firewall der Webseite, die schon Puppeteer und den ersten Cloud-Test abgewiesen hat. Damit fällt der Bildweg über WordPress in der Cloud wohl weg. Ausweg: Folienbilder direkt bei Blotato hochladen (Schritt 4).
 
 1. [x] Eine Test-Routine in der Cloud anlegen. Sie liest nur `freigaben` aus dem Cockpit und meldet die Anzahl per Telegram. Schreiben und Einplanen gibt es dabei nicht.
 2. [~] Prüfen, was die Cloud-Umgebung kann (Repo ✅, Netz ❌, Geheimwerte offen): Repo aus GitHub (`main`), geheime Werte als Umgebungsvariablen, Netz zu Blotato, WordPress und Telegram.

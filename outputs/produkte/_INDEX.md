@@ -250,6 +250,10 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[01-kommunikation-aga-leitfaden]]
 - [[02-marktrecherche-salespage-vorrat]]
 
+### 📁 story-generator
+
+- [[00-befund]]
+
 ### 📁 storyideen-networkerinnen
 
 - [[willkommensmail]]
@@ -258,6 +262,8 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 ### 📁 tool-workshop
 
 - [[00-bauplan]]
+- [[00-befund-nischengenerator]]
+- [[00-befund]]
 - [[00-paket]]
 - [[01-aufbau]]
 - [[02-salespage]]

@@ -76,3 +76,14 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 - [[03-hooks-und-captions]]
 - [[README]]
 - [[_INDEX]]
+
+### 📁 radar
+
+- [[2026-10-30-dascha_stories]]
+- [[2026-10-30-die.erfolgstexterei]]
+- [[2026-10-30-die_fuehlbarmacherin]]
+- [[2026-10-30-juliamueller._]]
+- [[2026-10-30-katrinhill.onlinewachsen]]
+- [[2026-10-30-mumlifebalance_patricia_ulmann]]
+- [[2026-10-30-nikoleta.kolokytha]]
+- [[2026-10-30-reichweitenherz]]
