@@ -53,9 +53,15 @@ belegt**. Schritt 1 ist darum ein Test. Fällt er negativ aus, wird der Plan neu
 > `WORDPRESS=403 BLOTATO=401 ACTIVECAMPAIGN=403 INSTAGRAM=400 TELEGRAM=kein Token CHAT_ID=nein`
 > - Ursache steht in den Einstellungen der Umgebung: **nur 1 Netzwerk-Secret gespeichert (mumlifebalance.ch)**, Umgebungsvariablen „Keine“. Blotato, ActiveCampaign, Instagram und Telegram fehlen also noch.
 > - ⚠️ **WordPress antwortet trotz Secret mit 403.** Ohne Anmeldung gäbe `/users/me` 401. Ein 403 passt zur Firewall der Webseite, die schon Puppeteer und den ersten Cloud-Test abgewiesen hat. Damit fällt der Bildweg über WordPress in der Cloud wohl weg. Ausweg: Folienbilder direkt bei Blotato hochladen (Schritt 4).
+>
+> **Vierter Test 31.10.2026, nach dem Eintragen aller Secrets:**
+> `WORDPRESS=403 BLOTATO=200 ACTIVECAMPAIGN=200 INSTAGRAM=200 TELEGRAM=200 CHAT_ID=ja`
+> - ✅ **Blotato, ActiveCampaign, Instagram und Telegram funktionieren aus der Cloud.** Gespeichert: 4 Netzwerk-Secrets (Blotato `blotato-api-key`, ActiveCampaign `Api-Token`, Graph `Authorization: Bearer`, WordPress) und die Umgebungsvariablen `TELEGRAM_BOT_TOKEN` (Cockpit-Bot) + `TELEGRAM_CHAT_ID`.
+> - ❌ **WordPress bleibt bei 403** → die Firewall von mumlifebalance.ch sperrt die Cloud. Folge für Schritt 4: in der Cloud die Bilder direkt bei Blotato hochladen statt über WordPress.
+> - ➜ Teil A ist damit abgeschlossen. Nächster Schritt ist der Entscheidungspunkt (Schritt 3), danach Teil B.
 
 1. [x] Eine Test-Routine in der Cloud anlegen. Sie liest nur `freigaben` aus dem Cockpit und meldet die Anzahl per Telegram. Schreiben und Einplanen gibt es dabei nicht.
-2. [~] Prüfen, was die Cloud-Umgebung kann (Repo ✅, Netz ❌, Geheimwerte offen): Repo aus GitHub (`main`), geheime Werte als Umgebungsvariablen, Netz zu Blotato, WordPress und Telegram.
+2. [x] Prüfen, was die Cloud-Umgebung kann (Repo ✅, Datenbank ✅, Blotato/AC/Instagram/Telegram ✅, WordPress ❌ Firewall): Repo aus GitHub (`main`), geheime Werte als Umgebungsvariablen, Netz zu Blotato, WordPress und Telegram.
 3. [ ] **Entscheidungspunkt.** Patricia bekommt das Ergebnis. Bei einem Nein geht es mit dem Rückfallweg weiter.
 
 **Teil B — Einplanen in der Cloud**
