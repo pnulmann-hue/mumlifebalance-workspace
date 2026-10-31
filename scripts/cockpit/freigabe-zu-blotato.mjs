@@ -5,13 +5,16 @@
  * Claude liest die Freigabe aus der Cockpit-Datenbank in einen Ordner und
  * ruft dann dieses Skript auf. Es macht den Rest:
  *
- *   1. Bilder aus den abgelegten JSON-Dateien zurueck in JPEGs
- *   2. JPEGs zu WordPress hochladen  (nicht ins oeffentliche Repo)
- *   3. Blotato /v2/media  -> Blotato holt sie auf sein CDN
- *   4. Blotato /v2/posts  -> Beitrag zum gewuenschten Zeitpunkt eingeplant
+ *   1. Bilder aus den abgelegten JSON-Dateien zurueck in JPEGs (Ablage zum Nachsehen)
+ *   2. Blotato /v2/media  -> nimmt die data:-URL direkt, legt sie auf sein CDN
+ *      (nur das Reel-Video geht noch ueber WordPress)
+ *   3. Blotato /v2/posts  -> Beitrag zum gewuenschten Zeitpunkt eingeplant
  *
  * Aufruf:
- *   node scripts/cockpit/freigabe-zu-blotato.mjs --ordner <pfad> [--trocken]
+ *   node scripts/cockpit/freigabe-zu-blotato.mjs --ordner <pfad> [--trocken] [--proxy]
+ *
+ * --proxy  Cloud-Lauf: kein eigener Blotato-Schluessel, den setzt der Proxy der
+ *          Umgebung ein. Account-IDs kommen dann aus den Umgebungsvariablen.
  *
  * Erwartet im Ordner:
  *   freigaben/<id>.json                 die Freigabe (caption, datum, zeit, profil)
@@ -28,6 +31,8 @@ const ROOT = path.resolve(__dirname, '..', '..');
 
 const BLOTATO_BASE = 'https://backend.blotato.com';
 const WP_BASE = 'https://mumlifebalance.ch/wp-json/wp/v2';
+// Instagram-Namen je Profil, falls die Blotato-IDs nicht in der Umgebung stehen
+const INSTAGRAM_KONTO = { mentoring: 'mumlifebalance_patricia_ulmann', doterra: 'patricia_ulmann' };
 
 /* ------------------------------------------------------------------ Helfer */
 
@@ -132,10 +137,21 @@ async function wpHochladen(buffer, dateiname, typ, wpEnv) {
 
 /* ---------------------------------------------------------------- Blotato */
 
+/**
+ * Kopf fuer Blotato. In der Cloud (--proxy) setzt ein Proxy den Schluessel
+ * selbst ein; dann schicken wir keinen eigenen mit.
+ */
+function blotatoKopf(key) {
+  const kopf = { 'Content-Type': 'application/json' };
+  if (key) kopf['blotato-api-key'] = key;
+  return kopf;
+}
+
+/** url darf eine oeffentliche Adresse oder eine data:-URL sein (getestet 31.10.2026). */
 async function blotatoMedia(url, key) {
   const res = await fetch(`${BLOTATO_BASE}/v2/media`, {
     method: 'POST',
-    headers: { 'blotato-api-key': key, 'Content-Type': 'application/json' },
+    headers: blotatoKopf(key),
     body: JSON.stringify({ url }),
   });
   const text = await res.text();
@@ -155,7 +171,7 @@ async function blotatoPlanen({ accountId, text, mediaUrls, zeitpunkt, key, cover
   }
   const res = await fetch(`${BLOTATO_BASE}/v2/posts`, {
     method: 'POST',
-    headers: { 'blotato-api-key': key, 'Content-Type': 'application/json' },
+    headers: blotatoKopf(key),
     body: JSON.stringify({
       post: {
         accountId,
@@ -180,14 +196,17 @@ async function main() {
   };
   const ordner = holen('--ordner');
   const trocken = args.includes('--trocken');
+  // --proxy: Cloud-Lauf. Der Blotato-Schluessel kommt dort vom Proxy, nicht aus einer .env.
+  const proxy = args.includes('--proxy');
   if (!ordner) {
     console.error('Bitte --ordner <pfad> angeben (dort liegen die Freigabe-JSONs).');
     process.exit(1);
   }
 
-  const haupt = await envLesen(path.join(ROOT, '.env'));
-  const wpEnv = await envLesen(path.join(ROOT, 'scripts', 'wordpress', '.env'));
-  const key = haupt.BLOTATO_API_KEY;
+  // Erst die Umgebung, dann die .env-Dateien (in der Cloud gibt es keine .env)
+  const haupt = { ...(await envLesen(path.join(ROOT, '.env'))), ...process.env };
+  const wpEnv = { ...(await envLesen(path.join(ROOT, 'scripts', 'wordpress', '.env'))), ...process.env };
+  const key = proxy ? null : haupt.BLOTATO_API_KEY;
   const konten = {
     mentoring: haupt.BLOTATO_ACCOUNT_ID_MENTORING,
     doterra: haupt.BLOTATO_ACCOUNT_ID_DOTERRA,
@@ -221,10 +240,20 @@ async function main() {
     }
   }
 
+  // Fehlen die IDs (Cloud ohne .env), fragt das Skript Blotato nach den Konten.
+  if (!konten.mentoring || !konten.doterra) {
+    const res = await fetch(`${BLOTATO_BASE}/v2/users/me/accounts`, { headers: blotatoKopf(key) });
+    if (!res.ok) throw new Error(`Blotato-Konten nicht lesbar (HTTP ${res.status}).`);
+    const liste = (await res.json()).items || [];
+    const nachName = (n) => liste.find(a => a.platform === 'instagram' && a.username === n)?.id;
+    konten.mentoring ||= nachName(INSTAGRAM_KONTO.mentoring);
+    konten.doterra ||= nachName(INSTAGRAM_KONTO.doterra);
+  }
   const accountId = konten[steuer.profil === 'doterra' ? 'doterra' : 'mentoring'];
   if (!accountId) throw new Error('Keine Blotato-Account-ID für dieses Profil in der .env.');
-  if (!key) throw new Error('BLOTATO_API_KEY fehlt in der .env.');
-  if (!trocken && (!wpEnv.WP_USER || !wpEnv.WP_APP_PASSWORD)) {
+  if (!key && !proxy) throw new Error('BLOTATO_API_KEY fehlt in der .env.');
+  // WordPress braucht nur noch das Reel-Video; Folien und Cover gehen direkt zu Blotato.
+  if (!trocken && istReel && (!wpEnv.WP_USER || !wpEnv.WP_APP_PASSWORD)) {
     throw new Error('WordPress-Zugang fehlt (scripts/wordpress/.env: WP_USER, WP_APP_PASSWORD).');
   }
 
@@ -267,8 +296,7 @@ async function main() {
       log(`  Cover: ${coverName} (${(buffer.length / 1024).toFixed(0)} KB)`);
       if (coverMb > 8) throw new Error('Das Cover ist über 8 MB — Instagram nimmt es so nicht.');
       if (!trocken) {
-        const wpCover = await wpHochladen(buffer, coverName, typ, wpEnv);
-        coverUrl = await blotatoMedia(wpCover, key);
+        coverUrl = await blotatoMedia(bilder[0].dataUrl, key);
         log(`    Cover hochgeladen -> ${coverUrl.slice(0, 70)}…`);
       } else {
         coverUrl = `(trocken) ${coverName}`;
@@ -298,8 +326,7 @@ async function main() {
 
     if (trocken) { mediaUrls.push(`(trocken) ${dateiname}`); continue; }
 
-    const wpUrl = await wpHochladen(buffer, dateiname, typ, wpEnv);
-    const hosted = await blotatoMedia(wpUrl, key);
+    const hosted = await blotatoMedia(bilder[i].dataUrl, key);
     mediaUrls.push(hosted);
     log(`    hochgeladen -> ${hosted.slice(0, 70)}…`);
   }
