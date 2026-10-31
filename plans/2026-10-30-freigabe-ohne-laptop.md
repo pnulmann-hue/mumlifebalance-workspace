@@ -89,7 +89,10 @@ belegt**. Schritt 1 ist darum ein Test. Fällt er negativ aus, wird der Plan neu
    - Folge für Schritt 4: Die Skripte dürfen in der Cloud **keinen** eigenen Schlüssel mitschicken, wenn der Proxy ihn einsetzt.
 6. [ ] Der Auftrag der Routine ist der Auftrag des heutigen 20:00-Tasks. Er wird nicht neu geschrieben, sondern übernommen: Freigaben auf `wartet` lesen, nachrücken, erst trocken, dann einplanen, `freigaben` zurückschreiben, Telegram melden.
 7. [ ] Den Takt festlegen, zum Beispiel alle zwei Stunden von 08:00 bis 22:00. Damit verfällt auch kein Zeitpunkt mehr, weil man um zehn freigegeben hat.
-8. [ ] Den Laptop-Task `freigaben-einplanen-2000` abschalten, **erst nachdem** die Cloud-Routine zweimal sauber gelaufen ist. Laufen beide gleichzeitig, wird doppelt gepostet.
+> **31.10.2026, 18:31:** Patricias Ja → Laptop-Task aus, Routine auf `scharf` und eingeschaltet, erster Lauf 20:00.
+> Abweichung vom Plan: nicht nach zwei scharfen Läufen umgestellt, sondern nach zwei Probeläufen, damit nie beide gleichzeitig laufen.
+
+8. [x] Den Laptop-Task `freigaben-einplanen-2000` abschalten, **erst nachdem** die Cloud-Routine zweimal sauber gelaufen ist. Laufen beide gleichzeitig, wird doppelt gepostet.
 
 **Teil C — der Telegram-Rückkanal**
 9. [ ] Einen kleinen Dienst auf Vercel bauen, der Telegram-Nachrichten annimmt und in eine Warteschlange legt. Dafür reicht eine einzige Tabelle in der Supabase, die es für den Kochbot schon gibt. Der Dienst selbst plant nichts ein und kommt nicht an das Cockpit.
