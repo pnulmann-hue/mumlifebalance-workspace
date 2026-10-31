@@ -49,7 +49,8 @@ python3 scripts/cockpit/freigabe-nachruecken.py --ordner outputs/cockpit/freigab
 ```
 Je `aktion`: `unveraendert` → weiter · `nachgerueckt` → weiter, später Datum mit zurückschreiben ·
 `gepostet` → nicht einplanen, Status `gepostet-von-hand` · `kein-platz`/`fehler` → überspringen und melden.
-Im Modus `probe` das Skript mit `--trocken` aufrufen.
+Auch im Modus `probe` **ohne** `--trocken`: das Skript schreibt nur die lokale Kopie, und Schritt 3 braucht den
+nachgerückten Zeitpunkt (sonst meldet er „Zeitpunkt vorbei“). Freigaben nacheinander, damit zwei nicht auf denselben Tag rücken.
 Der Instagram-Abzug zum Vergleichen ist der neueste in `outputs/instagram-insights/` aus dem Repo (Stand: letzter Push).
 
 ## Schritt 3 — Trocken prüfen
@@ -72,10 +73,11 @@ bei Nachrücken zusätzlich `datum`, `zeit`, `zeitpunktISO`, `nachgerueckt: {von
 
 ## Schritt 6 — Telegram
 
-Text in eine Datei schreiben, dann:
+Text in eine Datei schreiben, dann (GET, POST wurde am 31.10. mit 403 abgewiesen):
 ```
-curl -s -o /dev/null -w '%{http_code}' -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" --data-urlencode "chat_id=$TELEGRAM_CHAT_ID" --data-urlencode "text@/tmp/meldung.txt"
+curl -s -G "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" --data-urlencode "chat_id=$TELEGRAM_CHAT_ID" --data-urlencode "text@/tmp/meldung.txt" | head -c 300
 ```
+Die Antwort zeigt `"ok":true` oder die Fehlerbeschreibung von Telegram. Sie enthält keinen Schlüssel, darf also im Bericht stehen.
 Format:
 ```
 ☁️ Einplanen (Cloud) — eingeplant

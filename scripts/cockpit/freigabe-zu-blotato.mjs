@@ -147,9 +147,30 @@ function blotatoKopf(key) {
   return kopf;
 }
 
+/**
+ * Im Proxy-Modus geht jeder Aufruf ueber curl: Nodes fetch ignoriert HTTPS_PROXY,
+ * ging in der Cloud am Proxy vorbei und bekam deshalb 401 (Probelauf 31.10.2026).
+ * Gibt dasselbe zurueck, was hier von fetch gebraucht wird: ok, status, text().
+ */
+let ueberCurl = false;
+async function abruf(url, { method = 'GET', headers = {}, body } = {}) {
+  if (!ueberCurl) return fetch(url, { method, headers, body });
+  const { spawnSync } = await import('node:child_process');
+  const args = ['-s', '-X', method, '-w', '\n%{http_code}'];
+  for (const [k, v] of Object.entries(headers)) args.push('-H', `${k}: ${v}`);
+  if (body !== undefined) args.push('--data-binary', '@-');
+  args.push(url);
+  const r = spawnSync('curl', args, { input: body, maxBuffer: 64 * 1024 * 1024, encoding: 'utf8' });
+  if (r.status !== 0) throw new Error(`curl fehlgeschlagen: ${(r.stderr || '').slice(0, 200)}`);
+  const i = r.stdout.lastIndexOf('\n');
+  const status = Number(r.stdout.slice(i + 1));
+  const text = r.stdout.slice(0, i);
+  return { ok: status >= 200 && status < 300, status, text: async () => text, json: async () => JSON.parse(text) };
+}
+
 /** url darf eine oeffentliche Adresse oder eine data:-URL sein (getestet 31.10.2026). */
 async function blotatoMedia(url, key) {
-  const res = await fetch(`${BLOTATO_BASE}/v2/media`, {
+  const res = await abruf(`${BLOTATO_BASE}/v2/media`, {
     method: 'POST',
     headers: blotatoKopf(key),
     body: JSON.stringify({ url }),
@@ -169,7 +190,7 @@ async function blotatoPlanen({ accountId, text, mediaUrls, zeitpunkt, key, cover
     target.mediaType = 'reel';
     target.coverImageUrl = coverUrl;
   }
-  const res = await fetch(`${BLOTATO_BASE}/v2/posts`, {
+  const res = await abruf(`${BLOTATO_BASE}/v2/posts`, {
     method: 'POST',
     headers: blotatoKopf(key),
     body: JSON.stringify({
@@ -198,6 +219,7 @@ async function main() {
   const trocken = args.includes('--trocken');
   // --proxy: Cloud-Lauf. Der Blotato-Schluessel kommt dort vom Proxy, nicht aus einer .env.
   const proxy = args.includes('--proxy');
+  ueberCurl = proxy;
   if (!ordner) {
     console.error('Bitte --ordner <pfad> angeben (dort liegen die Freigabe-JSONs).');
     process.exit(1);
@@ -242,7 +264,7 @@ async function main() {
 
   // Fehlen die IDs (Cloud ohne .env), fragt das Skript Blotato nach den Konten.
   if (!konten.mentoring || !konten.doterra) {
-    const res = await fetch(`${BLOTATO_BASE}/v2/users/me/accounts`, { headers: blotatoKopf(key) });
+    const res = await abruf(`${BLOTATO_BASE}/v2/users/me/accounts`, { headers: blotatoKopf(key) });
     if (!res.ok) throw new Error(`Blotato-Konten nicht lesbar (HTTP ${res.status}).`);
     const liste = (await res.json()).items || [];
     const nachName = (n) => liste.find(a => a.platform === 'instagram' && a.username === n)?.id;
