@@ -2,120 +2,108 @@
 tags: [content, reels]
 ---
 
-# Radar-Reels (Ideenliste im Cockpit, radar-m-01 bis 09)
+# Radar-Reels, Fassung 2 (31.10.2026)
 
-## Radar 01 · Freundinnen anschreiben (LEAD · NISCHE)
+Durch /copywriting (Story Lead, Stufe 2, PAS) und den Garten: je Beitrag eine Rolle, eine Mikro-Szene, die Lösung erst in der Caption, genau ein Aufruf. 02 und 07 gestrichen (nicht belegt).
 
-**Hook:** Ich habe nie verstanden, warum man fürs Network jede Woche Freundinnen anschreiben soll.
+## Radar 01 · Kaltakquise (Aufmerksamkeit · Einordnung)
 
-„Schreib doch mal deine Freundinnen an, die freuen sich bestimmt.“
+**Hook:** Bis heute landen ständig Kaltakquise-Nachrichten bei mir, und mich schauderts bei jeder einzelnen.
 
-Diesen Rat hast du wahrscheinlich auch schon bekommen. Und vielleicht hast du danach eine Nachricht angefangen und sie wieder gelöscht, weil es sich einfach falsch angefühlt hat.
+*Rolle: Aufmerksamkeit · Aufruf: Einordnung · gibt ihr mit: Inspiration: Es gibt einen Weg ohne solche Nachrichten.*
 
-Wenn dein ganzes Business davon abhängt, dass du Leute aus deinem Umfeld ansprichst, wird irgendwann jede Einladung zum Kaffee zu einem Verkaufsgespräch. Das liegt am Weg und hat mit dir wenig zu tun.
+Ein Kompliment zum Profil, und zwei Sätze später kommt die «spannende Möglichkeit». Ich blockiere diese Nachrichten inzwischen, ohne sie fertig zu lesen.
 
-Geholfen hat mir ein eigenes Thema, mit dem die Leute von selbst zu mir kommen. Dafür habe ich einen Nischengenerator gebaut, der dir in ein paar Minuten drei Themen vorschlägt, die zu dir und deinem Produkt passen.
+Das Absurde daran: Genau so wurde es mir im Network beigebracht, und genau so wird es heute noch beigebracht. Ich weiss also, warum die Frau hinter der Nachricht das macht. Man hat ihr gesagt, dass es ohne nicht geht, und vermutlich fühlt sie sich beim Tippen genauso unwohl wie ich beim Lesen.
 
-Kommentier NISCHE, dann schick ich dir den Link.
+Seit 2023 baue ich mein Business so auf, dass die Leute zu mir kommen, weil sie bei mir etwas gesehen haben, das ihnen weitergeholfen hat. Das dauert länger als hundert Nachrichten, und dafür muss ich mich danach bei niemandem entschuldigen.
 
-## Radar 02 · Freiheit (LEAD · NISCHE)
+Wenn du dich hier wiedererkennst, bleib hier. Genau darum geht es auf diesem Profil.
 
-**Hook:** Jeden Monat neue Leute ins Team holen müssen hätte ich nie Freiheit genannt.
-
-Wie viele Leute musst du diesen Monat noch ins Team holen, damit es sich lohnt?
-
-Wenn du diese Rechnung kennst, kennst du auch das Gefühl dahinter. Versprochen war dir Freiheit, und jetzt fängt jeder Monat wieder bei null an.
-
-Ich wollte ein Business, das neben vier Kindern trägt, auch in einem Monat, in dem ich niemanden neu gewinne. Dafür brauchte ich etwas Eigenes, das die Leute auf mich aufmerksam macht, bevor ich überhaupt vom Produkt rede.
-
-Der erste Schritt dahin ist dein Thema. Mein Nischengenerator schlägt dir kostenlos drei vor, die zu dir und deinem Network passen.
-
-Kommentier NISCHE, dann schick ich dir den Link.
-
-## Radar 03 · Mehr Leute ansprechen (REICHWEITE · Teilen)
+## Radar 03 · Mehr Leute ansprechen (Vertrauen · NISCHE)
 
 **Hook:** „Du musst einfach mehr Leute ansprechen.“ Diesen Satz habe ich im Network jahrelang geglaubt.
 
-Mehr ansprechen, mehr posten, mehr dranbleiben.
+*Rolle: Vertrauen · Aufruf: NISCHE · gibt ihr mit: Tipp: Die erste Frage ist das Thema, dann erst das Produkt.*
 
-Wenn es im Network nicht läuft, heisst die Antwort fast immer: mehr. Ich habe das lange so gemacht und dabei vor allem gelernt, dass sich mehr vom Gleichen irgendwann anfühlt wie ein zweiter Job.
+Von 2018 bis 2021 habe ich genau das gemacht. Wenn ein Monat schlecht lief, habe ich mehr angesprochen und mehr gepostet, weil ich keine andere Antwort kannte.
 
-Verändert hat sich bei mir die Reihenfolge. Zuerst kam ein Thema, bei dem die Leute an mich denken, dann ein kleines eigenes Angebot, das ihnen sofort hilft, und erst danach das Produkt.
+Und jeden Monat fing es wieder von vorne an, weil niemand wusste, wofür ich eigentlich stehe, ausser für die Produkte meiner Firma.
 
-Schick das einer Freundin, die gerade wieder hört, sie müsse einfach mehr Leute ansprechen.
+2021 habe ich aufgehört. Als ich 2023 neu angefangen habe, war meine erste Frage eine andere: Worüber will ich reden, damit die richtigen Leute mich von selbst finden?
 
-## Radar 04 · Profil wie ein Katalog (LEAD · NISCHE)
-
-**Hook:** Drei Jahre sah mein Profil aus wie ein Katalog. Gekauft hat kaum jemand.
-
-Drei Jahre lang habe ich auf meinem Profil vor allem gezeigt, was ich verkaufe.
-
-Man sah meine Produkte, aber nicht, wer ich bin und wobei ich helfen kann. Wer vorbeikam, hatte keinen Grund zu bleiben, und das habe ich an den Bestellungen gemerkt.
-
-Heute steht bei mir zuerst ein Thema, und das Produkt kommt erst, wenn jemand schon weiss, dass ich ihr bei etwas helfen kann.
-
-Wenn du gerade merkst, dass dein Profil auch eher ein Katalog ist: Mit meinem Nischengenerator findest du in ein paar Minuten drei Themen, die zu dir passen.
+Wenn du gerade an genau dieser Frage hängst, habe ich dir etwas gebaut. Der Nischengenerator stellt dir ein paar Fragen und schlägt dir drei Themen vor, die zu dir und deinem Produkt passen.
 
 Kommentier NISCHE, dann schick ich dir den Link.
 
-## Radar 05 · 500 Franken weggeworfen (REICHWEITE · Teilen)
+## Radar 04 · Katalog-Profil (Vertrauen · NISCHE)
 
-**Hook:** Warum ich Network-Produkte für über 500 Franken weggeworfen habe und keine einzige vermisse.
+**Hook:** Drei Jahre Katalog-Profil, und jeden Monat musste ich mich neu um Verkäufe bemühen.
 
-Wie lange stehen bei dir schon Produkte im Schrank, die du eigentlich nur gekauft hast, um auf deine Punkte zu kommen?
+*Rolle: Vertrauen · Aufruf: NISCHE · gibt ihr mit: Tipp: der Neun-Beiträge-Test.*
 
-Bei mir waren es so viele, dass ich irgendwann alles in Säcke gepackt habe, Produkte für über 500 Franken. Das tat weh, und noch mehr tat weh, wie lange ich mir eingeredet hatte, das gehöre halt dazu.
+Weisst du, was jemand sieht, der zum ersten Mal auf dein Profil kommt?
 
-Seitdem hängt mein Business nicht mehr an meiner eigenen Bestellung.
+Bei mir waren es damals Produktbilder, Aktionen und das, was die Firma gerade geschickt hat. Verkauft habe ich trotzdem, das will ich gar nicht kleinreden. Nur musste ich jeden Monat wieder von vorne anfangen, weil niemand einen Grund hatte, von sich aus wiederzukommen.
 
-Schick das der Freundin, bei der auch so ein Schrank steht.
+Ganz ohne Bemühen geht es auch heute nicht, das wäre gelogen. Der Unterschied ist, dass ich jetzt an etwas baue, das bleibt: ein Thema, für das man mich kennt.
 
-## Radar 06 · Rollläden im Büro (REICHWEITE · Teilen)
+Mach mal den Test: Scroll durch deine letzten neun Beiträge und zähl, in wie vielen dein Produkt die Hauptrolle spielt. Wenn es mehr als drei sind, fehlt dir vermutlich dein Thema, und das findest du mit meinem Nischengenerator in ein paar Minuten.
 
-**Hook:** Früher Rollläden zu im stickigen Büro, damit ich um acht nicht klatschnass war.
+Kommentier NISCHE, dann schick ich dir den Link.
 
-Heute mache ich den Sonnenschirm auf, wenn es mir zu warm wird.
+## Radar 05 · 500 Franken weggeworfen (Aufmerksamkeit · Einordnung)
 
-Für mich ist das der grösste Unterschied zu früher. Damals hat mein Tag nach den Bürozeiten funktioniert, und die Kinder, der Haushalt und mein Network mussten in die Lücken passen.
+**Hook:** Network-Produkte für über 500 Franken weggeworfen. Gekauft hatte ich sie nur für die Provision.
 
-Heute baue ich mein Business um unsere Familie herum. An manchen Tagen ist das eine Stunde am Morgen, an anderen gar nichts.
+*Rolle: Aufmerksamkeit · Aufruf: Einordnung · gibt ihr mit: Inspiration: Dein Einkommen muss nicht an deinem eigenen Lager hängen.*
 
-Schick das einer Mama, die gerade im Büro sitzt und davon träumt.
+In meinem ersten Network gab es etwas mehr Provision, wenn ich selbst eine bestimmte Menge eingekauft habe. Also habe ich eingekauft, Monat für Monat, und mein Lager ist gewachsen.
 
-## Radar 07 · Mama, warum lachst du nie (REICHWEITE · Teilen)
+Irgendwann war klar, dass ich mit den Bädern und Cremes bis zur Pension ausgekommen wäre. Den grössten Teil habe ich verschenkt, und den Rest, über 500 Franken, habe ich weggeworfen. Das hat weh getan, und ehrlich gesagt mehr wegen der Jahre als wegen des Geldes.
 
-**Hook:** „Mama, warum lachst du eigentlich nie?“ Das hat mich mein Kind wirklich gefragt.
+Wenn bei dir auch so ein Schrank steht und du dich hier wiedererkennst, bleib hier. Auf diesem Profil geht es darum, wie du neben deinem Network etwas Eigenes aufbaust, für das du kein Lager brauchst.
 
-Es war eine ganz einfache Frage, ohne Vorwurf, so wie Kinder eben fragen.
+## Radar 06 · Rollläden im Büro (Vertrauen · Teilen)
 
-Und trotzdem ist sie mir lange nachgegangen, weil sie stimmte. Ich war so damit beschäftigt, alles zusammenzuhalten, dass fürs Lachen kein Platz mehr war.
+**Hook:** Um acht im Büro die Rollläden runter, damit ich nicht schon klatschnass war.
 
-Bei uns wird heute wieder mehr gelacht. Geholfen hat mir, dass ich aufgehört habe, alles allein tragen zu wollen.
+*Rolle: Vertrauen · Aufruf: Teilen · gibt ihr mit: Warum mit mir / möglich: echte Daten, wie lange der Weg gedauert hat.*
 
-Schick das einer Mama, die das heute auch lesen sollte.
+Das war mein Teilzeitjob, bis ich ihn vor zwei Jahren gekündigt habe, als Mama von vier Kindern.
 
-## Radar 08 · Elternabend (LEAD · NISCHE)
+Heute klappe ich um halb zwölf den Laptop zu, und dann gehört der Tag den Kindern. Wenn es mir zu warm wird, setze ich mich unter den Sonnenschirm, und an manchen Tagen arbeite ich gar nicht.
+
+Ich will dir dabei nichts schönreden: Selbständig bin ich seit 2023, und regelmässig Einkommen gibt es seit Mai 2025. Dazwischen lagen viele Monate, in denen ich nicht wusste, ob es reicht.
+
+Schick das einer Mama, die heute Morgen auch wieder die Rollläden runtergelassen hat.
+
+## Radar 08 · Elternabend (Beziehung · NISCHE)
 
 **Hook:** Wenn du beim Elternabend überlegst, ob du die Mama neben dir aufs Business ansprichst.
 
-Sitzt du auch manchmal neben jemandem und übst im Kopf schon den Satz, mit dem du dein Business erwähnen könntest?
+*Rolle: Beziehung · Aufruf: NISCHE · gibt ihr mit: Tipp: der «Ich helfe»-Satz ohne Produktname.*
 
-Und dann sagst du doch nichts, weil du nicht die sein willst, die jeden Elternabend für ihr Network nutzt. Was dir in dem Moment fehlt, ist ein Thema, über das man ganz normal reden kann, ohne dass es nach Verkaufen klingt.
+Übst du dann im Kopf schon den ersten Satz und sagst am Ende doch nichts?
 
-Wenn die Leute wissen, wobei du hilfst, fragen sie irgendwann selbst nach.
+Dein Bauchgefühl hat da ziemlich recht. Ein Elternabend ist kein Verkaufsgespräch, und die Mama neben dir hat keine Lust auf eins.
 
-Mein Nischengenerator schlägt dir drei solche Themen vor, passend zu dir und deinem Produkt.
+Was dir in so einem Moment hilft, ist ein Satz, über den man ganz normal reden kann. Wenn du sagst «Ich helfe Mamas, die morgens nicht in die Gänge kommen», fragt die andere von selbst nach, und du musst gar nichts verkaufen.
+
+Probier es aus und schreib deinen Satz so, dass er mit «Ich helfe» anfängt und kein Produktname darin vorkommt. Wenn er dir nicht einfallen will, macht das mein Nischengenerator mit dir: drei Themen, jedes mit so einem Satz.
 
 Kommentier NISCHE, dann schick ich dir den Link.
 
-## Radar 09 · Autopilot (nochmal bringen) (REICHWEITE · Teilen)
+## Radar 09 · Autopilot (nochmal bringen) (Beziehung · Frage)
 
 **Hook:** Ich war so auf Autopilot, dass mein Auto mit meinen vier Kindern losfuhr.
 
-Passiert ist zum Glück nichts.
+*Rolle: Beziehung · Aufruf: Frage · gibt ihr mit: Inspiration: Aussortieren fängt mit einem einzigen Punkt an.*
 
-Aber dieser Moment hat mir gezeigt, wie voll mein Kopf damals war. Job, Kinder, Haushalt und Network liefen irgendwie, und ich selbst war gar nicht mehr richtig dabei.
+Ich hatte vergessen, es richtig abzustellen, und plötzlich rollte es los, ohne mich und mit allen vier Kindern drin. Passiert ist zum Glück nichts.
 
-Danach habe ich angefangen auszusortieren, was ich wirklich tragen will. Das war der Anfang von dem, was ich heute mache.
+Den Moment vergesse ich nie, weil er mir gezeigt hat, wie voll mein Kopf war. Ich habe funktioniert, und zwar so gut, dass ich selbst nicht mehr gemerkt habe, was ich tue.
 
-Schick das einer Mama, die gerade auch nur noch funktioniert.
+Danach habe ich angefangen auszusortieren, was wirklich an mir hängen muss und was nicht. Angefangen hat das mit einem einzigen Punkt, den ich gestrichen habe.
+
+Was wäre der erste Punkt, den du von deiner Liste streichen würdest, wenn du dürftest? Ein Wort reicht.

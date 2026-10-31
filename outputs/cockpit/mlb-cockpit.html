@@ -2201,6 +2201,34 @@
   .mr-b span { display: block; width: 14px; background: var(--teal); border-radius: 3px 3px 0 0; }
   .mr-b.mr-duenn span { opacity: 0.3; }
   .mr-b em { font-style: normal; font-size: 10px; color: var(--ink-soft); }
+  /* ---------- Reiter „Testreels“ (31.10.2026, patch-testreels.py) ---------- */
+  .tr-neu { margin-bottom: 22px; display: flex; flex-direction: column; gap: 10px; }
+  .tr-neu .field span { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+  .tr-neu select, .tr-neu textarea { width: 100%; }
+  .tr-neufuss { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .tr-neufuss .btn { margin-left: auto; }
+  .tr-warn { color: var(--warn); }
+  .tr-gtitel { font-family: var(--display); font-weight: normal; font-size: 19px; margin: 22px 0 2px; }
+  .tr-zahl { font-family: var(--body); font-size: 12px; background: var(--surface-2); color: var(--ink-soft);
+             border-radius: 999px; padding: 1px 9px; vertical-align: middle; }
+  .tr-gsatz { margin: 0 0 10px; }
+  .tr-liste { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+  .tr-karte { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--teal);
+              border-radius: var(--r); padding: 13px 15px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  .tr-vergleich .tr-karte { margin-top: 10px; border-left-color: var(--line-strong); }
+  .tr-vergleich .tr-karte.tr-vorne { border-left-color: var(--good); }
+  .tr-kname { font-size: 12px; color: var(--ink-soft); }
+  .tr-hook { font-family: var(--display); font-size: 17px; line-height: 1.3; overflow-wrap: break-word; }
+  .tr-knoepfe, .tr-fuss { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .tr-knoepfe .btn, .tr-fuss .btn { font-size: 12px; padding: 6px 10px; }
+  .tr-zahlen { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .tr-zahlen .tr-notiz { grid-column: 1 / -1; }
+  .tr-zahlen .field span { font-size: 11px; color: var(--ink-soft); }
+  .tr-zahlen input { width: 100%; }
+  .tr-ergebnis { font-size: 13px; }
+  .tr-ergebnis b { font-variant-numeric: tabular-nums; }
+  .tr-vkopf { font-size: 13px; }
+  .tr-vhook { color: var(--ink-soft); margin-top: 3px; }
 </style>
 
 <div class="shell">
@@ -3047,6 +3075,7 @@
     { id: "gepostet", label: "Ausgewertet" },
     { id: "markt", label: "Zielgruppe & Markt" },
     { id: "radar", label: "Markt-Radar" },
+    { id: "testreels", label: "Testreels" },
     { g: "Planung" },
     { id: "launches", label: "Jahresplan" },
     { id: "monatsbogen", label: "Monatsbogen" },
@@ -6077,6 +6106,251 @@
     return h;
   }
 
+  /* ======================================================================
+     Reiter "Testreels" — Instagram -> Testreels
+     (seit 31.10.2026, patch-testreels.py)
+
+     Patricia: „kannst du mir im cockpit was einbauen, dass ich die
+     testreelvarianten direkt darin finde?“ Ein Testreel zeigt Instagram nur
+     Leuten, die ihr noch nicht folgen. Damit wird ein Hook geprueft, bevor er
+     in den Feed kommt — zwei Hooks, gleiche Szene, gleiche Uhrzeit. Ohne
+     diesen Vergleich deuten wir einzelne Ausreisser: dasselbe Reel lief
+     einmal mit 1'948 und einmal mit 277 erreichten Konten.
+
+     Ein Testreel ist ein normales Reel (Sammlung "reels") mit
+       trial: true · testVon: <Kennung des Feed-Reels> · testStand: offen |
+       gepostet | ausgewertet · testGepostetAm · testReichweite ·
+       testKommentare · testNotiz · testGewinner
+     🚨 Diese Felder stehen auch in der festen Feldliste von saveReel und
+     beim Lesen — sonst waeren sie nach dem naechsten Speichern weg.
+     Alte Testreels (KW42) tragen nur „trial“ in der Kennung oder
+     „TRIAL REEL“ im Hinweis; die werden ueber istTestreel() mitgefunden.
+     ====================================================================== */
+  var trZweiterKlick = {};
+
+  function istTestreel(r) {
+    if (!r) return false;
+    return !!(r.trial || /(^|-)trial(-|$)/.test(r.id || "") ||
+              /TRIAL REEL/i.test(r.hinweis || ""));
+  }
+
+  function trStand(r) {
+    if (r.testStand) return r.testStand;
+    // Alte Testreels: wer sie in der App eingeplant hat, hat sie gepostet.
+    var s = (r.blotato || {}).status || "";
+    if (s === "selber-posten" || s === "gepostet-von-hand") return "gepostet";
+    return "offen";
+  }
+
+  function trWoerter(t) {
+    return String(t || "").replace(/[„“"«»]/g, "").trim().split(/\s+/).filter(Boolean).length;
+  }
+
+  function trReelNach(id) {
+    for (var i = 0; i < state.reels.length; i++) if (state.reels[i].id === id) return state.reels[i];
+    return null;
+  }
+
+  function trTageSeit(iso) {
+    if (!iso) return null;
+    var a = new Date(iso + "T12:00:00"), b = new Date(todayISO() + "T12:00:00");
+    if (isNaN(a) || isNaN(b)) return null;
+    return Math.round((b - a) / 86400000);
+  }
+
+  /* Besser ist, wer mehr Kommentare holt — Reichweite erst danach.
+     Ein Reel mit 1'900 Konten und null Kommentaren ist kein Gewinner. */
+  function trBesser(a, b) {
+    var ka = a.testKommentare || 0, kb = b.testKommentare || 0;
+    if (ka !== kb) return kb - ka;
+    return (b.testReichweite || 0) - (a.testReichweite || 0);
+  }
+
+  function renderTestreels(main) {
+    var tests = state.reels.filter(function (r) { return istTestreel(r) && !r.abgelehnt; });
+    var gruppen = { offen: [], gepostet: [], ausgewertet: [] };
+    tests.forEach(function (r) { (gruppen[trStand(r)] || gruppen.offen).push(r); });
+    gruppen.offen.sort(function (a, b) { return (a.datum || "9") < (b.datum || "9") ? -1 : 1; });
+    gruppen.gepostet.sort(function (a, b) { return (a.testGepostetAm || "") < (b.testGepostetAm || "") ? -1 : 1; });
+
+    main.innerHTML =
+      '<div class="page-head"><div><h1>Testreels</h1>' +
+      '<p>Ein Testreel zeigt Instagram nur Leuten, die dir noch nicht folgen. So prüfst du einen Hook, ' +
+      'bevor er in den Feed kommt: zwei Hooks, gleiche Szene, gleiche Uhrzeit. Was mehr Kommentare holt, ' +
+      'wird der richtige Beitrag. Beim Posten in der App den Schalter <b>Testreel</b> einschalten.</p></div></div>' +
+      '<div class="panel tr-neu"><h2>Neues Testreel zu einem Beitrag</h2>' +
+      '<div class="tr-neuzeile"><label class="field"><span>Welcher Beitrag bekommt einen zweiten Hook?</span>' +
+      '<select id="trbasis"></select></label></div>' +
+      '<label class="field"><span>Der andere Hook (10 bis 14 Wörter, ohne Lösung, ohne Werkzeug)</span>' +
+      '<textarea id="trhook" rows="2"></textarea></label>' +
+      '<div class="tr-neufuss"><span class="note" id="trzahl"></span>' +
+      '<button class="btn primary" id="tranlegen">Testreel anlegen</button></div></div>' +
+      trGruppe("Zum Posten", "Noch nicht gepostet. Video speichern, in der App als Testreel posten, dann hier abhaken.", gruppen.offen, "offen") +
+      trGruppe("Läuft", "Nach drei Tagen die Zahlen aus der App eintragen: Konten erreicht und Kommentare.", gruppen.gepostet, "gepostet") +
+      trAusgewertet(gruppen.ausgewertet);
+
+    // Auswahl: alle Reels, die selbst kein Testreel sind
+    var sel = main.querySelector("#trbasis");
+    var basis = state.reels.filter(function (r) { return !istTestreel(r) && !r.abgelehnt; })
+      .sort(function (a, b) { return (a.datum || "9") < (b.datum || "9") ? -1 : 1; });
+    sel.innerHTML = '<option value="">– Beitrag wählen –</option>' + basis.map(function (r) {
+      return '<option value="' + esc(r.id) + '">' + esc((r.datum ? r.datum.slice(8, 10) + "." + r.datum.slice(5, 7) + ". · " : "ohne Datum · ") + (r.name || r.hook || r.id)) + '</option>';
+    }).join("");
+    var hookFeld = main.querySelector("#trhook"), zahl = main.querySelector("#trzahl");
+    function zaehlen() {
+      var n = trWoerter(hookFeld.value);
+      zahl.textContent = n ? n + " Wörter" + (n < 10 || n > 14 ? " · Bild-Hook sollte 10 bis 14 haben" : "") : "";
+      zahl.className = "note" + (n && (n < 10 || n > 14) ? " tr-warn" : "");
+    }
+    hookFeld.addEventListener("input", zaehlen);
+    main.querySelector("#tranlegen").onclick = function () {
+      var b = trReelNach(sel.value), hook = hookFeld.value.trim();
+      if (!b) { toast("Zuerst den Beitrag wählen."); return; }
+      if (!hook) { toast("Den anderen Hook eintragen."); return; }
+      if (hook === (b.hook || "").trim()) { toast("Das ist derselbe Hook wie im Beitrag."); return; }
+      var neu = JSON.parse(JSON.stringify(b));
+      neu.id = b.id + "-test-" + Date.now().toString(36);
+      neu.name = "🧪 Test · " + (b.name || "Reel");
+      neu.hook = hook; neu.coverhook = hook; neu.unter = "";
+      neu.datum = ""; neu.textfrei = false; neu.blotato = null;
+      neu.kommentar = ""; neu.kommentarStand = ""; neu.kommentarErledigt = ""; neu.kommentarAntwort = "";
+      neu.trial = true; neu.testVon = b.id; neu.testStand = "offen";
+      neu.testGepostetAm = ""; neu.testReichweite = null; neu.testKommentare = null;
+      neu.testNotiz = ""; neu.testGewinner = false;
+      neu.hinweis = "🧪 TRIAL REEL — beim Posten in der App „Testreel“ einschalten. Testet den Hook von „" +
+                    (b.name || b.id) + "“ mit derselben Szene.";
+      state.reels.unshift(neu);
+      saveReel(neu);
+      toast("Testreel angelegt. Es steht unter „Zum Posten“.");
+      render();
+    };
+
+    trKnoepfeVerdrahten(main);
+  }
+
+  function trGruppe(titel, satz, liste, stand) {
+    return '<h2 class="tr-gtitel">' + esc(titel) + ' <span class="tr-zahl">' + liste.length + '</span></h2>' +
+      '<p class="note tr-gsatz">' + esc(satz) + '</p>' +
+      (liste.length ? '<div class="tr-liste">' + liste.map(function (r) { return trKarte(r, stand); }).join("") + '</div>'
+                    : '<div class="panel"><div class="empty">Gerade keins.</div></div>');
+  }
+
+  function trAusgewertet(liste) {
+    var kopf = '<h2 class="tr-gtitel">Ausgewertet <span class="tr-zahl">' + liste.length + '</span></h2>' +
+      '<p class="note tr-gsatz">Je Beitrag nebeneinander. Besser ist, was mehr Kommentare geholt hat, bei Gleichstand die Reichweite. ' +
+      'Ein einzelner Test ist ein Hinweis, noch keine Regel.</p>';
+    if (!liste.length) return kopf + '<div class="panel"><div class="empty">Noch nichts ausgewertet.</div></div>';
+    var nach = {};
+    liste.forEach(function (r) { var k = r.testVon || ("einzeln-" + r.id); (nach[k] = nach[k] || []).push(r); });
+    return kopf + Object.keys(nach).map(function (k) {
+      var reihe = nach[k].sort(trBesser), b = trReelNach(k);
+      return '<div class="panel tr-vergleich"><div class="tr-vkopf">' +
+        (b ? 'Beitrag: <b>' + esc(b.name || b.id) + '</b><div class="tr-vhook">Hook im Beitrag: „' + esc(b.hook || "") + '“</div>'
+           : '<b>Ohne zugeordneten Beitrag</b>') + '</div>' +
+        reihe.map(function (r, i) { return trKarte(r, "ausgewertet", i === 0 && reihe.length > 1); }).join("") + '</div>';
+    }).join("");
+  }
+
+  function trKarte(r, stand, vorne) {
+    var b = r.testVon ? trReelNach(r.testVon) : null;
+    var n = trWoerter(r.hook);
+    var tage = trTageSeit(r.testGepostetAm);
+    var h = '<div class="tr-karte' + (vorne ? ' tr-vorne' : '') + '" data-id="' + esc(r.id) + '">' +
+      '<div class="tr-kname">' + esc(r.name || r.id) + (vorne ? ' <span class="chip">mehr Kommentare</span>' : '') +
+      (r.testGewinner ? ' <span class="chip orange">im Beitrag übernommen</span>' : '') + '</div>' +
+      '<div class="tr-hook">' + esc(r.hook || "– noch kein Hook –") + '</div>' +
+      '<div class="note">' + n + ' Wörter' + (b ? ' · testet „' + esc(b.name || b.id) + '“' : '') +
+      (r.datum ? ' · geplant ' + esc(r.datum) : '') + '</div>' +
+      '<div class="tr-knoepfe">' +
+      '<button class="btn" data-tr="hook">Hook kopieren</button>' +
+      (r.caption ? '<button class="btn" data-tr="caption">Caption kopieren</button>' : '') +
+      (r.videourl ? '<a class="btn" href="' + esc(r.videourl) + '" target="_blank" rel="noopener" download>Video öffnen</a>'
+                  : '<span class="note tr-warn">Video fehlt noch' + (r.videoart === "broll" ? ' · baut Claude' : '') + '</span>') +
+      (b ? '<button class="btn ghost" data-tr="beitrag">Beitrag öffnen</button>' : '') +
+      '</div>';
+    if (stand === "offen") {
+      h += '<div class="tr-fuss"><button class="btn primary" data-tr="gepostet">Als Testreel gepostet</button></div>';
+    } else if (stand === "gepostet") {
+      h += '<div class="tr-fuss"><span class="note">' + (tage === null ? 'gepostet' : 'gepostet vor ' + tage + (tage === 1 ? ' Tag' : ' Tagen')) +
+        (tage !== null && tage < 3 ? ' · Zahlen erst nach drei Tagen eintragen' : '') + '</span></div>' +
+        '<div class="tr-zahlen">' +
+        '<label class="field"><span>Konten erreicht</span><input type="number" min="0" data-trf="testReichweite" value="' + (r.testReichweite == null ? "" : r.testReichweite) + '"></label>' +
+        '<label class="field"><span>Kommentare</span><input type="number" min="0" data-trf="testKommentare" value="' + (r.testKommentare == null ? "" : r.testKommentare) + '"></label>' +
+        '<label class="field tr-notiz"><span>Was ist dir aufgefallen?</span><input type="text" data-trf="testNotiz" value="' + esc(r.testNotiz || "") + '"></label>' +
+        '</div><div class="tr-fuss"><button class="btn primary" data-tr="auswerten">Auswerten</button>' +
+        '<button class="btn ghost" data-tr="zurueck">doch noch nicht gepostet</button></div>';
+    } else {
+      h += '<div class="tr-ergebnis"><b>' + (r.testReichweite == null ? "–" : Number(r.testReichweite).toLocaleString("de-CH")) + '</b> erreicht · <b>' +
+        (r.testKommentare == null ? "–" : r.testKommentare) + '</b> Kommentare' + (r.testNotiz ? ' · ' + esc(r.testNotiz) : '') + '</div>' +
+        '<div class="tr-fuss">' + (b && !r.testGewinner ? '<button class="btn" data-tr="uebernehmen">Diesen Hook in den Beitrag übernehmen</button>' : '') +
+        '<button class="btn ghost" data-tr="zurueck">Zahlen ändern</button></div>';
+    }
+    return h + '</div>';
+  }
+
+  function trKnoepfeVerdrahten(main) {
+    Array.prototype.forEach.call(main.querySelectorAll(".tr-karte"), function (karte) {
+      var r = trReelNach(karte.getAttribute("data-id"));
+      if (!r) return;
+      Array.prototype.forEach.call(karte.querySelectorAll("[data-trf]"), function (feld) {
+        // Gespeichert wird beim Verlassen des Feldes, nicht bei jedem Tippen —
+        // sonst zeichnet die Seite neu und der Cursor springt raus.
+        feld.addEventListener("change", function () {
+          var k = feld.getAttribute("data-trf");
+          if (feld.type === "number") r[k] = feld.value === "" ? null : Math.max(0, parseInt(feld.value, 10) || 0);
+          else r[k] = feld.value;
+          saveReel(r);
+        });
+      });
+      Array.prototype.forEach.call(karte.querySelectorAll("[data-tr]"), function (knopf) {
+        knopf.onclick = function () {
+          var was = knopf.getAttribute("data-tr");
+          if (was === "hook") { inDieZwischenablage(r.hook || "", knopf); return; }
+          if (was === "caption") { inDieZwischenablage(r.caption || "", knopf); return; }
+          if (was === "beitrag") { springeZuBeitrag(beitragNach(r.testVon)); return; }
+          if (was === "gepostet") {
+            r.testStand = "gepostet"; r.testGepostetAm = todayISO();
+            saveReel(r); toast("Abgehakt. In drei Tagen die Zahlen eintragen."); render(); return;
+          }
+          if (was === "auswerten") {
+            if (r.testReichweite == null || r.testKommentare == null) {
+              toast("Zuerst Konten erreicht und Kommentare eintragen (auch 0)."); return;
+            }
+            r.testStand = "ausgewertet"; saveReel(r); render(); return;
+          }
+          if (was === "zurueck") {
+            r.testStand = trStand(r) === "ausgewertet" ? "gepostet" : "offen";
+            saveReel(r); render(); return;
+          }
+          if (was === "uebernehmen") {
+            // Zwei Klicks statt confirm() — ein Modal kann im Artifact-Rahmen
+            // lautlos blockiert sein, und dann taete der Knopf scheinbar nichts.
+            if (!trZweiterKlick[r.id]) {
+              trZweiterKlick[r.id] = true;
+              knopf.textContent = "Wirklich? Nochmal tippen";
+              knopf.classList.add("primary");
+              setTimeout(function () { delete trZweiterKlick[r.id]; if (knopf.isConnected) { knopf.textContent = "Diesen Hook in den Beitrag übernehmen"; knopf.classList.remove("primary"); } }, 8000);
+              return;
+            }
+            delete trZweiterKlick[r.id];
+            var b = trReelNach(r.testVon);
+            if (!b) { toast("Den Beitrag gibt es nicht mehr."); return; }
+            // Ein freigegebener Beitrag geht so raus, wie er freigegeben wurde.
+            // Ihn hier still umzuschreiben, waere eine Aenderung ohne ihr Go.
+            if (b.textfrei) { toast("Der Beitrag ist schon freigegeben. Erst dort die Freigabe zurücknehmen."); return; }
+            // Der alte Hook bleibt als Notiz am Testreel stehen, damit man zurueck kann.
+            r.testNotiz = (r.testNotiz ? r.testNotiz + " · " : "") + "alter Hook im Beitrag: „" + (b.hook || "") + "“";
+            r.testGewinner = true;
+            b.hook = r.hook; b.coverhook = r.hook;
+            saveReel(b); saveReel(r);
+            toast("Übernommen. Der Beitrag trägt jetzt den neuen Hook, das Video baut Claude neu.");
+            render();
+          }
+        };
+      });
+    });
+  }
+
   /* Reiter „Ideen von anderen": was bei den beobachteten Profilen deutlich
      ueber deren eigenem Schnitt lag. Gebaut von ideen-extern-bauen.py.
      Siehe Kopf von patch-ideen-extern.py, warum der Reiter bewusst nicht
@@ -6587,7 +6861,7 @@
   var BEREICHE = [
     { id: "tisch", label: "Mein Tisch", tabs: ["uebersicht"] },
     { id: "instagram", label: "Instagram", saeule: "Instagram",
-      tabs: ["woche", "studio", "storys", "fertig", "gepostet", "markt", "radar"] },
+      tabs: ["woche", "studio", "storys", "fertig", "gepostet", "markt", "radar", "testreels"] },
     { id: "produkte", label: "Produkte", saeule: "Produkte",
       tabs: ["katalog", "zusatzangebote", "produkte", "links", "launch", "funnel", "mailings", "leads", "kurse", "bibliothek", "gekauft"] },
     { id: "mamaceo", label: "Mama-CEO", saeule: "Mama-CEO",
@@ -14845,7 +15119,15 @@
         videourl: r.videourl || "",
         scrim: !!r.scrim, skript: r.skript || "", caption: r.caption || "",
         untertitel: r.untertitel || "", videodatei: r.videodatei || "",
-        blotato: r.blotato || null, updatedAt: r.updatedAt
+        blotato: r.blotato || null,
+        // Testreels und Rolle (31.10.2026, patch-testreels.py)
+        rolle: r.rolle || "", quelle: r.quelle || "",
+        trial: !!r.trial, testVon: r.testVon || "", testStand: r.testStand || "",
+        testGepostetAm: r.testGepostetAm || "",
+        testReichweite: (typeof r.testReichweite === "number") ? r.testReichweite : null,
+        testKommentare: (typeof r.testKommentare === "number") ? r.testKommentare : null,
+        testNotiz: r.testNotiz || "", testGewinner: !!r.testGewinner,
+        updatedAt: r.updatedAt
       }).then(function () { setSaveState("gespeichert", "on"); })
         .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
     };
@@ -15711,6 +15993,7 @@
     else if (activeTab === "ideenextern") renderIdeenExtern(main);
     else if (activeTab === "markt") renderZielgruppe(main);
     else if (activeTab === "radar") renderMarktRadar(main);
+    else if (activeTab === "testreels") renderTestreels(main);
     else if (activeTab === "bibliothek") renderBibliothek(main);
     else if (activeTab === "gekauft") renderGekauft(main);
     else if (activeTab === "oelwissen") renderOelwissen(main);
@@ -15918,12 +16201,12 @@
         lsSet("freigaben", m);
         render();
       }).catch(function () {});
-      db.collection("reels").limit(60).get().then(function (qs) {
+      db.collection("reels").limit(500).get().then(function (qs) {
         var seen = {};
         state.reels.forEach(function (x) { seen[x.id] = x; });
         qs.docs.forEach(function (doc) {
           var d0 = tief(doc.data()) || {};
-          var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", coverhook: d0.coverhook || "", coverunter: d0.coverunter || "", videoart: d0.videoart || "sprech", hinweis: d0.hinweis || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", texty: (typeof d0.texty === "number") ? d0.texty : null, textskala: d0.textskala || 100, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", videourl: d0.videourl || "", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, updatedAt: d0.updatedAt || "" };
+          var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", coverhook: d0.coverhook || "", coverunter: d0.coverunter || "", videoart: d0.videoart || "sprech", hinweis: d0.hinweis || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", texty: (typeof d0.texty === "number") ? d0.texty : null, textskala: d0.textskala || 100, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", videourl: d0.videourl || "", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, rolle: d0.rolle || "", quelle: d0.quelle || "", trial: !!d0.trial, testVon: d0.testVon || "", testStand: d0.testStand || "", testGepostetAm: d0.testGepostetAm || "", testReichweite: (typeof d0.testReichweite === "number") ? d0.testReichweite : null, testKommentare: (typeof d0.testKommentare === "number") ? d0.testKommentare : null, testNotiz: d0.testNotiz || "", testGewinner: !!d0.testGewinner, updatedAt: d0.updatedAt || "" };
           if (seen[rl.id]) dbUebernehmen(seen[rl.id], rl); else state.reels.push(rl);
         });
         state.reels.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });
