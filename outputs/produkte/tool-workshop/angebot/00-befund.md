@@ -8,7 +8,7 @@ Geprüft am 31.10.2026, alle 138 Punkte. Derselbe Befund steht unter jedem Punkt
 
 ⚠️ veraltet oder falsch 28 · ❌ fehlt 14 · ❓ nicht prüfbar 27 · ✅ belegt 44 · ➖ trifft nicht zu 25
 
-> Gegenprobe in ActiveCampaign (31.10.): „Tool-Workshop“ (86) enthält 8 Mails, „0€ Nischengenerator“ (87) enthält 5. Die Mail-Liste im Cockpit-Abgleich () ordnet dort mehr Mails zu, als in den Automationen stehen.
+> Gegenprobe in ActiveCampaign (31.10.): „Tool-Workshop“ (86) enthält 8 Mails, „0€ Nischengenerator“ (87) enthält 5. Die Mail-Liste im Cockpit-Abgleich (mails-86.json, mails-87.json) ordnet dort mehr Mails zu, als in den Automationen stehen.
 
 ## ⚠️ veraltet oder falsch (28)
 
