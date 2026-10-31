@@ -56,6 +56,10 @@ belegt**. Schritt 1 ist darum ein Test. Fällt er negativ aus, wird der Plan neu
 **Teil B — Einplanen in der Cloud**
 4. [ ] `freigabe-zu-blotato.mjs` und `freigabe-nachruecken.py` sollen die Zugangsdaten zusätzlich aus Umgebungsvariablen lesen. Heute lesen sie sie nur aus `.env`-Dateien, die es in der Cloud nicht gibt. Im Code steht dabei kein Schlüssel.
 5. [ ] Die Werte für Blotato, das WordPress-App-Passwort und Telegram als Geheimwerte der Cloud-Umgebung hinterlegen. Das macht Patricia selbst, nie im Chat.
+   🚨 **Zwei Orte, nicht einer** (gesehen am 31.10. in den Einstellungen der Umgebung): **„Umgebungsvariablen“** sind für jede Person sichtbar, die die Umgebung nutzt, und laut Hinweis „keine Secrets“. **„Netzwerk-Secrets“** setzt ein Proxy je Adresse als Header ein, und Claude sieht den Wert nie. Deshalb:
+   - Netzwerk-Secret: Blotato `blotato-api-key` (ohne Präfix) · ActiveCampaign `Api-Token` (ohne Präfix) · Instagram `Authorization` mit Präfix `Bearer` · WordPress `Authorization` mit Präfix `Basic` (Wert = base64 von `Benutzer:App-Passwort`)
+   - Umgebungsvariable: nur Telegram (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`), weil der Telegram-Schlüssel in der Adresse steht und kein Header ist. Vertretbar, solange nur Patricia die Umgebung nutzt.
+   - Folge für Schritt 4: Die Skripte dürfen in der Cloud **keinen** eigenen Schlüssel mitschicken, wenn der Proxy ihn einsetzt.
 6. [ ] Der Auftrag der Routine ist der Auftrag des heutigen 20:00-Tasks. Er wird nicht neu geschrieben, sondern übernommen: Freigaben auf `wartet` lesen, nachrücken, erst trocken, dann einplanen, `freigaben` zurückschreiben, Telegram melden.
 7. [ ] Den Takt festlegen, zum Beispiel alle zwei Stunden von 08:00 bis 22:00. Damit verfällt auch kein Zeitpunkt mehr, weil man um zehn freigegeben hat.
 8. [ ] Den Laptop-Task `freigaben-einplanen-2000` abschalten, **erst nachdem** die Cloud-Routine zweimal sauber gelaufen ist. Laufen beide gleichzeitig, wird doppelt gepostet.
