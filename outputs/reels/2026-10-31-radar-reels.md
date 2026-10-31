@@ -107,3 +107,30 @@ Den Moment vergesse ich nie, weil er mir gezeigt hat, wie voll mein Kopf war. Ic
 Danach habe ich angefangen auszusortieren, was wirklich an mir hängen muss und was nicht. Angefangen hat das mit einem einzigen Punkt, den ich gestrichen habe.
 
 Was wäre der erste Punkt, den du von deiner Liste streichen würdest, wenn du dürftest? Ein Wort reicht.
+
+## Testpaare (A = Hook oben, B = zweiter Hook), je Paar ein Tag
+
+Mo 2.11. 01 · Di 3.11. 03 · Mi 4.11. 04 · Do 5.11. 05 · Fr 6.11. 06 · Mo 9.11. 08 · Di 10.11. 09
+
+## Testreels (zweiter Hook, gleiche Szene, gleiche Caption)
+
+**01 · Test (Zitat statt Meinung):** „Ich hätte da eine spannende Möglichkeit für dich.“ Ich blockiere solche Nachrichten inzwischen sofort.  
+*Beitrag:* Bis heute landen ständig Kaltakquise-Nachrichten bei mir, und mich schauderts bei jeder einzelnen.
+
+**03 · Test (Geständnis statt Zitat):** Wenn ein Monat schlecht lief, habe ich im Network einfach noch mehr Leute angesprochen.  
+*Beitrag:* „Du musst einfach mehr Leute ansprechen.“ Diesen Satz habe ich im Network jahrelang geglaubt.
+
+**04 · Test (konkrete Handlung statt Bild):** Drei Jahre lang habe ich nur gepostet, was meine Firma mir geschickt hat.  
+*Beitrag:* Drei Jahre Katalog-Profil, und jeden Monat musste ich mich neu um Verkäufe bemühen.
+
+**05 · Test (Mechanik statt Summe):** Für etwas mehr Provision habe ich jeden Monat mehr gekauft, als wir brauchten.  
+*Beitrag:* Network-Produkte für über 500 Franken weggeworfen. Gekauft hatte ich sie nur für die Provision.
+
+**06 · Test (Alltag statt Büroszene):** Die Kinder, der Haushalt und mein Network mussten in die Lücken meiner Bürozeiten passen.  
+*Beitrag:* Um acht im Büro die Rollläden runter, damit ich nicht schon klatschnass war.
+
+**08 · Test (Zitat statt Szene):** „Und, was machst du so?“ Und du erzählst wieder nichts von deinem Business.  
+*Beitrag:* Wenn du beim Elternabend überlegst, ob du die Mama neben dir aufs Business ansprichst.
+
+**09 · Test (Originalwortlaut statt Autopilot):** Mein Auto rollte los, ohne mich, aber mit allen vier Kindern drin.  
+*Beitrag:* Ich war so auf Autopilot, dass mein Auto mit meinen vier Kindern losfuhr.

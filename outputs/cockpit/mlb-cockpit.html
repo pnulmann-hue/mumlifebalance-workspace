@@ -2213,7 +2213,7 @@
   .mr-b.mr-duenn span { opacity: 0.3; }
   .mr-b em { font-style: normal; font-size: 10px; color: var(--ink-soft); }
   /* ---------- Reiter „Testreels“ (31.10.2026, patch-testreels.py) ---------- */
-  .tr-neu { margin-bottom: 22px; display: flex; flex-direction: column; gap: 10px; }
+  .tr-neu { display: flex; flex-direction: column; gap: 10px; }
   .tr-neu .field span { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
   .tr-neu select, .tr-neu textarea { width: 100%; }
   .tr-neufuss { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
@@ -2240,7 +2240,15 @@
   .tr-ergebnis b { font-variant-numeric: tabular-nums; }
   .tr-vkopf { font-size: 13px; }
   .tr-vhook { color: var(--ink-soft); margin-top: 3px; }
-</style>
+  .tr-stand { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; font-size: 13px; }
+  .tr-stand span { background: var(--surface-2); border-radius: 999px; padding: 3px 11px; }
+  .tr-gtitel.tr-heute { color: var(--orange); }
+  .tr-karte.tr-bereit { border-left-color: var(--good); }
+  .tr-datum { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--ink-soft); }
+  .tr-datum input { background: var(--ground); border: 1px solid var(--line); border-radius: 7px; padding: 5px 7px; font-size: 12px; }
+  details.tr-neu { margin-top: 26px; }
+  details.tr-neu > summary { cursor: pointer; font-family: var(--display); font-size: 17px; }
+  details.tr-neu[open] > summary { margin-bottom: 10px; }</style>
 
 <div class="shell">
   <header class="kopfleiste">
@@ -3213,6 +3221,8 @@
   function alleBeitraege() {
     var beitraege = [];
     state.reels.forEach(function (r) {
+      // Testreels haben ihren eigenen Reiter und belegen keinen Feed-Platz (31.10.2026).
+      if (istTestreel(r)) return;
       beitraege.push({ art: "reels", id: r.id, obj: r, format: "Reel",
                        titel: r.name, hook: r.hook || "", unter: r.unter || "",
                        caption: r.caption || "", datei: r.videodatei || "",
@@ -6480,23 +6490,27 @@
      Reiter "Testreels" — Instagram -> Testreels
      (seit 31.10.2026, patch-testreels.py)
 
-     Patricia: „kannst du mir im cockpit was einbauen, dass ich die
-     testreelvarianten direkt darin finde?“ Ein Testreel zeigt Instagram nur
-     Leuten, die ihr noch nicht folgen. Damit wird ein Hook geprueft, bevor er
-     in den Feed kommt — zwei Hooks, gleiche Szene, gleiche Uhrzeit. Ohne
-     diesen Vergleich deuten wir einzelne Ausreisser: dasselbe Reel lief
-     einmal mit 1'948 und einmal mit 277 erreichten Konten.
+     Patricia: „die idee ist, dass ich für jeden tag die fixfertigen testreels
+     nach datum sehe, die ich zum testen posten kann. die besten nehme ich
+     selber in den feed. paralell machen wir aber auch beiträge die so oder so
+     gepostet werden.“ Ein Testreel zeigt Instagram nur Leuten, die ihr noch
+     nicht folgen. Zwei Hooks, gleiche Szene, gleicher Tag — sonst deuten wir
+     Zufall: dasselbe Reel lief einmal mit 1'948 und einmal mit 277 Konten.
 
      Ein Testreel ist ein normales Reel (Sammlung "reels") mit
-       trial: true · testVon: <Kennung des Feed-Reels> · testStand: offen |
-       gepostet | ausgewertet · testGepostetAm · testReichweite ·
-       testKommentare · testNotiz · testGewinner
+       trial: true · testVon: <Kennung des Partners, gegen den es antritt> ·
+       testStand: offen | gepostet | ausgewertet · testGepostetAm ·
+       testReichweite · testKommentare · testNotiz · testGewinner · testInFeed
      🚨 Diese Felder stehen auch in der festen Feldliste von saveReel und
      beim Lesen — sonst waeren sie nach dem naechsten Speichern weg.
+     🚨 Testreels stehen NICHT in alleBeitraege(): sie belegen keinen
+     Feed-Platz in der Woche, gehen nicht in Freigeben und nicht in den
+     Content-Kalender. Die Feed-Beitraege laufen daneben weiter.
      Alte Testreels (KW42) tragen nur „trial“ in der Kennung oder
      „TRIAL REEL“ im Hinweis; die werden ueber istTestreel() mitgefunden.
      ====================================================================== */
   var trZweiterKlick = {};
+  var TR_TAG = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
 
   function istTestreel(r) {
     if (!r) return false;
@@ -6528,6 +6542,16 @@
     return Math.round((b - a) / 86400000);
   }
 
+  function trTagName(iso) {
+    var d = new Date(iso + "T12:00:00");
+    if (isNaN(d)) return iso;
+    var vor = iso === todayISO() ? "Heute · " : "";
+    return vor + TR_TAG[d.getDay()] + " " + d.getDate() + "." + (d.getMonth() + 1) + ".";
+  }
+
+  // Ein Paar bleibt zusammen: Partner A und B stehen nebeneinander.
+  function trPaar(r) { return r.testVon || r.id; }
+
   /* Besser ist, wer mehr Kommentare holt — Reichweite erst danach.
      Ein Reel mit 1'900 Konten und null Kommentaren ist kein Gewinner. */
   function trBesser(a, b) {
@@ -6538,64 +6562,90 @@
 
   function renderTestreels(main) {
     var tests = state.reels.filter(function (r) { return istTestreel(r) && !r.abgelehnt; });
-    var gruppen = { offen: [], gepostet: [], ausgewertet: [] };
-    tests.forEach(function (r) { (gruppen[trStand(r)] || gruppen.offen).push(r); });
-    gruppen.offen.sort(function (a, b) { return (a.datum || "9") < (b.datum || "9") ? -1 : 1; });
-    gruppen.gepostet.sort(function (a, b) { return (a.testGepostetAm || "") < (b.testGepostetAm || "") ? -1 : 1; });
+    var offen = [], laeuft = [], fertig = [];
+    tests.forEach(function (r) {
+      var s = trStand(r);
+      (s === "gepostet" ? laeuft : s === "ausgewertet" ? fertig : offen).push(r);
+    });
+    var mitTag = {}, ohne = [];
+    offen.forEach(function (r) { if (r.datum) (mitTag[r.datum] = mitTag[r.datum] || []).push(r); else ohne.push(r); });
+    var tage = Object.keys(mitTag).sort();
+    var bereit = offen.filter(function (r) { return !!r.videourl; }).length;
+    laeuft.sort(function (a, b) { return (a.testGepostetAm || "") < (b.testGepostetAm || "") ? -1 : 1; });
 
     main.innerHTML =
       '<div class="page-head"><div><h1>Testreels</h1>' +
-      '<p>Ein Testreel zeigt Instagram nur Leuten, die dir noch nicht folgen. So prüfst du einen Hook, ' +
-      'bevor er in den Feed kommt: zwei Hooks, gleiche Szene, gleiche Uhrzeit. Was mehr Kommentare holt, ' +
-      'wird der richtige Beitrag. Beim Posten in der App den Schalter <b>Testreel</b> einschalten.</p></div></div>' +
-      '<div class="panel tr-neu"><h2>Neues Testreel zu einem Beitrag</h2>' +
-      '<div class="tr-neuzeile"><label class="field"><span>Welcher Beitrag bekommt einen zweiten Hook?</span>' +
-      '<select id="trbasis"></select></label></div>' +
+      '<p>Je Tag die Testreels, die du posten kannst. Instagram zeigt sie nur Leuten, die dir noch nicht ' +
+      'folgen. Beim Posten in der App den Schalter <b>Testreel</b> einschalten. Die besten nimmst du danach ' +
+      'selbst in den Feed, deine normalen Beiträge laufen daneben weiter.</p></div></div>' +
+      '<div class="tr-stand"><span><b>' + offen.length + '</b> zum Posten</span><span><b>' + bereit +
+      '</b> davon fertig</span><span><b>' + laeuft.length + '</b> laufen</span><span><b>' + fertig.length +
+      '</b> ausgewertet</span></div>' +
+      (tage.length ? tage.map(function (t) { return trTag(t, mitTag[t]); }).join("")
+                   : '<div class="panel"><div class="empty">Für die nächsten Tage ist noch kein Testreel eingeplant.</div></div>') +
+      (ohne.length ? trTag("", ohne) : "") +
+      trGruppe("Läuft", "Nach drei Tagen die Zahlen aus der App eintragen: Konten erreicht und Kommentare.", laeuft, "gepostet") +
+      trAusgewertet(fertig) +
+      '<details class="panel tr-neu"><summary>Neues Testreel: zweiter Hook zu einem Reel</summary>' +
+      '<label class="field"><span>Gegen welches Reel tritt es an?</span><select id="trbasis"></select></label>' +
       '<label class="field"><span>Der andere Hook (10 bis 14 Wörter, ohne Lösung, ohne Werkzeug)</span>' +
       '<textarea id="trhook" rows="2"></textarea></label>' +
       '<div class="tr-neufuss"><span class="note" id="trzahl"></span>' +
-      '<button class="btn primary" id="tranlegen">Testreel anlegen</button></div></div>' +
-      trGruppe("Zum Posten", "Noch nicht gepostet. Video speichern, in der App als Testreel posten, dann hier abhaken.", gruppen.offen, "offen") +
-      trGruppe("Läuft", "Nach drei Tagen die Zahlen aus der App eintragen: Konten erreicht und Kommentare.", gruppen.gepostet, "gepostet") +
-      trAusgewertet(gruppen.ausgewertet);
+      '<button class="btn primary" id="tranlegen">Testreel anlegen</button></div></details>';
 
-    // Auswahl: alle Reels, die selbst kein Testreel sind
     var sel = main.querySelector("#trbasis");
-    var basis = state.reels.filter(function (r) { return !istTestreel(r) && !r.abgelehnt; })
+    var basis = state.reels.filter(function (r) { return !r.abgelehnt; })
       .sort(function (a, b) { return (a.datum || "9") < (b.datum || "9") ? -1 : 1; });
-    sel.innerHTML = '<option value="">– Beitrag wählen –</option>' + basis.map(function (r) {
-      return '<option value="' + esc(r.id) + '">' + esc((r.datum ? r.datum.slice(8, 10) + "." + r.datum.slice(5, 7) + ". · " : "ohne Datum · ") + (r.name || r.hook || r.id)) + '</option>';
+    sel.innerHTML = '<option value="">– Reel wählen –</option>' + basis.map(function (r) {
+      return '<option value="' + esc(r.id) + '">' + (istTestreel(r) ? "🧪 " : "") +
+        esc((r.datum ? r.datum.slice(8, 10) + "." + r.datum.slice(5, 7) + ". · " : "ohne Datum · ") + (r.name || r.hook || r.id)) + '</option>';
     }).join("");
     var hookFeld = main.querySelector("#trhook"), zahl = main.querySelector("#trzahl");
-    function zaehlen() {
+    hookFeld.addEventListener("input", function () {
       var n = trWoerter(hookFeld.value);
       zahl.textContent = n ? n + " Wörter" + (n < 10 || n > 14 ? " · Bild-Hook sollte 10 bis 14 haben" : "") : "";
       zahl.className = "note" + (n && (n < 10 || n > 14) ? " tr-warn" : "");
-    }
-    hookFeld.addEventListener("input", zaehlen);
+    });
     main.querySelector("#tranlegen").onclick = function () {
       var b = trReelNach(sel.value), hook = hookFeld.value.trim();
-      if (!b) { toast("Zuerst den Beitrag wählen."); return; }
+      if (!b) { toast("Zuerst das Reel wählen."); return; }
       if (!hook) { toast("Den anderen Hook eintragen."); return; }
-      if (hook === (b.hook || "").trim()) { toast("Das ist derselbe Hook wie im Beitrag."); return; }
+      if (hook === (b.hook || "").trim()) { toast("Das ist derselbe Hook wie im Reel."); return; }
       var neu = JSON.parse(JSON.stringify(b));
       neu.id = b.id + "-test-" + Date.now().toString(36);
-      neu.name = "🧪 Test · " + (b.name || "Reel");
+      neu.name = "🧪 Test · " + String(b.name || "Reel").replace(/^🧪 Test · /, "");
       neu.hook = hook; neu.coverhook = hook; neu.unter = "";
-      neu.datum = ""; neu.textfrei = false; neu.blotato = null;
+      // Ein Paar postet am selben Tag, sonst vergleicht man zwei Tage statt zwei Hooks.
+      neu.datum = istTestreel(b) ? (b.datum || "") : "";
+      neu.textfrei = false; neu.blotato = null; neu.videourl = ""; neu.videodatei = "";
       neu.kommentar = ""; neu.kommentarStand = ""; neu.kommentarErledigt = ""; neu.kommentarAntwort = "";
       neu.trial = true; neu.testVon = b.id; neu.testStand = "offen";
       neu.testGepostetAm = ""; neu.testReichweite = null; neu.testKommentare = null;
-      neu.testNotiz = ""; neu.testGewinner = false;
-      neu.hinweis = "🧪 TRIAL REEL — beim Posten in der App „Testreel“ einschalten. Testet den Hook von „" +
-                    (b.name || b.id) + "“ mit derselben Szene.";
+      neu.testNotiz = ""; neu.testGewinner = false; neu.testInFeed = false;
+      neu.hinweis = "🧪 TRIAL REEL — beim Posten in der App „Testreel“ einschalten. Tritt gegen „" +
+                    (b.name || b.id) + "“ an, mit derselben Szene. 🎬 Video baut Claude.";
       state.reels.unshift(neu);
       saveReel(neu);
-      toast("Testreel angelegt. Es steht unter „Zum Posten“.");
+      toast("Testreel angelegt.");
       render();
     };
 
     trKnoepfeVerdrahten(main);
+  }
+
+  function trTag(iso, liste) {
+    liste.sort(function (a, b) {
+      var pa = trPaar(a), pb = trPaar(b);
+      if (pa !== pb) return pa < pb ? -1 : 1;
+      return a.testVon ? 1 : -1;
+    });
+    var fertig = liste.filter(function (r) { return !!r.videourl; }).length;
+    var vorbei = iso && iso < todayISO();
+    return '<h2 class="tr-gtitel' + (iso === todayISO() ? ' tr-heute' : '') + '">' +
+      esc(iso ? trTagName(iso) : "Noch ohne Tag") +
+      ' <span class="tr-zahl">' + fertig + ' von ' + liste.length + ' fertig</span>' +
+      (vorbei ? ' <span class="chip orange">Tag ist vorbei</span>' : '') + '</h2>' +
+      '<div class="tr-liste">' + liste.map(function (r) { return trKarte(r, "offen"); }).join("") + '</div>';
   }
 
   function trGruppe(titel, satz, liste, stand) {
@@ -6607,39 +6657,44 @@
 
   function trAusgewertet(liste) {
     var kopf = '<h2 class="tr-gtitel">Ausgewertet <span class="tr-zahl">' + liste.length + '</span></h2>' +
-      '<p class="note tr-gsatz">Je Beitrag nebeneinander. Besser ist, was mehr Kommentare geholt hat, bei Gleichstand die Reichweite. ' +
-      'Ein einzelner Test ist ein Hinweis, noch keine Regel.</p>';
+      '<p class="note tr-gsatz">Je Paar nebeneinander. Besser ist, was mehr Kommentare geholt hat, bei Gleichstand ' +
+      'die Reichweite. Ein einzelner Test ist ein Hinweis, noch keine Regel.</p>';
     if (!liste.length) return kopf + '<div class="panel"><div class="empty">Noch nichts ausgewertet.</div></div>';
     var nach = {};
-    liste.forEach(function (r) { var k = r.testVon || ("einzeln-" + r.id); (nach[k] = nach[k] || []).push(r); });
+    liste.forEach(function (r) { (nach[trPaar(r)] = nach[trPaar(r)] || []).push(r); });
     return kopf + Object.keys(nach).map(function (k) {
       var reihe = nach[k].sort(trBesser), b = trReelNach(k);
+      var feed = b && !istTestreel(b);
       return '<div class="panel tr-vergleich"><div class="tr-vkopf">' +
-        (b ? 'Beitrag: <b>' + esc(b.name || b.id) + '</b><div class="tr-vhook">Hook im Beitrag: „' + esc(b.hook || "") + '“</div>'
-           : '<b>Ohne zugeordneten Beitrag</b>') + '</div>' +
+        (feed ? 'Feed-Beitrag: <b>' + esc(b.name || b.id) + '</b><div class="tr-vhook">Hook dort: „' + esc(b.hook || "") + '“</div>'
+              : '<b>' + esc(reihe.length > 1 ? "Testpaar" : "Einzeltest") + '</b>') + '</div>' +
         reihe.map(function (r, i) { return trKarte(r, "ausgewertet", i === 0 && reihe.length > 1); }).join("") + '</div>';
     }).join("");
   }
 
   function trKarte(r, stand, vorne) {
     var b = r.testVon ? trReelNach(r.testVon) : null;
+    var feedBasis = b && !istTestreel(b);
     var n = trWoerter(r.hook);
     var tage = trTageSeit(r.testGepostetAm);
-    var h = '<div class="tr-karte' + (vorne ? ' tr-vorne' : '') + '" data-id="' + esc(r.id) + '">' +
-      '<div class="tr-kname">' + esc(r.name || r.id) + (vorne ? ' <span class="chip">mehr Kommentare</span>' : '') +
-      (r.testGewinner ? ' <span class="chip orange">im Beitrag übernommen</span>' : '') + '</div>' +
+    var h = '<div class="tr-karte' + (vorne ? ' tr-vorne' : '') + (r.videourl ? ' tr-bereit' : '') + '" data-id="' + esc(r.id) + '">' +
+      '<div class="tr-kname">' + esc(r.name || r.id) +
+      (stand === "offen" ? (r.videourl ? ' <span class="chip">fertig</span>' : ' <span class="chip orange">Video fehlt' +
+        (r.videoart === "broll" ? ' · baut Claude' : '') + '</span>') : '') +
+      (vorne ? ' <span class="chip">mehr Kommentare</span>' : '') +
+      (r.testGewinner ? ' <span class="chip orange">in den Beitrag übernommen</span>' : '') +
+      (r.testInFeed ? ' <span class="chip">im Feed</span>' : '') + '</div>' +
       '<div class="tr-hook">' + esc(r.hook || "– noch kein Hook –") + '</div>' +
-      '<div class="note">' + n + ' Wörter' + (b ? ' · testet „' + esc(b.name || b.id) + '“' : '') +
-      (r.datum ? ' · geplant ' + esc(r.datum) : '') + '</div>' +
+      '<div class="note">' + n + ' Wörter' + (b ? ' · tritt an gegen „' + esc(b.name || b.id) + '“' : '') + '</div>' +
       '<div class="tr-knoepfe">' +
+      (r.videourl ? '<a class="btn" href="' + esc(r.videourl) + '" target="_blank" rel="noopener" download>Video speichern</a>' : '') +
       '<button class="btn" data-tr="hook">Hook kopieren</button>' +
       (r.caption ? '<button class="btn" data-tr="caption">Caption kopieren</button>' : '') +
-      (r.videourl ? '<a class="btn" href="' + esc(r.videourl) + '" target="_blank" rel="noopener" download>Video öffnen</a>'
-                  : '<span class="note tr-warn">Video fehlt noch' + (r.videoart === "broll" ? ' · baut Claude' : '') + '</span>') +
-      (b ? '<button class="btn ghost" data-tr="beitrag">Beitrag öffnen</button>' : '') +
+      (feedBasis ? '<button class="btn ghost" data-tr="beitrag">Feed-Beitrag öffnen</button>' : '') +
       '</div>';
     if (stand === "offen") {
-      h += '<div class="tr-fuss"><button class="btn primary" data-tr="gepostet">Als Testreel gepostet</button></div>';
+      h += '<div class="tr-fuss"><label class="tr-datum">Tag <input type="date" data-trf="datum" value="' + esc(r.datum || "") + '"></label>' +
+        '<button class="btn primary" data-tr="gepostet">Als Testreel gepostet</button></div>';
     } else if (stand === "gepostet") {
       h += '<div class="tr-fuss"><span class="note">' + (tage === null ? 'gepostet' : 'gepostet vor ' + tage + (tage === 1 ? ' Tag' : ' Tagen')) +
         (tage !== null && tage < 3 ? ' · Zahlen erst nach drei Tagen eintragen' : '') + '</span></div>' +
@@ -6652,7 +6707,9 @@
     } else {
       h += '<div class="tr-ergebnis"><b>' + (r.testReichweite == null ? "–" : Number(r.testReichweite).toLocaleString("de-CH")) + '</b> erreicht · <b>' +
         (r.testKommentare == null ? "–" : r.testKommentare) + '</b> Kommentare' + (r.testNotiz ? ' · ' + esc(r.testNotiz) : '') + '</div>' +
-        '<div class="tr-fuss">' + (b && !r.testGewinner ? '<button class="btn" data-tr="uebernehmen">Diesen Hook in den Beitrag übernehmen</button>' : '') +
+        '<div class="tr-fuss">' +
+        '<button class="btn' + (r.testInFeed ? '' : ' primary') + '" data-tr="feed">' + (r.testInFeed ? 'doch nicht im Feed' : 'Hab ich in den Feed genommen') + '</button>' +
+        (feedBasis && !r.testGewinner ? '<button class="btn" data-tr="uebernehmen">Hook in den Feed-Beitrag übernehmen</button>' : '') +
         '<button class="btn ghost" data-tr="zurueck">Zahlen ändern</button></div>';
     }
     return h + '</div>';
@@ -6670,6 +6727,7 @@
           if (feld.type === "number") r[k] = feld.value === "" ? null : Math.max(0, parseInt(feld.value, 10) || 0);
           else r[k] = feld.value;
           saveReel(r);
+          if (k === "datum") render();
         });
       });
       Array.prototype.forEach.call(karte.querySelectorAll("[data-tr]"), function (knopf) {
@@ -6692,6 +6750,9 @@
             r.testStand = trStand(r) === "ausgewertet" ? "gepostet" : "offen";
             saveReel(r); render(); return;
           }
+          if (was === "feed") {
+            r.testInFeed = !r.testInFeed; saveReel(r); render(); return;
+          }
           if (was === "uebernehmen") {
             // Zwei Klicks statt confirm() — ein Modal kann im Artifact-Rahmen
             // lautlos blockiert sein, und dann taete der Knopf scheinbar nichts.
@@ -6699,7 +6760,7 @@
               trZweiterKlick[r.id] = true;
               knopf.textContent = "Wirklich? Nochmal tippen";
               knopf.classList.add("primary");
-              setTimeout(function () { delete trZweiterKlick[r.id]; if (knopf.isConnected) { knopf.textContent = "Diesen Hook in den Beitrag übernehmen"; knopf.classList.remove("primary"); } }, 8000);
+              setTimeout(function () { delete trZweiterKlick[r.id]; if (knopf.isConnected) { knopf.textContent = "Hook in den Feed-Beitrag übernehmen"; knopf.classList.remove("primary"); } }, 8000);
               return;
             }
             delete trZweiterKlick[r.id];
@@ -15496,7 +15557,7 @@
         testGepostetAm: r.testGepostetAm || "",
         testReichweite: (typeof r.testReichweite === "number") ? r.testReichweite : null,
         testKommentare: (typeof r.testKommentare === "number") ? r.testKommentare : null,
-        testNotiz: r.testNotiz || "", testGewinner: !!r.testGewinner,
+        testNotiz: r.testNotiz || "", testGewinner: !!r.testGewinner, testInFeed: !!r.testInFeed,
         updatedAt: r.updatedAt
       }).then(function () { setSaveState("gespeichert", "on"); })
         .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
@@ -16576,7 +16637,7 @@
         state.reels.forEach(function (x) { seen[x.id] = x; });
         qs.docs.forEach(function (doc) {
           var d0 = tief(doc.data()) || {};
-          var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", coverhook: d0.coverhook || "", coverunter: d0.coverunter || "", videoart: d0.videoart || "sprech", hinweis: d0.hinweis || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", texty: (typeof d0.texty === "number") ? d0.texty : null, textskala: d0.textskala || 100, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", videourl: d0.videourl || "", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, rolle: d0.rolle || "", quelle: d0.quelle || "", trial: !!d0.trial, testVon: d0.testVon || "", testStand: d0.testStand || "", testGepostetAm: d0.testGepostetAm || "", testReichweite: (typeof d0.testReichweite === "number") ? d0.testReichweite : null, testKommentare: (typeof d0.testKommentare === "number") ? d0.testKommentare : null, testNotiz: d0.testNotiz || "", testGewinner: !!d0.testGewinner, updatedAt: d0.updatedAt || "" };
+          var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", coverhook: d0.coverhook || "", coverunter: d0.coverunter || "", videoart: d0.videoart || "sprech", hinweis: d0.hinweis || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", texty: (typeof d0.texty === "number") ? d0.texty : null, textskala: d0.textskala || 100, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", videourl: d0.videourl || "", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, rolle: d0.rolle || "", quelle: d0.quelle || "", trial: !!d0.trial, testVon: d0.testVon || "", testStand: d0.testStand || "", testGepostetAm: d0.testGepostetAm || "", testReichweite: (typeof d0.testReichweite === "number") ? d0.testReichweite : null, testKommentare: (typeof d0.testKommentare === "number") ? d0.testKommentare : null, testNotiz: d0.testNotiz || "", testGewinner: !!d0.testGewinner, testInFeed: !!d0.testInFeed, updatedAt: d0.updatedAt || "" };
           if (seen[rl.id]) dbUebernehmen(seen[rl.id], rl); else state.reels.push(rl);
         });
         state.reels.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });
