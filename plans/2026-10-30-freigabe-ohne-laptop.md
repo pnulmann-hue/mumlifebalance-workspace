@@ -72,6 +72,14 @@ belegt**. Schritt 1 ist darum ein Test. Fällt er negativ aus, wird der Plan neu
 > `trig_01JUA3VDVFqeD9Hm62uPbEyg`, Cron `0 7-21/2 * * *` (UTC, also 08–22 Uhr Winterzeit), **ausgeschaltet, Modus probe**.
 > 🚨 Die Cloud klont GitHub — das geänderte Skript wirkt dort erst nach einem Push. Sprechreels bleiben vorerst beim Laptop (Videos liegen nur lokal).
 > Offen: Push · ein Probelauf · dann Laptop-Task aus, Routine auf `scharf` und einschalten.
+>
+> **Probeläufe 31.10.2026 (gepusht 5afa0d6, 683265e):**
+> - 1. Lauf: Blotato 401. Nodes `fetch` ignoriert `HTTPS_PROXY` und ging am Proxy vorbei → im Modus `--proxy` laufen alle Blotato-Aufrufe jetzt über `curl` (Funktion `abruf`).
+>   Nebenbei: `holen` war schon der Name des Argument-Lesers in `main()` und hat die neue Funktion verdeckt — gibt `null` zurück, ohne Fehler.
+> - 2. Lauf: ✅ Blotato über den Proxy (Konto 41414 gefunden, Trockenprüfung sauber), ✅ Nachrücken, ✅ „schon gepostet“ erkannt.
+>   ❌ Telegram: `403 Forbidden: bot was blocked by the user` — der Cockpit-Bot ist bei Patricia blockiert. Dasselbe trifft den Laptop-Task (`senden.py` nutzt denselben Bot).
+> - Der Laptop-Task hing am 31.10. ab 07:50 den ganzen Tag (letzter Schritt ein `ArtifactData`-Aufruf, der auf Bestätigung wartete) und hat damit alle späteren Läufe blockiert.
+>   Gestoppt, die drei Karussells (1.11. doTERRA, 3.11., 6.11.) von Hand eingeplant.
 
 4. [x] `freigabe-zu-blotato.mjs` und `freigabe-nachruecken.py` sollen die Zugangsdaten zusätzlich aus Umgebungsvariablen lesen. Heute lesen sie sie nur aus `.env`-Dateien, die es in der Cloud nicht gibt. Im Code steht dabei kein Schlüssel.
 5. [ ] Die Werte für Blotato, das WordPress-App-Passwort und Telegram als Geheimwerte der Cloud-Umgebung hinterlegen. Das macht Patricia selbst, nie im Chat.
