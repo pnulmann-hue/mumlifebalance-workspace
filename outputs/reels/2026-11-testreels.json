@@ -1,0 +1,676 @@
+{
+ "zweck": "Die 60 Testreels November 2026: 30 Paare, je Tag eins, A und B mit derselben Szene und Caption, nur der Hook ist anders. Eine Quelle für scripts/content/radar-brolls.py (Videos) und scripts/content/testreels-ins-cockpit.py (Cockpit, Sammlung reels).",
+ "stand": "2026-10-31",
+ "regeln": "Hook 10-14 Wörter, Gegner/Geständnis/Zitat, nie das Werkzeug, Lösung draussen, Mikro, nur Belegtes (Interview 2026-10, Hybridmodell-Geschichte, eigene Zahlen) oder als Du-Szene der Leserin. Clips nur aus video/input, Alltag, nicht in die Kamera.",
+ "paare": [
+  {
+   "nr": "01",
+   "datum": "2026-11-02",
+   "neu": false,
+   "clip": "VID_116190420_023319_173",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 58,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Folg mir, wenn du dich wiedererkennst",
+   "a": [
+    "Bis heute landen ständig Kaltakquise-Nachrichten bei mir,",
+    "und mich schauderts bei jeder einzelnen."
+   ],
+   "b": [
+    "„Ich hätte da eine spannende Möglichkeit für dich.“",
+    "Ich blockiere solche Nachrichten inzwischen sofort."
+   ]
+  },
+  {
+   "nr": "03",
+   "datum": "2026-11-03",
+   "neu": false,
+   "clip": "VID_116220408_091820_736",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 55,
+   "stil": "marker",
+   "akzent": "orange",
+   "cta": "Kommentier NISCHE",
+   "a": [
+    "„Du musst einfach mehr Leute ansprechen.“",
+    "Diesen Satz habe ich im Network jahrelang geglaubt."
+   ],
+   "b": [
+    "Wenn ein Monat schlecht lief,",
+    "habe ich im Network einfach noch mehr Leute angesprochen."
+   ]
+  },
+  {
+   "nr": "04",
+   "datum": "2026-11-04",
+   "neu": false,
+   "clip": "schreiben-tisch-ton",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 62,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Kommentier NISCHE",
+   "a": [
+    "Drei Jahre Katalog-Profil,",
+    "und jeden Monat musste ich mich neu um Verkäufe bemühen."
+   ],
+   "b": [
+    "Drei Jahre lang habe ich nur gepostet,",
+    "was meine Firma mir geschickt hat."
+   ]
+  },
+  {
+   "nr": "05",
+   "datum": "2026-11-05",
+   "neu": false,
+   "clip": "VID_20241210_023719_329",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 58,
+   "stil": "marker",
+   "akzent": "petrol",
+   "cta": "Folg mir, wenn du dich wiedererkennst",
+   "a": [
+    "Network-Produkte für über 500 Franken weggeworfen.",
+    "Gekauft hatte ich sie nur für die Provision."
+   ],
+   "b": [
+    "Für etwas mehr Provision habe ich jeden Monat mehr gekauft,",
+    "als wir brauchten."
+   ]
+  },
+  {
+   "nr": "06",
+   "datum": "2026-11-06",
+   "neu": false,
+   "clip": "laptop-garten-ton",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 50,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Schick das einer Mama im Büro",
+   "a": [
+    "Um acht im Büro die Rollläden runter,",
+    "damit ich nicht schon klatschnass war."
+   ],
+   "b": [
+    "Die Kinder, der Haushalt und mein Network",
+    "mussten in die Lücken meiner Bürozeiten passen."
+   ]
+  },
+  {
+   "nr": "10",
+   "datum": "2026-11-07",
+   "neu": true,
+   "clip": "lv_0_20250419093123",
+   "ab": 2.0,
+   "dauer": 7.5,
+   "hoehe": 58,
+   "stil": "marker",
+   "akzent": "orange",
+   "cta": "Kommentier NISCHE",
+   "rolle": "Beziehung",
+   "mit": "Tipp: eine Frage, die ihr Thema freilegt",
+   "a": [
+    "Wenn deine Provision diesen Monat wieder genau",
+    "für deine eigene Bestellung reicht."
+   ],
+   "b": [
+    "„Es läuft so okay“, sagst du, und meinst:",
+    "Es reicht knapp für die Eigenbestellung."
+   ],
+   "caption": "Und dann sagst du allen, es laufe so okay, weil die Wahrheit irgendwie peinlich klingt.\n\nIch kenne das Gefühl, und ich weiss auch, woher es kommt. Solange dein ganzes Einkommen an Bestellungen hängt, fängst du jeden Monat bei null an, egal wie viel du vorher gemacht hast.\n\nWas daneben fehlt, ist etwas, das dir gehört: ein Thema, für das man dich kennt, und dazu irgendwann ein eigenes kleines Angebot.\n\nWenn du nicht weisst, was dein Thema sein könnte, schlägt dir mein Nischengenerator in ein paar Minuten drei vor, passend zu dir und deinem Produkt.\n\nKommentier NISCHE, dann schick ich dir den Link."
+  },
+  {
+   "nr": "17",
+   "datum": "2026-11-08",
+   "neu": true,
+   "clip": "VID_20241204_015139_410",
+   "ab": 2.0,
+   "dauer": 7.5,
+   "hoehe": 62,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Kommentier NISCHE",
+   "rolle": "Beziehung",
+   "mit": "Tipp: Fragen der anderen als Themenquelle",
+   "a": [
+    "„Ich weiss gar nicht, was ich",
+    "ausser dem Produkt anbieten soll.“"
+   ],
+   "b": [
+    "Jemand fragt „Was machst du?“,",
+    "und dir fällt nur der Name deiner Firma ein."
+   ],
+   "caption": "Das ist der Moment, in dem du merkst, dass du seit Jahren über die Firma redest und kaum über dich.\n\nDabei wissen die Leute um dich herum längst, wobei du ihnen hilfst. Sie fragen dich nämlich immer wieder dasselbe, und genau darin steckt dein Thema.\n\nMach heute einen Versuch: Schreib die drei Fragen auf, die dir Freundinnen in letzter Zeit gestellt haben, und streich alles, was mit deinem Produktnamen zu tun hat. Was übrig bleibt, ist deine Spur.\n\nWenn du dabei Hilfe willst, macht das mein Nischengenerator mit dir.\n\nKommentier NISCHE, dann schick ich dir den Link."
+  },
+  {
+   "nr": "08",
+   "datum": "2026-11-09",
+   "neu": false,
+   "clip": "VID_262830621_124659_125",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 22,
+   "stil": "marker",
+   "akzent": "orange",
+   "cta": "Kommentier NISCHE",
+   "a": [
+    "Wenn du beim Elternabend überlegst,",
+    "ob du die Mama neben dir aufs Business ansprichst."
+   ],
+   "b": [
+    "„Und, was machst du so?“",
+    "Und du erzählst wieder nichts von deinem Business."
+   ]
+  },
+  {
+   "nr": "09",
+   "datum": "2026-11-10",
+   "neu": false,
+   "clip": "VID_20241210_023616_487",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 52,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Schreib mir dein Wort in die Kommentare",
+   "a": [
+    "Ich war so auf Autopilot,",
+    "dass mein Auto mit meinen vier Kindern losfuhr."
+   ],
+   "b": [
+    "Mein Auto rollte los, ohne mich,",
+    "aber mit allen vier Kindern drin."
+   ]
+  },
+  {
+   "nr": "19",
+   "datum": "2026-11-11",
+   "neu": true,
+   "clip": "20260505_113618",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 58,
+   "stil": "marker",
+   "akzent": "petrol",
+   "cta": "Kommentier NISCHE",
+   "rolle": "Vertrauen",
+   "mit": "Inspiration: das Thema liegt im eigenen Alltag",
+   "a": [
+    "Vor der dritten Geburt schrieb ich meinem Mann auf,",
+    "was ich jeden Tag erledige."
+   ],
+   "b": [
+    "Du machst so viel nebenbei,",
+    "dass es niemandem auffällt, nicht einmal dir."
+   ],
+   "caption": "Die Liste sollte nur dafür sorgen, dass zu Hause alles weiterläuft, während ich im Spital bin.\n\nBeim Schreiben habe ich gemerkt, wie viel ich als Mama nebenbei organisiere, und danach habe ich meinen Alltag so umgebaut, dass alles aufgeht und Zeit für mich bleibt.\n\nGenau daraus ist mein erstes eigenes Angebot entstanden. Es ging um das, was ich ohnehin jeden Tag gemacht habe. Über dieses Angebot kam ich mit Mamas ins Gespräch, die ich vorher nicht kannte, und erst danach kam mein Network-Produkt zur Sprache.\n\nWenn du wissen willst, was in deinem Alltag steckt: Mein Nischengenerator schlägt dir drei Themen vor.\n\nKommentier NISCHE, dann schick ich dir den Link."
+  },
+  {
+   "nr": "20",
+   "datum": "2026-11-12",
+   "neu": true,
+   "clip": "VID_262901130_095542_524",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 22,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Kommentier NISCHE",
+   "rolle": "Vertrauen",
+   "mit": "Tipp: die häufigste Frage ist das Thema",
+   "a": [
+    "„Krass, wie machst du das mit vier Kindern?“",
+    "Das fragen mich Mamas immer wieder."
+   ],
+   "b": [
+    "Was andere Mamas mich am häufigsten fragen,",
+    "hat nichts mit meinem Produkt zu tun."
+   ],
+   "caption": "Lange habe ich diese Frage einfach weggelächelt, als wäre sie ein Kompliment und sonst nichts.\n\nDabei war sie der deutlichste Hinweis, den ich je bekommen habe. Die Leute wollten von mir wissen, wie ich Alltag, Kinder und Arbeit unter einen Hut bringe, und genau darüber habe ich angefangen zu reden.\n\nSchau mal, welche Frage dir am häufigsten gestellt wird. Eine Frage zu dir, nicht zu deinem Produkt. Dort liegt sehr oft dein Thema.\n\nMein Nischengenerator hilft dir, diese Spur in drei Themen zu übersetzen.\n\nKommentier NISCHE, dann schick ich dir den Link."
+  },
+  {
+   "nr": "13",
+   "datum": "2026-11-13",
+   "neu": true,
+   "clip": "VID_20260706_073424_227",
+   "ab": 2.0,
+   "dauer": 7.5,
+   "hoehe": 55,
+   "stil": "marker",
+   "akzent": "orange",
+   "cta": "Kommentier NISCHE",
+   "rolle": "Beziehung",
+   "mit": "Inspiration: ein zweites Standbein, das dir gehört",
+   "a": [
+    "Nachts um elf: Was bleibt mir,",
+    "wenn die Firma den Bonusplan ändert?"
+   ],
+   "b": [
+    "Dein ganzes Einkommen hängt an einem Bonusplan,",
+    "den du nicht selbst bestimmst."
+   ],
+   "caption": "Das ist kein Gedanke gegen deine Firma, er ist einfach ehrlich.\n\nWer nur an einem Plan hängt, den jemand anderes schreibt, kann nichts tun, wenn sich dort etwas ändert. Mir hat genau dieses Gefühl gezeigt, dass ich etwas daneben brauche, das mir gehört.\n\nBei mir ist das ein eigenes Thema mit eigenen kleinen Angeboten, und das Network läuft weiter. Beides stützt sich gegenseitig, statt dass alles an einem Faden hängt.\n\nDer erste Schritt ist dein Thema. Mein Nischengenerator schlägt dir drei vor.\n\nKommentier NISCHE, dann schick ich dir den Link."
+  },
+  {
+   "nr": "15",
+   "datum": "2026-11-14",
+   "neu": true,
+   "clip": "20260618_093828",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 62,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Schick das einer Network-Freundin",
+   "rolle": "Beziehung",
+   "mit": "Tipp: feste Fenster statt Dauer-Handy",
+   "a": [
+    "Du sitzt auf dem Spielplatz",
+    "und tippst schon wieder Nachrichten für dein Network."
+   ],
+   "b": [
+    "„Mama, schon wieder am Handy?“, fragt dein Kind.",
+    "Und du schreibst gerade fürs Network."
+   ],
+   "caption": "Und das schlechte Gewissen sitzt mit auf der Bank.\n\nDas Problem ist selten die Zeit, die du hast. Es ist, dass dein Business keine feste Zeit hat und deshalb überall ein bisschen stattfindet, am liebsten genau dann, wenn die Kinder dich brauchen.\n\nIch arbeite vor allem vormittags, rund drei Stunden, dazu an zwei festen Nachmittagen. Dazwischen hat das Business Pause. Nicht immer perfekt, aber es gibt einen Rhythmus, auf den sich alle verlassen können.\n\nWelche zwei Stunden in deiner Woche könnten fix dir und deinem Business gehören?\n\nSchick das einer Network-Freundin, die gerade auch am Spielplatz tippt."
+  },
+  {
+   "nr": "16",
+   "datum": "2026-11-15",
+   "neu": true,
+   "clip": "VID_20250106_053410_967",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 58,
+   "stil": "marker",
+   "akzent": "petrol",
+   "cta": "Folg mir, wenn du dich wiedererkennst",
+   "rolle": "Aufmerksamkeit",
+   "mit": "Inspiration: das eigene Business ernst nehmen",
+   "a": [
+    "„Ich mach das nur nebenbei“, sagst du,",
+    "damit es keiner ernst nimmt."
+   ],
+   "b": [
+    "Du redest dein Business klein,",
+    "bevor es jemand anderes tun kann."
+   ],
+   "caption": "Nur nebenbei, so ein bisschen, mal schauen. Ich kenne diese Wörter, und ich weiss, wofür sie da sind: Sie schützen dich davor, dass es peinlich wird, falls es nicht klappt.\n\nNur schützen sie dich auch davor, dass es klappt. Wer das eigene Business kleinredet, plant es auch klein, und dann bleibt es genau so, wie du es beschreibst.\n\nNebenbei ist übrigens völlig in Ordnung, ich arbeite auch nicht Vollzeit. Klein reden musst du es deswegen nicht.\n\nWenn du dich hier wiedererkennst, bleib hier. Genau darum geht es auf diesem Profil."
+  },
+  {
+   "nr": "18",
+   "datum": "2026-11-16",
+   "neu": true,
+   "clip": "gartenstuhl-ton",
+   "ab": 2.0,
+   "dauer": 7.5,
+   "hoehe": 62,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Schick das einer Network-Freundin",
+   "rolle": "Beziehung",
+   "mit": "Inspiration: hinter fremden Erfolgen steckt ein Plan",
+   "a": [
+    "Bei ihr läuft es mühelos,",
+    "und du fragst dich, was mit dir falsch ist."
+   ],
+   "b": [
+    "„Vielleicht bin ich nicht der Typ dafür.“",
+    "Den Satz sagst du dir zu oft."
+   ],
+   "caption": "Mit dir stimmt alles. Was du siehst, ist ihr bester Moment, und was du nicht siehst, ist der Plan dahinter.\n\nWenn es bei jemandem mühelos aussieht, steckt fast immer etwas dahinter, das man im Feed nicht sieht: ein klares Thema, ein fester Rhythmus und viele Versuche, die niemand gepostet hat.\n\nIch habe mein erstes Network nach drei Jahren aufgegeben. Am Typ lag es nicht, mir fehlte ein Plan, der zu meinem Leben passt.\n\nSchick das einer Freundin, die sich gerade wieder vergleicht."
+  },
+  {
+   "nr": "12",
+   "datum": "2026-11-17",
+   "neu": true,
+   "clip": "Kopie von Reels Test 1_20260901_192856_0000",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 62,
+   "stil": "marker",
+   "akzent": "orange",
+   "cta": "Folg mir, wenn du dich wiedererkennst",
+   "rolle": "Aufmerksamkeit",
+   "mit": "Inspiration: zuhören statt verkaufen",
+   "a": [
+    "Deine Freundin erzählt von ihren Schlafproblemen,",
+    "und du denkst sofort an dein Produkt."
+   ],
+   "b": [
+    "Das eigene Produkt ist nicht die Lösung",
+    "für jedes Problem deiner Freundinnen."
+   ],
+   "caption": "Ich verstehe den Reflex, du willst helfen und hast etwas, von dem du überzeugt bist.\n\nNur hört deine Freundin ab diesem Moment nicht mehr dir zu, sie hört eine Verkäuferin. Und beim nächsten Mal erzählt sie dir ihr Problem lieber nicht mehr.\n\nWas mich daran am meisten nervt: Es macht genau die Beziehungen kaputt, die dir am wichtigsten sind. Hör zu, frag nach, und wenn sie wissen will, was dir hilft, erzählt sie es dir von selbst.\n\nWenn du dich hier wiedererkennst, bleib hier."
+  },
+  {
+   "nr": "21",
+   "datum": "2026-11-18",
+   "neu": true,
+   "clip": "VID_20260909_020211_325",
+   "ab": 2.0,
+   "dauer": 7.5,
+   "hoehe": 58,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Folg mir, wenn du dich wiedererkennst",
+   "rolle": "Aufmerksamkeit",
+   "mit": "Tipp: Qualität vor Menge",
+   "a": [
+    "„Poste einfach jeden Tag.“",
+    "Ich halte diesen Rat für komplett falsch."
+   ],
+   "b": [
+    "Du postest jeden Tag, und trotzdem fragt niemand,",
+    "was man bei dir bekommt."
+   ],
+   "caption": "Jeden Tag posten klingt nach Fleiss. In Wahrheit postet man dann oft einfach irgendwas, damit etwas da ist.\n\nReichweite nützt dir nichts, wenn die Leute danach nicht wissen, was sie bei dir bekommen und was sie davon haben. Lieber weniger Beiträge, dafür jeder mit einem klaren Grund, warum jemand bleiben sollte.\n\nFrag dich vor dem nächsten Beitrag: Was nimmt eine Mama mit, die mich noch nicht kennt?\n\nWenn du dich hier wiedererkennst, bleib hier."
+  },
+  {
+   "nr": "29",
+   "datum": "2026-11-19",
+   "neu": true,
+   "clip": "20260824_140042",
+   "ab": 2.0,
+   "dauer": 7.5,
+   "hoehe": 30,
+   "stil": "marker",
+   "akzent": "petrol",
+   "cta": "Folg mir, wenn du dich wiedererkennst",
+   "rolle": "Vertrauen",
+   "mit": "Inspiration: Reaktion zählt mehr als Reichweite",
+   "a": [
+    "Dein Beitrag bekommt viele Herzen,",
+    "und gekauft hat trotzdem wieder niemand."
+   ],
+   "b": [
+    "Fast 2'000 Leute haben mein Reel gesehen.",
+    "Kommentiert hat niemand."
+   ],
+   "caption": "Das ist mir im Oktober passiert, mit einem ganz normalen Reel aus meinem Alltag.\n\nViele haben es gesehen, kaum jemand hat reagiert. Gesehen werden ist eben noch nicht dasselbe wie gemeint sein. Wer sich angesprochen fühlt, schreibt etwas, und wer nur kurz hängen bleibt, scrollt weiter.\n\nSeitdem schaue ich bei jedem Beitrag zuerst, ob er einer bestimmten Mama etwas Konkretes mitgibt, und erst dann, wie weit er läuft.\n\nWenn du dich hier wiedererkennst, bleib hier."
+  },
+  {
+   "nr": "22",
+   "datum": "2026-11-20",
+   "neu": true,
+   "clip": "getraenk-ton",
+   "ab": 0.2,
+   "dauer": 7.2,
+   "hoehe": 62,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Folg mir, wenn du dich wiedererkennst",
+   "rolle": "Aufmerksamkeit",
+   "mit": "Tipp: verkaufen geht ohne grosse Zahlen",
+   "a": [
+    "Du glaubst, du brauchst zuerst 10'000 Follower,",
+    "bevor jemand bei dir kauft."
+   ],
+   "b": [
+    "„Wenn ich mal mehr Follower habe, dann …“",
+    "Diesen Satz sagst du seit Monaten."
+   ],
+   "caption": "Ich habe rund 2'000 Follower, und verkauft habe ich trotzdem.\n\nEntscheidend ist, ob die richtigen Leute da sind und wissen, wobei du ihnen hilfst. Ein paar Frauen, die genau dein Thema suchen, bringen mehr als viele, die nur zufällig vorbeikommen.\n\nWarte also nicht auf die grosse Zahl. Fang mit denen an, die schon da sind, und sag ihnen klar, was sie bei dir bekommen.\n\nWenn du dich hier wiedererkennst, bleib hier."
+  },
+  {
+   "nr": "27",
+   "datum": "2026-11-21",
+   "neu": true,
+   "clip": "Kopie von Reels Test 1_20260701_092659_0000",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 62,
+   "stil": "marker",
+   "akzent": "orange",
+   "cta": "Schick das einer Network-Freundin",
+   "rolle": "Beziehung",
+   "mit": "Tipp: ein fester Rhythmus",
+   "a": [
+    "Seit Jahren arbeitest du immer dann,",
+    "wenn gerade alle schlafen."
+   ],
+   "b": [
+    "Dein Business passiert zwischen Abwasch und Gutenachtgeschichte,",
+    "nie zu einer festen Zeit."
+   ],
+   "caption": "Und dann wunderst du dich, warum du so müde bist und trotzdem nichts vorwärtsgeht.\n\nWer nur in den Lücken arbeitet, arbeitet immer gehetzt. Es gibt keinen Anfang und kein Ende, also fühlt sich nichts erledigt an.\n\nMir hilft kein starres Muster, aber ein fester Rhythmus: Ich weiss genau, wann was dran ist. Montag- und Donnerstagnachmittag sind bei mir Arbeitszeit, der Dienstagnachmittag bleibt frei.\n\nSchick das einer Freundin, die gerade wieder nachts am Handy sitzt."
+  },
+  {
+   "nr": "11",
+   "datum": "2026-11-22",
+   "neu": true,
+   "clip": "VID_20241210_023310_513",
+   "ab": 3.0,
+   "dauer": 7.5,
+   "hoehe": 58,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Folg mir, wenn du dich wiedererkennst",
+   "rolle": "Vertrauen",
+   "mit": "Warum mit mir: ehrliche Zahlen statt Glanz",
+   "a": [
+    "Über mein Business wurden lange Sprüche gemacht,",
+    "auch von meinem eigenen Mann."
+   ],
+   "b": [
+    "Dein Mann fragt, wie es läuft.",
+    "Du sagst „gut“ und wechselst das Thema."
+   ],
+   "caption": "Ich verdiene bis heute nicht so viel wie früher in meinem Vollzeitjob, das sage ich ganz offen.\n\nSprüche macht trotzdem niemand mehr. Diskutiert habe ich darüber irgendwann nicht mehr, ich habe einfach weitergemacht und gezeigt, dass es mir ernst ist.\n\nEin eigenes Business wird oft belächelt, gerade von den Menschen, die einem am nächsten sind. Das tut weh, und es ist kein Grund, aufzuhören.\n\nWenn du dich hier wiedererkennst, bleib hier."
+  },
+  {
+   "nr": "14",
+   "datum": "2026-11-23",
+   "neu": true,
+   "clip": "lv_0_20240508113511",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 58,
+   "stil": "marker",
+   "akzent": "orange",
+   "cta": "Kommentier NISCHE",
+   "rolle": "Vertrauen",
+   "mit": "Warum mit mir: der eigene Grund",
+   "a": [
+    "Ich wollte eigenes Geld, auch fürs Alter,",
+    "und nicht von meinem Mann abhängig sein."
+   ],
+   "b": [
+    "„Was, wenn mein Mann morgen weg ist?“",
+    "Den Gedanken schiebst du jeden Abend weg."
+   ],
+   "caption": "Das klingt hart, und trotzdem war es einer meiner wichtigsten Gründe für die Selbständigkeit.\n\nMit Teilzeit, Kindern und einem kleinen Network-Einkommen bleibt fürs Alter oft wenig, das wirklich dir gehört. Das ist kein Misstrauen gegen den Partner, das ist Vorsorge.\n\nSeit Mai 2025 gibt es bei mir keinen Monat mehr ohne Einkommen aus meiner Selbständigkeit. Der Weg dorthin hat mit einem eigenen Thema angefangen.\n\nWenn du deins suchst, schlägt dir mein Nischengenerator drei vor.\n\nKommentier NISCHE, dann schick ich dir den Link."
+  },
+  {
+   "nr": "30",
+   "datum": "2026-11-24",
+   "neu": true,
+   "clip": "garten-graben-ton",
+   "ab": 2.0,
+   "dauer": 7.5,
+   "hoehe": 25,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Folg mir, wenn du dich wiedererkennst",
+   "rolle": "Vertrauen",
+   "mit": "Warum mit mir: es geht mit wenig Zeit",
+   "a": [
+    "Achtzehn Stunden pro Woche,",
+    "mehr Zeit habe ich für mein Business nicht."
+   ],
+   "b": [
+    "„Ich habe keine Zeit für ein eigenes Business.“",
+    "Ich habe auch nur 18 Stunden."
+   ],
+   "caption": "Vier Kinder, ein Haushalt und ein Garten, der nie fertig wird. Mehr als rund 18 Stunden pro Woche gibt mein Leben gerade nicht her.\n\nDeshalb mache ich nicht alles, was man angeblich machen muss. Ich mache weniger, dafür das Richtige, und das Wichtigste läuft über einen festen Rhythmus.\n\nWenig Zeit ist kein Grund, es nicht zu tun. Sie ist ein Grund, es klüger zu tun.\n\nWenn du dich hier wiedererkennst, bleib hier."
+  },
+  {
+   "nr": "25",
+   "datum": "2026-11-25",
+   "neu": true,
+   "clip": "20260417_150418",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 25,
+   "stil": "marker",
+   "akzent": "orange",
+   "cta": "Kommentier NISCHE",
+   "rolle": "Vertrauen",
+   "mit": "Warum mit mir: der zweite Anlauf",
+   "a": [
+    "2021 habe ich mein erstes Network aufgegeben,",
+    "nach drei Jahren voller Hoffnung."
+   ],
+   "b": [
+    "2018 bin ich ins Network gestartet,",
+    "mit viel Hoffnung und wenig Klarheit."
+   ],
+   "caption": "Am Produkt lag es nicht. Mir fehlte ein Plan, der zu meinem Leben passt.\n\n2023 habe ich neu angefangen, diesmal mit einem eigenen Thema und einem eigenen Plan, und das Network läuft daneben mit.\n\nWenn du gerade ans Aufhören denkst: Vielleicht reicht es, es anders zu machen. Der Anfang ist bei mir immer das Thema.\n\nMein Nischengenerator schlägt dir drei vor, passend zu dir und deinem Produkt.\n\nKommentier NISCHE, dann schick ich dir den Link."
+  },
+  {
+   "nr": "34",
+   "datum": "2026-11-26",
+   "neu": true,
+   "clip": "Kopie von Reels Test 1_20260625_212319_0000",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 25,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Folg mir, wenn du dich wiedererkennst",
+   "rolle": "Aufmerksamkeit",
+   "mit": "Tipp: einladen statt entschuldigen",
+   "a": [
+    "„Ich will dir nichts verkaufen, aber …“",
+    "Und schon hört deine Freundin nicht mehr zu."
+   ],
+   "b": [
+    "Du entschuldigst dich fürs Verkaufen,",
+    "bevor du gesagt hast, was du anbietest."
+   ],
+   "caption": "Verkaufen ist Verkaufen, und dafür muss sich niemand entschuldigen.\n\nWer sich vorher entschuldigt, sagt in Wahrheit: Was jetzt kommt, ist mir unangenehm. Und genau so kommt es dann auch an.\n\nMein Satz dafür ist ganz schlicht: Wenn du da Hilfe brauchst, kann ich dich gerne unterstützen. Kein Druck, keine Ausrede, und die andere entscheidet selbst.\n\nWenn du dich hier wiedererkennst, bleib hier."
+  },
+  {
+   "nr": "23",
+   "datum": "2026-11-27",
+   "neu": true,
+   "clip": "Kopie von Reels Test 1_20260713_140938_0000",
+   "ab": 0.1,
+   "dauer": 7.2,
+   "hoehe": 22,
+   "stil": "marker",
+   "akzent": "petrol",
+   "cta": "Folg mir, wenn du dich wiedererkennst",
+   "rolle": "Aufmerksamkeit",
+   "mit": "Inspiration: alles ist lernbar, es braucht Zeit",
+   "a": [
+    "„Investier in dich, auch wenn es knapp ist.“",
+    "Ich kann es nicht mehr hören."
+   ],
+   "b": [
+    "Niemand muss sich verschulden, um ein Business aufzubauen,",
+    "auch nicht für mich."
+   ],
+   "caption": "Heute ist Black Friday, und ich mache keinen Rabatt. Ich mache dir auch keinen Druck.\n\nMan kann sich alles selbst beibringen, mit Büchern, Videos und Ausprobieren. Das braucht einfach Zeit. Wer diese Zeit nicht hat, kann eine fertige Strategie übernehmen, das ist alles.\n\nWas mich an der Branche aufregt: Leuten einzureden, sie müssten investieren, und ihnen dann noch zu zeigen, wie sie an Geld kommen. Das ist Bullshit.\n\nWenn du dich hier wiedererkennst, bleib hier."
+  },
+  {
+   "nr": "40",
+   "datum": "2026-11-28",
+   "neu": true,
+   "clip": "VID-20260524-WA0008",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 25,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Folg mir, wenn du dich wiedererkennst",
+   "rolle": "Aufmerksamkeit",
+   "mit": "Inspiration: Zusammenarbeit statt Kampf",
+   "a": [
+    "Mich nervt der Konkurrenzkampf unter Networkerinnen",
+    "mehr als jede Absage."
+   ],
+   "b": [
+    "Wenn Networkerinnen sich gegenseitig die Leute abwerben,",
+    "verlieren am Ende alle."
+   ],
+   "caption": "Lautes Abwerben und Konkurrenzkampf, das regt mich an der Branche wirklich auf.\n\nDabei gibt es genug Menschen für alle. Wer ein eigenes Thema hat, muss niemandem etwas wegnehmen, weil die Leute wegen ihr kommen und nicht wegen eines Rabatts.\n\nIch wünsche mir mehr Frauen, die sich gegenseitig weiterempfehlen, statt sich heimlich Teampartnerinnen abzujagen.\n\nWenn du dich hier wiedererkennst, bleib hier."
+  },
+  {
+   "nr": "36",
+   "datum": "2026-11-29",
+   "neu": true,
+   "clip": "VID-20260524-WA0010",
+   "ab": 1.0,
+   "dauer": 7.5,
+   "hoehe": 22,
+   "stil": "marker",
+   "akzent": "orange",
+   "cta": "Kommentier NISCHE",
+   "rolle": "Beziehung",
+   "mit": "Tipp: Thema statt Firma",
+   "a": [
+    "Du überlegst, die Firma zu wechseln,",
+    "weil es bei der jetzigen nicht läuft."
+   ],
+   "b": [
+    "„Bei meiner Firma ist das halt anders“, sagst du,",
+    "und es läuft trotzdem nicht."
+   ],
+   "caption": "Ein Firmenwechsel fühlt sich nach Neuanfang an. Oft nimmst du aber genau das mit, was vorher nicht funktioniert hat.\n\nWenn die Leute dich nur über ein Produkt kennen, fängst du mit jedem neuen Produkt wieder bei null an. Was bleibt, ist das, wofür man dich kennt, und das gehört dir, egal bei welcher Firma.\n\nBevor du wechselst, schau dir dein Thema an. Mein Nischengenerator schlägt dir drei vor.\n\nKommentier NISCHE, dann schick ich dir den Link."
+  },
+  {
+   "nr": "37",
+   "datum": "2026-11-30",
+   "neu": true,
+   "clip": "20260417_153701",
+   "ab": 2.0,
+   "dauer": 7.5,
+   "hoehe": 25,
+   "stil": "serif",
+   "akzent": "orange",
+   "cta": "Schick das einer Network-Freundin",
+   "rolle": "Beziehung",
+   "mit": "Inspiration: aufhören oder anders machen",
+   "a": [
+    "„Ich habe schon so viel Geld reingesteckt.“",
+    "Darum machst du weiter, obwohl nichts läuft."
+   ],
+   "b": [
+    "Du rechnest lieber nicht nach,",
+    "was dich dein Network bisher gekostet hat."
+   ],
+   "caption": "Ich kenne das, ich habe selbst Produkte für über 500 Franken weggeworfen, die ich nur für die Provision gekauft hatte.\n\nWas du schon ausgegeben hast, holst du nicht zurück, indem du einfach so weitermachst. Die ehrliche Frage ist eine andere: Willst du aufhören, oder willst du es anders machen?\n\nBeides ist in Ordnung. Nur so weiter wie bisher ist keine Antwort.\n\nSchick das einer Freundin, die sich diese Frage gerade stellt."
+  },
+  {
+   "nr": "32",
+   "datum": "2026-12-01",
+   "neu": true,
+   "clip": "Kopie von Reels Test 1_20260901_192918_0000",
+   "ab": 0.5,
+   "dauer": 7.5,
+   "hoehe": 25,
+   "stil": "marker",
+   "akzent": "orange",
+   "cta": "Kommentier NISCHE",
+   "rolle": "Beziehung",
+   "mit": "Inspiration: der erste Schritt ist klein",
+   "a": [
+    "„Nächstes Jahr wird alles anders.“",
+    "Das hast du letztes Jahr auch gesagt."
+   ],
+   "b": [
+    "Seit Jahren sagst du,",
+    "dass es nächstes Jahr endlich richtig losgeht."
+   ],
+   "caption": "Der Dezember ist da, und mit ihm dieser Satz.\n\nEin neues Jahr ändert daran nichts. Was etwas ändert, ist ein erster Schritt, der so klein ist, dass du ihn diese Woche machen kannst. Bei mir war das ein Thema, für das man mich kennen soll.\n\nWenn du deins noch suchst, nimm dir zehn Minuten dafür, nicht bis Januar. Mein Nischengenerator schlägt dir drei Themen vor.\n\nKommentier NISCHE, dann schick ich dir den Link."
+  }
+ ]
+}
