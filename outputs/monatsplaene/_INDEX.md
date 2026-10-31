@@ -20,3 +20,4 @@ Auto-Index aller Files in `outputs/monatsplaene/`. Siehe [[_MOCs/MOC-Produkte-Fu
 - [[2026-10-mentoring]]
 - [[2026-11-doterra]]
 - [[2026-11-mentoring]]
+- [[2026-12-mentoring]]

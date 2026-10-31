@@ -941,6 +941,36 @@
       },
       "produkttreppe_anschluss": "offen — als Bump am Tool-Workshop vorgeschlagen (Bauplan), Kasse fehlt noch",
       "launched_on": null
+    },
+    {
+      "id": "neustart-2027",
+      "name": "Neustart 2027 · Jahresplanungs-Workshop (gratis, live Do 17.12.2026 09:00, offener MBA-Call)",
+      "status": "in-aufbau",
+      "profile": "mentoring",
+      "typ": "0€ Leadmagnet · Live-Workshop mit Aufzeichnung",
+      "preis_chf": 0,
+      "traffic_quellen": {
+        "manychat_keyword": "NEUSTART",
+        "wordpress_landing": "https://mumlifebalance.ch/neustart-2027/"
+      },
+      "danke_seite": "https://mumlifebalance.ch/neustart-2027-danke/",
+      "produkttreppe_anschluss": "→ Mum Business Academy 997 (/mba/), Pitch 17.–20.12.",
+      "kasse": "keine (gratis, AC-Formular)",
+      "termine": {
+        "anmeldung_ab": "2026-11-30",
+        "live": "2026-12-17T09:00",
+        "pitch_bis": "2026-12-20"
+      },
+      "paket": "outputs/produkte/jahresplanung/angebot/",
+      "ac_integration": {
+        "eintrag_tag_name": "0€ Jahresplanung",
+        "eintrag_tag_id": null,
+        "formular": null,
+        "automation": "0€ Jahresplanung (noch anzulegen)",
+        "liste": 2
+      },
+      "problem": "Sie plant ihr Business von Monat zu Monat, Angebote fallen in die Ferien, nach einem Angebot kommt ein Loch.",
+      "transformation": "Ihr Jahr 2027 auf einem Blatt: Familie zuerst, ein Fokus je Monat, Lücken und Ziel gerechnet, der Januar steht."
     }
   ],
   "produkttreppe_mentoring": [

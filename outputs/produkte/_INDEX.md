@@ -107,6 +107,21 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[_INDEX]]
 - [[notion-eintrag]]
 
+### 📁 jahresplanung
+
+- [[00-bauplan]]
+- [[00-befund]]
+- [[00-paket]]
+- [[01-aufbau]]
+- [[02-salespage]]
+- [[03-danke-seite]]
+- [[04-mails]]
+- [[05-storys]]
+- [[06-feed]]
+- [[07-automation]]
+- [[08-anzeigen]]
+- [[09-einrichten]]
+
 ### 📁 ki-treppe
 
 - [[00-markt-research]]

@@ -1,0 +1,78 @@
+/* ============================================================
+   NEUSTART 2027 — Effekt der Anmeldeseite Jahresplanungs-Workshop
+   Reines CSS (WordPress blockt Skripte). Klassen mit Vorsilbe nj-,
+   damit der Block im Customizer nichts anderes trifft.
+   1 · Kalenderblatt: 31. Dezember 2026 blättert nach unten weg, darunter
+       liegt der 1. Januar 2027.
+   2 · Funken: steigen im Hero langsam auf und funkeln.
+   Wer weniger Bewegung eingestellt hat, sieht das Endbild ohne Bewegung.
+   Quelle: scripts/salespage-design/jahresplanung-effekt.css
+   ============================================================ */
+.nj-hero{position:relative;overflow:hidden;}
+.nj-hero > .wrap{position:relative;z-index:2;}
+
+/* --- Funken --- */
+.nj-funken{position:absolute;inset:0;pointer-events:none;z-index:1;}
+.nj-funken i{position:absolute;bottom:-20px;width:6px;height:6px;border-radius:50%;
+  background:radial-gradient(circle,#fff3e0 0,#ffc98a 40%,rgba(220,130,46,0) 72%);
+  box-shadow:0 0 10px 3px rgba(220,130,46,.55);opacity:0;
+  animation:nj-steigen 9s linear infinite, nj-funkeln 1.6s ease-in-out infinite alternate;}
+.nj-funken i:nth-child(1){left:6%;animation-delay:0s,0s;}
+.nj-funken i:nth-child(2){left:14%;animation-delay:2.4s,.4s;width:4px;height:4px;}
+.nj-funken i:nth-child(3){left:22%;animation-delay:5.1s,.8s;}
+.nj-funken i:nth-child(4){left:31%;animation-delay:1.2s,.2s;width:5px;height:5px;}
+.nj-funken i:nth-child(5){left:39%;animation-delay:6.8s,1s;width:4px;height:4px;}
+.nj-funken i:nth-child(6){left:47%;animation-delay:3.6s,.6s;}
+.nj-funken i:nth-child(7){left:55%;animation-delay:7.9s,.3s;width:5px;height:5px;}
+.nj-funken i:nth-child(8){left:63%;animation-delay:.7s,.9s;width:4px;height:4px;}
+.nj-funken i:nth-child(9){left:71%;animation-delay:4.4s,.5s;}
+.nj-funken i:nth-child(10){left:79%;animation-delay:2s,1.2s;width:5px;height:5px;}
+.nj-funken i:nth-child(11){left:87%;animation-delay:6s,.1s;width:4px;height:4px;}
+.nj-funken i:nth-child(12){left:94%;animation-delay:3s,.7s;}
+@keyframes nj-steigen{
+  0%{transform:translate(0,0);opacity:0;}
+  10%{opacity:1;}
+  50%{transform:translate(14px,-46vh);}
+  85%{opacity:.8;}
+  100%{transform:translate(-10px,-92vh);opacity:0;}
+}
+@keyframes nj-funkeln{from{filter:brightness(.7);}to{filter:brightness(1.5);}}
+
+/* --- Kalenderblatt --- */
+.nj-kal{position:relative;width:200px;height:228px;margin:0 auto 26px;perspective:900px;}
+.nj-kal .nj-ring{position:absolute;top:-9px;width:14px;height:24px;border-radius:7px;background:#29556d;
+  box-shadow:0 0 0 2px rgba(241,236,221,.35);z-index:4;}
+.nj-kal .nj-ring.l{left:52px;} .nj-kal .nj-ring.r{right:52px;}
+.nj-blatt{position:absolute;inset:0;border-radius:20px;overflow:hidden;background:#fffdf8;text-align:center;
+  box-shadow:0 22px 50px rgba(0,0,0,.45),0 0 40px rgba(220,130,46,.25);backface-visibility:hidden;}
+.nj-blatt .nj-mon{background:#dc822e;color:#fff;font-family:'Source Sans 3',Arial,sans-serif;font-weight:800;
+  letter-spacing:.16em;font-size:17px;padding:18px 0 12px;text-transform:uppercase;}
+.nj-blatt .nj-tag{font-family:'Philosopher',Impact,serif;font-size:104px;line-height:1;color:#29556d;padding:12px 0 0;}
+.nj-blatt .nj-jahr{font-family:'Source Sans 3',Arial,sans-serif;font-weight:800;font-size:20px;letter-spacing:.1em;color:#12828c;padding:6px 0 0;}
+.nj-blatt.nj-alt .nj-mon{background:#5d6b78;}
+.nj-blatt.nj-alt .nj-tag{color:#5d6b78;}
+.nj-blatt.nj-alt .nj-jahr{color:#8a96a0;}
+.nj-blatt.nj-alt{z-index:3;transform-origin:50% 0;animation:nj-blaettern 1.5s cubic-bezier(.55,.05,.4,1) 1.4s forwards;}
+.nj-blatt.nj-neu{z-index:2;animation:nj-leuchten 2.8s ease-in-out 3s infinite alternate;}
+@keyframes nj-blaettern{
+  0%{transform:rotateX(0);}
+  15%{transform:rotateX(-12deg);}
+  100%{transform:rotateX(-180deg) translateY(-30px);opacity:0;}
+}
+@keyframes nj-leuchten{
+  from{box-shadow:0 22px 50px rgba(0,0,0,.45),0 0 40px rgba(220,130,46,.25);}
+  to{box-shadow:0 22px 50px rgba(0,0,0,.45),0 0 70px rgba(220,130,46,.6);}
+}
+
+@media (max-width:600px){
+  .nj-kal{width:160px;height:184px;}
+  .nj-kal .nj-ring.l{left:40px;} .nj-kal .nj-ring.r{right:40px;}
+  .nj-blatt .nj-tag{font-size:80px;}
+  .nj-blatt .nj-mon{font-size:14px;padding:14px 0 9px;}
+  .nj-blatt .nj-jahr{font-size:16px;}
+}
+@media (prefers-reduced-motion:reduce){
+  .nj-funken{display:none;}
+  .nj-blatt.nj-alt{animation:none;opacity:0;}
+  .nj-blatt.nj-neu{animation:none;}
+}
