@@ -2606,55 +2606,52 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "d77a77850474",
-     "bestanden": false,
-     "gruende": [
-      "gedanke_gelesen: „Sprüche“ bleibt abstrakt; ohne den wörtlichen Satz des Mannes hört Sandra nicht ihren eigenen Abend, sondern nur Patricias Bilanz.",
-      "mikro_szene: „Lange“ und „heute“ sind Zeiträume, keine Szene: Es fehlen ein Moment, ein Ort und ein Satz, den man hört."
-     ],
+     "fingerabdruck": "3cea7d116b07",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Die Sprüche des Partners über das Network treffen Sandras echten Schmerz, das belächelte Ölhobby, und stehen als Geständnis da, nicht als Diagnose."
+       "warum": "Der Partner nimmt ihr Network nicht ernst und schickt sie zurück in den alten Job, genau Sandras Abhängigkeit vom Mann und das Gefühl, nur ein Hobby zu betreiben."
       },
       "gedanke_gelesen": {
-       "ja": false,
-       "warum": "„Sprüche“ bleibt abstrakt; ohne den wörtlichen Satz des Mannes hört Sandra nicht ihren eigenen Abend, sondern nur Patricias Bilanz."
+       "ja": true,
+       "warum": "Den Spruch des eigenen Mannes und das stumme Runterschlucken kennt Sandra aus ihrem «Ölhobby»-Alltag, auch wenn ihr früherer Beruf ein anderer war."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "So erzählt man es einer Freundin am Küchentisch, schlicht und ohne Fachwort."
+       "warum": "Wörtlicher Satz des Mannes und ein schlichtes «Ich hab geschwiegen», so erzählt man es einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "„Lange“ und „heute“ bilden einen sauberen zeitlichen Gegensatz, und kein Bindewort dreht den Sinn."
+       "warum": "«Doch» ist hier eine Abtönungspartikel im Zitat und kein Gegensatz-Bindewort; Zitat und Schweigen folgen logisch aufeinander, nichts verdreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook zeigt einen Wandel, verrät aber nicht, wodurch er kam, und nennt kein Angebot."
+       "warum": "Es gibt keine Lösung, kein Angebot und keine Auflösung, das Schweigen lässt das Ende offen."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Mein Network“ verortet die Welt sofort, auch ohne Vorwissen."
+       "warum": "«Mein Mann» und «mein Network» verorten die Welt sofort; «Beistandschaften» muss man nicht kennen, um zu verstehen, dass er sie zurück in den alten Beruf schickt."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "„Lange“ und „heute“ sind Zeiträume, keine Szene: Es fehlen ein Moment, ein Ort und ein Satz, den man hört."
+       "ja": true,
+       "warum": "Ein einzelner Moment mit wörtlichem Satz und ihrer Reaktion, keine Behauptung über das grosse Thema."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Es ist ein Geständnis in Ich-Form, und es ist belegt."
+       "warum": "Belegtes Zitat des Mannes plus Geständnis in Ich-Form («Ich hab geschwiegen»)."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Mann, Network und Belächeltwerden sind genau die Welt der Network-Mama."
+       "warum": "Network und der zweifelnde Mann sind der Kern der Network-Mama-Nische."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias eigene, ehrliche Geschichte mit einer schweren Phase passt zur Rolle Vertrauen."
+       "warum": "Vertrauen verlangt Patricias ehrliche Geschichte aus einer schweren Phase; das Schweigen öffnet glaubwürdig den Weg zu «ehrliche Zahlen statt Glanz»."
       }
      },
-     "vorschlag": "„[sein echter Spruch einsetzen]“ – das sagte mein Mann lange über mein Network. Heute kommt keiner mehr. (Der Spruch muss wörtlich von Patricia kommen; mit einem kurzen Spruch bleibt der Hook bei 10 bis 14 Wörtern, ein längerer gehört in die Caption.)",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
    },
@@ -2733,54 +2730,57 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "2ced3b643605",
+     "fingerabdruck": "1a0fdbfc1149",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: Es gibt keinen Ort, keine Uhrzeit und keinen Moment, nur eine Frage und eine Begründung, also eher eine Behauptung als eine Mikrogeschichte."
+      "15 Wörter (10–14)",
+      "gedanke_gelesen: Es ist Patricias Beobachtung aus ihrem Job, nicht Sandras eigener Gedanke um 23 Uhr. Sie fühlt sich darin nicht ertappt.",
+      "kuechentisch: „Altersarmut“ ist ein Zeitungs- und Amtswort, am Küchentisch sagt man „alte Frauen ohne Geld“.",
+      "mikro_szene: „Hörte ich oft“ fasst viele Momente zusammen, es gibt keinen einzelnen Moment, den man sieht."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Die Abhängigkeit vom Partner ist ein Teil von Sandras belegtem Kern-Pain, und die Angst davor ist echt."
+       "warum": "Es trifft Säule 2: Plan B und eigenes Geld. Die Angst, dass die paar hundert Franken aus dem Network fürs Alter nicht reichen, ist echt."
       },
       "gedanke_gelesen": {
-       "ja": true,
-       "warum": "„Was, wenn mein Mann geht?“ ist ein Gedanke, den sie nachts denkt und kaum laut sagt."
+       "ja": false,
+       "warum": "Es ist Patricias Beobachtung aus ihrem Job, nicht Sandras eigener Gedanke um 23 Uhr. Sie fühlt sich darin nicht ertappt."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Beide Sätze klingen wie gesprochen und enthalten kein Fachwort."
+       "ja": false,
+       "warum": "„Altersarmut“ ist ein Zeitungs- und Amtswort, am Küchentisch sagt man „alte Frauen ohne Geld“."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das „Darum“ verbindet die Angst richtig mit dem Entschluss, es dreht keinen Sinn."
+       "warum": "Kein Bindewort dreht den Sinn, und die Folge Altersarmut gehört, Network reicht nicht ist nachvollziehbar."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt nur ihren Wunsch nach eigenem Geld, aber keinen Weg und kein Angebot."
+       "warum": "Der Hook nennt weder eine Lösung noch ein Angebot."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Eigenes Geld neben dem Network“ verortet die Welt sofort, und 13 Wörter lassen sich in 7 Sekunden lesen."
+       "warum": "„Network“ und „Altersarmut“ verorten die Welt sofort, allerdings ist der Hook mit 15 Wörtern einen über der Bildgrenze von 14."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Es gibt keinen Ort, keine Uhrzeit und keinen Moment, nur eine Frage und eine Begründung, also eher eine Behauptung als eine Mikrogeschichte."
+       "warum": "„Hörte ich oft“ fasst viele Momente zusammen, es gibt keinen einzelnen Moment, den man sieht."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der innere Monolog als Zitat und das Ich-Geständnis sind beide vorhanden."
+       "warum": "Es ist ein belegtes Geständnis in Ich-Form, mit der Annahme „das Network reicht“ als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Der Hook nennt Network, Mann und eigenes Geld, also Säule 2 Plan B, mitten in der Nische."
+       "warum": "„Mein Network“ trifft die Nische direkt und klingt nach Network-Frau, auch wenn „Mama“ fehlt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias eigener Grund ist genau der Inhalt eines Vertrauensbeitrags."
+       "warum": "Patricias eigener, belegter Grund ist genau, was die Rolle Vertrauen und „Warum mit mir“ braucht."
       }
      },
-     "vorschlag": "„Was, wenn mein Mann geht?“, fragte ich mich [echten Moment mit Ort und Uhrzeit einsetzen, nur wenn's stimmt], mitten im Network. Die Platzhalter-Szene muss Patricia belegen. Fehlt ein echter Moment, bleibt der Originalhook ohne Szene stehen.",
+     "vorschlag": "Auf der Gemeinde hörte ich von alten Frauen ohne Geld. Network allein reicht nicht.",
      "modell": "claude-opus-5-5"
     }
    },
@@ -2810,111 +2810,113 @@
    "caption": "Vier Kinder, ein Haushalt und ein Garten, der nie fertig wird. Mehr als rund 18 Stunden pro Woche gibt mein Leben gerade nicht her.\n\nDeshalb mache ich nicht alles, was man angeblich machen muss. Ich mache weniger, dafür das Richtige, und das Wichtigste läuft über einen festen Rhythmus.\n\nWenig Zeit ist kein Grund, es nicht zu tun. Sie ist ein Grund, es klüger zu tun.\n\nWenn du dich hier wiedererkennst, bleib hier.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "eabd69151f58",
+     "fingerabdruck": "70dad7ab9064",
      "bestanden": false,
      "gruende": [
-      "bezug_der_zeilen: Ohne Verb bleibt offen, ob die 18 Stunden das Zitat widerlegen oder bestätigen (nur 18 Stunden verfügbar). Der Gegensatz ist nicht lesbar.",
-      "loesung_draussen: Die zweite Zeile beantwortet den Einwand schon („geht doch, ich mach's mit vier“) und schliesst damit den Bogen. Kein offenes Ende.",
-      "mikro_szene: Es sind eine Behauptung und Zahlen, kein Moment, kein Ort, keine Uhrzeit.",
-      "passt_zur_rolle: Vertrauen verlangt Patricias ehrliche Geschichte. Hier steht sie als Beweis gegen Sandras Ausrede (Ich als Beweis, schwach) und wirkt leicht belehrend."
+      "15 Wörter (10–14)",
+      "schmerz: Der Hook nennt Patricias Leistung, aber nicht Sandras Schmerz, dass mit Kindern keine Zeit bleibt.",
+      "gedanke_gelesen: Keinen dieser Sätze denkt Sandra um 23 Uhr selbst, es ist Patricias Bilanz statt ihr innerer Monolog.",
+      "kuechentisch: „Wo die herkommen, zeig ich dir“ ist Creator-Ankündigung und kein Satz, den man einer Freundin sagt.",
+      "bezug_der_zeilen: „Wo die herkommen“ bezieht sich grammatisch ebenso auf die Kinder wie auf die Stunden und kippt so unfreiwillig ins Komische.",
+      "mikro_szene: Eine Wochenstatistik ist eine Behauptung und kein Moment mit Ort und Uhrzeit.",
+      "gegner_gestaendnis_oder_zitat: Es gibt weder Gegner noch Zitat, und die Zahl ist ein Beweis statt eines Geständnisses mit sichtbarem Detail.",
+      "passt_zur_rolle: Vertrauen braucht Patricias ehrliche Geschichte, hier steht nur ein Leistungsbeleg („Ich als Beweis“), der schwächer trägt."
      ],
      "antworten": {
       "schmerz": {
-       "ja": true,
-       "warum": "Das Zitat trifft den echten Zeitmangel-Schmerz der Mama im Network."
+       "ja": false,
+       "warum": "Der Hook nennt Patricias Leistung, aber nicht Sandras Schmerz, dass mit Kindern keine Zeit bleibt."
       },
       "gedanke_gelesen": {
-       "ja": true,
-       "warum": "Den Satz denkt Sandra fast wörtlich, wenn sie wieder nichts gepostet hat."
+       "ja": false,
+       "warum": "Keinen dieser Sätze denkt Sandra um 23 Uhr selbst, es ist Patricias Bilanz statt ihr innerer Monolog."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "„Ich hab vier“ ist gesprochene Sprache, so sagt man es einer Freundin."
+       "ja": false,
+       "warum": "„Wo die herkommen, zeig ich dir“ ist Creator-Ankündigung und kein Satz, den man einer Freundin sagt."
       },
       "bezug_der_zeilen": {
        "ja": false,
-       "warum": "Ohne Verb bleibt offen, ob die 18 Stunden das Zitat widerlegen oder bestätigen (nur 18 Stunden verfügbar). Der Gegensatz ist nicht lesbar."
+       "warum": "„Wo die herkommen“ bezieht sich grammatisch ebenso auf die Kinder wie auf die Stunden und kippt so unfreiwillig ins Komische."
       },
       "loesung_draussen": {
-       "ja": false,
-       "warum": "Die zweite Zeile beantwortet den Einwand schon („geht doch, ich mach's mit vier“) und schliesst damit den Bogen. Kein offenes Ende."
+       "ja": true,
+       "warum": "Woher die Stunden kommen, bleibt offen, und ein Angebot kommt nicht vor."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network“ und „Kinder“ verorten die Welt sofort."
+       "warum": "„Network“ und „vier Kinder“ verorten sofort die Welt der Network-Mama."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Es sind eine Behauptung und Zahlen, kein Moment, kein Ort, keine Uhrzeit."
+       "warum": "Eine Wochenstatistik ist eine Behauptung und kein Moment mit Ort und Uhrzeit."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": true,
-       "warum": "Das Zitat in Anführungszeichen ist vorhanden."
+       "ja": false,
+       "warum": "Es gibt weder Gegner noch Zitat, und die Zahl ist ein Beweis statt eines Geständnisses mit sichtbarem Detail."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Network und Kinder benennen die Nische direkt."
+       "warum": "Kinder plus Network trifft die Nische direkt."
       },
       "passt_zur_rolle": {
        "ja": false,
-       "warum": "Vertrauen verlangt Patricias ehrliche Geschichte. Hier steht sie als Beweis gegen Sandras Ausrede (Ich als Beweis, schwach) und wirkt leicht belehrend."
+       "warum": "Vertrauen braucht Patricias ehrliche Geschichte, hier steht nur ein Leistungsbeleg („Ich als Beweis“), der schwächer trägt."
       }
      },
-     "vorschlag": "Vier Kinder, 18 Stunden pro Woche fürs Network – wo die herkommen, zeig ich dir.",
+     "vorschlag": "„Mit Kindern hab ich keine Zeit fürs Network.“ Ich hab vier – und 18 Wochenstunden.",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "6dd58d9abca4",
+     "fingerabdruck": "abb0006ff794",
      "bestanden": false,
      "gruende": [
-      "kuechentisch: „Ich: vier Kinder, 18 Stunden pro Woche“ ist Steckbrief-Telegrammstil, so redet niemand mit einer Freundin.",
-      "bezug_der_zeilen: Unklar, ob die 18 Stunden das Zitat widerlegen oder bestätigen und wofür sie gelten: Arbeit, Kinder oder Freizeit.",
-      "loesung_draussen: Die Gegenrechnung „18 Stunden reichen“ nimmt die Botschaft „es geht mit wenig Zeit“ schon im Hook vorweg.",
-      "mikro_szene: Kein Moment, kein Ort, keine Uhrzeit, nur Eckdaten als Zahl."
+      "bezug_der_zeilen: Das doppelte „bleiben“ lässt die 18 Stunden wie Zustimmung zur Knappheit klingen statt wie ein Gegenbeweis, und belegt sind 18 Stunden für Network und Business zusammen, nicht „neben dem Network“.",
+      "mikro_szene: Es ist eine Wochenbilanz mit einer Zahl, kein Moment mit Ort und Uhrzeit."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Keine Zeit neben Network, Job und Kindern ist ein echter Alltagsschmerz und steht als Zitat da, nicht als Diagnose."
+       "warum": "Der Satz trifft den echten Schmerz der Network-Mama, dass neben Familie und Network nichts Eigenes Platz zu haben scheint."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Den Satz „Neben dem Network bleibt keine Zeit“ denkt Sandra wörtlich, er ist ihr eigener Satz."
+       "warum": "Das Zitat ist wörtlich ihr innerer Monolog um 23 Uhr, ihre Ausrede in ihren eigenen Worten."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "„Ich: vier Kinder, 18 Stunden pro Woche“ ist Steckbrief-Telegrammstil, so redet niemand mit einer Freundin."
+       "ja": true,
+       "warum": "„Vier Kinder, mir bleiben 18 Stunden die Woche“ sagt man so einer Freundin, ohne Fachsprache."
       },
       "bezug_der_zeilen": {
        "ja": false,
-       "warum": "Unklar, ob die 18 Stunden das Zitat widerlegen oder bestätigen und wofür sie gelten: Arbeit, Kinder oder Freizeit."
+       "warum": "Das doppelte „bleiben“ lässt die 18 Stunden wie Zustimmung zur Knappheit klingen statt wie ein Gegenbeweis, und belegt sind 18 Stunden für Network und Business zusammen, nicht „neben dem Network“."
       },
       "loesung_draussen": {
-       "ja": false,
-       "warum": "Die Gegenrechnung „18 Stunden reichen“ nimmt die Botschaft „es geht mit wenig Zeit“ schon im Hook vorweg."
+       "ja": true,
+       "warum": "Es gibt eine Zahl, aber keine Methode und kein Angebot; das „Wie“ bleibt offen."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network“ steht im ersten Satz, damit ist die Welt sofort verortet."
+       "warum": "„Network“, „vier Kinder“ und „Stunden die Woche“ verorten sofort die Welt der Network-Mama."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Kein Moment, kein Ort, keine Uhrzeit, nur Eckdaten als Zahl."
+       "warum": "Es ist eine Wochenbilanz mit einer Zahl, kein Moment mit Ort und Uhrzeit."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Das Zitat ist da, und die Ausrede „keine Zeit“ ist der Gegner."
+       "warum": "Das Zitat der Ausrede ist der Gegner, die zweite Zeile ist ein belegtes Geständnis."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Network plus Kinder trifft genau die Network-Mama."
+       "warum": "Network und Mutterschaft stehen beide im Hook."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias eigene belegte Lebensrealität passt grundsätzlich zur Rolle Vertrauen, auch wenn sie noch keine Geschichte erzählt."
+       "warum": "Patricias eigene, ehrliche Zeitbilanz mit vier Kindern ist Vertrauensstoff: Menschen folgen Menschen."
       }
      },
-     "vorschlag": "„Neben dem Network bleibt keine Zeit.“ Vier Kinder, mir bleiben 18 Stunden die Woche. (14 Wörter, gesprochen statt Steckbrief, das Zitat wird mit dem eigenen Geständnis beantwortet, ohne dass die Lösung verraten wird. Hinweis: 18 Stunden sind für Sandra mit 40-%-Pensum nicht „wenig Zeit“. Ob die Zahl die Botschaft trägt, sollte in der Caption eingeordnet werden. Eine echte Mikroszene nur einsetzen, wenn sie belegt ist: [echte Situation einsetzen].)",
+     "vorschlag": "„Neben dem Network bleibt keine Zeit.“ Vier Kinder, 18 Stunden – für Network und Business. (Klärt den Bezug mit belegten Fakten; eine Mikro-Szene braucht eine echte Situation von Patricia, z. B. [echte Situation einsetzen], die hier nicht erfunden wird.)",
      "modell": "claude-opus-5-5"
     }
    },
@@ -2944,108 +2946,106 @@
    "caption": "Am Produkt lag es nicht. Mir fehlte ein Plan, der zu meinem Leben passt.\n\n2023 habe ich neu angefangen, diesmal mit einem eigenen Thema und einem eigenen Plan, und das Network läuft daneben mit.\n\nWenn du gerade ans Aufhören denkst: Vielleicht reicht es, es anders zu machen. Der Anfang ist bei mir immer das Thema.\n\nMein Nischengenerator schlägt dir drei vor, passend zu dir und deinem Produkt.\n\nKommentier NISCHE, dann schick ich dir den Link.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "b9730da100c3",
+     "fingerabdruck": "6234e9ea2ef3",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: Eine Jahreszahl ist kein Moment: Es fehlen Ort, Uhrzeit und ein sichtbares Detail, so bleibt der Hook ein Lebenslauf-Satz."
+      "kuechentisch: Der Telegrammstil «2021, Adventskalender, …» und das Amtsdeutsch «stark vergünstigt» klingen nach Notiz und nicht nach einem Satz zur Freundin."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Satz „Ich hör auf mit Network“ ist genau der Punkt, an dem die Frustrierte gerade steht."
+       "warum": "Ein volles Lager aus Eigenbestellungen, das nicht einmal zum Spottpreis weggeht, ist genau Sandras Geld-und-Hobby-Schmerz."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Den Satz „Ich hör auf“ hat Sandra selbst schon gedacht, deshalb erkennt sie sich darin wieder."
+       "warum": "Die Angst, dass niemand kauft, obwohl man schon den Preis drückt, kennt jede Network-Mama mit Schrank voller Ware."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Der Hook ist schlicht und mündlich formuliert, so erzählt man es einer Freundin."
+       "ja": false,
+       "warum": "Der Telegrammstil «2021, Adventskalender, …» und das Amtsdeutsch «stark vergünstigt» klingen nach Notiz und nicht nach einem Satz zur Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Kein Bindewort dreht den Sinn: Erst kommt das Aufhören, dann der zweite Anlauf, und beides folgt logisch aufeinander."
+       "warum": "«Und keiner hat gekauft» folgt logisch als Pointe, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "„Lief anders“ lässt offen, was anders war, und nennt weder Lösung noch Angebot."
+       "warum": "Der Hook nennt weder Lösung noch Angebot, nur das Scheitern."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "Das Wort „Network“ verortet den Hook sofort in der Welt des Network-Business."
+       "warum": "«Network-Lager» verortet die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "Eine Jahreszahl ist kein Moment: Es fehlen Ort, Uhrzeit und ein sichtbares Detail, so bleibt der Hook ein Lebenslauf-Satz."
+       "ja": true,
+       "warum": "Ein Jahr, eine Aktion (Adventskalender), ein Ergebnis: ein konkreter Moment statt einer Behauptung."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook ist ein Geständnis in Ich-Form mit wörtlichem Zitat."
+       "warum": "Klares Geständnis in Ich-Form mit belegtem, sichtbarem Detail."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Er spricht klar Frauen an, die im Network sind und ans Aufhören denken."
+       "warum": "Lager, Eigenbestellung und Story-Verkauf sind reine Network-Welt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Vertrauen heisst: Patricias eigene Geschichte, inklusive der schweren Phase. Das trifft dieser Hook genau."
+       "warum": "Patricias eigene schwere Phase vor dem zweiten Anlauf ist genau Vertrauen: Menschen folgen Menschen."
       }
      },
-     "vorschlag": "2021, [echten Moment einsetzen]: „Ich hör auf mit Network.“ 2023 fing ich nochmals an, anders.",
+     "vorschlag": "2021 wollte ich mein Network-Lager per Adventskalender billig loswerden. Gekauft hat keiner.",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "749640083dd3",
+     "fingerabdruck": "82ca15583b1c",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: Es ist eine Rückblende auf Patricias Start und kein Satz, den Sandra um 23 Uhr selbst denkt.",
-      "kuechentisch: Die Formel „Voller Hoffnung …, aber ohne Plan:“ klingt wie eine geschriebene Bio-Zeile, nicht wie ein Satz am Küchentisch.",
-      "mikro_szene: Der Hook fasst einen ganzen Start zusammen, es fehlen ein Ort, eine Uhrzeit und ein Moment.",
-      "gegner_gestaendnis_oder_zitat: Die Ich-Form ist da, aber ohne konkreten Moment und ohne sichtbares Detail ist es kein Geständnis im Sinne der Regel, und Gegner oder Zitat fehlen."
+      "kuechentisch: «Network-Schrank» ist ein gebasteltes Wort, das niemand zu einer Freundin sagt; man sagt «mein Schrank voller Produkte».",
+      "in_drei_sekunden_klar: «Das kauft mir keiner mehr ab» heisst umgangssprachlich auch «das glaubt mir keiner mehr», und was im «Network-Schrank» steht, bleibt beim Vorbeiscrollen unklar."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "„Voller Hoffnung, aber ohne Plan“ spiegelt Sandras Kern-Pain: viel Einsatz, der keinem Plan folgt."
+       "warum": "Ware, die niemand kauft und die selbst bezahlt wurde, ist der Kern-Pain des teuren Hobbys mit Eigenbestellung."
       },
       "gedanke_gelesen": {
-       "ja": false,
-       "warum": "Es ist eine Rückblende auf Patricias Start und kein Satz, den Sandra um 23 Uhr selbst denkt."
+       "ja": true,
+       "warum": "Dass niemand mehr bestellt, denkt Sandra vor ihrem eigenen Lager wörtlich so."
       },
       "kuechentisch": {
        "ja": false,
-       "warum": "Die Formel „Voller Hoffnung …, aber ohne Plan:“ klingt wie eine geschriebene Bio-Zeile, nicht wie ein Satz am Küchentisch."
+       "warum": "«Network-Schrank» ist ein gebasteltes Wort, das niemand zu einer Freundin sagt; man sagt «mein Schrank voller Produkte»."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das „aber“ stellt Haben (Hoffnung) gegen Fehlen (Plan), das ist ein echter, wenn auch schwacher Gegensatz, und der Sinn bleibt richtig."
+       "warum": "Es gibt kein Bindewort, das den Sinn drehen könnte: Ort, Jahr und Gedanke folgen logisch aufeinander."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder Lösung noch Angebot, der eigene Plan bleibt draussen."
+       "warum": "Der Hook enthält weder Lösung noch Angebot, nur den Tiefpunkt."
       },
       "in_drei_sekunden_klar": {
-       "ja": true,
-       "warum": "„im Network“ verortet die Welt sofort, auch ohne Vorwissen."
+       "ja": false,
+       "warum": "«Das kauft mir keiner mehr ab» heisst umgangssprachlich auch «das glaubt mir keiner mehr», und was im «Network-Schrank» steht, bleibt beim Vorbeiscrollen unklar."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "Der Hook fasst einen ganzen Start zusammen, es fehlen ein Ort, eine Uhrzeit und ein Moment."
+       "ja": true,
+       "warum": "Ein Ort (vor dem übervollen Schrank), ein Jahr und ein Gedanke ergeben einen sichtbaren Moment."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": false,
-       "warum": "Die Ich-Form ist da, aber ohne konkreten Moment und ohne sichtbares Detail ist es kein Geständnis im Sinne der Regel, und Gegner oder Zitat fehlen."
+       "ja": true,
+       "warum": "Es ist ein Geständnis in Ich-Form mit innerem Zitat, gestützt auf Belegtes."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Der Hook spricht klar Frauen im Network an, die ohne Plan gestartet sind."
+       "warum": "Volles Lager und Verkaufsdruck im Network sind genau ihre Welt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias eigene Geschichte mit dem ersten Anlauf passt genau zur Rolle Vertrauen und zum zweiten Anlauf."
+       "warum": "Der Hook zeigt Patricias schwere Phase vor dem zweiten Anlauf, also Vertrauen durch ehrliche Geschichte."
       }
      },
-     "vorschlag": "2018 im Network voller Hoffnung gestartet, 2021 aufgehört. Was mir fehlte, kam erst danach. (14 Wörter, nur belegte Daten, offenes Ende. Eine echte Szene aus 2018 oder 2021 würde ihn noch stärker machen: [echte Situation einsetzen])",
+     "vorschlag": "2021 stand ich vor meinem Schrank voller Network-Produkte und dachte: Die kauft keiner mehr.",
      "modell": "claude-opus-5-5"
     }
    },
