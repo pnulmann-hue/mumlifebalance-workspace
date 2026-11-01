@@ -159,83 +159,31 @@
    "caption": "Von 2018 bis 2021 habe ich genau das gemacht. Wenn ein Monat schlecht lief, habe ich mehr angesprochen und mehr gepostet, weil ich keine andere Antwort kannte.\n\nUnd jeden Monat fing es wieder von vorne an, weil niemand wusste, wofür ich eigentlich stehe, ausser für die Produkte meiner Firma.\n\n2021 habe ich aufgehört. Als ich 2023 neu angefangen habe, war meine erste Frage eine andere: Worüber will ich reden, damit die richtigen Leute mich von selbst finden?\n\nWenn du gerade an genau dieser Frage hängst, habe ich dir etwas gebaut. Der Nischengenerator stellt dir ein paar Fragen und schlägt dir drei Themen vor, die zu dir und deinem Produkt passen.\n\nKommentier NISCHE, dann schick ich dir den Link.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "bb4ad39b4f80",
+     "fingerabdruck": "0041f06ffc83",
      "bestanden": false,
      "gruende": [
-      "kuechentisch: Das Präteritum „schrieb ich … Fremden“ klingt nach Buch, am Küchentisch sagt man „hab ich Fremde angeschrieben“.",
-      "mikro_szene: „Schrieb Fremden“ beschreibt eine Gewohnheit ohne Ort, Uhrzeit oder einzelnen Moment."
+      "mikro_szene: «jahrelang» fasst eine ganze Phase zusammen, statt einen einzelnen Moment zu zeigen."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Upline-Satz und das Anschreiben von Fremden treffen das unangenehme Gefühl, das viele Network-Mamas kennen."
+       "warum": "Fremde anschreiben auf Rat der Upline ist ein echter, unangenehmer Schmerz vieler Network-Mamas."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Diesen Satz hat sie selbst schon gehört und befolgt, sie fühlt sich darin ertappt."
-      },
-      "kuechentisch": {
-       "ja": false,
-       "warum": "Das Präteritum „schrieb ich … Fremden“ klingt nach Buch, am Küchentisch sagt man „hab ich Fremde angeschrieben“."
-      },
-      "bezug_der_zeilen": {
-       "ja": true,
-       "warum": "„Also“ zeigt korrekt die Folge vom Rat zur Handlung, kein Bindewort dreht den Sinn."
-      },
-      "loesung_draussen": {
-       "ja": true,
-       "warum": "Der Tipp mit dem Thema vor dem Produkt kommt im Hook nicht vor."
-      },
-      "in_drei_sekunden_klar": {
-       "ja": true,
-       "warum": "„im Network“ verortet die Welt sofort, auch ohne Vorwissen."
-      },
-      "mikro_szene": {
-       "ja": false,
-       "warum": "„Schrieb Fremden“ beschreibt eine Gewohnheit ohne Ort, Uhrzeit oder einzelnen Moment."
-      },
-      "gegner_gestaendnis_oder_zitat": {
-       "ja": true,
-       "warum": "Er enthält ein Zitat (den Upline-Rat) und ein Geständnis in der Ich-Form."
-      },
-      "nische_network_mama": {
-       "ja": true,
-       "warum": "Das Anschreiben von Fremden auf Rat aus dem Network ist typisch für Network-Mamas."
-      },
-      "passt_zur_rolle": {
-       "ja": true,
-       "warum": "Es ist Patricias ehrliche eigene Geschichte, also genau das, was die Rolle Vertrauen verlangt."
-      }
-     },
-     "vorschlag": "„Du musst einfach mehr Leute ansprechen.“ Also hab ich im Network jahrelang Fremde angeschrieben. (14 Wörter, nur Belegtes. Für eine echte Mikroszene fehlt ein belegter Moment: [echte Situation einsetzen], etwa Ort und Uhrzeit einer solchen Nachricht, nur wenn's stimmt.)",
-     "modell": "claude-opus-5-5"
-    },
-    "b": {
-     "fingerabdruck": "ebcc59c22711",
-     "bestanden": false,
-     "gruende": [
-      "mikro_szene: «Schlechter Monat» ist ein Zeitraum und ein Verhaltensmuster, kein sichtbarer Moment mit Ort oder Uhrzeit."
-     ],
-     "antworten": {
-      "schmerz": {
-       "ja": true,
-       "warum": "Er trifft den Schmerz, bei schlechten Zahlen einfach noch mehr vom selben zu tun, das nicht wirkt."
-      },
-      "gedanke_gelesen": {
-       "ja": true,
-       "warum": "Viele Network-Mamas haben nach einem schwachen Monat genau so reagiert und erkennen sich darin ertappt wieder."
+       "warum": "Den Satz «Du musst einfach mehr Leute ansprechen» hat fast jede im Network gehört und befolgt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "So erzählt man es einer Freundin, schlicht und in Alltagssprache."
+       "warum": "Zitat plus «Also hab ich…» klingt genau so, wie man es einer Freundin erzählt."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das «und» verbindet Ursache und Reaktion richtig, kein Bindewort dreht den Sinn."
+       "warum": "«Also» zeigt korrekt die Folge: Rat gehört, danach gehandelt."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Tipp mit der ersten Frage zum Thema kommt nicht im Hook vor."
+       "warum": "Der Tipp zur ersten Frage kommt im Hook nicht vor."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
@@ -243,22 +191,74 @@
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "«Schlechter Monat» ist ein Zeitraum und ein Verhaltensmuster, kein sichtbarer Moment mit Ort oder Uhrzeit."
+       "warum": "«jahrelang» fasst eine ganze Phase zusammen, statt einen einzelnen Moment zu zeigen."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Es ist ein belegtes Geständnis in Ich-Form, und der Denkfehler «mehr ansprechen» dient als Gegner."
+       "warum": "Zitat (Network-Rat als Gegner) plus Geständnis in Ich-Form."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Es geht klar um das Network und das typische Anschreiben von Fremden."
+       "warum": "Klar auf Network-Frauen und deren Akquise-Alltag zugeschnitten."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias ehrliche, belegte Geschichte aus einer schweren Phase passt zur Rolle Vertrauen."
+       "warum": "Ehrliches Stück aus Patricias eigener Network-Geschichte passt zur Vertrauens-Rolle."
       }
      },
-     "vorschlag": "Schlechter Monat im Network: Ich sitze da und schreibe noch mehr Fremde an. (Mit Ort oder Uhrzeit ergänzen: [echte Situation einsetzen])",
+     "vorschlag": "„Du musst einfach mehr Leute ansprechen.“ Also schrieb ich im Network wieder einer Fremden.",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "f69229cd59c8",
+     "bestanden": false,
+     "gruende": [
+      "mikro_szene: 'Schlechter Monat' und 'Ich sitze da' nennen weder Ort noch Uhrzeit noch ein sichtbares Detail, das ist eher Zustand als Moment.",
+      "passt_zur_rolle: Die Präsensform 'Ich sitze da' wirkt, als täte Patricia das heute noch, und widerspricht ihrer Vertrauensgeschichte vom Ausstieg aus diesem Muster."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Ein schlechter Monat, auf den sie mit noch mehr Kaltakquise reagiert, ist ein echter, bekannter Frust der Network-Mama."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Viele kennen den Reflex, nach einem schwachen Monat noch mehr Fremde anzuschreiben, und reden selten darüber."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Der Satz klingt wie gesprochen, ohne Fachwörter."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Auf den schlechten Monat folgt logisch das 'noch mehr', kein Bindewort dreht den Sinn."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Tipp mit Thema vor Produkt steht nicht im Hook."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": true,
+       "warum": "'Im Network' und 'Fremde anschreiben' verorten die Welt sofort."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "'Schlechter Monat' und 'Ich sitze da' nennen weder Ort noch Uhrzeit noch ein sichtbares Detail, das ist eher Zustand als Moment."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Ein Geständnis in Ich-Form, belegt durch das jahrelange Anschreiben Fremder."
+      },
+      "nische_network_mama": {
+       "ja": true,
+       "warum": "Network und Kaltakquise sind klar ihre Welt."
+      },
+      "passt_zur_rolle": {
+       "ja": false,
+       "warum": "Die Präsensform 'Ich sitze da' wirkt, als täte Patricia das heute noch, und widerspricht ihrer Vertrauensgeschichte vom Ausstieg aus diesem Muster."
+      }
+     },
+     "vorschlag": "«Du musst einfach mehr Leute ansprechen»: Im Network schrieb ich darum jahrelang Fremde an.",
      "modell": "claude-opus-5-5"
     }
    },
@@ -288,105 +288,108 @@
    "caption": "Weisst du, was jemand sieht, der zum ersten Mal auf dein Profil kommt?\n\nBei mir waren es damals Produktbilder, Aktionen und das, was die Firma gerade geschickt hat. Verkauft habe ich trotzdem, das will ich gar nicht kleinreden. Nur musste ich jeden Monat wieder von vorne anfangen, weil niemand einen Grund hatte, von sich aus wiederzukommen.\n\nGanz ohne Bemühen geht es auch heute nicht, das wäre gelogen. Der Unterschied ist, dass ich jetzt an etwas baue, das bleibt: ein Thema, für das man mich kennt.\n\nMach mal den Test: Scroll durch deine letzten neun Beiträge und zähl, in wie vielen dein Produkt die Hauptrolle spielt. Wenn es mehr als drei sind, fehlt dir vermutlich dein Thema, und das findest du mit meinem Nischengenerator in ein paar Minuten.\n\nKommentier NISCHE, dann schick ich dir den Link.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "8dd373967573",
+     "fingerabdruck": "f1a4a532f7e2",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: Der Hook beschreibt einen Zustand über drei Jahre und keinen konkreten Moment mit Ort oder Zeitanker."
+      "kuechentisch: Der Satz ist ohne Ich und Verb eine Stichwort-Zeile, und „Network-Profil“ klingt nach Aufzählung, nicht nach dem Satz, den man einer Freundin sagt.",
+      "mikro_szene: „Drei Jahre“ und „jeden Monat“ fassen einen langen Zeitraum zusammen; es gibt keinen einzelnen Moment, keinen Ort und keine Uhrzeit.",
+      "gegner_gestaendnis_oder_zitat: Ohne Ich-Form ist es kein erkennbares Geständnis, es kann sogar wie ein Vorwurf an Sandra wirken; der Gegner „Firmenbilder“ steht nur angedeutet da.",
+      "passt_zur_rolle: Vertrauen braucht Patricias eigene Geschichte, und ohne „ich“ erkennt man im Hook nicht, dass sie von sich erzählt."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Das austauschbare Copy-Paste-Profil ohne eigenes Gesicht ist ein Kernschmerz aus Säule 1."
+       "warum": "Jeden Monat wieder von vorn Verkäufen hinterherzurennen ist ein echter, bekannter Schmerz der Network-Mama."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Viele Network-Mamas, die durch ihr eigenes Raster scrollen, sehen genau das und erkennen sich sofort."
+       "warum": "„Jeden Monat wieder hinterherrennen“ ist ein Gedanke, den Sandra selbst hat, auch wenn der Satz ohne Ich etwas nüchtern bleibt."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "‚Lauter Firmenbilder, kein einziges Mal ich‘ klingt wie ein ehrlicher Satz zu einer Freundin."
+       "ja": false,
+       "warum": "Der Satz ist ohne Ich und Verb eine Stichwort-Zeile, und „Network-Profil“ klingt nach Aufzählung, nicht nach dem Satz, den man einer Freundin sagt."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Der Doppelpunkt fasst die Beobachtung sauber zusammen, und kein Bindewort dreht den Sinn."
+       "warum": "Das „und“ reiht zwei Zustände aneinander, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Neun-Beiträge-Test kommt nicht im Hook vor, es gibt weder Lösung noch Angebot."
+       "warum": "Der Neun-Beiträge-Test und jede andere Lösung fehlen im Hook."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "‚Profil‘ und ‚Network-Katalog‘ verorten es sofort im Network-Marketing auf Social Media."
+       "warum": "„Network“ und „Verkäufen“ verorten die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Der Hook beschreibt einen Zustand über drei Jahre und keinen konkreten Moment mit Ort oder Zeitanker."
+       "warum": "„Drei Jahre“ und „jeden Monat“ fassen einen langen Zeitraum zusammen; es gibt keinen einzelnen Moment, keinen Ort und keine Uhrzeit."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": true,
-       "warum": "Ich-Geständnis mit sichtbarem Detail (Firmenbilder), belegt."
+       "ja": false,
+       "warum": "Ohne Ich-Form ist es kein erkennbares Geständnis, es kann sogar wie ein Vorwurf an Sandra wirken; der Gegner „Firmenbilder“ steht nur angedeutet da."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Mit Network-Profil und Firmenbildern ist es klar die Welt der Network-Mama."
+       "warum": "Firmenbilder im Network und monatlicher Verkaufsdruck sind genau ihre Welt."
       },
       "passt_zur_rolle": {
-       "ja": true,
-       "warum": "Es ist Patricias eigene, ehrliche Geschichte aus einer schweren Phase und passt damit zur Rolle Vertrauen."
+       "ja": false,
+       "warum": "Vertrauen braucht Patricias eigene Geschichte, und ohne „ich“ erkennt man im Hook nicht, dass sie von sich erzählt."
       }
      },
-     "vorschlag": "Drei Jahre nur Firmenbilder im Network-Profil, und jeden Monat wieder Verkäufen hinterherrennen.",
+     "vorschlag": "Drei Jahre hab ich im Network nur Firmenbilder gepostet. Jeden Monat wieder Verkäufen hinterher. (13 Wörter, Geständnis in Ich-Form. Eine echte Mikroszene, etwa ein bestimmter Monatsende-Abend, wäre noch stärker, ist aber nicht belegt: [echte Situation einsetzen].)",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "cfac4a7b8fae",
+     "fingerabdruck": "80cb49288424",
      "bestanden": false,
      "gruende": [
-      "gegner_gestaendnis_oder_zitat: Das Geständnis enthält mit „neunmal dasselbe Produkt“ ein Detail, das nicht belegt ist (belegt sind nur Firmen- und Produktbilder), und ein Geständnis darf nur aus Belegtem kommen."
+      "mikro_szene: Er beschreibt einen Zustand über drei Jahre und keinen einzelnen Moment, an dem man es sieht, etwa den Blick auf die letzten Bilder."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Es trifft den Copy-Paste-Schmerz, ein Profil voller Firmenware, in dem sie selbst nicht vorkommt."
+       "warum": "Er trifft den Kern-Schmerz aus Säule 1: Jahrelang arbeitet sie für die Firma, und auf ihrem Profil ist sie als Person unsichtbar."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Den Moment, das eigene Raster anzuschauen und nur Produkte zu sehen, kennt die Suchende."
+       "warum": "Viele Network-Mamas sehen ihr eigenes Profil als Katalog, und das „nirgends ich“ spricht genau diesen stillen Gedanken aus."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Der Satz klingt gesprochen. „Nirgends ich“ ist knapp, aber so sagt man es einer Freundin."
+       "warum": "Der Satz ist kurz, gesprochen und ohne Fachwort, so erzählt man es einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Der Doppelpunkt führt logisch vom Scrollen zum Befund, kein Bindewort dreht den Sinn."
+       "warum": "Kein Bindewort dreht den Sinn: Das „und nirgends ich“ setzt die Aufzählung logisch als Pointe fort."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Neun-Beiträge-Test wird nicht verraten, es steht nur der Befund da."
+       "warum": "Der Neun-Beiträge-Test und jeder Hinweis auf eine Lösung fehlen im Hook."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "Mit „Network-Produkt“ und „Profil“ ist die Welt sofort verortet."
+       "warum": "„Network“ sowie „Firmen- und Produktbilder“ verorten die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
-       "ja": true,
-       "warum": "Ein konkreter Moment, das Durchscrollen des eigenen Profils, statt einer allgemeinen Behauptung."
+       "ja": false,
+       "warum": "Er beschreibt einen Zustand über drei Jahre und keinen einzelnen Moment, an dem man es sieht, etwa den Blick auf die letzten Bilder."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": false,
-       "warum": "Das Geständnis enthält mit „neunmal dasselbe Produkt“ ein Detail, das nicht belegt ist (belegt sind nur Firmen- und Produktbilder), und ein Geständnis darf nur aus Belegtem kommen."
+       "ja": true,
+       "warum": "Es ist ein Geständnis in Ich-Form mit sichtbarem Detail, und es ist belegt."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Es spricht klar die Network-Frau an, deren Auftritt nach Firmenkatalog aussieht."
+       "warum": "Das Katalog-Profil im Network ist genau ihr Problem und gehört zu Säule 1, Personal Brand statt Copy-Paste."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Es ist Patricias eigene, ehrliche Geschichte über eine schwache Phase und passt damit zur Rolle Vertrauen."
+       "warum": "Es ist Patricias eigene, ehrliche Geschichte aus der schweren Phase und passt damit zur Rolle Vertrauen."
       }
      },
-     "vorschlag": "Drei Jahre Network, mein Profil voller Firmen- und Produktbilder, und nirgends ich.",
+     "vorschlag": "Drei Jahre Network, und auf meinen letzten neun Bildern: nur Firma, Produkte, nirgends ich. (14 Wörter. Der Blick auf die neun Bilder macht den Zustand zu einem Moment und leitet den Neun-Beiträge-Test ein. Diesen Moment bitte von Patricia bestätigen lassen, nur wenn's stimmt.)",
      "modell": "claude-opus-5-5"
     }
    },
@@ -540,57 +543,57 @@
    "caption": "Das war mein Teilzeitjob, bis ich ihn vor zwei Jahren gekündigt habe, als Mama von vier Kindern.\n\nHeute klappe ich um halb zwölf den Laptop zu, und dann gehört der Tag den Kindern. Wenn es mir zu warm wird, setze ich mich unter den Sonnenschirm, und an manchen Tagen arbeite ich gar nicht.\n\nIch will dir dabei nichts schönreden: Selbständig bin ich seit 2023, und regelmässig Einkommen gibt es seit Mai 2025. Dazwischen lagen viele Monate, in denen ich nicht wusste, ob es reicht.\n\nSchick das einer Mama, die heute Morgen auch wieder die Rollläden runtergelassen hat.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "fd18c9857ab1",
+     "fingerabdruck": "366f2c6e8eef",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: Die Rollläden sind Patricias eigenes Detail und ohne Erklärung rätselhaft, also kein Gedanke, den Sandra selbst hat.",
-      "bezug_der_zeilen: Mit „um acht“ und „Rollläden runter“ liest man Feierabend um 20 Uhr, das folgende „abends“ verwirrt deshalb die Zeitfolge.",
-      "in_drei_sekunden_klar: „Network“ verortet die Welt zwar, aber das unerklärte Rollläden-Bild bindet die ersten Sekunden an ein Rätsel statt an ihren Alltag.",
-      "gegner_gestaendnis_oder_zitat: Es gibt keine Ich-Form, keinen Gegner und kein Zitat, das Geständnis ist nur unpersönlich angedeutet."
+      "schmerz: Der Satz zählt Patricias Tagesablauf neutral auf, Sandras eigentlicher Schmerz (viel Einsatz, der wie ein teures Hobby aussieht) kommt nicht vor.",
+      "gedanke_gelesen: Es ist eine Rückschau auf Patricias Tag, kein Gedanke, den Sandra um 23 Uhr selbst denkt.",
+      "mikro_szene: „So sah mein Tag aus“ fasst eine Routine zusammen, es fehlen ein einzelner Moment und ein sichtbares Detail wie die Rollläden um acht.",
+      "gegner_gestaendnis_oder_zitat: Die Ich-Form allein reicht nicht für ein Geständnis, weil der konkrete Moment mit sichtbarem Detail fehlt; Gegner und Zitat kommen nicht vor."
      ],
      "antworten": {
       "schmerz": {
-       "ja": true,
-       "warum": "Die Doppelbelastung aus Job und dem Network am Abend ist ein echter Schmerz der Network-Mama, auch wenn er nur angedeutet wird."
+       "ja": false,
+       "warum": "Der Satz zählt Patricias Tagesablauf neutral auf, Sandras eigentlicher Schmerz (viel Einsatz, der wie ein teures Hobby aussieht) kommt nicht vor."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "Die Rollläden sind Patricias eigenes Detail und ohne Erklärung rätselhaft, also kein Gedanke, den Sandra selbst hat."
+       "warum": "Es ist eine Rückschau auf Patricias Tag, kein Gedanke, den Sandra um 23 Uhr selbst denkt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Der verkürzte Satz klingt gesprochen und alltagsnah, so erzählt man es einer Freundin."
+       "warum": "So erzählt man einer Freundin locker, wie der Alltag damals aussah."
       },
       "bezug_der_zeilen": {
-       "ja": false,
-       "warum": "Mit „um acht“ und „Rollläden runter“ liest man Feierabend um 20 Uhr, das folgende „abends“ verwirrt deshalb die Zeitfolge."
+       "ja": true,
+       "warum": "Die Aufzählung Morgens, abends, dazwischen hängt logisch zusammen, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook enthält weder eine Lösung noch ein Angebot."
+       "warum": "Es kommt weder eine Lösung noch ein Angebot im Hook vor."
       },
       "in_drei_sekunden_klar": {
-       "ja": false,
-       "warum": "„Network“ verortet die Welt zwar, aber das unerklärte Rollläden-Bild bindet die ersten Sekunden an ein Rätsel statt an ihren Alltag."
+       "ja": true,
+       "warum": "Büro, Network und vier Kinder verorten sofort die Welt der Network-Mama mit Job."
       },
       "mikro_szene": {
-       "ja": true,
-       "warum": "Uhrzeit, Ort und Handlung bilden einen konkreten Moment."
+       "ja": false,
+       "warum": "„So sah mein Tag aus“ fasst eine Routine zusammen, es fehlen ein einzelner Moment und ein sichtbares Detail wie die Rollläden um acht."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": false,
-       "warum": "Es gibt keine Ich-Form, keinen Gegner und kein Zitat, das Geständnis ist nur unpersönlich angedeutet."
+       "warum": "Die Ich-Form allein reicht nicht für ein Geständnis, weil der konkrete Moment mit sichtbarem Detail fehlt; Gegner und Zitat kommen nicht vor."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Das Network wird ausdrücklich genannt, dazu kommt die Doppelrolle mit dem Job."
+       "warum": "Network neben Job und Kindern ist genau die Network-Mama."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Es ist Patricias eigene belegte Geschichte, und das passt zur Rolle Vertrauen."
+       "warum": "Es ist Patricias eigene Geschichte und passt damit zur Rolle Vertrauen."
       }
      },
-     "vorschlag": "Morgens Büro, abends Network, dazwischen meine vier Kinder: so sah mein Tag aus.",
+     "vorschlag": "Um acht liess ich im Büro die Rollläden runter, abends lief mein Network daneben.",
      "modell": "claude-opus-5-5"
     },
     "b": {
