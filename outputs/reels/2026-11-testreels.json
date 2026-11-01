@@ -15,11 +15,11 @@
    "akzent": "orange",
    "cta": "Folg mir, wenn du dich wiedererkennst",
    "a": [
-    "„Ich hätte da eine Möglichkeit für dich.“ Fürs Network getippt und wieder gelöscht.",
+    "„Ich hätte da eine Möglichkeit für dich.“ Hast du auch schon so getippt?",
     ""
    ],
    "b": [
-    "„Spannende Möglichkeit, hast du kurz Zeit?“ Mir schaudert es, wenn ich so eine Network-Nachricht lese.",
+    "„Spannende Möglichkeit, hast du kurz Zeit?“ Du hasst diese Network-Nachricht schon beim Tippen.",
     ""
    ],
    "rolle": "Aufmerksamkeit",
@@ -132,7 +132,8 @@
      "vorschlag": "„Spannende Möglichkeit, hast du kurz Zeit?“ Du hasst diese Network-Nachricht schon beim Tippen.",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "Bei Patricia landen bis heute ständig Kaltakquise-Nachrichten: erst ein Kompliment zum Profil, zwei Sätze später die «spannende Möglichkeit»; ihr schauderts bei jeder, sie blockiert sie. Quelle outputs/reels/2026-10-31-radar-reels.md"
   },
   {
    "nr": "03",
@@ -146,11 +147,11 @@
    "akzent": "orange",
    "cta": "Kommentier NISCHE",
    "a": [
-    "„Sprich mehr Leute an“, hiess es im Network. Also sass ich abends auf dem Sofa und schrieb Fremden.",
+    "„Du musst einfach mehr Leute ansprechen.“ Also schrieb ich im Network Fremden.",
     ""
    ],
    "b": [
-    "Mieser Monat im Network, und abends auf dem Sofa schrieb ich noch mehr Fremden.",
+    "Schlechter Monat im Network, und ich hab noch mehr Fremde angeschrieben.",
     ""
    ],
    "rolle": "Vertrauen",
@@ -258,7 +259,8 @@
      "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "Patricia hat den Satz «Du musst einfach mehr Leute ansprechen» im Network jahrelang geglaubt und danach gehandelt, also Fremde angeschrieben. Quelle outputs/reels/2026-10-31-radar-reels.md"
   },
   {
    "nr": "04",
@@ -272,11 +274,11 @@
    "akzent": "orange",
    "cta": "Kommentier NISCHE",
    "a": [
-    "Ich hab meine letzten neun Beiträge angeschaut: lauter Firmenbilder. Mein Profil war ein Network-Katalog.",
+    "Lauter Firmenbilder, kein einziges Mal ich: Mein Profil war ein Network-Katalog.",
     ""
    ],
    "b": [
-    "Ich scrollte durch mein Profil: neunmal dasselbe Network-Produkt, und nirgends ich.",
+    "Ich hab durch mein Profil gescrollt: neunmal dasselbe Network-Produkt, nirgends ich.",
     ""
    ],
    "rolle": "Vertrauen",
@@ -385,7 +387,8 @@
      "vorschlag": "Ich hab durch mein Profil gescrollt: neunmal dasselbe Network-Produkt, nirgends ich. (nur wenn's stimmt)",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "Patricia hatte drei Jahre lang ein Katalog-Profil mit Firmen- und Produktbildern und musste sich jeden Monat neu um Verkäufe bemühen. Quelle outputs/reels/2026-10-31-radar-reels.md"
   },
   {
    "nr": "05",
@@ -510,7 +513,8 @@
      "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "Patricia hat im alten Network Bäder und Cremes eingekauft, weil es dafür mehr Provision gab, den grössten Teil verschenkt und über 500 Franken davon weggeworfen. Quelle outputs/reels/2026-10-31-radar-reels.md"
   },
   {
    "nr": "06",
@@ -524,11 +528,11 @@
    "akzent": "orange",
    "cta": "Schick das einer Mama im Büro",
    "a": [
-    "Um acht im Büro die Rollläden runter, und im Kopf schon beim Network nach Feierabend.",
+    "Um acht im Büro die Rollläden runter, und abends wartete noch das Network.",
     ""
    ],
    "b": [
-    "„Mach dein Network halt nebenbei.“ Also nach dem Büro, die Kinder schliefen schon.",
+    "„Mach dein Network halt nebenbei.“ Hab ich gemacht: nach dem Büro, Kinder im Bett.",
     ""
    ],
    "rolle": "Vertrauen",
@@ -645,7 +649,8 @@
      "vorschlag": "„Mach dein Network halt nebenbei.“ Hab ich gemacht: nach dem Büro, Kinder im Bett.",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "Patricia hatte einen Teilzeitjob im Büro, liess dort um acht die Rollläden runter, damit sie nicht klatschnass war, und hat den Job vor zwei Jahren gekündigt, als Mama von vier Kindern; das Network lief daneben. Quelle outputs/reels/2026-10-31-radar-reels.md"
   },
   {
    "nr": "10",
@@ -665,7 +670,7 @@
     ""
    ],
    "b": [
-    "Monatsende: „Reicht genau für meine Eigenbestellung.“ Und du fragst dich, wofür du das alles machst.",
+    "„Reicht genau für meine Eigenbestellung.“ Die Frage dahinter stellt sich Ende Monat kaum jemand.",
     ""
    ],
    "caption": "Und dann sagst du allen, es laufe so okay, weil die Wahrheit irgendwie peinlich klingt.\n\nIch kenne das Gefühl, und ich weiss auch, woher es kommt. Solange dein ganzes Einkommen an Bestellungen hängt, fängst du jeden Monat bei null an, egal wie viel du vorher gemacht hast.\n\nWas daneben fehlt, ist etwas, das dir gehört: ein Thema, für das man dich kennt, und dazu irgendwann ein eigenes kleines Angebot.\n\nWenn du nicht weisst, was dein Thema sein könnte, schlägt dir mein Nischengenerator in ein paar Minuten drei vor, passend zu dir und deinem Produkt.\n\nKommentier NISCHE, dann schick ich dir den Link.",
@@ -912,7 +917,7 @@
     ""
    ],
    "b": [
-    "„Wieso hab ich beim Kaffee nach dem Turnen nichts von meinem Network gesagt?“",
+    "Kaffee nach dem Turnen, und du sagst wieder nichts von deinem Network.",
     ""
    ],
    "rolle": "Beziehung",
@@ -1033,11 +1038,11 @@
    "akzent": "orange",
    "cta": "Schreib mir dein Wort in die Kommentare",
    "a": [
-    "„Heute erledige ich alles fürs Network“, denkst du am Morgen, und abends ist nichts davon wichtig gewesen.",
+    "„Heute erledige ich alles fürs Network.“ Abends fragst du dich: Was davon hat gezählt?",
     ""
    ],
    "b": [
-    "„Morgen schaff ich die ganze To-do-Liste fürs Network“, und kein Punkt davon bringt Geld.",
+    "„Morgen schaff ich die ganze To-do-Liste fürs Network“, denkst du abends im Bett.",
     ""
    ],
    "rolle": "Beziehung",
@@ -1150,7 +1155,8 @@
      "vorschlag": "„Morgen schaff ich die ganze Network-Liste“, denk ich abends – kein Punkt bringt Geld.",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "Patricia war so auf Autopilot, dass ihr Auto mit ihren vier Kindern drin losrollte. Quelle outputs/reels/2026-10-31-radar-reels.md"
   },
   {
    "nr": "19",
@@ -1166,11 +1172,11 @@
    "rolle": "Vertrauen",
    "mit": "Inspiration: das Thema liegt im eigenen Alltag",
    "a": [
-    "Jahre im Network ohne eigenen Plan, bis zu einer Liste für meinen Mann.",
+    "Jahrelang im Network ohne eigenen Plan. Dann schrieb ich meinem Mann eine Liste.",
     ""
    ],
    "b": [
-    "„Ist doch nichts Besonderes“, dachte ich über meinen Alltag mit vier Kindern und Network.",
+    "„Mein Alltag mit vier Kindern ist doch nichts Besonderes.“ Das dachte ich auch.",
     ""
    ],
    "caption": "Die Liste sollte nur dafür sorgen, dass zu Hause alles weiterläuft, während ich im Spital bin.\n\nBeim Schreiben habe ich gemerkt, wie viel ich als Mama nebenbei organisiere, und danach habe ich meinen Alltag so umgebaut, dass alles aufgeht und Zeit für mich bleibt.\n\nGenau daraus ist mein erstes eigenes Angebot entstanden. Es ging um das, was ich ohnehin jeden Tag gemacht habe. Über dieses Angebot kam ich mit Mamas ins Gespräch, die ich vorher nicht kannte, und erst danach kam mein Network-Produkt zur Sprache.\n\nWenn du wissen willst, was in deinem Alltag steckt: Mein Nischengenerator schlägt dir drei Themen vor.\n\nKommentier NISCHE, dann schick ich dir den Link.",
@@ -1283,7 +1289,8 @@
      "vorschlag": "„Was soll ich fürs Network posten? Mein Alltag mit vier Kindern ist nichts Besonderes.“ (Für die Mikro-Szene fehlt ein belegter Moment, dafür [echte Situation einsetzen], zum Beispiel Ort und Uhrzeit, an dem sie das dachte.)",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "Vor der Geburt ihrer dritten Tochter schrieb Patricia eine Liste für ihren Mann; daraus wurde ihr erstes eigenes Angebot (30 Bestellungen in zwei Tagen). Quelle context/patricia-vollprofil.md, Gedächtnis Hybridmodell-Ursprung"
   },
   {
    "nr": "20",
@@ -1299,11 +1306,11 @@
    "rolle": "Vertrauen",
    "mit": "Tipp: die häufigste Frage ist das Thema",
    "a": [
-    "Alle fragten: „Wie machst du das mit vier Kindern?“ Ich postete trotzdem nur Network-Produkte.",
+    "„Wie machst du das mit vier Kindern?“, fragten alle. Ich hab nur Network-Produkte gepostet.",
     ""
    ],
    "b": [
-    "Im Network postete ich alles, ausser die Frage, die man mir am meisten stellte.",
+    "Alle wollten wissen, wie ich das mit vier Kindern mache. Gepostet hab ich Network-Produkte.",
     ""
    ],
    "caption": "Lange habe ich diese Frage einfach weggelächelt, als wäre sie ein Kompliment und sonst nichts.\n\nDabei war sie der deutlichste Hinweis, den ich je bekommen habe. Die Leute wollten von mir wissen, wie ich Alltag, Kinder und Arbeit unter einen Hut bringe, und genau darüber habe ich angefangen zu reden.\n\nSchau mal, welche Frage dir am häufigsten gestellt wird. Eine Frage zu dir, nicht zu deinem Produkt. Dort liegt sehr oft dein Thema.\n\nMein Nischengenerator hilft dir, diese Spur in drei Themen zu übersetzen.\n\nKommentier NISCHE, dann schick ich dir den Link.",
@@ -1418,7 +1425,8 @@
      "vorschlag": "Im Network hab ich alles gepostet, nur das eine nicht, was alle fragten. (nur wenn's stimmt; eine echte Szene mit Ort und Zeit fehlt noch, Platzhalter [echte Situation einsetzen])",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "Patricia wurde oft gefragt, wie sie das mit vier Kindern organisiert, und postete trotzdem jahrelang Firmen- und Produktbilder (drei Jahre Katalog-Profil). Quelle outputs/reels/2026-10-31-radar-reels.md"
   },
   {
    "nr": "13",
@@ -1438,7 +1446,7 @@
     ""
    ],
    "b": [
-    "Im Network kommt ein neuer Bonusplan per Mail, und dein Magen zieht sich zusammen.",
+    "Mail vom Network: neuer Bonusplan. Und dein Magen zieht sich zusammen.",
     ""
    ],
    "caption": "Das ist kein Gedanke gegen deine Firma, er ist einfach ehrlich.\n\nWer nur an einem Plan hängt, den jemand anderes schreibt, kann nichts tun, wenn sich dort etwas ändert. Mir hat genau dieses Gefühl gezeigt, dass ich etwas daneben brauche, das mir gehört.\n\nBei mir ist das ein eigenes Thema mit eigenen kleinen Angeboten, und das Network läuft weiter. Beides stützt sich gegenseitig, statt dass alles an einem Faden hängt.\n\nDer erste Schritt ist dein Thema. Mein Nischengenerator schlägt dir drei vor.\n\nKommentier NISCHE, dann schick ich dir den Link.",
@@ -1805,11 +1813,11 @@
    "rolle": "Beziehung",
    "mit": "Inspiration: hinter fremden Erfolgen steckt ein Plan",
    "a": [
-    "Um elf feiern alle im Network, und du denkst: Was stimmt nicht mit mir?",
+    "23 Uhr, Storys voller Network-Erfolge, und dein Kopf fragt: Was stimmt nicht mit mir?",
     ""
    ],
    "b": [
-    "Sie wird für ihren neuen Rang gefeiert. Du denkst: Ich bin halt nicht der Network-Typ.",
+    "Ihr neuer Rang wird gefeiert, und du denkst: Ich bin halt kein Network-Typ.",
     ""
    ],
    "caption": "Mit dir stimmt alles. Was du siehst, ist ihr bester Moment, und was du nicht siehst, ist der Plan dahinter.\n\nWenn es bei jemandem mühelos aussieht, steckt fast immer etwas dahinter, das man im Feed nicht sieht: ein klares Thema, ein fester Rhythmus und viele Versuche, die niemand gepostet hat.\n\nIch habe mein erstes Network nach drei Jahren aufgegeben. Am Typ lag es nicht, mir fehlte ein Plan, der zu meinem Leben passt.\n\nSchick das einer Freundin, die sich gerade wieder vergleicht.",
@@ -2061,7 +2069,7 @@
     ""
    ],
    "b": [
-    "„Ich poste doch jeden Tag!“ Und heute Abend schreibt wieder niemand wegen deinem Network.",
+    "„Ich poste doch täglich fürs Network!“ Und heute Abend bleibt das Postfach wieder leer.",
     ""
    ],
    "caption": "Jeden Tag posten klingt nach Fleiss. In Wahrheit postet man dann oft einfach irgendwas, damit etwas da ist.\n\nReichweite nützt dir nichts, wenn die Leute danach nicht wissen, was sie bei dir bekommen und was sie davon haben. Lieber weniger Beiträge, dafür jeder mit einem klaren Grund, warum jemand bleiben sollte.\n\nFrag dich vor dem nächsten Beitrag: Was nimmt eine Mama mit, die mich noch nicht kennt?\n\nWenn du dich hier wiedererkennst, bleib hier.",
@@ -2183,11 +2191,11 @@
    "rolle": "Vertrauen",
    "mit": "Inspiration: Reaktion zählt mehr als Reichweite",
    "a": [
-    "Ich hab fürs Network gepostet, viele haben geschaut, und geschrieben hat mir niemand.",
+    "Fast 2'000 Leute sahen im Oktober mein Reel. Kommentiert hat kein einziger.",
     ""
    ],
    "b": [
-    "Viele Herzen unter meinem Network-Beitrag, und bestellt hat wieder nur meine Mama.",
+    "Viele Herzen unter deinem Network-Beitrag, und im Postfach liegt wieder keine einzige Frage.",
     ""
    ],
    "caption": "Das ist mir im Oktober passiert, mit einem ganz normalen Reel aus meinem Alltag.\n\nViele haben es gesehen, kaum jemand hat reagiert. Gesehen werden ist eben noch nicht dasselbe wie gemeint sein. Wer sich angesprochen fühlt, schreibt etwas, und wer nur kurz hängen bleibt, scrollt weiter.\n\nSeitdem schaue ich bei jedem Beitrag zuerst, ob er einer bestimmten Mama etwas Konkretes mitgibt, und erst dann, wie weit er läuft.\n\nWenn du dich hier wiedererkennst, bleib hier.",
@@ -2296,7 +2304,8 @@
      "vorschlag": "Der Morgen nach meinem Network-Beitrag: viele Herzen, bestellt hat nur meine Mama. (nur wenn's stimmt)",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "Ein Reel von Patricia erreichte im Oktober 2026 fast 2'000 Leute und bekam keinen Kommentar; 78 von 87 Beiträgen seit 20.08. ohne Kommentar. Quelle CLAUDE.md Befund Radar-Reels"
   },
   {
    "nr": "22",
@@ -2312,11 +2321,11 @@
    "rolle": "Aufmerksamkeit",
    "mit": "Tipp: verkaufen geht ohne grosse Zahlen",
    "a": [
-    "Post fürs Network, keine einzige Nachricht, und du denkst: „Erst ab 10'000 Followern kauft jemand.“",
+    "Du postest fürs Network, keiner schreibt, und denkst: „Ab 10'000 Followern kauft jemand.“",
     ""
    ],
    "b": [
-    "„Wenn ich mal mehr Follower habe …“ Dein Satz zur Upline, der dich seit Monaten ausbremst.",
+    "„Wenn ich mal mehr Follower habe …“, sagst du deiner Upline. Schon wieder.",
     ""
    ],
    "caption": "Ich habe rund 2'000 Follower, und verkauft habe ich trotzdem.\n\nEntscheidend ist, ob die richtigen Leute da sind und wissen, wobei du ihnen hilfst. Ein paar Frauen, die genau dein Thema suchen, bringen mehr als viele, die nur zufällig vorbeikommen.\n\nWarte also nicht auf die grosse Zahl. Fang mit denen an, die schon da sind, und sag ihnen klar, was sie bei dir bekommen.\n\nWenn du dich hier wiedererkennst, bleib hier.",
@@ -2565,11 +2574,11 @@
    "rolle": "Vertrauen",
    "mit": "Warum mit mir: ehrliche Zahlen statt Glanz",
    "a": [
-    "Über mein Network machte sogar mein eigener Mann lange seine Sprüche.",
+    "Über mein Network hat mein eigener Mann lange Sprüche gemacht. Ich hab sie geschluckt.",
     ""
    ],
    "b": [
-    "Beim Znacht fragte mein Mann nach dem Network. Ich sagte „gut“ und wechselte das Thema.",
+    "Mein Mann machte Sprüche übers Network, und ich hab beim Znacht einfach geschwiegen.",
     ""
    ],
    "caption": "Ich verdiene bis heute nicht so viel wie früher in meinem Vollzeitjob, das sage ich ganz offen.\n\nSprüche macht trotzdem niemand mehr. Diskutiert habe ich darüber irgendwann nicht mehr, ich habe einfach weitergemacht und gezeigt, dass es mir ernst ist.\n\nEin eigenes Business wird oft belächelt, gerade von den Menschen, die einem am nächsten sind. Das tut weh, und es ist kein Grund, aufzuhören.\n\nWenn du dich hier wiedererkennst, bleib hier.",
@@ -2680,7 +2689,8 @@
      "vorschlag": "Znacht, mein Mann fragt nach dem Network. Ich sage „gut“, wechsle das Thema. (nur wenn's stimmt)",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "Patricias Mann hat lange Sprüche über ihr Network gemacht; heute macht er keinen Spruch mehr. Quelle .claude/skills/content/SKILL.md TEIL 0"
   },
   {
    "nr": "14",
@@ -2700,7 +2710,7 @@
     ""
    ],
    "b": [
-    "„Was, wenn mein Mann geht?“ Ab da wollte ich eigenes Geld neben dem Network.",
+    "„Was, wenn mein Mann geht?“ Darum wollte ich eigenes Geld neben dem Network.",
     ""
    ],
    "caption": "Das klingt hart, und trotzdem war es einer meiner wichtigsten Gründe für die Selbständigkeit.\n\nMit Teilzeit, Kindern und einem kleinen Network-Einkommen bleibt fürs Alter oft wenig, das wirklich dir gehört. Das ist kein Misstrauen gegen den Partner, das ist Vorsorge.\n\nSeit Mai 2025 gibt es bei mir keinen Monat mehr ohne Einkommen aus meiner Selbständigkeit. Der Weg dorthin hat mit einem eigenen Thema angefangen.\n\nWenn du deins suchst, schlägt dir mein Nischengenerator drei vor.\n\nKommentier NISCHE, dann schick ich dir den Link.",
@@ -2805,7 +2815,8 @@
      "vorschlag": "„Was, wenn mein Mann geht?“, dachte ich [echte Situation: Ort, Uhrzeit]. Darum eigenes Geld neben dem Network. (nur wenn's stimmt; das Original hat 15 Wörter und ist damit über der Bildgrenze von 14, ohne Szene gekürzt wäre es: „Was, wenn mein Mann geht?“ Darum will ich eigenes Geld neben dem Network. – 13 Wörter)",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "Patricias Grund ist finanzielle Unabhängigkeit, auch fürs Alter und nicht abhängig vom Mann oder einer Beziehung. Seit Mai 2025 gibt es keinen Monat mehr ohne Einkommen aus ihrer Selbständigkeit. Quelle context/patricia-interview-2026-10.md"
   },
   {
    "nr": "30",
@@ -2821,11 +2832,11 @@
    "rolle": "Vertrauen",
    "mit": "Warum mit mir: es geht mit wenig Zeit",
    "a": [
-    "„Mit vier Kindern fehlt mir die Zeit fürs Network.“ Das hab ich jahrelang gesagt.",
+    "Vier Kinder und 18 Stunden die Woche für Network und Business. Mehr hab ich nicht.",
     ""
    ],
    "b": [
-    "Freitagabend: „Für etwas Eigenes neben dem Network fehlt mir die Zeit.“ Dachte ich auch.",
+    "„Für etwas Eigenes neben dem Network fehlt mir die Zeit.“ Ich hab 18 Stunden die Woche.",
     ""
    ],
    "caption": "Vier Kinder, ein Haushalt und ein Garten, der nie fertig wird. Mehr als rund 18 Stunden pro Woche gibt mein Leben gerade nicht her.\n\nDeshalb mache ich nicht alles, was man angeblich machen muss. Ich mache weniger, dafür das Richtige, und das Wichtigste läuft über einen festen Rhythmus.\n\nWenig Zeit ist kein Grund, es nicht zu tun. Sie ist ein Grund, es klüger zu tun.\n\nWenn du dich hier wiedererkennst, bleib hier.",
@@ -2933,7 +2944,8 @@
      "vorschlag": "Freitagabend, [echter Ort einsetzen]: „Für was Eigenes neben dem Network fehlt mir Zeit.“ Ich auch. (nur wenn's stimmt)",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "Patricia arbeitet mit vier Kindern rund 18 Stunden pro Woche an Network und Business, öffentlich freigegeben. Quelle context/patricia-interview-2026-10.md"
   },
   {
    "nr": "25",
@@ -2949,11 +2961,11 @@
    "rolle": "Vertrauen",
    "mit": "Warum mit mir: der zweite Anlauf",
    "a": [
-    "2021 sagte ich: „Ich hör auf mit Network.“ Mein zweiter Anlauf lief anders.",
+    "2021 hab ich gesagt: „Ich hör auf mit Network.“ Mein zweiter Anlauf lief anders.",
     ""
    ],
    "b": [
-    "2018 packte ich mein erstes Network-Starterset aus: voller Hoffnung, ohne jeden Plan.",
+    "Mein erstes Network-Starterset hab ich 2018 ausgepackt: voller Hoffnung, ohne Plan.",
     ""
    ],
    "caption": "Am Produkt lag es nicht. Mir fehlte ein Plan, der zu meinem Leben passt.\n\n2023 habe ich neu angefangen, diesmal mit einem eigenen Thema und einem eigenen Plan, und das Network läuft daneben mit.\n\nWenn du gerade ans Aufhören denkst: Vielleicht reicht es, es anders zu machen. Der Anfang ist bei mir immer das Thema.\n\nMein Nischengenerator schlägt dir drei vor, passend zu dir und deinem Produkt.\n\nKommentier NISCHE, dann schick ich dir den Link.",
@@ -3061,7 +3073,8 @@
      "vorschlag": "Mein erstes Network-Starterset hab ich 2018 ausgepackt wie du: voller Hoffnung, ohne Plan.",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "belegt": "2018 mit Network angefangen, 2021 aufgehört, 2023 neu gestartet mit eigenem Plan; seit Mai 2025 jeden Monat Einkommen aus der Selbständigkeit. Quelle context/patricia-interview-2026-10.md"
   },
   {
    "nr": "34",
@@ -3204,7 +3217,7 @@
     ""
    ],
    "b": [
-    "„Nur heute 30 Prozent!“ im Network-Chat, und du denkst: Ich kann mir das einfach nicht leisten.",
+    "„Nur heute 30 Prozent!“ im Network-Chat, und du denkst: Das kann ich nie.",
     ""
    ],
    "caption": "Heute ist Black Friday, und ich mache keinen Rabatt. Ich mache dir auch keinen Druck.\n\nMan kann sich alles selbst beibringen, mit Büchern, Videos und Ausprobieren. Das braucht einfach Zeit. Wer diese Zeit nicht hat, kann eine fertige Strategie übernehmen, das ist alles.\n\nWas mich an der Branche aufregt: Leuten einzureden, sie müssten investieren, und ihnen dann noch zu zeigen, wie sie an Geld kommen. Das ist Bullshit.\n\nWenn du dich hier wiedererkennst, bleib hier.",
@@ -3326,11 +3339,11 @@
    "rolle": "Aufmerksamkeit",
    "mit": "Inspiration: Zusammenarbeit statt Kampf",
    "a": [
-    "Im Network-Chat jubeln wir uns zu, und heimlich zählt jede die Interessenten der anderen.",
+    "Sie postet im Network-Chat „Gratuliere!“ und schreibt nachher deine Interessenten an.",
     ""
    ],
    "b": [
-    "„Die hat mir meine Leute abgeworben.“ Den Satz hörst du im Network-Chat ständig.",
+    "Im Network-Chat steht wieder: „Die hat mir meine Leute abgeworben.“ Und du nickst.",
     ""
    ],
    "caption": "Lautes Abwerben und Konkurrenzkampf, das regt mich an der Branche wirklich auf.\n\nDabei gibt es genug Menschen für alle. Wer ein eigenes Thema hat, muss niemandem etwas wegnehmen, weil die Leute wegen ihr kommen und nicht wegen eines Rabatts.\n\nIch wünsche mir mehr Frauen, die sich gegenseitig weiterempfehlen, statt sich heimlich Teampartnerinnen abzujagen.\n\nWenn du dich hier wiedererkennst, bleib hier.",
@@ -3581,111 +3594,109 @@
     ""
    ],
    "b": [
-    "Wenn der Kontoauszug kommt, scrollst du an den Network-Bestellungen schnell vorbei.",
+    "„Beim Kontoauszug scroll ich an den Network-Bestellungen immer ganz schnell vorbei.“",
     ""
    ],
    "caption": "Ich kenne das, ich habe selbst Produkte für über 500 Franken weggeworfen, die ich nur für die Provision gekauft hatte.\n\nWas du schon ausgegeben hast, holst du nicht zurück, indem du einfach so weitermachst. Die ehrliche Frage ist eine andere: Willst du aufhören, oder willst du es anders machen?\n\nBeides ist in Ordnung. Nur so weiter wie bisher ist keine Antwort.\n\nSchick das einer Freundin, die sich diese Frage gerade stellt.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "81b68efba72d",
-     "bestanden": false,
-     "gruende": [
-      "kuechentisch: Nach dem Zitat fehlt das Subjekt („und bestätigst“ ohne „du“), im stehenden Bildtext wirkt das holprig und nicht wie gesprochen."
-     ],
+     "fingerabdruck": "b9cfefbeb280",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Er trifft die Sunk-Cost-Falle: Sie hat viel investiert und zahlt deshalb weiter, obwohl es sich nicht lohnt."
+       "warum": "Der Hook trifft den Sunk-Cost-Schmerz: viel investiert, und das Geld fliesst über die Eigenbestellung weiter ab."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Der Satz in Anführungszeichen ist wörtlich ihr innerer Monolog, wenn sie die Bestellung bestätigt."
+       "warum": "Den Satz denkt Sandra wörtlich, genau in dem Moment, in dem sie wieder bestellt."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "Nach dem Zitat fehlt das Subjekt („und bestätigst“ ohne „du“), im stehenden Bildtext wirkt das holprig und nicht wie gesprochen."
+       "ja": true,
+       "warum": "Die Wortwahl ist schlicht und mündlich, ohne Fachjargon, so sagt man es einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das neutrale „und“ stellt Gedanke und Handlung nebeneinander, kein Bindewort dreht den Sinn."
+       "warum": "Das „und“ verbindet den Gedanken mit der Handlung, die aus ihm folgt, und kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder Lösung noch Angebot."
+       "warum": "Der Hook nennt weder Lösung noch Angebot, er zeigt nur das Muster."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network“ und „Eigenbestellung“ verorten die Welt sofort."
+       "warum": "„Network“ und „Eigenbestellung“ verorten die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Gezeigt wird der konkrete Moment, in dem sie die Eigenbestellung wieder bestätigt."
+       "warum": "Das Bestätigen der Eigenbestellung ist ein sichtbarer, konkreter Moment und keine abstrakte Behauptung."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Er enthält ein wörtliches Zitat ihres inneren Monologs, Gegner ist der Denkfehler „schon zu viel investiert“."
+       "warum": "Der Hook bringt ein wörtliches Zitat aus ihrem inneren Monolog, und der Denkfehler „schon so viel gesteckt“ wirkt als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Eigenbestellung und Network sind ihre eigenen Wörter und treffen genau die Nische."
+       "warum": "Network und Eigenbestellung sind exakt die Welt der Network-Mama."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Der Hook spiegelt ihren Denkfehler und öffnet eine neue Sicht auf das Weitermachen, sie bleibt die Heldin."
+       "warum": "Der Hook hält ihr einen Spiegel vor und öffnet eine neue Sicht auf ihr eigenes Muster, sie bleibt die Heldin, das passt zur Rolle Beziehung."
       }
      },
-     "vorschlag": "„Ich hab schon so viel ins Network gesteckt“ – und du bestätigst wieder die Eigenbestellung.",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "cff5df3a9466",
+     "fingerabdruck": "357cd54c0dba",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: Der Satz beschreibt eine Gewohnheit (Wegschauen) und keinen einzelnen Moment mit Zeitpunkt oder Handlung, die man sieht."
+      "gegner_gestaendnis_oder_zitat: Die Du-Form ist weder Geständnis noch wörtliches Zitat, und ein benannter Gegner fehlt."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Er trifft den Kern-Pain: Geld fliesst in die Eigenbestellung, und sie will gar nicht sehen, wie viel es ist."
+       "warum": "Das Wegschauen bei den eigenen Bestellungen trifft genau die Scham über das Geld, das in die Eigenbestellung fliesst, und zeigt den Schmerz als Szene statt als Diagnose."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Das Wegschauen vom eigenen Kontoauszug ist ein heimlicher Gedanke, den sie kaum laut sagt und sofort wiedererkennt."
+       "warum": "Dieses heimliche Schnell-Vorbeiscrollen gibt kaum jemand zu, deshalb fühlt sie sich ertappt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "„Schau ich lieber nicht an“ ist genau der Tonfall, in dem man es einer Freundin gesteht."
+       "warum": "Der Satz ist schlicht und alltagsnah, so sagt man es einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Es ist ein einziger Satz ohne Bindewort, nichts dreht den Sinn."
+       "warum": "Das „Wenn“ setzt einen klaren Zeitpunkt, und kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder eine Lösung noch ein Angebot noch ein Werkzeug."
+       "warum": "Im Hook steht weder eine Lösung noch ein Angebot."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network-Bestellungen“ verortet den Satz sofort in der Network-Welt."
+       "warum": "Durch „Network-Bestellungen“ ist die Welt sofort verortet."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "Der Satz beschreibt eine Gewohnheit (Wegschauen) und keinen einzelnen Moment mit Zeitpunkt oder Handlung, die man sieht."
+       "ja": true,
+       "warum": "Es ist ein konkreter Moment mit sichtbarer Handlung: der Kontoauszug und der Daumen, der weiterscrollt."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": true,
-       "warum": "Es ist ein Zitat aus ihrem inneren Monolog in Ich-Form, mit Geständnischarakter."
+       "ja": false,
+       "warum": "Die Du-Form ist weder Geständnis noch wörtliches Zitat, und ein benannter Gegner fehlt."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Eigenbestellungen, die das eigene Geld auffressen, sind ein typisches Network-Mama-Thema."
+       "warum": "Eigenbestellung und Network-Ausgaben sind der Kern-Pain der Network-Mama."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Als Spiegel ihres eigenen Gedankens macht er sie zur Heldin und öffnet die neue Sicht „aufhören oder anders machen“ für den Beitrag."
+       "warum": "Der Hook spiegelt sie als Heldin ihres Moments und öffnet den Raum für eine neue Sicht aufs Aufhören oder Andersmachen."
       }
      },
-     "vorschlag": "Wenn der Kontoauszug kommt, scroll ich an den Network-Bestellungen schnell vorbei.",
+     "vorschlag": "„Beim Kontoauszug scroll ich an den Network-Bestellungen immer ganz schnell vorbei.“",
      "modell": "claude-opus-5-5"
     }
    }
@@ -3704,7 +3715,7 @@
    "rolle": "Beziehung",
    "mit": "Inspiration: der erste Schritt ist klein",
    "a": [
-    "„Nächstes Jahr wird alles anders“, sagst du beim Adventskranz über dein Network. Wieder.",
+    "„Nächstes Jahr wird alles anders“, sagst du beim Adventskranz übers Network. Ich glaub dir.",
     ""
    ],
    "b": [
@@ -3714,105 +3725,103 @@
    "caption": "Der Dezember ist da, und mit ihm dieser Satz.\n\nEin neues Jahr ändert daran nichts. Was etwas ändert, ist ein erster Schritt, der so klein ist, dass du ihn diese Woche machen kannst. Bei mir war das ein Thema, für das man mich kennen soll.\n\nWenn du deins noch suchst, nimm dir zehn Minuten dafür, nicht bis Januar. Mein Nischengenerator schlägt dir drei Themen vor.\n\nKommentier NISCHE, dann schick ich dir den Link.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "7f186d2e4d05",
+     "fingerabdruck": "7d2e1951d43d",
      "bestanden": false,
      "gruende": [
-      "bezug_der_zeilen: „Im Network bleibt alles gleich“ klingt wie ein Urteil über das Network selbst statt über ihren wiederholten Vorsatz und dreht damit den Sinn gegen das Network, das sie ja behalten soll."
+      "passt_zur_rolle: Das stichelnde „Wieder.“ hält ihr das Problem vor, statt ihr als Heldin eine neue Sicht zu öffnen, wie es Beziehung und Inspiration verlangen."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Vorsatz, der jedes Jahr wiederkommt, ohne dass sich etwas ändert, trifft das Gefühl, festzustecken."
+       "warum": "Das jährliche Versprechen, dass sich am Network etwas ändert, trifft den Schmerz, dass ihr Einsatz seit Jahren keinem Plan folgt."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Den Satz „Nächstes Jahr wird alles anders“ hat sie sich wörtlich schon gesagt, als Zitat ihres inneren Monologs."
+       "warum": "Den Vorsatz zum Jahresende kennt sie wörtlich aus dem eigenen Kopf."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Beide Sätze sind schlicht und mündlich, so würde man es einer Freundin sagen."
+       "warum": "So kann eine Freundin es sagen, auch wenn „über dein Network“ etwas steif klingt."
       },
       "bezug_der_zeilen": {
-       "ja": false,
-       "warum": "„Im Network bleibt alles gleich“ klingt wie ein Urteil über das Network selbst statt über ihren wiederholten Vorsatz und dreht damit den Sinn gegen das Network, das sie ja behalten soll."
+       "ja": true,
+       "warum": "Es gibt kein Bindewort, und „Wieder.“ schliesst logisch an den wiederholten Vorsatz an."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook enthält keine Lösung, kein Werkzeug und kein Angebot."
+       "warum": "Im Hook steht weder eine Lösung noch ein Angebot."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Im Network“ verortet die Welt sofort."
+       "warum": "„Network“ steht im Hook und verortet die Welt sofort."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Der Adventskranz gibt einen konkreten, sichtbaren Moment im Jahr."
+       "warum": "Der Adventskranz ist ein konkreter Moment mit einem sichtbaren Detail."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook nutzt ein wörtliches Zitat ihres eigenen Vorsatzes."
+       "warum": "Ihr eigener Satz steht als Zitat vorne."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Er spricht klar die Frau im Network an, die mehr daraus machen will."
+       "warum": "Der Hook spricht gezielt die Frau an, die im Network feststeckt."
       },
       "passt_zur_rolle": {
-       "ja": true,
-       "warum": "Er öffnet eine neue Sicht auf den grossen Vorsatz und führt so zum kleinen ersten Schritt, mit ihr als Heldin."
+       "ja": false,
+       "warum": "Das stichelnde „Wieder.“ hält ihr das Problem vor, statt ihr als Heldin eine neue Sicht zu öffnen, wie es Beziehung und Inspiration verlangen."
       }
      },
-     "vorschlag": "„Nächstes Jahr wird alles anders“, sagst du beim Adventskranz – über dein Network. Wieder.",
+     "vorschlag": "„Nächstes Jahr wird alles anders“, sagst du beim Adventskranz übers Network. Ich glaub dir.",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "3e358f5b13a2",
-     "bestanden": false,
-     "gruende": [
-      "kuechentisch: „mach ich's richtig im Network“ klingt angehängt; am Küchentisch sagt man eher „mit dem Network“."
-     ],
+     "fingerabdruck": "926d631f2baf",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der jährliche Neuanfang, der im Februar schon versandet ist, trifft den Kern-Pain: viel Herz, aber kein Plan."
+       "warum": "Der gute Vorsatz, der schon im Februar versandet, trifft den Kern-Pain des Hobbymodus und das leise „es klappt bei mir wieder nicht“."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Den Neujahrsvorsatz denkt sie selbst, und das Bild vom leeren Planer ertappt sie dabei."
+       "warum": "Den Satz „Nächstes Jahr mach ich's richtig“ hat sie selbst gedacht, wörtlich in ihrem inneren Monolog."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "„mach ich's richtig im Network“ klingt angehängt; am Küchentisch sagt man eher „mit dem Network“."
+       "ja": true,
+       "warum": "Beide Sätze sind schlichte Alltagssprache ohne Fachwort, so erzählt man es einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Es gibt kein Bindewort, der Kontrast zwischen Vorsatz und leerem Planer ergibt sich logisch von selbst."
+       "warum": "Es gibt kein Bindewort, und die Abfolge vom Vorsatz im Januar zum leeren Planer im Februar ist logisch stimmig."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder Lösung noch Angebot, auch der kleine erste Schritt bleibt für den Beitrag."
+       "warum": "Der kleine erste Schritt wird nicht verraten, der Hook zeigt nur das Scheitern des grossen Vorsatzes."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network“ verortet die Welt sofort, auch ohne Vorwissen."
+       "warum": "Das Wort „Network“ steht im ersten Satz und verortet die Welt sofort."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Der leere Planer im Februar ist ein sichtbares Detail statt einer Behauptung."
+       "warum": "Der leere Planer im Februar ist ein sichtbares Detail mit Zeitanker statt einer Behauptung."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook öffnet mit einem wörtlichen Zitat aus ihrem inneren Monolog."
+       "warum": "Der Hook ist ein wörtliches Zitat aus ihrem inneren Monolog, der Vorsatz-Mythos dient als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Er spricht klar die Network-Frau an, die es jedes Jahr neu ernst meinen will."
+       "warum": "Der Bezug zum Network ist ausdrücklich genannt und betrifft die Suchende, die anders weitermachen will."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Sie ist die Heldin im Spiegel ihres eigenen Vorsatzes, was den Boden für die neue Sicht vom kleinen ersten Schritt bereitet."
+       "warum": "Der Hook legt die alte Sicht vom grossen Neustart offen, die der Beitrag mit dem kleinen ersten Schritt kippt, und Sandra bleibt dabei die Heldin."
       }
      },
-     "vorschlag": "„Nächstes Jahr mach ich's richtig mit dem Network.“ Im Februar liegt der Planer leer.",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
    }
