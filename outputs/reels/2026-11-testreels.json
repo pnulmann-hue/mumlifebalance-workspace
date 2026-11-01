@@ -997,6 +997,58 @@
      },
      "vorschlag": "Elternabend, die Mama neben dir, und im Kopf: «Sprech ich sie aufs Network an?»",
      "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "f66642ef3d57",
+     "bestanden": false,
+     "gruende": [
+      "in_drei_sekunden_klar: „Business“ kann jedes Nebengeschäft sein, ohne Vorwissen ist die Network-Welt nicht erkennbar.",
+      "nische_network_mama: Weder Network noch ein Wort aus ihrer Welt kommt vor, der Hook passt genauso auf jede Selbständige."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Der Moment, in dem sie ihr Business verschweigt, trifft die Scham und den Hobby-Verdacht direkt."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Das Ausweichen bei dieser Smalltalk-Frage kennt sie und gibt es kaum zu, darum fühlt sie sich ertappt."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Zitat plus ein schlichter Satz in Alltagssprache, so redet man mit einer Freundin."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Das zweite „Und“ führt die Szene logisch weiter, kein Bindewort dreht den Sinn."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der «Ich helfe»-Satz kommt erst im Beitrag, der Hook zeigt nur das Problem."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "„Business“ kann jedes Nebengeschäft sein, ohne Vorwissen ist die Network-Welt nicht erkennbar."
+      },
+      "mikro_szene": {
+       "ja": true,
+       "warum": "Ein konkreter Gesprächsmoment mit wörtlicher Frage, keine allgemeine Behauptung."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Der Hook beginnt mit einem wörtlichen Zitat aus ihrem Alltag."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Weder Network noch ein Wort aus ihrer Welt kommt vor, der Hook passt genauso auf jede Selbständige."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Sie ist die Heldin in ihrer eigenen Szene, und der Tipp gibt ihr eine neue Sicht, also Beziehung."
+      }
+     },
+     "vorschlag": "„Und, was machst du so?“ Und vom Network-Business erzählst du wieder nichts.",
+     "modell": "claude-opus-5-5"
     }
    }
   },
@@ -1021,7 +1073,122 @@
    ],
    "rolle": "Beziehung",
    "mit": "Inspiration: Aussortieren fängt mit einem einzigen Punkt an.",
-   "caption": "Ich hatte vergessen, es richtig abzustellen, und plötzlich rollte es los, ohne mich und mit allen vier Kindern drin. Passiert ist zum Glück nichts.\n\nDen Moment vergesse ich nie, weil er mir gezeigt hat, wie voll mein Kopf war. Ich habe funktioniert, und zwar so gut, dass ich selbst nicht mehr gemerkt habe, was ich tue.\n\nDanach habe ich angefangen auszusortieren, was wirklich an mir hängen muss und was nicht. Angefangen hat das mit einem einzigen Punkt, den ich gestrichen habe.\n\nWas wäre der erste Punkt, den du von deiner Liste streichen würdest, wenn du dürftest? Ein Wort reicht."
+   "caption": "Ich hatte vergessen, es richtig abzustellen, und plötzlich rollte es los, ohne mich und mit allen vier Kindern drin. Passiert ist zum Glück nichts.\n\nDen Moment vergesse ich nie, weil er mir gezeigt hat, wie voll mein Kopf war. Ich habe funktioniert, und zwar so gut, dass ich selbst nicht mehr gemerkt habe, was ich tue.\n\nDanach habe ich angefangen auszusortieren, was wirklich an mir hängen muss und was nicht. Angefangen hat das mit einem einzigen Punkt, den ich gestrichen habe.\n\nWas wäre der erste Punkt, den du von deiner Liste streichen würdest, wenn du dürftest? Ein Wort reicht.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "defa07da3147",
+     "bestanden": false,
+     "gruende": [
+      "schmerz: Die Szene zeigt Mama-Stress oder einen Schreckmoment, nicht Sandras Schmerz mit dem Network, das wie ein teures Hobby aussieht.",
+      "gedanke_gelesen: Das ist ein persönliches Erlebnis von Patricia, kein Satz, den Sandra um 23 Uhr selbst denkt.",
+      "kuechentisch: „Dass mein Auto mit meinen Kindern losfuhr“ klingt verdreht, so erzählt man es einer Freundin nicht.",
+      "bezug_der_zeilen: Das „so … dass“ ergibt keinen Sinn: Ihr Autopilot erklärt nicht, warum das Auto von selbst losfährt, und unklar bleibt, wer gefahren ist.",
+      "in_drei_sekunden_klar: Nichts verweist auf Network oder Business, wer sie nicht kennt, denkt an einen Verkehrsunfall.",
+      "gegner_gestaendnis_oder_zitat: Formal ist es ein Geständnis, die Autoszene ist aber nicht belegt (nur die vier Kinder) und trägt keinen Vermerk „(nur wenn's stimmt)“. Im Zweifel gilt Nein.",
+      "nische_network_mama: Der Satz passt auf jede Mutter, das Network kommt gar nicht vor.",
+      "passt_zur_rolle: Die Rolle Beziehung verlangt eine neue Sicht mit Sandra als Heldin. Hier steht Patricias eigene Geschichte im Mittelpunkt, und zum Aussortieren führt kein Bezug."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": false,
+       "warum": "Die Szene zeigt Mama-Stress oder einen Schreckmoment, nicht Sandras Schmerz mit dem Network, das wie ein teures Hobby aussieht."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Das ist ein persönliches Erlebnis von Patricia, kein Satz, den Sandra um 23 Uhr selbst denkt."
+      },
+      "kuechentisch": {
+       "ja": false,
+       "warum": "„Dass mein Auto mit meinen Kindern losfuhr“ klingt verdreht, so erzählt man es einer Freundin nicht."
+      },
+      "bezug_der_zeilen": {
+       "ja": false,
+       "warum": "Das „so … dass“ ergibt keinen Sinn: Ihr Autopilot erklärt nicht, warum das Auto von selbst losfährt, und unklar bleibt, wer gefahren ist."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Im Hook steht keine Lösung und kein Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "Nichts verweist auf Network oder Business, wer sie nicht kennt, denkt an einen Verkehrsunfall."
+      },
+      "mikro_szene": {
+       "ja": true,
+       "warum": "Es ist ein konkreter, sichtbarer Moment und keine Behauptung."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Formal ist es ein Geständnis, die Autoszene ist aber nicht belegt (nur die vier Kinder) und trägt keinen Vermerk „(nur wenn's stimmt)“. Im Zweifel gilt Nein."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Der Satz passt auf jede Mutter, das Network kommt gar nicht vor."
+      },
+      "passt_zur_rolle": {
+       "ja": false,
+       "warum": "Die Rolle Beziehung verlangt eine neue Sicht mit Sandra als Heldin. Hier steht Patricias eigene Geschichte im Mittelpunkt, und zum Aussortieren führt kein Bezug."
+      }
+     },
+     "vorschlag": "„Ich mach im Network alles, was die Upline sagt, auf Autopilot. Und wofür eigentlich?“",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "22463f8963a5",
+     "bestanden": false,
+     "gruende": [
+      "schmerz: Ein davonrollendes Auto ist ein Schreckmoment, aber kein Schmerz der Network-Mama wie Eigenbestellung, Hobbymodus oder fehlendes eigenes Geld.",
+      "gedanke_gelesen: Sandra denkt um 23 Uhr nicht an ein rollendes Auto, sondern an ihr Business, das nicht vorwärtskommt.",
+      "in_drei_sekunden_klar: Nichts verortet den Hook im Network oder im Business, wer Patricia nicht kennt, denkt an eine Familien- oder Unfallgeschichte.",
+      "nische_network_mama: Vier Kinder deuten auf Mama hin, aber Network, eigenes Standbein oder Business kommen nicht vor.",
+      "passt_zur_rolle: Bei Beziehung ist Sandra die Heldin mit neuer Sicht, hier steht Patricias Erlebnis im Zentrum, und der Bezug zu „Aussortieren fängt mit einem Punkt an“ fehlt."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": false,
+       "warum": "Ein davonrollendes Auto ist ein Schreckmoment, aber kein Schmerz der Network-Mama wie Eigenbestellung, Hobbymodus oder fehlendes eigenes Geld."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Sandra denkt um 23 Uhr nicht an ein rollendes Auto, sondern an ihr Business, das nicht vorwärtskommt."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Genau so erzählt man einer Freundin einen Schreckmoment, schlicht und ohne Fachwort."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Das „aber“ stellt „ohne mich“ gegen „mit allen vier Kindern“, also ohne gegen mit, und das ist ein echter Gegensatz."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook enthält keine Lösung und kein Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "Nichts verortet den Hook im Network oder im Business, wer Patricia nicht kennt, denkt an eine Familien- oder Unfallgeschichte."
+      },
+      "mikro_szene": {
+       "ja": true,
+       "warum": "Ein konkreter, sichtbarer Moment mit Ort und Detail statt eines grossen Themas."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Es ist ein Geständnis in Ich-Form mit sichtbarem Detail, die Szene selbst ist aber nicht belegt und bräuchte den Vermerk „(nur wenn's stimmt)“."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Vier Kinder deuten auf Mama hin, aber Network, eigenes Standbein oder Business kommen nicht vor."
+      },
+      "passt_zur_rolle": {
+       "ja": false,
+       "warum": "Bei Beziehung ist Sandra die Heldin mit neuer Sicht, hier steht Patricias Erlebnis im Zentrum, und der Bezug zu „Aussortieren fängt mit einem Punkt an“ fehlt."
+      }
+     },
+     "vorschlag": "„Ich schaff das alles irgendwie“ – neben Network und Kindern. Welcher Punkt zuerst rausfliegt:",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "19",
@@ -1044,7 +1211,121 @@
     "Du machst so viel nebenbei,",
     "dass es niemandem auffällt, nicht einmal dir."
    ],
-   "caption": "Die Liste sollte nur dafür sorgen, dass zu Hause alles weiterläuft, während ich im Spital bin.\n\nBeim Schreiben habe ich gemerkt, wie viel ich als Mama nebenbei organisiere, und danach habe ich meinen Alltag so umgebaut, dass alles aufgeht und Zeit für mich bleibt.\n\nGenau daraus ist mein erstes eigenes Angebot entstanden. Es ging um das, was ich ohnehin jeden Tag gemacht habe. Über dieses Angebot kam ich mit Mamas ins Gespräch, die ich vorher nicht kannte, und erst danach kam mein Network-Produkt zur Sprache.\n\nWenn du wissen willst, was in deinem Alltag steckt: Mein Nischengenerator schlägt dir drei Themen vor.\n\nKommentier NISCHE, dann schick ich dir den Link."
+   "caption": "Die Liste sollte nur dafür sorgen, dass zu Hause alles weiterläuft, während ich im Spital bin.\n\nBeim Schreiben habe ich gemerkt, wie viel ich als Mama nebenbei organisiere, und danach habe ich meinen Alltag so umgebaut, dass alles aufgeht und Zeit für mich bleibt.\n\nGenau daraus ist mein erstes eigenes Angebot entstanden. Es ging um das, was ich ohnehin jeden Tag gemacht habe. Über dieses Angebot kam ich mit Mamas ins Gespräch, die ich vorher nicht kannte, und erst danach kam mein Network-Produkt zur Sprache.\n\nWenn du wissen willst, was in deinem Alltag steckt: Mein Nischengenerator schlägt dir drei Themen vor.\n\nKommentier NISCHE, dann schick ich dir den Link.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "b7ebfe20558f",
+     "bestanden": false,
+     "gruende": [
+      "schmerz: Der Satz zeigt Patricias Familienorganisation, aber nicht Sandras Schmerz (Hobby statt Business, kein eigenes Geld, kein Plan).",
+      "gedanke_gelesen: Eine Liste für den Mann vor einer Geburt ist Patricias Moment; Sandra findet darin keinen eigenen 23-Uhr-Gedanken wieder.",
+      "in_drei_sekunden_klar: Nichts verortet den Satz in der Welt Network oder Business; es könnte ebenso ein Familien- oder Mental-Load-Post sein.",
+      "nische_network_mama: Mama ja, Network nein; weder Network noch das eigene Standbein kommen vor."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": false,
+       "warum": "Der Satz zeigt Patricias Familienorganisation, aber nicht Sandras Schmerz (Hobby statt Business, kein eigenes Geld, kein Plan)."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Eine Liste für den Mann vor einer Geburt ist Patricias Moment; Sandra findet darin keinen eigenen 23-Uhr-Gedanken wieder."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "So erzählt man es einer Freundin, schlicht und ohne Fachwort."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Es ist ein einziger Satz ohne sinndrehendes Bindewort, die Teile hängen logisch zusammen."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Im Hook steht weder eine Lösung noch ein Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "Nichts verortet den Satz in der Welt Network oder Business; es könnte ebenso ein Familien- oder Mental-Load-Post sein."
+      },
+      "mikro_szene": {
+       "ja": true,
+       "warum": "Ein konkreter Moment (vor der dritten Geburt) mit einem sichtbaren Detail (die Liste für den Mann)."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Es ist ein Geständnis in Ich-Form mit einem konkreten Moment. Die dritte Geburt als Zeitpunkt ist aber nicht in den Eckdaten belegt und braucht den Vermerk (nur wenn's stimmt)."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Mama ja, Network nein; weder Network noch das eigene Standbein kommen vor."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Patricias eigene Geschichte, aus dem Alltag erzählt, passt zur Rolle Vertrauen und zur Stufe Inspiration."
+      }
+     },
+     "vorschlag": "Eine Liste für meinen Mann ist schuld, dass ich neben dem Network Eigenes aufbaue.",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "c60824241af8",
+     "bestanden": false,
+     "gruende": [
+      "schmerz: Unsichtbare Arbeit kann wehtun, aber hier steht sie als Diagnose in der Du-Form über Sandra und nicht als Geständnis, Zitat oder Szene.",
+      "gedanke_gelesen: „Nicht einmal dir“ ist ein Blick von aussen, den Sandra um 23 Uhr so nicht selbst denkt.",
+      "bezug_der_zeilen: „So viel …, dass es niemandem auffällt“ ist als Ursache schief, denn mehr Arbeit fällt eher mehr auf und nicht weniger.",
+      "in_drei_sekunden_klar: Ohne Vorwissen kann es um Haushalt, Job oder Familie gehen, das Network kommt nicht vor.",
+      "mikro_szene: Es ist eine allgemeine Behauptung ohne Moment, Ort oder Uhrzeit.",
+      "gegner_gestaendnis_oder_zitat: Der Hook hat kein Ich-Geständnis, kein wörtliches Zitat und keinen benannten Gegner.",
+      "nische_network_mama: Nur „nebenbei“ deutet auf ihre Welt hin, das reicht für die Verortung als Network-Mama nicht.",
+      "passt_zur_rolle: Vertrauen braucht Patricias eigene Geschichte in der Ich-Form, und dieser Du-Satz erzählt nichts von ihr."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": false,
+       "warum": "Unsichtbare Arbeit kann wehtun, aber hier steht sie als Diagnose in der Du-Form über Sandra und nicht als Geständnis, Zitat oder Szene."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "„Nicht einmal dir“ ist ein Blick von aussen, den Sandra um 23 Uhr so nicht selbst denkt."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Der Satz klingt gesprochen und natürlich, so könnte man es einer Freundin sagen."
+      },
+      "bezug_der_zeilen": {
+       "ja": false,
+       "warum": "„So viel …, dass es niemandem auffällt“ ist als Ursache schief, denn mehr Arbeit fällt eher mehr auf und nicht weniger."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Im Hook steht weder eine Lösung noch ein Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "Ohne Vorwissen kann es um Haushalt, Job oder Familie gehen, das Network kommt nicht vor."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Es ist eine allgemeine Behauptung ohne Moment, Ort oder Uhrzeit."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Der Hook hat kein Ich-Geständnis, kein wörtliches Zitat und keinen benannten Gegner."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Nur „nebenbei“ deutet auf ihre Welt hin, das reicht für die Verortung als Network-Mama nicht."
+      },
+      "passt_zur_rolle": {
+       "ja": false,
+       "warum": "Vertrauen braucht Patricias eigene Geschichte in der Ich-Form, und dieser Du-Satz erzählt nichts von ihr."
+      }
+     },
+     "vorschlag": "Im Network lief bei mir alles nebenbei, und übersehen habe ich es zuerst selbst. (Ich-Geständnis mit verorteter Welt. Die Mikroszene fehlt noch: Patricia setzt sie im Beitrag ein [echte Situation einsetzen], nur wenn's stimmt.)",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "20",
@@ -1067,7 +1348,64 @@
     "Was andere Mamas mich am häufigsten fragen,",
     "hat nichts mit meinem Produkt zu tun."
    ],
-   "caption": "Lange habe ich diese Frage einfach weggelächelt, als wäre sie ein Kompliment und sonst nichts.\n\nDabei war sie der deutlichste Hinweis, den ich je bekommen habe. Die Leute wollten von mir wissen, wie ich Alltag, Kinder und Arbeit unter einen Hut bringe, und genau darüber habe ich angefangen zu reden.\n\nSchau mal, welche Frage dir am häufigsten gestellt wird. Eine Frage zu dir, nicht zu deinem Produkt. Dort liegt sehr oft dein Thema.\n\nMein Nischengenerator hilft dir, diese Spur in drei Themen zu übersetzen.\n\nKommentier NISCHE, dann schick ich dir den Link."
+   "caption": "Lange habe ich diese Frage einfach weggelächelt, als wäre sie ein Kompliment und sonst nichts.\n\nDabei war sie der deutlichste Hinweis, den ich je bekommen habe. Die Leute wollten von mir wissen, wie ich Alltag, Kinder und Arbeit unter einen Hut bringe, und genau darüber habe ich angefangen zu reden.\n\nSchau mal, welche Frage dir am häufigsten gestellt wird. Eine Frage zu dir, nicht zu deinem Produkt. Dort liegt sehr oft dein Thema.\n\nMein Nischengenerator hilft dir, diese Spur in drei Themen zu übersetzen.\n\nKommentier NISCHE, dann schick ich dir den Link.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "c3cdbf987df6",
+     "bestanden": false,
+     "gruende": [
+      "schmerz: Der Satz bewundert Patricia, statt Sandras eigenen Schmerz zu benennen, etwa fehlende Zeit oder ein Business, das nach Hobby aussieht.",
+      "gedanke_gelesen: Es ist eine Frage an Patricia und nicht Sandras Gedanke über sich selbst um 23 Uhr.",
+      "in_drei_sekunden_klar: Ohne Vorwissen kann es um Haushalt, Job oder Familie gehen, denn Network oder ein eigenes Business wird nirgends verortet.",
+      "mikro_szene: „Immer wieder“ beschreibt eine Häufigkeit und keinen konkreten Moment mit Ort oder Uhrzeit.",
+      "nische_network_mama: Nur „Mamas“ und „vier Kinder“ kommen vor, Network fehlt, also spricht der Hook jede Mehrfach-Mama an."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": false,
+       "warum": "Der Satz bewundert Patricia, statt Sandras eigenen Schmerz zu benennen, etwa fehlende Zeit oder ein Business, das nach Hobby aussieht."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Es ist eine Frage an Patricia und nicht Sandras Gedanke über sich selbst um 23 Uhr."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "„Krass, wie machst du das?“ ist wörtliche, natürliche Alltagssprache unter Freundinnen."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Das Zitat und der Satz „Das fragen mich Mamas immer wieder“ hängen logisch zusammen, und kein Bindewort dreht den Sinn."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook nennt weder eine Lösung noch ein Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "Ohne Vorwissen kann es um Haushalt, Job oder Familie gehen, denn Network oder ein eigenes Business wird nirgends verortet."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "„Immer wieder“ beschreibt eine Häufigkeit und keinen konkreten Moment mit Ort oder Uhrzeit."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Der Hook ist ein wörtliches Zitat aus Patricias Umfeld."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Nur „Mamas“ und „vier Kinder“ kommen vor, Network fehlt, also spricht der Hook jede Mehrfach-Mama an."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Er öffnet Patricias eigene Geschichte mit den belegten vier Kindern und passt damit zur Rolle Vertrauen, auch wenn er leicht nach Selbstlob klingt."
+      }
+     },
+     "vorschlag": "„Wie machst du dein Network mit vier Kindern?“ fragen mich Mamas am häufigsten.",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "13",

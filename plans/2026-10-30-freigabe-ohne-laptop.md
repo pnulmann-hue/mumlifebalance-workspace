@@ -95,10 +95,13 @@ belegt**. Schritt 1 ist darum ein Test. Fällt er negativ aus, wird der Plan neu
 8. [x] Den Laptop-Task `freigaben-einplanen-2000` abschalten, **erst nachdem** die Cloud-Routine zweimal sauber gelaufen ist. Laufen beide gleichzeitig, wird doppelt gepostet.
 
 **Teil C — der Telegram-Rückkanal**
-9. [ ] Einen kleinen Dienst auf Vercel bauen, der Telegram-Nachrichten annimmt und in eine Warteschlange legt. Dafür reicht eine einzige Tabelle in der Supabase, die es für den Kochbot schon gibt. Der Dienst selbst plant nichts ein und kommt nicht an das Cockpit.
-10. [ ] Die Routine liest bei jedem Lauf die Warteschlange. Eine Änderung („Caption kürzer“) landet im bestehenden Feld `kommentar` am Beitrag. Damit greift dieselbe Mechanik wie bei der Kommentarzeile, und es entsteht keine zweite.
-11. [ ] Claude arbeitet die Änderung ein und schickt die neue Caption per Telegram. Der Beitrag wartet, bis Patricia „passt“ antwortet. Geplant wird erst danach.
-12. [ ] Eine Sicherung gegen falsche Absender: Der Dienst nimmt nur Nachrichten aus Patricias Chat-ID an.
+9. [x] ~~Dienst auf Vercel + Supabase-Tabelle~~ — nicht nötig (01.11.2026). Der Cockpit-Bot hat keinen Webhook, deshalb liest die Routine die Nachrichten direkt über `getUpdates` (`scripts/cockpit/telegram-rueckkanal.py lesen`). Telegram hält sie 24 Stunden bereit, die Routine läuft alle zwei Stunden.
+10. [x] Die Routine liest in **Schritt 0** von `reference/scheduled-task-einplanen-cloud.md` die Nachrichten und ändert Caption oder Termin. Bei einem schon geplanten Beitrag nimmt sie ihn vorher bei Blotato heraus (`blotato-suchen` / `blotato-loeschen`, gelöscht wird nur bei genau einem passenden Treffer). Die Änderung steht zusätzlich als `kommentar` am Karussell.
+11. [x] Eine neue Caption geht vollständig per Telegram an Patricia, die Freigabe steht so lange auf `status: "aenderung"`. Auf ihr „passt“ wechselt sie auf `wartet` und wird im selben Lauf eingeplant. Folientexte kann die Cloud nicht neu zeichnen, die gehen an den Kommentar-Task am Laptop.
+12. [x] Das Skript gibt nur Nachrichten aus `TELEGRAM_CHAT_ID` heraus.
+    ⚠️ Noch offen: ein echter Durchlauf mit einer Nachricht von Patricia.
+
+🚨 **Fund am 01.11.:** Der 22-Uhr-Lauf vom 31.10. hatte das KI-Karussell auf denselben Platz gelegt wie der 20-Uhr-Lauf „5 Fragen“ (So 1.11. 19:30, Mentoring). Ursache: Ein nachgerücktes Datum steht nur in der Freigabe, `freigabe-nachruecken.py` las aber nur die Beiträge. Behoben in 92e9553 (liest jetzt auch die Freigaben früherer Läufe). Das KI-Karussell steht jetzt auf Do 5.11. 19:30.
 
 **Teil D — nachziehen**
 13. [ ] CLAUDE.md: Die Abschnitte „Cockpit-Artifact — Content-Pipeline“ und „Version 102“ beschreiben den 20:00-Task und gehören angepasst.
