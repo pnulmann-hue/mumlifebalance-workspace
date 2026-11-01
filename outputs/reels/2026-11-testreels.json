@@ -27,109 +27,108 @@
    "caption": "Ein Kompliment zum Profil, und zwei Sätze später kommt die «spannende Möglichkeit». Ich blockiere diese Nachrichten inzwischen, ohne sie fertig zu lesen.\n\nDas Absurde daran: Genau so wurde es mir im Network beigebracht, und genau so wird es heute noch beigebracht. Ich weiss also, warum die Frau hinter der Nachricht das macht. Man hat ihr gesagt, dass es ohne nicht geht, und vermutlich fühlt sie sich beim Tippen genauso unwohl wie ich beim Lesen.\n\nSeit 2023 baue ich mein Business so auf, dass die Leute zu mir kommen, weil sie bei mir etwas gesehen haben, das ihnen weitergeholfen hat. Das dauert länger als hundert Nachrichten, und dafür muss ich mich danach bei niemandem entschuldigen.\n\nWenn du dich hier wiedererkennst, bleib hier. Genau darum geht es auf diesem Profil.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "1e102a499b43",
+     "fingerabdruck": "8ed93cd63c2d",
      "bestanden": false,
      "gruende": [
-      "schmerz: Der Hook zeigt Patricias Ärger als Empfängerin, nicht Sandras Schmerz; Sandra schreibt solche Nachrichten womöglich selbst und fühlt sich eher ertappt als verstanden.",
-      "gedanke_gelesen: «Ich blockiere jede» ist Patricias Reaktion, kein Satz, den Sandra um 23 Uhr selbst denkt.",
-      "mikro_szene: Der Hook beschreibt ein wiederkehrendes Muster («jede») statt eines einzelnen Moments mit Ort oder Zeitpunkt."
+      "bezug_der_zeilen: Zeile 1 spricht vom Schreiben, Zeile 2 schaudert «bei jeder» ohne genanntes Bezugswort; offen bleibt, ob Patricia sie schreibt oder bekommt, und belegt ist nur das Bekommen.",
+      "mikro_szene: Beschrieben wird eine allgemeine Methode, kein einzelner Moment mit sichtbarem Detail wie die konkrete Nachricht im Postfach."
      ],
      "antworten": {
       "schmerz": {
-       "ja": false,
-       "warum": "Der Hook zeigt Patricias Ärger als Empfängerin, nicht Sandras Schmerz; Sandra schreibt solche Nachrichten womöglich selbst und fühlt sich eher ertappt als verstanden."
+       "ja": true,
+       "warum": "Die Kaltakquise nach Upline-Vorlage ist für viele Network-Mamas ein echter, peinlicher Pflichtpunkt, den sie ungern macht."
       },
       "gedanke_gelesen": {
-       "ja": false,
-       "warum": "«Ich blockiere jede» ist Patricias Reaktion, kein Satz, den Sandra um 23 Uhr selbst denkt."
+       "ja": true,
+       "warum": "Wer solche Nachrichten verschicken soll, kennt das innere Schaudern dabei und fühlt sich ertappt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Leicht genervt und trocken erzählt, so sagt man es einer Freundin."
+       "warum": "«Mir schauderts bei jeder» ist gesprochene Alltagssprache, so sagt man es einer Freundin."
       },
       "bezug_der_zeilen": {
-       "ja": true,
-       "warum": "«Erst … dann …: Ich blockiere jede» hängt logisch zusammen, kein Bindewort dreht den Sinn."
+       "ja": false,
+       "warum": "Zeile 1 spricht vom Schreiben, Zeile 2 schaudert «bei jeder» ohne genanntes Bezugswort; offen bleibt, ob Patricia sie schreibt oder bekommt, und belegt ist nur das Bekommen."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Es steht weder ein Weg noch ein Angebot im Hook."
+       "warum": "Es wird kein Weg und kein Angebot genannt, nur die Abneigung."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "«Fürs Network» und die «spannende Möglichkeit» verorten die Welt sofort."
+       "warum": "«Fürs Network» und «spannende Möglichkeit» verorten die Welt sofort."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Der Hook beschreibt ein wiederkehrendes Muster («jede») statt eines einzelnen Moments mit Ort oder Zeitpunkt."
+       "warum": "Beschrieben wird eine allgemeine Methode, kein einzelner Moment mit sichtbarem Detail wie die konkrete Nachricht im Postfach."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Die Kaltakquise-Masche ist der Gegner, «Ich blockiere jede» ist ein Geständnis, und beides ist belegt."
+       "warum": "Die Kaltakquise-Methode ist der Gegner, «mir schauderts» ist das Geständnis, «spannende Möglichkeit» das Zitat."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Die Anwerbe-Nachricht fürs Network ist mitten in ihrer Welt."
+       "warum": "Das Kompliment-dann-Möglichkeit-Muster kennt nur, wer im Network steckt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Als Hot Take mit klarer Haltung holt der Hook neue Augen und passt damit zur Rolle Aufmerksamkeit."
+       "warum": "Eine klare Meinung gegen eine verbreitete Methode holt neue Augen und passt zu Aufmerksamkeit."
       }
      },
-     "vorschlag": "Fürs Network Fremden ein Kompliment schreiben, dann die «spannende Möglichkeit»? Mir schauderts bei jeder.",
+     "vorschlag": "Network-Nachricht: erst ein Kompliment zum Profil, zwei Sätze später die «spannende Möglichkeit». Blockiert.",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "a21679f5cc39",
+     "fingerabdruck": "bece0fd61a14",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: „Du tippst sie gerade selbst“ ist ein Vorwurf von aussen und macht Sandra zur Gegnerin, ihr eigener Gedanke um 23 Uhr ist das nicht.",
-      "bezug_der_zeilen: „Sie“ bezieht sich grammatisch auf „Möglichkeit“, gemeint ist aber die Nachricht, die im Hook nie genannt wird.",
-      "in_drei_sekunden_klar: Weder „Network“ noch „Nachricht“ stehen da, wer den Code „spannende Möglichkeit“ nicht kennt, weiss nicht, um welche Welt es geht."
+      "schmerz: Es ist Patricias Ärger als Empfängerin; Sandras Schmerz wäre, solche Nachrichten selbst verschicken zu müssen, und so fühlt sie sich eher ertappt und abgewertet.",
+      "gedanke_gelesen: Sandra denkt um 23 Uhr eher «ich hasse es, so zu schreiben» als «mir schauderts beim Empfangen», darum fehlt das Gefühl, durchschaut zu werden.",
+      "mikro_szene: «Bei jeder Nachricht» beschreibt ein wiederkehrendes Muster, aber keinen einzelnen Moment mit Ort oder Zeit."
      ],
      "antworten": {
       "schmerz": {
-       "ja": true,
-       "warum": "Der Hook trifft einen echten Schmerz: Sie verschickt selbst die Copy-Paste-Nachrichten, die sie bei anderen peinlich findet."
+       "ja": false,
+       "warum": "Es ist Patricias Ärger als Empfängerin; Sandras Schmerz wäre, solche Nachrichten selbst verschicken zu müssen, und so fühlt sie sich eher ertappt und abgewertet."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "„Du tippst sie gerade selbst“ ist ein Vorwurf von aussen und macht Sandra zur Gegnerin, ihr eigener Gedanke um 23 Uhr ist das nicht."
+       "warum": "Sandra denkt um 23 Uhr eher «ich hasse es, so zu schreiben» als «mir schauderts beim Empfangen», darum fehlt das Gefühl, durchschaut zu werden."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Die Aufzählung im Telegrammstil klingt wie ein spöttischer Satz unter Freundinnen."
+       "warum": "«Mir schauderts» und die nacherzählte Masche klingen genau so, wie man es einer Freundin erzählt."
       },
       "bezug_der_zeilen": {
-       "ja": false,
-       "warum": "„Sie“ bezieht sich grammatisch auf „Möglichkeit“, gemeint ist aber die Nachricht, die im Hook nie genannt wird."
+       "ja": true,
+       "warum": "Der Doppelpunkt löst sauber auf, was schaudern lässt, und kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Es steht keine Lösung und kein Angebot im Hook."
+       "warum": "Der Hook nennt weder einen Weg noch ein Angebot."
       },
       "in_drei_sekunden_klar": {
-       "ja": false,
-       "warum": "Weder „Network“ noch „Nachricht“ stehen da, wer den Code „spannende Möglichkeit“ nicht kennt, weiss nicht, um welche Welt es geht."
+       "ja": true,
+       "warum": "«Network-Nachricht» und «spannende Möglichkeit» verorten die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
-       "ja": true,
-       "warum": "Es ist ein konkreter Moment: Sie tippt gerade die Nachricht mit Kompliment und Möglichkeit."
+       "ja": false,
+       "warum": "«Bei jeder Nachricht» beschreibt ein wiederkehrendes Muster, aber keinen einzelnen Moment mit Ort oder Zeit."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Das Zitat „spannende Möglichkeit“ ist da, und die Kaltakquise-Masche ist der Gegner."
+       "warum": "Das Geständnis in Ich-Form ist belegt, und die Kaltakquise-Masche dient als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Die Rekrutierungsnachricht ist typisch für Network-Mamas."
+       "warum": "Die Kaltakquise im Network ist genau ihre Welt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Als ironischer Wiedererkennungs-Moment holt der Hook neue Augen, das passt zur Rolle Aufmerksamkeit."
+       "warum": "Als Haltung mit «das kenn ich» holt der Hook neue Augen, was der Rolle Aufmerksamkeit entspricht."
       }
      },
-     "vorschlag": "Mir schauderts bei jeder Network-Nachricht: erst Kompliment zum Profil, dann die «spannende Möglichkeit».",
+     "vorschlag": "Mir schauderts bei jeder Network-Nachricht mit «spannender Möglichkeit». Und dir beim Abschicken?",
      "modell": "claude-opus-5-5"
     }
    },
@@ -159,106 +158,107 @@
    "caption": "Von 2018 bis 2021 habe ich genau das gemacht. Wenn ein Monat schlecht lief, habe ich mehr angesprochen und mehr gepostet, weil ich keine andere Antwort kannte.\n\nUnd jeden Monat fing es wieder von vorne an, weil niemand wusste, wofür ich eigentlich stehe, ausser für die Produkte meiner Firma.\n\n2021 habe ich aufgehört. Als ich 2023 neu angefangen habe, war meine erste Frage eine andere: Worüber will ich reden, damit die richtigen Leute mich von selbst finden?\n\nWenn du gerade an genau dieser Frage hängst, habe ich dir etwas gebaut. Der Nischengenerator stellt dir ein paar Fragen und schlägt dir drei Themen vor, die zu dir und deinem Produkt passen.\n\nKommentier NISCHE, dann schick ich dir den Link.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "0041f06ffc83",
+     "fingerabdruck": "709ea433092f",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: «jahrelang» fasst eine ganze Phase zusammen, statt einen einzelnen Moment zu zeigen."
+      "kuechentisch: «Also schrieb ich» ist Schriftsprache im Präteritum, am Küchentisch sagt man «Also hab ich … geschrieben».",
+      "mikro_szene: «wieder einer Fremden» ist eine wiederholte Gewohnheit ohne Ort oder Uhrzeit, kein einzelner sichtbarer Moment."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Fremde anschreiben auf Rat der Upline ist ein echter, unangenehmer Schmerz vieler Network-Mamas."
+       "warum": "Fremde anschreiben, weil die Upline es so sagt, ist ein echter und unangenehmer Alltag vieler Network-Mamas."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Den Satz «Du musst einfach mehr Leute ansprechen» hat fast jede im Network gehört und befolgt."
+       "warum": "Den Satz «Du musst einfach mehr Leute ansprechen» hat fast jede schon gehört und befolgt."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Zitat plus «Also hab ich…» klingt genau so, wie man es einer Freundin erzählt."
+       "ja": false,
+       "warum": "«Also schrieb ich» ist Schriftsprache im Präteritum, am Küchentisch sagt man «Also hab ich … geschrieben»."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "«Also» zeigt korrekt die Folge: Rat gehört, danach gehandelt."
+       "warum": "«Also» beschreibt korrekt die Folge aus dem Ratschlag, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Tipp zur ersten Frage kommt im Hook nicht vor."
+       "warum": "Der Tipp mit der ersten Frage zum Thema kommt nicht im Hook vor."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "«im Network» verortet die Welt sofort, auch ohne Vorwissen."
+       "warum": "«im Network» und «einer Fremden schreiben» verorten die Welt sofort."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "«jahrelang» fasst eine ganze Phase zusammen, statt einen einzelnen Moment zu zeigen."
+       "warum": "«wieder einer Fremden» ist eine wiederholte Gewohnheit ohne Ort oder Uhrzeit, kein einzelner sichtbarer Moment."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Zitat (Network-Rat als Gegner) plus Geständnis in Ich-Form."
+       "warum": "Zitat des verbreiteten Ratschlags als Gegner plus belegtes Geständnis in Ich-Form."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Klar auf Network-Frauen und deren Akquise-Alltag zugeschnitten."
+       "warum": "Das Leute-Ansprechen im Network ist genau ihre Welt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Ehrliches Stück aus Patricias eigener Network-Geschichte passt zur Vertrauens-Rolle."
+       "warum": "Ehrliche eigene Geschichte über einen belegten Irrweg passt zur Rolle Vertrauen."
       }
      },
-     "vorschlag": "„Du musst einfach mehr Leute ansprechen.“ Also schrieb ich im Network wieder einer Fremden.",
+     "vorschlag": "„Du musst einfach mehr Leute ansprechen.“ Also hab ich im Network wieder Fremden geschrieben. (Für eine echte Mikroszene Ort und Uhrzeit ergänzen: [echte Situation einsetzen], die Bildzeile darf dann nicht über 14 Wörter wachsen.)",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "f69229cd59c8",
+     "fingerabdruck": "fca35005933e",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: 'Schlechter Monat' und 'Ich sitze da' nennen weder Ort noch Uhrzeit noch ein sichtbares Detail, das ist eher Zustand als Moment.",
-      "passt_zur_rolle: Die Präsensform 'Ich sitze da' wirkt, als täte Patricia das heute noch, und widerspricht ihrer Vertrauensgeschichte vom Ausstieg aus diesem Muster."
+      "kuechentisch: «schrieb ich darum … an» ist Schriftdeutsch im Präteritum, am Küchentisch sagt man «also hab ich … angeschrieben».",
+      "mikro_szene: «jahrelang» beschreibt eine Zeitspanne, keinen einzelnen Moment mit Ort oder Uhrzeit."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Ein schlechter Monat, auf den sie mit noch mehr Kaltakquise reagiert, ist ein echter, bekannter Frust der Network-Mama."
+       "warum": "Fremde anschreiben, weil die Upline es so will, ist ein echter, unangenehmer Alltag vieler Network-Mamas, und er steht hier als Geständnis da, nicht als Diagnose."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Viele kennen den Reflex, nach einem schwachen Monat noch mehr Fremde anzuschreiben, und reden selten darüber."
+       "warum": "Den Satz «Du musst einfach mehr Leute ansprechen» hat sie selbst gehört und befolgt, sie erkennt sich sofort darin."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Der Satz klingt wie gesprochen, ohne Fachwörter."
+       "ja": false,
+       "warum": "«schrieb ich darum … an» ist Schriftdeutsch im Präteritum, am Küchentisch sagt man «also hab ich … angeschrieben»."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Auf den schlechten Monat folgt logisch das 'noch mehr', kein Bindewort dreht den Sinn."
+       "warum": "«darum» verbindet Ratschlag und Handlung richtig kausal, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Tipp mit Thema vor Produkt steht nicht im Hook."
+       "warum": "Der Hook nennt keine Lösung und kein Angebot, der Tipp zur ersten Frage bleibt für den Beitrag."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "'Im Network' und 'Fremde anschreiben' verorten die Welt sofort."
+       "warum": "«Im Network» verortet die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "'Schlechter Monat' und 'Ich sitze da' nennen weder Ort noch Uhrzeit noch ein sichtbares Detail, das ist eher Zustand als Moment."
+       "warum": "«jahrelang» beschreibt eine Zeitspanne, keinen einzelnen Moment mit Ort oder Uhrzeit."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Ein Geständnis in Ich-Form, belegt durch das jahrelange Anschreiben Fremder."
+       "warum": "Der Hook hat ein Zitat als Gegner (der Ratschlag) und ein Geständnis in Ich-Form."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Network und Kaltakquise sind klar ihre Welt."
+       "warum": "Das Thema Fremde anschreiben im Network trifft genau Patricias Nische."
       },
       "passt_zur_rolle": {
-       "ja": false,
-       "warum": "Die Präsensform 'Ich sitze da' wirkt, als täte Patricia das heute noch, und widerspricht ihrer Vertrauensgeschichte vom Ausstieg aus diesem Muster."
+       "ja": true,
+       "warum": "Es ist Patricias eigene, ehrliche Geschichte aus der schweren Network-Phase, das passt zu Vertrauen."
       }
      },
-     "vorschlag": "«Du musst einfach mehr Leute ansprechen»: Im Network schrieb ich darum jahrelang Fremde an.",
+     "vorschlag": "«Du musst einfach mehr Leute ansprechen» – also hab ich im Network Fremde angeschrieben. (13 Wörter. Für die Mikro-Szene im Clip oder in der Caption einen belegten Moment ergänzen: [echte Situation einsetzen], z. B. wo und wann sie eine solche Nachricht geschrieben hat.)",
      "modell": "claude-opus-5-5"
     }
    },
@@ -288,57 +288,54 @@
    "caption": "Weisst du, was jemand sieht, der zum ersten Mal auf dein Profil kommt?\n\nBei mir waren es damals Produktbilder, Aktionen und das, was die Firma gerade geschickt hat. Verkauft habe ich trotzdem, das will ich gar nicht kleinreden. Nur musste ich jeden Monat wieder von vorne anfangen, weil niemand einen Grund hatte, von sich aus wiederzukommen.\n\nGanz ohne Bemühen geht es auch heute nicht, das wäre gelogen. Der Unterschied ist, dass ich jetzt an etwas baue, das bleibt: ein Thema, für das man mich kennt.\n\nMach mal den Test: Scroll durch deine letzten neun Beiträge und zähl, in wie vielen dein Produkt die Hauptrolle spielt. Wenn es mehr als drei sind, fehlt dir vermutlich dein Thema, und das findest du mit meinem Nischengenerator in ein paar Minuten.\n\nKommentier NISCHE, dann schick ich dir den Link.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "f1a4a532f7e2",
+     "fingerabdruck": "968fbd0e2ce2",
      "bestanden": false,
      "gruende": [
-      "kuechentisch: Der Satz ist ohne Ich und Verb eine Stichwort-Zeile, und „Network-Profil“ klingt nach Aufzählung, nicht nach dem Satz, den man einer Freundin sagt.",
-      "mikro_szene: „Drei Jahre“ und „jeden Monat“ fassen einen langen Zeitraum zusammen; es gibt keinen einzelnen Moment, keinen Ort und keine Uhrzeit.",
-      "gegner_gestaendnis_oder_zitat: Ohne Ich-Form ist es kein erkennbares Geständnis, es kann sogar wie ein Vorwurf an Sandra wirken; der Gegner „Firmenbilder“ steht nur angedeutet da.",
-      "passt_zur_rolle: Vertrauen braucht Patricias eigene Geschichte, und ohne „ich“ erkennt man im Hook nicht, dass sie von sich erzählt."
+      "mikro_szene: „Drei Jahre“ und „jeden Monat“ fassen einen Zeitraum zusammen. Es gibt keinen einzelnen Moment und keinen Zeitanker, an dem man stehen bleibt."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Jeden Monat wieder von vorn Verkäufen hinterherzurennen ist ein echter, bekannter Schmerz der Network-Mama."
+       "warum": "Jeden Monat wieder Verkäufen hinterherrennen und dabei nur Firmenbilder posten ist Sandras echter Alltag. Der Hook bringt das als Geständnis und nicht als Diagnose."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "„Jeden Monat wieder hinterherrennen“ ist ein Gedanke, den Sandra selbst hat, auch wenn der Satz ohne Ich etwas nüchtern bleibt."
+       "warum": "Wer selbst die Firmenbilder teilt und jeden Monat neu bei null anfängt, erkennt sich sofort darin."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "Der Satz ist ohne Ich und Verb eine Stichwort-Zeile, und „Network-Profil“ klingt nach Aufzählung, nicht nach dem Satz, den man einer Freundin sagt."
+       "ja": true,
+       "warum": "„Jeden Monat wieder Verkäufen hinterher“ ist umgangssprachlich und knapp, so erzählt man es einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das „und“ reiht zwei Zustände aneinander, kein Bindewort dreht den Sinn."
+       "warum": "Es gibt kein Bindewort, das den Sinn dreht. Die zweite Zeile ist die stille Folge der ersten und so stimmig."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Neun-Beiträge-Test und jede andere Lösung fehlen im Hook."
+       "warum": "Der Neun-Beiträge-Test und jeder andere Ausweg fehlen im Hook."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network“ und „Verkäufen“ verorten die Welt sofort, auch ohne Vorwissen."
+       "warum": "„im Network“ und „Firmenbilder“ verorten die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "„Drei Jahre“ und „jeden Monat“ fassen einen langen Zeitraum zusammen; es gibt keinen einzelnen Moment, keinen Ort und keine Uhrzeit."
+       "warum": "„Drei Jahre“ und „jeden Monat“ fassen einen Zeitraum zusammen. Es gibt keinen einzelnen Moment und keinen Zeitanker, an dem man stehen bleibt."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": false,
-       "warum": "Ohne Ich-Form ist es kein erkennbares Geständnis, es kann sogar wie ein Vorwurf an Sandra wirken; der Gegner „Firmenbilder“ steht nur angedeutet da."
+       "ja": true,
+       "warum": "Es ist ein klares Geständnis in Ich-Form mit einem sichtbaren Detail (Firmenbilder), und es ist belegt."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Firmenbilder im Network und monatlicher Verkaufsdruck sind genau ihre Welt."
+       "warum": "Firmenbilder posten und Monatsumsatz jagen ist typisch für das Network und passt zu Säule 1, Personal Brand statt Copy-Paste."
       },
       "passt_zur_rolle": {
-       "ja": false,
-       "warum": "Vertrauen braucht Patricias eigene Geschichte, und ohne „ich“ erkennt man im Hook nicht, dass sie von sich erzählt."
+       "ja": true,
+       "warum": "Patricias eigene, ehrliche Geschichte aus der schweren Phase ist genau die Rolle Vertrauen."
       }
      },
-     "vorschlag": "Drei Jahre hab ich im Network nur Firmenbilder gepostet. Jeden Monat wieder Verkäufen hinterher. (13 Wörter, Geständnis in Ich-Form. Eine echte Mikroszene, etwa ein bestimmter Monatsende-Abend, wäre noch stärker, ist aber nicht belegt: [echte Situation einsetzen].)",
+     "vorschlag": "Wieder Monatsanfang, wieder bei null: Drei Jahre postete ich im Network nur Firmenbilder. (14 Wörter. Der Monatsanfang macht aus dem Zeitraum einen wiederkehrenden Moment, ohne neue Fakten zu erfinden. Wenn Patricia einen konkreten Ort oder eine Uhrzeit dazu bestätigt, kann [echte Situation einsetzen] den Monatsanfang ersetzen.)",
      "modell": "claude-opus-5-5"
     },
     "b": {
