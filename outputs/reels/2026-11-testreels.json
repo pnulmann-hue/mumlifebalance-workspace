@@ -1863,54 +1863,55 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "eb82a6f2b34f",
+     "fingerabdruck": "6053e5d2ee32",
      "bestanden": false,
      "gruende": [
-      "kuechentisch: Das „Ihr“ hat keinen Bezug: Niemand sagt einer Freundin „Ihr neuer Rang“, ohne zu nennen, wessen, und als Bildtext kann es sogar als „euer“ gelesen werden."
+      "15 Wörter (10–14)",
+      "kuechentisch: Das „Du denkst:“ klingt nach Erzählerin und Diagnose, nicht nach Freundin, und mit 15 Wörtern ist es über der Grenze von 14 für Text im Bild."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Vergleich mit einer anderen und der stille Zweifel, nicht für das Network gemacht zu sein, ist ein echter Schmerz der Suchenden."
+       "warum": "Der Vergleich mit dem Erfolg einer Teamkollegin und der Zweifel, ob man überhaupt dafür gemacht ist, ist ein echter Schmerz einer Network-Mama."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "„Ich bin halt kein Network-Typ“ ist ein Satz, den sie wörtlich so denkt und kaum ausspricht."
+       "warum": "Der innere Satz „Ich bin halt kein Network-Typ“ ist genau das, was sie sich still selbst sagt."
       },
       "kuechentisch": {
        "ja": false,
-       "warum": "Das „Ihr“ hat keinen Bezug: Niemand sagt einer Freundin „Ihr neuer Rang“, ohne zu nennen, wessen, und als Bildtext kann es sogar als „euer“ gelesen werden."
+       "warum": "Das „Du denkst:“ klingt nach Erzählerin und Diagnose, nicht nach Freundin, und mit 15 Wörtern ist es über der Grenze von 14 für Text im Bild."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "„und du denkst“ verbindet die Feier und den Gedanken logisch, kein Bindewort dreht den Sinn."
+       "warum": "Es gibt kein Bindewort, und auf die Szene folgt logisch die Reaktion."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Plan hinter fremden Erfolgen wird nicht verraten, es gibt kein Angebot und keine Lösung."
+       "warum": "Der Hook nennt weder den Plan noch ein Angebot, die Auflösung bleibt offen."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Rang“ und „Network-Typ“ verorten den Hook sofort im Network Marketing."
+       "warum": "Team, Rang und Network-Typ verorten den Hook sofort in der Network-Welt."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Es ist ein konkreter Moment (eine Rangfeier, ihr Gedanke dabei) und keine allgemeine Behauptung."
+       "warum": "Ein konkreter Moment: Eine aus dem Team feiert ihren Rang, und sie schaut zu."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Er enthält ein Zitat aus ihrem inneren Monolog, dazu den Denkfehler „kein Typ dafür“ als Gegner."
+       "warum": "Ihr innerer Monolog steht als Zitat da, und der Denkfehler „kein Typ dafür“ wirkt als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Rang, Team-Feier und Network-Typ sind eindeutig ihre Welt."
+       "warum": "Team, Rang und Network sind klar die Welt der Network-Mama."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Für die Rolle Beziehung bietet er eine neue Sicht: Sie ist die Heldin, deren Glaubenssatz gekippt wird (hinter fremden Erfolgen steckt ein Plan)."
+       "warum": "Der Hook legt die Überzeugung offen, die der Beitrag mit einer neuen Sicht kippt (hinter fremden Erfolgen steckt ein Plan), und sie bleibt dabei die Heldin."
       }
      },
-     "vorschlag": "Eine aus dem Team feiert ihren neuen Rang. Du denkst: Ich bin halt kein Network-Typ.",
+     "vorschlag": "Eine im Team feiert ihren Rang, und du: „Ich bin halt kein Network-Typ.“",
      "modell": "claude-opus-5-5"
     }
    }
