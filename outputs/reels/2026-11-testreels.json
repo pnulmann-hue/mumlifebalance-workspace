@@ -2238,55 +2238,56 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "284f21feb933",
+     "fingerabdruck": "bd359a948a61",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: „Wieder“ macht daraus ein Muster statt eines Moments, und es fehlt ein Zeitanker wie eine Uhrzeit oder ein Ort.",
-      "gegner_gestaendnis_oder_zitat: Die Form ist ein Geständnis, aber die Szene mit der Mama steht nicht in Patricias belegten Eckdaten und trägt keinen Vermerk „(nur wenn's stimmt)“."
+      "mikro_szene: Durch „wieder“ und das allgemeine „deinem Beitrag“ beschreibt der Hook ein wiederkehrendes Muster, keinen einzelnen Moment mit Ort und Zeit.",
+      "gegner_gestaendnis_oder_zitat: Der Hook ist eine Du-Beschreibung ohne Ich-Geständnis, ohne wörtliches Zitat und ohne klar benannten Gegner.",
+      "passt_zur_rolle: Die Rolle Vertrauen verlangt Patricias eigene, ehrliche Geschichte. Der Hook spricht aber in Du-Form über Sandra, obwohl der belegte Reel-Befund ein Ich-Geständnis hergeben würde."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Viel Zuspruch und kein Verkauf, ausser in der eigenen Familie, ist genau ihr Schmerz: ein Business, das wie ein Hobby aussieht."
+       "warum": "Viele Likes, aber keine einzige Anfrage ist ein echter, bekannter Schmerz der Network-Mama, die vom Posten leben will."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Dass am Ende wieder nur die Mama bestellt, denkt sie selbst und sagt es kaum laut, darum fühlt sie sich ertappt."
+       "warum": "Der Blick ins leere Postfach nach vielen Herzen ist genau der stille Frust, den sie kennt und selten ausspricht."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "So erzählt man es einer Freundin, halb lachend und halb frustriert, ohne Fachwort."
+       "warum": "Der Satz klingt wie ein Seufzer unter Freundinnen. Nur „Network-Beitrag“ wirkt etwas technisch, stört aber nicht."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das „und“ verbindet Herzen und Bestellung als umgangssprachlichen Gegensatz, der Sinn bleibt richtig."
+       "warum": "Das „und“ verbindet Herzen und leeres Postfach als echten Gegensatz, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Im Hook steht weder eine Lösung noch ein Angebot, nur der Befund."
+       "warum": "Der Hook enthält keine Lösung und kein Angebot."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network-Beitrag“ und „bestellt“ verorten sofort im Network-Verkauf, auch ohne Vorwissen."
+       "warum": "„Network-Beitrag“ und „Postfach“ zeigen sofort, um welche Welt es geht."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "„Wieder“ macht daraus ein Muster statt eines Moments, und es fehlt ein Zeitanker wie eine Uhrzeit oder ein Ort."
+       "warum": "Durch „wieder“ und das allgemeine „deinem Beitrag“ beschreibt der Hook ein wiederkehrendes Muster, keinen einzelnen Moment mit Ort und Zeit."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": false,
-       "warum": "Die Form ist ein Geständnis, aber die Szene mit der Mama steht nicht in Patricias belegten Eckdaten und trägt keinen Vermerk „(nur wenn's stimmt)“."
+       "warum": "Der Hook ist eine Du-Beschreibung ohne Ich-Geständnis, ohne wörtliches Zitat und ohne klar benannten Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Der Beitrag spielt im Network, und Eigenbestellung oder Familienkauf ist typisch für die Network-Mama."
+       "warum": "Er spricht explizit die Frau an, die für ihr Network postet."
       },
       "passt_zur_rolle": {
-       "ja": true,
-       "warum": "Ein ehrliches Ich-Geständnis über eine schwere Phase trägt die Rolle Vertrauen, und der Bogen zu „Reaktion zählt mehr als Reichweite“ stimmt."
+       "ja": false,
+       "warum": "Die Rolle Vertrauen verlangt Patricias eigene, ehrliche Geschichte. Der Hook spricht aber in Du-Form über Sandra, obwohl der belegte Reel-Befund ein Ich-Geständnis hergeben würde."
       }
      },
-     "vorschlag": "Der Morgen nach meinem Network-Beitrag: viele Herzen, bestellt hat nur meine Mama. (nur wenn's stimmt)",
+     "vorschlag": "Fast 2'000 Leute sahen meinen Beitrag, und keine einzige Network-Mama schrieb mir ein Wort.",
      "modell": "claude-opus-5-5"
     }
    },
@@ -2316,56 +2317,54 @@
    "caption": "Ich habe rund 2'000 Follower, und verkauft habe ich trotzdem.\n\nEntscheidend ist, ob die richtigen Leute da sind und wissen, wobei du ihnen hilfst. Ein paar Frauen, die genau dein Thema suchen, bringen mehr als viele, die nur zufällig vorbeikommen.\n\nWarte also nicht auf die grosse Zahl. Fang mit denen an, die schon da sind, und sag ihnen klar, was sie bei dir bekommen.\n\nWenn du dich hier wiedererkennst, bleib hier.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "6d5c0de37106",
+     "fingerabdruck": "07f91604d299",
      "bestanden": false,
      "gruende": [
-      "15 Wörter (10–14)",
-      "kuechentisch: Der Telegrammstil „Post fürs Network, keine einzige Nachricht“ ist geschriebene Notizsprache, so redet man nicht mit einer Freundin. „Post“ kann zudem als Briefpost gelesen werden.",
-      "mikro_szene: Es ist eine allgemeine Situation ohne Moment, Ort oder Uhrzeit. Zudem ist der Hook mit 15 Wörtern über der Bildgrenze von 14."
+      "mikro_szene: Der Hook beschreibt ein allgemeines Muster und keinen konkreten Moment mit Uhrzeit oder Ort."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Sie postet fürs Network und niemand meldet sich. Das ist ein echter, häufiger Schmerz der Network-Mama."
+       "warum": "Posten, ohne dass jemand schreibt, und auf eine magische Followerzahl hoffen, ist ein echter, alltäglicher Schmerz der Network-Mama."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Der Satz „Erst ab 10'000 Followern kauft jemand“ ist ihr innerer Monolog im Wortlaut und trifft ihre heimliche Ausrede."
+       "warum": "Der Satz „Ab 10'000 Followern kauft jemand“ ist ein Gedanke, den sie heimlich hat und kaum ausspricht."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "Der Telegrammstil „Post fürs Network, keine einzige Nachricht“ ist geschriebene Notizsprache, so redet man nicht mit einer Freundin. „Post“ kann zudem als Briefpost gelesen werden."
+       "ja": true,
+       "warum": "Der Hook ist umgangssprachlich und direkt und kommt ohne Fachwörter aus, auch wenn das „und denkst“ leicht belehrend wirkt."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das „und“ reiht Ursache und Gedanken logisch aneinander, kein Bindewort dreht den Sinn."
+       "warum": "Posten, keine Reaktion, dann die Hoffnung auf mehr Follower: Die Folge ist logisch, und kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder Tipp noch Angebot. Dass es ohne grosse Zahlen geht, bleibt offen."
+       "warum": "Dass Verkaufen ohne grosse Zahlen geht, steht nicht im Hook; dort steht nur der Denkfehler."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network“ und „Followern“ verorten die Welt sofort: Network-Business auf Social Media."
+       "warum": "„Fürs Network“ und „Followern“ verorten die Welt sofort."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Es ist eine allgemeine Situation ohne Moment, Ort oder Uhrzeit. Zudem ist der Hook mit 15 Wörtern über der Bildgrenze von 14."
+       "warum": "Der Hook beschreibt ein allgemeines Muster und keinen konkreten Moment mit Uhrzeit oder Ort."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Das Zitat aus ihrem inneren Monolog transportiert zugleich einen Denkfehler als Gegner."
+       "warum": "Er enthält ein Zitat aus ihrem inneren Monolog und dazu den Denkfehler „grosse Followerzahl“ als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Das Posten fürs Network ohne Rückmeldung ist klar ihre Welt."
+       "warum": "Das Network wird ausdrücklich genannt, und das Posten ohne Anfragen ist ihr Kernproblem."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Ein verbreiteter Irrglaube wird aufgegriffen und provoziert. Das holt neue Augen und passt zu Aufmerksamkeit."
+       "warum": "Der Hook greift einen verbreiteten Irrglauben auf, den der Beitrag als Hot Take kippt, und holt so neue Augen."
       }
      },
-     "vorschlag": "Du postest fürs Network, keiner schreibt, und denkst: „Ab 10'000 Followern kauft jemand.“",
+     "vorschlag": "23 Uhr, wieder fürs Network gepostet, keine Nachricht: „Ab 10'000 Followern kauft jemand.“",
      "modell": "claude-opus-5-5"
     },
     "b": {
