@@ -724,55 +724,52 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "46aaca56a152",
-     "bestanden": false,
-     "gruende": [
-      "kuechentisch: Das Zitat klingt echt, aber das nachgeschobene „Und wofür eigentlich?“ steht ausserhalb des Zitats, hängt sprecherlos in der Luft und sagt man so nicht zu einer Freundin.",
-      "bezug_der_zeilen: Das „Und wofür eigentlich?“ lässt offen, ob gefragt wird, wofür die Eigenbestellung oder wofür der ganze Aufwand gut ist; das Bindewort verwischt den Bezug."
-     ],
+     "fingerabdruck": "e206dc28eafb",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Dass die Abrechnung gerade die Eigenbestellung deckt, trifft Sandras Kern-Pain: Zeit, Herz und Geld fliessen in ein Business, das wie ein teures Hobby aussieht."
+       "warum": "Er trifft den Kern-Pain: Zeit, Herz und Geld fliessen in etwas, das am Monatsende nur die eigene Eigenbestellung deckt."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Der Satz in Anführungszeichen ist genau ihr innerer Monolog am Monatsende, den sie sonst niemandem sagt."
+       "warum": "Es ist ihr innerer Monolog im Wortlaut, ein Satz, den sie sich so selbst sagt und niemandem laut erzählt."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "Das Zitat klingt echt, aber das nachgeschobene „Und wofür eigentlich?“ steht ausserhalb des Zitats, hängt sprecherlos in der Luft und sagt man so nicht zu einer Freundin."
+       "ja": true,
+       "warum": "„Reicht genau für meine Eigenbestellung. Wofür mach ich das eigentlich?“ sagt man genau so einer Freundin."
       },
       "bezug_der_zeilen": {
-       "ja": false,
-       "warum": "Das „Und wofür eigentlich?“ lässt offen, ob gefragt wird, wofür die Eigenbestellung oder wofür der ganze Aufwand gut ist; das Bindewort verwischt den Bezug."
+       "ja": true,
+       "warum": "Es gibt kein Bindewort, das den Sinn dreht: Der Satz zur Abrechnung führt logisch zur Sinnfrage."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder eine Lösung noch ein Angebot, er endet mit einer offenen Frage."
+       "warum": "Der Hook bleibt bei der Frage stehen, ohne Tipp, Lösung oder Angebot."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Abrechnung“ und „Eigenbestellung“ verorten den Hook sofort im Network-Business."
+       "warum": "„Abrechnung“ und „Eigenbestellung“ verorten den Hook sofort im Network, ohne Vorwissen über Patricia."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "„Ende Monat, die Abrechnung offen“ ist ein konkreter Moment mit Zeitanker und sichtbarem Detail."
+       "warum": "Ein konkreter Moment steht vorne: Ende Monat, die Abrechnung ist offen. Das ist kein Thema und keine Behauptung."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook enthält ein wörtliches Zitat aus ihrem inneren Monolog."
+       "warum": "Der Hook ist ein wörtliches Zitat ihres inneren Monologs, und die Eigenbestellung wirkt dabei als stiller Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Eigenbestellung und Abrechnung gibt es so nur im Network, damit ist der Hook klar in der Nische."
+       "warum": "Die Eigenbestellung, die den Verdienst auffrisst, kennt nur, wer im Network ist."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Der Hook stellt Sandra als Heldin in ihren eigenen Moment und kündigt eine Frage an, die ihr Thema freilegt; das passt zur Rolle Beziehung."
+       "warum": "Sie ist die Heldin mit ihrer eigenen Frage, und der Beitrag gibt ihr eine Frage, die ihr Thema freilegt. Das ist Beziehung mit Patricia als Spiegel."
       }
      },
-     "vorschlag": "Ende Monat, Abrechnung offen: „Reicht genau für meine Eigenbestellung. Wofür mach ich das eigentlich?“",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
    }
@@ -973,54 +970,52 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "f878f01f55bd",
-     "bestanden": false,
-     "gruende": [
-      "kuechentisch: «Kaffee nach dem Turnen. Im Kopf:» liest sich wie eine Regieanweisung; so redet man mit keiner Freundin."
-     ],
+     "fingerabdruck": "8bbdf5235c85",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Die Angst, im Bekanntenkreis als «die mit dem Network» abgestempelt zu werden, ist ein echter, schambesetzter Schmerz."
+       "warum": "Die Scham, unter anderen Mamas als «die mit dem Network» abgestempelt zu werden, ist ein echter, sozialer Schmerz, der ihr Verkaufen bremst."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Der innere Satz ist wörtlich ihr Gedanke, den sie sonst niemandem sagt."
+       "warum": "Der Satz steht als ihr innerer Monolog im Wortlaut da, den sie kaum jemandem sagen würde."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "«Kaffee nach dem Turnen. Im Kopf:» liest sich wie eine Regieanweisung; so redet man mit keiner Freundin."
+       "ja": true,
+       "warum": "Alltagssprache ohne Fachwort, so erzählt man es einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Es gibt kein Bindewort, und Szene und Gedanke hängen logisch zusammen."
+       "warum": "Es gibt kein Bindewort. Die Szene führt direkt in den Gedanken, die Logik stimmt."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Weder der «Ich helfe»-Satz noch ein Angebot kommt im Hook vor."
+       "warum": "Der «Ich helfe»-Satz und jedes Angebot fehlen im Hook, nur der Moment steht da."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "«die mit dem Network» verortet sofort in der Welt des Network Marketings."
+       "warum": "«die mit dem Network» verortet die Welt sofort, auch ohne Vorwissen über Patricia."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Ein Moment an einem Ort: der Kaffee nach dem Turnen."
+       "warum": "Ein Ort und ein Zeitpunkt, der Kaffee nach dem Turnen, kein grosses Thema."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook enthält ein Zitat aus ihrem inneren Monolog."
+       "warum": "Er enthält ein wörtliches Zitat ihres inneren Monologs, Gegner ist das Network-Stigma."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Turnen und Kaffee mit anderen Eltern stehen für Mama-Alltag, dazu kommt das Network-Stigma."
+       "warum": "Mama-Alltag (Turnen, Kaffee) und Network sind beide im Satz."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Sie ist die Heldin der Szene, und der Beitrag bietet eine neue Sicht auf das Reden übers eigene Tun."
+       "warum": "Sie ist die Heldin in ihrem Moment. Der Beitrag gibt eine neue Sicht, nämlich vom Business zu reden, ohne «die mit dem Network» zu sein. Das passt zu Beziehung."
       }
      },
-     "vorschlag": "Beim Kaffee nach dem Turnen denkst du: «Bloss nicht die mit dem Network sein.»",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
    }
@@ -1098,54 +1093,54 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "da6187aa6cbb",
+     "fingerabdruck": "c232536b8cf4",
      "bestanden": false,
      "gruende": [
-      "kuechentisch: „Die ganze Network-Liste“ sagt so niemand, und im Network klingt „Liste“ nach der Namensliste mit Kontakten, nicht nach To-dos."
+      "mikro_szene: „Wieder“ und „alles“ beschreiben ein Muster über mehrere Tage statt eines einzelnen Moments, und der Zeitsprung von morgen auf abends verwischt die Szene."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Plan, der jeden Abend wieder unerledigt im Bett liegt, trifft Sandras Überforderung ohne Plan sehr genau."
+       "warum": "Der Hook trifft das Vorhaben, das jeden Tag liegen bleibt, und das Gefühl, im Network nicht voranzukommen."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Den Satz „Morgen schaff ich alles“ denkt sie wörtlich, und das Scheitern daran kennt sie."
+       "warum": "Den Satz „Morgen schaff ich alles“ denkt Sandra wörtlich, darum fühlt sie sich ertappt."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "„Die ganze Network-Liste“ sagt so niemand, und im Network klingt „Liste“ nach der Namensliste mit Kontakten, nicht nach To-dos."
+       "ja": true,
+       "warum": "So sagt man es einer Freundin: ein Zitat, dann eine trockene Feststellung, kein Fachwort."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Vorsatz und „abends wieder alles offen“ stehen als echter Gegensatz da, kein Bindewort dreht den Sinn."
+       "warum": "Das „und“ verbindet Vorsatz und Ergebnis richtig, kein Bindewort dreht den Sinn, und mit 14 Wörtern ist die Länge noch im Rahmen."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Das Aussortieren kommt im Hook nicht vor, er zeigt nur das Problem."
+       "warum": "Der Hook nennt weder eine Lösung noch ein Angebot, das Aussortieren kommt erst später."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "Das Wort „Network“ ordnet die Welt sofort ein."
+       "warum": "Das Wort „Network“ ordnet den Hook sofort in die richtige Welt ein."
       },
       "mikro_szene": {
-       "ja": true,
-       "warum": "„Abends im Bett“ gibt einen konkreten Moment und einen Ort statt einer Behauptung."
+       "ja": false,
+       "warum": "„Wieder“ und „alles“ beschreiben ein Muster über mehrere Tage statt eines einzelnen Moments, und der Zeitsprung von morgen auf abends verwischt die Szene."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook öffnet mit einem Zitat aus ihrem inneren Monolog."
+       "warum": "Ihr innerer Monolog steht als wörtliches Zitat da."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Es geht ausdrücklich um die Arbeit fürs Network, die neben allem anderen liegen bleibt."
+       "warum": "Der Hook spricht klar die Frau an, die ihr Network neben dem Alltag stemmt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Der Hook spiegelt ihren Abend, damit sie dann die neue Sicht annimmt, dass Aussortieren mit einem Punkt beginnt. Sie ist die Heldin."
+       "warum": "Das „alles“ im Zitat bereitet die neue Sicht vor, dass Aussortieren mit einem einzigen Punkt anfängt, und Sandra bleibt die Heldin."
       }
      },
-     "vorschlag": "„Morgen schaff ich alles fürs Network“, und abends im Bett ist wieder nichts erledigt.",
+     "vorschlag": "„Morgen schaff ich alles fürs Network“, denkst du abends im Bett, schon wieder.",
      "modell": "claude-opus-5-5"
     }
    },
