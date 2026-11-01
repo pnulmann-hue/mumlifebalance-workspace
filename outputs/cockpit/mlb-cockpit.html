@@ -2232,6 +2232,10 @@
   .tr-cap > summary { cursor: pointer; font-size: 13px; color: var(--teal); }
   .tr-captext { white-space: pre-wrap; font-size: 14px; line-height: 1.5; margin-top: 6px; padding: 10px 12px;
                 background: var(--surface-2); border-radius: 8px; overflow-wrap: break-word; }
+  .tr-pruef { margin: 6px 0 0; padding-left: 0; list-style: none; font-size: 13px; line-height: 1.45; }
+  .tr-pruef li { margin: 3px 0; }
+  .tr-pruef .tr-nein b { color: var(--warn); }
+  .tr-pruef .tr-ja b { color: var(--good); }
   .tr-video { width: 100%; max-width: 240px; aspect-ratio: 9 / 16; border-radius: 8px; background: #000; align-self: center; }
   .tr-hook { font-family: var(--display); font-size: 17px; line-height: 1.3; overflow-wrap: break-word; }
   .tr-knoepfe, .tr-fuss { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
@@ -6676,6 +6680,28 @@
     }).join("");
   }
 
+  // Prüfvermerk der Hook-Sperre (scripts/hooks/hook-sperre.py, seit 01.11.2026):
+  // ein zweiter, unabhängiger Blick beantwortet je Hook die Prüffragen.
+  var TR_FRAGEN = {
+    schmerz: "Trifft einen Schmerz", gedanke_gelesen: "„Wieso weiss die, was ich denke?“",
+    kuechentisch: "So sagt man es einer Freundin", bezug_der_zeilen: "Bezug der Satzteile stimmt",
+    loesung_draussen: "Lösung bleibt draussen", in_drei_sekunden_klar: "In drei Sekunden klar",
+    mikro_szene: "Konkreter Moment (Mikro)", gegner_gestaendnis_oder_zitat: "Gegner, Geständnis oder Zitat",
+    nische_network_mama: "Passt zur Network-Mama", passt_zur_rolle: "Passt zur Rolle im Garten"
+  };
+  function trPruefung(r) {
+    var p = r.pruefung;
+    if (!p) return '<div class="note tr-warn">Hook nicht geprüft</div>';
+    var zeilen = Object.keys(TR_FRAGEN).map(function (k) {
+      var a = (p.antworten || {})[k];
+      if (!a) return "";
+      return '<li class="' + (a.ja ? "tr-ja" : "tr-nein") + '"><b>' + (a.ja ? "✓ " : "✗ ") + esc(TR_FRAGEN[k]) +
+        '</b> · ' + esc(a.warum || "") + '</li>';
+    }).join("");
+    return '<details class="tr-cap"><summary>' + (p.bestanden ? "✓ Hook geprüft" : "✗ Hook durchgefallen") +
+      '</summary><ul class="tr-pruef">' + zeilen + '</ul></details>';
+  }
+
   function trKarte(r, stand, vorne) {
     var b = r.testVon ? trReelNach(r.testVon) : null;
     var feedBasis = b && !istTestreel(b);
@@ -6691,6 +6717,7 @@
       (r.videourl ? '<video class="tr-video" src="' + esc(r.videourl) + '" controls playsinline preload="metadata"></video>' : '') +
       '<div class="tr-hook">' + esc(r.hook || "– noch kein Hook –") + '</div>' +
       '<div class="note">' + n + ' Wörter' + (b ? ' · tritt an gegen „' + esc(b.name || b.id) + '“' : '') + '</div>' +
+      trPruefung(r) +
       (r.caption ? '<details class="tr-cap"><summary>Caption lesen</summary><div class="tr-captext">' + esc(r.caption) + '</div></details>' : '') +
       '<div class="tr-knoepfe">' +
       (r.videourl ? '<a class="btn" href="' + esc(r.videourl) + '" target="_blank" rel="noopener" download>Video speichern</a>' : '') +
@@ -15563,7 +15590,7 @@
         testGepostetAm: r.testGepostetAm || "",
         testReichweite: (typeof r.testReichweite === "number") ? r.testReichweite : null,
         testKommentare: (typeof r.testKommentare === "number") ? r.testKommentare : null,
-        testNotiz: r.testNotiz || "", testGewinner: !!r.testGewinner, testInFeed: !!r.testInFeed,
+        testNotiz: r.testNotiz || "", testGewinner: !!r.testGewinner, testInFeed: !!r.testInFeed, pruefung: r.pruefung || null,
         updatedAt: r.updatedAt
       }).then(function () { setSaveState("gespeichert", "on"); })
         .catch(function () { setSaveState("nur lokal gespeichert", "off"); });
@@ -16643,7 +16670,7 @@
         state.reels.forEach(function (x) { seen[x.id] = x; });
         qs.docs.forEach(function (doc) {
           var d0 = tief(doc.data()) || {};
-          var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", coverhook: d0.coverhook || "", coverunter: d0.coverunter || "", videoart: d0.videoart || "sprech", hinweis: d0.hinweis || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", texty: (typeof d0.texty === "number") ? d0.texty : null, textskala: d0.textskala || 100, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", videourl: d0.videourl || "", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, rolle: d0.rolle || "", quelle: d0.quelle || "", trial: !!d0.trial, testVon: d0.testVon || "", testStand: d0.testStand || "", testGepostetAm: d0.testGepostetAm || "", testReichweite: (typeof d0.testReichweite === "number") ? d0.testReichweite : null, testKommentare: (typeof d0.testKommentare === "number") ? d0.testKommentare : null, testNotiz: d0.testNotiz || "", testGewinner: !!d0.testGewinner, testInFeed: !!d0.testInFeed, updatedAt: d0.updatedAt || "" };
+          var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", coverhook: d0.coverhook || "", coverunter: d0.coverunter || "", videoart: d0.videoart || "sprech", hinweis: d0.hinweis || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", texty: (typeof d0.texty === "number") ? d0.texty : null, textskala: d0.textskala || 100, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", videourl: d0.videourl || "", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, rolle: d0.rolle || "", quelle: d0.quelle || "", trial: !!d0.trial, testVon: d0.testVon || "", testStand: d0.testStand || "", testGepostetAm: d0.testGepostetAm || "", testReichweite: (typeof d0.testReichweite === "number") ? d0.testReichweite : null, testKommentare: (typeof d0.testKommentare === "number") ? d0.testKommentare : null, testNotiz: d0.testNotiz || "", testGewinner: !!d0.testGewinner, testInFeed: !!d0.testInFeed, pruefung: d0.pruefung || null, updatedAt: d0.updatedAt || "" };
           if (seen[rl.id]) dbUebernehmen(seen[rl.id], rl); else state.reels.push(rl);
         });
         state.reels.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });
