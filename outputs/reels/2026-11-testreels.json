@@ -3247,54 +3247,52 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "2f10128354e4",
-     "bestanden": false,
-     "gruende": [
-      "kuechentisch: „Und du, still:“ klingt wie eine Regieanweisung; so erzählt man das keiner Freundin."
-     ],
+     "fingerabdruck": "6c00ddd1adc2",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Das Gefühl, mit dem Druckverkauf aus dem Team nie mithalten zu können, ist ein echter, leiser Schmerz der Network-Mama."
+       "warum": "Sie sieht, wie andere laut verkaufen, und fühlt sich selbst unfähig zu verkaufen. Das ist ein echter, verbreiteter Schmerz der Network-Mama."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "„So verkaufen kann ich nie“ ist genau der Satz, den sie still denkt und niemandem sagt."
+       "warum": "„So kann ich nie verkaufen“ ist wörtlich ihr innerer Monolog beim Scrollen durch den Gruppenchat."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "„Und du, still:“ klingt wie eine Regieanweisung; so erzählt man das keiner Freundin."
+       "ja": true,
+       "warum": "Der Satz ist schlicht und mündlich, ohne Fachwort, so erzählt man es einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das „Und“ verbindet Chatnachricht und Reaktion schlüssig, kein Bindewort dreht den Sinn."
+       "warum": "Das „Und“ verbindet Auslöser und Reaktion richtig: Die Chatnachricht löst den Gedanken aus, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Es gibt weder Lösung noch Angebot; dass alles lernbar ist, bleibt für den Beitrag."
+       "warum": "Der Hook nennt weder Lösung noch Angebot, er endet beim Zweifel."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network-Chat“ und der Rabatt-Aufruf verorten die Welt sofort, auch ohne Vorwissen."
+       "warum": "„Network-Chat“ und „verkaufen“ verorten sofort die Welt, und 14 Wörter sind in 7 Sekunden lesbar."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Es ist ein konkreter Moment: eine Nachricht im Chat und ihre stille Reaktion darauf."
+       "warum": "Ein konkreter Moment: Eine Rabattnachricht ploppt im Chat auf, und sie reagiert darauf."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook enthält zwei Zitate (Chat und innerer Monolog) und die Druck-Verkaufsmethode als Gegner."
+       "warum": "Gleich zwei Zitate (Chatnachricht und innerer Satz), dazu der laute Rabatt-Verkauf als Gegner-Methode, ohne Firma oder Person zu nennen."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Team-Chat und Rabattaktion sind typischer Network-Alltag."
+       "warum": "Der Network-Gruppenchat mit Rabattaktion ist typisch für ihre Welt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Der Hook ist ein „Das hab ich auch erlebt“-Moment, der neue Augen holt, also passend für Aufmerksamkeit."
+       "warum": "Der Hook ist ein „das hab ich auch erlebt“-Moment, der neue Augen holt und zur Inspiration „alles ist lernbar“ überleitet."
       }
      },
-     "vorschlag": "Im Network-Chat: „Nur heute 30 Prozent!“ Und du denkst: So kann ich nie verkaufen.",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
    }
@@ -3323,55 +3321,55 @@
    "caption": "Lautes Abwerben und Konkurrenzkampf, das regt mich an der Branche wirklich auf.\n\nDabei gibt es genug Menschen für alle. Wer ein eigenes Thema hat, muss niemandem etwas wegnehmen, weil die Leute wegen ihr kommen und nicht wegen eines Rabatts.\n\nIch wünsche mir mehr Frauen, die sich gegenseitig weiterempfehlen, statt sich heimlich Teampartnerinnen abzujagen.\n\nWenn du dich hier wiedererkennst, bleib hier.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "c0ba9a13b7a9",
+     "fingerabdruck": "07a16f8235b9",
      "bestanden": false,
      "gruende": [
-      "kuechentisch: „Dieser Gedanke hält uns klein“ klingt nach Coaching-Sprache und nicht nach einem Satz, den man einer Freundin am Tisch sagt.",
-      "mikro_szene: Es gibt keinen konkreten Moment, Ort oder Zeitpunkt, nur ein Zitat plus eine allgemeine Behauptung."
+      "kuechentisch: „und bleiben allein“ klingt nach geschriebener Pointe, nicht nach einem Satz am Küchentisch zu einer Freundin.",
+      "mikro_szene: „ständig“ ist eine Verallgemeinerung, kein konkreter Moment mit Ort oder Zeitpunkt."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Neid und Konkurrenzangst im eigenen Team sind ein echter, oft verschwiegener Schmerz der Network-Mama."
+       "warum": "Das Misstrauen gegenüber anderen Network-Frauen und das Alleinsein damit sind ein echter Schmerz."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Das Zitat ist ihr innerer Satz, den sie sich kaum laut zu sagen traut. Das erzeugt das Gefühl, ertappt zu werden."
+       "warum": "Das Zitat ist wörtlich ein Gedanke, den sie selten laut ausspricht, aber oft denkt."
       },
       "kuechentisch": {
        "ja": false,
-       "warum": "„Dieser Gedanke hält uns klein“ klingt nach Coaching-Sprache und nicht nach einem Satz, den man einer Freundin am Tisch sagt."
+       "warum": "„und bleiben allein“ klingt nach geschriebener Pointe, nicht nach einem Satz am Küchentisch zu einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das Zitat und die Einordnung „dieser Gedanke“ hängen direkt zusammen, und kein Bindewort dreht den Sinn."
+       "warum": "Das „und“ verbindet Gedanke und Folge stimmig, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook benennt nur den Denkfehler. Eine Lösung oder ein Angebot fehlt."
+       "warum": "Zusammenarbeit wird nur angedeutet, aber nicht als Lösung ausgesprochen."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„im Network“ und „Interessenten“ verorten die Welt sofort."
+       "warum": "„Interessenten“ und „Im Network“ verorten die Welt sofort."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Es gibt keinen konkreten Moment, Ort oder Zeitpunkt, nur ein Zitat plus eine allgemeine Behauptung."
+       "warum": "„ständig“ ist eine Verallgemeinerung, kein konkreter Moment mit Ort oder Zeitpunkt."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook enthält ein wörtliches Zitat aus ihrem inneren Monolog, und das Konkurrenzdenken dient als Gegner."
+       "warum": "Ein wörtliches Zitat aus ihrem inneren Monolog, dazu der Denkfehler Konkurrenz als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Interessenten abwerben im Team ist ein typisches Network-Thema."
+       "warum": "Interessenten und Network treffen genau die Welt der Network-Mama."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Als Meinung gegen verbreitetes Konkurrenzdenken taugt der Hook für Aufmerksamkeit."
+       "warum": "Als ehrlicher „Das kenn ich auch“-Moment mit Haltung passt er zu Aufmerksamkeit."
       }
      },
-     "vorschlag": "„Die schreibt meine Interessenten an.“ Im Network denken wir das ständig – und bleiben allein.",
+     "vorschlag": "„Die schreibt meine Interessenten an.“ Ich hab's im Network auch gedacht und war allein. (nur wenn's stimmt)",
      "modell": "claude-opus-5-5"
     },
     "b": {
@@ -3621,55 +3619,54 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "1c4f42e9430e",
+     "fingerabdruck": "0b16f7bdc2c0",
      "bestanden": false,
      "gruende": [
-      "gegner_gestaendnis_oder_zitat: Über Patricias eigenem B-Roll liest sich die Ich-Form als ihr Geständnis, das über die Eckdaten hinaus nicht belegt ist; als Zitat von Sandra ist es nicht erkennbar.",
-      "passt_zur_rolle: Der Hook ist ein Ich-Geständnis (Vertrauen) und bietet keine neue Sicht, in der sie die Heldin ist, wie es die Rolle Beziehung verlangt."
+      "loesung_draussen: „Genau dort schaust du nächstes Mal hin“ ist bereits die Handlungsanweisung, also die Lösung, und die gehört erst in die Caption."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Geld, das in Network-Bestellungen fliesst und das sie lieber nicht sieht, trifft den Kern-Pain des teuren Hobbys."
+       "warum": "Die Network-Bestellung auf dem Kontoauszug trifft den Kern-Pain: Geld, das in die Eigenbestellung fliesst, und das Business, das wie ein teures Hobby aussieht."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Das Wegscrollen am Kontoauszug ist ein heimlicher Gedanke, den sie sich kaum eingesteht."
+       "warum": "Das reflexhafte Weiterscrollen ist ein innerer Moment, den sie kaum jemandem erzählt, und darum fühlt sie sich ertappt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Der Satz klingt locker und gesprochen, so wie man es einer Freundin gesteht."
+       "warum": "Das Zitat klingt nach echtem innerem Monolog, und auch die zweite Zeile würde man einer Freundin so direkt sagen."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Die Frage benennt den Ort, die Antwort reagiert darauf, und kein Bindewort dreht den Sinn."
+       "warum": "Es gibt kein drehendes Bindewort, und das Wegschauen und das künftige Hinschauen hängen logisch richtig zusammen."
       },
       "loesung_draussen": {
-       "ja": true,
-       "warum": "Der Hook enthält weder eine Lösung noch ein Angebot."
+       "ja": false,
+       "warum": "„Genau dort schaust du nächstes Mal hin“ ist bereits die Handlungsanweisung, also die Lösung, und die gehört erst in die Caption."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network-Bestellungen“ verortet die Welt sofort."
+       "warum": "Das Wort „Network-Bestellungen“ verortet die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Ein konkreter Moment: der Blick auf den Kontoauszug und das schnelle Wegscrollen."
+       "warum": "Der Blick auf den Kontoauszug und das schnelle Weiterscrollen sind ein konkreter, sichtbarer Moment."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": false,
-       "warum": "Über Patricias eigenem B-Roll liest sich die Ich-Form als ihr Geständnis, das über die Eckdaten hinaus nicht belegt ist; als Zitat von Sandra ist es nicht erkennbar."
+       "ja": true,
+       "warum": "Das Zitat ist ihr innerer Monolog, und das Wegschauen ist als Ausrede der Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Der Hook spricht klar die Network-Mama mit Eigenbestellungen an."
+       "warum": "Die Network-Bestellungen auf dem eigenen Konto betreffen genau die Network-Mama."
       },
       "passt_zur_rolle": {
-       "ja": false,
-       "warum": "Der Hook ist ein Ich-Geständnis (Vertrauen) und bietet keine neue Sicht, in der sie die Heldin ist, wie es die Rolle Beziehung verlangt."
+       "ja": true,
+       "warum": "Der Hook bietet eine neue Sicht auf ihr eigenes Wegschauen, sie bleibt die Heldin, und das passt zu Beziehung und zu „aufhören oder anders machen“."
       }
      },
-     "vorschlag": "„Die Network-Bestellungen auf dem Kontoauszug? Schnell weiterscrollen.“ Genau dort schaust du nächstes Mal hin.",
+     "vorschlag": "„Network-Bestellung auf dem Kontoauszug, schnell weiterscrollen“ – genau dieses Wegschauen kostet dich mehr als Geld.",
      "modell": "claude-opus-5-5"
     }
    }
@@ -3698,54 +3695,54 @@
    "caption": "Der Dezember ist da, und mit ihm dieser Satz.\n\nEin neues Jahr ändert daran nichts. Was etwas ändert, ist ein erster Schritt, der so klein ist, dass du ihn diese Woche machen kannst. Bei mir war das ein Thema, für das man mich kennen soll.\n\nWenn du deins noch suchst, nimm dir zehn Minuten dafür, nicht bis Januar. Mein Nischengenerator schlägt dir drei Themen vor.\n\nKommentier NISCHE, dann schick ich dir den Link.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "9ac53da09675",
+     "fingerabdruck": "d33cffaf48aa",
      "bestanden": false,
      "gruende": [
-      "bezug_der_zeilen: „Ich glaub dran“ bleibt offen: Man weiss nicht, ob es ernst, ironisch oder als Gegensatz gemeint ist, deshalb hängt die zweite Zeile nicht klar an der ersten."
+      "kuechentisch: «Im Network wird alles anders» klingt passiv, als ändere sich die Firma statt sie selbst. Am Tisch sagt man eher «Nächstes Jahr mach ich's anders»."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der jährliche Vorsatz, dass es im Network endlich anders wird, trifft den Schmerz, dass sich trotz Einsatz seit Jahren nichts bewegt."
+       "warum": "Das ewige Verschieben auf «nächstes Jahr» trifft den Schmerz, dass sich im Network seit Langem nichts bewegt. Er steht als ihr eigenes Zitat da, nicht als Diagnose."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Genau diesen Satz denkt sie zum Jahresende wörtlich, deshalb fühlt sie sich ertappt."
+       "warum": "Den Neujahrsvorsatz fürs Network im Dezember kennt fast jede, deshalb fühlt sie sich ertappt."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Die Wörter sind alltäglich und ohne Fachbegriffe, so könnte man es einer Freundin sagen."
+       "ja": false,
+       "warum": "«Im Network wird alles anders» klingt passiv, als ändere sich die Firma statt sie selbst. Am Tisch sagt man eher «Nächstes Jahr mach ich's anders»."
       },
       "bezug_der_zeilen": {
-       "ja": false,
-       "warum": "„Ich glaub dran“ bleibt offen: Man weiss nicht, ob es ernst, ironisch oder als Gegensatz gemeint ist, deshalb hängt die zweite Zeile nicht klar an der ersten."
+       "ja": true,
+       "warum": "Es gibt kein Bindewort, das den Sinn dreht. «Nächstes Jahr» und «Wieso erst Januar?» passen logisch zusammen."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Im Hook stehen weder Lösung noch Angebot."
+       "warum": "Die Frage stellt nur das Warten in Frage. Was sie stattdessen tun soll, bleibt offen."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Im Network“ verortet die Welt sofort."
+       "warum": "«Im Network» verortet die Welt sofort, wie in Patricias Korrektur vom 14.09."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Der Adventskranz gibt einen konkreten Moment und Ort statt einer allgemeinen Behauptung."
+       "warum": "Der Adventskranz gibt einen konkreten Moment und Ort statt eines grossen Themas."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Satz ist ein Zitat ihres inneren Monologs."
+       "warum": "Es ist ein wörtliches Zitat aus ihrem inneren Monolog, der Gegner ist die Ausrede «nächstes Jahr»."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Der Hook spricht klar die Frau im Network an, die auf das nächste Jahr hofft."
+       "warum": "Das Wort Network steht ausdrücklich da, und es geht um ihr Weitermachen im Network."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Sie ist die Heldin mit ihrem Gedanken, Patricia steht als Begleiterin daneben, und das passt zur Rolle Beziehung."
+       "warum": "Der Hook gibt eine neue Sicht aufs Warten, sie bleibt die Heldin, und er passt zu «der erste Schritt ist klein»."
       }
      },
-     "vorschlag": "„Im Network wird nächstes Jahr alles anders“, denkst du am Adventskranz. Wieso erst Januar?",
+     "vorschlag": "„Nächstes Jahr mach ich's im Network anders“, denkst du am Adventskranz. Wieso erst Januar?",
      "modell": "claude-opus-5-5"
     },
     "b": {
