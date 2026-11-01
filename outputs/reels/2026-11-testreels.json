@@ -3010,27 +3010,28 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "90866fda54c9",
+     "fingerabdruck": "98606a5f758c",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: „2018, mein erster Network-Start“ fasst eine ganze Phase zusammen und zeigt keinen einzelnen Moment mit Handlung. Das Starterset ist das einzige sichtbare Detail und bleibt eine Aufzählung."
+      "gedanke_gelesen: Es ist Patricias Erinnerung und kein Satz, den Sandra um 23 Uhr selbst denkt; sie nickt vielleicht, fühlt sich aber nicht ertappt.",
+      "kuechentisch: „packte ich aus“ ist geschriebenes Präteritum; am Küchentisch sagt man „hab ich ausgepackt“."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "„Keinen Plan“ trifft Sandras Kern-Pain, dass ihr Einsatz keinem Plan folgt, und steht als Geständnis da, ohne Diagnose."
+       "warum": "Das Geständnis „ohne jeden Plan“ trifft Sandras Kern-Pain: viel Einsatz, der keinem Plan folgt."
       },
       "gedanke_gelesen": {
-       "ja": true,
-       "warum": "Hoffnung, Starterset, kein Plan: Diesen Start erkennt fast jede Network-Mama als ihren eigenen wieder."
+       "ja": false,
+       "warum": "Es ist Patricias Erinnerung und kein Satz, den Sandra um 23 Uhr selbst denkt; sie nickt vielleicht, fühlt sich aber nicht ertappt."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "„Ich hatte Hoffnung, ein Starterset und keinen Plan“ klingt wie ein ehrlicher Satz zu einer Freundin."
+       "ja": false,
+       "warum": "„packte ich aus“ ist geschriebenes Präteritum; am Küchentisch sagt man „hab ich ausgepackt“."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Es gibt kein Bindewort, das den Sinn dreht, und die Aufzählung nach dem Doppelpunkt passt logisch zur Einleitung."
+       "warum": "„voller Hoffnung, ohne jeden Plan“ ist ein stimmiger Kontrast, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
@@ -3038,26 +3039,26 @@
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network-Start“ und „Starterset“ verorten die Welt sofort, auch ohne Vorwissen."
+       "warum": "„Network-Starterset“ verortet die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "„2018, mein erster Network-Start“ fasst eine ganze Phase zusammen und zeigt keinen einzelnen Moment mit Handlung. Das Starterset ist das einzige sichtbare Detail und bleibt eine Aufzählung."
+       "ja": true,
+       "warum": "Es ist ein sichtbarer Moment (das Starterset auspacken) mit Zeitanker 2018 statt einer Behauptung. Das Auspack-Detail ist aber nicht in den Eckdaten belegt und gilt deshalb nur, wenn's stimmt."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Ein klares Geständnis in Ich-Form mit belegter Eckdate 2018 und dem sichtbaren Detail Starterset."
+       "warum": "Das Geständnis steht in Ich-Form mit sichtbarem Detail, das Startjahr 2018 ist belegt."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Network-Start und Starterset sind eindeutig die Welt der Network-Mama."
+       "warum": "Starterset und Network sprechen genau die Network-Mama an."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias eigene ehrliche Geschichte vom ersten Anlauf trägt die Rolle Vertrauen und führt auf den zweiten Anlauf hin."
+       "warum": "Patricias eigene Geschichte über den ersten Anlauf ist klassischer Vertrauens-Inhalt und führt zum zweiten Anlauf hin."
       }
      },
-     "vorschlag": "2018 packte ich mein erstes Network-Starterset aus: voller Hoffnung, ohne jeden Plan. (Ort und Uhrzeit nur ergänzen, wenn belegt: [echte Situation einsetzen])",
+     "vorschlag": "Mein erstes Network-Starterset hab ich 2018 ausgepackt wie du: voller Hoffnung, ohne Plan.",
      "modell": "claude-opus-5-5"
     }
    }
@@ -3135,54 +3136,52 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "71524ed44edb",
-     "bestanden": false,
-     "gruende": [
-      "kuechentisch: Das Zitat klingt echt, aber „bevor du anbietest“ ohne Objekt klingt nach Verkaufssprache und nicht nach einem Gespräch unter Freundinnen."
-     ],
+     "fingerabdruck": "4cd2b65bcbe5",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Sie schämt sich für ihr eigenes Business und entschuldigt sich dafür, bevor sie überhaupt etwas zeigt."
+       "warum": "Es trifft die Scham, sich für das eigene Network-Business vor Freundinnen zu entschuldigen, statt dazu zu stehen."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Die vorauseilende Entschuldigung ist ein Satz, den viele Network-Mamas kennen, aber nie laut zugeben würden."
+       "warum": "Den entschuldigenden Halbsatz kennt jede Network-Mama aus eigenem Mund, er steht als ihr wörtliches Zitat da und nicht als Diagnose."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "Das Zitat klingt echt, aber „bevor du anbietest“ ohne Objekt klingt nach Verkaufssprache und nicht nach einem Gespräch unter Freundinnen."
+       "ja": true,
+       "warum": "„Sorry, ist halt so ein Network-Ding“ ist gesprochene Alltagssprache ohne Fachwort."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "„Bevor“ ordnet die Entschuldigung zeitlich korrekt vor das Gespräch ein, nichts dreht den Sinn."
+       "warum": "Es gibt kein Bindewort, nur Zitat und Zuordnung, die logisch zusammenpassen."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Tipp „einladen statt entschuldigen“ kommt im Hook nicht vor."
+       "warum": "Der Tipp „einladen statt entschuldigen“ taucht im Hook nicht auf."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network-Ding“ verortet die Welt sofort, auch ohne Vorwissen."
+       "warum": "„Network-Ding“ verortet die Welt sofort, ohne Vorwissen über Patricia."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Ein Moment beim Kaffee mit einem wörtlichen Satz statt einer allgemeinen Behauptung."
+       "warum": "Ein Moment, ein Ort und eine Person: beim Kaffee mit der Freundin."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook trägt ein wörtliches Zitat ihres eigenen Satzes, die Entschuldigung ist zugleich der Gegner."
+       "warum": "Der Hook ist ein wörtliches Zitat von ihr selbst."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Der Hook spricht klar die Network-Frau an, die sich für ihr Business entschuldigt."
+       "warum": "Er spricht klar Frauen im Network an, die sich für ihr Business rechtfertigen."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Der Hook ist ein „Das hab ich auch erlebt“-Moment, der neue Augen holt. Der Beitrag muss aber mit einer Einordnung enden und darf nicht mit einem Stichwort schliessen."
+       "warum": "Es ist ein „Das hab ich auch erlebt“-Moment mit leichtem Augenzwinkern und holt neue Augen, wie es die Rolle Aufmerksamkeit verlangt."
       }
      },
-     "vorschlag": "„Sorry, ist halt so ein Network-Ding“, sagst du beim Kaffee zu deiner Freundin.",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
    }
@@ -3260,31 +3259,32 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "d6f42bb1c32d",
+     "fingerabdruck": "fa5a498b5a6c",
      "bestanden": false,
      "gruende": [
-      "passt_zur_rolle: Der Hook führt zu Geld und Eigenbestellung, nicht zur mitgegebenen Inspiration „alles ist lernbar, es braucht Zeit“; zudem überschreitet er mit 15 Wörtern die Bildlänge von 14."
+      "16 Wörter (10–14)",
+      "passt_zur_rolle: Der Hook öffnet ein Geld-Thema, der Beitrag liefert aber „alles ist lernbar, es braucht Zeit“. Die Brücke fehlt, und mit 16 Wörtern liegt der Text über der Bildlänge von 10 bis 14 Wörtern."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Druck zur Eigenbestellung, während das eigene Geld schon weg ist, ist ein belegter Kern-Pain von Sandra."
+       "warum": "Der Druck der Aktionen im Network und das knappe eigene Geld treffen einen echten Schmerz der Network-Mama."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Der Rabatt-Ruf im Chat neben dem leeren Konto ist ein Moment, den sie aus ihrem Alltag sofort wiedererkennt."
+       "warum": "„Ich kann mir das einfach nicht leisten“ ist genau der Satz, den sie still denkt, wenn der Aktions-Post kommt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "So erzählt man es einer Freundin, ohne Fachwörter und ohne Lehrerton."
+       "warum": "Eine Freundin würde es so erzählen: der Satz aus dem Chat, dann der eigene Gedanke."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das „und“ stellt Rabattdruck und leeres Konto logisch richtig nebeneinander, kein Bindewort dreht den Sinn."
+       "warum": "„und du denkst“ verbindet Auslöser und Reaktion logisch, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Im Hook steht weder eine Lösung noch ein Angebot."
+       "warum": "Der Hook enthält weder eine Lösung noch ein Angebot."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
@@ -3292,22 +3292,22 @@
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Ein konkreter Moment: Die Rabatt-Nachricht kommt im Chat, während das Konto leer ist."
+       "warum": "Ein konkreter Moment: die Aktionsnachricht im Chat und der Gedanke direkt danach."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "„Nur heute 30 Prozent!“ ist ein wörtliches Zitat aus dem Chat, der Rabattdruck ist der Gegner."
+       "warum": "Zwei Zitate tragen den Hook: die Chat-Floskel und ihr innerer Monolog."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Network-Chat, Rabattaktion und Eigenbestellung sind eindeutig ihre Welt."
+       "warum": "Aktionsdruck im Network-Chat und die Eigenbestellung sind klar ihre Welt."
       },
       "passt_zur_rolle": {
        "ja": false,
-       "warum": "Der Hook führt zu Geld und Eigenbestellung, nicht zur mitgegebenen Inspiration „alles ist lernbar, es braucht Zeit“; zudem überschreitet er mit 15 Wörtern die Bildlänge von 14."
+       "warum": "Der Hook öffnet ein Geld-Thema, der Beitrag liefert aber „alles ist lernbar, es braucht Zeit“. Die Brücke fehlt, und mit 16 Wörtern liegt der Text über der Bildlänge von 10 bis 14 Wörtern."
       }
      },
-     "vorschlag": "„Nur heute 30 Prozent!“ im Network-Chat, und du denkst: Ich kann das einfach nicht.",
+     "vorschlag": "„Nur heute 30 Prozent!“ im Network-Chat, und du denkst: Das kann ich nie.",
      "modell": "claude-opus-5-5"
     }
    }
@@ -3336,108 +3336,106 @@
    "caption": "Lautes Abwerben und Konkurrenzkampf, das regt mich an der Branche wirklich auf.\n\nDabei gibt es genug Menschen für alle. Wer ein eigenes Thema hat, muss niemandem etwas wegnehmen, weil die Leute wegen ihr kommen und nicht wegen eines Rabatts.\n\nIch wünsche mir mehr Frauen, die sich gegenseitig weiterempfehlen, statt sich heimlich Teampartnerinnen abzujagen.\n\nWenn du dich hier wiedererkennst, bleib hier.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "b4e49c76c5f3",
+     "fingerabdruck": "7afd1b1c66b6",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: Der Hook ist ein Vorwurf an eine Kollegin, kein Satz, den sie selbst um 23 Uhr denkt; viele fühlen sich eher angegriffen als ertappt.",
-      "mikro_szene: Das ist eine allgemeine Behauptung über eine Kollegin, kein einzelner Moment mit Ort oder Zeit.",
-      "passt_zur_rolle: Als Hot Take taugt der Hook für Aufmerksamkeit, aber er schürt Misstrauen unter Kolleginnen und widerspricht damit der mitgegebenen Inspiration „Zusammenarbeit statt Kampf“."
+      "mikro_szene: „Jede“ und „wir“ beschreiben ein allgemeines Muster über alle hinweg, also eine Behauptung und keinen einzelnen Moment mit einer Person und einer Handlung."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Konkurrenz im eigenen Team um dieselben Interessenten ist ein echter, wunder Punkt für Network-Mamas."
+       "warum": "Das heimliche Vergleichen im Team trifft einen echten Schmerz: Konkurrenzdruck und Neid unter Kolleginnen, über die offiziell alle jubeln."
       },
       "gedanke_gelesen": {
-       "ja": false,
-       "warum": "Der Hook ist ein Vorwurf an eine Kollegin, kein Satz, den sie selbst um 23 Uhr denkt; viele fühlen sich eher angegriffen als ertappt."
+       "ja": true,
+       "warum": "Das ausgesprochene „heimlich zählt jede“ ist genau der Gedanke, den keine zugibt, und löst deshalb das Gefühl aus, ertappt zu sein."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "So kann man es einer Freundin sagen, auch wenn „Interessenten“ etwas steif klingt."
+       "warum": "So würde man es einer Freundin halb lachend gestehen, ganz ohne Fachjargon."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Der Gegensatz zwischen Mitjubeln und Abwerben ist logisch und ohne verdrehendes Bindewort gebaut."
+       "warum": "„Jubeln“ und „heimlich zählen“ bilden einen echten Gegensatz, und das „und heimlich“ trägt den Bruch korrekt."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Im Hook steht weder eine Lösung noch ein Angebot."
+       "warum": "Im Hook steht keine Lösung und kein Angebot, Zusammenarbeit kommt erst im Beitrag."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network-Chat“ verortet die Welt sofort."
+       "warum": "„Network-Chat“ und „Interessenten“ verorten die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Das ist eine allgemeine Behauptung über eine Kollegin, kein einzelner Moment mit Ort oder Zeit."
+       "warum": "„Jede“ und „wir“ beschreiben ein allgemeines Muster über alle hinweg, also eine Behauptung und keinen einzelnen Moment mit einer Person und einer Handlung."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Es gibt einen Gegner, allerdings als Person aus dem eigenen Team statt als Denkfehler, und das ist grenzwertig."
+       "warum": "Der Gegner ist das heimliche Konkurrenzdenken, ein Denkfehler und keine Firma, und mit dem „wir“ schwingt ein Geständnis mit."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Der Network-Chat und das Abwerben von Interessenten sind klar Network-Welt."
+       "warum": "Der Team-Chat im Network und das Zählen der Interessenten sind eindeutig ihre Welt."
       },
       "passt_zur_rolle": {
-       "ja": false,
-       "warum": "Als Hot Take taugt der Hook für Aufmerksamkeit, aber er schürt Misstrauen unter Kolleginnen und widerspricht damit der mitgegebenen Inspiration „Zusammenarbeit statt Kampf“."
+       "ja": true,
+       "warum": "Als ehrlicher Hot Take mit „das kenn ich auch“-Effekt holt der Hook neue Augen, genau das ist die Aufgabe der Rolle Aufmerksamkeit."
       }
      },
-     "vorschlag": "Im Network-Chat jubeln wir uns zu, und heimlich zählt jede die Interessenten der anderen.",
+     "vorschlag": "Im Network-Chat tippe ich „Wow, gratuliere!“ und zähle heimlich ihre Interessenten mit. (nur wenn's stimmt)",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "88c1cfb234de",
+     "fingerabdruck": "ba30fac48c8f",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: „Hör ich das ständig“ stellt Patricia als Beobachterin über andere, deshalb fühlt Sandra sich eher ertappt oder beobachtet als verstanden.",
-      "mikro_szene: „Ständig“ ist eine Verallgemeinerung, kein einzelner Moment mit Ort oder Uhrzeit."
+      "gedanke_gelesen: Mit „hörst du ständig“ steht sie als Zuschauerin daneben; es wird nicht ihr eigener Gedanke gelesen, sondern der von anderen.",
+      "mikro_szene: „Ständig“ ist eine Verallgemeinerung; es fehlt der eine Moment, die eine Nachricht, die man vor sich sieht."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Die Angst, die eigenen Leute an eine andere Beraterin zu verlieren, ist ein echter Network-Schmerz, auch wenn er nicht Sandras Kern-Pain ist."
+       "warum": "Die Angst, dass eine andere ihr die Leute wegnimmt, ist ein echter Schmerz in der Network-Welt, wo Konkurrenz um dieselben Kontakte herrscht."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "„Hör ich das ständig“ stellt Patricia als Beobachterin über andere, deshalb fühlt Sandra sich eher ertappt oder beobachtet als verstanden."
+       "warum": "Mit „hörst du ständig“ steht sie als Zuschauerin daneben; es wird nicht ihr eigener Gedanke gelesen, sondern der von anderen."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Beide Sätze klingen genau so, wie man es einer Freundin am Tisch erzählt."
+       "warum": "Beide Sätze klingen genau so, wie man es einer Freundin am Küchentisch erzählt."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Es gibt kein Bindewort, und die zweite Zeile ordnet das Zitat logisch richtig ein."
+       "warum": "Es gibt kein Bindewort, und der zweite Satz ordnet das Zitat sauber ein."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder die Lösung „Zusammenarbeit“ noch ein Angebot."
+       "warum": "Weder „Zusammenarbeit statt Kampf“ noch ein Angebot tauchen im Hook auf."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Im Network“ verortet das Zitat sofort, und „Leute abwerben“ versteht man ohne Vorwissen."
+       "warum": "„Network-Chat“ verortet die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "„Ständig“ ist eine Verallgemeinerung, kein einzelner Moment mit Ort oder Uhrzeit."
+       "warum": "„Ständig“ ist eine Verallgemeinerung; es fehlt der eine Moment, die eine Nachricht, die man vor sich sieht."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook beginnt mit einem wörtlichen Zitat, der Denkfehler „Konkurrenz statt Miteinander“ ist als Gegner angelegt, und es wird niemand namentlich genannt."
+       "warum": "Der wörtliche Satz ist ein Zitat, und dahinter steht ein Gegner, nämlich das Konkurrenzdenken, ohne Firma oder Person zu nennen."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Abwerben im Team ist ein klares Network-Thema."
+       "warum": "Abwerben von Leuten und der Network-Chat sind klar die Welt der Network-Mama."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Der Hook bereitet eine Meinung bzw. einen Hot Take vor, das passt zur Rolle Aufmerksamkeit."
+       "warum": "Der Hook bereitet eine Meinung bzw. einen Hot Take gegen das Konkurrenzdenken vor und eignet sich damit für die Rolle Aufmerksamkeit."
       }
      },
-     "vorschlag": "„Die hat mir meine Leute abgeworben.“ Ich hab den Satz im Network auch gedacht. (nur wenn's stimmt)",
+     "vorschlag": "Im Network-Chat steht wieder: „Die hat mir meine Leute abgeworben.“ Und du nickst.",
      "modell": "claude-opus-5-5"
     }
    }
