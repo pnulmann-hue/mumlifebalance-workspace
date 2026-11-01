@@ -339,54 +339,55 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "80cb49288424",
+     "fingerabdruck": "be8a32bc95d9",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: Er beschreibt einen Zustand über drei Jahre und keinen einzelnen Moment, an dem man es sieht, etwa den Blick auf die letzten Bilder."
+      "gedanke_gelesen: Um 23 Uhr denkt Sandra nicht über ihre letzten neun Bilder nach, sondern dass jeden Monat wieder niemand kauft; der Hook liefert Patricias Erkenntnis statt Sandras Gedanken.",
+      "mikro_szene: Es gibt keinen Moment, keinen Ort und keine Uhrzeit, nur die Beschreibung eines Profilzustands."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Er trifft den Kern-Schmerz aus Säule 1: Jahrelang arbeitet sie für die Firma, und auf ihrem Profil ist sie als Person unsichtbar."
+       "warum": "Ein Profil voller Firmen- und Produktbilder ohne sie selbst ist ein echter Schmerz der Säule 1 und kommt als Geständnis daher, nicht als Diagnose."
       },
       "gedanke_gelesen": {
-       "ja": true,
-       "warum": "Viele Network-Mamas sehen ihr eigenes Profil als Katalog, und das „nirgends ich“ spricht genau diesen stillen Gedanken aus."
+       "ja": false,
+       "warum": "Um 23 Uhr denkt Sandra nicht über ihre letzten neun Bilder nach, sondern dass jeden Monat wieder niemand kauft; der Hook liefert Patricias Erkenntnis statt Sandras Gedanken."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Der Satz ist kurz, gesprochen und ohne Fachwort, so erzählt man es einer Freundin."
+       "warum": "So kann man es einer Freundin sagen, auch wenn der Doppelpunkt etwas geschrieben wirkt."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Kein Bindewort dreht den Sinn: Das „und nirgends ich“ setzt die Aufzählung logisch als Pointe fort."
+       "warum": "Das „und“ reiht nur aneinander und dreht keinen Sinn: drei Jahre Network, und trotzdem ist sie selbst nicht zu sehen."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Neun-Beiträge-Test und jeder Hinweis auf eine Lösung fehlen im Hook."
+       "warum": "Der Neun-Beiträge-Test klingt nur an und wird nicht erklärt, auch ein Angebot fehlt im Hook."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network“ sowie „Firmen- und Produktbilder“ verorten die Welt sofort, auch ohne Vorwissen."
+       "warum": "„Network“, „Firma“ und „Produkte“ verorten den Hook sofort in der Network-Welt."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Er beschreibt einen Zustand über drei Jahre und keinen einzelnen Moment, an dem man es sieht, etwa den Blick auf die letzten Bilder."
+       "warum": "Es gibt keinen Moment, keinen Ort und keine Uhrzeit, nur die Beschreibung eines Profilzustands."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Es ist ein Geständnis in Ich-Form mit sichtbarem Detail, und es ist belegt."
+       "warum": "Er ist ein Geständnis in Ich-Form mit sichtbarem Detail und stützt sich auf Belegtes."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Das Katalog-Profil im Network ist genau ihr Problem und gehört zu Säule 1, Personal Brand statt Copy-Paste."
+       "warum": "Er sitzt klar im Network-Alltag mit Copy-Paste-Profil statt eigener Marke."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Es ist Patricias eigene, ehrliche Geschichte aus der schweren Phase und passt damit zur Rolle Vertrauen."
+       "warum": "Er erzählt Patricias eigene, ehrliche Vergangenheit, das passt zur Rolle Vertrauen."
       }
      },
-     "vorschlag": "Drei Jahre Network, und auf meinen letzten neun Bildern: nur Firma, Produkte, nirgends ich. (14 Wörter. Der Blick auf die neun Bilder macht den Zustand zu einem Moment und leitet den Neun-Beiträge-Test ein. Diesen Moment bitte von Patricia bestätigen lassen, nur wenn's stimmt.)",
+     "vorschlag": "Drei Jahre Network, jeden Monat wieder Verkäufen hinterher – und auf meinem Profil: nirgends ich.",
      "modell": "claude-opus-5-5"
     }
    },
@@ -540,108 +541,111 @@
    "caption": "Das war mein Teilzeitjob, bis ich ihn vor zwei Jahren gekündigt habe, als Mama von vier Kindern.\n\nHeute klappe ich um halb zwölf den Laptop zu, und dann gehört der Tag den Kindern. Wenn es mir zu warm wird, setze ich mich unter den Sonnenschirm, und an manchen Tagen arbeite ich gar nicht.\n\nIch will dir dabei nichts schönreden: Selbständig bin ich seit 2023, und regelmässig Einkommen gibt es seit Mai 2025. Dazwischen lagen viele Monate, in denen ich nicht wusste, ob es reicht.\n\nSchick das einer Mama, die heute Morgen auch wieder die Rollläden runtergelassen hat.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "366f2c6e8eef",
+     "fingerabdruck": "5aff2bcfccb3",
      "bestanden": false,
      "gruende": [
-      "schmerz: Der Satz zählt Patricias Tagesablauf neutral auf, Sandras eigentlicher Schmerz (viel Einsatz, der wie ein teures Hobby aussieht) kommt nicht vor.",
-      "gedanke_gelesen: Es ist eine Rückschau auf Patricias Tag, kein Gedanke, den Sandra um 23 Uhr selbst denkt.",
-      "mikro_szene: „So sah mein Tag aus“ fasst eine Routine zusammen, es fehlen ein einzelner Moment und ein sichtbares Detail wie die Rollläden um acht.",
-      "gegner_gestaendnis_oder_zitat: Die Ich-Form allein reicht nicht für ein Geständnis, weil der konkrete Moment mit sichtbarem Detail fehlt; Gegner und Zitat kommen nicht vor."
+      "schmerz: Der Hook beschreibt einen Ablauf, ohne dass Sandra die Last spürt: Die Doppelbelastung von Job, Kindern und Network wird nicht greifbar.",
+      "gedanke_gelesen: Das Rollläden-Detail ist Patricias privates Erlebnis und kein Gedanke, den Sandra um 23 Uhr selbst denkt.",
+      "bezug_der_zeilen: „Um acht“ neben „abends“ ist mehrdeutig (morgens oder abends?), und bei „daneben“ bleibt offen, wovon, weil der Job nicht genannt wird.",
+      "in_drei_sekunden_klar: Ohne Vorwissen versteht niemand, warum die Rollläden runtergehen, und dass es um Job plus Network neben vier Kindern geht, bleibt unklar."
      ],
      "antworten": {
       "schmerz": {
        "ja": false,
-       "warum": "Der Satz zählt Patricias Tagesablauf neutral auf, Sandras eigentlicher Schmerz (viel Einsatz, der wie ein teures Hobby aussieht) kommt nicht vor."
+       "warum": "Der Hook beschreibt einen Ablauf, ohne dass Sandra die Last spürt: Die Doppelbelastung von Job, Kindern und Network wird nicht greifbar."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "Es ist eine Rückschau auf Patricias Tag, kein Gedanke, den Sandra um 23 Uhr selbst denkt."
+       "warum": "Das Rollläden-Detail ist Patricias privates Erlebnis und kein Gedanke, den Sandra um 23 Uhr selbst denkt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "So erzählt man einer Freundin locker, wie der Alltag damals aussah."
+       "warum": "Der Satz ist schlicht und erzählend, so kann man es einer Freundin sagen."
       },
       "bezug_der_zeilen": {
-       "ja": true,
-       "warum": "Die Aufzählung Morgens, abends, dazwischen hängt logisch zusammen, kein Bindewort dreht den Sinn."
+       "ja": false,
+       "warum": "„Um acht“ neben „abends“ ist mehrdeutig (morgens oder abends?), und bei „daneben“ bleibt offen, wovon, weil der Job nicht genannt wird."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Es kommt weder eine Lösung noch ein Angebot im Hook vor."
+       "warum": "Der Hook enthält weder Lösung noch Angebot."
       },
       "in_drei_sekunden_klar": {
-       "ja": true,
-       "warum": "Büro, Network und vier Kinder verorten sofort die Welt der Network-Mama mit Job."
+       "ja": false,
+       "warum": "Ohne Vorwissen versteht niemand, warum die Rollläden runtergehen, und dass es um Job plus Network neben vier Kindern geht, bleibt unklar."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "„So sah mein Tag aus“ fasst eine Routine zusammen, es fehlen ein einzelner Moment und ein sichtbares Detail wie die Rollläden um acht."
+       "ja": true,
+       "warum": "Ein Ort, eine Uhrzeit und ein sichtbares Detail bilden einen konkreten Moment."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": false,
-       "warum": "Die Ich-Form allein reicht nicht für ein Geständnis, weil der konkrete Moment mit sichtbarem Detail fehlt; Gegner und Zitat kommen nicht vor."
+       "ja": true,
+       "warum": "Es ist ein Geständnis in Ich-Form mit einem belegten, sichtbaren Detail."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Network neben Job und Kindern ist genau die Network-Mama."
+       "warum": "„Mein Network“ verortet die Nische, die Mama-Ebene fehlt allerdings im Hook."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Es ist Patricias eigene Geschichte und passt damit zur Rolle Vertrauen."
+       "warum": "Patricias eigene, belegte Geschichte passt zur Rolle Vertrauen."
       }
      },
-     "vorschlag": "Um acht liess ich im Büro die Rollläden runter, abends lief mein Network daneben.",
+     "vorschlag": "Morgens Büro, vier Kinder, abends noch das Network: Wie lange ich das durchgezogen habe.",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "62b6618a28b5",
+     "fingerabdruck": "de71692b3d8f",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: „Neben Büro und vier Kindern“ ist eine Zusammenfassung ohne Moment, Ort und Uhrzeit, obwohl die belegte Rollladen-Szene um acht vorhanden wäre."
+      "15 Wörter (10–14)",
+      "gedanke_gelesen: Der Zitat-Teil sitzt, aber die zweite Zeile mit den Rollläden ist Patricias Detail, kein Gedanke, den Sandra selbst hat.",
+      "bezug_der_zeilen: „Rollläden runter im Büro“ erklärt nicht, was „nebenbei“ hiess. Dass ein Teilzeitjob daneben lief, fehlt, und der Sprung bleibt rätselhaft.",
+      "in_drei_sekunden_klar: „Network“ verortet die Welt zwar, aber wer Patricia nicht kennt, liest „um acht“ als 20 Uhr Überstunden und versteht den Grund für die Rollläden nicht. Mit 15 Wörtern ist der Hook ausserdem über dem Bildlimit."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Weichmacher „nebenbei“ trifft den echten Schmerz, das Network zwischen Job und Kindern irgendwie unterbringen zu müssen."
+       "warum": "Der Ratschlag „mach halt nebenbei“ trifft den Kern-Pain: Zeit und Kraft für etwas ohne Plan, neben allem anderen."
       },
       "gedanke_gelesen": {
-       "ja": true,
-       "warum": "Den Satz „mach halt nebenbei“ hat sie selbst gehört, und die Antwort darauf hat sie sich nur nie laut zu sagen getraut."
+       "ja": false,
+       "warum": "Der Zitat-Teil sitzt, aber die zweite Zeile mit den Rollläden ist Patricias Detail, kein Gedanke, den Sandra selbst hat."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Ein zitierter Spruch plus trockener Konter klingt genau wie unter Freundinnen am Tisch."
+       "warum": "Zitat plus „bei mir hiess das“ ist gesprochene Alltagssprache."
       },
       "bezug_der_zeilen": {
-       "ja": true,
-       "warum": "Die zweite Zeile nimmt das Wort „nebenbei“ wörtlich auf und füllt es, kein Bindewort dreht den Sinn."
+       "ja": false,
+       "warum": "„Rollläden runter im Büro“ erklärt nicht, was „nebenbei“ hiess. Dass ein Teilzeitjob daneben lief, fehlt, und der Sprung bleibt rätselhaft."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Im Hook stehen weder Lösung noch Angebot, nur das Zitat und Patricias Realität."
+       "warum": "Es gibt weder Lösung noch Angebot im Hook."
       },
       "in_drei_sekunden_klar": {
-       "ja": true,
-       "warum": "Das Wort „Network“ steht im ersten Satz und verortet die Welt sofort."
+       "ja": false,
+       "warum": "„Network“ verortet die Welt zwar, aber wer Patricia nicht kennt, liest „um acht“ als 20 Uhr Überstunden und versteht den Grund für die Rollläden nicht. Mit 15 Wörtern ist der Hook ausserdem über dem Bildlimit."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "„Neben Büro und vier Kindern“ ist eine Zusammenfassung ohne Moment, Ort und Uhrzeit, obwohl die belegte Rollladen-Szene um acht vorhanden wäre."
+       "ja": true,
+       "warum": "Uhrzeit, Ort und sichtbare Handlung sind da: ein konkreter Moment."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook bringt ein Zitat mit dem aufgespiessten Weichmacher „nebenbei“ als Gegner und dazu ein Geständnis in Ich-Form."
+       "warum": "Das Zitat „Mach dein Network halt nebenbei“ als Gegner-Floskel plus ein belegtes Geständnis."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Network und Mama-Alltag mit Job und Kindern sind klar die Nische."
+       "warum": "Das Network wird direkt genannt, und der Nebenbei-Ratschlag ist typisch für die Szene."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Es ist Patricias eigene, ehrliche Geschichte, also genau die Rolle Vertrauen."
+       "warum": "Patricias eigene, belegte Geschichte aus einer schweren Phase passt zur Rolle Vertrauen."
       }
      },
-     "vorschlag": "„Mach dein Network halt nebenbei.“ Bei mir hiess das: um acht Rollläden runter im Büro.",
+     "vorschlag": "„Mach dein Network halt nebenbei.“ Bei mir hiess das: Bürojob, vier Kinder, Network daneben.",
      "modell": "claude-opus-5-5"
     }
    },
