@@ -1861,55 +1861,54 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "96f7bcf86807",
+     "fingerabdruck": "eb82a6f2b34f",
      "bestanden": false,
      "gruende": [
-      "15 Wörter (10–14)",
-      "mikro_szene: „Sie wird gefeiert“ bleibt allgemein: Es fehlen Ort, Zeitpunkt und ein sichtbares Detail. Ausserdem hat der Hook 15 Wörter, das ist eins über der Grenze für den Text im Reel."
+      "kuechentisch: Das „Ihr“ hat keinen Bezug: Niemand sagt einer Freundin „Ihr neuer Rang“, ohne zu nennen, wessen, und als Bildtext kann es sogar als „euer“ gelesen werden."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Sich neben fremden Erfolgen klein zu fühlen und an sich selbst zu zweifeln, ist ein echter Schmerz der Network-Mama."
+       "warum": "Der Vergleich mit einer anderen und der stille Zweifel, nicht für das Network gemacht zu sein, ist ein echter Schmerz der Suchenden."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "„Ich bin halt nicht der Network-Typ“ ist ein Satz, den sie wörtlich so denkt und kaum jemandem sagt."
+       "warum": "„Ich bin halt kein Network-Typ“ ist ein Satz, den sie wörtlich so denkt und kaum ausspricht."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Beide Sätze sind schlicht und mündlich, so erzählt man es einer Freundin."
+       "ja": false,
+       "warum": "Das „Ihr“ hat keinen Bezug: Niemand sagt einer Freundin „Ihr neuer Rang“, ohne zu nennen, wessen, und als Bildtext kann es sogar als „euer“ gelesen werden."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Kein Bindewort dreht den Sinn, die fremde Feier und der eigene Zweifel stehen als stiller Gegensatz da."
+       "warum": "„und du denkst“ verbindet die Feier und den Gedanken logisch, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Vom Plan hinter dem Erfolg steht nichts im Hook, er bleibt offen."
+       "warum": "Der Plan hinter fremden Erfolgen wird nicht verraten, es gibt kein Angebot und keine Lösung."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Rang“ und „Network-Typ“ verorten den Hook sofort in der Network-Welt."
+       "warum": "„Rang“ und „Network-Typ“ verorten den Hook sofort im Network Marketing."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "„Sie wird gefeiert“ bleibt allgemein: Es fehlen Ort, Zeitpunkt und ein sichtbares Detail. Ausserdem hat der Hook 15 Wörter, das ist eins über der Grenze für den Text im Reel."
+       "ja": true,
+       "warum": "Es ist ein konkreter Moment (eine Rangfeier, ihr Gedanke dabei) und keine allgemeine Behauptung."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Er enthält ein Zitat aus ihrem inneren Monolog, und der Denkfehler „Typ statt Plan“ ist der Gegner."
+       "warum": "Er enthält ein Zitat aus ihrem inneren Monolog, dazu den Denkfehler „kein Typ dafür“ als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Rang-Feiern und der Zweifel am „Network-Typ“ gehören klar zu ihrer Welt."
+       "warum": "Rang, Team-Feier und Network-Typ sind eindeutig ihre Welt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Der Hook bereitet eine neue Sicht vor (Plan statt Typ), in der sie die Heldin ist, das passt zur Rolle Beziehung."
+       "warum": "Für die Rolle Beziehung bietet er eine neue Sicht: Sie ist die Heldin, deren Glaubenssatz gekippt wird (hinter fremden Erfolgen steckt ein Plan)."
       }
      },
-     "vorschlag": "Ihr neuer Rang wird gefeiert, und du denkst: Ich bin halt kein Network-Typ. (13 Wörter. Ort und Zeitpunkt der Feier nur ergänzen, wenn sie belegt sind, zum Beispiel [echte Situation einsetzen].)",
+     "vorschlag": "Eine aus dem Team feiert ihren neuen Rang. Du denkst: Ich bin halt kein Network-Typ.",
      "modell": "claude-opus-5-5"
     }
    }
@@ -2110,55 +2109,52 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "8346d93c8b1f",
-     "bestanden": false,
-     "gruende": [
-      "kuechentisch: „schreibt niemand wegen deinem Network“ ist holprig, und der Wechsel vom Ich-Zitat zum Du bricht den Ton, so sagt man es keiner Freundin.",
-      "mikro_szene: „heute Abend“ ist nur ein Zeitanker ohne sichtbares Detail. „Jeden Tag“ und „niemand schreibt“ bleiben eher Behauptung als Moment."
-     ],
+     "fingerabdruck": "fd9187e33347",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Jeden Tag posten und trotzdem schreibt niemand, das ist ein echter, täglicher Schmerz der Network-Mama."
+       "warum": "Der Hook trifft den Kern-Pain: viel Einsatz beim täglichen Posten, aber keine Reaktion und keine Anfragen."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "„Ich poste doch jeden Tag!“ ist wörtlich ihr innerer Protestsatz, den sie abends selbst denkt."
+       "warum": "Der verteidigende Satz „Ich poste doch täglich“ ist genau ihr innerer Monolog, wenn abends keine Nachricht kommt."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "„schreibt niemand wegen deinem Network“ ist holprig, und der Wechsel vom Ich-Zitat zum Du bricht den Ton, so sagt man es keiner Freundin."
+       "ja": true,
+       "warum": "Beides sind Alltagssätze, die man genau so einer Freundin sagt, ohne Fachwörter."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "„doch“ ist hier eine Protestpartikel im Zitat, und der Gegensatz (täglich posten, trotzdem schreibt niemand) steht tatsächlich da, das „Und … wieder“ dreht den Sinn nicht."
+       "warum": "„doch“ ist hier eine Abtönungspartikel der Rechtfertigung, kein Bindewort. Das „Und“ setzt den Widerspruch zwischen täglichem Posten und leerem Postfach richtig."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "„Qualität vor Menge“ kommt im Hook nicht vor, kein Angebot, kein Tipp."
+       "warum": "„Qualität vor Menge“ kommt im Hook nicht vor, es wird weder eine Lösung noch ein Angebot genannt."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„poste“ und „Network“ verorten sofort: Social Media fürs Network-Business."
+       "warum": "„fürs Network“ verortet die Welt sofort, und „posten“ plus „Postfach“ macht die Lage auch ohne Vorwissen klar."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "„heute Abend“ ist nur ein Zeitanker ohne sichtbares Detail. „Jeden Tag“ und „niemand schreibt“ bleiben eher Behauptung als Moment."
+       "ja": true,
+       "warum": "„Heute Abend“ und das leere Postfach sind ein konkreter Moment, keine allgemeine Diagnose."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook beginnt mit einem wörtlichen Zitat aus ihrem inneren Monolog."
+       "warum": "Die erste Zeile ist ein wörtliches Zitat aus ihrem inneren Monolog, und dahinter steht als Gegner der Denkfehler „viel posten bringt Kundschaft“."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Das Network wird explizit genannt, das Posten ohne Anfragen ist typisch für die Nische."
+       "warum": "Die Situation ist klar die einer Network-Partnerin, die täglich fürs Network postet."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Der Hook ist ein „Das hab ich auch erlebt“-Moment, der neue Augen holt und zur Rolle Aufmerksamkeit passt."
+       "warum": "Als „das hab ich auch erlebt“-Moment mit Haltung gegen Menge statt Qualität holt der Hook neue Augen, und er funktioniert mit der Einordnung am Schluss."
       }
      },
-     "vorschlag": "„Ich poste doch täglich fürs Network!“ Und heute Abend bleibt das Postfach wieder leer.",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
    }
@@ -2187,55 +2183,58 @@
    "caption": "Das ist mir im Oktober passiert, mit einem ganz normalen Reel aus meinem Alltag.\n\nViele haben es gesehen, kaum jemand hat reagiert. Gesehen werden ist eben noch nicht dasselbe wie gemeint sein. Wer sich angesprochen fühlt, schreibt etwas, und wer nur kurz hängen bleibt, scrollt weiter.\n\nSeitdem schaue ich bei jedem Beitrag zuerst, ob er einer bestimmten Mama etwas Konkretes mitgibt, und erst dann, wie weit er läuft.\n\nWenn du dich hier wiedererkennst, bleib hier.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "b2c73796156d",
+     "fingerabdruck": "a9fab7270271",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: Der Hook ist eine zusammenfassende Erfahrung ohne Ort, Uhrzeit oder sichtbares Detail und damit kein einzelner Moment.",
-      "gegner_gestaendnis_oder_zitat: Die Ich-Form ist da, aber dem Geständnis fehlen der konkrete Moment und das sichtbare Detail, und es ist weder belegt noch mit „(nur wenn's stimmt)“ markiert."
+      "Werkzeug im Hook: „Reel“",
+      "gedanke_gelesen: Mit „Reel“ steht ein Werkzeug im Hook, und laut Prüffrage denkt sie so einen Satz um 23 Uhr nicht.",
+      "in_drei_sekunden_klar: Es geht um Reichweite allgemein, und nichts verortet den Hook in der Network-Welt.",
+      "mikro_szene: Eine Statistik über einen Monat ist kein Moment, kein Ort und keine Uhrzeit.",
+      "nische_network_mama: Der Hook passt auf jede Creatorin, Network und Mama-Alltag fehlen."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Gesehen werden und trotzdem keine einzige Nachricht bekommen ist ein echter, bekannter Schmerz der Network-Mama."
+       "warum": "Posten ohne jede Reaktion ist ein echter Schmerz für eine Network-Mama, die Zeit in Beiträge steckt."
       },
       "gedanke_gelesen": {
-       "ja": true,
-       "warum": "Sandra kennt genau dieses Gefühl nach einem Post, bei dem die Aufrufe steigen und das Postfach leer bleibt."
+       "ja": false,
+       "warum": "Mit „Reel“ steht ein Werkzeug im Hook, und laut Prüffrage denkt sie so einen Satz um 23 Uhr nicht."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Der Satz klingt gesprochen und alltäglich, so erzählt man es einer Freundin."
+       "warum": "Zwei schlichte Sätze, die man einer Freundin genau so erzählen würde."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das „und“ reiht ohne falschen Gegensatz, der Kontrast zwischen Schauen und Schreiben bleibt klar."
+       "warum": "Es gibt kein Bindewort, und der Gegensatz von vielen Zuschauern zu null Kommentaren stimmt."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder Lösung noch Angebot, er hört beim Problem auf."
+       "warum": "Im Hook steht weder eine Lösung noch ein Angebot."
       },
       "in_drei_sekunden_klar": {
-       "ja": true,
-       "warum": "„Fürs Network gepostet“ verortet die Welt sofort, auch ohne Vorwissen."
+       "ja": false,
+       "warum": "Es geht um Reichweite allgemein, und nichts verortet den Hook in der Network-Welt."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Der Hook ist eine zusammenfassende Erfahrung ohne Ort, Uhrzeit oder sichtbares Detail und damit kein einzelner Moment."
+       "warum": "Eine Statistik über einen Monat ist kein Moment, kein Ort und keine Uhrzeit."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": false,
-       "warum": "Die Ich-Form ist da, aber dem Geständnis fehlen der konkrete Moment und das sichtbare Detail, und es ist weder belegt noch mit „(nur wenn's stimmt)“ markiert."
+       "ja": true,
+       "warum": "Das Geständnis in Ich-Form mit belegter Zahl ist vorhanden."
       },
       "nische_network_mama": {
-       "ja": true,
-       "warum": "Posten fürs Network ist eindeutig ihre Welt."
+       "ja": false,
+       "warum": "Der Hook passt auf jede Creatorin, Network und Mama-Alltag fehlen."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Als eigene, ehrliche Erfahrung von Patricia trägt der Hook die Rolle Vertrauen und führt zu „Reaktion zählt mehr als Reichweite“."
+       "warum": "Ein ehrlicher, unbequemer Einblick in Patricias eigene Zahlen passt zur Rolle Vertrauen."
       }
      },
-     "vorschlag": "Ich sass [echten Ort und Uhrzeit einsetzen]: viele schauen meinen Network-Post, keiner schreibt. (nur wenn's stimmt)",
+     "vorschlag": "Fast 2'000 schauten zu, keiner kommentierte. Wer im Network postet, kennt diese Stille.",
      "modell": "claude-opus-5-5"
     },
     "b": {
