@@ -2884,6 +2884,61 @@
      },
      "vorschlag": "Darum bin ich ins Network: Ich wollte nie von meinem Mann abhängig sein.",
      "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "e277a60440ea",
+     "bestanden": false,
+     "gruende": [
+      "kuechentisch: Der zweite Satz ist eine Diagnose über sie („schiebst du weg“), so redet man nicht mit einer Freundin.",
+      "in_drei_sekunden_klar: Ohne jeden Network-Bezug könnte es um Trennung, Tod oder irgendeine Ehefrau gehen.",
+      "mikro_szene: „Jeden Abend“ beschreibt ein Muster, keinen einzelnen Moment mit Ort oder Uhrzeit.",
+      "nische_network_mama: Network, Upline oder Eigenbestellung kommen nicht vor, der Hook passt auf jede Frau.",
+      "passt_zur_rolle: Die Rolle Vertrauen verlangt Patricias eigenen Grund, der Hook spricht aber über die Leserin statt über Patricia."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Die finanzielle Abhängigkeit vom Partner ist ein belegter Kern-Pain von Sandra."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Die Frage im Zitat ist ein Gedanke, den sie nachts wirklich selbst denkt."
+      },
+      "kuechentisch": {
+       "ja": false,
+       "warum": "Der zweite Satz ist eine Diagnose über sie („schiebst du weg“), so redet man nicht mit einer Freundin."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Der zweite Satz bezieht sich klar auf das Zitat, und kein Bindewort dreht den Sinn."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook enthält weder eine Lösung noch ein Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "Ohne jeden Network-Bezug könnte es um Trennung, Tod oder irgendeine Ehefrau gehen."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "„Jeden Abend“ beschreibt ein Muster, keinen einzelnen Moment mit Ort oder Uhrzeit."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Das Zitat aus ihrem inneren Monolog ist vorhanden."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Network, Upline oder Eigenbestellung kommen nicht vor, der Hook passt auf jede Frau."
+      },
+      "passt_zur_rolle": {
+       "ja": false,
+       "warum": "Die Rolle Vertrauen verlangt Patricias eigenen Grund, der Hook spricht aber über die Leserin statt über Patricia."
+      }
+     },
+     "vorschlag": "„Was, wenn mein Mann morgen weg ist?“ Das war mein Grund, im Network umzudenken. (nur wenn's stimmt)",
+     "modell": "claude-opus-5-5"
     }
    }
   },
@@ -2908,7 +2963,121 @@
     "„Ich habe keine Zeit für ein eigenes Business.“",
     "Ich habe auch nur 18 Stunden."
    ],
-   "caption": "Vier Kinder, ein Haushalt und ein Garten, der nie fertig wird. Mehr als rund 18 Stunden pro Woche gibt mein Leben gerade nicht her.\n\nDeshalb mache ich nicht alles, was man angeblich machen muss. Ich mache weniger, dafür das Richtige, und das Wichtigste läuft über einen festen Rhythmus.\n\nWenig Zeit ist kein Grund, es nicht zu tun. Sie ist ein Grund, es klüger zu tun.\n\nWenn du dich hier wiedererkennst, bleib hier."
+   "caption": "Vier Kinder, ein Haushalt und ein Garten, der nie fertig wird. Mehr als rund 18 Stunden pro Woche gibt mein Leben gerade nicht her.\n\nDeshalb mache ich nicht alles, was man angeblich machen muss. Ich mache weniger, dafür das Richtige, und das Wichtigste läuft über einen festen Rhythmus.\n\nWenig Zeit ist kein Grund, es nicht zu tun. Sie ist ein Grund, es klüger zu tun.\n\nWenn du dich hier wiedererkennst, bleib hier.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "28c480e2c754",
+     "bestanden": false,
+     "gruende": [
+      "gedanke_gelesen: Das ist Patricias Bilanz mit einer Zahl, kein Satz, den Sandra um 23 Uhr selbst denkt.",
+      "in_drei_sekunden_klar: Mit ‚mein Business‘ kann jede Selbständige gemeint sein. Network oder Mama-Alltag werden nicht verortet.",
+      "mikro_szene: Es ist eine Wochenbilanz mit Zahl, kein Moment mit Ort und Uhrzeit.",
+      "gegner_gestaendnis_oder_zitat: Die Ich-Form ist da, aber ohne konkreten Moment und ohne sichtbares Detail ist es kein echtes Geständnis. Die Zahl 18 ist ausserdem nicht belegt und müsste den Vermerk ‚(nur wenn's stimmt)‘ tragen.",
+      "nische_network_mama: Weder Network noch Kinder kommen vor, der Hook würde für jede Selbständige gelten."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Zu wenig Zeit fürs Business neben der Familie ist ein echter Schmerz der Network-Mama, hier als Geständnis statt als Diagnose."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Das ist Patricias Bilanz mit einer Zahl, kein Satz, den Sandra um 23 Uhr selbst denkt."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Der Satz klingt natürlich, so erzählt man einer Freundin vom eigenen Wochenplan."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Es gibt kein Bindewort, das den Sinn dreht. Zahl und Folgerung hängen logisch zusammen."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Weder Methode noch Angebot stehen im Hook. Dass es mit wenig Zeit geht, bleibt offen."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "Mit ‚mein Business‘ kann jede Selbständige gemeint sein. Network oder Mama-Alltag werden nicht verortet."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Es ist eine Wochenbilanz mit Zahl, kein Moment mit Ort und Uhrzeit."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Die Ich-Form ist da, aber ohne konkreten Moment und ohne sichtbares Detail ist es kein echtes Geständnis. Die Zahl 18 ist ausserdem nicht belegt und müsste den Vermerk ‚(nur wenn's stimmt)‘ tragen."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Weder Network noch Kinder kommen vor, der Hook würde für jede Selbständige gelten."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Patricias eigene Lage passt grundsätzlich zur Rolle Vertrauen, sofern die Zahl stimmt."
+      }
+     },
+     "vorschlag": "Achtzehn Stunden pro Woche neben Network und Kindern – mehr habe ich nicht. (nur wenn's stimmt; für eine Mikroszene [echte Situation einsetzen])",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "98253ccb119b",
+     "bestanden": false,
+     "gruende": [
+      "gedanke_gelesen: Der Satz ist eine abgenutzte Allerwelts-Ausrede, kein Gedanke, bei dem sie sich ertappt fühlt.",
+      "kuechentisch: Das Zitat geht, aber „Ich habe auch nur 18 Stunden“ sagt so niemand zu einer Freundin.",
+      "bezug_der_zeilen: Unklar, was „18 Stunden“ meint (Tag? Woche? wach?), daher greift die Antwort nicht sauber auf das Zitat zurück.",
+      "in_drei_sekunden_klar: „Eigenes Business“ kann alles heissen, das Network als Welt fehlt.",
+      "mikro_szene: Kein Ort, kein Zeitpunkt, kein Moment, sondern ein Zitat plus vage Behauptung.",
+      "nische_network_mama: Weder Network noch Mama-Alltag kommt vor, das passt auf jede Selbständige.",
+      "passt_zur_rolle: Vertrauen braucht Patricias ehrliche Geschichte; hier steht nur eine kurze Gegenbehauptung ohne erlebten Moment."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Zu wenig Zeit neben Kindern und Network ist ein echter, oft gefühlter Schmerz."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Der Satz ist eine abgenutzte Allerwelts-Ausrede, kein Gedanke, bei dem sie sich ertappt fühlt."
+      },
+      "kuechentisch": {
+       "ja": false,
+       "warum": "Das Zitat geht, aber „Ich habe auch nur 18 Stunden“ sagt so niemand zu einer Freundin."
+      },
+      "bezug_der_zeilen": {
+       "ja": false,
+       "warum": "Unklar, was „18 Stunden“ meint (Tag? Woche? wach?), daher greift die Antwort nicht sauber auf das Zitat zurück."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Es wird keine Lösung und kein Angebot genannt, die Antwort deutet nur an."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "„Eigenes Business“ kann alles heissen, das Network als Welt fehlt."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Kein Ort, kein Zeitpunkt, kein Moment, sondern ein Zitat plus vage Behauptung."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Der erste Satz ist ein Zitat ihres inneren Monologs."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Weder Network noch Mama-Alltag kommt vor, das passt auf jede Selbständige."
+      },
+      "passt_zur_rolle": {
+       "ja": false,
+       "warum": "Vertrauen braucht Patricias ehrliche Geschichte; hier steht nur eine kurze Gegenbehauptung ohne erlebten Moment."
+      }
+     },
+     "vorschlag": "„Neben dem Network noch was Eigenes? Keine Zeit.“ Hab ich auch gesagt. (nur wenn's stimmt)",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "25",
@@ -2931,7 +3100,118 @@
     "2018 bin ich ins Network gestartet,",
     "mit viel Hoffnung und wenig Klarheit."
    ],
-   "caption": "Am Produkt lag es nicht. Mir fehlte ein Plan, der zu meinem Leben passt.\n\n2023 habe ich neu angefangen, diesmal mit einem eigenen Thema und einem eigenen Plan, und das Network läuft daneben mit.\n\nWenn du gerade ans Aufhören denkst: Vielleicht reicht es, es anders zu machen. Der Anfang ist bei mir immer das Thema.\n\nMein Nischengenerator schlägt dir drei vor, passend zu dir und deinem Produkt.\n\nKommentier NISCHE, dann schick ich dir den Link."
+   "caption": "Am Produkt lag es nicht. Mir fehlte ein Plan, der zu meinem Leben passt.\n\n2023 habe ich neu angefangen, diesmal mit einem eigenen Thema und einem eigenen Plan, und das Network läuft daneben mit.\n\nWenn du gerade ans Aufhören denkst: Vielleicht reicht es, es anders zu machen. Der Anfang ist bei mir immer das Thema.\n\nMein Nischengenerator schlägt dir drei vor, passend zu dir und deinem Produkt.\n\nKommentier NISCHE, dann schick ich dir den Link.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "077cc6f5bc17",
+     "bestanden": false,
+     "gruende": [
+      "gedanke_gelesen: Das ist Patricias Lebenslauf, kein Satz, den Sandra um 23 Uhr selbst denkt.",
+      "kuechentisch: „Nach drei Jahren voller Hoffnung“ klingt nach Schriftsprache, so erzählt man es einer Freundin am Tisch nicht.",
+      "mikro_szene: Er fasst drei Jahre als Zeitstrahl zusammen und zeigt keinen Moment, keinen Ort und kein sichtbares Detail.",
+      "gegner_gestaendnis_oder_zitat: Die Ich-Form deutet ein Geständnis an, doch ohne konkreten Moment und sichtbares Detail erfüllt es die Definition nicht, und es gibt weder Gegner noch Zitat."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Drei Jahre Hoffnung, die mit Aufgeben enden, treffen die Angst der Frustrierten, dass sich ihr Einsatz nie lohnt."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Das ist Patricias Lebenslauf, kein Satz, den Sandra um 23 Uhr selbst denkt."
+      },
+      "kuechentisch": {
+       "ja": false,
+       "warum": "„Nach drei Jahren voller Hoffnung“ klingt nach Schriftsprache, so erzählt man es einer Freundin am Tisch nicht."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Kein Bindewort dreht den Sinn, Aufgeben und die drei Jahre davor hängen logisch zusammen."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook nennt keine Lösung und kein Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": true,
+       "warum": "„Mein erstes Network aufgegeben“ verortet sofort im Network Marketing."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Er fasst drei Jahre als Zeitstrahl zusammen und zeigt keinen Moment, keinen Ort und kein sichtbares Detail."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Die Ich-Form deutet ein Geständnis an, doch ohne konkreten Moment und sichtbares Detail erfüllt es die Definition nicht, und es gibt weder Gegner noch Zitat."
+      },
+      "nische_network_mama": {
+       "ja": true,
+       "warum": "Er spricht klar Frauen im Network an, die ans Aufgeben denken."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Patricias eigene Geschichte samt schwerer Phase ist genau die Rolle Vertrauen."
+      }
+     },
+     "vorschlag": "„Das war's, ich höre auf“, dachte ich 2021 nach drei Jahren Network. (Nur wenn's stimmt: Wortlaut des Gedankens von Patricia bestätigen lassen und den genauen Moment aus dem Interview als Szene ergänzen.)",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "2f8473d69432",
+     "bestanden": false,
+     "gruende": [
+      "schmerz: „Wenig Klarheit“ bleibt abstrakt, kein Schmerz, den Sandra spürt, eher eine Bilanz aus Patricias Lebenslauf.",
+      "gedanke_gelesen: Es ist Patricias Biografie und kein Satz, den Sandra um 23 Uhr selbst denkt.",
+      "kuechentisch: „Mit viel Hoffnung und wenig Klarheit“ ist eine geschliffene Gegenüberstellung wie aus einer Über-mich-Seite, so redet man nicht mit einer Freundin.",
+      "mikro_szene: Eine Jahreszahl ist kein Moment: Es fehlen Ort, Uhrzeit und ein sichtbares Detail.",
+      "gegner_gestaendnis_oder_zitat: Die Ich-Form allein macht noch kein Geständnis, denn es fehlen der konkrete Moment und das sichtbare Detail. Gegner oder Zitat gibt es auch nicht."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": false,
+       "warum": "„Wenig Klarheit“ bleibt abstrakt, kein Schmerz, den Sandra spürt, eher eine Bilanz aus Patricias Lebenslauf."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Es ist Patricias Biografie und kein Satz, den Sandra um 23 Uhr selbst denkt."
+      },
+      "kuechentisch": {
+       "ja": false,
+       "warum": "„Mit viel Hoffnung und wenig Klarheit“ ist eine geschliffene Gegenüberstellung wie aus einer Über-mich-Seite, so redet man nicht mit einer Freundin."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Kein Bindewort dreht den Sinn, Hoffnung und fehlende Klarheit stehen stimmig nebeneinander."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook nennt weder Lösung noch Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": true,
+       "warum": "„Ins Network gestartet“ verortet die Welt sofort."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Eine Jahreszahl ist kein Moment: Es fehlen Ort, Uhrzeit und ein sichtbares Detail."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Die Ich-Form allein macht noch kein Geständnis, denn es fehlen der konkrete Moment und das sichtbare Detail. Gegner oder Zitat gibt es auch nicht."
+      },
+      "nische_network_mama": {
+       "ja": true,
+       "warum": "Das Network ist klar benannt und trifft die Nische."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Patricias eigene Geschichte zum zweiten Anlauf passt zur Rolle Vertrauen."
+      }
+     },
+     "vorschlag": "Was mir 2018 im Network fehlte, merkte ich erst beim zweiten Anlauf.",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "34",
@@ -2954,7 +3234,114 @@
     "Du entschuldigst dich fürs Verkaufen,",
     "bevor du gesagt hast, was du anbietest."
    ],
-   "caption": "Verkaufen ist Verkaufen, und dafür muss sich niemand entschuldigen.\n\nWer sich vorher entschuldigt, sagt in Wahrheit: Was jetzt kommt, ist mir unangenehm. Und genau so kommt es dann auch an.\n\nMein Satz dafür ist ganz schlicht: Wenn du da Hilfe brauchst, kann ich dich gerne unterstützen. Kein Druck, keine Ausrede, und die andere entscheidet selbst.\n\nWenn du dich hier wiedererkennst, bleib hier."
+   "caption": "Verkaufen ist Verkaufen, und dafür muss sich niemand entschuldigen.\n\nWer sich vorher entschuldigt, sagt in Wahrheit: Was jetzt kommt, ist mir unangenehm. Und genau so kommt es dann auch an.\n\nMein Satz dafür ist ganz schlicht: Wenn du da Hilfe brauchst, kann ich dich gerne unterstützen. Kein Druck, keine Ausrede, und die andere entscheidet selbst.\n\nWenn du dich hier wiedererkennst, bleib hier.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "db7e2a412e53",
+     "bestanden": false,
+     "gruende": [
+      "nische_network_mama: Weder Network noch Mama kommen vor, der Satz könnte auch von jeder Selbständigen mit Produkt stammen, die Nische ist nur erahnbar."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Die Angst, Freundinnen mit dem Verkaufen zu vergraulen, und das Gefühl, sich dafür entschuldigen zu müssen, ist ein echter, täglicher Schmerz der Network-Mama."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Sie hat genau diesen Satz selbst schon gesagt, also ertappt der Hook sie wörtlich bei ihrer eigenen Floskel."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Beide Teile sind schlichte Alltagssprache ohne Fachwörter, so redet man unter Freundinnen."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Das „aber“ steht innerhalb des Zitats und ist genau die widersprüchliche Floskel, um die es geht, also dreht es den Sinn nicht, sondern ist die Pointe."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Tipp „einladen statt entschuldigen“ kommt im Hook nicht vor, er zeigt nur die Folge des Satzes."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": true,
+       "warum": "„Verkaufen“ plus „deine Freundin“ macht in Sekunden klar, dass es ums Verkaufen im Freundeskreis geht."
+      },
+      "mikro_szene": {
+       "ja": true,
+       "warum": "Ein einzelner Moment: der Satz fällt, und die Freundin schaltet ab."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Der Hook trägt ein wörtliches Zitat ihres eigenen Satzes, und die entschuldigende Floskel ist zugleich der Gegner."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Weder Network noch Mama kommen vor, der Satz könnte auch von jeder Selbständigen mit Produkt stammen, die Nische ist nur erahnbar."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Ein Wiedererkennungsmoment mit Augenzwinkern („das hab ich auch erlebt“) holt neue Augen, und genau das ist die Aufgabe der Rolle Aufmerksamkeit."
+      }
+     },
+     "vorschlag": "„Ich will dir nichts verkaufen, aber …“ Bei diesem Network-Satz hört deine Freundin weg.",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "0a18537f3de6",
+     "bestanden": false,
+     "gruende": [
+      "in_drei_sekunden_klar: Ohne Vorwissen könnte es um jede Selbständige gehen, nichts verortet den Satz im Network.",
+      "mikro_szene: Es ist eine allgemeine Verhaltensbehauptung ohne Moment, Ort, Satz oder sichtbares Detail.",
+      "gegner_gestaendnis_oder_zitat: Es gibt weder Geständnis noch Zitat. Der einzige mögliche Gegner ist Sandras eigenes Verhalten, und Sandra selbst darf nie der Gegner sein.",
+      "nische_network_mama: Keines ihrer Wörter (Network, Upline, Eigenbestellung, nebenbei) kommt vor, der Hook passt auf jede Verkäuferin."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Die Scham beim Verkaufen ist ein echter Schmerz, allerdings steht er als Diagnose an ihr da statt als Geständnis, Zitat oder Szene."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Das Entschuldigen, bevor das Angebot überhaupt genannt ist, ist so genau beobachtet, dass sie sich ertappt fühlt."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Der Satz ist schlicht und direkt, so sagt man es einer Freundin."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Das „bevor“ ordnet die Abfolge richtig: erst die Entschuldigung, dann das Angebot. Kein Bindewort dreht den Sinn."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "„Einladen statt entschuldigen“ kommt im Hook nicht vor, und es wird kein Angebot genannt."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "Ohne Vorwissen könnte es um jede Selbständige gehen, nichts verortet den Satz im Network."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Es ist eine allgemeine Verhaltensbehauptung ohne Moment, Ort, Satz oder sichtbares Detail."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Es gibt weder Geständnis noch Zitat. Der einzige mögliche Gegner ist Sandras eigenes Verhalten, und Sandra selbst darf nie der Gegner sein."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Keines ihrer Wörter (Network, Upline, Eigenbestellung, nebenbei) kommt vor, der Hook passt auf jede Verkäuferin."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Als zugespitzte Beobachtung mit „das hab ich auch erlebt“-Effekt taugt er für Aufmerksamkeit, die auch breiter sein darf."
+      }
+     },
+     "vorschlag": "„Sorry, ich will dich nicht nerven“ – so beginnt deine Nachricht übers Network.",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "23",
@@ -2977,7 +3364,122 @@
     "Niemand muss sich verschulden, um ein Business aufzubauen,",
     "auch nicht für mich."
    ],
-   "caption": "Heute ist Black Friday, und ich mache keinen Rabatt. Ich mache dir auch keinen Druck.\n\nMan kann sich alles selbst beibringen, mit Büchern, Videos und Ausprobieren. Das braucht einfach Zeit. Wer diese Zeit nicht hat, kann eine fertige Strategie übernehmen, das ist alles.\n\nWas mich an der Branche aufregt: Leuten einzureden, sie müssten investieren, und ihnen dann noch zu zeigen, wie sie an Geld kommen. Das ist Bullshit.\n\nWenn du dich hier wiedererkennst, bleib hier."
+   "caption": "Heute ist Black Friday, und ich mache keinen Rabatt. Ich mache dir auch keinen Druck.\n\nMan kann sich alles selbst beibringen, mit Büchern, Videos und Ausprobieren. Das braucht einfach Zeit. Wer diese Zeit nicht hat, kann eine fertige Strategie übernehmen, das ist alles.\n\nWas mich an der Branche aufregt: Leuten einzureden, sie müssten investieren, und ihnen dann noch zu zeigen, wie sie an Geld kommen. Das ist Bullshit.\n\nWenn du dich hier wiedererkennst, bleib hier.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "6a47e422d67e",
+     "bestanden": false,
+     "gruende": [
+      "in_drei_sekunden_klar: „Investier in dich“ kann aus jedem Coaching- oder Selbsthilfe-Kontext stammen, und kein Wort verortet es im Network.",
+      "mikro_szene: Der Hook bringt eine Haltung zu einer Floskel, aber keinen Moment, keinen Ort und keine Uhrzeit.",
+      "nische_network_mama: Weder Network noch Mama noch Eigenbestellung oder Upline kommen vor, deshalb passt der Satz für jede Coaching-Zielgruppe."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Der Druck, trotz knappem Geld noch mehr auszugeben, trifft den Geld-Pain der Network-Mama direkt."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Den Floskel-Überdruss denkt sie selbst, und es ist die Floskel, die alle satt haben."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "„Ich kann es nicht mehr hören“ sagt man genau so zu einer Freundin."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Erst kommt das Zitat, dann die Reaktion darauf. Das „auch wenn“ gehört zum Zitat und dreht keinen Sinn."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook bietet weder eine Lösung noch ein Angebot an."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "„Investier in dich“ kann aus jedem Coaching- oder Selbsthilfe-Kontext stammen, und kein Wort verortet es im Network."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Der Hook bringt eine Haltung zu einer Floskel, aber keinen Moment, keinen Ort und keine Uhrzeit."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Er enthält ein wörtliches Zitat, und die Floskel selbst ist der Gegner."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Weder Network noch Mama noch Eigenbestellung oder Upline kommen vor, deshalb passt der Satz für jede Coaching-Zielgruppe."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Eine Meinung gegen eine verbreitete Floskel ist ein klassischer Aufmerksamkeits-Hot-Take."
+      }
+     },
+     "vorschlag": "Network-Satz, den ich nicht mehr hören kann: „Investier in dich, auch wenn's knapp ist.“ (14 Wörter. Das Wort „Network“ verortet die Welt sofort. Eine Mikro-Szene liefert der Hook weiterhin nicht, dafür braucht es eine belegte Situation: [echte Situation einsetzen].)",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "b27fd4d0f1cf",
+     "bestanden": false,
+     "gruende": [
+      "schmerz: Die Geldsorge ist echt, steht hier aber als Beruhigung und nicht als ihr Geständnis, Zitat oder ihre Szene.",
+      "gedanke_gelesen: Den Satz denkt sie um 23 Uhr nicht selbst, er ist eine allgemeine Aussage von aussen.",
+      "kuechentisch: „Auch nicht für mich“ klingt nach Verkaufsgespräch und nicht nach einem Satz unter Freundinnen.",
+      "bezug_der_zeilen: „Auch nicht für mich“ ist doppeldeutig (für mein Angebot? für mein eigenes Business?) und verwirrt den Sinn des ersten Teils.",
+      "loesung_draussen: Der Hook gibt die Entlastung schon vor und verweist mit „für mich“ indirekt auf Patricias Angebot.",
+      "in_drei_sekunden_klar: Nichts verortet den Hook im Network, er könnte jeden Business-Coach meinen.",
+      "mikro_szene: Es gibt keinen Moment, keinen Ort und keine Uhrzeit, nur eine Behauptung.",
+      "gegner_gestaendnis_oder_zitat: Höchstens ein angedeuteter Gegner (Verschulden), aber er ist weder benannt noch zugespitzt; es gibt kein Geständnis und kein Zitat.",
+      "nische_network_mama: Es fehlen ihre Wörter wie Network, Upline, Eigenbestellung oder Kinder, die Aussage passt auf jede Gründerin.",
+      "passt_zur_rolle: Für Aufmerksamkeit fehlt der klare Hot Take, und der Bezug auf Patricias Angebot gehört nicht in diese Rolle."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": false,
+       "warum": "Die Geldsorge ist echt, steht hier aber als Beruhigung und nicht als ihr Geständnis, Zitat oder ihre Szene."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Den Satz denkt sie um 23 Uhr nicht selbst, er ist eine allgemeine Aussage von aussen."
+      },
+      "kuechentisch": {
+       "ja": false,
+       "warum": "„Auch nicht für mich“ klingt nach Verkaufsgespräch und nicht nach einem Satz unter Freundinnen."
+      },
+      "bezug_der_zeilen": {
+       "ja": false,
+       "warum": "„Auch nicht für mich“ ist doppeldeutig (für mein Angebot? für mein eigenes Business?) und verwirrt den Sinn des ersten Teils."
+      },
+      "loesung_draussen": {
+       "ja": false,
+       "warum": "Der Hook gibt die Entlastung schon vor und verweist mit „für mich“ indirekt auf Patricias Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "Nichts verortet den Hook im Network, er könnte jeden Business-Coach meinen."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Es gibt keinen Moment, keinen Ort und keine Uhrzeit, nur eine Behauptung."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Höchstens ein angedeuteter Gegner (Verschulden), aber er ist weder benannt noch zugespitzt; es gibt kein Geständnis und kein Zitat."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Es fehlen ihre Wörter wie Network, Upline, Eigenbestellung oder Kinder, die Aussage passt auf jede Gründerin."
+      },
+      "passt_zur_rolle": {
+       "ja": false,
+       "warum": "Für Aufmerksamkeit fehlt der klare Hot Take, und der Bezug auf Patricias Angebot gehört nicht in diese Rolle."
+      }
+     },
+     "vorschlag": "„Ich bin halt nicht fürs Business gemacht“: Der teuerste Satz, den Network-Mamas sich sagen.",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "40",
@@ -3000,7 +3502,114 @@
     "Wenn Networkerinnen sich gegenseitig die Leute abwerben,",
     "verlieren am Ende alle."
    ],
-   "caption": "Lautes Abwerben und Konkurrenzkampf, das regt mich an der Branche wirklich auf.\n\nDabei gibt es genug Menschen für alle. Wer ein eigenes Thema hat, muss niemandem etwas wegnehmen, weil die Leute wegen ihr kommen und nicht wegen eines Rabatts.\n\nIch wünsche mir mehr Frauen, die sich gegenseitig weiterempfehlen, statt sich heimlich Teampartnerinnen abzujagen.\n\nWenn du dich hier wiedererkennst, bleib hier."
+   "caption": "Lautes Abwerben und Konkurrenzkampf, das regt mich an der Branche wirklich auf.\n\nDabei gibt es genug Menschen für alle. Wer ein eigenes Thema hat, muss niemandem etwas wegnehmen, weil die Leute wegen ihr kommen und nicht wegen eines Rabatts.\n\nIch wünsche mir mehr Frauen, die sich gegenseitig weiterempfehlen, statt sich heimlich Teampartnerinnen abzujagen.\n\nWenn du dich hier wiedererkennst, bleib hier.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "b8eb150697c7",
+     "bestanden": false,
+     "gruende": [
+      "gedanke_gelesen: „Konkurrenzkampf“ ist ein Sammelbegriff und keine Situation, die sie wiedererkennt, darum fehlt das „krass, wieso weiss die das“.",
+      "mikro_szene: Der Hook ist eine allgemeine Behauptung über ein Phänomen und zeigt keinen konkreten Moment, den man sieht."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Der Kampf unter Networkerinnen um dieselben Leute ist im Network ein echtes, alltägliches Ärgernis, und der Vergleich mit der Absage macht ihn spürbar."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "„Konkurrenzkampf“ ist ein Sammelbegriff und keine Situation, die sie wiedererkennt, darum fehlt das „krass, wieso weiss die das“."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "„Mich nervt … mehr als jede Absage“ sagt man so einer Freundin, auch wenn „Konkurrenzkampf“ etwas steif klingt."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Der Vergleich „mehr als jede Absage“ ist logisch stimmig, und kein Bindewort dreht den Sinn."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Die Zusammenarbeit als Lösung kommt im Hook nicht vor."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": true,
+       "warum": "„Networkerinnen“ und „Absage“ zeigen sofort, dass es um die Network-Welt geht."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Der Hook ist eine allgemeine Behauptung über ein Phänomen und zeigt keinen konkreten Moment, den man sieht."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Der Konkurrenzkampf ist der Gegner, und „Mich nervt“ ist ein Ich-Geständnis."
+      },
+      "nische_network_mama": {
+       "ja": true,
+       "warum": "Der Hook spricht ausdrücklich Networkerinnen und ihren Alltag mit Absagen an."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Eine klare Meinung als Hot Take passt zur Rolle Aufmerksamkeit."
+      }
+     },
+     "vorschlag": "Mich nervt, wenn Networkerinnen sich gegenseitig die Kontakte wegschnappen, mehr als jede Absage.",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "aced21fce2af",
+     "bestanden": false,
+     "gruende": [
+      "schmerz: Der Hook stellt eine allgemeine These über andere auf, statt den Moment zu zeigen, in dem es ihr selbst wehtut, zum Beispiel wenn ihr jemand die Leute abwirbt.",
+      "gedanke_gelesen: Das ist eine Einsicht von aussen, kein Satz, den Sandra um 23 Uhr selbst denkt.",
+      "mikro_szene: Es gibt keinen Moment, keinen Ort und kein sichtbares Detail, nur eine Behauptung."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": false,
+       "warum": "Der Hook stellt eine allgemeine These über andere auf, statt den Moment zu zeigen, in dem es ihr selbst wehtut, zum Beispiel wenn ihr jemand die Leute abwirbt."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Das ist eine Einsicht von aussen, kein Satz, den Sandra um 23 Uhr selbst denkt."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Den Satz könnte man so einer Freundin sagen, er klingt nur etwas belehrend."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Das Wenn-dann ist logisch stimmig, und kein Bindewort dreht den Sinn."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook nennt nur die Folge und lässt Zusammenarbeit und Angebot weg."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": true,
+       "warum": "Das Wort „Networkerinnen“ verortet die Welt sofort."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Es gibt keinen Moment, keinen Ort und kein sichtbares Detail, nur eine Behauptung."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Das gegenseitige Abwerben ist als Verhalten ein klarer Gegner, ohne Firma oder Person zu nennen."
+      },
+      "nische_network_mama": {
+       "ja": true,
+       "warum": "Das Abwerben unter Networkerinnen betrifft genau ihre Welt."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Als Meinung oder Hot Take passt der Hook zur Rolle Aufmerksamkeit."
+      }
+     },
+     "vorschlag": "„Schon wieder schreibt eine Networkerin meine Leute an.“ Und am Ende verlieren wir alle.",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "36",
@@ -3023,7 +3632,122 @@
     "„Bei meiner Firma ist das halt anders“, sagst du,",
     "und es läuft trotzdem nicht."
    ],
-   "caption": "Ein Firmenwechsel fühlt sich nach Neuanfang an. Oft nimmst du aber genau das mit, was vorher nicht funktioniert hat.\n\nWenn die Leute dich nur über ein Produkt kennen, fängst du mit jedem neuen Produkt wieder bei null an. Was bleibt, ist das, wofür man dich kennt, und das gehört dir, egal bei welcher Firma.\n\nBevor du wechselst, schau dir dein Thema an. Mein Nischengenerator schlägt dir drei vor.\n\nKommentier NISCHE, dann schick ich dir den Link."
+   "caption": "Ein Firmenwechsel fühlt sich nach Neuanfang an. Oft nimmst du aber genau das mit, was vorher nicht funktioniert hat.\n\nWenn die Leute dich nur über ein Produkt kennen, fängst du mit jedem neuen Produkt wieder bei null an. Was bleibt, ist das, wofür man dich kennt, und das gehört dir, egal bei welcher Firma.\n\nBevor du wechselst, schau dir dein Thema an. Mein Nischengenerator schlägt dir drei vor.\n\nKommentier NISCHE, dann schick ich dir den Link.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "ae41f719fd66",
+     "bestanden": false,
+     "gruende": [
+      "schmerz: Der Schmerz ist echt, steht aber als Diagnose über sie da („Du überlegst …“) statt als Zitat, Geständnis oder Szene.",
+      "gedanke_gelesen: Der Hook beschreibt ihre Lage von aussen, statt ihren eigenen Satz zu sagen, deshalb fehlt das „wieso weiss die das“.",
+      "in_drei_sekunden_klar: Ohne das Wort Network klingt „die Firma wechseln“ nach einem normalen Jobwechsel, die Welt ist nicht sofort verortet.",
+      "mikro_szene: Es gibt keinen Moment, keinen Ort und keine Uhrzeit, nur eine allgemeine Behauptung über ihre Lage.",
+      "gegner_gestaendnis_oder_zitat: Der Hook enthält kein Zitat und kein Geständnis, und der Denkfehler „neue Firma löst es“ wird nicht als Gegner benannt.",
+      "nische_network_mama: Der Hook gehört nur mit Vorwissen ins Network, kein einziges ihrer Wörter macht die Nische sichtbar."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": false,
+       "warum": "Der Schmerz ist echt, steht aber als Diagnose über sie da („Du überlegst …“) statt als Zitat, Geständnis oder Szene."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Der Hook beschreibt ihre Lage von aussen, statt ihren eigenen Satz zu sagen, deshalb fehlt das „wieso weiss die das“."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "„weil es bei der jetzigen nicht läuft“ ist Alltagssprache, so sagt man das einer Freundin."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Das „weil“ verbindet Grund und Wechselgedanken logisch richtig."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "„Thema statt Firma“ kommt im Hook nicht vor, es steht weder Lösung noch Angebot darin."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "Ohne das Wort Network klingt „die Firma wechseln“ nach einem normalen Jobwechsel, die Welt ist nicht sofort verortet."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Es gibt keinen Moment, keinen Ort und keine Uhrzeit, nur eine allgemeine Behauptung über ihre Lage."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Der Hook enthält kein Zitat und kein Geständnis, und der Denkfehler „neue Firma löst es“ wird nicht als Gegner benannt."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Der Hook gehört nur mit Vorwissen ins Network, kein einziges ihrer Wörter macht die Nische sichtbar."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Das Thema eignet sich für Beziehung, weil der Beitrag eine neue Sicht mitgibt (Thema statt Firma) und sie die Heldin bleibt."
+      }
+     },
+     "vorschlag": "„Bei der nächsten Network-Firma läuft's dann endlich.“ Warum der Gedanke dich festhält.",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "5ffb32e1d483",
+     "bestanden": false,
+     "gruende": [
+      "gedanke_gelesen: Das „sagst du“ hält ihr den eigenen Satz von aussen vor, statt ihren inneren Gedanken auszusprechen, und „das“ bleibt unklar.",
+      "kuechentisch: „Sagst du, und es läuft trotzdem nicht“ klingt nach Vorhaltung und nicht nach einem Satz unter Freundinnen.",
+      "bezug_der_zeilen: Ein Gegensatz für „trotzdem“ fehlt, weil offen bleibt, was „das“ ist und worin die Firma anders sein soll.",
+      "in_drei_sekunden_klar: „Firma“ kann jede Arbeitsstelle sein, das Wort Network fehlt, darum ist die Welt nicht sofort erkennbar.",
+      "mikro_szene: Es ist ein wiederkehrender Satz ohne Moment, Ort oder Uhrzeit.",
+      "nische_network_mama: Ohne das Wort Network oder ein Signal wie Upline oder Eigenbestellung ist die Nische nicht eindeutig.",
+      "passt_zur_rolle: In der Rolle Beziehung soll sie die Heldin sein, hier wird ihr Satz aufgespiesst, was eher zu Aufmerksamkeit passt."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Dass es im Business nicht läuft, obwohl sie an ihre Firma glaubt, ist ein echter Schmerz der Network-Mama."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Das „sagst du“ hält ihr den eigenen Satz von aussen vor, statt ihren inneren Gedanken auszusprechen, und „das“ bleibt unklar."
+      },
+      "kuechentisch": {
+       "ja": false,
+       "warum": "„Sagst du, und es läuft trotzdem nicht“ klingt nach Vorhaltung und nicht nach einem Satz unter Freundinnen."
+      },
+      "bezug_der_zeilen": {
+       "ja": false,
+       "warum": "Ein Gegensatz für „trotzdem“ fehlt, weil offen bleibt, was „das“ ist und worin die Firma anders sein soll."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook nennt keine Lösung und kein Angebot, der Tipp „Thema statt Firma“ fehlt darin."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "„Firma“ kann jede Arbeitsstelle sein, das Wort Network fehlt, darum ist die Welt nicht sofort erkennbar."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Es ist ein wiederkehrender Satz ohne Moment, Ort oder Uhrzeit."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Ein wörtliches Zitat von ihr ist vorhanden."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Ohne das Wort Network oder ein Signal wie Upline oder Eigenbestellung ist die Nische nicht eindeutig."
+      },
+      "passt_zur_rolle": {
+       "ja": false,
+       "warum": "In der Rolle Beziehung soll sie die Heldin sein, hier wird ihr Satz aufgespiesst, was eher zu Aufmerksamkeit passt."
+      }
+     },
+     "vorschlag": "„Meine Firma ist doch anders.“ Warum läuft es dann im Network nicht?",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "37",
@@ -3046,7 +3770,115 @@
     "Du rechnest lieber nicht nach,",
     "was dich dein Network bisher gekostet hat."
    ],
-   "caption": "Ich kenne das, ich habe selbst Produkte für über 500 Franken weggeworfen, die ich nur für die Provision gekauft hatte.\n\nWas du schon ausgegeben hast, holst du nicht zurück, indem du einfach so weitermachst. Die ehrliche Frage ist eine andere: Willst du aufhören, oder willst du es anders machen?\n\nBeides ist in Ordnung. Nur so weiter wie bisher ist keine Antwort.\n\nSchick das einer Freundin, die sich diese Frage gerade stellt."
+   "caption": "Ich kenne das, ich habe selbst Produkte für über 500 Franken weggeworfen, die ich nur für die Provision gekauft hatte.\n\nWas du schon ausgegeben hast, holst du nicht zurück, indem du einfach so weitermachst. Die ehrliche Frage ist eine andere: Willst du aufhören, oder willst du es anders machen?\n\nBeides ist in Ordnung. Nur so weiter wie bisher ist keine Antwort.\n\nSchick das einer Freundin, die sich diese Frage gerade stellt.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "f704c690d67c",
+     "bestanden": false,
+     "gruende": [
+      "in_drei_sekunden_klar: „Geld reingesteckt“ kann Aktien, ein Haus oder eine Beziehung meinen, nichts verortet den Satz im Network.",
+      "mikro_szene: Es gibt keinen Moment, keinen Ort und keine Uhrzeit, nur eine allgemeine Feststellung über ein Verhaltensmuster.",
+      "nische_network_mama: Kein Wort wie Eigenbestellung, Upline oder Network signalisiert die Network-Mama, der Satz passt auf jede Fehlinvestition."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Das Weitermachen wegen des schon investierten Geldes trifft Sandras Kern-Pain: Zeit und Geld in etwas zu stecken, das wie ein teures Hobby aussieht."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Der Satz in Anführungszeichen ist wörtlich ihr innerer Monolog, den sie sich kaum laut zu sagen traut."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "So würde man es einer Freundin ehrlich sagen, ohne Fachwörter und ohne Lehrerton."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Das „obwohl“ steht richtig: Weitermachen und „nichts läuft“ sind ein echter Gegensatz, und „darum“ verknüpft sauber das Zitat als Grund."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook nennt keinen Ausweg, kein Angebot und kein Werkzeug."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "„Geld reingesteckt“ kann Aktien, ein Haus oder eine Beziehung meinen, nichts verortet den Satz im Network."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Es gibt keinen Moment, keinen Ort und keine Uhrzeit, nur eine allgemeine Feststellung über ein Verhaltensmuster."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Der Hook bringt ein wörtliches Zitat aus ihrem inneren Monolog und dazu einen Denkfehler als Gegner."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Kein Wort wie Eigenbestellung, Upline oder Network signalisiert die Network-Mama, der Satz passt auf jede Fehlinvestition."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Der Hook bietet eine neue Sicht auf ihr Verhalten und legt die Wahl „aufhören oder anders machen“ an, ohne Patricia als Beweis vorzustellen."
+      }
+     },
+     "vorschlag": "„Ich hab schon so viel in die Eigenbestellung gesteckt.“ Darum hörst du nicht auf.",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "e742bac7c4a2",
+     "bestanden": false,
+     "gruende": [
+      "mikro_szene: Der Hook ist eine allgemeine Behauptung über ihr Verhalten, ohne Moment, Ort oder Uhrzeit.",
+      "gegner_gestaendnis_oder_zitat: Es ist eine Du-Diagnose, weder Ich-Geständnis noch wörtliches Zitat, und der einzige mögliche Gegner wäre Sandra selbst, was verboten ist.",
+      "passt_zur_rolle: Der ertappende Du-Ton wirkt wie ein Hot Take für Aufmerksamkeit; in einer Beziehung-Rolle ist sie die Heldin, hier wird sie eher vorgeführt."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Das verdrängte Geld für Eigenbestellung und Network trifft Sandras Kern-Pain, das teure Hobby, auch wenn er hier als Du-Diagnose dasteht."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Das bewusste Nicht-Nachrechnen ist ein Gedanke, den sie kennt und kaum jemandem zugibt."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Unter Freundinnen sagt man das so, direkt und etwas frech, ohne Fachwort."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Es ist ein einziger Satz ohne Bindewort, das den Sinn drehen könnte."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Es gibt weder Lösung noch Angebot, nur die offene Frage nach den Kosten."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": true,
+       "warum": "„Dein Network“ verortet die Welt sofort im Network Marketing."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Der Hook ist eine allgemeine Behauptung über ihr Verhalten, ohne Moment, Ort oder Uhrzeit."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Es ist eine Du-Diagnose, weder Ich-Geständnis noch wörtliches Zitat, und der einzige mögliche Gegner wäre Sandra selbst, was verboten ist."
+      },
+      "nische_network_mama": {
+       "ja": true,
+       "warum": "Die Kosten des eigenen Networks betreffen genau die Network-Mama."
+      },
+      "passt_zur_rolle": {
+       "ja": false,
+       "warum": "Der ertappende Du-Ton wirkt wie ein Hot Take für Aufmerksamkeit; in einer Beziehung-Rolle ist sie die Heldin, hier wird sie eher vorgeführt."
+      }
+     },
+     "vorschlag": "„Ich rechne lieber nicht nach, was mich mein Network bisher gekostet hat.“ (Zitat ihres inneren Monologs, 12 Wörter; eine Szene dazu nur mit [echte Situation einsetzen])",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "32",
@@ -3069,7 +3901,121 @@
     "Seit Jahren sagst du,",
     "dass es nächstes Jahr endlich richtig losgeht."
    ],
-   "caption": "Der Dezember ist da, und mit ihm dieser Satz.\n\nEin neues Jahr ändert daran nichts. Was etwas ändert, ist ein erster Schritt, der so klein ist, dass du ihn diese Woche machen kannst. Bei mir war das ein Thema, für das man mich kennen soll.\n\nWenn du deins noch suchst, nimm dir zehn Minuten dafür, nicht bis Januar. Mein Nischengenerator schlägt dir drei Themen vor.\n\nKommentier NISCHE, dann schick ich dir den Link."
+   "caption": "Der Dezember ist da, und mit ihm dieser Satz.\n\nEin neues Jahr ändert daran nichts. Was etwas ändert, ist ein erster Schritt, der so klein ist, dass du ihn diese Woche machen kannst. Bei mir war das ein Thema, für das man mich kennen soll.\n\nWenn du deins noch suchst, nimm dir zehn Minuten dafür, nicht bis Januar. Mein Nischengenerator schlägt dir drei Themen vor.\n\nKommentier NISCHE, dann schick ich dir den Link.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "03eeca7c6a4b",
+     "bestanden": false,
+     "gruende": [
+      "gedanke_gelesen: „Nächstes Jahr wird alles anders“ sagt jede und jeder an Silvester, es ist nicht ihr eigener Gedanke um 23 Uhr.",
+      "in_drei_sekunden_klar: Es könnte um Diät, Sport oder Job gehen, nichts verortet den Hook im Network.",
+      "mikro_szene: Es gibt keinen Ort, keine Uhrzeit und keinen Moment, nur eine allgemeine Floskel.",
+      "nische_network_mama: Nichts im Hook ist spezifisch für Network-Mamas.",
+      "passt_zur_rolle: In der Rolle Beziehung ist sie die Heldin und Patricia die Begleiterin. Das vorwurfsvolle „Das hast du auch gesagt“ macht Patricia zur Kritikerin statt zur Begleiterin."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Er trifft den echten Schmerz, dass sich trotz guter Vorsätze Jahr für Jahr nichts bewegt."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "„Nächstes Jahr wird alles anders“ sagt jede und jeder an Silvester, es ist nicht ihr eigener Gedanke um 23 Uhr."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "So neckt man eine Freundin am Tisch, auch wenn es etwas stichelt."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Zitat und Konter hängen logisch zusammen, kein Bindewort dreht den Sinn."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook nennt keine Lösung und kein Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "Es könnte um Diät, Sport oder Job gehen, nichts verortet den Hook im Network."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Es gibt keinen Ort, keine Uhrzeit und keinen Moment, nur eine allgemeine Floskel."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Der erste Satz ist ein Zitat ihres eigenen Vorsatzes."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Nichts im Hook ist spezifisch für Network-Mamas."
+      },
+      "passt_zur_rolle": {
+       "ja": false,
+       "warum": "In der Rolle Beziehung ist sie die Heldin und Patricia die Begleiterin. Das vorwurfsvolle „Das hast du auch gesagt“ macht Patricia zur Kritikerin statt zur Begleiterin."
+      }
+     },
+     "vorschlag": "„Nächstes Jahr wird mein Network-Business anders.“ Das habe ich mir letztes Jahr auch versprochen.",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "4d346924a8bb",
+     "bestanden": false,
+     "gruende": [
+      "gedanke_gelesen: Der Satz ist ein allgemeiner Vorwurf, der auf Diät, Sport oder jedes Vorhaben passt; das Ertappt-Gefühl in ihrer eigenen Welt fehlt.",
+      "kuechentisch: „Seit Jahren sagst du …“ klingt am Küchentisch wie ein Vorwurf und wertet ab, was Säule 4 ausdrücklich verbietet.",
+      "in_drei_sekunden_klar: Nichts verortet den Hook im Network; ohne Vorwissen bleibt offen, was „losgehen“ soll.",
+      "mikro_szene: „Seit Jahren“ ist eine Zeitspanne und eine Behauptung, kein Moment, kein Ort und keine Uhrzeit.",
+      "gegner_gestaendnis_oder_zitat: Es gibt nur indirekte Rede statt eines wörtlichen Zitats, und als Gegner steht Sandra selbst da, was verboten ist.",
+      "nische_network_mama: Kein Wort aus ihrer Welt wie Network, Upline oder Eigenbestellung; der Hook ist austauschbar.",
+      "passt_zur_rolle: Beziehung braucht eine neue Sicht mit Sandra als Heldin; hier steht Patricia als Richterin über ihr statt als Begleiterin."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Das jahrelange Aufschieben ohne Fortschritt ist ein echter Schmerz der Network-Mama im Hobbymodus, auch wenn er hier als Diagnose statt als Szene dasteht."
+      },
+      "gedanke_gelesen": {
+       "ja": false,
+       "warum": "Der Satz ist ein allgemeiner Vorwurf, der auf Diät, Sport oder jedes Vorhaben passt; das Ertappt-Gefühl in ihrer eigenen Welt fehlt."
+      },
+      "kuechentisch": {
+       "ja": false,
+       "warum": "„Seit Jahren sagst du …“ klingt am Küchentisch wie ein Vorwurf und wertet ab, was Säule 4 ausdrücklich verbietet."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Es ist ein einziger Satz ohne Bindewort, das den Sinn drehen könnte."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook enthält weder eine Lösung noch ein Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "Nichts verortet den Hook im Network; ohne Vorwissen bleibt offen, was „losgehen“ soll."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "„Seit Jahren“ ist eine Zeitspanne und eine Behauptung, kein Moment, kein Ort und keine Uhrzeit."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Es gibt nur indirekte Rede statt eines wörtlichen Zitats, und als Gegner steht Sandra selbst da, was verboten ist."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Kein Wort aus ihrer Welt wie Network, Upline oder Eigenbestellung; der Hook ist austauschbar."
+      },
+      "passt_zur_rolle": {
+       "ja": false,
+       "warum": "Beziehung braucht eine neue Sicht mit Sandra als Heldin; hier steht Patricia als Richterin über ihr statt als Begleiterin."
+      }
+     },
+     "vorschlag": "„Nächstes Jahr wird mein Network-Jahr“ – warum dieser Satz dich jedes Jahr festhält.",
+     "modell": "claude-opus-5-5"
+    }
+   }
   }
  ]
 }

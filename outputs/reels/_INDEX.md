@@ -42,6 +42,8 @@ Auto-Index aller Files in `outputs/reels/`. Siehe [[_MOCs/MOC-Content-Engine]] f
 - [[2026-09-drehkarte-doterra]]
 - [[2026-10-27-mentoring-sprechreel-vier-kinder-frage]]
 - [[2026-10-31-radar-reels]]
+- [[2026-11-sprechreels]]
+- [[2026-11-testreels]]
 - [[2026-KW17-doterra-hot-take-salat-reicht-nicht]]
 - [[2026-KW17-doterra-koerper-schreit]]
 - [[2026-KW17-doterra-pov-7-min-abendroutine]]
