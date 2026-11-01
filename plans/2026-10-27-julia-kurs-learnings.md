@@ -225,3 +225,5 @@ Je Schritt genau ein Skill. Die Landkarte zeigt, welche es schon gibt
 
 
 ✅ **29.10.: die 5 MAU-Videos** mit den `h`-Schlüsseln aus den Lektionen (Feld `schluessel` in `transkripte-abgleich.json`) lokal abgeschrieben, 71 Punkte in `minikurse-umsatzbooster.md` (26 Lektionen), in 12 Themenbücher nachgetragen, Bibliothek neu hochgeladen (`_index` V4).
+
+✅ **01.11.2026 Elevate:** LIVE Calls + Experten Calls abgeschrieben (Vimeo-Untertitel, Referer app.juliatrost.de), je 32 Calls als Learnings (7 Helfer-Teile in `learnings/_teile/`), in alle 13 Themenbücher nachgetragen, Bibliothek im Cockpit neu hochgeladen (44 Dokumente). ARIA 2.0 deckt sich mit ARIA. Offen: 19 Calls mit Whisper (10 LIVE, 9 Experten) → danach `_AUFTRAG-ELEVATE.md` für einen Teil 5 (LIVE) bzw. Teil 4 (Experten), Nachtrag in die Bücher, Bibliothek neu.
