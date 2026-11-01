@@ -64,7 +64,7 @@ tags: [plan, planung, mentoring, doterra]
 |---|---|---|
 | ✅ Patricia | Bauplan freigegeben 01.11.: Name „Neustart 2027“, Stichwort NEUSTART, 90 Min, MBA zu 997 ohne Workshop-Preis (offen nur noch Ort der Aufzeichnung) | 01.11. |
 | Patricia | Entscheiden: 1:1 Postingplan verschieben (Pitch Januar?) — sonst liegt er auf Workshop-Einladung und MBA-Pitch | So 15.11. |
-| Claude | WP-Seiten `/neustart-2027/` + `/neustart-2027-danke/` als Entwurf · Mockup als webp · AC-Formular, Tag „0€ Jahresplanung“, Bestätigungsmail, Mails A1–A3 + E1–E5 als Entwürfe | Fr 20.11. |
+| ✅ Claude | Als Entwurf angelegt 01.11.: WP 4469/4470/4473 (mit `/neustart-2027-bestaetigt/`) · Mockup Medium 4468 · AC-Tag 109 · Formular 76 · Kampagnen 899–906. Bestätigungsmail folgt, sobald Formular 76 im Editor einmal gespeichert ist | 01.11. |
 | Patricia | Zoom 17.12. 09:00 anlegen, Link an Claude · Jahresplaner-Seite über das Share-Menü öffentlich teilen | Fr 20.11. |
 | Patricia + Claude | Automation „0€ Jahresplanung“, ManyChat-Flow NEUSTART, Testanmeldung von A bis Z | Mo 23.11. |
 | Patricia | **Anwärmen** in Storys (Rückblick-Fragen, Umfrage „planst du 2027 schon?“) · Feed-Reel 1 ohne Stichwort | 23.–29.11. |

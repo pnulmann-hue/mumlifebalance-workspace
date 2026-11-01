@@ -951,7 +951,8 @@
       "preis_chf": 0,
       "traffic_quellen": {
         "manychat_keyword": "NEUSTART",
-        "wordpress_landing": "https://mumlifebalance.ch/neustart-2027/"
+        "wordpress_landing": "https://mumlifebalance.ch/neustart-2027/",
+        "bestaetigt_seite": "https://mumlifebalance.ch/neustart-2027-bestaetigt/"
       },
       "danke_seite": "https://mumlifebalance.ch/neustart-2027-danke/",
       "produkttreppe_anschluss": "→ Mum Business Academy 997 (/mba/), Pitch 17.–20.12.",
@@ -964,13 +965,30 @@
       "paket": "outputs/produkte/jahresplanung/angebot/",
       "ac_integration": {
         "eintrag_tag_name": "0€ Jahresplanung",
-        "eintrag_tag_id": null,
-        "formular": null,
-        "automation": "0€ Jahresplanung (noch anzulegen)",
-        "liste": 2
+        "eintrag_tag_id": 109,
+        "formular": 76,
+        "automation": "0€ Jahresplanung (von Patricia zu bauen)",
+        "liste": 2,
+        "kampagnen_entwuerfe": {
+          "A1": 899,
+          "A2": 900,
+          "A3": 901,
+          "E1": 902,
+          "E2": 903,
+          "E3": 904,
+          "E4": 905,
+          "E5": 906
+        }
       },
       "problem": "Sie plant ihr Business von Monat zu Monat, Angebote fallen in die Ferien, nach einem Angebot kommt ein Loch.",
-      "transformation": "Ihr Jahr 2027 auf einem Blatt: Familie zuerst, ein Fokus je Monat, Lücken und Ziel gerechnet, der Januar steht."
+      "transformation": "Ihr Jahr 2027 auf einem Blatt: Familie zuerst, ein Fokus je Monat, Lücken und Ziel gerechnet, der Januar steht.",
+      "wp_seiten": {
+        "anmeldung": 4469,
+        "danke": 4470,
+        "bestaetigt": 4473,
+        "mockup_medium": 4468,
+        "status": "Entwurf"
+      }
     }
   ],
   "produkttreppe_mentoring": [

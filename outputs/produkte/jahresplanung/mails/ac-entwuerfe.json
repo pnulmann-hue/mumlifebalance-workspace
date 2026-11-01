@@ -1,0 +1,42 @@
+{
+ "A1-einladung.html": {
+  "kampagne": 899,
+  "nachricht": "748",
+  "name": "Neustart 2027 A1 · Einladung (Mo 30.11.)"
+ },
+ "A2-leben-zuerst.html": {
+  "kampagne": 900,
+  "nachricht": "749",
+  "name": "Neustart 2027 A2 · Leben zuerst (Mo 7.12.)"
+ },
+ "A3-uebermorgen.html": {
+  "kampagne": 901,
+  "nachricht": "750",
+  "name": "Neustart 2027 A3 · Übermorgen (Di 15.12.)"
+ },
+ "E1-vorbereitung.html": {
+  "kampagne": 902,
+  "nachricht": "751",
+  "name": "Neustart 2027 E1 · Vorbereitung (Mi 16.12. 18:00)"
+ },
+ "E2-in-einer-stunde.html": {
+  "kampagne": 903,
+  "nachricht": "752",
+  "name": "Neustart 2027 E2 · In einer Stunde (Do 17.12. 08:00)"
+ },
+ "E3-aufzeichnung-mba.html": {
+  "kampagne": 904,
+  "nachricht": "753",
+  "name": "Neustart 2027 E3 · Aufzeichnung + MBA (Do 17.12. abends)"
+ },
+ "E4-erst-mal-allein.html": {
+  "kampagne": 905,
+  "nachricht": "754",
+  "name": "Neustart 2027 E4 · Erst mal allein (Fr 18.12.)"
+ },
+ "E5-vor-den-ferien.html": {
+  "kampagne": 906,
+  "nachricht": "755",
+  "name": "Neustart 2027 E5 · Vor den Ferien (So 20.12.)"
+ }
+}

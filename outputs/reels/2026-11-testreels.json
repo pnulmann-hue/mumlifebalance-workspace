@@ -342,6 +342,59 @@
      },
      "vorschlag": "Drei Jahre nur Produkte gepostet im Network – jeden Monat wieder bei null.",
      "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "b4987d38ff80",
+     "bestanden": false,
+     "gruende": [
+      "schmerz: Der Hook nennt nur ein Verhalten; was sie das gekostet hat (keine Reaktion, unsichtbar, kein Ergebnis), fehlt, also tut es nicht weh.",
+      "in_drei_sekunden_klar: „Was meine Firma mir geschickt hat“ könnte auch eine Angestellte im Social-Media-Job sein; das Wort Network fehlt, die Welt ist ohne Vorwissen nicht klar.",
+      "mikro_szene: „Drei Jahre lang“ ist eine Zeitspanne und eine Zusammenfassung, kein einzelner Moment mit Ort oder Uhrzeit."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": false,
+       "warum": "Der Hook nennt nur ein Verhalten; was sie das gekostet hat (keine Reaktion, unsichtbar, kein Ergebnis), fehlt, also tut es nicht weh."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Viele Network-Mamas teilen genau die Firmenvorlagen und erkennen sich sofort darin wieder."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Ein schlichter, ehrlicher Satz, so erzählt man es einer Freundin."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Ein einziger Satz ohne Bindewort, das einen falschen Gegensatz aufbaut."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Neun-Beiträge-Test und jedes Angebot fehlen im Hook."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "„Was meine Firma mir geschickt hat“ könnte auch eine Angestellte im Social-Media-Job sein; das Wort Network fehlt, die Welt ist ohne Vorwissen nicht klar."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "„Drei Jahre lang“ ist eine Zeitspanne und eine Zusammenfassung, kein einzelner Moment mit Ort oder Uhrzeit."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Geständnis in Ich-Form mit Copy-Paste als stillem Gegner; die drei Jahre passen zu 2018 bis 2021, das Nur-Firmenposts-Detail sollte aber als (nur wenn's stimmt) markiert sein."
+      },
+      "nische_network_mama": {
+       "ja": true,
+       "warum": "Thema ist Säule 1, Personal Brand statt Copy-Paste, der Kern der Network-Mama."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Patricias eigene ehrliche Geschichte aus der Network-Zeit passt zur Rolle Vertrauen."
+      }
+     },
+     "vorschlag": "Drei Jahre im Network habe ich nur Firmen-Posts geteilt. Wo war da eigentlich ich?",
+     "modell": "claude-opus-5-5"
     }
    }
   },
@@ -366,7 +419,113 @@
    ],
    "rolle": "Aufmerksamkeit",
    "mit": "Inspiration: Dein Einkommen muss nicht an deinem eigenen Lager hängen.",
-   "caption": "In meinem ersten Network gab es etwas mehr Provision, wenn ich selbst eine bestimmte Menge eingekauft habe. Also habe ich eingekauft, Monat für Monat, und mein Lager ist gewachsen.\n\nIrgendwann war klar, dass ich mit den Bädern und Cremes bis zur Pension ausgekommen wäre. Den grössten Teil habe ich verschenkt, und den Rest, über 500 Franken, habe ich weggeworfen. Das hat weh getan, und ehrlich gesagt mehr wegen der Jahre als wegen des Geldes.\n\nWenn bei dir auch so ein Schrank steht und du dich hier wiedererkennst, bleib hier. Auf diesem Profil geht es darum, wie du neben deinem Network etwas Eigenes aufbaust, für das du kein Lager brauchst."
+   "caption": "In meinem ersten Network gab es etwas mehr Provision, wenn ich selbst eine bestimmte Menge eingekauft habe. Also habe ich eingekauft, Monat für Monat, und mein Lager ist gewachsen.\n\nIrgendwann war klar, dass ich mit den Bädern und Cremes bis zur Pension ausgekommen wäre. Den grössten Teil habe ich verschenkt, und den Rest, über 500 Franken, habe ich weggeworfen. Das hat weh getan, und ehrlich gesagt mehr wegen der Jahre als wegen des Geldes.\n\nWenn bei dir auch so ein Schrank steht und du dich hier wiedererkennst, bleib hier. Auf diesem Profil geht es darum, wie du neben deinem Network etwas Eigenes aufbaust, für das du kein Lager brauchst.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "42eacac64d41",
+     "bestanden": false,
+     "gruende": [
+      "mikro_szene: Es ist eine Bilanz über Zeit ohne Moment, Ort oder Uhrzeit; der Text beschreibt keinen einzelnen sichtbaren Augenblick.",
+      "gegner_gestaendnis_oder_zitat: Formal ist es ein Geständnis, aber die 500 Franken und das Wegwerfen gehören nicht zu Patricias belegten Eckdaten und stehen ohne Vermerk „(nur wenn's stimmt)“ da; Zahlen nur belegt."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Die Eigenbestellung, die nur der Provision wegen gekauft wird und dann ungenutzt bleibt, ist Sandras Kern-Pain: Geld fliesst in ein Hobby, das wie ein Business aussehen soll."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Viele bestellen heimlich für die Qualifikation und schämen sich dafür; ausgesprochen trifft das ins Schwarze."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Zwei kurze, gesprochene Sätze ohne Fachjargon, so erzählt man es einer Freundin."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Es gibt kein Bindewort, und Zeile 2 erklärt Zeile 1 schlüssig: weggeworfen, weil nur für die Provision gekauft."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Weder Lösung noch Angebot noch Werkzeug stehen im Hook."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": true,
+       "warum": "„Network-Produkte“ und „Provision“ verorten die Welt sofort, auch ohne Vorwissen."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Es ist eine Bilanz über Zeit ohne Moment, Ort oder Uhrzeit; der Text beschreibt keinen einzelnen sichtbaren Augenblick."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Formal ist es ein Geständnis, aber die 500 Franken und das Wegwerfen gehören nicht zu Patricias belegten Eckdaten und stehen ohne Vermerk „(nur wenn's stimmt)“ da; Zahlen nur belegt."
+      },
+      "nische_network_mama": {
+       "ja": true,
+       "warum": "Eigenbestellung, Provision und Network gehören klar in die Welt der Network-Mama."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Ein schonungsloses „das hab ich auch erlebt“-Geständnis holt neue Augen und passt damit zur Rolle Aufmerksamkeit."
+      }
+     },
+     "vorschlag": "Über 500 Franken Network-Produkte in den Abfall. Bestellt nur für die Provision. (nur wenn's stimmt – Zahl von Patricia bestätigen lassen; für die Mikroszene den Moment des Wegwerfens als [echte Situation einsetzen] im B-Roll zeigen)",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "b1f7bf10526b",
+     "bestanden": false,
+     "gruende": [
+      "in_drei_sekunden_klar: „Provision“ und „gekauft“ deuten aufs Network hin, ohne „Network“ oder „Eigenbestellung“ könnte es aber auch Affiliate oder Verkauf sein. Im Zweifel also Nein.",
+      "mikro_szene: „Jeden Monat“ beschreibt ein wiederkehrendes Muster, keinen einzelnen Moment mit Ort oder Uhrzeit."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Die Eigenbestellung für die Provision, die mehr kostet als sie bringt, ist Sandras Kern-Pain aus Zeit, Herz und Geld."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Den heimlichen Gedanken, mehr zu bestellen als die Familie braucht, spricht kaum jemand aus, und genau den trifft der Satz."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Der Satz ist schlicht und ehrlich, so gesteht man es einer Freundin."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Es ist ein einziger Satz ohne kippendes Bindewort, Zweck und Handlung passen logisch zusammen."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook nennt weder eine Lösung noch ein Angebot, nur das Geständnis."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "„Provision“ und „gekauft“ deuten aufs Network hin, ohne „Network“ oder „Eigenbestellung“ könnte es aber auch Affiliate oder Verkauf sein. Im Zweifel also Nein."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "„Jeden Monat“ beschreibt ein wiederkehrendes Muster, keinen einzelnen Moment mit Ort oder Uhrzeit."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Es ist ein klares Geständnis in Ich-Form. Es steht aber nicht in den belegten Eckdaten und braucht deshalb den Vermerk „(nur wenn's stimmt)“."
+      },
+      "nische_network_mama": {
+       "ja": true,
+       "warum": "Eigenbestellung für die Provision ist ein typisches Network-Mama-Thema."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Ein „das hab ich auch erlebt“-Geständnis holt neue Augen und passt damit zur Rolle Aufmerksamkeit."
+      }
+     },
+     "vorschlag": "Meine Eigenbestellung im Network war jeden Monat grösser, als wir brauchten. Wegen der Provision. (nur wenn's stimmt) – Für die Mikro-Szene einen belegten Moment einsetzen, z. B. [echte Situation einsetzen: der Abend, an dem sie die Bestellung abschickte].",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "06",
@@ -395,111 +554,111 @@
      "fingerabdruck": "04efac2c8dab",
      "bestanden": false,
      "gruende": [
-      "schmerz: Rollläden und Hitze im Büro sind kein Schmerz, den Sandra im Network spürt; weder die Eigenbestellung noch das Ölhobby noch die Abhängigkeit kommen vor.",
-      "gedanke_gelesen: Den Satz denkt keine Network-Mama um 23 Uhr, er beschreibt nur Patricias Raumklima.",
-      "kuechentisch: Der verschachtelte Satz mit dem schiefen „damit ich nicht schon klatschnass war“ klingt holprig und nicht wie ein Satz zu einer Freundin.",
-      "bezug_der_zeilen: „Damit … nicht schon … war“ passt zeitlich und logisch nicht zusammen, und das „schon“ lässt offen, wovor genau sie sich schützt.",
-      "in_drei_sekunden_klar: Wer Patricia nicht kennt, sieht ein Büro und Hitze, aber nichts, was auf Network oder ein eigenes Business hinweist.",
-      "nische_network_mama: Weder Network noch Mama-Alltag noch eigenes Geld werden angesprochen.",
-      "passt_zur_rolle: Die Szene erzählt nichts über Patricias Weg und die Dauer, die der Beitrag als Vertrauensbeweis mitgeben soll."
+      "schmerz: Hitze und Schwitzen im Büro sind kein Schmerz der Network-Mama; Sandras Abend mit Eigenbestellung, Ölhobby und Planlosigkeit kommt nicht vor.",
+      "gedanke_gelesen: Diesen Satz denkt Sandra um 23 Uhr nicht, es ist Patricias Detail ohne Bezug zu ihrem Kopf.",
+      "kuechentisch: Die Satzkonstruktion „damit ich nicht schon klatschnass war“ ist holprig und hat einen Zeitfehler, so spricht niemand am Küchentisch.",
+      "bezug_der_zeilen: „damit“ und „schon“ passen zeitlich und logisch nicht zusammen (Präteritum nach Präsens-Szene, „schon“ ohne Bezugspunkt).",
+      "in_drei_sekunden_klar: Ohne Vorwissen ist nicht erkennbar, dass es um Network oder ein eigenes Standbein geht; es könnte ein Hitzewetter-Clip sein.",
+      "gegner_gestaendnis_oder_zitat: Die Ich-Form erzählt nur eine Alltagshandlung ohne Eingeständnis, ohne Gegner und ohne Zitat, und die Szene ist nicht belegt.",
+      "nische_network_mama: Nichts im Hook verweist auf Network, Mama-Alltag oder eigenes Geld.",
+      "passt_zur_rolle: Vertrauen soll Patricias ehrliche Weg-Geschichte tragen; der Hook führt weder zum Weg noch zur Dauer, die der Beitrag mitgibt."
      ],
      "antworten": {
       "schmerz": {
        "ja": false,
-       "warum": "Rollläden und Hitze im Büro sind kein Schmerz, den Sandra im Network spürt; weder die Eigenbestellung noch das Ölhobby noch die Abhängigkeit kommen vor."
+       "warum": "Hitze und Schwitzen im Büro sind kein Schmerz der Network-Mama; Sandras Abend mit Eigenbestellung, Ölhobby und Planlosigkeit kommt nicht vor."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "Den Satz denkt keine Network-Mama um 23 Uhr, er beschreibt nur Patricias Raumklima."
+       "warum": "Diesen Satz denkt Sandra um 23 Uhr nicht, es ist Patricias Detail ohne Bezug zu ihrem Kopf."
       },
       "kuechentisch": {
        "ja": false,
-       "warum": "Der verschachtelte Satz mit dem schiefen „damit ich nicht schon klatschnass war“ klingt holprig und nicht wie ein Satz zu einer Freundin."
+       "warum": "Die Satzkonstruktion „damit ich nicht schon klatschnass war“ ist holprig und hat einen Zeitfehler, so spricht niemand am Küchentisch."
       },
       "bezug_der_zeilen": {
        "ja": false,
-       "warum": "„Damit … nicht schon … war“ passt zeitlich und logisch nicht zusammen, und das „schon“ lässt offen, wovor genau sie sich schützt."
+       "warum": "„damit“ und „schon“ passen zeitlich und logisch nicht zusammen (Präteritum nach Präsens-Szene, „schon“ ohne Bezugspunkt)."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Im Hook stehen weder eine Lösung noch ein Angebot."
+       "warum": "Es steht weder eine Lösung noch ein Angebot im Hook."
       },
       "in_drei_sekunden_klar": {
        "ja": false,
-       "warum": "Wer Patricia nicht kennt, sieht ein Büro und Hitze, aber nichts, was auf Network oder ein eigenes Business hinweist."
+       "warum": "Ohne Vorwissen ist nicht erkennbar, dass es um Network oder ein eigenes Standbein geht; es könnte ein Hitzewetter-Clip sein."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Mit Uhrzeit, Ort und sichtbarem Detail ist das ein konkreter Moment."
+       "warum": "Uhrzeit, Ort und eine sichtbare Handlung (Rollläden runter) machen einen konkreten Moment."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": true,
-       "warum": "Es ist ein Geständnis in Ich-Form mit sichtbarem Detail, ob es belegt ist, bleibt allerdings offen."
+       "ja": false,
+       "warum": "Die Ich-Form erzählt nur eine Alltagshandlung ohne Eingeständnis, ohne Gegner und ohne Zitat, und die Szene ist nicht belegt."
       },
       "nische_network_mama": {
        "ja": false,
-       "warum": "Weder Network noch Mama-Alltag noch eigenes Geld werden angesprochen."
+       "warum": "Nichts im Hook verweist auf Network, Mama-Alltag oder eigenes Geld."
       },
       "passt_zur_rolle": {
        "ja": false,
-       "warum": "Die Szene erzählt nichts über Patricias Weg und die Dauer, die der Beitrag als Vertrauensbeweis mitgeben soll."
+       "warum": "Vertrauen soll Patricias ehrliche Weg-Geschichte tragen; der Hook führt weder zum Weg noch zur Dauer, die der Beitrag mitgibt."
       }
      },
-     "vorschlag": "Wie lange es vom Network-Hobby bis zum eigenen Geld bei mir wirklich gedauert hat.",
+     "vorschlag": "Um acht im Büro, Rollläden runter. Keiner sagt, wie lange der Network-Weg dauert.",
      "modell": "claude-opus-5-5"
     },
     "b": {
      "fingerabdruck": "d8065f71b647",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: Der Satz ist eine rückblickende Zusammenfassung und kein Satz, den Sandra um 23 Uhr selbst denkt.",
-      "in_drei_sekunden_klar: „Mein Network“ allein kann auch ein berufliches Netzwerk meinen, deshalb ist Network Marketing ohne Vorwissen nicht sofort klar.",
-      "mikro_szene: Der Hook beschreibt einen Dauerzustand und keinen einzelnen Moment mit Ort oder Uhrzeit.",
-      "gegner_gestaendnis_oder_zitat: Die Ich-Form ist da, aber zum Geständnis fehlen ein konkreter Moment und ein sichtbares Detail, und einen Gegner oder ein Zitat gibt es auch nicht."
+      "gedanke_gelesen: Der Satz ist eine allgemeine Zusammenfassung und trifft keinen Satz, den Sandra um 23 Uhr wörtlich selbst denkt.",
+      "mikro_szene: Es gibt keinen Moment, keinen Ort und keine Uhrzeit, nur eine Bilanz über eine lange Phase.",
+      "gegner_gestaendnis_oder_zitat: Die Ich-Form allein reicht nicht: Ein Geständnis braucht einen konkreten Moment mit sichtbarem Detail, und die Bürozeiten sind nicht als belegt markiert."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Das Network passt nur in die Restzeit zwischen Job, Kindern und Haushalt, und diesen Zeitmangel kennt jede Network-Mama mit Pensum."
+       "warum": "Die fehlende Zeit zwischen Job, Kindern und Network kennt jede Network-Mama mit Pensum."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "Der Satz ist eine rückblickende Zusammenfassung und kein Satz, den Sandra um 23 Uhr selbst denkt."
+       "warum": "Der Satz ist eine allgemeine Zusammenfassung und trifft keinen Satz, den Sandra um 23 Uhr wörtlich selbst denkt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Den Satz könnte man so einer Freundin erzählen, auch wenn die Dreier-Aufzählung leicht konstruiert klingt."
+       "warum": "Der Satz ist etwas sachlich, so könnte man ihn einer Freundin aber erzählen."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Es gibt kein Bindewort, das den Sinn dreht, und die Logik (alles muss in die Lücken passen) stimmt."
+       "warum": "Kein Bindewort dreht den Sinn, die Aufzählung passt logisch zu den Lücken."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Im Hook steht weder eine Lösung noch ein Angebot."
+       "warum": "Der Hook nennt weder eine Lösung noch ein Angebot."
       },
       "in_drei_sekunden_klar": {
-       "ja": false,
-       "warum": "„Mein Network“ allein kann auch ein berufliches Netzwerk meinen, deshalb ist Network Marketing ohne Vorwissen nicht sofort klar."
+       "ja": true,
+       "warum": "„Mein Network“ zusammen mit Kindern und Büro verortet die Welt sofort."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Der Hook beschreibt einen Dauerzustand und keinen einzelnen Moment mit Ort oder Uhrzeit."
+       "warum": "Es gibt keinen Moment, keinen Ort und keine Uhrzeit, nur eine Bilanz über eine lange Phase."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": false,
-       "warum": "Die Ich-Form ist da, aber zum Geständnis fehlen ein konkreter Moment und ein sichtbares Detail, und einen Gegner oder ein Zitat gibt es auch nicht."
+       "warum": "Die Ich-Form allein reicht nicht: Ein Geständnis braucht einen konkreten Moment mit sichtbarem Detail, und die Bürozeiten sind nicht als belegt markiert."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Kinder, Haushalt und Network zusammen treffen genau die Network-Mama."
+       "warum": "Mama, Kinder und das eigene Network stehen direkt im Satz."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Es ist Patricias eigene Geschichte aus einer schweren Phase und passt damit zur Rolle Vertrauen."
+       "warum": "Es ist Patricias eigene Geschichte aus einer schweren Phase, das passt zu Vertrauen."
       }
      },
-     "vorschlag": "Mein Network-Business lief nur in Bürolücken, neben Kindern und Haushalt. So lange ging das.",
+     "vorschlag": "„Das mach ich, wenn die Kinder schlafen“ – so lief mein Network neben dem Büro. (nur wenn's stimmt)",
      "modell": "claude-opus-5-5"
     }
    }
@@ -525,7 +684,114 @@
     "„Es läuft so okay“, sagst du, und meinst:",
     "Es reicht knapp für die Eigenbestellung."
    ],
-   "caption": "Und dann sagst du allen, es laufe so okay, weil die Wahrheit irgendwie peinlich klingt.\n\nIch kenne das Gefühl, und ich weiss auch, woher es kommt. Solange dein ganzes Einkommen an Bestellungen hängt, fängst du jeden Monat bei null an, egal wie viel du vorher gemacht hast.\n\nWas daneben fehlt, ist etwas, das dir gehört: ein Thema, für das man dich kennt, und dazu irgendwann ein eigenes kleines Angebot.\n\nWenn du nicht weisst, was dein Thema sein könnte, schlägt dir mein Nischengenerator in ein paar Minuten drei vor, passend zu dir und deinem Produkt.\n\nKommentier NISCHE, dann schick ich dir den Link."
+   "caption": "Und dann sagst du allen, es laufe so okay, weil die Wahrheit irgendwie peinlich klingt.\n\nIch kenne das Gefühl, und ich weiss auch, woher es kommt. Solange dein ganzes Einkommen an Bestellungen hängt, fängst du jeden Monat bei null an, egal wie viel du vorher gemacht hast.\n\nWas daneben fehlt, ist etwas, das dir gehört: ein Thema, für das man dich kennt, und dazu irgendwann ein eigenes kleines Angebot.\n\nWenn du nicht weisst, was dein Thema sein könnte, schlägt dir mein Nischengenerator in ein paar Minuten drei vor, passend zu dir und deinem Produkt.\n\nKommentier NISCHE, dann schick ich dir den Link.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "0d9c1b32a09e",
+     "bestanden": false,
+     "gruende": [
+      "kuechentisch: Der Wenn-Satz bleibt ohne Hauptsatz stehen. Gesprochen trägt das, als stehender Text wirkt es wie ein Fragment, das niemand so zu Ende sagt.",
+      "mikro_szene: „Diesen Monat“ beschreibt einen Zustand. Es fehlen Ort, Uhrzeit und ein sichtbares Detail, also ist es eher Diagnose als Moment.",
+      "gegner_gestaendnis_oder_zitat: Der Hook ist eine Du-Beschreibung ohne Ich-Geständnis, ohne wörtliches Zitat und ohne benannten Gegner.",
+      "passt_zur_rolle: Beziehung soll eine neue Sicht öffnen. Der Hook spiegelt nur den Schmerz und deutet die Frage, die ihr Thema freilegt, nicht an."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Die Provision, die genau die Eigenbestellung deckt, ist Sandras Kern-Pain: viel Einsatz, aber kein eigenes Geld."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Der Satz mit „wieder genau“ trifft die Rechnung, die sie jeden Monat still im Kopf macht."
+      },
+      "kuechentisch": {
+       "ja": false,
+       "warum": "Der Wenn-Satz bleibt ohne Hauptsatz stehen. Gesprochen trägt das, als stehender Text wirkt es wie ein Fragment, das niemand so zu Ende sagt."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Es gibt nur einen Teilsatz und kein Bindewort, das den Sinn dreht."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook enthält weder Lösung noch Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": true,
+       "warum": "„Provision“ und „eigene Bestellung“ verorten den Hook sofort im Network-Marketing."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "„Diesen Monat“ beschreibt einen Zustand. Es fehlen Ort, Uhrzeit und ein sichtbares Detail, also ist es eher Diagnose als Moment."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Der Hook ist eine Du-Beschreibung ohne Ich-Geständnis, ohne wörtliches Zitat und ohne benannten Gegner."
+      },
+      "nische_network_mama": {
+       "ja": true,
+       "warum": "Eigenbestellung und Provision sind genau ihre Welt."
+      },
+      "passt_zur_rolle": {
+       "ja": false,
+       "warum": "Beziehung soll eine neue Sicht öffnen. Der Hook spiegelt nur den Schmerz und deutet die Frage, die ihr Thema freilegt, nicht an."
+      }
+     },
+     "vorschlag": "„Provision reicht wieder genau für meine Eigenbestellung.“ Und die Frage dahinter stellt sich keiner.",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "13a5b2cb1a43",
+     "bestanden": false,
+     "gruende": [
+      "mikro_szene: Der Hook beschreibt ein wiederkehrendes Muster ohne Moment, ohne Anlass und ohne Gegenüber. Man sieht nicht, wann und wem sie das sagt."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Der Hook trifft den Kern-Pain: Viel Einsatz, und es reicht knapp für die Eigenbestellung, also ein teures Hobby statt eigenes Geld."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Die Lücke zwischen dem, was sie nach aussen sagt, und dem, was sie weiss, ist genau der Gedanke, den sie niemandem erzählt."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "„Es läuft so okay“ ist ihr wörtlicher Ausweichsatz, und eine Freundin würde genau so nachhaken: „…und meinst eigentlich…“."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "„Sagst du, und meinst“ stellt Aussage und Wahrheit sauber gegenüber, kein Bindewort dreht den Sinn."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook benennt nur den Zustand, es gibt weder Tipp noch Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": true,
+       "warum": "„Eigenbestellung“ ist ihr Wort und verortet den Hook für eine Network-Mama sofort im Network."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Der Hook beschreibt ein wiederkehrendes Muster ohne Moment, ohne Anlass und ohne Gegenüber. Man sieht nicht, wann und wem sie das sagt."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Mit „Es läuft so okay“ steht ihr eigener wörtlicher Satz als Zitat im Hook."
+      },
+      "nische_network_mama": {
+       "ja": true,
+       "warum": "Eigenbestellung und das knappe Einkommen sind typisch für Network-Mamas."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Der Hook zeigt ihr eine neue Sicht auf ihren eigenen Satz, sie bleibt die Heldin, und das passt zum Tipp mit der Frage, die ihr Thema freilegt."
+      }
+     },
+     "vorschlag": "Jemand fragt nach deinem Network, du sagst „läuft so okay“ – gemeint: knapp die Eigenbestellung.",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "17",
@@ -548,7 +814,114 @@
     "Jemand fragt „Was machst du?“,",
     "und dir fällt nur der Name deiner Firma ein."
    ],
-   "caption": "Das ist der Moment, in dem du merkst, dass du seit Jahren über die Firma redest und kaum über dich.\n\nDabei wissen die Leute um dich herum längst, wobei du ihnen hilfst. Sie fragen dich nämlich immer wieder dasselbe, und genau darin steckt dein Thema.\n\nMach heute einen Versuch: Schreib die drei Fragen auf, die dir Freundinnen in letzter Zeit gestellt haben, und streich alles, was mit deinem Produktnamen zu tun hat. Was übrig bleibt, ist deine Spur.\n\nWenn du dabei Hilfe willst, macht das mein Nischengenerator mit dir.\n\nKommentier NISCHE, dann schick ich dir den Link."
+   "caption": "Das ist der Moment, in dem du merkst, dass du seit Jahren über die Firma redest und kaum über dich.\n\nDabei wissen die Leute um dich herum längst, wobei du ihnen hilfst. Sie fragen dich nämlich immer wieder dasselbe, und genau darin steckt dein Thema.\n\nMach heute einen Versuch: Schreib die drei Fragen auf, die dir Freundinnen in letzter Zeit gestellt haben, und streich alles, was mit deinem Produktnamen zu tun hat. Was übrig bleibt, ist deine Spur.\n\nWenn du dabei Hilfe willst, macht das mein Nischengenerator mit dir.\n\nKommentier NISCHE, dann schick ich dir den Link.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "d0c5a5c96232",
+     "bestanden": false,
+     "gruende": [
+      "in_drei_sekunden_klar: „Dem Produkt“ kann jede Verkäuferin meinen. Ohne Vorwissen ist nicht klar, dass es um Network geht.",
+      "mikro_szene: Es ist eine allgemeine Aussage ohne Moment, Ort oder Uhrzeit.",
+      "nische_network_mama: Network wird nur angedeutet, nicht benannt. Im Zweifel trifft das nicht klar die Network-Mama."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Sie will etwas Eigenes aufbauen, sieht aber ausser dem Firmenprodukt nichts, was sie selbst anbieten könnte. Das ist ein echter Schmerz."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Der Satz ist ihr innerer Monolog im Wortlaut, den sie selten laut ausspricht."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Genau so klagt man es einer Freundin, ohne Fachwort und ohne Lehrerton."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Es ist ein einziger Satz ohne Bindewort, das den Sinn drehen könnte."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Tipp mit den Fragen der anderen kommt nicht vor, kein Angebot im Hook."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "„Dem Produkt“ kann jede Verkäuferin meinen. Ohne Vorwissen ist nicht klar, dass es um Network geht."
+      },
+      "mikro_szene": {
+       "ja": false,
+       "warum": "Es ist eine allgemeine Aussage ohne Moment, Ort oder Uhrzeit."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Es ist ein wörtliches Zitat ihres inneren Monologs."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Network wird nur angedeutet, nicht benannt. Im Zweifel trifft das nicht klar die Network-Mama."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Sie ist mit ihrer eigenen Frage die Heldin, und der Beitrag gibt ihr eine neue Sicht mit, nämlich Fragen der anderen als Themenquelle."
+      }
+     },
+     "vorschlag": "Um 23 Uhr wieder derselbe Gedanke: Was biete ich neben dem Network-Produkt eigentlich an?",
+     "modell": "claude-opus-5-5"
+    },
+    "b": {
+     "fingerabdruck": "a907b27a7324",
+     "bestanden": false,
+     "gruende": [
+      "in_drei_sekunden_klar: „Name deiner Firma“ kann jede Angestellte meinen, ohne Vorwissen ist nicht klar, dass es um Network geht.",
+      "nische_network_mama: Network und Mama kommen nicht vor, die Nische erschliesst sich nur Eingeweihten."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Es trifft den Kern-Pain, dass sie sich ohne eigene Marke nur über ihre Firma erklären kann und dabei unsichtbar bleibt."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Den kurzen Moment der Verlegenheit bei dieser Alltagsfrage kennt sie, spricht ihn aber selten aus."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Der Satz ist schlicht, mündlich und ohne Fachwort, so erzählt man es einer Freundin."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Das „und“ reiht Frage und Reaktion logisch aneinander, kein Bindewort dreht den Sinn."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der Hook nennt weder Lösung noch Tipp noch Angebot."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "„Name deiner Firma“ kann jede Angestellte meinen, ohne Vorwissen ist nicht klar, dass es um Network geht."
+      },
+      "mikro_szene": {
+       "ja": true,
+       "warum": "Eine konkrete Gesprächssituation mit einer wörtlichen Frage, keine Behauptung."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": true,
+       "warum": "Der Hook enthält das Zitat „Was machst du?“ und als Gegner die Abhängigkeit von der Firma."
+      },
+      "nische_network_mama": {
+       "ja": false,
+       "warum": "Network und Mama kommen nicht vor, die Nische erschliesst sich nur Eingeweihten."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Sie ist die Heldin der Szene und bekommt eine neue Sicht auf ihre Identität. Das passt zur Rolle Beziehung."
+      }
+     },
+     "vorschlag": "Jemand fragt „Was machst du?“, und dir fällt nur der Name deiner Network-Firma ein.",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "08",
@@ -571,7 +944,61 @@
    ],
    "rolle": "Beziehung",
    "mit": "Tipp: der «Ich helfe»-Satz ohne Produktname.",
-   "caption": "Übst du dann im Kopf schon den ersten Satz und sagst am Ende doch nichts?\n\nDein Bauchgefühl hat da ziemlich recht. Ein Elternabend ist kein Verkaufsgespräch, und die Mama neben dir hat keine Lust auf eins.\n\nWas dir in so einem Moment hilft, ist ein Satz, über den man ganz normal reden kann. Wenn du sagst «Ich helfe Mamas, die morgens nicht in die Gänge kommen», fragt die andere von selbst nach, und du musst gar nichts verkaufen.\n\nProbier es aus und schreib deinen Satz so, dass er mit «Ich helfe» anfängt und kein Produktname darin vorkommt. Wenn er dir nicht einfallen will, macht das mein Nischengenerator mit dir: drei Themen, jedes mit so einem Satz.\n\nKommentier NISCHE, dann schick ich dir den Link."
+   "caption": "Übst du dann im Kopf schon den ersten Satz und sagst am Ende doch nichts?\n\nDein Bauchgefühl hat da ziemlich recht. Ein Elternabend ist kein Verkaufsgespräch, und die Mama neben dir hat keine Lust auf eins.\n\nWas dir in so einem Moment hilft, ist ein Satz, über den man ganz normal reden kann. Wenn du sagst «Ich helfe Mamas, die morgens nicht in die Gänge kommen», fragt die andere von selbst nach, und du musst gar nichts verkaufen.\n\nProbier es aus und schreib deinen Satz so, dass er mit «Ich helfe» anfängt und kein Produktname darin vorkommt. Wenn er dir nicht einfallen will, macht das mein Nischengenerator mit dir: drei Themen, jedes mit so einem Satz.\n\nKommentier NISCHE, dann schick ich dir den Link.",
+   "pruefung": {
+    "a": {
+     "fingerabdruck": "3d792a30ebd6",
+     "bestanden": false,
+     "gruende": [
+      "in_drei_sekunden_klar: «Aufs Business ansprechen» verortet die Network-Welt nicht eindeutig; ohne Vorwissen könnte es jedes Business sein.",
+      "gegner_gestaendnis_oder_zitat: Es ist eine Du-Beschreibung ohne wörtliches Zitat, ohne Ich-Geständnis und ohne benannten Gegner."
+     ],
+     "antworten": {
+      "schmerz": {
+       "ja": true,
+       "warum": "Das unangenehme Zögern, eine andere Mama aufs Business anzusprechen, ist ein echter, oft erlebter Schmerz der Network-Mama."
+      },
+      "gedanke_gelesen": {
+       "ja": true,
+       "warum": "Genau dieses innere Abwägen neben einer anderen Mama kennt sie, spricht aber selten jemand aus."
+      },
+      "kuechentisch": {
+       "ja": true,
+       "warum": "Der Satz ist schlicht und alltagsnah und lässt sich so einer Freundin erzählen."
+      },
+      "bezug_der_zeilen": {
+       "ja": true,
+       "warum": "Es gibt kein Bindewort, das den Sinn dreht; der Wenn-Satz bleibt bewusst offen."
+      },
+      "loesung_draussen": {
+       "ja": true,
+       "warum": "Der «Ich helfe»-Satz oder ein anderer Tipp taucht im Hook nicht auf."
+      },
+      "in_drei_sekunden_klar": {
+       "ja": false,
+       "warum": "«Aufs Business ansprechen» verortet die Network-Welt nicht eindeutig; ohne Vorwissen könnte es jedes Business sein."
+      },
+      "mikro_szene": {
+       "ja": true,
+       "warum": "Elternabend und die Mama neben dir ergeben einen konkreten Moment an einem konkreten Ort."
+      },
+      "gegner_gestaendnis_oder_zitat": {
+       "ja": false,
+       "warum": "Es ist eine Du-Beschreibung ohne wörtliches Zitat, ohne Ich-Geständnis und ohne benannten Gegner."
+      },
+      "nische_network_mama": {
+       "ja": true,
+       "warum": "Mitmenschen im Umfeld aufs Business anzusprechen, ist typisch für Network-Mamas."
+      },
+      "passt_zur_rolle": {
+       "ja": true,
+       "warum": "Sie bleibt die Heldin in ihrer Szene, und der Tipp liefert ihr eine neue Sicht aufs Ansprechen, was zur Rolle Beziehung passt."
+      }
+     },
+     "vorschlag": "Elternabend, die Mama neben dir, und im Kopf: «Sprech ich sie aufs Network an?»",
+     "modell": "claude-opus-5-5"
+    }
+   }
   },
   {
    "nr": "09",

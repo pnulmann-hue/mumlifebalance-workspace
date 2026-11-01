@@ -21,18 +21,25 @@ tags: [produkt, funnel, jahresplanung]
 
 ## Einrichten
 
+**Schon angelegt (01.11.2026, alles Entwurf, nichts live):** WP-Seiten 4469 `/neustart-2027/` · 4470 `/neustart-2027-danke/` ·
+4473 `/neustart-2027-bestaetigt/` · Mockup WP-Medium 4468 · AC-Tag „0€ Jahresplanung“ 109 · AC-Formular 76 (Liste 2, Tag,
+nach Absenden → Danke-Seite, nach Bestätigung → bestätigt-Seite) · AC-Kampagnen-Entwürfe A1 899 · A2 900 · A3 901 ·
+E1 902 · E2 903 · E3 904 · E4 905 · E5 906.
+
 | Wo | Was | bis |
 |---|---|---|
-| Artifact „Mein Jahresplan“ | über das Share-Menü öffentlich teilen, Link an Claude (für E1, E2, Ablauf) | 20.11. |
-| Zoom | Termin Do 17.12. 09:00, Aufzeichnung an, Link an Claude (kommt nur in AC, nie ins Repo) | 20.11. |
-| WordPress | Mockup als webp hochladen (Adresse in `BILD_WP`), Seite `/neustart-2027/` und `/neustart-2027-danke/` als Entwurf (`elementor_canvas`, wie Tool-Workshop), Customizer-Block „NEUSTART-2027-EFFEKT“ aus `outputs/salespages/jahresplanung/neustart-2027-effekt.css` | 20.11. |
-| ActiveCampaign | Tag „0€ Jahresplanung“ (ID in active-funnels.json) · Formular „0€ Jahresplanung“ als Kopie von 75 (Liste 2, Tag, Bestätigungsmail aus 04, Weiterleitung `/neustart-2027-danke/`, bei „Eine Liste abonnieren“ die Adresse wählen und speichern) · ID in `FORMULAR` eintragen | 20.11. |
-| ActiveCampaign | Kampagnen A1 (30.11.), A2 (7.12.), A3 (15.12.) an Liste 2, ohne Tag „0€ Jahresplanung“ und ohne MBA-Käuferinnen | 23.11. |
-| ActiveCampaign | Automation „0€ Jahresplanung“: Start Tag · warten bis 16.12. 18:00 → E1 · bis 17.12. 08:00 → E2 · bis 17.12. abends → E3 · E4 · E5 · Ziel „MBA gekauft“ ganz unten · multientry aus | 23.11. |
+| Artifact „Mein Jahresplan“ | über das Share-Menü öffentlich teilen (Link steht schon in E1/E2) | 20.11. |
+| Zoom | Termin Do 17.12. 09:00, Aufzeichnung an · Link in `scripts/jahresplanung/.env` als `ZOOM=…` (nie ins Repo), dann `python scripts/jahresplanung/mails-bauen.py --hochladen` ersetzt E1/E2 | 20.11. |
+| ActiveCampaign Formular 76 | im Editor öffnen, bei „Eine Liste abonnieren“ die Adresse wählen und **einmal speichern** — erst dann entsteht die Opt-in-Mail. Danach `python scripts/mails/bestaetigung-bauen.py --hochladen --nur 76` | 20.11. |
+| WordPress Customizer | Block „NEUSTART-2027-EFFEKT“ aus `outputs/salespages/jahresplanung/neustart-2027-effekt.css` anhängen (ohne ihn stehen Kalenderblatt und Funken ungestaltet da) | vor dem Livegang |
+| ActiveCampaign Kampagnen | A1 (30.11.), A2 (7.12.), A3 (15.12.) einplanen, Segment ohne Tag 109 und ohne MBA-Käuferinnen · A2 erster Absatz bestätigen | 23.11. |
+| ActiveCampaign Automation | „0€ Jahresplanung“: Start Tag 109 · warten bis 16.12. 18:00 → E1 · bis 17.12. 08:00 → E2 · bis 17.12. abends → E3 · 18.12. E4 · 20.12. E5 · Ziel „MBA gekauft“ ganz unten · multientry aus | 23.11. |
 | ManyChat | Flow NEUSTART nach 07, testen mit einem Kommentar | 23.11. |
+| WordPress | Seiten 4469/4470/4473 veröffentlichen (dein Go), Testanmeldung von A bis Z | 25.11. |
 | Instagram | Bio-Link 30.11.–17.12. auf `/neustart-2027/`, Highlight „Neustart“, entscheiden ob ein Pin | 30.11. |
-| Cockpit | Storys aus 05 und Beiträge aus 06 einplanen, sobald der Bauplan frei ist | 20.11. |
-| nach 17.12. | Seite auf „Aufzeichnung“ umstellen oder neu bauen · Automation nach dem 20.12. stoppen | 21.12. |
+| Cockpit | Storys aus 05 und Beiträge aus 06 einplanen | 20.11. |
+| nach 17.12. | Seite auf „Aufzeichnung“ umstellen · Automation nach dem 20.12. stoppen | 21.12. |
+| Aufzeichnung | Ort (Vorschlag Vimeo), Link als `AUFZEICHNUNG=…` in `scripts/jahresplanung/.env`, dann E3 neu hochladen | 17.12. |
 
 ## Aus der Funnel-Checkliste (⚠️ ❌ ❓)
 
