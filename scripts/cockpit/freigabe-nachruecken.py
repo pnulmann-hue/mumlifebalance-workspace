@@ -103,6 +103,20 @@ def belegte_tage(ordner, profil, eigene_id, freigaben_ordner):
             tage.add(b["datum"][:10])
     if not ordner:
         return tage
+    # Freigaben früherer Läufe: ein nachgerücktes Datum steht nur in der Freigabe, nicht
+    # am Beitrag. Ohne diese Zeilen legte der 22-Uhr-Lauf am 31.10. ein zweites Karussell
+    # auf denselben Platz wie der 20-Uhr-Lauf.
+    for p in glob.glob(os.path.join(ordner, "freigaben", "*.json")):
+        if os.path.splitext(os.path.basename(p))[0] == eigene_id:
+            continue
+        try:
+            b = lies(p)
+        except Exception:
+            continue
+        if b.get("status") not in ("wartet", "geplant") or not b.get("datum"):
+            continue
+        if (b.get("profil") or "mentoring") == profil:
+            tage.add(b["datum"][:10])
     for art in ("karussells", "reels"):
         for p in glob.glob(os.path.join(ordner, art, "*.json")):
             if os.path.splitext(os.path.basename(p))[0] == eigene_id:

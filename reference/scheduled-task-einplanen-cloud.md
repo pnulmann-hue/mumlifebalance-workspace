@@ -42,6 +42,10 @@ Je Freigabe ein eigener Ordner `outputs/cockpit/freigaben/<id>/`:
 Einmal je Lauf die Belegung:
 - `ArtifactData list` · `collection: "karussells"` · `query: {"limit": 500}` · `out_dir: "outputs/cockpit/freigaben/_belegt"`
 - `ArtifactData list` · `collection: "reels"` · `query: {"limit": 500}` · `out_dir: "outputs/cockpit/freigaben/_belegt"`
+- `ArtifactData list` · `collection: "freigaben"` · `query: {"limit": 500}` · `out_dir: "outputs/cockpit/freigaben/_belegt"`
+
+🚨 Die Freigaben gehören dazu: ein nachgerücktes Datum steht nur dort. Ohne sie legte der Lauf um 22 Uhr am 31.10.
+ein zweites Karussell auf denselben Platz wie der um 20 Uhr.
 
 Dann je Freigabe, nacheinander:
 ```
