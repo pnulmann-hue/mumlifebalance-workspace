@@ -11,14 +11,16 @@ tags: [produkt, funnel, jahresplanung]
 > Entscheide vom 31.10. (gesammelte Runde): **gratis · AC-Formular · 09:00 · Aufzeichnung unbefristet ·
 > Anschluss MBA, die Januar-Challenge fällt weg.**
 > Alles mit **🟠 ENTSCHEID** hat Claude gesetzt und muss einmal bestätigt werden.
+> **Freigegeben am 01.11.2026** (Patricia: „Ja, so freigeben“): Name, Stichwort NEUSTART, 90 Minuten, MBA zu 997 ohne Workshop-Preis.
+> Offen bleiben nur Aufzeichnungsort und eigene „bestätigt“-Seite.
 
 | | |
 |---|---|
-| **Name** | Neustart 2027 · Jahresplanungs-Workshop (🟠 ENTSCHEID Name) |
+| **Name** | Neustart 2027 · Jahresplanungs-Workshop (✅ Patricia 01.11.) |
 | **Profil** | Mentoring |
 | **Art** | Freebie (Live-Workshop, offener Call aus der MBA) |
 | **Preis** | **gratis** (Patricia 31.10.) |
-| **Termin** | **Donnerstag, 17. Dezember 2026, 09:00 Uhr**, Zoom (Patricia 31.10.) · Dauer 🟠 ENTSCHEID: 90 Minuten |
+| **Termin** | **Donnerstag, 17. Dezember 2026, 09:00 Uhr**, Zoom (Patricia 31.10.) · Dauer **90 Minuten** (✅ Patricia 01.11.) |
 | **Wer ist dabei** | die MBA-Gruppe (Call im Gruppenprogramm) plus alle, die sich eintragen |
 | **Aufzeichnung** | ja, **unbefristet** offen für alle Angemeldeten (Patricia 31.10.) · Ort 🟠 ENTSCHEID: Vimeo, Link per Mail |
 | **Werkzeug im Workshop** | Seite „Mein Jahresplan“ (Artifact 72vifh23HRaBDoVjqcgx4t, ohne Anmeldung, Fragen aus `scripts/jahresplan/fragen.json`) — muss vorher über das Share-Menü öffentlich geteilt werden |
@@ -29,8 +31,8 @@ tags: [produkt, funnel, jahresplanung]
 | **Anmeldung** | AC-Formular **„0€ Jahresplanung“** (neu, Kopie von Formular 75 über die Schnittstelle) → Bestätigungsmail (Double Opt-in) → Danke-Seite |
 | **AC** | Liste 2 (Mentoring) · **ein** Tag **„0€ Jahresplanung“** · Automation **„0€ Jahresplanung“** mit Ziel „MBA gekauft“ ganz unten |
 | **Seiten** | Anmeldeseite `/neustart-2027/` · Danke-Seite `/neustart-2027-danke/` (beide WP, Entwurf bis Patricias Go) · Bestätigungsklick führt ebenfalls auf die Danke-Seite (🟠 ENTSCHEID: oder eine eigene „bestätigt“-Seite) |
-| **Stichwort** | **NEUSTART** (🟠 ENTSCHEID, in `context/manychat-keywords.md` frei) → DM mit Link zur Anmeldeseite. Flow in ManyChat anlegen und testen |
-| **Anschluss** | **Mum Business Academy** (Patricia 31.10.) · 997 CHF (Pioneer, Listenpreis 1347) · Seite `/mba/` · bezahlte Kurse werden angerechnet, Klärung per DM. Kein Workshop-Sonderpreis, solange Patricia keinen festlegt (🟠 ENTSCHEID) |
+| **Stichwort** | **NEUSTART** (✅ Patricia 01.11., in `context/manychat-keywords.md` frei) → DM mit Link zur Anmeldeseite. Flow in ManyChat anlegen und testen |
+| **Anschluss** | **Mum Business Academy** (Patricia 31.10.) · 997 CHF (Pioneer, Listenpreis 1347) · Seite `/mba/` · bezahlte Kurse werden angerechnet, Klärung per DM. **Kein Workshop-Sonderpreis, MBA zu 997** (✅ Patricia 01.11.) |
 | **Gestaltung** | dunkles KI-Design der Story-Generator-Seite (wie Tool-Workshop) · Mockup `scripts/salespage-design/jahresplanung-bild.mjs` · Effekt Kalenderblatt 31.12.2026 → 1.1.2027 plus aufsteigende Funken (`jahresplanung-effekt.css`, reines CSS) |
 
 ## Kette
@@ -38,7 +40,7 @@ tags: [produkt, funnel, jahresplanung]
 | | Angebot | Preis | Regel |
 |---|---|---|---|
 | Einstieg | Neustart 2027 (Workshop) | gratis | Freebie, Anmeldung über AC |
-| Danke-Seite | Hinweis MBA mit Link `/mba/` | 997 CHF regulär | kein „nur hier“-Preis erfunden, 🟠 ENTSCHEID ob ein Workshop-Preis kommt |
+| Danke-Seite | Hinweis MBA mit Link `/mba/` | 997 CHF regulär | kein Workshop-Preis (✅ Patricia 01.11.) |
 | Nach dem Workshop | MBA-Pitch in Mail E3–E5 und Storys 17.–20.12. | 997 CHF | Pitch erst nach dem Workshop: dann ist das neue Problem da (*„Der Plan steht, wer hilft mir, ihn umzusetzen?“*) |
 
 ## Fahrplan rückwärts ab Do 17.12.

@@ -9,10 +9,11 @@ tags: [produkt, funnel, jahresplanung]
 
 ## Entscheide (bis So 15.11.)
 
-- [ ] Name „Neustart 2027 · Jahresplanungs-Workshop“ bestätigen
-- [ ] Stichwort NEUSTART bestätigen
-- [ ] Dauer (Vorschlag 90 Minuten) und Ort der Aufzeichnung (Vorschlag Vimeo)
-- [ ] MBA: regulär 997 oder ein Preis nur für Workshop-Teilnehmerinnen (dann Rechnung im Chat zeigen)
+- [x] Name „Neustart 2027 · Jahresplanungs-Workshop“ bestätigen — ✅ 01.11.
+- [x] Stichwort NEUSTART bestätigen — ✅ 01.11.
+- [x] Dauer 90 Minuten — ✅ 01.11.
+- [ ] Ort der Aufzeichnung (Vorschlag Vimeo)
+- [x] MBA: regulär 997 oder ein Preis nur für Workshop-Teilnehmerinnen (dann Rechnung im Chat zeigen) — ✅ 01.11.
 - [ ] 1:1 Postingplan: verschieben oder leise neben dem Workshop
 - [ ] Ziel: wie viele MBA-Verkäufe soll der Workshop bringen?
 - [ ] „Warum mit mir“: Satz zu Schulferien und Geburtstagen stimmt so (Seite, A2, Karussell)

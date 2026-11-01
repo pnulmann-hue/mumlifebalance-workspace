@@ -62,7 +62,7 @@ tags: [plan, planung, mentoring, doterra]
 
 | Wer | Was | bis |
 |---|---|---|
-| Patricia | Bauplan freigeben: Name „Neustart 2027“, Stichwort NEUSTART, Dauer 90 Min, Ort der Aufzeichnung, MBA ohne/mit Workshop-Preis | So 15.11. |
+| ✅ Patricia | Bauplan freigegeben 01.11.: Name „Neustart 2027“, Stichwort NEUSTART, 90 Min, MBA zu 997 ohne Workshop-Preis (offen nur noch Ort der Aufzeichnung) | 01.11. |
 | Patricia | Entscheiden: 1:1 Postingplan verschieben (Pitch Januar?) — sonst liegt er auf Workshop-Einladung und MBA-Pitch | So 15.11. |
 | Claude | WP-Seiten `/neustart-2027/` + `/neustart-2027-danke/` als Entwurf · Mockup als webp · AC-Formular, Tag „0€ Jahresplanung“, Bestätigungsmail, Mails A1–A3 + E1–E5 als Entwürfe | Fr 20.11. |
 | Patricia | Zoom 17.12. 09:00 anlegen, Link an Claude · Jahresplaner-Seite über das Share-Menü öffentlich teilen | Fr 20.11. |
