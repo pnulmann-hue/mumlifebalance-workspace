@@ -27,109 +27,109 @@
    "caption": "Ein Kompliment zum Profil, und zwei Sätze später kommt die «spannende Möglichkeit». Ich blockiere diese Nachrichten inzwischen, ohne sie fertig zu lesen.\n\nDas Absurde daran: Genau so wurde es mir im Network beigebracht, und genau so wird es heute noch beigebracht. Ich weiss also, warum die Frau hinter der Nachricht das macht. Man hat ihr gesagt, dass es ohne nicht geht, und vermutlich fühlt sie sich beim Tippen genauso unwohl wie ich beim Lesen.\n\nSeit 2023 baue ich mein Business so auf, dass die Leute zu mir kommen, weil sie bei mir etwas gesehen haben, das ihnen weitergeholfen hat. Das dauert länger als hundert Nachrichten, und dafür muss ich mich danach bei niemandem entschuldigen.\n\nWenn du dich hier wiedererkennst, bleib hier. Genau darum geht es auf diesem Profil.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "efb3f81ec21a",
+     "fingerabdruck": "1e102a499b43",
      "bestanden": false,
      "gruende": [
-      "schmerz: Der Hook tippt nur die Peinlichkeit von Kaltakquise an; der eigentliche Schmerz, solche Nachrichten schreiben zu müssen und damit nichts zu erreichen, steht nicht da.",
-      "gedanke_gelesen: Um 23 Uhr denkt Sandra nicht «Hab ich auch so getippt?». Die Frage kommt von aussen und ist nicht ihr eigener Gedanke.",
-      "bezug_der_zeilen: Das «auch» unterstellt, dass Patricia selbst so getippt hat; belegt ist nur, dass sie solche Nachrichten bekommt und blockiert.",
-      "in_drei_sekunden_klar: «Eine Möglichkeit für dich» kann auch Spam, Versicherung oder Krypto meinen; das Wort Network fehlt, die Welt ist ohne Vorwissen nicht verortet.",
-      "mikro_szene: Es gibt keinen Moment, keinen Ort und kein sichtbares Detail, nur ein Zitat mit einer allgemeinen Frage."
+      "schmerz: Der Hook zeigt Patricias Ärger als Empfängerin, nicht Sandras Schmerz; Sandra schreibt solche Nachrichten womöglich selbst und fühlt sich eher ertappt als verstanden.",
+      "gedanke_gelesen: «Ich blockiere jede» ist Patricias Reaktion, kein Satz, den Sandra um 23 Uhr selbst denkt.",
+      "mikro_szene: Der Hook beschreibt ein wiederkehrendes Muster («jede») statt eines einzelnen Moments mit Ort oder Zeitpunkt."
      ],
      "antworten": {
       "schmerz": {
        "ja": false,
-       "warum": "Der Hook tippt nur die Peinlichkeit von Kaltakquise an; der eigentliche Schmerz, solche Nachrichten schreiben zu müssen und damit nichts zu erreichen, steht nicht da."
+       "warum": "Der Hook zeigt Patricias Ärger als Empfängerin, nicht Sandras Schmerz; Sandra schreibt solche Nachrichten womöglich selbst und fühlt sich eher ertappt als verstanden."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "Um 23 Uhr denkt Sandra nicht «Hab ich auch so getippt?». Die Frage kommt von aussen und ist nicht ihr eigener Gedanke."
+       "warum": "«Ich blockiere jede» ist Patricias Reaktion, kein Satz, den Sandra um 23 Uhr selbst denkt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Den Satz zitieren und fragen «Hast du auch schon so getippt?» klingt locker wie unter Freundinnen."
+       "warum": "Leicht genervt und trocken erzählt, so sagt man es einer Freundin."
       },
       "bezug_der_zeilen": {
-       "ja": false,
-       "warum": "Das «auch» unterstellt, dass Patricia selbst so getippt hat; belegt ist nur, dass sie solche Nachrichten bekommt und blockiert."
+       "ja": true,
+       "warum": "«Erst … dann …: Ich blockiere jede» hängt logisch zusammen, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook enthält weder eine Lösung noch ein Angebot."
+       "warum": "Es steht weder ein Weg noch ein Angebot im Hook."
       },
       "in_drei_sekunden_klar": {
-       "ja": false,
-       "warum": "«Eine Möglichkeit für dich» kann auch Spam, Versicherung oder Krypto meinen; das Wort Network fehlt, die Welt ist ohne Vorwissen nicht verortet."
+       "ja": true,
+       "warum": "«Fürs Network» und die «spannende Möglichkeit» verorten die Welt sofort."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Es gibt keinen Moment, keinen Ort und kein sichtbares Detail, nur ein Zitat mit einer allgemeinen Frage."
+       "warum": "Der Hook beschreibt ein wiederkehrendes Muster («jede») statt eines einzelnen Moments mit Ort oder Zeitpunkt."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook trägt ein wörtliches Zitat aus der typischen Anschreib-Masche."
+       "warum": "Die Kaltakquise-Masche ist der Gegner, «Ich blockiere jede» ist ein Geständnis, und beides ist belegt."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Die «Möglichkeit»-Nachricht ist ein Erkennungssatz aus dem Network-Alltag."
+       "warum": "Die Anwerbe-Nachricht fürs Network ist mitten in ihrer Welt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Ein «Das kennst du auch»-Moment zu einer verbreiteten Methode passt zur Rolle Aufmerksamkeit."
+       "warum": "Als Hot Take mit klarer Haltung holt der Hook neue Augen und passt damit zur Rolle Aufmerksamkeit."
       }
      },
-     "vorschlag": "Erst ein Kompliment zum Profil, dann die «spannende Möglichkeit» fürs Network: Ich blockiere jede.",
+     "vorschlag": "Fürs Network Fremden ein Kompliment schreiben, dann die «spannende Möglichkeit»? Mir schauderts bei jeder.",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "64a50c7c30f2",
+     "fingerabdruck": "a21679f5cc39",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: „Du hasst … schon beim Tippen“ ist eine Gefühls-Diagnose über alle solchen Nachrichten und kein sichtbarer einzelner Moment: Es fehlt das Bild der Nachricht, die gerade entsteht."
+      "gedanke_gelesen: „Du tippst sie gerade selbst“ ist ein Vorwurf von aussen und macht Sandra zur Gegnerin, ihr eigener Gedanke um 23 Uhr ist das nicht.",
+      "bezug_der_zeilen: „Sie“ bezieht sich grammatisch auf „Möglichkeit“, gemeint ist aber die Nachricht, die im Hook nie genannt wird.",
+      "in_drei_sekunden_klar: Weder „Network“ noch „Nachricht“ stehen da, wer den Code „spannende Möglichkeit“ nicht kennt, weiss nicht, um welche Welt es geht."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Die Pflicht-Kaltnachricht nach Upline-Vorlage, die sie selbst peinlich findet, ist ein echter Schmerz der Network-Mama, und das Zitat trägt ihn."
+       "warum": "Der Hook trifft einen echten Schmerz: Sie verschickt selbst die Copy-Paste-Nachrichten, die sie bei anderen peinlich findet."
       },
       "gedanke_gelesen": {
-       "ja": true,
-       "warum": "Dass sie die Nachricht schon beim Schreiben selbst nicht mag, ist der Gedanke, den sie niemandem sagt."
+       "ja": false,
+       "warum": "„Du tippst sie gerade selbst“ ist ein Vorwurf von aussen und macht Sandra zur Gegnerin, ihr eigener Gedanke um 23 Uhr ist das nicht."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Das Zitat ist wörtlich, und der zweite Satz klingt wie ein trockener Spruch unter Freundinnen."
+       "warum": "Die Aufzählung im Telegrammstil klingt wie ein spöttischer Satz unter Freundinnen."
       },
       "bezug_der_zeilen": {
-       "ja": true,
-       "warum": "„Diese Network-Nachricht“ bezieht sich direkt auf das Zitat, und kein Bindewort dreht den Sinn."
+       "ja": false,
+       "warum": "„Sie“ bezieht sich grammatisch auf „Möglichkeit“, gemeint ist aber die Nachricht, die im Hook nie genannt wird."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder den anderen Weg noch ein Angebot."
+       "warum": "Es steht keine Lösung und kein Angebot im Hook."
       },
       "in_drei_sekunden_klar": {
-       "ja": true,
-       "warum": "„Spannende Möglichkeit“ und „Network-Nachricht“ verorten die Welt sofort, auch ohne Vorwissen."
+       "ja": false,
+       "warum": "Weder „Network“ noch „Nachricht“ stehen da, wer den Code „spannende Möglichkeit“ nicht kennt, weiss nicht, um welche Welt es geht."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "„Du hasst … schon beim Tippen“ ist eine Gefühls-Diagnose über alle solchen Nachrichten und kein sichtbarer einzelner Moment: Es fehlt das Bild der Nachricht, die gerade entsteht."
+       "ja": true,
+       "warum": "Es ist ein konkreter Moment: Sie tippt gerade die Nachricht mit Kompliment und Möglichkeit."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Das Zitat ist wörtlich, und der Gegner ist die Kaltakquise-Methode, keine Firma und keine Person."
+       "warum": "Das Zitat „spannende Möglichkeit“ ist da, und die Kaltakquise-Masche ist der Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Die Kaltnachricht ist exklusiv Network-Alltag."
+       "warum": "Die Rekrutierungsnachricht ist typisch für Network-Mamas."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Der Hook ist ein „das kenn ich auch“-Moment mit Augenzwinkern, der neue Augen holt, und passt damit zur Rolle Aufmerksamkeit."
+       "warum": "Als ironischer Wiedererkennungs-Moment holt der Hook neue Augen, das passt zur Rolle Aufmerksamkeit."
       }
      },
-     "vorschlag": "Kompliment zum Profil, zwei Sätze später „spannende Möglichkeit“ – und du tippst sie gerade selbst.",
+     "vorschlag": "Mir schauderts bei jeder Network-Nachricht: erst Kompliment zum Profil, dann die «spannende Möglichkeit».",
      "modell": "claude-opus-5-5"
     }
    },
