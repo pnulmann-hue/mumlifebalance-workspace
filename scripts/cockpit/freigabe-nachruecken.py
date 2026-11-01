@@ -113,7 +113,7 @@ def belegte_tage(ordner, profil, eigene_id, freigaben_ordner):
             b = lies(p)
         except Exception:
             continue
-        if b.get("status") not in ("wartet", "geplant") or not b.get("datum"):
+        if b.get("status") not in ("wartet", "geplant", "aenderung") or not b.get("datum"):
             continue
         if (b.get("profil") or "mentoring") == profil:
             tage.add(b["datum"][:10])

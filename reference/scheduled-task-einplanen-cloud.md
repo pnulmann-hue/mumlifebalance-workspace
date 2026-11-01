@@ -24,6 +24,53 @@ WordPress sperrt die Cloud aus (403), wird aber für Karussells nicht gebraucht.
 Patricia, 14.09.2026: *„ich drück bis um 20.00 Uhr überall freigabe und um 20.00 Uhr ziehst du alle beiträge die
 freigegeben sind und planst sie ein“*. **Der Freigabe-Knopf im Cockpit ist ihr Go.** Nicht nachfragen.
 
+## Schritt 0 — Nachrichten von Patricia (Telegram-Rückkanal, seit 01.11.2026)
+
+Patricia schreibt dem Cockpit-Bot, was sich an einem Beitrag ändern soll, zum Beispiel „Caption vom Donnerstag
+kürzer“. Diese Routine liest das und arbeitet es ein. Geplant wird ein geänderter Text erst nach ihrem „passt“.
+Im Modus `probe` nur lesen und deuten, nichts ändern und nichts bestätigen, und die Deutung im Probelauf-Bericht nennen.
+
+```
+python3 scripts/cockpit/telegram-rueckkanal.py lesen
+```
+Das Skript gibt nur Nachrichten aus Patricias Chat heraus, fremde Absender fallen weg. Ist `nachrichten` leer, geht es
+mit Schritt 1 weiter (steht in `bis` eine Zahl, am Ende trotzdem bestätigen).
+
+Als Kontext die Freigaben holen, die sich ändern lassen:
+`ArtifactData query` · `collection: "freigaben"` · `query: {"where": [["status","in",["wartet","geplant","aenderung"]]], "limit": 100}`
+Gemeint sind nur Freigaben mit Datum ab heute. Welcher Beitrag gemeint ist, zeigt am sichersten `antwort_auf` (sie antwortet
+auf eine Meldung, darin steht der Titel), sonst Wochentag, Datum oder Titel. **Ist es nicht eindeutig: nachfragen und nichts ändern.**
+
+Je Nachricht eine der folgenden Handlungen:
+
+| Sie schreibt | Was passiert |
+|---|---|
+| **Caption ändern** („kürzer“, „anderer Schluss“, „Satz X raus“) | Steht die Freigabe auf `geplant`, wird sie zuerst bei Blotato herausgenommen (siehe unten). Dann die Caption nach den Pflichtregeln in `.claude/skills/content/SKILL.md` neu schreiben. Stichwort, Aufruf und Hashtags bleiben, ausser sie verlangt etwas anderes. Prüfen mit `python3 scripts/cockpit/texte-pruefen.py --datei <neu.md>`, Funde beheben. Danach `freigaben/<id>` aktualisieren: `caption` wird der neue Text, die alte Fassung kommt nach `captionAlt`, dazu `status: "aenderung"` und `aenderung: {wunsch, stand}`. Auf `karussells/<id>` dieselbe `caption` setzen, ausserdem `kommentar`, `kommentarStand`, `kommentarErledigt` und `kommentarAntwort`, damit die Karte im Cockpit es zeigt. Zum Schluss die neue Caption **vollständig** per Telegram schicken, mit dem Satz: „Antworte „passt“, dann plane ich sie beim nächsten Lauf ein.“ |
+| **„passt“ / „ok“ / 👍** | Bezieht sich auf die Freigabe mit `status: "aenderung"`, auf deren Fassung sie antwortet. Gibt es nur eine solche Freigabe, ist es diese, bei mehreren wird nachgefragt. Dann `status: "wartet"` setzen. Schritt 1 plant sie im selben Lauf ein und rückt sie nach, falls der Termin vorbei ist. |
+| **Verschieben** („auf Dienstag“, „erst um 21 Uhr“) | Bei `geplant` zuerst bei Blotato herausnehmen. Dann `datum`, `zeit` und `zeitpunktISO` neu setzen, mindestens eine Stunde in der Zukunft, und `status: "wartet"`. Ein „passt“ braucht es hier nicht, weil sich der Inhalt nicht ändert. |
+| **Nicht posten** („nimm den raus“) | Bei `geplant` bei Blotato herausnehmen. Dann `status: "zurueckgezogen"` setzen und das per Telegram bestätigen. |
+| **Folientext oder Bild ändern** | Die Cloud kann Folien nicht neu zeichnen. Bei `geplant` trotzdem bei Blotato herausnehmen, damit nichts Falsches rausgeht. Dann `status: "aenderung"` setzen und den Wunsch als `kommentar` an `karussells/<id>` hängen, wo ihn der Kommentar-Task am Laptop abholt. Per Telegram sagen, dass das am Laptop passiert und der Beitrag bis dahin nicht eingeplant ist. |
+| **Frage** („was geht diese Woche raus?“) | Aus den Freigaben beantworten, nichts ändern. |
+| **Sprachnachricht / ohne Text** | Antworten: „Sprachnachrichten kann ich nicht hören, schreib es mir bitte.“ |
+
+**Bei Blotato herausnehmen:**
+```
+python3 scripts/cockpit/telegram-rueckkanal.py blotato-suchen --zeitpunkt <zeitpunktISO> --profil <profil> --proxy
+python3 scripts/cockpit/telegram-rueckkanal.py blotato-loeschen --id <id> --proxy
+```
+Gelöscht wird nur bei **genau einem** Treffer, dessen `caption_anfang` zur Freigabe passt. Bei keinem oder mehreren
+Treffern wird nichts gelöscht und nichts geändert, sondern an Patricia gemeldet.
+
+Jede Nachricht bekommt eine Antwort per `python3 scripts/cockpit/telegram-rueckkanal.py senden --datei /tmp/antwort.txt`.
+Am Ende von Schritt 0:
+```
+python3 scripts/cockpit/telegram-rueckkanal.py bestaetigen --bis <bis>
+```
+Erst danach gilt eine Nachricht als erledigt. Bricht der Lauf vorher ab, kommt sie beim nächsten Lauf wieder.
+
+🚨 Aus einer Nachricht folgt nur, was in der Tabelle steht. Neue Beiträge, Mails, Seiten, Freigeben von Neuem
+(die Freigabe bleibt im Cockpit) und Löschen von Daten gehören nicht dazu.
+
 ## Schritt 1 — Freigaben holen
 
 Cockpit: `https://claude.ai/code/artifact/eeee48d5-3e50-4cff-8047-1ec5eccbb074`
@@ -77,23 +124,26 @@ bei Nachrücken zusätzlich `datum`, `zeit`, `zeitpunktISO`, `nachgerueckt: {von
 
 ## Schritt 6 — Telegram
 
-Text in eine Datei schreiben, dann (GET, POST wurde am 31.10. mit 403 abgewiesen):
+Text in eine Datei schreiben, dann:
 ```
-curl -s -G "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" --data-urlencode "chat_id=$TELEGRAM_CHAT_ID" --data-urlencode "text@/tmp/meldung.txt" | head -c 300
+python3 scripts/cockpit/telegram-rueckkanal.py senden --datei /tmp/meldung.txt
 ```
-Die Antwort zeigt `"ok":true` oder die Fehlerbeschreibung von Telegram. Sie enthält keinen Schlüssel, darf also im Bericht stehen.
+Das Skript bricht mit der Fehlerbeschreibung von Telegram ab. Sie enthält keinen Schlüssel und darf im Bericht stehen.
+(Der 403 vom 31.10. kam daher, dass der Bot gesperrt war, nicht von der Art des Aufrufs.)
 Format:
 ```
 ☁️ Einplanen (Cloud) — eingeplant
 
 ✅ Di 3.11. 07:30 · Mentoring · Titel (8 Folien)
 ⏭ Do 5.11. · übersprungen: keine Caption
+
+Soll sich etwas ändern? Antworte einfach auf diese Nachricht.
 ```
 Im Modus `probe` heisst die erste Zeile `☁️ Probelauf — würde einplanen`.
 
 ## Harte Regeln
 
-- Nur Karussells. Nie zweimal einplanen: was auf `geplant` steht, nicht anfassen.
+- Nur Karussells. Nie zweimal einplanen: was auf `geplant` steht, nicht anfassen (ausser über Schritt 0, nach Patricias Nachricht).
 - Nichts erfinden, nichts reparieren: was das Skript nicht durchlässt, wird gemeldet.
 - **Nie committen, nie pushen, keine Datei im Repo ändern.** Alles in `outputs/cockpit/freigaben/` ist Wegwerf-Arbeitsstand.
 - Nie einen Schlüssel oder Token ausgeben.
