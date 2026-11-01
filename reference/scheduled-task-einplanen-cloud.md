@@ -50,7 +50,7 @@ Je Nachricht eine der folgenden Handlungen:
 | **Verschieben** („auf Dienstag“, „erst um 21 Uhr“) | Bei `geplant` zuerst bei Blotato herausnehmen. Dann `datum`, `zeit` und `zeitpunktISO` neu setzen, mindestens eine Stunde in der Zukunft, und `status: "wartet"`. Ein „passt“ braucht es hier nicht, weil sich der Inhalt nicht ändert. |
 | **Nicht posten** („nimm den raus“) | Bei `geplant` bei Blotato herausnehmen. Dann `status: "zurueckgezogen"` setzen und das per Telegram bestätigen. |
 | **Folientext oder Bild ändern** | Die Cloud kann Folien nicht neu zeichnen. Bei `geplant` trotzdem bei Blotato herausnehmen, damit nichts Falsches rausgeht. Dann `status: "aenderung"` setzen und den Wunsch als `kommentar` an `karussells/<id>` hängen, wo ihn der Kommentar-Task am Laptop abholt. Per Telegram sagen, dass das am Laptop passiert und der Beitrag bis dahin nicht eingeplant ist. |
-| **Frage** („was geht diese Woche raus?“) | Aus den Freigaben beantworten, nichts ändern. |
+| **Frage** („was geht diese Woche raus?“) | Aus den Freigaben beantworten, nichts ändern. Je Beitrag Tag, Zeit, Profil und **Titel** (`name` der Freigabe), nie die Kennung wie `kw45-kar-m-di-nb`. |
 | **Sprachnachricht / ohne Text** | Antworten: „Sprachnachrichten kann ich nicht hören, schreib es mir bitte.“ |
 
 **Bei Blotato herausnehmen:**
