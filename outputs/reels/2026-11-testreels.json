@@ -1500,7 +1500,7 @@
    "ab": 1.0,
    "dauer": 7.5,
    "hoehe": 58,
-   "stil": "serif",
+   "stil": "karte",
    "akzent": "orange",
    "cta": "Folg mir, wenn du dich wiedererkennst",
    "a": [
@@ -1689,55 +1689,52 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "a8e5f36c1701",
-     "bestanden": false,
-     "gruende": [
-      "kuechentisch: Der Telegrammstil ohne Subjekt («Liste geschrieben, alle angeschrieben, wie … gesagt») klingt als stehender Text abgehackt, nicht wie ein Satz zur Freundin.",
-      "mikro_szene: Es ist eine Aufzählung von Handlungen ohne zeitlichen Anker. Ein konkreter Moment wie «nach dem Teamcall» fehlt im Satzbau."
-     ],
+     "fingerabdruck": "2f35269c9c95",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Das ungute Gefühl, die eigene Kontaktliste nach Vorgabe abzuarbeiten, kennt fast jede Network-Mama."
+       "warum": "Das Unbehagen, auf Anweisung der Upline die ganze Kontaktliste anzuschreiben, ist ein zentraler, echter Schmerz der Network-Mama."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Dass sich das Anschreiben falsch anfühlt, denkt sie heimlich und sagt es im Team nie laut."
+       "warum": "„Jede Nachricht fühlte sich falsch an“ spricht genau das Gefühl aus, das Sandra kennt, aber selten zugibt."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "Der Telegrammstil ohne Subjekt («Liste geschrieben, alle angeschrieben, wie … gesagt») klingt als stehender Text abgehackt, nicht wie ein Satz zur Freundin."
+       "ja": true,
+       "warum": "Zwei schlichte Ich-Sätze in Alltagssprache, so erzählt man es einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das «Und» verbindet die Handlung mit dem Gefühl danach, ohne den Sinn zu verdrehen."
+       "warum": "Es gibt kein Bindewort, und die zweite Zeile folgt logisch als Gefühl auf die Handlung der ersten."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook enthält weder einen Tipp noch ein Angebot, das Thema-vor-Produkt-Prinzip kommt erst später."
+       "warum": "Der Hook nennt weder Tipp noch Angebot, er endet beim Gefühl."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "«Network-Teamcall» verortet die Szene sofort in der Network-Welt."
+       "warum": "„Network-Teamcall“ verortet sofort im Network-Marketing, und „die Liste“ ist dort ohne Erklärung verständlich."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "Es ist eine Aufzählung von Handlungen ohne zeitlichen Anker. Ein konkreter Moment wie «nach dem Teamcall» fehlt im Satzbau."
+       "ja": true,
+       "warum": "Ein konkreter Moment direkt nach dem Teamcall, mit einer Handlung statt einer Behauptung."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Es ist ein Geständnis in der Ich-Perspektive, und die Methode «Liste anschreiben» dient als Gegner."
+       "warum": "Es ist ein Geständnis in Ich-Form, belegt durch Patricia (Chat 02.11.2026), und die Listen-Methode wirkt dabei als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Die Kontaktliste und der Teamcall sind typisch für den Network-Alltag."
+       "warum": "Teamcall und Kontaktliste sind typisch für den Alltag im Network."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricia erzählt hier ehrlich eine eigene, belegte Geschichte, und genau das trägt die Rolle Vertrauen."
+       "warum": "Patricias eigene, ehrliche Geschichte aus einer schweren Phase passt genau zur Rolle Vertrauen."
       }
      },
-     "vorschlag": "Nach dem Network-Teamcall hab ich alle angeschrieben. Und es fühlte sich falsch an.",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
    },
@@ -1751,7 +1748,7 @@
    "ab": 1.0,
    "dauer": 7.5,
    "hoehe": 62,
-   "stil": "serif",
+   "stil": "wort",
    "akzent": "orange",
    "cta": "Kommentier NISCHE",
    "a": [
@@ -1865,7 +1862,9 @@
      "modell": "claude-opus-5-5"
     }
    },
-   "belegt": "Als Patricia ihr Network-Lager loswerden wollte, postete sie immer wieder ein Produktfoto der Firma mit ein paar Zeilen, Preis und «Schreib mir eine Nachricht, wenn du Interesse hast». Es hat ihr selbst keine Freude gemacht, sie hatte damals keinen anderen Ansatz. Drei Jahre Katalog-Profil. Quelle: Patricia im Chat 02.11.2026"
+   "belegt": "Als Patricia ihr Network-Lager loswerden wollte, postete sie immer wieder ein Produktfoto der Firma mit ein paar Zeilen, Preis und «Schreib mir eine Nachricht, wenn du Interesse hast». Es hat ihr selbst keine Freude gemacht, sie hatte damals keinen anderen Ansatz. Drei Jahre Katalog-Profil. Quelle: Patricia im Chat 02.11.2026",
+   "wort_a": "Schreib mir, wenn du Interesse hast",
+   "wort_b": "noch ein Firmenbild"
   },
   {
    "nr": "06",
@@ -1891,108 +1890,110 @@
    "caption": "Das war mein Teilzeitjob, bis ich ihn vor zwei Jahren gekündigt habe, als Mama von vier Kindern.\n\nHeute klappe ich um halb zwölf den Laptop zu, und dann gehört der Tag den Kindern. Wenn es mir zu warm wird, setze ich mich unter den Sonnenschirm, und an manchen Tagen arbeite ich gar nicht.\n\nIch will dir dabei nichts schönreden: Selbständig bin ich seit 2023, und regelmässig Einkommen gibt es seit Mai 2025. Dazwischen lagen viele Monate, in denen ich nicht wusste, ob es reicht.\n\nSchick das einer Mama, die heute Morgen auch wieder die Rollläden runtergelassen hat.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "0624da04c91b",
+     "fingerabdruck": "d4fc4997a653",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: Der Hook zählt Patricias Lage im Telegrammstil auf, spricht aber keinen Gedanken aus, den Sandra selbst denkt; das sehr eigene Rollläden-Detail spiegelt sie nur indirekt.",
-      "kuechentisch: „Abends noch das Network, vier Kinder.“ ist ein Stichwort-Fragment, kein Satz, den man so einer Freundin sagt, und als stehender Text trägt das Fragment nicht.",
-      "in_drei_sekunden_klar: Der erste Satz (Büro, Sonne, Rollläden) könnte jede Bürofrau sein; das Network kommt erst im zweiten Satz, also nach den ersten drei Sekunden."
+      "schmerz: Heruntergelassene Rollläden sind eine Anekdote; der Schmerz der Network-Mama (Doppelbelastung, kein eigenes Geld, nichts für sich) wird nicht spürbar.",
+      "gedanke_gelesen: Es ist Patricias Erinnerung, kein Satz, den Sandra um 23 Uhr selbst denkt.",
+      "kuechentisch: Der Einstieg 'Neben dem Network noch im Büro:' klingt wie ein Titel mit Doppelpunkt und nicht wie ein Satz zu einer Freundin."
      ],
      "antworten": {
       "schmerz": {
-       "ja": true,
-       "warum": "Job, Network und Kinder lassen keinen Platz für das eigene Leben; dieser Erschöpfungsschmerz gehört zu Säule 3 (Business im Mama-Alltag)."
+       "ja": false,
+       "warum": "Heruntergelassene Rollläden sind eine Anekdote; der Schmerz der Network-Mama (Doppelbelastung, kein eigenes Geld, nichts für sich) wird nicht spürbar."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "Der Hook zählt Patricias Lage im Telegrammstil auf, spricht aber keinen Gedanken aus, den Sandra selbst denkt; das sehr eigene Rollläden-Detail spiegelt sie nur indirekt."
+       "warum": "Es ist Patricias Erinnerung, kein Satz, den Sandra um 23 Uhr selbst denkt."
       },
       "kuechentisch": {
        "ja": false,
-       "warum": "„Abends noch das Network, vier Kinder.“ ist ein Stichwort-Fragment, kein Satz, den man so einer Freundin sagt, und als stehender Text trägt das Fragment nicht."
+       "warum": "Der Einstieg 'Neben dem Network noch im Büro:' klingt wie ein Titel mit Doppelpunkt und nicht wie ein Satz zu einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Kein Bindewort dreht den Sinn, der Gegensatz Sonnentag gegen Rollläden ergibt sich logisch."
+       "warum": "Der Doppelpunkt führt logisch von der Situation zur Szene, und kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Es gibt weder Lösung noch Angebot, das Heute mit Sonnenschirm bleibt draussen."
+       "warum": "Der Hook nennt keine Lösung und kein Angebot."
       },
       "in_drei_sekunden_klar": {
-       "ja": false,
-       "warum": "Der erste Satz (Büro, Sonne, Rollläden) könnte jede Bürofrau sein; das Network kommt erst im zweiten Satz, also nach den ersten drei Sekunden."
+       "ja": true,
+       "warum": "'Network' und 'Büro' verorten die Doppelrolle sofort."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Ein Ort, ein Wetter und ein sichtbares Detail mit runtergelassenen Rollläden bilden eine echte Mikroszene."
+       "warum": "Ein sichtbares Detail: schönstes Wetter, die Rollläden gehen runter."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Es ist ein Geständnis in Ich-Form mit sichtbarem Detail, laut Patricias Bestätigung vom 02.11. belegt."
+       "warum": "Es ist ein Geständnis in Ich-Form mit einem belegten, sichtbaren Detail."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Network und vier Kinder stehen beide im Hook."
+       "warum": "Der Hook nennt das Network neben dem Job ausdrücklich."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias eigene Vorher-Geschichte ist genau die Vertrauen-Rolle und öffnet den Weg zu den echten Daten im Beitrag."
+       "warum": "Es ist Patricias eigene belegte Geschichte aus einer schweren Phase, also passend für die Rolle Vertrauen."
       }
      },
-     "vorschlag": "Neben dem Network noch im Büro: Beim schönsten Wetter liess ich die Rollläden runter.",
+     "vorschlag": "Vier Kinder, Network nebenbei, Teilzeit im Büro, und die Sonne schien ohne mich.",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "a76002facc53",
+     "fingerabdruck": "a1d26ef815b3",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: Die Rollläden-Szene ist Patricias eigenes Büro-Detail; Sandra erkennt darin nicht sofort ihren eigenen Gedanken um 23 Uhr.",
-      "bezug_der_zeilen: ‚Hiess das‘ macht die Rollläden zur Folge des Networks, belegt ist aber, dass sie wegen der Hitze im Bürojob unten waren; das Bindeglied verdreht die Ursache."
+      "gedanke_gelesen: Die Rollläden zeigen Patricias Büro, Sandras eigener Gedanke um 23 Uhr kommt darin nicht vor.",
+      "kuechentisch: „Daneben lief mein Bürojob, bei schönstem Wetter hinter Rollläden“ klingt geschrieben und nicht wie ein Satz zu einer Freundin.",
+      "bezug_der_zeilen: „Daneben“ macht den Bürojob zur Nebensache, belegt ist aber das Gegenteil: Das Network lief neben dem Job.",
+      "mikro_szene: „Lief“ beschreibt einen Dauerzustand, kein einzelner Moment ist greifbar, und warum die Rollläden unten sind, bleibt offen."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Rat ‚mach es halt nebenbei‘ und ein Alltag ohne Luft, während draussen die Sonne scheint, treffen das Gefühl, nur noch im Funktionsmodus zu sein."
+       "warum": "Das „nebenbei“ trifft die Überlastung einer Network-Mama, die neben Job und Familie aufbauen soll."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "Die Rollläden-Szene ist Patricias eigenes Büro-Detail; Sandra erkennt darin nicht sofort ihren eigenen Gedanken um 23 Uhr."
+       "warum": "Die Rollläden zeigen Patricias Büro, Sandras eigener Gedanke um 23 Uhr kommt darin nicht vor."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Das Zitat und die knappe Szene klingen wie erzählt, nicht wie ein Lehrsatz."
+       "ja": false,
+       "warum": "„Daneben lief mein Bürojob, bei schönstem Wetter hinter Rollläden“ klingt geschrieben und nicht wie ein Satz zu einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": false,
-       "warum": "‚Hiess das‘ macht die Rollläden zur Folge des Networks, belegt ist aber, dass sie wegen der Hitze im Bürojob unten waren; das Bindeglied verdreht die Ursache."
+       "warum": "„Daneben“ macht den Bürojob zur Nebensache, belegt ist aber das Gegenteil: Das Network lief neben dem Job."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Es gibt keine Lösung und kein Angebot, nur Zitat und Szene."
+       "warum": "Es gibt weder eine Lösung noch ein Angebot."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "‚Network‘ steht im ersten Satz und verortet die Welt sofort."
+       "warum": "„Network“ steht im ersten Satz und verortet die Welt sofort."
       },
       "mikro_szene": {
-       "ja": true,
-       "warum": "Rollläden runter, Sonne draussen: Das ist ein sichtbarer Moment statt einer Behauptung."
+       "ja": false,
+       "warum": "„Lief“ beschreibt einen Dauerzustand, kein einzelner Moment ist greifbar, und warum die Rollläden unten sind, bleibt offen."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook bringt das Zitat ‚Mach dein Network halt nebenbei‘ mit einem Ich-Geständnis."
+       "warum": "Der Hook hat ein Zitat mit dem Weichmacher „nebenbei“ als Gegner und dazu ein Geständnis."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Network neben dem Job ist genau die Lage der Network-Mama."
+       "warum": "Network und Doppelbelastung sind klar Sandras Welt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias eigene, ehrliche Geschichte aus der schweren Phase passt zur Rolle Vertrauen."
+       "warum": "Patricias eigene Geschichte aus der schweren Phase passt zur Rolle Vertrauen."
       }
      },
-     "vorschlag": "„Mach dein Network halt nebenbei.“ Daneben lief mein Bürojob, bei schönstem Wetter hinter Rollläden.",
+     "vorschlag": "Sonnentag im Büro, Rollläden unten, daneben das Network und vier Kinder: „Mach's halt nebenbei.“",
      "modell": "claude-opus-5-5"
     }
    },
@@ -2006,7 +2007,7 @@
    "ab": 1.0,
    "dauer": 7.5,
    "hoehe": 52,
-   "stil": "serif",
+   "stil": "karte",
    "akzent": "orange",
    "cta": "Schreib mir dein Wort in die Kommentare",
    "a": [
@@ -2146,110 +2147,106 @@
    "caption": "Die Liste sollte nur dafür sorgen, dass zu Hause alles weiterläuft, während ich im Spital bin.\n\nBeim Schreiben habe ich gemerkt, wie viel ich als Mama nebenbei organisiere, und danach habe ich meinen Alltag so umgebaut, dass alles aufgeht und Zeit für mich bleibt.\n\nGenau daraus ist mein erstes eigenes Angebot entstanden. Es ging um das, was ich ohnehin jeden Tag gemacht habe. Über dieses Angebot kam ich mit Mamas ins Gespräch, die ich vorher nicht kannte, und erst danach kam mein Network-Produkt zur Sprache.\n\nWenn du wissen willst, was in deinem Alltag steckt: Mein Nischengenerator schlägt dir drei Themen vor.\n\nKommentier NISCHE, dann schick ich dir den Link.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "96b6a3ca25da",
+     "fingerabdruck": "c7775a26e478",
      "bestanden": false,
      "gruende": [
-      "schmerz: Der Hook erzählt eine Erfolgsgeschichte; Sandras Schmerz, viel Einsatz und doch nichts Eigenes, ist nirgends sichtbar.",
-      "gedanke_gelesen: Es ist Patricias Erlebnis und kein Gedanke, den Sandra um 23 Uhr selbst denkt.",
-      "kuechentisch: «sie wurde mein Eigenes neben dem Network» klingt verdichtet und schriftlich, so sagt man das einer Freundin nicht.",
-      "loesung_draussen: Das Ergebnis, dass die Liste ihr Eigenes neben dem Network wurde, steht schon im Hook, ein offenes Ende fehlt."
+      "gedanke_gelesen: „Nichts Eigenes“ ist Patricias Rückblick-Fazit und kein Satz, den Sandra um 23 Uhr wörtlich denkt.",
+      "kuechentisch: „Dann schrieb ich hochschwanger meinem Mann eine Liste“ ist Erzählprosa im Präteritum, so redet man nicht mit einer Freundin."
      ],
      "antworten": {
       "schmerz": {
-       "ja": false,
-       "warum": "Der Hook erzählt eine Erfolgsgeschichte; Sandras Schmerz, viel Einsatz und doch nichts Eigenes, ist nirgends sichtbar."
+       "ja": true,
+       "warum": "„Nichts Eigenes“ trifft die Abhängigkeit von Firma und Upline, auch wenn es eher zusammengefasst als gezeigt wird."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "Es ist Patricias Erlebnis und kein Gedanke, den Sandra um 23 Uhr selbst denkt."
+       "warum": "„Nichts Eigenes“ ist Patricias Rückblick-Fazit und kein Satz, den Sandra um 23 Uhr wörtlich denkt."
       },
       "kuechentisch": {
        "ja": false,
-       "warum": "«sie wurde mein Eigenes neben dem Network» klingt verdichtet und schriftlich, so sagt man das einer Freundin nicht."
+       "warum": "„Dann schrieb ich hochschwanger meinem Mann eine Liste“ ist Erzählprosa im Präteritum, so redet man nicht mit einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Kein Bindewort dreht den Sinn, und die Abfolge Liste → wurde zum Eigenen ist logisch."
+       "warum": "„Dann“ setzt eine zeitliche Folge, die zur belegten Geschichte passt, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
-       "ja": false,
-       "warum": "Das Ergebnis, dass die Liste ihr Eigenes neben dem Network wurde, steht schon im Hook, ein offenes Ende fehlt."
+       "ja": true,
+       "warum": "Was aus der Liste wurde, bleibt offen. Weder Angebot noch Lösung werden verraten."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "Das Wort «Network» verortet die Welt sofort."
+       "warum": "„Im Network“ steht ganz vorne und verortet die Welt sofort."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Hochschwanger eine Liste für den Mann schreiben ist ein konkreter, sichtbarer Moment."
+       "warum": "Hochschwanger, eine Liste für den Mann: Das ist ein konkreter Moment, auch wenn Ort und sichtbares Detail fehlen."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Geständnis in Ich-Form mit belegtem, sichtbarem Detail."
+       "warum": "Es ist ein Geständnis in Ich-Form aus belegtem Erleben."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Mama-Alltag (Schwangerschaft, Mann) und Network sind beide drin."
+       "warum": "Network und Schwangerschaft treffen die Network-Mama direkt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias eigene, belegte Geschichte passt zur Rolle Vertrauen und zur Inspiration-Woche."
+       "warum": "Patricias eigene, ehrliche Geschichte ist genau die Rolle Vertrauen."
       }
      },
-     "vorschlag": "Im Network hatte ich nichts Eigenes. Dann schrieb ich hochschwanger meinem Mann eine Liste.",
+     "vorschlag": "Im Network hatte ich nichts Eigenes. Bis ich hochschwanger «Bügelstation entkalken» aufgeschrieben hab.",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "b087376c1f1f",
+     "fingerabdruck": "bac4e55c6265",
      "bestanden": false,
      "gruende": [
-      "schmerz: Der Hook erzählt nur Patricias Erfolgsmoment; Sandras Schmerz (kein eigenes Standbein, keine Idee, was sie selbst anbieten könnte) kommt nicht vor.",
-      "gedanke_gelesen: Kein Satz spiegelt, was Sandra um 23 Uhr selbst denkt; es ist Patricias Geschichte, kein ertappter Gedanke von ihr.",
-      "kuechentisch: Die Doppelpunkt-Konstruktion mit nacktem Zitat klingt nach Notiz oder Schlagzeile, nicht nach einem Satz, den man so einer Freundin erzählt."
+      "mikro_szene: Die Haushaltsliste ist ein Gegenstand ohne Moment, Ort oder Zeit; der belegte Küchentisch kurz vor der Geburt fehlt."
      ],
      "antworten": {
       "schmerz": {
-       "ja": false,
-       "warum": "Der Hook erzählt nur Patricias Erfolgsmoment; Sandras Schmerz (kein eigenes Standbein, keine Idee, was sie selbst anbieten könnte) kommt nicht vor."
+       "ja": true,
+       "warum": "Die Frage, was sie neben dem Network anbieten könnte, ist der echte Suchschmerz der Suchenden, die anders weitermachen will."
       },
       "gedanke_gelesen": {
-       "ja": false,
-       "warum": "Kein Satz spiegelt, was Sandra um 23 Uhr selbst denkt; es ist Patricias Geschichte, kein ertappter Gedanke von ihr."
+       "ja": true,
+       "warum": "Der Hook zitiert ihre eigene Frage wörtlich, so wie sie sie abends selbst denkt."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "Die Doppelpunkt-Konstruktion mit nacktem Zitat klingt nach Notiz oder Schlagzeile, nicht nach einem Satz, den man so einer Freundin erzählt."
+       "ja": true,
+       "warum": "Die Frage und der Satz zur Haushaltsliste klingen wie ein Gespräch mit einer Freundin, ohne Fachwörter."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "„Daraus“ verweist korrekt auf die Notiz, kein Bindewort dreht den Sinn."
+       "warum": "Auf die Frage folgt »Die Antwort stand …«, das schliesst logisch an, und kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Das Ergebnis wird genannt, aber nicht, wie aus der Notiz ein Angebot wurde, und Patricias Produkt wird nicht beworben."
+       "warum": "Der Hook sagt nur, wo die Antwort stand, und nicht, welche es ist; das offene Ende bleibt."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„neben dem Network“ verortet die Welt sofort, auch wenn „Bügelstation entkalken“ ohne Kontext zuerst rätselhaft wirkt."
+       "warum": "»Neben dem Network« verortet die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
-       "ja": true,
-       "warum": "Ein Moment, ein Ort, ein sichtbares Detail: hochschwanger, Küchentisch, „Bügelstation entkalken“."
+       "ja": false,
+       "warum": "Die Haushaltsliste ist ein Gegenstand ohne Moment, Ort oder Zeit; der belegte Küchentisch kurz vor der Geburt fehlt."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Geständnis in Ich-Form mit konkretem, belegtem Detail und zitierter Notiz."
+       "warum": "Der Hook verbindet ein Zitat (ihre eigene Frage) mit einem Geständnis in der Ich-Form."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Schwangerschaft, Haushalt und „erstes Angebot neben dem Network“ treffen genau die Network-Mama."
+       "warum": "Er richtet sich klar an die Network-Mama, die sich ein eigenes Standbein daneben aufbauen will."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias eigene, belegte Geschichte passt zur Rolle Vertrauen und zur Inspiration, dass das Thema im Alltag liegt."
+       "warum": "Patricias eigene, belegte Geschichte trägt die Rolle Vertrauen."
       }
      },
-     "vorschlag": "„Was könnte ich neben dem Network anbieten?“ Die Antwort stand auf meiner Haushaltsliste.",
+     "vorschlag": "„Was biete ich neben dem Network an?“ Hochschwanger am Küchentisch stand's auf meiner Haushaltsliste.",
      "modell": "claude-opus-5-5"
     }
    },
@@ -2396,7 +2393,7 @@
    "ab": 2.0,
    "dauer": 7.5,
    "hoehe": 62,
-   "stil": "serif",
+   "stil": "wort",
    "akzent": "orange",
    "cta": "Schick das einer Network-Freundin",
    "rolle": "Beziehung",
@@ -2509,7 +2506,9 @@
      "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "wort_a": "und ich?",
+   "wort_b": "kein Network-Typ"
   },
   {
    "nr": "29",
@@ -2647,7 +2646,7 @@
    "ab": 0.2,
    "dauer": 7.2,
    "hoehe": 62,
-   "stil": "serif",
+   "stil": "karte",
    "akzent": "orange",
    "cta": "Folg mir, wenn du dich wiedererkennst",
    "rolle": "Aufmerksamkeit",
@@ -2770,7 +2769,7 @@
    "ab": 3.0,
    "dauer": 7.5,
    "hoehe": 58,
-   "stil": "serif",
+   "stil": "wort",
    "akzent": "orange",
    "cta": "Folg mir, wenn du dich wiedererkennst",
    "rolle": "Vertrauen",
@@ -2884,7 +2883,9 @@
      "modell": "claude-opus-5-5"
     }
    },
-   "belegt": "Patricias Mann machte lange Sprüche über ihr Network, wörtlich zum Beispiel «teures Hobby», «du würdest doch besser wieder ein paar Beistandschaften machen», «willst du dich nicht Richtung Buchhaltung selbständig machen?» (sie war im KV, in der Sozialberatung, kennt sich in rechtlichen Dingen aus; für ihn war klar, dass man nicht einfach etwas komplett anderes tut). Heute macht er keinen Spruch mehr. Quelle: Patricia im Chat 01.11.2026 Konkreter Moment: Ihr Mann hat ein Network-Paket aus dem Briefkasten geholt, es ihr gebracht und «teures Hobby» gesagt. Quelle: Patricia im Chat 02.11.2026"
+   "belegt": "Patricias Mann machte lange Sprüche über ihr Network, wörtlich zum Beispiel «teures Hobby», «du würdest doch besser wieder ein paar Beistandschaften machen», «willst du dich nicht Richtung Buchhaltung selbständig machen?» (sie war im KV, in der Sozialberatung, kennt sich in rechtlichen Dingen aus; für ihn war klar, dass man nicht einfach etwas komplett anderes tut). Heute macht er keinen Spruch mehr. Quelle: Patricia im Chat 01.11.2026 Konkreter Moment: Ihr Mann hat ein Network-Paket aus dem Briefkasten geholt, es ihr gebracht und «teures Hobby» gesagt. Quelle: Patricia im Chat 02.11.2026",
+   "wort_a": "Teures Hobby",
+   "wort_b": "Beistandschaften"
   },
   {
    "nr": "14",
@@ -3405,7 +3406,7 @@
    "ab": 1.0,
    "dauer": 7.5,
    "hoehe": 25,
-   "stil": "serif",
+   "stil": "wort",
    "akzent": "orange",
    "cta": "Folg mir, wenn du dich wiedererkennst",
    "rolle": "Aufmerksamkeit",
@@ -3518,7 +3519,9 @@
      "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
-   }
+   },
+   "wort_a": "trotzdem ein Herz",
+   "wort_b": "heimlich"
   },
   {
    "nr": "37",
