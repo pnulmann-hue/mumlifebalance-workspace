@@ -2276,110 +2276,110 @@
    "caption": "Lange habe ich diese Frage einfach weggelächelt, als wäre sie ein Kompliment und sonst nichts.\n\nDabei war sie der deutlichste Hinweis, den ich je bekommen habe. Die Leute wollten von mir wissen, wie ich Alltag, Kinder und Arbeit unter einen Hut bringe, und genau darüber habe ich angefangen zu reden.\n\nSchau mal, welche Frage dir am häufigsten gestellt wird. Eine Frage zu dir, nicht zu deinem Produkt. Dort liegt sehr oft dein Thema.\n\nMein Nischengenerator hilft dir, diese Spur in drei Themen zu übersetzen.\n\nKommentier NISCHE, dann schick ich dir den Link.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "385347acb5e3",
+     "fingerabdruck": "e25b0e52a3d7",
      "bestanden": false,
      "gruende": [
-      "schmerz: Der Hook zeigt eine verpasste Chance von Patricia; Sandras Schmerz, dass auf ihre Produktbeiträge niemand reagiert, ist nur angedeutet.",
-      "gedanke_gelesen: Die Frage nach vier Kindern wurde Patricia gestellt. Sandra hat zwei Kinder und denkt diesen Satz um 23 Uhr nicht selbst.",
-      "kuechentisch: „Und ich postete“ ist steifes Präteritum. Am Küchentisch sagt man „und ich hab … gepostet“.",
-      "bezug_der_zeilen: Das „Und“ verdeckt den gemeinten Gegensatz (die Leute fragten, sie postete trotzdem Produkte). Ohne „trotzdem“ bleibt offen, warum die zwei Zeilen zusammengehören.",
-      "mikro_szene: „Drei Jahre nur Network-Produkte“ ist eine Zusammenfassung über Jahre und kein einzelner Moment mit Ort oder Uhrzeit.",
-      "passt_zur_rolle: Beziehung verlangt eine neue Sicht mit Sandra als Heldin. Der Hook ist Patricias Rückblick (Ich als Beweis) und passt eher zu Vertrauen."
+      "schmerz: Der Hook zeigt nur Patricias Verhalten, aber nicht den Schmerz dahinter, etwa dass auf die Produktbilder niemand reagiert.",
+      "gedanke_gelesen: Sandra wird kaum gefragt, wie sie das mit vier Kindern schafft, also erkennt sie ihren eigenen Gedanken um 23 Uhr darin nicht.",
+      "bezug_der_zeilen: Das „trotzdem“ trägt nur, wenn man schon weiss, dass die häufigste Frage das Thema sein sollte, und das ist die Lösung aus dem Beitrag. Ohne diese Lösung wirkt der Gegensatz zwischen Frage und Produktposts unlogisch.",
+      "mikro_szene: Der Hook nennt keinen Moment, keinen Ort und keine Uhrzeit, sondern fasst Jahre zusammen."
      ],
      "antworten": {
       "schmerz": {
        "ja": false,
-       "warum": "Der Hook zeigt eine verpasste Chance von Patricia; Sandras Schmerz, dass auf ihre Produktbeiträge niemand reagiert, ist nur angedeutet."
+       "warum": "Der Hook zeigt nur Patricias Verhalten, aber nicht den Schmerz dahinter, etwa dass auf die Produktbilder niemand reagiert."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "Die Frage nach vier Kindern wurde Patricia gestellt. Sandra hat zwei Kinder und denkt diesen Satz um 23 Uhr nicht selbst."
+       "warum": "Sandra wird kaum gefragt, wie sie das mit vier Kindern schafft, also erkennt sie ihren eigenen Gedanken um 23 Uhr darin nicht."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "„Und ich postete“ ist steifes Präteritum. Am Küchentisch sagt man „und ich hab … gepostet“."
+       "ja": true,
+       "warum": "Zitat und Geständnis klingen wie ein Satz, den man einer Freundin am Tisch erzählt."
       },
       "bezug_der_zeilen": {
        "ja": false,
-       "warum": "Das „Und“ verdeckt den gemeinten Gegensatz (die Leute fragten, sie postete trotzdem Produkte). Ohne „trotzdem“ bleibt offen, warum die zwei Zeilen zusammengehören."
+       "warum": "Das „trotzdem“ trägt nur, wenn man schon weiss, dass die häufigste Frage das Thema sein sollte, und das ist die Lösung aus dem Beitrag. Ohne diese Lösung wirkt der Gegensatz zwischen Frage und Produktposts unlogisch."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Tipp „die häufigste Frage ist das Thema“ steht nicht im Hook, ein Angebot auch nicht."
+       "warum": "Der Tipp „die häufigste Frage ist das Thema“ steht nicht im Hook."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network-Produkte“ verortet sofort die Network-Welt."
+       "warum": "„Network-Produkte“ und „gepostet“ verorten den Hook sofort im Network-Alltag auf Instagram."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "„Drei Jahre nur Network-Produkte“ ist eine Zusammenfassung über Jahre und kein einzelner Moment mit Ort oder Uhrzeit."
+       "warum": "Der Hook nennt keinen Moment, keinen Ort und keine Uhrzeit, sondern fasst Jahre zusammen."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Er enthält ein Zitat (die Frage der Leute) und ein Geständnis in Ich-Form."
+       "warum": "Er enthält ein wörtliches Zitat und ein Geständnis in Ich-Form, beides belegt."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Mama mit vier Kindern und Network-Produkte treffen die Nische genau."
+       "warum": "Produktposts statt eigener Person sind ein Kernthema von Säule 1, Personal Brand statt Copy-Paste."
       },
       "passt_zur_rolle": {
-       "ja": false,
-       "warum": "Beziehung verlangt eine neue Sicht mit Sandra als Heldin. Der Hook ist Patricias Rückblick (Ich als Beweis) und passt eher zu Vertrauen."
+       "ja": true,
+       "warum": "Eine ehrliche eigene Geschichte über einen Fehler passt zur Rolle Vertrauen."
       }
      },
-     "vorschlag": "„Wie schaffst du das mit vier Kindern?“ Ich hab trotzdem nur Network-Produkte gepostet. (13 Wörter; „trotzdem“ macht den Gegensatz klar, der Satz ist mündlich. Die neue Sicht, also Sandras eigene häufigste Frage, gehört in die Caption ab Zeile 2. Für die Rolle Beziehung lieber einen Hook aus Sandras Sicht bauen, sobald ein belegter Satz von ihr vorliegt.)",
+     "vorschlag": "Im Network fragten viele: „Wie schaffst du das mit vier Kindern?“ Ich postete Katalogbilder.",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "d700f8b91c53",
+     "fingerabdruck": "3ca4cdc4325f",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: Der Hook beschreibt eine jahrelange Gewohnheit. Es fehlt ein konkreter Moment mit Ort, Zeitpunkt oder sichtbarem Detail."
+      "gedanke_gelesen: Die Folge fehlt, etwa dass niemand reagiert, also erkennt Sandra ihren eigenen Gedanken nicht sofort.",
+      "kuechentisch: „fragten viele“ und „postete“ sind Schriftsprache im Präteritum, am Küchentisch sagt man „haben gefragt“ und „hab gepostet“.",
+      "mikro_szene: „fragten viele“ beschreibt etwas, das sich oft wiederholt hat, und keinen einzelnen Moment an einem Ort zu einer Zeit."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Glaube, das eigene Leben sei uninteressant, und deshalb Firmenbilder statt der eigenen Person zu posten, ist ein echter Schmerz aus Säule 1 (Personal Brand statt Copy-Paste)."
+       "warum": "Das Geständnis trifft Säule 1: Sie zeigt Firmenbilder, obwohl die Leute sich für sie als Mensch interessieren."
       },
       "gedanke_gelesen": {
-       "ja": true,
-       "warum": "„Mein Alltag interessiert doch keinen“ ist wörtlich der Satz, den viele Network-Mamas vor dem Posten denken."
+       "ja": false,
+       "warum": "Die Folge fehlt, etwa dass niemand reagiert, also erkennt Sandra ihren eigenen Gedanken nicht sofort."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "So erzählt man es einer Freundin, ohne Fachwörter und ohne Lehrerton."
+       "ja": false,
+       "warum": "„fragten viele“ und „postete“ sind Schriftsprache im Präteritum, am Küchentisch sagt man „haben gefragt“ und „hab gepostet“."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "„Doch“ ist hier eine verstärkende Partikel und kein Gegensatz-Bindewort. Das „und postete“ folgt logisch aus dem Gedanken, der Sinn wird nicht gedreht."
+       "warum": "Es gibt kein Bindewort, und das Nebeneinander von Frage und Produktbildern ergibt den gewollten Gegensatz."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder Lösung noch Angebot, der Tipp mit der häufigsten Frage bleibt für später."
+       "warum": "Der Tipp, dass die häufigste Frage das Thema ist, wird nicht verraten."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Produktbilder meiner Network-Firma“ verortet die Welt sofort, auch ohne Vorwissen."
+       "warum": "„Network-Firma“ und „Produktbilder“ verorten es sofort."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Der Hook beschreibt eine jahrelange Gewohnheit. Es fehlt ein konkreter Moment mit Ort, Zeitpunkt oder sichtbarem Detail."
+       "warum": "„fragten viele“ beschreibt etwas, das sich oft wiederholt hat, und keinen einzelnen Moment an einem Ort zu einer Zeit."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Er verbindet ein Zitat aus dem inneren Monolog mit einem Geständnis in Ich-Form. Der Gegner ist der Denkfehler, der eigene Alltag sei uninteressant."
+       "warum": "Der Hook enthält ein wörtliches Zitat und ein belegtes Geständnis in Ich-Form."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Die Network-Firma und ihre Produktbilder sind klar die Welt der Network-Mama."
+       "warum": "Vier Kinder plus Network-Produktbilder treffen genau die Network-Mama."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias früherer Denkfehler dient als Spiegel, und daraus folgt eine neue Sicht (die häufigste Frage ist das Thema). Das passt zur Rolle Beziehung."
+       "warum": "Es ist Patricias eigene, ehrliche Geschichte mit einem Fehler, und genau das braucht die Rolle Vertrauen."
       }
      },
-     "vorschlag": "„Wie machst du das mit vier Kindern?“, fragten viele. Ich postete Produktbilder meiner Network-Firma.",
+     "vorschlag": "„Wie machst du das mit vier Kindern?“ Und ich hab drei Jahre Network-Produkte gepostet.",
      "modell": "claude-opus-5-5"
     }
    },
@@ -2534,105 +2534,101 @@
    "caption": "Das ist mir im Oktober passiert, mit einem ganz normalen Reel aus meinem Alltag.\n\nViele haben es gesehen, kaum jemand hat reagiert. Gesehen werden ist eben noch nicht dasselbe wie gemeint sein. Wer sich angesprochen fühlt, schreibt etwas, und wer nur kurz hängen bleibt, scrollt weiter.\n\nSeitdem schaue ich bei jedem Beitrag zuerst, ob er einer bestimmten Mama etwas Konkretes mitgibt, und erst dann, wie weit er läuft.\n\nWenn du dich hier wiedererkennst, bleib hier.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "aa7a4527164c",
-     "bestanden": false,
-     "gruende": [
-      "kuechentisch: „Meinen Network-Beitrag“ ist ein konstruiertes Wort für die Verortung, so sagt das keine Freundin am Küchentisch."
-     ],
+     "fingerabdruck": "53f4dd86204e",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Reichweite ohne eine einzige Reaktion ist ein belegter, echter Schmerz der Network-Mama, die abends auf Antworten wartet."
+       "warum": "Sie postet für ihr Network, bekommt Aufrufe und keine Reaktion. Das trifft genau den Pain, dass ihr Einsatz wie ein Hobby ohne Ergebnis aussieht."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Der Satz steht als ihr eigener innerer Monolog da und trifft den Gedanken, den sie abends vor dem Handy hat."
+       "warum": "Der Satz steht als ihr eigener innerer Monolog da und spricht aus, was sie abends beim Blick auf den leeren Kommentarbereich denkt."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "„Meinen Network-Beitrag“ ist ein konstruiertes Wort für die Verortung, so sagt das keine Freundin am Küchentisch."
+       "ja": true,
+       "warum": "So klagt man einer Freundin sein Leid: einfache Wörter, kein Fachjargon, und 'posten' gehört zu ihren eigenen Wörtern."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das „und“ verbindet Zuschauen und Schweigen richtig, und „immer noch kein Kommentar“ setzt den Gedanken folgerichtig fort."
+       "warum": "'Hunderte schauen' und 'keiner schreibt' bilden einen echten Gegensatz, und 'Elf Uhr, kein Kommentar' bestätigt ihn. Kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder eine Lösung noch ein Angebot, er bleibt beim Problem."
+       "warum": "Der Hook nennt weder eine Lösung noch ein Angebot. Die Einsicht 'Reaktion vor Reichweite' kommt erst danach."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network“ verortet die Welt sofort, und „niemand schreibt“ ist ohne Vorwissen verständlich."
+       "warum": "'übers Network poste' verortet den Hook sofort in der Network-Welt, so wie es Patricias Korrektur vom 14.09. verlangt."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "„Elf Uhr, immer noch kein Kommentar“ ist ein konkreter Moment mit Zeitanker statt einer Behauptung."
+       "warum": "'Elf Uhr, kein Kommentar' setzt einen konkreten Zeitpunkt mit einem sichtbaren Detail und bleibt nicht beim grossen Thema."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Es ist ein wörtliches Zitat in Ich-Form, ihr innerer Monolog, und zugleich ein Geständnis."
+       "warum": "Der Hook ist ein Zitat ihres inneren Monologs in Ich-Form."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Es geht ausdrücklich um das Posten fürs Network und die fehlende Reaktion, das ist Sandras Alltag."
+       "warum": "Das Posten fürs Network ist eindeutig das Revier der Network-Mama."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Sie ist die Heldin im Zitat, und der Beitrag gibt ihr die neue Sicht, dass Reaktion mehr zählt als Reichweite."
+       "warum": "Sie ist die Heldin im eigenen Satz, und der Beitrag kann ihr danach die neue Sicht 'Reaktion zählt mehr als Reichweite' geben. Das ist die Mechanik der Rolle Beziehung."
       }
      },
-     "vorschlag": "„Hunderte schauen, was ich übers Network poste, und keiner schreibt.“ Elf Uhr, kein Kommentar.",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "7ccdae1e7705",
-     "bestanden": false,
-     "gruende": [
-      "kuechentisch: „Network-Post“ ist ein Kunstwort, das nur zur Verortung eingebaut wurde. Zu einer Freundin sagt man „unter deinem Post“."
-     ],
+     "fingerabdruck": "8bf0b6e2789a",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Posten ins Leere, ohne jede Reaktion, ist ein echter und belegter Schmerz der Network-Mama. Er steht als Zitat und Szene da, nicht als Diagnose."
+       "warum": "Null Kommentare trotz Mühe trifft den echten Schmerz, dass ihr Einsatz ins Leere läuft, und das ist durch 78 von 87 Beiträgen ohne Kommentar belegt."
       },
       "gedanke_gelesen": {
        "ja": true,
        "warum": "„Hat das überhaupt jemand gelesen?“ ist wörtlich ihr innerer Monolog beim Blick aufs Handy."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "„Network-Post“ ist ein Kunstwort, das nur zur Verortung eingebaut wurde. Zu einer Freundin sagt man „unter deinem Post“."
+       "ja": true,
+       "warum": "Beide Sätze sind schlichte Alltagssprache ohne Fachwort, so sagt man es einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Die Frage und „Wieder kein einziger Kommentar“ hängen logisch zusammen, und kein Bindewort dreht den Sinn."
+       "warum": "Es gibt kein Bindewort, das den Sinn dreht: Zitat und Situation erklären sich direkt gegenseitig."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook enthält keine Lösung und kein Angebot, „Reaktion zählt mehr als Reichweite“ bleibt für den Beitrag."
+       "warum": "Der Hook nennt weder Lösung noch Angebot; der Gedanke „Reaktion vor Reichweite“ kommt erst danach."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network“ und „Kommentar“ verorten den Hook sofort in der Welt des Postens fürs Network."
+       "warum": "„Post fürs Network“ verortet die Welt sofort, ohne dass man Patricia kennen muss."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Der Moment ist konkret: Sie schaut auf den Post und sieht null Kommentare."
+       "warum": "Es ist ein konkreter Moment: Sie schaut auf ihren Beitrag und sieht wieder null Kommentare. Das ist keine abstrakte Behauptung."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook enthält ein Zitat aus ihrem inneren Monolog."
+       "warum": "Der Hook öffnet mit einem Zitat aus ihrem inneren Monolog, das als ihre eigene Frage formuliert ist."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Der Hook spricht klar die Frau an, die fürs Network postet."
+       "warum": "Er trifft eine Network-Frau, die fürs Network postet und keine Resonanz bekommt; das ist klar ihre Welt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Sie steht als Heldin im Zentrum, und die neue Sicht (Reaktion statt Reichweite) kann im Beitrag folgen."
+       "warum": "Sie ist die Heldin in ihrem eigenen Moment, und der Hook öffnet die Tür für Patricias neue Sicht, dass Reaktion mehr zählt als Reichweite."
       }
      },
-     "vorschlag": "„Hat das überhaupt jemand gelesen?“ Wieder null Kommentare unter deinem Post fürs Network.",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     }
    },
@@ -2960,58 +2956,56 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "5308aadeca63",
+     "fingerabdruck": "e44dd5895b94",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: Sandra denkt um 23 Uhr nicht an fremde arme Rentnerinnen; der Satz erzählt Patricias Beobachtung, nicht Sandras eigenen Gedanken.",
-      "kuechentisch: „hörte ich“ ist Schriftsprache und „armen Rentnerinnen“ klingt nach Bericht; einer Freundin sagt man „hab ich gehört“ und „Frauen in Altersarmut“.",
-      "bezug_der_zeilen: Wofür das Network nie gereicht hätte, fehlt; man muss die Brücke zur eigenen Rente selbst bauen, und „hätte“ lässt offen, ob sie das Network aufgegeben hat.",
-      "in_drei_sekunden_klar: „Auf der Gemeinde“ kann nach Kirchgemeinde klingen, und dass es um die eigene Rente geht, erschliesst sich erst beim zweiten Lesen.",
-      "mikro_szene: „oft“ beschreibt etwas Allgemeines über lange Zeit, keinen einzelnen Moment mit Ort und Uhrzeit."
+      "gedanke_gelesen: »Ich hab von Frauen gehört« ist Hörensagen aus der Distanz, Sandra denkt um 23 Uhr an ihr eigenes Konto und nicht an einen Bericht über andere.",
+      "kuechentisch: »Altersarmut« ist ein Nachrichtenwort, und der erste Satz klingt wie ein Bericht statt wie ein Satz zu einer Freundin.",
+      "mikro_szene: Es gibt keinen Ort und keinen Moment, obwohl der belegte Ort (die Gemeindeverwaltung) bereitliegt."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Die Angst, im Alter ohne eigenes Geld dazustehen, trifft die Säule Plan B und eigenes Geld und damit eine echte Sorge von Mamas mit kleinem Pensum."
+       "warum": "Die Angst, dass das kleine Network-Geld fürs Alter nie reicht, trifft den Kern-Pain »teures Hobby statt eigenes Geld« (Säule Plan B)."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "Sandra denkt um 23 Uhr nicht an fremde arme Rentnerinnen; der Satz erzählt Patricias Beobachtung, nicht Sandras eigenen Gedanken."
+       "warum": "»Ich hab von Frauen gehört« ist Hörensagen aus der Distanz, Sandra denkt um 23 Uhr an ihr eigenes Konto und nicht an einen Bericht über andere."
       },
       "kuechentisch": {
        "ja": false,
-       "warum": "„hörte ich“ ist Schriftsprache und „armen Rentnerinnen“ klingt nach Bericht; einer Freundin sagt man „hab ich gehört“ und „Frauen in Altersarmut“."
+       "warum": "»Altersarmut« ist ein Nachrichtenwort, und der erste Satz klingt wie ein Bericht statt wie ein Satz zu einer Freundin."
       },
       "bezug_der_zeilen": {
-       "ja": false,
-       "warum": "Wofür das Network nie gereicht hätte, fehlt; man muss die Brücke zur eigenen Rente selbst bauen, und „hätte“ lässt offen, ob sie das Network aufgegeben hat."
+       "ja": true,
+       "warum": "Die zweite Zeile zieht die Folgerung aus der ersten, und kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Im Hook steht weder eine Lösung noch ein Angebot."
+       "warum": "Der Hook nennt weder eine Lösung noch ein Angebot."
       },
       "in_drei_sekunden_klar": {
-       "ja": false,
-       "warum": "„Auf der Gemeinde“ kann nach Kirchgemeinde klingen, und dass es um die eigene Rente geht, erschliesst sich erst beim zweiten Lesen."
+       "ja": true,
+       "warum": "»Network-Geld« verortet die Welt sofort, und Altersarmut versteht man ohne Vorwissen."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "„oft“ beschreibt etwas Allgemeines über lange Zeit, keinen einzelnen Moment mit Ort und Uhrzeit."
+       "warum": "Es gibt keinen Ort und keinen Moment, obwohl der belegte Ort (die Gemeindeverwaltung) bereitliegt."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "„Mein Network hätte nie gereicht“ ist ein Geständnis in der Ich-Form."
+       "warum": "»Wär ich eine davon« ist ein klares Geständnis in Ich-Form."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Das Wort Network verortet den Hook direkt bei Network-Frauen."
+       "warum": "»Mein Network-Geld« spricht direkt die Network-Frau an."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias eigener Grund für finanzielle Unabhängigkeit ist eine ehrliche Vertrauensgeschichte."
+       "warum": "Patricias eigener, belegter Grund für finanzielle Unabhängigkeit ist genau Vertrauen."
       }
      },
-     "vorschlag": "Ich hab von Frauen in Altersarmut gehört. Mit meinem Network-Geld wär ich eine davon.",
+     "vorschlag": "Auf der Gemeinde hörte ich von armen Rentnerinnen. Mit meinem Network-Geld wär ich eine.",
      "modell": "claude-opus-5-5"
     }
    },
@@ -3041,33 +3035,35 @@
    "caption": "Vier Kinder, ein Haushalt und ein Garten, der nie fertig wird. Mehr als rund 18 Stunden pro Woche gibt mein Leben gerade nicht her.\n\nDeshalb mache ich nicht alles, was man angeblich machen muss. Ich mache weniger, dafür das Richtige, und das Wichtigste läuft über einen festen Rhythmus.\n\nWenig Zeit ist kein Grund, es nicht zu tun. Sie ist ein Grund, es klüger zu tun.\n\nWenn du dich hier wiedererkennst, bleib hier.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "cfa648a6bdf6",
+     "fingerabdruck": "955619b3eddd",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: „Dafür hab ich keine Zeit“ ist eine Allerweltsfloskel; sie erkennt sich nicht in einem Detail wieder, das nur sie denkt.",
-      "bezug_der_zeilen: Es ist nicht klar, wer das Zitat sagt; man kann es als Patricias eigene Absage lesen, die dann mit dem Tagesende begründet wird. Der gemeinte Gegensatz fehlt.",
-      "mikro_szene: „Um elf ist mein Tag vorbei“ beschreibt eine Routine, keinen sichtbaren Moment an einem Ort."
+      "gedanke_gelesen: Durch „sagst du“ fühlt sie sich ertappt und widerlegt statt verstanden, und die zweite Zeile spricht von Patricias Tag, nicht von ihrem Gedanken.",
+      "kuechentisch: Einer Freundin ihren Satz vorzuhalten und mit dem eigenen Stundenplan zu kontern, klingt nach Verkaufsgespräch und nicht nach Küchentisch.",
+      "bezug_der_zeilen: „Dafür“ bezieht sich auf nichts, und ein Ende um elf sagt ohne Beginn nichts über wenig Zeit aus; der Gegensatz bleibt unklar.",
+      "mikro_szene: Eine Uhrzeit als Stundenplan-Behauptung ist kein Moment mit Ort und sichtbarem Detail.",
+      "passt_zur_rolle: Vertrauen braucht Patricias ehrliche Geschichte; das hier ist „Ich als Beweis“ mit einem Warum-mit-mir-Argument, das eher zum Schubs in Woche 4 gehört."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Keine Zeit neben Kindern und Pensum ist ein echter Schmerz und Einwand der Network-Mama."
+       "warum": "Zu wenig Zeit neben den Kindern ist ein echter Schmerz der Network-Mama, auch wenn er hier als Ausrede zitiert wird."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "„Dafür hab ich keine Zeit“ ist eine Allerweltsfloskel; sie erkennt sich nicht in einem Detail wieder, das nur sie denkt."
+       "warum": "Durch „sagst du“ fühlt sie sich ertappt und widerlegt statt verstanden, und die zweite Zeile spricht von Patricias Tag, nicht von ihrem Gedanken."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Beide Sätze sind schlichte Alltagssprache, so redet man mit einer Freundin."
+       "ja": false,
+       "warum": "Einer Freundin ihren Satz vorzuhalten und mit dem eigenen Stundenplan zu kontern, klingt nach Verkaufsgespräch und nicht nach Küchentisch."
       },
       "bezug_der_zeilen": {
        "ja": false,
-       "warum": "Es ist nicht klar, wer das Zitat sagt; man kann es als Patricias eigene Absage lesen, die dann mit dem Tagesende begründet wird. Der gemeinte Gegensatz fehlt."
+       "warum": "„Dafür“ bezieht sich auf nichts, und ein Ende um elf sagt ohne Beginn nichts über wenig Zeit aus; der Gegensatz bleibt unklar."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt nur die Uhrzeit und kein Wie, keine Methode und kein Angebot."
+       "warum": "Es steht weder eine Methode noch ein Angebot drin, das Wie bleibt offen."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
@@ -3075,75 +3071,74 @@
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "„Um elf ist mein Tag vorbei“ beschreibt eine Routine, keinen sichtbaren Moment an einem Ort."
+       "warum": "Eine Uhrzeit als Stundenplan-Behauptung ist kein Moment mit Ort und sichtbarem Detail."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook hat ein Zitat (die Keine-Zeit-Ausrede als Gegner) und dazu ein Ich-Geständnis."
+       "warum": "Das Zitat „Dafür hab ich keine Zeit“ ist vorhanden."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Er spricht ausdrücklich vom Network-Alltag."
+       "warum": "Network und Zeitmangel treffen die Network-Mama direkt."
       },
       "passt_zur_rolle": {
-       "ja": true,
-       "warum": "Ein belegtes Stück aus Patricias eigenem Alltag baut Vertrauen auf und trägt das Thema „geht mit wenig Zeit“."
+       "ja": false,
+       "warum": "Vertrauen braucht Patricias ehrliche Geschichte; das hier ist „Ich als Beweis“ mit einem Warum-mit-mir-Argument, das eher zum Schubs in Woche 4 gehört."
       }
      },
-     "vorschlag": "„Dafür hab ich keine Zeit“, sagst du. Mein Network-Tag endet um elf Uhr morgens.",
+     "vorschlag": "„Keine Zeit fürs Network?“ Mit vier Kindern ist mein Arbeitstag um elf Uhr morgens vorbei.",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "b595f9183187",
+     "fingerabdruck": "75c45986982f",
      "bestanden": false,
      "gruende": [
-      "kuechentisch: „und drei Stunden“ ist abgehackt: Drei Stunden wofür und wann? So sagt man es keiner Freundin.",
-      "bezug_der_zeilen: Das „und“ setzt keinen Gegensatz. Man kann es auch als Zustimmung lesen („nur drei Stunden, ich hab auch keine Zeit“), damit kippt der Sinn.",
-      "mikro_szene: „Drei Stunden“ ist eine Menge, kein Moment: Uhrzeit oder Ort fehlen, obwohl 8 bis 11 Uhr belegt ist."
+      "bezug_der_zeilen: „Trotzdem“ macht daraus eine Durchhalte-Botschaft („ich arbeite trotz Kindern“) statt der Botschaft „es reicht wenig Zeit“, und „8 bis 11“ kann auch als 20 bis 23 Uhr gelesen werden, was den Sinn ins Gegenteil dreht.",
+      "mikro_szene: „Von 8 bis 11“ beschreibt eine Routine und keinen konkreten Moment an einem Ort."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der zitierte Satz ist ihre eigene Ausrede und ihr Schmerz: Sie hat keine Zeit neben den Kindern."
+       "warum": "Das Zitat „Für Network bleibt keine Zeit“ ist Sandras eigene Ausrede und ihr echter Engpass mit Kindern und Pensum."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Diesen Satz denkt Sandra wörtlich, wenn sie wieder nichts gepostet hat."
+       "warum": "Den Satz denkt sie wörtlich, wenn sie abends wieder nichts gemacht hat."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "„und drei Stunden“ ist abgehackt: Drei Stunden wofür und wann? So sagt man es keiner Freundin."
+       "ja": true,
+       "warum": "Beide Teile sind kurze Sätze, wie man sie einer Freundin sagt."
       },
       "bezug_der_zeilen": {
        "ja": false,
-       "warum": "Das „und“ setzt keinen Gegensatz. Man kann es auch als Zustimmung lesen („nur drei Stunden, ich hab auch keine Zeit“), damit kippt der Sinn."
+       "warum": "„Trotzdem“ macht daraus eine Durchhalte-Botschaft („ich arbeite trotz Kindern“) statt der Botschaft „es reicht wenig Zeit“, und „8 bis 11“ kann auch als 20 bis 23 Uhr gelesen werden, was den Sinn ins Gegenteil dreht."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Es gibt kein Angebot und keine Methode im Hook, nur die eigene Erfahrung als Gegensatz."
+       "warum": "Der Hook nennt nur ihr Zeitfenster als Beweis, aber weder das Wie noch ein Angebot."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network“ und „Kinder“ verorten die Welt sofort."
+       "warum": "„Network“ steht im ersten Satz und verortet die Welt sofort."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "„Drei Stunden“ ist eine Menge, kein Moment: Uhrzeit oder Ort fehlen, obwohl 8 bis 11 Uhr belegt ist."
+       "warum": "„Von 8 bis 11“ beschreibt eine Routine und keinen konkreten Moment an einem Ort."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook enthält ein Zitat ihres inneren Monologs und dazu ein Ich-Geständnis."
+       "warum": "Der Hook beginnt mit einem wörtlichen Zitat ihres inneren Monologs, gefolgt von einem Geständnis in Ich-Form."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Mama und Network stehen beide im Hook."
+       "warum": "Er verbindet Network und Mutterschaft mit vier Kindern direkt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Er erzählt Patricias eigene Situation mit vier Kindern und passt damit zu Vertrauen."
+       "warum": "Es ist Patricias eigene, belegte Alltagsgeschichte und baut damit Vertrauen auf."
       }
      },
-     "vorschlag": "„Für Network bleibt keine Zeit.“ Vier Kinder, trotzdem arbeite ich von 8 bis 11.",
+     "vorschlag": "„Für Network bleibt keine Zeit.“ Ich habe vier Kinder und arbeite morgens drei Stunden.",
      "modell": "claude-opus-5-5"
     }
    },
