@@ -137,11 +137,11 @@ Möglichkeit zum Eintragen; Gratis-Angebote brauchen keine Aufwärmphase) · Fr 
 | | |
 |---|---|
 | Format | reel · sprech |
-| Rolle | Vertrauen |
+| Rolle | Beziehung |
 | Stichwort | NISCHE |
 | Mehrwert | Tipp: einen Tag lang vom Alltag erzählen statt vom Produkt |
-| Hook A | „Willst du dich nicht Richtung Buchhaltung selbständig machen?“, fragte mein Mann wegen meines Networks ✗ |
-| Hook B | „Wie machst du das mit vier Kindern?“, fragten Fremde. Vom Network sagte ich nichts ✗ |
+| Hook A | „Wie schaffst du das neben dem Network?“, fragt die Nachbarin. Du sagst: „Geht schon.“ ✓ |
+| Hook B | Eine Mama fragt: „Wie schaffst du das alles?“ Und du erzählst vom Network-Produkt ✗ |
 
 **Caption:**
 
@@ -281,19 +281,21 @@ Möglichkeit zum Eintragen; Gratis-Angebote brauchen keine Aufwärmphase) · Fr 
 | | |
 |---|---|
 | Format | reel · sprech |
-| Rolle | Vertrauen |
+| Rolle | Beziehung |
 | Stichwort | NISCHE |
 | Mehrwert | Frage zum Mitnehmen: Network loswerden oder die Art, wie du es machen musstest? |
-| Hook A | „Es läuft einfach nicht“: 2021 hab ich mein erstes Network nach drei Jahren aufgegeben ✗ |
-| Hook B | „Es läuft einfach nicht“: Nach drei Jahren hab ich mein erstes Network aufgegeben ✗ |
+| Hook A | Am Sonntagabend senkst du den Preis nochmal: „Jetzt kauft bestimmt jemand mein Network-Produkt.“ ✗ |
+| Hook B | Rabatt in der Story, und keine Reaktion. „Vielleicht ist mein Network-Produkt einfach zu teuer.“ ✓ |
 
 **Caption:**
 
-> Mein erstes Network hatte ich drei Jahre, von 2018 bis 2021. Es lief nicht, und ich habe aufgehört.
+> 2021, mein erstes Network: Ich habe in der Story einen Adventskalender gemacht und meine Produkte am Ende fast verschenkt. Reagiert hat niemand, verkauft habe ich nichts.
 >
-> 2023 habe ich neu angefangen, diesmal mit einem eigenen Plan. Ich rede über ein Thema, das meine Leute beschäftigt, und mein Produkt gehört zur Lösung dazu. Das ist bis heute der grösste Unterschied zu damals.
+> Da habe ich etwas verstanden, das mir lange gefehlt hat. Am Preis lag es nie. Die Leute wussten schlicht nicht, warum sie mein Produkt überhaupt brauchen sollten.
 >
-> Wenn du gerade ans Aufhören denkst, frag dich zuerst ehrlich: Willst du das Network loswerden, oder die Art, wie du es bisher machen musstest?
+> Und noch etwas habe ich erst im zweiten Network begriffen: Ich bin keine Verkäuferin. Ich bin im Network, und dort zählt, dass die Leute wissen, wofür du stehst und bei welchem Thema sie zu dir kommen.
+>
+> Wenn bei dir gerade niemand reagiert, frag dich ehrlich: Weiss dein Gegenüber, warum es dein Produkt braucht?
 >
 > Dein Thema zu finden ist der erste Schritt. Kommentier **NISCHE**, dann schick ich dir den Link zu meinem Nischengenerator. Er schlägt dir drei Themen vor.
 >
@@ -325,11 +327,11 @@ Möglichkeit zum Eintragen; Gratis-Angebote brauchen keine Aufwärmphase) · Fr 
 | | |
 |---|---|
 | Format | karussell |
-| Rolle | Vertrauen |
+| Rolle | Beziehung |
 | Stichwort | NISCHE |
 | Mehrwert | Tipp: drei Rückblick-Fragen auf Papier |
-| Hook A | Im Juni 54 Beiträge fürs Network. Meine Reichweite? Weniger als die Hälfte vom Februar ✗ |
-| Hook B | „Poste mehr“, hiess es im Network. Im Juni: 54 Beiträge. Die Reichweite sank ✗ |
+| Hook A | Sonntagabend, dein Post fürs Network hat wieder kaum Views: „Muss ich mehr posten?“ ✓ |
+| Hook B | Freitagabend, dein fünfter Network-Post diese Woche, wieder dieselben paar Views: „Was mach ich falsch?“ ✗ |
 
 **Folien 2–9:**
 
@@ -387,8 +389,8 @@ Möglichkeit zum Eintragen; Gratis-Angebote brauchen keine Aufwärmphase) · Fr 
 | Rolle | Beziehung |
 | Stichwort | — |
 | Mehrwert | Inspiration: ehrlicher Blick auf drei Einwände |
-| Hook A | „Ich weiss doch so viel übers Network“, sagst du. Vielleicht fehlt dir kein Wissen ✗ |
-| Hook B | Um elf noch einen Network-Tipp gespeichert. Wissen hast du längst, dir fehlt etwas anderes ✗ |
+| Hook A | „Ich schau, wie weit ich selbst komme.“ Dabei steht dein Network seit Monaten still ✗ |
+| Hook B | Voller Warenkorb: „Nicht noch mehr Geld fürs Network.“ Den Satz kenne ich gut ✗ |
 
 **Folien 2–7:**
 
@@ -418,19 +420,19 @@ Möglichkeit zum Eintragen; Gratis-Angebote brauchen keine Aufwärmphase) · Fr 
 | | |
 |---|---|
 | Format | reel · sprech |
-| Rolle | Vertrauen |
+| Rolle | Beziehung |
 | Stichwort | NISCHE |
 | Mehrwert | Tipp: zuerst einen freien Nachmittag in den Kalender |
-| Hook A | Früher hab ich jeden freien Moment fürs Network verplant. Pause? Gab's bei mir nicht ✗ |
-| Hook B | Jeden freien Moment fürs Network verplant: So sah mein Alltag mit vier Kindern aus ✗ |
+| Hook A | Vor der Schule, statt kurz durchzuatmen, denkst du: „Schnell noch einen Status fürs Network.“ ✗ |
+| Hook B | Zehn Minuten bis zum Znacht: „Die schreib ich noch schnell an, fürs Network.“ ✗ |
 
 **Caption:**
 
-> Heute arbeite ich meist vormittags, etwa drei Stunden. Montag, Dienstag und Donnerstag sind die Kinder auch nachmittags weg, und den Dienstagnachmittag nehme ich mir trotzdem frei.
+> Früher habe ich jede freie Minute fürs Network genutzt: schnell einen WhatsApp-Status, schnell noch jemanden anschreiben. Abschalten gab es kaum.
 >
-> Früher habe ich fürs Network jeden freien Moment verplant. Seit Mai 2025 gibt es keinen Monat mehr ohne Einkommen aus meiner Selbständigkeit, und das kam mit einem festen Rhythmus und einem klaren Thema.
+> Heute arbeite ich meist vormittags, etwa drei Stunden. Montag, Dienstag und Donnerstag sind die Kinder auch nachmittags weg, und den Dienstagnachmittag nehme ich mir trotzdem frei. Seit Mai 2025 gibt es keinen Monat mehr ohne Einkommen aus meiner Selbständigkeit.
 >
-> Probier es für nächste Woche: Trag dir zuerst einen freien Nachmittag ein, bevor irgendein Business-Termin hinein darf.
+> Geändert hat das ein fester Rhythmus und ein klares Thema. Probier es für nächste Woche: Trag dir zuerst einen freien Nachmittag ein, bevor irgendein Business-Termin hinein darf.
 >
 > Mein Rhythmus steht, weil mein Thema steht. Wenn deins noch fehlt: Kommentier **NISCHE**, dann schick ich dir den Link zu meinem Nischengenerator. Er schlägt dir drei Themen vor.
 >
@@ -551,19 +553,19 @@ Möglichkeit zum Eintragen; Gratis-Angebote brauchen keine Aufwärmphase) · Fr 
 | | |
 |---|---|
 | Format | reel · sprech |
-| Rolle | Vertrauen |
+| Rolle | Beziehung |
 | Stichwort | NEUSTART |
 | Mehrwert | Tipp: drei feste Punkte pro Woche |
-| Hook A | Montagmorgen, Kinder weg: Ich weiss, was diese Woche im Network dran ist ✗ |
-| Hook B | Vormittags drei Stunden fürs Network, dann ist Schluss. Mit vier Kindern geht's nicht anders ✗ |
+| Hook A | Abends nach einem Tag am Handy fürs Network: „Was hab ich eigentlich geschafft?“ ✓ |
+| Hook B | Du warst den ganzen Tag fürs Network beschäftigt. Beim Zähneputzen fragst du: „Und wofür?“ ✓ |
 
 **Caption:**
 
-> Ich habe kein starres Muster, aber einen festen Rhythmus. Ich arbeite meist vormittags, der Dienstagnachmittag gehört mir, und am Wochenanfang steht fest, was diese Woche dran ist.
+> Es gab eine Zeit, da war ich gefühlt dauernd am Handy, immer im Hustle, und am Ende kam trotzdem nichts heraus. Ich war beschäftigt, aber nicht produktiv.
 >
-> Damit muss ich nicht jeden Abend neu entscheiden, was ich poste oder verkaufe. Das spart mehr Kraft als jede zusätzliche Stunde.
+> Heute habe ich kein starres Muster, aber einen festen Rhythmus. Ich arbeite meist vormittags, der Dienstagnachmittag gehört mir, und am Wochenanfang steht fest, was diese Woche dran ist. Damit muss ich nicht jeden Abend neu entscheiden.
 >
-> Wenn du für 2027 so einen Rhythmus willst, fang mit drei festen Punkten pro Woche an: wann du arbeitest, wann du frei hast, und welcher Tag dem Verkaufen gehört.
+> Wenn du für 2027 so einen Rhythmus willst, fang mit drei festen Punkten pro Woche an: wann du arbeitest, wann du frei hast und welcher Tag dem Verkaufen gehört.
 >
 > Am Donnerstag, 17. Dezember, um 09:00 Uhr bauen wir dein Jahr gemeinsam, gratis und mit Aufzeichnung. Kommentier **NEUSTART**, dann schick ich dir den Link zur Anmeldung.
 >
@@ -593,15 +595,14 @@ Möglichkeit zum Eintragen; Gratis-Angebote brauchen keine Aufwärmphase) · Fr 
 
 Bei Stichwort-Beiträgen ist der Kommentar das Stichwort selbst. „~“ = schwächer, kein Nein.
 
-## ⚠️ Ohne freigegebenen Hook (nicht im Cockpit)
+## ⚠️ Ohne freigegebenen Hook (nicht im Cockpit), Stand 02.11. abends
 
-| Platz | Rolle | woran es hängt |
-|---|---|---|
-| Fr 13.11. 30 Bestellungen | Vertrauen | braucht deinen echten Moment mit Ort/Zeit und etwas, das wehtat |
-| Fr 20.11. Erstes Network aufgegeben | Vertrauen | dito: der Moment, in dem du 2021 aufgehört hast |
-| Di 24.11. 54 Beiträge im Juni | Vertrauen | Zahl allein reicht der Sperre nicht, es fehlt ein Moment |
-| Do 26.11. Drei Einwände | Beziehung | Einwände gelten der Sperre als Woche-4-Thema |
-| Fr 27.11. Freier Dienstagnachmittag | Vertrauen | braucht einen Moment von früher, als du jede Lücke verplant hast |
-| Fr 4.12. Fester Rhythmus | Vertrauen | dito: ein Moment, der wehtat, statt des heutigen Erfolgs |
+Patricias Entscheid 02.11.: wo kein echter Einzelmoment da ist, **Du-Hook, ihre Geschichte in der Caption**. Damit sind
+die Freitage 13.11., 20.11. und 4.12. sowie Di 24.11. jetzt Beziehungs-Beiträge. Ihre Momente stehen im Interview (I2).
+
+| Platz | woran es hängt |
+|---|---|
+| Do 26.11. Drei Einwände | die Sperre ordnet Einwände der Schubs-Woche zu, beide Fassungen fielen an der Rolle durch |
+| Fr 27.11. Jede Lücke verplant | Du-Szene mit WhatsApp-Status kommt nicht über „Küchentisch“ und Schmerz |
 
 🔗 [[hooks]] · [[auswahl]] · [[markt]]
