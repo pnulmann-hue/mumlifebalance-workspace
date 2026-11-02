@@ -29,7 +29,7 @@ Käuferinnen zur Digitalen Produktwelt (Evergreen, 333). Ab 23.11. wird **Neusta
 
 - **Painpoint (Mitte):** „Ich poste und poste, und es meldet sich niemand.“ Dazu: „Ich weiss gar
   nicht, was ich anbieten soll.“ Die Werkzeuge (Tool, KI, Freebie) stehen **nie im Hook**.
-- **Feed-Stichwörter:** `NISCHE` bis So 22.11. · KW48 Anwärmen ohne Stichwort bzw. `NISCHE` ·
+- **Feed-Stichwörter:** `NISCHE` bis So 22.11. · KW48 `NISCHE` auf Di · Mi · Fr, Mo ohne ·
   `NEUSTART` ab Mo 30.11. Andere Stichwörter laufen diesen Monat nicht.
 - **Im Feed kein Preis und kein Kursname.** Verkauft wird in Story und Mail.
 - **Stichwort nur am Schluss**, nie in Zeile 1.
@@ -49,14 +49,14 @@ Käuferinnen zur Digitalen Produktwelt (Evergreen, 333). Ab 23.11. wird **Neusta
 | **Mo 30.11.** | **Anmeldung Neustart 2027 offen**, Stichwort `NEUSTART` · KI-Kurs-Seite wieder „Kasse offen“ (geplante Aufgabe) |
 | Di 1.12. | Feed Karussell 2 Neustart (Lead, `NEUSTART`) |
 
-## Wochenfokus je Woche (Vorschlag Claude 02.11., zum Bestätigen)
+## Wochenfokus je Woche (bestätigt von Patricia am 02.11.)
 
 | KW | Garten-Stufe | Fokus in einem Satz | Stichwort |
 |---|---|---|---|
 | **KW45** 2.–8.11. | Inspiration | schon gebaut (`kw45-*-nb` im Cockpit) | `NISCHE` |
 | **KW46** 9.–15.11. | Entdecken | „Ich könnte etwas verschenken, das mir neue Kontakte bringt, ohne dass ich jemanden anschreibe.“ | `NISCHE` |
 | **KW47** 16.–22.11. | Community | „Ich bin nicht die Einzige, bei der sich niemand meldet.“ | `NISCHE` |
-| **KW48** 23.–29.11. | Anwärmen Neustart | „Was hat mir 2026 eigentlich gebracht, und was mache ich 2027 anders?“ | ohne bzw. `NISCHE` |
+| **KW48** 23.–29.11. | Anwärmen Neustart | „Was hat mir 2026 eigentlich gebracht, und was mache ich 2027 anders?“ | `NISCHE` auf 3 Beiträgen, Mo ohne (Julia: jeden Tag eine Möglichkeit zum Eintragen; Patricias Entscheid 02.11.) |
 | **KW49** 30.11.–4.12. | Einladung Neustart | „Ich will 2027 nicht wieder planlos anfangen.“ | `NEUSTART` |
 
 ## 🗃 Abgelöste Fassung vom 26.10. (Lead-Challenge + DPW-Kasse)
