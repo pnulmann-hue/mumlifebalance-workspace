@@ -83,5 +83,10 @@
   "kampagne": 907,
   "nachricht": "756",
   "name": "Nischengenerator R0 · Deine drei Themen (Feld Thema 1 ändert sich)"
+ },
+ "R1-nachtrag.html": {
+  "kampagne": 908,
+  "nachricht": "757",
+  "name": "Nischengenerator R1 · Nachtrag deine Themen (einmalig, nur Tag 108)"
  }
 }
