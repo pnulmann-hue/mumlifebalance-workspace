@@ -14,6 +14,53 @@ tags: [monatsplan, mentoring, content, hybridmodell, produktwelt, lead-challenge
 > **Was hier nicht steht, ist nicht entschieden. Nichts dazuerfinden.**
 > Storys: `kw44`–`kw49-story-m-nov-*` im Cockpit, gebaut von `scripts/launch/storys-november.py`.
 
+## 🔄 Seit 29.10.2026: Tool-Workshop statt Lead-Challenge und DPW-Kasse
+
+Patricias Entscheid 29.10. (CLAUDE.md, Abschnitt „Tool-Workshop + Nischengenerator“). Die Fassung
+vom 26.10. darunter ist **abgelöst** und bleibt nur als Herkunft stehen. Umgestellt am 02.11.2026.
+
+## Monats-Fokus (gilt)
+
+**Bau dir ein Gratis-Tool, das dir neue Kontakte bringt**, für dein Network oder dein eigenes Angebot.
+Einstieg über den **Nischengenerator** (0€, Stichwort `NISCHE` → `/nischengenerator/`), Verkauf
+**Tool-Workshop 39 CHF / 39 €**, Kasse bis **Mo 9.11. 23:59**. Danach führt die Mail-Strecke der
+Käuferinnen zur Digitalen Produktwelt (Evergreen, 333). Ab 23.11. wird **Neustart 2027** angewärmt
+(gratis Jahresplanungs-Workshop Do 17.12., Stichwort `NEUSTART` ab 30.11.).
+
+- **Painpoint (Mitte):** „Ich poste und poste, und es meldet sich niemand.“ Dazu: „Ich weiss gar
+  nicht, was ich anbieten soll.“ Die Werkzeuge (Tool, KI, Freebie) stehen **nie im Hook**.
+- **Feed-Stichwörter:** `NISCHE` bis So 22.11. · KW48 Anwärmen ohne Stichwort bzw. `NISCHE` ·
+  `NEUSTART` ab Mo 30.11. Andere Stichwörter laufen diesen Monat nicht.
+- **Im Feed kein Preis und kein Kursname.** Verkauft wird in Story und Mail.
+- **Stichwort nur am Schluss**, nie in Zeile 1.
+- **Testreels laufen daneben** (60 Stück, `outputs/reels/2026-11-testreels.json`), belegen keinen Feed-Platz.
+
+## Termine (gilt)
+
+| Datum | Was |
+|---|---|
+| So 1.11. | KI-Kurs startet (Käuferinnen sind drin) |
+| bis **Mo 9.11. 23:59** | Kasse Tool-Workshop offen |
+| **Di 10.11. + Mi 11.11.** | **Tool-Workshop live** (Tag 1 Tool bauen, Tag 2 Anmeldeseite), danach 3 Tage Begleitung |
+| ab 10.11. | Mails C1–C4 (Nischengenerator) auf die Aufzeichnung umschreiben oder pausieren |
+| Mi 18.11. | Live-Call KI-Kurs (nur Käuferinnen) |
+| **Mo 23.–So 29.11.** | **Anwärmen Neustart 2027** · Feed Mo 23.11. Reel 1 (Reichweite, ohne Stichwort) |
+| Mi 25.11. | Neustart-Seiten live (Patricias Go) |
+| **Mo 30.11.** | **Anmeldung Neustart 2027 offen**, Stichwort `NEUSTART` · KI-Kurs-Seite wieder „Kasse offen“ (geplante Aufgabe) |
+| Di 1.12. | Feed Karussell 2 Neustart (Lead, `NEUSTART`) |
+
+## Wochenfokus je Woche (Vorschlag Claude 02.11., zum Bestätigen)
+
+| KW | Garten-Stufe | Fokus in einem Satz | Stichwort |
+|---|---|---|---|
+| **KW45** 2.–8.11. | Inspiration | schon gebaut (`kw45-*-nb` im Cockpit) | `NISCHE` |
+| **KW46** 9.–15.11. | Entdecken | „Ich könnte etwas verschenken, das mir neue Kontakte bringt, ohne dass ich jemanden anschreibe.“ | `NISCHE` |
+| **KW47** 16.–22.11. | Community | „Ich bin nicht die Einzige, bei der sich niemand meldet.“ | `NISCHE` |
+| **KW48** 23.–29.11. | Anwärmen Neustart | „Was hat mir 2026 eigentlich gebracht, und was mache ich 2027 anders?“ | ohne bzw. `NISCHE` |
+| **KW49** 30.11.–4.12. | Einladung Neustart | „Ich will 2027 nicht wieder planlos anfangen.“ | `NEUSTART` |
+
+## 🗃 Abgelöste Fassung vom 26.10. (Lead-Challenge + DPW-Kasse)
+
 ## Monats-Fokus
 
 **Das Hybridmodell und die Digitale Produktwelt (333, durchgehend, keine Staffel).**
@@ -61,7 +108,7 @@ Einstieg über die **0€ Lead-Challenge** (3 Tage, WhatsApp-Gruppe) und den
 **Die echten Einwände für KW48** (Interview): *„nicht noch mehr Geld ausgeben“* ·
 *„schauen, wie weit ich selbst komme“* · dahinter *„es klappt bei mir wieder nicht“*.
 
-## Was noch fehlt, damit der Monat läuft
+## Was noch fehlt (abgelöste Fassung, Lead-Challenge entfällt)
 
 | Wer | Was | bis |
 |---|---|---|
