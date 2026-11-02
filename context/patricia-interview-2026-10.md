@@ -102,7 +102,7 @@ Status: ⬜ offen · ✅ beantwortet · ⏭ übersprungen
 
 ### Block I — Geschichten-Schatz
 - ⬜ I1 Der peinlichste Moment im Business?
-- ⬜ I2 Der Moment, in dem du fast aufgehört hättest?
+- ✅ I2 Der Moment, in dem du fast aufgehört hättest? (beantwortet 02.11.2026, siehe unten)
 - ⬜ I3 Eine Szene aus dem Familienalltag, die dein Business zeigt, ohne dass es ums Business geht.
 - ⬜ I4 Etwas, das eine Kundin gesagt hat und dir hängen geblieben ist.
 - ⬜ I5 Was hast du in den letzten 3 Monaten gelernt, das dich überrascht hat?
@@ -702,3 +702,15 @@ engagiert, eigene Ideen, eigener Vibe, setzen um. Durch alle Antworten zieht sic
 `business-info.md` und `.claude/skills/copywriting/ZIELGRUPPE.md`.
 - **Für Texte:** „meine Kundinnen" in der Gegenwart ist gedeckt. Keine Zahl nennen, die
   grösser klingt als 8 Begleitete — und „Mentees" nur für die MBA-Frauen.
+
+### I2 + Momente für Ich-Hooks · 02.11.2026
+
+Gefragt beim Bau des November-Feeds, weil die Hook-Sperre für Vertrauens-Beiträge einen echten Moment verlangt.
+
+- **2021 aufgehört (erstes Network):** *„dass einfach niemand auf den adventskalender in der story reagiert hat. keine verkäufe, nichts. nicht mal als ich die produkte fast verschenkt habe. da habe ich erkannt: es geht nicht darum, wieviel ein produkt kostet. es geht darum, dass mein gegenüber gar nicht weiss warum er dieses produkt brauchen sollte. ich bin kein Verkäufer. ich bin im Networkmarketing (DAS habe ich dann aber erst verstanden, als ich im 2. Network schon angefangen habe)"*
+- **54 Beiträge im Juni:** aufgefallen ist es ihr, *„als alle beiträge bei gleich wenig views liegen geblieben sind“*; danach hat sie alle komplett analysieren lassen.
+- **Früher jede Lücke verplant:** in freien Momenten *„whatsappstatus gemacht, leute angeschrieben“*.
+- **Zeit ohne Rhythmus:** *„ich war gefühlt dauer am handy, dauernd im hustle aber ergebnisse sind nicht rumgekommen. ich war zwar beschäftigt aber nicht produktiv“*.
+- **Vor dem ersten Gratis-Angebot (To-do-Liste halbieren):** kein besonderer Tiefpunkt (*„nein“*) — dort nichts dazuerfinden.
+- **Bestätigt:** Ihr Mann fragte wegen des Networks, ob sie sich nicht Richtung Buchhaltung selbständig machen wolle · früher jeden freien Moment fürs Network verplant.
+
