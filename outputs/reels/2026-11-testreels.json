@@ -1891,54 +1891,56 @@
    "caption": "Das war mein Teilzeitjob, bis ich ihn vor zwei Jahren gekündigt habe, als Mama von vier Kindern.\n\nHeute klappe ich um halb zwölf den Laptop zu, und dann gehört der Tag den Kindern. Wenn es mir zu warm wird, setze ich mich unter den Sonnenschirm, und an manchen Tagen arbeite ich gar nicht.\n\nIch will dir dabei nichts schönreden: Selbständig bin ich seit 2023, und regelmässig Einkommen gibt es seit Mai 2025. Dazwischen lagen viele Monate, in denen ich nicht wusste, ob es reicht.\n\nSchick das einer Mama, die heute Morgen auch wieder die Rollläden runtergelassen hat.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "115480396dca",
+     "fingerabdruck": "0624da04c91b",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: Die Rollläden sind Patricias eigenes Bild, und die Last, die Sandra wiedererkennt (Job, Network, Kinder), steht nicht im Hook, also fehlt das ‚woher weiss die das‘."
+      "gedanke_gelesen: Der Hook zählt Patricias Lage im Telegrammstil auf, spricht aber keinen Gedanken aus, den Sandra selbst denkt; das sehr eigene Rollläden-Detail spiegelt sie nur indirekt.",
+      "kuechentisch: „Abends noch das Network, vier Kinder.“ ist ein Stichwort-Fragment, kein Satz, den man so einer Freundin sagt, und als stehender Text trägt das Fragment nicht.",
+      "in_drei_sekunden_klar: Der erste Satz (Büro, Sonne, Rollläden) könnte jede Bürofrau sein; das Network kommt erst im zweiten Satz, also nach den ersten drei Sekunden."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Tag gehört dem Job, der Abend dem Network, und für sie selbst bleibt nichts: Diese Doppelbelastung kennt die Network-Mama, auch wenn der Hook sie nur andeutet."
+       "warum": "Job, Network und Kinder lassen keinen Platz für das eigene Leben; dieser Erschöpfungsschmerz gehört zu Säule 3 (Business im Mama-Alltag)."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "Die Rollläden sind Patricias eigenes Bild, und die Last, die Sandra wiedererkennt (Job, Network, Kinder), steht nicht im Hook, also fehlt das ‚woher weiss die das‘."
+       "warum": "Der Hook zählt Patricias Lage im Telegrammstil auf, spricht aber keinen Gedanken aus, den Sandra selbst denkt; das sehr eigene Rollläden-Detail spiegelt sie nur indirekt."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Der Satz klingt wie erzählt, ohne Fachwort und ohne Lehrerton."
+       "ja": false,
+       "warum": "„Abends noch das Network, vier Kinder.“ ist ein Stichwort-Fragment, kein Satz, den man so einer Freundin sagt, und als stehender Text trägt das Fragment nicht."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das ‚und‘ reiht korrekt aneinander, und ‚Abends kam das Network‘ setzt den Tag logisch fort, kein Bindewort dreht den Sinn."
+       "warum": "Kein Bindewort dreht den Sinn, der Gegensatz Sonnentag gegen Rollläden ergibt sich logisch."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Sonnenschirm von heute und das Angebot fehlen, der Hook bleibt im Problem."
+       "warum": "Es gibt weder Lösung noch Angebot, das Heute mit Sonnenschirm bleibt draussen."
       },
       "in_drei_sekunden_klar": {
-       "ja": true,
-       "warum": "Das Wort ‚Network‘ verortet den Hook sofort in der Welt der Network-Mama."
+       "ja": false,
+       "warum": "Der erste Satz (Büro, Sonne, Rollläden) könnte jede Bürofrau sein; das Network kommt erst im zweiten Satz, also nach den ersten drei Sekunden."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Ein Sonnentag, ein Büro, heruntergelassene Rollläden: Das ist ein sichtbarer Moment statt einer Behauptung."
+       "warum": "Ein Ort, ein Wetter und ein sichtbares Detail mit runtergelassenen Rollläden bilden eine echte Mikroszene."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Es ist ein Geständnis in Ich-Form mit einem Detail, das man sieht, und es ist belegt."
+       "warum": "Es ist ein Geständnis in Ich-Form mit sichtbarem Detail, laut Patricias Bestätigung vom 02.11. belegt."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Teilzeitjob plus Network daneben ist genau die Lage der Zielgruppe."
+       "warum": "Network und vier Kinder stehen beide im Hook."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricia erzählt ehrlich aus einer schweren Phase, das ist Vertrauen, und es führt zur Frage, wie lange ihr Weg gedauert hat."
+       "warum": "Patricias eigene Vorher-Geschichte ist genau die Vertrauen-Rolle und öffnet den Weg zu den echten Daten im Beitrag."
       }
      },
-     "vorschlag": "Schönster Sonnentag, ich sass hinter Rollläden im Büro. Abends noch das Network, vier Kinder.",
+     "vorschlag": "Neben dem Network noch im Büro: Beim schönsten Wetter liess ich die Rollläden runter.",
      "modell": "claude-opus-5-5"
     },
     "b": {
