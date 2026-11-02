@@ -181,7 +181,8 @@ danach zu fragen. Handarbeit bleiben nur Browser-Tabs und Papiernotizen.
 2. ✅ **`/planen` als Skill anlegen** *(02.11., 636 Zeilen aus den drei Vorgängern übernommen, Bauskript `scripts/jahresplan/planen-skill-bauen.py`; Namen und Notion-Quellen beim Übernehmen herausgezogen, Gegenprobe an beiden Enden getestet)*, `jahr|quartal|monat|woche` als Parameter. Inhalte
    aus `/jahresplan` und `/monatsplan` hineinziehen, **nichts neu schreiben**. Der
    Fragenblock wird wie heute zwischen den `FRAGEN`-Marken erzeugt.
-3. **Vier Bögen im Cockpit.** Monat und Woche existieren (`monatsbogen-bauen.py`,
+3. ◐ **Vier Bögen im Cockpit.** *(02.11. zur Hälfte: `quartalsbogen-bauen.py` neu gebaut — der Zeitraum, der ganz gefehlt hat; Dokument `daten/quartalsbogen` steht im Cockpit, in `testfassung-bauen.py` nachgetragen. **Der Reiter zum Anzeigen fehlt noch** — ein Dokument ohne Ansicht sieht niemand.)*
+   **Vier Bögen im Cockpit.** Monat und Woche existieren (`monatsbogen-bauen.py`,
    `wochenbogen-bauen.py`), Jahr kommt aus dem Jahresplaner-Artifact, Quartal ist neu.
    Je Bogen ein eigenes Dokument, **gehört Patricia** — der Abgleich schreibt nie mit
    `set` darüber (dieselbe Regel wie `daten/produkt-details`).
