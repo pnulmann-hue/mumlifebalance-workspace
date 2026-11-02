@@ -6720,7 +6720,7 @@
       trPruefung(r) +
       (r.caption ? '<details class="tr-cap"><summary>Caption lesen</summary><div class="tr-captext">' + esc(r.caption) + '</div></details>' : '') +
       '<div class="tr-knoepfe">' +
-      (r.videourl ? '<a class="btn" href="' + esc(r.videourl) + '" target="_blank" rel="noopener" download>Video speichern</a>' : '') +
+      (r.videourl ? '<button class="btn" data-tr="video">Video speichern</button>' : '') +
       '<button class="btn" data-tr="hook">Hook kopieren</button>' +
       (r.caption ? '<button class="btn" data-tr="caption">Caption kopieren</button>' : '') +
       (feedBasis ? '<button class="btn ghost" data-tr="beitrag">Feed-Beitrag öffnen</button>' : '') +
@@ -6766,6 +6766,9 @@
       Array.prototype.forEach.call(karte.querySelectorAll("[data-tr]"), function (knopf) {
         knopf.onclick = function () {
           var was = knopf.getAttribute("data-tr");
+          /* Ein Download-Link wird im Viewer gesperrt (Patricia 02.11.: „ich kann die videos nicht runterladen“),
+             deshalb über die downloads-Fähigkeit wie überall sonst im Cockpit. */
+          if (was === "video") { dateiSpeichern(r.videourl, (r.id || "testreel") + ".mp4"); return; }
           if (was === "hook") { inDieZwischenablage(r.hook || "", knopf); return; }
           if (was === "caption") { inDieZwischenablage(r.caption || "", knopf); return; }
           if (was === "beitrag") { springeZuBeitrag(beitragNach(r.testVon)); return; }

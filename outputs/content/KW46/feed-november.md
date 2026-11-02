@@ -381,60 +381,61 @@ Möglichkeit zum Eintragen; Gratis-Angebote brauchen keine Aufwärmphase) · Fr 
 >
 > #mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #networkmarketing #mumpreneur
 
-## Do 26.11. · Karussell · Drei Sätze, die aufhalten
+## Do 26.11. · Karussell · Was du 2027 weglässt
 
 | | |
 |---|---|
 | Format | karussell |
 | Rolle | Beziehung |
 | Stichwort | — |
-| Mehrwert | Inspiration: ehrlicher Blick auf drei Einwände |
-| Hook A | „Ich schau, wie weit ich selbst komme.“ Dabei steht dein Network seit Monaten still ✗ |
-| Hook B | Voller Warenkorb: „Nicht noch mehr Geld fürs Network.“ Den Satz kenne ich gut ✗ |
+| Mehrwert | Tipp: erst einen Punkt streichen, dann einen neuen dazuschreiben |
+| Hook A | Am Sonntagabend schreibst du deine Vorsätze für 2027: „Mehr posten, mehr anschreiben, mehr Network.“ ✗ |
+| Hook B | „2027 mach ich im Network einfach alles noch mehr“, sagst du beim Znacht ✓ |
 
-**Folien 2–7:**
+**Folien 2–8:**
 
-2. **1** „Ich weiss eigentlich schon so viel.“
-3. **2** „Ich schau mal, wie weit ich allein komme.“
-4. **3** „Ich will nicht noch mehr Geld ausgeben.“
-5. **Mein ehrlicher Blick** Alles, was du brauchst, kannst du dir selbst beibringen. Es braucht einfach Zeit.
-6. **Die eigentliche Frage** Wie viel Zeit hast du dafür, neben Kindern, Haushalt und vielleicht einem Job?
-7. **Welcher Satz hält dich gerade auf?** 1, 2 oder 3? Schreib mir die Zahl.
+2. **Bevor du 2027 mehr machst** Schau, was du weglassen kannst. Vier Dinge, die viel Zeit kosten und wenig bringen.
+3. **1 · Jeden Tag posten, egal was** Wenn die Leute nicht sehen, was sie bei dir bekommen, nützt die Reichweite wenig. Lieber weniger und dafür mit Mehrwert.
+4. **2 · Fremde anschreiben** Wer dich noch nicht kennt, liest deine Nachricht als Werbung. Ein Geschenk zu deinem Thema bringt sie dazu, dir zu schreiben.
+5. **3 · Bei jedem Problem das Produkt** Wenn eine Freundin erzählt, will sie zuerst gehört werden. Erzähl erst, wenn sie fragt.
+6. **4 · Jeden Abend neu entscheiden** Ein fester Rhythmus pro Woche spart mehr Kraft als jede zusätzliche Stunde.
+7. **Heute sofort tun** Streich einen Punkt von deiner Liste für 2027, bevor du einen neuen draufschreibst.
+8. **Was lässt du 2027 weg?** 1, 2, 3 oder 4? Schreib mir die Zahl.
 
 **Caption:**
 
-> Diese drei Sätze höre ich, wenn Frauen gerade überlegen, wie es weitergeht. Ich kenne sie auch von mir selbst.
+> Wenn wir ein neues Jahr planen, schreiben wir fast immer nur dazu: mehr posten, mehr anschreiben, mehr dranbleiben. Weggelassen wird selten etwas.
 >
-> Meine ehrliche Meinung: Alles, was du für dein Business brauchst, kannst du dir selbst beibringen, mit Büchern, Videos und viel Ausprobieren. Es braucht einfach Zeit.
+> Dabei steckt im Weglassen oft am meisten Zeit. Vier Dinge, die ich nicht mehr mache, stehen im Karussell: jeden Tag irgendetwas posten, Fremde anschreiben, bei jedem Problem das Produkt anbieten und jeden Abend neu entscheiden, was dran ist.
 >
-> Darum lohnt sich eine andere Frage mehr als „kann ich das allein?“: Wie viel Zeit habe ich dafür, und wie lange will ich noch suchen?
+> Probier es heute: Streich einen Punkt von deiner Liste für 2027, bevor du einen neuen draufschreibst.
 >
-> Welcher Satz hält dich gerade auf, 1, 2 oder 3? Schreib mir die Zahl.
+> Was lässt du 2027 weg, 1, 2, 3 oder 4? Schreib mir einfach die Zahl.
 >
 > Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema sichtbar wirst und das ganze Business in deinen Mama-Alltag packst.
 >
 > #mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #networkmarketing #mumpreneur
 
-## Fr 27.11. · Reel · Mein freier Dienstagnachmittag
+## Fr 27.11. · Reel · Black Friday ohne Rabatt
 
 | | |
 |---|---|
 | Format | reel · sprech |
 | Rolle | Beziehung |
 | Stichwort | NISCHE |
-| Mehrwert | Tipp: zuerst einen freien Nachmittag in den Kalender |
-| Hook A | Vor der Schule, statt kurz durchzuatmen, denkst du: „Schnell noch einen Status fürs Network.“ ✗ |
-| Hook B | Zehn Minuten bis zum Znacht: „Die schreib ich noch schnell an, fürs Network.“ ✗ |
+| Mehrwert | Tipp: statt Rabatt die häufigste Frage beantworten |
+| Hook A | Black Friday, im Network-Chat überall Rabatt-Grafiken: „Soll ich auch was runtersetzen?“ ✓ |
+| Hook B | Alle posten heute Black-Friday-Rabatte. Du fragst dich: „Muss ich mein Network-Produkt auch verschleudern?“ ✗ |
 
 **Caption:**
 
-> Früher habe ich jede freie Minute fürs Network genutzt: schnell einen WhatsApp-Status, schnell noch jemanden anschreiben. Abschalten gab es kaum.
+> Heute ist Black Friday, und überall blinkt Rabatt. Ich verstehe den Druck, mitzumachen.
 >
-> Heute arbeite ich meist vormittags, etwa drei Stunden. Montag, Dienstag und Donnerstag sind die Kinder auch nachmittags weg, und den Dienstagnachmittag nehme ich mir trotzdem frei. Seit Mai 2025 gibt es keinen Monat mehr ohne Einkommen aus meiner Selbständigkeit.
+> Ein tieferer Preis hilft aber nur, wenn jemand schon weiss, warum er dein Produkt braucht. Fehlt das, bleibt es auch mit Rabatt still, und am Ende hast du nur weniger verdient.
 >
-> Geändert hat das ein fester Rhythmus und ein klares Thema. Probier es für nächste Woche: Trag dir zuerst einen freien Nachmittag ein, bevor irgendein Business-Termin hinein darf.
+> Probier heute etwas anderes: Mach einen Beitrag ohne Rabatt und beantworte die Frage, die dir Leute zu deinem Thema am häufigsten stellen. So merken sie, wofür sie zu dir kommen.
 >
-> Mein Rhythmus steht, weil mein Thema steht. Wenn deins noch fehlt: Kommentier **NISCHE**, dann schick ich dir den Link zu meinem Nischengenerator. Er schlägt dir drei Themen vor.
+> Und wenn du dein Thema noch gar nicht weisst: Kommentier **NISCHE**, dann schick ich dir den Link zu meinem Nischengenerator. Er schlägt dir drei Themen vor.
 >
 > #mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #networkmarketing #mumpreneur
 
@@ -595,14 +596,10 @@ Möglichkeit zum Eintragen; Gratis-Angebote brauchen keine Aufwärmphase) · Fr 
 
 Bei Stichwort-Beiträgen ist der Kommentar das Stichwort selbst. „~“ = schwächer, kein Nein.
 
-## ⚠️ Ohne freigegebenen Hook (nicht im Cockpit), Stand 02.11. abends
+## ✅ Stand 02.11. abends: alle 20 Plätze im Cockpit
 
-Patricias Entscheid 02.11.: wo kein echter Einzelmoment da ist, **Du-Hook, ihre Geschichte in der Caption**. Damit sind
-die Freitage 13.11., 20.11. und 4.12. sowie Di 24.11. jetzt Beziehungs-Beiträge. Ihre Momente stehen im Interview (I2).
-
-| Platz | woran es hängt |
-|---|---|
-| Do 26.11. Drei Einwände | die Sperre ordnet Einwände der Schubs-Woche zu, beide Fassungen fielen an der Rolle durch |
-| Fr 27.11. Jede Lücke verplant | Du-Szene mit WhatsApp-Status kommt nicht über „Küchentisch“ und Schmerz |
+Patricias Entscheide 02.11.: wo kein echter Einzelmoment da ist, **Du-Hook, ihre Geschichte in der Caption**
+(Fr 13.11., Fr 20.11., Di 24.11., Fr 4.12.). Do 26.11. und Fr 27.11. haben **neue Themen**:
+„Was du 2027 weglässt“ (Wahlfrage 1–4) und „Black Friday ohne Rabatt“ (NISCHE). Ihre Momente stehen im Interview (I2).
 
 🔗 [[hooks]] · [[auswahl]] · [[markt]]
