@@ -2998,7 +2998,7 @@
    "rolle": "Beziehung",
    "mit": "Tipp: ein fester Termin pro Woche fürs Business",
    "a": [
-    "„Die ist so strukturiert. Und mein Wochenplan fürs Network liegt seit Montag rum.“",
+    "„Andere Network-Mamas sind so strukturiert. Mein Wochenplan liegt seit Montag rum.“",
     ""
    ],
    "b": [
@@ -3058,54 +3058,55 @@
      "modell": "claude-opus-5-5"
     },
     "a": {
-     "fingerabdruck": "a7c0fdb9499b",
+     "fingerabdruck": "264799bab02e",
      "bestanden": false,
      "gruende": [
-      "in_drei_sekunden_klar: „Die“ hat ohne Stimme und Kontext keinen Bezug, deshalb weiss man im stehenden Text nicht, wer gemeint ist."
+      "gegner_gestaendnis_oder_zitat: Über Patricias B-Roll gelesen ist das ein Ich-Geständnis von Patricia, das nicht belegt ist und keinen Vermerk „(nur wenn's stimmt)“ trägt.",
+      "passt_zur_rolle: Patricia steht in Ich-Form als die Chaotische im Zentrum, das ist eher ein Aufmerksamkeits-Bekenntnis; für Beziehung müsste Sandra die Heldin sein und ihr eigener Gedanke gespiegelt werden."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Vergleich mit anderen und der liegengebliebene Plan treffen das Gefühl, dass ihr eigener Einsatz keinem Plan folgt."
+       "warum": "Der Vergleich mit den scheinbar strukturierten anderen und der liegengebliebene Plan treffen ihr schlechtes Gewissen, dass ihr Einsatz keinem Plan folgt."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Diesen Vergleichsgedanken beim Scrollen denkt Sandra um 23 Uhr wörtlich so."
+       "warum": "„Die anderen kriegen das hin, nur ich nicht“ ist genau der Satz, den Sandra um 23 Uhr selbst denkt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "So umgangssprachlich und kurz sagt man das einer Freundin."
+       "warum": "Beide Sätze sind schlicht und umgangssprachlich, so sagt man es einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das „Und“ stellt die strukturierte Andere und den liegengebliebenen Plan ohne Sinndrehung nebeneinander."
+       "warum": "Der Gegensatz zwischen den strukturierten anderen und dem eigenen Plan stimmt, und es gibt kein Bindewort, das den Sinn dreht."
       },
       "loesung_draussen": {
        "ja": true,
        "warum": "Der feste Termin pro Woche taucht im Hook nicht auf."
       },
       "in_drei_sekunden_klar": {
-       "ja": false,
-       "warum": "„Die“ hat ohne Stimme und Kontext keinen Bezug, deshalb weiss man im stehenden Text nicht, wer gemeint ist."
+       "ja": true,
+       "warum": "„Network-Mamas“ steht direkt im ersten Satz und verortet die Welt sofort."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Der Wochenplan, der seit Montag herumliegt, ist ein sichtbares, konkretes Detail statt einer Behauptung."
+       "warum": "Der Wochenplan, der seit Montag herumliegt, ist ein sichtbares Detail mit Zeitanker statt einer Behauptung."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": true,
-       "warum": "Der Hook ist ein Zitat aus ihrem inneren Monolog, und der Vergleich mit anderen ist der Gegner."
+       "ja": false,
+       "warum": "Über Patricias B-Roll gelesen ist das ein Ich-Geständnis von Patricia, das nicht belegt ist und keinen Vermerk „(nur wenn's stimmt)“ trägt."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "„fürs Network“ verortet den Hook in der Network-Welt."
+       "warum": "Der Hook nennt Network-Mamas ausdrücklich und spricht ihren Alltag an."
       },
       "passt_zur_rolle": {
-       "ja": true,
-       "warum": "Sie ist mit ihrem eigenen Gedanken die Heldin, und der Beitrag kann eine neue Sicht auf Struktur geben."
+       "ja": false,
+       "warum": "Patricia steht in Ich-Form als die Chaotische im Zentrum, das ist eher ein Aufmerksamkeits-Bekenntnis; für Beziehung müsste Sandra die Heldin sein und ihr eigener Gedanke gespiegelt werden."
       }
      },
-     "vorschlag": "„Andere Network-Mamas sind so strukturiert. Mein Wochenplan liegt seit Montag rum.“",
+     "vorschlag": "Dein Wochenplan liegt seit Montag rum, und du denkst: Die anderen Network-Mamas sind strukturierter.",
      "modell": "claude-opus-5-5"
     }
    }

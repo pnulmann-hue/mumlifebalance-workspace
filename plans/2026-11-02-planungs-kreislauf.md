@@ -64,6 +64,26 @@ entsteht: der Task **bleibt an**, bis `/planen monat` steht und einmal durchgela
 ist — dann wird er abgeschaltet und archiviert, nicht vorher. Sonst baut drei Wochen
 lang nichts mehr automatisch.
 
+**Warum Monat und nicht Woche** (Patricia war unsicher, 02.11.: *„bin mir voll
+unsicher. mein veto ja immer: so wenig aufwand wie möglich. monatsplanung wäre mir
+schon symphatischer"*). Drei Belege statt Geschmack:
+
+1. **Der Freitags-Task lief vom 18.09. bis 02.11. nicht — und es ist niemandem
+   aufgefallen.** Ein Taktgeber, dessen Ausfall man nicht merkt, war keiner.
+2. **Die Begründung für „wöchentlich" trifft hier nicht.** Sie steht in CLAUDE.md
+   („Live-Posts brauchen Frische, Trends müssen reagiert werden, Pre-Sale-Signale aus
+   Woche 1 ändern Wochen 2–4"), aber Patricias Beiträge leben von eigenen Szenen und
+   Hooks aus dem Markt-Paket, nicht von Tagestrends. Reaktionsfähig bleibt sie über
+   Testreels und Storys, und ein Platz lässt sich jederzeit umhängen.
+3. **Julia baut im Block:** *„Unternehmertum: einmal durchziehen, dann chillen"* —
+   20 Stunden am Stück für drei Monate Content. Dazu aus `zeit.md`:
+   *„eins, zwei, drei zu viel"*, eine Stunde fokussiert schlägt einen Tag Herumtrödeln.
+
+🚨 **Eine Sache bleibt wöchentlich — der Treffer-Check.** Hat ein Beitrag in 14 Tagen
+≥ 2× den eigenen Median erreicht, gehören die nächsten zwei bis drei Plätze
+Folge-Beiträgen (`/content` Schritt 2b). Das braucht **keinen eigenen Task**: der
+tägliche Abgleich um 06:15 sieht die Zahlen ohnehin und meldet es per Telegram.
+
 🚨 **Zwei Sätze in CLAUDE.md werden damit falsch** und gehören nachgezogen:
 „Strategie monatlich, Konkretion wöchentlich" (Abschnitt `/monatsplan`) und
 „🤖 Automatik (Normalfall): Fr 08:00" (Abschnitt `/content`).
@@ -87,10 +107,14 @@ Die Vorlage verlinkt eine Tagesansicht; das ist der **Tagesplaner**
   „Herausforderung letzte Woche" werden aus den sieben Learnings vorbelegt, statt
   gefragt zu werden. Genau das meint „nur fragen, was sich nicht ableiten lässt".
 
-🚨 **Vor dem Bau zu klären: steht das Cockpit privat?** CLAUDE.md sagt an einer Stelle
-„seit 27.10. privat", an einer anderen „steht auf Anyone with the link" — und dort
-liegen 32 Klarnamen. Solange das offen ist, geht kein Journaling hinein. Sehen kann das
-nur Patricia im Share-Menü.
+✅ **Das Cockpit steht privat** (Patricia bestätigt, 02.11.2026). Damit darf das
+Journaling hinein. Die widersprüchliche Stelle in CLAUDE.md („steht auf Anyone with the
+link") ist am 02.11. korrigiert.
+
+✅ **Der Notion-Tagesplaner wird stillgelegt** (Patricia, 02.11.: *„wird stillgelegt.
+will es nur noch übers cockpit machen"*) — also kein Zweitort, nach der Regel „jedes
+Feld hat genau einen Ort". Die Notion-DB bekommt einen Umzugshinweis und bleibt nur
+noch Archiv, wie die Garten-Datenbanken seit dem 25.10.
 
 ---
 
@@ -275,13 +299,15 @@ hingeschrieben.
    Privates in einen eigenen Reiter, und die Tageseinträge belegen die
    Wochen-Reflexion vor.
 
+4. **Der Content wird im Monat gebaut, nicht in der Woche** — Begründung oben.
+   Wöchentlich bleibt nur der Treffer-Check, und den macht der 06:15-Abgleich.
+5. **Das Cockpit steht privat**, das Journaling darf hinein.
+6. **Der Notion-Tagesplaner wird stillgelegt**, kein Zweitort.
+
 ## Offen — gehört Patricia
 
-1. **Steht das Cockpit privat oder auf „Anyone with the link"?** Muss geklärt sein,
-   bevor Journaling und Tagesroutinen hineinwandern.
-2. **Bleibt der Notion-Tagesplaner als Zweitort stehen** oder wird er nach dem Umzug
-   stillgelegt? Nach der Regel „jedes Feld hat genau einen Ort" wäre Stilllegen richtig
-   — aber es ist ihre täglich benutzte Ansicht, und das entscheidet sie.
+Zum jetzigen Stand nichts mehr. Der Plan ist entscheidungsreif; was beim Bauen
+auftaucht, kommt hierher.
 
 ---
 
