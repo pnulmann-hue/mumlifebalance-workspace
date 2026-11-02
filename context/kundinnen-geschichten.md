@@ -91,3 +91,20 @@ Patricia bekommt das meiste als **Sprachnachricht**. Der einfachste Weg:
 
 **Die drei Kaufgründe in ihren Worten:** 1. *„jetzt oder nie"* · 2. *Vertrauen, weil Patricia „aus eigenen Erfahrungen spricht"* und in derselben Lage ist (mehrere Kinder, Network, Selbständigkeit) · 3. *„ins Tun kommen"* mit Gruppe und Calls, *„nicht alles alleine"*.
 **Für einen Beitrag fehlt noch:** Freigabe · ein erstes Ergebnis aus der MBA.
+
+### Kundin C · Nischengenerator (0€) · 02.11.2026
+
+| | |
+|---|---|
+| **Angebot** | Nischengenerator (mlb-nischengenerator.vercel.app), Freebie zum Tool-Workshop. Sie ist Teampartnerin im doTERRA-Team, keine zahlende Kundin |
+| **Vorher** | Sie hat schon andere Tools von Patricia benutzt (*„es isch jo immer irgendwie hilfriich“*) |
+| **Was sie gemacht hat** | Den Nischengenerator zweimal durchlaufen und die Antworten **per Sprachnachricht hineingesprochen** statt getippt |
+| **Nachher** | Drei Themen mit Experten-Satz. Ihr gespeicherter Satz: „Ich helfe Familien mit Schulkindern dabei, die Natur und die Jahreszeiten in ihren Alltag zu holen …“ |
+| **Wortlaut** | *„muen säge, da sch bes ez s'geilschte Tool 😏 nei, esch jo emmer egendwie hilfriich, aber dasmal heter echt so cools Züüg usgspuckt (i han aber au per Sprachnachricht driigschwätzt und denn beni meischtens au usführlicher, als weni muen vo Hand schriibe 😏)“* |
+| **Auf Hochdeutsch** | „Muss sagen, das ist bis jetzt das geilste Tool. Nein, es ist ja immer irgendwie hilfreich, aber diesmal hat es echt so coole Sachen ausgespuckt (ich habe aber auch per Sprachnachricht reingeredet, und dann bin ich meistens auch ausführlicher, als wenn ich von Hand schreibe).“ *(Übersetzung, nicht Wortlaut)* |
+| **Quelle** | Screenshot einer Chat-Nachricht, 02.11.2026, von Patricia im Chat geteilt |
+| **Freigabe** | offen, bis dahin nur anonym |
+| **Passt zu** | **Nischengenerator** (Anmeldeseite, Pin-Karussell NISCHE, Storys) und **Tool-Workshop** (Beweis, dass ein Tool mehr gibt als ein PDF). Dazu ein Tipp für die Seite: **Antworten einsprechen statt tippen** gibt ausführlichere Angaben und bessere Themen |
+| **Schon verwendet** | — |
+
+**Für einen Beitrag fehlt noch:** Freigabe · welches der drei Themen sie nimmt.
