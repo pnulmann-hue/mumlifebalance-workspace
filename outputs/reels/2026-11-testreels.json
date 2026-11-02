@@ -1878,7 +1878,7 @@
    "akzent": "orange",
    "cta": "Schick das einer Network-Freundin",
    "a": [
-    "„Ich sag kurz, was ich im Network mache.“ Fünf Minuten später: immer noch Produkte.",
+    "„Was machst du im Network?“ Fünf Minuten später redest du immer noch über Produkte.",
     ""
    ],
    "b": [
@@ -1891,54 +1891,52 @@
    "belegt": "",
    "pruefung": {
     "a": {
-     "fingerabdruck": "9cb609517a6d",
-     "bestanden": false,
-     "gruende": [
-      "mikro_szene: Über Patricias eigenem Alltags-B-Roll liest man die Ich-Form als ihre eigene Szene. Diese ist nicht belegt und trägt keinen Vermerk „(nur wenn's stimmt)“."
-     ],
+     "fingerabdruck": "3185d54dedfe",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Sie will kurz erklären, was sie macht, und landet doch wieder bei den Produkten. Das trifft den Kern-Pain: Sie hat keine eigene Marke, nur Copy-Paste."
+       "warum": "Sie kann nicht in einem Satz sagen, was sie selbst bietet, und verschwindet hinter den Produkten. Das trifft den Pain von Säule 1, Personal Brand statt Copy-Paste."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Das Abschweifen in Produktdetails kennt sie von sich selbst und hat es sich nie so ehrlich eingestanden."
+       "warum": "Das Abschweifen in die Produkt-Erklärung ist ein Moment, den sie kennt und sich selten eingesteht. Er ist so genau beschrieben, dass er sich ertappt anfühlt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Kurz, selbstironisch und mündlich, so erzählt man es einer Freundin."
+       "warum": "Eine Alltagsfrage und ein trockener Folgesatz, genau so erzählt man es einer Freundin mit Augenzwinkern."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Es gibt kein Bindewort, und der Zeitsprung „Fünf Minuten später“ stellt den Gegensatz zu „kurz“ sauber her."
+       "warum": "Die Frage und die Reaktion fünf Minuten später hängen zeitlich und logisch zusammen. Es gibt kein Bindewort, das den Sinn dreht."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Ein-Satz-Tipp kommt im Hook nicht vor, er zeigt nur das Problem."
+       "warum": "Der Hook zeigt nur das Problem. Der Ein-Satz-Tipp kommt erst im Beitrag."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Im Network“ und „Produkte“ verorten die Welt sofort, auch ohne Vorwissen."
+       "warum": "„Im Network“ und „Produkte“ verorten die Welt sofort, auch ohne Vorwissen über Patricia."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "Über Patricias eigenem Alltags-B-Roll liest man die Ich-Form als ihre eigene Szene. Diese ist nicht belegt und trägt keinen Vermerk „(nur wenn's stimmt)“."
+       "ja": true,
+       "warum": "Es ist ein konkreter Moment: jemand fragt, und fünf Minuten später redet sie immer noch. Das ist keine abstrakte Behauptung."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook trägt ein wörtliches Zitat plus Geständnis, und der Gegner ist das Produkt-Erklären statt sich selbst zu zeigen."
+       "warum": "Die Frage „Was machst du im Network?“ ist ein wörtliches Zitat. Dazu kommt der Produkt-Fokus als Denkfehler und damit als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Die Situation gibt es so nur im Network, beim Erklären des eigenen Tuns."
+       "warum": "Der Hook benennt das Network ausdrücklich und trifft die typische Situation einer Beraterin."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Der Hook liefert eine neue Sicht für die Beziehungs-Rolle: Sie erklärt Produkte statt sich selbst, und der Tipp führt dorthin."
+       "warum": "Der Hook eröffnet eine neue Sicht: sie soll über sich reden statt über Produkte. Sie bleibt die Heldin, und Patricia gibt nur den Tipp. Das passt zur Beziehung."
       }
      },
-     "vorschlag": "„Was machst du im Network?“ Fünf Minuten später redest du immer noch über Produkte.",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     },
     "b": {
@@ -2993,14 +2991,14 @@
    "clip": "garten-graben-ton",
    "ab": 2.0,
    "dauer": 7.5,
-   "hoehe": 25,
+   "hoehe": 13,
    "stil": "karte",
    "akzent": "orange",
    "cta": "Folg mir, wenn du dich wiedererkennst",
    "rolle": "Beziehung",
    "mit": "Tipp: ein fester Termin pro Woche fürs Business",
    "a": [
-    "„Die ist so strukturiert, und ich?“ Mein Wochenplan fürs Network liegt seit Montag rum.",
+    "„Die ist so strukturiert. Und mein Wochenplan fürs Network liegt seit Montag rum.“",
     ""
    ],
    "b": [
