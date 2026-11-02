@@ -174,11 +174,11 @@ danach zu fragen. Handarbeit bleiben nur Browser-Tabs und Papiernotizen.
 
 ## Die Schritte
 
-1. **`fragen.json` auf vier Zeiträume erweitern.** Heute liegen dort nur die
+1. ✅ **`fragen.json` auf vier Zeiträume erweitern.** *(02.11., Jahr unverändert übernommen, Seite und Skill byte-identisch gegengeprüft)* Heute liegen dort nur die
    Jahres-Fragen (`scripts/jahresplan/fragen.json`), und sie sind **die eine Quelle**
    für Seite, Skill und künftig Cockpit-Bogen. Dazu kommen Quartal, Monat (die acht aus
    `/monatsplan`) und Woche (die Felder und Blöcke oben).
-2. **`/planen` als Skill anlegen**, `jahr|quartal|monat|woche` als Parameter. Inhalte
+2. ✅ **`/planen` als Skill anlegen** *(02.11., 636 Zeilen aus den drei Vorgängern übernommen, Bauskript `scripts/jahresplan/planen-skill-bauen.py`; Namen und Notion-Quellen beim Übernehmen herausgezogen, Gegenprobe an beiden Enden getestet)*, `jahr|quartal|monat|woche` als Parameter. Inhalte
    aus `/jahresplan` und `/monatsplan` hineinziehen, **nichts neu schreiben**. Der
    Fragenblock wird wie heute zwischen den `FRAGEN`-Marken erzeugt.
 3. **Vier Bögen im Cockpit.** Monat und Woche existieren (`monatsbogen-bauen.py`,
