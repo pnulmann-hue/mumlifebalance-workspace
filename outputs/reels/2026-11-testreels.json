@@ -1689,56 +1689,55 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "1ad036bc6e92",
+     "fingerabdruck": "a8e5f36c1701",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: Der Hook gibt nur wieder, was die Upline sagt, und nicht, was sie dabei fühlt: das belegte «fühlte sich durch und durch falsch an» fehlt.",
-      "mikro_szene: «Nach jedem Teamcall» beschreibt eine wiederkehrende Gewohnheit und keinen einzelnen Moment mit sichtbarem Detail.",
-      "passt_zur_rolle: Vertrauen braucht Patricias eigene Geschichte in Ich-Form, der Hook bleibt aber unpersönlich und zeigt nicht, dass sie es selbst getan hat."
+      "kuechentisch: Der Telegrammstil ohne Subjekt («Liste geschrieben, alle angeschrieben, wie … gesagt») klingt als stehender Text abgehackt, nicht wie ein Satz zur Freundin.",
+      "mikro_szene: Es ist eine Aufzählung von Handlungen ohne zeitlichen Anker. Ein konkreter Moment wie «nach dem Teamcall» fehlt im Satzbau."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Satz der Upline trifft den bekannten Druck, die eigene Liste mit Freundinnen und Familie abzuarbeiten."
+       "warum": "Das ungute Gefühl, die eigene Kontaktliste nach Vorgabe abzuarbeiten, kennt fast jede Network-Mama."
       },
       "gedanke_gelesen": {
-       "ja": false,
-       "warum": "Der Hook gibt nur wieder, was die Upline sagt, und nicht, was sie dabei fühlt: das belegte «fühlte sich durch und durch falsch an» fehlt."
+       "ja": true,
+       "warum": "Dass sich das Anschreiben falsch anfühlt, denkt sie heimlich und sagt es im Team nie laut."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Man würde das so erzählen, auch wenn «Network-Teamcall» etwas steif klingt."
+       "ja": false,
+       "warum": "Der Telegrammstil ohne Subjekt («Liste geschrieben, alle angeschrieben, wie … gesagt») klingt als stehender Text abgehackt, nicht wie ein Satz zur Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das Zitat und die Einordnung hängen sauber zusammen, kein Bindewort dreht den Sinn."
+       "warum": "Das «Und» verbindet die Handlung mit dem Gefühl danach, ohne den Sinn zu verdrehen."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Weder der Tipp «Thema vor Produkt» noch ein Angebot steht im Hook."
+       "warum": "Der Hook enthält weder einen Tipp noch ein Angebot, das Thema-vor-Produkt-Prinzip kommt erst später."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "«Network-Teamcall» verortet die Welt sofort."
+       "warum": "«Network-Teamcall» verortet die Szene sofort in der Network-Welt."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "«Nach jedem Teamcall» beschreibt eine wiederkehrende Gewohnheit und keinen einzelnen Moment mit sichtbarem Detail."
+       "warum": "Es ist eine Aufzählung von Handlungen ohne zeitlichen Anker. Ein konkreter Moment wie «nach dem Teamcall» fehlt im Satzbau."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Das Upline-Zitat ist ein Zitat, und die Listen-Methode ist der Gegner."
+       "warum": "Es ist ein Geständnis in der Ich-Perspektive, und die Methode «Liste anschreiben» dient als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Die Listen-Methode nach dem Teamcall ist ein typisches Network-Erlebnis."
+       "warum": "Die Kontaktliste und der Teamcall sind typisch für den Network-Alltag."
       },
       "passt_zur_rolle": {
-       "ja": false,
-       "warum": "Vertrauen braucht Patricias eigene Geschichte in Ich-Form, der Hook bleibt aber unpersönlich und zeigt nicht, dass sie es selbst getan hat."
+       "ja": true,
+       "warum": "Patricia erzählt hier ehrlich eine eigene, belegte Geschichte, und genau das trägt die Rolle Vertrauen."
       }
      },
-     "vorschlag": "Nach dem Network-Teamcall hab ich alle angeschrieben. Es fühlte sich so falsch an.",
+     "vorschlag": "Nach dem Network-Teamcall hab ich alle angeschrieben. Und es fühlte sich falsch an.",
      "modell": "claude-opus-5-5"
     }
    },
