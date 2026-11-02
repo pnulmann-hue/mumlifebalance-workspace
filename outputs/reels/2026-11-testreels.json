@@ -1632,7 +1632,7 @@
     ""
    ],
    "b": [
-    "„Schreib die Liste, schreib alle an.“ So hiess es nach jedem Network-Teamcall.",
+    "Liste geschrieben, alle angeschrieben, wie im Network-Teamcall gesagt. Und es fühlte sich falsch an.",
     ""
    ],
    "rolle": "Vertrauen",
@@ -1880,11 +1880,11 @@
    "akzent": "orange",
    "cta": "Schick das einer Mama im Büro",
    "a": [
-    "Schönstes Wetter, und ich hab im Büro die Rollläden runtergelassen. Abends kam das Network.",
+    "Schönster Sonnentag, ich sass hinter Rollläden im Büro. Abends noch das Network, vier Kinder.",
     ""
    ],
    "b": [
-    "„Mach dein Network halt nebenbei.“ Nebenbei hiess: Sonne draussen, ich im Büro hinter Rollläden.",
+    "„Mach dein Network halt nebenbei.“ Neben meinem Bürojob hiess das: Rollläden runter, Sonne aussperren.",
     ""
    ],
    "rolle": "Vertrauen",
@@ -2134,11 +2134,11 @@
    "rolle": "Vertrauen",
    "mit": "Inspiration: das Thema liegt im eigenen Alltag",
    "a": [
-    "Neben dem Network hab ich am Küchentisch alles aufgeschrieben, Raum für Raum, hochschwanger.",
+    "Hochschwanger schrieb ich meinem Mann eine Liste, sie wurde mein Eigenes neben dem Network.",
     ""
    ],
    "b": [
-    "„Bügelstation entkalken“ stand auf meiner Küchentisch-Liste. Mein erstes Eigenes neben dem Network.",
+    "Hochschwanger am Küchentisch: „Bügelstation entkalken“. Daraus wurde mein erstes Angebot neben dem Network.",
     ""
    ],
    "caption": "Die Liste sollte nur dafür sorgen, dass zu Hause alles weiterläuft, während ich im Spital bin.\n\nBeim Schreiben habe ich gemerkt, wie viel ich als Mama nebenbei organisiere, und danach habe ich meinen Alltag so umgebaut, dass alles aufgeht und Zeit für mich bleibt.\n\nGenau daraus ist mein erstes eigenes Angebot entstanden. Es ging um das, was ich ohnehin jeden Tag gemacht habe. Über dieses Angebot kam ich mit Mamas ins Gespräch, die ich vorher nicht kannte, und erst danach kam mein Network-Produkt zur Sprache.\n\nWenn du wissen willst, was in deinem Alltag steckt: Mein Nischengenerator schlägt dir drei Themen vor.\n\nKommentier NISCHE, dann schick ich dir den Link.",
@@ -2267,11 +2267,11 @@
    "rolle": "Beziehung",
    "mit": "Tipp: die häufigste Frage ist das Thema",
    "a": [
-    "„Wie schaffst du das?“, fragt die Nachbarin. Und du postest wieder ein Network-Produkt.",
+    "„Wie schaffst du das mit vier Kindern?“ Und ich postete drei Jahre nur Network-Produkte.",
     ""
    ],
    "b": [
-    "„Mein Alltag interessiert doch keinen.“ Also postest du um elf das nächste Network-Produktbild.",
+    "„Mein Alltag interessiert doch keinen“, dachte ich und postete Produktbilder meiner Network-Firma.",
     ""
    ],
    "caption": "Lange habe ich diese Frage einfach weggelächelt, als wäre sie ein Kompliment und sonst nichts.\n\nDabei war sie der deutlichste Hinweis, den ich je bekommen habe. Die Leute wollten von mir wissen, wie ich Alltag, Kinder und Arbeit unter einen Hut bringe, und genau darüber habe ich angefangen zu reden.\n\nSchau mal, welche Frage dir am häufigsten gestellt wird. Eine Frage zu dir, nicht zu deinem Produkt. Dort liegt sehr oft dein Thema.\n\nMein Nischengenerator hilft dir, diese Spur in drei Themen zu übersetzen.\n\nKommentier NISCHE, dann schick ich dir den Link.",
@@ -2519,11 +2519,11 @@
    "rolle": "Beziehung",
    "mit": "Inspiration: Reaktion zählt mehr als Reichweite",
    "a": [
-    "„Hunderte schauen, und keine schreibt.“ Um elf starrst du auf dein Network-Video ohne Kommentar.",
+    "„Hunderte schauen meinen Network-Beitrag, und niemand schreibt.“ Elf Uhr, immer noch kein Kommentar.",
     ""
    ],
    "b": [
-    "„Hat das überhaupt jemand gelesen?“ Null Kommentare unter deinem Network-Beitrag, wieder einmal.",
+    "„Hat das überhaupt jemand gelesen?“ Wieder kein einziger Kommentar unter deinem Network-Post.",
     ""
    ],
    "caption": "Das ist mir im Oktober passiert, mit einem ganz normalen Reel aus meinem Alltag.\n\nViele haben es gesehen, kaum jemand hat reagiert. Gesehen werden ist eben noch nicht dasselbe wie gemeint sein. Wer sich angesprochen fühlt, schreibt etwas, und wer nur kurz hängen bleibt, scrollt weiter.\n\nSeitdem schaue ich bei jedem Beitrag zuerst, ob er einer bestimmten Mama etwas Konkretes mitgibt, und erst dann, wie weit er läuft.\n\nWenn du dich hier wiedererkennst, bleib hier.",
@@ -2647,7 +2647,7 @@
    "rolle": "Aufmerksamkeit",
    "mit": "Tipp: verkaufen geht ohne grosse Zahlen",
    "a": [
-    "„Um elf noch gepostet. Mit 10'000 Followern würde endlich jemand im Network kaufen.“",
+    "Um elf noch fürs Network gepostet. Mit 10'000 Followern würde endlich jemand kaufen.",
     ""
    ],
    "b": [
@@ -2772,7 +2772,7 @@
    "rolle": "Vertrauen",
    "mit": "Warum mit mir: ehrliche Zahlen statt Glanz",
    "a": [
-    "„Teures Hobby“, sagte mein Mann lange über mein Network. Heute schweigt er.",
+    "Mein Mann hat das Network-Paket aus dem Briefkasten gebracht: „Teures Hobby.“",
     ""
    ],
    "b": [
@@ -2883,7 +2883,7 @@
      "modell": "claude-opus-5-5"
     }
    },
-   "belegt": "Patricias Mann machte lange Sprüche über ihr Network, wörtlich zum Beispiel «teures Hobby», «du würdest doch besser wieder ein paar Beistandschaften machen», «willst du dich nicht Richtung Buchhaltung selbständig machen?» (sie war im KV, in der Sozialberatung, kennt sich in rechtlichen Dingen aus; für ihn war klar, dass man nicht einfach etwas komplett anderes tut). Heute macht er keinen Spruch mehr. Quelle: Patricia im Chat 01.11.2026"
+   "belegt": "Patricias Mann machte lange Sprüche über ihr Network, wörtlich zum Beispiel «teures Hobby», «du würdest doch besser wieder ein paar Beistandschaften machen», «willst du dich nicht Richtung Buchhaltung selbständig machen?» (sie war im KV, in der Sozialberatung, kennt sich in rechtlichen Dingen aus; für ihn war klar, dass man nicht einfach etwas komplett anderes tut). Heute macht er keinen Spruch mehr. Quelle: Patricia im Chat 01.11.2026 Konkreter Moment: Ihr Mann hat ein Network-Paket aus dem Briefkasten geholt, es ihr gebracht und «teures Hobby» gesagt. Quelle: Patricia im Chat 02.11.2026"
   },
   {
    "nr": "14",
@@ -2903,7 +2903,7 @@
     ""
    ],
    "b": [
-    "Eine SRF-Sendung über Frauen, die im Alter arm sind. Mein Network hätte nie gereicht.",
+    "Auf der Gemeinde hörte ich oft von armen Rentnerinnen. Mein Network hätte nie gereicht.",
     ""
    ],
    "caption": "Das klingt hart, und trotzdem war es einer meiner wichtigsten Gründe für die Selbständigkeit.\n\nMit Teilzeit, Kindern und einem kleinen Network-Einkommen bleibt fürs Alter oft wenig, das wirklich dir gehört. Das ist kein Misstrauen gegen den Partner, das ist Vorsorge.\n\nSeit Mai 2025 gibt es bei mir keinen Monat mehr ohne Einkommen aus meiner Selbständigkeit. Der Weg dorthin hat mit einem eigenen Thema angefangen.\n\nWenn du deins suchst, schlägt dir mein Nischengenerator drei vor.\n\nKommentier NISCHE, dann schick ich dir den Link.",
@@ -3027,11 +3027,11 @@
    "rolle": "Vertrauen",
    "mit": "Warum mit mir: es geht mit wenig Zeit",
    "a": [
-    "„Keine Zeit fürs Network?“ Ich arbeite von acht bis elf, mehr hab ich nicht.",
+    "„Dafür hab ich keine Zeit.“ Um elf Uhr morgens ist mein Network-Tag vorbei.",
     ""
    ],
    "b": [
-    "Von acht bis elf, mehr Zeit hab ich mit vier Kindern nicht fürs Network.",
+    "„Neben den Kindern bleibt keine Zeit fürs Network.“ Ich hab vier, und drei Stunden.",
     ""
    ],
    "caption": "Vier Kinder, ein Haushalt und ein Garten, der nie fertig wird. Mehr als rund 18 Stunden pro Woche gibt mein Leben gerade nicht her.\n\nDeshalb mache ich nicht alles, was man angeblich machen muss. Ich mache weniger, dafür das Richtige, und das Wichtigste läuft über einen festen Rhythmus.\n\nWenig Zeit ist kein Grund, es nicht zu tun. Sie ist ein Grund, es klüger zu tun.\n\nWenn du dich hier wiedererkennst, bleib hier.",
