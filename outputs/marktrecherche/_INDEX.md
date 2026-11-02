@@ -71,11 +71,11 @@ Auto-Index aller Files in `outputs/marktrecherche/`. Siehe [[_MOCs/MOC-Markt-Res
 
 ### 📁 2026-07-doterra-hormonwechsel
 
+- [[_INDEX]]
 - [[01-marktanalyse]]
 - [[02-monatsfokus-und-plan]]
 - [[03-hooks-und-captions]]
 - [[README]]
-- [[_INDEX]]
 
 ### 📁 radar
 

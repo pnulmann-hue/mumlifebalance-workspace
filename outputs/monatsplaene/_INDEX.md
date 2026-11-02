@@ -9,11 +9,11 @@ Auto-Index aller Files in `outputs/monatsplaene/`. Siehe [[_MOCs/MOC-Produkte-Fu
 ## Dateien
 
 - [[2026-05]]
+- [[2026-06]]
 - [[2026-06-content-radar-alle-hook-varianten]]
 - [[2026-06-content-radar-rohdaten]]
-- [[2026-06-mentoring-monatsplan-v2-bootcamp]]
 - [[2026-06-mentoring-monatsplan]]
-- [[2026-06]]
+- [[2026-06-mentoring-monatsplan-v2-bootcamp]]
 - [[2026-08]]
 - [[2026-09-doterra]]
 - [[2026-09-mentoring]]

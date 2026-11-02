@@ -4,6 +4,9 @@ tags: [plan, automation, monatsplan]
 
 # Monatsabschluss-Automatik — am Letzten ist der nächste Monat geplant
 
+> 🔄 **Abgelöst am 02.11.2026 durch [[2026-11-02-planungs-kreislauf]].** Dieser Plan wurde nie gebaut. Sein Design (Phase A/B/C, die vier Ebenen, die Recycling-Logik) und die beiden
+> von Patricia bestätigten doTERRA-Entscheide sind dort **übernommen** — erweitert auf Jahr, Quartal und Woche, und ohne Notion.
+
 **Erstellt:** 2026-09-14 · **Auftrag von Patricia:** Am vorletzten Tag des Monats
 holt ein Task automatisch alle Zahlen, trägt sie nach, schlägt Recycling-Posts
 fixfertig im Cockpit vor — und legt die Fragen hin, die es braucht, um den

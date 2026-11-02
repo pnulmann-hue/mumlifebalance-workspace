@@ -10,6 +10,10 @@ Auto-Index aller Files in `outputs/reels/`. Siehe [[_MOCs/MOC-Content-Engine]] f
 
 - [[2026-04-23-do-doterra-3-17-uhr-reel]]
 - [[2026-04-23-do-mentoring-posten-angst-reel]]
+- [[20260428-mentoring-rm5-erste-mama-business-briefing]]
+- [[20260428-mentoring-rm5-skript-drehbuch]]
+- [[20260430-mentoring-rm8-skript-drehbuch]]
+- [[20260430-mentoring-rm8-waescheberge-kundinnen-briefing]]
 - [[2026-05-04-doterra-monatsfokus-3-uhr-symptome-briefing]]
 - [[2026-05-04-doterra-monatsfokus-3-uhr-symptome-skript-drehbuch]]
 - [[2026-05-04-doterra-monatsfokus-koerper-ueberhoert-briefing]]
@@ -43,21 +47,16 @@ Auto-Index aller Files in `outputs/reels/`. Siehe [[_MOCs/MOC-Content-Engine]] f
 - [[2026-10-27-mentoring-sprechreel-vier-kinder-frage]]
 - [[2026-10-31-radar-reels]]
 - [[2026-11-sprechreels]]
-- [[2026-11-testreels]]
 - [[2026-KW17-doterra-hot-take-salat-reicht-nicht]]
 - [[2026-KW17-doterra-koerper-schreit]]
 - [[2026-KW17-doterra-pov-7-min-abendroutine]]
 - [[2026-KW17-mentoring-3-schritte-lead-magnet]]
 - [[2026-KW17-mentoring-hoer-auf-produkte-posten]]
 - [[2026-KW17-mentoring-pov-posting-queue-montag]]
-- [[20260428-mentoring-rm5-erste-mama-business-briefing]]
-- [[20260428-mentoring-rm5-skript-drehbuch]]
-- [[20260430-mentoring-rm8-skript-drehbuch]]
-- [[20260430-mentoring-rm8-waescheberge-kundinnen-briefing]]
+- [[broll-drehliste-pool]]
 - [[KW19-DREHTAG-MASTER]]
 - [[KW20-DREHTAG-MASTER]]
 - [[KW21-DREHTAG-MASTER]]
-- [[broll-drehliste-pool]]
 
 ### 📁 2026-06-04-network-mama-zeit-frage
 
