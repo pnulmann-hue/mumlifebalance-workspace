@@ -1565,54 +1565,54 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "756abe0020e4",
+     "fingerabdruck": "6348061261f6",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: Der Hook beschreibt eine Gewohnheit und eine Haltung, aber keinen konkreten Moment, den man sieht."
+      "bezug_der_zeilen: Durch die Anführungszeichen bleibt offen, wer »ich hasse« sagt: Ist es Patricia (laut BELEGT), trägt »trotzdem« keinen echten Gegensatz und kippt in einen Vorwurf an Sandra."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Widerwille gegen Nachrichten an Fremde ist ein echter, täglicher Schmerz im Network-Alltag."
+       "warum": "Das ungute Gefühl, Kaltakquise-Nachrichten zu schreiben, die sie selbst nicht mag, ist ein echter Network-Schmerz."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Den Satz „Ich hasse diese Nachrichten an Fremde“ denkt sie wörtlich, sagt ihn aber selten laut."
+       "warum": "Der Widerspruch »ich mag das nicht, und ich tippe es doch« ist ein Gedanke, den sie kennt, aber selten ausspricht."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Beide Teile klingen wie ein ehrlicher Satz unter Freundinnen, ohne Fachwort und ohne Lehrerton."
+       "warum": "»Ich hasse solche Nachrichten« und der zitierte Floskelsatz klingen nach Alltagssprache unter Freundinnen."
       },
       "bezug_der_zeilen": {
-       "ja": true,
-       "warum": "Das „trotzdem“ trägt einen echten Gegensatz: Sie hasst die Nachrichten und schickt dennoch eine."
+       "ja": false,
+       "warum": "Durch die Anführungszeichen bleibt offen, wer »ich hasse« sagt: Ist es Patricia (laut BELEGT), trägt »trotzdem« keinen echten Gegensatz und kippt in einen Vorwurf an Sandra."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook enthält weder einen anderen Weg noch ein Angebot."
+       "warum": "Der Hook nennt weder den anderen Weg noch ein Angebot."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Nachrichten an Fremde“ zusammen mit „fürs Network“ verortet die Welt sofort, auch ohne Vorwissen."
+       "warum": "»Spannende Möglichkeit fürs Network« verortet die Welt sofort."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "Der Hook beschreibt eine Gewohnheit und eine Haltung, aber keinen konkreten Moment, den man sieht."
+       "ja": true,
+       "warum": "Ein konkreter Moment: Sie tippt gerade wieder diese eine Nachricht."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Das Zitat aus ihrem inneren Monolog steht vorne, die Kaltakquise ist der Gegner."
+       "warum": "Der Hook enthält ein Zitat und mit der Kaltakquise-Floskel auch einen Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Das Anschreiben fremder Leute fürs Network ist klar ihre Welt."
+       "warum": "Die Kaltakquise im Network trifft genau Patricias Zielgruppe."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Als „Das kenn ich auch“-Moment mit Reibung holt der Hook neue Augen und eignet sich damit für die Rolle Aufmerksamkeit."
+       "warum": "Das ist ein Wiedererkennungs-Moment mit Augenzwinkern, also passend für die Rolle Aufmerksamkeit."
       }
      },
-     "vorschlag": "„Ich hasse solche Nachrichten.“ Und trotzdem tippst du gerade wieder: „Spannende Möglichkeit fürs Network …“",
+     "vorschlag": "Du hasst solche Nachrichten selbst – und tippst trotzdem wieder: „Spannende Möglichkeit fürs Network …“",
      "modell": "claude-opus-5-5"
     }
    },
@@ -1642,105 +1642,106 @@
    "caption": "Von 2018 bis 2021 habe ich genau das gemacht. Wenn ein Monat schlecht lief, habe ich mehr angesprochen und mehr gepostet, weil ich keine andere Antwort kannte.\n\nUnd jeden Monat fing es wieder von vorne an, weil niemand wusste, wofür ich eigentlich stehe, ausser für die Produkte meiner Firma.\n\n2021 habe ich aufgehört. Als ich 2023 neu angefangen habe, war meine erste Frage eine andere: Worüber will ich reden, damit die richtigen Leute mich von selbst finden?\n\nWenn du gerade an genau dieser Frage hängst, habe ich dir etwas gebaut. Der Nischengenerator stellt dir ein paar Fragen und schlägt dir drei Themen vor, die zu dir und deinem Produkt passen.\n\nKommentier NISCHE, dann schick ich dir den Link.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "ff08e1303d13",
+     "fingerabdruck": "f66fae7c6ad3",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: «Nach jedem schwachen Monat» beschreibt ein wiederkehrendes Muster. Es fehlt ein einzelner Moment mit einer Handlung, die man sieht."
+      "kuechentisch: «Mein Network-Satz dazu» ist eine konstruierte Überleitung, so redet niemand am Küchentisch.",
+      "mikro_szene: «Wieder eine Fremde angeschrieben» ist eine Gewohnheit ohne Ort, Uhrzeit oder sichtbares Detail, also kein einzelner Moment."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Druck, nach einem schwachen Monat einfach noch mehr zu machen, ist der Alltag der Suchenden im Network."
+       "warum": "Fremde anschreiben, weil man glaubt, es liege nur an der Menge, ist ein echter, unangenehmer Network-Schmerz."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Den Satz «Ich muss einfach mehr Leute ansprechen» denkt sie wörtlich selbst, oft spätabends."
+       "warum": "«Ich muss einfach mehr Leute ansprechen» ist wörtlich der Satz, den sie sich selbst vorsagt."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Das Zitat ist gesprochene Sprache, und «Mein Satz nach jedem schwachen Monat» erzählt man einer Freundin genau so."
+       "ja": false,
+       "warum": "«Mein Network-Satz dazu» ist eine konstruierte Überleitung, so redet niemand am Küchentisch."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Es gibt kein Bindewort. Zitat und Einordnung hängen direkt und logisch zusammen."
+       "warum": "Die Handlung und der Glaubenssatz dahinter passen logisch zusammen, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder Lösung noch Tipp noch Angebot. Der Tipp «erst das Thema, dann das Produkt» kommt erst im Beitrag."
+       "warum": "Der Tipp «zuerst das Thema, dann das Produkt» kommt im Hook nicht vor."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "«Network-Monat» und «Leute ansprechen» verorten die Welt sofort, auch ohne Vorwissen."
+       "warum": "«Network» und «Fremde angeschrieben» verorten die Welt sofort."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "«Nach jedem schwachen Monat» beschreibt ein wiederkehrendes Muster. Es fehlt ein einzelner Moment mit einer Handlung, die man sieht."
+       "warum": "«Wieder eine Fremde angeschrieben» ist eine Gewohnheit ohne Ort, Uhrzeit oder sichtbares Detail, also kein einzelner Moment."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook bringt ein wörtliches Zitat als Geständnis in Ich-Form, und der Glaubenssatz selbst ist der Gegner (ein Denkfehler, keine Person)."
+       "warum": "Geständnis in Ich-Form plus Zitat, dazu der Denkfehler «einfach mehr Leute» als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Das Leute-Ansprechen nach schwachen Monaten ist typisch Network und trifft genau die Zielgruppe."
+       "warum": "Das Anschreiben von Fremden ist typisch für Network-Frauen."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricia erzählt ehrlich ihre eigene Phase, in der sie diesem Satz gefolgt ist. Das ist Vertrauen."
+       "warum": "Es ist Patricias eigene, belegte Geschichte aus der Network-Zeit und baut damit Vertrauen auf."
       }
      },
-     "vorschlag": "Wieder eine Fremde angeschrieben. Mein Network-Satz dazu: «Ich muss einfach mehr Leute ansprechen.»",
+     "vorschlag": "Wieder eine Fremde angeschrieben und gedacht: „Im Network muss ich einfach mehr Leute ansprechen.“ (Für die Mikroszene den konkreten Ort oder die Uhrzeit nur ergänzen, wenn belegt: [echte Situation einsetzen])",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "260abfb25054",
+     "fingerabdruck": "ce21421464c0",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: „Jeden Abend“ beschreibt eine Gewohnheit statt einen Moment, und dieses Detail ist zudem nicht belegt."
+      "mikro_szene: «Jahrelang» fasst eine Zeitspanne zusammen. Es fehlt ein einzelner sichtbarer Moment."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Fremde anschreiben und auf den Durchbruch hoffen ist ein echter, wunder Punkt im Network-Alltag."
+       "warum": "Der Druck, ständig Fremde anschreiben zu müssen, ist ein echter, unangenehmer Schmerz im Network-Alltag. Er steht als Zitat und Geständnis da, nicht als Diagnose."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Der innere Monolog „noch einer, dann läuft's“ ist genau der Satz, den sie selbst denkt."
+       "warum": "Diesen Upline-Satz hat jede Network-Mama schon gehört und befolgt; sie erkennt sich sofort darin."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "So erzählt man es einer Freundin, schlicht und ohne Fachwörter."
+       "warum": "Zitat plus «Jahrelang hab ich…» klingt genau so, wie man es einer Freundin erzählt."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Zitat und Einordnung hängen logisch zusammen, und kein Bindewort dreht den Sinn."
+       "warum": "«Danach» bezieht sich klar auf den zitierten Satz; kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Tipp mit Thema vor Produkt steht nicht im Hook."
+       "warum": "Der Tipp «erst das Thema, dann das Produkt» kommt im Hook nicht vor."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„im Network“ und „Fremden schreiben“ verorten die Welt sofort."
+       "warum": "«im Network» und «Fremde angeschrieben» verorten die Welt sofort."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "„Jeden Abend“ beschreibt eine Gewohnheit statt einen Moment, und dieses Detail ist zudem nicht belegt."
+       "warum": "«Jahrelang» fasst eine Zeitspanne zusammen. Es fehlt ein einzelner sichtbarer Moment."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook verbindet ein Zitat aus dem inneren Monolog mit einem Geständnis in Ich-Form."
+       "warum": "Der Hook hat alle drei: ein Zitat, ein Geständnis in Ich-Form und eine Methode als Gegner."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Er spricht klar Network-Frauen an, die Fremde anschreiben."
+       "warum": "Die Kaltakquise-Anweisung ist typisch Network und trifft die Zielgruppe direkt."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias eigene ehrliche Network-Geschichte trägt die Rolle Vertrauen."
+       "warum": "Patricias ehrliche eigene Geschichte aus der schweren Network-Phase ist genau die Vertrauen-Rolle."
       }
      },
-     "vorschlag": "„Du musst einfach mehr Leute ansprechen.“ Jahrelang hab ich im Network danach Fremde angeschrieben.",
+     "vorschlag": "„Du musst einfach mehr Leute ansprechen.“ Also schrieb ich im Network wieder einer Fremden.",
      "modell": "claude-opus-5-5"
     }
    },
@@ -1770,54 +1771,54 @@
    "caption": "Weisst du, was jemand sieht, der zum ersten Mal auf dein Profil kommt?\n\nBei mir waren es damals Produktbilder, Aktionen und das, was die Firma gerade geschickt hat. Verkauft habe ich trotzdem, das will ich gar nicht kleinreden. Nur musste ich jeden Monat wieder von vorne anfangen, weil niemand einen Grund hatte, von sich aus wiederzukommen.\n\nGanz ohne Bemühen geht es auch heute nicht, das wäre gelogen. Der Unterschied ist, dass ich jetzt an etwas baue, das bleibt: ein Thema, für das man mich kennt.\n\nMach mal den Test: Scroll durch deine letzten neun Beiträge und zähl, in wie vielen dein Produkt die Hauptrolle spielt. Wenn es mehr als drei sind, fehlt dir vermutlich dein Thema, und das findest du mit meinem Nischengenerator in ein paar Minuten.\n\nKommentier NISCHE, dann schick ich dir den Link.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "efbc831c4038",
+     "fingerabdruck": "ae6938636b85",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: „An jedem Monatsersten, drei Jahre lang“ beschreibt einen wiederkehrenden Zustand. Es fehlt ein einzelner Moment mit sichtbarem Detail, und im Zweifel gilt Nein."
+      "kuechentisch: Die drei aneinandergereihten Satzfetzen klingen wie eine Regieanweisung, so erzählt es niemand einer Freundin."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Jeden Monat wieder ohne Verkäufe dazustehen, ist ein Kernschmerz der Network-Mama, die viel Einsatz ohne Plan bringt."
+       "warum": "Jeden Monat wieder bei null anzufangen, obwohl man seit Jahren dabei ist, ist ein echter Schmerz der Network-Mama."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Das Zitat „Wieder bei null.“ ist wörtlich der innere Monolog, den Sandra am Monatsanfang selbst denkt."
+       "warum": "„Wieder bei null“ ist wörtlich der Satz, den sie am Monatsersten selbst denkt."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Kurz, umgangssprachlich und ohne Fachwörter, so erzählt man es einer Freundin."
+       "ja": false,
+       "warum": "Die drei aneinandergereihten Satzfetzen klingen wie eine Regieanweisung, so erzählt es niemand einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Es gibt kein Bindewort. Das Zitat wird direkt als eigener Gedanke eingeordnet, der Bezug stimmt."
+       "warum": "Kein Bindewort dreht den Sinn, Firmenbilder und null passen als stiller Zusammenhang."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Weder der Neun-Beiträge-Test noch ein Angebot erscheint im Hook."
+       "warum": "Der Neun-Beiträge-Test und jede andere Lösung bleiben draussen."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„im Network“ verortet die Welt sofort, auch ohne Vorwissen."
+       "warum": "„Im Network“ und „Firmenbilder“ verorten die Welt sofort, und der Text steht sieben Sekunden lang."
       },
       "mikro_szene": {
-       "ja": false,
-       "warum": "„An jedem Monatsersten, drei Jahre lang“ beschreibt einen wiederkehrenden Zustand. Es fehlt ein einzelner Moment mit sichtbarem Detail, und im Zweifel gilt Nein."
+       "ja": true,
+       "warum": "Der Erste des Monats vor dem eigenen Profil ist ein konkreter Moment mit Zeitanker."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook enthält ein Zitat des inneren Monologs und ein Geständnis in Ich-Form, beides aus Belegtem."
+       "warum": "Es ist ein Geständnis in Ich-Form mit innerem Monolog als Zitat, und beides ist belegt."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Das Network und der monatliche Neustart bei den Verkäufen treffen genau die Network-Mama."
+       "warum": "Firmenbilder und monatlicher Neustart bei den Verkäufen sind typisch Network."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricia erzählt ehrlich aus ihrer eigenen schweren Phase, und genau das ist die Rolle Vertrauen."
+       "warum": "Es ist Patricias eigene, ehrliche Geschichte aus einer schweren Phase und passt damit zur Vertrauensrolle."
       }
      },
-     "vorschlag": "„Wieder bei null.“ Erster des Monats, mein Profil voller Firmenbilder, drei Jahre im Network.",
+     "vorschlag": "Drei Jahre im Network, mein Profil voller Firmenbilder – und jeden Ersten wieder bei null.",
      "modell": "claude-opus-5-5"
     },
     "b": {
