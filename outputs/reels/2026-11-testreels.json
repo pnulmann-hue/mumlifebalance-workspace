@@ -2991,14 +2991,14 @@
    "clip": "garten-graben-ton",
    "ab": 2.0,
    "dauer": 7.5,
-   "hoehe": 13,
+   "hoehe": 64,
    "stil": "karte",
    "akzent": "orange",
    "cta": "Folg mir, wenn du dich wiedererkennst",
    "rolle": "Beziehung",
    "mit": "Tipp: ein fester Termin pro Woche fürs Business",
    "a": [
-    "„Andere Network-Mamas sind so strukturiert. Mein Wochenplan liegt seit Montag rum.“",
+    "„Seit Montag liegt mein Network-Plan rum. Wann machen die anderen das bloss?“",
     ""
    ],
    "b": [
@@ -3058,55 +3058,54 @@
      "modell": "claude-opus-5-5"
     },
     "a": {
-     "fingerabdruck": "264799bab02e",
+     "fingerabdruck": "0d7708b226ef",
      "bestanden": false,
      "gruende": [
-      "gegner_gestaendnis_oder_zitat: Über Patricias B-Roll gelesen ist das ein Ich-Geständnis von Patricia, das nicht belegt ist und keinen Vermerk „(nur wenn's stimmt)“ trägt.",
-      "passt_zur_rolle: Patricia steht in Ich-Form als die Chaotische im Zentrum, das ist eher ein Aufmerksamkeits-Bekenntnis; für Beziehung müsste Sandra die Heldin sein und ihr eigener Gedanke gespiegelt werden."
+      "gedanke_gelesen: „Und du denkst:“ diagnostiziert ihr den Gedanken, und „Die anderen schaffen's“ bleibt so allgemein, dass das Gefühl ertappt zu sein ausbleibt."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Der Vergleich mit den scheinbar strukturierten anderen und der liegengebliebene Plan treffen ihr schlechtes Gewissen, dass ihr Einsatz keinem Plan folgt."
+       "warum": "Ein Plan, der seit Tagen liegen bleibt, während andere scheinbar vorankommen, trifft den echten Schmerz von Einsatz ohne Plan und Vergleich."
       },
       "gedanke_gelesen": {
-       "ja": true,
-       "warum": "„Die anderen kriegen das hin, nur ich nicht“ ist genau der Satz, den Sandra um 23 Uhr selbst denkt."
+       "ja": false,
+       "warum": "„Und du denkst:“ diagnostiziert ihr den Gedanken, und „Die anderen schaffen's“ bleibt so allgemein, dass das Gefühl ertappt zu sein ausbleibt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Beide Sätze sind schlicht und umgangssprachlich, so sagt man es einer Freundin."
+       "warum": "„liegt seit Montag rum“ und „schaffen's“ sind Umgangssprache, so redet man mit einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Der Gegensatz zwischen den strukturierten anderen und dem eigenen Plan stimmt, und es gibt kein Bindewort, das den Sinn dreht."
+       "warum": "Das „Und“ reiht den Gedanken logisch an die Szene, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der feste Termin pro Woche taucht im Hook nicht auf."
+       "warum": "Der feste Wochentermin kommt im Hook nicht vor, und es gibt kein Angebot."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network-Mamas“ steht direkt im ersten Satz und verortet die Welt sofort."
+       "warum": "„Network“ steht im ersten Satz, die Welt ist sofort verortet."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Der Wochenplan, der seit Montag herumliegt, ist ein sichtbares Detail mit Zeitanker statt einer Behauptung."
+       "warum": "Ein liegengebliebener Plan mit dem Zeitanker „seit Montag“ ist ein konkreter Moment statt einer Behauptung."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": false,
-       "warum": "Über Patricias B-Roll gelesen ist das ein Ich-Geständnis von Patricia, das nicht belegt ist und keinen Vermerk „(nur wenn's stimmt)“ trägt."
+       "ja": true,
+       "warum": "„Die anderen schaffen's“ ist ihr innerer Monolog und zählt damit als Zitat."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Der Hook nennt Network-Mamas ausdrücklich und spricht ihren Alltag an."
+       "warum": "Es geht ausdrücklich um ihr Network-Business und den Vergleich mit anderen im Team."
       },
       "passt_zur_rolle": {
-       "ja": false,
-       "warum": "Patricia steht in Ich-Form als die Chaotische im Zentrum, das ist eher ein Aufmerksamkeits-Bekenntnis; für Beziehung müsste Sandra die Heldin sein und ihr eigener Gedanke gespiegelt werden."
+       "ja": true,
+       "warum": "Sie ist die Heldin im Moment des Liegenlassens, und der Beitrag gibt ihr mit dem festen Termin eine neue Sicht. Das passt zur Rolle Beziehung."
       }
      },
-     "vorschlag": "Dein Wochenplan liegt seit Montag rum, und du denkst: Die anderen Network-Mamas sind strukturierter.",
+     "vorschlag": "„Seit Montag liegt mein Network-Plan rum. Wann machen die anderen das bloss?“",
      "modell": "claude-opus-5-5"
     }
    }
