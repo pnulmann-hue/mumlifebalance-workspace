@@ -2200,57 +2200,56 @@
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "3f886810627b",
+     "fingerabdruck": "b087376c1f1f",
      "bestanden": false,
      "gruende": [
-      "schmerz: Der Hook erzählt Patricias Erfolgsmoment, Sandras Schmerz (Zeit, Geld und Herz ohne eigenes Geld) kommt nicht vor.",
-      "gedanke_gelesen: Eine Bügelstation-Liste ist Patricias Erlebnis, kein Gedanke, den Sandra um 23 Uhr selbst denkt.",
-      "kuechentisch: „Mein erstes Eigenes“ als Substantiv klingt holprig, so sagt man es keiner Freundin.",
-      "bezug_der_zeilen: Zeile zwei liest sich, als wäre der Listeneintrag selbst das erste Eigene; wie Liste und Angebot zusammenhängen, bleibt unklar."
+      "schmerz: Der Hook erzählt nur Patricias Erfolgsmoment; Sandras Schmerz (kein eigenes Standbein, keine Idee, was sie selbst anbieten könnte) kommt nicht vor.",
+      "gedanke_gelesen: Kein Satz spiegelt, was Sandra um 23 Uhr selbst denkt; es ist Patricias Geschichte, kein ertappter Gedanke von ihr.",
+      "kuechentisch: Die Doppelpunkt-Konstruktion mit nacktem Zitat klingt nach Notiz oder Schlagzeile, nicht nach einem Satz, den man so einer Freundin erzählt."
      ],
      "antworten": {
       "schmerz": {
        "ja": false,
-       "warum": "Der Hook erzählt Patricias Erfolgsmoment, Sandras Schmerz (Zeit, Geld und Herz ohne eigenes Geld) kommt nicht vor."
+       "warum": "Der Hook erzählt nur Patricias Erfolgsmoment; Sandras Schmerz (kein eigenes Standbein, keine Idee, was sie selbst anbieten könnte) kommt nicht vor."
       },
       "gedanke_gelesen": {
        "ja": false,
-       "warum": "Eine Bügelstation-Liste ist Patricias Erlebnis, kein Gedanke, den Sandra um 23 Uhr selbst denkt."
+       "warum": "Kein Satz spiegelt, was Sandra um 23 Uhr selbst denkt; es ist Patricias Geschichte, kein ertappter Gedanke von ihr."
       },
       "kuechentisch": {
        "ja": false,
-       "warum": "„Mein erstes Eigenes“ als Substantiv klingt holprig, so sagt man es keiner Freundin."
+       "warum": "Die Doppelpunkt-Konstruktion mit nacktem Zitat klingt nach Notiz oder Schlagzeile, nicht nach einem Satz, den man so einer Freundin erzählt."
       },
       "bezug_der_zeilen": {
-       "ja": false,
-       "warum": "Zeile zwei liest sich, als wäre der Listeneintrag selbst das erste Eigene; wie Liste und Angebot zusammenhängen, bleibt unklar."
+       "ja": true,
+       "warum": "„Daraus“ verweist korrekt auf die Notiz, kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Es wird kein Angebot und keine Lösung für Sandra verkauft, nur das Ergebnis angedeutet."
+       "warum": "Das Ergebnis wird genannt, aber nicht, wie aus der Notiz ein Angebot wurde, und Patricias Produkt wird nicht beworben."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„neben dem Network“ verortet die Welt sofort."
+       "warum": "„neben dem Network“ verortet die Welt sofort, auch wenn „Bügelstation entkalken“ ohne Kontext zuerst rätselhaft wirkt."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Ein Ort und ein sichtbares Detail: die Küchentisch-Liste mit „Bügelstation entkalken“."
+       "warum": "Ein Moment, ein Ort, ein sichtbares Detail: hochschwanger, Küchentisch, „Bügelstation entkalken“."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Geständnis in Ich-Form mit einem konkreten Detail aus Belegtem."
+       "warum": "Geständnis in Ich-Form mit konkretem, belegtem Detail und zitierter Notiz."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Network und etwas Eigenes daneben treffen genau die Stadt."
+       "warum": "Schwangerschaft, Haushalt und „erstes Angebot neben dem Network“ treffen genau die Network-Mama."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Patricias eigene, belegte Geschichte trägt die Rolle Vertrauen."
+       "warum": "Patricias eigene, belegte Geschichte passt zur Rolle Vertrauen und zur Inspiration, dass das Thema im Alltag liegt."
       }
      },
-     "vorschlag": "Hochschwanger am Küchentisch: «Bügelstation entkalken». Daraus wurde mein erstes Angebot neben dem Network.",
+     "vorschlag": "„Was könnte ich neben dem Network anbieten?“ Die Antwort stand auf meiner Haushaltsliste.",
      "modell": "claude-opus-5-5"
     }
    },
