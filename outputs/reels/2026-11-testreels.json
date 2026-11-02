@@ -3037,106 +3037,111 @@
    "caption": "Vier Kinder, ein Haushalt und ein Garten, der nie fertig wird. Mehr als rund 18 Stunden pro Woche gibt mein Leben gerade nicht her.\n\nDeshalb mache ich nicht alles, was man angeblich machen muss. Ich mache weniger, dafür das Richtige, und das Wichtigste läuft über einen festen Rhythmus.\n\nWenig Zeit ist kein Grund, es nicht zu tun. Sie ist ein Grund, es klüger zu tun.\n\nWenn du dich hier wiedererkennst, bleib hier.",
    "pruefung": {
     "a": {
-     "fingerabdruck": "ab65fd4d2814",
+     "fingerabdruck": "d8389263e0f3",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: Es gibt keinen Ort, keine Uhrzeit und keinen sichtbaren Moment, nur einen Satz und ein abstraktes Nachzählen."
+      "gedanke_gelesen: „Keine Zeit fürs Network?“ klingt wie eine Werbefrage aus einem Rekrutierungspost und nicht wie ihr eigener Gedanke um 23 Uhr.",
+      "kuechentisch: Die zweite Hälfte klingt wie am Küchentisch, die erste Hälfte wie eine Anzeigen-Schlagzeile.",
+      "bezug_der_zeilen: Es ist unklar, wer die Frage stellt, und „acht bis elf“ liest sich ohne Zusatz leicht als Abend (20 bis 23 Uhr), obwohl der Morgen gemeint ist.",
+      "loesung_draussen: Der Hook beantwortet seine Frage selbst („drei Stunden reichen“), die Botschaft des Beitrags ist damit schon im Bild verraten.",
+      "mikro_szene: „Von acht bis elf“ beschreibt eine Routine und keinen Moment mit sichtbarem Detail."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Fehlende Zeit neben Kindern und Network ist ein echter, alltäglicher Schmerz der Network-Mama und steht hier als Zitat, nicht als Diagnose."
+       "warum": "Zu wenig Zeit neben Kindern und Pensum ist ein echter Druckpunkt der Network-Mama, auch wenn der Kern-Pain (teures Hobby ohne Plan) nur am Rand gestreift wird."
       },
       "gedanke_gelesen": {
-       "ja": true,
-       "warum": "Den Satz „Keine Zeit für was Eigenes“ denkt Sandra wörtlich, deshalb fühlt sie sich ertappt."
+       "ja": false,
+       "warum": "„Keine Zeit fürs Network?“ klingt wie eine Werbefrage aus einem Rekrutierungspost und nicht wie ihr eigener Gedanke um 23 Uhr."
       },
       "kuechentisch": {
-       "ja": true,
-       "warum": "Beide Teile sind schlichte gesprochene Sprache, so sagt man es einer Freundin."
+       "ja": false,
+       "warum": "Die zweite Hälfte klingt wie am Küchentisch, die erste Hälfte wie eine Anzeigen-Schlagzeile."
       },
       "bezug_der_zeilen": {
-       "ja": true,
-       "warum": "„bis ich nachgezählt hab“ setzt einen logisch stimmigen Wendepunkt, kein Bindewort dreht den Sinn."
+       "ja": false,
+       "warum": "Es ist unklar, wer die Frage stellt, und „acht bis elf“ liest sich ohne Zusatz leicht als Abend (20 bis 23 Uhr), obwohl der Morgen gemeint ist."
       },
       "loesung_draussen": {
-       "ja": true,
-       "warum": "Das Nachzählen deutet eine Wende nur an und verrät weder Stundenzahl, Methode noch Angebot."
+       "ja": false,
+       "warum": "Der Hook beantwortet seine Frage selbst („drei Stunden reichen“), die Botschaft des Beitrags ist damit schon im Bild verraten."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„neben dem Network“ verortet die Welt sofort, auch ohne Vorwissen."
+       "warum": "Das Wort „Network“ verortet die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "Es gibt keinen Ort, keine Uhrzeit und keinen sichtbaren Moment, nur einen Satz und ein abstraktes Nachzählen."
+       "warum": "„Von acht bis elf“ beschreibt eine Routine und keinen Moment mit sichtbarem Detail."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Zitat und Geständnis sind da, mit der Ausrede „keine Zeit“ als Gegner. Dass Patricia genau diesen Satz gesagt hat, ist aber nicht belegt und braucht deshalb „(nur wenn's stimmt)“."
+       "warum": "Es gibt ein Zitat (die Ausrede „keine Zeit“ als Gegner) plus ein Ich-Geständnis."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Er spricht klar die Mama im Network an, die etwas Eigenes daneben will."
+       "warum": "Der Hook spricht das Network direkt an und passt damit zur Zeit-Realität von Müttern."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Ein ehrliches Ich-Geständnis aus Patricias Weg trägt die Rolle Vertrauen und führt zur Botschaft, dass es mit wenig Zeit geht."
+       "warum": "Er zeigt Patricias eigenen belegten Alltag, das trägt die Rolle Vertrauen, wenn auch eher als Beweis denn als Geschichte."
       }
      },
-     "vorschlag": "„Keine Zeit für was Eigenes neben dem Network“, sagte ich mit vier Kindern [echte Situation einsetzen: Ort/Uhrzeit] (nur wenn's stimmt).",
+     "vorschlag": "„Dafür hab ich keine Zeit.“ Um elf Uhr morgens ist mein Network-Tag vorbei.",
      "modell": "claude-opus-5-5"
     },
     "b": {
-     "fingerabdruck": "430c702b94db",
+     "fingerabdruck": "7d9c5b6d1c6a",
      "bestanden": false,
      "gruende": [
-      "mikro_szene: „An jedem Freitagabend“ ist eine Wiederholung statt eines einzelnen Moments, und der Freitagabend ist nirgends belegt, also erfunden.",
-      "passt_zur_rolle: In der Gegenwartsform behauptet Patricia, sie denke das heute noch jeden Freitag. Das widerspricht dem Vertrauensbeweis, dass es mit wenig Zeit geht, und ist so nicht belegt."
+      "schmerz: Der Satz nennt sachlich Patricias Zeitfenster und lässt Sandras Not unberührt, nämlich das Gefühl, mit Kindern nie genug Zeit fürs Network zu haben.",
+      "gedanke_gelesen: Es ist Patricias Tagesplan, kein Satz, den Sandra um 23 Uhr selbst denkt.",
+      "mikro_szene: Ein wiederkehrendes Zeitfenster ist eine Routine, kein einzelner Moment mit sichtbarem Detail."
      ],
      "antworten": {
       "schmerz": {
-       "ja": true,
-       "warum": "Das Gefühl, dass neben Kindern und Network keine Zeit bleibt, ist ein echter Alltagsschmerz der Network-Mama."
+       "ja": false,
+       "warum": "Der Satz nennt sachlich Patricias Zeitfenster und lässt Sandras Not unberührt, nämlich das Gefühl, mit Kindern nie genug Zeit fürs Network zu haben."
       },
       "gedanke_gelesen": {
-       "ja": true,
-       "warum": "Der Satz in Anführungszeichen ist wörtlich ihr innerer Monolog, sie erkennt ihren eigenen Gedanken."
+       "ja": false,
+       "warum": "Es ist Patricias Tagesplan, kein Satz, den Sandra um 23 Uhr selbst denkt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Genau so sagt man es seufzend einer Freundin."
+       "warum": "So kann man es einer Freundin locker erzählen."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Zitat und Zuordnung hängen sauber zusammen, kein Bindewort dreht den Sinn."
+       "warum": "Die beiden Teile hängen logisch zusammen, und kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder Lösung noch Angebot."
+       "warum": "Der Hook nennt weder eine Lösung noch ein Angebot, die Botschaft ‚es geht mit wenig Zeit‘ bleibt offen."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "Kinder und Network im selben Satz verorten die Welt sofort."
+       "warum": "‚Vier Kinder‘ und ‚fürs Network‘ verorten die Welt sofort."
       },
       "mikro_szene": {
        "ja": false,
-       "warum": "„An jedem Freitagabend“ ist eine Wiederholung statt eines einzelnen Moments, und der Freitagabend ist nirgends belegt, also erfunden."
+       "warum": "Ein wiederkehrendes Zeitfenster ist eine Routine, kein einzelner Moment mit sichtbarem Detail."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Das Zitat ist da, und die Ausrede „keine Minute“ wirkt als Gegner."
+       "warum": "Es ist ein belegtes Geständnis in Ich-Form."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Mama mit Kindern neben dem Network ist genau die Zielgruppe."
+       "warum": "Mama mit Kindern und Network, die Nische ist klar getroffen."
       },
       "passt_zur_rolle": {
-       "ja": false,
-       "warum": "In der Gegenwartsform behauptet Patricia, sie denke das heute noch jeden Freitag. Das widerspricht dem Vertrauensbeweis, dass es mit wenig Zeit geht, und ist so nicht belegt."
+       "ja": true,
+       "warum": "Patricias eigene Situation schafft Vertrauen und zeigt, dass es mit wenig Zeit geht."
       }
      },
-     "vorschlag": "„Mit Kindern bleibt neben dem Network keine Minute.“ Ich habe vier – und 18 Wochenstunden.",
+     "vorschlag": "„Neben den Kindern bleibt keine Zeit fürs Network.“ Ich hab vier – und drei Stunden.",
      "modell": "claude-opus-5-5"
     }
    },
