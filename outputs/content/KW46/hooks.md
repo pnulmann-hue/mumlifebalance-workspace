@@ -142,3 +142,8 @@ Weichmacher, Ironie, Geständnis, Zitat, Ansage, Einwand, Vergleich (7).
 - **Bekannte Nähe zu Bestehendem:** 47-4B und 49-4A berühren dasselbe Gefühl wie Testreels
   („Ich bin halt kein Network-Typ“, 21.11.) — anderer Satz, andere Szene. 48-2A und Testreel 10.11.
   greifen beide „poste jeden Tag/mehr“ auf, hier aber als Geständnis mit eigener Zahl.
+- **Prüfskripte (02.11.):** `hook-pruefen.py` über alle 40 Hooks: **kein Rot**, „Mechanisch in Ordnung“.
+  Gelb: Jahreszahlen/Zahlen im Hook (2026/2027/54/2'000/30 — alle belegt oder Kalenderjahr), fehlender
+  Network-Anker nur bei 49-2A, Überdeckung nur mit den eigenen Quellen (`06-feed.md`, Interview A1, diese
+  Datei), mit keinem gebauten Hook. `texte-pruefen.py --datei` über hooks/auswahl/markt: 0 rot nach
+  Korrektur (ein ß im Zitat der Fühlbarmacherin auf ss gesetzt), die gelben Funde sind Regeltext.
