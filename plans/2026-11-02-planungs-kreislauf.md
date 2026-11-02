@@ -53,10 +53,44 @@ Dazu fehlt das **Quartal** ganz, obwohl Julias Material dazu eindeutig ist:
 | **Monat** | ganz ins Detail: Beiträge, Storys, Mails, Dreh-Liste | **am 29.** (Patricias Entscheid) |
 | **Woche** | Rahmen + Ausführung, kein neuer Content | Sonntagabend |
 
-🚨 **Der Content wird im MONAT geplant, nicht in der Woche** (Patricia, 02.11.:
-*„eigentlich plane ich den content für den ganzen monat"*). Die Woche konkretisiert nur
-noch, was der Monatsplan vorgibt. Das ist eine **Änderung** gegenüber dem heutigen
-Satz in CLAUDE.md („Strategie monatlich, Konkretion wöchentlich") — siehe Offene Punkte.
+🚨 **Der ganze Content wird im MONAT gebaut, nicht in der Woche** — Patricia, 02.11.:
+*„eigentlich plane ich den content für den ganzen monat"* und auf die Rückfrage
+*„ne die a/b varianten, hooks prüfung usw. soll bitte auch pro monat geschaut werden"*.
+Also auch die A/B-Varianten je Platz und die Hook-Prüfung (`hook-sperre.py`,
+Markt-Paket, Vorbilder) laufen **einmal im Monat** statt wöchentlich.
+
+**Damit wird `content-woche-freitag` überflüssig.** Übergang, damit keine Lücke
+entsteht: der Task **bleibt an**, bis `/planen monat` steht und einmal durchgelaufen
+ist — dann wird er abgeschaltet und archiviert, nicht vorher. Sonst baut drei Wochen
+lang nichts mehr automatisch.
+
+🚨 **Zwei Sätze in CLAUDE.md werden damit falsch** und gehören nachgezogen:
+„Strategie monatlich, Konkretion wöchentlich" (Abschnitt `/monatsplan`) und
+„🤖 Automatik (Normalfall): Fr 08:00" (Abschnitt `/content`).
+
+### Der Tag — Routinen und Journaling (Patricia, 02.11.: „der ganze workflow soll da rein")
+
+Die Vorlage verlinkt eine Tagesansicht; das ist der **Tagesplaner**
+(`2ae7078e-8b7e-8102-a640-c046d70a2ae7`), 13 Felder:
+
+| Business | Privat |
+|---|---|
+| `Tagesfokus` · `Tag geplant` · `Learning des Tages` · `Story gemacht, Beitrag veröffentlicht` · `Blick auf Morgen` | `Jornaling` *(so geschrieben)* · `Wie war der Tag?` (⭐1–5) · `Sport Gymondo` · `EFT` · `Auraimpulse gelesen` · `Essensplanung 100gr Proteine` |
+
+**Beides kommt mit**, aber getrennt platziert:
+
+- Die **Business-Felder** gehören auf Mein Tisch in die Zone „Heute".
+- Die **privaten Routinen und das Journaling** bekommen einen eigenen Reiter im
+  Bereich Privat — 🚨 **nicht** auf die Startseite, weil Patricia das Cockpit
+  Kundinnen zeigt.
+- Die Tageseinträge **füttern die Wochen-Reflexion**: „Erfolge letzte Woche" und
+  „Herausforderung letzte Woche" werden aus den sieben Learnings vorbelegt, statt
+  gefragt zu werden. Genau das meint „nur fragen, was sich nicht ableiten lässt".
+
+🚨 **Vor dem Bau zu klären: steht das Cockpit privat?** CLAUDE.md sagt an einer Stelle
+„seit 27.10. privat", an einer anderen „steht auf Anyone with the link" — und dort
+liegen 32 Klarnamen. Solange das offen ist, geht kein Journaling hinein. Sehen kann das
+nur Patricia im Share-Menü.
 
 ---
 
@@ -230,18 +264,24 @@ hingeschrieben.
 
 ---
 
-## Offene Punkte
+## Entschieden am 02.11.2026
 
-1. **Was macht der Freitags-Task künftig?** Er baut heute die fünf Beiträge der
-   Folgewoche. Wenn der Content im Monat geplant wird, ist seine Aufgabe nur noch
-   konkretisieren (A/B-Varianten, Hooks gegen die frischen Zahlen). Der Satz in
-   CLAUDE.md („Strategie monatlich, Konkretion wöchentlich") muss dann nachgezogen
-   werden.
-2. **Wie viele Fragen verträgt ein Pop-up?** Die Woche hat zwölf Felder plus drei
-   Blöcke. Vorschlag: nur fragen, was nicht abgeleitet werden kann — alles andere
-   vorbelegen und zum Korrigieren hinstellen.
-3. **Journaling und Routinen** aus der Notion-Wochenvorlage (verlinkte DB) — kommt das
-   mit ins Cockpit oder bleibt es weg?
+1. **Der ganze Content läuft im Monat** — inklusive A/B-Varianten und Hook-Prüfung.
+   `content-woche-freitag` bleibt an, bis `/planen monat` einmal durchgelaufen ist,
+   danach aus.
+2. **Das Pop-up fragt nur, was sich nicht ableiten lässt.** Alles andere wird
+   vorbelegt und steht zum Korrigieren da.
+3. **Journaling und Tagesroutinen kommen mit** — Business-Felder auf Mein Tisch,
+   Privates in einen eigenen Reiter, und die Tageseinträge belegen die
+   Wochen-Reflexion vor.
+
+## Offen — gehört Patricia
+
+1. **Steht das Cockpit privat oder auf „Anyone with the link"?** Muss geklärt sein,
+   bevor Journaling und Tagesroutinen hineinwandern.
+2. **Bleibt der Notion-Tagesplaner als Zweitort stehen** oder wird er nach dem Umzug
+   stillgelegt? Nach der Regel „jedes Feld hat genau einen Ort" wäre Stilllegen richtig
+   — aber es ist ihre täglich benutzte Ansicht, und das entscheidet sie.
 
 ---
 
