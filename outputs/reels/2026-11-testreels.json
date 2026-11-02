@@ -3058,54 +3058,56 @@
      "modell": "claude-opus-5-5"
     },
     "a": {
-     "fingerabdruck": "0d7708b226ef",
+     "fingerabdruck": "c5f4f0585596",
      "bestanden": false,
      "gruende": [
-      "gedanke_gelesen: „Und du denkst:“ diagnostiziert ihr den Gedanken, und „Die anderen schaffen's“ bleibt so allgemein, dass das Gefühl ertappt zu sein ausbleibt."
+      "in_drei_sekunden_klar: „Network“ verortet die Welt zwar, aber „Network-Plan“ bleibt unklar (Kompensationsplan? Wochenplan?), und „das“ hat keinen klaren Bezug.",
+      "gegner_gestaendnis_oder_zitat: Über Patricias B-Roll gelesen wirkt es wie ihr eigenes Geständnis, das nicht belegt ist und keinen Vermerk „(nur wenn's stimmt)“ trägt. Als Sandras Zitat ist es nicht markiert.",
+      "passt_zur_rolle: Für Beziehung muss Sandra die Heldin sein. Ohne Zitatzeichen liest es sich als Patricias eigene Geschichte, also Vertrauen, und das ist hier nicht belegt."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Ein Plan, der seit Tagen liegen bleibt, während andere scheinbar vorankommen, trifft den echten Schmerz von Einsatz ohne Plan und Vergleich."
+       "warum": "Der Plan liegt ungenutzt herum, während andere es scheinbar schaffen: Das trifft ihren echten Schmerz, keine Zeit und kein System neben den Kindern zu haben."
       },
       "gedanke_gelesen": {
-       "ja": false,
-       "warum": "„Und du denkst:“ diagnostiziert ihr den Gedanken, und „Die anderen schaffen's“ bleibt so allgemein, dass das Gefühl ertappt zu sein ausbleibt."
+       "ja": true,
+       "warum": "„Wann machen die anderen das bloss?“ ist genau die Frage, die sie sich abends heimlich stellt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "„liegt seit Montag rum“ und „schaffen's“ sind Umgangssprache, so redet man mit einer Freundin."
+       "warum": "„Liegt rum“ und „bloss“ sind Alltagssprache, so redet man mit einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Das „Und“ reiht den Gedanken logisch an die Szene, kein Bindewort dreht den Sinn."
+       "warum": "Kein Bindewort dreht den Sinn: Der liegengebliebene Plan führt logisch zur Frage, wie andere das schaffen."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der feste Wochentermin kommt im Hook nicht vor, und es gibt kein Angebot."
+       "warum": "Der feste Wochentermin kommt im Hook nicht vor, er bleibt eine offene Frage."
       },
       "in_drei_sekunden_klar": {
-       "ja": true,
-       "warum": "„Network“ steht im ersten Satz, die Welt ist sofort verortet."
+       "ja": false,
+       "warum": "„Network“ verortet die Welt zwar, aber „Network-Plan“ bleibt unklar (Kompensationsplan? Wochenplan?), und „das“ hat keinen klaren Bezug."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "Ein liegengebliebener Plan mit dem Zeitanker „seit Montag“ ist ein konkreter Moment statt einer Behauptung."
+       "warum": "„Seit Montag“ und der herumliegende Plan sind ein konkreter Zeitanker mit sichtbarem Gegenstand."
       },
       "gegner_gestaendnis_oder_zitat": {
-       "ja": true,
-       "warum": "„Die anderen schaffen's“ ist ihr innerer Monolog und zählt damit als Zitat."
+       "ja": false,
+       "warum": "Über Patricias B-Roll gelesen wirkt es wie ihr eigenes Geständnis, das nicht belegt ist und keinen Vermerk „(nur wenn's stimmt)“ trägt. Als Sandras Zitat ist es nicht markiert."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Es geht ausdrücklich um ihr Network-Business und den Vergleich mit anderen im Team."
+       "warum": "„Network-Plan“ und der Vergleich mit den anderen treffen klar die Network-Frau."
       },
       "passt_zur_rolle": {
-       "ja": true,
-       "warum": "Sie ist die Heldin im Moment des Liegenlassens, und der Beitrag gibt ihr mit dem festen Termin eine neue Sicht. Das passt zur Rolle Beziehung."
+       "ja": false,
+       "warum": "Für Beziehung muss Sandra die Heldin sein. Ohne Zitatzeichen liest es sich als Patricias eigene Geschichte, also Vertrauen, und das ist hier nicht belegt."
       }
      },
-     "vorschlag": "„Seit Montag liegt mein Network-Plan rum. Wann machen die anderen das bloss?“",
+     "vorschlag": "„Seit Montag liegt mein Network-Plan rum. Wann arbeiten andere Mamas eigentlich am Business?“ (in Anführungszeichen als Sandras innerer Monolog einblenden, nicht als Patricias Geständnis)",
      "modell": "claude-opus-5-5"
     }
    }
