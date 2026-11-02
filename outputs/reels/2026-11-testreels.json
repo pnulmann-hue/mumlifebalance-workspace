@@ -1891,54 +1891,54 @@
    "belegt": "",
    "pruefung": {
     "a": {
-     "fingerabdruck": "728eed9f64a0",
+     "fingerabdruck": "9cb609517a6d",
      "bestanden": false,
      "gruende": [
-      "kuechentisch: „Network-Produkte“ ist ein Etikett von aussen. Am Küchentisch sagt sie „die Produkte“ und verortet das Network im eigenen Satz."
+      "mikro_szene: Über Patricias eigenem Alltags-B-Roll liest man die Ich-Form als ihre eigene Szene. Diese ist nicht belegt und trägt keinen Vermerk „(nur wenn's stimmt)“."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Sie kann nicht kurz sagen, was sie selbst bietet, und landet bei den Produkten. Das trifft die Säule Personal Brand statt Copy-Paste."
+       "warum": "Sie will kurz erklären, was sie macht, und landet doch wieder bei den Produkten. Das trifft den Kern-Pain: Sie hat keine eigene Marke, nur Copy-Paste."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Das gut gemeinte „nur kurz“, das ausufert, kennt sie aus eigenen Gesprächen und ertappt sich darin."
+       "warum": "Das Abschweifen in Produktdetails kennt sie von sich selbst und hat es sich nie so ehrlich eingestanden."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "„Network-Produkte“ ist ein Etikett von aussen. Am Küchentisch sagt sie „die Produkte“ und verortet das Network im eigenen Satz."
+       "ja": true,
+       "warum": "Kurz, selbstironisch und mündlich, so erzählt man es einer Freundin."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "„Nur kurz“ gegen „fünf Minuten später“ ist ein echter Gegensatz, und kein Bindewort dreht den Sinn."
+       "warum": "Es gibt kein Bindewort, und der Zeitsprung „Fünf Minuten später“ stellt den Gegensatz zu „kurz“ sauber her."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Ein-Satz-Tipp kommt nicht vor, der Hook zeigt nur das Problem."
+       "warum": "Der Ein-Satz-Tipp kommt im Hook nicht vor, er zeigt nur das Problem."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Network“ steht im Hook und verortet die Welt sofort, auch ohne Vorwissen."
+       "warum": "„Im Network“ und „Produkte“ verorten die Welt sofort, auch ohne Vorwissen."
       },
       "mikro_szene": {
-       "ja": true,
-       "warum": "Ein Moment mit Zeitanker: Sie setzt zur kurzen Erklärung an, und fünf Minuten später redet sie noch."
+       "ja": false,
+       "warum": "Über Patricias eigenem Alltags-B-Roll liest man die Ich-Form als ihre eigene Szene. Diese ist nicht belegt und trägt keinen Vermerk „(nur wenn's stimmt)“."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Das wörtliche Zitat aus ihrem eigenen Mund ist da, der Gegner ist die Ausrede „nur kurz“. Als Patricias Geständnis wäre es unbelegt, als Sandras Satz passt es."
+       "warum": "Der Hook trägt ein wörtliches Zitat plus Geständnis, und der Gegner ist das Produkt-Erklären statt sich selbst zu zeigen."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Es geht klar um eine Frau im Network, die über die Firmenprodukte statt über sich selbst spricht."
+       "warum": "Die Situation gibt es so nur im Network, beim Erklären des eigenen Tuns."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Beziehung passt: Sie erkennt sich als Heldin im Spiegel, und die neue Sicht (ein Satz über dich statt über die Produkte) folgt im Beitrag."
+       "warum": "Der Hook liefert eine neue Sicht für die Beziehungs-Rolle: Sie erklärt Produkte statt sich selbst, und der Tipp führt dorthin."
       }
      },
-     "vorschlag": "„Ich sag kurz, was ich im Network mache.“ Fünf Minuten später: immer noch Produkte.",
+     "vorschlag": "„Was machst du im Network?“ Fünf Minuten später redest du immer noch über Produkte.",
      "modell": "claude-opus-5-5"
     },
     "b": {
@@ -2887,54 +2887,52 @@
    "belegt": "",
    "pruefung": {
     "a": {
-     "fingerabdruck": "d10fe25fb1c0",
-     "bestanden": false,
-     "gruende": [
-      "gedanke_gelesen: „Schon alles probiert“ ist eine Floskel ohne eigenes Detail, und „denkst du“ stellt eher eine Diagnose, statt sie sich selbst ertappen zu lassen."
-     ],
+     "fingerabdruck": "8eec36324e11",
+     "bestanden": true,
+     "gruende": [],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Das Gefühl, im Network schon alles versucht zu haben und trotzdem festzustecken, ist der Kern-Pain der frustrierten Network-Mama."
+       "warum": "Viel Einsatz ohne Einkommen ist genau Sandras Kern-Pain: Zeit und Herz im Network, und es kommt kein Geld rein."
       },
       "gedanke_gelesen": {
-       "ja": false,
-       "warum": "„Schon alles probiert“ ist eine Floskel ohne eigenes Detail, und „denkst du“ stellt eher eine Diagnose, statt sie sich selbst ertappen zu lassen."
+       "ja": true,
+       "warum": "Der Satz steht als ihr innerer Monolog um elf im Bett da und trifft den Gedanken, den sie sich selbst kaum laut sagt."
       },
       "kuechentisch": {
        "ja": true,
-       "warum": "Abends im Bett und „ich hab schon alles probiert“ sagt man so zu einer Freundin."
+       "warum": "„Alles probiert, und trotzdem kommt nichts rein“ sagt man genau so zu einer Freundin, ohne Fachwort."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Es gibt kein Bindewort, Zeitanker und Zitat hängen direkt und logisch zusammen."
+       "warum": "Das „trotzdem“ steht an der richtigen Stelle: Alles probiert lässt Erfolg erwarten, es kommt aber nichts rein. Der Gegensatz stimmt."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der Hook nennt weder den Tipp mit dem Aufschreiben noch ein Angebot."
+       "warum": "Der Hook nennt weder den Tipp mit dem Aufschreiben noch ein Angebot, er bleibt beim Schmerz."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "„Im Network“ verortet die Welt sofort, auch ohne Vorwissen."
+       "warum": "„Im Network“ und „kommt nichts rein“ verorten das sofort im Network-Business und beim fehlenden Einkommen."
       },
       "mikro_szene": {
        "ja": true,
-       "warum": "„Um elf im Bett“ gibt einen konkreten Moment mit Ort und Uhrzeit."
+       "warum": "Mit „Um elf im Bett“ gibt es eine Uhrzeit und einen Ort, also einen konkreten Moment statt eines grossen Themas."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook trägt ein Zitat aus ihrem inneren Monolog."
+       "warum": "Der Satz ist als wörtliches Zitat ihres inneren Monologs gesetzt."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Er spricht ausdrücklich eine Frau im Network an, die feststeckt."
+       "warum": "Das Network wird ausdrücklich genannt, und der Einkommensfrust ist typisch für die Suchende und die Frustrierte."
       },
       "passt_zur_rolle": {
        "ja": true,
-       "warum": "Der Hook holt sie in ihrer Sicht ab, und die neue Perspektive (aufschreiben, woran es gehakt hat) kann im Beitrag folgen, mit ihr als Heldin."
+       "warum": "Der Hook spiegelt Sandra als Heldin, und der Tipp, aufzuschreiben, was schon probiert wurde und wo es hakte, gibt ihr die neue Sicht, die die Rolle Beziehung verlangt."
       }
      },
-     "vorschlag": "Um elf im Bett: „Alles probiert im Network.“ Nur woran hat's eigentlich gehakt?",
+     "vorschlag": "",
      "modell": "claude-opus-5-5"
     },
     "b": {
@@ -3062,54 +3060,55 @@
      "modell": "claude-opus-5-5"
     },
     "a": {
-     "fingerabdruck": "e2e2ccb7f183",
+     "fingerabdruck": "de40470bf385",
      "bestanden": false,
      "gruende": [
-      "kuechentisch: Das Kunstwort „Network-Wochenplan“ und das Wort „unberührt“ klingen geschrieben, nicht nach einem Satz zu einer Freundin."
+      "mikro_szene: Der zweite Satz steht ohne Anführungszeichen in Ich-Form und liest sich als Patricias eigene Szene („seit Montag rum“), die nicht belegt ist und keinen Vermerk trägt.",
+      "passt_zur_rolle: Als Patricias Geständnis gelesen wird es eher Vertrauen oder „Ich als Beweis“; für Beziehung muss Sandra die Heldin sein, also ihr Monolog durchgehend als Zitat."
      ],
      "antworten": {
       "schmerz": {
        "ja": true,
-       "warum": "Sich mit der Upline-Kollegin vergleichen, während der eigene Plan liegen bleibt, trifft den Schmerz, dass ihr Einsatz keinem Plan folgt."
+       "warum": "Der Vergleich mit der Strukturierten und der liegengebliebene Wochenplan treffen den Pain, dass ihr Einsatz keinem Plan folgt."
       },
       "gedanke_gelesen": {
        "ja": true,
-       "warum": "Der Vergleichsgedanke „und ich?“ ist ihr innerer Monolog, den sie selten laut ausspricht."
+       "warum": "„Die ist so strukturiert, und ich?“ ist genau der innere Monolog, den sie beim Scrollen selbst denkt."
       },
       "kuechentisch": {
-       "ja": false,
-       "warum": "Das Kunstwort „Network-Wochenplan“ und das Wort „unberührt“ klingen geschrieben, nicht nach einem Satz zu einer Freundin."
+       "ja": true,
+       "warum": "Beide Sätze klingen umgangssprachlich und ungeschliffen, so wie man es einer Freundin sagt."
       },
       "bezug_der_zeilen": {
        "ja": true,
-       "warum": "Der Vergleich in Zeile 1 und der liegengebliebene Plan in Zeile 2 hängen logisch zusammen, kein Bindewort dreht den Sinn."
+       "warum": "Die Frage stellt den Vergleich auf, der liegengebliebene Plan beantwortet ihn; kein Bindewort dreht den Sinn."
       },
       "loesung_draussen": {
        "ja": true,
-       "warum": "Der feste Termin pro Woche taucht im Hook nicht auf."
+       "warum": "Der feste Wochentermin kommt im Hook nicht vor, nur das Problem."
       },
       "in_drei_sekunden_klar": {
        "ja": true,
-       "warum": "Das Wort „Network“ verortet die Welt sofort."
+       "warum": "„Wochenplan fürs Network“ verortet die Welt sofort, auch wer „die“ nicht kennt, versteht den Vergleich."
       },
       "mikro_szene": {
-       "ja": true,
-       "warum": "Der seit Montag unberührte Plan ist ein sichtbares, konkretes Detail statt einer Behauptung."
+       "ja": false,
+       "warum": "Der zweite Satz steht ohne Anführungszeichen in Ich-Form und liest sich als Patricias eigene Szene („seit Montag rum“), die nicht belegt ist und keinen Vermerk trägt."
       },
       "gegner_gestaendnis_oder_zitat": {
        "ja": true,
-       "warum": "Der Hook beginnt mit einem wörtlichen Zitat aus ihrem inneren Monolog."
+       "warum": "Der erste Satz ist ein wörtliches Zitat ihres inneren Monologs."
       },
       "nische_network_mama": {
        "ja": true,
-       "warum": "Er spricht klar die Frau an, die im Network arbeitet und sich mit anderen vergleicht."
+       "warum": "„Fürs Network“ und der Vergleich mit einer anderen Partnerin sprechen direkt die Network-Mama an."
       },
       "passt_zur_rolle": {
-       "ja": true,
-       "warum": "Er spiegelt sie als Heldin und öffnet eine neue Sicht: Es liegt nicht an ihrer Persönlichkeit, sondern am fehlenden festen Termin."
+       "ja": false,
+       "warum": "Als Patricias Geständnis gelesen wird es eher Vertrauen oder „Ich als Beweis“; für Beziehung muss Sandra die Heldin sein, also ihr Monolog durchgehend als Zitat."
       }
      },
-     "vorschlag": "„Die ist so strukturiert, und ich?“ Mein Wochenplan fürs Network liegt seit Montag unberührt.",
+     "vorschlag": "„Die ist so strukturiert. Und mein Wochenplan fürs Network liegt seit Montag rum.“",
      "modell": "claude-opus-5-5"
     }
    }
