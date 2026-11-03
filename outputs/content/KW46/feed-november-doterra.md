@@ -325,13 +325,13 @@ tags: [content, doterra]
 >
 > #mamaalltag #perimenopause #mamaleben #energieimalltag #mamasein
 
-## Fr 20.11. · Reel · Roller fürs Nachmittagstief (Rezept aus Snyders Buch)
+## Fr 20.11. · Reel · Roller zum Selbermischen
 
 | | |
 |---|---|
 | Format | reel |
 | Rolle | Beziehung |
-| Mitgabe | Neue Sicht: ein Duft als kleines Signal für eine Minute nur für dich, Rezept aus Snyders Buch |
+| Mitgabe | Neue Sicht: ein Duft als kleines Signal für eine Minute nur für dich |
 | Hook A | Halb drei, Mittagstief, die Kinder kommen gleich: „Ich brauch jetzt sofort was Süsses.“ ✗ |
 | Hook B | „Eine Minute für mich? Heute nicht.“ Mittags todmüde, und die Kinder kommen gleich ✓ |
 
