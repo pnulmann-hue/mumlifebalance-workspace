@@ -1,0 +1,540 @@
+<title>Mama wird Hausapothekerin</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap">
+<!--
+  Begleitung für Neukundinnen: Hausapotheke / Family Essentials Kit (10 Basisöle) oder Kids Collection (7 Roller).
+  Inhalt aus Patricias Workbook „Mama wird Hausapothekerin“ (OneDrive …/doTERRA/Mama wird Hausapothekerin/),
+  Kids-Anwendungen sinngemäss aus dem Kids-Collection-PDF (context/doTERRA/Kids Collection.pdf), Wortlaut eigen.
+  doTERRA-Compliance: keine Heilversprechen, keine Krankheitswörter als Versprechen, Ärztin-Hinweis bei allem Ernsten.
+  Keine Artifact-Fähigkeiten: alles bleibt im localStorage der Kundin. Quelle dieser Datei = diese Datei.
+-->
+<style>
+/* Layout: ein schmaler Begleiter fürs Handy — oben dunkler Kopf mit Set und Tag, darunter Reiter, eine Spalte */
+:root{
+  --bg:#f6f2e7; --card:#fffdf8; --ink:#0c1c30; --soft:#4d5d68; --line:#e3dccb;
+  --blue:#29556d; --petrol:#12828c; --orange:#dc822e; --orange-ink:#a85a17; --orange-soft:#fbe9d6;
+  --petrol-soft:#e2efef; --lock:#b7b0a0; --red:#a8402e; --red-soft:#f8e3de;
+  --display:"Philosopher", Georgia, serif; --body:"Source Sans 3", "Segoe UI", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1b26; --card:#172735; --ink:#efe9da; --soft:#a9b6bf; --line:#2a3d4d;
+  --blue:#7fb0c9; --petrol:#5cc0c7; --orange:#ec9a4c; --orange-ink:#f2b073; --orange-soft:#3a2a1b;
+  --petrol-soft:#16343a; --lock:#5d6b74; --red:#ec8f7c; --red-soft:#3b221d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1b26; --card:#172735; --ink:#efe9da; --soft:#a9b6bf; --line:#2a3d4d;
+  --blue:#7fb0c9; --petrol:#5cc0c7; --orange:#ec9a4c; --orange-ink:#f2b073; --orange-soft:#3a2a1b;
+  --petrol-soft:#16343a; --lock:#5d6b74; --red:#ec8f7c; --red-soft:#3b221d; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--body);margin:0}
+.huelle{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.15;text-wrap:balance;margin:0}
+h2{font-size:1.5rem}h3{font-size:1.15rem}
+p{margin:0}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.etikett{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--orange-ink)}
+.leise{color:var(--soft)}
+.stapel{display:flex;flex-direction:column;gap:14px}
+.karte{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.knopf{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:12px 22px;font-weight:700;background:var(--orange);color:#1b1206;text-decoration:none}
+.knopf.zweit{background:transparent;border:1.5px solid var(--line);color:var(--ink)}
+.knopf:disabled{opacity:.5;cursor:default}
+
+/* Start */
+.start{padding-block:40px 8px}
+.start h1{font-size:clamp(2rem,8vw,2.8rem);margin:10px 0 14px}
+.wahl{display:grid;gap:14px;margin-top:26px}
+.wahl button{text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:18px;padding:20px;display:grid;gap:6px}
+.wahl button:hover{border-color:var(--orange)}
+.wahl b{font-family:var(--display);font-size:1.3rem}
+.wahl small{color:var(--soft);font-size:.95rem}
+
+/* Kopf */
+.kopf{background:var(--blue);color:#f6f2e7;margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:22px max(16px,env(safe-area-inset-left,0px)) 18px;border-radius:0 0 22px 22px}
+:root:not([data-theme="light"]) .kopf{background:var(--blue)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .kopf{background:#1d3a4c}}
+:root[data-theme="dark"] .kopf{background:#1d3a4c}
+.kopf .etikett{color:#f3c193}
+.kopf h1{font-size:1.7rem;margin:4px 0 12px;color:#fff}
+.fortschritt{display:flex;gap:4px;flex-wrap:wrap}
+.fortschritt i{width:calc((100% - 29*4px)/30);min-width:6px;height:8px;border-radius:3px;background:rgba(255,255,255,.22)}
+.fortschritt i.f{background:#f3a35c}.fortschritt i.h{outline:2px solid #fff}
+.kopfzeile{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-top:10px;font-size:.92rem;flex-wrap:wrap}
+.kopf button{background:none;border:0;color:#d9e6ec;text-decoration:underline;padding:0;font-size:.85rem}
+
+/* Reiter */
+.reiter{display:flex;gap:6px;overflow-x:auto;padding-block:16px 6px;scrollbar-width:none}
+.reiter button{flex:none;border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:8px 15px;font-weight:600;font-size:.95rem}
+.reiter button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+/* Heute */
+.auftrag{border:2px solid var(--orange);background:var(--card)}
+.auftrag h2{font-size:1.45rem;margin:6px 0 10px}
+.auftrag .warum{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:.95rem;color:var(--soft)}
+.tagnav{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.tagnav button{border:0;background:none;color:var(--petrol);font-weight:700;padding:6px 0}
+.tagnav button:disabled{color:var(--lock)}
+.erledigt{background:var(--petrol-soft);color:var(--ink);border-radius:12px;padding:12px 14px;font-weight:600}
+.serie{display:flex;gap:16px;flex-wrap:wrap}
+.serie div{flex:1;min-width:120px}
+.serie b{display:block;font-family:var(--display);font-size:1.9rem;color:var(--petrol);font-variant-numeric:tabular-nums}
+
+/* Öle */
+.oelliste{display:grid;gap:10px}
+.oel{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.oel>button{width:100%;text-align:left;background:none;border:0;padding:14px 16px;display:flex;gap:12px;align-items:center}
+.punkt{width:38px;height:38px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--display);font-weight:700;color:#fff;font-size:.95rem}
+.oel .name{flex:1;min-width:0}
+.oel .name b{display:block;font-size:1.05rem}
+.oel .name span{font-size:.9rem;color:var(--soft)}
+.oel.zu{opacity:.62}
+.oel.zu .punkt{background:var(--lock)!important}
+.schloss{font-size:.8rem;color:var(--soft);white-space:nowrap}
+.oelinhalt{padding:0 16px 16px;display:grid;gap:12px}
+.oelinhalt ul{margin:0;padding-left:20px;display:grid;gap:5px}
+.achtung{background:var(--orange-soft);border-radius:10px;padding:10px 12px;font-size:.93rem}
+.minik{font-size:.85rem;color:var(--soft)}
+
+/* Notfall */
+.sit{display:grid;gap:10px}
+.sit details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0 16px}
+.sit summary{list-style:none;cursor:pointer;padding:14px 0;font-weight:700;display:flex;justify-content:space-between;gap:10px}
+.sit summary::-webkit-details-marker{display:none}
+.sit summary::after{content:"+";color:var(--orange-ink);font-size:1.3rem;line-height:1}
+.sit details[open] summary::after{content:"–"}
+.sit .inn{padding-bottom:16px;display:grid;gap:8px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chips span{background:var(--petrol-soft);border-radius:999px;padding:3px 10px;font-size:.85rem;font-weight:600}
+.arzt{background:var(--red-soft);border-left:4px solid var(--red);border-radius:10px;padding:14px 16px}
+.arzt b{color:var(--red)}
+
+/* Verdünnung */
+.rechner{display:grid;gap:12px}
+.rechner label{font-weight:600;font-size:.95rem}
+select,input[type=text],textarea{width:100%;font:inherit;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px}
+.ergebnis{font-family:var(--display);font-size:1.25rem}
+
+/* Routine */
+.tageszeit{display:grid;gap:8px}
+.tageszeit label{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 13px}
+.tageszeit input{margin-top:4px;accent-color:var(--orange);width:18px;height:18px;flex:none}
+.tageszeit label.zu{opacity:.5}
+
+/* Roller-Pass */
+.pass{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+.stempel{background:var(--card);border:1.5px dashed var(--line);border-radius:16px;padding:14px 10px;text-align:center;display:grid;gap:6px;justify-items:center}
+.stempel button{border:0;width:58px;height:58px;border-radius:50%;color:#fff;font-family:var(--display);font-size:1.3rem;font-weight:700}
+.stempel .zahl{font-variant-numeric:tabular-nums;font-weight:700}
+.stempel.zu button{background:var(--lock)!important}
+
+/* Wunschzettel */
+.wunsch{display:grid;gap:8px}
+.wunsch label{display:flex;gap:10px;align-items:center}
+.wunsch input{accent-color:var(--orange);width:18px;height:18px}
+.nummer{font-weight:700;user-select:all}
+.fuss{margin-top:30px;font-size:.85rem;color:var(--soft);display:grid;gap:8px}
+.meldung{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-weight:600;font-size:.92rem}
+@media (prefers-reduced-motion: no-preference){.auftrag{animation:rein .35s ease-out}@keyframes rein{from{transform:translateY(6px);opacity:.6}to{transform:none;opacity:1}}}
+</style>
+
+<div class="huelle" id="app"></div>
+<div class="meldung" id="meldung" hidden></div>
+
+<script>
+"use strict";
+var WHATSAPP_NR = "+41 79 359 19 37";
+var WHATSAPP = "https://wa.me/41793591937";
+
+/* ---------------------------------------------------------------- Inhalte */
+var SETS = {
+  haus: {
+    name: "Deine Hausapotheke",
+    wahl: "Hausapotheke oder Family Essentials Kit",
+    wahlText: "Die 10 Basisöle: Lemon, Lavender, Peppermint, Frankincense, Tea Tree, Oregano und vier Mischungen.",
+    tage: 30,
+    reiter: [["heute","Heute"],["oele","Meine Öle"],["los","Was ist los?"],["verd","Verdünnen"],["routine","Meine Routine"],["wunsch","Wunschzettel"]]
+  },
+  kids: {
+    name: "Deine Kids Collection",
+    wahl: "Kids Collection",
+    wahlText: "Die 7 Roller für Kinder: Brave, Calmer, Rescuer, Steady, Stronger, Thinker und Tamer.",
+    tage: 28,
+    reiter: [["heute","Heute"],["roller","Die Roller"],["rituale","Unser Tag"],["pass","Roller-Pass"],["wunsch","Wunschzettel"]]
+  }
+};
+
+/* ab = Tag, an dem das Öl freigeschaltet wird */
+var OELE = [
+  {id:"lemon",name:"Lemon",de:"Zitrone",farbe:"#d9a21b",ab:1,kurz:"frisch, wach, für Küche und Haushalt",
+   ideen:["Morgens 1 Tropfen in ein Glas Wasser (immer Glas oder Edelstahl, kein Plastik).","Mit Peppermint im Diffuser, wenn der Kopf am Nachmittag müde wird.","10 Tropfen in Wasser als Fensterreiniger, ein paar Tropfen im Wischeimer."],
+   kueche:"1 Tropfen ersetzt die Zitronenschale im Kuchen, im Dressing oder im Joghurt.",
+   achtung:"Macht die Haut lichtempfindlich: nach dem Auftragen die Stelle mindestens 24 Stunden vor Sonne schützen.",
+   seite:"Workbook Kapitel 2"},
+  {id:"lavender",name:"Lavender",de:"Lavendel",farbe:"#8b74b8",ab:1,kurz:"zum Runterkommen, für Haut und Abend",
+   ideen:["1–2 Tropfen im Diffuser vor dem Schlafengehen.","Ein Tropfen aufs Kopfkissen oder als Bettspray mit destilliertem Wasser.","Verdünnt auf einen kleinen Kratzer oder einen Insektenstich tupfen."],
+   kueche:"Mit der Zahnstocher-Methode in Honig oder Zucker: Zahnstocher ins Öl tauchen und einrühren, Lavendel wird schnell zu stark.",
+   achtung:"Für Kinder immer verdünnen, die Menge findest du unter „Verdünnen“.",
+   seite:"Workbook Kapitel 2"},
+  {id:"peppermint",name:"Peppermint",de:"Pfefferminze",farbe:"#2f9e75",ab:1,kurz:"kühlend, klärend, für Kopf und Bauch",
+   ideen:["Bei Kopfdruck verdünnt auf Schläfen und Nacken.","Tief aus der Hand einatmen, wenn das Nachmittagstief kommt.","Verdünnt sanft im Uhrzeigersinn auf den Bauch massieren."],
+   kueche:"Höchstens 1 Tropfen in Brownies oder Schokomousse, oder mit dem Zahnstocher.",
+   achtung:"Immer verdünnen. Bei kleinen Kindern nicht im Hals- und Gesichtsbereich anwenden.",
+   seite:"Workbook Kapitel 2"},
+  {id:"frankincense",name:"Frankincense",de:"Weihrauch",farbe:"#a8865a",ab:6,kurz:"das Allround-Talent, für Ruhe und Haut",
+   ideen:["Mit Lavendel im Diffuser am Abend („Schlaf gut“-Mischung).","In die Bodybutter oder Gesichtscreme für deine Abendroutine.","Ein Moment für dich: 1 Tropfen in die Hände, verreiben, dreimal tief einatmen."],
+   kueche:"",
+   achtung:"Gilt als sanft, trotzdem bei Kindern verdünnen.",
+   seite:"Workbook Kapitel 2"},
+  {id:"teatree",name:"Tea Tree",de:"Teebaum",farbe:"#4f8a5b",ab:6,kurz:"der Haut- und Hygienehelfer",
+   ideen:["Verdünnt auf einen Pickel tupfen.","3–4 Tropfen mit Salz ins Fussbad.","2–3 Tropfen auf ein Wattepad in die Sportschuhe legen."],
+   kueche:"",
+   achtung:"Nur äusserlich. Für die Mundspülung 1 Tropfen in warmes Wasser, spülen und ausspucken, nicht schlucken.",
+   seite:"Workbook Kapitel 2"},
+  {id:"onguard",name:"On Guard",de:"schützende Mischung",farbe:"#c0612c",ab:6,kurz:"für die Erkältungszeit und frische Luft",
+   ideen:["Im Diffuser, wenn draussen alle schniefen.","Als Morgen-Roller mit Trägeröl auf die Fusssohlen.","Raumspray: 20 Tr. Lemon, 10 Tr. On Guard, 10 Tr. Lavendel in 50 ml Glasflasche, mit destilliertem Wasser auffüllen."],
+   kueche:"",
+   achtung:"Enthält „heisse“ Öle wie Zimt und Nelke: immer stark verdünnen.",
+   seite:"Workbook Kapitel 2"},
+  {id:"zengest",name:"ZenGest",de:"Verdauungsmischung",farbe:"#6c8d3a",ab:12,kurz:"dein Bauchfreund",
+   ideen:["Nach einem schweren Essen 1 Tropfen verdünnt auf den Bauch.","Unterwegs im Auto: aus der Hand einatmen.","Als Bauch-Roller in die Handtasche."],
+   kueche:"",
+   achtung:"Bei Kindern stark verdünnt und nur äusserlich.",
+   seite:"Workbook Kapitel 2"},
+  {id:"deepblue",name:"Deep Blue",de:"lindernde Mischung",farbe:"#2d5f9a",ab:12,kurz:"für Muskeln nach dem Sport und verspannte Schultern",
+   ideen:["Nach dem Training auf die Beine einreiben.","Nacken und Schultern am Abend massieren.","Fussmassage am Abend, für dich oder für müde Kinderbeine (verdünnt)."],
+   kueche:"",
+   achtung:"Nicht bei Babys unter 2 Jahren im Gesicht. Bei Kindern immer verdünnen.",
+   seite:"Workbook Kapitel 2"},
+  {id:"air",name:"Air",de:"Atemmischung",farbe:"#3c8fb3",ab:12,kurz:"für freies Durchatmen",
+   ideen:["Im Diffuser, wenn die Nase zu ist.","Vor dem Sport aus der Hand einatmen.","Abends im Kinderzimmer im Diffuser."],
+   kueche:"",
+   achtung:"Nicht bei Babys unter 2 Jahren im Gesicht anwenden, bei Kindern immer verdünnen. Für ganz Kleine ist Lavendel die sanftere Wahl.",
+   seite:"Workbook Kapitel 2"},
+  {id:"oregano",name:"Oregano",de:"das heisse Schutzöl",farbe:"#9a3b2a",ab:19,kurz:"stark, nur sparsam und stark verdünnt",
+   ideen:["Im Immun-Roller: 3 Tr. On Guard, 2 Tr. Oregano, 3 Tr. Lemon in 10 ml Trägeröl, auf die Fusssohlen.","Nur äusserlich und immer stark verdünnt.","Ersetzt in der Küche frischen Oregano, nur mit dem Zahnstocher."],
+   kueche:"Zahnstocher-Methode in der Tomatensauce, ein ganzer Tropfen ist zu viel.",
+   achtung:"Nicht für Kleinkinder, Schwangere oder empfindliche Haut. Immer stark verdünnen.",
+   seite:"Workbook Kapitel 2"}
+];
+
+var ROLLER = [
+  {id:"calmer",name:"Calmer",was:"die erholsame Mischung",farbe:"#7f6fb0",ab:1,moment:"Zubettgehen",
+   wie:"Vor dem Schlafen auf die Fusssohlen oder die Handgelenke, wenn der Kopf noch voller Gedanken ist. Schönes Ritual: während der Gute-Nacht-Geschichte über Rücken oder Füsse rollen.",duft:"Lavendel, Ylang Ylang, Römische Kamille"},
+  {id:"brave",name:"Brave",was:"die ermutigende Mischung",farbe:"#d8822c",ab:1,moment:"Morgen und neue Situationen",
+   wie:"Morgens oder vor etwas Aufregendem auf Fusssohlen und Handrücken, zum Beispiel in der ersten Kindergartenwoche. Viele Familien nennen ihn das Löwenöl.",duft:"Orange, Sandelholz, Zimt"},
+  {id:"thinker",name:"Thinker",was:"die Fokus-Mischung",farbe:"#3b8db0",ab:8,moment:"Hausaufgaben und Lernen",
+   wie:"Auf Handgelenke, Schläfen oder Nacken, wenn die Hausaufgaben zäh werden. Viele nehmen beim Lernen und am Testtag denselben Roller, damit der Duft zum Lernen gehört.",duft:"Vetiver, Pfefferminze, Clementine, Rosmarin"},
+  {id:"steady",name:"Steady",was:"die erdende Mischung",farbe:"#7b8a4a",ab:8,moment:"Wenn die Gefühle gross werden",
+   wie:"Auf Handgelenke oder Nacken, damit es insgesamt ruhiger und ausgeglichener wird. Erklär ihn deinem Kind als Helfer für grosse Gefühle, viele Kinder fragen dann selbst danach.",duft:"Sandelholz, Tanne, Koriander, Magnolie"},
+  {id:"rescuer",name:"Rescuer",was:"die lindernde Mischung",farbe:"#4a7fa8",ab:15,moment:"Nach einem aktiven Tag",
+   wie:"Abends auf müde Beine, Nacken oder Rücken, zum Beispiel nach dem Sport oder einem langen Ausflug.",duft:"Lavendel, Grüne Minze"},
+  {id:"tamer",name:"Tamer",was:"die Verdauungsmischung",farbe:"#5f9a5f",ab:15,moment:"Nach einem grossen Essen",
+   wie:"Sanft im Uhrzeigersinn auf den Bauch nach dem Festessen. Für die kurvige Autofahrt vorher auf Bauch und Handgelenke.",duft:"Grüne Minze, Japanische Minze, Ingwer"},
+  {id:"stronger",name:"Stronger",was:"die schützende Mischung",farbe:"#b5603a",ab:22,moment:"Tage, an denen sich dein Kind nicht ganz fit fühlt",
+   wie:"Auf die ganzen Fusssohlen, als täglicher Begleiter in der kalten Jahreszeit oder an Tagen, an denen dein Kind mehr Geborgenheit braucht.",duft:"Zedernholz, Litsea, Weihrauch, Rose"}
+];
+
+/* Tagesaufträge — jeweils unter zwei Minuten, nur mit Ölen, die schon offen sind */
+var AUFTRAEGE = {
+  haus: [
+    ["Ein Glas, ein Tropfen","Gib morgens 1 Tropfen Lemon in ein Glas Wasser. Glas oder Edelstahl, kein Plastik.","Je kleiner der erste Schritt, desto leichter wird es zur Gewohnheit."],
+    ["Lavendel aufs Kissen","Heute Abend 1 Tropfen Lavender auf dein Kopfkissen oder 2 Tropfen in den Diffuser.","Du merkst dir den Duft mit dem Moment, und genau so entsteht ein Abendritual."],
+    ["Der Nachmittags-Atemzug","Wenn heute das Tief kommt: 1 Tropfen Peppermint in die Hände, verreiben, dreimal tief einatmen.","Aromatisch ist die einfachste der drei Anwendungsarten."],
+    ["Dein Platz für die Öle","Stell deine Fläschchen an einen festen, dunklen und kühlen Ort, wo du sie auch siehst. Nicht auf die Heizung, nicht in die Sonne.","Öle, die man sieht, benutzt man."],
+    ["Verdünnen üben","Schau unter „Verdünnen“, wie viele Tropfen auf 10 ml für das Alter deiner Kinder passen, und schreib es dir auf ein Etikett.","Im Zweifel immer mehr verdünnen."],
+    ["Drei neue Öle","Heute sind Frankincense, Tea Tree und On Guard dazugekommen. Riech an allen dreien und notiere dir, welches dir am besten gefällt.","Vertraue deiner Nase, sie sagt dir viel."],
+    ["Frische Luft","Mach dir das Raumspray: 20 Tr. Lemon, 10 Tr. On Guard, 10 Tr. Lavendel in eine 50-ml-Glasflasche, mit destilliertem Wasser auffüllen.","Ein Raumspray ersetzt die Duftsprays aus dem Supermarkt."],
+    ["Schlaf-gut-Mischung","Heute Abend Lavender und Frankincense zusammen in den Diffuser, je 2 Tropfen.","Das ist die Abendmischung aus deinem Workbook."],
+    ["Der Morgen-Roller","Füll einen 10-ml-Roller mit Trägeröl und gib On Guard dazu, so viel wie unter „Verdünnen“ für dich steht. Morgens auf die Fusssohlen.","Fertig gemischt heisst: am Morgen keine Sekunde nachdenken."],
+    ["Drei Situationen","Notiere dir drei Situationen, die bei euch oft vorkommen, und schau unter „Was ist los?“, was dazu passt.","So hast du deine Antworten schon parat, bevor es brennt."],
+    ["Dein Ablauf","Wenn heute etwas ansteht, geh die fünf Schritte durch: Was liegt an? Nachschauen. Öl und Methode wählen. Klein anfangen. Notieren.","Das ist der Ablauf aus Kapitel 3, er gibt dir in jeder Situation Halt."],
+    ["Noch drei neue","ZenGest, Deep Blue und Air sind offen. Lies bei jedem den Abschnitt unter „Meine Öle“.","Jetzt kennst du schon neun deiner zehn Öle."],
+    ["Bauch nach dem Essen","Nach dem Znacht 1 Tropfen ZenGest mit etwas Trägeröl sanft im Uhrzeigersinn auf den Bauch.","Ein kleiner Handgriff, der schnell zur Gewohnheit wird."],
+    ["Feierabend für die Schultern","Massier dir heute Abend 1 Tropfen Deep Blue mit Trägeröl in Nacken und Schultern.","Auch die Hausapothekerin braucht ihre Apotheke."],
+    ["Durchatmen","Gib 2 Tropfen Air in den Diffuser oder atme es vor dem Sport aus der Hand ein.","Air ist für Babys unter 2 Jahren nicht ins Gesicht."],
+    ["Deine Morgenroutine","Stell unter „Meine Routine“ deinen Morgen zusammen. Zwei Dinge reichen völlig.","Eine Routine, die du lebst, schlägt jede perfekte."],
+    ["Aromadusche","Gib 1–2 Tropfen Peppermint oder Lemon in die Duschecke, bevor du das warme Wasser andrehst.","Belebender Dampf am Morgen, in zehn Sekunden erledigt."],
+    ["Die SOS-Tasche","Pack deine wichtigsten Roller in eine kleine Tasche für unterwegs: Lavendel, Peppermint, ZenGest.","So hast du sie auch auf dem Spielplatz dabei."],
+    ["Oregano kennenlernen","Oregano ist offen. Lies die Achtung-Zeile genau, bevor du es benutzt: stark verdünnen, nicht für Kleinkinder.","Respekt vor dem starken Öl macht dich sicher."],
+    ["Deine Abendroutine","Stell unter „Meine Routine“ deinen Abend zusammen, für dich und für die Kinder.","Abends ist der Moment, in dem Öle am schnellsten zum Ritual werden."],
+    ["Lavendel in der Wäsche","2–3 Tropfen Lavender auf einen Wolltrocknerball oder mit Essig als Weichspüler.","Deine Öle dürfen auch im Haushalt arbeiten."],
+    ["Ein Moment für dich","Nimm dir heute zwei Minuten: 1 Tropfen Frankincense in die Hände, Augen zu, dreimal tief atmen.","Selfcare darf so klein sein."],
+    ["Küche mit Lemon","Ersetze heute in einem Rezept die Zitronenschale durch 1 Tropfen Lemon, im Dressing, im Joghurt oder im Kuchen.","Was schmeckt, benutzt man wieder."],
+    ["Dein Lieblingsöl","Welches Öl hast du in den letzten drei Wochen am meisten benutzt? Markier es auf dem Wunschzettel als Nachkauf, wenn es zur Neige geht.","So geht dir dein wichtigstes Öl nie aus."],
+    ["Die Nachmittags-Box","Mach dir einen Roller mit Lavendel und Peppermint für Kopf und Nacken am Nachmittag.","Fertig gemischt wird es benutzt."],
+    ["Das Buch aufschlagen","Schlag bei einer Frage heute zuerst in „Kraft der Natur“ nach, bevor du jemanden fragst.","Selbst nachschauen ist der Kern einer Hausapothekerin."],
+    ["Hände frisch","Mach dir ein Handspray mit On Guard, etwas Kokosöl und destilliertem Wasser für die Tasche.","Für unterwegs, wenn kein Waschbecken in der Nähe ist."],
+    ["Was kommt als Nächstes?","Schau auf deinen Wunschzettel: Welches Öl oder Produkt möchtest du als Nächstes in deine Hausapotheke holen?","Schritt für Schritt aufbauen heisst: nie alles auf einmal kaufen."],
+    ["Das Treueprogramm","Lies unter „Wunschzettel“, wie das Treueprogramm funktioniert, und entscheide, ob es für dich passt.","Mit monatlichen kleinen Bestellungen sammelst du Punkte für Gratisprodukte."],
+    ["Du bist Hausapothekerin","Schau dir deine Routine an und schreib mir, was sich in den 30 Tagen bei euch verändert hat.","Ich freue mich riesig über deine Nachricht."]
+  ],
+  kids: [
+    ["Der Abend-Roller","Heute Abend Calmer auf die Fusssohlen deines Kindes, kurz bevor das Licht ausgeht.","Gleicher Moment, gleicher Duft: so wird es zum Ritual."],
+    ["Der Mut-Roller","Morgens vor der Schule oder dem Kindergarten Brave auf die Handrücken.","Lass dein Kind selbst rollen, das macht stolz."],
+    ["Riech-Runde","Lass dein Kind an Calmer und Brave riechen und fragen, wie die Düfte heissen sollen.","Kinder benutzen gern, was sie selbst benannt haben. Mag dein Kind einen Duft nicht, lass ihn weg."],
+    ["Roller-Pass","Zeig deinem Kind den Roller-Pass. Jedes Mal, wenn es einen Roller benutzt, darf es einen Stempel setzen.","Kinder lieben es, etwas zu sammeln."],
+    ["Fester Platz","Gebt den Rollern einen festen Platz, zum Beispiel am Bett und an der Garderobe. Die Silikon-Topper mit Karabinerhaken passen auch an den Schulsack.","Was man sieht, benutzt man."],
+    ["Calmer jeden Abend","Calmer gehört jetzt jeden Abend dazu. Heute auf die Handgelenke statt auf die Füsse.","Das Gedankenkarussell darf leiser werden."],
+    ["Rückblick Woche 1","Welcher Roller kam besser an? Trag es auf dem Wunschzettel unter „Lieblingsroller“ ein.","Du lernst gerade, was dein Kind mag."],
+    ["Zwei neue Roller","Thinker und Steady sind dazugekommen. Lest gemeinsam unter „Die Roller“, wofür sie da sind.","Jetzt habt ihr vier Roller im Alltag."],
+    ["Hausaufgaben-Roller","Wenn die Hausaufgaben heute zäh werden: Thinker auf die Handgelenke.","Auch gut vor einem Test."],
+    ["Wenn es kippt","Wenn die Gefühle heute gross werden: Steady auf Handgelenke oder Nacken.","Erklär Steady als Helfer für grosse Gefühle. Viele Kinder fragen danach selbst nach ihrem Roller."],
+    ["Unser Tag","Stellt unter „Unser Tag“ zusammen, welcher Roller wann dran ist.","Ein fester Plan erspart dir das Überlegen."],
+    ["Ein Roller für Mama","Probier Steady oder Calmer heute selbst aus, viele Erwachsene mögen die Kids Collection auch.","Kinder spüren, wenn du angespannt bist. Wenn du selbst runterkommst, hilft das auch ihnen."],
+    ["Stempel zählen","Zählt die Stempel im Roller-Pass. Welcher Roller führt?","Der Lieblingsroller geht meistens zuerst leer."],
+    ["Rückblick Woche 2","Was hat in dieser Woche gut funktioniert, was nicht? Ein Satz im Notizfeld reicht.","Beobachten gehört zum Lernen dazu."],
+    ["Rescuer und Tamer","Zwei neue Roller sind offen. Rescuer für müde Beine, Tamer für den Bauch nach dem Essen.","Jetzt sind es sechs."],
+    ["Müde Beine","Nach einem aktiven Tag heute Rescuer auf die Beine, mit einer kleinen Massage.","Die Massage ist genauso wichtig wie der Duft."],
+    ["Nach dem Festessen","Nach einem grossen Essen Tamer sanft im Uhrzeigersinn auf den Bauch.","Tamer gehört griffbereit in die Tasche."],
+    ["Auf Reisen","Packt die Roller für den nächsten Ausflug in die Tragetasche: Tamer fürs Auto, Brave fürs Neue.","Unterwegs zeigt sich, welche Roller ihr wirklich braucht."],
+    ["Kind erklärt","Lass dein Kind einem Geschwister oder Grosi erklären, wofür ein Roller ist.","Wer erklärt, hat es verstanden."],
+    ["Lieblingsroller","Schau in den Roller-Pass: Welcher Roller hat die meisten Stempel? Setz ihn auf den Wunschzettel, bevor er leer ist.","So geht euch der wichtigste Roller nie aus."],
+    ["Rückblick Woche 3","Welcher Moment am Tag ist schon ein festes Ritual geworden?","Ein festes Ritual reicht, damit die Roller bleiben."],
+    ["Der siebte Roller","Stronger ist offen, für Tage, an denen sich dein Kind nicht ganz fit fühlt oder mehr Geborgenheit braucht.","Jetzt kennt ihr alle sieben."],
+    ["Morgenrunde","Morgens zwei Roller: Brave und Stronger. Lass dein Kind wählen, welcher zuerst kommt.","Wer wählen darf, macht lieber mit."],
+    ["Ein Familien-Ritual","Erfindet zusammen ein Ritual, zum Beispiel Calmer während der Gute-Nacht-Geschichte oder eine Roller-Runde vor dem Zähneputzen.","Euer Ritual, eure Regeln."],
+    ["Und für dich?","Was brauchst du als Mama? Schau dir an, was die Hausapotheke für dich bereithält, und schreib mir, wenn du mehr wissen willst.","Die Kids Collection und die Hausapotheke ergänzen sich."],
+    ["Der Wunschzettel","Schau auf den Wunschzettel: Was soll als Nächstes dazukommen?","Schritt für Schritt aufbauen, nie alles auf einmal."],
+    ["Das Treueprogramm","Lies unter „Wunschzettel“, wie das Treueprogramm funktioniert.","Mit kleinen monatlichen Bestellungen sammelst du Punkte für Gratisprodukte."],
+    ["Geschafft!","Vier Wochen Roller-Rituale. Schreib mir, welcher Roller bei euch der Held ist.","Ich freue mich riesig über deine Nachricht."]
+  ]
+};
+
+var LAGEN = [
+  {t:"Kopf drückt",oele:["Peppermint","Lavender","Frankincense"],ab:1,
+   wie:"Eines der Öle verdünnt auf Schläfen oder Nacken. Peppermint kühlt, Lavendel bringt Ruhe. Bei kleinen Kindern Peppermint nicht im Gesicht."},
+  {t:"Kleiner Kratzer oder Schürfung",oele:["Lavender","Tea Tree"],ab:1,
+   wie:"Stelle reinigen, dann ein Öl verdünnt auftragen."},
+  {t:"Insektenstich",oele:["Lavender","Tea Tree"],ab:1,
+   wie:"Verdünnt direkt auf den Stich tupfen. Zum Schutz unterwegs die verdünnten Öle auf die freien Hautstellen."},
+  {t:"Zu viel Sonne erwischt",oele:["Lavender","Frankincense"],ab:1,
+   wie:"Haut zuerst kühlen, dann ein Öl verdünnt auftragen. Zitrusöle wie Lemon nie vor der Sonne auf die Haut."},
+  {t:"Bauch grummelt",oele:["ZenGest","Peppermint"],ab:12,
+   wie:"Verdünnt sanft im Uhrzeigersinn auf den Bauch massieren. Bei Kindern stark verdünnt."},
+  {t:"Unterwegs wird es flau im Magen",oele:["Peppermint","ZenGest","Lavender"],ab:1,
+   wie:"Ein Tropfen in die Hände oder auf ein Taschentuch und einatmen."},
+  {t:"Nase zu",oele:["Air","Peppermint","Lemon"],ab:12,
+   wie:"In den Diffuser oder aus der Hand einatmen. Bei Babys unter 2 Jahren nicht ins Gesicht, für ganz Kleine Lavendel im Diffuser."},
+  {t:"Hals kratzt (für Grosse)",oele:["On Guard","Lemon","Tea Tree"],ab:6,
+   wie:"1 Tropfen in ein Glas warmes Wasser und gurgeln, danach ausspucken. Oder die Öle in eine Schüssel heisses Wasser geben und den Dampf einatmen."},
+  {t:"Alle schniefen rundherum",oele:["On Guard","Lemon","Oregano"],ab:6,
+   wie:"On Guard und Lemon im Diffuser. Morgens den Morgen-Roller auf die Fusssohlen. Oregano nur stark verdünnt und nie für Kleinkinder."},
+  {t:"Muskelkater oder Verspannung",oele:["Deep Blue","Peppermint"],ab:12,
+   wie:"Verdünnt einmassieren, Peppermint wirkt kühlend."},
+  {t:"Prellung oder Zerrung",oele:["Deep Blue","Lavender","Frankincense"],ab:12,
+   wie:"Eines der Öle verdünnt auf die Stelle auftragen."},
+  {t:"Abends nicht abschalten können",oele:["Lavender","Frankincense"],ab:1,
+   wie:"In den Diffuser oder verdünnt auf Nacken, Handgelenke oder Fusssohlen."}
+];
+
+var VERD = [
+  {a:"Baby unter 1 Jahr",p:"0,1–0,5 %",t:"höchstens 1 Tropfen auf 10 ml Trägeröl",h:"Bei Babys zuerst mit Hebamme oder Kinderärztin sprechen und sanfte Öle wie Lavendel wählen."},
+  {a:"Kind 1–3 Jahre",p:"0,5–1 %",t:"1–2 Tropfen auf 10 ml Trägeröl",h:"Kein Peppermint, Air oder Deep Blue im Gesicht. Kein Oregano."},
+  {a:"Kind 3–6 Jahre",p:"1–1,5 %",t:"2–3 Tropfen auf 10 ml Trägeröl",h:"Kein Oregano. Peppermint nicht im Hals- und Gesichtsbereich."},
+  {a:"Kind 6–10 Jahre",p:"1,5–2 %",t:"3–4 Tropfen auf 10 ml Trägeröl",h:"Starke Öle wie On Guard oder Oregano nur sehr sparsam."},
+  {a:"Ab 10 Jahren und Erwachsene",p:"2–3 %",t:"4–6 Tropfen auf 10 ml Trägeröl",h:"Für die tägliche Anwendung. Heisse Öle wie Oregano trotzdem stark verdünnen."},
+  {a:"Schwanger",p:"stark verdünnt",t:"lieber weniger als mehr",h:"In der Schwangerschaft mit der Hebamme absprechen. Kein Oregano."}
+];
+
+var ROUTINE = {
+  haus: {
+    Morgen:[["lemon","1 Tropfen Lemon in ein Glas Wasser"],["onguard","Morgen-Roller mit On Guard auf die Fusssohlen"],["peppermint","Lemon und Peppermint im Diffuser für einen frischen Start"],["peppermint","Aromadusche mit Peppermint oder Lemon"]],
+    Nachmittag:[["peppermint","Roller mit Lavendel und Peppermint für Schläfen und Nacken"],["zengest","Bauch-Roller mit ZenGest nach schwerem Essen"],["onguard","Handspray mit On Guard für unterwegs"]],
+    Abend:[["lavender","Lavendel und Frankincense im Diffuser"],["lavender","Fussmassage mit Lavendel für die Kinder"],["deepblue","Deep Blue für müde Beine oder Schultern"],["frankincense","Bodybutter mit Frankincense für dich"]]
+  },
+  kids: {
+    Morgen:[["brave","Brave vor der Schule auf die Handrücken"],["stronger","Stronger als täglicher Begleiter"]],
+    Nachmittag:[["thinker","Thinker bei den Hausaufgaben"],["steady","Steady, wenn die Gefühle gross werden"],["tamer","Tamer nach dem Zvieri oder auf der Autofahrt"]],
+    Abend:[["rescuer","Rescuer auf müde Beine nach einem aktiven Tag"],["calmer","Calmer auf die Fusssohlen vor dem Schlafen"]]
+  }
+};
+
+/* ---------------------------------------------------------------- Speicher */
+var KEY = "mwh-begleitung-v1";
+var S = laden();
+function laden(){
+  try{var x=JSON.parse(localStorage.getItem(KEY)||"null");if(x&&typeof x==="object")return x;}catch(e){}
+  return {set:null,start:null,erledigt:{},routine:{},stempel:{},wunsch:{},lieb:"",notiz:"",reiter:"heute",tag:null};
+}
+function speichern(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+
+function heute0(){var d=new Date();d.setHours(0,0,0,0);return d;}
+function aktTag(){
+  if(!S.start)return 1;
+  var t=Math.floor((heute0()-new Date(S.start))/864e5)+1;
+  return Math.max(1,Math.min(t,SETS[S.set].tage));
+}
+function liste(){return S.set==="kids"?ROLLER:OELE;}
+function offen(o){return o.ab<=aktTag();}
+function e(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+var meldTimer;
+function melde(t){var m=document.getElementById("meldung");m.textContent=t;m.hidden=false;clearTimeout(meldTimer);meldTimer=setTimeout(function(){m.hidden=true;},2200);}
+
+/* ---------------------------------------------------------------- Ansichten */
+var app=document.getElementById("app");
+
+function zeichne(){
+  if(!S.set){app.innerHTML=startSeite();return;}
+  var set=SETS[S.set], tag=aktTag();
+  if(S.tag==null||S.tag>tag)S.tag=tag;
+  var balken="";for(var i=1;i<=set.tage;i++)balken+='<i class="'+(S.erledigt[i]?"f":"")+(i===tag?" h":"")+'"></i>';
+  var fertig=Object.keys(S.erledigt).length;
+  var r=set.reiter.map(function(x){return '<button role="tab" aria-selected="'+(S.reiter===x[0])+'" data-r="'+x[0]+'">'+x[1]+'</button>';}).join("");
+  app.innerHTML=
+    '<header class="kopf"><span class="etikett">Mama wird Hausapothekerin</span><h1>'+e(set.name)+'</h1>'+
+    '<div class="fortschritt" style="--n:'+set.tage+'">'+balken+'</div>'+
+    '<div class="kopfzeile"><span>Tag '+tag+' von '+set.tage+' · '+fertig+' erledigt</span><button id="wechsel">Set wechseln</button></div></header>'+
+    '<nav class="reiter" role="tablist">'+r+'</nav><main id="inhalt" class="stapel"></main>'+fuss();
+  var fn={heute:heuteSeite,oele:oeleSeite,los:losSeite,verd:verdSeite,routine:routineSeite,wunsch:wunschSeite,roller:oeleSeite,rituale:routineSeite,pass:passSeite}[S.reiter]||heuteSeite;
+  document.getElementById("inhalt").innerHTML=fn();
+  var fb=document.querySelectorAll(".fortschritt i");for(var k=0;k<fb.length;k++)fb[k].style.width="calc((100% - "+(set.tage-1)+"*4px)/"+set.tage+")";
+}
+
+function startSeite(){
+  return '<section class="start"><span class="etikett">Willkommen</span><h1>Schön, bist du da</h1>'+
+  '<p class="leise">Ich begleite dich Tag für Tag, bis deine Öle ganz selbstverständlich zu deinem Alltag gehören. Jeden Tag ein kleiner Schritt, keiner dauert länger als zwei Minuten.</p>'+
+  '<div class="wahl"><p><b style="font-family:var(--display);font-size:1.15rem">Welches Set hast du?</b></p>'+
+  ["haus","kids"].map(function(k){return '<button data-set="'+k+'"><b>'+SETS[k].wahl+'</b><small>'+SETS[k].wahlText+'</small></button>';}).join("")+
+  '</div><p class="leise" style="margin-top:18px;font-size:.9rem">Du kannst das Set später jederzeit wechseln. Was du hier einträgst, bleibt nur auf deinem Handy.</p></section>'+fuss();
+}
+
+function heuteSeite(){
+  var set=SETS[S.set], tag=aktTag(), d=S.tag, a=AUFTRAEGE[S.set][d-1], ok=!!S.erledigt[d];
+  var serie=0;for(var i=tag;i>=1&&S.erledigt[i];i--)serie++;
+  var neu=liste().filter(function(o){return o.ab===d;});
+  return '<div class="karte auftrag"><div class="tagnav"><button data-tag="'+(d-1)+'"'+(d<=1?" disabled":"")+'>‹ Tag '+(d-1||"")+'</button>'+
+    '<span class="etikett">'+(d===tag?"Heute · ":"")+'Tag '+d+'</span>'+
+    '<button data-tag="'+(d+1)+'"'+(d>=tag?" disabled":"")+'>Tag '+(d<tag?d+1:"")+' ›</button></div>'+
+    '<h2>'+e(a[0])+'</h2><p>'+e(a[1])+'</p><p class="warum">'+e(a[2])+'</p></div>'+
+    (ok?'<div class="erledigt">✓ Erledigt. Schön gemacht!</div><button class="knopf zweit" id="nochnicht">Doch noch nicht gemacht</button>'
+       :'<button class="knopf" id="gemacht">Hab ich gemacht</button>')+
+    (neu.length?'<div class="karte"><span class="etikett">Neu dazugekommen</span><p style="margin-top:6px">'+neu.map(function(o){return "<b>"+o.name+"</b>";}).join(", ")+'. Du findest '+(neu.length>1?"sie":"es")+' unter „'+(S.set==="kids"?"Die Roller":"Meine Öle")+'“.</p></div>':"")+
+    '<div class="karte serie"><div><b>'+serie+'</b><span class="leise">Tage am Stück</span></div><div><b>'+Object.keys(S.erledigt).length+'</b><span class="leise">von '+set.tage+' Schritten</span></div></div>'+
+    '<div class="karte"><label for="notiz" class="etikett">Meine Notizen</label><textarea id="notiz" rows="3" style="margin-top:8px" placeholder="Was hat funktioniert? Was riecht ihr gern?">'+e(S.notiz||"")+'</textarea></div>';
+}
+
+function oeleSeite(){
+  var kids=S.set==="kids";
+  var kopf=kids?'<p class="leise">Alle Roller sind bereits verdünnt und für Kinder ab 3 Jahren gemacht. Jede Woche lernt ihr neue kennen. Einen neuen Roller zuerst an einer kleinen Stelle am Fuss ausprobieren, und mag dein Kind einen Duft nicht, lass ihn weg.</p><p><a href="https://media.doterra.com/eu/de/flyers/kids-collection-cards.pdf" target="_blank" rel="noopener">Die offiziellen Anwendungskarten von doTERRA</a></p>'
+               :'<p class="leise">Deine zehn Basisöle. Alle drei bis sieben Tage kommen neue dazu, damit es nicht zu viel auf einmal wird. Mehr dazu in Kapitel 2 deines Workbooks.</p>';
+  return kopf+'<div class="oelliste">'+liste().map(function(o){
+    var zu=!offen(o);
+    var unter=kids?(o.was+" · "+o.moment):(o.de+" · "+o.kurz);
+    var inhalt=zu?"":(kids
+      ?'<div class="oelinhalt" hidden id="i-'+o.id+'"><p><b>Wann:</b> '+e(o.moment)+'</p><p>'+e(o.wie)+'</p><p class="minik">Riecht nach: '+e(o.duft)+'</p><div class="achtung">doTERRA empfiehlt die Kids Collection ab 3 Jahren. Bei Jüngeren zuerst Hebamme oder Kinderärztin fragen. Nicht in Augen und Ohren.</div></div>'
+      :'<div class="oelinhalt" hidden id="i-'+o.id+'"><ul>'+o.ideen.map(function(x){return "<li>"+e(x)+"</li>";}).join("")+'</ul>'+(o.kueche?'<p><b>In der Küche:</b> '+e(o.kueche)+'</p>':"")+'<div class="achtung">'+e(o.achtung)+'</div><p class="minik">'+e(o.seite)+'</p></div>');
+    return '<div class="oel'+(zu?" zu":"")+'"><button data-oel="'+o.id+'"'+(zu?' aria-disabled="true"':' aria-expanded="false"')+'><span class="punkt" style="background:'+o.farbe+'">'+o.name.slice(0,2)+'</span><span class="name"><b>'+o.name+'</b><span>'+e(unter)+'</span></span>'+(zu?'<span class="schloss">ab Tag '+o.ab+'</span>':"")+'</button>'+inhalt+'</div>';
+  }).join("")+'</div>';
+}
+
+function losSeite(){
+  return '<p class="leise">Dein Ablauf aus Kapitel 3: Was liegt an? Nachschauen. Öl und Methode wählen. Klein anfangen und beobachten. Notieren, was geholfen hat.</p>'+
+  '<div class="arzt"><b>Zuerst zur Ärztin, wenn …</b><p style="margin-top:6px">es um ein Baby geht, das Fieber hoch ist oder nicht weggeht, jemand schlecht Luft bekommt, starke Schmerzen hat oder du dir einfach unsicher bist. Die Öle begleiten euren Alltag, sie ersetzen keine Abklärung und keine Behandlung.</p></div>'+
+  '<div class="sit">'+LAGEN.map(function(l){
+    var offenNamen=l.oele.filter(function(n){var o=OELE.filter(function(x){return x.name===n;})[0];return !o||offen(o);});
+    return '<details><summary>'+e(l.t)+'</summary><div class="inn"><div class="chips">'+l.oele.map(function(n){var o=OELE.filter(function(x){return x.name===n;})[0];var z=o&&!offen(o);return '<span'+(z?' style="opacity:.5"':"")+'>'+n+(z?" · ab Tag "+o.ab:"")+'</span>';}).join("")+'</div><p>'+e(l.wie)+'</p>'+(offenNamen.length<l.oele.length?'<p class="minik">Die grauen Öle lernst du in den nächsten Tagen kennen.</p>':"")+'</div></details>';
+  }).join("")+'</div><p class="leise" style="font-size:.9rem">Mehr Situationen findest du im Buch „Kraft der Natur“ und in Kapitel 4 deines Workbooks.</p>';
+}
+
+function verdSeite(){
+  var w=S.alter!=null?S.alter:2, v=VERD[w];
+  return '<div class="karte rechner"><label for="alter">Für wen mischst du?</label><select id="alter">'+VERD.map(function(x,i){return '<option value="'+i+'"'+(i==w?" selected":"")+'>'+x.a+'</option>';}).join("")+'</select>'+
+    '<div><span class="etikett">So viel</span><p class="ergebnis">'+v.t+'</p><p class="leise">'+v.p+' Verdünnung</p></div><div class="achtung">'+e(v.h)+'</div></div>'+
+    '<div class="karte stapel"><h3>Die Grundregeln</h3><ul style="margin:0;padding-left:20px;display:grid;gap:6px">'+
+    '<li>Je jünger das Kind, desto stärker verdünnen. Im Zweifel immer mehr Trägeröl.</li>'+
+    '<li>Trägeröl ist zum Beispiel Kokosöl, Mandelöl oder Jojobaöl.</li><li>Öle gehören nicht in Augen und Ohren.</li>'+
+    '<li>Zitrusöle wie Lemon: nach dem Auftragen 24 Stunden keine Sonne auf die Stelle.</li>'+
+    '<li>Innerlich nur Öle, die ausdrücklich dafür freigegeben sind, und mit 1 Tropfen beginnen.</li>'+
+    '<li>Eigene Mischungen mit Datum und Inhalt beschriften.</li></ul></div>';
+}
+
+function routineSeite(){
+  var R=ROUTINE[S.set], kids=S.set==="kids", byId={};liste().forEach(function(o){byId[o.id]=o;});
+  var gew=0;
+  var html='<p class="leise">'+(kids?"Welcher Roller ist bei euch wann dran? Hak an, was ihr macht. Zwei, drei feste Momente reichen völlig.":"Hak an, was zu dir passt. Eine Routine, die du lebst, ist mehr wert als eine perfekte auf dem Papier.")+'</p>';
+  Object.keys(R).forEach(function(z){
+    html+='<div class="stapel" style="gap:8px"><h3>'+z+'</h3><div class="tageszeit">'+R[z].map(function(x,i){
+      var key=z+i, o=byId[x[0]], zu=o&&!offen(o), an=!!S.routine[key]; if(an)gew++;
+      return '<label class="'+(zu?"zu":"")+'"><input type="checkbox" data-rt="'+key+'"'+(an?" checked":"")+(zu?" disabled":"")+'><span>'+e(x[1])+(zu?' <span class="minik">· ab Tag '+o.ab+'</span>':"")+'</span></label>';
+    }).join("")+'</div></div>';
+  });
+  if(gew)html+='<button class="knopf zweit" id="routinekopie">Meine Routine kopieren</button>';
+  return html;
+}
+
+function passSeite(){
+  return '<p class="leise">Für dein Kind: Jedes Mal, wenn es einen Roller benutzt, darf es hier einen Stempel setzen. Zum Korrigieren lange drücken.</p><div class="pass">'+ROLLER.map(function(o){
+    var zu=!offen(o), n=S.stempel[o.id]||0;
+    return '<div class="stempel'+(zu?" zu":"")+'"><button data-st="'+o.id+'" style="background:'+o.farbe+'"'+(zu?" disabled":"")+' aria-label="Stempel für '+o.name+'">'+(zu?"·":o.name.charAt(0))+'</button><b>'+o.name+'</b><span class="zahl">'+(zu?"ab Tag "+o.ab:(n+" ★"))+'</span></div>';
+  }).join("")+'</div>';
+}
+
+function wunschSeite(){
+  var kids=S.set==="kids";
+  var vorschlag=kids?["Calmer nachkaufen","Brave nachkaufen","Thinker nachkaufen","Steady nachkaufen","Die Hausapotheke für mich","Ein Diffuser fürs Kinderzimmer"]
+                    :["Lemon nachkaufen","Lavender nachkaufen","Peppermint nachkaufen","On Guard nachkaufen","Die Kids Collection","Leere Roller und Glasflaschen","Ein Diffuser"];
+  var gewaehlt=vorschlag.filter(function(v){return S.wunsch[v];});
+  return '<div class="karte stapel"><h3>Mein Wunschzettel</h3><p class="leise">Was soll als Nächstes in deine '+(kids?"Sammlung":"Hausapotheke")+'? Kreuz an, was du gern hättest, und schick es mir.</p>'+
+    '<div class="wunsch">'+vorschlag.map(function(v,i){return '<label><input type="checkbox" data-w="'+e(v)+'"'+(S.wunsch[v]?" checked":"")+'>'+e(v)+'</label>';}).join("")+'</div>'+
+    '<label for="lieb" style="font-weight:600">'+(kids?"Unser Lieblingsroller":"Mein Lieblingsöl")+' / Sonstiges</label><input type="text" id="lieb" value="'+e(S.lieb||"")+'">'+
+    '<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="knopf" id="wsenden" href="'+WHATSAPP+'?text='+encodeURIComponent(wunschText())+'" target="_blank" rel="noopener">Per WhatsApp an Patricia</a><button class="knopf zweit" id="wkopie">Text kopieren</button></div>'+
+    '<p class="minik">Falls WhatsApp nicht aufgeht: Text kopieren und an <span class="nummer">'+WHATSAPP_NR+'</span> schicken.</p></div>'+
+    '<div class="karte stapel"><h3>So funktioniert das Treueprogramm</h3><ul style="margin:0;padding-left:20px;display:grid;gap:6px">'+
+    '<li>Für jede monatliche Bestellung sammelst du 10–30 % des Warenwerts als Punkte, je länger du dabei bist, desto mehr.</li>'+
+    '<li>Die Punkte löst du gegen Produkte ein, so bekommst du regelmässig etwas gratis.</li>'+
+    '<li>Ab 125 PV im Monat gibt es das Produkt des Monats dazu.</li>'+
+    '<li>Du entscheidest jeden Monat neu, was in die Bestellung kommt. Eine Bestellung ab 1 PV im Monat hält deine Punkte.</li>'+
+    '<li>Punkte verfallen nach 12 Monaten. Wer das Programm pausiert oder löscht, verliert die gesammelten Punkte.</li></ul>'+
+    '<p class="leise">Ich zeige dir gern, wie du das einrichtest. Schreib mir einfach.</p></div>';
+}
+function wunschText(){
+  var w=Object.keys(S.wunsch).filter(function(k){return S.wunsch[k];});
+  return "Hallo Patricia! Mein Wunschzettel ("+SETS[S.set].wahl+"):\n"+(w.length?"- "+w.join("\n- "):"(noch nichts angekreuzt)")+(S.lieb?"\n"+(S.set==="kids"?"Lieblingsroller":"Lieblingsöl")+" / Sonstiges: "+S.lieb:"");
+}
+
+function fuss(){
+  return '<footer class="fuss"><p><b>Fragen?</b> Schreib mir auf <a href="'+WHATSAPP+'" target="_blank" rel="noopener">WhatsApp</a>: <span class="nummer">'+WHATSAPP_NR+'</span></p>'+
+  '<p>Ich bin keine Ärztin. Hier steht, wie ich die Öle im Familienalltag anwende, als Begleitung zu deinem Workbook „Mama wird Hausapothekerin“ und zum Buch „Kraft der Natur“. Es ersetzt keine ärztliche Abklärung und keine Behandlung.</p>'+
+  '<p>Was du hier einträgst, bleibt nur auf diesem Gerät. · Patricia Ulmann, Mum Life Balance</p></footer>';
+}
+
+/* ---------------------------------------------------------------- Bedienung */
+app.addEventListener("click",function(ev){
+  var b=ev.target.closest("button,a"); if(!b)return;
+  if(b.dataset.set){S.set=b.dataset.set;S.start=S.start||heute0().toISOString();S.reiter="heute";S.tag=null;speichern();zeichne();window.scrollTo(0,0);return;}
+  if(b.id==="wechsel"){S.set=null;speichern();zeichne();return;}
+  if(b.dataset.r){S.reiter=b.dataset.r;speichern();zeichne();return;}
+  if(b.dataset.tag){var t=+b.dataset.tag;if(t>=1&&t<=aktTag()){S.tag=t;zeichne();}return;}
+  if(b.id==="gemacht"){S.erledigt[S.tag]=1;speichern();zeichne();melde("Schritt "+S.tag+" erledigt");return;}
+  if(b.id==="nochnicht"){delete S.erledigt[S.tag];speichern();zeichne();return;}
+  if(b.dataset.oel){if(b.getAttribute("aria-disabled")){melde("Kommt in den nächsten Tagen dazu");return;}var el=document.getElementById("i-"+b.dataset.oel);el.hidden=!el.hidden;b.setAttribute("aria-expanded",String(!el.hidden));return;}
+  if(b.dataset.st){S.stempel[b.dataset.st]=(S.stempel[b.dataset.st]||0)+1;speichern();zeichne();melde("Stempel gesetzt");return;}
+  if(b.id==="wkopie")return kopiere(wunschText());
+  if(b.id==="routinekopie"){
+    var R=ROUTINE[S.set],t="Meine Routine:\n";Object.keys(R).forEach(function(z){var l=R[z].filter(function(x,i){return S.routine[z+i];}).map(function(x){return "- "+x[1];});if(l.length)t+="\n"+z+"\n"+l.join("\n")+"\n";});
+    return kopiere(t);
+  }
+});
+var druckTimer;
+app.addEventListener("pointerdown",function(ev){var b=ev.target.closest("[data-st]");if(!b)return;druckTimer=setTimeout(function(){var id=b.dataset.st;S.stempel[id]=Math.max(0,(S.stempel[id]||0)-2);speichern();melde("Stempel korrigiert");},700);});
+app.addEventListener("pointerup",function(){clearTimeout(druckTimer);});
+app.addEventListener("change",function(ev){
+  var t=ev.target;
+  if(t.dataset.rt){S.routine[t.dataset.rt]=t.checked;speichern();zeichne();}
+  else if(t.dataset.w){S.wunsch[t.dataset.w]=t.checked;speichern();zeichne();}
+  else if(t.id==="alter"){S.alter=+t.value;speichern();zeichne();}
+});
+app.addEventListener("input",function(ev){
+  var t=ev.target;
+  if(t.id==="notiz"){S.notiz=t.value;speichern();}
+  if(t.id==="lieb"){S.lieb=t.value;speichern();var a=document.getElementById("wsenden");if(a)a.href=WHATSAPP+"?text="+encodeURIComponent(wunschText());}
+});
+function kopiere(t){
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){melde("Kopiert");},function(){fallback(t);});}else fallback(t);
+}
+function fallback(t){var a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");melde("Kopiert");}catch(e){melde("Bitte von Hand kopieren");}a.remove();}
+
+zeichne();
+</script>
