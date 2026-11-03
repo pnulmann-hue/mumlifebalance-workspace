@@ -245,6 +245,10 @@ var LINKS = {
   kidsKarten: "https://media.doterra.com/eu/de/flyers/kids-collection-cards.pdf"
 };
 
+/* Video zum Hausapothekerinnen-Plan in Abschnitten (Zeitmarken aus den Vimeo-Untertiteln) */
+function planAb(t){return LINKS.plan+"#t="+t;}
+var PLAN_KAPITEL=[["0m0s","0:00","Die 3 Säulen der Grundversorgung","VMG+, PB Restore, Omega-3"],["5m13s","5:13","Dein Wunschzettel",""],["5m37s","5:37","Die Treuebestellung","Punkte, Stufen, Tipps"],["9m11s","9:11","So bestellst du im Shop",""],["9m38s","9:38","Ein Blick ins Business","Kundin, Botschafterin, Unternehmerin"]];
+
 var GRUPPEN = [
   {n:"Kundengruppe Mumlifebalance",w:"WhatsApp",f:"#25a35a",t:"Meine Kundengruppe: allgemeine Infos, Kundeninfos und das Unboxing meiner Bestellung.",l:"https://chat.whatsapp.com/ED69USSzOT25NFXpYJxFiX"},
   {n:"Gesund durchs ganze Jahr",w:"WhatsApp",f:"#25a35a",t:"Saisonale Anwendungstipps zu Frühling, Sommer, Herbst und Winter, mit Impulsen, Rezepten und Ideen.",l:"https://chat.whatsapp.com/J0Vw8ICL4sTHs7q41nF9Se"},
@@ -404,9 +408,9 @@ var AUFTRAEGE = {
   ["Deine Abendroutine","Stell unter „Routine“ deinen Abend zusammen, für dich und für die Kinder.","Lavendel und Frankincense: die „Schlaf gut“-Mischung.",""],
   ["Deine SOS-Tasche","Erstelle dir deine persönliche SOS-Tasche mit den wichtigsten Rollern und Sprays.","So hast du sie auch auf dem Spielplatz dabei.",""],
   ["Ein Moment nur für dich","Gönn dir heute ein Aromabad mit Lavendel oder eine Bodybutter mit Frankincense.","Selfcare darf so klein sein.",""],
-  ["Dein Hausapothekerinnen-Plan","Schau dir das Video aus Kapitel 6 an.","Damit du langfristig dranbleiben kannst.",LINKS.plan],
-  ["Das Treueprogramm","Lies unter „Treue & Plan“, wie das Treueprogramm funktioniert, und schreib mir, wenn ich es dir einrichten soll.","Anstatt zweimal im Jahr gross zu bestellen, lohnt es sich, monatlich kleinere Bestellungen zu machen.",""],
-  ["Dein Wunschzettel","Welche Öle oder Produkte möchtest du als Nächstes in deine Hausapotheke aufnehmen?","Schritt für Schritt aufbauen, ohne alles auf einmal kaufen zu müssen.",""],
+  ["Dein Hausapothekerinnen-Plan","Schau dir den ersten Abschnitt des Videos aus Kapitel 6 an: die 3 Säulen der Grundversorgung.","Damit du langfristig dranbleiben kannst.",planAb("0m0s")],
+  ["Das Treueprogramm","Lies unter „Treue & Plan“, wie das Treueprogramm funktioniert, und richte deine Treuebestellung im Shop selbst ein. Bei Fragen schreib mir.","Anstatt zweimal im Jahr gross zu bestellen, lohnt es sich, monatlich kleinere Bestellungen zu machen.",""],
+  ["Dein Wunschzettel","Welche Öle oder Produkte möchtest du als Nächstes in deine Hausapotheke aufnehmen? Kreuz sie unter „Treue & Plan“ an und pack sie in deine nächste Treuebestellung.","Schritt für Schritt aufbauen, ohne alles auf einmal kaufen zu müssen.",""],
   ["Du hast es geschafft!","Schau dir das Abschlussvideo an und schreib mir, was sich bei euch verändert hat.","Ich kann meiner Familie helfen, ich habe die Natur auf meiner Seite.",LINKS.ueberblick]
  ],
  kids:[
@@ -435,8 +439,8 @@ var AUFTRAEGE = {
   ["Morgenrunde","Morgens Brave und Stronger. Lass dein Kind wählen, welcher zuerst kommt.","Wer wählen darf, macht lieber mit.",""],
   ["Euer Familien-Ritual","Erfindet ein Ritual, zum Beispiel Calmer während der Gute-Nacht-Geschichte.","Euer Ritual, eure Regeln.",""],
   ["Du findest die Roller cool?","Schau unter „Treue & Plan“, was doTERRA sonst noch bereithält: das Home Essentials Kit und die Nahrungsergänzung. Und schau dir mein Video zum Hausapothekerinnen-Plan an.","Die Kids Collection ist erst der Anfang.",LINKS.plan],
-  ["Das Treueprogramm","Lies unter „Treue & Plan“, wie das Treueprogramm funktioniert.","Mit kleinen monatlichen Bestellungen sammelst du Punkte für Gratisprodukte.",""],
-  ["Dein Wunschzettel","Was soll als Nächstes dazukommen?","Schritt für Schritt aufbauen, nie alles auf einmal.",""],
+  ["Das Treueprogramm","Lies unter „Treue & Plan“, wie das Treueprogramm funktioniert, und richte deine Treuebestellung im Shop selbst ein. Bei Fragen schreib mir.","Mit kleinen monatlichen Bestellungen sammelst du Punkte für Gratisprodukte.",""],
+  ["Dein Wunschzettel","Was soll als Nächstes dazukommen? Kreuz es unter „Treue & Plan“ an und pack es in deine nächste Treuebestellung.","Schritt für Schritt aufbauen, nie alles auf einmal.",""],
   ["Geschafft!","Vier Wochen Roller-Rituale. Schreib mir, welcher Roller bei euch der Held ist.","Ich freue mich riesig über deine Nachricht.",""]
  ]
 };
@@ -534,9 +538,9 @@ var offenesOel=null;
 
 var SETS={
  haus:{name:"Deine Hausapotheke",wahl:"Hausapotheke oder Family Essentials Kit",wahlText:"Die 10 Basisöle: Lemon, Lavender, Peppermint, Frankincense, Tea Tree, Oregano, Deep Blue, ZenGest, On Guard und Air.",bild:"bilder/lavender.jpg",tage:30,
-  reiter:[["heute","Heute"],["oele","Die 10 Öle"],["grund","Grundlagen"],["rezepte","Roller & Rezepte"],["sos","SOS"],["routine","Routine"],["treue","Treue & Plan"],["wissen","Wissen & Gruppen"]]},
+  reiter:[["heute","Heute"],["oele","Die 10 Öle"],["grund","Grundlagen"],["rezepte","Roller & Rezepte"],["sos","SOS"],["routine","Routine"],["treue","Treue & Plan"],["business","Business"],["wissen","Wissen & Gruppen"]]},
  kids:{name:"Deine Kids Collection",wahl:"Kids Collection",wahlText:"Die 7 Roller für Kinder: Calmer, Brave, Thinker, Steady, Rescuer, Tamer und Stronger.",bild:"",tage:28,
-  reiter:[["heute","Heute"],["roller","Die 7 Roller"],["rituale","Unser Tag"],["pass","Roller-Pass"],["treue","Treue & Plan"],["wissen","Wissen & Gruppen"]]}
+  reiter:[["heute","Heute"],["roller","Die 7 Roller"],["rituale","Unser Tag"],["pass","Roller-Pass"],["treue","Treue & Plan"],["business","Business"],["wissen","Wissen & Gruppen"]]}
 };
 
 /* ---------------------------------------------------------------- Bausteine */
@@ -553,7 +557,7 @@ function zeichne(){
  var set=SETS[S.set],tag=aktTag();if(S.tag==null||S.tag>tag)S.tag=tag;
  var balken='<div class="balken" style="grid-template-columns:repeat('+set.tage+',1fr)">';for(var i=1;i<=set.tage;i++)balken+='<i class="'+(S.erledigt[i]?"f":(i===tag?"h":""))+'"></i>';balken+='</div>';
  var r=set.reiter.map(function(x){return '<button role="tab" aria-selected="'+(S.reiter===x[0])+'" data-r="'+x[0]+'">'+x[1]+'</button>';}).join("");
- var fn={heute:heuteSeite,oele:oeleSeite,roller:oeleSeite,grund:grundSeite,rezepte:rezeptSeite,sos:sosSeite,routine:routineSeite,rituale:routineSeite,treue:treueSeite,wissen:wissenSeite,pass:passSeite}[S.reiter]||heuteSeite;
+ var fn={heute:heuteSeite,oele:oeleSeite,roller:oeleSeite,grund:grundSeite,rezepte:rezeptSeite,sos:sosSeite,routine:routineSeite,rituale:routineSeite,treue:treueSeite,business:businessSeite,wissen:wissenSeite,pass:passSeite}[S.reiter]||heuteSeite;
  var inhalt=(offenesOel&&(S.reiter==="oele"||S.reiter==="roller"))?(S.set==="kids"?rollerSeite(offenesOel):oelSeite(offenesOel)):fn();
  app.innerHTML=kopf(false)+'<div class="innen"><div class="leiste"><span><b>Tag '+tag+'</b> von '+set.tage+' · '+Object.keys(S.erledigt).length+' erledigt</span><button id="wechsel">Set wechseln</button></div>'+balken+'</div>'+
   '<nav class="reiter innen" role="tablist">'+r+'</nav><main class="innen ansicht">'+inhalt+'</main>'+fuss();
@@ -686,9 +690,11 @@ function routineSeite(){
 
 function treueSeite(){
  var kids=S.set==="kids";
- var vorschlag=kids?["Calmer nachkaufen","Brave nachkaufen","Thinker nachkaufen","Steady nachkaufen","Rescuer nachkaufen","Tamer nachkaufen","Stronger nachkaufen","Das Home Essentials Kit","Ein Diffuser fürs Kinderzimmer","VMG+","PB Restore","EO Mega"]:["Lemon nachkaufen","Lavender nachkaufen","Peppermint nachkaufen","On Guard nachkaufen","Die Kids Collection","Leere Roller und Glasflaschen","Ein Diffuser","VMG+","PB Restore","EO Mega"];
+ var vorschlag=kids?["Calmer nachkaufen","Brave nachkaufen","Thinker nachkaufen","Steady nachkaufen","Rescuer nachkaufen","Tamer nachkaufen","Stronger nachkaufen","Das Home Essentials Kit","Ein Diffuser fürs Kinderzimmer","PB Assist Jr.","Omega-3","VMG+ für mich","PB Restore für mich"]:["Lemon nachkaufen","Lavender nachkaufen","Peppermint nachkaufen","On Guard nachkaufen","Die Kids Collection","Leere Roller und Glasflaschen","Ein Diffuser","VMG+","PB Restore","EO Mega"];
  var grundversorgung='<h2 class="gross" style="font-size:1.3rem">Die 3 Säulen der Grundversorgung</h2><p class="unter">Öle sind kraftvolle Helfer im Alltag – aber deine Gesundheit baut immer auf einer stabilen Basis auf. Und diese Basis beginnt mit der richtigen Versorgung deines Körpers mit Nährstoffen.</p><div class="zwei">'+
- [["VMG+","Liefert Vitamine & Mineralstoffe in bioverfügbarer Form, unterstützt Energieproduktion, Enzymaktivität und Abwehr und schliesst Versorgungslücken. Dein Körper bekommt genau die Grundbausteine, die er braucht."],["EO Mega","Zellschutz & Gehirnnahrung: essentielle Omega-3-Fettsäuren (EPA & DHA) für Herz, Gehirn und Gelenke. Deine Zellen bleiben flexibel, dein Kopf klar und dein Körper widerstandsfähig."],["PB Restore (Probiotikum)","Fördert eine gesunde Darmflora, stärkt das Immunsystem und trägt zur emotionalen Balance bei – dein Darm ist dein „zweites Gehirn“."]].map(function(x){return '<div class="kasten"><h3>'+x[0]+'</h3><p>'+x[1]+'</p></div>';}).join("")+'</div>';
+ [["VMG+","Liefert Vitamine & Mineralstoffe in bioverfügbarer Form, unterstützt Energieproduktion, Enzymaktivität und Abwehr und schliesst Versorgungslücken. Dein Körper bekommt genau die Grundbausteine, die er braucht."],["EO Mega","Zellschutz & Gehirnnahrung: essentielle Omega-3-Fettsäuren (EPA & DHA) für Herz, Gehirn und Gelenke. Deine Zellen bleiben flexibel, dein Kopf klar und dein Körper widerstandsfähig."],["PB Restore (Probiotikum)","Fördert eine gesunde Darmflora, stärkt das Immunsystem und trägt zur emotionalen Balance bei – dein Darm ist dein „zweites Gehirn“."]].map(function(x){return '<div class="kasten"><h3>'+x[0]+'</h3><p>'+x[1]+'</p></div>';}).join("")+'</div>'+
+ '<div class="stimme"><p>VMG+ und PB Restore nehme ich jeden Tag. Mit Omega-3 habe ich ganz gute Erfahrungen gemacht: Unsere Tochter konnte sich in der Schule nicht so gut konzentrieren, die Lehrerin hat mich auf Omega-3 aufmerksam gemacht, und wir haben beide relativ schnell eine Verbesserung gemerkt.</p><b>Patricia</b></div>'+
+ '<div class="kasten"><h3>Und für die Kinder?</h3><p>Meine Kinder bekommen das Probiotikum für Kinder, PB Assist Jr.: ein Pulver, das man direkt in den Mund leert. Meine Kinder sagen „Melonenzucker“ dazu und nehmen es mit Freude. Dazu Omega-3. VMG+ gebe ich den Kindern noch nicht.</p></div>';
  var einstieg=kids
   ?'<h2 class="gross">Du findest die Roller cool?</h2><p class="unter">Dann schau, was doTERRA sonst noch für euch bereithält. Die Kids Collection ist erst der Anfang.</p>'+
    '<section class="kasten rand" style="gap:14px"><span class="schrift">Das Home Essentials Kit</span>'+
@@ -696,25 +702,36 @@ function treueSeite(){
    '<p>Die 10 Basisöle für die ganze Familie: Lemon, Lavender, Peppermint, Frankincense, Tea Tree, Oregano, Deep Blue, ZenGest, On Guard und Air. Sie sind nicht vorgemischt wie die Roller, deshalb setzt du sie ganz individuell ein:</p>'+
    '<div class="zwei"><div class="kasten"><h3>Aromatisch</h3><p>im Diffuser, als Raumspray oder aus der Handfläche einatmen</p></div><div class="kasten"><h3>Äusserlich</h3><p>verdünnt als Roll-on, Massage, Wickel oder im Fussbad</p></div><div class="kasten"><h3>Innerlich</h3><p>ausgewählte Öle im Wasser, in einer Kapsel oder beim Kochen</p></div><div class="kasten"><h3>Selber mischen</h3><p>eigene Roller, Raumsprays, Balsam oder Weichspüler, ganz easy</p></div></div>'+
    '<p>Dazu bekommst du mein Programm „Mama wird Hausapothekerin“ mit allen Videos, Rezepten und Anleitungen, genau wie hier für die Roller.</p>'+
-   '<a class="knopf orange" href="'+WHATSAPP+'?text='+encodeURIComponent("Hallo Patricia! Ich finde die Roller toll und möchte mehr über das Home Essentials Kit wissen.")+'" target="_blank" rel="noopener">Erzähl mir mehr über das Home Essentials Kit</a></section>'+
-   video(LINKS.plan,"Mein Hausapothekerinnen-Plan","Video: Bestellungen, Budget und dein erster Schritt ins Business")+grundversorgung
-  :'<h2 class="gross">Dein Hausapothekerinnen-Plan</h2><p class="unter">Damit du langfristig dranbleiben kannst: mit Bestellungen, Budget und vielleicht sogar deinem ersten Schritt ins Business.</p>'+video(LINKS.plan,"Erfahre mehr in diesem Video","Video zu Kapitel 6");
+   '<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="knopf orange" href="'+SHOP+'" target="_blank" rel="noopener">Im Shop ansehen</a><a class="knopf leer" href="'+WHATSAPP+'" target="_blank" rel="noopener">Fragen? Schreib mir</a></div></section>'+
+   video(planAb("0m0s"),"Die 3 Säulen der Grundversorgung","Video ab 0:00 · VMG+, PB Restore, Omega-3")+grundversorgung
+  :'<h2 class="gross">Dein Hausapothekerinnen-Plan</h2><p class="unter">Damit du langfristig dranbleiben kannst: mit Bestellungen, Budget und vielleicht sogar deinem ersten Schritt ins Business.</p>'+'<div class="kasten rand"><h3>Das Video in Abschnitten</h3>'+PLAN_KAPITEL.map(function(k){return video(planAb(k[0]),k[2],"ab "+k[1]+(k[3]?" · "+k[3]:""));}).join("")+'</div>';
  return '<div class="abschnitt">'+einstieg+
  '<section class="treue"><span class="schrift" style="color:#fff">Treuebestellung</span><h2>So bekommst du regelmässig Produkte gratis</h2><p>Anstatt zweimal im Jahr eine grosse Bestellung zu machen, lohnt es sich, monatlich kleinere Bestellungen zu tätigen. So bleibst du flexibel, baust dir Schritt für Schritt deine Hausapotheke auf und profitierst vom Treueprogramm mit Punkten und Gratisprodukten.</p>'+
  '<div class="treue-raster"><div><span class="gross-zahl">10–30 %</span><b>als Punkte</b>für jede Bestellung, je länger du dabei bist, desto mehr Prozente</div><div><span class="gross-zahl">125 PV</span><b>Produkt des Monats</b>gratis, wenn du im Monat ab 125 PV bestellst</div><div><span class="gross-zahl">1×</span><b>im Monat bestellen</b>ab 1 PV, damit Punkte und Prozente bleiben</div></div>'+
- '<a class="knopf orange" href="'+WHATSAPP+'?text='+encodeURIComponent("Hallo Patricia! Kannst du mir die Treuebestellung einrichten?")+'" target="_blank" rel="noopener">Patricia, richte sie mir ein</a></section>'+
+ '<p><b>So richtest du sie ein:</b> Im Shop anmelden, unter Treueprogramm deine Monatsbestellung zusammenstellen und das Datum wählen. Jeden Monat kannst du sie selbst anpassen.</p><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="knopf orange" href="'+SHOP+'" target="_blank" rel="noopener">Im Shop selbst einrichten</a><a class="knopf leer" style="color:#fff;border-color:rgba(255,255,255,.7)" href="'+WHATSAPP+'" target="_blank" rel="noopener">Fragen? Schreib mir</a></div></section>'+
+ video(planAb("5m37s"),"Ich erkläre dir die Treuebestellung","Video ab 5:37")+'<div class="kasten rand"><h3>So funktioniert es, wie Cumulus bei der Migros</h3><ul><li>Jedes Produkt hat ein Produktvolumen, den <b>PV-Wert</b>. Das ist wie eine eigene Ölwährung, meistens etwa so viel oder etwas weniger als der Preis.</li><li>Für jede Treuebestellung bekommst du <b>Punkte geschenkt</b>: im 1.–3. Monat 10 %, danach steigt es Stufe für Stufe <b>bis 30 %</b>.</li><li>Für die nächste Stufe bestellst du <b>3 Monate lang für mindestens 50 PV</b>. Ein Monat darunter ist nicht schlimm, er zählt dann einfach nicht mit.</li><li>Auch das <b>Porto</b> bekommst du als Punkte zurück. Mit den Punkten machst du später eine grosse Bestellung gratis.</li><li>Die Bestellung ist mit einem <b>Datum</b> hinterlegt und geht mit deiner Kreditkarte automatisch raus. Du kannst sie jeden Monat anpassen.</li><li>Mein Tipp: Lass Alltagssachen wie Zahnpasta, Shampoo, Hautpflege oder Waschmittel monatlich laufen, auch wenn es nur 10–20 PV sind. So bleibst du drin und verlierst deine Stufe nicht.</li><li>Statt alle paar Monate eine riesige Bestellung: lieber aufteilen, so profitierst du viel mehr. Es ist kein Muss, eine normale Bestellung geht immer.</li></ul></div>'+
  '<div class="vn"><div class="plus"><h3>Vorteile</h3><ul><li><b>Punkte sammeln:</b> Für jede Bestellung sammelst du zwischen 10–30 % des Warenwerts als Punkte.</li><li><b>Gratisprodukte:</b> Punkte können gegen alle Produkte eingelöst werden.</li><li><b>Flexibilität:</b> Monatliche Bestellung anpassbar – du entscheidest jedes Mal neu, was du brauchst.</li><li><b>Treuegeschenke:</b> Ab 125 PV im Monat erhältst du das Produkt des Monats gratis.</li><li><b>Kontinuität:</b> Du baust dir Schritt für Schritt deine ganze Hausapotheke auf, ohne alles auf einmal kaufen zu müssen.</li><li><b>Langfristig sparen:</b> Mit Punkten und Gratisprodukten liegt die Ersparnis deutlich höher als bei Einzelbestellungen.</li><li><b>Oilmates:</b> Mitgliedschaft in unserem exklusiven Mitgliederbereich mit noch mehr Insidertipps, Austausch und Raum für Fragen.</li></ul></div>'+
- '<div class="minus"><h3>Gut zu wissen</h3><ul><li><b>Monatliche Bestellung notwendig:</b> Um Punkte & Prozente zu behalten, brauchst du monatlich mind. 1 Bestellung (ab 1 PV).</li><li><b>Punkte haben eine Gültigkeit:</b> Sie verfallen nach 12 Monaten, wenn sie nicht eingelöst werden.</li><li><b>Storno = Punkteverlust:</b> Wenn du das Programm pausierst oder löschst, gehen alle gesammelten Punkte verloren.</li><li><b>Aufwand:</b> Einmal im Monat anpassen – aber mit Plan wird es Routine.</li></ul></div></div>'+
+ '<div class="minus"><h3>Gut zu wissen</h3><ul><li><b>Monatliche Bestellung notwendig:</b> Um Punkte & Prozente zu behalten, brauchst du monatlich mind. 1 Bestellung (ab 1 PV).</li><li><b>Punkte haben eine Gültigkeit:</b> Sie verfallen nach 12 Monaten, wenn sie nicht eingelöst werden.</li><li><b>Kündigen = Punkteverlust:</b> Wenn du das Programm kündigst, verlierst du alle gesammelten Punkte und deine Stufe, du fängst wieder bei 10 % an.</li><li><b>Aufwand:</b> Einmal im Monat anpassen – aber mit Plan wird es Routine.</li></ul></div></div>'+
  '<p>Bei doTERRA findest du nicht nur ätherische Öle, sondern alles für den täglichen Bedarf: Waschmittel, Zahnpasta, Shampoo, Hautpflege und mehr. Produkte, die du sowieso regelmässig brauchst – nur in einer natürlichen, hochwertigen Variante.</p>'+
- '<div class="kasten rand"><h3>So bestellst du zukünftig</h3><p>Ganz einfach selbst über deinen persönlichen doTERRA-Shop, rund um die Uhr. Du bestimmst selbst, wann und was du bestellst, und hast trotzdem die Sicherheit, dass ich dich jederzeit unterstütze.</p><a class="knopf" href="'+SHOP+'" target="_blank" rel="noopener">Zum Shop</a></div>'+
+ '<div class="kasten rand"><h3>So bestellst du zukünftig</h3><p>Ganz einfach selbst über deinen persönlichen doTERRA-Shop, rund um die Uhr. Du bestimmst selbst, wann und was du bestellst, und hast trotzdem die Sicherheit, dass ich dich jederzeit unterstütze.</p><a class="knopf" href="'+SHOP+'" target="_blank" rel="noopener">Zum Shop</a>'+video(planAb("9m11s"),"So bestellst du","Video ab 9:11")+'</div>'+
  (kids?"":grundversorgung)+
- '<h2 class="gross" style="font-size:1.3rem">Wunschzettel</h2><div class="kasten rand"><p>Welche Öle oder Produkte möchtest du als Nächstes in deine '+(kids?"Sammlung":"Hausapotheke")+' aufnehmen?</p><div class="wunsch">'+vorschlag.map(function(v){return '<label><input type="checkbox" data-w="'+e(v)+'"'+(S.wunsch[v]?" checked":"")+'>'+e(v)+'</label>';}).join("")+'</div>'+
+ '<h2 class="gross" style="font-size:1.3rem">Wunschzettel</h2>'+video(planAb("5m13s"),"Dein Wunschzettel","Video ab 5:13")+'<div class="kasten rand"><p>Welche Öle oder Produkte möchtest du als Nächstes in deine '+(kids?"Sammlung":"Hausapotheke")+' aufnehmen?</p><div class="wunsch">'+vorschlag.map(function(v){return '<label><input type="checkbox" data-w="'+e(v)+'"'+(S.wunsch[v]?" checked":"")+'>'+e(v)+'</label>';}).join("")+'</div>'+
  '<label for="lieb"><b>'+(kids?"Unser Lieblingsroller":"Mein Lieblingsöl")+' / Sonstiges</b></label><input type="text" id="lieb" value="'+e(S.lieb||"")+'">'+
- '<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="knopf orange" id="wsenden" href="'+WHATSAPP+'?text='+encodeURIComponent(wunschText())+'" target="_blank" rel="noopener">Per WhatsApp an Patricia</a><button class="knopf leer" id="wkopie">Text kopieren</button></div></div>'+
- '<h2 class="gross" style="font-size:1.3rem">Ein Blick ins Business</h2><p class="unter">Vielleicht denkst du dir: „Das sollten eigentlich alle Mamas wissen.“ Genau so beginnt oft der Weg ins doTERRA-Business. Ob Kundin, Sharer oder Unternehmerin – du entscheidest, was zu dir passt, und kannst jederzeit wechseln oder wachsen.</p><div class="zwei">'+
- [["Kundin","Du nutzt die Öle und Produkte nur für dich und deine Familie. Du bestellst bequem über deinen Shop und profitierst von Rabatten, Punkten und Gratisprodukten."],["Sharer","Du teilst deine Erfahrungen mit Freundinnen oder Familie. Wenn jemand über dich bestellt, erhältst du eine Provision – so kannst du dir deine eigenen Produkte ganz einfach finanzieren."],["Unternehmerin","Du baust ein eigenes Business mit doTERRA auf – als Nebenverdienst oder Haupterwerb. Mit deinem Wissen und deiner Begeisterung kannst du ein Team aufbauen und Schulungen geben."]].map(function(x){return '<div class="kasten"><h3>'+x[0]+'</h3><p>'+x[1]+'</p></div>';}).join("")+'</div></div>';
+ '<p class="leise">Dein Wunschzettel ist für dich: Pack ihn Schritt für Schritt in deine Treuebestellung, dann sammelst du dabei Punkte.</p><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="knopf orange" href="'+SHOP+'" target="_blank" rel="noopener">Zum Shop</a><button class="knopf leer" id="wkopie">Liste kopieren</button></div><p class="leise" style="font-size:.9rem">Unsicher, was passt? <a href="'+WHATSAPP+'" target="_blank" rel="noopener">Schreib mir deine Frage.</a></p></div>'+
+ '</div>';
 }
-function wunschText(){var w=Object.keys(S.wunsch).filter(function(k){return S.wunsch[k];});return "Hallo Patricia! Mein Wunschzettel ("+SETS[S.set].wahl+"):\n"+(w.length?"- "+w.join("\n- "):"(noch nichts angekreuzt)")+(S.lieb?"\n"+(S.set==="kids"?"Lieblingsroller":"Lieblingsöl")+" / Sonstiges: "+S.lieb:"");}
+function businessSeite(){
+ return '<div class="abschnitt"><h2 class="gross">Ein Blick ins Business</h2><p class="unter">Vielleicht hast du gespürt, wie sehr dich die Öle begeistern, und denkst dir: „Das sollten eigentlich alle Mamas wissen.“ Genau so beginnt oft der Weg ins doTERRA-Business.</p>'+
+ video(planAb("9m38s"),"Ich erkläre dir das Business","Video ab 9:38")+video(planAb("10m40s"),"Botschafterin werden","Video ab 10:40")+video(planAb("11m20s"),"Ein eigenes Business aufbauen","Video ab 11:20")+
+ '<div class="kasten"><span class="schrift">Bei uns ist es anders</span><p>Du kennst vielleicht die Partys anderer Firmen: Alle sagen, was sie wollen, die Beraterin bestellt alles zu sich, verteilt es und schreibt jeder eine Rechnung. Bei doTERRA läuft das nicht über mich. Jede Kundin hat ihren eigenen Login und ihren eigenen Link, bestellt selbst zu sich nach Hause, und die Rechnung geht direkt an sie. Ich bin als Beraterin für dich da, wenn du Fragen hast.</p></div>'+
+ '<p class="unter">Ob Kundin, Sharer oder Unternehmerin: Du entscheidest, was zu dir passt, und kannst jederzeit wechseln oder wachsen.</p><div class="zwei">'+
+ [["Kundin","Du nutzt die Öle und Produkte nur für dich und deine Familie. Du bestellst bequem über deinen Shop und profitierst von Rabatten, Punkten und Gratisprodukten."],
+  ["Sharer","Du findest die Öle mega und erzählst deiner Kollegin, deiner Schwester, deiner Tante davon, und die möchten auch bestellen? Dann kannst du dich zur Botschafterin upgraden und deine eigenen Kundinnen einschreiben. Du bekommst eine Provision, in den ersten 60 Tagen sind das 20 %. So finanzierst du dir deine eigenen Produkte ganz einfach."],
+  ["Unternehmerin","Du möchtest anfangen, dein Einkommen mit doTERRA zu ersetzen, aus dem Hobby rauskommen und vielleicht nicht mehr auswärts arbeiten. Dann baust du dir ein eigenes Business mit einem eigenen Team auf. Für mich ist das eine sehr faire und sehr gut bezahlte Möglichkeit."]
+ ].map(function(x){return '<div class="kasten"><h3>'+x[0]+'</h3><p>'+x[1]+'</p></div>';}).join("")+'</div>'+
+ '<div class="treue"><span class="schrift" style="color:#fff">Ist das ein Thema für dich?</span><p>Dann melde dich bei mir, und wir schauen es miteinander an. Ganz unverbindlich.</p><a class="knopf orange" href="'+WHATSAPP+'?text='+encodeURIComponent("Hallo Patricia! Mich interessiert das doTERRA-Business. Können wir das zusammen anschauen?")+'" target="_blank" rel="noopener">Lass uns das anschauen</a></div></div>';
+}
+function wunschText(){var w=Object.keys(S.wunsch).filter(function(k){return S.wunsch[k];});return "Mein Wunschzettel ("+SETS[S.set].wahl+"):\n"+(w.length?"- "+w.join("\n- "):"(noch nichts angekreuzt)")+(S.lieb?"\n"+(S.set==="kids"?"Lieblingsroller":"Lieblingsöl")+" / Sonstiges: "+S.lieb:"");}
 
 function wissenSeite(){
  return '<div class="abschnitt"><h2 class="gross">Wissen & Gemeinschaft</h2><p class="unter">Alle wichtigen Informationsquellen an der Hand: Bücher, Apps, Gruppen und unsere monatlichen Treffen.</p>'+
@@ -754,14 +771,14 @@ app.addEventListener("pointerdown",function(ev){var b=ev.target.closest("[data-s
 app.addEventListener("pointerup",function(){clearTimeout(druckTimer);});
 app.addEventListener("change",function(ev){var t=ev.target;
  if(t.dataset.rt){S.routine[t.dataset.rt]=t.checked;speichern();zeichne();}
- else if(t.dataset.w){S.wunsch[t.dataset.w]=t.checked;speichern();var a=document.getElementById("wsenden");if(a)a.href=WHATSAPP+"?text="+encodeURIComponent(wunschText());}
+ else if(t.dataset.w){S.wunsch[t.dataset.w]=t.checked;speichern();}
  else if(t.id==="alter"){S.alter=+t.value;speichern();zeichne();}
 });
 app.addEventListener("input",function(ev){var t=ev.target;
  if(t.dataset.notiz){S.notizen[t.dataset.notiz]=t.value;speichern();}
  else if(t.id==="notiz-tag"){S.notizen.tag=t.value;speichern();}
  else if(t.dataset.ueb){S.uebung[+t.dataset.ueb]=t.value;speichern();}
- else if(t.id==="lieb"){S.lieb=t.value;speichern();var a=document.getElementById("wsenden");if(a)a.href=WHATSAPP+"?text="+encodeURIComponent(wunschText());}
+ else if(t.id==="lieb"){S.lieb=t.value;speichern();}
  else if(t.id==="sossuche"){document.getElementById("sosliste").innerHTML=sosListe(t.value);}
 });
 function kopiere(t){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){melde("Kopiert");},function(){fallback(t);});}else fallback(t);}
