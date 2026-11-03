@@ -4,7 +4,7 @@ tags: [content, doterra]
 
 # doTERRA-Feed 4.11.–4.12.2026 (@patricia_ulmann)
 
-> Gebaut am 03.11.2026 über /content nach dem Monatsplan `outputs/monatsplaene/2026-11-doterra.md` (kein Verkauf, Aktivieren → Vertrauen → Community). Fakten nur aus dem Energie-Story-Profil und aus Patricias angeeignetem Buchwissen (ohne Quellennennung, eigene Worte, Patricias Wunsch 03.11.). Jeder Hook lief durch `hook-sperre.py --profil doterra` (✓ bestanden, ✗ gesperrt). Mo 16.11. und Fr 27.11. sind noch ohne bestandenen Hook und fehlen deshalb im Cockpit.
+> Gebaut am 03.11.2026 über /content nach dem Monatsplan `outputs/monatsplaene/2026-11-doterra.md` (kein Verkauf, Aktivieren → Vertrauen → Community). Fakten nur aus dem Energie-Story-Profil und aus Patricias angeeignetem Buchwissen (ohne Quellennennung, eigene Worte, Patricias Wunsch 03.11.). Jeder Hook lief durch `hook-sperre.py --profil doterra` (✓ bestanden, ✗ gesperrt). Alle 23 Plätze haben einen bestandenen Hook und liegen im Cockpit.
 ## Mi 4.11. · Reel · Ehrlicher Neustart: die Müdigkeit, die nie wegging
 
 | | |
@@ -226,12 +226,12 @@ tags: [content, doterra]
 | Format | reel |
 | Rolle | Vertrauen |
 | Mitgabe | Vertrauen: wie es bei mir angefangen hat, und dass man selber aktiv werden kann |
-| Hook A | Ich war 36 und immer müde. „Lass mal deine Hormone testen“, sagte meine Freundin ✗ |
+| Hook A | „Mit vier Kindern ist man halt müde“, sagte ich beim Kaffee. Meine Freundin widersprach ✓ |
 | Hook B | Halb zwei, die Kinder spielen, und ich könnte mit 36 auf dem Sofa einschlafen ✗ |
 
 **Caption:**
 
-> Den entscheidenden Anstoss hat mir eine Freundin gegeben. Sie war gleich alt wie ich und hatte ihre Hormone selber testen lassen.
+> Den entscheidenden Anstoss hat mir eine Freundin gegeben, beim Kaffee, als ich ihr von meinen Beschwerden erzählt habe. Sie war gleich alt wie ich und hatte ihre Hormone selber testen lassen.
 >
 > Ich habe den Test daraufhin in der Drogerie gemacht. Mit 36 kam heraus, dass mein Progesteron tief war und mir Vitamine fehlten. Niemand hatte mir gesagt, dass Vormenopause so früh anfangen kann.
 >
@@ -469,11 +469,13 @@ tags: [content, doterra]
 | Format | reel |
 | Rolle | Vertrauen |
 | Mitgabe | Vertrauen: ehrlich, wie lange es bei mir gedauert hat |
-| Hook A | Beim Bürsten hielt ich ein Büschel Haare in der Hand. Da fing mein Weg an ✗ |
+| Hook A | Haare büschelweise in der Bürste. Dass Vormenopause so früh anfängt, sagte mir keiner ✓ |
 | Hook B | Haar-Büschel in der Bürste, mit 36 tiefes Progesteron. Bis ich wieder ich war, verging ein Jahr ✗ |
 
 **Caption:**
 
+> Angefangen hat alles mit Haaren, die büschelweise in der Bürste hingen, unterwegs in Brüssel. Dass die Vormenopause schon so früh anfangen kann, hatte mir niemand gesagt.
+>
 > Rund ein Jahr hat es gedauert, bis ich mich wieder wie ich selbst gefühlt habe. Manches braucht bis heute noch.
 >
 > Heute habe ich kein Mittagstief mehr, keinen Haarausfall, und ich schlafe jede Nacht mindestens acht Stunden durch. Dazu sind acht der zehn Kilo weg, die ich zugelegt hatte.
