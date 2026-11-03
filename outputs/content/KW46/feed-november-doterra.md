@@ -4,8 +4,7 @@ tags: [content, doterra]
 
 # doTERRA-Feed 4.11.–4.12.2026 (@patricia_ulmann)
 
-> Gebaut am 03.11.2026 über /content nach dem Monatsplan `outputs/monatsplaene/2026-11-doterra.md` (kein Verkauf, Aktivieren → Vertrauen → Community). Fakten nur aus dem Energie-Story-Profil und aus Patricias Büchern (Snyder: Perimenopause-Power, Aromatherapie für entspannte Wechseljahre; Omega-3-Buch). Jeder Hook lief durch `hook-sperre.py --profil doterra` (✓ bestanden, ✗ gesperrt). Mo 16.11. und Fr 27.11. sind noch ohne bestandenen Hook und fehlen deshalb im Cockpit.
-
+> Gebaut am 03.11.2026 über /content nach dem Monatsplan `outputs/monatsplaene/2026-11-doterra.md` (kein Verkauf, Aktivieren → Vertrauen → Community). Fakten nur aus dem Energie-Story-Profil und aus Patricias angeeignetem Buchwissen (ohne Quellennennung, eigene Worte, Patricias Wunsch 03.11.). Jeder Hook lief durch `hook-sperre.py --profil doterra` (✓ bestanden, ✗ gesperrt). Mo 16.11. und Fr 27.11. sind noch ohne bestandenen Hook und fehlen deshalb im Cockpit.
 ## Mi 4.11. · Reel · Ehrlicher Neustart: die Müdigkeit, die nie wegging
 
 | | |
@@ -180,7 +179,7 @@ tags: [content, doterra]
 
 2. **Früher** Ständig Heisshunger und viel zu viel Zucker und Kohlenhydrate.
 3. **Heute: mindestens 100 g Protein** Und zwar nicht nur aus Fleisch. Ich esse sogar mehr als früher, einfach andere Sachen.
-4. **Warum Protein?** Laut Dr. Mariza Snyder unterstützt es Muskeln, Energie, Stoffwechsel und Knochen. Sie rät zu mindestens 30 g pro Mahlzeit.
+4. **Warum Protein?** Es hilft, Muskeln aufzubauen und zu halten, gibt Energie und hält den Stoffwechsel in Schwung. Ich achte auf mindestens 30 g pro Mahlzeit.
 5. **Keine Diät, kein Low Carb** Ich lasse nichts weg. Auf dem Teller landet, was mir Energie und Kraft gibt.
 6. **So fängst du an** Schau bei jeder Mahlzeit zuerst, wo das Protein ist. Wenn keins da ist, kommt eins dazu.
 7. **Bei mir zusammen mit** Krafttraining, 8000 Schritten am Tag und genug Schlaf. Erst alles zusammen hat bei mir etwas verändert.
@@ -255,7 +254,7 @@ tags: [content, doterra]
 **Folien 2–7:**
 
 2. **Dauermüdigkeit darf man abklären** Ich habe sie jahrelang als normal abgetan. Heute würde ich viel früher fragen.
-3. **Es kann früh anfangen** Laut Dr. Mariza Snyder beginnt die Perimenopause oft schon Ende 30, und die Zeichen werden leicht mit Mama-Stress verwechselt. Bei mir zeigte der Test mit 36 ein tiefes Progesteron.
+3. **Es kann früh anfangen** Die hormonelle Umstellung beginnt bei vielen schon Ende 30, und die Zeichen sehen aus wie ganz normaler Mama-Stress. Bei mir zeigte der Test mit 36 ein tiefes Progesteron.
 4. **Du kannst selber aktiv werden** Den Test habe ich selber in der Drogerie gemacht. Den Anstoss gab mir eine Freundin.
 5. **Kleine Schritte reichen** Bei mir waren es Protein, Krafttraining, Schritte und Schlaf, ohne Diät.
 6. **Es braucht Zeit** Rund ein Jahr hat es gedauert, bis ich mich wieder wie ich selbst gefühlt habe.
@@ -338,7 +337,7 @@ tags: [content, doterra]
 
 **Caption:**
 
-> Dieses Rezept stammt aus einem meiner liebsten Bücher zu den Wechseljahren, „Aromatherapie für entspannte Wechseljahre“ von Dr. Mariza Snyder. Im Buch heisst er »Sofortige Motivation«.
+> Ein Roller-Rezept zum Selbermischen, für die Minute, die du dir am Nachmittag nimmst.
 >
 > So mischst du ihn in einem 10-ml-Roll-on-Fläschchen:
 > 6 Tropfen Pfefferminze
@@ -389,9 +388,9 @@ tags: [content, doterra]
 **Folien 2–8:**
 
 2. **Warum ich Nährstoffe nehme** Mein Hormontest mit 36 hat einen Vitaminmangel gezeigt. Seither nehme ich jeden Tag meine Nährstoffe.
-3. **Vitamine und Mineralien** Die Basis, jeden Morgen. Laut Dr. Mariza Snyder spielt jedes B-Vitamin eine Rolle bei der Energieversorgung des Körpers.
-4. **Omega 3** Omega-3-Fettsäuren sind essenziell: Der Körper kann sie nicht selbst herstellen, sie müssen von aussen kommen. Viel davon steckt in fettem Fisch.
-5. **Präbiotika** Futter für die guten Darmbakterien. Snyder empfiehlt, jeden Tag ein- bis dreimal etwas Prä- oder Probiotisches zu essen.
+3. **Vitamine und Mineralien** Die Basis, jeden Morgen. Gerade die B-Vitamine braucht der Körper, um aus dem Essen Energie zu machen.
+4. **Omega 3** Diese Fettsäuren kann der Körper nicht selbst bilden, sie müssen von aussen kommen. Viel davon steckt in fettem Fisch.
+5. **Präbiotika** Futter für die guten Darmbakterien. Ein- bis dreimal am Tag etwas Prä- oder Probiotisches ist ein gutes Ziel.
 6. **Erst testen, dann nehmen** Lass deine Werte anschauen, bevor du etwas nimmst. Bei mir hat der Test gezeigt, wo ich anfangen muss.
 7. **Ein Baustein von mehreren** Die Nährstoffe gehören bei mir zu Protein, Krafttraining, Bewegung und Schlaf dazu.
 8. **Und du?** Gehört bei dir schon etwas davon zur Routine? Schreib es mir.
@@ -400,7 +399,7 @@ tags: [content, doterra]
 
 > Mit 36 hat mein Hormontest einen Vitaminmangel gezeigt. Seither nehme ich jeden Morgen meine Nährstoffe: Vitamine und Mineralien, Omega 3 und Präbiotika.
 >
-> Warum gerade diese drei? Laut Dr. Mariza Snyder („Perimenopause-Power“) spielt jedes B-Vitamin eine Rolle bei der Energieversorgung des Körpers. Omega-3-Fettsäuren sind essenziell, der Körper kann sie nicht selbst herstellen. Und Präbiotika sind Futter für die guten Darmbakterien, Snyder empfiehlt ein- bis dreimal am Tag etwas Prä- oder Probiotisches.
+> Warum gerade diese drei? Die B-Vitamine braucht der Körper, um aus dem Essen Energie zu machen. Omega-3-Fettsäuren kann er nicht selbst bilden, sie müssen von aussen kommen. Und Präbiotika sind Futter für die guten Darmbakterien.
 >
 > Mein wichtigster Rat dazu: Lass zuerst deine Werte anschauen. Bei mir hat erst der Test gezeigt, wo ich anfangen muss.
 >
@@ -573,7 +572,7 @@ tags: [content, doterra]
 
 **Folien 2–7:**
 
-2. **Mindestens 30 g Protein am Morgen** So empfiehlt es Dr. Mariza Snyder für jede Mahlzeit, und damit habe ich angefangen.
+2. **Mindestens 30 g Protein am Morgen** So viel sollte es pro Mahlzeit mindestens sein, und genau damit habe ich angefangen.
 3. **Die Drittel-Regel** Ein Drittel vom Teller ist Protein. Den Rest füllst du wie immer.
 4. **Ohne viel Aufwand** Eier, Quark, Joghurt oder Hüttenkäse, je nachdem, was du magst.
 5. **Keine Diät** Du lässt nichts weg, du legst etwas dazu.
