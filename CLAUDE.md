@@ -4947,6 +4947,23 @@ Tisch:** `patch-mein-tisch` → `patch-bereiche` → `patch-offene-chats` → `p
 `patch-erledigt` (Version 89: Unterreiter **Mama-CEO → Erledigt**, nach Tag gruppiert, Haken weg =
 zurück zu den offenen; Aufgaben und Tisch zeigen nur noch Offenes). ⚠️ Offen: Telegram-Sprachnachricht → Tisch (Bot schreibt heute nach Notion),
 Reiter im Academy-Aufbau mit Kursinhalt plus Helferinnen.
+**Version 123 — „Heute dran“ (03.11.2026, `patch-heutedran.py` + `heutedran.js/.css`, setzt Tagesrunde und
+Team-Funke voraus).** Patricia: *„wie können wir gewährleisten, dass mir die dinge aufploppen? … ich könnte die dinge
+übersehen“*. Eine Liste ganz oben auf Mein Tisch statt Zähler in fünf Reitern: Termine · **Tagesfokus** (bis 15 Uhr) ·
+**Learning + Blick auf Morgen** (ab 17 Uhr, „Morgen“ wird der Fokus des nächsten Tags) · **Fokus der Woche** (ab
+Sonntag 15 Uhr für die neue Woche, schreibt in `wochenbogen-notizen[<KW>]`) · Tagesrunde · Team-Funke · Monatsabschluss
+ab dem 24. · Beiträge heute/morgen mit „wartet auf dich“ · Business-Aufgaben heute (mit „Erledigt“) und überfällige als
+ein Punkt. Fragen werden direkt dort beantwortet, beantwortete Punkte verschwinden. Die Kopf-Zähler „doTERRA heute“ und
+„Team-Funke“ sind raus. Neues Dokument **`daten/tagebuch`** `{tage: {JJJJ-MM-TT: {fokus, learning, morgen}}}` —
+**gehört Patricia**, ist die Quelle `tagebuch` für die Wochen-Reflexion in `/planen`. Damit ist Schritt 7 aus
+`plans/2026-11-02-planungs-kreislauf.md` (Zone „Heute“) zur Hälfte da; Privat-Journaling und der Planungsdialog fehlen.
+**Aufs Handy:** Cloud-Routine „Cockpit: Heute dran (Telegram)“ (`trig_01AEX3QfKJHmFZr6si4Nutnw`, Cron UTC `0 6,19 * * *`
+= 07:00 und 20:00 im Winter), Auftrag `reference/scheduled-task-heute-dran.md`, Text aus
+`python3 scripts/cockpit/heute-dran.py --ordner <dir> [--abend]` (Code 3 = nichts offen, keine Nachricht).
+🚨 Dieselbe Logik wie `heutedran.js`, ohne die Beiträge — eine Quelle geändert, beide nachziehen.
+🚨 Die Routine klont GitHub: sie braucht `scripts/cockpit/heute-dran.py` und `tagesrunde.js` gepusht, vorher bleibt sie aus.
+🚨 Am 03.11. gab es `rising-leaders`, `termine` und `wochenbogen-notizen` noch **nicht** in der Datenbank (nie im
+Live-Cockpit benutzt) — bis dahin fehlen diese Punkte in der Nachricht. `ArtifactData` mit `url: claude.ai/artifact/WWF7EWhCiAf2cVi1vytGFM`.
 
 ### Version 102 — Kalender gegen Instagram, Archiv, schlankere Leiste (seit 2026-10-16)
 

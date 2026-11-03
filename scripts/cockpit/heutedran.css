@@ -1,0 +1,19 @@
+  /* Heute dran (patch-heutedran.py) */
+  .hd { margin-bottom: 16px; border-left: 5px solid #12828c; }
+  .hd.offen { border-left-color: #dc822e; }
+  .hd-kopf { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+  .hd-kopf .ti-chip { margin-bottom: 0; }
+  .hd-zahl { font-size: 13px; color: var(--ink-soft); }
+  .hd-punkt { display: flex; gap: 12px; align-items: flex-start; padding: 11px 0; border-top: 1px solid var(--line); }
+  .hd-punkt:first-of-type { border-top: 0; }
+  .hd-punkt.dringend .hd-text > b { color: #b4601a; }
+  .hd-icon { font-size: 19px; line-height: 1.3; width: 24px; text-align: center; flex: none; }
+  .hd-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+  .hd-text > b { font-size: 15px; }
+  .hd-text > span { font-size: 13.5px; color: var(--ink-soft); line-height: 1.45; }
+  .hd-l { font-size: 13px; font-weight: 600; margin-top: 6px; }
+  .hd-feld { width: 100%; margin-top: 4px; min-height: 60px; resize: vertical; }
+  .hd-fertig { align-self: flex-start; margin-top: 6px; }
+  .hd-los { flex: none; align-self: center; }
+  .hd-info .hd-text > span, .hd-termin .hd-text > span { color: var(--ink); }
+  .hd-leer { margin: 8px 0 2px; font-size: 14px; color: var(--ink-soft); }
