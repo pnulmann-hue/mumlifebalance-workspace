@@ -1,6 +1,6 @@
 ---
 name: blog
-description: "SEO-optimierter Blog-Post zum Monatsthema, mit Cascade-Output für Stories/Karussell/Reel/Newsletter"
+description: "SEO-Blogartikel zum Monatsthema für mumlifebalance.ch. Nur der Artikel — Storys macht /story, der Feed /content."
 allowed-tools: Read, Write, Edit, Grep, Glob, WebSearch, mcp__4800d39a-57ef-4b8c-ac59-912964e81676__notion-fetch, mcp__4800d39a-57ef-4b8c-ac59-912964e81676__notion-search
 ---
 # /blog — Patricia's Blog-Skill (SEO + GEO + Cascade)

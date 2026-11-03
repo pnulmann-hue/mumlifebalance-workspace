@@ -16,10 +16,14 @@ WURZEL = HIER.parents[1]
 FRAGEN = HIER / "fragen.json"
 VORLAGE = HIER / "tool-vorlage.html"
 SEITE = WURZEL / "outputs" / "produkte" / "jahresplanung" / "jahresplaner.html"
-SKILL = WURZEL / ".claude" / "skills" / "jahresplan" / "SKILL.md"
+SKILL = WURZEL / ".claude" / "skills" / "planen" / "SKILL.md"
 ANFANG, ENDE = "<!-- FRAGEN:ANFANG (aus scripts/jahresplan/fragen.json, nicht von Hand) -->", "<!-- FRAGEN:ENDE -->"
 
 daten = json.loads(FRAGEN.read_text(encoding="utf-8"))
+# fragen.json traegt seit 02.11.2026 vier Zeitraeume. Die Seite bleibt das Jahr
+# (sie ist der Jahresplaner), der Skill-Block unten umfasst alle vier.
+alle = daten.get("zeitraeume") or {"jahr": daten}
+daten = alle.get("jahr", daten)
 vorlage = VORLAGE.read_text(encoding="utf-8")
 assert vorlage.count("/*FRAGEN*/") == 1, "Platzhalter /*FRAGEN*/ fehlt oder doppelt"
 
@@ -57,19 +61,32 @@ finally:
 if r.returncode:
     sys.exit("Skript kaputt:\n" + r.stderr)
 
-# 2 · Skill
-zeilen = []
-for i, s in enumerate(daten["schritte"], 1):
-    zeilen.append(f"### Schritt {i} · {s['titel']} — {s['kurz']}\n")
-    zeilen.append(f"*{s['einleitung']}*\n")
-    for f in s.get("fragen", []):
-        extra = f" (Auswahl: {' · '.join(f['optionen'])})" if f.get("optionen") else ""
-        zeilen.append(f"- **{f['frage']}**{extra}" + (f" — {f['hilfe']}" if f.get("hilfe") else ""))
-    if "liste" in s:
-        zeilen.append("- Je Angebot: " + " · ".join(f["frage"] for f in s["liste"]["felder"]))
-    if "monate" in s:
-        zeilen.append("- Je Monat: " + " · ".join(f["frage"] for f in s["monate"]["felder"]))
-    zeilen.append("")
+# 2 · Skill — alle vier Zeitraeume. Die Seite oben bleibt beim Jahr.
+zeilen = ["## Die Fragen, Zeitraum für Zeitraum\n",
+          "*Erzeugt aus `scripts/jahresplan/fragen.json` — nie hier von Hand ändern.*\n"]
+for _name, z in alle.items():
+    intern = "  🔒 nur intern, geht in keine teilbare Seite" if z.get("nur_intern") else ""
+    zeilen.append(f"### {z['titel']} — {z['kurz']}\n")
+    zeilen.append(f"**Wann:** {z['wann']}{intern}\n")
+    zeilen.append(f"*{z['einleitung']}*\n")
+    for i, s in enumerate(z["schritte"], 1):
+        zeilen.append(f"**{i} · {s['titel']} — {s['kurz']}**\n")
+        for f in s.get("fragen", []):
+            extra = f" (Auswahl: {' · '.join(f['optionen'])})" if f.get("optionen") else ""
+            woher = f"  ·  steht schon da aus `{f['quelle']}`" if f.get("quelle") else ""
+            zeilen.append(f"- **{f['frage']}**{extra}"
+                          + (f" — {f['hilfe']}" if f.get("hilfe") else "") + woher)
+        for h in s.get("haken", []):
+            woher = f"  ·  wird gesetzt aus `{h['quelle']}`" if h.get("quelle") else ""
+            zeilen.append(f"- [ ] {h['text']}{woher}")
+        if "liste" in s:
+            zeilen.append("- Je Angebot: " + " · ".join(f["frage"] for f in s["liste"]["felder"]))
+        if "monate" in s:
+            zeilen.append("- Je Monat: " + " · ".join(f["frage"] for f in s["monate"]["felder"]))
+        if "saeulen" in s:
+            zeilen.append("- Je Säule (" + " · ".join(s["saeulen"]["zeilen"]) + "): "
+                          + s["saeulen"]["feld"]["frage"])
+        zeilen.append("")
 block = f"{ANFANG}\n\n" + "\n".join(zeilen) + f"\n{ENDE}"
 
 skill = SKILL.read_text(encoding="utf-8")

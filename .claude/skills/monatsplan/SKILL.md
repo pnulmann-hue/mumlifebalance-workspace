@@ -273,6 +273,14 @@ Pro Profil (Mentoring + doTERRA), ausgerichtet aufs **Monats-/Launch-Thema**:
 - **Pain · Wunsch · Ziel · Herausforderung** der Zielgruppe
 - Quellen: jüngstes `outputs/apify-runs/competitors-*.json` + `discovery-*.json`, bei Bedarf WebSearch (IG/Reddit/Google Trends), `context/patricia-vollprofil.md` + Zielgruppen-Research
 - → 1 verdichteter Absatz pro Profil, der die Hooks speist (jeder Beitrag adressiert mind. 1 davon)
+- **Markt-Radar neu laufen lassen** (seit 30.10.2026, einmal im Monat, hier und nicht als eigene Routine):
+  `python scripts/hooks/radar.py`. Die Berichte liegen dann in `outputs/marktrecherche/radar/` und
+  im Cockpit unter Instagram → Markt-Radar (Sammlung `markt-radar` per `ArtifactData batch set`).
+  Die Hebel aus dem eigenen Bericht gehören in den Monatsplan. 🚨 Für Standbilder der fremden Konten
+  braucht es einen frischen Tiefen-Scrape (`.github/workflows/apify-tiefe.yml`), weil Instagram die
+  Video-Adressen nach wenigen Tagen sperrt. Die Uhrzeit-Auswertung ändert die Posting-Zeiten nie von
+  selbst. Wechseln sie, dann nur nach Patricias Ja und an allen drei Stellen
+  (`reels-framework.md` · `patch-postzeit.py` · CLAUDE.md).
 
 **Vierteljährlich (Januar · April · Juli · Oktober) zusätzlich:** die vier Grundanalysen
 neu machen (Wettbewerb · Trends · Fragen der Zielgruppe · Zielgruppenbild mit Säulen), siehe

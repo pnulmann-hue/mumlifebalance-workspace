@@ -1,0 +1,27 @@
+  /* Team-Funke (patch-teamfunke.py) */
+  .tf { margin-bottom: 18px; border-left: 3px solid var(--teal); }
+  .tf > summary { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; cursor: pointer; list-style: none; }
+  .tf > summary::-webkit-details-marker { display: none; }
+  .tf > summary::before { content: "\25b6"; font-size: 10px; color: var(--ink-soft); transition: transform 0.15s ease; }
+  .tf[open] > summary::before { transform: rotate(90deg); }
+  .tf-titel { font-family: var(--display); font-size: 17px; }
+  .tf[open] > summary { margin-bottom: 8px; }
+  .tf-feld { display: flex; flex-direction: column; gap: 5px; margin: 12px 0 0; }
+  .tf-feld > span { font-size: 13px; font-weight: 600; }
+  .tf-feld em { font-style: normal; font-weight: normal; }
+  .tf textarea, .tf input[data-tf], .tf select { width: 100%; background: var(--ground); border: 1px solid var(--line);
+    border-radius: 7px; padding: 8px 10px; font-size: 14px; line-height: 1.5; }
+  .tf textarea { resize: vertical; }
+  .tf textarea:focus, .tf input:focus, .tf select:focus { border-color: var(--teal); outline: none; }
+  .tf-fast { display: flex; flex-direction: column; gap: 4px; }
+  .tf-person { display: flex; gap: 8px; align-items: baseline; font-size: 14px; cursor: pointer; }
+  .tf-person input { accent-color: var(--teal); }
+  .tf-los { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+  .tf-fehler { color: var(--crit); }
+  .tf-ergebnis { border-top: 1px solid var(--line); margin-top: 14px; padding-top: 6px; }
+  .tf-ergebnis h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); margin: 12px 0 6px; font-weight: normal; }
+  .tf-ergebnis .dt-knoepfe { margin-top: 6px; }
+  .tf-fertig { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+  .tf-verlauf { margin-top: 14px; font-size: 13px; }
+  .tf-verlauf summary { cursor: pointer; color: var(--ink-soft); }
+  .tf-vz { display: grid; grid-template-columns: 90px 1fr; gap: 10px; border-top: 1px solid var(--line); padding: 5px 0; }

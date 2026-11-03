@@ -88,7 +88,10 @@ ELEMENT_TYPEN = ["punkt", "chip", "notiz", "bild", "clip"]
 ELEMENT_BEWEGUNGEN = ["pulsieren", "links", "rechts", "pop", "hoch", "keine"]
 
 # B-Roll-Hook-Stile (abgeschaut bei jenya_kork, siehe context/videoschnitt-animationen.md)
-HOOK_STILE = ["marker", "serif"]
+# karte + wort seit 01.11.2026 (Patricia zu Marker und Serif: „sieht komisch aus und
+# ergibt im satz oft keinen sinn, warum ein teil orange ist“). Beide zeigen den Hook
+# als EINEN Satz; bei „wort“ ist nur das Wort mit dem Stich orange (Feld `wort`).
+HOOK_STILE = ["marker", "serif", "karte", "wort"]
 
 # Akzentfarben, die pro Reel rotieren. Patricias Brand hat KEIN Gelb.
 AKZENTE = {"petrol": PETROL, "orange": ORANGE, "dunkelblau": DUNKELBLAU}
@@ -417,6 +420,7 @@ def hook_aufloesen(spec, video_dauer):
         "akzent_name": akzent_name if akzent_name in AKZENTE else "petrol",
         "oben": h.get("oben", ""),
         "betont": h.get("betont", ""),
+        "wort": h.get("wort", ""),
         "klein": h.get("klein", ""),
         "zusatz": h.get("zusatz", ""),
         "grund": h.get("grund", "pille"),
@@ -460,7 +464,30 @@ def zusatz_zeit(hook):
     return round(ab, 3), round(max(0.8, ende - ab), 3)
 
 
+def hook_satz(hook):
+    """Der ganze Hook als ein Satz (oben + betont), fuer karte und wort."""
+    return " ".join(t for t in (hook["oben"], hook["betont"]) if t).strip()
+
+
 def hook_html(hook):
+    if hook["stil"] in ("karte", "wort"):
+        satz = hook_satz(hook)
+        if hook["stil"] == "wort":
+            wort = hook.get("wort", "")
+            if wort and wort in satz:
+                vor, nach = satz.split(wort, 1)
+                inhalt = '%s<span class="wt-wort">%s</span>%s' % (
+                    html_escape(vor), html_escape(wort), html_escape(nach))
+            else:
+                if wort:
+                    log("  ! Wort '%s' steht nicht im Hook — kein Orange" % wort)
+                inhalt = html_escape(satz)
+            klasse, innen = "hook-wort", '<span class="wt-satz">%s</span>' % inhalt
+        else:
+            klasse, innen = "hook-karte", '<span class="kt-satz">%s</span>' % html_escape(satz)
+        return ('      <div id="hook" class="clip %s" data-start="%.3f" data-duration="%.3f" '
+                'style="top:%.2f%%; z-index:7">%s</div>'
+                % (klasse, hook["start"], hook["dauer"], hook["position"], innen))
     if hook["stil"] == "marker":
         teile = ['      <div id="hook" class="clip hook-marker grund-%s" '
                  'data-start="%.3f" data-duration="%.3f" '
@@ -510,6 +537,16 @@ def hook_html(hook):
 def hook_anims(hook):
     z = []
     s = hook["start"]
+    if hook["stil"] == "karte":
+        # Text steht ab Bild null; nur die Karte setzt sich leicht (animiert, aber lesbar).
+        z.append('      tl.fromTo(".kt-satz", {scale:0.94}, {scale:1, duration:0.4, '
+                 'ease:"back.out(2)", immediateRender:false}, %.3f);' % s)
+        return z
+    if hook["stil"] == "wort":
+        # Satz ab Bild null weiss; das Stich-Wort faerbt sich nach 0,6 s orange.
+        z.append('      tl.fromTo(".wt-wort", {color:"#ffffff"}, {color:"%s", duration:0.35, '
+                 'ease:"power1.out", immediateRender:false}, %.3f);' % (hook["akzent"], s + 0.6))
+        return z
     if hook.get("sofort"):
         # Nur der CTA darf spaeter kommen, der Hook selbst steht ab Bild null.
         # Beim Marker wischt der Balken trotzdem unter dem schon lesbaren Wort
@@ -879,6 +916,51 @@ def baue_html(spec, video_name, person_name, video_dauer,
         font-weight: 700;
         letter-spacing: 0.04em;
         line-height: 1;
+      }
+
+      /* --- B-Roll-Hook, Stil "karte" (01.11.2026): ein Satz auf Creme-Karte --- */
+      .hook-karte {
+        inset: auto 0 auto 0;
+        display: flex;
+        justify-content: center;
+        padding: 0 90px;
+      }
+      .hook-karte .kt-satz {
+        display: inline-block;
+        background: #f1ecdd;
+        color: #0c1c30;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 1.28;
+        text-align: center;
+        padding: 34px 44px;
+        border-radius: 30px;
+        box-shadow: 0 10px 34px rgba(0,0,0,0.28);
+        transform-origin: center center;
+      }
+
+      /* --- B-Roll-Hook, Stil "wort" (01.11.2026): weisser Satz, ein Wort orange --- */
+      .hook-wort {
+        inset: auto 0 auto 0;
+        display: flex;
+        justify-content: center;
+        padding: 0 84px;
+      }
+      .hook-wort .wt-satz {
+        font-weight: 700;
+        font-size: 74px;
+        line-height: 1.18;
+        text-align: center;
+        color: #ffffff;
+        /* Dunkle Unterlage wie bei den Untertiteln: ohne sie fiel das orange
+           Wort auf hellem Videobild auf 1,4:1 (Check vom 02.11.2026). */
+        background: rgba(11, 22, 28, 0.62);
+        padding: 22px 36px;
+        border-radius: 28px;
+        text-shadow:
+          -3px -3px 0 rgba(10,20,26,0.85), 3px -3px 0 rgba(10,20,26,0.85),
+          -3px  3px 0 rgba(10,20,26,0.85), 3px  3px 0 rgba(10,20,26,0.85),
+           0 6px 22px rgba(0,0,0,0.4);
       }
 
       /* --- B-Roll-Hook, Stil "marker" (jenya_kork) --- */

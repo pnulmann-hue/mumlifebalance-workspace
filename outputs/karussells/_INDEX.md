@@ -12,10 +12,6 @@ Auto-Index aller Files in `outputs/karussells/`. Siehe [[_MOCs/MOC-Content-Engin
 - [[2026-04-22-mi-mentoring-5saetze-caption]]
 - [[2026-04-24-fr-doterra-perimenopause-u35-caption]]
 - [[2026-04-24-fr-mentoring-10000-follower-caption]]
-- [[20260427-mentoring-5-fehler-bio-caption]]
-- [[20260429-mentoring-3-saetze-bio-caption]]
-- [[20260501-doterra-wendepunkt-mit-36-caption]]
-- [[20260501-mentoring-bio-4-zeilen-caption]]
 - [[2026-05-04-doterra-monatsfokus-echte-zeitlinie]]
 - [[2026-05-04-doterra-monatsfokus-hausarzt-wendepunkt]]
 - [[2026-05-04-doterra-monatsfokus-vor-wecker-auf]]
@@ -39,8 +35,8 @@ Auto-Index aller Files in `outputs/karussells/`. Siehe [[_MOCs/MOC-Content-Engin
 - [[2026-05-26-mentoring-last-call-7-fragen]]
 - [[2026-05-26-mentoring-mehrwert-3-sachen]]
 - [[2026-05-26-mentoring-pain-21-uhr]]
-- [[2026-06-08-mentoring-eine-sache-positionierung]]
 - [[2026-06-08-mentoring-eine-sache-positionierung-caption]]
+- [[2026-06-08-mentoring-eine-sache-positionierung]]
 - [[2026-06-15-mentoring-kw25-aufwaerm-briefings]]
 - [[2026-06-22-mentoring-kw26-aufwaerm-briefings]]
 - [[2026-06-29-mentoring-kw27-cart-weekend-briefing]]
@@ -54,6 +50,10 @@ Auto-Index aller Files in `outputs/karussells/`. Siehe [[_MOCs/MOC-Content-Engin
 - [[2026-KW17-mentoring-3-verkaeufe-287-euro]]
 - [[2026-KW17-mentoring-5-fehler-nm-business]]
 - [[2026-KW17-mentoring-brainwash-thema]]
+- [[20260427-mentoring-5-fehler-bio-caption]]
+- [[20260429-mentoring-3-saetze-bio-caption]]
+- [[20260501-doterra-wendepunkt-mit-36-caption]]
+- [[20260501-mentoring-bio-4-zeilen-caption]]
 
 ### 📁 2026-06-bootcamp-promo-viral
 

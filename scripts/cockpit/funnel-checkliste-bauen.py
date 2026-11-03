@@ -137,11 +137,11 @@ PHASEN = [
     "liegen — er ist der billigste Zusatzumsatz, den es gibt."),
    ("Ein Upsell kommt direkt nach dem Kauf", "methodik",
     "Eigene Seite nach der Kaufbestätigung. Die Reihenfolge der Preise: der Bump "
-    "ist günstiger als das Hauptprodukt, das Upsell teurer als der Bump — aber "
-    "<b>immer noch günstiger als das Hauptprodukt</b>, und in sich stark "
-    "rabattiert (333 → 49). Aufbau: Kauf feiern, warum das Gekaufte allein nicht "
-    "reicht, ein Satz Pitch, Preisvergleich, Knopf. 🚨 Hier stand bis zum "
-    "08.10.2026 „teurer als das Gekaufte“ — das war falsch."),
+    "ist günstiger als das Hauptprodukt, das Upsell teurer als der Bump — "
+    "<b>es darf auch teurer sein als das Hauptprodukt</b> (darum heisst es "
+    "Upsell), ist aber in sich stark rabattiert. Aufbau: Kauf feiern, warum das "
+    "Gekaufte allein nicht reicht, ein Satz Pitch, Preisvergleich, Knopf. "
+    "Nach einem Minikurs laufen Upsells unter 200 meist am besten."),
    ("Jedes Zusatzangebot trägt seinen eigenen Streichpreis", "methodik",
     "Bump, Upsell und Downsell wirken nur, wenn daneben steht, was sie sonst "
     "kosten: „nur 37 statt 99“. Ohne Streichpreis ist es kein Angebot, sondern "
@@ -729,6 +729,14 @@ select:focus-visible{outline:2px solid var(--petrol);outline-offset:1px}
    padding:1px 7px;border-radius:999px;margin-right:7px;vertical-align:1px;white-space:nowrap}
 .q.erf{background:var(--orange-w);color:var(--orange)}
 .q.met{background:var(--petrol-w);color:var(--petrol)}
+/* Claudes Befund je Punkt — mit Fundstelle, damit sie nicht nachprüfen muss */
+.befund{margin:8px 0 0;font-size:13.5px;line-height:1.55;border-radius:8px;
+        padding:7px 10px;background:var(--blatt2)}
+.befund b{font-weight:700;margin-right:4px}
+.befund.ok{background:rgba(47,125,91,.12)}
+.befund.warn,.befund.fehlt{background:var(--orange-w)}
+.befund.offen{background:var(--petrol-w)}
+.befundkopf{margin:14px 0 0;font-size:14px;color:var(--weich)}
 
 .fuss{margin:34px 0 0;padding-top:18px;border-top:1px solid var(--linie);
       font-size:13.5px;color:var(--weich);line-height:1.7}
@@ -740,7 +748,9 @@ select:focus-visible{outline:2px solid var(--petrol);outline-offset:1px}
 def js(funnel_json):
     return """
 var FUNNELS = %s;
-var gewaehlt = null, haken = {}, db = null, doc = null, schreibt = false;
+var BEFUND_ART = { ok: "\\u2713 belegt:", warn: "\\u26a0 veraltet:", fehlt: "\\u2717 fehlt:",
+                   na: "\\u2013 trifft nicht zu:", offen: "? nicht pr\\u00fcfbar:" };
+var gewaehlt = null, haken = {}, befund = {}, befundStand = null, db = null, doc = null, schreibt = false;
 
 function alleFelder(){ return Array.prototype.slice.call(document.querySelectorAll(".punkt input")); }
 
@@ -751,7 +761,25 @@ function zeichnen(){
     e.checked = an;
     e.closest(".punkt").classList.toggle("ab", an);
     if (an) fertig++;
+    var w = e.closest(".punkt").querySelector(":scope > div");
+    var alt = w.querySelector(".befund");
+    if (alt) alt.remove();
+    var b = befund[e.dataset.k];
+    if (b && BEFUND_ART[b.s]) {
+      var el = document.createElement("p");
+      el.className = "befund " + b.s;
+      var kopf = document.createElement("b");
+      kopf.textContent = BEFUND_ART[b.s];
+      el.appendChild(kopf);
+      el.appendChild(document.createTextNode(b.t || ""));
+      w.appendChild(el);
+    }
   });
+  var bk = document.getElementById("befundkopf");
+  bk.textContent = befundStand
+    ? "Gepr\\u00fcft von Claude am " + befundStand.slice(8, 10) + "." + befundStand.slice(5, 7) + "."
+      + befundStand.slice(0, 4) + " \\u2014 offen ist, was kein \\u2713 tr\\u00e4gt."
+    : "";
   document.querySelectorAll(".phase").forEach(function(p){
     var ein = Array.prototype.slice.call(p.querySelectorAll(".punkt input"));
     var n = ein.filter(function(e){ return haken[e.dataset.k]; }).length;
@@ -768,18 +796,24 @@ function zeichnen(){
 function sichern(){
   if (!doc || schreibt) return;
   schreibt = true;
-  doc.set({ funnel: gewaehlt, haken: haken, stand: new Date().toISOString() })
+  // 🚨 befund mitschreiben: set ersetzt das ganze Dokument, und ein Haken von
+  //    ihr würde sonst Claudes Prüfung löschen.
+  doc.set({ funnel: gewaehlt, haken: haken, befund: befund, befundStand: befundStand,
+            stand: new Date().toISOString() })
      .catch(function(){ /* beim nächsten Haken erneut */ })
      .then(function(){ schreibt = false; });
 }
 
 function laden(id){
-  gewaehlt = id; haken = {}; zeichnen();
+  gewaehlt = id; haken = {}; befund = {}; befundStand = null; zeichnen();
   if (!db) return;
   doc = db.doc("funnelcheck/" + id);
   doc.get().then(function(s){
     if (gewaehlt !== id) return;            // inzwischen umgeschaltet
-    haken = (s.exists && s.data().haken) || {};
+    var d = s.exists ? s.data() : {};
+    haken = Object.assign({}, d.haken || {});
+    befund = d.befund || {};
+    befundStand = d.befundStand || null;
     zeichnen();
   }).catch(function(){});
 }
@@ -894,6 +928,7 @@ def main():
       '<div class="balken"><i id="fuell"></i></div>'
       '<span class="stand" id="stand"><b>0</b> von %d</span>'
       '</div>'
+      '<p class="befundkopf" id="befundkopf"></p>'
       '%s'
       '<p class="hinweis" id="speicherhinweis">Haken werden geladen &hellip;</p>'
       '<div class="fuss">'
@@ -942,12 +977,12 @@ def punkte_als_markdown():
     """Alle Punkte als Prüfliste für `/angebot trichter` — dieselbe Liste wie
     auf der Seite, damit Prüfung und Abhaken nie auseinanderlaufen."""
     zeilen = []
-    for titel, _, was, punkte in PHASEN:
+    for titel, kuerzel, was, punkte in PHASEN:
         zeilen.append("\n## %s\n\n_%s_\n" % (titel, re.sub(r"<[^>]+>", "", was)))
         for text, quelle, warum in punkte:
             warum = re.sub(r"<[^>]+>", "", warum).replace("&lt;", "<").replace("&gt;", ">")
             zeilen.append("- [ ] **%s** `%s` · %s  \n  %s"
-                          % (re.sub(r"<[^>]+>", "", text), schluessel(text), quelle, warum))
+                          % (re.sub(r"<[^>]+>", "", text), "%s-%s" % (kuerzel, schluessel(text)), quelle, warum))
     return "\n".join(zeilen)
 
 

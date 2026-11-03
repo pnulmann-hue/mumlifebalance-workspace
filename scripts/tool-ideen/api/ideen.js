@@ -26,6 +26,17 @@ const LISTE = process.env.AC_LISTE || '2';            // Regulärer Newsletter/I
 const TAG = process.env.AC_TAG || '108';              // 0€ Nischengenerator
 const FELD_ZAEHLER = process.env.AC_FELD_ZAEHLER || '19';
 const FELD_NISCHE = process.env.AC_FELD_NISCHE || '20';
+// Je Thema ein Textfeld (Platzhalter %NISCHE_THEMA_1% …). Eine Änderung an Thema 1 startet in AC
+// die Automation mit der Ergebnis-Mail, deshalb wird es bei jedem Durchgang „thema“ neu geschrieben.
+const FELDER_THEMA = (process.env.AC_FELDER_THEMA || '21,22,23').split(',');
+
+function themaText(t) {
+  const teile = [t.titel ? `${t.titel}\n${t.satz}` : t.satz];
+  if (t.warum) teile.push(`Warum das zu dir passt: ${t.warum}`);
+  if (t.produkt) teile.push(`Dein Produkt als Zimmer im Haus: ${t.produkt}`);
+  if (t.beitraege?.length) teile.push(`Darüber kannst du sprechen: ${t.beitraege.map((b) => `„${b}“`).join(', ')}`);
+  return teile.join('\n\n').slice(0, 2000);
+}
 const MAX = Number(process.env.MAX_DURCHGAENGE || 10);
 
 // art "thema": Nischengenerator nach Patricias Kurs „Finde dein Thema“ (lib/thema-prompt.md)
@@ -189,9 +200,15 @@ export default async function handler(req, res) {
     }
 
     const neu = kontakt.zaehler + 1;
-    await ac('/contact/sync', 'POST', { contact: { email, fieldValues: [
+    const felder = [
       { field: FELD_ZAEHLER, value: String(neu) }, { field: FELD_NISCHE, value: (art === 'thema' ? daten.themen[0].satz : nische).slice(0, 250) },
-    ] } }).catch((e) => console.error('Zähler nicht geschrieben:', e.message));
+    ];
+    // Thema 1 zuletzt, damit 2 und 3 schon stehen, wenn die Änderung die Mail auslöst
+    if (art === 'thema') {
+      FELDER_THEMA.map((f, i) => ({ field: f, value: daten.themen[i] ? themaText(daten.themen[i]) : '' })).reverse().forEach((x) => felder.push(x));
+    }
+    await ac('/contact/sync', 'POST', { contact: { email, fieldValues: felder } })
+      .catch((e) => console.error('Felder nicht geschrieben:', e.message));
 
     console.log('ideen OK', { art, model: MODEL, in: antwort.usage?.input_tokens, out: antwort.usage?.output_tokens, durchgang: neu });
     return res.status(200).json({ ...daten, rest: Math.max(0, MAX - neu), max: MAX });

@@ -641,6 +641,8 @@ python scripts/hooks/beispiele.py --profil mentoring --thema "<Wochenfokus>" --z
 python scripts/hooks/beispiele.py --profil doterra --thema "<Wochenfokus>" --ziel reichweite
 ```
 
+Dazu den jüngsten eigenen **Markt-Radar** lesen (`outputs/marktrecherche/radar/*-mumlifebalance_patricia_ulmann.md`,
+seit 30.10.2026). Hebel und „Das vermeiden“ gelten für die Woche, „Passt nicht zu dir“ wird nie übernommen.
 Dazu `context/hook-datensaetze.md` lesen (Psychologie · Positionierung · Angebote). Die Zeilen „Was gerade trägt“ aus dem Paket gelten für die ganze Woche. Stand 04.10.:
 Identität und Stufe 1 tragen, Listen und Beweis-Einstiege nicht — **auch bei den drei
 Lead-Posts** beginnt der Hook mit ihrem Satz, nicht mit dem Angebot.

@@ -89,6 +89,7 @@ def bauen(r, rendern):
     h = spec["hook"]
     h.update(stil=r["stil"], akzent=r["akzent"], position=float(r["hoehe"]),
              oben=r["text"], betont=r["betont"], zusatz=r.get("zusatz", ""),
+             wort=r.get("wort", ""),
              sofort=True, ab_sek=0.0,
              # Patricia 21.10.2026: orange Zeile leicht versetzt, nicht groesser als die erste
              betont_ab=r.get("betont_ab", 0.8), betont_px=r.get("betont_px", 54))

@@ -106,6 +106,19 @@
       "port": 4381
     },
     {
+      "name": "cockpit-test-2",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/cockpit/abgleich",
+        "-l",
+        "4391"
+      ],
+      "port": 4391,
+      "autoPort": false
+    },
+    {
       "name": "startklar-sync",
       "runtimeExecutable": "npx",
       "runtimeArgs": [
@@ -427,6 +440,18 @@
         "4417"
       ],
       "port": 4417
+    },
+    {
+      "name": "jahresplanung-lp",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "outputs/salespages/jahresplanung",
+        "-l",
+        "4419"
+      ],
+      "port": 4419
     }
   ]
 }

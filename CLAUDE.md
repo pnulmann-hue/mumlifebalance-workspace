@@ -507,7 +507,61 @@ Beiträge je Konto, Push der yml löst aus, eine Datei je Lauf — am 04.10. hab
 Vergleich; KI ist ein schwaches Hook-Thema (0,91).
 
 Eingebaut als **TEIL 0 im Hook-Skill** und in **`/content` Schritt 4** (damit auch im Freitag-Task).
+
+**Markt-Radar (seit 30.10.2026)** ist der Nachbau der Auswertung von Content Radar (Julias eingestelltes Tool).
+Der Generator ist bewusst nicht nachgebaut, weil er Zahlen erfand. Plan: `plans/2026-10-30-markt-radar.md`,
+Befund `outputs/strategie/2026-10-30-content-radar-befund.md`.
+`python scripts/hooks/radar.py [--nur-eigen | --konten a,b] [--ohne-ki]` macht je Konto Folgendes:
+- 10 stärkste und 5 schwächste Reels gegen den Konto-Median, Wiederholungen zusammengefasst
+- drei Standbilder per ffmpeg, beim eigenen Konto frisch über die Meta-Schnittstelle
+- Claude (Opus) schreibt je Beitrag „warum“, Hook-Note und Bild-Note
+- ein Bericht mit Hebel · sofort · vermeiden · Muster · „Passt nicht zu dir“
+- für das eigene Konto die Uhrzeit, ab 5 Beiträgen je Stunde
+
+🚨 Jeder Bericht läuft vor dem Ablegen durch `texte-pruefen.py` und eigene Muster (Stakkato-Empfehlung,
+Stichwort am Anfang, „deine Kundin“, fremde Firmen, ß) und wird bei einem Fund einmal neu geschrieben.
+🚨 Eigenes Konto nur ab `POSITIONIERUNG_AB` 2025-07-01, dieselbe Grenze wie in `gepostet-bauen.py`.
+🚨 Instagram-Video-Adressen verfallen nach wenigen Tagen. Für die fremden Konten braucht es einen frischen Tiefen-Scrape,
+sonst gibt es keine Bilder. Frisch geholt am 30.10. über `apify-tiefe.yml` (sieben Kern-Konten inkl. Erfolgstexterei, je 100 Beiträge).
+Ein Lauf kostet etwa 3 Franken Apify und für alle acht Konten einige Dollar Claude.
+Ausgabe: `outputs/marktrecherche/radar/` (gitignored) und `outputs/cockpit/abgleich/markt-radar/` → Sammlung `markt-radar`
+→ Cockpit **Instagram → Markt-Radar** (V112, `patch-markt-radar.py` + `markt-radar-reiter.js/.css`). Einmal im Monat in
+`/monatsplan` 4.5a, `/content` Schritt 4 liest den eigenen Bericht. Erster eigener Befund: Reichweite trägt bis Faktor 27, die Rate
+liegt bei 9 von 10 Top-Reels unter 1 %. Stärkste Stunde ist 11:00 (6 Beiträge), schwächste 15:00. Die Posting-Zeiten bleiben unverändert bis zu Patricias Ja.
 Jeder Hook nennt sein **Vorbild** aus dem Paket. Berichte: `outputs/marktrecherche/2026-10-04-hook-*.md`.
+
+**Radar-Reels und Testreels (seit 31.10.2026, Cockpit V113).** Aus dem eigenen Radar-Bericht entstanden sieben B-Roll-Reels
+`radar-m-01…09` (02 und 07 gestrichen, nicht belegt), durch `/copywriting` und den Garten: je Beitrag Rolle, Mikro-Szene,
+Lösung erst in der Caption, ein Aufruf. Texte: `outputs/reels/2026-10-31-radar-reels.md`. Befund zu den Ergebnissen
+(87 Beiträge seit 20.08.): Reichweite da, Reaktion nicht (23 Kommentare, 78 Beiträge ohne), 8 der 23 unter dem einen Reel mit
+konkretem Werkzeug (TOOL, 19.10.) · dasselbe Reel lief einmal mit 1'948, einmal mit 277 → Einzelposts sind Zufall, Regeln nur nach
+zwei gleichen Tests · 13 Stichwörter in zehn Wochen. Deshalb **Hooks zuerst als Testreel**: Reiter **Instagram → Testreels**
+(`patch-testreels.py` + `testreels-reiter.js/.css`, wiederholbar, V116). Patricia: *„für jeden tag die fixfertigen testreels nach
+datum sehen … die besten nehme ich selber in den feed. paralell machen wir aber auch beiträge die so oder so gepostet werden“*.
+Deshalb: je Tag die Testreels (Paar A/B am selben Tag, „fertig“ = Video da), Tag per Datumsfeld verschiebbar, als gepostet
+abhaken, nach drei Tagen Konten und Kommentare eintragen, besser ist, wer mehr Kommentare holt, „Hab ich in den Feed genommen“.
+🚨 **Testreels stehen nicht in `alleBeitraege()`** — sie belegen keinen Feed-Platz, gehen nicht in Freigeben und Kalender.
+Felder am Reel: `trial · testVon (Partner) · testStand · testGepostetAm · testReichweite · testKommentare · testNotiz · testGewinner ·
+testInFeed`, alte KW42-Trials über Kennung/Hinweis erkannt.
+**November: 60 Testreels = 30 Paare, eins pro Tag vom 2.11. bis 1.12.** (Patricia: *„ich brauche ja eigentlich 60. jeden tag 2“* ·
+*„bei allen videos bitte ein broll aus meiner sammlung … normale alltagszenen“*). **Eine Quelle:** `outputs/reels/2026-11-testreels.json`
+(Hooks A/B, Clip, Höhe, Stil, Aufruf, Rolle, Caption). Videos: `python scripts/content/radar-brolls.py --fehlend` (nutzt `bauen` aus
+`kw42-brolls.py`, rund 80 s je Reel, Ausgabe `video/output/broll/radar-NN-a|b/`). Cockpit: `python scripts/content/testreels-ins-cockpit.py
+--ziel <ordner> [--videos map.json]` → `ArtifactData batch`, Kennungen `radar-m-NN` (A) und `radar-m-NN-test-b` (B). Stumme Handyclips
+bekommen vorher eine stille Tonspur (`*-ton.mp4` in `video/input/`), sonst bricht der Render ab.
+**Harte Sperre vor jedem Testreel (seit 02.11.2026):** `python scripts/hooks/hook-sperre.py` prüft jeden Hook mit zehn Ja/Nein-Fragen
+(Opus, schreibt Ergebnis nach `pruefung` in die JSON); nur freigegebene Hooks bekommen Video und Text im Cockpit. Feld `belegt` je Paar =
+Patricias bestätigte Fakten, nichts darüber hinaus. Einzelne Feed-Hooks: `--datei <liste.json>`; für doTERRA zusätzlich `--profil doterra`
+(seit 03.11.2026: Leserin ist die erschöpfte Mama ab 35, Regeltext enthält Compliance und `context/doterra/energie-story-profil.md`, ohne Sandra/TEIL 0). 🚨 Die Sperre urteilt nicht ganz gleich, wenn
+derselbe Hook nochmals läuft. Es zählt das neueste Urteil. Der doTERRA-Feed 4.11.–4.12. liegt in `outputs/content/KW46/feed-november-doterra.md`. 🚨 Der Anhang-Speicher des Cockpits
+ist voll (1 GB, Stand 03.11.). Vor dem nächsten Video-Upload alte Anhänge löschen, nur mit Patricias Okay. 🚨 Die JSON nie gleichzeitig von zwei Läufen schreiben (Sperre und Stil-Skript haben sich am
+02.11. gegenseitig überschrieben) — alles nacheinander. Stile nur noch `karte` (Creme-Karte) und `wort` (weisser Satz, ein oranges Wort, dunkle
+Unterlage in `textebene.py`, sonst fällt der Kontrast-Check durch); Marker/Serif hat Patricia abgelehnt. 🚨 **Gesicht Sekunde für Sekunde prüfen**
+(Bild je Sekunde, nicht drei Standbilder) — am 02.11. lag der Text bei 23, 34, 37 auf dem Gesicht, bemerkt hat es Patricia. Über hellem Himmel
+scheitert der Kontrast, dann `hoehe` auf den Körper legen.
+🚨 **Das Cockpit lud bis V112 nur 60 Reels** (`limit(60)`, sortiert nach Kennung) — bei 71 in der Datenbank fehlten alle ab
+`kw45-…`, auch die neuen Radar-Reels. Jetzt 500. Dieselbe Falle wie das Story-Limit: bei jedem `limit(` im Cockpit die echte Zahl
+in der Datenbank gegenprüfen.
 
 **Befund 04.10. (Mentoring):** Identität gewinnt (1,16; Markt 1,33), Schmerz — ihr häufigster Angle — 0,72 ·
 Stufe 1 = 1,2 → Stufe 4 = 0,53 · Listen 0,45 · Ich als Spiegel trägt, Ich als Beweis (0,56) nicht ·
@@ -549,6 +603,8 @@ und Nochmal bauen, Pakete bleiben im Browser, „Alles als Datei speichern“ (`
 `python scripts/angebot-seite/bauen.py` legt das Markenwissen aus `wissen-voll.json` hinein (vorher `wissen-bauen.py`) →
 `outputs/angebot-knopfdruck/angebot.html` (gitignored), mit demselben Pfad neu veröffentlichen. Lokal: `preview_start angebot-knopfdruck`
 → `/test.html` (dort ohne Claude). Die Prüfung bestehender Trichter (Teil B) gibt es nur im Chat.
+**Seit 31.10.:** Station 1 hat „Aus dem Upsell-Ersteller einfügen“ (Auftrag aus dem Cockpit → neues Projekt, siehe
+Upsell-Ersteller), und die Preis-Kette lässt ein Upsell über dem Hauptpreis zu (Patricias Entscheid, auch in `REGELN` in `bauen.py`).
 **Version 4 (29.10., nach Julias Live-Vorführung, Patricias Video in `nachbau/2026-10-29-business-auf-knopfdruck/`):**
 Patricia: *„ich habe ja das ganze julia wissen aus den kursen transkribiert und will das als gehirn … dahinter setzen“*.
 **Gehirn:** `bauen.py` legt alle 13 Themenbücher aus `reference/julia-trost/learnings/themen/` als 8'714 Einzelpunkte in die Seite
@@ -581,7 +637,7 @@ und Code und die Zugangsdauer.
 **Verkaufsseite** im KI-Design, durch `/copywriting` geprüft: `outputs/salespages/story-generator/index.html`
 (Lokal: `preview_start story-generator-lp`). Preis **17 CHF / 17 €** mit zwei Knöpfen, Platzhalter
 `#CHECKOUT-CHF` und `#CHECKOUT-EUR`. Kein Widerrufsrecht und keine Garantie auf der Seite (Patricia, 28.10.).
-**In WordPress als Entwurf, Seite 4429** `/story-generator/` (`elementor_canvas`): `node --env-file=.env deploy-story-generator-lp.mjs`
+**In WordPress Seite 4429** (🚨 am 31.10. auf `publish` gefunden, obwohl die Kauf-Knöpfe noch auf `#CHECKOUT-CHF`/`#CHECKOUT-EUR` zeigen — bleibt online, Patricias Entscheid 31.10.; Befund `outputs/produkte/story-generator/00-befund.md`) `/story-generator/` (`elementor_canvas`): `node --env-file=.env deploy-story-generator-lp.mjs`
 in `scripts/wordpress`, gebaut von `scripts/salespage-design/story-generator-bauen.py` (CSS auf `.sg-sp` gescopt).
 `outputs/salespages/story-generator/story-generator.css` steht seit 28.10. im Customizer (Block „STORY-GENERATOR-VERKAUFSSEITE“,
 über `wp.customize('custom_css[hello-elementor]')` in Patricias Chrome angehängt). Bei CSS-Änderungen diesen Block ersetzen, nicht ein zweites Mal anhängen.
@@ -605,12 +661,31 @@ Entscheide zum Bestätigen: Bump Story-Generator 17, Upsell Begleitung verlänge
 der Story-Generator-Seite, Inhalt `tool-workshop-body.html`) → `outputs/salespages/tool-workshop/index.html`,
 WordPress **4436** `/tool-workshop/` (live) (`node --env-file=.env deploy-tool-workshop-lp.mjs` in `scripts/wordpress`, nutzt das `.sg-sp`-CSS der Story-Generator-Seite aus dem Customizer). **ThriveCart-Produkt 53** (Klon von 49, live, 39.00 CHF, AC-Liste Kunden + Tag **Tool-Workshop 107**; seit 29.10. spät: Kassen-Block mit Mockup, Auslieferung Learn-Kurs 235282, Bump „Finde dein Thema“ 25, Upsell Kundenmaschine 199 (Nr. 8), Downsell Startklar 39 (Nr. 5), dasselbe von Hand in der Euro-Kasse 54 — Stand in `angebot/03-kasse.md`; Upsell- und Downsell-Seiten tragen seit 29.10. nachts gestaltete HTML-Blöcke aus `scripts/salespage-design/tool-workshop-funnel-bloecke.py`; **Danke-Seite nach dem Kauf** WP **4460** `/tool-workshop-danke/` (live seit 30.10.: Termine · Vorbereitung wie Mail B0 · MBA-Webinar als zweiter Block), gebaut von `tool-workshop-bauen.py` (Inhalt `tool-workshop-danke-body.html`), `node --env-file=.env deploy-tool-workshop-danke.mjs` — ThriveCart 53 und 54 leiten seit 30.10. nach dem Kauf dorthin (Fulfillment → custom success page, Learn-Zugang bleibt); Bump-Text seit 30.10. in ihrer Stimme mit Mockup, Stand in `angebot/03-kasse.md`; 🚨 ThriveCart lässt nur eine Anmeldung gleichzeitig zu, und ein Wechsel nach Learn kostet Claude die Sitzung), Kassentext seit 29.10. auf den Workshop umgeschrieben (Klon trug Storyideen-Text, -Kurs und -Tag: bei jedem Klon alle drei prüfen). **Mails:** `python scripts/tool-workshop/mails-bauen.py [--hochladen]` (Gerüst aus Startklar), 7 Kampagnen-Entwürfe in AC 852–858 (A1–A3 Liste 2, B0–B3 Liste 16), IDs in `outputs/produkte/tool-workshop/mails/ac-entwuerfe.json`; die Automationen hat Patricia selbst gebaut. Seit 30.10. sind beide aktiv: **„Tool-Workshop“ (86)** mit B0–B7 und dem Ziel „Digitale Produktwelt gekauft“, **„0€ Nischengenerator“ (87)** mit C0–C4 und dem Ziel „Tool-Workshop gekauft“. Geprüft habe ich über `/api/3/automations/<id>/blocks`. Bausteine und Ziele sind dort lesbar, die Reihenfolge und die Lage eines Ziels nicht. Ein Ziel wirkt nur als Ausstieg, wenn es ganz unten steht. A1–A3 sind Kampagnen und gehören in keine Automation. 🔁 C1–C4 werben für den Workshop: ab 10.11. auf die Aufzeichnung umschreiben oder pausieren. `--hochladen` ersetzt bestehende Entwürfe (liest zurück und vergleicht), legt nur fehlende neu an. **Pitch-Serien seit 29.10. abends** (Patricia: *„Pitch mails fehlen … bei beiden funnels“*, Julias Logik: nach dem kleinen Kauf mehrere Mails auf EIN Angebot): Nischengenerator C1–C4 → Tool-Workshop (Kampagnen 875–878; den letzten Tag übernimmt A3) · nach dem Workshop B3–B7 → **Digitale Produktwelt, Evergreen**, 333 oder 2× 166.50, ohne Frist (B3 = 858, B4–B7 = 879–882). Einbau-Reihenfolge je Automation steht auf der Kopierseite (`kopierseite-bauen.py`, `GRUPPEN`). 🚨 Zoom- und Gruppenlink tragen Passwörter: `ZOOM_1` · `ZOOM_2` · `GRUPPE` stehen in `scripts/tool-workshop/.env` (gitignored), nie im Skript (seit 29.10. ein Zoom-Raum für beide Abende). **Stichwort ohne ManyChat:** der eigene Dienst `kommentar-antwort` antwortet Fremden erst
 nach Meta-App-Review → für diesen Launch gespeicherte Antwort in Instagram (von Hand).
-**Nischengenerator (KI, seit 29.10. abends)**: https://mlb-nischengenerator.vercel.app — Patricia: *„können wir nicht im nischengenerator das wissen dahinter setzen, dass ich im kurs finde dein thema im network mitgebe? … aber es muss halt schon gut sein“*. Sechs Schritte nach dem Kurs (Produkt · Quelle 1 Erfahrung · 2 Ergebnisse · 4 Fragen der anderen · 3 Perspektive · Zielgruppe), dann Mail + Häkchen → drei Themen auf der Themenlandkarte mit Experten-Satz „Ich helfe … dabei, …, damit …“, Warum, Abhebung, Produkt als Zimmer im Haus (je Thema eigene Brücke), drei Beitragstitel, Tool-Idee → je Thema „Tool-Ideen“ (fünf Ideen, mind. vier im Chat baubar, Auftrag für Claude zum Kopieren). Kurswissen in `scripts/tool-ideen/lib/thema-prompt.md`, Tool-Ideen in `lib/system-prompt.md`, Schnittstelle `api/ideen.js` (`art: thema|tools`, Prüfung gegen sondern/Kundin/Heilversprechen). Vercel-Projekt `tool-ideen` (auch unter mlb-tool-ideen.vercel.app). AC: Liste 2, Tag **0€ Nischengenerator (108)**, Felder **Nischengenerator Durchgänge (19)** und **Nischengenerator Thema (20)**. 🚨 **10 Durchgänge je Mailadresse**, jeder KI-Aufruf zählt, gezählt in AC. 🚨 Sonnet 5.5: `thinking: {type: 'between_tools'}` statt `disabled` (sonst 400). Lokal `preview_start tool-ideen` (Port 4413). Deploy `cd scripts/tool-ideen && npx vercel@latest --prod --yes`. 🚨 **Das Vercel-Projekt hängt am GitHub-Repo** (Alias `tool-ideen-git-main`): jeder auto-sync-Push baut aus der Repo-Wurzel neu, wo `scripts/tool-ideen/` nicht liegt, und legt das Tool mit 404 lahm (zuerst bemerkt 29.10. 18:15). Abhilfe: `npx vercel git disconnect` im Ordner, danach neu ausliefern. Willkommensmail C0 als AC-Entwurf (Kampagne 859). Die erste, regelbasierte Fassung (`outputs/produkte/tool-workshop/nischengenerator.html`, Artifact WCqvp1…, Netlify) war Patricia zu beliebig (gebaute Sätze, eine Produktbrücke für alle Themen) und bleibt nur Workshop-Beispiel für ein einfaches Tool. **Anmeldeseite (29.10. abends, Patricia: *„mit anmeldeseite und bestätigungsmail“*):** WP **4441** `/nischengenerator/` + Danke-Seite **4442** `/nischengenerator-danke/` (mit Workshop-Angebot), beide live seit 30.10., im `.sg-sp`-Design: `python scripts/salespage-design/nischengenerator-bauen.py` (Inhalt `nischengenerator-body.html`, `-danke-body.html`), Deploy `node --env-file=.env deploy-nischengenerator-lp.mjs` in `scripts/wordpress`, lokal `preview_start nischengenerator-lp` (Port 4417). Hero-Bild seit 29.10. abends: zwei Handys mit echten Tool-Bildschirmen (Ergebnis mit Sandras Beispiel, ohne KI-Aufruf) — `node scripts/salespage-design/nischengenerator-bildschirme.mjs` → `nischengenerator-bild.mjs` → webp, WP-Medium **4463**. Im Hauptmenü steht seit 29.10. unter „Angebote“ der Unterpunkt **Gratis-Angebote** → `/angebote/gratis/`. 🚨 Die Firewall von mumlifebalance.ch sperrt Puppeteer aus („Sorry … For security“) — Live-Prüfung über das Browserfenster der App. AC-Formular **75** über die Schnittstelle angelegt (POST `/api/3/forms` mit der Kopie von Formular 71 geht) — 🚨 die Opt-in-Mail entsteht erst, wenn im Editor bei „Eine Liste abonnieren“ die Einstellungen einmal gespeichert werden (Adresse wählen!). Bestätigungsmail in `scripts/mails/bestaetigung-bauen.py` (neu: `--nur <formular>`). Stichwort NISCHE und Storys verlinken die Anmeldeseite, Mails an bestehende Kontakte das Tool direkt. **Freebie-Übersicht** (29.10., nach dem Vorbild einer Mentorin): WP **4443** `/angebote/gratis/` (live, Vorlage `elementor_header_footer` = Kopf- und Fusszeile ohne Seitentitel, seit 29.10. abends fürs Handy kompakt mit Sprungmarken, Inline-Stile). **Pin-Karussell Nischengenerator** (Stichwort NISCHE, Linie der Pins wie beim Stimm-Check): `outputs/karussells/pin-nische/` (HTML + Caption), Bilder `outputs/karussells/renders/2026-10-29-pin-nische/` über `scripts/karussell-render/render.js`. 🚨 Folie 1 kommt danach aus `node scripts/salespage-design/pin-nische-cover.mjs` (Szene wie das Stimm-Check-Cover: Titel, Tablet mit echtem Ergebnis-Bildschirm, Bogen, Karte, Pille) — wer `render.js` neu laufen lässt, muss das Cover-Skript hinterher nochmal starten. Kopierseite der Workshop-Mails: `python scripts/tool-workshop/kopierseite-bauen.py` → `outputs/produkte/tool-workshop/mails/kopierseite.html`. 🚨 **Die Mail-HTMLs und die Kopierseite tragen Zoom-Passwort und Gruppenlink und sind seit 29.10. gitignored** — sie waren um 19:07 und 19:54 schon auf GitHub (Commits 17d8ddc, 3c53773); Patricia lässt die Links bewusst so (29.10.), `node --env-file=.env deploy-gratis.mjs [--vorschau]` in `scripts/wordpress`, Liste der Freebies im Skript (`GRUPPEN`). Rubbellos, Danke-Seite mit Video und Bezahl-Durchgänge stehen in `context/ideen-vorrat.md`, Funnel-Befund in `outputs/marktrecherche/2026-10-29-julia-ki-tool-funnel.md`. Workshop-Seite (**WP 4436, seit 29.10. veröffentlicht**) seit 29.10. abends nach dem Aufbau einer Mentorinnen-Seite: „Bau dir ein Gratis-Tool, das dir neue Kontakte bringt“, für dein Network **oder** dein eigenes Angebot (Patricia: nicht als „etwas Eigenes aufbauen“ definieren, auch Leadmagnet für reine Network-Kundinnen). Hero-Bild = Geräte-Mockup (Laptop mit Beispiel-Tool „Energie-Check“, Tablets mit Weg und Inhalt, Handy „online“, Aufkleber 2 Abende · 0 Zeilen Code, Preisschild 39 CHF · 39 €), ganz in HTML/CSS gestaltet, Idee nach einer Mentorinnen-Seite (seit 29.10. abends): `node scripts/salespage-design/tool-workshop-bild.mjs` → webp → WP-Medium **4458** `tool-workshop-mockup.webp`. **Euro (29.10.):** Währungsvariante von Produkt 53 über „Create New Currency Variant“ (Adaptive Pricing), 39 €, `/tool-workshop-eu/`, 20 Euro-Länder; `/tool-workshop/` leitet Besucherinnen aus dem Euroraum selbst dorthin. Auf der Seite zwei Knöpfe (CHF · EUR). Gebühr: bei Pro+ höchstens 0,25 % je Euro-Kauf, Stripe rechnet für Fremdwährung zusätzlich. 🚨 Die Variante ist ein geklontes eigenes Produkt — nach jeder Änderung am CHF-Produkt (Text, Tag, Bump) die Euro-Kasse gegenprüfen. ⚠️ Offen: A1–A3 als Kampagnen einplanen (30.10. · 6.11. · 9.11.). Seiten und Automationen laufen seit 30.10.
+**Nischengenerator (KI, seit 29.10. abends)**: https://mlb-nischengenerator.vercel.app — Patricia: *„können wir nicht im nischengenerator das wissen dahinter setzen, dass ich im kurs finde dein thema im network mitgebe? … aber es muss halt schon gut sein“*. Sechs Schritte nach dem Kurs (Produkt · Quelle 1 Erfahrung · 2 Ergebnisse · 4 Fragen der anderen · 3 Perspektive · Zielgruppe), dann Mail + Häkchen → drei Themen auf der Themenlandkarte mit Experten-Satz „Ich helfe … dabei, …, damit …“, Warum, Abhebung, Produkt als Zimmer im Haus (je Thema eigene Brücke), drei Beitragstitel, Tool-Idee → je Thema „Tool-Ideen“ (fünf Ideen, mind. vier im Chat baubar, Auftrag für Claude zum Kopieren). Kurswissen in `scripts/tool-ideen/lib/thema-prompt.md`, Tool-Ideen in `lib/system-prompt.md`, Schnittstelle `api/ideen.js` (`art: thema|tools`, Prüfung gegen sondern/Kundin/Heilversprechen). Vercel-Projekt `tool-ideen` (auch unter mlb-tool-ideen.vercel.app). AC: Liste 2, Tag **0€ Nischengenerator (108)**, Felder **Nischengenerator Durchgänge (19)** und **Nischengenerator Thema (20)**. **Ergebnis per Mail (seit 02.11.):** Anlass war eine Testerin, die ihre Themen per Mail erwartet hatte; C0 kann das nicht, weil sie vor dem ersten Durchgang rausgeht. Jetzt schreibt das Tool nach jedem Durchgang „thema“ alle drei Themen in die Felder **21–23** (`%NISCHE_THEMA_1%` …, Thema 1 zuletzt). Die Automation **„Nischengenerator Ergebnis“ (88)** ist aktiv seit 02.11. (Auslöser: Feld 21 ändert sich, jedes Mal) und schickt Mail **R0** „Deine drei Themen zum Nachlesen“ (Automations-Kopie Kampagne 909 / Nachricht 758, Vorlage 907). Getestet ist der ganze Weg vom Tool bis zum Postfach. 🚨 Wird eine Mail im Builder „ausgehend von einer bestehenden E-Mail“ übernommen, bleibt ihr Inhalt leer (`{"html":"","css":""}`). Dann den Inhalt per `PUT /api/3/messages/<id>` hineinschreiben, erst danach „Fertigstellen“. AC wandelt die Zeilenumbrüche im Feld selbst in `<br>` um. Der Einmal-Nachtrag **R1** (908 / Nachricht 757) ist am 02.11. einzeln an die fünf Kontakte mit Tag 108 gegangen (v1 `campaign_send` je Adresse). 🚨 Die erste Empfängerin bekam ihn **leer**, nur mit Abmeldelink: Mit `message_add` und `htmlconstructor=external` angelegt, holt `campaign_send` keinen Inhalt („fetch:“). Vor jedem Einzelversand den Inhalt per v3-PUT mit `htmlfetch: now` setzen und an die eigene Adresse testen. Beide werden mit `mails-bauen.py --nur=<datei> [--hochladen]` gebaut. Dazu kommt der Knopf „Als PDF speichern“ (Druckansicht). `ERGEBNIS_MAIL` in `public/index.html` steht seit 02.11. auf true. Wird die Automation 88 ausgeschaltet, gehört es zurück auf false. Vor dem 02.11. wurde nur der eine Satz in Feld 20 gespeichert. 🚨 **10 Durchgänge je Mailadresse**, jeder KI-Aufruf zählt, gezählt in AC. 🚨 Sonnet 5.5: `thinking: {type: 'between_tools'}` statt `disabled` (sonst 400). Lokal `preview_start tool-ideen` (Port 4413). Deploy `cd scripts/tool-ideen && npx vercel@latest --prod --yes`. 🚨 **Das Vercel-Projekt hängt am GitHub-Repo** (Alias `tool-ideen-git-main`): jeder auto-sync-Push baut aus der Repo-Wurzel neu, wo `scripts/tool-ideen/` nicht liegt, und legt das Tool mit 404 lahm (zuerst bemerkt 29.10. 18:15). Abhilfe: `npx vercel git disconnect` im Ordner, danach neu ausliefern. Willkommensmail C0 als AC-Entwurf (Kampagne 859). Die erste, regelbasierte Fassung (`outputs/produkte/tool-workshop/nischengenerator.html`, Artifact WCqvp1…, Netlify) war Patricia zu beliebig (gebaute Sätze, eine Produktbrücke für alle Themen) und bleibt nur Workshop-Beispiel für ein einfaches Tool. **Anmeldeseite (29.10. abends, Patricia: *„mit anmeldeseite und bestätigungsmail“*):** WP **4441** `/nischengenerator/` + Danke-Seite **4442** `/nischengenerator-danke/` (mit Workshop-Angebot), beide live seit 30.10., im `.sg-sp`-Design: `python scripts/salespage-design/nischengenerator-bauen.py` (Inhalt `nischengenerator-body.html`, `-danke-body.html`), Deploy `node --env-file=.env deploy-nischengenerator-lp.mjs` in `scripts/wordpress`, lokal `preview_start nischengenerator-lp` (Port 4417). Hero-Bild seit 29.10. abends: zwei Handys mit echten Tool-Bildschirmen (Ergebnis mit Sandras Beispiel, ohne KI-Aufruf) — `node scripts/salespage-design/nischengenerator-bildschirme.mjs` → `nischengenerator-bild.mjs` → webp, WP-Medium **4463**. Im Hauptmenü steht seit 29.10. unter „Angebote“ der Unterpunkt **Gratis-Angebote** → `/angebote/gratis/`. 🚨 Die Firewall von mumlifebalance.ch sperrt Puppeteer aus („Sorry … For security“) — Live-Prüfung über das Browserfenster der App. AC-Formular **75** über die Schnittstelle angelegt (POST `/api/3/forms` mit der Kopie von Formular 71 geht) — 🚨 die Opt-in-Mail entsteht erst, wenn im Editor bei „Eine Liste abonnieren“ die Einstellungen einmal gespeichert werden (Adresse wählen!). Bestätigungsmail in `scripts/mails/bestaetigung-bauen.py` (neu: `--nur <formular>`). Stichwort NISCHE und Storys verlinken die Anmeldeseite, Mails an bestehende Kontakte das Tool direkt. **Freebie-Übersicht** (29.10., nach dem Vorbild einer Mentorin): WP **4443** `/angebote/gratis/` (live, Vorlage `elementor_header_footer` = Kopf- und Fusszeile ohne Seitentitel, seit 29.10. abends fürs Handy kompakt mit Sprungmarken, Inline-Stile). **Pin-Karussell Nischengenerator** (Stichwort NISCHE, Linie der Pins wie beim Stimm-Check): `outputs/karussells/pin-nische/` (HTML + Caption), Bilder `outputs/karussells/renders/2026-10-29-pin-nische/` über `scripts/karussell-render/render.js`. 🚨 Folie 1 kommt danach aus `node scripts/salespage-design/pin-nische-cover.mjs` (Szene wie das Stimm-Check-Cover: Titel, Tablet mit echtem Ergebnis-Bildschirm, Bogen, Karte, Pille) — wer `render.js` neu laufen lässt, muss das Cover-Skript hinterher nochmal starten. Kopierseite der Workshop-Mails: `python scripts/tool-workshop/kopierseite-bauen.py` → `outputs/produkte/tool-workshop/mails/kopierseite.html`. 🚨 **Die Mail-HTMLs und die Kopierseite tragen Zoom-Passwort und Gruppenlink und sind seit 29.10. gitignored** — sie waren um 19:07 und 19:54 schon auf GitHub (Commits 17d8ddc, 3c53773); Patricia lässt die Links bewusst so (29.10.), `node --env-file=.env deploy-gratis.mjs [--vorschau]` in `scripts/wordpress`, Liste der Freebies im Skript (`GRUPPEN`). Rubbellos, Danke-Seite mit Video und Bezahl-Durchgänge stehen in `context/ideen-vorrat.md`, Funnel-Befund in `outputs/marktrecherche/2026-10-29-julia-ki-tool-funnel.md`. Workshop-Seite (**WP 4436, seit 29.10. veröffentlicht**) seit 29.10. abends nach dem Aufbau einer Mentorinnen-Seite: „Bau dir ein Gratis-Tool, das dir neue Kontakte bringt“, für dein Network **oder** dein eigenes Angebot (Patricia: nicht als „etwas Eigenes aufbauen“ definieren, auch Leadmagnet für reine Network-Kundinnen). Hero-Bild = Geräte-Mockup (Laptop mit Beispiel-Tool „Energie-Check“, Tablets mit Weg und Inhalt, Handy „online“, Aufkleber 2 Abende · 0 Zeilen Code, Preisschild 39 CHF · 39 €), ganz in HTML/CSS gestaltet, Idee nach einer Mentorinnen-Seite (seit 29.10. abends): `node scripts/salespage-design/tool-workshop-bild.mjs` → webp → WP-Medium **4458** `tool-workshop-mockup.webp`. **Euro (29.10.):** Währungsvariante von Produkt 53 über „Create New Currency Variant“ (Adaptive Pricing), 39 €, `/tool-workshop-eu/`, 20 Euro-Länder; `/tool-workshop/` leitet Besucherinnen aus dem Euroraum selbst dorthin. Auf der Seite zwei Knöpfe (CHF · EUR). Gebühr: bei Pro+ höchstens 0,25 % je Euro-Kauf, Stripe rechnet für Fremdwährung zusätzlich. 🚨 Die Variante ist ein geklontes eigenes Produkt — nach jeder Änderung am CHF-Produkt (Text, Tag, Bump) die Euro-Kasse gegenprüfen. ⚠️ Offen: A1–A3 als Kampagnen einplanen (30.10. · 6.11. · 9.11.). Seiten und Automationen laufen seit 30.10.
 **Wissen fürs Tool** (Patricia 29.10.): Teilnehmerinnen bringen ihr Workbook/PDF mit (per Büroklammer in den Chat), wer nichts hat, beschreibt, was das Tool können soll. Steht in Vorbereitung, Mail B0, Auftrags-Vorlage und auf der Anmeldeseite. Der Nischengenerator liegt zusätzlich als `netlify-nischengenerator/index.html` bereit (Netlify Drop braucht Patricias Anmeldung zum Übernehmen).
 Storys Mentoring 30.10.–30.11. im Cockpit (`storys-november.py`, Liste `M_NEU`), doTERRA 30.10.–30.11. neu nach
 Storytelling-Bauplan (Szene · Learning · Kickstart-Link jeden 2. Tag · Ausklang). Prüfbericht des Archivs:
 `outputs/stories/2026-10-29-storys-november-pruefung.md`. 🚨 Ein Einstieg, der eine Geschichte ankündigt, ist ein
 Hook (Patricia 29.10.) — schlecht sind nur Begrüssung und Tagesablauf.
+
+### Neustart 2027 — Jahresplanungs-Workshop Do 17.12.2026 (seit 2026-10-31)
+
+Patricia: *„… in meiner planung zu berücksichtigen, dass ich den einplanen will, mir auch ein cooles mockup vorzuschlagen
+und den effekt einzubauen aber was passendes zum neujahr … und rechne rückwärts.“* Entscheide 31.10.: **gratis ·
+AC-Formular · 09:00 · Aufzeichnung unbefristet · Anschluss MBA, die Januar-Challenge fällt weg.** Offener Call aus der MBA.
+Paket nach `/angebot`: `outputs/produkte/jahresplanung/angebot/` (`00-bauplan.md` = eine Quelle mit Fahrplan, Befund der
+Funnel-Checkliste in `00-befund.md`, Dokument `funnelcheck/neustart-2027`), `active-funnels.json` id `neustart-2027`,
+Cockpit-Aufgaben `af-neu27-*`, Fahrplan auch in `plans/2026-10-26-reihenfolge-nov-bis-jan.md` Abschnitt 5,
+`outputs/monatsplaene/2026-12-mentoring.md` und `context/jahresplan-2026.md` (neu angelegt).
+Rückwärts: Bauplan-Go 15.11. · Entwürfe bis 20.11. · Anwärmen 23.–29.11. · Seiten live 25.11. · **Anmeldung ab 30.11.** (Mails
+A1 30.11. · A2 7.12. · A3 15.12.) · E1 16.12. 18:00 · E2 17.12. 08:00 · Workshop · MBA-Pitch E3–E5 17.–20.12. · Ferien ab 21.12.
+Seiten: `python scripts/salespage-design/jahresplanung-bauen.py` (Kopf/CSS aus der Story-Generator-Seite, Inhalt
+`jahresplanung-body.html` / `-danke-body.html`, `FORMULAR` und `BILD_WP` nach dem Anlegen eintragen) →
+`outputs/salespages/jahresplanung/`, lokal `preview_start jahresplanung-lp` (Port 4419). **Effekt** `jahresplanung-effekt.css`,
+reines CSS (WP blockt Skripte), Vorsilbe `nj-`: Kalenderblatt 31.12.2026 klappt auf 1.1.2027 · aufsteigende Funken · aus bei
+„weniger Bewegung“; gehört als Customizer-Block „NEUSTART-2027-EFFEKT“ zur WP-Seite. **Mockup** `node scripts/salespage-design/jahresplanung-bild.mjs`
+(Sandras Jahr 2027, heller Rand um die Geräte, weil die Seite dunkel ist). Vorbild nur für Aufbau und Effekt-Idee, Wortlaut eigen.
+✅ Bauplan freigegeben 01.11.: Name, Stichwort NEUSTART, 90 Min, MBA zu 997 ohne Workshop-Preis. **Als Entwurf angelegt 01.11.:** WP 4469 `/neustart-2027/` · 4470 `-danke/` · 4473 `-bestaetigt/` (Deploy `node --env-file=.env deploy-jahresplanung-lp.mjs` in `scripts/wordpress`), Mockup Medium 4468 · AC-Tag 109, Formular 76 (Opt-in-Mail erst nach Speichern im Editor, dann `bestaetigung-bauen.py --hochladen --nur 76`), Kampagnen-Entwürfe 899–906 aus `python scripts/jahresplanung/mails-bauen.py --hochladen` (Zoom/Aufzeichnung in `scripts/jahresplanung/.env`, Mail-HTML gitignored). ⚠️ Offen: 1:1 Postingplan liegt im selben Fenster · Ort der Aufzeichnung · Jahresplaner-Seite öffentlich teilen.
 
 ### /strategie — der Business-Stratege (seit 2026-09-24)
 
@@ -2673,7 +2748,22 @@ Lädt das vollständige Briefing (`context/meal-planning-bot.md`) und startet de
 
 Output wird in `outputs/mealplans/` gespeichert.
 
-**Automatik (seit 25.10.2026):** Sa 18:00 vier Fragen **über den Kochassistenten** (Telegram-Bot von `koch-bot`, Endpunkt `/api/essensfragen`; Task `mealplan-fragen-donnerstag`, Name historisch). Seit 27.10.: Antworten liest `antworten-lesen.py` aus dessen Supabase-Verlauf (`scripts/mealplan-dialog/kochbot.py`), der Bot bestätigt sie nur und plant nicht selbst. 🚨 Nicht über den Gartenbot — der läuft auf Railway noch und verschluckt Antworten. → **So 07:00 Plan für Dienstag bis Montag danach** (Task `freitag-mealplan`, Name historisch) → direkt in die Familien-App (Essen + Einkaufsliste, `essen-uebernehmen.mjs`). Kein PDF mehr per Telegram.
+**Kochdatenbank „Patricias Kochbuch“ (seit 02.11.2026):** https://claude.ai/artifact/4fFaLjkcYGBEDStjxa4CAe (privat).
+3'582 Rezepte aus dem OneDrive-Ordner `Dokumente/Patricia/Hobby/Rezepte` (dort landen auch fotografierte Papierrezepte),
+den Coaching-Ernährungsplänen (Merkmal „Coaching-Plan“, Nährwerte angegeben) und den Online-Rezepten aus den Wochenplänen
+(Merkmal „Online“, nur Titel/Werte/Link, kein abgeschriebener Text). Suche, Kategorie → Unterart (Fleischsorte, Dessertart …),
+Protein-Filter, „Passt in meinen Plan“ (≥30 g Protein, ≤30 g Fett), Merkstern, Such-Knöpfe Cookidoo · Swissmilk · Migusto · Fooby · Betty Bossi.
+`python scripts/kochdatenbank/einlesen.py` (nur Neues/Geändertes, Abgleich über `gesehen.json`; `--trocken` zählt) →
+`python scripts/kochdatenbank/seite-bauen.py` → `outputs/kochdatenbank/kochdatenbank.html` mit demselben Pfad neu veröffentlichen.
+Neue Online-Rezepte als Zeile in `outputs/kochdatenbank/daten/links.txt`. Ganzer Ordner `outputs/kochdatenbank/` gitignored.
+🚨 Nährwerte ohne Angabe im Rezept sind von Claude geschätzt („~“ auf der Seite). Ein Rezept über zwei Screenshots wird nur halb erkannt.
+**Znacht** (Patricia: *„kein menu … eher was einfaches … milchreis, gschwellti … optionen für mich, dass ich auf proteine schaue“*):
+Feld `znacht` je Rezept nach `ZNACHT_REGEL` in `einlesen.py`; ältere Einträge über `znacht-markieren.py`. Auf der Seite ist
+„Znacht“ eine Kategorie (Unterarten = Art des Gerichts); Protein filtert sie selbst über „Protein je Portion“ (kein eigener Plan-Filter, Patricia 02.11.). Dazu die 120 Energie-Routine-Rezepte (Merkmal „Energie-Routine“).
+Sonntags um 06:30 liest der Scheduled Task `kochbuch-abgleich-sonntag` Neues ein und veröffentlicht die Seite neu.
+⚠️ Damit er unbeaufsichtigt läuft, braucht `.claude/settings.local.json` die Freigaben `Bash(python scripts/kochdatenbank/einlesen.py:*)` und `Bash(python scripts/kochdatenbank/seite-bauen.py:*)`.
+
+**Automatik (seit 25.10.2026, Tage seit 03.11.):** Do 18:00 vier Fragen **über den Kochassistenten** (Telegram-Bot von `koch-bot`, Endpunkt `/api/essensfragen`; Task `mealplan-fragen-donnerstag`, Name historisch). Seit 27.10.: Antworten liest `antworten-lesen.py` aus dessen Supabase-Verlauf (`scripts/mealplan-dialog/kochbot.py`), der Bot bestätigt sie nur und plant nicht selbst. 🚨 Nicht über den Gartenbot — der läuft auf Railway noch und verschluckt Antworten. → **Fr 10:00 Plan für Dienstag bis und mit dem Montag danach** — schliesst an den letzten Plan an, überschreibt dessen Montag nie (seit 03.11.2026, vorher So 07:00; Freitag, weil Patricia da am Computer arbeitet — die Routine läuft nur bei eingeschaltetem Rechner und offener App; Task `freitag-mealplan`, Name historisch; 🚨 am 01.11. blieb der Lauf am ersten Befehl hängen, weil er über PowerShell lief — die Freigaben gelten nur für `Bash(...)`, und für `suche-cli.mjs` und `essen-uebernehmen.mjs` fehlt noch eine) → direkt in die Familien-App (Essen + Einkaufsliste, `essen-uebernehmen.mjs`). Kein PDF mehr per Telegram.
 
 ### /produkt
 
@@ -4230,11 +4320,46 @@ Hälfte abgebildet — Steckbrief und Atemwege ja, Herz-Kreislauf und Verdauung 
 **Neues nachführen:** `python scripts/oel-app/nachfuehren.py [--trocken]` — holt neue Dateien aus OneDrive
 (`Patricia/Arbeit&Politik/Business/doTERRA`, z.B. ein neues Enjoils-Heft) nach `context/doTERRA/`, OCR,
 `quellen.py`, vollständiger Durchgang nur für neue Pakete, `app-bauen.py`. Veröffentlichen danach im Chat.
-⚠️ **Offen (API-Limit erreicht am 22.10., wieder frei ab 01.11.):** Task `oel-kompass-fertigstellen` macht
-alles Folgende plus den vollständigen Durchgang: `tipps-bauen.py` für die 24'586
-nachgeholten „Mama & Kind“-Nachrichten und das abgerissene Kosmetik-Paket · `produkte-bauen.py --nur …`
-für die Öle mit unter 8 Stellen (Air, Amavi u.a. — die Suche nach Alias und Quellentitel ist schon
-eingebaut, Air findet jetzt 64 statt 0 Stellen) · danach `app-bauen.py` und neu veröffentlichen.
+✅ **Fertig am 01.11.2026 (Version 9):** alle Telegram-Gruppen ausgewertet (6'553 Tipps, davon 3'040 aus „Mama & Kind“ und 654 aus Kosmetik), dünne Einträge neu (`produkte-bauen.py --duenne`), vollständiger Durchgang über alle 488 Pakete (14'753 Aussagen zu 252 Produkten, 3'842 Rezepte). Die `daten/wissen/*.json` gehen in zwei Veröffentlichungen hoch (über 255 Dateien). Task `oel-kompass-fertigstellen` ist abgeschaltet.
+
+### Öl-Abend: Rückmeldeblatt, Formular, Danke-Seite, Nachfass-Mail (seit 2026-11-03)
+
+Patricia: *„ein formular oder ähnliches …, wo sie angeben können was sie gerne bestellen möchten“*. Vorlage war das
+Papierblatt einer Kollegin (Drive „Feedbackblatt Ölobig.pdf“), Wortlaut eigen. Alles in `scripts/oelabend/`, Ausgabe
+`outputs/doterra-strategie/oelabend/`. **AC-Formular 77** „Öl-Abend · Rückmeldung und Bestellung“
+(https://mumlifebalance.activehosted.com/f/77), Tag **Öl-Abend (110)**, Liste doTERRA Interessenten (18), ohne Opt-in-Mail
+und ohne Captcha, Antworten in den Feldern `OEL_*` (u. a. `OEL_SCHRITT`: heute bestellen + Buch „Kraft der Natur“ ·
+überschlafen · eigener Öl-Abend + Gastgeberinnen-Geschenk) — `formular-anlegen.py` (legt nur Fehlendes an).
+**Papierblatt A4** mit QR-Code aufs Formular: `blatt-bauen.py` → `rueckmeldeblatt.pdf` (Optionen aus derselben Quelle,
+CHF-Preise bewusst leer). **Danke-Seite** WP **4478** `/oelabend-danke/` im `.enr`-Look der Energie-Routine
+(`node --env-file=.env deploy-oelabend-danke.mjs [--vorschau]`, Inhalt `danke-inhalt.html`), live seit 03.11.;
+Formular 77 leitet nach dem Absenden dorthin. **Nachfass-Mail „überschlafen“** (2 Tage, Antwort mit einem Wort BESTELLEN/ABEND/FRAGE):
+`mail-bauen.py` → HTML zum Einfügen in die Automation, die Patricia selbst baut. ⚠️ Offen: Gastgeberinnen-Geschenk · CHF-Preise.
+
+### Ölbegleitung für Neukundinnen „Mama wird Hausapothekerin“ (seit 2026-11-03)
+
+Patricia: *„ein tool, wo man unterscheiden kann zwischen hausapotheke – gilt bei family essential kit und hausapotheke –
+und kids collection und dann bekommt man entweder oder infos“*. Artifact https://claude.ai/artifact/WQAE68X16K6CvY8DUuLHa7
+(privat, zum Weitergeben über das Share-Menü öffentlich teilen), Quelle `outputs/produkte/oel-begleitung/oel-begleitung.html`
+(die Datei ist die Quelle, Inhalte als JS-Daten oben im Skript), mit demselben Pfad neu veröffentlichen. **Keine Fähigkeiten**,
+Fortschritt nur im `localStorage` der Kundin. Weg 1 Hausapotheke/Family Essentials: 30 Tagesaufträge, die 10 Basisöle schalten
+an Tag 1/6/12/19 frei, „Was ist los?“ mit Ärztin-Hinweis, Verdünnung nach Alter, Routine-Baukasten, Wunschzettel per WhatsApp,
+Treueprogramm. Weg 2 Kids Collection: 28 Tage, 7 Roller an Tag 1/8/15/22, Tagesplan, Roller-Pass zum Stempeln.
+Inhalt aus Patricias Workbook (OneDrive …/doTERRA/Mama wird Hausapothekerin/), Kids sinngemäss aus `context/doTERRA/Kids Collection.pdf`
+und den Telegram-Tipps im Öl-Kompass (`outputs/oel-app/app/daten/tipps.json`).
+**Version 2/3 (03.11.):** im Look des Workbooks (Cinzel-Titel, Allura-Schrift, beige Kästen, türkises Audio- und Fussband),
+alle sechs Kapitel als Reiter, Ölseiten 1:1 aus dem Workbook mit Bild (`bilder/`, aus dem PDF geschnitten, beim Veröffentlichen
+über `files` mitgeben), alle Vimeo-Videos/-Audios, Drive-Infos, Apps, Bücher, Oilacademy, Teamcall, Treueprogramm als eigener Block.
+🚨 Patricia 03.11.: *„keine compliance. das ist mein internes tool für meine kunden“* → Workbook-Wortlaut unverändert.
+🚨 *„ich will ja dass sie selber bestellen und nicht mir schreiben. nur bei fragen“* → alle Bestell-Knöpfe gehen in den Shop
+(Workbook-Link `shop.doterra.com/CH/de_CH/shop/home/`), WhatsApp nur für Fragen und Business.
+Version 5: Reiter **Business**, Kids-„Treue & Plan“ beginnt mit „Du findest die Roller cool?“ → Home Essentials Kit → Grundversorgung.
+Das Plan-Video (Vimeo 1120032456) ist über Zeitmarken unterteilt (`planAb("5m37s")`, Liste `PLAN_KAPITEL`, Zeiten aus den
+Vimeo-Untertiteln über `scripts/ki-kurs/vimeo-transkripte.py` → `spur_von`). Gekürzte Fassung (Ende 13:28,6 mit Ausblendung) liegt als `video1895330252-gekuerzt.mp4` neben dem Original im OneDrive-Ordner;
+⚠️ in Vimeo über „Datei ersetzen“ hochladen macht Patricia selbst.
+Gruppen: WhatsApp-Links stehen im Workbook-PDF (S. 36). Telegram-Einladungen zu Gruppennamen auflösen, nur lesend:
+`npx tsx src/einladungen-pruefen.ts <hashes.txt>` in `scripts/telegram-userbot` (Mama & Kind, Prevent Tiergruppe gefunden;
+für die Mama-Gruppe by brunner.vibes gibt es keinen Link, dort „schreib mir“).
 
 ### Bereich doTERRA im Cockpit (seit 2026-10-13, Version 99)
 
@@ -4249,6 +4374,22 @@ von Mama-CEO umgezogen), gebaut mit `scripts/cockpit/patch-doterra-bereich.py` (
 | **Anliegen** | Symptom-Suche über **alle** Unterlagen: 38 Anliegen, je bis 24 Stellen mit Quelle/Seite, welche Öle wie viele Quellen nennen, Block Ernährung/Hormone, Kundinnen-Satz | `anliegen.json` + `scripts/doterra/anliegen-bauen.py` → `doterra-wissen/anliegen-NN` |
 | **Business-Wege** | 8 Abläufe, 67 Schritte zum Abhaken, 26 Vorlagen (einschreiben, LRP, betreuen, reaktivieren, Öl-Abend, Beraterin gewinnen, Onboarding 30 Tage, Rang bis Gold) | `context/doTERRA/business-wege.json` → `doterra-wissen/wege` |
 | **Rising Leaders** | Aufträge mit Frist · Beraterinnen-Liste (Idee → Gespräch → Infos → eingeschrieben → eingearbeitet) · Eingang „Neu aus Telegram“ | `daten/rising-leaders` — 🚨 **gehört Patricia, Abgleich schreibt nie** |
+| **Ölschule-Calls** (V120, 03.11.) | je Academy-Call die Learnings zum Aufklappen, Suche über alle Calls | `context/doTERRA/academy-oel-schule/*-zusammenfassung.md` → `node scripts/doterra/academy-calls-pdf.mjs` (baut zugleich je Call ein PDF in `…/academy-oel-schule/pdf/`) → `outputs/cockpit/abgleich/academy/*.json` → Sammlung `academy`; Reiter `patch-academy.py` |
+
+**Tagesrunde (V121, 03.11.):** Patricia: *„ich möchte bei doTERRA endlich in die umsetzung kommen“*. Oben im Reiter Rising Leaders
+die drei täglichen Schritte aus Rise to Lead (🔥 Business erwähnen · 💖 eine Person ansprechen · 🚀 eine Kundin kontaktieren), je mit
+wechselnder Idee in eigenen Worten, Zähler auf 100 Ansprachen ab 1.10., Woche als Punkte, Serie, bis zum 15. der Treueprogramm-Hinweis,
+ab dem 24. der **Monatsabschluss** (6 Haken + was je Bein fehlt aus `daten/doterra`). Ein Name bei „Person“ landet als Idee in der
+Beraterinnen-Liste. Mein Tisch zeigt oben „x/3 doTERRA heute“. Felder `tagesrunde` und `abschluss` in `daten/rising-leaders`.
+`patch-tagesrunde.py` (+ `tagesrunde.js/.css`). 🚨 `trTag` gab es im Cockpit schon — vor neuen Funktionsnamen gegen die Live-Fassung grep'en.
+**Team-Funke (V122, 03.11.):** Patricia: *„auch mein Team motivieren … wieder mehr leben reinbringen“*. Aufklappbar unter der Tagesrunde:
+Erfolge + Aktion der Woche eintragen, anhaken, wer kurz vor dem nächsten Schritt steht (aus `daten/doterra`, Zahlen nur für sie),
+eine von 8 Challenges (wechselt nach dem Verlauf) → Claude schreibt über `sample` die Gruppennachricht und je eine persönliche
+Nachricht. Kopieren, selbst schicken, „Hab ich verschickt“ legt sie in den Verlauf. Ab Sonntag steht „✨ Team-Funke“ auf Mein Tisch,
+bis eine verschickt ist. Feld `funke` in `daten/rising-leaders`. `patch-teamfunke.py` (+ `teamfunke.js/.css`, setzt die Tagesrunde
+voraus). 🚨 Keine Teamnamen im Code (Repo public), auch nicht als Beispiel im Platzhalter. ⚠️ Die Bein-Zahlen sind vom Sept. 2026.
+
+**Ölschule-Calls:** Patricia: *„volltext transkript bitte nicht in das PDF. ich brauche nur die learnings“* — PDF und Cockpit lassen Wortlaut, Zeitablauf und „Unklar im Transkript“ weg. Danach: *„als Wissensdokument. ich will alles an vermitteltem wissen drin haben“* → je Call `<datum>-wissen.md` (alles Vermittelte, nach Thema, 46'000–70'000 Zeichen, Auftrag `_AUFTRAG-WISSEN.md`); das Skript nimmt es vor der Zusammenfassung. Juni–Oktober (9 Calls inkl. Ask-me-anything 23.06. und 26.10.) fertig am 03.11. Neuer Call: Video mit `calls-holen.ts --chat "oel.schule" --liste/--holen` → Whisper (`large-v3-turbo`) → `<datum>-<id>.txt` im Ordner → Learnings-Datei `<datum>-zusammenfassung.md` im Aufbau von `2026-08-04-zusammenfassung.md` → Skript → Sammlung `academy` ergänzen. 
 
 **Anliegen-Bibliothek:** liest Bücher (`context/doTERRA/wissen/*.md`), E-Books, Enjoils-Hefte,
 Produktwissen, `context/persoenlich/ernaehrungswissen/`, `kochwissen/*.md|pdf`. **Scans** liest die in
@@ -4274,7 +4415,9 @@ Mentoring-Gruppen („💛 RISE TO LEAD: SILVER TO GOLD🌈“, „Rise to lead:
 als kleine Schritte an `daten/aufgaben` an — Titel „Rise to Lead · Termin/Lernen/Kundinnen/Team gewinnen/Überblick: …“,
 Kennung `rtl-…`, nur anhängen mit `if_version`. Stand je Gruppe in `eingetragen.json`. Übersicht vom 23.10.:
 `context/doterra/backoffice/rise-to-lead-2026-10.md`. 🚨 Sprachnachrichten und Videos liest die Routine nicht — sie
-legt nur „anhören“ als Aufgabe an. 🚨 Der allgemeine Telegram-Abgleich (Schritt 4) hatte bis 23.10. nie etwas
+legt nur „anhören“ als Aufgabe an. Von Hand transkribiert (31.10.): `npx tsx src/calls-holen.ts --chat "<muster>" --liste --min 60`
+→ `--holen id,id` (Ids gelten je Gruppe, „exchange“ trifft auch „Professional Oil Exchange“) → faster-whisper `large-v3-turbo`
+→ `video/telegram-calls/transkripte/` (gitignored); Live-Call-Aufzeichnungen über yt-dlp von YouTube. Kernpunkte je Call stehen in der Übersicht. 🚨 Der allgemeine Telegram-Abgleich (Schritt 4) hatte bis 23.10. nie etwas
 abgelegt (`outputs/cockpit/abgleich/telegram/` leer) — ungeklärt.
 `oel-gruppen-holen.ts` nimmt dafür `--muster` und `--ziel`; ohne Angaben holt es wie bisher die Öl-Gruppen.
 
@@ -4835,6 +4978,25 @@ Tag, zählt Nachbar-Freigaben desselben Laufs mit). 🚨 Ein Cockpit-Knopf kann 
 ruft nur claude.ai-Connectoren oder Dienste auf dem eigenen Rechner auf. Einplanen braucht deshalb weiter die offene App.
 ⚠️ `daten/kurse` steht bei 253 von 256 KB — vor dem nächsten Kurs aufteilen.
 
+### Einplanen ohne Laptop — Cloud-Routine (seit 31.10.2026)
+
+Patricia: *„julia hat … gezeigt, dass ihre mitarbeiterin in telegram mit claude chattet … auch wenn der laptop nicht läuft“*.
+Plan `plans/2026-10-30-freigabe-ohne-laptop.md`. **Der Laptop-Task `freigaben-einplanen-2000` ist AUS**, ersetzt durch die
+Routine **„Cockpit: Freigaben einplanen (Cloud)“** (`trig_01JUA3VDVFqeD9Hm62uPbEyg`, alle 2 Std 08–22 Uhr, Cron in UTC
+`0 7-21/2 * * *` — im Sommer eine Stunde später), Auftrag `reference/scheduled-task-einplanen-cloud.md` (`MODUS: probe|scharf`).
+Nur Karussells. Umgebung „Cockpit-Einplanen“: Blotato, ActiveCampaign, Instagram (Graph) und WordPress als **Netzwerk-Secrets**
+(der Proxy setzt den Schlüssel ein), Telegram als Umgebungsvariablen. 🚨 WordPress sperrt die Cloud (403) — darum schickt
+`freigabe-zu-blotato.mjs` Folien seit 31.10. **direkt als data:-URL zu Blotato**, auch lokal. Neu `--proxy`: kein eigener Schlüssel,
+Aufrufe über `curl` (Nodes `fetch` ignoriert `HTTPS_PROXY` → 401), Konten über `/v2/users/me/accounts`.
+🚨 Die Cloud klont GitHub: Änderungen an `scripts/` wirken dort erst nach Push. 🚨 Nie beide Wege gleichzeitig scharf — Doppelpost.
+Sprechreels bleiben beim Laptop (Videos liegen nur lokal).
+**Telegram-Rückkanal (seit 01.11.):** Patricia schreibt dem Cockpit-Bot („Caption vom Donnerstag kürzer“, „verschieben“, „raus“),
+die Routine liest in Schritt 0 über `scripts/cockpit/telegram-rueckkanal.py` (getUpdates, der Bot hat keinen Webhook, nur ihre Chat-ID zählt),
+nimmt einen geplanten Beitrag bei Blotato heraus (`blotato-suchen`/`blotato-loeschen`, nur bei genau einem Treffer), schreibt die
+Caption neu (`status: "aenderung"`), schickt sie zurück und plant erst nach „passt“. Folien kann die Cloud nicht neu zeichnen.
+🚨 Am 31.10. legten zwei Läufe zwei Karussells auf denselben Platz: ein nachgerücktes Datum steht nur in der Freigabe. Seitdem
+liest `freigabe-nachruecken.py` auch `_belegt/freigaben/`. 🚨 Telegram-Variablen lokal: `TELEGRAM_COCKPIT_BOT_TOKEN` in der `.env`.
+
 ### Reiter „Instagram → Zielgruppe & Markt“ (seit 2026-10-12, Version 96)
 
 Die Analysen aus Annas Kurs „Content Shortcut“ (Zielgruppe · Fragen · Wettbewerb · Trends,
@@ -4872,29 +5034,44 @@ Abschnitt; 13. Buch `ki` = KI & Automatisierung). Aufträge für Helfer: `learni
 (Buch), `_AUFTRAG-NACHTRAG.md` (neue Kurse ins Buch), `_AUFTRAG-AUFRAEUMEN.md` (Doppeltes zusammenführen). Cockpit V108:
 Buch zuerst, Kurse zum Nachschlagen, Knöpfe zu kurse.juliatrost.de und app.juliatrost.de. 🚨 Helfer teilen sich das Scratchpad —
 jeder braucht einen eigenen Unterordner (am 28.10. hat einer ein fremdes Skript ausgeführt und Punkte verdoppelt).
-⚠️ Offen: Elevate-Zugang fehlt (Support angefragt) → LIVE Calls (49), Experten Calls (43), ARIA 2.0 nachholen · 11 VML-Videos
+**Elevate (01.11.2026, Zugang wieder da):** LIVE Calls (51 Lektionen, 50 mit Video) und Experten Calls (43 Lektionen, 42 mit Video) → `learnings/live-calls.md` (42 Calls) + `experten-calls.md` (41 Calls, Helfer-Auftrag `_AUFTRAG-ELEVATE.md`, Liste und Vimeo-Nummern in `reference/julia-trost/elevate/videos.tsv`), in alle 13 Themenbücher nachgetragen (`_AUFTRAG-NACHTRAG-ELEVATE.md`) und ins Cockpit geladen. 8 LIVE Calls standen schon in `mentoring-gruppe.md`/`sonstiges.md`, 1 Experten Call in der OBA. ARIA 2.0 = dieselben 32 Videos wie ARIA, nur drei Textlektionen neu (Ende `aria.md`). `holen.py`/`abschreiben.py` nehmen `JT_REFERER=https://app.juliatrost.de/` für Elevate. 🚨 Bei 18 Calls sind die Vimeo-Untertitel nur Bruchstücke (1–6 KB für eine Stunde) — erkennbar an Grösse je Minute unter 600 Byte; diese 18 plus 30.07.2025 (ohne Untertitel) sind am 02./03.11. lokal mit Whisper abgeschrieben (`elevate/whisper-rest.py`, rund 14 Std. auf der CPU, Rechner per `wachhalten.ps1` wach gehalten) und als LIVE Teil 5 / Experten Teil 4 eingearbeitet, auch in den Büchern (rund 900 neue Punkte) und im Cockpit. ⚠️ Offen: Dubletten in den Büchern (die Nachtrags-Helfer haben „schon da“ nur per Stichwort geprüft) · 11 VML-Videos
 nur Wortsalat (die 5 MAU-Videos sind seit 29.10. mit dem Schlüssel `h` aus der Lektion abgeschrieben und eingearbeitet, `abschreiben.py` liest `schluessel`) · Phase 4/5 (Landkarte Business-Schritte → Skills, Skills anbinden).
 
-### Upsell-Ersteller — Produkte → Upsell-Ersteller (seit 2026-10-29, Version 109)
+### Upsell-Ersteller — Produkte → Upsell-Ersteller (seit 2026-10-29, Version 115 seit 31.10.)
 
 Patricia: *„ich brauche im cockpit drin unbedingt auch noch einen upsell, downsell, crosssell ersteller“*.
 Produkt wählen (alle live-Angebote mit Preis aus `daten/katalog`), Preis bei Bedarf überschreiben, freier
-Wunsch („nur Tools, die ich in einem Tag bauen kann“) → Claude über `sample` macht 7–9 Vorschläge: mind.
-2 Bumps · 2 Upsells · 1 Downsell · 2 Cross-Sells, gemischt aus bestehenden Produkten (mit Link aus dem Katalog)
-und neuen Ideen, Schwerpunkt **KI-Tools** (Rechner · Check · Planer · Generator). Je Karte Preis mit
-ausgeschriebener Rechnung · welches Problem es nach dem Kauf löst · ein Satz für die Kasse · „gibt es schon“
-oder „neu bauen“ mit Bauauftrag. Cross-Sell = nach dem Kauf (So geht's weiter, Fusszeile, Mail-Strecke), darf
-teurer sein. 🚨 **Die Preis-Kette rechnet die Seite nach, nicht das Modell** (`zaPruefen`): Bump < Hauptprodukt ·
-Bump < Upsell < Hauptprodukt · Downsell < Upsell — wer sie bricht, steht rot da. Julias Regeln stecken verdichtet
-als `ZA_REGELN` im Code (aus `angebotstreppe.md` Abschnitt 19–21; wo Julia das Upsell teurer als das
-Hauptprodukt erlaubt, gilt Patricias strengere Regel). Ihre eigenen Tools, die nicht in ThriveCart stehen, als
-`ZA_TOOLS` (Nischengenerator, Story-Generator, Stimm-Check, Startklar-Werkstatt) — **neues Tool dort nachtragen**.
-Ergebnisse in der Sammlung **`zusatzangebote/<produkt-id>`** (gehört der Seite) plus `mlb:za-<id>`; „Als Text
-kopieren“. Liest `daten/produkt-details` nur. Code `scripts/cockpit/zusatzangebote-reiter.js/.css`, eingesetzt mit
-`patch-zusatzangebote.py`. Getestet am 29.10. live an Tool-Workshop (39) und Digitale Produktwelt (333).
-🚨 **Der Katalog hatte seit mindestens 16.10. keine Preise** (alles stand als „Freebie“, Tool-Workshop fehlte):
-der tägliche Abgleich ruft `thrivecart-holen.py` ohne `--preise`. Am 29.10. mit `--preise` neu geholt und
-`daten/katalog` neu geschrieben. Seit 29.10. ruft der Task `cockpit-daten-abgleich` `thrivecart-holen.py … --preise` auf (rund drei Minuten länger) und meldet per Telegram, wenn ein live-Kurs ohne Preis bleibt.
+Wunsch → Claude über `sample` macht 7–9 Vorschläge: mind. 2 Bumps · 2 Upsells · 1 Downsell · 2 Cross-Sells,
+aus bestehenden Produkten (Link aus dem Katalog) und neuen Ideen, Schwerpunkt **KI-Tools**. Je Karte Preis mit
+Rechnung · Problem nach dem Kauf · Satz für die Kasse · „gibt es schon“ oder „neu bauen“.
+**Grundlage seit 31.10.:** Julias **voller Abschnitt „Verknüpfen I–III“** aus dem Themenbuch Angebotstreppe (rund
+49'000 Zeichen), zur Laufzeit aus der Sammlung `bibliothek` geladen (`zaJuliaText`, über den Kapiteltitel). 🚨 Der Text
+steht bewusst **nicht** im Code — `mlb-cockpit.html` liegt im öffentlichen Repo. Daneben die Kurzfassung `ZA_REGELN`
+mit Patricias Regeln (gehen bei Widerspruch vor). Die Karte „Stand“ nennt die Grundlage.
+🚨 **Preis-Kette rechnet die Seite nach** (`zaPruefen`): Bump < Hauptprodukt · Upsell > Bump, **darf teurer sein als das
+Hauptprodukt** (Patricia 31.10.: *„darum heisst er ja UPsell“*) · Downsell < **sein** Upsell (Feld `zu`). Rot bei Bruch,
+orange als Hinweis: Bump-Rabatt ausserhalb 30–60 %, Upsell kaum rabattiert.
+**Tool-Bauplan** (Patricia 31.10.: *„wenn es um ein KI Tool geht, dann will ich direkt einen entsprechenden vercel oder
+netlify vorschlag fertig erstellt … mit meinem wissensmaterial“*): Knopf auf jeder KI-Tool-Karte. Sucht über die
+Suchwörter des Vorschlags in **Patricias eigenen Kursen** (Sammlung **`eigenwissen`**, Vorrang, bis 20'000 Zeichen) und in
+bis zu drei Themenbüchern (nur Mechanik, bis 10'000), dann schreibt Claude: Name, Slug, Plattform (Vercel mit KI, Netlify
+nur ohne KI), Ablauf in höchstens fünf Schritten, Ergebnis, **fertiger System-Prompt** (4–9'000 Zeichen), Prüfregeln, Zugang
+und den **Auftrag für Claude Code** nach dem Muster `scripts/story-generator/`. Knöpfe: Auftrag kopieren (inkl. System-Prompt)
+· System-Prompt kopieren · als Datei. Gebaut und ausgeliefert wird im Chat mit Claude Code — ein Artifact kann nicht deployen.
+`zaBauplanFunde` warnt bei fremden Namen, ß und „nicht/nie X, sondern Y“ im Bauplan (erster Bauplan am 31.10. hatte
+„Der Name Julia kommt nirgends vor“ als Prüfregel — das wäre im Code eines verkauften Tools gelandet).
+`eigenwissen` baut `python scripts/cockpit/eigenwissen-bauen.py` (acht eigene Kurse mit Transkripten + `patricia-expertise.md`
++ `patricia-freebies.md`, 1,46 Mio. Zeichen, Stücke unter 180 KB) → `outputs/cockpit/abgleich/eigenwissen/` → `ArtifactData
+batch set` in drei Paketen (Anfrage ≤ 1 MB). Fremde Kurse bleiben draussen. Neuer Kurs mit Transkripten: in `EIGENE` eintragen.
+**Mit Knopfdruck bauen:** kopiert den Vorschlag als `MLB-ZUSATZANGEBOT` + JSON; „Angebot auf Knopfdruck“ hat in Station 1
+**„Aus dem Upsell-Ersteller einfügen“** → neues Projekt mit Thema, Name, Preis, Form, Für wen, Weg (aus dem Bauplan) und
+Unterlagen. Zwei Artifacts teilen keine Daten, deshalb über die Zwischenablage.
+`ZA_TOOLS` = ihre Tools ausserhalb ThriveCart (Nischengenerator, Story-Generator, Stimm-Check, Startklar-Werkstatt) —
+**neues Tool dort nachtragen**. Ergebnisse in **`zusatzangebote/<produkt-id>`** (gehört der Seite) plus `mlb:za-<id>`.
+Code `scripts/cockpit/zusatzangebote-reiter.js/.css`, eingesetzt mit `patch-zusatzangebote.py` — 🚨 das Skript ersetzt beim
+Neulauf **nur den eigenen Block** bis zum nächsten Reiter-Kopf; am 31.10. hätte „bis EINHAENGEN“ Gekaufte Kurse und
+Markt-Radar gelöscht. Getestet live an Tool-Workshop (39), Digitale Produktwelt (333) und Magnet-Ich (333, mit Bauplan).
+🚨 **Der Katalog hatte vom 16. bis 29.10. keine Preise** — seit 29.10. ruft `cockpit-daten-abgleich` `thrivecart-holen.py … --preise`.
 
 ### Gekaufte Kurse — Produkte → Gekaufte Kurse (seit 2026-10-30, Version 111)
 
@@ -4909,7 +5086,7 @@ Neuer Kurs: Zeile ins JSON, Dokument neu schreiben. Der KI-Avatar-Kurs ist „KI
 ### Funnel-Checkliste und der Launch-Reiter (seit 2026-10-08)
 
 **Die Checkliste** liegt als eigenes Artifact:
-https://claude.ai/artifact/YViQzGgPqr3AiufeA35Ev3 — **131 Punkte in 9 Phasen**
+https://claude.ai/artifact/YViQzGgPqr3AiufeA35Ev3 — **138 Punkte in 9 Phasen**
 (Bevor du baust · Die Kasse · ActiveCampaign · Die Seiten · Die Mails · Der
 Zulauf · **Der Launch** · **Das Webinar** · Nach dem Start), je Funnel
 abhakbar, Stand in `db`. Gebaut von `scripts/cockpit/funnel-checkliste-bauen.py`.
@@ -4924,11 +5101,28 @@ Produktwelt · Magnetisch Verkaufen · 100k Blueprint · Produktkommunikation)
 plus acht Vorlagen-PDFs. Eingearbeitet mit
 `scripts/cockpit/patch-funnel-checkliste-julia.py`.
 
-🚨 **Ein Punkt war falsch und ist korrigiert:** Das **Upsell ist nicht teurer
-als das Hauptprodukt.** Die Reihenfolge lautet: Bump günstiger als das
-Hauptprodukt · Upsell teurer als der Bump, **aber immer noch günstiger als das
-Hauptprodukt** · Downsell günstiger als das Upsell. Jedes davon trägt seinen
-eigenen Streichpreis.
+🚨 **Die Preis-Kette (Patricias Entscheid 31.10.2026, *„ich finde schon, dass der upsell
+teurer sein kann. darum heisst er ja UPsell"*):** Bump günstiger als das Hauptprodukt
+(30–60 % rabattiert) · Upsell teurer als der Bump, **darf auch teurer sein als das
+Hauptprodukt**, aber immer rabattiert · Downsell günstiger als sein Upsell. Jedes davon
+trägt seinen eigenen Streichpreis. Vom 08.10. bis 31.10. galt „Upsell immer günstiger als
+das Hauptprodukt“ — das ist aufgehoben (Upsell-Ersteller, Angebot auf Knopfdruck,
+`/angebot`, Funnel-Checkliste sind nachgezogen).
+
+**Jedes neue Angebot läuft durch die Checkliste (seit 31.10.2026, Patricia: *„dass bei den neu
+angelegten produkten und auch bumps etc. immer alles nach der checkliste abgearbeitet wird“*).**
+Drei Sicherungen:
+1. **`/angebot` Abschluss Schritt 4** prüft das gebaute Paket über alle 138 Punkte, trägt das Angebot in
+   `active-funnels.json` ein (sonst fehlt es in der Auswahl) und legt den Befund auf die Seite.
+2. **Täglicher Abgleich, Schritt 4c:** `python scripts/cockpit/neue-angebote-melden.py outputs/cockpit/abgleich`
+   vergleicht `thrivecart.json` mit `thrivecart-gesehen.json`; jedes neue Produkt, Bump, Upsell oder Downsell
+   wird Aufgabe „Funnel-Checkliste · neues …“ (`fuerClaude: true`, Kennung `fc-<art>-<id>`) plus Telegram.
+   `--merken` erst nach dem Schreiben, sonst geht ein Angebot still verloren. Erster Lauf merkt nur den Stand.
+3. **Befund auf der Seite:** Dokument `funnelcheck/<id>` trägt neben `haken` jetzt `befund: {<kennung>: {s, t}}`
+   (`ok · warn · fehlt · na · offen`, Fundstelle) und `befundStand`; die Seite zeigt ihn unter jedem Punkt.
+   🚨 Die Seite schreibt `befund` bei jedem Haken mit, sonst löschte ihr erster Klick die Prüfung. Claude schreibt
+   mit `update`, nie `set`. Die Kennungen (`plan-…`, `kasse-…`) liefert `funnel-checkliste-bauen.py --punkte`;
+   bis 31.10. fehlte dort das Phasen-Kürzel, die Kennungen passten nicht zu den gespeicherten Haken.
 
 🚨 **Secret Offer ist keine Preisstufe.** Es sagt **nicht**, um was es geht:
 „es gibt etwas, tipp auf den Sticker“ — und wer tippt, bekommt den Link per
@@ -4970,9 +5164,13 @@ nicht auf die Erfolgsmeldung des Patch-Skripts vertrauen** — ein Skript sagt,
 was es getan hat, nicht, ob es danach noch dasteht. Hergang in
 `outputs/cockpit/OFFEN-noch-nicht-veroeffentlicht.md`.
 
-🚨 **Das Cockpit steht auf „Anyone with the link"**, obwohl seit dem 24.09.2026
-32 Klarnamen und 3 Mailadressen darin liegen. Ändern kann das nur Patricia
-selbst über das Share-Menü der Seite.
+✅ **Das Cockpit steht privat** (Patricia bestätigt am 02.11.2026).
+Das ist wichtig, weil seit dem 24.09.2026 **32 Klarnamen und 3 Mailadressen**
+darin liegen, dazu Julias volles Kurswissen und ab dem Planungs-Umbau ihr
+Journaling. Bis zum 02.11. stand hier öffentliches Teilen als Befund — das
+war seit dem 27.10. nicht mehr aktuell.
+🚨 **Den Link trotzdem nie weitergeben**, und vor jedem neuen privaten
+Inhalt den Stand im Share-Menü gegenprüfen — sehen kann das nur Patricia.
 
 ### Sichtprüfung des Cockpits — lokal, mit echten Daten
 

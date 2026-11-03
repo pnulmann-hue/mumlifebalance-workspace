@@ -1,0 +1,18 @@
+
+  /* Reiter „Ölschule-Calls" (patch-academy.py) */
+  .ac-suche input { width: 100%; background: var(--ground); border: 1px solid var(--line);
+                    border-radius: 8px; padding: 9px 12px; font-size: 14px; }
+  .ac-suche { margin-bottom: 14px; }
+  .ac-call { margin-bottom: 10px; padding: 0; }
+  .ac-call > summary { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap;
+                       padding: 13px 16px; cursor: pointer; list-style: none; }
+  .ac-call > summary::-webkit-details-marker { display: none; }
+  .ac-call > summary::before { content: "\25b6"; font-size: 9px; color: var(--ink-soft);
+                               transition: transform .15s ease; }
+  .ac-call[open] > summary::before { transform: rotate(90deg); }
+  .ac-datum { font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; min-width: 78px; }
+  .ac-titel { font-family: var(--display); font-size: 16px; flex: 1; min-width: 0; }
+  .ac-treffer { font-size: 12px; background: var(--orange-soft); color: var(--warn);
+                border-radius: 999px; padding: 1px 9px; }
+  .ac-inhalt { padding: 0 18px 16px; border-top: 1px solid var(--line); }
+  .ac-inhalt table { display: block; overflow-x: auto; }

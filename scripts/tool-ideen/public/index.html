@@ -105,6 +105,14 @@ a { color: var(--blue); }
 .links { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
 footer { font-size: 14px; color: var(--muted); }
 @media (prefers-reduced-motion: reduce) { .kreis { animation-duration: 3s; } }
+/* „Als PDF speichern“: nur die Themen aufs Blatt, ohne Knöpfe und Workshop-Kasten */
+@media print {
+  body { background: #fff; }
+  .steps, .knoepfe, .links, .workshop, footer, .lead, .noprint { display: none !important; }
+  .idee { break-inside: avoid; border-color: #ccc; }
+  .mehr summary { list-style: none; font-family: var(--display); font-size: 25px; color: var(--ink); }
+  .mehr > :not(summary) { margin-top: 12px; }
+}
 </style>
 </head>
 <body>
@@ -123,6 +131,9 @@ footer { font-size: 14px; color: var(--muted); }
 const API = "/api/ideen";
 const WORKSHOP_URL = "https://mumlifebalance.ch/tool-workshop/";
 const DM_URL = "https://ig.me/m/mumlifebalance_patricia_ulmann";
+// Erst auf true setzen, wenn die AC-Automation „Nischengenerator Ergebnis“ aktiv ist,
+// sonst verspricht die Seite eine Mail, die nicht kommt.
+const ERGEBNIS_MAIL = true;   // Automation 88 „Nischengenerator Ergebnis“ aktiv seit 02.11.2026
 
 // Die Schritte folgen dem Kurs „Finde dein Thema“: Produkt · die vier Quellen der Expertise · Zielgruppe
 const SCHRITTE = [
@@ -306,9 +317,17 @@ function zeigeThemen(j) {
       ${(j.themen || []).map(themaKarte).join("")}
       ${j.tipp ? `<p class="zart"><b>Tipp:</b> ${esc(j.tipp)}</p>` : ""}
       <p class="zart">Dein Thema ist Klarheit für heute, keine Schublade fürs Leben. Du darfst es später ändern. Noch ${esc(j.rest)} von ${esc(j.max)} Durchgängen.</p>
-      <div class="links"><button type="button" class="btn leise" id="anpassen">Antworten anpassen</button></div>
+      ${ERGEBNIS_MAIL ? `<p class="zart noprint">Deine drei Themen schicke ich dir auch per Mail, schau in ein paar Minuten in dein Postfach.</p>` : ""}
+      <div class="knoepfe noprint">
+        <button type="button" class="klein stark" id="speichern">Als PDF speichern</button>
+        <button type="button" class="btn leise" id="anpassen">Antworten anpassen</button>
+      </div>
       ${workshopKasten()}
     </section>`;
+  document.getElementById("speichern").addEventListener("click", () => {
+    buehne.querySelectorAll("details.mehr").forEach(d => { d.open = true; });
+    window.print();
+  });
   buehne.querySelectorAll("[data-satz]").forEach(b => kopierKnopf(b, () => j.themen[Number(b.dataset.satz)].satz, "Kopiert"));
   buehne.querySelectorAll("[data-tools]").forEach(b => b.addEventListener("click", () => toolsHolen(j.themen[Number(b.dataset.tools)])));
   document.getElementById("anpassen").addEventListener("click", () => { stand.schritt = 0; zeigeSchritt(); oben(); });

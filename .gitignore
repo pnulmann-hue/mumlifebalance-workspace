@@ -472,6 +472,17 @@ outputs/angebot-knopfdruck/
 
 # Tool-Workshop-Mails tragen Zoom-Passwort und Gruppenlink (seit 29.10.2026)
 outputs/produkte/tool-workshop/mails/*.html
+# Neustart 2027: Mails tragen Zoom- und Aufzeichnungs-Link, sobald scripts/jahresplanung/.env gefüllt ist
+outputs/produkte/jahresplanung/mails/*.html
 
 # Sicherung der Hook-/Content-Skills vor dem Umbau 29.10. (enthält zugekauftes Material)
 .claude/skills/hooks/_sicherung-*/
+
+# Markt-Radar (30.10.2026): Berichte zitieren fremde Hooks
+outputs/marktrecherche/radar/
+
+# Kochdatenbank: Rezepte aus Zeitschriften und Kursen
+outputs/kochdatenbank/
+
+# Webinar-Demo vom Desktop (02.11.2026): enthält Auszüge aus dem gitignorierten Hook-Skill
+outputs/produkte/ki-treppe/webinar-demo/

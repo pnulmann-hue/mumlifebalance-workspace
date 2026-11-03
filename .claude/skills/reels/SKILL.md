@@ -1,6 +1,6 @@
 ---
 name: reels
-description: "Reel-Videos planen, bauen und fixen — sekundengenaue Briefings, Hooks nach Framework, Dreh-Anweisungen."
+description: "Format-Technik für Reels — Shotlist, Dreh-Anweisung, Sekunden-Briefing. Inhalt, Hooks und Regeln kommen aus /content. Wird von /content aufgerufen."
 ---
 # /reels — Reel-Video-Assistent für Patricia
 

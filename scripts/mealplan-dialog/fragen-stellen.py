@@ -34,8 +34,10 @@ def kw_von(d):
 
 
 def naechste_woche(heute=None):
-    # Seit 25.10.2026: Die Planwoche laeuft von Dienstag bis zum Montag danach
-    # (Gemuesemann liefert dienstags). Geplant wird am Sonntag davor.
+    # Die Planwoche laeuft von Dienstag bis und mit dem Montag danach: Sie
+    # schliesst an den letzten Plan an, der mit einem Montag endet, und
+    # ueberschreibt ihn nicht (Patricia, 03.11.2026). Gefragt wird seit dem
+    # 03.11. am Donnerstag, geplant am Freitag davor.
     heute = heute or datetime.date.today()
     tage = (1 - heute.weekday()) % 7 or 7
     dienstag = heute + datetime.timedelta(days=tage)

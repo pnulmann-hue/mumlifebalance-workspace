@@ -39,7 +39,7 @@ def ton_holen(cfg, ziel):
     ton = re.search(r'#EXT-X-MEDIA:TYPE=AUDIO[^\n]*URI="([^"]+)"', master)
     if ton:
         url = urljoin(url, ton.group(1))
-    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-headers", "Referer: https://kurse.juliatrost.de/\r\n",
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-headers", "Referer: %s\r\n" % os.environ.get("JT_REFERER", "https://kurse.juliatrost.de/"),
                     "-i", url, "-map", "0:a:0", "-vn", "-ac", "1", "-ar", "16000", ziel], check=True)
 
 

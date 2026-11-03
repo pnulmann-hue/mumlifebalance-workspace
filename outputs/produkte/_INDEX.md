@@ -32,11 +32,11 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 ### 📁 claude-als-networkerin
 
-- [[_INDEX]]
 - [[00-kurs-konzept]]
 - [[01-bruecke-lektion-von-chatgpt-zu-claude]]
 - [[02-begleittext-claude-video]]
 - [[03-business-brain-setup-paket]]
+- [[_INDEX]]
 
 ### 📁 content-box
 
@@ -68,7 +68,6 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 ### 📁 doterra-mama-energie
 
-- [[_INDEX]]
 - [[00-briefing]]
 - [[00-markt-research]]
 - [[01-produkttreppe]]
@@ -90,10 +89,10 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[18-abendessen]]
 - [[19-zwischenmahlzeiten]]
 - [[20-begleitung-artifact]]
+- [[_INDEX]]
 
 ### 📁 instagram-startklar
 
-- [[_INDEX]]
 - [[00-briefing]]
 - [[00-markt-research]]
 - [[00-recherche-dokument]]
@@ -105,6 +104,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[09-salespage]]
 - [[10-kursplattform-texte]]
 - [[11-verkaufsstorys]]
+- [[_INDEX]]
 - [[notion-eintrag]]
 
 ### 📁 jahresplanung
@@ -139,6 +139,7 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[11-kaeufertypen-in-den-storys]]
 - [[12-content-kreislauf-kursmaterial]]
 - [[13-skills-weitergeben]]
+- [[MORGEN-8-OKTOBER]]
 - [[begriffe-cheatsheet]]
 - [[buch-technik-auftrag]]
 - [[business-brief-vorlage]]
@@ -152,31 +153,20 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[setup-faq]]
 - [[sicherheits-checkliste]]
 - [[skill-geruest]]
-- [[MORGEN-8-OKTOBER]]
+- [[1-wer-meine-leute-sind]]
+- [[2-wie-ich-rede]]
+- [[3-was-einen-hook-traegt]]
+- [[4-was-nie-vorkommt]]
+- [[5-was-ich-anbiete]]
+- [[ALLES-IN-EINEM]]
 
 ### 📁 mama-ceo
 
-- [[01-inhaltsverzeichnis]]
-- [[01-modul-outline]]
-- [[01-modul-outline-FINAL]]
-- [[01-modul-outline-FINAL-v3]]
-- [[01-modul-outline-v2]]
-- [[01-modul-uebersicht-KOMPAKT]]
-- [[_aufnahme-drehbuch-modul-4]]
-- [[_aufnahme-drehbuch-modul-5]]
-- [[README]]
-- [[_KRITISCHER-AUDIT]]
-- [[_NEXT-SESSION-HANDOFF]]
-- [[_NOTION-MAI-EINTRAEGE]]
-- [[_patricia-business-brief]]
-- [[_patricia-durchlauf-haushaltsbot]]
-- [[_RE-EVAL-EMPFEHLUNG]]
-- [[_re-eval-rohdaten]]
-- [[00-briefing]]
 - [[00-briefing-FINAL]]
 - [[00-briefing-v2]]
-- [[00-markt-research]]
+- [[00-briefing]]
 - [[00-markt-research-v2]]
+- [[00-markt-research]]
 - [[01-inhaltsverzeichnis-v4-FINAL-5-saeulen]]
 - [[02-markt-update-und-erweiterungs-ideen]]
 - [[02-validierung]]
@@ -186,10 +176,10 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[06-webinar-pitch-slides]]
 - [[07-launch-kalender]]
 - [[07-manus-image-prompts]]
-- [[_NAECHSTE-SCHRITTE]]
 - [[00-mastermind-konzept]]
 - [[01-mastermind-landingpage]]
 - [[POST-MAI-COMPOSIO-TODO]]
+- [[_NAECHSTE-SCHRITTE]]
 - [[08-thrivecart-block-mapping]]
 - [[10-saeule-1-MASTER]]
 - [[10-saeule-2-MASTER]]
@@ -203,6 +193,22 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[13-thrivecart-saeule-5-setup]]
 - [[13-thrivecart-so-gehts-weiter-setup]]
 - [[14-thrivecart-upload-GESAMT-checkliste]]
+- [[_KRITISCHER-AUDIT]]
+- [[_NEXT-SESSION-HANDOFF]]
+- [[_NOTION-MAI-EINTRAEGE]]
+- [[_RE-EVAL-EMPFEHLUNG]]
+- [[01-inhaltsverzeichnis]]
+- [[01-modul-outline-FINAL-v3]]
+- [[01-modul-outline-FINAL]]
+- [[01-modul-outline-v2]]
+- [[01-modul-outline]]
+- [[01-modul-uebersicht-KOMPAKT]]
+- [[_aufnahme-drehbuch-modul-4]]
+- [[_aufnahme-drehbuch-modul-5]]
+- [[README]]
+- [[_patricia-business-brief]]
+- [[_patricia-durchlauf-haushaltsbot]]
+- [[_re-eval-rohdaten]]
 - [[bonus-haushalts-helfer-bot-PATRICIA]]
 - [[bonus-1-cockpit-bot]]
 - [[bonus-2-haushalts-helfer-bot]]
@@ -216,12 +222,12 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 ### 📁 mba
 
-- [[_INDEX]]
 - [[08-webinar-plan]]
 - [[10-academy-architektur]]
 - [[11-willkommens-modul-und-callplan]]
 - [[12-call-01-mindset-drehbuch]]
 - [[13-telegram-erfolgs-indikatoren]]
+- [[_INDEX]]
 
 ### 📁 mba-launch
 
@@ -255,9 +261,9 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 
 ### 📁 pia
 
-- [[_INDEX]]
 - [[00-pia-architektur]]
 - [[01-rollen-hierarchie-idee]]
+- [[_INDEX]]
 
 ### 📁 produkt-ideen-finder
 
@@ -277,8 +283,8 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 ### 📁 tool-workshop
 
 - [[00-bauplan]]
-- [[00-befund]]
 - [[00-befund-nischengenerator]]
+- [[00-befund]]
 - [[00-paket]]
 - [[01-aufbau]]
 - [[02-salespage]]
@@ -301,12 +307,12 @@ Auto-Index aller Files in `outputs/produkte/`. Siehe [[_MOCs/MOC-Produkte-Funnel
 - [[05-business-brain-setup-paket-produktwelt]]
 - [[2026-11-angebot-nach-der-lead-challenge]]
 - [[AB-LEKTION-4.4-BIS-SCHLUSS]]
+- [[MODUL-3-ROHDATEI-FUER-CANVA-CHAT]]
+- [[MODUL-4-ROHDATEI-FUER-CANVA-CHAT]]
+- [[MODUL-5-ROHDATEI-FUER-CANVA-CHAT]]
+- [[MODUL-6-ROHDATEI-FUER-CANVA-CHAT]]
 - [[00-befund]]
 - [[00-canva-uebertragungs-anleitung]]
 - [[lektion-3-3-minikurse-und-grosse-kurse]]
 - [[lektion-3-4-diese-programme-nutze-ich]]
 - [[lektion-3-5-deine-0-euro-produkte-und-manychat]]
-- [[MODUL-3-ROHDATEI-FUER-CANVA-CHAT]]
-- [[MODUL-4-ROHDATEI-FUER-CANVA-CHAT]]
-- [[MODUL-5-ROHDATEI-FUER-CANVA-CHAT]]
-- [[MODUL-6-ROHDATEI-FUER-CANVA-CHAT]]

@@ -1,6 +1,6 @@
 ---
 name: funnel
-description: "Funnel-Stratege für Mum Life Balance — plant, baut und orchestriert komplette Funnel (Leadmagnet → Landing → Ads → AC → Mails → Pitches → Launch). Verbindet WP + AC + ManyChat + Canva + Notion + Content-Assistenten."
+description: "Baustein Funnel-Technik — ActiveCampaign, Tags, Listen, Automationen, ManyChat, Formulare. Das ganze Angebotspaket macht /angebot, die Texte /copywriting."
 ---
 # /funnel — Der Funnel-Stratege
 

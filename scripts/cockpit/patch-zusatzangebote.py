@@ -40,6 +40,9 @@ A_DISP = '''    else if (activeTab === "katalog") renderKatalog(main);'''
 N_DISP = A_DISP + '''
     else if (activeTab === "zusatzangebote") renderZusatzangebote(main);'''
 
+JS_ANFANG = '''  /* ======================================================================
+     Reiter "Zusatzangebote"'''
+CSS_ANFANG = "  /* ---------- Upsell-Ersteller"
 EINHAENGEN = '''  /* Reiter „Ideen von anderen": was bei den beobachteten Profilen deutlich'''
 
 
@@ -70,9 +73,37 @@ def main():
     pruefe_js(js, JS_DATEI.name)
 
     t = ziel.read_text(encoding="utf-8")
-    if "function renderZusatzangebote(" in t:
-        sys.exit("Steht schon drin — nichts zu tun.")
     vorher = len(t)
+    if "function renderZusatzangebote(" in t:
+        # Schon eingebaut: JS-Block und CSS-Block ersetzen (wiederholbar).
+        # Der Block endet beim nächsten Reiter-Kopf „/* =====“, sonst vor
+        # EINHAENGEN. Andere Reiter (Gekaufte Kurse, Markt-Radar) stehen
+        # dazwischen — bis EINHAENGEN zu ersetzen hätte sie am 31.10. gelöscht.
+        a = t.find(JS_ANFANG)
+        e = t.find(EINHAENGEN)
+        naechster = t.find("\n  /* ======", a + len(JS_ANFANG))
+        if 0 <= naechster < e:
+            e = naechster + 1
+        if a < 0 or e < a or t.count(JS_ANFANG) != 1:
+            sys.exit("🚨 Den alten Reiter-Block nicht eindeutig gefunden. Nichts geändert.")
+        t = t[:a] + js.rstrip() + "\n\n" + t[e:]
+        # Der Block endet beim nächsten Abschnittskopf „/* ----------“ oder bei
+        # </style>. Nicht einfach bis </style>: andere Reiter hängen ihr CSS
+        # dahinter an (am 31.10. wäre sonst das CSS von „Gekaufte Kurse“ und
+        # „Markt-Radar“ mitgelöscht worden).
+        c = t.find(CSS_ANFANG)
+        ende_style = t.find("</style>", c)
+        naechster = t.find("\n  /* ----------", c + len(CSS_ANFANG))
+        s = naechster + 1 if 0 <= naechster < ende_style else ende_style
+        if c < 0 or s < c or t.count(CSS_ANFANG) != 1:
+            sys.exit("🚨 Den alten CSS-Block nicht eindeutig gefunden. Nichts geändert.")
+        t = t[:c] + css + t[s:]
+        pruefe_js(t[t.rfind("<script>") + 8:t.rfind("</script>")], "ganze Seite")
+        neu = ziel.with_suffix(".tmp")
+        neu.write_text(t, encoding="utf-8")
+        os.replace(neu, ziel)
+        print("%s: Reiter erneuert, %d -> %d Zeichen, node --check grün" % (ziel.name, vorher, len(t)))
+        return
 
     t = ersetze(t, A_TABS, N_TABS, "TABS")
     t = ersetze(t, A_BER, N_BER, "BEREICHE")

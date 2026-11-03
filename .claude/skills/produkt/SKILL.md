@@ -1,6 +1,6 @@
 ---
 name: produkt
-description: "All-in-One Produkterstellung, Funnel und Launch — Produkttreppe, Validierung, Module, Preis-Staffel, Launch-Kalender."
+description: "Baustein Produktaufbau — Produkttreppe, Module, Validierung, Preis-Staffel, KI-Assistent zum Kurs. Das ganze Angebotspaket auf einen Knopf macht /angebot."
 ---
 # /produkt — All-in-One Produkterstellung, Funnel & Launch
 

@@ -1,6 +1,6 @@
 ---
 name: karussell
-description: "Instagram-Karussells planen, bauen und fixen — Folien-Plan, Hooks nach Framework, Feed-Aesthetic-Check."
+description: "Format-Technik für Karussells — Folienzahl, Baupläne, Bildbau, Feed-Rhythmus. Inhalt, Hooks und Regeln kommen aus /content. Wird von /content aufgerufen."
 ---
 # /karussell — Karussell-Assistent für Patricia
 

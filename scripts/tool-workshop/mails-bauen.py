@@ -45,6 +45,9 @@ ZOOM_1 = _ENV.get("ZOOM_1", "")
 ZOOM_2 = _ENV.get("ZOOM_2", "")
 GRUPPE = _ENV.get("GRUPPE", "")
 UHR = UHRZEIT or "✏️ UHRZEIT"
+# Feldinhalt mit Zeilenumbrüchen aus dem Tool: pre-line zeigt sie in der Mail als Absätze
+THEMA = ('<div style="white-space:pre-line;font-family:Arial,sans-serif;font-size:16px;color:#0c1c30;'
+         'line-height:1.65;">%s</div>')
 
 
 def platz(wert, was):
@@ -181,6 +184,57 @@ MAILS = [
                 "mit, falls du eins hast." % UHR),
          knopf("Zum Tool-Workshop, 39 Franken oder 39 Euro", KASSE),
          ps("P.S. Antworte mir gern mit deinem Experten-Satz. Ich lese jede Antwort."),
+         gruss("Herzlich,"),
+     ]},
+    # Ergebnis-Mail: eigene Automation, Auslöser „Feld Nischengenerator Thema 1 (21) ändert sich“.
+    # Das Tool schreibt die drei Themen nach jedem Durchgang in die Felder 21–23 (scripts/tool-ideen/api/ideen.js).
+    # C0 kann das nicht: sie geht schon beim Eintragen raus, bevor es ein Thema gibt.
+    {"datei": "R0-deine-themen.html", "liste": 2, "name": "Nischengenerator R0 · Deine drei Themen (Feld Thema 1 ändert sich)",
+     "marke": "mumlifebalance · Nischengenerator",
+     "betreff": "Deine drei Themen zum Nachlesen",
+     "betreff2": "Dein Experten-Satz, schwarz auf weiss",
+     "wann": "Eigene Automation: startet, wenn sich „Nischengenerator Thema 1“ ändert, mehrfach erlaubt",
+     "preheader": "Damit sie nicht mit dem Browserfenster verschwinden.",
+     "h1": "Deine drei Themen", "unterzeile": "Aus dem Nischengenerator",
+     "notiz": "Kein Vorname im Gruss: das Tool fragt nicht danach. Platzhalter %NISCHE_THEMA_1% bis _3%.",
+     "bloecke": [
+         absatz("Hallo,"),
+         absatz("hier sind deine drei Themen aus dem Nischengenerator, damit du sie nicht suchen musst, "
+                "wenn das Fenster zu ist."),
+         kasten(THEMA % "%NISCHE_THEMA_1%", sk.CREME, ORANGE, "Passt am besten", ORANGE),
+         kasten(THEMA % "%NISCHE_THEMA_2%", sk.CREME, None, "Thema 2"),
+         kasten(THEMA % "%NISCHE_THEMA_3%", sk.CREME, None, "Thema 3"),
+         absatz("Nimm das Thema, bei dem du beim Lesen gedacht hast: Darüber könnte ich stundenlang reden. "
+                "Schreib den Experten-Satz in deine Bio und sag ihn in deiner nächsten Story, dann wissen "
+                "deine Leute, wobei du ihnen hilfst."),
+         knopf("Tool-Ideen zu deinem Thema holen", NISCHE),
+         ps("P.S. Antworte mir gern mit dem Thema, für das du dich entscheidest. Ich lese jede Antwort."),
+         gruss("Herzlich,"),
+     ]},
+    # Einmalig an alle, die den Generator vor dem 2.11.2026 benutzt haben: von ihnen ist nur ein Satz
+    # gespeichert (Feld 20). 🚨 Nur an das Segment „Tag 0€ Nischengenerator“ schicken, nie an ganz Liste 2,
+    # und erst, wenn die Automation mit R0 aktiv ist.
+    {"datei": "R1-nachtrag.html", "liste": 2, "name": "Nischengenerator R1 · Nachtrag deine Themen (einmalig, nur Tag 108)",
+     "marke": "mumlifebalance · Nischengenerator",
+     "betreff": "Dein Experten-Satz, und wie du alle drei Themen bekommst",
+     "betreff2": "Du hast nach deinem Thema gefragt",
+     "wann": "Einmalig, von Hand: Segment Tag 0€ Nischengenerator (108), nach dem Aktivieren der R0-Automation",
+     "preheader": "Ein Satz ist gespeichert, die ganzen Themen holst du dir mit einem Klick.",
+     "h1": "Dein Experten-Satz", "unterzeile": "Aus dem Nischengenerator",
+     "notiz": "%TOOLIDEEN_NISCHE% = Feld 20, der Satz des ersten Themas bzw. des Themas mit Tool-Ideen.",
+     "bloecke": [
+         absatz("Hallo,"),
+         absatz("du hast den Nischengenerator ausprobiert, danke dir! Eine Teilnehmerin hat mich gefragt, ob "
+                "sie ihr Ergebnis auch per Mail bekommt. Bis jetzt ging das nicht, und deine Themen standen "
+                "nur auf dem Bildschirm. Gespeichert habe ich von dir diesen Satz:"),
+         kasten(THEMA % "%TOOLIDEEN_NISCHE%", sk.CREME, ORANGE, "Dein Experten-Satz", ORANGE),
+         absatz("Ab jetzt schicke ich dir nach jedem Durchgang alle drei Themen per Mail, mit dem Warum, "
+                "deinem Produkt als Zimmer im Haus und den Beitragsideen. Wenn du sie nachlesen willst, öffne "
+                "den Generator auf demselben Handy oder Computer wie beim letzten Mal. Deine Antworten sind "
+                "dort noch gespeichert, du klickst nur bis zum Ende durch."),
+         knopf("Zum Nischengenerator", NISCHE),
+         ps("P.S. Ein Tipp von genau dieser Teilnehmerin: Sprich deine Antworten per Sprachnachricht ein "
+            "statt sie zu tippen. Dann wirst du ausführlicher, und die Themen werden genauer."),
          gruss("Herzlich,"),
      ]},
     {"datei": "B1-morgen.html", "liste": 16, "name": "Tool-Workshop B1 · Morgen geht's los (Mo 9.11., 18:00)",
@@ -488,7 +542,11 @@ def main():
     ZIEL.mkdir(parents=True, exist_ok=True)
     stand_datei = ZIEL / "ac-entwuerfe.json"
     stand = json.loads(stand_datei.read_text(encoding="utf-8")) if stand_datei.exists() else {}
+    # --nur R0-deine-themen.html[,…]: nur diese Mails bauen und hochladen, die anderen Entwürfe bleiben unberührt
+    nur = next((a.split("=", 1)[1].split(",") for a in sys.argv if a.startswith("--nur=")), None)
     for m in MAILS:
+        if nur and m["datei"] not in nur:
+            continue
         seite = sk.bauen(m).replace("NACHKAUF-STRECKE STARTKLAR", "TOOL-WORKSHOP").replace(
             "scripts/startklar/mails-bauen.py", "scripts/tool-workshop/mails-bauen.py")
         (ZIEL / m["datei"]).write_text(seite, encoding="utf-8")

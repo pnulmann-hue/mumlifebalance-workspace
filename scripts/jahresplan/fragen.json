@@ -1,450 +1,889 @@
 {
-  "_hinweis": "Die eine Quelle für die Jahresplanung. tool-bauen.py macht daraus die Seite (outputs/produkte/jahresplanung/jahresplaner.html) und den Fragenteil in .claude/skills/jahresplan/SKILL.md. Nie an einer der beiden Stellen von Hand ändern. Beispiel ist immer Sandra (Energie für Mamas ab 35), dieselbe erfundene Person wie in der Startklar-Werkstatt. Die Kundschaft der Leserin heisst nie Kundin.",
-  "schritte": [
+ "_hinweis": "Die eine Quelle für alle Planungs-Zeitraeume. tool-bauen.py macht aus zeitraeume.jahr die Seite (outputs/produkte/jahresplanung/jahresplaner.html) und den Fragenteil im Planungs-Skill; die Cockpit-Bögen lesen denselben Baum. Nie an einer der Ausgaben von Hand ändern. Beispiel ist in jahr und quartal immer Sandra (Energie für Mamas ab 35), dieselbe erfundene Person wie in der Startklar-Werkstatt - diese zwei sind teilbar. monat und woche tragen nur_intern: true und arbeiten mit Patricias echten Säulen und Angeboten; sie gehen nie in eine teilbare Seite. Die Kundschaft der Leserin heisst nie Kundin. Feld quelle sagt, woher eine Antwort vorbelegt wird - ohne quelle wird gefragt. Das Pop-up im Cockpit fragt nur, was kein quelle-Feld hat.",
+ "zeitraeume": {
+  "jahr": {
+   "titel": "Jahr",
+   "kurz": "Das grobe Gerüst",
+   "wann": "im Dezember, zusammen mit dem ersten Quartal",
+   "einleitung": "Das Jahr bleibt grob: wann Ferien sind, welche Grundsatzthemen laufen, in welchen Monaten ein Angebot im Mittelpunkt steht und was am Ende zusammenkommen soll. Fein wird es erst im Quartal und im Monat.",
+   "schritte": [
     {
-      "id": "rueckblick",
-      "titel": "Rückblick",
-      "kurz": "Wo stehst du?",
-      "einleitung": "Bevor du nach vorne planst, schau ehrlich zurück. Was gut lief, darf bleiben. Was schwer war, darf sich ändern.",
-      "fragen": [
-        {
-          "id": "r_gut",
-          "typ": "text",
-          "frage": "Was ist dieses Jahr richtig gut gelaufen?",
-          "hilfe": "Denk an Beiträge, Gespräche, Verkäufe und an Momente, in denen es sich leicht angefühlt hat.",
-          "beispiel": "Meine Storys mit Frühstücks-Tipps haben die meisten Antworten bekommen. Zwei Frauen bestellen seit dem Sommer jeden Monat bei mir."
-        },
-        {
-          "id": "r_schwer",
-          "typ": "text",
-          "frage": "Was hat sich schwer angefühlt oder nicht funktioniert?",
-          "hilfe": "Ehrlich, nur für dich. Das ist der wichtigste Teil.",
-          "beispiel": "Ich habe drei Wochen über meinen Kurs gesprochen und niemand hat gekauft. Danach hatte ich keine Lust mehr zu posten."
-        },
-        {
-          "id": "r_posten",
-          "typ": "wahl",
-          "frage": "Wie hat sich Posten für dich angefühlt?",
-          "optionen": [
-            "Leicht, ich hatte immer etwas zu sagen",
-            "Geht so, an manchen Tagen ein Krampf",
-            "Meistens eine Pflicht"
-          ],
-          "beispiel": "Geht so, an manchen Tagen ein Krampf"
-        },
-        {
-          "id": "r_community",
-          "typ": "wahl",
-          "frage": "Wie lebendig ist deine Community?",
-          "optionen": [
-            "Ich bekomme jeden Tag Nachrichten",
-            "Ab und zu schreibt jemand",
-            "Es ist ziemlich still"
-          ],
-          "beispiel": "Ab und zu schreibt jemand"
-        },
-        {
-          "id": "r_angebote",
-          "typ": "text",
-          "frage": "Welches Angebot fühlt sich nicht mehr stimmig an, und was würdest du daran ändern?",
-          "hilfe": "Du musst nichts streichen. Oft reicht es, etwas umzubauen.",
-          "beispiel": "Meine Einzelberatung fühlt sich zu lang an. Ich würde sie auf ein Gespräch plus zwei Wochen Begleitung kürzen."
-        },
-        {
-          "id": "r_phase",
-          "typ": "wahl",
-          "frage": "Wo steht dein Business gerade?",
-          "optionen": [
-            "Im Aufbau: Angebote und Abläufe entstehen noch",
-            "Im Verbessern: es steht, jetzt wird es leichter und besser",
-            "Ein bisschen von beidem"
-          ],
-          "beispiel": "Im Aufbau: Angebote und Abläufe entstehen noch"
-        },
-        {
-          "id": "r_stunden",
-          "typ": "zahl",
-          "frage": "Wie viele Stunden pro Woche hast du wirklich fürs Business?",
-          "hilfe": "Nicht die Wunschzahl. Die Zahl, die mit Kindern, Job und Haushalt übrig bleibt.",
-          "einheit": "Stunden",
-          "beispiel": "10"
-        }
-      ]
+     "id": "rueckblick",
+     "titel": "Rückblick",
+     "kurz": "Wo stehst du?",
+     "einleitung": "Bevor du nach vorne planst, schau ehrlich zurück. Was gut lief, darf bleiben. Was schwer war, darf sich ändern.",
+     "fragen": [
+      {
+       "id": "r_gut",
+       "typ": "text",
+       "frage": "Was ist dieses Jahr richtig gut gelaufen?",
+       "hilfe": "Denk an Beiträge, Gespräche, Verkäufe und an Momente, in denen es sich leicht angefühlt hat.",
+       "beispiel": "Meine Storys mit Frühstücks-Tipps haben die meisten Antworten bekommen. Zwei Frauen bestellen seit dem Sommer jeden Monat bei mir."
+      },
+      {
+       "id": "r_schwer",
+       "typ": "text",
+       "frage": "Was hat sich schwer angefühlt oder nicht funktioniert?",
+       "hilfe": "Ehrlich, nur für dich. Das ist der wichtigste Teil.",
+       "beispiel": "Ich habe drei Wochen über meinen Kurs gesprochen und niemand hat gekauft. Danach hatte ich keine Lust mehr zu posten."
+      },
+      {
+       "id": "r_posten",
+       "typ": "wahl",
+       "frage": "Wie hat sich Posten für dich angefühlt?",
+       "optionen": [
+        "Leicht, ich hatte immer etwas zu sagen",
+        "Geht so, an manchen Tagen ein Krampf",
+        "Meistens eine Pflicht"
+       ],
+       "beispiel": "Geht so, an manchen Tagen ein Krampf"
+      },
+      {
+       "id": "r_community",
+       "typ": "wahl",
+       "frage": "Wie lebendig ist deine Community?",
+       "optionen": [
+        "Ich bekomme jeden Tag Nachrichten",
+        "Ab und zu schreibt jemand",
+        "Es ist ziemlich still"
+       ],
+       "beispiel": "Ab und zu schreibt jemand"
+      },
+      {
+       "id": "r_angebote",
+       "typ": "text",
+       "frage": "Welches Angebot fühlt sich nicht mehr stimmig an, und was würdest du daran ändern?",
+       "hilfe": "Du musst nichts streichen. Oft reicht es, etwas umzubauen.",
+       "beispiel": "Meine Einzelberatung fühlt sich zu lang an. Ich würde sie auf ein Gespräch plus zwei Wochen Begleitung kürzen."
+      },
+      {
+       "id": "r_phase",
+       "typ": "wahl",
+       "frage": "Wo steht dein Business gerade?",
+       "optionen": [
+        "Im Aufbau: Angebote und Abläufe entstehen noch",
+        "Im Verbessern: es steht, jetzt wird es leichter und besser",
+        "Ein bisschen von beidem"
+       ],
+       "beispiel": "Im Aufbau: Angebote und Abläufe entstehen noch"
+      },
+      {
+       "id": "r_stunden",
+       "typ": "zahl",
+       "frage": "Wie viele Stunden pro Woche hast du wirklich fürs Business?",
+       "hilfe": "Nicht die Wunschzahl. Die Zahl, die mit Kindern, Job und Haushalt übrig bleibt.",
+       "einheit": "Stunden",
+       "beispiel": "10"
+      }
+     ]
     },
     {
-      "id": "vision",
-      "titel": "Vision",
-      "kurz": "Wofür willst du bekannt sein?",
-      "einleitung": "Jetzt darfst du gross denken. Logisch muss hier noch nichts sein.",
-      "fragen": [
-        {
-          "id": "v_frage",
-          "typ": "text",
-          "frage": "Welche Frage soll jemand stellen, damit die Antwort dein Name ist?",
-          "hilfe": "Zwei Menschen unterhalten sich. Die eine fragt: Kennst du jemanden, der mir bei … helfen kann? Die andere sagt deinen Namen. Wie lautet die Frage?",
-          "beispiel": "Kennst du jemanden, der mir hilft, nach Jahren im Funktionsmodus wieder Energie zu haben?"
-        },
-        {
-          "id": "v_wunsch",
-          "typ": "text",
-          "frage": "Was willst du nächstes Jahr unbedingt machen?",
-          "hilfe": "Ein neuer Kanal, ein Event, ein eigenes Produkt, eine Reise. Schreib alles auf.",
-          "beispiel": "Einen Workshop vor Ort mit 10 Frauen. Mein erstes eigenes kleines Produkt. Im Juli zwei Wochen ganz offline."
-        },
-        {
-          "id": "v_wort",
-          "typ": "kurz",
-          "frage": "Dein Wort fürs neue Jahr",
-          "hilfe": "Ein Wort, das du dir an den Kühlschrank hängen würdest.",
-          "beispiel": "Leichtigkeit"
-        },
-        {
-          "id": "v_ziel",
-          "typ": "zahl",
-          "frage": "Wie viel Umsatz wünschst du dir im ganzen Jahr?",
-          "hilfe": "Freiwillig. Die Zahl hilft später beim Umsatz-Check.",
-          "einheit": "CHF",
-          "beispiel": "12000"
-        },
-        {
-          "id": "v_quote",
-          "typ": "zahl",
-          "frage": "Von 100 Interessierten kaufen bei dir ungefähr wie viele?",
-          "hilfe": "Freiwillig und geschätzt reicht. Damit rechnet der Plan aus, wie viele Leute du für deine Verkäufe erreichen musst. Weisst du es nicht, lass es leer.",
-          "einheit": "von 100",
-          "beispiel": "3"
-        }
-      ]
+     "id": "vision",
+     "titel": "Vision",
+     "kurz": "Wofür willst du bekannt sein?",
+     "einleitung": "Jetzt darfst du gross denken. Logisch muss hier noch nichts sein.",
+     "fragen": [
+      {
+       "id": "v_frage",
+       "typ": "text",
+       "frage": "Welche Frage soll jemand stellen, damit die Antwort dein Name ist?",
+       "hilfe": "Zwei Menschen unterhalten sich. Die eine fragt: Kennst du jemanden, der mir bei … helfen kann? Die andere sagt deinen Namen. Wie lautet die Frage?",
+       "beispiel": "Kennst du jemanden, der mir hilft, nach Jahren im Funktionsmodus wieder Energie zu haben?"
+      },
+      {
+       "id": "v_wunsch",
+       "typ": "text",
+       "frage": "Was willst du nächstes Jahr unbedingt machen?",
+       "hilfe": "Ein neuer Kanal, ein Event, ein eigenes Produkt, eine Reise. Schreib alles auf.",
+       "beispiel": "Einen Workshop vor Ort mit 10 Frauen. Mein erstes eigenes kleines Produkt. Im Juli zwei Wochen ganz offline."
+      },
+      {
+       "id": "v_wort",
+       "typ": "kurz",
+       "frage": "Dein Wort fürs neue Jahr",
+       "hilfe": "Ein Wort, das du dir an den Kühlschrank hängen würdest.",
+       "beispiel": "Leichtigkeit"
+      },
+      {
+       "id": "v_ziel",
+       "typ": "zahl",
+       "frage": "Wie viel Umsatz wünschst du dir im ganzen Jahr?",
+       "hilfe": "Freiwillig. Die Zahl hilft später beim Umsatz-Check.",
+       "einheit": "CHF",
+       "beispiel": "12000"
+      },
+      {
+       "id": "v_quote",
+       "typ": "zahl",
+       "frage": "Von 100 Interessierten kaufen bei dir ungefähr wie viele?",
+       "hilfe": "Freiwillig und geschätzt reicht. Damit rechnet der Plan aus, wie viele Leute du für deine Verkäufe erreichen musst. Weisst du es nicht, lass es leer.",
+       "einheit": "von 100",
+       "beispiel": "3"
+      }
+     ]
     },
     {
-      "id": "leben",
-      "titel": "Leben zuerst",
-      "kurz": "Was steht schon fest?",
-      "einleitung": "Dein Business passt sich deinem Leben an, nicht umgekehrt. Trag zuerst ein, was nicht verhandelbar ist.",
-      "fragen": [
-        {
-          "id": "l_ferien",
-          "typ": "text",
-          "frage": "Ferien und Wochen, in denen wenig geht",
-          "hilfe": "Schulferien, Urlaub, Feiertage, Zeiten mit Besuch.",
-          "beispiel": "Sportferien im Februar, Frühlingsferien im April, 5 Wochen Sommerferien ab Anfang Juli, Herbstferien im Oktober, Weihnachten bis Neujahr frei."
-        },
-        {
-          "id": "l_fix",
-          "typ": "text",
-          "frage": "Feste Familien- und Herzenstermine",
-          "hilfe": "Geburtstage, Feste, Ausflüge, der Hochzeitstag.",
-          "beispiel": "Geburtstage der Kinder im März und September, Hochzeitstag im Mai, Familienfest im August."
-        },
-        {
-          "id": "l_zeit",
-          "typ": "text",
-          "frage": "Wann ist deine Zeit für dich?",
-          "hilfe": "Eine feste Zeit pro Woche, die dir gehört. Auch eine Stunde zählt.",
-          "beispiel": "Freitagvormittag, wenn alle Kinder in der Schule sind."
-        }
-      ]
+     "id": "leben",
+     "titel": "Leben zuerst",
+     "kurz": "Was steht schon fest?",
+     "einleitung": "Dein Business passt sich deinem Leben an, nicht umgekehrt. Trag zuerst ein, was nicht verhandelbar ist.",
+     "fragen": [
+      {
+       "id": "l_ferien",
+       "typ": "text",
+       "frage": "Ferien und Wochen, in denen wenig geht",
+       "hilfe": "Schulferien, Urlaub, Feiertage, Zeiten mit Besuch.",
+       "beispiel": "Sportferien im Februar, Frühlingsferien im April, 5 Wochen Sommerferien ab Anfang Juli, Herbstferien im Oktober, Weihnachten bis Neujahr frei."
+      },
+      {
+       "id": "l_fix",
+       "typ": "text",
+       "frage": "Feste Familien- und Herzenstermine",
+       "hilfe": "Geburtstage, Feste, Ausflüge, der Hochzeitstag.",
+       "beispiel": "Geburtstage der Kinder im März und September, Hochzeitstag im Mai, Familienfest im August."
+      },
+      {
+       "id": "l_zeit",
+       "typ": "text",
+       "frage": "Wann ist deine Zeit für dich?",
+       "hilfe": "Eine feste Zeit pro Woche, die dir gehört. Auch eine Stunde zählt.",
+       "beispiel": "Freitagvormittag, wenn alle Kinder in der Schule sind."
+      }
+     ]
     },
     {
-      "id": "angebote",
-      "titel": "Angebote",
-      "kurz": "Was bietest du an?",
-      "einleitung": "Schreib alle deine Angebote auf, vom kostenlosen bis zum grössten. Noch nichts Eigenes? Dann trag ein, was dein Network schon hat: eine Testwoche mit Proben als kostenlosen Einstieg, ein Starterset als kleines Angebot, die Einschreibung mit Treueprogramm als grosses. Das Angebot ist das Werkzeug. Die Veränderung bei den Leuten, für die du da bist, ist das Ziel.",
-      "liste": {
-        "felder": [
-          {
-            "id": "name",
-            "frage": "Name",
-            "typ": "kurz"
-          },
-          {
-            "id": "stufe",
-            "frage": "Art",
-            "typ": "wahl",
-            "optionen": [
-              "kostenlos",
-              "klein",
-              "mittel",
-              "gross"
-            ]
-          },
-          {
-            "id": "herkunft",
-            "frage": "Herkunft",
-            "typ": "wahl",
-            "optionen": [
-              "eigenes Angebot",
-              "Network"
-            ]
-          },
-          {
-            "id": "preis",
-            "frage": "Preis",
-            "typ": "zahl",
-            "einheit": "CHF"
-          },
-          {
-            "id": "heute",
-            "frage": "Wo steht die Person heute?",
-            "typ": "text"
-          },
-          {
-            "id": "danach",
-            "frage": "Wie sieht ihr Alltag danach aus?",
-            "typ": "text"
-          },
-          {
-            "id": "satz",
-            "frage": "Ein Satz, der das Angebot erklärt",
-            "typ": "kurz"
-          }
-        ],
-        "beispiel": [
-          {
-            "name": "Energie-Check",
-            "stufe": "kostenlos",
-            "preis": "0",
-            "heute": "Müde trotz Schlaf, weiss nicht, wo sie anfangen soll.",
-            "danach": "Kennt ihre drei grössten Energieräuber und den ersten Schritt.",
-            "satz": "In 5 Minuten weisst du, was dir am meisten Energie raubt.",
-            "herkunft": "eigenes Angebot"
-          },
-          {
-            "name": "Energie-Testwoche",
-            "stufe": "kostenlos",
-            "herkunft": "Network",
-            "preis": "0",
-            "heute": "Hat schon viel probiert und traut neuen Produkten nicht.",
-            "danach": "Hat sieben Tage selbst getestet und weiss, ob es ihr guttut.",
-            "satz": "Eine Woche testen, bevor du dich entscheidest."
-          },
-          {
-            "name": "7 Tage Frühstück",
-            "stufe": "klein",
-            "preis": "39",
-            "heute": "Isst morgens nichts oder nur Kaffee und Gipfeli.",
-            "danach": "Hat sieben Frühstücke ohne Kochen und kein Tief mehr um halb zehn.",
-            "satz": "Sieben Frühstücke, die dich bis zum Mittag tragen.",
-            "herkunft": "eigenes Angebot"
-          },
-          {
-            "name": "30 Tage Energie-Begleitung",
-            "stufe": "gross",
-            "preis": "270",
-            "heute": "Funktioniert seit Jahren, hat sich selbst vergessen.",
-            "danach": "Hat eine Routine, die in den Familienalltag passt, und spürt den Unterschied.",
-            "satz": "30 Tage, in denen du wieder zu deiner Energie zurückfindest.",
-            "herkunft": "eigenes Angebot"
-          }
+     "id": "angebote",
+     "titel": "Angebote",
+     "kurz": "Was bietest du an?",
+     "einleitung": "Schreib alle deine Angebote auf, vom kostenlosen bis zum grössten. Noch nichts Eigenes? Dann trag ein, was dein Network schon hat: eine Testwoche mit Proben als kostenlosen Einstieg, ein Starterset als kleines Angebot, die Einschreibung mit Treueprogramm als grosses. Das Angebot ist das Werkzeug. Die Veränderung bei den Leuten, für die du da bist, ist das Ziel.",
+     "liste": {
+      "felder": [
+       {
+        "id": "name",
+        "frage": "Name",
+        "typ": "kurz"
+       },
+       {
+        "id": "stufe",
+        "frage": "Art",
+        "typ": "wahl",
+        "optionen": [
+         "kostenlos",
+         "klein",
+         "mittel",
+         "gross"
         ]
-      }
-    },
-    {
-      "id": "network",
-      "titel": "Network",
-      "kurz": "Was braucht dein Network-Ziel?",
-      "einleitung": "Jedes Network zahlt anders, deshalb rechnet der Plan mit deinen eigenen Zahlen. Du findest sie in deiner Monatsabrechnung. Geschätzt reicht. Bist du nicht im Network, überspring diesen Schritt.",
-      "fragen": [
-        {
-          "id": "n_ziel",
-          "typ": "zahl",
-          "frage": "Wie viel willst du im Monat aus dem Network verdienen?",
-          "einheit": "CHF im Monat",
-          "beispiel": "1000"
-        },
-        {
-          "id": "n_heute",
-          "typ": "zahl",
-          "frage": "Wie viel verdienst du heute im Monat aus dem Network?",
-          "einheit": "CHF im Monat",
-          "beispiel": "250"
-        },
-        {
-          "id": "n_kunde",
-          "typ": "zahl",
-          "frage": "Wie viel bleibt dir im Schnitt pro Person, die jeden Monat bei dir bestellt?",
-          "hilfe": "Deine Provision auf die Bestellung, nicht der Bestellwert.",
-          "einheit": "CHF im Monat",
-          "beispiel": "20"
-        },
-        {
-          "id": "n_kunden",
-          "typ": "zahl",
-          "frage": "Wie viele Personen bestellen heute jeden Monat bei dir?",
-          "einheit": "Personen",
-          "beispiel": "8"
-        },
-        {
-          "id": "n_team",
-          "typ": "zahl",
-          "frage": "Was bringt dir eine aktive Teampartnerin im Schnitt im Monat?",
-          "hilfe": "Mit ihrer Kundschaft zusammen. Hast du noch kein Team, schätz, was in deinem Plan üblich ist, oder lass es leer.",
-          "einheit": "CHF im Monat",
-          "beispiel": "100"
-        },
-        {
-          "id": "n_teamzahl",
-          "typ": "zahl",
-          "frage": "Wie viele aktive Teampartnerinnen hast du heute?",
-          "einheit": "Teampartnerinnen",
-          "beispiel": "1"
-        },
-        {
-          "id": "n_plan",
-          "typ": "text",
-          "frage": "Was steht in deinem Vergütungsplan als Nächstes?",
-          "hilfe": "Der nächste Rang, ein Bonus, was du dafür brauchst. Du kannst auch einfach die Seite aus deinem Vergütungsplan hineinkopieren. Das geht an deine KI mit.",
-          "beispiel": "Nächster Rang ab 3'000 Punkten im Team und zwei Partnerinnen mit eigenem Rang. Dann kommt ein Bonus von 5 % dazu."
-        }
+       },
+       {
+        "id": "herkunft",
+        "frage": "Herkunft",
+        "typ": "wahl",
+        "optionen": [
+         "eigenes Angebot",
+         "Network"
+        ]
+       },
+       {
+        "id": "preis",
+        "frage": "Preis",
+        "typ": "zahl",
+        "einheit": "CHF"
+       },
+       {
+        "id": "heute",
+        "frage": "Wo steht die Person heute?",
+        "typ": "text"
+       },
+       {
+        "id": "danach",
+        "frage": "Wie sieht ihr Alltag danach aus?",
+        "typ": "text"
+       },
+       {
+        "id": "satz",
+        "frage": "Ein Satz, der das Angebot erklärt",
+        "typ": "kurz"
+       }
+      ],
+      "beispiel": [
+       {
+        "name": "Energie-Check",
+        "stufe": "kostenlos",
+        "preis": "0",
+        "heute": "Müde trotz Schlaf, weiss nicht, wo sie anfangen soll.",
+        "danach": "Kennt ihre drei grössten Energieräuber und den ersten Schritt.",
+        "satz": "In 5 Minuten weisst du, was dir am meisten Energie raubt.",
+        "herkunft": "eigenes Angebot"
+       },
+       {
+        "name": "Energie-Testwoche",
+        "stufe": "kostenlos",
+        "herkunft": "Network",
+        "preis": "0",
+        "heute": "Hat schon viel probiert und traut neuen Produkten nicht.",
+        "danach": "Hat sieben Tage selbst getestet und weiss, ob es ihr guttut.",
+        "satz": "Eine Woche testen, bevor du dich entscheidest."
+       },
+       {
+        "name": "7 Tage Frühstück",
+        "stufe": "klein",
+        "preis": "39",
+        "heute": "Isst morgens nichts oder nur Kaffee und Gipfeli.",
+        "danach": "Hat sieben Frühstücke ohne Kochen und kein Tief mehr um halb zehn.",
+        "satz": "Sieben Frühstücke, die dich bis zum Mittag tragen.",
+        "herkunft": "eigenes Angebot"
+       },
+       {
+        "name": "30 Tage Energie-Begleitung",
+        "stufe": "gross",
+        "preis": "270",
+        "heute": "Funktioniert seit Jahren, hat sich selbst vergessen.",
+        "danach": "Hat eine Routine, die in den Familienalltag passt, und spürt den Unterschied.",
+        "satz": "30 Tage, in denen du wieder zu deiner Energie zurückfindest.",
+        "herkunft": "eigenes Angebot"
+       }
       ]
+     }
     },
     {
-      "id": "jahr",
-      "titel": "Jahr",
-      "kurz": "Was kommt wann?",
-      "einleitung": "Ein Fokus pro Monat. Dazu ein kostenloses Angebot, das zum Thema passt. In Ferienmonaten darf der Fokus klein sein oder ganz fehlen.",
-      "monate": {
-        "felder": [
-          {
-            "id": "fokus",
-            "frage": "Fokus-Angebot",
-            "typ": "angebot"
-          },
-          {
-            "id": "thema",
-            "frage": "Thema oder Veränderung, über die du sprichst",
-            "typ": "kurz"
-          },
-          {
-            "id": "gratis",
-            "frage": "Kostenloses Angebot dazu",
-            "typ": "angebot-gratis"
-          },
-          {
-            "id": "anzahl",
-            "frage": "Wie viele Verkäufe planst du?",
-            "typ": "zahl"
-          }
-        ],
-        "beispiel": {
-          "1": {
-            "fokus": "30 Tage Energie-Begleitung",
-            "thema": "Neues Jahr, neue Energie",
-            "gratis": "Energie-Check",
-            "anzahl": "4"
-          },
-          "2": {
-            "fokus": "7 Tage Frühstück",
-            "thema": "Kein Tief mehr um halb zehn",
-            "gratis": "Energie-Check",
-            "anzahl": "10"
-          },
-          "3": {
-            "fokus": "30 Tage Energie-Begleitung",
-            "thema": "Frühling: raus aus dem Funktionsmodus",
-            "gratis": "Energie-Check",
-            "anzahl": "4"
-          },
-          "4": {
-            "fokus": "",
-            "thema": "Ferien: Beziehung statt Verkauf",
-            "gratis": "",
-            "anzahl": ""
-          },
-          "5": {
-            "fokus": "7 Tage Frühstück",
-            "thema": "Frühstück ohne Kochen",
-            "gratis": "Energie-Check",
-            "anzahl": "8"
-          },
-          "6": {
-            "fokus": "30 Tage Energie-Begleitung",
-            "thema": "Mit Energie in den Sommer",
-            "gratis": "Energie-Check",
-            "anzahl": "4"
-          },
-          "7": {
-            "fokus": "",
-            "thema": "Sommerferien",
-            "gratis": "",
-            "anzahl": ""
-          },
-          "8": {
-            "fokus": "7 Tage Frühstück",
-            "thema": "Zurück in den Alltag",
-            "gratis": "Energie-Check",
-            "anzahl": "10"
-          },
-          "9": {
-            "fokus": "30 Tage Energie-Begleitung",
-            "thema": "Herbst ohne Erschöpfung",
-            "gratis": "Energie-Check",
-            "anzahl": "5"
-          },
-          "10": {
-            "fokus": "",
-            "thema": "Herbstferien",
-            "gratis": "",
-            "anzahl": ""
-          },
-          "11": {
-            "fokus": "30 Tage Energie-Begleitung",
-            "thema": "Gut durch die dunkle Zeit",
-            "gratis": "Energie-Check",
-            "anzahl": "5"
-          },
-          "12": {
-            "fokus": "7 Tage Frühstück",
-            "thema": "Schenk dir selbst etwas",
-            "gratis": "",
-            "anzahl": "6"
-          }
-        }
+     "id": "network",
+     "titel": "Network",
+     "kurz": "Was braucht dein Network-Ziel?",
+     "einleitung": "Jedes Network zahlt anders, deshalb rechnet der Plan mit deinen eigenen Zahlen. Du findest sie in deiner Monatsabrechnung. Geschätzt reicht. Bist du nicht im Network, überspring diesen Schritt.",
+     "fragen": [
+      {
+       "id": "n_ziel",
+       "typ": "zahl",
+       "frage": "Wie viel willst du im Monat aus dem Network verdienen?",
+       "einheit": "CHF im Monat",
+       "beispiel": "1000"
+      },
+      {
+       "id": "n_heute",
+       "typ": "zahl",
+       "frage": "Wie viel verdienst du heute im Monat aus dem Network?",
+       "einheit": "CHF im Monat",
+       "beispiel": "250"
+      },
+      {
+       "id": "n_kunde",
+       "typ": "zahl",
+       "frage": "Wie viel bleibt dir im Schnitt pro Person, die jeden Monat bei dir bestellt?",
+       "hilfe": "Deine Provision auf die Bestellung, nicht der Bestellwert.",
+       "einheit": "CHF im Monat",
+       "beispiel": "20"
+      },
+      {
+       "id": "n_kunden",
+       "typ": "zahl",
+       "frage": "Wie viele Personen bestellen heute jeden Monat bei dir?",
+       "einheit": "Personen",
+       "beispiel": "8"
+      },
+      {
+       "id": "n_team",
+       "typ": "zahl",
+       "frage": "Was bringt dir eine aktive Teampartnerin im Schnitt im Monat?",
+       "hilfe": "Mit ihrer Kundschaft zusammen. Hast du noch kein Team, schätz, was in deinem Plan üblich ist, oder lass es leer.",
+       "einheit": "CHF im Monat",
+       "beispiel": "100"
+      },
+      {
+       "id": "n_teamzahl",
+       "typ": "zahl",
+       "frage": "Wie viele aktive Teampartnerinnen hast du heute?",
+       "einheit": "Teampartnerinnen",
+       "beispiel": "1"
+      },
+      {
+       "id": "n_plan",
+       "typ": "text",
+       "frage": "Was steht in deinem Vergütungsplan als Nächstes?",
+       "hilfe": "Der nächste Rang, ein Bonus, was du dafür brauchst. Du kannst auch einfach die Seite aus deinem Vergütungsplan hineinkopieren. Das geht an deine KI mit.",
+       "beispiel": "Nächster Rang ab 3'000 Punkten im Team und zwei Partnerinnen mit eigenem Rang. Dann kommt ein Bonus von 5 % dazu."
       }
+     ]
     },
     {
-      "id": "woche",
-      "titel": "Woche",
-      "kurz": "Wie sieht deine Woche aus?",
-      "einleitung": "Der Monatsfokus wird erst in der Woche lebendig. Ein fester Rhythmus nimmt dir jeden Morgen die Frage ab, was du heute erzählst.",
-      "fragen": [
-        {
-          "id": "w_beitraege",
-          "typ": "zahl",
-          "frage": "Wie viele Beiträge willst du pro Woche posten?",
-          "hilfe": "Lieber wenige gute als viele schnelle.",
-          "einheit": "pro Woche",
-          "beispiel": "3"
-        },
-        {
-          "id": "w_tage",
-          "typ": "tage",
-          "frage": "An welchen Tagen postest du?",
-          "beispiel": [
-            "Mo",
-            "Mi",
-            "Fr"
-          ]
-        },
-        {
-          "id": "w_storys",
-          "typ": "wahl",
-          "frage": "Wie oft machst du Storys?",
-          "optionen": [
-            "Jeden Tag",
-            "An Arbeitstagen",
-            "Zwei- bis dreimal pro Woche"
-          ],
-          "beispiel": "An Arbeitstagen"
-        },
-        {
-          "id": "w_mix",
-          "typ": "text",
-          "frage": "Was soll in einer normalen Woche vorkommen?",
-          "hilfe": "Zum Beispiel: etwas Persönliches, ein Tipp, eine Geschichte von jemandem, dem du geholfen hast, eine Einladung.",
-          "beispiel": "Montag ein Tipp, Mittwoch etwas aus meinem Alltag, Freitag eine Frage an die Community. Einmal pro Woche eine Einladung zum Energie-Check."
-        }
-      ]
+     "id": "jahr",
+     "titel": "Jahr",
+     "kurz": "Was kommt wann?",
+     "einleitung": "Ein Fokus pro Monat. Dazu ein kostenloses Angebot, das zum Thema passt. In Ferienmonaten darf der Fokus klein sein oder ganz fehlen.",
+     "monate": {
+      "felder": [
+       {
+        "id": "fokus",
+        "frage": "Fokus-Angebot",
+        "typ": "angebot"
+       },
+       {
+        "id": "thema",
+        "frage": "Thema oder Veränderung, über die du sprichst",
+        "typ": "kurz"
+       },
+       {
+        "id": "gratis",
+        "frage": "Kostenloses Angebot dazu",
+        "typ": "angebot-gratis"
+       },
+       {
+        "id": "anzahl",
+        "frage": "Wie viele Verkäufe planst du?",
+        "typ": "zahl"
+       }
+      ],
+      "beispiel": {
+       "1": {
+        "fokus": "30 Tage Energie-Begleitung",
+        "thema": "Neues Jahr, neue Energie",
+        "gratis": "Energie-Check",
+        "anzahl": "4"
+       },
+       "2": {
+        "fokus": "7 Tage Frühstück",
+        "thema": "Kein Tief mehr um halb zehn",
+        "gratis": "Energie-Check",
+        "anzahl": "10"
+       },
+       "3": {
+        "fokus": "30 Tage Energie-Begleitung",
+        "thema": "Frühling: raus aus dem Funktionsmodus",
+        "gratis": "Energie-Check",
+        "anzahl": "4"
+       },
+       "4": {
+        "fokus": "",
+        "thema": "Ferien: Beziehung statt Verkauf",
+        "gratis": "",
+        "anzahl": ""
+       },
+       "5": {
+        "fokus": "7 Tage Frühstück",
+        "thema": "Frühstück ohne Kochen",
+        "gratis": "Energie-Check",
+        "anzahl": "8"
+       },
+       "6": {
+        "fokus": "30 Tage Energie-Begleitung",
+        "thema": "Mit Energie in den Sommer",
+        "gratis": "Energie-Check",
+        "anzahl": "4"
+       },
+       "7": {
+        "fokus": "",
+        "thema": "Sommerferien",
+        "gratis": "",
+        "anzahl": ""
+       },
+       "8": {
+        "fokus": "7 Tage Frühstück",
+        "thema": "Zurück in den Alltag",
+        "gratis": "Energie-Check",
+        "anzahl": "10"
+       },
+       "9": {
+        "fokus": "30 Tage Energie-Begleitung",
+        "thema": "Herbst ohne Erschöpfung",
+        "gratis": "Energie-Check",
+        "anzahl": "5"
+       },
+       "10": {
+        "fokus": "",
+        "thema": "Herbstferien",
+        "gratis": "",
+        "anzahl": ""
+       },
+       "11": {
+        "fokus": "30 Tage Energie-Begleitung",
+        "thema": "Gut durch die dunkle Zeit",
+        "gratis": "Energie-Check",
+        "anzahl": "5"
+       },
+       "12": {
+        "fokus": "7 Tage Frühstück",
+        "thema": "Schenk dir selbst etwas",
+        "gratis": "",
+        "anzahl": "6"
+       }
+      }
+     }
+    },
+    {
+     "id": "woche",
+     "titel": "Woche",
+     "kurz": "Wie sieht deine Woche aus?",
+     "einleitung": "Der Monatsfokus wird erst in der Woche lebendig. Ein fester Rhythmus nimmt dir jeden Morgen die Frage ab, was du heute erzählst.",
+     "fragen": [
+      {
+       "id": "w_beitraege",
+       "typ": "zahl",
+       "frage": "Wie viele Beiträge willst du pro Woche posten?",
+       "hilfe": "Lieber wenige gute als viele schnelle.",
+       "einheit": "pro Woche",
+       "beispiel": "3"
+      },
+      {
+       "id": "w_tage",
+       "typ": "tage",
+       "frage": "An welchen Tagen postest du?",
+       "beispiel": [
+        "Mo",
+        "Mi",
+        "Fr"
+       ]
+      },
+      {
+       "id": "w_storys",
+       "typ": "wahl",
+       "frage": "Wie oft machst du Storys?",
+       "optionen": [
+        "Jeden Tag",
+        "An Arbeitstagen",
+        "Zwei- bis dreimal pro Woche"
+       ],
+       "beispiel": "An Arbeitstagen"
+      },
+      {
+       "id": "w_mix",
+       "typ": "text",
+       "frage": "Was soll in einer normalen Woche vorkommen?",
+       "hilfe": "Zum Beispiel: etwas Persönliches, ein Tipp, eine Geschichte von jemandem, dem du geholfen hast, eine Einladung.",
+       "beispiel": "Montag ein Tipp, Mittwoch etwas aus meinem Alltag, Freitag eine Frage an die Community. Einmal pro Woche eine Einladung zum Energie-Check."
+      }
+     ]
     }
-  ]
+   ]
+  },
+  "quartal": {
+   "titel": "Quartal",
+   "kurz": "Die nächsten drei Monate schärfen",
+   "wann": "im letzten Monat des laufenden Quartals: März, Juni, September, Dezember",
+   "einleitung": "Das Quartal erfindet nichts neu. Du nimmst deinen Jahresplan und machst ihn für die nächsten drei Monate scharf: welches Angebot wann, welches kostenlose Angebot davor, wann ein Workshop. Pläne darf man ändern - du steckst nicht fest.",
+   "schritte": [
+    {
+     "id": "q_rueckblick",
+     "titel": "Rückblick",
+     "kurz": "Was waren die letzten drei Monate?",
+     "einleitung": "Vier Fragen, bevor du nach vorne schaust.",
+     "fragen": [
+      {
+       "id": "q_erfolg",
+       "typ": "text",
+       "frage": "Was war dein grösster Erfolg in diesem Quartal?",
+       "hilfe": "Eine Sache, nicht fünf. Es darf auch etwas Kleines sein, das sich gross angefühlt hat.",
+       "beispiel": "Zum ersten Mal haben zwei Frauen im gleichen Monat die Begleitung gebucht, ohne dass ich nachfragen musste."
+      },
+      {
+       "id": "q_kunden",
+       "typ": "text",
+       "frage": "Auf welches Ergebnis bei einer Person, mit der du gearbeitet hast, bist du am stolzesten?",
+       "hilfe": "Das ist dein Material für das nächste Quartal - und oft der Satz, der verkauft.",
+       "beispiel": "Eine Teilnehmerin hat nach drei Wochen geschrieben, dass sie zum ersten Mal seit Jahren ohne Wecker aufwacht."
+      },
+      {
+       "id": "q_schwer",
+       "typ": "text",
+       "frage": "Was war schwer - und was hat geholfen?",
+       "hilfe": "Beide Hälften aufschreiben. Die Lösung vergisst man sonst bis zum nächsten Mal.",
+       "beispiel": "Drei Wochen kein Content, weil alle krank waren. Geholfen hat, dass ich Beiträge im Vorrat hatte."
+      },
+      {
+       "id": "q_naechstes",
+       "typ": "text",
+       "frage": "Was willst du im nächsten Quartal anders machen?",
+       "hilfe": "Ein Satz. Wenn dir fünf einfallen, nimm den, der am meisten ändert.",
+       "beispiel": "Ich plane den Content für den ganzen Monat an einem Tag, statt jede Woche neu anzufangen."
+      }
+     ]
+    },
+    {
+     "id": "q_themen",
+     "titel": "Die drei Monatsthemen",
+     "kurz": "Woran arbeiten die nächsten drei Monate?",
+     "einleitung": "Ein bewährtes Muster ist aufsteigend: erst der Kopf, dann der Plan, dann das Tun. Monat eins räumt Gedanken auf, Monat zwei zeigt den Weg, Monat drei setzt um. Du musst dich nicht daran halten - aber drei zusammenhängende Themen tragen weiter als drei einzelne.",
+     "monate": {
+      "felder": [
+       {
+        "id": "thema",
+        "frage": "Thema des Monats",
+        "typ": "kurz"
+       },
+       {
+        "id": "rolle",
+        "frage": "Was soll der Monat bewegen?",
+        "typ": "wahl",
+        "optionen": [
+         "Haltung ändern",
+         "Weg zeigen",
+         "Umsetzen lassen"
+        ]
+       },
+       {
+        "id": "fokus",
+        "frage": "Fokus-Angebot",
+        "typ": "angebot",
+        "quelle": "jahresplan"
+       },
+       {
+        "id": "gratis",
+        "frage": "Kostenloses Angebot davor",
+        "typ": "angebot-gratis"
+       },
+       {
+        "id": "workshop",
+        "frage": "Workshop oder Live-Termin",
+        "typ": "kurz",
+        "hilfe": "Datum und Uhrzeit, sobald du es weisst. Leer lassen ist auch eine Antwort."
+       }
+      ],
+      "beispiel": {
+       "1": {
+        "thema": "Warum Muedigkeit kein Charakterzug ist",
+        "rolle": "Haltung aendern",
+        "fokus": "",
+        "gratis": "Energie-Check",
+        "workshop": ""
+       },
+       "2": {
+        "thema": "Die drei Energieraeuber im Mama-Alltag",
+        "rolle": "Weg zeigen",
+        "fokus": "7 Tage Fruehstueck",
+        "gratis": "Energie-Check",
+        "workshop": "Mittwoch 18. um 20 Uhr, offener Abend"
+       },
+       "3": {
+        "thema": "Dreissig Tage, in denen sich etwas aendert",
+        "rolle": "Umsetzen lassen",
+        "fokus": "30 Tage Energie-Begleitung",
+        "gratis": "Energie-Check",
+        "workshop": ""
+       }
+      }
+     }
+    },
+    {
+     "id": "q_abgleich",
+     "titel": "Was offen ist",
+     "kurz": "Was aus dem Jahresplan liegt noch da?",
+     "einleitung": "Diese Liste kommt aus deinem Jahresplan und aus dem, was in den letzten drei Monaten tatsächlich passiert ist. Du entscheidest je Zeile: kommt jetzt dran, wartet weiter, oder ist erledigt.",
+     "fragen": [
+      {
+       "id": "q_offen",
+       "typ": "text",
+       "quelle": "planung-abgleich",
+       "frage": "Was vom Jahresplan ist noch nicht passiert?",
+       "hilfe": "Steht schon da, weil der Abgleich es gegen den Workspace geprüft hat. Du streichst, was nicht mehr gilt.",
+       "beispiel": "Der Blogartikel zur Immunwoche ist nie entstanden. Die zweite Testwoche auch nicht."
+      },
+      {
+       "id": "q_weg",
+       "typ": "text",
+       "frage": "Was lässt du in diesem Quartal bewusst weg?",
+       "hilfe": "Ohne diese Antwort wird aus einem Quartalsplan eine Wunschliste.",
+       "beispiel": "Keine Werbung. Kein neues Angebot. Reels nur als Test, nicht als Hauptkanal."
+      }
+     ]
+    }
+   ]
+  },
+  "monat": {
+   "titel": "Monat",
+   "kurz": "Der Monat ganz ins Detail",
+   "wann": "am 29. des Vormonats",
+   "nur_intern": true,
+   "einleitung": "Hier wird aus dem Quartalsthema ein Monat mit Beiträgen, Storys, Mails und Dreh-Liste. Die Zahlen des Vormonats und die Diagnose stehen schon da, wenn du anfängst - beantworten musst du nur die acht Fragen.",
+   "schritte": [
+    {
+     "id": "m_diagnose",
+     "titel": "Vormonats-Diagnose",
+     "kurz": "Was die Zahlen sagen",
+     "einleitung": "Nichts zu beantworten - das steht schon da. Umsatz, Reichweite, Öffnungsraten, Top- und Flop-Beiträge, der Job-Mix-Abgleich und die Belege aus dem Workspace.",
+     "fragen": [
+      {
+       "id": "m_zahlen",
+       "typ": "text",
+       "quelle": "abgleich",
+       "frage": "Zahlen des Vormonats",
+       "hilfe": "Aus ThriveCart, der Instagram-Schnittstelle und ActiveCampaign."
+      },
+      {
+       "id": "m_topflop",
+       "typ": "text",
+       "quelle": "gepostet",
+       "frage": "Was lief gut, was nicht",
+       "hilfe": "Gegen den eigenen Median gerechnet, nicht absolut."
+      },
+      {
+       "id": "m_belege",
+       "typ": "text",
+       "quelle": "planung-abgleich",
+       "frage": "Was war geplant und ist nicht passiert",
+       "hilfe": "Belegt gegen den Workspace, nicht abgehakt."
+      }
+     ]
+    },
+    {
+     "id": "m_strategie",
+     "titel": "Die acht Fragen",
+     "kurz": "Zehn Minuten, dann steht der Monat",
+     "einleitung": "Eine Frage nach der anderen. Wo es eine Empfehlung gibt, steht sie dabei.",
+     "fragen": [
+      {
+       "id": "m_saeule",
+       "typ": "wahl",
+       "frage": "Welche Säule prägt diesen Monat?",
+       "optionen": [
+        "Säule 1 (NWM 2.0)",
+        "Säule 2 (Hybridmodell)",
+        "Säule 3 (Mama Business)",
+        "Wake-Up",
+        "Mama-Körper 35+",
+        "4 Säulen",
+        "Mental Load",
+        "Identität"
+       ],
+       "hilfe": "Die ersten drei sind Mentoring, die übrigen doTERRA."
+      },
+      {
+       "id": "m_produkte",
+       "typ": "text",
+       "quelle": "katalog",
+       "frage": "Welche drei Angebote werden beworben?",
+       "hilfe": "Je eines kostenlos, klein und gross. Die Liste kommt aus dem Katalog - du wählst."
+      },
+      {
+       "id": "m_blocks",
+       "typ": "wahl",
+       "frage": "Wie verteilst du sie über die Wochen?",
+       "optionen": [
+        "Wochen-Blöcke: Woche 1 kostenlos, Woche 2 klein, Woche 3 und 4 gross",
+        "Tag-für-Tag gemischt"
+       ],
+       "hilfe": "Wochen-Blöcke sind der Normalfall. Gemischt lohnt sich, wenn das kostenlose Angebot laufend Eintragungen bringt."
+      },
+      {
+       "id": "m_botschaft",
+       "typ": "text",
+       "frage": "Was ist die Hauptbotschaft des Monats?",
+       "hilfe": "Ein bis zwei Sätze, die alle Beiträge verbinden. Wie ein Albumtitel."
+      },
+      {
+       "id": "m_jobmix",
+       "typ": "wahl",
+       "frage": "Welcher Job-Mix?",
+       "optionen": [
+        "Standard",
+        "Verkaufs-Monat",
+        "Reichweite-Push",
+        "Geschichten-Monat",
+        "eigener Mix"
+       ],
+       "hilfe": "Standard heisst gleich viel Autorität und Geschichte, weniger Reichweite und Verkauf."
+      },
+      {
+       "id": "m_ziel",
+       "typ": "text",
+       "frage": "Was soll am Monatsende dastehen?",
+       "hilfe": "Verkäufe, neue Followerinnen, Eintragungen über Stichwörter. Eine Zahl je Grösse, keine Wunschliste."
+      },
+      {
+       "id": "m_nicht",
+       "typ": "text",
+       "quelle": "ideen-vorrat",
+       "frage": "Was läuft diesen Monat bewusst NICHT?",
+       "hilfe": "Vorschläge stehen schon da - aus dem Ideen-Vorrat. Du entscheidest, was wartet."
+      },
+      {
+       "id": "m_energie",
+       "typ": "text",
+       "quelle": "jahresplan",
+       "frage": "Wie viele Wochen bist du wirklich arbeitsfähig?",
+       "hilfe": "Ferien und Termine stehen schon da. Bei reduzierten Wochen wird mehr wiederverwendet und weniger neu gedreht."
+      }
+     ]
+    }
+   ]
+  },
+  "woche": {
+   "titel": "Woche",
+   "kurz": "Der Rahmen für sieben Tage",
+   "wann": "Sonntagabend",
+   "nur_intern": true,
+   "einleitung": "In der Woche entsteht kein neuer Content - der steht im Monatsplan. Hier wird nur gerahmt: Rückblick, Fokus, was je Säule dran ist, und die Ordnung. Was sich ableiten lässt, steht schon da.",
+   "schritte": [
+    {
+     "id": "w_rueckblick",
+     "titel": "Die Woche, die war",
+     "kurz": "Erfolge und Herausforderungen",
+     "einleitung": "Beides ist aus deinen sieben Tageseinträgen vorbelegt. Du streichst, ergänzt, formulierst um - tippen musst du nichts von Null.",
+     "fragen": [
+      {
+       "id": "w_erfolge",
+       "typ": "text",
+       "quelle": "tagebuch",
+       "frage": "Was waren deine Erfolge in der letzten Woche?",
+       "hilfe": "Aus den Learnings der sieben Tage zusammengezogen."
+      },
+      {
+       "id": "w_heraus",
+       "typ": "text",
+       "quelle": "tagebuch",
+       "frage": "Was waren deine Herausforderungen in der letzten Woche?",
+       "hilfe": "Dazu, was geholfen hat - sonst steht beim nächsten Mal dasselbe da."
+      }
+     ]
+    },
+    {
+     "id": "w_fokus",
+     "titel": "Die Woche, die kommt",
+     "kurz": "Fokus, Angebot, Aufruf",
+     "einleitung": "Eine Frage ist deine, drei stehen schon im Monatsplan.",
+     "fragen": [
+      {
+       "id": "w_fokus",
+       "typ": "kurz",
+       "frage": "Was ist dein Fokus für diese Woche?",
+       "hilfe": "Ein Satz. Woran merkst du am Sonntag, dass die Woche gut war?"
+      },
+      {
+       "id": "w_hauptprodukt",
+       "typ": "angebot",
+       "quelle": "monatsplan",
+       "frage": "Welches Angebot steht diese Woche im Mittelpunkt?"
+      },
+      {
+       "id": "w_cta",
+       "typ": "kurz",
+       "quelle": "monatsplan",
+       "frage": "Welcher Aufruf läuft diese Woche?",
+       "hilfe": "Das Stichwort oder der Link, auf den die Beiträge zeigen."
+      },
+      {
+       "id": "w_sales",
+       "typ": "kurz",
+       "quelle": "monatsplan",
+       "frage": "In welcher Phase steht der Verkauf?",
+       "hilfe": "Anwärmen, Türen auf, läuft, letzter Tag, danach - oder nichts davon."
+      }
+     ]
+    },
+    {
+     "id": "w_saeulen",
+     "titel": "Was planst du je Business-Säule?",
+     "kurz": "Fünf Zeilen, je ein Satz",
+     "einleitung": "Die fünf Säulen halten den Blick breit. Eine Woche, in der nur Content-Creation gefüllt ist, war keine Business-Woche.",
+     "saeulen": {
+      "zeilen": [
+       "Kundenarbeit",
+       "Produktentwicklung",
+       "Business-Struktur aufbauen",
+       "Content-Creation",
+       "Weiterbildung"
+      ],
+      "feld": {
+       "id": "vorhaben",
+       "frage": "Was ist dran?",
+       "typ": "kurz"
+      },
+      "beispiel": {
+       "Kundenarbeit": "Zwei Begleitungs-Calls, Rueckmeldung an drei Teilnehmerinnen",
+       "Produktentwicklung": "Modul 3 aufnehmen",
+       "Business-Struktur aufbauen": "Kasse fuer den Workshop fertig einrichten",
+       "Content-Creation": "steht im Monatsplan",
+       "Weiterbildung": "eine Lektion aus dem gekauften Kurs"
+      }
+     }
+    },
+    {
+     "id": "w_tage",
+     "titel": "Die Woche einteilen",
+     "kurz": "Termine, Aufgaben, Tage",
+     "einleitung": "Reihenfolge, die sich bewährt hat: zuerst das Private, dann die festen Termine, dann die Storys, und erst zum Schluss die Lücken füllen.",
+     "haken": [
+      {
+       "id": "w_kalender",
+       "text": "Hauptkalender angeschaut: welche Termine stehen diese Woche an?",
+       "quelle": "termine"
+      },
+      {
+       "id": "w_regelmaessig",
+       "text": "Regelmässige Aufgaben eingeplant"
+      },
+      {
+       "id": "w_verteilt",
+       "text": "Offene Aufgaben auf die Wochentage verteilt",
+       "quelle": "aufgaben"
+      },
+      {
+       "id": "w_ueberfaellig",
+       "text": "Überfällige Aufgaben neu terminiert",
+       "quelle": "aufgaben"
+      },
+      {
+       "id": "w_ergaenzt",
+       "text": "Fehlende Aufgaben ergänzt"
+      }
+     ]
+    },
+    {
+     "id": "w_ausblick",
+     "titel": "Ausblick auf zwei Wochen",
+     "kurz": "Was kommt danach?",
+     "einleitung": "Zwei Fragen, damit nichts überraschend kommt.",
+     "fragen": [
+      {
+       "id": "w_vorbereiten",
+       "typ": "text",
+       "quelle": "termine",
+       "frage": "Welche Termine stehen in den nächsten zwei Wochen - und musst du dich auf etwas vorbereiten?",
+       "hilfe": "Steht schon da. Du ergänzt nur, was Vorbereitung braucht."
+      },
+      {
+       "id": "w_metime",
+       "typ": "kurz",
+       "frage": "Wann ist diese Woche Zeit für dich?",
+       "hilfe": "Als Termin, nicht als Absicht. Was nicht im Kalender steht, kommt nicht.",
+       "beispiel": "Donnerstag 20 Uhr, eine Stunde Garten oder Lesen"
+      }
+     ]
+    },
+    {
+     "id": "w_ordnung",
+     "titel": "Ordnungsroutinen",
+     "kurz": "Was aufgeräumt gehört",
+     "einleitung": "Drei davon passieren von selbst und sind schon abgehakt, wenn der Lauf durch ist. Handarbeit bleiben die zwei unten.",
+     "haken": [
+      {
+       "id": "w_downloads",
+       "text": "Download-Ordner geleert und abgelegt",
+       "quelle": "downloads-aufraeumen.py"
+      },
+      {
+       "id": "w_mails",
+       "text": "Mails durchgesehen und sortiert",
+       "quelle": "mails-sortieren-donnerstag"
+      },
+      {
+       "id": "w_kunden",
+       "text": "Kundendaten aktuell",
+       "quelle": "cockpit-kundinnen"
+      },
+      {
+       "id": "w_contentplanung",
+       "text": "Content für die Woche steht",
+       "quelle": "monatsplan"
+      },
+      {
+       "id": "w_tabs",
+       "text": "Browser-Tabs geschlossen, Wichtiges gespeichert"
+      },
+      {
+       "id": "w_notizen",
+       "text": "Papiernotizen durchgegangen und übertragen"
+      }
+     ]
+    }
+   ]
+  }
+ }
 }

@@ -102,8 +102,9 @@ neun Stellen dieselbe Zahl und denselben Namen tragen muss:
 - **Eine Quelle:** Name, Preise, Stichwort, Termine stehen **nur** in `00-bauplan.md`. Die
   Bausteine übernehmen sie von dort. Am Schluss mit `grep` gegenprüfen, dass überall dieselben
   Werte stehen.
-- **Preis-Kette:** Bump günstiger als das Hauptprodukt · Upsell teurer als der Bump, aber
-  günstiger als das Hauptprodukt · Downsell günstiger als das Upsell. Jede Zahl mit Rechnung,
+- **Preis-Kette:** Bump günstiger als das Hauptprodukt (30–60 % rabattiert) · Upsell teurer
+  als der Bump, darf auch teurer sein als das Hauptprodukt (Patricia 31.10.2026: „darum heisst
+  er ja UPsell“), aber rabattiert · Downsell günstiger als das Upsell. Jede Zahl mit Rechnung,
   keine Differenz erraten. Minikurse fix 39. **Keine Geld-zurück-Garantie.**
 - **Veränderung statt Zahlen:** nie über Modul-, Lektions-, Kapitel- oder Call-Zahlen
   verkaufen. Im Kursaufbau stehen sie, in Verkaufstexten nicht.
@@ -140,14 +141,32 @@ Unterordner `angebot/` daneben und überschreibt nichts. Jede Datei beginnt mit 
 2. Gegenprobe Werte: Name, Preise und Stichwort aus `00-bauplan.md` per `grep` in allen Dateien
    suchen; jede Abweichung korrigieren.
 3. Hook-Check und Beitrags-Check (Lesearbeit) für 06 und die erste Story-Folie.
-4. `bash scripts/obsidian-reindex.sh`
-5. `00-paket.md` schreiben und im Chat zeigen:
+4. **Gegen die Funnel-Checkliste prüfen** (seit 31.10.2026, Patricia: *„dass bei den neu
+   angelegten produkten und auch bumps etc. immer alles nach der checkliste abgearbeitet
+   wird“*). Erst eintragen, dann prüfen:
+   - Das Angebot in `context/active-funnels.json` aufnehmen (Kennung = `<slug>`, Status
+     `in-aufbau`, Anschluss, Kasse, Tag) — sonst fehlt es in der Checkliste-Auswahl.
+     Danach `python scripts/cockpit/funnel-checkliste-bauen.py` und die Seite mit demselben
+     Pfad neu veröffentlichen.
+   - Prüfung wie in **B2** über alle 138 Punkte, gegen die gebauten Dateien und, was schon
+     live ist, gegen die echten Seiten. Ergebnis in `00-befund.md`.
+   - Befund auf die Checkliste legen: `ArtifactData` auf
+     https://claude.ai/artifact/YViQzGgPqr3AiufeA35Ev3, Dokument `funnelcheck/<slug>`,
+     **erst lesen, dann `update`** mit `befund: {<kennung>: {s, t}}` (s = `ok` · `warn` ·
+     `fehlt` · `na` · `offen`, t = Fundstelle in einem Satz), `befundStand` (ISO) und in
+     `haken` die Kennungen mit `ok`/`na` auf `true`. Ihre eigenen Haken bleiben stehen.
+     Die Kennungen kommen aus `funnel-checkliste-bauen.py --punkte` (Backticks).
+   - Jedes ⚠️, ❌ und ❓ als Zeile in `09-einrichten.md`. 🚨 Ohne diesen Schritt ist das
+     Paket nicht fertig, auch wenn alle Texte stehen.
+5. `bash scripts/obsidian-reindex.sh`
+6. `00-paket.md` schreiben und im Chat zeigen:
 
 ```
 ✓ Kursaufbau            01-aufbau.md
 ✓ Verkaufsseite         02-salespage.md
 ✓ Bump · Upsell · Downsell
 …
+✓ Funnel-Checkliste     96 belegt · 21 trifft nicht zu · 14 offen (in 09) · 7 nicht prüfbar
 ⚠️ 3 Plätze zum Ergänzen (✏️ PLATZ) — Stimme in Block 3, Foto Über-mich, …
 ```
 

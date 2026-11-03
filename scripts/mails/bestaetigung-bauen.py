@@ -172,6 +172,18 @@ MAILS = [
          "Sobald du geklickt hast, landest du direkt beim Nischengenerator. Nimm dir zehn Minuten "
          "Zeit, Stichworte reichen bei jeder Frage."),
 
+    mail(76, "jahresplanung.html", "Neustart 2027",
+         "Bitte einmal tippen, dann bist du am 17. Dezember dabei",
+         "Erst mit dem Klick bekommst du den Zoom-Link.",
+         "Ein Klick noch, dann planen wir dein 2027",
+         "Jahresplanungs-Workshop live am Donnerstag, 17. Dezember, um 09:00 Uhr.",
+         "Hey, schön, dass du dein Jahr 2027 mit mir planst. Am Donnerstag, 17. Dezember, um "
+         "09:00 Uhr tragen wir zuerst Ferien, Familie und deine eigene Zeit ein und danach deine "
+         "Angebote, bis dein Jahr auf einem Blatt steht.",
+         "Ja, ich plane mit",
+         "Sobald du geklickt hast, bist du eingetragen. Den Zoom-Link bekommst du am Abend vor "
+         "dem Workshop und am Morgen nochmal."),
+
     mail(1, "newsletter.html", "Newsletter",
          "Ein Klick noch, dann bist du auf meiner Liste",
          "Bestätig kurz deine Adresse, danach bekommst du meine Mails.",

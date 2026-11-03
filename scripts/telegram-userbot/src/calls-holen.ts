@@ -21,7 +21,7 @@ if (!apiId || !apiHash || !sessionString) { console.error("❌ Zugang fehlt in .
 
 const WS = path.resolve(__dirname, "..", "..", "..");
 const ZIEL = path.join(WS, "video", "telegram-calls");
-const MIN_SEK = 600;
+const MIN_SEK = Number(process.argv[process.argv.indexOf("--min") + 1]) || 600;
 
 function arg(name: string) { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : ""; }
 

@@ -23,3 +23,14 @@
   .za-lab { display: block; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
   .za-kasse { font-style: italic; border-left: 3px solid var(--orange); padding-left: 9px; }
   .za-warn { color: var(--crit); }
+  .za-hinw { color: var(--warn); }
+  .za-fuss { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .za-breit-karte { grid-column: 1 / -1; }
+  .za-plan { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 10px; }
+  .za-plan > summary { cursor: pointer; font-family: var(--display); font-size: 16px; }
+  .za-ablauf { margin: 8px 0 0; padding-left: 20px; }
+  .za-ablauf li { margin: 4px 0; }
+  .za-prompt { margin-top: 8px; }
+  .za-prompt summary { cursor: pointer; color: var(--teal); }
+  .za-prompt pre { white-space: pre-wrap; max-height: 360px; overflow: auto; background: var(--surface-2);
+                   border-radius: 8px; padding: 10px 12px; font-size: 12px; line-height: 1.5; }

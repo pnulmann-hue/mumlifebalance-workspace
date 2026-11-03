@@ -141,6 +141,8 @@ textarea{min-height:80px;resize:vertical}
 .archiv button:hover b{color:var(--orange)}
 .projekt{display:flex;flex-direction:column;gap:6px;padding:14px 16px;border-radius:16px;background:var(--feld)}
 .projekt select{flex:1 1 180px;width:auto}.projekt input{flex:2 1 200px;width:auto}
+.einfuegen summary{cursor:pointer;font-weight:600;padding:4px 0}
+.einfuegen textarea{min-height:90px;margin:6px 0}
 .unterlagen{min-height:120px;font-size:15px}
 .datei{display:inline-block}
 .quelle{font-size:13px;color:var(--weich);border-left:3px solid var(--petrol);padding:2px 0 2px 10px}
@@ -189,6 +191,12 @@ textarea{min-height:80px;resize:vertical}
           <button class="knopf zart" id="projektNeu">+ Neues Projekt</button>
           <button class="knopf" id="projektWeg">Löschen</button>
         </div>
+        <details class="einfuegen" id="einfuegen">
+          <summary>Aus dem Upsell-Ersteller einfügen</summary>
+          <p class="hinweis">Im Cockpit unter Produkte → Upsell-Ersteller auf „Mit Knopfdruck bauen“ tippen, dann hier hineinkleben. Es entsteht ein neues Projekt mit allem, was schon feststeht.</p>
+          <textarea id="einfuegenText" aria-label="Auftrag aus dem Upsell-Ersteller"></textarea>
+          <div class="reihe"><button class="knopf voll" id="einfuegenLos">Als neues Projekt übernehmen</button></div>
+        </details>
       </div>
       <div class="arten" role="group" aria-label="Was möchtest du bauen?">
         <button class="art" data-art="freebie" aria-pressed="false"><span class="p">0<small>CHF</small></span><b>Freebie-Funnel</b><span class="w">Landingpage, Danke-Seite mit Angebot, Begleitmails</span></button>
@@ -373,6 +381,51 @@ $("projektWeg").addEventListener("click", function(){
   projektWechseln(projekte[0].id); toast("Projekt gelöscht.");
 });
 
+// ---------- Aus dem Upsell-Ersteller (Cockpit) ----------
+// Das Cockpit kopiert einen Vorschlag als „MLB-ZUSATZANGEBOT“ + JSON. Zwei
+// Artifacts teilen keine Daten, deshalb der Weg über die Zwischenablage.
+var ROLLE = {bump:"Order Bump", upsell:"Upsell", downsell:"Downsell", crosssell:"Cross-Sell"};
+$("einfuegenLos").addEventListener("click", function(){
+  if(laeuft){ toast("Erst warten, bis der Bau fertig ist."); return; }
+  var t = $("einfuegenText").value, i = t.indexOf("{"), a;
+  try{ a = JSON.parse(t.slice(i, t.lastIndexOf("}")+1)); }catch(e){ a = null; }
+  if(i<0 || !a || !a.name || !/MLB-ZUSATZANGEBOT/.test(t)){ toast("Das ist kein Auftrag aus dem Upsell-Ersteller."); return; }
+  var preis = a.preis!=null ? String(a.preis) : "";
+  var art = a.preis===0 ? "freebie" : (a.preis===39 && !a.tool ? "minikurs" : "kurs");
+  var format = /1:1|Begleitung/i.test(a.tooltyp||"") ? "1:1-Begleitung" : "Online-Kurs";
+  var zu = a.zu || {};
+  var tool = a.tool;
+  var thema = a.name + (a.tooltyp ? " (" + a.tooltyp + ")" : "") + ". " + (a.bauen||"") +
+    " Löst nach dem Kauf: " + (a.problem||"") + " Verkauft als " + (ROLLE[a.rolle]||a.rolle) +
+    " zu „" + (zu.name||"") + "“" + (zu.preis!=null ? " (" + zu.preis + " CHF)" : "") + "." +
+    (tool ? " Es ist ein KI-Tool: " + (tool.versprechen||"") : "");
+  var id="p"+Date.now();
+  projekte.push({id:id, name:a.name}); rohSchreib("projekte", projekte);
+  projektWechseln(id);
+  stand = JSON.parse(JSON.stringify(BEISPIEL));
+  Object.keys(stand).forEach(function(k){ if(k!=="profil") stand[k]=""; });
+  stand.art = art; stand.format = format; stand.profil = "mentoring";
+  stand.thema = thema.replace(/\s+/g," ").trim();
+  stand.name = a.name; stand.preis = art==="kurs" ? preis : ART[art].preis;
+  stand.fuerWen = "Käuferinnen von „" + (zu.name||"") + "“";
+  stand.veraenderung = tool && tool.versprechen ? tool.versprechen : "";
+  stand.weg = tool && tool.ablauf ? tool.ablauf.map(function(s){ return s.schritt + (s.frage ? ": " + s.frage : ""); }).join("\n") : "";
+  stand.naechste = "";   // „zu“ hat sie schon gekauft — die nächste Stufe schlägt „Lücken vorschlagen lassen“ vor
+  schreib("entwurf", stand);
+  unterlagen = ["Aus dem Upsell-Ersteller im Cockpit:",
+    "Rolle: " + (ROLLE[a.rolle]||a.rolle) + " zu „" + (zu.name||"") + "“" + (zu.link ? " (" + zu.link + ")" : ""),
+    a.rechnung ? "Preis-Rechnung: " + a.rechnung : "",
+    a.kasse ? "Satz für die Kasse: " + a.kasse : "",
+    tool && tool.ergebnis ? "Das Tool gibt aus: " + tool.ergebnis : "",
+    tool ? "Gebaut wird das Tool selbst über den Tool-Bauplan im Cockpit (" + (tool.plattform||"Vercel") + "). Hier entsteht das Verkaufspaket dazu." : ""
+  ].filter(Boolean).join("\n");
+  schreib("unterlagen", unterlagen);
+  $("einfuegenText").value = ""; $("einfuegen").open = false;
+  projekteZeigen(); fuellen();
+  toast("Neues Projekt „" + a.name + "“ angelegt. Lücken in Station 2 vorschlagen lassen, dann bauen.");
+  document.getElementById("s2").scrollIntoView({behavior:"smooth"});
+});
+
 // ---------- Eigene Unterlagen ----------
 var MAX_UNTERLAGEN = 120000;   // im Browser; in einen Auftrag gehen die ersten 30'000 Zeichen
 function unterlagenStand(){
@@ -429,7 +482,6 @@ function pruefen(){
   if(stand.art==="kurs" && h===null) p.push(["nein","Preis eintragen. Beim grossen Angebot bestimmst du ihn selbst."]);
   if(stand.art!=="freebie"){
     if(b!==null && h!==null) p.push(b<h ? ["ok","Bump "+b+" < Hauptprodukt "+h] : ["nein","Bump "+b+" muss günstiger sein als das Hauptprodukt ("+h+")."]);
-    if(u!==null && h!==null){ p.push(u<h ? ["ok","Upsell "+u+" < Hauptprodukt "+h] : ["nein","Upsell "+u+" muss günstiger sein als das Hauptprodukt ("+h+")."]); }
     if(u!==null && b!==null) p.push(u>b ? ["ok","Upsell "+u+" > Bump "+b] : ["nein","Upsell "+u+" sollte teurer sein als der Bump ("+b+")."]);
     if(d!==null && u===null) p.push(["nein","Ein Downsell braucht ein Upsell davor."]);
     if(d!==null && u!==null) p.push(d<u ? ["ok","Downsell "+d+" < Upsell "+u] : ["nein","Downsell "+d+" muss günstiger sein als das Upsell ("+u+")."]);

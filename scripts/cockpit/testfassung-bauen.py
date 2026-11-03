@@ -56,6 +56,7 @@ SEEDS = {
     "gepostet.json": "gepostet",
     "jahresplan.json": "jahresplan",
     "monatsbogen.json": "monatsbogen",
+    "quartalsbogen.json": "quartalsbogen",
     "wochenbogen.json": "wochenbogen",
     "stimmen.json": "stimmen",
     "aufgaben.json": "aufgaben",
@@ -69,6 +70,9 @@ SEEDS = {
     "planung-abgleich.json": "planung-abgleich",
     "auswertung.json": "zahlen-auswertung",
     "gekaufte-kurse.json": "gekauft",
+    # Instagram -> Markt-Radar (30.10.2026, scripts/hooks/radar.py); die Konten
+    # selbst legt beitraege_einlegen() als mr-<konto> ab
+    "markt-radar/_index.json": "markt-radar",
     # 🚨 Neue Datendatei gehoert hier nachgetragen, sonst ist der Reiter
     #    in der lokalen Pruefung leer (Lehre vom 24.09.2026).
     "launch.json": "launch",
@@ -136,6 +140,15 @@ def beitraege_einlegen(zeilen, geladen):
                           % (json.dumps("mlb:freigaben"),
                              json.dumps(json.dumps(m, ensure_ascii=False))))
             geladen.append("freigaben (%d Stueck)" % len(m))
+
+    # Markt-Radar: je Konto ein Dokument, im Cockpit unter mr-<konto>
+    for datei in sorted((ABGLEICH / "markt-radar").glob("*.json")):
+        if datei.name.startswith("_") or datei.name == "cache.json":
+            continue
+        roh = datei.read_text(encoding="utf-8")
+        zeilen.append("localStorage.setItem(%s,%s);"
+                      % (json.dumps("mlb:mr-" + datei.stem), json.dumps(roh)))
+        geladen.append("mr-%s" % datei.stem)
 
     # Die Zuordnung Cockpit-Beitrag -> Instagram-Post (gepostet-zuordnen.py).
     zp = ABGLEICH / "gepostet-zuordnung.json"

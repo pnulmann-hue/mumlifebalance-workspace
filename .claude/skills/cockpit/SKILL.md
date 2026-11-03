@@ -1,6 +1,6 @@
 ---
 name: cockpit
-description: "Tägliches Morgenbriefing + Wochen/Monats/Quartals-Strategie-Sicht. Orchestriert /blog, /story, /karussell, /reels, /produkt, /funnel."
+description: "🗃 Abgelöst, nicht mehr aufrufen. Morgenbriefing steht auf Mein Tisch im Cockpit, Strategie in /strategie, Monatsrückblick in /monatsplan. Der Inhalt bleibt nur als Vorlage für den kommenden Planungs-Skill (Quartalsblick)."
 ---
 # /cockpit — Patricias Planungs-Orchester
 

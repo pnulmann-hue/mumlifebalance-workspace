@@ -1,6 +1,6 @@
 ---
 name: visuals
-description: "Design-Bauplan für die Visuals (Canva-ready) — Cover, Folien, Reel-Standbilder. Keine KI-Bilder, nur Vorlage + echtes Foto."
+description: "Design-Bauplan für Canva — Cover, Inhaltsfolien, Reel-Standbilder. Erzeugt keine Bilder. Wird von /content aufgerufen; fertige Bilder macht der Bild-Editor."
 ---
 Du gestaltest den **Design-Bauplan** für meine Beiträge — Canva-ready. Du erzeugst
 **keine Bilder**. Du sagst mir Folie für Folie, was in meine Canva-Vorlage kommt.

@@ -1,6 +1,6 @@
 ---
 name: caption
-description: "Instagram-Caption nach Patricias exakten Vorgaben schreiben (Zeitanker · Zahl · 1 Keyword-CTA · Blackliste · Brand-Voice)"
+description: "Caption-Technik für einen einzelnen Beitrag — Aufbau, Länge, Hashtags. Die Pflichtregeln stehen in /content, bei Widerspruch gilt /content. Wird von /content aufgerufen; direkt nur zum Nachbessern einer Caption."
 ---
 Du schreibst mir eine Instagram-Caption — nach **meinen exakten Vorgaben**, in
 **meiner Stimme**. Nichts Generisches, nichts Erfundenes.

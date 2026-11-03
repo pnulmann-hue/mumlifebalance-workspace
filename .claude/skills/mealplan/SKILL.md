@@ -97,7 +97,8 @@ NIE eine andere Domain, NIE „aus dem Kopf".
 
 Vorgehen:
 - Suche per WebFetch mit konkretem Pfad: z.B.
-  `https://www.swissmilk.ch/de/rezepte/?keyword=quark%20pancakes`
+  `https://www.swissmilk.ch/de/suche/?q=quark%20pancakes` (die alte Form `/de/rezepte/?keyword=` leitet seit Nov. 2026 auf die Startseite um und verliert das Suchwort)
+- Jedes Online-Rezept, das in einen Wochenplan kommt, als Zeile in `outputs/kochdatenbank/daten/links.txt` anhängen — so landet es als Karte in der Kochdatenbank
 - Extrahiere strukturierte Rezeptdaten (Schema.org/Recipe wenn vorhanden)
 - Zitiere immer die volle URL als Quelle
 - **Cookidoo ausdrücklich erwünscht** (Patricia, 25.10.2026: *„du könntest mir auch ein cookidoo rezept verlinken“*) — sie hat das Abo und kocht mit dem Thermomix. Link-Form `https://cookidoo.ch/recipes/recipe/de-CH/r…`. Die Rezeptseite zeigt Titel und Zutaten auch ohne Login: per WebFetch prüfen, dass die Nummer zum Gericht passt, nie eine Nummer raten. **Keine Pflichtzahl** (Patricia, 25.10.: *„muss nicht zwingend zweimal kommen“*) — Cookidoo ist eine Option, vor allem wenn eine Wochenaktion gerade zu einem passenden Cookidoo-Rezept passt.

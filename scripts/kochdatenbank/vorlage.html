@@ -1,0 +1,537 @@
+<title>Patricias Kochbuch</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: dunkles Kopfband mit grosser Suche wie der Deckel eines Kochbuchs, darunter Schnellwahl-Kacheln,
+   dann Register (Filter) links und Rezeptkarten rechts; jede Kategorie hat ihre Farbe und ihr Zeichen */
+:root {
+  --papier: #fbf8f1;
+  --flaeche: #ffffff;
+  --creme: #f1ecdd;
+  --tinte: #0c1c30;
+  --leise: #5e6a72;
+  --linie: #e6e0d2;
+  --band: #29556d;
+  --band-tief: #1d3f52;
+  --auf-band: #f7f3e8;
+  --c-petrol: #2f7472;
+  --c-orange: #d9772b;
+  --c-blau: #29556d;
+  --c-salbei: #5f8150;
+  --c-ocker: #a87a1f;
+  --c-rost: #a9533a;
+  --schatten: 0 1px 2px rgba(12,28,48,.05), 0 8px 24px rgba(12,28,48,.06);
+  --display: "Philosopher", Georgia, serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --papier: #10181d; --flaeche: #18232a; --creme: #1f2c33; --tinte: #ecefe9; --leise: #a3b0b4; --linie: #2a3940;
+  --band: #173444; --band-tief: #0f2633; --auf-band: #f1ecdd;
+  --c-petrol: #6fb8b4; --c-orange: #f0a165; --c-blau: #8db6cf; --c-salbei: #9cc08a; --c-ocker: #dcb35e; --c-rost: #e08f74;
+  --schatten: none; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --papier: #10181d; --flaeche: #18232a; --creme: #1f2c33; --tinte: #ecefe9; --leise: #a3b0b4; --linie: #2a3940;
+  --band: #173444; --band-tief: #0f2633; --auf-band: #f1ecdd;
+  --c-petrol: #6fb8b4; --c-orange: #f0a165; --c-blau: #8db6cf; --c-salbei: #9cc08a; --c-ocker: #dcb35e; --c-rost: #e08f74;
+  --schatten: none; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--papier); color: var(--tinte); font: 16px/1.5 var(--body); margin: 0 }
+.innen { max-width: 1240px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; text-wrap: balance; margin: 0 }
+button { font: inherit; color: inherit; cursor: pointer }
+:focus-visible { outline: 2px solid var(--c-orange); outline-offset: 2px }
+svg.i { width: 1.25em; height: 1.25em; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex: none }
+
+/* Kopfband */
+.band { background: radial-gradient(120% 140% at 85% 0%, var(--band) 0%, var(--band-tief) 70%); color: var(--auf-band); position: relative; overflow: hidden }
+.band .innen { padding-block: 40px 44px; display: grid; gap: 18px; position: relative }
+.band .eyebrow { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; opacity: .8 }
+.band h1 { font-size: clamp(2.3rem, 6vw, 3.8rem); line-height: 1; letter-spacing: -.01em }
+.band h1 em { font-style: italic; font-weight: 400; color: var(--c-orange) }
+.band p { margin: 0; max-width: 46ch; opacity: .85 }
+.suche { display: flex; flex-wrap: wrap; gap: 10px; max-width: 760px }
+.suchfeld { flex: 1 1 300px; display: flex; align-items: center; gap: 10px; background: var(--auf-band); color: #0c1c30;
+  border-radius: 999px; padding: 4px 6px 4px 18px; box-shadow: 0 10px 30px rgba(0,0,0,.25) }
+.suchfeld input { flex: 1; min-width: 0; border: none; background: transparent; font: inherit; font-size: 1.05rem; padding: 10px 0; color: #0c1c30 }
+.suchfeld input:focus { outline: none }
+.zufall { display: inline-flex; align-items: center; gap: 8px; border: none; border-radius: 999px; padding: 12px 20px;
+  background: var(--c-orange); color: #fff; font-weight: 700; box-shadow: 0 10px 30px rgba(0,0,0,.2) }
+.deko { position: absolute; right: -40px; top: 50%; translate: 0 -50%; display: grid; grid-template-columns: repeat(4, 64px); gap: 18px;
+  color: var(--auf-band); opacity: .09; pointer-events: none }
+.deko svg.i { width: 64px; height: 64px; stroke-width: 1.1 }
+@media (max-width: 900px) { .deko { display: none } }
+
+/* Schnellwahl */
+.schnell { display: flex; gap: 12px; overflow-x: auto; padding-block: 22px 6px; scrollbar-width: thin }
+.kachel { --c: var(--c-petrol); flex: 0 0 auto; min-width: 132px; display: grid; gap: 10px; text-align: left; padding: 14px 16px;
+  border-radius: 16px; border: 1px solid var(--linie); background: var(--flaeche); box-shadow: var(--schatten) }
+.kachel .rund { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
+  background: color-mix(in srgb, var(--c) 16%, var(--flaeche)); color: var(--c) }
+.kachel b { font-family: var(--display); font-size: 1.05rem; line-height: 1.15 }
+.kachel small { color: var(--leise); font-variant-numeric: tabular-nums }
+.kachel[aria-pressed="true"] { background: var(--c); border-color: var(--c); color: #fff }
+.kachel[aria-pressed="true"] .rund { background: rgba(255,255,255,.2); color: #fff }
+.kachel[aria-pressed="true"] small { color: rgba(255,255,255,.85) }
+
+/* Handy: alle sechs Kacheln auf einen Blick statt seitlich wischen */
+@media (max-width: 640px) {
+  .band .innen { padding-block: 26px 28px; gap: 14px }
+  .band p { display: none }
+  .schnell { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; overflow: visible; padding-block: 16px 0 }
+  .kachel { min-width: 0; padding: 12px 6px; justify-items: center; text-align: center; gap: 6px; border-radius: 14px }
+  .kachel .rund { width: 36px; height: 36px }
+  .kachel b { font-size: .95rem }
+  .kachel small { font-size: .75rem }
+}
+
+/* Raster */
+.raster { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 32px; align-items: start; padding-block: 22px 56px }
+@media (max-width: 860px) { .raster { grid-template-columns: 1fr; gap: 20px } }
+
+/* Register */
+.filter { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 14px); display: grid; gap: 4px;
+  background: var(--flaeche); border: 1px solid var(--linie); border-radius: 18px; padding: 8px 16px 14px }
+@media (max-width: 860px) { .filter { position: static } }
+.gruppe { padding-block: 12px; border-bottom: 1px dashed var(--linie) }
+.gruppe:last-child { border-bottom: none }
+.gruppe h3 { font-family: var(--body); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--leise); margin-bottom: 9px }
+.chips { display: flex; flex-wrap: wrap; gap: 6px }
+.chip { border: 1px solid var(--linie); background: var(--papier); border-radius: 999px; padding: 4px 11px; font-size: .9rem;
+  display: inline-flex; gap: 6px; align-items: baseline }
+.chip small { color: var(--leise); font-variant-numeric: tabular-nums }
+.chip[aria-pressed="true"] { background: var(--tinte); border-color: var(--tinte); color: var(--papier) }
+.chip[aria-pressed="true"] small { color: inherit; opacity: .75 }
+.chip.plan[aria-pressed="true"] { background: var(--c-orange); border-color: var(--c-orange); color: #fff }
+.hinweis { font-size: .82rem; color: var(--leise); margin: 8px 0 0 }
+
+/* Liste */
+.leiste { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 16px }
+.leiste h2 { font-size: 1.6rem }
+.leiste h2 small { font-family: var(--body); font-weight: 400; font-size: .95rem; color: var(--leise); margin-left: 6px }
+.leiste select { padding: 7px 10px; border-radius: 999px; border: 1px solid var(--linie); background: var(--flaeche); color: var(--tinte); font: inherit }
+.karten { display: grid; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); gap: 16px }
+.karte { --c: var(--c-petrol); text-align: left; background: var(--flaeche); border: 1px solid var(--linie); border-radius: 18px;
+  padding: 16px 18px 14px; display: grid; gap: 10px; grid-template-rows: auto auto 1fr auto; box-shadow: var(--schatten); min-width: 0 }
+.karte .kopfzeile { display: flex; align-items: center; gap: 10px; color: var(--c); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 700 }
+.karte .rund { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: color-mix(in srgb, var(--c) 15%, var(--flaeche)) }
+.karte .kopfzeile .stern { margin-left: auto; color: var(--c-orange); font-size: 1.1rem }
+.karte h2 { font-size: 1.22rem; line-height: 1.2 }
+.karte p { margin: 0; color: var(--leise); font-size: .92rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden }
+.fusszeile { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding-top: 10px; border-top: 1px solid var(--linie);
+  font-size: .85rem; color: var(--leise); font-variant-numeric: tabular-nums }
+.meter { display: grid; gap: 3px; flex: 1 1 90px; min-width: 90px }
+.meter span { color: var(--tinte); font-weight: 700 }
+.meter i { display: block; height: 5px; border-radius: 3px; background: var(--creme); overflow: hidden }
+.meter i::after { content: ""; display: block; height: 100%; width: var(--w); background: var(--c-petrol); border-radius: 3px }
+.mini { display: inline-flex; align-items: center; gap: 4px }
+.tm { color: var(--c-orange); font-weight: 700 }
+@media (prefers-reduced-motion: no-preference) {
+  .karte, .kachel { transition: transform .18s ease, box-shadow .18s ease, border-color .18s }
+  .karte:hover, .kachel:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--c) 45%, var(--linie)) }
+  .karte { animation: auf .35s ease both; animation-delay: calc(var(--n, 0) * 18ms) }
+  @keyframes auf { from { opacity: .4; transform: translateY(6px) } }
+}
+.mehr { margin: 22px auto 0; display: block; border: 1px solid var(--linie); background: var(--flaeche); border-radius: 999px; padding: 10px 22px; font-weight: 600 }
+.leer { padding: 30px 0 6px; color: var(--leise) }
+.auswaerts { margin-top: 30px; padding: 18px 20px; border-radius: 18px; background: var(--creme); display: grid; gap: 10px }
+.auswaerts b { font-family: var(--display); font-size: 1.1rem }
+.links { display: flex; flex-wrap: wrap; gap: 8px }
+.links a { text-decoration: none; color: var(--tinte); background: var(--flaeche); border: 1px solid var(--linie); border-radius: 999px; padding: 6px 14px; font-size: .9rem }
+
+/* Rezeptblatt */
+dialog { border: none; padding: 0; border-radius: 22px; width: min(820px, calc(100% - 24px)); max-height: 92vh; background: var(--flaeche); color: var(--tinte); overflow: auto }
+dialog::backdrop { background: rgba(8,18,26,.55); backdrop-filter: blur(3px) }
+@media (max-width: 600px) { dialog { max-height: 100%; height: 100%; width: 100%; border-radius: 0 } }
+.blatt-kopf { --c: var(--c-petrol); background: color-mix(in srgb, var(--c) 13%, var(--flaeche)); padding: 26px max(24px, env(safe-area-inset-right, 0px)) 22px max(24px, env(safe-area-inset-left, 0px));
+  display: grid; grid-template-columns: auto 1fr auto; gap: 16px; align-items: start }
+.blatt-kopf .gross { width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; background: var(--c); color: #fff }
+.blatt-kopf .gross svg.i { width: 30px; height: 30px }
+.blatt-kopf .art { color: var(--c); font-size: .76rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 700 }
+.blatt-kopf h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.1; margin: 4px 0 8px }
+.meta { display: flex; flex-wrap: wrap; gap: 14px; color: var(--leise); font-size: .92rem }
+.schliessen { border: none; background: var(--flaeche); border-radius: 50%; width: 40px; height: 40px; font-size: 1.3rem; box-shadow: var(--schatten) }
+.blatt-rumpf { padding: 22px max(24px, env(safe-area-inset-right, 0px)) 30px max(24px, env(safe-area-inset-left, 0px)); display: grid; gap: 24px }
+.blatt-rumpf > p { margin: 0; font-size: 1.05rem }
+.naehr { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; background: var(--papier); border-radius: 18px; padding: 16px 20px }
+.ring { position: relative; width: 104px; height: 104px }
+.ring svg { width: 100%; height: 100%; rotate: -90deg }
+.ring circle { fill: none; stroke-width: 9 }
+.ring .hg { stroke: var(--creme) }
+.ring .vg { stroke: var(--c-petrol); stroke-linecap: round }
+.ring div { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; line-height: 1.1 }
+.ring b { font-size: 1.5rem; font-variant-numeric: tabular-nums }
+.ring span { font-size: .75rem; color: var(--leise) }
+.werte { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px }
+.werte div b { display: block; font-size: 1.25rem; font-variant-numeric: tabular-nums }
+.werte div span { font-size: .8rem; color: var(--leise) }
+.werte p { grid-column: 1 / -1; margin: 0; font-size: .82rem; color: var(--leise) }
+.plan-ok { color: var(--c-orange); font-weight: 700 }
+@media (max-width: 480px) { .naehr { grid-template-columns: 1fr; justify-items: center } }
+.zwei { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 32px }
+@media (max-width: 640px) { .zwei { grid-template-columns: 1fr } }
+.blatt-rumpf h3 { font-size: 1.25rem; margin-bottom: 12px }
+.zutaten { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px }
+.zutaten label { display: flex; gap: 10px; align-items: baseline; padding: 6px 8px; border-radius: 10px; cursor: pointer }
+.zutaten label:hover { background: var(--papier) }
+.zutaten input { accent-color: var(--c-petrol); width: 17px; height: 17px; flex: none; translate: 0 3px }
+.zutaten input:checked + span { text-decoration: line-through; color: var(--leise) }
+.schritte { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; counter-reset: s }
+.schritte li { counter-increment: s; display: grid; grid-template-columns: 32px 1fr; gap: 12px }
+.schritte li::before { content: counter(s); width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--tinte); color: var(--papier); font-weight: 700; font-size: .9rem }
+.aktionen { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding-top: 18px; border-top: 1px solid var(--linie); color: var(--leise); font-size: .88rem }
+.knopf { display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 9px 16px; border: 1px solid var(--linie);
+  background: var(--flaeche); color: var(--tinte); text-decoration: none; font-weight: 600 }
+.knopf.voll { background: var(--c-orange); border-color: var(--c-orange); color: #fff }
+</style>
+
+<header class="band">
+  <div class="deko" id="deko" aria-hidden="true"></div>
+  <div class="innen">
+    <span class="eyebrow" id="zahl"></span>
+    <h1>Patricias <em>Kochbuch</em></h1>
+    <p>Alles aus deinem Rezeptordner, deinen Coaching-Plänen und deinen Lieblingsseiten an einem Ort.</p>
+    <form class="suche" id="sucheForm" role="search">
+      <label class="suchfeld"><span id="lupe"></span>
+        <input id="suchfeld" type="search" placeholder="Rezept oder Zutat, z.B. Quark, Zucchini, Hack" aria-label="Suchen"></label>
+      <button type="button" class="zufall" id="zufall"></button>
+    </form>
+  </div>
+</header>
+
+<div class="innen">
+  <nav class="schnell" id="schnell" aria-label="Schnellwahl"></nav>
+
+  <div class="raster">
+    <aside class="filter" aria-label="Filter">
+      <div class="gruppe"><h3>Kategorie</h3><div class="chips" id="alleKats"></div></div>
+      <div class="gruppe" id="artGruppe" hidden><h3 id="artTitel">Art</h3><div class="chips" id="kategorien"></div>
+        <p class="hinweis" id="artHinweis"></p></div>
+      <div class="gruppe" id="unterGruppe" hidden><h3 id="unterTitel">Art</h3><div class="chips" id="unterarten"></div></div>
+      <div class="gruppe"><h3>Protein je Portion</h3><div class="chips" id="protein"></div>
+        <p class="hinweis">~ heisst geschätzt. Werte ohne Zeichen stehen so im Rezept.</p></div>
+      <div class="gruppe"><h3>Für mich</h3><div class="chips" id="fuermich"></div></div>
+      <div class="gruppe"><h3>Zeit</h3><div class="chips" id="zeit"></div></div>
+      <div class="gruppe"><h3>Merkmale</h3><div class="chips" id="merkmale"></div></div>
+    </aside>
+
+    <main>
+      <div class="leiste">
+        <h2 id="ueberschrift">Alle Rezepte <small id="treffer"></small></h2>
+        <label>Sortieren
+          <select id="sortierung">
+            <option value="name">nach Name</option>
+            <option value="protein">meistes Protein</option>
+            <option value="zeit">schnellste zuerst</option>
+          </select>
+        </label>
+      </div>
+      <div class="karten" id="karten"></div>
+      <button type="button" class="mehr" id="mehr" hidden></button>
+      <p class="leer" id="leer" hidden>Nichts gefunden. Nimm einen Filter weg oder such auswärts weiter.</p>
+      <section class="auswaerts" aria-label="Auswärts suchen">
+        <b id="auswaertsText">Auswärts suchen</b>
+        <div class="links" id="auswaerts"></div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<dialog id="blatt"><div id="blattInhalt"></div></dialog>
+
+<script>
+const REZEPTE = /*DATEN*/[];
+
+const ICON = {
+  fruehstueck: "M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z M16 11h2a2 2 0 0 1 0 4h-2 M8 3c-.8 1.3.8 2.2 0 3.5 M12 3c-.8 1.3.8 2.2 0 3.5",
+  fleisch: "M15 3.5a5.5 5.5 0 0 1 5.5 5.5c0 3-2.7 5.5-6 5.5l-4.3 4.3a2 2 0 1 1-2.8 2.8 2 2 0 1 1-2.8-2.8 2 2 0 1 1 2.8-2.8l4.3-4.3c0-4 1.6-8.2 3.3-8.2z",
+  fisch: "M2.5 12c3.2-5 9.3-6 13.5-2.8L21 6v12l-5-3.2C11.8 18 5.7 17 2.5 12z M8 11.2v.1",
+  vegi: "M5 19C5 10 11 5 20 5c0 9-5.5 15-14.5 14.5z M5 19l8.5-8.5",
+  suppe: "M3 11h18a9 7.5 0 0 1-18 0z M8 3c-.9 1.4.9 2.4 0 4 M12 3c-.9 1.4.9 2.4 0 4 M16 3c-.9 1.4.9 2.4 0 4",
+  salat: "M3 12h18a9 7 0 0 1-18 0z M7 12c0-3.5 2.2-6 5-6s5 2.5 5 6 M12 6v6 M9 8.5l3 3.5 3-3.5",
+  beilage: "M6.5 8c3-5 12-4.2 13 2 .9 5.6-4 10-9.2 9-5.6-1-7-6-3.8-11z M10 10.5v.1 M14 13.5v.1 M12 8v.1",
+  snack: "M7 3h10l-1 7.5a4 4 0 0 1-8 0z M12 14.5V21 M8 21h8",
+  brot: "M4 11a3.6 3.6 0 0 1 2.3-7h11.4A3.6 3.6 0 0 1 20 11v8H4z M9 8l-1 3 M13 8l-1 3 M17 8l-1 3",
+  dessert: "M4 20.5V12l16-5.5v14z M4 12l16 0 M4 16h16 M14.5 3.5v3",
+  getraenk: "M6 5h12l-2 16H8z M6.5 9h11 M15 2l-2 7",
+  glas: "M7 7h10v12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z M6 3h12v4H6z M9.5 12.5h5",
+  sauce: "M17 3v8.5 M3 11.5h14.5a7.2 7.2 0 0 1-14.5 0z",
+  mond: "M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z",
+  ei: "M12 3c4 0 7 6 7 10.5a7 7 0 0 1-14 0C5 9 8 3 12 3z",
+  uhr: "M12 7.5V12l3 2 M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z",
+  stern: "M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 17l-5.2 2.7 1-5.9-4.3-4.1 5.9-.8z",
+  wuerfel: "M4.5 4.5h15v15h-15z M9 9v.1 M15 15v.1 M12 12v.1 M15 9v.1 M9 15v.1",
+  lupe: "M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14z M20 20l-4-4",
+  kind: "M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18z M8.5 14a4 4 0 0 0 7 0 M9 10v.1 M15 10v.1",
+  personen: "M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z M3 20c.5-3.5 3-5.5 6-5.5s5.5 2 6 5.5 M16 4.5a3 3 0 0 1 0 6 M18.5 14.5c1.5.7 2.3 2.5 2.5 5",
+};
+const icon = n => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="${ICON[n] || ICON.vegi}"/></svg>`;
+
+const KAT = {
+  "Frühstück": ["fruehstueck", "--c-ocker"], "Fleisch": ["fleisch", "--c-rost"], "Fisch": ["fisch", "--c-blau"],
+  "Vegetarisch": ["vegi", "--c-salbei"], "Suppe": ["suppe", "--c-orange"], "Salat": ["salat", "--c-salbei"],
+  "Beilage": ["beilage", "--c-ocker"], "Snack & Apéro": ["snack", "--c-petrol"], "Brot & Gebäck": ["brot", "--c-ocker"],
+  "Dessert": ["dessert", "--c-blau"], "Getränk": ["getraenk", "--c-petrol"], "Eingemachtes & Vorrat": ["glas", "--c-orange"],
+  "Sauce & Basis": ["sauce", "--c-blau"],
+};
+const katIcon = k => (KAT[k] || ["vegi"])[0];
+const katFarbe = k => `var(${(KAT[k] || [0, "--c-petrol"])[1]})`;
+
+const UNTER_TITEL = { "Fleisch": "Fleischsorte", "Fisch": "Fischart", "Dessert": "Dessertart", "Frühstück": "Frühstücksart", "Vegetarisch": "Vegi-Art" };
+// „Coaching-Plan“, „Energie-Routine“ und „Online“ stehen unter „Für mich“, nicht hier
+const MERKMALE = ["vegetarisch", "vegan", "glutenfrei", "low carb", "zuckerfrei", "kinderfreundlich", "einfrierbar", "Meal Prep", "Ofen", "Grill", "Festtag"];
+const zustand = { gruppe: "", art: "", unter: "", suche: "", protein: 0, zeit: 0, merk: new Set(), thermomix: false, gemerkt: false, sort: "name" };
+
+let sterne = new Set();
+try { sterne = new Set(JSON.parse(localStorage.getItem("kb-sterne") || "[]")) } catch (e) {}
+function sterneSpeichern() { try { localStorage.setItem("kb-sterne", JSON.stringify([...sterne])) } catch (e) {} }
+
+const norm = s => (s || "").toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss");
+REZEPTE.forEach(r => { r._such = norm([r.titel, r.kurz, r.unterart, r.kategorie, r.herkunft, ...r.zutaten].join(" ")) });
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const SEITEN = [
+  ["Cookidoo", "https://cookidoo.ch/search/de-CH?query="],
+  ["Swissmilk", "https://www.swissmilk.ch/de/suche/?q="],
+  ["Migusto", "https://migusto.migros.ch/de/rezept-uebersicht.html?q="],
+  ["Fooby", "https://fooby.ch/de/suche.html?query="],
+  ["Betty Bossi", "https://www.bettybossi.ch/de/suche/?q="],
+];
+const suchKnoepfe = q => SEITEN.map(([n, u]) =>
+  `<a href="${u + encodeURIComponent(q)}" target="_blank" rel="noopener">${n} ↗</a>`).join("");
+const passtPlan = r => r.protein >= 30 && r.fett <= 30;
+const zahl = (r, k) => (r.naehrwerte === "geschätzt" ? "~" : "") + r[k];
+const umschalten = (set, m) => set.has(m) ? set.delete(m) : set.add(m);
+
+function chip(text, an, klick, anzahl, extraKlasse) {
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "chip" + (extraKlasse ? " " + extraKlasse : "");
+  b.setAttribute("aria-pressed", an ? "true" : "false");
+  b.innerHTML = esc(text) + (anzahl != null ? ` <small>${anzahl}</small>` : "");
+  b.onclick = klick; return b;
+}
+
+function gefiltert(ohne) {
+  const q = norm(zustand.suche).split(/\s+/).filter(Boolean);
+  return REZEPTE.filter(r =>
+    (ohne === "kat" || !zustand.gruppe || gruppeVon(zustand.gruppe).passt(r)) &&
+    (ohne === "kat" || ohne === "art" || !zustand.art || r.kategorie === zustand.art) &&
+    (ohne === "unter" || !zustand.unter || r.unterart === zustand.unter) &&
+    r.protein >= zustand.protein &&
+    (!zustand.zeit || (r.zeit_min && r.zeit_min <= zustand.zeit)) &&
+    (!zustand.thermomix || r.thermomix) &&
+    (!zustand.gemerkt || sterne.has(r.id)) &&
+    [...zustand.merk].every(m => r.merkmale.includes(m)) &&
+    q.every(w => r._such.includes(w)));
+}
+
+function zaehlen(liste, feld) {
+  const z = {}; liste.forEach(r => { const k = r[feld]; if (k) z[k] = (z[k] || 0) + 1 }); return z;
+}
+
+// Oben die fünf Wege, wie Patricia sucht (02.11.: „z'nacht, frühstück, hauptgang … als zmittag, dessert und brot“);
+// „Weiteres“ hält den Rest erreichbar. Znacht liegt quer über den Kategorien (Merkmal znacht).
+const GRUPPEN = [
+  { name: "Znacht", icon: "mond", farbe: "--c-orange", passt: r => r.znacht, artTitel: "Was für ein Znacht?",
+    hinweis: "Einfach, ohne Menü: Suppe, Wähe, Gschwellti, Milchreis, Bowls, Falafel …" },
+  { name: "Frühstück", icon: "fruehstueck", farbe: "--c-ocker", kats: ["Frühstück"] },
+  { name: "Zmittag", icon: "fleisch", farbe: "--c-rost", kats: ["Fleisch", "Fisch", "Vegetarisch"], artTitel: "Fleisch, Fisch oder Vegi" },
+  { name: "Dessert", icon: "dessert", farbe: "--c-blau", kats: ["Dessert"] },
+  { name: "Brot & Gebäck", icon: "brot", farbe: "--c-ocker", kats: ["Brot & Gebäck"] },
+  // ohne Kachel: hält die übrigen Kategorien für die Liste links zusammen
+  { name: "Weiteres", icon: "glas", farbe: "--c-petrol", artTitel: "Was suchst du?", ohneKachel: true,
+    kats: ["Suppe", "Salat", "Beilage", "Snack & Apéro", "Getränk", "Eingemachtes & Vorrat", "Sauce & Basis"] },
+];
+GRUPPEN.forEach(g => { if (!g.passt) g.passt = r => g.kats.includes(r.kategorie) });
+const gruppeVon = n => GRUPPEN.find(g => g.name === n);
+
+function schnellZeichnen() {
+  const box = $("schnell"); box.innerHTML = "";
+  GRUPPEN.filter(g => !g.ohneKachel).forEach(g => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "kachel"; b.style.setProperty("--c", `var(${g.farbe})`);
+    b.setAttribute("aria-pressed", zustand.gruppe === g.name ? "true" : "false");
+    b.innerHTML = `<span class="rund">${icon(g.icon)}</span><span><b>${esc(g.name)}</b><br><small>${REZEPTE.filter(g.passt).length.toLocaleString("de-CH")} Rezepte</small></span>`;
+    b.onclick = () => { zustand.gruppe = zustand.gruppe === g.name ? "" : g.name; zustand.art = ""; zustand.unter = ""; neu() };
+    box.append(b);
+  });
+}
+
+function filterZeichnen() {
+  // Volle Liste links; eine Kategorie wählt dazu die passende Kachel oben, damit beides gleich steht
+  const g = gruppeVon(zustand.gruppe);
+  const kats = zaehlen(gefiltert("kat"), "kategorie");
+  const aBox = $("alleKats"); aBox.innerHTML = "";
+  aBox.append(chip("Alle", !zustand.gruppe, () => { zustand.gruppe = ""; zustand.art = ""; zustand.unter = ""; neu() }));
+  aBox.append(chip("Znacht", zustand.gruppe === "Znacht", () => {
+    zustand.gruppe = zustand.gruppe === "Znacht" ? "" : "Znacht"; zustand.art = ""; zustand.unter = ""; neu() },
+    gefiltert("kat").filter(r => r.znacht).length, "plan"));
+  Object.keys(kats).sort((a, b) => a.localeCompare(b, "de")).forEach(k => {
+    const an = zustand.gruppe !== "Znacht" && (zustand.art === k || (g && g.kats && g.kats.length === 1 && g.kats[0] === k));
+    aBox.append(chip(k, an, () => {
+      const ziel = GRUPPEN.find(x => x.kats && x.kats.includes(k));
+      if (an) { zustand.gruppe = ""; zustand.art = "" }
+      else { zustand.gruppe = ziel.name; zustand.art = ziel.kats.length > 1 ? k : "" }
+      zustand.unter = ""; neu() }, kats[k]));
+  });
+
+  // Art innerhalb von Znacht (Suppe, Vegetarisch …); bei den anderen Kacheln reicht die Liste oben
+  const arten = g ? zaehlen(gefiltert("art"), "kategorie") : {};
+  const kBox = $("kategorien"); kBox.innerHTML = "";
+  $("artGruppe").hidden = !g || g.name !== "Znacht";
+  $("artTitel").textContent = g && g.artTitel || "Art";
+  $("artHinweis").textContent = g && g.hinweis || "";
+  if (Object.keys(arten).length > 1) Object.keys(arten).sort((a, b) => a.localeCompare(b, "de")).forEach(k =>
+    kBox.append(chip(k, zustand.art === k, () => { zustand.art = zustand.art === k ? "" : k; zustand.unter = ""; neu() }, arten[k])));
+
+  // Unterart (Fleischsorte, Dessertart …), sobald feststeht, um welche Kategorie es geht
+  const kat = zustand.art || (g && g.kats && g.kats.length === 1 ? g.kats[0] : "");
+  const uBox = $("unterarten"); uBox.innerHTML = "";
+  const unter = kat ? zaehlen(gefiltert("unter"), "unterart") : {};
+  $("unterGruppe").hidden = !Object.keys(unter).length;
+  $("unterTitel").textContent = UNTER_TITEL[kat] || "Art";
+  Object.keys(unter).sort((a, b) => a.localeCompare(b, "de")).forEach(u =>
+    uBox.append(chip(u, zustand.unter === u, () => { zustand.unter = zustand.unter === u ? "" : u; neu() }, unter[u])));
+
+  const pBox = $("protein"); pBox.innerHTML = "";
+  [[0, "egal"], [20, "ab 20 g"], [30, "ab 30 g"], [40, "ab 40 g"]].forEach(([w, t]) =>
+    pBox.append(chip(t, zustand.protein === w, () => { zustand.protein = w; neu() })));
+
+  const fBox = $("fuermich"); fBox.innerHTML = "";
+  fBox.append(chip("★ Gemerkt", zustand.gemerkt, () => { zustand.gemerkt = !zustand.gemerkt; neu() }, sterne.size));
+  fBox.append(chip("Thermomix", zustand.thermomix, () => { zustand.thermomix = !zustand.thermomix; neu() }));
+  const NAMEN = { "Coaching-Plan": "Aus meinem Coaching", "Energie-Routine": "Meine Energie-Routine", "Online": "Online-Rezepte" };
+  Object.keys(NAMEN).forEach(m => {
+    const n = REZEPTE.filter(r => r.merkmale.includes(m)).length;
+    if (n) fBox.append(chip(NAMEN[m], zustand.merk.has(m), () => { umschalten(zustand.merk, m); neu() }, n));
+  });
+
+  const zBox = $("zeit"); zBox.innerHTML = "";
+  [[0, "egal"], [15, "bis 15 Min"], [30, "bis 30 Min"], [60, "bis 1 Std"]].forEach(([w, t]) =>
+    zBox.append(chip(t, zustand.zeit === w, () => { zustand.zeit = w; neu() })));
+
+  const mBox = $("merkmale"); mBox.innerHTML = "";
+  const da = new Set(REZEPTE.flatMap(r => r.merkmale));
+  MERKMALE.filter(m => da.has(m)).forEach(m =>
+    mBox.append(chip(m, zustand.merk.has(m), () => { umschalten(zustand.merk, m); neu() })));
+}
+
+function karte(r, n) {
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "karte";
+  b.style.setProperty("--c", katFarbe(r.kategorie));
+  b.style.setProperty("--n", Math.min(n, 20));
+  b.innerHTML = `<span class="kopfzeile"><span class="rund">${icon(katIcon(r.kategorie))}</span>
+      ${esc(r.unterart || r.kategorie)}${sterne.has(r.id) ? '<span class="stern" aria-label="gemerkt">★</span>' : ""}</span>
+    <h2>${esc(r.titel)}</h2>
+    <p>${esc(r.kurz)}</p>
+    <div class="fusszeile">
+      <span class="meter"><span>${zahl(r, "protein")} g Protein</span><i style="--w:${Math.min(100, r.protein * 2)}%"></i></span>
+      ${r.zeit_min ? `<span class="mini">${icon("uhr")} ${r.zeit_min}′</span>` : ""}
+      ${r.thermomix ? '<span class="tm">TM</span>' : ""}
+    </div>`;
+  b.onclick = () => oeffnen(r);
+  return b;
+}
+
+function ueberschrift() {
+  const teile = [zustand.gruppe, zustand.art, zustand.unter].filter((x, i, a) => x && a.indexOf(x) === i);
+  if (teile.length) return teile.join(" · ");
+  if (zustand.gemerkt) return "Gemerkt";
+  return zustand.suche.trim() ? "Gefunden" : "Alle Rezepte";
+}
+
+function listeZeichnen() {
+  const liste = gefiltert();
+  const s = zustand.sort;
+  liste.sort((a, b) => s === "protein" ? b.protein - a.protein
+    : s === "zeit" ? (a.zeit_min || 999) - (b.zeit_min || 999)
+    : a.titel.localeCompare(b.titel, "de"));
+  const box = $("karten"); box.innerHTML = "";
+  liste.slice(0, zeigen).forEach((r, i) => box.append(karte(r, i)));
+  $("mehr").hidden = liste.length <= zeigen;
+  $("mehr").textContent = `Weitere ${Math.min(60, liste.length - zeigen)} zeigen`;
+  $("ueberschrift").firstChild.textContent = ueberschrift() + " ";
+  $("treffer").textContent = liste.length === 1 ? "1 Rezept" : liste.length.toLocaleString("de-CH") + " Rezepte";
+  $("leer").hidden = liste.length > 0;
+  const begriff = zustand.suche.trim() || zustand.unter || "";
+  $("auswaertsText").textContent = begriff ? `„${begriff}“ auf deinen Rezeptseiten suchen` : "Auf deinen Rezeptseiten suchen";
+  $("auswaerts").innerHTML = suchKnoepfe(begriff);
+  return liste;
+}
+
+// bei über 3'000 Rezepten nicht alle Karten auf einmal zeichnen
+let zeigen = 60;
+function neu() { zeigen = 60; schnellZeichnen(); filterZeichnen(); listeZeichnen() }
+
+function oeffnen(r) {
+  const art = [r.kategorie, r.unterart].filter(Boolean).join(" · ");
+  const umfang = 2 * Math.PI * 44;
+  const anteil = Math.min(1, r.protein / 50);
+  $("blattInhalt").innerHTML = `
+    <div class="blatt-kopf" style="--c:${katFarbe(r.kategorie)}">
+      <span class="gross">${icon(katIcon(r.kategorie))}</span>
+      <div>
+        <span class="art">${esc(art)}</span>
+        <h2>${esc(r.titel)}</h2>
+        <div class="meta">
+          ${r.portionen ? `<span class="mini">${icon("personen")} ${r.portionen} ${r.portionen === 1 ? "Portion" : "Personen"}</span>` : ""}
+          ${r.zeit_min ? `<span class="mini">${icon("uhr")} ${r.zeit_min} Min</span>` : ""}
+          ${r.thermomix ? `<span class="mini tm">Thermomix</span>` : ""}
+          ${r.znacht ? `<span class="mini">${icon("mond")} Znacht</span>` : ""}
+        </div>
+      </div>
+      <button type="button" class="schliessen" id="zu" aria-label="Schliessen">×</button>
+    </div>
+    <div class="blatt-rumpf">
+      <p>${esc(r.kurz)}</p>
+      <div class="naehr">
+        <div class="ring">
+          <svg viewBox="0 0 100 100" aria-hidden="true"><circle class="hg" cx="50" cy="50" r="44"/>
+            <circle class="vg" cx="50" cy="50" r="44" stroke-dasharray="${(anteil * umfang).toFixed(1)} ${umfang.toFixed(1)}"/></svg>
+          <div><b>${zahl(r, "protein")} g</b><span>Protein</span></div>
+        </div>
+        <div class="werte">
+          <div><b>${zahl(r, "kcal")}</b><span>kcal</span></div>
+          <div><b>${zahl(r, "kohlenhydrate")} g</b><span>Kohlenhydrate</span></div>
+          <div><b>${zahl(r, "fett")} g</b><span>Fett</span></div>
+          <p>Je Portion · ${r.naehrwerte === "geschätzt" ? "geschätzt aus den Zutaten" : "so steht es im Rezept"}${passtPlan(r) ? ' · <span class="plan-ok">passt in deinen Plan</span>' : ""}</p>
+        </div>
+      </div>
+      ${r.zutaten.length ? `<div class="zwei">
+        <section><h3>Zutaten</h3><ul class="zutaten">${r.zutaten.map((z, i) =>
+          `<li><label><input type="checkbox" id="z-${i}"><span>${esc(z)}</span></label></li>`).join("")}</ul></section>
+        <section><h3>So geht's</h3><ol class="schritte">${r.schritte.map(z => `<li><span>${esc(z)}</span></li>`).join("")}</ol></section>
+      </div>` : `<p class="hinweis" style="font-size:1rem">Zutaten und Schritte stehen auf der Website. Tipp auf „Originalrezept“.</p>`}
+      <div class="aktionen">
+        <button type="button" class="knopf voll" id="merken">${sterne.has(r.id) ? "★ Gemerkt" : "☆ Merken"}</button>
+        ${r.link ? `<a class="knopf" href="${esc(r.link)}" target="_blank" rel="noopener">Originalrezept ↗</a>` : ""}
+        <span>${r.datei ? "Aus: " + esc(r.datei) : ""}${r.herkunft ? " · " + esc(r.herkunft) : ""}</span>
+      </div>
+      <div class="auswaerts"><b>Ähnliches suchen</b><div class="links">${suchKnoepfe(r.titel)}</div></div>
+    </div>`;
+  $("zu").onclick = () => $("blatt").close();
+  $("merken").onclick = () => {
+    umschalten(sterne, r.id); sterneSpeichern();
+    $("merken").textContent = sterne.has(r.id) ? "★ Gemerkt" : "☆ Merken"; neu();
+  };
+  $("blatt").showModal();
+  $("blatt").scrollTop = 0;
+}
+
+$("lupe").innerHTML = icon("lupe");
+$("zufall").innerHTML = icon("wuerfel") + " Was koche ich heute?";
+$("deko").innerHTML = ["suppe", "brot", "fisch", "dessert", "salat", "fruehstueck", "fleisch", "glas"].map(icon).join("");
+$("blatt").addEventListener("click", e => { if (e.target === $("blatt")) $("blatt").close() });
+$("suchfeld").addEventListener("input", e => { zustand.suche = e.target.value; neu() });
+$("sucheForm").addEventListener("submit", e => e.preventDefault());
+$("sortierung").addEventListener("change", e => { zustand.sort = e.target.value; zeigen = 60; listeZeichnen() });
+$("mehr").onclick = () => { zeigen += 60; listeZeichnen() };
+$("zufall").onclick = () => { const l = gefiltert(); if (l.length) oeffnen(l[Math.floor(Math.random() * l.length)]) };
+$("zahl").textContent = REZEPTE.length.toLocaleString("de-CH") + " Rezepte · deine Sammlung";
+neu();
+</script>

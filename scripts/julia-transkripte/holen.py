@@ -29,7 +29,7 @@ KURS = {
     133269: "Content Kalender", 147998: "Story Bibliothek", 154216: "Die Minikurs Strategie",
     164570: "Test Reels", 165653: "Content (der verkauft)", 165654: "Launchen", 165655: "Automationen",
     165656: "Magnetisch Verkaufen", 165657: "Werbeanzeigen", 175690: "Interaktions-Booster-Challenge",
-    189960: "ARIA", 190934: "Prompt Bibliothek", 197805: "KI Kurs", 213147: "100k Blueprint",
+    189960: "ARIA", 900001: "LIVE Calls mit Julia", 900002: "Experten Calls", 190934: "Prompt Bibliothek", 197805: "KI Kurs", 213147: "100k Blueprint",
 }
 
 KOPF = ("Quelle: Julia Trost, Kurs „{kurs}“ · Vimeo {id} · Titel „{titel}“ · {min} Min.\n"
@@ -47,7 +47,7 @@ def norm(s):
 
 def hole(url):
     bitte = urllib.request.Request(url, headers={
-        "User-Agent": "Mozilla/5.0", "Referer": "https://kurse.juliatrost.de/", "Accept": "*/*"})
+        "User-Agent": "Mozilla/5.0", "Referer": os.environ.get("JT_REFERER", "https://kurse.juliatrost.de/"), "Accept": "*/*"})
     with urllib.request.urlopen(bitte, timeout=60) as antwort:
         return antwort.read().decode("utf-8")
 

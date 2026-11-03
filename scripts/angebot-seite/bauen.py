@@ -48,7 +48,7 @@ SKIP = re.compile(r"^(Vorlagen und Unterlagen|Lücken|Widersprüche)")
 # Was in keinem der Quell-Bausteine so klar steht und für ein Angebotspaket
 # entscheidet. Jede Zeile stammt aus CLAUDE.md oder dem Gedächtnis — nichts neu.
 REGELN = """== REGELN FÜR JEDES ANGEBOTSPAKET ==
-- Preis-Kette: Bump günstiger als das Hauptprodukt. Upsell teurer als der Bump, aber günstiger als das Hauptprodukt. Downsell günstiger als das Upsell. Jede Zahl mit Rechnung.
+- Preis-Kette: Bump günstiger als das Hauptprodukt, 30 bis 60 % unter seinem normalen Preis. Upsell teurer als der Bump, darf auch teurer sein als das Hauptprodukt (Patricias Entscheid 31.10.2026: „darum heisst er ja UPsell“), aber immer rabattiert. Downsell günstiger als das Upsell. Jede Zahl mit Rechnung.
 - Minikurse kosten fix 39 CHF. Grosse Kurse bisher 333 CHF. Bei einem grossen Angebot (Kurs, 1:1, Gruppe) gilt der Preis aus dem Bauplan, auch wenn er von 333 abweicht. Die Mum Business Academy (MBA) ist das Endprodukt aller Funnels (997, regulär 1347).
 - Keine Geld-zurück-Garantie. Nie.
 - Kurse werden über die Veränderung verkauft, nie über Modul-, Kapitel-, Lektions- oder Call-Zahlen. Im Kursaufbau stehen Module, in Verkaufstexten nicht.
