@@ -2256,7 +2256,25 @@
   .tr-datum input { background: var(--ground); border: 1px solid var(--line); border-radius: 7px; padding: 5px 7px; font-size: 12px; }
   details.tr-neu { margin-top: 26px; }
   details.tr-neu > summary { cursor: pointer; font-family: var(--display); font-size: 17px; }
-  details.tr-neu[open] > summary { margin-bottom: 10px; }</style>
+  details.tr-neu[open] > summary { margin-bottom: 10px; }
+  /* Reiter „Ölschule-Calls" (patch-academy.py) */
+  .ac-suche input { width: 100%; background: var(--ground); border: 1px solid var(--line);
+                    border-radius: 8px; padding: 9px 12px; font-size: 14px; }
+  .ac-suche { margin-bottom: 14px; }
+  .ac-call { margin-bottom: 10px; padding: 0; }
+  .ac-call > summary { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap;
+                       padding: 13px 16px; cursor: pointer; list-style: none; }
+  .ac-call > summary::-webkit-details-marker { display: none; }
+  .ac-call > summary::before { content: "\25b6"; font-size: 9px; color: var(--ink-soft);
+                               transition: transform .15s ease; }
+  .ac-call[open] > summary::before { transform: rotate(90deg); }
+  .ac-datum { font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; min-width: 78px; }
+  .ac-titel { font-family: var(--display); font-size: 16px; flex: 1; min-width: 0; }
+  .ac-treffer { font-size: 12px; background: var(--orange-soft); color: var(--warn);
+                border-radius: 999px; padding: 1px 9px; }
+  .ac-inhalt { padding: 0 18px 16px; border-top: 1px solid var(--line); }
+  .ac-inhalt table { display: block; overflow-x: auto; }
+</style>
 
 <div class="shell">
   <header class="kopfleiste">
@@ -3126,6 +3144,7 @@
     { id: "anliegen", label: "Anliegen" },
     { id: "bizwege", label: "Business-Wege" },
     { id: "rising", label: "Rising Leaders" },
+    { id: "academy", label: "Ölschule-Calls" },
     { g: "Nachschlagen" },
     { id: "kurse", label: "Kurs-Inhalte" },
     { id: "bibliothek", label: "Wissensbibliothek" },
@@ -6818,6 +6837,92 @@
     });
   }
 
+  /* ======================================================================
+     Reiter "Ölschule-Calls" — doTERRA -> Ölschule-Calls
+     (seit 03.11.2026, patch-academy.py)
+
+     Patricia: „kannst du mir die auch irgendwie als wissensdatenbank ins
+     cockpit unter doTERRA ablegen?" — je Academy-Call die Learnings zum
+     Nachlesen, mit Suche über alle Calls.
+     Daten: Sammlung "academy", ein Dokument je Call {datum, titel, md},
+     gebaut von scripts/doterra/academy-calls-pdf.mjs (dieselbe Quelle wie
+     die PDFs, nur die Learnings, kein Wortlaut).
+     ====================================================================== */
+  var academy = null;
+  var academySuche = "";
+
+  function academyLaden(fertig) {
+    if (academy) { fertig(); return; }
+    var lokal = lsGet("academy", null);
+    if (lokal) { academy = lokal; fertig(); }
+    if (!db) {
+      if (!lokal) setTimeout(function () { if (db) academyLaden(fertig); }, 1500);
+      return;
+    }
+    db.collection("academy").limit(100).get().then(function (snap) {
+      var calls = [];
+      snap.docs.forEach(function (d) { calls.push(tief(d.data())); });
+      calls.sort(function (a, b) { return String(b.datum).localeCompare(String(a.datum)); });
+      academy = { items: calls };
+      lsSet("academy", academy);
+      fertig();
+    }).catch(function () {
+      if (!lokal) { academy = { items: [], fehler: true }; fertig(); }
+    });
+  }
+
+  function renderAcademy(main) {
+    main.innerHTML =
+      '<div class="page-head"><div><h1>Ölschule-Calls</h1>' +
+      '<p>Was in den Calls der Ölschule Academy gelehrt wurde, je Call zum Nachlesen. ' +
+      'Schulungswissen mit Gesundheitsaussagen: für dich, nicht 1:1 für Kundinnen.</p></div></div>' +
+      '<div class="panel ac-suche"><input type="search" placeholder="In allen Calls suchen: Öl, Thema, Stichwort …" ' +
+      'value="' + esc(academySuche) + '"></div>' +
+      '<div id="acinhalt"><div class="panel"><div class="empty">Lädt …</div></div></div>';
+    var feld = main.querySelector(".ac-suche input");
+    feld.addEventListener("input", function () {
+      academySuche = feld.value;
+      academyListe(main.querySelector("#acinhalt"));
+    });
+    academyLaden(function () { academyListe(main.querySelector("#acinhalt")); });
+  }
+
+  function academyListe(box) {
+    if (!box) return;
+    var alle = (academy && academy.items) || [];
+    if (!alle.length) {
+      box.innerHTML = '<div class="panel"><div class="empty">' +
+        (academy && academy.fehler ? "Die Calls liessen sich nicht laden." : "Noch keine Calls abgelegt.") +
+        '</div></div>';
+      return;
+    }
+    var s = academySuche.trim().toLowerCase();
+    var liste = alle.filter(function (c) {
+      return !s || (c.titel + " " + c.md).toLowerCase().indexOf(s) >= 0;
+    });
+    if (!liste.length) {
+      box.innerHTML = '<div class="panel"><div class="empty">Kein Call nennt „' + esc(academySuche) + '“.</div></div>';
+      return;
+    }
+    box.innerHTML = liste.map(function (c, i) {
+      var treffer = "";
+      if (s) {
+        var n = (c.md.toLowerCase().split(s).length - 1);
+        treffer = '<span class="ac-treffer">' + n + "× gefunden</span>";
+      }
+      return '<details class="panel ac-call" data-i="' + i + '"><summary>' +
+        '<span class="ac-datum">' + esc(c.datumText || c.datum) + '</span>' +
+        '<span class="ac-titel">' + esc(c.titel) + '</span>' + treffer +
+        '</summary><div class="ac-inhalt"></div></details>';
+    }).join("");
+    box.querySelectorAll(".ac-call").forEach(function (d) {
+      d.addEventListener("toggle", function () {
+        var ziel = d.querySelector(".ac-inhalt");
+        if (d.open && !ziel.innerHTML) ziel.innerHTML = zgMarkdown(liste[+d.dataset.i].md);
+      });
+    });
+  }
+
   /* Reiter „Ideen von anderen": was bei den beobachteten Profilen deutlich
      ueber deren eigenem Schnitt lag. Gebaut von ideen-extern-bauen.py.
      Siehe Kopf von patch-ideen-extern.py, warum der Reiter bewusst nicht
@@ -7334,7 +7439,7 @@
     { id: "mamaceo", label: "Mama-CEO", saeule: "Mama-CEO",
       tabs: ["aufgaben", "erledigt", "launches", "monatsbogen", "wochenbogen", "ziele", "zahlen"] },
     { id: "doterra", label: "doTERRA", saeule: "doTERRA",
-      tabs: ["oelwissen", "anliegen", "bizwege", "rising", "rangtracker", "team"] },
+      tabs: ["oelwissen", "anliegen", "bizwege", "rising", "academy", "rangtracker", "team"] },
     { id: "ki", label: "KI", saeule: "KI", tabs: ["pia", "wissen", "suche"] }
   ];
   /* Kuerzere Namen fuer die Unterleiste — die Bereichs-Pille sagt schon,
@@ -16467,6 +16572,7 @@
     else if (activeTab === "anliegen") renderAnliegen(main);
     else if (activeTab === "bizwege") renderBizwege(main);
     else if (activeTab === "rising") renderRising(main);
+    else if (activeTab === "academy") renderAcademy(main);
     else if (activeTab === "fertig") renderFertig(main);
     else if (activeTab === "gepostet") { renderGepostet(main); auswertungEinsetzen(main); }
     else if (activeTab === "zahlen") renderZahlen(main);
