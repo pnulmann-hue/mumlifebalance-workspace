@@ -127,7 +127,7 @@ Foto mit Farbfläche, ein leuchtendes Wort, Karten mit grosser Nummer, Handschri
 Akzent. Übernommen ist nur der Aufbau. Farben, Schriften und Texte sind ihre.
 
 ```bash
-node scripts/karussell-render/folien.mjs <definition.json> <ordner> [--thema=creme|dunkel]
+node scripts/karussell-render/folien.mjs <definition.json> <ordner> [--akzent=dunkel|creme|petrol]
 ```
 
 Vorlage zum Kopieren: `outputs/karussells/master-vorlage/muster.json`. `thema` gilt je
@@ -142,10 +142,18 @@ wird betont, `[Platzhalter]` in Aufträgen wird farbig gesetzt.
 | `auftrag` | Prompts oder Sätze zum Abtippen | `pille` · `zaehler` · `titel` · `karten: [{label, text}]` |
 | `aufruf` | letzte Folie, immer mit `letzte: true` | `oben` · `wort` · `absatz` · `pille` |
 
-**Der Standard-Look (Patricias Entscheid 04.11.2026):** Definition auf `thema: creme`, nur `titel` und `aufruf` tragen `thema: dunkel`. So steht es in `muster.json`.
+**Der Standard-Look (Patricias Entscheid 04.11.2026):** Die Folien dazwischen sind Creme, Cover und letzte Folie tragen die Akzentfarbe. Die steht als `akzent` in der Definition und wechselt von Beitrag zu Beitrag, innerhalb eines Karussells bleibt sie gleich.
+
+| `akzent` | Wann | Wirkung |
+|---|---|---|
+| `dunkel` | Standard, auch für Lead-Posts mit Foto | Dunkelblau mit Leuchtwort |
+| `creme` | Lead-Post ohne Foto, heller Himmel im Foto | hell, oranges Wort ohne Leuchten |
+| `petrol` | nur Reichweiten-Posts, verlangt `"reichweite": true` | Petrol mit hellem Leuchtwort |
+
+Vor der Wahl die letzten zwei Cover im Feed ansehen und nie dieselbe Farbe zweimal hintereinander nehmen. Das Skript bricht bei Petrol ohne `reichweite` ab, weil grüne Lead-Cover im Juni 2026 eingebrochen sind.
 
 **Regeln, die die Vorlage nicht selbst erzwingt:**
-- Das dunkle Cover gehört zum Foto-Platz im Feed. Ein Cover ohne Foto wäre dunkel-vollflächig und ist bei Lead-Posts verboten, dort `thema: creme` setzen.
+- Das dunkle Cover gehört zum Foto-Platz im Feed. Ein Cover ohne Foto wäre dunkel-vollflächig und ist bei Lead-Posts verboten, dort `akzent: creme` setzen.
 - Orange trägt je Folie **ein** Wort, Zahlen und Etiketten sind Petrol. Deshalb kein Petrol auf dem Cover.
 - Silver South Script nur für kurze Akzente (`links`, `rechts`, `notiz`, „Kommentier“). Ganze Sätze sind darin unlesbar, beim ersten Render ist genau das passiert.
 - `fotoY` schiebt das Foto nach unten, die Farbfläche füllt den Rest. Das Gesicht liegt damit unter dem Hook. Das fertige Cover immer ansehen: Verläuft ein heller Himmel unter der dunklen Fläche, entsteht ein weisses Band. Dann ein Foto mit ruhigem Hintergrund nehmen oder `thema: creme`.

@@ -47,7 +47,8 @@ Liegt in `context/MumLifeBalance-Logo/`:
 - **Text**: Dunkelblau (#29556d) oder Text-Farbe (#0c1c30)
 - **Akzent**: Orange (#dc822e) auf **einem** Wort pro Folie
 - **Petrol**: nur für grosse Zahlen (Fehler-Listen-Hintergrund-Zahl) oder Akzent-Streifen
-- **Dunkelblau-Moment**: in der Master-Vorlage **Cover und letzte Folie** (Patricias Entscheid 04.11.2026), alle Folien dazwischen Creme. In anderen Karussells nur **einmal** als Farbwechsel (z.B. Lösungs-Folie) — schafft optischen Reset
+- **Akzentfarbe**: in der Master-Vorlage tragen **Cover und letzte Folie** Dunkelblau, Creme oder bei Reichweiten-Posts Petrol, von Beitrag zu Beitrag wechselnd (Patricias Entscheid 04.11.2026), alle Folien dazwischen Creme
+- **Dunkelblau-Moment**: In anderen Karussells nur **einmal** als Farbwechsel (z.B. Lösungs-Folie) — schafft optischen Reset
 
 ## Foto-Integration
 

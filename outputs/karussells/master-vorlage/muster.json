@@ -1,9 +1,10 @@
 {
   "thema": "creme",
+  "akzent": "dunkel",
+  "reichweite": false,
   "folien": [
     {
       "typ": "titel",
-      "thema": "dunkel",
       "foto": "../../_bild-editor/assets/s03.jpg",
       "fotoY": 510,
       "oben": "Gratis-Ideen",
@@ -124,7 +125,6 @@
     },
     {
       "typ": "aufruf",
-      "thema": "dunkel",
       "letzte": true,
       "oben": "Kommentier",
       "wort": "NISCHE",
