@@ -126,40 +126,36 @@ Die Bauweise stammt aus einem Karussell einer Mentorin, das Patricia gefallen ha
 Foto mit Farbfläche, ein leuchtendes Wort, Karten mit grosser Nummer, Handschrift als
 Akzent. Übernommen ist nur der Aufbau. Farben, Schriften und Texte sind ihre.
 
-```bash
-node scripts/karussell-render/folien.mjs <definition.json> <ordner> [--akzent=dunkel|creme|petrol]
-```
+**Bearbeitet wird im Cockpit, auf der Karussell-Karte in der Wochen-Vorschau.** Es gibt einen
+einzigen Zeichner, `scripts/karussell-render/master-zeichner.js`. Er läuft im Cockpit und in
+`folien.mjs`, und beim Freigeben entsteht das Bild aus demselben Code.
 
-Vorlage zum Kopieren: `outputs/karussells/master-vorlage/muster.json`. `thema` gilt je
-Definition oder je Folie, `--thema` überschreibt beides für einen Probelauf. `*Wort*`
-wird betont, `[Platzhalter]` in Aufträgen wird farbig gesetzt.
-
-| `typ` | Wofür | Felder |
+| Layout | Wofür | Felder der Folie |
 |---|---|---|
-| `titel` | Cover | `foto` · `fotoY` · `fotoZoom` · `fotoX` · `schleierVon` · `schleierBis` · `oben` · `zeile1` · `wort` · `zeile2` · `links` · `rechts` |
-| `liste` | Listicle, 3–4 Karten je Folie | `pille` · `zaehler` · `titel` · `karten: [{nr, titel, text, tag}]` · `absatz` · `notiz` |
-| `text` | ein Gedanke, Storytelling, Nuancierung | `pille` · `zaehler` · `titel` · `absatz` · `notiz` |
-| `auftrag` | Prompts oder Sätze zum Abtippen | `pille` · `zaehler` · `titel` · `karten: [{label, text}]` |
-| `aufruf` | letzte Folie, immer mit `letzte: true` | `oben` · `wort` · `absatz` · `pille` |
+| `m-titel` | Cover | `oben` · `headline` mit dem grossen Wort in `*Sternchen*` · `foto` (`s01.jpg`–`s12.jpg`, leer = ohne Foto) · `zoom` · `ox` · `oy` · `links` · `rechts` |
+| `m-liste` | Listicle, 3–4 Karten je Folie, Nummern zählen über alle Folien weiter | `oben` · `body` mit einer Zeile je Karte: `Titel \| Text \| Etikett`, eine Zeile ohne `\|` wird Fliesstext · `notiz` |
+| `m-text` | ein Gedanke, Storytelling, Nuancierung | `oben` · `headline` · `body` · `notiz` |
+| `m-auftrag` | Prompts oder Sätze zum Abtippen | `oben` · `headline` · `body` mit Leerzeile zwischen den Aufträgen, `[Platzhalter]` wird farbig |
+| `m-aufruf` | letzte Folie | `oben` (Handschrift) · `headline` (Stichwort) · `body` · `schild` |
 
-**Der Standard-Look (Patricias Entscheid 04.11.2026):** Die Folien dazwischen sind Creme, Cover und letzte Folie tragen die Akzentfarbe. Die steht als `akzent` in der Definition und wechselt von Beitrag zu Beitrag, innerhalb eines Karussells bleibt sie gleich.
+Ein altes Karussell stellt der Knopf „Auf Master-Vorlage umstellen“ um, das Layout je Folie steht im Auswahlfeld.
 
-| `akzent` | Wann | Wirkung |
+**Die Farbe (Patricias Entscheid 04.11.2026):** Die Folien dazwischen sind Creme. Cover und letzte Folie tragen die Farbe aus `brand`, sie wechselt von Beitrag zu Beitrag.
+
+| `brand` | Auf der Karte | Wann |
 |---|---|---|
-| `dunkel` | Standard, auch für Lead-Posts mit Foto | Dunkelblau mit Leuchtwort |
-| `creme` | Lead-Post ohne Foto, heller Himmel im Foto | hell, oranges Wort ohne Leuchten |
-| `petrol` | nur Reichweiten-Posts, verlangt `"reichweite": true` | Petrol mit hellem Leuchtwort |
+| `mlb_dark` | Dunkelblau | Standard, auch für Lead-Posts mit Foto |
+| `mlb_light` | Beige | Lead-Post ohne Foto, heller Himmel im Foto; das Wort leuchtet hier nicht |
+| `mlb_teal` | Petrol | nur Reichweiten-Posts |
 
-Vor der Wahl die letzten zwei Cover im Feed ansehen und nie dieselbe Farbe zweimal hintereinander nehmen. Das Skript bricht bei Petrol ohne `reichweite` ab, weil grüne Lead-Cover im Juni 2026 eingebrochen sind.
+Vor der Wahl die letzten zwei Cover im Feed ansehen und nie dieselbe Farbe zweimal hintereinander nehmen. Petrol bei einem Stichwort warnt die Karte, `folien.mjs` bricht ohne `"reichweite": true` ab, weil grüne Lead-Cover im Juni 2026 eingebrochen sind.
 
 **Regeln, die die Vorlage nicht selbst erzwingt:**
-- Das dunkle Cover gehört zum Foto-Platz im Feed. Ein Cover ohne Foto wäre dunkel-vollflächig und ist bei Lead-Posts verboten, dort `akzent: creme` setzen.
-- Orange trägt je Folie **ein** Wort, Zahlen und Etiketten sind Petrol. Deshalb kein Petrol auf dem Cover.
-- Silver South Script nur für kurze Akzente (`links`, `rechts`, `notiz`, „Kommentier“). Ganze Sätze sind darin unlesbar, beim ersten Render ist genau das passiert.
-- `fotoY` schiebt das Foto nach unten, die Farbfläche füllt den Rest. Das Gesicht liegt damit unter dem Hook. Das fertige Cover immer ansehen: Verläuft ein heller Himmel unter der dunklen Fläche, entsteht ein weisses Band. Dann ein Foto mit ruhigem Hintergrund nehmen oder `thema: creme`.
-- Das Skript warnt, wenn der Inhalt einer Folie unten aus dem Bild läuft.
-
-Fertige Folien als JPEG nach `karussells/<id>/bilder/slide-NN` legen, die Freigabe nimmt sie von dort. Der Zeichner im Cockpit kennt diese Layouts nicht: Eine Textänderung im Cockpit ändert das fertige Bild nicht, dafür die Definition ändern und neu rendern.
+- Das dunkle Cover gehört zum Foto-Platz im Feed. Ein Cover ohne Foto wäre dunkel-vollflächig und ist bei Lead-Posts verboten, dort Beige nehmen.
+- Orange trägt je Folie **ein** Wort, Zahlen und Etiketten sind Petrol.
+- Silver South Script nur für kurze Akzente (`links`, `rechts`, `notiz`, „Kommentier“). Ganze Sätze sind darin unlesbar.
+- Das fertige Cover immer ansehen: Liegt ein heller Himmel unter der dunklen Fläche, entsteht ein helles Band. Dann ein Foto mit ruhigem Hintergrund nehmen oder Beige.
+- Zu viel Text verkleinert die Folie selbst, höchstens auf rund zwei Drittel. Wird sie zu klein, gehört der Text auf zwei Folien.
 
 ---
 
