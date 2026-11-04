@@ -197,6 +197,7 @@ so wie bei Startklar.
 |---|---|---|
 | 7.0 | **Der Kreislauf** *(Vorschlag 13.10.)* | **Erzählen:** sechs Stationen von Verstehen bis Auswerten, und welche Maschine wo arbeitet. **Zeigen:** die Tabelle aus [[12-content-kreislauf-kursmaterial]] |
 | 7.1 | **Die Content-Maschinen im Überblick** | **Erzählen:** ein Skill je Format, alle lesen dieselben Wissensdateien. **Zeigen:** den Ordner mit den Skills und den leeren Wissensdateien daneben |
+| 7.1b | **Wie du die Dateien füllst** | **Zeigen:** fünf eigene Screenshots in den Chat ziehen, Regeln herausziehen lassen, in den `caption`-Skill eintragen. Danach dasselbe mit einem fremden Karussell — und die Grenze dazu. **Sagen:** die Browser-Erweiterung ist die einzige Zusatz-Installation im ganzen Kurs und freiwillig. **Mitgeben:** „So füllst du die Dateien" (liegt im Download von 7.1) |
 | 7.2 | **Caption und Story** | **Zeigen:** Skill laufen lassen mit leerer Wissensdatei → mittelmässiges Ergebnis. Dann mit gefüllter → gutes Ergebnis. **Das ist die wichtigste Demonstration im ganzen Kurs**, weil sie den Unterschied zwischen Maschine und Treibstoff sichtbar macht |
 | 7.3 | **Karussell — vom Text zum fertigen Bild** | **Zeigen:** Folientexte erzeugen, dann der Bild-Editor |
 | 7.4 | **Reel — Rohschnitt aus Rohmaterial** | **Erzählen:** einmal frei sprechen mit Versprechern, die Maschine schneidet. Markieren als Aufbaustufe, drei Programme nötig. **Zeigen:** ein echtes Vorher/Nachher |

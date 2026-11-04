@@ -19,11 +19,11 @@ Bildschirm gezeigt wird und worauf zu achten ist.
 | 4 · Dein Arbeitsplatz | 51 | 9 | https://claude.ai/artifact/H2t9veSbsVwRvrBnwNRRC8 |
 | 5 · Skills | 33 | 8 | https://claude.ai/artifact/9HBSNPBHNKe5tCiQxstF8U |
 | 6 · Bots | 26 | 6 | https://claude.ai/artifact/1XTWypDWxRjnYaJcKRWYtG |
-| 7 · Social Media | 36 | 8 | https://claude.ai/artifact/L8ZwiQpusSWVEwD2tab8bR |
+| 7 · Social Media | 41 | 9 | https://claude.ai/artifact/L8ZwiQpusSWVEwD2tab8bR |
 | 8 · Produkte, Seiten, Mails | 21 | 5 | https://claude.ai/artifact/R42yY89PC29d4rpEsdSyL5 |
 | 9 · Dein Cockpit | 34 | 7 | https://claude.ai/artifact/6m2o6CmrksWiRF8Bg2Woma |
 | 10 · Sicherheit und das Ganze | 27 | 6 | https://claude.ai/artifact/36HjwKA4qvrppPn7pChu9T |
-| **Summe** | **310** | **67** | |
+| **Summe** | **315** | **68** | |
 
 Alle zehn sind **privat** — niemand sonst kann sie öffnen, solange sie nicht
 über das Teilen-Menü der Seite freigegeben werden. Für die Aufnahme reicht das:

@@ -1151,6 +1151,33 @@ Wissensdateien.**
 
 ---
 
+### 7.1b · Wie du die Dateien füllst
+
+**In dieser Lektion:** Du hast das Material schon. Du hast es nur nie
+ausgewertet.
+
+**Das Wichtigste in Kürze:**
+
+- **Weg 1 — deine eigenen Beiträge.** Such fünf, die gut gelaufen sind. Nicht
+  die schönsten, sondern die mit Reaktionen. Screenshots in den Chat ziehen und
+  die Regeln herausziehen lassen. Was dabei herauskommt, ist deine eigene
+  Handschrift — zum ersten Mal aufgeschrieben.
+- **Weg 2 — Beiträge von anderen.** Gut für Formate, die du noch nie gemacht
+  hast. Du lässt die **Bauweise** herausziehen: wie viele Folien, wo der Aufruf
+  steht, wie es aufhört.
+- 🚨 **Die Bauweise ja, die Sätze nie.** Handgriffe gehören niemandem. Geborgte
+  Sätze klingen nach jemand anderem — und genau davon wolltest du ja weg.
+  Wenn du in derselben Nische abschaust, klingen am Ende alle gleich.
+- **Immer in dieser Reihenfolge.** Wer mit fremden Beiträgen anfängt, baut sich
+  eine Stimme zusammen, die ihr nicht gehört, und merkt es erst in drei Monaten.
+- Beide Wege geben dir einen **Anfang**, keine fertige Datei. Was dir am
+  Ergebnis nicht passt, wird eine Regel — sofort.
+
+**📎 Die Anleitung dazu liegt im Download von 7.1**, als Datei
+*„So füllst du die Dateien"*.
+
+---
+
 ### 7.2 · Caption und Story — leer gegen gefüllt
 
 **In dieser Lektion:** Derselbe Befehl zweimal, und der Unterschied erklärt
