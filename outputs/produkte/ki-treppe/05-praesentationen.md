@@ -18,7 +18,7 @@ Bildschirm gezeigt wird und worauf zu achten ist.
 | 3 · Claude Cowork | 23 | 5 | https://claude.ai/artifact/PkXYLdh86SBsKspgmfoJdV |
 | 4 · Dein Arbeitsplatz | 51 | 9 | https://claude.ai/artifact/H2t9veSbsVwRvrBnwNRRC8 |
 | 5 · Skills | 33 | 8 | https://claude.ai/artifact/9HBSNPBHNKe5tCiQxstF8U |
-| 6 · Bots | 23 | 6 | https://claude.ai/artifact/1XTWypDWxRjnYaJcKRWYtG |
+| 6 · Bots | 25 | 6 | https://claude.ai/artifact/1XTWypDWxRjnYaJcKRWYtG |
 | 7 · Social Media | 36 | 8 | https://claude.ai/artifact/L8ZwiQpusSWVEwD2tab8bR |
 | 8 · Produkte, Seiten, Mails | 21 | 5 | https://claude.ai/artifact/R42yY89PC29d4rpEsdSyL5 |
 | 9 · Dein Cockpit | 34 | 7 | https://claude.ai/artifact/6m2o6CmrksWiRF8Bg2Woma |

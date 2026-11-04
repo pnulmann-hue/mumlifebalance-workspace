@@ -1029,9 +1029,9 @@ möglich ist.
 
 **Das Wichtigste in Kürze:**
 
-- **Vier Beispiele aus vier Ecken meines Lebens:** Garten · Küche · Business ·
-  Haushalt. Zwei davon haben mit Arbeit gar nichts zu tun.
-- **Was alle vier gemeinsam haben:** Sie nehmen mir keine Entscheidung ab. Sie
+- **Drei Beispiele aus drei Ecken meines Lebens:** Garten · Küche · Business.
+  Zwei davon haben mit Arbeit gar nichts zu tun.
+- **Was alle drei gemeinsam haben:** Sie nehmen mir keine Entscheidung ab. Sie
   legen mir etwas hin, und ich schaue drauf.
 - Der häufigste Anfängerfehler ist ein Bot, der etwas selbst erledigt. Ein Bot,
   der etwas vorbereitet, ist mehr wert und macht weniger Ärger.
@@ -1674,7 +1674,7 @@ heraus.
 | 4.3 | **Arbeitsplatz-Grundgerüst** — ZIP mit den fünf Ordnern (je eine Liesmich), `CLAUDE.md` zum Ausfüllen und **vier Befehlen** (`/start` · `/shutdown` · `/create-plan` · `/implement`) in entschlackter Fassung ✅ gebaut, liegt in `Downloads/Mein-Business-Grundgeruest.zip` · Quelle: `scripts/ki-kurs/grundgeruest-bauen.py --zip` |
 | 4.4 | **`CLAUDE.md`-Anleitung** — fünf Teile, je mit Beispiel von Sandra und einem Feld zum Ausfüllen (Google Doc) ✅ |
 | 5.8 | Leeres Skill-Gerüst (Google Doc, zum Ausfüllen) ✅ |
-| 6.3 | Bot-Gerüst Telegram |
+| 6.3 | **Bot-Gerüst Telegram** — ZIP mit vier Dateien: ein fertiger Bot, dem nur der Schlüssel (`.env`) und der Auftrag (`auftrag.md`) fehlen, dazu eine Anleitung in vier Schritten ✅ gebaut, liegt in `outputs/produkte/ki-treppe/bot-geruest/mein-erster-bot.zip` · Quelle: `scripts/ki-kurs/bot-geruest-bauen.py --zip` |
 | 7.1 | Die vier Befehle `caption` · `story` · `karussell` · `reels` + leere Wissensdateien ⏳ offen |
 | 8.1 | `produkt` · `salespage` + leere Wissensdateien |
 | 9.2 | Cockpit-Vorlage (leeres Artifact) |
