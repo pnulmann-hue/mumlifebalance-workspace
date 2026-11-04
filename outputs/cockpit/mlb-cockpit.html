@@ -3972,6 +3972,15 @@
     return box;
   }
 
+  /* Archiviertes Video: Hinweis auf der Karte statt Upload-Knopf (patch-video-archiv.py). */
+  function videoArchivHinweis(o) {
+    var a = o.videoArchiv || {};
+    return '<span class="wk-unter">Video archiviert: ' + esc(a.pfad || "") +
+      '. F\u00fcr einen Repost sag es mir, dann lade ich es wieder hoch.</span>' +
+      (o.igLink ? '<a class="btn" href="' + esc(o.igLink) +
+        '" target="_blank" rel="noopener">Auf Instagram ansehen</a>' : "");
+  }
+
   /* Was an einem Beitrag fehlt, und wer dafuer zustaendig ist.
      🚨 Die Arbeitsteilung ist fest: B-Roll baue ich aus vorhandenem Material,
      ein Sprechreel drehst du — dafuer steht der Sprechtext auf der Karte.
@@ -3981,7 +3990,7 @@
     // Was draussen ist, kann nichts mehr fehlen — sonst steht ein geposteter
     // Beitrag bis in alle Ewigkeit unter „du bist dran".
     if (istDraussen(b)) return raus;
-    if (b.art === "reels" && !b.videourl) {
+    if (b.art === "reels" && !b.videourl && !o.videoArchiv) {
       if ((o.videoart || "sprech") === "broll") {
         raus.push({ wer: "ich", was: "Video fehlt",
                     dazu: "B-Roll aus vorhandenem Material \u2014 das baue ich. " +
@@ -4115,7 +4124,7 @@
         // 🚨 Der Rueckweg: ein gedrehtes Video von der Karte aus abgeben.
         // Ohne das musste Patricia ins Reel-Studio wechseln und dort den
         // Umweg ueber die Clip-Ablage nehmen.
-        (assetsAPI
+        (b.obj.videoArchiv ? videoArchivHinweis(b.obj) : assetsAPI
           ? '<label class="btn filebtn wk-hochladen' + (b.videourl ? "" : " primary") + '">' +
             '<span>' + (b.videourl ? "Video ersetzen" : "Video hochladen") + '</span>' +
             '<input type="file" accept="video/mp4,video/quicktime,video/webm"></label>'
@@ -4188,7 +4197,7 @@
             esc(f.was) + '</b>' + (f.dazu ? esc(f.dazu) : "") + '</div>';
         }).join("") +
         // Der Sprechtext gehoert dorthin, wo sie das Video vermisst.
-        (b.art === "reels" && !b.videourl && (b.obj.videoart || "sprech") !== "broll"
+        (b.art === "reels" && !b.videourl && !b.obj.videoArchiv && (b.obj.videoart || "sprech") !== "broll"
             && (b.obj.skript || "").trim()
           ? '<details class="wk-sprech"><summary>Sprechtext anzeigen</summary>' +
             '<pre class="wk-sprechtext">' + esc(b.obj.skript) + '</pre></details>'
@@ -7362,7 +7371,7 @@
       neu.hook = hook; neu.coverhook = hook; neu.unter = "";
       // Ein Paar postet am selben Tag, sonst vergleicht man zwei Tage statt zwei Hooks.
       neu.datum = istTestreel(b) ? (b.datum || "") : "";
-      neu.textfrei = false; neu.blotato = null; neu.videourl = ""; neu.videodatei = "";
+      neu.textfrei = false; neu.blotato = null; neu.videourl = ""; neu.videodatei = ""; neu.videoArchiv = null; neu.igLink = "";
       neu.kommentar = ""; neu.kommentarStand = ""; neu.kommentarErledigt = ""; neu.kommentarAntwort = "";
       neu.trial = true; neu.testVon = b.id; neu.testStand = "offen";
       neu.testGepostetAm = ""; neu.testReichweite = null; neu.testKommentare = null;
@@ -16411,6 +16420,7 @@
         videourl: r.videourl || "",
         scrim: !!r.scrim, skript: r.skript || "", caption: r.caption || "",
         untertitel: r.untertitel || "", videodatei: r.videodatei || "",
+        videoArchiv: r.videoArchiv || null, igLink: r.igLink || "",
         blotato: r.blotato || null,
         // Testreels und Rolle (31.10.2026, patch-testreels.py)
         rolle: r.rolle || "", quelle: r.quelle || "",
@@ -17500,7 +17510,7 @@
         state.reels.forEach(function (x) { seen[x.id] = x; });
         qs.docs.forEach(function (doc) {
           var d0 = tief(doc.data()) || {};
-          var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", coverhook: d0.coverhook || "", coverunter: d0.coverunter || "", videoart: d0.videoart || "sprech", hinweis: d0.hinweis || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", texty: (typeof d0.texty === "number") ? d0.texty : null, textskala: d0.textskala || 100, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", videourl: d0.videourl || "", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", blotato: d0.blotato || null, rolle: d0.rolle || "", quelle: d0.quelle || "", trial: !!d0.trial, testVon: d0.testVon || "", testStand: d0.testStand || "", testGepostetAm: d0.testGepostetAm || "", testReichweite: (typeof d0.testReichweite === "number") ? d0.testReichweite : null, testKommentare: (typeof d0.testKommentare === "number") ? d0.testKommentare : null, testNotiz: d0.testNotiz || "", testGewinner: !!d0.testGewinner, testInFeed: !!d0.testInFeed, pruefung: d0.pruefung || null, updatedAt: d0.updatedAt || "" };
+          var rl = { id: doc.id, name: d0.name || "Reel", hook: d0.hook || "", unter: d0.unter || "", pos: d0.pos || "unten", brand: d0.brand || "mlb_dark", datum: d0.datum || "", textfrei: !!d0.textfrei, coverfarbe: d0.coverfarbe || "dunkelblau", coverhook: d0.coverhook || "", coverunter: d0.coverunter || "", videoart: d0.videoart || "sprech", hinweis: d0.hinweis || "", abgelehnt: !!d0.abgelehnt, abgelehntStand: d0.abgelehntStand || "", texty: (typeof d0.texty === "number") ? d0.texty : null, textskala: d0.textskala || 100, profil: d0.profil || "", kommentar: d0.kommentar || "", kommentarStand: d0.kommentarStand || "", kommentarErledigt: d0.kommentarErledigt || "", kommentarAntwort: d0.kommentarAntwort || "", videourl: d0.videourl || "", scrim: d0.scrim !== false, skript: d0.skript || "", caption: d0.caption || "", untertitel: d0.untertitel || "", videodatei: d0.videodatei || "", videoArchiv: d0.videoArchiv || null, igLink: d0.igLink || "", blotato: d0.blotato || null, rolle: d0.rolle || "", quelle: d0.quelle || "", trial: !!d0.trial, testVon: d0.testVon || "", testStand: d0.testStand || "", testGepostetAm: d0.testGepostetAm || "", testReichweite: (typeof d0.testReichweite === "number") ? d0.testReichweite : null, testKommentare: (typeof d0.testKommentare === "number") ? d0.testKommentare : null, testNotiz: d0.testNotiz || "", testGewinner: !!d0.testGewinner, testInFeed: !!d0.testInFeed, pruefung: d0.pruefung || null, updatedAt: d0.updatedAt || "" };
           if (seen[rl.id]) dbUebernehmen(seen[rl.id], rl); else state.reels.push(rl);
         });
         state.reels.sort(function (a, b) { return (b.updatedAt || "") < (a.updatedAt || "") ? -1 : 1; });

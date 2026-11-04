@@ -1194,6 +1194,78 @@ alles.
 
 ---
 
+### 7.2b · Woher die Themen kommen
+
+**In dieser Lektion:** Die Maschine steht. Jetzt die Frage, worüber sie
+schreibt.
+
+**Das Wichtigste in Kürze:**
+
+- **Zwei Arten von „Trend", und nur eine taugt.** Ein Beitrag mit dreihundert
+  Kommentaren ist gemessene Wirklichkeit — da hat sich jemand wirklich
+  geäussert, und die Kommentare darunter sind echte Sätze. „Laut Recherche
+  trendet X" ist eine Behauptung, auf die nie jemand reagiert hat.
+- **Vier Dinge statt einer Themenliste:** Schmerz · Wunsch · Ziel · was bei
+  ihnen immer wieder scheitert. Der letzte ist der beste — wer weiss, was
+  schon gescheitert ist, schreibt den Beitrag, auf den sie warten.
+- 🚨 **Jeder Punkt braucht ein echtes Zitat mit Fundort.** Bei mir hat ein
+  Bericht fünfundzwanzig Wochen lang Schmerzpunkte gemeldet und dabei null
+  Beiträge gelesen. Die Berichte sahen gut aus, die Sätze klangen echt, und es
+  stand sogar eine Quelle dabei — nur nie eine Fundstelle. Aufgefallen ist es
+  durch Zufall.
+- **Und dann schaust du auf dich:** Welche deiner Beiträge liefen besser als
+  deine üblichen, und was haben die gemeinsam? Immer gegen deinen eigenen
+  Schnitt, nie gegen fremde Zahlen.
+
+**Das sagst du:**
+
+> Bau mir einen Auftrag, der jeden ____ die Themen für meine Woche sucht.
+>
+> Such vier Dinge, je drei bis fünf, für meine Leute: Schmerz · Wunsch · Ziel ·
+> was bei ihnen immer wieder scheitert.
+>
+> Wo du suchst, in dieser Reihenfolge: in den Kommentaren unter den Beiträgen
+> von ____________ · in ____________ · in meinen eigenen Nachrichten der
+> letzten sieben Tage · erst dann im Netz.
+>
+> Jeder Punkt braucht ein echtes Zitat mit Fundort. Findest du keins, lässt du
+> ihn weg.
+>
+> Frag nach, wenn dir eine Angabe fehlt.
+
+**📎 Die Anleitung liegt unter diesem Video** — wo du suchst, woran du eine
+echte Quelle erkennst und was du sagst, wenn nichts Brauchbares kommt.
+
+---
+
+### 7.2c · Die Verbindungen
+
+**In dieser Lektion:** Vier Handgriffe, einmal. Danach nie wieder.
+
+**Das Wichtigste in Kürze:**
+
+- **Canva anschliessen** — in den Einstellungen bei den Verbindungen, einmal
+  anmelden. Kein Schlüssel, kein Code.
+- **Den Posting-Dienst anschliessen** — dort holst du einen Schlüssel und gibst
+  ihn einmal weiter. 🚨 **Der Schlüssel gehört in die Datei daneben, nie in den
+  Chat.** Was im Verlauf steht, steht für immer im Verlauf. Und Instagram
+  verbindest du **im Dienst**, nicht hier.
+- **Was eine geplante Aufgabe ist:** ein Auftrag, den sie von selbst ausführt.
+  Du legst sie nicht an — du sagst, was passieren soll, und sie richtet es ein.
+  Danach steht sie in der Seitenleiste und lässt sich jederzeit anhalten.
+- 🚨 **Läuft sie auf deinem Rechner, läuft sie nur, solange die App offen ist.**
+  Soll sie immer laufen, wohnt sie im Netz — dieselbe Entscheidung wie beim Bot
+  in Modul 6.
+- 🚨 **Den ersten Lauf startest du von Hand.** Beim ersten Mal fragt sie nach
+  Erlaubnis, und diese Fragen musst du einmal beantworten. Ohne das steht sie
+  jeden Abend still und meldet trotzdem, dass alles gut gelaufen sei. Mich hat
+  genau das sechs Tage gekostet.
+
+**📎 Die Anleitung liegt unter diesem Video** — alle vier Handgriffe mit
+Klickweg, und was du tust, wenn eine Verbindung nicht zustande kommt.
+
+---
+
 ### 7.3 · Karussell — vom Text zum fertigen Bild
 
 **In dieser Lektion:** Erst die Folientexte, dann die Bilder.
@@ -1332,6 +1404,41 @@ abbricht.
 - Beides sind Fehler, die man nicht sieht, bevor sie passieren. Ich zeige dir,
   wie ich sie abgefangen habe.
 
+**Es sind zwei Aufträge, nicht einer.** Einer läuft **wöchentlich** und baut die
+Entwürfe. Einer läuft **täglich** und plant ein, was du freigegeben hast.
+Dazwischen stehst du: du ziehst, was fertig ist, in den Ordner — **dieser
+Handgriff ist deine Freigabe**.
+
+**Das sagst du für den täglichen Auftrag:**
+
+> In Canva habe ich drei Ordner: Fertig · Zum Posten · Gepostet. Leg sie an,
+> falls es sie nicht gibt, und merk dir ihre Kennungen. Was in „Zum Posten"
+> liegt, ist von mir freigegeben.
+>
+> Bau mir einen Auftrag, der täglich um ____ Uhr läuft: Schau in „Zum Posten" —
+> ist er leer, hörst du auf.
+>
+> Je Design: Die Caption steht als Kommentar am Design. Fehlt sie, schreibst du
+> sie aus den Folientexten. Dann prüf trocken: Caption da, alle Folien da,
+> Zeitpunkt in der Zukunft.
+>
+> Exportier das Design als Bild, plan den Beitrag für ____ Uhr am nächsten Tag
+> ein, schieb das Design nach „Gepostet" und schreib mir, was du gemacht hast.
+>
+> Grenzen: nur Designs, keine Unterordner · höchstens ____ Beiträge am Tag ·
+> geht etwas schief, bleibt das Design liegen.
+>
+> Erklär mir jeden Schritt, und frag nach, wenn dir eine Angabe fehlt.
+
+Drei Stellen darin sind wichtiger, als sie aussehen. **Der Trockenlauf** — ohne
+ihn plant er einen Beitrag mit vergangenem Datum ein und meldet trotzdem
+Erfolg. **Das Bild** — von Canva direkt zum Einplanen geht nicht, das Design
+muss vorher ein Bild werden. **Die Obergrenze** — ohne sie kippt dir ein voller
+Ordner an einem Tag raus.
+
+**📎 Die Anleitung liegt unter diesem Video** — beide Aufträge, der erste Lauf
+von Hand und eine Liste, was du sagst, wenn nichts rausgeht.
+
 ---
 
 ### 7.7 · Wenn die KI Murks baut
@@ -1352,6 +1459,49 @@ du es prüfen lässt.
 - Jede neue Prüfregel wird an einem bekannt schlechten Satz getestet **und** an
   einem guten, der nicht anschlagen darf. Nach dem dritten Fehlalarm liest
   niemand mehr hin.
+
+---
+
+### 7.7b · Nochmal rausgehen
+
+**In dieser Lektion:** Dein bester Beitrag hat die meisten nie erreicht.
+
+**Das Wichtigste in Kürze:**
+
+- **Warum das kein Schummeln ist:** Instagram zeigt einen Beitrag nur einem Teil
+  deiner Leute. Vier Wochen später ist er bei fast allen aus dem Kopf — und es
+  sind neue dazugekommen, die ihn nie gesehen haben.
+- 🚨 **„Gut gelaufen" heisst: besser als deine eigenen.** Feste Zahlen wie „ab
+  zehntausend Aufrufen" sind bei einem grossen Konto Alltag und bei dir
+  vielleicht nie. Dein eigener Schnitt wächst mit dir und gilt ab dem ersten
+  Monat.
+- **Zwei Fristen:** erst **nach einer Woche** bewerten, vorher ist ein Beitrag
+  nicht fertig gelaufen. Und **frühestens nach vier Wochen** wiederholen.
+- **Du suchst aus, nicht sie.** Dieselbe Haltung wie in 7.5: sie legt eine Liste
+  vor, du entscheidest.
+- **Der Trick:** derselbe Beitrag mit einer **neuen ersten Zeile** wirkt neu —
+  auch für die, die ihn schon kannten.
+
+**Das sagst du:**
+
+> Bau mir einen Auftrag, der einmal im Monat schaut, welche meiner Beiträge
+> besser liefen als meine üblichen.
+>
+> Zählen sollen Reichweite, Kommentare, Gespeichertes und Geteiltes — immer im
+> Vergleich zu meinem eigenen Durchschnitt, nie zu fremden Zahlen.
+>
+> Nimm nur Beiträge, die mindestens eine Woche draussen sind und die ich seit
+> vier Wochen nicht wiederholt habe.
+>
+> Leg mir eine Liste vor: Beitrag, Zahlen, warum er lief. Ich suche aus, was
+> nochmal rausgeht.
+>
+> Zu jedem schreibst du mir eine neue erste Zeile — gleicher Inhalt, anderer
+> Einstieg. Frag nach, wenn dir eine Angabe fehlt.
+
+**📎 Die Anleitung liegt unter diesem Video** — woher die Zahlen kommen, was du
+tust, wenn du sie nicht automatisch bekommst, und wie du die erste Zeile
+austauschst, ohne den Beitrag zu verfälschen.
 
 ---
 
