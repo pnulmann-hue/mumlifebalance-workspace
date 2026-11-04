@@ -1046,16 +1046,21 @@ möglich ist.
 
 **Das Wichtigste in Kürze:**
 
-- **Vier Schritte**, komplett mitgefilmt. Du brauchst dafür nichts weiter als
-  Telegram auf dem Handy.
-- **Du musst nicht bei null anfangen:** Das Gerüst liegt unter diesem Video. Du
-  beschreibst, was er tun soll, und sie baut den Rest.
+- **Genau eine Sache machst du selbst:** den Bot beim Botvater anlegen und den
+  Schlüssel abholen. Den gibt Telegram nur dir, das kann dir niemand abnehmen.
+  Es sind zwei Fragen und eine Minute.
+- **Alles andere redest du.** Du sagst in ganzen Sätzen, was der Bot tun soll,
+  und hängst einen Halbsatz an: *frag nach, wenn dir etwas fehlt.* Ab da führt
+  sie dich — sie fragt, du antwortest.
+- **Du installierst nichts.** Kein Programm, keine Vorlage, keine Datei, die du
+  von irgendwo holen musst. Das, was du in Modul 4 eingerichtet hast, reicht.
 - 🚨 Beim Einrichten entsteht ein **Zugangsschlüssel**. Der gehört nicht in
   deinen Text, nicht in ein Dokument und nicht in eine Nachricht — er gehört in
-  die Datei, die dafür da ist. Wie das geht, sagt sie dir beim Einrichten;
-  warum es zählt, steht in Modul 10.
+  die Datei, die dafür da ist. Sie macht das von selbst richtig; du musst es nur
+  einmal gesehen haben. Warum es zählt, steht in Modul 10.
 
-**📎 Das Bot-Gerüst liegt unter diesem Video.**
+**📎 Der Auftrag zum Kopieren und die vier Schritte zum Nachlesen liegen unter
+diesem Video.**
 
 ---
 
@@ -1674,7 +1679,7 @@ heraus.
 | 4.3 | **Arbeitsplatz-Grundgerüst** — ZIP mit den fünf Ordnern (je eine Liesmich), `CLAUDE.md` zum Ausfüllen und **vier Befehlen** (`/start` · `/shutdown` · `/create-plan` · `/implement`) in entschlackter Fassung ✅ gebaut, liegt in `Downloads/Mein-Business-Grundgeruest.zip` · Quelle: `scripts/ki-kurs/grundgeruest-bauen.py --zip` |
 | 4.4 | **`CLAUDE.md`-Anleitung** — fünf Teile, je mit Beispiel von Sandra und einem Feld zum Ausfüllen (Google Doc) ✅ |
 | 5.8 | Leeres Skill-Gerüst (Google Doc, zum Ausfüllen) ✅ |
-| 6.3 | **Bot-Gerüst Telegram** — ZIP mit vier Dateien: ein fertiger Bot, dem nur der Schlüssel (`.env`) und der Auftrag (`auftrag.md`) fehlen, dazu eine Anleitung in vier Schritten ✅ gebaut, liegt in `outputs/produkte/ki-treppe/bot-geruest/mein-erster-bot.zip` · Quelle: `scripts/ki-kurs/bot-geruest-bauen.py --zip` |
+| 6.3 | **Dein erster Bot — der Auftrag und die vier Schritte** (Google Doc, zum Kopieren) ⏳ offen. 🚨 Keine Vorlage zum Herunterladen: Lektion 4.2 verspricht „Du installierst nichts weiter", und eine startbare Vorlage bräuchte eine Laufzeit, die niemand installiert hat. Hinein gehören der Auftragssatz, die vier Schritte und was zu tun ist, wenn keine Nachricht kommt |
 | 7.1 | Die vier Befehle `caption` · `story` · `karussell` · `reels` + leere Wissensdateien ⏳ offen |
 | 8.1 | `produkt` · `salespage` + leere Wissensdateien |
 | 9.2 | Cockpit-Vorlage (leeres Artifact) |

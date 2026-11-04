@@ -176,7 +176,7 @@ so wie bei Startklar.
 |---|---|---|
 | 6.1 | **Vom Skill zum Bot** | **Erzählen:** derselbe Auftrag, nur ruft ihn niemand mehr auf |
 | 6.2 | **Übersicht: meine Bots** | **Zeigen:** Garten, Kochassistent, Cockpit, Haushalt — auf dem Handy. Das ist der Moment, in dem es klick macht |
-| 6.3 | **Dein erster Telegram-Bot** | **Zeigen:** komplett, von null bis zur ersten Nachricht. **Mitgeben:** Bot-Gerüst |
+| 6.3 | **Dein erster Telegram-Bot** | **Zeigen:** Botvater als Folie (dein Bot steht ja schon), dann live: du tippst den Auftrag in den Chat und antwortest auf ihre Rückfragen. **Mitgeben:** der Auftrag zum Kopieren und die vier Schritte |
 | 6.4 | **Dass er morgens von selbst schreibt** | **Zeigen:** Hosting und Zeitplan. Ehrlich zu den rund 5 im Monat |
 | 6.5 | **Wenn der Bot schweigt** | **Erzählen:** die drei häufigsten Gründe und wo man nachschaut |
 | 6.6 | **Zusammenfassung und Checkliste** | **Erzählen:** was jetzt bei ihr läuft — ein Bot, ein Ort an dem er wohnt, drei Stellen zum Nachschauen. **Zeigen:** nichts, Gesicht in die Kamera. **Mitgeben:** dieselbe Checkliste wie nach Modul 1 |
