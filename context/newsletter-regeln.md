@@ -36,28 +36,44 @@ und schreibt die Sätze in meiner Stimme. Das ist meine eigene Grenze:
 
 ---
 
-## 🚨 Wo ich bewusst abweiche — und wo nicht
+## Zwei Sätze aus der Methode, die sich zu widersprechen scheinen
 
-In der Methode steht wörtlich: **„Newsletter kannst du dir aus dem Kopf
-streichen."** Dort sind es **Verkaufs-Mails**, keine Newsletter: jede Mail trägt
-ein Angebot, einen Preis und eine Frist. Zwei Mails am Tag, vier auf dasselbe
-Produkt, 15 Angebote im Monat.
+Im Kurs über das Verkaufen per E-Mail steht wörtlich: **„Newsletter kannst du dir
+aus dem Kopf streichen."** Im Newsletter-Modul eines anderen Kurses steht
+dagegen: **„Newsletter 90 Prozent Beziehung, Verkaufsfunnel 90 Prozent
+Verkauf."**
 
-**Ich mache daraus den Newsletter mit Mehrwert** — das ist mein Entscheid vom
-04.11.2026, und ich weiche damit bewusst ab. Der Grund: meine Liste hat 164
-Kontakte, und für rund 150 davon habe ich seit Monaten gar keinen Kanal. Erst
-kommt überhaupt Kontakt, dann Takt.
+Beides ist von ihr, und beides stimmt — es sind **zwei verschiedene Kanäle:**
 
-🚨 **Aber die Abweichung geht nur an einer Stelle, nicht an zwei.** Was bleibt:
+| | **Verkaufs-Aktion** | **Newsletter** |
+|---|---|---|
+| Zweck | heute Umsatz | Beziehung, damit der nächste Launch nicht in Stille endet |
+| Mischung | 90 % Verkauf | **90 % Beziehung, 10 % Verkauf** |
+| Frist | **immer** | nur, wenn gerade eine Aktion läuft |
+| Takt | 2 Mails am Tag, 48 Stunden | wöchentlich bis alle 14 Tage |
 
-| Bleibt genau so | Weil |
+„Streich den Newsletter" meint also: *für einen Umsatz-Sprint ist der Newsletter
+das falsche Werkzeug.* Es heisst nicht, dass es keinen Newsletter geben soll.
+
+**Mein Plan ist damit keine Abweichung, sondern genau das, was ihr
+Newsletter-Modul beschreibt:** ein grosses Produkt auseinandernehmen, je Mail ein
+echtes Learning weitergeben und am Schluss auf das Produkt verweisen. Dort steht
+es als Variante (c): Update aus der eigenen Welt **und** Verkauf gemischt.
+
+🚨 **Was in jedem Fall gilt — hart belegt und mehrfach gesagt:**
+
+| | |
 |---|---|
-| **Jede Mail hat ein Angebot** | eine Mehrwert-Mail ohne Angebot verkauft nichts, und mehr davon macht meine Klickrate nicht besser |
-| **Jede Mail hat einen Hebel und eine Frist** | ohne Grund, heute zu klicken, klickt niemand heute |
-| **Die fünf Pflicht-Elemente** | Betreff · Titel mit Hebel · Link mehrfach · Aufruf im Imperativ · PS |
+| **Keine E-Mail ohne Link** | „keine einzige E-Mail, wo kein Link hinterlegt ist" — ausdrücklich **auch im Newsletter** |
+| **Nie ein Newsletter ohne Link auf ein eigenes Produkt** | gesagt im Gespräch über eine Liste von 430 Kontakten, also genau meine Grössenordnung |
+| **Der Aufruf am Ende jeder Mail** | „wird oft vergessen" |
+| **Die fünf Pflicht-Elemente** | Betreff · Titel · Link mehrfach · Aufruf im Imperativ · PS |
 
-Mein Newsletter ist also eine **Verkaufsmail mit einem echten Tipp vorne**, nicht
-eine Mehrwert-Mail mit einem Link hinten. Der Unterschied ist die Frist.
+🚨 **Was NICHT gilt, und das war mein Denkfehler am 04.11.2026:** eine **Frist in
+jeder Newsletter-Mail**. Die Frist gehört zur Aktion. Ein Newsletter alle 14 Tage
+mit Dauer-Verknappung wäre das Gegenteil von 90 Prozent Beziehung — und beim
+dritten „nur noch heute" glaubt es niemand mehr. **Im Newsletter: Link und
+Aufruf. Frist nur, wenn wirklich eine Aktion läuft.**
 
 ---
 
@@ -205,6 +221,24 @@ Kurs anfühlt. Mein Tool-Workshop ist genau das.
 🚨 **Der Hebel muss in der Mail stehen, nicht nur in meinem Kopf.** Wenn ich in
 der Planung „Spezialpreis" eintrage und in der Mail steht nur der Preis, ist der
 Hebel nicht da.
+
+🚨 **Und wo gar kein Hebel hingehört** (Korrektur vom 04.11.2026, ich hatte
+„Hebel in jeder Mail" geschrieben — das stimmt so nicht):
+
+| | |
+|---|---|
+| **Grosse Kurse und 1:1** | Hebel ist **Pflicht**. Die Frage „warum jetzt?" muss beantwortet sein — fehlender Hebel ist der häufigste Grund, warum ein grosses Angebot nicht verkauft |
+| **Minikurse um 39** | **kein Hebel nötig** — „entweder du willst den Kurs oder nicht". Der Preis ist der Hebel |
+| **Im Newsletter** | Verknappung wirkt dort ohnehin weniger als in einem Funnel mit Countdown. **Keine Platzangaben** („nur noch drei Plätze") — die müsste ich dauernd nachführen, und falsch stehengelassen ist sie schlimmer als keine |
+
+**Was im Newsletter stattdessen geht:** ein Link, der **nur über diese Mail** und
+nur 24 oder 48 Stunden gilt. Das ist echt, muss nicht gepflegt werden und
+belohnt die, die lesen.
+
+🚨 **Rabatte zwischen 20 und 30 Prozent, nicht 60.** Wer die Mailstrecke verpasst
+und danach 500 zu viel zahlt, ärgert sich dauerhaft; 30 oder 100 zu viel
+verzeiht man. Die günstigsten Preise bekommt, wer die Mails liest — aber der
+Abstand bleibt verträglich.
 
 ### Welches Angebot in welcher Mail
 
@@ -357,22 +391,29 @@ kommt Unsinn heraus:
 
 ### Wo ich stehe, und was das heisst
 
-| | Vorbild | **ich** |
-|---|---|---|
-| Öffnungsrate | 22–32 %, Ø 27 % | **17,5–27,7 %** — im Bereich |
-| Klickrate | Ø 3,5 % | **0,0–1,2 %** — ein Drittel davon |
-| Kaufquote auf Klicks | 5–13 % | noch nicht gemessen |
+| | Richtwert | Vorbild gemessen | **ich** |
+|---|---|---|---|
+| Öffnungsrate | **gut sind 40–50 %** | ~40 %, in einem Monat 22–32 %, eine Kampagne 26 % | **17,5–27,7 %** |
+| Klickrate | — | Ø 3,5 % | **0,0–1,2 %** |
+| Kaufquote auf Klicks | — | 5–13 % | noch nicht gemessen |
 
-🚨 **Die Klickrate ist mein einziges echtes Mail-Problem.** Die Öffnungsrate
-steht. Jede Massnahme geht auf den Klick: Hebel, Frist, Link mehrfach, PS.
+🚨 **Korrektur vom 04.11.2026: meine Öffnungsrate liegt NICHT im guten Bereich.**
+Ich hatte nur die Zahlen eines einzelnen Monats zum Vergleich und daraus
+geschlossen, sie stehe. Der genannte Richtwert ist **40 bis 50 Prozent** — ich
+liege bei knapp der Hälfte. Beides gehört also angefasst:
+
+| Zahl | Hebel |
+|---|---|
+| **Öffnungsrate** | die **Betreffzeile** (siehe unten: sie ist der Hook der Mail) |
+| **Klickrate** | Link weit oben und mehrfach · Aufruf im Imperativ · PS · ein klares Angebot |
 
 🚨 **Und die ehrliche Rechnung bei 164 Kontakten:** 164 × 3,5 % Klick = rund 6
 Klicks · davon 10 % kaufen = **0,6 Verkäufe je Mail**. Bei einem 39er sind das
 rund 23 Franken pro Mail. Mit meiner heutigen Klickrate ist es ein Drittel davon.
 
-**Daraus folgt, wofür der Newsletter da ist:** bei dieser Listengrösse ist er
-**kein Umsatzkanal, sondern der Kanal, der die Liste warm hält und Launches
-vorbereitet.** Umsatz macht er, wenn die Liste wächst — der Hebel liegt vorne im
+**Daraus folgt, wofür der Newsletter da ist:** bei dieser Listengrösse hält er
+**die Liste warm und bereitet Launches vor.** Als Umsatzkanal taugt er erst,
+wenn die Liste wächst — der Hebel liegt vorne im
 Trichter, nicht in der Mailfrequenz. Das gehört in jede Planung, in der ich mir
 vom Newsletter Umsatz verspreche.
 
@@ -395,14 +436,25 @@ vom Newsletter Umsatz verspreche.
 Drei Dinge muss jede Verkaufsmail tun: **zeigen, dass es funktioniert ·
 benennen, woran es grade hängt · sagen, was sie jetzt tun kann.**
 
-### Die Betreffzeile
+### Die Betreffzeile — sie ist der Hook der Mail
+
+**Dieselbe Arbeit wie an einer ersten Story-Zeile**, und sie entscheidet über die
+Öffnungsrate, also über meine schwächste Zahl.
 
 | Mail | Muster |
 |---|---|
 | **Ankündigung** | Neugier oder ein konkreter Nutzen |
 | **Zwischenmail** | ein anderer Winkel als Tag 1 — nie derselbe Satz nochmal |
 | **Letzte Chance** | Zeitpunkt plus Konsequenz: „nur noch bis heute 23:59" |
-| **Newsletter** | der Tipp, nicht das Angebot |
+| **Newsletter** | der Tipp oder die Szene, nicht das Angebot |
+
+🚨 **Spezifisch statt Floskel.** „Bringt dein Business aufs nächste Level" und
+„werde sichtbar" sind leer. Greifbar ist: kurz, spannend, **ohne zu sagen, worum
+es geht** — „Hast du das schon gesehen?", „Ich kann nicht glauben, dass ich das
+gemacht habe", „Geschenk für dich". Auch ein scheinbar dämlicher Betreff
+funktioniert, wenn eine Geschichte dahinter steht („Gestern war ich baden").
+
+**Die Testfrage:** Welche von diesen Mails würde ich selbst öffnen?
 
 🚨 **Kein Betrag und kein Währungszeichen im Betreff.** Die Zahl steht im Text.
 
@@ -432,6 +484,33 @@ einer zu viel — derselbe Link drei Mal ist richtig.
 🚨 **Bilder sparsam.** Viele Mailprogramme zeigen sie gar nicht an; die Mail muss
 ohne Bild vollständig sein. Dasselbe gilt für eine Kundenstimme: die Mail muss
 auch ohne sie Sinn ergeben.
+
+### Wie ich schreibe
+
+- **Mitten in die Geschichte starten.** Also „Letzten Samstag ist mir etwas
+  aufgefallen. Hier meine drei Learnings." Verboten ist die Anlauf-Begrüssung:
+  „Ihr Lieben, willkommen zu meinem Newsletter, ich würde euch gern erzählen."
+  Danach darf ausgeschweift werden.
+- **Schreib, wie du sprichst.** Keine hochtrabenden Floskeln, Fachwörter nur mit
+  Erklärung. Verständlich für eine Fünfjährige und für die Grossmutter.
+- **Spezifisch.** Füllwörter und leere Wörter streichen.
+- **Lesbar:** Absätze, Spiegelstriche, Fettungen, Hervorhebungen. Eine Wall of
+  Text wird weggeklickt, egal wie gut sie ist.
+- **Problembewusstsein und Lösung in derselben Mail.** Wozu es führt, wenn nichts
+  passiert · was es kostet, stehen zu bleiben · warum es allein schwierig ist —
+  und dann die Lösung als Geschichte: „Kommt dir das bekannt vor? Dann bringt
+  dich das weiter, Schritt für Schritt von A nach B."
+- **Der Link gehört weit oben**, nicht nur ans Ende. Wer im ersten Satz merkt
+  „das will ich", klickt sofort.
+
+🚨 **Nie das Wort „kaufen"** („hier kaufen") — es ist negativ besetzt. Stattdessen:
+„Ich bin dabei" · „Lass uns umsetzen" · „Jetzt buchen" · „Hol dir X".
+
+🚨 **Social Proof nur mit echten Zahlen.** „Schon über 100 nutzen diesen Kurs" ist
+stark — aber nur, wenn es stimmt. Ein Platzhalter in einer Vorlage wird **vor dem
+Versand** auf die echte Zahl korrigiert, und wer noch nie verkauft hat, setzt
+keine ein. Kundenstimmen kommen aus `context/kundinnen-geschichten.md`, nie
+erfunden.
 
 ### Verknappung auch auf der Zielseite
 
@@ -501,13 +580,26 @@ Live-Termin, Begleitung, Werkzeug.
 
 ---
 
-## 🚨 Was draussen bleibt
+## 🚨 Was draussen bleibt — und wo es liegt
 
-| Nicht hier | Wo es liegt und warum |
+Diese Datei ist **was gilt**, nicht die ganze Quelle. Im ausgewerteten
+Kursmaterial stehen rund **2'900 Zeilen** mit Mail-Bezug über 16 Auswertungen.
+Hier steht daraus, was ich entschieden habe. Das Übrige ist Nachschlagewerk —
+`/newsletter` liest dort nach, wenn es gebraucht wird:
+
+| Nicht hier | Wo es liegt |
 |---|---|
-| **Die fertigen Mailtexte und Betreffzeilen im Wortlaut** | Launch-Themenbuch unter `reference/`, Abschnitt 17. Ich arbeite damit, aber was rausgeht, trägt meinen Wortlaut |
-| **Die absoluten Umsatzzahlen aus dem Vorbild** | eine Liste von 12'000 gegen meine 164 — als Ziel für mich wertlos. Die Mechanik dahinter steht oben |
+| **Fertige Mailtexte und Betreffzeilen im Wortlaut** | Launch-Themenbuch Abschnitt 17 · Funnel-Themenbuch Abschnitt 11 (zwölf Vorlagen-Sorten: 0€-Funnel, Minikurs-Funnel, Sequenz nach dem Nein, Webinar, 9-Wörter-Mails, Upgrade-Serie) |
+| **Die Technik** — Tags, Listen, Automationen, Deadline Funnel, ThriveCart-Anbindung | Funnel-Themenbuch Abschnitte 6 bis 9 und 13. Zuständig ist `/funnel` |
+| **Die Funnel-Sequenzen** — Willkommensmail, Minikurs zu grossem Kurs (6 Mails an 5 Tagen), Pitch-Takt 72 Stunden | Funnel-Themenbuch Abschnitt 10. Das sind Automationen, keine Kampagnen |
+| **Webinar- und Masterclass-Mails** | Funnel-Themenbuch Abschnitt 14 · Launch-Themenbuch Abschnitt 9 |
+| **Die absoluten Umsatzzahlen aus dem Vorbild** | eine Liste von 12'000 gegen meine 164 — als Ziel wertlos. Die Mechanik dahinter steht oben |
 | **Der Name meiner Mentorin** | diese Datei zeige ich im Kurs |
+
+🚨 **Noch nicht durchgearbeitet** (Stand 04.11.2026): die Vorlagen-Kapitel im
+Wortlaut und die Nachträge aus den Live-Calls. Wenn `/newsletter` etwas braucht,
+das hier nicht steht, liest er dort nach — **und was sich als Regel bewährt,
+kommt hierher**, nicht in den Skill.
 
 ---
 
