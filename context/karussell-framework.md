@@ -120,6 +120,38 @@ die eine** geändert — und ausdrücklich dazugesagt, dass der Rest bleibt.
 
 ---
 
+## Master-Vorlage (seit 2026-11-04)
+
+Die Bauweise stammt aus einem Karussell einer Mentorin, das Patricia gefallen hat:
+Foto mit Farbfläche, ein leuchtendes Wort, Karten mit grosser Nummer, Handschrift als
+Akzent. Übernommen ist nur der Aufbau. Farben, Schriften und Texte sind ihre.
+
+```bash
+node scripts/karussell-render/folien.mjs <definition.json> <ordner> [--thema=creme|dunkel]
+```
+
+Vorlage zum Kopieren: `outputs/karussells/master-vorlage/muster.json`. `thema` gilt je
+Definition oder je Folie, `--thema` überschreibt beides für einen Probelauf. `*Wort*`
+wird betont, `[Platzhalter]` in Aufträgen wird farbig gesetzt.
+
+| `typ` | Wofür | Felder |
+|---|---|---|
+| `titel` | Cover | `foto` · `fotoY` · `fotoZoom` · `fotoX` · `schleierVon` · `schleierBis` · `oben` · `zeile1` · `wort` · `zeile2` · `links` · `rechts` |
+| `liste` | Listicle, 3–4 Karten je Folie | `pille` · `zaehler` · `titel` · `karten: [{nr, titel, text, tag}]` · `absatz` · `notiz` |
+| `text` | ein Gedanke, Storytelling, Nuancierung | `pille` · `zaehler` · `titel` · `absatz` · `notiz` |
+| `auftrag` | Prompts oder Sätze zum Abtippen | `pille` · `zaehler` · `titel` · `karten: [{label, text}]` |
+| `aufruf` | letzte Folie, immer mit `letzte: true` | `oben` · `wort` · `absatz` · `pille` |
+
+**Regeln, die die Vorlage nicht selbst erzwingt:**
+- Orange trägt je Folie **ein** Wort, Zahlen und Etiketten sind Petrol. Deshalb kein Petrol auf dem Cover.
+- Silver South Script nur für kurze Akzente (`links`, `rechts`, `notiz`, „Kommentier“). Ganze Sätze sind darin unlesbar, beim ersten Render ist genau das passiert.
+- `fotoY` schiebt das Foto nach unten, die Farbfläche füllt den Rest. Das Gesicht liegt damit unter dem Hook. Das fertige Cover immer ansehen: Verläuft ein heller Himmel unter der dunklen Fläche, entsteht ein weisses Band. Dann ein Foto mit ruhigem Hintergrund nehmen oder `thema: creme`.
+- Das Skript warnt, wenn der Inhalt einer Folie unten aus dem Bild läuft.
+
+Fertige Folien als JPEG nach `karussells/<id>/bilder/slide-NN` legen, die Freigabe nimmt sie von dort. Der Zeichner im Cockpit kennt diese Layouts nicht: Eine Textänderung im Cockpit ändert das fertige Bild nicht, dafür die Definition ändern und neu rendern.
+
+---
+
 ## Bauweisen innerhalb der vier Typen
 
 ### 1. Anleitung / How-To (am besten für Saves)

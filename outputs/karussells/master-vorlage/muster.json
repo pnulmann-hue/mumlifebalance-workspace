@@ -1,0 +1,135 @@
+{
+  "thema": "creme",
+  "folien": [
+    {
+      "typ": "titel",
+      "thema": "dunkel",
+      "foto": "../../_bild-editor/assets/s03.jpg",
+      "fotoY": 510,
+      "oben": "Gratis-Ideen",
+      "zeile1": "10 Gratis-Ideen, die dir",
+      "wort": "neue Kontakte",
+      "zeile2": "bringen, ohne dass du jemanden anschreibst",
+      "links": "speicher dir das",
+      "rechts": "wisch weiter →",
+      "schleierVon": 30,
+      "schleierBis": 300
+    },
+    {
+      "typ": "liste",
+      "pille": "01 – 03 · zum Antippen",
+      "zaehler": "02/07",
+      "karten": [
+        {
+          "nr": "01",
+          "titel": "Energie-Check",
+          "text": "fünf Fragen zum Antippen, am Schluss ein Ergebnis mit einem ersten Schritt",
+          "tag": "Tool"
+        },
+        {
+          "nr": "02",
+          "titel": "Typ-Test",
+          "text": "welcher Typ bin ich? Mit einem Ergebnis, das man gern weiterschickt",
+          "tag": "Tool"
+        },
+        {
+          "nr": "03",
+          "titel": "Mini-Rechner",
+          "text": "eine Zahl eintippen und sofort sehen, was im Jahr dahintersteckt",
+          "tag": "Tool"
+        }
+      ],
+      "absatz": "Genau so habe ich meinen Bio-Check und meinen Stimm-Check gebaut.",
+      "notiz": "— Patricia"
+    },
+    {
+      "typ": "liste",
+      "pille": "04 – 07 · zum Ausfüllen",
+      "zaehler": "03/07",
+      "karten": [
+        {
+          "nr": "04",
+          "titel": "Wochenplan",
+          "text": "eine Seite, die den Sonntagabend leichter macht",
+          "tag": "PDF"
+        },
+        {
+          "nr": "05",
+          "titel": "Checkliste",
+          "text": "alles, woran man vor dem ersten Mal denken muss",
+          "tag": "PDF"
+        },
+        {
+          "nr": "06",
+          "titel": "Workbook",
+          "text": "drei Tage, je eine kleine Aufgabe zum Ausfüllen",
+          "tag": "PDF"
+        },
+        {
+          "nr": "07",
+          "titel": "Spickzettel",
+          "text": "die zehn häufigsten Fragen zu deinem Thema auf einer Seite",
+          "tag": "PDF"
+        }
+      ]
+    },
+    {
+      "typ": "liste",
+      "pille": "08 – 10 · zum Mitmachen",
+      "zaehler": "04/07",
+      "karten": [
+        {
+          "nr": "08",
+          "titel": "3-Tage-Challenge",
+          "text": "in einer Gruppe, jeden Tag eine kleine Aufgabe",
+          "tag": "Gruppe"
+        },
+        {
+          "nr": "09",
+          "titel": "Mini-Workshop",
+          "text": "30 Minuten live, mit Aufzeichnung für alle, die nicht konnten",
+          "tag": "Live"
+        },
+        {
+          "nr": "10",
+          "titel": "Probewoche",
+          "text": "eine Woche ausprobieren, jeden Tag ein kurzer Impuls per Mail",
+          "tag": "Mail"
+        }
+      ],
+      "absatz": "Jede dieser Ideen löst genau ein kleines Problem, und deshalb trägt sich auch jemand dafür ein, der dich noch gar nicht kennt."
+    },
+    {
+      "typ": "text",
+      "pille": "So gehst du vor",
+      "zaehler": "05/07",
+      "titel": "Such dir *eine* Idee aus.",
+      "absatz": "Nimm die, bei der du beim Lesen sofort an jemanden aus deinem Umfeld gedacht hast. Mit den zwei Aufträgen auf der nächsten Folie baust du sie an einem Nachmittag."
+    },
+    {
+      "typ": "auftrag",
+      "pille": "Zum Abtippen",
+      "zaehler": "06/07",
+      "titel": "Gib der KI zwei Aufträge mit *deinem* Thema.",
+      "karten": [
+        {
+          "label": "Auftrag 1",
+          "text": "„Ich helfe [wem] bei [was]. Schlag mir zehn kleine Gratis-Angebote vor, die man an einem Nachmittag bauen kann und die genau einen Schritt weiterhelfen. Nenn zu jedem, welche Frage es beantwortet.“"
+        },
+        {
+          "label": "Auftrag 2",
+          "text": "„Bau aus [meiner Idee] einen Check mit fünf Fragen zum Antippen und einem Ergebnis, das [wem] einen ersten Schritt gibt. Stell mir vorher die Fragen, die du dafür brauchst.“"
+        }
+      ]
+    },
+    {
+      "typ": "aufruf",
+      "thema": "dunkel",
+      "letzte": true,
+      "oben": "Kommentier",
+      "wort": "NISCHE",
+      "absatz": "und ich schick dir den Nischengenerator, der mit dir das Thema für dein erstes Gratis-Angebot findet",
+      "pille": "Gratis · Nischengenerator"
+    }
+  ]
+}
