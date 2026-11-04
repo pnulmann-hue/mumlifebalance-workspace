@@ -875,7 +875,17 @@ ab Modul 5 setzt einen laufenden Arbeitsplatz voraus.
   beschreibst, desto weniger musst du nachbessern.
 - Ein Beispiel im Skill ist mehr wert als drei zusätzliche Regeln.
 
-**📎 Die Datei, die wir hier auseinandernehmen, liegt unter diesem Video.**
+Das leere Gerüst mit allen sechs Teilen bekommst du am Ende des Moduls, in 5.8.
+
+<!-- 🚨 Hier stand bis zum 04.11.2026: „📎 Die Datei, die wir hier
+     auseinandernehmen, liegt unter diesem Video." Die Datei gab es nicht, und
+     versprochen hat sie niemand ausser diesem Satz: auf den Folien steht
+     nichts davon, und im aufgenommenen Video sagt Patricia nichts davon
+     (geprueft am Transkript 27-lektion-5-2). Auseinandergenommen wird ihr
+     echter Kochplan-Skill auf dem geteilten Bildschirm — der kann nicht
+     mitgegeben werden, dort stehen Familiennamen und private Vorlieben drin.
+     Stattdessen der Verweis aufs leere Geruest in 5.8, das es wirklich gibt. -->
+
 
 ---
 
@@ -1663,7 +1673,6 @@ heraus.
 | 4.2 | **Setup-FAQ** — „Wenn beim Einrichten etwas klemmt" (PDF) ✅ gebaut |
 | 4.3 | **Arbeitsplatz-Grundgerüst** — ZIP mit den fünf Ordnern (je eine Liesmich), `CLAUDE.md` zum Ausfüllen und **vier Befehlen** (`/start` · `/shutdown` · `/create-plan` · `/implement`) in entschlackter Fassung ✅ gebaut, liegt in `Downloads/Mein-Business-Grundgeruest.zip` · Quelle: `scripts/ki-kurs/grundgeruest-bauen.py --zip` |
 | 4.4 | **`CLAUDE.md`-Anleitung** — fünf Teile, je mit Beispiel von Sandra und einem Feld zum Ausfüllen (Google Doc) ✅ |
-| 5.2 | Beispiel-Skill Kochplan (die auseinandergenommene Datei) |
 | 5.8 | Leeres Skill-Gerüst (Google Doc, zum Ausfüllen) ✅ |
 | 6.3 | Bot-Gerüst Telegram |
 | 7.1 | Die vier Befehle `caption` · `story` · `karussell` · `reels` + leere Wissensdateien ⏳ offen |
