@@ -149,6 +149,20 @@ Vorlagen-Effekt, den wir bei den Animationen auch vermeiden.
 - **Der Schnitt liegt auf der Sprechpause**, nie mitten im Wort — steht schon in
   Abschnitt 4 und bleibt die härtere Regel.
 
+### Grössensprung und Tafel — im Test seit 04.11.2026
+
+Angesehen bei islazul.ch (ein Reel, 54 s, rund 27 Schnitte). **Noch keine Vorgabe:** Bleibt
+Option je Reel, bis zwei Reels im Vergleich etwas gezeigt haben.
+
+- **Grössensprung** (`stil.zoom.modus: "sprung"`): rund alle 2 s springt die Bildgrösse an einer
+  Wortgrenze, dazwischen steht das Bild still. Einmal je Reel ganz weit raus. Vorgabe bleibt
+  die langsame Fahrt, die ich am 28.10. freigegeben habe.
+- **Die Sprünge bekommen keinen Ton.** Ein Ton alle 2 s verstösst gegen „höchstens ein Ton alle
+  2–3 Sekunden“, das gilt hier vor „jeder sichtbare Schnitt trägt einen Ton“.
+- **Beim Gefühlssatz ist alle Grafik weg.** Sagt die Person etwas, das berühren soll, steht
+  nur Gesicht und Untertitel im Bild, keine Tafel und keine Einblendung. Diese Regel prüft
+  kein Skript, sie wird beim Festlegen der Tafeln beachtet (`bis` endet vor dem Satz).
+
 ### 🚨 Die Grenzen — und die sind wichtiger als die Tabelle
 
 **Auf Instagram läuft die Hälfte der Reels stumm oder mit fremder Musik drüber.** Ein

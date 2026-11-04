@@ -33,10 +33,25 @@ wenn sie einen anderen Look will. Gesicht und Bildrand prüft das Werkzeug vor j
 | **Untertitel** | A · Zwei Schriften | Seiten bis zwei Zeilen, betonte Wörter Source Sans Black orange | kurzer Pop je Seite | — |
 | | B · Aktives Wort | 2–3 Wörter Source Sans Bold, das gerade gesprochene leuchtet orange | Leuchten wandert mit | — |
 | | C · Balken | 3–4 Wörter auf dunklem, halbdurchsichtigem Balken | kurzer Pop | — |
+| | D · Serifen-Wort (im Test) | 2–3 Wörter Source Sans 68 px in einer Zeile, je Seite ein Wort Philosopher 96 px (aus `betont`, sonst das längste Hauptwort) | kurzer Pop je Seite | — |
 | **Knallwort** | — | ein Wort Source Sans Black orange, darunter Zeile (64 px) oder bis 3 Schilder (60 px); steht auf derselben Höhe wie Hook und Untertitel, unter dem Kinn (bis 27.10. Bildmitte = auf dem Kinn) | federt auf, atmet leicht | Pop |
 | **Karte** | — | freigegebene Kundenstimme auf Creme-Karte, Petrol-Kante, leicht gekippt | fährt von der Seite herein | Pop |
 | **Clipfolge** | — | Material, **jeder** Abschnitt mit Zoom-Fahrt 1 → 1.15 aufs Gesicht (oberes Drittel), seit 28.10.2026; je Reel änderbar über `stil.zoom` (`bis`, `alle`, `zentrumY`) | harter Schnitt | — |
 | **Look** | — | Farbkorrektur, Korn 5 %, Vignette | Korn flimmert | — |
+| **Tafel** (im Test) | — | dunkle, leicht durchscheinende Fläche unter dem Kinn: Titel in Versalien, bis 3 Zeilen bis 28 Zeichen in Philosopher kursiv mit orangem Punkt. Der Untertitel rückt darunter und läuft weiter | jede Zeile wischt von links auf ihrem gesprochenen Wort herein | Pop je Zeile |
+| **Abschluss** (im Test) | — | Creme-Karte mit feinem Rand: kleine Zeile, das eine Wort gross in Philosopher, darunter der Aufruf. Untertitel pausiert | federt ein, bleibt bis zum letzten Bild | Pop |
+
+**So steht es in `grafik.json`** (die Stelle als Wortfolge, nie als Sekunde; `vorschau.py` rechnet die Zeiten und bricht ab, wenn eine Stelle nicht im Transkript steht):
+
+```json
+"stil": {"untertitel": "D", "zoom": {"modus": "sprung", "weit": "drei Tage"}},
+"tafeln": [{"titel": "Daraus wurde", "ab": "ein Angebot", "bis": "Anmeldungen",
+  "zeilen": [{"text": "30 Anmeldungen in 2 Tagen", "ab": "30"}]}],
+"einblendungen": [{"art": "abschluss", "ab": "dann kommentiere", "oben": "Dein nächster Schritt",
+  "text": "LEAD", "unter": "in die Kommentare"}]
+```
+
+`weit` ist optional (fehlt = automatisch bei rund 62 % der Länge, `false` = nie). Einträge werden der Reihe nach gesucht, also Tafeln in der Reihenfolge des Reels. Handschrift gibt es nicht, solange die Script-Schrift nicht freigegeben ist.
 
 **Töne** (Patricia 06.10.2026): Pop bei allem Neuen · Typing während der Hook sich aufbaut ·
 Whoosh an jedem Clip-Wechsel · Intro nur, wenn die erste Sekunde ohne Sprache ist.
