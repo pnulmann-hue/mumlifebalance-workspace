@@ -36,6 +36,31 @@ und schreibt die Sätze in meiner Stimme. Das ist meine eigene Grenze:
 
 ---
 
+## 🚨 Wo ich bewusst abweiche — und wo nicht
+
+In der Methode steht wörtlich: **„Newsletter kannst du dir aus dem Kopf
+streichen."** Dort sind es **Verkaufs-Mails**, keine Newsletter: jede Mail trägt
+ein Angebot, einen Preis und eine Frist. Zwei Mails am Tag, vier auf dasselbe
+Produkt, 15 Angebote im Monat.
+
+**Ich mache daraus den Newsletter mit Mehrwert** — das ist mein Entscheid vom
+04.11.2026, und ich weiche damit bewusst ab. Der Grund: meine Liste hat 164
+Kontakte, und für rund 150 davon habe ich seit Monaten gar keinen Kanal. Erst
+kommt überhaupt Kontakt, dann Takt.
+
+🚨 **Aber die Abweichung geht nur an einer Stelle, nicht an zwei.** Was bleibt:
+
+| Bleibt genau so | Weil |
+|---|---|
+| **Jede Mail hat ein Angebot** | eine Mehrwert-Mail ohne Angebot verkauft nichts, und mehr davon macht meine Klickrate nicht besser |
+| **Jede Mail hat einen Hebel und eine Frist** | ohne Grund, heute zu klicken, klickt niemand heute |
+| **Die fünf Pflicht-Elemente** | Betreff · Titel mit Hebel · Link mehrfach · Aufruf im Imperativ · PS |
+
+Mein Newsletter ist also eine **Verkaufsmail mit einem echten Tipp vorne**, nicht
+eine Mehrwert-Mail mit einem Link hinten. Der Unterschied ist die Frist.
+
+---
+
 ## 🚨 Wer auf meiner Liste bekommt überhaupt Post?
 
 **Zwei Dinge, die nicht dasselbe sind:**
@@ -158,6 +183,28 @@ funktioniert, und das grosse Ganze liegt im Kurs.
 
 🚨 **Der nächste Schritt ist genau eine Handlung.** Ein Link, eine Entscheidung.
 Nicht „schau dir das an und folge mir und antworte mir".
+
+### 🔧 Der Hebel — die zweite Achse
+
+**Dauer und Hebel sind zwei verschiedene Dinge.** Die Dauer sagt, wie lang die
+Aktion läuft; der Hebel sagt, warum sie heute klicken soll. Fünf Hebel, und sie
+werden **abgewechselt** — nicht jeden Monat derselbe:
+
+| Hebel | Wie das aussieht |
+|---|---|
+| **Spezialpreis** | 199 statt 333, zwei Tage |
+| **Einführungspreis** | neues Angebot, 39 nur in den ersten 48 Stunden, danach teurer |
+| **Begrenzte Plätze** | „nur fünf Plätze" — echt begrenzt, nicht behauptet |
+| **Erinnerung ohne Rabatt** | nur bei etwas sehr Günstigem, das sich selbst verkauft |
+| **Neues Format** | dasselbe Wissen als Live-Workshop, Fragestunde, WhatsApp-Woche |
+
+🚨 **Das neue Format ist der stärkste Hebel.** Im Vorbild war ein zweitägiger
+Live-Workshop für 37 der Umsatztreiber des Monats — weil er sich nicht wie ein
+Kurs anfühlt. Mein Tool-Workshop ist genau das.
+
+🚨 **Der Hebel muss in der Mail stehen, nicht nur in meinem Kopf.** Wenn ich in
+der Planung „Spezialpreis" eintrage und in der Mail steht nur der Preis, ist der
+Hebel nicht da.
 
 ### Welches Angebot in welcher Mail
 
@@ -292,8 +339,44 @@ Aktionen hintereinander im gleichen Preisbereich. Nach einem 333er wieder ein
 nichts daran, dass bei 10 % Kaufquote verkauft wird. Eine absolute Zahl aus einem
 fremden Business sagt über meine Liste nichts.
 
-Je Mail und je Aktion schreibe ich auf: **Datum · Ablauf A oder B · Angebot ·
-Preis · Öffnungsrate · Klickrate · Verkäufe · Kaufquote.**
+### Die Tabelle
+
+Eine Zeile je Mail, über den ganzen Monat. Spalten:
+
+**Datum · Angebot · Hebel · Preis · Link zur Seite · zugestellt · geöffnet % ·
+geklickt % · Verkäufe · Kaufquote % · Umsatz · Order Bump · Upsell · gesamt.**
+
+🚨 **Die drei Raten haben drei verschiedene Nenner** — werden sie verwechselt,
+kommt Unsinn heraus:
+
+| | gerechnet auf |
+|---|---|
+| **Öffnungsrate** | die **Zugestellten** (nicht die Listengrösse) |
+| **Klickrate** | die **Zugestellten** |
+| **Kaufquote** | die **Klicks** — wie viele von denen, die auf der Seite waren, gekauft haben |
+
+### Wo ich stehe, und was das heisst
+
+| | Vorbild | **ich** |
+|---|---|---|
+| Öffnungsrate | 22–32 %, Ø 27 % | **17,5–27,7 %** — im Bereich |
+| Klickrate | Ø 3,5 % | **0,0–1,2 %** — ein Drittel davon |
+| Kaufquote auf Klicks | 5–13 % | noch nicht gemessen |
+
+🚨 **Die Klickrate ist mein einziges echtes Mail-Problem.** Die Öffnungsrate
+steht. Jede Massnahme geht auf den Klick: Hebel, Frist, Link mehrfach, PS.
+
+🚨 **Und die ehrliche Rechnung bei 164 Kontakten:** 164 × 3,5 % Klick = rund 6
+Klicks · davon 10 % kaufen = **0,6 Verkäufe je Mail**. Bei einem 39er sind das
+rund 23 Franken pro Mail. Mit meiner heutigen Klickrate ist es ein Drittel davon.
+
+**Daraus folgt, wofür der Newsletter da ist:** bei dieser Listengrösse ist er
+**kein Umsatzkanal, sondern der Kanal, der die Liste warm hält und Launches
+vorbereitet.** Umsatz macht er, wenn die Liste wächst — der Hebel liegt vorne im
+Trichter, nicht in der Mailfrequenz. Das gehört in jede Planung, in der ich mir
+vom Newsletter Umsatz verspreche.
+
+### Was ich je Mail festhalte
 
 - Eine **kleine Liste hat meist die höhere Öffnungsrate** — das ist mein Vorteil,
   nicht mein Mangel.
@@ -323,16 +406,43 @@ benennen, woran es grade hängt · sagen, was sie jetzt tun kann.**
 
 🚨 **Kein Betrag und kein Währungszeichen im Betreff.** Die Zahl steht im Text.
 
-### Der Rumpf
+### Die fünf Elemente, die vorkommen müssen
 
-1. **Einstieg** — ein, zwei Sätze, direkt hinein. Keine Begrüssung.
-2. **Das Angebot** — was es ist, was es kostet, bis wann.
-3. **Was sich für sie ändert** — wie ihr Alltag danach aussieht. Die
-   Inhaltsliste gehört auf die Verkaufsseite, nicht in die Mail.
-4. **Ein Aufruf mit Frist** — Datum und Uhrzeit, nicht „nur kurz".
+Alles andere an der Mail darf variieren — kurz, lang, mit Geschichte, mit
+Aufzählung, auch mal ein einzelner Satz. **Diese fünf nicht:**
 
-🚨 **Genau ein Aufruf je Mail.** Zwei verschiedene Links sind einer zu viel —
-derselbe Link zweimal (oben und unten) ist richtig.
+1. **Betreffzeile mit Spannung** — sie muss das Gefühl machen: wenn ich die nicht
+   öffne, verpasse ich etwas.
+2. **Der Angebotstitel mit dem Hebel darin** — „nur noch heute", „statt 333",
+   „fünf Plätze". Nicht nur der Produktname.
+3. **Der Link mindestens zweimal** — oben im Text hinter einem Wort, unten als
+   Knopf, und im PS. Immer derselbe Link.
+4. **Ein Aufruf im Imperativ** — „Hol dir X." Ein Link, der nur hinter dem
+   Produktnamen versteckt ist, reicht nicht.
+5. **Ein PS in jeder Mail** — PS werden überdurchschnittlich oft gelesen. Ein
+   Satz: Hebel plus Aufforderung plus Link.
+
+**Der Rumpf dazwischen:** Einstieg in ein, zwei Sätzen ohne Begrüssung · das
+Angebot mit Preis und Frist · was sich für sie ändert (die Inhaltsliste gehört
+auf die Verkaufsseite, nicht in die Mail) · Aufruf mit Datum und Uhrzeit.
+
+🚨 **Ein Ziel je Mail, derselbe Link mehrfach.** Zwei *verschiedene* Links sind
+einer zu viel — derselbe Link drei Mal ist richtig.
+
+🚨 **Bilder sparsam.** Viele Mailprogramme zeigen sie gar nicht an; die Mail muss
+ohne Bild vollständig sein. Dasselbe gilt für eine Kundenstimme: die Mail muss
+auch ohne sie Sinn ergeben.
+
+### Verknappung auch auf der Zielseite
+
+Der Hebel endet nicht in der Mail. Wer auf „199 statt 333" klickt und dann eine
+Seite ohne Streichpreis und ohne Frist sieht, bricht ab.
+
+- **Der Streichpreis steht auch auf der Verkaufsseite**, nicht nur in der Mail.
+- **Ein Banner oder Countdown** oben auf der Seite, solange die Aktion läuft.
+- 🚨 Bei ThriveCart heisst das: Kassentext und Preisoption vor dem Versand
+  prüfen. Eine Mail, die 199 verspricht, und eine Kasse, die 333 abbucht, ist
+  schlimmer als keine Aktion.
 
 ---
 
