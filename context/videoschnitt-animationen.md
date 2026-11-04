@@ -357,6 +357,7 @@ einen anderen. Rotiert wird auf drei Ebenen:
 
 | Ebene | Wechselt |
 |---|---|
+| **Grundstil Sprechreel** (seit 04.11.2026) | **Stil B** (langsame Fahrt, aktives Wort) ↔ **Tafel-Stil** (Grössensprung, Untertitel D, Tafel, Abschluss-Karte), je Reel im Wechsel |
 | **Stil bei Talking Head** | Kelsie-Textebene → Beweis-Collage → Profil-Verweis |
 | **Stil bei B-Roll** | Marker-Hook → Serif-Mix → B-Roll-Minimal |
 | **Akzentfarbe** | Petrol → Orange → Dunkelblau (kein Gelb) |
@@ -365,6 +366,10 @@ einen anderen. Rotiert wird auf drei Ebenen:
 
 Wenn ein Stil zweimal hintereinander sinnvoll wäre, wird das begründet — nicht
 stillschweigend gemacht.
+
+**Der Wechsel beim Sprechreel ist zugleich der Vergleich** (Patricia, 04.11.2026: *„man könnte ja
+abwechseln“*). In `_stil-verlauf.md` steht je Reel, welcher Grundstil lief. Ein Einzelpost kann Zufall
+sein, ausgewertet wird deshalb erst nach mehreren Reels je Stil über Reichweite und Kommentare.
 
 ---
 
