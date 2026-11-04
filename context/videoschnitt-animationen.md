@@ -53,6 +53,8 @@ wenn sie einen anderen Look will. Gesicht und Bildrand prüft das Werkzeug vor j
 
 `weit` ist optional (fehlt = automatisch bei rund 62 % der Länge, `false` = nie). Einträge werden der Reihe nach gesucht, also Tafeln in der Reihenfolge des Reels. Handschrift gibt es nicht, solange die Script-Schrift nicht freigegeben ist.
 
+Aus dem ersten Test (04.11.2026): Eine Tafel startet höchstens 2 s vor ihrer ersten Zeile und steht nicht länger leer herum. Mit einer Zeile und 13 s Reden wirkt sie verlassen, dann lieber zwei kurze Tafeln. Der Sprung-Zoom vergrössert auch das Gesicht: In Nahaufnahmen braucht es `stil.hoehe` 0.58 statt 0.56 (die Gesichtsprüfung rechnet das mit und stoppt den Render sonst).
+
 **Töne** (Patricia 06.10.2026): Pop bei allem Neuen · Typing während der Hook sich aufbaut ·
 Whoosh an jedem Clip-Wechsel · Intro nur, wenn die erste Sekunde ohne Sprache ist.
 Die Regeln stehen in `context/videoschnitt-regeln.md`, Abschnitt „Meine Töne“.
