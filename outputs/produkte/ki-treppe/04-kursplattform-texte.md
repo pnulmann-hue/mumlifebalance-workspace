@@ -1158,8 +1158,8 @@ ausgewertet.
 
 **Das Wichtigste in Kürze:**
 
-- **Weg 1 — deine eigenen Beiträge.** Such fünf, die gut gelaufen sind. Nicht
-  die schönsten, sondern die mit Reaktionen. Screenshots in den Chat ziehen und
+- **Weg 1 — deine eigenen Beiträge.** Such fünf, bei denen Leute reagiert
+  haben. Screenshots in den Chat ziehen und
   die Regeln herausziehen lassen. Was dabei herauskommt, ist deine eigene
   Handschrift — zum ersten Mal aufgeschrieben.
 - **Weg 2 — Beiträge von anderen.** Gut für Formate, die du noch nie gemacht
@@ -1187,8 +1187,7 @@ alles.
 
 - **Durchgang 1** läuft mit leerer Wissensdatei. **Durchgang 2** mit gefüllter.
   Beide Ergebnisse siehst du nebeneinander.
-- Das Ergebnis aus Durchgang 1 ist nicht falsch. Es ist nur beliebig — es
-  könnte von jeder sein.
+- Das Ergebnis aus Durchgang 1 ist beliebig. Es könnte von jeder sein.
 - **Die Lehre daraus ist die wichtigste des Moduls:** Die Maschine macht nicht
   den Unterschied. Das Wissen darin macht ihn.
 - Story funktioniert genauso. Derselbe Aufbau, dasselbe Wissen, anderes Format.
@@ -1206,9 +1205,41 @@ alles.
 - Wer beides in einen Schritt packt, baut zehn Bilder mit einem Text, der nicht
   stimmt — und muss alles neu machen. Zehn Minuten Lesen sparen eine Stunde
   Nachbauen.
-- **Warum ein eigener Editor:** Damit du einzelne Folien ändern kannst, ohne
-  den ganzen Satz neu zu bauen. Ich zeige dir, wie ich das gelöst habe.
-- Ein Bild ändern heisst hier: eine Zeile ändern. Nichts wird neu gezeichnet.
+- **Für die Bilder gibt es zwei Wege.** Über Canva: du hast es schon und musst
+  nichts bauen. Über einen eigenen Editor: den baust du selbst, und das kommt
+  erst in Modul 9. Ich bin beide gegangen — erst Canva, später der eigene
+  Editor.
+- 🚨 **Fang mit Canva an.** Dafür brauchst du nichts Neues, und es ist in einer
+  Stunde eingerichtet.
+
+**Was du dafür einmal selbst machst:** ein Muster-Karussell in Canva, von Hand,
+mit deinen Schriften. Claude kann in Canva keine Schriftart wählen — Seiten
+vervielfältigen und Text austauschen schon. Darum baust du die Vorlage und sie
+füllt sie danach immer wieder.
+
+**Und das sagst du ihr dann:**
+
+> In Canva liegt mein Muster-Karussell, hier ist der Link: ____________________
+>
+> Schau es dir an und baue mir eines zum Thema ____________________ — gleiche
+> Schriften, gleiche Farben, ______ Seiten.
+>
+> Leg mir die Folientexte zuerst als Text vor. Erst wenn ich sie freigebe,
+> füllst du die Vorlage.
+>
+> Frag nach, wenn dir eine Angabe fehlt.
+
+Die letzten zwei Sätze tragen das Ganze. Ohne den ersten baut sie zehn Folien,
+die du danach nochmal baust. Ohne den zweiten rät sie, was du gemeint hast.
+
+**Du wirst Schritt für Schritt durchgeführt** — und wenn dir etwas nicht klar
+ist, fragst du einfach zurück. Das ist ein Gespräch und keine Prüfung.
+
+**Dasselbe gilt für Storys und Reel-Titelbilder:** eine Vorlage je Art, und der
+Auftrag bleibt Wort für Wort derselbe.
+
+**📎 Die Anleitung liegt unter diesem Video** — alle Schritte, der Auftrag zum
+Abtippen und was du sagst, wenn es beim ersten Mal nicht klappt.
 
 ---
 
@@ -1224,12 +1255,47 @@ schneidet.
   Rohschnitt.
 - **Die Regel dahinter:** Der letzte vollständige Versuch gewinnt. Du musst dir
   also nichts merken und nichts notieren — einfach nochmal sagen.
-- 🚨 **Ehrlich zur Einrichtung:** Das ist die Aufbaustufe. Dafür braucht es ein
-  paar Programme mehr, und das Einrichten dauert länger als bei allem anderen
-  in diesem Kurs. Wenn du gerade keine Lust darauf hast, überspring die Lektion
-  und komm später zurück.
+- 🚨 **Ehrlich zur Einrichtung:** Das ist die Aufbaustufe und die einzige
+  Stelle im ganzen Kurs, an der etwas auf deinen Rechner dazukommt — drei
+  Programme. Das Installieren übernimmt sie — sie sagt dir, was fehlt,
+  schlägt den Befehl vor, du bestätigst. Es kostet einen Nachmittag, einmal.
+  Wenn du gerade keine Lust darauf hast, überspring die Lektion und komm
+  später zurück. 7.5 bis 7.7 brauchen nichts davon.
 - Den Feinschnitt macht am Ende ein Mensch. Eine Maschine hört nicht, ob ein
   Satz klingt.
+
+**Was du dafür selbst machst:** drehen, ohne dich zu korrigieren — und das Video
+in den Ordner legen, den du beim Einrichten mit ihr festlegst. Mehr nicht.
+
+**Und das sagst du ihr:**
+
+> Ich filme meine Reels frei und wiederhole Sätze, bis einer sitzt.
+>
+> Schreib mit, erkenn den letzten vollständigen Anlauf und leg mir die
+> Schnittliste als Text vor — geschnitten wird erst, wenn ich sie freigegeben
+> habe.
+>
+> Schau zuerst, was auf meinem Rechner schon da ist, und sag mir, was ich dafür
+> brauche. Erklär mir jeden Schritt, und frag nach, wenn dir eine Angabe fehlt.
+
+Der letzte Absatz macht aus der Einrichtung ein Gespräch. Ohne ihn fängt sie an
+und hält mitten in einem Befehl an, den du nicht erwartet hast. **Du wirst
+Schritt für Schritt durchgeführt** — und wenn dir etwas nicht klar ist, fragst
+du zurück: „warum brauche ich das?", „was macht dieser Befehl?".
+
+**Wie sie deinen Stil lernt:** derselbe Handgriff wie in 7.1b, nur für Video.
+Du suchst drei bis fünf Videos, deren Machart dir gefällt, und lässt die
+**Bauweise** herausziehen — Schnitttempo, wo Text steht, wie lang eine
+Einstellung bleibt. Daraus werden Regeln, und ab dann baut sie so. Die Bauweise
+ja, die Sätze nie.
+
+**Was danach noch geht**, jedes mit einem Satz im Chat: Untertitel Wort für Wort
+mitlaufend · Zoom-Fahrten, damit ein Sprechvideo nicht steht · Text, der auf dem
+gesprochenen Wort erscheint · Animationen in deinem Stil.
+
+**📎 Die Anleitung liegt unter diesem Video** — die Einrichtung Schritt für
+Schritt, der Auftrag zum Abtippen und eine Liste, was du sagst, wenn etwas
+abbricht.
 
 ---
 
@@ -1708,6 +1774,8 @@ heraus.
 | 5.8 | Leeres Skill-Gerüst (Google Doc, zum Ausfüllen) ✅ |
 | 6.3 | **Dein erster Bot — der Auftrag und die vier Schritte** (Google Doc, zum Kopieren) ✅. 🚨 Bewusst keine Vorlage zum Herunterladen: Lektion 4.2 verspricht „Du installierst nichts weiter", und eine startbare Vorlage bräuchte eine Laufzeit, die niemand installiert hat |
 | 7.1 | **Die vier Befehle** `caption` · `story` · `karussell` · `reels` + drei leere Wissensdateien ✅ gebaut, liegt in `outputs/produkte/ki-treppe/content-maschinen/Content-Maschinen.zip` · Quelle: `scripts/ki-kurs/content-maschinen-bauen.py --zip`. 🚨 Alle vier nach den sechs Teilen aus 5.2 gebaut, 66 Stellen zum Ausfüllen, nichts von Patricias Wissen drin |
+| 7.3 | **Dein erstes Karussell — was du tust und was du ihr gibst** (Google Doc, zum Kopieren) — die drei Dinge, die nur sie machen kann, der Auftrag zum Abtippen und was sie sagt, wenn es beim ersten Mal nicht klappt |
+| 7.4 | **Dein erster Rohschnitt — was du tust und was du ihr gibst** (Google Doc, zum Kopieren) — die Einrichtung Schritt für Schritt, der Auftrag, die eine Regel und eine Liste für den Fall, dass ein Befehl abbricht. 🚨 Die einzige Beilage, in der etwas installiert wird — das steht dort im ersten Absatz und nicht im Kleingedruckten |
 | 8.1 | `produkt` · `salespage` + leere Wissensdateien |
 | 9.2 | Cockpit-Vorlage (leeres Artifact) |
 | 10.1 | Sicherheits-Checkliste (PDF) ✅ |
