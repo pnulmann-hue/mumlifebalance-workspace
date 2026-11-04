@@ -204,7 +204,7 @@ so wie bei Startklar.
 | 7.6 | **Automatisiertes Posten** | **Zeigen:** freigegeben am Abend, eingeplant um 20:00, draussen am nächsten Morgen |
 | 7.7 | **Wenn die KI Murks baut** | **Erzählen:** automatisch erzeugter Content wird schlecht, wenn niemand prüft. Die Muster, an denen man KI-Text erkennt. **Zeigen:** das Prüfskript und einen echten Fund. **Mitgeben:** die Prüf-Mechanik als Vorlage |
 | 7.7b | **Die Zahlen lesen** *(Vorschlag 13.10.)* | **Erzählen:** Mindestbasis, Vergleich mit allen Beiträgen, Reichweite ist nicht Nachfrage. **Zeigen:** Bestperformer-Formel und Nachfrage je Thema im Cockpit, dann dieselbe Auswertung mit Prompt 10–12 an einer Handtabelle. **Mitgeben:** Tabellenvorlage + Prompts |
-| 7.8 | **Zusammenfassung und Checkliste** | |
+| 7.8 | **Zusammenfassung und Checkliste** | **Erzählen:** vier Maschinen, ein Prüfweg, eine Regel — Freigabe statt Autopilot. **Zeigen:** nichts, Gesicht in die Kamera. **Sagen:** dass die Dateien am Anfang leer sind und genau das die Arbeit ist, die den Unterschied macht. **Mitgeben:** dieselbe Checkliste wie nach Modul 1 |
 
 ---
 

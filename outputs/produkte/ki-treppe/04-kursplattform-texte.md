@@ -1679,8 +1679,8 @@ heraus.
 | 4.3 | **Arbeitsplatz-Grundgerüst** — ZIP mit den fünf Ordnern (je eine Liesmich), `CLAUDE.md` zum Ausfüllen und **vier Befehlen** (`/start` · `/shutdown` · `/create-plan` · `/implement`) in entschlackter Fassung ✅ gebaut, liegt in `Downloads/Mein-Business-Grundgeruest.zip` · Quelle: `scripts/ki-kurs/grundgeruest-bauen.py --zip` |
 | 4.4 | **`CLAUDE.md`-Anleitung** — fünf Teile, je mit Beispiel von Sandra und einem Feld zum Ausfüllen (Google Doc) ✅ |
 | 5.8 | Leeres Skill-Gerüst (Google Doc, zum Ausfüllen) ✅ |
-| 6.3 | **Dein erster Bot — der Auftrag und die vier Schritte** (Google Doc, zum Kopieren) ⏳ offen. 🚨 Keine Vorlage zum Herunterladen: Lektion 4.2 verspricht „Du installierst nichts weiter", und eine startbare Vorlage bräuchte eine Laufzeit, die niemand installiert hat. Hinein gehören der Auftragssatz, die vier Schritte und was zu tun ist, wenn keine Nachricht kommt |
-| 7.1 | Die vier Befehle `caption` · `story` · `karussell` · `reels` + leere Wissensdateien ⏳ offen |
+| 6.3 | **Dein erster Bot — der Auftrag und die vier Schritte** (Google Doc, zum Kopieren) ✅. 🚨 Bewusst keine Vorlage zum Herunterladen: Lektion 4.2 verspricht „Du installierst nichts weiter", und eine startbare Vorlage bräuchte eine Laufzeit, die niemand installiert hat |
+| 7.1 | **Die vier Befehle** `caption` · `story` · `karussell` · `reels` + drei leere Wissensdateien ✅ gebaut, liegt in `outputs/produkte/ki-treppe/content-maschinen/Content-Maschinen.zip` · Quelle: `scripts/ki-kurs/content-maschinen-bauen.py --zip`. 🚨 Alle vier nach den sechs Teilen aus 5.2 gebaut, 66 Stellen zum Ausfüllen, nichts von Patricias Wissen drin |
 | 8.1 | `produkt` · `salespage` + leere Wissensdateien |
 | 9.2 | Cockpit-Vorlage (leeres Artifact) |
 | 10.1 | Sicherheits-Checkliste (PDF) ✅ |
