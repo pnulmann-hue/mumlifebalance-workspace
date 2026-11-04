@@ -142,7 +142,10 @@ wird betont, `[Platzhalter]` in Aufträgen wird farbig gesetzt.
 | `auftrag` | Prompts oder Sätze zum Abtippen | `pille` · `zaehler` · `titel` · `karten: [{label, text}]` |
 | `aufruf` | letzte Folie, immer mit `letzte: true` | `oben` · `wort` · `absatz` · `pille` |
 
+**Der Standard-Look (Patricias Entscheid 04.11.2026):** Definition auf `thema: creme`, nur `titel` und `aufruf` tragen `thema: dunkel`. So steht es in `muster.json`.
+
 **Regeln, die die Vorlage nicht selbst erzwingt:**
+- Das dunkle Cover gehört zum Foto-Platz im Feed. Ein Cover ohne Foto wäre dunkel-vollflächig und ist bei Lead-Posts verboten, dort `thema: creme` setzen.
 - Orange trägt je Folie **ein** Wort, Zahlen und Etiketten sind Petrol. Deshalb kein Petrol auf dem Cover.
 - Silver South Script nur für kurze Akzente (`links`, `rechts`, `notiz`, „Kommentier“). Ganze Sätze sind darin unlesbar, beim ersten Render ist genau das passiert.
 - `fotoY` schiebt das Foto nach unten, die Farbfläche füllt den Rest. Das Gesicht liegt damit unter dem Hook. Das fertige Cover immer ansehen: Verläuft ein heller Himmel unter der dunklen Fläche, entsteht ein weisses Band. Dann ein Foto mit ruhigem Hintergrund nehmen oder `thema: creme`.

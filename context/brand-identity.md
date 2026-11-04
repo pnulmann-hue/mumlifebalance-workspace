@@ -47,7 +47,7 @@ Liegt in `context/MumLifeBalance-Logo/`:
 - **Text**: Dunkelblau (#29556d) oder Text-Farbe (#0c1c30)
 - **Akzent**: Orange (#dc822e) auf **einem** Wort pro Folie
 - **Petrol**: nur für grosse Zahlen (Fehler-Listen-Hintergrund-Zahl) oder Akzent-Streifen
-- **Dunkelblau-Moment**: nur **einmal pro Karussell** als Farbwechsel (z.B. Lösungs-Folie) — schafft optischen Reset
+- **Dunkelblau-Moment**: in der Master-Vorlage **Cover und letzte Folie** (Patricias Entscheid 04.11.2026), alle Folien dazwischen Creme. In anderen Karussells nur **einmal** als Farbwechsel (z.B. Lösungs-Folie) — schafft optischen Reset
 
 ## Foto-Integration
 
@@ -63,7 +63,7 @@ Instagram zeigt Karussell-Cover im Feed-Grid als **1:1-Quadrat** (cropped), obwo
 
 ## Was NICHT verwendet wird
 
-- Kein Dark-Mode (das ist Julia Trost's Stil, nicht Patricias)
+- Kein Dark-Mode über das ganze Karussell (das ist Julia Trost's Stil, nicht Patricias). Das Leuchten auf dunklem Cover und dunkler letzter Folie ist seit 04.11.2026 erlaubt, dort in Dunkelblau, nie in Schwarz
 - Kein Magenta/Pink als Akzent (Julia's Farbe)
 - Keine Brush-Fonts ausser Silver South Script (Kati's Stil)
 - Kein Schwarz — Dunkelblau (#29556d) oder Text (#0c1c30) ersetzen Schwarz
