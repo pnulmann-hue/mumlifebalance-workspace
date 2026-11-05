@@ -1,0 +1,18 @@
+{
+  "0":  {"icon": "spark",    "title": "Winter-\nGruss",       "sub": "Stille, Wärme und Licht",                  "pill": "Die Winter-Impulse"},
+  "1":  {"icon": "candle",   "title": "Advents-\ndüfte",      "sub": "Fünf Mischungen für den Diffuser",         "pill": "Wild Orange · Clove · Ginger"},
+  "2":  {"icon": "drop",     "title": "Nieren-\nzeit",        "sub": "Ein leichter Abend und warme Füsse",       "pill": "Ginger · Wild Orange"},
+  "3":  {"icon": "sun",      "title": "Bratapfel-\nCrème",    "sub": "Winterdessert mit Zimt",                   "pill": "Cinnamon Bark"},
+  "4":  {"icon": "gift",     "title": "Selbst\ngemacht",      "sub": "Badepralinen und Raumspray",               "pill": "Lavender · Douglas Fir · Cypress"},
+  "5":  {"icon": "cup",      "title": "Duftende\nBackstube",  "sub": "Ein Tropfen im Teig",                      "pill": "Wild Orange · Cinnamon Bark · Clove"},
+  "6":  {"icon": "star",     "title": "Basteln mit\nKindern", "sub": "Der duftende Orangenkranz",                "pill": "Wild Orange"},
+  "7":  {"icon": "moon",     "title": "Innehalten",           "sub": "Drei Duftmomente im Advent",               "pill": "Sandalwood · Frankincense"},
+  "8":  {"icon": "cup",      "title": "Zwei\nSuppen",         "sub": "Kürbis-Ingwer und Karotten-Linsen",        "pill": "Wild Orange · Coriander"},
+  "9":  {"icon": "star",     "title": "Ruhe vor\ndem Fest",   "sub": "Abendruhe und Sternenzauber",              "pill": "Cedarwood · Frankincense · Myrrh"},
+  "10": {"icon": "bath",     "title": "Sauna-\nzeit",         "sub": "Aufguss und Pflege danach",                "pill": "Black Spruce · Sandalwood · Lavender"},
+  "11": {"icon": "candle",   "title": "Die Rauh-\nnächte",    "sub": "Kerze, Buch und 13 Wünsche",               "pill": "Cedarwood · Frankincense"},
+  "12": {"icon": "moon",     "title": "Ein Öl\npro Nacht",    "sub": "Zwölf Nächte, zwölf Ideen",                "pill": "Petitgrain · Balance · Serenity"},
+  "13": {"icon": "leaf",     "title": "Rückblick",            "sub": "Zwischen den Jahren",                      "pill": "Neroli · Sandalwood · Vetiver"},
+  "14": {"icon": "glass",    "title": "Silvester-\npunsch",   "sub": "Alkoholfrei und aromatisch",               "pill": "Wild Orange · Lemon · Cinnamon Bark"},
+  "15": {"icon": "spark",    "title": "Danke,\nWinter",       "sub": "Auf ein duftendes neues Jahr",             "pill": "Happy New Year"}
+}

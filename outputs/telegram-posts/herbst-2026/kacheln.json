@@ -1,0 +1,18 @@
+{
+  "0":  {"icon": "leaf",     "title": "Herbst-\nGruss",       "sub": "Zurück nach drinnen, zurück zu dir",     "pill": "Die Herbst-Impulse"},
+  "1":  {"icon": "bottle",   "title": "Herbst-\nCheck",       "sub": "Wie frisch sind deine Öle noch?",        "pill": "Lemon · Wild Orange · Frankincense"},
+  "2":  {"icon": "drop",     "title": "Trockene\nLuft",       "sub": "Der Luftbefeuchter aus der Schüssel",    "pill": "Wild Orange"},
+  "3":  {"icon": "moon",     "title": "Der\nDiffuser-Abend",  "sub": "Wenn der Raum schon Feierabend sagt",    "pill": "Lavender · Wild Orange · Bergamot"},
+  "4":  {"icon": "cup",      "title": "Ingwer-\nwasser",      "sub": "Der Morgen beginnt warm",                "pill": "frischer Ingwer"},
+  "5":  {"icon": "sun",      "title": "Morgen-\nlicht",       "sub": "Drei Duftmomente am Tag",                "pill": "Wild Orange · Rosemary · Sandalwood"},
+  "6":  {"icon": "spark",    "title": "Sanft\nwecken",        "sub": "Mit Duft statt mit Schimpfen",           "pill": "Lemon · Peppermint"},
+  "7":  {"icon": "leaf",     "title": "Herbst heisst\nloslassen", "sub": "Ein Zettel und ein Roller",          "pill": "Cypress · Bergamot · Sandalwood"},
+  "8":  {"icon": "drop",     "title": "Graue\nTage",          "sub": "Fünf Mischungen für den Diffuser",       "pill": "Wild Orange · Bergamot · Siberian Fir"},
+  "9":  {"icon": "cup",      "title": "Herbst-\ntee",         "sub": "Warm und würzig mit dem Zahnstocher",    "pill": "Cardamom · Clove"},
+  "10": {"icon": "cup",      "title": "Goldene\nSuppe",       "sub": "Süsskartoffel, Ingwer, Kokos",           "pill": "Ginger · Turmeric"},
+  "11": {"icon": "bottle",   "title": "Winter-\nweich",       "sub": "Körperöl für die Heizsaison",            "pill": "Frankincense · Sandalwood · Lavender"},
+  "12": {"icon": "bath",     "title": "Sonntag-\nabend-Bad",  "sub": "Zwanzig Minuten ohne Handy",             "pill": "Sandalwood · Ylang Ylang"},
+  "13": {"icon": "mountain", "title": "Duft\nam Schal",       "sub": "Und zwei Minuten Atem",                  "pill": "Wild Orange · Frankincense"},
+  "14": {"icon": "leaf",     "title": "Winter-\nsalat",       "sub": "Walnuss-Orangen-Dressing",               "pill": "Wild Orange · Lemon · Rosemary"},
+  "15": {"icon": "spark",    "title": "Danke,\nHerbst",       "sub": "Bald kommen die Winter-Impulse",         "pill": "Bis bald"}
+}

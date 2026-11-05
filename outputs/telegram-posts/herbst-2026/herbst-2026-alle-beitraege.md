@@ -5,7 +5,7 @@ tags: [content, telegram, doterra]
 # 🍂 Herbst-Impulse 2026
 ## Gruppe „Gesund durchs ganze Jahr mit ätherischen Ölen"
 
-**15 Beiträge für die Herbst-Saison** (Mitte Oktober – Ende November), etwa zwei pro Woche.
+**16 Beiträge für die Herbst-Saison**, gepostet vom 5.11. bis 1.12.2026, vier pro Woche.
 Copy-paste-ready für Telegram, WhatsApp und Facebook. Fett (`*…*`) funktioniert in allen drei.
 
 **Roter Faden:** Die Organuhr. In der chinesischen Lehre gehört der Herbst zum Element
@@ -51,9 +51,6 @@ Auf einen warmen, duftenden Herbst!
 • die Farbe ist dunkler oder trüb geworden
 • am Boden hat sich etwas abgesetzt
 
-📍 *Der Duftstreifen-Test:*
-Einen Tropfen auf ein Papier geben, 10 Minuten warten, nochmals riechen. Dein Riecher weiss es meistens besser als das Etikett.
-
 ⏳ *Faustregel für geöffnete Fläschchen:*
 • Zitrusöle: 6–12 Monate
 • Nadelöle: 1–2 Jahre
@@ -62,15 +59,13 @@ Einen Tropfen auf ein Papier geben, 10 Minuten warten, nochmals riechen. Dein Ri
 
 💡 *Mein Tipp:* Beim Öffnen das Datum mit einem Filzstift auf den Deckel schreiben. Und gekippte Öle nicht wegwerfen — für die Haut sind sie nichts mehr, aber im Putzwasser oder auf dem Duftstein tun sie noch ihren Dienst.
 
-Lagern: kühl, dunkel, gut verschlossen. Eine Schublade oder eine Holzkiste reicht völlig.
-
 ---
 
 ## 💧 Beitrag 2 — Wenn die Heizungsluft trocken wird
 
 🔥 *Die Heizung läuft, die Luft wird trocken, und morgens fühlt sich die Nase an wie Papier?*
 
-In der Organuhr-Lehre ist Trockenheit genau das Klima, das zum Herbst gehört. Ich hab dafür einen ganz einfachen Trick, der nichts kostet:
+In der Organuhr-Lehre ist Trockenheit genau das Klima, das zum Herbst gehört. Dafür gibt es einen ganz einfachen Trick, der nichts kostet:
 
 🧺 *Der selbstgemachte Luftbefeuchter:*
 
@@ -81,19 +76,19 @@ In der Organuhr-Lehre ist Trockenheit genau das Klima, das zum Herbst gehört. I
 📍 *So geht's:*
 Wasser und Öl in die Schüssel, das Tuch darin tränken, gut auswinden und im Zimmer über einen Stuhl oder ans Heizrohr hängen. Es verdunstet langsam und duftet dabei leise vor sich hin.
 
-💡 Ich mach das gern abends im Kinderzimmer. Wichtig: Die Öle nicht direkt auf Plastik tropfen.
+💡 Das geht auch abends im Kinderzimmer. Wichtig: Die Öle nicht direkt auf Plastik tropfen.
 
 ---
 
 ## 🌙 Beitrag 3 — Die Lungenzeit zwischen 3 und 5 Uhr
 
-🌌 *Kennst du das, dass du immer um dieselbe Zeit mitten in der Nacht wach liegst?*
+🌌 *Immer um dieselbe Zeit mitten in der Nacht wach?*
 
 Laut Organuhr hat die Lunge zwischen 3 und 5 Uhr ihre Hochphase. Die Bücher dazu raten zu zwei ganz unspektakulären Dingen: vor dem Schlafen gut zu lüften und eine zweite Decke bereitzulegen, weil man um diese Zeit leicht fröstelt.
 
-Ich hab daraus ein kleines Abendritual gemacht.
+Daraus lässt sich ein kleines Abendritual machen.
 
-🕯️ *Mein Diffuser-Abend:*
+🕯️ *Der Diffuser-Abend:*
 
 • 200 ml Wasser
 • 2 Tropfen **Lavender**
@@ -103,7 +98,7 @@ Ich hab daraus ein kleines Abendritual gemacht.
 📍 *So geht's:*
 Den Diffuser eine Stunde vor dem Schlafen laufen lassen, dabei das Licht dimmen und den Fernseher leiser drehen. Vorher fünf Minuten Stosslüften.
 
-Es ist erstaunlich, wie viel ruhiger der Abend wird, wenn der Raum schon „Feierabend" sagt, bevor ich es tue. 🌙
+So sagt der Raum schon „Feierabend", bevor du es tust. 🌙
 
 ---
 
@@ -113,7 +108,7 @@ Es ist erstaunlich, wie viel ruhiger der Abend wird, wenn der Raum schon „Feie
 
 Die Empfehlung dazu ist so simpel, dass man sie fast übersieht: ruhig in den Tag starten und gleich nach dem Aufstehen ein grosses Glas lauwarmes Wasser trinken.
 
-🫚 *Mein Ingwerwasser für den Tag:*
+🫚 *Das Ingwerwasser für den Tag:*
 
 • 2–3 frische Ingwerscheiben
 • ca. 500 ml heisses Wasser
@@ -123,7 +118,7 @@ Ingwer aufgiessen, abkühlen lassen und über den Tag verteilt immer wieder ein 
 
 💧 *Und dann gleichmässig weiter:* Statt abends auf einen Schlag nachzutrinken, jede Stunde ein Glas (etwa 150 ml). So kommen bis am frühen Abend 2 bis 2,5 Liter zusammen, und du musst nachts nicht raus.
 
-💡 Ich stell mir Glas und Ingwer schon am Vorabend hin. Um 6 Uhr denke ich nämlich noch nicht.
+💡 Stell dir Glas und Ingwer schon am Vorabend hin. Um 6 Uhr denkt noch niemand gern.
 
 ---
 
@@ -131,7 +126,7 @@ Ingwer aufgiessen, abkühlen lassen und über den Tag verteilt immer wieder ein 
 
 🌫️ *Graue Morgen, dunkle Nachmittage — und irgendwann fühlt sich der ganze Tag müde an.*
 
-Was mir im Herbst am meisten hilft, ist Licht. In *Perimenopause-Power* (Dr. Mariza Snyder) steht eine einfache Faustregel: an einem sonnigen Morgen 5 bis 10 Minuten draussen sein, an einem bewölkten 15 bis 20 — am besten in der ersten Stunde nach dem Aufstehen. Ich trinke meinen ersten Kaffee nach dem Schulstart deshalb vor der Haustür.
+Was im Herbst oft am meisten ausmacht, ist Licht. Eine einfache Faustregel: an einem sonnigen Morgen 5 bis 10 Minuten draussen sein, an einem bewölkten 15 bis 20 — am besten in der ersten Stunde nach dem Aufstehen. Der erste Kaffee nach dem Schulstart darf also gern vor der Haustür stattfinden.
 
 Dazu kommen drei kleine Duftmomente, die den Tag gliedern:
 
@@ -151,7 +146,7 @@ Drei Momente, kaum Aufwand, und der Tag hat wieder einen Anfang, eine Pause und 
 
 ⏰ *Draussen ist es noch dunkel, und das Kind will einfach nicht aus dem Bett.*
 
-Aus *Duft Medizin für Kinder* hab ich ein Ritual, das bei uns erstaunlich gut funktioniert: Vorhang auf, Kuss, Diffuser an, raus.
+Ein kleines Ritual dafür: Vorhang auf, Kuss, Diffuser an, raus.
 
 🍋 *Der Aufwach-Diffuser:*
 
@@ -159,9 +154,9 @@ Aus *Duft Medizin für Kinder* hab ich ein Ritual, das bei uns erstaunlich gut f
 
 Ein paar Minuten vor dem Wecken einschalten, dann ist der Duft schon da, wenn du reinkommst.
 
-😴 *Und weil das Wecken am Abend beginnt:* Schulkinder (5–12 Jahre) brauchen laut einem meiner Schlaf-Bücher 10 bis 11 Stunden Schlaf, Jugendliche 8,5 bis 9,25. Bei Teenagern setzt das Müdewerden ausserdem später ein — sie sind abends wirklich noch wach und morgens wirklich noch müde.
+😴 *Und weil das Wecken am Abend beginnt:* Schulkinder (5–12 Jahre) brauchen rund 10 bis 11 Stunden Schlaf, Jugendliche 8,5 bis 9,25. Bei Teenagern setzt das Müdewerden ausserdem später ein — sie sind abends wirklich noch wach und morgens wirklich noch müde.
 
-💡 Einmal zurückrechnen, wann dein Schulkind schlafen müsste, um auf 10 Stunden zu kommen. Bei uns war das ein Aha.
+💡 Einmal zurückrechnen, wann dein Schulkind schlafen müsste, um auf 10 Stunden zu kommen. Das ist oft ein Aha.
 
 💛 *Hinweis:* Peppermint bei kleinen Kindern nicht auf Brust, Hals oder ins Gesicht — im Diffuser mit offener Tür und kurzer Laufzeit.
 
@@ -171,14 +166,14 @@ Ein paar Minuten vor dem Wecken einschalten, dann ist der Duft schon da, wenn du
 
 🍂 *Die Bäume machen es uns jedes Jahr vor.*
 
-In der Organuhr-Lehre steht der Dickdarm nicht nur fürs Körperliche, sondern auch dafür, Altes gehen zu lassen. Und die Lunge gehört zur Trauer: Wer etwas festhält, geht ein bisschen gebeugt.
+In der Organuhr-Lehre steht der Dickdarm auch dafür, Altes gehen zu lassen. Und die Lunge gehört zur Trauer: Wer etwas festhält, geht ein bisschen gebeugt.
 
-Ich mache im Herbst deshalb einen kleinen Zettel-Moment.
+Dazu passt ein kleiner Zettel-Moment.
 
-✍️ *Mein Loslass-Ritual:*
+✍️ *Das Loslass-Ritual:*
 Hinsetzen, einen Zettel nehmen und aufschreiben: *Was darf diesen Herbst gehen?* Eine Gewohnheit, ein Anspruch an mich selbst, ein Gedanke, der mich seit Wochen begleitet. Dazu einen Duft, der mich erdet.
 
-🌲 *Mein Roller dazu („Meine Wahl"):*
+🌲 *Der Roller dazu („Meine Wahl"):*
 
 • 10 ml Roll-On, aufgefüllt mit Trägeröl
 • 6 Tropfen **Cypress**
@@ -196,7 +191,7 @@ Hinsetzen, einen Zettel nehmen und aufschreiben: *Was darf diesen Herbst gehen?*
 
 ☁️ *Wenn der Nebel bis Mittag nicht weicht, braucht das Wohnzimmer etwas Licht.*
 
-Hier meine Lieblinge für den Herbst — einfach in den Diffuser:
+Hier fünf Mischungen für den Herbst, einfach in den Diffuser:
 
 ☀️ *Wintersonne*
 3 **Wild Orange** · 2 **Cinnamon Bark** · 1 **Frankincense**
@@ -213,7 +208,7 @@ Hier meine Lieblinge für den Herbst — einfach in den Diffuser:
 🌞 *Aromatischer Sonnenschein*
 5 **Lemon** · 3 **Lavender** · 1 **Peppermint**
 
-💡 Ich wechsle je nach Tageszeit: morgens Sonnenschein, nachmittags Frohes Gemüt, abends Warmes Zuhause.
+💡 Schön im Wechsel: morgens Sonnenschein, nachmittags Frohes Gemüt, abends Warmes Zuhause.
 
 💛 *Hinweis:* Cinnamon nur im Diffuser, nicht auf die Haut. Clary Sage nicht in der Schwangerschaft.
 
@@ -223,7 +218,7 @@ Hier meine Lieblinge für den Herbst — einfach in den Diffuser:
 
 🍂 *Nachmittags um vier, wenn es draussen schon dämmert.*
 
-Für diesen Tee brauchst du einen Trick, den ich aus der aromatischen Winterküche habe: die **Zahnstocher-Methode**. Ein Tropfen ätherisches Öl ist in der Küche oft schon zu viel. Also tauchst du einen Zahnstocher ins Öl und rührst damit um.
+Für diesen Tee brauchst du einen Trick aus der aromatischen Winterküche: die **Zahnstocher-Methode**. Ein Tropfen ätherisches Öl ist in der Küche oft schon zu viel. Also tauchst du einen Zahnstocher ins Öl und rührst damit um.
 
 🍵 *Für 1 Liter:*
 
@@ -246,7 +241,7 @@ Tee aufgiessen, Zimtstange und Orange dazu, mit den beiden Zahnstochern umrühre
 
 🍁 *Die Organuhr ordnet dem Herbst den scharfen Geschmack zu: Zwiebel, Knoblauch, Senf, Ingwer.*
 
-Genau so eine Suppe koche ich im Herbst fast jede Woche. In doppelter Menge, die Hälfte kommt in die Tiefkühltruhe.
+Genau so eine Suppe passt jetzt. Koch gleich die doppelte Menge, die Hälfte kommt in die Tiefkühltruhe.
 
 🥣 *Du brauchst:*
 
@@ -273,7 +268,7 @@ Gemüse weich kochen, pürieren, Kokosmilch und Curry einrühren. Erst ganz am S
 
 🔥 *Sobald die Heizung läuft, spannt die Haut.*
 
-Bei Kälte fahren die Talgdrüsen ihre Produktion herunter, der natürliche Schutzfilm wird dünner. Ich creme mich im Herbst deshalb direkt nach dem Duschen mit einem Körperöl ein — auf die noch leicht feuchte Haut.
+Bei Kälte fahren die Talgdrüsen ihre Produktion herunter, der natürliche Schutzfilm wird dünner. Schön ist deshalb ein Körperöl direkt nach dem Duschen, auf die noch leicht feuchte Haut.
 
 🫙 *Körperöl „Winterweich":*
 
@@ -315,9 +310,9 @@ Das Wichtigste vorweg: Ätherische Öle nie direkt ins Badewasser. Sie lösen si
 
 🍂 *Der kürzeste Spaziergang ist besser als keiner.*
 
-Bevor ich im Herbst rausgehe, gebe ich einen Tropfen **Wild Orange** oder **Frankincense** auf meinen Schal. Es ist erstaunlich, wie anders sich ein grauer Spaziergang anfühlt, wenn er duftet.
+Gib vor dem Rausgehen einen Tropfen **Wild Orange** oder **Frankincense** auf deinen Schal. Ein grauer Spaziergang fühlt sich ganz anders an, wenn er duftet.
 
-🙌 *Und für zwischendurch: eine kleine Atemübung aus* Die Organuhr *(Li Wu):*
+🙌 *Und für zwischendurch eine kleine Atemübung:*
 
 1. Schulterbreit hinstellen, kurz lächeln.
 2. Die Hände auf Brusthöhe halten, etwa 20 cm auseinander.
@@ -341,7 +336,7 @@ Zwei Minuten am offenen Fenster, nach dem Schulweg-Stress oder bevor die Hausauf
 
 📍 Alles gut verrühren und über Feldsalat mit Birnenscheiben und Walnüssen geben.
 
-💡 *Daraus wird ein Geschenk:* Speiseöl mit einem ätherischen Öl aromatisieren — **1 Tropfen auf 100 ml** reicht. In ein dunkles Fläschchen füllen, beschriften, fertig. Meine Lieblingskombinationen:
+💡 *Daraus wird ein Geschenk:* Speiseöl mit einem ätherischen Öl aromatisieren — **1 Tropfen auf 100 ml** reicht. In ein dunkles Fläschchen füllen, beschriften, fertig. Schöne Kombinationen:
 • **Lemon** im Olivenöl — zu Fisch und Antipasti
 • **Rosemary** im Avocadoöl — zu Ofenkartoffeln und Gemüse
 • **Wild Orange** im Walnussöl — zu Wintersalaten und Randen

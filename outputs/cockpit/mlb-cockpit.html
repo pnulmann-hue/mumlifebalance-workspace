@@ -2374,6 +2374,34 @@
   .hd-los { flex: none; align-self: center; }
   .hd-info .hd-text > span, .hd-termin .hd-text > span { color: var(--ink); }
   .hd-leer { margin: 8px 0 2px; font-size: 14px; color: var(--ink-soft); }
+
+  /* DF-CSS-ANFANG */
+  /* doTERRA → Freigaben */
+  .df-karte, .df-paket { background: #fff; border: 1px solid var(--line-strong); border-radius: 12px; padding: 18px; margin-bottom: 18px; display: grid; gap: 12px; min-width: 0; }
+  .df-kopf { display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+  .df-kopf h2, .df-kopf h3 { margin: 0; }
+  .df-stand { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink-soft); }
+  .df-stand.entwurf { background: #fdf1e6; color: #8a4a12; }
+  .df-stand.verschickt, .df-stand.eingeplant { background: #e4f3f4; color: #0d5f67; }
+  .df-betreffe { border: 0; padding: 0; margin: 0; display: grid; gap: 6px; }
+  .df-betreffe legend { font-weight: 600; padding: 0; margin-bottom: 6px; }
+  .df-betreffe label { display: flex; gap: 8px; align-items: baseline; }
+  .df-klein, .df-notiz { margin: 0; font-size: 14px; }
+  .df-notiz { background: #fdf1e6; border-radius: 8px; padding: 10px 12px; }
+  .df-vorschau iframe { width: 100%; height: 620px; border: 1px solid var(--line-strong); border-radius: 8px; background: #fff; margin-top: 8px; }
+  .df-kommentar { display: grid; gap: 6px; justify-items: start; }
+  .df-kommentar label { width: 100%; font-size: 13px; color: var(--ink-soft); }
+  .df-kommentar textarea { width: 100%; font: inherit; margin-top: 4px; }
+  .df-hinweis { font-size: 12px; color: var(--ink-soft); }
+  .df-antwort { margin: 0; font-size: 13px; color: var(--ink-soft); }
+  .df-knoepfe { display: flex; gap: 8px; flex-wrap: wrap; }
+  .df-beitrag { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 14px; border-top: 1px solid var(--line-strong); padding-top: 14px; }
+  .df-beitrag img { width: 110px; height: 110px; border-radius: 8px; object-fit: cover; }
+  .df-beitragtext { display: grid; gap: 8px; min-width: 0; }
+  .df-datum { font-size: 13px; color: var(--ink-soft); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .df-text { white-space: pre-wrap; margin: 8px 0 0; font-size: 14px; overflow-wrap: anywhere; }
+  @media (max-width: 560px) { .df-beitrag { grid-template-columns: minmax(0, 1fr); } .df-vorschau iframe { height: 520px; } }
+  /* DF-CSS-ENDE */
 </style>
 
 <div class="shell">
@@ -3725,6 +3753,7 @@ var MASTER = (function () {
     { id: "bizwege", label: "Business-Wege" },
     { id: "rising", label: "Rising Leaders" },
     { id: "academy", label: "Ölschule-Calls" },
+    { id: "dtfreigaben", label: "Freigaben" },
     { g: "Nachschlagen" },
     { id: "kurse", label: "Kurs-Inhalte" },
     { id: "bibliothek", label: "Wissensbibliothek" },
@@ -6389,6 +6418,8 @@ var MASTER = (function () {
                klein: tr === 0 ? "Ein Business-Gedanke, eine neue Person, eine Kundin." : "Noch " + (3 - tr) + (3 - tr === 1 ? " Schritt" : " Schritte") + ".",
                gehe: "rising" });
     }
+    if (!dfDocs) dfHolen(function () { if (activeTab === "uebersicht") render(); });
+    if (dfOffen().length) P.push({ art: "doterra", titel: "doTERRA: " + dfOffen().length + " zur Freigabe", klein: "Newsletter oder Saison-Beiträge warten auf dein Ja.", gehe: "dtfreigaben", dringend: true });
     if (tfFaellig()) P.push({ art: "doterra", titel: "Team-Funke für diese Woche", klein: "Die Wochennachricht an dein Team ist noch nicht raus.", gehe: "rising" });
     if (Number(heute.slice(8, 10)) >= 24) {
       var A = (dtRising.abschluss || {})[heute.slice(0, 7)] || {};
@@ -6498,6 +6529,158 @@ var MASTER = (function () {
       };
     });
   }
+
+  /* DF-ANFANG */
+  /* =========================================================
+     doTERRA → Freigaben (05.11.2026)
+     Monats-Newsletter und Saison-Beiträge der Gruppe „Gesund durchs ganze Jahr“.
+     Sammlung "doterra-freigaben": Claude legt Entwürfe ab, Patricia gibt frei,
+     der Task doterra-freigaben-ausfuehren verschickt über ActiveCampaign bzw. plant in Telegram ein.
+     Der Klick setzt nur status = "freigegeben". Eine Mail lässt sich nicht zurückholen,
+     deshalb fragt der Newsletter-Knopf in zwei Klicks.
+     ========================================================= */
+  var dfDocs = null, dfLaeuft = false, dfScharf = null;
+
+  function dfHolen(fertig) {
+    if (dfLaeuft || dfDocs) return;
+    if (!db) { dfDocs = lsGet("df-docs", []) || []; fertig(); return; }
+    dfLaeuft = true;
+    db.collection("doterra-freigaben").limit(200).get().then(function (qs) {
+      dfDocs = qs.docs.map(function (d) { var x = tief(d.data()) || {}; x.__id = d.id; return x; });
+      dfLaeuft = false; fertig();
+    }).catch(function () { dfLaeuft = false; dfDocs = []; fertig(); });
+  }
+
+  function dfOffen() {
+    return (dfDocs || []).filter(function (d) { return (d.status || "entwurf") === "entwurf"; });
+  }
+
+  function dfSpeichern(d, felder) {
+    Object.keys(felder).forEach(function (k) { d[k] = felder[k]; });
+    d.updatedAt = new Date().toISOString();
+    if (!db) { render(); return; }
+    var sauber = {};
+    Object.keys(d).forEach(function (k) { if (k.indexOf("__") !== 0) sauber[k] = d[k]; });
+    db.doc("doterra-freigaben/" + d.__id).set(JSON.parse(JSON.stringify(sauber)))
+      .then(function () { setSaveState("gespeichert", "on"); })
+      .catch(function () { setSaveState("nicht gespeichert", "off"); toast("Das hat nicht geklappt, bitte nochmals"); });
+    render();
+  }
+
+  var DF_STAND = {
+    entwurf: "wartet auf dich",
+    freigegeben: "freigegeben, geht beim nächsten Lauf raus",
+    verschickt: "verschickt",
+    eingeplant: "eingeplant"
+  };
+
+  function dfKommentar(d) {
+    var offen = d.kommentar && (!d.kommentarErledigt || d.kommentarErledigt < d.kommentarStand);
+    return '<div class="df-kommentar"><label>Was soll ich ändern?<textarea data-df-k="' + esc(d.__id) + '" rows="2">' + esc(d.kommentar || "") + '</textarea></label>' +
+      '<button class="btn" data-df-ks="' + esc(d.__id) + '">An Claude</button>' +
+      (offen ? '<span class="df-hinweis">Liegt bei Claude</span>' : "") +
+      (d.kommentarAntwort ? '<p class="df-antwort">' + esc(d.kommentarAntwort) + '</p>' : "") + '</div>';
+  }
+
+  function dfNewsletterHtml(d) {
+    var st = d.status || "entwurf", offen = st === "entwurf";
+    var wahl = d.betreffWahl || 0;
+    var h = '<article class="df-karte"><div class="df-kopf"><h3>' + esc(d.titel) + '</h3><span class="df-stand ' + st + '">' + esc(DF_STAND[st] || st) + '</span></div>';
+    h += '<fieldset class="df-betreffe"' + (offen ? "" : " disabled") + '><legend>Betreff</legend>' + (d.betreffe || []).map(function (b, i) {
+      return '<label><input type="radio" name="df-b-' + esc(d.__id) + '" data-df-b="' + esc(d.__id) + '" value="' + i + '"' + (i === wahl ? " checked" : "") + '> ' + esc(b) + '</label>';
+    }).join("") + '</fieldset>';
+    h += '<p class="df-klein"><b>Vorschautext:</b> ' + esc(d.preheader || "") + '</p>';
+    if (d.notiz) h += '<p class="df-notiz"><b>Vor der Freigabe:</b> ' + esc(d.notiz) + '</p>';
+    h += '<details class="df-vorschau" open><summary>Mail ansehen</summary><iframe sandbox="" title="Vorschau Newsletter" data-df-mail="' + esc(d.__id) + '"></iframe></details>';
+    if (offen) {
+      h += dfKommentar(d) + '<div class="df-knoepfe"><button class="btn primary" data-df-nl="' + esc(d.__id) + '">' +
+        (dfScharf === d.__id ? "Wirklich verschicken? Nochmals klicken" : "Freigeben und verschicken") + '</button></div>';
+    } else if (st === "freigegeben") {
+      h += '<div class="df-knoepfe"><button class="btn" data-df-zurueck="' + esc(d.__id) + '">Freigabe zurücknehmen</button></div>';
+    }
+    return h + '</article>';
+  }
+
+  function dfSaisonHtml(paket, liste) {
+    var offen = liste.filter(function (d) { return (d.status || "entwurf") === "entwurf"; }).length;
+    var h = '<section class="df-paket"><div class="df-kopf"><h2>' + esc(liste[0].saison) + ' ' + esc(liste[0].jahr) + ' · Gesund durchs ganze Jahr</h2>' +
+      (offen ? '<button class="btn primary" data-df-alle="' + esc(paket) + '">Alle ' + offen + ' freigeben</button>' : "") + '</div>';
+    h += liste.map(function (d) {
+      var st = d.status || "entwurf", frei = st === "entwurf";
+      return '<article class="df-beitrag">' + (d.bild ? '<img src="' + esc(d.bild) + '" alt="">' : "") +
+        '<div class="df-beitragtext"><div class="df-kopf"><h3>' + esc(d.titel) + '</h3><span class="df-stand ' + st + '">' + esc(DF_STAND[st] || st) + '</span></div>' +
+        '<label class="df-datum">Wann<input type="datetime-local" data-df-datum="' + esc(d.__id) + '" value="' + esc(d.datum || "") + '"' + (frei ? "" : " disabled") + '></label>' +
+        '<details><summary>Text lesen</summary><p class="df-text">' + esc(d.text || "") + '</p></details>' +
+        (frei ? dfKommentar(d) + '<div class="df-knoepfe"><button class="btn primary" data-df-frei="' + esc(d.__id) + '">Freigeben</button></div>' : "") +
+        (st === "freigegeben" ? '<div class="df-knoepfe"><button class="btn" data-df-zurueck="' + esc(d.__id) + '">Freigabe zurücknehmen</button></div>' : "") +
+        '</div></article>';
+    }).join("");
+    return h + '</section>';
+  }
+
+  function renderDtFreigaben(main) {
+    if (!dfDocs) {
+      main.innerHTML = '<div class="page-head"><div><h1>Freigaben</h1></div></div><p class="df-klein">Einen Moment …</p>';
+      dfHolen(function () { if (activeTab === "dtfreigaben") render(); });
+      return;
+    }
+    function nachDoc(id) { return dfDocs.filter(function (d) { return d.__id === id; })[0]; }
+    var nl = dfDocs.filter(function (d) { return d.art === "newsletter"; }).sort(function (a, b) { return a.monat < b.monat ? 1 : -1; });
+    var pakete = {};
+    dfDocs.filter(function (d) { return d.art === "saison"; }).sort(function (a, b) { return a.nr - b.nr; }).forEach(function (d) {
+      (pakete[d.paket] = pakete[d.paket] || []).push(d);
+    });
+    var h = '<div class="page-head"><div><h1>Freigaben</h1><p>Was du hier freigibst, geht von selbst raus: der Newsletter über ActiveCampaign, die Saison-Beiträge in die Telegram-Gruppe. Der Lauf kommt um 9, 13 und 18 Uhr, solange die App offen ist.</p></div></div>';
+    if (!dfDocs.length) h += '<p class="df-klein">Gerade liegt nichts bereit.</p>';
+    h += nl.map(dfNewsletterHtml).join("");
+    Object.keys(pakete).sort().forEach(function (p) { h += dfSaisonHtml(p, pakete[p]); });
+    main.innerHTML = h;
+
+    main.querySelectorAll("[data-df-mail]").forEach(function (f) { var d = nachDoc(f.getAttribute("data-df-mail")); if (d) f.srcdoc = d.html || ""; });
+    main.querySelectorAll("[data-df-b]").forEach(function (r) {
+      r.addEventListener("change", function () { dfSpeichern(nachDoc(r.getAttribute("data-df-b")), { betreffWahl: +r.value }); });
+    });
+    main.querySelectorAll("[data-df-nl]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var id = b.getAttribute("data-df-nl");
+        if (dfScharf !== id) {
+          dfScharf = id; render();
+          setTimeout(function () { if (dfScharf === id) { dfScharf = null; if (activeTab === "dtfreigaben") render(); } }, 8000);
+          return;
+        }
+        dfScharf = null;
+        dfSpeichern(nachDoc(id), { status: "freigegeben", freigabeAm: new Date().toISOString() });
+        toast("Freigegeben, geht beim nächsten Lauf raus");
+      });
+    });
+    main.querySelectorAll("[data-df-frei]").forEach(function (b) {
+      b.addEventListener("click", function () { dfSpeichern(nachDoc(b.getAttribute("data-df-frei")), { status: "freigegeben", freigabeAm: new Date().toISOString() }); });
+    });
+    main.querySelectorAll("[data-df-alle]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        (pakete[b.getAttribute("data-df-alle")] || []).forEach(function (d) {
+          if ((d.status || "entwurf") === "entwurf") dfSpeichern(d, { status: "freigegeben", freigabeAm: new Date().toISOString() });
+        });
+        toast("Alle freigegeben");
+      });
+    });
+    main.querySelectorAll("[data-df-zurueck]").forEach(function (b) {
+      b.addEventListener("click", function () { dfSpeichern(nachDoc(b.getAttribute("data-df-zurueck")), { status: "entwurf" }); });
+    });
+    main.querySelectorAll("[data-df-datum]").forEach(function (i) {
+      i.addEventListener("change", function () { dfSpeichern(nachDoc(i.getAttribute("data-df-datum")), { datum: i.value }); });
+    });
+    main.querySelectorAll("[data-df-ks]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var id = b.getAttribute("data-df-ks");
+        var feld = main.querySelector('[data-df-k="' + id + '"]');
+        if (!feld || !feld.value.trim()) return;
+        dfSpeichern(nachDoc(id), { kommentar: feld.value.trim(), kommentarStand: new Date().toISOString() });
+        toast("Claude schaut es sich beim nächsten Lauf an");
+      });
+    });
+  }
+  /* DF-ENDE */
 
   /* ---------- Rising Leaders: Aufträge + Beraterinnen ---------- */
   function renderRising(main) {
@@ -8701,7 +8884,7 @@ var MASTER = (function () {
     { id: "mamaceo", label: "Mama-CEO", saeule: "Mama-CEO",
       tabs: ["aufgaben", "erledigt", "launches", "monatsbogen", "wochenbogen", "ziele", "zahlen"] },
     { id: "doterra", label: "doTERRA", saeule: "doTERRA",
-      tabs: ["oelwissen", "anliegen", "bizwege", "rising", "academy", "rangtracker", "team"] },
+      tabs: ["dtfreigaben", "oelwissen", "anliegen", "bizwege", "rising", "academy", "rangtracker", "team"] },
     { id: "ki", label: "KI", saeule: "KI", tabs: ["pia", "wissen", "suche"] }
   ];
   /* Kuerzere Namen fuer die Unterleiste — die Bereichs-Pille sagt schon,
@@ -17840,6 +18023,7 @@ var MASTER = (function () {
     else if (activeTab === "bizwege") renderBizwege(main);
     else if (activeTab === "rising") renderRising(main);
     else if (activeTab === "academy") renderAcademy(main);
+    else if (activeTab === "dtfreigaben") renderDtFreigaben(main);
     else if (activeTab === "fertig") renderFertig(main);
     else if (activeTab === "gepostet") { renderGepostet(main); auswertungEinsetzen(main); }
     else if (activeTab === "zahlen") renderZahlen(main);
@@ -18283,4 +18467,3 @@ var MASTER = (function () {
   }
 })();
 </script>
-
