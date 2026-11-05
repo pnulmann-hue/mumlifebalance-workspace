@@ -28,6 +28,8 @@ Für jedes der fünf Dokumente einen Aufruf, alle in denselben Ordner:
 `collection: "daten"` · `doc_id:` `aufgaben` · `termine` · `rising-leaders` ·
 `wochenbogen-notizen` · `tagebuch` · `out_dir: "/tmp/hd"`
 
+Dazu ein sechster Aufruf: `collection: "doterra-wissen"` · `doc_id: "team-impulse"` · gleicher `out_dir`.
+
 Meldet ein Aufruf „No document“, ist das kein Fehler — das Dokument gibt es erst, wenn
 Patricia den Teil im Cockpit benutzt hat. Weiter mit dem nächsten.
 
