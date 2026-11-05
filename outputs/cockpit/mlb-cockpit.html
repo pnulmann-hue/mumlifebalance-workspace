@@ -6603,7 +6603,8 @@ var MASTER = (function () {
     entwurf: "wartet auf dich",
     freigegeben: "freigegeben, geht beim nächsten Lauf raus",
     verschickt: "verschickt",
-    eingeplant: "eingeplant"
+    eingeplant: "eingeplant",
+    gepostet: "schon gepostet"
   };
 
   function dfKommentar(d) {
@@ -6623,7 +6624,13 @@ var MASTER = (function () {
     }).join("") + '</fieldset>';
     h += '<p class="df-klein"><b>Vorschautext:</b> ' + esc(d.preheader || "") + '</p>';
     if (d.notiz) h += '<p class="df-notiz"><b>Vor der Freigabe:</b> ' + esc(d.notiz) + '</p>';
-    h += '<details class="df-vorschau" open><summary>Mail ansehen</summary><iframe sandbox="" title="Vorschau Newsletter" data-df-mail="' + esc(d.__id) + '"></iframe></details>';
+    // Ein Sandbox-Rahmen ohne allow-popups schluckt jeden Klick auf einen Link der Mail. Skripte bleiben gesperrt.
+    h += '<details class="df-vorschau" open><summary>Mail ansehen</summary><iframe sandbox="allow-popups allow-popups-to-escape-sandbox" title="Vorschau Newsletter" data-df-mail="' + esc(d.__id) + '"></iframe></details>';
+    var dfLinks = [], dfMuster = /href=["'](https?:[^"']+)["']/g, dfTreffer;
+    while ((dfTreffer = dfMuster.exec(d.html || ""))) { if (dfLinks.indexOf(dfTreffer[1]) < 0) dfLinks.push(dfTreffer[1]); }
+    if (dfLinks.length) h += '<div class="df-knoepfe">' + dfLinks.map(function (u, i) {
+      return '<a class="btn" target="_blank" rel="noopener" href="' + esc(u) + '">' + (dfLinks.length > 1 ? "Link " + (i + 1) + " aus der Mail öffnen" : "Link aus der Mail öffnen") + '</a>';
+    }).join("") + '</div>';
     if (offen) {
       h += dfKommentar(d) + '<div class="df-knoepfe"><button class="btn primary" data-df-nl="' + esc(d.__id) + '">' +
         (dfScharf === d.__id ? "Wirklich verschicken? Nochmals klicken" : "Freigeben und verschicken") + '</button></div>';
@@ -6637,12 +6644,13 @@ var MASTER = (function () {
     var offen = liste.filter(function (d) { return (d.status || "entwurf") === "entwurf"; }).length;
     var h = '<section class="df-paket"><div class="df-kopf"><h2>' + esc(liste[0].saison) + ' ' + esc(liste[0].jahr) + ' · Gesund durchs ganze Jahr</h2>' +
       (offen ? '<button class="btn primary" data-df-alle="' + esc(paket) + '">Alle ' + offen + ' freigeben</button>' : "") + '</div>';
+    if (!offen) h += '<p class="df-klein">Schon eingeplant, hier nur zum Ansehen. Soll sich etwas ändern, sag es Claude im Chat.</p>';
     h += liste.map(function (d) {
       var st = d.status || "entwurf", frei = st === "entwurf";
       return '<article class="df-beitrag">' + (d.bild ? '<img src="' + esc(d.bild) + '" alt="">' : "") +
         '<div class="df-beitragtext"><div class="df-kopf"><h3>' + esc(d.titel) + '</h3><span class="df-stand ' + st + '">' + esc(DF_STAND[st] || st) + '</span></div>' +
         '<label class="df-datum">Wann<input type="datetime-local" data-df-datum="' + esc(d.__id) + '" value="' + esc(d.datum || "") + '"' + (frei ? "" : " disabled") + '></label>' +
-        '<details><summary>Text lesen</summary><p class="df-text">' + esc(d.text || "") + '</p></details>' +
+        '<details><summary>Text lesen</summary><p class="df-text">' + esc((d.text || "").replace(/\*/g, "")) + '</p></details>' +
         (frei ? dfKommentar(d) + '<div class="df-knoepfe"><button class="btn primary" data-df-frei="' + esc(d.__id) + '">Freigeben</button></div>' : "") +
         (st === "freigegeben" ? '<div class="df-knoepfe"><button class="btn" data-df-zurueck="' + esc(d.__id) + '">Freigabe zurücknehmen</button></div>' : "") +
         '</div></article>';
@@ -6669,7 +6677,7 @@ var MASTER = (function () {
     Object.keys(pakete).sort().forEach(function (p) { h += dfSaisonHtml(p, pakete[p]); });
     main.innerHTML = h;
 
-    main.querySelectorAll("[data-df-mail]").forEach(function (f) { var d = nachDoc(f.getAttribute("data-df-mail")); if (d) f.srcdoc = d.html || ""; });
+    main.querySelectorAll("[data-df-mail]").forEach(function (f) { var d = nachDoc(f.getAttribute("data-df-mail")); if (d) f.srcdoc = '<base target="_blank">' + (d.html || ""); });
     main.querySelectorAll("[data-df-b]").forEach(function (r) {
       r.addEventListener("change", function () { dfSpeichern(nachDoc(r.getAttribute("data-df-b")), { betreffWahl: +r.value }); });
     });
