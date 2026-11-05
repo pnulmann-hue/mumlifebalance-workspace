@@ -6431,7 +6431,7 @@ var MASTER = (function () {
                klein: tr === 0 ? "Ein Business-Gedanke, eine neue Person, eine Kundin." : "Noch " + (3 - tr) + (3 - tr === 1 ? " Schritt" : " Schritte") + ".",
                gehe: "rising" });
     }
-    if (!dfDocs) dfHolen(function () { if (activeTab === "uebersicht") render(); });
+    if (!dfDocs) dfHolen();
     if (dfOffen().length) P.push({ art: "doterra", titel: "doTERRA: " + dfOffen().length + " zur Freigabe", klein: "Newsletter oder Saison-Beiträge warten auf dein Ja.", gehe: "dtfreigaben", dringend: true });
     tiImpulsOffen().forEach(function (x) {
       P.push({ art: "doterra", titel: (x.art === "aufgabe" ? "Team-Aufgabe" : "Team-Impuls") + " schicken", klein: x.titel || "", gehe: "rising" });
@@ -6554,16 +6554,33 @@ var MASTER = (function () {
      Der Klick setzt nur status = "freigegeben". Eine Mail lässt sich nicht zurückholen,
      deshalb fragt der Newsletter-Knopf in zwei Klicks.
      ========================================================= */
-  var dfDocs = null, dfLaeuft = false, dfScharf = null;
+  var dfDocs = null, dfLaeuft = false, dfScharf = null, dfVersuche = 0, dfFehler = false;
 
-  function dfHolen(fertig) {
+  function dfFertig() {
+    if (activeTab === "uebersicht" || activeTab === "dtfreigaben") render();
+  }
+
+  // 🚨 Das erste render() läuft, bevor window.claude.use("db") fertig ist. Bis zum 05.11. wurde hier
+  // die leere Liste gemerkt, und der Reiter meldete „Gerade liegt nichts bereit“, obwohl alles da lag.
+  function dfHolen() {
     if (dfLaeuft || dfDocs) return;
-    if (!db) { dfDocs = lsGet("df-docs", []) || []; fertig(); return; }
+    if (!db) {
+      var mitDb = !!(window.claude && window.claude.use);
+      if (!mitDb || dfVersuche >= 50) {
+        dfFehler = mitDb;
+        dfDocs = mitDb ? [] : (lsGet("df-docs", []) || []);
+        setTimeout(dfFertig, 0);
+        return;
+      }
+      dfVersuche++; dfLaeuft = true;
+      setTimeout(function () { dfLaeuft = false; dfHolen(); }, 300);
+      return;
+    }
     dfLaeuft = true;
     db.collection("doterra-freigaben").limit(200).get().then(function (qs) {
       dfDocs = qs.docs.map(function (d) { var x = tief(d.data()) || {}; x.__id = d.id; return x; });
-      dfLaeuft = false; fertig();
-    }).catch(function () { dfLaeuft = false; dfDocs = []; fertig(); });
+      dfFehler = false; dfLaeuft = false; dfFertig();
+    }).catch(function () { dfFehler = true; dfLaeuft = false; dfDocs = []; dfFertig(); });
   }
 
   function dfOffen() {
@@ -6636,7 +6653,7 @@ var MASTER = (function () {
   function renderDtFreigaben(main) {
     if (!dfDocs) {
       main.innerHTML = '<div class="page-head"><div><h1>Freigaben</h1></div></div><p class="df-klein">Einen Moment …</p>';
-      dfHolen(function () { if (activeTab === "dtfreigaben") render(); });
+      dfHolen();
       return;
     }
     function nachDoc(id) { return dfDocs.filter(function (d) { return d.__id === id; })[0]; }
@@ -6646,7 +6663,8 @@ var MASTER = (function () {
       (pakete[d.paket] = pakete[d.paket] || []).push(d);
     });
     var h = '<div class="page-head"><div><h1>Freigaben</h1><p>Was du hier freigibst, geht von selbst raus: der Newsletter über ActiveCampaign, die Saison-Beiträge in die Telegram-Gruppe. Der Lauf kommt um 9, 13 und 18 Uhr, solange die App offen ist.</p></div></div>';
-    if (!dfDocs.length) h += '<p class="df-klein">Gerade liegt nichts bereit.</p>';
+    if (dfFehler) h += '<p class="df-klein">Die Freigaben liessen sich gerade nicht laden. Bitte lade das Cockpit neu.</p>';
+    else if (!dfDocs.length) h += '<p class="df-klein">Gerade liegt nichts bereit.</p>';
     h += nl.map(dfNewsletterHtml).join("");
     Object.keys(pakete).sort().forEach(function (p) { h += dfSaisonHtml(p, pakete[p]); });
     main.innerHTML = h;
