@@ -1,0 +1,12 @@
+  /* Fürs Team (patch-teamimpuls.py) */
+  .tm { margin-bottom: 16px; border-left: 5px solid #12828c; }
+  .tm-titel { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .tm-titel h2 { margin: 0; }
+  .tm-karte { border-top: 1px solid var(--line); padding: 12px 0; }
+  .tm-karte.raus { opacity: .75; }
+  .tm-kopf { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+  .tm-art { font-size: 12px; font-weight: 600; color: #fff; background: #12828c; border-radius: 99px; padding: 2px 9px; }
+  .tm-dich { margin: 0 0 8px; }
+  .tm-karte textarea { width: 100%; resize: vertical; margin-bottom: 8px; }
+  .tm-alt { white-space: pre-wrap; font-size: 14px; margin: 8px 0 0; }
+  .tm-aelter { margin-top: 8px; }

@@ -3,6 +3,7 @@
  *
  *   npx tsx src/calls-holen.ts --chat "oel" --liste          # Video/Audio ab 10 Min. auflisten
  *   npx tsx src/calls-holen.ts --chat "oel" --holen 123,456  # diese Nachrichten herunterladen
+ *   npx tsx src/calls-holen.ts --chat "rise" --neu 8 --unterordner rise-to-lead --min 20  # alles der letzten 8 Tage
  *
  * Nutzt die nur-lesende Abgleich-Anmeldung. Ablage: video/telegram-calls/ (gitignored —
  * fremde Stimmen und Namen, Repo ist public).
@@ -20,10 +21,10 @@ const sessionString = process.env.TELEGRAM_SESSION_ABGLEICH || "";
 if (!apiId || !apiHash || !sessionString) { console.error("❌ Zugang fehlt in .env"); process.exit(1); }
 
 const WS = path.resolve(__dirname, "..", "..", "..");
-const ZIEL = path.join(WS, "video", "telegram-calls");
 const MIN_SEK = Number(process.argv[process.argv.indexOf("--min") + 1]) || 600;
 
 function arg(name: string) { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : ""; }
+const ZIEL = path.join(WS, "video", "telegram-calls", arg("--unterordner"));
 
 function dauer(doc: Api.Document) {
   for (const a of doc.attributes) {
@@ -59,11 +60,23 @@ async function main() {
       }
       continue;
     }
+    const neuTage = Number(arg("--neu")) || 0;
+    const ab = Date.now() / 1000 - neuTage * 86400;
     for await (const m of client.iterMessages(d.entity, { limit: 3000 })) {
+      if (neuTage && m.date < ab) break;
       if (!(m.media instanceof Api.MessageMediaDocument)) continue;
       const doc = m.media.document as Api.Document;
       const sek = dauer(doc);
       if (sek < MIN_SEK) continue;
+      if (neuTage) {
+        fs.mkdirSync(ZIEL, { recursive: true });
+        const endung = (doc.mimeType || "").includes("audio") ? "m4a" : "mp4";
+        const datei = path.join(ZIEL, `${new Date(m.date * 1000).toISOString().slice(0, 10)}-${d.id}-${m.id}.${endung}`);
+        if (fs.existsSync(datei)) continue;
+        await client.downloadMedia(m, { outputFile: datei } as any);
+        console.log("✓", datei);
+        continue;
+      }
       const text = (m.message || "").replace(/\s+/g, " ").slice(0, 90);
       console.log(`${new Date(m.date * 1000).toISOString().slice(0, 10)} · id ${m.id} · ${Math.round(sek / 60)} Min · ${Math.round(Number(doc.size) / 1e6)} MB · ${text}`);
     }

@@ -265,10 +265,12 @@ gepflegt.
 | Instagram-Woche oder -Monat | `/content` |
 | einzelnes Reel · Karussell · Story · Caption | `/reels` · `/karussell` · `/story` · `/caption` |
 | nur Hooks, erste Zeilen, Kundensprache | `/hooks` |
+| **Überschrift** einer Verkaufs-, Freebie- oder Webinar-Seite (auf Wunsch Hook und Betreff dazu) | **`/ueberschrift`** (seit 04.11.2026, `SKILL.md` gitignored: Kurswissen, fremde Beispiele) |
 | **Verkaufstext**: Verkaufsseite (ThriveCart, 13 Blöcke), Mail-Strecke, VSL, Text überarbeiten | **`/copywriting`** |
 | gestaltete Verkaufsseite als HTML | einer der 4 Design-Skills (nach `/copywriting`) |
 | **Meta-Anzeige**: Text, aufsetzen, testen, skalieren | **`/facebook-ads`** (Kevin + Werbeanzeigentext Master + Julias Pipeline) |
 | ChatGPT-Anzeigen | `/chatgpt-ads` |
+| Stichwort-Antwort auf Instagram (Kommentar oder DM) | `/ig-automation` |
 | Produkt, Treppe, Launch · Funnel-Technik | `/produkt` · `/funnel` |
 | **ganzes Angebotspaket auf einen Knopf** (Minikurs · Kurs · Freebie) | **`/angebot`** — Klammer um die Skills oben, keine eigenen Regeln |
 | Engpass, Entscheidung, nächster Schritt | `/strategie` |
@@ -554,7 +556,7 @@ bekommen vorher eine stille Tonspur (`*-ton.mp4` in `video/input/`), sonst brich
 Patricias bestätigte Fakten, nichts darüber hinaus. Einzelne Feed-Hooks: `--datei <liste.json>`; für doTERRA zusätzlich `--profil doterra`
 (seit 03.11.2026: Leserin ist die erschöpfte Mama ab 35, Regeltext enthält Compliance und `context/doterra/energie-story-profil.md`, ohne Sandra/TEIL 0). 🚨 Die Sperre urteilt nicht ganz gleich, wenn
 derselbe Hook nochmals läuft. Es zählt das neueste Urteil. Der doTERRA-Feed 4.11.–4.12. liegt in `outputs/content/KW46/feed-november-doterra.md`. 🚨 Der Anhang-Speicher des Cockpits
-ist voll (1 GB, Stand 03.11.). Vor dem nächsten Video-Upload alte Anhänge löschen, nur mit Patricias Okay. 🚨 Die JSON nie gleichzeitig von zwei Läufen schreiben (Sperre und Stil-Skript haben sich am
+hat 1 GB und läuft mit Videos voll (03.11. voll, 04.11. mit Patricias Okay 86 Videos ohne Beitrag gelöscht, je Prüfsumme gegen die lokale Kopie, danach rund 698 MB belegt). **Gepostete Reels verlieren ihr Video seit 04.11. von selbst** (V124, Patricia: *„nur noch der link zu instagram“*): Schritt 4d im Task `cockpit-daten-abgleich` nimmt `scripts/cockpit/videos-archivieren.py --plan` (auf Instagram gefunden oder „Hab ich selbst gepostet“, keine unsichere Zuordnung, nicht in der Clip-Ablage, Testreels nie), lädt das Original, `--sichern` prüft es gegen `video/` oder legt es nach `video/archiv/`, dann erst `videourl` leeren und löschen. Die Karte zeigt Instagram-Link und Ablageort (`patch-video-archiv.py`, Felder `videoArchiv`, `igLink`); für einen Repost lädt Claude es wieder hoch. ⚠️ doTERRA hängt nicht an der Instagram-Schnittstelle, dort zählt nur der Knopf. `video/` hat als Sicherung nur das Medien-Archiv alle 4 Wochen. Ersetzte Videos werden nicht von selbst entfernt: nach jedem Neubau die alte Fassung löschen, nur mit Patricias Okay. 🚨 Die JSON nie gleichzeitig von zwei Läufen schreiben (Sperre und Stil-Skript haben sich am
 02.11. gegenseitig überschrieben) — alles nacheinander. Stile nur noch `karte` (Creme-Karte) und `wort` (weisser Satz, ein oranges Wort, dunkle
 Unterlage in `textebene.py`, sonst fällt der Kontrast-Check durch); Marker/Serif hat Patricia abgelehnt. 🚨 **Gesicht Sekunde für Sekunde prüfen**
 (Bild je Sekunde, nicht drei Standbilder) — am 02.11. lag der Text bei 23, 34, 37 auf dem Gesicht, bemerkt hat es Patricia. Über hellem Himmel
@@ -566,9 +568,17 @@ in der Datenbank gegenprüfen.
 **Befund 04.10. (Mentoring):** Identität gewinnt (1,16; Markt 1,33), Schmerz — ihr häufigster Angle — 0,72 ·
 Stufe 1 = 1,2 → Stufe 4 = 0,53 · Listen 0,45 · Ich als Spiegel trägt, Ich als Beweis (0,56) nicht ·
 **101 von 129 Lead-Beiträgen hatten null Kommentare.**
-🚨 **Die wöchentlichen `outputs/marktrecherche/KW*.md` haben in allen 46 Läufen 0 Reddit-Posts gelesen** —
-die Painpoints darin sind erfunden („generisches Pattern“), nie als Beleg zitieren. Der Generator dazu ist
-nicht im Repo gefunden worden (läuft vermutlich remote).
+🚨 **Die wöchentlichen `outputs/marktrecherche/KW*.md` sind kein Beleg — nachgemessen am 04.11.2026.**
+**Alle 50 Dateien** (KW18 bis KW42) melden „Reddit-Posts gescannt: **0**“, und in **keiner einzigen** steht
+ein Link auf einen echten Beitrag. Die Painpoints, Zitate und Sprachmuster darin sind aus generischen
+Mustern geschrieben. Jede Datei trägt seitdem oben eine Marke, die das sagt
+(`scripts/` nicht nötig, einmalig gesetzt) — **nie zitieren, nie in einen Hook übernehmen**.
+Der Generator ist **weder ein Scheduled Task noch eine GitHub-Action** und liess sich im Workspace nicht
+finden; letzter Lauf 16.10.2026, also seit dem Automatik-Ausfall tot. Er wird nicht wiederbelebt — der
+Marktcheck in `/content` Schritt 3 liest echte Quellen.
+🚨 **Die Lehre, allgemein:** ein Bericht, der plausibel klingt, ist kein Beleg. Was zählt, ist ein **Zitat
+mit Fundort** oder eine **gemessene Zahl**. „Wiederkehrendes Muster in r/Mommit“ ist beides nicht — eine
+der Dateien nennt sogar viermal ein Forum, das gar nicht in ihrer eigenen Scan-Liste steht.
 🚨 Fremde Verkaufsdaten gibt es nicht; „Verkaufsdaten“ heisst hier: ihre eigenen plus Verkaufssignale im Markt.
 
 ### /angebot — das ganze Paket auf einen Knopf (seit 2026-10-27)
@@ -1204,7 +1214,127 @@ die Zeichenzahl je Lektion aus `produktion.json` lesen, nicht die Seite anschaue
 beiden Formaten; nur die `.vtt` trägt die Zeiten. Ein Stichwort darin suchen und die
 Marke des Blocks nehmen — so sind die vier Zeiten oben entstanden.
 
-### Kommentar-Antwort — der ManyChat-Ersatz (seit 2026-09-28, im Aufbau)
+#### Modul 5 ist im Kasten, und die Zuordnung ist jetzt eine Regel (04.11.2026)
+
+**33 Videos im Ordner**, Modul 5 mit acht Lektionen (5.1–5.8, zusammen 46:35, 5.4 ist mit
+17 Minuten die längste). Patricia hat sie in Vimeo **„5.1 …" bis „5.8 …"** benannt — und
+damit braucht es keinen Eintrag in `LEKTION` mehr: `lektion_von()` in
+`vimeo-transkripte.py` liest eine Lektionsnummer **am Anfang des Namens** selbst heraus.
+Die Tabelle gewinnt weiter, die Regel greift nur, wenn dort nichts steht.
+🚨 **Ab Modul 6 gleich benennen**, dann läuft es ohne Nacharbeit.
+🚨 **`produktion-daten.py` ruft `lektion_von()` auf, nicht `LEKTION`** — vorher las es die
+Tabelle mit einem Muster aus der Datei, und die acht neuen Videos wären dort nie
+angekommen. Eine zweite Kopie einer Zuordnung läuft immer auseinander.
+🚨 Der Vimeo-Ordner braucht Patricias **Anmeldung in Chrome**; ohne sie antwortet die
+Schnittstelle mit 404, und `videos-roh.json` ist nur ein Abzug, keine Verbindung.
+
+#### Modul 6 — fertig zum Drehen (04.11.2026)
+
+**25 Folien** (vorher 23), alle Lektionstexte stehen, Dreh-Notizen für 6.1 bis 6.6.
+Dazu drei Befunde, die beim Bauen aufgefallen sind:
+
+🚨 **Zwei der vier Bots aus 6.2 gibt es nicht mehr.** Der Haushalts-Bot ist aus (der cron
+in `.github/workflows/haushalt-vorabend.yml` ist auskommentiert), der alte Cockpit-Bot
+seit dem 25.10. Zeigen lassen sich **Garten** (Railway, täglich) · **Kochassistent**
+(Do 18:00) · **„Heute dran"** (Cloud-Routine, 07:00 und 20:00). Folie und Lektionstext
+sagen seitdem **drei** statt vier — der Satz „zwei davon haben mit Arbeit gar nichts zu
+tun" wird dadurch stärker. Ein Beispiel auf einer Folie, das es nicht mehr gibt, fällt
+spätestens beim Filmen auf.
+
+🚨 **Schritt 1 kann Patricia nicht live zeigen** — ihr Telegram-Bot steht seit einem Jahr,
+und einen zweiten für die Kamera anzulegen wäre gespielt. Dafür zwei neue Folien:
+`l63-botvater` (was der Botvater fragt, mit den vier englischen Zeilen) und
+`l63-gefuehrt` (die vier Fragen, die Claude Code danach stellt — „du antwortest nur").
+
+🚨 **6.3 geht über den Chat, nicht über eine Vorlage** (Patricias Entscheid: *„ich labere
+in den chat was ich von ihm will und er macht es und führt mich durch … ich möchte
+eigentlich die zeigen"*). Ich hatte zuerst ein Bot-Gerüst zum Herunterladen gebaut —
+**und das widerspricht Lektion 4.2**, die wörtlich verspricht *„Die App bringt alles mit.
+Du installierst nichts weiter."* Eine startbare Vorlage braucht eine Laufzeit (Python),
+die im ganzen Kurs niemand einrichtet. Gerüst und Generator sind gelöscht.
+**Vor jeder Beilage prüfen, ob sie etwas voraussetzt, das der Kurs ausgeschlossen hat.**
+Stattdessen die Folie **„Das sagst du"** mit dem Auftragssatz zum Abtippen, und die
+Beilage als Google Doc: [Dein erster Bot — der Auftrag und die vier Schritte](https://docs.google.com/document/d/145nRMMt4FMkO2t2DaUtT909Wtr60D_4dY5iKS0FcKPU/edit)
+(`beilagen/bot-erster.md` ist die Quelle, Kennung in `beilagen-drive.json`).
+
+#### Modul 7 — fertig zum Drehen (04.11.2026)
+
+**50 Folien**, alle neun Lektionstexte, Dreh-Notizen für 7.1 bis 7.8. Drei Folien entzerrt
+(7.5 und 7.6 liefen im Präsentationsmodus über), Notiz für 7.8 ergänzt.
+
+**Je Lektion ein Auftrag zum Abtippen** (Patricia, 04.11.: *„was mir noch fehlt ist z.B.
+bei 7.4 ein Prompt für Claude code"* · *„das gilt z.B. auch für die karussells. eine
+schritt für schritt anleitung was sie zu tun hat und was sie claude code geben muss"* ·
+*„sie soll von mir ja schon die anleitung bekommen, wie sie es in die wege leitet"*).
+Derselbe Bau wie 6.3, dreiteilig: **Folie** `l73-prompt` / `l74-prompt` mit dem Auftrag
+im Kasten · **Lektionstext** mit demselben Wortlaut zum Kopieren · **Beilage** mit allen
+Schritten. Jeder Auftrag endet auf *„frag nach, wenn dir eine Angabe fehlt"* — ab da
+führt sie, und die Sprechnotiz sagt ausdrücklich: Schritt für Schritt durchgeführt,
+Zurückfragen ist der Zweck.
+
+Beilagen `outputs/produkte/ki-treppe/beilagen/karussell-erstes.md` und `reel-erstes.md`,
+als Google Doc im Kursordner (Kennungen in `beilagen-drive.json`). Je: was nur sie selbst
+machen kann · der Auftrag · die Schritte · eine Tabelle „wenn es nicht gleich klappt".
+
+🚨 **7.3 zeigt beide Wege** — Canva zuerst (hat sie schon, in einer Stunde eingerichtet),
+der eigene Editor als Ausblick auf Modul 9. Der Grund, warum sie die Canva-Vorlage von
+Hand baut, gehört dazu: **Claude kann in Canva keine Schriftart setzen**, nur Seiten
+vervielfältigen und Text austauschen.
+🚨 **7.4 bricht als einzige Lektion das Versprechen aus 4.2** („Du installierst nichts
+weiter") — drei Programme. Das steht auf der Folie, im Lektionstext und im ersten Absatz
+der Beilage, zusammen mit der Erlaubnis, die Lektion zu überspringen.
+
+🚨 **`reich()` in `produktion-seite.py` kannte keine Zitatblöcke** — ein `> …`-Absatz kam
+als Fliesstext mit sichtbaren Grösser-Zeichen in ThriveCart an. Seit 04.11. wird der
+Block **vor dem Escapen** erkannt und als `<blockquote>` gesetzt, in der HTML-Fassung mit
+Inline-Stil (ThriveCart stellt auch das zurück). Betroffen waren **vier** Aufträge im
+Kurs, nicht nur die zwei neuen. Gegenprobe an beiden Enden: ein Text mit Zitat muss ein
+`blockquote` ergeben, ein Text ohne darf keines bekommen.
+
+🚨 **Die Beilage zu 7.1 gab es nicht**, obwohl der Lektionstext sie verspricht.
+`python scripts/ki-kurs/content-maschinen-bauen.py [--zip]` baut sie: vier leere Befehle
+(`caption` · `story` · `karussell` · `reels`) plus drei leere Wissensdateien
+(`meine-kundin.md` · `meine-angebote.md` · `was-bei-mir-funktioniert.md`), **66 Stellen
+zum Ausfüllen**. Alle vier nach den **sechs Teilen aus 5.2** in derselben Reihenfolge,
+dazu „Der letzte Check" ausdrücklich als Zugabe markiert — sonst zählt jemand sieben.
+Unbedenklich als ZIP, anders als das Bot-Gerüst: eine `SKILL.md` ist Text, den Claude
+Code liest, keine Laufzeit nötig.
+🚨 **Das Skript prüft selbst**, dass nichts von Patricia und niemand Fremdes darin steht
+(Namen, Marke, doTERRA, ß) und bricht bei einem Fund ab. Der Kurs liefert die Skills
+bewusst leer aus — das ist das Konzept „Maschine gegen Treibstoff".
+⚠️ **Offen:** ZIP einmal in den Drive-Kursordner ziehen, dann die Kennung als
+`content_maschinen_zip` in `beilagen-drive.json` — bis dahin steht der Chip bei 7.1
+ehrlich auf „fehlt". Dieselbe Mechanik wie `grundgeruest_zip` (beide in `ZIPS`).
+
+**Kosten, belegt** (für die Folie `l64-wege`): Railway **USD 5.00 im Monat**, drei
+Rechnungen Juli/August/September. Telegram kostet nichts, und der Gerüst-Bot ruft keine
+KI auf. Geld fängt erst an, wenn der Bot den Inhalt selbst schreiben soll.
+
+🚨 **Die Folienzahl steht von Hand in `05-praesentationen.md`** — wer Folien ergänzt, muss
+die Zeile nachziehen, sonst zeigt die Produktionsseite die alte Zahl.
+🚨 **Zwei Prüfskripte vor jedem Veröffentlichen**, beide aus `scripts/karussell-render`
+heraus und beide erst dorthin kopiert — Node sucht puppeteer am Ort des Skripts, nicht im
+Arbeitsverzeichnis:
+- `folien-platz-pruefen.mjs` — Blöcke, deren Zeilenzahl zwischen Ersatz- und echter
+  Schrift kippt (die erscheinen im Präsentationsmodus doppelt). Bei Modul 6 drei Funde.
+- `folien-hoehe-pruefen.mjs` (neu, 04.11.) — ob eine Folie unten aus dem Rahmen läuft.
+
+🚨 **Und die Falle, auf die ich am 04.11. selbst hereingefallen bin:** ohne den
+Rand-Reset (`h2,p,ul{margin:0}`) rechnet der Browser die Standard-Abstände von `<h2>` und
+`<p>` mit, und dann sieht **jede zweite Folie** aus, als liefe sie 60 bis 140 Pixel über
+den Rand. Ich habe daraufhin drei Folien gekürzt, die in Ordnung waren. Das Deck ist mit
+`gap` gebaut, also ohne Standard-Abstände — so muss auch gemessen werden. Steht als
+Warnung im Kopf des Skripts.
+Dazu weiterhin die Folien als Bild ansehen: eine Folie war einmal 1361 statt 1080 hoch
+und unten abgeschnitten, das sieht kein Textprüfer.
+
+### IG-Bot — Julias System statt ManyChat (seit 2026-11-04, noch nicht live)
+
+**Patricia:** *„ich will ihr system übernehmen. punkt. manychat habe ich gekündigt“*. Letzte ManyChat-Rechnung 8.10., Ende vermutlich um den 8.11. Skill `/ig-automation` (zugekauft, gitignored, keine Anleitung.md), echter Server in **`scripts/ig-bot/`** (FastAPI auf Railway, gitignored), Stichwörter in `keywords.json`, Prüfung `python test_bot.py`, ausliefern mit `railway up`.
+Gegenüber Julias Fassung geändert: Wortsuche mit den Regeln aus dem Kommentar-Dienst (unklare Fälle an Claude Haiku, im Zweifel kein Link) · wechselnde Texte wegen der Link-Sperre vom 13.10. · ohne `IG_APP_SECRET` wird abgelehnt · `/automations` nur mit Passwort · keine Namen, Mailadressen und kein Zugangsschlüssel im Log (httpx schrieb ihn mit) · Tags nur als Kennung, nichts wird nebenbei angelegt · Fehler bei Liste und Tag werden gemeldet.
+13 Stichwörter im Mentoring-Konto. **Nicht drin:** `NEUSTART` (Seite erst ab 25.11. live), `ENERGIE` (anderes Konto, von Hand). 🚨 Keine Erinnerung nach 2–3 Std. und keine Knöpfe mehr wie in ManyChat. 🚨 Nie ManyChat und Bot gleichzeitig aufs selbe Stichwort. ⚠️ Offen: Railway-Anmeldung, Webhook in der Meta-App umstellen, Feld `messages` abonnieren, Test mit einem Konto ohne App-Rolle (ob Fremde ohne App-Review eine Antwort bekommen). Danach ist der Dienst unten stillzulegen.
+
+### Kommentar-Antwort — der ManyChat-Ersatz (seit 2026-09-28, wird durch den IG-Bot abgelöst)
 
 **Patricia:** *„ja bitte manychatersatz starten. und erstmal nur für stimme.“* ManyChat löst bei jedem Kommentar aus, in dem das Wort vorkommt („ich **stimme** dir zu“). Der Dienst entscheidet erst über Regeln (`lib/entscheiden.mjs`, 27 Gegenproben in `test/`), nur unklare Fälle gehen an Claude Haiku. Live unter `https://kommentar-antwort.vercel.app/api/webhook` (Vercel-Projekt `kommentar-antwort`), Meta-App „Mum Life Balance Bot“ (984115153982698) mit Produkt Instagram. 🚨 Antwortet erst mit `SCHARF=ja`; vorher nur Protokoll in den Vercel-Logs. 🚨 Ohne Meta-App-Review nur für Konten mit App-Rolle. ManyChat läuft parallel weiter, STIMME dort nie einrichten. Plan: `plans/2026-09-28-manychat-ersatz-stimme.md`.
 
@@ -1315,6 +1445,11 @@ automatisch den Bildrand). Einmalig `cd scripts/grafik && npm install`. Der offi
 Remotion-Skill liegt als Nachschlagewerk unter
 `.claude/skills/remotion-motion-graphics/references/remotion-offiziell/` (kein eigener Skill).
 🚨 Nie in den Projektordner rendern (er ist Remotions public-dir, der Lauf bricht ab).
+**Im Test seit 04.11.2026** (nach einem Reel von islazul.ch, alles Option je Reel): `stil.zoom.modus: "sprung"` ·
+Untertitel D „Serifen-Wort“ · `tafeln` (wachsen auf dem gesprochenen Wort) · Einblendung `abschluss` (Creme-Karte).
+Beschreibung und Beispiel in `context/videoschnitt-animationen.md`, Testreel `video/output/2026-11-04-test-islazul-stil/`.
+🚨 Bricht der Render mit `No frame found at position` ab, obwohl das Einzelbild geht: Clips ohne B-Frames neu codieren
+(`ffmpeg -i <clip> -c:v libx264 -crf 16 -preset veryfast -bf 0 -pix_fmt yuv420p -c:a copy <ziel>`). Am 04.11. half das, Ursache nicht restlos geklärt (dieselben Clips liefen am 28.10.; rund 1 GB Speicher frei). Ein Lauf über 80 s dauert rund 40 Min.
 **Vorgabe Stil B** (Hook „Kelsie, Wort für Wort“ + Untertitel „Aktives Wort“), Text-Oberkante 56 %
 (unter dem Kinn). Vor jedem Render prüft `vorschau.py` selbst **Bildrand und Gesicht** (OpenCV,
 alle 0,4 s; `pip install "opencv-python-headless<5"`) und bricht bei einem Fund ab.
@@ -3041,6 +3176,68 @@ Zeile des Originals fehlt oder verändert ist.
 `reference/copywriting-original/`) — Fremdmaterial, Repo public, keine Anleitung.md.
 Ändert sich `context/brand-voice.md` oder ein Preis, die beiden Dateien nachziehen.
 
+### Newsletter und Verkaufen per E-Mail (seit 2026-11-04)
+
+**Das Wissen steht in `context/newsletter-regeln.md`** (410+ Zeilen) — die eine Stelle für
+alles, was per Mail rausgeht. Der Skill `/newsletter` dazu ist **noch nicht gebaut**: er
+entsteht als Live-Demo in Lektion 5.4 des KI-Kurses (Patricias Entscheid 04.11.).
+🚨 Eine Beschreibung hier ist kein Beleg, dass es existiert — bei „haben wir /newsletter?"
+erst `ls .claude/skills/newsletter/`.
+
+**Die Weiche, die jede Mail-Frage beantwortet:**
+
+| | **A · Launch** | **B · Normalbetrieb** |
+|---|---|---|
+| wann | ein grosses Angebot öffnet (ab 333) | alle anderen Wochen |
+| Takt | täglich, heisse Phase bis 2× | wöchentlich, Untergrenze 14 Tage |
+| Menge | mind. 12 Mails über den Launch | eine |
+| Aufbau | Aufwärmen · Secret Offer 2 Tage · Verkauf · letzter Tag | Tipp, dann Angebot mit Frist |
+
+**Zuständig ist je Auftrag einer:** `/newsletter` entscheidet **welche Mails und wie
+viele**, `/copywriting` schreibt **den Text einer davon**, `/funnel` baut Tag, Liste und
+Automation in AC. Der Hinweis steht als Punkt 2 im Vorrang-Block von `/copywriting`.
+
+🚨 **Der Befund vom 04.11.2026, der alles einordnet** (gemessen über alle 446
+AC-Kampagnen und die Automationen): **164 Kontakte auf der Liste, 20 je in die Engine
+eingetreten, 7 bis Loop 7 durch, rund 5 stehen gerade in einem Loop.** Für etwa 150
+Menschen passiert ohne Kampagne **gar nichts** — dazu die 31 aus der abgeschalteten
+„3-Schritte-Methode". Der Ablauf Freebie → Loops existiert und funktioniert, erreicht
+aber nur rund 12 % der Liste. **Das ist die Lücke, die der Newsletter schliesst.**
+
+🚨 **Die Öffnungsrate ist nicht das Problem, die Klickrate ist es.** Im Oktober gingen 11
+Mails an die ganze Liste (KI-Launch, fast jeden zweiten Tag) — Öffnungsrate am 2.10.
+23,3 %, am 23.10. nach neun weiteren Mails 22,2 %. **Kein Einbruch.** „Wöchentlich
+verbrennt die Liste" ist für ihre Liste widerlegt. Die Klickrate liegt dagegen bei
+**0,0–1,2 %** gegen rund 3,5 % im Vorbild. Jede Massnahme geht auf den Klick.
+
+🚨 **Und die Rechnung, die vor jeder Umsatz-Erwartung gehört:** 164 × 3,5 % = 6 Klicks,
+davon 10 % kaufen = **0,6 Verkäufe je Mail**, bei einem 39er rund 23 Franken. Bei dieser
+Listengrösse ist der Newsletter **kein Umsatzkanal**, sondern hält die Liste warm und
+bereitet Launches vor. Der Umsatzhebel liegt vorne im Trichter.
+
+🚨 **Eine bewusste Abweichung von der Methode, benannt in der Datei:** dort heisst es
+wörtlich „Newsletter kannst du dir aus dem Kopf streichen" — die Methode kennt nur
+Verkaufs-Mails mit Angebot, Preis und Frist. Patricia macht den Newsletter mit Mehrwert,
+weil für 150 Kontakte überhaupt kein Kanal besteht. **Die Abweichung gilt nur für den
+Mehrwert-Teil:** Angebot, Hebel und Frist bleiben in jeder Mail, sonst ist es eine
+Mehrwert-Mail mit Link, und genau die konvertiert nicht.
+
+**Zwei Achsen, die nicht verwechselt werden dürfen** (dieselbe Falle wie Familie/Angle
+beim Hook): die **Dauer** (Einzeltag · 48 Stunden · 3 Tage, nie länger) und der **Hebel**
+(Spezialpreis · Einführungspreis · begrenzte Plätze · Erinnerung ohne Rabatt · **neues
+Format**). Der Hebel wird abgewechselt, und er muss **in der Mail stehen**, nicht nur in
+der Planung. Stärkster Hebel im Vorbild war das neue Format — ein zweitägiger
+Live-Workshop für 37.
+
+**Launch-Mail-Vorlagen** liegen im Launch-Themenbuch unter `reference/`, Abschnitt 17
+(Aufwärm-, Secret-Offer-, Verkaufs-, Webinar- und Nachkauf-Mails im Wortlaut).
+🚨 Wortlaut nur für den Eigengebrauch — was an Kundinnen geht, trägt Patricias Stimme.
+`context/newsletter-regeln.md` ist namens- und wortlautfrei, **weil sie die Datei im Kurs
+auf dem geteilten Bildschirm zeigt.**
+
+🗃 Hiess bis zum 04.11.2026 `context/mailverkauf-regeln.md` (umbenannt, weil Patricia vom
+Newsletter spricht).
+
 ### /facebook-ads (zugekauft)
 
 **Zweck:** Meta-Werbung (Facebook/Instagram) nach **Kevin Fiedlers „Facebook Ads Lab"**-Testsystem — Testkampagne, 4S-Copy-Formel, Analyse-Tabelle, Skalierung, AOV.
@@ -3108,6 +3305,8 @@ Um diesen Workspace an deine eigenen Bedürfnisse anzupassen, fülle deine Konte
 ## Scripts
 
 ### Karussell-Render-Pipeline (`scripts/karussell-render/`)
+
+**🎯 Master-Vorlage seit 04.11.2026** (Patricia: *„julia macht richtig coole karussells … als mastertemplate für meine karussells“* · *„dass ich die farbe und evt das foto anpassen kann wie jetzt schon im cockpit“*): Ein Zeichner, `master-zeichner.js`, läuft im Cockpit (`scripts/cockpit/patch-master-vorlage.py`, ein zweiter Lauf ersetzt nur den Zeichner) und in `folien.mjs`. Layouts `m-titel · m-liste · m-text · m-auftrag · m-aufruf`, Muster `outputs/karussells/master-vorlage/muster.json`, Felder und Regeln in `context/karussell-framework.md`. Creme, Cover und letzte Folie in der Farbe aus `brand`, wechselnd von Beitrag zu Beitrag. 🚨 Petrol nur bei Reichweite. `/content` schreibt die Layouts ins Cockpit, auch im Freitagslauf, rendern ist dort nicht nötig. Schrift und Favicon liegen als Artifact-Dateien `assets/silversouth.otf` und `assets/favicon.png`, die Schrift ist gitignored.
 
 **Pfad B: HTML als Single-Source-of-Truth → 11 Instagram-PNGs (1080×1350, 4:5).**
 
@@ -3267,6 +3466,20 @@ Am 29.10. wirkte es bei der MBA wie gesetzt, weil die Seite noch nicht fertig ge
 
 ### Belege und Steuer-Export (`scripts/finanzen/`, seit 2026-09-24)
 
+**Belege kommen seit 04.11.2026 von selbst** (Patricia: Mails erkennen und den Beleg holen, sonst bleiben sie liegen).
+Der Task `cockpit-daten-abgleich` ruft `python scripts/finanzen/beleg-auspacken.py --postfaecher --melden` und danach den
+Gmail-Schritt auf. Abgelegt wird nur, was als geschäftlich bekannt ist (`ANBIETER`, `ARTIKEL` im Skript, `geschaeftlich` in
+`context/finanzen/belege-regeln.json`). Die Postfächer tragen auch Lohn, Arzt und Familie: `privat` in derselben Datei wird nie
+geöffnet. Unbekanntes mit Belegwort landet ungeöffnet auf `belege/_zu-pruefen.json` und im Telegram, bis sie entscheidet.
+Beide Dateien sind gitignored. Stand: `belege/_gesehen.json`.
+🚨 **Jeder Ordner wird `readonly` geöffnet, gelesen nur mit `BODY.PEEK`.** Nichts wird gelesen markiert, verschoben oder gelöscht.
+🚨 **Parallele Gmail-Abrufe überschreiben sich** (gleicher Dateiname je Millisekunde, am 04.11. drei von 21). Immer eine Mail nach der anderen.
+🚨 **RAW geht nur ab rund 100 KB als Datei.** Kleinere Mails kämen inline in den Kontext, dafür gibt es den `PLAIN_TEXT`-Weg (`.txt`, ausdrücklich kein Original). Mit `GMAIL_USER` und `GMAIL_PASS` (App-Passwort) in `scripts/mail-sortieren/.env` läuft Gmail wie die anderen über IMAP, ohne Claude; dieser Zweig ist noch nie gelaufen.
+🚨 **Eine Zahlung ist eine Mail, nicht ein Tag.** Anthropic bucht bis zu sieben Mal am Tag nach (28.10.). Dieselbe Zahlung auf PayPal, beim Anbieter oder auf der Kreditkarte wird nur einmal gebucht, die Datei hängt am selben Posten.
+🚨 **Eine ChatGPT-Werbezeile hat bis zum 04.11. die ganze Meta-Werbung des Monats geschluckt** (Sept. 280.35, Okt. 28.72): Vergleich auf (Monat, Art) in `kosten-bauen.py`.
+🚨 **`daten/kosten` und `daten/steuer` fehlten bis zum 04.11. in der Schreibtabelle des Tasks**, deshalb stand das Cockpit seit dem 01.10. Gerechnet wurde täglich, geschrieben nie.
+⚠️ **Von Hand bleiben:** Meta-Rechnungen im Business Manager · Bank-CSV · die Prüfliste. **`paypal-monthly.yml` ist seit Juni bei jedem Lauf (6 von 6) beim Abholen gescheitert** und liefert nichts an `kosten-bauen.py`. Den Grund nennen nur die Lauf-Logs, die eine Anmeldung brauchen.
+
 **Patricia:** *„belege müssen aber mitabgelegt werden oder verknüpft werden.
 muss das ja alles belegen"* — und sie hatte recht: Bis dahin gab es einen
 **Index mit 32 Tabellenzeilen und keine einzige Belegdatei.** Bei einer
@@ -3274,8 +3487,8 @@ Nachfrage vom Steueramt zählt das Dokument, nicht die Liste.
 
 | Skript | Job |
 |---|---|
-| `beleg-auspacken.py` | holt die PDF-Belege aus Gmail-RAW-Antworten, benennt sie, liest den Betrag aus dem PDF |
-| `meta-werbekosten.py` | Werbeausgaben aus dem Meta-Werbekonto — kommen **nie** per Mail |
+| `beleg-auspacken.py` | holt die Belege aus GMX und info@ per IMAP (`--postfaecher`) und aus Gmail-Connector-Antworten, benennt sie, liest den Betrag |
+| `meta-werbekosten.py` | Werbeausgaben aus dem Meta-Werbekonto — die **Rechnung** kommt nie per Mail, nur ein Zahlungsbeleg („Das ist keine Rechnung“) |
 | `steuer-export.py` | ein Befehl → Ordner mit Übersicht, beide CSV, Lückenliste und Kopien aller Belege |
 | `scripts/cockpit/steuer-fuer-cockpit.py` | dieselbe Bilanz je Jahr als `daten/steuer` fürs Cockpit |
 
@@ -4336,6 +4549,17 @@ CHF-Preise bewusst leer). **Danke-Seite** WP **4478** `/oelabend-danke/` im `.en
 Formular 77 leitet nach dem Absenden dorthin. **Nachfass-Mail „überschlafen“** (2 Tage, Antwort mit einem Wort BESTELLEN/ABEND/FRAGE):
 `mail-bauen.py` → HTML zum Einfügen in die Automation, die Patricia selbst baut. ⚠️ Offen: Gastgeberinnen-Geschenk · CHF-Preise.
 
+### doTERRA → Freigaben: Monats-Newsletter und Saison-Beiträge (seit 2026-11-05)
+
+Patricia: *„nicht eine produktbroschüre sondern ein mehrwertemail. auch immer mit einem fokusthema des monats“* · *„sobald es freigegeben ist, sollst du es automatisiert über active campaign verschicken“* · *„auch hier ins artefact ablegen mit freigabeknopf“*. Reiter **doTERRA → Freigaben** im Cockpit (V126, `patch-doterra-freigaben.py` + `doterra-freigaben.js/.css`), Sammlung **`doterra-freigaben`**, Status `entwurf → freigegeben → verschickt | eingeplant`, Kommentarzeile „Was soll ich ändern?“, Punkt in „Heute dran“ plus Aufgabe in `daten/aufgaben`.
+**Newsletter:** Task `doterra-newsletter-monat` (2., 3., 5. um 08:00, Booklet kommt am 1. in „dŌTERRA Business“, heisst „Aktionen - <Monat> <Jahr>“, das Wort Newsletter fällt dort nie) → `python scripts/oelgruppe/newsletter-holen.py JJJJ-MM` → Text über `/ueberschrift` und `/copywriting` als `outputs/newsletter/JJJJ-MM-doterra.json` → `newsletter-bauen.py` → Cockpit. Listen 18 + 20.
+**Saison-Gruppe** („Gesund durchs ganze Jahr“, Channel `-1002221396127`): Task `doterra-saison-vorbereiten` (1.3., 1.6., 1.9., 1.11.) schreibt `outputs/telegram-posts/<saison>-<jahr>/<…>-alle-beitraege.md` + `kacheln.json` → `paket-bauen.py --start` → `node scripts/karussell-render/saison-kacheln.js <ordner>` → Cockpit. Rhythmus Di/Do/Sa/So. Herbst 2026 läuft seit 5.11. bis 1.12. (von Patricia direkt beauftragt), Winter ab 5.12. wartet auf Freigabe.
+**Ausführung:** Task `doterra-freigaben-ausfuehren` (9, 13, 18 Uhr, App muss offen sein) → `freigaben-ausfuehren.py --ordner <dump> --los`. Saison über `scripts/telegram-userbot/src/saison-einplanen.ts` nach `scheduled_posts`, gepostet vom Workflow `telegram-poster.yml`.
+🚨 **`campaign_status` 1 verschickt in ActiveCampaign SOFORT**, ein eingetragenes Datum wird dabei überschrieben (gemessen 05.11. an einer Testkampagne, sofort zurückgenommen). Wer nur testen will, ruft das nie auf. 🚨 `message_add` mit „external“ lässt den Inhalt leer, erst der v3-PUT schreibt ihn; das Skript liest zurück. `outputs/newsletter/doterra-versand-stand.json` (gitignored) schützt jeden Monat vor doppeltem Versand.
+🚨 **Bildtexte in Telegram: höchstens 1024 Zeichen**, der Poster teilt nicht. Saison-Beiträge deshalb bis 1000. Saison-Texte ohne Autorin/Buchtitel und ohne erfundene Ich-Szenen (Herbst am 05.11. bereinigt).
+⚠️ Die drei Tasks brauchen `Bash(python scripts/oelgruppe/*)` in `.claude/settings.local.json`, sonst bleiben sie unbeaufsichtigt an einer Rückfrage hängen. Lokal lesen in Gruppen: `src/gruppe-neueste.ts`, `src/newsletter-suchen.ts`, Stand: `src/saison-stand.ts` (alle in `scripts/telegram-userbot`).
+Nachfass-Mails nach dem Öl-Abend: sechs auf der privaten Seite https://claude.ai/artifact/575WTNdosdJNEdjNso79Wo (`scripts/oelabend/mail-bauen.py`), die Automation baut Patricia.
+
 ### Ölbegleitung für Neukundinnen „Mama wird Hausapothekerin“ (seit 2026-11-03)
 
 Patricia: *„ein tool, wo man unterscheiden kann zwischen hausapotheke – gilt bei family essential kit und hausapotheke –
@@ -4388,6 +4612,9 @@ eine von 8 Challenges (wechselt nach dem Verlauf) → Claude schreibt über `sam
 Nachricht. Kopieren, selbst schicken, „Hab ich verschickt“ legt sie in den Verlauf. Ab Sonntag steht „✨ Team-Funke“ auf Mein Tisch,
 bis eine verschickt ist. Feld `funke` in `daten/rising-leaders`. `patch-teamfunke.py` (+ `teamfunke.js/.css`, setzt die Tagesrunde
 voraus). 🚨 Keine Teamnamen im Code (Repo public), auch nicht als Beispiel im Platzhalter. ⚠️ Die Bein-Zahlen sind vom Sept. 2026.
+**Fürs Team (05.11.):** Patricia: *„es kommen täglich so viele nachrichten in der gruppe, dass ich und mein team die übersicht verloren haben … ich würde gerne meine teammitglieder enger begleiten … vielleicht zwei impulse rsp. aufgaben?“*
+Scheduled Task **`rise-to-lead`** (täglich 07:27, Auftrag `reference/scheduled-task-rise-to-lead.md`): liest beide Gruppen, tippt Sprachnachrichten ab (`npm --prefix scripts/telegram-userbot run rise-to-lead-audio`, `python scripts/doterra/rtl-abtippen.py`, Ablage `video/telegram-calls/rise-to-lead/`), To-dos nur aus Beiträgen der Mentorinnen. **Montag eine Aufgabe, Donnerstag ein Impuls** als Entwurf in `doterra-wissen/team-impulse` plus Telegram an Patricia zum Weiterleiten. Verschickt wird nichts ans Team. Block „Fürs Team“ im Reiter Rising Leaders und Punkt in Heute dran (`patch-teamimpuls.py` + `teamimpuls.js/.css`), ihre Änderungen und „verschickt“ in `daten/rising-leaders.impulse`. Der Team-Funke drängt nicht mehr (`tfFaellig` gibt false), bleibt zum Aufklappen. Nie Namen, Ränge, Privates, Links oder Wortlaut der Mentorinnen ans Team.
+🚨 Schritt 4b im `cockpit-daten-abgleich` hat seit dem 23.10. nichts mehr eingetragen, obwohl die Läufe „erfolgreich“ hiessen; er steht dort noch und gehört gestrichen (doppelt ist harmlos, Kennungen und `eingetragen.json` verhindern Dubletten). 🚨 Bei wenig freiem Arbeitsspeicher (05.11.: 400 MB von 16 GB) scheitert Whisper schon beim Laden, auch `small`.
 
 **Ölschule-Calls:** Patricia: *„volltext transkript bitte nicht in das PDF. ich brauche nur die learnings“* — PDF und Cockpit lassen Wortlaut, Zeitablauf und „Unklar im Transkript“ weg. Danach: *„als Wissensdokument. ich will alles an vermitteltem wissen drin haben“* → je Call `<datum>-wissen.md` (alles Vermittelte, nach Thema, 46'000–70'000 Zeichen, Auftrag `_AUFTRAG-WISSEN.md`); das Skript nimmt es vor der Zusammenfassung. Juni–Oktober (9 Calls inkl. Ask-me-anything 23.06. und 26.10.) fertig am 03.11. Neuer Call: Video mit `calls-holen.ts --chat "oel.schule" --liste/--holen` → Whisper (`large-v3-turbo`) → `<datum>-<id>.txt` im Ordner → Learnings-Datei `<datum>-zusammenfassung.md` im Aufbau von `2026-08-04-zusammenfassung.md` → Skript → Sammlung `academy` ergänzen. 
 

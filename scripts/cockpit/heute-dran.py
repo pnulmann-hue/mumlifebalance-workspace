@@ -47,6 +47,14 @@ def lies(ordner, name):
         return {}
 
 
+def lies_ti(ordner):
+    p = ordner / "doterra-wissen" / "team-impulse.json"
+    try:
+        return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+    except Exception:
+        return {}
+
+
 def abschluss_ids():
     # Die Punkte des Monatsabschlusses stehen nur in tagesrunde.js — dort lesen statt abschreiben.
     t = (HIER / "tagesrunde.js").read_text(encoding="utf-8")
@@ -90,10 +98,12 @@ def punkte(ordner, jetzt, abend):
     n = sum(1 for k in ("biz", "person", "kundin") if t.get(k))
     if n < 3:
         P.append("🌿 doTERRA-Tagesrunde %d/3" % n)
-    verlauf = ((r.get("funke") or {}).get("verlauf") or [])
-    letzte = verlauf[-1]["datum"] if verlauf else ""
-    if tag in (0, 1, 2) and not (letzte and letzte >= (heute - dt.timedelta(days=6)).isoformat()):
-        P.append("🌿 Team-Funke für diese Woche")
+    # Fürs Team: Montag eine Aufgabe, Donnerstag ein Impuls (dieselbe Regel wie tiImpulsOffen in teamimpuls.js).
+    grenze = (heute - dt.timedelta(days=3)).isoformat()
+    stand = r.get("impulse") or {}
+    for x in lies_ti(ordner).get("items", []):
+        if grenze <= x.get("datum", "") <= iso and not (stand.get(x.get("id")) or {}).get("verschickt"):
+            P.append("🌿 Team-%s schicken: %s" % ("Aufgabe" if x.get("art") == "aufgabe" else "Impuls", x.get("titel") or ""))
     if heute.day >= 24:
         ids = abschluss_ids()
         A = (r.get("abschluss") or {}).get(iso[:7], {})
