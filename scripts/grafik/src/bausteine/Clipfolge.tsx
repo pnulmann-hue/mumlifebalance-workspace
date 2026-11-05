@@ -19,7 +19,20 @@ export type Clip = { datei: string; dauer: number; abSek: number; abDatei?: numb
  * am fertigen Reel freigegeben): jeder Clip, bis 115 %, Ziel oberes Drittel = Gesicht.
  * Vorher nur jeder zweite Clip bis 106 %, die anderen standen auf 102 %.
  */
-export type Zoom = { bis?: number; alle?: boolean; zentrumY?: number };
+export type Zoom = {
+  bis?: number; alle?: boolean; zentrumY?: number;
+  /**
+   * „fahrt" (Vorgabe) = langsame Fahrt je Clip. „sprung" = die Groesse springt an Satzteil-Grenzen
+   * und steht dazwischen still, einmal je Reel ganz weit raus (angesehen bei islazul.ch, 04.11.2026).
+   * Die Stellen rechnet vorschau.py einmal aus (`spruenge`), damit Render und Gesichtspruefung
+   * dieselben Werte sehen. Nie von Hand in grafik.json pflegen.
+   */
+  modus?: "fahrt" | "sprung";
+  stufen?: number[];
+  /** Wortfolge, auf der das Bild weit wird. Fehlt = automatisch, false = nie. */
+  weit?: string | false;
+  spruenge?: { abSek: number; scale: number }[];
+};
 
 export const Clipfolge: React.FC<{ clips: Clip[]; stumm?: boolean; zoom?: Zoom }> = ({ clips, stumm, zoom = {} }) => {
   const { fps } = useVideoConfig();
@@ -28,17 +41,21 @@ export const Clipfolge: React.FC<{ clips: Clip[]; stumm?: boolean; zoom?: Zoom }
       {clips.map((c, i) => (
         <Sequence key={i} from={Math.round(c.abSek * fps)} durationInFrames={Math.max(1, Math.round(c.dauer * fps))}>
           <ClipBild src={staticFile(c.datei)} zoomen={(zoom.alle ?? true) || i % 2 === 0} abDatei={c.abDatei} stumm={stumm}
-            bis={zoom.bis ?? 1.15} zentrumY={zoom.zentrumY ?? 30} />
+            bis={zoom.bis ?? 1.15} zentrumY={zoom.zentrumY ?? 30} clipAb={c.abSek}
+            spruenge={zoom.modus === "sprung" ? zoom.spruenge : undefined} />
         </Sequence>
       ))}
     </AbsoluteFill>
   );
 };
 
-const ClipBild: React.FC<{ src: string; zoomen: boolean; abDatei?: number; stumm?: boolean; bis: number; zentrumY: number }> = ({ src, zoomen, abDatei, stumm, bis, zentrumY }) => {
+const ClipBild: React.FC<{ src: string; zoomen: boolean; abDatei?: number; stumm?: boolean; bis: number; zentrumY: number; clipAb: number; spruenge?: { abSek: number; scale: number }[] }> = ({ src, zoomen, abDatei, stumm, bis, zentrumY, clipAb, spruenge }) => {
   const frame = useCurrentFrame();
   const { durationInFrames, fps } = useVideoConfig();
-  const scale = zoomen
+  const jetzt = clipAb + frame / fps;
+  const scale = spruenge?.length
+    ? spruenge.reduce((s, x) => (x.abSek <= jetzt ? x.scale : s), spruenge[0].scale)
+    : zoomen
     ? interpolate(frame, [0, durationInFrames], [1, bis], {
         easing: theme.ease.inOut, extrapolateLeft: "clamp", extrapolateRight: "clamp",
       })

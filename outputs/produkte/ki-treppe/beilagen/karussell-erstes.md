@@ -1,3 +1,7 @@
+---
+tags: [produkt]
+---
+
 # Dein erstes Karussell — was du tust und was du ihr gibst
 
 <!-- Ausgeliefert wird die Google-Doc-Fassung im Drive-Kursordner (Kennung in context/Kurse/aktuelle kurse/Easy-KI/beilagen-drive.json). Diese Datei ist die Inhalts-Quelle — eine Aenderung hier aendert nichts an dem, was die Teilnehmerin oeffnet. Doc nachziehen. -->

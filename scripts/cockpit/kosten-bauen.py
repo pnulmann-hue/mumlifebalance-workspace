@@ -6,7 +6,7 @@ sind unterschiedlich viel wert:
 
 | Quelle | Umfang | Beleg dabei? |
 |---|---|---|
-| `belege/_ausgepackt.json` | Juni–September 2026 | **ja, Originaldatei** |
+| `belege/_ausgepackt.json` | seit Juni 2026, laufend aus den Postfaechern | **ja, Originaldatei** |
 | `belege-index-2026.md` | Februar–Mai 2026 | nein, nur Tabellenzeile |
 | Notion «Kostenpositionen» | Dezember 2025, Januar 2026 | nein |
 
@@ -66,6 +66,9 @@ KLARTEXT = {
     "apify": "Apify",
     "meta": "Meta (Werbung)",
 }
+# Von `scripts/finanzen/beleg-auspacken.py` dazu (04.11.2026).
+KLARTEXT.update({"microsoft": "Microsoft 365 Personal",
+                 "meta-verified": "Meta Verified (Instagram)"})
 # 🚨 ChatGPT-Werbung bucht die Karte als „OPENAI · Computersoftware" — wie die
 # API. Getrennt halten, sonst landet Werbung unter Tools. Beleg ist die
 # Kreditkartenabrechnung, OpenAI schickt keine Quittung per Mail (28.10.2026).
@@ -208,29 +211,69 @@ PRIVAT_GEPRUEFT = ["mybodyadvice by Lisa", "DramaWave", "Temu", "Jumbo",
 
 
 def aus_belegordner():
-    """Die Posten, hinter denen eine echte Datei liegt."""
+    """Die Posten, hinter denen eine echte Datei liegt.
+
+    🚨 Eine Zahlung ist eine Mail, nicht ein Tag. Anthropic bucht bei Bedarf mehrmals
+    am selben Tag nach (28.10.2026: sechs Quittungen). Mit „Datum + Anbieter" als
+    Schluessel blieb davon nur eine stehen — die Kosten waeren zu tief gewesen.
+    Rechnung und Quittung haengen an derselben Mail und bleiben so ein Posten.
+
+    🚨 Dieselbe Zahlung kommt auf bis zu drei Wegen an: als Beleg des Anbieters, als
+    PayPal-Mail, auf der Kreditkartenabrechnung. Der Abgleich unten haengt die Datei
+    an den vorhandenen Posten, statt einen zweiten zu buchen.
+    """
     p = BELEGE / "_ausgepackt.json"
     if not p.exists():
-        return []
+        return [], []
     try:
         roh = json.loads(p.read_text(encoding="utf-8"))
     except Exception:
-        return []
+        return [], []
 
-    # Rechnung + Quittung gehoeren zusammen — siehe Kopf.
     gruppen = defaultdict(list)
     for e in roh:
-        gruppen[(e["datum"], e["anbieter"])].append(e)
+        if not e.get("nur_beleg"):
+            gruppen[(e["datum"], e["anbieter"], e.get("mail_id"))].append(e)
 
-    raus = []
-    for (tag, anbieter), teile in sorted(gruppen.items()):
+    def rang(schluessel):
+        teile = gruppen[schluessel]
+        return (1 if teile[0].get("mail_id") else 0,
+                1 if teile[0].get("form") == "PayPal-Beleg" else 0,
+                schluessel[0])
+
+    raus, ohne_betrag = [], []
+    # Zuerst von Hand Eingetragenes (Kreditkarte), dann Anbieter-Belege, zuletzt PayPal.
+    for schluessel in sorted(gruppen, key=rang):
+        tag, anbieter, mail_id = schluessel
+        teile = gruppen[schluessel]
         mit_betrag = [t for t in teile if t.get("betrag")]
         betrag = mit_betrag[0]["betrag"] if mit_betrag else \
             AUS_MAIL.get((tag, anbieter))
-        whr = mit_betrag[0]["waehrung"] if mit_betrag else "USD"
+        whr = (mit_betrag[0].get("waehrung") if mit_betrag else None) or "USD"
+        dateien = sorted(t["datei"] for t in teile)
+        ist_paypal = teile[0].get("form") == "PayPal-Beleg"
+
+        gleich = None
+        for x in raus:
+            if x["_anbieter"] != anbieter:
+                continue
+            if x["_hand"] and mail_id and x["datum"] == tag:
+                # Die Karte nennt den echten Frankenbetrag, die Mail rundet anders.
+                gleich = x
+            elif ist_paypal and betrag == x["betrag"] and whr == x["waehrung"] \
+                    and abs((date.fromisoformat(tag)
+                             - date.fromisoformat(x["datum"])).days) <= 2:
+                gleich = x
+            if gleich:
+                break
+        if gleich:
+            gleich["belege"] = sorted(set(gleich["belege"] + dateien))
+            continue
+
         if betrag is None:
             print("  ⚠️ %s %s — Beleg da, Betrag unklar. Nicht gebucht."
                   % (tag, anbieter))
+            ohne_betrag.append({"datum": tag, "anbieter": anbieter, "belege": dateien})
             continue
         raus.append({
             "monat": tag[:7],
@@ -240,9 +283,29 @@ def aus_belegordner():
             "betrag": betrag,
             "waehrung": whr,
             "quelle": "Belegordner",
-            "belege": sorted(t["datei"] for t in teile),
+            "belege": dateien,
+            "_anbieter": anbieter,
+            "_hand": not mail_id,
         })
-    return raus
+    for x in raus:
+        del x["_anbieter"], x["_hand"]
+    return raus, ohne_betrag
+
+
+def meta_zahlungsbelege():
+    """Meta-Zahlungsbelege je Monat — Datei und Betrag, gebucht wird das Werbekonto."""
+    p = BELEGE / "_ausgepackt.json"
+    je = defaultdict(lambda: {"belege": [], "summe": 0.0})
+    try:
+        roh = json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return je
+    for e in roh:
+        if e.get("nur_beleg") and e.get("anbieter") == "meta":
+            m = je[e.get("bezug") or e["datum"][:7]]
+            m["belege"].append(e["datei"])
+            m["summe"] += e.get("betrag") or 0
+    return je
 
 
 def aus_werbekonto():
@@ -323,14 +386,27 @@ def main():
         ROOT / "outputs" / "cockpit" / "abgleich"
     ziel.mkdir(parents=True, exist_ok=True)
 
-    posten = aus_belegordner()
+    posten, beleg_ohne_betrag = aus_belegordner()
     belegt_monate = {p["monat"] for p in posten}
 
     # Werbung laeuft parallel zu den Tools, nie statt ihnen — deshalb kommt
     # sie dazu und wird nicht gegen den Belegordner abgewogen.
+    # 🚨 Bis zum 04.11.2026 stand hier ein Vergleich auf (Monat, Art) — eine einzige
+    # ChatGPT-Werbezeile hat die ganze Meta-Werbung des Monats geschluckt (September
+    # CHF 280.35, Oktober CHF 28.72), und die Summe sah trotzdem plausibel aus.
     werbung = aus_werbekonto()
-    schon = {(p["monat"], p["art"]) for p in posten}
-    posten += [w for w in werbung if (w["monat"], w["art"]) not in schon]
+    meta_belege = meta_zahlungsbelege()
+    for w in werbung:
+        m = meta_belege.get(w["monat"])
+        if m:
+            # Ein Zahlungsbeleg deckt selten genau einen Kalendermonat. Als belegt zaehlt
+            # der Monat erst, wenn die Summe reicht; sonst steht die Datei nur daneben.
+            if m["summe"] >= w["betrag"] * 0.98:
+                w["belege"] = sorted(m["belege"])
+            else:
+                w["belege_teilweise"] = sorted(m["belege"])
+                w["belegt_betrag"] = round(m["summe"], 2)
+    posten += werbung
 
     alt, fehler = aus_index()
     # Der Belegordner gewinnt: wo eine Datei liegt, zaehlt die, nicht die Zeile.
@@ -388,6 +464,10 @@ def main():
         })
 
     ohne_beleg = [p for p in posten if not p["belege"]]
+    try:
+        zu_pruefen = len(json.loads((BELEGE / "_zu-pruefen.json").read_text(encoding="utf-8")))
+    except Exception:
+        zu_pruefen = 0
 
     daten = {
         "monate": liste,
@@ -396,10 +476,12 @@ def main():
         "nach_art": {k: round(v, 2) for k, v in sorted(arten.items())},
         "luecken": luecken,
         "ohne_beleg": len(ohne_beleg),
+        "beleg_ohne_betrag": beleg_ohne_betrag,
+        "zu_pruefen": zu_pruefen,
         "mit_beleg": len(posten) - len(ohne_beleg),
         "belegordner": str(BELEGE.relative_to(ROOT)).replace("\\", "/"),
         "stand": date.today().isoformat(),
-        "quellen": ["context/finanzen/2026/belege/ (Juni–September, mit Datei)",
+        "quellen": ["context/finanzen/2026/belege/ (seit Juni, mit Datei)",
                     "context/finanzen/2026/belege-index-2026.md (Feb–Mai)",
                     "Notion «Kostenpositionen» (Dez 2025, Jan 2026)"],
         "hinweis": ("Kein Gewinn wird gerechnet, wo Kosten fehlen. USD-Beträge "

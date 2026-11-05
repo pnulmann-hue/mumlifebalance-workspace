@@ -1,0 +1,86 @@
+<title>Öl-Abend Mails</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: eine Arbeitsliste zum Abarbeiten — je Strecke die Mails untereinander, je Mail Versandangaben, Kopierknöpfe, Vorschau, Code */
+:root{
+  --grund:#f4efe3; --blatt:#fffdf8; --tinte:#0c1c30; --leise:#566671; --linie:#ddd5c3;
+  --dunkel:#29556d; --orange:#dc822e; --knopf-text:#20130a; --code:#f4efe3;
+  --kopf:"Philosopher",Georgia,serif; --text:"Source Sans 3","Segoe UI",Arial,sans-serif; --mono:Consolas,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --grund:#101c26; --blatt:#182835; --tinte:#efe9da; --leise:#a9b6bf; --linie:#2c3f4e;
+  --dunkel:#8fbdd3; --orange:#ec9a4c; --knopf-text:#20130a; --code:#101c26; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --grund:#101c26; --blatt:#182835; --tinte:#efe9da; --leise:#a9b6bf; --linie:#2c3f4e;
+  --dunkel:#8fbdd3; --orange:#ec9a4c; --knopf-text:#20130a; --code:#101c26; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--grund);color:var(--tinte);font:400 16px/1.5 var(--text);margin:0}
+.huelle{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 56px;display:grid;gap:30px}
+h1,h2,h3{font-family:var(--kopf);margin:0;text-wrap:balance}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);color:var(--dunkel)}
+h2{font-size:1.45rem;color:var(--dunkel)}
+h3{font-size:1.2rem}
+p{margin:0}
+.leise{color:var(--leise)}
+.kopf,.strecke{display:grid;gap:10px}
+.strecke{gap:16px}
+.mail{background:var(--blatt);border:1px solid var(--linie);border-radius:12px;padding:18px;display:grid;gap:14px;min-width:0}
+dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0;font-size:.96rem}
+dt{color:var(--leise)}
+dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.knoepfe{display:flex;gap:8px;flex-wrap:wrap}
+button{font:inherit;font-weight:600;cursor:pointer;border-radius:999px;padding:8px 15px;border:1.5px solid var(--dunkel);background:transparent;color:var(--dunkel)}
+button.haupt{background:var(--orange);border-color:var(--orange);color:var(--knopf-text)}
+button:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+details{border-top:1px solid var(--linie);padding-top:10px}
+summary{cursor:pointer;font-weight:600}
+iframe{width:100%;height:560px;border:1px solid var(--linie);border-radius:8px;background:#fff;margin-top:10px}
+textarea{width:100%;height:220px;margin-top:10px;font:12px/1.45 var(--mono);color:var(--tinte);background:var(--code);border:1px solid var(--linie);border-radius:8px;padding:10px}
+.meldung{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--tinte);color:var(--grund);padding:9px 18px;border-radius:999px;font-weight:600}
+</style>
+
+<div class="huelle">
+  <header class="kopf">
+    <h1>Öl-Abend Mails</h1>
+    <p>Sechs Mails für drei Wege nach dem Abend. Je Mail: Betreff und Vorschautext kopieren, dann den HTML-Code in ActiveCampaign in den HTML-Editor einfügen.</p>
+    <p class="leise">Auslöser ist der Tag „Öl-Abend“. Welcher Weg gilt, steht im Feld „Öl-Abend · Mein nächster Schritt“. Wer „Die Öle sind gerade nichts für mich“ oder „Ich bin schon Kundin oder Beraterin“ ankreuzt, bekommt keine dieser Mails.</p>
+  </header>
+  <main id="liste" style="display:grid;gap:30px"></main>
+</div>
+<div class="meldung" id="meldung" hidden></div>
+
+<script>
+var MAILS = /*DATEN*/[];
+var liste = document.getElementById("liste");
+function e(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+var gruppen = [];
+MAILS.forEach(function(m,i){
+  var g = gruppen.filter(function(x){return x.name===m.strecke;})[0];
+  if(!g){g={name:m.strecke,mails:[]};gruppen.push(g);}
+  g.mails.push(i);
+});
+liste.innerHTML = gruppen.map(function(g){
+  return '<section class="strecke"><h2>'+e(g.name)+'</h2>'+g.mails.map(function(i,n){
+    var m=MAILS[i];
+    return '<article class="mail"><h3>'+(n+1)+'. '+e(m.betreff)+'</h3>'+
+      '<dl><dt>Wann</dt><dd>'+e(m.warten)+'</dd><dt>Für wen</dt><dd>'+e(m.bedingung)+'</dd>'+
+      '<dt>Zweiter Betreff</dt><dd>'+e(m.betreff2)+'</dd><dt>Vorschautext</dt><dd>'+e(m.preheader)+'</dd></dl>'+
+      '<div class="knoepfe"><button class="haupt" data-k="html" data-i="'+i+'">HTML kopieren</button>'+
+      '<button data-k="betreff" data-i="'+i+'">Betreff kopieren</button>'+
+      '<button data-k="preheader" data-i="'+i+'">Vorschautext kopieren</button></div>'+
+      '<details><summary>Vorschau ansehen</summary><iframe sandbox="" title="Vorschau '+e(m.betreff)+'" data-i="'+i+'"></iframe></details>'+
+      '<details><summary>HTML-Code ansehen</summary><textarea id="code-'+i+'" readonly aria-label="HTML-Code">'+e(m.html)+'</textarea></details>'+
+      '</article>';
+  }).join("")+'</section>';
+}).join("");
+document.querySelectorAll("iframe").forEach(function(f){f.srcdoc=MAILS[+f.dataset.i].html;});
+var timer;
+function melde(t){var m=document.getElementById("meldung");m.textContent=t;m.hidden=false;clearTimeout(timer);timer=setTimeout(function(){m.hidden=true;},1800);}
+function ersatz(t){var a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");melde("Kopiert");}catch(x){melde("Bitte von Hand kopieren");}a.remove();}
+liste.addEventListener("click",function(ev){
+  var b=ev.target.closest("button[data-k]");if(!b)return;
+  var t=MAILS[+b.dataset.i][b.dataset.k];
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){melde("Kopiert");},function(){ersatz(t);});}else ersatz(t);
+});
+</script>

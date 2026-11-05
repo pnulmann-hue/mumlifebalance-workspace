@@ -392,6 +392,10 @@ scripts/**/kontakte*.json
 # bleibt er lokal. Sobald privat: diese drei Zeilen wieder entfernen.
 .claude/skills/hooks/SKILL.md
 
+# Der Ueberschriften-Skill traegt zugekauftes Kurswissen und fremde Beispiel-Headlines
+# im Wortlaut. Die Anleitung.md bleibt getrackt, sie ist namensfrei.
+.claude/skills/ueberschrift/SKILL.md
+
 # Der Facebook-Ads-Skill (/facebook-ads) baut auf Kevin Fiedlers gekauftem
 # Kurs "Facebook Ads Lab" auf (4S-Copy-Formel, Entscheidungstabelle,
 # Skalier-System). Fremde Methodik -> bleibt lokal, solange Repo public.
@@ -420,6 +424,11 @@ outputs/mail-sortieren/
 # Original liegt in reference/copywriting-original/ (aus dem ZIP).
 reference/copywriting-original/
 .claude/skills/copywriting/
+
+# IG-Automation-Skill (zugekauft, 04.11.2026) — Fremdmaterial, Repo ist public.
+# scripts/ig-bot/ ist die ausgelieferte Fassung auf Basis ihres Server-Codes.
+.claude/skills/ig-automation/
+scripts/ig-bot/
 
 # Archivierte zugekaufte Skills (02.10.2026) — Fremdmaterial, nie ins öffentliche Repo.
 reference/_archiv-skills/content-master/
@@ -457,6 +466,12 @@ outputs/oel-app/
 outputs/produkte/ki-treppe/produktion.json
 outputs/produkte/ki-treppe/produktion.html
 
+# Content-Maschinen aus Lektion 7.1 (seit 04.11.2026)
+# 🚨 Beilage des bezahlten Kurses, Repo ist oeffentlich. Der Generator
+#    (scripts/ki-kurs/content-maschinen-bauen.py) bleibt drin und baut den
+#    Ordner samt ZIP jederzeit neu — es geht nichts verloren.
+outputs/produkte/ki-treppe/content-maschinen/
+
 # Garten-App: lokale Testdaten (Abzug aus der Artifact-Datenbank)
 outputs/garten/garten-app/testdaten.json
 outputs/garten/garten-app/test.html
@@ -486,3 +501,16 @@ outputs/kochdatenbank/
 
 # Webinar-Demo vom Desktop (02.11.2026): enthält Auszüge aus dem gitignorierten Hook-Skill
 outputs/produkte/ki-treppe/webinar-demo/
+
+# Schriftdatei der Marke, nur fuer das private Cockpit
+outputs/cockpit/assets/*.otf
+
+# Öl-Begleitung und Öl-Abend-Mails: Gruppen-Einladungen und Vimeo-Hash (Repo public)
+outputs/produkte/oel-begleitung/
+outputs/doterra-strategie/oelabend/mail-*.html
+outputs/doterra-strategie/oelabend/oelabend-mails.html
+outputs/newsletter/quelle-*/
+outputs/newsletter/doterra-versand-stand.json
+
+# Foliensaetze des bezahlten KI-Kurses: Generatoren in scripts/ki-kurs/ bauen sie neu (Repo public)
+folien-modul-*/

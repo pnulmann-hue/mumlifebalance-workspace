@@ -15,7 +15,7 @@ Jedes Modul-Skript importiert von hier und schreibt nur noch seine Inhalte:
 Format: Slides-Artifact-Typ, 1920x1080, alle Stile inline aus dem erlaubten
 Satz (keine margin, kein var(), keine em/rem, Schriftgroesse nie unter 24px).
 """
-import io, json, os
+import io, json, os, re
 
 # ── Marke ────────────────────────────────────────────────────────────
 GRUND     = "#f7f4ec"   # Creme, leicht getont
@@ -102,6 +102,65 @@ def gegenueber(links_titel, links, rechts_titel, rechts):
             % (spalte(links_titel, links, GEDAEMPFT, CREME),
                spalte(rechts_titel, rechts, PETROL, HELL)))
 
+# 🚨 Seit 04.11.2026: Patricia hat acht ß in fertigen Folien gefunden,
+#    ich nicht. Eine Pruefung aus dem Gedaechtnis prueft das, woran man gerade
+#    denkt — also steht sie jetzt im Bau und bricht ab.
+# Wortstaemme, die ae/oe/ue voellig zu Recht tragen. Staemme statt ganzer
+# Woerter, sonst meldet die Pruefung „hineinzuschauen" und „Schutzmauer" —
+# und nach dem dritten Fehlalarm liest niemand mehr hin.
+ECHT = ("neu bau schau dauer trauen quer zuerst frauen heute abenteuer blau quelle "
+        "genuegend steuer feuer teuer treue freuen mauer uelle unbequem tue "
+        "spuer scheue reue").split()
+UMSCHRIFT = re.compile(r"\b[A-Za-z]*(?:ae|oe|ue)[a-z]*\b")
+
+
+def pruefe_schreibweise(titel, text):
+    """Schweizer ss und echte Umlaute — bricht bei einem Fund ab.
+
+    Geprueft wird der SICHTBARE Text und die Sprechnotiz; beides liest
+    Patricia beim Drehen. Markup und Farbwerte fliegen vorher raus, sonst
+    meldet jedes `#fdfcf8` einen Fehlalarm.
+    """
+    sicht = re.sub(r"<[^>]+>", " ", text)
+    sicht = re.sub(r"&[a-z]+;", " ", sicht)
+
+    scharf = sorted(set(re.findall(r"[A-Za-z\u00e4\u00f6\u00fc]*\u00df[a-z\u00e4\u00f6\u00fc]*", sicht)))
+    if scharf:
+        raise SystemExit(
+            "\nACHTUNG  %s: Schweizer ss fehlt bei %s\n"
+            "   Jedes ß wird ss. Kein Beitrag und keine Folie geht mit ß raus."
+            % (titel, ", ".join(scharf)))
+
+    um = set()
+    for m in UMSCHRIFT.finditer(sicht):
+        w = m.group(0)
+        if any(e in w.lower() for e in ECHT):
+            continue
+        # In Dateinamen gehoeren ae/oe/ue hin: business-brief, ueber-mich
+        davor = sicht[m.start() - 1] if m.start() else " "
+        danach = sicht[m.end()] if m.end() < len(sicht) else " "
+        if davor == "-" or danach == "-":
+            continue
+        um.add(w)
+    um = sorted(um)
+    if um:
+        print("   Hinweis  %s: umschriebene Umlaute? %s" % (titel, ", ".join(um)))
+
+
+def auftrag(bloecke, groesse=30, lueck=16):
+    """Der Auftrag zum Abtippen — Creme-Kasten mit Petrol-Kante.
+
+    `bloecke` ist eine Liste von Absaetzen. Kurze Absaetze sind besser als
+    lange: sie kippen zwischen Ersatz- und echter Schrift seltener die
+    Zeilenzahl, und auf der Folie liest man sie als Schritte.
+    """
+    z = "".join('<p style="font-size:%dpx; line-height:1.5; color:%s">%s</p>'
+                % (groesse, TINTE, b) for b in bloecke)
+    return ('<div style="background:%s; padding:34px 42px; border-radius:18px; '
+            'border-left:8px solid %s; display:flex; flex-direction:column; '
+            'gap:%dpx">%s</div>' % (HELL, PETROL, lueck, z))
+
+
 def folie(sid, inhalt, notiz, stil=None, uebergang="fade"):
     s = stil or SEK
     a = '<aside>%s</aside>' % notiz if notiz else ""
@@ -155,6 +214,11 @@ def schreibe(ziel, titel, folien, order, sections, stand="2026-09-22T09:00:00Z")
     extra = [s for s in folien if s not in order]
     if fehlt or extra:
         print("ACHTUNG  fehlt: %s   nicht in ORDER: %s" % (fehlt, extra))
+
+    # Schweizer ss und echte Umlaute — bricht ab, bevor etwas gebaut wird
+    for sid in order:
+        if sid in folien:
+            pruefe_schreibweise(sid, folien[sid])
 
     deck = {
         "v": 4,

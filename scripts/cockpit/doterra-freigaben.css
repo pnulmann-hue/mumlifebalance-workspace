@@ -1,0 +1,26 @@
+
+  /* doTERRA → Freigaben */
+  .df-karte, .df-paket { background: #fff; border: 1px solid var(--line-strong); border-radius: 12px; padding: 18px; margin-bottom: 18px; display: grid; gap: 12px; min-width: 0; }
+  .df-kopf { display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+  .df-kopf h2, .df-kopf h3 { margin: 0; }
+  .df-stand { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink-soft); }
+  .df-stand.entwurf { background: #fdf1e6; color: #8a4a12; }
+  .df-stand.verschickt, .df-stand.eingeplant { background: #e4f3f4; color: #0d5f67; }
+  .df-betreffe { border: 0; padding: 0; margin: 0; display: grid; gap: 6px; }
+  .df-betreffe legend { font-weight: 600; padding: 0; margin-bottom: 6px; }
+  .df-betreffe label { display: flex; gap: 8px; align-items: baseline; }
+  .df-klein, .df-notiz { margin: 0; font-size: 14px; }
+  .df-notiz { background: #fdf1e6; border-radius: 8px; padding: 10px 12px; }
+  .df-vorschau iframe { width: 100%; height: 620px; border: 1px solid var(--line-strong); border-radius: 8px; background: #fff; margin-top: 8px; }
+  .df-kommentar { display: grid; gap: 6px; justify-items: start; }
+  .df-kommentar label { width: 100%; font-size: 13px; color: var(--ink-soft); }
+  .df-kommentar textarea { width: 100%; font: inherit; margin-top: 4px; }
+  .df-hinweis { font-size: 12px; color: var(--ink-soft); }
+  .df-antwort { margin: 0; font-size: 13px; color: var(--ink-soft); }
+  .df-knoepfe { display: flex; gap: 8px; flex-wrap: wrap; }
+  .df-beitrag { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 14px; border-top: 1px solid var(--line-strong); padding-top: 14px; }
+  .df-beitrag img { width: 110px; height: 110px; border-radius: 8px; object-fit: cover; }
+  .df-beitragtext { display: grid; gap: 8px; min-width: 0; }
+  .df-datum { font-size: 13px; color: var(--ink-soft); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .df-text { white-space: pre-wrap; margin: 8px 0 0; font-size: 14px; overflow-wrap: anywhere; }
+  @media (max-width: 560px) { .df-beitrag { grid-template-columns: minmax(0, 1fr); } .df-vorschau iframe { height: 520px; } }

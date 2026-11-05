@@ -71,6 +71,27 @@ LEKTION = {
     "video7615913723": "4.7",
 }
 
+# Ab Modul 5 benennt Patricia die Videos in Vimeo selbst mit der Lektionsnummer
+# vorne — „5.1 Was ein Skill ist". Dann braucht es keinen Eintrag oben: die
+# Nummer steht im Namen und ist Beleg genug.
+#
+# 🚨 Die Tabelle gewinnt. Nur wenn dort nichts steht, greift die Regel — sonst
+#    wuerde ein spaeter umbenanntes Video die geprueften Zuordnungen von
+#    Modul 1 bis 4 aushebeln.
+# 🚨 Das Muster verlangt die Nummer am ANFANG. „Modul 2.1" trifft es deshalb
+#    nicht (faengt mit einem Wort an) und laeuft weiter in die Tabelle.
+#    Geprueft am 04.11.2026 gegen alle 33 Namen im Ordner: 33 zugeordnet,
+#    keiner falsch, und die Gegenprobe „Modul 2.1" bleibt bei der Tabelle.
+NUMMER_VORNE = re.compile(r"^(\d{1,2}\.\d{1,2}[a-z]?)(?:\s|$)")
+
+
+def lektion_von(name):
+    """Das Lektionskuerzel zu einem Vimeo-Namen, oder None."""
+    if name in LEKTION:
+        return LEKTION[name]
+    m = NUMMER_VORNE.match(name.strip())
+    return m.group(1) if m else None
+
 KOPF = ("# Easy KI %s%s\n\n"
         "Quelle: Vimeo %s (%d:%02d)\n"
         "Untertitel: von Vimeo automatisch erzeugt, geholt %s\n"
@@ -147,7 +168,7 @@ def main():
     ZIEL.mkdir(parents=True, exist_ok=True)
     gemacht, ohne = [], []
     for i, (nummer, hash_, name, dauer) in enumerate(videos, 1):
-        lek = LEKTION.get(name)
+        lek = lektion_von(name)
         stamm = dateiname(i, name, lek)
         if nur_liste:
             print("  %-18s %-6s %3d:%02d  %s"

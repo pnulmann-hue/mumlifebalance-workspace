@@ -31,11 +31,16 @@ except Exception:
 
 HIER = Path(__file__).resolve().parent
 FPS = 30
-VARIANTEN = ["A", "B", "C"]
 NAMEN = {
     "hook": {"A": "Zwei Schriften", "B": "Kelsie, Wort fuer Wort", "C": "Balken"},
-    "untertitel": {"A": "Zwei Schriften", "B": "Aktives Wort", "C": "Balken"},
+    "untertitel": {"A": "Zwei Schriften", "B": "Aktives Wort", "C": "Balken", "D": "Serifen-Wort"},
 }
+# Sprung-Zoom (stil.zoom.modus = "sprung"): nie seltener als MAX, nie oefter als MIN Sekunden
+SPRUNG_MIN = 1.6
+SPRUNG_MAX = 2.4
+SPRUNG_STUFEN = [1.12, 1.2, 1.14, 1.24]
+TAFEL_ZEILEN_MAX = 3
+TAFEL_ZEICHEN_MAX = 28
 # dieselben Rezepte wie scripts/videoschnitt/textebene.py — ein Klang klingt ueberall gleich
 SOUNDS = {
     "klick": "anoisesrc=d=0.06:c=pink:a=0.6,highpass=f=1800,afade=t=out:st=0.005:d=0.055",
@@ -86,6 +91,83 @@ def sounds_bereitstellen(projekt):
     return da
 
 
+def _rein(w):
+    return "".join(c for c in w.lower() if c.isalnum())
+
+
+def wort_suchen(p, folge, ab_idx):
+    """Index des ersten Worts der Folge ab ab_idx. Die Stelle wird als Satz genannt, nie als Sekunde."""
+    ziel = [_rein(w) for w in folge.split()]
+    woerter = [_rein(w["text"]) for w in p["woerter"]]
+    for i in range(ab_idx, len(woerter) - len(ziel) + 1):
+        if woerter[i:i + len(ziel)] == ziel:
+            return i
+    sys.exit("Stelle nicht im Transkript gefunden: „%s“ (gesucht ab Wort %d)" % (folge, ab_idx))
+
+
+def stellen_aufloesen(p):
+    """Tafeln und Abschluss nennen ihre Stelle als Wortfolge (`ab`, `bis`). Hier werden daraus Zeiten.
+    Gesucht wird der Reihe nach ab Hook-Ende, ein spaeterer Eintrag findet also die spaetere Stelle."""
+    hook = p.get("hookDauer", 4.2)
+    idx = next((i for i, w in enumerate(p["woerter"]) if w["startMs"] / 1000 >= hook), 0)
+    for t in p.get("tafeln") or []:
+        if len(t["zeilen"]) > TAFEL_ZEILEN_MAX:
+            sys.exit("Tafel „%s“: hoechstens %d Zeilen." % (t["titel"], TAFEL_ZEILEN_MAX))
+        idx = wort_suchen(p, t["ab"], idx)
+        t["abSek"] = p["woerter"][idx]["startMs"] / 1000
+        for z in t["zeilen"]:
+            if len(z["text"]) > TAFEL_ZEICHEN_MAX:
+                sys.exit("Tafel-Zeile zu lang (%d Zeichen, hoechstens %d): „%s“" % (len(z["text"]), TAFEL_ZEICHEN_MAX, z["text"]))
+            idx = wort_suchen(p, z["ab"], idx)
+            z["abSek"] = p["woerter"][idx]["startMs"] / 1000
+        idx = wort_suchen(p, t["bis"], idx)
+        t["bisSek"] = p["woerter"][idx]["endMs"] / 1000 + 0.3
+    for e in p["einblendungen"]:
+        if e.get("art") == "abschluss":
+            idx = wort_suchen(p, e["ab"], idx)
+            e["abSek"] = p["woerter"][idx]["startMs"] / 1000
+            e["dauer"] = p["dauer"] - e["abSek"]
+
+
+def spruenge_berechnen(p):
+    """Sprung-Zoom: die Groesse wechselt nur an Wortgrenzen, bevorzugt nach einem Satzzeichen oder
+    einer Pause. Einmal je Reel ganz weit raus (Scale 1), damit es nicht zur Masche wird."""
+    z = (p.get("stil") or {}).get("zoom") or {}
+    if z.get("modus") != "sprung":
+        return
+    stufen = z.get("stufen") or SPRUNG_STUFEN
+    w = p["woerter"]
+    spruenge = [{"abSek": 0, "scale": stufen[0]}]
+    letzter, n = 0.0, 1
+    for i in range(1, len(w)):
+        t = w[i]["startMs"] / 1000
+        roh = w[i - 1]["text"].strip()
+        grenze = roh[-1:] in ".,;:!?" or t - w[i - 1]["endMs"] / 1000 >= 0.12
+        if (t - letzter >= SPRUNG_MIN and grenze) or t - letzter >= SPRUNG_MAX:
+            spruenge.append({"abSek": round(t - 0.03, 3), "scale": stufen[n % len(stufen)]})
+            letzter, n = t, n + 1
+    weit = z.get("weit")
+    if weit is not False:
+        if weit:
+            ziel = w[wort_suchen(p, weit, 0)]["startMs"] / 1000
+        else:
+            ziel = p["dauer"] * 0.62
+        s = min(spruenge[1:], key=lambda x: abs(x["abSek"] - ziel))
+        s["scale"] = 1.0
+    z["spruenge"] = spruenge
+    print("Sprung-Zoom: %d Spruenge in %.0f s, weit bei Sekunde %.1f" % (
+        len(spruenge) - 1, p["dauer"], next((s["abSek"] for s in spruenge if s["scale"] == 1.0), -1)))
+
+
+def zoom_faktor(p, sek):
+    z = (p.get("stil") or {}).get("zoom") or {}
+    s = 1.0
+    for x in z.get("spruenge") or []:
+        if x["abSek"] <= sek:
+            s = x["scale"]
+    return s, z.get("zentrumY", 30)
+
+
 def remotion(args, projekt, props):
     with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as t:
         json.dump(props, t, ensure_ascii=False)
@@ -93,7 +175,9 @@ def remotion(args, projekt, props):
     r = subprocess.run(cmd, cwd=HIER, capture_output=True, text=True, encoding="utf-8", errors="replace")
     Path(t.name).unlink(missing_ok=True)
     if r.returncode:
-        sys.exit("Remotion-Fehler:\n%s" % (r.stderr or r.stdout)[-2500:])
+        # Anfang UND Ende: der Satz, der die Ursache nennt, steht vorne, hinten nur der Backtrace.
+        roh = r.stderr or r.stdout
+        sys.exit("Remotion-Fehler:\n%s" % (roh if len(roh) < 5000 else roh[:2500] + "\n…\n" + roh[-2500:]))
 
 
 def still(projekt, props, frame, ziel):
@@ -137,13 +221,14 @@ def varianten(projekt, p):
     stellen = {"hook": int(1.6 * FPS), "untertitel": int(erste_untertitel_sek(p) * FPS)}
     for teil, frame in stellen.items():
         bilder = []
-        for v in VARIANTEN:
+        reihe = sorted(NAMEN[teil])
+        for v in reihe:
             q = dict(p, stil=dict(stil, **{teil: v}))
             b = tmp / ("%s-%s.jpg" % (teil, v))
             still(projekt, q, frame, b)
             bilder.append(b)
         ziel = aus / ("%s-varianten.jpg" % teil)
-        blatt(bilder, ["%s · %s" % (v, NAMEN[teil][v]) for v in VARIANTEN], ziel)
+        blatt(bilder, ["%s · %s" % (v, NAMEN[teil][v]) for v in reihe], ziel)
         print("✓ %s  (Sekunde %.1f)" % (ziel, frame / FPS))
     shutil.rmtree(tmp, ignore_errors=True)
 
@@ -153,6 +238,7 @@ def stellen(projekt, p):
     aus.mkdir(exist_ok=True)
     punkte = [("hook", 1.6), ("untertitel", erste_untertitel_sek(p))]
     punkte += [("einblendung-%d" % (i + 1), e["abSek"] + 0.7) for i, e in enumerate(p["einblendungen"])]
+    punkte += [("tafel-%d" % (i + 1), t["zeilen"][-1]["abSek"] + 0.6) for i, t in enumerate(p.get("tafeln") or [])]
     punkte.append(("schluss", p["dauer"] - 1.0))
     for name, sek in punkte:
         ziel = aus / ("%s.jpg" % name)
@@ -211,6 +297,12 @@ def gesicht_pruefen(projekt, p, textvideo, takt=0.4, b=540, h=960):
         if roh is None:
             continue
         bild = np.frombuffer(roh, np.uint8).reshape(h, b)
+        # Beim Sprung-Zoom ist das Gesicht groesser als im Rohbild, das Kinn liegt tiefer.
+        s, zy = zoom_faktor(p, sek)
+        if s != 1.0:
+            cy = h * zy / 100
+            m = np.float32([[s, 0, (1 - s) * b / 2], [0, s, (1 - s) * cy]])
+            bild = cv2.warpAffine(bild, m, (b, h))
         gesichter = erkenner.detectMultiScale(bild, 1.1, 5, minSize=(60, 60))
         if len(gesichter) == 0:
             ohne.append(sek)
@@ -287,6 +379,8 @@ def main():
     if not (HIER / "node_modules").exists():
         sys.exit("Erst einmalig: cd scripts/grafik && npm install")
     p["toene"] = sounds_bereitstellen(projekt)
+    stellen_aufloesen(p)
+    spruenge_berechnen(p)
     # Intro zum Hook (Patricia 06.10.2026). Leise abgemischt (LAUT.intro), damit es ihre
     # ersten Worte nicht uebertoent. Abschalten je Reel: hook.intro = false in grafik.json.
     print("Intro: %s" % ("nein" if p["hook"].get("intro") is False else "ja"))

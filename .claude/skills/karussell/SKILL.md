@@ -401,6 +401,13 @@ wieder.
 > keine verrutschten Buchstaben und keine Tippfehler im Bild, das häufigste
 > Problem im Guide.
 
+**🎯 Seit 2026-11-04 ist die Master-Vorlage der Standard:** Karussell mit den Layouts `m-…` ins
+Cockpit schreiben (Muster `outputs/karussells/master-vorlage/muster.json`), dort zeichnet es sich
+selbst und Patricia ändert Farbe, Foto und Text auf der Karte. Bilder ausserhalb des Cockpits:
+`node scripts/karussell-render/folien.mjs <definition.json> <ordner>`. Felder und Regeln stehen in
+`context/karussell-framework.md`, Abschnitt „Master-Vorlage“. Der ältere Weg darunter gilt nur noch
+für bestehende Vorlagen.
+
 **NEU seit 2026-04-22:** Finales Karussell wird aus einer HTML-Vorlage zu 11 Instagram-tauglichen PNGs (1080×1350) gerendert. Die HTML ist die Single-Source-of-Truth — kein Canva-AI-Generate mehr.
 
 **Workflow:**

@@ -3,12 +3,14 @@
 Liest die Formular-Adresse aus outputs/doterra-strategie/oelabend/formular.json
 (erzeugt von formular-anlegen.py) und baut HTML + PDF zum Ausdrucken.
 
-    python scripts/oelabend/blatt-bauen.py
+    python scripts/oelabend/blatt-bauen.py                       # leer zum Ausfüllen
+    python scripts/oelabend/blatt-bauen.py "5.11.2026, 19:30"    # mit Termin, eigene Datei
 """
 import base64
 import io
 import json
 import subprocess
+import sys
 from pathlib import Path
 
 import qrcode
@@ -40,6 +42,9 @@ def kaestchen(liste, preise=False):
 
 def main():
     info = json.loads((ZIEL / "formular.json").read_text(encoding="utf-8"))
+    termin = sys.argv[1] if len(sys.argv) > 1 else ""
+    datum = f"<span>Öl-Abend vom <b>{termin}</b></span>" if termin else "<span>Öl-Abend vom</span><i></i>"
+    name = "rueckmeldeblatt-" + "-".join(reversed(termin.split(",")[0].split("."))) if termin else "rueckmeldeblatt"
     html = f"""<!doctype html>
 <html lang="de"><head><meta charset="utf-8">
 <title>Öl-Abend · Rückmeldung</title>
@@ -76,7 +81,7 @@ def main():
     <div>
       <h1>Schön, warst du heute dabei</h1>
       <p class="unter">Erzähl mir kurz, wie es dir gefallen hat und was du gern hättest.</p>
-      <div class="linie abend"><span>Öl-Abend vom</span><i></i><span>bei</span><i></i></div>
+      <div class="linie abend">{datum}<span>bei</span><i></i></div>
     </div>
     <div class="qr"><img src="{qr_daten(info['adresse'])}" alt="QR-Code">Lieber am Handy?<br>Einfach scannen.</div>
   </div>
@@ -129,11 +134,11 @@ def main():
 
   <p class="fuss">Danke dir für deine Zeit und dein Vertrauen · Patricia</p>
 </div></body></html>"""
-    pfad = ZIEL / "rueckmeldeblatt.html"
+    pfad = ZIEL / f"{name}.html"
     pfad.write_text(html, encoding="utf-8")
-    subprocess.run(["node", str(Path(__file__).with_name("pdf.mjs")), str(pfad), str(ZIEL / "rueckmeldeblatt.pdf")],
+    subprocess.run(["node", str(Path(__file__).with_name("pdf.mjs")), str(pfad), str(ZIEL / f"{name}.pdf")],
                    check=True, cwd=WURZEL)
-    print("→", ZIEL / "rueckmeldeblatt.pdf")
+    print("→", ZIEL / f"{name}.pdf")
 
 
 if __name__ == "__main__":

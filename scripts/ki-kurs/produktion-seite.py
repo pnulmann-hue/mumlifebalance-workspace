@@ -64,11 +64,34 @@ def reich(text):
        Darum legt der Knopf text/html UND text/plain in die Zwischenablage —
        dasselbe Verfahren wie auf der Startklar-Kopierseite.
     🚨 `quote=False`, sonst steht im Fliesstext ueberall &quot;."""
+    def betont(roh):
+        """Escapen und die Markdown-Hervorhebungen setzen."""
+        z = e(roh)
+        z = re.sub(r"`([^`]+)`", r"<code>\1</code>", z)
+        return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", z, flags=re.S)
+
     absaetze = []
     for a in re.split(r"\n\s*\n", text.strip()):
-        z = e(a.strip())
-        z = re.sub(r"`([^`]+)`", r"<code>\1</code>", z)
-        z = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", z, flags=re.S)
+        # Ein Zitatblock MUSS vor dem Escapen erkannt werden — danach steht
+        # dort &gt; und die Zeichen stehen sichtbar im Lektionstext. Genau so
+        # waere am 04.11.2026 der Auftrag zum Abtippen in 7.3 und 7.4 in
+        # ThriveCart gelandet: als Absatz mit Groesser-Zeichen davor.
+        rohzeilen = [l for l in a.strip().split("\n") if l.strip()]
+        if rohzeilen and all(l.lstrip().startswith(">") for l in rohzeilen):
+            teile, lauf = [], []
+            for l in rohzeilen:
+                s = l.lstrip()[1:].strip()
+                if s:
+                    lauf.append(s)
+                elif lauf:
+                    teile.append(" ".join(lauf)); lauf = []
+            if lauf:
+                teile.append(" ".join(lauf))
+            absaetze.append("<blockquote>%s</blockquote>"
+                            % "".join("<p>%s</p>" % betont(x) for x in teile))
+            continue
+
+        z = betont(a.strip())
         # Eine Aufzaehlung bleibt eine Aufzaehlung, sonst klebt sie zusammen.
         # 🚨 `all(Zeile faengt mit "- " an)` war zu streng: in der Quelle sind
         #    die Zeilen auf 80 Zeichen umgebrochen, also beginnt nur die ERSTE
@@ -115,6 +138,10 @@ def fuer_thrivecart(h):
                  'margin-bottom:.4em">'),
         ("<code>", '<code style="background:#f1ecdd;padding:1px 4px;'
                    'border-radius:3px">'),
+        # Der Auftrag zum Abtippen. Inline, weil ThriveCart auch hier die
+        # eigenen Abstaende zurueckstellt.
+        ("<blockquote>", '<blockquote style="margin:0 0 1em 0;padding:14px 20px;'
+                         'border-left:4px solid #12828c;background:#f7f4ec">'),
     ):
         h = h.replace(alt, neu)
     return h

@@ -94,6 +94,33 @@ export const Karte: React.FC<{ zitat: string; seite?: "links" | "rechts"; sound?
   );
 };
 
+/**
+ * Baustein „Abschluss" — Creme-Karte mit dem einen Aufruf, steht bis zum Ende des Reels.
+ * Der Untertitel pausiert solange (laeuft ueber `einblendungen`), die Stimme laeuft weiter.
+ * Keine Neigung und kein Ausblenden: sie soll beim letzten Bild noch lesbar dastehen.
+ */
+export const Abschluss: React.FC<{ oben?: string; text: string; unter?: string; hoehe?: number }> = ({
+  oben, text, unter, hoehe = 0.56,
+}) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const s = spring({ frame, fps, config: theme.spring.smooth });
+  return (
+    <AbsoluteFill style={{ alignItems: "center", opacity: s }}>
+      <div style={{
+        position: "absolute", top: `${hoehe * 100}%`, width: "82%", textAlign: "center", boxSizing: "border-box",
+        transform: `translateY(${interpolate(s, [0, 1], [26, 0])}px) scale(${interpolate(s, [0, 1], [0.97, 1])})`,
+        background: theme.colors.text, borderRadius: 10, padding: "34px 40px 40px",
+        boxShadow: "0 18px 50px rgba(12,28,48,0.45)", outline: `2px solid ${theme.colors.bgAlt}`, outlineOffset: -14,
+      }}>
+        {oben ? <div style={{ fontFamily: sourceSans.fontFamily, fontWeight: 700, fontSize: 40, letterSpacing: "0.14em", color: theme.colors.bgAlt }}>{ss(oben).toUpperCase()}</div> : null}
+        <div style={{ fontFamily: philosopher.fontFamily, fontWeight: 700, fontSize: 118, lineHeight: 1.05, marginTop: 8, color: theme.colors.bg, overflowWrap: "normal", wordBreak: "keep-all" }}>{ss(text)}</div>
+        {unter ? <div style={{ fontFamily: sourceSans.fontFamily, fontWeight: 600, fontSize: 60, lineHeight: 1.16, marginTop: 14, color: theme.colors.bg }}>{ss(unter)}</div> : null}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 /** Baustein „Look" — Farbkorrektur, Korn, Vignette. Dezent: das Material soll echt bleiben. */
 export const Look: React.FC = () => {
   const frame = useCurrentFrame();

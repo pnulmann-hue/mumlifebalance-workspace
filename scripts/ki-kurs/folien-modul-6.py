@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Folien fuer Modul 6 — Bots, die von selbst laufen.
+Folien für Modul 6 — Bots, die von selbst laufen.
 
     python scripts/ki-kurs/folien-modul-6.py <zielordner>
 """
@@ -45,25 +45,33 @@ F["l61-weiter"] = weiter("l61-weiter", "Als Nächstes",
 
 # ── 6.2 Übersicht ────────────────────────────────────────────────────
 F["l62-titel"] = lektionstitel("l62-titel", "6.2", "Was bei mir läuft",
-    "Vier Bots, ein Handy. Alles ohne mein Zutun.",
+    "Drei Bots, ein Handy. Alles ohne mein Zutun.",
     "Ganz am Handy filmen. Nicht auf Folien erklären, sondern durch die "
     "Nachrichten scrollen — das ist der Moment, in dem es klick macht.")
 
-F["l62-vier"] = folie("l62-vier",
+# 🚨 Am 04.11.2026 von vier auf drei gekürzt. Vorher standen hier Garten,
+#    Küche, Business und Haushalt — den Haushalts-Bot gibt es aber nicht mehr
+#    (der cron in `.github/workflows/haushalt-vorabend.yml` ist auskommentiert),
+#    und der alte Cockpit-Bot ist seit dem 25.10.2026 aus. Zeigen lassen sich:
+#    Garten (Railway, täglich) · Kochassistent (Do 18:00) · „Heute dran"
+#    (Cloud-Routine, 07:00 und 20:00, seit dem 03.11.2026).
+#    Ein Beispiel auf einer Folie, das es nicht mehr gibt, fällt beim Filmen
+#    auf — spätestens, wenn sie es am Handy aufmachen will.
+F["l62-drei"] = folie("l62-drei",
     eyebrow("Lektion 6.2")
-    + h2("Vier Beispiele")
+    + h2("Drei Beispiele")
     + reihe([
         karte("Garten", ["Was gerade dran ist, mit Blick aufs Wetter."]),
-        karte("Küche", ["Der Wochenplan und die Einkaufsliste."], ORANGE),
-        karte("Business", ["Was diese Woche ansteht und was noch offen ist."]),
-        karte("Haushalt", ["Am Abend, was morgen ansteht."], ORANGE),
-      ], 24),
+        karte("Küche", ["Vier Fragen am Donnerstag, der Plan am Freitag."], ORANGE),
+        karte("Business", ["Morgens und abends: was heute dran ist."]),
+      ], 28),
     "Sag bei jedem einen Satz, wofür er dir Arbeit abnimmt. Nicht wie er gebaut ist — "
-    "das kommt in der nächsten Lektion.")
+    "das kommt in der nächsten Lektion. Und sag dazu, dass zwei von den drei nichts "
+    "mit Arbeit zu tun haben: das ist der Satz, der ihnen die Angst nimmt.")
 
 F["l62-gemein"] = folie("l62-gemein",
     eyebrow("Lektion 6.2")
-    + h2("Was alle vier gemeinsam haben")
+    + h2("Was alle drei gemeinsam haben")
     + liste([
         "Sie machen etwas, das ich vorher jede Woche selbst gemacht habe.",
         "Sie melden sich von selbst, ich muss nicht daran denken.",
@@ -82,28 +90,102 @@ F["l62-weiter"] = weiter("l62-weiter", "Als Nächstes",
 F["l63-titel"] = lektionstitel("l63-titel", "6.3", "Dein erster Bot",
     "Von null bis zur ersten Nachricht.",
     "Geteilter Bildschirm plus Handy daneben. Nimm den einfachsten Bot, den du "
-    "hast — lieber banal und er kommt an, als clever und sie steigt aus.")
+    "hast — lieber banal und er kommt an, als clever und sie steigt aus. "
+    "🚨 Schritt 1 kannst du nicht live zeigen, dein Bot steht ja schon. Dafür "
+    "sind die nächsten zwei Folien da: sag ehrlich „den Teil habe ich vor "
+    "einem Jahr gemacht, so sieht er aus“ und geh die Folie durch. "
+    "Ab Schritt 2 bist du wieder live.")
 
+# 🚨 Am 04.11.2026 umgebaut, auf Patricias Entscheid: „ich labere in den chat
+#    was ich von ihm will und er macht es und fuehrt mich durch. ist ja viel
+#    die einfachere variante. ich moechte eigentlich die zeigen."
+#    Dasselbe hat sie in 5.4 schon entschieden („Zeig beide, aber nimm für die
+#    Aufnahme den Baukasten").
+#    Und es ist nicht nur die schoenere Variante: Lektion 4.2 verspricht „Die
+#    App bringt alles mit. Du installierst nichts weiter." Eine Vorlage zum
+#    Selberstarten braucht dagegen eine Laufzeit, die niemand installiert hat.
+#    Wer redet, bekommt einen Bot in dem, was auf ihrem Rechner schon da ist.
 F["l63-schritte"] = folie("l63-schritte",
     eyebrow("Lektion 6.3")
-    + h2("Vier Schritte")
+    + h2("Eins machst du selbst")
     + liste([
-        "<b>Den Botvater fragen.</b> Im Messenger selbst legst du deinen Bot an und bekommst dafür einen Schlüssel.",
-        "<b>Den Schlüssel richtig ablegen.</b> Er gehört in die Datei daneben, nie in den Text selbst. Warum, kommt in Modul 10.",
-        "<b>Den Auftrag schreiben.</b> Das kannst du schon — es ist ein Skill.",
-        "<b>Einmal von Hand starten.</b> Wenn die Nachricht ankommt, stimmt alles.",
+        "<b>Den Botvater fragen.</b> Nur du bekommst den Schlüssel — das nimmt dir niemand ab.",
+        "<b>Sagen, was du willst.</b> In ganzen Sätzen, so wie du es einer Freundin erzählst.",
+        "<b>Antworten.</b> Sie fragt nach, was ihr fehlt. Du musst nichts vorbereiten.",
+        "<b>Aufs Handy schauen.</b> Wenn die Nachricht da ist, läuft er.",
       ], 30),
-    "Beim zweiten Schritt kurz innehalten und sagen, dass das die wichtigste "
-    "Angewohnheit im ganzen Kurs ist. Ohne den Grund zu erklären, der kommt später.")
+    "Sag die Überschrift wirklich so: EINS machst du selbst, und das ist der "
+    "Botvater. Alles andere ist reden. Wer glaubt, sie müsse vier Dinge "
+    "können, steigt hier aus.")
+
+# 🚨 Diese zwei Folien sind am 04.11.2026 dazugekommen, weil Patricia Schritt 1
+#    nicht live zeigen kann: ihr Bot existiert seit einem Jahr, und einen
+#    zweiten anzulegen nur für die Kamera waere gespielt. Darum steht hier,
+#    was der Botvater fragt und was Claude Code danach fragt — damit sie es
+#    wiedererkennen, wenn es bei ihnen auf dem Bildschirm steht.
+F["l63-botvater"] = folie("l63-botvater",
+    eyebrow("Lektion 6.3 · Schritt 1")
+    + h2("Was der Botvater fragt")
+    + liste([
+        "Du schreibst ihm <b>/newbot</b> — das ist alles, was du tippst.",
+        "<b>„Choose a name for your bot“</b> — der Name, den du nachher im Chat siehst. <i>Mein Morgenbote.</i>",
+        "<b>„Choose a username... must end in bot“</b> — die Adresse. <i>morgenbote_sandra_bot.</i> Gibt es sie schon, sagt er es und du nimmst eine andere.",
+        "<b>„Use this token to access the HTTP API“</b> — darunter steht dein Schlüssel.",
+      ], 29)
+    + p("Er spricht Englisch. Das ist der einzige Ort im ganzen Kurs, an dem das "
+        "so ist — und du brauchst nur diese vier Zeilen zu erkennen.", 28, PETROL),
+    "Sag den letzten Satz wirklich. Englisch ist für viele die eigentliche "
+    "Hürde, nicht die Technik. Und sag dazu, dass du diesen Teil vor einem "
+    "Jahr gemacht hast — nicht so tun, als würdest du es gerade anlegen.")
+
+F["l63-reden"] = folie("l63-reden",
+    eyebrow("Lektion 6.3 · Schritt 2")
+    + h2("Das sagst du")
+    + ('<div style="background:#fdfcf8; padding:44px 48px; border-radius:18px; '
+       'border-left:8px solid #12828c; display:flex; flex-direction:column; gap:20px">'
+       '<p style="font-size:34px; line-height:1.5; color:#0c1c30">'
+       'Ich möchte einen Bot, der mir jeden Morgen um sieben auf Telegram '
+       'schreibt. Er soll mir <i>[das hier schreibst du selbst]</i>.</p>'
+       '<p style="font-size:34px; line-height:1.5; color:#0c1c30">'
+       'Ich habe einen Schlüssel vom Botvater. Erklär mir jeden Schritt, '
+       'und <b>frag nach, wenn dir etwas fehlt</b>.</p></div>')
+    + p("Mehr ist es nicht. Der letzte Halbsatz ist der wichtigste: ab da "
+        "führt sie dich.", 28, PETROL),
+    "Lies den Auftrag laut vor und tipp ihn dann wirklich ein — nicht "
+    "einfügen, tippen. Sie soll sehen, dass da kein Zauberwort steht. "
+    "Und betone den letzten Halbsatz: der macht aus einem Auftrag ein "
+    "Gespräch.")
+
+F["l63-gefuehrt"] = folie("l63-gefuehrt",
+    eyebrow("Lektion 6.3 · Schritt 2 bis 4")
+    + h2("Du wirst gefragt, nicht geprüft")
+    + liste([
+        "<b>„Wo ist dein Schlüssel?“</b> — du sagst es ihr, sie legt ihn an die richtige Stelle.",
+        "<b>„Wem soll er schreiben?“</b> — du schreibst deinem Bot einmal <i>Hallo</i>, sie holt die Nummer.",
+        "<b>„Was soll in der Nachricht stehen?“</b> — das ist dein Auftrag. Ganze Sätze, kein Fachwort.",
+        "<b>„Soll ich ihn einmal starten?“</b> — du sagst ja und schaust aufs Handy.",
+      ], 29)
+    + p("Der Wortlaut ist bei dir anders als bei mir. Die vier Fragen sind "
+        "dieselben — und du antwortest nur.", 28, PETROL),
+    "Das ist die wichtigste Folie der Lektion. Wer hier glaubt, sie müsse "
+    "etwas abtippen können, steigt aus. Sag ausdrücklich: du tippst keinen "
+    "einzigen Befehl ab ausser /newbot.")
 
 F["l63-geruest"] = folie("l63-geruest",
     eyebrow("Lektion 6.3")
-    + h2("Du musst nicht bei null anfangen")
-    + p("Unter diesem Video liegt ein Bot-Gerüst. Es ist ein fertiger Bot, dem nur "
-        "dein Schlüssel und dein Auftrag fehlen.", 40)
-    + p("📎 Bot-Gerüst · Schritt-für-Schritt-Anleitung", 30, PETROL),
-    "Zeig, wo in der Datei ihr Schlüssel hinkommt und wo ihr Auftrag. "
-    "Zwei Stellen, sonst nichts.")
+    + h2("Der eine Satz, den du nicht vergessen darfst")
+    # 🚨 Hier stand bis zum 04.11.2026 eine Vorlage zum Herunterladen. Raus,
+    #    weil Lektion 4.2 verspricht „Du installierst nichts weiter" — und eine
+    #    Vorlage zum Selberstarten bricht genau dieses Versprechen. Was bleibt,
+    #    ist das, was man nach dem Video nochmal nachlesen will.
+    + p("Beim Einrichten entsteht ein Zugangsschlüssel. Er gehört in die Datei, "
+        "die sie dafür anlegt — nie in ein Dokument, nie in eine Nachricht.", 36)
+    + p("Sie macht das von selbst richtig. Du musst es nur einmal gesehen haben, "
+        "damit du es wiedererkennst.", 30, GEDAEMPFT)
+    + beilage("Der Auftrag zum Kopieren und die vier Schritte zum Nachlesen"),
+    "Das ist die einzige Stelle, an der du streng bist. Sag den Grund NICHT — "
+    "der kommt in Modul 10. Sag nur, dass es die wichtigste Angewohnheit im "
+    "ganzen Kurs ist.")
 
 F["l63-weiter"] = weiter("l63-weiter", "Als Nächstes",
     "Dass er morgens von selbst schreibt",
@@ -161,11 +243,15 @@ F["l65-gruende"] = folie("l65-gruende",
     eyebrow("Lektion 6.5")
     + h2("Wo du nachschaust")
     + reihe([
-        karte("1 · Der Wecker", ["Ist der Zeitplan überhaupt aktiv?",
+        # 🚨 In einer Karte ist nur ein Drittel Breite. „Ist der Zeitplan
+        #    überhaupt aktiv?" und „Er lief, aber er ist unterwegs gestolpert."
+        #    kippten zwischen den Schriften von zwei auf eine Zeile und
+        #    liefen dadurch aus der Karte heraus. Kurz ist hier Pflicht.
+        karte("1 · Der Wecker", ["Ist der Zeitplan aktiv?",
                                  "Am häufigsten, und am schnellsten geprüft."]),
         karte("2 · Der Schlüssel", ["Abgelaufen oder beim Umziehen nicht mitgekommen.",
                                     "Steht dann so im Protokoll."], ORANGE),
-        karte("3 · Der Auftrag", ["Er lief, aber er ist unterwegs gestolpert.",
+        karte("3 · Der Auftrag", ["Er ist unterwegs gestolpert.",
                                   "Auch das steht im Protokoll."]),
       ]),
     "Zeig, wo bei dir das Protokoll steht. Dass man dort nachlesen kann, was passiert "
@@ -221,8 +307,8 @@ F["l66-weiter"] = folie("l66-weiter",
 
 ORDER = ["cover",
  "l61-titel","l61-drei","l61-weiter",
- "l62-titel","l62-vier","l62-gemein","l62-weiter",
- "l63-titel","l63-schritte","l63-geruest","l63-weiter",
+ "l62-titel","l62-drei","l62-gemein","l62-weiter",
+ "l63-titel","l63-schritte","l63-botvater","l63-reden","l63-gefuehrt","l63-geruest","l63-weiter",
  "l64-titel","l64-wege","l64-zeit","l64-weiter",
  "l65-titel","l65-gruende","l65-fragen",
  "l66-titel","l66-bilanz","l66-checkliste","l66-weiter"]
@@ -230,7 +316,7 @@ ORDER = ["cover",
 SECTIONS = {
  "auftakt": {"description": "Worum es in Modul 6 geht.", "start": "cover"},
  "l61": {"description": "Lektion 6.1 — der Unterschied zwischen Skill und Bot.", "start": "l61-titel"},
- "l62": {"description": "Lektion 6.2 — vier Bots, die bei Patricia laufen.", "start": "l62-titel"},
+ "l62": {"description": "Lektion 6.2 — drei Bots, die bei Patricia laufen.", "start": "l62-titel"},
  "l63": {"description": "Lektion 6.3 — den ersten Bot bauen.", "start": "l63-titel"},
  "l64": {"description": "Lektion 6.4 — Zeitplan und Kosten.", "start": "l64-titel"},
  "l65": {"description": "Lektion 6.5 — Fehlersuche, wenn nichts kommt.", "start": "l65-titel"},

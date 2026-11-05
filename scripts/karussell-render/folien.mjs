@@ -1,16 +1,17 @@
 /**
  * Rendert Karussell-Folien (1080x1350) aus einer JSON-Definition.
- *   node folien.mjs <definition.json> <ausgabe-ordner>
+ *   node folien.mjs <definition.json> <ausgabe-ordner> [--farbe=mlb_dark|mlb_light|mlb_teal]
+ * Hat die Definition `slides`, zeichnet die Master-Vorlage (master-zeichner.js), wie im Cockpit.
  * Bildpfade in der Definition sind relativ zum Ordner der Definition.
  * Doku: siehe CLAUDE.md, Abschnitt Karussell-Render-Pipeline.
  */
 import puppeteer from 'puppeteer';
-import { readFileSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, unlinkSync, mkdirSync } from 'fs';
 import { dirname, resolve, join } from 'path';
-import { pathToFileURL } from 'url';
+import { pathToFileURL, fileURLToPath } from 'url';
 
 const [defPfad, ausgabe] = process.argv.slice(2);
-if (!defPfad || !ausgabe) { console.error('Aufruf: node folien.mjs <def.json> <ordner>'); process.exit(1); }
+if (!defPfad || !ausgabe) { console.error('Aufruf: node folien.mjs <def.json> <ordner> [--farbe=mlb_dark|mlb_light|mlb_teal]'); process.exit(1); }
 
 const def = JSON.parse(readFileSync(defPfad, 'utf8'));
 const basis = dirname(resolve(defPfad));
@@ -136,7 +137,42 @@ h1.hook{font-family:'Philosopher',serif;font-size:88px;line-height:1.08;font-wei
 .biozeile{font-size:33px;line-height:1.46}
 .biozeile em{font-style:normal;color:${F.orange};font-weight:600}
 .biolink{font-size:33px;color:#2d4fd6;margin-top:10px;font-weight:600}
+
 `;
+
+if (def.slides) {
+  // Master-Vorlage: derselbe Zeichner wie im Cockpit
+  const farbe = process.argv.find(a => a.startsWith('--farbe='))?.slice(8);
+  const car = { ...def, brand: farbe || def.brand || 'mlb_dark' };
+  const assets = new URL('../../outputs/cockpit/assets/', import.meta.url).href;
+  const b = await puppeteer.launch({ headless: 'new', args: ['--allow-file-access-from-files'] });
+  const p = await b.newPage();
+  p.on('pageerror', e => { console.error('SEITENFEHLER:', e.message); process.exitCode = 1; });
+  const seite = join(basis, '_master.html');
+  writeFileSync(seite, `<!doctype html><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet"><body>`);
+  await p.goto(pathToFileURL(seite).href, { waitUntil: 'networkidle0' });
+  await p.addScriptTag({ path: fileURLToPath(new URL('./master-zeichner.js', import.meta.url)) });
+  await p.evaluate(a => { MASTER.basis = a; }, assets);
+  const lead = await p.evaluate(c => MASTER.istLead(c), car);
+  if (car.brand === 'mlb_teal' && lead && !def.reichweite) {
+    console.error('Petrol ist bei Lead-Posts verboten. Nimm mlb_dark oder mlb_light oder setze "reichweite": true.');
+    await b.close(); unlinkSync(seite); process.exit(1);
+  }
+  for (let i = 0; i < car.slides.length; i++) {
+    const url = await p.evaluate((c, k) => new Promise(ok => {
+      const cv = document.createElement('canvas');
+      MASTER.bereit(c.slides[k], foto => {
+        MASTER.zeichne(cv, c.slides[k], c, k, c.slides.length, foto);
+        ok(cv.toDataURL('image/png'));
+      });
+    }), car, i);
+    const n = String(i + 1).padStart(2, '0');
+    writeFileSync(join(ausgabe, `${n}.png`), Buffer.from(url.split(',')[1], 'base64'));
+  }
+  await b.close(); unlinkSync(seite);
+  console.log(`${car.slides.length} Folien -> ${ausgabe}`);
+  process.exit(process.exitCode || 0);
+}
 
 const html = `<!doctype html><html lang="de"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">

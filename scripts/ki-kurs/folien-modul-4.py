@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Folien fuer Modul 4 — Claude Code einrichten.
+Folien für Modul 4 — Claude Code einrichten.
 
     python scripts/ki-kurs/folien-modul-4.py <zielordner>
 """

@@ -620,10 +620,12 @@ nie** (Patricia, 17.10.), Firmenliste immer mit doTERRA, Kundschaft der Networke
 „Kundinnen“, ihre Zahlen nicht übernehmen. Vorlage: `outputs/content/KW43/julia-nachbau.md`
 + `scripts/content/kw43-brolls.py`.
 
-🚨 **Die wöchentlichen `outputs/marktrecherche/KW*-*.md` sind kein Beleg.** Alle 46 Läufe
-bis KW40 melden „Reddit-Posts gescannt: 0“ — die Painpoints darin hat die KI aus
-„generischen Patterns“ geschrieben. Als Quelle zählen nur echte Zitate mit Fundort und die
-gemessenen Zahlen aus `…-hook-markt-analyse.md` (gefunden 04.10.2026).
+🚨 **Die wöchentlichen `outputs/marktrecherche/KW*-*.md` sind kein Beleg.** Nachgemessen am
+04.11.2026: **alle 50 Dateien** (KW18–KW42) melden „Reddit-Posts gescannt: 0“, und in keiner
+steht ein Link auf einen echten Beitrag. Sie tragen seitdem oben eine Marke. Als Quelle zählen
+nur **echte Zitate mit Fundort** und die **gemessenen Zahlen** aus `…-hook-markt-analyse.md`
+und dem Markt-Radar. Der Generator ist tot (letzter Lauf 16.10.2026) und wird nicht ersetzt —
+dieser Schritt hier ist der Ersatz.
 
 Ablage: `outputs/content/KW[NN]/markt.md` — beim zweiten Lauf **überschreiben**.
 
@@ -921,6 +923,7 @@ Typ 4: so lang wie die Haltung braucht.
 
 - Cover im **ABAB-Rhythmus**: Vorlage ↔ Foto abwechselnd, Farbe rotieren
 - **Kein Voll-Petrol-Cover bei Lead-Posts** mit Keyword-CTA
+- **Karussells entstehen aus der Master-Vorlage** (`context/karussell-framework.md`, Abschnitt „Master-Vorlage“): je Beitrag `brand` `mlb_dark`, `mlb_light` oder `mlb_teal` wählen, nie zweimal dieselbe Farbe hintereinander
 - Ist Patricia auf dem Foto: Gesicht und Hauptmotiv komplett frei
 - **Keine fremden Gesichter im Bild** — Gruppenfotos an Wänden, Kinder, Teamfotos
 - **Keine KI-Bilder.** Nur Vorlagen und echte Fotos.
@@ -1123,6 +1126,11 @@ per `Artifact write_db` — alle drei Formate, jedes **mit `datum`**, alle `text
 | `storys` | `name` · `datum` · `brand` · `frames[{id,layout,text,cta,optA,optB}]` · `textfrei` |
 
 **Ohne `datum` sortiert sich nichts in den Wochentag ein.**
+
+**Karussells als Master-Vorlage anlegen, auch im Automatik-Lauf:** `brand` ist die Farbe von Cover
+und letzter Folie, `slides` tragen die Layouts `m-titel` · `m-liste` · `m-text` · `m-auftrag` ·
+`m-aufruf`, Muster `outputs/karussells/master-vorlage/muster.json`. Das Cockpit zeichnet die Folien
+selbst, rendern ist hier nicht nötig. Patricia ändert dort Farbe, Foto und Text.
 
 🚨 **`typ` und `funnel` gegen die erlaubten Werte prüfen, bevor du schreibst.**
 Das Cockpit kennt genau diese und sonst nichts:

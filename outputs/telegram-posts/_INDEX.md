@@ -15,10 +15,6 @@ Auto-Index aller Files in `outputs/telegram-posts/`. Siehe [[_MOCs/MOC-Content-E
 - [[fruehling-2026-alle-beitraege]]
 - [[fruehling-2026-zusatz-enjoils]]
 
-### 📁 winter-2026
-
-- [[winter-2026-alle-beitraege]]
-
 ### 📁 herbst-2026
 
 - [[herbst-2026-alle-beitraege]]
@@ -26,3 +22,7 @@ Auto-Index aller Files in `outputs/telegram-posts/`. Siehe [[_MOCs/MOC-Content-E
 ### 📁 sommer-2026
 
 - [[sommer-2026-alle-beitraege]]
+
+### 📁 winter-2026
+
+- [[winter-2026-alle-beitraege]]

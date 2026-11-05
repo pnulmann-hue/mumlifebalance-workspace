@@ -45,6 +45,7 @@ Die Einstufung sagt, wie viel Bereinigung ein Skill braucht, bevor er das Haus v
 | `funnel` | Funnel-Stratege | Hängt komplett an meinen Zugängen und Listen-Nummern. |
 | `hooks` | Hook & Kundensprache | Enthält zugekauftes Kurswissen mehrerer Coaches und meine eigenen Testzahlen. |
 | `produkt` | Produkt-Entwickler | Enthält mein Umsatzziel, meine Datenbank-Kennungen und eine fremde Methodik namentlich. |
+| `ueberschrift` | Überschriften-Schreiber | Enthält zugekauftes Kurswissen und fremde Beispiel-Überschriften im Wortlaut. |
 | `wp` | Website-Helfer | Enthält meine Domain und braucht meinen Website-Zugang. |
 
 ## Nicht in dieser Liste

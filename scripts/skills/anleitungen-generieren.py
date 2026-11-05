@@ -57,6 +57,17 @@ add("hooks", "Hook & Kundensprache",
  "Mach mir zehn Hooks zum Thema ... für ...", "rot",
  "Enthält zugekauftes Kurswissen mehrerer Coaches und meine eigenen Testzahlen.")
 
+add("ueberschrift", "Überschriften-Schreiber",
+ "Schreibt die Hauptüberschrift deiner Verkaufsseite: im Imperativ, mit einer Zahl, mit dem Leben danach statt dem Kursinhalt und mit einem Bild, das neugierig macht. Prüft jede Überschrift, bevor sie zu dir kommt.",
+ ["Fünf Überschriften aus verschiedenen Blickwinkeln mit Vorzeile und Unterzeile", "Bestehende Überschrift prüfen und neu schreiben",
+  "Passende Hook-Fassungen und Betreffzeilen auf Wunsch"],
+ MARKE + ["business-info.md", "kern-painpoint.md"], [], ["Das Prüfskript scripts/cockpit/texte-pruefen.py"],
+ ["Die Beispiele im Skill durch deine eigenen Lieblings-Überschriften ersetzen",
+  "Das durchgerechnete Beispiel gegen eines deiner Angebote tauschen",
+  "Die Pfade zu Bauplan und Kontextdateien auf deinen Ordner setzen"],
+ "Schreib mir die Überschrift für meine Verkaufsseite zu ...", "rot",
+ "Enthält zugekauftes Kurswissen und fremde Beispiel-Überschriften im Wortlaut.")
+
 add("content", "Content-Maschine",
  "Schreibt den kompletten Content für eine Woche oder einen Monat — Marktcheck, Hooks, Reels, Karussells, Captions, Design-Bauplan und den passenden Story-Bogen. Liest deine Planung und baut alles darauf auf.",
  ["Marktcheck: was beschäftigt deine Zielgruppe gerade, mit Zitat und Quelle",

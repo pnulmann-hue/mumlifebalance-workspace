@@ -4,12 +4,13 @@ import { theme } from "./theme";
 import { Clip, Clipfolge, Zoom } from "./bausteine/Clipfolge";
 import { Hook, HookVariante } from "./bausteine/Hook";
 import { Untertitel, UntertitelVariante, Wort } from "./bausteine/Untertitel";
-import { Karte, Knallwort, Look } from "./bausteine/Einblendungen";
+import { Abschluss, Karte, Knallwort, Look } from "./bausteine/Einblendungen";
+import { Tafel, TafelDaten } from "./bausteine/Tafel";
 import { LAUT, Sound, TonEreignis, Tonspur } from "./bausteine/Ton";
 
 export type Einblendung = {
-  abSek: number; dauer: number; art: "knallwort" | "karte";
-  text?: string; unter?: string; zitat?: string; seite?: "links" | "rechts";
+  abSek: number; dauer: number; art: "knallwort" | "karte" | "abschluss";
+  text?: string; unter?: string; oben?: string; zitat?: string; seite?: "links" | "rechts";
   schilder?: { emoji?: string; wort: string }[]; sound?: Sound;
 };
 
@@ -21,6 +22,8 @@ export type ReelProps = {
   hookDauer?: number;
   betont: string[];
   einblendungen: Einblendung[];
+  /** Stehen neben dem Untertitel, nicht statt ihm. In grafik.json mit `ab`/`bis` als Wortfolge, vorschau.py rechnet die Zeiten. */
+  tafeln?: TafelDaten[];
   /** Varianten je Reel. Vorgabe B/B = Patricias Entscheid 06.10.2026 („klar Stil B“). */
   stil?: { hook?: HookVariante; untertitel?: UntertitelVariante; look?: boolean; hoehe?: number; zoom?: Zoom };
   /** welche Toene es gibt (setzt vorschau.py aus video/sounds/) */
@@ -32,7 +35,7 @@ export type ReelProps = {
 };
 
 export const Reel: React.FC<ReelProps> = ({
-  clips, woerter, hook, hookDauer = 4.2, betont, einblendungen, stil = {}, toene = [], nurText, nurEffekte,
+  clips, woerter, hook, hookDauer = 4.2, betont, einblendungen, tafeln = [], stil = {}, toene = [], nurText, nurEffekte,
 }) => {
   const { fps } = useVideoConfig();
   // Oberkante des Textes in Bildhoehe; 0.56 = unter dem Kinn. Je Reel anpassbar (stil.hoehe).
@@ -41,18 +44,26 @@ export const Reel: React.FC<ReelProps> = ({
     <AbsoluteFill style={{ backgroundColor: nurText ? "black" : theme.colors.bg }}>
       {nurText ? null : <Clipfolge clips={clips} stumm={nurEffekte} zoom={stil.zoom} />}
 
-      {nurText ? null : <Tonspur ereignisse={toeneBauen({ hook, hookDauer, einblendungen, clips, stil, toene, fps })} />}
+      {nurText ? null : <Tonspur ereignisse={toeneBauen({ hook, hookDauer, einblendungen, tafeln, clips, stil, toene, fps })} />}
 
       <Sequence durationInFrames={Math.round(hookDauer * fps)}>
         <Hook fein={hook.fein} kraeftig={hook.kraeftig} variante={stil.hook ?? "B"} hoehe={hoehe} />
       </Sequence>
 
       <Untertitel woerter={woerter} betont={betont} variante={stil.untertitel ?? "B"}
-        frei={einblendungen} abSek={hookDauer} hoehe={hoehe} />
+        frei={einblendungen} abSek={hookDauer} hoehe={hoehe} tafeln={tafeln} />
+
+      {tafeln.map((t, i) => (
+        <Sequence key={i} from={Math.round(t.abSek * fps)} durationInFrames={Math.round((t.bisSek - t.abSek) * fps)}>
+          <Tafel tafel={t} hoehe={hoehe} nurText={nurText} />
+        </Sequence>
+      ))}
 
       {einblendungen.map((e, i) => (
         <Sequence key={i} from={Math.round(e.abSek * fps)} durationInFrames={Math.round(e.dauer * fps)}>
-          {e.art === "knallwort"
+          {e.art === "abschluss"
+            ? <Abschluss oben={e.oben} text={e.text || ""} unter={e.unter} hoehe={hoehe} />
+            : e.art === "knallwort"
             ? <Knallwort text={e.text || ""} unter={e.unter} schilder={e.schilder} sound={e.sound} hoehe={hoehe} />
             : <Karte zitat={e.zitat || ""} seite={e.seite} sound={e.sound} />}
         </Sequence>
@@ -68,13 +79,13 @@ export const Reel: React.FC<ReelProps> = ({
  *  · intro   Frame 0, zum Erscheinen des Hooks (Patricia 06.10.2026: „kannst du da die
  *            startanimation einblenden? tiping passt ja nur, wenn was neu geschrieben wird")
  *  · typing  NUR wenn Text sichtbar Buchstabe fuer Buchstabe geschrieben wird (hook.sound = "typing")
- *  · pop     jede Einblendung (Knallwort, Karte) — etwas Neues erscheint
+ *  · pop     jede Einblendung (Knallwort, Karte, Abschluss) und jede neue Tafel-Zeile — etwas Neues erscheint
  *  · whoosh  an einem Clip-Wechsel, aber hoechstens alle 8 s und nie naeher als 2 s an einem
  *            anderen Ton (Patricia: „etwas zu viele whooshs" — vorher 7 in 36 s, jetzt 3)
  * Untertitel bekommen keinen Ton: ein Pop alle 0.3 s waere Dauerrauschen.
  */
-export const toeneBauen = ({ hook, hookDauer, einblendungen, clips, stil, toene, fps }: {
-  hook: ReelProps["hook"]; hookDauer: number; einblendungen: Einblendung[]; clips: Clip[];
+export const toeneBauen = ({ hook, hookDauer, einblendungen, tafeln = [], clips, stil, toene, fps }: {
+  hook: ReelProps["hook"]; hookDauer: number; einblendungen: Einblendung[]; tafeln?: TafelDaten[]; clips: Clip[];
   stil: NonNullable<ReelProps["stil"]>; toene: string[]; fps: number;
 }): TonEreignis[] => {
   const da = (r: string) => toene.includes(r);
@@ -85,6 +96,7 @@ export const toeneBauen = ({ hook, hookDauer, einblendungen, clips, stil, toene,
   if (hook.sound && hook.sound !== "intro") add(hook.sound, 0.2);
   else if (hook.intro !== false) add("intro", 0, Math.round(Math.min(2.5, hookDauer) * fps));
   for (const e of einblendungen) add(e.sound ?? "pop", e.abSek);
+  for (const t of tafeln) for (const z of t.zeilen) add("pop", z.abSek);
   const WHOOSH_ABSTAND = 8;   // s zwischen zwei Whooshs
   const TON_ABSTAND = 2;      // s zu jedem anderen Ton
   let letzter = -Infinity;

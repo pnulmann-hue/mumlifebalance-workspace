@@ -2,9 +2,10 @@ import React, { useMemo } from "react";
 import { AbsoluteFill, Sequence, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { theme } from "../theme";
 import { H, SCHATTEN, philosopher, sourceSans, ss } from "./schrift";
+import { TafelDaten, tafelHoehePx } from "./Tafel";
 
 export type Wort = { text: string; startMs: number; endMs: number };
-export type UntertitelVariante = "A" | "B" | "C";
+export type UntertitelVariante = "A" | "B" | "C" | "D";
 type Seite = { startMs: number; endMs: number; tokens: Wort[] };
 
 /**
@@ -13,6 +14,7 @@ type Seite = { startMs: number; endMs: number; tokens: Wort[] };
  *   A · Zwei Schriften — Seiten bis zwei Zeilen, betonte Woerter Source Sans Black orange
  *   B · Aktives Wort   — 2–3 Woerter, das gerade gesprochene leuchtet orange
  *   C · Balken         — dunkler Balken, ruhige Schrift, 3–4 Woerter
+ *   D · Serifen-Wort   — 2–3 Woerter Source Sans, je Seite EIN Wort gross in Philosopher, eine Zeile
  *
  * Gemeinsam: pausiert, solange eine Einblendung steht (nie zwei Texte uebereinander),
  * startet erst nach dem Hook, Umbruch nur zwischen Woertern (Flex, nie inline).
@@ -26,6 +28,20 @@ const ZEILE_MAX = 1080 * 0.86;
 
 const rein = (w: string) => w.toLowerCase().replace(/[^a-zäöüß]/g, "");
 const istBetont = (w: string, betont: string[]) => betont.some((b) => rein(w) === rein(b));
+
+/** Variante D: betontes Wort aus `betont`, sonst das laengste Hauptwort (Grossbuchstabe, nicht am Seitenanfang). */
+const serifenWort = (tokens: Wort[], betont: string[]): number => {
+  const treffer = tokens.findIndex((t) => istBetont(t.text.trim(), betont));
+  if (treffer >= 0) return treffer;
+  let best = -1;
+  let laenge = 4;
+  tokens.forEach((t, i) => {
+    const w = t.text.trim();
+    const n = rein(w).length;
+    if (/^[A-ZÄÖÜ]/.test(w) && n > laenge && (i > 0 || n >= 7)) { best = i; laenge = n; }
+  });
+  return best;
+};
 
 const seitenA = (woerter: Wort[], betont: string[]): Seite[] => {
   const seiten: Seite[] = [];
@@ -63,10 +79,12 @@ const seitenFest = (woerter: Wort[], max: number): Seite[] => {
 export const Untertitel: React.FC<{
   woerter: Wort[]; betont: string[]; variante?: UntertitelVariante;
   frei: { abSek: number; dauer: number }[]; abSek: number; hoehe?: number;
-}> = ({ woerter, betont, variante = "A", frei, abSek, hoehe = 0.56 }) => {
+  /** Steht eine Tafel, rutscht der Untertitel direkt darunter (Tafel und Untertitel laufen zusammen). */
+  tafeln?: TafelDaten[];
+}> = ({ woerter, betont, variante = "A", frei, abSek, hoehe = 0.56, tafeln = [] }) => {
   const { fps } = useVideoConfig();
   const seiten = useMemo(
-    () => (variante === "A" ? seitenA(woerter, betont) : seitenFest(woerter, variante === "B" ? 3 : 4)),
+    () => (variante === "A" ? seitenA(woerter, betont) : seitenFest(woerter, variante === "C" ? 4 : 3)),
     [woerter, betont, variante],
   );
   const f = (ms: number) => Math.round((ms / 1000) * fps);
@@ -81,9 +99,11 @@ export const Untertitel: React.FC<{
         const ende = naechste ? f(naechste.startMs) : f(s.endMs) + fps;
         if (ende <= ab) return null;
         const von = Math.max(f(s.startMs), ab);
+        const tafel = tafeln.find((t) => startSek < t.bisSek && endeSek > t.abSek);
+        const seitenHoehe = tafel ? hoehe + (tafelHoehePx(tafel) + 18) / H : hoehe;
         return (
           <Sequence key={i} from={von} durationInFrames={Math.max(ende - von, 1)}>
-            <SeiteBild seite={s} betont={betont} variante={variante} hoehe={hoehe} versatzMs={von * 1000 / fps} />
+            <SeiteBild seite={s} betont={betont} variante={variante} hoehe={seitenHoehe} versatzMs={von * 1000 / fps} />
           </Sequence>
         );
       })}
@@ -111,6 +131,26 @@ const SeiteBild: React.FC<{ seite: Seite; betont: string[]; variante: Untertitel
         <div style={{ ...zeile, width: "auto", maxWidth: "86%", background: "rgba(12,28,48,0.72)", borderRadius: 16, padding: "10px 26px 14px" }}>
           {seite.tokens.map((t, i) => (
             <span key={i} style={{ fontFamily: sourceSans.fontFamily, fontWeight: 600, fontSize: 64, lineHeight: 1.15, color: theme.colors.text }}>
+              {ss(t.text.trim())}
+            </span>
+          ))}
+        </div>
+      </AbsoluteFill>
+    );
+  }
+
+  if (variante === "D") {
+    const serif = serifenWort(seite.tokens, betont);
+    // Eine Zeile: Breite gerechnet, zu Langes wird kleiner statt umzubrechen.
+    const breite = seite.tokens.reduce((n, t, i) => n + ss(t.text.trim()).length * (i === serif ? 46 : 37) + 22, 0);
+    const k = Math.min(1, (1080 * 0.88) / breite);
+    return (
+      <AbsoluteFill style={rahmen}>
+        <div style={{ ...zeile, flexWrap: "nowrap", width: "auto", columnGap: 22 * k, whiteSpace: "nowrap", textShadow: SCHATTEN }}>
+          {seite.tokens.map((t, i) => (
+            <span key={i} style={i === serif
+              ? { fontFamily: philosopher.fontFamily, fontWeight: 400, fontSize: 96 * k, lineHeight: 1.1, color: theme.colors.text }
+              : { fontFamily: sourceSans.fontFamily, fontWeight: 800, fontSize: 68 * k, lineHeight: 1.1, color: theme.colors.text }}>
               {ss(t.text.trim())}
             </span>
           ))}

@@ -411,6 +411,11 @@ def main():
 
     print("  Suche Szenenwechsel …")
     zeiten = szenen(video, meta["dauer"], args.schwelle)
+    # Sprechvideo vor gleichem Hintergrund: Schnitte schlagen nur mit rund 0.1 aus (islazul.ch, 04.11.2026:
+    # 54 s, rund 27 Schnitte, bei 0.30 wurde genau 1 Einstellung gemeldet). Dann fein nachmessen.
+    if args.schwelle >= 0.15 and meta["dauer"] / len(zeiten) > 12:
+        zeiten = szenen(video, meta["dauer"], 0.085)
+        print("    kaum Schnitte bei grober Schwelle, fein nachgemessen (0.085)")
     print(f"    {len(zeiten)} Einstellungen")
 
     print("  Ziehe Standbilder …")

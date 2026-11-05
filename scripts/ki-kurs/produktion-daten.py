@@ -19,6 +19,7 @@ Quellen (alle im Workspace, nichts von Hand gepflegt):
    - Beilage: die PDF-Datei liegt da oder nicht
    - Video: weiss das Skript NICHT. Das hakt Patricia selbst ab (`db`).
 """
+import importlib.util
 import json
 import pathlib
 import re
@@ -180,6 +181,21 @@ def beilagen_je_lektion():
     return raus
 
 
+def ohne_kommentare(t):
+    """HTML-Kommentare raus — sie sind Notizen an mich, nie Kundentext.
+
+    🚨 Am 04.11.2026 ist eine Begruendung als `<!-- … -->` in einem Lektionstext
+       gelandet und stand damit in dem Block, den Patricia mit einem Klick nach
+       ThriveCart kopiert. In der Vorschau sah man sie nicht (der Browser
+       versteckt Kommentare), im kopierten Text waere sie mitgegangen.
+       Deshalb wird hier geschnitten, nicht an der einen Stelle aufgeraeumt:
+       eine Notiz im Quelltext ist etwas Normales, sie darf nur nicht
+       hinausgehen."""
+    t = re.sub(r"<!--.*?-->", "", t, flags=re.S)
+    # Doppelte Leerzeilen, die der Schnitt hinterlaesst, wieder zusammenziehen.
+    return re.sub(r"\n{3,}", "\n\n", t).strip()
+
+
 def plattform_texte():
     """Modultext und Lektionstext — das, was in ThriveCart unter dem Video steht.
 
@@ -203,6 +219,7 @@ def plattform_texte():
                              block, re.M | re.S):
             inhalt = z.group(3).strip()
             inhalt = re.split(r"^---\s*$", inhalt, maxsplit=1, flags=re.M)[0].strip()
+            inhalt = ohne_kommentare(inhalt)
             if inhalt:
                 lek[z.group(1)] = inhalt
 
@@ -228,20 +245,24 @@ def videos():
     if not quelle.exists():
         print("  ⚠ keine videos-roh.json — die Seite zeigt dann keine Videos")
         return {}
-    # 🚨 `vimeo-transkripte.py` hat einen Bindestrich im Namen und lässt sich
-    #    nicht importieren. Die Tabelle wird deshalb aus der Datei gelesen —
-    #    eine zweite Kopie hier würde beim nächsten Video auseinanderlaufen.
-    t = (pathlib.Path(__file__).resolve().parent / "vimeo-transkripte.py") \
-        .read_text(encoding="utf-8")
-    m = re.search(r"^LEKTION = \{(.+?)^\}", t, re.M | re.S)
-    if not m:
-        sys.exit("🚨 LEKTION in vimeo-transkripte.py nicht gefunden")
-    zuordnung = dict(re.findall(r'"([^"]+)":\s*"([\d.]+\w?)"', m.group(1)))
+    # 🚨 Die Zuordnung ist seit dem 04.11.2026 nicht mehr nur eine Tabelle,
+    #    sondern auch eine Regel: ab Modul 5 steht die Lektionsnummer vorne im
+    #    Vimeo-Namen. Darum wird `lektion_von` aufgerufen statt `LEKTION`
+    #    ausgelesen — sonst fehlt genau das, was neu dazukommt.
+    #    Der Bindestrich im Dateinamen verhindert nur das normale `import`;
+    #    über `importlib` geht es. Eine zweite Kopie hier würde beim nächsten
+    #    Video auseinanderlaufen.
+    pfad = pathlib.Path(__file__).resolve().parent / "vimeo-transkripte.py"
+    spec = importlib.util.spec_from_file_location("vimeo_transkripte", pfad)
+    if spec is None or spec.loader is None:
+        sys.exit("🚨 vimeo-transkripte.py nicht ladbar")
+    vt = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(vt)
 
     daten = json.loads(quelle.read_text(encoding="utf-8"))
     raus = {}
     for nummer, hash_, name, dauer in daten["videos"]:
-        lek = zuordnung.get(name)
+        lek = vt.lektion_von(name)
         if not lek:
             print("  ⚠ Video „%s“ hat keine Lektion — in LEKTION nachtragen" % name)
             continue
@@ -352,7 +373,7 @@ def anhaenge_aus_drive():
               / "beilagen-drive.json")
     if not quelle.exists():
         print("  ⚠ keine beilagen-drive.json — die Seite zeigt keine Beilagen-Links")
-        return {}, ""
+        return {}, {"grundgeruest_zip": "", "content_maschinen_zip": ""}
     d = json.loads(quelle.read_text(encoding="utf-8"))
     # 🚨 Ein Google Doc hat eine andere Adresse als eine hochgeladene Datei.
     #    Mit `/file/d/<id>/view` antwortet Drive bei einem Doc mit einer
@@ -361,12 +382,21 @@ def anhaenge_aus_drive():
     adr = {k: ("https://docs.google.com/document/d/%s/edit" % v if k in docs
                else "https://drive.google.com/file/d/%s/view" % v)
            for k, v in d["dateien"].items()}
-    zip_link = ("https://drive.google.com/file/d/%s/view" % d["grundgeruest_zip"]
-                if d.get("grundgeruest_zip") else "")
-    return adr, zip_link
+    # 🚨 Zwei Beilagen sind ZIPs und stehen deshalb NEBEN `dateien`, nicht
+    #    darin: das Arbeitsplatz-Grundgeruest (4.3) und die Content-Maschinen
+    #    (7.1). Beide gehen denselben Weg — einmal in den Drive-Kursordner
+    #    ziehen, dann die Kennung hier eintragen. Fehlt sie, bleibt der Link
+    #    leer und die Seite sagt ehrlich „fehlt" statt einen toten Link zu
+    #    zeigen.
+    zips = {name: ("https://drive.google.com/file/d/%s/view" % d[name]
+                   if d.get(name) else "")
+            for name in ("grundgeruest_zip", "content_maschinen_zip")}
+    return adr, zips
 
 
-ANHAENGE, GRUNDGERUEST_LINK = anhaenge_aus_drive()
+ANHAENGE, ZIPS = anhaenge_aus_drive()
+GRUNDGERUEST_LINK = ZIPS["grundgeruest_zip"]
+MASCHINEN_LINK = ZIPS["content_maschinen_zip"]
 DRIVE_ORDNER = "https://drive.google.com/drive/folders/1FzEiDo-R-qi9KXuN4tYRqydd9SkpZQXq"
 
 # Welcher Beilagen-Dateiname steckt hinter welchem Text der Download-Tabelle.
@@ -383,11 +413,30 @@ ZUORDNUNG = [
     # 22.10.2026: die gefuellte Liste aus Drive, nicht die leere Vorlage.
     ("KI-Blackliste", "ki-blackliste"),
     ("Cowork-Bot", "cowork-erster-bot"),
+    # 04.11.2026: die Beilage zu 6.3. „der Auftrag" ist das Stichwort aus der
+    # Download-Tabelle — eindeutig, weil sonst nirgends „Auftrag und die vier"
+    # steht.
+    ("Auftrag und die vier Schritte", "bot-erster"),
+    # 04.11.2026: die Beilagen zu 7.3 und 7.4. Die Stichwoerter stehen in
+    # der Download-Tabelle je genau einmal — gegengeprueft, weil ein zu
+    # kurzes Stichwort hier zwei Lektionen denselben Link gibt.
+    ("erstes Karussell", "karussell-erstes"),
+    ("erster Rohschnitt", "reel-erstes"),
 ]
 
 
 def anhang_zu(text, lektion):
     """Findet den Anhang zu einer Zeile der Download-Tabelle."""
+    # 🚨 Das Grundgeruest ist ein ZIP und steht deshalb nicht in `dateien`,
+    #    sondern als eigener Eintrag. Ohne diese Zeile stand der Chip bei 4.3
+    #    auf „fehlt", obwohl die Datei in Drive liegt — der Link war nur weiter
+    #    unten unter „Dokumente" zu finden (04.11.2026).
+    # 🚨 „Grundgerüst" und nicht „Gerüst": sonst bekommen „Skill-Gerüst" (5.8)
+    #    und „Bot-Gerüst" (6.3) denselben ZIP-Link.
+    if "grundgerüst" in text.lower() and GRUNDGERUEST_LINK:
+        return GRUNDGERUEST_LINK
+    if "vier befehle" in text.lower() and MASCHINEN_LINK:
+        return MASCHINEN_LINK
     for stueck, name in ZUORDNUNG:
         if name and stueck.lower() in text.lower():
             return ANHAENGE.get(name)
@@ -404,6 +453,18 @@ DOKUMENTE = [
      GRUNDGERUEST_LINK or "Downloads/Mein-Business-Grundgeruest.zip",
      "Fünf Ordner mit je einer Liesmich, CLAUDE.md, vier Befehle. "
      "Liegt in Drive. Neu bauen: python scripts/ki-kurs/grundgeruest-bauen.py --zip"),
+    # 🚨 Hier stand am 04.11.2026 kurz das Bot-Geruest als ZIP. Wieder raus:
+    #    Lektion 4.2 verspricht „Du installierst nichts weiter", und eine
+    #    startbare Vorlage braucht eine Laufzeit, die im Kurs niemand
+    #    einrichtet. 6.3 geht stattdessen ueber den Chat. Was als Beilage
+    #    bleibt, ist ein Google Doc mit dem Auftragssatz und den vier
+    #    Schritten — noch zu bauen.
+    ("Content-Maschinen (ZIP für Lektion 7.1)",
+     MASCHINEN_LINK
+     or "outputs/produkte/ki-treppe/content-maschinen/Content-Maschinen.zip",
+     "Die vier Befehle caption · story · karussell · reels, leer, plus drei "
+     "leere Wissensdateien. Neu bauen: "
+     "python scripts/ki-kurs/content-maschinen-bauen.py --zip"),
     ("Inhaltsverzeichnis", "outputs/produkte/ki-treppe/03-inhaltsverzeichnis.md",
      "Alle Kapitel und Lektionen mit den Dreh-Notizen — die Quelle dieser Seite"),
     ("Lektionstexte für die Plattform", "outputs/produkte/ki-treppe/04-kursplattform-texte.md",

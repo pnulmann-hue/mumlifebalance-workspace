@@ -56,9 +56,18 @@ function seiteBauen(cockpitHtml, ziel) {
     teil("function wrap(ctx, text, maxW)", "  }"),
     teil("function fitLines(", "  }"),
     teil("function drawCover(", "  }"),
+    fs.readFileSync(path.join(REPO, "scripts", "karussell-render", "master-zeichner.js"), "utf8"),
+    `MASTER.basis = ${JSON.stringify(pathToFileURL(path.join(REPO, "outputs", "cockpit", "assets")).href + "/")};`,
     teil("function renderSlide(", "  }"),
-    `window.folieAlsJpeg = function (car, i) {
+    `window.folieAlsJpeg = async function (car, i) {
        var cv = document.createElement("canvas");
+       if (MASTER.ist(car.slides[i])) {
+         // Fotos reichen bis an den Rand, die Randpruefung gilt hier nicht
+         await new Promise(function (ok) { renderSlide(cv, car.slides[i], car, i, car.slides.length, ok); });
+         var qm = 0.92, om = cv.toDataURL("image/jpeg", qm);
+         while (om.length > ${MAX} && qm > 0.4) { qm -= 0.06; om = cv.toDataURL("image/jpeg", qm); }
+         return { url: om, rand: 0 };
+       }
        renderSlide(cv, car.slides[i], car, i, car.slides.length);
 
        // 🚨 Randpruefung. wrap() bricht ein einzelnes langes Wort NIE um, und
@@ -81,7 +90,7 @@ function seiteBauen(cockpitHtml, ziel) {
        return { url: out, rand: treffer };
      };`,
   ].join("\n\n");
-  fs.writeFileSync(ziel, '<!doctype html><meta charset="utf-8"><body><script>\n' + js + "\n</script>");
+  fs.writeFileSync(ziel, '<!doctype html><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet"><body><script>\n' + js + "\n</script>");
   return ziel;
 }
 
@@ -93,7 +102,7 @@ if (!cockpit || !daten || !zielOrdner) {
 const seite = seiteBauen(cockpit, path.join(path.dirname(daten), "_rendern.html"));
 const karussells = JSON.parse(fs.readFileSync(daten, "utf8"));
 
-const browser = await puppeteer.launch({ headless: "new" });
+const browser = await puppeteer.launch({ headless: "new", args: ["--allow-file-access-from-files"] });
 const page = await browser.newPage();
 let fehler = 0;
 page.on("pageerror", (e) => { console.error("SEITENFEHLER:", e.message); fehler++; });
