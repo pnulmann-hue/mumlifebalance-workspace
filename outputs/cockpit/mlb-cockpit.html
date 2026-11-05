@@ -2402,6 +2402,18 @@
   .df-text { white-space: pre-wrap; margin: 8px 0 0; font-size: 14px; overflow-wrap: anywhere; }
   @media (max-width: 560px) { .df-beitrag { grid-template-columns: minmax(0, 1fr); } .df-vorschau iframe { height: 520px; } }
   /* DF-CSS-ENDE */
+  /* Fürs Team (patch-teamimpuls.py) */
+  .tm { margin-bottom: 16px; border-left: 5px solid #12828c; }
+  .tm-titel { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .tm-titel h2 { margin: 0; }
+  .tm-karte { border-top: 1px solid var(--line); padding: 12px 0; }
+  .tm-karte.raus { opacity: .75; }
+  .tm-kopf { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+  .tm-art { font-size: 12px; font-weight: 600; color: #fff; background: #12828c; border-radius: 99px; padding: 2px 9px; }
+  .tm-dich { margin: 0 0 8px; }
+  .tm-karte textarea { width: 100%; resize: vertical; margin-bottom: 8px; }
+  .tm-alt { white-space: pre-wrap; font-size: 14px; margin: 8px 0 0; }
+  .tm-aelter { margin-top: 8px; }
 </style>
 
 <div class="shell">
@@ -6167,6 +6179,7 @@ var MASTER = (function () {
   }
   // Fällig ab Sonntag, solange in den letzten sechs Tagen keine verschickt wurde.
   function tfFaellig() {
+    return false; // seit 05.11.: ersetzt durch „Fürs Team“ (Mo Aufgabe, Do Impuls)
     var F = dtRising.funke || {};
     var letzte = (F.verlauf || []).slice(-1)[0];
     var heute = trHeute();
@@ -6185,8 +6198,8 @@ var MASTER = (function () {
     var h = '<details class="panel tf"' + (tfFaellig() || E.gruppe ? " open" : "") + '>' +
       '<summary><span class="tf-titel">✨ Team-Funke</span>' +
       '<span class="note">' + (tfFaellig() ? "für diese Woche fällig" :
-        (letzte ? "zuletzt am " + esc(dtDatum(letzte.datum)) : "die Wochennachricht für dein Team")) + '</span></summary>' +
-      '<p class="note">Einmal die Woche, am besten sonntags: Du trägst ein, was gelaufen ist, ich schreibe die Nachricht für eure Gruppe. Verschickt wird nichts, das machst du selbst.</p>' +
+        (letzte ? "zuletzt am " + esc(dtDatum(letzte.datum)) : "Erfolge feiern und persönliche Nachrichten")) + '</span></summary>' +
+      '<p class="note">Wenn du etwas feiern oder jemanden persönlich anschreiben willst: Du trägst ein, was gelaufen ist, ich schreibe die Nachricht. Verschickt wird nichts, das machst du selbst.</p>' +
       '<label class="tf-feld"><span>Was lief diese Woche gut?</span>' +
       '<textarea data-tf="erfolge" rows="3" placeholder="Mit Vornamen, z. B.: zwei Kundinnen neu im Treueprogramm, ein erster Öle-Abend">' + esc(E.erfolge) + '</textarea></label>' +
       '<label class="tf-feld"><span>Aktion oder Termin der Woche (optional)</span>' +
@@ -6420,7 +6433,9 @@ var MASTER = (function () {
     }
     if (!dfDocs) dfHolen(function () { if (activeTab === "uebersicht") render(); });
     if (dfOffen().length) P.push({ art: "doterra", titel: "doTERRA: " + dfOffen().length + " zur Freigabe", klein: "Newsletter oder Saison-Beiträge warten auf dein Ja.", gehe: "dtfreigaben", dringend: true });
-    if (tfFaellig()) P.push({ art: "doterra", titel: "Team-Funke für diese Woche", klein: "Die Wochennachricht an dein Team ist noch nicht raus.", gehe: "rising" });
+    tiImpulsOffen().forEach(function (x) {
+      P.push({ art: "doterra", titel: (x.art === "aufgabe" ? "Team-Aufgabe" : "Team-Impuls") + " schicken", klein: x.titel || "", gehe: "rising" });
+    });
     if (Number(heute.slice(8, 10)) >= 24) {
       var A = (dtRising.abschluss || {})[heute.slice(0, 7)] || {};
       var fertigAb = TR_ABSCHLUSS.filter(function (p) { return A[p.id]; }).length;
@@ -6682,6 +6697,101 @@ var MASTER = (function () {
   }
   /* DF-ENDE */
 
+  /* =========================================================
+     Fürs Team (05.11.2026) — zwei Nachrichten pro Woche an ihr doTERRA-Team
+     Patricia: „es kommen täglich so viele nachrichten in der gruppe, dass ich und mein team
+     die übersicht verloren haben was relevant ist … ich würde gerne meine teammitglieder
+     enger begleiten … vielleicht zwei impulse rsp. aufgaben?“
+     Montag eine Aufgabe, Donnerstag ein Impuls. Die Routine rise-to-lead legt sie in
+     doterra-wissen/team-impulse (items) und schickt sie Patricia per Telegram. Verschickt
+     wird nichts ans Team: sie liest, passt an, schickt selbst.
+     Ihre Änderungen und „verschickt“ stehen in daten/rising-leaders (gehört ihr):
+     impulse = { <id>: { text, verschickt } }
+     ========================================================= */
+  var tiImpulse = null, tiImpulsGeholt = false;
+
+  // Nur dieses eine Dokument: Mein Tisch soll nicht die ganze Öl-Sammlung laden.
+  function tiImpulsHolen() {
+    if (tiImpulsGeholt) return;
+    tiImpulsGeholt = true;
+    tiImpulse = lsGet("dt-impulse", null);
+    if (!db) return;
+    db.doc("doterra-wissen/team-impulse").get().then(function (d) {
+      if (!d.exists) return;
+      tiImpulse = tief(d.data()) || null;
+      lsSet("dt-impulse", tiImpulse);
+      if (activeTab === "uebersicht" || activeTab === "rising") render();
+    }).catch(function () {});
+  }
+
+  function tiImpulsStand(id) {
+    var I = dtRising.impulse || (dtRising.impulse = {});
+    return I[id] || (I[id] = {});
+  }
+  function tiImpulsListe() {
+    tiImpulsHolen();
+    return (tiImpulse && tiImpulse.items) ? tiImpulse.items.slice().sort(function (a, b) { return a.datum < b.datum ? 1 : -1; }) : [];
+  }
+  // Was gerade wartet: Tag erreicht, noch nicht verschickt, höchstens drei Tage alt.
+  function tiImpulsOffen() {
+    var heute = trHeute(), grenze = trVerschoben(heute, -3);
+    return tiImpulsListe().filter(function (x) {
+      return x.datum <= heute && x.datum >= grenze && !tiImpulsStand(x.id).verschickt;
+    });
+  }
+  function tiImpulsText(x) {
+    var s = tiImpulsStand(x.id);
+    return s.text != null ? s.text : (x.text || "");
+  }
+
+  function tiImpulsKarte(x) {
+    var s = tiImpulsStand(x.id);
+    return '<div class="tm-karte' + (s.verschickt ? " raus" : "") + '" id="impuls-' + esc(x.id) + '">' +
+      '<div class="tm-kopf"><span class="tm-art">' + (x.art === "aufgabe" ? "Aufgabe" : "Impuls") + '</span>' +
+      '<b>' + esc(x.titel || "") + '</b><span class="note">' + esc(dtDatum(x.datum)) + '</span></div>' +
+      (x.fuerDich ? '<p class="note tm-dich">Für dich: ' + esc(x.fuerDich) + '</p>' : "") +
+      (s.verschickt
+        ? '<details class="tm-text"><summary>Verschickt am ' + esc(dtDatum(s.verschickt)) + '</summary><p class="tm-alt">' + esc(tiImpulsText(x)) + '</p></details>'
+        : '<textarea data-tmtext="' + esc(x.id) + '" rows="9">' + esc(tiImpulsText(x)) + '</textarea>' +
+          '<div class="dt-knoepfe"><button class="btn primary" type="button" data-tmkopie="' + esc(x.id) + '">Kopieren</button>' +
+          '<button class="btn" type="button" data-tmraus="' + esc(x.id) + '">Hab ich verschickt</button></div>') +
+      '</div>';
+  }
+
+  function tiImpulsHtml() {
+    var L = tiImpulsListe();
+    if (!L.length) return "";
+    var offen = tiImpulsOffen();
+    var heute = trHeute();
+    var aktuell = L.filter(function (x) { return x.datum >= trVerschoben(heute, -3) && x.datum <= heute; });
+    var aelter = L.filter(function (x) { return aktuell.indexOf(x) < 0 && x.datum <= heute; });
+    var h = '<section class="panel tm"><div class="tm-titel"><h2>Fürs Team</h2>' +
+      '<span class="note">' + (offen.length ? "liegt bereit zum Schicken" : "alles verschickt") + '</span></div>' +
+      '<p class="note">Montag eine Aufgabe, Donnerstag ein Impuls, aus allem, was in den Rise-to-Lead-Gruppen wichtig war. Du schickst sie selbst.</p>' +
+      aktuell.map(tiImpulsKarte).join("");
+    if (aelter.length) {
+      h += '<details class="tm-aelter"><summary>' + aelter.length + ' frühere</summary>' + aelter.slice(0, 12).map(tiImpulsKarte).join("") + '</details>';
+    }
+    return h + '</section>';
+  }
+
+  function tiImpulsBinden(main) {
+    function finde(id) { return tiImpulsListe().filter(function (x) { return x.id === id; })[0]; }
+    main.querySelectorAll("[data-tmtext]").forEach(function (f) {
+      f.oninput = function () { tiImpulsStand(f.dataset.tmtext).text = f.value; dtRisingSpeichern(); };
+    });
+    main.querySelectorAll("[data-tmkopie]").forEach(function (b) {
+      b.onclick = function () { var x = finde(b.dataset.tmkopie); if (x) dtKopieren(tiImpulsText(x), b); };
+    });
+    main.querySelectorAll("[data-tmraus]").forEach(function (b) {
+      b.onclick = function () {
+        tiImpulsStand(b.dataset.tmraus).verschickt = trHeute();
+        dtRisingSpeichern(); render();
+        toast("Vermerkt. Der nächste kommt von selbst.");
+      };
+    });
+  }
+
   /* ---------- Rising Leaders: Aufträge + Beraterinnen ---------- */
   function renderRising(main) {
     var A = dtRising.auftraege || (dtRising.auftraege = []);
@@ -6715,7 +6825,7 @@ var MASTER = (function () {
           '<button class="btn ghost" type="button" data-weg="' + esc(v.id) + '">Verwerfen</button></div></div>';
       }).join("") + '</section>' : "";
 
-    var h = trHtml() + tfHtml() + eh + '<div class="page-head"><div><h1>Rising Leaders</h1>' +
+    var h = trHtml() + tiImpulsHtml() + tfHtml() + eh + '<div class="page-head"><div><h1>Rising Leaders</h1>' +
       '<p>Die Aufträge aus der Gruppe mit Frist zum Abhaken, und deine möglichen Beraterinnen vom ersten Gedanken bis eingearbeitet.</p></div></div>' +
       '<div class="cols"><section class="panel"><h2>Aufträge <span class="note">' + offen.length + ' offen</span></h2>' +
       '<div class="dt-neu"><input id="dt-atext" placeholder="Neuer Auftrag, z. B. 3 Gespräche über das Business führen" autocomplete="off">' +
@@ -6744,6 +6854,7 @@ var MASTER = (function () {
     main.innerHTML = h;
     trBinden(main);
     tfBinden(main);
+    tiImpulsBinden(main);
 
     function neuId(p) { return p + Date.now().toString(36) + Math.random().toString(36).slice(2, 5); }
     main.querySelectorAll("[data-ein]").forEach(function (b) {
