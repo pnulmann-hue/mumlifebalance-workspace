@@ -56,6 +56,30 @@ Werte aus `00-bauplan.md`. Live 11. und 12.11.2026, danach drei Tage Begleitung,
 | Tag 2 · Deine Seite | Aufzeichnung + Seitenvorlage + Anleitung Netlify |
 | Und jetzt? | Wie es weitergeht: Pitch Digitale Produktwelt, dazu Hinweis auf KI-Kurs und Mum Business Academy |
 
+### Text der Lektion „Willkommen“
+
+Die Links stehen nur im Kurs, die Werte `ZOOM_1`, `ZOOM_2` und `GRUPPE` liegen in `scripts/tool-workshop/.env`.
+
+> **Willkommen im Tool-Workshop**
+>
+> Schön, dass du dabei bist! In zwei Abenden baust du dein eigenes Gratis-Tool und die Seite, auf der sich die Leute dafür eintragen. Programmieren musst du dafür nichts.
+>
+> **Hier sehen wir uns**
+>
+> - Mittwoch, 11. November, 19:00 Uhr: Du baust dein Tool. [Zum Zoom]
+> - Donnerstag, 12. November, 19:00 Uhr: Du baust deine Seite. [Zum Zoom]
+> - 13. bis 15. November: Ich begleite dich in der WhatsApp-Gruppe, bis beides online ist.
+>
+> **Komm gern schon jetzt in die WhatsApp-Gruppe:** [Zur Gruppe]
+>
+> **Die Aufzeichnungen**
+>
+> Nach den beiden Abenden findest du hier im Kurs auch die Aufzeichnungen der Zooms. Falls du einmal nicht live dabei sein kannst, schaust du den Abend hier nach.
+>
+> Was du vorher noch vorbereitest, steht in deiner Willkommens-Mail. Ich freu mich auf dich!
+>
+> Patricia
+
 ## Auftrags-Vorlage für Claude (Beilage Tag 1)
 
 > Bau mir ein kleines Tool als Artifact. Es ist ein Gratis-Angebot für meine Instagram-Community.
