@@ -590,14 +590,14 @@ klickt.
 | | Wann | Warum |
 |---|---|---|
 | **Festes Datum** | Flash Sale an die Liste | alle haben dieselbe Endzeit, deshalb stimmt „heute 23:59“ in jeder Mail |
-| **Evergreen** | Sonderangebot nach dem Webinar oder in einer Automation | die Frist startet, wenn jemand die Kasse zum ersten Mal öffnet |
+| **Ab Eintritt** | Sonderangebot nach dem Webinar oder in einer Automation | jede Person hat ihre eigene Frist, sie startet beim Eintritt in die Automation |
 
-Deadline Funnel brauche ich dafür nicht (mein Entscheid vom 06.11.2026, zu teuer).
-Sein Vorteil wäre eine Frist ab Eintritt in die Automation und über alle Geräte. Der
-ThriveCart-Countdown merkt sich die Person nur im Browser, wer das Gerät wechselt,
-bekommt eine neue Frist. Das nehme ich in Kauf.
-
-🚨 Bei Evergreen darf in der Mail keine feste Uhrzeit stehen, sonst stimmt sie nicht.
+🚨 **Die Frist steckt im Mail-Link und startet nie beim ersten Öffnen** (mein Entscheid vom
+06.11.2026). Wenn in der Mail „3 Tage“ steht und sie an Tag 5 klickt, sieht sie den normalen
+Preis. Alles andere macht mich unglaubwürdig. Deshalb läuft „ab Eintritt“ über meinen eigenen
+Frist-Dienst, Einbau in `scripts/frist/README.md`, Deadline Funnel brauche ich nicht. Der
+Evergreen-Countdown von ThriveCart reicht dafür nicht, er startet beim ersten Öffnen der Kasse.
+In der Mail dieser Abläufe steht „3 Tage ab heute“ oder keine feste Uhrzeit.
 
 ---
 
