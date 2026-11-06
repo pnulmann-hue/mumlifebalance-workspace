@@ -580,9 +580,9 @@ klickt.
    ist, mit Countdown oder Banner „Nur für 2 Tage für CHF 249 statt CHF 333“.
 3. **Die Mails führen direkt auf diese Kasse, nicht auf die Landingpage.** Der
    Kassentext muss deshalb das Angebot allein tragen.
-4. **Deadline Funnel:** neue Kampagne je Angebot, nach Ablauf geht der Link auf die
-   normale Kasse. Den Code ins Tracking der ThriveCart-Kopie einfügen, die Leiste auf
-   der Seite prüfen, in den Mails den speziellen Link verwenden.
+4. **Countdown von ThriveCart, ohne Zusatzkosten:** In der Kopie unter Checkout das
+   Countdown-Element einfügen, Art wählen, Text und Farbe setzen und als Aktion bei
+   Ablauf die Weiterleitung auf die normale Kasse eintragen. Die Mails führen auf die Kopie.
 5. **Ablauf einmal durchspielen:** Preis in der Kasse prüfen und testen, dass man nach Ablauf wirklich beim normalen Preis landet. Eine Mail, die 199 verspricht, und eine Kasse, die 333 abbucht, ist schlimmer als keine Aktion.
 
 **Welche Art von Frist:**
@@ -590,7 +590,12 @@ klickt.
 | | Wann | Warum |
 |---|---|---|
 | **Festes Datum** | Flash Sale an die Liste | alle haben dieselbe Endzeit, deshalb stimmt „heute 23:59“ in jeder Mail |
-| **Evergreen** | Automation, zum Beispiel nach dem Webinar | jede Person bekommt ihre eigene Frist. In ActiveCampaign kommt ganz an den Anfang der Automation der Schritt Workflow → Webhook mit der URL aus Deadline Funnel, **bevor** sie aktiv wird, sonst rutschen Leute ohne Timer durch |
+| **Evergreen** | Sonderangebot nach dem Webinar oder in einer Automation | die Frist startet, wenn jemand die Kasse zum ersten Mal öffnet |
+
+Deadline Funnel brauche ich dafür nicht (mein Entscheid vom 06.11.2026, zu teuer).
+Sein Vorteil wäre eine Frist ab Eintritt in die Automation und über alle Geräte. Der
+ThriveCart-Countdown merkt sich die Person nur im Browser, wer das Gerät wechselt,
+bekommt eine neue Frist. Das nehme ich in Kauf.
 
 🚨 Bei Evergreen darf in der Mail keine feste Uhrzeit stehen, sonst stimmt sie nicht.
 
