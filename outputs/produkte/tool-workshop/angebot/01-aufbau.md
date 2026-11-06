@@ -76,7 +76,20 @@ Die Links stehen nur im Kurs, die Werte `ZOOM_1`, `ZOOM_2` und `GRUPPE` liegen i
 >
 > Nach den beiden Abenden findest du hier im Kurs auch die Aufzeichnungen der Zooms. Falls du einmal nicht live dabei sein kannst, schaust du den Abend hier nach.
 >
-> Was du vorher noch vorbereitest, steht in deiner Willkommens-Mail. Ich freu mich auf dich!
+> **Deine Vorbereitung**
+>
+> - Gratis-Konto auf claude.ai
+> - Gratis-Konto auf netlify.com
+> - Nischengenerator ausgefüllt: mlb-nischengenerator.vercel.app
+> - Dein Workbook, E-Book oder PDF bereit, oder ein paar Sätze dazu, was dein Tool können soll
+>
+> **So hilft dir die Gruppe am meisten**
+>
+> - Stell deine Frage mit einem Screenshot, dann sehe ich sofort, wo es hängt
+> - Teil deinen Link, sobald dein Tool online ist, damit wir es ausprobieren können
+> - Jede Frage ist willkommen, programmieren muss hier niemand
+>
+> Ich freu mich auf dich!
 >
 > Patricia
 
