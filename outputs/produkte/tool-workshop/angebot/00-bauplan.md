@@ -19,11 +19,11 @@ tags: [produkt]
 | **Schmerz davor** | Sie arbeitet viel für das Network und es kommt wenig zurück. Ein eigenes Gratis-Angebot fehlt oder liegt als PDF in Download-Ordnern, und niemand meldet sich. Technik schreckt ab. |
 | **Veränderung** | Sie hat ein eigenes kleines Tool zu ihrer Nische online und eine Seite, auf der man sich dafür einträgt. Statt eines PDFs, wie es fast alle in ihrem Network verschenken, gibt sie ihrer Zielgruppe ein Erlebnis und sofort ein Ergebnis zu einem Problem, das diese hat. Das Tool öffnet den Kontakt, und ihr Produkt wird danach ganz natürlich zum nächsten Schritt (Patricia 29.10.). |
 | **Der Weg** | 1 · Nische klären (Nischengenerator) · 2 · Tool bauen mit Claude, als Artifact ohne API · 3 · Seite bauen mit AC-Formular oder WhatsApp-Link (Netlify) · 4 · online stellen und zeigen |
-| **Live-Termine** | Di 10.11.2026 Tag 1: dein Tool · Mi 11.11.2026 Tag 2: deine Seite · jeweils **19:00 Uhr** (Patricia 29.10.) |
-| **Begleitung** | 12.–14.11.2026, drei Tage in der Gruppe (🟠 ENTSCHEID Ort: Telegram-Gruppe wie bei den Kursen, ✏️ bestätigen) |
+| **Live-Termine** | Mi 11.11.2026 Tag 1: dein Tool · Do 12.11.2026 Tag 2: deine Seite (bis 06.11. Di 10. und Mi 11.11., verschoben wegen MBA-Call mit Gast am 10.11.) · jeweils **19:00 Uhr** (Patricia 29.10.) |
+| **Begleitung** | 13.–15.11.2026, drei Tage in der Gruppe (🟠 ENTSCHEID Ort: Telegram-Gruppe wie bei den Kursen, ✏️ bestätigen) |
 | **Aufzeichnung** | beide Calls, abgelegt in ThriveCart Learn (Patricia 29.10.) |
 | **Vorbereitung Teilnehmerinnen** | Claude-Konto (gratis reicht für den Start) · Netlify-Konto (gratis) |
-| **Kasse** | offen **ab sofort** bis **Mo 9.11.2026, 23:59** (Patricia 29.10.: „die kasse müssen wir vorher schon öffnen. also jetzt?“) |
+| **Kasse** | offen **ab sofort** bis **Di 10.11.2026, 23:59** (Patricia 29.10.: „die kasse müssen wir vorher schon öffnen. also jetzt?“) |
 | **Einstieg (Freebie)** | Nischengenerator: Anmeldeseite https://mumlifebalance.ch/nischengenerator/ (WP 4441, Entwurf) → AC-Formular 75 mit Bestätigungsmail → Danke-Seite /nischengenerator-danke/ (WP 4442, Entwurf, mit Workshop-Angebot) → Klick in der Mail führt zum Tool https://mlb-nischengenerator.vercel.app |
 | **Stichwort** | **NISCHE** (🟠 ENTSCHEID, frei, Match-Typ exakt) → DM mit Link zum Nischengenerator, danach Workshop |
 

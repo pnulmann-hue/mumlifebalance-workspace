@@ -26,7 +26,7 @@ Gebaut habe ich sie mit Claude, ohne programmieren zu können. Und genau das mac
 
 **Im Tool-Workshop baust du am 10. November live dein eigenes Gratis-Tool zu deiner Nische und am 11. November die Seite, auf der man sich dafür einträgt.** Danach begleite ich dich drei Tage, bis beides online ist. Die Calls werden aufgezeichnet.
 
-Der Workshop kostet 39 Franken, die Anmeldung ist offen bis Montag, 9. November.
+Der Workshop kostet 39 Franken, die Anmeldung ist offen bis Dienstag, 10. November.
 
 [Knopf: Ich bin dabei]
 
@@ -48,7 +48,7 @@ Du beschreibst Claude in deinen eigenen Worten, was dein Tool tun soll: welche F
 
 Was du brauchst: ein Gratis-Konto bei Claude und eins bei Netlify. Beides zeige ich dir in der Willkommens-Mail.
 
-Anmeldung bis Montag, 9. November, 23:59, für 39 Franken.
+Anmeldung bis Dienstag, 10. November, 23:59, für 39 Franken.
 
 [Knopf: Ich bin dabei]
 
@@ -87,8 +87,8 @@ Hallo [Vorname]
 schön, dass du dabei bist. Den Zugang zum Kursbereich schickt dir ThriveCart in einer eigenen Mail.
 
 **Die Termine**
-Dienstag, 10. November, 19:00 Uhr: dein Tool
-Mittwoch, 11. November, 19:00 Uhr: deine Seite
+Mittwoch, 11. November, 19:00 Uhr: dein Tool
+Donnerstag, 12. November, 19:00 Uhr: deine Seite
 Zoom-Link: ✏️ PLATZ
 Danach drei Tage Begleitung in der Gruppe: ✏️ Link
 
@@ -102,7 +102,7 @@ Danach drei Tage Begleitung in der Gruppe: ✏️ Link
 Bis bald
 Patricia
 
-### B1 · Mo 9.11., 18:00 · Morgen geht's los
+### B1 · Di 10.11., 18:00 · Morgen geht's los
 
 **Betreff:** Morgen bauen wir dein Tool
 **Vorschautext:** Zoom-Link und deine kleine Vorbereitung.

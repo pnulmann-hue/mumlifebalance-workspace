@@ -41,8 +41,8 @@ Käuferinnen zur Digitalen Produktwelt (Evergreen, 333). Ab 23.11. wird **Neusta
 |---|---|
 | So 1.11. | KI-Kurs startet (Käuferinnen sind drin) |
 | bis **Mo 9.11. 23:59** | Kasse Tool-Workshop offen |
-| **Di 10.11. + Mi 11.11.** | **Tool-Workshop live** (Tag 1 Tool bauen, Tag 2 Anmeldeseite), danach 3 Tage Begleitung |
-| ab 10.11. | Mails C1–C4 (Nischengenerator) auf die Aufzeichnung umschreiben oder pausieren |
+| **Mi 11.11. + Do 12.11.** | **Tool-Workshop live** (Tag 1 Tool bauen, Tag 2 Anmeldeseite), danach 3 Tage Begleitung |
+| ab 11.11. | Mails C1–C4 (Nischengenerator) auf die Aufzeichnung umschreiben oder pausieren |
 | Mi 18.11. | Live-Call KI-Kurs (nur Käuferinnen) |
 | **Mo 23.–So 29.11.** | **Anwärmen Neustart 2027** · Feed Mo 23.11. Reel 1 (Reichweite, ohne Stichwort) |
 | Mi 25.11. | Neustart-Seiten live (Patricias Go) |

@@ -40,7 +40,7 @@ Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung,
 | 4 | Nach der Eintragung: Danke-Seite mit Link zum Tool und eine erste Mail | Ablauf steht |
 | 5 | Zeigen: Story-Abfolge, mit der du dein Tool ankündigst (Alltag → Learning → Tool) | erste Story geplant |
 
-## Begleitung · 12.–14.11.
+## Begleitung · 13.–15.11.
 
 - Jeden Tag eine kleine Aufgabe in der Gruppe: Tag 1 Tool testen lassen · Tag 2 Seite online · Tag 3 erste Story posten
 - Patricia antwortet in der Gruppe (✏️ Zeiten, z. B. morgens und abends)

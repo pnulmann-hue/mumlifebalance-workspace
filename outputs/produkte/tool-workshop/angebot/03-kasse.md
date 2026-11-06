@@ -24,13 +24,13 @@ Werte aus `00-bauplan.md`.
 
 **Überschrift** (seit 29.10. abends, Patricias Wahl, nach Julias Pitch-Regel Zahl · Befehlsform · Wozu): Bau in zwei Abenden das Gratis-Angebot, das in deinem Network kaum jemand hat, damit der Kauf deines Produkts die logische Konsequenz ist, ohne dass du jemandem etwas verkaufen musst.
 
-**Unterzeile** (kleiner): Tool-Workshop · live am 10. und 11. November, 19:00 Uhr, mit Aufzeichnung und drei Tagen Begleitung.
+**Unterzeile** (kleiner): Tool-Workshop · live am 11. und 12. November, 19:00 Uhr, mit Aufzeichnung und drei Tagen Begleitung.
 
 **Text darunter** (von Patricia selbst angepasst): Du baust live dein eigenes Gratis-Tool passend zu deinem Network in deiner Nische, mit Claude und ohne Programmieren, und die Seite, auf der man sich dafür einträgt.
 
 **Das bekommst du:**
-- Tag 1, Dienstag 10.11.: Du baust live dein eigenes Gratis-Tool zu deiner Nische, mit Claude, ohne Programmieren
-- Tag 2, Mittwoch 11.11.: Du baust die Seite, auf der man sich dafür einträgt
+- Tag 1, Donnerstag 12.11.: Du baust live dein eigenes Gratis-Tool zu deiner Nische, mit Claude, ohne Programmieren
+- Tag 2, Donnerstag 12.11.: Du baust die Seite, auf der man sich dafür einträgt
 - 12. bis 14.11.: Drei Tage Begleitung in der Gruppe, bis beides online ist
 - Aufzeichnungen beider Calls, Auftrags-Vorlage für Claude und Seitenvorlage
 
@@ -72,7 +72,7 @@ drei ✅-Punkte, Preiszeile; ihr Profi-Tipp Mockup). Bild: Mockup „Finde dein 
 > ✅ die Themenlandkarte, damit du dich nicht in eine Mini-Nische quetschen musst
 > ✅ die vier Quellen, aus denen dein Thema kommt. Spoiler: Es ist längst da, du siehst es nur noch nicht.
 >
-> Schau ihn vor dem 10. November an, dann kommst du mit deinem Thema in den Workshop. Hier an der Kasse für 25 statt 39 CHF.
+> Schau ihn vor dem 11. November an, dann kommst du mit deinem Thema in den Workshop. Hier an der Kasse für 25 statt 39 CHF.
 
 Bewusst ohne „nur hier“ — „Finde dein Thema“ läuft an einer anderen Kasse als Upsell für 25.
 
@@ -105,9 +105,9 @@ Keiner.
 
 ## Text am Zeitplan der Kasse
 
-- Di 10.11. Tag 1: dein Tool, live um 19:00 Uhr
-- Mi 11.11. Tag 2: deine Seite, live um 19:00 Uhr
-- 12.–14.11. Begleitung in der Gruppe
+- Mi 11.11. Tag 1: dein Tool, live um 19:00 Uhr
+- Do 12.11. Tag 2: deine Seite, live um 19:00 Uhr
+- 13.–15.11. Begleitung in der Gruppe
 - Aufzeichnungen bleiben dir
 
 ## Stand 29.10.2026 nachts: Upsell- und Downsell-Seiten gestaltet

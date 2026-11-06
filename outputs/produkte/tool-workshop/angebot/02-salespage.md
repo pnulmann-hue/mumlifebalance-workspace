@@ -4,7 +4,7 @@ tags: [produkt, salespage]
 
 # 02 · Anmeldeseite Tool-Workshop
 
-Werte aus `00-bauplan.md`: 39 CHF · live 10. und 11.11.2026 · drei Tage Begleitung · Aufzeichnung · Anmeldung bis Mo 9.11., 23:59.
+Werte aus `00-bauplan.md`: 39 CHF · live 10. und 11.11.2026 · drei Tage Begleitung · Aufzeichnung · Anmeldung bis Di 10.11., 23:59.
 Bewusstseinsstufe der Leserin: 3 (sie weiss, dass sie ein Gratis-Angebot braucht, kennt den Weg über ein Tool noch nicht). Lead-Typ: Problem-Lösung. Rahmen: die 13 Blöcke aus `/copywriting`, „ThriveCart-Tipps“.
 Gestaltete Fassung: `scripts/salespage-design/tool-workshop-bauen.py` → `outputs/salespages/tool-workshop/index.html`.
 
@@ -18,7 +18,7 @@ Gestaltete Fassung: `scripts/salespage-design/tool-workshop-bauen.py` → `outpu
 
 Am 10. November baust du live ein kleines Tool zu deiner Nische, am 11. November die Seite, auf der man sich dafür einträgt. Danach begleite ich dich drei Tage, bis beides online ist.
 
-Live am 10. und 11. November · mit Aufzeichnung · 39 Franken
+Live am 11. und 12. November · mit Aufzeichnung · 39 Franken
 
 🔘 Ich bin dabei
 
@@ -78,9 +78,9 @@ Dein Tool öffnet den Kontakt zu deiner Zielgruppe, und danach kannst du ganz na
 
 **Vorher:** Du legst ein Gratis-Konto bei Claude und bei Netlify an und findest mit dem Nischengenerator deine Nische. Hast du schon ein Workbook oder PDF, bring es mit: Wir machen daraus das Wissen in deinem Tool.
 
-**Tag 1, Dienstag, 10. November:** Aus deiner Nische wird eine Tool-Idee, und wir bauen sie zusammen im Claude-Chat, bis der Link funktioniert.
+**Tag 1, Mittwoch, 11. November:** Aus deiner Nische wird eine Tool-Idee, und wir bauen sie zusammen im Claude-Chat, bis der Link funktioniert.
 
-**Tag 2, Mittwoch, 11. November:** Wir bauen die Seite dazu, ganz einfach mit einem WhatsApp-Link oder mit einem Formular für deine Mailliste.
+**Tag 2, Donnerstag, 12. November:** Wir bauen die Seite dazu, ganz einfach mit einem WhatsApp-Link oder mit einem Formular für deine Mailliste.
 
 **Danach:** Drei Tage begleite ich dich in der Gruppe, bis Tool und Seite online sind. Beide Calls werden aufgezeichnet.
 
@@ -132,7 +132,7 @@ Dein Tool bringt dir Menschen, die dich kennenlernen wollen. Wer später nach de
 📋 BLOCK 12: Letzter Aufruf
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Die Anmeldung schliesst am Montag, 9. November, um 23:59. Am Dienstag fangen wir an.
+Die Anmeldung schliesst am Dienstag, 10. November, um 23:59. Am Dienstag fangen wir an.
 
 🔘 Ich bin dabei
 

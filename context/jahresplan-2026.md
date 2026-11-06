@@ -13,7 +13,7 @@ tags: [jahresplan, planung]
 
 | Monat | Mentoring | doTERRA |
 |---|---|---|
-| November | Tool-Workshop Di 10. + Mi 11.11., 19:00 (39 CHF), Begleitung bis 14.11. · Nischengenerator (NISCHE) · KI-Kurs-Live-Call Mi 18.11. | kein Verkauf, Community |
+| November | Tool-Workshop Mi 11. + Do 12.11., 19:00 (39 CHF), Begleitung bis 15.11. · Nischengenerator (NISCHE) · KI-Kurs-Live-Call Mi 18.11. | kein Verkauf, Community |
 | Dezember | **Neustart 2027 · Jahresplanungs-Workshop Do 17.12., 09:00, gratis** → MBA-Pitch 17.–20.12. · KI-Kurs-Live-Call Do 10.12. | Community |
 | Januar 2027 | MBA-Neue steigen ein · Jahresplanungs-Challenge fällt weg (31.10.) | offen |
 
