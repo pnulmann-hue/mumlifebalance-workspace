@@ -467,6 +467,9 @@ funktioniert, wenn eine Geschichte dahinter steht („Gestern war ich baden").
 
 **Die Testfrage:** Welche von diesen Mails würde ich selbst öffnen?
 
+**Das Muster:** Erste Mail einer Aktion = Neugier oder konkreter Nutzen + ⚡. Letzte
+Mail = Zeitpunkt + Konsequenz + ⏳.
+
 🚨 **Kein Betrag und kein Währungszeichen im Betreff.** Die Zahl steht im Text.
 
 ### Die fünf Elemente, die vorkommen müssen
@@ -486,6 +489,18 @@ Aufzählung, auch mal ein einzelner Satz. **Diese fünf nicht:**
    Produktnamen versteckt ist, reicht nicht.
 5. **Ein PS in jeder Mail** — PS werden überdurchschnittlich oft gelesen. Ein
    Satz: Hebel plus Aufforderung plus Link.
+
+**Die zwei festen Baupläne einer Aktion** (Beweis, Problembewusstsein, Angebot):
+
+| Erste Mail | Letzte Mail |
+|---|---|
+| Betreff | Betreff mit anderem Winkel als die erste |
+| Einstieg: 1–2 Sätze, direkt rein | was passiert, wenn sie jetzt zugreift: 3 Punkte |
+| das Angebot: was, Preis, Zeitfenster | Aufruf und finale Frist |
+| was sich für sie ändert | |
+| Aufruf und Frist mit Datum und Uhrzeit | |
+
+Das Angebot steht also früh in der Mail, nicht erst ganz unten.
 
 **Der Rumpf dazwischen:** Einstieg in ein, zwei Sätzen ohne Begrüssung · das
 Angebot mit Preis und Frist · was sich für sie ändert (die Inhaltsliste gehört
