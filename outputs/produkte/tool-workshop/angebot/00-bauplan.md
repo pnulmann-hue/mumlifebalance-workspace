@@ -23,7 +23,7 @@ tags: [produkt]
 | **Begleitung** | 13.–15.11.2026, drei Tage in der Gruppe (🟠 ENTSCHEID Ort: Telegram-Gruppe wie bei den Kursen, ✏️ bestätigen) |
 | **Aufzeichnung** | beide Calls, abgelegt in ThriveCart Learn (Patricia 29.10.) |
 | **Vorbereitung Teilnehmerinnen** | Claude-Konto (gratis reicht für den Start) · Netlify-Konto (gratis) |
-| **Kasse** | offen **ab sofort** bis **Di 10.11.2026, 23:59** (Patricia 29.10.: „die kasse müssen wir vorher schon öffnen. also jetzt?“) |
+| **Kasse** | offen **ab sofort** bis **Mo 9.11.2026, 23:59** (Patricia 29.10.: „die kasse müssen wir vorher schon öffnen. also jetzt?“) |
 | **Einstieg (Freebie)** | Nischengenerator: Anmeldeseite https://mumlifebalance.ch/nischengenerator/ (WP 4441, Entwurf) → AC-Formular 75 mit Bestätigungsmail → Danke-Seite /nischengenerator-danke/ (WP 4442, Entwurf, mit Workshop-Angebot) → Klick in der Mail führt zum Tool https://mlb-nischengenerator.vercel.app |
 | **Stichwort** | **NISCHE** (🟠 ENTSCHEID, frei, Match-Typ exakt) → DM mit Link zum Nischengenerator, danach Workshop |
 

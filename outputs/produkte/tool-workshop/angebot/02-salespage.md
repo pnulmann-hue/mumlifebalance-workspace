@@ -4,7 +4,7 @@ tags: [produkt, salespage]
 
 # 02 · Anmeldeseite Tool-Workshop
 
-Werte aus `00-bauplan.md`: 39 CHF · live 10. und 11.11.2026 · drei Tage Begleitung · Aufzeichnung · Anmeldung bis Di 10.11., 23:59.
+Werte aus `00-bauplan.md`: 39 CHF · live 10. und 11.11.2026 · drei Tage Begleitung · Aufzeichnung · Anmeldung bis Mo 9.11., 23:59.
 Bewusstseinsstufe der Leserin: 3 (sie weiss, dass sie ein Gratis-Angebot braucht, kennt den Weg über ein Tool noch nicht). Lead-Typ: Problem-Lösung. Rahmen: die 13 Blöcke aus `/copywriting`, „ThriveCart-Tipps“.
 Gestaltete Fassung: `scripts/salespage-design/tool-workshop-bauen.py` → `outputs/salespages/tool-workshop/index.html`.
 

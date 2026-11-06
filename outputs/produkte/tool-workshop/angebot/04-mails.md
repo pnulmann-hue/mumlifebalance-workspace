@@ -48,7 +48,7 @@ Du beschreibst Claude in deinen eigenen Worten, was dein Tool tun soll: welche F
 
 Was du brauchst: ein Gratis-Konto bei Claude und eins bei Netlify. Beides zeige ich dir in der Willkommens-Mail.
 
-Anmeldung bis Dienstag, 10. November, 23:59, für 39 Franken.
+Anmeldung bis Montag, 9. November, 23:59, für 39 Franken.
 
 [Knopf: Ich bin dabei]
 
@@ -102,7 +102,7 @@ Danach drei Tage Begleitung in der Gruppe: ✏️ Link
 Bis bald
 Patricia
 
-### B1 · Di 10.11., 18:00 · Morgen geht's los
+### B1 · Mo 9.11., 18:00 · Morgen geht's los
 
 **Betreff:** Morgen bauen wir dein Tool
 **Vorschautext:** Zoom-Link und deine kleine Vorbereitung.

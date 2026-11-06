@@ -2,13 +2,13 @@
 tags: [content, newsletter, mentoring]
 ---
 
-# Mailstrecke 6. bis 10.11.2026 · Tool-Workshop
+# Mailstrecke 6. bis 9.11.2026 · Tool-Workshop
 
 **Profil · Liste:** Mentoring · Liste 2 (ohne Käuferinnen mit Tag Tool-Workshop) · **Weiche:** Aktion ·
 **Angebot · Preis · Link:** Tool-Workshop · 39 Franken oder 39 Euro · https://mumlifebalance.ch/tool-workshop/ ·
-**Hebel:** neues Format (zwei Abende live) + Live-Anmeldung bis Di 10.11., 23:59
+**Hebel:** neues Format (zwei Abende live) + Live-Anmeldung bis Mo 9.11., 23:59
 
-**Termin neu seit 06.11.:** Workshop Mi 11. und Do 12.11., 19:00 Uhr, Begleitung 13. bis 15.11. (vorher Di 10. und Mi 11.11., Terminkollision mit dem MBA-Call)
+**Termin neu seit 06.11.:** Workshop Mi 11. und Do 12.11., 19:00 Uhr, Begleitung 13. bis 15.11. (vorher Di 10. und Mi 11.11., Terminkollision mit dem MBA-Call). Die Frist Mo 9.11. blieb
 
 **Aufbau:** Reihenfolge nach den Workshop-Mails der Vorlage vom August, der letzte Tag nach ihrem Last-Chance-Bauplan.
 Die Sätze und Belege sind Patricias eigene.
@@ -24,9 +24,8 @@ Die Sätze und Belege sind Patricias eigene.
 | **Sa 7.11., 08:30** | **Nachgezählt** | die Zahlen: neun Beiträge gegen gut einen je Eintragung | neu, ohne Tag 0€ Nischengenerator |
 | **Sa 7.11., 19:30** | **Die zwei Abende** | genauer Ablauf, was am Ende da ist, für wen nicht | neu |
 | So 8.11. | keine | | |
-| **Mo 9.11., 09:52** | **Bist du dabei** | ganz kurze Erinnerung | Text ersetzt, Zeitpunkt bleibt |
-| **Di 10.11., 09:52** | **Letzter Tag** | was bei einer Zusage passiert, Aufzeichnung | Entwurf, einplanen |
-| **Di 10.11., 21:00** | **Noch 3 Stunden** | ganz kurz, nur Network reicht auch | Entwurf, einplanen |
+| **Mo 9.11., 09:52** | **Letzter Tag** | was bei einer Zusage passiert, Aufzeichnung | Text ersetzt, Zeitpunkt bleibt |
+| **Mo 9.11., 21:00** | **Noch 3 Stunden** | ganz kurz, nur Network reicht auch | Entwurf, einplanen |
 
 ---
 
@@ -55,16 +54,16 @@ Du hast so etwas längst im Kopf. Überleg mal, welche Frage dir die Leute immer
 
 Am Montag schrieb mir eine Frau, die meinen Nischengenerator ausgefüllt hat, sinngemäss: Das sei bis jetzt das geilste Tool, diesmal habe es echt coole Sachen ausgespuckt.
 
-Noch eine Änderung, falls du dir den Termin schon notiert hast: Geplant waren Dienstag und Mittwoch, wegen einer Terminkollision bauen wir jetzt am **Mittwoch, 11. und Donnerstag, 12. November**. Dafür hast du einen Tag länger Zeit, dich anzumelden.
+Noch eine Änderung, falls du dir den Termin schon notiert hast: Geplant waren Dienstag und Mittwoch, wegen einer Terminkollision bauen wir jetzt am **Mittwoch, 11. und Donnerstag, 12. November**.
 
-**Tool-Workshop: zwei Abende live, Anmeldung nur bis Dienstag, 23:59.** Mittwoch und Donnerstag, jeweils um 19:00 Uhr, für 39 Franken oder 39 Euro.
+**Tool-Workshop: zwei Abende live, Anmeldung nur bis Montag, 23:59.** Mittwoch und Donnerstag, jeweils um 19:00 Uhr, für 39 Franken oder 39 Euro.
 
 🔘 **Bau dir dein eigenes Tool** → https://mumlifebalance.ch/tool-workshop/
 
 Herzlich
 Patricia
 
-P.S. Für dein Tool musst du keine 61 Seiten schreiben, ein paar Fragen und deine Antworten reichen. [Melde dich bis Dienstag, 23:59, für die Live-Abende an.](https://mumlifebalance.ch/tool-workshop/)
+P.S. Für dein Tool musst du keine 61 Seiten schreiben, ein paar Fragen und deine Antworten reichen. [Melde dich bis Montag, 23:59, für die Live-Abende an.](https://mumlifebalance.ch/tool-workshop/)
 
 ---
 
@@ -93,14 +92,14 @@ Beim PDF hat mich also eine einzige Eintragung neun Beiträge gekostet, beim Too
 
 Rechne das mal für dich durch. Du postest ohnehin, oft genug am Abend, wenn die Kinder schlafen. Die Frage ist, was am Ende deines Beitrags auf die Leute wartet: etwas zum Herunterladen oder ein Ergebnis zu ihrem Problem, und danach seid ihr im Gespräch, ohne dass du jemanden anschreiben musstest.
 
-**Tool-Workshop: zwei Abende live, Anmeldung nur bis Dienstag, 23:59.** Mittwoch und Donnerstag, jeweils um 19:00 Uhr, für 39 Franken oder 39 Euro.
+**Tool-Workshop: zwei Abende live, Anmeldung nur bis Montag, 23:59.** Mittwoch und Donnerstag, jeweils um 19:00 Uhr, für 39 Franken oder 39 Euro.
 
 🔘 **Bau dir dein eigenes Tool** → https://mumlifebalance.ch/tool-workshop/
 
 Herzlich
 Patricia
 
-P.S. Meine Zahlen sind klein, weil mein Profil klein ist. Gerade deshalb zählt das Verhältnis. [Hol dir deinen Platz bis Dienstag, 23:59.](https://mumlifebalance.ch/tool-workshop/)
+P.S. Meine Zahlen sind klein, weil mein Profil klein ist. Gerade deshalb zählt das Verhältnis. [Hol dir deinen Platz bis Montag, 23:59.](https://mumlifebalance.ch/tool-workshop/)
 
 ---
 
@@ -135,65 +134,37 @@ Dir bleiben danach dein Tool, deine Seite, meine Auftrags-Vorlage für Claude, d
 
 Und ich sag dir ehrlich: Ein fertiges Tool von mir bekommst du dabei nicht. Das baust du selbst, mit mir an deiner Seite, und genau deshalb kannst du danach das nächste allein bauen.
 
-**Tool-Workshop: zwei Abende live, Anmeldung nur bis Dienstag, 23:59.** Der Platz kostet 39 Franken oder 39 Euro.
+**Tool-Workshop: zwei Abende live, Anmeldung nur bis Montag, 23:59.** Der Platz kostet 39 Franken oder 39 Euro.
 
 🔘 **Sichere dir deinen Platz** → https://mumlifebalance.ch/tool-workshop/
 
 Herzlich
 Patricia
 
-P.S. 39 Franken für zwei Abende, an deren Ende dein eigenes Tool steht. [Sichere dir deinen Platz bis Dienstag, 23:59.](https://mumlifebalance.ch/tool-workshop/)
+P.S. 39 Franken für zwei Abende, an deren Ende dein eigenes Tool steht. [Sichere dir deinen Platz bis Montag, 23:59.](https://mumlifebalance.ch/tool-workshop/)
 
 ---
 
-## Mo morgens · Bist du dabei (ersetzt den Text der eingeplanten Mail)
-
-### Betreffzeilen
-1. Bist du am Mittwoch dabei? ← Favorit
-2. Mittwoch, 19:00 Uhr
-3. Noch bis morgen
-4. Dein Gratis-Tool beginnt am Mittwoch
-5. Morgen schliesst die Anmeldung
-
-**Vorschautext:** Mittwoch dein Tool, Donnerstag deine Seite.
-
-### Mail
-
-Hallo %FIRSTNAME%,
-
-am Mittwoch um 19:00 Uhr bauen wir dein Gratis-Tool, am Donnerstag die Seite dazu. Die Anmeldung für die Live-Abende ist noch bis morgen, Dienstag, um 23:59 offen.
-
-**[Sichere dir deinen Platz für 39 Franken oder 39 Euro.](https://mumlifebalance.ch/tool-workshop/)**
-
-🔘 **Ich bin dabei** → https://mumlifebalance.ch/tool-workshop/
-
-Herzlich
-Patricia
-
-P.S. Die Frage, die dir die Leute immer wieder stellen, reicht als Start für dein Tool. [Hol dir deinen Platz bis morgen, 23:59.](https://mumlifebalance.ch/tool-workshop/)
-
----
-
-## Di morgens · Letzter Tag
+## Mo morgens · Letzter Tag (ersetzt den Text der eingeplanten Mail)
 
 ### Betreffzeilen
 1. Heute um 23:59 schliesst die Anmeldung ⏳ ← Favorit
-2. Morgen bauen wir, heute schliesst die Anmeldung
+2. Am Mittwoch bauen wir, heute schliesst die Anmeldung
 3. Letzter Tag für dein Gratis-Tool
-4. Bist du morgen um 19:00 Uhr dabei?
-5. Dein Tool beginnt morgen Abend
+4. Bist du am Mittwoch um 19:00 Uhr dabei?
+5. Dein Tool beginnt am Mittwochabend
 
-**Vorschautext:** Morgen um 19:00 Uhr fangen wir an.
+**Vorschautext:** Am Mittwoch um 19:00 Uhr fangen wir an.
 
 ### Mail
 
 Hallo %FIRSTNAME%,
 
-heute um 23:59 schliesst die Anmeldung für die Live-Abende des Tool-Workshops, und morgen um 19:00 Uhr fangen wir an. **[Hol dir jetzt deinen Platz für 39 Franken oder 39 Euro.](https://mumlifebalance.ch/tool-workshop/)**
+heute um 23:59 schliesst die Anmeldung für die Live-Abende des Tool-Workshops, und am Mittwoch um 19:00 Uhr fangen wir an. **[Hol dir jetzt deinen Platz für 39 Franken oder 39 Euro.](https://mumlifebalance.ch/tool-workshop/)**
 
 Was passiert, wenn du dabei bist:
 
-✅ Morgen Abend hast du ein Tool, das deine Leute am Handy ausfüllen können
+✅ Am Mittwochabend hast du ein Tool, das deine Leute am Handy ausfüllen können
 
 ✅ Am Donnerstagabend tragen sie sich dafür ein oder schreiben dir direkt
 
@@ -212,32 +183,32 @@ Nach heute Abend kannst du nicht mehr live mitbauen.
 Herzlich
 Patricia
 
-P.S. Du kannst morgen nicht live dabei sein? Beide Abende werden aufgezeichnet. [Melde dich trotzdem heute noch an.](https://mumlifebalance.ch/tool-workshop/)
+P.S. Du kannst nicht live dabei sein? Beide Abende werden aufgezeichnet. [Melde dich trotzdem heute noch an.](https://mumlifebalance.ch/tool-workshop/)
 
 ---
 
-## Di abends · Noch 3 Stunden (Versand um 21:00)
+## Mo abends · Noch 3 Stunden (Versand um 21:00)
 
 ### Betreffzeilen
 1. Noch 3 Stunden ⏳ ← Favorit
 2. Um 23:59 ist die Anmeldung zu
-3. Bist du morgen dabei?
+3. Bist du am Mittwoch dabei?
 4. Letzte Stunden für dein Gratis-Tool ⏳
 5. Meine letzte Mail zu den Live-Abenden
 
-**Vorschautext:** Morgen um 19:00 Uhr fangen wir an.
+**Vorschautext:** Am Mittwoch um 19:00 Uhr fangen wir an.
 
 ### Mail
 
 Hallo %FIRSTNAME%,
 
-noch drei Stunden, dann ist die Anmeldung für die Live-Abende zu, und morgen um 19:00 Uhr fangen wir an.
+noch drei Stunden, dann ist die Anmeldung für die Live-Abende zu, und am Mittwoch um 19:00 Uhr fangen wir an.
 
 **[Schnapp dir jetzt deinen Platz für 39 Franken oder 39 Euro.](https://mumlifebalance.ch/tool-workshop/)**
 
 🔘 **Ich bin dabei** → https://mumlifebalance.ch/tool-workshop/
 
-Wir sehen uns morgen, hoffentlich
+Wir sehen uns am Mittwoch, hoffentlich
 Patricia
 
 P.S. Du hast nur dein Network und kein eigenes Angebot? Dann passt es genauso, dein Tool bringt dir die Kontakte dafür. [Hol dir bis 23:59 deinen Platz.](https://mumlifebalance.ch/tool-workshop/)
@@ -251,5 +222,4 @@ P.S. Du hast nur dein Network und kein eigenes Angebot? Dann passt es genauso, d
 ✏️ **Nachgezählt:** Satz „oft genug am Abend, wenn die Kinder schlafen“ ist auf die Leserin gemünzt, bitte gegenlesen.
 ✏️ **Letzter Tag:** Der Satz „nicht mehr live mitbauen“ gilt in jedem Fall. Was die Aufzeichnung danach kostet, ist noch offen und steht deshalb nicht in der Mail.
 ✏️ **Noch 3 Stunden:** Der Betreff stimmt nur beim Versand um 21:00.
-✏️ **Bist du dabei:** Die Mail ersetzt den alten Text am Montag, damit dort nichts Falsches rausgeht. Soll der Montag frei bleiben, nimm die Kampagne aus der Planung.
 ✏️ **Beim Einplanen:** Käuferinnen mit Tag Tool-Workshop ausschliessen. „Nachgezählt“ zusätzlich ohne Tag 0€ Nischengenerator, die acht haben dieselben Zahlen in der automatischen Mail „Drei Eintragungen aus 27 Beiträgen“.
