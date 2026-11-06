@@ -124,7 +124,7 @@ aus den vorigen schon ausgetreten. Nachzählen über `/api/3/automations`.)*
 | | **A · Launch läuft** | **B · Normalbetrieb** |
 |---|---|---|
 | **Wann** | ein grosses Angebot öffnet (333 und darüber) | alle anderen Wochen |
-| **Wie oft** | täglich, in der heissen Phase bis zu zweimal | **wöchentlich, Untergrenze alle 14 Tage** |
+| **Wie oft** | täglich, in der heissen Phase bis zu zweimal | **täglich (Versuch seit 06.11.2026), Untergrenze alle 14 Tage** |
 | **Wie viele** | 12 und mehr über den ganzen Launch | **eine** |
 | **Was drin ist** | eine Launch-Phase pro Mail | ein Tipp, dann ein Angebot |
 | **Angelegt als** | einzelne Kampagnen mit Datum, **keine Automation** | einzelne Kampagne |
@@ -168,9 +168,11 @@ und der doTERRA-Monats-Newsletter (38,2 % offen, 2,9 % Klick). **Also ist der
 Tipp der Hebel, nicht die Häufigkeit** — und genau deshalb ist der
 Mehrwert-Aufbau unten Pflicht.
 
-**Mein Entscheid:** wöchentlich, sobald der Newsletter-Bot steht und den Entwurf
-liefert (die Produktion ist der Engpass, nicht die Liste). Bis dahin alle 14
-Tage. **In einem Launch-Monat pausiert Ablauf B** — dann läuft A.
+**Mein Entscheid vom 06.11.2026: ich probiere jeden Tag eine Mail.** Wer das
+nervig findet, hätte ohnehin nie gekauft. Die Mails sind gern gelesene Mails, und
+das Angebot am Schluss ist ihre logische Schlussfolgerung. Geplant wird im Cockpit
+unter Produkte → E-Mail-Plan, Tag für Tag, mit den Zahlen daneben. 14 Tage bleibt
+die Untergrenze für Zeiten, in denen ich nichts schaffe.
 
 ### Was drin ist: Verkauf mit Mehrwert
 
@@ -244,8 +246,7 @@ Abstand bleibt verträglich.
 
 Nicht zweimal hintereinander dasselbe und nicht zweimal derselbe Preisbereich.
 Über ein Quartal kommen vor: **ein 39er · ein 333er · ein Gratis-Einstieg · ein
-Tool.** Was ich in den letzten drei Newslettern beworben habe, steht im
-Newsletter-Protokoll (siehe „Woran ich messe").
+Tool.** Was ich zuletzt beworben habe, steht im Cockpit unter Produkte → E-Mail-Plan.
 
 ### Zusätzliche Mails im Normalbetrieb
 
@@ -353,8 +354,8 @@ Newsletter-Kontakte und 25 Kundinnen** (Stand 04.11.2026, ActiveCampaign).
 
 **Mein Takt — und er ist durch meine eigenen Zahlen gedeckt, nicht geschätzt:**
 
-- **Wöchentlich, sobald der Bot den Entwurf liefert**, bis dahin alle 14 Tage.
-  Begründung und Messung oben unter „Der Rhythmus".
+- **Jeden Tag eine Mail** (Versuch seit 06.11.2026). Begründung und Messung oben
+  unter „Der Rhythmus".
 - **Im Launch täglich** — dort gilt der dichte Rhythmus voll. Im Oktober 2026 hat
   meine Liste elf Mails in einem Monat ohne Einbruch der Öffnungsrate getragen.
 - **Wie viele Aktionen im Monat**, legt der Monatsplan fest, nicht diese Datei.
@@ -375,7 +376,8 @@ fremden Business sagt über meine Liste nichts.
 
 ### Die Tabelle
 
-Eine Zeile je Mail, über den ganzen Monat. Spalten:
+Eine Zeile je Mail, über den ganzen Monat, im Cockpit unter Produkte → E-Mail-Plan
+(die Zahlen kommen dort von selbst aus ActiveCampaign und ThriveCart). Spalten:
 
 **Datum · Angebot · Hebel · Preis · Link zur Seite · zugestellt · geöffnet % ·
 geklickt % · Verkäufe · Kaufquote % · Umsatz · Order Bump · Upsell · gesamt.**

@@ -8667,7 +8667,7 @@ var MASTER = (function () {
     var tage = {};
     raus.forEach(function (m) { tage[m.datum] = 1; });
     var html = '<div class="tiles">' +
-      tile("Tage mit Mail", String(Object.keys(tage).length), raus.length + " Mails an die Liste") +
+      tile("Tage mit Mail", String(Object.keys(tage).length), raus.length + (raus.length === 1 ? " Mail" : " Mails") + " an die Liste") +
       tile("Geöffnet", epProzent(summe("geoeffnet"), summe("zugestellt")), "auf die Zugestellten") +
       tile("Klicks", String(summe("klicks")), epProzent(summe("klicks"), summe("zugestellt"))) +
       tile("Verkäufe", epProfil === "mentoring" ? String(verk.length) : "–", epProfil === "mentoring" ? "ThriveCart, alle Wege" : "nicht über ThriveCart") +
@@ -8700,7 +8700,7 @@ var MASTER = (function () {
         '<td class="z">' + epProzent(a.geoeffnet, a.zugestellt) + '</td>' +
         '<td class="z">' + a.klicks + ' <small>' + epProzent(a.klicks, a.zugestellt) + '</small></td>' +
         '<td class="z">' + (gratis ? (a.eintragungen != null ? a.eintragungen + ' <small>Anmeldungen</small>' : "–") : a.verkaeufe) + '</td>' +
-        '<td class="z">' + (!gratis && a.klicks && a.verkaeufe <= a.klicks ? epProzent(a.verkaeufe, a.klicks) : "–") + '</td>' +
+        '<td class="z">' + (!gratis && a.klicks >= 10 && a.verkaeufe <= a.klicks ? epProzent(a.verkaeufe, a.klicks) : "–") + '</td>' +
         '<td class="z">' + epGeld(a.umsatz) + '</td><td class="z">' + epGeld(a.bump) + '</td><td class="z">' + epGeld(a.upsell) +
         '</td><td class="z"><b>' + epGeld(a.gesamt) + '</b></td></tr>';
     }).join("");
@@ -8709,7 +8709,7 @@ var MASTER = (function () {
       '<th class="z">Geöffnet</th><th class="z">Klicks</th><th class="z">Verkäufe</th><th class="z">Konversion</th><th class="z">Umsatz</th>' +
       '<th class="z">Bump</th><th class="z">Upsell</th><th class="z">Gesamt</th></tr></thead><tbody>' + zeilen + '</tbody></table></div>' +
       '<p class="note">Verkäufe sind alle Käufe des Produkts im Zeitraum, auch über Instagram: ThriveCart weiss nicht, woher ein Kauf kam. ' +
-      'Konversion ist Verkäufe durch Klicks und bleibt leer, wenn es mehr Käufe als Klicks gab, weil dann ein anderer Weg mitgezählt ist.</p>';
+      'Konversion ist Verkäufe durch Klicks. Sie steht erst ab 10 Klicks, weil sie darunter Zufall misst, und bleibt leer, wenn es mehr Käufe als Klicks gab.</p>';
   }
 
   function epAuswahl(werte, aktuell, leer) {
@@ -8771,7 +8771,7 @@ var MASTER = (function () {
           '<td class="z">' + (kommt ? "–" : epProzent(m.geoeffnet, m.zugestellt)) + '</td>' +
           '<td class="z">' + (kommt ? "–" : m.klicks + ' <small>' + epProzent(m.klicks, m.zugestellt) + '</small>') + '</td>' +
           '<td class="z">' + (eigene.length || "–") + '</td>' +
-          '<td class="z">' + (eigene.length && m.klicks >= eigene.length ? epProzent(eigene.length, m.klicks) : "–") + '</td>' +
+          '<td class="z">' + (m.klicks >= 10 && m.klicks >= eigene.length ? epProzent(eigene.length, m.klicks) : "–") + '</td>' +
           '<td class="z">' + epGeld(summeE) + '</td><td class="z">' + epGeld(teil(["bump"])) + '</td>' +
           '<td class="z">' + epGeld(teil(["upsell", "downsell"])) + '</td>' +
           '<td class="z">' + (m.seite ? '<a href="' + esc(m.seite) + '" target="_blank" rel="noopener">Seite</a>' : "") + '</td></tr>';
