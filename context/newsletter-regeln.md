@@ -567,9 +567,32 @@ Seite ohne Streichpreis und ohne Frist sieht, bricht ab.
 
 - **Der Streichpreis steht auch auf der Verkaufsseite**, nicht nur in der Mail.
 - **Ein Banner oder Countdown** oben auf der Seite, solange die Aktion läuft.
-- 🚨 Bei ThriveCart heisst das: Kassentext und Preisoption vor dem Versand
-  prüfen. Eine Mail, die 199 verspricht, und eine Kasse, die 333 abbucht, ist
-  schlimmer als keine Aktion.
+
+### Der Aufbau jedes zeitlich begrenzten Angebots (seit 06.11.2026)
+
+Gilt für alles, was nur so und so lang gilt, auch das Sonderangebot nach dem
+MBA-Webinar. **Ausnahme: Upsells**, dort ist das Angebot ohnehin weg, wenn sie nicht
+klickt.
+
+1. **Eigene Kopie in ThriveCart** als neues Produkt, nur über diese Aktion erreichbar.
+   Beim Klonen prüfen: Kassentext, Kurs-Zugang, Tag, Bump, Upsell, Partnerprogramm.
+2. **FOMO-Trigger direkt auf der Kasse:** Oben steht unübersehbar, dass es ein Flash Sale
+   ist, mit Countdown oder Banner „Nur für 2 Tage für CHF 249 statt CHF 333“.
+3. **Die Mails führen direkt auf diese Kasse, nicht auf die Landingpage.** Der
+   Kassentext muss deshalb das Angebot allein tragen.
+4. **Deadline Funnel:** neue Kampagne je Angebot, nach Ablauf geht der Link auf die
+   normale Kasse. Den Code ins Tracking der ThriveCart-Kopie einfügen, die Leiste auf
+   der Seite prüfen, in den Mails den speziellen Link verwenden.
+5. **Ablauf einmal durchspielen:** Preis in der Kasse prüfen und testen, dass man nach Ablauf wirklich beim normalen Preis landet. Eine Mail, die 199 verspricht, und eine Kasse, die 333 abbucht, ist schlimmer als keine Aktion.
+
+**Welche Art von Frist:**
+
+| | Wann | Warum |
+|---|---|---|
+| **Festes Datum** | Flash Sale an die Liste | alle haben dieselbe Endzeit, deshalb stimmt „heute 23:59“ in jeder Mail |
+| **Evergreen** | Automation, zum Beispiel nach dem Webinar | jede Person bekommt ihre eigene Frist, in der Automation am Anfang ein Webhook, **bevor** sie aktiv wird |
+
+🚨 Bei Evergreen darf in der Mail keine feste Uhrzeit stehen, sonst stimmt sie nicht.
 
 ---
 
