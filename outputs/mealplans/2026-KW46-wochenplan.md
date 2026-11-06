@@ -113,7 +113,7 @@ Alle aus **deinen MyBodyAdvice-Plänen** und diese Woche neu. Unter der Woche wi
 
 ## 🔥 AKTIONEN
 
-**Migros** (aktionis.ch, erste von vier Seiten geprüft, die übrigen nicht):
+**Migros** (aktionis.ch, alle vier Seiten geprüft):
 
 | Produkt | Preis | gilt | Für |
 |---|---|---|---|
@@ -124,6 +124,14 @@ Alle aus **deinen MyBodyAdvice-Plänen** und diese Woche neu. Unter der Woche wi
 | Fondue Moitié-Moitié AOP, 2 × 600 g | 19.50 statt 27.90 | 5.11. bis 11.11.2026 | M Sa |
 | Agnesi-Spaghetti, 750 g | 2.50 statt 3.75 | 5.11. bis 11.11.2026 | M Mo |
 | Quick Rollschinkli Stotzen | 1.60 statt 2.40 / 100 g | 29.10. bis 30.12.2026 | Z Do |
+| Rindshackfleisch IP-SUISSE | 1.65 statt 2.10 / 100 g | 5.11. bis 11.11.2026 | A Di |
+| Bio Pouletbrust-Aufschnitt | 3.95 statt 4.95 / 100 g | 5.11. bis 11.11.2026 | F So |
+| Bio Kartoffeln festkochend, 2 kg | 4.50 statt 5.70 | 5.11. bis 11.11.2026 | M Do |
+| Bio Nüsslisalat, 125 g | 2.95 statt 3.95 | 5.11. bis 11.11.2026 | M Fr |
+| M-Classic Polenta fein, 1 kg | nur 1.45, ohne Streichpreis | 5.11. bis 11.11.2026 | M Fr |
+| Bio Milch Drink UHT, ab 2 Stück | 1.60 statt 2.– / l | 5.11. bis 11.11.2026 | M Fr, M So, Z Di, Z Sa, Z So |
+| Emmentaler mild | 1.20 statt 1.55 / 100 g | 5.11. bis 11.11.2026 | Z Mo, F Mo, A Mo |
+| Die Butter, 4 × 250 g | 14.50 statt 15.80 | 5.11. bis 11.11.2026 | M Di, M Fr, M So, Z So + Vorrat |
 
 🚨 **Die Steaks und Schenkel brauchst du am Di und Mi. Das Fondue und die Spaghetti erst später, sie müssen aber bis Mi 11.11. im Haus sein.**
 
@@ -133,7 +141,7 @@ Alle aus **deinen MyBodyAdvice-Plänen** und diese Woche neu. Unter der Woche wi
 
 ## 🛒 EINKAUFSLISTE
 
-> **M** = Mittag (5) · **Z** = Familien-Znacht (6) · **F** = dein Frühstück · **A** = dein Abendessen · 🔥 = Aktion bis 11.11.
+> **M** = Mittag (5) · **Z** = Familien-Znacht (6) · **F** = dein Frühstück · **A** = dein Abendessen · 🔥 = Aktion (Migros bis 11.11., Gemüsemann bis 12.11.)
 
 ### 🥩 Fleisch & Wurst — *Metzger: Kalbfleisch mit Knochen und Füessli bestellen*
 - [ ] 🔥 750 g Schweinsnierstück-Steaks (5 Stück) — M Di
@@ -141,14 +149,14 @@ Alle aus **deinen MyBodyAdvice-Plänen** und diese Woche neu. Unter der Woche wi
 - [ ] 1 kg Rindsgulasch — M Do
 - [ ] 1 kg Kalbfleisch zum Sieden + Knochen und Kalbsfüessli — M So
 - [ ] 625 g gemischtes Hackfleisch — M Mo
-- [ ] 110 g mageres Rindshack — A Di
+- [ ] 🔥 110 g Rindshack — A Di
 - [ ] 30 g magerer Schinken — A Mi
 - [ ] 195 g Pouletbrust — A Fr (85 g) · A So (110 g)
-- [ ] 25 g Poulet-Aufschnitt — F So
+- [ ] 🔥 25 g Bio Pouletbrust-Aufschnitt — F So
 - [ ] 🔥 1 kg Quick-Rollschinkli — Z Do
 
 ### 🥔 Kartoffeln
-- [ ] 650 g festkochend — M Do Gschwellti
+- [ ] 🔥 Bio festkochend, 2-kg-Tasche (650 g gebraucht) — M Do Gschwellti
 - [ ] 1,3 kg mehligkochend — M So Stock (1,2 kg) · A So (130 g)
 - [ ] ½ Süsskartoffel (95 g) — A So
 
@@ -163,12 +171,13 @@ Alle aus **deinen MyBodyAdvice-Plänen** und diese Woche neu. Unter der Woche wi
 - [ ] 2 Knollen Knoblauch — M Mi, M Do, M Fr, M Sa, M Mo · Z Mi · A Mi, A Fr, A So
 - [ ] 3 Bundzwiebeln — A Mi · A Mo (2)
 - [ ] 2 Stängel Stangensellerie — A Sa
-- [ ] Salat: 125 g Nüsslisalat (M Fr) · 3 Kopfsalate (M Mo, Z Fr, Z Mo, ein Blatt F Mo) · 1 Rucola (A Mi, A Do)
+- [ ] 🔥 125 g Bio Nüsslisalat — M Fr
+- [ ] Salat: 3 Kopfsalate (M Mo, Z Fr, Z Mo, ein Blatt F Mo) · 1 Rucola (A Mi, A Do)
 - [ ] Kräuter: Majoran (M Do) · Rosmarin (M Fr) · Petersilie (M So, M Mo, F Sa) · Schnittlauch (Z Fr, F Sa) · Thymian (M So, A So) · Basilikum (Z Mi, A Do) · Dill (A Sa)
 
 ### 🍎 Früchte
-- [ ] 1,5 kg Äpfel — Z Di (6) · Z Do (2)
-- [ ] 1 Avocado — F Fr
+- [ ] 🔥 1,5 kg Äpfel (Gemüsemann) — Z Di (6) · Z Do (2)
+- [ ] 🔥 1 Bio-Avocado (Gemüsemann) — F Fr
 - [ ] ½ Banane — F Do
 - [ ] 3 Zitronen — M Do (Schale) · M So · Z Do · A Sa
 - [ ] 1 Limette — A Fr
@@ -177,7 +186,7 @@ Alle aus **deinen MyBodyAdvice-Plänen** und diese Woche neu. Unter der Woche wi
 ### 🥛 Milchprodukte & Eier
 - [ ] **33 Eier** — Z Fr (10) · Z So (4) · Z Mo (12) · M Mo (3) · F Fr (2) · F Sa · A Mo
 - [ ] 🔥 **Fondue Moitié-Moitié Duo-Pack (2 × 600 g)** — M Sa
-- [ ] **Milch ca. 5,5 l** — Z Di (1,5 l) · Z Sa (1,5 l) · M Fr (6 dl) · M So (Sauce und Stock) · Z So
+- [ ] 🔥 **Bio Milch Drink UHT, 6 × 1 l** (ca. 5,5 l gebraucht) — Z Di (1,5 l) · Z Sa (1,5 l) · M Fr (6 dl) · M So (Sauce und Stock) · Z So
 - [ ] **Magerquark ca. 1,65 kg** — Z Fr (800 g) · Z Sa (600 g) · F Fr (95 g) · F So (80 g) · F Mo (50 g)
 - [ ] 225 g Kräuterquark — F Mo (120 g) · A Fr (55 g) · A Sa (50 g)
 - [ ] 200 g Skyr — F Do
@@ -185,10 +194,11 @@ Alle aus **deinen MyBodyAdvice-Plänen** und diese Woche neu. Unter der Woche wi
 - [ ] 475 g Crème fraîche — M Do (225 g) · M Fr (250 g)
 - [ ] 120 g Mozzarella light — F Sa · A Do
 - [ ] 1 kleiner Philadelphia — F So · A Mi
-- [ ] Käse: 160 g Gruyère (M Fr) · 90 g Parmesan (M Mo, A Mi, Z Mi) · 640 g Schnittkäse (Z Mo, F Mo, A Mo)
+- [ ] 🔥 640 g Emmentaler mild als Schnittkäse — Z Mo, F Mo, A Mo
+- [ ] Käse: 160 g Gruyère (M Fr) · 90 g Parmesan (M Mo, A Mi, Z Mi)
 - [ ] Mandeldrink 3 dl — F Di · A Mi
 - [ ] Kokosdrink 2 dl — F Mi
-- [ ] Butter ca. 300 g — M Di (100 g) · M Fr · M So (Sauce und Stock) · Z So
+- [ ] 🔥 Die Butter, 4 × 250 g (ca. 300 g gebraucht, Rest Vorrat) — M Di (100 g) · M Fr · M So (Sauce und Stock) · Z So
 
 ### 🍞 Brot & Stärke
 - [ ] 3 Ruchbrote — M Sa (2) · Z So
@@ -201,7 +211,7 @@ Alle aus **deinen MyBodyAdvice-Plänen** und diese Woche neu. Unter der Woche wi
 - [ ] 145 g Kichererbsennudeln — A Mi · A Do
 - [ ] 400 g Trockenreis + 45 g Basmati — M Mi · A Di
 - [ ] 225 g Rundkornreis — Z Di
-- [ ] 310 g Maisgriess — M Fr
+- [ ] 🔥 M-Classic Polenta fein, 1 kg (310 g gebraucht) — M Fr
 - [ ] 330 g Vollkorngriess — Z Sa
 - [ ] Haferflocken 340 g — F Di, Mi, Do, Sa, So · A Mo
 - [ ] Mehl ca. 400 g — M Di · M Do · M So (60 g) · Z Fr (200 g) · Z So (100 g)
@@ -229,6 +239,19 @@ Alle aus **deinen MyBodyAdvice-Plänen** und diese Woche neu. Unter der Woche wi
 ### 🧂 Gewürze & Öle — prüfen
 - [ ] Olivenöl · Erdnussöl · Bratbutter · Essig · Balsamico · Senf · Maizena · Backpulver · Vanilleschote
 - [ ] Paprika (edelsüss + geräuchert) · Kümmel · Muskat · Zimt · Zucker · Cayenne · Kreuzkümmel · Pizzagewürz · Nelke · Lorbeer · Kräutersalz
+
+### 🔥 Aktion für Znüni, Zvieri und Vorrat — nur wenn ihr es braucht
+- [ ] 🔥 Bio Clementinen, 1,5 kg — 4.30 statt 5.75
+- [ ] 🔥 Blondorangen, 2 kg — 2.20 statt 2.80
+- [ ] 🔥 Birnen Conférence — 2.96 statt 3.95 / kg
+- [ ] 🔥 Bio Gurken, ab 2 Stück — 1.13 statt 1.50
+- [ ] 🔥 M-Classic Cracker gesalzen, 3 × 100 g — 0.67 / 100 g
+- [ ] 🔥 Sun Queen Nussmischung oder Mandelkerne — z. B. 400 g 10.50 statt 13.18
+- [ ] 🔥 Agnesi Tortiglioni, Pennette oder Spaghetti auf Vorrat, 750 g — 2.50 statt 3.75
+- [ ] 🔥 Kristallzucker IP-SUISSE, 4 × 1 kg — 5.40 statt 7.20
+- [ ] 🔥 Thomy Senf mild — 20 % günstiger
+- [ ] 🔥 Linsoft Taschentücher Classic, 15 × 10 Stück — Aktion bis 11.11.
+- [ ] 🔥 Persil Gel Lavendel, 4,5 l — nur 28.95, bis 18.11.
 
 ### ✅ Immer-Check
 - [ ] Znüni Kids: Farmer, Darvida/Blevita, Nüsse, Trockenfrüchte, Reiswaffeln
@@ -337,5 +360,5 @@ Schweinssteak an Rotwein-Pfeffer-Sauce · Pouletschenkel mit Peperonata · Rinds
 | Frühstück unter der Woche ohne Kochen am Morgen | ✅ Di, Mi über Nacht · Do Granola vorgebacken · Fr, Mo vorbereitet |
 | Frühstück und Abend ≤ 30 g Protein | ✅ 28–30 g *(geschätzt)* |
 | Tag ≥ 100 g Protein | ✅ 101–106 g *(geschätzt)* |
-| Aktionen | ✅ Migros erste Seite und Kräuchi geprüft |
+| Aktionen | ✅ Migros alle vier Seiten und Kräuchi geprüft, in der Einkaufsliste mit 🔥 markiert |
 | Einkaufsliste deckt alle Rezepte | ✅ inkl. Familien-Znacht |
