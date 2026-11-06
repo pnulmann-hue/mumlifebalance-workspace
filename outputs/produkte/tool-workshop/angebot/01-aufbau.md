@@ -4,7 +4,7 @@ tags: [produkt]
 
 # 01 · Aufbau Tool-Workshop
 
-Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung, Aufzeichnung in ThriveCart Learn.
+Werte aus `00-bauplan.md`. Live 11. und 12.11.2026, danach drei Tage Begleitung, Aufzeichnung in ThriveCart Learn.
 
 ## Vorbereitung (Mail 0 und Lektion „Bevor es losgeht“)
 
@@ -16,7 +16,7 @@ Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung,
 
 **Warum das Wissen beim Bauen hinein muss:** Ein einfaches Tool fragt später keine KI mehr. Alles, was es sagt, schreibt Claude beim Bauen in die Datei. Wer ein Workbook mitbringt, lädt es per Büroklammer in den Chat („Bau die Ergebnisse aus dem Wissen in diesem Dokument“). Wer nichts hat, beschreibt, was das Tool können soll, und Claude füllt den Rest mit allgemeinem Wissen. Dann gilt: jedes Ergebnis selbst ausfüllen, lesen und im Chat nachschärfen, bis es klingt wie sie und stimmt. Das Wissen ist danach eingefroren: Änderung im Chat, neue Datei auf Netlify. Keine Heilversprechen in Ergebnistexten, auch wenn sie im Firmenmaterial stehen.
 
-## Tag 1 · Di 10.11. · Dein Tool (live, 19:00 Uhr, rund 90 Minuten)
+## Tag 1 · Mi 11.11. · Dein Tool (live, 19:00 Uhr, rund 90 Minuten)
 
 | Teil | Inhalt | Ergebnis |
 |---|---|---|
@@ -30,7 +30,7 @@ Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung,
 
 **Hausaufgabe bis Tag 2:** Tool drei Personen schicken und fragen, ob das Ergebnis stimmt.
 
-## Tag 2 · Mi 11.11. · Deine Seite (live, 19:00 Uhr, rund 90 Minuten)
+## Tag 2 · Do 12.11. · Deine Seite (live, 19:00 Uhr, rund 90 Minuten)
 
 | Teil | Inhalt | Ergebnis |
 |---|---|---|
@@ -90,4 +90,4 @@ Werte aus `00-bauplan.md`. Live 10. und 11.11.2026, danach drei Tage Begleitung,
 
 ## Nach den Live-Tagen (Patricias Entscheid 29.10.)
 
-Der Workshop wird nach dem 11.11. als **Aufzeichnung** weiterverkauft, wie es Julia macht. Im Workshop und danach wird auf die **Digitale Produktwelt** gepitcht, KI-Kurs und Mum Business Academy werden erwähnt. Der Kasten im Nischengenerator stellt sich am 12.11. von selbst auf „Aufzeichnung“ um. ⚠️ Offen: Preis der Aufzeichnung, ob die Begleitung wegfällt, Texte von Kasse und Anmeldeseite auf Aufzeichnung umstellen.
+Der Workshop wird nach dem 12.11. als **Aufzeichnung** weiterverkauft, wie es Julia macht. Im Workshop und danach wird auf die **Digitale Produktwelt** gepitcht, KI-Kurs und Mum Business Academy werden erwähnt. Der Kasten im Nischengenerator stellt sich am 13.11. von selbst auf „Aufzeichnung“ um. ⚠️ Offen: Preis der Aufzeichnung, ob die Begleitung wegfällt, Texte von Kasse und Anmeldeseite auf Aufzeichnung umstellen.

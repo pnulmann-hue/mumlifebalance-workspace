@@ -124,3 +124,7 @@ Eingesetzt in Produkt 53 (CHF) und 54 (EUR), jeweils mit „Save to this product
 - **Ablehnungs-Text** auf allen vier Seiten in Du-Form: „Nein danke, ich bleibe beim Tool-Workshop“.
 - Im Editor zeigt ThriveCart den Block nur als „CUSTOM HTML“. Wie er aussieht, sieht man erst nach einem Kauf oder in der
   Vorschau `outputs/salespages/tool-workshop-checkout/*.html`.
+
+## Stand 06.11.2026: Termin verschoben
+
+Beide Kassen (53 und 54) tragen seit 06.11. den neuen Termin: Mi 11. und Do 12.11., Begleitung 13. bis 15.11., Bump „vor dem 11. November“. Im HTML-Block (Quelle `outputs/salespages/tool-workshop-checkout/kasse-block.html`) und im Bump-Text von Hand gesetzt, live geprüft. Beim Speichern fragt die Franken-Kasse nach „Save to this product only“: erst danach ist gespeichert. Das Feld übernimmt eine Änderung per Skript nur nach einem echten Tastendruck.
