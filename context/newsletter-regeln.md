@@ -590,7 +590,7 @@ klickt.
 | | Wann | Warum |
 |---|---|---|
 | **Festes Datum** | Flash Sale an die Liste | alle haben dieselbe Endzeit, deshalb stimmt „heute 23:59“ in jeder Mail |
-| **Evergreen** | Automation, zum Beispiel nach dem Webinar | jede Person bekommt ihre eigene Frist, in der Automation am Anfang ein Webhook, **bevor** sie aktiv wird |
+| **Evergreen** | Automation, zum Beispiel nach dem Webinar | jede Person bekommt ihre eigene Frist. In ActiveCampaign kommt ganz an den Anfang der Automation der Schritt Workflow → Webhook mit der URL aus Deadline Funnel, **bevor** sie aktiv wird, sonst rutschen Leute ohne Timer durch |
 
 🚨 Bei Evergreen darf in der Mail keine feste Uhrzeit stehen, sonst stimmt sie nicht.
 
