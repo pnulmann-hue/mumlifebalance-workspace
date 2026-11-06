@@ -28,11 +28,16 @@ dass wir ihr Vorgehen kopieren sollen, sie hat damit Erfolg, und genau das ist
 ihr Ziel für uns.
 
 🚨 **Diese Datei zeige ich im Kurs.** Deshalb steht hier kein Name und keine
-fremden Sätze. Die fertigen Mailtexte und Betreffzeilen liegen im
-**Launch-Themenbuch** unter `reference/`, Abschnitt 17 („E-Mails im Launch") —
-dort bleiben sie. Für meine eigenen Mails arbeite ich damit; `/copywriting` nimmt den Aufbau
-und schreibt die Sätze in meiner Stimme. Das ist meine eigene Grenze:
-**was an Kundinnen geht, trägt meinen Wortlaut.**
+fremden Sätze. Die fertigen Mailtexte und Betreffzeilen liegen unter `reference/`:
+die Verkaufsmails in den Learnings zum Kurs „Nur per E-Mail verkauft", die
+Launch-Mails im Launch-Themenbuch, Abschnitt 17.
+
+**So nutze ich sie (mein Entscheid vom 06.11.2026, genau so vom Kurs vorgesehen):**
+eine passende Vorlage kopieren und auf mein Produkt, meinen Preis und meine Frist
+umschreiben, statt jede Mail neu zu erfinden. **Aufbau und Tempo bleiben, die Fakten
+sind meine:** jede Geschichte, Zahl, Kundenstimme und jedes Ergebnis aus der Vorlage
+fliegt raus oder wird durch etwas Belegtes aus meinem Leben ersetzt. Die Mail
+läuft danach durch meine Stimme und die Blackliste.
 
 ---
 
@@ -231,7 +236,7 @@ Hebel nicht da.
 |---|---|
 | **Grosse Kurse und 1:1** | Hebel ist **Pflicht**. Die Frage „warum jetzt?" muss beantwortet sein — fehlender Hebel ist der häufigste Grund, warum ein grosses Angebot nicht verkauft |
 | **Minikurse um 39** | **kein Hebel nötig** — „entweder du willst den Kurs oder nicht". Der Preis ist der Hebel |
-| **Im Newsletter** | Verknappung wirkt dort ohnehin weniger als in einem Funnel mit Countdown. **Keine Platzangaben** („nur noch drei Plätze") — die müsste ich dauernd nachführen, und falsch stehengelassen ist sie schlimmer als keine |
+| **Im Newsletter** | **Seit 06.11.2026 kommt in jede Verkaufsmail ein FOMO**, auch begrenzte Plätze, wenn sie wirklich begrenzt sind. Platzangaben nur mit echtem Stand: falsch stehengelassen sind sie schlimmer als keine |
 
 **Was im Newsletter stattdessen geht:** ein Link, der **nur über diese Mail** und
 nur 24 oder 48 Stunden gilt. Das ist echt, muss nicht gepflegt werden und
@@ -469,11 +474,13 @@ funktioniert, wenn eine Geschichte dahinter steht („Gestern war ich baden").
 Alles andere an der Mail darf variieren — kurz, lang, mit Geschichte, mit
 Aufzählung, auch mal ein einzelner Satz. **Diese fünf nicht:**
 
-1. **Betreffzeile mit Spannung** — sie muss das Gefühl machen: wenn ich die nicht
-   öffne, verpasse ich etwas.
-2. **Der Angebotstitel mit dem Hebel darin** — „nur noch heute", „statt 333",
-   „fünf Plätze". Nicht nur der Produktname.
-3. **Der Link mindestens zweimal** — oben im Text hinter einem Wort, unten als
+1. **Betreffzeile mit Hype** — sie muss das Gefühl machen: wenn ich die nicht
+   öffne, verpasse ich etwas. Der Hype muss stimmen: eine echte Frist, ein echter
+   Preis, eine echte Geschichte.
+2. **Der Angebotstitel mit dem FOMO darin** — „nur noch 1 Stunde", „nur 3 Plätze",
+   „25 % günstiger". Nicht nur der Produktname. Das FOMO wähle ich je Mail im
+   E-Mail-Plan aus, und es muss stimmen.
+3. **Der Link mindestens zweimal, das ist Pflicht** — oben im Text hinter einem Wort, unten als
    Knopf, und im PS. Immer derselbe Link.
 4. **Ein Aufruf im Imperativ** — „Hol dir X." Ein Link, der nur hinter dem
    Produktnamen versteckt ist, reicht nicht.
@@ -490,6 +497,26 @@ einer zu viel — derselbe Link drei Mal ist richtig.
 🚨 **Bilder sparsam.** Viele Mailprogramme zeigen sie gar nicht an; die Mail muss
 ohne Bild vollständig sein. Dasselbe gilt für eine Kundenstimme: die Mail muss
 auch ohne sie Sinn ergeben.
+
+### Was in der Mitte steht: die Formate
+
+Die fünf Elemente bleiben, die Mitte wechselt. **Nie zweimal hintereinander dasselbe
+Format.** Die Länge wechselt mit, von zwei Sätzen bis rund 300 Wörter. Das Format wähle
+ich je Mail im E-Mail-Plan aus.
+
+| Format | Was passiert |
+|---|---|
+| **Problem-Szene** | ein Moment, den sie kennt, daraus folgt das Angebot |
+| **Geschichte** | eine echte Geschichte aus meinem Business, vorher und nachher |
+| **Irrtum aufklären** | warum das Übliche nicht klappt, was stattdessen hilft |
+| **Erklärung** | was etwas eigentlich ist, einfach gesagt, mit einem Beispiel |
+| **Auflistung** | was sie bekommt oder was sich ändert, als Haken-Liste |
+| **Ablauf** | was wann passiert, vor allem bei Live-Terminen |
+| **Kundenstimme** | ein echter Fall mit Freigabe, die Mail muss auch ohne ihn Sinn ergeben |
+| **Rechenvergleich** | sehr kurz: was es sonst kostet, was es hier kostet |
+| **Platz-Stand** | wie viele Plätze noch frei sind, nur mit echtem Stand |
+| **Letzte Chance mit Liste** | was passiert, wenn sie zugreift, dazu die Uhrzeit |
+| **Ganz kurz** | zwei, drei Sätze: Frist, Aufruf, Link |
 
 ### Wie ich schreibe
 

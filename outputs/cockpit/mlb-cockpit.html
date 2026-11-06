@@ -2425,6 +2425,11 @@
   .ep-tab { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 13px; }
   .ep-tab th { background: var(--surface-2); font-size: 11px; font-weight: normal; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); text-align: left; padding: 8px 10px; white-space: nowrap; }
   .ep-tab td { border-top: 1px solid var(--line); padding: 7px 10px; vertical-align: middle; white-space: nowrap; }
+  .ep-tab .ep-erste b { display: block; font-weight: 600; }
+  .ep-tab .ep-erste small { display: block; }
+  .ep-tab tr.ep-summe td { background: var(--surface-2); font-weight: 600; }
+  .ep-tab tr.ep-ohne td { background: var(--orange-soft); }
+  .ep-tab tr.ep-ohne td.ep-erste { background: var(--surface); }
   .ep-tab .z { text-align: right; font-variant-numeric: tabular-nums; }
   .ep-tab small { color: var(--ink-soft); font-size: 11px; }
   .ep-tab a { color: var(--teal); }
@@ -8568,6 +8573,10 @@ var MASTER = (function () {
   var EP_MONATSNAME = { "01": "Januar", "09": "September", "10": "Oktober", "11": "November", "12": "Dezember" };
   var EP_ANGEBOT = ["Mehrwert + Angebot", "Flash Sale", "Neues Produkt", "Neues Format", "Bundle", "1:1 Spezial",
     "Erinnerung", "Letzte Chance", "Einladung gratis", "Kein Verkauf"];
+  var EP_FOMO = ["Nur heute", "Nur noch 1 Stunde", "Nur 48 Stunden", "Nur 3 Tage", "Nur 3 Plätze", "Nur 5 Plätze",
+    "% günstiger für kurze Zeit", "Preis steigt danach", "Zum letzten Mal", "Kein FOMO"];
+  var EP_FORMAT = ["Problem-Szene", "Geschichte", "Irrtum aufklären", "Erklärung", "Auflistung", "Ablauf", "Kundenstimme",
+    "Rechenvergleich", "Platz-Stand", "Letzte Chance mit Liste", "Ganz kurz"];
   var EP_GRUPPEN = ["Minikurse", "Kurse", "Grosse Kurse", "Programme", "Bundles", "1:1 und Begleitung"];
   var EP_TAGE = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
 
@@ -8577,6 +8586,14 @@ var MASTER = (function () {
   }
   function epGeld(x) { return x ? Number(x).toLocaleString("de-CH", { maximumFractionDigits: 2 }) : "–"; }
   function epProzent(z, n) { return n ? (z / n * 100).toFixed(1).replace(".", ",") + " %" : "–"; }
+  // Welche Art Aktion zum Preis passt: Einzeltag bis rund 40, 48 Stunden bis 300, darueber 3 Tage.
+  function epFomoVorschlag(preis) {
+    var n = Number(preis);
+    if (!n) return "";
+    if (n <= 40) return "Nur heute";
+    if (n <= 300) return "Nur 48 Stunden";
+    return "Nur 3 Tage";
+  }
   function epPlanLeer() { return { zeilen: [], vorrat: [] }; }
 
   function epLaden(fertig) {
@@ -8673,9 +8690,8 @@ var MASTER = (function () {
       tile("Verkäufe", epProfil === "mentoring" ? String(verk.length) : "–", epProfil === "mentoring" ? "ThriveCart, alle Wege" : "nicht über ThriveCart") +
       tile("Umsatz", epProfil === "mentoring" ? (umsatz ? "CHF " + epGeld(umsatz) : "–") : "–", "") +
       '</div>';
-    if (epProfil === "mentoring") html += epAktionen();
     html += epTabelle(heute);
-    if (epProfil === "mentoring") html += epVorrat();
+    if (epProfil === "mentoring") html += epAktionen() + epVorrat();
     if (epDaten.stand) {
       var a = epDaten.automationen || {};
       html += '<p class="note ep-fuss">Stand ' + esc(fmtDate(epDaten.stand)) + ' · Liste „Regulärer Newsletter“: ' + esc(epDaten.liste) +
@@ -8704,12 +8720,12 @@ var MASTER = (function () {
         '<td class="z">' + epGeld(a.umsatz) + '</td><td class="z">' + epGeld(a.bump) + '</td><td class="z">' + epGeld(a.upsell) +
         '</td><td class="z"><b>' + epGeld(a.gesamt) + '</b></td></tr>';
     }).join("");
-    return '<h2 class="ep-titel">Aktionen</h2><div class="ep-wrap"><table class="ep-tab"><thead><tr>' +
+    return '<details class="panel ep-vorrat"><summary>Zusammengezählt je Aktion</summary><div class="ep-wrap"><table class="ep-tab"><thead><tr>' +
       '<th class="ep-erste">Zeitraum</th><th>Produkt</th><th>Angebot</th><th class="z">Preis</th><th class="z">Mails</th><th class="z">Geschickt</th>' +
       '<th class="z">Geöffnet</th><th class="z">Klicks</th><th class="z">Verkäufe</th><th class="z">Konversion</th><th class="z">Umsatz</th>' +
       '<th class="z">Bump</th><th class="z">Upsell</th><th class="z">Gesamt</th></tr></thead><tbody>' + zeilen + '</tbody></table></div>' +
       '<p class="note">Verkäufe sind alle Käufe des Produkts im Zeitraum, auch über Instagram: ThriveCart weiss nicht, woher ein Kauf kam. ' +
-      'Konversion ist Verkäufe durch Klicks. Sie steht erst ab 10 Klicks, weil sie darunter Zufall misst, und bleibt leer, wenn es mehr Käufe als Klicks gab.</p>';
+      'Konversion ist Verkäufe durch Klicks. Sie steht erst ab 10 Klicks, weil sie darunter Zufall misst, und bleibt leer, wenn es mehr Käufe als Klicks gab.</p></details>';
   }
 
   function epAuswahl(werte, aktuell, leer) {
@@ -8720,19 +8736,39 @@ var MASTER = (function () {
     }).join("");
   }
 
-  function epPlanZeile(tagText, datum, z, istErste) {
+  // Eine Zeile zum Planen. Spalten wie in der Master-Tabelle, dazu der Block Betreff, Format, FOMO.
+  function epPlanZeile(datum, slot, z, kopf) {
     var namen = (epPlan.vorrat || []).map(function (v) { return v.name; });
-    var id = z ? z.id : "";
-    return '<tr class="ep-plan" data-datum="' + datum + '" data-id="' + esc(id) + '">' +
-      '<td class="ep-erste">' + (istErste ? tagText : "") + '</td>' +
-      '<td class="ep-wenn"><input data-feld="thema" placeholder="Thema oder Betreff" value="' + esc(z ? z.thema : "") + '"></td>' +
+    return '<tr class="ep-plan" data-datum="' + datum + '" data-slot="' + slot + '" data-id="' + esc(z ? z.id : "") + '">' +
+      '<td class="ep-erste">' + kopf + '</td>' +
       '<td><select data-feld="produkt">' + epAuswahl(namen, z ? z.produkt : "", "Produkt wählen") + '</select></td>' +
       '<td><select data-feld="angebot">' + epAuswahl(EP_ANGEBOT, z ? z.angebot : "", "Angebot wählen") + '</select></td>' +
       '<td class="z"><input class="ep-kurz" data-feld="preis" placeholder="Preis" value="' + esc(z ? z.preis : "") + '"></td>' +
-      '<td colspan="8"><input data-feld="link" placeholder="Link zur Seite" value="' + esc(z ? z.link : "") + '"></td>' +
-      '<td class="ep-aktion">' + (z ? '<button class="del" data-weg="' + esc(id) + '" title="Zeile löschen" aria-label="Zeile löschen">×</button>' : "") +
-      (z ? '<button class="del" data-noch="' + datum + '" title="Zweite Mail an diesem Tag" aria-label="Zweite Mail an diesem Tag">+</button>' : "") +
-      '</td></tr>';
+      '<td><input data-feld="link" placeholder="Link zur Seite" value="' + esc(z ? z.link : "") + '"></td>' +
+      '<td class="ep-wenn"><input data-feld="thema" placeholder="Thema oder Betreff" value="' + esc(z ? z.thema : "") + '"></td>' +
+      '<td><select data-feld="format">' + epAuswahl(EP_FORMAT, z ? z.format : "", "Format wählen") + '</select></td>' +
+      '<td><select data-feld="fomo">' + epAuswahl(EP_FOMO, z ? z.fomo : "", "FOMO wählen") + '</select></td>' +
+      '<td><input data-feld="fomoText" placeholder="So steht es im Titel" value="' + esc(z ? z.fomoText : "") + '"></td>' +
+      '<td class="z ep-still" colspan="15"></td>' +
+      '<td class="ep-aktion">' + (z ? '<button class="del" data-weg="' + esc(z.id) + '" title="Zeile leeren" aria-label="Zeile leeren">×</button>' : "") + '</td></tr>';
+  }
+
+  function epZahl(n) { return n ? String(n) : "–"; }
+
+  // Verkaeufe eines Tags nach Stelle an der Kasse zusammenzaehlen.
+  function epKasse(liste) {
+    var teil = function (stellen) { return liste.filter(function (v) { return stellen.indexOf(v.stelle) >= 0; }); };
+    var geld = function (l) { return l.reduce(function (s, v) { return s + v.betrag; }, 0); };
+    var haupt = teil(["product"]), bump = teil(["bump"]), up1 = teil(["upsell"]), up2 = teil(["downsell"]);
+    return { sales: haupt.length, umsatz: geld(haupt), bump: bump.length, bumpU: geld(bump), up1: up1.length, up1U: geld(up1),
+      up2: up2.length, up2U: geld(up2), gesamt: geld(liste) };
+  }
+  function epKasseZellen(k) {
+    return '<td class="z">' + epZahl(k.sales) + '</td><td class="z">' + epGeld(k.umsatz) + '</td>' +
+      '<td class="z">' + epZahl(k.bump) + '</td><td class="z">' + epGeld(k.bumpU) + '</td>' +
+      '<td class="z">' + epZahl(k.up1) + '</td><td class="z">' + epGeld(k.up1U) + '</td>' +
+      '<td class="z">' + epZahl(k.up2) + '</td><td class="z">' + epGeld(k.up2U) + '</td>' +
+      '<td class="z"><b>' + epGeld(k.gesamt) + '</b></td><td></td>';
   }
 
   function epTabelle(heute) {
@@ -8740,67 +8776,88 @@ var MASTER = (function () {
     var anzahl = new Date(Number(t[0]), Number(t[1]), 0).getDate();
     var gemessen = {};
     (epDaten.mails || []).forEach(function (m) { gemessen[m.id] = 1; });
+    var alleMails = epMailsMonat();
+    var summe = { geschickt: 0, zugestellt: 0, geoeffnet: 0, klicks: 0 };
+    var alleVerk = [];
     var zeilen = "";
     for (var i = 1; i <= anzahl; i++) {
       var datum = epMonat + "-" + ("0" + i).slice(-2);
       var d = new Date(Number(t[0]), Number(t[1]) - 1, i);
-      var tagText = EP_TAGE[d.getDay()] + " " + i + "." + Number(t[1]) + ".";
-      var mails = epMailsMonat().filter(function (m) { return m.datum === datum; });
+      var tag = EP_TAGE[d.getDay()] + " " + ("0" + i).slice(-2) + "." + t[1] + "." + t[0];
+      var mails = alleMails.filter(function (m) { return m.datum === datum; });
       var plan = epProfil === "mentoring" ? (epPlan.zeilen || []).filter(function (z) {
         return z.datum === datum && !(z.kampagne && gemessen[z.kampagne]);
       }) : [];
       var verk = epProfil === "mentoring" ? (epDaten.verkaeufe || []).filter(function (v) {
         return v.datum === datum && v.art === "charge";
       }) : [];
-      var erste = true;
+      alleVerk = alleVerk.concat(verk);
       var heuteKl = datum === heute ? " ep-heute" : "";
-      mails.forEach(function (m) {
-        var kommt = m.stand !== "verschickt";
-        var eigene = verk.filter(function (v) { return v.gruppe === m.gruppe && v.stelle === "product"; });
-        var alle = verk.filter(function (v) { return v.gruppe === m.gruppe; });
-        var summeE = eigene.reduce(function (s, v) { return s + v.betrag; }, 0);
-        var teil = function (st) {
-          return alle.filter(function (v) { return st.indexOf(v.stelle) >= 0; }).reduce(function (s, v) { return s + v.betrag; }, 0);
-        };
-        verk = verk.filter(function (v) { return v.gruppe !== m.gruppe; });
-        zeilen += '<tr class="ep-mail' + heuteKl + '"><td class="ep-erste">' + (erste ? tagText : "") + ' <small>' + esc(m.zeit) + '</small></td>' +
-          '<td class="ep-betreff">' + esc(m.betreff) + (kommt ? ' <span class="chip">eingeplant</span>' : "") + '</td>' +
-          '<td>' + esc(m.produkt || "–") + '</td><td>' + esc(m.angebot || "–") + '</td>' +
-          '<td class="z">' + (m.preis === 0 ? "0" : epGeld(m.preis)) + '</td>' +
-          '<td class="z">' + (kommt ? "–" : m.geschickt) + '</td>' +
-          '<td class="z">' + (kommt ? "–" : epProzent(m.geoeffnet, m.zugestellt)) + '</td>' +
-          '<td class="z">' + (kommt ? "–" : m.klicks + ' <small>' + epProzent(m.klicks, m.zugestellt) + '</small>') + '</td>' +
-          '<td class="z">' + (eigene.length || "–") + '</td>' +
-          '<td class="z">' + (m.klicks >= 10 && m.klicks >= eigene.length ? epProzent(eigene.length, m.klicks) : "–") + '</td>' +
-          '<td class="z">' + epGeld(summeE) + '</td><td class="z">' + epGeld(teil(["bump"])) + '</td>' +
-          '<td class="z">' + epGeld(teil(["upsell", "downsell"])) + '</td>' +
-          '<td class="z">' + (m.seite ? '<a href="' + esc(m.seite) + '" target="_blank" rel="noopener">Seite</a>' : "") + '</td></tr>';
-        erste = false;
+      ["Morgens", "Abends"].forEach(function (slot) {
+        var kopf = '<b>' + tag + '</b><small>' + slot + '</small>';
+        var hier = mails.filter(function (m) { return (m.zeit < "12:00" ? "Morgens" : "Abends") === slot; });
+        var planHier = plan.filter(function (z) {
+          var s = z.slot || (z.zeit && z.zeit >= "12:00" ? "Abends" : "Morgens");
+          return s === slot;
+        });
+        hier.forEach(function (m) {
+          var kommt = m.stand !== "verschickt";
+          var eigene = verk.filter(function (v) { return v.gruppe === m.gruppe; });
+          verk = verk.filter(function (v) { return v.gruppe !== m.gruppe; });
+          var k = epKasse(eigene);
+          if (!kommt) {
+            summe.geschickt += m.geschickt; summe.zugestellt += m.zugestellt;
+            summe.geoeffnet += m.geoeffnet; summe.klicks += m.klicks;
+          }
+          zeilen += '<tr class="ep-mail' + heuteKl + '"><td class="ep-erste">' + kopf + '</td>' +
+            '<td>' + esc(m.produkt || "–") + '</td><td>' + esc(m.angebot || "–") + '</td>' +
+            '<td class="z">' + (m.preis === 0 ? "0" : epGeld(m.preis)) + '</td>' +
+            '<td>' + (m.seite ? '<a href="' + esc(m.seite) + '" target="_blank" rel="noopener">Seite</a>' : "–") + '</td>' +
+            '<td class="ep-betreff">' + esc(m.betreff) + ' <small>' + esc(m.zeit) + '</small>' + (kommt ? ' <span class="chip">eingeplant</span>' : "") + '</td>' +
+            '<td>–</td><td>–</td><td>–</td>' +
+            '<td class="z">' + (kommt ? "–" : m.geschickt) + '</td>' +
+            '<td class="z">' + (kommt ? "–" : epProzent(m.zugestellt, m.geschickt)) + '</td>' +
+            '<td class="z">' + (kommt ? "–" : m.geoeffnet) + '</td>' +
+            '<td class="z">' + (kommt ? "–" : epProzent(m.geoeffnet, m.zugestellt)) + '</td>' +
+            '<td class="z">' + (kommt ? "–" : m.klicks + ' <small>' + epProzent(m.klicks, m.zugestellt) + '</small>') + '</td>' +
+            '<td class="z">' + (m.klicks >= 10 && m.klicks >= k.sales ? epProzent(k.sales, m.klicks) : "–") + '</td>' +
+            epKasseZellen(k) + '</tr>';
+        });
+        if (epProfil === "mentoring" && datum >= heute) {
+          planHier.forEach(function (z) { zeilen += epPlanZeile(datum, slot, z, kopf); });
+          if (!hier.length && !planHier.length) zeilen += epPlanZeile(datum, slot, null, kopf);
+        } else if (!hier.length) {
+          zeilen += '<tr class="ep-mail ep-still"><td class="ep-erste">' + kopf + '</td><td colspan="24"></td></tr>';
+        }
       });
       verk.forEach(function (v) {
-        zeilen += '<tr class="ep-mail ep-still' + heuteKl + '"><td class="ep-erste">' + (erste ? tagText : "") + '</td>' +
-          '<td class="ep-betreff">keine Mail dazu</td><td>' + esc(v.produkt) + '</td><td>' + esc(v.stelle === "product" ? "Verkauf" : v.stelle) + '</td>' +
-          '<td class="z">' + epGeld(v.betrag) + '</td><td class="z">–</td><td class="z">–</td><td class="z">–</td><td class="z">1</td><td class="z">–</td>' +
-          '<td class="z">' + epGeld(v.betrag) + '</td><td class="z">–</td><td class="z">–</td><td></td></tr>';
-        erste = false;
+        var k = epKasse([v]);
+        zeilen += '<tr class="ep-mail ep-ohne' + heuteKl + '"><td class="ep-erste"><b>' + tag + '</b><small>ohne Mail</small></td>' +
+          '<td>' + esc(v.produkt) + '</td><td>Verkauf ohne Mail an diesem Tag</td><td class="z">' + epGeld(v.betrag) + '</td>' +
+          '<td colspan="11"></td>' + epKasseZellen(k) + '</tr>';
       });
-      if (epProfil === "mentoring" && datum >= heute) {
-        plan.forEach(function (z) { zeilen += epPlanZeile(tagText, datum, z, erste); erste = false; });
-        if (!mails.length && !plan.length) { zeilen += epPlanZeile(tagText, datum, null, true); erste = false; }
-      }
-      if (erste) {
-        zeilen += '<tr class="ep-mail ep-still"><td class="ep-erste">' + tagText + '</td><td class="ep-betreff" colspan="13">keine Mail</td></tr>';
-      }
     }
-    return '<h2 class="ep-titel">Tag für Tag</h2><div class="ep-wrap"><table class="ep-tab"><thead><tr>' +
-      '<th class="ep-erste">Tag</th><th>Betreff</th><th>Produkt</th><th>Angebot</th><th class="z">Preis</th><th class="z">Geschickt</th>' +
-      '<th class="z">Geöffnet</th><th class="z">Klicks</th><th class="z">Verkäufe</th><th class="z">Konversion</th><th class="z">Umsatz</th>' +
-      '<th class="z">Bump</th><th class="z">Upsell</th><th class="z"></th></tr></thead><tbody>' + zeilen + '</tbody></table></div>';
+    var g = epKasse(alleVerk);
+    var fuss = '<tr class="ep-summe"><td class="ep-erste"><b>Summe</b></td><td colspan="8"></td>' +
+      '<td class="z">' + summe.geschickt + '</td><td class="z">' + epProzent(summe.zugestellt, summe.geschickt) + '</td>' +
+      '<td class="z">' + summe.geoeffnet + '</td><td class="z">' + epProzent(summe.geoeffnet, summe.zugestellt) + '</td>' +
+      '<td class="z">' + summe.klicks + ' <small>' + epProzent(summe.klicks, summe.zugestellt) + '</small></td><td></td>' +
+      epKasseZellen(g) + '</tr>';
+    return '<h2 class="ep-titel">Master-Tabelle</h2><div class="ep-wrap"><table class="ep-tab"><thead><tr>' +
+      '<th class="ep-erste">Datum</th><th>Produkt</th><th>Angebot</th><th class="z">Preis</th><th>Link zu Salespage</th>' +
+      '<th>Betreff</th><th>Format</th><th>FOMO</th><th>FOMO im Titel</th>' +
+      '<th class="z">Email geschickt</th><th class="z">In %</th><th class="z">Email geöffnet</th><th class="z">In %</th>' +
+      '<th class="z">Klick auf die Seite</th><th class="z">Konversion</th><th class="z">Anzahl Sales</th><th class="z">Umsatz</th>' +
+      '<th class="z">Orderbump</th><th class="z">Umsatz</th><th class="z">Upsell 1</th><th class="z">Umsatz</th>' +
+      '<th class="z">Upsell 2</th><th class="z">Umsatz</th><th class="z">Insgesamt</th><th></th></tr></thead><tbody>' +
+      zeilen + fuss + '</tbody></table></div>';
   }
 
   function epVorrat() {
     var offen = epMonat >= epHeute().slice(0, 7);
-    var html = '<details class="panel ep-vorrat"' + (offen ? " open" : "") + '><summary>Was ich verkaufen könnte <span class="note">' +
+    var regeln = '<p class="note">FOMO nach Preis: bis rund 40 ein Einzeltag, über 150 mit zeigbarem Rabatt 48 Stunden, über 300 drei Tage mit Bonus oder begrenzten Plätzen. ' +
+      'Was du wählst, muss stimmen: Die Frist endet wirklich, der Preis springt zurück, die Plätze sind wirklich begrenzt.</p>';
+    var html = regeln + '<details class="panel ep-vorrat"' + (offen ? " open" : "") + '><summary>Was ich verkaufen könnte <span class="note">' +
       (epPlan.vorrat || []).length + ' Angebote</span></summary>' +
       '<p class="note">Aus diesem Vorrat wählst du oben im Plan. Der Aktionspreis gilt nur für die Aktion, der reguläre kommt aus der Kasse. Ohne Link gibt es noch keine Kasse.</p>';
     EP_GRUPPEN.forEach(function (g) {
@@ -8829,7 +8886,7 @@ var MASTER = (function () {
           var id = tr.getAttribute("data-id");
           var z = (epPlan.zeilen || []).filter(function (x) { return x.id === id; })[0];
           if (!z) {
-            z = { id: uid("ep"), datum: tr.getAttribute("data-datum"), zeit: "", thema: "", produkt: "", angebot: "", preis: "", link: "" };
+            z = { id: uid("ep"), datum: tr.getAttribute("data-datum"), slot: tr.getAttribute("data-slot"), zeit: "", thema: "", produkt: "", angebot: "", preis: "", link: "" };
             epPlan.zeilen = epPlan.zeilen || [];
             epPlan.zeilen.push(z);
             tr.setAttribute("data-id", z.id);
@@ -8844,6 +8901,10 @@ var MASTER = (function () {
               z.link = v.link || "";
               tr.querySelector('[data-feld="preis"]').value = z.preis;
               tr.querySelector('[data-feld="link"]').value = z.link;
+              if (!z.fomo) {
+                z.fomo = epFomoVorschlag(p);
+                tr.querySelector('[data-feld="fomo"]').value = z.fomo;
+              }
             }
           }
           epSpeichern();
@@ -8855,13 +8916,6 @@ var MASTER = (function () {
       b.addEventListener("click", function () {
         var id = b.getAttribute("data-weg");
         epPlan.zeilen = (epPlan.zeilen || []).filter(function (x) { return x.id !== id; });
-        epSpeichern();
-        neu();
-      });
-    });
-    box.querySelectorAll("[data-noch]").forEach(function (b) {
-      b.addEventListener("click", function () {
-        epPlan.zeilen.push({ id: uid("ep"), datum: b.getAttribute("data-noch"), zeit: "", thema: "", produkt: "", angebot: "", preis: "", link: "" });
         epSpeichern();
         neu();
       });
