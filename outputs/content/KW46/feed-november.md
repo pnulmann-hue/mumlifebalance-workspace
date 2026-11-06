@@ -96,6 +96,35 @@ Möglichkeit zum Eintragen; Gratis-Angebote brauchen keine Aufwärmphase) · Fr 
 >
 > #mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #networkmarketing #mumpreneur
 
+## Mi 11.11. · Reel · Erzähl es allen? (neuer Vorschlag, Freitagslauf 06.11.)
+
+Patricia hat die Variante oben am 03.11. zurückgezogen, die B-Variante ist offen. Cockpit: `kw46-reel-m-mi-d`, Video fertig.
+Eine zweite neue Variante (Interview C1, „Produkt als Lösung für alles“) ist an der Hook-Sperre gescheitert und nicht gebaut.
+
+| | |
+|---|---|
+| Format | reel · broll (Clip `lv_0_20240404092309`) |
+| Rolle | Aufmerksamkeit |
+| Stichwort | — |
+| Mehrwert | Tipp: einen Vorstell-Satz aufschreiben: wem du hilfst, wobei und wozu (Interview C3) |
+| Hook | „Erzähl einfach allen von deinem Network“, hiess es. Und beim Znacht wird's still ✓ |
+
+**Caption:**
+
+> Viele Mamas im Network hören diesen Rat, und ich sehe ihn anders.
+>
+> Verschweigen sollst du dein Business auch nicht. Wenn dich jemand fragt, was du machst, sag, wem du hilfst, wobei und wozu. Dann ist Schluss. Fragt sie aus Interesse nach, ist alles gut, und sonst lässt du es.
+>
+> Mein Tipp für heute: Schreib dir genau diesen einen Satz auf und probier ihn beim nächsten Elternabend aus.
+>
+> Wenn du dich hier wiedererkennst, bleib hier.
+>
+> Hi, ich bin Patricia, Mama von vier Kindern. 2023 habe ich mein Network im Hybridmodell aufgebaut. Bei mir lernst du, wie du mit deinem Thema sichtbar wirst und das ganze Business in deinen Mama-Alltag packst.
+>
+> #mamabusiness #mamaimnetworkmarketing #onlinebusinessmama #networkmarketing #mumpreneur
+
+**Beitrags-Check:** Rolle Aufmerksamkeit · Mikro: Znacht ✓ · gibt ihr mit: Tipp · berührt: der Rat, der am Familientisch schiefgeht ✓ · konkret: der eine Vorstell-Satz ✓ · speichern: die Formel ✓ · kommentieren: Meinung gegen einen verbreiteten Rat, kein eigener Aufruf ~ · nur von ihr: ihre Antwort auf den Rat, wörtlich aus C3 ✓. Textprüfer sauber, Hook-Fenster und jede Sekunde angesehen, Gesicht frei.
+
 ## Do 12.11. · Karussell · Vier Fragen zu dem, was du weisst
 
 | | |

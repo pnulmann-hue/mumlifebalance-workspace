@@ -114,3 +114,23 @@ Warum mit mir (eigener Rhythmus). Fr 11.12. (Reel 3 aus `06-feed.md`) liegt auss
 **Job-Mix schief (gesagt, nicht still geändert):** KW49 hat in den A-Varianten kein E. Wer das will,
 nimmt 49-2B oder 49-4B als A (beide E). KW47 hat keinen Wandel-Beitrag von Patricia, weil der Freitag
 der Kundinnen-Geschichte gehört (Community-Woche).
+
+---
+
+## Freitagslauf 06.11.2026 (Woche 9.–13.11.)
+
+**Befund:** Die Woche war schon gebaut (02./03.11.) und grösstenteils freigegeben. Deshalb keine neuen 15 Beiträge je Profil, sonst lägen Dubletten auf den freigegebenen Plätzen. Geprüft und nur die Lücke gefüllt.
+
+| Platz | Mentoring | doTERRA |
+|---|---|---|
+| Mo 9.11. | ✅ selbst posten 21:00 | ✅ selbst posten 19:30 |
+| Di 10.11. | 🟠 A und B offen, nicht freigegeben | ✅ geplant 20:15 |
+| Mi 11.11. | 🟠 A zurückgezogen 03.11., B offen, **neu: `kw46-reel-m-mi-d`** | ✅ selbst posten 21:30 |
+| Do 12.11. | ✅ geplant 07:30 | ✅ geplant 18:30 |
+| Fr 13.11. | ✅ selbst posten 21:00 | ✅ selbst posten 19:15 |
+
+**Treffer-Check (2b):** Kein Treffer in den letzten 14 Tagen. Median 260, also ab 520. Stärkster Beitrag: 03.11. „Abends nach dem Zähneputzen …“ mit 453 (1,74×), 5× gespeichert, 0 Kommentare. Parkplatz-Reel liegt mit 15 Tagen knapp ausserhalb.
+
+**Hook-Maschine (`2026-11-06-hook-markt-analyse.md`):** trägt bei ihr Identität 1,15 · Stufe 1 1,17 · Frage in Zeile 1 1,21 · Wut 1,66 · Verbundenheit 1,57. Schwach Liste 0,44 · Beweis 0,57. Stichwörter: **NISCHE 2,0 Eintragungen je Beitrag**, BIO 0,6, STORY 0,5.
+
+**Nicht gemacht in diesem Lauf:** kein neuer Marktcheck (`markt.md` vom 02.11. gilt, jüngster Konkurrenz-Scrape ist vom 01.11.) · die sechs Format-Skills und die grossen Wissensdateien nicht erneut gelesen, Leseprotokoll vom 02.11. gilt · `entwuerfe` und `beitraege` im Bild-Editor nicht nachgezogen · Texte der Woche nur maschinell geprüft (`texte-pruefen.py`: 0 rot, 1× orange „die einzige“ in `kw46-reel-d-mo-a`, schon freigegeben, nicht angefasst).

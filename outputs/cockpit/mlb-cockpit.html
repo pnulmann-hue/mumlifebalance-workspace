@@ -2414,6 +2414,48 @@
   .tm-karte textarea { width: 100%; resize: vertical; margin-bottom: 8px; }
   .tm-alt { white-space: pre-wrap; font-size: 14px; margin: 8px 0 0; }
   .tm-aelter { margin-top: 8px; }
+  /* @@emailplan-css-anfang */
+  .ep-leiste { display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: space-between; margin-bottom: 16px; }
+  .ep-pillen { display: flex; flex-wrap: wrap; gap: 6px; }
+  .ep-pille { border: 1px solid var(--line-strong); background: var(--surface); border-radius: 999px; padding: 6px 13px; font-size: 13px; cursor: pointer; }
+  .ep-pille:hover { border-color: var(--teal); }
+  .ep-pille[aria-pressed="true"] { background: var(--teal); border-color: var(--teal); color: #fff; }
+  .ep-titel { font-family: var(--display); font-weight: normal; font-size: 19px; margin: 22px 0 8px; }
+  .ep-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+  .ep-tab { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 13px; }
+  .ep-tab th { background: var(--surface-2); font-size: 11px; font-weight: normal; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); text-align: left; padding: 8px 10px; white-space: nowrap; }
+  .ep-tab td { border-top: 1px solid var(--line); padding: 7px 10px; vertical-align: middle; white-space: nowrap; }
+  .ep-tab .z { text-align: right; font-variant-numeric: tabular-nums; }
+  .ep-tab small { color: var(--ink-soft); font-size: 11px; }
+  .ep-tab a { color: var(--teal); }
+  .ep-tab .ep-erste { position: sticky; left: 0; z-index: 1; background: var(--surface); min-width: 92px; }
+  .ep-tab th.ep-erste { background: var(--surface-2); }
+  .ep-tab .ep-betreff { white-space: normal; min-width: 240px; max-width: 340px; }
+  .ep-tab tr.ep-still td { color: var(--ink-soft); }
+  .ep-tab tr.ep-heute td.ep-erste { box-shadow: inset 3px 0 0 var(--orange); }
+  .ep-tab input, .ep-tab select { width: 100%; min-width: 130px; background: var(--ground); border: 1px solid var(--line); border-radius: 6px; padding: 5px 7px; font-size: 13px; }
+  .ep-tab .ep-wenn input { min-width: 240px; }
+  .ep-tab input.ep-kurz { min-width: 66px; width: 66px; text-align: right; }
+  .ep-tab input:focus, .ep-tab select:focus { border-color: var(--teal); outline: none; }
+  .ep-tab .del, .ep-v .del { border: 0; background: none; color: var(--ink-soft); cursor: pointer; padding: 4px 7px; border-radius: 6px; font-size: 15px; line-height: 1; }
+  .ep-tab .del:hover, .ep-v .del:hover { background: var(--orange-soft); color: var(--crit); }
+  .ep-vorrat { margin-top: 22px; }
+  .ep-vorrat > summary { cursor: pointer; font-family: var(--display); font-size: 19px; }
+  .ep-vorrat > summary .note { font-family: var(--body); margin-left: 6px; }
+  .ep-vorrat h3 { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); margin: 16px 0 6px; font-weight: normal; }
+  .ep-v { display: grid; grid-template-columns: minmax(180px, 2fr) 76px 76px minmax(120px, 1.4fr) minmax(110px, 1fr) 30px; gap: 6px; align-items: center; margin-bottom: 5px; }
+  .ep-v input { width: 100%; min-width: 0; background: var(--ground); border: 1px solid var(--line); border-radius: 6px; padding: 5px 7px; font-size: 13px; }
+  .ep-v input:focus { border-color: var(--teal); outline: none; }
+  .ep-fuss { margin-top: 16px; }
+  @media (max-width: 760px) {
+    .ep-v { grid-template-columns: 1fr 1fr 30px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    .ep-v .ep-vname { grid-column: 1 / -1; }
+    .ep-v input[data-vfeld="link"], .ep-v input[data-vfeld="notiz"] { grid-column: 1 / -1; }
+    .ep-v .del { grid-row: 2; grid-column: 3; }
+    .ep-tab .ep-erste { min-width: 74px; }
+    .ep-tab .ep-betreff { min-width: 200px; }
+  }
+  /* @@emailplan-css-ende */
 </style>
 
 <div class="shell">
@@ -3755,6 +3797,7 @@ var MASTER = (function () {
     { id: "launch", label: "Launch" },
     { id: "funnel", label: "Funnel & Keywords" },
     { id: "mailings", label: "Listen & Automationen" },
+    { id: "emailplan", label: "E-Mail-Plan" },
     { id: "leads", label: "Kundinnen & Leads" },
     { id: "zahlen", label: "Zahlen & Ziele" },
     { g: "doTERRA" },
@@ -8505,6 +8548,352 @@ var MASTER = (function () {
     });
   }
 
+  /* @@emailplan-js-anfang
+     ======================================================================
+     Reiter "E-Mail-Plan" — Produkte -> E-Mail-Plan (seit 06.11.2026,
+     patch-emailplan.py)
+
+     Die Master-Tabelle fuer Mails: was gemessen ist und was geplant wird,
+     Tag fuer Tag, dazu der Vorrat an Angeboten.
+     daten/emailplan       Zahlen, gehoert dem Abgleich (emailplan-bauen.py)
+     daten/emailplan-plan  Zeilen und Vorrat, gehoert Patricia, der Abgleich
+                           schreibt dort nie hinein
+     ====================================================================== */
+  var epDaten = null;
+  var epPlan = null;
+  var epMonat = "";
+  var epProfil = "mentoring";
+  var epTimer = null;
+  var EP_MONATE = ["2026-09", "2026-10", "2026-11", "2026-12", "2027-01"];
+  var EP_MONATSNAME = { "01": "Januar", "09": "September", "10": "Oktober", "11": "November", "12": "Dezember" };
+  var EP_ANGEBOT = ["Mehrwert + Angebot", "Flash Sale", "Neues Produkt", "Neues Format", "Bundle", "1:1 Spezial",
+    "Erinnerung", "Letzte Chance", "Einladung gratis", "Kein Verkauf"];
+  var EP_GRUPPEN = ["Minikurse", "Kurse", "Grosse Kurse", "Programme", "Bundles", "1:1 und Begleitung"];
+  var EP_TAGE = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+
+  function epHeute() {
+    var d = new Date();
+    return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
+  }
+  function epGeld(x) { return x ? Number(x).toLocaleString("de-CH", { maximumFractionDigits: 2 }) : "–"; }
+  function epProzent(z, n) { return n ? (z / n * 100).toFixed(1).replace(".", ",") + " %" : "–"; }
+  function epPlanLeer() { return { zeilen: [], vorrat: [] }; }
+
+  function epLaden(fertig) {
+    if (!epDaten) epDaten = lsGet("emailplan", null);
+    if (!epPlan) epPlan = lsGet("emailplan-plan", null);
+    if (epDaten && epPlan) fertig();
+    var versuche = 0;
+    (function holen() {
+      if (!db) {
+        if (versuche++ < 6) setTimeout(holen, 1000);
+        else if (!(epDaten && epPlan)) { epDaten = epDaten || { mails: [], aktionen: [], verkaeufe: [] }; epPlan = epPlan || epPlanLeer(); fertig(); }
+        return;
+      }
+      Promise.all([db.doc("daten/emailplan").get(), db.doc("daten/emailplan-plan").get()]).then(function (s) {
+        if (s[0].exists) { epDaten = tief(s[0].data()); lsSet("emailplan", epDaten); }
+        if (s[1].exists) {
+          var neu = tief(s[1].data());
+          // Der neuere Stand gewinnt: was gerade getippt wurde, steht schon lokal.
+          if (!epPlan || !epPlan.updatedAt || String(neu.updatedAt || "") >= String(epPlan.updatedAt)) {
+            epPlan = neu;
+            lsSet("emailplan-plan", epPlan);
+          }
+        }
+        epDaten = epDaten || { mails: [], aktionen: [], verkaeufe: [] };
+        epPlan = epPlan || epPlanLeer();
+        fertig();
+      }).catch(function () {
+        epDaten = epDaten || { mails: [], aktionen: [], verkaeufe: [], fehler: true };
+        epPlan = epPlan || epPlanLeer();
+        fertig();
+      });
+    })();
+  }
+
+  function epSpeichern() {
+    epPlan.updatedAt = new Date().toISOString();
+    lsSet("emailplan-plan", epPlan);
+    clearTimeout(epTimer);
+    epTimer = setTimeout(function () {
+      if (!db) return;
+      db.doc("daten/emailplan-plan").set(JSON.parse(JSON.stringify(epPlan)))
+        .catch(function () { toast("Nur lokal gespeichert"); });
+    }, 600);
+  }
+
+  function renderEmailplan(main) {
+    if (!epMonat) {
+      var jetzt = epHeute().slice(0, 7);
+      epMonat = EP_MONATE.indexOf(jetzt) >= 0 ? jetzt : EP_MONATE[0];
+    }
+    main.innerHTML =
+      '<div class="page-head"><div><h1>E-Mail-Plan</h1>' +
+      '<p>Welche Mail wann rausgeht, was sie verkauft und was sie gebracht hat. Vergangene Tage kommen aus ' +
+      'ActiveCampaign und ThriveCart, kommende Tage planst du hier.</p></div></div>' +
+      '<div class="ep-leiste"><div class="ep-pillen">' + EP_MONATE.map(function (m) {
+        var t = m.split("-");
+        return '<button class="ep-pille" data-monat="' + m + '" aria-pressed="' + (m === epMonat) + '">' +
+          EP_MONATSNAME[t[1]] + (t[0] === "2027" ? " 2027" : "") + '</button>';
+      }).join("") + '</div><div class="ep-pillen">' +
+      '<button class="ep-pille" data-profil="mentoring" aria-pressed="' + (epProfil === "mentoring") + '">Mentoring</button>' +
+      '<button class="ep-pille" data-profil="doterra" aria-pressed="' + (epProfil === "doterra") + '">doTERRA</button>' +
+      '</div></div><div id="epinhalt"><div class="panel"><div class="empty">Lädt …</div></div></div>';
+    main.querySelectorAll("[data-monat]").forEach(function (b) {
+      b.addEventListener("click", function () { epMonat = b.getAttribute("data-monat"); renderEmailplan(main); });
+    });
+    main.querySelectorAll("[data-profil]").forEach(function (b) {
+      b.addEventListener("click", function () { epProfil = b.getAttribute("data-profil"); renderEmailplan(main); });
+    });
+    epLaden(function () { epInhalt(main.querySelector("#epinhalt")); });
+  }
+
+  function epMailsMonat() {
+    return (epDaten.mails || []).filter(function (m) {
+      return m.datum.slice(0, 7) === epMonat && m.profil === epProfil;
+    });
+  }
+
+  function epInhalt(box) {
+    if (!box) return;
+    var heute = epHeute();
+    var mails = epMailsMonat();
+    var raus = mails.filter(function (m) { return m.stand === "verschickt"; });
+    var summe = function (f) { return raus.reduce(function (s, m) { return s + (m[f] || 0); }, 0); };
+    var verk = epProfil === "mentoring" ? (epDaten.verkaeufe || []).filter(function (v) {
+      return v.datum.slice(0, 7) === epMonat && v.art === "charge";
+    }) : [];
+    var umsatz = verk.reduce(function (s, v) { return s + v.betrag; }, 0);
+    var tage = {};
+    raus.forEach(function (m) { tage[m.datum] = 1; });
+    var html = '<div class="tiles">' +
+      tile("Tage mit Mail", String(Object.keys(tage).length), raus.length + " Mails an die Liste") +
+      tile("Geöffnet", epProzent(summe("geoeffnet"), summe("zugestellt")), "auf die Zugestellten") +
+      tile("Klicks", String(summe("klicks")), epProzent(summe("klicks"), summe("zugestellt"))) +
+      tile("Verkäufe", epProfil === "mentoring" ? String(verk.length) : "–", epProfil === "mentoring" ? "ThriveCart, alle Wege" : "nicht über ThriveCart") +
+      tile("Umsatz", epProfil === "mentoring" ? (umsatz ? "CHF " + epGeld(umsatz) : "–") : "–", "") +
+      '</div>';
+    if (epProfil === "mentoring") html += epAktionen();
+    html += epTabelle(heute);
+    if (epProfil === "mentoring") html += epVorrat();
+    if (epDaten.stand) {
+      var a = epDaten.automationen || {};
+      html += '<p class="note ep-fuss">Stand ' + esc(fmtDate(epDaten.stand)) + ' · Liste „Regulärer Newsletter“: ' + esc(epDaten.liste) +
+        ' aktive Kontakte · Automations-Mails seit September, nicht im Plan: ' + esc(a.mails || 0) + ' Mails, ' +
+        esc(a.klicks || 0) + ' Klicks auf ' + esc(a.zugestellt || 0) + ' Zugestellte.</p>';
+    }
+    box.innerHTML = html;
+    epVerdrahten(box);
+  }
+
+  function epAktionen() {
+    var liste = (epDaten.aktionen || []).filter(function (a) {
+      return a.von.slice(0, 7) === epMonat || a.bis.slice(0, 7) === epMonat;
+    });
+    if (!liste.length) return "";
+    var zeilen = liste.map(function (a) {
+      var gratis = a.preis === 0;
+      return '<tr><td class="ep-erste">' + esc(fmtDate(a.von)) + ' – ' + esc(fmtDate(a.bis)) + '</td>' +
+        '<td><b>' + esc(a.produkt) + '</b></td><td>' + esc(a.angebot) + '</td>' +
+        '<td class="z">' + (gratis ? "0" : epGeld(a.preis)) + '</td>' +
+        '<td class="z">' + a.mails + '</td><td class="z">' + a.geschickt + '</td>' +
+        '<td class="z">' + epProzent(a.geoeffnet, a.zugestellt) + '</td>' +
+        '<td class="z">' + a.klicks + ' <small>' + epProzent(a.klicks, a.zugestellt) + '</small></td>' +
+        '<td class="z">' + (gratis ? (a.eintragungen != null ? a.eintragungen + ' <small>Anmeldungen</small>' : "–") : a.verkaeufe) + '</td>' +
+        '<td class="z">' + (!gratis && a.klicks && a.verkaeufe <= a.klicks ? epProzent(a.verkaeufe, a.klicks) : "–") + '</td>' +
+        '<td class="z">' + epGeld(a.umsatz) + '</td><td class="z">' + epGeld(a.bump) + '</td><td class="z">' + epGeld(a.upsell) +
+        '</td><td class="z"><b>' + epGeld(a.gesamt) + '</b></td></tr>';
+    }).join("");
+    return '<h2 class="ep-titel">Aktionen</h2><div class="ep-wrap"><table class="ep-tab"><thead><tr>' +
+      '<th class="ep-erste">Zeitraum</th><th>Produkt</th><th>Angebot</th><th class="z">Preis</th><th class="z">Mails</th><th class="z">Geschickt</th>' +
+      '<th class="z">Geöffnet</th><th class="z">Klicks</th><th class="z">Verkäufe</th><th class="z">Konversion</th><th class="z">Umsatz</th>' +
+      '<th class="z">Bump</th><th class="z">Upsell</th><th class="z">Gesamt</th></tr></thead><tbody>' + zeilen + '</tbody></table></div>' +
+      '<p class="note">Verkäufe sind alle Käufe des Produkts im Zeitraum, auch über Instagram: ThriveCart weiss nicht, woher ein Kauf kam. ' +
+      'Konversion ist Verkäufe durch Klicks und bleibt leer, wenn es mehr Käufe als Klicks gab, weil dann ein anderer Weg mitgezählt ist.</p>';
+  }
+
+  function epAuswahl(werte, aktuell, leer) {
+    var opts = werte.slice();
+    if (aktuell && opts.indexOf(aktuell) < 0) opts.unshift(aktuell);
+    return '<option value="">' + esc(leer) + '</option>' + opts.map(function (w) {
+      return '<option value="' + esc(w) + '"' + (w === aktuell ? " selected" : "") + '>' + esc(w) + '</option>';
+    }).join("");
+  }
+
+  function epPlanZeile(tagText, datum, z, istErste) {
+    var namen = (epPlan.vorrat || []).map(function (v) { return v.name; });
+    var id = z ? z.id : "";
+    return '<tr class="ep-plan" data-datum="' + datum + '" data-id="' + esc(id) + '">' +
+      '<td class="ep-erste">' + (istErste ? tagText : "") + '</td>' +
+      '<td class="ep-wenn"><input data-feld="thema" placeholder="Thema oder Betreff" value="' + esc(z ? z.thema : "") + '"></td>' +
+      '<td><select data-feld="produkt">' + epAuswahl(namen, z ? z.produkt : "", "Produkt wählen") + '</select></td>' +
+      '<td><select data-feld="angebot">' + epAuswahl(EP_ANGEBOT, z ? z.angebot : "", "Angebot wählen") + '</select></td>' +
+      '<td class="z"><input class="ep-kurz" data-feld="preis" placeholder="Preis" value="' + esc(z ? z.preis : "") + '"></td>' +
+      '<td colspan="8"><input data-feld="link" placeholder="Link zur Seite" value="' + esc(z ? z.link : "") + '"></td>' +
+      '<td class="ep-aktion">' + (z ? '<button class="del" data-weg="' + esc(id) + '" title="Zeile löschen" aria-label="Zeile löschen">×</button>' : "") +
+      (z ? '<button class="del" data-noch="' + datum + '" title="Zweite Mail an diesem Tag" aria-label="Zweite Mail an diesem Tag">+</button>' : "") +
+      '</td></tr>';
+  }
+
+  function epTabelle(heute) {
+    var t = epMonat.split("-");
+    var anzahl = new Date(Number(t[0]), Number(t[1]), 0).getDate();
+    var gemessen = {};
+    (epDaten.mails || []).forEach(function (m) { gemessen[m.id] = 1; });
+    var zeilen = "";
+    for (var i = 1; i <= anzahl; i++) {
+      var datum = epMonat + "-" + ("0" + i).slice(-2);
+      var d = new Date(Number(t[0]), Number(t[1]) - 1, i);
+      var tagText = EP_TAGE[d.getDay()] + " " + i + "." + Number(t[1]) + ".";
+      var mails = epMailsMonat().filter(function (m) { return m.datum === datum; });
+      var plan = epProfil === "mentoring" ? (epPlan.zeilen || []).filter(function (z) {
+        return z.datum === datum && !(z.kampagne && gemessen[z.kampagne]);
+      }) : [];
+      var verk = epProfil === "mentoring" ? (epDaten.verkaeufe || []).filter(function (v) {
+        return v.datum === datum && v.art === "charge";
+      }) : [];
+      var erste = true;
+      var heuteKl = datum === heute ? " ep-heute" : "";
+      mails.forEach(function (m) {
+        var kommt = m.stand !== "verschickt";
+        var eigene = verk.filter(function (v) { return v.gruppe === m.gruppe && v.stelle === "product"; });
+        var alle = verk.filter(function (v) { return v.gruppe === m.gruppe; });
+        var summeE = eigene.reduce(function (s, v) { return s + v.betrag; }, 0);
+        var teil = function (st) {
+          return alle.filter(function (v) { return st.indexOf(v.stelle) >= 0; }).reduce(function (s, v) { return s + v.betrag; }, 0);
+        };
+        verk = verk.filter(function (v) { return v.gruppe !== m.gruppe; });
+        zeilen += '<tr class="ep-mail' + heuteKl + '"><td class="ep-erste">' + (erste ? tagText : "") + ' <small>' + esc(m.zeit) + '</small></td>' +
+          '<td class="ep-betreff">' + esc(m.betreff) + (kommt ? ' <span class="chip">eingeplant</span>' : "") + '</td>' +
+          '<td>' + esc(m.produkt || "–") + '</td><td>' + esc(m.angebot || "–") + '</td>' +
+          '<td class="z">' + (m.preis === 0 ? "0" : epGeld(m.preis)) + '</td>' +
+          '<td class="z">' + (kommt ? "–" : m.geschickt) + '</td>' +
+          '<td class="z">' + (kommt ? "–" : epProzent(m.geoeffnet, m.zugestellt)) + '</td>' +
+          '<td class="z">' + (kommt ? "–" : m.klicks + ' <small>' + epProzent(m.klicks, m.zugestellt) + '</small>') + '</td>' +
+          '<td class="z">' + (eigene.length || "–") + '</td>' +
+          '<td class="z">' + (eigene.length && m.klicks >= eigene.length ? epProzent(eigene.length, m.klicks) : "–") + '</td>' +
+          '<td class="z">' + epGeld(summeE) + '</td><td class="z">' + epGeld(teil(["bump"])) + '</td>' +
+          '<td class="z">' + epGeld(teil(["upsell", "downsell"])) + '</td>' +
+          '<td class="z">' + (m.seite ? '<a href="' + esc(m.seite) + '" target="_blank" rel="noopener">Seite</a>' : "") + '</td></tr>';
+        erste = false;
+      });
+      verk.forEach(function (v) {
+        zeilen += '<tr class="ep-mail ep-still' + heuteKl + '"><td class="ep-erste">' + (erste ? tagText : "") + '</td>' +
+          '<td class="ep-betreff">keine Mail dazu</td><td>' + esc(v.produkt) + '</td><td>' + esc(v.stelle === "product" ? "Verkauf" : v.stelle) + '</td>' +
+          '<td class="z">' + epGeld(v.betrag) + '</td><td class="z">–</td><td class="z">–</td><td class="z">–</td><td class="z">1</td><td class="z">–</td>' +
+          '<td class="z">' + epGeld(v.betrag) + '</td><td class="z">–</td><td class="z">–</td><td></td></tr>';
+        erste = false;
+      });
+      if (epProfil === "mentoring" && datum >= heute) {
+        plan.forEach(function (z) { zeilen += epPlanZeile(tagText, datum, z, erste); erste = false; });
+        if (!mails.length && !plan.length) { zeilen += epPlanZeile(tagText, datum, null, true); erste = false; }
+      }
+      if (erste) {
+        zeilen += '<tr class="ep-mail ep-still"><td class="ep-erste">' + tagText + '</td><td class="ep-betreff" colspan="13">keine Mail</td></tr>';
+      }
+    }
+    return '<h2 class="ep-titel">Tag für Tag</h2><div class="ep-wrap"><table class="ep-tab"><thead><tr>' +
+      '<th class="ep-erste">Tag</th><th>Betreff</th><th>Produkt</th><th>Angebot</th><th class="z">Preis</th><th class="z">Geschickt</th>' +
+      '<th class="z">Geöffnet</th><th class="z">Klicks</th><th class="z">Verkäufe</th><th class="z">Konversion</th><th class="z">Umsatz</th>' +
+      '<th class="z">Bump</th><th class="z">Upsell</th><th class="z"></th></tr></thead><tbody>' + zeilen + '</tbody></table></div>';
+  }
+
+  function epVorrat() {
+    var offen = epMonat >= epHeute().slice(0, 7);
+    var html = '<details class="panel ep-vorrat"' + (offen ? " open" : "") + '><summary>Was ich verkaufen könnte <span class="note">' +
+      (epPlan.vorrat || []).length + ' Angebote</span></summary>' +
+      '<p class="note">Aus diesem Vorrat wählst du oben im Plan. Der Aktionspreis gilt nur für die Aktion, der reguläre kommt aus der Kasse. Ohne Link gibt es noch keine Kasse.</p>';
+    EP_GRUPPEN.forEach(function (g) {
+      var teil = (epPlan.vorrat || []).filter(function (v) { return v.gruppe === g; });
+      html += '<h3>' + esc(g) + '</h3><div class="ep-vgitter">';
+      teil.forEach(function (v) {
+        html += '<div class="ep-v" data-v="' + esc(v.id) + '">' +
+          '<input class="ep-vname" data-vfeld="name" aria-label="Name" placeholder="Name" value="' + esc(v.name) + '">' +
+          '<input data-vfeld="preis" aria-label="Regulärer Preis" placeholder="Regulär" value="' + esc(v.preis == null ? "" : v.preis) + '">' +
+          '<input data-vfeld="aktion" aria-label="Aktionspreis" placeholder="Aktion" value="' + esc(v.aktion) + '">' +
+          '<input data-vfeld="link" aria-label="Link" placeholder="Link" value="' + esc(v.link) + '">' +
+          '<input data-vfeld="notiz" aria-label="Notiz" placeholder="Notiz" value="' + esc(v.notiz) + '">' +
+          '<button class="del" data-vweg="' + esc(v.id) + '" title="Angebot löschen" aria-label="Angebot löschen">×</button></div>';
+      });
+      html += '</div><button class="btn ghost" data-vneu="' + esc(g) + '">+ Angebot</button>';
+    });
+    return html + '</details>';
+  }
+
+  function epVerdrahten(box) {
+    var neu = function () { epInhalt(box); };
+    box.querySelectorAll("tr.ep-plan").forEach(function (tr) {
+      tr.querySelectorAll("[data-feld]").forEach(function (f) {
+        var ereignis = f.tagName === "SELECT" ? "change" : "input";
+        f.addEventListener(ereignis, function () {
+          var id = tr.getAttribute("data-id");
+          var z = (epPlan.zeilen || []).filter(function (x) { return x.id === id; })[0];
+          if (!z) {
+            z = { id: uid("ep"), datum: tr.getAttribute("data-datum"), zeit: "", thema: "", produkt: "", angebot: "", preis: "", link: "" };
+            epPlan.zeilen = epPlan.zeilen || [];
+            epPlan.zeilen.push(z);
+            tr.setAttribute("data-id", z.id);
+          }
+          var feld = f.getAttribute("data-feld");
+          z[feld] = f.value;
+          if (feld === "produkt") {
+            var v = (epPlan.vorrat || []).filter(function (x) { return x.name === f.value; })[0];
+            if (v) {
+              var p = v.aktion !== "" && v.aktion != null ? v.aktion : (v.preis == null ? "" : v.preis);
+              z.preis = String(p);
+              z.link = v.link || "";
+              tr.querySelector('[data-feld="preis"]').value = z.preis;
+              tr.querySelector('[data-feld="link"]').value = z.link;
+            }
+          }
+          epSpeichern();
+        });
+        f.addEventListener("change", function () { if (!tr.querySelector("[data-weg]")) neu(); });
+      });
+    });
+    box.querySelectorAll("[data-weg]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var id = b.getAttribute("data-weg");
+        epPlan.zeilen = (epPlan.zeilen || []).filter(function (x) { return x.id !== id; });
+        epSpeichern();
+        neu();
+      });
+    });
+    box.querySelectorAll("[data-noch]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        epPlan.zeilen.push({ id: uid("ep"), datum: b.getAttribute("data-noch"), zeit: "", thema: "", produkt: "", angebot: "", preis: "", link: "" });
+        epSpeichern();
+        neu();
+      });
+    });
+    box.querySelectorAll("[data-vfeld]").forEach(function (f) {
+      f.addEventListener("input", function () {
+        var id = f.closest("[data-v]").getAttribute("data-v");
+        var v = (epPlan.vorrat || []).filter(function (x) { return x.id === id; })[0];
+        if (v) { v[f.getAttribute("data-vfeld")] = f.value; epSpeichern(); }
+      });
+      // Ein geaenderter Name muss in den Auswahlfeldern oben ankommen.
+      if (f.getAttribute("data-vfeld") === "name") f.addEventListener("change", neu);
+    });
+    box.querySelectorAll("[data-vweg]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var id = b.getAttribute("data-vweg");
+        epPlan.vorrat = (epPlan.vorrat || []).filter(function (x) { return x.id !== id; });
+        epSpeichern();
+        neu();
+      });
+    });
+    box.querySelectorAll("[data-vneu]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        epPlan.vorrat = epPlan.vorrat || [];
+        epPlan.vorrat.push({ id: uid("v"), gruppe: b.getAttribute("data-vneu"), name: "", preis: "", aktion: "", link: "", notiz: "" });
+        epSpeichern();
+        neu();
+      });
+    });
+  }
+  /* @@emailplan-js-ende */
+
   /* Reiter „Ideen von anderen": was bei den beobachteten Profilen deutlich
      ueber deren eigenem Schnitt lag. Gebaut von ideen-extern-bauen.py.
      Siehe Kopf von patch-ideen-extern.py, warum der Reiter bewusst nicht
@@ -9017,7 +9406,7 @@ var MASTER = (function () {
     { id: "instagram", label: "Instagram", saeule: "Instagram",
       tabs: ["woche", "studio", "storys", "fertig", "gepostet", "markt", "radar", "testreels"] },
     { id: "produkte", label: "Produkte", saeule: "Produkte",
-      tabs: ["katalog", "zusatzangebote", "produkte", "links", "launch", "funnel", "mailings", "leads", "kurse", "bibliothek", "gekauft"] },
+      tabs: ["katalog", "zusatzangebote", "produkte", "links", "launch", "funnel", "mailings", "emailplan", "leads", "kurse", "bibliothek", "gekauft"] },
     { id: "mamaceo", label: "Mama-CEO", saeule: "Mama-CEO",
       tabs: ["aufgaben", "erledigt", "launches", "monatsbogen", "wochenbogen", "ziele", "zahlen"] },
     { id: "doterra", label: "doTERRA", saeule: "doTERRA",
@@ -18155,6 +18544,7 @@ var MASTER = (function () {
     else if (activeTab === "testreels") renderTestreels(main);
     else if (activeTab === "bibliothek") renderBibliothek(main);
     else if (activeTab === "gekauft") renderGekauft(main);
+    else if (activeTab === "emailplan") renderEmailplan(main);
     else if (activeTab === "oelwissen") renderOelwissen(main);
     else if (activeTab === "anliegen") renderAnliegen(main);
     else if (activeTab === "bizwege") renderBizwege(main);
