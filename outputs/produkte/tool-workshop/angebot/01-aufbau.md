@@ -58,7 +58,7 @@ Werte aus `00-bauplan.md`. Live 11. und 12.11.2026, danach drei Tage Begleitung,
 
 ### Text der Lektion „Willkommen“
 
-Die Links stehen nur im Kurs, die Werte `ZOOM_1`, `ZOOM_2` und `GRUPPE` liegen in `scripts/tool-workshop/.env`.
+Die Links stehen nur im Kurs, die Werte `ZOOM_1`, `ZOOM_2` und `GRUPPE` liegen in `scripts/tool-workshop/.env`. Gestaltet für den HTML-Baustein: `python scripts/tool-workshop/kurs-willkommen-bauen.py` → `outputs/produkte/tool-workshop/mails/kurs-willkommen.html` (gitignored, trägt die Links).
 
 > **Willkommen im Tool-Workshop**
 >
