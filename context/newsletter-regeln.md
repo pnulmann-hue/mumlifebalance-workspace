@@ -362,6 +362,10 @@ Newsletter-Kontakte und 25 Kundinnen** (Stand 04.11.2026, ActiveCampaign).
 - Nach jeder Mail Öffnungsrate, Klickrate und Verkäufe aufschreiben. **Die
   Klickrate ist die Zahl, auf die ich schaue** — die Öffnungsrate steht schon.
 
+🚨 **Wer in einer Engine steckt, bekommt keine Kampagnen-Mails** (mein Entscheid vom
+06.11.2026). Dazu zählen auch andere laufende Verkaufsstrecken, damit niemand zwei
+Pitches gleichzeitig bekommt. Wer ein Produkt schon hat, bekommt dessen Aktion nicht.
+
 **Was unabhängig von der Listengrösse gilt:** die Preise abwechseln. Nicht zwei
 Aktionen hintereinander im gleichen Preisbereich. Nach einem 333er wieder ein
 39er.
